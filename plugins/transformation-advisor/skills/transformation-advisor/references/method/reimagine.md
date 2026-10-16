@@ -58,7 +58,7 @@ others [MCKINSEY-SOAI-2025].
 | Stage | How far to push the lenses |
 |---|---|
 | Curious | Mostly lens 1. Explain the ladder with archetype examples. Aim for two or three quick wins with existing tools. Name lens 4 as a "what if" without going deep |
-| Experimenting | Lenses 1 and 2. Turn individual use into a shared team workflow. Look for repeatable, high-volume steps |
+| Experimenting | Lenses 1 and 2 in depth; lenses 3 and 4 as a target picture, not a plan. Turn individual use into a shared team workflow. Look for repeatable, high-volume steps |
 | Adopting | All four lenses. Delegate only bounded, low-risk outcomes with explicit human checkpoints and a control plan; broader delegation belongs to Scaling [BCG-GAP-2025] |
 | Scaling | All four, with reuse: which options share components across units. Delegation at scale, agent governance, lens 4 across the portfolio |
 | AI-native | Start from lens 4: business model, pricing, new services, AI-native competitors, then work back to steps |
@@ -75,8 +75,9 @@ others [MCKINSEY-SOAI-2025].
 | 4. Reinvent the work | "If you started this today with no history, would this work exist? What would clients pay for instead?" | any | `model` if the service, pricing, sourcing or who does the work changes; `process` if the process stops existing or is replaced while the service model holds | any; check archetype `disruption.md` and `frontier.md` |
 
 **Recording rules.** Classify the two dimensions separately; a single merged scale proved ambiguous when
-reviewers classified the same cases. An option that removes people from the normal path is `automate`, even if it uses an LLM. An
-agent that only drafts for a person to finish is `augment`, whatever the vendor calls it. Write "reinvent"
+reviewers classified the same cases. An option that removes people from the normal path is `automate`,
+even if it uses an LLM. An agent that only drafts for a person to finish is `augment`, whatever the vendor
+calls it. Write "reinvent"
 into the description when lens 4 produced an option recorded as `process`.
 
 ### 3.2 The AI-native competitor move (lens 4)
@@ -197,15 +198,16 @@ refresh (`diagnose.md`). Evidence ids are from
 | 2 Automate | Full-population test of one transactional control instead of a sample | automate / process | `#08`, grade A |
 | 3 Delegate | Platform agent tests a defined control set and drafts the workpaper; reviewer signs every conclusion | delegate / process | `#16`, grade B, piloting. Target picture only: the delegation gates in `onboarding.md` fail at Experimenting |
 | 4 Reinvent | AI-native audit: agents test controls and balances on full populations; auditors on judgment and clients | delegate / model | `#17`, grade B, piloting with five clients |
-| 4 Reinvent | Controls work sold as platform plus review instead of hours inside a fixed fee | any / model | `#20`, grade B; hypothesis for this practice |
+| 4 Reinvent | Controls work sold as platform plus review instead of hours inside a fixed fee | delegate / model | `#20`, grade B; hypothesis for this practice |
 
 *Fit checks the advisor ran.* "If evidence matching doubled throughput, what would your managers see?"
 More files waiting for review, so `#07` was paired with `#10` and a standard review checklist (a foundation
 in Prioritize). "Should every walkthrough be redrafted each year?" Not when nothing changed, so the
 advisor added "roll forward unchanged walkthroughs" as a plain process change ahead of `#01`. The AI-native
-questions surfaced two hypotheses: if competitors sell testing as platform plus review, the practice's
-fixed fees will come under more pressure; and no public case yet exists of an auditor relying on a client's
-agent-tested controls (`#24`, idea). Both are written as hypotheses, not findings.
+questions surfaced one hypothesis and one open risk. Hypothesis: if competitors sell testing as platform plus
+review, the practice's fixed fees will come under more pressure. Open risk: no public case yet exists of an
+external auditor relying on a client's agent-tested controls (`#24`, idea), so any reinvention that depends
+on it stays a bet.
 
 ## 8. Output
 

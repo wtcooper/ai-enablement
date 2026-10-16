@@ -114,14 +114,15 @@ The quick win, foundation, big bet split is a practitioner convention. The sourc
 behind it (productivity cases plateau; foundations such as data and platforms matter; new-value cases need
 a different proof standard) but none defines this exact split [GARTNER-CFO2-2026; BCG-GAP-2025].
 
-1. **Park**: failed a gate, or `weighted_score` below 2.5, or value 2 or less. Record a "revisit when" trigger.
+1. **Park** if it failed a gate. Record a "revisit when" trigger.
 2. **Foundation**: two or more other options depend on it (written criteria, data access, an evaluation set,
    a shared platform, a policy), whatever its own value score.
-3. **Quick win**: `weighted_score` 3.0 or more, with feasibility, data readiness and time to value all 4 or
+3. **Park** if `weighted_score` is below 2.5 or value is 2 or less.
+4. **Quick win**: `weighted_score` 3.0 or more, with feasibility, data readiness and time to value all 4 or
    more, and risk 3 or more. Usually `assist` or `augment` at `step` scope.
-4. **Big bet**: value 4 or more, with feasibility, data readiness or time to value at 3 or less; or
+5. **Big bet**: value 4 or more, with feasibility, data readiness or time to value at 3 or less; or
    `change_scope: model`; or a `delegate` option at Adopting. Needs a staged plan and its own proof standard.
-5. **Everything else**: park, with the foundation or result that would bring it back.
+6. **Everything else**: park, with the foundation or result that would bring it back.
 
 ### 3.5 Sequencing rules
 
