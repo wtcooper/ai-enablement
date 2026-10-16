@@ -82,9 +82,10 @@
   role_evolution: "In the FRC example, staff training centres on reviewing outputs and resisting automation bias, because the auditor does not prompt the tool [FRC-GENAI-2026]."
   evidence_grade: B
   sources:
-    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: Financial Reporting Council, type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: 2026-03-30, access: full, locator: "Illustrative example 1, pp. 43-48; misunderstanding-of-methodology risk, p. 18" }
-    - { ref: KPMG-CLARA-2024, title: "KPMG announces AI integration into global smart audit platform, KPMG Clara", publisher: KPMG International, type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2024/07/kpmg-announces-ai-integration-into-global-smart-audit-platform-kpmg-clara.html", date: 2024-07-29, access: full, locator: "bullet 'Refine risk assessments'" }
-    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: KPMG US (Newsfile Corp.), type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraph beginning 'In July 2024'" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: 2026-03-30, access: full, locator: "Illustrative example 1, pp. 43-48; misunderstanding-of-methodology risk, p. 18" }
+    - { ref: FRC-NEWS-2026, title: "Innovative new guidance supports audit firm adoption of emerging AI technologies", publisher: "Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/", date: 2026-03-30, access: full, locator: "page header 'Published: 30 March 2026' (confirms the guidance date)" }
+    - { ref: KPMG-CLARA-2024, title: "KPMG announces AI integration into global smart audit platform, KPMG Clara", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2024/07/kpmg-announces-ai-integration-into-global-smart-audit-platform-kpmg-clara.html", date: 2024-07-29, access: full, locator: "bullet 'Refine risk assessments'" }
+    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG US (Newsfile Corp.)", type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraph beginning 'In July 2024'" }
   last_reviewed: 2026-10-16
   notes: "Grade B rests on KPMG's own statements that the capability is embedded for its auditors (announced for 90,000 in Jul 2024 and restated in the present tense in Apr 2025). The firm gives no data on use of this feature. The FRC example is a regulator illustration, not a deployment. Date check: the Newsfile copy of the KPMG release is dated 23 Apr 2025; the landscape file gives 22 Apr."
 
@@ -126,10 +127,10 @@
   role_evolution: "Caseware says the goal is to give auditors more time for the testing and follow-up that the identified risks require (customer quote) [ITBRIEF-CASEWARE-2026]."
   evidence_grade: B
   sources:
-    - { ref: CASEWARE-RSA-2026, title: "Caseware Verity-powered Risk Suggestion Agent launches to help auditors identify engagement-specific risks", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/caseware-verity-powered-risk-suggestion-agent-launches-to-help-auditors-identify-engagement-specific-risks", date: 2026-10-06, access: full, locator: "paragraphs 1-2 and 'Rather than beginning each engagement' section" }
-    - { ref: ITBRIEF-CASEWARE-2026, title: "Caseware launches AI agents for audit risk and disclosure", publisher: IT Brief UK, type: press, url: "https://itbrief.co.uk/story/caseware-launches-ai-agents-for-audit-risk-disclosure", date: 2026-10-13, access: full, locator: "paragraphs 1-4 and GRF CPAs quote" }
-    - { ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: 2026-05-20, access: full, locator: "paragraph on Risk Suggestion Agent (described as advancing through alpha)" }
-    - { ref: CASEWARE-VERITY-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: Caseware, type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: 2026-06-17, access: full, locator: "paragraph on the Risk Suggestion Agent preview" }
+    - { ref: CASEWARE-RSA-2026, title: "Caseware Verity-powered Risk Suggestion Agent launches to help auditors identify engagement-specific risks", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-verity-powered-risk-suggestion-agent-launches-to-help-auditors-identify-engagement-specific-risks", date: 2026-10-06, access: full, locator: "paragraphs 1-2 and 'Rather than beginning each engagement' section" }
+    - { ref: ITBRIEF-CASEWARE-2026, title: "Caseware launches AI agents for audit risk and disclosure", publisher: "IT Brief UK", type: press, url: "https://itbrief.co.uk/story/caseware-launches-ai-agents-for-audit-risk-disclosure", date: 2026-10-13, access: full, locator: "paragraphs 1-4 and GRF CPAs quote" }
+    - { ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: 2026-05-20, access: full, locator: "paragraph on Risk Suggestion Agent (described as advancing through alpha)" }
+    - { ref: CASEWARE-VERITY-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: 2026-06-17, access: full, locator: "paragraph on the Risk Suggestion Agent preview" }
   last_reviewed: 2026-10-16
   notes: "Grade B rests on a launch (6 Oct 2026) plus one named customer statement, with no measured outcome. The May 2026 release called the agent 'advancing through alpha'; the Oct 2026 release says launched worldwide. The demo figure is a demonstration, not a live result, and is kept out of any claim of effect."
 
@@ -170,9 +171,9 @@
   role_evolution: "Caseware says junior staff can reach standards and methodology in context and seniors can focus on higher-value review [CASEWARE-AIDA-2026]. Three partners from Withum, Citrin Cooperman and EisnerAmper piloted Verity on live engagements in the 2025 busy season [CASEWARE-VERITY-2026]."
   evidence_grade: C
   sources:
-    - { ref: CASEWARE-VERITY-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: Caseware, type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: 2026-06-17, access: full, locator: "planning review scenario paragraph; beta partner fireside chat" }
-    - { ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: Caseware, type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: 2026-07-28, access: full, locator: "sections 'Meet Caseware Verity' and 'Why it matters for your team'" }
-    - { ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: 2026-05-20, access: full, locator: "paragraph beginning 'Early beta deployments'" }
+    - { ref: CASEWARE-VERITY-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: 2026-06-17, access: full, locator: "planning review scenario paragraph; beta partner fireside chat" }
+    - { ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: 2026-07-28, access: full, locator: "sections 'Meet Caseware Verity' and 'Why it matters for your team'" }
+    - { ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: 2026-05-20, access: full, locator: "paragraph beginning 'Early beta deployments'" }
   last_reviewed: 2026-10-16
   notes: "The planning review scenario is a conference demonstration. The named partners piloted Verity generally, not this scenario specifically. Caseware also states a goal of automating up to 50% of the engagement workflow across prepare, plan, validate and report (vendor goal, not a result) [CASEWARE-LAUNCH-2026]."
 
@@ -211,8 +212,8 @@
   role_evolution: "PwC's lead says the firm is hiring engineers it would not previously have hired into assurance and hopes for dual-track CPA and data-science entrants [PWC-AT-2025]."
   evidence_grade: B
   sources:
-    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: Accounting Today, type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraphs 3-4 (Simplified Audit for Private Business)" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com (AICPA), type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "section 'A risk-driven approach is not yet fully leveraged'" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraphs 3-4 (Simplified Audit for Private Business)" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com (AICPA)", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "section 'A risk-driven approach is not yet fully leveraged'" }
   last_reviewed: 2026-10-16
   notes: "The source says this was the first year PwC auditors used the tool in planning. Tool was for private company audits under AICPA standards, not public-company audits."
 
@@ -246,9 +247,9 @@
   role_evolution: "PwC's CFO Dive interview says the assistant documents business processes to help auditors prepare for discussions [CFODIVE-PWC-2026]."
   evidence_grade: B
   sources:
-    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: KPMG US (Newsfile Corp.), type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraph beginning 'In April 2024'" }
-    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: Accounting Today, type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph on Advanced Walkthrough Assistant" }
-    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: CFO Dive, type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: 2026-10-07, access: full, locator: "paragraph on 2026 year-end audit tools" }
+    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG US (Newsfile Corp.)", type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraph beginning 'In April 2024'" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph on Advanced Walkthrough Assistant" }
+    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: 2026-10-07, access: full, locator: "paragraph on 2026 year-end audit tools" }
   last_reviewed: 2026-10-16
   notes: "Grade B rests on KPMG's statement that teams 'are already' using Copilot this way. For PwC's tool the sources say it exists (Oct 2025) and will be used for 2026 year-end audits (Oct 2026), so that half is announced. Walkthroughs also sit in the controls-testing module; kept here because they are part of understanding the entity's processes."
 
@@ -295,13 +296,14 @@
   role_evolution: "In the AICPA/CPA.com survey, firms furthest along in transformation spend the highest share of time in planning and less in fieldwork [CPACOM-ATR-2025]."
   evidence_grade: B
   sources:
-    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: IFIAR Technology Task Force (FSA Japan copy), type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: 2025-03-27, access: full, locator: "section 'Insights from IFIAR Members', table and inspection findings, p. 5" }
-    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: IFIAR Technology Task Force (FSA Japan copy), type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "Executive Summary; trend chart, p. 10" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com (AICPA), type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "'For which of the following does the firm have an automated solution?' chart; section 'Risk-driven approach and technology'" }
-    - { ref: CPAPA-ASKLUCA-2026, title: "RSM US rolls out 'Ask Luca' GenAI tool for firm's auditors", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/01/09/rsm-us-rolls-out-ask-luca-genai-tool-for-firms-auditors/176104/", date: 2026-01-09, access: full, locator: "bullet 'Enhanced risk assessment'" }
-    - { ref: KPMG-CLARA-2024, title: "KPMG announces AI integration into global smart audit platform, KPMG Clara", publisher: KPMG International, type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2024/07/kpmg-announces-ai-integration-into-global-smart-audit-platform-kpmg-clara.html", date: 2024-07-29, access: full, locator: "recap bullet on the 2023 MindBridge alliance (Transaction Scoring)" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR Technology Task Force (FSA Japan copy)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: 2025-03-27, access: full, locator: "section 'Insights from IFIAR Members', table and inspection findings, p. 5" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR Technology Task Force (FSA Japan copy)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "Executive Summary; trend chart, p. 10" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com (AICPA)", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "'For which of the following does the firm have an automated solution?' chart; section 'Risk-driven approach and technology'" }
+    - { ref: CPAPA-ASKLUCA-2026, title: "RSM US rolls out 'Ask Luca' GenAI tool for firm's auditors", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/01/09/rsm-us-rolls-out-ask-luca-genai-tool-for-firms-auditors/176104/", date: 2026-01-09, access: full, locator: "bullet 'Enhanced risk assessment'" }
+    - { ref: KPMG-CLARA-2024, title: "KPMG announces AI integration into global smart audit platform, KPMG Clara", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2024/07/kpmg-announces-ai-integration-into-global-smart-audit-platform-kpmg-clara.html", date: 2024-07-29, access: full, locator: "recap bullet on the 2023 MindBridge alliance (Transaction Scoring)" }
+    - { ref: RSM-LUCA-2026, title: "RSM Luca: our dynamic digital audit ecosystem", publisher: "RSM US", type: firm, url: "https://rsmus.com/services/audit-services/ai-digital-audit-technology.html", date: 2026-10-16, access: full, locator: "bullet 'Smart risk assessments using intelligent visualizations of journal entries'; living page, accessed date" }
   last_reviewed: 2026-10-16
-  notes: "IFIAR figures count how many regulators say they frequently see tools, not the share of audits using them, and IFIAR calls its observations directional. The 2026 report's chart has no data labels; the 2025 bar for risk assessment reads visually at roughly the low 50s. The ATR's 22% appears in the chart and also in the sentence on who answered the benefits question; the chart wording is used here. Journal-entry testing itself (88% in 2024) belongs to substantive testing."
+  notes: "IFIAR figures count how many regulators say they frequently see tools, not the share of audits using them, and IFIAR calls its observations directional. The 2026 report's chart has no data labels; the 2025 bar for risk assessment reads visually at roughly the low 50s. The ATR's 22% appears in the chart and also in the sentence on who answered the benefits question; the chart wording is used here. Journal-entry testing itself (88% in 2024) belongs to substantive testing. CPA.com is an AICPA affiliate that also implements the DAS platform for firms (see use case 16), so treat its survey as professional-body rather than fully arm's-length."
 
 - id: assurance-planning-risk-assessment-07
   title: Evidence-linked, assertion-level risk assessment tied to materiality and methodology
@@ -333,8 +335,8 @@
   role_evolution: "none stated in the sources."
   evidence_grade: C
   sources:
-    - { ref: MINDBRIDGE-ARA-2026, title: "MindBridge advances financial oversight for the agentic era with new platform capabilities", publisher: MindBridge (Business Wire via BNN Bloomberg), type: vendor, url: "https://www.bnnbloomberg.ca/press-releases/2026/09/22/mindbridge-advances-financial-oversight-for-the-agentic-era-with-new-platform-capabilities/", date: 2026-09-22, access: full, locator: "paragraph 'Agentic Risk Assessment for audit & assurance'" }
-    - { ref: CPAPA-MINDBRIDGE-2026, title: "MindBridge launches new AI capabilities for finance and audit", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/?p=190850", date: 2026-09-30, access: full, locator: "paragraph on Agentic Risk Assessment" }
+    - { ref: MINDBRIDGE-ARA-2026, title: "MindBridge advances financial oversight for the agentic era with new platform capabilities", publisher: "MindBridge (Business Wire via BNN Bloomberg)", type: vendor, url: "https://www.bnnbloomberg.ca/press-releases/2026/09/22/mindbridge-advances-financial-oversight-for-the-agentic-era-with-new-platform-capabilities/", date: 2026-09-22, access: full, locator: "paragraph 'Agentic Risk Assessment for audit & assurance'" }
+    - { ref: CPAPA-MINDBRIDGE-2026, title: "MindBridge launches new AI capabilities for finance and audit", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=190850", date: 2026-09-30, access: full, locator: "paragraph on Agentic Risk Assessment" }
   last_reviewed: 2026-10-16
   notes: "Announcement only. Named audit-firm customer stories for MindBridge's earlier analytics were not opened (the site returned 403) and are not dated. Not used: a customer-marked technical whitepaper on assertion-level scoring."
 
@@ -367,7 +369,7 @@
   role_evolution: "none stated for this feature."
   evidence_grade: C
   sources:
-    - { ref: OPTRO-CRX-2026, title: "Optro launches domain-trained agents for audit, compliance, third-party risk and AI governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: 2026-10-14, access: full, locator: "bullet 'Agentic Risk Assessment Scoring'" }
+    - { ref: OPTRO-CRX-2026, title: "Optro launches domain-trained agents for audit, compliance, third-party risk and AI governance", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: 2026-10-14, access: full, locator: "bullet 'Agentic Risk Assessment Scoring'" }
   last_reviewed: 2026-10-16
   notes: "Announced at Optro's CRX conference. Applies to in-house internal audit and GRC teams as well as audit firms."
 
@@ -400,9 +402,9 @@
   role_evolution: "BDO says it is building a revised operating model that weaves AI agents into routine delivery, targeting labour-intensive and administrative work [BDO-FIELDGUIDE-2026]."
   evidence_grade: C
   sources:
-    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: Fieldguide, type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "bullet 'Scoping and risk assessment'; date is the scheduled webinar" }
-    - { ref: BDO-FIELDGUIDE-2026, title: "BDO expands AI use in risk advisory through Fieldguide tie-up", publisher: International Accounting Bulletin (via Yahoo Finance), type: press, url: "https://finance.yahoo.com/sectors/technology/articles/bdo-expands-ai-risk-advisory-113450007.html", date: 2026-03-25, access: full, locator: "paragraphs 1-6" }
-    - { ref: SILICONANGLE-FIELDGUIDE-2026, title: "Fieldguide raises $75M on $700M valuation to scale agentic AI for audit and advisory firms", publisher: SiliconANGLE, type: press, url: "https://siliconangle.com/2026/02/02/fieldguide-raises-75m-700m-valuation-scale-agentic-ai-audit-advisory-firms/", date: 2026-02-02, access: full, locator: "paragraphs 1-3" }
+    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: "Fieldguide", type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "bullet 'Scoping and risk assessment'; date is the scheduled webinar" }
+    - { ref: BDO-FIELDGUIDE-2026, title: "BDO expands AI use in risk advisory through Fieldguide tie-up", publisher: "International Accounting Bulletin (via Yahoo Finance)", type: press, url: "https://finance.yahoo.com/sectors/technology/articles/bdo-expands-ai-risk-advisory-113450007.html", date: 2026-03-25, access: full, locator: "paragraphs 1-6" }
+    - { ref: SILICONANGLE-FIELDGUIDE-2026, title: "Fieldguide raises $75M on $700M valuation to scale agentic AI for audit and advisory firms", publisher: "SiliconANGLE", type: press, url: "https://siliconangle.com/2026/02/02/fieldguide-raises-75m-700m-valuation-scale-agentic-ai-audit-advisory-firms/", date: 2026-02-02, access: full, locator: "paragraphs 1-3" }
   last_reviewed: 2026-10-16
   notes: "BDO's deployment is platform-wide; no source confirms BDO uses the risk-mapping feature. That is why this is grade C rather than B. The date is the scheduled demo (4 days after today); the listing itself was live on 2026-10-16."
 
@@ -436,8 +438,8 @@
   role_evolution: "Deloitte's release describes a 'tutor mode' that gives on-demand micro-training in the context of the work, plus an AI Academy and an AI learning assistant [DELOITTE-OMNIA-2026]."
   evidence_grade: B
   sources:
-    - { ref: BBL-DELOITTE-2026, title: "Deloitte adopts advanced AI to power corporate audits globally", publisher: Bloomberg Law, type: press, url: "https://news.bloomberglaw.com/financial-accounting/deloitte-adopts-advanced-ai-to-power-corporate-audits-globally", date: 2026-06-29, access: full, locator: "paragraphs 1-4" }
-    - { ref: DELOITTE-OMNIA-2026, title: "Deloitte unveils connected agentic intelligence in Omnia to advance audit and assurance", publisher: Deloitte, type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: 2026-06-24, access: full, locator: "paragraphs 1-6" }
+    - { ref: BBL-DELOITTE-2026, title: "Deloitte adopts advanced AI to power corporate audits globally", publisher: "Bloomberg Law", type: press, url: "https://news.bloomberglaw.com/financial-accounting/deloitte-adopts-advanced-ai-to-power-corporate-audits-globally", date: 2026-06-29, access: full, locator: "paragraphs 1-4" }
+    - { ref: DELOITTE-OMNIA-2026, title: "Deloitte unveils connected agentic intelligence in Omnia to advance audit and assurance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: 2026-06-24, access: full, locator: "paragraphs 1-6" }
   last_reviewed: 2026-10-16
   notes: "The media-scanning capability is reported by Bloomberg Law; Deloitte's own release does not name it. The release speaks of enhanced insights and deep risk analysis. No figures are published."
 
@@ -472,18 +474,18 @@
     - "A global training programme for audit and technology-risk staff [EY-CANVAS-2026]"
   risks_and_guardrails:
     - "IFIAR says that as systems become more autonomous, auditors must retain responsibility to evaluate, validate and challenge decisions made by AI, and explain key judgements [IFIAR-TTF-2026]"
-    - "IFIAR members saw unclear division of monitoring responsibility between networks and member firms in 2025 [IFIAR-TTF-2025]"
+    - "The 2025 IFIAR report notes that members found it sometimes unclear whether monitoring responsibility sits with the network that built a tool or the member firm deploying it [IFIAR-TTF-2025]"
   human_checkpoints:
     - "EY says the approach keeps human judgment, skepticism and insight [EY-CANVAS-2026]"
   role_evolution: "EY says its approach will reduce administrative burden for clients and improve risk assessments while keeping human judgment [EY-CANVAS-2026]."
   evidence_grade: B
   sources:
-    - { ref: EY-CANVAS-2026, title: "EY launches enterprise-scale agentic AI to redefine the audit experience for the AI era", publisher: EY, type: firm, url: "https://www.ey.com/en_ca/newsroom/2026/04/ey-launches-enterprise-scale-agentic-ai-to-redefine-the-audit-experience-for-the-ai-era", date: 2026-04-07, access: full, locator: "paragraphs 1-4 of the release" }
-    - { ref: DELOITTE-OMNIA-2026, title: "Deloitte unveils connected agentic intelligence in Omnia to advance audit and assurance", publisher: Deloitte, type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: 2026-06-24, access: full, locator: "paragraphs 1-3" }
-    - { ref: BBL-KPMG-2026, title: "KPMG to test advanced AI agents in next phase for audits", publisher: Bloomberg Law, type: press, url: "https://news.bloomberglaw.com/financial-accounting/kpmg-to-test-advanced-ai-agents-in-next-phase-for-audits", date: 2026-04-01, access: full, locator: "opening paragraphs (page is paywalled after the first section)" }
-    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: Accounting Today, type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph on global agentic platform within about 18 months" }
-    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: Grant Thornton LLP, type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraph beginning 'Grant Thornton built gtap to grow'" }
-    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: IFIAR Technology Task Force (FSA Japan copy), type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "section 'Emergence of Agentic AI', p. 5, and footnote 1" }
+    - { ref: EY-CANVAS-2026, title: "EY launches enterprise-scale agentic AI to redefine the audit experience for the AI era", publisher: "EY", type: firm, url: "https://www.ey.com/en_ca/newsroom/2026/04/ey-launches-enterprise-scale-agentic-ai-to-redefine-the-audit-experience-for-the-ai-era", date: 2026-04-07, access: full, locator: "paragraphs 1-4 of the release" }
+    - { ref: DELOITTE-OMNIA-2026, title: "Deloitte unveils connected agentic intelligence in Omnia to advance audit and assurance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: 2026-06-24, access: full, locator: "paragraphs 1-3" }
+    - { ref: BBL-KPMG-2026, title: "KPMG to test advanced AI agents in next phase for audits", publisher: "Bloomberg Law", type: press, url: "https://news.bloomberglaw.com/financial-accounting/kpmg-to-test-advanced-ai-agents-in-next-phase-for-audits", date: 2026-04-01, access: full, locator: "opening paragraphs (page is paywalled after the first section)" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph on global agentic platform within about 18 months" }
+    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: "Grant Thornton LLP", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraph beginning 'Grant Thornton built gtap to grow'" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR Technology Task Force (FSA Japan copy)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "section 'Emergence of Agentic AI', p. 5, and footnote 1" }
   last_reviewed: 2026-10-16
   notes: "Planning-specific agents inside these frameworks are not itemised in any source except EY's 'improve risk assessments' and Deloitte's 'deep risk analysis' wording. Grade B rests on named deployments with scale claims but no measurements. EY says all phases now and end-to-end by 2028; KPMG's orchestration is a pilot, not in production, and its details come from an opening section only. Regulator IFIAR also relays that firms plan to explore agentic systems."
 
@@ -516,8 +518,8 @@
   role_evolution: "RSM's assurance digital leader says the tool helps leaders make faster, more informed staffing decisions and streamlines workforce planning [CAQ-RSM-2026]. Fieldguide's demo listing also mentions real-time budget and workload visibility in its agent platform [FIELDGUIDE-DEMO-2026]."
   evidence_grade: B
   sources:
-    - { ref: CAQ-RSM-2026, title: "Shaping the future of assurance: Advancing AI in the audit", publisher: Center for Audit Quality (author: RSM assurance digital leader), type: professional-body, url: "https://www.thecaq.org/aia-shaping-the-future-of-assurance-advancing-ai-in-the-audit", date: 2026-08-25, access: full, locator: "section 'RSM Luca Resourcing'" }
-    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: Fieldguide, type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "bullet 'Findings and reporting, always current'" }
+    - { ref: CAQ-RSM-2026, title: "Shaping the future of assurance: Advancing AI in the audit", publisher: "Center for Audit Quality (author: RSM assurance digital leader)", type: professional-body, url: "https://www.thecaq.org/aia-shaping-the-future-of-assurance-advancing-ai-in-the-audit", date: 2026-08-25, access: full, locator: "section 'RSM Luca Resourcing'" }
+    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: "Fieldguide", type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "bullet 'Findings and reporting, always current'" }
   last_reviewed: 2026-10-16
   notes: "The source does not describe how much of the tool uses AI; it presents it as one of three AI-related innovations added to RSM's digital audit ecosystem in the past year. Treat the AI content as unconfirmed."
 
@@ -545,7 +547,7 @@
       description: "Adoption signal: tax and audit professionals using AI regularly."
       figure: "81%"
       measures: "Share of tax and audit professionals in Thomson Reuters Institute's 2026 Future of Professionals survey who say they use AI tools regularly (sample size not given in the summary page)"
-      provenance: independent
+      provenance: vendor-published
       source_ref: TRI-FOP-2026
   prerequisites:
     - "Approved enterprise tool under a use policy [CAQ-RSM-2026]"
@@ -558,11 +560,11 @@
   role_evolution: "RSM says tools like this free capacity for time spent understanding client risks and asking better questions [CAQ-RSM-2026]. TR's paper urges firms to define early-career roles and keep supervision in place before automation erodes development opportunities [TRI-FOP-2026]."
   evidence_grade: B
   sources:
-    - { ref: CAQ-RSM-2026, title: "Shaping the future of assurance: Advancing AI in the audit", publisher: Center for Audit Quality (author: RSM assurance digital leader), type: professional-body, url: "https://www.thecaq.org/aia-shaping-the-future-of-assurance-advancing-ai-in-the-audit", date: 2026-08-25, access: full, locator: "section on Microsoft M365 Copilot" }
-    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: KPMG US (Newsfile Corp.), type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraphs 'In May 2024' and 'In April 2024'" }
-    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: ICAEW, type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "introduction" }
-    - { ref: TRI-FOP-2026, title: "What the 2026 Future of Professionals Report says tax and audit firm leaders should be prioritizing now", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: 2026-07-21, access: full, locator: "paragraphs 3-9" }
-    - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff update on outreach activities related to the integration of generative AI in audits and financial reporting", publisher: PCAOB staff, type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: 2024-07, access: full, locator: "Observations related to GenAI integration in audits, p. 4" }
+    - { ref: CAQ-RSM-2026, title: "Shaping the future of assurance: Advancing AI in the audit", publisher: "Center for Audit Quality (author: RSM assurance digital leader)", type: professional-body, url: "https://www.thecaq.org/aia-shaping-the-future-of-assurance-advancing-ai-in-the-audit", date: 2026-08-25, access: full, locator: "section on Microsoft M365 Copilot" }
+    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG US (Newsfile Corp.)", type: firm, url: "https://www.newsfilecorp.com/release/249535/KPMG-Advances-AI-Integration-in-KPMG-Clara-Smart-Audit-Platform", date: 2025-04-23, access: full, locator: "recap paragraphs 'In May 2024' and 'In April 2024'" }
+    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "introduction" }
+    - { ref: TRI-FOP-2026, title: "What the 2026 Future of Professionals Report says tax and audit firm leaders should be prioritizing now", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: 2026-07-21, access: full, locator: "paragraphs 3-9" }
+    - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff update on outreach activities related to the integration of generative AI in audits and financial reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: 2024-07, access: full, locator: "Observations related to GenAI integration in audits, p. 4" }
   last_reviewed: 2026-10-16
   notes: "The PCAOB spotlight is staff outreach from mid-2024 and is a foundation source. The 2.175 million count is dated to May 2024 and mixes all Audit Chat uses. The ICAEW observation comes from an article intro and names no firm."
 
@@ -595,7 +597,7 @@
   role_evolution: "none stated for this tool."
   evidence_grade: C
   sources:
-    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: CFO Dive, type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: 2026-10-07, access: full, locator: "paragraph beginning 'For 2026 year-end audits'" }
+    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: 2026-10-07, access: full, locator: "paragraph beginning 'For 2026 year-end audits'" }
   last_reviewed: 2026-10-16
   notes: "The source says PwC 'will be' using these tools for 2026 year-end audits, so this is announced, not confirmed in use."
 
@@ -634,9 +636,9 @@
   role_evolution: "Grant Thornton's CEO says teams will spend more time on professional skepticism, assessing risk and delivering insights [GT-GTAP-2026]."
   evidence_grade: B
   sources:
-    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: Grant Thornton LLP, type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraphs 1-4" }
-    - { ref: CPAPA-GT-2026, title: "Grant Thornton U.S. launches in-house audit transformation platform", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/05/08/grant-thornton-u-s-launches-in-house-audit-transformation-platform/183107/", date: 2026-05-08, access: full, locator: "article body" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com (AICPA), type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "automated-solutions chart; blockers chart" }
+    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: "Grant Thornton LLP", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraphs 1-4" }
+    - { ref: CPAPA-GT-2026, title: "Grant Thornton U.S. launches in-house audit transformation platform", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/05/08/grant-thornton-u-s-launches-in-house-audit-transformation-platform/183107/", date: 2026-05-08, access: full, locator: "article body" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com (AICPA)", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "automated-solutions chart; blockers chart" }
   last_reviewed: 2026-10-16
   notes: "The release says gtap 'opens the door to' agents that surface risks and anomalies, so agent features are prospective. The launch itself is the named deployment."
 
@@ -651,8 +653,8 @@
   change_scope: process
   runtime_class: shared-team-skills
   maturity: in-production
-  problem: "Mid-tier firms use disconnected tools and prior-year habits. Many surveyed firms say they have trouble fully using a risk-driven approach."
-  solution: "EisnerAmper, Citrin Cooperman and PKF O'Connor Davies adopted the Dynamic Assurance Solution (DAS) suite, a risk-focused methodology built by the AICPA, CPA.com and Caseware that connects risk assessment, workpapers and reporting, now with Verity. PKF also joined an agentic pioneer programme to co-develop its own agents. The firms phased roll-out with training."
+  problem: "Mid-tier firms use disconnected tools and prior-year habits. Some surveyed firms say they still struggle to fully use a risk-driven approach."
+  solution: "EisnerAmper, Citrin Cooperman and PKF O'Connor Davies adopted the Dynamic Assurance Solution (DAS) suite, a risk-focused methodology built by the AICPA, CPA.com and Caseware that connects risk assessment, workpapers and reporting, now with Verity. PKF also joined an agentic pioneer programme to co-develop its own agents. EisnerAmper phased its roll-out with training."
   outcomes:
     - lever: capacity
       description: "EisnerAmper reports platform adoption: users and completed engagements. This measures DAS adoption, not an AI effect."
@@ -670,10 +672,10 @@
   role_evolution: "Citrin Cooperman's assurance innovation leader says seeing the reasoning behind procedures and conclusions helps staff build technical knowledge and judgment [CASEWARE-CITRIN-2026]."
   evidence_grade: B
   sources:
-    - { ref: CASEWARE-EISNERAMPER-2026, title: "EisnerAmper leverages DAS powered by Caseware to unify audit and build an agentic future", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/eisneramper-leverages-das-powered-by-caseware-to-unify-audit-and-build-an-agentic-future-across-its-multi-vertical-practice", date: 2026-06-25, access: full, locator: "paragraphs 1-6" }
-    - { ref: CASEWARE-CITRIN-2026, title: "Citrin Cooperman adopts AI-enabled DAS suite powered by Caseware", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: 2026-07-13, access: full, locator: "paragraphs 1-6" }
-    - { ref: CASEWARE-PKF-2026, title: "PKF O'Connor Davies adopts AI-enabled DAS suite powered by Caseware Verity and joins the Agentic Pioneer Program", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program", date: 2026-10-08, access: full, locator: "paragraphs 1-4" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com (AICPA), type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "section 'Reported challenges of adopting a risk-driven approach'" }
+    - { ref: CASEWARE-EISNERAMPER-2026, title: "EisnerAmper leverages DAS powered by Caseware to unify audit and build an agentic future", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/eisneramper-leverages-das-powered-by-caseware-to-unify-audit-and-build-an-agentic-future-across-its-multi-vertical-practice", date: 2026-06-25, access: full, locator: "paragraphs 1-6" }
+    - { ref: CASEWARE-CITRIN-2026, title: "Citrin Cooperman adopts AI-enabled DAS suite powered by Caseware", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: 2026-07-13, access: full, locator: "paragraphs 1-6" }
+    - { ref: CASEWARE-PKF-2026, title: "PKF O'Connor Davies adopts AI-enabled DAS suite powered by Caseware Verity and joins the Agentic Pioneer Program", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program", date: 2026-10-08, access: full, locator: "paragraphs 1-4" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com (AICPA)", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "section 'Reported challenges of adopting a risk-driven approach'" }
   last_reviewed: 2026-10-16
   notes: "Grade B is capped: the figures measure platform adoption, and the three press releases are vendor-published about vendor customers. Whether each firm uses the Verity risk features in planning is not stated; PKF's release describes the platform generally."
 
@@ -707,7 +709,7 @@
   role_evolution: "The article urges tech champions or innovation task forces within teams to support colleagues [ICAEW-315-2025]."
   evidence_grade: C
   sources:
-    - { ref: ICAEW-315-2025, title: "Meeting ISA 315 requirements without specialist IT teams", publisher: ICAEW (author: co-founder of Platformed, a vendor), type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/oct-2025/meeting-isa-315-requirements-without-specialists-it-teams", date: 2025-10, access: full, locator: "paragraphs on purpose-built agentic AI platforms and 'human-in-the-loop'" }
+    - { ref: ICAEW-315-2025, title: "Meeting ISA 315 requirements without specialist IT teams", publisher: "ICAEW (author: co-founder of Platformed, a vendor)", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/oct-2025/meeting-isa-315-requirements-without-specialists-it-teams", date: 2025-10, access: full, locator: "paragraphs on purpose-built agentic AI platforms and 'human-in-the-loop'" }
   last_reviewed: 2026-10-16
   notes: "Authored by a vendor and published by ICAEW; treated as a vendor claim. Exact day of publication not shown on the page."
 
@@ -740,8 +742,8 @@
   role_evolution: "none stated."
   evidence_grade: B
   sources:
-    - { ref: VLGAA-NUCCIO-2026, title: "Using Generative AI in Internal Audit (conference slides)", publisher: Virginia Local Government Auditors Association (speaker, City of Charlotte NC), type: conference, url: "https://vlgaa.starchapter.com/images/downloads/Documents/day_1___2___using_generative_ai_in_internal_audit___d._nuccio.pdf", date: 2026-04, access: full, locator: "slides 49-52 (Audit Planning: Fraud Brainstorming)" }
-    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: ICAEW, type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "section on risk assessment (ISA 240 revenue recognition)" }
+    - { ref: VLGAA-NUCCIO-2026, title: "Using Generative AI in Internal Audit (conference slides)", publisher: "Virginia Local Government Auditors Association (speaker, City of Charlotte NC)", type: conference, url: "https://vlgaa.starchapter.com/images/downloads/Documents/day_1___2___using_generative_ai_in_internal_audit___d._nuccio.pdf", date: 2026-04, access: full, locator: "slides 49-52 (Audit Planning: Fraud Brainstorming)" }
+    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "section on risk assessment (ISA 240 revenue recognition)" }
   last_reviewed: 2026-10-16
   notes: "A named practitioner's demonstration, not a firm programme; the presenter says the views are his own and not the City's. The date is the PDF's creation date (13 Apr 2026); the conference date is not shown. Applies to local-government internal audit, not external audit; no external-audit firm evidence on fraud brainstorming was found."
 
@@ -774,7 +776,7 @@
   role_evolution: "none stated."
   evidence_grade: B
   sources:
-    - { ref: VLGAA-NUCCIO-2026, title: "Using Generative AI in Internal Audit (conference slides)", publisher: Virginia Local Government Auditors Association (speaker, City of Charlotte NC), type: conference, url: "https://vlgaa.starchapter.com/images/downloads/Documents/day_1___2___using_generative_ai_in_internal_audit___d._nuccio.pdf", date: 2026-04, access: full, locator: "slides 42-48 (Audit Planning: Identifying Risk Considerations)" }
+    - { ref: VLGAA-NUCCIO-2026, title: "Using Generative AI in Internal Audit (conference slides)", publisher: "Virginia Local Government Auditors Association (speaker, City of Charlotte NC)", type: conference, url: "https://vlgaa.starchapter.com/images/downloads/Documents/day_1___2___using_generative_ai_in_internal_audit___d._nuccio.pdf", date: 2026-04, access: full, locator: "slides 42-48 (Audit Planning: Identifying Risk Considerations)" }
   last_reviewed: 2026-10-16
   notes: "Same caveats as the fraud brainstorming entry: a named practitioner demonstration in a personal capacity, no outcome measures. Slide text for the risk table was read from rendered images."
 
@@ -808,7 +810,7 @@
   role_evolution: "none stated."
   evidence_grade: D
   sources:
-    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: ICAEW, type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "sections on risk assessment and conclusion" }
+    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "sections on risk assessment and conclusion" }
   last_reviewed: 2026-10-16
   notes: "idea. Graded D because the source is a test of an idea on fictional data, not a deployment. It is independent evidence of limits. Publication date taken from the search listing (24 Sep 2025) and the URL path (sep-2025)."
 
@@ -842,8 +844,8 @@
   role_evolution: "none stated."
   evidence_grade: D
   sources:
-    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: ICAEW, type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "section 'Materiality'" }
-    - { ref: MINDBRIDGE-ARA-2026, title: "MindBridge advances financial oversight for the agentic era with new platform capabilities", publisher: MindBridge (Business Wire via BNN Bloomberg), type: vendor, url: "https://www.bnnbloomberg.ca/press-releases/2026/09/22/mindbridge-advances-financial-oversight-for-the-agentic-era-with-new-platform-capabilities/", date: 2026-09-22, access: full, locator: "paragraph 'Agentic Risk Assessment' (materiality listed among linked inputs)" }
+    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: 2025-09-24, access: full, locator: "section 'Materiality'" }
+    - { ref: MINDBRIDGE-ARA-2026, title: "MindBridge advances financial oversight for the agentic era with new platform capabilities", publisher: "MindBridge (Business Wire via BNN Bloomberg)", type: vendor, url: "https://www.bnnbloomberg.ca/press-releases/2026/09/22/mindbridge-advances-financial-oversight-for-the-agentic-era-with-new-platform-capabilities/", date: 2026-09-22, access: full, locator: "paragraph 'Agentic Risk Assessment' (materiality listed among linked inputs)" }
   last_reviewed: 2026-10-16
   notes: "idea. No firm, vendor or regulator source describes AI setting materiality in practice. MindBridge lists materiality as an input connected to its risk assessment, not a calculation it performs."
 
@@ -876,7 +878,7 @@
   role_evolution: "none stated."
   evidence_grade: D
   sources:
-    - { ref: ARXIV-UMAR-2026, title: "Multi-Agent Framework for Audit Risk Assessment with Explicit Uncertainty and Evidence Conflict Modeling", publisher: arXiv (Wang et al.), type: academic, url: "https://arxiv.org/abs/2606.15640", date: 2026-06-14, access: full, locator: "abstract" }
+    - { ref: ARXIV-UMAR-2026, title: "Multi-Agent Framework for Audit Risk Assessment with Explicit Uncertainty and Evidence Conflict Modeling", publisher: "arXiv (Wang et al.)", type: academic, url: "https://arxiv.org/abs/2606.15640", date: 2026-06-14, access: full, locator: "abstract" }
   last_reviewed: 2026-10-16
   notes: "idea. A preprint, abstract read only. The label is restatement, which is an adjacent outcome to audit risk. The PR-AUC of 0.341 shows the precision ceiling. Companion benchmark: FinancialAuditBench (90 workpaper completion and review tasks across six synthetic engagements, 11 frontier models) found agents complete much staff-level work but sometimes perform inappropriate procedures or write incorrect documentation; it covers workpaper work generally, not planning [ARXIV-FAB-2026]."
 
@@ -909,9 +911,9 @@
   role_evolution: "none stated."
   evidence_grade: D
   sources:
-    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: Grant Thornton LLP, type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraph beginning 'Grant Thornton built gtap to grow'" }
-    - { ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: Caseware, type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: 2026-07-28, access: full, locator: "section 'What's next'" }
-    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: IFIAR Technology Task Force (FSA Japan copy), type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "Appendix A, row 'Predictive Data Analytics'" }
+    - { ref: GT-GTAP-2026, title: "Grant Thornton launches gtap", publisher: "Grant Thornton LLP", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: 2026-05-07, access: full, locator: "paragraph beginning 'Grant Thornton built gtap to grow'" }
+    - { ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: 2026-07-28, access: full, locator: "section 'What's next'" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR Technology Task Force (FSA Japan copy)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "Appendix A, row 'Predictive Data Analytics'" }
   last_reviewed: 2026-10-16
   notes: "idea. Forward-looking statements only. Keep separate from use case 11, where agent frameworks are in production but their planning-specific functions are not itemised."
 
@@ -944,10 +946,11 @@
   role_evolution: "none stated."
   evidence_grade: C
   sources:
-    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: Accounting Today, type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph beginning 'He added that PwC plans to soon have a tool'" }
-    - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff update on outreach activities related to the integration of generative AI in audits and financial reporting", publisher: PCAOB staff, type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: 2024-07, access: full, locator: "p. 4, list of potential areas" }
-    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: Fieldguide, type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "paragraph 1 and bullet 'Scoping and risk assessment'" }
-    - { ref: ICAEW-GROUP-2025, title: "Auditing groups: a risk-based approach to component scoping", publisher: ICAEW, type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/aug-2025/auditing-groups-a-risk-based-approach-to-component-scoping", date: 2025-08-29, access: full, locator: "article body (context only; no AI content)" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: 2025-10-28, access: full, locator: "paragraph beginning 'He added that PwC plans to soon have a tool'" }
+    - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff update on outreach activities related to the integration of generative AI in audits and financial reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: 2024-07, access: full, locator: "p. 4, list of potential areas" }
+    - { ref: FIELDGUIDE-DEMO-2026, title: "See Field Agents execute internal audit engagements live", publisher: "Fieldguide", type: vendor, url: "https://info.fieldguide.io/fieldguide-live-demo-internal-audit-mar17", date: 2026-10-20, access: full, locator: "paragraph 1 and bullet 'Scoping and risk assessment'" }
+    - { ref: ICAEW-GROUP-2025, title: "Auditing groups: a risk-based approach to component scoping", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/aug-2025/auditing-groups-a-risk-based-approach-to-component-scoping", date: 2025-08-29, access: full, locator: "article body (context only; no AI content)" }
+    - { ref: CPAPA-GROUP-2026, title: "Group audits: why complexity persists and why judgment still matters most", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/05/15/group-audits-why-complexity-persists-and-why-judgment-still-matters-most/183479/", date: 2026-05-15, access: full, locator: "article body (context only; risk-based component scoping, no AI content)" }
   last_reviewed: 2026-10-16
   notes: "No source on group-audit scoping mentions AI. The ICAEW and CPA Practice Advisor group-audit articles (and the ISA 600 shift to risk-based scoping) are context only. PCAOB staff material is from Jul 2024, a foundation source, and reports potential areas, not use."
 ```
@@ -1012,6 +1015,7 @@
 - 2026-05-07: Grant Thornton launches gtap [GT-GTAP-2026].
 - 2026-04-07: EY embeds multi-agent framework in EY Canvas, end-to-end support expected by 2028 [EY-CANVAS-2026].
 - 2026-04-01: KPMG says it will pilot orchestration agents from summer 2026 [BBL-KPMG-2026].
+- 2026-02-11: A PayPal data-science leader discusses prompt libraries, AI agents and 'swarm auditing' in internal audit (episode blurb only) [SRA-SWARM-2026].
 - 2025-10-28: PwC plans a risk-assessment tool, a tool for each audit step in 2026, and a global agentic platform about 18 months after [PWC-AT-2025].
 
 ### Workforce and role effects
@@ -1032,6 +1036,7 @@
 - Data privacy limits on what may be uploaded; some firms bar GenAI on audit procedures [PCAOB-GENAI-2024].
 - Gains are real but small so far [CFODIVE-PWC-2026]; vendor time-saving figures lack published method (no independent test found).
 - Staff use of unapproved tools [TRI-FOP-2026].
+- Explainability, human oversight and whether off-the-shelf tools suffice for smaller firms were the themes of an ICAEW podcast with the FRC's head of assurance technology, Grant Thornton and Deloitte (show notes only read) [ICAEW-POD-2025].
 - Cost and change management for smaller firms [CPACOM-ATR-2025].
 
 ### Interview probes (for an advisor to ask someone in this module)
