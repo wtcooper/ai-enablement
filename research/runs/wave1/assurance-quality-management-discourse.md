@@ -5,11 +5,11 @@
 - **Angle:** discourse. What practitioners, quality leaders and regulators have been saying in the last 12–18 months (about April 2025 to October 2026) at conferences, roundtables and webinars and in speeches, commentary, podcasts and press.
 - **Prepared:** 2026-10-16
 - **Method note.**
-  - About 55 pages and PDFs were opened and read with `curl` or, where a site refused `curl`, through the text mirror (`r.jina.ai`). This covers pcaobus.org speeches, the IFIAR report and a Foley article. Those are marked in the source list.
-  - Primary documents read in full include the FRC generative and agentic AI guidance (61 pages) and certification thematic review, the IAASB roundtable outcome paper and its March 2026 action plan, and the IFIAR April 2026 technology report. The IFIAR report is new since the landscape scan.
-  - Eight PCAOB Board and Chair speeches were read in full. They are the richest first-hand discourse on inspections and quality control.
+  - About 57 pages and PDFs were opened and read with `curl` or, where a site refused `curl`, through the text mirror (`r.jina.ai`). This covers the pcaobus.org speeches, the IFIAR report and the Foley article. Those are marked "via text mirror" in the source list.
+  - Primary documents read include the IFIAR April 2026 technology report (12 pages, read in full; new since the landscape scan), the IAASB roundtable outcome paper and its March 2026 action plan, and the FRC thematic review on certification. The FRC generative and agentic AI guidance (61 pages) was read for its quality management sections (risk mitigation, certification, review and oversight, pages 23–39) and searched for the rest.
+  - Seven PCAOB Board and Chair speeches and statements were read for their sections on AI, quality control and inspections. They are the richest first-hand discourse on inspections and quality control.
   - The web-search quota ran out partway through. A few leads (Big Four transparency reports, the Swedish junior-auditor study, MindBridge's PCAOB letter) could not be opened and are listed in section 6.
-  - Quotations are under 25 words. Figures from vendors are labelled as such. The two items seen only in a search snippet are called out where used.
+  - Quotations are under 25 words. Figures from vendors are labelled as such. One item seen only in a search snippet is mentioned in a `notes` field and is not used as a source.
 
 ---
 
@@ -20,7 +20,7 @@
    - The IAASB's eight roundtables (243 participants, 93 of them from accounting firms) found ISQM 1 and ISA 220 (Revised) a strong base but asked for practical guidance on tool certification, monitoring and review of outputs (IAASB-TQM-2026, pp. 2–5). The IAASB approved an action plan in March 2026 under which remaining completed guides are planned to go to the Board by June 2027 (IAASB-TQMPLAN-2026, p. 9).
    - IFIAR (20 April 2026) lists practices networks should consider, from validation and re-approval to escalation pathways and AI oversight committees (IFIAR-TTF-2026, pp. 6–7). PCAOB board member Botic set out a lifecycle expectation in September 2026: approval, validation, monitoring, training, periodic reassessment and retirement, plus an inventory of tools (PCAOB-BOTICSF-2026).
 2. **Supervisors are moving to inspect the firm's system, and AI governance sits inside that system.**
-   - The FRC put firms' systems of quality management "at the heart" of supervision from April 2026 (FRC-SUPERVISION-2026).
+   - The FRC put firms' systems of quality management "at the heart" of supervision, starting April 2026 for the largest firms (FRC-SUPERVISION-2026), with fewer formal inspections where it has confidence in firms' self-review (BOARDAGENDA-SUP-2026).
    - The PCAOB adopted QC 1000 amendments on 9 September 2026. Its Chairman calls QC 1000 the foundation for a QC-centred inspection model (PCAOB-LOGOQC-2026). Staff discussion materials for the Inspections Modernization Council (IMC) propose that firm-level risk assessment sets the scope of QC testing and engagement reviews (STARLING-IMC-2026).
    - Not everyone agrees. In October 2026 Botic said he is wary of a staff idea that would cut file reviews at the largest "lower-risk" firms to well below 50% of 2025 levels (PCAOB-BOTICIOWA-2026). The SEC's chief accountant has said a QC-focused model may be tougher on firms (CAQ-HOHLWEBINAR-2026).
 3. **Quality evidence is missing, and everyone says so.**
@@ -45,7 +45,7 @@
    - AI reviewing AI, which a Grant Thornton UK director put "a few years down the line" (ICAEW-POD-2025).
    - Regulators using AI in inspections (PCAOB-BOTICIOWA-2026).
    - QC 1000 taking effect in December 2026 (FOLEY-PCAOB-2026).
-8. **Yield.** 19 candidate use cases: none graded A, 5 graded B, 5 graded C, 9 graded D (ideas). 56 sources are listed in section 5.
+8. **Yield.** 19 candidate use cases: none graded A, 5 graded B, 5 graded C, 9 graded D (ideas). 57 sources are listed in section 5.
 
 ---
 
@@ -920,7 +920,7 @@ Notes on fields for this module:
 - **Resourcing and staffing:** `coordination-scheduling`. CAQ-RSM-2026.
 - **Interaction with regulators:** `client-interaction`, `document-production`. CAALLEY-PCAOBPE-2025; IFIAR-TTF-2026, p. 4.
 
-**Engagement level (ISA 220 (Revised) / AS 1201 and AS 1215 direction, supervision, review)**
+**Engagement level (ISA 220 (Revised): direction, supervision and review)**
 
 - **Planning how AI will be used and what it can and cannot do:** `expert-judgment`. IFIAR-TTF-2026, p. 7.
 - **Direction and supervision of staff using tools; reviewer competence:** `coordination-scheduling`. FRC-GENAI-2026, p. 37.
@@ -970,7 +970,7 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 - **United Kingdom**
   - The FRC guidance (30 March 2026) sets out three risks: deficient output, misinterpretation or misuse, and non-compliant methodology (FRC-GENAI-2026; ICAEW-FRCVIEW-2026). The FRC says it is "not a response to identified quality deficiencies" and that regulatory accountability is unchanged (FRC-GENAINEWS-2026).
   - The FRC's evolved supervision model begins in April 2026 for the largest firms (FRC-SUPERVISION-2026). Board Agenda reports it will rely more on firms' own quality management and carry out fewer inspections where the FRC has confidence in self-review (BOARDAGENDA-SUP-2026).
-  - The FRC guidance says the risk of deficient output cannot be eliminated because of LLMs' inherent limitations, and notes that firms' own use of automated tools had, at the six largest firms, no monitoring of quality impact (BOARDAGENDA-FRC-2026, quoting the guidance and the 2025 review).
+  - The FRC guidance says the risk of deficient output cannot be eliminated because of LLMs' inherent limitations, and notes that firms' own use of automated tools had, at the six largest firms, no formal monitoring of quality impact (BOARDAGENDA-FRC-2026, reporting the guidance and the 2025 review).
 - **International**
   - ISQM 1 and ISA 220 (Revised) are judged resilient. The IAASB's non-authoritative guides will cover tool certification, monitoring and review of outputs, and are not new requirements (IAASB-TQM-2026, p. 4; IAASB-TQMPLAN-2026, paras 18–20).
   - The workstream's expert group includes the Big Four, BDO, Grant Thornton, Forvis Mazars, Caseware, Inflo, the FRC, the PCAOB, CPAB and IOSCO (IAASB-TQMPAGE-2026).
@@ -1134,7 +1134,7 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 | KU-SYMPOSIUM-2026 | 2026 Deloitte/University of Kansas Auditing Symposium agenda ("The Future of Auditing", 7-9 May 2026; agenda only, no session content) | University of Kansas School of Business | conference | https://business.ku.edu/deloitte-ku-auditing-symposium | 2026-05-08 |
 | AAA-MIDYEAR-2026 | 2026 Auditing Section Midyear Meeting: Excellence in Auditing Education workshop (15-17 Jan 2026; agenda only) | American Accounting Association | conference | https://aaahq.org/Meetings/2026/Auditing-Section-Midyear-Meeting/Workshop | 2026-01-15 |
 
-**Source count by type (56 refs):** press 15 · regulator 12 · professional-body 11 · firm 7 · standard-setter 5 · conference 3 · podcast 2 · survey 1 · vendor 1 · academic 1. No community or job-posting source was found (see section 6).
+**Source count by type (57 refs):** regulator 13 · press 13 · professional-body 12 · firm 7 · standard-setter 4 · conference 3 · podcast 2 · survey 1 · vendor 1 · academic 1. No community or job-posting source was found (see section 6).
 
 Two agenda-only pages (KU-SYMPOSIUM-2026, AAA-MIDYEAR-2026) and the AI-generated podcast summary (PODWISE-ACCTPOD-2026) carry little content; they are listed because they show where the discourse is happening, and the use cases do not rely on them except where cited.
 
