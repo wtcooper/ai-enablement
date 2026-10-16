@@ -77,26 +77,28 @@ Success looks like this:
 
 ## Affected users and systems
 
-**Users**
+**Primary users (v1)**
 
-- *Individual contributors* who are new to AI, or who use it only for personal tasks.
-- *Practitioners and power users* already in Claude, Cursor or Codex who want to go further.
-- *Team leads and managers* redesigning a work unit's processes.
-- *Executives and transformation, operations-excellence or enablement leads* building an
-  organization-wide AI agenda.
-- *Value-creation and deal teams* (private equity operating partners, corporate development) assessing
-  a business for AI-enabled value. This is a stretch persona; see open questions.
-- *Build and AI platform teams* who receive and prioritize the use cases.
+- *Program lead:* a head of AI, business-unit leader or transformation lead asked to transform a
+  business. They work **top-down**: set the ambition, split the business into pillars and team
+  functions, send discovery to delegates, then combine the results into a portfolio and roadmap.
+- *Team delegates:* function or team leads who map their team's processes and find opportunities
+  against the program lead's charter.
 
-**Systems (candidates, not decisions)**
+**Secondary and later users**
 
-- AI clients where users already work: Claude (apps, Code, Cowork), ChatGPT and Codex, Cursor,
-  GitHub Copilot and VS Code, through the Agent Plugins / Agent Skills standards.
-- An optional shared backend (for example an MCP server) for the use-case library, the organization's
-  tool catalog and use-case intake.
-- An optional hosted front door (web, Slack or Teams) backed by a managed agent runtime, for users
-  who don't live in an AI client.
-- Downstream intake systems: GitHub Issues, Jira, Linear, ServiceNow or a team's own backlog.
+- *Individual contributors and practitioners* redesigning their own work (later mode).
+- *Value-creation and deal teams* (AI due diligence on acquisition targets). Deferred; a possible
+  later "deals" pack.
+- *Build and AI platform teams* who receive the prioritized use cases.
+
+**Systems**
+
+- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It has an orchestrator
+  skill, specialized skills and (in Claude Code) subagents. Shared state is a **program workspace of
+  files** (charter, team assessments, portfolio, roadmap) in a folder the lead shares with delegates.
+- **Later:** an MCP backend for the shared library, catalog and intake. A hosted front door on a
+  managed agent runtime. Connections to backlog systems (GitHub, Jira, ServiceNow).
 
 ## Constraints
 
@@ -115,21 +117,33 @@ Success looks like this:
   earn its place.
 - **Evaluated.** Behavior is checked against a persona-based eval set (aim for 20 to 50 scenarios
   drawn from real interviews) before each release.
+- **No backend in v1.** Everything runs in the user's AI client. State lives in files the user controls.
+- **Portable core, client-specific extras.** Skills are the portable unit (Agent Plugins 1.0 standardizes
+  only skills and MCP servers). Subagents are a Claude Code enhancement, and each one has an inline
+  fallback.
+- **Specialization through packs.** A common backbone plus optional archetype packs, each covering one
+  distinct value chain. Organization-specific content stays in a private overlay.
+
+## Decisions so far
+
+Details are in [`docs/brainstorm/2026-10-16-packs-agents-and-pe.md`](../docs/brainstorm/2026-10-16-packs-agents-and-pe.md).
+
+| Question | Decision |
+|---|---|
+| First audience | Program lead (top-down) plus team delegates |
+| Shared backend | None in v1. A file-based program workspace |
+| Delivery | Agent Plugin: orchestrator skill plus specialized skills and subagents |
+| Generic or organization-specific | Generic open core plus private overlay. First used inside a Big 4 firm (proposed) |
+| Depth of PE content | PE program structure for the lead layer, lean and Six Sigma inside team discovery. Deal mode deferred (proposed) |
+| Workforce framing | Open about capacity and cost at the level of roles. Always show redeploy versus reduce. Never about named people (proposed) |
+| Multi-person engagements | Yes, through the shared charter and team assessment files |
 
 ## Open questions
 
-1. **Primary first audience:** individuals and teams already in AI clients, or leaders, transformation
-   leads and deal teams who may not be? The answer drives the first delivery mechanism.
-2. **Generic or organization-specific:** is this an open, public plugin with an organization overlay,
-   or built first for one organization's enablement program?
-3. **Shared backend:** is a central service allowed (library, intake, analytics)? Or must v1 be pure
-   content that runs entirely inside the user's AI client?
-4. **Use-case library sourcing:** curated by hand, gathered from public case studies, harvested from
+1. **Use-case library sourcing:** curated by hand, gathered from public case studies, harvested from
    sessions (opt-in), or a mix? Who curates it?
-5. **Depth of private-equity content:** a full diagnostic and value-creation-plan mode for deal and
-   operating teams, or borrowed concepts (levers, 100-day plan, value bridge) inside the general flow?
-6. **Workforce framing:** how explicit should the advisor be about cost-out and headcount effects,
-   especially in a PE context where they are part of the thesis?
-7. **Multi-person engagements:** should a team-level assessment combine interviews from several team
-   members over days or weeks (which needs state), or stay a single-session conversation?
-8. **Where outputs go:** markdown in chat, files, docs or slides, or tickets in a backlog system?
+2. **Where outputs go:** markdown files in the workspace for v1. Docs, slides or tickets later?
+3. **Program workspace location:** git repo, SharePoint or OneDrive, or a Cowork folder?
+4. **Clients for v0:** Claude Code and Cowork, plus which client without subagents to test the fallback?
+5. **First packs:** professional-services, assurance and tax? Who supplies sanitized seed content?
+6. **APQC licensing:** reference process IDs and short names only, or license the full content?
