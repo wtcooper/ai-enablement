@@ -22,7 +22,7 @@
   solution: >-
     PwC's Advanced Walkthrough Assistant ingests prior-year walkthroughs and current documents, drafts a
     tailored work plan, flags what is missing or changed, and drafts process and control documentation for
-    review; PwC said it is used on 2026 year-end audits. KPMG UK controls assurance teams use Clara AI to
+    review; PwC said it will be used on 2026 year-end audits. KPMG UK controls assurance teams use Clara AI to
     review control wording before the walkthrough and produce key attributes and a question list, and use
     Copilot to transcribe the walkthrough into flowcharts and process maps where permitted. AuditBoard (now
     Optro) turns walkthrough notes into narratives. KPMG's agentic SOX framework adds meeting scheduling and
@@ -35,9 +35,9 @@
     - "Firm methodology templates; tool certified for this use under ISQM 1 / QC 1000 (firm quality-management standards)"
     - "Client consent to record and transcribe meetings ('where permitted', KPMG UK)"
   risks_and_guardrails:
-    - "FRC misinterpretation risk: an AI-drafted narrative can be read as a complete understanding of the process"
+    - "FRC misinterpretation-of-output risk: auditors may read a tool's output as more complete than it is (the FRC's example is AI contract summaries; the same applies to AI-drafted narratives)"
     - "Change detection must not replace inquiry and observation; the auditor still confirms nothing changed"
-    - "Transcription kept within the firm's M365 tenant (KPMG UK)"
+    - "Transcription runs within Microsoft 365, not a separate AI system (KPMG UK)"
   human_checkpoints:
     - "Auditor performs or attends the walkthrough inquiry and observation"
     - "Reviewer approves the narrative, flowchart and design conclusion"
@@ -79,7 +79,7 @@
     descriptions against "what a good control looks like" as decision support, not a conclusion. Fieldguide
     agents draft test plans per row of the risk and control matrix (RCM, the list of risks and the controls
     that address them); Petual imports the RCM and runs the firm's own test procedures; PwC's dynamic controls
-    testing generates test procedures that users review before execution. The FRC uses AI evaluation of
+    testing generates test procedures that users review before execution (PwC page seen in search extracts only). The FRC uses AI evaluation of
     controls against design criteria, aggregated into an overall view of the control environment, as its
     worked example of task-specification risk; no public deployment of that aggregation step was found.
   outcomes:
@@ -90,7 +90,6 @@
   risks_and_guardrails:
     - "The score is decision support only; the auditor owns the test-of-design conclusion (KPMG UK)"
     - "FRC: evaluating controls one by one and then aggregating may miss shared weaknesses and overstate control-environment effectiveness"
-    - "Version control on AI-generated test instructions (PwC, search extract only)"
   human_checkpoints:
     - "Auditor approves the test plan before any testing runs"
     - "Auditor forms an independent view of design before comparing it with tool output (FRC review guidance)"
@@ -100,7 +99,7 @@
   evidence_grade: B
   sources:
     - {ref: K-UKCA, title: "Reimagining Controls Assurance with AI: Latest Insights for Leaders", publisher: "KPMG in the UK", type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf", date: "2026-01"}
-    - {ref: FG-AGENTS, title: "Field Agents for Testing", publisher: "Fieldguide Help Center", type: vendor, url: "https://help.fieldguide.io/en/articles/12292640-field-agents-for-testing", date: "2026"}
+    - {ref: FG-AGENTS, title: "Field Agents for Testing", publisher: "Fieldguide Help Center", type: vendor, url: "https://help.fieldguide.io/en/articles/12292640-field-agents-for-testing", date: "2026-06-24"}
     - {ref: PETUAL-HOME, title: "Petual: Automate SOX Testing with AI (homepage)", publisher: "Petual", type: vendor, url: "https://www.petual.ai/", date: "2026"}
     - {ref: PWC-DCT, title: "Dynamic controls testing (search extract only; pwc.com blocked)", publisher: "PwC US", type: firm, url: "https://www.pwc.com/us/en/tech-effect/ai-analytics/dynamic-controls-testing.html", date: "2026"}
     - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
@@ -108,8 +107,9 @@
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-06 and governance-13 (an idea, grade D, on AI test-of-design evaluation with
-    aggregation). search only: PWC-DCT was seen in search extracts only, including its claimed 30-40% effort
-    reduction, which is not used here; verify before citing.
+    aggregation). search only: PWC-DCT (pwc.com returns 403) was seen in search extracts only, including its claimed
+    30-40% effort reduction, which is not used here; the entry's grade rests on KPMG UK. Verifier (2026-10-16) removed
+    an unverifiable PwC version-control guardrail.
 
 - id: assurance-controls-testing-03
   title: Agent-assisted evidence requests (PBC) and pre-submission evidence checks
@@ -124,15 +124,15 @@
   maturity: piloting
   problem: >-
     Chasing evidence is a main source of SOX delay. Testers spend weeks requesting, chasing and re-requesting
-    evidence from control owners across 20+ systems, and screenshots are captured by hand each quarter. One
-    practitioner estimates about one in five PBC requests (items "provided by client") come back wrong the
-    first time.
+    evidence from control owners across 20+ systems, and screenshots are captured by hand each quarter (start-up
+    Arden's description). A SOX-tooling CEO (Zanin) estimates about one in five PBC requests (items "provided by
+    client") come back wrong the first time.
   solution: >-
     Agents draft requests, check submitted evidence for completeness, file integrity and format, flag gaps and
     help preparers fix them before submission. Vendors describe next steps as pulling evidence directly through
     integrations or computer-use navigation of legacy systems, capturing required screenshots, and messaging
     control owners in Slack or Teams with pre-filled context. KPMG argues automated evidence collection may pay
-    back sooner than automated testing. Clients of Weaver and Sanville see live request status.
+    back sooner than automated testing.
   outcomes:
     - {lever: speed, description: "Optro: agent reduces evidence follow-up by clarifying requests before submission (vendor claim; automated evidence collection 'upcoming')", figure: "not quantified", source_ref: OPTRO-LAUNCH}
     - {lever: speed, description: "Frazier & Deeter: evidence requests faster with Fieldguide (search extract only)", figure: "~8% faster (19 hours)", source_ref: FG-FRAZIER}
@@ -142,8 +142,8 @@
   risks_and_guardrails:
     - "Completeness and accuracy of client-provided information remains the auditor's responsibility"
     - "Access and segregation of duties for agents holding system credentials"
-    - "AICPA Peer Review Board (May 2026): platforms that yield identical risk assessments, samples and tests across SOC 2 clients make engagements nonconforming"
-    - "SOC peer reviewers warn against dashboard extraction replacing inquiry and testing"
+    - "AICPA Peer Review Board (May 2026): identical risk assessments, sample sizes and tests across SOC 2 clients can lead peer reviewers to judge engagements nonconforming"
+    - "The AICPA SOC 2 Working Group warns against automated dashboard extraction replacing inquiry and testing (via CSA)"
     - "Evidence authenticity: AI-fabricated documents are a growing concern"
   human_checkpoints:
     - "Control owner confirms submissions"
@@ -160,12 +160,14 @@
     - {ref: FG-FRAZIER, title: "Frazier Deeter reclaims the judgment work at the heart of HITRUST (search extract only; page returned 404)", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/case-studies/frazier-deeter-reclaims-the-judgment-work-at-the-heart-of-hitrust", date: "2026"}
     - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14"}
     - {ref: IIAF-FRAUD, title: "Internal Audit and AI-Enabled Fraud", publisher: "Internal Audit Foundation & AuditBoard", type: survey, url: "https://www.theiia.org/globalassets/site/content/research/foundation/2026/internal-audit-and-ai-enabled-fraud/ia-and-ai-enabled-fraud-report-en.pdf", date: "2026-02-17"}
+    - {ref: CSA-SOC2, title: "The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted", publisher: "Cloud Security Alliance", type: professional-body, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/", date: "2026-08-30"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-17, discourse-03 and governance-08. Discourse classed the evidence-collection agent
     as automate / announced with pattern 'other' (an agent that negotiates with control owners); normalised to
     intake-triage / improve because deployed use is request clarification. search only: FG-FRAZIER (figure
-    seen in a search extract; the case-study page returned 404).
+    seen in search extracts on 2026-10-16; the case-study page returns 404 to direct requests). Verifier removed an
+    uncited claim that Weaver and Sanville clients see live request status.
 
 - id: assurance-controls-testing-04
   title: Risk-scored sample, coverage and control targeting
@@ -186,8 +188,8 @@
     Microsoft Internal Audit's Sample Selection Agent (M365 Copilot) scores items on revenue, discounts, country
     risk and control indicators to produce a defensible risk-based selection. AuditBoard (now Optro) offers AI
     risk-based sample selection for control testing, and Optro's agentic risk-assessment scoring recommends
-    starting risk scores with evidence. KPMG describes models trained on historical deficiencies and process
-    data that predict where controls are likely to fail. The FRC's contract-review example shows a tool that
+    starting risk scores with evidence. KPMG describes predictive risk modelling that analyses historical data
+    to predict where control breakdowns are most likely to occur. The FRC's contract-review example shows a tool that
     scores items and samples those above a threshold, with the risk indicators visible to the auditor.
   outcomes:
     - {lever: speed, description: "Microsoft Internal Audit: weeks of manual analysis cut to a single day", figure: "weeks -> 1 day", source_ref: MSFT-IA}
@@ -214,14 +216,14 @@
     - {ref: K-404A, title: "The 404(a) opportunity", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/404-opportunity.pdf", date: "2026-08"}
     - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
+    - {ref: PCAOB-2024-007, title: "PCAOB Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: "2024-06-12"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-18, discourse-08, governance-07 and discourse-20 (predictive targeting, grade C).
     Microsoft's agent supports internal-audit coverage across partner and compliance audits, not SOX
-    statistical sampling. The ~2K hours/year figure is reported by the practice and governance deep dives;
-    the discourse deep dive found a digit missing in the PDF text layer and did not report it, so verify on
-    the rendered page. Microsoft PDFs are dated FY26. The PCAOB found all US global network firms already use
-    tools to select samples (2023 inspection year).
+    statistical sampling. The ~2K hours/year figure was confirmed on the rendered PDF page (verifier, 2026-10-16;
+    the text layer drops some glyphs). Microsoft PDFs are dated FY26. The PCAOB's 2024-007 release reports that
+    all US global network firms used tools to select samples for testing (2023 inspection year).
 
 - id: assurance-controls-testing-05
   title: Agentic attribute testing of SOX key controls against unstructured evidence, with workpapers drafted for review
@@ -263,7 +265,7 @@
   risks_and_guardrails:
     - "Every agent conclusion linked to cited evidence; human-in-the-loop review kept (Reddit)"
     - "Non-determinism: the same test can return slightly different answers on rerun"
-    - "Plateau when agents are pointed at judgment-heavy controls such as management review controls (Optro)"
+    - "Time savings plateau when agents are pointed at the most judgment-heavy work (Optro)"
     - "Prompt injection: control owners could hide instructions in evidence to steer testing agents (KPMG)"
     - "COSO: where management relies on AI output, retain the prompt, configuration and model version, and the sampling rationale"
     - "A generic note that 'an AI tool was used' does not meet documentation standards (CalCPA)"
@@ -274,8 +276,7 @@
     - "People own deviation evaluation, root cause and deficiency classification"
   role_evolution: >-
     In-house testers become reviewers and 'managers of AI agents', working on exceptions, ad hoc testing,
-    remediation with control owners and control design; the ratio of reviewers to preparers rises. Reddit's
-    CAE describes human review as essential, and Reddit advertised a role to build an 'AI-first' internal audit
+    remediation with control owners and control design. Reddit's CAE describes human review as essential, and Reddit advertised a role to build an 'AI-first' internal audit
     function starting with agentic SOX testing.
   evidence_grade: A
   sources:
@@ -292,14 +293,14 @@
     - {ref: A16Z-PETUAL, title: "Investing in Petual", publisher: "Andreessen Horowitz", type: vendor, url: "https://a16z.com/announcement/investing-in-petual/", date: "2026-04-23"}
     - {ref: CPAPA-WORKIVA, title: "Workiva Advances Regulatory Work with AI Innovation", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/09/15/workiva-advances-regulatory-work-with-ai-innovation/190227/", date: "2026-09-15"}
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/generative-ai", date: "2026-02-23"}
-    - {ref: CALCPA, title: "AI Standard Setting, Regulation in Audit: Part 1 (S. Gadzhieva)", publisher: "CalCPA", type: professional-body, url: "https://www.calcpa.org/whats-happening/articles/ai-standard-setting-regulation-in-audit-part-1", date: "2026-08"}
+    - {ref: CALCPA, title: "AI Standard Setting, Regulation in Audit: Part 1 (S. Gadzhieva)", publisher: "CalCPA", type: professional-body, url: "https://www.calcpa.org/whats-happening/articles/ai-standard-setting-regulation-in-audit-part-1", date: "2026-08-12"}
     - {ref: JOB-REDDIT, title: "Senior, Business Risk & AI Automation (Reddit; expired listing)", publisher: "Reddit via Working Nomads", type: job-posting, url: "https://www.workingnomads.com/jobs/senior-business-risk-ai-automation-reddit", date: "2026"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-01, discourse-01, governance-03 and discourse-09 (workpaper drafting, grade C).
     Graded A because a named organisation published a measured figure, but the figures are self-reported by
     Reddit's CAE and republished by the vendor; they cover time and volume, not test quality. The original
-    reddit.com post was unreachable and was read via a mirror. Petual, Midship and the a16z quote (an unnamed
+    reddit.com post was unreachable (403) and was read via a mirror that carries the TL;DR and summary only. Petual, Midship and the a16z quote (an unnamed
     customer cutting SOX budget 'to a quarter') are vendor or investor claims. Workiva has no named customer
     outcome. Function is in-house internal audit, not an audit firm.
 
@@ -384,35 +385,37 @@
     - {lever: speed, description: "RMF Audit & Control: samples of 60+ invoices take roughly half the time; also used for tests of controls", figure: "~50%", source_ref: DS-RMF}
     - {lever: growth, description: "Sanville & Co blended realisation on its lowest-margin engagements", figure: "$150-200/hr -> $250+/hr", source_ref: FG-SANVILLE}
     - {lever: quality, description: "Sanville's first PCAOB inspection on the platform (broker-dealer) returned zero comment forms", figure: "0 comment forms", source_ref: FG-SANVILLE}
-    - {lever: speed, description: "Thomson Reuters early adopters: faster preparation and workpaper review (vendor claim)", figure: "up to 70%", source_ref: TR-AGENTIC}
+    - {lever: speed, description: "Thomson Reuters early adopters of CoCounsel Document Analysis (a separate product): faster preparation and workpaper review (vendor claim)", figure: "up to 70%", source_ref: TR-AGENTIC}
   prerequisites:
     - "Clients upload PBC through a portal or tool the firm can read"
     - "Methodology templates in the platform; tool certified under the firm's quality management system"
   risks_and_guardrails:
     - "Accuracy is a binary yes/no metric for matching tools, so it can and should be measured (PwC)"
     - "A clean inspection cannot be attributed to AI alone; at Sanville it followed a full methodology overhaul"
-    - "PCAOB AS 1105 amendments (FY2026) require evaluating the reliability of information processed by technology tools"
+    - "PCAOB AS 1105/2301 amendments (fiscal years beginning on or after 15 Dec 2025) specify how to evaluate the reliability of company-provided electronic information and investigate flagged items"
     - "The file must show the population covered, the items flagged and the follow-up"
   human_checkpoints:
     - "Auditor reviews each exception and signs off the test"
   role_evolution: >-
     Junior tick-and-tie shrinks and reviewer bandwidth is freed: at Sanville, first-year staff now do complex
     revenue testing under guidance. PwC hires engineers into assurance.
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - {ref: TR-AGENTIC, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05"}
     - {ref: FG-SANVILLE, title: "How Sanville & Co passed a PCAOB inspection with zero comment forms in under a year with Fieldguide", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/case-studies/how-sanville-co-passed-a-pcaob-inspection-with-zero-comment-forms-in-under-a-year-with-fieldguide", date: "2026"}
     - {ref: DS-RMF, title: "RMF Audit & Control success story", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/rmf-audit-&-control", date: "2026"}
     - {ref: AT-PWC, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28"}
     - {ref: CFOBREW-PWC, title: "A look at PwC's 'next generation' audit", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/2025/11/05/a-look-at-pwc-s-next-generation-audit", date: "2025-11-05"}
-    - {ref: FG-PCAOB, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026"}
+    - {ref: FG-PCAOB, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026-08-06"}
     - {ref: PCAOB-2024-007, title: "PCAOB Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: "2024-06-12"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-12 and discourse-05. Most cited figures are tests of details (substantive testing);
     shared with the substantive-testing module, since tests of controls use the same matching step. PwC's
     controls-testing variant was 'expected' in October 2025 with no later public confirmation; the discourse
-    deep dive graded the controls-specific use C.
+    deep dive graded the controls-specific use C. Verifier downgraded A to B: the measured figures (Oberlander,
+    RMF's ~50%, Sanville) are for tests of details; RMF and KPMG UK name controls use but publish no
+    controls-specific measure.
 
 - id: assurance-controls-testing-08
   title: Full-population testing of transactional and master-data controls instead of samples
@@ -471,8 +474,9 @@
     - {ref: NFRA-CAALLEY, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: "CAalley", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24"}
     - {ref: PCAOB-2024-007, title: "PCAOB Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: "2024-06-12"}
     - {ref: IAASB-ED, title: "Proposed Revisions for Audit Evidence & Risk Response: ISA 330, ISA 500 & ISA 520", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520", date: "2026-08-05"}
+    - {ref: AUASB-CP, title: "Consultation Paper: IAASB Proposed International Standards on Audit Evidence & Risk Response", publisher: "AUASB (Australia)", type: standard-setter, url: "https://www.auasb.gov.au/media/fegpk4s5/auasb_cp_iaasbproposedintlstdonauditevidence__riskresponse1.pdf", date: "2026-08"}
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
-    - {ref: AT-GARTNER, title: "Audit teams' AI use common but most lack strategy (Gartner webinar poll)", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08"}
+    - {ref: AT-GARTNER, title: "Audit teams' AI use common but most lack strategy (Gartner webinar poll)", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-17"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-09, discourse-06 and governance-06. Lens set to reinvent (two of three deep dives)
@@ -507,7 +511,7 @@
     - {lever: speed, description: "Snowflake Internal Audit: reduced controls testing time and earlier remediation (qualitative)", figure: "not quantified", source_ref: OPTRO-SNOW}
   prerequisites:
     - "Control-relevant data in a queryable store, with risk-to-control-to-data-source mappings"
-    - "People who understand both the data and the risk design the queries; start with one or two high-impact controls (Snowflake CAE)"
+    - "People who understand both the data and the risk design the queries; start with one or two high-impact use cases (Snowflake Head of Internal Audit)"
     - "Automated evidence feeds and alert routing to named owners"
   risks_and_guardrails:
     - "Precision thresholds to avoid alert noise; named owners and service levels for alerts (Grant Thornton)"
@@ -524,15 +528,16 @@
     design; the ICFR team monitors a running view of control health rather than working in cycles.
   evidence_grade: B
   sources:
-    - {ref: OPTRO-SNOW, title: "How Snowflake Uses Continuous Monitoring to Proactively Identify Risk", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/snowflake-success-story", date: "2026"}
+    - {ref: OPTRO-SNOW, title: "How Snowflake Uses Continuous Monitoring to Proactively Identify Risk", publisher: "Optro (originally AuditBoard)", type: vendor, url: "https://optro.ai/blog/snowflake-success-story", date: "2024-02-27"}
     - {ref: OPTRO-LAUNCH, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14"}
     - {ref: GT-SOX, title: "The power of AI in efficient SOX compliance", publisher: "Grant Thornton", type: firm, url: "https://www.grantthornton.com/insights/articles/advisory/2025/the-power-of-ai-in-efficient-sox-compliance", date: "2026-07-21"}
-    - {ref: FG-AGENTS, title: "Field Agents for Testing", publisher: "Fieldguide Help Center", type: vendor, url: "https://help.fieldguide.io/en/articles/12292640-field-agents-for-testing", date: "2026"}
+    - {ref: FG-AGENTS, title: "Field Agents for Testing", publisher: "Fieldguide Help Center", type: vendor, url: "https://help.fieldguide.io/en/articles/12292640-field-agents-for-testing", date: "2026-06-24"}
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-10, discourse-07 and governance-05. Snowflake's monitoring is query-based analytics
-    more than GenAI; it is included as the data base agentic testing builds on. The Snowflake page is undated.
+    more than GenAI; it is included as the data base agentic testing builds on. The Snowflake page is dated
+    27 Feb 2024 (verifier corrected the date from '2026'), so it predates agentic testing.
 
 - id: assurance-controls-testing-10
   title: AI secondary review and multi-agent challenge of control-testing workpapers
@@ -559,7 +564,7 @@
     looks for mitigating evidence and a 'judge' agent that resolves disagreements and absorbs auditor feedback.
   outcomes:
     - {lever: quality, description: "FJ Management: review memos attached to worksteps caught actual defects; plan to move to 100% secondary review (qualitative)", figure: "not quantified", source_ref: OPTRO-FJM}
-    - {lever: quality, description: "IntelliAudit research prototype (ISO 27001, 14 controls, 4 simulated organisations): agreement with assessor-only results and use of the judge agent", figure: "91.7% of final statuses matched; judge invoked in 10.4% of cases, all revisions stricter; explanations rated 3.92/5", source_ref: INTELLIAUDIT}
+    - {lever: quality, description: "IntelliAudit research prototype (ISO 27001, 14 controls, 4 simulated organisations): final statuses unchanged from the single auditor-agent label (an internal consistency measure, not accuracy against human auditors); judge use; auditors' rating of explanations", figure: "91.7% unchanged; judge invoked in 10.4% of cases, all revisions stricter; explanations rated 3.92/5", source_ref: INTELLIAUDIT}
     - {lever: capacity, description: "Microsoft Internal Audit: internal quality-review effort cut (not attributed to a specific tool)", figure: "~-50%", source_ref: MSFT-IA}
   prerequisites:
     - "Audit record held in structured fields, not Word or Excel attachments ('structured fields over attachments')"
@@ -577,13 +582,13 @@
     - "Reviewer forms an independent expectation before reading tool conclusions"
   role_evolution: >-
     CAE review shifts from line-by-line checking to judgment calls, with the aim of removing the CAE review
-    bottleneck; IT auditors adjudicate disagreements rather than read every artefact.
+    bottleneck; auditors investigate model disagreements rather than read every artefact.
   evidence_grade: B
   sources:
-    - {ref: OPTRO-FJM, title: "FJ Management advances its agentic audit strategy with Optro", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/fj-management-success-story", date: "2026"}
+    - {ref: OPTRO-FJM, title: "FJ Management advances its agentic audit strategy with Optro", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/fj-management-success-story", date: "2026-09-22"}
     - {ref: MSFT-IA, title: "AI solution overviews: Internal Audit", publisher: "Microsoft (Frontier Finance)", type: firm, url: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mcaps/documents/fy26/Internal-Audit.pdf", date: "2026"}
     - {ref: INTELLIAUDIT, title: "IntelliAudit: Using Large Language Models to Evaluate Audit Controls", publisher: "arXiv (2608.07688)", type: academic, url: "https://arxiv.org/html/2608.07688v1", date: "2026-08-07"}
-    - {ref: PETERS, title: "Auditor automation usage and professional skepticism (working paper)", publisher: "Tilburg University (C. Peters)", type: academic, url: "https://research.tilburguniversity.edu/en/publications/auditor-automation-usage-and-professional-skepticism/", date: "2022"}
+    - {ref: PETERS, title: "Auditor automation usage and professional skepticism (working paper)", publisher: "Tilburg University (C. Peters)", type: academic, url: "https://research.tilburguniversity.edu/en/publications/auditor-automation-usage-and-professional-skepticism/", date: "2022-12-09"}
     - {ref: ICAEW-FRC, title: "How helpful is FRC guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06"}
   last_reviewed: "2026-10-16"
   notes: >-
@@ -605,18 +610,16 @@
   problem: >-
     Service-auditor engagements (SOC reports on a service organisation's controls, used by its customers and
     their auditors) test high volumes of ITGC evidence such as change tickets and depend on control owners'
-    time. KPMG UK says demand for controls assurance reports nearly doubled in a year without a matching rise
-    in staff; in its benchmark of 180+ reports, 90% of operating-effectiveness exceptions fell on manual
+    time. KPMG UK says demand for controls assurance reports nearly doubled in a year (90% over 2023-24); in its benchmark of 180+ reports, 90% of operating-effectiveness exceptions fell on manual
     controls and 39% on system access and authorisation.
   solution: >-
     KPMG UK uses Clara AI custom agents for walkthrough preparation, test-plan drafting and collating reviewer
     comments on the description of service; DataSnipper to extract details from high volumes of IT change
     tickets into testing tables; M365 Copilot for meeting recaps, Excel analysis and workpaper drafting; and
-    KPMG Clara Collaboration as an evidence portal. Fieldguide sells testing agents to SOC and HITRUST firms.
+    KPMG Clara Collaboration as an evidence portal. Fieldguide markets testing agents to SOC and HITRUST practices.
   outcomes:
     - {lever: speed, description: "KPMG UK recent engagements: testing time reduced by automating control analysis, evidence extraction and standard documentation", figure: "~18%", source_ref: K-UKCA}
     - {lever: speed, description: "KPMG UK engagement team using DataSnipper on controls testing", figure: "~15% less testing time", source_ref: K-UKCA}
-    - {lever: speed, description: "Frazier & Deeter HITRUST controls testing with Fieldguide agents (search extract only)", figure: "~40% faster (71 hours returned)", source_ref: FG-FRAZIER}
   prerequisites:
     - "Firm-approved tools in a secure environment; risk-based access to client evidence"
   risks_and_guardrails:
@@ -635,7 +638,9 @@
   last_reviewed: "2026-10-16"
   notes: >-
     From practice-07. KPMG UK percentages are firm-reported for 'recent engagements' with no sample size given.
-    search only: FG-FRAZIER (figure seen in a search extract; page returned 404).
+    search only: FG-FRAZIER (page returns 404; search extracts report HITRUST controls testing ~40% faster, 71
+    hours). Verifier moved that figure out of the outcomes because it could not be opened, and removed an
+    unsupported 'without a matching rise in staff' clause.
 
 - id: assurance-controls-testing-12
   title: AI drafting in the SOC cycle (Section 3 system descriptions, evidence tracking, responses to deviations)
@@ -657,7 +662,7 @@
     TSC, drafts structured management responses (root cause, remediation, timelines), turns meeting notes into
     action items, tracks evidence collection and project status, and keeps continuous evidence snapshots.
   outcomes:
-    - {lever: capacity, description: "Live poll at the 14th EY SOC conference: share of attendees using AI for evidence collection / Section 3 updates / deviation responses / project management", figure: "63% / 45% / 41% / 29%", source_ref: EY-SOC}
+    - {lever: capacity, description: "Live poll at the 2026 EY SOC conference: share of attendees naming each as a top AI use case in SOC reporting (evidence collection / Section 3 updates / deviation responses / project management)", figure: "63% / 45% / 41% / 29%", source_ref: EY-SOC}
   prerequisites:
     - "Approved enterprise AI tool with confidentiality controls over client evidence"
     - "Prior SOC reports, policies and an AI inventory as source material"
@@ -718,8 +723,9 @@
     - {ref: K-AGENTIC, title: "Seize the future: The agentic shift in SOX compliance", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/us/en/articles/2025/seize-the-future-the-agentic-shift-in-sox-compliance.html", date: "2025-08"}
     - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
+    - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
-  notes: "Merged from practice-16 and governance-12. Maturity set to piloting (practice said emerging, governance piloting)."
+  notes: "Merged from practice-16 and governance-12. Maturity set to piloting (practice said emerging, governance piloting). Verifier added K-SOX30 as the source for the vendor-AI SOC review guardrail."
 
 - id: assurance-controls-testing-14
   title: Compliance-automation platforms feeding SOC 2 examiners with continuously pulled evidence
@@ -745,9 +751,9 @@
     - "An independent examiner who designs their own procedures"
     - "A risk assessment tailored to each client"
   risks_and_guardrails:
-    - "AICPA Peer Review Board alert (effective 1 June 2026): identical reports, risk assessments, sample sizes or procedures across clients can be judged nonconforming"
+    - "AICPA Peer Review Board reviewer alert (May 2026; enhanced oversight from 1 June 2026): identical reports, risk assessments, sample sizes or procedures across clients can be judged nonconforming"
     - "AICPA ethics guidance: watch engagement terms that shift control, judgment or evidence access to the tool provider"
-    - "Delve allegations (unproven and denied): near-identical text in 493 of 494 reports and conclusions drafted before evidence arrived"
+    - "Delve allegations (unproven and denied): near-identical text in 493 of 494 reports and conclusions generated before observation periods ended"
     - "Peer reviewers may select about five engagements from different partners and look for identical procedures"
   human_checkpoints:
     - "A licensed CPA designs and executes the tests and signs the opinion"
@@ -759,7 +765,7 @@
     - {ref: JOFA-FAST, title: "Promises of 'fast and easy' threaten SOC credibility", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/feb/promises-of-fast-and-easy-threaten-soc-credibility/", date: "2026-02-01"}
     - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14"}
     - {ref: JOFA-PODSOC, title: "The risks of quick-turn SOC engagements and what CPAs should know (A. Pawlicki)", publisher: "Journal of Accountancy podcast (AICPA)", type: podcast, url: "https://www.journalofaccountancy.com/podcast/2026/apr/the-risks-of-quick‑turn-soc-engagements-and-what-cpas-should-know/", date: "2026-04-30"}
-    - {ref: IANS-DELVE, title: "Delve Allegations Expose Weak Points in Compliance", publisher: "IANS Research", type: press, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: "2026-03-30"}
+    - {ref: IANS-DELVE, title: "Delve Allegations Expose Weak Points in Compliance", publisher: "IANS Research", type: press, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: "2026-03-24"}
     - {ref: CCI-DELVE, title: "SOC 2 Is Broken. The Delve Scandal Is Showing Us How. (C. Chio)", publisher: "Corporate Compliance Insights", type: press, url: "https://www.corporatecomplianceinsights.com/soc-2-broken-delve-scandal-shows/", date: "2026-05-21"}
   last_reviewed: "2026-10-16"
   notes: >-
@@ -794,8 +800,8 @@
     control-testing templates for eight capability types. For embedded, self-correcting controls, testing
     shifts to configuration, data logic and the conditions under which automation fails or is bypassed, with
     more weight on test of design. In SOC work, TQA 9561 says scope follows whether AI affects in-scope
-    services, the SOC 1 description discloses relevant AI, and third-party AI providers are treated as
-    subservice organisations. KPMG UK is introducing a SOC 2+ opinion over AI governance and controls; the
+    services, the SOC 1 description covers AI that is part of the services, and third-party AI providers that
+    perform functions within the system are assessed under the subservice-organisation framework. KPMG UK is introducing a SOC 2+ opinion over AI governance and controls; the
     AICPA practice aid Part 1 helps auditors understand AI-affected controls.
   outcomes:
     - {lever: risk, description: "KPMG expects the first wave of AI-related material weaknesses as SOX programmes stop testing around AI", figure: "2027 (forecast)", source_ref: K-SOX30}
@@ -822,7 +828,7 @@
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/generative-ai", date: "2026-02-23"}
     - {ref: JOFA-COSO, title: "COSO creates audit-ready guidance for governing generative AI", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/feb/coso-creates-audit-ready-guidance-for-governing-generative-ai/", date: "2026-02-26"}
     - {ref: AICPA-PA, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13"}
-    - {ref: JOFA-EVAL, title: "A new frontier: CPAs as AI system evaluators", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/nov/a-new-frontier-cpas-as-ai-system-evaluators/", date: "2025-11"}
+    - {ref: JOFA-EVAL, title: "A new frontier: CPAs as AI system evaluators", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/nov/a-new-frontier-cpas-as-ai-system-evaluators/", date: "2025-11-01"}
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
     - {ref: K-404A, title: "The 404(a) opportunity", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/404-opportunity.pdf", date: "2026-08"}
     - {ref: K-UKCA, title: "Reimagining Controls Assurance with AI: Latest Insights for Leaders", publisher: "KPMG in the UK", type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf", date: "2026-01"}
@@ -835,8 +841,9 @@
   notes: >-
     Merged from practice-15, discourse-13, governance-09, governance-10 (SOC scoping of AI) and discourse-15
     (idea: testing self-healing embedded controls). Pattern 'other': assurance over controls that AI performs;
-    proposed as a new pattern. Usage is early: a field study (Kokina et al. 2025) found complex AI not yet in
-    clients' financial reporting. Uniqus suggests companies with agentic AI in the close may want to keep a
+    proposed as a new pattern. A field study of large audit firms (Kokina et al. 2025, 22 interviews) found
+    'simple AI' such as document extraction widely used in audits while 'complex AI' tools were still being
+    developed. Uniqus suggests companies with agentic AI in the close may want to keep a
     voluntary 404(b) attestation if the SEC filer-status proposal is adopted. TQA 9561 text was not read
     directly (known via Schneider Downs and CSA).
 
@@ -882,7 +889,7 @@
   sources:
     - {ref: CPAPA-EY, title: "EY Rolls Out Agentic AI in Assurance Across Its Global Network of Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/", date: "2026-04-07"}
     - {ref: DELOITTE-OMNIA, title: "Deloitte Unveils Connected Agentic Intelligence in Deloitte Omnia to Advance Audit & Assurance", publisher: "Deloitte Global", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: "2026-06-24"}
-    - {ref: K-CLARA, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04"}
+    - {ref: K-CLARA, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04-22"}
     - {ref: AT-PWC, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28"}
     - {ref: CFODIVE-PWC, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: "2026-10-07"}
     - {ref: CONS-GT, title: "Grant Thornton launches AI platform for audit business", publisher: "Consultancy.us", type: press, url: "https://www.consulting.us/news/13378/grant-thornton-launches-ai-platform-for-audit-business", date: "2026-05-11"}
@@ -958,7 +965,6 @@
   risks_and_guardrails:
     - "Independence: lines of defence blur when internal audit shares agents; handled by transferring ownership to the business"
     - "Agent permissions and the 'lethal trifecta' security risk"
-    - "Vibe-coded tools skip basics, so ITGCs over audit's own AI matter more"
   human_checkpoints:
     - "Auditors remain the decision layer; agents are not replacing the team in the near term"
   role_evolution: >-
@@ -974,7 +980,7 @@
   notes: >-
     Merged from practice-19 and discourse-17. Pattern 'other': multi-agent orchestration with a defined
     human-agent collaboration layer across audit work. Described from podcast content and episode summaries;
-    no figures. By September 2026 the PayPal data-science lead had founded AssureSwarm (name spelled Penfill
+    no figures. Verifier removed an unsourced 'vibe-coded tools' guardrail. By September 2026 the PayPal data-science lead had founded AssureSwarm (name spelled Penfill
     and Penfil in different sources).
 
 - id: assurance-controls-testing-19
@@ -989,12 +995,12 @@
   runtime_class: managed-agent-runtime
   maturity: in-production
   problem: >-
-    Many SOX programmes buy testing hours from co-source providers; KPMG's 2025 survey found 58% say outsourced
-    providers make up over 20% of SOX budget. Testers change every year, which hurts consistency.
+    Many SOX programmes buy testing hours from co-source providers; KPMG's 2025 survey found only 28% used
+    outsourced providers for SOX testing, but 58% said outsourced providers made up over 20% of SOX budget. Testers change every year, which hurts consistency.
   solution: >-
     Internal audit teams have agents run the tests that were outsourced, starting with IT general controls and
-    then business-process controls, under their own review process. External spend is redirected to advisory
-    work.
+    then business-process controls, under their own review process. Havertys expects external spend to shift
+    from testing hours to advisory work.
   outcomes:
     - {lever: cost, description: "Havertys starts with outsourced IT controls because ROI was clearest; target is all IT SOX tests and part of business-process tests", figure: "not quantified", source_ref: OPTRO-HAVERTYS}
     - {lever: cost, description: "An unnamed Petual customer told the investor they cut SOX budget to a quarter of its prior level (anecdotal)", figure: "~75% budget reduction (claim)", source_ref: A16Z-PETUAL}
@@ -1011,7 +1017,7 @@
     controls, remediation and programme design.
   evidence_grade: B
   sources:
-    - {ref: OPTRO-HAVERTYS, title: "Four years in, Havertys expands its use of Optro with agentic AI for controls testing", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/havertys-furniture-success-story", date: "2026"}
+    - {ref: OPTRO-HAVERTYS, title: "Four years in, Havertys expands its use of Optro with agentic AI for controls testing", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/havertys-furniture-success-story", date: "2026-09-04"}
     - {ref: A16Z-PETUAL, title: "Investing in Petual", publisher: "Andreessen Horowitz", type: vendor, url: "https://a16z.com/announcement/investing-in-petual/", date: "2026-04-23"}
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
@@ -1035,10 +1041,11 @@
     in-sourcing to agents. Unstructured evidence of every file type still has to be read, matched to samples
     and documented with traceability.
   solution: >-
-    Firms embed agents in their own delivery. RSM Beacon (built with Andera): upload evidence, automatic file
-    and completeness validation, natural-language directed test steps, rules-based analysis such as user-access
+    Firms embed agents in their own delivery. RSM Beacon: upload evidence, automatic file and completeness
+    validation, natural-language directed test steps, rules-based analysis such as user-access
     testing, and annotated outputs traced to source; auditors approve, refine or intervene at key stages, and
-    scope covers SOX, internal audit, SOC and ICFR testing. Riveron places different agents at specific
+    scope covers SOX, internal audit, SOC and ICFR testing. In August 2026 RSM also announced an alliance to
+    integrate Andera's AI into its audit platform. Riveron places different agents at specific
     workflow steps in co-sourced and outsourced engagements, with a professional reviewing every result before
     it enters the workpaper. AI-native start-ups such as Arden present themselves as internal audit firms.
   outcomes:
@@ -1051,7 +1058,7 @@
   risks_and_guardrails:
     - "Distinguish missing support from true exceptions (for example a review done in a meeting without a written record)"
     - "Riveron: general-purpose LLMs alone do not meet an 'audit-grade' standard for testing"
-    - "FRC thematic: third-party components may not be open to logic review, so output testing carries more weight; only two of six firms recorded tool limitations in certification templates"
+    - "FRC: where a tool's internal logic cannot be evaluated (as with LLMs), output testing in certification carries more weight; in its 2025 thematic only two of six firms recorded tool limitations in certification templates"
     - "NFRA: do not rely on vendor accuracy claims without independent evaluation"
   human_checkpoints:
     - "Approval at key workflow stages (RSM); professional review of every test result (Riveron)"
@@ -1065,13 +1072,15 @@
     - {ref: RSM-BEACON, title: "RSM Beacon: Automated control testing platform", publisher: "RSM US", type: firm, url: "https://rsmus.com/services/risk-fraud-cybersecurity/automated-control-testing.html", date: "2026"}
     - {ref: RIVERON, title: "AI in Internal Audit and SOX: Applying Methods that Work", publisher: "Riveron", type: firm, url: "https://riveron.com/ai-in-internal-audit-and-sox-applying-methods-that-work/", date: "2026-06-16"}
     - {ref: YC-ARDEN, title: "Arden: AI-native internal audit firm", publisher: "Y Combinator", type: vendor, url: "https://www.ycombinator.com/companies/arden", date: "2026"}
-    - {ref: VERDANTIX, title: "What Goes Around Comes Around: KPMG's AI-Driven Fee Argument", publisher: "Verdantix", type: press, url: "https://www.verdantix.com/venture/blog/what-goes-around-comes-around--kpmg-s-ai-driven-fee-argument-raises-uncomfortable-questions-about-audit-pricing-models", date: "2026"}
+    - {ref: VERDANTIX, title: "What Goes Around Comes Around: KPMG's AI-Driven Fee Argument", publisher: "Verdantix", type: press, url: "https://www.verdantix.com/venture/blog/what-goes-around-comes-around--kpmg-s-ai-driven-fee-argument-raises-uncomfortable-questions-about-audit-pricing-models", date: "2026-02-10"}
     - {ref: FRC-THEMATIC, title: "Thematic Review: Certification of Automated Tools and Techniques", publisher: "Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/docs/8383/html/", date: "2025-06-26"}
+    - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
     - {ref: NFRA-CAALLEY, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: "CAalley", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-04, discourse-10 and governance-04. No named RSM Beacon client or measured outcome was
-    found. Lens and ladder follow discourse and governance (reinvent / delegate); practice had ladder augment.
+    found. Verifier: the RSM-Andera announcement does not name Beacon, so 'Beacon built with Andera' was
+    reworded. Lens and ladder follow discourse and governance (reinvent / delegate); practice had ladder augment.
 
 - id: assurance-controls-testing-21
   title: Encoding SOX testing judgment into agent evaluation sets (practitioner-in-the-loop development)
@@ -1093,7 +1102,7 @@
     to run regression tests before changing prompts, models or tools.
   outcomes:
     - {lever: quality, description: "Fieldguide contract role for SOX AI specialists: 8-12 weeks, $60-80/hour, requires 4+ years of control testing", figure: "not quantified", source_ref: JOB-FG-SOX}
-    - {lever: quality, description: "Nace.AI seeks ex-Big Four SOX managers to judge when AI output 'only looks right'", figure: "not quantified", source_ref: JOB-NACE}
+    - {lever: quality, description: "Nace.AI seeks Big Four (or equivalent) SOX experts to judge when AI output 'only looks right'", figure: "not quantified", source_ref: JOB-NACE}
   prerequisites:
     - "Real workpapers and labelled outcomes across control types (reconciliations, management review controls, access reviews, segregation of duties)"
   risks_and_guardrails:
@@ -1103,9 +1112,9 @@
   role_evolution: "New role: the SOX practitioner as AI evaluator or prompt engineer rather than client delivery."
   evidence_grade: B
   sources:
-    - {ref: JOB-FG-SOX, title: "SOX AI Specialist (Contractor)", publisher: "Fieldguide (via Built In)", type: job-posting, url: "https://www.builtinla.com/job/sox-ai-specialist-contractor/10443759", date: "2026-08"}
-    - {ref: JOB-FG-SWE, title: "Software Engineer, Internal Audit (All Levels)", publisher: "Fieldguide (via Jobicy)", type: job-posting, url: "https://jobicy.com/jobs/154197-software-engineer-internal-audit-all-levels", date: "2026-10"}
-    - {ref: JOB-NACE, title: "SOX Audit Expert", publisher: "Nace.AI (General Catalyst job board)", type: job-posting, url: "https://jobs.generalcatalyst.com/companies/nace-ai-2/jobs/74116857-sox-audit-expert", date: "2026"}
+    - {ref: JOB-FG-SOX, title: "SOX AI Specialist (Contractor)", publisher: "Fieldguide (via Built In)", type: job-posting, url: "https://www.builtinla.com/job/sox-ai-specialist-contractor/10443759", date: "2026-08-24"}
+    - {ref: JOB-FG-SWE, title: "Software Engineer, Internal Audit (All Levels)", publisher: "Fieldguide (via Jobicy)", type: job-posting, url: "https://jobicy.com/jobs/154197-software-engineer-internal-audit-all-levels", date: "2026-09-29"}
+    - {ref: JOB-NACE, title: "SOX Audit Expert", publisher: "Nace.AI (General Catalyst job board)", type: job-posting, url: "https://jobs.generalcatalyst.com/companies/nace-ai-2/jobs/74116857-sox-audit-expert", date: "2026-04-13"}
     - {ref: CPAPA-ZANIN, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents (A. Zanin)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=188703", date: "2026-08-18"}
   last_reviewed: "2026-10-16"
   notes: >-
@@ -1183,8 +1192,9 @@
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
     - {ref: IIAF-FRAUD, title: "Internal Audit and AI-Enabled Fraud", publisher: "Internal Audit Foundation & AuditBoard", type: survey, url: "https://www.theiia.org/globalassets/site/content/research/foundation/2026/internal-audit-and-ai-enabled-fraud/ia-and-ai-enabled-fraud-report-en.pdf", date: "2026-02-17"}
     - {ref: IAASB-ED, title: "Proposed Revisions for Audit Evidence & Risk Response: ISA 330, ISA 500 & ISA 520", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520", date: "2026-08-05"}
+    - {ref: AUASB-CP, title: "Consultation Paper: IAASB Proposed International Standards on Audit Evidence & Risk Response", publisher: "AUASB (Australia)", type: standard-setter, url: "https://www.auasb.gov.au/media/fegpk4s5/auasb_cp_iaasbproposedintlstdonauditevidence__riskresponse1.pdf", date: "2026-08"}
   last_reviewed: "2026-10-16"
-  notes: "Idea. From governance-15. IAASB ED content known via the IAASB response form and AUASB consultation paper, not the ED text."
+  notes: "Idea. From governance-15. IAASB ED texts are login-gated; the authenticity attribute was confirmed in the AUASB consultation paper (AUASB-CP)."
 
 - id: assurance-controls-testing-24
   title: "Idea: external-auditor reliance on management's or internal audit's AI-enabled control testing"
@@ -1216,8 +1226,8 @@
   risks_and_guardrails:
     - "IIA: 'reliance is not delegation'; the external auditor alone is responsible for the opinion"
     - "IFIAR: inadequate assessment of reliance on others' work recurs in inspections"
-    - "No regulator view yet on reliance on agent-produced testing; PCAOB board member Botic said the regulator is still working out whether AI needs new standards"
-    - "If the SEC filer-status proposal (May 2026) is adopted, 404(b) attestation would be removed for about 80.8% of reporting companies, changing reliance economics"
+    - "No regulator view yet on reliance on agent-produced testing; after an NACD session with PCAOB board member Botic, Foley reported the regulator is still working out whether AI needs new standards"
+    - "If the SEC filer-status proposal (May 2026) is adopted, roughly half of currently attested issuers would leave 404(b); 80.8% of reporting companies would be non-accelerated filers (from 51.9%), changing reliance economics"
   human_checkpoints:
     - "Engagement partner decides on reliance after evaluating competence, objectivity and the AI tool's certification"
   role_evolution: >-
