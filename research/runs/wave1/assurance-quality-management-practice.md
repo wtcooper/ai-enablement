@@ -823,7 +823,7 @@ No published override rates, review-comment accuracy, or parallel-run error rate
 
 ### Guardrails and regulatory points
 
-- No regulator bans AI. The human auditor stays accountable (FRC-NEWS-2026; NFRA-CAALLEY-2026; AFM-2025).
+- No regulator bans AI. The human auditor stays accountable (FRC-NEWS-2026; ICAS-FRC-2026; NFRA-CAALLEY-2026; AFM-2025).
 - ISQM 1 requires firms to assess risks of technological resources, certify tools, apply IT general controls and train users. IFIAR says the same (IFIAR-TTF-2026, p. 6). The IAASB states that the firm remains responsible for tool approval and monitoring even when the network does the work (IAASB-TQMPLAN-2026, para 29).
 - FRC (Mar 2026): guidance is aimed at central technical teams and does not alter accountability (FRC-GENAI-2026, p. 4; FRC-NEWS-2026).
 - NFRA (staff series, Jul 2026): technology as a distinct risk area in the quality system, proportionate validation, revalidation on model or vendor change, documentation of tool and human review, root cause analysis of technology findings in the annual SoQM evaluation, vendor audit rights (NFRA-CAALLEY-2026).
@@ -842,7 +842,7 @@ No published override rates, review-comment accuracy, or parallel-run error rate
 - **2026-07:** NFRA technology principles (NFRA-CAALLEY-2026).
 - **2026-10-13:** AICPA practice aid, with more Q&A planned on the firm's AI use (AICPA-PA-2026).
 - **To June 2027:** IAASB guide series on technology quality management drafted and approved in stages (IAASB-TQMPLAN-2026, Table 2).
-- PwC expects tools for each audit step and a single global agentic platform about 18 months later (PWC-AT-2025; CFODIVE-PWC-2026). EY and Deloitte describe multi-agent platforms; these raise the stakes for network-level monitoring.
+- PwC expects tools for each audit step and a single global agentic platform about 18 months later (PWC-AT-2025; CFOBREW-PWC-2025; CFODIVE-PWC-2026). EY and Deloitte describe multi-agent platforms; these raise the stakes for network-level monitoring.
 
 ### Workforce and role effects
 
@@ -954,7 +954,7 @@ All sources were opened unless marked otherwise. Dates are publication dates, or
 - **Job postings, podcasts, community discussion.** None opened for this angle. The AI-team structure at firms was not evidenced beyond Deloitte UK's Chief AI Officer and Technology Controls Board and the IAASB expert-group membership.
 - **Primary documents.** NFRA's Staff Series (only a press report read). AICPA practice aid full text (behind login). IAASB December 2025 feedback paper and the February 2026 roundtable summary. PCAOB QC 1000 text and the Inspections Modernization Council materials (pcaobus.org blocked). FRC "AI in Audit" documentation guidance PDF (only the news release read). The AFM 12 building blocks PDF. EY's UK transparency report. CPAB 2024 paper (only the introduction read).
 - **IFIAR frequency chart.** The 2025 percentages by audit area appear in a chart that did not extract; none are used. The 2024 table figures are in the landscape (IFIAR-TTF-2025).
-- **Web search.** The quota ran out after about five searches, so leads that required discovery (firm transparency reports, job postings, academic follow-ups) were not pursued.
+- **Web search.** The quota ran out after four searches, so leads that required discovery (firm transparency reports, job postings, academic follow-ups) were not pursued.
 
 **Dating caveats**
 - Fieldguide's Sanville page has no date; 2026 is an inference.
