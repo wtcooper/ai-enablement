@@ -13,7 +13,7 @@
 ## 1. Summary
 
 - **The practice is real but thin at the client end.**
-  - Named *firm-side* activity is plentiful: KPMG UK sells an AI governance assurance product; KPMG US and KPMG International certified their own AI management systems; PwC Canada launched an ISO/IEC 42001 certification solution; PwC Taiwan and two EY Italian entities were certified; EY says it runs a certification body that certifies to ISO/IEC 42001; Deloitte and EY describe AI assurance offers.
+  - Named *firm-side* activity is plentiful: KPMG UK sells an AI governance assurance product; KPMG US and KPMG International certified their own AI management systems; PwC Canada launched an ISO/IEC 42001 certification solution; PwC Taiwan and two EY Italian entities were certified; EY's Japan page names its CertifyPoint certification body as offering ISO/IEC 42001 certification; Deloitte and EY describe AI assurance offers.
   - Named *client* engagements are scarce. The only named buyers found are AI-native companies certified under AIUC-1 (Cursor, Fin, ElevenLabs, Harvey, UiPath, Lovable) and two start-ups, Evisort and StackAware, that Schellman audited as practice runs for its ISO/IEC 42001 accreditation.
   - No issued Big Four assurance report over a client's AI, no fee, and no certificate count was found.
 - **Certification-body (CB) capacity is the leading edge, and specialists got there first.**
@@ -69,15 +69,15 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   risks_and_guardrails:
     - Engagement performed under ISAE (UK) 3000, issued by the FRC (KPMGUK-GOVAI-2026, section "Make AI Trust Stand Up to Scrutiny").
     - KPMG US material notes that some services may not be permissible for KPMG audit clients (KPMGUS-ISO-2025, closing disclaimer); independence is routed to acceptance-independence.
-    - The CSA note argues no AI-specific Trust Services Criteria exist, so evidence requests are improvised (carried from the landscape; not re-read here).
+    - A separate CSA note (CSA-SOC2-2026, carried from the landscape and not opened here) is reported to argue that no AI-specific Trust Services Criteria exist, so evidence requests are improvised.
   human_checkpoints:
     - Partner-signed assurance opinion.
     - Management's assertion and controls description.
-  role_evolution: SOC and controls-assurance teams add AI control objectives to their reports; KPMG describes the team as one that tests, examines evidence and reports on management's process, controls and claims on responsible AI (KPMGUK-CONTROLS-2026, p.8).
+  role_evolution: SOC and controls-assurance teams add AI control objectives to their reports; KPMG describes the team as one that tests, examines evidence and reports on management's process, controls and claims on responsible AI (KPMGUK-CONTROLS-2026, PDF pp.7-8).
   evidence_grade: C
   sources:
     - { ref: KPMGUK-GOVAI-2026, title: "Independent confidence in how you govern AI", publisher: KPMG UK, type: firm, url: "https://kpmg.com/uk/en/insights/audit/independent-confidence-in-how-you-govern-ai.html", date: 2026-09-22, access: full, locator: "sections 'Make AI Trust Stand Up to Scrutiny' and 'Differentiate in the market'; date from page metadata" }
-    - { ref: KPMGUK-CONTROLS-2026, title: "Reimagining Controls Assurance with AI: Latest Insights for Leaders", publisher: KPMG UK, type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf", date: 2026-01, access: full, locator: "foreword item 2 'Assurance of AI'; p.8" }
+    - { ref: KPMGUK-CONTROLS-2026, title: "Reimagining Controls Assurance with AI: Latest Insights for Leaders", publisher: KPMG UK, type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf", date: 2026-01, access: full, locator: "foreword item 2 'Assurance of AI' (PDF p.2); 'Assurance of AI' section (PDF pp.7-8, printed p.8)" }
   last_reviewed: 2026-10-16
   notes: "Product page and paper describe an offer; no named client, issued report or opinion wording was found, and the web page does not state the assurance level (the paper does: reasonable). Ladder, pattern and runtime_class are placeholders because AI is the subject, not the tool."
 
@@ -149,7 +149,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
       provenance: self-reported
       source_ref: KPMGINTL-ISO-2025
   prerequisites:
-    - An in-scope AI estate (KPMG names Workbench and aIQ Chat as tools covered by the certification).
+    - An in-scope AI estate (KPMG International says certification gives member firms confidence to use tools such as KPMG Workbench and aIQ Chat).
     - An accredited certification body that is independent of the firm's consulting arm.
   risks_and_guardrails:
     - Certification covers the firm's own management system and does not assure any client's AI.
@@ -247,7 +247,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: shared-team-skills
   maturity: in-production
   problem: Clients adopting AI need to know where their governance falls short of a benchmark standard before an auditor or customer asks.
-  solution: Deloitte UK describes a five-pillar framework (governance, data management, modelling and development, pre-deployment evaluation, deployment and operation) aligned to ISO/IEC 42001, with "no-regret" steps such as an AI governance committee, an AI system inventory and risk or impact assessments. Its AI Assurance page offers objective third-party challenge over AI risk, governance and control maturity, including certification readiness. A Deloitte Singapore AI Assurance posting (25 Jun 2026) shows the work being staffed: consultants apply the Trustworthy AI methodology, identify and document bias, fairness, transparency, robustness, security and privacy risks, maintain client AI risk registers, and support gap analyses and remediation roadmaps.
+  solution: "Deloitte UK describes a five-pillar framework (governance, data management, modelling and development, pre-deployment evaluation, deployment and operation) aligned to ISO/IEC 42001, with \"no-regret\" steps such as an AI governance committee, an AI system inventory and risk or impact assessments. Its AI Assurance page offers objective third-party challenge over AI risk, governance and control maturity, including certification readiness. A Deloitte Singapore AI Assurance posting (25 Jun 2026) shows the work being staffed: consultants apply the Trustworthy AI methodology, identify and document bias, fairness, transparency, robustness, security and privacy risks, maintain client AI risk registers, and support gap analyses and remediation roadmaps."
   outcomes:
     - lever: risk
       description: none published
@@ -283,7 +283,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: shared-team-skills
   maturity: announced
   problem: Governance review alone does not show whether a given AI use case is accurate, robust, explainable and fair.
-  solution: Deloitte UK's AI Assurance page lists objective third-party challenge over the technical build and performance of AI use cases, covering data, architecture, robustness, precision and accuracy, explainability, transparency, bias and fairness, and monitoring. The page also lists operational controls over AI-enabled applications: security, resilience, data governance, change control, incident management and third-party oversight.
+  solution: "Deloitte UK's AI Assurance page lists objective third-party challenge over the technical build and performance of AI use cases, covering data, architecture, robustness, precision and accuracy, explainability, transparency, bias and fairness, and monitoring. The page also lists operational controls over AI-enabled applications: security, resilience, data governance, change control, incident management and third-party oversight."
   outcomes:
     - lever: quality
       description: none published
@@ -297,7 +297,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
     - GenAI non-determinism and hallucination make validation harder; Deloitte UK lists a GenAI model validation article among related content but it was not opened.
   human_checkpoints:
     - not stated
-  role_evolution: Model validation and algorithm assurance specialists join assurance teams (Deloitte UK refers to its "Algorithm and AI Assurance team": DELOITTE-42001-2025).
+  role_evolution: "Model validation and algorithm assurance specialists join assurance teams (Deloitte UK refers to its \"Algorithm and AI Assurance team\": DELOITTE-42001-2025)."
   evidence_grade: C
   sources:
     - { ref: DELOITTE-AIA-UK-2026, title: "AI Assurance for Responsible and Scalable AI Adoption", publisher: Deloitte UK, type: firm, url: "https://www.deloitte.com/uk/en/services/audit-assurance/services/ai-assurance.html", date: 2026-10-16, access: full, locator: "pillar on technical build and performance; page undated, date is retrieval date" }
@@ -368,9 +368,9 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
     - lever: quality
       description: UiPath's head of GRC says testing produced new guardrails the company can show customers (qualitative).
       figure: none published
-      measures: qualitative customer quote on the AIUC-1 website
+      measures: qualitative customer quote on the AIUC-1 website (undated page)
       provenance: vendor-published
-      source_ref: AIUC-SERIES-A-2026
+      source_ref: AIUC1-SITE-2026
   prerequisites:
     - An agentic product to test, with logging and guardrails in place.
     - Willingness to be retested; Forkast reports quarterly retests to keep certification valid.
@@ -378,16 +378,17 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
     - Test counts measure activity, not residual risk; Forkast notes it is unknown how insurance policies would perform in a systemic failure.
     - Consortium size and auditor model are changing (Schellman's Feb 2026 release says 60+ security leaders; AIUC's Aug 2026 release and homepage say 250+).
   human_checkpoints:
-    - Authorised auditor reviews guardrail implementation and red-team results (AIUC website describes a 50+ page independent audit report).
+    - Authorised auditor reviews guardrail implementation and red-team results (the AIUC-1 website describes a 50+ page independent audit report).
   role_evolution: SOC auditors add AI red-team and agent-testing capability; Big Four firms appear as certified organisations first and "open the door to a broader assurance relationship" (AIUC co-founder quoted in AIUC-KPMG-2026).
   evidence_grade: B
   sources:
     - { ref: SCHELLMAN-AIUC-2026, title: "Schellman Becomes the First Accredited Auditor for AIUC-1, the Security Standard for AI Agents", publisher: Schellman, type: vendor, url: "https://www.schellman.com/blog/news/schellman-becomes-the-first-accredited-auditor-for-aiuc-1", date: 2026-02-03, access: full, locator: "release body; the body text says 'authorized auditor'" }
     - { ref: AIUC-KPMG-2026, title: "KPMG LLP Becomes First Big Four Firm with AIUC-1 Certified AI Capability", publisher: AIUC, type: vendor, url: "https://aiuc.com/updates/kpmg-llp-becomes-first-big-four-firm-with-aiuc-1-certified-ai-capability", date: 2026-08-27, access: full, locator: "paragraphs 2-5" }
-    - { ref: AIUC-SERIES-A-2026, title: "Series A to build the confidence infrastructure for frontier AI (and AIUC-1 certified-agents page)", publisher: AIUC, type: vendor, url: "https://aiuc.com/updates/series-a-announcement", date: 2026-09-15, access: full, locator: "post body; customer quotes are on https://www.aiuc-1.com/ (opened, undated)" }
+    - { ref: AIUC-SERIES-A-2026, title: "Series A to build the confidence infrastructure for frontier AI (and AIUC-1 certified-agents page)", publisher: AIUC, type: vendor, url: "https://aiuc.com/updates/series-a-announcement", date: 2026-09-15, access: full, locator: "post body" }
+    - { ref: AIUC1-SITE-2026, title: "AIUC-1 Certification (certified agents and customer quotes)", publisher: AIUC, type: vendor, url: "https://www.aiuc-1.com/", date: 2026-10-16, access: full, locator: "'Certified Agents' section; page undated, date is retrieval date" }
     - { ref: FORKAST-AIUC-2026, title: "AIUC Raises $40M to Build the Certification and Insurance Layer That Makes Agent Governance Auditable", publisher: Forkast, type: press, url: "https://forkast.news/aiuc-raises-40m-to-build-the-certification-and-insurance-layer-that-makes-agent-governance-auditable/", date: 2026-09-16, access: full, locator: "paragraphs 4-6 and closing paragraph" }
   last_reviewed: 2026-10-16
-  notes: "Not an audit-firm product in origin; included because Schellman (an attestation firm) and KPMG are in it and it shows a testing-led, insured alternative to management-system certification. AIUC's homepage later says it raised $55M, above the $40M Series A; the later round was not dated. Ladder is augment because automated adversarial tests run under auditor oversight; AI remains the subject."
+  notes: "Not an audit-firm product in origin; included because Schellman (an attestation firm) and KPMG are in it and it shows a testing-led, insured alternative to management-system certification. AIUC's homepage (aiuc.com, undated, AIUC-HOME-2026) says it raised $55M, above the $40M Series A; the later round was not dated. Ladder is augment because automated adversarial tests run under auditor oversight; AI remains the subject."
 
 - id: assurance-assurance-over-ai-10
   title: Registry-based AI trust mark combining automated self-assessment scoring with an accredited ISO/IEC 42001 certificate (CSA STAR for AI)
@@ -401,7 +402,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: workflow-automation
   maturity: in-production
   problem: Vendor-risk teams get long bespoke AI questionnaires and cannot compare suppliers' claims.
-  solution: Per the CSA research note, STAR for AI Level 1 is a self-assessment against the AI-CAIQ, with an enhanced Level 1 once the self-assessment passes an automated scoring system; Level 2 (introduced Nov 2025) requires that scored self-assessment plus an accredited third-party ISO/IEC 42001 certification. The note says AIUC-1 was added to the STAR registry on 30 Jun 2026. Coalfire, a CSA STAR auditor-type vendor, describes the AI Controls Matrix (243 control objectives across 18 domains).
+  solution: Per the CSA research note, STAR for AI Level 1 is a self-assessment against the AI-CAIQ, with an enhanced Level 1 once the self-assessment passes an automated scoring system; Level 2 (introduced Nov 2025) requires that scored self-assessment plus an accredited third-party ISO/IEC 42001 certification. The note says AIUC-1 was added to the STAR registry on 30 Jun 2026. Coalfire, a compliance vendor, describes the AI Controls Matrix (243 control objectives across 18 domains).
   outcomes:
     - lever: speed
       description: none published
@@ -469,7 +470,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: shared-team-skills
   maturity: announced
   problem: Providers of high-risk AI systems and very large online platforms face conformity-assessment or independent-audit duties and need help showing compliance.
-  solution: Deloitte UK offers objective third-party challenge over compliance with the EU AI Act (including conformity assessment for high-risk systems), the AI-specific aspects of wider digital regulation including the independent audit, and sector rules. Under Article 43, providers of Annex III point 1 systems may choose internal control or a notified-body route; providers of points 2 to 8 follow the internal-control procedure.
+  solution: Deloitte UK offers objective third-party challenge over compliance with the EU AI Act (including conformity assessment for high-risk systems), the AI-specific aspects of wider digital regulation including the independent audit, and sector rules. Under Article 43(1), providers of Annex III point 1 systems may use internal control or a notified-body route depending on whether harmonised standards or common specifications exist and are applied; under Article 43(2), providers of points 2 to 8 follow the internal-control procedure.
   outcomes:
     - lever: risk
       description: none published
@@ -522,7 +523,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   role_evolution: Four auditor roles emerged because there was no agreed definition of a legitimate auditor (GROVES-2024).
   evidence_grade: B
   sources:
-    - { ref: GROVES-2024, title: "Auditing Work: Exploring the New York City algorithmic bias audit regime", publisher: arXiv (Groves, Metcalf, Kennedy, Vecchione, Strait), type: academic, url: "https://arxiv.org/abs/2402.08101", date: 2024-02-12, access: full, locator: abstract" }
+    - { ref: GROVES-2024, title: "Auditing Work: Exploring the New York City algorithmic bias audit regime", publisher: arXiv (Groves, Metcalf, Kennedy, Vecchione, Strait), type: academic, url: "https://arxiv.org/abs/2402.08101", date: 2024-02-12, access: full, locator: "abstract" }
   last_reviewed: 2026-10-16
   notes: "Qualitative study, no audit outcome statistics and no named audit firms. Included as the best independent evidence of how algorithmic audits work in a live mandatory regime. Date is the arXiv submission date."
 
@@ -575,7 +576,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: shared-team-skills
   maturity: emerging
   problem: A control that runs through a probabilistic model cannot be tested like a deterministic automated control, and some AI is bought from third parties whose internals the auditor cannot inspect.
-  solution: The AICPA aid says an auditor may be able to substantively test AI outputs; if that alone is not sufficient, the auditor designs tests of controls, and the strategy for controls operated by AI may differ from that for traditional automated controls because models can learn, drift and give probabilistic results. KPMG's SOX 2030 paper states that SOX programmes have largely avoided AI-related material weaknesses so far because they are still testing "around" the AI, relying on manual and other automated controls, and expects reliance to become unavoidable, with a first wave of material weaknesses in 2027. KPMG says its paper cites the lack of widely accepted methods for auditing black-box systems as an open challenge.
+  solution: The AICPA aid says an auditor may be able to substantively test AI outputs; if that alone is not sufficient, the auditor designs tests of controls, and the strategy for controls operated by AI may differ from that for traditional automated controls because models can learn, drift and give probabilistic results. KPMG's SOX 2030 paper states that SOX programmes have largely avoided AI-related material weaknesses so far because they are still testing "around" the AI, relying on manual and other automated controls, and expects reliance to become unavoidable, with a first wave of material weaknesses in 2027. The paper lists the lack of widely accepted methods for auditing black-box systems as an open challenge (p.14).
   outcomes:
     - lever: risk
       description: none published
@@ -591,11 +592,11 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
     - Protiviti, quoted in a legal-industry blog, says AI-driven workforce reductions can weaken controls such as segregation of duties, so controls may be an afterthought in AI planning (TCC-ICFR-2026).
   human_checkpoints:
     - Meaningful human review of AI recommendations, where the reviewer is competent and has real authority.
-  role_evolution: Internal audit and SOX teams must define what meaningful oversight means for AI-operated controls (KPMG-SOX-2026).
+  role_evolution: KPMG says what counts as meaningful human oversight of AI-operated controls is becoming harder to define (KPMG-SOX-2026, p.14).
   evidence_grade: C
   sources:
     - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: Accounting Today, type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: 2026-10-14, access: full, locator: "paragraphs on how auditors should respond to risks" }
-    - { ref: KPMG-SOX-2026, title: "The Future of SOX: 2030 Point of View", publisher: KPMG US, type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: 2026-09, access: full, locator: "pp.5-6 ('A new SOX frontier: auditing AI itself'; 'The first AI-related material weaknesses'); 'Challenges on the horizon'; date from PDF creation metadata (23 Sep 2026)" }
+    - { ref: KPMG-SOX-2026, title: "The Future of SOX: 2030 Point of View", publisher: KPMG US, type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: 2026-09, access: full, locator: "p.6 ('A new SOX frontier: auditing AI itself'); p.7 ('The first AI-related material weaknesses'); p.14 ('Challenges on the horizon'); PDF page numbers; date from PDF creation metadata (23 Sep 2026)" }
     - { ref: KPMG-COSO-2026, title: "COSO releases GenAI roadmap", publisher: KPMG US, type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/frv/pdf/2026/coso-releases-gen-ai-roadmap.pdf", date: 2026-05-01, access: full, locator: "pp.2-3, 'Interaction with the KPMG Guide'" }
     - { ref: TCC-ICFR-2026, title: "Your 2026 Audit Committee Agenda: ICFR During AI Transformations", publisher: TheCorporateCounsel.net, type: press, url: "https://www.thecorporatecounsel.net/blog/2026/02/your-2026-audit-committee-agenda-icfr-during-ai-transformations.html", date: 2026-02-06, access: full, locator: "Protiviti quotation in the second half of the post" }
   last_reviewed: 2026-10-16
@@ -613,7 +614,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: shared-team-skills
   maturity: emerging
   problem: Traditional ITGCs cover databases and operating systems, but AI models, data pipelines and agents add components and access paths that are not tested by default.
-  solution: BDO's paper tells auditors to map AI use, then for each component (the model, data pipelines, orchestration software, agents) assess risk and scope which ITGCs apply, noting that ITGCs matter far more where management relies on AI output. It separates AI-specific risk considerations (input data, output reliability, drift) from ITGC implications (access, change management, operations) and gives an example check: whether ERP user access reviews cover AI agents' access. The AICPA aid adds that traditional ITGCs may not address all AI-specific risks, and that where AI is bought from a third party, alternative procedures such as a SOC report may be needed.
+  solution: "BDO's paper tells auditors to map AI use, then for each component (the model, data pipelines, orchestration software, agents) assess risk and scope which ITGCs apply, noting that ITGCs matter far more where management relies on AI output. It separates AI-specific risk considerations (input data, output reliability, drift) from ITGC implications (access, change management, operations) and gives an example check: whether ERP user access reviews cover AI agents' access. The AICPA aid adds that traditional ITGCs may not address all AI-specific risks, and that where AI is bought from a third party, alternative procedures such as a SOC report may be needed."
   outcomes:
     - lever: risk
       description: none published
@@ -658,9 +659,9 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
       provenance: independent
       source_ref: AT-AICPAPA-2026
   prerequisites:
-    - A SOC report whose system description and criteria reach the AI in scope; the CSA note says no AI-specific Trust Services Criteria exist (carried from the landscape, not re-read).
+    - A SOC report whose system description and criteria reach the AI in scope; CSA-SOC2-2026 (carried from the landscape, not opened here) is reported to say no AI-specific Trust Services Criteria exist.
   risks_and_guardrails:
-    - Reliance depends on whether the report covers model-specific properties; a SOC 2 Type II reliably covers conventional IT general controls, not model behaviour, according to the CSA note cited in the landscape (not re-read here).
+    - Reliance depends on whether the report covers model-specific properties; a SOC 2 Type II reliably covers conventional IT general controls, not model behaviour, according to CSA-SOC2-2026 as summarised in the landscape (not opened here).
   human_checkpoints:
     - User auditor evaluation of the service auditor's report.
   role_evolution: SOC teams must decide whether and how AI is in the system description (routed detail in other-assurance).
@@ -721,7 +722,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
   runtime_class: personal-assistant
   maturity: in-production
   problem: Few auditors have AI skills, and certification bodies and assurance providers must show competence; an ICAEW-reported view in 2025 was that more assurers were working out what to do than doing it.
-  solution: ISACA offers an Advanced in AI Audit (AAIA) certification for holders of CISA or another qualified designation (including CIA, CPA, ACCA, ICAEW ACA/FCA), with domains in AI governance and risk, AI operations and AI auditing tools and techniques. ISO/IEC 42006 requires certification-body audit teams to hold collective competence across AI, management systems, auditing, AI governance and relevant law, as reported by a compliance vendor. Deloitte's Singapore posting hires juniors who are expected to deepen ISO/IEC 42001 expertise on the job.
+  solution: ISACA offers an Advanced in AI Audit (AAIA) certification for holders of CISA, or of another qualifying designation with an IT audit or advisory focus (including CIA, CPA, ACCA, ICAEW ACA/FCA), with domains in AI governance and risk, AI operations and AI auditing tools and techniques. ISO/IEC 42006 requires certification-body audit teams to hold collective competence across AI, management systems, auditing, AI governance and relevant law, as reported by a compliance vendor. Deloitte's Singapore posting hires juniors who are expected to deepen ISO/IEC 42001 expertise on the job.
   outcomes:
     - lever: capacity
       description: none published
@@ -781,7 +782,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
 - Schellman: 26 signed clients for ISO/IEC 42001 in Oct 2024 (SCHELLMAN-AT-2024); accreditation took about eight months.
 - BSI research: 26% of organisations report taking steps to align with ISO/IEC 42001 (BSI-ANAB-2026; sample not stated).
 - KPMG aIQ Capture: 900+ technical tests for AIUC-1 (AIUC-KPMG-2026). AIUC-1 overall: 5,000 adversarial tests (Forkast); $50M ElevenLabs policy.
-- KPMG SOX survey context (not AI-specific): SOX control maintenance cost up 45% between the 2023 and 2025 surveys; testing hours per control up from 12 (FY2022) to 16 (FY2024) (KPMG-SOX-2026, p.4). Useful for the cost side of any AI-in-ICFR business case.
+- KPMG SOX survey context (not AI-specific): SOX control maintenance cost up 45% between the 2023 and 2025 surveys; testing hours per control up from 12 (FY2022) to 16 (FY2024) (KPMG-SOX-2026, pp.4-5, PDF pages). Useful for the cost side of any AI-in-ICFR business case.
 - Routed, not for this module: KPMG UK testing-time reduction of about 18% from AI-assisted controls assurance (see section 4).
 - **No fee, price, margin, certificate-count or measured audit-quality figures for assurance over AI were found.** Pricing and demand remain unquantified beyond the items above.
 
@@ -789,7 +790,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
 - ISAE (UK) 3000 is the cited basis for KPMG UK's product (KPMGUK-GOVAI-2026). IAASB/ISSA material was not found to address AI.
 - ISO/IEC 42006:2025 sets requirements for CBs, adding AI competence and audit-time rules (BRIGHT-42006-2026, secondary); the primary page returned 403.
 - Accredited bodies cannot certify a system they or a group affiliate consulted on (BSI-ANAB-2026). KPMG's release carries the line that some services may not be permissible for audit clients (KPMGUS-ISO-2025).
-- EU AI Act Art. 43: providers of Annex III points 2 to 8 follow internal control; third-party notified-body routes apply to point 1 (biometrics) and product-embedded systems (AIACT-ART43-2024).
+- EU AI Act Art. 43: providers of Annex III points 2 to 8 follow the internal-control procedure; notified-body involvement arises for point 1 systems in some circumstances and for systems under Annex I Section A product legislation follows that legislation's route (AIACT-ART43-2024, Art. 43(1)-(3)).
 - AICPA practice aid and COSO roadmap are non-authoritative guidance; KPMG stresses COSO's roadmap is not a new framework (KPMG-COSO-2026).
 - Unverified for this module: PCAOB and IFIAR statements about auditors' use of AI tools (landscape items), which concern firm tools rather than assurance over client AI.
 
@@ -801,7 +802,7 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
 - 2026-04-07: EY announces an assurance suite for audit and non-audit clients spanning AI diagnostics, governance, risk and controls (EY-CANVAS-2026).
 - 2026-08-27: KPMG LLP first Big Four AIUC-1 certification (AIUC-KPMG-2026).
 - 2026-09-15: AIUC raises a $40M Series A (AIUC-SERIES-A-2026).
-- 2026-09: KPMG says a "new mandate" to assure AI systems themselves will emerge and expects the first wave of AI-related material weaknesses in 2027 (KPMG-SOX-2026, pp.5-6).
+- 2026-09: KPMG says a "new mandate" to assure AI systems themselves will emerge and expects the first wave of AI-related material weaknesses in 2027 (KPMG-SOX-2026, pp.6-7).
 - 2026-10-13: AICPA says further sections on risk of material misstatement and audit evidence for AI-using entities will be added (AICPA-PA-2026).
 
 ### Workforce and role effects
@@ -831,8 +832,8 @@ Counts: 19 entries. Grades: A = 1, B = 4, C = 13, D = 1. The A is for demand/acc
 
 | Item | Target module | Why | Source |
 |---|---|---|---|
-| About 18% testing-time reduction in KPMG UK controls assurance using AI tools; one team's about 15% reduction with DataSnipper | controls-testing / other-assurance (SOC) | This is assurance done *with* AI, not assurance over AI. Firm-reported ("recent engagements"), no denominator stated. | KPMGUK-CONTROLS-2026, foreword and p.? (foreword; DataSnipper example in the engagement examples) |
-| KPMG's views on synthetic data, agents stress-testing controls, 100% coverage in SOX | controls-testing | AI as a tool for control testing. | KPMG-SOX-2026, pp.8-10 |
+| About 18% testing-time reduction in KPMG UK controls assurance using AI tools; one team's about 15% reduction with DataSnipper | controls-testing / other-assurance (SOC) | This is assurance done *with* AI, not assurance over AI. Firm-reported ("recent engagements"), no denominator stated. | KPMGUK-CONTROLS-2026, foreword (PDF p.2) for ~18%; PDF p.6 for the DataSnipper ~15% example |
+| KPMG's views on synthetic data, agents stress-testing controls, 100% coverage in SOX | controls-testing | AI as a tool for control testing. | KPMG-SOX-2026, PDF p.11 ('Synthetic data as...') and neighbouring pages |
 | AI as an acceptance and continuance factor (reliance resembles complex valuation models; evidence gathering may be limited); independence of AI assurance sold to audit clients; certifier impartiality rules | acceptance-independence | Acceptance and independence analysis. | AT-AICPAPA-2026; KPMGUS-ISO-2025; BSI-ANAB-2026; EY-CANVAS-2026 |
 | ISACA AAIA, "specialist support" in AICPA aid, AI-component ITGC specialists | specialists | Specialist competence and use of experts. | ISACA-AAIA-2026; AICPA-PA-2026 |
 | Firms' own use of AI tools under quality management (AICPA aid Part 2) | quality-management | Firm-level tool governance, not assurance over client AI. | AICPA-PA-2026 |
@@ -870,6 +871,8 @@ Access `full` means opened and read; `search-only` means seen in search results,
 | SCHELLMAN-AT-2024 | Inside Schellman's journey to provide certification for ISO 42001 | Accounting Today | press | https://accountingtoday.com/news/inside-schellmans-journey-to-provide-certification-for-iso-42001-ai-framework | 2024-10-28 | full |
 | SCHELLMAN-AIUC-2026 | Schellman Becomes the First Accredited Auditor for AIUC-1 | Schellman | vendor | https://www.schellman.com/blog/news/schellman-becomes-the-first-accredited-auditor-for-aiuc-1 | 2026-02-03 | full |
 | AIUC-KPMG-2026 | KPMG LLP Becomes First Big Four Firm with AIUC-1 Certified AI Capability | AIUC | vendor | https://aiuc.com/updates/kpmg-llp-becomes-first-big-four-firm-with-aiuc-1-certified-ai-capability | 2026-08-27 | full |
+| AIUC-HOME-2026 | AIUC homepage | AIUC | vendor | https://aiuc.com/ | [2026-10-16] | full |
+| AIUC1-SITE-2026 | AIUC-1 Certification (certified agents) | AIUC | vendor | https://www.aiuc-1.com/ | [2026-10-16] | full |
 | AIUC-SERIES-A-2026 | Series A to build the confidence infrastructure for frontier AI | AIUC | vendor | https://aiuc.com/updates/series-a-announcement | 2026-09-15 | full |
 | FORKAST-AIUC-2026 | AIUC Raises $40M... | Forkast | press | https://forkast.news/aiuc-raises-40m-to-build-the-certification-and-insurance-layer-that-makes-agent-governance-auditable/ | 2026-09-16 | full |
 | CSA-AIASSURE-2026 | Who Assures the Assurers? Third-Party AI Assessment Standards | Cloud Security Alliance Labs | professional-body | https://labs.cloudsecurityalliance.org/research/csa-research-note-third-party-ai-assurance-standards-2026092/ | 2026-09-27 | full |
@@ -889,11 +892,10 @@ Access `full` means opened and read; `search-only` means seen in search results,
 | OJEWALE-2025 | Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling | arXiv / ACM CHI | academic | https://arxiv.org/abs/2402.17861 | 2025-02-27 | full (abstract; v3 date) |
 | ELEVATE-COST-2026 | ISO 42001 Certification Cost Breakdown | Elevate Consulting | vendor | https://elevateconsult.com/insights/iso-42001-certification-cost-breakdown-what-enterprise-ai-teams-pay-in-2026/ | 2026-03-17 (per CSA reference list) | search-only (403) |
 | EYREACT-NB-2026 | Notified Bodies Under the EU AI Act | eyreACT | vendor | https://eyreact.com/notified-bodies-ai-act/ | 2026-02-02 (per CSA reference list) | search-only (TLS error) |
+| CSA-SOC2-2026 | CSA research note on SOC 2 and AI controls gap | Cloud Security Alliance | professional-body | (not opened here) | 2026-08-30 | search-only (carried from landscape) |
 | IFIAR-TTF-2025 | Use of technology in audits | IFIAR | regulator | (not opened here) | 2025-03-27 | search-only (carried from landscape) |
 
-Count: 40 sources opened in full (16 firm/BDO/KPMG/EY/Deloitte items, 6 vendor, 6 press, 6 professional-body, 3 academic, 2 standard-setter, 2 regulator... see below), 3 search-only.
-
-By type, opened sources: firm 17, vendor 6, press 6, professional-body 5, standard-setter 2, regulator 2, academic 3, job-posting 1 = 42 entries in the table above counting each distinct ref once (3 more entries are search-only).
+Counts: 42 sources opened in full (firm 15, vendor 9, press 6, professional-body 4, standard-setter 2, regulator 2, academic 3, job-posting 1); 5 search-only (PWC-CA-ISO-2026, ELEVATE-COST-2026, EYREACT-NB-2026, CSA-SOC2-2026, IFIAR-TTF-2025). No conference, survey, podcast or community source was found for this angle.
 
 ---
 
