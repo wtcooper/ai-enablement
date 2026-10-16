@@ -425,7 +425,7 @@ archetypes/<id>/
 | Archetype | Extends | Modules |
 |---|---|---|
 | professional-services | — | pursuit & proposals · acceptance & risk · scoping & pricing · staffing & resourcing · delivery management · quality review · billing & collections · knowledge management |
-| assurance | professional-services | acceptance & independence · planning & risk assessment · controls testing · substantive testing · specialists (IT, valuation) · completion & reporting · quality management · other assurance (SOC, sustainability) |
+| assurance | professional-services | acceptance & independence · planning & risk assessment · controls testing · substantive testing (including journal-entry and fraud testing) · specialists (using the work of experts) · completion & reporting · quality management (firm level and engagement level) · SOC & attestation · sustainability assurance · assurance over AI. The module list was revised in wave 1 from the landscape evidence |
 | tax | professional-services | compliance · provision · indirect tax · transfer pricing · international & global minimum tax · controversy · research & advisory · tax data & technology |
 
 **Content targets per archetype**
