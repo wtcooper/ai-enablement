@@ -94,9 +94,10 @@ Success looks like this:
 
 **Systems**
 
-- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It has an orchestrator
-  skill, specialized skills and (in Claude Code) subagents. Shared state is a **program workspace of
-  files** (charter, team assessments, portfolio, roadmap) in a folder the lead shares with delegates.
+- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It is one orchestrator
+  skill with progressive disclosure, and it delegates bounded work to subagents in tool-agnostic
+  wording. Shared state is a **program workspace of files** (charter, team transformation plans,
+  portfolio, roadmap) stored wherever the organization keeps information.
 - **Later:** an MCP backend for the shared library, catalog and intake. A hosted front door on a
   managed agent runtime. Connections to backlog systems (GitHub, Jira, ServiceNow).
 
@@ -118,9 +119,11 @@ Success looks like this:
 - **Evaluated.** Behavior is checked against a persona-based eval set (aim for 20 to 50 scenarios
   drawn from real interviews) before each release.
 - **No backend in v1.** Everything runs in the user's AI client. State lives in files the user controls.
-- **Portable core, client-specific extras.** Skills are the portable unit (Agent Plugins 1.0 standardizes
-  only skills and MCP servers). Subagents are a Claude Code enhancement, and each one has an inline
-  fallback.
+- **Portable and tool-agnostic.** Skills are the portable unit (Agent Plugins 1.0 standardizes only
+  skills and MCP servers). Delegation to subagents is described in plain, tool-agnostic wording, and
+  each delegated step can also run inline.
+- **Progressive disclosure.** The skill entry point stays short. The logic lives in focused reference
+  files that are loaded only when needed.
 - **Specialization through packs.** A common backbone plus optional archetype packs, each covering one
   distinct value chain. Organization-specific content stays in a private overlay.
 
@@ -134,14 +137,16 @@ these decisions is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2
 | First audience | Program lead (top-down) plus team delegates |
 | Shared backend | None in v1. A file-based program workspace |
 | Program workspace | A storage-agnostic folder of markdown and YAML. A GitHub repo is the reference setup, matching how the plugin is distributed. Other stores can be added later |
-| Delivery | Agent Plugin: an orchestrator skill plus specialized skills and subagents |
-| Clients | Any client that supports Agent Plugins and can install from a GitHub marketplace (Claude Code, Codex, Cursor, GitHub Copilot and others). No single client is required |
+| Delivery | Skills-only Agent Plugin: one orchestrator skill. A short `SKILL.md` router, with all logic in reference files loaded on demand |
+| Subagents | Tool-agnostic instructions to delegate bounded work to subagents in parallel, with an inline fallback. No tool-specific agent files |
+| Clients | Agent Plugins agnostic. Installation verified from this repo's GitHub marketplace in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, and GitHub Copilot CLI / VS Code |
+| Review or approval in the product | None. Team members get their own transformation plan and save or share it wherever their program stores information. (Our intent → spec → plan process is for building the plugin only) |
 | Generic or organization-specific | Generic open core. **No organization-specific content in the plugin.** Organization content goes in an overlay in the organization's own workspace |
 | Seed content | Researched from public sources by a fan-out of research subagents during the build |
 | Taxonomies | No external framework IDs (for example APQC). Plain names and descriptions only |
 | Depth of PE content | PE program structure for the lead layer, lean and Six Sigma inside team discovery. Deal mode deferred |
 | Workforce framing | Open about capacity and cost at the level of roles. Always show redeploy versus reduce. Never about named people |
-| Multi-person engagements | Yes, through the shared charter and team assessment files |
+| Multi-person engagements | Yes, through the shared charter and team transformation plans |
 
 ## Open questions
 

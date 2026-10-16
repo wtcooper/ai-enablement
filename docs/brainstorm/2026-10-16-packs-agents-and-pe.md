@@ -2,6 +2,11 @@
 
 Date: 2026-10-16 · Status: working notes · Follows: [`2026-10-16-delivery-and-scope.md`](2026-10-16-delivery-and-scope.md)
 
+> **Partly superseded.** The spec has since changed several things discussed here: there is now a single skill
+> using progressive disclosure, subagents are described in tool-agnostic wording (no `agents/` folder), the
+> product has no review step, and delegates produce a "team transformation plan". See
+> [`spec/2026-10-16-ai-transformation-advisor.md`](../../spec/2026-10-16-ai-transformation-advisor.md).
+
 Decisions from the owner in this round:
 
 - **First audience:** a *program lead*, such as a head of AI or a business-unit leader asked to transform
