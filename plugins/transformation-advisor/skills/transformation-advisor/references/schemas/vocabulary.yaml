@@ -1,0 +1,71 @@
+# Controlled vocabulary for the transformation advisor (spec §6).
+# Single source of truth for ids used in plans, opportunities and use cases.
+# scripts/validate.py reads this file; research/briefs/templates/vocabulary.md mirrors it for researchers.
+
+work_types:
+  - review-assurance
+  - transaction-processing
+  - expert-judgment
+  - research-synthesis
+  - document-production
+  - client-interaction
+  - coordination-scheduling
+  - data-reporting
+  - software-systems
+  - physical-field
+
+patterns:
+  - intake-triage
+  - document-to-decision
+  - research-brief
+  - draft-review-loop
+  - full-population-testing
+  - monitor-diagnose-act
+  - reconcile-exceptions
+  - service-agent-escalation
+  - grounded-knowledge-assistant
+  - end-to-end-case-agent
+  - bulk-transformation
+  - other
+
+lenses: [improve, automate, delegate, reinvent]
+ladder: [assist, augment, automate, delegate, reinvent]
+
+runtime_classes:
+  - personal-assistant
+  - shared-team-skills
+  - workflow-automation
+  - background-agent
+  - managed-agent-runtime
+
+maturity: [in-production, piloting, announced, emerging]
+evidence_grades: [A, B, C, D]
+value_levers: [capacity, speed, quality, growth, cost, risk, experience]
+
+source_types:
+  - conference
+  - regulator
+  - standard-setter
+  - professional-body
+  - firm
+  - vendor
+  - academic
+  - survey
+  - press
+  - podcast
+  - community
+  - job-posting
+
+functions:
+  - strategy-planning
+  - sales-marketing-bd
+  - product-service-development
+  - service-delivery
+  - customer-service
+  - people-hr
+  - technology-it
+  - finance-accounting
+  - procurement-supply-chain
+  - risk-compliance-legal
+
+journey_stages: [curious, experimenting, adopting, scaling, ai-native]
