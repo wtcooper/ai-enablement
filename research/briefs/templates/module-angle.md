@@ -34,7 +34,12 @@ Before you search, read:
 The web-fetch tool can fail on DNS in this environment. Use `curl -sSL --max-time 30 -A "Mozilla/5.0" <url>`
 through Bash. For PDFs use `pdftotext`, or render the pages when the text layer is broken. When a site
 refuses access, try other routes: a press release, a publisher mirror, the Federal Register or an
-archived copy. Mark each source `access: full` or `access: search-only`.
+archived copy. If a site blocks `curl` (McKinsey, BCG, Gartner and others did), try the text mirror
+`curl -sSL "https://r.jina.ai/<url>"`. Mark each source `access: full` or `access: search-only`.
+
+**Web search is rationed.** Agents in wave 1 ran out of searches mid-task. Plan your searches
+carefully. Start from the landscape's leads and source keys, follow links and citations with `curl`,
+and save searches for genuinely new directions.
 
 ## Depth expectations
 
