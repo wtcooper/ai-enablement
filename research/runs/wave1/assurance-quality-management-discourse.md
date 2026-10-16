@@ -17,7 +17,7 @@
 
 1. **The conversation moved from "may we use AI?" to "how do we run it inside the system of quality management?"**
    - The FRC's 30 March 2026 guidance tells firms to consider AI under ISQM (UK) 1 and says accountability for audit quality is unchanged (FRC-GENAINEWS-2026).
-   - The IAASB's eight roundtables (243 participants, 93 of them from accounting firms) found ISQM 1 and ISA 220 (Revised) a strong base but asked for practical guidance on tool certification, monitoring and review of outputs (IAASB-TQM-2026, pp. 2–5). The IAASB approved an action plan in March 2026, with guides to be completed by about June 2027 (IAASB-TQMPLAN-2026, p. 9).
+   - The IAASB's eight roundtables (243 participants, 93 of them from accounting firms) found ISQM 1 and ISA 220 (Revised) a strong base but asked for practical guidance on tool certification, monitoring and review of outputs (IAASB-TQM-2026, pp. 2–5). The IAASB approved an action plan in March 2026 under which remaining completed guides are planned to go to the Board by June 2027 (IAASB-TQMPLAN-2026, p. 9).
    - IFIAR (20 April 2026) lists practices networks should consider, from validation and re-approval to escalation pathways and AI oversight committees (IFIAR-TTF-2026, pp. 6–7). PCAOB board member Botic set out a lifecycle expectation in September 2026: approval, validation, monitoring, training, periodic reassessment and retirement, plus an inventory of tools (PCAOB-BOTICSF-2026).
 2. **Supervisors are moving to inspect the firm's system, and AI governance sits inside that system.**
    - The FRC put firms' systems of quality management "at the heart" of supervision from April 2026 (FRC-SUPERVISION-2026).
@@ -72,7 +72,7 @@ Notes on fields for this module:
     Firm quality-management processes were built mainly for transparent, deterministic tools. IAASB staff describe
     AI tools as opaque (limited explainability), non-deterministic (outputs vary) and adaptive (behaviour changes over
     time), which makes it hard to decide how much testing is enough before deployment and how to monitor afterwards
-    (IAASB-TQMPLAN-2026, paras 5-7, p. 2).
+    (IAASB-TQMPLAN-2026, paras 5-7).
   solution: >
     The firm treats the unit of certification as an AI tool in the context of a use case. Certification evaluates the
     tool's inputs and architecture and tests its outputs. The firm may recertify when components or inputs change, when
@@ -89,7 +89,7 @@ Notes on fields for this module:
   risks_and_guardrails:
     - "Recertification triggers appeared informal at most firms; the FRC encourages a recertification check inside change management (FRC-ATT-2025, p. 21)"
     - "The FRC says LLMs' inherent limitations mean some risk of deficient output always remains, so certification is paired with review or oversight by humans (FRC-GENAI-2026, p. 26)"
-    - "Regulators expect the firm, not the network or vendor, to keep responsibility for approving tools and monitoring them (IAASB-TQMPLAN-2026, para 29, p. 5)"
+    - "Regulators expect the firm, not the network or vendor, to keep responsibility for approving tools and monitoring them (IAASB-TQMPLAN-2026, para 29)"
   human_checkpoints:
     - Firm-level decision to approve, restrict or retire a tool for a defined use case
     - Decision to recertify after a trigger event
@@ -184,7 +184,7 @@ Notes on fields for this module:
     - "Clear allocation of monitoring responsibility between network and member firm (FRC-ATT-2025, p. 20)"
   risks_and_guardrails:
     - "IFIAR says the metrics themselves should be reviewed periodically (IFIAR-TTF-2026, p. 9)"
-    - "IFIAR's data on firms' monitoring comes from firms and is directional only (IFIAR-TTF-2026, p. 3)"
+    - "IFIAR says its observations rest on information shared with it and are not a comprehensive assessment of firms or tools (IFIAR-TTF-2026, p. 3)"
   human_checkpoints:
     - Quality function reviews metrics and decides whether to restrict, retrain or recertify a tool
   role_evolution: >
@@ -437,10 +437,11 @@ Notes on fields for this module:
   solution: >
     The PCAOB's inspections director said inspectors meet firms, generally larger ones, to understand their AI use, that many
     firms invited inspectors to demonstrations while piloting, and that AI is an inspection focus for 2026 (CAALLEY-PCAOBPE-2025).
+    PCAOB staff at the December 2025 AICPA conference said firms' AI adoption will be an area of focus for inspectors (DART-SECPCAOB-2025).
     IFIAR encourages early engagement with local regulators and IFIAR, particularly when technology may significantly alter the
-    nature of audit work (IFIAR-TTF-2026, p. 4). The FRC says firms may find sandbox-style engagement and the guidance
-    useful; the FRC's own head of assurance technology said a goal of the guidance was to signal that AI is acceptable
-    in principle if done sensibly (ICAEW-POD-2025).
+    nature of audit work (IFIAR-TTF-2026, p. 4). The FRC's head of assurance technology said an overarching goal of its AI guidance was
+    to show the regulator is fine in principle with firms using AI, provided it is done sensibly, and that the FRC works with firm
+    representatives on a working group to learn what firms are doing (ICAEW-POD-2025).
   outcomes:
     - {lever: risk, description: "none published", figure: "none", measures: "n/a", provenance: independent, source_ref: CAALLEY-PCAOBPE-2025}
   prerequisites:
@@ -448,7 +449,7 @@ Notes on fields for this module:
     - "Ability to explain a tool and how it was validated (PCAOB-BOTICSF-2026)"
   risks_and_guardrails:
     - "Regulators' stated focus includes how firms' quality control addresses AI at firm level as well as what appears in selected files (CAALLEY-PCAOBPE-2025)"
-    - "PCAOB staff views from earlier outreach are not Board policy (DART-SECPCAOB-2025)"
+    - "The PCAOB's July 2024 staff spotlight on GenAI reflects staff views, not binding rules (FIELDGUIDE-PCAOB-2026)"
   human_checkpoints:
     - Firm leadership decides what is shown to inspectors and when
   role_evolution: >
@@ -461,10 +462,11 @@ Notes on fields for this module:
     - {ref: IFIAR-TTF-2026, title: "Use of technology in audits - Innovation and audit quality (2026)", publisher: IFIAR, type: regulator, url: "https://www.ifiar.org/?wpdmdl=19893", date: 2026-04-20, access: full, locator: "p. 4"}
     - {ref: ICAEW-POD-2025, title: "How should audit firms use AI? (podcast and transcript)", publisher: ICAEW Beyond Finance, type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: 2025-11-11, access: full, locator: "transcript, McConnon answer on objectives for the guidance"}
     - {ref: PCAOB-BOTICSF-2026, title: "Smaller Audit Engagements, Significant Impact: Audit Quality, Investor Protection, and the Future of the Profession", publisher: PCAOB (G. Botic), type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/smaller-audit-engagements--significant-impact--audit-quality--investor-protection--and-the-future-of-the-profession", date: 2026-09-22, access: full, locator: "section 'Expanding Use of Technology in Audits'"}
+    - {ref: FIELDGUIDE-PCAOB-2026, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: Fieldguide, type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: 2026-08-06, access: full, locator: "section 'What the PCAOB Spotlight says about GenAI in audits'"}
   last_reviewed: 2026-10-16
   notes: >
     Grade C: the evidence is regulators' statements that firms do this; no firm is named. The Gunia quotes reach us through
-    press summaries of her prepared remarks (Accounting Today), not the PCAOB text. The FRC sandbox (landscape item) was not
+    press summaries of her prepared remarks (Accounting Today), not the PCAOB text. The FRC sandbox (a landscape item) was not
     opened for this file.
 
 - id: assurance-quality-management-10
@@ -544,7 +546,7 @@ Notes on fields for this module:
     - "Reviewers with competence in the use case; specialist expertise for some (FRC-GENAI-2026, p. 37)"
   risks_and_guardrails:
     - "The FRC says professional skepticism and an understanding of automation bias are important elements of oversight (FRC-GENAI-2026, p. 38)"
-    - "KPMG says defining when human judgment adds real risk reduction needs careful thought and experimentation, which it does not claim to have solved (KPMG-SOX-2026, p. 14)"
+    - "KPMG says defining when human judgment adds real risk reduction, and designing oversight that captures it, needs careful thought and ongoing experimentation (KPMG-SOX-2026, p. 14)"
   human_checkpoints:
     - Authorising the agent to continue or take specified actions at control points
     - Review of intermediary and final outputs
@@ -564,7 +566,7 @@ Notes on fields for this module:
     controls paper, so it concerns AI in controls, an adjacent area; the FRC, IFIAR and IAASB material is guidance, not a deployment.
 
 - id: assurance-quality-management-12
-  title: Review designed to counter automation bias: reviewer forms an independent view before accepting AI output (idea)
+  title: "Review designed to counter automation bias, with the reviewer forming an independent view before accepting AI output (idea)"
   archetype: assurance
   module: quality-management
   function: service-delivery
@@ -679,7 +681,7 @@ Notes on fields for this module:
     - "Rules for what happens when components disagree (FRC-GENAI-2026, p. 26)"
   risks_and_guardrails:
     - "The sources do not test whether cross-checks catch more errors than single review; none is published (ICAEW-POD-2025; FRC-GENAI-2026, p. 26)"
-    - "Morris notes AI reviewing would require a high degree of confidence (ICAEW-POD-2025)"
+    - "Morris agreed with the host that AI reviewing would require a high degree of confidence (ICAEW-POD-2025)"
   human_checkpoints:
     - Human review at the end of the process (ICAEW-POD-2025)
   role_evolution: >
@@ -934,7 +936,7 @@ Notes on fields for this module:
 - **Split monitoring responsibility between networks and member firms.** IFIAR saw global monitoring in some networks and member-firm monitoring in others, with a risk of fragmented coverage (IFIAR-TTF-2026, p. 8).
 - **Regulatory fragmentation.** The IAASB cites inconsistent regulator interpretation across jurisdictions, diverse firm practice and an uneven playing field for small and mid-size practices (IAASB-TQMPLAN-2026, para 11).
 - **Reviewers facing fluent output.** NFRA and the FRC both note that output sounds confident even when wrong (NFRA-CAALLEY-2026; FRC-GENAI-2026, p. 35).
-- **Uncertainty about inspector expectations.** Standards were not written for AI (DART-SECPCAOB-2025), and a PCAOB board member said the regulator is still working out whether new standards or documentation rules are needed (FOLEY-PCAOB-2026).
+- **Uncertainty about inspector expectations.** An SEC accountant said existing auditing standards were not written with AI in mind (DART-SECPCAOB-2025), and a PCAOB board member said the regulator is still working out whether new standards or documentation rules are needed (FOLEY-PCAOB-2026). ICAEW says regulatory uncertainty is a barrier to adopting AI at scale (ICAEW-LANDMARK-2025).
 - **Client pressure on junior hours and fees.** A mid-tier partner said a prospective client asked for fewer junior hours and lower fees because of AI (ICAEW-EXPECT-2026). KPMG reportedly argued to its own auditor that AI should lower its audit fee (VERDANTIX-KPMGFEE-2026).
 
 ### Metrics and benchmarks
@@ -962,11 +964,13 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
   - Botic called the external quality control function rescission disappointing (PCAOB-BOTICNEB-2026).
   - The PCAOB has issued no AI-specific standard. Its technology-assisted-analysis amendments (AS 1105, AS 2301) did not address AI (FIELDGUIDE-PCAOB-2026; CALCPA-AISTD-2026).
   - Botic's lifecycle expectation for AI governance is a Board member's view, not a rule (PCAOB-BOTICSF-2026).
+  - Big Four firms, the AICPA's Auditing Standards Board and the CAQ appear to back greater emphasis on firms' systems of quality control in inspections (TR-PCAOBPREVIEW-2026).
   - The SEC's Office of the Chief Accountant asks auditors how they use AI to improve audit quality and to monitor their system of quality control (KPMG-HOHL-2026).
   - The AICPA practice aid (13 October 2026) covers firms' AI use under quality management, supervision and review. The practice aid's full text was not read (AICPA-PA-2026).
 - **United Kingdom**
-  - The FRC guidance (30 March 2026) presents three risks (deficient output, misinterpretation or misuse, non-compliant methodology). It says it is "not a response to identified quality deficiencies" and that regulatory accountability is unchanged (FRC-GENAINEWS-2026).
-  - The FRC's evolved supervision model begins in April 2026 for the largest firms (FRC-SUPERVISION-2026).
+  - The FRC guidance (30 March 2026) sets out three risks: deficient output, misinterpretation or misuse, and non-compliant methodology (FRC-GENAI-2026; ICAEW-FRCVIEW-2026). The FRC says it is "not a response to identified quality deficiencies" and that regulatory accountability is unchanged (FRC-GENAINEWS-2026).
+  - The FRC's evolved supervision model begins in April 2026 for the largest firms (FRC-SUPERVISION-2026). Board Agenda reports it will rely more on firms' own quality management and carry out fewer inspections where the FRC has confidence in self-review (BOARDAGENDA-SUP-2026).
+  - The FRC guidance says the risk of deficient output cannot be eliminated because of LLMs' inherent limitations, and notes that firms' own use of automated tools had, at the six largest firms, no monitoring of quality impact (BOARDAGENDA-FRC-2026, quoting the guidance and the 2025 review).
 - **International**
   - ISQM 1 and ISA 220 (Revised) are judged resilient. The IAASB's non-authoritative guides will cover tool certification, monitoring and review of outputs, and are not new requirements (IAASB-TQM-2026, p. 4; IAASB-TQMPLAN-2026, paras 18–20).
   - The workstream's expert group includes the Big Four, BDO, Grant Thornton, Forvis Mazars, Caseware, Inflo, the FRC, the PCAOB, CPAB and IOSCO (IAASB-TQMPAGE-2026).
@@ -984,14 +988,17 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 |---|---|---|
 | 2025-06 | FRC finds firms still adapting certification to AI risks and building ways to monitor tool usage and quality impact | FRC-ATT-2025 |
 | 2025-08-08 | PwC's AI assurance leader says new hires will act like managers within three years, overseeing AI | BI-PWC-2025 |
+| 2025-10-28 | PwC says end-to-end AI integration in the audit cycle should arrive within calendar 2026; a year later it says savings are "not that drastic yet" | PWC-AT-2025; CFODIVE-PWC-2026 |
 | 2025-11-11 | FRC and firm guests: AI reviewing AI "a few years down the line"; assurance of AI tools is fragmented | ICAEW-POD-2025 |
 | 2025-12-09 | PCAOB acting chair warns of skepticism erosion and need for new junior skill paths; inspections director says AI and private equity will be 2026 inspection focus | NYSSCPA-BOTIC-2025; CAALLEY-PCAOBPE-2025 |
 | 2025-12 | IAASB approves development of non-authoritative material on quality management and emerging technology | IAASB-TQM-2026 |
+| 2026-01-15 | AAA Auditing Section midyear workshop (15-17 Jan) has panels on how auditors and juniors use GenAI in fieldwork (agenda only) | AAA-MIDYEAR-2026 |
 | 2026-01-08 | RSM launches Ask Luca for 4,000+ assurance professionals | RSM-LUCA-2026 |
 | 2026-03-25 | FRC announces supervision model centred on firms' systems of quality management | FRC-SUPERVISION-2026 |
 | 2026-03-30 | FRC issues first regulator guidance on generative and agentic AI in audit | FRC-GENAINEWS-2026 |
 | 2026-03 | IAASB approves action plan for technology quality management guides | IAASB-TQMPLAN-2026 |
 | 2026-04-20 | IFIAR report: practices for validation, re-approval, oversight committees, metrics; early engagement with regulators | IFIAR-TTF-2026 |
+| 2026-05-08 | At the Deloitte/KU symposium (agenda: AI panels, a PE and independence panel) Botic calls PE and AI the most consequential issues facing the profession and asks for academic research | KU-SYMPOSIUM-2026; PCAOB-BOTICKU-2026 |
 | 2026-05 | PCAOB launches Inspections Modernization Council to ground inspections in QC 1000 and use AI | PCAOB-LOGOSEIAG-2026; JOFA-IMC-2026 |
 | 2026-06-24 | Deloitte announces agents in Omnia, including "tutor mode" | DELOITTE-OMNIA-2026 |
 | 2026-07-13 | SEC chief accountant says the QC-focused inspection model may be tougher on firms | CAQ-HOHLWEBINAR-2026 |
@@ -1013,15 +1020,15 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 - **New governance roles.** System managers, tool owners and oversight committees (FRC-GENAI-2026, p. 38; IFIAR-TTF-2026, p. 7). RSM UK's data analytics director sat on the FRC working group and says the guidance should get system designers talking with frontline auditors (ICAEW-FRCVIEW-2026).
 - **Reviewer competence.** The FRC says reviewers need competence in the use case, sometimes specialist expertise (FRC-GENAI-2026, p. 37). The AICPA says teams may need a blend of audit expertise, AI knowledge, data skills and specialist support (AICPA-PA-2026).
 - **Time as a quality input.** Botic told firm leaders in January 2026 that teams should know they can take more time even if sign-off is delayed (JOFA-5IMP-2026).
-- **Regulator staffing and tools.** PCAOB staff are piloting AI for inspection work and the PCAOB plans investment in AI capabilities (STARLING-IMC-2026; PCAOB-BOTICPLAN not opened; see PCAOB-LOGOUSC-2026).
+- **Regulator tools.** PCAOB staff describe early AI pilots to support inspection work (STARLING-IMC-2026). Botic backs investment in AI tools in the draft strategic plan (PCAOB-BOTICPLAN-2026).
 
 ### Objections and concerns practitioners raise
 
 - **Rubber-stamping and automation bias.** KPMG says empty approval steps give no control value (KPMG-SOX-2026, p. 14). NFRA says fluent output invites automation bias (NFRA-CAALLEY-2026). ICAEW says the FRC covers it in one paragraph (ICAEW-FRCVIEW-2026).
 - **Deskilling.** Botic cites research on erosion of critical thinking and skepticism, and calls for new paths to build junior skills (NYSSCPA-BOTIC-2025). Botic's October speech makes critical thinking a core attribute because AI produces more information and more sophisticated analysis (PCAOB-BOTICIOWA-2026).
-- **Inspection reform may reduce a behavioural check.** Botic argues the prospect of file review affects partner behaviour, and warns against cutting reviews at the largest firms without a clear case (PCAOB-BOTICIOWA-2026). The Chairman answers that audit quality is produced by systems, not isolated engagements (PCAOB-LOGOUSC-2026).
+- **Inspection reform may reduce a behavioural check.** Botic argues the prospect of file review affects partner behaviour, and warns against cutting reviews at the largest firms without a clear case (PCAOB-BOTICIOWA-2026). The Chairman's position is that audit quality is produced by systems, not isolated engagements, and that file reviews continue but may change in number and selection (PCAOB-LOGOUSC-2026).
 - **Weakening independent challenge on quality control.** Botic called the rescission of the external quality control function disappointing. The Chairman said an external contractor chosen and paid by the firm may not reliably challenge it (PCAOB-BOTICNEB-2026; PCAOB-LOGOQC-2026).
-- **Profit pressure on resourcing.** The PCAOB inspections director said private equity can lead to reduced staffing and fewer specialists, and that inspectors will examine QC at firms that took such investment (CAALLEY-PCAOBPE-2025).
+- **Profit pressure on resourcing.** The PCAOB inspections director said private equity can lead to reduced staffing and fewer specialists, and that inspectors will examine QC at firms that took such investment (CAALLEY-PCAOBPE-2025). Botic also warned private equity may shift incentives so profitability outweighs audit quality (KING-BOTIC-2025).
 - **Explainability.** The FRC's McConnon argues the right comparison is a human, not traditional code, so knowing what a tool does conceptually and how it performed in tests is enough for many uses (ICAEW-POD-2025).
 - **Guidance thin on vendors and small firms.** ICAEW says the guidance should say more about vendor questions and about firms without technology teams (ICAEW-FRCVIEW-2026).
 - **Probabilistic outputs.** RSM UK's analytics director says no tool can guarantee the right output every time (ICAEW-FRCVIEW-2026).
@@ -1084,6 +1091,7 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 | PCAOB-LOGOQC-2026 | Statement on the Adoption of QC 1000 Amendments (Chairman D. Logothetis; via text mirror) | PCAOB | regulator | https://pcaobus.org/news-events/speeches/speech-detail/statement-on-the-adoption-of-qc-1000-amendments | 2026-09-09 |
 | PCAOB-LOGOUSC-2026 | Remarks at the USC SEC Financial Reporting Conference (Chairman D. Logothetis; via text mirror) | PCAOB | regulator | https://pcaobus.org/news-events/speeches/speech-detail/pcaob-chairman-logothetis-delivers-remarks-at-usc-sec-financial-reporting-conference | 2026-06-04 |
 | PCAOB-LOGOSEIAG-2026 | Remarks at the Standards and Emerging Issues Advisory Group Meeting (Chairman D. Logothetis; via text mirror) | PCAOB | regulator | https://pcaobus.org/news-events/speeches/speech-detail/chairman-logothetis-delivers-remarks-at-standards-and-emerging-issues-advisory-group-meeting | 2026-05-06 |
+| PCAOB-BOTICPLAN-2026 | Statement in Support of Request for Public Comment on the PCAOB's Draft Five-Year Strategic Plan (2026-2030) (G. Botic; via text mirror) | PCAOB | regulator | https://pcaobus.org/news-events/speeches/speech-detail/statement-in-support-of-request-for-public-comment-on-the-pcaob-s-draft-five-year-strategic-plan-(2026-2030) | 2026-07-20 |
 | KPMG-HOHL-2026 | Q&A with Kurt Hohl, SEC chief accountant | KPMG | firm | https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html | 2026-05-27 |
 | TR-HOHL-2026 | SEC Chief Accountant Hohl dispels rumors of weakening auditor independence rules | Thomson Reuters Checkpoint | press | https://tax.thomsonreuters.com/news/sec-chief-accountant-hohl-dispels-rumors-of-weakening-auditor-independence-rules/ | 2026-06-05 |
 | CAQ-HOHLWEBINAR-2026 | Conversation with SEC Leaders: 5 Takeaways for the Public Company Audit Profession (recaps the 13 July 2026 webinar) | CAQ | professional-body | https://www.thecaq.org/aia-conversation-with-sec-leaders-5-takeaways | 2026-07-23 |
@@ -1128,14 +1136,7 @@ No override rates, reviewer error rates, false-pass rates or parallel-run result
 
 **Source count by type (56 refs):** press 15 · regulator 12 · professional-body 11 · firm 7 · standard-setter 5 · conference 3 · podcast 2 · survey 1 · vendor 1 · academic 1. No community or job-posting source was found (see section 6).
 
-Sources opened but not cited in a use case: ICAEW-LANDMARK-2025, KING-BOTIC-2025, BOARDAGENDA-SUP-2026, PWC-AT-2025, TR-PCAOBPREVIEW-2026, PCAOB-BOTICKU-2026, KU-SYMPOSIUM-2026, AAA-MIDYEAR-2026. They informed the notes or are conference context.
-
-Facts they support:
-- ICAEW says regulatory uncertainty is a barrier to adoption (ICAEW-LANDMARK-2025).
-- King & Spalding confirms the Botic remarks and his five imperatives (KING-BOTIC-2025).
-- Board Agenda adds that the FRC will rely more on firms' systems of quality management and carry out fewer formal inspections where it has confidence (BOARDAGENDA-SUP-2026).
-- Botic calls PE and AI the most consequential issues facing the profession and asks for academic research on both (PCAOB-BOTICKU-2026).
-- The 2026 Deloitte/KU symposium agenda listed an AI panel and a panel on junior auditors' use of GenAI across fieldwork (KU-SYMPOSIUM-2026). The AAA midyear workshop of 15 January 2026 also had a panel on junior auditors' use of GenAI across fieldwork (AAA-MIDYEAR-2026). Only agendas were read; no session content is available for either.
+Two agenda-only pages (KU-SYMPOSIUM-2026, AAA-MIDYEAR-2026) and the AI-generated podcast summary (PODWISE-ACCTPOD-2026) carry little content; they are listed because they show where the discourse is happening, and the use cases do not rely on them except where cited.
 
 ---
 
