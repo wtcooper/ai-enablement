@@ -142,6 +142,10 @@ split into many tasks.
 | Stream A: 3 archetypes × 47 (the pilot's 6 count toward assurance) | 141 |
 | **Full build** | **about 167** |
 
+These are **build-time** agents. Most of the research is finished before release, so users get deep
+archetypes immediately. The optional on-the-spot research (spec §7.4) is only for businesses no built
+archetype covers.
+
 **Rough cost.** The two research subagents run earlier in this project used about 85k–165k tokens
 each. Deep research tasks will likely use 150k–250k. The full build is therefore on the order of
 **25–40 million tokens**, run in waves of 10–25 agents at a time. The pilot measures this properly,
@@ -154,7 +158,9 @@ and this estimate is updated after it.
 - `library/` index and pattern and function files from stream B.
 - `archetypes/index.md` and each `ARCHETYPE.md` with its interview guide, from stream A.
 - Runtime `briefs/`: analyze-document, scout-use-cases, desk-review-unit, review-opportunities,
-  rollup-unit.
+  rollup-unit, and **research-archetype**. The last one is an optional, lighter runtime version of the
+  build recipe for businesses with no built archetype. It writes a provisional archetype into the
+  user's overlay. It is adapted from `research/briefs/templates/` once the pilot has proven them.
 - `templates/` (plan and brief skeletons) and `templates/workspace/`.
 
 ### M6. Evals

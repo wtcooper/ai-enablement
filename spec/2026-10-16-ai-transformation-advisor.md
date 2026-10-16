@@ -79,7 +79,7 @@ answer shapes the next question. It produces a **profile**, which is saved in th
 | Profile element | What the agent finds out | Example |
 |---|---|---|
 | **Role and scope** | Who the user is and what they are responsible for: individual, team, function, business unit or whole organization | An audit partner responsible for a regional practice |
-| **Business archetype** | What kind of business it is, matched to an archetype and its modules (§6.8). If nothing matches, the closest base archetype plus function cards | Assurance → external audit of public companies, with controls testing and substantive testing as focus modules |
+| **Business archetype** | What kind of business it is, matched to an archetype and its modules (§6.8). If nothing matches: the closest base archetype plus function cards and, if the user agrees and the client has web access, **on-the-spot research** of a provisional archetype (§7.4) | Assurance → external audit of public companies, with controls testing and substantive testing as focus modules |
 | **Journey stage** | How far along the scope is with AI (§6.7) | "Experimenting": individual use of chat tools, no shared workflows |
 | **Goals and pressures** | Why now: margin, growth, talent, quality, client demand, competitors, regulation | Fee pressure on audits, staff shortages, inspection findings |
 | **Constraints** | Regulation, independence, client confidentiality, data limits, risk appetite | Independence rules, firm policy on client data in AI tools |
@@ -554,6 +554,7 @@ skills/transformation-advisor/
 | `desk-review-unit` | Break down (optional) | One per unit | A first-pass map, diagnosis and opportunities from archetype knowledge, labelled "draft to validate" |
 | `review-opportunities` | Before Make the case (optional) | One per top opportunity | Independent check of score, risks, checkpoints, role evolution and the §9 rules |
 | `rollup-unit` | Prioritize (higher levels) | One per child unit | Normalized, de-duplicated opportunities ready to merge |
+| `research-archetype` | Onboard, only when no archetype matches, the user agrees, and the client has web access | A landscape pass, then one per focus area × angle (a lighter version of the build recipe in §11) | A **provisional** archetype folder in the workspace overlay (`overlay/archetypes/<id>/`) with the same anatomy, sources and evidence grades, labelled "provisional" |
 
 ### 7.5 Packaging and marketplace
 
@@ -631,7 +632,7 @@ checks. The minimum coverage:
 - A head of AI breaking a professional-services firm into units and rolling up desk reviews.
 - A team lead with uploaded documents.
 - A corporate tax department, where the archetype serves an in-house team.
-- A business with no matching archetype.
+- A business with no matching archetype, with and without on-the-spot research.
 - Personas: an anxious user, and a skeptic who wants hard ROI.
 - A request for cuts targeting named people.
 - An overlay with a tool catalog.
@@ -739,7 +740,10 @@ use cases.
 
 ## 13. Open questions and items to verify in `plan/`
 
-(Post-v1 idea: on-the-spot research of a provisional archetype when nothing matches.)
+**On-the-spot research** (`research-archetype`) is optional. It is a fallback for businesses the
+built archetypes don't cover, not the main source of depth. Most of the depth comes from archetypes
+researched during the build (§11). A provisional archetype saved in an overlay can later be
+promoted: rerun it through the full build recipe and add it to the plugin.
 
 
 1. **Install details not yet confirmed:**
