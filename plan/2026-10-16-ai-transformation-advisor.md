@@ -195,6 +195,15 @@ Two levers can reduce this:
 **Time.** A module's chain (deep dives → synthesis → verification) takes about an hour. Modules run in
 parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 hours of wall-clock time.
 
+### Models
+
+- **Research legs** run on **Sonnet** (owner decision, 2026-10-16): landscape scans, module deep dives,
+  cross-cutting topics and method topics. They are cheaper than Opus.
+- **Synthesis and verification** stay on the strongest model (Opus). The verifier is the quality
+  gate.
+- Wave 1 compares the verifier's correction rate with the pilot's (21 of 25 entries corrected, all
+  research on Opus).
+
 ### Wave order (after the pilot)
 
 | Wave | Content | Agents |

@@ -11,7 +11,8 @@ This folder holds the research we run to write the plugin's archetype packs, met
 ```
 research/
 ├── briefs/
-│   └── templates/          # reusable briefs: landscape, module-angle, synthesis, verifier, vocabulary
+│   └── templates/          # landscape, module-angle, cross-cutting, method-topic, synthesis,
+│                           #   archetype-synthesis, verifier, verifier-docs, vocabulary
 └── runs/<wave>/            # raw subagent output for each wave, kept for traceability
 ```
 
@@ -29,3 +30,4 @@ research/
 | Wave | Scope | Status |
 |---|---|---|
 | `pilot` | assurance → controls testing | done: 25 use cases, 64% graded A/B, see [RETRO](runs/pilot/RETRO.md) |
+| `wave1` | rest of assurance + stream M (method) | running. Research legs on Sonnet, synthesis and verification on Opus |
