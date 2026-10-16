@@ -343,7 +343,7 @@ Access: `full`, `full-mirror`, `partial`, `search-only` as defined above. "Cache
 | ISCA-LAWSHEN-2025 | Is AI replacing auditors? (summary of a Management Science paper by K. Law and M. Shen) | ISCA (Singapore) | academic (authors' summary) | https://ca-lab.isca.org.sg/?p=3828 | undated (paper "recently accepted") | full (summary; paper not opened) |
 | (search-only context) | KPMG US audit practice size; University of Amsterdam PE project; European Accounting Review 2024 study; Fieldguide customer claim | search results | n/a | n/a | n/a | search-only (not relied on) |
 
-Distinct sources opened: 46 (full, full-mirror, cached or partial), across seven types: firm press releases and results (EY, KPMG, PwC UK, EY UK, RSM, Deloitte via press), regulator (FRC and PCAOB remarks as reported), professional body (Accountancy Europe, ICAS, IIA), survey or benchmark (FERF, CPA.com/AICPA, IIA Pulse, Thomson Reuters Institute, Journal of Accountancy summary of the IAF Pulse), academic (three), vendor (Optro, Fieldguide, DSG), and press and commentary (the remainder).
+Distinct sources opened: 50 (full, full-mirror, cached or partial), across these types: trade and general press (27), firm results and press releases (6), surveys and benchmarks (5), academic (3), commentary, blogs and opinion (5), vendor (2), professional body (1) and regulator (1; the PCAOB's remarks are counted under press because they were read as reported). The regulator and professional-body counts are low; the weight of evidence is press and firm self-reporting.
 
 ---
 
