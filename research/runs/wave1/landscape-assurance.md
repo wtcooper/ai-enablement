@@ -336,7 +336,7 @@ Markers are written for audit firms and internal audit functions, drawing on ope
 5. **JOFA-SOCETH-2026** and the AICPA ethics staff article "AI through an ethics lens": test whether the SOC tool-provider reasoning transfers to audit AI vendors.
 6. **IESBA emerging-technologies non-authoritative material (Jul 2026), snapshot (Jun 2026) and the June 2026 board agenda item** (IESBA-TECH-2026): open the underlying documents.
 7. **Structural cases:** Grant Thornton Gtap and its alternative practice structure (GT-GTAP-2026), Modus (MODUS-2026), Repodo (REPODO-2026), Oath Verified; the KU panel on ownership and independence (KU-SYMPOSIUM-2026), whose organisers may share materials.
-8. **Acceptance tools:** Kingland (KINGLAND-ACCEPT), Intapp (blocked; try investor materials), PwC UK's acceptance and continuance system described in its transparency report; look for any named firm case with measured effect.
+8. **Acceptance tools:** Kingland (KINGLAND-ACCEPT), Intapp (blocked; try investor materials), PwC UK's acceptance and continuance system (described in a 2022 transparency report seen only in a search extract); look for any named firm case with measured effect.
 9. Search directions: "client risk scoring audit firm machine learning", "predecessor auditor communication AI", "audit fee AI pricing" (VERDANTIX-KPMGFEE-2026), "engagement letter AI disclosure state law".
 
 ### planning-risk-assessment
@@ -372,7 +372,7 @@ Markers are written for audit firms and internal audit functions, drawing on ope
 6. **PCAOB-SPECIALISTS-2025** inspection themes as the baseline; monitor whether the PCAOB data and technology project touches specialists.
 7. **SSRN-LLMAQ-2026** (inventory valuation) and COMMERFORD-2022 (reliance on AI for complex estimates); REFGLOBAL-DCF-2026 (LLM valuation failure modes).
 8. **IFIAR-TTF-2025** IT application and security configuration findings (39% frequency) and ITGC testing findings.
-9. **ISACA AAIA and AI audit toolkit** (pilot item; blocked source): curriculum and job-task analysis show what IT auditors are expected to do with AI.
+9. **ISACA AAIA and AI audit toolkit** (pilot item; blocked source): the curriculum shows what IT auditors are expected to do with AI.
 10. Search directions: "IT audit specialist" with "agent" (Surgent, Crowe programmes seen in search results, not opened), "actuarial specialist" with "AI" and IFRS 17, "forensic specialist" with "deepfake evidence".
 
 ### completion-reporting
@@ -445,4 +445,24 @@ Markers are written for audit firms and internal audit functions, drawing on ope
 
 Counted as distinct sources with a key in sections 2–9. Sources listed under several headings are counted once, under the type in the first column. "Opened" means status `read` or `read-secondary` (including partial reads); the remainder are `snippet` or `blocked`.
 
-COUNT_TABLE_PLACEHOLDER
+| Source type | Numbered items | Opened (`read` or `read-secondary`) | Snippet or blocked | Item ids |
+|---|---|---|---|---|
+| conference | 21 | 19 | 2 | C1–C21 |
+| regulator | 20 | 18 | 2 | R1–R6, R11–R19, R25–R29 |
+| standard-setter | 11 | 10 | 1 | R7–R10, R20–R24, R30, R31 (R31 is an aggregate row) |
+| professional-body | 16 | 14 | 2 | P1–P16 |
+| academic | 15 | 12 | 3 | A1–A15 |
+| firm (incl. in-house teams and AI-native ventures) | 18 | 17 | 1 | F1–F18 |
+| vendor (incl. analyst items) | 17 | 15 | 2 | V1–V17 |
+| survey / benchmark | 11 | 9 | 2 | S1–S11 |
+| press | 14 | 13 | 1 | N1–N14 |
+| podcast | 4 | 2 | 2 | D1–D4 |
+| community | 0 | 0 | 0 | none opened (IIA AuditSphere and ISACA chapters not opened; Reddit blocked) |
+| job-posting | 0 | 0 | 0 | none found |
+| **Total rows** | **147** | **129** | **18** | |
+
+**Reading the totals.**
+- Three rows duplicate another row's source (P7 = R15, S3 = R5, S8 = C15), so distinct rows are 144 with 126 opened. Press rows (N1–N13) are outlets whose opened articles are also cited under other types, so the count of distinct documents is lower than the row count.
+- Aggregate rows (C21, R31, P13, P16, A15, V15, S11, D4) bundle several pilot items that were not re-opened; each counts once, which understates the unverified pool.
+- Roughly 180 fetch attempts were made; about 140 returned more than 1,000 characters of text. Many were read only in part (for example, a 112,000-character FRC PDF was read for its risks, mitigations and two worked examples, not line by line).
+- Opened items span 10 source types, above the six-type minimum, and far above the 40-source minimum. Quality varies: primary regulator, standard-setter and firm documents (about 45 items) are stronger than press, vendor and secondary-report items.
