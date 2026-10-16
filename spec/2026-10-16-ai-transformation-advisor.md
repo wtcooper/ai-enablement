@@ -38,6 +38,10 @@ lives in an **overlay** in its workspace, never in the plugin.
 
 ## 2. Scope
 
+**The product** is only what ships inside `plugins/transformation-advisor/`: the orchestration skill,
+the method logic, the archetype packs, the backbone library and the references they need. The research
+program (§11) is a build activity that produces that content. Its tooling and raw output never ship.
+
 **In v1**
 
 - One skills-only plugin that conforms to Agent Plugins 1.0. It installs from this repo's GitHub
@@ -75,7 +79,7 @@ answer shapes the next question. It produces a **profile**, which is saved in th
 | Profile element | What the agent finds out | Example |
 |---|---|---|
 | **Role and scope** | Who the user is and what they are responsible for: individual, team, function, business unit or whole organization | An audit partner responsible for a regional practice |
-| **Business archetype** | What kind of business it is, matched to an archetype and its modules (§6.8). If nothing matches, the closest base archetype plus function cards; optionally a provisional profile researched on the spot (§7.4) | Assurance → external audit of public companies, with controls testing and substantive testing as focus modules |
+| **Business archetype** | What kind of business it is, matched to an archetype and its modules (§6.8). If nothing matches, the closest base archetype plus function cards | Assurance → external audit of public companies, with controls testing and substantive testing as focus modules |
 | **Journey stage** | How far along the scope is with AI (§6.7) | "Experimenting": individual use of chat tools, no shared workflows |
 | **Goals and pressures** | Why now: margin, growth, talent, quality, client demand, competitors, regulation | Fee pressure on audits, staff shortages, inspection findings |
 | **Constraints** | Regulation, independence, client confidentiality, data limits, risk appetite | Independence rules, firm policy on client data in AI tools |
@@ -550,7 +554,6 @@ skills/transformation-advisor/
 | `desk-review-unit` | Break down (optional) | One per unit | A first-pass map, diagnosis and opportunities from archetype knowledge, labelled "draft to validate" |
 | `review-opportunities` | Before Make the case (optional) | One per top opportunity | Independent check of score, risks, checkpoints, role evolution and the §9 rules |
 | `rollup-unit` | Prioritize (higher levels) | One per child unit | Normalized, de-duplicated opportunities ready to merge |
-| `research-archetype` | Onboard, when no archetype matches and the client has web access | One per research angle | A provisional archetype profile and use cases with sources, labelled "provisional" |
 
 ### 7.5 Packaging and marketplace
 
@@ -628,7 +631,7 @@ checks. The minimum coverage:
 - A head of AI breaking a professional-services firm into units and rolling up desk reviews.
 - A team lead with uploaded documents.
 - A corporate tax department, where the archetype serves an in-house team.
-- A business with no matching archetype, with and without on-the-spot research.
+- A business with no matching archetype.
 - Personas: an anxious user, and a skeptic who wants hard ROI.
 - A request for cuts targeting named people.
 - An overlay with a tool catalog.
@@ -735,6 +738,9 @@ use cases.
 | Framework IDs (APQC) | Not used |
 
 ## 13. Open questions and items to verify in `plan/`
+
+(Post-v1 idea: on-the-spot research of a provisional archetype when nothing matches.)
+
 
 1. **Install details not yet confirmed:**
    - how ChatGPT desktop installs plugins

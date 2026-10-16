@@ -10,7 +10,7 @@ Each stage commits a document that the next stage reads:
 |---|---|---|
 | Plan | [`intent/`](intent/) | The problem, the outcome we want, constraints, open questions |
 | Design | [`spec/`](spec/) | Behaviors, modes, knowledge modules, output formats |
-| Build | `plan/` (next) | Files that change, order of work, risks, proof |
+| Build | [`plan/`](plan/) | Files that change, order of work, risks, proof |
 
 Working notes that are not yet decisions live in [`docs/brainstorm/`](docs/brainstorm/):
 
@@ -25,3 +25,4 @@ Research behind design decisions lives in [`docs/research/`](docs/research/):
 
 - [Intent: AI transformation advisor](intent/2026-10-16-ai-transformation-advisor.md) (draft)
 - [Spec: AI transformation advisor v1](spec/2026-10-16-ai-transformation-advisor.md) (draft)
+- [Plan: AI transformation advisor v1](plan/2026-10-16-ai-transformation-advisor.md) (draft; to be revised after the research pilot)
