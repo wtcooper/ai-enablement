@@ -23,7 +23,7 @@
   - PCAOB Release 2024-007 (technology-assisted analysis) amended AS 1105 so that a procedure's purpose decides whether it is a risk assessment procedure, test of controls or substantive procedure, and a multi-purpose procedure must achieve each objective (release p.25). It says evaluating the reliability of information used in risk assessment procedures takes less auditor effort than for substantive procedures and tests of controls (p.32). It states that it does not address AI (p.5).
 - **IAASB exposure drafts (5 Aug 2026; comments due 15 Dec 2026).** ED-520 adds a requirement to consider how inconsistent results of risk-assessment analytical procedures affect the identification and assessment of risks (AUASB summary, Appendix 1 para 10(c)). ED-330 proposes removing the extant requirement to always perform substantive procedures for each material class, to reinforce the risk assessment under ISA 315 (para 2). The ED texts are login-gated, so what is reported here comes from the AUASB consultation paper's summary.
 - **Fraud.** ISA (UK) 240 (Revised March 2026, effective for periods commencing on or after 15 December 2026) says automated tools may support the engagement team's fraud brainstorming, for example ratio benchmarking to identify fraud risk factors (A56, printed p.35), and flags AI or machine learning algorithms that initiate accounting entries as a source of heightened susceptibility (A101, printed p.47).
-- **FRC (UK).** The *Generative and Agentic AI Guidance* (30 Mar 2026) includes a worked example for this module: summarising board minutes for risk assessment (pp.43–48). It names the misuse risk that matters most here, namely an auditor who "may not understand that the output of an AI-enabled risk assessment tool was intended to inform their judgement rather than being itself a conclusion" (p.18).
+- **FRC (UK).** The *Generative and Agentic AI Guidance* (30 Mar 2026) includes a worked example for this module: summarising board minutes for risk assessment (pp.43–48). It names the misuse risk that matters most here: an auditor may not understand that an AI-enabled risk assessment tool's output was meant to inform their judgement and not to be the conclusion (p.18).
 - **AICPA (13 Oct 2026).** The first practice aid for auditors on AI covers how an entity's own AI use affects the understanding of the entity, risk assessment, controls and acceptance. It says later sections on assessing the risk of material misstatement and on audit evidence when a company uses AI will be added.
 
 **What inspections show.** There is no inspection finding specific to an AI risk-assessment tool in any source read.
@@ -35,7 +35,7 @@
 
 **What is measured.** Almost nothing about quality.
 
-- Adoption figures exist: the AICPA/CPA.com benchmark found 22% of 54 US firms had an automated solution for risk assessment (p.10). The AFM found risk assessment accounted for 28% of average tool use across audit areas at six Dutch PIE firms (p.27).
+- Adoption figures exist: the AICPA/CPA.com benchmark found 22% of surveyed US firms (54 with complete data) had an automated solution for risk assessment (PDF p.10). The AFM found risk assessment accounted for 28% of average tool use across audit areas at six Dutch PIE firms (p.27).
 - The nearest quality evidence is a single ICAEW test in which three general-purpose chatbots did not perform ISA 315 risk assessment as a human would, and one academic prototype that predicts restatements (AUROC 0.782).
 - Named deployments (PwC, KPMG, Deloitte, MindBridge, Caseware) come with no outcome figures beyond a PwC statement that savings are "not that drastic yet".
 
@@ -44,7 +44,7 @@
 **Two most important insights.**
 
 1. **Risk assessment is where the standards are most permissive and where the tool most easily becomes the conclusion.** The evidentiary bar for information used in risk assessment is lower than for responses (PCAOB 2024-007 p.32). The risk assessment standards, however, require inquiries, observation and inspection and an unbiased approach (ISA 315 paras 13–14; AS 2110 .54), and the FRC, NFRA and IFIAR all warn against treating a tool's output as the judgement. India's NFRA says auditors should not accept a tool's low-risk classification without periodically testing it (NFRA-CAALLEY-2026, a press report of the staff paper). No one yet measures whether tool-assisted risk assessment is better: the FRC found no formal quality monitoring and the ICAEW test is a single run.
-2. **Client AI use has become a planning topic in its own right.** ISA 315 Appendix 5, ISA (UK) 240 A101, IFIAR's 2026 report (pp.10), ACRA's 2025 guidance and the AICPA practice aid all ask the auditor to understand how the entity uses AI, including deliberate misuse to fabricate documents and transactions. The AICPA says its guidance on assessing risks of material misstatement for AI-using companies is still to come, so the procedures are guidance only, with no deployment evidence.
+2. **Client AI use has become a planning topic in its own right.** ISA 315 Appendix 5, ISA (UK) 240 A101, IFIAR's 2026 report (p.10), ACRA's 2025 guidance and the AICPA practice aid all ask the auditor to understand how the entity uses AI, including deliberate misuse to fabricate documents and transactions. The AICPA says its guidance on assessing risks of material misstatement for AI-using companies is still to come, so the procedures are guidance only, with no deployment evidence.
 
 ---
 
@@ -139,7 +139,7 @@
   prerequisites:
     - "Prior-year audit information in a form the tool can ingest (PWC-AT-2025)"
   risks_and_guardrails:
-    - "Roll-forward risk: 85% of 54 US firms prioritise rolling binders forward to save time and 60% carry forward the prior-year risk assessment; 64% prioritise challenging last year's procedures in relation to risk assessment (CPACOM-ATR-2025 PDF p.14)"
+    - "Roll-forward risk: in the CPA.com survey (74 firms registered, 54 with complete data), 85% say they prioritise rolling binders forward to save time and 60% carrying forward the prior-year risk assessment; 64% prioritise challenging last year's procedures in relation to risk assessment (CPACOM-ATR-2025 PDF p.14)"
     - "AS 2110 .08 requires the auditor to evaluate whether significant changes since prior periods affect the risks of material misstatement"
     - "ISA (UK) 315 para 13 requires risk assessment procedures not biased toward corroborative evidence (printed p.7)"
   human_checkpoints:
@@ -153,7 +153,7 @@
     - { ref: CPIA-ARAQ-2026, title: "Audit quality remains strong in 2026 - consistency is now the aim", publisher: CPIA, type: press, url: "https://www.cpia.org.uk/news/frc-audit-quality-2026/", date: 2026-07-24, access: full, locator: "section 'Turning systems into better audits'" }
     - { ref: ISAUK315-2025, title: "ISA (UK) 315 (Revised July 2020): Identifying and Assessing the Risks of Material Misstatement, updated September 2025", publisher: Financial Reporting Council, type: standard-setter, url: "https://media.frc.org.uk/documents/ISA_UK_315_Revised_July_2020_Updated_September_2025.pdf", date: 2025-09, access: full, locator: "para 13, printed p.7" }
   last_reviewed: 2026-10-16
-  notes: "B because PwC is a named firm that describes the tool as in use. The Accounting Today article is a briefing report and PwC's statement is self-reported. The tool is designed for private-company audits under AICPA standards, not public-company audits. The CPA.com figures describe 54 US firms' stated priorities, not this tool."
+  notes: "B because PwC is a named firm that describes the tool as in use. The Accounting Today article is a briefing report and PwC's statement is self-reported. The tool is designed for private-company audits under AICPA standards, not public-company audits. The CPA.com figures describe surveyed US firms' stated priorities (54 firms with complete data), not this tool."
 
 - id: assurance-planning-risk-assessment-04
   title: Tool that analyses audit committee communications to surface issues earlier in audit preparation
@@ -201,10 +201,10 @@
   outcomes:
     - { lever: risk, description: "Share of IFIAR members that 'frequently' observed automated tools and techniques in risk assessment in the audit files of the six global networks", figure: "55% in 2024; 49% in 2023", measures: "Of 47 members responding in 2024 (45 in 2023), the share answering 'frequently observed' for the area 'risk assessment'. In 2024, 13% answered 'never' and 32% 'infrequently'. Covers all automated tools and techniques, not only AI. Directional, from members' inspection experience", provenance: independent, source_ref: IFIAR-TTF-2025 }
     - { lever: risk, description: "Average share of tool use by audit area across the six Dutch PIE firms: risk assessment, against tests of details", figure: "28% risk assessment; 51% tests of details", measures: "AFM chart 'use of audit tooling in each audit area (average)' from its data request to six PIE audit firms. Percentages do not total 100% because one tool can serve several areas. The source does not define the numerator more precisely", provenance: independent, source_ref: AFM-12BB-2025 }
-    - { lever: risk, description: "US firms with an automated solution for risk assessment", figure: "22%", measures: "Share of 54 firms with complete survey data (74 registered) that answered yes to having an automated solution for risk assessment. Survey run Jun-Aug 2025 by CPA.com and the AICPA; firms self-report", provenance: independent, source_ref: CPACOM-ATR-2025 }
+    - { lever: risk, description: "US firms with an automated solution for risk assessment", figure: "22%", measures: "Share of surveyed firms that said they have an automated solution for risk assessment (74 firms registered; 54 with complete data were used for the statistical analysis; the report does not state the base for this chart). Survey run Jun-Aug 2025 by CPA.com and the AICPA; firms self-report", provenance: independent, source_ref: CPACOM-ATR-2025 }
   prerequisites:
-    - "Access to complete ledger and sub-ledger data from the client's systems. The AICPA/CPA.com report lists poor client data (60%) and no access to client systems (53%) among blockers to transformation (CPACOM-ATR-2025)"
-    - "Evaluation of the relevance and reliability of the data used. AFM treats input data as the second of its 12 building blocks (AFM-12BB-2025 p.2)"
+    - "Access to complete ledger and sub-ledger data from the client's systems. The AICPA/CPA.com survey ranks poor quality client data (60%) and lack of access to client information and systems (53%) among the top perceived blockers to audit transformation (CPACOM-ATR-2025 PDF p.8, report p.7)"
+    - "Evaluation of the relevance and reliability of the data used. AFM makes input data the second of its four layers of building blocks (AFM-12BB-2025 p.1)"
   risks_and_guardrails:
     - "31% of IFIAR members reported findings that a tool was not used as intended in 2024 (29% in 2023). Common findings were misinterpreted results and the extent of outlier testing (IFIAR-TTF-2025 p.5)"
     - "AFM bad practice: using a tool without evaluating the reliability of input data when the client's general IT controls are ineffective (AFM-12BB-2025 pp.16-17)"
@@ -220,7 +220,7 @@
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution (2025)", publisher: IFIAR Technology Task Force, type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: 2025-03-27, access: full, locator: "p.5, table of areas where ATTs are used; findings" }
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: innovation and audit quality 2026", publisher: IFIAR Technology Task Force, type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "pp.7, 9, 12 (Appendix A, predictive data analytics)" }
     - { ref: AFM-12BB-2025, title: "12 building blocks for controlled use of auditing tools", publisher: Autoriteit Financiele Markten, type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: 2025-12, access: full, locator: "pp.16-17, 27" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com / AICPA, type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "PDF p.10 (report p.9); p.28 (method)" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: CPA.com / AICPA, type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "PDF p.8 (blockers); p.10 (automated solutions); p.28 (method); report page = PDF page minus 1" }
     - { ref: PCAOB-TAA-2024, title: "Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: PCAOB, type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: 2024-06-12, access: full, locator: "printed pp.25, 32" }
     - { ref: NFRA-CAALLEY-2026, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: CAalley (reporting an NFRA staff paper), type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: 2026-07-24, access: full, locator: "section 'Professional scepticism cannot be delegated to technology'" }
   last_reviewed: 2026-10-16
@@ -515,11 +515,11 @@
   outcomes:
     - { lever: risk, description: "Context, not an outcome of this use case: findings for insufficient testing of IT general and application controls in inspected listed PIE audits", figure: "29, 50, 65, 55 and 39 findings in the 2021 to 2025 surveys respectively", measures: "Number of findings in the supplementary detail some IFIAR members provided under the internal control testing theme ('failure to sufficiently test information technology general and application controls'); not all members gave this detail. Concerns controls testing, so it is adjacent to this use case", provenance: independent, source_ref: IFIAR-SURVEY-2026 }
   prerequisites:
-    - "Reliable and relevant input data. AFM building block 2 and its Annex references to ISA 315 paras 25-26 and Appendices 5 and 6 (AFM-12BB-2025 p.16)"
+    - "Reliable and relevant input data; an AFM footnote points to the Dutch adoption of ISA 315 (paras 25-26 and Annexes 5 and 6) on understanding IT and general IT controls (AFM-12BB-2025 p.16)"
     - "Follow-up of the IT auditor's findings before relying on a tool (AFM-12BB-2025 p.17)"
   risks_and_guardrails:
     - "AFM bad practice: insufficient follow-up of identified risks and of the IT auditor's findings, and no evaluation of the usability of input data where general IT controls are ineffective (AFM-12BB-2025 p.17)"
-    - "ISA (UK) 315 para 25 and 26 require understanding of the information system and the IT environment (printed pp.28 and 63 for the related tool examples)"
+    - "ISA (UK) 315 requires understanding of the information system and the IT environment (paras 25-26); A57 says the auditor may use automated tools to understand flows of transactions (printed p.28)"
     - "ACRA: understanding of the audited entity's IT environment is a foundation for risk assessment and the design of responses (ACRA-APG1-2025 p.12)"
   human_checkpoints:
     - "Auditor evaluates tool results against the IT auditor's findings (AFM-12BB-2025 p.17)"
@@ -549,7 +549,7 @@
   outcomes:
     - { lever: quality, description: "none published", figure: "none published", measures: "not applicable", provenance: independent, source_ref: AFM-12BB-2025 }
   prerequisites:
-    - "A firm inventory of approved tools and a policy on which audit phases tools may be used in (AFM-12BB-2025 p.19)"
+    - "A firm policy on which audit phases tools may be used in and which assertions or risks they address (AFM-12BB-2025 p.13)"
     - "Engagement partners who understand the tools, confirm they are firm-approved and check staff use them correctly (AICPA-PA-2026)"
   risks_and_guardrails:
     - "AFM: it is not always clear where and how GenAI has been applied in the audit process, and the auditor needs to know where it was used to take responsibility in review (AFM-12BB-2025 p.31)"
@@ -560,12 +560,12 @@
   role_evolution: "Engagement partners take on responsibility for understanding the tools used and confirming approval and correct use (AICPA-PA-2026). NFRA differentiates training by role: preparers, reviewers and engagement partners (NFRA-CAALLEY-2026)."
   evidence_grade: C
   sources:
-    - { ref: AFM-12BB-2025, title: "12 building blocks for controlled use of auditing tools", publisher: Autoriteit Financiele Markten, type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: 2025-12, access: full, locator: "pp.19, 23, 31" }
+    - { ref: AFM-12BB-2025, title: "12 building blocks for controlled use of auditing tools", publisher: Autoriteit Financiele Markten, type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: 2025-12, access: full, locator: "pp.13, 23, 31" }
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: innovation and audit quality 2026", publisher: IFIAR Technology Task Force, type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: 2026-04-20, access: full, locator: "p.7" }
     - { ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing", publisher: AICPA & CIMA, type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: 2026-10-13, access: full, locator: "section 'Use of AI-related technological resources by audit firms'" }
     - { ref: NFRA-CAALLEY-2026, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: CAalley (reporting an NFRA staff paper), type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: 2026-07-24, access: full, locator: "section 'Audit documentation and training to change'" }
   last_reviewed: 2026-10-16
-  notes: "C by this file's convention: AFM good practice at unnamed firms. This is a planning-governance step rather than AI doing the work; it is included because the module description covers audit strategy and planning and regulators ask for it. The AFM page numbers are PDF pages; p.19 is the policy building block (approximate, based on the report's building-block sections)."
+  notes: "C by this file's convention: AFM good practice at unnamed firms. This is a planning-governance step rather than AI doing the work; it is included because the module description covers audit strategy and planning and regulators ask for it."
 
 - id: assurance-planning-risk-assessment-16
   title: Continuous reassessment of risk during the audit using predictive analytics or real-time data
@@ -673,9 +673,9 @@
 
 ### Common pain points
 
-- **Prior-year reliance.** 85% of 54 US firms prioritise rolling binders forward to cut time, 79% assign the same staff, 60% carry forward the prior-year risk assessment, and 64% prioritise challenging last year's procedures in relation to risk assessment (CPACOM-ATR-2025 PDF p.14). The FRC's 2026 review names ineffective planning, over-reliance on prior-year approaches, unclear responsibilities and late involvement of senior reviewers and specialists as root causes needing remediation (CPIA-ARAQ-2026).
-- **Limited technology in risk-driven audit.** Fewer than a quarter of the 54 firms (22%) answered the question on benefits of automated risk assessment, and all of those using it reported a positive impact (CPACOM-ATR-2025 PDF p.20). 89% of firms report they are not using technology to enable substantive analytics (same page).
-- **Data access.** Among top blockers to transformation, 60% cite poor client data and 53% no access to client systems (CPACOM-ATR-2025, as recorded in the landscape; the blockers list is on a page not re-read).
+- **Prior-year reliance.** In the CPA.com survey of US firms, 85% say they prioritise rolling binders forward to cut time, 79% assigning the same staff as last year, 60% carrying forward the prior-year risk assessment, and 64% challenging last year's procedures in relation to risk assessment (CPACOM-ATR-2025 PDF p.14). The FRC's 2026 review names ineffective planning, over-reliance on prior-year approaches, unclear responsibilities and late involvement of senior reviewers and specialists as root causes needing remediation (CPIA-ARAQ-2026).
+- **Limited technology in risk-driven audit.** Fewer than a quarter of firms (22%) answered the question on benefits of automated risk assessment, and every respondent among those using it reported a positive impact (CPACOM-ATR-2025 PDF p.20). 89% of firms report they are not using technology to enable substantive analytics (same page).
+- **Data access.** In the CPA.com survey, the top perceived blockers to audit transformation were staff not trained (66%), poor quality client data (60%), and lack of access to client information and systems (53%) and budget constraints (53%) (CPACOM-ATR-2025 PDF p.8).
 - **Not knowing where GenAI was used.** The AFM found it is not always clear where and how GenAI has been applied in an audit (AFM-12BB-2025 p.31).
 - **Fee pressure on materiality and scoping.** PCAOB staff said inspections would evaluate significant year-over-year materiality changes and the scoping of multi-location audits (PCAOB-PRIORITIES-2024 p.5).
 - **Misread tool results.** The most frequent technology-related inspection findings are misinterpreting results and the extent of outlier testing (IFIAR-TTF-2025 p.5).
@@ -694,7 +694,7 @@
 | Failure to develop a group audit plan (scoping) | 3 findings in each of 2024 and 2025 | Supplementary detail provided by some members | IFIAR-SURVEY-2026 p.23 |
 | Average share of tool use in risk assessment | 28% (tests of details 51%) | Average across six Dutch PIE firms of how often tools are used in an area; areas overlap | AFM-12BB-2025 p.27 |
 | AI as a share of tool types available to staff | 3% (data analytics 32%) | Average percentage across PIE firms for each type of tool available to staff | AFM-12BB-2025 p.27 |
-| US firms with an automated solution for risk assessment | 22% | Of 54 firms with complete data, self-reported | CPACOM-ATR-2025 PDF p.10 |
+| US firms with an automated solution for risk assessment | 22% | Share of surveyed firms (74 registered, 54 with complete data; base for the chart not stated), self-reported | CPACOM-ATR-2025 PDF p.10 |
 | US firms with automated substantive analytics | 11% | Same | CPACOM-ATR-2025 PDF p.10 |
 | Firms with a formal monitoring of tool quality impact | none among six largest UK firms | FRC found no formal monitoring performed to quantify the audit quality impact of tools | FRC-ATT-2025, section "Monitoring the use and impact of ATTs" |
 | Restatement prediction by multi-agent risk scorer | AUROC 0.782; PR-AUC 0.341; ECE 0.052 | 3,200 US firm-years, label is restatement | ARXIV-UMAR-2026 |
@@ -707,8 +707,8 @@ No independent measure was found of error rates, override rates or parallel-run 
 
 - **FRC risk taxonomy.** Deficient output, misuse of output (misinterpretation, misunderstanding of methodology) and non-compliant methodology; mitigated by system design, certification, staff education and human-in-the-loop review (FRC-GENAI-2026 pp.18–19). Outputs need not match the persuasiveness of the procedure they replace as long as the methodology does not overstate it (p.19).
 - **Certification and monitoring.** The six largest UK firms mostly had certification processes but were still updating them for AI and developing ways to monitor tool use and quality impact (FRC-ATT-2025).
-- **IFIAR.** Four asks to firms: monitor impact, prioritise high-impact tools, govern GenAI, keep humans in control (IFIAR-TTF-2025 pp.6–8). The 2026 report adds suggested monitoring metrics (engagement coverage, false-positive and false-negative rates against a manual sample, rework rates, escalation incidence) and benchmarking of tool-driven results against traditional methods (IFIAR-TTF-2026 pp.8–9). It also asks for early engagement with regulators where technology significantly alters the work.
-- **AFM.** Twelve building blocks. The lower three layers (foundations, input data, controlled implementation) must be in place before deploying GenAI (AFM-12BB-2025 p.2). Tool conditions for risk assessment may differ from those for evidence (p.23).
+- **IFIAR.** Four asks to firms: monitor impact, prioritise high-impact tools, govern GenAI, keep humans in control (IFIAR-TTF-2025 pp.6–8). The 2026 report adds suggested monitoring metrics (engagement coverage, false-positive and false-negative rates against a manual sample, rework rates, escalation incidence) and benchmarking of tool-driven results against traditional methods (IFIAR-TTF-2026 pp.8–9). It also asks for early engagement with regulators where technology may significantly alter the work (p.4).
+- **AFM.** Twelve building blocks. The lower three layers (foundation, input data, controlled implementation of tools) must be in place before deploying GenAI (AFM-12BB-2025 p.1). Tool conditions for risk assessment may differ from those for evidence (p.23).
 - **NFRA (as reported).** No lower evidentiary bar for technology-generated information; do not accept a tool's low-risk classification without periodic testing; vendor claims need independent evaluation; revalidate on material model or vendor change (NFRA-CAALLEY-2026).
 - **PCAOB.** Staff outreach in 2024 found firms did not view PCAOB standards as an impediment to GenAI (PCAOB-GENAI-2024 p.4). Release 2024-007 says it does not address AI (p.5).
 - **AICPA.** Part 1 of the practice aid on the entity's AI use; Part 2 on firm use of AI tools under quality management; disclosure of AI use in the engagement letter is not required by AICPA standards but may be by state law or firm policy (CFODIVE-AICPA-2026).
@@ -724,6 +724,7 @@ No independent measure was found of error rates, override rates or parallel-run 
 - **2026-09-22:** MindBridge announces Agentic Risk Assessment (MINDBRIDGE-ARA-2026). **2026-06-24:** Deloitte unifies agents in Omnia, including agents that analyse information to identify potential risk factors (DELOITTE-OMNIA-2026). **2026-07-28:** Caseware shows a planning-review agent scenario (CASEWARE-VERITY-2026).
 - **2025-10-28 and 2026-10-07:** PwC said it planned a risk assessment tool "soon" (Oct 2025); the Oct 2026 article lists other tools and names no risk assessment tool (PWC-AT-2025; CFODIVE-PWC-2026).
 - **2026-07-24:** NFRA staff paper on technology principles, including planning and risk assessment (NFRA-CAALLEY-2026).
+- **2026-05-08:** a research session at the Deloitte/KU Auditing Symposium covered how the apparent size of an effect changes auditors' causal and sceptical judgements of AI-detected correlations (agenda title only; the paper was not read) (KU-SYMPOSIUM-2026).
 - **2026-09-26:** FinancialAuditBench (90 workpaper completion and review tasks across six synthetic engagements, 11 frontier models) reports that agents complete much staff-level work well but sometimes perform inappropriate procedures or write incorrect documentation (ARXIV-FAB-2026). It covers workpaper completion and review, not risk assessment specifically.
 
 ### Workforce and role effects
@@ -739,7 +740,7 @@ No independent measure was found of error rates, override rates or parallel-run 
 ### Objections and concerns practitioners raise
 
 - Chatbots cannot do what a risk assessment requires: no inquiry, observation or deep entity knowledge, and their answers differ by model (ICAEW-PIERPOINT-2025).
-- Automation bias and over-reliance. ICAEW's technology faculty chair was disappointed the FRC guidance covers automation bias in "a single paragraph" (ICAEW-FRCVIEW-2026, quoting the chair; the FRC guidance mentions it at several points, for example pp.46 and 35 per the chair). IFIAR flags a decline in professional scepticism (IFIAR-TTF-2025 p.7).
+- Automation bias and over-reliance. The chair of ICAEW's Technology Faculty Board said he was disappointed that the FRC guidance gives automation bias a single paragraph on page 35 (ICAEW-FRCVIEW-2026). The guidance also mentions it in its training and oversight passages and in example 1 (FRC-GENAI-2026 pp.38 and 46). IFIAR flags a decline in professional scepticism as a GenAI risk (IFIAR-TTF-2025 p.7).
 - Smaller firms lack central technology and methodology teams and depend on vendors; the FRC guidance gives them little (ICAEW-FRCVIEW-2026).
 - Many tools are features added to existing products, so firms need questions to ask vendors (ICAEW-FRCVIEW-2026).
 - The probabilistic nature of GenAI means no tool can be guaranteed to give the needed output every time, so a rules-based tool may be needed alongside it (RSM UK's audit data analytics director, in ICAEW-FRCVIEW-2026).
@@ -864,7 +865,6 @@ Notes on reading depth. The FRC guidance, IFIAR reports, ISA (UK) 315 and 240, P
 - **Evidence on AI for budgeting and staffing the engagement.** The landscape lists RSM's AI staffing tool (CAQ-RSM-2026, "Luca Resourcing"). The CAQ blog URL could not be recovered and the post was not re-opened here, so no use case was written. No governance or evidence-angle source on AI in budgeting was found.
 - **Evidence on AI in group audit scoping and component risk.** No source reported AI use here. IFIAR's group-audit scoping findings are small (3 in each of 2024 and 2025) and unrelated to AI.
 - **Named customers for MindBridge Agentic Risk Assessment** and any firm using a risk assessment agent in production. PwC's Oct 2025 "soon" was not confirmed.
-- **Independent evidence for the CPA.com blockers list** (60% poor client data, 53% no system access). It appears in the landscape's reading of the report and was not re-read on its page here.
 
 **Corrections and cautions on the landscape and pilot**
 
