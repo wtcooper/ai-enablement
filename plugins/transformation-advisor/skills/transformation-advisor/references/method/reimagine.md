@@ -183,14 +183,16 @@ Tags: **[T]** team scope, **[U/O]** unit or organization scope. Stage notes in i
 ## 7. Worked example: controls testing
 
 *Setting (illustrative):* continuing the audit partner's regional practice from `onboarding.md` and
-`frame.md` (stage: Experimenting). Map and Diagnose found that matching client evidence to selected samples
-and manager review take most hours, and that review is the bottleneck. Evidence ids are from
+`frame.md` (stage: Experimenting). Diagnose shortlisted manager review (the constraint), evidence requests
+and chasing, attribute testing on mixed-format evidence (only together with review), and the walkthrough
+refresh (`diagnose.md`). Evidence ids are from
 `../archetypes/assurance/use-cases/controls-testing.yaml`; `#07` means `assurance-controls-testing-07`.
 
 | Lens | Option | `ladder` / `change_scope` | Evidence |
 |---|---|---|---|
 | 1 Improve | AI secondary review: models check a workpaper for missing evidence before the manager sees it | augment / step | `#10`, grade B, qualitative only |
 | 1 Improve | Walkthrough narrative drafted from last year's file, with changes flagged | augment / step | `#01`, grade B; PwC calls year-one savings "not that drastic yet" |
+| 1 Improve | Agent checks evidence submissions against the request before testing | augment / step | `#03`, grade C, vendor claim; clearer request templates come first and need no AI |
 | 2 Automate | The firm's evidence-matching tool on every engagement: documents matched to samples, mismatches to the auditor | automate / step | `#07`, grade B; 16 h to 5–6 h per engagement at one firm, mostly substantive work, self-reported |
 | 2 Automate | Full-population test of one transactional control instead of a sample | automate / process | `#08`, grade A |
 | 3 Delegate | Platform agent tests a defined control set and drafts the workpaper; reviewer signs every conclusion | delegate / process | `#16`, grade B, piloting. Target picture only: the delegation gates in `onboarding.md` fail at Experimenting |

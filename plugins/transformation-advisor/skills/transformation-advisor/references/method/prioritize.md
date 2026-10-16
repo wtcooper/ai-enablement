@@ -205,11 +205,13 @@ illustrative; evidence ids are from `../archetypes/assurance/use-cases/controls-
 | Option | V | F | D | R | T | S | Weighted | Category |
 |---|---|---|---|---|---|---|---|---|
 | F1 Standard review checklist and attribute templates for the ten most common control types | 2 | 5 | 4 | 5 | 4 | 4 | 3.80 | foundation (`ct-07`, `ct-10`, `ct-08` depend on it) |
+| Rewrite evidence-request templates for the top chase reasons (no AI) | 3 | 5 | 5 | 5 | 5 | 3 | 4.20 | quick win |
 | Roll forward unchanged walkthroughs (no AI) | 3 | 5 | 5 | 4 | 5 | 3 | 4.00 | quick win |
 | `ct-07` Evidence matching on every engagement (`#07`, grade B) | 4 | 4 | 4 | 4 | 4 | 4 | 4.00 | quick win |
 | `ct-10` AI secondary review before the manager (`#10`, grade B) | 3 | 4 | 4 | 4 | 5 | 4 | 3.75 | quick win (after F1) |
 | `ct-08` Full-population test of one transactional control (`#08`, grade A) | 4 | 3 | 2 | 3 | 3 | 4 | 3.25 | big bet |
 | `ct-01` Walkthrough drafting with change flags (`#01`, grade B) | 3 | 4 | 3 | 4 | 4 | 3 | 3.45 | park: revisit once roll-forward shows what is left |
+| `ct-03` Agent pre-checks evidence submissions (`#03`, grade C) | 3 | 3 | 3 | 4 | 3 | 3 | 3.20 | park: revisit if chasing stays high after the template rewrite |
 | `ct-16` Platform agent tests a control set (`#16`) | — | — | — | — | — | — | — | park: stage gate; target picture until delegation gates hold |
 | `ct-20` Controls work sold as platform plus review (`#20`) | — | — | — | — | — | — | — | park: stage gate; revisit at the mid-point review |
 
@@ -220,7 +222,7 @@ quality 10–30% fewer review notes on missing evidence, no published measure ye
 *Assumptions that would change the order:* matching hours per engagement in the time records; added review
 time per engagement; and whether clients ask for lower fixed fees once savings are visible.
 
-*Sequence:* F1 and the roll-forward start now; `ct-07` runs on the next five engagements with a
+*Sequence:* F1, the template rewrite and the roll-forward start now; `ct-07` runs on the next five engagements with a
 re-performed sample, then on all; `ct-10` follows F1; `ct-08` is planned for one client with clean data next
 season; the parked delegate and model options come back at the quarterly review once `ct-07` is owned and
 measured.
