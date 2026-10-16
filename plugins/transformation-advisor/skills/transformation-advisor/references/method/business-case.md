@@ -108,8 +108,8 @@ of AI operating cost (self-reported) [KPMG-2026], so plan how cost per use case 
 
 ### 3.5 Risk adjustment and option value
 
-Show unadjusted and risk-adjusted benefit; state the adjustment (for example, "high case requires the
-external auditor to accept agent workpapers; not assumed in the low case"). Report options the work unlocks
+Show unadjusted and risk-adjusted benefit; state the adjustment (for example, "the high case assumes 90% of
+engagements adopt in the first season; the low case assumes 60%"). Report options the work unlocks
 (a reusable component, a new service) separately, never inside base benefit [FORRESTER-TEI]. Report
 intangibles as intangibles rather than forcing them into money [ROIINST-2014].
 
@@ -219,7 +219,8 @@ One-page case for `ct-07` in the audit partner's practice (continuing `prioritiz
 - **Risks and checkpoints:** matches accepted without review (track re-performance results and override
   rate); clients ask for lower fixed fees once savings show (decide the fee stance before the season); 31% of
   IFIAR member regulators reported finding audit tools "not used as intended" (2024, cited in the module),
-  so write down how the tool is to be used. Checkpoints: auditor signs off every exception and the test; reviewer re-performs a sample.
+  so write down how the tool is to be used. Checkpoints: the auditor signs off every exception and the
+  test; the reviewer re-performs a sample.
 - **Role evolution:** tasks moving: vouching documents to samples, a junior training task. New work:
   investigating mismatches, earlier risk work. Juniors keep learning through explain-back on a sample of
   matches (see `people-and-change.md`).

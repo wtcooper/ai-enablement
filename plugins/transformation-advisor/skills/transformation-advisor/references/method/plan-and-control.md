@@ -193,8 +193,9 @@ Continuing the audit partner's practice (team-level plan; at unit scope the same
   we don't, what we commit to" note (`people-and-change.md`); the pilot lead pulls last season's matching
   hours from time records for five engagements; a senior manager drafts the review checklist for the three
   most common control types (F1).
-- **30 days:** F1 covers ten control types; `ct-07` runs on five engagements with a re-performed sample;
-  roll-forward rule written into the methodology note; two-hour training for staff.
+- **30 days:** F1 covers ten control types; evidence-request templates rewritten for the top chase reasons;
+  `ct-07` runs on five engagements with a re-performed sample; roll-forward rule written into the
+  methodology note; two-hour training for staff.
 - **60 days:** go/no-go on `ct-07`; extend to all engagements if met; `ct-10` starts on files that use F1.
 - **90 days:** value review against the case; choose the client for `ct-08`; re-check the stage against the
   Adopting markers (one workflow with an owner, a baseline, a human-check design and an approved tool).
