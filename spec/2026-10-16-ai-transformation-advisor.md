@@ -1,206 +1,241 @@
 # Spec: AI transformation advisor (v1)
 
-From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 3)
+From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 4)
 
 > This spec, the intent and `plan/` are how *we* build the plugin. None of that build process shows up
 > in the product. This document says **what** v1 does and the rules it follows. Background reasoning
-> is in [`docs/brainstorm/`](../docs/brainstorm/).
+> is in [`docs/brainstorm/`](../docs/brainstorm/) and [`docs/research/`](../docs/research/).
 
 ---
 
 ## 1. Summary
 
-A portable **Agent Plugin** that guides a *program lead* (a head of AI or business-unit leader) and
-their *team delegates* through a top-down AI transformation of a business unit:
+A portable **Agent Plugin** with one skill, `transformation-advisor`. It guides anyone, from a team
+lead to an audit partner to a head of AI, through transforming how their part of the business works
+with AI.
 
-- The **lead** frames the ambition, splits the unit into pillars and teams, and writes a **charter**.
-- Each **delegate** runs guided discovery for their team, and the agent writes them a **team
-  transformation plan**.
-- The **lead** combines the team plans into a scored **portfolio** and a **roadmap** (a 100-day plan
-  and a value creation plan).
+The product rests on **two pillars**. Both must be expert-grade.
 
-The method uses the private-equity value-creation program structure for the lead and lean / Six
-Sigma practice for team discovery. Users only ever hear plain language. A common **backbone**
-provides the method and general knowledge. Optional **domain packs** add depth for specific kinds
-of business. The organization's own content lives in an **overlay** inside its workspace, never in
-the plugin.
+1. **The transformation workflow.** A single loop of reasoning that works at any level of the
+   hierarchy (individual, team, function, business unit, organization):
+   - The agent **onboards** the user: who they are, what kind of business they are in, how far along
+     they are with AI, and what they need.
+   - It **adapts** the path to that profile.
+   - It then guides them through **frame → map → diagnose → reimagine → prioritize → make the case →
+     plan**.
+   - At higher levels, the same loop **breaks the scope into units** and **rolls up** the units' plans.
+2. **Business archetypes.** Deep, researched knowledge of specific kinds of business:
+   - its value chain and economics
+   - how AI is actually being used there today, and where the field is heading
+   - its regulations, workforce effects and disruption risks
+   - how to interview someone from that business
 
-**Design principle: progressive disclosure, in coherent skills.**
+   This content is built by a large fan-out of research subagents (§11). It is never generic filler.
 
-- Four skills: a front door plus one per job (program lead, team plan, explore).
-- Each flow skill's `SKILL.md` is itself the phase checklist, with a few references of its own.
-- A shared library (method, patterns, function cards, packs) sits at plugin level and is reached
-  through short index files.
-- The evidence behind this structure is in
-  [`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md).
+The method uses lean and Six Sigma practice inside processes and the private-equity value-creation
+structure at program level. Users only ever hear plain language. The organization's own content
+lives in an **overlay** in its workspace, never in the plugin.
 
 ## 2. Scope
 
 **In v1**
 
-- One skills-only plugin (four skills and a shared library) that conforms to Agent Plugins 1.0. It installs from this repo's GitHub
-  marketplace, with installation verified in the target clients (§7.4).
-- Program lead flow, team delegate flow, and a light "explore" entry for inspiration.
-- A file-based program workspace that can live wherever the organization keeps information. A GitHub
-  repo is the default example.
-- Backbone knowledge: the method, the ladder, work archetypes, agentic patterns, function cards,
-  the value tree and scoring, and people and change.
-- Domain packs: **professional-services**, **assurance** and **tax**, filled with researched public
-  use cases (§11).
-- Subagent delegation described in tool-agnostic wording, with an inline fallback (§7.3).
+- One skills-only plugin that conforms to Agent Plugins 1.0. It installs from this repo's GitHub
+  marketplace, with installation verified in the target clients (§7.5).
+- One skill: onboarding, adaptive path, transformation loop at any level, breaking down and
+  rolling up, and an inspiration mode for users early in their journey.
+- A file-based workspace that can live wherever the organization keeps information. A GitHub repo is
+  the default example.
+- **Method content** grounded in deep research on transformation practice (§11, stream M).
+- **Business archetypes:** professional services (the base), assurance, and tax. Each is researched in
+  depth (§11, stream A).
+- **Backbone library:** work types, agentic patterns, runtime classes and function cards (§11,
+  stream B).
+- Subagent delegation in tool-agnostic wording, with an inline fallback (§7.4).
 - An eval suite.
 
 **Not in v1**
 
 - Any backend, MCP server, telemetry or central library.
-- Organization-specific content of any kind in the plugin repo.
+- Organization-specific content in the plugin repo.
 - Approval or review workflows inside the product.
-- Tool-specific agent definitions (for example `agents/*.md` or `.agent.md`).
+- Tool-specific agent definitions.
 - Deal-team or due-diligence mode.
-- Individual-contributor mode as a separate flow.
 - Output to docs, slides or tickets. v1 writes markdown and YAML only.
 - Building the automations that are recommended.
 
-## 3. Users and entry
+## 3. Onboarding and adaptation
 
-| Role | Goal | Main outputs |
+### 3.1 Onboarding: building the profile
+
+Onboarding is a short, conversational interview of about 5–10 questions, asked one at a time. Each
+answer shapes the next question. It produces a **profile**, which is saved in the plan's frontmatter
+(§5.3).
+
+| Profile element | What the agent finds out | Example |
 |---|---|---|
-| **Program lead** | Transform a business unit top-down | `charter.md`, team briefs, `portfolio.md` / `portfolio.yaml`, `roadmap.md` |
-| **Team delegate** | Get a transformation plan for their team and start acting on it | `transformation-plan.md`, `opportunities.yaml` |
-| **Explorer** (anyone) | See what's possible before committing | No files required |
+| **Role and scope** | Who the user is and what they are responsible for: individual, team, function, business unit or whole organization | An audit partner responsible for a regional practice |
+| **Business archetype** | What kind of business it is, matched to an archetype and its modules (§6.8). If nothing matches, the closest base archetype plus function cards; optionally a provisional profile researched on the spot (§7.4) | Assurance → external audit of public companies, with controls testing and substantive testing as focus modules |
+| **Journey stage** | How far along the scope is with AI (§6.7) | "Experimenting": individual use of chat tools, no shared workflows |
+| **Goals and pressures** | Why now: margin, growth, talent, quality, client demand, competitors, regulation | Fee pressure on audits, staff shortages, inspection findings |
+| **Constraints** | Regulation, independence, client confidentiality, data limits, risk appetite | Independence rules, firm policy on client data in AI tools |
+| **Tools and data** | AI tools available (or the overlay catalog), core systems, data quality | An enterprise chat assistant, an audit platform, a data-analytics tool |
+| **What they want from the session** | Quick wins, a full plan, a case for leadership, or just "show me what's possible" | A plan to take to the practice's leadership team |
 
-**Entry triage** (the `start` skill; each flow skill also runs the same check if invoked directly).
-The agent first looks for a workspace in the working folder.
+The agent plays the profile back for confirmation. It can be edited at any time.
 
-- **No `charter.md` found:** ask whether the user is setting up a program (lead flow), working on one
-  team without a program (team flow with default settings), or just exploring.
-- **`charter.md` found:** ask which role the user has.
-  - A *delegate* is matched to their pillar and team in the charter.
-  - If a plan is already in progress, **resume** from its `phase_completed`.
+### 3.2 Adaptation
 
-## 4. Experience flows
+The profile sets the path through the loop:
 
-### 4.1 Conversation rules (all flows)
+| Journey stage | Emphasis |
+|---|---|
+| **Curious** | Start with an inspiration tour of real examples from the archetype. Explain the ladder (§6.2). Aim for two or three quick wins with existing tools. Keep mapping light |
+| **Experimenting** | Move from individual use to shared team workflows. Find repeatable high-volume steps. Build the case for the first augmented or automated workflows |
+| **Adopting** | Full loop. Focus on the processes behind real operations, data readiness, controls, and the first delegated (agentic) workflows |
+| **Scaling** | Portfolio thinking. Platforms and capabilities several workflows can share. Operating model, governance, measuring value |
+| **AI-native** | Reinvention. Business-model exposure, new services, pricing, AI-native competitors, workforce redesign |
 
-- Ask **one question at a time**. Play back what was heard before moving on.
-- Use **plain language**. Method terms are never required of the user. They may appear in an output,
-  explained in one line.
-- **Adapt depth** to the user's answers. Skip what is already known. Go deeper where pain or value is
-  high.
-- **Show progress.** Name the current phase and what comes next.
-- **Write as you go.** Save each phase to the workspace, so a session can stop and resume.
-- **Pull examples in early.** Show relevant use cases from the start, not only at the end.
+| Scope | Adaptation |
+|---|---|
+| **Individual or team** | The loop runs on specific processes and steps. Output: a team transformation plan with "start this week" actions |
+| **Function or business unit** | The loop first runs on the value chain. Map breaks the scope into units. Units are planned in depth (by delegates, by the user, or as a first-pass desk review). The results are rolled up |
+| **Organization** | Same as a business unit, plus business-model exposure, a value tree, a 100-day plan and a value creation plan |
+
+**Resume.** If the working folder has a plan, the agent reads its state (`phase_completed`,
+`next_phase`) and offers to continue.
+
+## 4. The transformation workflow
+
+### 4.1 One loop, any level
+
+| Phase | Purpose | At team level | At unit or organization level |
+|---|---|---|---|
+| **0. Onboard** | Profile and adapted path (§3) | — | — |
+| **1. Frame** | Ambition, why now, what success looks like, value levers | Team goals and pain points | Ambition, **business-model exposure**, value tree and scoring weights (the settings children inherit) |
+| **2. Map** | Make the current work visible | Processes: trigger → steps → handoffs → output, with volumes, time, systems and rework | Value chain and units. **Break down:** create a unit for each part that needs its own plan |
+| **3. Diagnose** | Find where value leaks | Waste, bottlenecks, variation, rework; work type per step | Outside-in heatmap per unit: size, work-type mix, AI exposure, strategic weight, readiness. Choose which units go first |
+| **4. Reimagine** | Generate options through four lenses (§4.2) | For each high-value step | For each unit or value-chain stage, including new services and pricing |
+| **5. Prioritize** | Score and sort into quick win, foundation, big bet or park. Sequence by dependencies | Team opportunities | **Roll up** the units' plans: remove duplicates, find shared platforms, combine value along the value tree |
+| **6. Make the case** | Value as ranges with assumptions, risks, human checkpoints, **role evolution** | Top three to five | Top initiatives and the portfolio as a whole |
+| **7. Plan** | Actions, owners, KPIs, control plan, rhythm | "Start this week" plus a 30/60/90-day plan | A 100-day plan, a value creation plan and a review cadence |
+
+### 4.2 The four lenses of Reimagine
+
+The agent goes through these lenses in order, so it doesn't stop at personal efficiency:
+
+1. **Improve the step.** Assist or augment the people doing the work.
+2. **Automate the flow.** Remove people from the normal path, and send exceptions to people.
+3. **Delegate the outcome.** An agent owns a multi-step outcome, with human checkpoints.
+4. **Reinvent the work.** Should this process exist at all? What would an AI-native competitor do?
+   What new service or pricing model becomes possible?
+
+Each lens draws on the archetype's use cases and frontier signals, and on the pattern library.
+
+### 4.3 Breaking down and rolling up
+
+- **Break down.** In the Map phase at higher levels, the agent creates a child **unit** for each part
+  that needs a deeper plan. Each unit gets its own folder with a one-page brief. The brief includes
+  the settings it inherits, what to prepare, and how to run the plugin.
+- **Planning units.** Each unit runs the same loop, starting from its brief. Three ways to run it:
+  - **Delegates** (the head-of-AI top-down case) each run the plugin for their unit.
+  - The **same user** goes deeper, one unit at a time.
+  - The agent runs a **first-pass desk review** of each unit in parallel subagents, using the archetype
+    knowledge. The result is clearly labelled as a draft to validate with the people who do the work.
+- **Roll-up** reads every child unit's opportunities, which subagents work through one unit each in
+  parallel. It then merges them into the parent's Prioritize phase.
+
+### 4.4 Conversation rules
+
+- Ask **one question at a time**. Play back what was heard.
+- Use **plain language**. Method terms are optional, explained in one line when used.
+- **Adapt depth.** Skip what is known. Go deep where pain or value is high.
+- **Show progress.** Name the phase and what comes next.
+- **Write as you go.** Save after every phase. State lives in the plan file.
+- **Bring evidence in early.** Use real archetype examples, with evidence grades, from onboarding
+  onward.
+- **Use expert moves.** Each phase reference gives the probing questions, heuristics and common traps
+  an experienced transformation lead would use (§6.1).
 - **Be candid about people** (§9).
 
-### 4.2 Program lead flow
-
-| Phase | Purpose | Produces |
-|---|---|---|
-| **1. Ambition** | Why transform. What "good" looks like in 12–24 months. Constraints. **Business-model exposure**: where AI threatens or reshapes how the unit earns money | Charter: ambition and exposure |
-| **2. Structure** | Split the unit into pillars and teams. Name a delegate for each team. Choose which packs apply | Charter: pillars, teams, packs |
-| **3. Outside-in diagnostic** | For each pillar, estimate size, work-archetype mix, AI exposure, strategic weight and readiness. Choose **discovery waves**: which pillars go first | Charter: heatmap and waves |
-| **4. Value tree and rules** | Choose and weight value levers. Adjust scoring weights. Set guardrails. Point to the overlay's tool catalog | Charter: value tree, scoring, guardrails |
-| **5. Launch** | Generate a one-page **team brief** per team: what to prepare, how to install and run the plugin, where to save the plan, and when it is due | `teams/<pillar>/<team>/brief.md` |
-| **6. Synthesize** | Combine the team plans that exist. Remove duplicates, find shared platforms and dependencies, roll value up the value tree, and sort into quick wins, foundations and big bets | `portfolio.md`, `portfolio.yaml` |
-| **7. Roadmap** | A 100-day plan (quick wins, foundations, governance). A value creation plan (initiatives tied to levers, owners, KPIs, baselines, targets). A review cadence | `roadmap.md` |
-| **8. Refresh** (repeat) | Update progress against KPIs. Re-prioritize. Start the next wave | Updated portfolio and roadmap |
-
-### 4.3 Team delegate flow
-
-| Phase | Purpose | Produces |
-|---|---|---|
-| **0. Orient** | Read the charter, if one exists. Confirm the team, scope and timing. Explain how the session works | — |
-| **1. Frame** | The team's purpose, customers, outputs, pain points, and what success means | Plan: frame |
-| **2. Map** | Walk the main processes: trigger → steps → handoffs → output, with volumes, time, systems, decisions and rework. Documents can be analyzed in parallel by subagents (§7.3) | Plan: process maps |
-| **3. Diagnose** | Find waste, the bottleneck, and failure points. Tag each step with its work archetype | Plan: diagnosis |
-| **4. Imagine** | For each high-value step, find patterns and examples, gathered by subagents in parallel (§7.3). Ask "what would an AI-native competitor do?" Place ideas on the ladder | Draft opportunities |
-| **5. Prioritize** | Score with the charter's rubric, or the default one. Sort into quick win, foundation, big bet or park | `opportunities.yaml` |
-| **6. Make the case** | For the top three to five: value as ranges with assumptions, prerequisites, risks, human checkpoints, and **role evolution** | Plan: business cases |
-| **7. Plan and share** | A **"start this week"** list the team can act on now with the tools it already has. A 30/60/90-day plan. A control plan (metrics, baselines, evals, checkpoints). Mark the plan `complete`. Explain where to save or share it so the program lead can include it | Plan: actions, control, next steps |
-
-The team plan is useful to the team **on its own**. It is not only an input to the lead's portfolio.
-
-### 4.4 Explore (light)
-
-Browse use cases and patterns by function, pack, work archetype or ladder level. Explain one example
-in depth. Offer to start a team plan or a program. This is what replaces the old "art of the
-possible" mode.
-
-## 5. Program workspace (file protocol)
+## 5. Workspace (file protocol)
 
 ### 5.1 Principles
 
 - **Store anywhere.** The workspace is a plain folder of markdown and YAML. The plugin only reads and
-  writes local files and never calls a storage API. It can live wherever the organization keeps
-  information: a git repo, SharePoint, OneDrive, Google Drive or a shared drive.
-- **GitHub by default.** This repo provides a workspace template (`templates/workspace/`). A lead who
-  uses GitHub creates the program repo from it, and delegates work in a clone. Nothing in the plugin
+  writes local files. It can live in a git repo, SharePoint, OneDrive, Google Drive or a shared drive.
+- **GitHub by default.** This repo provides a workspace template (`templates/workspace/`). Nothing
   depends on git.
-- **Sharing is the user's choice.** At the end of each flow the agent says which files to share and
-  suggests how, based on what it can see (for example "commit and push" in a git folder, otherwise
-  "copy this folder to your program's shared location"). There is **no approval step** in the product.
-- **Works without a program.** With no charter, the team flow writes a plan in the current folder
-  using default settings. A lead can bring it into a program later.
+- **Sharing is the user's choice.** At the end of each session the agent says which files to share
+  and suggests how. There is **no approval step** in the product.
 - **Confidentiality.** The agent reminds users once per session not to add client-confidential data
   or personal information beyond names and roles.
 
-### 5.2 Layout
+### 5.2 Layout (recursive)
 
 ```
-<program-workspace>/
-├── charter.md
-├── overlay/                      # optional organization-specific content (§6.9)
-│   ├── tool-catalog.yaml
-│   ├── glossary.md
-│   ├── guardrails.md
-│   ├── use-cases.yaml
-│   └── packs/<id>/               # optional private packs, same anatomy as plugin packs
-├── teams/
-│   └── <pillar-id>/<team-id>/
-│       ├── brief.md
-│       ├── transformation-plan.md
-│       ├── opportunities.yaml
-│       └── evidence/
-├── portfolio.md
-├── portfolio.yaml
-└── roadmap.md
+<workspace>/
+├── transformation-plan.md        # the top scope, at whatever level the user started
+├── opportunities.yaml
+├── overlay/                      # optional organization-specific content (§6.10)
+├── evidence/                     # documents the user provided
+└── units/
+    └── <unit-id>/                # one child scope created by Break down; same files, recursively
+        ├── brief.md
+        ├── transformation-plan.md
+        ├── opportunities.yaml
+        ├── evidence/
+        └── units/…
 ```
 
-### 5.3 Schemas (required fields; full schemas live in `references/schemas/`)
+There is no separate charter. The top plan's **settings** (value levers, scoring weights,
+guardrails, archetype) are inherited by every child unit, unless the unit overrides them.
 
-**`charter.md` frontmatter**
+### 5.3 Schemas (required fields; full schemas in the skill's `schemas/`)
+
+**`transformation-plan.md` frontmatter**
 
 ```yaml
-schema: charter/v1
-program: string
-lead: { name, role }
-version: int                       # bump on change; team plans record which version they used
-horizon_months: int
-ambition: string
-pillars:
-  - id, name, owner
-    teams: [ { id, name, delegate, wave } ]
-packs: [ professional-services, tax ]
-value_levers: [ { id, name, metric, weight } ]       # weights sum to 1
-scoring_weights: { value, feasibility, data_readiness, risk, time_to_value, strategic_fit }
-guardrails: [ string ]
-overlay: overlay/                  # optional
+schema: plan/v1
+scope: { name, level: individual | team | function | business-unit | organization, parent: path | null }
+author: { name, role }
+profile:
+  archetype: id                   # e.g. assurance
+  modules: [ id ]                 # e.g. [ controls-testing, substantive-testing ]
+  journey_stage: curious | experimenting | adopting | scaling | ai-native
+  goals: [ string ]
+  constraints: [ string ]
+  tools: [ string ]
+  session_goal: string
+settings:                         # set at the top level, inherited by children
+  value_levers: [ { id, name, metric, weight } ]
+  scoring_weights: { value, feasibility, data_readiness, risk, time_to_value, strategic_fit }
+  guardrails: [ string ]
+  overlay: overlay/ | null
+units: [ { id, name, owner, wave, status } ]      # present after Break down
+status: in-progress | complete
+phase_completed: 0–7
+next_phase: 0–7 | null
+updated: date
 ```
+
+The body has one section per phase and starts with a one-screen summary and a progress checklist.
 
 **`opportunities.yaml`**
 
 ```yaml
 schema: opportunities/v1
-program, pillar, team, charter_version   # program fields are null in single-team mode
+scope: path
 items:
-  - id: string                     # <team-id>-NN
+  - id: string
     title: string
     process: string
-    work_archetypes: [ id ]
+    work_types: [ id ]
     pattern: id
+    lens: improve | automate | delegate | reinvent
     ladder: assist | augment | automate | delegate | reinvent
     runtime_class: id
-    description: string            # today → future, two or three sentences
+    description: string            # today → future
     value: [ { lever, low, high, unit, assumptions } ]
     scores: { value, feasibility, data_readiness, risk, time_to_value, strategic_fit }   # 1–5
     weighted_score: number
@@ -209,35 +244,56 @@ items:
     risks: [ string ]
     human_checkpoints: [ string ]
     role_evolution: { tasks_moving, new_work, capacity_use }
-    related_use_cases: [ id ]
+    evidence: [ use_case_id ]      # archetype or overlay use cases that support it
+    rolled_up_from: [ path ]       # set by Roll-up
     next_step: { action, owner, by }
 ```
 
-**`transformation-plan.md` frontmatter**: `schema: team-plan/v1`, `program`, `pillar`, `team`,
-`author`, `charter_version`, `status: in-progress | complete`, `phase_completed: 0–7`, `updated`. The
-body has one section per phase, and starts with a one-screen summary.
+## 6. Knowledge model
 
-**`portfolio.yaml`** combines the opportunity items and adds `portfolio_id`, `source_teams`,
-`merged_from`, `shared_platform` and `dependencies`.
+All content is generic and public, and written as plain names and descriptions. It cites no external
+framework IDs.
 
-## 6. Knowledge model (backbone)
+### 6.1 Method (pillar 1)
 
-All backbone content is generic and public, and written as plain names and descriptions. It cites no
-external taxonomy IDs. Each topic below is its own reference file (§7.2).
+There is one reference file per phase plus cross-cutting files. Each phase file contains:
 
-### 6.1 The ladder
+- the **goal and exit criteria**
+- a **question bank**, by scope level and journey stage
+- **expert moves**: the probes, heuristics and analyses an experienced transformation lead uses.
+  Examples: "ask for last month's volume, not a typical week"; "find the step where work waits
+  longest"; "ask what would happen if this report stopped being produced"
+- **common traps**: automating waste, local optimization, pilots with no control plan, value claims
+  with no baseline
+- **worked examples** drawn from the archetypes
+- the **output format**
 
-| Level | Meaning | Example |
-|---|---|---|
-| **Assist** | AI helps a person with a task the person still owns | Drafting a memo with a chat assistant |
-| **Augment** | AI is built into a step, gives a first pass, and a person reviews it. Shared prompts or skills make it consistent | An AI first-pass contract review against a checklist |
-| **Automate** | A defined step runs with no person on the normal path. Exceptions go to people | Extracting and validating document data straight into a system |
-| **Delegate** | An agent owns a multi-step outcome across systems. It is started by events and runs in the background, with human checkpoints | An agent that prepares a full draft workpaper from several systems |
-| **Reinvent** | The process, service or business model is redesigned because AI makes a different way possible | Continuous monitoring instead of periodic review. Outcome-based pricing |
+The content is grounded in research stream M (§11). It covers:
 
-### 6.2 Work archetypes
+- lean and Six Sigma applied to knowledge work
+- PE value-creation practice (diagnostic, value creation plan, 100-day plan, program office cadence)
+- current AI transformation frameworks and evidence
+- agentic workflow redesign
+- AI maturity models
+- change management and the workforce
+- value measurement
+- process-discovery interviewing
 
-| Archetype | Description |
+### 6.2 The ladder
+
+| Level | Meaning |
+|---|---|
+| **Assist** | AI helps a person with a task the person still owns |
+| **Augment** | AI is built into a step, gives a first pass, and a person reviews it |
+| **Automate** | A defined step runs with no person on the normal path. Exceptions go to people |
+| **Delegate** | An agent owns a multi-step outcome across systems, started by events, with human checkpoints |
+| **Reinvent** | The process, service or business model is redesigned because AI makes a different way possible |
+
+### 6.3 Work types
+
+These describe how work is done. They drive which patterns fit.
+
+| Work type | Description |
 |---|---|
 | Review & assurance | Checking work, evidence or compliance against criteria |
 | Transaction & case processing | High-volume, rule-heavy items moving through defined steps |
@@ -250,41 +306,32 @@ external taxonomy IDs. Each topic below is its own reference file (§7.2).
 | Software & systems work | Building, configuring and maintaining technology |
 | Physical & field operations | Hands-on work, where AI supports planning, inspection and guidance |
 
-### 6.3 Runtime classes (vendor-neutral; the overlay maps them to products)
+### 6.4 Runtime classes (vendor-neutral; the overlay maps them to products)
 
 | Class | Description |
 |---|---|
 | Personal assistant | Chat or coding assistant used by one person |
-| Shared team skills | Packaged prompts, skills or plugins the whole team uses the same way |
+| Shared team skills | Packaged prompts, skills or plugins used the same way across a team |
 | Workflow automation with AI steps | A defined workflow on an automation platform, with AI at some steps |
 | Background / scheduled agent | An agent that runs on a schedule or trigger without a person present |
 | Managed agent runtime | A hosted, long-running agent with tools, state and human checkpoints, built into business systems |
 
-### 6.4 Agentic pattern library
+### 6.5 Agentic pattern library
 
-Each pattern records: name, description, the work archetypes it fits, its ladder range, runtime
-class, human checkpoints, prerequisites, typical failure modes, and value levers. The initial set:
+Each pattern records: name, description, the work types it fits, its ladder range, runtime class,
+human checkpoints, prerequisites, failure modes, and value levers. The initial set:
 
 intake & triage · document-to-decision · research & brief · draft–review loop ·
 full-population testing · monitor → diagnose → act · reconcile & handle exceptions ·
 service agent with escalation · grounded knowledge assistant · end-to-end case agent ·
 bulk transformation and migration.
 
-### 6.5 Value tree and scoring
+### 6.6 Value tree, scoring and function cards
 
-**Default value levers** (the charter chooses and weights them):
+**Default value levers:** capacity, speed, quality, growth, cost, risk, experience. The top-level
+plan chooses and weights them.
 
-| Lever | Metric |
-|---|---|
-| Capacity | Hours released |
-| Speed | Cycle time |
-| Quality | Errors and rework |
-| Growth | Revenue, new services, win rate |
-| Cost | External spend, cost to serve |
-| Risk | Compliance exposure, control coverage |
-| Experience | Client and employee experience |
-
-**Scoring:** six dimensions on a 1–5 scale, each with anchored definitions. The default weights are:
+**Scoring dimensions and default weights:**
 
 | Dimension | Default weight |
 |---|---|
@@ -295,218 +342,220 @@ bulk transformation and migration.
 | Time to value | 0.10 |
 | Strategic fit | 0.10 |
 
-**Categories:**
+**Categories:** quick win, foundation, big bet, park.
 
-| Category | When it applies |
-|---|---|
-| Quick win | High score and under 90 days |
-| Foundation | Enables several other opportunities |
-| Big bet | High value, longer horizon, usually Delegate or Reinvent |
-| Park | Everything else |
+**Function cards** cover strategy & planning; sales, marketing & business development; product &
+service development; service delivery & operations; customer service; people (HR); technology (IT);
+finance & accounting; procurement & supply chain; risk, compliance & legal. Each card has its
+processes, pain points, top opportunities, metrics and interview probes.
 
-### 6.6 Function cards
+### 6.7 Journey stages
 
-Short cards for the support functions every business has: strategy & planning; sales, marketing &
-business development; product & service development; service delivery & operations; customer
-service; people (HR); technology (IT); finance & accounting; procurement & supply chain; risk,
-compliance & legal.
+The five stages are **Curious → Experimenting → Adopting → Scaling → AI-native**. Each stage has:
 
-Each card has: typical processes, common pain points, top opportunities with links to patterns,
-metrics, and interview probes.
+- observable **markers** that the onboarding questions detect
+- the typical **blockers**
+- what to emphasize (§3.2)
 
-### 6.7 Domain packs
+Each archetype adds field-specific markers. For example, in assurance, "Adopting" might mean data
+analytics used on most engagements and AI first-pass review of evidence on some.
 
-**Inclusion test.** A pack covers one distinct value chain. It must change at least three of the
-following compared with the backbone: the core value chain, the use-case library, the guardrails,
-the value metrics. A candidate that changes fewer becomes a **module** inside a pack. A difference in
-vocabulary only goes in the overlay glossary.
+### 6.8 Business archetypes (pillar 2)
 
-**Anatomy**
+**Inclusion test.** An archetype covers one distinct value chain. It must change at least three of the
+following compared with the backbone: the core value chain, the use cases, the guardrails, the value
+metrics.
+
+- A candidate that changes fewer is a **module** inside an archetype.
+- A difference in vocabulary only goes in the overlay glossary.
+- An archetype may **extend** another. For example, assurance and tax extend professional services.
+
+**Anatomy: what "deep" means.** Every archetype contains all of the following, researched and sourced:
 
 ```
-packs/<id>/
-├── PACK.md                  # short: id, name, extends, modules, when to use; read first
-├── value-chain.md           # stages → processes, each tagged with work archetypes
-├── modules/<m>.md           # processes, pain points, interview probes, top opportunities
-├── use-cases/<m>.yaml       # §6.8 schema; one file per module so loads stay small
-├── metrics.md               # value levers and KPIs, with typical ranges and sources
-├── guardrails.md            # standards, regulators, independence, data limits, steps needing human judgment
-├── roles.md                 # common roles and how they might evolve
-└── disruption.md            # AI-native competitor scenarios
+archetypes/<id>/
+├── ARCHETYPE.md          # ≤ 100 lines: what it covers, modules, extends, how to recognize it, journey markers
+├── interview-guide.md    # archetype-specific onboarding and phase questions; vocabulary to mirror
+├── value-chain.md        # stages → processes → key steps, each tagged with work types
+├── economics.md          # how it makes money, key metrics and benchmarks, cost structure, pricing pressure from AI
+├── state-of-ai.md        # adoption today: what leaders are doing, survey data, maturity spread (dated)
+├── frontier.md           # where the field is heading (12–36 months): conference and proceedings signals, emerging agentic uses, AI-native entrants
+├── guardrails.md         # regulators, standards, professional obligations, data rules, steps needing human judgment
+├── workforce.md          # roles, the talent model and pyramid, how roles evolve, skills, the apprenticeship question
+├── disruption.md         # business-model scenarios: AI-native competitors, pricing shifts, new services
+├── objections.md         # common concerns from this field and evidence-based responses
+├── modules/<m>.md        # per module: processes, pain points, probes, top opportunities, metrics
+├── use-cases/<m>.yaml    # §6.9 schema; one file per module
+└── sources.md            # source landscape: key conferences, bodies, journals, publications; last researched date
 ```
 
-**v1 packs**
+**v1 archetypes and modules**
 
-| Pack | Extends | Modules |
+| Archetype | Extends | Modules |
 |---|---|---|
 | professional-services | — | pursuit & proposals · acceptance & risk · scoping & pricing · staffing & resourcing · delivery management · quality review · billing & collections · knowledge management |
 | assurance | professional-services | acceptance & independence · planning & risk assessment · controls testing · substantive testing · specialists (IT, valuation) · completion & reporting · quality management · other assurance (SOC, sustainability) |
 | tax | professional-services | compliance · provision · indirect tax · transfer pricing · international & global minimum tax · controversy · research & advisory · tax data & technology |
 
-Consulting is not a pack. Consulting teams use professional-services, the function cards, and the
-pack for their client's industry once one exists. The assurance and tax packs also serve in-house
-internal-audit and corporate tax teams.
+**Content targets per archetype**
 
-### 6.8 Use-case entry schema
+| Content | Target |
+|---|---|
+| Use cases per module | 15–25 |
+| Evidence mix per module | At least 50% graded A or B |
+| Frontier signals in `frontier.md` | At least 10, each dated and sourced |
+| Interview guide | Questions for every phase, plus journey-stage markers |
+| Sources | Every file has dated sources and a `last_researched` date |
+
+Consulting is not an archetype. Consulting teams use professional services, the function cards, and
+their client's archetype once one exists. Assurance and tax also serve in-house internal-audit and
+corporate tax teams.
+
+### 6.9 Use-case entry schema
 
 ```yaml
-- id: string                       # <pack>-<module>-NN or fn-<function>-NN
+- id: string                       # <archetype>-<module>-NN or fn-<function>-NN
   title: string
-  pack: id | null                  # null for function cards
+  archetype: id | null
   module: id | null
   function: id
-  work_archetypes: [ id ]
+  work_types: [ id ]
   pattern: id
+  lens: improve | automate | delegate | reinvent
   ladder: assist | augment | automate | delegate | reinvent
   runtime_class: id
+  maturity: in-production | piloting | announced | emerging   # where the field actually is
   problem: string
-  solution: string                 # how AI changes the work; no product names unless in the source
+  solution: string
   outcomes: [ { lever, description, figure, source_ref } ]
   prerequisites: [ string ]
   risks_and_guardrails: [ string ]
   human_checkpoints: [ string ]
   role_evolution: string
-  evidence_grade: A | B | C | D    # §11.3
-  sources: [ { ref, title, publisher, url, date } ]
+  evidence_grade: A | B | C | D
+  sources: [ { ref, title, publisher, type, url, date } ]   # type: conference | regulator | firm | vendor | academic | press | survey
   last_reviewed: date
 ```
 
-### 6.9 Organization overlay
+### 6.10 Organization overlay
 
 This is how organization-specific content gets in **without changing the plugin**. The overlay lives
-in the organization's workspace (§5.2) and uses the same schemas.
+in the workspace and uses the same schemas.
 
 | File | Effect |
 |---|---|
-| `tool-catalog.yaml` | Maps runtime classes to the organization's enabled products. Recommendations name these products. Anything outside the catalog is flagged as "not currently available" |
+| `tool-catalog.yaml` | Maps runtime classes to enabled products. Anything outside it is flagged |
 | `glossary.md` | Organization terminology |
-| `guardrails.md` | Added to the plugin rules. Can never weaken §9 |
-| `use-cases.yaml` | Internal examples, shown alongside public ones and labelled "internal" |
-| `packs/<id>/` | Private packs. If an id matches a plugin pack, the private pack extends it |
+| `guardrails.md` | Added to the plugin rules. Never weakens §9 |
+| `use-cases.yaml` | Internal examples, labelled "internal" |
+| `archetypes/<id>/` | Private archetypes, or extensions of plugin archetypes |
 
-**Order of precedence:** overlay > charter > packs > backbone. The rules in §9 cannot be overridden.
+**Order of precedence:** overlay > plan settings > archetype > backbone. The §9 rules cannot be
+overridden.
 
 ## 7. Plugin architecture
 
-### 7.1 Skills
+### 7.1 One skill
 
-| Skill | Job | `SKILL.md` budget | Own references |
-|---|---|---|---|
-| `start` | Front door. Finds the workspace and state, asks the role, explains the options, routes. Does no flow work itself | ≤ 120 lines | none |
-| `program-lead` | The lead's eight-phase flow (§4.2) | ≤ 350 lines | ≤ 8 |
-| `team-plan` | The team's eight-phase flow (§4.3) | ≤ 350 lines | ≤ 8 |
-| `explore` | Browse use cases and patterns, explain examples, offer to start (§4.4) | ≤ 150 lines | none |
+The plugin has **one skill**, `transformation-advisor`. Team-level and organization-level work are the
+same loop at different scopes, and inspiration is a journey-stage path rather than a separate job.
+So one skill is the coherent unit. This also removes the risks of handing off between skills and
+reading across skill folders, which the structure research identified
+([`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md)).
 
-**Why this split:**
+What makes one skill workable is **where the routing lives**. Pointers sit at the step that needs
+them, not in one long list, and the plan file's state tells the agent which step it is on.
 
-- Each skill is one coherent job for one kind of user. That fits the Agent Skills "coherent unit"
-  guidance and makes triggering precise.
-- A flow skill that fits in about 5,000 tokens survives context compaction in long sessions. Claude
-  Code re-attaches only the first 5,000 tokens of a skill.
-- The real plugins we studied keep each skill to 10 reference files or fewer, with phase guidance
-  inside `SKILL.md`.
-- Splitting further (one skill per phase, or packs as skills) would add best-effort handoffs and
-  trigger conflicts.
+### 7.2 `SKILL.md`: the conductor (target ≤ 400 lines, hard limit 500)
 
-**Descriptions** name the moment of use and point to sibling skills. For example, `team-plan`: "Use
-when a team or function lead wants an AI transformation plan for their own team… For a program
-across several teams, use program-lead."
-
-### 7.2 Progressive disclosure
-
-```
-plugins/transformation-advisor/
-├── skills/
-│   ├── start/SKILL.md
-│   ├── program-lead/
-│   │   ├── SKILL.md                 # rules, resume logic, phase checklist with "read now" pointers
-│   │   └── references/              # ≤ 8: e.g. outside-in-diagnostic.md, synthesis.md, roadmap.md,
-│   │                                #   team-brief-template.md, synthesize-pillar.brief.md
-│   ├── team-plan/
-│   │   ├── SKILL.md
-│   │   └── references/              # ≤ 8: e.g. process-mapping.md, imagine.md, business-case.md,
-│   │                                #   analyze-document.brief.md, scout-use-cases.brief.md,
-│   │                                #   review-opportunities.brief.md
-│   └── explore/SKILL.md
-└── shared/                          # plugin-level library, read through ../../shared/…
-    ├── index.md                     # what is here, when to read each folder, how to search
-    ├── method/                      # conversation rules, ladder, work archetypes, runtime classes,
-    │                                #   value tree & scoring, people & change
-    ├── patterns/                    # index.md + one file per pattern
-    ├── functions/                   # index.md + one file per function card
-    ├── packs/                       # index.md + <pack>/PACK.md, value-chain.md, modules/, use-cases/, …
-    ├── schemas/                     # charter, team-plan, opportunities, portfolio, use-case
-    └── templates/                   # workspace file skeletons
-```
-
-**What a flow `SKILL.md` contains**
+Ordered so the most important content falls within the first ~5,000 tokens, which survive context
+compaction:
 
 1. The purpose, in two or three sentences.
-2. The rules in §9, in short form. Every skill carries them, because any skill can be invoked
-   directly. A repo check confirms the copies match the single source.
-3. **Resume logic.** Read the state in the workspace file (`phase_completed`, `next_phase`) and
-   continue from there.
-4. **The phase checklist.** For each phase: the goal, a capped set of key questions, exit criteria,
-   the output, and at most one "read now" pointer to a reference file or a shared index. Each phase
-   ends by updating the state.
-5. **Handoff.** Name the next skill, with a fallback that always works. For example: "Next, use the
-   **team-plan** skill. If you can't invoke a skill by name, read `../team-plan/SKILL.md` and follow
-   it."
+2. The rules in §9, in short form.
+3. **Start or resume.** Look for a plan, read its state, and continue or onboard.
+4. **The onboarding checklist** (§3.1), with a pointer to the onboarding reference and the archetype
+   index.
+5. **The loop checklist** (§4.1). For each phase:
+   - the goal
+   - three to five core questions
+   - exit criteria
+   - the output
+   - **one "read now" pointer** to that phase's method file
+   - any delegation instruction
+   - "update the plan state"
+6. **Scope adaptations:** Break down and Roll-up (§4.3), with their pointers.
+7. **Library entry points:** the three index files (method, library, archetypes) and how to search
+   use cases.
+8. Workspace and sharing conventions (§5).
 
-**Rules for references**
+### 7.3 References
 
-- **One level deep.** A skill links only to its own `references/` files and to **index files** in
-  `shared/`. Each index is a short table: name, when to read, one-line summary. It leads to exactly
-  one more file. This is the only two-step lookup.
+```
+skills/transformation-advisor/
+├── SKILL.md
+└── references/
+    ├── method/                     # pillar 1: one file per phase + cross-cutting
+    │   ├── index.md
+    │   ├── onboarding.md           # question bank, archetype detection, journey-stage markers
+    │   ├── frame.md · map.md · diagnose.md · reimagine.md · prioritize.md · business-case.md · plan-and-control.md
+    │   ├── breakdown-and-rollup.md
+    │   ├── people-and-change.md
+    │   └── interviewing.md
+    ├── library/                    # backbone
+    │   ├── index.md                # ladder, work types, runtime classes, value tree, scoring, journey stages (short tables)
+    │   ├── patterns/<id>.md
+    │   └── functions/<id>.md
+    ├── archetypes/                 # pillar 2
+    │   ├── index.md                # one row per archetype: recognition cues, modules, extends
+    │   └── <id>/…                  # §6.8 anatomy
+    ├── briefs/                     # subagent briefs (§7.4)
+    ├── schemas/
+    └── templates/
+```
+
+**Navigation rules**
+
+- **Phase files are pointed to directly** from the loop checklist, one per phase, at the moment
+  they're needed. That is about 12 pointers, each attached to a step.
+- **Everything else goes through an index.** There are three entry points: `method/index.md`,
+  `library/index.md` and `archetypes/index.md`. Each index is a short table (name, when to read,
+  one-line summary) that leads to exactly one more file. Inside an archetype, `ARCHETYPE.md` is the
+  index for its files.
 - **Size.** Each file has one job and stays under about 300 lines. Files over 100 lines start with a
   table of contents.
-- **Search instead of reading.** Use-case YAML has consistent fields (`pattern:`, `work_archetypes:`,
-  `module:`, `ladder:`), so the agent or a subagent can search it rather than read it whole.
-- **Large lookups go to subagents** where possible (§7.3), so the main conversation receives only a
-  shortlist.
-- **State is memory.** Workspace files carry `phase_completed` and `next_phase`, plus a progress
-  checklist in the body. Instructions for a long session never depend on the agent remembering a
-  file it read an hour ago.
+- **Search, don't read.** Use-case YAML has consistent fields (`module:`, `pattern:`, `work_types:`,
+  `lens:`, `ladder:`, `maturity:`). The agent or a subagent searches instead of reading whole files.
+- **State is memory.** After every phase the agent updates `phase_completed`, `next_phase` and the
+  progress checklist. A long session never depends on the agent remembering a file it read earlier.
 
-### 7.3 Subagents (tool-agnostic)
-
-Research findings:
-
-- Claude Code, Cowork, Codex, Cursor and the Copilot CLI / VS Code agent all support subagents that
-  can run in parallel.
-- **Codex** spawns them only when skill instructions *explicitly* ask for subagents, delegation or
-  parallel agent work.
-- In Claude Code and VS Code, **subagents cannot ask the user questions**, and no client passes chat
-  history to a subagent.
-- Plain chat surfaces without subagents run the work inline.
+### 7.4 Subagents (tool-agnostic)
 
 **Rules**
 
-1. **Explicit, tool-agnostic wording.** The skill names the delegation outright. For example: "Use
-   subagents for this step: delegate one subagent per document, in parallel. If you cannot start
-   subagents, process each document yourself, one at a time." It never names a client's tool.
-2. **Self-contained briefs.** Each brief is a `*.brief.md` file in the references of the flow skill
-   that dispatches it. The main agent reads the brief, then passes the brief's full text, the inputs
-   (file paths or excerpts) and the output schema in the subagent's prompt. Subagents never depend on chat history or on resolving the skill's paths.
-3. **Subagents never talk to the user.** All questions and confirmations stay in the main
-   conversation. Subagent results are drafts the main agent plays back to the user.
-4. **Structured returns.** Each brief defines a compact output (YAML or markdown in the schema
-   format), so results stay small.
-5. **Inline fallback is always correct.** The same brief, run inline one item at a time, gives the
-   same contract.
+1. **Explicit, tool-agnostic wording.** The skill names the delegation outright. Codex, for example,
+   spawns subagents only when asked explicitly. Typical wording: "Use subagents for this step:
+   delegate one subagent per X, in parallel. If you cannot start subagents, do each yourself, one at
+   a time."
+2. **Self-contained briefs.** The main agent reads a brief from `briefs/` and passes its full text,
+   the inputs and the output schema in the subagent prompt.
+3. **Subagents never talk to the user.** Results are drafts the main agent plays back to the user.
+4. **Structured, compact returns.**
+5. **The inline fallback gives the same contract.**
 
-| Brief | When | Fan-out | Returns |
+| Brief | Phase | Fan-out | Returns |
 |---|---|---|---|
-| `analyze-document` | Map phase, when the user provides SOPs, process documents, org charts or exports | One per document | Draft process steps, roles, volumes and systems, each marked as stated or inferred |
-| `scout-use-cases` | Imagine phase | One per high-value process step, or per pack module | A shortlist of five or fewer relevant patterns and use cases, with ids, a one-line fit and evidence grades |
-| `review-opportunities` | After Prioritize, before Make the case | One per top opportunity (optional) | Independent check of score, risks, human checkpoints, role evolution and the §9 rules |
-| `synthesize-pillar` | Lead's Synthesize phase | One per pillar | Merged and de-duplicated opportunities for that pillar. The main agent then combines all pillars |
+| `analyze-document` | Map | One per document | Draft process steps, roles, volumes and systems, each marked as stated or inferred |
+| `scout-use-cases` | Reimagine | One per high-value step or unit | A shortlist of five or fewer use cases and patterns, with fit and evidence grade |
+| `desk-review-unit` | Break down (optional) | One per unit | A first-pass map, diagnosis and opportunities from archetype knowledge, labelled "draft to validate" |
+| `review-opportunities` | Before Make the case (optional) | One per top opportunity | Independent check of score, risks, checkpoints, role evolution and the §9 rules |
+| `rollup-unit` | Prioritize (higher levels) | One per child unit | Normalized, de-duplicated opportunities ready to merge |
+| `research-archetype` | Onboard, when no archetype matches and the client has web access | One per research angle | A provisional archetype profile and use cases with sources, labelled "provisional" |
 
-### 7.4 Packaging and marketplace
+### 7.5 Packaging and marketplace
 
-The plugin is **skills-only**: no agents, commands, hooks or MCP. That means the Agent Plugins 1.0
-root manifest works across clients without losing components. Each client still needs its own
-marketplace index, plus the small per-client tweaks below.
+The plugin is skills-only, so the Agent Plugins 1.0 root manifest works across clients. Each client
+still needs its own marketplace index.
 
 ```
 ai-enablement/                               # this repo = the marketplace
@@ -515,20 +564,17 @@ ai-enablement/                               # this repo = the marketplace
 ├── .github/plugin/marketplace.json          # Copilot CLI preferred path (optional)
 ├── .cursor-plugin/marketplace.json          # Cursor (source must be a folder inside this repo)
 └── plugins/transformation-advisor/
-    ├── plugin.json                          # Agent Plugins 1.0 ($schema); Copilot and Codex use this first
-    ├── .claude-plugin/plugin.json           # Claude Code and Cowork
-    ├── .cursor-plugin/plugin.json           # Cursor
-    ├── skills/                              # start, program-lead, team-plan, explore (§7.1)
-    └── shared/                              # plugin-level library (§7.2)
+    ├── plugin.json                          # Agent Plugins 1.0 ($schema)
+    ├── .claude-plugin/plugin.json
+    ├── .cursor-plugin/plugin.json
+    └── skills/transformation-advisor/       # §7.2–7.3
 ```
 
 **Per-client rules**
 
-- Every index uses an in-repo `./plugins/transformation-advisor` source. That is the only form all
-  clients accept: Cursor resolves sources only as folders inside the repo, and Codex skips `github`
-  sources.
-- Plugin `name` matches in every index and manifest.
-- No top-level `bin/` folder (Cowork rejects plugins that have one).
+- In-repo `./plugins/transformation-advisor` sources everywhere.
+- The same `name` in every index and manifest.
+- No top-level `bin/` folder.
 - Codex index entries set `policy.installation: AVAILABLE` and `policy.authentication: ON_INSTALL`.
 
 **Target clients** (installation is verified in `plan/`):
@@ -537,33 +583,32 @@ ai-enablement/                               # this repo = the marketplace
 |---|---|
 | Claude Code and Claude desktop (Cowork) | `/plugin marketplace add <owner>/<repo>`, or Customize > Plugins |
 | Codex CLI / app and ChatGPT desktop | `codex plugin marketplace add <owner>/<repo>` |
-| Cursor | `agent plugin marketplace add <git-url>`, or `/plugins` |
+| Cursor | `agent plugin marketplace add <git-url>` |
 | GitHub Copilot CLI | `copilot plugin marketplace add <owner>/<repo>` |
 | VS Code with Copilot | `chat.plugins.marketplaces` setting |
 
 ## 8. Outputs
 
-| Output | Who | Format |
-|---|---|---|
-| Charter | Lead | `charter.md` |
-| Team brief | Lead → delegate | `brief.md` (one page) |
-| Team transformation plan | Delegate | `transformation-plan.md` and `opportunities.yaml` |
-| Business case (one page per top opportunity) | Delegate | Section in the team plan |
-| Portfolio | Lead | `portfolio.md` and `portfolio.yaml` |
-| Roadmap: 100-day plan, value creation plan, cadence | Lead | `roadmap.md` |
-| Leadership summary | Lead | A section in `roadmap.md` that can be pasted elsewhere |
+| Output | Format |
+|---|---|
+| Transformation plan (any level): profile, summary, phases, "start this week", 30/60/90 days | `transformation-plan.md` |
+| Opportunities | `opportunities.yaml` |
+| Unit brief | `units/<id>/brief.md` (one page) |
+| Business case, one page per top opportunity | A section in the plan |
+| Portfolio, 100-day plan, value creation plan, cadence (higher levels) | Sections in the top plan |
+| Leadership summary | A section that can be pasted elsewhere |
 
 ## 9. Behavioral rules (cannot be overridden)
 
 1. **Never** recommend actions about named individuals, rate individual performance, or set
    headcount targets for people.
-2. **Always** include role evolution for team-level and program-level opportunities, with an explicit
+2. **Always** include role evolution for opportunities at team level and above, with an explicit
    choice of capacity use: **redeploy** (growth, quality, backlog, new services) versus **reduce**
    cost. Discuss cost-out openly at the level of roles and capacity.
 3. **Always** give value as ranges with stated assumptions. Label the evidence grade when citing
    examples. Never give a single-point ROI.
-4. **Never** invent sources or figures. Examples come from the library or overlay, or are clearly
-   labelled as illustrative.
+4. **Never** invent sources or figures. Examples come from the archetypes, library or overlay, or are
+   labelled as illustrative. Desk reviews and provisional research are always labelled.
 5. **Don't** ask for client-confidential data or sensitive personal data. Remind the user once per
    session.
 6. When an overlay catalog exists, recommend tools from it. Otherwise use runtime classes.
@@ -575,98 +620,119 @@ ai-enablement/                               # this repo = the marketplace
 
 ### Evals
 
-`evals/` holds 20–50 scenarios, each with a persona, a scripted user, the expected behaviors, and the
+`evals/` holds 30–50 scenarios, each with a persona, a scripted user, the expected behaviors, and the
 checks. The minimum coverage:
 
-- Lead sets up a Big 4 tax-practice program.
-- Delegate in an audit team, with and without uploaded documents.
-- Anxious delegate.
-- Skeptical lead who wants hard ROI.
-- Request for cuts targeting named people.
-- Team with no matching pack.
-- Single-team mode with no charter.
-- Overlay present, and a recommendation outside the catalog.
-- Resume mid-plan.
-- Synthesis of five or more team plans with duplicates and conflicts.
-- A run with no subagents (the inline fallback).
-- **Progressive-disclosure check:** files are read at the phase their pointer names, and no pack or
-  library file is loaded when it isn't needed.
-- **Long-session check:** a session resumes correctly after compaction or restart, using only the
-  state file.
-- **Handoff check:** `start` → flow skill and `explore` → `team-plan` work, including the
-  read-the-file fallback.
+- **An audit partner transforming their practice**, end to end. This is the reference scenario.
+- A tax leader at the "Curious" stage, who should get the inspiration-first path.
+- A head of AI breaking a professional-services firm into units and rolling up desk reviews.
+- A team lead with uploaded documents.
+- A corporate tax department, where the archetype serves an in-house team.
+- A business with no matching archetype, with and without on-the-spot research.
+- Personas: an anxious user, and a skeptic who wants hard ROI.
+- A request for cuts targeting named people.
+- An overlay with a tool catalog.
+- Resume after compaction or restart.
+- A run without subagents.
+- **Depth checks:**
+  - recommendations cite archetype use cases relevant to the module discussed
+  - the Reimagine phase reaches the delegate and reinvent lenses when the journey stage warrants it
+  - each phase's expert moves are used
+- **Navigation checks:**
+  - phase files are read at their phase
+  - only the selected archetype and modules are loaded
 
 Checks combine **schema validation** of the files written with **rubric grading** of the
-conversation.
+conversation. A subject-matter reviewer grades the reference scenarios for professional
+credibility.
 
 ### v1 acceptance criteria
 
 - **Installation:** the plugin installs from this repo and the skill loads in Claude Code or Cowork,
   Codex or ChatGPT desktop, Cursor, and Copilot CLI or VS Code.
-- **Size:** every `SKILL.md` meets the §7.1 budget. Every reference file follows the §7.2 size rule.
-- **Shared library:** `../../shared/` is readable from skills in every target client. If a client
-  fails this, a build step copies `shared/` into each skill instead.
-- **Lead:** can produce a valid charter and team briefs in one session.
-- **Delegate:** can produce a valid team plan and `opportunities.yaml` in one session of about 60–90
-  minutes, and can resume.
-- **Synthesis:** five or more team plans become a valid portfolio and roadmap.
-- **Packs:** professional-services, assurance and tax meet the content targets in §11.4.
+- **Size:** `SKILL.md` stays within its budget, and every reference file follows the §7.3 rules.
+- **Flows:** onboarding, the loop at team and organization level, Break down, desk review, Roll-up and
+  resume all produce valid files.
+- **Content:** all three archetypes meet the §6.8 anatomy and targets. Method files exist for every
+  phase, with expert moves grounded in stream M sources.
 - **Evals:** the suite passes its agreed threshold. All §9 rules pass on every relevant scenario.
 
-## 11. Content research program
+## 11. Research program
 
-The pack and backbone content is built by a **fan-out research effort** during the build phase, using
-**only public sources**.
+This is the largest part of the build. Content comes **only from public sources**. It is gathered by
+fanning out many research subagents, each told to research deeply across **every kind of material**,
+not just one source type.
 
-### 11.1 Process
+### 11.1 Three streams
 
-1. **Briefs.** One research brief per pack module and per function card, in `research/briefs/`.
-   Each brief gives the scope, the questions to answer, the schema to return, and the source rules.
-2. **Fan-out.** One research subagent per brief. Each returns candidate use-case entries (§6.8),
-   value-chain notes, metrics, guardrails and pain points, all with citations.
-3. **Verify.** A separate verifier subagent checks each claim against its cited source, assigns the
-   evidence grade, and rejects unsupported entries.
-4. **Merge.** Remove duplicates across modules, map entries to patterns and archetypes, and run
-   schema validation.
-5. **Review** the merged content before it is committed. Source logs are kept in `research/sources/`.
+| Stream | Produces | Rough fan-out |
+|---|---|---|
+| **M: Method** | `method/*`: expert moves, question banks, traps and examples for each phase. Covers lean / Six Sigma for knowledge work, PE value creation, AI transformation frameworks and evidence, agentic workflow redesign, maturity models, change and the workforce, value measurement, discovery interviewing | About 10 topic agents, then synthesis |
+| **A: Archetypes** | Everything in §6.8 for each archetype | Per archetype: 1 landscape scan, then 3 angles per module (8 modules × 3 = 24 agents), then cross-cutting agents for economics, workforce, disruption, guardrails and the state of AI. About 30 or more agents per archetype |
+| **B: Backbone library** | Patterns, function cards, work types, journey stages | About 15 agents |
 
-### 11.2 Source rules
+All three streams finish with **synthesis** and **verification** agents (§11.4). At about 130 or more
+agents in total, the program runs in waves (see `plan/`).
 
-- Public sources only: regulator and standard-setter publications, professional-body reports, firms'
-  public case studies and reports, vendor case studies (graded accordingly), academic work, and
-  reputable press.
-- Prefer 2025–2026. Record a date for every source.
+### 11.2 How deep the archetype research goes
+
+1. **Landscape scan (one agent per archetype).** Build `sources.md`: the field's main conferences and
+   their 2025–2026 programs and proceedings, standard-setters and regulators, professional bodies,
+   academic journals and research centers, leading firms' public reports, vendors and product
+   launches, trade press, podcasts and practitioner communities. Confirm or adjust the module list.
+   Starting points to confirm:
+   - **Assurance:** AICPA & CIMA ENGAGE; the AICPA Conference on Current SEC and PCAOB Developments;
+     the Rutgers World Continuous Auditing & Reporting Symposium; American Accounting Association
+     meetings; IIA conferences (internal audit); ISACA (IT audit); PCAOB, IAASB and Center for Audit
+     Quality publications.
+   - **Tax:** TEI conferences; AICPA tax tracks; the IFA Congress; OECD Forum on Tax Administration
+     work; IRS and other tax authority AI programs; tax-technology vendor conferences.
+   - **Professional services:** firm operations and legal operations events (as analogs), and
+     professional-services benchmark research.
+2. **Module deep dives (three angles per module, each its own subagent):**
+   - **Practice.** What firms and in-house teams actually do: case studies, firm reports, vendor
+     deployments, job postings and product launches that signal real use.
+   - **Discourse.** What practitioners say: conference sessions and proceedings from the last 12–18
+     months, panels, keynotes, podcasts, practitioner articles and community discussion. This angle
+     carries the most weight for `frontier.md`.
+   - **Governance & evidence.** What constrains and measures the work: regulator and standard-setter
+     statements, inspection findings, professional-body guidance, academic studies and surveys.
+3. **Cross-cutting agents per archetype:** economics and business model, workforce and talent model,
+   disruption scenarios, guardrails, state of AI adoption.
+
+### 11.3 Source rules
+
+- Public sources only. Record publisher, type and date for every source.
+- Prefer the last 12–18 months. Older sources are allowed for foundations, standards and history.
 - Summarize in our own words. No long quotations.
 - No confidential, client-identifying or organization-internal material.
 
-### 11.3 Evidence grades
+### 11.4 Synthesis and verification
 
-| Grade | Meaning |
-|---|---|
-| **A** | A measured outcome from a named organization |
-| **B** | A named real deployment, without published measurements |
-| **C** | A vendor claim or analyst estimate |
-| **D** | A plausible pattern with no public deployment found. Labelled "idea" |
+- **Synthesis agent per module:** merges the three angles, removes duplicates, maps entries to
+  patterns, work types and lenses, and writes the module file and use-case YAML.
+- **Verifier agent per module:** checks every claim against its cited source, assigns the evidence
+  grade (A: a measured outcome from a named organization; B: a named deployment; C: a vendor claim or
+  analyst estimate; D: a plausible idea, labelled "idea"), and rejects anything unsupported.
+- **Schema validation** runs on every file.
+- **Review** of the merged content before it is committed. The research logs are kept in `research/`.
 
-### 11.4 Content targets (v1)
+### 11.5 Keeping it current
 
-| Content | Target |
-|---|---|
-| Agentic patterns | 11 |
-| Function cards | 10, each with 5–8 use cases |
-| Pack modules | 8–15 use cases each (roughly 200–300 entries across the three packs) |
-| Evidence mix | At least 50% grade A or B |
+Every archetype file carries `last_researched`. The research briefs live in `research/briefs/` so the
+same fan-out can be rerun, ideally twice a year, to refresh `state-of-ai.md`, `frontier.md` and the
+use cases.
 
 ## 12. Answers to intent questions
 
 | Intent question | Answer |
 |---|---|
-| Use-case library sourcing | Researched public content (§11) plus the organization's own overlay |
+| Use-case library sourcing | Deep public research (§11) plus the organization overlay |
 | Where outputs go | Markdown and YAML in the workspace (§8) |
-| Program workspace location | Anywhere the organization stores information. GitHub repo template by default (§5) |
-| Clients for v0 | Agent Plugins compatible. Verified in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, Copilot CLI / VS Code (§7.4) |
-| First packs | professional-services, assurance, tax (§6.7). Content from public research, nothing organization-specific |
-| Framework IDs (APQC) | Not used. Plain names and descriptions only |
+| Program workspace location | Anywhere. GitHub template by default (§5) |
+| Clients | Agent Plugins compatible. Verified in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, Copilot CLI / VS Code (§7.5) |
+| First archetypes | Professional services, assurance, tax (§6.8) |
+| Framework IDs (APQC) | Not used |
 
 ## 13. Open questions and items to verify in `plan/`
 
@@ -674,11 +740,11 @@ The pack and backbone content is built by a **fan-out research effort** during t
    - how ChatGPT desktop installs plugins
    - whether Cursor falls back to `.claude-plugin`
    - which index path VS Code reads
-   - whether Cowork accepts a root `plugin.json` next to `.claude-plugin/plugin.json`
-2. **Delegation reliability.** Check that the explicit wording in §7.3 actually triggers subagents in
-   each target client, especially Codex. Record the results in the eval report.
-3. **Shared-library paths.** Reading `../../shared/` from a skill is proven in Anthropic's own
-   plugins (Claude Code and Cowork), but not yet in Codex, Cursor or Copilot. Verify during the
-   installation smoke tests.
-4. **Eval harness.** How we run the scenarios across clients in a repeatable way. For example, run the
-   main harness in one client and do install smoke tests in the others.
+   - whether Cowork accepts a root `plugin.json`
+2. **Delegation reliability.** Check that the explicit wording triggers subagents in each client,
+   especially Codex.
+3. **Research waves.** Run a pilot on one module first (for example, assurance controls testing) to
+   calibrate depth and the schema before the full fan-out.
+4. **Subject-matter review.** Who reviews archetype content for professional credibility (an audit
+   professional and a tax professional)?
+5. **Eval harness.** How to run scenarios across clients in a repeatable way.

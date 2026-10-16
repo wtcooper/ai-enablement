@@ -79,9 +79,10 @@ Success looks like this:
 
 **Primary users (v1)**
 
-- *Program lead:* a head of AI, business-unit leader or transformation lead asked to transform a
-  business. They work **top-down**: set the ambition, split the business into pillars and team
-  functions, send discovery to delegates, then combine the results into a portfolio and roadmap.
+- *Program lead:* a head of AI, business-unit leader, practice leader (for example an audit partner)
+  or transformation lead asked to transform a business. They work **top-down**: set the ambition,
+  split the business into units, send discovery to delegates, then combine the results into a
+  portfolio and roadmap. This is the same workflow a team uses, run at a higher level.
 - *Team delegates:* function or team leads who map their team's processes and find opportunities
   against the program lead's charter.
 
@@ -94,9 +95,8 @@ Success looks like this:
 
 **Systems**
 
-- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It has four skills (a front
-  door plus one per job) over a shared library, uses progressive disclosure, and delegates bounded
-  work to subagents in tool-agnostic wording. Shared state is a **program workspace of files** (charter, team transformation plans,
+- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It is one skill with
+  progressive disclosure, and it delegates bounded work to subagents in tool-agnostic wording. Shared state is a **program workspace of files** (charter, team transformation plans,
   portfolio, roadmap) stored wherever the organization keeps information.
 - **Later:** an MCP backend for the shared library, catalog and intake. A hosted front door on a
   managed agent runtime. Connections to backlog systems (GitHub, Jira, ServiceNow).
@@ -137,7 +137,9 @@ these decisions is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2
 | First audience | Program lead (top-down) plus team delegates |
 | Shared backend | None in v1. A file-based program workspace |
 | Program workspace | A storage-agnostic folder of markdown and YAML. A GitHub repo is the reference setup, matching how the plugin is distributed. Other stores can be added later |
-| Delivery | Skills-only Agent Plugin with four skills: `start`, `program-lead`, `team-plan`, `explore`. Each flow skill is its own phase checklist. A shared library is reached through index files. Evidence: [`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md) |
+| Delivery | Skills-only Agent Plugin with **one skill**, `transformation-advisor`. `SKILL.md` holds the onboarding and the loop checklist, with a pointer at each phase to that phase's method file. The library and archetypes are reached through index files. Evidence: [`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md) |
+| Team vs. program | **The same workflow** at different levels of the hierarchy. Higher levels add Break down (into units) and Roll-up. Users new to AI get an inspiration-first path instead of a separate explore mode |
+| Most critical value | Two pillars: (1) the transformation workflow and its reasoning, with onboarding that identifies the user's archetype and journey stage and adapts; (2) **deep** business archetypes, built by a large fan-out of research subagents across conferences and proceedings, practice, regulators and academic work |
 | Subagents | Tool-agnostic instructions to delegate bounded work to subagents in parallel, with an inline fallback. No tool-specific agent files |
 | Clients | Agent Plugins agnostic. Installation verified from this repo's GitHub marketplace in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, and GitHub Copilot CLI / VS Code |
 | Review or approval in the product | None. Team members get their own transformation plan and save or share it wherever their program stores information. (Our intent → spec → plan process is for building the plugin only) |

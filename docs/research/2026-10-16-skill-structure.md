@@ -1,6 +1,6 @@
 # Research: how to structure the plugin's skills
 
-Date: 2026-10-16 · Status: recommendation · Changes: spec §7
+Date: 2026-10-16 · Status: superseded in part (see addendum) · Changes: spec §7
 
 **Question.** Should the plugin be one skill with progressive disclosure (the earlier draft: one router
 plus about 40 reference files), several skills, or a mix?
@@ -165,3 +165,21 @@ tests must check it.
 - [VS Code: agent skills (source)](https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-skills.md)
 - [Codex source: skills catalog prompt](https://github.com/openai/codex)
 - Exemplars: [anthropics/skills](https://github.com/anthropics/skills) · [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) · [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) · [obra/superpowers](https://github.com/obra/superpowers) · [wshobson/agents](https://github.com/wshobson/agents)
+
+## Addendum: the decision after review
+
+The owner pointed out that team-level and program-level work are **the same transformation loop at
+different levels of the hierarchy**, and that "explore" is really an early stage of the user's
+journey. With those three jobs merged into one, the "coherent unit" test from §1 favors **one skill**.
+That also removes the two risks identified above: handing off between skills, and reading
+`../../shared/` across skill folders.
+
+What this research still decides, and spec §7 adopts:
+
+- **No phase-by-phase file chains.** `SKILL.md` holds the loop checklist itself. Each phase carries
+  exactly one "read now" pointer to its own method file, at the moment it is needed.
+- **Everything else goes through three index files** (method, library, archetypes), each leading to
+  exactly one more file.
+- **The most important content comes first in `SKILL.md`**, within the ~5,000 tokens kept after
+  compaction (target ≤ 400 lines).
+- **State in the plan file** (`phase_completed`, `next_phase`) carries a long session.
