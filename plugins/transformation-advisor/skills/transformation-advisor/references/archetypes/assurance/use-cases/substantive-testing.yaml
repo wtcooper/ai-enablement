@@ -1,0 +1,1618 @@
+# Use cases: assurance / substantive-testing
+# Synthesised 2026-10-16 from the wave 1 landscape scan and the practice, discourse and governance deep dives
+# (research/runs/wave1/). Source refs follow PUBLISHER-SHORT-YYYY; where the inputs used two refs for one
+# document, the synthesis report names the canonical key. Figures are self-reported or vendor-published unless
+# the outcome says `independent`. Cross-module overlaps: evidence-to-sample matching (#10) is the canonical home
+# of the measured matching figures also quoted in assurance-controls-testing-07; full-population testing of
+# balances (#24) complements assurance-controls-testing-08 (controls populations).
+
+- id: assurance-substantive-testing-01
+  title: Full-population journal-entry testing with machine-learning anomaly scoring (fraud and management-override response)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Testing the appropriateness of journal entries is a required fraud response under ISA 240 (Revised),
+    paragraphs 47-48, and responds to the risk that management overrides controls. Teams filter very large
+    ledgers with rules such as posting times or values, which can miss subtler patterns and flood the team with
+    false positives: in one research benchmark a rules-based journal-entry test flagged 942 false positives on
+    5,000 posting IDs. Large general ledgers held across many Excel files make sampling, searching and
+    navigating slow (Buzzacott).
+  solution: >-
+    A tool scores every entry in the general ledger with machine-learning and statistical models, often run
+    alongside rules-based routines, and shows which features made an item unusual. Auditors drill down by
+    account, period and risk attribute and select entries for testing from the scored population. Named users:
+    Buzzacott (started its MindBridge programme with journal entries), BDO UK (expanded MindBridge across its
+    audit practice after a trial, June 2026), KPMG (MindBridge alliance feeding Clara, 2024) and EY (a
+    general-ledger analyzer used in most audits per its assurance digital leader in 2024; EY Canvas processes
+    more than 1.4 trillion journal-entry lines a year). The FRC's hypothetical example (June 2025) combines an
+    unsupervised or deep-learning model with rules-based routines in one tool, weights them and sets a threshold
+    above which the team must follow up.
+  outcomes:
+    - lever: quality
+      description: "Regulator-observed adoption of automated tools in journal-entry testing; a prevalence measure, not an outcome or accuracy measure"
+      figure: "88% (2024); 86% (2023); about 86% (2025, read from a chart without data labels)"
+      measures: "Share of IFIAR members answering the annual survey that 'frequently observed' automated tools and techniques (AI and non-AI) in journal entry testing in audit files; 48 members answered in 2024 and 49 in 2023"
+      provenance: independent
+      source_ref: IFIAR-TTF-2025
+    - lever: quality
+      description: "All six U.S. global network firms reported tools that identify and select journal entries (adoption, not quality)"
+      figure: "6 of 6 firms (2023 inspection year)"
+      measures: "U.S. global network firms (BDO, Deloitte, EY, Grant Thornton, KPMG, PwC) reporting such tools to PCAOB staff"
+      provenance: self-reported
+      source_ref: PCAOB-TAA-2024
+    - lever: capacity
+      description: "Scale of journal-entry data processed on one Big Four platform; volume only, no time or quality result"
+      figure: "more than 1.4 trillion lines a year"
+      measures: "Lines of journal-entry data processed per year on EY Canvas, per the press report of EY's 7 Apr 2026 release (EY's 2024 interview gave more than 800 billion general-ledger line items a year for the GL analyzer)"
+      provenance: self-reported
+      source_ref: EY-CANVAS-2026
+  prerequisites:
+    - "A complete general-ledger extract reconciled to the trial balance and loaded in one place (BUZZACOTT-PRIME-2025)"
+    - "Ledger data with date, time, poster, description, value and account references (FRC-AIAUDIT-2025, p.11)"
+    - "Methodology and technology teams build the tool together; certification before use; version control so only the latest approved version runs (FRC-AIAUDIT-2025, pp.10-11)"
+    - "A technical committee or equivalent that owns standards mapping, methodology and policy (BUZZACOTT-PRIME-2025)"
+    - "Access to client systems and usable client data: 60% of surveyed US firms name poor client data and 53% lack of system access among top blockers (CPACOM-ATR-2025)"
+  risks_and_guardrails:
+    - "31% of IFIAR members reported findings that a tool was not used as intended in 2024 (29% in 2023); the most common were misreading results and thin testing of outliers (IFIAR-TTF-2025, pp.5-6)"
+    - "An unsupervised model flags only items unusual relative to the population, so entries consistently posted to unusual accounts may not be flagged; the FRC example therefore runs rules-based routines alongside the AI tool (FRC-AIAUDIT-2025, p.10)"
+    - "Fraud is a rare event, which is hard for pattern-based tools; an academic commentator suggests pairing fraud specialists with data-driven tools (NYENRODE-QUALITY-2026)"
+    - "PCAOB AS 2301.49-.50 (fiscal years beginning on or after 15 Dec 2025) cover investigation of items identified by auditor-set criteria (PCAOB-TAA-2024; SEC-TAAORDER-2024)"
+    - "Under the IAASB exposure draft, items that look unusual for the population need further investigation, with the extent depending on the purpose of the procedure (IAASB-ED500-2026, EM paras 63-64)"
+    - "Buzzacott teams routinely run datasets with and without the tool to check findings against professional expectations (BUZZACOTT-PRIME-2025)"
+    - "The six largest UK firms did no formal monitoring to quantify the audit-quality impact of automated tools (FRC-ATT-2025, p.20)"
+  human_checkpoints:
+    - "Team decides whether use criteria are met (data quality sufficient; fraud risk not already reduced to an acceptably low level by other procedures) and documents it (FRC-AIAUDIT-2025, p.11)"
+    - "Auditor sets control-point weightings and decides how scored results are applied (BUZZACOTT-PRIME-2025)"
+    - "Team follows up each high-risk item, considers why it was flagged and stays alert to signs that the tool is systematically flawed for the engagement (FRC-AIAUDIT-2025, p.11)"
+    - "Auditor decides what is a misstatement (IAASB-ED500-2026, EM para 64)"
+  role_evolution: >-
+    RSM Australia describes the role moving from selecting samples to investigating and understanding
+    exceptions, so quality depends on how exceptions are triaged (RSM-AUS-2026). In the FRC example, central
+    technical and methodology teams own certification, calibration and documentation, while engagement teams
+    decide when to use the tool and interpret its output (FRC-AIAUDIT-2025, pp.9-11). Buzzacott reports buy-in
+    from new joiners to partners (BUZZACOTT-PRIME-2025).
+  evidence_grade: B
+  sources:
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.5 table (2023 and 2024); pp.5-6 inspection findings" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "p.10 trend chart (2023-2025)" }
+    - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Economic analysis (current practice); discussion of AS 2301.49-.50" }
+    - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II (summary; effective date)" }
+    - { ref: EY-CANVAS-2026, title: "EY Rolls Out Agentic AI in Assurance Across Its Global Network of Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/", date: "2026-04-07", access: full, locator: "paras 1-3" }
+    - { ref: ACCTODAY-EY-2024, title: "EY beefs up use of AI amid $1B investment", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/ey-beefs-up-use-of-ai-amid-1b-investment", date: "2024-10-16", access: full, locator: "paras 3-4 (GL analyzer)" }
+    - { ref: BUZZACOTT-PRIME-2025, title: "How Buzzacott's AI partnership is elevating audit quality", publisher: "PrimeGlobal (Buzzacott)", type: firm, url: "https://www.primeglobal.net/news/how-buzzacotts-ai-partnership-is-elevating-audit-quality", date: "2025-12-18", access: full, locator: "sections 'Implementation' and 'Building trust'" }
+    - { ref: MINDBRIDGE-BDOUK-2026, title: "BDO UK and MindBridge Partner to Accelerate Data-Driven Audit", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/news/bdo-uk-and-mindbridge-partner-to-accelerate-data-driven-audit", date: "2026-06-29", access: full, locator: "paras 2-3" }
+    - { ref: MINDBRIDGE-KPMG-2024, title: "Innovating Audits: KPMG's AI-Driven Audit Approach Leveraging MindBridge AI", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/docs/resources/customer-stories/KPMG/KPMG-AI-Driven-Audit-with-MindBridge_02262024.pdf", date: "2024-02", access: full, locator: "pp.4-5 (date from file name)" }
+    - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "Illustrative example pp.8-11; documentation pp.13-14" }
+    - { ref: FRC-ATT-2025, title: "Thematic Review: Certification of Automated Tools and Techniques", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/Thematic_Review_on_the_Certification_of_Automated_Tools_and_Techniques.pdf", date: "2025-06-26", access: full, locator: "p.20 (monitoring)" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "EM section 1-E, paras 63-64" }
+    - { ref: IAASB-ED330-2026, title: "Exposure Draft: Proposed ISA 330 (Revised), The Auditor's Responses to Assessed Risks, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-330-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "A25 and footnote 26 (ISA 240 (Revised) paras 47-48)" }
+    - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping (Kadir, Vasu, Nair, Sonntag; DFKI)", publisher: "arXiv 2512.02726", type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: "abstract; section 4, Table 1" }
+    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08", access: full, locator: "section 'Fieldwork', first paragraph" }
+    - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'Can AI detect fraud effectively?'" }
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Barriers chart (PDF p.9)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-01, discourse-01 and governance-01. Change scope set to process (two of three angles;
+    governance said step). The IFIAR and PCAOB figures cover all automated tools, including non-AI analytics,
+    so they show how mature tool-assisted journal-entry testing is, not how mature AI is. No detection-quality,
+    false-positive, override-rate or parallel-run figure was found for any named firm. The MindBridge page for
+    KPMG describes the alliance, not results. The FRC example is hypothetical.
+
+- id: assurance-substantive-testing-02
+  title: "Idea: language-model anomaly detection with written explanations, layered on journal-entry tests"
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: >-
+    Rule-based journal-entry tests generate many false positives and struggle with subtle irregularities, and
+    machine-learning scores do not explain themselves (ARXIV-AUDITCOPILOT-2025, abstract).
+  solution: >-
+    Researchers prompt large language models with each ledger record plus dataset statistics and an Isolation
+    Forest hint (a classical anomaly-detector score), and ask for a yes/no anomaly flag with a plain-language
+    explanation the auditor can review. The authors prefer open-weight models because ledger data is
+    confidential. They benchmarked the models against rules-based journal-entry tests and classical baselines on
+    a synthetic ledger and one anonymised real ledger.
+  outcomes:
+    - lever: quality
+      description: "Synthetic ledger: best language model versus rules-based journal-entry testing (JET)"
+      figure: "Mistral-8B: 48 true positives, 12 false positives, 2 false negatives; JET: 50 true positives, 942 false positives, 0 false negatives; GPT-5-mini: 50 true positives, 466 false positives"
+      measures: "Counts of posting IDs flagged against simulator-defined labels in a random subset of 5,000 posting IDs with 50 seeded anomalies; the paper's printed precision and recall columns do not reconcile to these counts"
+      provenance: independent
+      source_ref: ARXIV-AUDITCOPILOT-2025
+    - lever: quality
+      description: "Real anonymised ledger: Gemma-7B with the full prompt versus Isolation Forest, scored against pseudo-labels"
+      figure: "Gemma-7B: 256 true positives, 32 false positives, 73 false negatives; Isolation Forest: 315 true positives, 719 false positives, 14 false negatives; removing the Isolation Forest hint raised Gemma-7B false positives from 32 to 1,973"
+      measures: "Counts of records flagged against 329 pseudo-labelled anomalies; the pseudo-labels came from applying journal-entry testing rules, so rules-based JET is the reference, not a competitor, on this dataset"
+      provenance: independent
+      source_ref: ARXIV-AUDITCOPILOT-2025
+  prerequisites:
+    - "Structured ledger fields (amounts, accounts, users, dates) plus free-text memo fields, with global statistics and a classical anomaly-detector score added to the prompt (ARXIV-AUDITCOPILOT-2025, section 2)"
+    - "Certification and testing of the model and an explainability approach suited to how the output is used (FRC-AIAUDIT-2025, p.9)"
+  risks_and_guardrails:
+    - "Authors' limits: one anonymised ledger plus a synthetic benchmark, pseudo-labels that may inherit rule-based biases, prompt sensitivity, explanations that may not reflect the decision boundary, hallucination, automation bias, prompt injection through free-text fields and non-reproducibility (ARXIV-AUDITCOPILOT-2025, Limitations)"
+    - "A model's explanations can be approximate or post hoc and still be appropriate depending on use (FRC-AIAUDIT-2025, p.14)"
+    - "Agent benchmarks on whole engagements find models sometimes perform inappropriate procedures or write incorrect documentation (ARXIV-FAB-2026, abstract)"
+  human_checkpoints:
+    - "Auditor reviews each flagged entry together with the model's explanation before treating it as an exception (ARXIV-AUDITCOPILOT-2025, abstract)"
+  role_evolution: >-
+    None studied. The authors picture auditors collaborating with foundation models rather than being replaced
+    (ARXIV-AUDITCOPILOT-2025, abstract).
+  evidence_grade: D
+  sources:
+    - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping (Kadir, Vasu, Nair, Sonntag; DFKI)", publisher: "arXiv 2512.02726", type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: "abstract; sections 2-4; Tables 1-2; Limitations" }
+    - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "pp.9 and 14 (explainability)" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Idea: a research prototype with measured benchmark results but no deployment found. Merged from practice-02
+    and governance-02. The paper's Table 1 is internally inconsistent (JET lists recall 0.90 yet 0 false
+    negatives), so only counts are reported. The landscape's search extract about real-data precision falling
+    without a statistical hint is superseded by the Table 2 counts above.
+
+- id: assurance-substantive-testing-03
+  title: Evidence-linked triage and explanation of items flagged by whole-population tests
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Whole-population tests surface more items to follow up. The PCAOB amendments require the auditor to
+    investigate items identified by auditor-set criteria, and thin testing of outliers is among IFIAR members'
+    most common technology findings (PCAOB-TAA-2024; IFIAR-TTF-2025, pp.5-6).
+  solution: >-
+    MindBridge announced on 22 Sep 2026 an Agentic Risk Assessment capability that links evidence, analytics,
+    assertions, materiality and methodology, and says its platform combines full-population analysis with
+    explainable risk detection. The FRC's journal example requires teams to understand why each high-risk item
+    was flagged and to look for items the tool may have missed.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; the MindBridge release gives no performance figure"
+      provenance: vendor-published
+      source_ref: MINDBRIDGE-ARA-2026
+  prerequisites:
+    - "Integration with the firm's workpaper tools; MindBridge says the capability works with customer-built and third-party workpaper solutions (MINDBRIDGE-ARA-2026)"
+  risks_and_guardrails:
+    - "An item flagged as unusual may be correct while similar unflagged items are the risky ones, so follow-up must go beyond the flagged list (FRC-AIAUDIT-2025, p.11)"
+    - "IFIAR suggests monitoring false-positive and false-negative rates against a manual sample, rework rates and escalation incidence (IFIAR-TTF-2026, pp.8-9)"
+  human_checkpoints:
+    - "Auditor investigates and documents the rationale for concluding on flagged and additional items (FRC-AIAUDIT-2025, p.11)"
+  role_evolution: >-
+    MindBridge says judgement stays with the auditor (MINDBRIDGE-ARA-2026); in the FRC example, teams document
+    the rationale for their follow-up conclusions (FRC-AIAUDIT-2025, p.11).
+  evidence_grade: C
+  sources:
+    - { ref: MINDBRIDGE-ARA-2026, title: "MindBridge Advances Financial Oversight for the Agentic Era with New Platform Capabilities (press release)", publisher: "MindBridge (Business Wire via BNN Bloomberg)", type: vendor, url: "https://www.bnnbloomberg.ca/press-releases/2026/09/22/mindbridge-advances-financial-oversight-for-the-agentic-era-with-new-platform-capabilities/", date: "2026-09-22", access: full, locator: "Announcements list; Augmented Assurance paragraph" }
+    - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "Illustrative example p.11" }
+    - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Discussion of AS 2301.49-.50" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.8-9" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From governance-15 (single source). Kept because exception follow-up is the step full-population testing
+    moves work into, and no other entry covers it. Vendor announcement and regulator illustration only; no
+    customer names, accuracy or time figures. Planning-stage use of the same product belongs to
+    planning-risk-assessment.
+
+- id: assurance-substantive-testing-04
+  title: Corroborating and authenticating documents before relying on them, as AI makes forged evidence cheap
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    IRBA warned in September 2024 that AI tools can create more realistic false evidence or fabricated working
+    papers. A clean-looking invoice or vendor file no longer signals legitimacy, because generative tools
+    produce convincing documents, W-9 forms and vendor websites. IFIAR notes that order forms, shipment details,
+    invoices, payment records and bank statements may originate from AI systems and be used as audit evidence.
+  solution: >-
+    Practitioners advise matching invoice details against bank records, vendor histories, approval logs and
+    system metadata; scanning vendor masters for suspicious entries, such as a P.O. box address or a bank
+    account shared by apparent vendors; and testing full populations because fraud can be automated and
+    widespread. An ISACA author proposes a zero-trust starting point: verify authenticity, metadata and
+    provenance independently before relying on a document. A forensic investigator notes mainstream tools can
+    be asked to look for watermarks showing AI alteration and expects this in enterprise software. IRBA
+    recommends procedures to verify the authenticity of evidence. Whether firms use automated
+    authenticity-detection tools in substantive testing was not found.
+  outcomes:
+    - lever: risk
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; no source reports usage or detection rates"
+      provenance: independent
+      source_ref: IRBA-AI-2024
+  prerequisites:
+    - "Access to bank, vendor-master and approval-log data, and a tidy vendor master (JOFA-APFRAUD-2026)"
+    - "Independent routes to the originating system or party (ISACA-EVIDENCE-2026)"
+    - "Firm policy on AI use and a protocol to monitor it, as IRBA recommended in January 2023 (IRBA-AI-2024, p.1)"
+  risks_and_guardrails:
+    - "Technological defences carry their own attack paths, such as data poisoning and prompt injection (JOFA-APFRAUD-2026)"
+    - "IFIAR says auditors need to evaluate the source and nature of information used as evidence, taking account of potentially unreliable AI output (IFIAR-TTF-2026, p.10)"
+    - "AFM found auditors do not always verify the reliability of input data used in tools (AFM-BB-2025, Precondition 2)"
+    - "A search-result summary of a Wolters Kluwer article says detection tools still need governance and human review (WOLTERSKLUWER-EVIDENCE-2026; page not opened)"
+  human_checkpoints:
+    - "Out-of-band verification of suspicious items (JOFA-APFRAUD-2026)"
+    - "Auditor decides whether evidence is authentic enough to rely on (ISACA-EVIDENCE-2026)"
+  role_evolution: >-
+    A BDO forensic practitioner says AI will not testify in court or sign off financial statements, so the CPA's
+    value remains skepticism and judgment (JOFA-APFRAUD-2026). The ISACA author says auditors must be equipped
+    to challenge evidence that looks 'perfect' (ISACA-EVIDENCE-2026).
+  evidence_grade: C
+  sources:
+    - { ref: MINDBRIDGE-FAKEINV-2025, title: "Fake Invoices, Real Risks: Why Auditors Must Rethink Their Approach in the Age of AI", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/blog/fake-invoices-real-risks-why-auditors-must-rethink-their-approach-in-the-age-of-ai", date: "2025-04-15", access: full, locator: "section 'What This Means for Auditors and the Audit Process'" }
+    - { ref: JOFA-APFRAUD-2026, title: "A guide to fighting AI-fueled AP/AR fraud", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/issues/2026/jul/a-guide-to-fighting-ai-fueled-ap-ar-fraud/", date: "2026-07-01", access: full, locator: "sections 'More advanced vendor and customer impersonation', 'Maintain the master file', 'Embrace technology - appropriately'" }
+    - { ref: ISACA-EVIDENCE-2026, title: "The Audit Evidence Crisis: How AI Deepfakes Are Rewriting Assurance Standards", publisher: "ISACA Now Blog", type: professional-body, url: "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards", date: "2026-06-08", access: full, locator: "Introduction; 'Why a Zero-Trust Approach is Essential'" }
+    - { ref: IRBA-AI-2024, title: "Artificial Intelligence Audit Risks Mitigation Update (communique)", publisher: "IRBA (South Africa)", type: regulator, url: "https://www.irba.co.za/upload/40_%20Artificial%20Intelligence%20Audit%20Risks%20Mitigation%20Update.pdf", date: "2024-09-19", access: full, locator: "p.1" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "p.10" }
+    - { ref: AFM-BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "Precondition 2" }
+    - { ref: WOLTERSKLUWER-EVIDENCE-2026, title: "AI-generated audit evidence: rethinking trust and authenticity", publisher: "Wolters Kluwer", type: vendor, url: "https://www.wolterskluwer.com/en/expert-insights/ai-generated-audit-evidence-rethinking-trust-authenticity", date: "2026-05-06", access: search-only, locator: "search-result summary only; page returned 403" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from discourse-11 (grade C), discourse-12 (idea) and governance-14 (idea). Ladder and scope follow
+    the two idea entries (assist, step); discourse-11 framed the population-wide corroboration as augment,
+    process. The JofA guide is written from the preparer and forensic side, so it is adjacent to audit
+    procedures; MindBridge's post is vendor marketing. The controls-testing analogue is the idea in
+    assurance-controls-testing-23 (screening control evidence for fabrication and prompt injection).
+
+- id: assurance-substantive-testing-05
+  title: "Idea: substantive testing of AI-generated client information (entries, accruals, classifications), or tests of controls over it"
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    When a client uses AI to categorise expenses, prepare accruals or review entries for anomalies, the auditor
+    may not be able to see how the output was produced (AT-AICPAPA-2026).
+  solution: >-
+    The AICPA practice aid (13 Oct 2026, as reported by Accounting Today) says an auditor may be able to test AI
+    outputs substantively; if that alone cannot give sufficient evidence, the auditor should test controls.
+    Where the process is a black box, the auditor may need to establish relationships between inputs and outputs
+    and explore non-traditional evidence sources.
+  outcomes:
+    - lever: risk
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; published guidance on how to respond, not a reported audit"
+      provenance: independent
+      source_ref: AT-AICPAPA-2026
+  prerequisites:
+    - "Understanding of the AI mechanism behind a control or information source, including whether it is deterministic or probabilistic (AT-AICPAPA-2026)"
+  risks_and_guardrails:
+    - "Model drift, data governance and probabilistic outcomes mean testing strategies may differ from those for traditional automated controls (AT-AICPAPA-2026)"
+    - "The practice aid notes AI-enabled fraud risks such as generating fictitious documents to support nonexistent transactions (AT-AICPAPA-2026)"
+    - "Where substantive procedures alone are not sufficient, tests of controls are required (AS 2301.17), which matters when a client's AI cannot be independently verified (CAQ-GENAI-2024)"
+  human_checkpoints:
+    - "Auditor decides whether substantive tests alone suffice or controls must be tested (AT-AICPAPA-2026)"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: D
+  sources:
+    - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraphs on responding to AI risks and on audit evidence ('AI black box')" }
+    - { ref: CAQ-GENAI-2024, title: "Auditing in the Age of Generative AI", publisher: "Center for Audit Quality", type: professional-body, url: "https://thecaq.wpenginepowered.com/wp-content/uploads/2024/04/caq_auditing-in-the-age-of-generative-ai__2024-04.pdf", date: "2024-04", access: full, locator: "section on future state (citing AS 2301.17)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Idea: guidance on how to respond, not a reported audit. From discourse-17, with the CAQ point routed from
+    governance. Pattern 'other': assurance over AI-produced entity information as a new substantive test object.
+    The full practice aid sits behind an AICPA login and was not opened. The controls side of the same shift is
+    assurance-controls-testing-15 (testing controls that AI performs).
+
+- id: assurance-substantive-testing-06
+  title: Generative AI assistant that helps teams design substantive procedures from engagement documentation (KPMG Clara)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [expert-judgment, research-synthesis]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: >-
+    Teams must tailor substantive procedures to assessed risks and the entity, which means reading engagement
+    documents and methodology. In PCAOB staff's 2024 outreach, firms' generative AI use was mainly
+    administrative and research; potential areas listed included risk assessment, scoping and disclosure
+    completeness (PCAOB-GENAI-2024, pp.4-5).
+  solution: >-
+    KPMG said in July 2024 it had integrated generative AI into Clara for 90,000 auditors, interacting with
+    engagement documentation and methodology to help teams refine risk assessments, develop substantive testing
+    procedures and enhance documentation.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; announcement only; the 90,000 is the number of auditors the integration was announced for"
+      provenance: self-reported
+      source_ref: KPMG-CLARA-2025
+  prerequisites:
+    - "Engagement documentation and methodology held in the platform (KPMG-CLARA-2025)"
+    - "Firm-approved tools with data privacy and confidentiality safeguards on what can be uploaded (PCAOB-GENAI-2024, p.4)"
+  risks_and_guardrails:
+    - "Some firms barred generative AI in audit or attest procedures over data privacy and reliability concerns, and noted hallucinations (PCAOB-GENAI-2024, p.4; staff view, not Board policy)"
+    - "In ICAEW's single test, three general chatbots did not separate financial-statement-level from assertion-level risk and none performed risk assessment as a human auditor would (ICAEW-PIERPOINT-2025)"
+    - "Most IFIAR member inspections had seen minimal use of generative AI applications in public company audits (IFIAR-TTF-2025, p.7)"
+  human_checkpoints:
+    - "The engagement team member using the tool stays responsible for results and documentation; reviewers apply the same diligence as for other work (PCAOB-GENAI-2024, pp.4-5)"
+    - "Auditors remain in control of decision-making (KPMG-CLARA-2025)"
+  role_evolution: >-
+    PCAOB staff recorded that firms investing in generative AI expected it to augment, not replace, auditors,
+    and that some firms said their supervision and review policies had not changed (PCAOB-GENAI-2024).
+  evidence_grade: C
+  sources:
+    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04-22", access: full, locator: "background paragraph (July 2024 integration)" }
+    - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative AI in Audits and Financial Reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "pp.4-5 (current use, limitations, supervision)" }
+    - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work? (Helen Pierpoint)", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: "2025-09-24", access: full, locator: "analytical review and risk of material misstatement sections" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.7" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-21 and governance-16. The July 2024 integration is reported in KPMG's April 2025
+    release; the original July 2024 release was not opened. No named engagement result. ICAEW's test used a
+    fictional retailer and three models and is not a benchmark.
+
+- id: assurance-substantive-testing-07
+  title: Agent in Excel cleans, validates and reconciles client general-ledger data to the trial balance before substantive procedures
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [data-reporting]
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Raw client data arrives with mixed fields, inconsistent dates, blank rows and irrelevant headers, and
+    preparing it for journal-entry and other testing is repetitive, slow and error-prone (JOFA-EXCELAGENT-2026).
+    Only 19% of surveyed US firms have an automated data-ingestion solution (CPACOM-ATR-2025).
+  solution: >-
+    Two accounting academics (University of Akron) built a ChatGPT-for-Excel agent with a written 'skill' that
+    forces a plan, asks for approval before changing data, uses reviewable spreadsheet formulas, reconciles to
+    the trial balance and writes plain-English documentation for the reviewer. They name Claude for Excel and
+    DataSnipper as similar tools.
+  outcomes:
+    - lever: speed
+      description: "Simulated clean, validate and reconcile of a general-ledger extract took about ten minutes, against many hours manually according to the authors"
+      figure: "about 10 minutes (59,157 rows)"
+      measures: "Average time for the agent to clean, validate and reconcile 59,157 rows of simulated transaction-level general-ledger data to a trial balance; simulation adapted from a published case study, not a live engagement"
+      provenance: independent
+      source_ref: JOFA-EXCELAGENT-2026
+  prerequisites:
+    - "Enterprise-level licences for audit use (JOFA-EXCELAGENT-2026)"
+    - "Client data access: US firms cite poor client data (60%) and no access to client systems (53%) as blockers (CPACOM-ATR-2025)"
+  risks_and_guardrails:
+    - "The authors require an agent-prepared plan and human approval before any data change, and reviewable formulas (JOFA-EXCELAGENT-2026)"
+  human_checkpoints:
+    - "Auditor approves the plan and reviews the reconciliation and the generated documentation (JOFA-EXCELAGENT-2026)"
+  role_evolution: >-
+    Managers and partners refine the agent's 'skills' from staff feedback, comparable to maintaining a
+    procedure manual (JOFA-EXCELAGENT-2026).
+  evidence_grade: C
+  sources:
+    - { ref: JOFA-EXCELAGENT-2026, title: "Using an Excel agent to clean, validate, and reconcile data", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/issues/2026/oct/using-an-excel-agent-to-clean-validate-and-reconcile-data/", date: "2026-10-01", access: full, locator: "Introduction; 'The simulated case'; Steps 1-5" }
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Blockers and automated-solutions charts (PDF pp.9-10)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From discourse-09 (single source). Authors are Gang (Ernest) Pan and Li Wang. A demonstration on simulated
+    data, so capped at C; no firm deployment is named. Kept because it is the only entry on defining and
+    validating the population, the step full-population testing depends on.
+
+- id: assurance-substantive-testing-08
+  title: "Technology-assisted selection of items to test: all items, specific high-risk items or a risk-targeted sample"
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: intake-triage
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    PCAOB standards specified responsibilities for audit samples but not for items identified when testing
+    specific items or all items in a population, and the Board's research found auditors using technology to
+    identify such items (PCAOB-TAA-2024, background).
+  solution: >-
+    Tools identify and select journal entries, specific high-risk items or samples for testing. The amended AS
+    2301 applies its test-of-details and investigation requirements to every way of selecting items: all items,
+    specific items or audit sampling. A Thomson Reuters customer (Oberlander Financial Services) says Audit
+    Intelligence Test used with Audit Intelligence Analyze 'significantly' improves sample selection and
+    testing. Risk-scored contract selection for revenue testing is covered in #14.
+  outcomes:
+    - lever: capacity
+      description: "All six U.S. global network firms reported tools that select samples; average tools per firm rose"
+      figure: "6 of 6 firms; about 13 to about 18 tools per firm (about 38%) between 2018 and 2023"
+      measures: "U.S. global network firms reporting tools that assist in selecting samples, and average number of tools used by engagement teams per firm as reported to the PCAOB; about 90% of tools were for visualisation, summarisation, tabulation or modelling and under 7% used AI, blockchain or RPA"
+      provenance: self-reported
+      source_ref: PCAOB-TAA-2024
+    - lever: quality
+      description: "Practitioner says the tools improve sample selection; qualitative only"
+      figure: "none published"
+      measures: "Not applicable; a customer quotation in a vendor release"
+      provenance: vendor-published
+      source_ref: TR-AGENTIC-2025
+  prerequisites:
+    - "Clear criteria for item selection tied to the objective of the procedure (PCAOB-TAA-2024, discussion of AS 2301.48)"
+    - "Reliable data and, where relevant, controls over the information used (SEC-TAAORDER-2024, section II)"
+  risks_and_guardrails:
+    - "Selecting specific items is not audit sampling; results cannot be projected to the rest of the population (IAASB-ED500-2026, Appendix 2, paras 6-7)"
+    - "A risk-scored sample remains a sample; the FRC's example shows AI improving targeting, not replacing the sample (FRC-GENAI-2026, illustrative example 2)"
+    - "IFIAR members' common technology findings include insufficient testing of outliers (IFIAR-TTF-2025, pp.5-6)"
+    - "In IFIAR's 2025 survey, 46 of 420 inspected listed public-interest-entity audits where sampling was inspected had a finding (11%); not AI-specific (IFIAR-SURVEY-2026, Table B.2)"
+  human_checkpoints:
+    - "Auditor applies procedures appropriate to the objective to each selected item and investigates identified items (PCAOB-TAA-2024, discussion of AS 2301.48-.50)"
+  role_evolution: >-
+    The PCAOB's data show a growing toolset per firm but do not describe role changes (PCAOB-TAA-2024).
+  evidence_grade: B
+  sources:
+    - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Background; discussion of AS 2301.48-.50; economic analysis" }
+    - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II" }
+    - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "Oberlander quote, Audit Intelligence Test section" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "Appendix 2, paras 1-9" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "Illustrative example 2, pp.49-59" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6" }
+    - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from governance-08 and discourse-04 (the FRC contract-scoring part of discourse-04 moved to #14).
+    Named firms are the six U.S. global networks as listed by the PCAOB; the data are firm-reported for the 2023
+    inspection year and mostly describe non-AI analytics. The Oberlander statement is thin. Pattern follows the
+    controls-side analogue, assurance-controls-testing-04 (risk-scored sample selection).
+
+- id: assurance-substantive-testing-09
+  title: AI risk scoring to cut substantive sample sizes under a firm-approved methodology (Cherry Bekaert on MindBridge)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Firms that rely only on a third-party audit methodology may have to obtain a large share of assurance from
+    sampling, which in busy season means a senior spending hours on journal-entry selection or testing 200
+    revenue items (MINDBRIDGE-CHERRY-2022).
+  solution: >-
+    Cherry Bekaert adopted MindBridge in 2020 and built the deployment deliberately: research, standards
+    mapping, methodology and sampling-form development, QC validation and policy drafting, with a firm-wide
+    policy for each use. The aim is to obtain more assurance from risk scoring of full populations and so need
+    smaller samples.
+  outcomes:
+    - lever: cost
+      description: "Firm demonstrated a sample-size reduction on an illustrative client at moderate risk of material misstatement"
+      figure: "66% reduction in sample size"
+      measures: "Reduction in sample size demonstrated by Cherry Bekaert for a moderate risk of material misstatement in an illustrative client (a worked demonstration, not measured across live engagements), per the vendor's case study"
+      provenance: vendor-published
+      source_ref: MINDBRIDGE-CHERRY-2022
+  prerequisites:
+    - "Standards mapping, sampling-form development and QC validation before roll-out (MINDBRIDGE-CHERRY-2022)"
+    - "A firm-wide policy covering each use of the tool (MINDBRIDGE-CHERRY-2022)"
+  risks_and_guardrails:
+    - "The vendor says an independent algorithm audit by University College London Consulting found its algorithms operate as expected (MINDBRIDGE-CHERRY-2022; vendor-described, report not opened)"
+    - "IFIAR reports findings on thin testing of outliers and misreading of tool results (IFIAR-TTF-2025, pp.5-6)"
+  human_checkpoints:
+    - "Associates keep autonomy to make decisions and exercise professional judgment (MINDBRIDGE-CHERRY-2022)"
+  role_evolution: >-
+    Cherry Bekaert partners describe differentiating value for clients and freeing senior time in busy season
+    (MINDBRIDGE-CHERRY-2022). In June 2026 Cherry Bekaert chose Fieldguide as its strategic AI partner for
+    financial audit, internal audit and SOC on one platform (FIELDGUIDE-CHERRY-2026).
+  evidence_grade: B
+  sources:
+    - { ref: MINDBRIDGE-CHERRY-2022, title: "How Cherry Bekaert drove ROI for their audit engagements", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/resources/case-studies/cherry-bekaert-llp-case-study", date: "2022", access: full, locator: "sections 'Redefining risk to save time' and 'The value of implementing a vision' (year inferred)" }
+    - { ref: FIELDGUIDE-CHERRY-2026, title: "Cherry Bekaert Selects Fieldguide as Strategic AI Partner to Modernize Audit and Advisory Delivery", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/cherry-bekaert-fieldguide-financial-audit", date: "2026-06-03", access: full, locator: "paras 1-3" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6 (inspection findings)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From practice-14 (single source). The 66% is an illustration, so the entry stays at B. The case study's
+    year is uncertain (inferred from image upload paths). The statement that a firm needs 60% of its assurance
+    from sampling under a third-party methodology is a Cherry Bekaert director's quotation on the vendor page and
+    is not independently checked.
+
+- id: assurance-substantive-testing-10
+  title: Agents match sampled items to supporting documents and bank activity (evidence-to-sample matching, or vouching)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, transaction-processing]
+  pattern: reconcile-exceptions
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Vouching means opening many differently formatted invoices, contracts and bank records and tracing each
+    sampled amount by hand; a single customer payment can cover several invoices. A Thomson Reuters customer put
+    the work at about two full days per engagement before the tool. PwC says auditors spend much of substantive
+    testing gathering client information, matching it to systems and tracing and tying it before reaching the
+    differences where judgment adds value. A small broker-dealer and fund auditor (Sanville & Co) faced sample
+    selections of hundreds of transactions, with reviewers and the engagement quality reviewer absorbing the
+    backlog.
+  solution: >-
+    Tools extract data from varied supporting documents, match each sampled item to its evidence, keep an
+    evidence trail and flag gaps; the auditor works the exceptions. PwC Evidence Match, an agent-led module,
+    covers cash, receivables, payables and fixed assets, ingests about 20 kinds of document (Oct 2025 account;
+    30 in an Apr 2026 account) and connects to PwC's assurance skills library; its partner expects to use
+    something like it across substantive testing. Thomson Reuters Audit Intelligence Test, built with Valid8
+    Financial, matches samples to evidence and traces recorded transactions to bank activity, including one
+    payment matched to several invoices. At Sanville & Co, Fieldguide's Field Auditor agents trace incoming
+    client documents to the requested selections for revenue and related-party testing; the firm rebuilt its
+    audit programmes as firm-wide templates in the same project. Tests of controls use the same step
+    (assurance-controls-testing-07).
+  outcomes:
+    - lever: speed
+      description: "A named sole practitioner reports engagement time for organising client material and running tests falling from about two days to five or six hours"
+      figure: "about 16 hours to 5-6 hours per engagement"
+      measures: "Oberlander Financial Services PLLC's own estimate, quoted in the vendor's press release, of hours per engagement before and after Audit Intelligence Test; no sample, scope, method or quality measure stated"
+      provenance: vendor-published
+      source_ref: TR-AGENTIC-2025
+    - lever: speed
+      description: "Partner says sample selections of hundreds of transactions that took hours often took minutes"
+      figure: "hours to minutes, 'in many cases'"
+      measures: "Sanville & Co partner's description of time to test sample selections of hundreds of transactions, before and after; no timings or counts given"
+      provenance: vendor-published
+      source_ref: FIELDGUIDE-SANVILLE-2026
+    - lever: quality
+      description: "First PCAOB inspection conducted entirely on the platform ended with no comment forms"
+      figure: "zero comment forms"
+      measures: "PCAOB comment forms on one inspected broker-dealer engagement, the firm's first fully clean broker-dealer inspection; platform and methodology were overhauled together"
+      provenance: vendor-published
+      source_ref: FIELDGUIDE-SANVILLE-2026
+    - lever: growth
+      description: "Blended realisation on the firm's lowest-margin engagements rose"
+      figure: "$150-$200 an hour to $250 or more (up to $300-$350 in some cases)"
+      measures: "Blended realisation per hour on Sanville's lowest-priced, lowest-margin engagements, as reported by the firm via the vendor"
+      provenance: vendor-published
+      source_ref: FIELDGUIDE-SANVILLE-2026
+    - lever: quality
+      description: "Adjacent evidence: five general-purpose chat models on document-based audit tests (some were internal-audit and anti-corruption reviews)"
+      figure: "74-96% correct with basic prompts; 76-100% after prompt optimisation"
+      measures: "Correct pass/fail answers out of 167 document samples across eight tests, with the audit team's result as ground truth; optimised prompts were written from phase-one errors on the same samples"
+      provenance: independent
+      source_ref: GRACZYK-2025
+  prerequisites:
+    - "Access to client systems and usable client data (53% and 60% of surveyed US firms name these as blockers) (CPACOM-ATR-2025)"
+    - "Evaluation of the reliability of external information the company holds in electronic form, under AS 1105.10A, effective for fiscal years beginning on or after 15 Dec 2025 (SEC-TAAORDER-2024; PCAOB-PS2025-004)"
+    - "Ingestion of many document types, 'the client may hand you a napkin' (PwC partner), and integration with the firm's skills library (PWC-AT-2025)"
+    - "Audit programmes built as templates on the platform; a partner champion; Sanville's overhaul took under a year against an expected 18-24 months (FIELDGUIDE-SANVILLE-2026)"
+  risks_and_guardrails:
+    - "PwC names accuracy as the success measure for matching, because a match is a yes-or-no result, but publishes no figure (CFOBREW-PWC-2025)"
+    - "IRBA warns generative tools can produce realistic false evidence; a match to a forged document is weak, so practitioners urge corroboration with bank records and vendor data (IRBA-AI-2024; MINDBRIDGE-FAKEINV-2025; TR-BANKCONF-2026)"
+    - "AFM found auditors do not always verify the relevance and reliability of data fed to tools (AFM-BB-2025, Precondition 2)"
+    - "In FinancialAuditBench, agents vouched receivables to a client-prepared cash receipts report instead of a bank statement (ARXIV-FAB-2026, section 6.3)"
+    - "In the Polish study, ChatGPT passed 19 defective samples of 167 with basic prompts, and models ignored alternative evidence when a signature was missing (GRACZYK-2025, section 4)"
+    - "A single clean inspection on one engagement is not evidence of tool accuracy (FIELDGUIDE-SANVILLE-2026)"
+  human_checkpoints:
+    - "Each match carries an evidence trail a reviewer can check against the documents (PWC-AT-2025)"
+    - "Auditors analyse the anomalies and differences that matching surfaces (CFOBREW-PWC-2025)"
+    - "Fieldguide agents stop at major steps for review and cite sources for each result; reviewers apply judgment to exceptions (FIELDGUIDE-FIELDAGENTS-2025; FIELDGUIDE-SANVILLE-2026)"
+    - "Caseware says nothing is written into the engagement until a human reviews, accepts, edits or rejects it (CASEWARE-VERITY-2026)"
+  role_evolution: >-
+    PwC says AI systems need significant expertise to build, test and monitor, so some people move into those
+    roles; it is hiring engineers it would not previously have hired into assurance and wants dual-track CPA and
+    data-science recruits (CFOBREW-PWC-2025; PWC-AT-2025). At Sanville, first-year staff now do complex revenue
+    testing because reviewers have bandwidth to guide them (FIELDGUIDE-SANVILLE-2026).
+  evidence_grade: A
+  sources:
+    - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "section 'Introducing New AI-powered Audit Solutions' (Audit Intelligence Test; Oberlander quote)" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraphs on Evidence Match (Maryanski) and on hiring (Panson)" }
+    - { ref: CFOBREW-PWC-2025, title: "A look at PwC's 'next generation' audit", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/2025/11/05/a-look-at-pwc-s-next-generation-audit", date: "2025-11-05", access: full, locator: "paras 5-7 and 'ROI' paragraphs (Kosar)" }
+    - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 'In This Critical Part of Audits, the Accountant's Role Is Shrinking Fast', 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "PwC paragraph on the evidence-match tool (30 document types); read via text mirror" }
+    - { ref: FIELDGUIDE-SANVILLE-2026, title: "How Sanville & Co passed a PCAOB inspection with zero comment forms in under a year with Fieldguide", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/case-studies/how-sanville-co-passed-a-pcaob-inspection-with-zero-comment-forms-in-under-a-year-with-fieldguide", date: "2026", access: full, locator: "Key Results; 'Building a Methodology'; 'A Clean Inspection'" }
+    - { ref: FIELDGUIDE-FIELDAGENTS-2025, title: "Increase Capacity and Audit Quality with Field Agents for Financial Audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit", date: "2025-06-04", access: full, locator: "section 'Fully Automate Audit Testing'" }
+    - { ref: GRACZYK-2025, title: "Use of large language models (LLMs) in auditing as a tool to reduce information asymmetry and fraud risk in the shareholder-management relationship (Graczyk, Majek, Modzelewski)", publisher: "Yearbook of Auditing and Accounting 2025", type: academic, url: "https://pana.gov.pl/wp-content/uploads/2026/04/6.-YoAA_Use-of-large-language-models-LLMs-in-auditing-as-a-tool-o-reduce-information-asymmetry-and-fraud-risk-in-the-hareholder-management-relationship.pdf", date: "2025", access: full, locator: "sections 3-5; Tables 3 and 5" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "section 6.3 failure analysis" }
+    - { ref: AFM-BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "Precondition 2, building blocks 4-6" }
+    - { ref: IRBA-AI-2024, title: "Artificial Intelligence Audit Risks Mitigation Update (communique)", publisher: "IRBA (South Africa)", type: regulator, url: "https://www.irba.co.za/upload/40_%20Artificial%20Intelligence%20Audit%20Risks%20Mitigation%20Update.pdf", date: "2024-09-19", access: full, locator: "p.1" }
+    - { ref: MINDBRIDGE-FAKEINV-2025, title: "Fake Invoices, Real Risks: Why Auditors Must Rethink Their Approach in the Age of AI", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/blog/fake-invoices-real-risks-why-auditors-must-rethink-their-approach-in-the-age-of-ai", date: "2025-04-15", access: full, locator: "section 'What This Means for Auditors and the Audit Process'" }
+    - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "section 'Appearance is not authentication'" }
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Barriers section (pp.7-8)" }
+    - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II; section III on AS 1105.10A" }
+    - { ref: PCAOB-PS2025-004, title: "Policy Statement Regarding Implementation of Paragraph .10A of AS 1105, Audit Evidence (Release 2025-004)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/pcaob-release-no-2025-004.pdf", date: "2025-09-18", access: full, locator: "p.1 and footnote 2 (text of paragraph .10A)" }
+    - { ref: CASEWARE-VERITY-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: "2026-07-28", access: full, locator: "section on human review of suggestions" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-04, practice-05, practice-08, discourse-03 and governance-03. Grade A rests on two
+    named-firm figures published by vendors (Oberlander, one practitioner's estimate; Sanville, a vendor case
+    study); none measures match accuracy. Canonical home of the measured matching figures: they are tests of
+    details, and assurance-controls-testing-07 quotes Oberlander and Sanville for the controls variant of the
+    same step. KPMG's expense-vouching agents are in #20. PwC's 'already has' Evidence Match is PwC's own claim;
+    the 20 versus 30 document-type accounts conflict on timing. PwC's Simplified Audit - Execute, which reads
+    supporting documents and flags missing information (CFODIVE-PWC-2026), may overlap; the source does not say.
+    Thomson Reuters' 'up to 70%' belongs to a different product (#14). The Sanville page is undated (2026
+    inferred).
+
+- id: assurance-substantive-testing-11
+  title: Firm-built Excel agents for cash, journal-entry and financial-statement testing, with reviewer-side agents (FGMK on DataSnipper)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    Testing each selection means locating the right evidence, extracting values and comparing them with what
+    was recorded; preparers build workpapers by hand and reviewers re-check them (DATASNIPPER-CONNECT-2026).
+  solution: >-
+    FGMK built agents in DataSnipper Excel Agents for cash testing, journal-entry testing and
+    financial-statement testing and used them on busy-season work. Preparer-side agents build workpapers and
+    snip source evidence; reviewer-side agents check consistency across a workbook and check that financial
+    statements roll up. FGMK's QC department also runs financial statements through an agent alongside its own
+    review. In 2026 FGMK joined the design-partner programme for Alwin, a cloud agent platform launched 22 Sep
+    2026 that runs whole procedures across hundreds of documents with every step logged.
+  outcomes:
+    - lever: speed
+      description: "DataSnipper reports that Excel Agents cut FGMK's testing time per selection"
+      figure: "30-45 minutes to about 5 minutes per selection"
+      measures: "Testing time per selection at FGMK before and after Excel Agents, as reported in DataSnipper's recap of its 2026 New York event; test type, sample and method not stated"
+      provenance: vendor-published
+      source_ref: DATASNIPPER-CONNECT-2026
+  prerequisites:
+    - "Agents built and approved by the firm, with control over who can create and who can use them (DATASNIPPER-FGMK-2026)"
+    - "A contract term that client information does not train the models (DATASNIPPER-FGMK-2026)"
+    - "Source documents the agent can snip, so every number traces to its source (DATASNIPPER-ALWIN-2026)"
+  risks_and_guardrails:
+    - "Every agent is versioned and approved before it runs; every result traces to its source document and the auditor signs off (DATASNIPPER-CONNECT-2026)"
+    - "FGMK still reviews everything itself; the review agents are a second pass (DATASNIPPER-FGMK-2026)"
+  human_checkpoints:
+    - "Auditor signs off at the end; review notes are left on cells and sent in batches (DATASNIPPER-FGMK-2026)"
+  role_evolution: >-
+    FGMK splits agents by role (preparer, reviewer, QC) and manages who builds and who uses them
+    (DATASNIPPER-FGMK-2026).
+  evidence_grade: A
+  sources:
+    - { ref: DATASNIPPER-CONNECT-2026, title: "DataSnipper Connect New York 2026: 6 Takeaways on AI and Auditing", publisher: "DataSnipper", type: conference, url: "https://www.datasnipper.com/resources/the-6-biggest-takeaways-from-datasnipper-connect-new-york-2026", date: "2026", access: full, locator: "Takeaway 1 (page undated; refers to a September 2026 release)" }
+    - { ref: DATASNIPPER-FGMK-2026, title: "FGMK Uses Alwin to Automate Larger, More Complex Audit Work Securely", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/fgmk-alwin-success-story", date: "2026", access: full, locator: "'Taking audit automation further' and Q&A (page undated)" }
+    - { ref: DATASNIPPER-ALWIN-2026, title: "DataSnipper Launches Alwin: End-to-End Agentic Automation for Audit & Finance", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance", date: "2026-09-22", access: full, locator: "paras 1-3 (Robbins, FGMK)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From practice-06 (single source). Graded A on one named firm's before-and-after figure, vendor-published,
+    with no method. Alwin itself is an announced product; FGMK is a design partner. The QC-agent use is routed to
+    quality-management. DataSnipper's vendor claims (600,000+ users in 175 countries, all Big Four as customers,
+    $1.4B of productivity savings in 2025) are in #12's sources and are not independently measured.
+
+- id: assurance-substantive-testing-12
+  title: Excel-embedded evidence snipping and AI extraction for tie-out and vouching (DataSnipper)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: document-to-decision
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    Auditors reconcile numbers from invoices, bank statements and inventory documents to transactions by hand,
+    and reviewers must re-find the evidence (DATASNIPPER-ODP-2026).
+  solution: >-
+    The auditor 'snips' values from source documents into Excel, where they reconcile to the transaction and keep
+    a link to the source, so a reviewer can click through. AI Extractions and DocuMine add extraction from
+    unstructured documents across languages and a document question-and-answer tool. DataSnipper says AI
+    pre-validated more than two million data points from client-provided documents in 2025 through its PBC
+    product.
+  outcomes:
+    - lever: cost
+      description: "DataSnipper cites a UK Parliament Public Accounts Committee hearing as referencing the National Audit Office reporting efficiency savings and faster routine work"
+      figure: "GBP 400,000 of efficiency savings; routine audit work up to three times faster"
+      measures: "Figures DataSnipper attributes to the NAO via a PAC hearing on the NAO Annual Report; the work covered, baseline and period are not stated, and the hearing record was not opened"
+      provenance: vendor-published
+      source_ref: DATASNIPPER-PRODUCTIVITY-2026
+    - lever: capacity
+      description: "Volume of client-document data points pre-validated by AI in the vendor's PBC product"
+      figure: "more than 2 million data points (2025)"
+      measures: "Data points from client-provided documents that DataSnipper says its AI pre-validated across customers in 2025; not an accuracy or audit-quality measure"
+      provenance: vendor-published
+      source_ref: DATASNIPPER-PRODUCTIVITY-2026
+  prerequisites:
+    - "Working papers in Excel and source documents that can be loaded into the tool (DATASNIPPER-PRODUCTIVITY-2026)"
+    - "Regional data residency for enterprise customers; DataSnipper says it added U.S., EU and Australian data centres (DATASNIPPER-PRODUCTIVITY-2026)"
+  risks_and_guardrails:
+    - "Every number traces to its snip, giving reviewers a visible trail (DATASNIPPER-ALWIN-2026)"
+    - "Company-provided external information still needs the source-and-handling analysis of AS 1105.10A (PCAOB-PS2025-004)"
+  human_checkpoints:
+    - "Auditor selects and snips the evidence; reviewer clicks through to the source (DATASNIPPER-ODP-2026)"
+  role_evolution: >-
+    The vendor says its audience widened in 2025 from external audit to internal audit and corporate finance,
+    with new corporate customers up nearly 100% year over year (DATASNIPPER-PRODUCTIVITY-2026).
+  evidence_grade: B
+  sources:
+    - { ref: DATASNIPPER-PRODUCTIVITY-2026, title: "DataSnipper Delivers $1.4B in Productivity Savings in 2025 as Audit and Finance Enter the AI Era", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-delivers-1-4b-in-productivity-savings-in-2025-as-audit-and-finance-enter-the-ai-era", date: "2026-01-14", access: full, locator: "sections 'Scaling AI-Powered Workflows Globally' and 'Measurable Productivity Savings'" }
+    - { ref: DATASNIPPER-CHILE-2026, title: "DataSnipper Brings AI-Powered Audit Technology to Chile", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-brings-ai-powered-audit-technology-to-chile", date: "2026-03-25", access: full, locator: "para 2 (600,000+ users in 175 countries, vendor claim)" }
+    - { ref: DATASNIPPER-ODP-2026, title: "DataSnipper Success Stories - The ODP Corporation", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/the-odp-corporation", date: "2026", access: full, locator: "'Using DataSnipper as an Internal Audit Reviewer' (undated internal-audit story)" }
+    - { ref: DATASNIPPER-ALWIN-2026, title: "DataSnipper Launches Alwin: End-to-End Agentic Automation for Audit & Finance", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance", date: "2026-09-22", access: full, locator: "paras 1-3" }
+    - { ref: PCAOB-PS2025-004, title: "Policy Statement Regarding Implementation of Paragraph .10A of AS 1105, Audit Evidence (Release 2025-004)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/pcaob-release-no-2025-004.pdf", date: "2025-09-18", access: full, locator: "p.1 and footnote 2" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From practice-07 (single source). Capped at B: the only named-organisation figure (NAO) is second-hand and the
+    type of work is not stated. The ODP Corporation story concerns internal audit (SOX and operational audits)
+    and is cited only for the reviewer workflow. An undated Baker Tilly Germany story on the vendor site (40-50%
+    time saved) is not relied on.
+
+- id: assurance-substantive-testing-13
+  title: Automated financial-statement tie-out and testing in fund audits (PwC Audit Innovation Hub pilot)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: document-to-decision
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: piloting
+  problem: >-
+    Fund audits require financial-statement tie-outs and testing of extracted data and documents, a large volume
+    of repeat work per engagement (PWC-AT-2025).
+  solution: >-
+    The tool extracts, organises and tests financial data and documents for non-registered fund-to-fund audits
+    under AICPA standards, automating parts of tie-out and testing. In October 2025 it was being tested with
+    certain asset and wealth management engagement teams, with a plan to expand the pilot.
+  outcomes:
+    - lever: capacity
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; PwC describes a pilot with no figures"
+      provenance: self-reported
+      source_ref: PWC-AT-2025
+  prerequisites:
+    - "Fund-sector engagement teams willing to pilot (PWC-AT-2025)"
+  risks_and_guardrails:
+    - "PwC says it measures usefulness and performance per tool and will retire tools that stop adding value (CFOBREW-PWC-2025)"
+  human_checkpoints:
+    - "Not described in the source"
+  role_evolution: >-
+    None described for this tool; PwC's broader comments on hiring engineers and dual-track recruits are in
+    PWC-AT-2025.
+  evidence_grade: B
+  sources:
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph on Audit Innovation Hub" }
+    - { ref: CFOBREW-PWC-2025, title: "A look at PwC's 'next generation' audit", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/2025/11/05/a-look-at-pwc-s-next-generation-audit", date: "2025-11-05", access: full, locator: "'ROI' paragraphs (Kosar)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From practice-18 (single source). Pilot status per October 2025; no later report found. Graded B only because
+    PwC names the engagement area in which it is being tested.
+
+- id: assurance-substantive-testing-14
+  title: Language-model contract and lease review to target and support revenue and lease testing
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, research-synthesis]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Checking many contracts (a Thomson Reuters product head's example: 100 leases of which 15 differ slightly) or
+    contracts spanning hundreds of pages is repetitive and slow. Revenue testing often samples contracts on a
+    risk basis, and a tool that only screens for a term can be mistaken for a complete read (FRC-GENAI-2026,
+    pp.18 and 49).
+  solution: >-
+    Thomson Reuters' CoCounsel Document Analysis, a spreadsheet-style AI grid integrated with its audit product,
+    applies agentic AI to extract and review client documents at scale; it was in a US early-adopter programme
+    with general availability planned for January 2026. TR's audit product head says AI can already do much of
+    the lease-checking work. EY's assurance AI leader expects agents to catch inconsistencies in revenue
+    contracts of hundreds of pages. RSM Australia says extraction of key terms from leases and contracts has
+    reached mid-tier firms through vendors. CPA.com reports that some firms use AI to analyse client contracts,
+    leases and debt agreements, without naming them. The FRC's illustrative design for revenue testing: contracts
+    are chunked and indexed with stable identifiers; a model extracts risk indicators under prewritten prompts,
+    unambiguous ones (bonus, contingent payment, refund, long term) and ones needing evaluation (distinct
+    performance obligations, control transferring over time, constrained variable consideration), each evaluated
+    by its own prompt; a computation step scores each contract, and those above a threshold form the sample the
+    auditor tests.
+  outcomes:
+    - lever: speed
+      description: "Early adopters of a document-analysis product report faster preparation and review; not specific to contract testing"
+      figure: "up to 70% faster"
+      measures: "Vendor's description of preparation and workpaper review time for unnamed early-adopter customers of CoCounsel Document Analysis; baseline, sample and what 'up to' covers are not stated"
+      provenance: vendor-published
+      source_ref: TR-AGENTIC-2025
+    - lever: quality
+      description: "Contract-validity test in the Polish study: models misread automatic-renewal clauses with basic prompts"
+      figure: "ChatGPT erred in 5 cases; Gemini and Claude erred or over-flagged in 3 cases each"
+      measures: "Cases in the contract-validity test where model results differed from the audit team's, within a 167-sample study of general chat models"
+      provenance: independent
+      source_ref: GRACZYK-2025
+  prerequisites:
+    - "A model chosen for audit and accounting knowledge, sector and language coverage, and a context window large enough for whole contracts (FRC-GENAI-2026, illustrative example 2)"
+    - "Contracts digitised, chunked and indexed with stable identifiers so output can cite its source (FRC-GENAI-2026, p.51)"
+    - "Prompts designed with specialist technical audit and accounting teams, and retrieval of curated firm technical resources for the evaluation step (FRC-GENAI-2026, p.52)"
+    - "Certification on contracts from different sectors and terminology, with each risk indicator present and deliberately ambiguous cases to test escalation (FRC-GENAI-2026, illustrative example 2)"
+  risks_and_guardrails:
+    - "FRC lists four deficient-output risks: extraction prompt not fit for purpose, the model misses or adds content, the model misevaluates, and weights or threshold inappropriate (FRC-GENAI-2026, p.51)"
+    - "An auditor may take a tool's lease summary as complete and skip other procedures to find present obligations such as provisions (FRC-GENAI-2026, p.18)"
+    - "In the Polish study, models were over-cautious or wrong on automatic-renewal clauses, and ChatGPT treated partial-period coverage as valid (GRACZYK-2025, section 4)"
+    - "RSM Australia advises being wary of tools marketed as auditing a balance or concluding (RSM-AUS-2026)"
+  human_checkpoints:
+    - "The tool escalates to a human at extraction and evaluation when uncertain; the auditor sees which indicators were present for each contract and tests the selected contracts (FRC-GENAI-2026, pp.49-51)"
+    - "The file records that an AI tool selected the sample, the criteria met for its use, the contracts selected, the indicators and the testing done (FRC-GENAI-2026, p.50)"
+    - "Auditor applies judgement to the AI's findings and decides what further procedures are needed (ICAEW-FRCVIEW-2026)"
+  role_evolution: >-
+    Thomson Reuters product leaders say time shifts from hours of document review toward analysis and judgment
+    (TR-STATE-2026; vendor view). In the FRC example, technical audit and accounting teams set indicator weights
+    and thresholds, and engagement auditors test the contracts the tool selects (FRC-GENAI-2026). A senior audit
+    manager at Sensiba says the tool helps teams shift mindset to adopting AI responsibly (TR-AGENTIC-2025).
+  evidence_grade: C
+  sources:
+    - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "CoCounsel Document Analysis paragraph; Notes to Editors" }
+    - { ref: TR-STATE-2026, title: "The state of AI in audit in 2026: Interview with experts", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/", date: "2026-03-30", access: full, locator: "Question 2 (Cobbe: 100 leases, 15 slightly different)" }
+    - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "EY paragraphs (Jackson: contracts spanning hundreds of pages)" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.18 (misinterpretation risk); illustrative example 2, pp.49-56" }
+    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08", access: full, locator: "section 'Fieldwork', paras 2-3" }
+    - { ref: GRACZYK-2025, title: "Use of large language models (LLMs) in auditing as a tool to reduce information asymmetry and fraud risk in the shareholder-management relationship (Graczyk, Majek, Modzelewski)", publisher: "Yearbook of Auditing and Accounting 2025", type: academic, url: "https://pana.gov.pl/wp-content/uploads/2026/04/6.-YoAA_Use-of-large-language-models-LLMs-in-auditing-as-a-tool-o-reduce-information-asymmetry-and-fraud-risk-in-the-hareholder-management-relationship.pdf", date: "2025", access: full, locator: "section 4 error analysis (contract clauses)" }
+    - { ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Misinterpretation or misuse will take the most work'" }
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "AI and audit section (contracts, leases and debt agreements)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-12 (C), practice-13 (idea), governance-05 (C), discourse-05 (C) and the FRC part of
+    discourse-04. The FRC example is a regulator's hypothetical design; the FRC says the examples are one way
+    tools may be designed and do not describe approved practice. No named audit deployment with a measured
+    result was found; the Polish evidence uses general chat models, not audit products. EY's remark is a
+    forward-looking expectation.
+
+- id: assurance-substantive-testing-15
+  title: Agents applied to judgment-heavier substantive tests (complex revenue such as pharmaceutical rebates; memos checked against data)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Revenue with complex terms such as rebates needs judgment-heavy testing that routine tools did not cover, and
+    management memos and analyses can describe something the underlying data does not support
+    (CTRLCOUNCIL-WSJ-2026).
+  solution: >-
+    PwC's US assurance transformation leader said the firm was attempting to apply AI agents to assess whether US
+    pharmaceutical rebate revenue was recorded properly, and expects agents to take on tasks with more judgment
+    over time, with human oversight. EY's global and Americas assurance AI leader said agents will improve at
+    spotting inconsistencies and called the ability to flag a memo not supported by the underlying data
+    'incredibly powerful' (an expectation, not a reported result).
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable"
+      provenance: self-reported
+      source_ref: CTRLCOUNCIL-WSJ-2026
+  prerequisites:
+    - "Tools that ingest many client document types, and unstructured documents and structured data together (CTRLCOUNCIL-WSJ-2026)"
+  risks_and_guardrails:
+    - "PwC's leader said humans would continue to provide oversight as agents take on more judgment (CTRLCOUNCIL-WSJ-2026)"
+    - "Probabilistic tools may not give the same output every time; RSM UK's audit data analytics director suggests a rules-based tool alongside AI for data analysis (ICAEW-FRCVIEW-2026)"
+    - "In a benchmark of synthetic engagements, revenue workpapers had an average strict pass rate of 7.58% across eleven models (ARXIV-FAB-2026, Table 3)"
+  human_checkpoints:
+    - "Human oversight of agent testing; auditor reviews flagged inconsistencies (CTRLCOUNCIL-WSJ-2026)"
+  role_evolution: >-
+    Not described beyond oversight (CTRLCOUNCIL-WSJ-2026).
+  evidence_grade: B
+  sources:
+    - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "PwC paragraph (Panson, pharmaceutical rebates); EY paragraph (Jackson on inconsistencies)" }
+    - { ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Use the illustrative examples' (Bukowski-Kruszyna)" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from discourse-06 (B) and discourse-16 (idea). Grade B is generous: it rests on one sentence from a
+    named PwC leader about an attempt ('attempting'), read through a republished copy of the WSJ article. The EY
+    memo-checking part is an idea only (an expectation reported second-hand).
+
+- id: assurance-substantive-testing-16
+  title: Substantive analytical procedures with technology-built expectations from detailed or unstructured data
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [data-reporting, review-assurance]
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: >-
+    Year-over-year comparisons dominate substantive analytics in many firms; only 11% of 54 US firms have an
+    automated solution for substantive analytics and 89% say they are not using technology to enable it
+    (CPACOM-ATR-2025). Standards say substantive analytical procedures alone are unlikely to be sufficient for
+    significant risks, so whether a technology-assisted procedure counts as a test of details or an analytical
+    procedure matters, and practice has diverged on the categories (PCAOB-TAA-2024; IAASB-EDOVERALL-2026, para 37).
+  solution: >-
+    Draft ISA 520's application material says tools may turn unstructured industry reports into structured
+    information, or model the relationship between revenue and cost of sales with seasonal, price and volume
+    variables, to build a more precise expectation (an expectation is the auditor's estimate of what the recorded
+    amount should be). The draft says auditors commonly analyse entire populations with technological tools to
+    sharpen risk identification, and that technology-enabled analysis may leave the risk of material misstatement
+    in the rest of the population acceptably low. Firms that report using technology mention visualisation,
+    full-population testing, AI anomaly detection, continuous testing, ratio analysis, and expense and revenue
+    testing. Deloitte Netherlands (internal audit) and KPMG (SOX) describe 100% transaction coverage 'where data
+    quality allows' or 'where appropriate'.
+  outcomes:
+    - lever: capacity
+      description: "Adoption of automated solutions for substantive analytics among surveyed US firms; a prevalence figure, not an outcome"
+      figure: "11% of firms (89% not using technology to enable substantive analytics)"
+      measures: "Share of the 54 firms with complete data in the 2025 CPA.com and AICPA benchmark with an automated solution for substantive analytics; the 89% is the report's separate statement of firms not leveraging technology for it"
+      provenance: independent
+      source_ref: CPACOM-ATR-2025
+    - lever: quality
+      description: "Regulators frequently seeing automated tools in substantive procedures (revenue, inventory and similar accounts, not analytics alone)"
+      figure: "55% (2024); 51% (2023); about 63% (2025, read from an unlabelled chart)"
+      measures: "Share of IFIAR members 'frequently' observing automated tools and techniques in substantive audit procedures in audit files"
+      provenance: independent
+      source_ref: IFIAR-TTF-2025
+  prerequisites:
+    - "Disaggregated, reliable data and access to client data; even firms using analytics cite data access as a difficulty (CPACOM-ATR-2025, p.19)"
+    - "Validated tools and models with traceable outputs (DELOITTE-NL-SAMPLE-2026)"
+    - "Updated definitions: ED-330 and ED-520 propose new definitions of tests of details and substantive analytical procedures (IAASB-EDOVERALL-2026, paras 37 and 40)"
+  risks_and_guardrails:
+    - "The IAASB says generative tools may make it impossible to fully evaluate inputs or confirm the tool operates as designed, and chose guidance over a requirement (IAASB-ED500-2026, EM paras 67-69)"
+    - "FRC: outputs on whole populations may be less conclusive for each item; professional judgment decides what conclusions follow (FRC-GENAI-2026, p.19)"
+    - "Firm commenters on the PCAOB amendments preferred not to compare tests of details with analytical procedures; the Board's separate project on substantive analytical procedures was still pending when the amendments were approved (SEC-TAAORDER-2024, footnote 19)"
+    - "In IFIAR's 2025 survey, 15 of 331 inspected listed public-interest-entity audits had a finding on substantive analytical procedures (5%); a baseline, not AI-specific (IFIAR-SURVEY-2026, Table B.2)"
+  human_checkpoints:
+    - "Auditor evaluates whether the expectation is precise enough, investigates differences and unusual items, and obtains evidence for management's explanations (IAASB-ED520-2026, A21-A23; EM para 23)"
+  role_evolution: >-
+    About a third of surveyed firms said they need at least one non-traditional skill, and about 20% had hired
+    staff with non-traditional backgrounds such as data analysts and IT specialists (CPACOM-ATR-2025, Theme 3).
+    Deloitte Netherlands says AI reduces the mechanical workload so experienced auditors can focus on judgement
+    and investigation, in an internal-audit context (DELOITTE-NL-SAMPLE-2026).
+  evidence_grade: C
+  sources:
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "automated-solutions chart (p.10); 'Risk-driven approach and technology' (p.19); Theme 3" }
+    - { ref: IAASB-ED520-2026, title: "Exposure Draft: Proposed ISA 520 (Revised), Analytical Procedures, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-520-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "EM paras 5 and 23; application material A20-A23" }
+    - { ref: IAASB-EDOVERALL-2026, title: "Explanatory Memorandum to the Exposure Drafts for the Audit Evidence and Risk Response Project (overall)", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-Overall-Project-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "paras 37, 39-40" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "EM section 1-F, paras 65-69" }
+    - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Discussion of AS 2301.48 (test of details versus analytical procedures)" }
+    - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section III; footnote 19" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.19" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.5 (substantive audit procedures row)" }
+    - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
+    - { ref: DELOITTE-NL-SAMPLE-2026, title: "From sample to full-population examination: what AI changes for the third line", publisher: "Deloitte Netherlands", type: firm, url: "https://www.deloitte.com/nl/en/Industries/financial-services/perspectives/from-sample-to-full-population-examination.html", date: "2026-09-16", access: full, locator: "sections 'What broader coverage actually enables' and 'Transaction testing'" }
+    - { ref: KPMG-SOX-2026, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG US", type: firm, url: "https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html", date: "2026-09-24", access: full, locator: "Point of view #4: Scalable, AI-enabled testing" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-19, discourse-08 and governance-07. Change scope set to step (two of three). No named
+    firm deployment of AI-built expectations was found. The IAASB drafts are exposure drafts (comments due 15 Dec
+    2026), not final standards, and frame whole-population analysis mainly as aiding risk identification. The
+    Deloitte NL and KPMG items describe internal audit and SOX respectively (adjacent). The IFIAR 2025 value is
+    from IFIAR-TTF-2026, p.10.
+
+- id: assurance-substantive-testing-17
+  title: Digital confirmation platforms and direct, authenticated access to bank and third-party data
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [transaction-processing, review-assurance, coordination-scheduling]
+  pattern: other
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Firms prepared and sent bank, lawyer, customer and supplier confirmation requests by hand, stored responses
+    manually and chased late replies; one firm's earlier platform allowed only two mailings per third party and
+    was distrusted by recipients. Much 'external' evidence reaches auditors as a screenshot, PDF, email or scanned
+    letter, which can now be forged or intercepted cheaply (a confirmation vendor's view). Bank transaction data
+    reached BDO NL as files that clients downloaded and sent, sometimes more than 156 per engagement, with risk
+    of omission or manipulation. The PCAOB's confirmation standard was written over 30 years ago and changed
+    little after 2003, while inspection findings and enforcement cases on auditors' control of the process
+    continued.
+  solution: >-
+    Platforms create, send and track confirmation requests with standard templates, reminders, roll-forward of
+    prior-year requests without fresh client authority, a status dashboard and an audit trail, and authenticate
+    the source and path of each response. Named users of Circit: Moore Polska and Crowe Spain (confirmations,
+    client document requests and AR/AP confirmations), Beever & Struthers, now Menzies (80-90% of its
+    confirmations), and Kreston Iberaudit. Direct feeds: Rabobank customers consent, through Circit, to share
+    transaction data directly with their auditor; BDO NL tested it and aims to rely less on sampling in favour of
+    100% testing and, later, continuous auditing. Standards now recognise this: the PCAOB's new standard covers
+    paper and electronic methods and requires confirming cash held by third parties or otherwise obtaining
+    evidence by directly accessing external information; SAS No. 150 (published 13 Jul 2026, effective for
+    periods ending on or after 15 Dec 2028) recognises direct access to a knowledgeable external source; ED-500
+    lists confirmation through an electronic platform as an example of a technological tool.
+  outcomes:
+    - lever: capacity
+      description: "A named audit department director reports hours saved per audit across confirmations, client document requests and AR/AP confirmations"
+      figure: "up to 20 hours per audit; document PDF preparation from about 3 minutes to 3 seconds"
+      measures: "Moore Polska's audit-team hours saved per audit across three Circit products, stated by its Director of the Audit Department in a vendor case study; method not stated"
+      provenance: vendor-published
+      source_ref: CIRCIT-MOORE-2026
+    - lever: speed
+      description: "Share of bank confirmations returned within three months of year-end rose against the firm's internal benchmark"
+      figure: "improved; no figure published"
+      measures: "Beever & Struthers' internal benchmark of bank confirmation responses received within three months of year-end; before and after rates not stated"
+      provenance: vendor-published
+      source_ref: CIRCIT-BEEVER-2026
+    - lever: capacity
+      description: "Adoption of automated confirmation solutions among surveyed US firms; a prevalence figure"
+      figure: "39% of firms"
+      measures: "Share of the 54 firms with complete data in the 2025 CPA.com and AICPA benchmark with an automated solution for confirmations (survey marketed to firms, not a random sample)"
+      provenance: independent
+      source_ref: CPACOM-ATR-2025
+  prerequisites:
+    - "Adoption work beyond licensing: training key users, internal communications, a consistent workflow (CIRCIT-BEEVER-2026)"
+    - "Banks and other third parties responding through authenticated channels, and a bank that offers a consent-based feed with clients who grant consent (TR-BANKSTATE-2026; CIRCIT-RABOBANK-BDONL-2026)"
+    - "Controls over how requests are sent and responses received, so the auditor keeps control of the process (PCAOB-CONFIRM-2023)"
+    - "A platform or data connection the auditor can evaluate for reliability (IAASB-ED500-2026, Appendix 3)"
+  risks_and_guardrails:
+    - "The IAASB's March 2026 project proposal notes electronic or automated confirmation systems may lack sufficient authentication, and requests or responses may be intercepted or manipulated (IAASB-500SERIES-2026)"
+    - "The PCAOB Board set the new standard's effective date as fiscal years ending on or after 15 June 2025, subject to SEC approval, which was not confirmed in this research (PCAOB-CONFIRM-2023)"
+    - "Negative confirmation requests alone do not provide sufficient appropriate evidence (PCAOB-CONFIRM-2023); SAS No. 150 adds conditions for negative confirmations (JOFA-SAS150-2026)"
+    - "Clients can grant and revoke bank-data consent at any time (CIRCIT-RABOBANK-BDONL-2026)"
+    - "Mostly workflow automation and data connections, not AI models; Beever & Struthers describes AI and APIs as a next step (CIRCIT-BEEVER-2026)"
+  human_checkpoints:
+    - "Auditor keeps control of the confirmation request and judges the reliability of responses (IAASB-500SERIES-2026; PCAOB-CONFIRM-2023)"
+    - "Auditor investigates the outliers, anomalies and risks that analytics on bank data flag (CIRCIT-RABOBANK-BDONL-2026)"
+  role_evolution: >-
+    Beever & Struthers staffed the work with a digital transformation lead on a university knowledge-transfer
+    project (CIRCIT-BEEVER-2026); Kreston Iberaudit plans to extend use across its whole audit team
+    (CIRCIT-KRESTON-2026). BDO NL describes a shift from visiting the client twice a year to more continuous work
+    with earlier alerts, as an ambition (CIRCIT-RABOBANK-BDONL-2026).
+  evidence_grade: A
+  sources:
+    - { ref: CIRCIT-MOORE-2026, title: "Moore Polska saves 20 hours per Audit with Circit's PBC and Confirmation requests", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/moore-polska-case-study", date: "2026-05-13", access: full, locator: "sections 'The solution with Circit' and 'Implementing Circit'" }
+    - { ref: CIRCIT-BEEVER-2026, title: "Why Beever & Struthers (now Menzies) Made Circit Central to Audit Delivery", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/beever-struthers-case-study", date: "2026-06-26", access: full, locator: "sections 'Measurable ROI' and 'A critical platform for audit delivery'" }
+    - { ref: CIRCIT-CROWE-2026, title: "How Crowe Spain boosted accuracy and improved response rates with Circit", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/crowe-case-study", date: "2026-05-19", access: full, locator: "sections 'Before Circit' and 'Implementing Circit'" }
+    - { ref: CIRCIT-KRESTON-2026, title: "How Kreston Iberaudit improved efficiency and control with Circit", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/kreston-iberaudit", date: "2026-07-13", access: full, locator: "sections 'Before Circit' and 'Using Circit'" }
+    - { ref: CIRCIT-RABOBANK-BDONL-2026, title: "Rabobank & BDO NL: Building the Foundation for Continuous, Trusted Audit Data", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/rabobank-bdo-nl", date: "2026-05-21", access: full, locator: "sections 'Direct-from-Bank Reliability', 'Automation and Audit Quality at Scale', 'A Foundation for Continuous Audit'" }
+    - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "sections 'Screenshots, PDFs, and paper' and 'Why end-to-end validated electronic confirmation matters'" }
+    - { ref: TR-BANKSTATE-2026, title: "The state of bank confirmations in 2026", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/the-state-of-bank-confirmations-2026/", date: "2026-03-02", access: full, locator: "section 'The permanent shift from paper to electronic'" }
+    - { ref: PCAOB-CONFIRM-2023, title: "Notice of Filing of Proposed Rules on the Auditor's Use of Confirmation, and Other Amendments to Related PCAOB Standards (Board action of 28 Sep 2023)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2023-10-17/pdf/2023-22491.pdf", date: "2023-10-17", access: full, locator: "Background; summary of new standard; effective date" }
+    - { ref: JOFA-SAS150-2026, title: "AICPA updates audit standards related to external confirmations", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/news/2026/jul/aicpa-updates-audit-standards-related-to-external-confirmations/", date: "2026-07-14", access: full, locator: "paras 1-6" }
+    - { ref: IAASB-500SERIES-2026, title: "Project proposal to revise audit evidence standards related to inventory and external confirmations (Agenda Item 4-D)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/20260316-Agenda-Item-4D-500Series-Project-Proposal-%28Approved%29.pdf", date: "2026-03-16", access: full, locator: "Problem statement items (g), (h), (j), PDF p.6" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "Appendix 3, para 3 table" }
+    - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Theme 1 chart (automated solutions); Appendix I" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-10 (A), practice-11 (B), discourse-10 (C) and governance-06 (C). Graded A on Moore
+    Polska's figure (vendor case study, method not stated). Pattern 'other': a confirmation workflow and direct
+    data-access platform (two angles chose 'other', two 'reconcile-exceptions'; the strongest entry chose
+    'other'). Circit case-study dates are the pages' own datePublished values and probably reflect
+    republication. BDO NL tested the Rabobank connection; no go-live or use on an issued audit is reported.
+    Thomson Reuters is a confirmation vendor, so its fraud framing is advocacy; its statistic on AI-driven fraud
+    attempts was not traced to the underlying research and is not used. Kept although mostly non-AI, because
+    confirmations are in the module's scope and are the most automated substantive step in smaller firms.
+
+- id: assurance-substantive-testing-18
+  title: Drone and imaging tools for inventory counts, reconciled to perpetual records
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [physical-field, review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: piloting
+  problem: >-
+    Inventory observation needs auditors present at counts of large warehouses and outdoor stock, which is slow
+    and disruptive to clients (EY-DRONE-JOFA-2018). ISA 501 is unclear whether 'attendance' at a count can
+    include remote observation using technology (IAASB-500SERIES-2026). Inventory procedures had a finding in 26
+    of 279 inspected listed public-interest-entity audits (9%) in IFIAR's 2025 survey (IFIAR-SURVEY-2026).
+  solution: >-
+    EY ran a proof of concept (2018) in which drones fly mapped routes autonomously, scan barcodes, QR codes,
+    RFID and labels, and send the data to the audit platform to reconcile to the client's perpetual records. An
+    academic design-science study tested drones with automated counting software on cattle and sheep. IFIAR lists
+    drones and imaging tools among technologies firms continue to explore and deploy for physical observation,
+    inventory counts and remote assets, and the IAASB's March 2026 project proposal names drones, scanners and
+    camera systems as remote-observation tools.
+  outcomes:
+    - lever: speed
+      description: "Drone counts were much faster than manual counts in an academic study"
+      figure: "681 hours to 19 hours"
+      measures: "Count time, manual versus drone with automated counting software, in a design-science study on cattle and sheep (homogeneous items)"
+      provenance: independent
+      source_ref: CHRIST-DRONE-2021
+    - lever: quality
+      description: "Error rates fell in the same study"
+      figure: "0.15% to 0.03%"
+      measures: "Count error rates, manual versus drone, in the same cattle-and-sheep study"
+      provenance: independent
+      source_ref: CHRIST-DRONE-2021
+  prerequisites:
+    - "Per-client set-up that teaches the drone what to scan; EY said this limits use to large clients (EY-DRONE-JOFA-2018)"
+    - "Perpetual inventory records to reconcile to (EY-DRONE-JOFA-2018)"
+    - "Revised standards or clear guidance on whether remote observation meets attendance requirements (IAASB-500SERIES-2026)"
+  risks_and_guardrails:
+    - "A missed label shows as a difference to the perpetual records; blocked RFID reads are a practical limit (EY-DRONE-JOFA-2018)"
+    - "Interviews in the study found firms reluctant to be first movers and standard-setters slow to give guidance (CHRIST-DRONE-2021, abstract)"
+    - "The IAASB wants to reinforce professional skepticism for inventory evidence (IAASB-500SERIES-2026)"
+    - "IFIAR states its technology examples are illustrative and its usage observations directional (IFIAR-TTF-2026, Appendix A)"
+  human_checkpoints:
+    - "Auditor sets scan parameters and the sampling technique (100% scan or every fifth box) and reconciles results (EY-DRONE-JOFA-2018)"
+    - "Auditor judges the sufficiency and appropriateness of evidence obtained by alternative means (IAASB-500SERIES-2026)"
+  role_evolution: >-
+    EY described a drone flying autonomously so no auditor has to fly it inside a client's warehouse, with less
+    disruption to the client; no staffing change is reported (EY-DRONE-JOFA-2018).
+  evidence_grade: B
+  sources:
+    - { ref: CHRIST-DRONE-2021, title: "Prepare for takeoff: improving asset measurement and audit quality with drone-enabled inventory audit procedures (Christ, Emett, Summers, Wood)", publisher: "Review of Accounting Studies", type: academic, url: "https://link.springer.com/article/10.1007/s11142-020-09574-5", date: "2021", access: full, locator: "abstract and note 1 (full text paywalled; abstract via text mirror)" }
+    - { ref: EY-DRONE-JOFA-2018, title: "Using drones to enhance audits", publisher: "Journal of Accountancy podcast (EY global assurance digital leader)", type: podcast, url: "https://www.journalofaccountancy.com/podcast/using-drones-to-enhance-audits/", date: "2018-07-30", access: full, locator: "transcript (proof of concept; mistakes)" }
+    - { ref: IAASB-500SERIES-2026, title: "Project proposal to revise audit evidence standards related to inventory and external confirmations (Agenda Item 4-D)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/20260316-Agenda-Item-4D-500Series-Project-Proposal-%28Approved%29.pdf", date: "2026-03-16", access: full, locator: "Inventory in ISA 501, items (a) and (b), PDF p.5" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "Appendix A, p.12" }
+    - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-20 (B), discourse-13 (idea) and governance-12 (idea). Ladder follows the only entry that
+    describes a working tool (the two idea entries said assist). Grade capped at B: the independent measure is
+    for livestock, which the study chose because current technology suits homogeneous items, and EY's work was a
+    2018 proof of concept. No 2025-26 firm deployment of AI-based counting was found; an unopened July 2026
+    preprint on drone imagery (search snippet only) is not used.
+
+- id: assurance-substantive-testing-19
+  title: "Idea: AI-generated independent expectations and challenge for management's accounting estimates"
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [expert-judgment, review-assurance]
+  pattern: research-brief
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Accounting estimates, including fair value, had the highest finding rate among inspection themes in IFIAR's
+    2025 survey: 112 of 498 inspected listed public-interest-entity audits (22%) (IFIAR-SURVEY-2026, Table B.2).
+    Researchers note firms are investing in AI to help auditors evaluate complex estimates (COMMERFORD-2022).
+  solution: >-
+    An AI system supplies contradictory evidence or an alternative estimate that the auditor weighs against
+    management's estimate (COMMERFORD-2022). Specialists may use AI to support advice on estimates such as a
+    fair-value discount rate (ICPAS-PEECHER-2026).
+  outcomes:
+    - lever: quality
+      description: "Experiment: auditors who received contradictory evidence from their firm's AI system rather than a human specialist proposed smaller adjustments to management's complex estimates"
+      figure: "direction of effect only; no percentage in the abstract"
+      measures: "Controlled experiment on auditor judgements; the effect was stronger when management used relatively objective inputs"
+      provenance: independent
+      source_ref: COMMERFORD-2022
+    - lever: quality
+      description: "Experiment: auditors who first reflected on their weakest skills discounted AI-reliant specialist advice and accepted more aggressive estimates; a short exercise recalling their strongest skills reduced this"
+      figure: "none published in the practitioner summary"
+      measures: "Not applicable; the authors' summary gives no figures"
+      provenance: independent
+      source_ref: ICPAS-PEECHER-2026
+  prerequisites:
+    - "A firm-specific AI system whose evidence can be compared with management's inputs (COMMERFORD-2022)"
+    - "Auditor digital-skills development alongside affirmation of core audit skills (ICPAS-PEECHER-2026)"
+  risks_and_guardrails:
+    - "Algorithm aversion: auditors discounted AI advice relative to identical human-specialist advice (COMMERFORD-2022)"
+    - "IFIAR says AI tools tend to generalise on complex estimates and new or unprecedented events, so human context-specific judgement and scepticism matter most there (IFIAR-TTF-2025, p.8)"
+    - "Defensive reactions weakened rather than strengthened skepticism in the experiment (ICPAS-PEECHER-2026)"
+  human_checkpoints:
+    - "Auditor evaluates the evidence, any specialist's advice and management's estimate, and decides on adjustments (COMMERFORD-2022; ICPAS-PEECHER-2026)"
+  role_evolution: >-
+    The authors of the identity-threat study argue the future is a 'duality' of traditional accounting and
+    digital expertise (ICPAS-PEECHER-2026).
+  evidence_grade: D
+  sources:
+    - { ref: COMMERFORD-2022, title: "Man Versus Machine: Complex Estimates and Auditor Reliance on Artificial Intelligence (Commerford, Dennis, Joe, Ulla)", publisher: "Journal of Accounting Research 60(1)", type: academic, url: "https://ideas.repec.org/a/bla/joares/v60y2022i1p171-201.html", date: "2022-03", access: full, locator: "abstract" }
+    - { ref: ICPAS-PEECHER-2026, title: "What's Really Behind AI Aversion in Auditing?", publisher: "Illinois CPA Society (authors at UIUC and Erasmus University Rotterdam)", type: academic, url: "https://www.icpas.org/information/copy-desk/insight/article/digital-exclusive-2026/what-s-really-behind-ai-aversion-in-auditing", date: "2026-05-13", access: full, locator: "sections 'Research Overview' and 'How AI Aversion Can Undermine Audit Quality'" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.8 (complex estimates)" }
+    - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Idea: discussed by researchers and a regulator; no firm deployment for estimates testing was found. Merged
+    from discourse-14 and governance-13. Commerford et al. is a 2022, pre-generative-AI experiment; the Peecher
+    et al. paper itself was not opened. The landscape's SSRN field experiment on inventory valuation could not be
+    reached by any angle. Use of valuation specialists is routed to the specialists module.
+
+- id: assurance-substantive-testing-20
+  title: Agents run routine substantive tests (expense vouching, search for unrecorded liabilities), moving to orchestrated end-to-end runs
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, transaction-processing]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: piloting
+  problem: >-
+    Routine testing (payroll, expense vouching, cash, unrecorded liabilities, receivables) has meant pulling a
+    finite sample, extracting data to a spreadsheet, applying audit guidance and marking pass or fail, which
+    absorbs junior staff time (CTRLCOUNCIL-WSJ-2026). In most teams the auditor is both orchestrator and executor
+    of each test, which keeps the time from evidence collection to finished workpaper long (FIELDGUIDE-ORCH-2026).
+  solution: >-
+    KPMG announced on 22 Apr 2025 agents in Clara that support and automate parts of substantive procedures,
+    including expense vouching and the search for unrecorded liabilities and accrued expenses, aimed at more than
+    95,000 auditors with a human in the loop; more agents were promised within 12 months. In April 2026 KPMG
+    leaders described orchestration agents managing several testing agents, with a pilot in summer 2026 and full
+    deployment on certain tests the following year; humans would still review, collect data and assess risk.
+    Fieldguide's Field Orchestrator (announced 8 Jun 2026) lets the auditor direct an agent that plans the test,
+    analyses the population, calculates the sample, prompts for evidence and coordinates specialised testing
+    agents; its first end-to-end test is the search for unrecorded liabilities, tracing post-cutoff payments to
+    bank statements, vendor invoices and payment records and flagging exceptions with context. DataSnipper
+    describes prebuilt payables agents that check post-period payments for unrecorded liabilities.
+  outcomes:
+    - lever: capacity
+      description: "Forecast only, not a measured result: some Big Four firm leaders estimate agents will contribute 20-30% of a typical financial audit by 2029"
+      figure: "20-30% (forecast)"
+      measures: "Estimated share of a typical financial audit's work contributed by agents by 2029, attributed by the WSJ to 'some Big Four firm leaders'"
+      provenance: self-reported
+      source_ref: CTRLCOUNCIL-WSJ-2026
+    - lever: capacity
+      description: "none published for KPMG's Clara agents"
+      figure: "none published"
+      measures: "Not applicable; the 95,000 is the auditor population the deployment is aimed at, not users or an effect"
+      provenance: self-reported
+      source_ref: KPMG-CLARA-2025
+  prerequisites:
+    - "Evidence ingestion that copes with many document formats (PWC-AT-2025)"
+    - "Parallel runs alongside human testing to compare results (CTRLCOUNCIL-WSJ-2026)"
+    - "Engagement documentation and methodology inside the platform; upskilling so staff keep professional skepticism (KPMG-CLARA-2025)"
+    - "A population file and engagement context loaded in the testing workspace, with evidence collected and linked as the agent prompts (FIELDGUIDE-ORCH-2026)"
+  risks_and_guardrails:
+    - "The human auditor remains accountable under FRC guidance; Deloitte's stance in the same reporting is more conservative, stressing human judgment, skepticism and accountability (CTRLCOUNCIL-WSJ-2026)"
+    - "KPMG says auditors stay in control of decision-making (KPMG-CLARA-2025); Fieldguide's agent stops at each major step for human review by design (FIELDGUIDE-ORCH-2026)"
+    - "FRC: outputs on whole populations may be less conclusive for each item than traditional substantive work (FRC-GENAI-2026, p.19)"
+    - "Adjacent benchmark evidence: synthetic accounts-payable workpapers had an average strict pass rate of 68.18%, and agents sometimes documented work on whatever was available when subsequent-period information was missing (ARXIV-FAB-2026, Table 3 and section 6.3)"
+    - "KPMG's promised follow-on controls-testing agents were not confirmed as released in any source read (KPMG-CLARA-2025)"
+  human_checkpoints:
+    - "Humans review test results and handle data collection and risk assessment; a KPMG briefing slide showed only routine testing with no human team within two to three years (CTRLCOUNCIL-WSJ-2026)"
+    - "Auditor confirms the plan, reviews outputs after each phase, reviews exceptions and signs off the conclusion (FIELDGUIDE-ORCH-2026)"
+  role_evolution: >-
+    KPMG's audit chief digital officer said he would not hire a graduate to create workpapers and wants people
+    who can understand a workpaper's findings with AI help; KPMG describes 'lifting the pyramid up'
+    (CTRLCOUNCIL-WSJ-2026). KPMG says agents free auditors for high-risk areas (KPMG-CLARA-2025). Fieldguide
+    describes senior staff moving from running the procedure to reviewing results and evaluating exceptions
+    (FIELDGUIDE-ORCH-2026; vendor view).
+  evidence_grade: B
+  sources:
+    - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 'In This Critical Part of Audits, the Accountant's Role Is Shrinking Fast', 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "KPMG paragraphs (orchestration agents, summer pilot); routine-testing paragraph; 20-30% by 2029 paragraph; read via text mirror" }
+    - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04-22", access: full, locator: "Highlights; paras 4-6" }
+    - { ref: ACCTODAY-KPMG-2025, title: "KPMG builds AI agents into audit platform", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/kpmg-builds-ai-agents-into-audit-platform", date: "2025-04-24", access: full, locator: "para 2" }
+    - { ref: FIELDGUIDE-ORCH-2026, title: "Introducing Field Orchestrator: The Intelligence Layer for Financial Audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/field-orchestrator", date: "2026-06-08", access: full, locator: "sections 'What Field Orchestrator actually does', 'The first test case', 'Human-in-the-loop by design'" }
+    - { ref: DATASNIPPER-PAYABLES-2026, title: "5 AP Audit Procedures External Auditors Run With a Prebuilt Agent", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/5-payables-and-expenses-procedures-external-auditors-can-run-with-a-prebuilt-agent", date: "2026", access: full, locator: "unrecorded-liabilities procedure (page undated)" }
+    - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph on Evidence Match ('ingest 20 different kinds of documents')" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.19 (methodology risk: whole-population outputs)" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3; section 6.3" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from discourse-02 (B), practice-03 (C), governance-11 (C) and practice-09 (C). Tense matters: KPMG's
+    April 2025 release describes agents as deployed, but no usage figure, customer, inspection comment or outcome
+    was found 18 months later; the orchestration phase is a pilot, with deployment on certain tests planned for
+    2027. Field Orchestrator is a product post with no named customer. The WSJ text was read through a
+    republished copy, so wording should be checked against the original before external use. A Bloomberg Tax
+    headline of 1 Apr 2026 ('KPMG to Test Advanced AI Agents in Next Phase') was not opened.
+
+- id: assurance-substantive-testing-21
+  title: Auditor agents and client agents exchange evidence requests and support, with auditors reviewing the resulting workpapers (EY pilot)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, coordination-scheduling]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: piloting
+  problem: >-
+    Selecting items, requesting support from the client, chasing it and assembling workpapers is manual and slow
+    (CTRLCOUNCIL-WSJ-2026).
+  solution: >-
+    EY described pilots in which its agents make preliminary selections of financial statement data and request
+    supporting information; the client's agents collect the support and send it back; EY's agents prepare
+    workpapers that humans review. Separately, EY says its multi-agent framework is embedded in all audit phases
+    through EY Canvas, with support for all end-to-end activities expected by 2028.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable"
+      provenance: self-reported
+      source_ref: CTRLCOUNCIL-WSJ-2026
+  prerequisites:
+    - "Clients with their own agents or digital evidence stores (CTRLCOUNCIL-WSJ-2026)"
+  risks_and_guardrails:
+    - "Agent-to-agent evidence exchange raises the authenticity questions practitioners raise about evidence generally (TR-BANKCONF-2026)"
+  human_checkpoints:
+    - "Humans review the workpapers the agents prepare (CTRLCOUNCIL-WSJ-2026)"
+  role_evolution: >-
+    Not described beyond review (CTRLCOUNCIL-WSJ-2026).
+  evidence_grade: B
+  sources:
+    - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "EY paragraphs (agents talking with clients' agents; 'changes being piloted now')" }
+    - { ref: EY-CANVAS-2026, title: "EY Rolls Out Agentic AI in Assurance Across Its Global Network of Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/", date: "2026-04-07", access: full, locator: "paras 3-4 (all phases now; end-to-end by 2028)" }
+    - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "section 'Appearance is not authentication'" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From discourse-07 (single source). The WSJ text says the agent-to-agent exchange is among changes 'being
+    piloted now'; EY's release says AI is embedded in all phases and expected to support all end-to-end
+    activities by 2028. These are different claims and are not merged. Evidence-request agents on the controls
+    side are in assurance-controls-testing-03.
+
+- id: assurance-substantive-testing-22
+  title: Firm-wide agent platforms that execute preliminary procedures and draft substantive workpapers for review (EY Canvas, Deloitte Omnia, Grant Thornton Gtap)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    Global firms need consistent execution of methodology across thousands of engagements and have limited senior
+    time for judgment-heavy work (DELOITTE-OMNIA-2026; EY-CANVAS-2026). Staff-level fieldwork on balances such as
+    cash, payables, receivables, revenue and journal entries takes hours per workpaper: a benchmark team
+    estimated 2-12 hours of manual completion per workpaper, excluding senior review and rework (ARXIV-FAB-2026,
+    Table 3).
+  solution: >-
+    Deloitte (24 Jun 2026) says agents in Omnia execute preliminary procedures, including data extraction,
+    evidence analysis, drafting documentation and preliminary conclusions for professionals to review. EY (7 Apr
+    2026) says its multi-agent framework is embedded in all phases across 130,000 assurance professionals and
+    160,000 engagements, with end-to-end support expected by 2028. Grant Thornton US (May 2026) says its platform
+    has workflows and agents that identify risks and anomalies, with private-company audits first and public
+    companies the following year. In the FinancialAuditBench benchmark, agents receive the audit plan, assessed
+    risks, supporting documents and a workpaper template, then perform the procedures and write the workpaper.
+  outcomes:
+    - lever: quality
+      description: "Best model on workpaper-completion tasks in a benchmark of synthetic engagements"
+      figure: "69.17% strict pass in one attempt; 44.44% passing all eight attempts; partial credit 95.84%"
+      measures: "Share of workpaper-completion tasks, averaged over tasks and eight runs each, in which every applicable rubric criterion (about ten scored checks per workpaper) was met; synthetic engagements, auditor-written rubrics"
+      provenance: vendor-published
+      source_ref: ARXIV-FAB-2026
+    - lever: quality
+      description: "Strict pass rate by workpaper area, averaged over eleven models and eight runs"
+      figure: "accounts receivable 4.17%; revenue 7.58%; journal-entry risk testing 16.86%; cash 56.06%; accounts payable 68.18%; journal-entry completeness 94.51%"
+      measures: "Average strict (all-criteria) pass rate across all evaluated models and runs on synthetic workpapers of each area"
+      provenance: vendor-published
+      source_ref: ARXIV-FAB-2026
+    - lever: speed
+      description: "Median agent runtime versus estimated manual completion time; the authors say this does not establish equivalent time savings"
+      figure: "7-12 minutes versus 2-12 hours"
+      measures: "Median runtime by workpaper area versus auditors' approximate manual estimates, which exclude senior review and corrective rework"
+      provenance: vendor-published
+      source_ref: ARXIV-FAB-2026
+    - lever: speed
+      description: "PwC (a related programme, not one of the three platforms) says time savings a year in are not dramatic yet"
+      figure: "none published"
+      measures: "Qualitative statement by PwC US's assurance transformation leader about busy-season time"
+      provenance: self-reported
+      source_ref: CFODIVE-PWC-2026
+  prerequisites:
+    - "A single global platform and methodology so agents apply consistently (DELOITTE-OMNIA-2026)"
+    - "Training: EY's global programme for all audit and technology-risk professionals; Deloitte's 'tutor mode' for micro-training in the flow of work (EY-CANVAS-2026; DELOITTE-OMNIA-2026)"
+    - "An organised engagement binder and a workpaper template that specifies the procedures (ARXIV-FAB-2026, section 3)"
+    - "Certification of each model and prompt, tested against cases that probe known weaknesses (FRC-GENAI-2026, certification section)"
+    - "Engagement leaders set expectations at the outset for how technology will be used (IFIAR-TTF-2026, p.7)"
+  risks_and_guardrails:
+    - "Benchmark failure analysis found four recurring errors: not considering downstream effects of changes, insufficient retrieval, inadequate evaluation of evidence sources, and reluctance to leave items open when information was missing (ARXIV-FAB-2026, section 6.3)"
+    - "The benchmark's authors conclude that deploying agents without professional oversight is ill-advised (ARXIV-FAB-2026, section 6.2)"
+    - "IFIAR asks firms to consult regulators early where AI makes judgements without human involvement, to keep auditors responsible for evaluating and challenging AI decisions, and to say what 'human-led' means in practice (IFIAR-TTF-2025, p.8; IFIAR-TTF-2026, pp.5 and 7)"
+    - "Grant Thornton US attest services sit in a separate licensed firm under an alternative practice structure, which raises independence questions for the acceptance-independence module (GT-GTAP-2026)"
+    - "Benchmark authors observed agents over-documenting and writing in fragments, which raises reviewer effort (ARXIV-FAB-2026, section 7)"
+  human_checkpoints:
+    - "Oversight at control points, such as when intermediate outputs are ready or the agent wants to take certain actions, set by professional judgement (FRC-GENAI-2026, p.38)"
+    - "Professionals review preliminary conclusions; Grant Thornton says professionals supervise every step (DELOITTE-OMNIA-2026; GT-GTAP-2026)"
+  role_evolution: >-
+    Deloitte says professionals will 'supervise, validate, and work alongside AI' and adds tutor agents for
+    on-demand training (DELOITTE-OMNIA-2026). EY expects its platform to support all end-to-end audit activities
+    by 2028 (EY-CANVAS-2026).
+  evidence_grade: C
+  sources:
+    - { ref: DELOITTE-OMNIA-2026, title: "Deloitte Unveils Connected Agentic Intelligence in Deloitte Omnia to Advance Audit & Assurance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: "2026-06-24", access: full, locator: "paras 1-4; 'Investing in upskilling' section" }
+    - { ref: EY-CANVAS-2026, title: "EY Rolls Out Agentic AI in Assurance Across Its Global Network of Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/", date: "2026-04-07", access: full, locator: "paras 2-3, 7" }
+    - { ref: GT-GTAP-2026, title: "Grant Thornton launches AI platform for audit business", publisher: "Consultancy.org (Consulting.us)", type: press, url: "https://www.consulting.us/news/13378/grant-thornton-launches-ai-platform-for-audit-business", date: "2026-05-11", access: full, locator: "paras 1-3, 7-8" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "sections 3, 6.2-6.4, 7; Tables 1 and 3; Figure 3" }
+    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: "2026-10-07", access: full, locator: "paras 8-9" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "certification; human in the loop review and oversight (pp.37-38)" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.8" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.5 and 7" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-17 (C) and governance-09 (C). The firm items are announcements; no firm has published
+    error or override rates for substantive agents. The benchmark is the only measured result: synthetic
+    engagements, authors include Modus Audit Inc. employees (hence vendor-published), model names as reported in
+    the paper. Grant Thornton's launch date is 7 May in the landscape; the opened article is dated 11 May 2026.
+    The Bloomberg Tax report that RSM US plans to invest $1 billion over three years in agents is search-only and
+    supports nothing here.
+
+- id: assurance-substantive-testing-23
+  title: "Idea: a second AI reviews AI-performed substantive work for errors and omissions"
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    Senior auditors review staff workpapers, which takes time and can miss errors; the FRC lists tools that can
+    review work to identify omissions or inconsistencies among AI tools that may be deployed on an engagement
+    (FRC-AIAUDIT-2025, p.6).
+  solution: >-
+    The AICPA practice aid (as reported by Accounting Today) says one AI tool may be used to perform a procedure
+    and another to review whether it was performed correctly and whether the result makes sense, without reducing
+    the auditor's supervision and review duties. In FinancialAuditBench, an agent reviews a completed workpaper
+    against the supporting files and corrects errors while preserving correct work.
+  outcomes:
+    - lever: quality
+      description: "Review of agent-completed synthetic workpapers by the best reviewing model"
+      figure: "strict pass 28.89% before review, 62.22% after; partial credit 87.34% to 94.57%"
+      measures: "Share of 45 review tasks in which all rubric criteria were met; every reviewing model started from the same workpaper and was run once; some individual workpapers scored lower after review"
+      provenance: vendor-published
+      source_ref: ARXIV-FAB-2026
+  prerequisites:
+    - "Access to the same supporting files the preparer used, and a rubric or checklist of what the review must cover (ARXIV-FAB-2026, section 6.5)"
+    - "Firm quality-management policies for authorising, monitoring and revalidating AI tools (AT-AICPAPA-2026)"
+  risks_and_guardrails:
+    - "Agent review improves workpaper quality but does not reliably resolve all errors (ARXIV-FAB-2026, section 6.5)"
+    - "A PIA Group technology leader warns that using AI to validate AI can create a closed system in which errors are hard to detect (NYENRODE-QUALITY-2026)"
+    - "Reviewers need the competence to find deficiencies, should apply scepticism and be aware of automation bias (FRC-GENAI-2026, p.37)"
+  human_checkpoints:
+    - "A human reviewer remains responsible for the reviewed workpaper (FRC-GENAI-2026, p.37); the second tool does not replace the auditor's supervision and review (AT-AICPAPA-2026)"
+  role_evolution: >-
+    Not studied; the benchmark treats agent review as a co-pilot role under professional oversight
+    (ARXIV-FAB-2026, section 7).
+  evidence_grade: D
+  sources:
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "section 6.5; Table 4; section 7" }
+    - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraph beginning 'The guidance also said that, in an audit of financial statements, one AI tool may be used'" }
+    - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "p.6 (scope of AI tools)" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.37" }
+    - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'When is AI reliable enough?'" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Idea: permitted in guidance and measured in a benchmark, but no deployment on substantive workpapers was
+    found. Merged from governance-10 and discourse-15. Synthetic engagements; benchmark authors include Modus
+    Audit Inc. employees. A deployed analogue on control-testing workpapers is assurance-controls-testing-10 (FJ
+    Management).
+
+- id: assurance-substantive-testing-24
+  title: AI-native audit pilot where agents test balances on full populations and against third-party data instead of samples (PwC Australia)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: full-population-testing
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: piloting
+  problem: >-
+    Auditors spend time on data gathering and documentation rather than analysis, and sampling limits the
+    scrutiny applied to balances (PWCAU-AT-2025). A practitioner commentary argues that sampling was the practical
+    limit of what people could test in the hours an engagement allows (LEDGERLINE-CPAPA-2026).
+  solution: >-
+    PwC Australia said on 28 Oct 2025 it was rolling out an 'AI-native' platform as part of a global pilot, in
+    which AI agents assess risk, design audit plans and workflows, and test balances and controls, with auditors
+    in the loop. PwC says analysis would run in real time on full population sets and against trusted third-party
+    data. The programme starts with five audit clients and plans to reach all audit clients by 2028, for 1,600
+    auditors. The IAASB's exposure draft gives a matching example: agreeing all sales invoices of an online
+    retailer to independent carrier shipping data. Full-population testing of control populations is
+    assurance-controls-testing-08.
+  outcomes:
+    - lever: quality
+      description: "None published. PwC says full-population analysis gives unprecedented scrutiny of judgments; no result is given"
+      figure: "none published"
+      measures: "Not applicable; announcement of a pilot on five audit clients"
+      provenance: self-reported
+      source_ref: PWCAU-AT-2025
+    - lever: speed
+      description: "PwC US's assurance transformation leader on time savings after a year of AI tools in assurance (firm-wide, not this pilot)"
+      figure: "none published; 'not that drastic yet'"
+      measures: "Qualitative statement about the busy-season time shift"
+      provenance: self-reported
+      source_ref: CFODIVE-PWC-2026
+  prerequisites:
+    - "Real-time access to client data and to third-party data (PWCAU-AT-2025)"
+    - "A complete population and reliable data, with procedures to verify the relevance and reliability of the information used (AFM-BB-2025, building blocks 4-6; SEC-TAAORDER-2024, section II)"
+    - "Independent third-party data to reconcile against, such as carrier tracking or bank activity (IAASB-ED500-2026, Appendix 2, para 3; TR-AGENTIC-2025)"
+  risks_and_guardrails:
+    - "FRC: whole-population outputs may be less conclusive per item; they need not match the persuasiveness of the procedure replaced if the methodology does not overstate them (FRC-GENAI-2026, risk of non-compliant methodology)"
+    - "Under ED-500, when tools analyse a whole population to find items with risk characteristics, testing those items gives evidence only about them, and misstatements found cannot be projected to the rest (IAASB-ED500-2026, Appendix 2, para 7)"
+    - "PCAOB commenters asked whether evidence is sufficient when whole-population analysis identifies nothing; the Board called the final requirements principles-based and applicable to all means of selecting items (PCAOB-TAA-2024, discussion of AS 2301.49-.50)"
+    - "Testing 100% surfaces more exceptions, and marketing 'we test everything' widens the expectation gap because some risks, such as an incomplete population, sit outside the transaction data; run in shadow mode on completed engagements, then cut over gradually (LEDGERLINE-CPAPA-2026)"
+    - "IFIAR suggests benchmarking technology-driven results against traditional methods (IFIAR-TTF-2026, p.9)"
+    - "An RSM Australia partner cautions that over-reliance on AI over professional judgment could introduce errors and poorer audit quality (PWCAU-AT-2025)"
+  human_checkpoints:
+    - "Investigation of every item the analysis identifies, with auditor judgement on what a finding means (PCAOB-TAA-2024, discussion of AS 2301.49-.50)"
+    - "A stand-back review by the engagement team of whether the tool achieved the overall objective (IFIAR-TTF-2025, p.8)"
+    - "Auditors provide context, analysis and decisions; PwC says humans keep final judgments (PWCAU-AT-2025)"
+  role_evolution: >-
+    PwC says auditors spend less time on routine tasks and workflow management and more on analysis and judgment
+    (PWCAU-AT-2025).
+  evidence_grade: B
+  sources:
+    - { ref: PWCAU-AT-2025, title: "PwC Australia rolls out pilot program for AI-assisted full audits", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/pwc-australia-rolls-out-pilot-program-for-ai-assisted-full-audits", date: "2025-10-28", access: full, locator: "paras 1-6 and the RSM partner's comments" }
+    - { ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: "2026-10-07", access: full, locator: "time-savings passage" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "Appendix 2, paras 3 and 6-8" }
+    - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "risk of non-compliant methodology (p.19)" }
+    - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Discussion of AS 2301.48-.50" }
+    - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "sections 'What full-population testing changes', 'The trap', 'How to roll it out safely'" }
+    - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "p.9 emerging practices" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.8" }
+    - { ref: AFM-BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "building blocks 4-6" }
+    - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II" }
+    - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "Audit Intelligence Test section (bank activity)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    Merged from practice-16 (B, delegate) and governance-04 (B, automate). Ladder delegate because PwC describes
+    agents that assess risk, design plans and test balances; pattern full-population-testing because the change
+    to substantive work is replacing samples. No results, error rates or inspection outcome have been published
+    and no follow-up reporting on the pilot was found. The ED-500 example is application material in an
+    exposure draft, not a deployment. Shares its expectation-gap guardrail with assurance-controls-testing-08,
+    which covers control populations (Armanino, Microsoft) and should be read alongside.
+
+- id: assurance-substantive-testing-25
+  title: AI-native specialist audit firm testing every transaction in employee-benefit-plan audits (Ledgerline)
+  archetype: assurance
+  module: substantive-testing
+  function: service-delivery
+  work_types: [review-assurance, transaction-processing]
+  pattern: full-population-testing
+  ladder: automate
+  change_scope: model
+  runtime_class: managed-agent-runtime
+  maturity: in-production
+  problem: >-
+    The annual 401(k) audit is described as a four-month chore of requests, reviews and follow-ups, and testing is
+    a sample of contributions extrapolated to the plan (LEDGERLINE-CPAPA-2026; LEDGERLINE-SITE-2026).
+  solution: >-
+    The firm pulls payroll and recordkeeper data directly from systems instead of requesting it, reconciles
+    contributions across payroll, trust and recordkeeper, and uses AI agents with deterministic code to check
+    every deposit against payroll, every match against the plan formula and every distribution against its
+    record. Agents read plan documents and cite the page and section for each provision tested.
+  outcomes:
+    - lever: speed
+      description: "None published for the firm's engagements. The CEO asserts, in general terms, that work taking a junior associate 20 hours can run in minutes"
+      figure: "none published"
+      measures: "Not applicable; the 20-hours statement is generic and no study or engagement data is given"
+      provenance: self-reported
+      source_ref: LEDGERLINE-CPAPA-2026
+  prerequisites:
+    - "Connections to payroll providers (the site names Rippling, Gusto, ADP and Paychex) and recordkeepers (Fidelity, Empower, Vanguard) (LEDGERLINE-SITE-2026)"
+    - "Shadow mode on completed engagements, then gradual cutover, per the CEO's advice (LEDGERLINE-CPAPA-2026)"
+  risks_and_guardrails:
+    - "Testing 100% surfaces more exceptions, so more follow-up and more judgment about materiality (LEDGERLINE-CPAPA-2026)"
+    - "Reasonable assurance is not absolute; some risks sit outside the transaction data, such as an incomplete population, so 'we test everything' can widen the expectation gap (LEDGERLINE-CPAPA-2026)"
+  human_checkpoints:
+    - "A person stays accountable for every conclusion; agents produce work a reviewer can check, with sources cited (LEDGERLINE-CPAPA-2026)"
+  role_evolution: >-
+    The CEO says the hours saved move to investigating exceptions, assessing controls and deciding what a finding
+    means (LEDGERLINE-CPAPA-2026).
+  evidence_grade: B
+  sources:
+    - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "sections 'What full-population testing changes', 'The trap', 'How to roll it out safely'" }
+    - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "'Our approach' section (undated site, read 2026-10-16)" }
+  last_reviewed: "2026-10-16"
+  notes: >-
+    From practice-15 (single source; governance-04 cites the same article for its warnings). Graded B on the
+    firm's description of its operating model; there is no independent evidence of its audit quality, client
+    count or inspection history. Included as a live example of a different service model (an audit firm built
+    on data pulls and agents), not because outcomes are shown. The same article is cited in
+    assurance-controls-testing-08.

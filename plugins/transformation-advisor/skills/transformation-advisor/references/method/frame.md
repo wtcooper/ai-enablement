@@ -95,9 +95,9 @@ into parts that each need their own plan, where are the natural seams: service, 
 
 ## 4. Value levers and scoring weights
 
-**Levers.** The seven defaults, the metric each usually takes in knowledge work, and the proof it needs. Each lever
-needs a different metric and level of proof [VALUE-LEVERS]. Quality and risk are often the real value in professional
-work and the levers most often left out.
+**Levers.** The seven defaults, the metric each usually takes in knowledge work, and the proof it needs. The seven are
+this advisor's working set, not a published standard; each needs a different metric and level of proof. Quality and risk
+are often the real value in professional work and the levers most often left out.
 
 | Lever | Typical metric | Proof needed |
 |---|---|---|
@@ -123,19 +123,19 @@ wins raises time to value; a Scaling portfolio raises strategic fit. Children in
 |---|---|---|
 | **Ask for success in P&L or KPI terms at twelve months** (F1, F5) | Opening Frame | Whether the ambition is efficiency only. McKinsey's high performers named growth (82%) and innovation (79%) objectives far more often than others (50% each); self-reported and correlational [MCKINSEY-SOAI-2025] |
 | **Ask what they would rebuild if tools were free** (F3) before asking which tools they want | Early Frame | Workflow versus tool thinking. 55% of high performers reported fundamentally redesigned workflows against 20% of others (self-reported) [MCKINSEY-SOAI-2025] |
-| **Ask how the work is priced and what happens if effort halves** (F6) | Fee-based work, Experimenting and above | Margin compression hidden by an efficiency plan. Sage's worked arithmetic: a job cut from 8 hours to 3 loses more than half its revenue if billed hourly, or leaves 5 idle hours on a fixed fee [SAGE-2026] |
+| **Ask how the work is priced and what happens if effort halves** (F6) | Fee-based work, Experimenting and above | Margin compression hidden by an efficiency plan. Sage's worked arithmetic: a job cut from 8 hours to 3 loses more than half its revenue if billed hourly; on a fixed fee it frees 5 hours that earn nothing unless they are put to productive use [SAGE-2026] |
 | **Ask who captures the gain** (F17) | Services lines, internal service units | Whether clients or internal customers will expect lower fees or budgets [BAIN-DILIGENCE-2025] |
 | **Write the thesis in one sentence** (F14) | [U/O] | Why the unit is worth more or less; forces specificity [BDEMERSON-2026] |
-| **Run a full-potential pass:** revenue, operational and technology levers, not just the cost case | [U/O] | Upside a cost-only frame misses [BAIN-GPER-2026] |
+| **Run a full-potential pass:** revenue, operational and technology levers, not just the cost case | [U/O] | Upside a cost-only frame misses; Bain urges sponsors to move "from full potential diligence to execution on Day 1" [BAIN-GPER-2026; BAIN-DILIGENCE-2025] |
 | **Sort each sub-unit:** AI threatens the model, changes it substantially, or mainly helps | [U/O], before any use-case hunt | Which sub-units need reinvention and which need adoption. In Bain's diligence work, under 10% of 300+ companies fell in the most threatened group and about half in "mainly helps" (vendor-published) [BAIN-DILIGENCE-2025] |
 | **Prototype the core deliverable with off-the-shelf AI** | [U/O], when exposure is disputed | What a newcomer could copy and where the moat really sits: data, workflow, relationships [BAIN-DILIGENCE-2025] |
-| **Ask who owns AI: business, technology or both** (F11) | [U/O] | BCG calls exclusive technology ownership a marker of stagnating firms; over 40% of its top tier embed shared ownership against 19% of stagnating firms (self-reported) [BCG-GAP-2025] |
+| **Ask who owns AI: business, technology or both** (F11) | [U/O] | BCG calls exclusive IT ownership "a key indicator of stagnating companies"; over 40% of its top tier embed shared ownership against 19% of stagnating firms (self-reported) [BCG-GAP-2025] |
 | **Ask what will stand in for owner control, incentives and a fixed date** (F13) | [U/O] | A unit leader gets PE's method without its forcing functions: a sponsor, funded targets and a dated review must substitute [ACHARYA-2009] |
-| **Ask "would finance accept this number?"** (F5) | Setting measures | Self-reported time saved versus measured value [WHARTON-2025] |
+| **Ask "would finance accept this number?"** (F5) | Setting measures | Whether the measure is one finance already trusts, not self-reported time saved; 72% of leaders in one survey say they formally measure Gen AI ROI, mostly as productivity gains (self-reported) [WHARTON-2025] |
 | **Treat the leader's account as work-as-imagined;** write hypotheses for Map | Leaders, [U/O] | Where practice differs from belief; the cheap wins usually sit in that gap [HOLLNAGEL-2017] |
 | **Choose what to map by pain, frequency, impact and readiness,** not by what demos well (F18) | End of Frame | Avoids visible-use-case bias: executives in MIT NANDA's study steered hypothetical budgets to sales and marketing, partly because results there are easier to attribute (interview-based, preliminary) [MIT-NANDA-2025; OPENAI-ACADEMY-2025] |
 | **Pair efficiency with a growth or quality measure** | Setting levers | Wharton/GBK report 35% strongly positive ROI among leaders tracking a growth measure against 13% tracking efficiency only (self-reported association) [WHARTON-2026] |
-| **State the capacity stance early** (redeploy to backlog, growth or quality; absorb through hiring pace; or reduce) | Before mapping | Whether the case is growth or cost, and how staff will read the project [WHARTON-2026] |
+| **State the capacity stance early** (redeploy to backlog, growth or quality; absorb through hiring pace; or reduce) | Before mapping | Whether the case is growth or cost, and how staff will read the project; Wharton/GBK advise rebuilding how work is managed rather than cutting headcount [WHARTON-2026] |
 
 ## 6. Common traps
 
@@ -150,7 +150,7 @@ wins raises time to value; a Scaling portfolio raises strategic fit. Children in
 | Importing PE levers the unit lacks | The method is described without owner control and incentives | Name substitutes: sponsor, budget, dated review [ACHARYA-2009] |
 | Quoting headline statistics bare | Viral numbers hide definitions | Give what was measured, by whom, and provenance [MIT-NANDA-2025] |
 | Ambition out of step with the stage | Enthusiasm, or caution | Match measures to the stage (§3); plan the next stage only |
-| Headcount targets as the goal | Cost pressure | Frame capacity and roles; §9 rules forbid targets for named people |
+| Headcount targets as the goal | Cost pressure | Frame capacity and roles; rule 1 in `SKILL.md` forbids headcount targets for people |
 
 ## 7. Worked example
 
@@ -164,8 +164,8 @@ only if clients do not demand lower fees (F17: "the bigger clients will ask").
 plus review, clients are moving co-sourced testing in-house, and hourly pricing is under pressure (module §7).
 Acceptance and independence is *mainly helped*. The advisor marks this as a judgment to test, not a finding.
 
-*Measures.* Testing hours per key control (KPMG's SOX survey puts the average at 16 hours in FY2024 for management SOX
-programmes [K-SOX30], so the practice needs its own figure); review notes per file; inspection points on controls testing;
+*Measures.* Testing hours per key control (KPMG puts the average at 16 hours per control in FY2024, up from 12 in FY2022,
+for SOX programmes [K-SOX30]; the practice needs its own figure); review notes per file; inspection points on controls testing;
 staff overtime in the season. *Capacity stance:* redeploy freed hours to staff gaps and risk work; no reduction planned;
 revisit per opportunity. *Weights:* risk raised to 0.20 and time to value lowered to 0.05, because the practice is
 inspection-exposed and willing to take longer to be safe. *What to map:* the key-control testing flow on two
@@ -201,14 +201,14 @@ confidence) and the value tree; the hypotheses to test; and what Map covers next
 - **BAIN-DILIGENCE-2025**: Bain & Company, *New Diligence Challenge: Uncovering AI Risks and Opportunities* (consultancy, 2025-10-27). https://www.bain.com/insights/new-diligence-challenge-uncovering-ai-risks-and-opportunities/
 - **BAIN-GPER-2026**: Bain & Company, *Global Private Equity Report 2026* press release (consultancy, 2026-02-23). https://www.bain.com/insights/topics/global-private-equity-report/
 - **BCG-GAP-2025**: BCG, *The Widening AI Value Gap: Build for the Future 2025* (consultancy survey, n=1,250, 2025-09). https://media-publications.bcg.com/The-Widening-AI-Value-Gap-October-2025.pdf
-- **BDEMERSON-2026**: BD Emerson, *Private Equity Value Creation Plan* (practitioner article, 2026-08-16). https://www.bdemerson.com/article/private-equity-value-creation-plan
+- **BDEMERSON-2026**: BD Emerson, *The Value Creation Plan: How PE Firms Turn a Thesis into an Exit* (practitioner article, 2026-07-06, updated 2026-08-16). https://www.bdemerson.com/article/private-equity-value-creation-plan
 - **EMPSON-2018**: Empson, *Elite interviewing in professional organizations*, Journal of Professions and Organization (academic, 2018). https://openaccess.city.ac.uk/id/eprint/18237/
 - **HOLLNAGEL-2017**: Hollnagel, *Can we ever imagine how work is done?*, HindSight 25, EUROCONTROL (practitioner magazine, 2017). https://www.skybrary.aero/sites/default/files/bookshelf/3934.pdf
-- **MCKINSEY-SOAI-2025**: McKinsey, *The state of AI in 2025* (consultancy survey, n=1,993, 2025-11; read via third-party copy). https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+- **K-SOX30**: KPMG LLP, *The Future of SOX: A point of view for 2030 and beyond* (firm publication citing KPMG's 2025 SOX survey, 2026-09). https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf
+- **MCKINSEY-SOAI-2025**: McKinsey, *The state of AI in 2025: Agents, innovation, and transformation* (consultancy survey, n=1,993, 2025-11). https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
 - **MIT-NANDA-2025**: MIT NANDA, *The GenAI Divide: State of AI in Business 2025* (preliminary, interview-based, 2025-07). https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
 - **OPENAI-ACADEMY-2025**: OpenAI Academy, *Run a use case discovery workshop* (vendor guide, 2025-09-17). https://academy.openai.com/home/clubs/champions-ecqup/resources/team-use-case-brainstorm-playbook-2025-09-15
 - **SAGE-2026**: Sage UK, *Where is your accounting firm on the AI maturity curve?* (vendor blog, 2026-04-08). https://www.sage.com/en-gb/blog/accounting-bookkeeping-ai-maturity-curve/
-- **VALUE-LEVERS**: the seven-lever taxonomy is the advisor's working synthesis (spec §6.6), built from Gartner, Deloitte and EY sources in the value-measurement research; the proof-per-lever column is from the same synthesis.
 - **WHARTON-2025**: Wharton Human-AI Research and GBK Collective, *Accountable Acceleration* (survey, ~800 US leaders, 2025-10-28). https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf
 - **WHARTON-2026**: Wharton Human-AI Research and GBK Collective, *2026 AI Adoption Report: The Adaptive Advantage* (survey, landing page, 2026-10-13). https://knowledge.wharton.upenn.edu/special-report/2026-ai-adoption-report/
-- Assurance facts: `archetypes/assurance/modules/controls-testing.md` (§5 baseline from KPMG's SOX survey [K-SOX30]; §7 co-source and pricing).
+- Assurance facts: `archetypes/assurance/modules/controls-testing.md` (§5 baseline; §7 co-source and pricing).

@@ -86,7 +86,7 @@ readiness for every candidate. *Scaling:* heatmap and waves across units; look f
 | **Flow efficiency** | Hands-on time ÷ elapsed time, per case, on five to ten real cases | Share of lead time spent working. Low values mean waiting dominates [KANBANU-LITTLE-2022] |
 | **Stability check** | Are items arriving about as fast as they are finished? | If not, work in progress is quietly growing; lead-time estimates from averages will mislead [KANBANU-LITTLE-2022] |
 | **Queue rule** | Waiting grows with utilization ÷ (1 − utilization), times variability, times service time. With variability factor 1: 50% booked → 1× the service time; 80% → 4×; 90% → 9×; 95% → 19× (computed from the formula) | Adding work to a step near full booking multiplies waiting [WIKI-KINGMAN-2025] |
-| **Speed-up ceiling** | If a step is a share *s* of elapsed time and becomes *k* times faster, end-to-end time improves by at most *s* × (1 − 1/*k*). A step that is 10% of elapsed time, made twice as fast, gives at most 5% | Whether a step-level gain can matter at process level; also check the next step can absorb the output [NBER-ACEMOGLU-2024] |
+| **Speed-up ceiling** | If a step is a share *s* of elapsed time and becomes *k* times faster, end-to-end time improves by at most *s* × (1 − 1/*k*). A step that is 10% of elapsed time, made twice as fast, gives at most 5% | Whether a step-level gain can matter at process level; also check the next step can absorb the output. Acemoglu applies the same share-times-saving logic to the whole economy [NBER-ACEMOGLU-2024] |
 | **Rework rate** | Items returned, reopened or redone ÷ items finished, on a sample. Test the definition: two people classify the same ten items | The defects waste, and whether "rework" is measured consistently [WIKI-DMAIC-2025] |
 | **Variation** | Plot cycle time over several weeks before reacting to one bad week | Chance variation versus a real change [NIST-CTRL-ND] |
 
@@ -132,14 +132,14 @@ Plain wording, one question at a time.
 | **Look for where work piles up and what the next step is starved of** | Every process | The constraint; improvement elsewhere does not raise output [TOCI-TOC-ND] |
 | **Test every idea against the constraint:** does it speed the bottleneck or the step before it? | Shortlisting | Local gains that only create a pile-up [LEI-PEPERKAMP-2026; PEX-DUMAS-2025] |
 | **Exploit and subordinate before elevating:** use the constraint fully and align other steps before buying or hiring | Shortlisting | Cheap capacity before tools [TOCI-5FS] |
-| **Ask who verifies AI output and whether review is the new constraint** | Any AI candidate | Review load that cancels time saved. In one vendor survey about 37–40% of AI time savings went to rework (self-reported) [WORKDAY-2026] |
+| **Ask who verifies AI output and whether review is the new constraint** | Any AI candidate | Review load that cancels time saved. In one vendor survey nearly 40% of AI time savings were lost to rework (self-reported) [WORKDAY-2026] |
 | **Use the queue rule on the busiest step** | Reviewer or specialist near full booking | Why 12.5% more work at 80% booking roughly doubles waiting (4× → 9×) [WIKI-KINGMAN-2025] |
 | **Study demand at the front end:** which part exists only because of an earlier failure? | Service and request-driven work | Failure demand that disappears when the cause is fixed [SEDDON-SWINSCOE-2020] |
 | **Run five whys on one specific failure,** check each "because" against a record, and branch when causes multiply | A particular defect or delay | Causes behind symptoms; not a verdict on a whole process [LEI-5WHYS; WIKI-5WHYS] |
 | **Compare felt and measured gains** on existing AI use | A team says a tool "saves hours" | Perception gaps. In an independent trial, developers expected AI to cut task time 24%, believed afterwards it had cut 20%, and measured time rose 19% (software, adjacent) [METR-2025] |
 | **Segment by experience** | Sizing a gain | Gains concentrate unevenly: in one customer-support study, +14% issues resolved per hour on average, +34% for novices, minimal for experienced staff [NBER-BRYNJOLFSSON-2023] |
 | **Ask people what they want handed over and how much involvement they want, then compare with feasibility** | Sorting candidate tasks | Four zones: wanted and feasible, feasible but resisted, wanted but not yet feasible, neither. Workers were positive about automation for 46.1% of 844 tasks in one academic audit [STANFORD-WORKBANK-2026] |
-| **Run a quick frontier test on real samples** | Before shortlisting an AI step | Where AI helps and where it fails quietly; consultants were 19 points less likely to be correct with AI on a task outside the frontier [HBS-JAGGED-2023] |
+| **Run a quick frontier test on real samples** | Before shortlisting an AI step | Where AI helps and where it fails quietly; consultants using AI were 19% less likely to produce a correct solution on a task chosen to be outside the frontier [HBS-JAGGED-2023] |
 | **Run an agent-readiness check:** criteria written with examples, data and tool access, a record of actions | Steps that might be automated or delegated | Tacit know-how and missing audit trail that block automation [BCG-AGENTS-2025; MCKINSEY-1YR-2025] |
 | **Ask about the data for this specific step,** especially documents | Every AI candidate | The real blocker: 79% of BCG respondents named lack of expertise with unstructured data, 82% of KPMG's named data quality (both self-reported) [BCG-GAP-2025; KPMG-AIPULSE-Q3-2025] |
 | **Sort each unit's exposure before hunting use cases** | [U/O] | Which units need reinvention and which need adoption [BAIN-DILIGENCE-2025; BCPARTNERS-2025] |
@@ -168,8 +168,9 @@ about 20 working days elapsed (roughly 160 working hours): flow efficiency near 
 *Constraint.* Files wait 6–11 days for manager review (from record); managers say they are "fully booked" in season,
 call it 90%. At 90% booking, the queue rule gives waiting of about 9 times the review time. The partner's idea was AI
 drafting of test workpapers. D3 ("if testing were twice as fast?") gets the answer "more files in the manager's
-queue". The module reports the same pattern in the field: review is now where most auditor time goes [CPAPA-ZANIN], and 46% of one
-vendor's survey respondents spend more time validating AI output [OPTRO-SURVEY].
+queue". The module reports the same pattern in the field: a SOX-tooling vendor's CEO says that with agents, human review is
+where most auditor time now goes [CPAPA-ZANIN], and 46% of respondents to another vendor's survey report that staff spend
+more time reviewing, validating or correcting AI output [OPTRO-SURVEY].
 *Rework and failure demand.* About one in four evidence requests needs a second chase (reported); top reasons are
 unclear requests and wrong period. That is failure demand: clearer requests remove it.
 *Should it exist?* The private tick-mark template duplicates the audit platform; walkthrough narratives are redrawn
@@ -186,6 +187,7 @@ testing, only together with (1); (4) walkthrough refresh.
 | Unit | Size | Work-type mix | Exposure | Strategic weight | Readiness | Wave |
 |---|---|---|---|---|---|---|
 | Controls testing | 4 | 4 | 4 | 5 | 3 | 1 |
+| SOC and attestation | 3 | 4 | 4 | 4 | 3 | 1 |
 | Substantive testing | 5 | 4 | 4 | 4 | 2 | 2 |
 | Acceptance and independence | 2 | 3 | 2 | 3 | 4 | 2 |
 | Completion and reporting | 3 | 3 | 2 | 4 | 3 | 2 |
@@ -216,6 +218,7 @@ Then set `phase_completed: 3`, `next_phase: 4`, tick "Diagnose" and update `upda
 - **BCG-AGENTS-2025**: BCG, *How agents are accelerating the next wave of AI value creation* (consultancy, 2025-12-15). https://www.bcg.com/publications/2025/agents-accelerate-next-wave-of-ai-value-creation
 - **BCG-GAP-2025**: BCG, *The Widening AI Value Gap* (consultancy survey, n=1,250, 2025-09). https://media-publications.bcg.com/The-Widening-AI-Value-Gap-October-2025.pdf
 - **BCPARTNERS-2025**: BC Partners, *Spotlight on Portfolio Operations: Cameron Hulett* (PE firm Q&A, 2025-01-08). https://www.bcpartners.com/news/spotlight-on-portfolio-operations-cameron-hulett/
+- **CPAPA-ZANIN**: Zanin, *5 Questions to Ask Before Your SOX Team Adopts AI Agents*, CPA Practice Advisor (trade press; author is a SOX-tooling vendor's CEO, 2026-08-18). https://www.cpapracticeadvisor.com/?p=188703
 - **ELOUNDOU-2023**: Eloundou et al., *GPTs are GPTs* (academic preprint, 2023). https://arxiv.org/abs/2303.10130
 - **HBS-JAGGED-2023**: Dell'Acqua et al., *Navigating the Jagged Technological Frontier* (field experiment, HBS WP 24-013, 2023-09). https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
 - **KANBANU-LITTLE-2022**: Kanban University, *Exploring Little's Law* (talk deck, 2022). https://kanban.university/wp-content/uploads/2022/09/Exploring-Littles-Law-KGS-2022.pdf
@@ -227,9 +230,10 @@ Then set `phase_completed: 3`, `next_phase: 4`, tick "Diagnose" and update `upda
 - **MCKINSEY-1YR-2025**: McKinsey, *One year of agentic AI: Six lessons from the people doing the work* (consultancy, 2025-09-12). https://www.mckinsey.com/capabilities/quantumblack/our-insights/one-year-of-agentic-ai-six-lessons-from-the-people-doing-the-work
 - **METR-2025**: METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity* (RCT, 2025-07). https://arxiv.org/abs/2507.09089
 - **NBER-ACEMOGLU-2024**: Acemoglu, *The Simple Macroeconomics of AI*, NBER WP 32487 (working paper, 2024-05). https://www.nber.org/papers/w32487
-- **NBER-BRYNJOLFSSON-2023**: Brynjolfsson, Li, Raymond, *Generative AI at Work*, NBER WP 31161 (working paper, 2023). https://www.nber.org/papers/w31161
+- **NBER-BRYNJOLFSSON-2023**: Brynjolfsson, Li, Raymond, *Generative AI at Work*, NBER WP 31161 (working paper, 2023-04, revised 2023-11). https://www.nber.org/papers/w31161
 - **NIST-CTRL-ND**: NIST/SEMATECH, *What are Control Charts?* (standards reference, undated). https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc31.htm
 - **OPENAI-GUIDE-2025**: OpenAI, *A practical guide to building agents* (vendor guide, 2025-04). https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
+- **OPTRO-SURVEY**: Optro, *One in Three Organizations Say They Have Acted on Wrong Decisions Made by AI Agents* (vendor survey release, 2026-10-08). https://optro.ai/blog/one-in-three-organizations-say-they-have-acted-on-wrong-decisions-made-by-ai-agents-optro-research-finds
 - **PEX-DOWNTIME-2015**: PEX Network, *The eight deadly lean wastes: DOWNTIME* (practitioner, 2015-08-12). https://www.processexcellencenetwork.com/lean-six-sigma-business-performance/articles/the-8-deadly-lean-wastes-downtime
 - **PEX-DUMAS-2025**: Dumas, *Process intelligence: The foundation of agentic AI success*, PEX Network (practitioner, 2025-02-04). https://www.processexcellencenetwork.com/ai/articles/process-intelligence-agentic-ai/amp
 - **SEDDON-SWINSCOE-2020**: Swinscoe, *Interview with John Seddon of The Vanguard Method* (practitioner interview, 2020-01-27). https://www.adrianswinscoe.com/2020/01/a-lot-of-organisations-talk-outside-in-but-their-systems-are-not-designed-outside-in-interview-with-john-seddon-of-the-vanguard-method/
@@ -239,5 +243,5 @@ Then set `phase_completed: 3`, `next_phase: 4`, tick "Diagnose" and update `upda
 - **WIKI-5WHYS**: Wikipedia, *Five whys*, criticism section (secondary, accessed 2026-10-16). https://en.wikipedia.org/wiki/Five_whys
 - **WIKI-DMAIC-2025**: Wikipedia, *DMAIC*, Measure phase (tertiary, 2025-10-08). https://en.wikipedia.org/wiki/DMAIC
 - **WIKI-KINGMAN-2025**: Wikipedia, *Kingman's formula* (tertiary, 2025-11-15). https://en.wikipedia.org/wiki/Kingman%27s_formula
-- **WORKDAY-2026**: Workday, *Companies Are Leaving AI Gains on the Table* (vendor survey press release, 2026-01-14; "nearly 40%" there, "about 37%" in trade coverage). https://en-hk.newsroom.workday.com/2026-01-14-New-Workday-Research-Companies-Are-Leaving-AI-Gains-on-the-Table?asPDF=1
-- Assurance facts: `archetypes/assurance/modules/controls-testing.md` §2, §6, §7 (review bottleneck [CPAPA-ZANIN]; 46% more validation time [OPTRO-SURVEY]); use cases `#05`, `#07`, `#10`.
+- **WORKDAY-2026**: Workday, *Companies Are Leaving AI Gains on the Table* (vendor survey press release, 2026-01-14). https://en-hk.newsroom.workday.com/2026-01-14-New-Workday-Research-Companies-Are-Leaving-AI-Gains-on-the-Table?asPDF=1
+- Assurance facts: `archetypes/assurance/modules/controls-testing.md` §2, §6, §7; use cases `#05`, `#07`, `#10`.

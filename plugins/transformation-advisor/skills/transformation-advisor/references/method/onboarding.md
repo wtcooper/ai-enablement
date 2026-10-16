@@ -72,8 +72,8 @@ Ask in plain words. Core questions are starred; use the others when an answer is
 
 **Why these words.** Asking about unapproved use with normalising language matters: about a third of professionals in
 one vendor survey used AI their organization had not approved [TR-2026], 78% of AI users in another brought their own
-tools [MSFT-WTI-2024], and 69% of interviewees in a third mentioned stigma about using AI at work
-[ANTHROPIC-INTERVIEWER-2025]. All three are vendor-published.
+tools [MSFT-WTI-2024], and 69% of the general-workforce professionals interviewed in a third mentioned the social stigma
+of using AI at work [ANTHROPIC-INTERVIEWER-2025]. All three are vendor-published.
 
 ## 4. Archetype detection
 
@@ -93,12 +93,15 @@ tools [MSFT-WTI-2024], and 69% of interviewees in a third mentioned stigma about
 **Principles.**
 - A stage is a way to choose questions and emphasis, not a score or a verdict. Five-level models are the most common
   design in the literature, with no standard terminology [SADIQ-2021]; no study found follows the same firms through the stages.
-- **Place by evidence.** Self-placement runs high: 7% of leaders against 26% of individual contributors said they did
-  not know whether their organization had implemented AI (independent poll) [GALLUP-2025].
+- **Place by evidence.** What a person can see depends on where they sit: 26% of individual contributors, 16% of
+  managers and 7% of leaders said they did not know whether their organization had implemented AI (independent poll)
+  [GALLUP-2025]. One person's view is not the scope's stage; ask to see or count.
 - **Place each scope.** A person can be ahead of their team, and a team ahead of its firm. Plan against the weakest
-  dimension that matters (strategy, data, governance, skills, ownership) [DELOITTE-STATEAI-2026].
-- **Spend the most effort on the Experimenting-to-Adopting boundary.** Every model reviewed puts its sharpest break at
-  the move from individual or pilot use to shared, owned, measured workflows [MITCISR-2024; BCG-GAP-2025; SAGE-2026].
+  dimension that matters (strategy, data, governance, skills, ownership). Readiness is uneven: firms feel more prepared
+  on strategy than on infrastructure, data, risk and talent [DELOITTE-STATEAI-2026].
+- **Spend the most effort on the Experimenting-to-Adopting boundary.** The models used here put their sharpest break at
+  the move from individual or pilot use to shared, owned, measured workflows. In MIT CISR's survey, firms in its first two
+  stages performed below their industry average and firms in the last two above it [MITCISR-2024; BCG-GAP-2025; SAGE-2026].
 - **Treat AI-native claims with scepticism.** Top tiers are small: 5% in BCG's study, 7% in MIT CISR's [BCG-GAP-2025; MITCISR-2024].
 - Use the archetype's `ARCHETYPE.md` for field-specific markers (for example, what Adopting looks like in assurance).
 
@@ -112,17 +115,17 @@ tools [MSFT-WTI-2024], and 69% of interviewees in a third mentioned stigma about
 | **Scaling** | Shared platform and reusable components; value tracked across a portfolio; dedicated AI leader; shared business and technology ownership [MITCISR-2024; BCG-GAP-2025] | Operating model and decision rights; skills and training; governance for autonomy; data debt [BCG-GAP-2025; DELOITTE-STATEAI-2026] | Value is measured at P&L level, and leaders are asking what to sell, to whom and at what price |
 | **AI-native** | Pricing, services or the cost base have changed because of AI; new services sold that were not possible before; work redesigned end to end with agents under oversight [MITCISR-2024; SAGE-2026] | Time-based pricing; advisory skills; professional accountability; skill atrophy | Re-diagnose each review; stages age quickly [BCG-GAP-2025] |
 
-"Ready when" criteria are working heuristics from the maturity research, not tested thresholds.
+"Ready when" criteria are working heuristics, not tested thresholds: no study found follows firms through these stages.
 
 ### Delegation and the Adopting stage (decision)
 
-The spec lists "the first delegated (agentic) workflows" under Adopting. The evidence puts broad delegation later:
+The advisor's stage model lists the first delegated (agentic) workflows under Adopting. The evidence puts broad delegation later:
 BCG treats agents as the step after data foundations, scaled capabilities and clear governance [BCG-GAP-2025];
 about one in five companies has a mature governance model for autonomous agents [DELOITTE-STATEAI-2026]; and no more
 than 10% of McKinsey's respondents report scaling agents in any single function [MCKINSEY-SOAI-2025]. All are
 self-reported surveys. Yet bounded delegation does run in teams that already own production workflows: internal audit
 teams have agents testing defined control sets under reviewer sign-off (assurance controls-testing module, `#05`;
-vendor-published, confirmed by the team). So:
+figures self-reported by the team and republished by the vendor). So:
 
 - **Curious and Experimenting:** show delegate-level examples as inspiration and as the target picture. Do not plan one.
 - **Adopting:** plan at most one or two **bounded** delegated workflows, and only when all five gates hold:
@@ -155,7 +158,7 @@ vendor-published, confirmed by the team). So:
 
 ## 6. Adapting the path
 
-| Stage | Emphasis (spec §3.2, sharpened) |
+| Stage | Emphasis |
 |---|---|
 | **Curious** | Inspiration tour of real archetype examples, with grades. Explain the ladder (assist, augment, automate, delegate). Two or three quick wins on low-risk, non-sensitive work with existing tools, made visible to peers [ROGERS-WIKI]. A minimal safe-use rule. Light mapping |
 | **Experimenting** | Move from individual use to a shared team workflow. Find repeatable, high-volume steps. Fix a baseline and a success measure before any pilot. Use power users as champions [MSFT-WTI-2024]. Ask where saved time goes |
@@ -183,11 +186,11 @@ summarise where things stand, and offer to continue.
 | **Count owned workflows in production**, each with an owner and a before-and-after measure | Experimenting vs Adopting | Pilot purgatory. Nearly 60% of law firms using one enterprise assistant were still piloting it [ILTA-2025] |
 | **Ask which pilots stopped, and why** | Experimenting | Hidden blockers (data, trust, fit) and whether pilots teach anything |
 | **Ask about unapproved tools**, with normalising words | Curious, Experimenting | Shadow use, real individual maturity, the policy gap; also a source of use cases [MIT-NANDA-2025; TR-2026] |
-| **Triangulate the leader's view** against a team member or the archetype markers | A leader self-places high | Optimism bias; leaders hear about use second-hand [GALLUP-2025] |
+| **Triangulate the leader's view** against a team member or the archetype markers | A leader self-places high | Whether the leader's view matches daily practice; awareness of AI adoption differs sharply by role [GALLUP-2025] |
 | **Ask what happened to the saved hours** | Experimenting, Adopting | Capacity that was never captured; in fee work, margin at risk [SAGE-2026] |
-| **Ask how much the sponsor uses AI personally** | Leader or practice head | Real sponsorship versus delegation; BCG links engaged leadership to its top tier (correlation) [BCG-GAP-2025] |
+| **Ask how much the sponsor uses AI personally** | Leader or practice head | Real sponsorship versus delegation; in BCG's top tier nearly all C-level leaders use AI day to day (correlation) [BCG-GAP-2025] |
 | **Ask for the policy, then ask what one staff member thinks it says** | Any stage | Paper versus lived governance [LITIFY-2026] |
-| **Ask what managers do about AI:** encourage, permit or ignore | Team and unit | The main adoption lever below leadership [GALLUP-2025] |
+| **Ask what managers do about AI:** encourage, permit or ignore | Team and unit | Whether managers are enabling use; Gallup finds broader adoption strongly associated with manager support [GALLUP-2025] |
 | **Ask for the last AI error that was caught, and who caught it** | Adopting and above | Whether review is designed; whether people know where AI is unreliable [HBS-JAGGED-2023] |
 | **Run a quick governance screen** (strategy, policy, risk, human checkpoints, monitoring, skills) | Before planning Adopting or above | Whether governance is ready for the target stage [ICAEW-GOV-2026] |
 | **Count markers, place at the highest stage where most hold, and note exceptions** | End of onboarding | An audit trail the user can edit, instead of a label |
@@ -197,7 +200,7 @@ summarise where things stand, and offer to continue.
 | Trap | Why it happens | How to avoid it |
 |---|---|---|
 | Placing by tool count | Licences are easy to count; integration and outcomes are not | Ask for owned workflows, where AI sits relative to the system of record, and measured outcomes |
-| Taking self-placement at face value | Leaders are further from daily use | Ask to see; triangulate; count markers [GALLUP-2025] |
+| Taking self-placement at face value | One person sees only part of the scope | Ask to see; triangulate; count markers [GALLUP-2025] |
 | Treating efficiency as progress | Assisted productivity feels like success. 66% of Deloitte respondents report efficiency gains, 20% revenue growth (self-reported) [DELOITTE-STATEAI-2026] | Ask where saved time went and whether pricing or services changed |
 | Skipping rungs, especially to agents | Ambition and vendor messages | Plan the next stage only; apply the five delegation gates |
 | Ignoring shadow AI | Individuals move faster than organizations | Ask, without judgment; treat it as risk and as a source of ideas |
@@ -209,7 +212,7 @@ summarise where things stand, and offer to continue.
 
 ## 9. Worked example
 
-*Illustrative, built from the spec's reference persona and the assurance controls-testing module.* An audit partner
+*Illustrative, built from a typical audit-partner profile and the assurance controls-testing module.* An audit partner
 leads a regional practice. The advisor learns, one question at a time: the practice audits mid-sized public and
 private companies; fees are under pressure, staff are short, and recent inspections raised controls-testing points.
 Firm policy allows an enterprise chat assistant but not client data in public tools. Asked who used AI in the last two
@@ -229,7 +232,7 @@ or measured yet. You want a plan to take to the practice leadership. Did I get a
 
 ## 10. Output
 
-Write the profile into the plan's frontmatter and add a **Profile** section to the body. Field names follow spec §5.3.
+Write the profile into the plan's frontmatter and add a **Profile** section to the body. Field names follow the plan schema (`../schemas/`).
 
 ```yaml
 scope: { name: "Regional audit practice", level: business-unit, parent: null }
@@ -266,7 +269,7 @@ confidentiality reminder was given; and anything the user corrected. Then tick "
 - **IMDA-MGF-2026**: IMDA Singapore, *Model AI Governance Framework for Agentic AI* v1.5 (regulator guidance, 2026-05-20). https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf
 - **IRGLOBAL-2025**: IR Global on Mondaq, *The Legal AI Adoption Curve* (practitioner article, 2025-05-13). https://www.mondaq.com/uk/new-technology/1623228/the-legal-ai-adoption-curve-where-your-law-firm-stands
 - **LITIFY-2026**: Litify, *Legal AI Maturity Scale* (vendor blog, 2026-03-19). https://www.litify.com/blog/the-litify-legal-ai-maturity-scale
-- **MCKINSEY-SOAI-2025**: McKinsey, *The state of AI in 2025* (consultancy survey, n=1,993, 2025-11; read via third-party copy). https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+- **MCKINSEY-SOAI-2025**: McKinsey, *The state of AI in 2025: Agents, innovation, and transformation* (consultancy survey, n=1,993, 2025-11). https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
 - **MIT-NANDA-2025**: MIT NANDA, *The GenAI Divide: State of AI in Business 2025* (preliminary, interview-based, not peer-reviewed, 2025-07). https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
 - **MITCISR-2024**: Weill, Woerner, Sebastian, MIT CISR, *Building Enterprise AI Maturity* (academic briefing, 2024-12). https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian
 - **MSFT-WTI-2024**: Microsoft and LinkedIn, *2024 Work Trend Index* (vendor survey, 2024-05-08). https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
@@ -275,5 +278,5 @@ confidentiality reminder was given; and anything the user corrected. Then tick "
 - **ROGERS-WIKI**: Wikipedia, *Diffusion of innovations* (reference summary of Rogers, accessed 2026-10-16). https://en.wikipedia.org/wiki/Diffusion_of_innovations
 - **SADIQ-2021**: Sadiq et al., *Artificial intelligence maturity model: a systematic literature review*, PeerJ CS (peer-reviewed, 2021-08-25). https://peerj.com/articles/cs-661
 - **SAGE-2026**: Sage UK, *Where is your accounting firm on the AI maturity curve?* (vendor blog, 2026-04-08). https://www.sage.com/en-gb/blog/accounting-bookkeeping-ai-maturity-curve/
-- **TR-2026**: Thomson Reuters, *Future of Professionals 2026* (vendor research page, undated). https://www.thomsonreuters.com/en/c/future-of-professionals
+- **TR-2026**: Thomson Reuters, *Future of Professionals 2026* (vendor research page, 2026 edition; page undated, accessed 2026-10-16). https://www.thomsonreuters.com/en/c/future-of-professionals
 - Assurance example `#05`: `archetypes/assurance/modules/controls-testing.md` and its use-case YAML.
