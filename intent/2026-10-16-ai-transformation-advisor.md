@@ -1,6 +1,6 @@
 # Intent: AI transformation advisor
 
-Author: Wade Cooper · Drafted with Claude · Date: 2026-10-16 · Status: draft
+Author: Wade Cooper · Drafted with Claude · Date: 2026-10-16 · Status: draft (decisions recorded; ready for acceptance)
 
 > Stage 1 (Plan) artifact in the [AI-native SDLC](https://claude.com/blog/the-ai-native-sdlc-playbook)
 > chain: `intent` → `spec` → `plan`. This file says what we want, why, and under
@@ -126,24 +126,23 @@ Success looks like this:
 
 ## Decisions so far
 
-Details are in [`docs/brainstorm/2026-10-16-packs-agents-and-pe.md`](../docs/brainstorm/2026-10-16-packs-agents-and-pe.md).
+Background reasoning is in [`docs/brainstorm/`](../docs/brainstorm/). The design that follows from
+these decisions is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2026-10-16-ai-transformation-advisor.md).
 
 | Question | Decision |
 |---|---|
 | First audience | Program lead (top-down) plus team delegates |
 | Shared backend | None in v1. A file-based program workspace |
-| Delivery | Agent Plugin: orchestrator skill plus specialized skills and subagents |
-| Generic or organization-specific | Generic open core plus private overlay. First used inside a Big 4 firm (proposed) |
-| Depth of PE content | PE program structure for the lead layer, lean and Six Sigma inside team discovery. Deal mode deferred (proposed) |
-| Workforce framing | Open about capacity and cost at the level of roles. Always show redeploy versus reduce. Never about named people (proposed) |
+| Program workspace | A storage-agnostic folder of markdown and YAML. A GitHub repo is the reference setup, matching how the plugin is distributed. Other stores can be added later |
+| Delivery | Agent Plugin: an orchestrator skill plus specialized skills and subagents |
+| Clients | Any client that supports Agent Plugins and can install from a GitHub marketplace (Claude Code, Codex, Cursor, GitHub Copilot and others). No single client is required |
+| Generic or organization-specific | Generic open core. **No organization-specific content in the plugin.** Organization content goes in an overlay in the organization's own workspace |
+| Seed content | Researched from public sources by a fan-out of research subagents during the build |
+| Taxonomies | No external framework IDs (for example APQC). Plain names and descriptions only |
+| Depth of PE content | PE program structure for the lead layer, lean and Six Sigma inside team discovery. Deal mode deferred |
+| Workforce framing | Open about capacity and cost at the level of roles. Always show redeploy versus reduce. Never about named people |
 | Multi-person engagements | Yes, through the shared charter and team assessment files |
 
 ## Open questions
 
-1. **Use-case library sourcing:** curated by hand, gathered from public case studies, harvested from
-   sessions (opt-in), or a mix? Who curates it?
-2. **Where outputs go:** markdown files in the workspace for v1. Docs, slides or tickets later?
-3. **Program workspace location:** git repo, SharePoint or OneDrive, or a Cowork folder?
-4. **Clients for v0:** Claude Code and Cowork, plus which client without subagents to test the fallback?
-5. **First packs:** professional-services, assurance and tax? Who supplies sanitized seed content?
-6. **APQC licensing:** reference process IDs and short names only, or license the full content?
+The open questions from this intent are answered in the spec (§12). The spec carries new ones forward (§13).
