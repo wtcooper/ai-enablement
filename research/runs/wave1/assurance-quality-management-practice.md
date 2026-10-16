@@ -99,7 +99,7 @@ Notes on the entries:
   risks_and_guardrails:
     - "FRC: firms generally relied on preventive controls and did not monitor that teams used only authorised and current tools (FRC-ATT-2025)"
     - "IFIAR asks for oversight programmes that also catch non-approved or decommissioned tools (IFIAR-TTF-2026, p. 6)"
-    - "IAASB stakeholders described teams using tools outside firm approval channels as a case the guides must cover (IAASB-TQMPLAN-2026, para 25(c))"
+    - "The IAASB's action plan lists engagement teams accessing tools outside the firm's approval channels as a case its guides will address (IAASB-TQMPLAN-2026, para 25(c))"
   human_checkpoints:
     - "Approval body decision before pilot and before deployment"
   role_evolution: "Firms add technology-risk roles to quality governance. Deloitte UK's Chief AI Officer is responsible for embedding responsible AI governance across client services and internal operations (DELUK-TR-2026, leadership biographies)."
@@ -135,7 +135,7 @@ Notes on the entries:
     - "Data privacy and confidentiality: some firms restrict what information may be uploaded to firm GenAI tools (PCAOB-GENAI-2024, p. 4)"
     - "IRBA gives examples of firm policies: permit only certain tools, set minimum qualifications to use them, mandate training, specify the engagement partner's responsibilities (IRBA-SPA11-2025, section B)"
   human_checkpoints:
-    - "Engagement partner confirms only firm-approved tools are used (IRBA-SPA11-2025, section B)"
+    - "Auditors are expected to comply with firm policy, for example by using only firm-approved tools, and the engagement partner is responsible for appropriate use (IRBA-SPA11-2025, paras 19-20)"
   role_evolution: "Not described in the sources beyond added training duties."
   evidence_grade: B
   sources:
@@ -193,7 +193,7 @@ Notes on the entries:
   problem: "ISQM 1 applies to each member firm, yet tools are built and certified by the network. IFIAR members saw unclear responsibility for monitoring globally developed tools, with fragmented coverage as a risk."
   solution: "Two of the six largest UK firms required a UK owner and UK-level certification for globally certified tools, relying partly on global steps. IFIAR asks networks to set clear policies that allocate monitoring risk and responsibility between network and member firm, and to feed local issues back to the global team. The IAASB's action plan says the firm keeps responsibility for approving tools and monitoring them wherever the activity occurs."
   outcomes:
-    - { lever: risk, description: "No outcome published. Two firms required UK-level certification of global tools; others did no UK-level certification or incremental testing", figure: "2 of the six firms reviewed", measures: "firms among the six largest UK audit firms reviewed by the FRC that required a UK owner and UK-level certification of globally certified ATTs", provenance: independent, source_ref: FRC-ATT-2025 }
+    - { lever: risk, description: "No outcome published. Two firms required UK-level certification of global tools; the review describes a range of practice, from full UK-level certification to none", figure: "2 of the six firms reviewed", measures: "firms among the six largest UK audit firms reviewed by the FRC that required a UK owner and UK-level certification of globally certified ATTs", provenance: independent, source_ref: FRC-ATT-2025 }
   prerequisites:
     - "Network policy that names who monitors each tool"
     - "A feedback route from member firms to the global tool owner"
@@ -416,7 +416,7 @@ Notes on the entries:
     - "An accredited certification body and a documented AI management system"
   risks_and_guardrails:
     - "A management-system certificate shows governance, not that any tool's output is reliable on an engagement"
-    - "SEC staff said no single framework exists for AI governance and that entities should judge whether a framework is fit for purpose (DART-SECPCAOB-2025; RSM insights on the same conference)"
+    - "SEC staff said at the December 2025 conference that there is no single authority or framework for AI governance, so preparers should judge whether a framework is fit for purpose; that remark was about preparers, not audit firms (RSM-SECPCAOB-2025, section 2.1)"
   human_checkpoints:
     - "Not described"
   role_evolution: "Not described."
@@ -424,8 +424,9 @@ Notes on the entries:
   sources:
     - { ref: AT-KPMGISO-2025, title: "Tech News: KPMG hails ISO 42001 certification", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/list/tech-news-kpmg-hails-iso-42001-certification", date: "2025-11-21", access: full, locator: "first item" }
     - { ref: FIELDGUIDE-PCAOB-2026, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026-08-06", access: full, locator: "section 'How firms should evaluate AI tools under PCAOB expectations'" }
+    - { ref: RSM-SECPCAOB-2025, title: "Insights from the 2025 AICPA Conference on Current SEC and PCAOB Developments", publisher: "RSM US", type: conference, url: "https://rsmus.com/content/dam/rsm/insights/financial-reporting/1pdf/insights-from-the-2025-aicpa-conference-on-current-sec-and-pcaob-developments-12-25.pdf", date: "2025-12", access: full, locator: "section 2.1, 'Controls and governance'" }
   last_reviewed: 2026-10-16
-  notes: "Fieldguide says it holds ISO 42001 certification (vendor statement). The 'first of Big Four' statement is KPMG's, reported by Accounting Today via a KPMG spokesperson. The DART recap of the SEC and PCAOB conference supports the 'no single framework' point only in the RSM recap, which this analyst read (RSM-SECPCAOB-2025, section 2.1); it is cited here in words only."
+  notes: "Fieldguide says it holds ISO 42001 certification (vendor statement). The 'first of Big Four' statement is KPMG's, reported by Accounting Today via a KPMG spokesperson."
 
 - id: assurance-quality-management-13
   title: "Mandatory pre-access AI training and role-specific training for reviewers"
@@ -449,7 +450,7 @@ Notes on the entries:
     - "IFIAR asks that training maps to competencies, with records and refresher intervals proportionate to risk (IFIAR-TTF-2026, p. 7)"
   human_checkpoints:
     - "Training completion gates tool access"
-  role_evolution: "ICAEW's faculty chair stresses training in judgement and scepticism, not only tool mechanics (landscape; not re-opened). Deloitte UK describes AI fluency workstreams and firm-wide AI learning on critical judgement and responsible use (DELUK-TR-2026, risk responses)."
+  role_evolution: "Deloitte UK describes an AI-fluency workstream and firm-wide AI learning covering critical judgement, human skills and responsible use (DELUK-TR-2026, risk response lists)."
   evidence_grade: B
   sources:
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "Staff education and governance, pp. 34-36" }
@@ -457,7 +458,7 @@ Notes on the entries:
     - { ref: NFRA-CAALLEY-2026, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: "CAalley.com (reporting NFRA Staff Series)", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24", access: full, locator: "section 'Audit documentation and training to change'" }
     - { ref: DELUK-TR-2026, title: "2026 Transparency Report, Deloitte LLP and Deloitte Limited", publisher: "Deloitte UK", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2026/deloitte-uk-annual-review-2026-audit-transparency-report.pdf", date: "2026-09", access: full, locator: "risk response lists, 'Firmwide AI learning'" }
   last_reviewed: 2026-10-16
-  notes: "PwC and KPMG details are second-hand: they come from the preprint's reading of PwC UK 2024 (pp. 110-112) and KPMG UK 2025 (pp. 36-37) transparency reports, which this analyst did not open. The ICAEW point is carried from the landscape and not used as a source here."
+  notes: "PwC and KPMG details are second-hand: they come from the preprint's reading of PwC UK 2024 (pp. 110-112) and KPMG UK 2025 (pp. 36-37) transparency reports, which this analyst did not open."
 
 - id: assurance-quality-management-14
   title: "In-workflow AI tutor for on-demand micro-training while doing the work"
@@ -509,7 +510,7 @@ Notes on the entries:
   risks_and_guardrails:
     - "FRC and NFRA name automation bias as a main risk in review and oversight (FRC-GENAI-2026, pp. 37-38; NFRA-CAALLEY-2026)"
     - "CPAB: stating that a human is in the loop is not enough; firms need a behaviour shift and clear articulation of involvement at each stage (CPAB-TECH-2025, p. 5)"
-    - "IFIAR 2024 survey: 31% of reporting members had findings that a tool was not used as intended; common findings were misreading tool results and thin testing of outliers (IFIAR-TTF-2025, pp. 4-5)"
+    - "IFIAR 2024 survey: 31% of reporting members had findings that a tool was not used as intended; common findings were misreading tool results and thin testing of outliers (IFIAR-TTF-2025, p. 5)"
   human_checkpoints:
     - "Review of final outputs by an engagement-team member with appropriate competence"
     - "Authorisation or review of intermediate steps at defined control points"
@@ -519,7 +520,7 @@ Notes on the entries:
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "Human in the loop review and oversight, pp. 37-38; example 1, p. 46; example 2, pp. 50-54" }
     - { ref: DELUK-TR-2026, title: "2026 Transparency Report, Deloitte LLP and Deloitte Limited", publisher: "Deloitte UK", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2026/deloitte-uk-annual-review-2026-audit-transparency-report.pdf", date: "2026-09", access: full, locator: "Appendix 5, Technology, p. 48" }
     - { ref: KPMG-TR-2025, title: "Transparency Report 2025", publisher: "KPMG International", type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2025/12/transparency-report-fy25.pdf", date: "2025-12", access: full, locator: "p. 16" }
-    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits - observations, risks and further evolution", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "Inspection findings related to technology, pp. 4-5" }
+    - { ref: IFIAR-TTF-2025, title: "Use of technology in audits - observations, risks and further evolution", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "Inspection findings related to technology, p. 5" }
     - { ref: CPAB-TECH-2025, title: "The evolving use of technology in the audit", publisher: "CPAB (Canada)", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2025-evolving-use-of-technology-in-the-audit-en.pdf", date: "2025-12", access: full, locator: "Clearly defining the role of auditors, p. 5" }
     - { ref: HOLMSTROM-2024, title: "How Does Generative AI Automation Affect Auditors' Motivation and Judgment Quality? (registered report proposal)", publisher: "PCAOB registered reports conference materials (Holmstrom and Peters)", type: academic, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf", date: "2024-06", access: full, locator: "Introduction" }
   last_reviewed: 2026-10-16
@@ -554,8 +555,9 @@ Notes on the entries:
     - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph on Evidence Match" }
     - { ref: FIELDGUIDE-PCAOB-2026, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026-08-06", access: full, locator: "final section" }
     - { ref: AFM-2025, title: "12 building blocks for controlled use of advanced (Gen)AI auditing tools", publisher: "Netherlands Authority for the Financial Markets", type: regulator, url: "https://www.afm.nl/en/sector/actueel/2025/dec/pb-12-bouwstenen-beheerst-gebruik-audit-tooling", date: "2025-12-11", access: full, locator: "'Humans remain ultimately responsible' paragraph" }
+    - { ref: CPAPRACTICE-RSMANDERA-2026, title: "Andera and RSM US Partner to Create AI-Enabled Control Testing Platform for Internal Audit", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/26/andera-and-rsm-us-partner-to-create-ai-enabled-control-testing-platform-for-internal-audit/189130/", date: "2026-08-26", access: full, locator: "paragraph beginning 'By entering into this strategic alliance'" }
   last_reviewed: 2026-10-16
-  notes: "Grade C: the named-customer evidence is a vendor description and PwC's tool is a substantive-testing tool (routed). Capability claims from RSM/Andera are announced only (CPA Practice Advisor, 2026-08-26, read)."
+  notes: "Grade C: the named-customer evidence is a vendor description and PwC's tool is a substantive-testing tool (routed). The RSM and Andera capability is an announcement of an alliance (CPAPRACTICE-RSMANDERA-2026), and it concerns internal-audit control testing, so it is adjacent."
 
 - id: assurance-quality-management-17
   title: "Document AI use on the engagement file: tool, purpose, how output informed the work, with central records for the rest"
@@ -806,14 +808,14 @@ Engagement level (ISA 220 (Revised)):
 
 | Metric | Value | What it measures | Source |
 |---|---|---|---|
-| Members reporting tool-not-used-as-intended findings | 31% (2024), 29% (2023) | Share of IFIAR Members reporting findings that an ATT was not used as intended (survey of members) | IFIAR-TTF-2025, p. 4 |
+| Members reporting tool-not-used-as-intended findings | 31% (2024), 29% (2023) | Share of IFIAR Members reporting findings that an ATT was not used as intended (survey of members) | IFIAR-TTF-2025, p. 5 |
 | Growth in AI-enabled tools at the six GPPC networks | about 30% year over year in 2025 | Collective report from the networks to IFIAR's technology task force; differing reporting practices | IFIAR-TTF-2026, p. 5 |
 | Firms with at least one finding, monitoring and remediation | 32% (42 firms) in 2025; 25% in 2024 | Member firms inspected with at least one finding in the theme, per Table A.2 | IFIAR-SURVEY-2026, Table A.2 |
 | Firms with an EQR finding | 20% (26 firms) in 2025 | New category in 2025 | IFIAR-SURVEY-2026, Table A.2 |
 | Firms with a technological-resources finding | 9% (11 firms) in 2025 | New category in 2025; no AI-specific category | IFIAR-SURVEY-2026, Table A.2 |
-| Audits with findings | 35% in 2025 (26% in 2022) | "Percentage of audits with findings" in IFIAR's survey of the six GPPC networks | IFIAR-SURVEY-2026, p. 2 |
+| Audits with findings | 35% in 2025 (26% in 2022) | "Percentage of audits with findings" in IFIAR's survey of the six GPPC networks | IFIAR-SURVEY-2026, printed p. 2 |
 | Deloitte UK PairD use | 4,649 active users; over 75% of Audit & Assurance professionals; about two million prompts in the year | Firm-reported for the year ended 31 May 2025 | DELUK-TR-2025, pp. 15, 94 |
-| IRBA survey, firms with an AI governance framework or building one | at least 56% | Firms that participated in IRBA's survey of auditors of publicly traded entities (sample size not stated in the text read) | IRBA-SPA11-2025, section B para 17 |
+| IRBA survey, firms with an AI governance framework or building one | at least 56% | Firms that participated in IRBA's survey of auditors of publicly traded entities (sample size not stated in the text read) | IRBA-SPA11-2025, p. 8 (after para 17) |
 | Time savings PwC US sees from AI in audit | "not that drastic yet" (qualitative) | PwC US assurance transformation leader, one year after launch | CFODIVE-PWC-2026 |
 | Sanville realization | $150-200 to $250+ per hour | Vendor customer story; one firm | FIELDGUIDE-SANVILLE-2026 |
 
@@ -846,8 +848,9 @@ No published override rates, review-comment accuracy, or parallel-run error rate
 
 - Review becomes the main human task. Deloitte says professionals supervise, validate and work alongside AI (DELOITTE-OMNIA-2026). Holmstrom and Peters propose, without results, that moving from preparing to reviewing could lower motivation and judgement quality (HOLMSTROM-2024).
 - Reviewer competence is a named control. FRC says reviewers need the competence to find deficiencies, and sometimes specialist expertise (FRC-GENAI-2026, p. 37). CPAB asks about the training needed to review output and to build junior auditors' critical thinking (CPAB-TECH-2025, p. 3).
-- New roles: central AI-tool owners, technology controls boards, Chief AI Officers (DELUK-TR-2026). PwC says it now hires engineers it would not have hired into assurance before (AT-PWC-2025 quote in PWC-AT-2025).
+- New roles: central AI-tool owners, technology controls boards, Chief AI Officers (DELUK-TR-2026). PwC says it now hires engineers it would not have hired into assurance before (PWC-AT-2025).
 - Sanville's partner says reviewers now have bandwidth to guide first-year staff on complex revenue testing (FIELDGUIDE-SANVILLE-2026; vendor story).
+- The IAASB's Technology QM Expert Group includes practitioners from KPMG, PwC, Deloitte, EY, BDO, Grant Thornton and Forvis Mazars, and regulators from the FRC, CPAB and PCAOB, so firm quality leaders are shaping the guides (IAASB-TQMWS-2026).
 - Staff integrity: Deloitte UK told staff that using GenAI to cheat in assessments is gross misconduct (DELUK-TR-2025, p. 30).
 
 ### Objections and concerns practitioners raise
@@ -933,9 +936,10 @@ All sources were opened unless marked otherwise. Dates are publication dates, or
 | HOLMSTROM-2024 | How Does Generative AI Automation Affect Auditors' Motivation and Judgment Quality? (registered report proposal) | PCAOB conference materials (Holmstrom and Peters) | academic | https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf | 2024-06 (PDF metadata; pilot dated it 2025) |
 | ICAS-FRC-2026 | FRC issues new guidance to support audit firms using emerging AI technologies | ICAS | professional-body | https://icas.com/news-insights-events/news/audit-assurance/frc-issues-new-guidance-to-support-audit-firms-using-emerging-ai-technologies/ | 2026-03-30 |
 | ICAS-SANDBOX-2026 | Driving audit innovation with FRC sandboxes and forums | ICAS | professional-body | https://icas.com/news-insights-events/news/audit-assurance/driving-audit-innovation-with-frc-sandboxes-and-forums/ | 2026-07-07 |
+| CPAPRACTICE-RSMANDERA-2026 | Andera and RSM US Partner to Create AI-Enabled Control Testing Platform for Internal Audit | CPA Practice Advisor | press | https://www.cpapracticeadvisor.com/2026/08/26/andera-and-rsm-us-partner-to-create-ai-enabled-control-testing-platform-for-internal-audit/189130/ | 2026-08-26 |
 | CAQ-RSM-2026 | CAQ Audit in Action blog on RSM's AI tools (carried from the landscape; **search-only**, not opened) | Center for Audit Quality | professional-body | https://www.thecaq.org/audit-in-action (listing page; the post was not located) | 2026-08-25 |
 
-**Count by type (opened):** regulator 13, standard-setter 3, firm 5, conference 2, press 8, vendor 2, academic 3, professional-body 2 = 38 opened. One further source (CAQ-RSM-2026) is search-only. Of the opened sources, 28 are primary documents (regulator, standard-setter, firm, vendor, academic) and 10 are press, professional-body or conference recaps.
+**Count by type (opened):** regulator 13, standard-setter 3, firm 5, conference 2, press 9, vendor 2, academic 3, professional-body 2 = 39 opened. One further source (CAQ-RSM-2026) is search-only. Of the opened sources, 26 are primary documents (regulator, standard-setter, firm, vendor, academic) and 13 are press, professional-body or conference recaps.
 
 ---
 

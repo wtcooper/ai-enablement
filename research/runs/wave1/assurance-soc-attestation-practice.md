@@ -15,7 +15,7 @@
 - **The only published firm-side measurements come from one firm.**
   - KPMG UK reports about 18% less testing time on recent controls assurance engagements (SOC 1, SOC 2, ISAE 3402, ISAE (UK) 3000) using Clara AI, Microsoft 365 Copilot and DataSnipper, and about 15% on one team using DataSnipper alone (KPMGUK-CONTROLS-2026).
   - Both figures are self-reported, with no baseline or engagement count, and come from a tool bundle, so they cannot be credited to AI alone.
-- **No independent measure of AI quality in SOC work was found.** There is no error rate, override rate, parallel-run result, peer review finding or inspection outcome tied to AI use in a SOC examination. The AICPA has published no peer-review statistics on AI.
+- **No independent measure of AI quality in SOC work was found.** There is no error rate, override rate, parallel-run result, peer review finding or inspection outcome tied to AI use in a SOC examination. No peer-review statistics on SOC 2 practices were found.
 - **Adoption is concentrated on preparation and administration, not on opinion-forming judgement.**
   - At the 2026 EY SOC conference, a live poll found AI used for evidence collection (63%), updating the Section 3 description (45%), drafting management responses to deviations (41%) and project management (29%) (EY-SOC-2026). It is a poll of attendees, not a survey.
   - Service-auditor-side uses described by named firms are walkthrough preparation, transcription into flowcharts, evidence extraction, report review, acceptance and scheduling (KPMGUK-CONTROLS-2026, LINFORD-ASSURE-2026).
@@ -781,7 +781,7 @@ Evidence grades and maturity follow the vocabulary. Where a figure came from a v
 
 ### Common pain points
 
-- Collecting screenshots and user lists by hand: a specialist firm partner recalls a compliance officer spending two weeks screenshotting a user list ten years ago (LINFORD-ASSURE-2026).
+- Collecting screenshots and user lists by hand: a Linford author recalls a compliance officer spending two weeks screenshotting a user list about ten years ago (LINFORD-ASSURE-2026).
 - Repeated evidence requests and re-doing audits per framework (ALIGN-ASCEND-2026).
 - Client and buyer pressure for speed and low price, with tool vendors setting expectations of weeks or even hours (JOFA-FAST-2026, JOFA-PODSOC-2026).
 - Control failures cluster in manual controls and system access in KPMG UK's benchmark: 90% of operating-effectiveness exceptions were on manually operated controls, and 39% of exceptions were on system access and authorisation (KPMGUK-CONTROLS-2026).
@@ -879,13 +879,13 @@ Not found: any SOC-specific accuracy, error-catch, override or rework rate for a
   - AICPA TQA 9561 scoping of service organizations' AI use (SDOWNS-TQA9561-2026, AICPA-TQA9561-2026).
   - The CSA note on the missing AI criteria (CSA-SOC2-2026) and the KPMG webcast on forthcoming Trust Services Criteria changes (KPMG-SOC-2026).
   - EY's conference theme of AI assurance through SOC and ISO (EY-SOC-2026, pp.2-3).
-  - Linford's 2023 note on SOC 2 considerations for AI and ML service organizations (https://linfordco.com/blog/soc-2-audit-considerations-ai-ml-platforms/, 2023-07-05; opened).
+  - Linford's 2023 note on SOC 2 considerations for AI and ML service organizations (LINFORD-AIML-2023, 2023-07-05).
   - The directory listing of ISO 42001 certification bodies (SOC2AUDITORS-AI-2026).
   - Drata's agent governance product (entry 18).
 - **acceptance-independence:** tool-provider arrangements, referral concentration, bundled fees and network or alternative-practice-structure questions (JOFA-SOCETH-2026); the AICPA's notice on allegations about a compliance vendor (AICPA-SOC-2026); the platform-plus-licensed-firm structure (entry 20).
 - **quality-management:** the Peer Review Board's SOC 2 alert and outreach (JOFA-PRB-2026); the AICPA's SOC Quality Center idea (JOFA-FAST-2026); firm-level tool governance for SOC practices.
 - **controls-testing:** user-side review of third-party SOC reports (entry 17; the pilot controls-testing module holds a use case on it); evidence-request and testing agents (entry 06).
-- **substantive-testing:** Fieldguide's Audit Testing Agent for financial audit, which the company says can automate up to 70% of testing (vendor blog, 26 Jun 2025, https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit; opened, vendor claim).
+- **substantive-testing:** Fieldguide's Audit Testing Agent for financial audit, which the company says can automate up to 70% of testing (FIELDGUIDE-FINAUDIT-2025, June 2025; vendor claim).
 
 ---
 
@@ -908,6 +908,7 @@ CSA-SOC2-2026 | The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted |
 DRATA-AGENTGOV-2026 | Drata Extends Trust Management Platform to Continuously Monitor and Govern AI Agents (press release; read through a text mirror because the host returned 403) | Drata | vendor | https://drata.com/about/news/drata-extends-trust-management-platform-to-continuously-monitor-and-govern-ai-agents | 2026-08-04 | full
 DRATA-JOBS-2026 | Senior SI and Audit Firm Alliances Manager; Senior Product Engineer 2, Audit (job postings) | Drata | job-posting | https://jobs.ashbyhq.com/drata/739d3f1a-4305-4ad3-88d4-b1b5713b67a3 | 2026-09-08 | full
 EY-SOC-2026 | How AI assurance builds trust with SOC, attestation and certification (14th annual EY SOC, Attestation and Certification Conference highlights) | EY | conference | https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf | 2026-09 | full
+FIELDGUIDE-FINAUDIT-2025 | Increase capacity and audit quality with Field Agents for financial audit (blog; sitemap last-modified 2025-06-26, text refers to AICPA ENGAGE 9-11 June 2025) | Fieldguide | vendor | https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit | 2025-06 | full
 FIELDGUIDE-JOBS-2026 | Director, Audit Transformation; Audit Methodology Lead (job postings) | Fieldguide | job-posting | https://jobs.ashbyhq.com/fieldguide/df0e17ea-85bc-45bc-b939-fe54426fb170 | 2026-10-02 | full
 FIELDGUIDE-SOC-2026 | SOC audits: Field Agents execute across the SOC engagement (solution page) | Fieldguide | vendor | https://fieldguide.io/solutions/soc-audits | 2026-08-11 | full
 FIELDGUIDE-WEAVER-2026 | Weaver scales GRC services with Fieldguide to deliver transparency and accelerate growth (case study) | Fieldguide | vendor | https://www.fieldguide.io/case-studies/weaver-scales-grc-services-with-fieldguide-to-deliver-transparency-and-accelerate-growth | 2026-05-28 | full
@@ -921,6 +922,7 @@ JOFA-PRB-2026 | AICPA guides peer reviewers to address SOC 2 risks | Journal of 
 JOFA-SOCETH-2026 | SOC engagements: Ethics risks with tool providers | Journal of Accountancy (AICPA Professional Ethics Division staff) | standard-setter | https://www.journalofaccountancy.com/issues/2026/apr/soc-engagements-ethics-risks-with-tool-providers/ | 2026-04-06 | full
 KPMG-SOC-2026 | The future of SOC reporting: Mastering AI risks and the changing Trust Services Criteria (webcast page) | KPMG US | firm | https://kpmg.com/us/en/webcasts/2026/soc-reporting-ai-risks-trust-services-criteria.html | 2026-09-22 | full
 KPMGUK-CONTROLS-2026 | Reimagining Controls Assurance with AI: Latest Insights for Leaders (SOC 1, SOC 2, ISAE 3402, ISAE (UK) 3000, AAF 01/20, AAF 05/20) | KPMG in the UK | firm | https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf | 2026-01 | full
+LINFORD-AIML-2023 | SOC 2 Audit Considerations for AI & ML Subservice Organizations | Linford & Company | firm | https://linfordco.com/blog/soc-2-audit-considerations-ai-ml-platforms/ | 2023-07-05 | full
 LINFORD-ASSURE-2026 | AI Made Compliance Cheaper. It Didn't Make Assurance Cheaper. | Linford & Company | firm | https://linfordco.com/blog/ai-compliance-vs-assurance/ | 2026-09-23 | full
 LINFORD-FAQ-2022 | AICPA FAQs on SOC 2 Automation Tools: Insights from an Auditor | Linford & Company | firm | https://linfordco.com/blog/soc-2-automation-tools-aicpa-faqs | 2022-06-15 | full
 LINFORD-TOOLS-2021 | How Does the Usage of SOC 2 Software Tools Affect SOC 2 Audits? | Linford & Company | firm | https://linfordco.com/blog/using-soc-2-software-tools-for-audit-compliance | 2021-12-22 | full
@@ -944,9 +946,9 @@ VANTA-AUDITORS-2026 | Vanta for Auditors: Become a Vanta auditor (partner page) 
 VANTA-Q5AUDITOR-2025 | Choosing a trusted auditor: 5 key questions to ask your potential auditor | Vanta | vendor | https://www.vanta.com/resources/5-key-questions-to-ask-your-auditor | 2025-03-21 | full
 VERDICT-VANTA-2026 | Vanta introduces automation tools to streamline enterprise compliance | Verdict | press | https://www.verdict.co.uk/vanta-introduces-automation-tools/ | 2026-03-20 | full
 
-**Count by type (46 sources):** vendor 14, firm 9, press 9, professional-body 4, standard-setter 4, job-posting 2, conference 1, podcast 1, survey 1, community 1. No regulator or academic source applies to this angle (see Gaps).
+**Count by type (48 sources):** vendor 15, firm 10, press 9, professional-body 4, standard-setter 4, job-posting 2, conference 1, podcast 1, survey 1, community 1. No regulator or academic source applies to this angle (see Gaps).
 
-Date notes: dates marked with a month only (for example 2026-10) are product, home and landing pages with no publication date; the month is the access date. ALIGN-BENCH-2026 is dated from the asset path (January 2026 uploads). FIELDGUIDE-WEAVER-2026 and FIELDGUIDE-SOC-2026 use the page's last-modified date. HN-CHIARO-2026 is dated from "73 days ago". TECHCRUNCH-DELVE-2026 was first posted 21 March and updated 22 March.
+Date notes: dates marked with a month only (for example 2026-10) are product, home and landing pages with no publication date; the month is the access date. ALIGN-BENCH-2026 is dated from the asset path (January 2026 uploads). FIELDGUIDE-WEAVER-2026 and FIELDGUIDE-SOC-2026 use the page's last-modified date. HN-CHIARO-2026 is dated from "73 days ago". KPMG-SOC-2026 carries the page's publication date; the webcast date was not stated. FIELDGUIDE-FINAUDIT-2025 is dated from its text (June 2025) and the sitemap. TECHCRUNCH-DELVE-2026 was first posted 21 March and updated 22 March.
 
 ---
 

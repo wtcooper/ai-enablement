@@ -15,7 +15,7 @@
   - Named deployments: Buzzacott started its MindBridge programme with journal entries (BUZZACOTT-PRIME-2025). BDO UK expanded MindBridge across its audit practice after a trial, announced 29 Jun 2026 (MINDBRIDGE-BDOUK-2026). EY says Canvas processes more than 1.4 trillion journal-entry lines a year (EY-CANVAS-2026).
   - No firm has published detection-quality figures such as false-positive rates or exceptions confirmed as misstatements.
 - **Evidence-to-sample matching ("vouching") is where the new agent products are concentrated, and where the only per-task time figures are.**
-  - Named firms and figures: FGMK reports testing per selection falling from 30–45 minutes to about five (DATASNIPPER-CONNECT-2026). A sole practitioner (Oberlander Financial Services) reports 16 hours falling to five or six per engagement on Thomson Reuters Audit Intelligence Test (TR-AGENTIC-2025). Sanville & Co says sample selections of hundreds of transactions went from hours to minutes in many cases (FIELDGUIDE-SANVILLE-2026).
+  - Named firms and figures: FGMK reports testing per selection falling from 30–45 minutes to about five (DATASNIPPER-CONNECT-2026). The owner of a Kentucky firm (Oberlander Financial Services) reports 16 hours falling to five or six per engagement on Thomson Reuters Audit Intelligence Test (TR-AGENTIC-2025). Sanville & Co says sample selections of hundreds of transactions went from hours to minutes in many cases (FIELDGUIDE-SANVILLE-2026).
   - Big Four firms name the tools but publish no figures. PwC Evidence Match covers cash, receivables, payables and fixed assets (CFOBREW-PWC-2025). KPMG Clara agents cover expense vouching and unrecorded-liability search (KPMG-CLARA-2025).
 - **The Big Four's own read on payoff is cautious.** A year into its programme, PwC's US assurance transformation leader says time savings are "not that drastic yet" and that busy-season effort has shifted only modestly (CFODIVE-PWC-2026). EY says its multi-agent framework is in all audit phases now and expects end-to-end support by 2028 (EY-CANVAS-2026).
 - **Confirmations are the most automated step in small and mid-size practices, but mostly through workflow platforms rather than AI.** 39% of 54 US firms in the CPA.com benchmark have an automated confirmation solution, against 11% for substantive analytics (CPACOM-ATR-2025). Circit's named firm cases report time and response-rate gains (CIRCIT-MOORE-2026, CIRCIT-BEEVER-2026).
@@ -144,8 +144,8 @@
     (ARXIV-AUDITCOPILOT-2025).
   evidence_grade: D
   sources:
-    - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping", publisher: arXiv (Kadir et al.), type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: abstract" }
-    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: abstract" }
+    - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping", publisher: arXiv (Kadir et al.), type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: "abstract" }
+    - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract" }
   last_reviewed: "2026-10-16"
   notes: >-
     Idea: discussed by researchers only. No public deployment found. The landscape's extract about a sharp fall in
@@ -368,8 +368,8 @@
   maturity: in-production
   problem: >-
     Auditors reconcile numbers from invoices, bank statements and inventory documents to transactions by hand,
-    and reviewers must re-find the evidence (DATASNIPPER-ODP and DataSnipper's own description in
-    DATASNIPPER-PRODUCTIVITY-2026).
+    and reviewers must re-find the evidence; DataSnipper's customer story describes reviewers instead clicking
+    through to the source (DATASNIPPER-ODP).
   solution: >-
     The auditor "snips" values from source documents into Excel, where they reconcile to the transaction and keep
     a link to the source. AI Extractions and DocuMine add extraction from unstructured documents across languages
@@ -523,9 +523,9 @@
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance", publisher: Financial Reporting Council, type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "p.19 (methodology risk: whole-population outputs)" }
   last_reviewed: "2026-10-16"
   notes: >-
-    Product post only; no named customer for Field Orchestrator was found. The Fieldguide post names KPMG's
-    Clara agent as nothing; the same procedure (unrecorded liabilities) is also in KPMG's April 2025 agent list
-    (use case 03) and in DataSnipper's prebuilt payables agents (DATASNIPPER-PAYABLES-2026).
+    Product post only; no named customer for Field Orchestrator was found. The same procedure (search for
+    unrecorded liabilities) is also in KPMG's April 2025 agent list (use case 03) and DataSnipper describes
+    prebuilt payables agents that check post-period payments for unrecorded liabilities (DATASNIPPER-PAYABLES-2026).
 
 - id: assurance-substantive-testing-10
   title: Digital confirmation and evidence-request platforms for bank and third-party confirmations (Circit)
@@ -832,7 +832,7 @@
     - A person stays accountable for every conclusion; agents produce work a reviewer can check with sources cited (LEDGERLINE-CPAPA-2026).
   role_evolution: >-
     The article says the hours saved move to investigating exceptions, assessing controls and deciding what a
-    finding means (LEDGERLINE-CPAPA-2026). The firm describes itself as built by operators with software background.
+    finding means (LEDGERLINE-CPAPA-2026). The firm's site says it was built by operators with experience at named companies.
   evidence_grade: B
   sources:
     - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It", publisher: CPA Practice Advisor (contributed by Ledgerline's CEO), type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "sections 'What full-population testing changes', 'The trap', 'How to roll it out safely'" }
@@ -1078,8 +1078,8 @@
   human_checkpoints:
     - Auditor sets scan parameters and sampling technique (100% scan or every fifth box) and reconciles results (EY-DRONE-JOFA-2018).
   role_evolution: >-
-    EY described fewer auditors needing to be in the warehouse and a less disruptive count for clients
-    (EY-DRONE-JOFA-2018). No staffing change is reported.
+    EY described a drone flying autonomously so that no auditor has to fly it inside a client's warehouse, with
+    less disruption to the client (EY-DRONE-JOFA-2018). No staffing change is reported.
   evidence_grade: B
   sources:
     - { ref: CHRIST-DRONE-2021, title: "Prepare for takeoff: improving asset measurement and audit quality with drone-enabled inventory audit procedures", publisher: Review of Accounting Studies (Christ, Emett, Summers and Wood), type: academic, url: "https://link.springer.com/article/10.1007/s11142-020-09574-5", date: "2021", access: full, locator: "abstract and note 1 (full text paywalled; abstract read via text mirror)" }
@@ -1124,8 +1124,8 @@
   human_checkpoints:
     - Auditors remain in control of decision-making (KPMG-CLARA-2025).
   role_evolution: >-
-    PCAOB staff recorded firms' expectation that GenAI would augment, not replace, auditors and that supervision
-    policies had not changed (PCAOB-GENAI-2024).
+    PCAOB staff recorded that firms investing in GenAI expected it to augment, not replace, auditors, and that
+    some firms said their supervision and review policies had not changed (PCAOB-GENAI-2024).
   evidence_grade: C
   sources:
     - { ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: KPMG International, type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04-22", access: full, locator: "'Today's announcement builds on' (July 2024 bullet)" }
@@ -1197,7 +1197,7 @@
 - **2026-05-21:** BDO NL and Rabobank test direct consent-based bank data, aimed at 100% testing and continuous audit (CIRCIT-RABOBANK-BDONL-2026).
 - **2026-04-07:** EY says agents are in all audit phases and expects end-to-end support by 2028 (EY-CANVAS-2026).
 - **2025-10-28:** PwC Australia pilots an AI-native platform on five audit clients, targeting all clients by 2028 (PWCAU-AT-2025).
-- **2025-10-01 (effective for fiscal years beginning on or after 2025-12-15):** PCAOB AS 1105 paragraph .10A staff examples and policy statement (PCAOB-STAFF-1105-2025, PCAOB-TAA-2024).
+- **2025-09-18 and 2025-10-01:** PCAOB policy statement and staff examples on AS 1105 paragraph .10A, ahead of the amendments taking effect for fiscal years beginning on or after 15 Dec 2025 (PCAOB-PS2025-004, PCAOB-STAFF-1105-2025, PCAOB-TAA-2024).
 
 ### Workforce and role effects
 
