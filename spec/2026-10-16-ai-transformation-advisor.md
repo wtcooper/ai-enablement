@@ -1,6 +1,6 @@
 # Spec: AI transformation advisor (v1)
 
-From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 2)
+From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 3)
 
 > This spec, the intent and `plan/` are how *we* build the plugin. None of that build process shows up
 > in the product. This document says **what** v1 does and the rules it follows. Background reasoning
@@ -25,15 +25,20 @@ provides the method and general knowledge. Optional **domain packs** add depth f
 of business. The organization's own content lives in an **overlay** inside its workspace, never in
 the plugin.
 
-**Design principle: progressive disclosure.** The skill entry point is a short router. All method,
-flow and domain logic sits in reference files that are loaded only when the current step needs them
-(§7.2).
+**Design principle: progressive disclosure, in coherent skills.**
+
+- Four skills: a front door plus one per job (program lead, team plan, explore).
+- Each flow skill's `SKILL.md` is itself the phase checklist, with a few references of its own.
+- A shared library (method, patterns, function cards, packs) sits at plugin level and is reached
+  through short index files.
+- The evidence behind this structure is in
+  [`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md).
 
 ## 2. Scope
 
 **In v1**
 
-- One skills-only plugin that conforms to Agent Plugins 1.0. It installs from this repo's GitHub
+- One skills-only plugin (four skills and a shared library) that conforms to Agent Plugins 1.0. It installs from this repo's GitHub
   marketplace, with installation verified in the target clients (§7.4).
 - Program lead flow, team delegate flow, and a light "explore" entry for inspiration.
 - A file-based program workspace that can live wherever the organization keeps information. A GitHub
@@ -64,7 +69,8 @@ flow and domain logic sits in reference files that are loaded only when the curr
 | **Team delegate** | Get a transformation plan for their team and start acting on it | `transformation-plan.md`, `opportunities.yaml` |
 | **Explorer** (anyone) | See what's possible before committing | No files required |
 
-**Entry triage** (in `SKILL.md`). The orchestrator first looks for a workspace in the working folder.
+**Entry triage** (the `start` skill; each flow skill also runs the same check if invoked directly).
+The agent first looks for a workspace in the working folder.
 
 - **No `charter.md` found:** ask whether the user is setting up a program (lead flow), working on one
   team without a program (team flow with default settings), or just exploring.
@@ -382,79 +388,85 @@ in the organization's workspace (§5.2) and uses the same schemas.
 
 ## 7. Plugin architecture
 
-### 7.1 One skill, many reference files
+### 7.1 Skills
 
-The plugin contains **one skill**, `transformation-advisor`. Everything else is reference material
-inside that skill's folder. This is the most portable setup:
+| Skill | Job | `SKILL.md` budget | Own references |
+|---|---|---|---|
+| `start` | Front door. Finds the workspace and state, asks the role, explains the options, routes. Does no flow work itself | ≤ 120 lines | none |
+| `program-lead` | The lead's eight-phase flow (§4.2) | ≤ 350 lines | ≤ 8 |
+| `team-plan` | The team's eight-phase flow (§4.3) | ≤ 350 lines | ≤ 8 |
+| `explore` | Browse use cases and patterns, explain examples, offer to start (§4.4) | ≤ 150 lines | none |
 
-- It doesn't depend on how clients resolve paths between skills or to the plugin root.
-- It needs no tool-specific agent files.
+**Why this split:**
+
+- Each skill is one coherent job for one kind of user. That fits the Agent Skills "coherent unit"
+  guidance and makes triggering precise.
+- A flow skill that fits in about 5,000 tokens survives context compaction in long sessions. Claude
+  Code re-attaches only the first 5,000 tokens of a skill.
+- The real plugins we studied keep each skill to 10 reference files or fewer, with phase guidance
+  inside `SKILL.md`.
+- Splitting further (one skill per phase, or packs as skills) would add best-effort handoffs and
+  trigger conflicts.
+
+**Descriptions** name the moment of use and point to sibling skills. For example, `team-plan`: "Use
+when a team or function lead wants an AI transformation plan for their own team… For a program
+across several teams, use program-lead."
 
 ### 7.2 Progressive disclosure
 
 ```
-skills/transformation-advisor/
-├── SKILL.md                         # the router; target ≤ 150 lines, hard limit 500
-└── references/
-    ├── flows/                       # what happens in each flow, phase by phase
-    │   ├── program-lead.md
-    │   ├── team-plan.md
-    │   └── explore.md
-    ├── phases/                      # how to run each phase: questions, probes, exit criteria, output
-    │   ├── ambition-and-exposure.md
-    │   ├── structure-and-diagnostic.md
-    │   ├── value-tree-and-rules.md
-    │   ├── team-briefs.md
-    │   ├── frame-and-map.md
-    │   ├── diagnose.md
-    │   ├── imagine.md
-    │   ├── prioritize.md
-    │   ├── business-case.md
-    │   ├── team-actions-and-control.md
-    │   ├── synthesize.md
-    │   └── roadmap.md
-    ├── method/                      # the shared knowledge model (§6.1–6.5)
-    │   ├── conversation-rules.md
-    │   ├── ladder.md
-    │   ├── work-archetypes.md
-    │   ├── runtime-classes.md
-    │   ├── value-tree-and-scoring.md
-    │   └── people-and-change.md
-    ├── patterns/                    # one file per agentic pattern, plus index.md
-    ├── functions/                   # one file per function card, plus index.md
-    ├── packs/<id>/                  # §6.7
-    ├── subagents/                   # self-contained subagent briefs (§7.3)
-    │   ├── analyze-document.md
-    │   ├── scout-use-cases.md
-    │   ├── review-opportunities.md
-    │   └── synthesize-pillar.md
+plugins/transformation-advisor/
+├── skills/
+│   ├── start/SKILL.md
+│   ├── program-lead/
+│   │   ├── SKILL.md                 # rules, resume logic, phase checklist with "read now" pointers
+│   │   └── references/              # ≤ 8: e.g. outside-in-diagnostic.md, synthesis.md, roadmap.md,
+│   │                                #   team-brief-template.md, synthesize-pillar.brief.md
+│   ├── team-plan/
+│   │   ├── SKILL.md
+│   │   └── references/              # ≤ 8: e.g. process-mapping.md, imagine.md, business-case.md,
+│   │                                #   analyze-document.brief.md, scout-use-cases.brief.md,
+│   │                                #   review-opportunities.brief.md
+│   └── explore/SKILL.md
+└── shared/                          # plugin-level library, read through ../../shared/…
+    ├── index.md                     # what is here, when to read each folder, how to search
+    ├── method/                      # conversation rules, ladder, work archetypes, runtime classes,
+    │                                #   value tree & scoring, people & change
+    ├── patterns/                    # index.md + one file per pattern
+    ├── functions/                   # index.md + one file per function card
+    ├── packs/                       # index.md + <pack>/PACK.md, value-chain.md, modules/, use-cases/, …
     ├── schemas/                     # charter, team-plan, opportunities, portfolio, use-case
-    └── templates/                   # skeleton files the agent fills in
+    └── templates/                   # workspace file skeletons
 ```
 
-**What `SKILL.md` contains, and nothing more:**
+**What a flow `SKILL.md` contains**
 
 1. The purpose, in two or three sentences.
-2. The rules in §9, in short form. They must always be in context.
-3. Entry triage (§3).
-4. A **load map**: a table of "when you are at X, read Y", covering every flow, phase, method file,
-   pattern or function index, pack, subagent brief and schema. Every reference is linked from
-   `SKILL.md` directly (one level deep). Reference files may mention one another, but the load map
-   is the authority on what to read and when.
-5. Workspace conventions (§5) in short form.
-6. A short note on delegation (§7.3).
+2. The rules in §9, in short form. Every skill carries them, because any skill can be invoked
+   directly. A repo check confirms the copies match the single source.
+3. **Resume logic.** Read the state in the workspace file (`phase_completed`, `next_phase`) and
+   continue from there.
+4. **The phase checklist.** For each phase: the goal, a capped set of key questions, exit criteria,
+   the output, and at most one "read now" pointer to a reference file or a shared index. Each phase
+   ends by updating the state.
+5. **Handoff.** Name the next skill, with a fallback that always works. For example: "Next, use the
+   **team-plan** skill. If you can't invoke a skill by name, read `../team-plan/SKILL.md` and follow
+   it."
 
-**Rules for reference files**
+**Rules for references**
 
+- **One level deep.** A skill links only to its own `references/` files and to **index files** in
+  `shared/`. Each index is a short table: name, when to read, one-line summary. It leads to exactly
+  one more file. This is the only two-step lookup.
 - **Size.** Each file has one job and stays under about 300 lines. Files over 100 lines start with a
   table of contents.
-- **Load only what the step needs.** Read a flow file at the start of a flow, then each phase file as
-  you enter that phase. Read method files when a phase calls for them. Read pack modules and use
-  cases only for the processes being discussed.
-- **Indexes before detail.** Read `index.md` in patterns or functions, or a pack's `PACK.md`, before
-  any detail file.
-- **Large lookups go to subagents.** Searching the use-case library across packs is done inside a
-  subagent where possible (§7.3), so the main conversation receives only a shortlist.
+- **Search instead of reading.** Use-case YAML has consistent fields (`pattern:`, `work_archetypes:`,
+  `module:`, `ladder:`), so the agent or a subagent can search it rather than read it whole.
+- **Large lookups go to subagents** where possible (§7.3), so the main conversation receives only a
+  shortlist.
+- **State is memory.** Workspace files carry `phase_completed` and `next_phase`, plus a progress
+  checklist in the body. Instructions for a long session never depend on the agent remembering a
+  file it read an hour ago.
 
 ### 7.3 Subagents (tool-agnostic)
 
@@ -473,11 +485,11 @@ Research findings:
 1. **Explicit, tool-agnostic wording.** The skill names the delegation outright. For example: "Use
    subagents for this step: delegate one subagent per document, in parallel. If you cannot start
    subagents, process each document yourself, one at a time." It never names a client's tool.
-2. **Self-contained briefs.** The orchestrator reads the brief in `references/subagents/`, then
-   passes the brief's full text, the inputs (file paths or excerpts) and the output schema in the
-   subagent's prompt. Subagents never depend on chat history or on resolving the skill's paths.
+2. **Self-contained briefs.** Each brief is a `*.brief.md` file in the references of the flow skill
+   that dispatches it. The main agent reads the brief, then passes the brief's full text, the inputs
+   (file paths or excerpts) and the output schema in the subagent's prompt. Subagents never depend on chat history or on resolving the skill's paths.
 3. **Subagents never talk to the user.** All questions and confirmations stay in the main
-   conversation. Subagent results are drafts the orchestrator plays back to the user.
+   conversation. Subagent results are drafts the main agent plays back to the user.
 4. **Structured returns.** Each brief defines a compact output (YAML or markdown in the schema
    format), so results stay small.
 5. **Inline fallback is always correct.** The same brief, run inline one item at a time, gives the
@@ -506,7 +518,8 @@ ai-enablement/                               # this repo = the marketplace
     ├── plugin.json                          # Agent Plugins 1.0 ($schema); Copilot and Codex use this first
     ├── .claude-plugin/plugin.json           # Claude Code and Cowork
     ├── .cursor-plugin/plugin.json           # Cursor
-    └── skills/transformation-advisor/       # §7.2
+    ├── skills/                              # start, program-lead, team-plan, explore (§7.1)
+    └── shared/                              # plugin-level library (§7.2)
 ```
 
 **Per-client rules**
@@ -576,8 +589,12 @@ checks. The minimum coverage:
 - Resume mid-plan.
 - Synthesis of five or more team plans with duplicates and conflicts.
 - A run with no subagents (the inline fallback).
-- **Progressive-disclosure check:** the files read match the load map, and no pack or library file is
-  loaded when it isn't needed.
+- **Progressive-disclosure check:** files are read at the phase their pointer names, and no pack or
+  library file is loaded when it isn't needed.
+- **Long-session check:** a session resumes correctly after compaction or restart, using only the
+  state file.
+- **Handoff check:** `start` → flow skill and `explore` → `team-plan` work, including the
+  read-the-file fallback.
 
 Checks combine **schema validation** of the files written with **rubric grading** of the
 conversation.
@@ -586,7 +603,9 @@ conversation.
 
 - **Installation:** the plugin installs from this repo and the skill loads in Claude Code or Cowork,
   Codex or ChatGPT desktop, Cursor, and Copilot CLI or VS Code.
-- **Size:** `SKILL.md` is 150 lines or fewer. Every reference file follows the §7.2 size rule.
+- **Size:** every `SKILL.md` meets the §7.1 budget. Every reference file follows the §7.2 size rule.
+- **Shared library:** `../../shared/` is readable from skills in every target client. If a client
+  fails this, a build step copies `shared/` into each skill instead.
 - **Lead:** can produce a valid charter and team briefs in one session.
 - **Delegate:** can produce a valid team plan and `opportunities.yaml` in one session of about 60–90
   minutes, and can resume.
@@ -658,5 +677,8 @@ The pack and backbone content is built by a **fan-out research effort** during t
    - whether Cowork accepts a root `plugin.json` next to `.claude-plugin/plugin.json`
 2. **Delegation reliability.** Check that the explicit wording in §7.3 actually triggers subagents in
    each target client, especially Codex. Record the results in the eval report.
-3. **Eval harness.** How we run the scenarios across clients in a repeatable way. For example, run the
+3. **Shared-library paths.** Reading `../../shared/` from a skill is proven in Anthropic's own
+   plugins (Claude Code and Cowork), but not yet in Codex, Cursor or Copilot. Verify during the
+   installation smoke tests.
+4. **Eval harness.** How we run the scenarios across clients in a repeatable way. For example, run the
    main harness in one client and do install smoke tests in the others.

@@ -94,9 +94,9 @@ Success looks like this:
 
 **Systems**
 
-- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It is one orchestrator
-  skill with progressive disclosure, and it delegates bounded work to subagents in tool-agnostic
-  wording. Shared state is a **program workspace of files** (charter, team transformation plans,
+- **v1:** an Agent Plugin that runs entirely inside the user's AI client. It has four skills (a front
+  door plus one per job) over a shared library, uses progressive disclosure, and delegates bounded
+  work to subagents in tool-agnostic wording. Shared state is a **program workspace of files** (charter, team transformation plans,
   portfolio, roadmap) stored wherever the organization keeps information.
 - **Later:** an MCP backend for the shared library, catalog and intake. A hosted front door on a
   managed agent runtime. Connections to backlog systems (GitHub, Jira, ServiceNow).
@@ -137,7 +137,7 @@ these decisions is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2
 | First audience | Program lead (top-down) plus team delegates |
 | Shared backend | None in v1. A file-based program workspace |
 | Program workspace | A storage-agnostic folder of markdown and YAML. A GitHub repo is the reference setup, matching how the plugin is distributed. Other stores can be added later |
-| Delivery | Skills-only Agent Plugin: one orchestrator skill. A short `SKILL.md` router, with all logic in reference files loaded on demand |
+| Delivery | Skills-only Agent Plugin with four skills: `start`, `program-lead`, `team-plan`, `explore`. Each flow skill is its own phase checklist. A shared library is reached through index files. Evidence: [`docs/research/2026-10-16-skill-structure.md`](../docs/research/2026-10-16-skill-structure.md) |
 | Subagents | Tool-agnostic instructions to delegate bounded work to subagents in parallel, with an inline fallback. No tool-specific agent files |
 | Clients | Agent Plugins agnostic. Installation verified from this repo's GitHub marketplace in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, and GitHub Copilot CLI / VS Code |
 | Review or approval in the product | None. Team members get their own transformation plan and save or share it wherever their program stores information. (Our intent → spec → plan process is for building the plugin only) |

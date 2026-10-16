@@ -17,6 +17,10 @@ Working notes that are not yet decisions live in [`docs/brainstorm/`](docs/brain
 - [Delivery and scope](docs/brainstorm/2026-10-16-delivery-and-scope.md)
 - [Archetype packs, subagents, and the PE frame](docs/brainstorm/2026-10-16-packs-agents-and-pe.md)
 
+Research behind design decisions lives in [`docs/research/`](docs/research/):
+
+- [How to structure the plugin's skills](docs/research/2026-10-16-skill-structure.md)
+
 **Current:**
 
 - [Intent: AI transformation advisor](intent/2026-10-16-ai-transformation-advisor.md) (draft)
