@@ -13,6 +13,12 @@ will steer many later deep-dive researchers, so breadth and accuracy matter more
 
 ## What to find
 
+Use web search, and open the pages themselves (see the access note below); don't rely on search
+snippets alone. The pilot's scan ran on snippets only and needed corrections.
+
+**Access:** the web-fetch tool can fail on DNS in this environment. Use
+`curl -sSL --max-time 30 -A "Mozilla/5.0" <url>` through Bash, and `pdftotext` for PDFs.
+
 Use web search and fetch extensively. Aim to read **at least 40 distinct sources** across at least
 **6 source types**. Prefer material from the last 12–18 months. For each item, record its name, the
 organizer or publisher, a URL, the date or edition, and one line on why it matters for AI in this
@@ -37,6 +43,10 @@ field.
 
 ## Also produce
 
+- **Evidence density per module:** high, medium or low, judged by how much specific public material
+  exists. Low-density modules get one combined deep dive instead of three.
+- **Source keys.** Give every source a ref in the form `PUBLISHER-SHORT-YYYY`. Later researchers reuse
+  these refs.
 - **Module check.** Is the proposed module list right for how practitioners divide the work? Propose
   changes, with reasons.
 - **Journey-stage markers.** For this field, what does each stage look like in practice: Curious,

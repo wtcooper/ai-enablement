@@ -26,7 +26,15 @@ any error damages credibility. Check the synthesized content against its sources
      secondary source supports it. Otherwise reject it.
 2. **Check the module file.** Every figure, benchmark, regulatory statement and frontier signal must
    trace back to a source. Fix or remove anything that doesn't.
-3. **Check the format.** Values come from the vocabulary. Ids are unique. Every source has a URL and
+3. **Known error patterns** from the pilot. Check each one explicitly:
+   - a statistic reported as something it doesn't measure
+   - a claim attributed to the wrong document or speaker
+   - embellished qualifiers or causes
+   - unsourced connective claims in `role_evolution` and `risks_and_guardrails`
+   - wrong or missing dates
+   - a grade inflated by evidence from an adjacent process
+   - a search-only figure used inside an A or B entry
+4. **Check the format.** Values come from the vocabulary. Ids are unique. Every source has a URL and
    a date. Quotations are under 25 words.
 
 ## Output

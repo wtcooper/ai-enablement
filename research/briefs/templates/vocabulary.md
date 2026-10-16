@@ -1,6 +1,8 @@
 # Research vocabulary (controlled values)
 
-Every research output uses these ids exactly. They come from spec §6.2–6.9.
+Every research output uses these ids exactly. They come from spec §6.2–6.9. The authoritative list is
+`plugins/transformation-advisor/skills/transformation-advisor/references/schemas/vocabulary.yaml`, and
+`scripts/validate.py` enforces it.
 
 ## Work types (`work_types`)
 
@@ -27,14 +29,35 @@ Every research output uses these ids exactly. They come from spec §6.2–6.9.
 If no pattern fits, use `other` and describe the pattern in `notes`. The synthesis step proposes new
 patterns from these.
 
-## Reimagine lens (`lens`)
+## Ladder (`ladder`): how much the AI does
 
-`improve` (assist or augment the step) · `automate` (no person on the normal path) · `delegate` (an
-agent owns a multi-step outcome) · `reinvent` (the process, service or business model changes)
+| Value | Meaning |
+|---|---|
+| `assist` | AI helps a person who still does the task |
+| `augment` | AI gives a first pass inside the step, and a person reviews it |
+| `automate` | No person on the normal path; exceptions go to people |
+| `delegate` | An agent owns a multi-step outcome, with human checkpoints |
 
-## Ladder (`ladder`)
+## Change scope (`change_scope`): what changes
 
-`assist` · `augment` · `automate` · `delegate` · `reinvent`
+| Value | Meaning |
+|---|---|
+| `step` | One step of the existing process gets better |
+| `process` | The flow itself is redesigned: steps removed, merged, made continuous, or done on full populations |
+| `model` | The service, business or operating model changes: new services, pricing, sourcing, who does the work |
+
+**Worked examples:**
+
+| Use case | `ladder` | `change_scope` |
+|---|---|---|
+| Walkthrough assistant | augment | step |
+| Evidence-to-sample matching, with people reviewing exceptions | automate | step |
+| Full-population testing replacing samples | automate | process |
+| Agent tests key controls end to end and drafts the workpaper | delegate | process |
+| A firm sells agent-delivered testing as a service | delegate | model |
+
+The four Reimagine lenses (improve, automate, delegate, reinvent) are conversation prompts. They are not
+fields.
 
 ## Runtime class (`runtime_class`)
 
@@ -59,6 +82,16 @@ agent owns a multi-step outcome) · `reinvent` (the process, service or business
 | `C` | A vendor claim or analyst estimate |
 | `D` | A plausible idea with no public deployment found. Must be labelled "idea" |
 
+## Outcome provenance (`outcomes[].provenance`)
+
+`self-reported` (the deploying organization) · `vendor-published` · `independent` (a regulator,
+academic or third-party measure)
+
+## Source access (`sources[].access`)
+
+`full` (opened and read) · `search-only` (seen only in search results; can never support an A or B
+grade on its own)
+
 ## Value levers (`outcomes[].lever`)
 
 `capacity` · `speed` · `quality` · `growth` · `cost` · `risk` · `experience`
@@ -67,6 +100,12 @@ agent owns a multi-step outcome) · `reinvent` (the process, service or business
 
 `conference` · `regulator` · `standard-setter` · `professional-body` · `firm` · `vendor` ·
 `academic` · `survey` · `press` · `podcast` · `community` · `job-posting`
+
+## Format rules
+
+- Dates are ISO only: `YYYY-MM-DD`, `YYYY-MM` or `YYYY`. Never "undated" or "FY26".
+- `function` comes from the list in `vocabulary.yaml`.
+- Every attributed sentence, including those in `role_evolution` and `risks_and_guardrails`, needs a source ref.
 
 ## Use-case entry (YAML)
 
@@ -78,19 +117,23 @@ agent owns a multi-step outcome) · `reinvent` (the process, service or business
   function: service-delivery            # or another function id when the use case sits in a support function
   work_types: [ id ]
   pattern: id
-  lens: id
   ladder: id
+  change_scope: id
   runtime_class: id
   maturity: id
   problem: string                       # the current pain, in plain language
   solution: string                      # how AI changes the work; product names only if the source names them
-  outcomes: [ { lever, description, figure, source_ref } ]
+  outcomes: [ { lever, description, figure, measures, provenance, source_ref } ]   # at least one; for ideas use description "none published"
+                                        # measures = numerator / denominator, or what the figure counts, in the source's own words
   prerequisites: [ string ]
   risks_and_guardrails: [ string ]
   human_checkpoints: [ string ]
   role_evolution: string
   evidence_grade: A | B | C | D
-  sources: [ { ref, title, publisher, type, url, date } ]
+  sources: [ { ref, title, publisher, type, url, date, access, locator } ]
+                                        # ref = PUBLISHER-SHORT-YYYY (the same document gets the same ref in every file)
+                                        # date = YYYY-MM-DD, YYYY-MM or YYYY; check the byline, article:published_time and JSON-LD first
+                                        # locator = page, section or paragraph that supports the claim
   last_reviewed: YYYY-MM-DD
   notes: string                         # optional
 ```

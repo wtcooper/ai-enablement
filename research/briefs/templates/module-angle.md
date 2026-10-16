@@ -29,11 +29,20 @@ Before you search, read:
   statements, inspection findings, professional-body guidance, academic studies and working papers,
   surveys and benchmarks.
 
+## Access
+
+The web-fetch tool can fail on DNS in this environment. Use `curl -sSL --max-time 30 -A "Mozilla/5.0" <url>`
+through Bash. For PDFs use `pdftotext`, or render the pages when the text layer is broken. When a site
+refuses access, try other routes: a press release, a publisher mirror, the Federal Register or an
+archived copy. Mark each source `access: full` or `access: search-only`.
+
 ## Depth expectations
 
 - Read **at least 25 distinct sources** for your angle, across at least four source types where they
   exist. Follow citations and links from good sources to their primary material.
 - Prefer the last 12–18 months. Use older material only for foundations or standards.
+- Look explicitly for **quality evidence**: error rates, override rates, parallel-run results,
+  inspection outcomes, and independent measurement. Report its absence plainly if there is none.
 - Look for **specifics**:
   - which step of the work changes, and how
   - who did it (a named organization)
@@ -60,6 +69,25 @@ Before you search, read:
 3. **Sources:** one list with ref, title, publisher, type, URL and date.
 4. **Gaps:** what you couldn't find or reach.
 
+## Precision rules (from the pilot's verification)
+
+These are the pilot's most common errors:
+
+- **Statistics.** For every percentage or count, record what it measures (numerator and denominator,
+  in the source's words) in `outcomes[].measures`.
+- **Attribution.** Every attributed claim carries a source ref *and* a `locator` (page or section).
+  Use the same ref for the same document as the landscape file: `PUBLISHER-SHORT-YYYY`.
+- **No embellishment.** Paraphrase conservatively. Keep the source's modal verbs ("plans", "expects",
+  "will"). Don't add causes, scope or effective dates the source doesn't state.
+- **Tense.** Keep "announced", "piloting" and "in production" distinct.
+- **Dates.** Find the real publication date before writing a year-only date.
+- **Grade scope.** A grade reflects evidence for *this module's* use. Measurements from an adjacent
+  process cap the grade at B, with a note.
+- **Provenance.** Mark each outcome figure as `self-reported`, `vendor-published` or `independent`.
+- **Search-only figures** go in `notes`, never in the outcomes of an A or B entry.
+- **Routing.** Put items that belong to another module in a "Routed to other modules" section, naming
+  the target module, instead of dropping them.
+
 ## Rules
 
 - Never invent sources, organizations, figures or dates. If you can't confirm something, leave it
@@ -74,8 +102,9 @@ Write a markdown file to `{output_path}` with these sections:
 1. Summary
 2. Use cases (a single fenced YAML block)
 3. Module notes
-4. Sources
-5. Gaps
+4. Routed to other modules
+5. Sources
+6. Gaps
 
 Then reply with a summary of **no more than 150 words**: the number of use cases by evidence grade,
 the number of sources by type, and the two most important insights.

@@ -22,13 +22,13 @@ REFS = SKILL / "references"
 VOCAB = yaml.safe_load((REFS / "schemas/vocabulary.yaml").read_text())
 
 USE_CASE_REQUIRED = [
-    "id", "title", "archetype", "module", "function", "work_types", "pattern", "lens", "ladder",
+    "id", "title", "archetype", "module", "function", "work_types", "pattern", "ladder", "change_scope",
     "runtime_class", "maturity", "problem", "solution", "outcomes", "prerequisites",
     "risks_and_guardrails", "human_checkpoints", "role_evolution", "evidence_grade", "sources",
     "last_reviewed",
 ]
 ENUM_FIELDS = {
-    "function": "functions", "pattern": "patterns", "lens": "lenses", "ladder": "ladder",
+    "function": "functions", "pattern": "patterns", "ladder": "ladder", "change_scope": "change_scope",
     "runtime_class": "runtime_classes", "maturity": "maturity", "evidence_grade": "evidence_grades",
 }
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
@@ -105,6 +105,8 @@ def check_use_cases(strict):
             for o in uc.get("outcomes") or []:
                 if isinstance(o, dict) and o.get("lever") not in VOCAB["value_levers"]:
                     errors.append(f"{where}: outcome lever {o.get('lever')!r} not in vocabulary")
+                if isinstance(o, dict) and "provenance" in o and o["provenance"] not in VOCAB["provenance"]:
+                    errors.append(f"{where}: outcome provenance {o['provenance']!r} not in vocabulary")
             for s in uc.get("sources") or []:
                 if not isinstance(s, dict) or not s.get("url"):
                     errors.append(f"{where}: source without url")
@@ -113,6 +115,8 @@ def check_use_cases(strict):
                     errors.append(f"{where}: source {s.get('ref', '?')} has no valid date")
                 if s.get("type") not in VOCAB["source_types"]:
                     errors.append(f"{where}: source type {s.get('type')!r} not in vocabulary")
+                if "access" in s and s["access"] not in VOCAB["access"]:
+                    errors.append(f"{where}: source access {s['access']!r} not in vocabulary")
             if uc.get("evidence_grade") == "D" and "idea" not in (
                 str(uc.get("title", "")) + str(uc.get("notes", ""))
             ).lower():

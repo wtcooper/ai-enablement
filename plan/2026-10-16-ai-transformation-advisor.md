@@ -1,6 +1,6 @@
-# Plan: AI transformation advisor v1 (from intent 2026-10-16, spec revision 4)
+# Plan: AI transformation advisor v1 (from intent 2026-10-16, spec revision 5)
 
-Date: 2026-10-16 · Status: draft. It will be revised after the research pilot (Milestone 1).
+Date: 2026-10-16 · Status: draft, revised after the research pilot ([retro](../research/runs/pilot/RETRO.md)).
 
 > Stage 3 (Build) artifact. It says which files change, in what order, the risks, and how we prove
 > each step works. The *what* is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2026-10-16-ai-transformation-advisor.md).
@@ -55,7 +55,11 @@ ai-enablement/
 
 ## Order of work
 
-### M0. Foundations (small)
+### M0. Foundations (small) · **done**
+
+Delivered: `scripts/validate.py`, `references/schemas/vocabulary.yaml` and the brief templates. The
+full JSON schemas for plan and opportunities files are still to do; they come with M5.
+
 
 - Turn the spec's schemas into files: use-case, plan, opportunities.
 - Write `research/README.md` and the brief templates: landscape scan, deep-dive angle, cross-cutting,
@@ -67,7 +71,29 @@ ai-enablement/
   - every pointer in `SKILL.md` and each index file resolves
   - every use case cites at least one dated source
 
-### M1. Research pilot: assurance → controls testing
+### M1. Research pilot: assurance → controls testing · **done**
+
+**Result:**
+
+- 25 verified use cases, 64% graded A or B
+- a 293-line module file
+- 0 validator errors
+- about 2.15M tokens, about 67 minutes of wall-clock time
+
+The pilot led to these changes, applied to the briefs, vocabulary, validator and spec (revision 5):
+
+- reading the pages themselves through `curl`
+- precision rules
+- provenance and access fields
+- `ladder` + `change_scope` replacing "lens"
+- shared source keys
+- module routing
+- deep dives scaled to each module's evidence density
+
+See the [retro](../research/runs/pilot/RETRO.md).
+
+The original pilot plan:
+
 
 This calibrates depth, briefs and schema before the large fan-out.
 
@@ -122,11 +148,14 @@ uses the same recipe.
 | Step | Agents per archetype |
 |---|---|
 | Landscape scan | 1 |
-| Module deep dives: 8 modules × 3 angles | 24 |
+| Module deep dives: 3 angles for high- and medium-density modules, 1 combined agent for low-density ones (typically 5 × 3 + 3 × 1) | ~18 (up to 24) |
 | Cross-cutting: economics & business model, workforce & talent, guardrails & regulation, state of AI & disruption | 4 |
 | Synthesis: 8 modules + 1 archetype-level | 9 |
 | Verification: 8 modules + 1 archetype-level | 9 |
-| **Total** | **47** |
+| **Total** | **~41 (up to 47)** |
+
+The landscape scan rates each module's evidence density (from the pilot retro). For assurance, the
+landscape is rerun with network access, and the controls-testing module from the pilot is kept.
 
 ### What the agent count means
 
@@ -139,17 +168,43 @@ split into many tasks.
 |---|---|
 | Stream M | 12 |
 | Stream B | 14 |
-| Stream A: 3 archetypes × 47 (the pilot's 6 count toward assurance) | 141 |
-| **Full build** | **about 167** |
+| Stream A: 3 archetypes × ~41 (up to 47); the pilot's agents count toward assurance | ~123 (up to 141) |
+| **Full build** | **~150 (up to ~167)** |
 
 These are **build-time** agents. Most of the research is finished before release, so users get deep
 archetypes immediately. The optional on-the-spot research (spec §7.4) is only for businesses no built
 archetype covers.
 
-**Rough cost.** The two research subagents run earlier in this project used about 85k–165k tokens
-each. Deep research tasks will likely use 150k–250k. The full build is therefore on the order of
-**25–40 million tokens**, run in waves of 10–25 agents at a time. The pilot measures this properly,
-and this estimate is updated after it.
+**Cost, measured in the pilot.** A deep agent uses **300k–400k tokens** (about 350k on average), and
+one module end to end costs about 1.85M.
+
+| Scope | Tokens |
+|---|---|
+| One archetype | ~14M |
+| Three archetypes | ~41M |
+| Streams M and B | ~9M |
+| **Full build** | **~50M (range 45–60M)** |
+
+Two levers can reduce this:
+
+- low-density modules get one deep dive instead of three (already counted above)
+- the deep dives could run on a faster, cheaper model, with synthesis and verification on the
+  strongest model. This is tested in wave 1 by comparing the verifier's correction rate with the
+  pilot's 21 of 25.
+
+**Time.** A module's chain (deep dives → synthesis → verification) takes about an hour. Modules run in
+parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 hours of wall-clock time.
+
+### Wave order (after the pilot)
+
+| Wave | Content | Agents |
+|---|---|---|
+| 1 | The rest of assurance: landscape rerun, 7 modules, cross-cutting, archetype-level files. **In parallel:** stream M (method), since the workflow logic is pillar 1 | ~36 + 12 |
+| 2 | Tax | ~41 |
+| 3 | Professional services, plus stream B (backbone library) | ~41 + 14 |
+
+M2 (install skeleton) and M5 (authoring) can start during wave 1, using the pilot module as the first
+real archetype content.
 
 ### M5. Author the skill
 

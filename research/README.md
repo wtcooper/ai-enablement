@@ -28,4 +28,4 @@ research/
 
 | Wave | Scope | Status |
 |---|---|---|
-| `pilot` | assurance → controls testing | running |
+| `pilot` | assurance → controls testing | done: 25 use cases, 64% graded A/B, see [RETRO](runs/pilot/RETRO.md) |

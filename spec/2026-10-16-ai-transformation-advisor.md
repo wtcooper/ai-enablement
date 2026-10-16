@@ -1,6 +1,6 @@
 # Spec: AI transformation advisor (v1)
 
-From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 4)
+From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 5, after the research pilot)
 
 > This spec, the intent and `plan/` are how *we* build the plugin. None of that build process shows up
 > in the product. This document says **what** v1 does and the rules it follows. Background reasoning
@@ -134,7 +134,13 @@ The agent goes through these lenses in order, so it doesn't stop at personal eff
 4. **Reinvent the work.** Should this process exist at all? What would an AI-native competitor do?
    What new service or pricing model becomes possible?
 
-Each lens draws on the archetype's use cases and frontier signals, and on the pattern library.
+Each lens draws on the archetype's use cases and frontier signals, and on the pattern library. The
+lenses are prompts for the conversation. The data records each option's **ladder** level and
+**change scope** (§6.2).
+
+**Quoting evidence.** Most published outcome figures are self-reported or vendor-published. The pilot
+found no independent measure of AI test quality in controls testing. When the agent quotes a figure,
+it states the provenance.
 
 ### 4.3 Breaking down and rolling up
 
@@ -236,8 +242,8 @@ items:
     process: string
     work_types: [ id ]
     pattern: id
-    lens: improve | automate | delegate | reinvent
-    ladder: assist | augment | automate | delegate | reinvent
+    ladder: assist | augment | automate | delegate
+    change_scope: step | process | model
     runtime_class: id
     description: string            # today → future
     value: [ { lever, low, high, unit, assumptions } ]
@@ -283,7 +289,12 @@ The content is grounded in research stream M (§11). It covers:
 - value measurement
 - process-discovery interviewing
 
-### 6.2 The ladder
+### 6.2 The ladder and change scope
+
+Every opportunity and use case is classified on **two independent dimensions**. The pilot showed
+that a single combined scale was ambiguous: researchers disagreed on 8 of 18 merged items.
+
+**Ladder: how much the AI does**
 
 | Level | Meaning |
 |---|---|
@@ -291,7 +302,23 @@ The content is grounded in research stream M (§11). It covers:
 | **Augment** | AI is built into a step, gives a first pass, and a person reviews it |
 | **Automate** | A defined step runs with no person on the normal path. Exceptions go to people |
 | **Delegate** | An agent owns a multi-step outcome across systems, started by events, with human checkpoints |
-| **Reinvent** | The process, service or business model is redesigned because AI makes a different way possible |
+
+**Change scope: what changes**
+
+| Scope | Meaning |
+|---|---|
+| **Step** | One step of the existing process gets better |
+| **Process** | The flow is redesigned: steps removed or merged, work made continuous, or done on full populations |
+| **Model** | The service, business or operating model changes: new services, pricing, sourcing, who does the work |
+
+The four Reimagine lenses (§4.2) are conversation prompts that map onto these:
+
+| Lens | Ladder | Change scope |
+|---|---|---|
+| Improve | assist or augment | step |
+| Automate | automate | step or process |
+| Delegate | delegate | process |
+| Reinvent | any | model, or a process that stops existing |
 
 ### 6.3 Work types
 
@@ -425,19 +452,19 @@ corporate tax teams.
   function: id
   work_types: [ id ]
   pattern: id
-  lens: improve | automate | delegate | reinvent
-  ladder: assist | augment | automate | delegate | reinvent
+  ladder: assist | augment | automate | delegate
+  change_scope: step | process | model
   runtime_class: id
   maturity: in-production | piloting | announced | emerging   # where the field actually is
   problem: string
   solution: string
-  outcomes: [ { lever, description, figure, source_ref } ]
+  outcomes: [ { lever, description, figure, measures, provenance, source_ref } ]   # provenance: self-reported | vendor-published | independent
   prerequisites: [ string ]
   risks_and_guardrails: [ string ]
   human_checkpoints: [ string ]
   role_evolution: string
   evidence_grade: A | B | C | D
-  sources: [ { ref, title, publisher, type, url, date } ]   # type: conference | regulator | firm | vendor | academic | press | survey
+  sources: [ { ref, title, publisher, type, url, date, access, locator } ]   # access: full | search-only
   last_reviewed: date
 ```
 
@@ -529,7 +556,7 @@ skills/transformation-advisor/
 - **Size.** Each file has one job and stays under about 300 lines. Files over 100 lines start with a
   table of contents.
 - **Search, don't read.** Use-case YAML has consistent fields (`module:`, `pattern:`, `work_types:`,
-  `lens:`, `ladder:`, `maturity:`). The agent or a subagent searches instead of reading whole files.
+  `ladder:`, `change_scope:`, `maturity:`). The agent or a subagent searches instead of reading whole files.
 - **State is memory.** After every phase the agent updates `phase_completed`, `next_phase` and the
   progress checklist. A long session never depends on the agent remembering a file it read earlier.
 
@@ -640,7 +667,7 @@ checks. The minimum coverage:
 - A run without subagents.
 - **Depth checks:**
   - recommendations cite archetype use cases relevant to the module discussed
-  - the Reimagine phase reaches the delegate and reinvent lenses when the journey stage warrants it
+  - the Reimagine phase reaches delegate-level and model-scope options when the journey stage warrants it
   - each phase's expert moves are used
 - **Navigation checks:**
   - phase files are read at their phase
@@ -714,7 +741,7 @@ agents in total, the program runs in waves (see `plan/`).
 ### 11.4 Synthesis and verification
 
 - **Synthesis agent per module:** merges the three angles, removes duplicates, maps entries to
-  patterns, work types and lenses, and writes the module file and use-case YAML.
+  patterns, work types, ladder levels and change scope, and writes the module file and use-case YAML.
 - **Verifier agent per module:** checks every claim against its cited source, assigns the evidence
   grade (A: a measured outcome from a named organization; B: a named deployment; C: a vendor claim or
   analyst estimate; D: a plausible idea, labelled "idea"), and rejects anything unsupported.

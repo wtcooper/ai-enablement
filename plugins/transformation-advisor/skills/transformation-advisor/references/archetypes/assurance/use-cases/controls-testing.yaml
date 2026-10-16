@@ -10,7 +10,7 @@
   function: service-delivery
   work_types: [document-production, research-synthesis]
   pattern: draft-review-loop
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -65,7 +65,7 @@
   function: service-delivery
   work_types: [expert-judgment, document-production]
   pattern: draft-review-loop
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -118,7 +118,7 @@
   function: service-delivery
   work_types: [coordination-scheduling, client-interaction]
   pattern: intake-triage
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: background-agent
   maturity: piloting
@@ -176,7 +176,7 @@
   function: service-delivery
   work_types: [data-reporting, expert-judgment]
   pattern: intake-triage
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -232,7 +232,7 @@
   function: service-delivery
   work_types: [review-assurance, document-production]
   pattern: document-to-decision
-  lens: delegate
+  change_scope: process
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: in-production
@@ -311,7 +311,7 @@
   function: service-delivery
   work_types: [review-assurance, transaction-processing]
   pattern: document-to-decision
-  lens: automate
+  change_scope: process
   ladder: automate
   runtime_class: workflow-automation
   maturity: in-production
@@ -365,7 +365,7 @@
   function: service-delivery
   work_types: [review-assurance, transaction-processing]
   pattern: reconcile-exceptions
-  lens: automate
+  change_scope: step
   ladder: automate
   runtime_class: workflow-automation
   maturity: in-production
@@ -424,7 +424,7 @@
   function: service-delivery
   work_types: [review-assurance, data-reporting]
   pattern: full-population-testing
-  lens: reinvent
+  change_scope: process
   ladder: automate
   runtime_class: workflow-automation
   maturity: in-production
@@ -491,7 +491,7 @@
   function: service-delivery
   work_types: [review-assurance, data-reporting]
   pattern: monitor-diagnose-act
-  lens: reinvent
+  change_scope: process
   ladder: automate
   runtime_class: background-agent
   maturity: in-production
@@ -546,7 +546,7 @@
   function: service-delivery
   work_types: [review-assurance]
   pattern: draft-review-loop
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -603,7 +603,7 @@
   function: service-delivery
   work_types: [review-assurance, document-production, coordination-scheduling]
   pattern: document-to-decision
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -649,7 +649,7 @@
   function: service-delivery
   work_types: [document-production, coordination-scheduling]
   pattern: draft-review-loop
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: in-production
@@ -694,7 +694,7 @@
   function: service-delivery
   work_types: [research-synthesis, review-assurance]
   pattern: document-to-decision
-  lens: improve
+  change_scope: step
   ladder: augment
   runtime_class: shared-team-skills
   maturity: piloting
@@ -734,7 +734,7 @@
   function: service-delivery
   work_types: [review-assurance, data-reporting]
   pattern: reconcile-exceptions
-  lens: automate
+  change_scope: process
   ladder: automate
   runtime_class: workflow-automation
   maturity: in-production
@@ -780,7 +780,7 @@
   function: service-delivery
   work_types: [review-assurance, software-systems, expert-judgment]
   pattern: other
-  lens: reinvent
+  change_scope: process
   ladder: assist
   runtime_class: personal-assistant
   maturity: emerging
@@ -854,7 +854,7 @@
   function: service-delivery
   work_types: [review-assurance, document-production]
   pattern: draft-review-loop
-  lens: delegate
+  change_scope: process
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: piloting
@@ -909,7 +909,7 @@
   function: service-delivery
   work_types: [review-assurance, expert-judgment]
   pattern: end-to-end-case-agent
-  lens: reinvent
+  change_scope: model
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: piloting
@@ -943,7 +943,7 @@
   function: service-delivery
   work_types: [review-assurance, data-reporting, software-systems]
   pattern: other
-  lens: delegate
+  change_scope: process
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: piloting
@@ -990,7 +990,7 @@
   function: service-delivery
   work_types: [review-assurance]
   pattern: document-to-decision
-  lens: reinvent
+  change_scope: model
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: in-production
@@ -1032,7 +1032,7 @@
   function: service-delivery
   work_types: [review-assurance, document-production, client-interaction]
   pattern: document-to-decision
-  lens: reinvent
+  change_scope: model
   ladder: delegate
   runtime_class: managed-agent-runtime
   maturity: in-production
@@ -1089,7 +1089,7 @@
   function: service-delivery
   work_types: [software-systems, expert-judgment]
   pattern: other
-  lens: improve
+  change_scope: step
   ladder: assist
   runtime_class: managed-agent-runtime
   maturity: in-production
@@ -1128,7 +1128,7 @@
   function: service-delivery
   work_types: [expert-judgment]
   pattern: grounded-knowledge-assistant
-  lens: improve
+  change_scope: step
   ladder: assist
   runtime_class: shared-team-skills
   maturity: emerging
@@ -1162,7 +1162,7 @@
   function: service-delivery
   work_types: [review-assurance]
   pattern: intake-triage
-  lens: improve
+  change_scope: step
   ladder: assist
   runtime_class: workflow-automation
   maturity: emerging
@@ -1203,7 +1203,7 @@
   function: service-delivery
   work_types: [expert-judgment, review-assurance]
   pattern: other
-  lens: reinvent
+  change_scope: model
   ladder: assist
   runtime_class: personal-assistant
   maturity: emerging
@@ -1255,7 +1255,7 @@
   function: service-delivery
   work_types: [review-assurance, software-systems]
   pattern: other
-  lens: reinvent
+  change_scope: process
   ladder: augment
   runtime_class: background-agent
   maturity: emerging

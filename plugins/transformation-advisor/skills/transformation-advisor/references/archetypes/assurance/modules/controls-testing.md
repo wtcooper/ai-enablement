@@ -50,9 +50,9 @@ largest networks (213 in 2025 listed public-interest audits; 69 on insufficient 
 
 ## 3. Where AI is changing the work
 
-Lens key: improve (assist a step), automate (no person on the normal path), delegate (an agent owns a multi-step
-outcome), reinvent (the process or service model changes). All four lenses have evidence; automate and delegate are
-thin, and no entry reaches the top "reinvent" rung of the ladder (see the synthesis report).
+Grouped by the four Reimagine lenses: improve (assist or augment a step), automate (no person on the normal path),
+delegate (an agent owns a multi-step outcome), reinvent (the process or service model changes; `change_scope: model`
+or a process that stops existing). All four have evidence; automate and delegate are thin.
 
 **Planning, walkthroughs and design**
 - Improve: `#01` walkthrough assistants draft narratives from prior-year files and flag changes (PwC, KPMG UK).

@@ -21,8 +21,8 @@ transformation advisor will use when it works with practitioners in this module.
      don't (for example, a frontier idea).
 2. **Normalize.** Every field uses the vocabulary's values. Number the ids
    `{archetype}-{module}-01`, `-02` and so on.
-3. **Cover the whole ladder.** Make sure the set spans the four lenses (improve, automate, delegate,
-   reinvent) wherever the evidence supports them. If a lens has no evidence, say so. Don't invent
+3. **Cover the range.** Make sure the set spans the ladder (assist → delegate) and every change scope
+   (step, process, model) wherever the evidence supports them. If a level or scope has no evidence, say so. Don't invent
    entries to fill it.
 4. **Write the module file** (≤ 300 lines, with a table of contents at the top). It is written for an
    AI advisor to read during a live conversation, so it must be practical, plain and specific.
@@ -30,7 +30,7 @@ transformation advisor will use when it works with practitioners in this module.
    - **What this module covers.** Two or three sentences.
    - **Processes and key steps**, as a table: step, what happens, work type, typical pain.
    - **Where AI is changing the work.** For each process area, the top use cases by id with a one-line
-     summary, grouped by lens.
+     summary, grouped by the four Reimagine lenses (improve, automate, delegate, reinvent).
    - **Interview probes.** 8–12 questions an advisor should ask someone in this module, with what each
      answer reveals.
    - **Metrics and benchmarks.** What to measure, with typical figures and sources where published.
@@ -41,9 +41,19 @@ transformation advisor will use when it works with practitioners in this module.
    - **Sources**, as a short reference list. Full details live in the YAML.
 5. **Write the use-case YAML:** a single list in the vocabulary format.
 
+## Rules for module sources
+
+- The module file may cite only source keys that appear in the YAML or in the module's own Sources
+  section.
+- Collect "Routed to other modules" items from the inputs into the synthesis report so the target
+  module's synthesis can pick them up.
+
 ## Rules
 
-- Do not add facts that aren't in the inputs. Do not change what a source says.
+- Do not add facts that aren't in the inputs. Do not change what a source says. Keep modal verbs and
+  provenance. Never add causes, scope, dates or connective claims ("without a rise in staff", "ratios
+  rise") that no source states. The pilot verifier corrected 21 of 25 entries, mostly for this kind
+  of drift.
 - Plain language. Explain each term of art in a few words the first time it appears.
 - Quotations must be under 25 words.
 
@@ -54,7 +64,7 @@ transformation advisor will use when it works with practitioners in this module.
 - `{report_out}`, a short synthesis report:
   - counts in and out
   - duplicates merged
-  - coverage by lens and ladder
+  - coverage by ladder and change scope
   - grade mix
   - gaps
   - suggested improvements to the briefs

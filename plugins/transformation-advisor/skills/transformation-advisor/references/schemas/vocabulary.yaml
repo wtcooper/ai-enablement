@@ -28,8 +28,15 @@ patterns:
   - bulk-transformation
   - other
 
-lenses: [improve, automate, delegate, reinvent]
-ladder: [assist, augment, automate, delegate, reinvent]
+# How much the AI does (autonomy).
+ladder: [assist, augment, automate, delegate]
+# What changes: one step, the whole process, or the business / service / operating model.
+change_scope: [step, process, model]
+# The four Reimagine lenses are conversation prompts that map onto ladder + change_scope:
+#   improve the step  = assist|augment, step
+#   automate the flow = automate, step|process
+#   delegate the outcome = delegate, process
+#   reinvent the work = any ladder, model (or a process that stops existing)
 
 runtime_classes:
   - personal-assistant
@@ -40,6 +47,10 @@ runtime_classes:
 
 maturity: [in-production, piloting, announced, emerging]
 evidence_grades: [A, B, C, D]
+# Who measured an outcome figure.
+provenance: [self-reported, vendor-published, independent]
+# Whether a source was opened and read, or seen only in search results.
+access: [full, search-only]
 value_levers: [capacity, speed, quality, growth, cost, risk, experience]
 
 source_types:
