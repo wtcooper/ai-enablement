@@ -1,6 +1,6 @@
 # Quality management (assurance)
 
-Last reviewed 2026-10-16; not yet source-verified. Use cases live in `../use-cases/quality-management.yaml` (25
+Last reviewed 2026-10-17; sources verified 2026-10-17. Use cases live in `../use-cases/quality-management.yaml` (25
 entries). Ids are shortened here: `#07` means `assurance-quality-management-07`, and `ct-#10` means
 `assurance-controls-testing-10`. Source keys in brackets, such as [FRC-GENAI-2026], are in the YAML or in §10.
 **No outcome in this module is measured.** No firm or regulator has published an error rate, override rate or
@@ -35,16 +35,16 @@ being governed; few use cases have AI doing quality-management work itself.
 |---|---|---|---|
 | **A. Firm level** | | | |
 | Needs and business case | Ideas come top-down and bottom-up; a business case before build or buy | coordination-scheduling, expert-judgment | The six global networks report about 30% more AI-enabled tools in 2025 (firm-reported) [IFIAR-TTF-2026] |
-| Select, build, vendor due diligence | Network-built tools preferred; foundation models almost always third-party | software-systems, review-assurance | Training data and model logic cannot be inspected; small firms depend on vendors |
+| Select, build, vendor due diligence | Network-built tools preferred; foundation models generally third-party | software-systems, review-assurance | Training data and model logic cannot be inspected; small firms depend on vendors |
 | Certify per use case | Test inputs, architecture and outputs; methodology sign-off; supporting IT controls | review-assurance | Processes built for deterministic tools; only 2 of 6 UK firms recorded tool limitations [FRC-ATT-2025] |
-| Deploy and control access | Pilots (often lower-risk non-PIE audits), inventory, version control, blocking | software-systems | Firms generally did not monitor that only authorised, current tools were used [FRC-ATT-2025]; over a third of surveyed tax and audit professionals admit unauthorised AI [TRI-FOP-2026] |
-| Policy, methodology, training | Permitted uses, prompt libraries, role-based training | document-production, coordination-scheduling | 66% of small/mid US firms rank untrained staff a top blocker [CPACOM-ATR-2025] |
+| Deploy and control access | Pilots (some on lower-risk non-PIE audits), inventory, version control, blocking | software-systems | Firms generally did not monitor that only authorised, current tools were used [FRC-ATT-2025]; over a third of surveyed tax and audit professionals admit unauthorised AI [TRI-FOP-2026] |
+| Policy, methodology, training | Permitted uses, prompt libraries, role-based training | document-production, coordination-scheduling | 66% of 54 surveyed US CPA firms rank untrained staff a top blocker [CPACOM-ATR-2025] |
 | Monitor, recertify, retire | Usage and impact metrics, change triggers, owner confirmations | data-reporting, review-assurance | 0 of 6 UK firms quantified quality impact; triggers informal [FRC-ATT-2025] |
 | Resource engagements | Match competence, capacity and time | coordination-scheduling | Human-resources findings at 24% of inspected member firms in 2025 [IFIAR-SURVEY-2026] |
 | Remediate; annual evaluation; inspectors | Root-cause analysis, system evaluation, regulator dialogue | expert-judgment, client-interaction | Monitoring and remediation findings at 32% of firms; 21 findings for missing issues in internal inspections (6 in 2024) [IFIAR-SURVEY-2026] |
 | **B. Engagement level** | | | |
 | Plan AI use | Partner sets expectations; confirms tools are approved | coordination-scheduling | Teams use AI the partner has not planned or reviewed |
-| Direct and supervise | Competent staff; configure tools within policy | coordination-scheduling | Supervision policies unchanged after GenAI (2024 outreach) [PCAOB-GENAI-2024]; 31 supervision-policy findings in 2025 (10 in 2024) [IFIAR-SURVEY-2026] |
+| Direct and supervise | Competent staff; configure tools within policy | coordination-scheduling | Some firms' supervision policies unchanged after GenAI (2024 outreach) [PCAOB-GENAI-2024]; 31 supervision-policy findings in 2025 (10 in 2024) [IFIAR-SURVEY-2026] |
 | Review output; oversee agents | Check completeness and accuracy; decide at agent control points | review-assurance | Rubber-stamping; fluent output that sounds confident even when wrong [FRC-GENAI-2026] |
 | Document AI use | Tool, version, inputs, review, how output informed conclusions | document-production | File does not show where AI was used; generic notes |
 | Stand back; communicate | Senior reflection on technology use; audit committee and client terms | review-assurance, client-interaction | Clients' data and model-training concerns |
@@ -107,7 +107,7 @@ Most Part A entries are governance gates run by people (`ladder: assist`, `patte
   engine cross-checks AI output, human at the end (AICPA permits; duties unchanged).
 
 **Document and communicate**
-- Improve: `#23` two-place documentation: central tool record plus structured file record (FRC split; PwC UK policy).
+- Improve: `#23` two-place documentation: central tool record plus structured file record (FRC split; PwC UK policy, second-hand).
   `#24` AI-use terms in engagement letters and audit committee conversations (Grant Thornton UK, Deloitte).
 
 ## 4. Interview probes
@@ -141,12 +141,12 @@ Ask in the person's setting: firm quality leader, methodology or technology lead
 ## 5. Metrics and benchmarks
 
 **What exists is inspection and governance data, not AI-quality data.**
-- Tool misuse: 31% of IFIAR members reported findings that a tool was not used as intended (2024; 29% in 2023);
+- Tool misuse: 31% of IFIAR member regulators reported findings that a tool was not used as intended (2024; 29% in 2023);
   common findings were misread results and thin testing of outliers [IFIAR-TTF-2025].
 - FRC, six largest UK firms (snapshot from April 2024 requests; GenAI then limited to chatbots): 0 of 6 quantified
   quality impact; 1 of 6 reported usage against targets; 2 of 6 ran annual owner confirmations; 1 of 6 had a
   three-year recertification backstop; 2 of 6 required UK-level certification of global tools [FRC-ATT-2025].
-- AFM (13 Dutch firms): usage monitoring estimated for 74% of tools, actual data for 20%, unclear 6% [AFM-12BB-2025].
+- AFM (Dutch study): engagement-level usage estimated for 74% of auditing tools, actual data for 20%, unclear 6% [AFM-12BB-2025].
 - IFIAR 2025 firm-level themes (161 member firms inspected): engagement performance 37%, monitoring and remediation
   32%, human resources 24%, EQR 20%, technological resources 9%; 31 supervision-and-review policy findings
   (10 in 2024) [IFIAR-SURVEY-2026]. Per-theme denominators differ and are not stated.
@@ -168,20 +168,22 @@ recertification; share of files with a complete AI-use record; tool-related inte
 
 ## 6. Guardrails
 
-**Standards and regulators (no body prohibits AI; none has AI-specific quality-management requirements)**
-- **Accountability does not move.** The FRC says the human auditor is always accountable [FRC-GENAINEWS-2026]; NFRA,
-  as reported, says technology-generated information has no lower evidentiary bar [NFRA-CAALLEY-2026].
+**Standards and regulators (none of these bodies prohibits AI or has issued AI-specific QM requirements)**
+- **Accountability does not move.** The FRC says people (firms and Responsible Individuals) are accountable for
+  audit quality [FRC-GENAINEWS-2026]; NFRA
+  staff say technology-generated information has no lower evidentiary bar [NFRA-STAFF-2026].
 - **ISQM 1 is the route.** Tools must be appropriately obtained or developed, implemented, maintained and used
   [AUASB-AI-2025, CPAB-AI-2024]; the firm keeps responsibility for approval and monitoring even when the network
   builds the tool [IAASB-TQMPLAN-2026]. IAASB roundtable participants judged ISQM 1 and ISA 220 (Revised) a sound
   base [IAASB-TQM-2026]; the IAASB is drafting a five-guide series through June 2027, with no new requirements
-  [IAASB-MINJUN-2026].
-- **PCAOB QC 1000** takes effect 15 Dec 2026. Amendments adopted 9 Sep 2026 (more flexible role assignment, external
-  quality control function dropped for larger firms, narrower cross-engagement evaluation, firm-selected evaluation
-  date) take effect with it only if the SEC approves; approval was still pending in secondary sources on 8 Oct 2026
-  [DART-QC1000-2026, EISNER-QC1000-2026]. The PCAOB has no AI standard. Staff say AI adoption is an inspection focus
-  [DART-SECPCAOB-2025]; board member Botic expects a lifecycle of approval, validation, monitoring, training,
-  reassessment and retirement, plus an inventory (his view, not Board policy) [PCAOB-BOTICSF-2026]. The SEC asks how
+  [IAASB-MINJUN-2026, IAASB-TQMPLAN-2026].
+- **PCAOB QC 1000** takes effect 15 Dec 2026. Amendments adopted 9 Sep 2026 (more flexible role assignment, no
+  external quality control function requirement for larger firms, narrower cross-engagement evaluation,
+  firm-selected evaluation date) take effect with it only if the SEC approves; no approval had been announced by
+  17 October 2026 [PCAOB-QCREL-2026, DART-QC1000-2026, EISNER-QC1000-2026]. The PCAOB has no AI standard. Staff say AI
+  adoption is an inspection focus [DART-SECPCAOB-2025]; board member Botic expects a lifecycle of approval,
+  implementation, monitoring, training, reassessment and retirement, plus an inventory (his view, not Board policy)
+  [PCAOB-BOTICSF-2026]. The SEC asks how
   firms use AI to monitor QC [KPMG-HOHL-2026].
 - **FRC (UK).** Risks: deficient output, misuse of output, non-compliant methodology. Mitigations: system design,
   certification, staff education, human review at control points [FRC-GENAI-2026]. Documentation splits central and
@@ -207,31 +209,31 @@ control point; accepting or rejecting AI output; evaluating evidence sufficiency
 - **Central tool governance.** Technology and methodology teams own certification; Deloitte UK added a Technology
   Controls Board and a UK Chief AI Officer (`#01`, `#08`). Procurement and information security join tool approval.
 - **Quality teams become analysts.** Reading tool telemetry alongside inspection findings (`#07`) is a new task; the
-  inputs show one unnamed example (an AFM good-practice dashboard).
+  only public example is an unnamed firm's board dashboard described by the AFM [AFM-12BB-2025].
 - **Reviewers become challengers.** The FRC asks reviewers to have competence in the use case, sometimes specialist
-  expertise, and to form an independent view where risk warrants [FRC-GENAI-2026]. Review, not preparation, becomes
-  the main human task; Deloitte says professionals will supervise, validate and work alongside AI [DELOITTE-OMNIA-2026].
+  expertise, and says review may involve forming an independent view [FRC-GENAI-2026]. Deloitte says its
+  professionals will supervise, validate and work alongside AI [DELOITTE-OMNIA-2026].
 - **Partners carry explicit AI duties.** Understand the tools, confirm approval, plan use, check staff use them
   correctly [AICPA-PA-2026]; IFIAR asks seniors to stand back and review technology use (`#17`).
 - **Juniors.** PwC says new hires will act like managers within three years [BI-PWC-2025]; the Big Four cut 2025
-  graduate intake by as much as 6-29% [ICAEW-EXPECT-2026]. Risk: deskilling. Evidence is thin: the study regulators
-  cite is an EEG essay study [KOSMYNA-2025] and the audit-specific study has no results yet [HOLMSTROM-2024].
+  graduate intake by as much as 6-29% [ICAEW-EXPECT-2026]. Risk: deskilling. Evidence is thin: Botic cited an unnamed
+  MIT study (the best-known one is an EEG essay study [KOSMYNA-2025]); an audit-specific study has no results yet [HOLMSTROM-2024].
   Response seen: Deloitte UK graduate simulations mixing manual and AI-assisted methods (`#10`).
-- **New hires.** PwC says it now hires engineers it would not previously have hired into assurance [PWC-AT-2025]. In small
-  firms a quality partner takes on vendor due diligence (`#06`).
+- **New hires.** PwC says it now hires engineers it would not previously have hired into assurance [PWC-AT-2025]. Smaller
+  firms lean on third-party technology and methodology providers [ICAEW-FRCVIEW-2026] (`#06`).
 
 ## 8. Frontier
 
 - **2025-06-26** FRC thematic review of tool certification and first AI-in-audit documentation guidance [FRC-ATT-2025, FRC-AIAUDIT-2025].
 - **2025-11-21** KPMG announces ISO/IEC 42001 certification [AT-KPMGISO-2025].
-- **2025-12** IAASB approves non-authoritative quality-management material [IAASB-MINDEC-2025]; PCAOB staff name AI
+- **2025-12** IAASB approves developing non-authoritative quality-management material [IAASB-MINDEC-2025]; PCAOB staff name AI
   adoption an inspection focus [DART-SECPCAOB-2025]; AFM publishes 12 building blocks [AFM-12BB-2025].
 - **2026-03-25 / 03-30** FRC moves supervision to firms' quality systems; issues generative and agentic AI guidance
   [FRC-SUPERVISION-2026, FRC-GENAI-2026]. **2026-03** IAASB approves its action plan [IAASB-TQMPLAN-2026].
 - **2026-04** Deloitte UK sets up a Technology Controls Board [DELOITTE-UKTR-2026]. **2026-04-20** IFIAR report on
   agentic AI, "human-led" audit and monitoring metrics [IFIAR-TTF-2026].
 - **2026-06-04** FRC Audit Tech & AI Sandbox opens [FRC-SANDBOX-2026]. **2026-06-24** Deloitte Omnia agents and tutor mode [DELOITTE-OMNIA-2026].
-- **2026-05** PCAOB forms an Inspections Modernization Council [JOFA-IMC-2026]. **2026-07-24** NFRA principles: validation, monitoring, re-approval [NFRA-CAALLEY-2026].
+- **2026-05** PCAOB launches an Inspections Modernization Council (advisory group) [JOFA-IMC-2026]. **2026-07** NFRA staff paper of technology principles: validation, monitoring, re-approval [NFRA-STAFF-2026].
 - **2026-08-25 / 09-01** PCAOB staff materials: inspections centred on firms' QC systems; early AI pilots in inspection work [DART-IMC-2026, STARLING-IMC-2026].
 - **2026-09-09** PCAOB adopts QC 1000 amendments, pending SEC approval [PCAOB-LOGOQC-2026, DART-QC1000-2026]. **2026-09-22** Botic sets out AI governance lifecycle expectations [PCAOB-BOTICSF-2026].
 - **2026-10-05** Botic questions a staff idea to cut file reviews at "lower-risk" largest firms well below 50% of 2025 levels [PCAOB-BOTICIOWA-2026].
@@ -242,7 +244,7 @@ control point; accepting or rejecting AI output; evaluating evidence sufficiency
 ## 9. Common objections
 
 - **"Our tools are certified, so quality is covered."** Certification is not monitoring. The FRC found no large UK
-  firm quantifying quality impact, and 31% of IFIAR members still report tool-misuse findings (`#07`).
+  firm quantifying quality impact, and 31% of IFIAR member regulators reported tool-misuse findings in 2024 (`#07`).
 - **"The standards don't fit opaque, non-deterministic AI."** IAASB roundtable participants raised it and still
   judged ISQM 1 and ISA 220 (Revised) a sound base; guides arrive by June 2027. The FRC's head of assurance
   technology argues the right comparison is a human, not traditional code [ICAEW-POD-2025]. Certify the tool in its
@@ -264,28 +266,28 @@ control point; accepting or rejecting AI output; evaluating evidence sufficiency
   where errors become hard to detect (`#22`). Use it to direct human attention, not replace it.
 - **"Fewer file reviews means less scrutiny."** Botic is wary of cuts; the SEC's chief accountant said a QC-focused
   inspection model may be tougher on firms [CAQ-HOHLWEBINAR-2026].
-- **"Failures are hypothetical."** The clearest public failure of review at a Big Four firm is outside audit:
-  Deloitte Australia partly refunded a government consulting report with apparent AI-generated errors, including a
-  fabricated court quote; Deloitte did not say whether AI caused them [BNN-AP-DELOITTE-2025].
+- **"Failures are hypothetical."** A public review failure at a Big Four firm sits outside audit: Deloitte
+  Australia partly refunded a government report with apparent AI-generated errors, including a fabricated court
+  quote; the revised report disclosed GenAI use, and Deloitte did not say whether AI caused them [BNN-AP-DELOITTE-2025].
 
 ## 10. Sources
 
-Full details (title, publisher, type, URL, date, access, locator) are in the YAML; the synthesis report maps keys to
-input refs and to the pilot's keys.
+Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
 - **Regulators and standard-setters (in the YAML):** FRC-GENAI-2026, FRC-GENAINEWS-2026, FRC-ATT-2025,
   FRC-AIAUDIT-2025, FRC-SANDBOX-2026, FRC-SANDBOXPAGE-2026, FRC-SUPERVISION-2026, IFIAR-TTF-2025, IFIAR-TTF-2026,
   IFIAR-SURVEY-2026, IAASB-TQMPLAN-2026, IAASB-TQM-2026, CPAB-AI-2024, CPAB-EVOLVING-2025, AFM-12BB-2025, AFM-2025,
-  IRBA-SPA11-2025, PCAOB-GENAI-2024, PCAOB-PRIORITIES-2024, PCAOB-BOTICSF-2026, PCAOB-BOTICIOWA-2026, PCAOB-LOGOQC-2026, AICPA-PA-2026, AUASB-AI-2025.
+  NFRA-STAFF-2026, IRBA-SPA11-2025, PCAOB-GENAI-2024, PCAOB-PRIORITIES-2024, PCAOB-BOTICSF-2026, PCAOB-BOTICIOWA-2026, PCAOB-LOGOQC-2026, AICPA-PA-2026, AUASB-AI-2025.
 - **Firms, press, professional bodies (in the YAML):** DELOITTE-UKTR-2025, DELOITTE-UKTR-2026, DELOITTE-OMNIA-2026,
   KPMG-TR-2025, KPMG-SOX-2026, KPMG-HOHL-2026, AT-KPMGISO-2025, RSM-ASKLUCA-2026, CPAPA-LUCA-2026, CAQ-RSM-2026,
   CFODIVE-PWC-2026, PWC-AT-2025, BI-PWC-2025, EY-CANVAS-2026, BAKERTILLY-GAM-2026, FOLEY-PCAOB-2026,
-  DART-SECPCAOB-2025, STARLING-IMC-2026, NFRA-CAALLEY-2026, NFRA-CAALLEY-BIAS-2026, AT-AICPAPA-2026, JOFA-AIPA-2026,
+  DART-SECPCAOB-2025, STARLING-IMC-2026, AT-AICPAPA-2026, JOFA-AIPA-2026,
   JOFA-5IMP-2026, CALCPA-AISTD-2026, ICAEW-FRCVIEW-2026, ICAEW-POD-2025, ICAEW-EXPECT-2026, ICAS-SANDBOX-2026,
   NYSSCPA-BOTIC-2025, CAALLEY-PCAOBPE-2025, RSM-SECPCAOB-2025, NYENRODE-2026, CPAPRACTICE-RSMANDERA-2026.
 - **Vendors, surveys, academic, podcasts (in the YAML):** FIELDGUIDE-PCAOB-2026, FIELDGUIDE-SANVILLE-2026,
   TRI-FOP-2026, CPACOM-ATR-2025, PREPRINT-AIJGDI-2026, PETERS-2022, HOLMSTROM-2024, COMMERFORD-2022, FEDYK-2022,
   ARXIV-FAB-2026, FABIAN-2026, KOSMYNA-2025, PODWISE-ACCTPOD-2026.
-- **Not in the YAML (cited in this file; all opened by the deep dives):**
+- **Not in the YAML (cited in this file only; all opened):**
+  - PCAOB-QCREL-2026: PCAOB, *PCAOB Adopts Amendments to Its Quality Control Standard* (news release), 2026-09-09, https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-adopts-amendments-to-its-quality-control-standard
   - DART-QC1000-2026: Deloitte DART, *PCAOB Releases Amendments to Quality Control Standard*, 2026-09-09, https://dart.deloitte.com/USDART/home/news/all-news/2026/sep/pcaob-amendments-quality-control-standard
   - EISNER-QC1000-2026: EisnerAmper, *PCAOB QC 1000 Amendments: What Audit Committees Need to Know*, 2026-10-08, https://www.eisneramper.com/insights/audit-assurance/pcaob-qc-1000-amendments-audit-committees-1026/
   - DART-IMC-2026: Deloitte DART, *PCAOB Shares Discussion Materials Related to Inspection Modernization Council's Summer 2026 Meetings*, 2026-08-25, https://dart.deloitte.com/USDART/home/news/all-news/2026/aug/pcaob-materials-inspection-modernization-council-summer-2026-meetings
