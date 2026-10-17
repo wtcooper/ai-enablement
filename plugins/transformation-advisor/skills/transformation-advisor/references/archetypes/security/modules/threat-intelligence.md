@@ -79,13 +79,13 @@ for automate at step level**, or for new CTI service lines, pricing or sourcing 
 **Action**
 - Improve: `#14` report-to-detection rules (best agent reward 0.637 on a Microsoft benchmark; C). `#15` SOAR enrichment and MCP
   connections (MCP: a standard way to connect agents to tools and data) so agents pull intelligence on demand (Superhuman; B).
-- Automate: `#16` Adobe's pipeline matches new indicators against EDR, email, cloud and identity logs and rechecks old intelligence
-  (B). `#18` agents that package takedown evidence for phishing and brand-abuse sites (vendor descriptions; C).
+- Automate: `#16` Adobe's pipeline matches new indicators against EDR, email, cloud and identity logs; Adobe recommends that teams
+  building similar systems also recheck earlier intelligence that produced no matches (B). `#18` agents that package takedown evidence for phishing and brand-abuse sites (vendor descriptions; C).
 - Delegate: `#17` chained report-to-ticket workflows with an approval gate before any write (Feedly recipes, Cyware; C).
 
 **Threat hunting**
 - Improve: `#19` assistants inside human-led hunts (Intel 471, Microsoft Threat Hunting Assistant, Google's frontline team; B).
-  `#23` CISA CyberSentry machine-learning anomaly surfacing (B).
+  `#23` CISA machine-learning anomaly surfacing on Einstein network data, with a CyberSentry equivalent at an early stage (B).
 - Delegate: `#21` Grow Therapy's ~20 daily Claude hunts with an adversarial self-check, about $500 a month (A, self-reported).
   `#22` Microsoft's always-on investigation agent, 80.1% precision on customer feedback over 120 days (A, vendor's own product).
   `#20` CyberProof's managed hunting agents, "10 to 15 times more hunts" for an unnamed client (C).
@@ -201,8 +201,9 @@ independent test of a commercial CTI assistant on live data.
 - Restricted material: a local or open-weight model keeps unredacted reports inside the boundary [ARXIV-2609.01174].
 
 **Steps that need human judgement:** attribution, risk ratings and business-impact statements [FEEDLY-AUTOMATE-2026]; scoping a
-threat to your environment; approving any write to live tooling (blocklists, rules, containment) [SECURITYWEEK-HUNTING-2026];
-release of shared intelligence after redaction [DHS-AIINV-CISA-2026]; forming and owning hunt hypotheses [INTEL471-HUNTING-2025];
+threat to your environment; approving any write to live tooling (blocklists, rules, tickets) [FEEDLY-AUTOMATE-2026], with automated
+containment kept to high-confidence, low-risk actions and high-risk actions left to people [SECURITYWEEK-HUNTING-2026]; release of
+shared intelligence after redaction [CISA-AIUC-2024; GAO-24-106246]; forming and owning hunt hypotheses [INTEL471-HUNTING-2025];
 the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat actors (`#04`).
 
 ## 7. Roles and how they evolve
@@ -225,8 +226,8 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
 ## 8. Frontier
 
 - 2026-05-20: Microsoft reports an always-on investigation agent at scale across Defender customers (`#22`) [ARXIV-2605.20896].
-- 2026-08-12 to 2026-09-16: Google ships scheduled agentic investigations, an Agentic API and an Agentic MCP server
-  [GOOGLE-GTICHANGELOG-2026; GOOGLE-GTIMCP-2026]; 2026-09-29: Cloudflare makes Threat Signals free to every account
+- 2026-08-12: Google releases scheduled agentic investigations (Flows) and an Agentic API in public preview; its Agentic MCP server
+  guide was last updated 2026-09-16 [GOOGLE-GTICHANGELOG-2026; GOOGLE-GTIMCP-2026]; 2026-09-29: Cloudflare makes Threat Signals free to every account
   [CLOUDFLARE-THREATSIGNALS-2026].
 - 2026-08-19: knowledge packaged as portable "skills" attached to detections (Vega's Detection Skills) [DETENGWEEKLY-167-2026].
 - 2026-09-08: Google reports adversaries moving from prompting to agentic workflows, including a credential-harvesting campaign planned
@@ -255,7 +256,7 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
 - **"We can't put partner intelligence into a model."** Valid under TLP and sharing agreements [FIRST-TLP-2022]. Options: decide in
   policy which labels may leave the boundary, or run an open-weight model locally [ARXIV-2609.01174; ARXIV-2610.14180].
 - **"It will break trust and chain of custody in sharing"** (RH-ISAC) [CSD-ISACAI-2026]. Keep provenance links and human approval;
-  CISA's PII screening routes every flag to an analyst [DHS-AIINV-CISA-2026; CLOUDFLARE-THREATSIGNALS-2026].
+  CISA's PII screening routes every flag to an analyst [CISA-AIUC-2024; GAO-24-106246; CLOUDFLARE-THREATSIGNALS-2026].
 - **"It's just rebranded enrichment and summarization"** [FEEDLY-ROUNDUP-2026]. Often fair; Forrester argues for the "least AI" that
   does the job [SANS-LEASTAI-2026]. Where the evidence shows more than enrichment, it is continuous, agent-run hunting (`#21`, `#22`).
 - **"Our analysts will lose their skills."** A real risk [FEEDLY-VALUE-2026]. Require primary-source review before an assessment is

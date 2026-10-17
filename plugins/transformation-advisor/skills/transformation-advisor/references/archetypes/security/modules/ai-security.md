@@ -42,7 +42,7 @@ application-security; this module covers securing those tools.
 | Evaluate models pre-release | Safeguard stress tests, cyber capability, propensity for out-of-scope action | review-assurance | Universal jailbreaks found for every system AISI tested [UKAISI-TRENDS-2025] |
 | Issue identity and authorise | Agent principal with sponsor; short-lived scoped tokens; per-action policy; approval for high-impact steps | software-systems | Only 36% use dedicated agent identities [CSA-AGENTIDSPRAWL-2026]; users approve 97% of prompts [ANTHROPIC-AUTOMODE-2026] |
 | Contain | Network-enforced egress, microVM isolation, single-use infrastructure, no shared writable services | software-systems | A VM did not hold a cyber-capable model [TOB-VMS-2026]; shared services gave a route out [OPENAI-HFTECH-2026] |
-| Monitor, log, halt | Trajectory and reasoning monitors, tripwires, paging, attributed tamper-resistant logs, kill switches | review-assurance, data-reporting | 68% cannot tell agent actions from human ones [CSA-AGENTIDSPRAWL-2026]; alerts without authority to stop [OPENAI-HFTECH-2026] |
+| Monitor, log, halt | Trajectory and reasoning monitors, tripwires, paging, attributed tamper-resistant logs, kill switches | review-assurance, data-reporting | 68% cannot tell agent actions from human ones [CSA-AGENTIDSPRAWL-2026]; a port-sweep alert did not stop the run [OPENAI-HFTECH-2026] |
 | Defend inputs and supply chain | Screen untrusted content; vet skills, MCP servers, model files; keep AI bills of materials | review-assurance | 157 malicious skills in 98,380 [USENIX-SKILLS-2026]; 40.55% of remote MCP servers expose tools unauthenticated [ARXIV-2605.22333] |
 | Review and investigate | Full-population lookback of transcripts; independent investigation; AI-assisted forensics | review-assurance, research-synthesis | Transcripts at petabyte scale; reviewers rely on often-unreliable AI helpers [OPENAI-HFUPDATES-2026; METR-OAIHF-2026] |
 | Respond and report | Control-incident definitions, drills, notification, statutory clocks, near-miss sharing | coordination-scheduling, document-production | 8% run regular AI response exercises [ISACA-SOC-2026]; victims did not notice [THN-CERTIN-2026] |
@@ -57,38 +57,41 @@ owns an outcome), reinvent (`change_scope: model`). Here ladder describes the co
 - Improve: `#01` threat-model against OWASP, MITRE ATLAS and NIST taxonomies plus the "lethal trifecta" check. `#02` red
   teaming scoped to the risk decision, hybrid in-house teams (Microsoft, 100+ products), outside researchers, buying
   against OWASP criteria. `#03` measure robustness with adaptive and crowdsourced attackers (CAISI, UK AISI, Gray Swan;
-  grade A). `#04` pre-deployment safeguard, capability and propensity testing (UK AISI, OpenAI; grade A).
+  grade A, measured in public competitions and research labs). `#04` pre-deployment safeguard, capability and propensity testing (UK AISI, OpenAI; grade A, measured
+  in government and lab evaluations).
 - Delegate: `#05` continuous agentic red teaming of security invariants and containment (OpenAI plan; grade C, announced).
 
 **Agent identity and action control**
 - Automate: `#06` each agent its own identity with a human sponsor, short-lived scoped tokens and audience-bound MCP
   authorisation (Microsoft and Okta use it for their own agents); see `security-identity-access-04`. `#07` runtime
   policy-enforcement point (OWASP Agent Control Standard; no deployment found). `#08` classifier gate replacing most
-  per-command approvals, human approval kept for high-impact steps (Anthropic auto mode; grade A, vendor-measured).
+  per-command approvals, human approval kept for high-impact steps (Anthropic auto mode; grade A, vendor-measured in a controlled study and commissioned lab tests).
 - Improve: `#09` sweep exposed secrets and over-granted privileges, with an LLM-assisted privilege audit (Unit 42).
 
 **Containment, monitoring and logging**
 - Automate: `#10` default-deny egress at the network layer, microVM isolation, single-use infrastructure, no shared
-  writable services (grade A on Trail of Bits' escape test). `#11` trajectory and reasoning monitors with 24/7 paging,
+  writable services (grade A on Trail of Bits' single lab escape test and AISI's count of its own evaluation runs). `#11` trajectory and reasoning monitors with 24/7 paging,
   a 30-minute pause rule, tripwires and halt tooling; see `security-incident-response-19`. `#12` attributed,
   tamper-resistant agent logs.
 
 **Inputs, supply chain, model assets**
 - Automate: `#13` screen untrusted content and constrain what models can trigger, including the SOC's own copilots
   (see `security-operations-19`). `#14` whole-registry vetting of skills, MCP servers and model files, review gates, AI
-  bills of materials (grade A). `#15` detect and disrupt distillation (model-output harvesting) campaigns (grade A).
+  bills of materials (grade A, measured by researchers scanning public registries). `#15` detect and disrupt distillation (model-output harvesting) campaigns (grade A, measured in
+  providers' production API traffic).
 - Improve: `#16` idea: check training and retrieval data for tampering.
 
 **Incident review, investigation and reporting**
-- Improve: `#17` full-population lookback of agent transcripts (Anthropic 141,006 runs; OpenAI about 50 PB; grade A).
-  `#18` independent investigation (METR) and AI-assisted victim forensics (Hugging Face; grade A). `#19` control-incident
+- Improve: `#17` full-population lookback of agent transcripts (Anthropic 141,006 runs; OpenAI about 50 PB; grade A, measured in the labs' own evaluation and training records).
+  `#18` independent investigation (METR) and AI-assisted victim forensics (Hugging Face; grade A,
+  METR's review of OpenAI's evaluation records). `#19` control-incident
   playbooks, drills, notification and statutory clocks; see `security-incident-response-17` and `-21`.
 - Reinvent: `#20` shared cross-organisation near-miss exchange (SAFE request for comments; no operating data).
 
 **Governance and assurance**
 - Improve: `#21` AI and agent inventory with named owners, including shadow and embedded vendor AI. `#22` proportionate
   governance: board oversight, autonomy tiers, one control set mapped to frameworks (MSCI tiering). `#23` independent
-  adversarial testing of one high-risk agent for SOX auditors (MSCI, about 1,400 tests; grade A, vendor case study).
+  adversarial testing of one high-risk agent for SOX auditors (MSCI, about 1,400 tests; grade A, AIUC's test engagement reported in its own case study).
   `#24` third-party AI due diligence with conditional reliance on ISO/IEC 42001 (Cengage, Anthropic, Microsoft).
 - Reinvent: `#25` agent certification with quarterly testing tied to insurance (AIUC-1); see
   `assurance-assurance-over-ai-19`.
@@ -140,13 +143,13 @@ exercises per year; tiered agents with current assurance evidence. No published 
 | 12 defences bypassed, success above 90% for most | Adaptive attacks against published jailbreak and injection defences | independent | [ARXIV-2510.09023] |
 | Every model broken; more than 250,000 attempts on 13 models | At least one successful hijack per model in a public competition | independent | [NIST-CAISI-REDTEAMCOMP-2026] |
 | R-squared 0.097 | Correlation of model capability with robustness | independent | [UKAISI-TRENDS-2025] |
-| 13.6% vs 89% | Testers refusing a dangerous command vs classifier blocking it (1,053 testers) | vendor-published | [ANTHROPIC-AUTOMODE-2026] |
-| 0 of 720 vs 60-80% (small sample) | Commissioned injection test vs one independent researcher's chain | vendor / independent | [ANTHROPIC-AUTOMODE-2026; REHBERGER-AUTOMODE-2026] |
-| 3 escapes from a VM; 0 from Firecracker | One host, one model, about 12 hours | self-reported | [TOB-VMS-2026] |
-| 10 of 122 runs; about 1 hour to contain | AISI runs with unsanctioned live-internet actions | self-reported | [UKAISI-INCIDENT-2026] |
-| 3 incidents in 141,006 runs | Anthropic lookback of evaluation runs with possible internet access | self-reported | [ANTHROPIC-EVALINC-2026] |
-| More than 100 organisations notified; about 50 PB; more than USD 0.5M a day | OpenAI transcript review scale and cost | self-reported | [OPENAI-HFUPDATES-2026] |
-| About 1,200 agents; about 700 attackers | Agents on an unsanctioned board and those joining the attack | independent | [METR-OAIHF-2026] |
+| 13.6% vs 89% | Testers refusing a dangerous command vs classifier blocking it (1,053 testers; vendor-built test environment) | vendor-published | [ANTHROPIC-AUTOMODE-2026] |
+| 0 of 720 vs 60-80% (small sample) | Commissioned lab injection test vs one independent researcher's chain against the product | vendor / independent | [ANTHROPIC-AUTOMODE-2026; REHBERGER-AUTOMODE-2026] |
+| 3 escapes from a VM; 0 from Firecracker | Author's lab test: one host, one model, about 12 hours | self-reported | [TOB-VMS-2026] |
+| 10 of 122 runs; about 1 hour to contain | AISI's own evaluation runs with unsanctioned live-internet actions | self-reported | [UKAISI-INCIDENT-2026] |
+| 3 incidents in 141,006 runs | Anthropic lookback of its own evaluation runs with possible internet access | self-reported | [ANTHROPIC-EVALINC-2026] |
+| More than 100 organisations notified; about 50 PB; more than USD 0.5M a day | OpenAI review of its own training and evaluation records: scale and cost | self-reported | [OPENAI-HFUPDATES-2026] |
+| About 1,200 agents; about 700 attackers | Agents in OpenAI's evaluations on an unsanctioned board, and those joining the attack | independent | [METR-OAIHF-2026] |
 | 157 of 98,380 skills malicious | Whole-registry scan of two skill registries | independent | [USENIX-SKILLS-2026] |
 | 40.55% of 7,973 remote MCP servers | Expose tools without authentication | independent | [ARXIV-2605.22333] |
 | About 1% of about 200,000 resumes | Hidden prompt injections in a hiring pipeline | independent | [USENIX-RESUME-2026] |
@@ -156,7 +159,7 @@ exercises per year; tiered agents with current assurance evidence. No published 
 | 1 in 5; USD 670,000 more | Breached organisations citing shadow AI; cost gap with high shadow-AI use | vendor-published | [IBM-CODB-2025] |
 | 8% / 64% | Run regular AI response exercises / have run none (1,800+ respondents) | independent | [ISACA-SOC-2026] |
 | 74% vs 27% | Could pass an AI audit vs fully mature governance | vendor-published | [CSA-SCHELLMAN-2026] |
-| About 1,400 tests; 112 roles; no major or significant vulnerabilities | One SOX-scoped agent tested for MSCI | vendor-published | [AIUC-MSCI-2026] |
+| About 1,400 tests; 112 roles; no major or significant vulnerabilities | One SOX-scoped agent tested for MSCI (test engagement, reported by the tester) | vendor-published | [AIUC-MSCI-2026] |
 
 Forecasts, not measurements: 25% of enterprise GenAI applications with five or more minor security incidents a year by
 2028 [GARTNER-GENAIINC-2026]; 40% of enterprises demoting or decommissioning autonomous agents by 2027
@@ -165,12 +168,13 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 ## 6. Guardrails
 
 - **Standards (voluntary):** OWASP Top 10 for LLM Applications 2026 and for Agentic Applications, Agent Control Standard
-  [OWASP-LLM-2026; OWASP-AGENTIC-2025; OWASP-ACS-2026]; MITRE ATLAS; NIST AI 100-2, COSAiS overlays, preliminary Cyber AI
+  [OWASP-LLM-2026; OWASP-AGENTIC-2025; OWASP-ACS-2026]; MITRE ATLAS; [MITRE-ATLAS]; NIST AI 100-2, COSAiS overlays, preliminary Cyber AI
   Profile, AI RMF (under revision) [NIST-AI1002-2025; NIST-COSAIS-2026; NIST-IR8596-2025; NIST-AIRMF]; CISA/ACSC
   agentic guidance, which advises using agentic AI only for low-risk, non-sensitive tasks and never granting broad access [CISA-AGENTIC-2026]; NIST,
   NSA and CISA ten incident practices for training and evaluation [NISTCISA-IRKEY-2026]; MCP authorisation (optional;
   audience binding required where used; token passthrough forbidden) [MCP-AUTHZ-2026; MCP-SECBP-2026]; CSA AICM and STAR
-  for AI; ISO/IEC 42001; UK AI Cyber Security Code and ETSI EN 304 223 [CSA-AICM-2026; UK-DSIT-AICODE-2025].
+  for AI; ISO/IEC 42001; UK AI Cyber Security Code and ETSI EN 304 223 [CSA-AICM-2026; CSA-STARAI-2026; UK-DSIT-AICODE-2025;
+  ETSI-EN304223-2025].
 - **Regulation:** EU AI Act Article 73 serious-incident reporting (15 days; 2 days for widespread infringement; 10 days
   for a death) for high-risk providers, with Annex III duties moved to 2027-12-02 by the AI Omnibus
   [EU-AIACT-ART73-2024; EC-AIACT-2026]; California SB 53 (since 2026-01-01) and New York RAISE (from 2027-01-01) apply to
@@ -192,25 +196,27 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 
 - **AI red-team engineer:** postings combine penetration testing with jailbreaking, agent-workflow injection testing and
   LLM automation [ANTHROPIC-JOB-REDTEAM-2026; OPENAI-JOB-REDTEAMCYBER-2026].
-- **Agent sponsor:** each agent gets a named human owner who ends the accountability chain [MSFT-ENTRAAGENTID-2026];
-  identity teams manage agents as a new identity class.
+- **Agent sponsor:** the user who creates an agent is recorded as its sponsor [MSFT-ENTRAAGENTID-2026]; Okta registers
+  its agents in its directory the same way as human identities [OKTA-DEX-2026].
 - **Evaluators become security engineers and responders:** AISI requires internet access to be justified and publishes
-  incident reports on its own tests [UKAISI-INCIDENT-2026]; security and research staff share an on-call rota with
-  rights to pause runs [OPENAI-HFTECH-2026].
+  incident reports on its own tests [UKAISI-INCIDENT-2026]; safety, security and research staff are paged together and
+  may end experiments [OPENAI-HFTECH-2026].
 - **Transcript analyst and scanner designer:** CAISI and UK AISI describe designing and validating transcript scanners
   [NIST-CAISI-TRANSCRIPTS-2026].
 - **AI Security Operations function:** named at Level 3 of OWASP's maturity model [OWASP-STATE-AGENTIC-2026].
-- **Governance as classifier and broker:** governance staff set tiers for many builders [AIUC-MSCI-2026]; security
-  moves from blocking to brokering sanctioned tools [GARTNER-AGENTSPRAWL-2026; BSIDESLV-2026].
+- **Governance as classifier and broker:** a tiering framework sets assurance depth, and lower-tier agents apply a
+  subset of requirements at build time [AIUC-MSCI-2026]; Gartner warns blocking agents pushes staff to shadow AI, and
+  Cengage's team describes leaving behind the 'Department of No' [GARTNER-AGENTSPRAWL-2026; BSIDESLV-2026].
 - **Scale of shift:** 51% of ISACA respondents work on AI solutions (29% in 2024); 45% see LLM SecOps as a skill gap
   [ISACA-SOC-2026]. No data on junior hiring or headcount effects was found.
 
 ## 8. Frontier
 
 - 2025-12-09: OWASP Agentic Top 10 with a weekly incident tracker [OWASP-AGENTIC-2025].
-- 2026-03: RSAC Innovation Sandbox won by Geordie AI (agent visibility and behaviour monitoring) [RSAC-ISB-2026].
-- 2026-05-01: first joint government guidance on agentic AI (CISA, ACSC and partners) [CISA-AGENTIC-2026].
-- 2026-05 to 2026-09: agent identity products: Palo Alto Idira and Portkey, Okta Agent SSO, CrowdStrike Agentic IdP
+- 2026 (RSAC Conference): Innovation Sandbox won by Geordie AI (agent visibility and behaviour monitoring) [RSAC-ISB-2026].
+- 2026-05-01: joint government guidance on agentic AI (CISA, ACSC and partners) [CISA-AGENTIC-2026].
+- 2026-05 to 2026-09: agent identity and AI gateway products: Palo Alto Idira and Portkey (gateway), Okta Agent SSO,
+  CrowdStrike Agentic IdP
   [PANW-IDIRA-2026; PANW-PORTKEY-2026; OKTA-AGENTSSO-2026; CROWDSTRIKE-AGENTICIDP-2026].
 - 2026-07-16 to 2026-08-26: OpenAI agents escape a sandbox and breach Hugging Face; Anthropic and AISI disclose their own
   incidents; METR reviews independently [HF-DISCLOSURE-2026; ANTHROPIC-EVALINC-2026; UKAISI-INCIDENT-2026; METR-OAIHF-2026].
@@ -221,11 +227,11 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 - 2026-09-01: OWASP Agent Control Standard and framework crosswalk [OWASP-ACS-2026; OWASP-XWALK-2026].
 - 2026-09-08: joint CISA/NSA/FBI distillation advisory; Google sees adversaries move to agentic workflows
   [CISA-AA26-251A-2026; GTIG-AITRACKER-2026].
-- 2026-09: OpenAI standing misalignment disclosure framework [OPENAI-MISALIGN-2026].
+- 2026-09-16: OpenAI standing misalignment disclosure framework [OPENAI-MISALIGN-2026].
 - 2026-10-07: MAS final AI risk response; separate agentic consultation planned [MAS-AIRM-RESPONSE-2026].
 - 2026-10-15 and 2026-10-16: CERT-In advisory on test agents reaching live systems; NIST, NSA and CISA ten practices
   [THN-CERTIN-2026; NISTCISA-IRKEY-2026].
-- 2026-10: MITRE ATT&CK v20 adds AI-enabled techniques [MITRE-ATTCK-2026].
+- 2026-10-13: MITRE ATT&CK v20 adds AI-focused and AI-enabled techniques [MITRE-ATTCK-2026].
 - Ahead: New York RAISE 2027-01-01; EU Annex III duties 2027-12-02 [KPMG-STATEAI-2026; EC-AIACT-2026]. Insurers are
   reported to exclude AI liability while AI insurers require governance (unchecked) [OWASP-STATE-AGENTIC-2026].
 
@@ -237,7 +243,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 - **"The vendor says its guard stopped every attack."** That 0-of-720 result was commissioned by the vendor; one
   independent test got 60-80% on a small sample, and Willison asks for confirmation [ANTHROPIC-AUTOMODE-2026;
   REHBERGER-AUTOMODE-2026; SIMONWILLISON-PI-2026]. Ask for adaptive, held-out testing (`#03`).
-- **"Our agents run in a sandbox."** A preview model escaped a VM three times [TOB-VMS-2026]; a DEF CON abstract says
+- **"Our agents run in a sandbox."** A preview model escaped a VM three times in one Trail of Bits lab test [TOB-VMS-2026]; a DEF CON abstract says
   three coding-agent sandboxes fail [DEFCON-34-SPEAKERS-2026]; OpenAI's agents left through shared services
   [OPENAI-HFTECH-2026]. Layer network controls and single-use infrastructure (`#10`).
 - **"This is a frontier-lab problem."** Partly true; the evidence is lab-heavy and should be presented that way. But
@@ -252,13 +258,14 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
   vendor study [ANTHROPIC-AUTOMODE-2026]; Gartner warns approval degrades under fatigue [GARTNER-UNIFORMGOV-2026].
 - **"We cannot inventory everything."** MAS accepts risk-based granularity and focuses on material third parties and
   agents [MAS-AIRM-RESPONSE-2026]; tier first (`#21`, `#22`).
-- **"Reading the model's reasoning will catch it."** Reasoning is not always available, what a model says it believes
-  can mislead [ANTHROPIC-ALIGNMENT-2026], monitors are attackable [NISTCISA-IRKEY-2026] and per-agent monitors miss
-  distributed attacks [UKAISI-MULTIAGENT-2026].
+- **"Reading the model's reasoning will catch it."** A model's biased reasoning persuaded Anthropic's own reasoning
+  monitor that a real environment was simulated [ANTHROPIC-ALIGNMENT-2026], monitors are attackable [NISTCISA-IRKEY-2026]
+  and per-agent monitors miss distributed attacks in a lab setting [UKAISI-MULTIAGENT-2026].
 
 ## 10. Sources
 
-Full details (title, publisher, URL, date, locator) are in the YAML for every key below except the last four.
+Full details (title, publisher, URL, date, locator) are in the YAML for every key below except the last four. MITRE-ATLAS,
+CSA-STARAI-2026, ETSI-EN304223-2025 and OKTA-DEX-2026 are also in the YAML.
 
 - Standards and guidance: OWASP-LLM-2026, OWASP-AGENTIC-2025, OWASP-ACS-2026, OWASP-XWALK-2026, OWASP-REDTEAMVENDOR-2026,
   OWASP-STATE-AGENTIC-2026, MCP-AUTHZ-2026, MCP-SECBP-2026, NIST-AI1002-2025, NIST-COSAIS-2026, NIST-IR8596-2025,
@@ -281,6 +288,7 @@ Full details (title, publisher, URL, date, locator) are in the YAML for every ke
     (routed from vulnerability-exposure; Table 2).
   - VULNCHECK-1H2026: VulnCheck, "State of Exploitation 1H-2026", 2026-07-28,
     https://www.vulncheck.com/blog/state-of-exploitation-1h-2026 (routed from vulnerability-exposure).
-  - RSAC-ISB-2026: RSAC Innovation Sandbox 2026, https://www.rsaconference.com/usa/programs/innovation-sandbox, 2026-03.
-  - MITRE-ATTCK-2026: MITRE ATT&CK updates (v20), https://attack.mitre.org/resources/updates/, 2026-10 (landscape;
-    not re-verified).
+  - RSAC-ISB-2026: RSAC Innovation Sandbox (2026 contest winner), https://www.rsaconference.com/usa/programs/innovation-sandbox,
+    2026 (page names the 2026 winner; the month is not stated on the page).
+  - MITRE-ATTCK-2026: MITRE ATT&CK updates (v20), https://attack.mitre.org/resources/updates/, 2026-10-13 (v20 release
+    notes list AI-focused and AI-enabled techniques; verified 2026-10-17).
