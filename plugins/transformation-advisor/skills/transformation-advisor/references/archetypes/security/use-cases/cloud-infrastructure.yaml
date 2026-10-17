@@ -58,18 +58,17 @@
     - "A written definition of an exploitable path that engineering accepts"
     - "For Microsoft's preview agent: Microsoft 365 E5 among other prerequisites (MSFT-LEARN-PPA-2026)"
   risks_and_guardrails:
-    - "A context filter can hide findings that become exploitable later; the vendor sells the filter and also reports its value, and no independent measurement was found (WIZ-CLOUDRISK-2026)."
+    - "Wiz both sells the context filter and reports its value; the blog gives no count of removed findings that later proved exploitable, and no independent measurement was found (WIZ-CLOUDRISK-2026)."
     - "In preview the Microsoft agent is read-only (MSFT-LEARN-PPA-2026)."
     - "AWS's Deception Benchmark found models flagged code next to a Kubernetes NetworkPolicy that made it unexploitable, and none kept both false positives and false negatives under 10%; it tests code, not posture findings, so treat it as a caution about environment-aware reasoning (AWS-DECEPTION-2026)."
     - "Latio's founder calls runtime-first designs 'the patchwork thing' and argues for posture and blast-radius limits instead (RESILIENTCYBER-LATIO-2026)."
     - "Filtering studies report scores on test sets, not miss rates in production (ARXIV-2601.14595)."
   human_checkpoints:
-    - "Engineers confirm exploitability and accept or reject the ticket (CSA-AISTORM-2026)"
+    - "Findings reach engineering only after a multi-stage validation pipeline confirms exploitability (CSA-AISTORM-2026)"
     - "The agent produces a plan; people decide and act (MSFT-LEARN-PPA-2026)"
   role_evolution: >-
-    Security staff move from sorting severity lists to defining what counts as a reachable path and reviewing exceptions;
     SACR frames success as measurable reductions in exposure, investigation time and recurring remediation work
-    (SACR-ACSP-2026). Microsoft says its agent gives the rationale, evidence and cost of not acting so teams can justify
+    (SACR-ACSP-2026). Microsoft says its agent gives the rationale, evidence and impact of not acting so teams can justify
     priorities to stakeholders (MSFT-LEARN-PPA-2026).
   evidence_grade: C
   sources:
@@ -163,7 +162,7 @@
   risks_and_guardrails:
     - "ZS limited automatic closure to a defined set of low-severity cloud detections (WIZ-ZS-2026)."
     - "Independent evidence on LLM triage generally is less favourable: in ALERT-BENCH every tool-using approach tested missed at least 40.4% of attack-related alerts across 1,247 alerts from one multi-stage scenario; the study did not test the Blue Agent (ARXIV-2610.10608)."
-    - "In Cotool's end-to-end cloud scenario, five of seven frontier models run unharnessed in Cursor graded the real intrusion alert a false or benign positive (COTOOL-AGENTICSOC-2026)."
+    - "In an end-to-end cloud intrusion scenario published on unsecure.sh, five of seven frontier models run unharnessed in Cursor graded the real intrusion alert a false or benign positive (UNSECURE-EVAL-2026)."
     - "On SecRespond, 23 frontier models were tested on 10 ranges built from compromised cloud hosts and no model achieved complete detection and remediation on any single range (ARXIV-2607.26791)."
     - "Log content is attacker-controlled: with gpt-4o-mini as the analyst, persona-hijack prompts suppressed 68% of malicious logs under a naive classifier (ARXIV-2605.24421)."
     - "Wiz says the Blue Agent shows the questions asked, data retrieved and how each signal shaped the verdict, so analysts can audit it (WIZ-BLUEAGENT-GA-2026)."
@@ -174,7 +173,7 @@
     Work moves from alert queues to exception review: ZS says analysts without deep cloud experience can read the verdict
     and evidence, and analyst time shifts to advanced investigations, threat hunting and security initiatives
     (WIZ-ZS-2026).
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - {ref: WIZ-ZS-2026, title: "How ZS Operationalized Blue Agent-Powered Cloud Detection and Response (customer story; page undated, retrieved 2026-10-17)", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/customers/zs-blue-agent", date: "2026", access: full, locator: "Headline results; 'Earning Trust Before Automation'; 'From Alert Queues to Exception Reviews'"}
     - {ref: WIZ-RUNTIME-2026, title: "FAQs from the Field: Is Wiz a Runtime Security Tool?", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/is-wiz-a-runtime-security-tool", date: "2026-07-06", access: full, locator: "'What this looks like with our customers' (Redis)"}
@@ -183,16 +182,18 @@
     - {ref: WIZ-BLUEAGENT-CASE-2026, title: "How Wiz's Blue Agent Traced a Multi-Cloud Attack", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation", date: "2026-09-29", access: full, locator: "Phases 1 to 4 of the worked investigation"}
     - {ref: ORCA-AGENTIC-2026, title: "Introducing the Agentic Cloud Security Platform", publisher: "Orca Security", type: vendor, url: "https://orca.security/resources/blog/introducing-agentic-cloud-security-platform/", date: "2026-03-18", access: full, locator: "'What we're building: Agentic AI for CNAPP'; 'Transparency builds trust'"}
     - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract"}
-    - {ref: COTOOL-AGENTICSOC-2026, title: "A scenario to evaluate your Agentic SOC", publisher: "Cotool (via unsecure.sh)", type: vendor, url: "https://unsecure.sh/blog/agentic-soc-scenario/", date: "2026-08-27", access: full, locator: "'How well do off-the-shelf agents perform?'"}
+    - {ref: UNSECURE-EVAL-2026, title: "A scenario to evaluate your Agentic SOC (John Ao and Michel San, builders of the Tengu harness)", publisher: "unsecure.sh", type: vendor, url: "https://unsecure.sh/blog/agentic-soc-scenario/", date: "2026-08-27", access: full, locator: "'How well do off-the-shelf agents perform?'"}
     - {ref: ARXIV-2607.26791, title: "SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response (arXiv preprint, abstract read)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.26791", date: "2026-07-29", access: full, locator: "Abstract"}
     - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged: practice 02 and discourse 03; the SecRespond benchmark from governance 09 (routed to incident-response) is
-    kept as a caution. Grade A rests on ZS's figure, which the page attributes to ZS's own three-month validation with an
-    internal framework (a tracked metric, not a rough recollection); borderline, because it is quoted with 'around' on a
-    vendor-hosted, undated page and the method is not published. Owkin's '10 out of 10' is a recollection and the ZS
-    speed and throughput figures are vendor headlines. No independent measurement of any cloud-security agent was found.
+    kept as a caution. Grade B under the 2026-10-17 grade A rule (verification, 2026-10-17): ZS has not published the
+    figure itself. It reaches us only as its director's spoken 'around 95.17%' on an undated Wiz page; the 'internal
+    framework' and 'self-validated' wording is Wiz's narration, and case count, accuracy definition, period and handling
+    of disagreements are not given. Redis's 85.7% is likewise relayed by Wiz. Owkin's '10 out of 10' is a recollection
+    and the ZS speed and throughput figures are vendor headlines. No independent measurement of any cloud-security agent
+    was found.
     Related: security-operations-05, -06 and -21 (SOC-wide triage and measuring SOC AI); response actions by verdict
     overlap security-operations-19 and security-incident-response-11.
 
@@ -248,7 +249,7 @@
     - "WRITER's first version said 'triage this' without evidence and produced confident, plausible and often wrong answers; it now requires evidence before a decision: no 'resolve now' without confirmed exposure, no 'defer' without confirmed mitigation, no 'ticket' without an owner (WRITER-CEREBRO-2026)."
     - "Anything that touches IAM or a network boundary requires human approval, deterministic checks run before any downstream action, and missing evidence produces needs_human_review rather than a guess (WRITER-CEREBRO-2026)."
     - "Write-back access widens the agent's permissions, and the Cohere story gives no error or override rate (WIZ-COHERE-2026)."
-    - "Practitioners on Hacker News questioned agents that need privileges beyond read-only; some preferred routing every change through infrastructure-as-code pull requests (HN-DATAFRUIT-2025)."
+    - "On Hacker News a commenter said such an agent needs IAM permissions that are 'not read-only'; the vendor's founders replied that every potentially destructive change goes through IaC for a human to apply (HN-DATAFRUIT-2025)."
   human_checkpoints:
     - "Cohere analysts start from a populated incident report and a tracked ticket, then handle remediation and escalation (WIZ-COHERE-2026)"
     - "WRITER: human approval for IAM and network-boundary changes and high-risk actions; analyst override rate is tracked (WRITER-CEREBRO-2026)"
@@ -346,7 +347,7 @@
   outcomes:
     - lever: risk
       description: "Failure episodes despite a correctly labelled read-only permission set"
-      figure: "4 failures in about a year"
+      figure: "4 failures in more than a year of operation"
       measures: "speaker's count in the abstract: read access reached secret material through pod specs and logs; an audit-log line could not be attributed to the agent or a human; the model sometimes guessed a cluster-name parameter; one investigation over-fetched until it hit its own resource ceiling"
       provenance: self-reported
       source_ref: FWDCLOUDSEC-RAJI-2026
@@ -367,8 +368,8 @@
   human_checkpoints:
     - "The agent never writes to a cluster; engineers receive the triage and act (FWDCLOUDSEC-RAJI-2026)"
   role_evolution: >-
-    On-call engineers get a first pass, and platform and security reviewers must now check an agent's reach, identity and
-    cost, not only whether it can write (FWDCLOUDSEC-RAJI-2026).
+    The speaker's lesson is that reviewers who approve such agents must check their reach, identity and cost, not only
+    whether they can write (FWDCLOUDSEC-RAJI-2026).
   evidence_grade: C
   sources:
     - {ref: FWDCLOUDSEC-RAJI-2026, title: "What We Learned Giving an AI Agent Read Access to Our Whole Kubernetes Fleet (Amine Raji)", publisher: "fwd:cloudsec Europe 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-europe-2026/talk/TN9SP9/", date: "2026-09-08", access: full, locator: "Talk abstract and speaker bio (talk not viewed)"}
@@ -404,11 +405,11 @@
     Terraform template; Wiz says routing can take longer than the fix (WIZ-PILLAR2-2026). La Centrale's three-person
     security team had to correlate network exposure, IAM permissions and data sensitivity by hand (WIZ-LACENTRALE-2026).
   solution: >-
-    Wiz's Green Agent builds ownership from a service catalog, project and resource tags, cloud event logs, CODEOWNERS
-    and git blame, traces an issue to its root cause, returns a Remediate or Ignore verdict with a confidence score and
-    drafts CLI, Terraform or Kubernetes changes; steps that could affect availability are marked Suggested or Optional
-    with restore instructions, and teams can open pull requests or hand the fix to a coding agent (WIZ-GREEN-2026;
-    WIZ-OPMODEL-2026). Orca's Green Pod works out who owns a finding and drafts the fix in the team's usual format
+    Wiz's Green Agent suggests an owner from a service catalog, project and resource tags, cloud event logs, CODEOWNERS
+    and git blame (WIZ-PILLAR2-2026), traces an issue to its root cause, returns a Remediate or Ignore verdict with a
+    confidence score and drafts CLI, Terraform or Kubernetes changes; steps that could affect availability are marked
+    Suggested or Optional with restore instructions, and teams can open pull requests or hand the fix to a coding agent
+    (WIZ-GREEN-2026; WIZ-OPMODEL-2026). Orca's Green Pod works out who owns a finding and drafts the fix in the team's usual format
     (ORCA-AGENTPODS-2026). CrowdStrike announced AI-enhanced remediation plans in Falcon Cloud Security with time
     estimates, confidence indicators, permission needs and a validation check (CROWDSTRIKE-CLOUDREM-2026). La Centrale is
     running a proof of concept to automate Jira ticket generation with tailored remediation blueprints
@@ -427,7 +428,7 @@
       provenance: vendor-published
       source_ref: WIZ-PILLAR2-2026
   prerequisites:
-    - "Ownership data: tags, code-to-cloud mapping, service catalog, CODEOWNERS or CMDB, and cloud event logs for creator attribution (WIZ-GREEN-2026; WIZ-WORKFLOWS-2026)"
+    - "Ownership data: tags, code-to-cloud mapping, service catalog, CODEOWNERS or CMDB, and cloud event logs for creator attribution (WIZ-PILLAR2-2026; WIZ-WORKFLOWS-2026)"
     - "Source repositories and ticketing connected to the platform"
     - "Engineering buy-in: project44 ran an engineering-wide enablement session on fixing findings with the platform (WIZ-PROJECT44-2026)"
   risks_and_guardrails:
@@ -435,7 +436,7 @@
     - "Wiz says teams can set, per workflow, whether agents make routine remediations autonomously or need human approval on sensitive systems (WIZ-FORGOV-2026)."
     - "Remediation steps can go straight to developers or their coding agent, so the review burden moves to the owning engineering team (WIZ-OPMODEL-2026)."
   human_checkpoints:
-    - "Teams assign the issue and review pull requests before merge (WIZ-GREEN-2026)"
+    - "Teams assign the issue to the suggested owner and choose whether to open a pull request or send the fix to a coding agent (WIZ-GREEN-2026)"
     - "Approval for changes on sensitive systems (WIZ-FORGOV-2026)"
   role_evolution: >-
     project44's security operations manager compares the Green Agent to the velocity AI gave engineers, and the team
@@ -444,7 +445,7 @@
   evidence_grade: B
   sources:
     - {ref: WIZ-GREEN-2026, title: "Introducing the Green Agent: AI-Powered Remediation for the Cloud", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/introducing-wiz-green-agent", date: "2026-03-26", access: full, locator: "'Remediation at Machine Speed with the Green Agent'; 'From Issue to Action'"}
-    - {ref: WIZ-PILLAR2-2026, title: "AI Threat Readiness Pillar 2: Accelerate Patching and Response", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/ai-threat-readiness-pillar-2", date: "2026-06-09", access: full, locator: "'Why Accelerating Patching and Response is Crucial'; 'Expedite Response with Unified Ownership' (Rogo AI quote)"}
+    - {ref: WIZ-PILLAR2-2026, title: "AI Threat Readiness Pillar 2: Accelerate Patching and Response", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/ai-threat-readiness-pillar-2", date: "2026-06-09", access: full, locator: "'Why Accelerating Patching and Response is Crucial'; 'Expedite Response with Unified Ownership' (ownership sources; Rogo AI quote)"}
     - {ref: WIZ-PROJECT44-2026, title: "project44 Accelerates Cloud Remediation and Security Operations with Wiz AI Agents (customer story; page undated, retrieved 2026-10-17)", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/customers/project44", date: "2026", access: full, locator: "Results; 'Scaling Secure Development with the Green Agent'"}
     - {ref: WIZ-LACENTRALE-2026, title: "From Alert Overload to Developer Ownership: How La Centrale Built a Top-Ranked Cloud Security Culture (customer story; page undated, retrieved 2026-10-17)", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/customers/lacentrale", date: "2026", access: full, locator: "Section on AI triage and Green Agent proof of concept"}
     - {ref: WIZ-OPMODEL-2026, title: "Build AI Threat Readiness with Wiz", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/wiz-ai-threat-readiness-operating-model", date: "2026-05-27", access: full, locator: "Pillar 2, 'Fix fast with the Wiz Green Agent'"}
@@ -512,7 +513,7 @@
     - "Tested playbooks, an approval workflow and a guardrail layer that stops the same misconfiguration returning"
     - "Change rules expressed as executable predicates, and a refreshed graph of assets, dependencies and approvals (USENIX-PATCHWEAVER-2026)"
   risks_and_guardrails:
-    - "A fix that breaks production is why remediation stalls, per Tamnoon: in its illustration one of five buckets with the same HTTPS finding had 45 active HTTP calls in 90 days and was scored UNSAFE (TAMNOON-REMEDIATION-2026)."
+    - "Fear of breaking production is the main reason remediation stalls, per Tamnoon: in its illustration one of several buckets with the same HTTPS finding had 45 active HTTP calls in 90 days and was scored UNSAFE (TAMNOON-REMEDIATION-2026)."
     - "The Financial Times, as relayed by Tom's Hardware, reported a 13-hour December 2025 disruption of one service in parts of mainland China after an AI coding tool decided to erase the environment it was working on; the agents held the engineers' permissions and no second approval was needed. Amazon said it was user error, not AI error (TOMSHW-AWSKIRO-2026)."
     - "ENISA says critical providers may be forced into autonomous patching, at the risk of automated updates breaking systems, and verifying AI-generated patches may become a bottleneck (ENISA-FRONTIER-2026)."
     - "Joint agency guidance recommends human approval for high-stakes actions (CISA-AGENTIC-2026)."
@@ -538,7 +539,7 @@
   notes: >-
     Merged: discourse 05 (Tamnoon, Crossmint and Flywire) and governance 06 (idea: policy-bounded autonomous remediation).
     Grade C: a vendor's method description with no named customer, a conference abstract and a peer-reviewed prototype
-    (single author, small firm). Maturity piloting: the Crossmint and Flywire speakers say they built their own
+    (two authors at Dawn Computing). Maturity piloting: the Crossmint and Flywire speakers say they built their own
     auto-remediation, but the abstract does not say which employer runs it. Related: security-vulnerability-exposure-16
     (estate-wide agentic patching, idea) and security-incident-response-11 (guardrailed containment playbooks).
 
@@ -705,8 +706,8 @@
   human_checkpoints:
     - "The researcher decides what to publish after tests pass (FWDCLOUDSEC-ART-2026)"
   role_evolution: >-
-    Cloud penetration testers and researchers build validated discovery harnesses; the speaker previously led a cloud
-    penetration-testing practice, per the schedule's biography (FWDCLOUDSEC-ART-2026).
+    The speaker, who previously led a cloud penetration-testing practice per the schedule's biography, pairs AI discovery
+    with deterministic tests he wrote; no source describes a wider role change (FWDCLOUDSEC-ART-2026).
   evidence_grade: C
   sources:
     - {ref: FWDCLOUDSEC-ART-2026, title: "Discovering New AWS Privilege Escalation Paths with an AI-Driven Workflow (Seth Art, Datadog)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/Q9NXBS/", date: "2026-06-01", access: full, locator: "Abstract and speaker biography (talk not viewed)"}
@@ -883,8 +884,8 @@
     context-aware tuning inside a human-in-the-loop pipeline, aiming to shorten the path from vulnerability disclosed to
     fleet protected without a WAF expert in every product team (FWDCLOUDSEC-ALIM-2026). Vendor: Palo Alto Networks
     announced Frontier Virtual Patching, network-level patches delivered through its Frontier AI Critical Defense
-    Program (2026-08-19) (PANW-FRONTIERCDP-2026), and a collaboration with IBM and Red Hat that plans same-day network
-    protection for newly discovered flaws (2026-06-24) (PANW-LIGHTWELL-2026).
+    Program (2026-08-19) (PANW-FRONTIERCDP-2026), and a collaboration with IBM and Red Hat under which network-level
+    protections for a newly discovered flaw can be deployed the same day (2026-06-24) (PANW-LIGHTWELL-2026).
   outcomes:
     - lever: speed
       description: "Claim in the Adobe manager's talk abstract"
@@ -905,7 +906,8 @@
     - "IBM Security Services can help customers prioritise, deploy and validate protections (PANW-LIGHTWELL-2026)"
   role_evolution: >-
     The abstract frames the AI as a teammate that needs supervision, clear trust boundaries and a good memory of what
-    normal looks like; the WAF engineer's work shifts towards reviewing generated rules (FWDCLOUDSEC-ALIM-2026).
+    normal looks like, inside a human-in-the-loop pipeline, without a WAF expert in every product team
+    (FWDCLOUDSEC-ALIM-2026).
   evidence_grade: C
   sources:
     - {ref: FWDCLOUDSEC-ALIM-2026, title: "The Tireless Guardian: Agentic AI and the Art of WAF at Scale (Ammar Alim, Adobe)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/XEMZWB/", date: "2026-06-01", access: full, locator: "Talk abstract and speaker bio (talk not viewed)"}
@@ -1007,8 +1009,8 @@
     - "The change board signs the change; FwChange argues it needs independent impact evidence (FWCHANGE-VENDORAI-2026)"
     - "Human approval or a policy-based check before an AI-initiated network change (NIST-IR8596-2025)"
   role_evolution: >-
-    FwChange sees firewall engineers moving from writing rules to specifying intent and deciding what counts as
-    independent evidence of impact (FWCHANGE-VENDORAI-2026).
+    FwChange argues vendor AI fits drafting rules and spotting duplicates, while the impact statement for the change board
+    and post-change verification need an independent check that the change policy should name (FWCHANGE-VENDORAI-2026).
   evidence_grade: C
   sources:
     - {ref: FWCHANGE-VENDORAI-2026, title: "Your Firewall Vendor's AI Now Grades Its Own Changes. That Is Why Few Use It Daily", publisher: "FwChange", type: vendor, url: "https://fwchange.com/blog/vendor-ai-firewall-change-impact-analysis/", date: "2026-10-01", access: full, locator: "Vendor table; 'Why aren't customers using the AI they already bought?'"}
@@ -1036,7 +1038,7 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: >-
-    Coding agents run with the developer's own permissions; users hand approvals to classifiers or switch them off with
+    Coding agents act on privileged developer endpoints; users hand approvals to classifiers or switch them off with
     flags such as --dangerously-skip-permissions, and an agent can cause an incident without any malicious input
     (PERPLEXITY-NUMBAT-2026). SACR says EDR (endpoint detection and response) sees processes and files, but the risky
     action is now a plain-language instruction carried out above the operating system (SACR-ECP-2026).
@@ -1068,8 +1070,9 @@
   human_checkpoints:
     - "Rule changes the agent proposes go through human-reviewed pull requests (PERPLEXITY-NUMBAT-2026)"
   role_evolution: >-
-    Endpoint security teams add agent-harness telemetry and rule writing to EDR work; SACR expects EDR to extend into
-    agent, browser and data controls rather than be replaced (SACR-ECP-2026).
+    At Perplexity the security team adds its own Numbat rules and reviews detection changes an agent proposes
+    (PERPLEXITY-NUMBAT-2026); SACR expects EDR to extend into agent, browser and data controls rather than be replaced
+    (SACR-ECP-2026).
   evidence_grade: B
   sources:
     - {ref: PERPLEXITY-NUMBAT-2026, title: "Securing agents across Perplexity's client endpoints with Numbat", publisher: "Perplexity Secure Intelligence Institute", type: firm, url: "https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat", date: "2026-07-29", access: full, locator: "'Introduction'; 'Managing and monitoring Numbats across the fleet'"}
@@ -1147,11 +1150,11 @@
   maturity: emerging
   problem: >-
     Detection engineers must write and maintain rules across cloud, endpoint and identity telemetry as threats change
-    (WIZ-JOB-CLOUDDET-2026). A Sigma rule for AWS IAM privilege escalation sat in a production SIEM for nine months
+    (WIZ-JOB-CLOUDDET-2025). A Sigma rule for AWS IAM privilege escalation sat in a production SIEM for nine months
     without firing because it referenced a CloudTrail field that does not exist (FWDCLOUDSEC-GOWTHAM-2026).
   solution: >-
     A Wiz posting for a cloud threat detection researcher lists using AI and LLM-driven tools to enhance detection
-    generation and telemetry analysis (WIZ-JOB-CLOUDDET-2026); a Cloudflare network security engineer posting lists
+    generation and telemetry analysis (WIZ-JOB-CLOUDDET-2025); a Cloudflare network security engineer posting lists
     generative AI for log analysis and root-cause analysis during incidents (CLOUDFLARE-JOB-NETSEC-2026). A Meta threat
     detection engineer (per the speaker biography) ran an open-source analyser over public cloud rules, checking field
     names against 400+ validated CloudTrail log schemas, testing logic against realistic attack variants and flagging
@@ -1171,16 +1174,16 @@
     - "Pinterest's security operations posting asks engineers to apply AI while defining validation, data-handling and accountability practices (PINTEREST-JOB-SECOPS-2026)."
     - "Log content fed to an AI analyst is attacker-controlled input (ARXIV-2605.24421)."
   human_checkpoints:
-    - "Detection researchers own and review rules (WIZ-JOB-CLOUDDET-2026)"
+    - "Detection researchers own and review rules (WIZ-JOB-CLOUDDET-2025)"
   role_evolution: >-
-    The Wiz posting makes LLM tool use part of the researcher's job (WIZ-JOB-CLOUDDET-2026), and detection engineering
+    The Wiz posting makes LLM tool use part of the researcher's job (WIZ-JOB-CLOUDDET-2025), and detection engineering
     borrows application-code testing discipline for rules (FWDCLOUDSEC-GOWTHAM-2026).
   evidence_grade: C
   sources:
-    - {ref: WIZ-JOB-CLOUDDET-2026, title: "Threat Detection Researcher (Cloud)", publisher: "Wiz (Greenhouse job board)", type: job-posting, url: "https://www.wiz.io/careers/job/4566780006/:title?gh_jid=4566780006", date: "2026-08-19", access: full, locator: "Responsibilities list"}
+    - {ref: WIZ-JOB-CLOUDDET-2025, title: "Threat Detection Researcher (Cloud) (Greenhouse first_published 2025-06-08; version read updated 2026-08-19)", publisher: "Wiz (Greenhouse job board)", type: job-posting, url: "https://www.wiz.io/careers/job/4566780006/:title?gh_jid=4566780006", date: "2025-06-08", access: full, locator: "Responsibilities list"}
     - {ref: CLOUDFLARE-JOB-NETSEC-2026, title: "Network Security Engineer", publisher: "Cloudflare (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8081027?gh_jid=8081027", date: "2026-07-24", access: full, locator: "Responsibilities: generative AI for log analysis and root-cause analysis"}
     - {ref: FWDCLOUDSEC-GOWTHAM-2026, title: "Schrodinger's Detection: Finding the 'Zombie' Rules in Your SIEM (Gowthamaraj Rajendran, Meta)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/7LUWPZ/", date: "2026-06-02", access: full, locator: "Abstract (talk not viewed)"}
-    - {ref: PINTEREST-JOB-SECOPS-2026, title: "Sr. Security Software Engineer, Security Operations", publisher: "Pinterest (Greenhouse job board)", type: job-posting, url: "https://www.pinterestcareers.com/jobs/?gh_jid=8230778", date: "2026-10-01", access: full, locator: "Responsibilities"}
+    - {ref: PINTEREST-JOB-SECOPS-2026, title: "Sr. Security Software Engineer, Security Operations", publisher: "Pinterest (Greenhouse job board)", type: job-posting, url: "https://www.pinterestcareers.com/jobs/?gh_jid=8230778", date: "2026-10-01", access: full, locator: "Responsibilities (careers page blocked; read through the Greenhouse boards API)"}
     - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -1267,7 +1270,8 @@
   human_checkpoints:
     - "Canary hits go to the normal detection and response queue; the abstract does not describe review steps"
   role_evolution: >-
-    Detection engineers add deception and detectability scoring to their remit (FWDCLOUDSEC-BRUCATO-2026).
+    No source describes a role change; the abstract argues that benchmarks of AI attackers should measure detectability
+    and behaviour, not only compromise rates (FWDCLOUDSEC-BRUCATO-2026).
   evidence_grade: D
   sources:
     - {ref: FWDCLOUDSEC-BRUCATO-2026, title: "Lessons from benchmarking AI attackers in AWS (Alessandro Brucato, Tracebit)", publisher: "fwd:cloudsec Europe 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-europe-2026/talk/ZAWFW7/", date: "2026-09-08", access: full, locator: "Abstract (talk not viewed)"}
@@ -1373,7 +1377,7 @@
     (BLOCK-JOB-PLATSEC-2026).
   outcomes:
     - lever: capacity
-      description: "No figure for Databricks; CrowdStrike quotes a customer analyst on agent build time"
+      description: "No figure for Databricks; CrowdStrike cites an unnamed analyst's comparison of agent build time"
       figure: "6-8 hours in Microsoft Copilot vs 4 minutes in AgentWorks"
       measures: "one analyst's comparison of the time to build the same agent, as quoted by CrowdStrike; analyst and organisation not named"
       provenance: vendor-published
@@ -1396,7 +1400,7 @@
     - {ref: DATABRICKS-JOB-AGENTICSEC-2026, title: "Sr. Staff Security Software Engineer - Agentic Security Engineering", publisher: "Databricks (Greenhouse job board)", type: job-posting, url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8612865002", date: "2026-10-12", access: full, locator: "Team description and responsibilities"}
     - {ref: CROWDSTRIKE-AGENTWORKS-2026, title: "How AI-leading Security Teams Are Building the Agentic SOC", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/blog/how-ai-leading-security-teams-are-building-the-agentic-soc/", date: "2026-07-06", access: full, locator: "'The AgentWorks Advantage'; customer quotes"}
     - {ref: ROBINHOOD-JOB-SECENG-2026, title: "Senior Staff Security Engineer, Security Engineering", publisher: "Robinhood (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/robinhood/jobs/8167616", date: "2026-09-01", access: full, locator: "Opening paragraph and responsibilities"}
-    - {ref: BLOCK-JOB-PLATSEC-2026, title: "Senior Security Engineer, Platform Security", publisher: "Block (Greenhouse job board)", type: job-posting, url: "http://block.xyz/careers/jobs/5231316008?gh_jid=5231316008", date: "2026-06-02", access: full, locator: "Responsibilities and requirements"}
+    - {ref: BLOCK-JOB-PLATSEC-2026, title: "Senior Security Engineer, Platform Security", publisher: "Block (Greenhouse job board)", type: job-posting, url: "http://block.xyz/careers/jobs/5231316008?gh_jid=5231316008", date: "2026-06-02", access: full, locator: "Responsibilities and requirements (careers page timed out; read through the Greenhouse boards API)"}
     - {ref: CLOUDFLARE-JOB-VM-2026, title: "Vulnerability Management Engineer", publisher: "Cloudflare (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/7579269?gh_jid=7579269", date: "2026-02-05", access: full, locator: "Responsibilities and requirements"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -1473,7 +1477,7 @@
     - lever: risk
       description: "none published"
       figure: "none published"
-      measures: "SACR states the named vendors are not claimed to deliver the full model today"
+      measures: "category definition only; SACR says its vendor landscape anchors the market 'not as a ranking' and gives no deployment results"
       provenance: vendor-published
       source_ref: SACR-ACSP-2026
   prerequisites:
@@ -1484,8 +1488,8 @@
   human_checkpoints:
     - "The 'escalate' outcome sends the action to a person; where that boundary sits was unresolved across CSA's summits (CSA-AISTORM-2026)"
   role_evolution: >-
-    SACR sees cloud security shifting from queue management to writing the policies that govern live decisions
-    (SACR-ACSP-2026).
+    SACR argues the centre of gravity has been scans, snapshots, graph analysis and remediation queues, and that the next
+    layer must govern live execution decisions (SACR-ACSP-2026); it does not describe role changes.
   evidence_grade: D
   sources:
     - {ref: SACR-ACSP-2026, title: "Introducing a New Cloud Security Category: Agentic Cloud Security Platforms (ACSP)", publisher: "Software Analyst Cyber Research", type: firm, url: "https://softwareanalyst.substack.com/p/introducing-a-new-cloud-security", date: "2026-06-11", access: full, locator: "'Key Takeaways From The Report'"}

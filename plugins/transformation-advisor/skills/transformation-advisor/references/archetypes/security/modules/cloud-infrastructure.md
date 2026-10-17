@@ -4,9 +4,9 @@ Last reviewed 2026-10-17. Use cases live in `../use-cases/cloud-infrastructure.y
 here: `#05` means `security-cloud-infrastructure-05`. Source keys in brackets are in the YAML or in §10.
 Read this first: almost every outcome figure is **vendor-published** (Wiz, AWS, Tamnoon, CrowdStrike, Check Point) or
 **self-reported** by the deploying organisation; no independent measurement of any cloud-security agent exists, and
-the independent lab research is more cautious. Only 5 of 24 entries are graded A or B; the one A (`#02`) rests on a
-customer's own validation quoted on a vendor page. fwd:cloudsec talk abstracts (talks not viewed) support grade C at
-most. Say "vendor claim" whenever you quote a vendor figure.
+the independent lab research is more cautious. Only 5 of 24 entries are graded B and none A: ZS's figure (`#02`) is a
+customer's spoken account on an undated vendor page with no published method. fwd:cloudsec talk abstracts (talks not
+viewed) support grade C at most. Say "vendor claim" whenever you quote a vendor figure.
 
 ## Contents
 
@@ -26,8 +26,8 @@ most. Say "vendor claim" whenever you quote a vendor figure.
 Securing cloud accounts and workloads (posture management, runtime detection and response, Kubernetes), cloud
 identities and permissions, infrastructure as code (IaC: cloud resources defined in files such as Terraform), network
 and edge policy (firewalls, WAFs, egress) and endpoints, including developer machines that run coding agents. It is
-the team that owns the infrastructure layer; the 2026 agent incidents ran through exposed credentials and permissive
-cloud roles, which puts its egress and identity controls at the centre of agent isolation [CERTIN-CIAD0049-2026].
+the team that owns the infrastructure layer; the agent incidents CERT-In reported in 2026-10 ran through exposed
+credentials and permissive cloud roles, and it asks for per-run agent identities and default-deny egress [CERTIN-CIAD0049-2026].
 Boundaries: agent identity, containment and action logging are in ai-security (`security-ai-security-06`, `-10`,
 `-12`); the Wiz Red Agent perimeter agent is `security-vulnerability-exposure-21`; autonomous pentest agents such as
 AWS Security Agent are `security-vulnerability-exposure-17`; calibrated endpoint-triage classifiers (CrowdStrike) are
@@ -45,7 +45,7 @@ AWS Security Agent are `security-vulnerability-exposure-17`; calibrated endpoint
 | Preventive guardrails in IaC | Approved modules, policy as code, pipeline gates | software-systems | AI assistants write most IaC in many organisations (speaker claim) [FWDCLOUDSEC-RENGASAMY-2026]; LLM IaC has 3.21x-3.87x human vulnerability density [ARXIV-2608.28021] |
 | Runtime detection and investigation | Cloud and Kubernetes alerts, verdicts, containment | transaction-processing, research-synthesis | About 2% of cloud alerts actionable at WRITER [WRITER-CEREBRO-2026]; runtime noise [AWS-GUARDDUTY-ETD-2026] |
 | Network and edge policy | Firewall rules, WAF virtual patches, segmentation | software-systems, review-assurance | Rulebases drift between review cycles [CHECKPOINT-AGENTICNET-2026]; 43-day median patch time cited [FWDCLOUDSEC-ALIM-2026] |
-| Endpoint protection | EDR (endpoint detection and response) policy, developer endpoints | software-systems, expert-judgment | Coding agents run with the developer's permissions [PERPLEXITY-NUMBAT-2026] |
+| Endpoint protection | EDR (endpoint detection and response) policy, developer endpoints | software-systems, expert-judgment | Coding agents act on privileged endpoints, approvals often skipped [PERPLEXITY-NUMBAT-2026] |
 | Detection engineering and validation | Write, test and retire cloud detection rules; attack simulation | software-systems, review-assurance | 1 in 3 of 2,000+ public cloud rules defective (speaker claim) [FWDCLOUDSEC-GOWTHAM-2026] |
 | Compliance and continuous authorisation | Evidence for FedRAMP-style regimes; policy as code | review-assurance, document-production | Point-in-time checks lag dynamic cloud [WIZ-FORGOV-2026] |
 
@@ -63,7 +63,7 @@ people keep merges, risky fixes and higher-severity verdicts; WRITER also reserv
 **Runtime detection and investigation**
 - Automate: `#02` an agent investigates cloud detections; ZS ran it in parallel with analysts for three months
   ("around 95.17%" agreement, its own validation), then let it close a defined set of low-severity alerts with an
-  end-of-shift human review. Redis: 85.7% accuracy over 431 cases (vendor-published). Grade A, borderline.
+  end-of-shift human review. Redis: 85.7% accuracy over 431 cases (vendor-published). Grade B: method unpublished.
 - Improve (process): `#03` in-house triage agents over posture findings: Cohere via an MCP server (attack-path
   analysis "up to 120 minutes to 20 seconds", vendor headline); WRITER's open-source Cerebro with evidence rules
   (grade B).
@@ -155,7 +155,7 @@ There are no entries for assist at process or model scope, or for automate or de
 
 | Metric | Figure | Source (provenance) |
 |---|---|---|
-| Agent verdict agreement, parallel run | about 95.17% over three months (ZS) | [WIZ-ZS-2026] (self-reported, vendor-hosted) |
+| Agent verdict agreement, parallel run | "around 95.17%" over three months (ZS) | [WIZ-ZS-2026] (customer quote on vendor page; method unpublished) |
 | Agent accuracy vs final dispositions | 85.7%; false negatives below 2%; 431 cases (Redis) | [WIZ-RUNTIME-2026] (vendor) |
 | Investigation speed and throughput | 80-90% faster verdicts; 4x throughput (ZS) | [WIZ-ZS-2026] (vendor headline) |
 | False-positive investigation time | 20-30 min to 5 min (Owkin) | [WIZ-OWKIN-2026] (vendor headline) |
@@ -171,7 +171,7 @@ There are no entries for assist at process or model scope, or for automate or de
 | Change-policy violations, prototype | 4.73% vs 9.95% of steps | [USENIX-PATCHWEAVER-2026] (independent) |
 | Long-lived keys; IMDSv2; public buckets | 59% of IAM users; 49% of EC2 enforce IMDSv2; about 1% of S3 | [DATADOG-SOCS-2025] (vendor telemetry) |
 | Cloud in incidents; preventable gaps | 20% of incidents; over 90% had gaps that enabled intrusion | [UNIT42-IR-2026] (vendor) |
-| Misconfiguration as intrusion vector | 20.7% where a vector was identified | [ENISA-ETL-2026] (independent) |
+| Misconfiguration or accidental exposure as vector | 20.7% of unauthorised-access incidents with an identified vector (5.2% had one) | [ENISA-ETL-2026] (independent) |
 | Agents exceeding permissions; unknown agents | 53% (n=445); 82% (n=418) | [CSA-AGENTSCOPE-2026], [CSA-UNKNOWNAGENTS-2026] (sponsor-funded) |
 
 What to measure with a client: share of findings with a confirmed owner; share investigated; time from finding to fix
@@ -211,8 +211,8 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 
 - **Analysts become exception reviewers.** ZS analysts review what the agent closed at the end of each shift; analysts
   without deep cloud experience can read its verdicts [WIZ-ZS-2026].
-- **Small teams cover large estates.** Owkin (three people, more than 50 AWS accounts) and La Centrale (three people,
-  more than 2,000 Lambda functions) credit graph context and AI-assisted triage [WIZ-OWKIN-2026, WIZ-LACENTRALE-2026].
+- **Small teams cover large estates.** Owkin (three people, more than 50 AWS accounts) credits Wiz's agents; La Centrale
+  (three people, more than 2,000 Lambda functions) credits graph context and developer ownership [WIZ-OWKIN-2026, WIZ-LACENTRALE-2026].
 - **Engineers fix rather than validate.** project44 ran an engineering-wide enablement session; developers get
   pre-filled tickets or pull requests [WIZ-PROJECT44-2026, WIZ-OPMODEL-2026].
 - **Reviewers of agents, not only answers.** Engineers check an agent's reach, identity and cost [FWDCLOUDSEC-RAJI-2026].
@@ -225,7 +225,7 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 - **Cloud security folds into infrastructure security.** A Datadog leader argues AI security will be absorbed the same
   way [FWDCLOUDSEC-GONDA-2026]; more CISOs own infrastructure teams [VENTUREINSEC-INFRA-2026].
 - **Talent market.** Forrester heard vendors still hire early-career staff, in fewer numbers [FORRESTER-RSAC-2026]. In a
-  10-month study, SOC analysts used LLMs for sensemaking, not high-stakes calls [IEEESP-LLMSOC-2026]. No source
+  10-month study, SOC analysts used LLMs for sensemaking, not high-stakes calls [ARXIV-2508.18947]. No source
   measures headcount change in cloud security.
 
 ## 8. Frontier
@@ -246,7 +246,7 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
   [CROWDSTRIKE-CLOUDREM-2026, WIZ-AISAST-2026].
 - 2026-10-12 and 10-14: GuardDuty attack sequences gain posture indicators; Wiz agents run inside FedRAMP High [AWS-GUARDDUTY-ETD-2026, WIZ-FORGOV-2026].
 - 2026-10-15: CERT-In advisory treats AI agents as attack vectors exploiting conventional cloud weaknesses
-  [CERTIN-CIAD0049-2026]; AWS publishes its audited 37-CVE agent benchmark [AWS-SECAGENT-2026].
+  [CERTIN-CIAD0049-2026]; AWS publishes its own 37-CVE agent benchmark (33 exploited) [AWS-SECAGENT-2026].
 
 ## 9. Common objections
 
@@ -259,8 +259,8 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 - **"An AI fix will break production."** Agents holding production permissions can: one reported AWS disruption
   followed an AI coding tool erasing its environment, though Amazon called it user error [TOMSHW-AWSKIRO-2026]. Use usage evidence and approval tiers (`#07`),
   dry runs and review limits (`#08`).
-- **"The scanner passes, so it is fixed."** Not reliable: 83.3% of repairs removed the targeted finding but 10.4%
-  were clean under a full scan [ARXIV-2606.26590].
+- **"The scanner passes, so it is fixed."** Not reliable: for the primary model, 83.3% of repairs removed the targeted
+  finding but 10.4% were clean under a full scan [ARXIV-2606.26590].
 - **"Attackers can't touch our AI."** Log fields are attacker-controlled; cloud providers' guardrails missed log-embedded
   injections [ARXIV-2604.15368, ARXIV-2605.24421]. Constrain what the model can trigger (`security-operations-19`).
 - **"Rule-based scanners already do this."** A founder of an AI DevOps product said he keeps rule-based scanners for
@@ -270,8 +270,8 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 - **"AI will only grow the backlog."** Tamnoon expects AI scanning to deepen configuration backlogs (vendor view)
   [TAMNOON-CORTEX-2026]; ask where findings wait today before adding discovery.
 - **"Containing our own agents is the AI team's job."** CERT-In's cases ran through exposed credentials and permissive
-  cloud roles, and the controls it asks for (per-run identity, network-enforced egress) sit in cloud infrastructure
-  [CERTIN-CIAD0049-2026] (`security-ai-security-10`).
+  cloud roles, and it asks organisations to give each agent run a short-lived identity and default-deny egress
+  [CERTIN-CIAD0049-2026]: identity and network controls (`security-ai-security-10`).
 
 ## 10. Sources
 
@@ -280,7 +280,7 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 - [THN-CERTIN-2026] The Hacker News, "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing", 2026-10-16. https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html
 - [CERTIN-CIAD0049-2026] CERT-In, "CIAD-2026-0049: AI Agents as Attack Vectors", regulator advisory, 2026-10-15. https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIAD-2026-0049&pageid=PUBVLNOTES02
 - [FINRA-ROR-2026] FINRA, "2026 Annual Regulatory Oversight Report: GenAI section", 2025-12-09. https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
-- [EBA-CTPP-2025] EBA, EIOPA and ESMA, "ESAs designate critical ICT third-party providers under DORA", 2025-11-18. https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital%5C
+- [EBA-CTPP-2025] EBA, EIOPA and ESMA, "ESAs designate critical ICT third-party providers under DORA", 2025-11-18 (the 19 names are in the linked list PDF). https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital
 - [EC-AIACT-2026] European Commission, "AI Act regulatory framework" page (undated; retrieved 2026-10-17). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - [PANW-DT-2026] Palo Alto Networks press release with Deutsche Telekom on sovereign security operations, 2026-06-09. https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-and-deutsche-telekom-bring-ai-driven-security-with-advanced-sovereignty-controls-for-european-regulated-industries
 - [UNIT42-IR-2026] Palo Alto Networks Unit 42, "2026 Global Incident Response Report", 2026-02 (month inferred). https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report
@@ -293,8 +293,8 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 - [FWDCLOUDSEC-GONDA-2026] Tim Gonda (Datadog), "Cloud Security Is Dead. Long Live Infrastructure Security.", abstract, 2026-09-08. https://pretalx.com/fwd-cloudsec-europe-2026/talk/M7LSGF/
 - [VENTUREINSEC-INFRA-2026] Venture in Security, "Infra + security: why more & more CISOs are starting to own infrastructure", 2026-04-28. https://ventureinsecurity.net/p/infra-security-why-more-and-more
 - [FORRESTER-RSAC-2026] Forrester, "RSAC 2026: An AI Coming-Of-Age Story Without The Romance", 2026-03-31. https://www.forrester.com/blogs/rsac-2026-an-ai-coming-of-age-story-without-the-romance
-- [IEEESP-LLMSOC-2026] "LLMs in the SOC: An Empirical Study of Human-AI Collaboration in Security Operations Centres", IEEE S&P 2026 (arXiv abstract), 2025-08-26. https://arxiv.org/abs/2508.18947
+- [ARXIV-2508.18947] "LLMs in the SOC: An Empirical Study of Human-AI Collaboration in Security Operations Centres", arXiv preprint (abstract; listed "under review"), 2025-08-26. https://arxiv.org/abs/2508.18947
 - [TOB-VMS-2026] Trail of Bits, "VMs won't contain cyber-capable agents", 2026-08-26. https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/
-- [OPENAI-HFTECH-2026] OpenAI, "OpenAI - Hugging Face Incident Technical Report", 2026-08-26. https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging%20Face%20Incident-Technical-Report.pdf
+- [OPENAI-HFTECH-2026] OpenAI, "OpenAI - Hugging Face Incident Technical Report", 2026-08-26. https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf
 - [WIZ-AISAST-2026] Wiz, "Wiz AI SAST: AI Code Security With Code-to-Cloud Context", 2026-10-06. https://www.wiz.io/blog/introducing-wiz-ai-sast
 - [AWS-SECAGENT-2026] AWS Security Blog, "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", 2026-10-15. https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/
