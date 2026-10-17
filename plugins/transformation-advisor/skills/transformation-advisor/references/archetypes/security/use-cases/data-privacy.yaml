@@ -527,7 +527,7 @@
     access: full
     locator: Comment 47265310
   last_reviewed: '2026-10-17'
-  notes: Marked 'announced' because no named organization using the control with measured results was found; the telemetry comes from unnamed customers of the vendors. The CSA figure is a survey of practitioners and is the only non-vendor measure here, but it is a self-report of capability, not an audit. Related entry in another module: security-human-risk-16 (shadow-AI visibility and point-of-risk coaching).
+  notes: Marked 'announced' because no named organization using the control with measured results was found; the telemetry comes from unnamed customers of the vendors. The CSA figure is a survey of practitioners and is the only non-vendor measure here, but it is a self-report of capability, not an audit. Related entry in another module is security-human-risk-16 (shadow-AI visibility and point-of-risk coaching).
 - id: security-data-privacy-09
   title: Discover shadow AI use and block or steer unsanctioned AI apps and personal accounts
   archetype: security
@@ -602,7 +602,7 @@
     access: full
     locator: Personal-account shares
   last_reviewed: '2026-10-17'
-  notes: Vendor telemetry without named customers, so 'announced' is the closest maturity value. Related entries in other modules, not duplicated here: security-ai-security-21 (inventory of AI use including shadow AI) and security-human-risk-16 (audit-and-educate coaching instead of blocking).
+  notes: Vendor telemetry without named customers, so 'announced' is the closest maturity value. Related entries in other modules, not duplicated here, are security-ai-security-21 (inventory of AI use including shadow AI) and security-human-risk-16 (audit-and-educate coaching instead of blocking).
 - id: security-data-privacy-10
   title: Assess and reduce oversharing before and during rollout of AI assistants over enterprise content
   archetype: security
@@ -1263,4 +1263,4 @@
     access: full
     locator: Tuesday 9:00 am 'Toward Provably Private Insights into AI Use'
   last_reviewed: '2026-10-17'
-  notes: Named deployment in a consumer app described in a conference abstract; deployment scale is not stated. Pattern 'other': private analytics, where an LLM interprets unstructured data inside an attested enclave and only differentially private aggregates leave it.
+  notes: Named deployment in a consumer app described in a conference abstract; deployment scale is not stated. Pattern 'other' means private analytics, where an LLM interprets unstructured data inside an attested enclave and only differentially private aggregates leave it.

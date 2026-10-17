@@ -9,14 +9,14 @@ that archetype's `ARCHETYPE.md`; it indexes its own files and modules.
 | Archetype | Extends | Recognition cues (match on what is delivered, to whom, and who regulates it) | Modules | Status |
 |---|---|---|---|---|
 | [assurance](assurance/ARCHETYPE.md) | professional-services | Audit opinions, SOC reports, attestation, sustainability assurance, assurance over AI; inspections and peer review; independence rules; "busy season", "workpapers", "sign the opinion". Also in-house internal audit and SOX teams | acceptance-independence · planning-risk-assessment · controls-testing · substantive-testing · specialists · completion-reporting · quality-management · soc-attestation · sustainability-assurance · assurance-over-ai | Available |
+| [tax](tax/ARCHETYPE.md) | professional-services | Returns (1040, 1065, 1120), K-1s, organizers, extension season; the provision (ASC 740, IAS 12) and Pillar Two; sales and use tax, VAT, e-invoicing; transfer pricing; notices, exams and Appeals; tax research and advice; Circular 230, section 7216, PCRT. Also in-house corporate tax departments ("head of tax", TEI). Auditing a client's tax balances is assurance | compliance-individual-business · compliance-corporate · provision-pillar-two · indirect-tax · transfer-pricing · controversy · research-advisory · data-technology | Available |
 
 ## Not yet available
 
 | Archetype | Would cover | Until it exists |
 |---|---|---|
-| tax | Tax compliance, provision, indirect tax, transfer pricing, international and global minimum tax, controversy, advisory, tax data and technology; firms and in-house tax teams | Use the method and the library. Assurance's quality-management and specialists modules touch tax work inside an audit only |
 | security | Protecting systems, data, identities and people: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure management, application security, cloud and infrastructure, identity and access, data security and privacy, human risk, AI security; in-house security functions and security service providers | Use the method and the library. Assurance's assurance-over-ai and soc-attestation modules cover attesting to security controls, not running them |
-| professional-services | The shared base: pursuit and proposals, acceptance and risk, scoping and pricing, staffing, delivery management, quality review, billing, knowledge management. Also the base for consulting | Use the method and the library. Assurance files cover the regulated parts of an assurance firm only |
+| professional-services | The shared base: pursuit and proposals, acceptance and risk, scoping and pricing, staffing, delivery management, quality review, billing, knowledge management. Also the base for consulting | Use the method and the library. Assurance and tax files cover the regulated parts of those firms only |
 
 ## How to match
 

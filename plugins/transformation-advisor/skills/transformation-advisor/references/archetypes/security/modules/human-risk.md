@@ -63,8 +63,8 @@ research system. Do not suggest otherwise.
   (Avanade: 11% lower failure and 27% higher reporting than its old tool over three months; Qualcomm; vendor pages).
   `#02` behaviour signals trigger just-in-time micro-training and nudges (Uber: 25,000+ users, two-person team;
   research prototypes put LLM coaching inside the browser). `#03` LLMs draft custom modules that a person publishes
-  (vendor claims). `#04` LLM plus OSINT personalised simulations (a 7,700-person university study tripled click rates
-  over generic lures). `#05` AI-voice vishing practice (vendor announcements, no results). `#06` deepfake and
+  (vendor claims). `#04` LLM plus OSINT personalised simulations (a 7,700-person university study: about 2.7 times the
+  click rate of generic lures). `#05` AI-voice vishing practice (vendor announcements, no results). `#06` deepfake and
   executive-impersonation drills, which NYDFS names as an option (no results).
 
 **Reported email and email defence**
@@ -86,7 +86,8 @@ research system. Do not suggest otherwise.
   version is `security-identity-access-18`). Deepfake voice detection in calls is `security-identity-access-23`.
 
 **Insider risk and shadow AI**
-- Improve: `#14` LLM analysis of insider-threat logs (Xiaohongshu: about 90% less manual review, authors' abstract).
+- Improve: `#14` LLM analysis of insider-threat logs (Xiaohongshu: about 90% less manual intervention in log review, authors'
+  abstract).
   `#15` insider-risk platforms with AI scoring and investigation (Purview; 42% of surveyed firms use AI here). `#16`
   "audit and educate" coaching on risky AI prompts instead of blocking (vendor claims).
 
@@ -184,8 +185,8 @@ control group.
   25,000+ users with two people [HOXHUNT-UBER-2026]. Vendors pitch AI as an "on-demand instructional design team"
   [HOXHUNT-CONTENT-2026] and as freeing staff for higher-level risk decisions [SECURITYBRIEF-AIDA-2026].
 - **SOC analysts** handling reported email: Avanade says the platform did the work of over 5 analysts a month
-  [HOXHUNT-AVANADE-2026]; Valvoline says 4-5 analysts had spent 90% of each day on email tasks, now moved to other
-  work [ABNORMAL-VALVOLINE-2026]. No source reports headcount cuts.
+  [HOXHUNT-AVANADE-2026]; Valvoline says 4-5 analysts had spent 90% of each day on email tasks, and that analyst time
+  has moved to other tasks [ABNORMAL-VALVOLINE-2026]. No source reports headcount cuts.
 - **HR, hiring managers, finance and help desk** become part of the security perimeter and need training
   [FBI-DPRK-2025, NYDFS-AIGUIDE-2024].
 - **Insider-risk programmes** are urged to treat AI agents as identities with defined access [HELPNET-PONEMON-2026].
@@ -195,7 +196,7 @@ control group.
 ## 8. Frontier
 
 - 2025-05: randomised trial at UC San Diego Health questions classic training [UCSD-PHISHTRAIN-2025].
-- 2025-10-24: AI-voice phishing training announced [HOXHUNT-VOICE-2025].
+- 2025-10-24: voice-phishing training on live calls announced [HOXHUNT-VOICE-2025].
 - 2026-01-16: AI takedown case at ARK Invest published [DOPPEL-ARK-2026].
 - 2026-01-30: KnowBe4 says seven AI agents are in market for human risk management [SECURITYBRIEF-AIDA-2026].
 - 2026-02-26: few surveyed firms treat AI agents as insiders [HELPNET-PONEMON-2026].
@@ -223,8 +224,8 @@ control group.
   [SOPHOS-PHAKE-2025]. Response: staff-committee approval and debriefing, as in the university study
   [USENIX-CZYBIK-2026]; reward reporting rather than punish clicks (`#01`).
 - **"Personalised AI training is just hype."** A controlled study found no measurable advantage for complex
-  psychometric personalisation over good generic content [ARXIV-2512.01893]. Response: personalise by role and risk
-  (who is targeted, who repeats), not by personality.
+  psychometric personalisation over good generic content [ARXIV-2512.01893]. Response: the targeting with named-deployment
+  evidence is by role and repeat failure (`#01`), not personality.
 - **"People can learn to spot deepfakes and AI emails."** Evidence says no: 36% picked the human-written message
   [OKTA-AUTHSURVEY-2026]; persuasiveness, not robotic voice, drove compliance [ARXIV-2607.09970]. Response:
   verification procedures that work without spotting fakes (`#13`) [FBI-IC3PSA-2025].
@@ -232,7 +233,8 @@ control group.
   work is banned in the EU [ICO-MONITORING-2023, EC-AIACT-2026]. Response: data minimisation, pseudonymisation,
   agreed purposes [PURVIEW-IRM-2026].
 - **"All the success stories are vendors'."** True: every named defender outcome here is on a vendor page. Response:
-  run a cohort comparison or proof of value on your own users and mail, as Avanade and Valvoline did (`#01`, `#08`).
+  run a cohort comparison or proof of value on your own users and mail, as Avanade did with two 1,000-user
+  cohorts (`#01`).
 - **"Click rate is falling, so we're fine."** Click rate depends on lure difficulty [UCSD-PHISHTRAIN-2025]; track
   reporting rate and difficulty too [HOXHUNT-FAILRATE-2026].
 
