@@ -12,7 +12,7 @@
 # prototype was graded C. Lab-only results with no product or deployment are graded D and labelled idea. Almost every
 # outcome figure is vendor-published, self-reported or a lab benchmark; no source publishes analyst override rates,
 # error rates of a deployed CTI assistant, or a parallel run. Final ids for other security modules were not yet
-# published when this file was written, so overlaps are cross-referenced by module name in notes. Attacker detail is
+# published when this file was first drafted; notes cross-reference overlapping entries by id where those files now exist. Attacker detail is
 # kept at the level defenders need.
 
 - id: security-threat-intelligence-01
@@ -471,7 +471,8 @@
     gated, not specific to AI), so these are not used as outcomes. POLAR (arXiv 2610.07298) reports better threat
     ranking than baselines with no figure in its abstract. Google's group warns raw CVE volume can mislead (about 5,000
     Linux kernel CVEs in January to August 2026 with no observed exploited zero-days); that item is routed to
-    vulnerability-exposure.
+    vulnerability-exposure (see security-vulnerability-exposure-09, prioritisation using LLM-synthesised threat
+    intelligence).
 
 - id: security-threat-intelligence-09
   title: Malware-analysis agent that triages samples, explains behaviour and extracts indicators for analysts
@@ -837,7 +838,8 @@
     of Rapid7's pipeline, with no customer outcome. Governance did not confirm CTI-REALM's Microsoft authorship from the
     abstract page; practice read the authors as Microsoft Security AI, so the reward is labelled vendor-published.
     AutoSigma (arXiv 2608.19011) reports better validity and coverage with no figures in its abstract. The rule
-    lifecycle and detection-as-code belong to security-operations; only the intelligence-to-rule step is kept here.
+    lifecycle and detection-as-code belong to security-operations (security-operations-15, which drafts, translates and
+    scores detection rules); only the intelligence-to-rule step is kept here.
 
 - id: security-threat-intelligence-15
   title: SOAR enrichment and MCP connections that let alerts and agents pull threat intelligence on demand
@@ -1212,8 +1214,9 @@
     before-and-after finding counts, which are the company's own tracked data; the noise shares (about 40%; about one
     third of confirmed findings dismissible with 30 seconds of context) are the team's estimates and are labelled so.
     Single company, own definitions, self-reported. The hunts are log-based and not all are intelligence-driven. The
-    post is undated; Detection Engineering Weekly featured it on 2026-08-19. Overlaps with security-operations, whose
-    discourse deep dive covers the same post.
+    post is undated; Detection Engineering Weekly featured it on 2026-08-19. The adversarial dismissal phase is also
+    security-operations-07 (evidence-gated dismissal). Hardening against injected content: see security-ai-security-13
+    and security-incident-response-09.
 
 - id: security-threat-intelligence-22
   title: Always-on investigation agent that finds missed malicious activity and writes explainable detections using threat intelligence
@@ -1260,8 +1263,7 @@
     are Microsoft staff writing about Microsoft's product, so figures are vendor-published; customers are not named,
     and only the abstract was read. The paper says the agent runs across tens of thousands of Defender customers. An
     offline evaluation reports F1 0.78 with GPT-5.4 for recovering hidden malicious activity (+0.12 over GPT-4.1, +0.26
-    over baseline). Shared with security-operations, whose practice deep dive documents the same agent from product
-    pages only.
+    over baseline). security-operations points to this entry rather than repeating the agent (see security-operations-14).
 
 - id: security-threat-intelligence-23
   title: Machine-learning anomaly surfacing that focuses government threat hunters on critical-infrastructure network data
@@ -1348,4 +1350,4 @@
     measurement. Change scope 'model' because provider-side misuse intelligence is a new CTI function, not a faster
     version of an existing one. Conflict note: Anthropic makes the model whose use it describes, and this file was
     compiled by an Anthropic model, so treat as vendor evidence. The adversary content of these reports is routed to
-    ai-security.
+    ai-security; detecting model-extraction campaigns against hosted models is security-ai-security-15.

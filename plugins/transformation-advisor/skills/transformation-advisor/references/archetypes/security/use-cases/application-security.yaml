@@ -1,14 +1,18 @@
-# Use cases: security / application-security
+# Use cases: security / application-security (secure design, AI-written code, code review, scanning and testing in
+# the development pipeline, fixing in code, software supply chain intake, and the AppSec team's own operating model).
 # Synthesised 2026-10-17 from the wave-4 landscape scan and the practice, discourse and governance deep dives
-# (research/runs/wave4/). 70 candidates in, 25 out. Source refs are canonical keys; where the angle files used
-# different keys for the same document, one key is kept (CURL-AISLE-2026 = STENBERG-AISLEAUDIT-2026;
-# CURL-TEAM-2026 = STENBERG-TEAM-2026; GITHUB-SECUREFUND-2026 = GITHUB-FUND-2026; TOB-MIDEN-2026 =
-# TOB-AUDITING-2026 = TOB-AUDIT-2026; AIXCC-DARPA-2025 = DARPA-AIXCC-2025; NIST-SSDF-218A-2024 = NIST-SP800218A-2024).
-# Outcome provenance says who published each figure: almost all are self-reported by the deploying organisation or
-# published by a vendor about its own product. No independent production measurement of an AI AppSec tool exists.
-# Overlaps: discovery, pentest, patching and PSIRT entries also appear in the vulnerability-exposure research
-# (that module's practice file names application-security as the primary home for pre-submit scanning, AI SAST,
-# Codex Security and CodeMender).
+# (research/runs/wave4/); see research/runs/wave4/application-security-synthesis-report.md. 70 candidates in, 17 out.
+# Split with vulnerability-exposure (synthesised first): discovery programmes, consultant and maintainer audits,
+# fuzzing campaigns, finding validation, inbound report and PSIRT intake, patching programmes, patch validation,
+# dependency remediation and pentest agents live there and are referenced by id, not duplicated:
+# security-vulnerability-exposure-01 (frontier-model OSS discovery), -03 (curl and AISLE), -04 (Mandiant harness),
+# -05 (agent-built fuzzing), -06 and -11 (validation and VulnOps), -07 and -08 (bounty triage, PSIRT), -12 (Patch the
+# Planet), -13 and -14 (automated patching limits, patch validation), -15 (dependency remediation), -17 and -18
+# (autonomous pentest agents). Google pre-submit scanning and the Trail of Bits Miden tooling live here.
+# Source refs are canonical keys; where the angle files used different keys for one document, one key is kept
+# (TOB-MIDEN-2026 = TOB-AUDITING-2026 = TOB-AUDIT-2026; GITHUB-SECUREFUND-2026 = GITHUB-FUND-2026). Outcome
+# provenance says who published each figure: almost all are self-reported by the deploying organisation or published
+# by a vendor about its own product. No independent production measurement of an AI AppSec tool exists.
 
 - id: security-application-security-01
   title: Agent-assisted security design review and threat modelling
@@ -401,8 +405,8 @@
   notes: >-
     In-house case study; all figures are Google's own and are bounded ('in some cases') or unbounded ('hundreds').
     Graded A on the stated precision metric from a named deployment; treat it as self-reported. Merged from all three
-    angles, including the governance angle's separate triage-agent entry. The same deployment also appears in the
-    vulnerability-exposure research, which names this module as its primary home.
+    angles, including the governance angle's separate triage-agent entry. The vulnerability-exposure synthesis dropped
+    its copy and names this module as the home for this deployment.
 
 - id: security-application-security-08
   title: Reasoning-based AI code scanning alongside rule-based static analysis
@@ -523,7 +527,9 @@
     - {ref: ANTHROPIC-CYBERMISSION-2026, title: "Introducing the Anthropic Cyber Mission", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/anthropic-cyber-mission", date: "2026-10-08", access: full, locator: "Verifying, prioritizing and fixing remain the challenge"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Abstract of a talk not yet delivered, so no measurements. SastBench was read at abstract level only. An ICSE 2026
+    Abstract of a talk not yet delivered, so no measurements. SastBench was read at abstract level only. Programme-
+    level validation of AI-found findings and standing 'VulnOps' workflows are in security-vulnerability-exposure-06
+    and security-vulnerability-exposure-11; this entry keeps the engineering team's closure loop. An ICSE 2026
     industry paper on LLM filtering of static-analysis false positives was seen only in search results; its figures
     are unverified and not used.
 
@@ -623,7 +629,7 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Client named in the post (Miden). Pattern 'other': agents build the review workbench, not only review code. Merged
-    from practice and discourse; the vulnerability-exposure research carries the same post.
+    from practice and discourse; security-vulnerability-exposure-19 cross-references this entry.
 
 - id: security-application-security-12
   title: AI-drafted fixes for scanner alerts and critical vulnerabilities, delivered as reviewable changes
@@ -677,6 +683,8 @@
   notes: >-
     The Meta figure is from a conference abstract for an event not yet held, so B rather than A. The Snyk figure is a
     vendor benchmark of its own product. Merged from practice and the governance angle's bug-fix agent entry.
+    Engineer-directed patching programmes and patch validation are in security-vulnerability-exposure-12 and
+    security-vulnerability-exposure-14.
 
 - id: security-application-security-13
   title: Agent-applied compiler bounds-safety annotations to remove whole vulnerability classes
@@ -719,7 +727,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     The 72-fix count does not measure the hardening work itself, for which no figures were published. The post was
-    last modified 2026-07-13.
+    last modified 2026-07-13. security-vulnerability-exposure-13 cites the same 72 fixes as evidence on automated
+    patching.
 
 - id: security-application-security-14
   title: 'Automated AI screening of untrusted inbound code: packages, agent skills and outside pull requests'
@@ -824,8 +833,8 @@
     - {ref: GITHUB-ADVDB-2026, title: "Inside the Advisory Database and what happens when vulnerability volume breaks records", publisher: "GitHub Blog", type: vendor, url: "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/", date: "2026-06-29", access: full, locator: "Sections: the surge; building AI-assisted research tools; expanding automation"}
   last_reviewed: "2026-10-17"
   notes: >-
-    No measurement of the AI tooling's own effect was published. NIST's AI-enabled NVD effort is routed to
-    vulnerability-exposure.
+    No measurement of the AI tooling's own effect was published. CVE enrichment at registry scale, including NIST's
+    AI-enabled NVD plans, is security-vulnerability-exposure-24 (idea).
 
 - id: security-application-security-16
   title: Testing AI security tools on contamination-reduced, audited benchmarks before trusting them
@@ -851,7 +860,7 @@
   outcomes:
     - {lever: quality, description: "Benchmark inflation from memorisation (Claude Opus 5.5 on SusVibes)", figure: "93 of 176 judged solutions (53%) near-identical to the real code; 57 of 102 secure solutions (56%) memorised", measures: "solutions with code similarity of 0.80 or more to the project's real implementation (added lines in non-test files); Semgrep says similarity is not proof of recall", provenance: vendor-published, source_ref: SEMGREP-SUSVIBES-2026}
     - {lever: quality, description: "Headline score on the same benchmark", figure: "54.8% correct and secure of 186 tasks, against a previous best of 43.5%", measures: "tasks passing the project's functional tests and the CVE-fix security tests, run by Semgrep under the leaderboard protocol on 2026-09-26", provenance: vendor-published, source_ref: SEMGREP-SUSVIBES-2026}
-    - {lever: quality, description: "Inflation of patching results from proof-of-concept-only validation", figure: "1.83 times on average", measures: "solve rate under PoC-only validation versus fuller validation, across 11 agents (see security-vulnerability-exposure-14)", provenance: independent, source_ref: ARXIV-2609.04075}
+    - {lever: quality, description: "Inflation of patching results from proof-of-concept-only validation", figure: "1.83 times on average", measures: "solve rate under PoC-only validation versus fuller validation, across 11 agents (see security-vulnerability-exposure-13)", provenance: independent, source_ref: ARXIV-2609.04075}
     - {lever: quality, description: "Effect of removing contaminated samples from bug-fixing benchmarks", figure: "reported resolution rates of most LLMs fall by more than 20% relative on medium-difficulty tasks", measures: "SWE-bench Verified and Multi-SWE-bench after filtering contaminated samples; general bug-fixing, adjacent to security", provenance: independent, source_ref: USENIX-BENCHCHECKER-2026}
   prerequisites:
     - "Labelled vulnerable applications or recent CVEs the model has not seen"
@@ -861,7 +870,7 @@
     - "AWS reports its own benchmark as contamination-reduced, not contamination-free (AWS-SECAGENT-2026)"
     - "Quoting the rival study's tables, Trail of Bits found 8% of its ActiveMQ verdicts penalised an intended behaviour change and that automated graders agreed with human reviewers on the full outcome in 65.9% of reviewed cases (TOB-1PASSWORD-2026)"
     - "A run that failed because of a broken build can be mistaken for evidence (TOB-1PASSWORD-2026)"
-    - "The same patching dataset reads as 26.0% (1Password) or 86% (Trail of Bits reanalysis) depending on subset and success definition (TOB-1PASSWORD-2026; see security-vulnerability-exposure-14)"
+    - "The same patching dataset reads as 26.0% (1Password) or 86% (Trail of Bits reanalysis) depending on subset and success definition (TOB-1PASSWORD-2026; see security-vulnerability-exposure-13)"
     - "CSET observed that code-model benchmarks often measure function but not security, and training-data transparency is inadequate (CSET-CODEGEN-2024)"
   human_checkpoints:
     - "Experts review graders' verdicts (TOB-1PASSWORD-2026)"

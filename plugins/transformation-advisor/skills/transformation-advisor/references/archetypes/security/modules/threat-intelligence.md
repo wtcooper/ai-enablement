@@ -96,8 +96,9 @@ for automate at step level**, or for new CTI service lines, pricing or sourcing 
   The self-service effect in `#11` (engineers outside security query intelligence directly) is the nearest sign of a change in
   who does the work.
 
-Cross-module: `#22` and `#21` overlap security-operations; `#14` hands off to detection engineering in security-operations;
-`#18` sits next to fraud and brand protection in human-risk; Datadog's hunt for fake job applicants with "AI-driven risk
+Cross-module: `#21` overlaps `security-operations-07` (evidence-gated dismissal); `#22` is referenced from `security-operations-14`;
+`#14` hands off to detection-rule work in `security-operations-15`; `#08` feeds `security-vulnerability-exposure-09` (prioritisation);
+prompt-injection hardening is `security-ai-security-13`; `#18` sits next to fraud and brand protection in human-risk; Datadog's hunt for fake job applicants with "AI-driven risk
 assessment" [FIRST-CON-2026] is routed to human-risk.
 
 ## 4. Interview probes

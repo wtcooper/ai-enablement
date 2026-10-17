@@ -3,7 +3,7 @@
 Compiled 2026-10-17. Outputs:
 - Module: `plugins/transformation-advisor/skills/transformation-advisor/references/archetypes/security/modules/threat-intelligence.md` (283 lines, table of contents)
 - Use cases: `plugins/transformation-advisor/skills/transformation-advisor/references/archetypes/security/use-cases/threat-intelligence.yaml` (24 entries)
-- `scripts/validate.py`: no errors or warnings for these files (the remaining errors are in `archetypes/tax/ARCHETYPE.md`, which another agent owns).
+- `scripts/validate.py`: no errors or warnings for these files (the remaining errors are in other archetypes' files, which other agents own).
 
 ## 1. Counts in and out
 
@@ -81,10 +81,14 @@ Ref keys made canonical (the same document had different keys in different input
 - **ISACs and government.** There is one panel report (Health-ISAC, RH-ISAC, FS-ISAC), and no ISAC is known to use AI on member submissions. The AI-ISAC had no launch date as of February 2026. Coverage outside the US and EU is thin.
 - **Sharing law.** The status of the US Cybersecurity Information Sharing Act of 2015 after 2026-09-30 is unconfirmed.
 - **Gated reports:** the full SANS 2026 CTI survey, the Flashpoint report body, Mandiant M-Trends 2026, the CrowdStrike Global Threat Report and the IDC study.
-- **Cross-module ids.** Final YAML ids for security-operations, human-risk, vulnerability-exposure and ai-security did not exist when this was written, so overlaps are flagged by module name. When those files exist, add id cross-references:
-  - security-operations: `#14`, `#15`, `#21`, `#22`
-  - human-risk: `#18`
-  - vulnerability-exposure: the GTIG triage advice in module §8
+- **Cross-module ids.** The other modules' YAML appeared while this synthesis was under way, so id cross-references were added:
+  - `#14` ↔ security-operations-15
+  - `#21` ↔ security-operations-07, security-ai-security-13 and security-incident-response-09
+  - `#22` ↔ security-operations-14
+  - `#08` ↔ security-vulnerability-exposure-09
+  - `#24` ↔ security-ai-security-15
+
+  Human-risk (`#18`, and the Datadog fake-applicant item) had no YAML yet, so it is still referenced by module name.
 
 ## 6. Routed items
 
