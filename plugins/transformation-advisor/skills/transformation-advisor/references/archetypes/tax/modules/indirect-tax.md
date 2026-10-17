@@ -1,11 +1,11 @@
 # Indirect tax (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/indirect-tax.yaml` (22 entries). Ids are shortened here:
-`#05` means `tax-indirect-tax-05`; other modules' ids are in full. Source keys in brackets are in the YAML or in §10.
-Read this first: almost every figure in this module is **vendor-published** (Thomson Reuters, Avalara, Sovos, Vertex,
-Numeral, Fonoa). No error rate, override rate or parallel-run result exists for any commercial indirect-tax AI tool.
-The only measured AI results are academic: a VAT place-of-supply study and a synthetic agent pilot (independent)
-and Dell's tax-code test (self-reported). The module is honestly
+Sources checked 2026-10-17. Use cases live in `../use-cases/indirect-tax.yaml` (22 entries). Ids are shortened
+here: `#05` means `tax-indirect-tax-05`; other modules' ids are in full. Source keys in brackets are in the YAML or in
+§10. Read this first: almost every figure in this module is **vendor-published** (Thomson Reuters, Avalara, Sovos,
+Vertex, Numeral, Fonoa). No error rate, override rate or parallel-run result exists for any commercial indirect-tax AI
+tool. The only measured AI results are a VAT place-of-supply study (independent, `#06`) and Dell's tax-code test
+(self-reported, `#01`); a synthetic agent pilot behind an idea (`#22`) also reports scores. The module is honestly
 thin: 4 of 22 entries are graded A or B. Say "vendor claim" whenever you quote a vendor figure.
 
 ## Contents
@@ -71,7 +71,7 @@ reviewed puts a person's approval first.
 
 **E-invoicing and continuous transaction controls**
 - Improve: `#08` diagnosis of rejected e-invoices, with corrections run after a user approves (Sovos). Sovos's 1.6%
-  French rejection rate is a platform figure it does not attribute to AI.
+  French rejection rate is a platform figure it does not attribute to AI (data side: `tax-data-technology-14`).
 - Automate: `#10` extraction and enrichment of invoices, receipts and expenses for VAT recovery and e-invoicing
   onboarding (Blue dot, now Sovos; Brinta, now Vertex).
 - Reinvent: `#18` finance agents for AP, procure-to-pay and invoicing with VAT rules built in (Sovos-Flowie, announced 1 Oct 2026).
@@ -87,31 +87,35 @@ reviewed puts a person's approval first.
   primary sources (Fonoa, Sovos; announced).
 
 **Audits, notices and defensibility**
-- Automate: `#14` intake, extraction and routing of authority notices. Reply drafting is `tax-controversy-01`/`-02`.
+- Automate: `#14` intake, extraction and routing of authority notices. Reading and reply drafting are
+  `tax-controversy-01` and `tax-controversy-02`.
 - Improve (process): `#15` audit-ready records of every AI-assisted determination, override and approval. The
   strongest survey link to confidence: respondents with formal human review were more than twice as likely as those
-  with no defined process to feel able to defend AI decisions (Fonoa, vendor survey).
+  with no defined process to feel able to defend AI decisions (Fonoa, vendor survey; see also `tax-data-technology-19`).
 
 **Data foundation and everyday use**
 - Idea (process): `#12` validation and repair of master and transaction data at entry (Deloitte describes it as a
-  potential use; 49% of KPMG respondents say data quality will be their main AI use).
+  potential use; 49% of KPMG respondents say data quality will be their main AI use). The fuller entry on validation
+  before submission is `tax-data-technology-13`.
 - Improve: `#20` general AI for first-pass analysis and month-end summaries in a sanctioned workspace (Plusgrade job
-  posting, grade B). Analyst-built pipelines are `tax-compliance-corporate-17`.
+  posting, grade B). Analyst-built pipelines are `tax-compliance-corporate-17`; Oxford Industries' governed
+  automation, whose vendor demos also covered sales and use tax and VAT, is `tax-compliance-corporate-10`.
 
 **Commerce, delivery model and advice**
 - Automate: `#17` tax determination at checkouts that AI shopping agents complete; keep tax in the merchant's engine
   and make holiday rules machine-readable (Sales Tax Institute; emerging).
 - Reinvent: `#16` tax engines callable by customers' own agents through MCP (Model Context Protocol) and A2A
-  (agent-to-agent) protocols (Avalara, Sovos; announced). `#19` AI-enabled managed sales tax and VAT compliance
-  (Numeral, Taxually).
+  (agent-to-agent) protocols (Avalara, Sovos; announced; the company side is `tax-data-technology-18`). `#19`
+  AI-enabled managed sales tax and VAT compliance (Numeral, Taxually). The VAT and customs part of cross-tax
+  intercompany review is `tax-transfer-pricing-11`.
 - Idea: `#21` ongoing exposure, accrual and scenario analysis by agents (Deloitte).
 
 **Tax-authority side (context, held elsewhere)**: California CDTFA's agent-assist tool for sales and use tax enquiries
 is `tax-controversy-20`; authority chatbots including Singapore's IRAS are `tax-controversy-18`; risk targeting in
 Austria, Hungary (including at invoice issuance) and South Carolina sales and use tax is `tax-controversy-15`.
 
-**Coverage.** Ladder: assist 1, augment 12, automate 5, delegate 4. Scope: step 9, process 10, model 3. Assist
-evidence was merged into augment entries. Delegate rests on vendor launches with unnamed customers; no measured
+**Coverage.** Ladder: assist 1, augment 12, automate 5, delegate 4. Scope: step 9, process 10, model 3. Assist-level
+evidence is described inside augment entries. Delegate rests on vendor launches with unnamed customers; no measured
 delegate deployment exists. Model-scope entries are announcements plus one provider's own funding release (`#19`).
 No AI evidence was found for VAT on imports, Peppol networks, SAF-T reporting or India, Brazil and Gulf markets
 beyond headlines.
@@ -146,7 +150,7 @@ beyond headlines.
 
 ## 5. Metrics and benchmarks
 
-**Measured results (academic papers; dated by model generation)**
+**Research results (academic papers and one company test; dated by model generation)**
 - VAT place of supply (Austrian and EU law): 93.24% on 74 textbook cases with RAG (retrieval-augmented generation),
   68.92% plain GPT-4o; 16 of 20 real client inquiries correct with RAG, 55-70% for other set-ups [LUKETINA-VAT-2026].
 - Synthetic cross-border VAT agents: 0.755 single agent, 0.830 best orchestrated; one hallucinated record degraded
@@ -197,10 +201,9 @@ per return, not preparation hours alone.
   companies must issue and report; smaller ones follow in Sep 2027 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026].
 - **Marketplace and deemed-supplier rules** apply by function (payment control, transmitting orders), not label; AI
   has no legal personality, so an agent's operator may have to collect [BTAX-AGENTICCOMMERCE-2026].
-- **IRS OPR Alert 2026-19 (24 Jun 2026)** applies Circular 230 duties (due diligence, fees, competence, firm
-  procedures, written advice) to AI use in federal practice; it does not address state sales tax or VAT [IRS-OPR-2026].
-- **UK PCRT guidance (19 Jan 2026)**: members stay responsible for AI-assisted work, should be able to explain a
-  conclusion, and should not put client data into a public model without consent [ATT-PCRTAI-2026, ICAEW-PCRT-2026].
+- **Shared conduct rules** (IRS OPR Alert 2026-19, section 7216, the UK PCRT and Australian TPB guidance) are in
+  [the archetype guardrails](../guardrails.md). The OPR alert covers federal practice and does not address state
+  sales tax or VAT [IRS-OPR-2026]; the PCRT guidance applies to UK VAT work [ATT-PCRTAI-2026, ICAEW-PCRT-2026].
 - **UK tribunal**: in *Rafique v HMRC* [2026] TC09874 a VAT-penalty appeal struck out for breaching unless orders was not
   reinstated; the tribunal found repeated AI-generated submissions with fabricated citations and said every party must verify what it submits [ROSSMARTIN-RAFIQUE-2026].
 - **EU AI Act**: Article 4 requires AI literacy measures for staff [EU-AIACT-2024]. Recital 59 keeps tax-administration
@@ -218,7 +221,7 @@ deterministic engine (`#22`); customer data kept out of external model training 
 
 **Steps that stay with a person**: taxability and place-of-supply judgments on new products or chain transactions;
 approval of rule and mapping changes; sign-off of returns; registration decisions; certificate acceptance where
-good-faith rules apply (not retrieved by the research); marketplace or deemed-supplier status; answers to authorities.
+good-faith rules apply (those rules were not reviewed for this module); marketplace or deemed-supplier status; answers to authorities.
 
 ## 7. Roles and how they evolve
 
@@ -278,11 +281,10 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 
 ## 10. Sources
 
-Full details are in the YAML.
 - **In the YAML, research and standards:** LUKETINA-VAT-2026, SANTOS-VAT-2026, NATH-DELL-2025, COLUMN-TAXCALCBENCH-2025, IRS-OPR-2026, ICAEW-PCRT-2026, AICPA-WERFEL-2026, NIST-AIRMF-2023, EU-AIACT-2024, EU-DIRECTIVE-2025-516, HMRC-ROADMAP-2025, OECD-GOVAI-2025.
 - **In the YAML, surveys, firms and conferences:** FONOA-2026, FONOA-176-2026, KPMG-INDIRECT-2026, TR-INDIRECT-2026, DELOITTE-AGENTIC-2026, INNOVATETAX-VXE-2026, TEI-TAXTECH-2026, TRINST-TEIAUDITOR-2026, SAFFERY-VAT-2026, FLSALESTAX-AI-2026, STI-AGENTIC-2026, BTAX-AGENTICCOMMERCE-2026, BTAX-VAT2026, BTAX-OECDVAT-2026, OPENAI-JOB-2026, PLUSGRADE-JOB-2026.
 - **In the YAML, vendors:** TR-SUTAI-2026, TR-ONESOURCEPLUS-2025, TR-CLASSIFICATION-2026, TR-HELP-PRODCLASS, TR-AGENTICIT-2026, TR-INSTITUTE-2025, TR-BUSINESSCASE-2026, TR-WEBINAR-JLL, ACCTODAY-AVALARA-2025, AVALARA-AGENTIC-2025b, AVALARA-AVI-2025, AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026, AVALARA-NEXT-2026, AVALARA-ECM-2026, AVALARA-LLMTEST-2025, SOVOS-SOVI-2026, SOVOS-FRANCE-GOLIVE-2026, SOVOS-FRANCE-2026b, SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026, SOVOS-DOCS-AICLASS, VERTEX-Q1CALL-2026, VERTEX-SMARTCAT-2026, VERTEX-COPILOT-2025, FONOA-CITATION-2026, FONOA-MONITORING-2026, FONOA-STACK-2025, FONOA-ACCURACY-2025, FONOA-ERRORRATE-2025, NUMERAL-2026, TAXUALLY-2026, TAXCLOUD-2025, TRUSS-KINTSUGI-2026.
-- **Not in the YAML (opened by the wave 2 researchers unless noted):**
+- **Not in the YAML:**
   - EC-VIDA-2026 (European Commission, *VAT in the Digital Age (ViDA)*, 2026-07-29, https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en).
   - CDTFA-2025 (Tax Notes, *Experts Urge Caution as State Tax Agencies Deploy Generative AI*, 2025-08-26, https://kogod.american.edu/hubfs/experts_urge_caution_as_state_tax_agencies_deploy_generative_ai_20250826-161144.pdf); in controversy YAML.
   - KPMG-HU-2026 (KPMG Hungary, tax alert, 2026-02-26, https://kpmg.com/hu/en/insights/2026/02/taxalert-2026-02-26.html); in controversy YAML.

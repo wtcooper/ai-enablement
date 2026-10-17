@@ -120,8 +120,8 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 
 - Judge Holmes had seen fewer than a dozen hallucinated cases, issued no sanctions, called section 6673 (up to US$25,000)
   the main existing tool, and doubted an AI certification rule "would make any sense" [BLAW-TAXCT-2026].
-- A public database lists 2,199 decisions on hallucinated content across all fields, with tax-court entries in the US,
-  UK, Australia and India (a single-person compilation) [CHARLOTIN-2026].
+- A public database lists 2,199 decisions on hallucinated content across all fields, with tax entries from courts and tribunals in
+  the US, UK, Australia and India (a single-person compilation) [CHARLOTIN-2026].
 - Outside tax, Deloitte Australia repaid part of a A$440,000 government report fee after fabricated references; OPR
   cites it as an analogy [GUARDIAN-DELOITTE-2025; IRS-OPR-2026].
 - **No sanction against a tax practitioner for AI misuse was found.** OPR says such cases are "slowly emerging" [IRS-OPR-2026].

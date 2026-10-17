@@ -54,7 +54,7 @@ Read as published; samples and definitions differ, so do not average or trend ac
 | State of the Corporate Tax Department (Thomson Reuters) [TR-CORPTAX-2025] | 288 departments, Jul-Aug 2025 | 67% not using GenAI; of those implementing new technology, 57% plan GenAI and 17% "more advanced" such as agentic | Vendor-owned |
 | AI in tax departments (KPMG Germany) [KPMG-DE-2026] | Quick surveys, May 2026; sample not stated | 71% use AI tools, 19% preparing; 89% use company-wide tools and 29% specialised tax applications; 66% of users report noticeable time savings | Big Four, one market |
 | Tax and Finance Operations (EY) [EY-TFO-2025] | 1,600 CFOs and tax and finance leaders, 30 jurisdictions, Nov 2025 | 86% call data, GenAI and technology a top priority; 51% are early in data-management maturity; 44% name inability to execute a data, AI and technology plan as the biggest barrier | Big Four |
-| Corporate tax technology (Thomson Reuters with TEI) [TR-UNDERSTAFF-2026] | 170 US departments, Nov-Dec 2025 | 9% call themselves active AI users | Vendor-owned |
+| Corporate tax technology (Thomson Reuters blog on its department data) [TR-UNDERSTAFF-2026] | US corporate tax departments; blog dated 23 Jul 2026 | 9% call themselves active AI users; 27% can secure budget when needed | Vendor-owned |
 | Indirect tax in the AI era (Fonoa) [FONOA-2026] | 176 indirect tax leaders, Jun 2026 | 92% use AI in some form; 12.5% have targets; about a third run formal human review; 57.4% would not be confident defending AI-assisted decisions to an authority | Vendor-sponsored |
 
 **Corrections to figures in circulation.** EY's own release gives 51% (early data maturity) and 44% (cannot execute the
