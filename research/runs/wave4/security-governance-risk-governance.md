@@ -671,7 +671,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     url: https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce
     date: '2026-03-23'
     access: full
-    locator: Slide 5 (AI policy) and slide 22 (recommendation to establish an AI governance program within 3 months)
+    locator: Slide 5 (AI policy) and slide 21 (recommendation to establish an AI governance program within 3 months)
   - ref: WEF-GCO-2026
     title: Global Cybersecurity Outlook 2026 (with Accenture)
     publisher: World Economic Forum

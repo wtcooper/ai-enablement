@@ -90,8 +90,9 @@ in investigation and in the new AI-agent incident work; recovery and exercises a
 - Reinvent: `#21` cross-organisation reporting of agent incidents and near-misses (SAFE draft; OpenAI notifications).
   `#22` responders become builders of agentic automations (Databricks, GitLab, Twilio, Cloudflare postings).
 
-**Gaps.** No delegate entry has a named deployment with outcomes; no model-scope entry has measured results. No AI use
-in business-impact analysis, recovery-time testing or a real exercise was found.
+**Gaps.** No delegate entry has a named deployment with outcomes; model-scope entries rest on a draft scheme,
+notification counts and job postings. No AI use in business-impact analysis, recovery-time testing or a real exercise
+was found.
 
 ## 4. Interview probes
 

@@ -346,7 +346,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
   ladder: augment
   change_scope: process
   runtime_class: workflow-automation
-  maturity: piloting
+  maturity: emerging
   problem: >
     Boards and executives ask for decision-ready, data-driven numbers; manual quantification is slow and inconsistent
     (FAIR-CRMSURVEY-2026).
@@ -540,7 +540,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: 2026-10-15, access: full, locator: "Task table; 'Reading is most of it'" }
     - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: 2026-01-08, access: full, locator: "'The Year-Long Mission'" }
     - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: Cloud Security Alliance with SANS, [un]prompted and OWASP GenAI Security Project, type: standard-setter, url: "https://labs.cloudsecurityalliance.org/mythos-ciso/", date: 2026-04-12, access: full, locator: "PDF v1.0 p. 14" }
-    - { ref: BSIDESLV-2026, title: "Hiring-manager talk on Builders, Breakers, Defenders, Governors", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract (hiring-manager session)" }
+    - { ref: BSIDESLV-2026, title: "How to Stand Out in Cybersecurity's Most Competitive Job Market", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract (Hire Ground, Monday 18:00-18:55)" }
   last_reviewed: 2026-10-17
   notes: >
     Companion to practice-file use case 13 (job-posting evidence). The survey's sponsor-free claim is the author's own statement.
@@ -611,14 +611,14 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     - lever: experience
       description: Boards using cyber risk data
       figure: "63% in 2026"
-      measures: "Share of respondents (400 cyber risk leaders and practitioners, April 2026) reporting boardroom use of cyber risk data; the 2025 report found use at fewer than half of participating organizations."
+      measures: "Boardroom use of cyber risk data as stated in the report summary (base not specified beyond the 400-respondent survey, April 2026); the report says use in 2025 was at fewer than half of participating organizations."
       provenance: independent
       source_ref: FAIR-CRMSURVEY-2026
     - lever: experience
       description: Gartner board-attitude statistics quoted at its summit
       figure: "93% / 98% / 71%"
       measures: "As reported by TechTarget from Gartner sessions: 93% of board members agree cyber-risk threatens shareholder value; 98% believe threats will grow in two years; 71% of board members are willing to accept greater cyber-risk to achieve business goals. Survey populations and sizes are not given in the articles."
-      provenance: vendor-published
+      provenance: independent
       source_ref: TECHTARGET-GARTNERBOARD-2026
   prerequisites:
     - A stable minimum set of indicators per report section that stays consistent over time (TECHTARGET-GARTNERBOARD-2026)
@@ -654,7 +654,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
   runtime_class: workflow-automation
   maturity: announced
   problem: >
-    Annual tabletops built around a slide deck rarely resemble real response, and teams face notification laws in over 200 jurisdictions according to a podcast guest, with clocks such as DORA's four hours
+    Annual tabletops built around a slide deck rarely resemble real response, and a podcast guest cites more than 200 notification laws worldwide, with clocks such as DORA's four hours
     (RESILIENTCYBER-TABLETOP-2026).
   solution: >
     The co-founder of BreachRx argues for smaller, more frequent exercises, some running in the background over a week with a thirty-minute hot wash, run in the tooling used during real incidents, with AI
@@ -712,7 +712,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
   risks_and_guardrails:
     - When a guardrail trips and asks a human to approve, Venables says the human needs a context bundle explaining why, since blind approval is the modern equivalent of lifting a tripped circuit breaker (VENABLES-HFT-2026)
     - A CSA analyst quoted by Dark Reading says unexpected model behavior is always a failure of the security controls (DARKREADING-ROGUE-2026)
-    - Resilient Cyber's guest, a startup CEO, says the disclosed OpenAI controls failures (single package proxy as isolation, no chain-of-thought monitoring running, no automated shutdown) included several any one of which would have stopped the incident (RESILIENTCYBER-KORMAN-2026)
+    - The Resilient Cyber episode description lists control failures OpenAI disclosed, including a single package proxy as the only isolation, chain-of-thought monitoring that was not running and no automated shutdown, and says any one of them would have stopped the incident (RESILIENTCYBER-KORMAN-2026)
   human_checkpoints:
     - Human approval for high-risk decisions, with kill switches that sit outside the agent's control (DARKREADING-ROGUE-2026)
   role_evolution: >
@@ -759,7 +759,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
   human_checkpoints:
     - Decision authority stays with the analyst in the Centene design (FIRST-CON-2026)
   role_evolution: >
-    The Centene speaker describes the analyst role moving from reactive responder to supervisory decision-maker (FIRST-CON-2026).
+    The Centene speaker biography describes elevating analysts from reactive responders to supervisory decision-makers (FIRST-CON-2026).
   evidence_grade: C
   sources:
     - { ref: FIRST-CON-2026, title: "From Logs to Living Timelines: AI-Assisted Incident Response in Hybrid Cloud Using OCSF (Centene); AI Interpretability as a Security Control: Introducing the CIRCUIT Framework (Jumpmind)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: 2026-06-16, access: full, locator: "Centene session 16 Jun 2026 11:45-12:20; Jumpmind session 17 Jun 2026 13:30-14:15" }
@@ -799,7 +799,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
   human_checkpoints:
     - Not described
   role_evolution: >
-    Venables describes CISO 2.0 as shaping the environment rather than bolting security on, and as 'CEO' of the security program (VENABLES-CISO2-2026). A WEF-type CEO-versus-CISO divergence was seen in search only and is not used.
+    Venables describes CISO 2.0 as shaping the environment rather than bolting security on, and as 'CEO' of the security program (VENABLES-CISO2-2026).
   evidence_grade: D
   sources:
     - { ref: VENABLES-CISO2-2026, title: "CISO Version 2.0", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/ciso-version-2-0", date: 2026-06-12, access: full, locator: "'What Next - Two Divergent Paths?'" }
@@ -932,6 +932,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
 - 2026-06-12: "CISO 2.0" and emerging "Chief Digital Risk Officer" form of the role (VENABLES-CISO2-2026).
 - 2026-07-21: Gartner's first Hype Cycle for AI Governance (via secondary blog) (SOFTWARESTRATEGIES-GARTNERHC-2026).
 - 2026-10-02: Dark Reading on avoiding "rogue AI" framing; 2026-10-16 on liability questions (DARKREADING-ROGUE-2026, DARKREADING-LIABLE-2026).
+- 2026-04-09: RSAC virtual seminar frames agentic AI as a governance, accountability and security challenge for CISOs, with CISOs from Noma Security, Sitecore and others on the panel (RSAC-AGENTICSEM-2026, abstract only).
+- 2026-06-01 to 06-03: Gartner Security & Risk Management Summit with 62 analysts and more than 110 sessions under the theme "Smarter, faster, stronger ... together" (TECHTARGET-GARTNER-2026).
 - 2026-10-02 to 10-14: FAIR Institute series on assessing coding agents, agent features and the AI attack surface (FAIR-AGENTICCODING-2026, FAIR-RISKREPORT-2026, FAIR-ATTACKSURFACE-2026).
 - 2026-10-03: pyramid-to-diamond workforce argument (VENABLES-WORKFORCE-2026).
 - 2026-10-06/07: Australian committee hearings on agentic incident reporting (DARKREADING-AUSREPORT-2026).
@@ -978,7 +980,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
 
 ## 5. Sources
 
-Counts by type (full-access sources only; 34 listed, 5 more seen in search only): press 8; community 12 (blogs and newsletters); podcast 3; conference 4; standard-setter 3; survey 2; professional-body 1; firm 1. Vendor-authored items are flagged.
+Counts of distinct full-access sources by type (34): press 9; community 9 (blogs and newsletters); standard-setter 4; podcast 4; conference 4; survey 2; professional-body 1; firm 1. Six more items were seen in search results or listings only (marked `search-only`) and are used in notes only. Vendor-authored items are flagged.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
