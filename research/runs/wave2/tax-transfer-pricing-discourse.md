@@ -13,7 +13,7 @@
 1. **The conversation is conference-led and mostly vendor-hosted.** The densest public record is the TPMinds series (International, London, 16-17 June 2026; West Coast, Palo Alto, 4-5 November 2026; Americas, with an AI Transformation Day planned for 1 March 2027), the ABA Tax Section's 8 May 2026 panel on AI and section 482, and the WU-TA programme in Singapore (28 September-1 October 2026). The recaps are written by sponsors (Aibidia) or reporters (DDTC, Thomson Reuters Checkpoint), so session content is thinly reported.
 2. **Where practitioners say AI helps today:** first-pass comparable searches, narrative drafting for local and master files, first drafts of intercompany agreements, research on local requirements, and in-year margin monitoring. Where they say it does not: method selection, functional characterisation, and anything that needs an auditable number. Their repeated line is that AI speeds the first pass and a named professional signs off (AIBIDIA-WEBINAR-2026, DDTC-WUTA-2026, PLANTEMORAN-2026, AIBIDIA-TPMINDS-2026).
 3. **Quality evidence is missing.** No error rate, override rate, parallel run, or inspection finding for AI in TP was found. The only figures are speaker claims (PwC Singapore: up to 100 hours to about 30 minutes for an unspecified analysis; AI may do about 80% of comparability work) and vendor survey data. This is why 12 of 13 use cases are graded C or D and none is A.
-4. **Authorities set the guardrail, not the rulebook.** An IRS LB&I director said on 29 July 2026 that AI can support but should not replace judgment, and that the IRS expects experts to explain inputs, assumptions, methods and AI tools and wants to test formulas (IRS-LBI-TP-2026). PwC's TP principal said the same on 30 July 2026 (TR-CHECKPOINT-2026). HMRC consulted in April 2025 on a transaction schedule meant to enable automated risk assessment (KPMG-UK-ICTS-2025).
+4. **Authorities set the guardrail, not the rulebook.** An IRS LB&I director said on 29 July 2026 that AI can support but should not replace judgment, and that the IRS expects experts to explain inputs, assumptions, methods and AI tools and wants to test formulas (IRS-LBI-TP-2026). a PwC TP principal said on a 30 July 2026 webcast that the IRS still expects to see the underlying work when AI is used (TR-CHECKPOINT-2026). HMRC consulted in April 2025 on a transaction schedule meant to enable automated risk assessment (KPMG-UK-ICTS-2025).
 5. **Data readiness, not model access, is the bottleneck.** In Aibidia's 2026 survey, 93% of respondents use AI in some form but only 22% believe their TP data is clean enough for AI to use without manual intervention; 79% spend more than 10% of team time on data preparation (AIBIDIA-STATETP-2026; vendor-published, 97 respondents).
 6. **TP of AI itself is a large share of the discourse** (AI-generated assets, shared AI tools between affiliates, DEMPE in AI value chains; OECD Chapter VII consultation of 1 June 2026). That is advice about AI as a subject, not AI as a tool, and is routed to another module.
 
@@ -773,6 +773,14 @@
     date: '2024-10-21'
     access: full
     locator: paragraphs under 'But it isn't necessarily all bad news for taxpayers'
+  - ref: TPMINDS-AM-2027
+    title: TPMinds Americas 2027 event page (AI Transformation Day 1 March 2027; planned session list)
+    publisher: Informa Connect
+    type: conference
+    url: https://informaconnect.com/tp-minds-americas-conference/
+    date: '2027-03-01'
+    access: full
+    locator: planned session list item 'Strategic approaches to using APAs & MAPs to enhance certainty & mitigate risk' (no AI link stated)
   notes: Idea only, discussed by a practitioner commentary (dated Oct 2024, older than the 12-18 month window and used as foundation). No deployment found. A TPMinds Americas 2027 planned session list includes APA/MAP certainty but does not tie it to AI (TPMINDS-AM-2027).
   archetype: tax
   module: transfer-pricing
@@ -987,7 +995,7 @@ No independent benchmark of AI accuracy, override rate or tax-authority acceptan
 - **To research-advisory:** advice on the TP of AI-enabled transactions, AI-generated assets and DEMPE in AI value chains. This includes the Bloomberg Tax commentary on pricing AI-generated content (BTAX-ZERBE-2026), the OECD Chapter VII examples and AstraZeneca's request (OECD-INTRAGROUP-2026), the IBA report on AI as a new type of transaction (IBA-TAXAI-2025), the KPMG podcast series on value, IP and cost allocation (KPMG-TPPOD1-2026, KPMG-TPPOD-2026), the TPMinds West Coast session on AI value chains (TPMINDS-WC-2026), and the Oxford CBT question on delegation to AI and substantive TP law (OXFORD-CBT-2026).
 - **To controversy (tax-authority AI):** authority-side AI in TP audit and risk assessment: the CIAT agent-based audit blog and working paper (CIAT-BLOG-2026, CIAT-WP06-2025), HMRC's ICTS proposal (KPMG-UK-ICTS-2025), IRS algorithms flagging distributor losses (TR-CHECKPOINT-2025, TR-CHECKPOINT-2026), and the PwC webcast on IRS AI-powered enforcement (TR-CHECKPOINT-2026).
 - **To tax-data-technology:** the agentic AI and digital tax transparency framework proposed for royalty withholding reconciliation and TP master-file cross-validation, an op-ed by a Samsung Electronics tax manager (BTAX-LEE-2025), and the TPMinds 'Tax Transformation and Technology' panel with Deutsche Bank, AstraZeneca and Temenos speakers (TPMINDS-INTL-2026).
-- **To international-pillar-two:** the TPMinds International session on operational implementation of Pillar Two, data and technology challenges (TPMINDS-INTL-2026, Pillar 2 Summit day).
+- **To international-pillar-two:** the TPMinds International Pillar 2 Summit session on operational implementation of Pillar Two, data and technology challenges (agenda page https://informaconnect.com/tp-minds-international-conference/agenda/4/, 18 June 2026; same ref family TPMINDS-INTL-2026).
 - **Cross-cutting:** an op-ed arguing that AI cannot replace a tax professional's judgment and skepticism, not specific to TP (BTAX-ZERBE-2025).
 
 ---
