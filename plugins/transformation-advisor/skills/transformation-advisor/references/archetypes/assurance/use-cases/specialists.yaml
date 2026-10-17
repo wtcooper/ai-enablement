@@ -469,39 +469,43 @@
     ISA 620 and PCAOB specialist material give valuation, actuarial, environmental, legal and tax examples, not AI
     [FRC-620STD-2026; PCAOB-SPECIALISTS-2025]. Audit teams still need people who can evaluate AI systems.
   solution: >-
-    ICAN asked the IAASB to expand application-material examples in ISA 620 and ISAE 3000 to refer to AI and
-    machine-learning experts, noting AI experts, data scientists and cybersecurity professionals are increasingly
-    engaged [ICAN-620-2025]. The AICPA says engagement teams may need specialist support [AICPA-PA-2026]. The FRC
+    In its July 2025 comment letter, ICAN asked the IAASB to expand application-material examples in ISA 620 and
+    ISAE 3000 to refer to AI and machine-learning experts, noting that AI experts, data scientists, cybersecurity
+    professionals and ESG specialists are increasingly engaged on assurance work [ICAN-620-2025]. The AICPA says
+    engagement teams may need a blend of AI knowledge, data skills and specialist support [AICPA-PA-2026]. The FRC
     reports a recent spike in demand for AI specialists across audit and consultancy [FRC-ARAQ-2026].
   outcomes:
     - { lever: capacity, description: "Share of Big Four job postings requiring AI expertise rose; this is hiring evidence, not evidence of AI specialists acting as auditor's experts", figure: "nearly 7% in 2025 versus under 2% in 2022", measures: "share of the four firms' job postings that required AI expertise, per an FT analysis as reported by Computerworld; one firm noted a single posting can cover multiple positions", provenance: independent, source_ref: COMPUTERWORLD-FT-2026 }
   prerequisites:
     - "Evaluation of the expert's competence, capabilities and objectivity under the revised ISA 620 (effective for periods commencing on or after 15 Dec 2026 in the UK version) [FRC-620STD-2026]"
   risks_and_guardrails:
-    - "An AI vendor or data-science team that built or tuned the client's system may face the objectivity threats ISA 620 para 9A treats as disqualifying if not reduced to an acceptable level [FRC-620STD-2026]"
+    - "An AI vendor or data-science team that built or tuned the client's system may face the objectivity threats ISA 620 para 9A treats as disqualifying if not eliminated or reduced to an acceptable level [FRC-620STD-2026]"
+    - "Under PCAOB standards, IT (like income taxes) is a specialized area of accounting and auditing outside the specialist standards; in 2018 the Board declined commenters' requests to bring areas such as AI into that scope [PCAOB-SPECREL-2018]"
   human_checkpoints:
     - "Auditor evaluates adequacy of the expert's work for the auditor's purposes [FRC-620STD-2026]"
   role_evolution: >-
     The FRC says firms must attract and retain staff for advanced technology, with a recent spike in demand for AI
-    specialists [FRC-ARAQ-2026]. About a third of 54 surveyed US firms said they needed at least one
-    non-traditional skill, led by data analysts, data scientists and IT specialists [CPACOM-ATR-2025].
+    specialists [FRC-ARAQ-2026]. About a third of the 54 firms in the CPA.com and AICPA survey said they needed at
+    least one non-traditional skill; data analysts or data scientists and IT specialists were mentioned most
+    [CPACOM-ATR-2025].
   evidence_grade: D
   sources:
     - { ref: ICAN-620-2025, title: "Response template, ED of proposed narrow-scope amendments arising from IESBA's Using the Work of an External Expert project (ICAN)", publisher: "Institute of Chartered Accountants of Nigeria", type: professional-body, url: "https://www.iaasb.org/sites/default/files/2025-07/IAASB-Exposure-Draft-Narrow-Scope-Amendments-Experts-Response-Template_0.pdf", date: "2025-07", access: full, locator: "Part B, question 4 'Other matters', item 2 (PDF p11)" }
     - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "'Considering an organization's use of AI' bullet on audit team capabilities" }
     - { ref: FRC-ARAQ-2026, title: "Annual Review of Audit Quality 2026", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9772/Annual_Review_of_Audit_Quality_2026_2eSTaw8P.pdf", date: "2026-07-22", access: full, locator: "p28 (resourcing and AI specialists)" }
     - { ref: COMPUTERWORLD-FT-2026, title: "The Big Four accounting firms are now hiring more AI specialists than accountants", publisher: "Computerworld (reporting an FT analysis)", type: press, url: "https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html", date: "2026-05-19", access: full, locator: "whole article" }
-    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "p20 (new approaches require new skills)" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "printed p19, PDF p20 (new approaches require new skills); p27 (methodology, 54 firms)" }
+    - { ref: PCAOB-SPECREL-2018, title: "Amendments to Auditing Standards for Auditor's Use of the Work of Specialists (PCAOB Release No. 2018-006)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket044/2018-006-specialists-final-rule.pdf", date: "2018-12-20", access: full, locator: "p4 (effective for fiscal years ending on or after 15 Dec 2020); pp A3-5 to A3-6 (income taxes and IT outside scope; commenters' AI request)" }
     - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9933/ISA_UK_620_Revised_September_2026_cR37odIc.pdf", date: "2026-09-23", access: full, locator: "paras 6(a), 9, 9A, A1, A19A" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From combined-13. Idea (label: idea). Change scope 'model' because the change is who does the work: a new kind
+    Idea (label: idea). Change scope 'model' because the change is who does the work: a new kind
     of auditor's expert. IT and AI-system assurance itself belongs to controls-testing and assurance-over-ai; this
     entry covers only how it touches ISA 620 and specialist use. ISA 620 defines an auditor's expert as an
     individual or organization, so on the standard's wording an AI tool is not itself an expert
-    [FRC-620STD-2026, para 6(a)]. The 2025 ICAN letter is the only one of 49 readable comment letters that names
-    AI, and the UK final standard shows no such addition. Hiring data is about AI roles generally, not auditor's
-    experts.
+    [FRC-620STD-2026, para 6(a)]. The UK final standard does not add AI experts to its examples (para A1 still lists
+    valuation, actuarial, reserves, environmental, legal and tax fields) [FRC-620STD-2026]. Hiring data is about AI
+    roles generally, not auditor's experts.
 
 - id: assurance-specialists-12
   title: Auditors use a firm-specific LLM on a complex inventory valuation task (randomized field experiment)
@@ -538,14 +542,14 @@
     - { ref: SSRN-LLMAQ-2026, title: "The Effect of Large Language Models on Audit Quality: Causal Evidence from a Randomized Field Experiment", publisher: "SSRN (Jezierski, Kaltenpoth, Mueller, Weissenberger)", type: academic, url: "https://doi.org/10.2139/ssrn.6095166", date: "2026", access: full, locator: "abstract (retrieved from the Crossref record; SSRN page blocked)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From combined-16. The strongest independent quality result found, but graded C: the firm is not named in the
+    The strongest independent quality result found, but graded C: the firm is not named in the
     abstract, so no named-organization measurement exists, and inventory valuation is a substantive procedure
     rather than specialist work. Kept here because it is the only causal evidence on AI in a valuation task by
     auditors. Abstract only; the paper's figures were not read. The Crossref record was created 2026-07-29; the
-    paper's posting date was not found. Also routed to substantive-testing.
+    exact SSRN posting date was not found. Also relevant to substantive testing.
 
 - id: assurance-specialists-13
-  title: "Tax specialists use a GenAI tax research assistant (adjacent: tax advisory, not audit tax specialists)"
+  title: "Tax advisers use AI tax tools: a predictive outcome tool in use and a GenAI research assistant announced (adjacent: tax advisory, not audit tax specialists)"
   archetype: assurance
   module: specialists
   function: service-delivery
@@ -558,28 +562,33 @@
   problem: >-
     Tax professionals spend time searching and analysing tax legislation and case law [KPMGUK-BLUEJ-2024].
   solution: >-
-    KPMG UK and Blue J announced on 22 Feb 2024 a generative AI product (Ask Blue J), built on fine-tuned OpenAI GPT
-    models and Blue J's curated tax content, to answer tax research questions. KPMG said it was available in the
-    firm's 3,000-strong tax and legal function and that KPMG would have exclusive access among UK Big Four firms
-    for three years [KPMGUK-BLUEJ-2024].
+    KPMG UK already used Blue J's AI, under an alliance dating from 2022, to predict tax scenario outcomes (such as
+    employed or self-employed status) for employees to review, and said that tool was available in its 3,000-strong
+    tax and legal function. On 22 Feb 2024 KPMG UK and Blue J announced they 'will launch' Ask Blue J, a generative
+    AI product built on OpenAI GPT models fine-tuned for tax and Blue J's curated tax content, with KPMG holding
+    exclusive access among UK Big Four firms for three years [KPMGUK-BLUEJ-2024].
   outcomes:
-    - { lever: speed, description: "The release says the tool dramatically reduces time spent searching legislation and case law; no figure given", figure: "none published", measures: "not applicable; qualitative claim", provenance: vendor-published, source_ref: KPMGUK-BLUEJ-2024 }
-    - { lever: quality, description: "KPMG says its earlier Blue J alliance predicts tax scenario outcomes, such as employed versus self-employed status, with 90%+ accuracy for employees to review; this refers to a separate predictive tool", figure: "90%+", measures: "accuracy of tax-scenario outcome predictions; basis and sample not stated", provenance: vendor-published, source_ref: KPMGUK-BLUEJ-2024 }
+    - { lever: speed, description: "The release says the existing predictive tool dramatically reduces time spent searching for and analysing legislation and case law; no figure given", figure: "none published", measures: "not applicable; qualitative claim", provenance: self-reported, source_ref: KPMGUK-BLUEJ-2024 }
+    - { lever: quality, description: "KPMG says the existing Blue J predictive tool forecasts tax scenario outcomes with 90%+ accuracy for employees to review; this is not the GenAI product", figure: "90%+", measures: "accuracy of tax-scenario outcome predictions; basis and sample not stated", provenance: self-reported, source_ref: KPMGUK-BLUEJ-2024 }
   prerequisites:
     - "Curated tax content database and a fine-tuned model [KPMGUK-BLUEJ-2024]"
   risks_and_guardrails:
     - "The release says employees review the predictions [KPMGUK-BLUEJ-2024]"
+    - "Under PCAOB standards, income taxes are a specialized area of accounting and auditing, not a 'specialist' field, whereas ISA 620 lists complex or unusual tax compliance issues as an expert field [PCAOB-SPECREL-2018; FRC-620STD-2026]"
   human_checkpoints:
     - "Tax professionals review outputs and advise clients [KPMGUK-BLUEJ-2024]"
-  role_evolution: "KPMG says tax experts can spend more time on complicated and urgent issues [KPMGUK-BLUEJ-2024]."
+  role_evolution: "KPMG says the predictive tool lets tax experts spend more time advising on complicated and urgent issues [KPMGUK-BLUEJ-2024]."
   evidence_grade: B
   sources:
     - { ref: KPMGUK-BLUEJ-2024, title: "KPMG UK and Blue J expand strategic alliance to introduce generative AI into tax tools", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/media/press-releases/2024/02/kpmg-uk-and-blue-j-expand-strategic-alliance-to-introduce-generative-ai-into-tax-tools.html", date: "2024-02-22", access: full, locator: "press release body" }
-    - { ref: HUX-2022, title: "Auditors' and Tax Specialists' Interprofessional Collaboration During Audit Engagements", publisher: "SSRN (Hux, Andiola, Noga)", type: academic, url: "https://doi.org/10.2139/ssrn.4260469", date: "2022", access: full, locator: "abstract via Crossref (cited in notes only)" }
+    - { ref: HUX-2022, title: "Auditors' and Tax Specialists' Interprofessional Collaboration During Audit Engagements: Implications for Audit Production and Audit Quality", publisher: "SSRN (Hux, Andiola, Noga)", type: academic, url: "https://doi.org/10.2139/ssrn.4260469", date: "2022-10-30", access: full, locator: "abstract via Crossref (cited in notes only)" }
+    - { ref: PCAOB-SPECREL-2018, title: "Amendments to Auditing Standards for Auditor's Use of the Work of Specialists (PCAOB Release No. 2018-006)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket044/2018-006-specialists-final-rule.pdf", date: "2018-12-20", access: full, locator: "p A3-5 (income taxes and IT are specialized areas of accounting and auditing)" }
+    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9933/ISA_UK_620_Revised_September_2026_cR37odIc.pdf", date: "2026-09-23", access: full, locator: "para A1" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From combined-17. Grade B is capped by adjacency: the release is about KPMG's tax and legal advisory function,
-    not specialists supporting audits. It also predates the 12-18 month window, so use it as a foundation; its
-    present status was not verified. The release says both that the product 'will launch' and that the tool is
-    'now available'. No source on audit income-tax-provision specialists using AI was found. Hux, Andiola and Noga
+    Grade B rests on the predictive tool KPMG says it uses (a named deployment, no measured outcome beyond a
+    self-reported accuracy claim); Ask Blue J itself was only announced in this source. The grade is capped by
+    adjacency: the release is about KPMG's tax and legal advisory function, not specialists supporting audits. It
+    also predates the 12-18 month window, so use it as a foundation; its present status was not verified. No
+    source on audit income-tax-provision specialists using AI was found. Hux, Andiola and Noga
     (2022) document audit tax specialists' roles through 33 interviews but do not cover AI [HUX-2022].
