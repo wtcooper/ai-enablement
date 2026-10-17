@@ -3,7 +3,7 @@
 Last reviewed 2026-10-17. Use cases live in `../use-cases/data-technology.yaml` (24 entries). Ids are shortened here:
 `#05` means `tax-data-technology-05`. Source keys in brackets, such as [TEI-TAXTECH-2026], are given in full in the YAML
 or in §10. **Evidence is thin.** No entry has a measured outcome from a named organisation (no grade A); 8 of 24 are
-grade B (a named deployment without published measurements), and two of those are not AI (#04, #05). Every survey
+grade B (a named deployment without published measurements), two of those are not AI (#04, #05), and the named example behind #23 does not mention AI. Every survey
 figure here comes from a firm or vendor that sells tax technology or services. Say so when you quote one.
 
 ## Contents
@@ -26,8 +26,7 @@ building and sustaining automation, real-time reporting interfaces (e-invoicing 
 where the authority receives invoice data as it is created), agent access to tax platforms through MCP (Model Context
 Protocol, a standard way for AI tools to call other systems), and the tax technology team and its governance. Tax
 determination engines, GloBE (Pillar Two) XML filing and notice response sit in indirect-tax, provision/Pillar Two
-and controversy. Practitioners at the April 2026 TEI seminar said whether the tools work is "effectively settled";
-the open problems are ownership, silent failures, training and token cost [TEI-TAXTECH-2026].
+and controversy. A Thomson Reuters Institute recap of the April 2026 TEI seminar says the question of whether the tools work is "effectively settled", and lists the harder problems as silent failures, tax rarely owning AI implementation, failed training rollouts and rising token costs [TEI-TAXTECH-2026].
 
 ## 2. Processes and key steps
 
@@ -39,7 +38,7 @@ the open problems are ownership, silent failures, training and token cost [TEI-T
 | Build automations | Pipelines, Alteryx or Power Platform flows, scripts, agents | software-systems | Requests wait about two months in the IT queue (anecdote) [TRINST-TEIAUDITOR-2026] |
 | Control and sustain automations | Document, version, approve, monitor, hand over | software-systems, review-assurance | Workflows nobody can explain after the builder leaves [TEI-TAXTECH-2026] |
 | Reconcile | Source transactions vs tax engine vs ledger vs returns | review-assurance, data-reporting | Manual month-end spreadsheets [SAVANT-ROVER-2026] |
-| Real-time reporting | Validate, submit, handle rejected e-invoices | transaction-processing | A rejected invoice has no legal force in clearance regimes [TRINST-TEIAUDITOR-2026] |
+| Real-time reporting | Validate, submit, handle rejected e-invoices | transaction-processing | In clearance regimes an invoice has no legal force until the authority returns its identifier [TRINST-TEIAUDITOR-2026] |
 | Notices and documents | Extract data from notices, statements, contracts | transaction-processing | Notices "never arrive in the same format twice" [TRINST-TEIAUDITOR-2026] |
 | Query and report | Dashboards and analysis on tax data | data-reporting | Manual refreshes of dashboards and spreadsheets [SNOWFLAKE-JOB-2026] |
 | Agent access | Assistants and agents call tax platforms | software-systems | Custom integration for each system [AVALARA-MCP-2026] |
@@ -70,8 +69,7 @@ have no named deployment and #12 is a regulatory regime.
   15 minutes against about two months in the IT queue as attendees described it. `#08` automations as controlled
   assets: version control, sign-off before production, evidence logs, drift monitoring (grade B, Oxford Industries
   quoted by Savant).
-- Automate: `#09` scheduled multi-system reconciliation; Rover reports 80% less close time and 50% lower data
-  handling cost (grade B; vendor-published, sales tax process, what was timed is unclear).
+- Automate: `#09` scheduled multi-system reconciliation; Savant reports 80% less close time and 50% lower data handling cost at Rover (grade B; vendor-published, sales tax process, what was timed is unclear).
 - Delegate (idea): `#10` multi-agent workflows from provision to return and credits, people on exceptions.
 
 **Real-time reporting interface**
@@ -80,7 +78,7 @@ have no named deployment and #12 is a regulatory regime.
   configuration and proposes fixes for approval.
 - Automate: `#13` validation of invoice and master data before submission, with preventive controls upstream.
   `#16` idea: continuous reconciliation of calculated, invoiced, reported and authority-held data.
-- Reinvent: `#12` real-time transaction reporting replaces periodic returns (ViDA from 2030-07-01; UK from 2029).
+- Reinvent: `#12` real-time transaction reporting replaces periodic returns (ViDA cross-border reporting from 2030-07-01; the UK's 2029 e-invoicing mandate initially has no e-reporting to HMRC [FISCAL-UK-2026]).
   The only independent measure in this module is here: Peru's e-invoicing raised reported sales, purchases and VAT
   liabilities by over 5% in the first year [BELLON-PERU-2022]. It measures the regime, not AI.
 
@@ -91,7 +89,7 @@ have no named deployment and #12 is a regulatory regime.
 - Improve: `#17` read-only MCP access so a general assistant answers from the company's own compliance data
   (Kintsugi, announced).
 - Delegate: `#18` company agents call tax engines through vendor MCP servers with least-privilege scopes and logged
-  tool calls (Avalara shipped servers; Sovos gateway in development; no customer use published).
+  tool calls (Avalara and Anrok list write-capable servers; Sovos gateway in development; no customer use published).
 
 **Governance and evidence**
 - Improve: `#19` decision log of AI-assisted determinations, overrides and approvals, recorded as work happens.
@@ -100,8 +98,7 @@ have no named deployment and #12 is a regulatory regime.
 
 **Operating model and sourcing**
 - Reinvent: `#22` AI-first in-house model where tax staff build and review database-driven workflows (grade B,
-  OpenAI postings and a live demonstration). `#23` central tax operations and technology team (grade B, Unilever Ice
-  Cream's tax operations centre, podcast description). `#24` co-sourced or managed tax operations on a provider's AI
+  OpenAI postings and a live demonstration). `#23` central tax operations and technology team (grade B, Unilever's centralised tax operations centre, from a podcast episode listing; AI is not mentioned). `#24` co-sourced or managed tax operations on a provider's AI
   platform, with AI-use due diligence on providers (delegate; survey evidence only).
 
 **Covered in other tax modules (cross-references, not duplicated):** ledger-to-tax mapping in compliance
@@ -124,20 +121,16 @@ enterprise tools (`tax-compliance-corporate-20`), deterministic engines with a m
    Germany these are the top hurdles (47% and 41%) [KPMG-DE-2026].
 5. **Who owns AI in tax: tax, IT or finance? Is there an inventory and a policy?** Only 2 of 50+ TEI attendees said
    tax [TEI-TAXTECH-2026]; 45% of departments had no relevant policy [TR-TENSIONS-2025]. Points to `#20`.
-6. **What accuracy or override rate did you set before go-live, and what do you measure now?** Most set none
-   (12.5% have AI KPIs [FONOA-2026]); no baseline means no business case (`#21`).
+6. **What accuracy or override rate did you set before go-live, and what do you measure now?** No source measures this; as a proxy, only 12.5% of indirect tax leaders in Fonoa's survey have AI targets or KPIs [FONOA-2026] (`#21`).
 7. **When an agent or pipeline changes a number or mapping, where is it logged, who approves it, and is the fix
    written back to the source system?** Tests `#19` and Deloitte's write-back point [DELOITTE-TTT-2026].
 8. **In each clearance or real-time reporting country, what is your rejection rate, how many causes are master
    data, and who fixes them how fast?** Sizes `#13` and `#14`; shows whether ViDA has one owner [TR-VIDA-2026].
-9. **What would the authority see about your transactions before an audit that you cannot see yourself?** Panelists
-   said authorities arrive knowing more [TRINST-TEIAUDITOR-2026]. Gauges interest in `#16`.
+9. **What would the authority see about your transactions before an audit that you cannot see yourself?** A panel speaker said that in mature continuous-transaction-control regimes authorities arrive at audits knowing more than the company [TRINST-TEIAUDITOR-2026]. Gauges interest in `#16`.
 10. **If an agent can call your tax engine, which scopes does it hold, where are tool calls logged, and who reviews
     them?** Separates `#17` (read-only) from `#18` (agents that act) and tests the controls in [AVALARA-MCP-2026].
-11. **What have you budgeted for model and token costs against measured time saved?** Token cost was raised at TEI
-    with no figures anywhere [TEI-TAXTECH-2026].
-12. **Which work do outside providers do with AI on your data, and do you know how?** 59% of departments are not
-    sure [TR-TENSIONS-2025]. Relevant to `#24`.
+11. **What have you budgeted for model and token costs against measured time saved?** The TEI recap lists rising token costs as a problem; no source gives figures [TEI-TAXTECH-2026].
+12. **Which work do outside providers do with AI on your data, and do you know how?** Thomson Reuters reports that 59% "aren't sure if their companies are using GenAI" and presents it as a provider-transparency gap [TR-TENSIONS-2025]. Relevant to `#24`.
 
 ## 5. Metrics and benchmarks
 
@@ -149,7 +142,7 @@ process. None has a published benchmark for AI in tax data work.
 
 | Figure | What it counts | Source and caveat |
 |---|---|---|
-| 51%; 44% | Tax and finance functions early in data management maturity; naming an unsustainable data, AI and tech plan as the top barrier (1,600 leaders) | [EY-TFO-2025]; firm survey |
+| 51%; 44% | Tax and finance functions early in data management maturity; naming the inability to execute on a sustainable data, AI and tech plan as the biggest barrier (1,600 leaders) | [EY-TFO-2025]; firm survey |
 | 80%; 91% | See insufficient AI-ready data as a significant barrier; data in too many silos | [BTAX-EYTFO-2026]; write-up of the EY survey, not on EY's release |
 | 53% to 21% | Time on routine work now, and the share respondents would like | [BTAX-EYTFO-2026] |
 | 58% (51% a year earlier) | Corporate tax departments calling themselves under-resourced | [TR-CORPTAX-2025]; vendor survey |
@@ -160,9 +153,9 @@ process. None has a published benchmark for AI in tax data work.
 | 77% | Tax leaders requiring 90%+ accuracy before entrusting AI with tax processes | [DELOITTE-LU-2025]; sample not stated |
 | 17% / 21% / 45% | Departments with an AI policy / covered by general policy / no relevant policy | [TR-TENSIONS-2025] |
 | 86%; 22% | Familiar with ViDA; with a formal transition programme | [TR-VIDA-2026]; sample not stated |
-| 80%; 50% | Rover: less month-end close time; lower data handling cost | [SAVANT-ROVER-2026]; vendor-published |
+| 80%; 50% | Rover, as reported by Savant: less month-end close time; lower data handling cost | [SAVANT-ROVER-2026]; vendor-published; what was timed is unclear |
 | 1.6% vs ~20% | Sovos invoice rejection rate in France vs an unsourced market estimate | [SOVOS-FRANCE-2026]; AI share not stated |
-| 87%; 41% | Automation users with some bot failures; maintenance heavier than expected (2019, all industries) | [PEGA-RPA-2019] |
+| 87%; 41% | Automation users with some bot failures; maintenance heavier than expected (2019; 509 RPA users in five industries, none of them tax) | [PEGA-RPA-2019] |
 | fewer than 1/3 | Simplified federal returns computed correctly by frontier models | [COLUMN-TAXCALCBENCH-2025]; vendor authors |
 | over 5% | Rise in reported sales, purchases and VAT liabilities after e-invoicing, Peru | [BELLON-PERU-2022]; independent, regime-level |
 
@@ -188,10 +181,9 @@ pipelines, mappings, reconciliations or e-invoice interfaces; any figure for age
   confused deputy problem [MCP-SPEC-2025]; vendor advice is least-privilege scopes, consent audits, logging every
   tool call and idempotent filings [AVALARA-MCP-2026]. NIST launched an AI Agent Standards Initiative on
   2026-02-17 [NIST-CAISI-2026].
-- **Write-back.** Agentic corrections to source data should be stored back in the system of record [DELOITTE-TTT-2026].
+- **Write-back.** Deloitte says agentic corrections to source data will need to be stored back in the system of record to keep an audit-ready posture [DELOITTE-TTT-2026].
 - **Practitioner duties.** IRS OPR Alert 2026-19 applies Circular 230 duties to practitioners using AI (verify
-  facts, citations and calculations; vet third-party tools) [IRS-OPR-2026]. It reaches in-house teams mainly through
-  their providers. The UK Senior Accounting Officer regime puts personal accountability on named executives for tax
+  facts, citations and calculations; vet third-party tools) [IRS-OPR-2026]. It is addressed to practitioners before the IRS, not to in-house departments as such. The UK Senior Accounting Officer regime puts personal accountability on named executives for tax
   accounting arrangements [TR-GOVERNANCE-2026].
 - **Risk frameworks, not standards.** The AICPA-published Werfel framework and register [AICPA-WERFEL-2026] and the
   AICPA's Council on AI Risk in Tax, launched 2026-09-23 [AICPA-CART-2026].
@@ -208,13 +200,11 @@ off data requirements for new business lines; owning each compliance decision an
   recap calls the high-end job "as much a data science problem as an accounting one" [TRINST-TEIAUDITOR-2026].
 - **Preparer to reviewer.** OpenAI's 2026 posting says the role is "not a traditional tax role": more review,
   validation and building, less return preparation [OPENAI-USTAXOPSJOB-2026].
-- **New owners.** Control owners approve promotion of automations to production [SAVANT-SPRING-2026]; tax technology
-  staff own agent scopes and logs [AVALARA-MCP-2026]. PwC Ireland expects tax data leads and model governance leads
+- **New owners.** Control owners approve promotion of automations to production [SAVANT-SPRING-2026]; Avalara addresses its scope and logging advice to developers and partners, and no source says who in tax owns agent access [AVALARA-MCP-2026]. PwC Ireland expects tax data leads and model governance leads
   [PWC-IE-2026]. 88% of departments now name a tax technology lead [TR-REBRAND-2026].
 - **Hiring and skills.** 73% prioritise hiring data scientists and tax technology experts; 89% upskill existing
   staff [EY-TFO-2025]. 45% name AI skills as their greatest need in one to two years [DELOITTE-LU-2025].
-- **Headcount.** 58% of German respondents expect stable domestic tax headcount, 72% abroad [KPMG-DE-2026]. A law
-  professor argues teams will not shrink much because AI cannot bear culpability (abstract only) [SALA-TAXNOTES-2026].
+- **Headcount.** 58% of German respondents expect stable domestic tax headcount, 72% abroad [KPMG-DE-2026]. Michael Sala argues in Tax Notes State that teams will not shrink much because AI cannot bear culpability (abstract only) [SALA-TAXNOTES-2026].
 - **Change.** "You will not survive in this field if you don't have a change mindset", a senior director said
   [TEI-TAXTECH-2026]. A tool meant to save two hours took a day when users were not consulted [TEI-TAXTECH-2026].
 
@@ -224,8 +214,7 @@ off data requirements for new business lines; owning each compliance decision an
 - **2025-10-06:** Avalara announces MCP servers so third-party agents can call its APIs [AVALARA-AGENTIC-2025].
 - **2025-10-08:** Deloitte Tax and Databricks alliance for a unified tax data architecture [DELOITTE-DATABRICKS-2025].
 - **2025-11-18:** Vertex Configuration Agent for Dynamics 365 in the Microsoft Marketplace [VERTEX-CONFIGAGENT-2025].
-- **2025-11-20:** OECD tax administrations agree to move toward real-time automated information-sharing pilots
-  [OECD-FTA-2025].
+- **2025-11-20:** Heads of 49 tax administrations in the OECD Forum on Tax Administration agree to deepen real-time information sharing and back pilot projects [OECD-FTA-STATEMENT-2025].
 - **2025-12-09:** MCP moves to the Linux Foundation's Agentic AI Foundation [LF-AAIF-2025].
 - **2026-02-23:** COSO releases generative AI internal-control guidance [DART-COSO-2026].
 - **2026-03-24:** Sovos says it is developing an MCP gateway, with A2A expected over time [SOVOS-SOVI-2026].
@@ -237,7 +226,7 @@ off data requirements for new business lines; owning each compliance decision an
 - **2026-08-18:** Snowflake's tax posting describes replacing BI workflows with agents [SNOWFLAKE-JOB-2026].
 - **2026-09:** France's e-invoicing mandate goes live [SOVOS-FRANCE-GOLIVE-2026]; Kintsugi ships a read-only MCP
   server (2026-09-18) [KINTSUGI-MCP-2026].
-- **2026-10-01:** Sovos announces it is acquiring Flowie, whose agents run finance processes on ERP systems
+- **2026-10-01:** Sovos announces it has acquired Flowie, whose agents run finance processes on ERP systems
   (announced only) [SOVOS-FLOWIE-2026].
 - **Ahead:** UK e-invoicing roadmap at Budget 2026 [UK-EINV-2025]; ViDA digital reporting from 2030-07-01
   [EC-VIDA-2026].
@@ -262,8 +251,8 @@ makes master data a legal-validity issue; "continuous audit controls" discussed 
 - **"We can't defend AI decisions to an authority."** 57.4% say so [FONOA-2026]. Response: a BDO partner quoted by
   Fonoa says the task is demonstrating a process, not defending a technology; build the trail (`#19`).
 - **"Token costs will kill the case."** Raised at TEI, with no figures anywhere [TEI-TAXTECH-2026]. Response:
-  only 20% measure ROI [TR-TENSIONS-2025]; set baselines first (`#21`).
-- **"The authority will see it first anyway."** Panelists said authorities arrive knowing more than the company;
+  only 20% of organisations across professional services measure ROI [TR-TENSIONS-2025]; set baselines first (`#21`).
+- **"The authority will see it first anyway."** A panel speaker said that in mature CTC regimes authorities arrive knowing more than the company;
   padding numbers with a safety margin and accepting the audit drew "Do not do this" [TRINST-TEIAUDITOR-2026].
   Response: validate before submission and reconcile continuously (`#13`, `#16`).
 - **"Vendors' governance claims are untested."** Correct: no auditor test was found [SAVANT-SPRING-2026]. Response:

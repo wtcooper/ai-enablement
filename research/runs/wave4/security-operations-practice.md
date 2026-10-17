@@ -1,6 +1,6 @@
 # Security operations (SOC): practice deep dive
 
-Archetype: security. Module: operations. Angle: practice. Compiled 2026-10-17. Working files were kept in a private `mktemp -d` folder. Web search was used 5 times (Google triage agent, independent benchmarks, in-house SOC write-ups, detection-engineering deployments, Arctic Wolf launch). All other sources were opened with `curl`, `pdftotext`, the Greenhouse public job API or the `r.jina.ai` mirror.
+Archetype: security. Module: operations. Angle: practice. Compiled 2026-10-17. Working files were kept in a private `mktemp -d` folder. Web search was used 6 times (Google triage agent, independent benchmarks, in-house SOC write-ups, the Elastic accuracy post, detection-engineering deployments, Arctic Wolf launch). All other sources were opened with `curl`, `pdftotext`, the Greenhouse public job API or the `r.jina.ai` mirror.
 
 ## 1. Summary
 
@@ -334,7 +334,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
     - { ref: ESENTIRE-2026, title: "Managed Detection and Response Services & Security Operations Platform", publisher: eSentire, type: vendor, url: "https://www.esentire.com/", date: 2026-05-07, access: full, locator: "Home page 'Controlled Autonomy SecOps' paragraph (page modified date)" }
     - { ref: SOPHOS-MDR-2026, title: "Sophos MDR | 24/7 Managed Detection & Response | Agentic SOC", publisher: Sophos, type: vendor, url: "https://www.sophos.com/en-us/products/managed-detection-and-response", date: 2026-10-17, access: full, locator: "Product page text read through the text mirror; no publication date on page, date shown is retrieval date" }
   last_reviewed: 2026-10-17
-  notes: "All performance claims come from the providers. The CIO.com article reads like vendor-supplied material (no independent data). Launch date for Arctic Wolf's Aurora Agentic SOC (RSAC, 2026-03-23) was seen only in search results (search-only). Arctic Wolf's home page says 'fewer than 5 percent of security teams have agentic capabilities today' without a source; not used as a figure."
+  notes: "All performance claims come from the providers. The CIO.com article reads like vendor-supplied material (no independent data). Launch date for Arctic Wolf's Aurora Agentic SOC (RSAC, 2026-03-23) was seen only in search results (search-only). Arctic Wolf's home page (ARCTICWOLF-AURORA-2026) says 'fewer than 5 percent of security teams have agentic capabilities today' without a source; not used as a figure."
 
 - id: security-operations-11
   title: SOC teams build their own agents in a no-code workspace
@@ -501,7 +501,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
   solution: "Analysts receive an agent's evidence gathering and report and decide on the verdict. Two controlled or comparative studies measured the effect: a Cloud Security Alliance benchmark with an AI investigation platform and a university SOC study of a locally deployed ReAct agent."
   outcomes:
     - { lever: speed, description: "AI-assisted analysts completed investigations faster than manual analysts in two scenarios", figure: "45-61% faster (58 vs 105 minutes; 30 vs 78 minutes)", measures: "investigation time in two simulated scenarios (AWS and Microsoft Entra ID alerts); participants randomly assigned to AI-assisted or manual groups (148 participants in total)", provenance: vendor-published, source_ref: DROPZONE-CSA148-2026 }
-    - { lever: quality, description: "Accuracy of investigations in the same two scenarios", figure: "68% to 97% and 63% to 85% (CSA summary: 22-29% higher accuracy)", measures: "accuracy as scored in the study; the CSA summary does not say whether 22-29% are percentage points", provenance: vendor-published, source_ref: CSA-BENCH-2025 }
+    - { lever: quality, description: "Accuracy of investigations in the same two scenarios", figure: "68% to 97% and 63% to 85% (CSA summary: 22-29% higher accuracy)", measures: "accuracy as scored in the study; the CSA summary does not say whether 22-29% are percentage points", provenance: vendor-published, source_ref: DROPZONE-CSA148-2026 }
     - { lever: speed, description: "AI-assisted triage reduced ticket completion time in a university SOC", figure: "about 40%", measures: "average ticket completion time over 8 real tickets, each handled once manually and once with the agent, by the researchers who built it", provenance: independent, source_ref: NDSS-WOSOC-2026 }
   prerequisites:
     - "Integrated access to SIEM, enrichment and OSINT tools; in the university study the agent ran locally so data did not leave the network"
@@ -687,6 +687,8 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
 | Amazon rule production | 336% faster | vs manual rule creation | `AMAZON-RULEFORGE-2026` | self-reported |
 | Independent production measurement of false negatives or override rates | none found | | | |
 
+Other academic design work read (abstracts only, no production outcomes): CORTEX multi-agent triage with a released dataset of production SOC investigations (`ARXIV-2510.00311`); SIABench, 160 scenarios benchmarking 11 LLMs on incident analysis and alert triage (`ARXIV-2603.06422`); a human-machine co-teaming vision that invites SOCs to collaborate on measurement (`ARXIV-2505.06394`).
+
 ### Guardrails and regulatory points
 
 - No regulator source was read for this module. Governance is handled in the sibling module brief; the points below are what practice sources show.
@@ -750,7 +752,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
 
 ## 5. Sources
 
-Type counts (distinct refs, 62 total, including 1 search-only): vendor 29, academic 10, job-posting 7, press 2, professional-body 2, conference 1, survey 1. Access: 61 full, 1 search-only.
+Type counts (distinct refs, 54 total): vendor 31, academic 9, job-posting 7, press 3, professional-body 2, conference 1, survey 1. Access: 53 full, 1 search-only. Vendor-authored material dominates because named SOC deployments are mostly published by the provider; six refs (the three unused arXiv abstracts, `ARCTICWOLF-AURORA-2026`, `PROPHET-JBPCO-2026`, `AWS-SIRBENCH-2026`) support notes rather than use-case outcomes.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
