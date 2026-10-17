@@ -10,7 +10,7 @@
 # Planet), -13 and -14 (automated patching limits, patch validation), -15 (dependency remediation), -17 and -18
 # (autonomous pentest agents). Google pre-submit scanning and the Trail of Bits Miden tooling live here.
 # Source refs are canonical keys; where the angle files used different keys for one document, one key is kept
-# (TOB-MIDEN-2026 = TOB-AUDITING-2026 = TOB-AUDIT-2026; GITHUB-SECUREFUND-2026 = GITHUB-FUND-2026). Outcome
+# (TOB-AUDIT-2026 = TOB-AUDITING-2026 = TOB-AUDIT-2026; GITHUB-SECUREFUND-2026 = GITHUB-FUND-2026). Outcome
 # provenance says who published each figure: almost all are self-reported by the deploying organisation or published
 # by a vendor about its own product. No independent production measurement of an AI AppSec tool exists.
 
@@ -61,9 +61,9 @@
     - {ref: UNPROMPTED-2026, title: "[un]prompted 2026 agenda (conference 2026-10-27 to 2026-10-29, San Francisco; abstracts of upcoming talks)", publisher: "[un]prompted (AI security practitioner conference)", type: conference, url: "https://unpromptedcon.org/agenda-10-2026/", date: "2026-10-06", access: full, locator: "Session: There Isn't a Security Problem an Agent Can't Help Solve (Amol Deshpande, Stripe)"}
     - {ref: ANTHROPIC-JOB-APPSEC-2026, title: "Job posting: Staff+ Application Security Engineer (first published 2025-01-22, updated 2026-08-21)", publisher: "Anthropic (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/4502508008", date: "2026-08-21", access: full, locator: "About the role; Representative projects"}
     - {ref: MONGODB-JOB-PSE-2026, title: "Job posting: Senior Product Security Engineer, Assessments", publisher: "MongoDB (Greenhouse)", type: job-posting, url: "https://www.mongodb.com/careers/job/?gh_jid=8268264", date: "2026-10-12", access: full, locator: "Responsibilities: AI-based analysis for threat modelling and pentest workflows"}
-    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "'Spec reviewer' section"}
-    - {ref: GTIG-AVDH-2026, title: "Staying Ahead of Adversarial AI Through Agentic Source Code Review", publisher: "Google Cloud Blog (Google Threat Intelligence Group / Mandiant)", type: firm, url: "https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review", date: "2026-08-18", access: full, locator: "Threat model approval gate"}
-    - {ref: USENIX-SEC-2026, title: "35th USENIX Security Symposium technical sessions (talk by Preeti Ravindra on deriving and diffing threat models)", publisher: "USENIX", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/technical-sessions", date: "2026-08", access: full, locator: "Talk abstract preceding the Test of Time discussion"}
+    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog (Timo Reimann)", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "'Spec reviewer' section"}
+    - {ref: GTIG-AVDH-2026, title: "Staying Ahead of Adversarial AI Through Agentic Source Code Review", publisher: "Google Threat Intelligence Group / Mandiant (Google Cloud Blog)", type: firm, url: "https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review/", date: "2026-08-18", access: full, locator: "Threat model approval gate"}
+    - {ref: USENIX-SEC-2026, title: "35th USENIX Security Symposium technical sessions", publisher: "USENIX", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/technical-sessions", date: "2026-08", access: full, locator: "Talk by Preeti Ravindra on deriving and diffing threat models; Talk abstract preceding the Test of Time discussion"}
   last_reviewed: "2026-10-17"
   notes: >-
     Grade B rests on Anthropic's present-tense description of AI-assisted threat modelling for design reviews,
@@ -243,18 +243,18 @@
   human_checkpoints:
     - "Engineers can override a block; the post gives no figure for human re-review of AI approvals (CLOUDFLARE-CODEREVIEW-2026)"
     - "Security engineers validated comments before developer reporting in the shadow deployment (ARXIV-2601.19138)"
-    - "Human review continues alongside AI review on curl (STENBERG-MYTHOS-2026)"
+    - "Human review continues alongside AI review on curl (CURL-STENBERG-2026)"
   role_evolution: >-
     Cloudflare describes the earlier cycle as a reviewer context-switching to leave nitpicks while authors waited hours
     for a first review (CLOUDFLARE-CODEREVIEW-2026, introduction). curl's maintainer says review bots regularly
-    highlight issues that get fixed and that AI reviews do not replace humans (STENBERG-MYTHOS-2026).
+    highlight issues that get fixed and that AI reviews do not replace humans (CURL-STENBERG-2026).
   evidence_grade: A
   sources:
     - {ref: CLOUDFLARE-CODEREVIEW-2026, title: "Orchestrating AI Code Review at scale", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/ai-code-review", date: "2026-04-20", access: full, locator: "Introduction; results for the first 30 days; cost and risk-tier sections"}
     - {ref: ARXIV-2601.19138, title: "AgenticSCR: An Autonomous Agentic Secure Code Review for Immature Vulnerabilities Detection", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2601.19138", date: "2026-01-27", access: full, locator: "Abstract"}
     - {ref: ANTHROPIC-SECREVIEW-2025, title: "Automate security reviews with Claude Code", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/automate-security-reviews-with-claude-code", date: "2025-08-06", access: full, locator: "The /security-review command and GitHub Action; examples caught internally"}
     - {ref: SEMGREP-CURSOR-2026, title: "Cursor Origin Security Scanning: Semgrep Checks Every PR", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/cursor-origin-security-scanning", date: "2026-10-14", access: full, locator: "Scans on every pull request in Cursor Origin"}
-    - {ref: STENBERG-MYTHOS-2026, title: "Mythos finds a curl vulnerability", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead developer)", type: community, url: "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/", date: "2026-05-11", access: full, locator: "Section 'AI scans of curl'"}
+    - {ref: CURL-STENBERG-2026, title: "Mythos finds a curl vulnerability", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead developer)", type: community, url: "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/", date: "2026-05-11", access: full, locator: "Section 'AI scans of curl'"}
     - {ref: ARXIV-2603.18740, title: "Measuring and Exploiting Contextual Bias in LLM-Assisted Security Code Review", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.18740", date: "2026-03-19", access: full, locator: "Abstract"}
     - {ref: ARXIV-2202.04586, title: "Less is More: Supporting Developers in Vulnerability Detection during Code Review", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2202.04586", date: "2022-02-09", access: full, locator: "Abstract"}
     - {ref: SEMGREP-ENDCR-2026, title: "AI Code Review and the End of Reviewing Every Change (listing title: The End Is Nigh for Code Review)", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/end-is-nigh-for-code-review", date: "2026-10-09", access: full, locator: "Section citing the 2022 reviewer study"}
@@ -305,7 +305,7 @@
     introduction).
   evidence_grade: B
   sources:
-    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "Introduction; 'AI code reviewer' and 'Spec reviewer' sections"}
+    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog (Timo Reimann)", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "Introduction; 'AI code reviewer' and 'Spec reviewer' sections"}
     - {ref: TLDRSEC-346-2026, title: "[tl;dr sec] #346 - Can AI Do Novel Security Research?", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-346", date: "2026-09-17", access: full, locator: "AppSec section, Cloudflare item"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -475,7 +475,7 @@
     - {ref: OPENAI-CODEXSEC-2026, title: "Codex Security: now in research preview", publisher: "OpenAI", type: vendor, url: "https://openai.com/index/codex-security-now-in-research-preview/", date: "2026-03-06", access: full, locator: "Intro; How it works; named early users NETGEAR and vLLM; scan statistics"}
     - {ref: OPENAI-AARDVARK-2025, title: "Introducing Aardvark: OpenAI's agentic security researcher (page updated 2026-03-06 to say Aardvark is now Codex Security)", publisher: "OpenAI", type: vendor, url: "https://openai.com/index/introducing-aardvark/", date: "2025-10-30", access: full, locator: "Benchmark testing on golden repositories"}
     - {ref: ANTHROPIC-CCS-2026, title: "Making frontier cybersecurity capabilities available to defenders (Claude Code Security)", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/claude-code-security", date: "2026-02-20", access: full, locator: "Limited research preview; multi-stage verification; human approval"}
-    - {ref: WIZ-AISAST-2026, title: "Wiz AI SAST: AI Code Security With Code-to-Cloud Context", publisher: "Wiz Blog", type: vendor, url: "https://www.wiz.io/blog/introducing-wiz-ai-sast", date: "2026-10-06", access: full, locator: "Public preview announcement"}
+    - {ref: WIZ-AISAST-2026, title: "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure", publisher: "Wiz Blog", type: vendor, url: "https://www.wiz.io/blog/introducing-wiz-ai-sast", date: "2026-10-06", access: full, locator: "Public preview announcement"}
     - {ref: SEMGREP-AGENTICWF-2026, title: "Introducing Semgrep Agentic Workflows: Automate Deep Vulnerability Hunting at Scale (date from the Semgrep blog listing)", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/introducing-semgrep-agentic-workflows-automate-deep-vulnerability-hunting-at-scale", date: "2026-07-28", access: full, locator: "Nine agentic workflows in public beta; design partner feedback; benchmark claim"}
     - {ref: SNYK-AGENTIC-2026, title: "Introducing Evo Agentic AppSec: Security That Keeps Up With AI Development", publisher: "Snyk Blog", type: vendor, url: "https://snyk.io/blog/announcing-snyk-agentic-appsec/", date: "2026-10-15", access: full, locator: "Evo Code Scanning Agent and Security Review Agent"}
     - {ref: UNPROMPTED-2026, title: "[un]prompted 2026 agenda (conference 2026-10-27 to 2026-10-29, San Francisco; abstracts of upcoming talks)", publisher: "[un]prompted (AI security practitioner conference)", type: conference, url: "https://unpromptedcon.org/agenda-10-2026/", date: "2026-10-06", access: full, locator: "Session: The Scanner Said Clean. We Ran It Again (Petr Simecek, AISLE)"}
@@ -626,24 +626,24 @@
     formal model) of the VM executor, then used those tools in manual and agent-driven review. One AI model planned
     and developed while another reviewed code.
   outcomes:
-    - {lever: quality, description: "Machine-checked correctness proofs", figure: "95", measures: "proofs produced from the agent-built Lean model, covering a large component of the Miden core library", provenance: self-reported, source_ref: TOB-MIDEN-2026}
-    - {lever: quality, description: "Analysis findings during the audit", figure: "over 400 unique locations where type validation could be improved; one high-severity issue", measures: "unique locations reachable from the core library's public API flagged by the analysis passes (locations, not distinct bugs); the high-severity issue involved an unvalidated prover-supplied value", provenance: self-reported, source_ref: TOB-MIDEN-2026}
+    - {lever: quality, description: "Machine-checked correctness proofs", figure: "95", measures: "proofs produced from the agent-built Lean model, covering a large component of the Miden core library", provenance: self-reported, source_ref: TOB-AUDIT-2026}
+    - {lever: quality, description: "Analysis findings during the audit", figure: "over 400 unique locations where type validation could be improved; one high-severity issue", measures: "unique locations reachable from the core library's public API flagged by the analysis passes (locations, not distinct bugs); the high-severity issue involved an unvalidated prover-supplied value", provenance: self-reported, source_ref: TOB-AUDIT-2026}
   prerequisites:
     - "Months of lead time before the audit"
     - "Engineers who can specify and verify the tools agents build"
     - "Client scope that allows the work"
   risks_and_guardrails:
-    - "The decompiler was restricted to a subset that can be decompiled correctly and compared at random against originals for regressions (TOB-MIDEN-2026)"
+    - "The decompiler was restricted to a subset that can be decompiled correctly and compared at random against originals for regressions (TOB-AUDIT-2026)"
     - "The post is the firm's own account; no independent verification of the proofs or findings was read"
   human_checkpoints:
-    - "Auditors use and check the tools during the manual review (TOB-MIDEN-2026)"
+    - "Auditors use and check the tools during the manual review (TOB-AUDIT-2026)"
   role_evolution: >-
     The post describes agents extending what reviewers can do before code review begins, not only agentic code review
-    (TOB-MIDEN-2026). The firm says its security expertise compounds as code: each engagement's skills and workflows
+    (TOB-AUDIT-2026). The firm says its security expertise compounds as code: each engagement's skills and workflows
     make the next one faster (TOB-AINATIVE-2026).
   evidence_grade: A
   sources:
-    - {ref: TOB-MIDEN-2026, title: "Auditing in the age of (good enough) AI", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/", date: "2026-09-18", access: full, locator: "Introduction; 'Building all the tools!'; 'Finding all the bugs!'"}
+    - {ref: TOB-AUDIT-2026, title: "Auditing in the age of (good enough) AI", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/", date: "2026-09-18", access: full, locator: "Introduction; 'Building all the tools!'; 'Finding all the bugs!'"}
     - {ref: TOB-AINATIVE-2026, title: "How we made Trail of Bits AI-native (so far)", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/03/31/how-we-made-trail-of-bits-ai-native-so-far/", date: "2026-03-31", access: full, locator: "AI-native definition"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -779,7 +779,7 @@
   outcomes:
     - {lever: speed, description: "Time from a major incident to updated malware detection", figure: "within minutes", measures: "Semgrep's statement, with no measured distribution", provenance: vendor-published, source_ref: SEMGREP-MALWARE-2026}
     - {lever: risk, description: "Independent bypass test of deployed skill scanners", figure: "all tested scanners bypassed with four purpose-built malicious skills", measures: "Trail of Bits bypassed ClawHub's detector, Cisco's skill scanner and the three scanners in skills.sh; three of the four skills took under an hour to build, the fourth a few hours", provenance: independent, source_ref: TOB-SKILLS-2026}
-    - {lever: risk, description: "Researcher's bypass of OpenSearch's model gate", figure: "none published as counts; bypass succeeded", measures: "the abstract says the model caught every hidden attack, and the working bypass hid no attack because the dangerous part lived where the model could not verify it", provenance: independent, source_ref: DEFCON-34-2026}
+    - {lever: risk, description: "Researcher's bypass of OpenSearch's model gate", figure: "none published as counts; bypass succeeded", measures: "the abstract says the model caught every hidden attack, and the working bypass hid no attack because the dangerous part lived where the model could not verify it", provenance: independent, source_ref: DEFCON-34-SPEAKERS-2026}
     - {lever: risk, description: "Package names invented by code-generating models", figure: "at least 5.2% for commercial models; 21.7% for open-source models", measures: "average share of hallucinated packages across 576,000 code samples in two languages from 16 LLMs, with 205,474 unique hallucinated names (peer-reviewed)", provenance: independent, source_ref: USENIX-SEC-2025-HALLUC}
   prerequisites:
     - "Repository inventory and dependency data for rescans; package-manager integration for install-time blocking"
@@ -794,15 +794,15 @@
     - "Fewer than half of 25 package managers verified lockfile integrity by default, and only 2 verified every package (TOB-PKGMGR-2026; not AI-specific)"
   human_checkpoints:
     - "An expert verifies AI-assisted malware rules before they publish (SEMGREP-MALWARE-2026)"
-    - "None stated for OpenSearch's model gate (DEFCON-34-2026)"
+    - "None stated for OpenSearch's model gate (DEFCON-34-SPEAKERS-2026)"
   role_evolution: >-
     Not described in the sources.
   evidence_grade: B
   sources:
     - {ref: SEMGREP-MALWARE-2026, title: "Introducing Malware Detection and Response Automation", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/introducing-malware-detection-and-response-automation", date: "2026-09-24", access: full, locator: "Malware detection and response automation; malware firewall (private beta)"}
     - {ref: SNYK-AGENTIC-2026, title: "Introducing Evo Agentic AppSec: Security That Keeps Up With AI Development", publisher: "Snyk Blog", type: vendor, url: "https://snyk.io/blog/announcing-snyk-agentic-appsec/", date: "2026-10-15", access: full, locator: "Evo Dependency Firewall"}
-    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening and 'Bypassing ClawHub scanning'"}
-    - {ref: DEFCON-34-2026, title: "DEF CON 34 main stage talks: LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails (Aviv Donenfeld, Check Point Software Technologies)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08", access: full, locator: "Talk abstract (Main Track 5, Friday 13:00)"}
+    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening and 'Bypassing ClawHub scanning'"}
+    - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "Talk 'LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails' (Aviv Donenfeld, Check Point Software Technologies); Talk abstract (Main Track 5, Friday 13:00)"}
     - {ref: USENIX-SEC-2025-HALLUC, title: "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs", publisher: "USENIX Security 2025 (Distinguished Paper)", type: academic, url: "https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen", date: "2025-08", access: full, locator: "Abstract"}
     - {ref: ARXIV-2608.23897, title: "Names Can Hurt: Spotting Slopsquatting Risks Caused by Package Name Hallucinations in Local Coding LLMs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.23897", date: "2026-08-24", access: full, locator: "Abstract"}
     - {ref: GTIG-AITRACKER-2026, title: "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", publisher: "Google Threat Intelligence Group", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/", date: "2026-09-08", access: full, locator: "AI supply-chain section (as routed by the threat-intelligence discourse file)"}
@@ -904,9 +904,9 @@
     - {ref: GITLAB-JOB-CODESEC-2026, title: "Job posting: Senior Software Engineer, Security Factory: Code Security", publisher: "GitLab (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8738179002", date: "2026-10-09", access: full, locator: "Responsibilities and qualifications"}
     - {ref: AWS-SECAGENT-2026, title: "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", publisher: "AWS Security Blog", type: vendor, url: "https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/", date: "2026-10-15", access: full, locator: "'Why we built a fresh benchmark'; contamination"}
     - {ref: SEMGREP-SUSVIBES-2026, title: "Is AI-Generated Code Secure? Testing Claude Opus 5.5 (listing title: Claude Opus 5.5 Writes Working Code but Only Half of It Is Secure)", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/claude-opus-5-5-susvibes-benchmark", date: "2026-09-29", access: full, locator: "TL;DR and memorisation analysis"}
-    - {ref: ARXIV-2609.04075, title: "PatchBench: Evaluating AI Agents for Vulnerability Patching", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.04075", date: "2026-09-03", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2609.04075, title: "PatchBench: Evaluating AI Agents for Vulnerability Patching", publisher: "arXiv (Shen et al.)", type: academic, url: "https://arxiv.org/abs/2609.04075", date: "2026-09-03", access: full, locator: "Abstract"}
     - {ref: USENIX-BENCHCHECKER-2026, title: "BenchChecker: Assessing the Credibility of Bug-Fixing Benchmarks for LLMs", publisher: "USENIX Security Symposium 2026", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/wu-di", date: "2026-08", access: full, locator: "Abstract"}
-    - {ref: TOB-1PASSWORD-2026, title: "1Password's AI patching benchmark is misleading", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/", date: "2026-09-15", access: full, locator: "Benchmark design principles and grading critique"}
+    - {ref: TOB-1PASSWORD-2026, title: "1Password's AI patching benchmark is misleading", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/", date: "2026-09-15", access: full, locator: "Benchmark design principles and grading critique"}
     - {ref: CSET-CODEGEN-2024, title: "Cybersecurity Risks of AI-Generated Code", publisher: "Georgetown CSET", type: academic, url: "https://cset.georgetown.edu/publication/cybersecurity-risks-of-ai-generated-code/", date: "2024-11", access: full, locator: "Key findings"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -960,7 +960,7 @@
   sources:
     - {ref: TOB-AINATIVE-2026, title: "How we made Trail of Bits AI-native (so far)", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/03/31/how-we-made-trail-of-bits-ai-native-so-far/", date: "2026-03-31", access: full, locator: "Whole post"}
     - {ref: TLDRSEC-TOBAINATIVE-2026, title: "How we made Trail of Bits AI-native (so far) (newsletter version)", publisher: "tl;dr sec (Dan Guido, Clint Gibler)", type: press, url: "https://tldrsec.com/p/how-we-made-trail-of-bits-ai-native-so-far", date: "2026-03-31", access: full, locator: "Opening and 'The remedies that actually worked'"}
-    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening"}
+    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening"}
     - {ref: ANTHROPIC-JOB-APPSEC-2026, title: "Job posting: Staff+ Application Security Engineer (first published 2025-01-22, updated 2026-08-21)", publisher: "Anthropic (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/4502508008", date: "2026-08-21", access: full, locator: "About the role"}
     - {ref: GITLAB-JOB-CODESEC-2026, title: "Job posting: Senior Software Engineer, Security Factory: Code Security", publisher: "GitLab (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8738179002", date: "2026-10-09", access: full, locator: "Team expectation to use AI in daily workflows"}
     - {ref: CLOUDFLARE-JOB-PSE-2026, title: "Job posting: Product Security Engineer", publisher: "Cloudflare (Greenhouse)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8102768?gh_jid=8102768", date: "2026-08-04", access: full, locator: "Responsibilities: AI-driven tools to automate code analysis and triage"}
@@ -968,7 +968,7 @@
     - {ref: SAMSARA-JOB-APPSEC-2026, title: "Job posting: Staff Application Security Engineer", publisher: "Samsara (Greenhouse)", type: job-posting, url: "https://www.samsara.com/company/careers/roles/8205149?gh_jid=8205149", date: "2026-09-15", access: full, locator: "Qualification: hands-on AI use in triage, detection logic and remediation drafting"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Pattern 'other': an operating-model change, not a workflow pattern. Graded B under the 2026-10-17 rule: the
+    Pattern 'other': an operating-model change, not a workflow pattern. Graded B, not A: the
     '200 bugs a week' figure is a management claim with no definition, and asset counts are not work outcomes (the
     discourse angle had graded this A). The post was adapted from an [un]prompted talk. This is the only entry with
     change scope 'model'. Merged from practice and discourse.

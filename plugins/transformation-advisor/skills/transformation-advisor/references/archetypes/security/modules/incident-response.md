@@ -174,10 +174,10 @@ halt time for AI systems in drills; restore-point accuracy in recovery tests.
 - **DORA** (EU finance): initial report within four hours of classifying an incident as major and no later than 24
   hours from awareness (or four hours from a later classification); intermediate within 72 hours of the initial
   notification; final within one month of the intermediate report [EUR-LEX-DORA301-2025].
-- **NIS2**: early warning 24 hours, notification 72 hours, final report one month [EUR-LEX-NIS2-2022].
+- **NIS2**: early warning 24 hours, notification 72 hours, final report one month [EURLEX-NIS2-2022].
 - **Cyber Resilience Act**: manufacturers' 24-hour and 72-hour reports apply from 2026-09-11 [EUR-LEX-CRA-2024].
 - **EU AI Act Art. 73**: providers of high-risk AI report serious incidents, outer limit 15 days; Annex III
-  obligations moved to 2027-12-02 [FLI-AIACT73-2024; EC-AIACT-2026].
+  obligations moved to 2027-12-02 [EU-AIACT-ART73-2024; EC-AIACT-2026].
 - **US**: SEC Form 8-K Item 1.05 four business days after a materiality determination, under a rescission push with no
   final action found [SEC-CYBER-2023; SIFMA-SEC-2026]; CIRCIA not yet in force (no final rule in the Federal Register through 2026-10-17) [FR-CIRCIA-2026]. **India**: CERT-In 6
   hours [CERTIN-BLUEPRINT-2026]. **UK**: a bill would add 24 and 72-hour reporting [GOVUK-CSRB-2025].
@@ -186,7 +186,7 @@ halt time for AI systems in drills; restore-point accuracy in recovery tests.
 - NIST SP 800-61 Rev. 3 is the reference lifecycle; it keeps manual selection of containment as an option [NIST-80061R3-2025].
 - NIST/NSA/CISA ten key practices for agent control incidents (2026-10-16, voluntary): drills, tamper-resistant logs,
   shutdown, verified containment before restart, notification; AI may assist investigations if humans verify key facts
-  and a different model family cross-checks [NIST-KEYPRACTICES-2026].
+  and a different model family cross-checks [NISTCISA-IRKEY-2026].
 - CISA/ACSC agentic guidance: tested IR for agent compromise; a validating agent before execution; human review of
   guardrail triggers [CISA-AGENTIC-2026]. CERT-In: per-run least-privilege agent identities, egress blocks, auto-stop for test runs [THN-CERTIN-2026].
 - Evidence in court: proposed US Rule 707 on machine-generated evidence went back for revision in June 2026
@@ -231,7 +231,7 @@ restarting a halted agent; signing anything that may go to court.
 - **2026-10-01** AI crisis-simulation builder released [IMMERSIVE-AIBUILDER-2026]. Risky Business reports OpenAI found dozens
   of examples of agents acting in undesirable ways [RISKYBIZ-2026].
 - **2026-10-15/16** CERT-In advisory on agents reaching live systems; NIST/NSA/CISA key practices; SANS DFIR Summit on forensics
-  when "the AI system was the victim" [CERTIN-CIAD0049-2026; NIST-KEYPRACTICES-2026; SANS-DFIRSUMMIT-2026].
+  when "the AI system was the victim" [CERTIN-CIAD0049-2026; NISTCISA-IRKEY-2026; SANS-DFIRSUMMIT-2026].
 - **2026 Q3** Forrester's IR-services landscape names AI-agent incident response and defensibility of AI-assisted IR as
   buyer scenarios (landing page only) [FORRESTER-IR-2026].
 
@@ -260,8 +260,8 @@ restarting a halted agent; signing anything that may go to court.
 ## 10. Sources
 
 Full details (title, publisher, type, URL, date, access) are in the YAML for every key used there.
-- **Regulators and standard-setters:** NIST-KEYPRACTICES-2026, NIST-80061R3-2025, CISA-AGENTIC-2026, CERTIN-CIAD0049-2026,
-  CERTIN-BLUEPRINT-2026, EUR-LEX-DORA301-2025, EUR-LEX-NIS2-2022, EUR-LEX-CRA-2024, FLI-AIACT73-2024, EC-AIACT-2026,
+- **Regulators and standard-setters:** NISTCISA-IRKEY-2026, NIST-80061R3-2025, CISA-AGENTIC-2026, CERTIN-CIAD0049-2026,
+  CERTIN-BLUEPRINT-2026, EUR-LEX-DORA301-2025, EURLEX-NIS2-2022, EUR-LEX-CRA-2024, EU-AIACT-ART73-2024, EC-AIACT-2026,
   SEC-CYBER-2023, FR-CIRCIA-2026, CISA-CIRCIA-2026, GOVUK-CSRB-2025, CIS-TTXGENAI-2025.
 - **Professional bodies and surveys:** ISACA-SOC-2026, ISACA-AIPULSE-2026, ISC2-WORKFORCE-2025, SANS-SOC-2026,
   SANS-PROTOCOLSIFT-2026, SANS-FINDEVIL-2026, SANS-SIMON-2026, SIFMA-SEC-2026.
@@ -276,7 +276,7 @@ Full details (title, publisher, type, URL, date, access) are in the YAML for eve
 - **Conferences, press, community, jobs:** FIRST-CON-2026, SANS-DFIRSUMMIT-2026, BSIDESLV-2026, GOOGLE-TIMESKETCH-2025,
   WIRED-OPENAI-2026, THN-CERTIN-2026, SILICONANGLE-SAFE-2026, AXIOS-SAFE-2026, SECURITYWEEK-SAFE-2026, OSAA-SAFERFC-2026,
   HELPNET-GARTNER-2026, UPHACK-HF-2026,
-  DATABRICKS-JOB-2026, GITLAB-JOB-2026, TWILIO-JOB-2026, CLOUDFLARE-JOB-2026, BLOCK-JOB-2026.
+  DATABRICKS-JOB-IR-2026, GITLAB-JOB-2026, TWILIO-JOB-2026, CLOUDFLARE-JOB-CMDC-2026, BLOCK-JOB-2026.
 - **Not in the YAML (opened by the research angles; reopened by the verifier 2026-10-17):** UNSECURE-EVAL-2026 (unsecure.sh, John Ao and
   Michel San, *A scenario to evaluate your Agentic SOC*, 2026-08-27, https://unsecure.sh/blog/agentic-soc-scenario/; same key as
   `security-operations-21`; the page does not name Cotool, so the earlier 'Cotool' attribution was dropped);
@@ -287,9 +287,9 @@ Full details (title, publisher, type, URL, date, access) are in the YAML for eve
   https://www.nist.gov/news-events/events/2026/05/nist-workshop-ai-incident-management);
   EC-ACTIONPLAN-2026 (European Commission, *EU Action Plan on Cybersecurity and Artificial Intelligence*, 2026-07-07,
   https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence);
-  CISCO-SPLUNK-CONF26-2026 (Cisco, *Tracking the Triage Agent in the Agentic SOC at Splunk .conf26*, 2026-10-08,
+  CISCO-SPLUNK-CONF26-2026 (Cisco, *Splunk .conf26: Tracking the Triage Agent in the Agentic SOC*, 2026-10-08,
   https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/);
-  SPLUNK-RSACSOC-2026 (Splunk, *Lessons from the 10th RSAC SOC*, 2026-08-24,
+  SPLUNK-RSACSOC-2026 (Splunk, *From Live Event Telemetry to Action: Lessons from the 10th RSAC SOC*, 2026-08-24,
   https://www.splunk.com/en_us/blog/security/lessons-from-the-10th-rsac-soc.html);
   FORRESTER-IR-2026 (Forrester via Palo Alto Networks, *Cybersecurity Incident Response Services Landscape, Q3 2026*,
   landing page, 2026, https://www.paloaltonetworks.com/unit42/forrester-IR-landscape-report.md);

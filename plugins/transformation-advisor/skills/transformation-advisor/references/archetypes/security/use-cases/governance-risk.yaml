@@ -1,24 +1,19 @@
 # Use cases: security / governance-risk (security governance, risk and compliance (GRC): customer security
 # assurance, third-party risk, control frameworks and evidence, audits, policy, risk registers and quantification,
 # board and regulator reporting, the security team's own AI policy, and the security workforce and operating model).
-# Merged from research/runs/wave4/security-governance-risk-practice.md (P), -discourse.md (D) and -governance.md (G),
-# the landscape scan (landscape-security.md) and items routed to governance-risk from other wave 4 security files.
-# See research/runs/wave4/governance-risk-synthesis-report.md.
+# Sources checked 2026-10-17.
 # Every grade-A figure is vendor-published on the vendor's own site and quotes the customer. No override rate,
 # error rate, parallel run, auditor-reliance study or regulator inspection finding exists for AI used in GRC work.
-# Canonical source keys: TECHTARGET-BOARD-2026 (= TECHTARGET-GARTNERBOARD-2026), TECHTARGET-CISO-2026
-# (= TECHTARGET-GARTNERCISO-2026), TECHTARGET-AIREG-2026 (= TECHTARGET-GARTNERREG-2026, TECHTARGET-GARTNER-REG-2026),
-# RSAC-WORKFORCE-2026 (= SANS-WORKFORCE-RSAC-2026), CSA-MYTHOSREADY-2026 (= CSA-STORM-2026, the publication page of the
-# same briefing). FAIR-CRMSURVEY-2026 (the report PDF) and FAIR-SOCRM-2026 (the Institute's blog summary of it) are kept
-# as separate documents.
-# Cross-references to other security modules (ids as published on 2026-10-17): ai-security-21 (AI inventory, including
-# AI embedded in vendor services), ai-security-22 (proportionate AI governance), ai-security-24 (third-party AI
-# assurance), ai-security-07/08/10/11/12 (runtime gates, containment, monitoring and logging of agents),
-# operations-19/20/21 (constrained SOC agent actions, per-action authority, measuring the SOC's AI),
-# incident-response-02 (AI-built tabletop exercises), incident-response-14/15 (incident summaries and regulator
-# notifications), incident-response-16 (AI review of post-incident reports), incident-response-17 (preparing for
-# AI-agent incidents), identity-access-11 (access-control policy as code), application-security (security team that
-# builds its own AI skills and agents; that file was being renumbered when this one was written).
+# Key notes: CSA-MYTHOSREADY-2026 is the publication page of the CSA briefing. FAIR-CRMSURVEY-2026 (the report PDF)
+# and FAIR-SOCRM-2026 (the Institute's blog summary of it) are separate documents.
+# Cross-references to other security modules: security-ai-security-21 (AI inventory, including AI embedded in vendor
+# services), security-ai-security-22 (proportionate AI governance), security-ai-security-24 (third-party AI
+# assurance), security-ai-security-07, -08, -10, -11, -12 (runtime gates, containment, monitoring and logging of
+# agents), security-operations-19, -20, -21 (constrained SOC agent actions, per-action authority, measuring the SOC's
+# AI), security-incident-response-02 (AI-built tabletop exercises), security-incident-response-14, -15 (incident
+# summaries and regulator notifications), security-incident-response-16 (AI review of post-incident reports),
+# security-incident-response-17 (preparing for AI-agent incidents), security-identity-access-11 (access-control
+# policy as code), security-application-security-17 (security team that builds its own AI skills and agents).
 
 - id: security-governance-risk-01
   title: Inbound customer security questionnaires answered from an approved knowledge base, with uncertain answers sent to an analyst
@@ -94,22 +89,22 @@
     assurance team is freed for higher-value work (VANTA-GITHUB-2026).
   evidence_grade: A
   sources:
-    - { ref: VANTA-GITHUB-2026, title: "GitHub accelerates sales by automating 93% of security questionnaires with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/github", date: "2026-03", access: full, locator: "TL;DR; 'The challenge'; 'The Vanta impact' ROI list (date is sitemap last-modified)" }
-    - { ref: CONVEYOR-CARTA-2026, title: "Carta cuts security review time by 83% with Conveyor", publisher: Conveyor, type: vendor, url: "https://www.conveyor.com/customers/carta-2", date: "2026-06", access: full, locator: "Header stats; 'Results: 95% AI accuracy'; Callie Dedinsky quote (date is sitemap last-modified)" }
-    - { ref: CONVEYOR-BENCH-2026, title: "2026 Customer Trust Benchmark Report (landing page)", publisher: Conveyor, type: survey, url: "https://www.conveyor.com/landing-page/2026-customer-trust-benchmark", date: "2026-09", access: full, locator: "Headline statistics" }
-    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: Whistic, type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'AI-Driven Speed' and 'AI-Powered Insights'" }
-    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "Opening section on hallucination risk" }
-    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:07-00:16" }
-    - { ref: CSA-AICM-2026, title: "AI Controls Matrix v1.1", publisher: Cloud Security Alliance, type: standard-setter, url: "https://cloudsecurityalliance.org/artifacts/ai-controls-matrix-v1-1", date: "2026-06-22", access: full, locator: "'What's Included in this Download': AI-CAIQ" }
-    - { ref: ARXIV-2412.13988, title: "RAG for Effective Supply Chain Security Questionnaire Automation (QuestSecure)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2412.13988", date: "2024-12-18", access: full, locator: "Abstract" }
+    - { ref: VANTA-GITHUB-2026, title: "GitHub accelerates sales by automating 93% of security questionnaires with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/github", date: "2026-03", access: full, locator: "TL;DR; 'The challenge'; 'The Vanta impact' ROI list (date is sitemap last-modified)"}
+    - { ref: CONVEYOR-CARTA-2026, title: "Carta cuts security review time by 83% with Conveyor", publisher: "Conveyor", type: vendor, url: "https://www.conveyor.com/customers/carta-2", date: "2026-06", access: full, locator: "Header stats; 'Results: 95% AI accuracy'; Callie Dedinsky quote (date is sitemap last-modified)"}
+    - { ref: CONVEYOR-BENCH-2026, title: "2026 Customer Trust Benchmark Report (landing page)", publisher: "Conveyor", type: survey, url: "https://www.conveyor.com/landing-page/2026-customer-trust-benchmark", date: "2026-09", access: full, locator: "Headline statistics"}
+    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: "Whistic", type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'AI-Driven Speed' and 'AI-Powered Insights'"}
+    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "Opening section on hallucination risk"}
+    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:07-00:16"}
+    - { ref: CSA-AICM-2026, title: "AI Controls Matrix v1.1", publisher: "Cloud Security Alliance", type: standard-setter, url: "https://cloudsecurityalliance.org/artifacts/ai-controls-matrix-v1-1", date: "2026-06-22", access: full, locator: "'What's Included in this Download': AI-CAIQ"}
+    - { ref: ARXIV-2412.13988, title: "RAG for Effective Supply Chain Security Questionnaire Automation (QuestSecure)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2412.13988", date: "2024-12-18", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P01, G01 and the questionnaire remark in D03. Grade A under the 2026-10-17 rule: GitHub's 93% and
-    Carta's header figures are presented as tracked programme metrics for named customers, published by the vendor
-    (labelled vendor-published); the Carta analyst's 72-of-77 anecdote is a recollection and would only support B.
-    Change scope normalised to step (P said process, G said step): AI answers within the existing review step and
-    people handle exceptions, as in the vocabulary's worked example. Vendor pages carry no publication date; sitemap
-    last-modified months are used. Loopio's customer index lists RFP and due-diligence results that were not opened.
+    Graded A: GitHub's 93% and Carta's header figures are presented as tracked programme metrics for named customers,
+    published by the vendor (labelled vendor-published); the Carta analyst's 72-of-77 anecdote is a recollection and
+    would only support B. Change scope normalised to step (P said process, G said step): AI answers within the
+    existing review step and people handle exceptions, as in the vocabulary's worked example. Vendor pages carry no
+    publication date; sitemap last-modified months are used. Loopio's customer index lists RFP and due-diligence
+    results that were not opened.
 
 - id: security-governance-risk-02
   title: Self-serve trust centre with an AI agent that answers security questions before they reach the team
@@ -161,15 +156,15 @@
     customers a self-serve trust centre without adding headcount to match the company's scale (VANTA-SYNTHESIA-2026).
   evidence_grade: B
   sources:
-    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta impact': Trust Center Pro and Vanta AI bullets (date is sitemap last-modified)" }
-    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "ROI bullets under Trust Center Pro and Questionnaire Automation" }
-    - { ref: VANTA-SNOWFLAKE-2026, title: "Snowflake's trust program speaks for itself", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/snowflake", date: "2026-03", access: full, locator: "Header stats and 'How Snowflake did it'" }
-    - { ref: CONVEYOR-SUMO-2026, title: "Sumo Logic automates 100% of security requests with Conveyor Trust Center", publisher: Conveyor, type: vendor, url: "https://www.conveyor.com/customers/sumo-logic", date: "2026-07", access: full, locator: "Challenge and Results sections" }
+    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta impact': Trust Center Pro and Vanta AI bullets (date is sitemap last-modified)"}
+    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "ROI bullets under Trust Center Pro and Questionnaire Automation"}
+    - { ref: VANTA-SNOWFLAKE-2026, title: "Snowflake's trust program speaks for itself", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/snowflake", date: "2026-03", access: full, locator: "Header stats and 'How Snowflake did it'"}
+    - { ref: CONVEYOR-SUMO-2026, title: "Sumo Logic automates 100% of security requests with Conveyor Trust Center", publisher: "Conveyor", type: vendor, url: "https://www.conveyor.com/customers/sumo-logic", date: "2026-07", access: full, locator: "Challenge and Results sections"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P02 and the trust-centre part of G01. Graded B: the measured results combine a document portal that
-    does not need AI with the AI agent. Snowflake (2,000+ hours saved annually) and Sumo Logic (100% of document
-    requests automated) are trust-centre results with no AI claim.
+    Graded B: the measured results combine a document portal that does not need AI with the AI agent. Snowflake
+    (2,000+ hours saved annually) and Sumo Logic (100% of document requests automated) are trust-centre results with
+    no AI claim.
 
 - id: security-governance-risk-03
   title: Agent-drafted third-party (vendor) security assessments, with an analyst deciding residual risk
@@ -237,27 +232,26 @@
     third parties are (CLOUDSECPOD-LOVABLE-2026).
   evidence_grade: B
   sources:
-    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "TPRM paragraph under 'Vanta impact'" }
-    - { ref: HYPERPROOF-FINCO-2025, title: "How Hyperproof Helped a Global Financial Enterprise Revolutionize Third-Party Risk Management", publisher: Hyperproof, type: vendor, url: "https://hyperproof.io/case-studies/how-hyperproof-helped-a-global-financial-enterprise-revolutionize-third-party-risk-management/", date: "2025-11-08", access: full, locator: "Stat tiles; 'Scalability for enterprise'" }
-    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: Whistic, type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'Streamlined Vendor Assessments'" }
-    - { ref: DRATA-TPRMAI-2026, title: "Accelerate Third-Party Reviews with AI (product page, undated; retrieval date used)", publisher: Drata, type: vendor, url: "https://drata.com/product/vendor-risk-management/ai-agent", date: "2026-10-17", access: full, locator: "Intro; 'Maintain Oversight'" }
-    - { ref: ANTHROPIC-JOB-SUPPLIER-2026, title: "Supplier Security & Assurance, Security GRC (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5427893008", date: "2026-09-17", access: full, locator: "About the role; Key responsibilities" }
-    - { ref: PLAID-JOB-TPRM-2026, title: "Security Analyst, Third-Party Ecosystem Risk Management (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/94752cfc-4a62-48c9-bcc0-e5f7f1905be6", date: "2026-08-12", access: full, locator: "'Scale Through AI and Tooling'" }
-    - { ref: OPENAI-JOB-VENDOR-2026, title: "Vendor Security Technical Program Manager (job posting)", publisher: OpenAI, type: job-posting, url: "https://jobs.ashbyhq.com/openai/3ae71c21-60dd-42b2-a913-58df05988976", date: "2026-10-02", access: full, locator: "Qualifications" }
-    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways" }
-    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:07-00:16 and 00:25-00:36" }
-    - { ref: FINRA-OVERSIGHT-2026, title: "2026 FINRA Annual Regulatory Oversight Report", publisher: FINRA, type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report", date: "2025-12-09", access: full, locator: "Third-Party Risk Landscape section page (.../third-party-risk): Effective Practices" }
-    - { ref: WEF-GCO-2026, title: "Global Cybersecurity Outlook 2026 (with Accenture)", publisher: World Economic Forum, type: survey, url: "https://www.weforum.org/publications/global-cybersecurity-outlook-2026/", date: "2026-01-12", access: full, locator: "'Securing supply chains amid opacity and concentration risks'" }
-    - { ref: USENIX-PIAO-2026, title: "'Abuse Risks are Often Inherent to Product Features': Exploring AI Vendors' Bug Bounty and Responsible Disclosure Policies", publisher: "USENIX / University of Edinburgh", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/piao", date: "2026-08", access: full, locator: "Abstract" }
+    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "TPRM paragraph under 'Vanta impact'"}
+    - { ref: HYPERPROOF-FINCO-2025, title: "How Hyperproof Helped a Global Financial Enterprise Revolutionize Third-Party Risk Management", publisher: "Hyperproof", type: vendor, url: "https://hyperproof.io/case-studies/how-hyperproof-helped-a-global-financial-enterprise-revolutionize-third-party-risk-management/", date: "2025-11-08", access: full, locator: "Stat tiles; 'Scalability for enterprise'"}
+    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: "Whistic", type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'Streamlined Vendor Assessments'"}
+    - { ref: DRATA-TPRMAI-2026, title: "Accelerate Third-Party Reviews with AI (product page, undated; retrieval date used)", publisher: "Drata", type: vendor, url: "https://drata.com/product/vendor-risk-management/ai-agent", date: "2026-10-17", access: full, locator: "Intro; 'Maintain Oversight'"}
+    - { ref: ANTHROPIC-JOB-SUPPLIER-2026, title: "Supplier Security & Assurance, Security GRC (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5427893008", date: "2026-09-17", access: full, locator: "About the role; Key responsibilities"}
+    - { ref: PLAID-JOB-TPRM-2026, title: "Security Analyst, Third-Party Ecosystem Risk Management (job posting)", publisher: "Plaid", type: job-posting, url: "https://jobs.ashbyhq.com/plaid/94752cfc-4a62-48c9-bcc0-e5f7f1905be6", date: "2026-08-12", access: full, locator: "'Scale Through AI and Tooling'"}
+    - { ref: OPENAI-JOB-VENDOR-2026, title: "Vendor Security Technical Program Manager (job posting)", publisher: "OpenAI", type: job-posting, url: "https://jobs.ashbyhq.com/openai/3ae71c21-60dd-42b2-a913-58df05988976", date: "2026-10-02", access: full, locator: "Qualifications"}
+    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways"}
+    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:07-00:16 and 00:25-00:36"}
+    - { ref: FINRA-OVERSIGHT-2026, title: "2026 FINRA Annual Regulatory Oversight Report", publisher: "FINRA", type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report", date: "2025-12-09", access: full, locator: "Third-Party Risk Landscape section page (.../third-party-risk): Effective Practices"}
+    - { ref: WEF-GCO-2026, title: "Global Cybersecurity Outlook 2026 (with Accenture)", publisher: "World Economic Forum", type: survey, url: "https://www.weforum.org/publications/global-cybersecurity-outlook-2026/", date: "2026-01-12", access: full, locator: "'Securing supply chains amid opacity and concentration risks'"}
+    - { ref: USENIX-PIAO-2026, title: "'Abuse Risks are Often Inherent to Product Features': Exploring AI Vendors' Bug Bounty and Responsible Disclosure Policies", publisher: "USENIX / University of Edinburgh", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/piao", date: "2026-08", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P03, D03 and G09 (G09's supplier-evidence idea is the same change). Graded B, not A as in the practice
-    file: Samsara's 'up to 50% faster' has no baseline or method and reads as a best case, the Hyperproof customer is
-    anonymous, and Calastone's figure is an analyst's description. Ladder normalised to delegate (P and D said augment):
-    the agent owns a multi-step outcome (collect, extract, evaluate, draft follow-ups) with an analyst checkpoint, as in
-    the vocabulary's 'agent tests key controls end to end' example. Safe Security's 'TPRM AI Co-Worker' and Optro's
+    Graded B, not A: Samsara's 'up to 50% faster' has no baseline or method and reads as a best case, the Hyperproof
+    customer is anonymous, and Calastone's figure is an analyst's description. Ladder delegate: the agent owns a
+    multi-step outcome (collect, extract, evaluate, draft follow-ups) with an analyst checkpoint, as in the
+    vocabulary's 'agent tests key controls end to end' example. Safe Security's 'TPRM AI Co-Worker' and Optro's
     Agentic TPRM (announced 2026-10-14) give no customer outcomes. Doctor On Demand's in-platform grading (Whistic) is
-    rule-based, not AI. Due diligence on AI vendors themselves sits in ai-security-24.
+    rule-based, not AI. Due diligence on AI vendors themselves sits in security-ai-security-24.
 
 - id: security-governance-risk-04
   title: Continuous vendor monitoring with trigger-based reassessment, including AI features and agents added after approval
@@ -311,21 +305,21 @@
     governance to what people inside the organisation build with AI (CLOUDSECPOD-LOVABLE-2026).
   evidence_grade: C
   sources:
-    - { ref: ANTHROPIC-JOB-SUPPLIER-2026, title: "Supplier Security & Assurance, Security GRC (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5427893008", date: "2026-09-17", access: full, locator: "Key responsibilities: 'Run continuous monitoring after approval'" }
-    - { ref: VANTA-TPRMAGENT-2026, title: "Vanta Delivers: The TPRM Agent", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-tprm-agent", date: "2026-03-19", access: full, locator: "Feature list: vendor lifecycle from discovery to continuous monitoring" }
-    - { ref: SAFE-TPRM-2026, title: "SAFE TPRM AI Co-Worker (product page, undated; retrieval date used)", publisher: Safe Security, type: vendor, url: "https://safe.security/third-party-risk-management/", date: "2026-10-17", access: full, locator: "'How the SAFE TPRM AI Co-Worker Operates': Threat Intel Agent; Contract Analysis Agent (read via text mirror; direct fetch returns 403)" }
-    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:08-00:12" }
-    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Opening paragraphs; 'Filter regulatory noise through internal partnerships'" }
-    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways and Background" }
-    - { ref: GARTNER-EMERGING-2026, title: "Gartner Survey Finds AI Discovery of Cyber Vulnerabilities is Top Emerging Risk in Second Quarter of 2026", publisher: Gartner, type: survey, url: "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-08-25-use-this-gartner-survey-finds-ai-discovery-vulnerabilities-top-emerging-risk", date: "2026-08-25", access: full, locator: "Recommendations paragraph" }
-    - { ref: SOFTWARESTRATEGIES-GARTNERHC-2026, title: "Gartner AI Governance Hype Cycle 2026: What CISOs Fund First (secondary summary of Gartner)", publisher: Software Strategies Blog, type: community, url: "https://softwarestrategiesblog.com/2026/08/10/gartners-2026-ai-governance-hype-cycle-and-what-cisos-must-change-to-control-agentic-ai-and-rogue-agents/", date: "2026-08-10", access: full, locator: "AI Leaders Effectiveness Survey paragraph" }
+    - { ref: ANTHROPIC-JOB-SUPPLIER-2026, title: "Supplier Security & Assurance, Security GRC (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5427893008", date: "2026-09-17", access: full, locator: "Key responsibilities: 'Run continuous monitoring after approval'"}
+    - { ref: VANTA-TPRMAGENT-2026, title: "Vanta Delivers: The TPRM Agent", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-tprm-agent", date: "2026-03-19", access: full, locator: "Feature list: vendor lifecycle from discovery to continuous monitoring"}
+    - { ref: SAFE-TPRM-2026, title: "SAFE TPRM AI Co-Worker (product page, undated; retrieval date used)", publisher: "Safe Security", type: vendor, url: "https://safe.security/third-party-risk-management/", date: "2026-10-17", access: full, locator: "'How the SAFE TPRM AI Co-Worker Operates': Threat Intel Agent; Contract Analysis Agent (read via text mirror; direct fetch returns 403)"}
+    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: "2026-05-27", access: full, locator: "Transcript, roughly 00:08-00:12"}
+    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Opening paragraphs; 'Filter regulatory noise through internal partnerships'"}
+    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways and Background"}
+    - { ref: GARTNER-EMERGING-2026, title: "Gartner Survey Finds AI Discovery of Cyber Vulnerabilities is Top Emerging Risk in Second Quarter of 2026", publisher: "Gartner", type: survey, url: "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-08-25-use-this-gartner-survey-finds-ai-discovery-vulnerabilities-top-emerging-risk", date: "2026-08-25", access: full, locator: "Recommendations paragraph"}
+    - { ref: SOFTWARESTRATEGIES-GARTNERHC-2026, title: "Gartner AI Governance Hype Cycle 2026: What CISOs Fund First (secondary summary of Gartner)", publisher: "Software Strategies Blog", type: community, url: "https://softwarestrategiesblog.com/2026/08/10/gartners-2026-ai-governance-hype-cycle-and-what-cisos-must-change-to-control-agentic-ai-and-rogue-agents/", date: "2026-08-10", access: full, locator: "AI Leaders Effectiveness Survey paragraph"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P04, D04 and P16 (P16 was an idea; its vendor-embedded-agent extension is labelled idea in the
-    solution). Verification 2026-10-17: lowered from B to C and maturity from in-production to announced. Anthropic's
-    posting describes trigger-based reassessment as analyst work, not as an agent's; the AI part rests on vendor
-    product pages (Safe, Vanta) with no named customer using them for monitoring. The CSA note states it was generated with AI assistance and not
-    formally reviewed. AI inventory as a whole sits in ai-security-21; AI vendor due diligence in ai-security-24.
+    The vendor-embedded-agent extension is labelled idea in the solution. Graded C, not B, and maturity announced:
+    Anthropic's posting describes trigger-based reassessment as analyst work, not as an agent's; the AI part rests on
+    vendor product pages (Safe, Vanta) with no named customer using them for monitoring. The CSA note states it was
+    generated with AI assistance and not formally reviewed. AI inventory as a whole sits in security-ai-security-21;
+    AI vendor due diligence in security-ai-security-24.
 
 - id: security-governance-risk-05
   title: Mapping and rationalising controls and evidence across frameworks with an agent
@@ -347,7 +341,7 @@
     and matches control sets to a new framework's controls; a GRC owner approves the mapping (VANTA-SAMSARA-2026;
     ANTHROPIC-JOB-CONTROLS-2026). Synthesia used its compliance platform's MCP server integration for HITRUST control
     matching (VANTA-SYNTHESIA-2026). NIST's draft Cyber AI Profile lists identifying and mapping similar concepts
-    between documents as a defensive use of AI (NIST-CYBERAI-2025).
+    between documents as a defensive use of AI (NIST-IR8596-2025).
   outcomes:
     - lever: quality
       description: Samsara reports consolidating controls across 10 frameworks into a common control framework, with Vanta's Compliance Agent mapping evidence and consolidating overlapping requirements
@@ -373,7 +367,7 @@
     - "An offline evaluation set curated by GRC experts to tune mapping quality (VANTA-QUALITYEVAL-2026)"
   risks_and_guardrails:
     - "Baseline mapping precision was below 35%, so most suggestions were wrong before tuning; no current error rate across customers is published (VANTA-QUALITYEVAL-2026)"
-    - "NIST's draft profile says human oversight will be required to maintain regulatory and legal compliance even where AI supports compliance work (NIST-CYBERAI-2025)"
+    - "NIST's draft profile says human oversight will be required to maintain regulatory and legal compliance even where AI supports compliance work (NIST-IR8596-2025)"
     - "Vanta says its risk agent acts with a human in the loop; the compliance agent page uses recommendations language (VANTA-RISKAGENT-2026; VANTA-COMPLIANCEAGENT-2026)"
   human_checkpoints:
     - "A GRC owner reviews and approves mappings; Anthropic's controls role decides 'where human judgment stays in the loop' (ANTHROPIC-JOB-CONTROLS-2026)"
@@ -382,20 +376,19 @@
     and expects the person to design continuous monitoring (ANTHROPIC-JOB-CONTROLS-2026).
   evidence_grade: A
   sources:
-    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "Header stats; 'Vanta's Agentic Trust Platform' ROI list" }
-    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'MCP Server integration' bullet" }
-    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "Example: AI-powered control-to-evidence mapping" }
-    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "Feature list" }
-    - { ref: VANTA-RISKAGENT-2026, title: "Vanta Delivers: Agent for Risk", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-agent-for-risk", date: "2026-06-02", access: full, locator: "'Act with a human in the loop, always'" }
-    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role; Key responsibilities" }
-    - { ref: NIST-CYBERAI-2025, title: "Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile), NIST IR 8596 initial preliminary draft", publisher: NIST, type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "GV.OC-03 row, Defend column (p. 17)" }
+    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "Header stats; 'Vanta's Agentic Trust Platform' ROI list"}
+    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'MCP Server integration' bullet"}
+    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "Example: AI-powered control-to-evidence mapping"}
+    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "Feature list"}
+    - { ref: VANTA-RISKAGENT-2026, title: "Vanta Delivers: Agent for Risk", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-agent-for-risk", date: "2026-06-02", access: full, locator: "'Act with a human in the loop, always'"}
+    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role; Key responsibilities"}
+    - { ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "GV.OC-03 row, Defend column (p. 17)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P05 and G03. Grade A rests on Samsara's control and evidence counts, vendor-published for a named
-    customer. Synthesia's timeline figures compare against estimates of manual effort, so they would support only B.
-    Samsara's 'estimated $300,000+ in ROI in year one' is an estimate and is not used. ISO 42001 certification at
-    Samsara and Synthesia (governing their own AI products) is routed to ai-security. Samsara's SME interview hours are
-    in entry 15.
+    Grade A rests on Samsara's control and evidence counts, vendor-published for a named customer. Synthesia's
+    timeline figures compare against estimates of manual effort, so they would support only B. Samsara's 'estimated
+    $300,000+ in ROI in year one' is an estimate and is not used. ISO 42001 certification at Samsara and Synthesia
+    (governing their own AI products) belongs to ai-security. Samsara's SME interview hours are in entry 15.
 
 - id: security-governance-risk-06
   title: Agent-run evidence collection and continuous control monitoring in place of periodic audit preparation
@@ -454,24 +447,24 @@
     collecting to managing (BLEEPING-ANECDOTES-2026).
   evidence_grade: B
   sources:
-    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta impact': Multi-framework compliance management and Vanta AI bullets" }
-    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "TL;DR; 'Vanta's Agentic Trust Platform' ROI" }
-    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough (vendor-authored, Anecdotes)", publisher: BleepingComputer, type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: "2026-06-26", access: full, locator: "'What Agentic Actually Means Here'; 'Three Things That Actually Change'; 'What It Looks Like to Build One'" }
-    - { ref: VENABLES-CRE-2026, title: "Control Reliability Engineering (CRE): Applying SRE Principles to Cybersecurity Controls", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/control-reliability-engineering-cre-applying-sre-principles-to-cybersecurity-controls", date: "2026-07-25", access: full, locator: "'The 10 Essential Elements'" }
-    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role" }
-    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Role summary and responsibilities" }
-    - { ref: OKTA-JOB-GRC-2026, title: "Senior Director, GRC (job posting)", publisher: Okta, type: job-posting, url: "https://www.okta.com/company/careers/opportunity/8130437?gh_jid=8130437", date: "2026-08-17", access: full, locator: "'Drive AI-first Transformation'" }
-    - { ref: PLAID-JOB-GRC-2026, title: "Security Engineer, GRC (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/587e83dd-1d1b-4f31-812a-74fc67d67fbe", date: "2026-07-16", access: full, locator: "'Shift Compliance Left with Code and AI'" }
-    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "About the role" }
-    - { ref: FIGMA-JOB-COMPLIANCEENG-2026, title: "Compliance Engineer (job posting)", publisher: Figma, type: job-posting, url: "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004", date: "2026-10-16", access: full, locator: "Role summary and responsibilities" }
-    - { ref: OPENAI-JOB-AUDIT-2026, title: "GRC Program Manager, Audit & Controls (job posting)", publisher: OpenAI, type: job-posting, url: "https://jobs.ashbyhq.com/openai/aeac2b78-1f4a-4dfe-b88f-25fc8adf5bb3", date: "2026-08-06", access: full, locator: "Role summary" }
+    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta impact': Multi-framework compliance management and Vanta AI bullets"}
+    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "TL;DR; 'Vanta's Agentic Trust Platform' ROI"}
+    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough (vendor-authored, Anecdotes)", publisher: "BleepingComputer", type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: "2026-06-26", access: full, locator: "'What Agentic Actually Means Here'; 'Three Things That Actually Change'; 'What It Looks Like to Build One'"}
+    - { ref: VENABLES-CRE-2026, title: "Control Reliability Engineering (CRE): Applying SRE Principles to Cybersecurity Controls", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/control-reliability-engineering-cre-applying-sre-principles-to-cybersecurity-controls", date: "2026-07-25", access: full, locator: "'The 10 Essential Elements'"}
+    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role"}
+    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Role summary and responsibilities"}
+    - { ref: OKTA-JOB-GRC-2026, title: "Senior Director, GRC (job posting)", publisher: "Okta", type: job-posting, url: "https://www.okta.com/company/careers/opportunity/8130437?gh_jid=8130437", date: "2026-08-17", access: full, locator: "'Drive AI-first Transformation'"}
+    - { ref: PLAID-JOB-GRC-2026, title: "Security Engineer, GRC (job posting)", publisher: "Plaid", type: job-posting, url: "https://jobs.ashbyhq.com/plaid/587e83dd-1d1b-4f31-812a-74fc67d67fbe", date: "2026-07-16", access: full, locator: "'Shift Compliance Left with Code and AI'"}
+    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: "Cloudflare", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "About the role"}
+    - { ref: FIGMA-JOB-COMPLIANCEENG-2026, title: "Compliance Engineer (job posting)", publisher: "Figma", type: job-posting, url: "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004", date: "2026-10-16", access: full, locator: "Role summary and responsibilities"}
+    - { ref: OPENAI-JOB-AUDIT-2026, title: "GRC Program Manager, Audit & Controls (job posting)", publisher: "OpenAI", type: job-posting, url: "https://jobs.ashbyhq.com/openai/aeac2b78-1f4a-4dfe-b88f-25fc8adf5bb3", date: "2026-08-06", access: full, locator: "Role summary"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P06, G02 and D01. Graded B (G graded A on Synthesia's 60%): every figure measures platform automation
-    in general, so the AI contribution is not isolated. Ladder normalised to automate (P said augment): connectors and
-    agents run the normal path and exceptions go to control owners. Anthropic's wording is 'building toward'
-    continuous, Claude-directed control testing; Anecdotes Agent Studio was in early access. Identity posture checks
-    with recorded evidence are in identity-access-08.
+    Graded B (G graded A on Synthesia's 60%): every figure measures platform automation in general, so the AI
+    contribution is not isolated. Ladder normalised to automate (P said augment): connectors and agents run the normal
+    path and exceptions go to control owners. Anthropic's wording is 'building toward' continuous, Claude-directed
+    control testing; Anecdotes Agent Studio was in early access. Identity posture checks with recorded evidence are in
+    security-identity-access-08.
 
 - id: security-governance-risk-07
   title: Agents test controls end to end and assemble audit-ready workpapers for review
@@ -509,14 +502,14 @@
     Optro says auditors' work 'starts at the review' of documented workpapers (OPTRO-AUTOTEST-2026).
   evidence_grade: C
   sources:
-    - { ref: OPTRO-CRX-2026, title: "GRC Intelligence takes the stage at CRX '26", publisher: "Optro (formerly AuditBoard)", type: vendor, url: "https://optro.ai/blog/grc-intelligence-takes-the-stage-crx-26", date: "2026-10-14", access: full, locator: "'Agentic capabilities extend across GRC'" }
-    - { ref: OPTRO-AUTOTEST-2026, title: "Autonomous testing software (product page, undated; retrieval date used)", publisher: Optro, type: vendor, url: "https://auditboard.com/product/autonomous-testing", date: "2026-10-17", access: full, locator: "Feature list and FAQ on the Midship acquisition" }
-    - { ref: ANTHROPIC-JOB-SOX-2026, title: "Lead, Security Controls Assurance - SOX (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5415864008", date: "2026-09-08", access: full, locator: "Qualifications" }
+    - { ref: OPTRO-CRX-2026, title: "GRC Intelligence takes the stage at CRX '26", publisher: "Optro (formerly AuditBoard)", type: vendor, url: "https://optro.ai/blog/grc-intelligence-takes-the-stage-crx-26", date: "2026-10-14", access: full, locator: "'Agentic capabilities extend across GRC'"}
+    - { ref: OPTRO-AUTOTEST-2026, title: "Autonomous testing software (product page, undated; retrieval date used)", publisher: "Optro", type: vendor, url: "https://auditboard.com/product/autonomous-testing", date: "2026-10-17", access: full, locator: "Feature list and FAQ on the Midship acquisition"}
+    - { ref: ANTHROPIC-JOB-SOX-2026, title: "Lead, Security Controls Assurance - SOX (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5415864008", date: "2026-09-08", access: full, locator: "Qualifications"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From P07. Ladder normalised to delegate (P said automate), matching the vocabulary's worked example 'agent tests
-    key controls end to end and drafts the workpaper'. Optro's material is about SOX and operational controls (user
-    access reviews, bank reconciliations), adjacent to security-control testing. Announced, not measured.
+    Ladder delegate, matching the vocabulary's worked example 'agent tests key controls end to end and drafts the
+    workpaper'. Optro's material is about SOX and operational controls (user access reviews, bank reconciliations),
+    adjacent to security-control testing. Announced, not measured.
 
 - id: security-governance-risk-08
   title: Drafting and keeping security policies current with AI
@@ -564,16 +557,15 @@
     the next decade (GRCENGINEER-AIUSAGE-2026).
   evidence_grade: B
   sources:
-    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta AI' bullet: 'Policy database kept current across all six frameworks'" }
-    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "Feature list" }
-    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: "2026-01-08", access: full, locator: "'The 3 Mistakes' and templates" }
-    - { ref: ARXIV-2609.24036, title: "Structured Decomposition for Reliable LLM-Generated Access Control Policies", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.24036", date: "2026-09-21", access: full, locator: "Abstract" }
-    - { ref: GITLAB-JOB-GOV-2026, title: "Staff Security Governance Engineer, Policies & Standards (job posting)", publisher: GitLab, type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8846277002", date: "2026-09-30", access: full, locator: "'Automation and AI' section" }
+    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "'Vanta AI' bullet: 'Policy database kept current across all six frameworks'"}
+    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "Feature list"}
+    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: "2026-01-08", access: full, locator: "'The 3 Mistakes' and templates"}
+    - { ref: ARXIV-2609.24036, title: "Structured Decomposition for Reliable LLM-Generated Access Control Policies", publisher: "arXiv (Gupta, Sreenivasamurthy)", type: academic, url: "https://arxiv.org/abs/2609.24036", date: "2026-09-21", access: full, locator: "Abstract"}
+    - { ref: GITLAB-JOB-GOV-2026, title: "Staff Security Governance Engineer, Policies & Standards (job posting)", publisher: "GitLab", type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8846277002", date: "2026-09-30", access: full, locator: "'Automation and AI' section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from the drafting part of P08 and D17 (an idea on its own). Graded B on Synthesia as a named deployment
-    without measurement. Policy-as-code drafting for access control is identity-access-11; consistency and gap checks
-    are entry 09.
+    Graded B on Synthesia as a named deployment without measurement. Policy-as-code drafting for access control is
+    security-identity-access-11; consistency and gap checks are entry 09.
 
 - id: security-governance-risk-09
   title: Gap analysis of security policies against a standard and against what the organisation actually does
@@ -632,17 +624,17 @@
     this is their expectation, not a measured effect (ARXIV-2607.22885).
   evidence_grade: B
   sources:
-    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: Whistic, type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'AI-Powered Insights'" }
-    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "'Policy-to-program consistency checks'" }
-    - { ref: ARXIV-2607.22885, title: "ReCon: A Resource-Constrained Benchmark for LLM-Based Cybersecurity Compliance Across Ingestion and Retrieval Pipelines", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2607.22885", date: "2026-07-24", access: full, locator: "Abstract; Section 5.1 Table 5; qualitative analysis (pp. 14-17); Conclusion" }
-    - { ref: ARXIV-2601.03287, title: "Automated Post-Incident Policy Gap Analysis via Threat-Informed Evidence Mapping using Large Language Models", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2601.03287", date: "2026-01-04", access: full, locator: "Abstract" }
-    - { ref: NIST-CYBERAI-2025, title: "Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile), NIST IR 8596 initial preliminary draft", publisher: NIST, type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2, 'Supporting automated policy enforcement and compliance assessments' (p. 10)" }
+    - { ref: WHISTIC-CALASTONE-2025, title: "How Calastone Transformed TPRM with Whistic", publisher: "Whistic", type: vendor, url: "https://www.whistic.com/resources/case-studies/calastone-customer-story", date: "2025-12", access: full, locator: "'AI-Powered Insights'"}
+    - { ref: VANTA-COMPLIANCEAGENT-2026, title: "Vanta Delivers: The Compliance Agent", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-compliance-agent", date: "2026-03-19", access: full, locator: "'Policy-to-program consistency checks'"}
+    - { ref: ARXIV-2607.22885, title: "ReCon: A Resource-Constrained Benchmark for LLM-Based Cybersecurity Compliance Across Ingestion and Retrieval Pipelines", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.22885", date: "2026-07-24", access: full, locator: "Abstract; Section 5.1 Table 5; qualitative analysis (pp. 14-17); Conclusion"}
+    - { ref: ARXIV-2601.03287, title: "Automated Post-Incident Policy Gap Analysis via Threat-Informed Evidence Mapping using Large Language Models", publisher: "arXiv (Oh, Jay, Lee, Pan)", type: academic, url: "https://arxiv.org/abs/2601.03287", date: "2026-01-04", access: full, locator: "Abstract"}
+    - { ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2, 'Supporting automated policy enforcement and compliance assessments' (p. 10)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from G04, G05 (an idea) and the consistency-check part of P08. Graded B on Calastone as a named deployment
-    without measurement; ReCon is an independent lab benchmark (arXiv preprint, three policy datasets), not a
-    deployment. NIST's draft profile lists automated compliance assessment as an AI-enabled defence opportunity
-    (NIST-CYBERAI-2025). Review of post-incident reports against standards is incident-response-16.
+    Graded B on Calastone as a named deployment without measurement; ReCon is an independent lab benchmark (arXiv
+    preprint, three policy datasets), not a deployment. NIST's draft profile lists automated compliance assessment as
+    an AI-enabled defence opportunity (NIST-IR8596-2025). Review of post-incident reports against standards is
+    security-incident-response-16.
 
 - id: security-governance-risk-10
   title: Mapping AI-related and security regulations into policy and controls, from a baseline of shared principles
@@ -691,17 +683,16 @@
     within CISO purview (TECHTARGET-AIREG-2026).
   evidence_grade: C
   sources:
-    - { ref: GITLAB-JOB-GOV-2026, title: "Staff Security Governance Engineer, Policies & Standards (job posting)", publisher: GitLab, type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8846277002", date: "2026-09-30", access: full, locator: "'Regulatory and framework alignment'; 'Automation and AI'" }
-    - { ref: OKTA-JOB-GRC-2026, title: "Senior Director, GRC (job posting)", publisher: Okta, type: job-posting, url: "https://www.okta.com/company/careers/opportunity/8130437?gh_jid=8130437", date: "2026-08-17", access: full, locator: "'Drive AI-first Transformation': intelligent policy mapping" }
-    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Whole article" }
-    - { ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (status page)", publisher: European Commission, type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-08-03", access: full, locator: "Application timeline" }
-    - { ref: SIFMA-SEC-2026, title: "Reforming Regulation S-K's Cybersecurity Disclosures (joint trades letter to the SEC)", publisher: "SIFMA, ABA, BPI, ICBA and IIB", type: professional-body, url: "https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades", date: "2026-04-10", access: full, locator: "Opening and section I" }
-    - { ref: ARXIV-2604.06274, title: "Towards the Development of an LLM-Based Methodology for Automated Security Profiling in Compliance with Ukrainian Cybersecurity Regulations", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2604.06274", date: "2026-04-07", access: full, locator: "Abstract" }
+    - { ref: GITLAB-JOB-GOV-2026, title: "Staff Security Governance Engineer, Policies & Standards (job posting)", publisher: "GitLab", type: job-posting, url: "https://job-boards.greenhouse.io/gitlab/jobs/8846277002", date: "2026-09-30", access: full, locator: "'Regulatory and framework alignment'; 'Automation and AI'"}
+    - { ref: OKTA-JOB-GRC-2026, title: "Senior Director, GRC (job posting)", publisher: "Okta", type: job-posting, url: "https://www.okta.com/company/careers/opportunity/8130437?gh_jid=8130437", date: "2026-08-17", access: full, locator: "'Drive AI-first Transformation': intelligent policy mapping"}
+    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Whole article"}
+    - { ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (status page)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-17", access: full, locator: "Application timeline"}
+    - { ref: SIFMA-SEC-2026, title: "Joint trades comment letter: Reforming Regulation S-K's Cybersecurity Disclosures (Item 106 and Form 8-K Item 1.05)", publisher: "SIFMA, ABA, BPI, ICBA and IIB", type: professional-body, url: "https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades", date: "2026-04-10", access: full, locator: "Opening and section I"}
+    - { ref: ARXIV-2604.06274, title: "Towards the Development of an LLM-Based Methodology for Automated Security Profiling in Compliance with Ukrainian Cybersecurity Regulations", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2604.06274", date: "2026-04-07", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P12, D11 and the regulatory part of G03. Evidence of AI doing the mapping is intent in job postings
-    only; the regulatory sources set context. Regulation itself is covered at archetype level in
-    research/runs/wave4/security-x-guardrails-regulation.md.
+    Evidence of AI doing the mapping is intent in job postings only; the regulatory sources set context. Regulation
+    itself is covered at archetype level in the archetype's guardrails file.
 
 - id: security-governance-risk-11
   title: Risk register upkeep, intake triage and first-draft risk analyses with AI
@@ -744,17 +735,18 @@
     PLAID-JOB-RISK-2026).
   evidence_grade: C
   sources:
-    - { ref: ANTHROPIC-JOB-RISKENG-2026, title: "Staff Security Engineer, Risk Engineering (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250052008", date: "2026-06-08", access: full, locator: "'Risk platform and automation'" }
-    - { ref: ANTHROPIC-JOB-RISKANALYST-2026, title: "Security Risk Analyst, Risk Engineering (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5397704008", date: "2026-10-05", access: full, locator: "About the role; responsibilities" }
-    - { ref: PLAID-JOB-RISK-2026, title: "Senior Security Analyst, Security Risk Management (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/4c4af954-2c70-4a3c-acc2-97c58211f920", date: "2026-10-12", access: full, locator: "'Scale Through AI and Automation'" }
-    - { ref: VANTA-RISKAGENT-2026, title: "Vanta Delivers: Agent for Risk", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-agent-for-risk", date: "2026-06-02", access: full, locator: "Risk to Asset, Control and Vendor Mapping" }
-    - { ref: ARXIV-2605.05424, title: "Evaluating the Reliability of Multiple LLMs in Risk Assessment: A CIS Controls Based Approach", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.05424", date: "2026-05-06", access: full, locator: "Abstract; Methodology (50 respondents, five models)" }
-    - { ref: OPTRO-CRX-2026, title: "GRC Intelligence takes the stage at CRX '26", publisher: "Optro (formerly AuditBoard)", type: vendor, url: "https://optro.ai/blog/grc-intelligence-takes-the-stage-crx-26", date: "2026-10-14", access: full, locator: "AURA Risk Assessment announcement" }
+    - { ref: ANTHROPIC-JOB-RISKENG-2026, title: "Staff Security Engineer, Risk Engineering (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250052008", date: "2026-06-08", access: full, locator: "'Risk platform and automation'"}
+    - { ref: ANTHROPIC-JOB-RISKANALYST-2026, title: "Security Risk Analyst, Risk Engineering (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5397704008", date: "2026-10-05", access: full, locator: "About the role; responsibilities"}
+    - { ref: PLAID-JOB-RISK-2026, title: "Senior Security Analyst, Security Risk Management (job posting)", publisher: "Plaid", type: job-posting, url: "https://jobs.ashbyhq.com/plaid/4c4af954-2c70-4a3c-acc2-97c58211f920", date: "2026-10-12", access: full, locator: "'Scale Through AI and Automation'"}
+    - { ref: VANTA-RISKAGENT-2026, title: "Vanta Delivers: Agent for Risk", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-agent-for-risk", date: "2026-06-02", access: full, locator: "Risk to Asset, Control and Vendor Mapping"}
+    - { ref: ARXIV-2605.05424, title: "Evaluating the Reliability of Multiple LLMs in Risk Assessment: A CIS Controls Based Approach", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.05424", date: "2026-05-06", access: full, locator: "Abstract; Methodology (50 respondents, five models)"}
+    - { ref: OPTRO-CRX-2026, title: "GRC Intelligence takes the stage at CRX '26", publisher: "Optro (formerly AuditBoard)", type: vendor, url: "https://optro.ai/blog/grc-intelligence-takes-the-stage-crx-26", date: "2026-10-14", access: full, locator: "AURA Risk Assessment announcement"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From P09. Verification 2026-10-17: lowered from B to C. The postings describe tooling to be designed and built
-    (Anthropic: 'Design and build AI-native risk tooling'; Plaid: 'Build AI skills and automations'), not a deployed
-    system; Vanta's Agent for Risk is a product feature with no named customer. No before-and-after metrics anywhere. Optro announced 'AURA Risk Assessment' (evidence-backed risk scores) on 2026-10-14 (OPTRO-CRX-2026).
+    Graded C, not B: the postings describe tooling to be designed and built (Anthropic: 'Design and build AI-native
+    risk tooling'; Plaid: 'Build AI skills and automations'), not a deployed system; Vanta's Agent for Risk is a
+    product feature with no named customer. No before-and-after metrics anywhere. Optro announced 'AURA Risk
+    Assessment' (evidence-backed risk scores) on 2026-10-14 (OPTRO-CRX-2026).
 
 - id: security-governance-risk-12
   title: "Cyber risk quantification with AI: scenario scoping, data gathering and LLM-assisted expert elicitation"
@@ -815,17 +807,17 @@
     shift analysts toward curating evidence and challenging rationales; not measured (ARXIV-2602.08889).
   evidence_grade: C
   sources:
-    - { ref: ANTHROPIC-JOB-RISKENG-2026, title: "Staff Security Engineer, Risk Engineering (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250052008", date: "2026-06-08", access: full, locator: "'Risk assessment and quantification'; 'Risk platform and automation'" }
-    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: "FAIR Institute (with Hanover Research; sponsored by GuidePoint Security and SAFE)", type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: "2026", access: full, locator: "Executive Summary; pp. 27-28; Methodology (p. 5)" }
-    - { ref: FAIR-SOCRM-2026, title: "What 400 Cyber Risk Leaders Told Us About the Future of Cyber Risk Management", publisher: FAIR Institute, type: professional-body, url: "https://www.fairinstitute.org/blog/what-400-cyber-risk-leaders-told-us-about-the-future-of-cyber-risk-management", date: "2026-06-04", access: full, locator: "Findings 1, 3, 4 and 8" }
-    - { ref: ARXIV-2602.08889, title: "Scalable Delphi: Large Language Models for Structured Risk Estimation", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2602.08889", date: "2026-02-09", access: full, locator: "Abstract" }
-    - { ref: ARXIV-2605.05424, title: "Evaluating the Reliability of Multiple LLMs in Risk Assessment: A CIS Controls Based Approach", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.05424", date: "2026-05-06", access: full, locator: "Abstract" }
-    - { ref: SAFE-TMOBILE-2026, title: "T-Mobile: Cutting the Cord on Subjective Risk Scores (customer story, undated; retrieval date used)", publisher: Safe Security, type: vendor, url: "https://safe.security/resources/customer-stories/t-mobile-cutting-the-cord-on-subjective-risk-scores/", date: "2026-10-17", access: full, locator: "'The Moment of Truth' paragraph" }
+    - { ref: ANTHROPIC-JOB-RISKENG-2026, title: "Staff Security Engineer, Risk Engineering (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250052008", date: "2026-06-08", access: full, locator: "'Risk assessment and quantification'; 'Risk platform and automation'"}
+    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: "FAIR Institute (with Hanover Research; sponsored by GuidePoint Security and SAFE)", type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: "2026", access: full, locator: "Executive Summary; pp. 27-28; Methodology (p. 5)"}
+    - { ref: FAIR-SOCRM-2026, title: "What 400 Cyber Risk Leaders Told Us About the Future of Cyber Risk Management", publisher: "FAIR Institute", type: professional-body, url: "https://www.fairinstitute.org/blog/what-400-cyber-risk-leaders-told-us-about-the-future-of-cyber-risk-management", date: "2026-06-04", access: full, locator: "Findings 1, 3, 4 and 8"}
+    - { ref: ARXIV-2602.08889, title: "Scalable Delphi: Large Language Models for Structured Risk Estimation", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2602.08889", date: "2026-02-09", access: full, locator: "Abstract"}
+    - { ref: ARXIV-2605.05424, title: "Evaluating the Reliability of Multiple LLMs in Risk Assessment: A CIS Controls Based Approach", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.05424", date: "2026-05-06", access: full, locator: "Abstract"}
+    - { ref: SAFE-TMOBILE-2026, title: "T-Mobile: Cutting the Cord on Subjective Risk Scores (customer story, undated; retrieval date used)", publisher: "Safe Security", type: vendor, url: "https://safe.security/resources/customer-stories/t-mobile-cutting-the-cord-on-subjective-risk-scores/", date: "2026-10-17", access: full, locator: "'The Moment of Truth' paragraph"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P10, D07 and G06. No source describes an LLM-built FAIR analysis at a named company with results. SAFE
-    markets 'autonomous CRQ' (seen in search results only). Quantifying the risk of AI systems themselves (Kovrr) is
-    routed to ai-security; adding AI scenarios to risk analyses is entry 13.
+    No source describes an LLM-built FAIR analysis at a named company with results. SAFE markets 'autonomous CRQ'
+    (seen in search results only). Quantifying the risk of AI systems themselves (Kovrr) belongs to ai-security;
+    adding AI scenarios to risk analyses is entry 13.
 
 - id: security-governance-risk-13
   title: "Risk analyses extended to the organisation's own AI: agents as privileged insiders, model providers as third parties, coding agents and code-resident controls"
@@ -880,19 +872,17 @@
     few risk professionals have software backgrounds (FAIR-AGENTICCODING-2026).
   evidence_grade: C
   sources:
-    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: "FAIR Institute (Todd Tucker, Standards Director)", type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: "2026-09-25", access: full, locator: "Takeaways 1-5 ('AI agents present a form of insider risk' to 'Assess detection by its coverage, review interval, and catch rate')" }
-    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: "2026-10-14", access: full, locator: "'Third, agent identity'; 'So what is the asset?'; 'Back to the big picture'" }
-    - { ref: FAIR-AGENTICCODING-2026, title: "What Risk Leaders Should Be Asking When AI Is Building Software", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/what-risk-leaders-should-be-asking-when-ai-is-building-software", date: "2026-10-02", access: full, locator: "'Questions to assess variance management'" }
-    - { ref: FAIR-NACD-2025, title: "AI in Cybersecurity: Governance and Risk Quantification in the Boardroom", publisher: FAIR Institute, type: professional-body, url: "https://www.fairinstitute.org/blog/nacd-ai-cybersecurity-governance-risk-quantification-boardroom", date: "2025-03-18", access: full, locator: "Key takeaways 1-3" }
-    - { ref: CLTC-AIRISK-2026, title: "AI Risk Governance: A Structured Approach for Investors and Corporate Boards (announcement page)", publisher: UC Berkeley Center for Long-Term Cybersecurity, type: academic, url: "https://cltc.berkeley.edu/publication/ai-risk-governance-a-structured-approach-for-investors-and-corporate-boards/", date: "2026-08-12", access: full, locator: "Page text: methodology and structured approach" }
-    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets (survey of 3,934 business and tech leaders)", publisher: PwC, type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "Key takeaways: 'Who's accountable for AI?'" }
+    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: "FAIR Institute (Todd Tucker, Standards Director)", type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: "2026-09-25", access: full, locator: "Takeaways 1-5 ('AI agents present a form of insider risk' to 'Assess detection by its coverage, review interval, and catch rate')"}
+    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: "2026-10-14", access: full, locator: "'Third, agent identity'; 'So what is the asset?'; 'Back to the big picture'"}
+    - { ref: FAIR-AGENTICCODING-2026, title: "What Risk Leaders Should Be Asking When AI Is Building Software", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/what-risk-leaders-should-be-asking-when-ai-is-building-software", date: "2026-10-02", access: full, locator: "'Questions to assess variance management'"}
+    - { ref: FAIR-NACD-2025, title: "AI in Cybersecurity: Governance and Risk Quantification in the Boardroom", publisher: "FAIR Institute", type: professional-body, url: "https://www.fairinstitute.org/blog/nacd-ai-cybersecurity-governance-risk-quantification-boardroom", date: "2025-03-18", access: full, locator: "Key takeaways 1-3"}
+    - { ref: CLTC-AIRISK-2026, title: "AI Risk Governance: A Structured Approach for Investors and Corporate Boards (announcement page)", publisher: "UC Berkeley Center for Long-Term Cybersecurity", type: academic, url: "https://cltc.berkeley.edu/publication/ai-risk-governance-a-structured-approach-for-investors-and-corporate-boards/", date: "2026-08-12", access: full, locator: "Page text: methodology and structured approach"}
+    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets (survey of 3,934 business and tech leaders)", publisher: "PwC", type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "Key takeaways: 'Who's accountable for AI?'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from D06, D08 (an idea), D18 (an idea) and G13 (an idea): all describe the same change, risk analysts
-    extending scenarios and assessments to the organisation's own AI adoption. Graded C (guidance by a standard-setter;
-    no deployment). Related entries: ai-security-24 (third-party AI assurance), application-security (guardrails for
-    AI-written code), identity-access (agent identity). The code-quality figures quoted in FAIR-AGENTICCODING-2026 are
-    routed to application-security.
+    Graded C (guidance by a standard-setter; no deployment). Related entries: security-ai-security-24 (third-party AI
+    assurance), security-application-security-02 (guardrails for AI-written code), security-ai-security-06 (agent
+    identity). The code-quality figures quoted in FAIR-AGENTICCODING-2026 belong to application-security.
 
 - id: security-governance-risk-14
   title: Board and executive risk reporting drafted from programme data and re-based for AI-accelerated exploitation
@@ -914,7 +904,7 @@
     Idea: programme data (risk register, control status, vendor posture, quantified exposure) feeds a structured board
     pack that AI drafts and the CISO edits; no source describes this in use. Perforce plans to use its GRC platform for
     regular risk reviews and board-level reporting (VANTA-PERFORCE-2026). NIST's draft profile lists risk communication and executive decision support as
-    a defensive use of AI (NIST-CYBERAI-2025). Gartner suggests a financial-statement format: balance sheet of
+    a defensive use of AI (NIST-IR8596-2025). Gartner suggests a financial-statement format: balance sheet of
     programme state, income statement of expected losses, cash flow of resources, and a narrative with requests
     (TECHTARGET-BOARD-2026). The CSA briefing asks CISOs to update risk models and reporting and gives board talking
     points (CSA-MYTHOSREADY-2026).
@@ -934,7 +924,7 @@
   prerequisites:
     - "A stable minimum set of indicators per report section, consistent over time, and the framework circulated among leaders before use (TECHTARGET-BOARD-2026)"
   risks_and_guardrails:
-    - "NIST says AI-generated reports should be reviewed by a human before they change organisational risk management (NIST-CYBERAI-2025)"
+    - "NIST says AI-generated reports should be reviewed by a human before they change organisational risk management (NIST-IR8596-2025)"
     - "The CSA briefing says boards will face questions on whether available AI tools were used for defensive scanning and whether not doing so is negligence (CSA-MYTHOSREADY-2026)"
     - "A survey cited by Gartner found 71% of board members willing to accept more cyber risk to reach business goals (TECHTARGET-CISO-2026)"
   human_checkpoints:
@@ -945,16 +935,16 @@
     (TECHTARGET-CISO-2026).
   evidence_grade: C
   sources:
-    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "ROI bullet 'Vendor and Enterprise Risk Management'" }
-    - { ref: TECHTARGET-BOARD-2026, title: "Lost in translation: Cybersecurity board reporting for CISOs (Gartner Security & Risk Management Summit session)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/news/366643884/Lost-in-translation-Cybersecurity-board-reporting-for-CISOs", date: "2026-06-03", access: full, locator: "'Know your audience'; 'Use financial reports as templates'" }
-    - { ref: TECHTARGET-CISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow (Gartner Security & Risk Management Summit session)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: "2026-06-08", access: full, locator: "'The security drag'; 'A new mandate for CISOs'" }
-    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program (PDF v1.0)", publisher: "Cloud Security Alliance with SANS, [un]prompted and OWASP GenAI Security Project", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/mythosreadyv1.0.pdf", date: "2026-04-12", access: full, locator: "Action 6 'Update Risk Models and Reporting' p. 20; Section V p. 22; risk register items 11-12 pp. 17-18" }
-    - { ref: NIST-CYBERAI-2025, title: "Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile), NIST IR 8596 initial preliminary draft", publisher: NIST, type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2 'Risk communication and executive decision support' (p. 11); GV.OV-03 row (p. 28)" }
-    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: FAIR Institute, type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: "2026", access: full, locator: "Executive Summary item 4" }
+    - { ref: VANTA-PERFORCE-2026, title: "Perforce unifies enterprise compliance, security, and risk with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/perforce", date: "2026-03", access: full, locator: "ROI bullet 'Vendor and Enterprise Risk Management'"}
+    - { ref: TECHTARGET-BOARD-2026, title: "Lost in translation: Cybersecurity board reporting for CISOs (Gartner Security & Risk Management Summit session)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/news/366643884/Lost-in-translation-Cybersecurity-board-reporting-for-CISOs", date: "2026-06-03", access: full, locator: "'Know your audience'; 'Use financial reports as templates'"}
+    - { ref: TECHTARGET-CISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow (Gartner Security & Risk Management Summit session)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: "2026-06-08", access: full, locator: "'The security drag'; 'A new mandate for CISOs'"}
+    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: "Cloud Security Alliance with SANS, OWASP GenAI Security Project and CISO community", type: professional-body, url: "https://labs.cloudsecurityalliance.org/mythos-ciso", date: "2026-04-12", access: full, locator: "PDF v1.0; Action 6 'Update Risk Models and Reporting' p. 20; Section V p. 22; risk register items 11-12 pp. 17-18"}
+    - { ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2 'Risk communication and executive decision support' (p. 11); GV.OV-03 row (p. 28)"}
+    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: "FAIR Institute (with Hanover Research; sponsored by GuidePoint Security and SAFE)", type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: "2026", access: full, locator: "Executive Summary item 4"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P11, D12 and G07. The weakest entry on AI use: no named deployment of AI-drafted board packs with
-    results. The Gartner format is not AI-based. Safe Security and Kovrr board-reporting features were not read.
+    The weakest entry on AI use: no named deployment of AI-drafted board packs with results. The Gartner format is not
+    AI-based. Safe Security and Kovrr board-reporting features were not read.
 
 - id: security-governance-risk-15
   title: Audit response drafting and consolidation of several framework audits around one evidence set
@@ -970,12 +960,12 @@
   problem: >-
     Each external audit asks subject experts for the same walkthroughs and evidence, and several audits run in parallel
     (VANTA-SAMSARA-2026). NIST's draft profile names drafting compliance reports and organising evidence as work AI
-    could take off analysts (NIST-CYBERAI-2025).
+    could take off analysts (NIST-IR8596-2025).
   solution: >-
     AI drafts responses to auditor requests from existing evidence, and one evidence set is mapped to several
     frameworks so audits can be run together (ANTHROPIC-JOB-GRCPLATFORM-2026; VANTA-SYNTHESIA-2026). NIST's draft
     profile says AI can draft compliance reports, organise evidence and produce standardised documentation
-    (NIST-CYBERAI-2025).
+    (NIST-IR8596-2025).
   outcomes:
     - lever: capacity
       description: Synthesia reports consolidating audit cycles
@@ -991,10 +981,10 @@
       source_ref: VANTA-SAMSARA-2026
   prerequisites:
     - "A common control framework and mapped evidence (VANTA-SAMSARA-2026)"
-    - "Structured evidence records and templates that match the auditor's or regulator's required fields (NIST-CYBERAI-2025)"
+    - "Structured evidence records and templates that match the auditor's or regulator's required fields (NIST-IR8596-2025)"
   risks_and_guardrails:
     - "No source read documents auditor reliance on AI-prepared evidence"
-    - "NIST says AI-generated reports should be reviewed by a human before any change to organisational risk management (NIST-CYBERAI-2025)"
+    - "NIST says AI-generated reports should be reviewed by a human before any change to organisational risk management (NIST-IR8596-2025)"
   human_checkpoints:
     - "No source describes who reviews AI-drafted audit responses; Anthropic's posting says the systems feed audits and external auditors (ANTHROPIC-JOB-GRCPLATFORM-2026)"
     - "NIS2 makes top management accountable for non-compliance with risk-management measures, so a named executive owns what is filed (EC-NIS2)"
@@ -1003,17 +993,16 @@
     'generating audit responses' (ANTHROPIC-JOB-GRCPLATFORM-2026).
   evidence_grade: B
   sources:
-    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "Multi-framework compliance bullet" }
-    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: Vanta, type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "ROI list" }
-    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Responsibilities" }
-    - { ref: NIST-CYBERAI-2025, title: "Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile), NIST IR 8596 initial preliminary draft", publisher: NIST, type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2 'Conduct reporting' (p. 11); GV.OV-03 row (p. 28)" }
-    - { ref: EC-NIS2, title: "NIS2 Directive: securing network and information systems (policy page)", publisher: European Commission, type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive", date: "2026-07-02", access: full, locator: "Paragraphs on risk-management measures and top-management accountability" }
+    - { ref: VANTA-SYNTHESIA-2026, title: "How Synthesia became the first AI video company certified against ISO 42001", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/synthesia", date: "2026-10", access: full, locator: "Multi-framework compliance bullet"}
+    - { ref: VANTA-SAMSARA-2026, title: "Samsara realized $150M+ in influenced revenue while scaling its GRC program with Vanta", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/customers/samsara", date: "2026-05", access: full, locator: "ROI list"}
+    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Responsibilities"}
+    - { ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2 'Conduct reporting' (p. 11); GV.OV-03 row (p. 28)"}
+    - { ref: EC-NIS2, title: "NIS2 Directive: securing network and information systems (policy page)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive", date: "2026-07-02", access: full, locator: "Paragraphs on risk-management measures and top-management accountability"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P15 and the audit-evidence part of G08 (an idea). Graded B: both figures are vendor-published, but
-    neither isolates AI drafting. Overlaps entries 05 and 06; kept separate because the change is in the auditor-facing
-    step. Incident summaries and regulator notifications are incident-response-14 and -15. A-LIGN's compliance
-    benchmark figures did not render.
+    Graded B: both figures are vendor-published, but neither isolates AI drafting. Overlaps entries 05 and 06; kept
+    separate because the change is in the auditor-facing step. Incident summaries and regulator notifications are
+    security-incident-response-14 and -15. A-LIGN's compliance benchmark figures did not render.
 
 - id: security-governance-risk-16
   title: Verifying automated compliance evidence and auditor independence before relying on attestations
@@ -1060,15 +1049,15 @@
     customer's GRC team becomes a verifier of its platform and auditor (IANS-DELVE-2026).
   evidence_grade: C
   sources:
-    - { ref: IANS-DELVE-2026, title: "Delve Allegations Expose Weak Points in Modern Compliance", publisher: IANS Research, type: firm, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: "2026-03-24", access: full, locator: "Key Points; Big Picture; 'IANS Faculty Recommendations'" }
-    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough (vendor-authored, Anecdotes)", publisher: BleepingComputer, type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: "2026-06-26", access: full, locator: "'Trust becomes the bottleneck'" }
-    - { ref: CSA-STARAI-2026, title: "CSA STAR for AI (program page)", publisher: Cloud Security Alliance, type: standard-setter, url: "https://cloudsecurityalliance.org/star/ai/", date: "2026-10-17", access: full, locator: "'Levels of STAR for AI'" }
+    - { ref: IANS-DELVE-2026, title: "Delve Allegations Expose Weak Points in Modern Compliance", publisher: "IANS Research", type: firm, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: "2026-03-24", access: full, locator: "Key Points; Big Picture; 'IANS Faculty Recommendations'"}
+    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough (vendor-authored, Anecdotes)", publisher: "BleepingComputer", type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: "2026-06-26", access: full, locator: "'Trust becomes the bottleneck'"}
+    - { ref: CSA-STARAI-2026, title: "CSA STAR for AI (program page)", publisher: "Cloud Security Alliance", type: standard-setter, url: "https://cloudsecurityalliance.org/star/ai/", date: "2026-10-17", access: full, locator: "'Levels of STAR for AI'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From D02. Everything about Delve is an allegation reported by IANS; Delve denies it. The sources do not say AI
-    generated the evidence; the case is used because it shapes discussion of automated attestation. Routed from the
-    ai-security governance file: CSA's STAR for AI includes an automatically scored 'Valid-AI-ted' AI-CAIQ level, one
-    form of automated validation of vendor self-assessments (CSA-STARAI-2026); see ai-security-24.
+    Everything about Delve is an allegation reported by IANS; Delve denies it. The sources do not say AI generated the
+    evidence; the case is used because it shapes discussion of automated attestation. CSA's STAR for AI includes an
+    automatically scored 'Valid-AI-ted' AI-CAIQ level, one form of automated validation of vendor self-assessments
+    (CSA-STARAI-2026); see security-ai-security-24.
 
 - id: security-governance-risk-17
   title: The security team as author and reviewer of enterprise AI policy and approval gates for AI tools and agents
@@ -1144,30 +1133,29 @@
     opinion with no named organisation (VENABLES-CISO2-2026).
   evidence_grade: B
   sources:
-    - { ref: ANTHROPIC-JOB-AGENTSEC-2026, title: "Security Risk & Compliance, Agent Security (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5443871008", date: "2026-10-05", access: full, locator: "Responsibilities" }
-    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "'AI Governance' bullet" }
-    - { ref: BSIDESLV-2026, title: "From the Wild West to Yes, If: Building an AI Security & Governance Program (Cengage)", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "Proving Ground talk abstract" }
-    - { ref: CLOUDSECPOD-SENDBIRD-2025, title: "How to secure your AI Agents: A CISOs Journey", publisher: Cloud Security Podcast, type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-to-secure-your-ai-agents-a-cisos-journey", date: "2025-12-09", access: full, locator: "Transcript, roughly 00:19-00:36" }
-    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: ISACA, type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Paragraphs on AI governance and AI incident response planning" }
-    - { ref: ISACA-SOCINFO-2026, title: "State of Cybersecurity 2026: Flexibility, Agility in High Demand in Cybersecurity Workforce (global infographic)", publisher: ISACA, type: professional-body, url: "https://www.isaca.org/-/media/files/isacadp/project/isaca/resources/infographics/isaca-state-of-cybersecurity-2026-global.pdf", date: "2026-09-22", access: full, locator: "'AI's unmistakably growing impact on cybersecurity' panel (date is the report's release date)" }
-    - { ref: PROOFPOINT-VOC-2026, title: "The risk has moved: what Proofpoint's 2026 Voice of the CISO reveals", publisher: Proofpoint, type: survey, url: "https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals", date: "2026-09-09", access: full, locator: "Paragraphs on GenAI risk and governance" }
-    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides presenting the 2026 SANS/GIAC Workforce Report)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 5, 8, 21-22" }
-    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways" }
-    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "'Ground AI strategy with risk-based principles'" }
-    - { ref: TECHTARGET-CISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: "2026-06-08", access: full, locator: "'The security drag'" }
-    - { ref: VENABLES-CISO2-2026, title: "CISO Version 2.0", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ciso-version-2-0", date: "2026-06-12", access: full, locator: "'What Next - Two Divergent Paths?'" }
-    - { ref: SPLUNK-CISOPOLICY-2024, title: "A CISO's Guide to Generative AI Policy", publisher: Splunk, type: vendor, url: "https://www.splunk.com/en_us/blog/ciso-circle/ciso-gen-ai-policy.html", date: "2024-07-31", access: full, locator: "Opening findings from State of Security 2024" }
+    - { ref: ANTHROPIC-JOB-AGENTSEC-2026, title: "Security Risk & Compliance, Agent Security (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5443871008", date: "2026-10-05", access: full, locator: "Responsibilities"}
+    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: "Cloudflare", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "'AI Governance' bullet"}
+    - { ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks (abstracts)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "Talk 'From the Wild West to Yes, If: Building an AI Security & Governance Program' (Cengage); Proving Ground talk abstract"}
+    - { ref: CLOUDSECPOD-SENDBIRD-2025, title: "How to secure your AI Agents: A CISOs Journey", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-to-secure-your-ai-agents-a-cisos-journey", date: "2025-12-09", access: full, locator: "Transcript, roughly 00:19-00:36"}
+    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Paragraphs on AI governance and AI incident response planning"}
+    - { ref: ISACA-SOCINFO-2026, title: "State of Cybersecurity 2026: Flexibility, Agility in High Demand in Cybersecurity Workforce (global infographic)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/-/media/files/isacadp/project/isaca/resources/infographics/isaca-state-of-cybersecurity-2026-global.pdf", date: "2026-09-22", access: full, locator: "'AI's unmistakably growing impact on cybersecurity' panel (date is the report's release date)"}
+    - { ref: PROOFPOINT-VOC-2026, title: "The risk has moved: what Proofpoint's 2026 Voice of the CISO reveals", publisher: "Proofpoint", type: survey, url: "https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals", date: "2026-09-09", access: full, locator: "Paragraphs on GenAI risk and governance"}
+    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides presenting the 2026 SANS/GIAC Workforce Report)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 5, 8, 21-22"}
+    - { ref: CSA-AGENTS-2026, title: "The Agents You Didn't Choose: Embedded AI and Liability", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_embedded_third_party_agents_systemic_risk_20261012-csa-styled.pdf", date: "2026-10-12", access: full, locator: "Key Takeaways"}
+    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "'Ground AI strategy with risk-based principles'"}
+    - { ref: TECHTARGET-CISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow (Gartner Security & Risk Management Summit session)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: "2026-06-08", access: full, locator: "'The security drag'"}
+    - { ref: VENABLES-CISO2-2026, title: "CISO Version 2.0", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ciso-version-2-0", date: "2026-06-12", access: full, locator: "'What Next - Two Divergent Paths?'"}
+    - { ref: SPLUNK-CISOPOLICY-2024, title: "A CISO's Guide to Generative AI Policy", publisher: "Splunk", type: vendor, url: "https://www.splunk.com/en_us/blog/ciso-circle/ciso-gen-ai-policy.html", date: "2024-07-31", access: full, locator: "Opening findings from State of Security 2024"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P14, D05 and D16 (an idea about the CISO's remit). Grade B: named organisations (Cengage, Sendbird) and
-    named role postings describe real programmes; the only number is an activity count in a talk abstract. The
-    ISACA figures checked 2026-10-17 against the release and ISACA's global infographic: 56% involved in AI policy, 8%
-    run AI-related incident response exercises regularly, 64% have run none (global, more than 1,800 respondents). The
-    60% and '71% none' read by the cross-cutting regulation file are European figures: ISACA's London release
-    ('Cyber teams stretched too thin...', 2026-09-22) and its European infographic report, for 494 European
-    respondents, 5% running exercises regularly, 71% none and 60% involved in AI-use policy. Quote global and European
-    figures separately. The AI governance framework itself (board oversight, risk tiers) is
-    ai-security-22; the AI inventory is ai-security-21.
+    Grade B: named organisations (Cengage, Sendbird) and named role postings describe real programmes; the only number
+    is an activity count in a talk abstract. ISACA figures, checked against the release and ISACA's global
+    infographic: 56% involved in AI policy, 8% run AI-related incident response exercises regularly, 64% have run none
+    (global, more than 1,800 respondents). The 60% and '71% none' sometimes quoted are European figures: ISACA's
+    London release ('Cyber teams stretched too thin...', 2026-09-22) and its European infographic report, for 494
+    European respondents, 5% running exercises regularly, 71% none and 60% involved in AI-use policy. Quote global and
+    European figures separately. The AI governance framework itself (board oversight, risk tiers) is
+    security-ai-security-22; the AI inventory is security-ai-security-21.
 
 - id: security-governance-risk-18
   title: The security function's own AI-use policy - approved tools, logged prompts and outputs, autonomy tiers and AI incident playbooks
@@ -1234,30 +1222,30 @@
     asked to specify and test (VENABLES-HFT-2026; DARKREADING-ROGUE-2026).
   evidence_grade: B
   sources:
-    - { ref: TOB-AINATIVE-2026, title: "How we made Trail of Bits AI-native (so far)", publisher: Trail of Bits Blog, type: firm, url: "https://blog.trailofbits.com/2026/03/31/how-we-made-trail-of-bits-ai-native-so-far/", date: "2026-03-31", access: full, locator: "Whole post (AI handbook)" }
-    - { ref: SANS-SOC-2026, title: "SANS 2026 SOC Report: A Decade of Evolution in Cyber Defense (landing page)", publisher: SANS Institute, type: professional-body, url: "https://www.sans.org/research/security-operations-report", date: "2026", access: full, locator: "Top takeaways and FAQ" }
-    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets", publisher: PwC, type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "'AI for security' section" }
-    - { ref: WEF-GCO-2026, title: "Global Cybersecurity Outlook 2026 (with Accenture)", publisher: World Economic Forum, type: survey, url: "https://www.weforum.org/publications/global-cybersecurity-outlook-2026/", date: "2026-01-12", access: full, locator: "'AI is supercharging the cyber arms race'" }
-    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: ISACA, type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Opening paragraph; 'AI incident response planning lags'; paragraph on policy involvement" }
-    - { ref: ISACA-SOCINFO-2026, title: "State of Cybersecurity 2026: Flexibility, Agility in High Demand in Cybersecurity Workforce (global infographic)", publisher: ISACA, type: professional-body, url: "https://www.isaca.org/-/media/files/isacadp/project/isaca/resources/infographics/isaca-state-of-cybersecurity-2026-global.pdf", date: "2026-09-22", access: full, locator: "'However, AI incident response planning lags' panel (date is the report's release date)" }
-    - { ref: FINRA-OVERSIGHT-2026, title: "2026 FINRA Annual Regulatory Oversight Report", publisher: FINRA, type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report", date: "2025-12-09", access: full, locator: "GenAI section page (.../gen-ai): Supervision & Governance, Testing, Monitoring; Emerging Trends: Agents" }
-    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: TechTarget SearchSecurity, type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Introduction (visibility into vendor-embedded AI)" }
-    - { ref: CISA-AGENTIC-BULLETIN-2026, title: "CISA and Partners Release Guidance on Adopting Agentic AI Services (release bulletin)", publisher: "CISA (via GovDelivery)", type: regulator, url: "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/41544ff", date: "2026-05-01", access: full, locator: "Bulletin body, recommendations list" }
-    - { ref: CCCS-AGENTIC-2026, title: "Joint guidance on the careful adoption of agentic artificial intelligence services", publisher: Canadian Centre for Cyber Security, type: regulator, url: "https://cyber.gc.ca/en/news-events/joint-guidance-careful-adoption-agentic-artificial-intelligence-services", date: "2026-05-01", access: full, locator: "Body" }
-    - { ref: ARXIV-2610.09906, title: "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2610.09906", date: "2026-10-07", access: full, locator: "Abstract" }
-    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: "2026-05-02", access: full, locator: "'HFT Controls: A Template for Agentic Safety'; 'Post-Trade Analysis (Drop-Copy Auditing)'" }
-    - { ref: DARKREADING-ROGUE-2026, title: "Is It Fair to Blame 'Rogue' AI for Security Failures?", publisher: Dark Reading, type: press, url: "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures", date: "2026-10-02", access: full, locator: "'For Defenders, AI Agent Intention Should Not Matter'" }
-    - { ref: FIRST-CON-2026, title: "38th Annual FIRST Conference program (Centene session; Jumpmind session)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06-16", access: full, locator: "Centene session 16 Jun 2026 11:45-12:20 (abstract)" }
-    - { ref: UK-CGCOP-2025, title: "Cyber Governance Code of Practice", publisher: "UK DSIT, DCMS and NCSC", type: regulator, url: "https://www.gov.uk/government/publications/cyber-governance-code-of-practice/cyber-governance-code-of-practice", date: "2025-04-08", access: full, locator: "Introduction" }
+    - { ref: TOB-AINATIVE-2026, title: "How we made Trail of Bits AI-native (so far)", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/03/31/how-we-made-trail-of-bits-ai-native-so-far/", date: "2026-03-31", access: full, locator: "Whole post (AI handbook)"}
+    - { ref: SANS-SOC-2026, title: "SANS 2026 SOC Report: A Decade of Evolution in Cyber Defense", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/research/security-operations-report", date: "2026", access: full, locator: "Landing page; Top takeaways and FAQ"}
+    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets (survey of 3,934 business and tech leaders)", publisher: "PwC", type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "'AI for security' section"}
+    - { ref: WEF-GCO-2026, title: "Global Cybersecurity Outlook 2026 (with Accenture)", publisher: "World Economic Forum", type: survey, url: "https://www.weforum.org/publications/global-cybersecurity-outlook-2026/", date: "2026-01-12", access: full, locator: "'AI is supercharging the cyber arms race'"}
+    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Opening paragraph; 'AI incident response planning lags'; paragraph on policy involvement"}
+    - { ref: ISACA-SOCINFO-2026, title: "State of Cybersecurity 2026: Flexibility, Agility in High Demand in Cybersecurity Workforce (global infographic)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/-/media/files/isacadp/project/isaca/resources/infographics/isaca-state-of-cybersecurity-2026-global.pdf", date: "2026-09-22", access: full, locator: "'However, AI incident response planning lags' panel (date is the report's release date)"}
+    - { ref: FINRA-OVERSIGHT-2026, title: "2026 FINRA Annual Regulatory Oversight Report", publisher: "FINRA", type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report", date: "2025-12-09", access: full, locator: "GenAI section page (.../gen-ai): Supervision & Governance, Testing, Monitoring; Emerging Trends: Agents"}
+    - { ref: TECHTARGET-AIREG-2026, title: "How to prepare security controls for future AI regulations (opinion by Gartner VP analyst Bernard Woo)", publisher: "TechTarget SearchSecurity", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: "2026-06-02", access: full, locator: "Introduction (visibility into vendor-embedded AI)"}
+    - { ref: CISA-AGENTIC-BULLETIN-2026, title: "CISA and Partners Release Guidance on Adopting Agentic AI Services (release bulletin)", publisher: "CISA (via GovDelivery)", type: regulator, url: "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/41544ff", date: "2026-05-01", access: full, locator: "Bulletin body, recommendations list"}
+    - { ref: CCCS-AGENTIC-2026, title: "Joint guidance on the careful adoption of agentic artificial intelligence services", publisher: "Canadian Centre for Cyber Security", type: regulator, url: "https://cyber.gc.ca/en/news-events/joint-guidance-careful-adoption-agentic-artificial-intelligence-services", date: "2026-05-01", access: full, locator: "Body"}
+    - { ref: ARXIV-2610.09906, title: "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy", publisher: "arXiv (Koutidis, Kekatos, Nianios, Lekidis)", type: academic, url: "https://arxiv.org/abs/2610.09906", date: "2026-10-07", access: full, locator: "Abstract"}
+    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: "2026-05-02", access: full, locator: "'HFT Controls: A Template for Agentic Safety'; 'Post-Trade Analysis (Drop-Copy Auditing)'"}
+    - { ref: DARKREADING-ROGUE-2026, title: "Is It Fair to Blame 'Rogue' AI for Security Failures?", publisher: "Dark Reading", type: press, url: "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures", date: "2026-10-02", access: full, locator: "'For Defenders, AI Agent Intention Should Not Matter'"}
+    - { ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "Centene session 16 Jun 2026 11:45-12:20 (abstract); Jumpmind session"}
+    - { ref: UK-CGCOP-2025, title: "Cyber Governance Code of Practice", publisher: "UK DSIT, DCMS and NCSC", type: regulator, url: "https://www.gov.uk/government/publications/cyber-governance-code-of-practice/cyber-governance-code-of-practice", date: "2025-04-08", access: full, locator: "Introduction"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from G10, G11, D14 (an idea), D15 and an item routed from application-security (Trail of Bits' AI handbook).
-    Graded B on Trail of Bits as a named security firm with a written AI-use policy in use; no outcome is measured, and
-    the survey figures describe the field. The runtime controls themselves live in other modules: ai-security-07, -08,
-    -10, -11, -12 (gating, containment, monitoring, logging), operations-19, -20, -21 (constrained SOC actions,
-    per-action authority, measuring the SOC's AI), incident-response-17 (AI-agent incidents). Trail of Bits' wider
-    AI-native programme is in application-security. ISACA figures re-checked 2026-10-17 against the release and ISACA's
-    global infographic (see entry 17); '71% none' is the European-edition figure, not the global one.
+    Graded B on Trail of Bits as a named security firm with a written AI-use policy in use; no outcome is measured,
+    and the survey figures describe the field. The runtime controls themselves live in other modules:
+    security-ai-security-07, -08, -10, -11, -12 (gating, containment, monitoring, logging), security-operations-19,
+    -20, -21 (constrained SOC actions, per-action authority, measuring the SOC's AI), security-incident-response-17
+    (AI-agent incidents). Trail of Bits' wider AI-native programme is in security-application-security-17. ISACA
+    figures are checked against the release and ISACA's global infographic (see entry 17); '71% none' is the
+    European-edition figure, not the global one.
 
 - id: security-governance-risk-19
   title: "GRC engineering operating model: engineers and analysts build compliance automation and agent workflows inside the GRC team"
@@ -1312,24 +1300,23 @@
     AI governance postings in eight EU countries, about 7 to 1, across all functions (VANTA-AIGOVGAP-2026).
   evidence_grade: B
   sources:
-    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Responsibilities and qualifications" }
-    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role" }
-    - { ref: OPENAI-JOB-ERM-2026, title: "Head of Enterprise Risk Management (job posting)", publisher: OpenAI, type: job-posting, url: "https://jobs.ashbyhq.com/openai/db40bc4f-c7fb-47d5-a7cc-918fb8b1f815", date: "2026-10-14", access: full, locator: "Role summary and qualifications" }
-    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "About the role" }
-    - { ref: FIGMA-JOB-COMPLIANCEENG-2026, title: "Compliance Engineer (job posting)", publisher: Figma, type: job-posting, url: "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004", date: "2026-10-16", access: full, locator: "Role summary" }
-    - { ref: PLAID-JOB-TPRM-2026, title: "Security Analyst, Third-Party Ecosystem Risk Management (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/94752cfc-4a62-48c9-bcc0-e5f7f1905be6", date: "2026-08-12", access: full, locator: "Role summary" }
-    - { ref: PLAID-JOB-RISK-2026, title: "Senior Security Analyst, Security Risk Management (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/4c4af954-2c70-4a3c-acc2-97c58211f920", date: "2026-10-12", access: full, locator: "Role summary" }
-    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "'When we first ran this assessment'" }
-    - { ref: VANTA-AIGOVGAP-2026, title: "The AI governance confidence gap (guest post by Axipro's CEO on Axipro's 2026 State of AI Governance Hiring in Europe study)", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/ai-governance-confidence-gap", date: "2026-07-24", access: full, locator: "Data section" }
-    - { ref: GRCENGINEER-STATEOFGRC-2026, title: "State of GRC 2026 Report: Spreadsheets are still #1", publisher: "GRC Engineer newsletter (Ayoub Fandi)", type: survey, url: "https://www.grcengineer.com/p/state-of-grc-2026-report-spreadsheets-are-still-1", date: "2026-03-16", access: full, locator: "'5 Key Takeaways from the Report'" }
-    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: "2026-10-15", access: full, locator: "Task table; 'Reading is most of it'" }
+    - { ref: ANTHROPIC-JOB-GRCPLATFORM-2026, title: "Staff+ Software Engineer, GRC Platform (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5250091008", date: "2026-06-08", access: full, locator: "Responsibilities and qualifications"}
+    - { ref: ANTHROPIC-JOB-CONTROLS-2026, title: "Controls Specialist, Security GRC (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5436826008", date: "2026-09-29", access: full, locator: "About the role"}
+    - { ref: OPENAI-JOB-ERM-2026, title: "Head of Enterprise Risk Management (job posting)", publisher: "OpenAI", type: job-posting, url: "https://jobs.ashbyhq.com/openai/db40bc4f-c7fb-47d5-a7cc-918fb8b1f815", date: "2026-10-14", access: full, locator: "Role summary and qualifications"}
+    - { ref: CLOUDFLARE-JOB-GRC-2026, title: "GRC Engineer (job posting)", publisher: "Cloudflare", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8045914?gh_jid=8045914", date: "2026-07-08", access: full, locator: "About the role"}
+    - { ref: FIGMA-JOB-COMPLIANCEENG-2026, title: "Compliance Engineer (job posting)", publisher: "Figma", type: job-posting, url: "https://boards.greenhouse.io/figma/jobs/6223155004?gh_jid=6223155004", date: "2026-10-16", access: full, locator: "Role summary"}
+    - { ref: PLAID-JOB-TPRM-2026, title: "Security Analyst, Third-Party Ecosystem Risk Management (job posting)", publisher: "Plaid", type: job-posting, url: "https://jobs.ashbyhq.com/plaid/94752cfc-4a62-48c9-bcc0-e5f7f1905be6", date: "2026-08-12", access: full, locator: "Role summary"}
+    - { ref: PLAID-JOB-RISK-2026, title: "Senior Security Analyst, Security Risk Management (job posting)", publisher: "Plaid", type: job-posting, url: "https://jobs.ashbyhq.com/plaid/4c4af954-2c70-4a3c-acc2-97c58211f920", date: "2026-10-12", access: full, locator: "Role summary"}
+    - { ref: VANTA-QUALITYEVAL-2026, title: "The Vanta AI Quality Eval Maturity Model", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/vanta-ai-quality-evaluation-maturity-model", date: "2026-06-10", access: full, locator: "'When we first ran this assessment'"}
+    - { ref: VANTA-AIGOVGAP-2026, title: "The AI governance confidence gap (guest post by Axipro's CEO on Axipro's 2026 State of AI Governance Hiring in Europe study)", publisher: "Vanta", type: vendor, url: "https://www.vanta.com/resources/ai-governance-confidence-gap", date: "2026-07-24", access: full, locator: "Data section"}
+    - { ref: GRCENGINEER-STATEOFGRC-2026, title: "State of GRC 2026 Report: Spreadsheets are still #1", publisher: "GRC Engineer newsletter (Ayoub Fandi)", type: survey, url: "https://www.grcengineer.com/p/state-of-grc-2026-report-spreadsheets-are-still-1", date: "2026-03-16", access: full, locator: "'5 Key Takeaways from the Report'"}
+    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: "2026-10-15", access: full, locator: "Task table; 'Reading is most of it'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from P13 and D10. Evidence is employer self-description; Anthropic and OpenAI are AI developers and their
-    postings may describe practice still being built. Ladder set to augment (P said delegate, D augment): the postings
-    describe people reviewing agent first passes and building the tools. Comparable models in other modules: the
-    security team that builds its own AI skills and agents (application-security), incident-response-22,
-    operations-23.
+    Evidence is employer self-description; Anthropic and OpenAI are AI developers and their postings may describe
+    practice still being built. Ladder augment: the postings describe people reviewing agent first passes and building
+    the tools. Comparable models in other modules: the security team that builds its own AI skills and agents
+    (security-application-security-17), security-incident-response-22, security-operations-23.
 
 - id: security-governance-risk-20
   title: Security operating model and roles redesigned around AI oversight, with role-based AI skills training
@@ -1388,17 +1375,16 @@
     technical skills gaps (ISACA-SOC-2026).
   evidence_grade: C
   sources:
-    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides presenting the 2026 SANS/GIAC Workforce Report)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 6-8, 12, 14, 15, 17, 18" }
-    - { ref: ISC2-WORKFORCE-2025, title: "2025 ISC2 Cybersecurity Workforce Study", publisher: ISC2, type: professional-body, url: "https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study", date: "2025-12-04", access: full, locator: "Research Note; 'AI Is Creating Opportunities'; 'Key Skills for AI'; Conclusion" }
-    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: ISACA, type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Sections on skills gaps" }
-    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets", publisher: PwC, type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "Key takeaways: 'Who's accountable for AI?'" }
-    - { ref: CSA-FRC-HUB-2026, title: "Frontier Ready Cybersecurity initiative hub (lists 'Designing the AI-First Security Organization', in open peer review; retrieval date used)", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://cloudsecurityalliance.org/csai-foundation/frontier-ready-cybersecurity", date: "2026-10-17", access: full, locator: "Research list (description only)" }
+    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides presenting the 2026 SANS/GIAC Workforce Report)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 6-8, 12, 14, 15, 17, 18"}
+    - { ref: ISC2-WORKFORCE-2025, title: "2025 ISC2 Cybersecurity Workforce Study", publisher: "ISC2", type: professional-body, url: "https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study", date: "2025-12-04", access: full, locator: "Research Note; 'AI Is Creating Opportunities'; 'Key Skills for AI'; Conclusion"}
+    - { ref: ISACA-SOC-2026, title: "Only 8 Percent of Organizations Conduct Regular AI-Specific Response Exercises (State of Cybersecurity 2026 press release)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Sections on skills gaps"}
+    - { ref: PWC-GDTI-2027, title: "2027 Global Digital Trust Insights: Moving targets (survey of 3,934 business and tech leaders)", publisher: "PwC", type: survey, url: "https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html", date: "2026-10-01", access: full, locator: "Key takeaways: 'Who's accountable for AI?'"}
+    - { ref: CSA-FRC-HUB-2026, title: "Frontier Ready Cybersecurity initiative hub (lists 'Designing the AI-First Security Organization', in open peer review; retrieval date used)", publisher: "Cloud Security Alliance (CSAI Foundation)", type: standard-setter, url: "https://cloudsecurityalliance.org/csai-foundation/frontier-ready-cybersecurity", date: "2026-10-17", access: full, locator: "Research list (description only)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from G12 and G14. Survey evidence only, without published sample sizes for the SANS/GIAC slides. Ladder
-    delegate follows G12's framing (work reassigned between people and agents). Archetype-level workforce data are in
-    research/runs/wave4/security-x-workforce-talent.md; this entry keeps only what an advisor needs for the GRC
-    conversation.
+    Survey evidence only, without published sample sizes for the SANS/GIAC slides. Ladder delegate: work is reassigned
+    between people and agents. Archetype-level workforce data are in the archetype's workforce file; this entry keeps
+    only what an advisor needs for the GRC conversation.
 
 - id: security-governance-risk-21
   title: Deliberate apprenticeship for junior risk and assurance staff when AI absorbs entry-level work (idea)
@@ -1441,10 +1427,10 @@
     analysts as the most-cited entry-level roles affected (32%) (RSAC-WORKFORCE-2026).
   evidence_grade: D
   sources:
-    - { ref: VENABLES-WORKFORCE-2026, title: "AI and Challenges in Workforce Development", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ai-and-challenges-in-workforce-development", date: "2026-10-03", access: full, locator: "Consequences 1-2; Actions 1-7" }
-    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 7, 15" }
+    - { ref: VENABLES-WORKFORCE-2026, title: "AI and Challenges in Workforce Development", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ai-and-challenges-in-workforce-development", date: "2026-10-03", access: full, locator: "Consequences 1-2; Actions 1-7"}
+    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides presenting the 2026 SANS/GIAC Workforce Report)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: "2026-03-23", access: full, locator: "Slides 7, 15"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From D09. Idea: discussed by a practitioner with leadership experience; no named organisation has published a
-    result. Kept because it gives the risk-and-assurance-specific on-ramp (control-failure post-mortems); the general
-    pipeline evidence is in research/runs/wave4/security-x-workforce-talent.md.
+    Idea: discussed by a practitioner with leadership experience; no named organisation has published a result. Kept
+    because it gives the risk-and-assurance-specific on-ramp (control-failure post-mortems); the general pipeline
+    evidence is in the archetype's workforce file.

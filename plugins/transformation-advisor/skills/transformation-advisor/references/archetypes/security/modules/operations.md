@@ -38,7 +38,7 @@ attack the system missed), recall (share of real attacks caught), MTTR (mean tim
 |---|---|---|---|
 | Detection engineering | Turn threats, CVEs and reports into rules; test against logs; peer review; deploy | software-systems, expert-judgment | Each rule is slow to write and validate, so coverage is rationed [AMAZON-RULEFORGE-2026]; crowdsourced rules show informal quality control [USENIX-SIGMA-2026] |
 | Detection validation and tuning | Check rules still see data; suppress known-benign patterns | review-assurance, software-systems | Rules that "run but can't see" (disconnected, starved, missing fields, ingest lag) [DETENGWEEKLY-165-2026]; benign alerts fire until someone writes the suppression |
-| Alert intake and Tier-1 triage | Enrich with user, asset and threat context; close or escalate | transaction-processing | 28% of alerts never investigated (vendor survey) [HNS-GARTNER-2026]; triage varies by shift [DROPZONE-ECS-2026] |
+| Alert intake and Tier-1 triage | Enrich with user, asset and threat context; close or escalate | transaction-processing | 28% of alerts never investigated (vendor survey) [HELPNET-GARTNER-2026]; triage varies by shift [DROPZONE-ECS-2026] |
 | Investigation (Tier 2/3) | Pivot across SIEM, EDR, identity and cloud logs; build timeline and verdict | research-synthesis, expert-judgment | About 30 minutes per alert by hand [ELASTIC-AGENTICSOC1-2026]; context spread over many tabs, side notes and copied tables [CAUCHY-IRNOTEBOOKS-2026] |
 | Hunting that feeds the queue | Look for activity no rule flags, in sources with no detections | research-synthesis | No detections for many SaaS audit logs [GROWTHERAPY-HUNT-2026] |
 | Case management and reporting | Attach evidence, write the report, close with a reason | document-production, coordination-scheduling | Closed cases without reasoning teach nothing [FIGMA-AGENTS-2026]; report detail falls with fatigue [CSA-SOCBENCH-PR-2025] |
@@ -138,8 +138,8 @@ holds hunting and report-to-rule work; ai-security holds attacks on the SOC's ow
 | AI use in SOCs | 79% use AI/ML tools; 36% in a defined workflow | [SANS-SOC-2026], survey of 444 practitioners and 69 leaders |
 | Top SOC metric | Incident count, 70% (activity, not catches) | [SANS-SOC-2026] |
 | AI shortcomings; automated response | 63% report significant shortcomings; automated IR at 39% adoption | [SANS-AI-2026], vendor summary of SANS survey |
-| Human review of AI decisions | 57% review every decision before closure; 30% auto-run low-risk actions; none full autonomy | [HNS-GARTNER-2026], vendor survey in sponsored article |
-| Home-built AI tooling | 46% of builds abandoned, never in production or replaced | [HNS-GARTNER-2026], vendor survey |
+| Human review of AI decisions | 57% review every decision before closure; 30% auto-run low-risk actions; none full autonomy | [HELPNET-GARTNER-2026], vendor survey in sponsored article |
+| Home-built AI tooling | 46% of builds abandoned, never in production or replaced | [HELPNET-GARTNER-2026], vendor survey |
 | AI verdict correctness | 60% to 92% vs analyst close reasons | [ELASTIC-ACCURACY-2026], self-reported |
 | Cost per investigation | USD 0.69 (specialised agents) vs 3.42 (one 14-skill agent) | [ELASTIC-TOKENS-2026], self-reported |
 | Triage time | 30 min to under 3 min (Elastic); 30 min to about 60 s (Google) | [ELASTIC-AGENTICSOC1-2026] self-reported; [TECHINFORMED-GOOGLE-2026] vendor figures |
@@ -166,12 +166,12 @@ SOC. Advise clients to measure their own (`#21`).
   interim agent controls: log agent activity as security telemetry, make it attributable, keep emergency shutdown,
   name owners, evaluate judge agents independently [NCSC-AGENTICRISK-2026].
 - CISA with Australia's ACSC: joint guidance on adopting agentic AI (2026-05-01) [CISA-AGENTIC-2026]. CISA, NIST and
-  NSA: ten practices for agent control incidents (2026-10-16) [CISA-KEYPRACTICES-2026]. CISA pages retrieved on
+  NSA: ten practices for agent control incidents (2026-10-16) [NISTCISA-IRKEY-2026]. CISA pages retrieved on
   2026-10-17 show "AI" replaced by "Super Intelligence (SI)"; search for both terms.
 - US federal: OMB M-26-14 sets risk-based logging with a maturity model; first agency logging plans due 2026-11-18
   [OMB-M2614-2026, CISA-LOGGING-2026]. AI tuning appears only at the top level, so AI is not mandated.
 - NIST: SP 800-53 control overlays for AI systems, including single- and multi-agent use cases [NIST-COSAIS-2026]; SP
-  800-61 Rev. 3 for incident response [NIST-SP80061R3-2025].
+  800-61 Rev. 3 for incident response [NIST-80061R3-2025].
 - EU: NIS2 risk-management and incident duties with management accountability [EC-NIS2]; DORA for financial entities
   and their ICT providers [EIOPA-DORA-2025]; AI Act high-risk obligations from 2027-12-02, with no authoritative
   statement found on whether SOC AI is high-risk [EC-AIACT-2026]. The EU action plan encourages defenders to use AI,
@@ -192,7 +192,7 @@ SOC. Advise clients to measure their own (`#21`).
 - Controls outside the prompt: draft-only pull requests set by a workflow step, no ambient channel access
   [FIGMA-AGENTS-2026]; closed action vocabularies [ARXIV-2610.09906].
 - Data handling: zero-retention inference [ELASTIC-AGENTICSOC1-2026]; local models [NDSS-WOSOC-2026,
-  HUGGINGFACE-INCIDENT-2026].
+  HF-DISCLOSURE-2026].
 
 **Steps that need human judgment**
 - Any action touching users, availability, executives or production [SPLUNK-RSACSOC-2026, EXPEL-3LEADERS-2026].
@@ -240,7 +240,7 @@ SOC. Advise clients to measure their own (`#21`).
 - 2026-10-07: evidence-gated triage and constrained-action remediation preprints [ARXIV-2610.10608,
   ARXIV-2610.09906].
 - 2026-10-16: decision models proposed as cheap, auditable per-alert scorers [THN-DECISIONMODELS-2026]; CISA, NIST
-  and NSA publish agent-incident practices [CISA-KEYPRACTICES-2026].
+  and NSA publish agent-incident practices [NISTCISA-IRKEY-2026].
 
 ## 9. Common objections
 
@@ -261,10 +261,10 @@ SOC. Advise clients to measure their own (`#21`).
   to 140 vendors touching AI in security operations [SACR-AISOCMKT-2026]. Response: proof of value on your own alerts and a
   side-by-side run (`#05`, `#21`).
 - **"We tried building it ourselves and it failed."** 46% of home builds were abandoned or replaced (vendor survey)
-  [HNS-GARTNER-2026]. Figma, Elastic and Grow Therapy report results from built systems that rely on memory, critics and staged rollout
+  [HELPNET-GARTNER-2026]. Figma, Elastic and Grow Therapy report results from built systems that rely on memory, critics and staged rollout
   (`#01`, `#09`; security-threat-intelligence-21).
 - **"Our data can't leave, and hosted models refuse attack content."** Local and open-weight models worked for a
-  university SOC and for Hugging Face during an incident [NDSS-WOSOC-2026, HUGGINGFACE-INCIDENT-2026].
+  university SOC and for Hugging Face during an incident [NDSS-WOSOC-2026, HF-DISCLOSURE-2026].
 - **"Faster to the wrong answer."** AI SOCs depend on the data fed to them [RESILIENTCYBER-FASTER-2026]. US federal
   rules now measure logging coverage per system [OMB-M2614-2026]; ask what the client's coverage is.
 
@@ -272,19 +272,19 @@ SOC. Advise clients to measure their own (`#21`).
 
 Keys cited above that are not in the YAML (all others are given in full there):
 
-- CISA-AGENTIC-2026: CISA with ASD's ACSC, "Careful Adoption of Agentic AI Services", 2026-05-01, https://www.cisa.gov/resources-tools/resources/careful-adoption-agentic-ai-services
+- CISA-AGENTIC-2026: CISA with ASD's ACSC, "Careful Adoption of Agentic AI Services", 2026-05-01, https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf
 - CISA-LOGGING-2026: CISA, Logging Reference Architecture press release, 2026-08-20, https://www.cisa.gov/news-events/news/cisa-releases-foundational-flexible-guidance-help-federal-agencies-implement-effective-logging
 - OMB-M2614-2026: US OMB, Memorandum M-26-14 on agency logging, 2026-05-22, https://www.whitehouse.gov/wp-content/uploads/2026/05/M-26-14-Ensuring-Effective-and-Efficient-Agency-Logging-and-Network-Visibility-to-Defend-Against-Evolving-Cyber-Threats.pdf
 - NIST-COSAIS-2026: NIST, SP 800-53 Control Overlays for Securing AI Systems, 2026-01-08, https://csrc.nist.gov/projects/cosais
-- NIST-SP80061R3-2025: NIST SP 800-61 Rev. 3, 2025-04, https://csrc.nist.gov/pubs/sp/800/61/r3/final
-- EC-NIS2: European Commission, NIS2 Directive page, checked 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/nis2-directive
+- NIST-80061R3-2025: NIST SP 800-61 Rev. 3, 2025-04-03, https://csrc.nist.gov/pubs/sp/800/61/r3/final
+- EC-NIS2: European Commission, "NIS2 Directive: securing network and information systems" (policy page), 2026-07-02, https://digital-strategy.ec.europa.eu/en/policies/nis2-directive
 - EC-AIACT-2026: European Commission, AI Act page, checked 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - EC-ACTIONPLAN-2026: European Commission, EU Action Plan on Cybersecurity and AI, 2026-07-07, https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence
 - SEC-CYBER-2023: US SEC, cyber incident disclosure rules, 2023-07-26, https://www.sec.gov/newsroom/press-releases/2023-139
 - SIFMA-SEC-2026: SIFMA and trade associations, letter on Regulation S-K cyber disclosures, 2026-04-10, https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades
 - MITRE-ATTCK-2026: MITRE, ATT&CK v20 release notes, 2026-10-13, https://attack.mitre.org/resources/updates/
 - OWASP-AGENTIC-2025: OWASP, Top 10 for Agentic Applications for 2026, 2025-12-09, https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
-- USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs", USENIX Security 2026, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai
+- USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation", USENIX Security '26, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai
 - IBM-CODB-2026: IBM and Ponemon, Cost of a Data Breach Report 2026, 2026-07, https://www.ibm.com/reports/data-breach
 - SACR-AISOCMKT-2026: Software Analyst Cyber Research, "The AI SOC Market, 2026", 2026-07-30, https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-the-ai
 - CAUCHY-IRNOTEBOOKS-2026: DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (CAUCHY-IRNB-2026 in the operations inputs; the use case is security-incident-response-07)

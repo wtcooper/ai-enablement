@@ -268,7 +268,7 @@ Keys used here but not in the YAML (full details for all others are in the YAML)
 - [SILVERFORT-ASSUMPTIONS-2026] Silverfort, 5 cybersecurity assumptions AI attacks break, 2026-10-13. https://www.silverfort.com/blog/5-cybersecurity-assumptions-ai-attacks-break/
 - [FIDO-AUTH-2026] FIDO Alliance, Authenticate U.S. 2026 event page (event 2026-10-19 to 21), retrieved 2026-10-17. https://authenticatecon.com/event/authenticate-u-s-2026/
 - [GARTNER-IAMSUMMIT-2026] Gartner, Identity & Access Management Summit 2026 agenda and FAQ (event from 2026-12-07), retrieved 2026-10-17. https://www.gartner.com/en/conferences/na/identity-access-management-us/agenda
-- [FIRST-CON-2026] FIRST, 38th annual conference programme, Denver, 2026-06-14 to 19 (session on 2026-06-17). https://www.first.org/conference/2026/program
+- [FIRST-CON-2026] FIRST, "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", 2026-06 (session on 17 June 2026). https://www.first.org/conference/2026/program
 - [OWASP-STATE-AGENTIC-2026] OWASP GenAI Security Project, State of Agentic AI Security and Governance v2.01 (139-page PDF; governance maturity model, level 3), 2026-06-01. https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/
 - [VECTRA-SPIDER-2026] Vectra AI, The FBI wrote down the Scattered Spider playbook, and it starts with a phone call, 2026-07-06. https://www.vectra.ai/blog/the-fbi-wrote-down-the-scattered-spider-playbook-and-it-starts-with-a-phone-call
 - [IBM-CODB-2026] IBM and Ponemon, Cost of a Data Breach Report 2026 (landing page, 'Secure and control agentic identities'; month from IBM's 2026-07-29 press release), 2026-07. https://www.ibm.com/reports/data-breach

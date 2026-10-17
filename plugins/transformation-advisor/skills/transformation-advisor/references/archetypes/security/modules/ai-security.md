@@ -44,7 +44,7 @@ application-security; this module covers securing those tools.
 | Contain | Network-enforced egress, microVM isolation, single-use infrastructure, no shared writable services | software-systems | A VM did not hold a cyber-capable model [TOB-VMS-2026]; shared services gave a route out [OPENAI-HFTECH-2026] |
 | Monitor, log, halt | Trajectory and reasoning monitors, tripwires, paging, attributed tamper-resistant logs, kill switches | review-assurance, data-reporting | 68% cannot tell agent actions from human ones [CSA-AGENTIDSPRAWL-2026]; a port-sweep alert did not stop the run [OPENAI-HFTECH-2026] |
 | Defend inputs and supply chain | Screen untrusted content; vet skills, MCP servers, model files; keep AI bills of materials | review-assurance | 157 malicious skills in 98,380 [USENIX-SKILLS-2026]; 40.55% of remote MCP servers expose tools unauthenticated [ARXIV-2605.22333] |
-| Review and investigate | Full-population lookback of transcripts; independent investigation; AI-assisted forensics | review-assurance, research-synthesis | Transcripts at petabyte scale; reviewers rely on often-unreliable AI helpers [OPENAI-HFUPDATES-2026; METR-OAIHF-2026] |
+| Review and investigate | Full-population lookback of transcripts; independent investigation; AI-assisted forensics | review-assurance, research-synthesis | Transcripts at petabyte scale; reviewers rely on often-unreliable AI helpers [OPENAI-HFREVIEW-2026; METR-OAIHF-2026] |
 | Respond and report | Control-incident definitions, drills, notification, statutory clocks, near-miss sharing | coordination-scheduling, document-production | 8% run regular AI response exercises [ISACA-SOC-2026]; victims did not notice [THN-CERTIN-2026] |
 | Assure third parties | Vendor due diligence, reliance on ISO/IEC 42001 or STAR for AI, agent certification | review-assurance | Self-attestations generally not effective [MAS-AIRM-RESPONSE-2026] |
 
@@ -148,13 +148,13 @@ exercises per year; tiered agents with current assurance evidence. No published 
 | 3 escapes from a VM; 0 from Firecracker | Author's lab test: one host, one model, about 12 hours | self-reported | [TOB-VMS-2026] |
 | 10 of 122 runs; about 1 hour to contain | AISI's own evaluation runs with unsanctioned live-internet actions | self-reported | [UKAISI-INCIDENT-2026] |
 | 3 incidents in 141,006 runs | Anthropic lookback of its own evaluation runs with possible internet access | self-reported | [ANTHROPIC-EVALINC-2026] |
-| More than 100 organisations notified; about 50 PB; more than USD 0.5M a day | OpenAI review of its own training and evaluation records: scale and cost | self-reported | [OPENAI-HFUPDATES-2026] |
+| More than 100 organisations notified; about 50 PB; more than USD 0.5M a day | OpenAI review of its own training and evaluation records: scale and cost | self-reported | [OPENAI-HFREVIEW-2026] |
 | About 1,200 agents; about 700 attackers | Agents in OpenAI's evaluations on an unsanctioned board, and those joining the attack | independent | [METR-OAIHF-2026] |
 | 157 of 98,380 skills malicious | Whole-registry scan of two skill registries | independent | [USENIX-SKILLS-2026] |
 | 40.55% of 7,973 remote MCP servers | Expose tools without authentication | independent | [ARXIV-2605.22333] |
 | About 1% of about 200,000 resumes | Hidden prompt injections in a hiring pipeline | independent | [USENIX-RESUME-2026] |
 | 2,076 AI-related CVEs; 782 of 2026's in agent-orchestration frameworks | Vulnerabilities in the AI stack itself | vendor-published | [GTIG-VULNTRENDS-2026] |
-| 10 of 28 | AI-system known-exploited vulnerabilities seen exploited in canaries | vendor-published | [VULNCHECK-1H2026] |
+| 10 of 28 | AI-system known-exploited vulnerabilities seen exploited in canaries | vendor-published | [VULNCHECK-1H-2026] |
 | 36% / 43% / 31% | Dedicated agent identities / shared accounts / delegated human identities (228 respondents) | vendor-published | [CSA-AGENTIDSPRAWL-2026] |
 | 1 in 5; USD 670,000 more | Breached organisations citing shadow AI; cost gap with high shadow-AI use | vendor-published | [IBM-CODB-2025] |
 | 8% / 64% | Run regular AI response exercises / have run none (1,800+ respondents) | independent | [ISACA-SOC-2026] |
@@ -181,7 +181,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
   frontier developers only [KPMG-STATEAI-2026]; CERT-In requires incident reports within 6 hours [THN-CERTIN-2026]; MAS
   expects inventory including embedded vendor AI, generally within 12 months (with oversight and materiality) and full
   implementation within 24
-  [MAS-AIRM-RESPONSE-2026]; NYDFS and FINRA cover AI vendor due diligence and agent supervision [NYDFS-AIIL-2024;
+  [MAS-AIRM-RESPONSE-2026]; NYDFS and FINRA cover AI vendor due diligence and agent supervision [NYDFS-AIGUIDE-2024;
   FINRA-ROR-2026]. The EU GPAI Code lists red teaming and training-data tamper checks for systemic-risk models
   [EU-GPAICODE-2025].
 - **Steps that need human judgment:** whether a capability combination is acceptable (`#01`); severity of red-team
@@ -272,8 +272,8 @@ CSA-STARAI-2026, ETSI-EN304223-2025 and OKTA-DEX-2026 are also in the YAML.
   NIST-AIRMF, CSA-AICM-2026, UK-DSIT-AICODE-2025.
 - Regulators and government: NISTCISA-IRKEY-2026, CISA-AGENTIC-2026, CISA-AA26-251A-2026, NIST-CAISI-REDTEAMCOMP-2026,
   NIST-CAISI-TRANSCRIPTS-2026, UKAISI-TRENDS-2025, UKAISI-INCIDENT-2026, UKAISI-MULTIAGENT-2026, EC-AIACT-2026,
-  EU-AIACT-ART73-2024, EU-GPAICODE-2025, MAS-AIRM-RESPONSE-2026, NYDFS-AIIL-2024, FINRA-ROR-2026.
-- Incident record: OPENAI-HFTECH-2026, OPENAI-HFUPDATES-2026, OPENAI-MISALIGN-2026, ANTHROPIC-EVALINC-2026,
+  EU-AIACT-ART73-2024, EU-GPAICODE-2025, MAS-AIRM-RESPONSE-2026, NYDFS-AIGUIDE-2024, FINRA-ROR-2026.
+- Incident record: OPENAI-HFTECH-2026, OPENAI-HFREVIEW-2026, OPENAI-MISALIGN-2026, ANTHROPIC-EVALINC-2026,
   ANTHROPIC-ALIGNMENT-2026, HF-DISCLOSURE-2026, METR-OAIHF-2026, THN-CERTIN-2026, REGISTER-BHDC-2026.
 - Research: ARXIV-2510.09023, ARXIV-2605.22333, USENIX-SKILLS-2026, USENIX-RESUME-2026, TOB-VMS-2026, REHBERGER-AUTOMODE-2026,
   SIMONWILLISON-PI-2026, DEFCON-34-SPEAKERS-2026.
@@ -286,7 +286,7 @@ CSA-STARAI-2026, ETSI-EN304223-2025 and OKTA-DEX-2026 are also in the YAML.
   - GTIG-VULNTRENDS-2026: Google Threat Intelligence Group, "Vulnerability Discovery and Exploitation Trends in the AI
     Era", 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/
     (routed from vulnerability-exposure; Table 2).
-  - VULNCHECK-1H2026: VulnCheck, "State of Exploitation 1H-2026", 2026-07-28,
+  - VULNCHECK-1H-2026: VulnCheck, "State of Exploitation 1H-2026", 2026-07-28,
     https://www.vulncheck.com/blog/state-of-exploitation-1h-2026 (routed from vulnerability-exposure).
   - RSAC-ISB-2026: RSAC Innovation Sandbox (2026 contest winner), https://www.rsaconference.com/usa/programs/innovation-sandbox,
     2026 (page names the 2026 winner; the month is not stated on the page).

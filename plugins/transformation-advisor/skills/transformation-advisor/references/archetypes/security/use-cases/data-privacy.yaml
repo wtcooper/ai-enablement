@@ -1279,6 +1279,6 @@
     url: https://www.usenix.org/system/files/pepr26_slides-tandon.pdf
     date: '2026-06-02'
     access: full
-    locator: 'Real world application in Pixel Recorder; Scalability Challenges'
+    locator: Real world application in Pixel Recorder; Scalability Challenges
   last_reviewed: '2026-10-17'
   notes: Named deployment in a consumer app described in a conference abstract and talk slides; the slides give batch size (up to O(100k) inputs) but no user counts, utility or privacy-loss results beyond a user-level epsilon of 1 for label discovery. Pattern 'other' means private analytics, where an LLM interprets unstructured data inside an attested enclave and only differentially private aggregates leave it.

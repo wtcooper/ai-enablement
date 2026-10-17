@@ -180,7 +180,7 @@ vendor trigger to reassessment.
   was found [SIFMA-SEC-2026]. FINRA expects due diligence on vendors' GenAI use, contract terms on data, and logged
   prompts, outputs and model versions for GenAI supervision [FINRA-OVERSIGHT-2026].
 - **Standards.** NIST's draft Cyber AI Profile lists compliance assessment, policy enforcement and executive risk
-  communication as AI opportunities and says AI-generated reports need human review [NIST-CYBERAI-2025]. CSA's AI
+  communication as AI opportunities and says AI-generated reports need human review [NIST-IR8596-2025]. CSA's AI
   Controls Matrix adds an AI questionnaire (AI-CAIQ) for vendor assessment [CSA-AICM-2026]. Joint CISA, NSA and
   partner guidance (2026-05-01) asks for limited agent access, strong identity and monitoring [CISA-AGENTIC-BULLETIN-2026].
 - **Attestations are not guarantees.** A SOC 2 Type II report covers specified controls over a limited period
@@ -223,7 +223,7 @@ vendor trigger to reassessment.
 ## 8. Frontier
 
 - 2025-12-16: NIST preliminary draft Cyber AI Profile, with AI for compliance and executive risk communication
-  [NIST-CYBERAI-2025].
+  [NIST-IR8596-2025].
 - 2026-03-24: Delve allegations (denied) put verification of automated attestations at the centre [IANS-DELVE-2026].
 - 2026-04-10: trade groups ask the SEC to rescind Item 106 [SIFMA-SEC-2026].
 - 2026-04-12: CSA "Mythos-ready" briefing tells CISOs to update risk models and board reporting [CSA-MYTHOSREADY-2026].
@@ -282,4 +282,4 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 Most-used YAML keys: VANTA-SAMSARA-2026, VANTA-SYNTHESIA-2026, VANTA-GITHUB-2026, CONVEYOR-CARTA-2026,
 VANTA-QUALITYEVAL-2026, ANTHROPIC-JOB-SUPPLIER-2026, ANTHROPIC-JOB-CONTROLS-2026, ARXIV-2607.22885, ARXIV-2605.05424,
 FAIR-CRMSURVEY-2026, FAIR-RISKREPORT-2026, IANS-DELVE-2026, ISACA-SOC-2026, ISACA-SOCINFO-2026, RSAC-WORKFORCE-2026, TECHTARGET-BOARD-2026,
-TECHTARGET-AIREG-2026, NIST-CYBERAI-2025, FINRA-OVERSIGHT-2026, CSA-MYTHOSREADY-2026, PWC-GDTI-2027.
+TECHTARGET-AIREG-2026, NIST-IR8596-2025, FINRA-OVERSIGHT-2026, CSA-MYTHOSREADY-2026, PWC-GDTI-2027.

@@ -1,19 +1,15 @@
 # Use cases: security / threat-intelligence
-# Synthesised 2026-10-17 from the wave-4 security landscape scan and the practice, discourse and governance deep dives
-# (61 candidate entries in: 23 practice, 19 discourse, 19 governance; 24 out), plus items other security deep dives
-# routed to threat-intelligence. Source refs are canonical keys. Where the angles used different keys for the same
-# document, one key is kept: FLASHPOINT-ENTERPRISE-2026 = practice's FLASHPOINT-ENTERPRISETI-2026 (the Flashpoint blog
-# report; FLASHPOINT-ETIR-2026 is the separate press release); SANS-CTIPR-2026 = the SANS 2026 CTI survey press release
-# (practice and governance called it SANS-CTI-2026); SANS-CTI-2026 = the SANS key-findings landing page; MITRE-TRAM-2023 =
-# governance's MITRE-CTID-TRAM-2023; MSFT-DEFENDER-AGENTS-2026 = practice's MSFT-DEFENDERAGENTS-2026 (key used by the
-# security-operations deep dive). Grades follow the 2026-10-17 grade A rule: A needs a figure the named organization
-# reports as measured. Two practice entries graded A were regraded B (Cowbell quotes in a vendor case study; the
-# Microsoft-authored Threat Research Agent paper, whose deploying organization is not named), and the DarkBot research
-# prototype was graded C. Lab-only results with no product or deployment are graded D and labelled idea. Almost every
-# outcome figure is vendor-published, self-reported or a lab benchmark; no source publishes analyst override rates,
-# error rates of a deployed CTI assistant, or a parallel run. Final ids for other security modules were not yet
-# published when this file was first drafted; notes cross-reference overlapping entries by id where those files now exist. Attacker detail is
-# kept at the level defenders need.
+# AI in collecting, processing, analysing, producing and sharing threat intelligence, and in threat hunting.
+# Sources checked 2026-10-17. Key notes: FLASHPOINT-ENTERPRISE-2026 is the Flashpoint blog report and
+# FLASHPOINT-ETIR-2026 the separate press release; SANS-CTIPR-2026 is the SANS 2026 CTI survey press release and
+# SANS-CTI-2026 the SANS key-findings landing page.
+# Grade A needs a figure the named organization reports as measured; customer quotes in a vendor case study are
+# graded B. Lab-only results with no product or deployment are graded D and labelled idea. Almost every outcome
+# figure is vendor-published, self-reported or a lab benchmark; no source publishes analyst override rates, error
+# rates of a deployed CTI assistant, or a parallel run. Attacker detail is kept at the level defenders need.
+# Overlaps, referenced by id: detection-rule lifecycle (security-operations-15), evidence-gated dismissal
+# (security-operations-07), prioritisation (security-vulnerability-exposure-09), prompt-injection hardening
+# (security-ai-security-13), model-extraction detection (security-ai-security-15).
 
 - id: security-threat-intelligence-01
   title: "Idea: agents that monitor coverage of priority intelligence requirements and keep standing briefings current"
@@ -53,15 +49,15 @@
     intelligence').
   evidence_grade: D
   sources:
-    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: Flashpoint, type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'What the Findings Mean for Threat Intelligence Programs'; agentic AI section; introduction"}
-    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on resourcing"}
-    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "executive summary"}
-    - {ref: RF-PRACTITIONER-2026, title: "Practitioners Reveal What Makes Threat Intelligence Programs Mature (webinar recap of the 2025 State of Threat Intelligence report)", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/blog/practitioner-insights-advancing-threat-intelligence", date: "2026-01-09", access: full, locator: "'Looking to the future of threat intelligence' (date from the page's published-date metadata)"}
+    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: "Flashpoint", type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'What the Findings Mean for Threat Intelligence Programs'; agentic AI section; introduction"}
+    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on resourcing"}
+    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "executive summary"}
+    - {ref: RF-PRACTITIONER-2026, title: "Practitioners Reveal What Makes Threat Intelligence Programs Mature (webinar recap of the 2025 State of Threat Intelligence report)", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/blog/practitioner-insights-advancing-threat-intelligence", date: "2026-01-09", access: full, locator: "'Looking to the future of threat intelligence' (date from the page's published-date metadata)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea (grade D). Merged practice-15 (D) and discourse-13 (C). The Flashpoint study is vendor-commissioned and
-    qualitative (just over 20 budget owners and influencers at large North American enterprises, early fall 2026).
-    Cloudflare's PIR and RFI features (2024) are not AI features and are not used as evidence.
+    Idea (grade D). The Flashpoint study is vendor-commissioned and qualitative (just over 20 budget owners and
+    influencers at large North American enterprises, early fall 2026). Cloudflare's PIR and RFI features (2024) are
+    not AI features and are not used as evidence.
 
 - id: security-threat-intelligence-02
   title: AI-supported monitoring, collection and structuring of open sources for threat-landscape reporting
@@ -107,20 +103,18 @@
     section 3.1).
   evidence_grade: B
   sources:
-    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09", access: full, locator: "Disclaimer; Methodology section"}
-    - {ref: ENISA-CTL-2026, title: "ENISA Cybersecurity Threat Landscape Methodology (updated 18 September 2026)", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20CTL%20Methodology_Updated%2018%20september%202026.pdf", date: "2026-09-18", access: full, locator: "sections 2.4.7 and 3.1"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Beyond Manual Hunting: OSINT Copilot with LLMs' (Apura Cyber Intelligence), 19 June"}
-    - {ref: SANS-AGENTICWEB-2026, title: "Agentic CTI Automation For Fun and Profit (webcast abstract)", publisher: SANS Institute, type: conference, url: "https://www.sans.org/webcasts/agentic-cti-automation-for-fun-and-profit", date: "2026-06-25", access: full, locator: "abstract, 'Lessons Learned'"}
-    - {ref: ARXIV-2608.14418, title: "STINER: Automated Extraction of Strategic Cyber Threat Intelligence from X", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.14418", date: "2026-08-14", access: full, locator: "abstract"}
-    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: DTN Advisory (Substack), type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "section on AI in threat intelligence"}
-    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
-    - {ref: SANS-LEASTAI-2026, title: "Principle of Least AI in Threat Intelligence: A Blueprint for Effective GenAI Adoption (J. Shabadu, Forrester; abstract)", publisher: SANS Institute, type: conference, url: "https://www.sans.org/presentations/principle-of-least-ai-in-threat-intelligence-a-blueprint-for-effective-genai-adoption", date: "2026-01-27", access: full, locator: "abstract"}
+    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09-22", access: full, locator: "Disclaimer; Methodology section"}
+    - {ref: ENISA-CTL-2026, title: "ENISA Cybersecurity Threat Landscape Methodology (updated 18 September 2026)", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20CTL%20Methodology_Updated%2018%20september%202026.pdf", date: "2026-09-18", access: full, locator: "sections 2.4.7 and 3.1"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Beyond Manual Hunting: OSINT Copilot with LLMs' (Apura Cyber Intelligence), 19 June"}
+    - {ref: SANS-AGENTICWEB-2026, title: "Agentic CTI Automation For Fun and Profit (webcast abstract)", publisher: "SANS Institute", type: conference, url: "https://www.sans.org/webcasts/agentic-cti-automation-for-fun-and-profit", date: "2026-06-25", access: full, locator: "abstract, 'Lessons Learned'"}
+    - {ref: ARXIV-2608.14418, title: "STINER: Automated Extraction of Strategic Cyber Threat Intelligence from X", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.14418", date: "2026-08-14", access: full, locator: "abstract"}
+    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: "DTN Advisory (Substack)", type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "section on AI in threat intelligence"}
+    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
+    - {ref: SANS-LEASTAI-2026, title: "Principle of Least AI in Threat Intelligence: A Blueprint for Effective GenAI Adoption (J. Shabadu, Forrester; abstract)", publisher: "SANS Institute", type: conference, url: "https://www.sans.org/presentations/principle-of-least-ai-in-threat-intelligence-a-blueprint-for-effective-genai-adoption", date: "2026-01-27", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged governance-02, discourse-06 (OSINT copilot) and discourse-16 (STINER, an idea on its own). Grade B rests on a
-    named regulator stating it used AI in collection and processing; no measure of effect is published. The Apura
-    session is a vendor-practitioner abstract with no results. Also routed here by the incident-response and
-    security-operations deep dives (Apura).
+    STINER on its own is an idea. Grade B rests on a named regulator stating it used AI in collection and processing;
+    no measure of effect is published. The Apura session is a vendor-practitioner abstract with no results.
 
 - id: security-threat-intelligence-03
   title: Underground, dark-web and infostealer-log collection triaged by NLP and LLM pipelines
@@ -156,14 +150,13 @@
   role_evolution: "Not described in the sources."
   evidence_grade: C
   sources:
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Introducing StealerLens' (Flare), 17 June; CyCraft session, 18 June; Apura abstract, 19 June"}
-    - {ref: MANDIANT-AIPHASES-2023, title: "AI and the Five Phases of the Threat Intelligence Lifecycle", publisher: Mandiant (Google Cloud Blog), type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/ai-five-phases-intelligence-lifecycle", date: "2023-08-24", access: full, locator: "'Structure and Enrichment' section"}
-    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "introduction and Beta note"}
-    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Introducing StealerLens' (Flare), 17 June; CyCraft session, 18 June; Apura abstract, 19 June"}
+    - {ref: MANDIANT-AIPHASES-2023, title: "AI and the Five Phases of the Threat Intelligence Lifecycle", publisher: "Mandiant (Google Cloud Blog)", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/ai-five-phases-intelligence-lifecycle", date: "2023-08-24", access: full, locator: "'Structure and Enrichment' section"}
+    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "introduction and Beta note"}
+    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-09 and discourse-07. Conference abstracts only; slides were not read. The Mandiant source is from
-    2023 and is a foundation source. StealerLens was also routed here by the incident-response practice deep dive.
+    Conference abstracts only; slides were not read. The Mandiant source is from 2023 and is a foundation source.
 
 - id: security-threat-intelligence-04
   title: Multi-agent system that actively elicits intelligence in underground forums (research prototype)
@@ -198,14 +191,14 @@
   evidence_grade: C
   sources:
     - {ref: ARXIV-2608.23185, title: "Towards Automated Cyber Threat Intelligence Elicitation in Underground Forums", publisher: "arXiv (Politecnico di Milano and BV TECH)", type: academic, url: "https://arxiv.org/abs/2608.23185", date: "2026-08-24", access: full, locator: "abstract; author affiliations on page 1; ethics section (IX)"}
-    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
+    - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-19 (graded A), discourse-17 (D) and governance-14 (C). Graded C: measured results come from a
-    research prototype run by its authors, not from any CTI team, so A (which needs an organization's measured
-    operational outcome) overstates it, and D understates it because a live trial took place. Kept as a frontier
-    signal. The authors describe institutional ethics approval for their study; whether a CTI team could lawfully run
-    covert engagement in its own jurisdiction is a question the paper does not answer for practitioners.
+    Graded C: measured results come from a research prototype run by its authors, not from any CTI team, so A (which
+    needs an organization's measured operational outcome) overstates it, and D understates it because a live trial
+    took place. Kept as a frontier signal. The authors describe institutional ethics approval for their study; whether
+    a CTI team could lawfully run covert engagement in its own jurisdiction is a question the paper does not answer
+    for practitioners.
 
 - id: security-threat-intelligence-05
   title: Unstructured reports turned into indicators, entities and tags, with the source report kept attached and checks before storage
@@ -261,28 +254,27 @@
     foundational engineering role that may grow into a multi-person collections function (ANTHROPIC-JOBTIE-2026).
   evidence_grade: B
   sources:
-    - {ref: CLOUDFLARE-THREATSIGNALS-2026, title: "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account", publisher: Cloudflare, type: vendor, url: "https://blog.cloudflare.com/threat-signals/", date: "2026-09-29", access: full, locator: "introduction; how it works; 'What we learned'"}
-    - {ref: ADOBE-CTRI-2026, title: "Building an agentic AI-powered threat intelligence platform", publisher: Adobe, type: firm, url: "https://blog.adobe.com/security/building-an-agentic-ai-powered-threat-intelligence-platform", date: "2026-03-19", access: full, locator: "workflow steps 1 and 2; design guidance list; closing section"}
-    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "About the Role; Responsibilities (last updated 2026-08-21)"}
-    - {ref: OPENCTI-IMPORTAI-2025, title: "On-premise AI extraction (OpenCTI documentation)", publisher: Filigran / OpenCTI, type: vendor, url: "https://docs.opencti.io/latest/deployment/advanced/ai-import-document/", date: "2025-04-11", access: full, locator: "page text on the extraction service"}
-    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 1; 'Chaining the workflows together'"}
-    - {ref: FEEDLY-HIRING-2026, title: "Hiring for the AI era: A CTI leader's guide to building tomorrow's threat intelligence teams (J. Feyerabend)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/hiring-for-the-ai-era-a-cti-leader-s-guide-to-building-tomorrow-s-threat-intelligence-teams", date: "2026-07-16", access: full, locator: "'What AI Changes for CTI Teams'"}
+    - {ref: CLOUDFLARE-THREATSIGNALS-2026, title: "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account", publisher: "Cloudflare", type: vendor, url: "https://blog.cloudflare.com/threat-signals/", date: "2026-09-29", access: full, locator: "introduction; how it works; 'What we learned'"}
+    - {ref: ADOBE-CTRI-2026, title: "Building an agentic AI-powered threat intelligence platform", publisher: "Adobe", type: firm, url: "https://blog.adobe.com/security/building-an-agentic-ai-powered-threat-intelligence-platform", date: "2026-03-19", access: full, locator: "workflow steps 1 and 2; design guidance list; closing section"}
+    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "About the Role; Responsibilities (last updated 2026-08-21)"}
+    - {ref: OPENCTI-IMPORTAI-2025, title: "On-premise AI extraction (OpenCTI documentation)", publisher: "Filigran / OpenCTI", type: vendor, url: "https://docs.opencti.io/latest/deployment/advanced/ai-import-document/", date: "2025-04-11", access: full, locator: "page text on the extraction service"}
+    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 1; 'Chaining the workflows together'"}
+    - {ref: FEEDLY-HIRING-2026, title: "Hiring for the AI era: A CTI leader's guide to building tomorrow's threat intelligence teams (J. Feyerabend)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/hiring-for-the-ai-era-a-cti-leader-s-guide-to-building-tomorrow-s-threat-intelligence-teams", date: "2026-07-16", access: full, locator: "'What AI Changes for CTI Teams'"}
     - {ref: ARXIV-2609.01174, title: "A SoK for SoCs: Reading the TI Leaves on AI for Cyber Threat Intelligence Generation and Sharing", publisher: "arXiv (UC Santa Barbara et al.)", type: academic, url: "https://arxiv.org/abs/2609.01174", date: "2026-09-01", access: full, locator: "abstract; section 3.2; section 6, Experiments 1 and 2, Table 2a"}
-    - {ref: ARXIV-2610.20417, title: "From Unreliable to Usable: Decomposing Failure Modes and Confidence Signals in LLM Entity Extraction - Evidence from Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2610.20417", date: "2026-10-14", access: full, locator: "abstract"}
-    - {ref: ARXIV-2609.06149, title: "SCRIPTIOC-BENCH: A Benchmark for Recognizing Actionable Threat Intelligence from Script-Based Malware using LLMs", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.06149", date: "2026-09-05", access: full, locator: "abstract"}
-    - {ref: ARXIV-2605.06910, title: "Benchmarking Large Language Models for IoC Recovery under Adversarial Code Obfuscation and Encryption", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.06910", date: "2026-05-07", access: full, locator: "abstract"}
-    - {ref: ARXIV-2608.28394, title: "BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.28394", date: "2026-08-28", access: full, locator: "abstract"}
-    - {ref: ARXIV-2608.28124, title: "TagZilla: Automated Owner and Abuse Type Tagging for Indicators of Compromise in Threat Reports", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.28124", date: "2026-08-28", access: full, locator: "abstract"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'One Poisoned Artifact Can Steer Your AI' (CyCraft), 18 June"}
+    - {ref: ARXIV-2610.20417, title: "From Unreliable to Usable: Decomposing Failure Modes and Confidence Signals in LLM Entity Extraction - Evidence from Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.20417", date: "2026-10-14", access: full, locator: "abstract"}
+    - {ref: ARXIV-2609.06149, title: "SCRIPTIOC-BENCH: A Benchmark for Recognizing Actionable Threat Intelligence from Script-Based Malware using LLMs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.06149", date: "2026-09-05", access: full, locator: "abstract"}
+    - {ref: ARXIV-2605.06910, title: "Benchmarking Large Language Models for IoC Recovery under Adversarial Code Obfuscation and Encryption", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.06910", date: "2026-05-07", access: full, locator: "abstract"}
+    - {ref: ARXIV-2608.28394, title: "BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.28394", date: "2026-08-28", access: full, locator: "abstract"}
+    - {ref: ARXIV-2608.28124, title: "TagZilla: Automated Owner and Abuse Type Tagging for Indicators of Compromise in Threat Reports", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.28124", date: "2026-08-28", access: full, locator: "abstract"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'One Poisoned Artifact Can Steer Your AI' (CyCraft), 18 June"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-02 (automate, process), discourse-01, governance-04 and governance-16 (verification gates), all
-    augment and step. The ladder follows the named deployments (Cloudflare tags automatically and marks it; Adobe feeds
-    hunts automatically); Feedly's and the academic designs keep an analyst review, which is augment. Grade B:
-    Cloudflare and Adobe are named deployments with no outcome figures; the lab studies measure the technique, not
-    either deployment, and their levels conflict because tasks, corpora and scoring differ. TagZilla's authors report
-    F1 0.94 (owner) and 0.93 (abuse type) on 100 reports with 1,534 indicators for their own tagger (ARXIV-2608.28124).
-    Practice notes OpenCTI publishes no accuracy.
+    The ladder follows the named deployments (Cloudflare tags automatically and marks it; Adobe feeds hunts
+    automatically); Feedly's and the academic designs keep an analyst review, which is augment. Grade B: Cloudflare
+    and Adobe are named deployments with no outcome figures; the lab studies measure the technique, not either
+    deployment, and their levels conflict because tasks, corpora and scoring differ. TagZilla's authors report F1 0.94
+    (owner) and 0.93 (abuse type) on 100 reports with 1,534 indicators for their own tagger (ARXIV-2608.28124).
+    OpenCTI publishes no accuracy figure.
 
 - id: security-threat-intelligence-06
   title: Mapping report text to ATT&CK techniques and enriching hunts with actor context
@@ -331,29 +323,28 @@
     rather than merely performing routine tasks" (INTEL471-HUNTING-2025, 'Enrichment').
   evidence_grade: B
   sources:
-    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'Enrichment' and 'Hypothesis Development'"}
-    - {ref: MITRE-TRAM-2023, title: "Threat Report ATT&CK Mapper (TRAM)", publisher: MITRE Center for Threat-Informed Defense, type: standard-setter, url: "https://ctid.mitre.org/projects/threat-report-attck-mapper-tram/", date: "2023-08-24", access: full, locator: "project summary and 'Problem' (foundation source)"}
-    - {ref: CTID-TRAMREADME-2026, title: "TRAM README", publisher: MITRE Center for Threat-Informed Defense, type: standard-setter, url: "https://raw.githubusercontent.com/center-for-threat-informed-defense/tram/main/README.md", date: "2026-10-17", access: full, locator: "opening paragraphs (file undated; retrieval date)"}
-    - {ref: EIQ-IC39-2026, title: "Intelligence Center 3.9: More AI provider choice, MITRE ATT&CK v19.1 support, and more", publisher: EclecticIQ, type: vendor, url: "https://blog.eclecticiq.com/intelligence-center-3.9", date: "2026-09-22", access: full, locator: "paragraphs on AI providers and ATT&CK v19.1"}
-    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 2; 'Build versus buy'; 'Where the human analyst is still required'"}
-    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: Flashpoint, type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Agentic AI Adoption Is Underway'"}
+    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: "Intel 471", type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'Enrichment' and 'Hypothesis Development'"}
+    - {ref: MITRE-TRAM-2023, title: "Threat Report ATT&CK Mapper (TRAM)", publisher: "MITRE Center for Threat-Informed Defense", type: standard-setter, url: "https://ctid.mitre.org/projects/threat-report-attck-mapper-tram/", date: "2023-08-24", access: full, locator: "project summary and 'Problem' (foundation source)"}
+    - {ref: CTID-TRAMREADME-2026, title: "TRAM README", publisher: "MITRE Center for Threat-Informed Defense", type: standard-setter, url: "https://raw.githubusercontent.com/center-for-threat-informed-defense/tram/main/README.md", date: "2026-10-17", access: full, locator: "opening paragraphs (file undated; retrieval date)"}
+    - {ref: EIQ-IC39-2026, title: "Intelligence Center 3.9: More AI provider choice, MITRE ATT&CK v19.1 support, and more", publisher: "EclecticIQ", type: vendor, url: "https://blog.eclecticiq.com/intelligence-center-3.9", date: "2026-09-22", access: full, locator: "paragraphs on AI providers and ATT&CK v19.1"}
+    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 2; 'Build versus buy'; 'Where the human analyst is still required'"}
+    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: "Flashpoint", type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Agentic AI Adoption Is Underway'"}
     - {ref: ARXIV-2609.01174, title: "A SoK for SoCs: Reading the TI Leaves on AI for Cyber Threat Intelligence Generation and Sharing", publisher: "arXiv (UC Santa Barbara et al.)", type: academic, url: "https://arxiv.org/abs/2609.01174", date: "2026-09-01", access: full, locator: "section 3.2; Table 2b; Experiment 2"}
-    - {ref: ARXIV-2606.18166, title: "Evaluating Open-Source LLMs for Multi-Label ATT&CK Technique Classification on CTI Reports", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2606.18166", date: "2026-06-16", access: full, locator: "abstract"}
-    - {ref: ARXIV-2603.09452, title: "CyberThreat-Eval: Can Large Language Models Automate Real-World Threat Research?", publisher: "arXiv (TMLR 11/2025; Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2603.09452", date: "2026-03-10", access: full, locator: "Table 6, TTP identification (vanilla columns)"}
-    - {ref: ARXIV-2603.13517, title: "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2603.13517", date: "2026-03-13", access: full, locator: "abstract"}
-    - {ref: ARXIV-2605.25836, title: "CTI2TTP: Evidence-Grounded TTP Extraction from Cyber Threat Intelligence via Diverge-then-Converge Verification", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.25836", date: "2026-05-25", access: full, locator: "abstract (v2 revised 2026-10-13)"}
-    - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
-    - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
-    - {ref: MITRE-ATTCK-2026, title: "ATT&CK v20 release (Updates - October 2026)", publisher: MITRE, type: standard-setter, url: "https://attack.mitre.org/resources/updates/", date: "2026-10-13", access: full, locator: "v20 release notes, including Enterprise technique counts"}
-    - {ref: ARXIV-2608.06778, title: "Retrieval-Constrained Policy Optimization for Attack Technique Extraction from Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.06778", date: "2026-08-07", access: full, locator: "abstract"}
+    - {ref: ARXIV-2606.18166, title: "Evaluating Open-Source LLMs for Multi-Label ATT&CK Technique Classification on CTI Reports", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2606.18166", date: "2026-06-16", access: full, locator: "abstract"}
+    - {ref: ARXIV-2603.09452, title: "CyberThreat-Eval: Can Large Language Models Automate Real-World Threat Research?", publisher: "arXiv (TMLR 11/2025; Microsoft Research and Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2603.09452", date: "2026-03-10", access: full, locator: "Table 6, TTP identification (vanilla columns)"}
+    - {ref: ARXIV-2603.13517, title: "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.13517", date: "2026-03-13", access: full, locator: "abstract"}
+    - {ref: ARXIV-2605.25836, title: "CTI2TTP: Evidence-Grounded TTP Extraction from Cyber Threat Intelligence via Diverge-then-Converge Verification", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.25836", date: "2026-05-25", access: full, locator: "abstract (v2 revised 2026-10-13)"}
+    - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
+    - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
+    - {ref: MITRE-ATTCK-2026, title: "ATT&CK v20 release (Updates - October 2026)", publisher: "MITRE", type: standard-setter, url: "https://attack.mitre.org/resources/updates/", date: "2026-10-13", access: full, locator: "v20 release notes, including Enterprise technique counts"}
+    - {ref: ARXIV-2608.06778, title: "Retrieval-Constrained Policy Optimization for Attack Technique Extraction from Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.06778", date: "2026-08-07", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-17 (C), discourse-02 (B) and governance-03 (C). Grade B rests on Intel 471 describing its own
-    hunters' use; no figures are published for that use. The F1 values are lab benchmarks and are not comparable with
-    each other. CTI2TTP's authors report macro-F1 of 76.48% and 87.39% on two sets they defined, for their own
-    evidence-anchored design (ARXIV-2605.25836). A fine-tuned 8B model (TTP-R1) reportedly beat a retrieval-augmented
-    frontier model on sub-technique F1 by 7.4 points (ARXIV-2608.06778, abstract only).
-    TRAM's README references ATT&CK v13 and an earlier supervised model, so it is a foundation source.
+    Grade B rests on Intel 471 describing its own hunters' use; no figures are published for that use. The F1 values
+    are lab benchmarks and are not comparable with each other. CTI2TTP's authors report macro-F1 of 76.48% and 87.39%
+    on two sets they defined, for their own evidence-anchored design (ARXIV-2605.25836). A fine-tuned 8B model
+    (TTP-R1) reportedly beat a retrieval-augmented frontier model on sub-technique F1 by 7.4 points (ARXIV-2608.06778,
+    abstract only). TRAM's README references ATT&CK v13 and an earlier supervised model, so it is a foundation source.
 
 - id: security-threat-intelligence-07
   title: "Idea: structuring whole report corpora into merged knowledge graphs and measures of vendor overlap and bias"
@@ -391,20 +382,19 @@
   role_evolution: "Not described in the sources."
   evidence_grade: D
   sources:
-    - {ref: ARXIV-2608.28394, title: "BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.28394", date: "2026-08-28", access: full, locator: "abstract"}
-    - {ref: ARXIV-2606.01208, title: "Schema-Agnostic Knowledge Graph Construction via Hybrid Ontology Discovery for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2606.01208", date: "2026-05-31", access: full, locator: "abstract"}
-    - {ref: ARXIV-2607.05001, title: "TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2607.05001", date: "2026-07-06", access: full, locator: "abstract"}
-    - {ref: ARXIV-2602.17458, title: "The CTI Echo Chamber: Fragmentation, Overlap, and Vendor Specificity in Twenty Years of Cyber Threat Reporting", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2602.17458", date: "2026-02-19", access: full, locator: "abstract"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Disparate Data, Distorted Decisions: Vendor Data Bias in CTI' (Team Cymru), 15 June"}
-    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09", access: full, locator: "Methodology"}
-    - {ref: NDSS-TIECO-2026, title: "Actively Understanding the Dynamics and Risks of the Threat Intelligence Ecosystem", publisher: NDSS Symposium 2026, type: academic, url: "https://www.ndss-symposium.org/ndss-paper/actively-understanding-the-dynamics-and-risks-of-the-threat-intelligence-ecosystem/", date: "2026-02", access: full, locator: "abstract"}
+    - {ref: ARXIV-2608.28394, title: "BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.28394", date: "2026-08-28", access: full, locator: "abstract"}
+    - {ref: ARXIV-2606.01208, title: "Schema-Agnostic Knowledge Graph Construction via Hybrid Ontology Discovery for Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2606.01208", date: "2026-05-31", access: full, locator: "abstract"}
+    - {ref: ARXIV-2607.05001, title: "TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.05001", date: "2026-07-06", access: full, locator: "abstract"}
+    - {ref: ARXIV-2602.17458, title: "The CTI Echo Chamber: Fragmentation, Overlap, and Vendor Specificity in Twenty Years of Cyber Threat Reporting", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2602.17458", date: "2026-02-19", access: full, locator: "abstract"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Disparate Data, Distorted Decisions: Vendor Data Bias in CTI' (Team Cymru), 15 June"}
+    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09-22", access: full, locator: "Methodology"}
+    - {ref: NDSS-TIECO-2026, title: "Actively Understanding the Dynamics and Risks of the Threat Intelligence Ecosystem", publisher: "NDSS Symposium 2026", type: academic, url: "https://www.ndss-symposium.org/ndss-paper/actively-understanding-the-dynamics-and-risks-of-the-threat-intelligence-ecosystem/", date: "2026-02", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea (grade D): research prototypes and one ecosystem study, no adoption found. Merged practice-18, discourse-14,
-    discourse-15, governance-12 and governance-13. The Team Cymru session does not say AI is used. A separate NDSS 2026
-    measurement with watermarked indicators (no AI) found shared intelligence almost always leads to disruption but
-    bottleneck vendors delay sharing by hours to days (NDSS-TIECO-2026). A SANS CTI Summit 2026 talk on deprecating
-    threat-actor aliases points at the naming problem (title only).
+    Idea (grade D): research prototypes and one ecosystem study, no adoption found. The Team Cymru session does not
+    say AI is used. A separate NDSS 2026 measurement with watermarked indicators (no AI) found shared intelligence
+    almost always leads to disruption but bottleneck vendors delay sharing by hours to days (NDSS-TIECO-2026). A SANS
+    CTI Summit 2026 talk on deprecating threat-actor aliases points at the naming problem (title only).
 
 - id: security-threat-intelligence-08
   title: Global intelligence scored and ranked against an organization profile so only relevant alerts, actors and indicators surface
@@ -453,26 +443,25 @@
     model recommends actors, malware and campaigns instead, shaped by analyst feedback (GOOGLE-GTILANDSCAPE-2026).
   evidence_grade: C
   sources:
-    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "introduction; Beta and AI-settings notes; access roles"}
-    - {ref: GOOGLE-GTIORGPROFILE-2026, title: "Organization Profile (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/my-landscape-organization-profile", date: "2026-06-16", access: full, locator: "Automated Setup; note on alert volume; Citations and Versioning"}
-    - {ref: GOOGLE-GTILANDSCAPE-2026, title: "How Your Threat Landscape Uses AI Recommendations", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/threat-landscape-ai-recommendations", date: "2026-02-27", access: full, locator: "whole page"}
-    - {ref: GOOGLE-DARKWEB-2026, title: "Bringing dark web intelligence into the AI era", publisher: Google Cloud Blog, type: vendor, url: "https://cloud.google.com/blog/products/identity-security/bringing-dark-web-intelligence-into-the-ai-era", date: "2026-03-23", access: full, locator: "paragraphs 1-4 and customer quote"}
-    - {ref: MSFT-TIBAGENT-2026, title: "Security Copilot Threat Intelligence Briefing Agent in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/threat-intel-briefing-agent-defender", date: "2026-07-02", access: full, locator: "introduction"}
-    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'Autonomous Threat Operations' section"}
-    - {ref: CSB-CTI-2025, title: "The Reality of CTI: Voices from the Analysts (10 analyst interviews)", publisher: Cybersecurity & Business (Substack), type: community, url: "https://cybersecandbiz.substack.com/p/the-reality-of-cti-voices-from-the", date: "2025-09-30", access: full, locator: "'CTI on Paper: A Maturing Discipline'"}
-    - {ref: MANDIANT-AIPHASES-2023, title: "AI and the Five Phases of the Threat Intelligence Lifecycle", publisher: Mandiant (Google Cloud Blog), type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/ai-five-phases-intelligence-lifecycle", date: "2023-08-24", access: full, locator: "section on analysis and prioritization"}
-    - {ref: ARXIV-2609.07582, title: "Benchmarking LLMs for Threat Level Determination", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.07582", date: "2026-09-07", access: full, locator: "abstract"}
-    - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
-    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: Flashpoint, type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Operational Challenges Are Putting Pressure on Analyst Capacity'"}
-    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: DTN Advisory (Substack), type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "collection paragraph"}
+    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "introduction; Beta and AI-settings notes; access roles"}
+    - {ref: GOOGLE-GTIORGPROFILE-2026, title: "Organization Profile (Google Threat Intelligence documentation)", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/my-landscape-organization-profile", date: "2026-06-16", access: full, locator: "Automated Setup; note on alert volume; Citations and Versioning"}
+    - {ref: GOOGLE-GTILANDSCAPE-2026, title: "How Your Threat Landscape Uses AI Recommendations", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/threat-landscape-ai-recommendations", date: "2026-02-27", access: full, locator: "whole page"}
+    - {ref: GOOGLE-DARKWEB-2026, title: "Bringing dark web intelligence into the AI era", publisher: "Google Cloud Blog", type: vendor, url: "https://cloud.google.com/blog/products/identity-security/bringing-dark-web-intelligence-into-the-ai-era", date: "2026-03-23", access: full, locator: "paragraphs 1-4 and customer quote"}
+    - {ref: MSFT-TIBAGENT-2026, title: "Security Copilot Threat Intelligence Briefing Agent in Microsoft Defender", publisher: "Microsoft", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/threat-intel-briefing-agent-defender", date: "2026-07-02", access: full, locator: "introduction"}
+    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: "Forrester", type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'Autonomous Threat Operations' section"}
+    - {ref: CSB-CTI-2025, title: "The Reality of CTI: Voices from the Analysts (10 analyst interviews)", publisher: "Cybersecurity & Business (Substack)", type: community, url: "https://cybersecandbiz.substack.com/p/the-reality-of-cti-voices-from-the", date: "2025-09-30", access: full, locator: "'CTI on Paper: A Maturing Discipline'"}
+    - {ref: MANDIANT-AIPHASES-2023, title: "AI and the Five Phases of the Threat Intelligence Lifecycle", publisher: "Mandiant (Google Cloud Blog)", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/ai-five-phases-intelligence-lifecycle", date: "2023-08-24", access: full, locator: "section on analysis and prioritization"}
+    - {ref: ARXIV-2609.07582, title: "Benchmarking LLMs for Threat Level Determination", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.07582", date: "2026-09-07", access: full, locator: "abstract"}
+    - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
+    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: "Flashpoint", type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Operational Challenges Are Putting Pressure on Analyst Capacity'"}
+    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: "DTN Advisory (Substack)", type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "collection paragraph"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-06, discourse-05, discourse-18 and governance-10. Maturity 'piloting' because the relevance system
-    is Beta. Vendor claims only; no customer outcome or override rate is published. An earlier draft attributed IDC
-    figures (139% more threats identified, 46% more efficient CTI teams) to Google's launch post; the post does not
-    contain them, so they were removed. POLAR (arXiv 2610.07298) reports better threat
-    ranking than baselines with no figure in its abstract. Google's group warns raw CVE volume can mislead (about 5,000
-    Linux kernel CVEs in January to August 2026 with no observed exploited zero-days); that item is routed to
+    Maturity 'piloting' because the relevance system is Beta. Vendor claims only; no customer outcome or override rate
+    is published. IDC figures sometimes attributed to Google's launch post (139% more threats identified, 46% more
+    efficient CTI teams) are not in the post and are not used. POLAR (arXiv 2610.07298) reports better threat ranking
+    than baselines with no figure in its abstract. Google's group warns raw CVE volume can mislead (about 5,000 Linux
+    kernel CVEs in January to August 2026 with no observed exploited zero-days); that item belongs to
     vulnerability-exposure (see security-vulnerability-exposure-09, prioritisation using LLM-synthesised threat
     intelligence).
 
@@ -510,18 +499,19 @@
   role_evolution: "Not described in the sources beyond analysts consuming the agent's output."
   evidence_grade: C
   sources:
-    - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "section 3.1 Malware Analyst Agent; section 1.2; callouts"}
-    - {ref: GOOGLE-GTICHANGELOG2-2026, title: "September 10th, 2026 - Single Target Operations (GA), Google Insights, Agentic Updates, and Detection Highlights", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/changelog/september-10th-2026-single-target-operations-ga-google-insights-agentic-updates-and-detection-highlights", date: "2026-09-10", access: full, locator: "Google TI Agentic Updates"}
-    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Malware Reverse Engineering (DHS-107), stage 'Initiation' (read through a text mirror)"}
-    - {ref: ARXIV-2605.06910, title: "Benchmarking Large Language Models for IoC Recovery under Adversarial Code Obfuscation and Encryption", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.06910", date: "2026-05-07", access: full, locator: "abstract"}
+    - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "section 3.1 Malware Analyst Agent; section 1.2; callouts"}
+    - {ref: GOOGLE-GTICHANGELOG2-2026, title: "September 10th, 2026 - Single Target Operations (GA), Google Insights, Agentic Updates, and Detection Highlights", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/changelog/september-10th-2026-single-target-operations-ga-google-insights-agentic-updates-and-detection-highlights", date: "2026-09-10", access: full, locator: "Google TI Agentic Updates"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: "CISA", type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Malware Reverse Engineering (DHS-107), stage 'Initiation' (read through a text mirror)"}
+    - {ref: ARXIV-2605.06910, title: "Benchmarking Large Language Models for IoC Recovery under Adversarial Code Obfuscation and Encryption", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.06910", date: "2026-05-07", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-08. Synthesis cited the January 2026 DHS AI use case inventory (dhs.gov/ai/use-case-inventory/cisa)
-    for CISA's tool as pre-deployment classical machine learning; that page returned HTTP 403 directly and through the
-    text mirror on 2026-10-17, so the entry now rests on CISA's own December 2024 page, which lists classification,
-    clustering, generative AI, information extraction and translation among the tool's techniques. Google's changelog shows active development from May to October 2026 but no customer evidence. Google's frontline
-    intelligence team also describes automated script decoding (see use case 19). The security-operations governance
-    deep dive routed the CyberSOCEval malware-analysis benchmark (arXiv 2509.20166) here; no figures were passed on.
+    CISA's tool is described from CISA's own December 2024 page, which lists classification, clustering, generative
+    AI, information extraction and translation among the tool's techniques; the January 2026 DHS AI use case inventory
+    (dhs.gov/ai/use-case-inventory/cisa), cited elsewhere as describing it as pre-deployment classical machine
+    learning, could not be opened on 2026-10-17 (HTTP 403 directly and through a text mirror). Google's changelog
+    shows active development from May to October 2026 but no customer evidence. Google's frontline intelligence team
+    also describes automated script decoding (see use case 19). The CyberSOCEval malware-analysis benchmark (arXiv
+    2509.20166) is relevant; no figures are used.
 
 - id: security-threat-intelligence-10
   title: Threat research agent that triages OSINT articles, gathers evidence, verifies indicators and drafts cited reports for expert review
@@ -564,10 +554,10 @@
     - {ref: ARXIV-2603.09452, title: "CyberThreat-Eval: Can Large Language Models Automate Real-World Threat Research?", publisher: "arXiv (TMLR 11/2025; Microsoft Research and Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2603.09452", date: "2026-03-10", access: full, locator: "sections 1, 3, 4, 5.1, 5.2; Table 6 (Appendix D)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-14, regraded from A to B under the 2026-10-17 rule. The paper says 'the company' without naming it;
-    the deploying team is probably Microsoft's CTI division, but that is an inference. The figures compare vanilla and
-    agent-assisted models on a benchmark the team built, not before-and-after results of the deployment, and the
-    paper's text and table disagree. The paper reports TRA as integrated into daily CTI work without usage volumes.
+    Graded B, not A. The paper says 'the company' without naming it; the deploying team is probably Microsoft's CTI
+    division, but that is an inference. The figures compare vanilla and agent-assisted models on a benchmark the team
+    built, not before-and-after results of the deployment, and the paper's text and table disagree. The paper reports
+    TRA as integrated into daily CTI work without usage volumes.
 
 - id: security-threat-intelligence-11
   title: Natural-language questions answered from a curated intelligence corpus, for analysts and for colleagues outside the intelligence team
@@ -610,21 +600,20 @@
     analysts do more (RF-AI-2026); this is marketing copy.
   evidence_grade: B
   sources:
-    - {ref: RF-COWBELL-2026, title: "Cowbell Achieves 90% Cost Savings With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/cowbell", date: "2026-09-30", access: full, locator: "headline; sections on AI Sessions and on cost and staffing savings"}
-    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "sections on AI-native workflows and cultural change"}
-    - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "feature list; FAQ; customer quote (page undated; retrieval date)"}
-    - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "callouts; sections 1.2, 2.1, 3"}
-    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "note 'AI settings need to be enabled'"}
-    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "sections on prompts, plugin and promptbooks (ms.date 2026-07-30; updated 2026-09-23)"}
-    - {ref: CLOUDFLARE-CLOUDY-2025, title: "Automating threat analysis and response with Cloudy", publisher: Cloudflare, type: vendor, url: "https://blog.cloudflare.com/automating-threat-analysis-and-response-with-cloudy/", date: "2025-08-29", access: full, locator: "sections on the Cloudforce One Threat Events integration"}
-    - {ref: CRWD-CHARLOTTE-2026, title: "Charlotte AI: Agentic Analyst for Cybersecurity", publisher: CrowdStrike, type: vendor, url: "https://www.crowdstrike.com/en-us/platform/charlotte-ai/", date: "2026-09-14", access: full, locator: "FAQ (date from the page's JSON-LD dateModified)"}
-    - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
+    - {ref: RF-COWBELL-2026, title: "Cowbell Achieves 90% Cost Savings With Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/cowbell", date: "2026-09-30", access: full, locator: "headline; sections on AI Sessions and on cost and staffing savings"}
+    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "sections on AI-native workflows and cultural change"}
+    - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "feature list; FAQ; customer quote (page undated; retrieval date)"}
+    - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "callouts; sections 1.2, 2.1, 3"}
+    - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "note 'AI settings need to be enabled'"}
+    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: "Microsoft", type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "sections on prompts, plugin and promptbooks (ms.date 2026-07-30; updated 2026-09-23)"}
+    - {ref: CLOUDFLARE-CLOUDY-2025, title: "Automating threat analysis and response with Cloudy", publisher: "Cloudflare", type: vendor, url: "https://blog.cloudflare.com/automating-threat-analysis-and-response-with-cloudy/", date: "2025-08-29", access: full, locator: "sections on the Cloudforce One Threat Events integration"}
+    - {ref: CRWD-CHARLOTTE-2026, title: "Charlotte AI: Agentic Analyst for Cybersecurity", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/platform/charlotte-ai/", date: "2026-09-14", access: full, locator: "FAQ (date from the page's JSON-LD dateModified)"}
+    - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-01, regraded from A to B under the 2026-10-17 rule: both figures are a customer's statements in a
-    vendor-written case study with no stated method, so they are kept but labelled. Cowbell and Superhuman are named
-    deployments. The self-service effect (engineers outside security querying intelligence) is the
-    nearest this module comes to a change in who does the work.
+    Graded B, not A: both figures are a customer's statements in a vendor-written case study with no stated method, so
+    they are kept but labelled. Cowbell and Superhuman are named deployments. The self-service effect (engineers
+    outside security querying intelligence) is the nearest this module comes to a change in who does the work.
 
 - id: security-threat-intelligence-12
   title: Drafting and tailoring threat briefings and reports for different audiences, on a schedule or on demand
@@ -677,36 +666,36 @@
     entry-level roles (FEEDLY-VALUE-2026).
   evidence_grade: B
   sources:
-    - {ref: SANS-CTI-2026, title: "SANS 2026 Cyber Threat Intelligence Survey Insights (key findings page and FAQ)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/research/cyber-threat-intelligence-report", date: "2026-05", access: full, locator: "Top Takeaways; FAQ on AI use in CTI"}
-    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "opening; paragraphs on AI use"}
-    - {ref: MSFT-TIBAGENT-2026, title: "Security Copilot Threat Intelligence Briefing Agent in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/threat-intel-briefing-agent-defender", date: "2026-07-02", access: full, locator: "introduction; prerequisites; agent identity section"}
-    - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Threat Intelligence Briefing Agent permissions section (page ms.date 2026-05-12; updated August 2026)"}
-    - {ref: GOOGLE-GTIFLOWS-2026, title: "Flows (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/flows-guide", date: "2026-07-31", access: full, locator: "What is a Flow; Monitoring executions"}
-    - {ref: GOOGLE-GTICHANGELOG-2026, title: "August 12th, 2026 - Agentic Flows & API, and Threat Actor Naming Updates", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/changelog/august-5th-2026-agentic-flows-api-and-threat-actor-naming-updates", date: "2026-08-12", access: full, locator: "Public Preview: Google TI Flows"}
-    - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "AI Report Creation (page undated; retrieval date)"}
-    - {ref: RF-COWBELL-2026, title: "Cowbell Achieves 90% Cost Savings With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/cowbell", date: "2026-09-30", access: full, locator: "paragraph on reports and short summaries"}
-    - {ref: RF-PUBSECTOR-2026, title: "Public Sector Agency Collects Intelligence 95% Faster Using Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/public-sector-agency", date: "2026-09-29", access: full, locator: "'Eliminating Manual Work With AI and Automation'"}
-    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "paragraphs on leadership communication"}
-    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "DHS-2335 (stage 'Initiation'); CISAChat DHS-2306 (stage 'Implementation and Assessment') (read through a text mirror)"}
-    - {ref: JOB-SERVICENOW-2025, title: "Staff Cyber Threat Intelligence Analyst | Reports Officer", publisher: ServiceNow (via Built In), type: job-posting, url: "https://builtin.com/job/staff-cyber-threat-intelligence-analyst-reports-officer/7520264", date: "2025-10-30", access: full, locator: "Responsibilities; Required Qualifications"}
-    - {ref: ENISA-CTL-2026, title: "ENISA Cybersecurity Threat Landscape Methodology (updated 18 September 2026)", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20CTL%20Methodology_Updated%2018%20september%202026.pdf", date: "2026-09-18", access: full, locator: "section 2.4.7"}
-    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09", access: full, locator: "Disclaimer"}
-    - {ref: FEEDLY-VALUE-2026, title: "Quantifying & communicating the value of human-led intelligence in an AI era (A. Streetman)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/quantifying-and-communicating-the-value-of-human-led-intelligence-in-an-ai-era", date: "2026-03-26", access: full, locator: "sections on de-skilling and calibration gaps"}
-    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: DTN Advisory (Substack), type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "section on AI in the intelligence cycle"}
-    - {ref: INTEL471-AIHUMAN-2026, title: "How AI and the human advantage beat tomorrow's threats", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-and-the-human-advantage-beat-tomorrows-threats", date: "2026-02-20", access: full, locator: "'The danger of blind trust: automation bias'"}
-    - {ref: CSD-ISACAI-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing", publisher: Cybersecurity Dive, type: press, url: "https://www.cybersecuritydive.com/news/ai-isacs-threat-intelligence-information-sharing-trust/815499/", date: "2026-03-23", access: full, locator: "paragraphs on Health-ISAC, RH-ISAC and FS-ISAC comments"}
-    - {ref: SOCRADAR-SANSCTI-2026, title: "2026 SANS CTI Survey Report: Key Findings on CTI's Influence Gap", publisher: SOCRadar, type: vendor, url: "https://socradar.io/blog/2026-sans-cti-survey-report-findings/", date: "2026-07-01", access: full, locator: "paragraph on AI use and human-in-the-loop"}
-    - {ref: HISAC-AIISAC-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing (Health-ISAC media mention)", publisher: Health-ISAC, type: community, url: "https://health-isac.org/isacs-confront-ais-promise-and-peril-for-threat-intelligence-sharing/", date: "2026-03-27", access: full, locator: "summary paragraphs"}
+    - {ref: SANS-CTI-2026, title: "SANS 2026 Cyber Threat Intelligence Survey Insights (key findings page and FAQ)", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/research/cyber-threat-intelligence-report", date: "2026-05", access: full, locator: "Top Takeaways; FAQ on AI use in CTI"}
+    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "opening; paragraphs on AI use"}
+    - {ref: MSFT-TIBAGENT-2026, title: "Security Copilot Threat Intelligence Briefing Agent in Microsoft Defender", publisher: "Microsoft", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/threat-intel-briefing-agent-defender", date: "2026-07-02", access: full, locator: "introduction; prerequisites; agent identity section"}
+    - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Threat Intelligence Briefing Agent permissions section (page ms.date 2026-05-12; updated August 2026)"}
+    - {ref: GOOGLE-GTIFLOWS-2026, title: "Flows (Google Threat Intelligence documentation)", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/flows-guide", date: "2026-07-31", access: full, locator: "What is a Flow; Monitoring executions"}
+    - {ref: GOOGLE-GTICHANGELOG-2026, title: "August 12th, 2026 - Agentic Flows & API, and Threat Actor Naming Updates", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/changelog/august-5th-2026-agentic-flows-api-and-threat-actor-naming-updates", date: "2026-08-12", access: full, locator: "Public Preview: Google TI Flows"}
+    - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "AI Report Creation (page undated; retrieval date)"}
+    - {ref: RF-COWBELL-2026, title: "Cowbell Achieves 90% Cost Savings With Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/cowbell", date: "2026-09-30", access: full, locator: "paragraph on reports and short summaries"}
+    - {ref: RF-PUBSECTOR-2026, title: "Public Sector Agency Collects Intelligence 95% Faster Using Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/public-sector-agency", date: "2026-09-29", access: full, locator: "'Eliminating Manual Work With AI and Automation'"}
+    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "paragraphs on leadership communication"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: "CISA", type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "DHS-2335 (stage 'Initiation'); CISAChat DHS-2306 (stage 'Implementation and Assessment') (read through a text mirror)"}
+    - {ref: JOB-SERVICENOW-2025, title: "Staff Cyber Threat Intelligence Analyst | Reports Officer", publisher: "ServiceNow (via Built In)", type: job-posting, url: "https://builtin.com/job/staff-cyber-threat-intelligence-analyst-reports-officer/7520264", date: "2025-10-30", access: full, locator: "Responsibilities; Required Qualifications"}
+    - {ref: ENISA-CTL-2026, title: "ENISA Cybersecurity Threat Landscape Methodology (updated 18 September 2026)", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20CTL%20Methodology_Updated%2018%20september%202026.pdf", date: "2026-09-18", access: full, locator: "section 2.4.7"}
+    - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09-22", access: full, locator: "Disclaimer"}
+    - {ref: FEEDLY-VALUE-2026, title: "Quantifying & communicating the value of human-led intelligence in an AI era (A. Streetman)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/quantifying-and-communicating-the-value-of-human-led-intelligence-in-an-ai-era", date: "2026-03-26", access: full, locator: "sections on de-skilling and calibration gaps"}
+    - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: "DTN Advisory (Substack)", type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "section on AI in the intelligence cycle"}
+    - {ref: INTEL471-AIHUMAN-2026, title: "How AI and the human advantage beat tomorrow's threats", publisher: "Intel 471", type: vendor, url: "https://www.intel471.com/blog/how-ai-and-the-human-advantage-beat-tomorrows-threats", date: "2026-02-20", access: full, locator: "'The danger of blind trust: automation bias'"}
+    - {ref: CSD-ISACAI-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing", publisher: "Cybersecurity Dive", type: press, url: "https://www.cybersecuritydive.com/news/ai-isacs-threat-intelligence-information-sharing-trust/815499/", date: "2026-03-23", access: full, locator: "paragraphs on Health-ISAC, RH-ISAC and FS-ISAC comments"}
+    - {ref: SOCRADAR-SANSCTI-2026, title: "2026 SANS CTI Survey Report: Key Findings on CTI's Influence Gap", publisher: "SOCRadar", type: vendor, url: "https://socradar.io/blog/2026-sans-cti-survey-report-findings/", date: "2026-07-01", access: full, locator: "paragraph on AI use and human-in-the-loop"}
+    - {ref: HISAC-AIISAC-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing (Health-ISAC media mention)", publisher: "Health-ISAC", type: community, url: "https://health-isac.org/isacs-confront-ais-promise-and-peril-for-threat-intelligence-sharing/", date: "2026-03-27", access: full, locator: "summary paragraphs"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-07 (B), discourse-04 (C), governance-01 (B) and practice-22 (ISAC operations, D idea). Grade B:
-    Cowbell, Superhuman, CISA and ServiceNow are named, but none publishes a measured time saving. CISA's December 2024
-    page lists its drafting tool at the initiation stage and CISAChat (internal search and summaries) at implementation
-    and assessment; the January 2026 DHS inventory used in synthesis could not be reopened (HTTP 403). Runtime class follows the scheduled agents
-    (Microsoft, Google); analysts also draft with personal assistants. A sponsor's summary of the SANS survey gives use
-    shares of 56% (summarization and report writing), 46% (parsing and normalization) and 45% (workflow automation)
-    without a stated denominator (SOCRADAR-SANSCTI-2026). The National Council of ISACs is considering
-    a cross-sector AI working group (CSD-ISACAI-2026).
+    ISAC operations on their own are an idea. Grade B: Cowbell, Superhuman, CISA and ServiceNow are named, but none
+    publishes a measured time saving. CISA's December 2024 page lists its drafting tool at the initiation stage and
+    CISAChat (internal search and summaries) at implementation and assessment; the January 2026 DHS inventory could
+    not be opened (HTTP 403). Runtime class follows the scheduled agents (Microsoft, Google); analysts also draft with
+    personal assistants. A sponsor's summary of the SANS survey gives use shares of 56% (summarization and report
+    writing), 46% (parsing and normalization) and 45% (workflow automation) without a stated denominator
+    (SOCRADAR-SANSCTI-2026). The National Council of ISACs is considering a cross-sector AI working group
+    (CSD-ISACAI-2026).
 
 - id: security-threat-intelligence-13
   title: Preparing intelligence for sharing - PII screening, redaction and STIX packaging with analyst approval
@@ -758,28 +747,26 @@
     lacked confidence AI would do sharing tasks correctly (ARXIV-2609.01174, section 3.2).
   evidence_grade: B
   sources:
-    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Automated Detection of PII in Cybersecurity Data (DHS-4), stage 'Operation and Maintenance'; DHS-5 (read through a text mirror)"}
-    - {ref: GAO-24-106246, title: "Artificial Intelligence: Fully Implementing Key Practices Could Help DHS Ensure Responsible Use for Cybersecurity (GAO-24-106246)", publisher: US Government Accountability Office, type: regulator, url: "https://www.gao.gov/products/gao-24-106246", date: "2024-02-07", access: full, locator: "Highlights; description of Automated PII Detection; recommendations 2 to 8 and their closure notes (read through a text mirror)"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: "CISA", type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Automated Detection of PII in Cybersecurity Data (DHS-4), stage 'Operation and Maintenance'; DHS-5 (read through a text mirror)"}
+    - {ref: GAO-24-106246, title: "Artificial Intelligence: Fully Implementing Key Practices Could Help DHS Ensure Responsible Use for Cybersecurity (GAO-24-106246)", publisher: "US Government Accountability Office", type: regulator, url: "https://www.gao.gov/products/gao-24-106246", date: "2024-02-07", access: full, locator: "Highlights; description of Automated PII Detection; recommendations 2 to 8 and their closure notes (read through a text mirror)"}
     - {ref: ARXIV-2609.01174, title: "A SoK for SoCs: Reading the TI Leaves on AI for Cyber Threat Intelligence Generation and Sharing", publisher: "arXiv (UC Santa Barbara et al.)", type: academic, url: "https://arxiv.org/abs/2609.01174", date: "2026-09-01", access: full, locator: "section 3.2; section 6, Experiments 3 and 4, Tables 3 and 4; discussion"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Indicator Message eXchange (IMX)' (CISA), 15 June"}
-    - {ref: CISAGOV-IMX-2026, title: "cisagov/imx README", publisher: CISA, type: regulator, url: "https://raw.githubusercontent.com/cisagov/imx/develop/README.md", date: "2026-10-17", access: full, locator: "whole file (undated; retrieval date)"}
-    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on sharing processes"}
-    - {ref: FIRST-TLP-2022, title: "Traffic Light Protocol (TLP) version 2.0", publisher: FIRST, type: standard-setter, url: "https://www.first.org/tlp/", date: "2022-08", access: full, locator: "usage rules and definitions"}
-    - {ref: NIST-SP800150-2016, title: "Guide to Cyber Threat Information Sharing (SP 800-150)", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-150.pdf", date: "2016-10", access: full, locator: "sections 3.4 and 3.4.1"}
-    - {ref: EURLEX-NIS2-2022, title: "Directive (EU) 2022/2555 (NIS 2)", publisher: EUR-Lex, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555", date: "2022-12-14", access: full, locator: "Articles 29 and 30"}
-    - {ref: EURLEX-DORA-2022, title: "Regulation (EU) 2022/2554 (DORA)", publisher: EUR-Lex, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2554", date: "2022-12-14", access: full, locator: "Article 45"}
-    - {ref: CISA-AIS-2026, title: "Automated Indicator Sharing (AIS)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/automated-indicator-sharing-ais", date: "2026-10-17", access: full, locator: "participation steps; CISA 2015 sunset paragraph (undated; retrieval date)"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Indicator Message eXchange (IMX)' (CISA), 15 June"}
+    - {ref: CISAGOV-IMX-2026, title: "cisagov/imx README", publisher: "CISA", type: regulator, url: "https://raw.githubusercontent.com/cisagov/imx/develop/README.md", date: "2026-10-17", access: full, locator: "whole file (undated; retrieval date)"}
+    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on sharing processes"}
+    - {ref: FIRST-TLP-2022, title: "Traffic Light Protocol (TLP) version 2.0", publisher: "FIRST", type: standard-setter, url: "https://www.first.org/tlp/", date: "2022-08", access: full, locator: "usage rules and definitions"}
+    - {ref: NIST-SP800150-2016, title: "Guide to Cyber Threat Information Sharing (SP 800-150)", publisher: "NIST", type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-150.pdf", date: "2016-10", access: full, locator: "sections 3.4 and 3.4.1"}
+    - {ref: EURLEX-NIS2-2022, title: "Directive (EU) 2022/2555 (NIS 2)", publisher: "European Parliament and Council (EUR-Lex)", type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555", date: "2022-12-14", access: full, locator: "Articles 29 and 30"}
+    - {ref: EURLEX-DORA-2022, title: "Regulation (EU) 2022/2554 (DORA)", publisher: "EUR-Lex", type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2554", date: "2022-12-14", access: full, locator: "Article 45"}
+    - {ref: CISA-AIS-2026, title: "Automated Indicator Sharing (AIS)", publisher: "CISA", type: regulator, url: "https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/automated-indicator-sharing-ais", date: "2026-10-17", access: full, locator: "participation steps; CISA 2015 sunset paragraph (undated; retrieval date)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-10 (B), practice-11 (D), discourse-03 (D), governance-05 (C) and governance-06 (C). Grade B rests on
-    CISA's operational PII screening, which CISA and GAO describe as natural-language processing; the LLM redaction and
-    STIX results are a lab pilot on 4 reports. Synthesis cited the January 2026 DHS inventory, which returned HTTP 403
-    directly and through the text mirror on 2026-10-17; the entry now rests on CISA's December 2024 page and GAO's 2024
-    audit. CISA's 2024 page also lists a decision-tree confidence score for AIS submissions (DHS-5) in operation; the
-    synthesis reading that the 2026 inventory retired it could not be rechecked. IMX's FIRST abstract calls it
-    newly open-sourced, but its README read on 2026-10-17 says 'Code coming soon'. Only 3 of the 18 surveyed
-    practitioners used LLMs to turn attack data into CTI. Routed: legal review of sharing processes to
-    security-governance-risk.
+    Grade B rests on CISA's operational PII screening, which CISA and GAO describe as natural-language processing; the
+    LLM redaction and STIX results are a lab pilot on 4 reports. The January 2026 DHS inventory returned HTTP 403
+    directly and through a text mirror on 2026-10-17, so the entry rests on CISA's December 2024 page and GAO's 2024
+    audit. CISA's 2024 page also lists a decision-tree confidence score for AIS submissions (DHS-5) in operation;
+    whether the 2026 inventory retired it could not be checked. IMX's FIRST abstract calls it newly open-sourced, but
+    its README read on 2026-10-17 says 'Code coming soon'. Only 3 of the 18 surveyed practitioners used LLMs to turn
+    attack data into CTI. Legal review of sharing processes belongs to governance-risk.
 
 - id: security-threat-intelligence-14
   title: Threat reports turned into detection logic (Sigma, YARA, KQL, regex) that is tested before deployment
@@ -828,28 +815,27 @@
     next step after detection-as-code, so analysts encode triage and tuning knowledge too (DETENGWEEKLY-167-2026).
   evidence_grade: C
   sources:
-    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "promptbooks 'Check impact of an external threat article' and 'Threat Intelligence 360 report' (ms.date 2026-07-30)"}
-    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "Responsibilities bullets on YARA infrastructure and hunting queries"}
-    - {ref: SECURITYARSENAL-RAPID7-2026, title: "AI-Driven Detection Engineering: Converting Threat Intel into Executable Hunt Plans", publisher: Security Arsenal, type: press, url: "https://securityarsenal.com/blog/ai-driven-detection-engineering-converting-threat-intel-into-executable-hunt-plans", date: "2026-06-10", access: full, locator: "paragraphs on Rapid7's pipeline; recommendations list"}
-    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 5; 'Where the human analyst is still required'"}
-    - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: Detection Engineering Weekly, type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "item 'Detection Skills by Vega Threat Research'"}
-    - {ref: DETENGWEEKLY-168-2026, title: "DEW #168 - The Detection Rule Stork, OpenWeight models vs your SIEM and Sigma vs. YARA", publisher: Detection Engineering Weekly, type: community, url: "https://www.detectionengineering.net/p/dew-168-the-detection-rule-stork", date: "2026-08-26", access: full, locator: "item on where detection ideas originate"}
-    - {ref: PACKT-CTIREALM-2026, title: "#34: CTI-REALM tests whether AI can turn threat intelligence into detections", publisher: Packt Cyber_AI newsletter (Substack), type: community, url: "https://packtcyberai.substack.com/p/34-cti-realm-tests-whether-ai-can", date: "2026-10-07", access: full, locator: "'What the score actually measures'; 'How teams can use it today'"}
-    - {ref: ARXIV-2603.13517, title: "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2603.13517", date: "2026-03-13", access: full, locator: "abstract; authors listed as Microsoft Security AI"}
-    - {ref: ARXIV-2610.14180, title: "Unconstrained CTI-REALM with Open-Weights", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2610.14180", date: "2026-10-09", access: full, locator: "abstract"}
-    - {ref: USENIX-SIGMERGE-2026, title: "From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports", publisher: USENIX Security Symposium 2026, type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/cai", date: "2026-08", access: full, locator: "abstract"}
-    - {ref: ARXIV-2604.12228, title: "From IOCs to Regex: Automating CTI Operationalization for SOC with LLMs", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2604.12228", date: "2026-04-14", access: full, locator: "abstract"}
-    - {ref: ARXIV-2610.09007, title: "Sigma-Hunter: A Domain-Specific Language Model for Threat Hunting and Detection Engineering", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2610.09007", date: "2026-10-06", access: full, locator: "abstract"}
-    - {ref: ARXIV-2603.09452, title: "CyberThreat-Eval: Can Large Language Models Automate Real-World Threat Research?", publisher: "arXiv (TMLR 11/2025; Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2603.09452", date: "2026-03-10", access: full, locator: "sections 4.4 and 5.1"}
-    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "'Threat Detection'"}
+    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: "Microsoft", type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "promptbooks 'Check impact of an external threat article' and 'Threat Intelligence 360 report' (ms.date 2026-07-30)"}
+    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "Responsibilities bullets on YARA infrastructure and hunting queries"}
+    - {ref: SECURITYARSENAL-RAPID7-2026, title: "AI-Driven Detection Engineering: Converting Threat Intel into Executable Hunt Plans", publisher: "Security Arsenal", type: press, url: "https://securityarsenal.com/blog/ai-driven-detection-engineering-converting-threat-intel-into-executable-hunt-plans", date: "2026-06-10", access: full, locator: "paragraphs on Rapid7's pipeline; recommendations list"}
+    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 5; 'Where the human analyst is still required'"}
+    - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "item 'Detection Skills by Vega Threat Research'"}
+    - {ref: DETENGWEEKLY-168-2026, title: "DEW #168 - The Detection Rule Stork, OpenWeight models vs your SIEM and Sigma vs. YARA", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-168-the-detection-rule-stork", date: "2026-08-26", access: full, locator: "item on where detection ideas originate"}
+    - {ref: PACKT-CTIREALM-2026, title: "#34: CTI-REALM tests whether AI can turn threat intelligence into detections", publisher: "Packt Cyber_AI newsletter (Substack)", type: community, url: "https://packtcyberai.substack.com/p/34-cti-realm-tests-whether-ai-can", date: "2026-10-07", access: full, locator: "'What the score actually measures'; 'How teams can use it today'"}
+    - {ref: ARXIV-2603.13517, title: "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.13517", date: "2026-03-13", access: full, locator: "abstract; authors listed as Microsoft Security AI"}
+    - {ref: ARXIV-2610.14180, title: "Unconstrained CTI-REALM with Open-Weights", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.14180", date: "2026-10-09", access: full, locator: "abstract"}
+    - {ref: USENIX-SIGMERGE-2026, title: "From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports", publisher: "USENIX Security Symposium 2026", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/cai", date: "2026-08", access: full, locator: "abstract"}
+    - {ref: ARXIV-2604.12228, title: "From IOCs to Regex: Automating CTI Operationalization for SOC with LLMs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2604.12228", date: "2026-04-14", access: full, locator: "abstract"}
+    - {ref: ARXIV-2610.09007, title: "Sigma-Hunter: A Domain-Specific Language Model for Threat Hunting and Detection Engineering", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.09007", date: "2026-10-06", access: full, locator: "abstract"}
+    - {ref: ARXIV-2603.09452, title: "CyberThreat-Eval: Can Large Language Models Automate Real-World Threat Research?", publisher: "arXiv (TMLR 11/2025; Microsoft Research and Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2603.09452", date: "2026-03-10", access: full, locator: "sections 4.4 and 5.1"}
+    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: "Intel 471", type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "'Threat Detection'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-05, discourse-09 and governance-07. Maturity 'announced': product features and a third-party report
-    of Rapid7's pipeline, with no customer outcome. Governance did not confirm CTI-REALM's Microsoft authorship from the
-    abstract page; practice read the authors as Microsoft Security AI, so the reward is labelled vendor-published.
-    AutoSigma (arXiv 2608.19011) reports better validity and coverage with no figures in its abstract. The rule
-    lifecycle and detection-as-code belong to security-operations (security-operations-15, which drafts, translates and
-    scores detection rules); only the intelligence-to-rule step is kept here.
+    Maturity 'announced': product features and a third-party report of Rapid7's pipeline, with no customer outcome.
+    CTI-REALM's authors are read as Microsoft Security AI (the abstract page does not confirm it), so the reward is
+    labelled vendor-published. AutoSigma (arXiv 2608.19011) reports better validity and coverage with no figures in
+    its abstract. The rule lifecycle and detection-as-code belong to security-operations (security-operations-15,
+    which drafts, translates and scores detection rules); only the intelligence-to-rule step is kept here.
 
 - id: security-threat-intelligence-15
   title: SOAR enrichment and MCP connections that let alerts and agents pull threat intelligence on demand
@@ -891,18 +877,18 @@
     integrations and feed intelligence into agent workflows downstream (ANTHROPIC-JOBTIE-2026; COINBASE-JOBTIPE-2026).
   evidence_grade: B
   sources:
-    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "sections on SOAR automation, the internal MCP server and closing advice"}
-    - {ref: GOOGLE-GTICHANGELOG-2026, title: "August 12th, 2026 - Agentic Flows & API, and Threat Actor Naming Updates", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/changelog/august-5th-2026-agentic-flows-api-and-threat-actor-naming-updates", date: "2026-08-12", access: full, locator: "Public Preview: Agentic API; SOAR enrichment example"}
-    - {ref: GOOGLE-GTIMCP-2026, title: "Agentic MCP Server Configuration (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/agentic-mcp-guide", date: "2026-09-16", access: full, locator: "whole page"}
-    - {ref: SOCRADAR-SANSCTI-2026, title: "2026 SANS CTI Survey Report: Key Findings on CTI's Influence Gap", publisher: SOCRadar, type: vendor, url: "https://socradar.io/blog/2026-sans-cti-survey-report-findings/", date: "2026-07-01", access: full, locator: "paragraph on the SOCRadar MCP server"}
-    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "Responsibilities bullet on MCP integrations"}
-    - {ref: COINBASE-JOBTIPE-2026, title: "Threat Intelligence Platform Engineer (job posting)", publisher: Coinbase, type: job-posting, url: "https://www.coinbase.com/careers/positions/8177619", date: "2026-09-03", access: full, locator: "What you'll do (last updated 2026-10-13)"}
-    - {ref: OPENCTI-COPILOT-2026, title: "Interactions using AI (chatbot) - CTI Copilot (OpenCTI documentation)", publisher: Filigran / OpenCTI, type: vendor, url: "https://docs.opencti.io/latest/usage/copilot/", date: "2026-08-27", access: full, locator: "'Approving a tool call' (page marked under construction)"}
-    - {ref: ANTHROPIC-COOKBOOK-TI-2026, title: "Threat intelligence enrichment agent (Claude Cookbook)", publisher: Anthropic, type: vendor, url: "https://platform.claude.com/cookbook/tool-use-threat-intel-enrichment-agent", date: "2026-04-07", access: full, locator: "introduction; tool definitions"}
+    - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: "Recorded Future", type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "sections on SOAR automation, the internal MCP server and closing advice"}
+    - {ref: GOOGLE-GTICHANGELOG-2026, title: "August 12th, 2026 - Agentic Flows & API, and Threat Actor Naming Updates", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/changelog/august-5th-2026-agentic-flows-api-and-threat-actor-naming-updates", date: "2026-08-12", access: full, locator: "Public Preview: Agentic API; SOAR enrichment example"}
+    - {ref: GOOGLE-GTIMCP-2026, title: "Agentic MCP Server Configuration (Google Threat Intelligence documentation)", publisher: "Google", type: vendor, url: "https://gtidocs.readme.io/docs/agentic-mcp-guide", date: "2026-09-16", access: full, locator: "whole page"}
+    - {ref: SOCRADAR-SANSCTI-2026, title: "2026 SANS CTI Survey Report: Key Findings on CTI's Influence Gap", publisher: "SOCRadar", type: vendor, url: "https://socradar.io/blog/2026-sans-cti-survey-report-findings/", date: "2026-07-01", access: full, locator: "paragraph on the SOCRadar MCP server"}
+    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "Responsibilities bullet on MCP integrations"}
+    - {ref: COINBASE-JOBTIPE-2026, title: "Threat Intelligence Platform Engineer (job posting)", publisher: "Coinbase", type: job-posting, url: "https://www.coinbase.com/careers/positions/8177619", date: "2026-09-03", access: full, locator: "What you'll do (last updated 2026-10-13)"}
+    - {ref: OPENCTI-COPILOT-2026, title: "Interactions using AI (chatbot) - CTI Copilot (OpenCTI documentation)", publisher: "Filigran / OpenCTI", type: vendor, url: "https://docs.opencti.io/latest/usage/copilot/", date: "2026-08-27", access: full, locator: "'Approving a tool call' (page marked under construction)"}
+    - {ref: ANTHROPIC-COOKBOOK-TI-2026, title: "Threat intelligence enrichment agent (Claude Cookbook)", publisher: "Anthropic", type: vendor, url: "https://platform.claude.com/cookbook/tool-use-threat-intel-enrichment-agent", date: "2026-04-07", access: full, locator: "introduction; tool definitions"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-16. Grade B: Superhuman is named but publishes no figures, and its case study is written by Recorded
-    Future. Alert triage itself belongs to security-operations; this entry covers the intelligence feed into it.
+    Grade B: Superhuman is named but publishes no figures, and its case study is written by Recorded Future. Alert
+    triage itself belongs to security-operations; this entry covers the intelligence feed into it.
 
 - id: security-threat-intelligence-16
   title: New indicators matched automatically against enterprise telemetry by an LLM-fed hunting pipeline
@@ -941,14 +927,14 @@
     not to replace them (ADOBE-CTRI-2026, closing section).
   evidence_grade: B
   sources:
-    - {ref: ADOBE-CTRI-2026, title: "Building an agentic AI-powered threat intelligence platform", publisher: Adobe, type: firm, url: "https://blog.adobe.com/security/building-an-agentic-ai-powered-threat-intelligence-platform", date: "2026-03-19", access: full, locator: "workflow steps 1 to 5; design guidance list; closing section"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "CyCraft AI Lab session abstract, 18 June"}
+    - {ref: ADOBE-CTRI-2026, title: "Building an agentic AI-powered threat intelligence platform", publisher: "Adobe", type: firm, url: "https://blog.adobe.com/security/building-an-agentic-ai-powered-threat-intelligence-platform", date: "2026-03-19", access: full, locator: "workflow steps 1 to 5; design guidance list; closing section"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "CyCraft AI Lab session abstract, 18 June"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-03. Adobe gives no precision, false-positive or override data and does not say how many hunts ran.
-    Publication date from the page metadata. The recheck of earlier intelligence and the reliability controls appear in
-    Adobe's guidance for others ('how security teams can approach building a similar system'), not in its description
-    of its own platform, so they are recorded as recommendations.
+    Adobe gives no precision, false-positive or override data and does not say how many hunts ran. Publication date
+    from the page metadata. The recheck of earlier intelligence and the reliability controls appear in Adobe's
+    guidance for others ('how security teams can approach building a similar system'), not in its description of its
+    own platform, so they are recorded as recommendations.
 
 - id: security-threat-intelligence-17
   title: Chained agentic workflow from an inbound report to asset scoping, tickets and draft detections, with approval gates
@@ -997,21 +983,21 @@
     (SANS-CTIPR-2026).
   evidence_grade: C
   sources:
-    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "introduction; Workflows 1-5; 'Build versus buy'; 'Chaining the workflows together'"}
-    - {ref: SANS-AGENTICWEB-2026, title: "Agentic CTI Automation For Fun and Profit (webcast abstract)", publisher: SANS Institute, type: conference, url: "https://www.sans.org/webcasts/agentic-cti-automation-for-fun-and-profit", date: "2026-06-25", access: full, locator: "abstract"}
-    - {ref: SCWORLD-CYWARE-2026, title: "Agentic AI and the Future of Threat Intelligence Operations - Sachin Jade - RSAC26 #2 (sponsored by Cyware)", publisher: SC Media, type: podcast, url: "https://www.scworld.com/podcast-segment/14717-agentic-ai-and-the-future-of-threat-intelligence-operations-sachin-jade-rsac26-2", date: "2026-03-24", access: full, locator: "segment description and chapter titles"}
-    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: Flashpoint, type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Agentic AI Adoption Is Underway'; Methodology"}
+    - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "introduction; Workflows 1-5; 'Build versus buy'; 'Chaining the workflows together'"}
+    - {ref: SANS-AGENTICWEB-2026, title: "Agentic CTI Automation For Fun and Profit (webcast abstract)", publisher: "SANS Institute", type: conference, url: "https://www.sans.org/webcasts/agentic-cti-automation-for-fun-and-profit", date: "2026-06-25", access: full, locator: "abstract"}
+    - {ref: SCWORLD-CYWARE-2026, title: "Agentic AI and the Future of Threat Intelligence Operations - Sachin Jade - RSAC26 #2 (sponsored by Cyware)", publisher: "SC Media", type: podcast, url: "https://www.scworld.com/podcast-segment/14717-agentic-ai-and-the-future-of-threat-intelligence-operations-sachin-jade-rsac26-2", date: "2026-03-24", access: full, locator: "segment description and chapter titles"}
+    - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: "Flashpoint", type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'Agentic AI Adoption Is Underway'; Methodology"}
     - {ref: FLASHPOINT-ETIR-2026, title: "Nearly Half of Enterprise Threat Intelligence Teams Are Using or Piloting Agentic AI as AI Threats Lead 2027 Priorities, Flashpoint Research Finds (press release)", publisher: "Flashpoint (PRNewswire/PRWeb)", type: survey, url: "https://www.prweb.com/releases/nearly-half-of-enterprise-threat-intelligence-teams-are-using-or-piloting-agentic-ai-as-ai-threats-lead-2027-priorities-flashpoint-research-finds-302906892.html", date: "2026-10-13", access: full, locator: "paragraphs 5-8"}
-    - {ref: CYWARE-RSAC-2026, title: "What Security Professionals at RSAC2026 Told Us About AI and Threat Intelligence", publisher: Cyware, type: survey, url: "https://www.cyware.com/blog/what-security-professionals-at-rsac2026-told-us-about-ai-and-threat", date: "2026-04-28", access: full, locator: "summary bullets and body"}
-    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: SecurityWeek, type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
-    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on SecOps as top use case"}
-    - {ref: EURLEX-NIS2-2022, title: "Directive (EU) 2022/2555 (NIS 2)", publisher: EUR-Lex, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555", date: "2022-12-14", access: full, locator: "recital 51"}
+    - {ref: CYWARE-RSAC-2026, title: "What Security Professionals at RSAC2026 Told Us About AI and Threat Intelligence", publisher: "Cyware", type: survey, url: "https://www.cyware.com/blog/what-security-professionals-at-rsac2026-told-us-about-ai-and-threat", date: "2026-04-28", access: full, locator: "summary bullets and body"}
+    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: "SecurityWeek", type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
+    - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on SecOps as top use case"}
+    - {ref: EURLEX-NIS2-2022, title: "Directive (EU) 2022/2555 (NIS 2)", publisher: "European Parliament and Council (EUR-Lex)", type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555", date: "2022-12-14", access: full, locator: "recital 51"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged discourse-19 and governance-11. Grade C: recipes, a webcast abstract, a sponsored podcast segment and vendor
-    surveys with small or unstated samples; no named deployment. Maturity 'piloting' because Flashpoint's 25% in
-    production is a share of about 20 interviewees, not a named deployment. The ladder shows what the sources describe
-    (agents owning multi-step work); none specifies the scope of autonomy.
+    Grade C: recipes, a webcast abstract, a sponsored podcast segment and vendor surveys with small or unstated
+    samples; no named deployment. Maturity 'piloting' because Flashpoint's 25% in production is a share of about 20
+    interviewees, not a named deployment. The ladder shows what the sources describe (agents owning multi-step work);
+    none specifies the scope of autonomy.
 
 - id: security-threat-intelligence-18
   title: Bounded agents that collect, score and package evidence for takedown of phishing and brand-abuse sites
@@ -1044,13 +1030,13 @@
     Memcyco says analysts move from manual groundwork to judgment and enforcement (MEMCYCO-AGENTIC-2026).
   evidence_grade: C
   sources:
-    - {ref: MEMCYCO-AGENTIC-2026, title: "MemcycoFM Ep 27: What Is Agentic Threat Intelligence? (vendor podcast, written episode page)", publisher: Memcyco, type: podcast, url: "https://webcast.memcyco.com/library/the-memcycofm-show-ep-27/", date: "2026-07-21", access: full, locator: "episode summary; 'What agentic means in practice'"}
-    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'One Platform, Two Promises'"}
+    - {ref: MEMCYCO-AGENTIC-2026, title: "MemcycoFM Ep 27: What Is Agentic Threat Intelligence? (vendor podcast, written episode page)", publisher: "Memcyco", type: podcast, url: "https://webcast.memcyco.com/library/the-memcycofm-show-ep-27/", date: "2026-07-21", access: full, locator: "episode summary; 'What agentic means in practice'"}
+    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: "Forrester", type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'One Platform, Two Promises'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-08. Vendor podcast page and a vendor roadmap as read by an analyst. Adjacent to fraud and brand
-    protection, which the landscape scan folds into human-risk; kept here because takedown evidence is an
-    external-threat intelligence product. Cross-reference human-risk.
+    Vendor podcast page and a vendor roadmap as read by an analyst. Adjacent to fraud and brand protection, which this
+    archetype folds into human-risk; kept here because takedown evidence is an external-threat intelligence product.
+    Cross-reference human-risk.
 
 - id: security-threat-intelligence-19
   title: AI assistants inside human-led hunts and frontline intelligence work - hypothesis stress-testing, query drafting, decoding and documentation
@@ -1102,25 +1088,23 @@
     proficiency, context engineering and validation (FEEDLY-HIRING-2026).
   evidence_grade: B
   sources:
-    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'How AI can help your threat hunting teams', 'Hypothesis Development', 'Data Scoping and Query Design', 'Data Analysis', 'Reporting and Documentation'"}
-    - {ref: MSFT-HUNTASSIST-2026, title: "Microsoft Security Copilot Threat Hunting Assistant in advanced hunting", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant", date: "2026-07-02", access: full, locator: "key capabilities; response components (ms.date 2026-07-02; updated 2026-09-10)"}
-    - {ref: GOOGLE-DEFADV-HMT-2026, title: "Human-Machine Teaming: Applying AI to Frontline Threat Intelligence Workflows (The Defender's Advantage podcast; show notes)", publisher: Google Threat Intelligence Group / Mandiant, type: podcast, url: "https://feeds.buzzsprout.com/1762840.rss", date: "2026-07-13", access: full, locator: "episode description"}
-    - {ref: TECHINFORMED-GOOGLE-2026, title: "Google's SOC agent cuts alert review from 30 minutes to 60 seconds", publisher: TechInformed, type: press, url: "https://techinformed.com/googles-soc-agent-cuts-alert-review-from-30-minutes-to-60-seconds/", date: "2026-06-16", access: full, locator: "paragraph on Detection Engineering and Threat Hunting agents (preview); routed from the security-operations practice deep dive"}
-    - {ref: HUNTRESS-JOBDETH-2026, title: "Senior Detection Engineering & Threat Hunting Analyst (job posting)", publisher: Huntress, type: job-posting, url: "https://job-boards.greenhouse.io/huntress/jobs/7998321003", date: "2026-09-23", access: full, locator: "responsibilities and requirements on AI-assisted workflows"}
-    - {ref: TWILIO-JOBSSETH-2026, title: "Staff Security Engineer, Threat Hunting (job posting)", publisher: Twilio, type: job-posting, url: "https://job-boards.greenhouse.io/twilio/jobs/8157344", date: "2026-09-04", access: full, locator: "requirements on AI agents and AI-assisted hunting"}
-    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list (abstracts)", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "workshop 'Engineering the Hunt: Developing AI SKILLs for Network Security Monitoring'"}
-    - {ref: ARXIV-2609.08790, title: "Evidence-Grounded Retrieval for Investigation Hunt Lead Generation from CTI Reports", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.08790", date: "2026-09-08", access: full, locator: "abstract"}
-    - {ref: FEEDLY-VALUE-2026, title: "Quantifying & communicating the value of human-led intelligence in an AI era (A. Streetman)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/quantifying-and-communicating-the-value-of-human-led-intelligence-in-an-ai-era", date: "2026-03-26", access: full, locator: "'The automation tradeoff'"}
-    - {ref: FEEDLY-HIRING-2026, title: "Hiring for the AI era: A CTI leader's guide to building tomorrow's threat intelligence teams (J. Feyerabend)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/hiring-for-the-ai-era-a-cti-leader-s-guide-to-building-tomorrow-s-threat-intelligence-teams", date: "2026-07-16", access: full, locator: "'AI Literacy as the New Differentiator'"}
-    - {ref: SANS-LEASTAI-2026, title: "Principle of Least AI in Threat Intelligence: A Blueprint for Effective GenAI Adoption (J. Shabadu, Forrester; abstract)", publisher: SANS Institute, type: conference, url: "https://www.sans.org/presentations/principle-of-least-ai-in-threat-intelligence-a-blueprint-for-effective-genai-adoption", date: "2026-01-27", access: full, locator: "abstract"}
-    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: SecurityWeek, type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
+    - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: "Intel 471", type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'How AI can help your threat hunting teams', 'Hypothesis Development', 'Data Scoping and Query Design', 'Data Analysis', 'Reporting and Documentation'"}
+    - {ref: MSFT-HUNTASSIST-2026, title: "Microsoft Security Copilot Threat Hunting Assistant in advanced hunting", publisher: "Microsoft", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant", date: "2026-07-02", access: full, locator: "key capabilities; response components (ms.date 2026-07-02; updated 2026-09-10)"}
+    - {ref: GOOGLE-DEFADV-HMT-2026, title: "Human-Machine Teaming: Applying AI to Frontline Threat Intelligence Workflows (The Defender's Advantage podcast; show notes)", publisher: "Google Threat Intelligence Group / Mandiant", type: podcast, url: "https://feeds.buzzsprout.com/1762840.rss", date: "2026-07-13", access: full, locator: "episode description"}
+    - {ref: TECHINFORMED-GOOGLE-2026, title: "Google's SOC agent cuts alert review from 30 minutes to 60 seconds", publisher: "TechInformed", type: press, url: "https://techinformed.com/googles-soc-agent-cuts-alert-review-from-30-minutes-to-60-seconds/", date: "2026-06-16", access: full, locator: "paragraph on Detection Engineering and Threat Hunting agents (preview)"}
+    - {ref: HUNTRESS-JOBDETH-2026, title: "Senior Detection Engineering & Threat Hunting Analyst (job posting)", publisher: "Huntress", type: job-posting, url: "https://job-boards.greenhouse.io/huntress/jobs/7998321003", date: "2026-09-23", access: full, locator: "responsibilities and requirements on AI-assisted workflows"}
+    - {ref: TWILIO-JOBSSETH-2026, title: "Staff Security Engineer, Threat Hunting (job posting)", publisher: "Twilio", type: job-posting, url: "https://job-boards.greenhouse.io/twilio/jobs/8157344", date: "2026-09-04", access: full, locator: "requirements on AI agents and AI-assisted hunting"}
+    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks (abstracts)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "workshop 'Engineering the Hunt: Developing AI SKILLs for Network Security Monitoring'"}
+    - {ref: ARXIV-2609.08790, title: "Evidence-Grounded Retrieval for Investigation Hunt Lead Generation from CTI Reports", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.08790", date: "2026-09-08", access: full, locator: "abstract"}
+    - {ref: FEEDLY-VALUE-2026, title: "Quantifying & communicating the value of human-led intelligence in an AI era (A. Streetman)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/quantifying-and-communicating-the-value-of-human-led-intelligence-in-an-ai-era", date: "2026-03-26", access: full, locator: "'The automation tradeoff'"}
+    - {ref: FEEDLY-HIRING-2026, title: "Hiring for the AI era: A CTI leader's guide to building tomorrow's threat intelligence teams (J. Feyerabend)", publisher: "Feedly TI Essentials", type: vendor, url: "https://feedly.com/ti-essentials/posts/hiring-for-the-ai-era-a-cti-leader-s-guide-to-building-tomorrow-s-threat-intelligence-teams", date: "2026-07-16", access: full, locator: "'AI Literacy as the New Differentiator'"}
+    - {ref: SANS-LEASTAI-2026, title: "Principle of Least AI in Threat Intelligence: A Blueprint for Effective GenAI Adoption (J. Shabadu, Forrester; abstract)", publisher: "SANS Institute", type: conference, url: "https://www.sans.org/presentations/principle-of-least-ai-in-threat-intelligence-a-blueprint-for-effective-genai-adoption", date: "2026-01-27", access: full, locator: "abstract"}
+    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: "SecurityWeek", type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged discourse-10 (B), practice-12 (C), discourse-12 (B, Google frontline team) and governance-08 (AHLERT hunt
-    leads, C). Grade B: Intel 471 and Google's frontline team describe their own use; neither publishes figures, and
-    Google's evidence is podcast show notes. The security-operations practice deep dive routed threat hunting agents
-    here (Microsoft Threat Hunting Assistant, CrowdStrike Agentic Recon, Google Threat Hunting agent in preview, Dropzone
-    AI Threat Hunter); only names were passed on.
+    Grade B: Intel 471 and Google's frontline team describe their own use; neither publishes figures, and Google's
+    evidence is podcast show notes. Other threat hunting agents (Microsoft Threat Hunting Assistant, CrowdStrike
+    Agentic Recon, Google Threat Hunting agent in preview, Dropzone AI Threat Hunter) are known by name only.
 
 - id: security-threat-intelligence-20
   title: Managed-service agents turn new campaigns into hunt hypotheses, environment-specific queries and standing detection rules
@@ -1158,14 +1142,14 @@
     and judgment (CYBERPROOF-HUNTING-2026).
   evidence_grade: C
   sources:
-    - {ref: CYBERPROOF-HUNTING-2026, title: "How agentic AI delivered continuous threat hunting for a transport giant", publisher: CyberProof, type: vendor, url: "https://www.cyberproof.com/case-studies/agentic-ai-transportation/", date: "2026-07", access: full, locator: "Benefits; Our solution; Results (date from the PDF's creation date)"}
-    - {ref: ARXIV-2604.19533, title: "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2604.19533", date: "2026-04-21", access: full, locator: "abstract"}
-    - {ref: ARXIV-2605.29269, title: "HunterAgent: Neuro-Symbolic Attack Trace Reconstruction under Anti-Forensics", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.29269", date: "2026-05-28", access: full, locator: "abstract"}
+    - {ref: CYBERPROOF-HUNTING-2026, title: "How agentic AI delivered continuous threat hunting for a transport giant", publisher: "CyberProof", type: vendor, url: "https://www.cyberproof.com/case-studies/agentic-ai-transportation/", date: "2026-07", access: full, locator: "Benefits; Our solution; Results (date from the PDF's creation date)"}
+    - {ref: ARXIV-2604.19533, title: "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2604.19533", date: "2026-04-21", access: full, locator: "abstract"}
+    - {ref: ARXIV-2605.29269, title: "HunterAgent: Neuro-Symbolic Attack Trace Reconstruction under Anti-Forensics", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.29269", date: "2026-05-28", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-04. Graded C because the client is unnamed and every figure is the provider's own. The page describes
-    agents identifying MuddyWater-linked campaign signatures on the day and an attempted intrusion contained at staging;
-    this is the vendor's narrative. No source describes new pricing or a new service line, so change_scope is process.
+    Graded C because the client is unnamed and every figure is the provider's own. The page describes agents
+    identifying MuddyWater-linked campaign signatures on the day and an attempted intrusion contained at staging; this
+    is the vendor's narrative. No source describes new pricing or a new service line, so change_scope is process.
 
 - id: security-threat-intelligence-21
   title: Scheduled AI hunt agents that investigate across log sources and must argue against their own findings
@@ -1213,27 +1197,27 @@
     or well-structured data matters more for automated SOC work (RISKYBIZ-855-2026).
   evidence_grade: A
   sources:
-    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: Grow Therapy engineering blog, type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026", access: full, locator: "'How it runs on AWS', 'Multi-phase analysis', 'Handling noise', 'Lessons from building this', 'Where it stands today' (post undated; published by 2026-08-19, when DEW #167 featured it)"}
-    - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: Detection Engineering Weekly, type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "item on the Grow Therapy post (summary and cost caveat)"}
-    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'Inching Toward Autonomy, One Advanced Automation At A Time'"}
-    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: SecurityWeek, type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
-    - {ref: ARXIV-2604.19533, title: "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2604.19533", date: "2026-04-21", access: full, locator: "abstract"}
-    - {ref: ARXIV-2509.23571, title: "Benchmarking LLM-Assisted Blue Teaming via Standardized Threat Hunting (ICML 2026)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23571", date: "2025-09-28", access: full, locator: "abstract (v3 revised 2026-05-28)"}
-    - {ref: USENIX-LOGINJECT-2026, title: "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation", publisher: USENIX Security Symposium 2026, type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/technical-sessions", date: "2026-08", access: full, locator: "abstract on the technical sessions listing"}
-    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "abstract"}
-    - {ref: RISKYBIZ-SOAPBOX109-2026, title: "Soap Box: Using threat hunting to drive detection (sponsored; show notes)", publisher: Risky Business Media, type: podcast, url: "https://risky.biz/SOAPBOX109/", date: "2026-07-08", access: full, locator: "show notes"}
-    - {ref: RISKYBIZ-855-2026, title: "Risky Business #855 (show notes, sponsor interview with Corelight)", publisher: Risky Business Media, type: podcast, url: "https://risky.biz/RB855/", date: "2026-10-14", access: full, locator: "sponsor segment in show notes"}
+    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: "Grow Therapy engineering blog", type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026-08", access: full, locator: "'How it runs on AWS', 'Multi-phase analysis', 'Handling noise', 'Lessons from building this', 'Where it stands today' (post undated; published by 2026-08-19, when DEW #167 featured it)"}
+    - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "item on the Grow Therapy post (summary and cost caveat)"}
+    - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: "Forrester", type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'Inching Toward Autonomy, One Advanced Automation At A Time'"}
+    - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: "SecurityWeek", type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
+    - {ref: ARXIV-2604.19533, title: "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2604.19533", date: "2026-04-21", access: full, locator: "abstract"}
+    - {ref: ARXIV-2509.23571, title: "Benchmarking LLM-Assisted Blue Teaming via Standardized Threat Hunting (ICML 2026)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2509.23571", date: "2025-09-28", access: full, locator: "abstract (v3 revised 2026-05-28)"}
+    - {ref: USENIX-LOGINJECT-2026, title: "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation (USENIX Security '26)", publisher: "USENIX Association", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai", date: "2026-08", access: full, locator: "abstract on the technical sessions listing"}
+    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "abstract"}
+    - {ref: RISKYBIZ-SOAPBOX109-2026, title: "Soap Box: Using threat hunting to drive detection (sponsored; show notes)", publisher: "Risky Business Media", type: podcast, url: "https://risky.biz/SOAPBOX109/", date: "2026-07-08", access: full, locator: "show notes"}
+    - {ref: RISKYBIZ-855-2026, title: "Risky Business #855 (show notes, sponsor interview with Corelight)", publisher: "Risky Business Media", type: podcast, url: "https://risky.biz/RB855/", date: "2026-10-14", access: full, locator: "sponsor segment in show notes"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-11, with governance-09 (negative independent evidence on autonomous hunting) and governance-15
-    (hardening against attacker-influenced content) folded in as guardrails. Grade A on the cost table and the
-    before-and-after finding counts, which are the company's own tracked data; the noise shares (about 40%; about one
-    third of confirmed findings dismissible with 30 seconds of context) are the team's estimates and are labelled so.
-    Single company, own definitions, self-reported. The hunts are log-based and not all are intelligence-driven. The
-    post is undated (date recorded as 2026); Detection Engineering Weekly featured it on 2026-08-19. The cost figures
-    count as measured because the post says token usage and cost are logged per hunt and reported weekly. The adversarial dismissal phase is also
-    security-operations-07 (evidence-gated dismissal). Hardening against injected content: see security-ai-security-13
-    and security-incident-response-09.
+    Negative independent evidence on autonomous hunting and hardening against attacker-influenced content are folded
+    in as guardrails. Grade A on the cost table and the before-and-after finding counts, which are the company's own
+    tracked data; the noise shares (about 40%; about one third of confirmed findings dismissible with 30 seconds of
+    context) are the team's estimates and are labelled so. Single company, own definitions, self-reported. The hunts
+    are log-based and not all are intelligence-driven. The post is undated (date recorded as 2026); Detection
+    Engineering Weekly featured it on 2026-08-19. The cost figures count as measured because the post says token usage
+    and cost are logged per hunt and reported weekly. The adversarial dismissal phase is also security-operations-07
+    (evidence-gated dismissal). Hardening against injected content: see security-ai-security-13 and
+    security-incident-response-09.
 
 - id: security-threat-intelligence-22
   title: Always-on investigation agent that finds missed malicious activity and writes explainable detections using threat intelligence
@@ -1274,14 +1258,14 @@
   evidence_grade: A
   sources:
     - {ref: ARXIV-2605.20896, title: "GenAI-Driven Threat Detection with Microsoft Security Copilot", publisher: "arXiv (Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2605.20896", date: "2026-05-20", access: full, locator: "abstract"}
-    - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Dynamic Threat Detection Agent section (page ms.date 2026-05-12; updated August 2026)"}
+    - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Dynamic Threat Detection Agent section (page ms.date 2026-05-12; updated August 2026)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-13. Grade A: Microsoft reports precision from tracked customer feedback over 120 days. The authors
-    are Microsoft staff writing about Microsoft's product, so figures are vendor-published; customers are not named,
-    and only the abstract was read. The paper says the agent runs across tens of thousands of Defender customers. An
-    offline evaluation reports F1 0.78 with GPT-5.4 for recovering hidden malicious activity (+0.12 over GPT-4.1, +0.26
-    over baseline). security-operations points to this entry rather than repeating the agent (see security-operations-14).
+    Grade A: Microsoft reports precision from tracked customer feedback over 120 days. The authors are Microsoft staff
+    writing about Microsoft's product, so figures are vendor-published; customers are not named, and only the abstract
+    was read. The paper says the agent runs across tens of thousands of Defender customers. An offline evaluation
+    reports F1 0.78 with GPT-5.4 for recovering hidden malicious activity (+0.12 over GPT-4.1, +0.26 over baseline).
+    security-operations points to this entry rather than repeating the agent (see security-operations-14).
 
 - id: security-threat-intelligence-23
   title: Machine-learning anomaly surfacing that focuses government threat hunters on federal and critical-infrastructure network data
@@ -1316,16 +1300,16 @@
     (CISA-AIUC-2024, DHS-2403).
   evidence_grade: B
   sources:
-    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "SOC Network Anomaly Detection (DHS 2403), stage 'Operation and Maintenance'; Critical Infrastructure Network Anomaly Detection (DHS-106), stage 'Initiation' (read through a text mirror)"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: "CISA", type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "SOC Network Anomaly Detection (DHS 2403), stage 'Operation and Maintenance'; Critical Infrastructure Network Anomaly Detection (DHS-106), stage 'Initiation' (read through a text mirror)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-23. Rewritten in verification: synthesis cited the January 2026 DHS AI use case inventory
-    (dhs.gov/ai/use-case-inventory/cisa) for CyberSentry (DHS-106) as deployed and the Einstein capability (DHS-2403) as
-    retired, and it attributed the 'terabytes' problem statement to DHS-106. That page returned HTTP 403 directly and
-    through the text mirror on 2026-10-17. CISA's own December 2024 page puts the terabytes statement under DHS-2403,
-    lists DHS-2403 in operation and DHS-106 at initiation, and names anomaly detection, regression and generative AI
-    among both capabilities' techniques. Grade B rests on DHS-2403 as a named deployment on CISA's own page; if the 2026
-    inventory's retirement of DHS-2403 is confirmed, this entry should be re-dated and its maturity reviewed.
+    CISA's own December 2024 page puts the 'terabytes' problem statement under the Einstein capability (DHS-2403),
+    lists DHS-2403 in operation and CyberSentry (DHS-106) at initiation, and names anomaly detection, regression and
+    generative AI among both capabilities' techniques. The January 2026 DHS AI use case inventory
+    (dhs.gov/ai/use-case-inventory/cisa), cited elsewhere as listing DHS-106 as deployed and DHS-2403 as retired,
+    could not be opened on 2026-10-17 (HTTP 403 directly and through a text mirror). Grade B rests on DHS-2403 as a
+    named deployment on CISA's own page; if the 2026 inventory's retirement of DHS-2403 is confirmed, this entry
+    should be re-dated and its maturity reviewed.
 
 - id: security-threat-intelligence-24
   title: Model providers' threat intelligence teams using their own models to investigate and disrupt misuse
@@ -1363,16 +1347,16 @@
     that may become a multi-person collections function (OPENAI-JOBII-2025; ANTHROPIC-JOBTIE-2026).
   evidence_grade: B
   sources:
-    - {ref: ANTHROPIC-GTG1002-2025, title: "Disrupting an AI-orchestrated cyber espionage campaign", publisher: Anthropic, type: vendor, url: "https://www.anthropic.com/news/disrupting-AI-espionage", date: "2025-11-13", access: full, locator: "section on why continue to develop and release models"}
-    - {ref: ANTHROPIC-TIR-2026, title: "Countering misuse of AI: September 2026", publisher: Anthropic, type: vendor, url: "https://www.anthropic.com/threat-intelligence-report-september-2026", date: "2026-09-10", access: full, locator: "introduction"}
-    - {ref: OPENAI-JOBII-2025, title: "Full-Stack Software Engineer, Intelligence & Investigations (job posting)", publisher: OpenAI, type: job-posting, url: "https://jobs.ashbyhq.com/openai/52c72cb9-7c44-4cba-b440-e05262a38491", date: "2025-11-12", access: full, locator: "About the Team; About the Role"}
-    - {ref: OPENAI-JOBTTI-2026, title: "Technical Threat Investigator, Threat Intel Engineering (job posting)", publisher: OpenAI, type: job-posting, url: "https://jobs.ashbyhq.com/openai/f01b7084-a68d-4e30-ace9-6b5e6d90c517", date: "2026-04-30", access: full, locator: "About the Role; responsibilities"}
-    - {ref: ANTHROPIC-JOBTCTI-2026, title: "Technical Cyber Threat Investigator (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5066995008", date: "2026-01-13", access: full, locator: "About the Role"}
-    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "About the Role"}
+    - {ref: ANTHROPIC-GTG1002-2025, title: "Disrupting an AI-orchestrated cyber espionage campaign", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/disrupting-AI-espionage", date: "2025-11-13", access: full, locator: "section on why continue to develop and release models"}
+    - {ref: ANTHROPIC-TIR-2026, title: "Countering misuse of AI: September 2026", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/threat-intelligence-report-september-2026", date: "2026-09-10", access: full, locator: "introduction"}
+    - {ref: OPENAI-JOBII-2025, title: "Full-Stack Software Engineer, Intelligence & Investigations (job posting)", publisher: "OpenAI", type: job-posting, url: "https://jobs.ashbyhq.com/openai/52c72cb9-7c44-4cba-b440-e05262a38491", date: "2025-11-12", access: full, locator: "About the Team; About the Role"}
+    - {ref: OPENAI-JOBTTI-2026, title: "Technical Threat Investigator, Threat Intel Engineering (job posting)", publisher: "OpenAI", type: job-posting, url: "https://jobs.ashbyhq.com/openai/f01b7084-a68d-4e30-ace9-6b5e6d90c517", date: "2026-04-30", access: full, locator: "About the Role; responsibilities"}
+    - {ref: ANTHROPIC-JOBTCTI-2026, title: "Technical Cyber Threat Investigator (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5066995008", date: "2026-01-13", access: full, locator: "About the Role"}
+    - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: "Anthropic", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "About the Role"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged practice-20 (C) and governance-18 (B). Grade B: a named organization's own statement of use without
-    measurement. Change scope 'model' because provider-side misuse intelligence is a new CTI function, not a faster
-    version of an existing one. Conflict note: Anthropic makes the model whose use it describes, and this file was
-    compiled by an Anthropic model, so treat as vendor evidence. The adversary content of these reports is routed to
-    ai-security; detecting model-extraction campaigns against hosted models is security-ai-security-15.
+    Grade B: a named organization's own statement of use without measurement. Change scope 'model' because
+    provider-side misuse intelligence is a new CTI function, not a faster version of an existing one. Conflict note:
+    Anthropic makes the model whose use it describes, and also makes the model behind this advisor, so treat as vendor
+    evidence. The adversary content of these reports belongs to ai-security; detecting model-extraction campaigns
+    against hosted models is security-ai-security-15.

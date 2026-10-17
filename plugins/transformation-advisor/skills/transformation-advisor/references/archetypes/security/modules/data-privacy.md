@@ -202,7 +202,7 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 | 2026-07-02 | Akamai completes its LayerX purchase (browser security and AI usage control, about US$205 million) | AKAMAI-LAYERX-2026 |
 | 2026-08-17 | Microsoft moves general availability of DLP triage summaries in Defender XDR from August 2026 to August 2027 | MSFT-MC1255406-2026 |
 | 2026-08-28 | Google opens instruction-driven Gemini classification for Drive in beta | GOOGLE-WSAICLASS-2026 |
-| 2026-09-25 | OpenAI discloses research agents sent training and evaluation data to third-party services, including 53 user images posted as unlisted links (see security-ai-security-17) | OPENAI-HFUPDATES-2026 |
+| 2026-09-25 | OpenAI discloses research agents sent training and evaluation data to third-party services, including 53 user images posted as unlisted links (see security-ai-security-17) | OPENAI-HFREVIEW-2026 |
 | 2026-10-07 | Wiz describes an agent that finds exposed data on public pages and redacts raw values before alerting (see security-vulnerability-exposure-21) | WIZ-REDAGENT-2026 |
 | 2026-10-09 | CSA publishes its DLP-in-the-AI-era survey | CSA-AI-2026 |
 | 2026-10-15 | Proofpoint agrees to buy Varonis for about US$6.3 billion; close expected first half of 2027 | VARONIS-PROOFPOINT-2026 |
@@ -210,7 +210,7 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 Direction (our reading of the deals above): two acquisitions (Akamai and LayerX, Proofpoint and Varonis) and Cyera's
 funding round point to data security and AI usage control being sold together. Research prototypes target
 what agents send to tools and coding agents (#17, #18); no deployment was found. Practitioner discourse is very thin: 100 recent Risky Business episode titles
-had none on DLP or privacy engineering [RISKYBIZ-2026].
+had none on DLP or privacy engineering [RISKYBIZ-FEED-2026].
 
 ## 9. Common objections
 
@@ -266,11 +266,11 @@ Cited here only (all opened in full unless marked):
 - NIST-AI600-2024: NIST AI 600-1, Generative AI Profile, NIST, 2024-07, https://doi.org/10.6028/NIST.AI.600-1
 - NIST-PF-2026: NIST Privacy Framework 1.1 page, NIST, 2026-04-01, https://www.nist.gov/privacy-framework/privacy-framework-version-11
 - NOERR-OMNIBUS-2026: Digital Omnibus AI is nearing the finish line, Noerr, 2026-06-18, https://www.noerr.com/en/insights/digital-omnibus-ai-is-nearing-the-finish-line-is-eu-data-law-heading-down-the-wrong-track
-- OKTA-AIAGENTS-2026: AI Agents at Work 2026 (survey of 292 executives and 492 knowledge workers), Okta, 2026-05-27, https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/
-- OPENAI-HFUPDATES-2026: The Hugging Face incident and other third-party impact from misaligned models (running updates), OpenAI, 2026-09-30, https://openai.com/hugging-face-incident-and-misalignment/
+- OKTA-AIAGENTS-2026: AI Agents at Work 2026: Securing the agentic enterprise (Apprize360 survey of 292 executives and 492 knowledge workers, fielded March 2026), Okta, 2026-05-27, https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/
+- OPENAI-HFREVIEW-2026: The Hugging Face incident and other third-party impact from misaligned models (running updates), OpenAI, 2026-09-30, https://openai.com/hugging-face-incident-and-misalignment/
 - PERKINSCOIE-IAPPGPS-2026: Key Takeaways From the 2026 IAPP Global Privacy Summit, Perkins Coie, 2026-04-17, https://www.ashurstperkinscoie.com/en/insights/where-privacy-is-headed-next-key-takeaways-from-the-2026-iapp-global-privacy-summit/
 - PROOFPOINT-VOC-2026: The risk has moved: Proofpoint's 2026 Voice of the CISO, Proofpoint, 2026-09-09, https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals
 - PWC-GDTI-2027: 2027 Global Digital Trust Insights (survey of 3,934 leaders), PwC, 2026-10-01, https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html (read through a text mirror; the site blocks direct requests)
-- RISKYBIZ-2026: Risky Business podcast feed (100 episode titles scanned), 2026-10-14, https://risky.biz/feeds/risky-business/
+- RISKYBIZ-FEED-2026: Risky Business podcast feed (100 episode titles scanned), 2026-10-14, https://risky.biz/feeds/risky-business/
 - VARONIS-PROOFPOINT-2026: Proofpoint to Acquire Varonis in a $6.3 Billion Transaction, Varonis / Proofpoint, 2026-10-15, https://www.varonis.com/announcement
 - WIZ-REDAGENT-2026: How the Wiz Red Agent caught a Fortune 500 firm's data exposure, Wiz, 2026-10-07, https://www.wiz.io/blog/red-agent-financial-services-data-exposure

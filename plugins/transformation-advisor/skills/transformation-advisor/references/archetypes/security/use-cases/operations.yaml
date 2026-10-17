@@ -1,16 +1,13 @@
 # Use cases: security / operations (SOC: detection engineering, alert triage, investigation, case management,
-# response actions, MDR). Synthesised 2026-10-17 from the wave-4 landscape scan and the practice, discourse and
-# governance deep dives, plus items other security modules routed to operations. Sources were opened by the
-# researchers (access: full) unless marked search-only; most papers were read at abstract level.
-# Canonical refs: ELASTIC-ACCURACY-2026 is the same post the inputs also call ELASTIC-TRIAGE-2026 and
-# ELASTIC-AGENTICSOC-2026; EXPEL-PRECEDENT-2026 is the precedent-engine post (EXPEL-RUXIE-2026 in the discourse file;
-# here EXPEL-RUXIE-2026 is Expel's AI product page); CSA-SOCBENCH-2025 = CSA-BENCH-2025; CSA-SOCBENCH-PR-2025 =
-# CSA-DROPZONE-2025; ARXIV-2604.12040 = AWS-SIRBENCH-2026; HUGGINGFACE-INCIDENT-2026 = HF-DISCLOSURE-2026;
-# GOOGLE-TIN-2026 = GOOGLE-SECOPS-TIN-2026.
-# Almost every outcome figure is self-reported or vendor-published. Grades follow the 2026-10-17 grade A rule: figures
-# that customers state in a vendor-written case study are grade B.
-# Verified 2026-10-17 against every cited source (see research/runs/wave4/operations-verification-report.md); CISA,
-# SEC and Sophos pages were read through a text mirror because direct requests were blocked.
+# response actions, MDR). Sources checked 2026-10-17. Sources were opened in full unless marked search-only; most
+# papers were read at abstract level. CISA, SEC and Sophos pages were read through a text mirror because direct
+# requests were blocked. EXPEL-PRECEDENT-2026 is Expel's precedent-engine post; EXPEL-RUXIE-2026 is Expel's AI
+# product page.
+# Almost every outcome figure is self-reported or vendor-published. Figures that customers state in a vendor-written
+# case study are graded B, not A.
+# Overlaps, referenced by id: provenance-graph investigation (security-incident-response-07), guardrailed containment
+# playbooks (security-incident-response-11), hunting agents (security-threat-intelligence-21, -22), report-to-rule
+# generation (security-threat-intelligence-14).
 
 - id: security-operations-01
   title: "Context-grounded agentic triage pipeline: deterministic checks first, narrow agents, and the case built before an analyst opens it"
@@ -72,10 +69,9 @@
     - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "'Detection Skills by Vega Threat Research'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-01, discourse-02 and discourse-21. Elastic is both the vendor and the deploying SOC, so all
-    figures are self-reported. Correctness is agreement with the analyst's close reason, so it inherits analyst error.
-    The 60% baseline is the earlier set-up without past-case context; the separate effect of investigation guides is
-    not reported. The discourse file cites the same post at a /security-labs/blog/ URL.
+    Elastic is both the vendor and the deploying SOC, so all figures are self-reported. Correctness is agreement with
+    the analyst's close reason, so it inherits analyst error. The 60% baseline is the earlier set-up without past-case
+    context; the separate effect of investigation guides is not reported.
 
 - id: security-operations-02
   title: Precedent retrieval that shows the analyst how similar alerts were closed before
@@ -121,8 +117,8 @@
     - {ref: EXPEL-PRECEDENT-2026, title: "New Ruxie AI power-up: Precedent engine turns repetitive alerts into faster decisions", publisher: "Expel", type: vendor, url: "https://expel.com/blog/new-ruxie-ai-power-up-precedent-engine/", date: "2026-09-10", access: full, locator: "'How it works'; 'Higher signal, less noise'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-02 and discourse-01. Grade A rests on Figma's self-reported single-change figure. Expel is
-    both vendor and operator; its post describes planned rollout phases and publishes targets, not results.
+    Grade A rests on Figma's self-reported single-change figure. Expel is both vendor and operator; its post describes
+    planned rollout phases and publishes targets, not results.
 
 - id: security-operations-03
   title: Triage agent inside the SIEM proposes a disposition, rationale and next steps for each finding; an analyst decides
@@ -176,13 +172,12 @@
     - {ref: SPLUNK-RSACSOC-2026, title: "From Live Event Telemetry to Action: Lessons from the 10th RSAC SOC", publisher: "Splunk", type: vendor, url: "https://www.splunk.com/en_us/blog/security/lessons-from-the-10th-rsac-soc.html", date: "2026-08-24", access: full, locator: "Opening section; closing list of patterns"}
     - {ref: SPLUNK-BHUSA-2026, title: "Black Hat USA 2026: Proving the Splunk ES Foundation for the Agentic SOC", publisher: "Splunk", type: vendor, url: "https://www.splunk.com/en_us/blog/security/black-hat-usa-2026-proving-the-splunk-es-foundation-for-the-agentic-soc.html", date: "2026-09-23", access: full, locator: "'From Detections to Findings to Agentic Triage'"}
     - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Security Alert Triage Agent section"}
-    - {ref: FIRST-CON-2026, title: "38th Annual FIRST Conference program and session abstracts", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "Session 'CoAnalyst: An AI-Driven Framework for Enhanced SOC Triage' (Cisco), abstract only"}
+    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "Session 'CoAnalyst: An AI-Driven Framework for Enhanced SOC Triage' (Cisco), abstract only"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-07, practice-08, discourse-07 and governance-01 (the last three describe the same Cisco/Splunk
-    event SOC). Grade B: named deployments, no accuracy or override rate published. The RSAC 2026 saving of more than
-    nine analyst hours came from a deterministic SOAR playbook, not from AI, and is not used here. A BBVA testimonial
-    for Google's agent was seen only in search results and is not used.
+    Grade B: named deployments, no accuracy or override rate published. The RSAC 2026 saving of more than nine analyst
+    hours came from a deterministic SOAR playbook, not from AI, and is not used here. A BBVA testimonial for Google's
+    agent was seen only in search results and is not used.
 
 - id: security-operations-04
   title: Agent triages user-reported phishing emails and resolves the false alarms
@@ -224,8 +219,8 @@
     - {ref: TORQ-SERIESD-2026, title: "Torq Secures $140M Series D at $1.2B Valuation to Lead the AI SOC and Agentic AI Era", publisher: "Torq", type: vendor, url: "https://torq.io/news/torq-seriesD/", date: "2026-01-12", access: full, locator: "Valvoline CISO quote"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-03. Microsoft's pages name no customer; Valvoline is a Torq customer, not necessarily a user of
-    Microsoft's agent. The two sources describe different products with the same pattern.
+    Microsoft's pages name no customer; Valvoline is a Torq customer, not necessarily a user of Microsoft's agent. The
+    two sources describe different products with the same pattern.
 
 - id: security-operations-05
   title: An AI SOC analyst investigates every Tier-1 alert and closes the benign majority (MSSPs and lean in-house teams)
@@ -277,9 +272,8 @@
     - {ref: CYBERPROOF-CASE-2026, title: "Case study: Improving SOC investigation consistency and reducing MTTR by 60%+ with agentic AI investigation", publisher: "CyberProof", type: vendor, url: "https://go.cyberproof.com/hubfs/Case_Studies/Case_study_Agentic_AI_Improving_SOC.pdf", date: "2026-05", access: full, locator: "Benefits column, p. 2 (MTTR 16 to 6 minutes); human-in-the-loop and QA paragraphs, p. 3 (PDF created 2026-05-20)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-04 and practice-05, plus CyberProof (routed from incident-response practice). Graded B under
-    the 2026-10-17 rule: the figures are customers' statements in vendor-written case studies with no stated method.
-    An unnamed European MSSP (same vendor) reports proof-of-concept accuracy of 'approximately 90 to 95 percent' and
+    Graded B, not A: the figures are customers' statements in vendor-written case studies with no stated method. An
+    unnamed European MSSP (same vendor) reports proof-of-concept accuracy of 'approximately 90 to 95 percent' and
     better margins from serving more customers without proportional staffing; treat as a vendor claim. Prophet's
     Cabinetworks case study reports a queue 'from thousands to dozens' (vendor-authored, not used as an outcome).
 
@@ -339,10 +333,9 @@
     - {ref: SANS-AI-2026, title: "A SOC Leader's Guide to the 2026 SANS AI Survey", publisher: "Swimlane", type: vendor, url: "https://swimlane.com/blog/sans-ai-2026-soc-trust/", date: "2026-05-18", access: full, locator: "TL;DR; 'Where Automation Actually Earns Trust'; 'Trust Requires Context'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-08, discourse-09, discourse-10, governance-05 and governance-15. Grade C: vendor research on
-    its own data and academic results; no named SOC reports measured auto-closure through this design. The decision
-    model category was weeks old at the time of writing. The Swimlane page shows a display date of 2026-08-17; its
-    metadata carries 2026-05-18.
+    Grade C: vendor research on its own data and academic results; no named SOC reports measured auto-closure through
+    this design. The decision model category was weeks old at the time of writing. The Swimlane page shows a display
+    date of 2026-08-17; its metadata carries 2026-05-18.
 
 - id: security-operations-07
   title: Evidence-gated dismissal - an independent challenge must produce counter-evidence before an agent may dismiss a finding
@@ -383,16 +376,16 @@
     Analysts see fewer, better-qualified findings (GROWTHERAPY-HUNT-2026).
   evidence_grade: B
   sources:
-    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: "Grow Therapy engineering", type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026-08", access: full, locator: "'Phase 5: Adversarial validation'; 'Handling noise' (page carries no date; linked by DETENGWEEKLY-167-2026 on 2026-08-19)"}
+    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: "Grow Therapy engineering blog", type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026-08", access: full, locator: "'Phase 5: Adversarial validation'; 'Handling noise' (page carries no date; linked by DETENGWEEKLY-167-2026 on 2026-08-19)"}
     - {ref: SLACK-AGENTS-2025, title: "Streamlining Security Investigations with Agents", publisher: "Slack Engineering", type: firm, url: "https://slack.engineering/streamlining-security-investigations-with-agents/", date: "2025-12-01", access: full, locator: "'Critic Agent'"}
-    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract (submitted 7 Oct 2026)"}
+    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv (Tsegai, Kantchelian, Yao et al.)", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract (submitted 7 Oct 2026)"}
     - {ref: ARXIV-2510.00311, title: "CORTEX: Collaborative LLM Agents for High-Stakes Alert Triage", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2510.00311", date: "2025-09-30", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-06 and governance-04. The discourse file graded this A; it is B here because Grow Therapy's
-    figures are approximations ('about') and the benchmark is a research prototype, not a deployment. arXiv shows
-    ARXIV-2610.10608 submitted on 2026-10-07 (checked at verification).
-    Overlaps: Grow Therapy's adversarial phase also appears in security-threat-intelligence-21 (hunting), and the AIDA design as a guardrail in security-incident-response-11.
+    Graded B, not A: Grow Therapy's figures are approximations ('about') and the benchmark is a research prototype,
+    not a deployment. arXiv shows ARXIV-2610.10608 submitted on 2026-10-07. Overlaps: Grow Therapy's adversarial phase
+    also appears in security-threat-intelligence-21 (hunting), and the AIDA design appears as a guardrail in
+    security-incident-response-09.
 
 - id: security-operations-08
   title: "A 'SOCless' model: AI investigates all alerts and on-call engineers are paged only for serious events"
@@ -430,8 +423,8 @@
     - {ref: DROPZONE-MYSTEN-2026, title: "How Mysten Labs Eliminated Toil and Scaled Security With Dropzone AI", publisher: "Dropzone AI", type: vendor, url: "https://www.dropzone.ai/case-studies/how-mysten-labs-eliminated-toil-and-scaled-security-with-dropzone-ai", date: "2026-01-28", access: full, locator: "Results section (date is sitemap last-modified)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-06, which graded it A; graded B here under the 2026-10-17 rule (company statements in a vendor-written
-    case study). A very small, all-senior team; likely not typical.
+    Graded B, not A: company statements in a vendor-written case study. A very small, all-senior team; likely not
+    typical.
 
 - id: security-operations-09
   title: An agent investigates the alert end to end across identity, endpoint, cloud and data-lake sources; on-call staff supervise and correct
@@ -480,10 +473,10 @@
     - {ref: DETENGWEEKLY-166-2026, title: "DEW #166 - Figma's Agentic SecOps, AI-EDRs and Anthropic Evals Breaking into Companies", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-166-figmas-agentic-secops-ai", date: "2026-08-05", access: full, locator: "Detection Engineering Gem"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-03 and discourse-04. Figma's figures are single-team and self-reported; the headline and
-    body figures differ. Slack describes itself as 'at an early phase'. Figma's 20% drop in on-call pages is recorded
-    in security-operations-02. The provenance-graph investigation agent SherAgent (governance-06) is not repeated here:
-    see security-incident-response-08, which holds its production audit data.
+    Figma's figures are single-team and self-reported; the headline and body figures differ. Slack describes itself as
+    'at an early phase'. Figma's 20% drop in on-call pages is recorded in security-operations-02. The provenance-graph
+    investigation agent SherAgent is not repeated here: see security-incident-response-07, which holds its production
+    audit data.
 
 - id: security-operations-10
   title: Agent prepares the investigation and the analyst makes the call, measured in controlled studies
@@ -531,9 +524,8 @@
     - {ref: NDSS-WOSOC-2026, title: "Experiences of Using Agentic AI to Fill Tooling Gaps in a Security Operations Center", publisher: "NDSS Symposium (WOSOC 2026)", type: academic, url: "https://www.ndss-symposium.org/wp-content/uploads/wosoc26-02.pdf", date: "2026-02-23", access: full, locator: "Abstract; Table I; limitations"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-16, discourse-23 and governance-02. The governance file graded this A; the other two capped it
-    at B. Kept at B: the study is measured but simulated, vendor-supported and not a production deployment. The full CSA
-    report was not opened; figures are from the CSA press release and the vendor's blog.
+    Graded B, not A: the study is measured but simulated, vendor-supported and not a production deployment. The full
+    CSA report was not opened; figures are from the CSA press release and the vendor's blog.
 
 - id: security-operations-11
   title: Agent-written investigation narratives help new analysts work above their experience level
@@ -570,7 +562,7 @@
     - {ref: PROPHET-CABINET-2026, title: "Cabinetworks: Revolutionizing SOC efficiency with Prophet AI", publisher: "Prophet Security", type: vendor, url: "https://www.prophetsecurity.ai/case-studies/cabinetworks-revolutionizing-soc-efficiency-with-prophet-ai", date: "2026-04-30", access: full, locator: "Benefits section (date is sitemap last-modified)"}
     - {ref: ARXIV-2503.02065, title: "Too Much to Trust? Measuring the Security and Cognitive Impacts of Explainability in AI-Driven SOCs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2503.02065", date: "2025-03-03", access: full, locator: "Abstract (survey of 248, 24 interviews)"}
   last_reviewed: "2026-10-17"
-  notes: "From practice-09. Qualitative and vendor-authored."
+  notes: "Qualitative and vendor-authored."
 
 - id: security-operations-12
   title: Analyst copilot and chat assistants for queries, log analysis, threat explanation and incident summaries
@@ -589,7 +581,7 @@
   solution: >-
     A copilot built into the XDR portal aggregates incident information into readable form and answers natural-language
     queries (Microsoft Security Copilot). Swimlane's reading of the SANS AI survey is that adoption comes easiest in log
-    analysis, explaining threats and report writing. The governance deep dive proposes, as an idea no organisation
+    analysis, explaining threats and report writing. One proposal, an idea no organisation
     reports yet, approved assistants grounded in the SOC's runbooks, with logging and a validation routine, in place of
     ad hoc personal use. Hugging Face advises having a capable self-hostable model vetted before an incident.
   outcomes:
@@ -603,7 +595,7 @@
     - "The study authors say selection into treatment prevents causal identification (MSFT-BONO-2024)"
     - "SANS: most analysts use AI individually, without organisational structure or systematic validation (SANS-SOC-2026)"
     - "A BSides 2026 talk abstract reports safety filters blocked legitimate defender prompts hundreds of times while letting malicious ones through (BSIDESLV-2026)"
-    - "Hosted-model safety filters blocked Hugging Face's forensic analysis of real attack commands; it ran an open-weight model on its own infrastructure, which also kept attacker data in its environment (HUGGINGFACE-INCIDENT-2026)"
+    - "Hosted-model safety filters blocked Hugging Face's forensic analysis of real attack commands; it ran an open-weight model on its own infrastructure, which also kept attacker data in its environment (HF-DISCLOSURE-2026)"
     - "A law-firm summary of IBM's 2026 report says incidents involving employee shadow AI rose to 43% from 20%; it concerns staff generally, not SOC analysts (BAKERDONELSON-IBM-2026)"
   human_checkpoints:
     - "The analyst remains the decision-maker and the author of the work"
@@ -615,16 +607,15 @@
     - {ref: MSFT-BONO-2024, title: "Generative AI and Security Operations Center Productivity: Evidence from Live Operations", publisher: "arXiv (Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2411.03116", date: "2024-11-05", access: full, locator: "Abstract; data and method section"}
     - {ref: SANS-SOC-2026, title: "SANS 2026 SOC Report: A Decade of Evolution in Cyber Defense", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/research/security-operations-report", date: "2026", access: full, locator: "Top takeaways; FAQ (landing page; report body not opened)"}
     - {ref: SANS-AI-2026, title: "A SOC Leader's Guide to the 2026 SANS AI Survey", publisher: "Swimlane", type: vendor, url: "https://swimlane.com/blog/sans-ai-2026-soc-trust/", date: "2026-05-18", access: full, locator: "'The Gap Between Adoption and Maturity'; 'Trust Requires Context'"}
-    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks: 'Agents Under Fire'", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "Talk abstract (Ground Truth track)"}
-    - {ref: HUGGINGFACE-INCIDENT-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: firm, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraphs on log analysis and 'The practical lesson for defenders'"}
+    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks (abstracts)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "Talk 'Agents Under Fire'; Talk abstract (Ground Truth track)"}
+    - {ref: HF-DISCLOSURE-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: vendor, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraphs on log analysis and 'The practical lesson for defenders'"}
     - {ref: BAKERDONELSON-IBM-2026, title: "Ten Takeaways from IBM's 2026 Cost of a Data Breach Report", publisher: "Baker Donelson", type: press, url: "https://www.bakerdonelson.com/ten-takeaways-from-ibms-2026-cost-of-a-data-breach-report", date: "2026-07-30", access: full, locator: "Takeaway 6"}
     - {ref: DETENGWEEKLY-165-2026, title: "DEW #165 - Starved & Neglected Rules, Agentic IR Notebooks and Hacker Summer Camp", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-165-starved-and-neglected-rules", date: "2026-07-29", access: full, locator: "'The Arguments Against Open Source AI are Very Bad'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-15, discourse-19, governance-17 (an idea, folded in as a guardrail) and discourse-15 (Hugging
-    Face's self-hosted forensic model, also routed to incident-response). The Microsoft study uses 2024 data, is
-    observational and vendor-authored, but is the largest live-operations measurement found for this module.
-    Overlaps: holding a vetted self-hosted model ready is a use case in its own right in security-incident-response-03.
+    The Microsoft study uses 2024 data, is observational and vendor-authored, but is the largest live-operations
+    measurement found for this module. Overlaps: holding a vetted self-hosted model ready (Hugging Face's advice) is a
+    use case in its own right in security-incident-response-03.
 
 - id: security-operations-13
   title: Agent drafts the investigation report and case write-up for analyst sign-off
@@ -666,11 +657,11 @@
     - {ref: EXPEL-RUXIE-2026, title: "Ruxie, Expel's AI for cybersecurity", publisher: "Expel", type: vendor, url: "https://expel.com/ai-automation/", date: "2026-10-14", access: full, locator: "Incident report paragraph (page modified date; first published 2025-07-31)"}
     - {ref: ELASTIC-ACCURACY-2026, title: "Inside Elastic's agentic SOC: How we took AI alert triage from 60% to 92% accuracy", publisher: "Elastic Security Labs", type: vendor, url: "https://www.elastic.co/security-labs/alert-triage-agentic-soc-self-correcting-agents", date: "2026-08-25", access: full, locator: "'When your AI SOC analyst is wrong 40% of the time'"}
     - {ref: ARXIV-2608.00672, title: "From Chasing Ghosts to Missed Attacks: Perspectives and Perceptions of SOC Practitioners on LLM Integration, Risks, and Readiness", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.00672", date: "2026-08-01", access: full, locator: "Abstract (25 interviews)"}
-    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-12 and governance-14. No named SOC reports measured time saved on reporting. The CSA study's
-    drop in manual analysts' report detail is in security-operations-10.
+    No named SOC reports measured time saved on reporting. The CSA study's drop in manual analysts' report detail is
+    in security-operations-10.
 
 - id: security-operations-14
   title: LLM triage of anomaly and correlation signals surfaces an intrusion that no single rule flagged
@@ -693,27 +684,25 @@
     without rules, and Microsoft's always-on detection agent, are in the threat-intelligence module
     (security-threat-intelligence-21 and -22).
   outcomes:
-    - {lever: risk, description: "The disclosure credits AI-assisted detection with surfacing the compromise", figure: "none published", measures: "no detection-rate figure", provenance: self-reported, source_ref: HUGGINGFACE-INCIDENT-2026}
+    - {lever: risk, description: "The disclosure credits AI-assisted detection with surfacing the compromise", figure: "none published", measures: "no detection-rate figure", provenance: self-reported, source_ref: HF-DISCLOSURE-2026}
   prerequisites:
-    - "A telemetry pipeline feeding the triage model (HUGGINGFACE-INCIDENT-2026)"
+    - "A telemetry pipeline feeding the triage model (HF-DISCLOSURE-2026)"
     - "Alerting that pages a responder for high-severity signals at any hour"
   risks_and_guardrails:
-    - "Detection that pages no one is not enough: a practitioner summarised in tl;dr sec says Hugging Face's sensors caught the activity but never paged anyone because each action looked like normal workload (TLDRSEC-348-2026); Hugging Face afterwards changed alerting so a high-severity signal pages a responder within minutes (HUGGINGFACE-INCIDENT-2026)"
-    - "After the event Hugging Face added guardrails and stricter admission controls on its clusters (HUGGINGFACE-INCIDENT-2026)"
+    - "Detection that pages no one is not enough: a practitioner summarised in tl;dr sec says Hugging Face's sensors caught the activity but never paged anyone because each action looked like normal workload (TLDRSEC-348-2026); Hugging Face afterwards changed alerting so a high-severity signal pages a responder within minutes (HF-DISCLOSURE-2026)"
+    - "After the event Hugging Face added guardrails and stricter admission controls on its clusters (HF-DISCLOSURE-2026)"
   human_checkpoints:
-    - "Responders handled containment and assessment (HUGGINGFACE-INCIDENT-2026)"
+    - "Responders handled containment and assessment (HF-DISCLOSURE-2026)"
   role_evolution: "Not described in the source."
   evidence_grade: B
   sources:
-    - {ref: HUGGINGFACE-INCIDENT-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: firm, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraph beginning 'The attack was initially surfaced through AI-assisted detection'"}
-    - {ref: TLDRSEC-348-2026, title: "[tl;dr sec] #348 - Google's PageBreak Scanner, Perplexity's Agent Security Tool, Defending Agentically", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-348", date: "2026-10-01", access: full, locator: "Item on detection fidelity (routed from application-security discourse)"}
+    - {ref: HF-DISCLOSURE-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: vendor, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraph beginning 'The attack was initially surfaced through AI-assisted detection'"}
+    - {ref: TLDRSEC-348-2026, title: "[tl;dr sec] #348 - Google's PageBreak Scanner, Perplexity's Agent Security Tool, Defending Agentically", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-348", date: "2026-10-01", access: full, locator: "Item on detection fidelity"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-14 (also routed here by the ai-security governance-assurance file). One named incident; attribution
-    of the attacking agents is covered in other modules. Discourse-05 (Grow Therapy daily hunts) and practice-20
-    (Microsoft Dynamic Threat Detection Agent) are not repeated: they are security-threat-intelligence-21 and -22.
-    Hunting loops at Daylight Security and Con Edison (SANS DFIR Summit agenda titles, routed from incident-response)
-    were not read beyond titles.
+    One named incident; attribution of the attacking agents is covered in other modules. Grow Therapy's daily hunts
+    and Microsoft's Dynamic Threat Detection Agent are not repeated: they are security-threat-intelligence-21 and -22.
+    Hunting loops at Daylight Security and Con Edison (SANS DFIR Summit agenda titles) were not read beyond titles.
 
 - id: security-operations-15
   title: AI drafts, translates and scores detection rules, with a separate judge model and human code review
@@ -762,10 +751,10 @@
     - {ref: EXPEL-3LEADERS-2026, title: "Why three security leaders still won't let AI make the call", publisher: "Expel", type: vendor, url: "https://expel.com/blog/why-three-security-leaders-still-wont-let-ai-make-the-call/", date: "2026-10-02", access: full, locator: "McIntyre quote on detection engineering and remediation"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-13, practice-14 and governance-12. RuleForge's scope is CVE-exploit rules in Amazon's own
-    format for its honeypot and detection systems, not general SIEM content; it is adjacent to vulnerability-exposure.
-    The Kroll example is stated without scale; Google's agent is in preview. Governance-12's report-to-rule benchmarks
-    (CTI-REALM, SIGMERGE, AUTOSIGMA, Sublime Security) overlap security-threat-intelligence-14 and are not repeated.
+    RuleForge's scope is CVE-exploit rules in Amazon's own format for its honeypot and detection systems, not general
+    SIEM content; it is adjacent to vulnerability-exposure. The Kroll example is stated without scale; Google's agent
+    is in preview. Report-to-rule benchmarks (CTI-REALM, SIGMERGE, AUTOSIGMA, Sublime Security) overlap
+    security-threat-intelligence-14 and are not repeated.
 
 - id: security-operations-16
   title: Coding agents validate detections end to end - write the attack simulation, detonate it in a lab, query the SIEM and retry
@@ -806,7 +795,7 @@
     - {ref: DETENGWEEKLY-169-2026, title: "DEW #169 - Realistic AI SOC evaluation scenarios, tricking EDRs with fake telemetry and Anthropic/OAI cyber eval guardrails", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-169-realistic-ai-soc-evaluation", date: "2026-09-03", access: full, locator: "Item on fabricated EDR telemetry"}
     - {ref: SPLUNK-BHUSA-2026, title: "Black Hat USA 2026: Proving the Splunk ES Foundation for the Agentic SOC", publisher: "Splunk", type: vendor, url: "https://www.splunk.com/en_us/blog/security/black-hat-usa-2026-proving-the-splunk-es-foundation-for-the-agentic-soc.html", date: "2026-09-23", access: full, locator: "Paragraph on automated validation across more than 2,100 public detections"}
   last_reviewed: "2026-10-17"
-  notes: "From discourse-12. Cisco and Splunk also ran detection validation across more than 2,100 public detections during Black Hat 2026 (SPLUNK-BHUSA-2026; no figures on outcomes)."
+  notes: "Cisco and Splunk also ran detection validation across more than 2,100 public detections during Black Hat 2026 (SPLUNK-BHUSA-2026; no figures on outcomes)."
 
 - id: security-operations-17
   title: Triage-to-detection tuning loop - the agent drafts allowlist and rule-change pull requests after an analyst confirms a false positive
@@ -842,7 +831,7 @@
     - {ref: FIGMA-AGENTS-2026, title: "How we secure Figma's internal systems with agents", publisher: "Figma", type: firm, url: "https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/", date: "2026-07-29", access: full, locator: "'From investigation to code changes'; 'Guardrails'"}
     - {ref: ELASTIC-ACCURACY-2026, title: "Inside Elastic's agentic SOC: How we took AI alert triage from 60% to 92% accuracy", publisher: "Elastic Security Labs", type: vendor, url: "https://www.elastic.co/security-labs/alert-triage-agentic-soc-self-correcting-agents", date: "2026-08-25", access: full, locator: "'The AI feedback loop'"}
   last_reviewed: "2026-10-17"
-  notes: "From discourse-11."
+  notes: "Figma and Elastic describe their own systems (self-reported); no figure is published for the tuning loop itself."
 
 - id: security-operations-18
   title: SOC teams build their own agents from playbooks and SOPs in a no-code agent workspace
@@ -870,7 +859,7 @@
   risks_and_guardrails:
     - "Agents are bounded in action scope, versioned, governed by role policies, cost-capped and traceable; teams benchmark agent versions on fixed datasets before promotion (CROWDSTRIKE-AGENTWORKS-2026)"
     - "CrowdStrike lists three reasons agentic SOC efforts fail: fragmented data, isolated agents giving late or wrong verdicts, and ungoverned automation (CROWDSTRIKE-AGSOC-2026)"
-    - "Prophet's survey: 46% of teams that built their own AI tooling abandoned it, never reached production or replaced it (HNS-GARTNER-2026)"
+    - "Prophet's survey: 46% of teams that built their own AI tooling abandoned it, never reached production or replaced it (HELPNET-GARTNER-2026)"
   human_checkpoints:
     - "Per workflow, teams set what runs automatically and what needs approval (CROWDSTRIKE-AGSOC-2026)"
   role_evolution: >-
@@ -880,11 +869,11 @@
   sources:
     - {ref: CROWDSTRIKE-AGENTWORKS-2026, title: "How AI-leading Security Teams Are Building the Agentic SOC", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/blog/how-ai-leading-security-teams-are-building-the-agentic-soc/", date: "2026-07-06", access: full, locator: "Customer examples list; governance paragraph"}
     - {ref: CROWDSTRIKE-AGSOC-2026, title: "CrowdStrike Delivers the Next Evolution of the Agentic SOC", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/blog/crowdstrike-delivers-next-evolution-of-agentic-soc/", date: "2026-09-18", access: full, locator: "Three reasons; unified agentic SOAR workspace (public preview)"}
-    - {ref: HNS-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored, Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Survey section"}
+    - {ref: HELPNET-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored by Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Survey section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-11. Customer statements are quoted by the vendor and give no outcome figures. Several features in the
-    2026-09-18 post are labelled pre-beta or public preview. Pattern 'other': a team-built agent library.
+    Customer statements are quoted by the vendor and give no outcome figures. Several features in the 2026-09-18 post
+    are labelled pre-beta or public preview. Pattern 'other': a team-built agent library.
 
 - id: security-operations-19
   title: Agents propose containment and response actions that run only through a closed set of templated, validated commands
@@ -925,14 +914,14 @@
   evidence_grade: C
   sources:
     - {ref: TECHINFORMED-GOOGLE-2026, title: "Google's SOC agent cuts alert review from 30 minutes to 60 seconds", publisher: "TechInformed", type: press, url: "https://techinformed.com/googles-soc-agent-cuts-alert-review-from-30-minutes-to-60-seconds/", date: "2026-06-16", access: full, locator: "Paragraph on agentic containment and response (preview)"}
-    - {ref: ARXIV-2610.09906, title: "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.09906", date: "2026-10-07", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2610.09906, title: "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy", publisher: "arXiv (Koutidis, Kekatos, Nianios, Lekidis)", type: academic, url: "https://arxiv.org/abs/2610.09906", date: "2026-10-07", access: full, locator: "Abstract"}
     - {ref: EXPEL-3LEADERS-2026, title: "Why three security leaders still won't let AI make the call", publisher: "Expel", type: vendor, url: "https://expel.com/blog/why-three-security-leaders-still-wont-let-ai-make-the-call/", date: "2026-10-02", access: full, locator: "Trust-versus-impact discussion"}
     - {ref: TORQ-SERIESD-2026, title: "Torq Secures $140M Series D at $1.2B Valuation to Lead the AI SOC and Agentic AI Era", publisher: "Torq", type: vendor, url: "https://torq.io/news/torq-seriesD/", date: "2026-01-12", access: full, locator: "Valvoline CISO quote"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-17 and governance-08. Evidence is a preview product, a research design and one customer quote.
-    The paper's authors say the fit for operational technology is architectural, not a measured OT deployment.
-    Overlaps: guardrailed automated containment playbooks after a confirmed incident are security-incident-response-14.
+    Evidence is a preview product, a research design and one customer quote. The paper's authors say the fit for
+    operational technology is architectural, not a measured OT deployment. Overlaps: guardrailed automated containment
+    playbooks after a confirmed incident are security-incident-response-11.
 
 - id: security-operations-20
   title: Per-action authority for SOC agents - score each action before it may run unattended, and keep agent activity observable, attributable and stoppable
@@ -959,7 +948,7 @@
     model reasoning. Agent activity is logged as security telemetry, attributable to an identity and owner, shown on a
     dashboard and stoppable (Cisco/Splunk built a Triage Agent dashboard in an afternoon at .conf26).
   outcomes:
-    - {lever: risk, description: "Autonomy granted to AI in a vendor-run survey", figure: "57% require a human to review every AI decision before an alert is closed; 30% auto-execute low-risk actions; 13% medium-risk; no respondent grants full unsupervised autonomy", measures: "Prophet Security survey as quoted in a sponsored article; respondent base not given there", provenance: vendor-published, source_ref: HNS-GARTNER-2026}
+    - {lever: risk, description: "Autonomy granted to AI in a vendor-run survey", figure: "57% require a human to review every AI decision before an alert is closed; 30% auto-execute low-risk actions; 13% medium-risk; no respondent grants full unsupervised autonomy", measures: "Prophet Security survey as quoted in a sponsored article; respondent base not given there", provenance: vendor-published, source_ref: HELPNET-GARTNER-2026}
     - {lever: risk, description: "Trust in autonomous action in an MDR provider's survey", figure: "14% say AI is central to their security-operations strategy; 53% trust AI even for narrow actions such as blocking a malicious IP", measures: "1,350 security and IT decision-makers (Sapio Research for Arctic Wolf), via a news summary", provenance: vendor-published, source_ref: LDS-ARCTICWOLF-2026}
     - {lever: risk, description: "Agent activity made visible on the event SOC dashboard", figure: "confidence bands 40-59: 13%, 60-79: 53%, 80-100: 34%", measures: "share of findings by average confidence band; model outputs not validated against outcomes", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026}
   prerequisites:
@@ -970,8 +959,8 @@
     - "NCSC: where unintended activity would be significant, name responsible individuals or groups, keep human oversight and real-time monitoring, and evaluate judge agents independently (NCSC-AGENTICRISK-2026)"
     - "NCSC: log, audit and monitor agentic AI activity as part of security operations, make it easy to attribute, and keep emergency shutdown; this is interim advice to be superseded by formal guidance (NCSC-AGENTICRISK-2026)"
     - "NCSC notes existing remedial automation such as SOAR is deterministic: each rule is crafted and tested (NCSC-AGENTICDEF-2026)"
-    - "Gartner, as quoted, distinguishes 'human in the loop' from 'human on the loop' (HNS-GARTNER-2026)"
-    - "CISA, NIST and NSA practices (2026-10-16) cover limiting agent access, monitoring for unexpected activity, preserving evidence, shutdown and reporting near-misses; they target organisations training and evaluating highly capable agents (CISA-KEYPRACTICES-2026)"
+    - "Gartner, as quoted, distinguishes 'human in the loop' from 'human on the loop' (HELPNET-GARTNER-2026)"
+    - "CISA, NIST and NSA practices (2026-10-16) cover limiting agent access, monitoring for unexpected activity, preserving evidence, shutdown and reporting near-misses; they target organisations training and evaluating highly capable agents (NISTCISA-IRKEY-2026)"
   human_checkpoints:
     - "The accountable owner approves each autonomy level and can widen or withdraw it on evidence (NCSC-AGENTICDEF-2026, SACR-TRUSTEDSOC-2026)"
     - "Approval routing per action, with reversibility and proof of execution (SACR-BHUSA-2026)"
@@ -985,17 +974,16 @@
     - {ref: NCSC-AGENTICRISK-2026, title: "Managing the cyber risk of agentic AI (interim blog)", publisher: "UK National Cyber Security Centre", type: regulator, url: "https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai", date: "2026-08-20", access: full, locator: "'Set the right level of oversight'; key considerations list"}
     - {ref: SACR-TRUSTEDSOC-2026, title: "AI SOC Technoscope Series: Building the Trusted SOC (Part 1)", publisher: "Software Analyst Cyber Research", type: firm, url: "https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-building", date: "2026-07-27", access: full, locator: "Key Actionable Summary; 'Defining Trusted Security Response Operations'"}
     - {ref: SACR-BHUSA-2026, title: "Black Hat USA 2026: Key Insights We're Observing For H2 2026", publisher: "Software Analyst Cyber Research", type: firm, url: "https://softwareanalyst.substack.com/p/black-hat-usa-2026-key-insights-were", date: "2026-08-21", access: full, locator: "'Security Operations Center (The SOC) Trends'"}
-    - {ref: HNS-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored, Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Sections 1 and 5"}
+    - {ref: HELPNET-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored by Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Sections 1 and 5"}
     - {ref: LDS-ARCTICWOLF-2026, title: "Arctic Wolf Survey Finds AI Trust Gap", publisher: "Let's Data Science", type: press, url: "https://letsdatascience.com/news/arctic-wolf-survey-finds-ai-trust-gap-b12457e5", date: "2026-09-14", access: full, locator: "Key points"}
     - {ref: CISCO-SPLUNK-CONF26-2026, title: "Splunk .conf26: Tracking the Triage Agent in the Agentic SOC", publisher: "Cisco Blogs", type: vendor, url: "https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/", date: "2026-10-08", access: full, locator: "'Building the Triage Agent Dashboard in an Afternoon'; Dashboard Snapshot table"}
-    - {ref: CISA-KEYPRACTICES-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation", publisher: "CISA with NIST and NSA", type: regulator, url: "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation", date: "2026-10-16", access: full, locator: "Summary of ten voluntary practices"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI, NSA and CISA", type: standard-setter, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Summary of ten voluntary practices"}
     - {ref: ARXIV-2505.23397, title: "A Unified Framework for Human AI Collaboration in Security Operations Centers with Trusted Autonomy", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2505.23397", date: "2025-05", access: full, locator: "Abstract: five autonomy levels mapped to human roles and trust thresholds; simulated cyber range"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-18, governance-09 (an idea) and governance-10 (agent observability). Grade C: a regulator
-    proposal, an analyst framework and vendor surveys; the Cisco dashboard is the only named deployment and covers
-    observability only. No organisation reports running per-action scoring. CISA pages retrieved on 2026-10-17 show
-    'AI' replaced by 'Super Intelligence (SI)' in titles.
+    Grade C: a regulator proposal, an analyst framework and vendor surveys; the Cisco dashboard is the only named
+    deployment and covers observability only. No organisation reports running per-action scoring. Some US agency
+    documents issued in 2026 use 'Super Intelligence (SI)' where earlier ones say 'AI'; titles are cited as issued.
 
 - id: security-operations-21
   title: Measuring the SOC's AI - score verdicts against analyst outcomes, sample what it closes, and replay benchmarks before widening autonomy
@@ -1030,7 +1018,7 @@
     - "A sampling protocol, reviewer capacity and someone accountable for acceptance thresholds"
   risks_and_guardrails:
     - "Attack alerts were more likely to be dismissed when searches returned no records, and same-context self-review had negative net correction (ARXIV-2610.10608)"
-    - "Gartner, as relayed by vendors, warns of 'AI washing' and 'agent washing' and advises piloting against your own baseline; by 2028 70% of large SOCs will pilot AI agents but only 15% will see measurable improvement without structured evaluation (DROPZONE-GARTNERHC-2026, HNS-GARTNER-2026)"
+    - "Gartner, as relayed by vendors, warns of 'AI washing' and 'agent washing' and advises piloting against your own baseline; by 2028 70% of large SOCs will pilot AI agents but only 15% will see measurable improvement without structured evaluation (DROPZONE-GARTNERHC-2026, HELPNET-GARTNER-2026)"
     - "Benchmarks use replayed or synthetic data; SIR-Bench scores come from the authors' own agent and an LLM judge (ARXIV-2604.12040); the unsecure.sh scorecard has no penalty for wrong claims (UNSECURE-EVAL-2026)"
     - "Analysts accepted AI outputs even at lower accuracy when explanations seemed relevant, so agreement rates need independent checks (ARXIV-2503.02065); NCSC advises independent evaluation of judge agents (NCSC-AGENTICRISK-2026)"
   human_checkpoints:
@@ -1045,13 +1033,13 @@
   sources:
     - {ref: ELASTIC-ACCURACY-2026, title: "Inside Elastic's agentic SOC: How we took AI alert triage from 60% to 92% accuracy", publisher: "Elastic Security Labs", type: vendor, url: "https://www.elastic.co/security-labs/alert-triage-agentic-soc-self-correcting-agents", date: "2026-08-25", access: full, locator: "Data paragraph; 'AI Incorrect?' field"}
     - {ref: CYBERPROOF-CASE-2026, title: "Case study: Improving SOC investigation consistency and reducing MTTR by 60%+ with agentic AI investigation", publisher: "CyberProof", type: vendor, url: "https://go.cyberproof.com/hubfs/Case_Studies/Case_study_Agentic_AI_Improving_SOC.pdf", date: "2026-05", access: full, locator: "Benefits column, p. 2 ('High investigation accuracy', 90-day period); QA paragraph, p. 3"}
-    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract (submitted 7 Oct 2026)"}
-    - {ref: UNSECURE-EVAL-2026, title: "A scenario to evaluate your Agentic SOC", publisher: "unsecure.sh", type: vendor, url: "https://unsecure.sh/blog/agentic-soc-scenario/", date: "2026-08-27", access: full, locator: "'Validation gates'; 'How well do off-the-shelf agents perform?'"}
+    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv (Tsegai, Kantchelian, Yao et al.)", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract (submitted 7 Oct 2026)"}
+    - {ref: UNSECURE-EVAL-2026, title: "A scenario to evaluate your Agentic SOC (John Ao and Michel San, builders of the Tengu harness)", publisher: "unsecure.sh", type: vendor, url: "https://unsecure.sh/blog/agentic-soc-scenario/", date: "2026-08-27", access: full, locator: "'Validation gates'; 'How well do off-the-shelf agents perform?'"}
     - {ref: UNDERDEFENSE-AISOC-2026, title: "AI SOC in 500 Real Incidents: Where It Still Asks for a Human", publisher: "UnderDefense", type: vendor, url: "https://underdefense.com/blog/ai-soc-real-incidents/", date: "2026-07-06", access: full, locator: "Bake-off paragraphs"}
-    - {ref: ARXIV-2603.06422, title: "Before You Hand Over the Wheel: Evaluating LLMs for Security Incident Analysis (SIABench)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.06422", date: "2026-03-06", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2603.06422, title: "Before You Hand Over the Wheel: Evaluating LLMs for Security Incident Analysis (SIABench)", publisher: "arXiv (Jajodia, Sultana, Majumdar, Taylor)", type: academic, url: "https://arxiv.org/abs/2603.06422", date: "2026-03-06", access: full, locator: "Abstract"}
     - {ref: ARXIV-2604.12040, title: "SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents", publisher: "arXiv (AWS authors)", type: academic, url: "https://arxiv.org/abs/2604.12040", date: "2026-04-13", access: full, locator: "Abstract"}
     - {ref: DROPZONE-GARTNERHC-2026, title: "The 2026 Gartner Hype Cycle for Security Operations", publisher: "Dropzone AI", type: vendor, url: "https://www.dropzone.ai/blog/gartner-hype-cycle-security-operations-2026", date: "2026-06-16", access: full, locator: "'AI washing' section"}
-    - {ref: HNS-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored, Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Gartner forecast paragraph"}
+    - {ref: HELPNET-GARTNER-2026, title: "Gartner: 70% of SOCs will pilot AI agents. Only 15% will see results (sponsored by Prophet Security)", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/09/prophet-security-evaluating-ai-soc-agents/", date: "2026-09-09", access: full, locator: "Gartner forecast paragraph"}
     - {ref: ARXIV-2503.02065, title: "Too Much to Trust? Measuring the Security and Cognitive Impacts of Explainability in AI-Driven SOCs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2503.02065", date: "2025-03-03", access: full, locator: "Abstract"}
     - {ref: NCSC-AGENTICRISK-2026, title: "Managing the cyber risk of agentic AI (interim blog)", publisher: "UK National Cyber Security Centre", type: regulator, url: "https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai", date: "2026-08-20", access: full, locator: "'Set the right level of oversight'"}
     - {ref: SACR-TRUSTEDSOC-2026, title: "AI SOC Technoscope Series: Building the Trusted SOC (Part 1)", publisher: "Software Analyst Cyber Research", type: firm, url: "https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-building", date: "2026-07-27", access: full, locator: "'The Practitioner Signal'"}
@@ -1059,11 +1047,10 @@
     - {ref: SANS-SOC-2026, title: "SANS 2026 SOC Report: A Decade of Evolution in Cyber Defense", publisher: "SANS Institute", type: survey, url: "https://www.sans.org/research/security-operations-report", date: "2026", access: full, locator: "Top takeaways and FAQ: 70% cite incident count"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-18, discourse-17, governance-03 and governance-16, plus CyberProof's QA sampling (routed from
-    incident-response). Grade A rests on Elastic's tracked agreement metric; the other figures are vendor claims or
-    research benchmarks. The outcome-based metric scheme in governance-16 was an idea; no organisation reports running
-    it in full. unsecure.sh builds a competing harness and its scenario may favour it.
-    Overlaps: scenario scorecards for investigation agents are security-incident-response-12; verifying AI findings and hardening tools against attacker-controlled logs is security-incident-response-11.
+    Grade A rests on Elastic's tracked agreement metric; the other figures are vendor claims or research benchmarks.
+    An outcome-based metric scheme has been proposed, but no organisation reports running it in full. unsecure.sh
+    builds a competing harness and its scenario may favour it. Overlaps: verifying AI findings and hardening tools
+    against attacker-controlled logs is security-incident-response-09.
 
 - id: security-operations-22
   title: MDR providers move to agent-led, human-accountable services, and buyers test what the AI actually does
@@ -1120,13 +1107,13 @@
     - {ref: EIOPA-DORA-2025, title: "Digital Operational Resilience Act (DORA)", publisher: "EIOPA", type: regulator, url: "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en", date: "2026-10-17", access: full, locator: "DORA applies since 17 Jan 2025 to financial entities and ICT third-party providers (undated page; retrieval date)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-10, discourse-16 and governance-19 (supplier assurance, an idea: no source reports a customer
-    applying it to an MDR provider). Grade raised from C to B at verification: Expel (its own AI triages and closes
-    benign alerts in its MDR service, EXPEL-RUXIE-2026 and EXPEL-GARTNERMDR-2026) and Arctic Wolf run named production
-    services, but no measured outcome with a method is published. All performance claims come from the providers; the
-    CIO.com article reads like vendor-supplied material. The Sophos page was read through a text mirror. Arctic Wolf's launch date (2026-03-23) was seen only in search results. The Gartner
-    documents were not opened.
-    Overlaps: MDR extended to SaaS identity threats is security-identity-access-16.
+    Supplier assurance for MDR providers is an idea: no source reports a customer applying it to an MDR provider.
+    Graded B, not C: Expel (its own AI triages and closes benign alerts in its MDR service, EXPEL-RUXIE-2026 and
+    EXPEL-GARTNERMDR-2026) and Arctic Wolf run named production services, but no measured outcome with a method is
+    published. All performance claims come from the providers; the CIO.com article reads like vendor-supplied
+    material. The Sophos page was read through a text mirror. Arctic Wolf's launch date (2026-03-23) was seen only in
+    search results. The Gartner documents were not opened. Overlaps: MDR extended to SaaS identity threats is
+    security-identity-access-16.
 
 - id: security-operations-23
   title: SOC staffed to build and supervise automation - detection and response engineers use coding agents to build workflows and agents
@@ -1167,10 +1154,10 @@
   evidence_grade: B
   sources:
     - {ref: EXPEL-JOB-DR-2026, title: "Senior Detection & Response Engineer", publisher: "Expel (Greenhouse job board)", type: job-posting, url: "https://expel.com/about/career-listing/8836996002", date: "2026-09-26", access: full, locator: "Requirements list"}
-    - {ref: DATABRICKS-JOB-IR-2026, title: "Staff Security Engineer, Incident Response", publisher: "Databricks (Greenhouse job board)", type: job-posting, url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8841960002", date: "2026-10-08", access: full, locator: "Role description and requirements"}
+    - {ref: DATABRICKS-JOB-IR-2026, title: "Staff Security Engineer, Incident Response", publisher: "Databricks", type: job-posting, url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8841960002", date: "2026-10-08", access: full, locator: "Role description and requirements"}
     - {ref: ROBINHOOD-JOB-DR-2026, title: "Senior Security Engineer, Detection & Response", publisher: "Robinhood (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/robinhood/jobs/8202863", date: "2026-09-21", access: full, locator: "AI Experience section"}
     - {ref: ROBINHOOD-JOB-SECOPSAI-2026, title: "Senior Staff Security Engineer, Security Operations", publisher: "Robinhood (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/robinhood/jobs/8259431", date: "2026-10-06", access: full, locator: "Responsibilities (Security Operations AI Tech Lead)"}
-    - {ref: CLOUDFLARE-JOB-CMDC-2026, title: "Response Engineer - Cloudflare Managed Defense Center (CMDC)", publisher: "Cloudflare (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8222732", date: "2026-09-24", access: full, locator: "Preferred qualifications"}
+    - {ref: CLOUDFLARE-JOB-CMDC-2026, title: "Response Engineer - Cloudflare Managed Defense Center (CMDC)", publisher: "Cloudflare", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8222732", date: "2026-09-24", access: full, locator: "Preferred qualifications"}
     - {ref: FIGMA-JOB-SECOPS-2026, title: "Manager, Security Operations", publisher: "Figma (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/figma/jobs/6015609004", date: "2026-06-05", access: full, locator: "Qualifications"}
     - {ref: ANTHROPIC-JOB-DRPLATFORM-2026, title: "Security Software Engineer, Detection & Response Platform", publisher: "Anthropic (Greenhouse job board)", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/4595463008", date: "2025-03-24", access: full, locator: "Role summary (updated 2026-08-24)"}
     - {ref: D3-SOCHIRING-2026, title: "SOC Hiring in 2026: Three Builders for Every Analyst", publisher: "D3 Security", type: vendor, url: "https://d3security.com/blog/soc-hiring-2026/", date: "2026-09-11", access: full, locator: "Findings 1-5"}
@@ -1178,11 +1165,11 @@
     - {ref: ISC2-WORKFORCE-2025, title: "2025 ISC2 Cybersecurity Workforce Study", publisher: "ISC2", type: professional-body, url: "https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study", date: "2025-12-04", access: full, locator: "Introduction; skills needs section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-19 and discourse-20. Evidence is hiring intent and a vendor-assembled one-month sample (D3
-    sells an AI SOC product), so B is the ceiling. Postings come from a convenience sample of tech-forward firms.
-    Anthropic develops the model used in this research; its posting is one data point among six. Pattern 'other':
-    a staffing and operating-model change.
-    Overlaps: the same builder shift appears for incident responders (security-incident-response-25) and IAM engineers (security-identity-access-12).
+    Evidence is hiring intent and a vendor-assembled one-month sample (D3 sells an AI SOC product), so B is the
+    ceiling. Postings come from a convenience sample of tech-forward firms. Anthropic develops the model used in this
+    research; its posting is one data point among six. Pattern 'other': a staffing and operating-model change.
+    Overlaps: the same builder shift appears for incident responders (security-incident-response-22) and IAM engineers
+    (security-identity-access-12).
 
 - id: security-operations-24
   title: "Idea: defender agents that contain an active attack without a human in the loop"
@@ -1198,7 +1185,7 @@
   problem: >-
     Detection Engineering Weekly's author says the field is in awe of models that find vulnerabilities while the hard
     parts, patching and detection, lag (DETENGWEEKLY-169-2026); Hugging Face notes its attacker was bound by no usage
-    policy (HUGGINGFACE-INCIDENT-2026).
+    policy (HF-DISCLOSURE-2026).
   solution: >-
     Discussed publicly as an idea: guardrailed agents that stop an active attack without human intervention. A
     DARPA-derived programme planned to deploy red and blue team agents on digital twins of water systems to learn what
@@ -1218,7 +1205,7 @@
     - {ref: DETENGWEEKLY-169-2026, title: "DEW #169 - Realistic AI SOC evaluation scenarios, tricking EDRs with fake telemetry and Anthropic/OAI cyber eval guardrails", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-169-realistic-ai-soc-evaluation", date: "2026-09-03", access: full, locator: "Section on OpenAI call for collective cyber defence"}
     - {ref: REGISTER-BHDC-2026, title: "Black Hat and DEF CON are AI conferences now, too (Kettle podcast transcript)", publisher: "The Register", type: podcast, url: "https://www.theregister.com/security/2026/08/17/black-hat-and-def-con-are-ai-conferences-now-too/5288076", date: "2026-08-17", access: full, locator: "Water-utility programme; attack versus defence skill"}
     - {ref: NCSC-AGENTICDEF-2026, title: "One does not simply defend agentically", publisher: "UK National Cyber Security Centre", type: regulator, url: "https://www.ncsc.gov.uk/blogs/one-does-not-simply-defend-agentically", date: "2026-09-21", access: full, locator: "Closing section: problem book; Cyber Shield"}
-    - {ref: HUGGINGFACE-INCIDENT-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: firm, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraph on the attacker being 'bound by no usage policy'"}
+    - {ref: HF-DISCLOSURE-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: vendor, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraph on the attacker being 'bound by no usage policy'"}
   last_reviewed: "2026-10-17"
-  notes: "Idea, not a deployment (discourse-22). Evidence is practitioner commentary and a regulator's research call."
+  notes: "Idea, not a deployment. Evidence is practitioner commentary and a regulator's research call."
 

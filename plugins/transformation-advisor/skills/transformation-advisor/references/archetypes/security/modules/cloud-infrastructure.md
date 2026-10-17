@@ -279,9 +279,9 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 
 - [THN-CERTIN-2026] The Hacker News, "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing", 2026-10-16. https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html
 - [CERTIN-CIAD0049-2026] CERT-In, "CIAD-2026-0049: AI Agents as Attack Vectors", regulator advisory, 2026-10-15. https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIAD-2026-0049&pageid=PUBVLNOTES02
-- [FINRA-ROR-2026] FINRA, "2026 Annual Regulatory Oversight Report: GenAI section", 2025-12-09. https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
+- [FINRA-ROR-2026] FINRA, "2026 FINRA Annual Regulatory Oversight Report: GenAI section (incl. AI agents) and Third-Party Risk Landscape", 2025-12-09. https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
 - [EBA-CTPP-2025] EBA, EIOPA and ESMA, "ESAs designate critical ICT third-party providers under DORA", 2025-11-18 (the 19 names are in the linked list PDF). https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital
-- [EC-AIACT-2026] European Commission, "AI Act regulatory framework" page (undated; retrieved 2026-10-17). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- [EC-AIACT-2026] European Commission, "AI Act: regulatory framework for AI (status page)", 2026-10-17 (page undated; date is the retrieval date). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - [PANW-DT-2026] Palo Alto Networks press release with Deutsche Telekom on sovereign security operations, 2026-06-09. https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-and-deutsche-telekom-bring-ai-driven-security-with-advanced-sovereignty-controls-for-european-regulated-industries
 - [UNIT42-IR-2026] Palo Alto Networks Unit 42, "2026 Global Incident Response Report", 2026-02 (month inferred). https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report
 - [ENISA-ETL-2026] ENISA, "ENISA Threat Landscape 2026", 2026-09-22. https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf
@@ -296,5 +296,5 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 - [ARXIV-2508.18947] "LLMs in the SOC: An Empirical Study of Human-AI Collaboration in Security Operations Centres", arXiv preprint (abstract; listed "under review"), 2025-08-26. https://arxiv.org/abs/2508.18947
 - [TOB-VMS-2026] Trail of Bits, "VMs won't contain cyber-capable agents", 2026-08-26. https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/
 - [OPENAI-HFTECH-2026] OpenAI, "OpenAI - Hugging Face Incident Technical Report", 2026-08-26. https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf
-- [WIZ-AISAST-2026] Wiz, "Wiz AI SAST: AI Code Security With Code-to-Cloud Context", 2026-10-06. https://www.wiz.io/blog/introducing-wiz-ai-sast
+- [WIZ-AISAST-2026] Wiz Blog, "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure", 2026-10-06. https://www.wiz.io/blog/introducing-wiz-ai-sast
 - [AWS-SECAGENT-2026] AWS Security Blog, "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", 2026-10-15. https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/

@@ -183,13 +183,13 @@ override rate for security findings or a parallel run of AI against human AppSec
 **Regulation and standards (none is AI-specific for AppSec; the AI material is voluntary)**
 - **EU Cyber Resilience Act**: reporting of actively exploited vulnerabilities from 2026-09-11 (early warning 24 h,
   notification 72 h, final report 14 days after a corrective measure, via ENISA's Single Reporting Platform); main
-  obligations from 2027-12-11; guidance 2026-07-27; also reaches open-source stewards [EC-CRA-2026, EC-CRA-REPORTING-2026].
+  obligations from 2027-12-11; guidance 2026-07-27; also reaches open-source stewards [EC-CRA-2026, EC-CRAREPORT-2026].
 - **NIS2** Article 21(2)(e): security in development and maintenance, including vulnerability handling; recitals 51
   and 89 only encourage AI tools [EURLEX-NIS2-2022]. **DORA RTS** Article 16: source code review with static and
-  dynamic testing, including open-source code where feasible; no AI text [EURLEX-DORA-RTS-2024].
+  dynamic testing, including open-source code where feasible; no AI text [DORA-RTS-2024].
 - **NIST**: SSDF 1.2 draft (2025-12-17) has no AI text [NIST-SSDF-218R1-2025]; SP 800-218A covers developing AI models,
   not using AI to code [NIST-SSDF-218A-2024]; the Cyber AI Profile draft suggests extending AI checks to secure
-  development and lists AI source-code vulnerability detection among examples [NIST-CYBERAI-2025].
+  development and lists AI source-code vulnerability detection among examples [NIST-IR8596-2025].
 - **UK**: Software Security Code of Practice, 14 principles (updated 2026-01-15) [UK-DSIT-SSCOP-2025]; NCSC "vibe
   coding spectrum": slide towards manual coding for authentication, authorisation, secrets, personal data and
   safety-critical code [NCSC-VIBE-2026]. **US**: CISA Secure by Design [CISA-SBD-2023].
@@ -243,9 +243,9 @@ decisions; certifying origin of contributed code.
 - **2026-06-18** NCSC publishes the vibe coding spectrum [NCSC-VIBE-2026].
 - **2026-06-23 to 07-28** Semgrep Guardian (write-time scanning) and Agentic Workflows [SEMGREP-GUARDIAN-2026, SEMGREP-AGENTICWF-2026].
 - **2026-08** DEF CON: an LLM CI gate bypassed; a PortSwigger researcher's autonomous system finds new HTTP desync
-  triggers on bug-bounty targets and a behaviour he treats as evidence of a new desync class [DEFCON-34-2026, TLDRSEC-346-2026].
+  triggers on bug-bounty targets and a behaviour he treats as evidence of a new desync class [DEFCON-34-SPEAKERS-2026, TLDRSEC-346-2026].
 - **2026-08-06 / 09-15** 1Password's 26% clean-patch headline and Trail of Bits' rebuttal [ONEPASSWORD-FLAWED-2026, TOB-1PASSWORD-2026].
-- **2026-09-11** CRA vulnerability reporting applies [EC-CRA-REPORTING-2026].
+- **2026-09-11** CRA vulnerability reporting applies [EC-CRAREPORT-2026].
 - **2026-09-19 / 09-24** Google publishes pre-submit agentic scanning and PageBreak (`#07`, `#10`).
 - **2026-10-06 to 10-15** Wiz AI SAST, OSS Scanner, Semgrep in Cursor Origin, Snyk Evo Agentic AppSec [WIZ-AISAST-2026,
   ANTHROPIC-CYBERMISSION-2026, SEMGREP-CURSOR-2026, SNYK-AGENTIC-2026].
@@ -257,7 +257,7 @@ decisions; certifying origin of contributed code.
 ## 9. Common objections
 
 - **"It's mostly marketing."** curl's maintainer cut one scan's five "confirmed" flaws to one low-severity CVE
-  [STENBERG-MYTHOS-2026], yet the same maintainer credits AISLE's AI-assisted audit with 35 published curl CVEs
+  [CURL-STENBERG-2026], yet the same maintainer credits AISLE's AI-assisted audit with 35 published curl CVEs
   (security-vulnerability-exposure-03).
   Ask for maintainer-confirmed counts, not model counts.
 - **"AI only finds known bug types."** Stenberg's view (2026-05-11); a PortSwigger researcher's 2026 autonomous system
@@ -273,7 +273,7 @@ decisions; certifying origin of contributed code.
 - **"AI code is insecure, so adding AI review is circular."** Generation and review differ: models caught 78.7% of
   their own flaws in review mode [ARXIV-2604.05292]. Keep deterministic checks and human sign-off (`#04`).
 - **"An AI gate is enough."** Skill scanners and an LLM build gate were bypassed in 2026 [TOB-SKILLS-2026,
-  DEFCON-34-2026]; layer procedural controls (`#14`).
+  DEFCON-34-SPEAKERS-2026]; layer procedural controls (`#14`).
 - **"Maintainers want our AI findings."** They want fewer, verified reports [OPENAI-CODEXSEC-2026, LF-GLASSWING-2026];
   include reproducers [LINUX-KERNEL-AI-2026].
 - **"The vendor numbers are hype."** Mostly vendor-published with unnamed customers [SEMGREP-GUARDIAN-2026]; the
@@ -283,7 +283,7 @@ decisions; certifying origin of contributed code.
 
 Full details for every key used in the use cases are in the YAML. Keys cited only in this file (all opened by the
 research angles unless marked):
-- **Regulators and standard-setters:** EC-CRA-2026 (European Commission, *Cyber Resilience Act*, 2026-09-07, https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act); EC-CRA-REPORTING-2026 (*CRA reporting obligations*, 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting); EURLEX-NIS2-2022 (Directive (EU) 2022/2555, 2022-12-27, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555); EURLEX-DORA-RTS-2024 (Delegated Regulation (EU) 2024/1774, 2024-06-25, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1774); EC-AIACT-2026 (AI Act status page, 2026-10, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai); NIST-SSDF-218R1-2025 (SP 800-218 Rev 1 ipd, 2025-12-17, https://csrc.nist.gov/pubs/sp/800/218/r1/ipd); NIST-SSDF-218A-2024 (SP 800-218A, 2024-07-26, https://csrc.nist.gov/pubs/sp/800/218/a/final); NIST-CYBERAI-2025 (IR 8596 iprd, 2025-12-16, https://csrc.nist.gov/pubs/ir/8596/iprd); CISA-SBD-2023 (Secure by Design, 2023-10-25, https://www.cisa.gov/resources-tools/resources/secure-by-design); UK-DSIT-SSCOP-2025 (Software Security Code of Practice, 2025-05-07, https://www.gov.uk/government/publications/software-security-code-of-practice); GOVIE-NCSC-2026 (Ireland NCSC statement on Mythos Preview, 2026-04-13, https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/press-releases/national-cyber-security-centre-ncsc-statement-on-anthropics-mythos-preview-model-for-defensive-cyber-security-purposes/).
+- **Regulators and standard-setters:** EC-CRA-2026 (European Commission, *Cyber Resilience Act*, 2026-09-07, https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act); EC-CRAREPORT-2026 (*Cyber Resilience Act - Reporting obligations* (page last updated 2026-09-11), 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting); EURLEX-NIS2-2022 (Directive (EU) 2022/2555 (NIS 2), 2022-12-14, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555); DORA-RTS-2024 (Delegated Regulation (EU) 2024/1774, 2024-06-25, https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774); EC-AIACT-2026 (*AI Act: regulatory framework for AI (status page)*, 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai); NIST-SSDF-218R1-2025 (SP 800-218 Rev 1 ipd, 2025-12-17, https://csrc.nist.gov/pubs/sp/800/218/r1/ipd); NIST-SSDF-218A-2024 (SP 800-218A, 2024-07-26, https://csrc.nist.gov/pubs/sp/800/218/a/final); NIST-IR8596-2025 (IR 8596 iprd, 2025-12-16, https://csrc.nist.gov/pubs/ir/8596/iprd); CISA-SBD-2023 (Secure by Design, 2023-10-25, https://www.cisa.gov/resources-tools/resources/secure-by-design); UK-DSIT-SSCOP-2025 (Software Security Code of Practice, 2025-05-07, https://www.gov.uk/government/publications/software-security-code-of-practice); GOVIE-NCSC-2026 (Ireland NCSC statement on Mythos Preview, 2026-04-13, https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/press-releases/national-cyber-security-centre-ncsc-statement-on-anthropics-mythos-preview-model-for-defensive-cyber-security-purposes/).
 - **Firms and vendors:** GTIG-VULNTRENDS-2026 (Google Threat Intelligence Group, 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/); ANTHROPIC-GLASSWING-2026 (2026-04-07, https://www.anthropic.com/glasswing); SNYK-VULNBUMP-2026 (2026-10-15, https://snyk.io/blog/vulnbump/); SEMGREP-APPSEC-2026 (*What Application Security Actually Does All Day*, 2026-09-25, https://semgrep.dev/blog/2026/what-application-security-does); ONEPASSWORD-FLAWED-2026 (1Password Off-by-1 Labs, 2026-08-06, https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf); GITHUB-TASKFLOW-2026 (GitHub Blog, 2026-09-24, https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/); LF-GLASSWING-2026 (Linux Foundation, 2026-04-07, https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source).
 - **Surveys, press, community:** BLACKDUCK-BSIMM-2026 (BSIMM16 landing page, 2026-01, https://www.blackduck.com/resources/analyst-reports/bsimm.html); ISC2-WORKFORCE-2025 (2025-12-04, https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study); REGISTER-VERACODE-2026 (The Register, 2026-02-26, https://www.theregister.com/software/2026/02/26/rapid-ai-driven-development-makes-security-unattainable/4285126); STENBERG-PRESSURE-2026 (2026-05-26, https://daniel.haxx.se/blog/2026/05/26/the-pressure/); CURL-TEAM-2026 (2026-10-12, https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/).
 - **Academic and job postings:** ARXIV-2609.23042 (*Secrets That Survive Everything*, 2026-09, https://arxiv.org/abs/2609.23042, abstract); OKTA-JOB-PSE-2026 (2026-09-17, https://www.okta.com/company/careers/opportunity/8156825?gh_jid=8156825); STRIPE-JOB-VM-2026 (2026-08-04, https://stripe.com/jobs/search?gh_jid=8089353); DATADOG-JOB-APPSEC-2026 (2026-09-25, https://careers.datadoghq.com/detail/8230663/?gh_jid=8230663).

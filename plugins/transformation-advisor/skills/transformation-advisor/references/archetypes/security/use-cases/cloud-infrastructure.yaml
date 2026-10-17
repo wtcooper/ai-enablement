@@ -181,14 +181,14 @@
     - {ref: WIZ-BLUEAGENT-GA-2026, title: "The Wiz Blue Agent, now Generally Available", publisher: "Wiz", type: vendor, url: "https://wiz.io/blog/wiz-blue-agent-generally-available", date: "2026-03-30", access: full, locator: "'Investigation with full context'; 'From triage to action'"}
     - {ref: WIZ-BLUEAGENT-CASE-2026, title: "How Wiz's Blue Agent Traced a Multi-Cloud Attack", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation", date: "2026-09-29", access: full, locator: "Phases 1 to 4 of the worked investigation"}
     - {ref: ORCA-AGENTIC-2026, title: "Introducing the Agentic Cloud Security Platform", publisher: "Orca Security", type: vendor, url: "https://orca.security/resources/blog/introducing-agentic-cloud-security-platform/", date: "2026-03-18", access: full, locator: "'What we're building: Agentic AI for CNAPP'; 'Transparency builds trust'"}
-    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2610.10608, title: "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage", publisher: "arXiv (Tsegai, Kantchelian, Yao et al.)", type: academic, url: "https://arxiv.org/abs/2610.10608", date: "2026-10-07", access: full, locator: "Abstract"}
     - {ref: UNSECURE-EVAL-2026, title: "A scenario to evaluate your Agentic SOC (John Ao and Michel San, builders of the Tengu harness)", publisher: "unsecure.sh", type: vendor, url: "https://unsecure.sh/blog/agentic-soc-scenario/", date: "2026-08-27", access: full, locator: "'How well do off-the-shelf agents perform?'"}
     - {ref: ARXIV-2607.26791, title: "SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response (arXiv preprint, abstract read)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.26791", date: "2026-07-29", access: full, locator: "Abstract"}
-    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged: practice 02 and discourse 03; the SecRespond benchmark from governance 09 (routed to incident-response) is
-    kept as a caution. Grade B under the 2026-10-17 grade A rule (verification, 2026-10-17): ZS has not published the
+    kept as a caution. Graded B, not A: ZS has not published the
     figure itself. It reaches us only as its director's spoken 'around 95.17%' on an undated Wiz page; the 'internal
     framework' and 'self-validated' wording is Wiz's narration, and case count, accuracy definition, period and handling
     of disagreements are not given. Redis's 85.7% is likewise relayed by Wiz. Owkin's '10 out of 10' is a recollection
@@ -320,10 +320,10 @@
     - {ref: AWS-GUARDDUTY-ETD-2026, title: "GuardDuty Extended Threat Detection has added five new indicators to surface attack sequences", publisher: "AWS Security Blog", type: vendor, url: "https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/", date: "2026-10-12", access: full, locator: "'New indicators overview'; 'Strengthening weak runtime signals'; EKS example; 'Responding to attack sequences'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice 04 (graded B there). Graded C here: the figure is AWS's own claim about its service, with no named
-    customer. The post describes signal correlation; it does not say a generative model produces the finding, so this is
-    adjacent to LLM-based AI. Kept because it shows detection vendors cutting triage load before any language model is
-    applied. Maturity in-production refers to a generally available AWS service.
+    Graded C here: the figure is AWS's own claim about its service, with no named customer. The post describes signal
+    correlation; it does not say a generative model produces the finding, so this is adjacent to LLM-based AI. Kept
+    because it shows detection vendors cutting triage load before any language model is applied. Maturity
+    in-production refers to a generally available AWS service.
 
 - id: security-cloud-infrastructure-05
   title: "Read-only first-pass incident triage agent across a Kubernetes fleet, with scope enforced in infrastructure"
@@ -533,7 +533,7 @@
     - {ref: USENIX-PATCHWEAVER-2026, title: "PatchWeaver: Risk-Bounded Autonomous Vulnerability Remediation Under Change-Management Policies (USENIX Security '26)", publisher: "USENIX Association", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-rui", date: "2026-08", access: full, locator: "Abstract"}
     - {ref: ENISA-FRONTIER-2026, title: "ENISA's view on Cybersecurity in the Frontier AI Era", publisher: "ENISA", type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf", date: "2026-07-07", access: full, locator: "pp.6, 8-9 ('Authority Gap'), 11"}
     - {ref: TOMSHW-AWSKIRO-2026, title: "AWS outages caused by AI coding bot blunder, report claims", publisher: "Tom's Hardware (relaying the Financial Times)", type: press, url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/multiple-aws-outages-caused-by-ai-coding-bot-blunder-report-claims-amazon-says-both-incidents-were-user-error", date: "2026-02-20", access: full, locator: "Body, paragraphs 2 to 5 and final paragraphs"}
-    - {ref: CISA-AGENTIC-2026, title: "Careful Adoption of Agentic AI Services (joint guidance; read via the NCSC-NZ copy of the PDF)", publisher: "CISA, NSA, ASD's ACSC, Canadian Cyber Centre, NCSC-NZ, NCSC-UK", type: regulator, url: "https://www.ncsc.govt.nz/assets/guidance/Documents/Careful-adoption-of-agentic-AI-services_FINAL.pdf", date: "2026-05-01", access: full, locator: "'Oversight mechanisms' (PDF p.15); 'Operating agentic AI securely' (PDF p.18)"}
+    - {ref: CISA-AGENTIC-2026, title: "Careful Adoption of Agentic AI Services", publisher: "CISA with ASD's ACSC, NSA, Canadian Cyber Centre, NCSC-NZ and NCSC-UK", type: regulator, url: "https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf", date: "2026-05-01", access: full, locator: "NCSC-NZ copy of the PDF; 'Oversight mechanisms' (PDF p.15); 'Operating agentic AI securely' (PDF p.18)"}
     - {ref: CSA-AISTORM-2026, title: "AI Security Through the CISO Lens: Insights from the AI Storm Summit Series", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/artifacts/ai-security-through-the-ciso-lens", date: "2026-07-28", access: full, locator: "'The human-in-the-loop question'"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -667,10 +667,10 @@
     - {ref: FWDCLOUDSEC-HORSMAN-2026, title: "I made AI agents apply for my Security Team. Then I gave the agents access to AWS. (Cole Horsman, Sonrai Security)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/RAEUSE/", date: "2026-06-01", access: full, locator: "Talk abstract and speaker bio (talk not viewed)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From the Horsman parts of practice 06 and discourse 06, split out because an agent team owning a multi-step outcome
-    is a different ladder level from drafting pull requests (entry 08). Grade C: one conference abstract by the Field
-    CTO of an identity-security vendor; abstracts cannot support A or B. The abstract does not say whose account was
-    used. Agent identity design: security-ai-security-06.
+    Kept separate from entry 08 because an agent team owning a multi-step outcome is a different ladder level from
+    drafting pull requests. Grade C: one conference abstract by the Field CTO of an identity-security vendor;
+    abstracts cannot support A or B. The abstract does not say whose account was used. Agent identity design:
+    security-ai-security-06.
 
 - id: security-cloud-infrastructure-10
   title: "AI-assisted discovery of new cloud IAM privilege-escalation paths, with deterministic lab validation before publication"
@@ -713,9 +713,8 @@
     - {ref: FWDCLOUDSEC-ART-2026, title: "Discovering New AWS Privilege Escalation Paths with an AI-Driven Workflow (Seth Art, Datadog)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/Q9NXBS/", date: "2026-06-01", access: full, locator: "Abstract and speaker biography (talk not viewed)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse 07 (graded B there); practice routed the same talk to vulnerability-exposure. Graded C: a conference
-    abstract (talk not viewed); the speaker's biography lists Datadog, but the abstract does not say Datadog runs the
-    workflow. Pattern 'other': AI discovery plus deterministic validation of each candidate.
+    Graded C: a conference abstract (talk not viewed); the speaker's biography lists Datadog, but the abstract does
+    not say Datadog runs the workflow. Pattern 'other': AI discovery plus deterministic validation of each candidate.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 5: preventive guardrails in infrastructure as code
@@ -962,8 +961,8 @@
     - {ref: CHECKPOINT-AGENTICNET-2026, title: "When Security Operations Can't Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations", publisher: "Check Point", type: vendor, url: "https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/", date: "2026-09-18", access: full, locator: "Sections 1, 3 and closing"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice 09. Kept because network policy is part of this module; evidence is product documentation only. Check
-    Point says its management features are powered by OpenAI Daybreak frontier models (vendor statement).
+    Kept because network policy is part of this module; evidence is product documentation only. Check Point says its
+    management features are powered by OpenAI Daybreak frontier models (vendor statement).
 
 - id: security-cloud-infrastructure-15
   title: "Intent-to-rule firewall and network policy authoring, with change-impact checks grounded in live topology"
@@ -1079,13 +1078,13 @@
     - {ref: SACR-ECP-2026, title: "The CISO Guide to Endpoint Control and Prevention (ECP): The Next Architecture for Endpoint Security", publisher: "Software Analyst Cyber Research", type: firm, url: "https://softwareanalyst.substack.com/p/the-ciso-guide-to-endpoint-control", date: "2026-07-22", access: full, locator: "'Executive Summary'; 'The Report Summary'"}
     - {ref: NAND-RSAC-2026, title: "RSAC 2026: Agentic AI Security Takes Center Stage at Industry's Marquee Event", publisher: "NAND Research", type: press, url: "https://nand-research.com/rsac-2026-agentic-ai-security-takes-center-stage-at-industrys-marquee-event/", date: "2026-04-01", access: full, locator: "CrowdStrike paragraph"}
     - {ref: RESILIENTCYBER-LATIO-2026, title: "The AI Security Market Moves to the Endpoint (podcast with James Berthoty of Latio)", publisher: "Resilient Cyber (Chris Hughes)", type: podcast, url: "https://www.resilientcyber.io/p/the-ai-security-market-moves-to-the", date: "2026-10-05", access: full, locator: "Show notes, intent-based detection"}
-    - {ref: DETENGWEEKLY-166-2026, title: "DEW #166", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-166-figmas-agentic-secops-ai", date: "2026-08-05", access: full, locator: "'State of the Art', Numbat item"}
+    - {ref: DETENGWEEKLY-166-2026, title: "DEW #166 - Figma's Agentic SecOps, AI-EDRs and Anthropic Evals Breaking into Companies", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-166-figmas-agentic-secops-ai", date: "2026-08-05", access: full, locator: "'State of the Art', Numbat item"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse 17. Grade B: Perplexity describes its own deployment across thousands of endpoints without detection
-    metrics. SACR partnered with the vendors it names. Scope is developer endpoints running agents; classic EDR evidence
-    was not collected. Related: security-ai-security-07 (runtime policy enforcement for agent actions) and -11
-    (monitoring agent trajectories).
+    Grade B: Perplexity describes its own deployment across thousands of endpoints without detection metrics. SACR
+    partnered with the vendors it names. Scope is developer endpoints running agents; classic EDR evidence was not
+    collected. Related: security-ai-security-07 (runtime policy enforcement for agent actions) and -11 (monitoring
+    agent trajectories).
 
 - id: security-cloud-infrastructure-17
   title: "Idea: LLM agents tune endpoint detection and response policy from a bounded catalogue of hardening actions"
@@ -1184,7 +1183,7 @@
     - {ref: CLOUDFLARE-JOB-NETSEC-2026, title: "Network Security Engineer", publisher: "Cloudflare (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8081027?gh_jid=8081027", date: "2026-07-24", access: full, locator: "Responsibilities: generative AI for log analysis and root-cause analysis"}
     - {ref: FWDCLOUDSEC-GOWTHAM-2026, title: "Schrodinger's Detection: Finding the 'Zombie' Rules in Your SIEM (Gowthamaraj Rajendran, Meta)", publisher: "fwd:cloudsec North America 2026", type: conference, url: "https://pretalx.com/fwd-cloudsec-2026/talk/7LUWPZ/", date: "2026-06-02", access: full, locator: "Abstract (talk not viewed)"}
     - {ref: PINTEREST-JOB-SECOPS-2026, title: "Sr. Security Software Engineer, Security Operations", publisher: "Pinterest (Greenhouse job board)", type: job-posting, url: "https://www.pinterestcareers.com/jobs/?gh_jid=8230778", date: "2026-10-01", access: full, locator: "Responsibilities (careers page blocked; read through the Greenhouse boards API)"}
-    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged: practice 14 and discourse 12. Grade C: job postings show intent, not results, and the rule audit is a
@@ -1404,8 +1403,8 @@
     - {ref: CLOUDFLARE-JOB-VM-2026, title: "Vulnerability Management Engineer", publisher: "Cloudflare (Greenhouse job board)", type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/7579269?gh_jid=7579269", date: "2026-02-05", access: full, locator: "Responsibilities and requirements"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice 15. Grade B: Databricks describes its own team in a job posting (a named organisation's real set-up),
-    with no outcomes; borderline, because a posting shows intent and structure rather than use. Maturity piloting is a
+    Grade B: Databricks describes its own team in a job posting (a named organisation's real set-up), with no
+    outcomes; borderline, because a posting shows intent and structure rather than use. Maturity piloting is a
     judgment. The scope is wider than cloud-infrastructure. Related: security-application-security-17 (security team
     rebuilt around its own AI skills and agents), security-operations-18 and -23.
 
@@ -1450,8 +1449,8 @@
     - {ref: WIZ-DEFENDGSO-2026, title: "Wiz Defend & Google Security Operations Integration", publisher: "Wiz", type: vendor, url: "https://www.wiz.io/blog/wiz-defend-and-google-security-operations", date: "2026-09-15", access: full, locator: "'Accelerate Google Security Operations investigations with Blue Agent analysis'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice 16. A service-model change not yet evidenced by a provider's published results. Related:
-    security-operations-22 (MDR providers move to agent-led, human-accountable services).
+    A service-model change not yet evidenced by a provider's published results. Related: security-operations-22 (MDR
+    providers move to agent-led, human-accountable services).
 
 - id: security-cloud-infrastructure-24
   title: "Idea: a runtime control layer that decides whether live cloud actions proceed, are constrained, remediated or escalated"

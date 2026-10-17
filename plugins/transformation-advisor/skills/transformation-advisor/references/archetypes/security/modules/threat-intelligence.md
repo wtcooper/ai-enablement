@@ -180,7 +180,7 @@ independent test of a commercial CTI assistant on live data.
   to outcomes ID.RA-02 and DE.AE-07 [NIST-CSF-2024].
 - EU: NIS2 Articles 29-30 and DORA Article 45 frame voluntary sharing, with GDPR and competition-law limits; NIS2 recital 51
   encourages AI for detection under data-protection principles [EURLEX-NIS2-2022; EURLEX-DORA-2022]. DORA's threat-led testing
-  standard sets experience thresholds for intelligence providers and does not mention AI [EURLEX-DORATLPT-2025]. No AI Act
+  standard sets experience thresholds for intelligence providers and does not mention AI [EUR-DORATLPT-2025]. No AI Act
   obligation specific to CTI was found [EC-AIACT-2026].
 - US: AIS liability protections rest on the Cybersecurity Information Sharing Act of 2015, extended to 2026-09-30; status after that
   date was not confirmed [CISA-AIS-2026].
@@ -243,7 +243,7 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
   said fully autonomous threat-actor operations "has yet to occur" [INTEL471-AIHUMAN-2026].
 - Open: a government-led AI-ISAC was still in development with no timeline in February 2026 [NEXTGOV-AIISAC-2026]. Research
   generates adversary-emulation plans from CTI reports (84.22% execution success in a test environment), relevant to threat-led
-  testing under DORA and TIBER-EU; no provider was found using it [ARXIV-2607.14566; EURLEX-DORATLPT-2025].
+  testing under DORA and TIBER-EU; no provider was found using it [ARXIV-2607.14566; EUR-DORATLPT-2025].
 
 ## 9. Common objections
 
@@ -270,11 +270,11 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
 
 Full entries (title, publisher, URL, date, locator) are in the YAML for every key cited there. Keys cited only in this file:
 
-- [GTIG-AITRACKER-2026] Google Threat Intelligence Group, "GTIG AI Threat Tracker: From Prompting to Autonomy", 2026-09-08, https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/
+- [GTIG-AITRACKER-2026] Google Threat Intelligence Group, "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", 2026-09-08, https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/
 - [GTIG-VULNTRENDS-2026] Google Threat Intelligence Group, "Vulnerability Discovery and Exploitation Trends in the AI Era", 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/
 - [THN-CERTIN-2026] The Hacker News, report on the CERT-In advisory of 2026-10-15 on AI agents, 2026-10-16, https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html
 - [NIST-CSF-2024] NIST, Cybersecurity Framework 2.0, 2024-02-26, https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf
-- [EURLEX-DORATLPT-2025] Commission Delegated Regulation (EU) 2025/1190 (threat-led penetration testing), 2025-02-13, https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1190
+- [EUR-DORATLPT-2025] Commission Delegated Regulation (EU) 2025/1190 (threat-led penetration testing), 2025-02-13, https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1190
 - [EC-AIACT-2026] European Commission, AI Act policy page (undated; read 2026-10-17), https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - [ARXIV-2607.14566] "Fully Automated End-to-End Adversary Emulation from MITRE ATT&CK Based CTI Using LLMs", arXiv, 2026-07-16, https://arxiv.org/abs/2607.14566
 - [NEXTGOV-AIISAC-2026] Nextgov/FCW, "AI info-sharing center is in development, CISA official says", 2026-02-03, https://www.nextgov.com/cybersecurity/2026/02/ai-info-sharing-center-development-cisa-official-says/411167
