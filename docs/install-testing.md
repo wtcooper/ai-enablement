@@ -67,7 +67,7 @@ Run these in order in a fresh session. Each takes a minute or two.
 
 | Client | Version | 1 Trigger | 2 Refs | 3 Index | 4 Evidence | 5 File | 6 Resume | 7 Subagents | 8 Rules | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Claude Code (CLI, headless) | 2.1.302 | pass | pass | pass (read `ARCHETYPE.md` via the index) | not run | pass (end-to-end run) | not run | see notes | not run | Installed from a local clone on 2026-10-17. `plugin validate --strict` passed. Skill costs about 200 tokens always on and about 4.4k when invoked. In headless mode, reads outside the working folder need `--allowedTools Read` |
+| Claude Code (CLI, headless) | 2.1.302 | pass | pass | pass (read `ARCHETYPE.md` via the index) | not run | pending (end-to-end run) | not run | not run | not run | Installed from a local clone on 2026-10-17. `plugin validate --strict` passed. Skill costs about 200 tokens always on and about 4.4k when invoked. In headless mode, reads outside the working folder need `--allowedTools Read` |
 | Claude desktop (Cowork) | | | | | | | | | | |
 | Codex CLI / app | | | | | | | | | | |
 | ChatGPT desktop | | | | | | | | | | |
