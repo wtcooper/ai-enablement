@@ -22,8 +22,8 @@ what to write. Keys in brackets, such as [MCKINSEY-1YR-2025], are listed in §9.
 scope) that Diagnose selected, produce a short list of options that runs from "help the person" to "change
 what we sell". The lenses stop the conversation ending at personal efficiency. The evidence that value
 comes from redesigned workflows rather than added tools is correlational and self-reported, but consistent:
-McKinsey's high performers were 55% likely to report fundamentally redesigned workflows against 20% of
-others [MCKINSEY-SOAI-2025].
+55% of McKinsey's AI high performers reported fundamentally redesigned workflows, against 20% of other
+respondents [MCKINSEY-SOAI-2025].
 
 **Exit criteria.** Move on only when all of these hold:
 
@@ -59,7 +59,7 @@ others [MCKINSEY-SOAI-2025].
 |---|---|
 | Curious | Mostly lens 1. Explain the ladder with archetype examples. Aim for two or three quick wins with existing tools. Name lens 4 as a "what if" without going deep |
 | Experimenting | Lenses 1 and 2 in depth; lenses 3 and 4 as a target picture, not a plan. Turn individual use into a shared team workflow. Look for repeatable, high-volume steps |
-| Adopting | All four lenses. Delegate only bounded, low-risk outcomes with explicit human checkpoints and a control plan; broader delegation belongs to Scaling [BCG-GAP-2025] |
+| Adopting | All four lenses. Delegate only bounded, low-risk outcomes with explicit human checkpoints and a control plan; broader delegation belongs to Scaling (advisor rule; BCG finds agent use concentrated in its most AI-mature firms [BCG-GAP-2025]) |
 | Scaling | All four, with reuse: which options share components across units. Delegation at scale, agent governance, lens 4 across the portfolio |
 | AI-native | Start from lens 4: business model, pricing, new services, AI-native competitors, then work back to steps |
 
@@ -74,8 +74,8 @@ others [MCKINSEY-SOAI-2025].
 | 3. Delegate the outcome | "What would you hand over end to end if you could see exactly what was done and stop it at any point?" | `delegate` (agent owns a multi-step outcome, started by events, with checkpoints) | `process` | end-to-end case agent, document-to-decision, monitor → diagnose → act; background agent or managed agent runtime |
 | 4. Reinvent the work | "If you started this today with no history, would this work exist? What would clients pay for instead?" | any | `model` if the service, pricing, sourcing or who does the work changes; `process` if the process stops existing or is replaced while the service model holds | any; check archetype `disruption.md` and `frontier.md` |
 
-**Recording rules.** Classify the two dimensions separately; a single merged scale proved ambiguous when
-reviewers classified the same cases. An option that removes people from the normal path is `automate`,
+**Recording rules.** Classify the two dimensions separately: how much the AI does and how much of the work
+changes are independent questions, and one merged scale blurs them. An option that removes people from the normal path is `automate`,
 even if it uses an LLM. An agent that only drafts for a person to finish is `augment`, whatever the vendor
 calls it. Write "reinvent"
 into the description when lens 4 produced an option recorded as `process`.
@@ -164,7 +164,8 @@ Tags: **[T]** team scope, **[U/O]** unit or organization scope. Stage notes in i
    the review time; at 90% it is about nine times (queue formula, variability factor 1). More AI drafts into a
    full review step lengthen the queue [WIKI-KINGMAN-2025; LEI-PEPERKAMP-2026].
 9. **Use the redesign catalogue, not a blank page.** After diagnosis, walk known redesign heuristics
-   (remove, merge, parallelize, triage, full population) against the measured weakness [NETJES-2007].
+   (task elimination, task composition, parallelism, triage, knock-out ordering) against the measured
+   weakness [NETJES-2007].
 10. **Ask how corrections feed back.** "When someone fixes the output, where does that fix go?" *Reveals:*
     whether the option can learn [MIT-NANDA-2025; MCKINSEY-1YR-2025].
 
@@ -240,7 +241,7 @@ prerequisites found. Set `phase_completed: 4`, `next_phase: 5`, `updated`, and t
 - `ANTHROPIC-BEA-2024` — Anthropic, *Building effective agents*, vendor guide, 2024-12-19. https://www.anthropic.com/engineering/building-effective-agents
 - `ANTHROPIC-MULTI-2025` — Anthropic, *How we built our multi-agent research system*, vendor write-up, 2025-06-13. https://www.anthropic.com/engineering/multi-agent-research-system
 - `ARXIV-TAC-2025` — Xu et al. (CMU), *TheAgentCompany*, academic preprint v3, 2025-09-10. https://arxiv.org/abs/2412.14161
-- `AZURE-PATTERNS` — Microsoft Learn, *AI agent orchestration patterns*, platform guidance, undated. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
+- `AZURE-PATTERNS` — Microsoft Learn, *AI agent orchestration patterns*, platform guidance, updated 2026-02-12. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
 - `BAIN-DILIGENCE-2025` — Bain & Company, *New diligence challenge: uncovering AI risks and opportunities*, consultancy, 2025-10-27. https://www.bain.com/insights/new-diligence-challenge-uncovering-ai-risks-and-opportunities/
 - `BCG-AGENTS-2025` — BCG, *How agents are accelerating the next wave of AI value creation*, consultancy, 2025-12-15. https://www.bcg.com/publications/2025/agents-accelerate-next-wave-of-ai-value-creation
 - `BCG-GAP-2025` — BCG, *The widening AI value gap* (n=1,250), consultancy survey, 2025-09. https://media-publications.bcg.com/The-Widening-AI-Value-Gap-October-2025.pdf
@@ -251,11 +252,11 @@ prerequisites found. Set `phase_completed: 4`, `next_phase: 5`, `updated`, and t
 - `GITHUB-COPILOTAGENT-2025` — GitHub, *Meet the new coding agent*, vendor announcement, 2025-05-19. https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/
 - `HBR-HAMMER-1990` — M. Hammer, *Reengineering work: don't automate, obliterate*, HBR, 1990-07. https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate
 - `HBS-JAGGED-2023` — Dell'Acqua et al., *Navigating the jagged technological frontier* (758 consultants), field experiment, 2023-09. https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
-- `IMDA-MGF-2026` — IMDA Singapore, *Model AI governance framework for agentic AI* v1.5, regulator guidance, 2026-05-20. https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf
+- `IMDA-MGF-2026` — IMDA Singapore, *Model AI governance framework for agentic AI* v1.5, regulator guidance, 2026-05-20 (updated 2026-06-05). https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf
 - `LEI-ETHINGTON-2026` — Lean Enterprise Institute, *Automation, AI, and the risk of doing things efficiently that should not be done at all*, 2026-03-05. https://www.lean.org/the-lean-post/articles/automation-ai-and-the-risk-of-doing-things-efficiently-that-should-not-be-done-at-all/
 - `LEI-PEPERKAMP-2026` — Lean Enterprise Institute, *Lean in the age of AI: optimizing the stream, not the coder*, 2026-02-18. https://www.lean.org/the-lean-post/articles/lean-in-the-age-of-ai-optimizing-the-stream-not-the-coder/
 - `MCKINSEY-1YR-2025` — McKinsey, *One year of agentic AI: six lessons*, consultancy, 2025-09-12. https://www.mckinsey.com/capabilities/quantumblack/our-insights/one-year-of-agentic-ai-six-lessons-from-the-people-doing-the-work
-- `MCKINSEY-SOAI-2025` — McKinsey, *The state of AI in 2025* (n=1,993; read via a third-party copy), consultancy survey, 2025-11. https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+- `MCKINSEY-SOAI-2025` — McKinsey, *The state of AI in 2025* (n=1,993; figure from Exhibit 11), consultancy survey, 2025-11. https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 - `MIT-NANDA-2025` — MIT NANDA, *The GenAI divide* (preliminary, interview-based), 2025-07. https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
 - `MITTR-DELOITTE-2026` — MIT Technology Review Insights with Deloitte, *Enabling agent-first process redesign*, sponsored content, 2026-04-07. https://technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign
 - `NETJES-2007` — Netjes, Limam Mansar, Reijers, van der Aalst, *An evolutionary approach for business process redesign*, academic, 2007. https://www.vdaalst.com/publications/p387.pdf

@@ -68,13 +68,13 @@ Use these to answer "will AI take my job?" without dismissing or inflating the f
 - **It depends on how AI is used.** Declines concentrate where AI substitutes for tasks; where it
   complements people, employment is flat or rising [STANFORD-CANARIES-2026].
 - **Firms report hiring less more often than firing.** In a regional Fed survey of service firms, 4%
-  reported AI-related layoffs, about 15% hiring fewer people than otherwise and about 13% hiring more
+  reported AI-related layoffs in the past six months, about 15% hiring fewer people than otherwise and about 13% hiring more
   (independent, one region) [NYFED-2026].
 - **Exposure is not a forecast.** Exposure scores say what AI could speed up, not what will be adopted or
   cut; never present an exposure percentage as a headcount forecast [ANTHROPIC-LABOR-2026].
-- **Fear is common and partly about judgment.** In Anthropic's interviews, 55% of a general-workforce sample
-  voiced anxiety about AI and 69% of professionals mentioned stigma around using it (vendor, self-selected)
-  [ANTHROPIC-INTERVIEWER-2025].
+- **Fear is common and partly about judgment.** In Anthropic's interviews with a general-workforce sample
+  (n=1,000), 55% voiced anxiety about AI's effect on their future and 69% mentioned stigma around using it at
+  work (vendor, self-selected) [ANTHROPIC-INTERVIEWER-2025].
 
 ## 4. Role evolution: from tasks to roles
 
@@ -97,7 +97,7 @@ Use these to answer "will AI take my job?" without dismissing or inflating the f
 
 | Option | Fits when | Check before writing it into the case |
 |---|---|---|
-| **Redeploy** to growth, quality, backlog or new services | There is demand for the extra output or a measurable quality gap | A named destination, an owner and an output metric. Leaders tracking a growth measure reported strongly positive ROI more often (35% versus 13%; association, self-reported) [WHARTON-2026] |
+| **Redeploy** to growth, quality, backlog or new services | There is demand for the extra output or a measurable quality gap | A named destination, an owner and an output metric. Companies measuring AI against growth outcomes reported strong ROI more often than those measuring efficiency alone (35% versus 13%; association, self-reported) [WHARTON-2026] |
 | **Reduce outside spend** (contractors, co-source, outsourcing) | Work currently bought in could be done with released capacity | Often the first real money, without touching roles [MIT-NANDA-2025] |
 | **Reduce through hiring pace or attrition** | Demand is flat and turnover is normal | The effect on the junior pipeline in three to five years (§6) |
 | **Reduce roles** | Results are measured, not expected, and demand will not absorb the capacity | Realized, not potential; a rollback assumption if quality drops; the organization's consultation duties |
@@ -107,9 +107,11 @@ Four checks for any reduction (advisor synthesis from the sources cited):
 - **Realized or expected?** Cutting on AI's potential rather than its performance is reported as common and
   risky [HBR-DAVENPORT-2026, summary only]. Of EY's respondents with gains, 17% said they led to reduced
   headcount; more reinvested (self-reported) [EY-2025].
-- **Quality rollback.** Klarna cut customer-service staff largely through attrition and later said quality
-  had suffered and began hiring people again (company statements via press) [KLARNA-2025]. Gartner forecasts
-  that half of firms citing AI for cuts will rehire for similar work by 2027 (a forecast) [GARTNER-ITNEWS-2026].
+- **Quality rollback.** Klarna froze hiring and shrank largely through attrition while AI took on customer
+  service; its CEO later said the AI service was "lower quality" and it began recruiting human agents again
+  (company statements via press) [KLARNA-2025]. Gartner forecasts that by 2027 half of companies that
+  attributed headcount cuts to AI will rehire staff for similar work, often under new job titles (a forecast,
+  made in a customer-service context) [GARTNER-ITNEWS-2026].
 - **Pipeline.** Who learns the judgment the removed tasks used to teach?
 - **The honest reason.** "What would we say about this change if AI were not part of the explanation?" AI
   was named in about 4.5% of reported US job cuts in the first 11 months of 2025 (outplacement data, via
@@ -118,7 +120,8 @@ Four checks for any reduction (advisor synthesis from the sources cited):
 ## 6. The junior pipeline
 
 - **Junior-task audit.** Label each task juniors do as production, training, or both. "Both" tasks need a
-  replacement learning route before they are automated [TR-INSTITUTE-2026].
+  replacement learning route before they are automated (advisor synthesis; junior work serves capacity, risk
+  and training at once [TR-INSTITUTE-2026]).
 - **Explain-back.** Ask juniors to explain AI output back before it is used. In an RCT, AI-assisted learners
   scored 17% lower on mastery, though those who asked conceptual questions kept more (vendor RCT) [ANTHROPIC-SKILLS-2026].
 - **Earlier, supervised judgment.** Move juniors toward investigating exceptions and verification with
@@ -244,7 +247,7 @@ effects and one consistent message. Never record named individuals beyond action
 - `ANTHROPIC-LABOR-2026` — Anthropic, *Labor market impacts of AI: a new measure and early evidence*, vendor research, 2026-03-05. https://www.anthropic.com/research/labor-market-impacts
 - `ANTHROPIC-SKILLS-2026` — Anthropic, *How AI assistance impacts the formation of coding skills* (RCT, 52 engineers), 2026-01-29. https://www.anthropic.com/research/AI-assistance-coding-skills
 - `ANTHROPIC-WORK-2025` — Anthropic, *How AI is transforming work at Anthropic*, company self-study, 2025-12-02. https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic
-- `BRIDGES-ND` — William Bridges Associates, *What is the Bridges transition model?*, undated. https://wmbridges.com/about/what-is-transition/
+- `BRIDGES-ND` — William Bridges Associates, *What is the Bridges transition model?*, updated 2020-03-12. https://wmbridges.com/about/what-is-transition/
 - `EDMONDSON-1999` — A. Edmondson, *Psychological safety and learning behavior in work teams*, ASQ, 1999. https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Performance/Edmondson%20Psychological%20safety.pdf
 - `EY-2025` — EY, *US AI Pulse: productivity fueling reinvestment over workforce reductions*, 2025-12-09. https://www.ey.com/en_us/newsroom/2025/12/ai-driven-productivity-is-fueling-reinvestment-over-workforce-reductions
 - `GARTNER-ITNEWS-2026` — iTnews Asia on Gartner, *Half of firms that cut customer service staff due to AI will rehire by 2027*, 2026-02-25. https://www.itnews.asia/news/half-of-firms-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027-623867
@@ -257,7 +260,7 @@ effects and one consistent message. Never record named individuals beyond action
 - `NYFED-2026` — Federal Reserve Bank of New York, *Businesses are using AI to transform work, not cut jobs*, 2026-09-01. https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/
 - `OXFORD-FORTUNE-2026` — Fortune on an Oxford Economics briefing, *AI layoffs are looking more and more like corporate fiction*, 2026-01-07. https://fortune.com/2026/01/07/ai-layoffs-convenient-corporate-fiction-true-false-oxford-economics-productivity/
 - `PROSCI-2026` — Prosci, *Enterprise AI adoption best practices*, vendor blog, updated 2026-10-06. https://www.prosci.com/blog/enterprise-ai-adoption-best-practices
-- `PROSCI-ADKAR` — Prosci, *The Prosci ADKAR model*, vendor framework page, undated. https://www.prosci.com/methodology/adkar
+- `PROSCI-ADKAR` — Prosci, *The Prosci ADKAR model*, vendor framework page, undated (accessed 2026-10-16). https://www.prosci.com/methodology/adkar
 - `STANFORD-CANARIES-2026` — Brynjolfsson, Chandar, Chen, *Canaries in the coal mine?* (updated), working paper, 2026-08. https://digitaleconomy.stanford.edu/wp-content/uploads/2025/08/Canaries_BrynjolfssonChandarChen.pdf
 - `STANFORD-WORKBANK-2026` — Shao et al., *Future of work with AI agents* (WORKBank), preprint v3, 2026-02-01. https://arxiv.org/abs/2506.06576
 - `TR-INSTITUTE-2026` — Thomson Reuters Institute, *When AI forces us to rethink how we train junior lawyers*, 2026-02-02. https://thomsonreuters.com/en-us/posts/legal/ai-law-professor-train-junior-lawyers

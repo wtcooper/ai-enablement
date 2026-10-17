@@ -70,7 +70,7 @@ pricing and service-model milestones and workforce redesign checkpoints.
 - **100-day plan:** the highest-conviction levers become workstreams, each with one owner, a target range
   and early wins. Install the management system inside the 100 days: operating reviews, a KPI dashboard and
   clear decision rights [SBI-2025]. Name one person ultimately accountable [GT-2013]. In a 2013 survey,
-  almost 90% of private-equity firms used a 100-day plan, mostly drafted during diligence (self-reported,
+  almost 90% of private-equity firms used a 100-day plan, often drafted during diligence (self-reported,
   dated) [GT-2013].
 - **Value creation plan:** the bridge from `business-case.md`, one bar per initiative with owner, baseline,
   target range and quarter, reconciled every quarter [BDEMERSON-2026].
@@ -93,15 +93,15 @@ fade without one [LEI-KAIZEN-ND; GLOVER-2015].
 
 | Control | What to write down | Source |
 |---|---|---|
-| Autonomy tiers | Start in shadow mode (agent suggests, person acts), then supervised (person approves each action), then monitored (person samples). Write promotion thresholds; demote on a miss | [BCG-AGENTS-2025]; its example thresholds are illustrative |
+| Autonomy tiers | Start in shadow mode (agent suggests, person acts), then supervised (person approves each action), then guided (person monitors and spot-checks). BCG keeps a fourth tier, full autonomy, for mature, low-risk work only. Write promotion thresholds; demote on a miss | [BCG-AGENTS-2025]; its example thresholds (such as 90% confidence) are illustrative |
 | Human contacts | For each step: notify (tell), question (unblock me) or review (approve, edit, redirect) | [LANGCHAIN-AMBIENT-2025] |
 | Escalation | A retry or failure threshold, and a list of high-risk actions (irreversible, sensitive, high-value) that always pause for a person | [OPENAI-GUIDE-2025] |
 | Rubber-stamp watch | Track override rate and time to approve, per checkpoint and reviewer; audit whether review is real. No published benchmark exists for a healthy rate in knowledge work, so set the baseline in the parallel run | [IMDA-MGF-2026] |
 | Accountable roles | Use-case owner, risk reviewer, the builder who monitors model changes, and reviewers who approve outputs | [IMDA-MGF-2026], PwC Singapore case |
-| Evaluation set | 20–30 real cases with the right answers, written by the best reviewers (advisor heuristic); grade the end state, run several trials; keep capability tests separate from regression tests | [MCKINSEY-1YR-2025; ANTHROPIC-EVALS-2026] |
+| Evaluation set | Start with 20–50 real cases drawn from real failures, with reference answers written by the best reviewers; grade the end state, run several trials; keep capability tests separate from regression tests | [ANTHROPIC-EVALS-2026; MCKINSEY-1YR-2025] |
 | Tracing | Step-level logs, not outcome-only, so a drop can be traced to data or reasoning | [MCKINSEY-1YR-2025] |
 | Security | Remove one of: private data, untrusted content, outbound communication. Keep credentials out of reach of agent-generated code | [WILLISON-2025; ANTHROPIC-MANAGED-2026] |
-| Change triggers | Re-run the evaluation set when the model, tool version or input systems change | [ANTHROPIC-MANAGED-2026] |
+| Change triggers | Re-run the evaluation set when the model, tool version or input systems change; design assumptions go stale as models change | [ANTHROPIC-EVALS-2026; ANTHROPIC-MANAGED-2026] |
 | Governance tier | Light path for low-agency tools, impact assessment in the middle, architecture review for high agency | [IMDA-MGF-2026], MSD case |
 
 For a quick governance screen, use ICAEW's top-level questions: strategy, policy, proportionate risk
@@ -111,8 +111,8 @@ management, human interaction points, monitoring and oversight, and staff skills
 
 - Three to five KPIs per opportunity: leading and lagging, each efficiency KPI paired with a quality
   guardrail, plus cost per outcome where consumption matters.
-- Report realized against expected value; licences, pilots and use cases live are activity, not impact
-  [GARTNER-CFO1-2026]. Mark every benefit realized or expected.
+- Report realized against expected value; counts of pilots, tools rolled out or use cases in production are
+  activity, not impact [GARTNER-CFO1-2026]. Mark every benefit realized or expected.
 - Adoption indicators the team can read monthly (advisor heuristic): share of people using it weekly,
   workflows in production, share with a measured baseline, time from pilot to production, reuse count.
 - People indicators: quality of AI-assisted work, use by group, manager confidence, junior learning.
@@ -164,11 +164,12 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 5. **"Would you let it run without a check?"** Map the checkpoints before any delegation [BCG-GAP-2025].
 6. **Go/no-go before the pilot**, with a review date [GARTNER-CSO-2026].
 7. **Pre-mortem on controllable failure**: planning and resourcing, over-optimistic targets, poor buy-in.
-   A 2025 survey attributed 67% of initiative failures to such causes (self-reported) [SIMONK-2025].
+   A 2025 survey of private-equity investors attributed 67% of initiative failures to controllable causes
+   (self-reported) [SIMONK-2025].
 8. **Plan to the next stage only**, with three observable exit criteria (advisor heuristic) [MITCISR-2024].
 9. **Anchor visible early wins** and communicate them; they build credibility with the sponsor [SBI-2025].
-10. **Shorten the review cycle when conditions shift**; practitioners expect 3–6-month plan reviews to
-    replace annual ones (self-reported intentions) [SIMONK-2025].
+10. **Shorten the review cycle when conditions shift**; the share of private-equity firms reviewing value
+    creation plans every 3–6 months is expected to rise from 20% to 39% (self-reported intentions) [SIMONK-2025].
 
 ## 6. Common traps
 
@@ -198,7 +199,8 @@ Continuing the audit partner's practice (team-level plan; at unit scope the same
   methodology note; two-hour training for staff.
 - **60 days:** go/no-go on `ct-07`; extend to all engagements if met; `ct-10` starts on files that use F1.
 - **90 days:** value review against the case; choose the client for `ct-08`; re-check the stage against the
-  Adopting markers (one workflow with an owner, a baseline, a human-check design and an approved tool).
+  Experimenting exit criteria in `onboarding.md` (one workflow with a named owner, a baseline, a designed human
+  check and an approved tool).
 
 | KPI (`ct-07`) | Baseline | Normal range | Owner | Rhythm | If out of range |
 |---|---|---|---|---|---|
@@ -233,7 +235,7 @@ and `status`. In `opportunities.yaml`, every chosen item has `next_step: { actio
 - `FTI-PLAYS-2024` — FTI Consulting, *AI in private equity: three plays*, consultancy, 2024-12-04 (updated 2026-05-22). https://www.fticonsulting.com/insights/articles/ai-private-equity-three-plays-driving-value-creation-2025
 - `GARTNER-CFO1-2026` — Gartner, *CFOs must stop mistaking finance AI deployment for value creation*, analyst release, 2026-05-28. https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation
 - `GARTNER-CSO-2026` — Gartner, *31% of chief sales officers cited difficulty proving ROI of AI-driven tools* (Q&A), analyst, 2026-05-19. https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-survey-shows-thirty-one-percent-of-chief-sales-officers-cited-difficulty-proving-roi-of-ai-driven-tools-as-a-top-challenge-for-sales-objectives-in-two-thousand-twenty-si
-- `GLOVER-2015` — Glover, Farris, Van Aken, *Sustainability of rapid improvement* (65 kaizen events, manufacturing), IJPR, 2015. https://ideas.repec.org/a/taf/tprsxx/v53y2015i13p4068-4086.html
+- `GLOVER-2015` — Glover, Farris, Van Aken, *The relationship between continuous improvement and rapid improvement sustainability* (65 kaizen events, manufacturing), IJPR, 2015. https://ideas.repec.org/a/taf/tprsxx/v53y2015i13p4068-4086.html
 - `GT-2013` — Grant Thornton with PitchBook, *What can be done in 100 days?*, consultancy survey, 2013-10. https://www.grantthornton.in/globalassets/1.-member-firms/india/assets/pdfs/pe-100-day-plan-survey-what-can-be-done.pdf
 - `HBSWK-2007` — HBS Working Knowledge, *Bringing lean principles to service industries* (Wipro), 2007-10-22. https://www.library.hbs.edu/working-knowledge/bringing-lean-principles-to-service-industries
 - `ICAEW-GOV-2026` — ICAEW, *AI governance: 10 essential questions for responsible adoption*, professional body, 2026-07-03. https://www.icaew.com/technical/technology/artificial-intelligence/managing-risks/ai-governance-10-essential-questions-for-responsible-adoption
@@ -241,11 +243,11 @@ and `status`. In `opportunities.yaml`, every chosen item has `next_step: { actio
 - `IMDA-MGF-2026` — IMDA Singapore, *Model AI governance framework for agentic AI* v1.5, regulator guidance, 2026-05-20. https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf
 - `LANGCHAIN-AMBIENT-2025` — LangChain, *Introducing ambient agents*, vendor blog, 2025-01-14. https://www.langchain.com/blog/introducing-ambient-agents
 - `LEI-ETHINGTON-2026` — Lean Enterprise Institute, *Automation, AI, and the risk of doing things efficiently that should not be done at all*, 2026-03-05. https://www.lean.org/the-lean-post/articles/automation-ai-and-the-risk-of-doing-things-efficiently-that-should-not-be-done-at-all/
-- `LEI-KAIZEN-ND` — Lean Enterprise Institute, *Kaizen* (lexicon), undated. https://www.lean.org/lexicon-terms/kaizen/
+- `LEI-KAIZEN-ND` — Lean Enterprise Institute, *Kaizen* (lexicon), updated 2023-02-02. https://www.lean.org/lexicon-terms/kaizen/
 - `MCKINSEY-1YR-2025` — McKinsey, *One year of agentic AI: six lessons*, consultancy, 2025-09-12. https://www.mckinsey.com/capabilities/quantumblack/our-insights/one-year-of-agentic-ai-six-lessons-from-the-people-doing-the-work
 - `METR-2025` — METR, *Impact of early-2025 AI on experienced open-source developer productivity*, RCT, 2025-07. https://arxiv.org/abs/2507.09089
 - `MITCISR-2024` — Weill, Woerner, Sebastian (MIT CISR), *Building enterprise AI maturity*, research briefing, 2024-12. https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian
-- `NIST-CTRL-ND` — NIST/SEMATECH, *What are control charts?* (e-Handbook 6.3.1), undated. https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc31.htm
+- `NIST-CTRL-ND` — NIST/SEMATECH, *What are control charts?* (e-Handbook 6.3.1), undated (accessed 2026-10-16). https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc31.htm
 - `OPENAI-GUIDE-2025` — OpenAI, *A practical guide to building agents*, vendor guide, 2025-04. https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
 - `SBI-2025` — SBI Growth, *100-day execution: the make-or-break period*, consultancy, 2025-10-20. https://sbigrowth.com/insights/100-day-execution-the-make-or-break-period-for-pe-value-creation
 - `SIMONK-2025` — Simon-Kucher, *The operational era of value creation accelerates*, consultancy survey, 2025-09-22. https://www.simon-kucher.com/en/insights/private-equity-operational-era-value-creation-accelerates

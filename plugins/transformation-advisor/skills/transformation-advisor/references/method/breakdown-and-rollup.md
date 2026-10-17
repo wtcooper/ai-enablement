@@ -103,14 +103,14 @@ returns a first-pass map, diagnosis and opportunities.
 
 **Then, for every desk review:**
 - Label it in the unit's plan and in the parent: **"Draft to validate with the people who do the work."** Set the unit's `status` to `desk-review`.
-- Play back a short summary per unit to the user. Never present desk-review content as fact (spec §9 rule 4).
+- Play back a short summary per unit to the user. Never present desk-review content as fact (rule 4 in `SKILL.md`).
 - Add a **validation list** to the brief: the three numbers to replace with records, the two assumptions most likely
   to be wrong, and the roles to ask. Desk reviews describe work as imagined; only the people doing it know work as done [HOLLNAGEL-2017].
 - Include desk-review opportunities in the roll-up only with their label, and do not let them drive a big bet alone.
 
 ## 5. Rolling up
 
-1. **Check readiness.** List each unit's status: complete, desk review, in progress, not started. Agree with the user
+1. **Check readiness.** List each unit's `status`: `complete`, `desk-review`, `in-progress` or `not-started`. Agree with the user
    whether to roll up now with what exists, or wait.
 2. **Read the units.** Use subagents for this step: delegate one subagent per child unit with the `rollup-unit` brief,
    in parallel. If you cannot start subagents, process each unit yourself, one at a time. Each returns the unit's
@@ -128,13 +128,14 @@ returns a first-pass map, diagnosis and opportunities.
    the total like a value bridge: a planning device whose bars must each have an owner, not a causal proof
    [BDEMERSON-2026; CAPDYN-2014].
 7. **Compare units on the common measures:** which move fast, which lag, which have the biggest effect
-   [SIMONK-2025]. Show denominators and missing units; owners publish their best cases first [VISTA-2026].
+   [SIMONK-2025]. Show denominators and missing units; owner-published portfolio figures often cover selected companies
+   only [VISTA-2026].
 8. **Run the people checks across units:**
    - Do the units' hiring assumptions add up to fewer entry-level roles? Junior hiring is where the early labour-market
      effects show [STANFORD-CANARIES-2026; HARVARD-HOSSEINI-2026]. If so, plan how juniors will still learn.
    - Do several plans rely on the same managers, trainers or change support at the same time?
    - Is there one consistent message about roles, and does any unit's plan contradict it?
-   - Does every opportunity have role evolution with an explicit redeploy-or-reduce choice (spec §9 rule 2)?
+   - Does every opportunity have role evolution with an explicit redeploy-or-reduce choice (rule 2 in `SKILL.md`)?
 9. **Decide central versus local.** Centralize first the rules (risk, security, confidentiality) and how value is
    measured; leave use-case design with the units [FTI-PLAYS-2024]. Reuse use cases proven in one unit before scaling
    frontier ideas [DELOITTE-PE-2026].
@@ -167,13 +168,13 @@ All questions are for unit or organization scope. Plain wording, one at a time.
 
 | Expert move | When | What it reveals |
 |---|---|---|
-| **Write shared definitions into every brief before any unit starts** | Break down | Whether roll-up will be possible; inconsistent definitions are the usual reason it fails [KANBAN-GUIDE-2025; SIMONK-2025] |
+| **Write shared definitions into every brief before any unit starts** | Break down | Whether roll-up will be possible; comparing units needs standardized measures and consistent reporting [KANBAN-GUIDE-2025; SIMONK-2025] |
 | **Give every opportunity one owner, a baseline and a date,** and check for overlapping claims | Break down and roll-up | Unowned or double-counted value [BDEMERSON-2026] |
 | **Rank initiatives across units by speed and effect on the same measures** | Roll-up | Patterns to double down on [SIMONK-2025] |
 | **Hunt for the reuse case** | Roll-up | Shared components that make later units cheaper [MCKINSEY-1YR-2025] |
 | **Reuse proven use cases first; treat frontier ones as bets** | Roll-up | Cheap wins versus risk [DELOITTE-PE-2026] |
-| **Centralize rules and measurement first, leave design local** | Roll-up | A workable operating model; PE firms that ran AI purely company by company found it hard to reuse (consultancy-reported) [FTI-PLAYS-2024] |
-| **Ask for the denominator** of every unit's figures | Roll-up | Survivor bias in reported results [VISTA-2026] |
+| **Centralize rules and measurement first, leave design local** | Roll-up | A workable operating model; FTI warns that an AI operating model built for one portfolio company may not extend to the others (consultancy view) [FTI-PLAYS-2024] |
+| **Ask for the denominator** of every unit's figures | Roll-up | Selective reporting; owner-published figures often cover a subset of units [VISTA-2026] |
 | **Schedule a mid-point reset** and be ready to stop units that are not paying back | Plan | Plans run out of steam mid-way; resources should follow the winners [BAIN-MIDYEAR-2026] |
 
 | Trap | How to avoid it |
@@ -225,7 +226,7 @@ plan's path and inherits `settings` unless overridden; overrides are listed in i
 - **BAIN-DILIGENCE-2025**: Bain & Company, *New Diligence Challenge: Uncovering AI Risks and Opportunities* (consultancy, 2025-10-27). https://www.bain.com/insights/new-diligence-challenge-uncovering-ai-risks-and-opportunities/
 - **BAIN-MIDYEAR-2026**: Bain & Company, *Private Equity Midyear Report 2026* (consultancy, 2026-06-08). https://www.bain.com/insights/private-equity-midyear-report-2026/
 - **BCPARTNERS-2025**: BC Partners, *Spotlight on Portfolio Operations: Cameron Hulett* (PE firm Q&A, 2025-01-08). https://www.bcpartners.com/news/spotlight-on-portfolio-operations-cameron-hulett/
-- **BDEMERSON-2026**: BD Emerson, *Private Equity Value Creation Plan* (practitioner article, 2026-08-16). https://www.bdemerson.com/article/private-equity-value-creation-plan
+- **BDEMERSON-2026**: BD Emerson, *The Value Creation Plan: How PE Firms Turn a Thesis into an Exit* (practitioner article, 2026-07-06, updated 2026-08-16). https://www.bdemerson.com/article/private-equity-value-creation-plan
 - **CAPDYN-2014**: Capital Dynamics and TU München, *Value Creation in Private Equity* (academic–industry study, 2014-06). https://www.capdyn.com/Customer-Content/www/news/PDFs/1value-creation-in-private-equity-study-2014-finalv2.pdf
 - **DELOITTE-PE-2026**: Deloitte, *Raising the game: PE operating partners and CFOs* (consultancy, 2026-04). https://www.deloitte.com/content/dam/assets-shared/docs/industries/financial-services/2026/raising-the-game.pdf
 - **FTI-PLAYS-2024**: FTI Consulting, *AI in Private Equity: Three Plays for Driving Value Creation in 2025* (consultancy, 2024-12-04, updated 2026-05-22). https://www.fticonsulting.com/insights/articles/ai-private-equity-three-plays-driving-value-creation-2025

@@ -191,20 +191,21 @@ Then set `phase_completed: 2`, `next_phase: 3`, tick "Map" in the progress check
 
 ## 8. Sources
 
-- **AHRQ-CDM**: US Agency for Healthcare Research and Quality, *Critical Decision Method* (government toolkit, undated). https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/all-workflow-tools/critical-decision-method
+- **AHRQ-CDM**: US Agency for Healthcare Research and Quality, *Critical Decision Method* (government toolkit, undated; accessed 2026-10-16). https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/all-workflow-tools/critical-decision-method
 - **ALTER-2014**: Alter, *Theory of Workarounds*, Communications of the AIS 34 (academic, 2014; abstract read). https://aisel.aisnet.org/cais/vol34/iss1/55/
 - **ANTHROPIC-INTERVIEWER-2025**: Anthropic, *Introducing Anthropic Interviewer* (vendor research, 2025-12-04). https://www.anthropic.com/research/anthropic-interviewer
 - **BERNARD-1984**: Bernard et al., *The Problem of Informant Accuracy*, Annual Review of Anthropology 13 (academic review, 1984). https://bebr.ufl.edu/sites/default/files/Bernard%20et%20al.%20-%201984%20-%20The%20Problem%20of%20Informant%20Accuracy%20The%20Validity%20of.pdf
 - **BIRT-2016**: Birt et al., *Member checking*, Qualitative Health Research 26(13) (academic, 2016). https://kclpure.kcl.ac.uk/ws/files/52859539/Member_checking_a_tool_BIRT_Accepted_2016_GREEN_AAM.pdf
+- **CPAPA-ZANIN**: Zanin, *5 Questions to Ask Before Your SOX Team Adopts AI Agents*, CPA Practice Advisor (trade press; author is a SOX-tooling vendor's CEO, 2026-08-18). https://www.cpapracticeadvisor.com/?p=188703
 - **HOLLNAGEL-2017**: Hollnagel, *Can we ever imagine how work is done?*, HindSight 25, EUROCONTROL (practitioner magazine, 2017). https://www.skybrary.aero/sites/default/files/bookshelf/3934.pdf
 - **ISIX-SIPOC-2025**: iSixSigma, *SIPOC diagram* (practitioner guide, 2025-01-22). https://www.isixsigma.com/sipoc-copis/sipoc-diagram/
 - **KANBAN-GUIDE-2025**: Vacanti, *The Kanban Guide* (professional guide, 2025-05). https://kanbanguides.org/english/
 - **KECHT-2026**: Kecht, *Artificial Intelligence Along the Business Process Management Lifecycle* (dissertation, University of Bayreuth, 2026-03; abstract read). https://epub.uni-bayreuth.de/9065/1/Dissertation_CKecht.pdf
-- **LEI-GEMBA**: Lean Enterprise Institute, *Gemba / Gemba Walk* (lexicon, undated). https://www.lean.org/lexicon-terms/gemba/
-- **LEI-VSM-ND**: Lean Enterprise Institute, *Value Stream Mapping* (lexicon, undated). https://www.lean.org/lexicon-terms/value-stream-mapping/
+- **LEI-GEMBA**: Lean Enterprise Institute, *Gemba / Gemba Walk* (lexicon, undated; accessed 2026-10-16). https://www.lean.org/lexicon-terms/gemba/
+- **LEI-VSM-ND**: Lean Enterprise Institute, *Value Stream Mapping* (lexicon, undated; accessed 2026-10-16). https://www.lean.org/lexicon-terms/value-stream-mapping/
 - **NNG-FLAHERTY-2020**: Nielsen Norman Group, *Contextual Inquiry* (practitioner article, 2020-12-06). https://www.nngroup.com/articles/contextual-inquiry/
 - **NNG-NIELSEN-2010**: Nielsen, *Interviewing Users*, Nielsen Norman Group (practitioner article, 2010-07-25). https://www.nngroup.com/articles/interviewing-users/
 - **NNG-ROSALA-2020**: Rosala, *The Critical Incident Technique in UX*, Nielsen Norman Group (practitioner article, 2020-01-26). https://www.nngroup.com/articles/critical-incident-technique/
 - **PMMANIFESTO-2012**: IEEE Task Force on Process Mining, *Process Mining Manifesto* (professional body, 2012). https://www.tf-pm.org/resources/manifesto
 - **WIKI-PLANNING**: Wikipedia, *Planning fallacy*, citing Buehler et al. 1994 (secondary, accessed 2026-10-16). https://en.wikipedia.org/wiki/Planning_fallacy
-- Assurance steps and pain points: `archetypes/assurance/modules/controls-testing.md` §2 (PBC first-time-right estimate [CPAPA-ZANIN]).
+- Assurance steps and pain points: `archetypes/assurance/modules/controls-testing.md` §2.

@@ -42,7 +42,8 @@ on eliciting volumes, times or workarounds inside organizations, so treat number
 5. **Clarify ambiguity and contradictions** at once. If the person cannot answer, try once from another angle, then move on [CHOPRA-2026; GEIECKE-2025].
 6. **Follow the person's lead, then redirect gently.** Pivot when answers stay on the surface or repeat. Do not recap at length; refer back in a few words [CHOPRA-2026].
 7. **Respect boundaries.** If the person signals discomfort, move on. Stay on topic [CHOPRA-2026].
-8. **Keep it short.** Ten to fifteen minutes per topic is a good default; offer to continue later [ANTHROPIC-INTERVIEWER-2025].
+8. **Keep it short.** Ten to fifteen minutes per topic is a good default; AI-led interviews of that length worked in one
+   vendor study [ANTHROPIC-INTERVIEWER-2025]. Offer to continue later.
 9. **Show progress.** Name the phase and what comes next, in a line, when moving between topics.
 10. **Avoid the classic mistakes:** long, vague or technical questions; asking the person to design the solution; not
     probing; skipping existing systems, stakeholders or success criteria; no final summary; repeating questions [KORN-2025].
@@ -102,11 +103,11 @@ script. This is a practitioner extension, not a tested method.
 
 | Person | Signs | Adapt |
 |---|---|---|
-| **Senior leader** (partner, director, executive) | Polished, general answers; little time | Use their vocabulary from the archetype; open with one easy question; press gently for a specific case when answers stay broad; offer the topic list in advance [EMPSON-2018]. Treat their account as work as imagined and test it with those who do the work [HOLLNAGEL-2017] |
+| **Senior leader** (partner, director, executive) | Polished, general answers; little time | Use their vocabulary from the archetype; open with one easy question; press gently for a specific case when answers stay broad [EMPSON-2018]. Treat their account as work as imagined and test it with those who do the work [HOLLNAGEL-2017] |
 | **Person doing the work** | Detail-rich; may be wary of consequences | Make it clear problems are welcome; ask about cases, not performance; never ask who is slow or weak |
 | **Anxious about their role** | Asks whether jobs are at risk; hedges | Acknowledge the worry plainly. Do not promise safety you cannot know. Say what is known and not known, and help them see themselves as the person leading the change. Use `people-and-change.md` |
 | **Skeptic who wants hard numbers** | Challenges every claim | Give provenance with every figure (self-reported, vendor-published, independent); offer ranges; propose a test on their own samples |
-| **Quiet AI user** | Mentions shortcuts vaguely | Normalise: "many people use it quietly, and there is no right answer". In one vendor study, 69% of interviewees mentioned stigma about using AI at work [ANTHROPIC-INTERVIEWER-2025] |
+| **Quiet AI user** | Mentions shortcuts vaguely | Normalise: "many people use it quietly, and there is no right answer". In one vendor study, 69% of the general-workforce professionals interviewed mentioned the social stigma of using AI at work [ANTHROPIC-INTERVIEWER-2025] |
 | **Defensive** | Agrees with everything; contradictions with evidence | Slow down; re-ask from another angle; check documents; avoid any hint of judgment [BISPO-2022; GEIECKE-2025] |
 | **Time-poor** | Short answers, wants output | Ask the starred core questions only; infer the rest and play it back for correction |
 
@@ -130,8 +131,9 @@ script. This is a practitioner extension, not a tested method.
 The advisor talks only to the user. When the plan needs other voices (front-line staff, unit owners, delegates):
 - **Give the user a one-page guide**: purpose, the five to eight questions from the relevant phase file, the probe
   ladder, the number labels, and a reminder not to collect client-confidential or personal data.
-- **Suggest the setting:** interview people who do the work, across roles and seniority, not only volunteers
-  [MIT-NANDA-2025]; privately rather than in front of managers [BISPO-2022].
+- **Suggest the setting:** interview people who do the work, across roles and seniority, not only volunteers;
+  self-selected samples skew findings, as MIT NANDA notes of its own sample [MIT-NANDA-2025]. Interview privately
+  rather than in front of managers [BISPO-2022].
 - **For workshops,** group people by role and use a simple board: workflow, pain point, frequency, impact, effort,
   readiness, owner. Ask participants to bring a real example: notes, drafts, templates [OPENAI-ACADEMY-2025].
 - **Bring results back as evidence:** paste or upload notes, and the advisor marks each item stated or inferred and plays back what changed.
@@ -149,10 +151,10 @@ The advisor talks only to the user. When the plan needs other voices (front-line
 | Asking people to design the AI solution | Map tasks; match capabilities yourself [NNG-NIELSEN-2010] |
 | Trusting recalled numbers | Source and label; ask for records and ranges [BERNARD-1984] |
 | Taking the leader's account as the process | Test with those who do the work [HOLLNAGEL-2017] |
-| Treating simulated or imagined users as evidence | Use real people for facts; simulations only for rehearsal [ATAEI-2024] |
-| Sampling only the willing | Ask for a spread of roles and seniority; state the limit [MIT-NANDA-2025] |
+| Treating simulated or imagined users as evidence | Simulated users can surface ideas [ATAEI-2024], but their answers are not facts about this organization; use real people for facts and simulations for rehearsal |
+| Sampling only the willing | Ask for a spread of roles and seniority; state the limit. MIT NANDA flags self-selection in its own sample [MIT-NANDA-2025] |
 | Interview fatigue | Keep topics short; offer to continue later; skip what is known |
-| Promising job safety to calm fear | Be honest about what is known (spec §9 rule 8) |
+| Promising job safety to calm fear | Be honest about what is known (rule 8 in `SKILL.md`) |
 
 ## 10. Worked example and output
 
@@ -175,7 +177,7 @@ preparation. One question per turn; the advisor's private notes are in brackets.
 - **Advisor:** Is there anything you do outside the official tool to get the return out?
 - **User:** I keep my own spreadsheet of vendor tax codes that are often wrong. Honestly, I'm a bit worried AI will make my job pointless.
 - **Advisor:** That is a fair worry, and I won't pretend to know how every role will change. What we are doing here is
-  making visible the judgment you apply, like that spreadsheet, so you can shape what changes. What do you use the spreadsheet for? [§9 rule 8; back to the work]
+  making visible the judgment you apply, like that spreadsheet, so you can shape what changes. What do you use the spreadsheet for? [rule 8; back to the work]
 - *(close)*
 - **Advisor:** Let me say it back. After the close you pull the tax report, compare it with last month, investigate
   swings over about 20% using your own list of problem vendor codes, fix the codes, then file. About fifteen
@@ -188,24 +190,24 @@ record client-confidential or sensitive personal data.
 
 ## 11. Sources
 
-- **AHRQ-CDM**: US Agency for Healthcare Research and Quality, *Critical Decision Method* (government toolkit, undated). https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/all-workflow-tools/critical-decision-method
+- **AHRQ-CDM**: US Agency for Healthcare Research and Quality, *Critical Decision Method* (government toolkit, undated; accessed 2026-10-16). https://digital.ahrq.gov/health-it-tools-and-resources/evaluation-resources/workflow-assessment-health-it-toolkit/all-workflow-tools/critical-decision-method
 - **ANTHROPIC-INTERVIEWER-2025**: Anthropic, *Introducing Anthropic Interviewer* (vendor research, 1,250 professionals, 2025-12-04). https://www.anthropic.com/research/anthropic-interviewer
 - **ATAEI-2024**: Ataei et al., *Elicitron* (academic preprint, 2024-04-04). https://arxiv.org/abs/2404.16045
 - **BERNARD-1984**: Bernard et al., *The Problem of Informant Accuracy*, Annual Review of Anthropology 13 (academic review, 1984). https://bebr.ufl.edu/sites/default/files/Bernard%20et%20al.%20-%201984%20-%20The%20Problem%20of%20Informant%20Accuracy%20The%20Validity%20of.pdf
 - **BIRT-2016**: Birt et al., *Member checking*, Qualitative Health Research 26(13) (academic, 2016). https://kclpure.kcl.ac.uk/ws/files/52859539/Member_checking_a_tool_BIRT_Accepted_2016_GREEN_AAM.pdf
 - **BISPO-2022**: Bispo Júnior, *Social desirability bias in qualitative health research* (academic, 2022-11-18). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9749714/
-- **CHOPRA-2026**: Chopra, Haaland, *Conducting Qualitative Interviews with AI*, CESifo WP 10666 (academic working paper, version 2026-03-09). https://www.cesifo.org/DocDL/cesifo1_wp10666.pdf
+- **CHOPRA-2026**: Chopra, Haaland, *Conducting Qualitative Interviews with AI*, CESifo WP 10666 (academic working paper, 2026-06; authors' version 2026-03-09). https://www.cesifo.org/DocDL/cesifo1_wp10666.pdf
 - **EMPSON-2018**: Empson, *Elite interviewing in professional organizations*, Journal of Professions and Organization (academic, 2018). https://openaccess.city.ac.uk/id/eprint/18237/
 - **GEIECKE-2025**: Geiecke, Jaravel, *Conversations at Scale: Robust AI-led Interviews* (academic working paper, 2025-07-16). https://conference.nber.org/conf_papers/f221279.pdf
 - **HOLLNAGEL-2017**: Hollnagel, *Can we ever imagine how work is done?*, HindSight 25 (practitioner magazine, 2017). https://www.skybrary.aero/sites/default/files/bookshelf/3934.pdf
 - **KORN-2025**: Korn, Gorsch, Vogelsang, *LLMREI: Automating Requirements Elicitation Interviews with LLMs* (academic preprint, 2025-07-03). https://arxiv.org/abs/2507.02564
-- **LEI-5WHYS**: Lean Enterprise Institute, *5 Whys* (lexicon, undated). https://www.lean.org/lexicon-terms/5-whys/
+- **LEI-5WHYS**: Lean Enterprise Institute, *5 Whys* (lexicon, undated; accessed 2026-10-16). https://www.lean.org/lexicon-terms/5-whys/
 - **METR-2025**: METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity* (RCT, 2025-07). https://arxiv.org/abs/2507.09089
 - **MIT-NANDA-2025**: MIT NANDA, *The GenAI Divide* (preliminary report; sample limitations in §8.2, 2025-07). https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
 - **NNG-FLAHERTY-2020**: Nielsen Norman Group, *Contextual Inquiry* (practitioner article, 2020-12-06). https://www.nngroup.com/articles/contextual-inquiry/
 - **NNG-NIELSEN-2010**: Nielsen, *Interviewing Users*, Nielsen Norman Group (practitioner article, 2010-07-25). https://www.nngroup.com/articles/interviewing-users/
 - **NNG-ROSALA-2020**: Rosala, *The Critical Incident Technique in UX*, Nielsen Norman Group (practitioner article, 2020-01-26). https://www.nngroup.com/articles/critical-incident-technique/
-- **OPENAI-ACADEMY-2025**: OpenAI Academy, *Run a use case discovery workshop* (vendor guide, 2025-09-17). https://academy.openai.com/home/clubs/champions-ecqup/resources/team-use-case-brainstorm-playbook-2025-09-15
+- **OPENAI-ACADEMY-2025**: OpenAI Academy, *Use Case Discovery Workshop Playbook* (vendor guide, 2025-09-17, updated 2026-06-12). https://academy.openai.com/home/clubs/champions-ecqup/resources/team-use-case-brainstorm-playbook-2025-09-15
 - **WIKI-5WHYS**: Wikipedia, *Five whys*, criticism section (secondary, accessed 2026-10-16). https://en.wikipedia.org/wiki/Five_whys
 - **WIKI-PLANNING**: Wikipedia, *Planning fallacy*, citing Buehler et al. 1994 (secondary, accessed 2026-10-16). https://en.wikipedia.org/wiki/Planning_fallacy
 - **WUTTKE-2025**: Wuttke et al., *AI Conversational Interviewing*, LaTeCH-CLfL 2025 (academic, small-N, 2025-03-12). https://arxiv.org/abs/2410.01824

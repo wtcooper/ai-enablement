@@ -169,8 +169,9 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
    issues resolved per hour on average, 34% for novices, minimal for experienced staff (independent)
    [NBER-BRYNJOLFSSON-2023].
 6. **Classify and set the proof standard.** Individual productivity, business automation or new value.
-   Don't judge a new-service bet by a productivity yardstick. Gartner's finance survey found "Upend"
-   initiatives more than twice as likely to report high realized value (self-reported) [GARTNER-CFO2-2026; MSFT-CAF-2026].
+   Don't judge a new-service bet by a productivity yardstick. In Gartner's finance survey, functions investing in
+   "Upend" initiatives (new value propositions, products or markets) were more than twice as likely to report
+   high realized value (self-reported) [GARTNER-CFO2-2026; MSFT-CAF-2026].
 7. **Concentrate.** If the long list has more than a handful of items, push for a few end-to-end
    workflows. BCG reports 62% of initiatives deployed at "future-built" firms against 12% at laggards
    (self-reported) [BCG-GAP-2025].
@@ -181,8 +182,9 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
    (independent) [METR-2025].
 10. **Reuse case.** List the building blocks (ingest, extract, search, analyze) that several options share,
     and rank shared components up [MCKINSEY-1YR-2025].
-11. **Finance-signed baseline before leaving pilot.** Ask who signs off the number and who owns the
-    business result [DELOITTE-TT-2025].
+11. **Finance-signed case before production.** Ask who signs off the expected return and who owns the
+    business result. One technology company requires sign-off by the finance partner and the business-unit
+    head before anything reaches production [DELOITTE-TT-2025].
 
 ## 6. Common traps
 
@@ -191,7 +193,7 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 | **Ranking on hours saved alone** | Require a range per lever and a capacity destination; quality and risk count |
 | **Single-point values** | Low and high with assumptions, always (rule 3 in `SKILL.md`) |
 | **Treating the matrix as truth** | Say it is a facilitation device; let disagreement expose missing levers |
-| **Efficiency-only portfolio** | Check the mix; add a quality, risk or growth option. 45% of finance AI investment leans to productivity versus 20% to decision quality (self-reported) [GARTNER-CFO2-2026] |
+| **Efficiency-only portfolio** | Check the mix; add a quality, risk or growth option. In Gartner's survey of 204 finance leaders, 45% of finance AI investment leaned to productivity and 20% to decision quality (self-reported) [GARTNER-CFO2-2026] |
 | **Pilot sprawl** | Cap live initiatives at owner and review capacity; park with triggers |
 | **Unquoted provenance** | Every figure used in a score carries who measured it; vendor claims stay grade C |
 | **Headline statistics without definitions** | Ask what a "95% fail" or "97% positive ROI" figure measured and who answered before using it [MIT-NANDA-2025] |
@@ -218,8 +220,9 @@ illustrative; evidence ids are from `../archetypes/assurance/use-cases/controls-
 
 *Ranges behind the value scores (illustrative):* `ct-07` capacity 180–1,190 net hours in the first season
 (see `business-case.md` for the arithmetic). One firm self-reports 16 hours falling to 5–6 hours per
-engagement, mostly on substantive testing; PwC calls its year-one savings "not that drastic yet". `ct-10`
-quality 10–30% fewer review notes on missing evidence, no published measure yet (grade B, qualitative).
+engagement, mostly on substantive testing; PwC says its overall year-one AI savings in assurance are "not that
+drastic yet". `ct-10` quality 10–30% fewer review notes on missing evidence (illustrative; no published
+measure yet; grade B, qualitative).
 *Assumptions that would change the order:* matching hours per engagement in the time records; added review
 time per engagement; and whether clients ask for lower fixed fees once savings are visible.
 
@@ -259,7 +262,7 @@ higher levels, add the roll-up summary and set `rolled_up_from` on merged items.
 - `DELOITTE-TT-2025` — Deloitte Insights, *The agentic reality check*, consultancy, 2025-12-10. https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/agentic-ai-strategy.html
 - `GARTNER-CFO2-2026` — Gartner, *45% of CFOs say AI investments lean toward productivity*, analyst survey release, 2026-07-20. https://www.gartner.com/en/newsroom/press-releases/2026-07-20-gartner-survey-shows-45-percent-of-cfos-say-their-ai-investments-lean-towwards-productivity-while-20-percent-say-these-investments-lean-towards-decision-quality
 - `GT-2013` — Grant Thornton with PitchBook, *What can be done in 100 days?*, consultancy survey, 2013-10. https://www.grantthornton.in/globalassets/1.-member-firms/india/assets/pdfs/pe-100-day-plan-survey-what-can-be-done.pdf
-- `HDR-AIE` — Hubbard Decision Research, *Applied Information Economics*, method page, undated. https://hubbardresearch.com/applied-information-economics/
+- `HDR-AIE` — Hubbard Decision Research, *Applied Information Economics*, method page, 2013-12-26 (updated 2026-01-20). https://hubbardresearch.com/applied-information-economics/
 - `LEI-ETHINGTON-2026` — Lean Enterprise Institute, *Automation, AI, and the risk of doing things efficiently that should not be done at all*, 2026-03-05. https://www.lean.org/the-lean-post/articles/automation-ai-and-the-risk-of-doing-things-efficiently-that-should-not-be-done-at-all/
 - `LEI-PEPERKAMP-2026` — Lean Enterprise Institute, *Lean in the age of AI*, 2026-02-18. https://www.lean.org/the-lean-post/articles/lean-in-the-age-of-ai-optimizing-the-stream-not-the-coder/
 - `MCKINSEY-1YR-2025` — McKinsey, *One year of agentic AI: six lessons*, consultancy, 2025-09-12. https://www.mckinsey.com/capabilities/quantumblack/our-insights/one-year-of-agentic-ai-six-lessons-from-the-people-doing-the-work
@@ -269,5 +272,5 @@ higher levels, add the roll-up summary and set `rolled_up_from` on merged items.
 - `MSFT-CAF-2026` — Microsoft Learn, *Plan for AI adoption: prioritize AI use cases*, vendor guidance, updated 2026-10-15. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
 - `NBER-BRYNJOLFSSON-2023` — Brynjolfsson, Li, Raymond, *Generative AI at work* (NBER WP 31161), 2023-11. https://www.nber.org/papers/w31161
 - `PEX-DUMAS-2025` — M. Dumas, *Process intelligence: the foundation of agentic AI success*, PEX Network, 2025-02-04. https://www.processexcellencenetwork.com/ai/articles/process-intelligence-agentic-ai/amp
-- `TOCI-5FS` — Theory of Constraints Institute, *Five focusing steps*, practitioner guide, undated. https://www.tocinstitute.org/five-focusing-steps.html
+- `TOCI-5FS` — Theory of Constraints Institute, *Five focusing steps*, practitioner guide, © 2021 (accessed 2026-10-16). https://www.tocinstitute.org/five-focusing-steps.html
 - Archetype evidence: `../archetypes/assurance/modules/controls-testing.md` and its use-case YAML.

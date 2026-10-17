@@ -69,14 +69,16 @@ measured gaps).
 
 Hours released are not value. In the UK cross-government Copilot trial, users reported saving 26 minutes a
 day, but the evaluators could not tell how the time was used (self-reported) [UKGDS-2025]; a departmental
-evaluation found no evidence that time savings improved productivity [UKDBT-2025].
+evaluation found no robust evidence that time savings improved productivity, though measuring that was not a
+main aim [UKDBT-2025].
 
 1. **Gross hours** = volume × hands-on hours per item × share of items in scope × time saving (range).
 2. **Net hours** = gross − added review, correction and new tasks − first-year learning time. A vendor survey
    reports nearly 40% of AI time savings lost to rework (vendor-published) [WORKDAY-2026].
 3. **Adoption**: multiply by the share of people or items that will actually use it, as a range.
 4. **Process cap**: a step's speed-up moves end-to-end time only in proportion to its share of elapsed
-   time, and only if the next step can absorb the output [NBER-ACEMOGLU-2024; LEI-PEPERKAMP-2026].
+   time, and only if the next step can absorb the output [LEI-PEPERKAMP-2026]. Acemoglu applies the same
+   share-of-tasks logic to the whole economy [NBER-ACEMOGLU-2024].
 5. **Destination** — split net hours three ways (the split is advisor synthesis [GARTNER-CSO-2026]):
    - **Absorbed**: time that disappears into more email or more of the same. Counts as zero.
    - **Redeployed**: a named destination with an owner and an output metric (backlog cleared, more
@@ -84,8 +86,8 @@ evaluation found no evidence that time savings improved productivity [UKDBT-2025
    - **Cashable**: cost that actually goes away: external spend, contractors, overtime, avoided hires or a
      role reduction decided openly under rule 2. Only this bucket enters a cost line, at loaded cost.
 
-Only 7% of HR leaders surveyed by Gartner said their organization gives guidance on using time saved by AI
-[GARTNER-HR-2025]: ask who owns the freed hours before valuing them.
+In a Gartner survey of 114 HR leaders, only 7% of organizations gave employees guidance on using time saved
+by AI [GARTNER-HR-2025]: ask who owns the freed hours before valuing them.
 
 ### 3.3 Ranges, assumptions and what to measure first
 
@@ -118,8 +120,8 @@ intangibles as intangibles rather than forcing them into money [ROIINST-2014].
 - **Comparison**: a parallel run on the same items, a staggered start, or a comparison group. Without one,
   say the result cannot isolate the effect of the change [ROIINST-2014; NBER-BRYNJOLFSSON-2023].
 - **KPIs**: three to five, leading and lagging, each efficiency measure paired with a quality guardrail.
-  Leaders tracking at least one growth measure reported strongly positive ROI more often (35% versus 13%;
-  association, self-reported) [WHARTON-2026].
+  Companies measuring AI against growth outcomes reported strong ROI more often than those measuring
+  efficiency alone (35% versus 13%; association, self-reported) [WHARTON-2026].
 - **Horizon**: measured gains can lag the investment [NBER-JCURVE-2020]; state when financial signal is
   expected and what leading indicators show progress before then.
 - **Go/no-go**: criteria for the pilot, set before it starts [GARTNER-CSO-2026].
@@ -127,8 +129,8 @@ intangibles as intangibles rather than forcing them into money [ROIINST-2014].
 ### 3.7 Portfolio view (unit and organization scope)
 
 Write a bridge from today's cost, hours or margin to the target: one bar per initiative, each with
-baseline, target range, owner and quarter. Keep overlaps visible and check no two units bank the same
-capacity [BDEMERSON-2026]. Keep AI-attributable benefit and AI run cost in their own lines [BAIN-TECH-2026].
+baseline, target range, owner and quarter [BDEMERSON-2026]. Keep overlaps visible and check that no two units
+bank the same capacity. Keep AI-attributable benefit and AI run cost in their own lines [BAIN-TECH-2026].
 Ask what format the organization requires at this spend level.
 
 ## 4. Question bank
@@ -198,7 +200,7 @@ One-page case for `ct-07` in the audit partner's practice (continuing `prioritiz
   value to its source; the auditor works every mismatch; the reviewer re-performs a sample of matches.
 - **Evidence:** `assurance-controls-testing-07`, grade B: one firm reports 16 hours falling to 5–6 hours per
   engagement and another about half the time on invoice samples (both self-reported, mostly substantive
-  testing); PwC calls year-one savings "not that drastic yet" (archetype module). No independent measure of
+  testing); PwC says its overall year-one AI savings in assurance are "not that drastic yet" (archetype module). No independent measure of
   test quality exists.
 
 | Lever | Metric | Low | High | Unit | Assumptions |
@@ -246,10 +248,10 @@ that can be pasted elsewhere. Set `phase_completed: 6`, `next_phase: 7`, `update
 - `BDEMERSON-2026` — BD Emerson, *Private equity value creation plan*, practitioner article, 2026-08-16. https://www.bdemerson.com/article/private-equity-value-creation-plan
 - `EY-2025` — EY, *US AI Pulse: productivity fueling reinvestment over workforce reductions* (n=500), survey release, 2025-12-09. https://www.ey.com/en_us/newsroom/2025/12/ai-driven-productivity-is-fueling-reinvestment-over-workforce-reductions
 - `FINOPS-2026` — FinOps Foundation, *Token economics: the atomic unit of AI value*, practitioner body, 2026-05-10. https://finops.org/insights/token-economics-the-atomic-unit-of-ai-value/
-- `FORRESTER-TEI` — Forrester, *Total Economic Impact methodology*, method page, undated. https://www.forrester.com/policies/tei
+- `FORRESTER-TEI` — Forrester, *Total Economic Impact methodology*, method page, updated 2024-10-31. https://www.forrester.com/policies/tei
 - `GARTNER-CSO-2026` — Gartner, *31% of chief sales officers cited difficulty proving ROI of AI-driven tools* (Q&A), analyst, 2026-05-19. https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-survey-shows-thirty-one-percent-of-chief-sales-officers-cited-difficulty-proving-roi-of-ai-driven-tools-as-a-top-challenge-for-sales-objectives-in-two-thousand-twenty-si
 - `GARTNER-HR-2025` — Gartner, *88% of HR leaders say their organizations have not realized significant business value from AI tools*, analyst survey release, 2025-10-28. https://www.gartner.com/en/newsroom/press-releases/2025-10-28-gartner-survey-shows-88-percent-of-hr-leaders-say-their-organizations-have-not-realized-significant-business-value-from-ai-tools
-- `HDR-AIE` — Hubbard Decision Research, *Applied Information Economics*, method page, undated. https://hubbardresearch.com/applied-information-economics/
+- `HDR-AIE` — Hubbard Decision Research, *Applied Information Economics*, method page, 2013-12-26 (updated 2026-01-20). https://hubbardresearch.com/applied-information-economics/
 - `KPMG-2026` — KPMG US, *AI Quarterly Pulse Q2 2026*, survey release, 2026-06-24. https://www.kpmg.com/us/en/media/news/q2-ai-pulse-2026.html
 - `LEI-PEPERKAMP-2026` — Lean Enterprise Institute, *Lean in the age of AI*, 2026-02-18. https://www.lean.org/the-lean-post/articles/lean-in-the-age-of-ai-optimizing-the-stream-not-the-coder/
 - `METR-2025` — METR, *Impact of early-2025 AI on experienced open-source developer productivity*, RCT, 2025-07. https://arxiv.org/abs/2507.09089

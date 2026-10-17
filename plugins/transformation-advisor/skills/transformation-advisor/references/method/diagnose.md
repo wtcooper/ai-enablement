@@ -133,7 +133,7 @@ Plain wording, one question at a time.
 | **Test every idea against the constraint:** does it speed the bottleneck or the step before it? | Shortlisting | Local gains that only create a pile-up [LEI-PEPERKAMP-2026; PEX-DUMAS-2025] |
 | **Exploit and subordinate before elevating:** use the constraint fully and align other steps before buying or hiring | Shortlisting | Cheap capacity before tools [TOCI-5FS] |
 | **Ask who verifies AI output and whether review is the new constraint** | Any AI candidate | Review load that cancels time saved. In one vendor survey nearly 40% of AI time savings were lost to rework (self-reported) [WORKDAY-2026] |
-| **Use the queue rule on the busiest step** | Reviewer or specialist near full booking | Why 12.5% more work at 80% booking roughly doubles waiting (4× → 9×) [WIKI-KINGMAN-2025] |
+| **Use the queue rule on the busiest step** | Reviewer or specialist near full booking | Why 12.5% more work at 80% booking more than doubles waiting (4× → 9×) [WIKI-KINGMAN-2025] |
 | **Study demand at the front end:** which part exists only because of an earlier failure? | Service and request-driven work | Failure demand that disappears when the cause is fixed [SEDDON-SWINSCOE-2020] |
 | **Run five whys on one specific failure,** check each "because" against a record, and branch when causes multiply | A particular defect or delay | Causes behind symptoms; not a verdict on a whole process [LEI-5WHYS; WIKI-5WHYS] |
 | **Compare felt and measured gains** on existing AI use | A team says a tool "saves hours" | Perception gaps. In an independent trial, developers expected AI to cut task time 24%, believed afterwards it had cut 20%, and measured time rose 19% (software, adjacent) [METR-2025] |
@@ -223,23 +223,23 @@ Then set `phase_completed: 3`, `next_phase: 4`, tick "Diagnose" and update `upda
 - **HBS-JAGGED-2023**: Dell'Acqua et al., *Navigating the Jagged Technological Frontier* (field experiment, HBS WP 24-013, 2023-09). https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
 - **KANBANU-LITTLE-2022**: Kanban University, *Exploring Little's Law* (talk deck, 2022). https://kanban.university/wp-content/uploads/2022/09/Exploring-Littles-Law-KGS-2022.pdf
 - **KPMG-AIPULSE-Q3-2025**: KPMG US, *Q3 2025 AI Quarterly Pulse* (consultancy survey, n=130, 2025-09-18). https://kpmg.com/us/en/media/news/q3-ai-pulse.html
-- **LEI-5WHYS**: Lean Enterprise Institute, *5 Whys* (lexicon, undated). https://www.lean.org/lexicon-terms/5-whys/
-- **LEI-7W-ND**: Lean Enterprise Institute, *Seven Wastes* (lexicon, undated). https://www.lean.org/lexicon-terms/seven-wastes/
+- **LEI-5WHYS**: Lean Enterprise Institute, *5 Whys* (lexicon, undated; accessed 2026-10-16). https://www.lean.org/lexicon-terms/5-whys/
+- **LEI-7W-ND**: Lean Enterprise Institute, *Seven Wastes* (lexicon, undated; accessed 2026-10-16). https://www.lean.org/lexicon-terms/seven-wastes/
 - **LEI-ETHINGTON-2026**: Ethington, *Automation, AI, and the Risk of Doing Things Efficiently That Should Not Be Done at All*, The Lean Post (practitioner, 2026-03-05). https://www.lean.org/the-lean-post/articles/automation-ai-and-the-risk-of-doing-things-efficiently-that-should-not-be-done-at-all/
 - **LEI-PEPERKAMP-2026**: Peperkamp, *Lean in the Age of AI: Optimizing the Stream, Not the Coder*, The Lean Post (practitioner, 2026-02-18). https://www.lean.org/the-lean-post/articles/lean-in-the-age-of-ai-optimizing-the-stream-not-the-coder/
 - **MCKINSEY-1YR-2025**: McKinsey, *One year of agentic AI: Six lessons from the people doing the work* (consultancy, 2025-09-12). https://www.mckinsey.com/capabilities/quantumblack/our-insights/one-year-of-agentic-ai-six-lessons-from-the-people-doing-the-work
 - **METR-2025**: METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity* (RCT, 2025-07). https://arxiv.org/abs/2507.09089
 - **NBER-ACEMOGLU-2024**: Acemoglu, *The Simple Macroeconomics of AI*, NBER WP 32487 (working paper, 2024-05). https://www.nber.org/papers/w32487
 - **NBER-BRYNJOLFSSON-2023**: Brynjolfsson, Li, Raymond, *Generative AI at Work*, NBER WP 31161 (working paper, 2023-04, revised 2023-11). https://www.nber.org/papers/w31161
-- **NIST-CTRL-ND**: NIST/SEMATECH, *What are Control Charts?* (standards reference, undated). https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc31.htm
+- **NIST-CTRL-ND**: NIST/SEMATECH, *What are Control Charts?* (standards reference, undated; accessed 2026-10-16). https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc31.htm
 - **OPENAI-GUIDE-2025**: OpenAI, *A practical guide to building agents* (vendor guide, 2025-04). https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
 - **OPTRO-SURVEY**: Optro, *One in Three Organizations Say They Have Acted on Wrong Decisions Made by AI Agents* (vendor survey release, 2026-10-08). https://optro.ai/blog/one-in-three-organizations-say-they-have-acted-on-wrong-decisions-made-by-ai-agents-optro-research-finds
 - **PEX-DOWNTIME-2015**: PEX Network, *The eight deadly lean wastes: DOWNTIME* (practitioner, 2015-08-12). https://www.processexcellencenetwork.com/lean-six-sigma-business-performance/articles/the-8-deadly-lean-wastes-downtime
 - **PEX-DUMAS-2025**: Dumas, *Process intelligence: The foundation of agentic AI success*, PEX Network (practitioner, 2025-02-04). https://www.processexcellencenetwork.com/ai/articles/process-intelligence-agentic-ai/amp
 - **SEDDON-SWINSCOE-2020**: Swinscoe, *Interview with John Seddon of The Vanguard Method* (practitioner interview, 2020-01-27). https://www.adrianswinscoe.com/2020/01/a-lot-of-organisations-talk-outside-in-but-their-systems-are-not-designed-outside-in-interview-with-john-seddon-of-the-vanguard-method/
 - **STANFORD-WORKBANK-2026**: Shao et al., *Future of Work with AI Agents* (WORKBank; academic preprint v3, 2026-02-01). https://arxiv.org/abs/2506.06576
-- **TOCI-5FS**: Theory of Constraints Institute, *Five Focusing Steps* (practitioner guide, undated). https://www.tocinstitute.org/five-focusing-steps.html
-- **TOCI-TOC-ND**: Theory of Constraints Institute, *Theory of Constraints* (practitioner guide, undated). https://www.tocinstitute.org/theory-of-constraints.html
+- **TOCI-5FS**: Theory of Constraints Institute, *Five Focusing Steps* (practitioner guide, undated; accessed 2026-10-16). https://www.tocinstitute.org/five-focusing-steps.html
+- **TOCI-TOC-ND**: Theory of Constraints Institute, *Theory of Constraints* (practitioner guide, undated; accessed 2026-10-16). https://www.tocinstitute.org/theory-of-constraints.html
 - **WIKI-5WHYS**: Wikipedia, *Five whys*, criticism section (secondary, accessed 2026-10-16). https://en.wikipedia.org/wiki/Five_whys
 - **WIKI-DMAIC-2025**: Wikipedia, *DMAIC*, Measure phase (tertiary, 2025-10-08). https://en.wikipedia.org/wiki/DMAIC
 - **WIKI-KINGMAN-2025**: Wikipedia, *Kingman's formula* (tertiary, 2025-11-15). https://en.wikipedia.org/wiki/Kingman%27s_formula
