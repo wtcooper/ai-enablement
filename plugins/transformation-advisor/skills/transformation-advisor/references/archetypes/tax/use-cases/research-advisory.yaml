@@ -1615,7 +1615,8 @@
   notes: >-
     Graded C: research results and a vendor-authored benchmark, no named advisory deployment. TaxCalcBench measures
     return arithmetic, not advisory modelling; the return-preparation result belongs to compliance and the PwC
-    effective-tax-rate model to provision.
+    effective-tax-rate model to provision. Same design idea in compliance and indirect tax:
+    tax-compliance-corporate-22, tax-compliance-individual-business-10 and tax-indirect-tax-22.
 
 - id: tax-research-advisory-13
   title: Document-grounded tax analysis of client agreements, trust documents and schedules
@@ -2648,7 +2649,8 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Graded C: the only support is a tool described by its builder; no tax-specific deployment or accuracy figure was
-    found.
+    found. Related: tax-research-advisory-19 (citation verification as a review step) and tax-controversy-08 (citation
+    checks for court and IRS submissions).
 
 - id: tax-research-advisory-21
   title: 'M&A tax diligence: AI review of purchase agreements and a first-draft diligence report'
@@ -2918,7 +2920,8 @@
   notes: >-
     Ladder is delegate because the agent watches, diagnoses and drafts across many matters, with review at the end.
     The KPMG quote concerns how fast an agent can be built, not how well monitoring works. The compliance-tracker
-    element also touches compliance.
+    element also touches compliance. Overlaps: tax-compliance-corporate-12 (calendar and rule-change tracking for
+    returns) and tax-indirect-tax-09 (indirect-tax rule monitoring).
 
 - id: tax-research-advisory-24
   title: Advisers co-build client-specific tax agents with clients on firm platforms as a client service
@@ -2994,7 +2997,8 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Both are firm announcements without outcomes. The EY release is oriented to compliance and data processes as much
-    as advice. The monitoring use of these platforms is tax-research-advisory-23.
+    as advice. The monitoring use of these platforms is tax-research-advisory-23. Firm agent platforms more broadly:
+    tax-compliance-corporate-08.
 
 - id: tax-research-advisory-25
   title: Value-based and fixed-fee pricing as AI shortens research and drafting

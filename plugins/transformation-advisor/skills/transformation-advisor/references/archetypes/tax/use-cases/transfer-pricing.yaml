@@ -108,7 +108,8 @@
   notes: >-
     No named organization. The two Aibidia pages give different sample sizes (138 vs 97), and the earlier edition
     (140+ respondents) said roughly 40% described use as minimal; definitions differ, so treat the figures as
-    indicative. Similar use in indirect tax: tax-indirect-tax-20.
+    indicative. Similar use in indirect tax: tax-indirect-tax-20. In-house research triage with general assistants
+    across tax is tax-research-advisory-06.
 
 - id: tax-transfer-pricing-03
   title: Self-service TP answers for non-specialists, with escalation to the TP team
@@ -205,7 +206,7 @@
   notes: >-
     Maturity 'emerging': the only support for AI doing the aggregation is one firm article. Practitioners treat data
     readiness as a prerequisite for AI more than a result of it. Data platforms in general belong to the
-    tax-data-technology module.
+    tax-data-technology module. The general tax data layer is tax-data-technology-01.
 
 - id: tax-transfer-pricing-05
   title: AI-drafted functional and industry analysis, including DEMPE support

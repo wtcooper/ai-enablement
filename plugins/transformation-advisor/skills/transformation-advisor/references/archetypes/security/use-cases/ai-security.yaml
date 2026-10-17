@@ -516,7 +516,7 @@
     directly available to agents) and a BSides demo; WIRED reports agents in OpenAI's incident themselves proposed
     signing messages. Grade B rests on Microsoft and Okta using agent identities for their own agents, without published
     measurement. The Enterprise-Managed Authorization launch (2026-06-18) is relayed by the CSA note. Overlaps
-    identity-access (general non-human identity and Okta's Dex assistant), which owns non-agent machine identities.
+    identity-access (security-identity-access-04 just-in-time privileged access; -05 Okta's Dex assistant), which owns non-agent machine identities.
 
 - id: security-ai-security-07
   title: "Runtime policy enforcement: intercept each agent action at a guardian or gateway that can permit, deny, modify or escalate it"
@@ -588,7 +588,8 @@
   notes: >-
     Merged: agent-identity-containment-04 (C) and governance-assurance-09 (C). No named production deployment or field
     measurement; the arXiv figure is a lab result on an adjacent process (SOC remediation), not replicated. Kill switches
-    and fleet halt controls are in security-ai-security-11.
+    and fleet halt controls are in security-ai-security-11. See also security-operations-20 (per-action authority for SOC
+    agents).
 
 - id: security-ai-security-08
   title: "Gate agent actions with a tested classifier and reserve human approval for high-impact steps"
@@ -674,7 +675,8 @@
     Merged: threats-redteam-06 (guard evaluation, A) and agent-identity-containment-14 (human approval, C). Grade A for
     the evaluation design and measured figures; all headline numbers are vendor-published and the third-party evaluators
     were commissioned by the vendor. One independent test contradicts the zero-success claim for a specific chain, so
-    treat 0 of 720 as unreplicated. Proposed pattern: 'agent action gate'. Attack steps are not recorded.
+    treat 0 of 720 as unreplicated. Proposed pattern: 'agent action gate'. Attack steps are not recorded. Related: security-operations-20 and
+    security-vulnerability-exposure-22 (agent acting only through a human-approval harness).
 
 - id: security-ai-security-09
   title: Sweep exposed secrets and over-granted privileges before agents find them, with LLM-assisted privilege audit
@@ -920,7 +922,7 @@
     (tripwires, C). Graded B: the A in containment-08 rested on OpenAI's harness-versus-research-set-up figure, which
     measures the harness, not monitoring, and is now in security-ai-security-04. The monitoring figures are a
     counterfactual and a target; OpenAI says halt tooling and tripwires are being developed. The AISI result is a lab
-    simulation.
+    simulation. Overlaps security-incident-response-19 (monitors page responders, 30-minute pause rule) and -17.
 
 - id: security-ai-security-12
   title: Log every agent action against the agent's own identity, traceable to its human sponsor, in tamper-resistant storage
@@ -980,7 +982,8 @@
   notes: >-
     Merged: agent-identity-containment-07 (B) and governance-assurance-17 (D). Grade B: Microsoft names its own agents
     using agent identities with attributed logging; no measured benefit is published. CERT-In's 180-day retention appears
-    as a general API-monitoring step, not specifically for agent logs.
+    as a general API-monitoring step, not specifically for agent logs. Overlaps security-incident-response-18
+    (reconstructing agent actions from tamper-resistant logs).
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 4: inputs, supply chain and model assets
@@ -1073,7 +1076,9 @@
     Merged: threats-redteam-14 (B, capped), -17 (inbound screening, B) and agent-identity-containment-18 (hardening SOC
     agents, C). Grade B: measurements describe prevalence and lab attack success, not the effectiveness of a deployed
     screening control; Anthropic's probe is a named deployment without published rates. SOC copilots themselves belong to
-    security-operations; this entry covers securing them. Attack payloads are not recorded.
+    security-operations; this entry covers securing them (see security-operations-19, templated commands only;
+    security-incident-response-09, hardening investigation tools; security-application-security-21, screening inbound
+    code and skills). Attack payloads are not recorded.
 
 - id: security-ai-security-14
   title: "Vet the AI supply chain: scan and allowlist agent skills, MCP servers and model files, gate new tools through security review, and keep AI bills of materials"
@@ -1172,7 +1177,7 @@
     research measurement, not an enterprise deployment. Wiz also markets agentless AI-BOM discovery (vendor claim). Gartner
     forecasts 25% of enterprise GenAI applications with at least five minor security incidents a year by 2028 (9% in
     2025), a forecast, not a measurement of this control. Developer-facing skill and package scanning overlaps
-    application-security.
+    security-application-security-21.
 
 - id: security-ai-security-15
   title: Detect and disrupt model-extraction and distillation campaigns against hosted models
@@ -1237,7 +1242,8 @@
   notes: >-
     Source: threats-redteam-16. Grade A: measured by named organisations and a joint government advisory. Figures describe
     the threat and detection scope; none report false-positive rates or the result of response degradation. Relevant
-    mainly to organisations that host models for others.
+    mainly to organisations that host models for others. Related: security-threat-intelligence-24 (model providers'
+    threat intelligence teams disrupting misuse).
 
 - id: security-ai-security-16
   title: "Idea: check training, fine-tuning and retrieval data for tampering before use"
@@ -1369,7 +1375,8 @@
     Merged: threats-redteam-11 (A), agent-identity-containment-22 (A) and governance-assurance-11 (A). Grade A: measured,
     named organisations, all figures self-reported; no recall or false-negative rate is published for any review
     pipeline, and Anthropic's first scan missed transcripts. OpenAI also reports retrospective reviews of 'millions of
-    model rollouts' (OPENAI-HFTECH-2026). Overlaps incident-response.
+    model rollouts' (OPENAI-HFTECH-2026). Overlaps security-incident-response-20 (staged AI review of agent-activity
+    records).
 
 - id: security-ai-security-18
   title: Independent third-party investigation of agent incidents, and AI-assisted forensic reconstruction by the victim
@@ -1450,7 +1457,7 @@
     Merged: threats-redteam-12 (A) and the forensic half of governance-assurance-12 (A). Grade A: independent, measured,
     named reviewers (METR). The agent counts come from METR, not from OpenAI's report text. Only the first part of each
     report was read. The forensic-model lesson is shared with incident-response, which owns AI-assisted forensics in
-    general.
+    general (security-incident-response-03 vetted self-hosted model; -04 LLM timeline reconstruction).
 
 - id: security-ai-security-19
   title: "Prepare for, respond to and report agent incidents: control-incident definitions, playbooks and drills, notification, statutory clocks and standing disclosure"
@@ -1545,7 +1552,7 @@
     response performance. The NIST, NSA and CISA practices target organisations training and evaluating highly capable
     agents and say they may apply to deployers. Article 73 duties sit with providers of high-risk systems; DORA (four
     hours) and NIS2 (24 hours) windows are OWASP's statements, not checked against legal texts. Overlaps incident-response,
-    which owns the general response process.
+    which owns the general response process (security-incident-response-15, -17 and -21).
 
 - id: security-ai-security-20
   title: Shared near-miss and incident exchange for AI agents across organisations (SAFE, FLARE-AI, OECD criteria)
@@ -1602,7 +1609,7 @@
   notes: >-
     Source: governance-assurance-13. Grade C: coalition and standards proposals with no operating data. The landscape file
     dates the framework to Axios on 2026-08-11; the RFC was reported on 2026-08-05. Search results (not opened) say
-    OpenAI, Google, Anthropic and Meta are not alliance members; unverified.
+    OpenAI, Google, Anthropic and Meta are not alliance members; unverified. Overlaps security-incident-response-21.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 6: governance and assurance

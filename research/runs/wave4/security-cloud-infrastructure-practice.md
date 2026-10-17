@@ -1250,7 +1250,7 @@ Source access is `full` for every source listed (each was opened and read). Cust
 - **Exception reviewers.** At ZS, analysts review what the agent closed at end of shift instead of working queues; analysts without deep cloud experience can read agent verdicts (`WIZ-ZS-2026`).
 - **Small teams cover large estates.** Owkin (three people, more than 50 AWS accounts) and La Centrale (three people, more than 2,000 Lambda functions) credit graph context and AI-assisted triage (`WIZ-OWKIN-2026`, `WIZ-LACENTRALE-2026`).
 - **Platform teams for agents.** Databricks' Agentic Security Engineering team is horizontal shared services across detection and response, threat intelligence, vulnerability management, red team, GRC and continuous monitoring (`DATABRICKS-JOB-AGENTICSEC-2026`).
-- **AI skills in postings.** Cloudflare asks vulnerability management engineers to use and integrate AI tools into triage; Pinterest asks for AI use with validation and accountability practices; Block asks for fluency with AI coding tools in production work (`CLOUDFLARE-JOB-VM-2026`, `PINTEREST-JOB-SECOPS-2026`, `BLOCK-JOB-PLATSEC-2026`).
+- **AI skills in postings.** Cloudflare asks vulnerability management engineers to use and integrate AI tools into triage; Pinterest asks for AI use with validation and accountability practices; Block asks for fluency with AI coding tools in production work, and its network edge security team lists building AI-driven capabilities to classify and mitigate abusive traffic (`CLOUDFLARE-JOB-VM-2026`, `PINTEREST-JOB-SECOPS-2026`, `BLOCK-JOB-PLATSEC-2026`, `BLOCK-JOB-EDGE-2026`).
 - **From specialists to reviewers of agents.** Engineers become reviewers of agent scope and cost, not only answers (`FWDCLOUDSEC-RAJI-2026`). Some teams use agents to fill missing specialist roles such as cloud identity (`FWDCLOUDSEC-HORSMAN-2026`).
 - **Engineering takes more of the fix.** project44 held an engineering-wide enablement session; developers receive pre-populated tickets or PRs (`WIZ-PROJECT44-2026`, `WIZ-OPMODEL-2026`).
 - No hard data on junior-analyst hiring or headcount change was found.
@@ -1289,7 +1289,7 @@ Source access is `full` for every source listed (each was opened and read). Cust
 
 Counts below are distinct sources listed here. Every source was opened and read (`access: full`).
 
-**Totals:** 62 distinct sources. By type: vendor 38, firm 2, conference 10, academic 4, press 1, job-posting 7.
+**Totals:** 63 distinct sources. By type: vendor 38, firm 2, conference 10, academic 4, press 1, job-posting 8.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
@@ -1348,6 +1348,7 @@ Counts below are distinct sources listed here. Every source was opened and read 
 | `ARXIV-2610.09906` | Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy | arXiv | academic | https://arxiv.org/abs/2610.09906 | 2026-10-07 | full |
 | `ARXIV-2610.10608` | From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage | arXiv | academic | https://arxiv.org/abs/2610.10608 | 2026-10-07 | full |
 | `THN-CERTIN-2026` | CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing | The Hacker News | press | https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html | 2026-10-16 | full |
+| `BLOCK-JOB-EDGE-2026` | Security Engineer - Network Edge Security | Block (Greenhouse job board) | job-posting | http://block.xyz/careers/jobs/5427855008?gh_jid=5427855008 | 2026-10-15 | full |
 | `BLOCK-JOB-PLATSEC-2026` | Senior Security Engineer, Platform Security | Block (Greenhouse job board) | job-posting | http://block.xyz/careers/jobs/5231316008?gh_jid=5231316008 | 2026-06-02 | full |
 | `CLOUDFLARE-JOB-NETSEC-2026` | Network Security Engineer | Cloudflare (Greenhouse job board) | job-posting | https://boards.greenhouse.io/cloudflare/jobs/8081027?gh_jid=8081027 | 2026-07-24 | full |
 | `CLOUDFLARE-JOB-VM-2026` | Vulnerability Management Engineer | Cloudflare (Greenhouse job board) | job-posting | https://boards.greenhouse.io/cloudflare/jobs/7579269?gh_jid=7579269 | 2026-02-05 | full |

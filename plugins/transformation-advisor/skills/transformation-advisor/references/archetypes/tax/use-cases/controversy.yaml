@@ -345,7 +345,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     An IDR-tracking agent page (Cassidy) and a vendor case study claiming 28% fewer audit adjustments (CleverX)
-    appeared only in search results and could not be opened; neither is used.
+    appeared only in search results and could not be opened; neither is used. Transfer pricing audit defence drafted
+    from prior documentation is tax-transfer-pricing-16.
 
 - id: tax-controversy-08
   title: AI-assisted research and drafting for Tax Court, tribunal and IRS submissions, with citation verification as the control
@@ -571,7 +572,8 @@
     - {ref: OECD-FTA-2025, title: "Heads of tax administrations agree further work on collaborative projects to reduce compliance burdens and deepen co-operation in tackling tax gaps (FTA 18th Plenary)", publisher: "OECD Forum on Tax Administration", type: regulator, url: "https://www.oecd.org/en/about/news/announcements/2025/11/heads-of-tax-administrations-agree-further-work-on-collaborative-projects-to-reduce-compliance-burdens-and-deepen-co-operation-in-tackling-tax-gaps.html", date: "2025-11-20", access: full, locator: "announcement text (opened via a text mirror; blocked by a bot check on 2026-10-17, and the commitment was re-confirmed in the FTA Cape Town Plenary statement of outcomes, published at nta.go.jp/taxes/shiraberu/kokusai/fta/press/pdf/20251125_final.pdf)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea. Discussed by firms and authorities; no deployment found.
+    Idea. Discussed by firms and authorities; no deployment found. Related: tax-data-technology-12 (real-time
+    reporting) and tax-data-technology-13 (preventive validation).
 
 - id: tax-controversy-13
   title: IRS machine-learning selection of returns and issues for examination
@@ -761,9 +763,9 @@
   notes: >-
     HMRC caseworker tools are in tax-controversy-21. All revenue figures are the authorities' own attributions with no
     published method; do not compare HMRC's GBP 10 billion with its GBP 50.2 billion total compliance yield. Whether
-    the HMRC ICTS proposal was adopted was not checked. TP-specific authority targeting is also
-    tax-transfer-pricing-23. An OECD speaker's claim that some administrations cut VAT investigations from about nine
-    months to three is second-hand (SSL-OECDVAT-2026) and is not used as an outcome.
+    the HMRC ICTS proposal was adopted was not checked. Taxpayer-side screening of intercompany positions against
+    authority indicators is tax-transfer-pricing-15. An OECD speaker's claim that some administrations cut VAT
+    investigations from about nine months to three is second-hand (SSL-OECDVAT-2026) and is not used as an outcome.
 
 - id: tax-controversy-16
   title: AI fraud and identity-theft screening that flags returns and pauses refunds, with human review (IRS)

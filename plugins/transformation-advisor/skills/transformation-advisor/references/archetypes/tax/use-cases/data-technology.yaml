@@ -304,7 +304,8 @@
     No named customer; Thomson Reuters describes a goal and Deloitte a scenario step, so maturity is announced. The
     ledger-to-tax mapping step inside corporate compliance is tax-compliance-corporate-01 and year-on-year anomaly
     flags on returns are tax-compliance-corporate-03; this entry records the data layer that feeds the engines. The
-    provision and Pillar Two parts of the Kognitos argument are covered in the provision-pillar-two module.
+    provision and Pillar Two parts of the Kognitos argument are covered in the provision-pillar-two module. Provision
+    data assembly with the same agentic data layer is tax-provision-pillar-two-03.
 - id: tax-data-technology-03
   title: Agent keeps tax-engine configuration in sync with ERP master-data changes, with review checkpoints for high-impact
     changes
@@ -376,7 +377,8 @@
   notes: >-
     The engine is an indirect-tax determination engine, so the engine itself belongs to indirect-tax; this entry
     records the ERP-to-engine data flow. Related: validation and repair of master data at the point of entry,
-    tax-indirect-tax-12.
+    tax-indirect-tax-12. Related: tax-indirect-tax-07 (plain-language drafting of engine rules, simulated before
+    activation).
 - id: tax-data-technology-04
   title: Tax data requirements and tax-engine integration built into an ERP migration from the start
   archetype: tax
@@ -1667,7 +1669,8 @@
   notes: >-
     Idea. No source says AI performs the full reconciliation and no deployment was found; the ladder describes the
     idea as written. Related: pre-filing audit-exposure review against third-party data, tax-controversy-04;
-    preventive controls and real-time exchange, tax-controversy-12.
+    preventive controls and real-time exchange, tax-controversy-12. Related: tax-indirect-tax-11 (pre-filing anomaly
+    detection across the full invoice population).
 - id: tax-data-technology-17
   title: Read-only MCP access lets general AI assistants answer questions from the company's own tax-compliance data
   archetype: tax

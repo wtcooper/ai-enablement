@@ -498,7 +498,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     The workflow is shown as illustrative product examples; no named customer is tied to this step. Kept because it is
-    the only entry on the trial-balance step of business returns.
+    the only entry on the trial-balance step of business returns. Ledger-to-tax mapping for corporate returns is
+    tax-compliance-corporate-01.
 
 - id: tax-compliance-individual-business-08
   title: Agent signs in to the firm's existing tax software and prepares the return there, documenting each entry

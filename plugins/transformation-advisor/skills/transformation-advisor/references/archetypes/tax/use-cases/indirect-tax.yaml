@@ -443,8 +443,8 @@
   notes: >-
     Ladder and scope are augment and step, not delegate and process, because each correction needs a user's approval.
     The 1.6% figure is adjacent to, not a measure of, AI diagnosis. Sovos's transaction volume differs between
-    releases ('nearly 20 billion' a year in March 2026; 'more than 70 billion' in Aug and Sep 2026). Overlaps
-    tax-data-technology research entries on e-invoicing remediation.
+    releases ('nearly 20 billion' a year in March 2026; 'more than 70 billion' in Aug and Sep 2026). ERP-to-format
+    mapping and data quality for e-invoicing are tax-data-technology-14.
 
 - id: tax-indirect-tax-09
   title: Continuous regulatory-change monitoring with alerts tied to primary sources
@@ -654,8 +654,9 @@
     Idea. Verification (2026-10-17) moved this from C/piloting to D/emerging: Deloitte's section on data describes
     potential uses only, and its proof of concept is about populating VAT returns. No deployment of upstream
     indirect-tax data validation by agents was found. The KPMG figure is stated intent in a survey of 53 large
-    multinationals. Overlaps tax-data-technology research entries on preventive upstream
-    controls; the archetype pass should keep one.
+    multinationals. Overlaps tax-data-technology research entries on preventive upstream controls; the archetype pass
+    should keep one. The fuller entry on preventive validation before submission is tax-data-technology-13; see also
+    tax-controversy-12.
 
 - id: tax-indirect-tax-13
   title: Nexus monitoring, nexus questions and registration agents
@@ -862,10 +863,12 @@
     - {ref: NIST-AIRMF-2023, title: "AI Risk Management Framework (AI RMF 1.0; Generative AI Profile NIST-AI-600-1, 26 Jul 2024)", publisher: "NIST", type: standard-setter, url: "https://www.nist.gov/itl/ai-risk-management-framework", date: "2023-01-26", access: full, locator: "Overview"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Pattern 'other': a vendor exposes capabilities for another party's agents to call. No customer use of MCP/A2A access
-    was found. Avalara's 9 Apr 2026 MCP release was not reachable. Governance graded this process scope; model is used
-    because the change is in how compliance services are consumed. The technical architecture overlaps
-    tax-data-technology research entries on MCP and A2A; the archetype pass should keep one.
+    Pattern 'other': a vendor exposes capabilities for another party's agents to call. No customer use of MCP/A2A
+    access was found. Avalara's 9 Apr 2026 MCP release was not reachable. Governance graded this process scope; model
+    is used because the change is in how compliance services are consumed. The technical architecture overlaps
+    tax-data-technology research entries on MCP and A2A; the archetype pass should keep one. The fuller entry on
+    company agents calling tax engines through MCP is tax-data-technology-18; read-only MCP access is
+    tax-data-technology-17.
 
 - id: tax-indirect-tax-17
   title: Tax determination and sales tax holiday rules at AI-agent-initiated checkout

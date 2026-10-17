@@ -161,7 +161,8 @@
     From combined-02. Much of this is rules-based automation rather than generative AI; the sources use 'AI' loosely.
     The general ledger-to-tax mapping step is tax-compliance-corporate-01 and -10; this entry covers the provision
     input. A search extract of a ChatFin guide claimed a provision cycle cut from 5-7 to 2-4 business days; that page
-    was not opened and the figure is excluded.
+    was not opened and the figure is excluded. The fuller entry on the agentic tax data layer is
+    tax-data-technology-02.
 
 - id: tax-provision-pillar-two-04
   title: Pre-close anomaly flagging and document comparison in provision review

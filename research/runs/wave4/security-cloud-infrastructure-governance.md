@@ -203,6 +203,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-08-12'
     access: full
     locator: abstract
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. This entry describes a control on AI use rather than an AI defence; it is kept because it is the most measured governance issue in the module.'
   archetype: security
   module: cloud-infrastructure
@@ -259,6 +267,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2025-08-18'
     access: full
     locator: abstract
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. The CSPM false-positive figure comes from an adjacent, non-LLM method and is context only.'
   archetype: security
   module: cloud-infrastructure
@@ -315,6 +331,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-09-22'
     access: full
     locator: abstract
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments.'
   archetype: security
   module: cloud-infrastructure
@@ -378,6 +402,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2025-09-04'
     access: full
     locator: abstract
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. KubeGuard reports precision, recall and F1 as ''high'' in its abstract without figures, so none are recorded.'
   archetype: security
   module: cloud-infrastructure
@@ -518,6 +550,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2025-12-16'
     access: full
     locator: 'section 2.1.2 (Defend), ''Mission assurance: configuration management'', pp.10-12'
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments.'
   archetype: security
   module: cloud-infrastructure
@@ -567,6 +607,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2025-12-16'
     access: full
     locator: Profile table, PR.IR-01, Defend column
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. Benchmark is synthetic.'
   archetype: security
   module: cloud-infrastructure
@@ -646,6 +694,22 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-01-21'
     access: full
     locator: abstract
+  - ref: ARXIV-2604.15368
+    title: 'LogJack: Indirect Prompt Injection Through Cloud Logs Against LLM Debugging Agents (arXiv preprint, abstract read)'
+    publisher: arXiv
+    type: academic
+    url: https://arxiv.org/abs/2604.15368
+    date: '2026-04-15'
+    access: full
+    locator: abstract
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. Overlaps the incident-response module; kept here for its cloud-specific benchmarks.'
   archetype: security
   module: cloud-infrastructure
@@ -704,6 +768,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-09-15'
     access: full
     locator: Introduction (independent endpoint test context; no AI attribution)
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. AV-Comparatives'' 2026 EPR test (50 targeted attack scenarios, 14 enterprise products, 11 certified) measures endpoint products independently but does not attribute results to AI components, so it is context, not an outcome for this use case.'
   archetype: security
   module: cloud-infrastructure
@@ -785,6 +857,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-05-01'
     access: full
     locator: '''Operating agentic AI securely'' (PDF p.18)'
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. Several results are attack-side measurements; they are recorded because they set the guardrail requirements for the use case.'
   archetype: security
   module: cloud-infrastructure
@@ -860,6 +940,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: 2026-04
     access: full
     locator: criteria list
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. ARPaCCino reports no figures in its abstract.'
   archetype: security
   module: cloud-infrastructure
@@ -909,6 +997,14 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-10-15'
     access: full
     locator: '''The weaknesses exploited are conventional''; Recommended Actions B'
+  - ref: ENISA-FRONTIER-2026
+    title: ENISA's view on Cybersecurity in the Frontier AI Era
+    publisher: ENISA
+    type: regulator
+    url: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA%20view%20on%20cybersecurity%20in%20the%20frontier%20AI%20era_en_0.pdf
+    date: '2026-07-07'
+    access: full
+    locator: p.12, 'Talent and human capital'
   notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments.'
   archetype: security
   module: cloud-infrastructure

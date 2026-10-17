@@ -74,7 +74,9 @@
     Grade C: the only quantified statement is EY's own illustration and TR describes a goal. The EY page's own
     metadata (firstpublishdate) and on-page date are 22 Jul 2024; 2026-02-12 is a later republication timestamp, so
     the ref is EY-COMPL-2024. The Salesforce case is rules-based and is cited only for the prerequisite. K-1 intake is
-    a separate entry (tax-compliance-corporate-02).
+    a separate entry (tax-compliance-corporate-02). Related: the tax data layer that feeds this step is
+    tax-data-technology-02; trial balance to workpapers for pass-through returns is
+    tax-compliance-individual-business-07.
 
 - id: tax-compliance-corporate-02
   title: Agents interpret K-1 footnotes and mixed-format source items, map them to tax treatments with a confidence level, and learn from logged reviewer overrides
@@ -127,7 +129,8 @@
     corporate direct-tax compliance is inferred, not shown. Grade capped at B (named deployment, adjacent setting, no
     measurements). 'In production' reflects the reporter's paraphrase that agents are deployed beyond pilots. PwC also
     reports more than 800 custom GPTs and more than 250 agents firm-wide; whether these are in this workflow is not
-    stated.
+    stated. The same K-1 footnote mapping change, with fuller evidence across individual and pass-through returns, is
+    tax-compliance-individual-business-02.
 
 - id: tax-compliance-corporate-03
   title: AI compares returns, source data and reconciliations year on year and flags anomalies for reviewers before filing
@@ -180,7 +183,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     All sources describe capability, a roadmap or a scenario; no named corporate team or measured result was found.
-    Taxpayer-side screening modelled on how authorities score returns is tax-compliance-corporate-13.
+    Taxpayer-side screening modelled on how authorities score returns is tax-compliance-corporate-13. Return review
+    for individual and pass-through returns, with fuller evidence, is tax-compliance-individual-business-12.
 
 - id: tax-compliance-corporate-04
   title: Validation agents critique other agents' output and reviewers do first-level review of automated outputs
@@ -326,8 +330,9 @@
   notes: >-
     Aimed at CPA firms preparing returns for clients, so firm-side, not in-house. No named customer firm and no
     independent test was found; Thomson Reuters' business-return statement is a plan. Byron is the only source
-    describing AI in state apportionment. Agentic 1040 and 1065 preparation (Ready to Review, Basis, Black Ore)
-    belongs to the compliance (individual and small-business) module.
+    describing AI in state apportionment. Agentic 1040 preparation (Ready to Review, Basis, Black Ore) is
+    tax-compliance-individual-business-04 and -05; partnership, S corporation and trust returns, with fuller evidence,
+    are tax-compliance-individual-business-06.
 
 - id: tax-compliance-corporate-07
   title: An in-house tax team moves from outsourced preparation to agent-driven return computation on a version-controlled tax-logic library
@@ -387,7 +392,7 @@
     Named in-house team, no published measurement, so grade B. Maturity is 'piloting' because the evidence is job
     listings and a demonstration. The recap says OpenAI sent four tax department members to the seminar; that is not
     the size of the department. An AI lab's own tax team is an unusual starting point, so transfer to other companies
-    is not shown.
+    is not shown. The same OpenAI team, seen as an operating model, is tax-data-technology-22.
 
 - id: tax-compliance-corporate-08
   title: Large firms build agent platforms ('agent factories') to create, deploy and manage tax agents, and let professionals and clients build their own
@@ -441,7 +446,9 @@
   notes: >-
     Pattern 'other': a platform for building, deploying and governing many agents, not a single workflow. Firm
     announcements only; no corporate compliance return process is specified. An EY-NVIDIA '3 million compliance tasks'
-    target seen in secondary coverage was not confirmed in a primary source and is not used.
+    target seen in secondary coverage was not confirmed in a primary source and is not used. Related:
+    tax-research-advisory-24 (advisers co-build client agents on firm platforms) and tax-data-technology-10
+    (multi-agent provision-to-return workflows, an idea).
 
 - id: tax-compliance-corporate-09
   title: 'R&D credit: AI builds contemporaneous qualified-research evidence from project, payroll and ledger systems and populates Form 6765, including Section G'
@@ -568,9 +575,9 @@
     list for Oxford. The demonstration list belongs to Savant's booth, not the Oxford session, so the title and
     solution do not attribute those workflows to Oxford; the TEI recaps read do not mention the session, and no
     post-event case study was found. The demos also covered sales and use tax and VAT/GST, so relevance to direct-tax
-    compliance is partial (see indirect-tax and tax-data-technology). Ladder is automate (exceptions go to people)
-    because the pattern is reconciliation with exception routing. Savant's and Kognitos' customer lists in search
-    results were not verified.
+    compliance is partial (the same scheduled multi-system reconciliation is tax-data-technology-09). Ladder is
+    automate (exceptions go to people) because the pattern is reconciliation with exception routing. Savant's and
+    Kognitos' customer lists in search results were not verified.
 
 - id: tax-compliance-corporate-11
   title: Cited AI tax research inside the compliance engine and workpapers, with every authority verified before reliance
@@ -625,9 +632,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Vendors and a conference programme only. Clinco involved an individual's Schedule C, not a corporate return; it is
-    cited for the verification duty. Stand-alone research belongs to the research-advisory module; this entry covers
-    research embedded in compliance engines and workpapers. No independent benchmark of commercial tax research tools
-    was found.
+    cited for the verification duty. Stand-alone cited research assistants, with fuller evidence, are
+    tax-research-advisory-01; this entry covers research embedded in compliance engines and workpapers. No independent
+    benchmark of commercial tax research tools was found.
 
 - id: tax-compliance-corporate-12
   title: Agents track the filing calendar and form, instruction and rule changes, and send change reports to the tax team
@@ -681,7 +688,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Product announcements and roadmap items only; no named user or measurement. Tax Flows is part of Orbitax's
-    international tax product and is cited as a pattern.
+    international tax product and is cited as a pattern. Overlaps: tax-research-advisory-23 (client-specific impact
+    notes), tax-indirect-tax-09 (indirect-tax rule monitoring), tax-provision-pillar-two-08 (provision and Pillar Two)
+    and tax-data-technology-15 (configuration impact).
 
 - id: tax-compliance-corporate-13
   title: Pre-filing audit-risk prediction and anomaly screening of the return, informed by how authorities score returns
@@ -729,8 +738,9 @@
     - {ref: GAO-2026, title: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management (GAO-26-107522)", publisher: "U.S. Government Accountability Office", type: regulator, url: "https://www.gao.gov/products/gao-26-107522", date: "2026-03-24", access: full, locator: "What GAO Found (126 active IRS AI use cases as of June 2025)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Roadmap-level only. Authority-side AI (audit selection, the 'AI-first IRS') belongs to the controversy module. The
-    GAO date (24 Mar 2026) was confirmed from the report PDF through a text mirror.
+    Roadmap-level only. Authority-side AI (audit selection, the 'AI-first IRS') is tax-controversy-13. The same
+    taxpayer-side check against third-party data is tax-controversy-04, and for intercompany positions
+    tax-transfer-pricing-15. The GAO date (24 Mar 2026) was confirmed from the report PDF through a text mirror.
 
 - id: tax-compliance-corporate-14
   title: Continuously updated effective-tax-rate and cash-tax modelling with what-if scenarios
@@ -772,7 +782,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Provision-heavy; the direct-compliance part is cash-tax forecasting ahead of estimated payments. No source
-    describes AI computing or paying corporate estimated payments. Read with the provision module.
+    describes AI computing or paying corporate estimated payments. Read with the provision module, which points here
+    for ETR forecasting.
 
 - id: tax-compliance-corporate-15
   title: Corporate compliance bought as an AI-enabled managed service, with in-house teams asking providers to disclose AI use and verification
@@ -822,7 +833,8 @@
   notes: >-
     Pattern 'other': a sourcing model in which an outside provider delivers AI-enabled compliance under agreed
     disclosure and review terms. Survey, firm and conference evidence only; no published provider deployment or
-    in-house disclosure requirement.
+    in-house disclosure requirement. Similar managed-service models: tax-data-technology-24, tax-indirect-tax-19 and
+    tax-transfer-pricing-22.
 
 - id: tax-compliance-corporate-16
   title: 'Idea: value-based or fixed-fee pricing of AI-enabled compliance work in place of hourly billing'
@@ -867,7 +879,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Idea. Pattern 'other': a pricing model, not a workflow. The debate concerns CPA practices broadly; no deployed
-    pricing model tied to AI was confirmed for corporate compliance.
+    pricing model tied to AI was confirmed for corporate compliance. The fuller entry on pricing is
+    tax-research-advisory-25; see also tax-compliance-individual-business-22 and tax-controversy-10.
 
 - id: tax-compliance-corporate-17
   title: Tax analysts build their own pipelines, automations and agents with low-code and AI coding tools instead of waiting in the IT queue
@@ -917,7 +930,9 @@
     - {ref: WK-CORPRES-2026, title: "How controllers and corporate tax leaders can use AI for faster, defensible tax returns (corporate tax research guide)", publisher: "Wolters Kluwer Tax & Accounting", type: vendor, url: "https://www.wolterskluwer.com/en/expert-insights/how-controllers-and-corporate-tax-leaders-can-use-ai-for-faster-defensible-tax-returns", date: "2026-04-02", access: full, locator: "Section 'The non-negotiables for purchasing decision-makers'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Unnamed attendees in a recap by a vendor-owned institute; no named department outcome and no quality evidence.
+    Unnamed attendees in a recap by a vendor-owned institute; no named department outcome and no quality evidence. The
+    data-platform and control side of the same practice is tax-data-technology-07; an indirect-tax job posting showing
+    it is tax-indirect-tax-20.
 
 - id: tax-compliance-corporate-18
   title: A tax model explains its inputs, outputs and assumptions so the reasoning chain is the deliverable in place of a memo, and approved logic is locked
@@ -1011,7 +1026,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Vendor, firm and regulator guidance; no named corporate deployment of AI-use logging with a result. The Fonoa
-    figures are indirect-tax and vendor-sponsored.
+    figures are indirect-tax and vendor-sponsored. The fuller entry on citation verification and AI-use records is
+    tax-research-advisory-19; the same control appears in tax-indirect-tax-15, tax-data-technology-19,
+    tax-transfer-pricing-20 and tax-compliance-individual-business-13.
 
 - id: tax-compliance-corporate-20
   title: Tax staff move to approved enterprise AI tools under vendor terms that bar training on company data, with revalidation when vendors change models
@@ -1068,6 +1085,8 @@
     Pattern 'other': a governed tooling environment rather than a work pattern. Survey-level evidence only; no named
     organisation is described, and no vendor contract adopting the Werfel terms was found. The KPMG Germany sample
     covers German companies; the TR-FOP figure covers tax and audit professionals, not only corporate tax departments.
+    The fuller entry on a firm-wide approved-tool standard is tax-research-advisory-07; for small firms see
+    tax-compliance-individual-business-19.
 
 - id: tax-compliance-corporate-21
   title: Gated rollout of AI-drafted return work, with full logging, override and error-rate thresholds, ROI baselines and unaided-competence checks
@@ -1127,7 +1146,9 @@
     Pattern 'other': a governance gate and measurement loop around AI-assisted preparation. The worked case is a
     preparer firm using the tool on client returns (individual examples: W-2, 1099, Schedule C), not a corporate
     return; the article says the views are the author's, not AICPA policy. Graded C on the vendor recommendation and
-    surveys; no firm or department has published applying the thresholds.
+    surveys; no firm or department has published applying the thresholds. Overlaps:
+    tax-compliance-individual-business-18 (phased adoption with parallel runs) and tax-data-technology-21 (acceptance
+    thresholds and ongoing measurement).
 
 - id: tax-compliance-corporate-22
   title: 'Idea: a deterministic tax engine computes the return while a language model translates rules into logic that is checked against test returns'
@@ -1175,7 +1196,8 @@
   notes: >-
     Idea with measured research results, all on individual-return or statutory-reasoning data. The Han et al. authors
     built the system they measured; 'independent' means a third-party academic source, not a replication. The
-    TaxCalcBench figure is vendor-published because its authors work at a deterministic-engine vendor.
+    TaxCalcBench figure is vendor-published because its authors work at a deterministic-engine vendor. Same design
+    idea: tax-compliance-individual-business-10, tax-research-advisory-12 and tax-indirect-tax-22.
 
 - id: tax-compliance-corporate-23
   title: 'Idea: an input-verification gate flags missing or contradictory facts and holds the case for a person before a model computes a tax result'
@@ -1211,7 +1233,8 @@
     - {ref: SADOWSKI-VERIFY-2026, title: "Solving versus Verifying: Catching Contradictions in Tax Reasoning Systems (arXiv 2609.05928)", publisher: "arXiv preprint (Sadowski, Chudziak)", type: academic, url: "https://arxiv.org/abs/2609.05928", date: "2026-09-05", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea. The arXiv page says the paper was accepted for ICTAI 2026 (IEEE); only the abstract was read.
+    Idea. The arXiv page says the paper was accepted for ICTAI 2026 (IEEE); only the abstract was read. Related:
+    tax-compliance-corporate-22 (deterministic engine after the gate).
 
 - id: tax-compliance-corporate-24
   title: 'Idea: continuous, always-on compliance monitoring replaces periodic batch preparation'
@@ -1255,5 +1278,5 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Idea. Most of the continuous-controls discussion concerns indirect tax in real-time-reporting jurisdictions, so
-    direct-tax relevance is by analogy (see indirect-tax and tax-data-technology). Scope is 'process', not 'model',
-    because the existing flow is made continuous.
+    direct-tax relevance is by analogy (see tax-data-technology-12 for real-time reporting and tax-data-technology-16
+    for continuous reconciliation). Scope is 'process', not 'model', because the existing flow is made continuous.

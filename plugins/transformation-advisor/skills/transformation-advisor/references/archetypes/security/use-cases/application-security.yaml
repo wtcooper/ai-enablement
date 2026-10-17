@@ -186,7 +186,7 @@
     recorded.
 
 - id: security-application-security-04
-  title: AI review of every pull request, with a security reviewer agent and codified standards
+  title: AI review of every pull request, with a dedicated security reviewer agent
   archetype: security
   module: application-security
   function: technology-it
@@ -200,15 +200,14 @@
     Merge requests queue for hours awaiting a first review, and naive single-prompt AI review produced vague
     suggestions, hallucinated errors and noise (Cloudflare). Lightweight pre-merge analysis tools are noisy and miss
     context-dependent vulnerabilities, while deep security assessment is deferred to later stages (AgenticSCR
-    authors). Standards live in documents, chat threads and memory, and no engineer can read every one (Cloudflare).
+    authors).
   solution: >-
     Cloudflare runs an initial review on every merge request with up to seven specialised reviewer agents (security,
     performance, code quality, documentation, release management, compliance with internal standards), coordinated by
     an agent that de-duplicates findings, filters speculative ones, rates severity and posts one structured comment.
     It approves clean code, can block merges for serious problems or security vulnerabilities, and is biased toward
-    approval for minor warnings. Cloudflare also rebuilt its standards as a governed 'Codex' of RFC-format documents
-    with MUST and SHOULD statements extracted into structured rules; findings from approved RFCs are advisory and
-    only enforced RFCs block merges. AgenticSCR, studied at Atlassian, is an agent with code navigation and a
+    approval for minor warnings; the standards it checks are codified separately (see -05). AgenticSCR, studied at
+    Atlassian, is an agent with code navigation and a
     security-focused memory that comments on probable vulnerabilities before integration. Anthropic's Claude Code
     GitHub Action posts inline security comments on each pull request, Semgrep scans every pull request in Cursor
     Origin, and the curl project runs AI review bots alongside human review.
@@ -217,12 +216,10 @@
     - {lever: speed, description: "Median time for an AI review to complete", figure: "3 minutes 39 seconds", measures: "median completion time of an AI review run, not the time to human approval", provenance: self-reported, source_ref: CLOUDFLARE-CODEREVIEW-2026}
     - {lever: quality, description: "Engineer overrides of AI blocks ('break glass')", figure: "288 times, 0.6% of merge requests", measures: "merge requests where engineers used break glass in the first 30 days, as a share of merge requests reviewed; a proxy for disagreement, not correctness", provenance: self-reported, source_ref: CLOUDFLARE-CODEREVIEW-2026}
     - {lever: cost, description: "Model cost per review", figure: "average USD 1.19; median USD 0.98; P99 USD 4.45", measures: "model cost per review run in the first 30 days", provenance: self-reported, source_ref: CLOUDFLARE-CODEREVIEW-2026}
-    - {lever: quality, description: "Standards violations flagged by the AI code reviewer", figure: "close to 230,000 flagged; almost 16,000 withheld approval", measures: "violations flagged over about four months; those referring to MUST statements on enforced RFCs withheld approval", provenance: self-reported, source_ref: CLOUDFLARE-CODEX-2026}
     - {lever: quality, description: "Security review comments validated in a shadow deployment at Atlassian", figure: "54% of comments validated; at least 153% relative improvement over baselines", measures: "comments validated by security engineers for developer reporting in shadow mode; relative improvement in comments with correct location, vulnerability type and relevance versus a static LLM baseline, a multi-agent reviewer and SAST tools", provenance: self-reported, source_ref: ARXIV-2601.19138}
   prerequisites:
     - "CI-native orchestration around a coding agent with a plugin architecture (Cloudflare)"
     - "Risk tiering so trivial changes get cheap reviews, and a 'break glass' escape hatch"
-    - "A governed standards body with domain owners and a promotion step from approved to enforced"
     - "Code navigation tools and a security knowledge base for the agent; security engineers to validate comments during a shadow period (AgenticSCR)"
   risks_and_guardrails:
     - "Cloudflare's coordinator drops speculative issues, nitpicks and false positives, and is explicitly biased toward approval (CLOUDFLARE-CODEREVIEW-2026)"

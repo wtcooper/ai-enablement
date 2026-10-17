@@ -61,7 +61,7 @@ announced entry (`#16`). No evidence was found for assist at process or model le
 
 **Access requests and privilege**
 - Automate: `#03` Instacart's LLM bot reads the request, a separate score decides, auto-approves above a threshold
-  ("nearly 100%" accuracy in testing, no denominator; grade B). Opal's Paladin announced the same pattern.
+  ("nearly 100%" accuracy in testing, no denominator; grade B). Opal announced a similar policy-applying agent (Paladin).
   `#04` zero standing privilege: context-based JIT grants and revocation (vendor claims; rules with an AI label).
 - Improve: `#05` conversational front door for IT and access requests (Okta's Dex: 25% of staff in two weeks,
   23,500+ interactions; self-reported).
@@ -71,7 +71,7 @@ announced entry (`#16`). No evidence was found for assist at process or model le
   claims "up to 6x faster"; grade B via a Prosper quote). `#07` usage-based role mining and right-sizing (Google
   IAM recommender; Opal roadmap). `#09` natural-language governance queries, audit prep and workflow drafting.
   `#10` agentic onboarding of applications into governance (announcement). `#12` IAM engineers build automation with
-  AI coding tools (Cloudflare and Coinbase postings make it a requirement).
+  AI coding tools (Cloudflare's postings make it a requirement).
 - Automate: `#08` continuous full-population posture checks with remediation and recorded evidence (SailPoint,
   Saviynt, Idira announcements; regulator-evidence idea). Audit-side testing of access reviews is in governance-risk
   (provisional id `security-governance-risk-07`).
@@ -89,7 +89,7 @@ announced entry (`#16`). No evidence was found for assist at process or model le
 - Automate: `#18` enforced verification before help-desk resets (Cisco via Persona: "three-to-four-hour" wait to
   "as little as five minutes", a practitioner's description, grade B). `#19` ML identity proofing with liveness,
   injection and deepfake detection (Coinbase posting; DHS tests). `#20` identity-graph and 1:N biometric search for
-  rings and duplicates. `#21` passive caller authentication: MSUFCU authentication time 90 to 45 seconds within 90
+  rings and duplicates. `#21` passive caller authentication: Michigan State University Federal Credit Union (MSUFCU) authentication time 90 to 45 seconds within 90
   days, HealthEquity IVR match 31% to 71% (grade A, vendor-published).
 - Improve: `#22` real-time call risk scoring (HealthEquity's fraud head: voice fraud down "over 90%", metric
   undefined; grade B). `#23` synthetic-voice scoring for fraud triage (unnamed bank: about 960 of 1.7M calls scored
