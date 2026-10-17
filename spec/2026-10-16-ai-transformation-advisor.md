@@ -102,9 +102,9 @@ The profile sets the path through the loop:
 
 | Scope | Adaptation |
 |---|---|
-| **Individual or team** | The loop runs on specific processes and steps. Output: a team transformation plan with "start this week" actions |
+| **Individual or team** | The loop runs on specific processes and steps. Output: a team transformation plan sequenced as Now, Next and Later |
 | **Function or business unit** | The loop first runs on the value chain. Map breaks the scope into units. Units are planned in depth (by delegates, by the user, or as a first-pass desk review). The results are rolled up |
-| **Organization** | Same as a business unit, plus business-model exposure, a value tree, a 100-day plan and a value creation plan |
+| **Organization** | Same as a business unit, plus business-model exposure, a value tree, workstreams sequenced by dependency, and a value creation plan |
 
 **Resume.** If the working folder has a plan, the agent reads its state (`phase_completed`,
 `next_phase`) and offers to continue.
@@ -122,7 +122,7 @@ The profile sets the path through the loop:
 | **4. Reimagine** | Generate options through four lenses (§4.2) | For each high-value step | For each unit or value-chain stage, including new services and pricing |
 | **5. Prioritize** | Score and sort into quick win, foundation, big bet or park. Sequence by dependencies | Team opportunities | **Roll up** the units' plans: remove duplicates, find shared platforms, combine value along the value tree |
 | **6. Make the case** | Value as ranges with assumptions, risks, human checkpoints, **role evolution** | Top three to five | Top initiatives and the portfolio as a whole |
-| **7. Plan** | Actions, owners, KPIs, control plan, rhythm | "Start this week" plus a 30/60/90-day plan | A 100-day plan, a value creation plan and a review cadence |
+| **7. Plan** | Actions, owners, KPIs, control plan, event-triggered checkpoints. Sequenced by steps and dependencies, never by calendar dates | Now, Next and Later | Workstreams with gates, a value creation plan, and decision points |
 
 ### 4.2 The four lenses of Reimagine
 
@@ -256,7 +256,7 @@ items:
     role_evolution: { tasks_moving, new_work, capacity_use }
     evidence: [ use_case_id ]      # archetype or overlay use cases that support it
     rolled_up_from: [ path ]       # set by Roll-up
-    next_step: { action, owner, by }
+    next_step: { action, owner, depends_on }   # sequenced by dependency, no dates
 ```
 
 ## 6. Knowledge model
@@ -281,7 +281,7 @@ There is one reference file per phase plus cross-cutting files. Each phase file 
 The content is grounded in research stream M (§11). It covers:
 
 - lean and Six Sigma applied to knowledge work
-- PE value-creation practice (diagnostic, value creation plan, 100-day plan, program office cadence)
+- PE value-creation practice (diagnostic, value creation plan, workstreams and program office), borrowing the discipline but sequencing by dependency rather than by a fixed 100 days
 - current AI transformation frameworks and evidence
 - agentic workflow redesign
 - AI maturity models
@@ -622,11 +622,11 @@ ai-enablement/                               # this repo = the marketplace
 
 | Output | Format |
 |---|---|
-| Transformation plan (any level): profile, summary, phases, "start this week", 30/60/90 days | `transformation-plan.md` |
+| Transformation plan (any level): profile, summary, phases, and next steps sequenced as Now, Next and Later | `transformation-plan.md` |
 | Opportunities | `opportunities.yaml` |
 | Unit brief | `units/<id>/brief.md` (one page) |
 | Business case, one page per top opportunity | A section in the plan |
-| Portfolio, 100-day plan, value creation plan, cadence (higher levels) | Sections in the top plan |
+| Portfolio, workstreams with gates, value creation plan (higher levels) | Sections in the top plan |
 | Leadership summary | A section that can be pasted elsewhere |
 
 ## 9. Behavioral rules (cannot be overridden)
@@ -646,6 +646,8 @@ ai-enablement/                               # this repo = the marketplace
 7. The advisor designs and plans. It does not claim to build or deploy anything.
 8. When a user expresses fear about their role, acknowledge it honestly. Don't falsely reassure. Help
    the user position themselves as the person leading the change.
+9. Plans are sequenced by **steps and dependencies**, never by artificial deadlines (no 30/60/90-day or
+   100-day plans). Dates belong in the user's own planning tools if they need them.
 
 ## 10. Quality and acceptance
 

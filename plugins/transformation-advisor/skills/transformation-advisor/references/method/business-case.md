@@ -129,7 +129,7 @@ intangibles as intangibles rather than forcing them into money [ROIINST-2014].
 ### 3.7 Portfolio view (unit and organization scope)
 
 Write a bridge from today's cost, hours or margin to the target: one bar per initiative, each with
-baseline, target range, owner and quarter [BDEMERSON-2026]. Keep overlaps visible and check that no two units
+baseline, target range, owner and the gate that releases it [BDEMERSON-2026]. Keep overlaps visible and check that no two units
 bank the same capacity. Keep AI-attributable benefit and AI run cost in their own lines [BAIN-TECH-2026].
 Ask what format the organization requires at this spend level.
 
@@ -142,7 +142,7 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 - If this saves time, where will that time go, and who decides? [T][U/O]
 - After someone checks and corrects the output, how much time is really saved? [T]
 - What would a skeptical finance lead need to see to believe the low case? [U/O]
-- How will we know in 90 days whether it worked? [T][U/O]
+- How will we know it worked, and after how many cases? [T][U/O]
 
 **Follow-ups**
 - What are we comparing against: the same items done the old way, another team, or an estimate? [T][U/O]

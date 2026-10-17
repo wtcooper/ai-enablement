@@ -168,9 +168,9 @@ figures self-reported by the team and republished by the vendor). So:
 
 | Scope | Adaptation |
 |---|---|
-| Individual or team | Run the loop on specific processes and steps. Output: a team plan with "start this week" actions |
+| Individual or team | Run the loop on specific processes and steps. Output: a team plan sequenced as Now, Next and Later |
 | Function or business unit | Run Frame and Map on the value chain, then break down into units (`breakdown-and-rollup.md`) |
-| Organization | As a unit, plus business-model exposure, a value tree, a 100-day plan and a value creation plan |
+| Organization | As a unit, plus business-model exposure, a value tree, workstreams sequenced by dependency, and a value creation plan |
 
 **Between two stages,** use the earlier stage's emphasis and add the later stage's first question. **Fee-based work**
 (hourly or fixed-fee): put pricing into Frame from Experimenting on, because saved hours compress revenue or sit idle

@@ -136,7 +136,7 @@ Tags: **[T]** team scope, **[U/O]** unit or organization scope. Stage notes in i
 - What would you need to see before trusting a result you did not produce? [T]
 - Who would check the output, how long would that take, and is that person already overloaded? [T]
 - Which of these would your people gladly hand over, which would they want to share, and which never? [T]
-- Could you try one of these on a real example this week? [T] *Curious, Experimenting*
+- Could you try one of these on a real example right away? [T] *Curious, Experimenting*
 - Which options could several teams use with the same building blocks? [U/O] *Scaling*
 
 ## 5. Expert moves

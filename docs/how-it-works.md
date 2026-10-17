@@ -45,7 +45,7 @@ It uses five journey stages to adapt:
 | **Reimagine** | Generate options through four lenses: **improve** the step, **automate** the flow, **delegate** the outcome to an agent with human checkpoints, **reinvent** the work. Draws on real examples from your field |
 | **Prioritize** | Score options and sort them into quick wins, foundations, big bets or park |
 | **Make the case** | Value as ranges with stated assumptions, risks, human checkpoints, and how roles change |
-| **Plan** | What to start this week, a 30/60/90-day plan, and how to measure and control it |
+| **Plan** | What to do now, what that unlocks next, and what needs groundwork first. Each step has an owner and a way to check it is working. Steps are sequenced by dependency, not by calendar dates |
 
 ## Working at team, practice or firm level
 
@@ -59,8 +59,8 @@ The same loop works at every level.
   - as a first-pass draft the advisor prepares from its knowledge of the field, clearly labelled as
     a draft to check with the people who do the work
 
-  The Prioritize step then **rolls up** all the units' plans into one portfolio, a 100-day plan and a
-  value plan.
+  The Prioritize step then **rolls up** all the units' plans into one portfolio, workstreams sequenced by
+  dependency, and a value plan.
 
 ## What you get
 
@@ -111,6 +111,7 @@ The advisor always follows these rules:
 - It always shows how roles would change, and makes the choice explicit: **redeploy** freed-up
   capacity, or **reduce** cost.
 - It gives value as ranges with assumptions, never a single ROI number.
+- It sequences plans by steps and dependencies, never by artificial deadlines.
 - It never invents sources or figures.
 - It won't ask for client-confidential data.
 - It designs and plans; it doesn't claim to build anything.

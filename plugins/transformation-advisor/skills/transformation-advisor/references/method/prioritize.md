@@ -78,7 +78,7 @@ the levers most often left out of cases (advisor synthesis; compare the producti
 | Feasibility | 0.20 | "Could we do this with the tools, skills and approvals we have?" |
 | Data readiness | 0.15 | "Is the information it needs digital, clean and reachable?" |
 | Risk (higher score = lower risk) | 0.15 | "If it got something wrong, how bad and how reversible would that be?" |
-| Time to value | 0.10 | "How soon would we see a result?" |
+| Time to value | 0.10 | "How much has to be in place before we see a result?" |
 | Strategic fit | 0.10 | "How directly does this serve your main goal?" |
 
 `weighted_score` = sum of weight × score. With weights that sum to 1, it stays on the 1–5 scale. Use the
@@ -102,7 +102,7 @@ plan's own weights if they differ.
 | Feasibility | Unproven anywhere; needs skills, tools or integration the team lacks | Proven elsewhere (archetype grade A or B); some build or integration | Works with approved tools; the team can do it now |
 | Data readiness | Not digital, scattered or inaccessible; criteria unwritten | Exists but needs clean-up or access | Clean, reachable, decision criteria written down |
 | Risk | A wrong output reaches a client or regulator, is irreversible, or affects people decisions | Errors caught by a designed checkpoint; moderate consequence | Internal, reversible, low consequence |
-| Time to value | Over 12 months | About 3–6 months | Within about 30 days |
+| Time to value | Needs major foundations first (data, platform, policy) | Needs one or two prerequisites | Can start now with what exists |
 | Strategic fit | Unrelated to stated goals | Supports one goal | Directly serves the main ambition |
 
 Value scores rest on the range, not on hours alone: hours released are not value realized until the
@@ -228,7 +228,7 @@ time per engagement; and whether clients ask for lower fixed fees once savings a
 
 *Sequence:* F1, the template rewrite and the roll-forward start now; `ct-07` runs on the next five engagements with a
 re-performed sample, then on all; `ct-10` follows F1; `ct-08` is planned for one client with clean data next
-season; the parked delegate and model options come back at the quarterly review once `ct-07` is owned and
+season; the parked delegate and model options come back at the next re-plan once `ct-07` is owned and
 measured.
 
 ## 8. Output
@@ -242,7 +242,7 @@ In `opportunities.yaml`, for each item add or update:
   weighted_score: 4.00
   category: quick-win
   prerequisites: [F1 standard review checklist]
-  next_step: { action: "Run on the next five engagements and re-perform a sample of matches", owner: "Audit manager (pilot lead)", by: 2026-12-15 }
+  next_step: { action: "Run on the next five engagements and re-perform a sample of matches", owner: "Audit manager (pilot lead)", depends_on: "Review checklist F1 drafted; baseline hours recorded" }
 ```
 
 Use lever ids from the vocabulary (`capacity`, `speed`, `quality`, `growth`, `cost`, `risk`,
