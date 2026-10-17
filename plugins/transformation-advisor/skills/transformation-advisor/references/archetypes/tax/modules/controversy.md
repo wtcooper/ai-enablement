@@ -33,11 +33,11 @@ court filings.
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Selection and matching (authority) | Models score returns and issues; third-party matching and fraud screens generate notices or refund holds | review-assurance, data-reporting | Criteria not published; the representative meets it as an unexplained letter [TSCPA-2026] |
-| Notice intake and triage | Read the notice, tie it to the return, extract issue, amount and deadline; file a power of attorney; route | transaction-processing | First read slow and inconsistent between staff [WK-NOTICE-2026]; volume rising while IRS capacity falls (commentary) |
+| Selection and matching (authority) | Models score returns and issues; third-party matching and fraud screens generate notices or refund holds | review-assurance, data-reporting | Selection criteria are not published [TSCPA-2026; ACCTODAY-2026] |
+| Notice intake and triage | Read the notice, tie it to the return, extract issue, amount and deadline; file a power of attorney; route | transaction-processing | First read slow and inconsistent between staff [WK-NOTICE-2026]; one commentator expects notice volume to rise while IRS capacity to resolve notices has fallen [ACCTODAY-2026] |
 | Notice response | Choose agree, partial agree, disagree or penalty abatement; draft client explanation and agency letter; assemble support | document-production, expert-judgment | Drafted from scratch each time under short windows |
 | Pre-filing exposure review | Reconcile to third-party forms (1099-K, 1099-DA, K-1); document positions | review-assurance | A correct return can still draw a notice if numbers do not visibly reconcile [TSCPA-2026] |
-| Examination | Answer information document requests (IDRs, the examiner's formal record requests), interviews, proposed adjustments | coordination-scheduling, document-production | Authorities arrive with data already analysed [TR-TEIAUDITOR-2026] |
+| Examination | Answer information document requests (IDRs, the examiner's formal record requests), interviews, proposed adjustments | coordination-scheduling, document-production | In e-invoicing (continuous transaction control) jurisdictions, authorities arrive with transaction data already analysed [TR-TEIAUDITOR-2026] |
 | Appeals, Fast Track, ADR | Protest, settlement, mediation | expert-judgment, document-production | Appeals lost 29% of staff in 2025, per a law-firm commentary [CPAPA-APPEALS-2026]; no taxpayer-side AI evidence |
 | Litigation | Research, briefs, motions, expert reports | research-synthesis, document-production | Hallucinated citations by taxpayer counsel and by the IRS [TAXCT-CLINCO-2026; BLAW-TAXCT-2026] |
 | Collection and service | Payment plans, calls, chatbots, identity verification | client-interaction, transaction-processing | IRS assistor-answered calls down 20%, hold time 8 to 14 minutes in FS2026 [NTA-OBJ-2026] |
@@ -64,20 +64,20 @@ announcements.
   `#05` check TP documentation against public data (EY TP Doc Insights; see `tax-transfer-pricing-08`, `-16`). `#06` in-house teams summarise legislation and dispute files (EY survey: 39% built a
   controversy pilot or tool).
 - Reinvent (idea): `#12` preventive controls and real-time data exchange replace after-the-fact audit defence
-  (Deloitte scenarios; OECD real-time sharing pilots agreed Nov 2025).
+  (Deloitte scenarios; OECD real-time sharing pilots agreed Nov 2025 [OECD-FTA-2025]).
 
 **Examination, Appeals and litigation**
 - Improve: `#07` agents draft responses to audit queries and track IDRs (described by EY authors; no deployment).
   `#08` AI-assisted research and drafting for filings, with citation verification as the control (Clinco: 3 of 4
   cited cases apparently invented; tooling in `tax-research-advisory-19`, `-20`). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
 - Authority side: `#22` Agentforce case summaries for Chief Counsel, Appeals and TAS (announced, single source).
-  `#23` Brazil groups similar appeal files for the same officers (over 80% sensitivity and specificity in trials).
+  `#23` Brazil groups similar appeal files for the same officers (over 80% sensitivity and specificity in early trials; a model accuracy measure, not a speed result).
   `#21` examiner and caseworker assistants (ATO orders substantiation documents; HMRC document scanning; IRS revenue
   agents reportedly draft IDRs).
 - Delegate (announced): `#24` agentic case management (ATO's seven priorities, HMRC roadmap).
 
 **Selection, notices and service (authority side)**
-- Improve: `#13` IRS ML selection of returns and issues; TIGTA found no process to show it beats prior methods.
+- Improve: `#13` IRS ML selection of returns and issues; TIGTA found no sufficient process to show it beats prior methods.
   `#15` risk targeting at HMRC (GBP 10 billion credited), Austria, Hungary and US states. `#19` ATO prompts taxpayers
   to check unusual entries before lodging. `#20` agent-assist tools for service staff (IRS Archie, CDTFA, HMRC).
 - Automate: `#16` fraud and identity-theft screens that pause refunds. `#17` amended returns from 12-16 weeks to
@@ -148,12 +148,12 @@ override or error rate for its selection models.
   time not spent [IRS-OPR-2026]. The AICPA has asked for clarification on value pricing [AICPA-CART-2026].
 - AICPA SSTS §1.4 permits reliance on tools but keeps responsibility with the member [TAXCT-CLINCO-2026].
 - Australia TPB(GS) 55/2026: verify AI content at each step, document verification, get client permission before
-  entering client data [TPB-GS-2026]. UK PCRT AI guidance (19 Jan 2026): integrity, due care, confidentiality,
+  entering client data into a tool that discloses it to a third party [TPB-GS-2026]. UK PCRT AI guidance (19 Jan 2026): integrity, due care, confidentiality,
   limits of AI [PCRT-AI-2026].
 
 **Courts and evidence**
-- Tax Court: no AI rule; Rule 201(a) binds lawyers to the ABA Model Rules; IRC §6673 penalties up to $25,000. Judge
-  Holmes doubts a blanket "no AI" certification makes sense [BLAW-TAXCT-2026].
+- Tax Court: no AI rule; Rule 201(a) binds lawyers to the ABA Model Rules [TAXCT-CLINCO-2026]; IRC §6673 penalties up to
+  $25,000. Judge Holmes doubts a blanket "no AI" certification makes sense [BLAW-TAXCT-2026].
 - UK tribunals: the person who relies on AI bears responsibility (Elden); real cases cited for the wrong proposition
   also count (Zzaman) [ICAS-TAXTRIB-2026].
 - IRS LB&I: AI can support but not replace judgment; experts must explain inputs, assumptions, methods and AI tools,
@@ -181,11 +181,11 @@ on the authority side, every adverse decision and every selection override.
 - Practitioners: from assembling information to review and judgment [BTAX-EYGRIP-2025]; responsibility stays with
   the signer, with supervisory review and citation logs added [TAXCT-CLINCO-2026; IRS-OPR-2026]. Commentary sees a
   shift toward documentation readiness and year-round risk advice, unmeasured [ACCTODAY-2026].
-- In-house: talent is the top barrier (44%) [EY-TAXRISK-2025]; tax rarely owns AI [TEI-TAXTECH-2026]. One academic
+- In-house: talent is the top barrier (44%) [EY-TAXRISK-2025]; tax rarely owns AI [TEI-TAXTECH-2026]. One Tax Notes State author
   argues AI cannot hold culpability, so corporate tax teams will shrink less than predicted [SALA-TAXNOTES-2026].
 - IRS: headcount flat at about 74,000; leadership says AI is "not designed to eliminate jobs" [IRS-AIFIRST-2026]. GAO
   found AI skills lost and no workforce plan [GAO-2026]. A Chief Counsel attorney: adopt or leave
-  [IRS-AGENTFORCE-2025]. Classifiers review and override model suggestions [TIGTA-2025].
+  [IRS-AGENTFORCE-2025; quotation not re-verified, see `#22`]. Classifiers review and override model suggestions [TIGTA-2025].
 - HMRC: broadly the same size in 2030 with AI assisting officials [CSW-HMRC-2026]; 5,500 more compliance officers
   [PINSENT-HMRC-2026]. Assistor-answered calls fell 20% while voicebot volume rose 4% [NTA-OBJ-2026].
 - Werfel's register lists skill erosion (preparers) and expertise erosion (authorities) as risks [AICPA-WERFELART-2026].
@@ -196,7 +196,7 @@ on the authority side, every adverse decision and every selection override.
 |---|---|---|
 | 2025-07-21 | HMRC roadmap names agentic AI for case management | [ICAS-HMRC-2025] |
 | 2025-11 | OECD tax administrations agree to pilot real-time automated information sharing | [OECD-FTA-2025] |
-| 2025-11-21 | IRS announces Agentforce for Chief Counsel, Appeals and TAS | [IRS-AGENTFORCE-2025] |
+| 2025-11-21 | Axios reports the IRS deploying Salesforce Agentforce in Chief Counsel, Appeals and TAS (EisnerAmper confirms the rollout) | [IRS-AGENTFORCE-2025; EISNER-IRSAI-2026] |
 | 2025-12 | South Carolina signs a five-year AI audit-selection contract, starting with sales and use tax | [SCPOST-AUDIT-2026] |
 | 2026-02-03 | CIAT author: authorities moving to agentic AI for end-to-end TP control (opinion) | [CIAT-BLOG-2026] |
 | 2026-02-18 | EY India announces agents for research, compliance and litigation | [EY-INDIA-2026] |
@@ -217,7 +217,7 @@ Not yet moved: a Tax Court AI rule; Treasury minimum-practice guidance (none as 
 
 - **"AI makes up cases."** True, and courts have seen it on both sides (Clinco, Khoja, Elden, Riddle Aggregates).
   The response is a logged verification step: check each authority exists *and* supports the point
-  [TAXCT-CLINCO-2026; ICAS-TAXTRIB-2026]. One practitioner workflow uses AI for structure and explanation, not citation [FINDSKILL-2026].
+  [TAXCT-CLINCO-2026; ICAS-TAXTRIB-2026]. A training vendor's suggested workflow uses AI for structure and explanation, not citation [FINDSKILL-2026].
 - **"Client data can't go into these tools."** Correct for consumer tools: OPR limits client data to
   enterprise-approved tools and cites §§6713 and 7216 [IRS-OPR-2026]; Australia expects client permission [TPB-GS-2026].
 - **"If AI saves time, we lose fees."** OPR says do not bill time not spent; the AICPA is contesting the value-pricing
@@ -230,8 +230,8 @@ Not yet moved: a Tax Court AI rule; Treasury minimum-practice guidance (none as 
   minimum practices for high-impact AI [IRM-10-24-1].
 - **"There's no proof it works for us."** Accurate: no practitioner-side measurement exists. Start with notice
   reading (`#01`), measure cycle time and re-work yourself, and keep the human signature.
-- **"It fails silently."** TEI attendees describe AI that "fails quietly and even politely" [TEI-TAXTECH-2026]; design
-  checks that do not depend on the tool reporting its own failure.
+- **"It fails silently."** The Thomson Reuters Institute's recap of a TEI seminar says AI now "fails quietly and even
+  politely" [TEI-TAXTECH-2026]; design checks that do not depend on the tool reporting its own failure.
 
 ## 10. Sources
 
@@ -242,7 +242,7 @@ Full titles, URLs, dates and locators are in the YAML. Keys used here but not in
 - HADWICK-EUAIACT: Slipping Through the Cracks (European Papers, 2024-12-30), https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
 - OECD-DIGIT-2025: Tax Authorities Increasingly Use AI in Audits (Bloomberg Tax, 2025-06-17), https://news.bloombergtax.com/daily-tax-report/tax-authorities-increasingly-use-ai-in-audits-oecd-report-finds
 - PCRT-AI-2026: PCRT topical guidance on AI (seven UK bodies, 2026-01-19), https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members
-- PROSKAUER-707-2026: Proposed FRE 707 (Proskauer Rose, 2026-07), https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707
+- PROSKAUER-707-2026: Proposed FRE 707 (Proskauer Rose, 2026-07-29), https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707
 - SALA-TAXNOTES-2026: AI Won't Shrink Corporate Tax Teams Much (Tax Notes State, abstract, 2026-07-20), https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
 - SSL-OECDVAT-2026: OECD: AI Is Cutting VAT Investigations from 9 Months to 3 (SharedServicesLink, 2026-06-29), https://sharedserviceslink.com/news/oecd-ai-is-cutting-vat-non-compliance-investigations-from-9-months-to-3
 - TEI-TAXTECH-2026: 2026 TEI Tax Technology Seminar recap (Thomson Reuters Institute, 2026-05-04), https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain

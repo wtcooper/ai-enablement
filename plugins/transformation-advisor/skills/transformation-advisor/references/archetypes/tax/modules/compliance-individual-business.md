@@ -3,9 +3,9 @@
 Last reviewed 2026-10-17. Use cases live in `../use-cases/compliance-individual-business.yaml` (25 entries). Ids are
 shortened here: `#05` means `tax-compliance-individual-business-05`; other modules' ids are in full. Source keys in
 brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §10. **Evidence is thin.** One entry is
-grade A, and it rests on vendor-published figures about named firms; 9 are grade B (a named deployment without
-published numbers). No independent error rate, override rate or parallel-run result exists for any AI-prepared
-return. Say so when you quote a figure.
+grade A (`#05`), and it rests on a single vendor-published pilot: OpenAI's account of 7,000 returns in the Crete
+firms, which OpenAI co-developed; 9 are grade B (a named deployment without published measurement). No independent
+error rate, override rate or parallel-run result exists for any AI-prepared return. Say so when you quote a figure.
 
 ## Contents
 
@@ -34,7 +34,7 @@ module; notices after filing are in controversy; research tools are in research-
 |---|---|---|---|
 | Engagement and consent | Engagement letter; section 7216 consent (written client permission to use or disclose return data; Form 1040 wording fixed by Rev. Proc. 2013-14) | document-production, client-interaction | No AI-specific consent guidance; unclear whether an AI vendor is "software" or a third party [BARMORE-OPR-2026] |
 | Organizer and document request | Send the organizer, chase missing items, check what arrived | client-interaction, coordination-scheduling | Weeks of manual reminders; one missing brokerage statement can hold up a return; clients text photos [CPAPA-POSTEXT-2026, TAXADVISER-CLIENTS-2026] |
-| Intake and extraction | Classify W-2s, 1099s, K-1s, brokerage statements; key or import data | transaction-processing | Importing data is the lowest-rated software attribute (3.4 of 5) [AICPA-TAXSW-2026]; K-1 footnotes defeat template OCR |
+| Intake and extraction | Classify W-2s, 1099s, K-1s, brokerage statements; key or import data | transaction-processing | Importing data and integration are the least-liked software attributes (importing averaged 3.4 of 5) [AICPA-TAXSW-2026]; K-1 footnotes defeat template OCR [WK-AXCESSSCAN-2026] |
 | Due-diligence interview | Interview and Form 8867 for earned income, child and education credits and head of household | client-interaction, expert-judgment | Personal, contemporaneous duty; $650 per credit penalty for a 2026 filing [IRS-I8867-2025] |
 | Preparation | Federal and state logic, workpapers, depreciation, basis, allocations; trial-balance mapping for 1065 and 1120-S | transaction-processing, expert-judgment | Short season, staff shortage; spreadsheets; tax software re-runs upstream work [WCG-NOTREADY-2026] |
 | Research for positions | Schedule C, partnership and S corporation items | research-synthesis, expert-judgment | Hallucinated authority (*Clinco*) [TAXCT-CLINCO-2026] |
@@ -42,20 +42,19 @@ module; notices after filing are in controversy; research tools are in research-
 | Delivery, signature, e-file | Assembly, Form 8879 e-file authorisation, payment, filing | coordination-scheduling, document-production | Signing edge cases; final steps still inside the tax software [TR-TRUST7-2026, WCG-NOTREADY-2026] |
 | Billing and advisory | Fee basis; planning conversation from the return | client-interaction, expert-judgment | OPR fee language vs value pricing [AICPA-FEES-2026]; 93% use no tool to find planning opportunities in returns [AICPA-TAXSW-2026] |
 
-**Context on the pain.** A Black Ore launch article attributes about 300,000 net departures from the profession to the
-Bureau of Labor Statistics and a 17-year low in CPA exam candidates to the AICPA; its 125-million-hour shortfall is
-Black Ore's own unattributed figure [BLACKORE-2026]. For solo practitioners and firms of up to 10 staff, tax law
-complexity ranks first in the AICPA's 2026 top-issues survey, ahead of AI [AICPA-TOPISSUES-2026]. The pre-LLM
-baseline is scan-and-push extraction (SurePrep into UltraTax); WCG still uses it for about 4,500 1040s at about $25 a
-return by its own estimate [WCG-NOTREADY-2026, TR-MADSEN-2026]. A CPA Trendlines teaser (body gated) reported fewer
-returns produced, rising salaries and flat-to-down headcount in the 2026 season [CPATL-SEASON-2026].
+**Context on the pain.** A Black Ore launch article cites BLS data (about 300,000 net departures in two years) and a
+17-year low in CPA exam candidates (2022, AICPA); its 125-million-hour shortfall is unattributed [BLACKORE-2026]. For
+solo practitioners and firms of up to 10 staff, tax law complexity ranks first in the AICPA's 2026 top-issues survey,
+ahead of AI [AICPA-TOPISSUES-2026]. The pre-LLM baseline is scan-and-push extraction (SurePrep into UltraTax); WCG
+uses it for about 4,500 1040s at about $25 a return [WCG-NOTREADY-2026, TR-MADSEN-2026]. A gated CPA Trendlines teaser
+reports fewer returns, rising salaries and flat-to-down headcount in the 2026 season [CPATL-SEASON-2026].
 
 ## 3. Where AI is changing the work
 
 Grouped by the four Reimagine lenses: improve (assist or augment a step), automate (no person on the normal path),
 delegate (an agent owns a multi-step outcome), reinvent (the service or operating model changes). Every ladder level
-and change scope has entries, but automate and delegate rest on vendor claims, and model-scope change has one B entry
-(`#24`). Seven entries are controls, enablement or ideas rather than AI deployments (`#10`, `#13`, `#18`-`#22`).
+and change scope has entries; every automate and delegate figure is vendor-published or company-reported, and
+model-scope change has one B entry (`#24`). Seven entries are controls, enablement or ideas (`#10`, `#13`, `#18`-`#22`).
 
 **Intake and data capture**
 - Improve: `#01` AI-prefilled organizers, tailored request lists, chasing and missing-information questions (Canopy,
@@ -68,11 +67,11 @@ and change scope has entries, but automate and delegate rest on vendor claims, a
 - Improve: `#04` Thomson Reuters Ready to Review drafts simple 1040s for review (about an hour saved per return, one
   partner's estimate). `#07` trial balance mapped to 1120-S and 1065 workpapers (Basis). `#10` idea: a deterministic
   engine calculates, the model handles intake and explanation.
-- Delegate: `#05` end-to-end agents for complex, K-1-heavy individual returns (Black Ore, Basis, Accrual; OpenAI's
-  7,000-return pilot with Crete firms); the only grade A, all vendor-published. `#06` partnership, S corporation and
-  trust returns to K-1s (Accrual at Armanino; Basis 1065 demonstration). `#08` an agent works inside the firm's own
-  tax software, one agent per return (TaxGPT). `#09` general agents run taught routines (Accrual Arc; a practitioner
-  using Claude Cowork).
+- Delegate: `#05` end-to-end agents for complex, K-1-heavy individual returns (Black Ore, Basis, Accrual at Armanino);
+  the only grade A, resting on OpenAI's vendor-published 7,000-return pilot with Crete firms. `#06` partnership, S
+  corporation and trust returns to K-1s (Accrual at Armanino; Basis 1065 demo). `#08` an agent prepares the return
+  inside the firm's own tax software (TaxGPT, which WCG found least ready of five vendors). `#09` general agents run
+  taught routines (Accrual Arc; a practitioner using Claude Cowork).
 
 **Research and review**
 - Improve: `#11` grounded assistant for code changes and return positions (H&R Block Sidekick), every authority
@@ -139,16 +138,18 @@ Ask in the person's own setting (small CPA firm, mid-tier firm, enrolled agent, 
 
 **Named outcomes (vendor-published or self-reported; time, not quality)**
 - Boulay: returns with 60-70+ K-1s from 100+ hours to "maybe 15 or 20" (Basis testimonial) `#05`.
-- Crete firms pilot (7,000 returns): about a third less preparation time, up to 97% accuracy, about 50% more
-  throughput (OpenAI) `#05`.
+- Crete pilot (7,000 returns): about a third less prep time, up to 97% accuracy (correct field completion vs the
+  filed return), about 50% more throughput (OpenAI, co-developer) `#05`. Armanino on Accrual (vendor-page figures, no
+  method): 60% fewer 1040/1041 prep hours `#05`; 86.5% of partnership draft values matched the final return `#06`.
 - CLH CPAs: about one hour saved per simple 1040 (partner's estimate, vendor release) `#04`.
 - Kulangy CPA: returns completed in half the time (ProConnect) `#02`. Whitcomb & Sheridan: 10-20 hours a week (Basis) `#07`.
 - Multiplier: one 12-person boutique's margins more than doubled `#24`. H&R Block Second Look: +600 bp return rate `#14`.
 
 **Vendor claims (grade C; ask for named, measured cases)**: Black Ore >99% accuracy across tens of thousands of pilot
 returns, up to 98% time saving, review time cut by over 50%, cost per return down up to 80% (`#05`); CCH Axcess Scan
-97.5% K-1 extraction accuracy (`#02`); TaxGPT 90% less first-pass time and 45 minutes per 1040 (`#08`); SafeSend 15
-minutes and about $12,000 per 1,000 returns (`#16`). Pricing reported by WCG: Black Ore $100-150 per return on average.
+97.5% K-1 extraction accuracy (`#02`); TaxGPT 50% less first-pass time on its product page but 90% in its launch
+release, plus a projected 45 minutes per 1040 (`#08`); SafeSend 15 minutes and about $12,000 per 1,000 returns
+(`#16`). Pricing reported by WCG: Black Ore $100-150 per return on average.
 
 **Adoption benchmarks**
 - AICPA 2026 tax software survey (1,808 members who prepared 2025 returns for a fee): 65% use AI for tax research,
@@ -174,11 +175,11 @@ starting point, not a standard [AICPA-WERFEL-2026].
 **Standards and regulators ("existing duties apply"; no rule bans AI)**
 - **IRS OPR Alert 2026-19 (24 Jun 2026)** maps AI onto Circular 230: section 10.22 due diligence (verify facts,
   citations and calculations), 10.27(a) fees (do not bill manual time not spent; credit savings), 10.35 competence
-  (understand how the tool works and its limits), 10.36 firm procedures (training, data handling, accuracy
-  monitoring, vendor vetting, documented), 10.37 written advice, and 10.51(a)(15) with IRC sections 6713 and 7216
-  [IRS-OPR-2026]. It calls itself introductory; the AICPA's CEO called its fee language non-authoritative
-  [AICPA-FEES-2026]. Section 10.34(a) (no signing a return with a position lacking reasonable basis) also applies
-  [TREAS-C230-2014]. The IRS said it will merge OPR with the Return Preparer Office [JOFA-OPR-2026].
+  (understand how the tool works and its limits), 10.36 firm procedures (training, secure data handling, accuracy
+  monitoring, documented), 10.37 written advice, 10.51(a)(15) with IRC sections 6713 and 7216; its best practices add
+  vetting vendors' AI before purchase [IRS-OPR-2026]. It calls itself introductory; the AICPA's CEO called its fee
+  language non-authoritative [AICPA-FEES-2026]. Section 10.34(a) (no signing a return with a position lacking
+  reasonable basis) also applies [TREAS-C230-2014]. OPR is to merge with the Return Preparer Office [JOFA-OPR-2026].
 - **Section 7216 and 6713 regulations**: written, signed, dated consent naming purpose and recipient; no retroactive
   consent; limits on disclosure abroad and on SSNs; software developers count as preparers. None of this mentions AI,
   and how it applies to an LLM vendor is unresolved; take advice [TREAS-7216-2008, IRS-RP201314-2013, BARMORE-OPR-2026].
@@ -209,9 +210,9 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 
 ## 7. Roles and how they evolve
 
-- **Preparers become reviewers.** Vendors describe "start at review"; an anonymous Juno customer says "I'm reviewing,
-  and that's a completely different job" [JUNO-SITE-2026]. WCG says Black Ore "replaces the first-level preparer, not
-  the last mile" (`#05`).
+- **Preparers become reviewers.** Vendors describe "start at review" [BASIS-TAX-2026]; a Juno customer (Yehuda
+  Tenenbaum, Y10 Tax Solutions) says "I'm reviewing, and that's a completely different job" [JUNO-SITE-2026]. WCG says
+  Black Ore "replaces the first-level preparer, not the last mile" (`#05`).
 - **Review is the new bottleneck.** PwC: one reviewer where three gathered on a K-1 footnote (`#02`); TEI attendees
   worry about "polite, quiet and technical" errors (`#12`); Werfel names control dilution (`#13`).
 - **Retail tax pros move to advice.** H&R Block says less collecting and entering, more guidance and planning, and
@@ -236,16 +237,17 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 - **2026-03-24 / 04-02** TaxGPT launches preparation and return-review agents [TAXGPT-2026]; Perplexity launches a
   consumer agent that drafts federal returns [PERPLEXITY-2026].
 - **2026-04-29** Black Ore opens Tax Autopilot after a two-year, 75-firm pilot; about 3,700 firms waiting [BLACKORE-2026].
-- **2026-06** Black Ore summit: predictions of autonomous individual preparation by 2027, entities soon after
-  [BLACKORE-SUMMIT-2026]. Column Tax releases a harder TaxCalcBench (tax year 2025) [COLUMN-TCBREPO-2026].
+- **2026-06** Column Tax releases a harder TaxCalcBench (tax year 2025) [COLUMN-TCBREPO-2026]. **06-17** Black Ore
+  summit recap: industry predictions of autonomous individual preparation by 2027, entities soon after [BLACKORE-SUMMIT-2026].
 - **2026-07-24** WCG declines to commit to any AI preparer for 2026; Ready to Review K-1 support reported on a
   November 2026 roadmap; WCG's AI Tax Prep Pod starts November 2026 [WCG-NOTREADY-2026, WCG-PLAYBOOK-2026].
+- **2026-08-05** Basis announces an end-to-end tax platform from intake to review (page date) [BASIS-E2E-2026].
 - **2026-08-11** H&R Block will expand its AI-supported office model to a full market in tax season 27 [HRB-Q4CALL-2026].
 - **2026-08-20** Runtime Wire reports OpenAI's 7,000-return pilot with Crete firms [RUNTIMEWIRE-2026, OPENAI-CODEX-2026].
 - **2026-09-08 / 09-23** AICPA asks the IRS to clarify the fee language [AICPA-FEES-2026]; CART launched [AICPA-CART-2026].
-- **2026-09-22** Accrual's Arc: the practitioner sets an objective, approves the plan and reviews the result [ACCRUAL-ARC-2026].
-- **Undated** Basis announces an end-to-end tax platform from intake to review [BASIS-E2E-2026]. Watch: TaxBench
-  release; IRS answer to the AICPA; any AI-specific section 7216 guidance; WCG's November re-evaluation.
+- **2026-09-09** Accrual unveils Arc (reported 09-22): the practitioner sets an objective, approves the plan and
+  reviews the result [ACCRUAL-ARC-2026]. Watch: TaxBench release; IRS answer to the AICPA; any AI-specific section
+  7216 guidance; WCG's November re-evaluation.
 
 ## 9. Common objections
 
@@ -293,6 +295,6 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   - AICPA-TOPISSUES-2026: Journal of Accountancy, *CPA Firm Top Issues Survey* (629 respondents), 2026-06-23, https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
   - TR-MADSEN-2026: Thomson Reuters Community, *CPA firm automation case study* (SurePrep/UltraTax baseline), 2026-03-17, https://community.thomsonreuters.com/tax-accounting/f/tax-research-guidance/35077/cpa-firm-automation-case-study-how-one-practice-simplified-1040-tax-prep
   - CPATL-SEASON-2026: CPA Trendlines, *Inside Tax Season's Hidden Shift* (teaser only), 2026-04-05, https://cpatrendlines.com/2026/04/05/inside-tax-seasons-hidden-shift-same-work-fewer-people-higher-cost
-  - JUNO-SITE-2026: Juno home page (customer quotes), retrieved 2026-10-17, https://www.juno.tax/
-  - BASIS-E2E-2026: Basis, *The future of tax is end-to-end intelligence* (undated), https://www.getbasis.ai/blogs/the-future-of-tax-is-end-to-end-intelligence
+  - JUNO-SITE-2026: Juno home page (named customer quotes), retrieved 2026-10-17, https://www.juno.tax/
+  - BASIS-E2E-2026: Basis, *The future of tax is end-to-end intelligence*, 2026-08-05 (date shown on the page), https://www.getbasis.ai/blogs/the-future-of-tax-is-end-to-end-intelligence
   - RSM-MYRSM-2025: RSM US, *RSM Expands AI Commitment with Launch of myRSM Tax*, 2025-06-16, https://rsmus.com/newsroom/2025/rsm-expands-ai-commitment-with-launch-of-myrsm-tax.html
