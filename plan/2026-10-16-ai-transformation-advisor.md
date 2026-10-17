@@ -1,6 +1,6 @@
 # Plan: AI transformation advisor v1 (from intent 2026-10-16, spec revision 5)
 
-Date: 2026-10-16 · Status: draft, revised after the research pilot ([retro](../research/runs/pilot/RETRO.md)).
+Date: 2026-10-17 · Status: draft, revised after the research pilot ([retro](../research/runs/pilot/RETRO.md)) and wave 1 ([retro](../research/runs/wave1/RETRO.md)).
 
 > Stage 3 (Build) artifact. It says which files change, in what order, the risks, and how we prove
 > each step works. The *what* is in [`spec/2026-10-16-ai-transformation-advisor.md`](../spec/2026-10-16-ai-transformation-advisor.md).
@@ -183,7 +183,7 @@ one module end to end costs about 1.85M.
 | One archetype | ~14M |
 | Three archetypes | ~41M |
 | Streams M and B | ~9M |
-| **Full build** | **~50M (range 45–60M)** |
+| **Full build** | ~~~50M~~ → **~75M, revised after wave 1** (pilot about 2M, wave 1 about 23M, remaining about 50M) |
 
 Two levers can reduce this:
 
@@ -208,9 +208,17 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 
 | Wave | Content | Agents |
 |---|---|---|
-| 1 | The rest of assurance: landscape rerun, 7 modules, cross-cutting, archetype-level files. **In parallel:** stream M (method), since the workflow logic is pillar 1 | ~36 + 12 |
-| 2 | Tax | ~41 |
-| 3 | Professional services, plus stream B (backbone library) | ~41 + 14 |
+| 1 · **done** | The rest of assurance (the landscape grew it to 10 modules), cross-cutting topics, archetype-level files, consistency pass. Stream M (method): 11 files. 63 agents, about 23M tokens, about 2 hours. See the [retro](../research/runs/wave1/RETRO.md) | 63 |
+| 2 | Tax. The landscape runs **alone first**, then the deep dives | ~50–60 |
+| 3 | Professional services, plus stream B (backbone library) | ~50–60 + ~15 |
+
+**Changes adopted after wave 1:**
+
+- The landscape scan runs alone, before the deep dives, so they don't compete for the shared web-search quota.
+- Every agent works in a private working folder.
+- The text mirror is available for sites that block direct access.
+- Plans allow for the landscape adding modules (about 25% extra).
+- The A/B target applies only where public evidence exists. Thin modules are rated in `ARCHETYPE.md`.
 
 M2 (install skeleton) and M5 (authoring) can start during wave 1, using the pilot module as the first
 real archetype content.

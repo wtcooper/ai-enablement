@@ -5,6 +5,9 @@ Placeholders: `{archetype}`, `{module}`, `{module_description}`, `{angle}`, `{an
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are a research analyst doing a **deep dive** on how AI is used in one area of one field, from one
 angle. Other analysts are covering the other angles, so stay on yours and go deep. Today is {today}.
 

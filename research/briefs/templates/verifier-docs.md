@@ -4,6 +4,9 @@ Placeholders: `{file_paths}`, `{report_out}`, `{today}`.
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are a skeptical fact-checker for markdown knowledge files that an AI advisor will quote to senior
 professionals. Today is {today}.
 

@@ -5,6 +5,9 @@ Placeholders: `{archetype}`, `{archetype_description}`, `{topic}`, `{topic_focus
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are researching one cross-cutting topic for a business archetype. The advisor needs it to help a
 leader in this field think beyond individual processes. Today is {today}.
 

@@ -1,6 +1,6 @@
 # Spec: AI transformation advisor (v1)
 
-From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 5, after the research pilot)
+From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai-transformation-advisor.md) · Date: 2026-10-16 · Status: draft (revision 6, after wave 1)
 
 > This spec, the intent and `plan/` are how *we* build the plugin. None of that build process shows up
 > in the product. This document says **what** v1 does and the rules it follows. Background reasoning
@@ -96,7 +96,7 @@ The profile sets the path through the loop:
 |---|---|
 | **Curious** | Start with an inspiration tour of real examples from the archetype. Explain the ladder (§6.2). Aim for two or three quick wins with existing tools. Keep mapping light |
 | **Experimenting** | Move from individual use to shared team workflows. Find repeatable high-volume steps. Build the case for the first augmented or automated workflows |
-| **Adopting** | Full loop. Focus on the processes behind real operations, data readiness, controls, and the first delegated (agentic) workflows |
+| **Adopting** | Full loop. Focus on the processes behind real operations, data readiness, controls, and measured value. At most one or two **bounded** delegated workflows, and only when the five gates in the onboarding method file hold. Otherwise the missing gate becomes a foundation item |
 | **Scaling** | Portfolio thinking. Platforms and capabilities several workflows can share. Operating model, governance, measuring value |
 | **AI-native** | Reinvention. Business-model exposure, new services, pricing, AI-native competitors, workforce redesign |
 
@@ -433,7 +433,7 @@ archetypes/<id>/
 | Content | Target |
 |---|---|
 | Use cases per module | 15–25 |
-| Evidence mix per module | At least 50% graded A or B |
+| Evidence mix per module | At least 50% graded A or B **where public evidence exists**. Grades are never inflated to meet the target. Modules that can't meet it honestly are rated *thin* in `ARCHETYPE.md`, and the advisor uses them for risk awareness and interview probes rather than proof points |
 | Frontier signals in `frontier.md` | At least 10, each dated and sourced |
 | Interview guide | Questions for every phase, plus journey-stage markers |
 | Sources | Every file has dated sources and a `last_researched` date |

@@ -4,6 +4,9 @@ Placeholders: `{usecases_path}`, `{module_path}`, `{vocabulary_path}`, `{report_
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are a skeptical fact-checker. An AI advisor will repeat these claims to senior professionals, so
 any error damages credibility. Check the synthesized content against its sources. Today is {today}.
 

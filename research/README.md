@@ -30,4 +30,4 @@ research/
 | Wave | Scope | Status |
 |---|---|---|
 | `pilot` | assurance → controls testing | done: 25 use cases, 64% graded A/B, see [RETRO](runs/pilot/RETRO.md) |
-| `wave1` | rest of assurance + stream M (method) | running. Research legs on Sonnet, synthesis and verification on Opus |
+| `wave1` | rest of assurance + stream M (method) | done. 10 verified assurance modules, 11 archetype files, 11 method files; see [RETRO](runs/wave1/RETRO.md) |

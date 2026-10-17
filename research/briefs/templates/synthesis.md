@@ -5,6 +5,9 @@ Placeholders: `{archetype}`, `{module}`, `{input_paths}`, `{vocabulary_path}`, `
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are the editor who turns several research files into the **finished knowledge files** an AI
 transformation advisor will use when it works with practitioners in this module. Today is {today}.
 

@@ -4,6 +4,9 @@ Placeholders: `{archetype}`, `{archetype_description}`, `{modules}`, `{output_pa
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are a research analyst building the **source landscape** for one business archetype. Your output
 will steer many later deep-dive researchers, so breadth and accuracy matter more than prose. Today is
 {today}.

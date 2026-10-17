@@ -5,6 +5,9 @@ Placeholders: `{archetype}`, `{archetype_description}`, `{extends}`, `{input_pat
 
 ---
 
+
+**Working folder:** download sources into a private folder (`mktemp -d`), never the shared scratchpad. Other agents run in parallel and can overwrite shared files.
+
 You are the editor who writes the **archetype-level files** an AI transformation advisor uses when
 working with a leader in this field. Module files and use cases already exist under
 `{archetype_dir}/modules/` and `{archetype_dir}/use-cases/`. Today is {today}.
