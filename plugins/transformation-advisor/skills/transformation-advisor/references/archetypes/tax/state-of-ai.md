@@ -24,7 +24,7 @@ resolve in §9 or in [sources.md](sources.md).
   [FONOA-2026].
 - **Agentic products shipped between late 2025 and mid 2026**, mostly from vendors (Thomson Reuters, Black Ore, Basis,
   Accrual, Avalara, Sovos) and the Big Four (EY, KPMG, PwC). Production evidence is mostly vendor-stated, and one
-  4,500-return firm that tested five AI preparation vendors in 2026 said "no one is ready" [WCG-2026].
+  4,500-return firm that evaluated five AI preparation vendors in 2026 said "no one is ready" [WCG-2026].
 - **Independent accuracy evidence is scarce and unflattering.** Unaided frontier models computed fewer than a third of
   simplified federal returns correctly (2025 models) [COLUMN-TAXCALCBENCH-2025]; the best model scored 49% on a
   corporate tax research benchmark [VALS-TAXAGENT-2026].
@@ -43,7 +43,7 @@ Read as published; samples and definitions differ, so do not average or trend ac
 |---|---|---|---|
 | Future of Professionals, tax and audit (Thomson Reuters Institute) [TR-FOP-2026] | Jul 2026; subset size not stated | 81% use AI tools regularly; more than a third admit unauthorized tools | Vendor-owned |
 | Tax software survey (AICPA) [AICPA-TAXSW-2026] | 1,808 members who prepared 2025 returns for a fee | 65% use AI in tax research; 16% have no plans (24.3% a year earlier); 93% use no tool to find planning opportunities in returns | Professional body |
-| AI Tax Research Outlook (Blue J with CPA.com) [BLUEJ-OUTLOOK-2026] | 1,000 US accountants, Mar 2026 | 60% work at firms that adopted AI tax research (33% in 2025, different sample) | Vendor-run |
+| AI Tax Research Outlook (Blue J with CPA.com) [BLUEJ-OUTLOOK-2026] | 1,000 US accountants, spring 2026 | 60% work at firms that adopted AI tax research (33% in 2025, different sample) | Vendor-run |
 | Tax firm deployment (Thomson Reuters-authored) [CPAPA-TR-2026] | 2026 | 34% of tax firms deploy GenAI at organization level (21% before); 19% of those measure ROI; 14% use agentic AI | Vendor-authored |
 | Top Issues (AICPA PCPS) [AICPA-TOPISSUES-2026] | 629 practitioners, Apr-May 2026 | Technology change and AI adoption rank in the top two issues for five of six firm-size groups (third for firms of 2-10 staff); tax law complexity ranks first for solo and up-to-10-staff firms | Ranks concerns, does not measure use |
 
@@ -51,7 +51,7 @@ Read as published; samples and definitions differ, so do not average or trend ac
 
 | Survey (who ran it) | Sample, date | Headline | Bias note |
 |---|---|---|---|
-| State of the Corporate Tax Department (Thomson Reuters) [TR-CORPTAX-2025] | 288 departments, Jul-Aug 2025 | 67% not using GenAI; of those implementing new technology, 57% plan GenAI and 17% "more advanced" such as agentic | Vendor-owned |
+| State of the Corporate Tax Department (Thomson Reuters) [TR-CORPTAX-2025] | 288 departments, 2025 (blog dated 22 Oct 2025) | 67% not using GenAI; of those implementing new technology, 57% plan GenAI and 17% "more advanced" such as agentic | Vendor-owned |
 | AI in tax departments (KPMG Germany) [KPMG-DE-2026] | Quick surveys, May 2026; sample not stated | 71% use AI tools, 19% preparing; 89% use company-wide tools and 29% specialised tax applications; 66% of users report noticeable time savings | Big Four, one market |
 | Tax and Finance Operations (EY) [EY-TFO-2025] | 1,600 CFOs and tax and finance leaders, 30 jurisdictions, Nov 2025 | 86% call data, GenAI and technology a top priority; 51% are early in data-management maturity; 44% name inability to execute a data, AI and technology plan as the biggest barrier | Big Four |
 | Corporate tax technology (Thomson Reuters blog on its department data) [TR-UNDERSTAFF-2026] | US corporate tax departments; blog dated 23 Jul 2026 | 9% call themselves active AI users; 27% can secure budget when needed | Vendor-owned |
@@ -66,7 +66,7 @@ The 2025 "67% not using" and the 2026 "71% using" describe different populations
 
 | State | Examples (who says so) |
 |---|---|
-| **In production, per the organization** | PwC US: agents for K-1 data mapping and tax diagnostics "moving beyond pilots and into production" in a "human-reviewed, multi-eye process"; 800+ custom GPTs and 250+ agents firm-wide (interview, Jun 2025) [PWC-MEGNA-2025]. Oxford Industries presented a deployment with Savant at TEI; no outcomes published [SAVANT-2026]. H&R Block uses AI to remove manual data entry in pilot offices and will expand the model to a full market [HRB-Q4CALL-2026]. OpenAI's tax department showed live automation pipelines at TEI [TEI-TAXTECH-2026] |
+| **In production, per the organization** | PwC US: agents for K-1 data mapping and tax diagnostics "moving beyond pilots and into production" in a "human-reviewed, multi-eye process"; 800+ custom GPTs and 250+ agents firm-wide (interview, Jun 2025) [PWC-MEGNA-2025]. Savant announced a TEI session in which Oxford Industries would show how its tax team "deploys AI safely and at scale" (vendor announcement; no outcomes published) [SAVANT-2026]. H&R Block uses AI to remove manual data entry in pilot offices and will expand the model to a full market [HRB-Q4CALL-2026]. OpenAI's tax department showed live automation pipelines at TEI [TEI-TAXTECH-2026] |
 | **Pilot or early adopter** | Thomson Reuters Ready to Review: early adopter programme; one firm said it cut about an hour from a simple 1040 [TR-COCOUNSEL-2025]. Black Ore: 75 firms in a two-year pilot before opening on 29 Apr 2026 [BLACKORE-2026]. OpenAI's Tax AI pilot with Crete firms: 7,000 1040 and 1041 returns (published by OpenAI, the co-developer) [OPENAI-CODEX-2026] |
 | **Announced** | EY.ai Tax Labs and Tax Agent Factory (25 Nov 2025), with no deployment counts [EY-TAXLABS-2025]; KPMG Digital Gateway with Claude, tax clients first (20 May 2026) [KPMG-ANTHROPIC-2026]; RSM myRSM Tax on a US$1bn plan [RSM-MYRSM-2025]; Sovos MCP gateway "in development" [SOVOS-SOVI-2026] |
 | **Roadmap** | Ready to Review support for K-1s and consolidated 1099s reported for November 2026 (WCG's account of a vendor conversation) [WCG-2026] |
@@ -111,9 +111,10 @@ KPMG's readiness survey of 2,084 senior leaders finds most organizations in "the
 
 - 70% of 54 OECD Forum on Tax Administration members use AI tools (2024 data) [OECD-DIGIT-2025].
 - IRS: 126 active use cases in June 2025, 65 withheld as sensitive or exempt; the AI skills base eroded after 2025 staff
-  cuts and there is no AI workforce plan [GAO-2026]. The IRS CEO calls for an "AI-first IRS" with flat headcount near
-  74,000 and a mid-90s compliance rate in five years (a forecast) [IRS-AIFIRST-2026].
-- HMRC says AI and advanced analytics directly enabled it to protect and recover GBP 10 billion in 2025-26
+  cuts and there is no AI workforce plan [GAO-2026]. The IRS CEO calls for an "AI-first IRS" and sees a mid-90s
+  compliance rate in five years, against about 85% now (a forecast); headcount held flat near 74,000 through 2026
+  [IRS-AIFIRST-2026].
+- HMRC says AI and advanced analytics enabled it to protect and recover GBP 10 billion in 2025-26
   (self-reported; method not published) [HMRC-ARA-2026]; its roadmap targets
   90% digital interactions by 2030 and names agentic case management [ICAS-HMRC-2025].
 - Detail and practitioner implications are in [controversy](modules/controversy.md).

@@ -30,20 +30,21 @@ are not averaged; forecasts name who made them. If a leader is worried for the t
 | New hybrids | Tax technology and data roles, AI leads and champions, accountants building vendors' agents | Created by AI and data work |
 
 Credentials matter for who may represent and sign: as of 1 Sep 2026 the IRS listed 886,338 current PTIN holders,
-including 209,076 CPAs, 71,966 enrolled agents and 26,256 attorneys (credentials overlap) [IRS-PREPSTATS-2026]; PTIN-only
-preparers can represent clients only on returns they prepared [IRS-PREPCRED-2026].
+including 209,076 CPAs, 71,966 enrolled agents and 26,256 attorneys (credentials overlap) [IRS-PREPSTATS-2026]; PTIN holders
+without a credential cannot represent clients unless they complete the Annual Filing Season Program, which allows
+limited representation on returns they prepared and signed [IRS-PREPCRED-2026].
 
 ## 2. The pipeline
 
-- **Rising from a low base.** Spring 2026 enrollment in US four-year accounting programmes rose 8.9% to 205,180, the
+- **Rising for three years.** Spring 2026 enrollment in US four-year accounting programmes rose 8.9% to 205,180, the
   third straight rise; 2025 had the most first-time CPA Exam candidates since 2018 outside the 2023 spike
   [AICPA-ENROLL-2026].
 - **Licensure is loosening.** Nearly all states have added a route that swaps the fifth year of study for experience;
   in Pennsylvania about 48% of 734 new CPAs in 12 months came through the bachelor's route [AT-150HR-2026].
 - **Firms pay to speed licensure.** EY and PwC US each doubled CPA exam bonuses to US$10,000 for joiners from 1 June
   2026 [AT-EYBONUS-2026; CFODIVE-PWCBONUS-2026].
-- **Federal outlook.** BLS projects accountant and auditor jobs up 5% from 2025 to 2035 and says AI and automation are
-  "not expected to reduce overall demand" [BLS-ACCT-2026].
+- **Federal outlook.** BLS projects accountant and auditor jobs up 5% from 2025 to 2035 and says efficiency gains from
+  technologies such as AI are "not expected to reduce overall demand" [BLS-ACCT-2026].
 - **Treat with care:** claims of 340,000 fewer accountants since 2019 and a 125-million-hour tax shortfall were not
   traced to a primary source [TRI-JUDGMENT-2026; BLACKORE-2026].
 
@@ -54,12 +55,14 @@ preparers can represent clients only on returns they prepared [IRS-PREPCRED-2026
   presentation) [FORTUNE-PWC-2025; MGMTCONS-PWC-2025]. UK Big Four graduate intakes fell between 2023 and 2025 (KPMG's
   scheme 1,399 to 942 in 2024; primary sources not stated) [SFN-BIGFOUR-2025].
 - **But Top 100 US firms grew in aggregate**: employees up 8.62% to 556,378, partly through 225 mergers, while
-  prioritising lateral hires as automation and outsourcing "reduce the need for entry-level staff to do grunt work"
+  prioritising lateral hires, which the editors suggest may reflect automation and outsourcing that "reduce the need for
+  entry-level staff to do grunt work"
   [AT-TOP100-2026].
 - **Independent evidence (not tax-specific).** Employment of 22-25 year-olds in AI-exposed occupations is 19% below
-  trend, mainly through reduced hiring; accountants are a large exposed occupation; the authors call this descriptive,
-  not causal [STANFORD-CANARIES-2026]. An MIT master's thesis links greater data integration to 2.7% lower accountant
-  employment and 13% fewer openings, concentrated in junior roles and driven by attrition [MIT-DOWNING-2026]. A Stanford
+  trend, mainly through reduced hiring; accountants and auditors appear among the paper's most-exposed example
+  occupations; the authors call this descriptive,
+  not causal [STANFORD-CANARIES-2026]. An MIT doctoral thesis finds firms with one standard deviation more prior
+  data integration have 2.7% lower corporate accountant employment and 13% fewer openings after GenAI, concentrated in junior roles and driven by attrition [MIT-DOWNING-2026]. A Stanford
   GSB paper finds about 8.5% of accountant time reallocated from data entry, suggesting augmentation [STANFORD-GSB-2025].
 - **Counter-view.** Sala argues models "conflate tax preparation with tax practice" and that AI cannot hold
   culpability, so corporate tax teams will shrink little [SALA-TAXNOTES-2026].
@@ -73,9 +76,9 @@ preparers can represent clients only on returns they prepared [IRS-PREPCRED-2026
   the article asks, without answering, how onshore juniors will develop judgment if repeatable work moves offshore
   [IPA-OFFSHORE-2026].
 - **The consent frame.** Disclosure to a preparer outside the US needs taxpayer consent, and for 1040 returns SSNs
-  cannot go abroad except under defined safeguards [ECFR-7216-2026]. A newsletter reading OPR's alert lists offshore
+  cannot go abroad except under defined safeguards [ECFR-7216-2026; IRS-RP2013-14]. A newsletter reading OPR's alert lists offshore
   subprocessor access as "not addressed" [BARMORE-OPR-2026].
-- **Corporate sourcing.** In KPMG's 53-organisation indirect tax benchmark, VAT/GST return preparation is 32% central
+- **Corporate sourcing.** In KPMG's 53-organisation indirect tax benchmark, VAT/GST compliance is managed 32% centrally
   in-house, 23% local in-house, 26% co-sourced and 19% outsourced [KPMG-INDIRECT-2026].
 - **AI and offshore headcount: no data.** One podcast guest, a vendor-side voice, forecasts less outsourcing
   [CPAPA-TAXGPT-2026]. Treat it as a hypothesis to test with the leader's own numbers.
@@ -149,7 +152,7 @@ compresses exactly those repetitions [PRIMEGLOBAL-2026; CPAPA-STOPTRAIN-2026].
 
 The IRS lost more than a quarter of its staff in 2025, holds headcount near 74,000 and calls itself "AI-first"; its CEO
 says AI "is not designed to eliminate jobs" [IRS-AIFIRST-2026]. GAO found too few skilled staff to build AI and no AI
-workforce plan [GAO-2026]. For practitioners, that means faster automated matching with thinner human follow-up (see
+workforce plan [GAO-2026]. For practitioners, that likely means faster automated matching with thinner human follow-up (advisor inference; see
 [controversy](modules/controversy.md)).
 
 ## 11. Sources
@@ -168,7 +171,7 @@ Keys not listed here are in [sources.md](sources.md).
 - **IRS-PREPSTATS-2026**: IRS, *Tax Professional Management Office federal tax return preparer statistics* (regulator, data as of 2026-09-01 (page reviewed 2026-09-08)). https://www.irs.gov/tax-professionals/tax-professional-management-office-federal-tax-return-preparer-statistics
 - **JOB-ANTHROPIC-2026**: Anthropic (Greenhouse API), *Finance Systems Analyst, Tax* (job-posting, first published 2026-08-07; updated 2026-10-13). https://job-boards.greenhouse.io/anthropic/jobs/5357947008
 - **JOB-STRIPE-2026**: Stripe (Greenhouse API), *Business Systems Architect (Tax)* (job-posting, first published 2026-08-20; updated 2026-10-07). https://stripe.com/jobs/search?gh_jid=8145117
-- **KARBON-JUNIOR-2026**: Karbon, *How do junior accountants learn when AI does the grunt work?* (vendor, 2026 (undated on page)). https://karbonhq.com/resources/training-junior-accountants-ai/
+- **KARBON-JUNIOR-2026**: Karbon, *How do junior accountants learn when AI does the grunt work?* (vendor, 2026-04-30 (page metadata)). https://karbonhq.com/resources/training-junior-accountants-ai/
 - **MGMTCONS-PWC-2025**: Management Consulted, *PwC Entry-Level Recruiting To Slow as AI and Offshoring Reshape Big 4 Hiring* (press, 2025-08-23). https://managementconsulted.com/pwc-entry-level-recruiting-to-slow/
 - **PRIMEGLOBAL-2026**: PrimeGlobal, *The apprenticeship crisis (Trisha Daho)* (professional-body, 2026-06-26). https://www.primeglobal.net/news/the-apprenticeship-crisis
 - **SFN-BIGFOUR-2025**: Scottish Financial News, *Big Four slash graduate jobs as AI takes over entry-level tasks* (press, 2025-06-23). https://www.scottishfinancialnews.com/articles/big-four-slash-graduate-jobs-as-ai-takes-over-entry-level-tasks

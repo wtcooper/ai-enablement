@@ -40,11 +40,12 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
   agent completed a 1065, Feb 2026), Accrual, and Perplexity's consumer agent (Apr 2026) [TR-COCOUNSEL-2025;
   BLACKORE-2026; BASIS-2026; CPAPA-ACCRUAL-2026; PERPLEXITY-2026]. OpenAI reports a 7,000-return pilot with Crete firms
   (its own publication as co-developer) [OPENAI-CODEX-2026].
-- **Readiness evidence is mixed to negative.** WCG tested five vendors and committed to none, citing K-1 gaps, the
+- **Readiness evidence is mixed to negative.** WCG evaluated five vendors and committed to none, citing K-1 gaps, the
   proprietary-platform "reset" risk and the handoff into its tax software [WCG-2026]; unaided models compute fewer than a
   third of simplified returns correctly [COLUMN-TAXCALCBENCH-2025].
-- **Forecast.** Industry voices at a vendor's summit predicted autonomous individual preparation by 2027, entities soon
-  after [BLACKORE-SUMMIT-2026]. Thomson Reuters offers firms three paths: elevate, scale, reimagine [TR-FOP-2026].
+- **Forecast.** A podcast on Black Ore's summit discusses industry predictions that autonomous individual preparation
+  "may arrive" by 2027, entities shortly after [BLACKORE-SUMMIT-2026]. Thomson Reuters offers firms three strategic
+  paths (a framework, not a forecast): elevate, scale, reimagine [TR-FOP-2026].
 - **What would have to be true.** Exception handling that does not strand work; independent error measurement; review
   that keeps pace with volume; a junior learning path ([workforce.md](workforce.md) §6).
 - **Counter-view.** Sala: models "conflate tax preparation with tax practice", and AI cannot carry culpability
@@ -55,13 +56,13 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 
 - **Exists.** Multiplier bought a 12-person cross-border boutique and says AI more than doubled its margin
   [MULTIPLIER-2025]. Crete, Thrive-backed, planned over US$500m of acquisitions and reported over US$300m revenue, 20+
-  firms and 900 staff at Jun 2025 [CRETE-REUTERS-2025]. Its investor says the model works best on small firms, which are
-  "more open to changing their existing processes" [MULTIPLIER-2025].
+  firms and 900 staff at Jun 2025 [CRETE-REUTERS-2025]. Multiplier's lead investor (Lightspeed) says the model works best on
+  small firms, which TechCrunch paraphrases as "more open to changing their existing processes" [MULTIPLIER-2025].
 - **Private equity is the larger force.** 10 of the top 20 US firms are or will soon be PE-owned [CFOBREW-2026]; Grant
-  Thornton Advisors agreed to buy CBIZ at US$5.0bn [GT-CBIZ-2026]; PE investors pay more for firms using AI to expand
-  capacity [CPATL-PEVAL-2026].
+  Thornton Advisors agreed to buy CBIZ at US$5.0bn [GT-CBIZ-2026]; CPA Trendlines, drawing on TaxDome's founders (a vendor),
+  says PE investors pay more for firms using AI to expand capacity [CPATL-PEVAL-2026].
 - **Software-first entrants sell to firms instead.** Basis raised US$100m at a US$1.15bn valuation [BASIS-2026]; Accrual
-  launched with US$75m [CPAPA-ACCRUAL-2026].
+  launched in Feb 2026 with US$75m [CPAPA-ACCRUAL-2026].
 - **What would have to be true.** Bought practices accept new processes; quality holds under signing duties; margins
   survive integration. All results so far are company-stated.
 - **For the leader.** Ask what a buyer would see in the practice's EBITDA today, and what the leader would change if a
@@ -86,14 +87,15 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 - **Exists as vendor framing.** Avalara's agents are "always on, always ready", filing "upon approval"; Thomson Reuters
   sells "touchless compliance … by default, manual by exception"; Sovos plans issue detection before deadlines
   [AVALARA-AGENTIC-2025; TR-SUTAI-2026; SOVOS-SOVI-2026].
-- **Authority drivers are real.** OECD administrations are moving toward real-time information-sharing pilots
-  [OECD-FTA-2025]; France's e-invoicing mandate starts receipt of e-invoices from 1 Sep 2026 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026]; ViDA brings intra-EU
+- **Authority drivers are real.** OECD administrations agreed to deepen real-time information sharing and back
+  pilots [OECD-FTA-STATEMENT-2025]; from 1 Sep 2026 all French companies must receive e-invoices and large and mid-size
+  ones must also issue them and report transaction data (vendor summary) [SOVOS-FRANCE-GOLIVE-2026]; ViDA brings intra-EU
   digital reporting from 1 Jul 2030 [EC-VIDA-2026].
 - **Agentic commerce adds a collection question.** AI systems "can't bear tax obligations", so the company operating
   the agent may have to collect; the US$3-5 trillion by 2030 figure is a McKinsey forecast cited by Bloomberg Tax
   [BTAX-AGENTICCOMMERCE-2026].
-- **What would have to be true.** Upstream data quality, clear ownership of AI-driven outcomes and audit trails; Deloitte
-  lists these in all four of its scenarios [DELOITTE-TTT-2026].
+- **What would have to be true.** Data integrity, clear ownership of AI-driven outcomes and audit trails; Deloitte lists
+  these among decisions that apply across all four of its scenarios [DELOITTE-TTT-2026].
 - **For the leader.** Indirect tax and in-house data teams move first; see [indirect-tax](modules/indirect-tax.md) and
   [data-technology](modules/data-technology.md).
 
@@ -104,8 +106,8 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 - **The constraint is data, not AI.** A May 2026 Direct File policy report says pre-population depends on faster
   third-party information returns and that "we cannot eradicate tax returns altogether" within the current system
   [ESP-DIRECTFILE-2026].
-- **Authorities want it.** The IRS CEO frames AI as lifting compliance to the mid-90s with flat headcount (a forecast)
-  [IRS-AIFIRST-2026]; ATO prompts taxpayers during online filing to check unusual entries
+- **Authorities want it.** The IRS CEO sees an "AI-first IRS" reaching a mid-90s compliance rate in five years,
+  with headcount held near 74,000 (a forecast) [IRS-AIFIRST-2026]; ATO prompts taxpayers during online filing to check unusual entries
   ([controversy](modules/controversy.md)).
 - **Not found.** An AI-driven, return-free or authority-computed filing system live anywhere.
 - **What would have to be true.** Timely third-party data; authority capacity (GAO found AI skills eroded) [GAO-2026].
@@ -120,7 +122,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 - **Managed services.** KPMG says 40% of companies have adopted managed services at scale in tax (its survey); its
   leader says the market is "approaching $1B" (his experience) [KPMG-MS-2026].
 - **Advice on AI itself.** Companies asked the OECD how to characterise AI transactions between affiliates
-  [OECD-INTRAGROUP-2026]; nexus and value creation by AI were debated at the D.C. Bar tax conference [DCBAR-TAX-2026];
+  [OECD-INTRAGROUP-2026]; nexus and value creation by AI were on the D.C. Bar tax conference programme [DCBAR-TAX-2026];
   who collects tax at agent checkout is open [BTAX-AGENTICCOMMERCE-2026].
 - **Defence against authority AI.** As authorities automate selection and notices, practitioners need notice workflows
   and documented positions ([controversy](modules/controversy.md)).
@@ -147,4 +149,6 @@ own revenue mix.
 
 Keys not listed here are in [sources.md](sources.md).
 
+- **ECFR-10.27**: Treasury via Cornell LII, *31 CFR 10.27, Fees (Circular 230)* (regulator, current; accessed 2026-10-17). https://www.law.cornell.edu/cfr/text/31/10.27
 - **NBER-PREPOP-2022**: NBER, *Automatic Tax Filing: Simulating a Pre-Populated Form 1040 (WP 30008)* (academic, 2022). https://www.nber.org/papers/w30008
+- **OECD-FTA-STATEMENT-2025**: OECD Forum on Tax Administration (copy hosted by Japan's National Tax Agency), *FTA Plenary Statement of Outcomes, 18th Plenary, Cape Town* (regulator, 2025-11-20). https://www.nta.go.jp/taxes/shiraberu/kokusai/fta/press/pdf/20251125_final.pdf

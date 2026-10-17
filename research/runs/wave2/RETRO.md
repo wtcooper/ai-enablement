@@ -26,7 +26,7 @@ The landscape scan read 160 sources (105 opened) and changed the module list. Wi
 
 **No entry was rejected** in any module. 135 of 183 entries (74%) were corrected, close to wave 1 (about 72%).
 
-**Archetype-level verification:** see the two reports `tax-archetype-verification-A-report.md` and `-B-report.md`.
+**Archetype-level verification:** about 458 claims checked across the 11 files: about 78 fixed, 1 removed. Main fixes: the EU AI Act deferral is now Regulation (EU) 2026/1744 (it was called provisional); the PTIN rule on representation; statistics applied to the wrong population (IPA 100 for small firms; company accountants for accounting firms); quotes credited to the wrong person; a source key cited but never defined. The Evidence column in `ARCHETYPE.md` matches the validator for all eight modules. Reports: `tax-archetype-verification-A-report.md` and `-B-report.md`.
 
 ## What the evidence says
 

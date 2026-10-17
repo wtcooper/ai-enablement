@@ -30,9 +30,9 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 | 19 Jan 2026 | Seven UK PCRT bodies publish AI guidance: members stay responsible; client data in a public model without consent is likely a confidentiality breach | Professional guidance | UK firms need data rules and review records now | [PCRT-AI-2026] |
 | 9 Feb 2026 | *Clinco*: the Tax Court admonishes counsel over apparently hallucinated cases and says it has not sanctioned for AI "Yet." | Decision | Citation checks before anything reaches a court or authority | [CLINCO-OPINION-2026] |
 | 18 Mar 2026 | IRS withdraws two expert rebuttal reports at trial after AI-related errors are raised (*Riddle Aggregates*) | Trial record | The authority's own work product is exposed too; challenge its reports | [RIDDLE-TRANSCRIPT-2026] |
-| 6 May 2026 | EU provisional deal would defer stand-alone high-risk AI Act duties to 2 Dec 2027; formal adoption unconfirmed in the sources | Provisional law | Watch dates for HR and authority-side systems; literacy duty for firms as deployers | [GIBSON-AIACT-2026] |
 | 24 Jun 2026 | IRS OPR Alert 2026-19 maps AI onto Circular 230 (due diligence, fees, competence, firm procedures, written advice, confidentiality) | Regulator guidance | Procedures, training, vendor vetting and records are expected now | [IRS-OPR-2026] |
 | 22 Jul 2026 | Australia's TPB issues TPB(GS) 55/2026: client permission before data goes into third-party AI; documented verification | Regulator guidance | Engagement letters can carry the permission | [TPB-GS55-2026] |
+| 24 Jul 2026 | EU AI Act amendment (Regulation (EU) 2026/1744) published: stand-alone (Annex III) high-risk duties apply from 2 Dec 2027, product-embedded (Annex I) from 2 Aug 2028; the literacy duty becomes a duty to support staff literacy | Law | Watch dates for HR and authority-side systems; firms as deployers keep a (softened) literacy duty | [EURLEX-AIOMNIBUS-2026; CUATRECASAS-AIOMNIBUS-2026] |
 | 31 Aug 2026 | Werfel's AI risk framework published: 20 risks for authorities, 15 for preparers | Professional-body framework (author's views) | A ready risk register for a firm or department | [TAXADVISER-WERFEL-2026] |
 | 8 Sep 2026 | AICPA asks the IRS to clarify OPR's fee language, which it says appears not to allow value pricing | Pending | Do not lock a pricing model until the answer lands | [AICPA-FEES-2026] |
 | 23 Sep 2026 | AICPA launches the Council on AI Risk in Tax (CART) with Werfel | Council | Possible basis for later guidance and insurer questions (advisor inference) | [AICPA-CART-2026] |
@@ -58,15 +58,15 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 
 | Date | Signal | Type | What it means for a leader | Source |
 |---|---|---|---|---|
-| 20 Nov 2025 | OECD tax administrations agree to move toward pilots of real-time automated information sharing | Intent to pilot | Authorities will see more, sooner | [OECD-FTA-2025] |
+| 20 Nov 2025 | OECD tax administrations agree to deepen co-operation on real-time information sharing and back pilot projects | Intent to pilot | Authorities will see more, sooner | [OECD-FTA-STATEMENT-2025] |
 | 21 Nov 2025 | IRS rolls out Salesforce Agentforce in Chief Counsel, Appeals and the Taxpayer Advocate Service; agents may not make final decisions | Rollout | The other side of a dispute uses agents | [IRS-AGENTFORCE-2025] |
 | 24 Mar 2026 | GAO: 126 IRS AI use cases; skills eroded after staff cuts; no AI workforce plan | Audit finding | Faster selection, thinner oversight; document positions | [GAO-2026] |
 | 30 Jun 2026 | First GloBE Information Returns due; country XML variants and business rules were the hard part | Deadline passed | Pillar Two is a data pipeline problem | [FGS-GIR-2026] |
 | Jul 2026 | HMRC says AI and advanced analytics enabled GBP 10bn of tax protected and recovered in 2025-26 | Self-reported | Authority analytics already pay for themselves, by its own account | [HMRC-ARA-2026] |
 | 29 Jul 2026 | IRS LB&I: AI "shouldn't replace" judgment in TP; experts must explain AI inputs and methods; IRS will "want to see the formulas" | Official remarks | Document AI-assisted analyses for exam | [IRS-LBI-TP-2026] |
-| 1 Sep 2026 | France's e-invoicing mandate starts with receipt of e-invoices (vendor summary) | Mandate | Real-time reporting spreads in Europe | [SOVOS-FRANCE-GOLIVE-2026] |
-| 11 Sep 2026 | Second OECD Pillar Two package with a revised GIR | Rules | The target keeps moving; budget for change | [OECD-P2-SEP-2026] |
-| 30 Sep 2026 | IRS CEO: "AI-first IRS", flat headcount near 74,000, mid-90s compliance in five years (about 85% now) | Stated aim; forecast | Expect more automated matching and notices | [IRS-AIFIRST-2026] |
+| 1 Sep 2026 | France's e-invoicing mandate starts: all companies must receive e-invoices; large and mid-size companies must also issue them and report transaction data (smaller firms from Sep 2027; vendor summary) | Mandate | Real-time reporting spreads in Europe | [SOVOS-FRANCE-GOLIVE-2026] |
+| 11 Sep 2026 | New OECD Pillar Two package with a revised GIR | Rules | The target keeps moving; budget for change | [OECD-P2-SEP-2026] |
+| 30 Sep 2026 | IRS CEO: "AI-first IRS" and a mid-90s compliance rate in five years (about 85% now); headcount flat near 74,000 through 2026 | Stated aim; forecast | Expect more automated matching and notices | [IRS-AIFIRST-2026] |
 
 ## 5. Entrants, capital, pricing and people
 
@@ -91,16 +91,16 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 | Dec 2026 | Aibidia's TP Intelligence first release planned; ATO enterprise-wide model monitoring due | [AIBIDIA-TPINTEL-2026; ANAO-ATO-2025] |
 | Tax years beginning after 2025 | Form 6765 Section G (R&D credit business-component detail) required | [IRS-F6765-INSTR-2025] |
 | 2027 | Second GIR season: 19 more jurisdictions join the original 37 | [BTAX-KPMG-GIR-2026] |
-| 2 Dec 2027 | EU AI Act stand-alone high-risk duties, if the provisional deferral is adopted | [GIBSON-AIACT-2026] |
+| 2 Dec 2027; 2 Aug 2028 | EU AI Act high-risk duties apply: stand-alone (Annex III), then product-embedded (Annex I) | [EURLEX-AIOMNIBUS-2026] |
 | 1 Jul 2028; 1 Jul 2030; 1 Jan 2035 | ViDA milestones: platform rules and single registration; intra-EU e-invoicing and digital reporting; harmonisation | [EC-VIDA-2026] |
 | 2030 | HMRC target: at least 90% of interactions digital | [ICAS-HMRC-2025] |
 
 **Forecasts in circulation** (none proven; most made by interested parties):
 - IRS CEO: a mid-90s compliance rate in five years [IRS-AIFIRST-2026].
-- Industry voices at a vendor's summit: autonomous individual preparation by 2027, entities soon after [BLACKORE-SUMMIT-2026].
+- Industry predictions discussed on a podcast about Black Ore's summit: autonomous individual preparation "may arrive" by 2027, entities shortly after [BLACKORE-SUMMIT-2026].
 - Aon: insurers will ask more detailed AI questions within a year or two [DIGIN-INSURERS-2026].
-- McKinsey, as cited by Bloomberg Tax: US$3-5 trillion in agent-orchestrated sales by 2030, raising who-collects questions [BTAX-AGENTICCOMMERCE-2026].
-- TP vendor survey: majorities expect agents to gather data and do first-pass audit reviews within two to three years [AIBIDIA-LEADERS-2026].
+- McKinsey, as cited by Bloomberg Tax: US$3-5 trillion a year in global agent-orchestrated sales by 2030, raising who-collects questions [BTAX-AGENTICCOMMERCE-2026].
+- TP vendor survey (97 in-house respondents): majorities expect agents to gather data and do first-pass audit reviews within two to three years [AIBIDIA-LEADERS-2026].
 - US Bureau of Labor Statistics: accountant and auditor jobs +5% from 2025 to 2035 [BLS-ACCT-2026].
 
 **What a leader should do with this.** Pick the two or three signals that change their own rules, competitors,
@@ -115,5 +115,7 @@ Keys not listed here are in [sources.md](sources.md).
 - **AIBIDIA-TPINTEL-2026**: Aibidia, *Aibidia introduces TP Intelligence, a new AI system of intelligence for transfer pricing* (vendor, 2026-10-15). https://www.aibidia.com/news/aibidia-introduces-tp-intelligence-a-new-ai-system-of-intelligence-for-transfer-pricing
 - **AVALARA-AVIATOR-2026**: Avalara via iTWire, *Avalara Ushers in New Era of Agentic Tax and Compliance with Avalara Aviator* (vendor, 2026-09-23). https://itwire.com/guest-articles/company-news/avalara-ushers-in-new-era-of-agentic-tax-and-compliance-with-avalara-aviator
 - **BTAX-KPMG-GIR-2026**: Bloomberg Tax (Daily Tax Report), *Pillar Two's First Real Test Has Lessons for 2027 Filing Season (Conrad Turley and Tam Do, KPMG International)* (firm, 2026-08-21). https://news.bloombergtax.com/daily-tax-report/pillar-twos-first-real-test-has-lessons-for-2027-filing-season
+- **EURLEX-AIOMNIBUS-2026**: EUR-Lex, *Regulation (EU) 2026/1744 of 8 July 2026 amending Regulation (EU) 2024/1689 (Digital Omnibus on AI)* (regulator, published in the Official Journal 2026-07-24). https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng
 - **IRS-AGENTFORCE-2025**: Axios, *Exclusive: IRS deploys AI agents* (press, 21 Nov 2025). https://www.axios.com/2025/11/21/irs-deploys-ai-agents
 - **IRS-F6765-INSTR-2025**: Internal Revenue Service, *Instructions for Form 6765 (12/2025), Credit for Increasing Research Activities* (regulator, 2025-12). https://www.irs.gov/instructions/i6765
+- **OECD-FTA-STATEMENT-2025**: OECD Forum on Tax Administration (copy hosted by Japan's National Tax Agency), *FTA Plenary Statement of Outcomes, 18th Plenary, Cape Town* (regulator, 2025-11-20). https://www.nta.go.jp/taxes/shiraberu/kokusai/fta/press/pdf/20251125_final.pdf
