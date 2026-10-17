@@ -1,9 +1,10 @@
-# Security archetype, cloud-infrastructure module: use cases (wave 4 synthesis, 2026-10-17).
-# Merged from the practice, discourse and governance deep dives in research/runs/wave4/.
+# Use cases: security / cloud-infrastructure (cloud posture, cloud detection and response, remediation, least
+# privilege, infrastructure as code, network policy, endpoint and the infrastructure team's operating model).
+# Sources checked 2026-10-17. Almost every outcome figure is vendor-published or self-reported; no independent
+# measurement of any cloud-security agent exists.
 # Agent containment, agent identity and agent action logging live in ai-security (security-ai-security-06, -10, -12);
 # the Wiz Red Agent perimeter agent lives in security-vulnerability-exposure-21; AWS Security Agent in
 # security-vulnerability-exposure-17; calibrated endpoint-triage classifiers in security-operations-06.
-
 # ---------------------------------------------------------------------------------------------------------------
 # Area 1: posture assessment and prioritisation
 # ---------------------------------------------------------------------------------------------------------------
@@ -83,11 +84,11 @@
     - {ref: RESILIENTCYBER-LATIO-2026, title: "The AI Security Market Moves to the Endpoint (podcast with James Berthoty of Latio)", publisher: "Resilient Cyber (Chris Hughes)", type: podcast, url: "https://www.resilientcyber.io/p/the-ai-security-market-moves-to-the", date: "2026-10-05", access: full, locator: "Show notes, 'Runtime versus posture, blast radius'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 12 (posture-prioritization agent), discourse 01 (attack-path context) and governance 03 (idea:
-    AI triage of IaC and CSPM findings). Grade C: the only figure on a deployed tool is vendor telemetry with no named
-    customer; the independent figures come from research prototypes, one of them not language-model based. SACR's
-    report was licensed free by Palo Alto Networks. Related: security-vulnerability-exposure-09 (risk-based
-    prioritisation) and -22 (exposure-platform agent behind an approval harness).
+    AI triage of IaC and CSPM findings on its own is an idea. Grade C: the only figure on a deployed tool is vendor
+    telemetry with no named customer; the independent figures come from research prototypes, one of them not
+    language-model based. SACR's report was licensed free by Palo Alto Networks. Related:
+    security-vulnerability-exposure-09 (risk-based prioritisation) and -22 (exposure-platform agent behind an approval
+    harness).
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 2: runtime detection, investigation and response
@@ -187,15 +188,13 @@
     - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 02 and discourse 03; the SecRespond benchmark from governance 09 (routed to incident-response) is
-    kept as a caution. Graded B, not A: ZS has not published the
-    figure itself. It reaches us only as its director's spoken 'around 95.17%' on an undated Wiz page; the 'internal
-    framework' and 'self-validated' wording is Wiz's narration, and case count, accuracy definition, period and handling
-    of disagreements are not given. Redis's 85.7% is likewise relayed by Wiz. Owkin's '10 out of 10' is a recollection
-    and the ZS speed and throughput figures are vendor headlines. No independent measurement of any cloud-security agent
-    was found.
-    Related: security-operations-05, -06 and -21 (SOC-wide triage and measuring SOC AI); response actions by verdict
-    overlap security-operations-19 and security-incident-response-11.
+    The SecRespond benchmark is kept as a caution. Graded B, not A: ZS has not published the figure itself. It is
+    known only as its director's spoken 'around 95.17%' on an undated Wiz page; the 'internal framework' and
+    'self-validated' wording is Wiz's narration, and case count, accuracy definition, period and handling of
+    disagreements are not given. Redis's 85.7% is likewise relayed by Wiz. Owkin's '10 out of 10' is a recollection
+    and the ZS speed and throughput figures are vendor headlines. No independent measurement of any cloud-security
+    agent was found. Related: security-operations-05, -06 and -21 (SOC-wide triage and measuring SOC AI); response
+    actions by verdict overlap security-operations-19 and security-incident-response-11.
 
 - id: security-cloud-infrastructure-03
   title: "In-house triage agent over cloud posture findings, connected through MCP or built in-house, with evidence rules and approval for IAM and network changes"
@@ -265,12 +264,11 @@
     - {ref: HN-DATAFRUIT-2025, title: "Launch HN: Datafruit (YC S25) - AI for DevOps (comment thread, 48 comments)", publisher: "Hacker News", type: community, url: "https://news.ycombinator.com/item?id=45104974", date: "2025-09-02", access: full, locator: "Comment thread on agent privileges"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 05 (WRITER Cerebro) and discourse 02 (Cohere). Discourse graded Cohere A; lowered to B under the
-    2026-10-17 grade A rule, because the figures are vendor headline metrics with no stated method, and the 30-minute to
-    2-hour baseline reads as an estimate. Cohere sells the agent platform it used, an interest to weigh. WRITER publishes
-    a baseline but no post-deployment numbers, and says it wants feedback 'once the repo is public', so its production
-    scope is not clear. Related: security-operations-01 (context-grounded triage pipeline) and -07 (evidence-gated
-    dismissal).
+    Cohere is graded B, not A, because the figures are vendor headline metrics with no stated method, and the
+    30-minute to 2-hour baseline reads as an estimate. Cohere sells the agent platform it used, an interest to weigh.
+    WRITER publishes a baseline but no post-deployment numbers, and says it wants feedback 'once the repo is public',
+    so its production scope is not clear. Related: security-operations-01 (context-grounded triage pipeline) and -07
+    (evidence-gated dismissal).
 
 - id: security-cloud-infrastructure-04
   title: "Correlating weak runtime signals with posture context into one critical attack-sequence finding"
@@ -320,7 +318,7 @@
     - {ref: AWS-GUARDDUTY-ETD-2026, title: "GuardDuty Extended Threat Detection has added five new indicators to surface attack sequences", publisher: "AWS Security Blog", type: vendor, url: "https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/", date: "2026-10-12", access: full, locator: "'New indicators overview'; 'Strengthening weak runtime signals'; EKS example; 'Responding to attack sequences'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Graded C here: the figure is AWS's own claim about its service, with no named customer. The post describes signal
+    Graded C: the figure is AWS's own claim about its service, with no named customer. The post describes signal
     correlation; it does not say a generative model produces the finding, so this is adjacent to LLM-based AI. Kept
     because it shows detection vendors cutting triage load before any language model is applied. Maturity
     in-production refers to a generally available AWS service.
@@ -378,11 +376,11 @@
     - {ref: ARXIV-2607.14493, title: "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation (arXiv preprint, abstract read)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.14493", date: "2026-07-16", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 10 and discourse 13; log-injection evidence from governance 11 (idea: operations agents that read
-    telemetry and run fixes), whose control set is covered by security-ai-security-13 (untrusted content as hostile
-    input). Grade C: a first-hand production report in a conference abstract (talk not viewed) from an unnamed
-    organisation, so maturity is set to piloting rather than in-production. Agent identity in logs: see
-    security-ai-security-06 and -12; verifying AI investigations: security-incident-response-09.
+    Log-injection evidence concerns operations agents that read telemetry and run fixes (an idea); their control set
+    is covered by security-ai-security-13 (untrusted content as hostile input). Grade C: a first-hand production
+    report in a conference abstract (talk not viewed) from an unnamed organisation, so maturity is set to piloting
+    rather than in-production. Agent identity in logs: see security-ai-security-06 and -12; verifying AI
+    investigations: security-incident-response-09.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 3: ownership and remediation
@@ -456,11 +454,11 @@
     - {ref: TAMNOON-REMEDIATION-2026, title: "AI Cloud Remediation in 5 Stages, Including the Stage That Says No", publisher: "Tamnoon", type: vendor, url: "https://www.tamnoon.io/blog/how-agentic-cloud-remediation-actually-works-in-5-stages", date: "2026-04-30", access: full, locator: "'Stage 3: Investigation And Safety Assessment'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 03 and discourse 04, plus CrowdStrike's remediation plans from practice 12. Grade B: named users
-    (project44, Rogo AI, La Centrale's proof of concept) without a separable measurement; vendor-authored throughout. La
-    Centrale's fall in critical open vulnerabilities comes from graph context and ownership routing, not the Green Agent,
-    so it is not claimed. The Red Agent part of project44's figure belongs with security-vulnerability-exposure-21.
-    Related: security-application-security-12 (AI-drafted fixes delivered as reviewable changes).
+    Includes CrowdStrike's remediation plans. Grade B: named users (project44, Rogo AI, La Centrale's proof of
+    concept) without a separable measurement; vendor-authored throughout. La Centrale's fall in critical open
+    vulnerabilities comes from graph context and ownership routing, not the Green Agent, so it is not claimed. The Red
+    Agent part of project44's figure belongs with security-vulnerability-exposure-21. Related:
+    security-application-security-12 (AI-drafted fixes delivered as reviewable changes).
 
 - id: security-cloud-infrastructure-07
   title: "Evidence-gated automated remediation of cloud misconfigurations: safe fixes run, risky ones wait for approval, unsafe ones go to the owner"
@@ -537,11 +535,11 @@
     - {ref: CSA-AISTORM-2026, title: "AI Security Through the CISO Lens: Insights from the AI Storm Summit Series", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/artifacts/ai-security-through-the-ciso-lens", date: "2026-07-28", access: full, locator: "'The human-in-the-loop question'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: discourse 05 (Tamnoon, Crossmint and Flywire) and governance 06 (idea: policy-bounded autonomous remediation).
-    Grade C: a vendor's method description with no named customer, a conference abstract and a peer-reviewed prototype
-    (two authors at Dawn Computing). Maturity piloting: the Crossmint and Flywire speakers say they built their own
-    auto-remediation, but the abstract does not say which employer runs it. Related: security-vulnerability-exposure-16
-    (estate-wide agentic patching, idea) and security-incident-response-11 (guardrailed containment playbooks).
+    Policy-bounded autonomous remediation on its own is an idea. Grade C: a vendor's method description with no named
+    customer, a conference abstract and a peer-reviewed prototype (two authors at Dawn Computing). Maturity piloting:
+    the Crossmint and Flywire speakers say they built their own auto-remediation, but the abstract does not say which
+    employer runs it. Related: security-vulnerability-exposure-16 (estate-wide agentic patching, idea) and
+    security-incident-response-11 (guardrailed containment playbooks).
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 4: identities and permissions in the cloud
@@ -618,12 +616,10 @@
     - {ref: ARXIV-2509.04191, title: "KubeGuard: LLM-Assisted Kubernetes Hardening via Configuration Files and Runtime Logs Analysis (arXiv preprint, abstract read)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2509.04191", date: "2025-09-04", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 06 (AWS and Smolen parts), discourse 06 (Smolen part) and governance 05 (idea: AI-derived least
-    privilege for functions and Kubernetes). Grade C: AWS publishes a reference pattern, not a customer deployment; the
-    talk is an abstract from a consultancy; the figures come from research prototypes. Related:
-    security-identity-access-07 (usage-based role mining) and -11 (LLM-drafted access policy as code); over-granted
-    privileges before agents find them: security-ai-security-09. The governance file used DATADOG-CLOUDSEC-2025 for the
-    same Datadog report; this file uses DATADOG-SOCS-2025.
+    AI-derived least privilege for functions and Kubernetes on its own is an idea. Grade C: AWS publishes a reference
+    pattern, not a customer deployment; the talk is an abstract from a consultancy; the figures come from research
+    prototypes. Related: security-identity-access-07 (usage-based role mining) and -11 (LLM-drafted access policy as
+    code); over-granted privileges before agents find them: security-ai-security-09.
 
 - id: security-cloud-infrastructure-09
   title: "Multi-agent cloud security 'team' (IAM, red team, threat intelligence, behaviour analytics) that scores identity risk, applies controls and red-teams them"
@@ -799,12 +795,12 @@
     - {ref: ARXIV-2607.25995, title: "Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches? (arXiv preprint, abstract read)", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.25995", date: "2026-07-28", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 07 (idea: policy-checking MCP paved road), discourse 09, governance 01 (idea: scanner-verified IaC
-    repair), 02 (idea: policy-scanner gate) and 04 (idea: topology-aware Kubernetes remediation; live topology context
-    raised dependency-sensitive patch correctness from 11.1% to 78.0% across 248 trials on a purpose-built test cluster,
-    ARXIV-2607.25995). Grade C: Wiz's commercial guardrails are a vendor claim; the paved road is a talk and demo; the
-    independent figures are preprints on mostly older models that measure the problem, not a deployed guardrail.
-    Related: security-application-security-02 (guardrails for AI-written code) and security-vulnerability-exposure-14
+    The policy-checking MCP paved road, scanner-verified IaC repair, the policy-scanner gate and topology-aware
+    Kubernetes remediation are ideas; in the last, live topology context raised dependency-sensitive patch correctness
+    from 11.1% to 78.0% across 248 trials on a purpose-built test cluster (ARXIV-2607.25995). Grade C: Wiz's
+    commercial guardrails are a vendor claim; the paved road is a talk and demo; the independent figures are preprints
+    on mostly older models that measure the problem, not a deployed guardrail. Related:
+    security-application-security-02 (guardrails for AI-written code) and security-vulnerability-exposure-14
     (validating AI-written patches).
 
 - id: security-cloud-infrastructure-12
@@ -845,7 +841,7 @@
     - "Agents cannot tell a broken tool from a real infrastructure problem unless outputs are cross-checked (ARXIV-2603.02345)."
     - "NIST's draft profile asks organisations to keep evaluating whether AI defence capabilities are mature enough (NIST-IR8596-2025)."
   human_checkpoints:
-    - "Not described in the abstracts; the governance deep dive infers engineer review of proposed IaC updates before merge"
+    - "Not described in the abstracts; engineer review of proposed IaC updates before merge is inferred"
   role_evolution: >-
     No source describes a role change for this use.
   evidence_grade: D
@@ -855,8 +851,8 @@
     - {ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Section 2.1.2 (Defend), 'Mission assurance: configuration management', pp.10-12"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: from governance 07; research prototypes only, no named organisation's production use found. Kept because it
-    is the only reconcile-exceptions pattern in the module.
+    Idea: research prototypes only, no named organisation's production use found. Kept because it is the only
+    reconcile-exceptions pattern in the module.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 6: network and edge policy
@@ -914,8 +910,8 @@
     - {ref: PANW-LIGHTWELL-2026, title: "IBM, Red Hat and Palo Alto Networks Expand Project Lightwell to Help Organizations Respond to Software Vulnerabilities", publisher: "Palo Alto Networks (press release)", type: vendor, url: "https://www.paloaltonetworks.com/company/press/2026/ibm-red-hat-and-palo-alto-networks-expand-project-lightwell-to-help-organizations-respond-to-software-vulnerabilities", date: "2026-06-24", access: full, locator: "'A Seamless Shield-and-Fix Workflow'; key capabilities"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 08 and discourse 08. Grade C: the abstract does not say the AI pipeline runs in production, and
-    Palo Alto statements use plans language. Overlaps vulnerability-exposure and the optional OT module.
+    Grade C: the abstract does not say the AI pipeline runs in production, and Palo Alto statements use plans
+    language. Overlaps vulnerability-exposure and the optional OT module.
 
 - id: security-cloud-infrastructure-14
   title: "AI firewall policy hygiene: flag stale, overly permissive and conflicting rules from observed traffic"
@@ -1017,9 +1013,9 @@
     - {ref: NIST-IR8596-2025, title: "NIST IR 8596 (initial preliminary draft): Cybersecurity Framework Profile for Artificial Intelligence (Cyber AI Profile)", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8596/iprd", date: "2025-12-16", access: full, locator: "Profile table, PR.IR-01, Defend column"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: discourse 16 and governance 08 (idea: intent-to-network-policy with verify-then-act checks). Grade C:
-    FwChange sells independent change management, so its argument is interested, and its vendor descriptions and the
-    Gartner statement are second-hand; the research benchmark is synthetic.
+    Intent-to-network-policy with verify-then-act checks is an idea. Grade C: FwChange sells independent change
+    management, so its argument is interested, and its vendor descriptions and the Gartner statement are second-hand;
+    the research benchmark is synthetic.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 7: endpoint protection
@@ -1127,10 +1123,10 @@
     - {ref: AVC-EPR-2026, title: "Endpoint Prevention & Response (EPR) Test 2026", publisher: "AV-Comparatives", type: survey, url: "https://av-comparatives.org/tests/endpoint-prevention-response-epr-test-2026/", date: "2026-09-15", access: full, locator: "Introduction (independent endpoint test context; no AI attribution)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: from governance 10; research only, no named organisation's production use found. AV-Comparatives' 2026 EPR
-    test (50 targeted attack scenarios, 14 enterprise products, 11 certified) measures endpoint products independently
-    but does not attribute results to AI components, so it is context, not an outcome. Endpoint detection triage with
-    calibrated confidence (CrowdStrike, practice 11) is not duplicated here: see security-operations-06.
+    Idea: research only, no named organisation's production use found. AV-Comparatives' 2026 EPR test (50 targeted
+    attack scenarios, 14 enterprise products, 11 certified) measures endpoint products independently but does not
+    attribute results to AI components, so it is context, not an outcome. Endpoint detection triage with calibrated
+    confidence (CrowdStrike) is not duplicated here: see security-operations-06.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 8: detection engineering and validation
@@ -1186,10 +1182,10 @@
     - {ref: ARXIV-2605.24421, title: "Poisoning the Watchtower: Prompt Injection Attacks Against LLM-Augmented Security Operations Through Adversarial Log Content", publisher: "arXiv (Pandey, Bhujang)", type: academic, url: "https://arxiv.org/abs/2605.24421", date: "2026-05-23", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 14 and discourse 12. Grade C: job postings show intent, not results, and the rule audit is a
-    conference abstract whose analyser is a static tool (the AI link is the defect class of AI-generated rules); the
-    abstract does not say Meta ran the audit. Related: security-operations-15 (AI drafts and scores detection rules) and
-    -16 (coding agents validate detections end to end).
+    Grade C: job postings show intent, not results, and the rule audit is a conference abstract whose analyser is a
+    static tool (the AI link is the defect class of AI-generated rules); the abstract does not say Meta ran the audit.
+    Related: security-operations-15 (AI drafts and scores detection rules) and -16 (coding agents validate detections
+    end to end).
 
 - id: security-cloud-infrastructure-19
   title: "Idea: agents run attack simulations in sandbox cloud accounts to build an empirical telemetry-to-technique map for detection"
@@ -1230,9 +1226,9 @@
     - {ref: FWDCLOUDSEC-GABBAY-2025, title: "Connecting the Cloud-Dots: Constructing a Knowledge Layer from Autonomous Attack Simulation (Itay Gabbay)", publisher: "fwd:cloudsec Europe 2025", type: conference, url: "https://pretalx.com/fwd-cloudsec-europe-2025/talk/FFQZDF/", date: "2025-09-15", access: full, locator: "Abstract (talk not viewed)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: from discourse 10; a research system presented at fwd:cloudsec Europe 2025, no deployment or outcome found.
-    Pattern 'other': agent-run simulation that produces a knowledge base. Confluent's non-AI attack-simulation programme
-    on Datadog's Threatest (2026 North America schedule) is related practice.
+    Idea: a research system presented at fwd:cloudsec Europe 2025, no deployment or outcome found. Pattern 'other':
+    agent-run simulation that produces a knowledge base. Confluent's non-AI attack-simulation programme on Datadog's
+    Threatest (2026 North America schedule) is related practice.
 
 - id: security-cloud-infrastructure-20
   title: "Idea: cloud canaries and deception to detect and steer autonomous AI attackers"
@@ -1277,8 +1273,8 @@
     - {ref: CSA-AISTORM-2026, title: "AI Security Through the CISO Lens: Insights from the AI Storm Summit Series", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/artifacts/ai-security-through-the-ciso-lens", date: "2026-07-28", access: full, locator: "'Event-specific themes', Washington, D.C. breakout"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: from discourse 11; benchmark design and a discussed response, no results or deployment found. The speaker works
-    at Tracebit, a deception vendor. Practice routed the same talk to identity-access and ai-security.
+    Idea: benchmark design and a discussed response, no results or deployment found. The speaker works at Tracebit, a
+    deception vendor. The talk is also relevant to identity-access and ai-security.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 9: compliance and continuous authorisation
@@ -1342,9 +1338,8 @@
     - {ref: CSA-FSCLOUD-2026, title: "State of Cloud and AI for Financial Services, 2026 Industry Survey Report (340 respondents; marked 'Unofficial AI-assisted Research')", publisher: "Cloud Security Alliance (CSAI Foundation)", type: survey, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/04/state-of-cloud-and-ai-for-financial-services-2026-v1.pdf", date: "2026-03-31", access: full, locator: "PDF p.11, 'Security Posture: Tools, Risks, and Priorities'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: practice 13 (FedRAMP High agents) and governance 12 (idea: LLM-drafted policy as code). Grade C: a launch
-    announcement and research prototypes. BOD 26-04 details come from a vendor's summary because CISA's site blocked
-    access.
+    LLM-drafted policy as code is an idea. Grade C: a launch announcement and research prototypes. BOD 26-04 details
+    come from a vendor's summary because CISA's site blocked access.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 10: operating and service models
@@ -1498,6 +1493,6 @@
     - {ref: CSA-AISTORM-2026, title: "AI Security Through the CISO Lens: Insights from the AI Storm Summit Series", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/artifacts/ai-security-through-the-ciso-lens", date: "2026-07-28", access: full, locator: "'The human-in-the-loop question'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: from discourse 18; an analyst category and vendor positioning that practitioners debate, no deployment of the
-    full model found. Palo Alto Networks licensed SACR's report free to readers, and Sysdig sells runtime products.
-    Related: security-ai-security-07 (gateway that permits, denies, modifies or escalates each agent action).
+    Idea: an analyst category and vendor positioning that practitioners debate, no deployment of the full model found.
+    Palo Alto Networks licensed SACR's report free to readers, and Sysdig sells runtime products. Related:
+    security-ai-security-07 (gateway that permits, denies, modifies or escalates each agent action).

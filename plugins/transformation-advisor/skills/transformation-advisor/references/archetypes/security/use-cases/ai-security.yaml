@@ -74,9 +74,9 @@
     - {ref: GARTNER-GENAIINC-2026, title: "Gartner predicts 25% of all enterprise GenAI applications will experience at least five minor security incidents per year by 2028 (press release)", publisher: "Gartner", type: firm, url: "https://www.gartner.com/en/newsroom/press-releases/2026-04-09-gartner-predicts-25-percent-of-all-enterprise-gen-ai-applications-will-experience-at-least-five-minor-security-incidents-per-year-by-2028", date: "2026-04-09", access: full, locator: "Recommendations on MCP security review and the no-go zone"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Grade B: a government agency uses ATLAS identifiers in a real advisory and OWASP builds on an incident corpus, but no
-    measured effect of the practice on incident rates was found. Source: threats-redteam-01. Pattern 'other' (proposed:
-    adversarial evaluation of an AI system).
+    Grade B: a government agency uses ATLAS identifiers in a real advisory and OWASP builds on an incident corpus, but
+    no measured effect of the practice on incident rates was found. Pattern 'other' (proposed: adversarial evaluation
+    of an AI system).
 
 - id: security-ai-security-02
   title: "AI red teaming as a standing practice: decision-led scoping, hybrid in-house teams, outside researchers, and buying against published criteria"
@@ -164,12 +164,12 @@
     - {ref: USENIX-FIELDNOTES-2026, title: "When AI Stops Answering and Starts Acting: Field Notes from Red-Teaming the Agentic Era (talk abstract)", publisher: "USENIX Security 2026; speaker from AIM Intelligence", type: conference, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/yu-sangyoon", date: "2026-08", access: full, locator: "Speaker biography (firm co-runs Korea's national AI red-team programmes, self-described)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-02 (decision-led assessments), -03 (red-team roles at model developers), -19 (coordinated
-    disclosure and bounties) and -20 (evaluating red-team providers, grade C). Grade B: named in-house deployments
-    (Microsoft; postings at Anthropic and OpenAI) without coverage, cost or time measures. The Microsoft paper (2025-01)
-    is older than 12 months but foundational. Job postings show intent to hire, not team size or results. The fetch-tool
-    and word-processor copilot items are second-hand through Willison's summaries. Continuous agentic red teaming of
-    production invariants is security-ai-security-05.
+    Covers decision-led assessments, red-team roles at model developers, coordinated disclosure and bounties, and
+    evaluating red-team providers. Grade B: named in-house deployments (Microsoft; postings at Anthropic and OpenAI)
+    without coverage, cost or time measures. The Microsoft paper (2025-01) is older than 12 months but foundational.
+    Job postings show intent to hire, not team size or results. The fetch-tool and word-processor copilot items are
+    second-hand through Willison's summaries. Continuous agentic red teaming of production invariants is
+    security-ai-security-05.
 
 - id: security-ai-security-03
   title: Measure robustness with adaptive, automated and crowdsourced attackers instead of static test sets
@@ -255,8 +255,8 @@
     - {ref: HACKMYCLAW-2026, title: "What happened after 2,000 people tried to hack my AI assistant", publisher: "Fernando Irarrazaval", type: community, url: "https://www.fernandoi.cl/posts/hackmyclaw/", date: "2026-06-25", access: full, locator: "Opening; 'What went wrong'; 'What I learned'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: public red-teaming competitions and research labs, not production deployments. Merged: threats-redteam-04 (competitions, A), -05 (adaptive attacks, A) and -18 (public challenge, B). Grade A for
-    research measurements by named organisations; these measure model robustness, not an enterprise adopting the practice.
+    Measured in: public red-teaming competitions and research labs, not production deployments. Grade A for research
+    measurements by named organisations; these measure model robustness, not an enterprise adopting the practice.
     arXiv figures are abstract-level. MUZZLE found 44 new attacks with minimal human effort (abstract).
 
 - id: security-ai-security-04
@@ -340,11 +340,11 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Measured in: government and lab pre-deployment evaluations; OpenAI's figure is a preliminary internal experiment.
-    Merged: threats-redteam-07 (government stress tests, A) and -08 (simulated propensity testing, B). The OpenAI figure
-    also appears in agent-identity-containment-08 (where it supported an A for monitoring); it measures the harness and
-    prompt, not monitoring, so it sits here. The two deep dives name the production harness differently (Codex in one,
-    ChatGPT in the other); the harness is left unnamed here. Grade A rests on AISI's independent measurements; AISI's
-    propensity rates were not read and OpenAI's figure is preliminary and self-reported.
+    Covers government stress tests and simulated propensity testing. The OpenAI figure measures the harness and
+    prompt, not monitoring, so it sits here rather than in security-ai-security-11. Sources name the production
+    harness differently (Codex in one, ChatGPT in another); the harness is left unnamed here. Grade A rests on AISI's
+    independent measurements; AISI's propensity rates were not read and OpenAI's figure is preliminary and
+    self-reported.
 
 - id: security-ai-security-05
   title: Continuous agentic red teaming of security invariants and containment controls
@@ -412,9 +412,9 @@
     - {ref: TOB-VMS-2026, title: "VMs won't contain cyber-capable agents", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/", date: "2026-08-26", access: full, locator: "Whole post"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-13 (grade C) and agent-identity-containment-15 (graded B there). Graded C here: the agentic,
-    continuous part is a vendor's stated plan; the DEF CON results are presenters' abstract-level claims from human
-    researchers. The only delegate-level entry in this module. Exploit methods are deliberately omitted.
+    Graded C: the agentic, continuous part is a vendor's stated plan; the DEF CON results are presenters'
+    abstract-level claims from human researchers. The only delegate-level entry in this module. Exploit methods are
+    deliberately omitted.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 2: agent identity, authorisation and action control
@@ -512,13 +512,13 @@
     - {ref: WIRED-OPENAI-2026, title: "OpenAI Didn't Notice Its AI Agents Using a Message Board to Plan Their Hacking Spree", publisher: "WIRED", type: press, url: "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/", date: "2026-08-05", access: full, locator: "Paragraph on agents proposing signed messages"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: agent-identity-containment-01 (identity, B), -03 (short-lived credentials, C), -13 (MCP authorisation, C) and
-    the idea -20 (D). Idea, not deployed: cryptographic agent identities with signed inter-agent messages and signed
-    behavioural manifests are discussed in government guidance (CISA-AGENTIC-2026, p.15), OWASP (keys must never be
-    directly available to agents) and a BSides demo; WIRED reports agents in OpenAI's incident themselves proposed
-    signing messages. Grade B rests on Microsoft and Okta using agent identities for their own agents, without published
-    measurement. The Enterprise-Managed Authorization launch (2026-06-18) is relayed by the CSA note. Overlaps
-    identity-access (security-identity-access-04 just-in-time privileged access; -05 Okta's Dex assistant), which owns non-agent machine identities.
+    Covers agent identity, short-lived credentials and MCP authorisation. Idea, not deployed: cryptographic agent
+    identities with signed inter-agent messages and signed behavioural manifests are discussed in government guidance
+    (CISA-AGENTIC-2026, p.15), OWASP (keys must never be directly available to agents) and a BSides demo; WIRED
+    reports agents in OpenAI's incident themselves proposed signing messages. Grade B rests on Microsoft and Okta
+    using agent identities for their own agents, without published measurement. The Enterprise-Managed Authorization
+    launch (2026-06-18) is relayed by the CSA note. Overlaps identity-access (security-identity-access-04 just-in-time
+    privileged access; -05 Okta's Dex assistant), which owns non-agent machine identities.
 
 - id: security-ai-security-07
   title: "Runtime policy enforcement: intercept each agent action at a guardian or gateway that can permit, deny, modify or escalate it"
@@ -588,10 +588,9 @@
     - {ref: OWASP-STATE-AGENTIC-2026, title: "State of Agentic AI Security and Governance, version 2.01 (139-page PDF)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/", date: "2026-06-01", access: full, locator: "Executive Summary p.8; Governance Maturity Model pp.55-56"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: agent-identity-containment-04 (C) and governance-assurance-09 (C). No named production deployment or field
-    measurement; the arXiv figure is a lab result on an adjacent process (SOC remediation), not replicated. Kill switches
-    and fleet halt controls are in security-ai-security-11. See also security-operations-20 (per-action authority for SOC
-    agents).
+    No named production deployment or field measurement; the arXiv figure is a lab result on an adjacent process (SOC
+    remediation), not replicated. Kill switches and fleet halt controls are in security-ai-security-11. See also
+    security-operations-20 (per-action authority for SOC agents).
 
 - id: security-ai-security-08
   title: "Gate agent actions with a tested classifier and reserve human approval for high-impact steps"
@@ -674,11 +673,11 @@
     - {ref: OWASP-AGENTIC-2025, title: "OWASP Top 10 for Agentic Applications for 2026", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/", date: "2025-12-09", access: full, locator: "ASI02 mitigation 2, p.14; ASI03 mitigation 4, p.17"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: a vendor-run controlled study in a purpose-built test environment and vendor-commissioned lab evaluations;
-    only the 97% approval rate comes from real use. Merged: threats-redteam-06 (guard evaluation, A) and agent-identity-containment-14 (human approval, C). Grade A for
-    the evaluation design and measured figures; all headline numbers are vendor-published and the third-party evaluators
-    were commissioned by the vendor. One independent test contradicts the zero-success claim for a specific chain, so
-    treat 0 of 720 as unreplicated. Proposed pattern: 'agent action gate'. Attack steps are not recorded. Related: security-operations-20 and
+    Measured in: a vendor-run controlled study in a purpose-built test environment and vendor-commissioned lab
+    evaluations; only the 97% approval rate comes from real use. Grade A for the evaluation design and measured
+    figures; all headline numbers are vendor-published and the third-party evaluators were commissioned by the vendor.
+    One independent test contradicts the zero-success claim for a specific chain, so treat 0 of 720 as unreplicated.
+    Proposed pattern: 'agent action gate'. Attack steps are not recorded. Related: security-operations-20 and
     security-vulnerability-exposure-22 (agent acting only through a human-approval harness).
 
 - id: security-ai-security-09
@@ -742,9 +741,9 @@
     - {ref: CISA-AGENTIC-2026, title: "Careful Adoption of Agentic AI Services", publisher: "CISA with ASD's ACSC, NSA, Canadian Cyber Centre, NCSC-NZ and NCSC-UK", type: regulator, url: "https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf", date: "2026-05-01", access: full, locator: "Privilege risks, pp.7-8"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: agent-identity-containment-16 (LLM-assisted privilege audit, B) and -21 (secret sweeps, B). Grade B: Unit 42's
-    measurement is on an adjacent process (Kubernetes operator RBAC) and published by the tool's vendor; the sweep advice
-    is regulator hygiene re-prioritised for faster attackers, with no measured effect. Overlaps cloud-infrastructure and
+    Covers LLM-assisted privilege audit and secret sweeps. Grade B: Unit 42's measurement is on an adjacent process
+    (Kubernetes operator RBAC) and published by the tool's vendor; the sweep advice is regulator hygiene
+    re-prioritised for faster attackers, with no measured effect. Overlaps cloud-infrastructure and
     vulnerability-exposure, which own general cloud least privilege and exposure management.
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -834,13 +833,12 @@
     - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks (abstracts)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "'Spanning the Eras: Egress Domain Governance from On-Premises to Agentic Sandboxes' (abstract only)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: one author-run lab test (Trail of Bits) and AISI's own evaluation runs; no production enterprise measurement.
-    Merged: threats-redteam-09 (evaluation range security, B), agent-identity-containment-05 (egress allowlist, B), -06
-    (microVM isolation, A) and -19 (agent-to-agent channels, B). Grade A rests on Trail of Bits' measured test (one host,
-    one model, one run series; the author had preview access to an OpenAI cyber model through Trail of Bits' Patch the Planet
-    programme, so the test is not fully independent of the model provider) and AISI's
-    counted incident. No post-change measurement of the controls exists. Evidence comes mostly from AI labs' evaluation
-    environments; applying it to ordinary enterprise agents is adjacent. Proposed pattern: 'containment architecture'.
+    Measured in: one author-run lab test (Trail of Bits) and AISI's own evaluation runs; no production enterprise
+    measurement. Grade A rests on Trail of Bits' measured test (one host, one model, one run series; the author had
+    preview access to an OpenAI cyber model through Trail of Bits' Patch the Planet programme, so the test is not
+    fully independent of the model provider) and AISI's counted incident. No post-change measurement of the controls
+    exists. Evidence comes mostly from AI labs' evaluation environments; applying it to ordinary enterprise agents is
+    adjacent. Proposed pattern: 'containment architecture'.
 
 - id: security-ai-security-11
   title: "Monitor agent trajectories and reasoning, page responders, and halt or kill runs when controls fail"
@@ -924,9 +922,8 @@
     - {ref: ANTHROPIC-ALIGNMENT-2026, title: "An alignment assessment of recent cybersecurity incidents", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents", date: "2026-09-09", access: full, locator: "Alignment assessment summary"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-10 (B), agent-identity-containment-08 (graded A there), -09 (kill switches, B) and -17
-    (tripwires, C). Graded B: the A in containment-08 rested on OpenAI's harness-versus-research-set-up figure, which
-    measures the harness, not monitoring, and is now in security-ai-security-04. The monitoring figures are a
+    Covers monitoring, kill switches and tripwires. Graded B, not A: OpenAI's harness-versus-research-set-up figure
+    measures the harness, not monitoring, and is in security-ai-security-04. The monitoring figures are a
     counterfactual and a target; OpenAI says halt tooling and tripwires are being developed. The AISI result is a lab
     simulation. Overlaps security-incident-response-19 (monitors page responders, 30-minute pause rule) and -17.
 
@@ -987,10 +984,9 @@
     - {ref: HF-TIMELINE-2026, title: "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident", publisher: "Hugging Face", type: vendor, url: "https://huggingface.co/blog/agent-intrusion-technical-timeline", date: "2026-07-27", access: full, locator: "Paragraph on log decoding and detection"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: agent-identity-containment-07 (B) and governance-assurance-17 (D). Grade B: Microsoft names its own agents
-    using agent identities with attributed logging; no measured benefit is published. CERT-In's 180-day retention appears
-    as a general API-monitoring step, not specifically for agent logs. Overlaps security-incident-response-18
-    (reconstructing agent actions from tamper-resistant logs).
+    Grade B: Microsoft names its own agents using agent identities with attributed logging; no measured benefit is
+    published. CERT-In's 180-day retention appears as a general API-monitoring step, not specifically for agent logs.
+    Overlaps security-incident-response-18 (reconstructing agent actions from tamper-resistant logs).
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 4: inputs, supply chain and model assets
@@ -1080,12 +1076,11 @@
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "'LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails' (abstract)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-14 (B, capped), -17 (inbound screening, B) and agent-identity-containment-18 (hardening SOC
-    agents, C). Grade B: measurements describe prevalence and lab attack success, not the effectiveness of a deployed
-    screening control; Anthropic's probe is a named deployment without published rates. SOC copilots themselves belong to
-    security-operations; this entry covers securing them (see security-operations-19, templated commands only;
-    security-incident-response-09, hardening investigation tools; security-application-security-21, screening inbound
-    code and skills). Attack payloads are not recorded.
+    Covers inbound screening and hardening SOC agents. Grade B: measurements describe prevalence and lab attack
+    success, not the effectiveness of a deployed screening control; Anthropic's probe is a named deployment without
+    published rates. SOC copilots themselves belong to security-operations; this entry covers securing them (see
+    security-operations-19, templated commands only; security-incident-response-09, hardening investigation tools;
+    security-application-security-14, screening inbound code and skills). Attack payloads are not recorded.
 
 - id: security-ai-security-14
   title: "Vet the AI supply chain: scan and allowlist agent skills, MCP servers and model files, gate new tools through security review, and keep AI bills of materials"
@@ -1179,13 +1174,12 @@
     - {ref: OWASP-GENAI-RES-2026, title: "OWASP GenAI Security Project resources library", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resources/", date: "2026-09-01", access: full, locator: "Entries on MCP server guides and the AIBOM Generator"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: an academic whole-registry scan of public skill registries and an internet measurement of live MCP servers.
-    Merged: threats-redteam-15 (A), agent-identity-containment-12 (C), governance-assurance-19 (MCP review gate, C) and
-    -10 (AI and agent bills of materials, C). Grade A rests on an independent, measured whole-registry study; it is a
-    research measurement, not an enterprise deployment. Wiz also markets agentless AI-BOM discovery (vendor claim). Gartner
-    forecasts 25% of enterprise GenAI applications with at least five minor security incidents a year by 2028 (9% in
-    2025), a forecast, not a measurement of this control. Developer-facing skill and package scanning overlaps
-    security-application-security-21.
+    Measured in: an academic whole-registry scan of public skill registries and an internet measurement of live MCP
+    servers. Covers the MCP review gate and AI and agent bills of materials. Grade A rests on an independent, measured
+    whole-registry study; it is a research measurement, not an enterprise deployment. Wiz also markets agentless
+    AI-BOM discovery (vendor claim). Gartner forecasts 25% of enterprise GenAI applications with at least five minor
+    security incidents a year by 2028 (9% in 2025), a forecast, not a measurement of this control. Developer-facing
+    skill and package scanning overlaps security-application-security-14.
 
 - id: security-ai-security-15
   title: Detect and disrupt model-extraction and distillation campaigns against hosted models
@@ -1248,11 +1242,11 @@
     - {ref: OWASP-LLM-2026, title: "OWASP Top 10 for LLM Applications 2026 (OWASP GenAI LLM Top 10 2026)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/", date: "2026-08-03", access: full, locator: "LLM06 Unbounded Consumption, item 7, p.39"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: model providers' production API traffic (Anthropic, Google) and a government advisory.
-    Source: threats-redteam-16. Grade A: measured by named organisations and a joint government advisory. Figures describe
-    the threat and detection scope; none report false-positive rates or the result of response degradation. Relevant
-    mainly to organisations that host models for others. Related: security-threat-intelligence-24 (model providers'
-    threat intelligence teams disrupting misuse).
+    Measured in: model providers' production API traffic (Anthropic, Google) and a government advisory. Grade A:
+    measured by named organisations and a joint government advisory. Figures describe the threat and detection scope;
+    none report false-positive rates or the result of response degradation. Relevant mainly to organisations that host
+    models for others. Related: security-threat-intelligence-24 (model providers' threat intelligence teams disrupting
+    misuse).
 
 - id: security-ai-security-16
   title: "Idea: check training, fine-tuning and retrieval data for tampering before use"
@@ -1298,8 +1292,8 @@
     - {ref: NIST-AI1002-2025, title: "NIST AI 100-2 E2025, Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ai/100/2/e2025/final", date: "2025-03-24", access: full, locator: "Sections 2.3 and 3.2 on poisoning and supply chain"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: grade D. Source: threats-redteam-21. Discussed by researchers, OWASP, NIST and the EU code of practice; no named
-    deployment or measured outcome was found. Kept because it is the module's only entry on data poisoning.
+    Idea: grade D. Discussed by researchers, OWASP, NIST and the EU code of practice; no named deployment or measured
+    outcome was found. Kept because it is the module's only entry on data poisoning.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 5: incident detection, investigation and reporting
@@ -1381,11 +1375,10 @@
     - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI, NSA and CISA", type: standard-setter, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 5.5 and 5.6, p.7"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: the labs' own evaluation and training records, not customer deployments.
-    Merged: threats-redteam-11 (A), agent-identity-containment-22 (A) and governance-assurance-11 (A). Grade A: measured,
-    named organisations, all figures self-reported; no recall or false-negative rate is published for any review
-    pipeline, and Anthropic's first scan missed transcripts. OpenAI also reports retrospective reviews of 'millions of
-    model rollouts' (OPENAI-HFTECH-2026). Overlaps security-incident-response-20 (staged AI review of agent-activity
+    Measured in: the labs' own evaluation and training records, not customer deployments. Grade A: measured, named
+    organisations, all figures self-reported; no recall or false-negative rate is published for any review pipeline,
+    and Anthropic's first scan missed transcripts. OpenAI also reports retrospective reviews of 'millions of model
+    rollouts' (OPENAI-HFTECH-2026). Overlaps security-incident-response-20 (staged AI review of agent-activity
     records).
 
 - id: security-ai-security-18
@@ -1464,11 +1457,11 @@
     - {ref: COLLUSIONWIKI-2026, title: "Discovery of a new OpenAI agent message board", publisher: "Nightingale Collective, Trajectory Institute and contributors", type: community, url: "https://collusion.wiki/", date: "2026-09-04", access: full, locator: "Reconstruction of a separate message board"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: METR's review of OpenAI's evaluation transcripts, and Hugging Face's forensics on its production platform.
-    Merged: threats-redteam-12 (A) and the forensic half of governance-assurance-12 (A). Grade A: independent, measured,
-    named reviewers (METR). The agent counts come from METR, not from OpenAI's report text. Only the first part of each
-    report was read. The forensic-model lesson is shared with incident-response, which owns AI-assisted forensics in
-    general (security-incident-response-03 vetted self-hosted model; -04 LLM timeline reconstruction).
+    Measured in: METR's review of OpenAI's evaluation transcripts, and Hugging Face's forensics on its production
+    platform. Grade A: independent, measured, named reviewers (METR). The agent counts come from METR, not from
+    OpenAI's report text. Only the first part of each report was read. The forensic-model lesson is shared with
+    incident-response, which owns AI-assisted forensics in general (security-incident-response-03 vetted self-hosted
+    model; -04 LLM timeline reconstruction).
 
 - id: security-ai-security-19
   title: "Prepare for, respond to and report agent incidents: control-incident definitions, playbooks and drills, notification, statutory clocks and standing disclosure"
@@ -1557,13 +1550,13 @@
     - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks (abstracts)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08", access: full, locator: "'After the Jailbreak: A Product Security Incident Response Playbook for Agentic LLM Applications' (abstract only)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: agent-identity-containment-10 (playbook, B), -11 (reporting, B), governance-assurance-15 (exercises, C), -14
-    (statutory workflow, C) and the disclosure half of -12. Grade B: named real programmes (OpenAI's framework;
-    Anthropic's and other AI companies' notifications) and a government practice set, with no published measurement of
-    response performance. The NIST, NSA and CISA practices target organisations training and evaluating highly capable
-    agents and say they may apply to deployers. Article 73 duties sit with providers of high-risk systems; DORA (four
-    hours) and NIS2 (24 hours) windows are OWASP's statements, not checked against legal texts. Overlaps incident-response,
-    which owns the general response process (security-incident-response-15, -17 and -21).
+    Covers playbooks, reporting, exercises, statutory workflow and disclosure. Grade B: named real programmes
+    (OpenAI's framework; Anthropic's and other AI companies' notifications) and a government practice set, with no
+    published measurement of response performance. The NIST, NSA and CISA practices target organisations training and
+    evaluating highly capable agents and say they may apply to deployers. Article 73 duties sit with providers of
+    high-risk systems; DORA (four hours) and NIS2 (24 hours) windows are OWASP's statements, not checked against legal
+    texts. Overlaps incident-response, which owns the general response process (security-incident-response-15, -17 and
+    -21).
 
 - id: security-ai-security-20
   title: Shared near-miss and incident exchange for AI agents across organisations (SAFE, FLARE-AI, OECD criteria)
@@ -1618,9 +1611,9 @@
     - {ref: CISA-PLAYBOOK-2026, title: "AI Cybersecurity Collaboration Playbook (retrieved title reads 'SI Cybersecurity Collaboration Playbook')", publisher: "CISA (JCDC)", type: regulator, url: "https://www.cisa.gov/resources-tools/resources/si-cybersecurity-collaboration-playbook", date: "2026-10-17", access: full, locator: "Playbook description"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Source: governance-assurance-13. Grade C: coalition and standards proposals with no operating data. The landscape file
-    dates the framework to Axios on 2026-08-11; the RFC was reported on 2026-08-05. Search results (not opened) say
-    OpenAI, Google, Anthropic and Meta are not alliance members; unverified. Overlaps security-incident-response-21.
+    Grade C: coalition and standards proposals with no operating data. Axios reported the framework on 2026-08-11; the
+    RFC was reported on 2026-08-05. Search results (not opened) say OpenAI, Google, Anthropic and Meta are not
+    alliance members; unverified. Overlaps security-incident-response-21.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 6: governance and assurance
@@ -1709,11 +1702,11 @@
     - {ref: PAGERDUTY-SHADOWAI-2026, title: "PagerDuty report finds two-thirds (66%) of office professionals have used unauthorized AI tools at work", publisher: "PagerDuty", type: survey, url: "https://www.pagerduty.com/newsroom/shadow-ai-workplace-survey-2026/", date: "2026-06-11", access: full, locator: "Headline and survey description (1,250 non-IT office professionals)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: governance-assurance-01 (inventory, C), -02 (shadow AI, C) and agent-identity-containment-02 (shadow agents,
-    C). Grade C: vendor-sponsored survey data and product descriptions; no named organisation published results from
-    running an inventory or discovery. Gartner forecasts more than 150,000 agents in an average Fortune 500 enterprise by
-    2028, against fewer than 15 in 2025 (a forecast). PagerDuty reports 66% of non-IT office professionals have used
-    unauthorised AI tools. Overlaps security-governance-risk.
+    Covers inventory, shadow AI and shadow agents. Grade C: vendor-sponsored survey data and product descriptions; no
+    named organisation published results from running an inventory or discovery. Gartner forecasts more than 150,000
+    agents in an average Fortune 500 enterprise by 2028, against fewer than 15 in 2025 (a forecast). PagerDuty reports
+    66% of non-IT office professionals have used unauthorised AI tools. Overlaps governance-risk
+    (security-governance-risk-04).
 
 - id: security-ai-security-22
   title: "Proportionate AI governance: board oversight, a named owner, autonomy-based risk tiers that set assurance depth, and one control set mapped to frameworks and law"
@@ -1805,10 +1798,9 @@
     - {ref: CISA-FVEY-2026, title: "Five Eyes Cyber Security Agencies Statement", publisher: "CISA, ASD's ACSC, Canadian Cyber Centre, NCSC-NZ, NCSC-UK, NSA", type: regulator, url: "https://www.cisa.gov/news-events/news/five-eyes-cyber-security-agencies-statement", date: "2026-06", access: full, locator: "'A whole-of-organization and whole-of-society response is required'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: governance-assurance-04 (tiering, B), -16 (board governance, C), -08 (crosswalks, C) and -18 (baseline gap
-    assessment, C). Grade B rests on MSCI's described tiering framework (no measurements; top-tier certification
-    planned). MSCI's agent counts are practitioner statements in a vendor case study. US agency pages now use 'super
-    intelligence' for 'AI' after an Executive Order of 2026-09-29; search both terms. Overlaps security-governance-risk.
+    Covers tiering, board governance, crosswalks and baseline gap assessment. Grade B rests on MSCI's described
+    tiering framework (no measurements; top-tier certification planned). MSCI's agent counts are practitioner
+    statements in a vendor case study. Overlaps governance-risk (security-governance-risk-17, -18).
 
 - id: security-ai-security-23
   title: Independent adversarial testing of a specific high-risk agent to give auditors evidence it does what policy says
@@ -1859,12 +1851,12 @@
     - {ref: AIUC-1-2026, title: "AIUC-1 Standard (home page; 'Last updated Q4: Oct 15, 2026')", publisher: "Artificial Intelligence Underwriting Company (AIUC)", type: vendor, url: "https://www.aiuc-1.com/", date: "2026-10-15", access: full, locator: "Home page: MSCI listed as 'Adopted AIUC-1'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Measured in: AIUC's test engagement on one MSCI agent, reported in AIUC's own case study.
-    Source: governance-assurance-03. Graded A: the test and role counts and the severity finding
-    are results the tester reports from its own testing, not a practitioner's recollection; but every figure comes from a
-    vendor-authored case study with no independent check, and the counts are activity measures. The CISO's quote is B-level
-    evidence. The same evidence supports the tiering in security-ai-security-22. Overlaps assurance-assurance-over-ai-19
-    (AIUC-1 agent certification, assurance archetype).
+    Measured in: AIUC's test engagement on one MSCI agent, reported in AIUC's own case study. Graded A: the test and
+    role counts and the severity finding are results the tester reports from its own testing, not a practitioner's
+    recollection; but every figure comes from a vendor-authored case study with no independent check, and the counts
+    are activity measures. The CISO's quote is B-level evidence. The same evidence supports the tiering in
+    security-ai-security-22. Overlaps assurance-assurance-over-ai-19 (AIUC-1 agent certification, assurance
+    archetype).
 
 - id: security-ai-security-24
   title: "Third-party AI assurance: due diligence on AI vendors and embedded AI, relying on independent certification (ISO/IEC 42001, CSA STAR for AI) only under conditions"
@@ -1940,11 +1932,11 @@
     - {ref: FINRA-ROR-2026, title: "2026 FINRA Annual Regulatory Oversight Report: GenAI section (incl. AI agents) and Third-Party Risk Landscape", publisher: "FINRA", type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai", date: "2025-12-09", access: full, locator: "Third-Party Risk Landscape page"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: governance-assurance-05 (due diligence, B) and -06 (provider certification, B). Grade B: Cengage and the
-    certified providers are named, without measured outcomes; the Cengage count comes from a talk abstract and is not
-    verified. The ISO standard page itself was not reachable. Job postings asking for ISO 42001 credentials were seen in
-    search only and are not used. Overlaps security-governance-risk (vendor risk) and the assurance archetype's
-    assurance-over-ai module (certification services).
+    Covers due diligence and provider certification. Grade B: Cengage and the certified providers are named, without
+    measured outcomes; the Cengage count comes from a talk abstract and is not verified. The ISO standard page itself
+    was not reachable. Job postings asking for ISO 42001 credentials were seen in search only and are not used.
+    Overlaps security-governance-risk-03 (vendor risk) and the assurance archetype's assurance-over-ai module
+    (certification services).
 
 - id: security-ai-security-25
   title: Agent certification with independent quarterly testing, tied to insurance underwriting (AIUC-1)
@@ -1991,7 +1983,7 @@
     - {ref: OWASP-STATE-AGENTIC-2026, title: "State of Agentic AI Security and Governance, version 2.01 (139-page PDF)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/", date: "2026-06-01", access: full, locator: "'Cyber Insurance Coverage Collapse for Agentic AI Deployments', pp.67-68"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Source: governance-assurance-07. Change scope 'model': a new service (certification tied to insurance) and a new
-    sourcing of assurance. Grade B: named certified agents appear on the standard owner's own site, with no measurements
-    beyond MSCI. Whether insurance policies have been issued to the listed firms was not found. The same certification is
-    covered from the assurance provider's side in assurance-assurance-over-ai-19.
+    Change scope 'model': a new service (certification tied to insurance) and a new sourcing of assurance. Grade B:
+    named certified agents appear on the standard owner's own site, with no measurements beyond MSCI. Whether
+    insurance policies have been issued to the listed firms was not found. The same certification is covered from the
+    assurance provider's side in assurance-assurance-over-ai-19.

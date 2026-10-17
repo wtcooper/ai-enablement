@@ -93,6 +93,8 @@ These are the pilot's most common errors:
   process cap the grade at B, with a note.
 - **Provenance.** Mark each outcome figure as `self-reported`, `vendor-published` or `independent`.
 - **Search-only figures** go in `notes`, never in the outcomes of an A or B entry.
+- **Future talks.** An abstract of a conference talk not yet given can be cited as a signal, worded "scheduled", but cannot support an A or B grade.
+- **Grade A rule (2026-10-17).** A needs a figure the named organization reports as measured (a tracked metric, study or data); a recollection or rough estimate in a vendor case study is B.
 - **Routing.** Put items that belong to another module in a "Routed to other modules" section, naming
   the target module, instead of dropping them.
 
