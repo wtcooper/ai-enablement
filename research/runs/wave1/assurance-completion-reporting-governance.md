@@ -1040,6 +1040,7 @@ None of the figures above measures the accuracy of a disclosure-checklist tool, 
 - 2026-04-20: IFIAR reports firms exploring agentic AI, which "may evolve" from task automation toward orchestration of multiple audit activities (IFIAR-TTF-2026, p. 5).
 - 2026 (page undated): PCAOB staff plan to conduct a further post-implementation review of CAMs before deciding on further research, standard setting or guidance (PCAOB-AGENDA-2026). On 2026-04-30 the PCAOB Investor Advisory Group asked the public to nominate the most decision-useful 2025 CAMs and KAMs, for a report expected later in 2026 (PCAOB-IAG-2026).
 - 2026-12-15: ISA 570 (Revised 2024) and the amended AS 1220 take effect (IAASB-ISA570PAGE-2025; PCAOB-AS1220).
+- 2026-09-29: A Spanish-language summary of Accountancy Europe's September 2026 paper lists checking financial disclosures among GenAI procedures for audit and assurance, alongside summarising minutes and preparing drafts, and notes the move toward agentic systems; the primary paper was not read (INCP-AE-2026).
 - 2025-04-22: KPMG said more agents would be deployed over the next 12 months, including into financial statement analysis; no follow-up was found (KPMG-CLARA-2025).
 
 ### 3.6 Workforce and role effects
@@ -1080,6 +1081,14 @@ For each, the searches below returned nothing about use of AI by auditors, other
 3. How do you tell the audit committee which AI tools were used in the audit and what they decided? Have committees asked about fees or about AI inside the client's own financial reporting?
 4. Does your engagement quality reviewer get any AI support, and how is the reviewer's use of it documented, given how often EQR documentation is cited in inspections?
 5. Where a platform drafts or rolls forward financial statements or footnotes, who owns the statements, and how do you handle independence and management responsibility?
+
+### 3.10 Inspection and review evidence
+
+- **PCAOB, engagement quality review.** Share of inspected firms with an EQR-deficiency comment form rose from 37% to 42% between 2020 and 2022; the staff called the trend troubling (PCAOB-EQR-2023, p. 3). No later EQR spotlight was found, and no AI element.
+- **FRC, Annual Review of Audit Quality 2026.** Released by 2026-07-22, combining file inspections with evaluations of firms' systems of quality management (THEACCOUNTANT-ARAQ-2026). ICAS reports that the FRC pays particular attention to estimation and judgement areas including going concern, and reviewed communications to audit committees; its most common findings were in revenue and in estimation and judgement, tied to weak evaluation of key assumptions and challenge of management (ICAS-ARAQ-2026). The FRC expects firms to take a measured approach to AI and to report systemic risks (ICAS-ARAQ-2026). No AI-specific completion finding was captured, and the FRC report was not opened.
+- **PCAOB inspections.** The 2025 plan selected companies likelier to have going-concern risk and said inspectors would inquire about technology used in audit procedures (PCAOB-PRIORITIES-2024, pp. 4-5). No published finding on AI tools was found.
+- **IFIAR.** The 2026 report is observational: it says its observations are not a comprehensive assessment and reports no completion-step outcomes (IFIAR-TTF-2026, p. 1).
+- **Audit committee side.** CAQ held a March 2026 webinar for audit committee members on how AI is used in financial reporting and in the audit and what that means for oversight (event page only; recording not viewed) (CAQ-WEBINAR-2026).
 
 ## 4. Routed to other modules
 

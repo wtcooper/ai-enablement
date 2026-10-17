@@ -2,10 +2,9 @@
 
 Last reviewed 2026-10-16. Use cases live in `../use-cases/planning-risk-assessment.yaml` (25 entries). Ids are
 shortened: `#05` means `assurance-planning-risk-assessment-05`; `CT-04` means `assurance-controls-testing-04` in the
-controls-testing pilot, which holds walkthroughs (CT-01), risk-scored coverage targeting (CT-04) and the PwC Australia
-AI-native pilot (CT-17). Source keys in brackets are in the YAML or §10. No entry reaches grade A: no named
-organisation has published a measured outcome for AI in planning. Every outcome figure is self-reported, vendor
-claimed, or a prevalence count. Say so when you quote one.
+pilot, which holds walkthroughs (CT-01), risk-scored coverage targeting (CT-04) and the PwC Australia AI-native pilot
+(CT-17). Source keys in brackets are in the YAML or §10. No entry reaches grade A: no named organisation has published a
+measured outcome for AI in planning; every figure is self-reported, vendor-claimed or a prevalence count. Say so.
 
 ## Contents
 
@@ -42,9 +41,9 @@ conclusion.
 | Fraud risk and team discussion | Fraud risk factors, the presumed revenue risk, brainstorming with the partner | expert-judgment | Bias and blind spots; AI-enabled fraud new: 62% of IA leaders unprepared [IIAF-AIFRAUD-2026] |
 | Materiality | Benchmark, percentage, performance materiality, rationale | expert-judgment, data-reporting | Inspectors check year-on-year rises driven by fee pressure [PCAOB-PRIORITIES-2024] |
 | Scoping, incl. group components | Which accounts, locations and components are in scope | expert-judgment | Built from prior-year files; multi-location scoping is an inspection focus |
-| Strategy, plan, planning review | Planning memo, risks linked to procedures, planned tool use, review | document-production, coordination-scheduling | 85% of firms prioritise rolling binders forward; unclear where GenAI was used [AFM-12BB-2025] |
+| Strategy, plan, planning review | Planning memo, risks linked to procedures, planned tool use, review | document-production, coordination-scheduling | 85% of US firms prioritise rolling binders forward [CPACOM-ATR-2025]; unclear where GenAI was used [AFM-12BB-2025] |
 | Budget, staffing, fees | Staffing requests, hours budget, fee | coordination-scheduling, client-interaction | Manual processes (RSM); clients asking for AI discounts |
-| Ongoing reassessment | Revise risks when evidence contradicts them (AS 2110 .74) | expert-judgment | Risk assessment treated as a one-off |
+| Ongoing reassessment | Revise risks when evidence contradicts them (AS 2110 .74) | expert-judgment | Set at planning; revised only when the team notices contradicting evidence |
 | Internal audit planning | Audit universe, annual and multi-year plan, engagement scoping | expert-judgment, coordination-scheduling | Plans age in-year; 9% of CAEs report adequate coverage of digital disruption [AUDITBOARD-RIF-2026] |
 
 Inspection context: IFIAR's 2025 survey found a risk-assessment finding in 44 of 770 inspected listed audits (6%;
@@ -53,9 +52,8 @@ generally; no inspection finding specific to an AI risk-assessment tool was foun
 
 ## 3. Where AI is changing the work
 
-Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
-multi-step outcome), reinvent (process or business model changes). Improve dominates; automate has one entry;
-delegate is stated design, not measured practice; reinvent is a fee debate.
+Lenses: improve (assist/augment a step), automate (no person on the normal path), delegate (an agent owns a multi-step
+outcome), reinvent (model changes). Improve dominates; automate has one entry; delegate is stated design only.
 
 **Understanding the entity and its environment**
 - Improve: `#01` cited summaries of board minutes (KPMG Clara; FRC worked example; the reviewer still reads the
