@@ -156,8 +156,10 @@
   notes: 'Grade capped at B: every figure is vendor-published, and the only independent accuracy measurement found
     concerns legal research tools (MAGESH-2024). The same CPA.com/Blue J report summary gives 54.4% of 150+ surveyed
     practitioners using AI for tax research while 33.1% of firms had formally adopted AI tools (2025 edition; vendor-co-produced).
-    Blue J''s own comparison page (BLUEJ-ENT-2026, 2026-10-16) lists Blue J, CoCounsel Tax, CCH AnswerConnect, Tolley+
-    with Protege, Bloomberg Tax AI and TaxGPT as the enterprise field.'
+    The 2026 edition''s landing page says AI adoption among accounting firms has nearly doubled in a single year
+    (BLUEJ-CPA-2026; report gated, so no figures used). Blue J''s own comparison page (BLUEJ-ENT-2026, 2026-10-16)
+    lists Blue J, CoCounsel Tax, CCH AnswerConnect, Tolley+ with Protege, Bloomberg Tax AI and TaxGPT as the enterprise
+    field.'
 - id: tax-research-advisory-02
   title: Multi-step 'reason and act' research agent that clarifies the question, plans, and drafts a reviewable
     work product
@@ -991,8 +993,9 @@
     access: full
     locator: Section 'The Rise of Artificial Intelligence (AI)'
   last_reviewed: '2026-10-17'
-  notes: Named firm and named tools; no published measurement. A Hungarian advisory firm (Horizon Solutions, 2026-01-28)
-    says AI tools process contracts and invoices to speed diligence, but gives no data.
+  notes: 'Named firm and named tools; no published measurement. Date: the PDF metadata shows June 2025 while the
+    web page''s JSON-LD shows 2026-07-29 (likely a page update); 2025-06 is used. A Hungarian advisory firm (Horizon
+    Solutions, 2026-01-28) says AI tools process contracts and invoices to speed diligence, but gives no data.'
 - id: tax-research-advisory-13
   title: Agent-led tax due diligence producing a risk assessment (PE, permanent establishment, intercompany)
   archetype: tax
@@ -1371,6 +1374,7 @@
 - **Privilege and confidentiality:** Siva argues that public AI tools do not fit the Kovel doctrine and that terms of service allowing reuse of prompts can destroy the expectation of confidentiality (BTAX-SIVA2-2026). This is a single practitioner's argument; his *Heppner* reference was not verified.
 - **Disclosure:** no federal law or professional standard in the sources mandates disclosure of AI use to clients; some states require some disclosure; JofA suggests voluntary disclosure and engagement-letter language (JOFA-DISCLOSE-2025).
 - **Risk framework (voluntary):** Werfel's preparer risk register includes hallucinated advice, incorrect document extraction, failure of professional judgment, control dilution, malpractice exposure and liability ambiguity (vendor terms may disclaim liability for tax advice) (AICPA-WERFEL-2026, Appendix C). AICPA says AI is moving too fast for lasting standards (ACCTODAY-CART-2026).
+- **Scope beyond returns:** law-firm commentary reads the OPR alert as applying to corporate, payroll and plan-related tax advice and memoranda, not only to Form 1040 work (NATLAW-OPR-2026).
 - **Firm AI policy elements** recommended in the profession's press: approved-tool list, AI lead or committee, de-identification, documented prompts, verification and reviewer, training, engagement-letter language (JOFA-AIPOLICY-2026).
 
 ### Frontier signals (dated)
@@ -1384,7 +1388,7 @@
 - **16 Mar 2026:** corporate tax leaders now expect AI to be central to workflow within one to two years (TR-CORPTECH-2026).
 - **Jul 2026 (PDF metadata date):** Deloitte's scenario paper crosses a company's AI adoption with its tax authority's AI progress and suggests splitting planning between largely automated tax operations and human advisory (DELOITTE-TTT3-2026).
 - **21 Jul 2026:** TR's paper sets out three paths for firms: elevate, scale or reimagine (TR-FOP-2026).
-- **Jan to Jun 2026 events:** AI is now a hands-on lab format (TEI Midyear, Mar), a task-force town hall (ABA Tax Section, May) and a policy topic with Treasury, OpenAI and a Big Four firm on one stage (D.C. Bar, Jan) (TEI-MIDYEAR-2026; ABA-MAYMTG-2026; DCBAR-TAX-2026). Conference agendas show topics, not findings.
+- **Jan to Jun 2026 events:** AI is now a hands-on lab format (TEI Midyear, Mar), a task-force town hall (ABA Tax Section, May) and a policy topic with Treasury, OpenAI and a Big Four firm on one stage (D.C. Bar, Jan) (TEI-MIDYEAR-2026; ABA-MAYMTG-2026; DCBAR-TAX-2026). Conference agendas show topics, not findings. IBFD's seminar at IFA Lisbon (6 Oct 2025) put generative AI for tax research and compliance on the programme with the Blue J CEO among the speakers (IFA-LISBON-2025).
 
 ### Workforce and role effects
 
