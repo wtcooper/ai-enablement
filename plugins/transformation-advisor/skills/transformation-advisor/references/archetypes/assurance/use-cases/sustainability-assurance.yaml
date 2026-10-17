@@ -1,15 +1,12 @@
 # Use cases: assurance / sustainability-assurance
-# Synthesised 2026-10-17 from research/runs/wave1/landscape-assurance.md and
-# research/runs/wave1/assurance-sustainability-assurance-combined.md (one combined practice + discourse + governance pass).
+# Last verified against sources 2026-10-17.
 # Lowest-evidence module in the archetype: 0 entries at grade A or B. No named assurance provider has published a
 # measured outcome for AI on a sustainability assurance engagement. Grade D entries are ideas.
-# Ids 01-13 keep the deep dive's numbers. Candidate 15 is merged into 08; candidate 14 (AI-assisted digital tagging) is
-# kept only as context in the module file.
+# AI-assisted digital tagging is kept only as context in the module file.
 # Two sides, kept apart:
 #   assurance-provider side (function service-delivery): 01-07, 13
 #   preparer side, included for its effect on assurance (function finance-accounting): 08-12
-# Ref IAASB-CATALOG-2026 is the IAASB Technology Catalog v3 (the deep dive's IAASB-CATALOG-2026), matching the key
-# used in assurance-over-ai.yaml.
+# Ref IAASB-CATALOG-2026 is the IAASB Technology Catalog v3, matching the key used in assurance-over-ai.yaml.
 
 - id: assurance-sustainability-assurance-01
   title: ESRS and ISSB requirement mapping and disclosure-completeness check by the assurance team
@@ -30,7 +27,7 @@
   - lever: speed
     description: "No time, accuracy or coverage result is published. The analyst describes what the Deloitte tool does, not how well it does it."
     figure: none published
-    measures: "Not a measure; one analyst sentence about a firm tool. The source does not say whether the tool is used on assurance engagements or on readiness advice."
+    measures: "Not a measure; one analyst sentence about a firm tool. The analyst places it 'as part of the sustainability assurance process' but names no engagement or client, so use on assurance engagements versus readiness advice is unconfirmed."
     provenance: vendor-published
     source_ref: VERDANTIX-GQ-2024
   prerequisites:
@@ -293,9 +290,9 @@
     url: https://ifacweb.blob.core.windows.net/publicfiles/2025-01/IAASB-International-Standard-on-Sustainability-Assurance-ISSA-5000.pdf
     date: 2024-11
     access: full
-    locator: "A91 (p. 79)"
+    locator: "A91 (p. 79); A228 (p. 110)"
   last_reviewed: 2026-10-17
-  notes: "Idea. The underlying satellite study (Gu, Dai, Vasarhelyi, Int. J. Accounting Information Systems 2023) was not opened (ScienceDirect blocked); its description comes from the systematic review. ISSA 5000 A228 was read as the paragraph on obtaining evidence in an unbiased manner from multiple sources; its page was not recorded."
+  notes: "Idea. The underlying satellite study (Gu, Dai, Vasarhelyi, Int. J. Accounting Information Systems 2023) was not opened (ScienceDirect blocked); its description comes from the systematic review. ISSA 5000 A228 says obtaining evidence in an unbiased manner may involve information from multiple sources."
 
 - id: assurance-sustainability-assurance-05
   title: Source-linked drafting of evidence matrices, procedure descriptions and workpaper summaries (idea)

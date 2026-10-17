@@ -94,7 +94,7 @@
     - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "EM section 1-E, paras 63-64" }
     - { ref: IAASB-ED330-2026, title: "Exposure Draft: Proposed ISA 330 (Revised), The Auditor's Responses to Assessed Risks, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-330-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "A25 and footnote 26 (ISA 240 (Revised) paras 47-48)" }
     - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping (Kadir, Vasu, Nair, Sonntag; DFKI)", publisher: "arXiv 2512.02726", type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: "abstract; section 4, Table 1" }
-    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08", access: full, locator: "section 'Fieldwork', first paragraph" }
+    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08-11", access: full, locator: "section 'Fieldwork', first paragraph" }
     - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'Can AI detect fraud effectively?'" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Barriers chart (PDF p.9)" }
   last_reviewed: "2026-10-16"
@@ -124,7 +124,8 @@
     Forest hint (a classical anomaly-detector score), and ask for a yes/no anomaly flag with a plain-language
     explanation the auditor can review. The authors prefer open-weight models because ledger data is
     confidential. They benchmarked the models against rules-based journal-entry tests and classical baselines on
-    a synthetic ledger and one anonymised real ledger.
+    a synthetic ledger and one anonymised real ledger; the authors (DFKI, Germany) frame the work around
+    tax-related ledger data, so it is adjacent to financial-statement journal-entry testing.
   outcomes:
     - lever: quality
       description: "Synthetic ledger: best language model versus rules-based journal-entry testing (JET)"
@@ -178,10 +179,13 @@
     investigate items identified by auditor-set criteria, and thin testing of outliers is among IFIAR members'
     most common technology findings (PCAOB-TAA-2024; IFIAR-TTF-2025, pp.5-6).
   solution: >-
-    MindBridge announced on 22 Sep 2026 an Agentic Risk Assessment capability that links evidence, analytics,
-    assertions, materiality and methodology, and says its platform combines full-population analysis with
-    explainable risk detection. The FRC's journal example requires teams to understand why each high-risk item
-    was flagged and to look for items the tool may have missed.
+    MindBridge says its Augmented Assurance offering combines full-population analysis and explainable risk
+    detection with auditor expertise, and that auditors can drill into the entries, accounts or periods driving
+    risk using the system's explanations (MINDBRIDGE-ARA-2026; BUZZACOTT-PRIME-2025). Its Agentic Risk
+    Assessment, announced on 22 Sep 2026, links evidence, analytics, assertions, materiality and methodology,
+    but MindBridge positions it for audit planning, not for following up flagged items. The FRC's journal
+    example requires teams to understand why each high-risk item was flagged and to look for items the tool may
+    have missed.
   outcomes:
     - lever: quality
       description: "none published"
@@ -871,7 +875,7 @@
     - { ref: TR-STATE-2026, title: "The state of AI in audit in 2026: Interview with experts", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/", date: "2026-03-30", access: full, locator: "Question 2 (Cobbe: 100 leases, 15 slightly different)" }
     - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "EY paragraphs (Jackson: contracts spanning hundreds of pages)" }
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.18 (misinterpretation risk); illustrative example 2, pp.49-56" }
-    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08", access: full, locator: "section 'Fieldwork', paras 2-3" }
+    - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08-11", access: full, locator: "section 'Fieldwork', paras 2-3" }
     - { ref: GRACZYK-2025, title: "Use of large language models (LLMs) in auditing as a tool to reduce information asymmetry and fraud risk in the shareholder-management relationship (Graczyk, Majek, Modzelewski)", publisher: "Yearbook of Auditing and Accounting 2025", type: academic, url: "https://pana.gov.pl/wp-content/uploads/2026/04/6.-YoAA_Use-of-large-language-models-LLMs-in-auditing-as-a-tool-o-reduce-information-asymmetry-and-fraud-risk-in-the-hareholder-management-relationship.pdf", date: "2025", access: full, locator: "section 4 error analysis (contract clauses)" }
     - { ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Misinterpretation or misuse will take the most work'" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "AI and audit section (contracts, leases and debt agreements)" }
