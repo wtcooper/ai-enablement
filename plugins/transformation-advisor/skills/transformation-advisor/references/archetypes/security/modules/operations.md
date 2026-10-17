@@ -53,7 +53,7 @@ Context: SANS 2026 found 79% of SOCs use AI or ML tools but only 36% have built 
 
 Grouped by the four Reimagine lenses: improve (assist or augment a step), automate (no person on the normal path),
 delegate (an agent owns a multi-step outcome with checkpoints), reinvent (the service or operating model changes).
-Coverage: augment 11, automate 6, delegate 6, assist 2; step 9, process 13, model 3. Assist is thin because plain
+Coverage: augment 11, automate 6, delegate 5, assist 2; step 10, process 11, model 3. Assist is thin because plain
 copilot use is common but rarely written up; model-level change has only three entries, all vendor-reported or
 hiring data.
 
@@ -71,40 +71,43 @@ hiring data.
 
 **Investigation and case management**
 - Improve: `#10` controlled studies: AI-prepared investigations 45-61% faster in a 148-person simulation. `#11`
-  agent narratives help new analysts work at Tier 2. `#12` agent-built notebooks or timelines become the case file
-  (DNB, Centene). `#13` analyst copilots (Microsoft study: 30.13% lower time to resolution, observational). `#14`
-  agent drafts the report for sign-off.
+  agent narratives help new analysts work at Tier 2. `#12` analyst copilots (Microsoft study: 30.13% lower time to
+  resolution, observational). `#13` agent drafts the report for sign-off.
 - Delegate: `#09` an agent investigates end to end and on-call staff supervise (Figma: about 70% shorter time to
   resolution; Slack's Director/Expert/Critic design).
+- Elsewhere: agent-built case notebooks and timelines are security-incident-response-07 and -04; provenance-graph
+  root-cause agents are security-incident-response-08.
 
 **Hunting and detection engineering**
-- Delegate: `#15` scheduled AI hunts over log sources without rules, writing into the same alert queue (Grow
-  Therapy, USD 320-510 a month). `#17` coding agents write, detonate and check attack simulations against the SIEM
-  (DNB). `#19` teams build their own agents from playbooks (CrowdStrike customers).
-- Improve: `#16` AI drafts, translates and scores rules with a separate judge model (Amazon: 336% faster, 67% fewer
-  false positives). `#18` the agent drafts the suppression pull request once an analyst confirms a false positive.
+- Improve: `#14` LLM triage of anomaly signals surfaced an intrusion no single rule flagged (Hugging Face). `#15` AI
+  drafts, translates and scores rules with a separate judge model (Amazon: 336% faster, 67% fewer false positives).
+  `#17` the agent drafts the suppression pull request once an analyst confirms a false positive.
+- Delegate: `#16` coding agents write, detonate and check attack simulations against the SIEM (DNB). `#18` teams
+  build their own agents from playbooks (CrowdStrike customers).
+- Elsewhere: scheduled AI hunts over log sources without rules (Grow Therapy, USD 320-510 a month) and Microsoft's
+  always-on detection agent are security-threat-intelligence-21 and -22; report-to-rule generation is
+  security-threat-intelligence-14.
 
 **Response actions**
-- Improve: `#20` agents propose actions that run only through templated, validated commands (Google preview,
-  research design).
-- Automate: `#21` per-action authority: score each action before it may run unattended; keep agents observable,
+- Improve: `#19` agents propose actions that run only through templated, validated commands (Google preview,
+  research design). Post-incident containment playbooks: security-incident-response-14.
+- Automate: `#20` per-action authority: score each action before it may run unattended; keep agents observable,
   attributable and stoppable (NCSC proposal, grade C).
-- Idea: `#25` defender agents that contain an attack with no human in the loop (no deployment found).
+- Idea: `#24` defender agents that contain an attack with no human in the loop (no deployment found).
 
 **Measurement, service and workforce**
-- Improve: `#22` measure the AI: score verdicts against analyst close reasons, sample closures, replay benchmarks
+- Improve: `#21` measure the AI: score verdicts against analyst close reasons, sample closures, replay benchmarks
   before widening autonomy.
-- Reinvent: `#23` MDR providers move to agent-led, human-accountable services; buyers test what the AI does. `#24`
+- Reinvent: `#22` MDR providers move to agent-led, human-accountable services; buyers test what the AI does. `#23`
   SOCs hire about three builders per queue-watching analyst (vendor sample of 665 postings).
 
-Overlaps: incident response holds forensics and timelines after a confirmed breach (`#12` sits at the boundary);
-threat intelligence holds generic threat-hunting assistants; ai-security holds attacks on the SOC's own AI and agent
-identity. Other security modules' ids were not available at synthesis time.
+Overlaps: incident response holds forensics, notebooks and timelines after a confirmed breach; threat intelligence
+holds hunting and report-to-rule work; ai-security holds attacks on the SOC's own AI and agent identity.
 
 ## 4. Interview probes
 
 1. **Which alert types does AI close today with no analyst, and what evidence justified that?** Reveals whether
-   auto-closure rests on measured agreement, a parallel run, or a vendor demo (`#01`, `#22`).
+   auto-closure rests on measured agreement, a parallel run, or a vendor demo (`#01`, `#21`).
 2. **Who samples what the AI closed, and what miss rate have you measured, on what data?** Reveals whether anyone
    watches false negatives, the worst failure [ARXIV-2610.10608].
 3. **Show last month's analyst overrides of AI verdicts. What did you change as a result?** Reveals a working
@@ -112,21 +115,21 @@ identity. Other security modules' ids were not available at synthesis time.
 4. **What does a dismissal require that an escalation does not?** Reveals whether the "searches came back empty, so
    benign" trap is controlled (`#07`).
 5. **For each action an agent can take (lock an account, isolate a host), who approved it, can it be reversed, and how
-   do you stop it?** Reveals the autonomy policy and kill switch (`#20`, `#21`).
+   do you stop it?** Reveals the autonomy policy and kill switch (`#19`, `#20`).
 6. **What untrusted text (log fields, emails, tickets) reaches your AI tools, and what can the AI do with its
    credentials?** Reveals exposure to log-borne prompt injection (§6).
 7. **Do your closed cases carry a reason and notes the AI can learn from?** Reveals readiness for precedent retrieval
    and context grounding (`#02`, `#01`).
 8. **Are detections, guides and tool configuration stored as code?** Reveals readiness for draft-PR tuning, rule
-   generation and validation loops (`#16`-`#18`).
+   generation and validation loops (`#15`-`#17`).
 9. **If you buy MDR, which parts are AI-run and which analyst-run, and can you see the agent's actions?** Reveals
-   whether the contract and diligence have caught up (`#23`).
+   whether the contract and diligence have caught up (`#22`).
 10. **What do you report as SOC metrics today, and did that change after AI?** Reveals activity metrics versus
     decision quality and coverage [SANS-SOC-2026].
 11. **How have your Tier-1 seat and the path to Tier 2 changed? Who writes the guides the agents follow?** Reveals
-    role redesign and junior-pipeline risk (`#11`, `#24`).
+    role redesign and junior-pipeline risk (`#11`, `#23`).
 12. **What data may leave your tenant, and do you have a vetted self-hostable model for incidents?** Reveals data
-    constraints and the hosted-model refusal risk (`#13`).
+    constraints and the hosted-model refusal risk (`#12`; security-incident-response-03).
 
 ## 5. Metrics and benchmarks
 
@@ -143,7 +146,7 @@ identity. Other security modules' ids were not available at synthesis time.
 | Time to resolution | about 70-71% lower (Figma); 30.13% lower with copilot (observational, 150+ orgs, 2024 data) | [FIGMA-AGENTS-2026] self-reported; [MSFT-BONO-2024] vendor-authored study |
 | Controlled study | 45-61% faster; 22-29% more accurate (simulated, 148 people) | [CSA-SOCBENCH-PR-2025], vendor-supported |
 | Detection rules | 336% faster production; 67% fewer false positives with a judge model | [AMAZON-RULEFORGE-2026], self-reported |
-| AI hunting cost | USD 320-510 a month for daily hunts over about 15 sources | [GROWTHERAPY-HUNT-2026], self-reported |
+| AI hunting cost | USD 320-510 a month for daily hunts over about 15 sources (security-threat-intelligence-21) | [GROWTHERAPY-HUNT-2026], self-reported |
 | Missed attacks in replay | Every approach missed at least 40.4%; challenge-and-judge design 3.1% with 18.4% escalated | [ARXIV-2610.10608], academic, one scenario |
 | Triage benchmark | GPT-5 98%, Claude-4.5-Sonnet 96%, GPT-4o-mini 75% on a 100-alert set; best model fully solved 8 of 25 deep-analysis scenarios | [ARXIV-2603.06422], academic (as read by the incident-response governance file) |
 | Log-borne prompt injection | Up to 88.2% success at baseline; 8.4% residual after layered defences | [USENIX-LOGINJECT-2026], academic |
@@ -153,7 +156,7 @@ identity. Other security modules' ids were not available at synthesis time.
 | Market stage | AI SOC agents at the Peak of Inflated Expectations, 1-5% penetration (Gartner, as summarised) | [DROPZONE-GARTNERHC-2026], vendor relay |
 
 Not found anywhere: independent production false-negative rates, override rates or parallel-run results from a named
-SOC. Advise clients to measure their own (`#22`).
+SOC. Advise clients to measure their own (`#21`).
 
 ## 6. Guardrails
 
@@ -195,7 +198,7 @@ SOC. Advise clients to measure their own (`#22`).
 - Any action touching users, availability, executives or production [SPLUNK-RSACSOC-2026, EXPEL-3LEADERS-2026].
 - Approving each level of agent autonomy, and withdrawing it [NCSC-AGENTICDEF-2026].
 - Final review of detection rules before production [AMAZON-RULEFORGE-2026].
-- Dispositions on escalated, low-confidence or contested alerts; sampling what the AI closed (`#22`).
+- Dispositions on escalated, low-confidence or contested alerts; sampling what the AI closed (`#21`).
 - Customer-facing MDR decisions; Gartner's quoted definition keeps MDR "human-led" [EXPEL-GARTNERMDR-2026].
 
 ## 7. Roles and how they evolve
@@ -241,7 +244,7 @@ SOC. Advise clients to measure their own (`#22`).
 
 - **"AI will wave real attacks through."** Fair: every approach in one benchmark missed at least 40.4% of attack
   alerts [ARXIV-2610.10608]. Response: close only high-confidence false positives (`#01`), require counter-evidence
-  to dismiss (`#07`), and sample closures for misses (`#22`).
+  to dismiss (`#07`), and sample closures for misses (`#21`).
 - **"It hallucinates, so analysts won't trust it."** Elastic analysts did ignore summaries that were wrong 40% of the
   time; accuracy rose to 92% by adding context, not changing models [ELASTIC-ACCURACY-2026]. Zapier cites visible
   queries and evidence as the basis for trust [DROPZONE-ZAPIER-2026].
@@ -254,10 +257,10 @@ SOC. Advise clients to measure their own (`#22`).
   owners per agent and grant authority per action [NCSC-AGENTICRISK-2026, SACR-TRUSTEDSOC-2026].
 - **"Every vendor says agentic."** Gartner warns of agent washing [DROPZONE-GARTNERHC-2026]; SACR counts close to 140
   vendors touching AI in security operations [SACR-AISOCMKT-2026]. Response: proof of value on your own alerts and a
-  side-by-side run (`#05`, `#22`).
+  side-by-side run (`#05`, `#21`).
 - **"We tried building it ourselves and it failed."** 46% of home builds were abandoned or replaced (vendor survey)
   [HNS-GARTNER-2026]. Figma, Elastic and Grow Therapy succeeded with structure: memory, critics, staged rollout
-  (`#01`, `#09`, `#15`).
+  (`#01`, `#09`; security-threat-intelligence-21).
 - **"Our data can't leave, and hosted models refuse attack content."** Local and open-weight models worked for a
   university SOC and for Hugging Face during an incident [NDSS-WOSOC-2026, HUGGINGFACE-INCIDENT-2026].
 - **"Faster to the wrong answer."** AI SOCs depend on the data fed to them [RESILIENTCYBER-FASTER-2026]; fix data

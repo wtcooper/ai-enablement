@@ -22,7 +22,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
 
 ```yaml
 - id: security-governance-risk-01
-  title: Event-triggered agents that check control evidence against a stated baseline and open findings
+  title: "Event-triggered agents that check control evidence against a stated baseline and open findings"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -74,7 +74,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     is not AI-specific in the post read; it is cited for the monitoring concept only. Overlaps practice-file use case 06.
 
 - id: security-governance-risk-02
-  title: A verification layer over automated compliance evidence and auditor independence
+  title: "A verification layer over automated compliance evidence and auditor independence"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -128,7 +128,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     were seen in search only and are not relied on.
 
 - id: security-governance-risk-03
-  title: AI-assisted third-party risk reviews with a switch between autonomous and in-the-loop operation
+  title: "AI-assisted third-party risk reviews with a switch between autonomous and in-the-loop operation"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -177,7 +177,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     figures (Samsara and others) for the same work.
 
 - id: security-governance-risk-04
-  title: Continuous inventory of vendor-embedded AI and shadow AI tied back to approved vendors
+  title: "Continuous inventory of vendor-embedded AI and shadow AI tied back to approved vendors"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -224,7 +224,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The Gartner survey figure comes from a secondary blog, not from Gartner's own page, which was blocked. Practice-file use case 16 covers the same inventory problem as an idea.
 
 - id: security-governance-risk-05
-  title: Security-led AI governance program (acceptable-use policy, vendor and tool assessment, enablement, approval gates)
+  title: "Security-led AI governance program (acceptable-use policy, vendor and tool assessment, enablement, approval gates)"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -290,7 +290,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The SANS/GIAC figures are slide text from a survey whose report landing page could not be retrieved. Practice-file use case 14 covers job-posting evidence for the same theme.
 
 - id: security-governance-risk-06
-  title: Agent-aware risk assessment: model agents as privileged insiders, read model system cards, review agent privileges
+  title: "Agent-aware risk assessment: model agents as privileged insiders, read model system cards, review agent privileges"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -337,7 +337,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The FAIR page lists a different author label than the byline; the byline in the body (Todd Tucker) is used. Takeaways 5 to 8 of the first post were not read.
 
 - id: security-governance-risk-07
-  title: AI-assisted cyber risk quantification and scenario simulation
+  title: "AI-assisted cyber risk quantification and scenario simulation"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -393,7 +393,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Search-only: vendor SAFE markets 'autonomous CRQ' at RSAC 2026 (SAFE-RSAC-2026, seen in search results only). Practice-file use case 10 covers the quantified-analysis deployments.
 
 - id: security-governance-risk-08
-  title: Reassess code-resident control effectiveness when the organization adopts coding agents
+  title: "Reassess code-resident control effectiveness when the organization adopts coding agents"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -443,7 +443,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     than half of surveyed organizations had a formal AI-use policy. Routed to application-security for the underlying code-quality evidence.
 
 - id: security-governance-risk-09
-  title: Deliberate apprenticeship for junior risk, assurance and security staff when AI absorbs entry-level work
+  title: "Deliberate apprenticeship for junior risk, assurance and security staff when AI absorbs entry-level work"
   archetype: security
   module: governance-risk
   function: people-hr
@@ -493,7 +493,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Idea: discussed by a practitioner with direct leadership experience; no named organization has published a result. Slides state 'AI is impacting entry-level jobs' with SOC and security analysts leading at 32% (selected all that apply); respondent count is not stated.
 
 - id: security-governance-risk-10
-  title: GRC engineering operating model: GRC staff build scripts and agents against live systems
+  title: "GRC engineering operating model: GRC staff build scripts and agents against live systems"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -546,7 +546,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Companion to practice-file use case 13 (job-posting evidence). The survey's sponsor-free claim is the author's own statement.
 
 - id: security-governance-risk-11
-  title: Baseline control posture for competing AI regulations, built on shared principles rather than law-by-law mapping
+  title: "Baseline control posture for competing AI regulations, built on shared principles rather than law-by-law mapping"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -589,7 +589,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Little AI is used in the work itself; the use case records how analysts say regulatory mapping should be approached. Practice-file use case 12 covers tool-assisted mapping.
 
 - id: security-governance-risk-12
-  title: Board and executive risk reporting re-based for AI-accelerated exploitation
+  title: "Board and executive risk reporting re-based for AI-accelerated exploitation"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -643,7 +643,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     thank 250 CISOs for live edits. The CSA text is guidance, not an observation of results. Practice-file use case 11 covers tool-generated board packs.
 
 - id: security-governance-risk-13
-  title: Frequent AI-assisted micro tabletops with notification-clock rehearsal and a defensible record
+  title: "Frequent AI-assisted micro tabletops with notification-clock rehearsal and a defensible record"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -682,7 +682,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Primarily an incident-response topic; kept here for the regulator-reporting and evidence-of-readiness angle. Description only, vendor guest.
 
 - id: security-governance-risk-14
-  title: Deterministic action gates, kill switches and out-of-band action logs for the team's own agents
+  title: "Deterministic action gates, kill switches and out-of-band action logs for the team's own agents"
   archetype: security
   module: governance-risk
   function: technology-it
@@ -727,7 +727,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Idea: discussed widely, no GRC deployment with results found. The OpenAI-Hugging Face incident described by guests is routed to ai-security and incident-response; only the control-design points are used here.
 
 - id: security-governance-risk-15
-  title: Audit-defensible records for AI-assisted security decisions (versioning, hashing, prompt traceability, interpretability)
+  title: "Audit-defensible records for AI-assisted security decisions (versioning, hashing, prompt traceability, interpretability)"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -769,7 +769,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Graded C: named organization and a framework description, but the abstract does not state that the framework is in production, and there are no measurements. Routed to incident-response for the investigation workflow.
 
 - id: security-governance-risk-16
-  title: CISO function takes on digital and AI risk beyond security
+  title: "CISO function takes on digital and AI risk beyond security"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -809,7 +809,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Idea: the author reports observing the pattern but names no organization.
 
 - id: security-governance-risk-17
-  title: GRC practitioners drafting policy and standards with general-purpose chat assistants using structured prompts
+  title: "GRC practitioners drafting policy and standards with general-purpose chat assistants using structured prompts"
   archetype: security
   module: governance-risk
   function: risk-compliance-legal
@@ -847,7 +847,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Idea. Practice-file use case 08 covers policy drafting with tooling.
 
 - id: security-governance-risk-18
-  title: Using model system cards and risk reports as inputs to due diligence on AI model providers
+  title: "Using model system cards and risk reports as inputs to due diligence on AI model providers"
   archetype: security
   module: governance-risk
   function: procurement-supply-chain
