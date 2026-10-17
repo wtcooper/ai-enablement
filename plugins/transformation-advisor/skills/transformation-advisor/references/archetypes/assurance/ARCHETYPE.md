@@ -56,7 +56,7 @@ that no named firm has published a measured result.
 | [planning-risk-assessment](modules/planning-risk-assessment.md) | Understanding the entity and its own AI, risk assessment, fraud, materiality, scoping, budgets. AI drafts; a person concludes | moderate (11 of 25 A/B) |
 | [controls-testing](modules/controls-testing.md) | Walkthroughs, ITGCs, operating-effectiveness tests and deficiencies across ICFR, SOX and SOC work. Internal audit leads on agents | strong (16 of 25 A/B) |
 | [substantive-testing](modules/substantive-testing.md) | Journal-entry and fraud testing, evidence matching, confirmations, analytics, contracts, estimates | strong (13 of 25 A/B) |
-| [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input; A/B entries are advisory, not audit | thin (2 of 13 A/B) |
+| [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input; A/B entries are advisory, not audit | thin (3 of 14 A/B) |
 | [completion-reporting](modules/completion-reporting.md) | Disclosure checklists, tie-out, going concern, EQR, KAMs and CAMs, audit committee communications, the opinion | thin (3 of 18 A/B) |
 | [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output; no measured outcome | moderate (10 of 25 A/B) |
 | [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns | strong (9 of 16 A/B) |

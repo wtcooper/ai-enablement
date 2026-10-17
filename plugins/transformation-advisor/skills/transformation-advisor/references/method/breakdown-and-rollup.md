@@ -58,7 +58,7 @@ One page. It must let someone who was not in the parent session start the unit's
 
 ```markdown
 # Unit brief: <unit name>
-Unit id: <id> · Parent: ../../transformation-plan.md · Owner: <role> · Wave: <n> · Planning mode: delegate | same user | desk review · Due: <date>
+Unit id: <id> · Parent: ../../transformation-plan.md · Owner: <role> · Wave: <n> · Planning mode: delegate | same user | desk review
 
 ## Why this unit
 Two or three lines: its share of the scope, what Diagnose found, and why it is in this wave.

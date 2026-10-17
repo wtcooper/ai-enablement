@@ -5,6 +5,7 @@ Checks:
   - SKILL.md size budget (fail > 500 lines, warn > 400)
   - reference markdown files: fail > 300 lines; files > 100 lines need a table of contents
   - relative links in SKILL.md and every index.md / ARCHETYPE.md resolve
+  - backtick file paths in SKILL.md and reference files resolve
   - use-case YAML: required fields, controlled vocabulary, unique ids, dated sources
   - per-module content targets (reported; enforced with --strict)
 
@@ -34,6 +35,7 @@ ENUM_FIELDS = {
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 TOC_RE = re.compile(r"^#+\s*(table of )?contents", re.IGNORECASE | re.MULTILINE)
 LINK_RE = re.compile(r"\]\(([^)#\s]+)(?:#[^)]*)?\)")
+PATH_RE = re.compile(r"`((?:references/|\.\./)[^`\s]+\.(?:md|yaml))`")
 
 errors, warnings, reports = [], [], []
 
@@ -74,6 +76,19 @@ def check_links():
                 continue
             if not (p.parent / link).resolve().exists():
                 errors.append(f"{rel(p)}: broken link -> {link}")
+
+
+def check_paths():
+    """Backtick paths (`references/...` from the skill root, `../...` from the file) must resolve."""
+    for p in [SKILL / "SKILL.md", *REFS.rglob("*.md")]:
+        if not p.exists():
+            continue
+        for path in PATH_RE.findall(p.read_text()):
+            if any(c in path for c in "<{*"):
+                continue
+            base = SKILL if path.startswith("references/") else p.parent
+            if not (base / path).resolve().exists():
+                errors.append(f"{rel(p)}: missing path -> {path}")
 
 
 def check_use_cases(strict):
@@ -140,6 +155,7 @@ def main():
     check_skill_md()
     check_markdown()
     check_links()
+    check_paths()
     check_use_cases(strict)
     for r in reports:
         print("INFO ", r)

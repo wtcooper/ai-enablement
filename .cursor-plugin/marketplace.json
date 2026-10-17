@@ -1,0 +1,35 @@
+{
+  "name": "ai-enablement",
+  "owner": {
+    "name": "Wade Cooper"
+  },
+  "metadata": {
+    "description": "AI transformation advisor plugin",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "transformation-advisor",
+      "source": "./plugins/transformation-advisor",
+      "description": "Guides a team lead, practice leader or head of AI through transforming how their part of the business works with AI: onboarding, a guided loop from framing to a sequenced plan, deep researched knowledge of specific fields (assurance first), and honest handling of how roles change.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Wade Cooper",
+        "url": "https://github.com/wtcooper"
+      },
+      "homepage": "https://github.com/wtcooper/ai-enablement",
+      "repository": "https://github.com/wtcooper/ai-enablement",
+      "license": "MIT",
+      "keywords": [
+        "ai-transformation",
+        "process-improvement",
+        "consulting",
+        "audit",
+        "assurance",
+        "tax",
+        "lean",
+        "value-creation"
+      ]
+    }
+  ]
+}

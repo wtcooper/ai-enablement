@@ -1,0 +1,26 @@
+# Internal examples, shown alongside public ones and labelled "internal".
+# Same format as the plugin's use cases (references/schemas/use-case.md). Keep client and personal data out.
+# Example entry only: replace it with your own.
+- id: internal-01
+  title: "<Short description of the change to the work>"
+  archetype: null
+  module: null
+  function: service-delivery
+  work_types: [document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: "<What was slow, costly or error-prone>"
+  solution: "<What the team does now, and with which approved tool>"
+  outcomes:
+    - { lever: capacity, description: "<What changed>", figure: "<e.g. 2-3 hours per report>", measures: "<What the figure counts>", provenance: self-reported, source_ref: "<internal reference>" }
+  prerequisites: ["<What had to be in place>"]
+  risks_and_guardrails: ["<Main risk and how it is controlled>"]
+  human_checkpoints: ["<Who reviews what before it leaves the team>"]
+  role_evolution: "<How the work of the people involved changed>"
+  evidence_grade: A
+  sources:
+    - { ref: "<internal reference>", title: "<Internal pilot review>", publisher: "<Team>", type: firm, url: "<link or 'internal'>", date: "YYYY-MM", access: full, locator: "" }
+  last_reviewed: "YYYY-MM-DD"
