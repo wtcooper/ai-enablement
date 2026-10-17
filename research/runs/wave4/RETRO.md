@@ -29,7 +29,7 @@ and assurance); one combined dive each for data security and privacy and for hum
 
 **No entry was rejected.** 170 of 245 entries (69%) were corrected, slightly below waves 1 and 2.
 
-**Archetype-level verification:** see `security-archetype-verification-A-report.md` and `-B-report.md`.
+**Archetype-level verification:** about 541 claims checked across the 11 files: 54 fixed, 3 removed, plus source-list corrections. Main fixes: an overstated claim that almost all A/B figures are vendor or self-reported (in ai-security 22 of 65 are independent); a Gartner forecast stated as fact; one-sided figures (a miss rate quoted without its escalation rate); NYDFS guidance overstated ("should consider", not "expects"); attribution drift (a keynote reported by Dark Reading cited as Dark Reading's view); a stale Gartner spending forecast. gartner.com was blocked by every route; those figures rest on secondary coverage. The Evidence column in `ARCHETYPE.md` matches the validator for all 11 modules. Reports: `security-archetype-verification-A-report.md` and `-B-report.md`.
 
 ## What the evidence says
 

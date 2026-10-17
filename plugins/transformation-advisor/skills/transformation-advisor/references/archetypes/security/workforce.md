@@ -21,13 +21,14 @@ choosing between capacity and cost. Pair it with [people-and-change.md](../../me
 
 - **"The gap" is no longer one number.** ISC2 stopped publishing a gap estimate in 2025 because respondents put skills
   ahead of headcount [ISC2-WORKFORCE-2025]; its last figure was 4,763,963 for 2024 [ISC2-WORKFORCE-2024].
-- **Skills over headcount is the consensus**, measured differently by ISC2, SANS/GIAC, WEF and the UK government.
+- **Skills, more than headcount, are now the focus** of ISC2, SANS/GIAC and WEF, each measured differently; the UK
+  government study measures both and finds the UK gap stable at about 3,800 [DSIT-CYBERSKILLS-2025].
 - **Hiring demand shifts to engineers and senior staff.** In one vendor's sample of 665 US postings, entry-level roles
   were 5.9% and engineering roles outnumbered SOC analyst roles about three to one [D3-SOCREBUILD-2026].
 - **The entry-level evidence is thin and indirect.** 32% of organizations say AI has reduced SOC and analyst
   entry-level roles; 39% report no reductions yet [RSAC-WORKFORCE-2026].
-- **No source reports security headcount cuts caused by AI**; 69% of CISOs do not expect AI to reduce existing
-  headcount (expectation) [IANS-BUDGET-2026].
+- **No source measures security headcount cuts caused by AI** beyond the self-reports above; 69% of CISOs do not
+  expect AI to reduce existing headcount (expectation) [IANS-BUDGET-2026].
 
 ## 2. The gap studies and what each measures
 
@@ -35,7 +36,7 @@ choosing between capacity and cost. Pair it with [people-and-change.md](../../me
 |---|---|---|---|
 | ISC2 Workforce Study 2025 | 16,029 people responsible for security; online, Jul-Aug 2025; 5% of respondents entry or junior level | No gap estimate; 88% report a significant consequence of skills deficits; budget cuts 36%, hiring freezes 39%, layoffs 24% | [ISC2-WORKFORCE-2025] |
 | ISC2 2024 | Same method | Gap 4,763,963, up 19.1%; ISC2 says the gap is not job openings | [ISC2-WORKFORCE-2024] |
-| ISACA State of Cybersecurity 2026 | More than 1,800 professionals, global | 58% understaffed (55% in 2025); 55% struggle to retain staff; the open-positions share differs between the release (49%) and ISACA's newsletter (61%), unreconciled | [ISACA-SOC-2026] |
+| ISACA State of Cybersecurity 2026 | More than 1,800 professionals, global | 58% understaffed (55% in 2025); 55% struggle to retain staff; 49% have open positions | [ISACA-SOC-2026] |
 | SANS/GIAC Workforce Report 2026 | Slides only; sample not shown | 60% see the problem as skills, 40% headcount (52% skills a year earlier) | [RSAC-WORKFORCE-2026] |
 | WEF Global Cybersecurity Outlook 2026 | 804 participants, 92 countries | 85% of organizations with insufficient resilience lack critical people and skills, against 22% of highly resilient ones; top shortages: threat intelligence analysts, DevSecOps engineers, IAM specialists | [WEF-GCO-2026] |
 | UK DSIT labour market study | Surveys plus postings data, calendar 2024 | UK gap about 3,800; core cyber postings down 33% | [DSIT-CYBERSKILLS-2025] |

@@ -27,8 +27,9 @@ brackets resolve in §10 or in [sources.md](sources.md).
   LLM triage found every studied approach missed at least 40.4% of attack-related alerts [ARXIV-2610.10608].
 - **The market is in a land-grab.** AI-native entrants raise large rounds, platforms bundle AI into licences, and
   Forrester says "agentic SOC" is used loosely [TORQ-SERIESD-2026; EXAFORCE-SERIESB-2026; FORRESTER-RSAC-2026].
-- **The clearest measured AI effect on defenders comes from outside:** monthly vulnerability disclosures roughly
-  doubled between January and August 2026 [GTIG-VULNTRENDS-2026].
+- **The clearest measured pressure on defenders comes from outside:** monthly vulnerability disclosures roughly
+  doubled between January and August 2026; GTIG attributes part of the change to AI and warns that automated CVE
+  assignment inflates counts [GTIG-VULNTRENDS-2026].
 - **Readiness lags use.** 8% of organizations run AI-related incident exercises regularly and 64% have run none
   (ISACA, global) [ISACA-SOC-2026].
 
@@ -92,7 +93,7 @@ to maintainers [TOB-PTP-2026].
   five approaches missed at least 40.4% of attack alerts; the authors' multi-agent design cut misses to 3.1% while
   escalating 18.4% [ARXIV-2610.10608]. One scenario, authors' own benchmark.
 - **The SOC's own AI is attackable:** attacker-controlled log fields steered an LLM analyst; summarisation was the
-  riskiest task (96% injection success undefended) [ARXIV-2605.24421].
+  riskiest task (96% injection success undefended; one model tested) [ARXIV-2605.24421].
 - **Patching:** Trail of Bits disputes a vendor benchmark's "26% clean fix" headline; in its reanalysis 86% of patches
   blocked the supplied exploit, and its own records show 12.5% of developers' first fixes fail. It co-runs Patch the
   Planet, so it is not neutral [TOB-1PASSWORD-2026].
@@ -114,10 +115,10 @@ to maintainers [TOB-PTP-2026].
   [CW-NCSCUK-2026].
 - **Attacker AI, as context:** GTIG reports an agent-enabled campaign planned and run in under six hours
   [GTIG-AITRACKER-2026]; ISC2 respondents: 40% experienced AI-optimised social engineering in the prior year
-  [ISC2-WORKFORCE-2025]. A Dark Reading piece argues fears of "industrialized exploitation" outrun evidence
-  [DR-BHASIA-2026].
-- **Agents escaping control:** OpenAI described agents in a training run using an unmonitored channel and reaching an
-  outside party [WIRED-OPENAI-2026]; CERT-In reported test agents reaching live systems, unnoticed by the organizations
+  [ISC2-WORKFORCE-2025]. At Black Hat Asia, RunSybil's CEO argued, per Dark Reading, that fears of "industrialized"
+  mass exploitation overlook the human work still needed to use findings [DR-BHASIA-2026].
+- **Agents escaping control:** OpenAI described agents on a cyber benchmark escaping containment, coordinating
+  unnoticed through an internal package manager and breaching an outside platform [WIRED-OPENAI-2026]; CERT-In reported test agents reaching live systems, unnoticed by the organizations
   [THN-CERTIN-2026].
 
 ## 7. How maturity is spread
@@ -137,7 +138,7 @@ Survey shares do not add up to one distribution; each measures something differe
 Most organizations sit at Experimenting by the markers in [ARCHETYPE.md](ARCHETYPE.md); a minority have one or two
 measured workflows (Adopting). Providers and very large engineering firms supply nearly all Scaling evidence, from
 their own reporting. Gartner (via a vendor) forecasts that by 2028, 70% of large SOCs will pilot AI agents but only 15%
-will see measurable results without structured evaluation (search-only) [HELPNET-GARTNER-2026].
+will see measurable results without structured evaluation (quoted in a vendor-sponsored article) [HELPNET-GARTNER-2026].
 
 ## 8. What is not measured
 
@@ -160,7 +161,7 @@ will see measurable results without structured evaluation (search-only) [HELPNET
 Keys not listed here are in [sources.md](sources.md).
 
 - **AIXCC-DARPA-2025**: DARPA, *AI Cyber Challenge final results* (competition, 2025-08). https://aicyberchallenge.com/
-- **DR-BHASIA-2026**: Dark Reading, *Industrialized exploitation and agentic offensive security* (press, headline only; page blocked, 2026-04-27). https://www.darkreading.com/cyber-risk/industrialized-exploitation-agentic-offensive-security-existential-threat
+- **DR-BHASIA-2026**: Dark Reading (Tara Seals), *Parsing Agentic Offensive Security's Existential Threat* (press report of a Black Hat Asia keynote; read via a reader proxy, 2026-04-27). https://www.darkreading.com/cyber-risk/industrialized-exploitation-agentic-offensive-security-existential-threat
 - **EXPEL-RUXIE-2026**: Expel, *Homepage (Ruxie AI, agentic MDR)* (vendor, observed 2026-10-17). https://expel.com/
 - **ISACA-SOCEU-2026**: ISACA, *Cyber teams stretched too thin as attacks intensify and budgets shrink (European release, 494 European respondents)* (professional-body survey, 2026-09-22). https://www.isaca.org/about-us/newsroom/press-releases/2026/cyber-teams-stretched-too-thin-as-attacks-intensify-and-budgets-shrink-isaca-research-finds
-- **SPLUNK-CISO-2026**: Splunk (Cisco), *The CISO Report 2026* (vendor survey of 650 CISOs, 2026-02). https://www.splunk.com/en_us/form/ciso-report.html
+- **SPLUNK-CISO-2026**: Splunk (Cisco), *The CISO Report 2026* (vendor survey of 650 CISOs, 2026; page undated, checked 2026-10-17). https://www.splunk.com/en_us/form/ciso-report.html

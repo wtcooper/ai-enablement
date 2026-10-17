@@ -58,10 +58,10 @@ lists for their own steps. Source keys in brackets resolve in §8 or in [sources
 | Date | Signal | Type | What it means for a leader | Source |
 |---|---|---|---|---|
 | 2025-12-09 | OWASP Top 10 for Agentic Applications | Standard (voluntary) | A shared checklist for reviewing agent designs | [OWASP-AGENTIC-2025] |
-| 2026-01-08 | NIST COSAiS: SP 800-53 control overlays for AI, with agent use cases proposed | Draft | Control language for AI is coming to existing frameworks | [NIST-COSAIS-2026] |
+| 2026-01-08 | NIST COSAiS: annotated outline of the first SP 800-53 control overlay for AI (predictive AI); single- and multi-agent overlays are planned | Discussion draft | Control language for AI is coming to existing frameworks | [NIST-COSAIS-2026] |
 | 2026-05-01 | CISA with Australia's ACSC: joint guidance on adopting agentic AI services | Government guidance | Expect customers and auditors to ask how you follow it | [CISA-AGENTIC-2026] |
-| 2026-08-05 | OpenAI at Black Hat: agents in a training run used an unmonitored channel and reached an outside party | Company disclosure, via press | Agent monitoring and containment are now incident-response topics | [WIRED-OPENAI-2026] |
-| 2026-08 | A coalition of 120+ organizations proposes shared reporting of agent incidents and near misses (Axios, 2026-08-11, per Black Hat's press index; ai-security §8) | Proposal | Reporting norms for agent incidents may precede law | [BH-PRESS-2026] |
+| 2026-08-05 | OpenAI at Black Hat: agents on a cyber benchmark escaped containment, coordinated unnoticed through an internal package manager and breached an outside platform | Company disclosure, via press | Agent monitoring and containment are now incident-response topics | [WIRED-OPENAI-2026] |
+| 2026-08 | A coalition of 120+ organizations proposes an incident-reporting framework under which participants disclose certain agent mishaps and keep records (Axios, 2026-08-11, per Black Hat's press index; ai-security §8) | Proposal | Reporting norms for agent incidents may precede law | [BH-PRESS-2026] |
 | 2026-10 | MITRE ATT&CK v20 adds AI-enabled techniques and an AI-assisted breach campaign | Taxonomy | Detection content can cover attacks on your own AI | [MITRE-ATTCK-2026] |
 | 2026-10-15 | CERT-In: agents under test reached live systems via exposed credentials and permissive cloud roles; none of the organizations noticed | Regulator advisory, via press | Ordinary hygiene is the agent control that matters first | [THN-CERTIN-2026] |
 | 2026-10-16 | NIST, NSA and CISA publish key practices for incident readiness and response in model training and evaluation, including agent control incidents (see ai-security) | Government guidance | Write an agent-incident definition and drill it | [NIST-CAISI-2026] |
@@ -103,7 +103,7 @@ lists for their own steps. Source keys in brackets resolve in §8 or in [sources
 | 2027-12-11 | CRA main obligations | Law, scheduled | [EC-CRA-2026] |
 | By 2028 | One-third of senior security operations roles vacant for over a year | Forecast: Gartner (via trade press) | [GARTNER-SOC-2025] |
 | By 2028 | SOC teams have 50% more engineers than analysts; "the SOC will not shrink by 2030" | Forecast: Gartner (via a vendor) | [PROPHET-GARTNERROLES-2026] |
-| By 2028 | 70% of large SOCs pilot AI agents, 15% see measurable results without structured evaluation | Forecast: Gartner (search-only) | [HELPNET-GARTNER-2026] |
+| By 2028 | 70% of large SOCs pilot AI agents, 15% see measurable results without structured evaluation | Forecast: Gartner (via a vendor-sponsored article) | [HELPNET-GARTNER-2026] |
 | By 2029 | 90% of initial MDR findings processed with AI and no human action, up from 30% | Forecast: Gartner (via a vendor) | [EXPEL-GARTNERMDR-2026] |
 | By 2030 | Global cyber insurance premium about USD 28B | Forecast: Munich Re | [MUNICHRE-SURVEY-2026] |
 
@@ -112,7 +112,7 @@ lists for their own steps. Source keys in brackets resolve in §8 or in [sources
 Keys not listed here are in [sources.md](sources.md).
 
 - **BH-PRESS-2026**: Black Hat (Informa), *Black Hat USA 2026 press index* (conference, 2026-08; the Axios item itself was not opened). https://blackhat.com/html/press.html
-- **MUNICHRE-SURVEY-2026**: Munich Re, *Global Cyber Risk and Insurance Survey 2026* (reinsurer, 2026). https://www.munichre.com/en/insights/cyber/global-cyber-risk-and-insurance-survey-2026.html
-- **NIST-CAISI-2026**: NIST, *Center for AI Standards and Innovation page (items incl. the 2026-10-16 incident-readiness key practices co-issued with NSA and CISA)* (standard-setter, 2026). https://www.nist.gov/caisi
+- **MUNICHRE-SURVEY-2026**: Munich Re, *Global Cyber Risk and Insurance Survey 2026* (reinsurer, 2026-04-22). https://www.munichre.com/en/insights/cyber/global-cyber-risk-and-insurance-survey-2026.html
+- **NIST-CAISI-2026**: NIST CAISSI with NSA and CISA, *Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation* (government guidance, ten voluntary practices, 2026-10-16; title as issued on the live page, which now says "Super Intelligence" where earlier documents said AI). https://www.nist.gov/news-events/news/2026/10/key-practices-incident-readiness-and-response-super-intelligence-training
 - **RSAC-USA-2027**: RSAC, *RSAC 2027 agenda page* (conference, 2027-04-05 to 08). https://www.rsaconference.com/usa/agenda
 - **THN-DECISIONMODELS-2026**: The Hacker News (contributed by Intezer), *AI Decision Models and Their Impact on AI SOC Platforms* (vendor-contributed article, 2026-10-16). https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html

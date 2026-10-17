@@ -45,10 +45,10 @@ outcomes, with humans on escalation and consequential actions.
 **What changes:** buyers replace part of a managed contract with AI SOC software run by a few in-house engineers; the
 managed layer thins to after-hours or specialist response.
 - **For:** Gartner (via a vendor) expects more organizations to consider insourcing MDR and says AI SOC agents increase
-  "internal competition for traditional MDR services" [INTEZER-GARTNERMDR-2026]; Exaforce says customers are
-  "replacing legacy MDRs" [EXAFORCE-SERIESB-2026]; Torq builds for self-service [TORQ-SERIESD-2026].
+  "internal competition for traditional MDR services" [INTEZER-GARTNERMDR-2026]; Exaforce cites customer teams
+  "replacing legacy MDRs" [EXAFORCE-SERIESB-2026].
 - **Against:** AI SOC tools cannot fix incomplete data (Latio, via a vendor) [EXAFORCE-LATIO-2026]; a replay benchmark
-  shows high miss rates for standard designs [ARXIV-2610.10608]; in-house builds are often abandoned (operations §9).
+  shows high miss rates for standard designs [ARXIV-2610.10608]; 46% of home-built AI SOC tools were abandoned or replaced, per a vendor's survey (operations §9).
 - **Status:** early. **Watch:** insourcing at renewals; AI SOC pricing per investigation [DROPZONE-PRICING-2026]; who
   in the buyer's team would own the agents.
 
@@ -71,8 +71,8 @@ exploitability, writing and verifying fixes, and assuring AI-found results.
 - **For:** eSentire bought an AI security startup for AI observability and control (2026-09-15) [ESENTIRE-2026]; GTIG
   counts 2,076 cumulative AI-stack CVEs [GTIG-VULNTRENDS-2026]; the EU plans a secure testing platform for critical
   sectors [EC-ACTIONPLAN-2026]; only 8% of organizations run AI incident exercises regularly [ISACA-SOC-2026].
-- **Against:** buyers lack mature requirements; ISACA says AI governance and incident-response maturity "remain
-  underdeveloped" [ISACA-SOC-2026].
+- **Against:** buyers lack mature requirements: 48% of ISACA respondents either lack AI incident playbooks or do not
+  know whether they have them [ISACA-SOC-2026].
 - **Status:** early. **Watch:** agent-identity and AI gateway products arriving from platform vendors (ai-security §8).
 
 ## 6. E. Platform bundling compresses point products
@@ -108,7 +108,7 @@ incidents) while competing for money that often sits elsewhere.
 | Metered to flat or unlimited | Arctic Wolf "unlimited investigations" [ARCTICWOLF-AURORA-2026] | Visible |
 | Activity metrics to outcome metrics | Gartner advice via a vendor; Arctic Wolf's "Mean Time to Trusted Action" [INTEZER-GARTNERMDR-2026; MSSPALERT-AW-2026] | Early |
 | Fees that vary with outcomes | Only warranties found [MSSPALERT-AW-2026] | Not found |
-| Insurance bundled with services | Coalition's "Active Insurance" combines policy, prevention and response [COALITION-CLAIMS-2026] | Visible |
+| Insurance bundled with services | Coalition's "Active Insurance" combines insurance coverage with security tools [COALITION-CLAIMS-2026] | Visible |
 
 Exposure by service, an inference from the scenarios above (not a finding of any source):
 

@@ -55,8 +55,10 @@ average hides a split [IANS-BUDGET-2026]. No current, open benchmark of security
 
 ## 3. Market size, vendors and consolidation
 
-- **Forecast (Gartner, seen only in search results):** worldwide end-user information security spending of USD 244B
-  in 2026 [GARTNER-FORECAST-2026].
+- **Forecast (Gartner):** worldwide end-user information security spending of USD 244B in 2026 in the 4Q25 forecast
+  (seen only in search results) [GARTNER-FORECAST-2026]; the 2Q26 update (revised 2026-07-21), as relayed by an analyst
+  blog, puts 2026 at USD 248.2B, up 12.7% in constant currency, and now counts spending on securing AI
+  [SSB-GARTNER2Q26-2026].
 - **Vendor results (company-published):** Palo Alto next-generation security ARR USD 9.10B, up 63%, with a GAAP net
   loss of USD 282M in Q4 FY26 [PANW-FY26Q4-2026]; CrowdStrike ARR USD 5.84B, up 25%, and 51% of subscription customers
   on six or more modules [CRWD-FY27Q2-2026].
@@ -113,8 +115,8 @@ advise buyers to move service metrics to outcomes rather than the volume of AI-p
 - **Automation share (self-reported):** Arctic Wolf says agents resolve more than 60% of case volume as high-confidence
   closures and about one-third of complex cases get final human verification [ARCTICWOLF-AURORA-2026].
 - **Valuations (M&A intermediary, ranges that "appear"):** MDR and XDR specialists at scale about 12-16x adjusted
-  EBITDA or 2-4x recurring revenue, lower-middle-market MSSPs 8-11x; Sophos paid USD 859M for Secureworks, about 2.3x
-  trailing revenue [CTACQ-MSSPMULT-2026].
+  EBITDA or 2-4x recurring revenue, lower-middle-market MSSPs 8-11x; Sophos paid USD 859M for Secureworks, about 2.3-2.6x
+  trailing revenue depending on the revenue base [CTACQ-MSSPMULT-2026].
 - **Private equity:** Thoma Bravo's Proofpoint is a serial acquirer; Forrester calls its integration record "uneven"
   [FORRESTER-PV-2026]. No census of PE-owned security providers was found.
 - **Not found:** audited MSSP or MDR margins, analyst-to-customer ratios, or renewal price changes after AI.
@@ -126,8 +128,8 @@ advise buyers to move service metrics to outcomes rather than the volume of AI-p
   [SWISSRE-CYBER-2026]; the NAIC recorded the first-ever fall in US direct written premium (data year 2024) [NAIC-CYBER-2025].
 - **Losses (one insurer's book, 2025):** severity down 19% to an average USD 116,000; ransomware the costliest type at
   USD 269,000; business email compromise and funds-transfer fraud 58% of incidents [COALITION-CLAIMS-2026].
-- **AI in coverage:** new AI exclusions found so far are in general-liability and management-liability forms, not
-  cyber forms [INSJOURNAL-AIEXCL-2026]. More in [guardrails.md](guardrails.md) §5.
+- **AI in coverage:** the new AI exclusions reported are three ISO endorsements for general-liability forms and
+  Berkley's exclusion for D&O, E&O and fiduciary forms; the article reports none in cyber forms [INSJOURNAL-AIEXCL-2026]. More in [guardrails.md](guardrails.md) §5.
 - **Gap:** no readable source ties premium discounts to MDR, EDR or AI use by the insured.
 
 ## 8. Pricing pressure from AI
@@ -137,8 +139,8 @@ advise buyers to move service metrics to outcomes rather than the volume of AI-p
   coverage with no remediation an AI tool may suffice [INTEZER-GARTNERMDR-2026].
 - **Hard to compare:** Forrester says most SecOps vendors offer an "agentic SOC" and differences are hard to see at an
   architectural level [FORRESTER-RSAC-2026].
-- **Public markets:** on 2026-02-20, when Anthropic launched Claude Code Security, CrowdStrike fell 11.6% and Zscaler
-  11.3%, per Yahoo Finance; Wedbush called it an overreaction [YAHOO-CCS-2026]. Months later both platform CEOs
+- **Public markets:** after Anthropic launched Claude Code Security (2026-02-20), CrowdStrike fell 11.6% and Zscaler
+  11.3% "on the news", per Yahoo Finance (2026-02-23); Wedbush called it an overreaction [YAHOO-CCS-2026]. Months later both platform CEOs
   described AI as raising security's priority for buyers (vendor releases) [CRWD-FY27Q2-2026; PANW-FY26Q4-2026].
 - **Bundling:** Microsoft includes Security Copilot capacity in E5 and E7 [MSLEARN-SCU-2026]; Cribl adds an AI SOC to
   its data platform [CRIBL-RADIANT-2026]. Both turn a product into a feature; no source measures the price effect.
@@ -169,12 +171,13 @@ Keys not listed here are in [sources.md](sources.md).
 
 - **CROWDSTRIKE-PRICING-2026**: CrowdStrike, *Falcon pricing* (vendor price list, fetched 2026-10-17). https://www.crowdstrike.com/en-us/pricing/
 - **CTACQ-MSSPMULT-2026**: CT Acquisitions, *MSSP and Cybersecurity Services M&A Multiples Report 2026* (M&A intermediary, 2026-07-03). https://ctacquisitions.com/guides/mssp-ma-multiples-2026/
-- **GARTNER-FORECAST-2026**: Gartner, *Forecast of worldwide end-user spending on information security (4Q25 document 7291530)* (analyst forecast, seen only in search results). https://www.gartner.com/en/documents/7291530
+- **GARTNER-FORECAST-2026**: Gartner, *Forecast of worldwide end-user spending on information security (4Q25 document 7291530)* (analyst forecast, 4Q25 edition, cited by 2026-03; seen only in search results). https://www.gartner.com/en/documents/7291530
 - **INSJOURNAL-AIEXCL-2026**: Insurance Journal, *Insurer interest in AI coverage exclusions growing as risk becomes omnipresent* (trade press, 2026-08-17). https://www.insurancejournal.com/magazines/mag-features/2026/08/17/881424.htm
 - **LEVELBLUE-CYBEREASON-2025**: LevelBlue, *LevelBlue completes acquisition of Cybereason* (vendor press release, 2025-11-25). https://www.levelblue.com/newsroom/press-releases/levelblue-completes-acquisition-of-cybereason-expanding-global-leadership-in-managed-detection-and-response-xdr-and-incident-response
 - **MARSH-GIMI-2026**: Marsh, *Global Insurance Market Index, Q2 2026* (broker index, 2026-07-23). https://www.marsh.com/en/corp/about/news/global-commercial-insurance-falls-6-percent-q2-2026.html
 - **NAIC-CYBER-2025**: NAIC, *Report on the Cybersecurity Insurance Market (data year 2024)* (regulator, 2025-11-10). https://content.naic.org/sites/default/files/inline-files/2025_Cybersecurity_Insurance%20Report.pdf
 - **PANW-FY26Q4-2026**: Palo Alto Networks, *Palo Alto Networks reports fiscal fourth quarter and fiscal year 2026 results* (vendor earnings release, 2026-09-01). https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-10
+- **SSB-GARTNER2Q26-2026**: Software Strategies Blog (Louis Columbus), *Gartner Securing AI Forecast: 2Q26 Spending Hits $248.2B* (analyst blog relaying Gartner forecast G00855892, 2026-07-06; corrected 2026-10-04). https://softwarestrategiesblog.com/2026/07/06/gartner-2q26-information-security-forecast-securing-ai-2030/
 - **PWC-DTI-2026**: PwC, *2026 Global Digital Trust Insights (Thailand press release)* (survey of 3,887 executives, 2025-11-14). https://www.pwc.com/th/en/press-room/press-release/2025/press-release-14-11-25-en.html
 - **SWISSRE-CYBER-2026**: Swiss Re Institute, *Building a sustainable cyber market in the AI era* (reinsurer research, 2026-08-31). https://www.swissre.com/risk-knowledge/advancing-societal-benefits-digitalisation/building-a-sustainable-cyber-market-in-the-AI-era.html
 - **WINDSORDRAKE-MA-2026**: Windsor Drake, *Cybersecurity M&A Report 2026 (citing Momentum Cyber)* (M&A advisory, reviewed 2026-08-05). https://windsordrake.com/cybersecurity-ma-report/

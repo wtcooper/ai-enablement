@@ -8,8 +8,8 @@ It runs as a plugin inside the AI tool you already use: Claude, ChatGPT / Codex,
 Copilot. It interviews you the way an experienced transformation lead would, draws on deep,
 researched knowledge of your field, and leaves you with a transformation plan you can act on.
 
-> **Status: in development (pre-release).** The method, the first business archetype (assurance) and the
-> installable skill are built. It installs and runs in Claude Code; the other tools are still being checked.
+> **Status: in development (pre-release).** The method, three business archetypes (assurance, tax and security)
+> and the installable skill are built. It installs and runs in Claude Code; the other tools are still being checked.
 > See [Status](#status).
 
 ## Why
@@ -59,7 +59,7 @@ More detail: [How the advisor works](docs/how-it-works.md).
 |---|---|
 | **Assurance**: audit, SOC and attestation, sustainability assurance, assurance over AI | Ready: 10 focus areas, 206 sourced examples, all fact-checked |
 | **Tax**: individual and corporate compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research and advisory, tax data and technology | Ready: 8 focus areas, 183 sourced examples, all fact-checked. Public evidence is thinner than in audit, and the advisor says so |
-| **Security**: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure, application security, cloud, identity, data security and privacy, human risk, AI security | In progress: researched, now being written up and fact-checked |
+| **Security**: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure, application security, cloud, identity, data security and privacy, human risk, AI security | Ready: 11 focus areas, 245 sourced examples, all fact-checked |
 | **Professional services**: the base for consulting and firm operations | Planned |
 | Other fields | The advisor uses its general method, and can optionally research a field on the spot |
 
@@ -109,8 +109,8 @@ any time, and it picks up where you left off next time.
 | Done | Next |
 |---|---|
 | Method: 11 step-by-step guides, fact-checked | Confirm installation in Codex, Cursor and Copilot |
-| Assurance archetype: 10 focus areas and 11 field-level guides, fact-checked | Test runs with real audit and tax leaders, and an eval suite |
-| The advisor skill: installs and runs in Claude Code | Tax, then professional services |
+| Three archetypes, fact-checked: assurance (10 focus areas), tax (8) and security (11) | Test runs with real audit, tax and security leaders, and an eval suite |
+| The advisor skill: installs and runs in Claude Code | Professional services (the base for consulting and firm operations) |
 | Research program and quality checks | Detailed pattern and function guides for the shared library |
 
 ## Learn more
