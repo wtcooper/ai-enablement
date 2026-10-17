@@ -1,6 +1,6 @@
 # Security / application-security: discourse angle (wave 4)
 
-Compiled 2026-10-17. Archetype `security`, module `application-security`, angle `discourse`. Method: pages opened with curl (HTML converted to text), the r.jina.ai mirror for two Substack pages, the Hacker News Algolia API for community threads, and 3 web searches (one for Cloudflare, one for Google PageBreak, one for the Glasswing ledger figures, one for the Trail of Bits AI-native post; search-only items are labelled). Vendor-authored sources are flagged in each entry because their performance figures are self-reported.
+Compiled 2026-10-17. Archetype `security`, module `application-security`, angle `discourse`. Method: pages opened with curl (HTML converted to text), the r.jina.ai mirror for two Substack pages, the Hacker News Algolia API for community threads, and four web searches (Cloudflare Codex figures, Google PageBreak, Glasswing ledger figures, the Trail of Bits AI-native post; every search hit that mattered was then opened directly, and the few that were not are labelled search-only). Vendor-authored sources are flagged in each entry because their performance figures are self-reported.
 
 ---
 
@@ -21,7 +21,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
 
 **Evidence quality.** Strong for named in-house deployments with self-reported figures (Google, Cloudflare, Meta, Trail of Bits) and for maintainer-side accounts (curl). Weak for independent, controlled measurement: there is no published override rate, no parallel run against human reviewers with matched tasks, and no independent replication of any vendor benchmark. The nearest to independent measurement are the VulnCheck ledger reconciliation, the academic benchmark papers, and Trail of Bits's reanalysis (itself a competitor-style critique, flagged as such).
 
-**Count.** 23 candidate use cases (grade A: 8, B: 8, C: 7, D: 0); 56 distinct sources.
+**Count.** 23 candidate use cases (grade A: 8, B: 9, C: 6, D: 0); 57 distinct sources.
 
 ---
 
@@ -123,7 +123,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
     - "Cost scales with diff size; a risk-tier system controls it (CLOUDFLARE-CODEREVIEW-2026)"
   human_checkpoints:
     - "Engineers can override a block; the post gives no figure for human re-review of AI approvals (CLOUDFLARE-CODEREVIEW-2026)"
-  role_evolution: "The post says the aim is to remove nitpick-driven review cycles; reviewers' role after the change is not described (CLOUDFLARE-CODEREVIEW-2026, introduction)."
+  role_evolution: "Not described; the post characterises the earlier cycle as a reviewer context-switching to leave nitpicks and waiting hours for a first review (CLOUDFLARE-CODEREVIEW-2026, introduction)."
   evidence_grade: A
   sources:
     - { ref: CLOUDFLARE-CODEREVIEW-2026, title: "Orchestrating AI Code Review at scale", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/ai-code-review", date: "2026-04-20", access: full, locator: "introduction; results section on first 30 days; cost and risk-tier sections" }
@@ -185,8 +185,8 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
   risks_and_guardrails:
     - "Raising the Diff Risk Score threshold from the 25th to the 50th percentile raised the approve rate to 60.31%, a trade-off between yield and safety (ARXIV-2605.30208, abstract)"
   human_checkpoints:
-    - "Higher-risk diffs remain with human reviewers by design (ARXIV-2605.30208, abstract)"
-  role_evolution: "Reviewer bandwidth is redirected away from low-risk diffs; the paper does not describe role changes (ARXIV-2605.30208)."
+    - "Only diffs that pass eligibility gates and the risk score are landed by RADAR; the abstract does not describe the human path for other diffs (ARXIV-2605.30208)"
+  role_evolution: "The abstract frames the aim as relieving review bottlenecks; role changes are not described (ARXIV-2605.30208)."
   evidence_grade: B
   sources:
     - { ref: ARXIV-2605.30208, title: "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency", publisher: "arXiv (Meta authors with academic co-authors)", type: academic, url: "https://arxiv.org/abs/2605.30208", date: "2026-05-28", access: full, locator: "abstract (v2 revised 2026-06-12)" }
@@ -209,7 +209,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
   outcomes:
     - { lever: quality, description: "Published curl vulnerabilities from the AISLE audit", figure: "35 published curl vulnerabilities with CVE IDs", measures: "published curl vulnerabilities and CVE IDs resulting from AISLE engineers' AI-powered tooling over 'the last year or so', per curl's maintainer", provenance: independent, source_ref: STENBERG-AISLEAUDIT-2026 }
     - { lever: quality, description: "Merged bugfixes triggered by AI tools (AISLE, ZeroPath, Codex Security) in curl", figure: "two to three hundred, plus a dozen or more CVEs", measures: "bugfixes merged in curl over 'the recent 8-10 months' as of 2026-05-11, attributed by the maintainer to the three tools together; CVE count approximate in source", provenance: independent, source_ref: STENBERG-MYTHOS-2026 }
-    - { lever: capacity, description: "Share of one release's new vulnerabilities found by AISLE", figure: "18 of 24 in curl 8.23.0", measures: "AISLE's count of previously unknown vulnerabilities fixed in curl 8.23.0 that it reported (curl's own pre-release post said 22 pending, so counts differ)", provenance: vendor-published, source_ref: AISLE-YEAR-2026 }
+    - { lever: capacity, description: "Share of one release's new vulnerabilities found by AISLE", figure: "18 of 24 in curl 8.23.0", measures: "AISLE's count of previously unknown vulnerabilities fixed in curl 8.23.0 that it reported (curl's own pre-release post said 22 pending, STENBERG-PENDING-2026, so counts differ)", provenance: vendor-published, source_ref: AISLE-YEAR-2026 }
   prerequisites:
     - "A maintainer team willing to cooperate closely and able to triage a high volume of reports"
     - "Skilled humans validating findings and authoring patches (the curl post credits this as the difference)"
@@ -263,7 +263,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
     - { ref: STENBERG-MYTHOS-2026, title: "Mythos finds a curl vulnerability", publisher: "daniel.haxx.se", type: community, url: "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/", date: "2026-05-11", access: full, locator: "section 'Five findings became one'" }
     - { ref: ANTHROPIC-GLASSWING-2026, title: "Project Glasswing: Securing critical software for the AI era", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/glasswing", date: "2026-04-07", access: full, locator: "introduction and Mythos Preview findings (page updated 2026-10-06)" }
   last_reviewed: "2026-10-17"
-  notes: "Primary figures are vendor-published; the denominators differ between Anthropic's May update (23,019 estimated, 1,752 assessed) and VulnCheck's September count (26,153 claimed), and VulnCheck says Anthropic's dashboard and ledger do not fully match. The source is a vendor on both sides: VulnCheck sells vulnerability intelligence. Overlaps with the vulnerability-exposure module."
+  notes: "Primary figures are vendor-published; the denominators differ between Anthropic's May update (23,019 estimated, 1,752 assessed) and VulnCheck's September count (26,153 claimed), and VulnCheck says Anthropic's dashboard and ledger do not fully match. The source is a vendor on both sides: VulnCheck sells vulnerability intelligence. Overlaps with the vulnerability-exposure module. curl's HIGH-severity CVE-2026-92392 (HTTP/2 upload use-after-free) was found and reported by an Anthropic researcher using its OSS Scanner, per the curl maintainer (STENBERG-UAF-2026); the maintainer rated the attack conditions as demanding and the likely outcome a crash."
 
 - id: security-application-security-08
   title: Agent-built fuzzing campaigns and harnesses
@@ -326,7 +326,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
     - "Trail of Bits released post-patch-validation and review-walkthrough skills afterward (see next entry)"
   human_checkpoints:
     - "Engineers direct and check agent patches; maintainers merge, revise or reject (TOB-1PASSWORD-2026)"
-  role_evolution: "Trail of Bits cleared engineers' schedules to work with maintainers; the company describes agents as doing the repetitive build-out and humans deciding scope and validity (TOB-PTP-2026)."
+  role_evolution: "Trail of Bits cleared dozens of engineers' schedules to pair with maintainers; engineers orchestrate and triage findings and handle the fixing and hardening alongside maintainers (TOB-PTP-2026)."
   evidence_grade: A
   sources:
     - { ref: TOB-1PASSWORD-2026, title: "1Password's AI patching benchmark is misleading", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/", date: "2026-09-15", access: full, locator: "sections 'What happened to our patches in real projects' and 'We checked what happened after our patches were merged'" }
@@ -445,7 +445,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
   problem: "New classes of web vulnerability usually depend on a few experts' intuition, limiting how fast defenders learn what attackers could find."
   solution: "A PortSwigger researcher built an autonomous system that splits specification documents into small fragments to avoid anchoring on his published work, generates attack vectors from them, and tests them continuously through a Burp extension against live bug-bounty targets. Proven findings were fed back as inspiration."
   outcomes:
-    - { lever: growth, description: "New HTTP desync triggers and a new attack class", figure: "none published as counts; 138 specifications, about 15,000 fragments, 30,000 vectors tested against 30,000 websites", measures: "tl;dr sec's summary of the researcher's blog version of the talk; the DEF CON abstract states the exploits compromised banks, security vendors and government infrastructure", provenance: self-reported, source_ref: TLDRSEC-346-2026 }
+    - { lever: growth, description: "New HTTP desync triggers and a new attack class", figure: "138 specifications split into about 15,000 fragments; 30,000 vectors tested against 30,000 websites", measures: "tl;dr sec's summary of the researcher's blog version of the talk; the DEF CON abstract states the exploits compromised banks, security vendors and government infrastructure", provenance: self-reported, source_ref: TLDRSEC-346-2026 }
   prerequisites:
     - "Deep domain expertise to define what a valid result is"
     - "Live targets that permit testing (bug bounty programs)"
@@ -502,7 +502,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
   runtime_class: workflow-automation
   maturity: piloting
   problem: "Product-security teams face 40,000+ annual CVEs, complex supply chains and regulatory pressure (EU Cyber Resilience Act, NIS2, SBOM mandates); PSIRT decisions need precision that pure AI automation cannot guarantee while human-only operation cannot scale."
-  solution: "A three-year series at FIRST progressed from a Japan readiness survey (2024), to a PSIRT 2.0 vision with generative AI and retrieval-augmented generation (2025), to multi-agent systems automating complex PSIRT workflows with human oversight for critical decisions (2026)."
+  solution: "A three-year series at FIRST progressed from understanding Japan's manufacturing readiness (2024), to a PSIRT 2.0 vision with generative AI and retrieval-augmented generation (2025), to multi-agent systems automating complex PSIRT workflows with human oversight for critical decisions (2026)."
   outcomes:
     - { lever: capacity, description: "none published", figure: "none published", measures: "abstract states 85% of APAC PSIRTs operate with fewer than five members (survey of PSIRT team size, context not an outcome)", provenance: self-reported, source_ref: FIRST-CON-2026 }
   prerequisites:
@@ -631,7 +631,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
     - "A scaffold that steers the model to vulnerability reasoning and a triage step that keeps finding volume reviewable"
   risks_and_guardrails:
     - "Single model calls missed CVEs; findings were accumulated over four runs, so harness design matters (AISLE-SAST-2026)"
-    - "Veracode (a SAST vendor) published a post titled 'Are Deterministic SAST Security Tools Enough for AppSec?' on 2026-10-08; Semgrep favours deterministic findings first, then AI (title and blurb only; SEMGREP-IDOR-2026)"
+    - "Veracode (a SAST vendor) published a post titled 'Are Deterministic SAST Security Tools Enough for AppSec?' on 2026-10-08 (title only; VERACODE-BLOG-2026); Semgrep's blog index describes AI-powered detection that starts from deterministic findings (blurb only; SEMGREP-BLOG-2026)"
   human_checkpoints:
     - "Triage keeps volume low enough for human review (AISLE-SAST-2026, quoting the study)"
   role_evolution: "Not described."
@@ -793,11 +793,11 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
 - Cloudflare: 131,246 review runs in 30 days; break-glass 0.6%; average cost USD 1.19; spec findings 65% major, 29% minor, 6% critical [self-reported] (`CLOUDFLARE-CODEREVIEW-2026`, `CLOUDFLARE-CODEX-2026`).
 - Meta RADAR: revert rate one third, production incident rate one fiftieth of non-RADAR diffs [self-reported, observational] (`ARXIV-2605.30208`).
 - Glasswing: 90.6% of 1,752 assessed open-source findings valid; 0.8% of 26,153 claimed findings fixed by 2026-09-08 [vendor; independent reconciliation] (`ANTHROPIC-GLASSWINGUPDATE-2026`, `VULNCHECK-GLASSWING-2026`).
-- Patching: 1Password 26.0% fully resolved without behavior change, 20.1% resolved with behavior change, 53.9% not resolved or added a vulnerability, across 6,080 patches on six CVEs and two models [vendor-published] (`ONEPASSWORD-FLAWED-2026`); Trail of Bits reanalysis 86% (2,634 of 3,067) blocked the supplied exploit in trials where agents could test and were not told to apply a wrong fix; grader agreement with human reviewers on the full five-category outcome 65.9% [vendor-published reanalysis] (`TOB-1PASSWORD-2026`); developers' first fixes failed 12.5% (283 of 2,265) in Trail of Bits reviews [self-reported]; PatchBench: 25% of agent patches substantially similar to historical developer patches, and PoC-only validation inflates solve rates 1.83 times on average across 11 agents [academic] (`ARXIV-2609.04075`).
+- Patching: 1Password 26.0% fully resolved without behavior change, 20.1% resolved with behavior change, 53.9% not resolved or added a vulnerability, across 6,080 patches on six CVEs and two models [vendor-published] (`ONEPASSWORD-FLAWED-2026`); Trail of Bits reanalysis 86% (2,634 of 3,067) blocked the supplied exploit in trials where agents could test and were not told to apply a wrong fix; grader agreement with human reviewers on the full five-category outcome 65.9% [figure from 1Password's paper as cited by Trail of Bits] (`TOB-1PASSWORD-2026`); developers' first fixes failed 12.5% (283 of 2,265) in Trail of Bits reviews [self-reported]; PatchBench: 25% of agent patches substantially similar to historical developer patches, and PoC-only validation inflates solve rates 1.83 times on average across 11 agents [academic] (`ARXIV-2609.04075`).
 - Dependency fixing: Evo Remediation Agent 90.2%, Claude Code with scan 77.5%, unaided 59.6%, no-AI bump 46.9% on 307 upgrades [vendor-published] (`SNYK-VULNBUMP-2026`).
 - SAST comparison: best AI 68% versus best SAST 12.1% on 95 CVEs [vendor-published] (`AISLE-SAST-2026`).
 - AI-generated code security: 56% average pass rate, best Summer 2026 model 68%, Java mean 30% [vendor survey] (`VERACODE-GENAI-2026`); 55.8% of 3,500 artifacts with at least one vulnerability [academic, small author team] (`ARXIV-2604.05292`).
-- Vulnerability flow: disclosures 5,045 (Jan 2026) to 10,740 (Aug 2026) per month; only 0.23% of 2026 disclosures observed exploited [independent threat-intel data] (`GTIG-VULNTRENDS-2026`; routed).
+- Vulnerability flow: disclosures 5,045 (Jan 2026) to 10,740 (Aug 2026) per month; only 0.23% of 2026 disclosures observed exploited [Google threat-intelligence data, vendor-published] (`GTIG-VULNTRENDS-2026`; routed).
 
 **Absence of independent quality evidence.** I found no published override rate for security-specific AI findings, no matched human-versus-AI parallel run on the same tasks, no independent replication of a vendor benchmark and no regulator or inspection finding on AI-found vulnerabilities. The 1Password and Trail of Bits studies are the closest to a measured argument, and each is by a party with a commercial interest.
 
@@ -816,7 +816,7 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
 3. 2026-06-22: pairing AI discovery with engineers who write and land patches (Patch the Planet) (`TOB-PTP-2026`).
 4. 2026-09-19 to 2026-09-24: Google publishes pre-submit agentic scanning and PageBreak; deterministic validation as the quality bar (`GOOGLE-AGENTICSCAN-2026`, `GOOGLE-PAGEBREAK-2026`).
 5. 2026-08 to 2026-10: benchmark disputes (1Password 2026-08-06, Trail of Bits 2026-09-15, PatchBench 2026-09-03, AWS rebuilt benchmark 2026-10-15, vendor benchmarks 2026-08-12 to 2026-10-15). Direction: contamination-reduced, audited, human-baselined tests.
-6. 2026-10-14: AISLE reports 500+ CVEs and announces joining Cohere (blog index, 2026-10-15) (`AISLE-YEAR-2026`); 2026-10-15 Snyk, 2026-10-06 Wiz and Semgrep (undated) reposition as agentic AppSec (blog indexes only: `SNYK-VULNVBUMP-IDX`, see Sources).
+6. 2026-10-14: AISLE reports 500+ CVEs and announces joining Cohere (blog index, 2026-10-15) (`AISLE-YEAR-2026`); 2026-10-15 Snyk, 2026-10-06 Wiz and Semgrep (undated) reposition as agentic AppSec (blog indexes only: `SNYK-BLOG-2026`, `WIZ-BLOG-2026`, `SEMGREP-BLOG-2026`).
 7. 2026-04-20: the argument that the trend favours offense and defenders must raise AppSec spend; the same post says Cal.com stopped releasing open source citing AI-driven security fears (`SEMGREP-MYTHOS-2026`, Semgrep's account).
 8. 2026-03-31: AI-native engineering firm model (`TLDRSEC-TOBAINATIVE-2026`).
 9. 2026-09 to 2026-10: headline-only items seen in tl;dr sec archive: "A bug description is sufficient for AI to find it and write an exploit" (#345), "AI Agents Hacking Companies for $25" (#347) (titles only, bodies not read).
@@ -836,9 +836,9 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
 - "AI finds known kinds of error, not novel ones" (`STENBERG-MYTHOS-2026`) versus novel-technique research (`TLDRSEC-346-2026`).
 - Benchmark validity: memorization, PoC-only validation, grader disagreement (`ARXIV-2609.04075`, `TOB-1PASSWORD-2026`, `AWS-SECAGENT-2026`).
 - Severity inflation and high claimed true-positive rates versus fix rates (`VULNCHECK-GLASSWING-2026`).
-- Vendor interest on every side: HN thread on the Trail of Bits post includes Trail of Bits staff (`HN-TOB1PASSWORD-2026`).
+- Vendor interest on every side: at least one commenter on the Hacker News thread about the Trail of Bits post has a username suggesting a Trail of Bits affiliation (`HN-TOB1PASSWORD-2026`).
 - AI patches that block only the supplied exploit and leave the root cause (`ONEPASSWORD-FLAWED-2026`).
-- AI-written code insecure by default and blind to product rules (`VERACODE-GENAI-2026`, `SNYK-BAC-2026`).
+- AI-written code insecure by default and blind to product rules (`VERACODE-GENAI-2026`, `SNYK-BAC-2026`). A large-scale commit study found AI concentrated in glue code, tests and boilerplate, with humans acting as security gatekeepers and shallow review letting AI-introduced defects persist longer (`ARXIV-2512.18567`, abstract).
 - The AI guard layer is attackable: skill scanners and LLM build gates were bypassed (`TOB-SKILLS-2026`, `DEFCON-34-2026`).
 - Agents hide in existing noise: "living off the land" detection concerns routed to operations (`TLDRSEC-348-2026`).
 
@@ -855,11 +855,10 @@ Compiled 2026-10-17. Archetype `security`, module `application-security`, angle 
 ## 4. Routed to other modules
 
 - **vulnerability-exposure**: Google Threat Intelligence Group's trend data (disclosures from 5,045 to 10,740 per month; exploited vulnerabilities from 10.5 to 18 per month; only 0.23% of 2026 disclosures observed exploited; about 5,000 Linux kernel CVEs with no observed exploited zero-day) and its advice to move to threat-intelligence-driven triage with agentic remediation (`GTIG-VULNTRENDS-2026`, tl;dr sec #349 summary). Also the VulnCheck ledger reconciliation and NVD funding discussion (`VULNCHECK-GLASSWING-2026`, `RESILIENTCYBER-BOTTLENECK-2026`), and the Risky Business discussion of "vulnpocalypse" and frontier-lab fearmongering with HD Moore (`RISKYBIZ-SOAPBOX111-2026`, description only).
-- **ai-security**: OpenAI agents coordinating on a message board and attacking Hugging Face, discussed at Black Hat and DEF CON (`REGISTER-BHDC-2026`); sandbox-containment doubts (Trail of Bits "VMs won't contain cyber-capable agents", title seen in `TLDRSEC-344` archive listing only); skill-scanner weakness (`TOB-SKILLS-2026`); RSAC agentic security vendor map: discovery, runtime protection, identity governance for non-human actors (`NAND-RSAC-2026`).
+- **ai-security**: OpenAI agents coordinating on a message board and attacking Hugging Face, discussed at Black Hat and DEF CON (`REGISTER-BHDC-2026`); sandbox-containment doubts (Trail of Bits "VMs won't contain cyber-capable agents", `TOB-VMS-2026`: Trail of Bits reports a cyber-capable preview model escaped its QEMU/KVM sandbox three times and advises treating such agents as an advanced persistent threat); skill-scanner weakness (`TOB-SKILLS-2026`); RSAC agentic security vendor map: discovery, runtime protection, identity governance for non-human actors (`NAND-RSAC-2026`).
 - **incident-response**: Cloudflare's incident report reviewer that blocks closure of high-severity incidents until findings are addressed (`TLDRSEC-346-2026`, `CLOUDFLARE-CODEX-2026`); BSides "After the Jailbreak" PSIRT playbook for LLM applications (`BSIDESLV-2026`, abstract).
 - **operations**: Detection fidelity when agents use curl, tcpdump and throwaway scripts all day; the Hugging Face sensors caught activity but paged no one (`TLDRSEC-348-2026`). Agentic SOC loosely defined (`FORRESTER-RSAC-2026`).
 - **governance-risk**: Open-source retreat and AppSec budget argument (`SEMGREP-MYTHOS-2026`); funding of maintainers (`STENBERG-PRESSURE-2026`).
-- **identity-access**: Opal Zero, Island and other sponsor items in tl;dr sec are paid placements, not evidence (not used).
 
 ---
 
@@ -878,6 +877,7 @@ Access: `full` means the page, post, abstract or episode description was opened 
 | STENBERG-PRESSURE-2026 | The pressure | daniel.haxx.se | community | https://daniel.haxx.se/blog/2026/05/26/the-pressure/ | 2026-05-26 | full |
 | STENBERG-AISLEAUDIT-2026 | A curl audit by Aisle | daniel.haxx.se | community | https://daniel.haxx.se/blog/2026/10/14/a-curl-audit-by-aisle/ | 2026-10-14 | full |
 | STENBERG-UAF-2026 | A UAF turned RCE | daniel.haxx.se | community | https://daniel.haxx.se/blog/2026/10/14/a-uaf-turned-rce/ | 2026-10-14 | full (curl HIGH CVE found with Anthropic's OSS Scanner) |
+| STENBERG-PENDING-2026 | Twenty-two pending curl vulnerabilities | daniel.haxx.se | community | https://daniel.haxx.se/blog/2026/10/07/twenty-two-pending-curl-vulnerabilities/ | 2026-10-07 | full |
 | STENBERG-TEAM-2026 | The 2026 curl team | daniel.haxx.se | community | https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/ | 2026-10-12 | full |
 | HN-STENBERGMYTHOS-2026 | Hacker News thread: Mythos Finds a Curl Vulnerability (703 points, 282 comments) | Hacker News | community | https://news.ycombinator.com/item?id=48091737 | 2026-05-11 | full (top comments read via API) |
 | HN-TOB1PASSWORD-2026 | Hacker News thread: 1Password's AI patching benchmark is misleading (37 points, 9 comments) | Hacker News | community | https://news.ycombinator.com/item?id=49711157 | 2026-09-15 | full |
@@ -887,6 +887,7 @@ Access: `full` means the page, post, abstract or episode description was opened 
 | TOB-PTP-2026 | Introducing Patch the Planet | Trail of Bits | firm | https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/ | 2026-06-22 | full |
 | TOB-ZLIB-2026 | GPT-5.5-Cyber built a zlib fuzzing lab in a day | Trail of Bits | firm | https://blog.trailofbits.com/2026/07/02/field-reports-from-patch-the-planet/ | 2026-07-02 | full |
 | TOB-SKILLS-2026 | The sorry state of skill distribution | Trail of Bits | firm | https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/ | 2026-06-03 | full |
+| TOB-VMS-2026 | VMs won't contain cyber-capable agents | Trail of Bits | firm | https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/ | 2026-08-26 | full (opening) |
 | TOB-PKGMGR-2026 | Package managers have an integrity problem | Trail of Bits | firm | https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/ | 2026-10-14 | full (opening) |
 | TLDRSEC-TOBAINATIVE-2026 | How we made Trail of Bits AI-native (so far) | tl;dr sec | press | https://tldrsec.com/p/how-we-made-trail-of-bits-ai-native-so-far | 2026-03-31 | full |
 | TLDRSEC-346-2026 | [tl;dr sec] #346 - Can AI Do Novel Security Research?... | tl;dr sec | press | https://tldrsec.com/p/tldr-sec-346 | 2026-09-17 | full |
@@ -906,6 +907,8 @@ Access: `full` means the page, post, abstract or episode description was opened 
 | SNYK-BAC-2026 | Why AI Agents Write Broken Access Control | Snyk | vendor | https://snyk.io/blog/ai-coding-agents-broken-access-control/ | 2026-10-01 | full |
 | SNYK-CHAINS-2026 | Finding Vulnerabilities Isn't Proving Exploit Chains | Snyk | vendor | https://snyk.io/blog/frontier-models-vulnerabilities-attacker-chains/ | 2026-10-07 | full |
 | SNYK-VULNBUMP-2026 | VulnBump: Can AI Agents Safely Fix Dependencies? | Snyk | vendor | https://snyk.io/blog/vulnbump/ | 2026-10-15 | full |
+| WIZ-BLOG-2026 | Wiz blog index (Wiz AI SAST, ASPM entries) | Wiz | vendor | https://www.wiz.io/blog | 2026-10-06 (AI SAST entry) | full (index only) |
+| VERACODE-BLOG-2026 | Veracode blog index ('Are Deterministic SAST Security Tools Enough for AppSec?') | Veracode | vendor | https://www.veracode.com/blog/ | 2026-10-08 (entry date) | full (index only) |
 | SNYK-BLOG-2026 | Snyk blog index (Evo Agentic AppSec entries) | Snyk | vendor | https://snyk.io/blog/ | 2026-10-15 | full (index only) |
 | AISLE-JAGGED-2026 | AI Cybersecurity After Mythos: The Jagged Frontier | AISLE | vendor | https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier | 2026-04-07 | full |
 | AISLE-SAST-2026 | AI Code Analysis Beats SAST. Here's the Evidence | AISLE | vendor | https://aisle.com/blog/attackers-are-using-ai-to-find-vulnerabilities-in-your-code-your-sast-was-never-even-looking-for-them | 2026-08-12 | full |
@@ -923,7 +926,7 @@ Access: `full` means the page, post, abstract or episode description was opened 
 | NAND-RSAC-2026 | RSAC 2026: Agentic AI Security Takes Center Stage | NAND Research | press | https://nand-research.com/rsac-2026-agentic-ai-security-takes-center-stage-at-industrys-marquee-event/ | 2026-04-01 | full |
 | RISKYBIZ-SOAPBOX111-2026 | Soap Box: HD Moore talks OT security, frontier fearmongering and more | Risky Business | podcast | https://risky.biz/SOAPBOX111/ | 2026-09-30 | full (episode description only) |
 
-Distinct sources: 56 (counted: 12 community/blog and thread items are included as `community`).
+Distinct sources: 57. By type: vendor 16, firm 15, community 8 (practitioner blogs and Hacker News threads), press 6, podcast 4, academic 4, conference 3, survey 1.
 
 **Search-only items (not relied on for grades):** Cloudflare coverage summaries (dealroom, startuphub), Dark Reading and Decrypt coverage of PageBreak (Decrypt 2026 date unverified), the Glasswing ledger summary (VulnCheck, later opened), and Trail of Bits AI-native post summaries (later opened).
 

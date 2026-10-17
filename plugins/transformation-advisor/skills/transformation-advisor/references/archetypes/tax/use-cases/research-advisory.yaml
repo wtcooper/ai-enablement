@@ -1,8 +1,9 @@
 # Use cases: tax / research-advisory
 # Sources checked 2026-10-17 (wave 2). Synthesised from the landscape scan and the practice, discourse and
-# governance deep dives, plus items routed here from other tax modules. 25 entries: A 3, B 8, C 8, D 6.
-# Evidence is thin on measured outcomes: every grade-A figure is a named firm's own before-and-after estimate
-# published by the vendor that sells the tool; no independent test of a commercial tax research product exists.
+# governance deep dives, plus items routed here from other tax modules. 25 entries: A 0, B 11, C 8, D 6
+# (after verification 2026-10-17; #01, #02 and #09 moved from A to B). Evidence is thin on measured outcomes: the
+# before-and-after times are named practitioners' estimates quoted in case studies published by the vendors that
+# sell the tools, not measurements; no independent test of a commercial tax research product exists.
 # Independent measures (Stanford, Vals legal research, Vals Tax Agent Bench, TaxCalcBench, Antinozzi) test models
 # or adjacent tools, not firm deployments. Cross-module overlaps are noted in each entry's notes.
 
@@ -21,7 +22,7 @@
   maturity: in-production
   problem: >-
     Advisers at CPA and advisory firms pay for research databases but find them slow. In Blue J and CPA.com's 2025 survey
-    of 150+ practitioners (co-produced by a vendor that sells a competing product), 81.3% also used search engines for
+    of 150+ practitioners (co-produced by Blue J, which sells an AI research tool), 81.3% also used search engines for
     tax research and 42% called legacy tools too time-consuming [BLUEJ-OUTLOOK-2025; CPAPA-BLUEJ-2025]. General chatbots
     return confident citations that may not exist [BTAX-HALLUC-2026].
   solution: >-
@@ -31,7 +32,7 @@
     plus primary sources) [BLUEJ-2026; CPAPA-TR-2026; ACCORDANCE-SASSERATH-2025]. Named users include Sasserath & Co.
     and Barnes Wendling (Accordance), SSC CPAs + Advisors, which moved its primary research tool from Checkpoint to Blue
     J, Sorren and RSM US (quoted on Blue J's site) and Harris, Hardy & Johnstone (CoCounsel) [ACCORDANCE-BARNES-2026;
-    BLUEJ-SSC-2025; BLUEJ-2026; TR-HHJ-2026]. Bloomberg Tax says its retrieval-augmented answers refrain from answering
+    BLUEJ-SSC-2025; BLUEJ-HOME-2026; TR-HHJ-2026]. Bloomberg Tax says its retrieval-augmented answers refrain from answering
     when reliable content is missing (vendor statement) [BTAX-HALLUC-2026].
   outcomes:
   - lever: speed
@@ -40,7 +41,8 @@
       sales tax exposure analysis from 1.5 days to 3 hours
     figure: 1 hour to 10 minutes (stated as 80%); 1.5 days to 3 hours (stated as 75%)
     measures: >-
-      Time for two named research tasks at one firm, as stated in the vendor case study; the page's Impact line ('up
+      Time for two named research tasks at one firm, stated in the vendor's own narrative (not a quotation from the
+      firm); the page's Impact line ('up
       to an 80% reduction in research time on complex scenarios') does not match its body text
     provenance: vendor-published
     source_ref: ACCORDANCE-SASSERATH-2025
@@ -65,7 +67,7 @@
       One partner's recollection of how long a type of task used to take versus now, quoted on the vendor's page; not
       a measured sample
     provenance: vendor-published
-    source_ref: BLUEJ-2026
+    source_ref: BLUEJ-HOME-2026
   - lever: speed
     description: Blue J user survey respondents report weekly time saved
     figure: 2.94 hours per week
@@ -141,16 +143,16 @@
   role_evolution: >-
     Associates and mid-level staff do more of the first-pass research: Blue J reports its users are 40.8% associates,
     27.7% mid-level and 31.5% seniors [BLUEJ-OUTLOOK-2025]. RSM US's Washington National Tax leader says the tool keeps
-    the practitioner 'in the driver's seat' [BLUEJ-2026]. PCRT frames the adviser as the reviewer of a junior colleague's
+    the practitioner 'in the driver's seat' [BLUEJ-HOME-2026]. PCRT frames the adviser as the reviewer of a junior colleague's
     work [PCRT-AI-2026].
-  evidence_grade: A
+  evidence_grade: B
   sources:
   - ref: ACCORDANCE-SASSERATH-2025
     title: Sasserath & Co. Accelerates Research by 80% and Shifts to Value-Based Billing
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/sasserath-co
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: Solution and Impact sections
   - ref: ACCORDANCE-BARNES-2026
@@ -161,14 +163,16 @@
     date: '2026-06-19'
     access: full
     locator: Impact section
-  - ref: BLUEJ-2026
-    title: 'Blue J AI Tax Research Platform (product page: customer quotes and usage statistics)'
+  - ref: BLUEJ-HOME-2026
+    title: AI Tax Research Platform (Blue J home page)
     publisher: Blue J
     type: vendor
-    url: https://www.bluej.com/events
+    url: https://www.bluej.com
     date: '2026-10-17'
     access: full
-    locator: customer quotes (Sorren, RSM US) and 'Stats that speak for themselves'
+    locator: >-
+      customer quotes (Sorren, RSM US) and 'Stats that speak for themselves'; page undated, access date used (the
+      /events URL cited before verification redirects here)
   - ref: BLUEJ-SSC-2025
     title: SSC CPAs + Advisors Elevates Tax Research with Blue J
     publisher: Blue J
@@ -288,9 +292,10 @@
     locator: release text on Avi research (routed from the tax-data-technology practice deep dive)
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-01, discourse-01 and governance-01. Grade A rests on named firms' before-and-after time statements
-    published by the vendors that sell the tools; they are practitioner estimates, none is independent, and the discourse
-    and governance angles graded the same use case B for that reason. Treat the figures as self-estimates. Adoption context:
+    Merged from practice-01, discourse-01 and governance-01. Graded B at verification (was A): the before-and-after
+    times are named practitioners' recollections (Barnes Wendling, Sorren) or the vendor's own narrative (Sasserath),
+    published by the vendors that sell the tools; none is a measurement and none is independent, which is why the
+    discourse and governance angles also graded it B. The 700+ queries a month is a usage count, not an outcome. Adoption context:
     Blue J's 2026 survey (1,000 US accountants, 12-23 Mar 2026) found 60% work at firms that adopted AI-powered tax research
     versus 33% in the 2025 edition, with a different sample [BLUEJ-OUTLOOK-2026]. Routed from tax-data-technology: Avalara
     markets AI tax research for indirect tax, with one accounts-payable user quoted as cutting research time by more
@@ -311,8 +316,9 @@
   maturity: in-production
   problem: >-
     Hard or 'gray-area' questions took hours across several databases (one firm layered CCH IntelliConnect with five
-    Bloomberg BNA subscriptions), and legacy tools find sources but leave the practitioner to assemble the analysis [ACCORDANCE-WFY-2026].
-    The reasoning is rarely preserved in a form a reviewer can follow [TR-AGENTICBLOG-2026].
+    Bloomberg BNA subscriptions) [ACCORDANCE-WFY-2026]. Thomson Reuters says that with search tools, applying findings to
+    a client's situation still took substantial manual effort, and that answers without preserved reasoning chains and
+    review-ready outputs are insufficient for substantive work [TR-AGENTICBLOG-2026].
   solution: >-
     The tool splits the work into steps: extract the fact pattern, frame the issues, locate authority, weigh its relevance
     and propose recommendations with risks; Accordance says it runs each step with dedicated agents and cites primary
@@ -336,8 +342,8 @@
     source_ref: ACCORDANCE-SASSERATH-2025
   - lever: quality
     description: >-
-      The practitioner says the tool surfaced the documents needed to defend a debt-to-equity conversion for a foreign-owned
-      holding company in an audit
+      The practitioner says the tool flagged the documentation (board minutes, resolutions) needed to defend a debt-to-equity
+      conversion for a foreign-owned holding company in an audit
     figure: none
     measures: Qualitative example; not measured
     provenance: vendor-published
@@ -375,7 +381,7 @@
     Senior researchers move from running searches to directing and testing multi-part analyses; the case-study firm kept
     simple lookups on a lighter tool (Copilot) and used the research tool for complex scenarios [ACCORDANCE-WFY-2026].
     Thomson Reuters frames the change as amplifying judgment, not replacing it [TR-AGENTICBLOG-2026].
-  evidence_grade: A
+  evidence_grade: B
   sources:
   - ref: ACCORDANCE-WFY-2026
     title: 'Wright Ford Young & Co.: Rebuilding Their Approach to Gray-Area Research'
@@ -390,7 +396,7 @@
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/sasserath-co
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: Solution section
   - ref: ACCORDANCE-BDO-2026
@@ -455,7 +461,8 @@
   notes: >-
     Merged from practice-02 and discourse-02. The discourse angle classed the Bloomberg and Thomson Reuters modes as
     delegate; they are placed at augment here because the adviser answers the clarifying questions and reviews each run.
-    Grade A rests on one named firm's practitioner estimate published by the vendor; not independent. Accordance's claim
+    Graded B at verification (was A): the speed figure is one named practitioner's estimate quoted by the vendor, not
+    a measured outcome, and not independent. Accordance's claim
     that it 'outperforms major foundation models' is a vendor statement; no benchmark was published in the pages read.
 
 - id: tax-research-advisory-03
@@ -478,8 +485,8 @@
     An agent with tools for authority lookup by citation, web search, document fetch, retrieval and a calculator researches
     a written question over many steps and submits one written answer with citations; Vals AI built an independent benchmark
     of this task for US corporate tax [VALS-TAXAGENT-2026]. EY India announced an AI Tax Hub with agents for research,
-    compliance and litigation [EY-INDIA-2026]. OpenAI's tax department showed a research memo agent at a TEI-SJSU panel
-    [SJSU-TEIHTTI-2025].
+    compliance and litigation [EY-INDIA-2026]. A TEI-SJSU panel deck (panellists included OpenAI's tax reporting director)
+    shows a sample tax research agent built on GPT-5 that drafts cited memos [SJSU-TEIHTTI-2025].
   outcomes:
   - lever: quality
     description: >-
@@ -514,8 +521,8 @@
     The Vals page narrative mixes figures from an earlier analysis set with the current leaderboard; use the leaderboard
     table [VALS-TAXAGENT-2026]
   - >-
-    Werfel's preparer register lists control dilution (volume and speed outpace review) and agentic AI risk, and recommends
-    limited-scope pilots [TAXADVISER-WERFEL-2026]
+    Werfel's preparer register lists control dilution (volume and speed outpace review); agentic AI risk appears in his
+    tax-authority register, and he recommends limited-scope pilots [TAXADVISER-WERFEL-2026]
   - >-
     PwC says policy interpretation and high-touch consulting remain areas of limited AI use [PWC-MEGNA-2025]
   - >-
@@ -599,7 +606,7 @@
     From governance-02, with routed items. The governance angle graded this A; the synthesis grades it C because the
     measured outcome is a benchmark of models in a test harness, not an outcome from a named organization's deployment,
     and no named organization is shown running a delegate-level research agent in production. Vals sells evaluation services.
-    OpenAI's slides show demo timings for a research memo agent (3 hours saved, 2 minutes to result); these are presenter
+    The panel deck's slides show demo timings for the research memo agent (3 hours saved, 2 minutes to result); these are presenter
     demo timings, not outcomes, and the deck does not say whether it is in production [SJSU-TEIHTTI-2025]. The EY India
     hub is an announcement. Related: the KPMG agent platform is tax-research-advisory-24.
 
@@ -629,16 +636,16 @@
       law
     figure: 14 points lower on average (14 multi-jurisdiction questions)
     measures: >-
-      Difference in average weighted score between multi-jurisdiction and single-jurisdiction questions among the AI
-      products, in a 200-question legal research set
+      Difference in average score between multi-jurisdiction and single-jurisdiction questions, on average across study
+      participants, in a 200-question legal research set
     provenance: independent
     source_ref: VALS-VLAIR-2025
   prerequisites:
   - Primary-law access across the jurisdictions in scope
   risks_and_guardrails:
   - >-
-    On the Vals tax benchmark's public state-tax question, twelve of eighteen models failed the same must-pass check
-    on New York's treatment of credits from several entities [VALS-TAXAGENT-2026]
+    On the Vals tax benchmark's public state-tax question, twelve of eighteen models scored 0, eleven of them failing the
+    same must-pass check on New York's treatment of PTET credits from more than one electing entity [VALS-TAXAGENT-2026]
   - >-
     All participants in the legal research study struggled with the 50-state survey question [VALS-VLAIR-2025]
   - >-
@@ -693,8 +700,8 @@
   maturity: announced
   problem: >-
     Institutional tax knowledge sits in senior practitioners' heads and in scattered memos; vendors say it is lost as
-    seniors retire and quality varies with staff experience [TR-AGENTICBLOG-2026]. In-house positions and policies sit
-    in separate folders [TR-COCOUNSELCORP-2026].
+    seniors retire and quality varies with staff experience [TR-AGENTICBLOG-2026]. Thomson Reuters markets its in-house
+    product as removing the friction of managing research across multiple applications [TR-COCOUNSELCORP-2026].
   solution: >-
     An assistant answers from the organization's own memo library, guidance and policies alongside licensed content,
     so staff reuse prior positions consistently. Thomson Reuters lists retaining institutional knowledge and reducing
@@ -720,8 +727,9 @@
   human_checkpoints:
   - Reviewer confirms a retrieved precedent still reflects current law and fits the client's facts
   role_evolution: >-
-    Knowledge-management teams become owners of the corpus and its quality, and seniors review less repeated work (vendor
-    framing) [TR-AGENTICBLOG-2026]. Tax knowledge management leaders appear on AI panels [BTAX-FORUM-2026].
+    Thomson Reuters says agentic tools help firms retain institutional knowledge as senior practitioners retire and reduce
+    variability across staff experience levels (vendor framing) [TR-AGENTICBLOG-2026]. KPMG's tax knowledge management
+    practice leader was listed on a Bloomberg Tax forum AI panel [BTAX-FORUM-2026].
   evidence_grade: C
   sources:
   - ref: TR-AGENTICBLOG-2026
@@ -790,10 +798,10 @@
     than half of time spent on reactive work [TR-CORPTAX-2025]; fewer than half of departments surveyed for the 2026
     report had a budget increase [TR-CORPTECH-2026].
   solution: >-
-    Tax staff use the company's standard AI assistant, and increasingly tax-specific applications, for researching and
-    processing tax information and for communication with other functions [KPMG-DE-2026]. In-house teams trial licensed
-    research assistants: TEI's Midyear 2026 programme ran hands-on Tax Labs on AI and tax research with Thomson Reuters
-    CoCounsel and with Accordance [TEI-MIDYEAR-2026].
+    In KPMG Germany's quick surveys, 89% use company-wide standard AI solutions and 29% specialised tax applications
+    (base not stated), for uses ranging from researching and processing tax information to data analysis, documentation
+    and reporting [KPMG-DE-2026]. In-house teams trial licensed research assistants: TEI's preliminary Midyear 2026
+    programme scheduled Tax Labs on AI and tax research with Thomson Reuters CoCounsel and with Accordance [TEI-MIDYEAR-2026].
   outcomes:
   - lever: speed
     description: KPMG Germany quick surveys of tax departments; covers all AI use, not research alone
@@ -848,7 +856,7 @@
     type: survey
     url: >-
       https://kpmg.com/de/en/media/press-releases/2026/05/tax-departments-are-increasingly-turning-to-artificial-intelligence.html
-    date: '2026-05-06'
+    date: '2026-05-07'
     access: full
     locator: key findings; hurdles paragraph
   - ref: TR-CORPTAX-2025
@@ -872,13 +880,14 @@
     access: full
     locator: sections 'Expectations about AI' and budget paragraph
   - ref: TEI-MIDYEAR-2026
-    title: TEI Midyear Conference 2026 at-a-glance agenda
+    title: TEI Midyear Conference 2026 at-a-glance agenda, preliminary (Washington DC, 15-18 Mar 2026)
     publisher: Tax Executives Institute
     type: conference
     url: https://www.tei.org/sites/default/files/MY%202026%20At%20a%20Glance%20Agenda_rev3.2_0.pdf
-    date: '2026-03-15'
+    date: 2026-02
     access: full
-    locator: Tax Lab sessions 'AI and Tax Research'
+    locator: >-
+      Monday 16 March 2026 Tax Lab sessions 'AI and Tax Research' (preliminary programme; PDF created 2026-02-09)
   - ref: TEI-TAXTECH-2026
     title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
     publisher: Thomson Reuters Institute
@@ -937,7 +946,7 @@
   notes: >-
     Merged from practice-08, discourse-06 and governance-10. Sponsor-produced surveys with different samples; do not
     combine figures. No named in-house department published a research-assistant outcome. Routed from tax-data-technology:
-    OpenAI's tax department showed a Slack Q&A agent at a TEI-SJSU panel with demo timings of 15 minutes saved and under
+    a TEI-SJSU panel deck (panellists included OpenAI's tax reporting director) shows a sample Slack Q&A agent with demo timings of 15 minutes saved and under
     one minute to result; these are presenter timings, not outcomes [SJSU-TEIHTTI-2025]. In-house data pipelines and
     process automation belong to tax-data-technology.
 
@@ -969,9 +978,9 @@
     citations; Harris, Hardy & Johnstone cites an enclosed LLM with SOC certification [ACCORDANCE-WFY-2026; TR-HHJ-2026].
   outcomes:
   - lever: capacity
-    description: Crowe says Ask Blue J is implemented across its entire tax practice
+    description: Blue J's chief revenue officer says Crowe is implementing Ask Blue J across its entire tax practice
     figure: entire tax practice (no headcount given)
-    measures: Scope of an enterprise agreement, per the vendor's 2024 release
+    measures: Scope of an enterprise agreement, as stated by a vendor executive in the vendor's 2024 release
     provenance: vendor-published
     source_ref: BLUEJ-CROWE-2024
   - lever: capacity
@@ -1189,8 +1198,8 @@
   human_checkpoints:
   - Supervisor reviews juniors' research and the reasoning, not only the answer
   role_evolution: >-
-    Blue J and CPA.com describe three training levels: technical skill to judge AI output, cognitive skill to ask the
-    right questions, and human skills [BLUEJ-OUTLOOK-2026]. Partners at several firms say staff who disliked research
+    CPA.com's Brandon Allfrey, quoted in the Blue J and CPA.com report, describes three training levels: technical skill
+    to judge AI output, cognitive skill to ask the right questions, and human skills [BLUEJ-OUTLOOK-2026]. Partners at several firms say staff who disliked research
     now find it easier [ACCORDANCE-SASSERATH-2025; ACCORDANCE-FINNEY-2025].
   evidence_grade: B
   sources:
@@ -1208,7 +1217,7 @@
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/sasserath-co
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: section 'Democratizing Expertise Across the Team'
   - ref: ACCORDANCE-FINNEY-2025
@@ -1216,7 +1225,7 @@
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/finney-neill-company-energizing-the-practice
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: Challenge section
   - ref: BLUEJ-OUTLOOK-2025
@@ -1272,8 +1281,8 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Planning advice such as an S-corporation election analysis for a sole proprietor is rebuilt from scratch each time,
-    consuming senior time and leaving smaller firms reactive [ACCORDANCE-FINNEY-2025].
+    An S-corporation election analysis for a sole proprietor was about a 10-hour project, and research on the firm's old
+    platform was a 'tiresome' roadblock that limited proactive client service [ACCORDANCE-FINNEY-2025].
   solution: >-
     The firm builds a standard process in the tool (Accordance calls it a 'blueprint') that takes the client's financials
     and returns, researches the rules, localises inputs such as reasonable compensation, and produces a decision matrix
@@ -1294,22 +1303,22 @@
   - >-
     Output depends on the facts supplied; the reviewer must test assumptions such as local compensation benchmarks
   - >-
-    PCRT planning standards require advice specific to the client's facts; a tool built for common scenarios may embed
-    assumptions that do not fit [PCRT-AI-2026]
+    PCRT's client-specific standard requires planning specific to the client's facts; using a tool to save time should
+    not mean relying on data that does not apply to the client's circumstances [PCRT-AI-2026]
   - Single example; no error rate published
   human_checkpoints:
   - Tax shareholder reviews the matrix and the localised assumptions before it goes to the client
   role_evolution: >-
     The shareholder says the firm becomes 'less compliance focused' and reaches out to clients proactively instead of
     hearing about issues after the fact [ACCORDANCE-FINNEY-2025].
-  evidence_grade: A
+  evidence_grade: B
   sources:
   - ref: ACCORDANCE-FINNEY-2025
     title: 'Finney, Neill & Company: Energizing the Practice'
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/finney-neill-company-energizing-the-practice
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: Efficiency Impact and Culture Impact sections
   - ref: TR-COCOUNSELCORP-2026
@@ -1331,7 +1340,8 @@
     locator: objectivity risk table
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-03. Grade A rests on one named firm's estimate published by the vendor; not independent. The firm trialled
+    From practice-03. Graded B at verification (was A): the speed figure is one named shareholder's estimate ('maybe
+    two or two and a half') quoted by the vendor, not a measured outcome, and not independent. The firm trialled
     the tool beside its existing platform with a five-person tax team in April 2025.
 
 - id: tax-research-advisory-10
@@ -1383,8 +1393,8 @@
     Senior adviser tests every AI-proposed structure against economic substance, step transaction and PCRT or Circular
     230 standards
   role_evolution: >-
-    Planners spend more time dismantling and stress-testing candidate structures than inventing them (discourse-angle
-    synthesis of the practitioner articles) [BTAX-SIVA1-2026; BTAX-LOWY-2026].
+    Lowy says the lawyer remains responsible for narrowing the possibilities AI generates, rejecting weak ideas and refining
+    promising ones [BTAX-LOWY-2026].
   evidence_grade: D
   sources:
   - ref: JHU-TAXABUSE-2025
@@ -1457,9 +1467,10 @@
     reviewers cannot easily see which answers need deeper checking [BTAX-LOWY-2026; PCRT-AI-2026].
   solution: >-
     Idea: the adviser asks a model to argue the opposite conclusion, list what an IRS examiner would flag, or runs the
-    same question through a second tool and treats disagreement as a trigger for a deeper human check. Lowy lists pressure-testing
-    arguments as a strength of the tools [BTAX-LOWY-2026]; CPA Practice Advisor's playbook suggests asking AI to argue
-    the opposite and identify what an auditor would flag [CPAPA-FIRSTSTOP-2025].
+    same question through a second tool and treats disagreement as a trigger for a deeper human check. Lowy lists generating
+    alternative arguments and testing different ways to frame a technical issue as strengths of the tools [BTAX-LOWY-2026];
+    CPA Practice Advisor's playbook suggests CPAs coach clients to ask AI to argue the opposite and identify what an auditor
+    would flag [CPAPA-FIRSTSTOP-2025].
   outcomes:
   - lever: quality
     description: none published
@@ -1660,7 +1671,8 @@
   human_checkpoints:
   - Adviser checks the summary against the source document before relying on it
   role_evolution: >-
-    Advisers move from reading to checking summaries and spotting what the tool missed (practice-angle synthesis) [ACCORDANCE-WFY-2026].
+    Not described in the sources beyond verification: Wright Ford Young says transparent citations let its research lead
+    verify every answer against primary authority [ACCORDANCE-WFY-2026].
   evidence_grade: B
   sources:
   - ref: ACCORDANCE-WFY-2026
@@ -1736,7 +1748,7 @@
     technical memos with full citations from one prompt [TR-COCOUNSELCORP-2026]. KPMG describes a Writing Review Assistant
     that unifies style and defined terms [KPMG-MA-2025]. Nelson Mullins is piloting two leading platforms; Lowy says
     output resembles an average-performing junior associate's, useful for drafts but not ready to send [BTAX-LOWY-2026].
-    PCRT lists report writing for tax advisory as a current use [PCRT-AI-2026].
+    PCRT gives report writing for tax advisory as an example use [PCRT-AI-2026].
   outcomes:
   - lever: speed
     description: >-
@@ -1782,8 +1794,9 @@
     was found to be professional incompetence for a regulated accountant [ICAS-TAXTRIB-2026; ROSSMARTIN-ELDEN-2026]
   - 'ICAEW: a generated letter to HMRC can mis-state a point or strike the wrong tone [ICAEW-POD-2026]'
   - >-
-    Disclosure: no federal rule mandates disclosure of AI use to clients, some states require some disclosure, and voluntary
-    disclosure is suggested [JOFA-DISCLOSE-2025]
+    Disclosure: in April 2025 JofA found no federal law or professional standard mandating disclosure of AI use to clients,
+    some states requiring some disclosure, and suggested voluntary disclosure [JOFA-DISCLOSE-2025]; OPR's 2026 alert says
+    practitioners should disclose AI activities, in general or specific terms, when crediting cost savings [IRS-OPR-2026]
   human_checkpoints:
   - Named adviser edits, verifies every cited authority and approves every client-facing draft
   - Second reviewer checks authorities for opinion-level or litigation documents
@@ -1937,8 +1950,9 @@
   runtime_class: shared-team-skills
   maturity: emerging
   problem: >-
-    Written advice and formal opinions must relate law to facts on reasonable assumptions, and clients and auditors may
-    rely on them, including for penalty protection; the signer carries the consequences [IRS-OPR-2026; KTS-AI-2026].
+    Written advice must rest on reasonable factual and legal assumptions and consider all relevant facts (Circular 230
+    s10.37) [IRS-OPR-2026], and the responsible practitioner must verify the analysis and facts before an opinion is
+    finalised [KTS-AI-2026].
     Corporates often wait for, and defer to, an expensive opinion from a Big Four national office or law firm [SALA-TAXNOTES-2026].
   solution: >-
     Idea: AI assembles the authorities, maps them to the facts and drafts the analysis; a person decides the conclusion
@@ -1967,8 +1981,8 @@
   - >-
     OPR on competence: lack of technological competence could lead to improper advice (s10.35) [IRS-OPR-2026]
   - >-
-    Siva argues AI tools do not qualify for Kovel protection and that verifying citations is a non-delegable duty; his
-    Heppner reference was not checked [BTAX-SIVA2-2026]
+    Siva argues AI tools do not qualify for Kovel protection and that verifying citations is a non-delegable duty
+    [BTAX-SIVA2-2026]
   - >-
     Werfel's preparer register lists liability ambiguity between the signing preparer and the AI vendor, and malpractice
     exposure [TAXADVISER-WERFEL-2026]
@@ -2043,7 +2057,7 @@
   notes: >-
     Idea. Merged from discourse-07, governance-13 and practice-16. No firm describes an AI-drafted opinion in production.
     Sala's question would change the sourcing model (in-house direction instead of an external opinion) if it came true;
-    only an abstract and excerpt were read.
+    only an abstract and excerpt were read. Siva's Heppner reference (privilege waiver) was not checked against the case.
 
 - id: tax-research-advisory-16
   title: Answering client questions during the call instead of researching and calling back
@@ -2059,8 +2073,8 @@
   runtime_class: personal-assistant
   maturity: in-production
   problem: >-
-    Complex client questions meant telling the client 'we will research and call you back', often a day later, which
-    delayed advice [ACCORDANCE-BARNES-2026].
+    Complex client questions meant telling the client 'we'll do some research and call you back', because complex
+    research could consume most of a workday [ACCORDANCE-BARNES-2026].
   solution: >-
     With a cited research assistant open, the adviser looks up and tests an answer while the client is on the line, or
     answers from a sole-practitioner desk without a colleague to consult [ACCORDANCE-BARNES-2026; BLUEJ-HATRIDGE-2024].
@@ -2080,9 +2094,6 @@
   - >-
     Speed raises the temptation to answer without full verification; JofA and OPR both stress the duty to verify before
     relying [TAXCT-CLINCO-2026; IRS-OPR-2026]
-  - >-
-    Anything said live to a client is advice; complex answers should be confirmed in writing after review (practice-angle
-    recommendation)
   human_checkpoints:
   - Adviser decides what can be said live and what needs follow-up review
   role_evolution: >-
@@ -2305,8 +2316,8 @@
   human_checkpoints:
   - Adviser reviews flagged material and its sources before adopting any position or responding
   role_evolution: >-
-    Advisers add a triage and correction role for client-generated AI content and extend the engagement letter to cover
-    it (discourse-angle synthesis) [CPAPA-FIRSTSTOP-2025].
+    CPA Practice Advisor says CPAs should warn clients against using AI advice without scrutiny and clarify in engagement
+    letters that their responsibility extends only to advice they give directly [CPAPA-FIRSTSTOP-2025].
   evidence_grade: D
   sources:
   - ref: CPAPA-FIRSTSTOP-2025
@@ -2393,13 +2404,14 @@
     source_ref: CHARLOTIN-DB-2026
   - lever: risk
     description: US Tax Court judge on how often he has seen hallucinated citations in filings
-    figure: fewer than a dozen; no sanctions as of March 2026
+    figure: fewer than a dozen; he had not issued any sanctions himself (March 2026)
     measures: Instances Judge Holmes said he had seen in Tax Court filings, per a Bloomberg interview
     provenance: independent
     source_ref: BLAW-TAXCT-2026
   - lever: risk
     description: >-
-      Bloomberg Tax cites a January 2026 paper reporting AI-related citation errors (second-hand; the paper was not opened)
+      Bloomberg Tax cites a January 2026 paper (attributed to The International Tax Journal) reporting AI-related citation
+      errors; a Texas A&M preprint with the same figure says 'nearly 800 cases' [PREPRINTS-HALLUC-2026]
     figure: nearly 800
     measures: >-
       AI-related citation errors in disciplinary actions and court records across at least 25 countries by late 2025,
@@ -2428,8 +2440,8 @@
     Second reviewer cross-checks existence and support of each authority before a filing or client memo goes out
   - Responsible partner signs off on the verification record
   role_evolution: >-
-    Review time moves from reading prose to verifying authority, and cite-checking becomes a recorded step with an owner.
-    OPR says those with principal authority over a firm's practice must take reasonable steps to ensure adequate procedures
+    An Aon adviser says the client file should record the prompts used, how outputs were verified and who reviewed
+    [JOFA-AIPOLICY-2026]. OPR says those with principal authority over a firm's practice must take reasonable steps to ensure adequate procedures
     (s10.36) [IRS-OPR-2026]. Werfel's register calls for sign-off that requires genuine analysis [AICPA-WERFEL-2026].
   evidence_grade: B
   sources:
@@ -2549,6 +2561,14 @@
     date: 2026-06
     access: full
     locator: Appendix C, risks 1, 4 and 6
+  - ref: PREPRINTS-HALLUC-2026
+    title: 'Citing the Unseen: AI Hallucinations in Tax and Legal Practice (preprint, not peer reviewed)'
+    publisher: Preprints.org
+    type: academic
+    url: https://www.preprints.org/manuscript/202601.0187/v1
+    date: 2026-01
+    access: full
+    locator: introduction ('nearly 800 cases'); paragraph on sanctions (about 90% without formal professional sanctions)
   last_reviewed: '2026-10-17'
   notes: >-
     Merged from practice-09, the manual parts of discourse-11, and governance-14 (idea). Governance-14's idea, tooling
@@ -2681,7 +2701,7 @@
     partnership agreements that highlights nonstandard clauses against baselines, an M&A Tax Reporting System that drafts
     an initial diligence report from jurisdiction, deal type and client constraints, and a writing review assistant;
     professionals add their own assessments [KPMG-MA-2025]. PCRT lists AI use in M&A (targets, due diligence, valuations)
-    as a current example [PCRT-AI-2026]. A Hungarian advisory firm says AI tools process contracts and invoices to speed
+    as an example use [PCRT-AI-2026]. A Hungarian advisory firm says AI tools process contracts and invoices to speed
     diligence [MONDAQ-HORIZON-2026].
   outcomes:
   - lever: speed
@@ -2704,7 +2724,7 @@
   - >-
     Tax return information carries civil and criminal disclosure penalties (IRC 6713 and 7216) [IRS-OPR-2026]
   - >-
-    Draft reports could carry unsupported statements or missed clauses into a negotiation; no error rate is published
+    No error rate for the clause-review or report-drafting tools is published [KPMG-MA-2025]
   human_checkpoints:
   - >-
     Professionals build on the draft with their own assessments and recommendations and validate output against the source
@@ -2799,11 +2819,10 @@
   - A reviewer able to test the risk list
   risks_and_guardrails:
   - Vendor claim only; no named customer or accuracy data [V7-TAXDD-2026]
-  - A missed permanent establishment or intercompany issue could leave an exposure unpriced
   human_checkpoints:
   - >-
     Deal tax lead reviews the risk assessment before it informs price, structure or what is raised with the counterparty
-  role_evolution: Diligence staff shift from document reading to exception review (vendor framing) [V7-TAXDD-2026].
+  role_evolution: Not described in the sources.
   evidence_grade: C
   sources:
   - ref: V7-TAXDD-2026
@@ -2817,6 +2836,8 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Merged from practice-12 and discourse-13. Kept as the contrast to KPMG's human-led model (tax-research-advisory-21).
+    The named testimonials on the page (for example a 35% productivity figure) are general V7 Go quotes, not tied to
+    this tax agent.
 
 - id: tax-research-advisory-23
   title: Law-change monitoring that drafts client-specific impact notes for adviser review
@@ -2862,7 +2883,6 @@
     Version control and update discipline; HMRC expects continuous monitoring and timely updating of data sources in
     generative-AI tax software [HMRC-GENAI-2026]
   risks_and_guardrails:
-  - A stale or wrong monitored rule propagates to every client agent
   - PCRT says outdated AI models can lead to compliance risks and incorrect advice [PCRT-AI-2026]
   - >-
     Bloomberg Tax lists training cutoffs and fast-changing guidance as a cause of confident but outdated answers [BTAX-HALLUC-2026]
@@ -2871,8 +2891,8 @@
   human_checkpoints:
   - Adviser confirms each flagged change and its client impact before anything reaches the client
   role_evolution: >-
-    Professionals and clients build agents inside the platform; the adviser's job moves toward specifying and supervising
-    them (discourse-angle synthesis) [KPMG-ANTHROPIC-2026].
+    KPMG says professionals and clients work with AI inside the platform, building new capabilities in real time
+    [KPMG-ANTHROPIC-2026].
   evidence_grade: C
   sources:
   - ref: KPMG-ANTHROPIC-2026
@@ -2934,7 +2954,7 @@
     how well monitoring works. The compliance-tracker element also touches compliance.
 
 - id: tax-research-advisory-24
-  title: Advisers co-build client-specific tax agents on firm platforms and sell them as a service
+  title: Advisers co-build client-specific tax agents with clients on firm platforms as a client service
   archetype: tax
   module: research-advisory
   function: service-delivery
@@ -2947,10 +2967,12 @@
   runtime_class: managed-agent-runtime
   maturity: announced
   problem: >-
-    Clients want agents that track tax-rule changes and apply them to their facts, but building them needs tax and engineering
-    skills together [KPMG-ANTHROPIC-2026; EY-TAXLABS-2025].
+    KPMG's US tax vice chair says building an agent to help clients adjust to changing tax regulations used to take weeks
+    and several tools [KPMG-ANTHROPIC-2026]; EY says its offering co-designs AI journeys for each client's context
+    [EY-TAXLABS-2025].
   solution: >-
-    KPMG's Digital Gateway Powered by Claude, announced 20 May 2026 with tax clients first, lets professionals and clients
+    KPMG's Digital Gateway Powered by Claude, announced 20 May 2026 with an initial focus on tax clients and private
+    equity firms, lets professionals and clients
     build agentic workflows in the platform [KPMG-ANTHROPIC-2026]. EY announced EY.ai Tax Labs and the EY.ai Tax Agent
     Factory (25 Nov 2025) to design, build, train, deploy and manage agents at scale with clients [EY-TAXLABS-2025].
   outcomes:
@@ -2972,8 +2994,8 @@
   human_checkpoints:
   - Not described in the sources
   role_evolution: >-
-    Advisers become agent designers and sellers of software-plus-services (practice-angle synthesis); KPMG says its 276,000
-    people will have access to Claude [KPMG-ANTHROPIC-2026].
+    EY says Tax Agent Factory lets tax professionals and clients design, build, train, deploy and manage agents
+    [EY-TAXLABS-2025]; KPMG says its 276,000 people will have access to Claude [KPMG-ANTHROPIC-2026].
   evidence_grade: C
   sources:
   - ref: KPMG-ANTHROPIC-2026
@@ -3042,7 +3064,7 @@
   - lever: growth
     description: RKL clients onboarded under its pilot pricing model
     figure: several dozen new clients
-    measures: New clients onboarded under the pilot, per an RKL tax partner quoted by Bloomberg Tax
+    measures: New clients onboarded under the pilot, as reported by Bloomberg Tax (journalist's statement)
     provenance: self-reported
     source_ref: BTAX-PRICING-2026
   - lever: cost
@@ -3070,8 +3092,8 @@
   - >-
     Engagement partner sets the fee basis and reviews billing against actual work and OPR's s10.27 expectations
   role_evolution: >-
-    Partners spend more effort on scoping and value conversations (practice-angle synthesis) [BTAX-PRICING-2026]; PwC's
-    US tax leader says time matters less [BTAX-PRICING-2026].
+    An RSM partner says AI gives firms time for deeper advisory work and strategy discussions with clients, and PwC's US
+    tax leader says time is becoming less relevant [BTAX-PRICING-2026].
   evidence_grade: B
   sources:
   - ref: ACCORDANCE-SASSERATH-2025
@@ -3079,7 +3101,7 @@
     publisher: Accordance
     type: vendor
     url: https://www.accordance.com/press/sasserath-co
-    date: 2025-11
+    date: '2025-11-01'
     access: full
     locator: section 'Moving to Value-Based Pricing'
   - ref: BTAX-PRICING-2026

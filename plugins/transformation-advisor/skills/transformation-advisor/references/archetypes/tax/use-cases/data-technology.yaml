@@ -26,8 +26,7 @@
     knowledge layer as the single source of truth for tax (SNOWFLAKE-JOB-2026). Fortive and Apple advertise roles to architect
     or oversee the same thing; Fortive names Power Platform and Alteryx, Apple names pipelines, models and governance standards
     (FORTIVE-JOB-2026; APPLE-JOB-2026). OpenAI's 2025 posting lists SQL-based data pipelines and metadata repositories (OPENAI-TAXDATAJOB-2025).
-    EY says best-in-class organisations centralise data on platforms such as Databricks and Snowflake, and that these organisations
-    are in the minority (BTAX-EYTFO-2026). Deloitte Tax and Databricks announced an expanded alliance on 2025-10-08 to build
+    The Bloomberg Tax write-up of the EY survey says best-in-class organisations centralise data on platforms such as Databricks and Snowflake, and that these organisations are in the minority (BTAX-EYTFO-2026). Deloitte Tax and Databricks announced an expanded alliance on 2025-10-08 to build
     a 'unified tax data architecture' (DELOITTE-DATABRICKS-2025).
   outcomes:
   - lever: quality
@@ -55,7 +54,7 @@
     the IRS in a form that can be processed (IRS-REVPROC-9825).
   - Fewer than half of 170 surveyed tax leaders got a budget increase, so the build competes for scarce funding (TR-CORPTECH-2026).
   - The Bloomberg Tax write-up says 45% cite the lack of a sustainable data, AI and technology strategy as their top barrier
-    (EY's own release says 44%) (BTAX-EYTFO-2026; EY-TFO-2025).
+    (EY's own release says 44% name the inability to execute on a sustainable plan for data, AI and tech) (BTAX-EYTFO-2026; EY-TFO-2025).
   human_checkpoints:
   - Tax staff review reconciliations and the results of automated filing and reporting cycles (SNOWFLAKE-JOB-2026).
   - IT and tax agree ERP changes, upgrades and configurations (APPLE-JOB-2026).
@@ -168,8 +167,7 @@
   notes: Merged from practice-01, discourse-01 and governance-01. Graded B on the Snowflake posting, which describes a team
     already working this way; Fortive and Apple describe roles to build or oversee it, not completed builds, and the Apple
     posting does not mention AI. Postings are self-description, not independently observed practice; no outcome figure is
-    published. The 80% and 91% figures come from the Bloomberg Tax write-up and were not on EY's own release page. The Deloitte
-    item is an alliance announcement.
+    published. The 80% and 91% figures come from the Bloomberg Tax write-up and were not on EY's own release page. The Deloitte item is an alliance announcement. The Fortive posting has expired and was read through a text mirror; the page shows no exact posting date.
 - id: tax-data-technology-02
   title: Agentic data layer that assembles, maps, validates and anomaly-checks ledger data before it reaches the provision
     and compliance engines
@@ -194,8 +192,7 @@
     and mapping' while professionals keep oversight (TR-CORPAI-2026). Deloitte suggests 'AI agents to flag common anomalies
     in source data and account reconciliations for human review' even for departments with limited AI adoption (DELOITTE-TTT-2026).
     PwC Ireland says AI can identify data discrepancies, duplicate transactions and unusual period-on-period movements (PWC-IE-2026).
-    Savant's Spring 2026 release adds connectors to Oracle Fusion, SAP S/4HANA and Microsoft Fabric Lakehouse for similar
-    data work (SAVANT-SPRING-2026).
+    Savant's Spring 2026 release expands its Oracle Fusion and SAP S/4HANA connectors and adds a Microsoft Fabric Lakehouse connector (SAVANT-SPRING-2026).
   outcomes:
   - lever: quality
     description: none published
@@ -224,8 +221,7 @@
   - Tax professionals keep oversight of mapped and imported data (TR-CORPAI-2026).
   - Kognitos says its agent reasons about exceptions but does not describe the human review step in detail (KOGNITOS-2026).
   role_evolution: 'Vendor claim: tax teams spend less time on data assembly and more on forecasting, modelling and advisory
-    work (KOGNITOS-2026). PwC Ireland says tax teams should shift from assembling information to applying judgment and conducting
-    high-quality reviews (PWC-IE-2026).'
+    work (KOGNITOS-2026). EY''s authors write that tax departments should shift from assembling information to applying critical judgment and conducting high-quality reviews (BTAX-EYGRIP-2025); PwC Ireland says AI frees professionals for judgement, interpretation and challenging outputs (PWC-IE-2026).'
   evidence_grade: C
   sources:
   - ref: KOGNITOS-2026
@@ -284,6 +280,14 @@
     date: '2026-05-04'
     access: full
     locator: Section 'A very bad wizard'
+  - ref: BTAX-EYGRIP-2025
+    title: AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way
+    publisher: Bloomberg Tax (EY-authored commentary)
+    type: press
+    url: https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way
+    date: '2025-11-21'
+    access: full
+    locator: Paragraph on upskilling ('shift their focus from assembling information')
   - ref: TR-CORPTAX-2025
     title: 'The GenAI paradox: why most tax departments aren''t using AI yet (State of the Corporate Tax Department 2025)'
     publisher: Thomson Reuters Tax & Accounting
@@ -408,7 +412,7 @@
   human_checkpoints:
   - A tax expert, internal or external, sits on the project team (VERTEX-S4-2026).
   role_evolution: Tax staff take part in ERP implementations and set data requirements for new business lines before launch
-    (TR-GOVERNANCE-2026). Vertex Exchange speakers described the future team as hybrid, comfortable with ERP landscapes, data,
+    (TR-GOVERNANCE-2026). The Vertex Exchange recap says the event's message was that the future tax team is hybrid, comfortable with ERP landscapes, data,
     automation and AI (INNOVATETAX-VXE-2026).
   evidence_grade: B
   sources:
@@ -462,13 +466,10 @@
   change_scope: process
   runtime_class: workflow-automation
   maturity: in-production
-  problem: Large tax departments aggregate data from dozens of templates and sources by hand before provision and return work
-    can begin, with errors and key-person dependency (RGP-2024; CONCENTRIX-2020).
+  problem: Large tax departments gather data from scattered sources by hand before provision and return work can begin. At one telecom and media client, over 200 tax managers filing over 260,000 returns a year worked above capacity, and documentation and tribal knowledge sat with individuals (CONCENTRIX-2020).
   solution: Not generative AI. Tools such as Alteryx and Microsoft Power Query consolidate and reconcile data, document themselves
     visually and feed tax engines. DuPont's global tax accounting manager described combining Alteryx with ONESOURCE to get
-    one source of information during a stalled ERP upgrade and heavy M&A (DUPONT-TR-2021). An RGP client built over 100 process
-    streams (BEAT, state NOL reporting, apportionment) with controls (RGP-2024); a telecom and media client trained over 100
-    staff across more than 80 workstreams (CONCENTRIX-2020).
+    one source of information during a stalled ERP upgrade and heavy M&A (DUPONT-TR-2021). At an automotive client RGP identified over 100 process streams for automation and designed Alteryx flows (BEAT, state NOL reporting, apportionment) with built-in controls (RGP-2024); Concentrix trained over 100 staff at a telecom and media client and consulted on more than 80 workstreams (CONCENTRIX-2020).
   outcomes:
   - lever: capacity
     description: Man-hours removed by automating routine tax processes at an automotive client
@@ -492,7 +493,7 @@
   - Concentrix says visual workflows self-document, but TEI attendees in 2026 still described unexplained workflows left by
     departed builders (CONCENTRIX-2020; TEI-TAXTECH-2026).
   human_checkpoints:
-  - Tax reviewers verify the visual workflows and outputs (CONCENTRIX-2020).
+  - Concentrix says the visual workflows can be verified by any reviewer; no review step is described (CONCENTRIX-2020).
   role_evolution: Concentrix says it trained business users and teams to build on the new capability themselves (CONCENTRIX-2020).
   evidence_grade: B
   sources:
@@ -601,7 +602,7 @@
     access: full
     locator: Section 'A very bad wizard', paragraphs on silent failure
   last_reviewed: '2026-10-17'
-  notes: From practice-02. Single named employer describing itself in a job posting (an aggregator copy, removed 2026-09-15);
+  notes: From practice-02. Single named employer describing itself in a job posting (an aggregator copy listed as valid through 2026-09-15);
     not independently confirmed. The 'AI-first' framing is the employer's own.
 - id: tax-data-technology-07
   title: Tax analysts build data pipelines and small tools with AI coding and low-code agent tools, under review, documentation
@@ -650,7 +651,7 @@
     an AI tool) (TRINST-TEIAUDITOR-2026).
   - Attendees described Alteryx workflows nobody could explain after the builder left (TEI-TAXTECH-2026).
   - The panel deck lists 'governance fog' and underdocumented processes as blockers and shadow usage as a risk (SJSU-TEIHTTI-2025).
-  - Rising token costs were raised as something that could change the economic case for automation (TEI-TAXTECH-2026).
+  - The recap's key insights list rising token costs as a problem that could change the economic case for automation; no figures are given (TEI-TAXTECH-2026).
   human_checkpoints:
   - Review and documentation of any pipeline before it is relied on; the recap names unreviewed, undocumented pipelines as
     the failure mode (TRINST-TEIAUDITOR-2026).
@@ -869,8 +870,7 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: Month-end sales tax reconciliation between source transactions, tax-engine output and returns is done in manual
-    spreadsheets (SAVANT-ROVER-2026), and in-house teams reconcile data across several ERPs and source documents by hand for
-    output that must hold up in an audit (SAVANT-2026).
+    spreadsheets (SAVANT-ROVER-2026).
   solution: 'Rover, a pet-care marketplace, rebuilt its monthly sales tax reconciliation in Savant: the workflow pulls data
     from systems including Avalara, reviews taxability, sourcing and tax-rate reasonability, matches transactions, reconciles
     and produces audit-ready outputs on a schedule (SAVANT-ROVER-2026). Savant also demonstrated multi-system reconciliation
@@ -898,10 +898,9 @@
   - The measured process is sales tax reconciliation, an indirect-tax process, so the grade is capped at B for this module.
   - Savant's TEI release is promotional and published no result (SAVANT-2026).
   human_checkpoints:
-  - Outputs are produced on a schedule and reviewed by the tax accountant; exceptions are handled by staff (SAVANT-ROVER-2026;
-    SAVANT-CLAUDE-2026).
+  - Not described for Rover; Savant says exceptions can be routed for human review before results move downstream (SAVANT-CLAUDE-2026).
   role_evolution: Rover's senior tax accountant describes the workflow as running on a schedule and matching transactions
-    automatically, so the monthly rebuild of the process is no longer manual work (SAVANT-ROVER-2026).
+    automatically, and Savant frames the result as a recurring workflow that no longer has to be rebuilt each month (SAVANT-ROVER-2026).
   evidence_grade: B
   sources:
   - ref: SAVANT-ROVER-2026
@@ -931,7 +930,7 @@
   last_reviewed: '2026-10-17'
   notes: Merged from practice-06 and discourse-04. Named customer, vendor-published figures; the webinar was announced for
     2026-03-19 and no recording or independent check was found. Oxford Industries' reconciliation work with Savant is tax-compliance-corporate-10;
-    sales tax filing agents belong to indirect-tax (tax-indirect-tax-02).
+    sales tax filing agents belong to indirect-tax (tax-indirect-tax-02). The release page header shows 6 March 2026; the dateline used here is 4 March.
 - id: tax-data-technology-10
   title: 'Idea: multi-agent workflows that carry data from provision to return and credits, with people handling exceptions'
   archetype: tax
@@ -1054,7 +1053,7 @@
   - Independent verification of extracted figures against source documents, and escalation when documents are complex or ambiguous
     (AICPA-WERFEL-2026).
   - Review of extracted amounts and dates, and of any drafted response (BTAX-EYGRIP-2025).
-  role_evolution: Not described in the sources beyond staff reviewing extracted data (TEI-TAXTECH-2026).
+  role_evolution: Not described for this step; EY's authors say tax professionals shift to judgment, exception management and model tuning as AI takes over rote compliance tasks (BTAX-EYGRIP-2025).
   evidence_grade: C
   sources:
   - ref: TRINST-TEIAUDITOR-2026
@@ -1133,9 +1132,7 @@
     around that interface. ViDA digital reporting requirements for cross-border B2B transactions take effect from 2030-07-01,
     and by 2035-01-01 Member States with domestic real-time transaction reporting must align with the EU model (EC-VIDA-2026).
     The UK will introduce mandatory e-invoicing for all VAT invoices from 2029 (UK-EINV-2025); a trade-press report says the
-    23 June 2026 UK announcement chose Peppol and initially has no e-reporting to HMRC (FISCAL-UK-2026). OECD Forum on Tax
-    Administration commissioners agreed in November 2025 to move toward pilots of real-time automated sharing of secure information
-    (OECD-FTA-2025).
+    23 June 2026 UK announcement chose Peppol and initially has no e-reporting to HMRC (FISCAL-UK-2026). At their November 2025 plenary, heads of 49 tax administrations in the OECD Forum on Tax Administration agreed to deepen co-operation on real-time information sharing and backed the development of pilot projects (OECD-FTA-STATEMENT-2025).
   outcomes:
   - lever: quality
     description: 'Independent study of Peru''s staggered mandate: e-invoicing raised reported figures in the first year after
@@ -1208,8 +1205,16 @@
     type: regulator
     url: https://www.oecd.org/en/about/news/announcements/2025/11/heads-of-tax-administrations-agree-further-work-on-collaborative-projects-to-reduce-compliance-burdens-and-deepen-co-operation-in-tackling-tax-gaps.html
     date: '2025-11-20'
+    access: search-only
+    locator: Blocked by a bot check on every route tried; seen only in search results
+  - ref: OECD-FTA-STATEMENT-2025
+    title: FTA Plenary Statement of Outcomes (18th Plenary, Cape Town, 18-20 November 2025)
+    publisher: OECD Forum on Tax Administration (copy hosted by Japan's National Tax Agency)
+    type: regulator
+    url: https://www.nta.go.jp/taxes/shiraberu/kokusai/fta/press/pdf/20251125_final.pdf
+    date: '2025-11-20'
     access: full
-    locator: First bulleted outcome
+    locator: First bullet under 'At the Cape Town Plenary we therefore agreed to'
   - ref: TRINST-TEIAUDITOR-2026
     title: '2026 TEI Tax Technology Seminar: What the auditor already knows'
     publisher: Thomson Reuters Institute
@@ -1380,8 +1385,7 @@
     e-invoice can stop shipments and delay revenue recognition (INNOVATETAX-VXE-2026). Vertex-affiliated commentary calls
     ERP integration the real bottleneck (VERTEX-VIDA-2026).
   solution: Avalara says it uses AI to map standardised invoice fields to country-specific compliance requirements, with visual
-    mapping tools and minimal customisation (AVALARA-AGENTIC-2025). Sovos describes AI-powered mappings and 'problem-to-resolution
-    guidance' in which AI diagnoses root causes, proposes fixes and executes corrections once a user approves; the release
+    mapping tools and minimal customisation (AVALARA-AGENTIC-2025). Sovos describes AI-powered mappings for tax determination and filing, and 'problem-to-resolution guidance' in which AI diagnoses root causes, proposes fixes and executes corrections once a user approves; the release
     says capabilities are 'available now or rolling out' (SOVOS-SOVI-2026). On the ERP side, Roedl describes SAP Document
     and Reporting Compliance generating, validating and transmitting e-documents (ROEDL-DRC-2026). Sovos reports running France's
     September 2026 mandate in production with a 1.6% invoice rejection rate; its documents do not say how much of that is
@@ -1403,11 +1407,10 @@
     for late submissions (TRINST-TEIAUDITOR-2026; SOVOS-FRANCE-GOLIVE-2026).
   - Sovos says every recommendation, approval and action is documented and that customer data stays inside its security perimeter
     and is not used to train external models; not independently tested (SOVOS-SOVI-2026).
-  - Clearance timing leaves little room for AI error; a wrong correction can repeat a rejection (TRINST-TEIAUDITOR-2026).
   human_checkpoints:
   - User approval before a correction is executed (SOVOS-SOVI-2026).
   - Review steps for AI-generated field mappings are not described in the Avalara release (AVALARA-AGENTIC-2025).
-  role_evolution: Vertex Exchange speakers said the future indirect tax team is hybrid, with knowledge of legislation, systems,
+  role_evolution: The Vertex Exchange recap says the event's message was that the future indirect tax team is hybrid, with knowledge of legislation, systems,
     process design and data flows (INNOVATETAX-VXE-2026).
   evidence_grade: C
   sources:
@@ -1495,8 +1498,7 @@
   runtime_class: background-agent
   maturity: announced
   problem: Rule and format changes must be mapped to each company's entities, registrations and settings, and finding and
-    fixing configuration errors depends on support tickets and hand-offs (SOVOS-SOVI-2026). Batch filing cycles surface errors
-    late; Thomson Reuters says teams that once had 12 to 18 months to reconstruct audit documentation now need it accurate
+    fixing configuration errors depends on support tickets and hand-offs (SOVOS-SOVI-2026). EY's authors contrast continuous monitoring with batch filings (BTAX-EYGRIP-2025); Thomson Reuters says teams that once had 12 to 18 months to reconstruct audit documentation now need it accurate
     when generated (TR-GOVERNANCE-2026).
   solution: Sovos's March 2026 announcement describes Sovi AI diagnosing root causes of compliance errors, proposing fixes
     and executing corrections once approved, proactive issue detection before filing deadlines, and regulatory intelligence
@@ -1578,7 +1580,7 @@
   runtime_class: background-agent
   maturity: emerging
   problem: In jurisdictions with mature continuous transaction controls, authorities arrive at audits with structured transaction
-    data they have already analysed; panelists said they know more about a company's transactions than its own team (TRINST-TEIAUDITOR-2026).
+    data they have already analysed; a panel speaker said they know more about the transactions than the company's own team (TRINST-TEIAUDITOR-2026).
     Indirect tax teams 'need to be able to show that what was calculated is exactly what was invoiced', and that what was
     invoiced was reported (INNOVATETAX-VXE-2026).
   solution: Idea. Reconcile every transaction across calculation, invoice, report and the authority's record continuously,
@@ -1605,8 +1607,7 @@
     responded 'Do not do this' (TRINST-TEIAUDITOR-2026).
   human_checkpoints:
   - Exceptions go to the appropriate human reviewer (DELOITTE-TTT-2026).
-  role_evolution: Deloitte describes the department's role shifting from preparation to oversight and interpretation in its
-    high-adoption scenarios (DELOITTE-TTT-2026); a TEI panelist described a shift from preparing returns to answering notices
+  role_evolution: Deloitte describes the department's role shifting from preparation to oversight and interpretation in its fourth scenario (DELOITTE-TTT-2026); a TEI panelist described a shift from preparing returns to answering notices
     (TRINST-TEIAUDITOR-2026).
   evidence_grade: D
   sources:
@@ -1665,7 +1666,7 @@
     gives Claude or ChatGPT read-only access to a customer's nexus, transactions, filings, registrations, products, connections
     and account data through 46 tools in nine areas, so users can ask questions such as which filings are due this month (KINTSUGI-MCP-2026).
     Avalara's 2025 blog describes an agent answering the status of a sales tax return through its MCP servers (AVALARA-MCP-2025).
-    Anrok is also reported to offer an MCP server (search extract only) (ANROK-MCP-2026).
+    Anrok's product page says its MCP server both answers questions and takes actions such as mapping a product, adding a customer or updating a transaction, under scoped OAuth 2.1 credentials (ANROK-MCP-2026).
   outcomes:
   - lever: experience
     description: none published
@@ -1716,11 +1717,10 @@
     type: vendor
     url: https://www.anrok.com/product/mcp
     date: '2026'
-    access: search-only
-    locator: Search extract only
+    access: full
+    locator: FAQ answers 1, 3 and 4 (undated product page, read through a text mirror on 2026-10-17)
   last_reviewed: '2026-10-17'
-  notes: From practice-11. Vendor announcements; no customer use. Anrok's behaviour is known from a search extract only and
-    is not relied on. The write-capable version is tax-data-technology-18; the indirect-tax engine side is tax-indirect-tax-16.
+  notes: From practice-11. Vendor announcements; no customer use. Anrok's product page, read through a text mirror, describes a write-capable server, which belongs with tax-data-technology-18. The write-capable version is tax-data-technology-18; the indirect-tax engine side is tax-indirect-tax-16.
 - id: tax-data-technology-18
   title: Company agents call tax engines through vendor MCP servers under least-privilege scopes and full tool-call logging
   archetype: tax
@@ -1741,10 +1741,10 @@
   solution: Avalara says it ships MCP servers for AvaTax, Returns, E-Invoicing and Live Reporting, registrations and licences,
     exemption certificates, tax content, item classification and cross-border; its examples include an accounts-payable agent
     that validates a vendor invoice, checks for an exemption certificate and files the resulting use tax (AVALARA-AGENTIC-2025;
-    AVALARA-MCP-2026). Avalara NEXT on 2026-03-26 was a virtual developer and partner event on agent-based architectures (AVALARA-NEXT-2026).
+    AVALARA-MCP-2026). Avalara announced NEXT, a virtual developer and partner event on agentic tax and compliance scheduled for 2026-03-26 (AVALARA-NEXT-2026).
     Sovos says it is developing a Sovos MCP Gateway and expects agent-to-agent (A2A) orchestration over time (SOVOS-SOVI-2026).
     Vertex says its Dynamics 365 agent was built with MCP servers (VERTEX-DATASHEET-2025), and PwC's Agent OS connects agents
-    to internal data through APIs or MCP (PWC-MEGNA-2025). The MCP specification says servers must not accept tokens not issued
+    to internal data through APIs or MCP (PWC-MEGNA-2025). Anrok says its MCP server can also act, for example mapping a product or updating a transaction (ANROK-MCP-2026). The MCP specification says servers must not accept tokens not issued
     for them and that proxy servers must guard against the confused deputy problem (MCP-SPEC-2025). MCP was contributed to
     the Linux Foundation's Agentic AI Foundation in December 2025 (LF-AAIF-2025) and A2A to the Linux Foundation in June 2025
     (LF-A2A-2025).
@@ -1775,9 +1775,7 @@
   - Not specified for Avalara's write tools beyond the advice on scopes and idempotency; Sovos plans governed, human-approved
     actions over time (AVALARA-MCP-2026; SOVOS-SOVI-2026).
   - Vertex's agent keeps human review checkpoints for high-impact changes (VERTEX-DATASHEET-2025).
-  role_evolution: Tax technology staff become owners of agent access, scopes and logs for tax platforms (AVALARA-MCP-2026).
-    Avalara frames developers and partners as the audience; tax staff would consume compliance through their own agents rather
-    than the vendor application (AVALARA-MCP-2026; SOVOS-SOVI-2026).
+  role_evolution: Avalara addresses its MCP primer to developers and partners, who would hold the scopes and logs (AVALARA-MCP-2026); no source says who in a tax department owns agent access. Sovos says it is architecting for compliance consumed through agents as well as applications (SOVOS-SOVI-2026).
   evidence_grade: C
   sources:
   - ref: AVALARA-AGENTIC-2025
@@ -1878,6 +1876,14 @@
     date: '2025-07-22'
     access: full
     locator: Abstract
+  - ref: ANROK-MCP-2026
+    title: Anrok MCP server (product page)
+    publisher: Anrok
+    type: vendor
+    url: https://www.anrok.com/product/mcp
+    date: '2026'
+    access: full
+    locator: FAQ answers 3 and 4 (undated product page, read through a text mirror on 2026-10-17)
   last_reviewed: '2026-10-17'
   notes: 'Merged from practice-12, discourse-08 and governance-09. Vendor-only evidence: no customer, partner or in-house
     team was found using a tax MCP server, so maturity is announced. The landscape said Sovos ''added MCP and A2A interoperability'';
@@ -1937,7 +1943,7 @@
   human_checkpoints:
   - Formal human-in-the-loop review of AI output before it informs a tax decision (FONOA-2026).
   - Named ownership of each compliance decision and documented sign-off (TR-GOVERNANCE-2026).
-  role_evolution: Reviewers carry documented responsibility for AI-suggested positions (AICPA-WERFEL-2026); Thomson Reuters
+  role_evolution: The register calls for mandatory human validation of AI-suggested positions and a record of which suggestions were accepted, modified or rejected (AICPA-WERFEL-2026); Thomson Reuters
     describes named ownership of each compliance decision with documented sign-off (TR-GOVERNANCE-2026).
   evidence_grade: C
   sources:
@@ -2231,12 +2237,10 @@
   change_scope: model
   runtime_class: shared-team-skills
   maturity: piloting
-  problem: Recurring income tax work (compliance, provision, close and reporting) runs on spreadsheets, trackers and hand-offs
-    that are slow to review and hard to scale (OPENAI-USTAXOPSJOB-2026).
+  problem: OpenAI's postings describe moving recurring income tax work off spreadsheet preparation and spreadsheet trackers, and making handoffs and documentation easier to review and scale (OPENAI-USTAXOPSJOB-2026; OPENAI-DIRECTTAXJOB-2026).
   solution: OpenAI's tax team postings describe a move from a traditional compliance and provision function to a data-driven,
     AI-first model in which preparation is increasingly automated in database-driven workflows; staff focus on review, validation
-    and improvement of tax outputs, build data models and light automation, and use AI tools for analysis, documentation and
-    mappings (OPENAI-USTAXOPSJOB-2026). The team also wants a leader who defines when AI can safely speed up work and when
+    and improvement of tax outputs, build data models and light automation, and use AI tools for analysis and documentation (OPENAI-USTAXOPSJOB-2026); the direct tax posting adds reconciliations, mappings and exception handling (OPENAI-DIRECTTAXJOB-2026). The team also wants a leader who defines when AI can safely speed up work and when
     human review or extra controls are needed (OPENAI-DIRECTTAXJOB-2026). The TEI recap says OpenAI sent four members of its
     tax department to demonstrate live automation pipelines (TEI-TAXTECH-2026).
   outcomes:
@@ -2325,8 +2329,7 @@
     or reactive end of a maturity curve (57% the year before) and 22% track no technology performance metrics (TR-REBRAND-2026).
     In the 2025 Thomson Reuters survey, 58% of corporate tax departments called themselves under-resourced, up from 51% (TR-CORPTAX-2025).
   solution: Set up a central team that owns tax technology, data and automation, often with a hub for standard processes.
-    Unilever Ice Cream's global head of tax, treasury and insurance, Anna Elphick, described in a CIOT DITT Talk episode (2025-08-03)
-    the company's tax transformation, including setting up a centralised tax operations centre to drive efficiency, accuracy
+    In a CIOT DITT Talk episode (2025-08-03), Anna Elphick, Global Head of Tax, Treasury and Insurance at Unilever Ice Cream, discussed Unilever's global tax transformation, including setting up a centralised tax operations centre to drive efficiency, accuracy
     and control across jurisdictions (CIOT-DITT-2025). A German head of tax interviewed by EY said his company has a dedicated
     AI team helping tax with compliance and reporting (BTAX-EYTFO-2026). In KPMG Germany's quick survey, 40% expect more use
     of shared service centres (KPMG-DE-2026). Deloitte advises close collaboration with finance and IT (DELOITTE-LU-2025).
@@ -2369,7 +2372,7 @@
     who bridge tax requirements and technical delivery (PWC-IE-2026). In EY''s survey (as written up by Bloomberg Tax), 89%
     are upskilling existing staff, 81% are hiring people with skills other than tax technical capability and 62% are redefining
     roles (BTAX-EYTFO-2026). KPMG Germany: 58% expect domestic tax headcount to stay constant, 72% abroad (KPMG-DE-2026).
-    A law professor argues AI will not shrink corporate tax teams much because AI cannot bear culpability; only the abstract
+    Michael Sala argues in Tax Notes State that AI will not shrink corporate tax teams much because AI cannot bear culpability; only the abstract
     was read (SALA-TAXNOTES-2026).'
   evidence_grade: B
   sources:
@@ -2478,8 +2481,7 @@
     access: full
     locator: Abstract
   last_reviewed: '2026-10-17'
-  notes: 'Merged from discourse-14 and governance-13. Graded B on one named deployment (Unilever Ice Cream''s tax operations
-    centre, from a podcast description; no measurements; the description does not say how much of it is AI). Survey figures
+  notes: 'Merged from discourse-14 and governance-13. Graded B on one named deployment (Unilever''s centralised tax operations centre, described by Unilever Ice Cream''s head of tax in a podcast episode listing; no measurements; the description does not say how much of it is AI). Survey figures
     are context and associations, not outcomes of this change. The TRI/TEI report itself was not opened; its figures come
     from Thomson Reuters'' article about it. Pattern ''other'': an operating-model change.'
 - id: tax-data-technology-24
@@ -2500,11 +2502,11 @@
   problem: In-house teams say they struggle to build their own solutions; a head of finance at a global e-commerce and cloud
     company told EY that internal builds would often have been better done with an external provider (BTAX-EYTFO-2026). In
     a Thomson Reuters 2025 report relayed by its tax blog, 77% of business tax departments wanted their tax service providers
-    to use generative AI, yet 59% were not sure whether their providers were using it (TR-TENSIONS-2025).
+    to use generative AI, yet 59% 'aren't sure if their companies are using GenAI', which the blog presents as a provider-transparency gap (TR-TENSIONS-2025).
   solution: Use a third party that invests in AI and data tooling, or a managed service where authorities cannot interact
     in real time. In EY's survey, 78% said a third-party provider with deep AI capabilities would moderately or significantly
     benefit their tax function (BTAX-EYTFO-2026). Deloitte lists 'a managed service or selective outsourcing with specialist
-    resources' as an option (DELOITTE-TTT-2026). Vertex Exchange speakers said most large implementations are now partner-led
+    resources' as an option (DELOITTE-TTT-2026). The Vertex Exchange recap says most large implementations are now partner-led
     (INNOVATETAX-VXE-2026). The AICPA-published risk register's illustrative controls include vetting AI vendors for data
     retention and training practices, contract terms that bar vendor training on client data, and protections for data portability
     and notice (AICPA-WERFEL-2026); IRS OPR says outsourced or third-party AI tools should be vetted (IRS-OPR-2026).
@@ -2527,8 +2529,7 @@
     and the OPR alert are written for practitioners, not in-house departments (AICPA-WERFEL-2026; IRS-OPR-2026).
   human_checkpoints:
   - In-house review of provider output; the EY write-up says the business should apply critical human review (BTAX-EYTFO-2026).
-  role_evolution: Internal teams focus on advisory work and oversight, per the EY write-up (BTAX-EYTFO-2026). Deloitte's fourth
-    scenario splits planning between largely automated tax operations and tax advisory (DELOITTE-TTT-2026).
+  role_evolution: The EY write-up says co-sourcing frees internal teams to focus on advisory work (BTAX-EYTFO-2026). In Deloitte's fourth scenario routine tax operations are largely automated and the department puts more emphasis on strategic and advisory work (DELOITTE-TTT-2026).
   evidence_grade: C
   sources:
   - ref: BTAX-EYTFO-2026
