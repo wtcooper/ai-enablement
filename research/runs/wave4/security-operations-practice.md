@@ -180,7 +180,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
   notes: "Vendor-authored. No false-negative or override rate."
 
 - id: security-operations-06
-  title: "SOCless" model: AI investigates all alerts and pages senior engineers only for serious events
+  title: "A SOCless model: AI investigates all alerts and senior engineers are paged only for serious events"
   archetype: security
   module: operations
   function: technology-it
@@ -253,7 +253,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
   problem: "A temporary, noisy conference network has short baselines and unmanaged devices, so activity that is alarming on a corporate network can be normal there."
   solution: "The Splunk Enterprise Security AI Triage Agent investigates findings as they appear in the analyst queue and gives a suggested disposition, rationale and next steps before a human takes ownership. A blended Tier 1, 2, 3 and detection-engineering team validates; a dashboard tracks agent activity, confidence and hand-offs."
   outcomes:
-    - { lever: capacity, description: "Share of findings with triage analysis from the agent over the whole conference including set-up days", figure: "94% triage analysis coverage", measures: "dashboard snapshot of findings that received agent analysis; the authors say these are event-environment observations, not product benchmarks", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026 }
+    - { lever: capacity, description: "Triage analysis coverage shown on the operations dashboard over the whole conference including set-up days", figure: "94% triage analysis coverage", measures: "'Triage analysis coverage' on the dashboard snapshot; the post does not define numerator and denominator, and says these are event-environment observations, not product benchmarks", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026 }
     - { lever: capacity, description: "Agent activity counts", figure: "1,503 AI events; 7,605 SPL queries; 26,207 pieces of evidence; 11,250 threat-intelligence lookups", measures: "activity counts, not accuracy", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026 }
   prerequisites:
     - "A single evidence platform (detections, risk, investigations, searches) so analysts can inspect what the agent used"
@@ -607,7 +607,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
     - "Not stated in the postings. Cloudflare's posting lists agentic AI experience as 'preferred'"
   human_checkpoints:
     - "Not stated"
-  role_evolution: "Detection and response roles are becoming engineering roles; Robinhood advertises a Staff-level 'Security Operations AI Tech Lead' to own an AI roadmap and 'build a synthetic workforce' (ROBINHOOD-JOB-SECOPSAI-2026)."
+  role_evolution: "Detection and response roles are becoming engineering roles; Robinhood advertises a Senior Staff role as 'Security Operations AI Tech Lead' to own an AI roadmap and 'build a synthetic workforce' (ROBINHOOD-JOB-SECOPSAI-2026)."
   evidence_grade: B
   sources:
     - { ref: EXPEL-JOB-DR-2026, title: "Senior Detection & Response Engineer", publisher: Expel (Greenhouse job board), type: job-posting, url: "https://expel.com/about/career-listing/8836996002", date: 2026-09-26, access: full, locator: "Requirements list (first published date from the job API)" }
@@ -709,7 +709,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
 
 ### Workforce and role effects
 
-- ISC2 (2025-12-04): AI is the top skills need (41%) ahead of cloud (36%); roles such as SOC analyst and incident responder are "evolving"; professionals expect new roles to emerge rather than job loss (`ISC2-WORKFORCE-2025`; the 41% figure comes via the landscape file and the Dropzone article, which quote it).
+- ISC2 (2025-12-04): AI is the top skills need (41%) ahead of cloud (36%); roles such as SOC analyst and incident responder are "evolving"; professionals expect new roles to emerge rather than job loss (`ISC2-WORKFORCE-2025`; 41% is the share of respondents citing AI as the most pressing skills need, on the ISC2 page).
 - Role shift in postings: detection and response engineers asked to build agents and use AI coding tools (`ROBINHOOD-JOB-DR-2026`, `EXPEL-JOB-DR-2026`, `DATABRICKS-JOB-IR-2026`); a dedicated AI Tech Lead for SecOps (`ROBINHOOD-JOB-SECOPSAI-2026`).
 - Vendor-imagined future roles (not evidence of practice): Dropzone describes a "SOC Agent Engineer" and an "AI SOC Operator" owning agent configuration and authorisation policy by 2030 (`DROPZONE-JD2030-2026`).
 - Ramp-up and tier shifts: juniors working at Tier-2 level with agent support (`SPLUNK-CISCOLIVE-2026`); engineers on call instead of analysts (`DROPZONE-MYSTEN-2026`).
@@ -723,7 +723,7 @@ Use cases by grade: A = 7, B = 9, C = 4, D = 0 (20 total).
 - Trust and hallucination: a ZoomInfo leader contrasts decades of not trusting SOC staff with trusting a computer that is "known to hallucinate" (`EXPEL-3LEADERS-2026`).
 - Missed attacks: false negatives are the worst case for an AI SOC agent (`DROPZONE-GARTNERHC-2026`); the benchmark above shows high miss rates (`ARXIV-2610.10608`).
 - Low-signal summaries: Elastic analysts stopped reading AI summaries that were wrong too often (`ELASTIC-ACCURACY-2026`).
-- Agent washing (`DROPZONE-GARTNERHC-2026`) and the "agentic SOC" label being used loosely (`FORRESTER-RSAC-2026`, via landscape; not reopened).
+- Agent washing: Gartner's Hype Cycle warns four times about GenAI, AI and agent washing, per Dropzone's summary (`DROPZONE-GARTNERHC-2026`).
 
 ### Interview probes for an advisor
 
@@ -808,7 +808,6 @@ Type counts (distinct refs, 62 total, including 1 search-only): vendor 29, acade
 | CLOUDFLARE-JOB-CMDC-2026 | Response Engineer - Cloudflare Managed Defense Center | Cloudflare | job-posting | https://boards.greenhouse.io/cloudflare/jobs/8222732 | 2026-09-24 | full |
 | FIGMA-JOB-SECOPS-2026 | Manager, Security Operations | Figma | job-posting | https://boards.greenhouse.io/figma/jobs/6015609004 | 2026-06-05 | full |
 | ANTHROPIC-JOB-DRPLATFORM-2026 | Security Software Engineer, Detection & Response Platform | Anthropic | job-posting | https://job-boards.greenhouse.io/anthropic/jobs/4595463008 | 2025-03-24 (updated 2026-08-24) | full |
-| FORRESTER-RSAC-2026 | RSAC 2026: An AI Coming Of Age Story Without The Romance | Forrester | vendor | https://www.forrester.com/blogs/rsac-2026-an-ai-coming-of-age-story-without-the-romance | 2026-03 | search-only (carried from landscape; not reopened) |
 
 ## 6. Gaps
 
