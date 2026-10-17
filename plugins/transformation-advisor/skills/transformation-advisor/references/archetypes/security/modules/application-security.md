@@ -221,7 +221,7 @@ decisions; certifying origin of contributed code.
   testing, detection or remediation work [SAMSARA-JOB-APPSEC-2026, CLOUDFLARE-JOB-PSE-2026, COINBASE-JOB-PSE-2026,
   OKTA-JOB-PSE-2026, MONGODB-JOB-PSE-2026, STRIPE-JOB-VM-2026]. Datadog hires AppSec for agentic apps (ai-security)
   [DATADOG-JOB-APPSEC-2026].
-- **Reviewers carry more.** Reviewer load doubled at one company; Semgrep says PRs with written human feedback fell
+- **Reviewers carry more.** Reviewer load roughly doubled at one company; Semgrep says PRs with written human feedback fell
   from 39% to 21% (not verified in the paper) [ARXIV-2607.01904, SEMGREP-ENDCR-2026].
 - **Experts encode themselves as skills.** Trail of Bits: about 5% on board a year earlier; four psychological
   barriers designed against; status moves to the people who build tools (`#17`).
