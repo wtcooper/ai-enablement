@@ -491,7 +491,7 @@
     Trivium's TP manager says reclaimed time goes to process optimisation, segmentation and reporting rather than
     reviews (AIBIDIA-TRIVIUM-2026). Genan reports the process became less dependent on individuals after centralising
     documentation (AIBIDIA-GENAN-2026).
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - {ref: AIBIDIA-TRIVIUM-2026, title: "How Trivium Packaging Cut TP Documentation Time by 80% with Aibidia", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/case-studies/how-trivium-packaging-cut-tp-documentation-time-by-80-percent-with-aibidia", date: "2026-10-17", access: full, locator: "opening quote and 'With Aibidia in place' list; page undated, retrieval date used; customer since 2023"}
     - {ref: AIBIDIA-FORTUM-2026, title: "How Fortum transforms their transfer pricing processes", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/case-studies/aibidia-helps-fortums-global-tax-team-transform-their-transfer-pricing-processes", date: "2026-10-17", access: full, locator: "section 'Achieving 65% automation'; page undated"}
@@ -506,7 +506,10 @@
     Grade A rests on named-customer statements published by the vendor (vendor-published, not independent). The
     sources do not establish that any step uses generative AI: this is data-driven document automation, and the grade
     applies to that. The discourse angle read the Trivium page and excluded it for lack of a date and of an AI link;
-    treat it as the data foundation that AI drafting (tax-transfer-pricing-07) would sit on.
+    treat it as the data foundation that AI drafting (tax-transfer-pricing-07) would sit on. Regraded B on 2026-10-17
+    under the measured-outcome rule: Trivium's 80% saving rests on its manager's recollection of a two-to-five-day
+    (up to six-week) baseline, and Fortum's 65% automation rate and 'over 8,000' transactions are a manager's quoted
+    statements with no denominator or measurement described.
 
 - id: tax-transfer-pricing-10
   title: First-draft intercompany agreements from the TP policy, and clause extraction from contracts

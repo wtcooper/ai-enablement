@@ -622,7 +622,7 @@
     roles; it is hiring engineers it would not previously have hired into assurance and wants dual-track CPA and
     data-science recruits (CFOBREW-PWC-2025; PWC-AT-2025). At Sanville, first-year staff now do complex revenue
     testing because reviewers have bandwidth to guide them (FIELDGUIDE-SANVILLE-2026).
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "section 'Introducing New AI-powered Audit Solutions' (Audit Intelligence Test; Oberlander quote)" }
     - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraphs on Evidence Match (Maryanski) and on hiring (Panson)" }
@@ -644,7 +644,7 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Grade A rests on two named-firm figures published by vendors (Oberlander, one practitioner's estimate; Sanville,
-    a vendor case study); none measures match accuracy. This entry holds the measured matching figures: they are
+    a vendor case study); none measures match accuracy. This entry holds the quantified matching figures: they are
     tests of details. assurance-controls-testing-07 covers the controls variant of the same step and points here for
     figures. KPMG's expense-vouching agents are in #20. PwC's 'already has' Evidence Match is PwC's own claim; the
     20 versus 30 document-type accounts conflict on timing. PwC's Simplified Audit - Execute, which reads supporting
@@ -652,7 +652,10 @@
     Reuters' 'up to 70%' belongs to a different product (#14). The Sanville page is undated (2026 inferred). Checked
     2026-10-17: the Oberlander quotation and all Sanville figures match the sources, and both describe
     sample-to-evidence tracing (tests of details); Oberlander is described only as the owner of the firm, not as a
-    sole practitioner.
+    sole practitioner. Regraded B on 2026-10-17 under the measured-outcome rule: the speed and realisation figures are
+    practitioners' recollections or rough estimates quoted by vendors ('what used to take me two full days', 'hours to
+    minutes', 'roughly $150-200'), and the zero-comment-forms result is one inspection outcome relayed by the firm via
+    the vendor, not published by the PCAOB and not a measure of the matching step.
 
 - id: assurance-substantive-testing-11
   title: Firm-built Excel agents for evidence-heavy tests of details, with reviewer-side agents (FGMK on DataSnipper)
@@ -704,7 +707,7 @@
   role_evolution: >-
     FGMK splits agents by role (preparer, reviewer, QC) and manages who builds and who uses them
     (DATASNIPPER-FGMK-2026).
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - { ref: DATASNIPPER-FGMKEXCEL-2026, title: "Excel Agents deliver more precise evidence and faster testing (FGMK success story)", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/fgmk", date: "2026-02-03", access: full, locator: "key results; use cases; pilot-group paragraph (date from DataSnipper's resource listing; page itself undated)" }
     - { ref: DATASNIPPER-CONNECT-2026, title: "DataSnipper Connect New York 2026: 6 Takeaways on AI and Auditing", publisher: "DataSnipper", type: conference, url: "https://www.datasnipper.com/resources/the-6-biggest-takeaways-from-datasnipper-connect-new-york-2026", date: "2026", access: full, locator: "Takeaway 1 (page undated; refers to a September 2026 release)" }
@@ -718,7 +721,10 @@
     Connect recap repeats it without that context. Maturity set to piloting because FGMK's use is described as a
     design-partner pilot. Alwin itself is a newly launched product. The QC-agent use is covered in
     quality-management. DataSnipper's vendor claims (600,000+ users in 175 countries, all Big Four as customers,
-    $1.4B of productivity savings in 2025) are in #12's sources and are not independently measured.
+    $1.4B of productivity savings in 2025) are in #12's sources and are not independently measured. Regraded B on
+    2026-10-17 under the measured-outcome rule: the FGMK (30-45 minutes to about 5) and CROP (around 80% faster, hours
+    to minutes) figures are approximate before-and-after estimates stated by the vendor, with no measurement, sample or
+    method described.
 
 - id: assurance-substantive-testing-12
   title: Excel-embedded evidence snipping and AI extraction for tie-out and vouching (DataSnipper)

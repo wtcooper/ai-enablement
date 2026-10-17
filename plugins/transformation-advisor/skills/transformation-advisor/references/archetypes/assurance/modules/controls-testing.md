@@ -67,7 +67,7 @@ or a process that stops existing). All four have evidence; automate and delegate
 - Delegate: `#05` agents read unstructured evidence, test attributes, cite sources and draft workpapers; Reddit
   automated 175 controls in 90 days, -60% time per control (vendor-published, CAE-confirmed).
 - Automate: `#06` Microsoft's two-agent ITGC change-management tester (850 h and $185K a year). `#07` agents match
-  client documents to samples; the measured cases are tests of details (`assurance-substantive-testing-10`).
+  client documents to samples; the named cases are tests of details (`assurance-substantive-testing-10`).
 - Reinvent: `#09` continuous, year-round testing; internal audit tests the first line's monitoring (Klaviyo, Snowflake).
 - Ideas: `#23` screen evidence for fabrication and hidden instructions; `#25` synthetic data to stress-test controls pre-go-live.
 

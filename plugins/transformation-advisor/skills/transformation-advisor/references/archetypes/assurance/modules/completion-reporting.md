@@ -243,8 +243,8 @@ The loudest completion discourse is not about AI doing the work but about who an
 
 ## 11. Common objections
 
-- **"The figures are vendor marketing."** Mostly true: the only named, measured results (HLB, MHA) are
-  vendor-written case studies. Ask for a parallel run on the firm's own files; a TR executive says firms must build
+- **"The figures are vendor marketing."** Mostly true: the only named results are vendor-written case studies,
+  MHA's from a timed trial and HLB's an estimate. Ask for a parallel run on the firm's own files; a TR executive says firms must build
   their own testing muscle, not rely on demos [TR-STATE-2026].
 - **"A checklist isn't judgment."** Correct: a checklist proves coverage, not adequacy [FIELDGUIDE-DISC-2026]. Use AI
   for matching and tie-out, and spend freed senior time on the conditional calls (`#04` stays with people).

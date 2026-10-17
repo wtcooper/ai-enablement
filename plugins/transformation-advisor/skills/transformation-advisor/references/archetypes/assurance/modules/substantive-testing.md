@@ -102,7 +102,7 @@ entry has a measured result.
   illustrative client; process scope).
 - **Vouching, matching and tie-out.** Automate: `#10` agents match sampled items to documents and bank activity
   (Oberlander about 16 hours to 5-6 per engagement; Sanville hours to minutes; PwC Evidence Match). This is the
-  home of these measured figures; `assurance-controls-testing-07` covers the same step in tests of controls. `#13` PwC fund-audit
+  home of these named (estimated, grade B) figures; `assurance-controls-testing-07` covers the same step in tests of controls. `#13` PwC fund-audit
   tie-out (pilot). Improve: `#11` FGMK's firm-built Excel agents (pilot group: 30-45 minutes to about 5 minutes of
   review per selection, plus reviewer-side agents); `#12` DataSnipper evidence snipping and extraction (assist).
 - **Contracts, revenue and judgment-heavier tests.** Improve: `#14` contract and lease review (FRC design for revenue

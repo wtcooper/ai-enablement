@@ -50,7 +50,7 @@ TP teams and advisory firms. Tax authorities' AI for picking TP audits is in `ta
 
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
 multi-step outcome), reinvent (the service or operating model changes). Improve is crowded but grade C; automate
-has the only measured cases, and they are rules-based automation, not generative AI; delegate is announced or
+has the only named-customer figures (grade B estimates), and they are rules-based automation, not generative AI; delegate is announced or
 conference-reported only. No automate entry is at the step level.
 
 **Research, data and self-service**
@@ -69,7 +69,7 @@ conference-reported only. No automate entry is at the step level.
   BDO lists recurring quality gaps). `#08` review against country rules and cross-filing consistency (Exactera,
   early adopter). `#10` first-draft agreements from the written policy, "weeks to hours" (firm statement).
 - Automate: `#09` central data generates bulk local files; Trivium reports 80% time saving, Fortum 65% transaction
-  automation (grade A, vendor-published; AI role not shown).
+  automation (grade B: managers' estimates, vendor-published; AI role not shown).
 - Delegate: `#11` multi-agent review of an agreement's legal, TP, VAT and withholding-tax effects before drafting
   (unnamed TPMinds example; human checkpoints not described).
 
