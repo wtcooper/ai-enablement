@@ -856,7 +856,7 @@
   change_scope: step
   runtime_class: workflow-automation
   maturity: in-production
-  problem: "Post-incident reviews must show that findings were addressed and that lessons reach policy, and checking each report against an organisation's own standards is manual."
+  problem: "High-severity incidents can be closed before their findings are addressed; Cloudflare built its incident report reviewer to block that. Researchers also target the step of mapping incident evidence to gaps in security policy after an incident."
   solution: "Cloudflare rebuilt its engineering standards as a governed 'Codex' of RFC-format documents with MUST and SHOULD statements extracted into structured form; review agents for code, specifications and incident reports retrieve those statements. Its incident report reviewer blocks closure of high-severity incidents until findings are addressed (as reported in the application-security discourse research). Researchers separately tested LLM-assisted post-incident policy gap analysis, mapping incident evidence to threat-informed policy gaps, on a simulated brute-force incident."
   outcomes:
     - lever: quality

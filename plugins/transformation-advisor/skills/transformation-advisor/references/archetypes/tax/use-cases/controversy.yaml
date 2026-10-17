@@ -39,7 +39,7 @@
   prerequisites:
     - "Notices reach the firm quickly; Accounting Today advises filing a power of attorney right away and keeping a structured notice workflow (ACCTODAY-2026)"
     - "An approved AI tool with confidentiality protections; OPR says to use only secure, enterprise-approved AI for client data (IRS-OPR-2026)"
-    - "In Australia, client permission before client information is entered into AI tools, depending on how the tool is configured and used (TPB-GS-2026)"
+    - "In Australia, client permission before client information is entered into AI tools, depending on how the tool is configured and used (TPB-GS55-2026)"
   risks_and_guardrails:
     - "Return information shared with an unsecured tool can engage IRC sections 6713 and 7216 and Circular 230 section 10.51(a)(15) (IRS-OPR-2026, Regulatory Framework item 6)"
     - "OPR says a practitioner must review everything the tool produces and cannot rely solely on it (IRS-OPR-2026)"
@@ -65,7 +65,7 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 1, 5 and 6; Best Practices"}
     - {ref: FINDSKILL-2026, title: "Tax Preparers: Turn a CP2000 Into a Client Answer in 15 Min", publisher: "FindSkill.ai", type: vendor, url: "https://findskill.ai/blog/tax-preparers-cp2000-ai-workflow/", date: "2026-08-01", access: full, locator: "'The 15-minute workflow', 'What it can't do'"}
     - {ref: ACCTODAY-2026, title: "What does an AI-driven IRS mean for small accounting firms?", publisher: "Accounting Today (AT Think opinion)", type: press, url: "https://www.accountingtoday.com/opinion/what-does-the-new-ai-driven-irs-mean-for-small-accounting-firms", date: "2026-07-02", access: full, locator: "'How small firms should respond', step 4"}
-    - {ref: TPB-GS-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
+    - {ref: TPB-GS55-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
   last_reviewed: "2026-10-17"
   notes: >-
     No named customer, accuracy figure or time measurement for any vendor notice tool was found. Accrual's Arc agent
@@ -195,7 +195,7 @@
   risks_and_guardrails:
     - "TSCPA says no publicly available software replicates IRS audit selection, so any pre-filing screen is a proxy (TSCPA-2026)"
     - "The Accounting Today piece is opinion by an operations manager at an outsourced accounting firm and mixes sourced and unsourced claims; its audit-flag list is not an IRS standard (ACCTODAY-2026)"
-    - "Confidentiality duties apply to client data entered into AI tools (IRS-OPR-2026; TPB-GS-2026)"
+    - "Confidentiality duties apply to client data entered into AI tools (IRS-OPR-2026; TPB-GS55-2026)"
   human_checkpoints:
     - "Reviewer investigates each flagged item, decides what substantiation to request and signs the return"
   role_evolution: >-
@@ -210,7 +210,7 @@
     - {ref: ACCTODAY-2026, title: "What does an AI-driven IRS mean for small accounting firms?", publisher: "Accounting Today (AT Think opinion)", type: press, url: "https://www.accountingtoday.com/opinion/what-does-the-new-ai-driven-irs-mean-for-small-accounting-firms", date: "2026-07-02", access: full, locator: "'Documentation standards have effectively increased'; steps 1-3 and 5"}
     - {ref: NYSSCPA-PWCWEBCAST-2026, title: "IRS Expands AI-Driven Enforcement While Adding New Taxpayer Relief", publisher: "NYSSCPA (summarising Reuters and a PwC webcast)", type: professional-body, url: "https://nysscpa.org/news/8725456-irs-expands-ai-driven-enforcement-while-adding-new-taxpayer-relief-2026-08-10", date: "2026-08-10", access: full, locator: "paragraphs 1-3 (date from URL slug)"}
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework item 6"}
-    - {ref: TPB-GS-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
+    - {ref: TPB-GS55-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
   last_reviewed: "2026-10-17"
   notes: >-
     Overlaps: tax-compliance-corporate-13, tax-compliance-individual-business-12 (including TaxGPT's return-review
@@ -339,7 +339,7 @@
     - {ref: BTAX-EYGRIP-2025, title: "AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way", publisher: "Bloomberg Tax (EY authors)", type: press, url: "https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way", date: "2025-11-21", access: full, locator: "paragraph 5; sections 'People, Skills, Culture' and 'Questions for 2026'"}
     - {ref: EY-TAXRISK-2025, title: "2025 EY Tax Risk and Controversy survey", publisher: "EY", type: survey, url: "https://www.ey.com/en_gl/insights/tax/tax-risk-and-controversy-survey", date: "2025-12-11", access: full, locator: "section 'How GenAI is changing tax controversy'"}
     - {ref: MILLER-CLE-2025, title: "Leveraging AI, Big Data, IRS Online Services & Emerging Technology for Tax Controversy Professionals", publisher: "Miller & Chevalier", type: conference, url: "https://www.millerchevalier.com/event/leveraging-ai-big-data-irs-online-services-emerging-technology-tax-controversy-professionals", date: "2025-06-25", access: full, locator: "event description"}
-    - {ref: TR-TEIAUDITOR-2026, title: "2026 TEI Tax Technology Seminar: What the auditor already knows", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-auditor-already-knows", date: "2026-05-12", access: full, locator: "section 'End of the traditional model'"}
+    - {ref: TRINST-TEIAUDITOR-2026, title: "2026 TEI Tax Technology Seminar: What the auditor already knows", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-auditor-already-knows", date: "2026-05-12", access: full, locator: "section 'End of the traditional model'"}
     - {ref: EY-INDIA-2026, title: "EY India strengthens tax technology leadership with the launch of AI-enabled enterprise tax solutions", publisher: "EY India", type: firm, url: "https://www.ey.com/en_in/newsroom/2026/02/ey-india-strengthens-tax-technology-leadership-with-the-launch-of-ai-enabled-enterprise-tax-solutions", date: "2026-02-18", access: full, locator: "AI Tax Hub announcement"}
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework item 1"}
   last_reviewed: "2026-10-17"
@@ -511,18 +511,18 @@
     2026 to test and refine it, with participants including the National Association of Enrolled Agents and the
     Federation of Tax Administrators.
   outcomes:
-    - {lever: risk, description: "none published", figure: "none published", measures: "no use of the register by a named organisation was found", provenance: self-reported, source_ref: AICPA-WERFELART-2026}
+    - {lever: risk, description: "none published", figure: "none published", measures: "no use of the register by a named organisation was found", provenance: self-reported, source_ref: TAXADVISER-WERFEL-2026}
   prerequisites:
     - "Inventory of AI use cases and a named owner for AI governance; the register flags a missing enterprise governance function as a risk (AICPA-WERFEL-2026)"
   risks_and_guardrails:
-    - "The author states the views are his and not official AICPA policy; the framework is a starting point, not a standard (AICPA-WERFELART-2026)"
-    - "Transparency can lower explainability risk while raising adversarial-manipulation risk (AICPA-WERFELART-2026)"
+    - "The author states the views are his and not official AICPA policy; the framework is a starting point, not a standard (TAXADVISER-WERFEL-2026)"
+    - "Transparency can lower explainability risk while raising adversarial-manipulation risk (TAXADVISER-WERFEL-2026)"
   human_checkpoints:
-    - "Tier 1 risks must be addressed before a deployment launches; mandatory human approval for irreversible, financial or rights-affecting agent actions is an illustrative control (AICPA-WERFELART-2026; AICPA-WERFEL-2026, risk 14)"
-  role_evolution: "The framework lists skill erosion (preparers) and workforce expertise erosion (authorities) as risks (AICPA-WERFELART-2026)."
+    - "Tier 1 risks must be addressed before a deployment launches; mandatory human approval for irreversible, financial or rights-affecting agent actions is an illustrative control (TAXADVISER-WERFEL-2026; AICPA-WERFEL-2026, risk 14)"
+  role_evolution: "The framework lists skill erosion (preparers) and workforce expertise erosion (authorities) as risks (TAXADVISER-WERFEL-2026)."
   evidence_grade: D
   sources:
-    - {ref: AICPA-WERFELART-2026, title: "A risk framework for AI use in tax administration and preparation", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "sections 'Risk registers for the use of AI in tax' to 'Innovate, but responsibly'"}
+    - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "sections 'Risk registers for the use of AI in tax' to 'Innovate, but responsibly'"}
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendices A (authorities), B (methodology) and C (preparers)"}
     - {ref: AICPA-CART-2026, title: "AICPA, former IRS commissioner to lead initiative on AI in tax", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/", date: "2026-09-23", access: full, locator: "paragraphs 1-6"}
     - {ref: DUKE-WERFEL-2026, title: "Werfel Presents Risk Framework for the Use of Artificial Intelligence in Tax Administration and Practice Today at Duke", publisher: "TaxProf Blog", type: conference, url: "https://taxprofblog.aals.org/2026/03/26/werfel-presents-risk-framework-for-the-use-of-artificial-intelligence-in-tax-administration-and-practice-today-at-duke/", date: "2026-03-26", access: full, locator: "abstract"}
@@ -668,7 +668,7 @@
   risks_and_guardrails:
     - "Systems that learn from historical audit patterns can carry forward biases that are hard to see without outside review, an Electronic Frontier Foundation source told Tax Notes reporters (NTT-BIAS-2026)"
     - "The study finds that minimising the no-change rate and targeting erroneously claimed refundable credits raise the audit rate of Black taxpayers, so performance and fairness trade off (SIEPR-AUDIT-2023)"
-    - "Disclosing model details to improve transparency can raise adversarial-manipulation risk (AICPA-WERFELART-2026)"
+    - "Disclosing model details to improve transparency can raise adversarial-manipulation risk (TAXADVISER-WERFEL-2026)"
   human_checkpoints:
     - "TIGTA recommended that division commissioners make exam performance results part of model monitoring and refinement; the IRS agreed, subject to staffing and Treasury guidance (TIGTA-2025, Recommendation 1)"
     - "Werfel's register calls for human review of high-impact audit-selection decisions and periodic bias audits with documented findings (AICPA-WERFEL-2026, risk 7)"
@@ -681,7 +681,7 @@
     - {ref: ACCTODAY-TIGTA-2026, title: "IRS's AI risk management needs to be improved", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/irs-ai-risk-management-needs-to-be-improved", date: "2026-09-28", access: full, locator: "paragraphs 4-8"}
     - {ref: SIEPR-AUDIT-2023, title: "Measuring and Mitigating Racial Disparities in Tax Audits", publisher: "Stanford Institute for Economic Policy Research", type: academic, url: "https://siepr.stanford.edu/publications/working-paper/measuring-and-mitigating-racial-disparities-tax-audits", date: "2023-01", access: full, locator: "abstract"}
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 7 and 15"}
-    - {ref: AICPA-WERFELART-2026, title: "A risk framework for AI use in tax administration and preparation", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "section 'AI risk register for tax authorities'"}
+    - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "section 'AI risk register for tax authorities'"}
     - {ref: NTT-BIAS-2026, title: "How AI Bias Affects State Audit Selection", publisher: "Tax Notes Talk (Tax Analysts)", type: podcast, url: "https://taxnotestalk.taxnotes.com/124942/episodes/19216367-how-ai-bias-affects-state-audit-selection", date: "2026-05-22", access: full, locator: "transcript, oversight discussion citing Haley Tsukayama (EFF)"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -729,7 +729,7 @@
     - "HMRC told the FT generative AI was not approved for generating taxpayer letters; the FT reported suggestions that some caseworkers may have used it without authorisation, which ICAS says raises confidentiality concerns (ICAS-HMRC-2025)"
     - "OECD cites the Dutch childcare benefits scandal, in which about 26,000 families were wrongly accused of fraud, as the harm skewed data and algorithmic errors can cause (OECD-GOVAI-2025)"
     - "Tax Notes reporters describe weak outside review of state systems, partly because it is unclear what counts as AI (NTT-BIAS-2026; TAXNOTES-UNWATCHED-2026); Werfel's register notes tax data systems may not collect the demographic variables needed for bias testing (AICPA-WERFEL-2026, risk 7)"
-    - "Taxpayers worry that AI-assisted TP audits may mischaracterise legitimate arrangements; South Africa's revenue service has not openly confirmed GenAI in TP audits (BLOOMBERG-AFRICA-2026)"
+    - "Taxpayers worry that AI-assisted TP audits may mischaracterise legitimate arrangements; South Africa's revenue service has not openly confirmed GenAI in TP audits (BTAX-AFRICA-2026)"
   human_checkpoints:
     - "HMRC says skilled caseworkers make the final decisions where Copilot supports compliance work (HMRC-UPDATE-2026); the Permanent Secretary says AI augments staff (CSW-HMRC-2026)"
     - "Austrian cases flagged for further review (375,000 in 2023) go to staff (OECD-GOVAI-2025)"
@@ -754,7 +754,7 @@
     - {ref: KPMG-HU-2026, title: "Tax alert 2026-02-26 (Hungarian tax authority audit plan)", publisher: "KPMG Hungary", type: firm, url: "https://kpmg.com/hu/en/insights/2026/02/taxalert-2026-02-26.html", date: "2026-02-26", access: full, locator: "text on AI screening, including at invoice issuance"}
     - {ref: WTS-HU-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: "WTS Klient Hungary", type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: "2026-03-12", access: full, locator: "paragraphs 1-3"}
     - {ref: KPMG-UK-ICTS-2025, title: "HMRC proposals to enable automated TP risk assessment at scale", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-hmrc-proposals-to-enable-automated-tp-risk-assessment-at-scale.html", date: "2025-04-30", access: full, locator: "summary of the 28 Apr 2025 proposal"}
-    - {ref: BLOOMBERG-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax", type: press, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "commentary text"}
+    - {ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax", type: press, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "commentary text"}
     - {ref: HMRC-UPDATE-2026, title: "HMRC Transformation Roadmap: update 2026", publisher: "HM Revenue and Customs", type: regulator, url: "https://www.gov.uk/government/publications/hmrc-transformation-roadmap-progress-update-2026/hmrc-transformation-roadmap-update-2026", date: "2026-07-02", access: full, locator: "section on Copilot rollout ('always with skilled caseworkers making final decisions')"}
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risk 7 (illustrative controls)"}
   last_reviewed: "2026-10-17"

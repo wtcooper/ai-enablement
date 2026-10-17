@@ -37,7 +37,7 @@ court filings.
 | Notice intake and triage | Read the notice, tie it to the return, extract issue, amount and deadline; file a power of attorney; route | transaction-processing | First read slow and inconsistent between staff [WK-NOTICE-2026]; one commentator expects notice volume to rise while IRS capacity to resolve notices has fallen [ACCTODAY-2026] |
 | Notice response | Choose agree, partial agree, disagree or penalty abatement; draft client explanation and agency letter; assemble support | document-production, expert-judgment | Drafted from scratch each time under short windows |
 | Pre-filing exposure review | Reconcile to third-party forms (1099-K, 1099-DA, K-1); document positions | review-assurance | A correct return can still draw a notice if numbers do not visibly reconcile [TSCPA-2026] |
-| Examination | Answer information document requests (IDRs, the examiner's formal record requests), interviews, proposed adjustments | coordination-scheduling, document-production | In e-invoicing (continuous transaction control) jurisdictions, authorities arrive with transaction data already analysed [TR-TEIAUDITOR-2026] |
+| Examination | Answer information document requests (IDRs, the examiner's formal record requests), interviews, proposed adjustments | coordination-scheduling, document-production | In e-invoicing (continuous transaction control) jurisdictions, authorities arrive with transaction data already analysed [TRINST-TEIAUDITOR-2026] |
 | Appeals, Fast Track, ADR | Protest, settlement, mediation | expert-judgment, document-production | Appeals lost 29% of staff in 2025, per a law-firm commentary [CPAPA-APPEALS-2026]; no taxpayer-side AI evidence |
 | Litigation | Research, briefs, motions, expert reports | research-synthesis, document-production | Hallucinated citations by taxpayer counsel and by the IRS [TAXCT-CLINCO-2026; BLAW-TAXCT-2026] |
 | Collection and service | Payment plans, calls, chatbots, identity verification | client-interaction, transaction-processing | IRS assistor-answered calls down 20%, hold time 8 to 14 minutes in FS2026 [NTA-OBJ-2026] |
@@ -148,8 +148,8 @@ override or error rate for its selection models.
   time not spent [IRS-OPR-2026]. The AICPA has asked for clarification on value pricing [AICPA-CART-2026].
 - AICPA SSTS §1.4 permits reliance on tools but keeps responsibility with the member [TAXCT-CLINCO-2026].
 - Australia TPB(GS) 55/2026: verify AI content at each step, document verification, get client permission before
-  entering client data into a tool that discloses it to a third party [TPB-GS-2026]. UK PCRT AI guidance (19 Jan 2026): integrity, due care, confidentiality,
-  limits of AI [PCRT-AI-2026].
+  entering client data into a tool that discloses it to a third party [TPB-GS55-2026]. UK PCRT AI guidance (19 Jan 2026): integrity, due care, confidentiality,
+  limits of AI [ATT-PCRTAI-2026].
 
 **Courts and evidence**
 - Tax Court: no AI rule; Rule 201(a) binds lawyers to the ABA Model Rules [TAXCT-CLINCO-2026]; IRC §6673 penalties up to
@@ -188,7 +188,7 @@ on the authority side, every adverse decision and every selection override.
   [IRS-AGENTFORCE-2025; quotation not re-verified, see `#22`]. Classifiers review and override model suggestions [TIGTA-2025].
 - HMRC: broadly the same size in 2030 with AI assisting officials [CSW-HMRC-2026]; 5,500 more compliance officers
   [PINSENT-HMRC-2026]. Assistor-answered calls fell 20% while voicebot volume rose 4% [NTA-OBJ-2026].
-- Werfel's register lists skill erosion (preparers) and expertise erosion (authorities) as risks [AICPA-WERFELART-2026].
+- Werfel's register lists skill erosion (preparers) and expertise erosion (authorities) as risks [TAXADVISER-WERFEL-2026].
 
 ## 8. Frontier
 
@@ -219,7 +219,7 @@ Not yet moved: a Tax Court AI rule; Treasury minimum-practice guidance (none as 
   The response is a logged verification step: check each authority exists *and* supports the point
   [TAXCT-CLINCO-2026; ICAS-TAXTRIB-2026]. A training vendor's suggested workflow uses AI for structure and explanation, not citation [FINDSKILL-2026].
 - **"Client data can't go into these tools."** Correct for consumer tools: OPR limits client data to
-  enterprise-approved tools and cites §§6713 and 7216 [IRS-OPR-2026]; Australia expects client permission [TPB-GS-2026].
+  enterprise-approved tools and cites §§6713 and 7216 [IRS-OPR-2026]; Australia expects client permission [TPB-GS55-2026].
 - **"If AI saves time, we lose fees."** OPR says do not bill time not spent; the AICPA is contesting the value-pricing
   reading [IRS-OPR-2026; AICPA-CART-2026]. Treat pricing as an open design choice, not a reason to wait.
 - **"The IRS's models are a black box, so why bother?"** Criteria are unpublished, but TIGTA, GAO and TAS publish what
@@ -241,7 +241,7 @@ Full titles, URLs, dates and locators are in the YAML. Keys used here but not in
 - EU-AIACT: Regulation (EU) 2024/1689, Recital 59 (2024-07-12), https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689
 - HADWICK-EUAIACT: Slipping Through the Cracks (European Papers, 2024-12-30), https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
 - OECD-DIGIT-2025: Tax Authorities Increasingly Use AI in Audits (Bloomberg Tax, 2025-06-17), https://news.bloombergtax.com/daily-tax-report/tax-authorities-increasingly-use-ai-in-audits-oecd-report-finds
-- PCRT-AI-2026: PCRT topical guidance on AI (seven UK bodies, 2026-01-19), https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members
+- ATT-PCRTAI-2026: PCRT topical guidance on AI (seven UK bodies, 2026-01-19), https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members
 - PROSKAUER-707-2026: Proposed FRE 707 (Proskauer Rose, 2026-07-29), https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707
 - SALA-TAXNOTES-2026: AI Won't Shrink Corporate Tax Teams Much (Tax Notes State, abstract, 2026-07-20), https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
 - SSL-OECDVAT-2026: OECD: AI Is Cutting VAT Investigations from 9 Months to 3 (SharedServicesLink, 2026-06-29), https://sharedserviceslink.com/news/oecd-ai-is-cutting-vat-non-compliance-investigations-from-9-months-to-3

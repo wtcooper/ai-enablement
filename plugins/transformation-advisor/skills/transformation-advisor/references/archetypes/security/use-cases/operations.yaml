@@ -149,7 +149,7 @@
     - {lever: capacity, description: "Triage agent coverage and activity over the whole .conf26 conference; Cisco calls these event observations, not product benchmarks", figure: "94% triage analysis coverage; 1,503 AI agentic events; 7,605 SPL queries; 26,207 pieces of evidence; 11,250 threat-intelligence lookups", measures: "dashboard snapshot including set-up days; coverage numerator and denominator not defined", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026}
     - {lever: quality, description: "Suggested dispositions on the same dashboard; no comparison with analyst verdicts, so accuracy is unknown", figure: "True Positive 44%, Benign Positive 42%, No suggestion 7%, False Positive 6%, Undetermined 1%", measures: "share of findings by suggested disposition; denominator not stated", provenance: vendor-published, source_ref: CISCO-SPLUNK-CONF26-2026}
   prerequisites:
-    - "Normalised, searchable telemetry in one analyst workspace; Splunk says the first requirement for an agentic SOC is 'not the agent' but the evidence (SPLUNK-BHUSA-2026)"
+    - "Normalised, searchable telemetry and evidence in one analyst workspace; Splunk's event-SOC posts put that evidence foundation ahead of the agent (SPLUNK-BHUSA-2026, CISCO-SPLUNK-CONF26-2026)"
     - "Data in the vendor's SIEM (for Google, Google SecOps with one SOAR tenant) (GOOGLE-TIN-2026)"
     - "A tiered analyst team and detection engineers able to validate results and tune content"
   risks_and_guardrails:
@@ -630,9 +630,9 @@
   solution: >-
     A copilot built into the XDR portal aggregates incident information into readable form and answers natural-language
     queries (Microsoft Security Copilot). Swimlane's reading of the SANS AI survey is that adoption comes easiest in log
-    analysis, explaining threats and report writing. Governance sources point to approved assistants grounded in the
-    SOC's runbooks, with logging and a validation routine, in place of ad hoc personal use, and Hugging Face advises
-    having a capable self-hostable model vetted before an incident.
+    analysis, explaining threats and report writing. The governance deep dive proposes, as an idea no organisation
+    reports yet, approved assistants grounded in the SOC's runbooks, with logging and a validation routine, in place of
+    ad hoc personal use. Hugging Face advises having a capable self-hostable model vetted before an incident.
   outcomes:
     - {lever: speed, description: "Copilot adoption was associated with lower mean time to resolution three months after adoption, compared with a control group", figure: "30.13% reduction", measures: "difference-in-differences on incident time to resolution, Defender XDR metadata from over 150 organisations across 180 days in 2024; association, not causal", provenance: vendor-published, source_ref: MSFT-BONO-2024}
     - {lever: capacity, description: "Use is widespread but not embedded", figure: "79% of SOCs use AI or ML tools; 36% have built them into a defined SOC workflow", measures: "SANS 2026 SOC Survey, 444 practitioners and 69 cyber leaders", provenance: independent, source_ref: SANS-SOC-2026}
@@ -1164,7 +1164,7 @@
     - {ref: NCSC-AIADOPT-2026, title: "Supporting AI adoption for UK cyber defence", publisher: "UK National Cyber Security Centre", type: regulator, url: "https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence", date: "2026-04-23", access: full, locator: "List of eight risks"}
     - {ref: AOSHEARMAN-ESRB-2026, title: "ESRB issues warning on systemic cyber risks from frontier AI models", publisher: "A&O Shearman", type: press, url: "https://finreg.aoshearman.com/esrb-issues-warning-on-systemic-cyber-risks-from-frontier-ai-models", date: "2026-07-07", access: full, locator: "ESAs oversight under DORA; engagement with critical ICT providers"}
     - {ref: COOLEY-UKFIN-2026, title: "Busy Week for AI: FCA Reopens AI Input Zone, Regulators Issue Statement on Frontier AI Cyber Risks", publisher: "Cooley LLP", type: press, url: "https://finsights.cooley.com/busy-week-for-ai-fca-reopens-ai-input-zone-regulators-issue-statement-on-frontier-ai-cyber-risks/", date: "2026-05-26", access: full, locator: "Five domains; no new requirements"}
-    - {ref: EIOPA-DORA-2025, title: "Digital Operational Resilience Act (DORA)", publisher: "EIOPA", type: regulator, url: "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en", date: "2025-01-17", access: full, locator: "Application date and scope"}
+    - {ref: EIOPA-DORA-2025, title: "Digital Operational Resilience Act (DORA)", publisher: "EIOPA", type: regulator, url: "https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en", date: "2026-10-17", access: full, locator: "DORA applies since 17 Jan 2025 to financial entities and ICT third-party providers (undated page; retrieval date)"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-10, discourse-16 and governance-19 (supplier assurance, an idea: no source reports a customer

@@ -1408,7 +1408,7 @@
     says capabilities are 'available now or rolling out' (SOVOS-SOVI-2026). On the ERP side, Roedl describes SAP Document
     and Reporting Compliance generating, validating and transmitting e-documents (ROEDL-DRC-2026). Sovos reports running France's
     September 2026 mandate in production with a 1.6% invoice rejection rate; its documents do not say how much of that is
-    due to AI (SOVOS-FRANCE-2026).
+    due to AI (SOVOS-FRANCE-2026b).
   outcomes:
   - lever: quality
     description: Sovos reports a 1.6% invoice rejection rate in live production in France against an estimated market-wide
@@ -1417,7 +1417,7 @@
     measures: Invoice rejection rate three weeks into France's mandate, per Sovos; the 20% is described as an estimated market-wide
       rate with no source, and the release does not attribute the difference to AI
     provenance: vendor-published
-    source_ref: SOVOS-FRANCE-2026
+    source_ref: SOVOS-FRANCE-2026b
   prerequisites:
   - 'Clean master data: the recap lists wrong VAT ID, malformed schema and mismatched master data as rejection causes (TRINST-TEIAUDITOR-2026).'
   - Integration between the ERP, the tax platform and the authority or network interface (VERTEX-VIDA-2026; ROEDL-DRC-2026).
@@ -1449,7 +1449,7 @@
     date: '2026-03-24'
     access: full
     locator: Intro paragraph and list 'Current and planned Sovi AI capabilities'
-  - ref: SOVOS-FRANCE-2026
+  - ref: SOVOS-FRANCE-2026b
     title: 'Three Weeks into France E-Invoicing Mandate: Sovos Hits Unparalleled Production Scale'
     publisher: Sovos
     type: vendor

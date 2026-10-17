@@ -191,7 +191,7 @@ starting point, not a standard [AICPA-WERFEL-2026].
   [TAXCT-CLINCO-2026]. **Werfel's preparer register** (15 risks in five layers; a proposal) will be tested and
   refined by the AICPA's Council on AI Risk in Tax, launched 23 Sep 2026 [AICPA-WERFEL-2026, AICPA-CART-2026].
 - **UK**: PCRT AI guidance (19 Jan 2026): members stay responsible; client data in a public model without consent is
-  likely a confidentiality breach [PCRT-AI-2026]. HMRC expects monitoring, version control and human oversight in
+  likely a confidentiality breach [ICAEW-PCRT-2026]. HMRC expects monitoring, version control and human oversight in
   generative-AI tax software [HMRC-GENAI-2026]. **Australia**: TPB(GS) 55/2026 (22 Jul 2026): competence, reasonable
   care, client permission (a signed engagement letter can give it), documented verification [TPB-GS55-2026].
 - **Courts**: *Clinco* (T.C. Memo. 2026-16): three of four cited cases apparently hallucinated; no sanctions, but "a
@@ -231,7 +231,7 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 - **2025-06-16** RSM launches myRSM Tax on its $1 billion technology and AI investment; no outcomes [RSM-MYRSM-2025].
 - **2025-11-05 / 12-15** Thomson Reuters announces Ready to Review; says it is generally available from 15 Dec and
   expects each CPA to pair with at least one virtual agent [TR-COCOUNSEL-2025, TR-R2R-2025].
-- **2026-01-19 / 06-24 / 07-22** PCRT, OPR and TPB guidance: existing duties apply [PCRT-AI-2026, IRS-OPR-2026, TPB-GS55-2026].
+- **2026-01-19 / 06-24 / 07-22** PCRT, OPR and TPB guidance: existing duties apply [ICAEW-PCRT-2026, IRS-OPR-2026, TPB-GS55-2026].
 - **2026-02-05 / 02-26** Accrual launches ($75M, "all forms", complex K-1 work first) [ACCRUAL-LAUNCH-2026]; Basis
   raises $100M and shows an agent completing a 1065 [BASIS-2026].
 - **2026-03-24 / 04-02** TaxGPT launches preparation and return-review agents [TAXGPT-2026]; Perplexity launches a
@@ -278,7 +278,7 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
 - **Regulators and standard-setters:** IRS-OPR-2026; TREAS-7216-2008; IRS-RP201314-2013; TREAS-C230-2014; IRS-I8867-2025;
   IRS-PUB1345-2025; IRS-PUB4557-2024; IRS-PUB5708-2024; GAO-14467T-2014; TAS-AIBLOG-2024; TPB-GS55-2026; HMRC-GENAI-2026.
 - **Professional bodies:** AICPA-WERFEL-2026 (appendices); TAXADVISER-WERFEL-2026 (article); AICPA-CART-2026;
-  AICPA-FEES-2026; PCRT-AI-2026; ATT-PCRTAI-2026; NAEA-AI-2026; TAXCT-CLINCO-2026.
+  AICPA-FEES-2026; ICAEW-PCRT-2026; ATT-PCRTAI-2026; NAEA-AI-2026; TAXCT-CLINCO-2026.
 - **Firms:** WCG-NOTREADY-2026; WCG-PLAYBOOK-2026; WCG-7216-2026; HRB-Q4CALL-2026; PWC-MEGNA-2025.
 - **Vendors:** TR-COCOUNSEL-2025; TR-R2R-2025; TR-RTR-2026; TR-TRUST7-2026; TR-CHEAP-2026; BASIS-TAX-2026; BASIS-HOME-2026;
   BASIS-SMALL-2026; BASIS-CAREERS-2026 (job posting); BLACKORE-SITE-2026; ACCRUAL-HOME-2026; ACCRUAL-INDIV-2026;
@@ -286,11 +286,11 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   APARIPRO-2026; OPENAI-CODEX-2026; COLUMN-TCBREPO-2026.
 - **Press, podcasts, community:** BLACKORE-2026; ACCTODAY-BLACKORE-2026; MYCPE-BLACKORE-2026; MYCPE-TAXGPT-2026; TAXGPT-2026;
   BASIS-2026; ACCRUAL-LAUNCH-2026; ACCRUAL-ARC-2026; RUNTIMEWIRE-2026; PERPLEXITY-2026; CNBC-HRB-2025; MULTIPLIER-2025;
-  CPAPA-POSTEXT-2026; TAXADVISER-CLIENTS-2026; TECHRADAR-TAXFIX-2025; JOFA-POLICY-2026; JOFA-OPR-2026; LDS-CNBC-2026;
+  CPAPA-POSTEXT-2026; TAXADVISER-CLIENTS-2026; TECHRADAR-TAXFIX-2025; JOFA-AIPOLICY-2026; JOFA-OPR-2026; LDS-CNBC-2026;
   ACCTODAY-AIBENCH-2026; CPATL-WORKFORCE-2026; CPAPA-BLACKORE-2024; CPAPA-TAXGPT-2026; CPAPA-AILIAB-2026;
   BLACKORE-SUMMIT-2026; ACCTPOD-477-2026; ACCTPOD-SAMLEON-2026; BARMORE-OPR-2026; HN-ASK-2026; VERITO-DISCL-2026.
 - **Surveys and academic:** AICPA-TAXSW-2026; TR-FOP-2026; WK-FRA-2025; TEI-TAXTECH-2026 (conference recap);
-  COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; MAGESH-HALLUC-2024; SWIDER-2025.
+  COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; STANFORD-HALLUC-2024; SWIDER-2025.
 - **Not in the YAML (opened by the deep-dive researchers):**
   - AICPA-TOPISSUES-2026: Journal of Accountancy, *CPA Firm Top Issues Survey* (629 respondents), 2026-06-23, https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
   - TR-MADSEN-2026: Thomson Reuters Community, *CPA firm automation case study* (SurePrep/UltraTax baseline), 2026-03-17, https://community.thomsonreuters.com/tax-accounting/f/tax-research-guidance/35077/cpa-firm-automation-case-study-how-one-practice-simplified-1040-tax-prep

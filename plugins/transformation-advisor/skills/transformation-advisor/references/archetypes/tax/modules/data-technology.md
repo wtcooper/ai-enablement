@@ -154,7 +154,7 @@ process. None has a published benchmark for AI in tax data work.
 | 17% / 21% / 45% | Departments with an AI policy / covered by general policy / no relevant policy | [TR-TENSIONS-2025] |
 | 86%; 22% | Familiar with ViDA; with a formal transition programme | [TR-VIDA-2026]; sample not stated |
 | 80%; 50% | Rover, as reported by Savant: less month-end close time; lower data handling cost | [SAVANT-ROVER-2026]; vendor-published; what was timed is unclear |
-| 1.6% vs ~20% | Sovos invoice rejection rate in France vs an unsourced market estimate | [SOVOS-FRANCE-2026]; AI share not stated |
+| 1.6% vs ~20% | Sovos invoice rejection rate in France vs an unsourced market estimate | [SOVOS-FRANCE-2026b]; AI share not stated |
 | 87%; 41% | Automation users with some bot failures; maintenance heavier than expected (2019; 509 RPA users in five industries, none of them tax) | [PEGA-RPA-2019] |
 | fewer than 1/3 | Simplified federal returns computed correctly by frontier models | [COLUMN-TAXCALCBENCH-2025]; vendor authors |
 | over 5% | Rise in reported sales, purchases and VAT liabilities after e-invoicing, Peru | [BELLON-PERU-2022]; independent, regime-level |

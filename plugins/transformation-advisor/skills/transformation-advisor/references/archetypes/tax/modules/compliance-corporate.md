@@ -175,8 +175,8 @@ returns, Forms 5471/8858, state returns or Section G.
   the article states it is the author's view, not AICPA policy.
 - **UK and software.** PCRT guidance: members remain responsible for AI-assisted work and must apply professional
   judgement; entering client data into a public AI model without consent is likely a breach of confidentiality
-  [PCRT-AI-2026]. HMRC expects AI tax software to keep monitoring and version control
-  [HMRC-GENAI-SW-2026].
+  [ICAEW-PCRT-2026]. HMRC expects AI tax software to keep monitoring and version control
+  [HMRC-GENAI-2026].
 - **Courts.** *Clinco* (T.C. Memo. 2026-16): three of four cited cases likely fabricated; no formal sanction
   [TAXCT-CLINCO-2026].
 - **Audit trail.** Deloitte says agentic corrections to source data must be written back to the system of record
@@ -201,7 +201,7 @@ and locked logic; deciding remediation on any alert; fee basis and provider term
   more than preparation [SALA-TAXNOTES-2026]. KPMG Germany: 58% expect stable domestic headcount, 72% abroad
   [KPMG-DE-2026]. Bloomberg Tax noted firm platforms could dampen future staff needs [BTAX-BIG4-2025].
 - **Skills.** EY sees a divide between experienced staff who spot AI problems and newer staff who over-rely
-  [EY-BTAX-2025]; Werfel lists skill erosion as a workforce risk [TAXADVISER-WERFEL-2026].
+  [BTAX-EYGRIP-2025]; Werfel lists skill erosion as a workforce risk [TAXADVISER-WERFEL-2026].
 - **New owners.** A named AI governance owner, a tax technology owner of tools and measurement (`#20`, `#21`), and
   tax directors as informed buyers of AI-enabled services (`#15`).
 
@@ -219,7 +219,7 @@ and locked logic; deciding remediation on any alert; fee basis and provider term
 - **2026-05-27:** Byron launches agents for 1120, 1120-S and 1065 preparation [BYRON-2026].
 - **2026-06-24:** IRS OPR issues Alert 2026-19, introductory guidelines on AI use in tax practice [IRS-OPR-2026].
 - **2026-06-30:** First GloBE Information Returns due, compressing the direct-tax calendar [TR-CORPAI-2026].
-- **2026-09-08:** The AICPA seeks IRS clarity on OPR's fee language [AICPA-FEE-2026].
+- **2026-09-08:** The AICPA seeks IRS clarity on OPR's fee language [AICPA-FEES-2026].
 - **2026-09-23:** AICPA and Werfel launch CART [AICPA-CART-2026].
 - **2026-10-02:** Neuro-symbolic research matches all 51 held-out TaxCalcBench returns [HAN-LAWORDER-2026]; the
   same day the IRS CEO's "AI-first IRS" is reported [IRS-AIFIRST-2026].
@@ -248,7 +248,7 @@ model-only calculation; firms selling agent platforms; authorities that see more
   [TR-TENSIONS-2025]; set baselines first.
 - **"Nobody owns it."** 2 of 50+ say tax owns AI [TEI-TAXTECH-2026]. Response: name an owner before scaling (`#21`).
 - **"The fee rule stops value pricing."** Contested: OPR warns against billing time not spent [IRS-OPR-2026]; the
-  AICPA says the language is not authoritative and seeks clarity [AICPA-FEE-2026] (`#16`).
+  AICPA says the language is not authoritative and seeks clarity [AICPA-FEES-2026] (`#16`).
 - **"Training rollouts fail."** One tool meant to save two hours consumed a day because users were not consulted
   [TEI-TAXTECH-2026]; panellists describe transformation fatigue [TR-TRANSFATIGUE-2025]. Response: involve users;
   start with one step.

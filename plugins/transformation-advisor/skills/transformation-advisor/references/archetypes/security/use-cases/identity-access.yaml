@@ -1,0 +1,1307 @@
+# Use cases: security / identity-access
+# Synthesised 2026-10-17 from the wave-4 practice, discourse and governance deep dives, the security landscape scan
+# and items other security angle files routed to identity-access (50 candidate entries in, 24 out).
+# Source refs are canonical keys. Where the angles used different keys for the same document, one key is kept:
+# MSFT-CAAGENT-2026 (= MS-CAAGENT-2026), MSFT-RISKYUSER-2026 (= MS-ENTRA-RISKYUSER-2025), MSFT-LIFECYCLE-2026
+# (= MS-ENTRA-LIFECYCLE-2025), MSFT-ARREC-2026 (= MSFT-ENTRA-ACCESSREV-2026), MSFT-ENTRAWN-2026
+# (= MS-ENTRA-WHATSNEW-OCT-2026), OKTA-TI-2026 (= OKTA-TI-INVARIANTS-2026), OKTA-AUTHSURVEY-2026 (= OKTA-YUBICO-2026),
+# FINCEN-DEEPFAKE-2024 (= FINCEN-ALERT004-2024), NIST-SP80063-4-2025 (= NIST-80063-2025), CISA-IR8587-2026
+# (= CISA-NIST-IR8587-2026), PANW-IDLANDSCAPE-2026 (= PANW-LANDSCAPE-2026, an excerpt page of the same report).
+# Key collision: the practice angle used FBI-IC3-2025 for the FBI public service announcement of 2025-05-15; it is
+# renamed FBI-IC3PSA-2025 here, and FBI-IC3-2025 means the 2025 Internet Crime Report (governance angle).
+# Almost every outcome figure is vendor-published. No override, false-approval or error rate from production was
+# found for any AI feature in workforce identity and access management (IAM). Identities for AI agents are covered in
+# the ai-security module and are not repeated here.
+
+- id: security-identity-access-01
+  title: Daily agent scan of Conditional Access policies for coverage gaps, with report-only fixes an administrator approves
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [review-assurance, software-systems]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: process
+  runtime_class: background-agent
+  maturity: in-production
+  problem: >-
+    Conditional Access policy sets (the rules that decide when a sign-in needs MFA, a compliant device or is blocked)
+    grow over time. New users, apps and agent identities can fall outside MFA or device controls, policies overlap, and
+    some carry too many or no exceptions. Finding these gaps meant reading policy logic by hand; one customer quoted by
+    Microsoft says it used to take weeks of manual review (MSFT-ENTRAGA-2025, customer quotes).
+  solution: >-
+    A Security Copilot agent in the Microsoft Entra admin center scans the tenant's Conditional Access policies every 24
+    hours (or on demand). It looks for users and apps with no MFA or device-control policy, legacy-authentication and
+    device-code gaps, overlapping policies that could be consolidated, and outlier policies with too many or no
+    exceptions. It proposes a new policy in report-only mode or an edit, shows its reasoning and logs its activity.
+    Later releases add chat with the agent, a five-phase rollout plan, Intune alignment, root-cause analysis of failed
+    sign-ins and ServiceNow change requests.
+  outcomes:
+    - {lever: quality, description: "Microsoft reports gaps found per customer since general availability", figure: "26 policy gaps per customer per month (average)", measures: "Average policy gaps the agent uncovered per customer per month since general availability, in Microsoft's words; number of customers and period not stated", provenance: vendor-published, source_ref: MSFT-CAUPDATE-2025}
+    - {lever: risk, description: "Microsoft reports customers who improved their posture", figure: "73% of customers using the agent", measures: "Share of customers using the agent that Microsoft says made 'meaningful improvements' in Zero Trust security posture; 'meaningful' is not defined and the denominator is not given", provenance: vendor-published, source_ref: MSFT-CAUPDATE-2025}
+    - {lever: speed, description: "Microsoft reports preview customers who got usable recommendations quickly", figure: "More than 83% of preview customers", measures: "Customers who used the agent during preview and received actionable recommendations in their first few runs; number of preview customers not stated", provenance: vendor-published, source_ref: MSFT-ENTRAGA-2025}
+    - {lever: speed, description: "A named customer's identity lead says the agent replaces review that used to take weeks", figure: "weeks of manual review (qualitative)", measures: "Quote from Avanade's Global Security Technology Lead as printed by Microsoft; no measurement", provenance: self-reported, source_ref: MSFT-ENTRAGA-2025}
+  prerequisites:
+    - "Microsoft Entra ID P1 or higher (P2 for risk-based policy suggestions) (MSFT-CAAGENT-2026, Prerequisites)"
+    - "Security Copilot security compute units provisioned; the documentation gives an average of under one unit per run, and at least one provisioned unit is billed monthly even if unused (MSFT-CAAGENT-2026, Prerequisites)"
+    - "Security Administrator role to activate the agent; Conditional Access Administrator or Security Administrator to act on suggestions (MSFT-CAAGENT-2026)"
+    - "Intune licences for device-based control suggestions (MSFT-CAAGENT-2026)"
+  risks_and_guardrails:
+    - "The agent changes no existing policy unless an administrator explicitly approves, and every new policy it suggests is created in report-only mode (MSFT-CAAGENT-2026, 'How it works')"
+    - "Documented limits: a run reviews up to 300 users and 150 applications and evaluates 40 policy pairs; scanning covers 24 hours; a started run cannot be stopped; suggestions cannot be customised or overridden (MSFT-CAAGENT-2026, 'Limitations')"
+    - "Activity (install, enable, run history) is written to the Security Copilot audit log, and the agent gives plain-language explanations of each recommendation (MSFT-ENTRAGA-2025, 'What's new in GA')"
+    - "Deep analysis flags missing break-glass accounts to prevent lockout (MSFT-CAUPDATE-2025, 'Always learning')"
+  human_checkpoints:
+    - "Administrator reviews each suggestion, its rationale and the policy contents before approving (MSFT-CAAGENT-2026)"
+    - "Report-only mode and a phased rollout let administrators see the impact before enforcement (MSFT-CAUPDATE-2025)"
+    - "Read-only roles (Security Reader, Global Reader) can see suggestions but not act (MSFT-CAAGENT-2026, Prerequisites)"
+  role_evolution: >-
+    Conditional Access administrators move from hand-reading policy logic to approving or rejecting agent suggestions
+    and writing custom instructions. Microsoft describes the aim as freeing admins for strategic improvements
+    (MSFT-CAUPDATE-2025, introduction).
+  evidence_grade: B
+  sources:
+    - {ref: MSFT-CAAGENT-2026, title: "Microsoft Entra Conditional Access Optimization Agent", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/conditional-access-agent-optimization", date: "2026-06-23", access: full, locator: "Overview; Prerequisites; Limitations; How it works"}
+    - {ref: MSFT-ENTRAGA-2025, title: "Smarter identity security starts with AI (blog, A. Simons)", publisher: "Microsoft Tech Community, Microsoft Entra Blog", type: vendor, url: "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/-/4429001", date: "2025-07-14", access: full, locator: "Section 'Conditional Access Optimization Agent is now generally available' and customer quotes"}
+    - {ref: MSFT-CAUPDATE-2025, title: "The Conditional Access Optimization Agent keeps getting better and making your life easier (blog, A. Simons)", publisher: "Microsoft Tech Community, Microsoft Entra Blog", type: vendor, url: "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/-/4460535", date: "2025-10-14", access: full, locator: "Introduction (26 gaps, 73%); sections on chat, phased rollout, deep analysis, ServiceNow"}
+    - {ref: MSFT-ENTRAAGENTS-2026, title: "Microsoft Entra agents (overview)", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-agents", date: "2026-01-21", access: full, locator: "'Conditional Access Optimization Agent' attribute table (trigger: every 24 hours or manual)"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 01 and discourse 03 (which graded it C as documentation only and scoped it as step). Kept as
+    process: the daily scan makes a periodic manual review continuous. Grade B, not A: the named customers (Avanade,
+    Athora) give quotes only, and the figures are Microsoft aggregates across unnamed customers. No false-positive,
+    acceptance or rejection rate for the agent's suggestions was found. The ServiceNow integration and activity-based
+    runs are marked preview. Practitioner reviews (Practical365, 2025-10-07; a commenter cross-checking the agent
+    against the free Maester tool) were seen only in search results and are not used.
+
+- id: security-identity-access-02
+  title: Agent-planned passkey adoption campaigns for privileged administrators
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [coordination-scheduling, transaction-processing]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: announced
+  problem: >-
+    Moving administrators to phishing-resistant sign-in (passkeys, which cannot be replayed on a fake site) needs
+    readiness checks on devices and operating systems, user nudges, grace periods and a final enforcement switch, which
+    is manual coordination at scale.
+  solution: >-
+    The Conditional Access Optimization Agent identifies eligible privileged administrators (up to 200 users per
+    campaign), assesses device and passkey readiness, generates a four-stage plan (target users, check device
+    readiness, require passkey registration, enforce passkey usage), guides users through the steps, and applies
+    Conditional Access enforcement as users become ready. It re-evaluates progress and advances users automatically.
+  outcomes:
+    - {lever: risk, description: "none published", figure: "none published", measures: "No result figures in the documentation", provenance: vendor-published, source_ref: MSFT-PASSKEYCAMP-2026}
+  prerequisites:
+    - "Entra ID P1 or higher and available security compute units (MSFT-PASSKEYCAMP-2026, Prerequisites)"
+    - "Passkeys enabled in the Authentication methods policy (MSFT-PASSKEYCAMP-2026)"
+    - "Security Administrator role; the Conditional Access Administrator role cannot manage campaigns (MSFT-PASSKEYCAMP-2026)"
+  risks_and_guardrails:
+    - "Campaign settings can be edited only while the campaign is in the 'Not started' state (MSFT-PASSKEYCAMP-2026, 'Review and customize')"
+    - "The documentation recommends excluding break-glass or emergency-access accounts (MSFT-PASSKEYCAMP-2026, tip under 'Review targeted users')"
+    - "Users who lack a compatible device or OS are held in the device-readiness stage rather than enforced (MSFT-PASSKEYCAMP-2026)"
+    - "Attackers push users to downgrade from a phishing-resistant method to a phishable one; Okta saw an August 2026 phishing kit telling users a hardware key 'may need to be re-registered' (OKTA-TI-MFADOWNGRADE-2026)"
+  human_checkpoints:
+    - "Administrator reviews the proposed plan and can edit targeted users and grace periods before deploying (MSFT-PASSKEYCAMP-2026)"
+    - "Suggestions can be dismissed like any other agent suggestion (MSFT-PASSKEYCAMP-2026)"
+  role_evolution: >-
+    The identity administrator reviews and tunes a campaign plan rather than building the list, notices and enforcement
+    steps by hand (MSFT-PASSKEYCAMP-2026, introduction).
+  evidence_grade: C
+  sources:
+    - {ref: MSFT-PASSKEYCAMP-2026, title: "Conditional Access Optimization Agent: passkey adoption campaigns", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/conditional-access-agent-optimization-passkeys", date: "2026-05-22", access: full, locator: "Introduction; Prerequisites; 'How the agent identifies passkey campaign candidates'; campaign stages"}
+    - {ref: OKTA-TI-2026, title: "New speed, same tricks: Defend against AI threats with security fundamentals (B. Winterford, Okta Threat Intelligence)", publisher: Okta Newsroom, type: vendor, url: "https://www.okta.com/newsroom/articles/new-speed-same-tricks-defend-against-ai-threats-with-security-fundamentals/", date: "2026-10-07", access: full, locator: "'How the security invariants performed'"}
+    - {ref: OKTA-TI-MFADOWNGRADE-2026, title: "When enrollment isn't enough: How attackers trick users into MFA downgrades", publisher: Okta Threat Intelligence, type: vendor, url: "https://www.okta.com/blog/threat-intelligence/when_enrollment_isnt_enough/", date: "2026-10-05", access: full, locator: "'Executive summary'; 'When the downgrade pretext is baked into the phishing kit'"}
+    - {ref: FORRESTER-MSPASSKEY-2026, title: "Microsoft Makes Passkeys Default: What Identity And Security Leaders Need To Do", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/microsoft-makes-passkeys-default-what-identity-and-security-leaders-need-to-do/", date: "2026-07-16", access: full, locator: "Passkeys default from 2026-09-01; SMS and voice retirement on 2027-02-01"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 02. Documentation only; it does not state preview or general availability and no customer is named.
+    Context (measures the control, not the agent): in about 6,000 real social-engineering events, Okta estimates
+    requiring enrolment of phishing-resistant factors could have stopped 88% of account-takeover attempts, rising to
+    99.75% with app sign-in enforcement (OKTA-TI-2026; vendor-published counterfactual). Forrester reports Microsoft
+    making passkeys the default in Entra from 2026-09-01 and retiring SMS and voice on 2027-02-01
+    (FORRESTER-MSPASSKEY-2026).
+
+- id: security-identity-access-03
+  title: LLM reviewer for access requests that approves routine requests above a threshold and escalates the rest
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [transaction-processing, expert-judgment]
+  pattern: document-to-decision
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Access that needs a manager's approval sits in queues, and approvers lack the context to judge a request.
+    Instacart's security lead says managers across the industry probably approve close to 100% of the time
+    (C1-INSTACART-2024). Opal says most teams lack time or context, so approval becomes the default; across about half a
+    million requests on its platform the median approval took 15 minutes (over 24 hours at some enterprises) and 43.5%
+    of granted access went unused for more than 90 days (OPAL-PALADIN-2026).
+  solution: >-
+    Instacart built Gadjit, an LLM-powered bot (later open-sourced). When a just-in-time (temporary) request needing
+    manager approval appears in the identity governance platform (ConductorOne), Gadjit pulls the entitlement
+    description, its risk level and the people who hold it. An LLM compares the requester's attributes with the
+    entitlement and its current holders; a separate scoring step estimates how likely the request is legitimate. Above a
+    set threshold the bot approves and access is provisioned automatically. Opal's agent, Paladin (announced
+    2026-08-06), reads the request, gathers context from connected apps (policy documents, tickets, incident tools,
+    device posture), reasons against the customer's policy and returns a decision with a plain-language rationale; it
+    can run as an advisor or handle routine requests and escalate the rest.
+  outcomes:
+    - {lever: quality, description: "Instacart says the bot's accuracy in testing is close to perfect", figure: "consistently nearly 100% in testing", measures: "Instacart's description of Gadjit accuracy in testing as relayed in a ConductorOne customer story; test set, ground truth and sample size not stated", provenance: vendor-published, source_ref: C1-INSTACART-2024}
+    - {lever: risk, description: "Share of privileged permissions moved to automated just-in-time access by the policy engine before the bot (rule-based, not AI)", figure: "95%", measures: "Share of Instacart's privileged permissions moved to automated just-in-time access with the C1.ai policy engine; the same page also says 100% of privileged access moved, and does not explain the difference", provenance: vendor-published, source_ref: C1-INSTACART-2024}
+    - {lever: speed, description: "Baseline from Opal's platform, not a result for its agent", figure: "median approval 15 minutes; 43.5% of granted access unused over 90 days", measures: "About half a million access requests on the Opal platform in the prior year", provenance: vendor-published, source_ref: OPAL-PALADIN-2026}
+  prerequisites:
+    - "Entitlement, HR and cloud data centralised in the governance platform and reachable by API (C1-INSTACART-2024)"
+    - "Access policies written as code (Terraform) so conditions are reviewable (C1-INSTACART-2024)"
+    - "An LLM plugin (the README lists OpenAI GPT-4o) and a scoring plugin, deployable as a Lambda webhook or a once-a-minute job (GADJIT-GITHUB-2024, 'Deployment')"
+    - "Connected data sources and a curated policy; Opal says customers choose what the agent reads (OPAL-PALADIN-2026)"
+  risks_and_guardrails:
+    - "Instacart states generative AI is not yet reliable enough to trust with objective approval decisions; it uses the LLM to read and interpret data and a separate computed score for the decision (C1-INSTACART-2024)"
+    - "Every step is visible in the platform audit log, and Instacart says auditors have raised no unanswered question about the audit path (C1-INSTACART-2024)"
+    - "Privileged access is capped at a maximum of 90 days (C1-INSTACART-2024)"
+    - "Opal says authority is graduated, the agent acts only within the role granted, and every recommendation and decision is logged with its reasoning (OPAL-PALADIN-2026)"
+  human_checkpoints:
+    - "Policy-as-code configurations are reviewed by account owners every quarter (C1-INSTACART-2024)"
+    - "Risky, unusual or ambiguous requests go to a person in Opal's design; the customer decides where the line sits (OPAL-PALADIN-2026)"
+    - "What happens at Instacart to requests that score below the threshold is not stated in the sources"
+  role_evolution: >-
+    Before the bot, highly paid staff engineers approved sensitive requests and ran quarterly reviews; security engineers
+    now write the policy code and the bot (C1-INSTACART-2024, closing section). Opal says careful review does not scale
+    by adding headcount (OPAL-PALADIN-2026).
+  evidence_grade: B
+  sources:
+    - {ref: C1-INSTACART-2024, title: "How Instacart is using AI to achieve zero standing privileges (customer story; undated, year inferred from the BSidesLV24 talk it describes)", publisher: ConductorOne (C1.ai), type: vendor, url: "https://www.conductorone.com/customers/instacart", date: "2024", access: full, locator: "Sections 'Automating JIT access with conditional policies' and 'Using AI to get to 100% JIT access automation'"}
+    - {ref: GADJIT-GITHUB-2024, title: "instacart/gadjit: Automated Access Request Reviews (README; undated, year inferred)", publisher: GitHub (Instacart), type: community, url: "https://github.com/instacart/gadjit", date: "2024", access: full, locator: "README: 'Plugin Architecture'; 'Deployment'"}
+    - {ref: SECBOULEVARD-BSIDESLV24-2025, title: "BSidesLV24 - Breaking Ground - JIT Happens: How Instacart Uses AI to Keep Doors Open and Risks Closed", publisher: Security Boulevard, type: conference, url: "https://securityboulevard.com/2025/04/bsideslv24-breaking-ground-jit-happens-how-instacart-uses-ai-to-keep-doors-open-and-risks-closed/", date: "2025-04", access: search-only, locator: "Title only (page blocked; seen in search results)"}
+    - {ref: OPAL-PALADIN-2026, title: "Paladin: AI that applies your policy to every request", publisher: Opal Security, type: vendor, url: "https://www.opal.dev/blog/paladin-policy-ai", date: "2026-08-06", access: full, locator: "Sections 'Approval becomes the default', 'Meet Paladin', 'Automate the routine, escalate the rest'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 05 (B) and discourse 14 (C). Instacart is the only first-party-built LLM approval bot found.
+    Grade B, not A: 'nearly 100%' has no denominator, and the 95% figure belongs to the rule-based policy engine. The
+    Opal blog index lists posts saying Paladin reached general availability; only titles were seen. A July 2026
+    1Password launch (auto-approve lower-risk requests) was seen only in search results and is described there as
+    rule-based routing; not used.
+
+- id: security-identity-access-04
+  title: Zero standing privilege with context-based just-in-time grants and revocation for privileged access
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [transaction-processing, software-systems]
+  pattern: monitor-diagnose-act
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Privileged access is still mostly standing (always on). Palo Alto Networks states that 61% of privileged access
+    requests are fulfilled with standing privilege rather than on demand (PANW-IDIRA-2026). Regulators require
+    privileged, emergency and administrator access on a need-to-use or ad hoc basis with strong authentication
+    (DORA-RTS-2024, Art. 21(e)(ii) and (f)(ii)) and individualised, restricted administration privileges
+    (NIS2-IMPL-2024, point 11.3).
+  solution: >-
+    Vendors replace always-on admin rights with access granted for a task, re-evaluated while in use and revoked when
+    risk changes. Palo Alto Networks describes three levels (vaulted persistent access, just-in-time access, and zero
+    standing privilege where its platform 'analyzes live context and risk' and grants short-lived, task-scoped access)
+    and says they can run in parallel (PANW-DYNPRIV-2026). Idira (generally available 2026-05-12) applies this to every
+    identity; CrowdStrike (2026-09-02) extends it to SaaS, endpoints, servers and cloud; SailPoint (2026-10-06) adds
+    just-in-time provisioning with conditions.
+  outcomes:
+    - {lever: risk, description: "Instacart moved most privileged permissions to automated just-in-time access using a rule-based policy engine (adjacent evidence, not AI)", figure: "95%", measures: "Share of Instacart's privileged permissions moved to automated just-in-time access (the page also says 100%); not an AI measurement", provenance: vendor-published, source_ref: C1-INSTACART-2024}
+    - {lever: risk, description: "Baseline practice, not a result: few organizations include ending privileged sessions in incident response", figure: "36% terminate active privileged sessions; 40% remove admin rights", measures: "Share of 2,930 survey respondents including each action in incident-response procedures (vendor-commissioned survey, fielded March-April 2026)", provenance: vendor-published, source_ref: PANW-IDLANDSCAPE-2026}
+  prerequisites:
+    - "Discovery of identities, entitlements and access paths first (PANW-DYNPRIV-2026, opening paragraphs)"
+    - "Separate administration accounts used only for administration (NIS2-IMPL-2024, point 11.3.2)"
+    - "Context signals (device, threat, business) that can trigger revocation, and an access policy engine (PANW-IDIRA-2026; C1-INSTACART-2024)"
+  risks_and_guardrails:
+    - "Palo Alto Networks says moving to zero standing privilege cannot happen overnight; vaulting stays for root, built-in and break-glass accounts (PANW-DYNPRIV-2026)"
+    - "56% of survey respondents say they cannot effectively enforce continuous least privilege for service accounts, so just-in-time cover may be partial (PANW-IDLANDSCAPE-2026, p. 15)"
+    - "Instacart's rollout kept a 90-day cap and policy-as-code review rather than removing oversight (C1-INSTACART-2024)"
+    - "CrowdStrike's post notes unreleased features are subject to change (CROWDSTRIKE-AGENTICIDP-2026, 'Forward-Looking Statements')"
+  human_checkpoints:
+    - "A few sensitive entitlements at Instacart still needed manager approval before the LLM bot (C1-INSTACART-2024)"
+    - "Approval of elevation requests is not described in the vendor sources; DORA requires ad hoc assignment (DORA-RTS-2024, Art. 21(e)(ii))"
+  role_evolution: >-
+    Instacart's infrastructure security lead describes the change as freeing highly paid staff engineers from approvals
+    and quarterly reviews (C1-INSTACART-2024, closing section).
+  evidence_grade: C
+  sources:
+    - {ref: PANW-IDIRA-2026, title: "Palo Alto Networks Introduces Idira: the Next-Generation Identity Security Platform Built for the AI Enterprise", publisher: Palo Alto Networks, type: vendor, url: "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise", date: "2026-05-12", access: full, locator: "Opening paragraphs (61% statistic); 'Control Every Privilege'; availability line"}
+    - {ref: PANW-DYNPRIV-2026, title: "Dynamic Privilege Control Beyond Login", publisher: Palo Alto Networks (Idira blog), type: vendor, url: "https://www.paloaltonetworks.com/blog/identity-security/dynamic-privilege-control-moment-of-action/", date: "2026-09-23", access: full, locator: "Sections 'Static Controls Leave Privilege Exposed', 'Modernize Control Without Abandoning Vaulting'"}
+    - {ref: PANW-MODERNPAM-2026, title: "Modern Privileged Access Management (PAM)", publisher: Palo Alto Networks (Idira blog), type: vendor, url: "https://www.paloaltonetworks.com/blog/identity-security/modern-privileged-access-management/", date: "2026-08-17", access: full, locator: "Sections 'What Is Modern PAM?' and 'Privilege Is Defined by the Action, Not the Account'"}
+    - {ref: CROWDSTRIKE-AGENTICIDP-2026, title: "CrowdStrike Announces Agentic Identity Provider", publisher: CrowdStrike, type: vendor, url: "https://www.crowdstrike.com/en-us/blog/crowdstrike-announces-agentic-identity-provider/", date: "2026-09-02", access: full, locator: "Section 'Extending Modern Privileged Access Everywhere Work Happens'"}
+    - {ref: SAILPOINT-AUTONOMOUS-2026, title: "From Chaos to Control: SailPoint Unlocks a Secure Agentic Era with Autonomous Identity Security", publisher: SailPoint, type: vendor, url: "https://www.sailpoint.com/press-releases/sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security", date: "2026-10-06", access: full, locator: "'Zero Standing Privilege for humans and machines' bullet"}
+    - {ref: C1-INSTACART-2024, title: "How Instacart is using AI to achieve zero standing privileges (customer story; undated, year inferred)", publisher: ConductorOne (C1.ai), type: vendor, url: "https://www.conductorone.com/customers/instacart", date: "2024", access: full, locator: "Section 'Automating JIT access with conditional policies'"}
+    - {ref: PANW-IDLANDSCAPE-2026, title: "2026 Identity Security Landscape (research by Vanson Bourne, n=2,930)", publisher: Palo Alto Networks, type: survey, url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/2026-identity-security-landscape-report.pdf", date: "2026-06", access: full, locator: "Figure 5 (p. 14); p. 15"}
+    - {ref: DORA-RTS-2024, title: "Commission Delegated Regulation (EU) 2024/1774 (ICT risk management framework RTS under DORA)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774", date: "2024-06-25", access: full, locator: "Art. 21"}
+    - {ref: NIS2-IMPL-2024, title: "Commission Implementing Regulation (EU) 2024/2690 (technical and methodological requirements under NIS2)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2690", date: "2024-10-18", access: full, locator: "Annex, point 11.3"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 11, discourse 09 and governance 10 (governance had augment). Grade C: the AI element is vendor
+    language on a mostly rule-based control; the only named measurement (Instacart) is adjacent and not AI. The source
+    and denominator of Palo Alto Networks' 61% figure are not named in the release. Agent privilege is covered in the
+    ai-security module.
+
+- id: security-identity-access-05
+  title: Conversational assistant for employee IT and access questions and requests
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [client-interaction, transaction-processing]
+  pattern: service-agent-escalation
+  ladder: augment
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: in-production
+  problem: >-
+    New hires and employees must already know which of about 1,500 applications to ask about access, devices and VPN, so
+    requests go to the wrong place; Okta says building a separate agent per workflow would produce tens of thousands of
+    agents (OKTA-DEX-2026, Lesson 1).
+  solution: >-
+    Okta built Dex, an orchestrating agent on its Okta One platform that covers IT, people, travel and expense support
+    as 'one front door', including routing access requests. Dex is registered in Okta's directory like a human identity
+    and is checked against the signed-in user's access each time. SailPoint has announced (2026-10-06) an AI agent for
+    natural-language access requests inside chat tools, with custom forms for business justification.
+  outcomes:
+    - {lever: experience, description: "Employee adoption two weeks after launch", figure: "25% in two weeks", measures: "Share of Okta employees using Dex within two weeks of launch (denominator not stated by Okta)", provenance: self-reported, source_ref: OKTA-DEX-2026}
+    - {lever: capacity, description: "Interactions handled to date", figure: "over 23,500", measures: "Interactions Dex has fielded 'to date' (date of count not stated)", provenance: self-reported, source_ref: OKTA-DEX-2026}
+  prerequisites:
+    - "Agent identities in the central directory, with access capped at the signed-in human's access (OKTA-DEX-2026, Lesson 2)"
+    - "Knowledge bases cleaned until the agent gives the right answer (OKTA-DEX-2026, Lesson 3)"
+    - "Tool scoping per identity to control token cost (OKTA-DEX-2026, Lesson 3)"
+  risks_and_guardrails:
+    - "Okta says an agent should not have more access to systems and data than the human it acts for, and secure token storage replaces static credentials (OKTA-DEX-2026, Lesson 2)"
+    - "'You can't have a compensation agent that's only 80% accurate'; AI can be confidently incorrect (OKTA-DEX-2026, Lesson 3)"
+    - "SailPoint's conversational requests were announced with no general-availability date in the release (SAILPOINT-HUMANFABRIC-2026)"
+  human_checkpoints:
+    - "Not described for Dex; SailPoint's agent collects justification and compliance details in the chat flow before the request proceeds (SAILPOINT-HUMANFABRIC-2026)"
+  role_evolution: >-
+    Okta's SVP says IT risks becoming the 'Department of No' under AI pressure, and positions fewer, more capable agents
+    on a governed identity base as the alternative (OKTA-DEX-2026, introduction and closing).
+  evidence_grade: B
+  sources:
+    - {ref: OKTA-DEX-2026, title: "Lessons learned from securing our digital workforce (J. Cline, SVP Technology, Data & Intelligence)", publisher: Okta Newsroom, type: vendor, url: "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/", date: "2026-09-17", access: full, locator: "Lesson 1 (Dex adoption figures); Lesson 2; Lesson 3"}
+    - {ref: SAILPOINT-HUMANFABRIC-2026, title: "SailPoint Announces Modernization Capabilities for both Cloud and On-Premises Identity Security", publisher: SailPoint, type: vendor, url: "https://www.sailpoint.com/press-releases/sailpoint-announces-modernization-capabilities-for-both-cloud-and-on-premises-identity-security", date: "2026-10-06", access: full, locator: "'Conversational Access Requests' bullet"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 06 and discourse 11 (both B). Grade capped at B: the figures are adoption counts for general
+    IT, HR, travel and expense support, not access requests alone, and say nothing on decision quality. Okta is both
+    vendor and deploying firm, so figures are self-reported. Overlaps with an IT service-desk use case; the agent-identity
+    half (Dex registered in the directory) belongs to the ai-security module.
+
+- id: security-identity-access-06
+  title: Evidence-based recommendations and an agent first pass on access review decisions
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Regulators set review frequencies that create a lot of reviewer work: DORA's technical standard requires access
+    rights to be updated at least yearly and at least every six months for systems supporting critical or important
+    functions (DORA-RTS-2024, Art. 21(e)(iv)); NYDFS requires at least annual review (NYDFS-AIGUIDE-2024). Reviewers in
+    these certifications face long lists with little context, and SailPoint and Lumos say many approve everything
+    ('rubber stamping') (SAILPOINT-RECS-2022; LUMOS-UAR-2025); no independent rate was found.
+  solution: >-
+    The review screen carries system recommendations. Microsoft Entra marks users inactive for 30 days with a Deny
+    recommendation and uses a machine-learning 'user-to-group affiliation' score based on reporting-structure distance
+    to suggest Deny for outliers. SailPoint's Access Recommendations use peer-group analysis to suggest approve or
+    revoke and auto-approve low-risk items. Lumos describes an AI agent that makes a first pass on every identity
+    (role, department, sensitivity, last activity, peer group, separation-of-duties conflicts). Opal (2026-06-15)
+    surfaces low-risk grants with the signals used so a reviewer can clear them in one click, and sends risky grants to a
+    person.
+  outcomes:
+    - {lever: speed, description: "Lumos states review campaigns finish faster than manual spreadsheet reviews", figure: "up to 6x faster", measures: "Lumos's claim for finishing review campaigns; baseline, sample and customer not stated", provenance: vendor-published, source_ref: LUMOS-UAR-2025}
+    - {lever: quality, description: "none published; no override rate, false-approval rate or before/after comparison in any source", figure: "none published", measures: "n/a", provenance: vendor-published, source_ref: OPAL-REVIEWS-2026}
+  prerequisites:
+    - "Usage and last-sign-in data per entitlement, an organisation hierarchy and manager attribute; Entra's affiliation recommendation needs an ID Governance licence and does not support groups over 600 users (MSFT-ARREC-2026)"
+    - "Connectors that bring humans, service accounts and other non-human identities into one review (LUMOS-UAR-2025)"
+    - "A written policy the model can be tuned to, with a confidence threshold a recommendation must clear before it acts (OPAL-REVIEWS-2026, 'Tune the AI to your policy')"
+  risks_and_guardrails:
+    - "SailPoint publishes no error or override rate for its low-risk auto-approvals (SAILPOINT-RECS-2022)"
+    - "Entra's inactivity recommendation is computed when the review starts and not updated during it; reporting-structure distance can mark legitimate cross-division members for Deny, as the documentation's own example shows (MSFT-ARREC-2026)"
+    - "Admins can query which review decisions overrode AI-suggested actions, which gives a way to track override rates (MSFT-GOVOPT-2026, 'Access review decision analysis')"
+    - "Opal logs every recommendation and approval with its reasoning for audit (OPAL-REVIEWS-2026)"
+    - "NHIMG's summary argues human sign-off keeps accountability even when AI supports reviewers (NHIMG-SAILPOINT-2026)"
+  human_checkpoints:
+    - "Application owners and managers approve or deny each item; recommendations are decision helpers (MSFT-ARREC-2026; LUMOS-UAR-2025)"
+    - "Opal says risky calls always reach a person and autonomy is a dial the customer sets (OPAL-REVIEWS-2026, 'A dial, not a switch')"
+  role_evolution: >-
+    Reviewers check evidence and exceptions instead of reading raw entitlement rows. Prosper's corporate IT manager says
+    activity and last-login data inside the review screen turned a compliance task into a security check
+    (LUMOS-UAR-2025, customer quote). Opal frames the constraint as reviewer attention, not effort (OPAL-REVIEWS-2026).
+  evidence_grade: B
+  sources:
+    - {ref: LUMOS-UAR-2025, title: "Lumos Launches Industry-First Agentic User Access Reviews, Moving Towards Autonomous Identity Governance", publisher: Lumos, type: vendor, url: "https://www.lumos.com/blog/lumos-launches-industry-first-agentic-user-access-reviews", date: "2025-12-08", access: full, locator: "Launch text; 'Customer Validation' (Prosper); 'Key Capabilities'"}
+    - {ref: MSFT-ARREC-2026, title: "Review recommendations for access reviews (Microsoft Entra ID Governance)", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/id-governance/review-recommendations-access-reviews", date: "2026-03-12", access: full, locator: "'Inactive user recommendations'; 'User-to-Group Affiliation'"}
+    - {ref: MSFT-GOVOPT-2026, title: "Governance and optimization with Security Copilot in Microsoft Entra", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-governance-optimization", date: "2025-09-23", access: full, locator: "'Access review decision analysis' prompts"}
+    - {ref: SAILPOINT-RECS-2022, title: "AI-driven Access Recommendations: Less Certification. More Revocation.", publisher: SailPoint, type: vendor, url: "https://www.sailpoint.com/blog/ai-driven-access-recommendations-less-certification-more-revocation", date: "2022-06-30", access: full, locator: "Section 'AI-driven Access Recommendations'"}
+    - {ref: OPAL-REVIEWS-2026, title: "AI-Guided access reviews, now in Opal", publisher: Opal Security, type: vendor, url: "https://www.opal.dev/blog/ai-guided-access-reviews", date: "2026-06-15", access: full, locator: "Sections 'Review faster', 'A dial, not a switch', 'Tune the AI to your policy'"}
+    - {ref: NHIMG-SAILPOINT-2026, title: "AI-driven access recommendations expose the limits of certification (NHIMG summary of the SailPoint post)", publisher: Non-Human Identity Management Group, type: community, url: "https://nhimg.org/articles/ai-driven-access-recommendations-expose-the-limits-of-certification/", date: "2026-06-24", access: full, locator: "'At a glance' and 'Key questions'"}
+    - {ref: DORA-RTS-2024, title: "Commission Delegated Regulation (EU) 2024/1774 (ICT risk management framework RTS under DORA)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774", date: "2024-06-25", access: full, locator: "Art. 21(e)(iv)"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Access Controls"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 04 (B), discourse 01 (C) and governance 08 (C). Grade B: Prosper is named but the evidence is a
+    quote, and 'up to 6x' has no stated baseline. Date conflict: NHIMG labels the SailPoint post 2025-12-10 but the
+    SailPoint page's JSON-LD gives 2022-06-30, so this is a long-standing feature. Opal names Mercari as governing more
+    than 5,000 Okta entitlements through automated reviews but does not say Mercari uses the AI features. Search-only
+    figures not used: over 90% of certifications approved without meaningful review (unattributed), a Ponemon 63%
+    rubber-stamping figure, an Avatier 70% fatigue reduction, and SailPoint's April 2026 infographic (30% cite reviewer
+    fatigue leading to rubber-stamping). Control testing of user access reviews by audit agents is in governance-risk
+    (provisional id security-governance-risk-07).
+
+- id: security-identity-access-07
+  title: Usage-based role mining and entitlement right-sizing recommendations
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [expert-judgment, data-reporting]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: announced
+  problem: >-
+    Role engineering is hand-curated, and stable access sits as long entitlement lists reviewers cannot interpret
+    (NHIMG-OMADA-2026). Least privilege is mandated (DORA-RTS-2024, Art. 21(a)) but hard to keep: 56% of survey
+    respondents say they cannot effectively enforce continuous least privilege for service accounts
+    (PANW-IDLANDSCAPE-2026, p. 15).
+  solution: >-
+    Google's IAM recommender examines up to 90 days of permission usage and recommends removing or replacing roles that
+    grant excess permissions; a machine-learning model also tries to identify permissions a principal is likely to need
+    even if not recently used. Opal lists role mining (propose roles and cohorts from access people actually hold and
+    use) and policy suggestions (promote access every cohort member gets to auto-approval, flag outliers) as where its
+    agent 'is going'. Omada, via an NHIMG summary, says AI groups stable access into lean roles and focuses reviews on
+    permissions that do not match peer patterns.
+  outcomes:
+    - {lever: risk, description: "none published; no reduction in excess permissions, accuracy or false-removal rate in the documentation", figure: "none published", measures: "n/a", provenance: vendor-published, source_ref: GOOGLE-IAMREC-2026}
+  prerequisites:
+    - "Usage data on granted access over an observation window, 90 days by default (30 or 60 days configurable for project-level recommendations) (GOOGLE-IAMREC-2026)"
+    - "Accurate manager and HR mappings plus entitlement context (NHIMG-OMADA-2026)"
+  risks_and_guardrails:
+    - "Recommendations rest on observed use within the window, so rarely used but needed permissions are the risk; Google's ML component exists to reduce that (GOOGLE-IAMREC-2026)"
+    - "PII is dropped and k-anonymity applied in Google's model pipeline (GOOGLE-IAMREC-2026)"
+    - "Automated lifecycle management is expected only 'where feasible and appropriate' under DORA (DORA-RTS-2024, Art. 20)"
+  human_checkpoints:
+    - "Recommendations suggest removal or replacement; applying them is a separate step (GOOGLE-IAMREC-2026)"
+    - "Not specified for Opal's role mining or policy suggestions"
+  role_evolution: >-
+    Platform and IAM teams move from writing roles by hand to approving or rejecting recommended changes at scale
+    (GOOGLE-IAMREC-2026, overview).
+  evidence_grade: C
+  sources:
+    - {ref: GOOGLE-IAMREC-2026, title: "Overview of role recommendations, Google Cloud Policy Intelligence (page undated, retrieved 2026-10-17)", publisher: Google Cloud, type: vendor, url: "https://cloud.google.com/policy-intelligence/docs/role-recommendations-overview", date: "2026-10-17", access: full, locator: "Overview and 'Machine learning for policy insights'"}
+    - {ref: OPAL-PALADIN-2026, title: "Paladin: AI that applies your policy to every request", publisher: Opal Security, type: vendor, url: "https://www.opal.dev/blog/paladin-policy-ai", date: "2026-08-06", access: full, locator: "Section 'Where Paladin is going'"}
+    - {ref: NHIMG-OMADA-2026, title: "AI augments IGA by fixing review fatigue and weak audit context (NHIMG summary of an Omada post)", publisher: Non-Human Identity Management Group, type: community, url: "https://nhimg.org/articles/ai-augments-iga-by-fixing-review-fatigue-and-weak-audit-context/", date: "2026-06-24", access: full, locator: "'Context' and 'Key questions'"}
+    - {ref: DORA-RTS-2024, title: "Commission Delegated Regulation (EU) 2024/1774 (ICT risk management framework RTS under DORA)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774", date: "2024-06-25", access: full, locator: "Art. 20 and 21(a)"}
+    - {ref: PANW-IDLANDSCAPE-2026, title: "2026 Identity Security Landscape (research by Vanson Bourne, n=2,930)", publisher: Palo Alto Networks, type: survey, url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/2026-identity-security-landscape-report.pdf", date: "2026-06", access: full, locator: "p. 15"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from discourse 02 and governance 09. Product documentation and a forward-looking vendor post; no customer or
+    measured result was found for any entitlement-recommendation tool. The Omada original (dated 2025-08-15 by NHIMG)
+    was not opened, so Omada claims are second-hand. Cloud IAM right-sizing overlaps with the cloud-infrastructure
+    module.
+
+- id: security-identity-access-08
+  title: Continuous full-population identity posture checks with remediation and recorded evidence
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [review-assurance, data-reporting]
+  pattern: monitor-diagnose-act
+  ladder: automate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: announced
+  problem: >-
+    Periodic certifications and posture dashboards find stale access after the fact, and dashboards flag risks without
+    fixing them. Survey respondents describe credentials active years after a project ended (PANW-IDLANDSCAPE-2026, p.
+    15). Several regimes require documented, periodic proof of who has access: DORA, the NIS2 implementing regulation (a
+    register of access rights and documented review results) and NYDFS (DORA-RTS-2024, Art. 21; NIS2-IMPL-2024, points
+    11.2.2-11.2.3; NYDFS-AIGUIDE-2024).
+  solution: >-
+    SailPoint's Autonomous Identity Security Posture Management (announced 2026-10-06) uses live identity context to
+    detect dormant accounts, partially offboarded identities, orphaned access, shadow admins and privileged outliers,
+    then remediates, from one-click fixes (revoke access, disable an identity, assign an owner) to fully automated policy
+    enforcement. Saviynt (2025-10-15) and Palo Alto Networks' Idira (2026-05-12) describe similar discovery and
+    remediation across human and non-human identities. The governance angle adds an idea: test the full population of
+    accounts and entitlements against policy continuously and record the result as regulator-facing evidence, instead of
+    point-in-time sampling.
+  outcomes:
+    - {lever: risk, description: "none published", figure: "none published", measures: "Announcements carry no outcome figures", provenance: vendor-published, source_ref: SAILPOINT-AUTONOMOUS-2026}
+  prerequisites:
+    - "A unified identity data layer with connectors to apps and cloud (SAILPOINT-AUTONOMOUS-2026)"
+    - "Policies that define when remediation may run without a person (SAILPOINT-AUTONOMOUS-2026)"
+    - "A register of access rights granted, logging of access-rights management and documented review results (NIS2-IMPL-2024, points 11.2.2-11.2.3)"
+  risks_and_guardrails:
+    - "Remediation runs 'on each organization's terms', from one-click to fully automated, so autonomy is a configured setting (SAILPOINT-AUTONOMOUS-2026)"
+    - "SailPoint's own release says features not yet available may not be delivered (SAILPOINT-HUMANFABRIC-2026, forward-looking statements)"
+    - "Under NIS2 and DORA the legal duty to review stays with the entity; automating evidence does not move accountability (NIS2-IMPL-2024; DORA-RTS-2024, Art. 21)"
+  human_checkpoints:
+    - "One-click remediation leaves the decision with an admin; fully automated enforcement is the opt-in end of the range (SAILPOINT-AUTONOMOUS-2026)"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: C
+  sources:
+    - {ref: SAILPOINT-AUTONOMOUS-2026, title: "From Chaos to Control: SailPoint Unlocks a Secure Agentic Era with Autonomous Identity Security", publisher: SailPoint, type: vendor, url: "https://www.sailpoint.com/press-releases/sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security", date: "2026-10-06", access: full, locator: "A-ISPM section"}
+    - {ref: SAILPOINT-HUMANFABRIC-2026, title: "SailPoint Announces Modernization Capabilities for both Cloud and On-Premises Identity Security", publisher: SailPoint, type: vendor, url: "https://www.sailpoint.com/press-releases/sailpoint-announces-modernization-capabilities-for-both-cloud-and-on-premises-identity-security", date: "2026-10-06", access: full, locator: "Forward-looking statements"}
+    - {ref: SAVIYNT-AIONB-2025, title: "Saviynt Unveils Major AI Capabilities for Identity Security", publisher: Saviynt, type: vendor, url: "https://saviynt.com/press-release/saviynt-unveils-major-ai-capabilities-for-identity-security", date: "2025-10-15", access: full, locator: "'Secure All Identities' section"}
+    - {ref: PANW-IDIRA-2026, title: "Palo Alto Networks Introduces Idira: the Next-Generation Identity Security Platform Built for the AI Enterprise", publisher: Palo Alto Networks, type: vendor, url: "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise", date: "2026-05-12", access: full, locator: "'Discover Identity Risk' bullet"}
+    - {ref: PANW-IDLANDSCAPE-2026, title: "2026 Identity Security Landscape (research by Vanson Bourne, n=2,930)", publisher: Palo Alto Networks, type: survey, url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/2026-identity-security-landscape-report.pdf", date: "2026-06", access: full, locator: "'The Ghosts of Access Past', p. 15"}
+    - {ref: DORA-RTS-2024, title: "Commission Delegated Regulation (EU) 2024/1774 (ICT risk management framework RTS under DORA)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774", date: "2024-06-25", access: full, locator: "Art. 21"}
+    - {ref: NIS2-IMPL-2024, title: "Commission Implementing Regulation (EU) 2024/2690 (technical and methodological requirements under NIS2)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2690", date: "2024-10-18", access: full, locator: "Annex, points 11.2.2-11.2.3"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Access Controls"}
+    - {ref: PATHLOCK-GARTNER-IGA-2026, title: "2026 Gartner IGA Market Guide: top findings (Pathlock summary)", publisher: Pathlock, type: vendor, url: "https://pathlock.com/blog/2026-gartner-iga-market-guide-top-findings/", date: "2026", access: search-only, locator: "Search snippet"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 10 (C) and governance 14 (D idea, full-population evidence for regulators). Announcements only;
+    no named customer. A Pathlock summary of Gartner's 2026 IGA Market Guide, seen only in search, says IGA is moving
+    from quarterly manual reviews to continuous, outcome-driven processes; the Gartner guide is paywalled. No
+    organization using AI to produce regulator-facing IAM evidence was found. SailPoint's Horizons survey (340
+    leaders) is in the module metrics.
+
+- id: security-identity-access-09
+  title: Natural-language governance queries, audit preparation and lifecycle-workflow drafting for identity admins
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [data-reporting, document-production, software-systems]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Preparing for a governance audit means pulling access review status, entitlement catalogues and privileged-role
+    settings from several admin screens. Identity administrators also spend time configuring joiner-mover-leaver
+    (starter, role change, leaver) workflows and diagnosing their processing results.
+  solution: >-
+    Security Copilot in the Microsoft Entra admin center answers governance prompts such as the top pending access
+    reviews, who approved or denied in a review, which decisions overrode AI suggestions, what is in an entitlement
+    catalogue, and privileged identity management (PIM) settings. For lifecycle workflows it gives step-by-step guidance
+    for a new workflow from a prompt, lists templates, troubleshoots processing results and compares workflow versions.
+    The admin still creates and enables the workflow.
+  outcomes:
+    - {lever: capacity, description: "none published; Microsoft says it saves administrators time and effort", figure: "none published", measures: "No measurements in the documentation", provenance: vendor-published, source_ref: MSFT-GOVOPT-2026}
+  prerequisites:
+    - "Security Copilot enabled; Entra ID P2 and Identity Governance Administrator (or Security Administrator for PIM) depending on use (MSFT-GOVOPT-2026, Prerequisites)"
+    - "Entra ID Governance licence and Lifecycle Workflow Administrator role for workflow prompts (MSFT-LIFECYCLE-2026)"
+  risks_and_guardrails:
+    - "If a prompt is blocked by missing permissions, Copilot shows the recommended role and can activate it through an eligible PIM assignment on request (MSFT-GOVOPT-2026, Note)"
+    - "Verification testing happens before the workflow schedule is enabled (MSFT-LIFECYCLE-2026, 'Create step-by-step guidance')"
+  human_checkpoints:
+    - "Admin builds and enables the workflow; Copilot output is guidance (MSFT-LIFECYCLE-2026)"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: C
+  sources:
+    - {ref: MSFT-GOVOPT-2026, title: "Governance and optimization with Security Copilot in Microsoft Entra", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-governance-optimization", date: "2025-09-23", access: full, locator: "Introduction; 'Access review decision analysis'; PIM use cases"}
+    - {ref: MSFT-LIFECYCLE-2026, title: "Manage lifecycle workflows using Security Copilot in Microsoft Entra", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-lifecycle-workflows", date: "2025-09-23", access: full, locator: "'Create step-by-step guidance for a new lifecycle workflow'; 'Troubleshoot the processing results'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 07 and discourse 10. Documentation only (ms.date 2025-09-23, updated 2026-02-26); no named
+    customers. The same pages are the best public source on how override rates for AI suggestions could be tracked.
+
+- id: security-identity-access-10
+  title: Agentic onboarding of connected and disconnected applications into identity governance
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [software-systems, coordination-scheduling]
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Bringing applications under identity governance is a long-running bottleneck. Saviynt cites a Ponemon study that 49%
+    of organisations do not track how many disconnected apps (apps with no automated connector) they have
+    (SAVIYNT-AIONB-2025).
+  solution: >-
+    Saviynt's Agentic AI Onboarding for Applications (announced 2025-10-15) uses agentic AI to speed integration of
+    connected and disconnected applications across hybrid environments so they come under one governance platform.
+  outcomes:
+    - {lever: speed, description: "none published", figure: "none published", measures: "The release gives no onboarding time or cost figures", provenance: vendor-published, source_ref: SAVIYNT-AIONB-2025}
+  prerequisites:
+    - "Not described in the release"
+  risks_and_guardrails:
+    - "Not described in the release; no customer is named (SAVIYNT-AIONB-2025)"
+  human_checkpoints:
+    - "Not described in the release"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: C
+  sources:
+    - {ref: SAVIYNT-AIONB-2025, title: "Saviynt Unveils Major AI Capabilities for Identity Security", publisher: Saviynt, type: vendor, url: "https://saviynt.com/press-release/saviynt-unveils-major-ai-capabilities-for-identity-security", date: "2025-10-15", access: full, locator: "Section 'Onboard All Applications with Agentic AI'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 12. Announcement only. Kept because it is the only entry on application onboarding, a common IAM
+    bottleneck. The 49% figure is Saviynt's citation of a Ponemon study (sample and wording not checked).
+
+- id: security-identity-access-11
+  title: LLM drafting of access-control policy as code, checked by tests or a verifier before review (idea)
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [software-systems, document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Access requirements are written in prose and must be turned into enforceable policies such as OPA Rego, Cedar or
+    cloud IAM policy. Manually written policies become complex and error prone (ARXIV-2503.11573), and the RAISE authors
+    say even frontier LLMs often produce policies that violate the intended authorisation semantics (ARXIV-2609.33796).
+  solution: >-
+    Idea under study: an LLM drafts policy code, then schema validation, linting, compilation and generated positive and
+    negative tests (or a formal verifier) check it before a person reviews it. A March 2025 preprint and two September
+    2026 preprints test versions of this.
+  outcomes:
+    - {lever: quality, description: "End-to-end correctness of generated Rego policies, structured pipeline vs a single prompt", figure: "50.3% vs 15.3%", measures: "Share of 372 access-control statements for which generated Rego compiled, linted and passed positive and negative tests (strict measure of deployable correctness)", provenance: independent, source_ref: ARXIV-2609.24036}
+    - {lever: quality, description: "Cedar policy synthesis: a small tuned model against zero-shot frontier models", figure: "+13.33 and +16.26 percentage points over two named zero-shot models", measures: "Semantic success on held-out scenarios in the authors' CedarInstruct data (5,800 scenarios), as stated in the abstract", provenance: independent, source_ref: ARXIV-2609.33796}
+  prerequisites:
+    - "A verifier or test harness for the target policy language (ARXIV-2609.24036)"
+    - "Structured prompts based on the policy-language syntax (ARXIV-2503.11573, abstract)"
+  risks_and_guardrails:
+    - "Authors report untrained models rarely write valid Cedar (ARXIV-2609.33796) and a direct single prompt is correct only 15.3% of the time on their test (ARXIV-2609.24036)"
+  human_checkpoints:
+    - "Not studied; the papers measure automated checks, not human review"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: D
+  sources:
+    - {ref: ARXIV-2609.24036, title: "Structured Decomposition for Reliable LLM-Generated Access Control Policies (Gupta, Sreenivasamurthy)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.24036", date: "2026-09-21", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2609.33796, title: "RAISE: Reinforcing Access Control Policy Synthesis in LLMs via Symbolic Evaluation (Zhou, Vatsa, Eiers)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2609.33796", date: "2026-09-27", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2503.11573, title: "Synthesizing Access Control Policies using Large Language Models", publisher: arXiv (preprint, not peer reviewed), type: academic, url: "https://arxiv.org/abs/2503.11573", date: "2025-03-14", access: full, locator: "Abstract"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea (research only): merged from practice 20 and discourse 16; no deployment found. All are preprints and results
+    come from the authors' own datasets. Microsoft's Copilot gives lifecycle-workflow guidance (entry 09) but not
+    verified policy generation. Gartner's IAM Summit (from 2026-12-07) lists runtime and policy-based authorisation
+    sessions, which shows interest but not this use (GARTNER-IAMSUMMIT-2026, cited in the module). Cloud IAM policy
+    authoring overlaps with the cloud-infrastructure module.
+
+- id: security-identity-access-12
+  title: IAM engineers building identity automation with AI coding tools and LLMs
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [software-systems]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    IAM teams run single sign-on integrations, SCIM provisioning (the standard for creating and removing accounts across
+    apps), role models, certification and privileged-access platforms with small staffs and many applications.
+  solution: >-
+    Cloudflare's IAM postings require hands-on engineering experience 'leveraging AI/LLMs to solve operational or
+    technical challenges' and expect engineers to use AI tools from code generation to debugging 'and bring the judgment
+    to know when to trust them'. Coinbase's IAM posting says staff use generative AI responsibly with human oversight to
+    improve workflow efficiency, cost and quality.
+  outcomes:
+    - {lever: capacity, description: "none published", figure: "none published", measures: "Job postings carry no outcome data", provenance: self-reported, source_ref: CLOUDFLARE-JOB-IAM-2026}
+  prerequisites:
+    - "Production-grade automation scripting skills and judgement on when AI output is trustworthy (CLOUDFLARE-JOB-IAMSYS-2026)"
+  risks_and_guardrails:
+    - "Human oversight of generative AI output is required wording at Coinbase (COINBASE-JOB-IAM-2026)"
+  human_checkpoints:
+    - "Engineers review and own AI-assisted changes (CLOUDFLARE-JOB-IAMSYS-2026, 'AI-assisted development')"
+  role_evolution: >-
+    AI use is now a stated hiring requirement for IAM engineering roles at Cloudflare (CLOUDFLARE-JOB-IAM-2026,
+    'Desirable skills'). Coinbase's IAM lead role covers one platform for human, AI-agent, service and workload identity
+    across 700+ internal systems (COINBASE-JOB-IAM-2026).
+  evidence_grade: B
+  sources:
+    - {ref: CLOUDFLARE-JOB-IAM-2026, title: "IAM Security Engineer (job posting 8157997)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8157997?gh_jid=8157997", date: "2026-09-11", access: full, locator: "'Desirable skills, knowledge and experience'"}
+    - {ref: CLOUDFLARE-JOB-IAMSYS-2026, title: "Senior Systems Engineer, Identity & Access Management (job posting 8104955)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8104955?gh_jid=8104955", date: "2026-08-06", access: full, locator: "'AI-assisted development' requirement"}
+    - {ref: COINBASE-JOB-IAM-2026, title: "Senior Staff Software Engineer, Platform - IAM (job posting 8155366)", publisher: Coinbase, type: job-posting, url: "https://www.coinbase.com/careers/positions/8155366?gh_jid=8155366", date: "2026-09-09", access: full, locator: "Role summary and generative-AI sentence"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 19. Pattern is 'other': engineers use AI coding assistants and LLMs to build identity automation. Evidence
+    of expectations, not measured productivity. Both Cloudflare postings were still open when checked on 2026-10-17.
+
+- id: security-identity-access-13
+  title: Natural-language risk summaries and next steps for risky users, plus a continuous identity-risk agent
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [research-synthesis, expert-judgment]
+  pattern: research-brief
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Microsoft describes identity risk investigation as needing context that admins and SOC analysts must gather before
+    deciding what to do with a flagged user (MSFT-RISKYUSER-2026, introduction).
+  solution: >-
+    In Entra ID Protection, Copilot summarises in natural language why a user's risk level was raised and lists next
+    steps and documentation (for example, create sign-in-risk and user-risk Conditional Access policies). Admins can also
+    ask Security Copilot to list risky users, show a user's risk history and investigate incidents. A separate Identity
+    Risk Management Agent (preview) runs every 24 hours, on demand or as continuous monitoring.
+  outcomes:
+    - {lever: speed, description: "none published", figure: "none published", measures: "Documentation says the feature 'helps reduce the time to resolution' but gives no measurement", provenance: vendor-published, source_ref: MSFT-RISKYUSER-2026}
+  prerequisites:
+    - "Entra ID P2 licences for ID Protection risky-user summarisation (MSFT-RISKYUSER-2026)"
+    - "Security Copilot enabled in the tenant; at least Security Reader to view risky users; Security Administrator for the Identity Risk Management Agent (MSFT-RISKYUSER-2026; MSFT-ENTRAAGENTS-2026)"
+  risks_and_guardrails:
+    - "The agent has its own Entra Agent ID and a fixed set of permissions that cannot be changed or removed (MSFT-ENTRAAGENTS-2026, 'What are Microsoft Entra agents?')"
+    - "When the Identity Risk Management Agent is on, a separate agent-written risky-user summary appears beside the Copilot one (MSFT-RISKYUSER-2026, Note)"
+  human_checkpoints:
+    - "Summary and recommendations are advice; the admin or analyst decides on remediation (MSFT-RISKYUSER-2026)"
+  role_evolution: >-
+    Not described in the sources.
+  evidence_grade: C
+  sources:
+    - {ref: MSFT-RISKYUSER-2026, title: "Respond to identity threats using Risky User summarization (Security Copilot in Microsoft Entra)", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-risky-user-summarization", date: "2025-09-23", access: full, locator: "Introduction; 'Investigate risky users'; 'Investigate risky users using Copilot'"}
+    - {ref: MSFT-ENTRAAGENTS-2026, title: "Microsoft Entra agents (overview)", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/security-copilot/entra-agents", date: "2026-01-21", access: full, locator: "'Identity Risk Management Agent (Preview)' attribute table"}
+    - {ref: MSFT-ENTRAGA-2025, title: "Smarter identity security starts with AI (blog, A. Simons)", publisher: "Microsoft Tech Community, Microsoft Entra Blog", type: vendor, url: "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/-/4429001", date: "2025-07-14", access: full, locator: "Section 'Security Copilot in Microsoft Entra is now generally available'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 03 (augment) and discourse 04 (assist). Kept as augment: the summary is a first pass at the
+    investigation that a person then acts on. Microsoft says Security Copilot in Entra became generally available on
+    2025-07-14. No named customer or measurement was found. The Identity Risk Management Agent is labelled preview.
+
+- id: security-identity-access-14
+  title: Machine-learning risk scoring of sign-ins and sessions, with automatic step-up, block or session termination
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [research-synthesis, transaction-processing]
+  pattern: monitor-diagnose-act
+  ladder: automate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: announced
+  problem: >-
+    Policies evaluated only at sign-in miss session hijacking and token theft later in the session; Okta cites 1.9
+    billion session cookies stolen from Fortune 1000 employees in 2022, from a SpyCloud report (OKTA-ITP-2026). Federal
+    guidance says adversaries increasingly target the tokens and assertions behind single sign-on and API access
+    (CISA-IR8587-2026). In a vendor survey 97% say fragmented identity tools add time to identity incidents, averaging
+    12 hours (PANW-IDLANDSCAPE-2026, Chapter 2).
+  solution: >-
+    Identity platforms compute sign-in and user risk from detections such as anomalous tokens, atypical travel, anonymous
+    or malicious IP addresses and suspicious MFA approvals, some in real time and some offline, and feed policy that can
+    require step-up or block (MSFT-ENTRAIDP-2026). Okta Identity Threat Protection keeps evaluating the session against
+    risk signals (its risk engine, device context, EDR and third-party signals through the Shared Signals Framework); an
+    entity risk policy can run a delegated flow, require re-authentication or end the session across apps through
+    Universal Logout. Microsoft is adding user-risk and device-revocation signals to continuous access evaluation in Global Secure
+    Access (preview, October 2026).
+  outcomes:
+    - {lever: capacity, description: "A customer quote on time freed from threat investigation (organisation not named)", figure: "hours of daily investigation (qualitative)", measures: "Quote from an IT Systems Engineer on Okta's product page; no measurement and no organisation named", provenance: vendor-published, source_ref: OKTA-ITP-2026}
+    - {lever: speed, description: "Baseline, not an AI effect: added time per identity incident from tool fragmentation", figure: "12 hours per incident (average)", measures: "Average added time per identity-related incident among the 97% of 2,930 respondents who say fragmentation adds time; vendor-commissioned survey fielded March-April 2026", provenance: vendor-published, source_ref: PANW-IDLANDSCAPE-2026}
+  prerequisites:
+    - "Integrated EDR or other security-event providers that support the Shared Signals Framework; apps configured for Universal Logout (OKTA-ITPDOCS-2026)"
+    - "A configured entity risk policy per user group and risk level (OKTA-ITPDOCS-2026)"
+    - "A tier of the identity platform that includes the premium detections; the free tier shows only a generic 'additional risk detected' entry (MSFT-ENTRAIDP-2026)"
+    - "Token issuance, validation and lifecycle controls aligned with NIST IR 8587 (CISA-IR8587-2026; NIST-IR8587-2026)"
+  risks_and_guardrails:
+    - "Response can be graded rather than a block: on-demand MFA, read-only access via workflows, or session end (OKTA-ITP-2026)"
+    - "Actions follow policies the customer configures (OKTA-ITPDOCS-2026, 'How it works')"
+    - "Residual risk sits in account bootstrapping: attackers who pass weaker enrolment can self-provision their own phishing-resistant factor (OKTA-TI-2026)"
+    - "In the survey only 45% include forced MFA step-up, 41% token or key revocation and 36% termination of privileged sessions among incident-response actions; 51% include password reset (PANW-IDLANDSCAPE-2026, Figure 5)"
+    - "Push-based MFA is exposed to fatigue attacks and SIM swap; CISA advises FIDO/WebAuthn or PKI-based MFA (CISA-AA23-320A-2025, Mitigations)"
+  human_checkpoints:
+    - "Admins monitor the user risk profile, dashboard and System Log; response flows are delegated to workflows the customer defines (OKTA-ITPDOCS-2026)"
+    - "An administrator can confirm a user as compromised, which is itself a detection input (MSFT-ENTRAIDP-2026)"
+  role_evolution: >-
+    Okta and Elastic are hiring product and engineering leaders for identity threat detection and response; Elastic's
+    posting asks for fluency in anomaly detection, LLMs and agentic systems (ELASTIC-JOB-ITDR-2026; OKTA-JOB-ITP-2026).
+    The survey ties slow response to console fragmentation (PANW-IDLANDSCAPE-2026, Chapter 2).
+  evidence_grade: C
+  sources:
+    - {ref: OKTA-ITP-2026, title: "Identity Threat Protection with Okta AI (product page; undated, date shown is retrieval date)", publisher: Okta, type: vendor, url: "https://www.okta.com/products/identity-threat-protection/", date: "2026-10-17", access: full, locator: "Product page: benefits, FAQ and customer quote"}
+    - {ref: OKTA-ITPDOCS-2026, title: "Identity Threat Protection (Identity Engine documentation; undated, date shown is retrieval date)", publisher: Okta Help Center, type: vendor, url: "https://help.okta.com/oie/en-us/content/topics/itp/overview.htm", date: "2026-10-17", access: full, locator: "Overview: 'How it works'; Benefits; Entity risk policy"}
+    - {ref: MSFT-ENTRAIDP-2026, title: "What are risk detections? Microsoft Entra ID Protection (page undated, retrieved 2026-10-17)", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks", date: "2026-10-17", access: full, locator: "Risk detection tables"}
+    - {ref: MSFT-ENTRAWN-2026, title: "What's new in Microsoft Entra: October 2026", publisher: "Microsoft Tech Community, Microsoft Entra Blog", type: vendor, url: "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-october-2026/4556460", date: "2026-10-12", access: full, locator: "'Device signals added to Continuous Access Evaluation (CAE) in Global Secure Access' (public preview)"}
+    - {ref: CISA-IR8587-2026, title: "CISA and NIST Release Guidelines to Protect Federal Cloud Identity Systems from Token Theft, Forgery, and Misuse", publisher: CISA, type: regulator, url: "https://www.cisa.gov/news-events/news/cisa-and-nist-release-guidelines-protect-federal-cloud-identity-systems-token-theft-forgery-and", date: "2026-09", access: full, locator: "Body of press release"}
+    - {ref: NIST-IR8587-2026, title: "NIST IR 8587: Protecting Tokens and Assertions from Forgery, Theft, and Misuse", publisher: NIST, type: standard-setter, url: "https://csrc.nist.gov/pubs/ir/8587/final", date: "2026-09-15", access: full, locator: "Abstract"}
+    - {ref: PANW-IDLANDSCAPE-2026, title: "2026 Identity Security Landscape (research by Vanson Bourne, n=2,930)", publisher: Palo Alto Networks, type: survey, url: "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/2026-identity-security-landscape-report.pdf", date: "2026-06", access: full, locator: "Chapter 2, pp. 12-14, Figure 5"}
+    - {ref: CISA-AA23-320A-2025, title: "Scattered Spider (joint advisory AA23-320A, updated 2025-07-29)", publisher: CISA with FBI and international partners, type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a", date: "2025-07-29", access: full, locator: "Mitigations"}
+    - {ref: OKTA-TI-2026, title: "New speed, same tricks: Defend against AI threats with security fundamentals (B. Winterford, Okta Threat Intelligence)", publisher: Okta Newsroom, type: vendor, url: "https://www.okta.com/newsroom/articles/new-speed-same-tricks-defend-against-ai-threats-with-security-fundamentals/", date: "2026-10-07", access: full, locator: "Residual risk (account bootstrapping)"}
+    - {ref: ELASTIC-JOB-ITDR-2026, title: "Principal Product Manager - Identity Threat Detection & Response (job posting 8102960)", publisher: Elastic, type: job-posting, url: "https://jobs.elastic.co/jobs?gh_jid=8102960", date: "2026-08-11", access: full, locator: "Role summary and 'AI and ML Fluency'"}
+    - {ref: OKTA-JOB-ITP-2026, title: "Manager, Engineering - Identity Threat Protection (job posting 8242296)", publisher: Okta, type: job-posting, url: "https://www.okta.com/company/careers/opportunity/8242296?gh_jid=8242296", date: "2026-10-15", access: full, locator: "Role summary"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 08 (automate, process) and governance 06 (augment, process). Kept as automate: configured
+    policies act without a person on the normal path. Okta's documentation describes rules, risk scoring and signal
+    sharing but not model types, so the 'AI' label comes from Okta's marketing. No named customer or detection-quality
+    figures (false positives, time to revoke) were found. The CISA press release date differs across angles (2026-09,
+    2026-09-09, 2026-09-15); the month is used here. Search-only summaries of Microsoft's Digital Defense Report 2025
+    say over 97% of identity attacks are password spray or brute force (MSFT-DDR-2025); not used as evidence.
+
+- id: security-identity-access-15
+  title: Closed-loop identity threat response that acts on high-confidence detections without a ticket
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [transaction-processing]
+  pattern: monitor-diagnose-act
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Identity attacks are detected quickly but response waits in a human queue. In SANS's 2026 survey of identity threat
+    detection and response (ITDR), 68% detect identity attacks within 24 hours but 55% contain them in that window
+    (SANS-ITDR-2026). Palo Alto Networks describes a ticket hand-off between the SOC and the identity team as a
+    structural flaw (PANW-IDSECOPS-2026).
+  solution: >-
+    Netwrix describes ITDR automation as running pre-defined responses (disable the account, block the protocol
+    operation, force re-authentication, trigger SOAR playbooks) the moment high-confidence thresholds are met, rolled out
+    in stages with audit-mode testing and two thresholds per rule (act automatically vs route to a person). Palo Alto
+    Networks proposes 'IdentitySecOps', joining identity posture, detection, response and learning in one loop with
+    shared context.
+  outcomes:
+    - {lever: speed, description: "Gap between detecting and containing identity attacks (the problem baseline, not a result of a fix)", figure: "68% detect within 24 hours; 55% contain within the same window", measures: "Share of surveyed organizations that detect identity attacks within 24 hours, and share that contain them in that window (SANS 2026 ITDR survey; respondent count not stated on the page)", provenance: independent, source_ref: SANS-ITDR-2026}
+  prerequisites:
+    - "An identity attack-surface inventory and clean posture baseline before enabling automation, because untuned rules produce false positives and programmes then stay detection-only (NETWRIX-ITDR-2026)"
+    - "Structured alerts (attack type, accounts, timeline, confidence score) that SOAR playbooks can use (NETWRIX-ITDR-2026)"
+  risks_and_guardrails:
+    - "Start with well-defined, near-zero-false-positive attack patterns and expand to behavioural rules later; enabling response on untuned behavioural rules leads to alert fatigue (NETWRIX-ITDR-2026, best practice 2)"
+    - "Test blocking in audit mode so legitimate admin workflows are not blocked (NETWRIX-ITDR-2026, best practice 4)"
+  human_checkpoints:
+    - "A second, lower threshold routes to a human review queue (NETWRIX-ITDR-2026, best practice 3)"
+  role_evolution: >-
+    Palo Alto Networks says identity and security operations should share context, response and accountability
+    (PANW-IDSECOPS-2026, 'IdSecOps Connects Detection and Response').
+  evidence_grade: C
+  sources:
+    - {ref: SANS-ITDR-2026, title: "SANS 2026 State of Identity Threat Detection and Response: Key Findings", publisher: SANS Institute, type: survey, url: "https://www.sans.org/research/identity-threat-detection-response-report", date: "2026-03", access: full, locator: "'Key Findings' and 'FAQs' (landing page; report not read)"}
+    - {ref: NETWRIX-ITDR-2026, title: "ITDR automation best practices for security teams", publisher: Netwrix, type: vendor, url: "https://www.netwrix.com/en/resources/blog/itdr-automation-best-practices/", date: "2026-06-05", access: full, locator: "Seven best practices"}
+    - {ref: PANW-IDSECOPS-2026, title: "IdentitySecOps for AI-Speed Defense", publisher: Palo Alto Networks (Idira blog), type: vendor, url: "https://www.paloaltonetworks.com/blog/identity-security/identitysecops-closed-loop-model-ai-speed-defense/", date: "2026-08-05", access: full, locator: "Sections 'AI Attacks Can Outrun Human-Speed Defense', 'Four Questions That Define IdSecOps'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Discourse 05. The Netwrix post describes rule-based automation and does not say it uses AI; the AI link is Palo
+    Alto Networks' framing. Grade C because the SANS figures measure the problem, not an outcome of automating
+    response. The SANS page is internally inconsistent on its 85% figure (headline vs key findings); the key findings
+    are used. SANS states sponsors had no role in design or analysis. Search-only: Blackpoint Cyber is reported to
+    have an AI SOC agent for identity threat response with a vendor claim of containment in under two minutes on
+    average (MSSP-BLACKPOINT-2026); not used. Overlaps with the security-operations and incident-response modules.
+
+- id: security-identity-access-16
+  title: Managed detection and response extended to SaaS identity threats, delivered by a provider with agentic workflows
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [research-synthesis, transaction-processing]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: model
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    Compromised identities give attackers legitimate access to SaaS applications, which lets them operate without
+    tripping endpoint tools (CROWDSTRIKE-AGENTICIDP-2026).
+  solution: >-
+    CrowdStrike announced on 2026-09-02 that it is extending its Falcon Complete managed detection and response (MDR)
+    service to Falcon Shield, giving 24/7 expert-led monitoring, investigation and response over identity and SaaS
+    signals, using 'high-fidelity detections, agentic workflows, and expert-led operations'.
+  outcomes:
+    - {lever: risk, description: "none published", figure: "none published", measures: "Announcement only; the post carries a forward-looking-statements notice", provenance: vendor-published, source_ref: CROWDSTRIKE-AGENTICIDP-2026}
+  prerequisites:
+    - "Falcon Shield (SaaS security) within Falcon Next-Gen Identity Security (CROWDSTRIKE-AGENTICIDP-2026)"
+  risks_and_guardrails:
+    - "The post says unreleased features may change and buyers should rely on available features (CROWDSTRIKE-AGENTICIDP-2026, 'Forward-Looking Statements')"
+  human_checkpoints:
+    - "Response is expert-led (CROWDSTRIKE-AGENTICIDP-2026, MDR section)"
+  role_evolution: >-
+    Not described in the source.
+  evidence_grade: C
+  sources:
+    - {ref: CROWDSTRIKE-AGENTICIDP-2026, title: "CrowdStrike Announces Agentic Identity Provider", publisher: CrowdStrike, type: vendor, url: "https://www.crowdstrike.com/en-us/blog/crowdstrike-announces-agentic-identity-provider/", date: "2026-09-02", access: full, locator: "Section 'MDR for the Modern SaaS Attack Surface'; 'Forward-Looking Statements'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 09, re-scoped from process to model because the change is who does the work (a managed provider) rather
+    than a redesign of the customer's own flow. The only model-scope entry; announced only. The same post's main
+    announcement (an Agentic Identity Provider for AI agents) belongs to the ai-security module. Overlaps with the
+    security-operations module (managed SOC services).
+
+- id: security-identity-access-17
+  title: Agentic threat hunting and detection engineering for identity-targeting browser attacks
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [research-synthesis, software-systems]
+  pattern: monitor-diagnose-act
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: in-production
+  problem: >-
+    Attack techniques against identities (adversary-in-the-middle phishing kits, device-code phishing, OAuth abuse and
+    similar) change weekly or daily and indicators are cheap to rotate, so human-only detection engineering takes days
+    or weeks per technique (PUSH-AGENTICHUNT-2026).
+  solution: >-
+    Push Security built a pipeline in which agents ingest new research, form hunt hypotheses, write and test queries
+    against stored browser-session metadata, triage matches, run deeper analysis with a researcher's toolkit, and draft
+    detections that researchers ship. Hunts target techniques, not indicators.
+  outcomes:
+    - {lever: capacity, description: "Detection output after adopting the pipeline", figure: "tripled new detections shipped each month; tripled cumulative detections shipped this year; one hunt found 12 meaningful results, one novel, from trillions of browser events", measures: "Push's own count of detections shipped to customers (monthly and cumulative) and hunt results across its install base; baseline period and quality of the extra detections not stated", provenance: self-reported, source_ref: PUSH-AGENTICHUNT-2026}
+  prerequisites:
+    - "Rich first-party telemetry; Push says its extension records browser-session metadata locally, queries it only during hunts and does not train models on customer data (PUSH-AGENTICHUNT-2026)"
+    - "Researcher-curated context: 'Agents are only as good as the context you give them' (PUSH-AGENTICHUNT-2026, 'Core principles')"
+  risks_and_guardrails:
+    - "Queries are refined to reduce false positives and back-tested on stored data before becoming scheduled detections (PUSH-AGENTICHUNT-2026, 'Example 1' and 'Example 2')"
+  human_checkpoints:
+    - "Researchers ship the detection; in a human-initiated hunt researchers and agents formulate the query together (PUSH-AGENTICHUNT-2026, 'Example 2')"
+  role_evolution: >-
+    Push says the goal is to scale a seasoned hunter's expertise and not to replace researchers
+    (PUSH-AGENTICHUNT-2026, opening).
+  evidence_grade: B
+  sources:
+    - {ref: PUSH-AGENTICHUNT-2026, title: "Can AI replace a threat researcher? What we learned building an agentic threat hunting pipeline", publisher: Push Security, type: vendor, url: "https://pushsecurity.com/blog/can-ai-replace-a-threat-researcher-what-we-learned-building-an-agentic-threat-hunting-pipeline", date: "2026-05-12", access: full, locator: "Opening; 'Core principles for agentic threat hunting'; 'Example 1'; 'Example 2'"}
+    - {ref: PUSH-SHINYHUNTERS-2026, title: "How three techniques are behind ShinyHunters' 2026 campaigns", publisher: Push Security, type: vendor, url: "https://pushsecurity.com/blog/analyzing-the-instructure-breach", date: "2026-05-08", access: full, locator: "Section on the three browser-based vectors"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Discourse 13. Grade B, not A: the figures are counts of detections without a quality measure, and the process
+    (detection engineering for a browser security vendor's product) is adjacent to an organization's own identity
+    operations. Overlaps with the security-operations and threat-intelligence modules. The 37x rise in device-code
+    phishing in Push's install base is the vendor's own threat measurement.
+
+- id: security-identity-access-18
+  title: Enforced identity verification before help-desk password, MFA and account-recovery actions, in place of agent judgement
+  archetype: security
+  module: identity-access
+  function: technology-it
+  work_types: [transaction-processing, client-interaction, review-assurance]
+  pattern: service-agent-escalation
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Attackers call the help desk posing as employees and ask for password and MFA resets. The joint CISA and FBI
+    advisory on Scattered Spider describes actors persuading help-desk staff to reset passwords and transfer MFA to
+    devices they control (CISA-AA23-320A-2025; the advisory does not mention AI). Practitioners say cloned voices make it
+    harder still for staff to judge a caller (INFOSEC-SERVICEDESK-2026). At Cisco, recovery meant a help-desk agent
+    opened a case, scheduled a video call and judged the employee's face and ID; practice varied across teams
+    (PERSONA-CISCO-2026, 'Problem').
+  solution: >-
+    No reset proceeds until the requester passes an enforced verification step. At Cisco, an employee locked out of Duo
+    contacts AISERA, Cisco's AI-powered IT service chatbot, which triggers a Persona flow (government ID and selfie
+    verification) after which the employee adds a working factor. Nametag announced a ServiceNow integration where the
+    agent presses a button and the result appears in the ticket before a reset. Specops authors argue knowledge-based
+    proof should stop and the agent should not have to decide whether a caller sounds genuine; Okta Threat Intelligence
+    adds that factor-enrolment policies should themselves demand phishing-resistant proof, a managed device, a trusted
+    network or third-party identity verification.
+  outcomes:
+    - {lever: speed, description: "Time for a Cisco employee to regain access", figure: "from a three-to-four-hour wait for an agent to as little as five minutes", measures: "Cisco principal engineer's description of ticket response time before vs self-service verification time after, in a vendor story; not a measured average", provenance: vendor-published, source_ref: PERSONA-CISCO-2026}
+    - {lever: capacity, description: "Cisco's stated aim for automated cases", figure: "hopes to automate thousands of support cases each quarter (goal, not a result)", measures: "Cisco's stated hope as reported by Persona; no count of cases automated is given", provenance: vendor-published, source_ref: PERSONA-CISCO-2026}
+    - {lever: risk, description: "Counterfactual estimate by Okta on account-takeover attempts, not a deployed result", figure: "88% could have been stopped by mandatory phishing-resistant enrolment; 99.75% with phishing resistance in app sign-in policies", measures: "Share of about 6,000 analysed real-world social-engineering events in which the account-takeover session would have been prevented had the policy been in place; excludes compromised devices, malware and malicious-app authorisations", provenance: vendor-published, source_ref: OKTA-TI-2026}
+    - {lever: speed, description: "Vendor's stated end-user completion time for ID-and-selfie verification", figure: "under 30 seconds", measures: "Vendor statement; sample and conditions not stated; no fraud-reduction or error figure", provenance: vendor-published, source_ref: NAMETAG-SERVICENOW-2026}
+  prerequisites:
+    - "Vendor selection by RFP and proof of concept (Cisco shortlisted six vendors, two finalists) and integration between the service chatbot, verification vendor and MFA platform (PERSONA-CISCO-2026)"
+    - "Account-recovery methods defined in advance (recovery codes, recovery contacts or repeated identity proofing), with a notification to the user after every recovery (NIST-SP80063B-4-2025, Sec. 4.2)"
+    - "Phishing-resistant authenticators already enrolled; the residual risk Okta describes is 'account bootstrapping', verifying a user before they can enrol a strong factor (OKTA-TI-2026)"
+    - "A documented escalation path for failed verification (PETRI-SERVICEDESK-2026)"
+  risks_and_guardrails:
+    - "An ID-and-selfie check is itself exposed to deepfakes and injected media; the same controls as remote identity proofing apply (NIST-SP80063A-4-2025, Sec. 3.14; see entry 19)"
+    - "Attackers push users to downgrade from a phishing-resistant method to a phishable one (OKTA-TI-MFADOWNGRADE-2026)"
+    - "CISA recommends FIDO/WebAuthn or PKI-based MFA rather than relying on help-desk judgement alone (CISA-AA23-320A-2025, Mitigations)"
+    - "Persona's access to Duo is limited to what verification needs; support agents see only failed cases and guidance (PERSONA-CISCO-2026)"
+    - "Specops says its product exports verification events to a SIEM as an audit trail that verification happened before a sensitive action (INFOSEC-SERVICEDESK-2026)"
+    - "Nametag says video calls should not be trusted for verifying employees or candidates (NAMETAG-IMPERSONATION-2026, p. 13)"
+  human_checkpoints:
+    - "Failed verifications go to support agents for guidance (PERSONA-CISCO-2026) and into a documented escalation workflow rather than an exception under pressure (PETRI-SERVICEDESK-2026)"
+    - "In the Nametag flow the help-desk agent starts verification and decides whether to proceed once the result is shown (NAMETAG-SERVICENOW-2026)"
+    - "NYDFS expects training on verifying a requester's identity for unusual requests (NYDFS-AIGUIDE-2024, training section)"
+  role_evolution: >-
+    Help-desk agents stop acting as ad hoc interrogators: Cisco says they spend less time on verification calls and more
+    on complex cases (PERSONA-CISCO-2026, 'Results'), and Specops argues staff should follow a process that stays secure
+    even when the caller is persuasive (PETRI-SERVICEDESK-2026, point 5).
+  evidence_grade: B
+  sources:
+    - {ref: PERSONA-CISCO-2026, title: "How Cisco Automated Workforce Verification With Persona (customer story; undated, text refers to a use case planned for later in 2026)", publisher: Persona, type: vendor, url: "https://withpersona.com/customers/cisco", date: "2026", access: full, locator: "Sections 'Problem', 'Solution' and 'Results'"}
+    - {ref: NAMETAG-SERVICENOW-2026, title: "Prevent Deepfake Impersonation at the ServiceNow IT Service Desk with Nametag Identity Verification (page undated, retrieved 2026-10-17)", publisher: Nametag, type: vendor, url: "https://getnametag.com/newsroom/servicenow-identity-verification", date: "2026-10-17", access: full, locator: "Body and customer quote (ElevateBio)"}
+    - {ref: OKTA-TI-2026, title: "New speed, same tricks: Defend against AI threats with security fundamentals (B. Winterford, Okta Threat Intelligence)", publisher: Okta Newsroom, type: vendor, url: "https://www.okta.com/newsroom/articles/new-speed-same-tricks-defend-against-ai-threats-with-security-fundamentals/", date: "2026-10-07", access: full, locator: "'We put phishing resistance to the test'; 'How the security invariants performed'; account management policies"}
+    - {ref: OKTA-TI-MFADOWNGRADE-2026, title: "When enrollment isn't enough: How attackers trick users into MFA downgrades", publisher: Okta Threat Intelligence, type: vendor, url: "https://www.okta.com/blog/threat-intelligence/when_enrollment_isnt_enough/", date: "2026-10-05", access: full, locator: "'Executive summary' and 'Threat analysis'"}
+    - {ref: INFOSEC-SERVICEDESK-2026, title: "Your Service Desk Agents Can't Out-Talk an AI", publisher: Infosecurity Magazine (author from Specops Software), type: vendor, url: "https://www.infosecurity-magazine.com/blogs/your-service-desk-agents-cant/", date: "2026-10-06", access: full, locator: "Sections 'Why Agent Training Reaches a Limit', 'Remove the Judgement Call from Identity Verification'"}
+    - {ref: PETRI-SERVICEDESK-2026, title: "5 Ways to Secure Your Service Desk Against AI-Enabled Attacks", publisher: Petri (author from Specops), type: vendor, url: "https://petri.com/5-ways-to-secure-your-service-desk-against-ai-attacks/", date: "2026-09-01", access: full, locator: "Opening; 'Stop using knowledge as proof of identity'; point 5; closing paragraph"}
+    - {ref: NAMETAG-IMPERSONATION-2026, title: "Rebuilding Trust in the Age of AI: The 2026 Workforce Impersonation Report", publisher: Nametag, type: vendor, url: "https://www.go.nametag.co/hubfs/The%202026%20Workforce%20Impersonation%20Report.pdf", date: "2026", access: full, locator: "p. 6 'Helpdesk Social Engineering'; p. 13 'The Limits of Video Verification'"}
+    - {ref: CISA-AA23-320A-2025, title: "Scattered Spider (joint advisory AA23-320A, updated 2025-07-29)", publisher: CISA with FBI and international partners, type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a", date: "2025-07-29", access: full, locator: "Summary; social engineering lists; Mitigations"}
+    - {ref: NIST-SP80063B-4-2025, title: "NIST SP 800-63B-4 Authentication and Authenticator Management", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf", date: "2025-07", access: full, locator: "Sec. 4.2 (account recovery)"}
+    - {ref: NIST-SP80063A-4-2025, title: "NIST SP 800-63A-4 Digital Identity Guidelines: Identity Proofing and Enrollment", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63A-4.pdf", date: "2025-07", access: full, locator: "Sec. 3.14"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Training section"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 17 (graded A), discourse 08 (C) and governance 05 (C). Graded B under the 2026-10-17 rule: Cisco
+    is named, but the waiting-time figure is a practitioner's description quoted in a vendor story, not a measured
+    average; the figure is kept with that provenance. The AI parts at Cisco are the service chatbot and the ML-based
+    document and face checks. Duo admin verification was planned, not live, at the time of the story. Both
+    Specops-authored articles promote its own product. A Vectra post on an FBI complaint describes a May 2025 intrusion
+    where help-desk calls led to three compromised accounts in about two to three hours with no exploit (an allegation;
+    VECTRA-SPIDER-2026, cited in the module). Search-only: a Deepwatch note on surging voice-phishing SSO resets.
+
+- id: security-identity-access-19
+  title: Machine-learning identity proofing with document forensics, liveness, and deepfake and injection detection
+  archetype: security
+  module: identity-access
+  function: risk-compliance-legal
+  work_types: [review-assurance, transaction-processing]
+  pattern: document-to-decision
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Remote onboarding and account recovery depend on a selfie or video and an image of an identity document. FinCEN
+    reports criminals using generative AI to alter or create documents, photographs and videos, combining them with
+    stolen or fake personal data into synthetic identities, and an increase in suspicious-activity reports describing
+    deepfake media used to get past verification (FINCEN-DEEPFAKE-2024, pp. 1-4). Forged media can also be injected
+    straight into the capture channel, so a face comparison alone no longer shows a live person is present
+    (NIST-SP80063A-4-2025, Sec. 3.14).
+  solution: >-
+    Layered capture and analysis: live document capture and document-authenticity checks, 1:1 face match, passive or
+    active presentation-attack detection (PAD, spotting masks, screens and printouts), checks that the camera is a
+    genuine sensor (virtual camera, emulator or jailbreak detection) and analysis of submitted media for manipulation,
+    with failed or suspicious cases sent to people. Coinbase's identity verification team owns ML systems for document
+    authenticity, face match, liveness, presentation-attack and deepfake or injection detection, plus a Coinbase-owned
+    evaluation set to benchmark outside vendors and route between providers; its posting says every signup, account
+    recovery and high-risk action depends on these models. FinCEN observes institutions re-reviewing account-opening
+    files, using reverse-image search and, more rarely, metadata examination and deepfake-detection software.
+  outcomes:
+    - {lever: quality, description: "DHS test: median presentation-attack detection among tested subsystems", figure: "78% of more than 1,200 attacks (best 100%, worst 0%)", measures: "Share of presentation attacks detected by the median tested subsystem in DHS S&T's Remote Identity Validation Technology Demonstration (2023 event); vendors' systems, not Coinbase's", provenance: independent, source_ref: DHS-RIVTD-2025}
+    - {lever: experience, description: "DHS test: genuine users validated by active presentation-attack detection", figure: "median 85% of more than 600 bona fide users (best 94%, worst 41%)", measures: "Share of bona fide users validated by the median of 6 active PAD subsystems; median error 9% for ages 18-45 and 20% for 46+", provenance: independent, source_ref: DHS-RIVTD-2025}
+    - {lever: risk, description: "Vendor claim about an independent test: zero attack acceptance in the Active PAD part of DHS S&T's 2025 Remote Identity Validation Rally", figure: "0% attack acceptance; genuine-user rejection 3.4% on Android", measures: "Attack presentation and bona fide rejection error rates across three attack classes on Android and iOS, per the vendor's press release; the DHS report itself was not reachable; iOS rejection described only as 1 point above the 5% threshold", provenance: vendor-published, source_ref: IDENTY-RIVR-2026}
+  prerequisites:
+    - "Presentation attack detection tested to ISO/IEC 30107-3 with an impostor attack presentation accept rate below 0.07 for remote biometric collection; biometric test results, including demographic testing, made public (NIST-SP80063A-4-2025, Sec. 3.11)"
+    - "Document false acceptance and false rejection rates of 0.1 or less for automated evidence validation; image-analysis false-positive and false-negative rates documented (NIST-SP80063A-4-2025, Sec. 3.13 and 3.14)"
+    - "A documented list of AI/ML use disclosed to relying parties, plus a privacy risk assessment (NIST-SP80063-4-2025, Sec. 3.8)"
+    - "Vendor and in-house models benchmarked on an owned evaluation set (COINBASE-JOB-IDVML-2026); device and document compatibility testing across phones and issuing states (DHS-RIVTD-2025)"
+  risks_and_guardrails:
+    - "NIST states a biometric comparison on a captured sample does not stop injection attacks, and that live capture and PAD help but do not cover all cases (NIST-SP80063A-4-2025, Sec. 3.14)"
+    - "Biometric verification must perform for each demographic group no more than 25% worse than for the overall population; in the DHS test older users had higher error rates (median 20% vs 9%) (NIST-SP80063A-4-2025, Sec. 3.11; DHS-RIVTD-2025)"
+    - "DHS recommends choosing systems with error rates below 10% and checking compatibility with users' documents and devices (DHS-RIVTD-2025)"
+    - "Detector robustness is contested: a USENIX 2025 paper builds signed fake photos that fool deepfake and recapture detectors (USENIX-CHIMERA-2025), and a 2026 preprint shows challenge sets must be re-tested against current face-swap tools (ARXIV-2610.16417)"
+    - "FinCEN notes deepfake users may claim technical glitches to avoid live checks, and lists phishing-resistant MFA and live verification as best practices (FINCEN-DEEPFAKE-2024, pp. 4-6)"
+    - "Oz Forensics, as summarised by NHIMG, says a single liveness check is not a durable trust boundary (NHIMG-OZ-2026)"
+  human_checkpoints:
+    - "Algorithmic media analysis and automated decisions should be augmented by manual review to address detection errors (NIST-SP80063A-4-2025, Sec. 3.14, item 2)"
+    - "Analysts re-review account-opening documents, run enhanced due diligence and file SARs citing FIN-2024-DEEPFAKEFRAUD (FINCEN-DEEPFAKE-2024, pp. 1, 4)"
+    - "Failed or suspicious verifications are escalated for human review (NAMETAG-IMPERSONATION-2026, p. 13)"
+  role_evolution: >-
+    Identity verification ML engineers own vendor benchmarking, routing and evaluation layers, not only models
+    (COINBASE-JOB-IDVML-2026). Proofing agents and trusted referees must be trained to spot manipulated media (high
+    latency, synchronisation problems, inconsistent skin tone or resolution) and to issue unpredictable prompts
+    (NIST-SP80063A-4-2025, Sec. 3.14).
+  evidence_grade: B
+  sources:
+    - {ref: COINBASE-JOB-IDVML-2026, title: "Staff Machine Learning Engineer (Platform - Identity), Identity Verification (job posting 8211486)", publisher: Coinbase, type: job-posting, url: "https://www.coinbase.com/careers/positions/8211486?gh_jid=8211486", date: "2026-09-17", access: full, locator: "Role description and 'What you'll do'"}
+    - {ref: DHS-RIVTD-2025, title: "Remote Identity Validation Technology Demonstration (DHS S&T; page last updated 2025-04-10, results from the 2023 test event)", publisher: "U.S. Department of Homeland Security, Science and Technology Directorate", type: regulator, url: "https://www.dhs.gov/science-and-technology/remote-identity-validation-technology-demonstration", date: "2025-04-10", access: full, locator: "Results infographics: Document Validation; Selfie Match; Presentation Attack Detection"}
+    - {ref: IDENTY-RIVR-2026, title: "Identy.io Achieves Zero Attack Acceptance in DHS RIVR Face Liveness Evaluation", publisher: Business Wire (Identy.io press release), type: vendor, url: "https://businesswire.com/news/home/20260318279525/en/Identy.io-Achieves-Zero-Attack-Acceptance-in-DHS-RIVR-Face-Liveness-Evaluation-Leads-Field-on-Speed-and-User-Satisfaction", date: "2026-03-18", access: full, locator: "Headline and first three bullets"}
+    - {ref: NIST-SP80063-4-2025, title: "NIST SP 800-63-4 Digital Identity Guidelines", publisher: NIST, type: standard-setter, url: "https://doi.org/10.6028/NIST.SP.800-63-4", date: "2025-07", access: full, locator: "Sec. 3.8 (AI and ML in identity systems); 'Background' list of changes"}
+    - {ref: NIST-SP80063A-4-2025, title: "NIST SP 800-63A-4 Digital Identity Guidelines: Identity Proofing and Enrollment", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63A-4.pdf", date: "2025-07", access: full, locator: "Sec. 3.11, 3.13, 3.14"}
+    - {ref: FINCEN-DEEPFAKE-2024, title: "FinCEN Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FIN-2024-Alert004)", publisher: "FinCEN, U.S. Treasury", type: regulator, url: "https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf", date: "2024-11-13", access: full, locator: "p. 1 (increase in SARs); pp. 2-4 (deepfake identities, detection); pp. 4-6 (best practices, red flags)"}
+    - {ref: USENIX-CHIMERA-2025, title: "Chimera: Creating Digitally Signed Fake Photos by Fooling Image Recapture and Deepfake Detectors", publisher: USENIX Security 2025, type: academic, url: "https://www.usenix.org/conference/usenixsecurity25/presentation/park", date: "2025-08", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2610.16417, title: "Not All Challenges Are Equal: Evaluating Interactive Liveness Detection Against Real-Time Face Swaps", publisher: arXiv (Firc et al.), type: academic, url: "https://arxiv.org/abs/2610.16417", date: "2026-10-12", access: full, locator: "Abstract"}
+    - {ref: NAMETAG-IMPERSONATION-2026, title: "Rebuilding Trust in the Age of AI: The 2026 Workforce Impersonation Report", publisher: Nametag, type: vendor, url: "https://www.go.nametag.co/hubfs/The%202026%20Workforce%20Impersonation%20Report.pdf", date: "2026", access: full, locator: "pp. 13-14 'The Limits of Video Verification' and 'Workforce Identity Verification'"}
+    - {ref: NHIMG-OZ-2026, title: "Industrialized fraud is breaking legacy identity verification controls (NHIMG summary of an Oz Forensics post)", publisher: Non-Human Identity Management Group, type: community, url: "https://nhimg.org/articles/industrialized-fraud-is-breaking-legacy-identity-verification-controls/", date: "2026-07-11", access: full, locator: "'TL;DR' and 'Context'"}
+    - {ref: CFI-ENTRUST-2025, title: "Deepfakes, Social Engineering, Injection Attacks On The Rise, Report Reveals (on Entrust's 2026 Identity Fraud Report)", publisher: Crowdfund Insider, type: press, url: "https://www.crowdfundinsider.com/?p=255847", date: "2025-11-25", access: full, locator: "First three paragraphs"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 16 (B), discourse 07 (C), governance 01 (C) and governance 02 (C, forged-document analysis at
+    account opening). Grade B with a cap: the Coinbase evidence is a job posting (named, in production, no
+    measurements), and the measurements are independent tests of other vendors' technology on a 2023 event or a
+    vendor's account of a 2025 test. Threat context, vendor-published: Entrust's 2026 report, as quoted by Crowdfund
+    Insider, says deepfakes were one in five biometric fraud attempts, deepfaked selfies rose 58% in 2025 and injection
+    attacks 40% year on year (CFI-ENTRUST-2025). Search-only: Incode and IDRnD make similar DHS-testing claims with
+    differing vendor counts (18 vs 21); a Gartner 2024-02-01 prediction that by 2026 30% of enterprises will not consider
+    identity verification reliable in isolation (GARTNER-DEEPFAKE-2024). Saviynt added biometric and liveness
+    verification inside human identity certification on 2026-06-15 (SAVIYNT-IARA-2026, cited in the module).
+
+- id: security-identity-access-20
+  title: Identity-graph models and one-to-many biometric search to find duplicate enrolments, account rings and bots
+  archetype: security
+  module: identity-access
+  function: risk-compliance-legal
+  work_types: [research-synthesis, data-reporting, review-assurance]
+  pattern: reconcile-exceptions
+  ladder: automate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: in-production
+  problem: >-
+    Fraud rings reuse biometric, device and document signals across accounts, enrol the same face under different names,
+    and run bots that mimic humans. Cloudflare lists fraudulent signups, promo and trial abuse, payment fraud,
+    chargebacks and account takeover as costs to revenue and support overhead (CLOUDFLARE-JOB-FRAUD-2026). False matches
+    would wrongly block genuine applicants such as twins (NIST-SP80063A-4-2025, Sec. 3.11).
+  solution: >-
+    Coinbase builds identity-graph systems with graph neural networks that cluster accounts sharing biometric, device and
+    document signals, plus behavioural and device models for capture-session anomalies, bot-versus-human classification
+    and device-fingerprint risk scoring at real-time latency. Cloudflare's internal fraud platform team, built around
+    data-science signals and models, is hiring its first software engineer to ingest events from billing, signup and
+    support, route decisions and put case data in front of the people who act on them. NIST permits one-to-many (1:N)
+    biometric search of an applicant against the enrolled gallery for deduplication or fraud detection, with hits routed
+    to a person.
+  outcomes:
+    - {lever: risk, description: "none published", figure: "none published", measures: "Job postings carry no outcome data; NIST sets a permitted false positive identification rate for 1:N search but no deployment result is public", provenance: self-reported, source_ref: COINBASE-JOB-IDVML-2026}
+  prerequisites:
+    - "Event feeds from signup, billing and support systems, and a decisioning and case-management platform (CLOUDFLARE-JOB-FRAUD-2026)"
+    - "Privacy risk assessment before 1:N identification, and a false positive identification rate of 1:1,000 or better shown with a gallery of at least 90% of operational size (NIST-SP80063A-4-2025, Sec. 3.11, items 9-10)"
+  risks_and_guardrails:
+    - "The identity provider must not decline an enrolment on an automated 1:N result without manual review confirming it is not a false positive (NIST-SP80063A-4-2025, Sec. 3.11, item 11)"
+    - "Demographic performance of biometric verification must be within 25% of the overall population (NIST-SP80063A-4-2025, Sec. 3.11, item 12)"
+    - "Coinbase's posting uses generative AI 'with human oversight' wording; no other guardrail is described (COINBASE-JOB-IDVML-2026)"
+  human_checkpoints:
+    - "Manual review confirms every automated 1:N match before an enrolment is declined (NIST-SP80063A-4-2025, Sec. 3.11, item 11)"
+    - "Decisions and case data are routed to the people who act on them (CLOUDFLARE-JOB-FRAUD-2026)"
+  role_evolution: >-
+    Fraud teams add platform engineers to turn data-science models into operations (CLOUDFLARE-JOB-FRAUD-2026, 'About
+    the Role'). A manual-review queue for biometric matches becomes a required role; NIST does not describe the staffing
+    (NIST-SP80063A-4-2025).
+  evidence_grade: B
+  sources:
+    - {ref: COINBASE-JOB-IDVML-2026, title: "Staff Machine Learning Engineer (Platform - Identity), Identity Verification (job posting 8211486)", publisher: Coinbase, type: job-posting, url: "https://www.coinbase.com/careers/positions/8211486?gh_jid=8211486", date: "2026-09-17", access: full, locator: "'What you'll do': identity-graph and behavioural models"}
+    - {ref: CLOUDFLARE-JOB-FRAUD-2026, title: "Senior Software Engineer, Internal Fraud Platform (job posting 8185561)", publisher: Cloudflare, type: job-posting, url: "https://boards.greenhouse.io/cloudflare/jobs/8185561?gh_jid=8185561", date: "2026-09-14", access: full, locator: "'About the Role'"}
+    - {ref: NIST-SP80063A-4-2025, title: "NIST SP 800-63A-4 Digital Identity Guidelines: Identity Proofing and Enrollment", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63A-4.pdf", date: "2025-07", access: full, locator: "Sec. 3.11, items 9-12"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 18 (B, automate) and governance 03 (D idea, augment). Grade B from job postings only: named
+    firms, no measurements. Whether the models are in production at each firm is inferred from the postings' wording
+    (Coinbase: 'protecting the integrity of millions of accounts'; Cloudflare: team 'built around data science'). Kept
+    at the practice angle's automate: NIST routes declines (the exceptions) to manual review.
+
+- id: security-identity-access-21
+  title: Passive, continuous caller authentication in the contact centre in place of knowledge-based questions
+  archetype: security
+  module: identity-access
+  function: customer-service
+  work_types: [transaction-processing, client-interaction]
+  pattern: intake-triage
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Agents verify callers with security questions (knowledge-based authentication). Stolen breach data lets fraudsters
+    answer them: Pindrop reports that across 2,500 fraud calls at 10 financial institutions fraudsters passed
+    knowledge-based authentication 53% of the time on average (range 9% to 90%) (PINDROP-VEC-2025). Genuine members get
+    frustrated, and authentication took about 90 seconds of an 8:30-minute call at one credit union
+    (PINDROP-MSUFCU-2025).
+  solution: >-
+    Pindrop Passport analyses voice, device and behaviour signals in the background of the call to build a profile
+    match, so many callers are verified in the IVR or in seconds with the agent, and agents see risk notifications
+    instead of asking questions. Michigan State University Federal Credit Union (MSUFCU) uses it in a Five9 contact
+    centre without requiring members to enrol a voiceprint phrase; HealthEquity uses it in its voice channel and moves
+    from one-time 'stage-gate' verification to continuous verification.
+  outcomes:
+    - {lever: speed, description: "MSUFCU average member authentication time", figure: "90 seconds to 45 seconds (-50%) within 90 days", measures: "Average member authentication time at MSUFCU, as stated by Pindrop in the case study; call count and measurement method not stated", provenance: vendor-published, source_ref: PINDROP-MSUFCU-2025}
+    - {lever: speed, description: "MSUFCU calls with a full profile match", figure: "12 seconds (78-second reduction) for more than 40% of calls", measures: "Authentication time on calls that achieved a full profile match; more than 40% of calls per Pindrop", provenance: vendor-published, source_ref: PINDROP-MSUFCU-2025}
+    - {lever: experience, description: "HealthEquity IVR profile match rate in the first month", figure: "31% to 71%", measures: "Profile match rate in the IVR within the first month of Passport deployment; denominator (callers or calls) not stated", provenance: vendor-published, source_ref: PINDROP-HEALTHEQUITY-2026}
+    - {lever: experience, description: "HealthEquity authentication rate with agents", figure: "over 91%", measures: "Authentication rate once callers reach agents, as stated by Pindrop; definition and period not stated", provenance: vendor-published, source_ref: PINDROP-HEALTHEQUITY-2026}
+  prerequisites:
+    - "Contact-centre platform integration (Five9 for MSUFCU) and agent-desktop integration (PINDROP-MSUFCU-2025)"
+    - "Profile data for callers; the profile match is built from prior calls (PINDROP-MSUFCU-2025)"
+  risks_and_guardrails:
+    - "Knowledge-based questions are described as no longer sufficient (PINDROP-HEALTHEQUITY-2026)"
+    - "Independent academic work shows cloned voices built from very small samples can bypass commercial speaker verification and anti-spoofing detectors generalise poorly, so voice should not be the only factor (ARXIV-2601.02914, abstract)"
+    - "NYDFS suggests avoiding SMS, voice or video authentication in favour of factors deepfakes cannot impersonate, such as digital certificates and physical security keys (NYDFS-AIGUIDE-2024, Access Controls)"
+  human_checkpoints:
+    - "Agents receive risk notifications and route elevated-risk calls; low-risk, high-confidence callers move on without questions (PINDROP-HEALTHEQUITY-2026)"
+  role_evolution: >-
+    Agents spend less of the call authenticating and more on service; HealthEquity's fraud head frames agents as there
+    to help, not interrogate (PINDROP-HEALTHEQUITY-2026).
+  evidence_grade: A
+  sources:
+    - {ref: PINDROP-MSUFCU-2025, title: "Michigan State University Federal Credit Union Cuts Authentication Time in Half with Pindrop", publisher: Pindrop, type: vendor, url: "https://www.pindrop.com/customer/michigan-state-university-federal-credit-union", date: "2025-01-09", access: full, locator: "Opening summary; 'Challenges'; results paragraphs"}
+    - {ref: PINDROP-HEALTHEQUITY-2026, title: "90% Drop in Fraud and a Smoother CX: How HealthEquity Did It", publisher: Pindrop, type: vendor, url: "https://www.pindrop.com/customer/healthequity-drop-fraud-smoother-cx", date: "2026-02-23", access: full, locator: "Section 'The future of authentication starts with continuous risk assessments'"}
+    - {ref: PINDROP-VEC-2025, title: "The Virginia Employment Commission Reduced Fraud by +$500K Within Months", publisher: Pindrop, type: vendor, url: "https://www.pindrop.com/customer/virginia-employment-commission-reduced-fraud-within-months", date: "2025-06-13", access: full, locator: "'Before Pindrop Solutions' (53% KBA pass rate from Pindrop internal data)"}
+    - {ref: ARXIV-2601.02914, title: "Vulnerabilities of Audio-Based Biometric Authentication Systems Against Deepfake Speech Synthesis (Hong et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2601.02914", date: "2026-01-06", access: full, locator: "Abstract"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Access Controls"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 13. The only grade A entry. It meets the 2026-10-17 rule because the figures are tracked operating metrics
+    (average authentication time over 90 days, profile match rate) for named organizations, not a practitioner's
+    estimate; but every figure is in Pindrop's own case studies (provenance vendor-published), the method and counts are
+    not stated, and there is no independent test of these deployments. 'AI' is the vendor's label for the risk
+    analysis.
+
+- id: security-identity-access-22
+  title: Real-time call risk scoring to catch account-takeover and impersonation fraud in the voice channel
+  archetype: security
+  module: identity-access
+  function: risk-compliance-legal
+  work_types: [transaction-processing, research-synthesis]
+  pattern: intake-triage
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Fraud checks in contact centres are slow, run after the fact and rely on knowledge-based quizzes that fraudsters
+    pass. Virginia Employment Commission (VEC) lost an estimated $350M to fraud in three years after the pandemic
+    (PINDROP-VEC-2025, 'Challenges').
+  solution: >-
+    Pindrop Protect scores risk throughout the call, from the IVR to the agent leg, using signals such as spoofing
+    indicators, device anomalies and voice patterns. At VEC the IVR risk score decides whether a caller gets a callback
+    or is routed to a fraud agent, and account-risk analysis links claims sharing addresses or phone numbers. HealthEquity
+    runs it with Passport (entry 21).
+  outcomes:
+    - {lever: risk, description: "HealthEquity voice-channel fraud, year on year", figure: "reduced by over 90%", measures: "Fraud over the voice channel 'from last year to now', in the words of HealthEquity's head of fraud; the metric (counts or losses) and period are not defined", provenance: self-reported, source_ref: PINDROP-HEALTHEQUITY-2026}
+    - {lever: risk, description: "VEC potentially fraudulent calls detected", figure: "over 800 in one year", measures: "Calls Pindrop Protect flagged as potentially fraudulent in VEC's call centres in a year; not confirmed fraud", provenance: vendor-published, source_ref: PINDROP-VEC-2025}
+    - {lever: cost, description: "VEC fraud avoided", figure: "over $500K within months; nearly $1M annualised (potential)", measures: "Pindrop's headline and summary of reduced fraudulent claims; basis for the estimate is not shown in the text read", provenance: vendor-published, source_ref: PINDROP-VEC-2025}
+  prerequisites:
+    - "Telephony and IVR integration with a real-time risk API (PINDROP-VEC-2025)"
+    - "A fraud investigation team and case-management process to act on alerts (PINDROP-VEC-2025)"
+    - "Custom attributes and policy rules for the organisation's own fraud patterns (PINDROP-VEC-2025)"
+  risks_and_guardrails:
+    - "VEC wanted to balance fraud detection with low friction for genuine claimants (PINDROP-VEC-2025)"
+    - "Synthetic-speech detection models generalise poorly outside their training conditions: a multilingual in-the-wild benchmark shows significant degradation across languages and acoustic conditions, and an audit finds deepfake benchmarks may reward general representation quality (ARXIV-2603.05852; ARXIV-2606.26384)"
+  human_checkpoints:
+    - "Agents see colour codes and screen pops; high-risk IVR calls go to a fraud agent; investigators run cases from the flagged call (PINDROP-VEC-2025)"
+  role_evolution: >-
+    Contact-centre leadership moves from reviewing suspicious callbacks after the fact to setting real-time risk
+    policies; VEC built case tracking through custom attributes (PINDROP-VEC-2025).
+  evidence_grade: B
+  sources:
+    - {ref: PINDROP-HEALTHEQUITY-2026, title: "90% Drop in Fraud and a Smoother CX: How HealthEquity Did It", publisher: Pindrop, type: vendor, url: "https://www.pindrop.com/customer/healthequity-drop-fraud-smoother-cx", date: "2026-02-23", access: full, locator: "Quote on reducing voice-channel fraud by over 90%; key results"}
+    - {ref: PINDROP-VEC-2025, title: "The Virginia Employment Commission Reduced Fraud by +$500K Within Months", publisher: Pindrop, type: vendor, url: "https://www.pindrop.com/customer/virginia-employment-commission-reduced-fraud-within-months", date: "2025-06-13", access: full, locator: "Opening summary; 'ROI' sections; 'Fraud detection in the IVR'"}
+    - {ref: ARXIV-2603.05852, title: "ML-ITW: A Multilingual in-the-wild Benchmark for Speech Deepfake Detection (Li et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2603.05852", date: "2026-03-06", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2606.26384, title: "What Do Deepfake Benchmarks Measure? An Audit Using Frozen Self-Supervised Representations (Pagon et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2606.26384", date: "2026-06-24", access: full, locator: "Abstract"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Practice 14, graded A there and B here under the 2026-10-17 rule: HealthEquity's 'over 90%' is an executive's
+    statement with an undefined metric, VEC's $500K is the vendor's headline with no derivation shown, and the 800
+    flagged calls are activity, not confirmed fraud. Figures are kept with their provenance. No independent evaluation
+    of detection error rates in these deployments.
+
+- id: security-identity-access-23
+  title: Synthetic-voice detection on contact-centre and meeting audio, with risk scores for fraud triage
+  archetype: security
+  module: identity-access
+  function: risk-compliance-legal
+  work_types: [review-assurance, transaction-processing]
+  pattern: intake-triage
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Voice biometrics and callback checks were not designed for AI-generated speech. A tier-one global bank saw deepfaked
+    calls pass voice biometrics and callback checks (REALITYDEFENDER-BANK-2026). NYDFS warns that deepfakes can mimic a
+    person's voice or appearance to get past biometric verification (NYDFS-AIGUIDE-2024), and the FBI reports
+    AI-generated voice messages used to impersonate senior US officials (FBI-IC3PSA-2025).
+  solution: >-
+    Reality Defender analysed recorded customer calls across Zoom, Meet, NICE, Twilio and Five9 for an unnamed bank, then
+    moved to real-time detection for about 600 frontline staff. It returns probability-based risk scores per file rather
+    than a yes-or-no result, which the bank's fraud team uses to triage and escalate against its own thresholds. A
+    research direction (July 2026 preprint) evaluates large audio language models for spoofing-aware speaker
+    verification that can give natural-language rationales.
+  outcomes:
+    - {lever: risk, description: "Synthetic voice calls found among calls analysed for an unnamed bank", figure: "about 960 of more than 1.7 million", measures: "Calls the vendor's tool scored as synthetic among customer calls analysed in 2024 across US and LATAM operations; not confirmed fraud; no false-positive rate", provenance: vendor-published, source_ref: REALITYDEFENDER-BANK-2026}
+    - {lever: quality, description: "Independent benchmark of 12 state-of-the-art deepfake-voice detectors", figure: "best equal error rate 13.50%; all others above 20%", measures: "Equal error rate on VoiceWukong (265,200 English and 148,200 Chinese deepfake samples, 38 variants across six manipulation types); a multimodal LLM showed no detection ability", provenance: independent, source_ref: USENIX-VOICEWUKONG-2025}
+  prerequisites:
+    - "Integration with the bank's call-recording, contact-centre and conferencing platforms (REALITYDEFENDER-BANK-2026)"
+    - "A triage and escalation process for scored calls (REALITYDEFENDER-BANK-2026)"
+    - "Callback or step-up verification that does not depend on voice, SMS or video (NYDFS-AIGUIDE-2024, Access Controls)"
+  risks_and_guardrails:
+    - "Scores are probabilities, not verdicts; thresholds are set by the bank (REALITYDEFENDER-BANK-2026)"
+    - "Detectors face significant challenges in real-world conditions, with dramatically declining performance, according to the VoiceWukong authors (USENIX-VOICEWUKONG-2025)"
+    - "Voice clones from very small samples can bypass commercial speaker verification, and detectors degrade out of domain (ARXIV-2601.02914; ARXIV-2603.05852; ARXIV-2606.26384); an audio-detector preprint reports 21 of 29 features reversing direction between training and in-the-wild use (ARXIV-2609.09489)"
+    - "Pretrained audio language models perform near chance zero-shot and become competitive only after task-specific adaptation (ARXIV-2607.14753)"
+    - "The FBI recommends verifying contacts independently through a known channel and not relying on spotting AI voices by ear (FBI-IC3PSA-2025, Recommendations)"
+  human_checkpoints:
+    - "Fraud analysts triage scored calls under a new internal triage and escalation process (REALITYDEFENDER-BANK-2026, 'Key Results')"
+  role_evolution: >-
+    Frontline staff receive an authenticity signal during the call; fraud and risk teams own a new triage queue for
+    calls the older controls had not flagged (REALITYDEFENDER-BANK-2026).
+  evidence_grade: C
+  sources:
+    - {ref: REALITYDEFENDER-BANK-2026, title: "How a Global Bank Mitigates Contact Center Deepfake Threats with Reality Defender (anonymised case study; date is sitemap last-modified)", publisher: Reality Defender, type: vendor, url: "https://www.realitydefender.com/case-studies/how-a-global-bank-mitigates-contact-center-deepfake-threats-with-reality-defender", date: "2026-07-26", access: full, locator: "Key Results; 'How Reality Defender Exposed AI Voice Threats'"}
+    - {ref: REALDEFENDER-BANK-2025, title: "How a Global Bank Defends Contact Centers Against Deepfake Threats with Reality Defender (page undated; year inferred from the 2024 data window)", publisher: Reality Defender, type: vendor, url: "https://www.realitydefender.com/case-studies/how-a-tier-one-bank-stopped-deepfaked-audio-with-reality-defender", date: "2025", access: full, locator: "Key Results"}
+    - {ref: USENIX-VOICEWUKONG-2025, title: "VoiceWukong: Benchmarking Deepfake Voice Detection", publisher: USENIX Security 2025, type: academic, url: "https://www.usenix.org/conference/usenixsecurity25/presentation/yan-ziwei", date: "2025-08", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2601.02914, title: "Vulnerabilities of Audio-Based Biometric Authentication Systems Against Deepfake Speech Synthesis (Hong et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2601.02914", date: "2026-01-06", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2603.05852, title: "ML-ITW: A Multilingual in-the-wild Benchmark for Speech Deepfake Detection (Li et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2603.05852", date: "2026-03-06", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2606.26384, title: "What Do Deepfake Benchmarks Measure? An Audit Using Frozen Self-Supervised Representations (Pagon et al.)", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2606.26384", date: "2026-06-24", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2609.09489, title: "Audio Deepfake Detection Using Temporal Coherence Analysis", publisher: arXiv (preprint), type: academic, url: "https://arxiv.org/abs/2609.09489", date: "2026-09-08", access: full, locator: "Abstract"}
+    - {ref: ARXIV-2607.14753, title: "Large Audio Language Models for Spoofing-Aware Speaker Verification", publisher: arXiv (preprint, not peer reviewed), type: academic, url: "https://arxiv.org/abs/2607.14753", date: "2026-07-16", access: full, locator: "Abstract"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Sections on AI-enabled social engineering and Access Controls"}
+    - {ref: FBI-IC3PSA-2025, title: "Senior US Officials Impersonated in Malicious Messaging Campaign (Alert I-051525-PSA)", publisher: FBI Internet Crime Complaint Center, type: regulator, url: "https://www.ic3.gov/PSA/2025/PSA250515", date: "2025-05-15", access: full, locator: "Campaign details; Recommendations"}
+    - {ref: HN-REALITYDEFENDER-2025, title: "Launch HN: Reality Defender (YC W22) - API for Deepfake and GenAI Detection", publisher: Hacker News, type: community, url: "https://news.ycombinator.com/item?id=44941580", date: "2025-08-18", access: full, locator: "Top-level threads on reliability and the arms race"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice 15 (C), governance 04 (C) and discourse 15 (D idea, audio language models for spoofing-aware
+    verification). Grade C: the bank is anonymised. The practice and governance angles read the case study at two
+    different URLs with the same figures; both refs are kept. The Reality Defender founder's claim in the Hacker News
+    thread of deployments to 'several Tier 1 banks' is unnamed and unverified. A vendor page elsewhere cites 99.99%
+    detection accuracy (search result only, not used). Pindrop's survey of 250 U.S. security leaders (vendor-published)
+    finds 37% rely on legacy tools for deepfake detection and 1 in 4 organisations hit by a deepfake attack lost $1M or
+    more in a single incident (PINDROP-DRI-2026, cited in the module).
+
+- id: security-identity-access-24
+  title: Behavioural biometrics and continuous authentication to detect account takeover, mule accounts and scams
+  archetype: security
+  module: identity-access
+  function: risk-compliance-legal
+  work_types: [transaction-processing, data-reporting]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    One-time logins leave sessions exposed after a device or token is taken, and payment-transaction monitoring does not
+    address pre-payment risks such as identity theft, account takeover (ATO), scams and first-party fraud (Forrester's
+    reading of the Visa deal, FORRESTER-BIOCATCH-2026). FBI IC3 received about 4,700 ATO complaints with USD 359.7
+    million in losses in 2025 (FBI-IC3-2025). The EU payment services deal would require a provider to refund customers
+    defrauded by someone posing as its staff, if they report to the police and inform the provider (EP-PSR-2025).
+  solution: >-
+    Behavioural signals (typing cadence, touchscreen gestures, mouse movements, hesitation, device handling) are analysed
+    through website scripts and mobile SDKs to detect identity theft at registration, ATO, mule accounts and scams before
+    a payment occurs; Forrester describes BioCatch this way, and Visa announced its intent to acquire BioCatch for USD
+    2.4 billion (reported 2026-08-05). The same kind of signal can keep verifying a user during a session: NYDFS lists a
+    fingerprint combined with keystrokes and navigation patterns as one option, and the EU NIS2 implementing regulation
+    accepts continuous authentication mechanisms as an alternative to multiple factors.
+  outcomes:
+    - {lever: risk, description: "none published; no customer deployment or result is named", figure: "none published", measures: "n/a", provenance: independent, source_ref: FORRESTER-BIOCATCH-2026}
+  prerequisites:
+    - "Integration with customer identity and access management, authentication and deepfake-detection platforms; Forrester names its cost and complexity as a main deployment challenge (FORRESTER-BIOCATCH-2026)"
+    - "Strength of authentication appropriate to the classification of the asset accessed (NIS2-IMPL-2024, point 11.7.2)"
+    - "Strong customer authentication, a fraud-risk assessment and the ability to freeze a suspicious transaction at the receiving provider (EP-PSR-2025)"
+  risks_and_guardrails:
+    - "Forrester lists evasion by AI-driven robotic behaviour, bots and RPA, and false positives when users' motor patterns change (for example after an injury), which can insult honest customers and cause attrition (FORRESTER-BIOCATCH-2026)"
+    - "Behavioural data may count as personally identifiable information in some jurisdictions (FORRESTER-BIOCATCH-2026)"
+    - "The EU AI Act prohibits AI that infers emotions of a person in the workplace, with medical and safety exceptions, so behavioural analytics must not drift into emotion inference (EU-AIACT-2024, Art. 5(1)(f))"
+    - "NYDFS warns stolen biometric data can be used to imitate users, bypass MFA and generate realistic deepfakes (NYDFS-AIGUIDE-2024)"
+    - "If a payment provider fails to implement appropriate fraud prevention it is liable for the customer's losses; the deal still needs formal adoption (EP-PSR-2025)"
+  human_checkpoints:
+    - "Not described; the product provides risk signals (FORRESTER-BIOCATCH-2026)"
+    - "Users must have access to human customer support, not only chatbots (EP-PSR-2025)"
+    - "Fallback to another factor is the usual design for failed biometric checks (NIST-SP80063B-4-2025, Sec. 3.2.3)"
+  role_evolution: >-
+    Forrester says the standalone behavioural-biometrics market is effectively ending as it is absorbed into
+    financial-crime, customer IAM and commerce fraud management markets (FORRESTER-BIOCATCH-2026, closing section).
+  evidence_grade: C
+  sources:
+    - {ref: FORRESTER-BIOCATCH-2026, title: "Visa To Acquire Behavioral Biometrics Specialist BioCatch For $2.4 Billion", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/visa-to-acquire-behavioral-biometrics-specialist-biocatch-for-2-4-billion/", date: "2026-08-05", access: full, locator: "Whole post"}
+    - {ref: NIS2-IMPL-2024, title: "Commission Implementing Regulation (EU) 2024/2690 (technical and methodological requirements under NIS2)", publisher: European Commission, type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2690", date: "2024-10-18", access: full, locator: "Annex, point 11.7"}
+    - {ref: NYDFS-AIGUIDE-2024, title: "Cybersecurity Risks Arising from Artificial Intelligence and Strategies to Combat Related Risks (Industry Letter)", publisher: NYDFS, type: regulator, url: "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks", date: "2024-10-16", access: full, locator: "Access Controls; biometric data paragraph"}
+    - {ref: NDSS-PPG-2026, title: "Know Me by My Pulse: Toward Practical Continuous Authentication on Wearable Devices via Wrist-Worn PPG", publisher: NDSS Symposium 2026, type: academic, url: "https://www.ndss-symposium.org/ndss-paper/know-me-by-my-pulse-toward-practical-continuous-authentication-on-wearable-devices-via-wrist-worn-ppg/", date: "2026-02", access: full, locator: "Abstract"}
+    - {ref: EU-AIACT-2024, title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act)", publisher: European Parliament and Council, type: regulator, url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj", date: "2024-07-12", access: full, locator: "Art. 5(1)(f)"}
+    - {ref: FBI-IC3-2025, title: "2025 Internet Crime Report", publisher: FBI Internet Crime Complaint Center, type: regulator, url: "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf", date: "2026-04", access: full, locator: "Cyber-Enabled Fraud in 2025 (ATO box, PDF p. 12); Recovery Asset Team (PDF p. 17)"}
+    - {ref: EP-PSR-2025, title: "Payment services deal: More protection from online fraud and hidden fees", publisher: European Parliament, type: regulator, url: "https://www.europarl.europa.eu/news/en/press-room/20251121IPR31540/payment-services-deal-more-protection-from-online-fraud-and-hidden-fees", date: "2025-11", access: full, locator: "'Protecting customers from fraud' and 'Next steps'"}
+    - {ref: NIST-SP80063B-4-2025, title: "NIST SP 800-63B-4 Authentication and Authenticator Management", publisher: NIST, type: standard-setter, url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf", date: "2025-07", access: full, locator: "Sec. 3.2.3"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from discourse 06 (C, augment), governance 07 (D idea, continuous authentication) and governance 13 (D idea,
+    customer ATO and scam detection with payment friction). An analyst post on an acquisition; no named deployment or
+    result. Forrester does not call the technology AI; the discourse angle characterised behavioural biometrics as
+    machine-learning based. Research result, not deployment: the NDSS 2026 smartwatch study (26 subjects) reports
+    average accuracy 88.11%, false acceptance 0.48%, false rejection 11.77% and that models trained on resting data fail
+    under motion (NDSS-PPG-2026). The EP release date (2025-11) comes from secondary reporting of the provisional
+    agreement of 2025-11-27. Search-only: Fintech Global on ATO gaps beyond authentication (FINTECHGLOBAL-ATO-2026).

@@ -194,13 +194,13 @@ per return, not preparation hours alone.
   2030 digital reporting for cross-border B2B; 1 Jan 2035 alignment of domestic real-time systems. The Commission
   estimates up to EUR 11 billion a year less VAT fraud [EU-DIRECTIVE-2025-516, EC-VIDA-2025].
 - **France**: from 1 Sep 2026 every established company must be able to receive e-invoices and large and medium
-  companies must issue and report; smaller ones follow in Sep 2027 (vendor summary) [SOVOS-FRANCE-2026].
+  companies must issue and report; smaller ones follow in Sep 2027 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026].
 - **Marketplace and deemed-supplier rules** apply by function (payment control, transmitting orders), not label; AI
   has no legal personality, so an agent's operator may have to collect [BTAX-AGENTICCOMMERCE-2026].
 - **IRS OPR Alert 2026-19 (24 Jun 2026)** applies Circular 230 duties (due diligence, fees, competence, firm
   procedures, written advice) to AI use in federal practice; it does not address state sales tax or VAT [IRS-OPR-2026].
 - **UK PCRT guidance (19 Jan 2026)**: members stay responsible for AI-assisted work, should be able to explain a
-  conclusion, and should not put client data into a public model without consent [PCRT-AI-2026, ICAEW-PCRT-2026].
+  conclusion, and should not put client data into a public model without consent [ATT-PCRTAI-2026, ICAEW-PCRT-2026].
 - **UK tribunal**: in *Rafique v HMRC* [2026] TC09874 a VAT-penalty appeal struck out for breaching unless orders was not
   reinstated; the tribunal found repeated AI-generated submissions with fabricated citations and said every party must verify what it submits [ROSSMARTIN-RAFIQUE-2026].
 - **EU AI Act**: Article 4 requires AI literacy measures for staff [EU-AIACT-2024]. Recital 59 keeps tax-administration
@@ -239,14 +239,14 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 
 ## 8. Frontier
 
-- **2025-09-30** Avalara launches agents with "have your agent call our agent" and MCP servers [AVALARA-AGENTIC-2025].
+- **2025-09-30** Avalara launches agents with "have your agent call our agent" and MCP servers [ACCTODAY-AVALARA-2025].
 - **2026-01-15** Thomson Reuters launches ONESOURCE Sales and Use Tax AI, "touchless by default, manual by exception" [TR-SUTAI-2026].
 - **2026-01-26 to 29** OECD VAT forum names AI and crypto emerging challenges for VAT administration [BTAX-OECDVAT-2026].
 - **2026-02-24 / 07-29** Who collects tax when an AI agent buys; sales tax holidays at agent checkout [BTAX-AGENTICCOMMERCE-2026, STI-AGENTIC-2026].
 - **2026-02-26** Hungary's audit plan says its authority uses AI models, including at invoice issuance [KPMG-HU-2026].
 - **2026-03-24** Sovos: error remediation, Ask Sovi, MCP Gateway in development, A2A expected [SOVOS-SOVI-2026].
 - **2026-05-07** Vertex: Smart Categorization in production use; Brinta acquired in Q1; ERP agents [VERTEX-Q1CALL-2026].
-- **2026-09-01** France's e-invoicing mandate goes live [SOVOS-FRANCE-2026].
+- **2026-09-01** France's e-invoicing mandate goes live [SOVOS-FRANCE-GOLIVE-2026].
 - **2026-09 to 10** Fonoa reports headlines on Spanish B2B e-invoicing dates, Dutch plans and a Bulgarian proposal for 2028 [FONOA-BLOGINDEX-2026].
 - **2026-08-24 / 09-02** A pilot on splitting VAT determination across agents and a peer-reviewed VAT RAG study [SANTOS-VAT-2026, LUKETINA-VAT-2026].
 - **2026-09-15 / 10-01** Sovos buys Blue dot (VAT recovery AI) and Flowie (finance agents) [SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026].
@@ -281,14 +281,14 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 Full details are in the YAML.
 - **In the YAML, research and standards:** LUKETINA-VAT-2026, SANTOS-VAT-2026, NATH-DELL-2025, COLUMN-TAXCALCBENCH-2025, IRS-OPR-2026, ICAEW-PCRT-2026, AICPA-WERFEL-2026, NIST-AIRMF-2023, EU-AIACT-2024, EU-DIRECTIVE-2025-516, HMRC-ROADMAP-2025, OECD-GOVAI-2025.
 - **In the YAML, surveys, firms and conferences:** FONOA-2026, FONOA-176-2026, KPMG-INDIRECT-2026, TR-INDIRECT-2026, DELOITTE-AGENTIC-2026, INNOVATETAX-VXE-2026, TEI-TAXTECH-2026, TRINST-TEIAUDITOR-2026, SAFFERY-VAT-2026, FLSALESTAX-AI-2026, STI-AGENTIC-2026, BTAX-AGENTICCOMMERCE-2026, BTAX-VAT2026, BTAX-OECDVAT-2026, OPENAI-JOB-2026, PLUSGRADE-JOB-2026.
-- **In the YAML, vendors:** TR-SUTAI-2026, TR-ONESOURCEPLUS-2025, TR-CLASSIFICATION-2026, TR-HELP-PRODCLASS, TR-AGENTICIT-2026, TR-INSTITUTE-2025, TR-BUSINESSCASE-2026, TR-WEBINAR-JLL, AVALARA-AGENTIC-2025, AVALARA-AGENTIC-2025b, AVALARA-AVI-2025, AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026, AVALARA-NEXT-2026, AVALARA-ECM-2026, AVALARA-LLMTEST-2025, SOVOS-SOVI-2026, SOVOS-FRANCE-2026, SOVOS-FRANCE-2026b, SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026, SOVOS-DOCS-AICLASS, VERTEX-Q1CALL-2026, VERTEX-SMARTCAT-2026, VERTEX-COPILOT-2025, FONOA-CITATION-2026, FONOA-MONITORING-2026, FONOA-STACK-2025, FONOA-ACCURACY-2025, FONOA-ERRORRATE-2025, NUMERAL-2026, TAXUALLY-2026, TAXCLOUD-2025, TRUSS-KINTSUGI-2026.
+- **In the YAML, vendors:** TR-SUTAI-2026, TR-ONESOURCEPLUS-2025, TR-CLASSIFICATION-2026, TR-HELP-PRODCLASS, TR-AGENTICIT-2026, TR-INSTITUTE-2025, TR-BUSINESSCASE-2026, TR-WEBINAR-JLL, ACCTODAY-AVALARA-2025, AVALARA-AGENTIC-2025b, AVALARA-AVI-2025, AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026, AVALARA-NEXT-2026, AVALARA-ECM-2026, AVALARA-LLMTEST-2025, SOVOS-SOVI-2026, SOVOS-FRANCE-GOLIVE-2026, SOVOS-FRANCE-2026b, SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026, SOVOS-DOCS-AICLASS, VERTEX-Q1CALL-2026, VERTEX-SMARTCAT-2026, VERTEX-COPILOT-2025, FONOA-CITATION-2026, FONOA-MONITORING-2026, FONOA-STACK-2025, FONOA-ACCURACY-2025, FONOA-ERRORRATE-2025, NUMERAL-2026, TAXUALLY-2026, TAXCLOUD-2025, TRUSS-KINTSUGI-2026.
 - **Not in the YAML (opened by the wave 2 researchers unless noted):**
   - EC-VIDA-2025 (European Commission, *VAT in the Digital Age*, page undated, https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en).
   - CDTFA-2025 (Tax Notes, *Experts Urge Caution as State Tax Agencies Deploy Generative AI*, 2025-08-26, https://kogod.american.edu/hubfs/experts_urge_caution_as_state_tax_agencies_deploy_generative_ai_20250826-161144.pdf); in controversy YAML.
   - KPMG-HU-2026 (KPMG Hungary, tax alert, 2026-02-26, https://kpmg.com/hu/en/insights/2026/02/taxalert-2026-02-26.html); in controversy YAML.
   - HADWICK-EUAIACT (D. Hadwick, *Slipping Through the Cracks*, European Papers 9(3), 2024-12-30, https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act).
   - ROSSMARTIN-RAFIQUE-2026 (Ross Martin Tax, summary of *Rafique v HMRC* [2026] TC09874, 2026-05-13, https://rossmartin.co.uk/sme-tax-news/8927-ai-hallucinates-at-the-ftt-again).
-  - PCRT-AI-2026 (ATT for the PCRT bodies, *Professional bodies issue AI advice to members*, 2026-01-19, https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members).
+  - ATT-PCRTAI-2026 (ATT for the PCRT bodies, *Professional bodies issue AI advice to members*, 2026-01-19, https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members).
   - AICPA-CART-2026 (The Tax Adviser, Council on AI Risk in Tax, 2026-09-23, https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/).
   - AVALARA-GOVERNANCE-2026 (Avalara, *Agentic AI in finance: Speed is outrunning governance*, 2026-08-11, https://www.avalara.com/us/en/blog/agentic-ai-finance-governance-survey.html).
   - TR-FORRESTER-2024 (Thomson Reuters, Forrester TEI summary, 2024-03-25, https://tax.thomsonreuters.com/blog/the-corporate-tax-department-business-case-making-the-final-tax-technology-pitch/).

@@ -154,7 +154,7 @@ Ask tax partners, research or national-office leads, in-house tax directors and 
 
 **Governance**
 - 57.4% of 176 indirect tax leaders would not be confident defending AI-assisted decisions to an authority; 12.5% have
-  AI targets [FONOA-2026-SURVEY] (adjacent).
+  AI targets [FONOA-2026] (adjacent).
 
 **Not found:** error, override or parallel-run rates from any firm deployment; inspection findings; any head-to-head of
 commercial tax research tools. **Suggested measures:** errors caught at review per AI-assisted memo, review time,
@@ -182,7 +182,7 @@ rework, disagreement with seniors' answers, citation-check failures, share of an
   output; *Zzaman* involved real cases that did not support the argument [ICAS-TAXTRIB-2026].
 - HMRC (28 Jan 2026) expects generative-AI tax software to flag nuanced rules and prompt users to check [HMRC-GENAI-2026].
 - TPB(GS) 55/2026 (22 Jul 2026): AI "cannot be relied on as a replacement for tax knowledge"; client permission before
-  data goes into third-party AI; document verification [TPB-AI-2026].
+  data goes into third-party AI; document verification [TPB-GS55-2026].
 
 **Frameworks, not standards**
 - Werfel's framework: 20 risks for tax authorities and 15 for preparers (hallucinated advice, control dilution, skill
@@ -195,7 +195,7 @@ rework, disagreement with seniors' answers, citation-check failures, share of an
 
 **Steps that stay with a person:** deciding what may go through AI; reading the authority that carries the argument;
 the conclusion and its confidence level; anything signed (opinions, written advice, filings); planning against substance
-doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2026; TPB-AI-2026].
+doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2026; TPB-GS55-2026].
 
 ## 7. Roles and how they evolve
 

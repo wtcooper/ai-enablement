@@ -833,7 +833,7 @@
   - More than one-third of tax and audit professionals admit using unauthorized AI tools [TR-FOP-2026]
   - >-
     Fonoa found 57.4% of 176 indirect tax leaders would not be confident defending AI-assisted decisions to a tax authority
-    (adjacent) [FONOA-2026-SURVEY]
+    (adjacent) [FONOA-2026]
   - >-
     Silent hallucination and rising token costs were the new concerns TEI attendees raised [TEI-TAXTECH-2026]
   - >-
@@ -903,7 +903,7 @@
     date: '2026-07-21'
     access: full
     locator: '''Govern the tools being used'''
-  - ref: FONOA-2026-SURVEY
+  - ref: FONOA-2026
     title: State of Indirect Tax in the AI Era 2026 (176 indirect tax leaders)
     publisher: Fonoa
     type: survey
@@ -2170,7 +2170,7 @@
   solution: >-
     Idea: a chatbot answers routine client questions from the firm's approved content, flags nuanced or high-stakes questions
     and routes them to an adviser. The TPB lists chatbot functionality that can give tailored advice as AI capability
-    practitioners may use [TPB-AI-2026]. HMRC's guidelines for tax software using generative AI ask for flags on nuanced
+    practitioners may use [TPB-GS55-2026]. HMRC's guidelines for tax software using generative AI ask for flags on nuanced
     rules and prompts to seek a qualified tax professional [HMRC-GENAI-2026].
   outcomes:
   - lever: experience
@@ -2183,7 +2183,7 @@
   - >-
     Defined scope of questions the assistant may answer, with an escalation path; Werfel contrasts a chatbot limited
     to filing deadlines with one answering credit eligibility [TAXADVISER-WERFEL-2026]
-  - Client consent and disclosure of AI use in the engagement terms [PCRT-AI-2026; TPB-AI-2026]
+  - Client consent and disclosure of AI use in the engagement terms [PCRT-AI-2026; TPB-GS55-2026]
   risks_and_guardrails:
   - >-
     General-purpose ChatGPT gave correct responses 39% to 47% of the time across the 2023 and 2024 filing seasons and
@@ -2194,7 +2194,7 @@
     queries [TAXADVISER-WERFEL-2026]
   - >-
     The TPB requires permission from each client before client information is entered into AI tools that act as a third
-    party [TPB-AI-2026]
+    party [TPB-GS55-2026]
   human_checkpoints:
   - Escalation to a qualified adviser for fact-dependent or advice-level questions
   role_evolution: Not described in the sources.
@@ -2217,7 +2217,7 @@
     date: '2025'
     access: full
     locator: abstract
-  - ref: TPB-AI-2026
+  - ref: TPB-GS55-2026
     title: TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct
     publisher: Tax Practitioners Board (Australia)
     type: regulator
@@ -2379,7 +2379,7 @@
     AI can produce plausible but nonexistent authority. In Clinco, three of four cases cited for a notice-of-deficiency
     signature argument were described by the Tax Court as probable AI hallucinations, and counsel repeated one after
     the IRS flagged it [TAXCT-CLINCO-2026]. Regulators and tribunals expect practitioners to show how output was verified
-    [IRS-OPR-2026; TPB-AI-2026].
+    [IRS-OPR-2026; TPB-GS55-2026].
   solution: >-
     Reviewers confirm every cited authority exists and says what the draft claims, and the file records the prompt, the
     output, the citations, how they were verified and who reviewed. KPMG US M&A Tax says its human-in-the-loop model
@@ -2427,7 +2427,7 @@
     Control dilution: Werfel's preparer register warns faster workflows can make review less rigorous in practice [AICPA-WERFEL-2026]
   - >-
     OPR s10.36 expects firms to document the steps that show adherence; the TPB says verification should be documented;
-    PCRT suggests keeping screenshots of prompts and copies of web pages [IRS-OPR-2026; TPB-AI-2026; PCRT-AI-2026]
+    PCRT suggests keeping screenshots of prompts and copies of web pages [IRS-OPR-2026; TPB-GS55-2026; PCRT-AI-2026]
   - Standing orders requiring AI certification exist in some courts [TAXCT-CLINCO-2026]
   human_checkpoints:
   - >-
@@ -2485,7 +2485,7 @@
     date: '2026-06-24'
     access: full
     locator: Real-World Consequences; s10.22 and s10.36; best practices
-  - ref: TPB-AI-2026
+  - ref: TPB-GS55-2026
     title: TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct
     publisher: Tax Practitioners Board (Australia)
     type: regulator

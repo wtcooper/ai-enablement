@@ -142,7 +142,7 @@ AI in provision or Pillar Two work.**
 | 70% / 76% | Expect to pay over US$500,000 a year to comply / CFOs expecting technology to absorb cost at the same staffing | [DELOITTE-P2AGENT-2024], Deloitte survey of over 500 tax leaders and CFOs, date not stated |
 | 92% | Respondents expecting a global minimum tax to increase disputes | [EY-PAPERJAM-2026], EY Luxembourg, promotional |
 | 12% | Share of US restatement events citing tax accounting issues, 2013-2022 (717 of 5,793; 7% in 2022) | [CAQ-RESTATE-2024], report PDF read; context only, not AI |
-| < 1/3 | Simplified US personal federal returns computed correctly by frontier models | [ARXIV-TAXCALCBENCH-2025], adjacent (individual tax), not provision |
+| < 1/3 | Simplified US personal federal returns computed correctly by frontier models | [COLUMN-TAXCALCBENCH-2025], adjacent (individual tax), not provision |
 
 ## 6. Guardrails
 
@@ -235,7 +235,7 @@ Keys used above that are not in the YAML (all opened unless marked; full details
 - AICPA-WERFEL-2026: The Tax Adviser, appendices to Werfel's AI tax risk framework, 2026-06.
 - APPLE-JOB-2026: Apple, Tax Technology Lead job posting (via AnitaB.org), 2026-06-25.
 - ARXIV-LAWORDER-2026: Law And Order: Tax Law Autoformalization, arXiv 2610.02792, 2026-10-02 (abstract).
-- ARXIV-TAXCALCBENCH-2025: TaxCalcBench, arXiv 2507.16126, 2025-07-22 (abstract).
+- COLUMN-TAXCALCBENCH-2025: TaxCalcBench, arXiv 2507.16126, 2025-07-22 (abstract).
 - BTAX-FORUM-2026: Bloomberg Tax Leadership Forum press release, 2026-06-10.
 - CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends in the United States 2013-2022, 2024-06 (report PDF opened at https://thecaq.wpenginepowered.com/wp-content/uploads/2024/06/caq-financial-restatement-trends-us-2013-2022_2024-06.pdf; Taxes row in the accounting-issues table).
 - EY-PAPERJAM-2026: Paperjam (EY Luxembourg), Tax controversy in a GenAI world, 2026-03-06.
