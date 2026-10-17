@@ -54,13 +54,13 @@ in investigation and in the new AI-agent incident work; recovery and exercises a
 - Improve: `#01` AI checks the IR plan against NIST SP 800-61 and flags stale steps (Fortinet proof of concept).
   `#02` AI builds tabletop scenarios from your own playbooks (Immersive release, 2026-10-01; CIS guidance).
   `#03` keep a vetted self-hosted model ready, so forensic AI is not blocked by provider guardrails (Hugging Face).
-- Before trusting an investigation agent, benchmark it on ground-truth scenarios (`security-operations-22`); 5 of 7
+- Before trusting an investigation agent, benchmark it on ground-truth scenarios (`security-operations-21`); 5 of 7
   frontier models hard-failed one published scenario (unsecure.sh blog test, best of two runs) [UNSECURE-EVAL-2026].
 
 **Investigate and scope**
 - Improve: `#04` LLM agents rebuild timelines from logs and artifacts, validated before export (Hugging Face "hours
   instead of days", Google Timesketch, Centene). `#06` plain-language questions over forensic evidence with linked
-  citations (Magnet). Agent-built case notebooks (DNB) and Centene's OCSF pipeline: `security-operations-12`.
+  citations (Magnet). Centene's OCSF pipeline is part of `#04`.
   `#08` rank likely root-cause code changes (Meta 42% backtest accuracy; reliability incidents, not security).
   `#09` verify AI findings (existence checks, judge model) and harden tools against attacker-written logs; the
   dismissal challenge is `security-operations-07`.
@@ -74,14 +74,14 @@ in investigation and in the new AI-agent incident work; recovery and exercises a
   `#13` find the last clean restore point, flag bad backups, draft runbooks (Rubrik, N2WS; vendor scenarios).
 - Automate: `#11` guardrailed automated containment with pre-authorised human override (Unit 42, NIST, CISA advice).
 - Delegate (idea): `#12` LLM plans response and recovery, each action checked in a digital twin first. Closed-command
-  containment is `security-operations-20`; autonomous containment, the idea `security-operations-25`.
+  containment is `security-operations-19`; autonomous containment, the idea `security-operations-24`.
 
 **Communicate, report and learn**
 - Improve: `#14` draft incident summaries and executive updates (Google: 51% less time per summary, 300 summaries;
   the module's only grade A). `#15` draft regulator notifications inside parallel clocks
   (vendor-only evidence). `#16` AI reviews post-incident reports against a written standard; mandatory for high-severity reports (Cloudflare,
   engineering incidents generally).
-  SOC investigation reports drafted for sign-off: `security-operations-14`.
+  SOC investigation reports drafted for sign-off: `security-operations-13`.
 
 **Incidents caused by AI agents (new scope)**
 - Improve: `#17` treat agent control incidents as a new class: scoped identities, stop rules, drills, halt authority
@@ -196,7 +196,7 @@ halt time for AI systems in drills; restore-point accuracy in recovery tests.
 - The AI drafts; a named person accepts, edits or discards (`#14`, `#15`). Every finding links to a source artifact (`#05`, `#06`).
 - Logging off and no retraining on incident data [GOOGLE-IRGENAI-2024]; self-hosted models for attacker data (`#03`).
 - Treat logs, emails, tickets and artifacts as hostile input; validate structured output; least privilege (`#09`).
-- Audit sampled AI investigations against ground truth, not the tool's self-report (`#07`); test on scenarios first (`security-operations-22`).
+- Audit sampled AI investigations against ground truth, not the tool's self-report (`#07`); test on scenarios first (`security-operations-21`).
 - Closed command sets, pre-approved actions and break-glass revocation for anything automated (`#11`, `#12`).
 
 **Steps that stay with a person**: declaring "major", "significant" or "material"; approving every external filing;
@@ -246,7 +246,7 @@ restarting a halted agent; signing anything that may go to court.
 - **"Hosted models refuse our work."** It happened to Hugging Face. Pre-approve a self-hosted or trusted-access model (`#03`).
 - **"Agentic is hype."** Partly: an unsecure.sh post says the label covers different systems, some fully deterministic
   [UNSECURE-EVAL-2026]; Splunk's RSAC SOC authors said theirs was not fully agentic [SPLUNK-RSACSOC-2026]. Ask
-  what the system does, and test on scenarios (`security-operations-22`).
+  what the system does, and test on scenarios (`security-operations-21`).
 - **"The savings figures are vendor numbers."** Mostly true. The best measured case is Google's 2024 summary study (`#14`).
 - **"We built our own and it didn't last."** Common: 46% of self-built tools failed or were replaced in a sponsored
   survey [HELPNET-GARTNER-2026]. Budget for upkeep (`#22`).
@@ -279,7 +279,7 @@ Full details (title, publisher, type, URL, date, access) are in the YAML for eve
   DATABRICKS-JOB-2026, GITLAB-JOB-2026, TWILIO-JOB-2026, CLOUDFLARE-JOB-2026, BLOCK-JOB-2026.
 - **Not in the YAML (opened by the research angles; reopened by the verifier 2026-10-17):** UNSECURE-EVAL-2026 (unsecure.sh, John Ao and
   Michel San, *A scenario to evaluate your Agentic SOC*, 2026-08-27, https://unsecure.sh/blog/agentic-soc-scenario/; same key as
-  `security-operations-22`; the page does not name Cotool, so the earlier 'Cotool' attribution was dropped);
+  `security-operations-21`; the page does not name Cotool, so the earlier 'Cotool' attribution was dropped);
   ISACA-AIPULSE-EU-2026 (ISACA, *A Third of European Organisations
   Don't Know if They've Been Hit by an AI-Powered Cyberattack*, 2026-06-17,
   https://www.isaca.org/about-us/newsroom/press-releases/2026/a-third-of-european-organisations-dont-know-if-they-have-been-hit-by-an-ai-powered-cyberattack);

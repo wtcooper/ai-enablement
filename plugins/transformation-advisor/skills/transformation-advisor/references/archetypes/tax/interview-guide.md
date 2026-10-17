@@ -126,8 +126,8 @@ Use these in addition to each phase file's question bank.
 - "What is the baseline, measured on real work: hours per return, review notes, notices, amended returns?"
 - "Is the comparison onshore cost, offshore cost, or both?" (An AI case that ignores the offshore baseline overstates
   savings; see [economics.md](economics.md) §5.)
-- "What will the tool cost per seat, per return or per run?" (Blue J lists US$1,498 a year per user [BLUEJ-PRICING-2026];
-  vendors quoted one firm US$100-150 or more per return [WCG-2026]; TEI attendees flagged rising token costs [TEI-TAXTECH-2026].)
+- "What will the tool cost per seat, per return or per run?" (Blue J lists its individual plan at US$1,498 a year per user
+  [BLUEJ-PRICING-2026]; one firm reported a vendor's average of US$100-150 per return and expected to pay more [WCG-2026]; TEI attendees flagged rising token costs [TEI-TAXTECH-2026].)
 - "Where will juniors learn the judgement this step used to teach?" ([workforce.md](workforce.md) §6)
 
 **Plan**

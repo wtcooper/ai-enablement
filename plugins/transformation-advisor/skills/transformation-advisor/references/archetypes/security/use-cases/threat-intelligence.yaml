@@ -28,35 +28,35 @@
   maturity: emerging
   problem: >-
     Intelligence requirements are expanding (deepfakes, AI-accelerated exploitation, AI-enabled attack vectors) while
-    analyst capacity is flat, so teams struggle to know which requirements are covered by which sources
-    (FLASHPOINT-ENTERPRISE-2026). Most formal CTI teams have fewer than four full-time staff, 57% of programs do not
+    the capacity available to address them remains constrained (FLASHPOINT-ENTERPRISE-2026, executive summary). Most formal CTI teams have fewer than four full-time staff, 57% of programs do not
     track maturity over time and 49% gather no systematic feedback on effectiveness (SANS-CTIPR-2026).
   solution: >-
     Flashpoint's interview study says practitioners see coverage monitoring against priority intelligence requirements
     (PIRs: the standing questions the intelligence team must answer for the business) and intelligence briefings as
-    workflows where agents can extend coverage and reduce recurring work while keeping analysts involved. It treats
-    tasks with reviewable outputs, reversible actions and clear success criteria as the practical starting point
-    (FLASHPOINT-ENTERPRISE-2026, 'What the Findings Mean for Threat Intelligence Programs'). No deployment was found.
+    workflows where agents can extend coverage and reduce recurring work while keeping analysts involved
+    (FLASHPOINT-ENTERPRISE-2026, 'What the Findings Mean for Threat Intelligence Programs'). It treats tasks with
+    reviewable outputs, reversible actions and clear success criteria as the practical starting point
+    (FLASHPOINT-ENTERPRISE-2026, 'Agentic AI Adoption Is Underway'). No deployment was found.
   outcomes:
     - {lever: capacity, description: "none published", figure: "none published", measures: "No deployment or measurement found; the report offers interview findings only", provenance: vendor-published, source_ref: FLASHPOINT-ENTERPRISE-2026}
   prerequisites:
     - "Written priority intelligence requirements tied to business risks (FLASHPOINT-ENTERPRISE-2026, section on AI-related threats)"
     - "Measures of success agreed before deployment; the report names time savings, accuracy, risk reduction and ROI as what practitioners track (FLASHPOINT-ENTERPRISE-2026, introduction)"
   risks_and_guardrails:
-    - "Interviewees want read-only assistants, reviewable output, reversible actions and clear success criteria before granting agents more autonomy (FLASHPOINT-ENTERPRISE-2026, agentic AI section)"
+    - "One retail interviewee would consider only read-only AI assistants because of the risk of granting agents write permissions; Flashpoint says that as autonomy increases, teams need clear controls on access, change, human approval and audit (FLASHPOINT-ENTERPRISE-2026, 'Agentic AI Adoption Is Underway')"
     - "Practitioners in Feedly's roundup reject activity metrics (report counts, IOC volume) in favour of decisions influenced, controls implemented and time from intelligence to action (FEEDLY-ROUNDUP-2026, executive summary)"
   human_checkpoints:
     - "Analysts stay in the intelligence process; agents that move from retrieving to acting need controls on access, change, approval and audit (FLASHPOINT-ENTERPRISE-2026)"
   role_evolution: >-
     Recorded Future's customer panelists said junior analysts would not be replaced by AI but their jobs would look
-    very different as they use AI to augment their workflows (RF-PRACTITIONER-2025, 'Looking to the future of threat
+    very different as they use AI to augment their workflows (RF-PRACTITIONER-2026, 'Looking to the future of threat
     intelligence').
   evidence_grade: D
   sources:
     - {ref: FLASHPOINT-ENTERPRISE-2026, title: "The Enterprise Threat Intelligence Report: 2026 (vendor-commissioned qualitative research, more than 20 interviewees)", publisher: Flashpoint, type: survey, url: "https://flashpoint.io/blog/enterprise-threat-intelligence-report-2026/", date: "2026-10-13", access: full, locator: "'What the Findings Mean for Threat Intelligence Programs'; agentic AI section; introduction"}
     - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "paragraph on resourcing"}
     - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "executive summary"}
-    - {ref: RF-PRACTITIONER-2025, title: "Practitioners Reveal What Makes Threat Intelligence Programs Mature (webinar recap; page undated)", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/blog/practitioner-insights-advancing-threat-intelligence", date: "2025", access: full, locator: "'Looking to the future of threat intelligence'"}
+    - {ref: RF-PRACTITIONER-2026, title: "Practitioners Reveal What Makes Threat Intelligence Programs Mature (webinar recap of the 2025 State of Threat Intelligence report)", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/blog/practitioner-insights-advancing-threat-intelligence", date: "2026-01-09", access: full, locator: "'Looking to the future of threat intelligence' (date from the page's published-date metadata)"}
   last_reviewed: "2026-10-17"
   notes: >-
     Idea (grade D). Merged practice-15 (D) and discourse-13 (C). The Flashpoint study is vendor-commissioned and
@@ -77,7 +77,8 @@
   problem: >-
     Threat-landscape reporting depends on collecting and curating thousands of incident reports from open sources and
     partners; ENISA notes open-source reporting has gaps in granularity and timing (ENISA-ETL-2026, Methodology).
-    Collecting and enriching open-source and leak data by hand does not scale (FIRST-CON-2026, Apura abstract).
+    Apura Cyber Intelligence frames its FIRST 2026 session as moving 'beyond manual hunting' to collection,
+    enrichment and investigative search at scale (FIRST-CON-2026, Apura session title).
   solution: >-
     ENISA states that AI was used in a limited capacity to support collection and processing of data for its Threat
     Landscape 2026, and its methodology allows AI-supported tools for monitoring and collection (ENISA-ETL-2026,
@@ -145,7 +146,7 @@
   outcomes:
     - {lever: capacity, description: "none published", figure: "none published", measures: "The FIRST abstract states the size of the problem but no result for the tool; Mandiant's 2023 post gives no collection-stage figure", provenance: vendor-published, source_ref: FIRST-CON-2026}
   prerequisites:
-    - "A collection source with legal access to the underground data, and an index for retrieval (FIRST-CON-2026, Apura abstract)"
+    - "A pipeline that extracts, enriches and indexes the collected data so an LLM can retrieve from it (FIRST-CON-2026, Apura abstract)"
   risks_and_guardrails:
     - "Stealer logs and forum posts are attacker-controlled content; a FIRST 2026 session shows one crafted artifact can steer retrieval and the analyst-facing narrative of an LLM-assisted workflow (FIRST-CON-2026, CyCraft session, 18 June)"
     - "A practitioner says teams talk about dark web monitoring but not real source handling (FEEDLY-ROUNDUP-2026, Q3 table)"
@@ -186,24 +187,25 @@
   outcomes:
     - {lever: growth, description: "In a controlled evaluation the system recovered most validated ATT&CK techniques from the initial post alone; in a matched live deployment its threads gathered more CTI entities than controls", figure: "72.8% of validated techniques recovered; 3.85 more CTI entities per thread over seven days", measures: "Share of validated MITRE ATT&CK techniques recovered across 100 CrimeBB conversations using only the initial post; mean extra CTI entities in assigned threads versus matched controls over seven days; no account suspensions or accusations of automated participation across 104 live conversations; authors' own system", provenance: independent, source_ref: ARXIV-2608.23185}
   prerequisites:
-    - "Forum accounts and a legal and ethics review; the abstract does not say what review was done (ARXIV-2608.23185)"
+    - "Ethics and data-protection review before deployment; the authors report approval by their university's Research Ethics Committee after a hearing, a published privacy notice, and GDPR handling with salted-hash pseudonymization of usernames (ARXIV-2608.23185, ethics section)"
   risks_and_guardrails:
     - "The authors report that a layered safety design contained all injected jailbreak attempts at the pipeline level (ARXIV-2608.23185, abstract)"
-    - "Legal and ethical boundaries of engaging cybercrime communities are not addressed in the abstract; a practitioner in Feedly's roundup says teams rarely discuss source handling inside clear legal and ethical boundaries (FEEDLY-ROUNDUP-2026, Q3 table)"
+    - "The agent does not disclose that it is automated; the authors constrain this deception to clarifying cybersecurity questions, no impersonation of real people, and termination of sensitive or jailbreak conversations (ARXIV-2608.23185, ethics section)"
+    - "A practitioner in Feedly's roundup says teams rarely discuss source handling inside clear legal and ethical boundaries (FEEDLY-ROUNDUP-2026, Q3 table)"
   human_checkpoints:
-    - "Engagement gating is a built-in filter; human oversight is not described in the abstract (ARXIV-2608.23185)"
+    - "Engagement gating is a built-in filter; operator review of individual conversations is not described in the abstract (ARXIV-2608.23185)"
   role_evolution: "Not described in the sources."
   evidence_grade: C
   sources:
-    - {ref: ARXIV-2608.23185, title: "Towards Automated Cyber Threat Intelligence Elicitation in Underground Forums", publisher: "arXiv (Politecnico di Milano and BV TECH)", type: academic, url: "https://arxiv.org/abs/2608.23185", date: "2026-08-24", access: full, locator: "abstract; author affiliations on page 1"}
+    - {ref: ARXIV-2608.23185, title: "Towards Automated Cyber Threat Intelligence Elicitation in Underground Forums", publisher: "arXiv (Politecnico di Milano and BV TECH)", type: academic, url: "https://arxiv.org/abs/2608.23185", date: "2026-08-24", access: full, locator: "abstract; author affiliations on page 1; ethics section (IX)"}
     - {ref: FEEDLY-ROUNDUP-2026, title: "2026 CTI Practitioners Roundup (14 practitioners; J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/2026-cti-practitioners-roundup", date: "2026-01-29", access: full, locator: "Q3 table"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged practice-19 (graded A), discourse-17 (D) and governance-14 (C). Graded C: measured results come from a
     research prototype run by its authors, not from any CTI team, so A (which needs an organization's measured
     operational outcome) overstates it, and D understates it because a live trial took place. Kept as a frontier
-    signal. Covert engagement with criminal communities raises legal, ethical and operational-security questions the
-    source does not resolve.
+    signal. The authors describe institutional ethics approval for their study; whether a CTI team could lawfully run
+    covert engagement in its own jurisdiction is a question the paper does not answer for practitioners.
 
 - id: security-threat-intelligence-05
   title: Unstructured reports turned into indicators, entities and tags, with the source report kept attached and checks before storage
@@ -294,15 +296,15 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Mapping report sentences to MITRE ATT&CK (the public catalogue of more than 200 attacker techniques) is slow and
-    error-prone, but the mapping is what lets teams compare actors and drive detection (MITRE-TRAM-2023). In an
+    MITRE describes mapping the TTPs in CTI reports to ATT&CK as difficult, error-prone and time-consuming
+    (MITRE-TRAM-2023, 'Problem'); ATT&CK v20 lists 227 Enterprise techniques and 479 sub-techniques (MITRE-ATTCK-2026). In an
     18-person practitioner survey, 10 of 18 named mapping behaviour to standard taxonomies as a recurring challenge
     (ARXIV-2609.01174, section 3.2).
   solution: >-
     Intel 471's threat hunt analysts say they use AI to enrich hunts with CTI context: tagging hunt packages with
     actors seen using the same techniques, mapping techniques to ATT&CK, and adding industry, geography, severity and
     motivation so teams can prioritize hunts (INTEL471-HUNTING-2025, 'Enrichment'). MITRE's TRAM is an open-source
-    platform that maps CTI reports to ATT&CK, and its latest work fine-tunes LLMs for the mapping (CTID-TRAMREADME-2026;
+    platform that maps CTI reports to ATT&CK, and its 2023 project fine-tuned LLMs for the mapping (CTID-TRAMREADME-2026;
     MITRE-TRAM-2023). EclecticIQ's Intelligence Center 3.9 lets customers connect their choice of LLM provider per
     capability (EIQ-IC39-2026). Feedly publishes a mapping prompt with ATT&CK Navigator output (FEEDLY-AUTOMATE-2026,
     Workflow 2), and Flashpoint's pilot interviewees list ATT&CK mapping among workflows they are testing
@@ -330,7 +332,7 @@
   evidence_grade: B
   sources:
     - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'Enrichment' and 'Hypothesis Development'"}
-    - {ref: MITRE-TRAM-2023, title: "Threat Report ATT&CK Mapper (TRAM)", publisher: MITRE Center for Threat-Informed Defense, type: standard-setter, url: "https://ctid.mitre.org/projects/threat-report-attck-mapper-tram/", date: "2023-08-24", access: full, locator: "project summary (foundation source)"}
+    - {ref: MITRE-TRAM-2023, title: "Threat Report ATT&CK Mapper (TRAM)", publisher: MITRE Center for Threat-Informed Defense, type: standard-setter, url: "https://ctid.mitre.org/projects/threat-report-attck-mapper-tram/", date: "2023-08-24", access: full, locator: "project summary and 'Problem' (foundation source)"}
     - {ref: CTID-TRAMREADME-2026, title: "TRAM README", publisher: MITRE Center for Threat-Informed Defense, type: standard-setter, url: "https://raw.githubusercontent.com/center-for-threat-informed-defense/tram/main/README.md", date: "2026-10-17", access: full, locator: "opening paragraphs (file undated; retrieval date)"}
     - {ref: EIQ-IC39-2026, title: "Intelligence Center 3.9: More AI provider choice, MITRE ATT&CK v19.1 support, and more", publisher: EclecticIQ, type: vendor, url: "https://blog.eclecticiq.com/intelligence-center-3.9", date: "2026-09-22", access: full, locator: "paragraphs on AI providers and ATT&CK v19.1"}
     - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 2; 'Build versus buy'; 'Where the human analyst is still required'"}
@@ -342,7 +344,7 @@
     - {ref: ARXIV-2605.25836, title: "CTI2TTP: Evidence-Grounded TTP Extraction from Cyber Threat Intelligence via Diverge-then-Converge Verification", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.25836", date: "2026-05-25", access: full, locator: "abstract (v2 revised 2026-10-13)"}
     - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
     - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
-    - {ref: MITRE-ATTCK-2026, title: "ATT&CK v20 release (Updates - October 2026)", publisher: MITRE, type: standard-setter, url: "https://attack.mitre.org/resources/updates/", date: "2026-10-13", access: full, locator: "v20 release notes"}
+    - {ref: MITRE-ATTCK-2026, title: "ATT&CK v20 release (Updates - October 2026)", publisher: MITRE, type: standard-setter, url: "https://attack.mitre.org/resources/updates/", date: "2026-10-13", access: full, locator: "v20 release notes, including Enterprise technique counts"}
     - {ref: ARXIV-2608.06778, title: "Retrieval-Constrained Policy Optimization for Attack Technique Extraction from Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.06778", date: "2026-08-07", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -371,8 +373,8 @@
     vendor's data-collection pipeline (FIRST-CON-2026, 15 June).
   solution: >-
     Research designs extract each report into a graph, verify entities against evidence and ATT&CK definitions, and
-    merge graphs across sources (BEACON; ANCHOR, which runs a local model to keep internal incident data off enterprise
-    APIs; TACTIC-KG) (ARXIV-2608.28394; ARXIV-2606.01208; ARXIV-2607.05001). Another team used an LLM pipeline to
+    merge graphs across sources (BEACON; ANCHOR, whose local-model option closely matched enterprise LLM typing
+    performance, so internal incident data can stay off enterprise APIs; TACTIC-KG) (ARXIV-2608.28394; ARXIV-2606.01208; ARXIV-2607.05001). Another team used an LLM pipeline to
     structure 16,096 public CTI reports from two decades and measure how much each added source contributes
     (ARXIV-2602.17458). No team was found using either approach to manage subscriptions or attribution.
   outcomes:
@@ -441,7 +443,7 @@
   risks_and_guardrails:
     - "Google says the relevance system is in Beta and customers should keep Digital Threat Monitoring and Attack Surface Management running in parallel (GOOGLE-GTIRELEVANCE-2026, Beta note)"
     - "The system is tuned to produce few alerts, sometimes zero a day, so a quiet dashboard may hide gaps; profile edits are cited and versioned (GOOGLE-GTIORGPROFILE-2026)"
-    - "Forrester's analyst says the test of prioritization is delivering consistently without bias and blind spots, and that black-box AI triage risks failing on accuracy and efficiency together (FORRESTER-PREDICT-2025)"
+    - "Forrester's analyst says the test of prioritization is delivering consistently without bias and blind spots, and that black-box AI triage risks failing on both effectiveness and efficiency (FORRESTER-PREDICT-2025)"
     - "LLMs were found inconsistent and overconfident on real-size threat reports (ARXIV-2503.23175, abstract)"
   human_checkpoints:
     - "Analysts change alert status and give feedback that shapes recommendations (GOOGLE-GTIRELEVANCE-2026; GOOGLE-GTILANDSCAPE-2026)"
@@ -466,9 +468,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged practice-06, discourse-05, discourse-18 and governance-10. Maturity 'piloting' because the relevance system
-    is Beta. Vendor claims only; no customer outcome or override rate is published. Google's blog also says customers
-    report identifying 139% more threats proactively and 46% more efficient CTI teams (IDC study commissioned by Google,
-    gated, not specific to AI), so these are not used as outcomes. POLAR (arXiv 2610.07298) reports better threat
+    is Beta. Vendor claims only; no customer outcome or override rate is published. An earlier draft attributed IDC
+    figures (139% more threats identified, 46% more efficient CTI teams) to Google's launch post; the post does not
+    contain them, so they were removed. POLAR (arXiv 2610.07298) reports better threat
     ranking than baselines with no figure in its abstract. Google's group warns raw CVE volume can mislead (about 5,000
     Linux kernel CVEs in January to August 2026 with no observed exploited zero-days); that item is routed to
     vulnerability-exposure (see security-vulnerability-exposure-09, prioritisation using LLM-synthesised threat
@@ -618,8 +620,7 @@
   notes: >-
     From practice-01, regraded from A to B under the 2026-10-17 rule: both figures are a customer's statements in a
     vendor-written case study with no stated method, so they are kept but labelled. Cowbell and Superhuman are named
-    deployments. Google's blog cites a Google-commissioned IDC study (CTI teams 46% more efficient; not AI-specific;
-    gated), not used as an outcome. The self-service effect (engineers outside security querying intelligence) is the
+    deployments. The self-service effect (engineers outside security querying intelligence) is the
     nearest this module comes to a change in who does the work.
 
 - id: security-threat-intelligence-12

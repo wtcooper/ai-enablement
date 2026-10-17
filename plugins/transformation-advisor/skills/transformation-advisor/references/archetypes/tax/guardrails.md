@@ -45,11 +45,11 @@ unsettled, say so and suggest the leader takes advice. Source keys in brackets r
 | Treasury regulations, IRC sections 7216 and 6713 | Use and disclosure of return information by preparers | No AI-specific guidance found [ECFR-7216-2026] |
 | FTC Safeguards Rule (via IRS Publication 4557) | Preparers as financial institutions: written security plan, MFA, oversight of service providers | Predates AI; applies to AI vendors as service providers (advisor inference) [IRS-P4557-2024] |
 | US Tax Court | Filings, sanctions, practitioner admission | No AI rule; proposed 2026 rule amendments contain no AI text [TAXCT-ANNOUNCE-2026] |
-| AICPA | SSTS (members); CART; independence for PE structures | SSTS 1.4 on reliance on tools; CART launched 23 Sep 2026 [TAXCT-CLINCO-2026; AICPA-CART-2026] |
+| AICPA | SSTS (members); CART; independence for PE structures | SSTS 1.4 on reliance on tools; CART announced 23 Sep 2026 [TAXCT-CLINCO-2026; AICPA-CART-2026] |
 | UK PCRT bodies (AAT, ACCA, ATT, CIOT, ICAEW, ICAS, STEP); HMRC | Members' conduct; software that interacts with HMRC | PCRT topical guidance 19 Jan 2026; HMRC software guidelines [PCRT-AI-2026; HMRC-GENAI-2026] |
 | Tax Practitioners Board (Australia) | Code of Professional Conduct under the Tax Agent Services Act | TPB(GS) 55/2026, 22 Jul 2026 [TPB-GS55-2026] |
 | Bundessteuerberaterkammer (Germany) | Steuerberater professional rules | FAQ dated 27 Jan 2026 [BSTBK-KI-2026] |
-| EU (AI Act; data protection) | Deployers' literacy duty; high-risk systems; GDPR | Deferral of high-risk duties provisional [GIBSON-AIACT-2026] |
+| EU (AI Act; data protection) | Deployers' literacy duty; high-risk systems; GDPR | Omnibus amendment in force since Jul 2026: stand-alone high-risk duties deferred to 2 Dec 2027 [CUATRECASAS-AIOMNIBUS-2026] |
 | Professional liability insurers | Underwriting and claims | Asking about AI policies; no substantive claims at accounting firms reported in Apr 2026 [DIGIN-INSURERS-2026] |
 
 State AI laws (California, Colorado, Illinois, Utah) are named by OPR but were not read; no state board of accountancy
@@ -75,16 +75,17 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 
 - **Section 7216 and 6713.** Knowing or reckless disclosure or misuse of return information by a preparer is a
   misdemeanour (fine up to US$1,000, or one year, or both), and section 6713 imposes US$250 per disclosure, capped at
-  US$10,000 a year [LII-USC-7216-6713]. Both refer to chapter 1 income-tax returns; no source settles VAT or sales tax.
+  US$10,000 a year; both are higher where the disclosure is connected to identity theft [LII-USC-7216-6713]. Both refer to chapter 1 income-tax returns; no source settles VAT or sales tax.
 - **"Preparer" includes software developers.** The regulations count anyone providing auxiliary services, including a
   person who develops preparation software [ECFR-7216-2026].
 - **The consent line.** Disclosure to another US preparer without consent is allowed only where the services "are not
   substantive determinations or advice affecting the tax liability"; a substantive determination is "an analysis,
   interpretation, or application of the law" [ECFR-7216-2026]. Whether an LLM vendor makes such determinations, and
-  which consent applies, has no IRS answer [WINTHROP-ABA-2026]. A CPE vendor says consent is the default for AI; that is
+  which consent applies, is the open question a 2026 ABA Tax Section panel was set to examine; no IRS guidance on it was
+  found [WINTHROP-ABA-2026; MYCPE-7216-2026]. A CPE vendor says consent is the default for AI; that is
   broader than the regulation's exceptions [MYCPE-7216-2026].
-- **Consent rules.** Written, knowing, voluntary, signed and dated; cannot be a condition of service; required before
-  disclosure to a preparer outside the US, with special rules for SSNs [ECFR-7216-2026; IRS-RP2013-14].
+- **Consent rules.** Written, knowing, voluntary, signed and dated; cannot be a condition of service, except consent to
+  disclosure to another preparer helping with the return; required before disclosure to a preparer outside the US, with special rules for SSNs [ECFR-7216-2026; IRS-RP2013-14].
 - **Unnamed prompts can still be return information.** A law firm says combined figures can identify a taxpayer even
   without a name (its reading, not the alert's text) [KTS-OPR-2026]. CAMICO says written consent "may be required" for
   certain AI platforms [CAMICO-FAQ-2025].
@@ -93,7 +94,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
   can give it [TPB-GS55-2026]. BStBK: confidentiality continues; prefer EU-hosted providers and a processing contract
   [BSTBK-KI-2026].
 - **Privilege (adjacent).** A US court held a defendant's chats with a consumer AI tool were not privileged or work
-  product (a securities case, not tax) [ORRICK-HEPPNER-2026].
+  product (a securities-fraud prosecution, not tax) [ORRICK-HEPPNER-2026].
 
 ## 5. Signing, positions and penalties
 
@@ -115,14 +116,15 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 |---|---|---|
 | *Clinco v. Commissioner* (Tax Court, 9 Feb 2026) | Three of four cited cases apparently hallucinated; counsel did not correct the record; admonishment, no sanction; "Tax Court has not done so. Yet." | [CLINCO-OPINION-2026; TAXCT-CLINCO-2026] |
 | *Riddle Aggregates* (Tax Court trial, 18 Mar 2026) | IRS withdrew two expert rebuttal reports after AI-related errors were raised; cause disputed | [RIDDLE-TRANSCRIPT-2026] |
-| *Khoja* (Tax Court, Mar 2026) | Judge questioned an IRS attorney over a motion citing a nonexistent case (Bloomberg's account; order not read) | [BLAW-TAXCT-2026] |
+| *Khoja* (Tax Court, reported Mar 2026) | Judge ordered a hearing on an IRS motion that cited a nonexistent case (Bloomberg's account; order not read) | [BLAW-TAXCT-2026] |
 | *Harber v HMRC* (UK FTT, 4 Dec 2023) | Taxpayer cited nine non-genuine decisions; appeal decided on the merits | [FTT-HARBER-2023] |
 
 - Judge Holmes had seen fewer than a dozen hallucinated cases, issued no sanctions, called section 6673 (up to US$25,000)
   the main existing tool, and doubted an AI certification rule "would make any sense" [BLAW-TAXCT-2026].
-- A public database lists 2,199 decisions on hallucinated content across all fields, with tax entries from courts and tribunals in
-  the US, UK, Australia and India (a single-person compilation) [CHARLOTIN-DB-2026].
-- Outside tax, Deloitte Australia repaid part of a A$440,000 government report fee after fabricated references; OPR
+- A public database listed 2,199 decisions on hallucinated content across all fields on 16 Oct 2026; its tax entries
+  come mostly from the US, UK, Australia and India, with a few from Brazil and Europe (a single-person compilation)
+  [CHARLOTIN-DB-2026].
+- Outside tax, Deloitte Australia agreed to repay part of a A$440,000 government report fee after fabricated references; OPR
   cites it as an analogy [GUARDIAN-DELOITTE-2025; IRS-OPR-2026].
 - **No sanction against a tax practitioner for AI misuse was found.** OPR says such cases are "slowly emerging" [IRS-OPR-2026].
 
@@ -136,9 +138,9 @@ A commentator argues untraceable output forces a manual verification layer ("pay
   content "throughout each step of the workflow"; no new legal obligations beyond the Act [TPB-GS55-2026].
 - **Germany (BStBK FAQ).** Decisions and responsibility "remain in human responsibility"; rules are technology-neutral;
   vendors often exclude liability; firms carry the AI Act literacy duty as deployers [BSTBK-KI-2026].
-- **EU AI Act.** A provisional deal (May 2026) would defer stand-alone high-risk duties to 2 Dec 2027 and soften the
-  literacy duty; formal adoption was not confirmed in the sources [GIBSON-AIACT-2026]. How tax authorities' own systems
-  are classified is unclear [HADWICK-EUAIACT].
+- **EU AI Act.** The Digital Omnibus on AI (Regulation (EU) 2026/1744, published 24 Jul 2026) defers stand-alone
+  high-risk duties to 2 Dec 2027 and recasts the literacy duty as supporting staff literacy
+  [CUATRECASAS-AIOMNIBUS-2026]. How tax authorities' own systems are classified is unclear [HADWICK-EUAIACT].
 
 ## 8. Standards and frameworks
 
@@ -159,8 +161,8 @@ A commentator argues untraceable output forces a manual verification layer ("pay
   "overstepping"; no IRS clarification was found by 17 Oct 2026 [AICPA-FEES-2026]. Contingent fees remain barred for most
   IRS matters [ECFR-10.27]. Review the pricing model, engagement letter and AI records together.
 - **Disclosure.** No universal US duty to disclose AI use in most tax matters is stated in the sources; PCRT asks
-  members to consider transparency; TPB requires client permission for third-party AI [TAXCT-CLINCO-2026; PCRT-AI-2026;
-  TPB-GS55-2026]. A broker recommends engagement-letter disclosure with an opt-out [DIGIN-INSURERS-2026].
+  members to consider transparency; TPB requires client permission before client data goes into third-party AI,
+  depending on configuration [TAXCT-CLINCO-2026; PCRT-AI-2026; TPB-GS55-2026]. A broker recommends engagement-letter disclosure with an opt-out [DIGIN-INSURERS-2026].
 - **Liability.** Werfel lists "liability ambiguity" between the signing preparer and the vendor; BStBK notes vendors
   often exclude liability [TAXADVISER-WERFEL-2026; BSTBK-KI-2026].
 - **Insurance.** Aon reported no substantive AI claims at accounting firms (Apr 2026); underwriters ask about AI
@@ -209,6 +211,7 @@ Keys not listed here are in [sources.md](sources.md).
 - **AICPA-SSTS-2024**: AICPA & CIMA, *Statements on Standards for Tax Services landing page* (professional-body, SSTS effective 1 Jan 2024; page viewed Oct 2026). https://www.aicpa-cima.com/resources/landing/statements-on-standards-for-tax-services
 - **CAMICO-FAQ-2025**: CAMICO (CPA professional liability insurer), *Generative AI: Frequently Asked Risk Management Questions on CAMICO's Advisory Hotline* (vendor, 12 Nov 2025). https://www.camico.com/blog/generative-artificial-intelligence-ai-frequently-asked-risk-management-questions-faq-on-camicos-advisory-hotline/
 - **CHARLOTIN-DB-2026**: Damien Charlotin, *AI Hallucination Cases Database (web page and CSV)* (academic, 2026-10-16). https://www.damiencharlotin.com/hallucinations/
+- **CUATRECASAS-AIOMNIBUS-2026**: Cuatrecasas, *Digital Omnibus on AI has been published (Regulation (EU) 2026/1744)* (firm, 2026-07-24). https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published
 - **GUARDIAN-DELOITTE-2025**: The Guardian, *Deloitte to pay money back to Albanese government after using AI in $440,000 report* (press, 6 Oct 2025). https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - **HADWICK-EUAIACT**: European Papers, *Slipping Through the Cracks: the Carve-outs for AI Tax Enforcement Systems in the EU AI Act* (academic, undated). https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
 - **IRS-I8867-2025**: Internal Revenue Service, *Instructions for Form 8867: Paid Preparer's Due Diligence Checklist (Rev. November 2025)* (regulator, 2025-11). https://www.irs.gov/pub/irs-pdf/i8867.pdf

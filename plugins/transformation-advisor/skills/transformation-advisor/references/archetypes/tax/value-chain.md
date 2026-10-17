@@ -41,7 +41,7 @@ resolve in §7 or in [sources.md](sources.md).
 | 6 | Review, sign and file | Preparer, manager and partner review; signature; e-file and submission | compliance modules; [guardrails.md](guardrails.md) | Review is the new bottleneck; no error rates published |
 | 7 | Respond and defend | Notices, exams, IDRs, Appeals, litigation, audit defence, APAs | [controversy](modules/controversy.md), [transfer-pricing](modules/transfer-pricing.md) | Practitioner side thin; authority side measured |
 | 8 | Monitor and govern | Rule changes, calendar, automation sustainment, AI policy and vendor review | [data-technology](modules/data-technology.md), [compliance-corporate](modules/compliance-corporate.md) | Vendor monitoring tools; governance mostly policy |
-| 9 | Bill, collect and learn | Invoicing, realization, knowledge capture | professional-services | Fee rule now ties AI to billing [IRS-OPR-2026] |
+| 9 | Bill, collect and learn | Invoicing, realization, knowledge capture | professional-services | OPR's reading of the fee rule ties AI to billing (contested) [IRS-OPR-2026; AICPA-FEES-2026] |
 
 ## 3. The tax data layer
 
@@ -163,8 +163,9 @@ document as well as a commercial one ([economics.md](economics.md) §7).
 
 ## 6. Firm and in-house variants
 
-- **Small and mid-size firms** run mostly stages 1-3 and 6 for individuals and pass-throughs, with a deadline peak and
-  often offshore preparation (68% of IPA 100 firms offshore tax returns) [IPA-OFFSHORE-2026]. Start Map at stage 2.
+- **Small and mid-size firms** run mostly stages 1-3 and 6 for individuals and pass-throughs, with a deadline peak.
+  Offshore preparation is common among larger firms (68% of the IPA 100, the largest US firms, offshore tax returns)
+  [IPA-OFFSHORE-2026]; ask whether it applies. Start Map at stage 2.
 - **Large firms** run every line for corporate clients and add managed services; their platforms span stages 2-8.
 - **In-house departments** run stages 2-8 for one group with an average home-country team of 9 tax professionals
   (36 at companies above US$6bn revenue) in one vendor survey [TR-SOTCD-2024], buy outside help for peaks and

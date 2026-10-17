@@ -26,7 +26,8 @@ examine it years later.
 It extends **professional-services**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
 billing and knowledge management all still apply. Tax changes four things. Statute, regulations and tax-authority
 practice set the work, not professional standards alone. The individual who signs a return carries "primary
-responsibility for the overall substantive accuracy" and the preparer penalties [LII-CFR-SIGN-2026]. Conduct and
+responsibility for the overall substantive accuracy" of it [LII-CFR-SIGN-2026], and preparer penalties attach to the
+practitioner ([guardrails.md](guardrails.md) §5). Conduct and
 confidentiality rules apply to AI as they stand (Circular 230, IRC section 7216, PCRT, the TPB code) [IRS-OPR-2026;
 PCRT-AI-2026; TPB-GS55-2026]. And the counterparty, the tax authority, is scaling its own AI [GAO-2026; IRS-AIFIRST-2026].
 
@@ -73,7 +74,7 @@ department) by markers you can see or count, not by self-rating.
 | Stage | Markers in a tax practice or department | Ready for the next stage when |
 |---|---|---|
 | **Curious** | No AI policy, or a ban, while staff use public tools (more than a third of tax and audit professionals admit unauthorized tools) [TR-FOP-2026]; nobody has read OPR Alert 2026-19 against the firm's procedures [IRS-OPR-2026]; in house, the department is not using GenAI (67% of 288 in 2025) [TR-CORPTAX-2025] | A written rule covers client and return data, section 7216 consent and approved tools; named people use AI weekly on real work |
-| **Experimenting** | Seats of a research tool or enterprise assistant; a pilot on one extraction task (W-2s, K-1s, notices) with re-keying as fallback; citations checked by hand after a scare; usage counted but no target (12.5% of indirect tax leaders have AI targets) [FONOA-2026] | One workflow has an owner, a baseline (hours per return, review notes, notices), a written review step and a vetted tool |
+| **Experimenting** | Seats of a research tool or enterprise assistant; a pilot on one extraction task (W-2s, K-1s, notices) with re-keying as fallback; citations checked by hand after a scare; usage counted but no target (12.5% of 176 indirect tax leaders in a vendor survey have AI targets or KPIs) [FONOA-2026] | One workflow has an owner, a baseline (hours per return, review notes, notices), a written review step and a vetted tool |
 | **Adopting** | AI inside production tax software; firm procedures, training and a record of AI use and verification, as OPR's section 10.36 reading expects [IRS-OPR-2026]; engagement letters and consent cover AI; fee basis reviewed | Two or more workflows in production; the second reused the first's data feed or review checklist; value recorded in one place; a named owner for tax AI |
 | **Scaling** | Agents across workflows on a shared platform with human review (PwC's K-1 and diagnostics agents) [PWC-MEGNA-2025]; a governance body and risk register; a tax data layer; tax engines exposed to company agents | Value shows in margin, capacity or penalties avoided, and leaders ask what to sell or stop doing |
 | **AI-native** | Practice or function built around agents with people on exceptions and signatures; AI-native roll-ups [MULTIPLIER-2025; CRETE-REUTERS-2025]; value or fixed pricing on AI-shortened work | Re-diagnose at each review. No organization has published a measured cost or quality advantage |

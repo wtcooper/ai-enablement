@@ -1,6 +1,6 @@
 # Human risk (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/human-risk.yaml` (18 entries). Ids are shortened here:
+Last reviewed and source-verified 2026-10-17. Use cases live in `../use-cases/human-risk.yaml` (18 entries). Ids are shortened here:
 `#06` means `security-human-risk-06`. Source keys in brackets, such as [UCSD-PHISHTRAIN-2025], are given in full in the
 YAML or listed in §10. **Evidence is thin and vendor-heavy on the defender side.** 9 of 18 entries are graded A or B
 (1 A, 8 B); the one A grade (`#01`) rests on figures published only on the vendor's own customer pages. Independent,
