@@ -33,7 +33,7 @@ and assurance); one combined dive each for data security and privacy and for hum
 
 ## What the evidence says
 
-Security has much more named, measured practice than tax, but nearly all of it is self-reported or vendor-published.
+Security has much more named, measured practice than tax. Most figures are self-reported or vendor-published, though not all: in AI security, 22 of 65 outcome figures are independent (labs, competitions, academic benchmarks).
 The strongest themes: AI triage and investigation in the SOC (with the caution that the only independent benchmark found
 every tested triage design missing at least 40% of attack alerts); AI finding vulnerabilities faster than teams can
 verify and fix them; and agent containment, where 2026's incidents were read as ordinary cloud failures. Regulation
