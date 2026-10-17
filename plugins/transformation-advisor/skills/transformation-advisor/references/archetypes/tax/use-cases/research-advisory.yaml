@@ -225,22 +225,21 @@
     access: full
     locator: section on authoritative content (daily updates, SOC 2)
   - ref: BTAX-HALLUC-2026
-    title: 'AI Hallucinations in Tax: The Risks and How to Mitigate Them'
-    publisher: Bloomberg Tax
+    title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them"
+    publisher: "Bloomberg Tax"
     type: vendor
-    url: https://pro.bloombergtax.com/?p=16920
-    date: '2026-05-11'
+    url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/"
+    date: "2026-05-11"
     access: full
-    locator: section 'How Bloomberg Tax AI addresses hallucination risks'
+    locator: "section 'How Bloomberg Tax AI addresses hallucination risks'"
   - ref: STANFORD-HALLUC-2024
-    title: >-
-      Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (Magesh et al., arXiv 2405.20362)
-    publisher: Stanford RegLab / HAI authors (arXiv)
+    title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (Magesh et al., arXiv 2405.20362)"
+    publisher: "Magesh, Surani, Dahl, Suzgun, Manning and Ho (Stanford)"
     type: academic
-    url: https://arxiv.org/abs/2405.20362
-    date: '2024-05-30'
+    url: "https://arxiv.org/abs/2405.20362"
+    date: "2024-05-30"
     access: full
-    locator: abstract
+    locator: "abstract"
   - ref: VALS-VLAIR-2025
     title: VLAIR - Legal Research
     publisher: Vals AI
@@ -258,22 +257,21 @@
     access: full
     locator: Sapp Q&A
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: para 3.4
+    locator: "para 3.4"
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Section 1, due diligence (s10.22); sections 6713 and 7216
+    locator: "Section 1, due diligence (s10.22); sections 6713 and 7216"
   - ref: BLUEJ-OUTLOOK-2026
     title: 2026 AI Tax Research Solution Outlook Report
     publisher: Blue J with CPA.com
@@ -441,21 +439,21 @@
     access: full
     locator: paragraph beginning 'Our research shows that just 14%'
   - ref: BTAX-HALLUC-2026
-    title: 'AI Hallucinations in Tax: The Risks and How to Mitigate Them'
-    publisher: Bloomberg Tax
+    title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them"
+    publisher: "Bloomberg Tax"
     type: vendor
-    url: https://pro.bloombergtax.com/?p=16920
-    date: '2026-05-11'
+    url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/"
+    date: "2026-05-11"
     access: full
-    locator: section 'Why does generative AI hallucinate?'
+    locator: "section 'Why does generative AI hallucinate?'"
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: section 'A very bad wizard'
+    locator: "section 'A very bad wizard'"
   last_reviewed: '2026-10-17'
   notes: >-
     The Bloomberg and Thomson Reuters modes are placed at augment, not delegate, because the adviser answers the
@@ -574,21 +572,21 @@
     access: full
     locator: Figure 3 and closing recommendations
   - ref: PWC-MEGNA-2025
-    title: How PwC's tax team is using agentic AI (interview with Dom Megna)
-    publisher: CFO.com
+    title: "How PwC's tax team is using agentic AI (interview with Dom Megna, PwC US AI Tax Leader)"
+    publisher: "CFO.com"
     type: press
-    url: https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/
-    date: '2025-06-06'
+    url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/"
+    date: "2025-06-06"
     access: full
-    locator: answer on work that stays with humans
+    locator: "answer on work that stays with humans"
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: section 'A very bad wizard'
+    locator: "section 'A very bad wizard'"
   - ref: TR-FOP-2026
     title: >-
       What the 2026 Future of Professionals Report says tax & audit firm leaders should be prioritizing now
@@ -747,29 +745,29 @@
     access: full
     locator: 'Meet CoCounsel Tax; Capabilities: Access (Knowledge Base)'
   - ref: BTAX-FORUM-2026
-    title: Bloomberg Tax Leadership Forum to Examine AI, Policy Shifts, and Global Tax Risk
-    publisher: Bloomberg Tax
+    title: "Bloomberg Tax Leadership Forum to Examine AI, Policy Shifts, and Global Tax Risk (programme announcement for the 16 Jun 2026 forum)"
+    publisher: "Bloomberg Tax"
     type: conference
-    url: https://pro.bloombergtax.com/?p=17345
-    date: '2026-06-10'
+    url: "https://pro.bloombergtax.com/?p=17345"
+    date: "2026-06-10"
     access: full
-    locator: paragraph on the 'Emerging Technologies and AI Integration' panel
+    locator: "paragraph on the 'Emerging Technologies and AI Integration' panel"
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: confidentiality paragraph
+    locator: "confidentiality paragraph"
   - ref: BTAX-HALLUC-2026
-    title: 'AI Hallucinations in Tax: The Risks and How to Mitigate Them'
-    publisher: Bloomberg Tax
+    title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them"
+    publisher: "Bloomberg Tax"
     type: vendor
-    url: https://pro.bloombergtax.com/?p=16920
-    date: '2026-05-11'
+    url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/"
+    date: "2026-05-11"
     access: full
-    locator: section 'Why does generative AI hallucinate?'
+    locator: "section 'Why does generative AI hallucinate?'"
   last_reviewed: '2026-10-17'
   notes: >-
     Vendor positioning plus a conference panel listing; no named deployment or outcome found.
@@ -867,15 +865,13 @@
     access: full
     locator: key takeaways and paragraphs 2 and 5
   - ref: TR-CORPTECH-2026
-    title: >-
-      Corporate tax teams eager for AI, but frustrated by pace of change (2026 Corporate Tax Department Technology Report)
-    publisher: Thomson Reuters Institute with Tax Executives Institute
+    title: "Corporate tax teams eager for AI, but frustrated by pace of change (2026 Corporate Tax Department Technology Report)"
+    publisher: "Thomson Reuters Institute with Tax Executives Institute"
     type: survey
-    url: >-
-      https://www.thomsonreuters.com/en-us/posts/corporates/corporate-tax-department-technology-report-2026/
-    date: '2026-03-16'
+    url: "https://www.thomsonreuters.com/en-us/posts/corporates/corporate-tax-department-technology-report-2026"
+    date: "2026-03-16"
     access: full
-    locator: sections 'Expectations about AI' and budget paragraph
+    locator: "sections 'Expectations about AI' and budget paragraph"
   - ref: TEI-MIDYEAR-2026
     title: TEI Midyear Conference 2026 at-a-glance agenda, preliminary (Washington DC, 15-18 Mar 2026)
     publisher: Tax Executives Institute
@@ -886,13 +882,13 @@
     locator: >-
       Monday 16 March 2026 Tax Lab sessions 'AI and Tax Research' (preliminary programme; PDF created 2026-02-09)
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: section 'A very bad wizard' (poll)
+    locator: "section 'A very bad wizard' (poll)"
   - ref: TR-FOP-2026
     title: >-
       What the 2026 Future of Professionals Report says tax & audit firm leaders should be prioritizing now
@@ -904,22 +900,21 @@
     access: full
     locator: '''Govern the tools being used'''
   - ref: FONOA-2026
-    title: State of Indirect Tax in the AI Era 2026 (176 indirect tax leaders)
-    publisher: Fonoa
+    title: "State of Indirect Tax in the AI Era 2026 (landing page; full report gated)"
+    publisher: "Fonoa"
     type: survey
-    url: https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026
-    date: '2026-06-17'
+    url: "https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026"
+    date: "2026-06-17"
     access: full
-    locator: survey questions on defending decisions and validating outputs
+    locator: "survey questions on defending decisions and validating outputs"
   - ref: DELOITTE-TTT-2026
-    title: 'Tax Transformation Trends, AI report part three: Riding the wave: A framework to plan for AI'
-    publisher: Deloitte Global
+    title: "Riding the wave: A framework to plan for AI (Tax Transformation Trends AI report, part three)"
+    publisher: "Deloitte Global"
     type: firm
-    url: >-
-      https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf
-    date: 2026-07
+    url: "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf"
+    date: "2026-07"
     access: full
-    locator: 'Scenario 4: Tax transformed'
+    locator: "Scenario 4: Tax transformed"
   - ref: SALA-TAXNOTES-2026
     title: >-
       AI Won't Shrink Corporate Tax Teams Much. Here's Why. (Michael V. Sala, Tax Notes State 121:189; abstract on TaxProf
@@ -1061,13 +1056,13 @@
     access: full
     locator: opening paragraphs
   - ref: PWC-MEGNA-2025
-    title: How PwC's tax team is using agentic AI (interview with Dom Megna)
-    publisher: CFO.com
+    title: "How PwC's tax team is using agentic AI (interview with Dom Megna, PwC US AI Tax Leader)"
+    publisher: "CFO.com"
     type: press
-    url: https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/
-    date: '2025-06-06'
+    url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/"
+    date: "2025-06-06"
     access: full
-    locator: answers on Agent OS, governance and workforce
+    locator: "answers on Agent OS, governance and workforce"
   - ref: KPMG-ANTHROPIC-2026
     title: KPMG Partners with Anthropic for Digital Gateway Powered by Claude
     publisher: CPA Practice Advisor (KPMG/Anthropic release)
@@ -1113,13 +1108,13 @@
     access: full
     locator: '''Govern the tools being used'''
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Section 1 and s10.35, s10.36
+    locator: "Section 1 and s10.35, s10.36"
   - ref: ICAEW-POD-2026
     title: >-
       How to use AI in tax ethically, and group audit best practice (podcast transcript, Accountancy Insights)
@@ -1131,21 +1126,21 @@
     access: full
     locator: data security answer, Sophie Wales
   - ref: JOFA-AIPOLICY-2026
-    title: Drafting an AI policy that actually works (Professional Liability Spotlight, Nicole L. Graham, Aon)
-    publisher: Journal of Accountancy
+    title: "Drafting an AI policy that actually works (Professional Liability Spotlight, Nicole L. Graham, Aon)"
+    publisher: "Journal of Accountancy (Nicole L. Graham, Esq.)"
     type: press
-    url: https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/
-    date: '2026-07-01'
+    url: "https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/"
+    date: "2026-07-01"
     access: full
-    locator: governance and documentation sections
+    locator: "governance and documentation sections"
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: section 'A very bad wizard'
+    locator: "section 'A very bad wizard'"
   last_reviewed: '2026-10-17'
   notes: >-
     Crowe (2024) and KPMG UK (2024) are older than the 12-18 month window and are kept as the named enterprise deals.
@@ -1326,14 +1321,13 @@
     access: full
     locator: 'Use cases: ''Analyze transactions and restructuring scenarios'''
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: objectivity risk table
+    locator: "objectivity risk table"
   last_reviewed: '2026-10-17'
   notes: >-
     Graded B, not A: the speed figure is one named shareholder's estimate ('maybe two or two and a half') quoted by
@@ -1394,13 +1388,13 @@
   evidence_grade: D
   sources:
   - ref: JHU-TAXABUSE-2025
-    title: Can LLMs Identify Tax Abuse? (arXiv 2508.20097, v2 revised 2026-01-21)
-    publisher: Blair-Stanek, Holzenberger, Van Durme (Johns Hopkins / University of Maryland)
+    title: "Can LLMs Identify Tax Abuse? (arXiv 2508.20097, v2 revised 2026-01-21)"
+    publisher: "arXiv (Blair-Stanek, Holzenberger, Van Durme)"
     type: academic
-    url: https://arxiv.org/abs/2508.20097
-    date: '2025-08-10'
+    url: "https://arxiv.org/abs/2508.20097"
+    date: "2025-08-10"
     access: full
-    locator: abstract
+    locator: "abstract"
   - ref: BTAX-SIVA1-2026
     title: Don't Trust AI, Always Verify. Tax Law Still Needs Humans, Pt. 1 (Pramod Kumar Siva)
     publisher: Bloomberg Tax (Tax Management Memo)
@@ -1421,14 +1415,13 @@
     access: full
     locator: answer on professional behaviour
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: paras 1.5, 3.7; objectivity and competence risk tables
+    locator: "paras 1.5, 3.7; objectivity and competence risk tables"
   - ref: BTAX-LOWY-2026
     title: Tax Lawyers Must Adapt to AI Now. It's Already Changed the Game (Peter Lowy, Nelson Mullins)
     publisher: Bloomberg Tax (Tax Management Memo)
@@ -1518,14 +1511,13 @@
     access: full
     locator: Sapp Q&A
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: para 3.4
+    locator: "para 3.4"
   - ref: VALS-TAXAGENT-2026
     title: 'Tax Agent Bench: Agentic US corporate tax research (leaderboard and methodology)'
     publisher: Vals AI
@@ -1588,38 +1580,37 @@
   evidence_grade: C
   sources:
   - ref: JHU-TAXREASON-2025
-    title: >-
-      Language Models and Logic Programs for Trustworthy Tax Reasoning (arXiv 2508.21051; accepted to AAAI 2026)
-    publisher: Johns Hopkins University authors
+    title: "Language Models and Logic Programs for Trustworthy Tax Reasoning (arXiv 2508.21051; accepted to AAAI 2026)"
+    publisher: "arXiv preprint (Jurayj, Holzenberger, Van Durme; Johns Hopkins University)"
     type: academic
-    url: https://arxiv.org/abs/2508.21051
-    date: '2025-08-28'
+    url: "https://arxiv.org/abs/2508.21051"
+    date: "2025-08-28"
     access: full
-    locator: abstract
+    locator: "abstract"
   - ref: COLUMN-TAXCALCBENCH-2025
-    title: 'TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task (arXiv 2507.16126)'
-    publisher: Column Tax authors
+    title: "TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task (arXiv 2507.16126)"
+    publisher: "Column Tax authors (Bock, Molisee, Ozer, Shah), arXiv preprint"
     type: academic
-    url: https://arxiv.org/abs/2507.16126
-    date: '2025-07-22'
+    url: "https://arxiv.org/abs/2507.16126"
+    date: "2025-07-22"
     access: full
-    locator: abstract; results table
+    locator: "abstract; results table"
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: paragraphs on quiet failure
+    locator: "paragraphs on quiet failure"
   - ref: PWC-MEGNA-2025
-    title: How PwC's tax team is using agentic AI (interview with Dom Megna)
-    publisher: CFO.com
+    title: "How PwC's tax team is using agentic AI (interview with Dom Megna, PwC US AI Tax Leader)"
+    publisher: "CFO.com"
     type: press
-    url: https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/
-    date: '2025-06-06'
+    url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/"
+    date: "2025-06-06"
     access: full
-    locator: answer on explainability of the effective tax rate model
+    locator: "answer on explainability of the effective tax rate model"
   last_reviewed: '2026-10-17'
   notes: >-
     Graded C: research results and a vendor-authored benchmark, no named advisory deployment. TaxCalcBench measures
@@ -1697,24 +1688,21 @@
     access: full
     locator: 'Use cases: ''Review complex tax positions faster'''
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Section 1, confidentiality paragraph
+    locator: "Section 1, confidentiality paragraph"
   - ref: AICPA-WERFEL-2026
-    title: >-
-      A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices (Appendix C: AI Risk Register
-      for Tax Preparers)
-    publisher: The Tax Adviser (AICPA)
+    title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)"
+    publisher: "The Tax Adviser (AICPA)"
     type: professional-body
-    url: >-
-      https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
-    date: 2026-06
+    url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf"
+    date: "2026-06"
     access: full
-    locator: Appendix C, risk 3
+    locator: "Appendix C, risk 3"
   last_reviewed: '2026-10-17'
   notes: >-
     Wright Ford Young is the only named firm reported as already doing this (operating agreements); the Jansen item is
@@ -1845,14 +1833,13 @@
     access: full
     locator: sections 'Quality' and 'Guardrails'; closing note on firm piloting
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: Examples of AI usage; paras 1.3-1.4
+    locator: "Examples of AI usage; paras 1.3-1.4"
   - ref: TOLLEY-2024
     title: Trustworthiness is key to adoption of AI in tax, says Tolley (survey of 446 UK tax professionals)
     publisher: Tax Journal (LexisNexis)
@@ -1873,13 +1860,13 @@
     access: full
     locator: sections 'A recipe for sanctions' and 'Firm policies'
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: s10.22, s10.27(a), s10.37; Real-World Consequences; sections 6713 and 7216
+    locator: "s10.22, s10.27(a), s10.37; Real-World Consequences; sections 6713 and 7216"
   - ref: ICAS-TAXTRIB-2026
     title: AI at the tax tribunal
     publisher: ICAS
@@ -2014,13 +2001,13 @@
     access: full
     locator: abstract and excerpt
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: s10.35 and s10.37
+    locator: "s10.35 and s10.37"
   - ref: BTAX-SIVA2-2026
     title: Don't Trust AI, Always Verify. Tax Law Still Needs Humans, Pt. 2 (Pramod Kumar Siva)
     publisher: Bloomberg Tax
@@ -2121,13 +2108,13 @@
     access: full
     locator: summary paragraph (no figures)
   - ref: BLUEJ-HOME-2026
-    title: AI Tax Research Platform (Blue J home page)
-    publisher: Blue J
+    title: "AI Tax Research Platform (Blue J home page)"
+    publisher: "Blue J"
     type: vendor
-    url: https://www.bluej.com
-    date: '2026-10-15'
+    url: "https://www.bluej.com"
+    date: "2026-10-17"
     access: full
-    locator: customer quote block (Sorren)
+    locator: "customer quote block (Sorren)"
   - ref: TAXCT-CLINCO-2026
     title: >-
       A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)
@@ -2139,13 +2126,13 @@
     access: full
     locator: section 'Practical risk management for tax practitioners'
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Section 1, due diligence
+    locator: "Section 1, due diligence"
   last_reviewed: '2026-10-17'
   notes: >-
     Only one named firm gives a figure, and it is a usage count. Larson Gross's customer page describes reduced time
@@ -2210,13 +2197,13 @@
     access: full
     locator: abstract
   - ref: SWIDER-2025
-    title: 'CPAs vs. AI Tax Advisors: Evaluating Reliance Across Advisory Contexts'
-    publisher: University of Oklahoma (AAA Tax Section meeting paper)
+    title: "CPAs vs. AI Tax Advisors: Evaluating Reliance Across Advisory Contexts"
+    publisher: "Lucas A. Swider, University of Oklahoma; AAA Tax Section meeting paper"
     type: academic
-    url: https://aaahq.org/portals/0/documents/meetings/2025/ATA/Papers/3.02_Swider.pdf
-    date: '2025'
+    url: "https://aaahq.org/portals/0/documents/meetings/2025/ATA/Papers/3.02_Swider.pdf"
+    date: "2025"
     access: full
-    locator: abstract
+    locator: "abstract"
   - ref: TPB-GS55-2026
     title: TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct
     publisher: Tax Practitioners Board (Australia)
@@ -2226,14 +2213,13 @@
     access: full
     locator: What is AI; Confidentiality
   - ref: HMRC-GENAI-2026
-    title: Guidelines for using generative artificial intelligence if you're a software developer
-    publisher: HMRC (GOV.UK)
+    title: "Guidelines for using generative artificial intelligence if you're a software developer"
+    publisher: "HM Revenue & Customs (GOV.UK)"
     type: regulator
-    url: >-
-      https://www.gov.uk/guidance/guidelines-for-using-generative-artificial-intelligence-if-youre-a-software-developer
-    date: '2026-01-28'
+    url: "https://www.gov.uk/guidance/guidelines-for-using-generative-artificial-intelligence-if-youre-a-software-developer"
+    date: "2026-01-28"
     access: full
-    locator: human oversight paragraphs
+    locator: "human oversight paragraphs"
   - ref: TAXADVISER-WERFEL-2026
     title: A risk framework for AI use in tax administration and preparation (Danny Werfel)
     publisher: The Tax Adviser (AICPA)
@@ -2244,14 +2230,13 @@
     access: full
     locator: scope-definition step; Tax Authorities register step 4
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: paras 1.3 and 4.3
+    locator: "paras 1.3 and 4.3"
   - ref: CPAPA-FIRSTSTOP-2025
     title: 'AI Is Now a First Stop for Tax and Investing Questions: CPAs Need a Playbook Fast'
     publisher: CPA Practice Advisor
@@ -2342,14 +2327,13 @@
     access: full
     locator: Clinco facts
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: competence risk table
+    locator: "competence risk table"
   - ref: ACCOUNTINGWEB-ELDEN-2026
     title: Tribunal slams careless AI use by advisers (Elden v HMRC, FTT)
     publisher: AccountingWEB
@@ -2459,13 +2443,13 @@
     access: full
     locator: sections 'The apparitions in the briefing' and 'Firm policies'
   - ref: JOFA-AIPOLICY-2026
-    title: Drafting an AI policy that actually works (Professional Liability Spotlight, Nicole L. Graham, Aon)
-    publisher: Journal of Accountancy
+    title: "Drafting an AI policy that actually works (Professional Liability Spotlight, Nicole L. Graham, Aon)"
+    publisher: "Journal of Accountancy (Nicole L. Graham, Esq.)"
     type: press
-    url: https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/
-    date: '2026-07-01'
+    url: "https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/"
+    date: "2026-07-01"
     access: full
-    locator: sections 'Quality, Accuracy, and Professional Liability' and 'Documentation and Supervision'
+    locator: "sections 'Quality, Accuracy, and Professional Liability' and 'Documentation and Supervision'"
   - ref: WK-CORPRES-2026
     title: >-
       How controllers and corporate tax leaders can use AI for faster, defensible tax returns (corporate tax research
@@ -2478,13 +2462,13 @@
     access: full
     locator: documentation guidance
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Real-World Consequences; s10.22 and s10.36; best practices
+    locator: "Real-World Consequences; s10.22 and s10.36; best practices"
   - ref: TPB-GS55-2026
     title: TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct
     publisher: Tax Practitioners Board (Australia)
@@ -2494,14 +2478,13 @@
     access: full
     locator: Competency
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: integrity safeguards table
+    locator: "integrity safeguards table"
   - ref: CHARLOTIN-DB-2026
     title: AI Hallucination Cases Database (web page and CSV)
     publisher: Damien Charlotin
@@ -2511,22 +2494,21 @@
     access: full
     locator: header text; CSV
   - ref: BLAW-TAXCT-2026
-    title: Tax Court Navigates AI Misuse Rules for Self-Represented Filers
-    publisher: Bloomberg Tax Daily Tax Report (Bloomberg Law)
+    title: "Tax Court Navigates AI Misuse Rules for Self-Represented Filers"
+    publisher: "Bloomberg Law (Daily Tax Report)"
     type: press
-    url: >-
-      https://news.bloomberglaw.com/daily-tax-report/tax-court-navigates-ai-misuse-rules-for-self-represented-filers
-    date: '2026-03-20'
+    url: "https://news.bloomberglaw.com/daily-tax-report/tax-court-navigates-ai-misuse-rules-for-self-represented-filers"
+    date: "2026-03-20"
     access: full
-    locator: sections 'Feeling Our Way' and 'Arrow in Quiver'
+    locator: "sections 'Feeling Our Way' and 'Arrow in Quiver'"
   - ref: BTAX-HALLUC-2026
-    title: 'AI Hallucinations in Tax: The Risks and How to Mitigate Them'
-    publisher: Bloomberg Tax
+    title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them"
+    publisher: "Bloomberg Tax"
     type: vendor
-    url: https://pro.bloombergtax.com/?p=16920
-    date: '2026-05-11'
+    url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/"
+    date: "2026-05-11"
     access: full
-    locator: section 'Why does generative AI hallucinate?'
+    locator: "section 'Why does generative AI hallucinate?'"
   - ref: ICAS-TAXTRIB-2026
     title: AI at the tax tribunal
     publisher: ICAS
@@ -2545,16 +2527,13 @@
     access: full
     locator: discussion of Thomas v. Commissioner
   - ref: AICPA-WERFEL-2026
-    title: >-
-      A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices (Appendix C: AI Risk Register
-      for Tax Preparers)
-    publisher: The Tax Adviser (AICPA)
+    title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)"
+    publisher: "The Tax Adviser (AICPA)"
     type: professional-body
-    url: >-
-      https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
-    date: 2026-06
+    url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf"
+    date: "2026-06"
     access: full
-    locator: Appendix C, risks 1, 4 and 6
+    locator: "Appendix C, risks 1, 4 and 6"
   - ref: PREPRINTS-HALLUC-2026
     title: 'Citing the Unseen: AI Hallucinations in Tax and Legal Practice (preprint, not peer reviewed)'
     publisher: Preprints.org
@@ -2651,22 +2630,21 @@
     access: full
     locator: Zzaman summary
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: s10.37; best practices
+    locator: "s10.37; best practices"
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: para 1.4 safeguards
+    locator: "para 1.4 safeguards"
   last_reviewed: '2026-10-17'
   notes: >-
     Graded C: the only support is a tool described by its builder; no tax-specific deployment or accuracy figure was
@@ -2739,22 +2717,21 @@
     locator: >-
       page 1 'GenAI in action: Key use cases in M&A tax'; page 2 'Balancing risk and innovation'; web page opening
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: Mergers/Demergers and Acquisitions example; confidentiality risk table
+    locator: "Mergers/Demergers and Acquisitions example; confidentiality risk table"
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: item 6, sections 6713 and 7216(a)
+    locator: "item 6, sections 6713 and 7216(a)"
   - ref: MONDAQ-HORIZON-2026
     title: New Trends And Challenges In Tax Due Diligence On The M&A Market (Horizon Solutions Kft., Hungary)
     publisher: Mondaq
@@ -2914,31 +2891,29 @@
     access: full
     locator: Performance by Category
   - ref: PCRT-AI-2026
-    title: Topical guidance covering the application of PCRT to the ethical use of AI tools
-    publisher: ICAEW for the seven PCRT bodies
-    type: standard-setter
-    url: >-
-      https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
-    date: '2026-01-19'
+    title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
+    publisher: "ICAEW for the seven PCRT bodies"
+    type: professional-body
+    url: "https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools"
+    date: "2026-01-19"
     access: full
-    locator: para 3.7
+    locator: "para 3.7"
   - ref: HMRC-GENAI-2026
-    title: Guidelines for using generative artificial intelligence if you're a software developer
-    publisher: HMRC (GOV.UK)
+    title: "Guidelines for using generative artificial intelligence if you're a software developer"
+    publisher: "HM Revenue & Customs (GOV.UK)"
     type: regulator
-    url: >-
-      https://www.gov.uk/guidance/guidelines-for-using-generative-artificial-intelligence-if-youre-a-software-developer
-    date: '2026-01-28'
+    url: "https://www.gov.uk/guidance/guidelines-for-using-generative-artificial-intelligence-if-youre-a-software-developer"
+    date: "2026-01-28"
     access: full
-    locator: testing and deployment processes paragraph
+    locator: "testing and deployment processes paragraph"
   - ref: BTAX-HALLUC-2026
-    title: 'AI Hallucinations in Tax: The Risks and How to Mitigate Them'
-    publisher: Bloomberg Tax
+    title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them"
+    publisher: "Bloomberg Tax"
     type: vendor
-    url: https://pro.bloombergtax.com/?p=16920
-    date: '2026-05-11'
+    url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/"
+    date: "2026-05-11"
     access: full
-    locator: three reasons hallucinations happen
+    locator: "three reasons hallucinations happen"
   last_reviewed: '2026-10-17'
   notes: >-
     Ladder is delegate because the agent watches, diagnoses and drafts across many matters, with review at the end.
@@ -3000,15 +2975,13 @@
     access: full
     locator: paragraphs on Digital Gateway and Serafi quote
   - ref: EY-TAXLABS-2025
-    title: >-
-      EY unveils suite of powerful AI capabilities to accelerate tax transformation and deliver strategic value
-    publisher: EY
+    title: "EY unveils suite of powerful AI capabilities to accelerate tax transformation and deliver strategic value"
+    publisher: "EY Global"
     type: firm
-    url: >-
-      https://www.ey.com/en_gl/newsroom/2025/11/ey-unveils-suite-of-powerful-ai-capabilities-to-accelerate-tax-transformation-and-deliver-strategic-value
-    date: '2025-11-25'
+    url: "https://www.ey.com/en_gl/newsroom/2025/11/ey-unveils-suite-of-powerful-ai-capabilities-to-accelerate-tax-transformation-and-deliver-strategic-value"
+    date: "2025-11-25"
     access: full
-    locator: sections 'EY.ai Tax Labs' and 'The EY.ai Tax Agent Factory'
+    locator: "sections 'EY.ai Tax Labs' and 'The EY.ai Tax Agent Factory'"
   - ref: TAXADVISER-WERFEL-2026
     title: A risk framework for AI use in tax administration and preparation (Danny Werfel)
     publisher: The Tax Adviser (AICPA)
@@ -3114,22 +3087,21 @@
     access: full
     locator: Key Finding 4
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: s10.27(a) Fees
+    locator: "s10.27(a) Fees"
   - ref: AICPA-FEES-2026
-    title: AICPA seeks IRS clarity on AI guidelines, CPA fees
-    publisher: Journal of Accountancy
+    title: "AICPA seeks IRS clarity on AI guidelines, CPA fees"
+    publisher: "The Tax Adviser (AICPA)"
     type: press
-    url: >-
-      https://www.journalofaccountancy.com/news/2026/sep/aicpa-seeks-irs-clarity-on-ai-guidelines-cpa-fees/
-    date: '2026-09-08'
+    url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-seeks-irs-clarity-on-ai-guidelines-cpa-fees/"
+    date: "2026-09-08"
     access: full
-    locator: whole article
+    locator: "whole article"
   - ref: AICPA-CART-2026
     title: AICPA, former IRS commissioner to lead initiative on AI in tax
     publisher: The Tax Adviser (AICPA)

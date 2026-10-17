@@ -673,7 +673,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice 03 (augment) and discourse 04 (assist). Kept as augment: the summary is a first pass at the
-    investigation that a person then acts on. Microsoft says Security Copilot in Entra became generally available on
+    investigation that a person then acts on. Compare security-operations-03 (triage agent in the SIEM proposes a
+    disposition). Microsoft says Security Copilot in Entra became generally available on
     2025-07-14. No named customer or measurement was found. The Identity Risk Management Agent is labelled preview.
 
 - id: security-identity-access-14
@@ -791,7 +792,8 @@
     response. The SANS page is internally inconsistent on its 85% figure (headline vs key findings); the key findings
     are used. SANS states sponsors had no role in design or analysis. Search-only: Blackpoint Cyber is reported to
     have an AI SOC agent for identity threat response with a vendor claim of containment in under two minutes on
-    average (MSSP-BLACKPOINT-2026); not used. Overlaps with the security-operations and incident-response modules.
+    average (MSSP-BLACKPOINT-2026); not used. Compare security-incident-response-11 (guardrailed automated containment
+    playbooks) and security-operations-21 (per-action authority for SOC agents).
 
 - id: security-identity-access-16
   title: Managed detection and response extended to SaaS identity threats, delivered by a provider with agentic workflows
@@ -828,8 +830,8 @@
   notes: >-
     Practice 09, re-scoped from process to model because the change is who does the work (a managed provider) rather
     than a redesign of the customer's own flow. The only model-scope entry; announced only. The same post's main
-    announcement (an Agentic Identity Provider for AI agents) belongs to the ai-security module. Overlaps with the
-    security-operations module (managed SOC services).
+    announcement (an Agentic Identity Provider for AI agents) belongs to the ai-security module. Compare
+    security-operations-23 (MDR providers moving to agent-led, human-accountable services).
 
 - id: security-identity-access-17
   title: Agentic threat hunting and detection engineering for identity-targeting browser attacks
@@ -870,7 +872,8 @@
   notes: >-
     Discourse 13. Grade B, not A: the figures are counts of detections without a quality measure, and the process
     (detection engineering for a browser security vendor's product) is adjacent to an organization's own identity
-    operations. Overlaps with the security-operations and threat-intelligence modules. The 37x rise in device-code
+    operations. Compare security-operations-18 (triage-to-detection tuning loop) and security-operations-09 (agent
+    investigation across identity, endpoint and cloud sources). The 37x rise in device-code
     phishing in Push's install base is the vendor's own threat measurement.
 
 - id: security-identity-access-18

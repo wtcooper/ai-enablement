@@ -27,8 +27,8 @@ leavers, access requests and approvals, access reviews (certifications), authent
 Access policies), privileged access, identity threat detection and response (ITDR), identity proofing, help-desk
 account recovery, and identity-related fraud such as account takeover (ATO) and caller impersonation. Identities for
 AI agents (agent registration, sponsors, agent credentials, MCP authorisation) are covered in the ai-security module;
-general non-human identity hygiene and privileged access stay here. Fraud is often run outside the CISO's
-organisation [landscape: RSAC-USA-2027], so check who owns it before probing.
+general non-human identity hygiene and privileged access stay here. The security landscape scan notes fraud is
+usually run by fraud and risk teams outside the CISO's organisation, so check who owns it before probing.
 
 ## 2. Processes and key steps
 
@@ -36,11 +36,11 @@ organisation [landscape: RSAC-USA-2027], so check who owns it before probing.
 |---|---|---|---|
 | Joiner, mover, leaver | Grant, change and remove access from HR events; lifecycle workflows | transaction-processing, software-systems | Stale access: credentials active years after a project ended [PANW-IDLANDSCAPE-2026] |
 | Access request and approval | Requester, context lookup, approval, provisioning | transaction-processing, expert-judgment | Approval becomes the default; median 15 minutes, over 24 hours at some firms; 43.5% of granted access unused for 90+ days (one vendor's platform) [OPAL-PALADIN-2026] |
-| Access review (certification) and role design | Periodic campaigns, reviewer decisions, revocation, roles | review-assurance, expert-judgment | "Rubber stamping" claimed by vendors, never measured [LUMOS-UAR-2025]; DORA requires yearly reviews, six-monthly for critical functions [DORA-RTS-2024] |
+| Access review (certification) and role design | Periodic campaigns, reviewer decisions, revocation, roles | review-assurance, expert-judgment | "Rubber stamping" claimed by vendors, no independent rate found [LUMOS-UAR-2025]; DORA requires yearly reviews, six-monthly for critical functions [DORA-RTS-2024] |
 | Policy design | Conditional Access rules, role models, authorisation policy as code | software-systems | Policy sprawl and coverage gaps; one customer: "weeks of manual review" [MSFT-ENTRAGA-2025] |
 | Privileged access | Vaulting, just-in-time (JIT) elevation, revocation, session control | software-systems, transaction-processing | 61% of privileged requests met with standing privilege (vendor figure, source unnamed) [PANW-IDIRA-2026]; 56% cannot enforce least privilege for service accounts [PANW-IDLANDSCAPE-2026] |
 | Authentication and credentials | MFA and passkey roll-out, password rules, factor enrolment | software-systems | 76% use fragmented authentication across internal apps; 52% got a username and password on day one [OKTA-AUTHSURVEY-2026] |
-| Account recovery and help-desk resets | Verify the requester, reset, re-bind MFA | transaction-processing, client-interaction | Social engineering of help desks [CISA-AA23-320A-2025]; Cisco staff waited three to four hours for an agent [PERSONA-CISCO-2026] |
+| Account recovery and help-desk resets | Verify the requester, reset, re-bind MFA | transaction-processing, client-interaction | Social engineering of help desks [CISA-AA23-320A-2025]; an FBI complaint alleges calls led to three compromised accounts in two to three hours [VECTRA-SPIDER-2026]; Cisco staff waited three to four hours for an agent [PERSONA-CISCO-2026] |
 | ITDR | Risk scoring, session and token revocation, containment | research-synthesis, transaction-processing | 68% detect identity attacks within 24 hours, 55% contain them in that window [SANS-ITDR-2026] |
 | Identity proofing | Document check, selfie match, liveness, injection and deepfake detection | review-assurance, transaction-processing | Median presentation-attack detection 78% in a DHS test of vendors [DHS-RIVTD-2025] |
 | Contact-centre authentication and identity fraud | Caller verification, call risk scoring, ATO and scam detection | transaction-processing, client-interaction | Fraudsters passed security questions 53% of the time (vendor data) [PINDROP-VEC-2025]; about 4,700 ATO complaints, USD 359.7M losses in 2025 [FBI-IC3-2025] |
@@ -49,9 +49,9 @@ organisation [landscape: RSAC-USA-2027], so check who owns it before probing.
 
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
 multi-step outcome), reinvent (the service or operating model changes). **Coverage:** automate-process is the
-largest cell (8 entries) but mostly rule-based controls with an AI label. Delegate has two entries, one announced
-(`#02`) and one at a vendor's own detection team (`#17`). Reinvent has one announced entry (`#16`). There is no
-evidence for assist or augment at the model level, or delegate at the model level.
+largest cell (8 entries), and three of those (`#04`, `#14`, `#15`) are largely rule-based controls with an AI label.
+Delegate has two entries, one announced (`#02`) and one at a vendor's own detection team (`#17`). Reinvent has one
+announced entry (`#16`). No evidence was found for assist at process or model level, or for delegate at model level.
 
 **Policy and authentication**
 - Improve: `#01` agent scans Conditional Access policies daily and drafts report-only fixes an admin approves
@@ -81,8 +81,9 @@ evidence for assist or augment at the model level, or delegate at the model leve
 - Automate: `#14` ML risk scoring of sign-ins and sessions drives step-up, block or session end (Okta, Microsoft).
   `#15` closed-loop response on high-confidence detections, with a second threshold to a person.
 - Delegate: `#17` Push Security's agents hunt for identity-targeting browser attacks and draft detections
-  researchers ship (tripled detections shipped; self-reported, adjacent process). Overlaps security-operations.
-- Reinvent: `#16` MDR (managed detection and response) extended to SaaS identity threats (CrowdStrike, announced).
+  researchers ship (tripled detections shipped; self-reported, adjacent process). Compare `security-operations-18`.
+- Reinvent: `#16` MDR (managed detection and response) extended to SaaS identity threats (CrowdStrike, announced);
+  the wider MDR shift is `security-operations-23`. Containment playbooks: `security-incident-response-11`.
 
 **Verification, recovery and fraud**
 - Automate: `#18` enforced verification before help-desk resets (Cisco via Persona: "three-to-four-hour" wait to
@@ -213,11 +214,11 @@ time to contain, recovery time, false positives and lockouts. None has a publish
   attacks on passkey implementations, not the cryptography [SWI-BLACKHAT-2026]; Visa to buy BioCatch [FORRESTER-BIOCATCH-2026].
 - 2026-09-02 to 2026-10-06: CrowdStrike (Agentic IdP, SaaS identity MDR), Okta (AI agent updates), SailPoint
   (autonomous posture management, conversational requests) [CROWDSTRIKE-AGENTICIDP-2026] [OKTA-AGENTS-2026]
-  [SAILPOINT-AUTONOMOUS-2026]. Forrester: agentic AI "pasted into" old identity messages [FORRESTER-RSAC-2026].
+  [SAILPOINT-AUTONOMOUS-2026]. Forrester: agentic AI "pasted into" familiar messages [FORRESTER-RSAC-2026].
 - 2026-09-15: CISA and NIST finalise IR 8587 on token theft [NIST-IR8587-2026].
 - 2026-10-05 to 2026-10-13: Okta says AI accelerates known tricks, so policy enforcement is the defence [OKTA-TI-2026];
-  Silverfort's lab agents went from initial credentials to domain takeover in four to five minutes, "patterns, not
-  benchmarks" [SILVERFORT-ASSUMPTIONS-2026].
+  Silverfort's lab agents went from initial credentials to domain takeover in four to five minutes, which it calls
+  patterns rather than benchmarks [SILVERFORT-ASSUMPTIONS-2026].
 - Upcoming: FIDO Authenticate (2026-10-19 to 21) on "agentic authentication" [FIDO-AUTH-2026]; Gartner IAM Summit from
   2026-12-07 with sessions on AI-enhanced IGA and deepfake-resistant verification [GARTNER-IAMSUMMIT-2026].
 
@@ -257,12 +258,12 @@ Keys used here but not in the YAML (full details for all others are in the YAML)
 - [SWI-BLACKHAT-2026] Start with Identity, Black Hat USA 2026 recap, 2026-08-06.
 - [FORRESTER-RSAC-2026] Forrester, RSAC 2026: An AI Coming-Of-Age Story Without The Romance, 2026-03-31.
 - [ISC2-WORKFORCE-2025] ISC2, 2025 Cybersecurity Workforce Study, 2025-12-04.
-- [SAVIYNT-IARA-2026] Saviynt, intent-aware runtime authorisation and identity verification release, 2026-06-15.
+- [SAVIYNT-IARA-2026] Saviynt release (agent access gateway; identity verification in certification), 2026-06-15.
 - [OKTA-AGENTS-2026] Okta Newsroom, Okta for AI Agents innovations (Oktane 2026), 2026-09-22.
 - [SILVERFORT-ASSUMPTIONS-2026] Silverfort, 5 cybersecurity assumptions AI attacks break, 2026-10-13.
 - [FIDO-AUTH-2026] FIDO Alliance, Authenticate U.S. 2026 event page, retrieved 2026-10-17.
 - [GARTNER-IAMSUMMIT-2026] Gartner, Identity & Access Management Summit 2026 agenda, retrieved 2026-10-17.
 - [FIRST-CON-2026] FIRST, 38th annual conference programme, Denver, 2026-06-14 to 19.
-- [OWASP-STATE-AGENTIC-2026] OWASP, state of agentic security and maturity model, 2026 (pp. 55-56).
+- [OWASP-STATE-AGENTIC-2026] OWASP GenAI Security Project, State of Agentic AI Security and Governance v2.01, 2026.
+- [VECTRA-SPIDER-2026] Vectra AI, The FBI wrote down the Scattered Spider playbook, and it starts with a phone call, 2026-07-06.
 - [IBM-CODB-2026] IBM and Ponemon, Cost of a Data Breach Report 2026 (landing page), 2026-07.
-- [RSAC-USA-2027] RSAC 2027 agenda page (lists an "RSAC Cyber Fraud Day"), retrieved 2026-10-17.

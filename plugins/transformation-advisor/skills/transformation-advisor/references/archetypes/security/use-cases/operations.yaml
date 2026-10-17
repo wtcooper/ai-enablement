@@ -321,7 +321,7 @@
   human_checkpoints:
     - "Low-confidence and middle-band verdicts go to analysts; stricter thresholds are suggested for irreversible actions (THN-DECISIONMODELS-2026)"
     - "Alerts touching VIP or executive accounts stay with people (SANS-AI-2026)"
-    - "Sampling review of auto-closed alerts and recall on rolling windows (see security-operations-22)"
+    - "Sampling review of auto-closed alerts and recall on rolling windows (see security-operations-21)"
   role_evolution: >-
     Swimlane's reading of the SANS survey is that analysts spend time on the phishing click that landed or early
     ransomware signs rather than sifting noise (SANS-AI-2026).
@@ -388,6 +388,7 @@
     Merged from discourse-06 and governance-04. The discourse file graded this A; it is B here because Grow Therapy's
     figures are approximations ('about') and the benchmark is a research prototype, not a deployment. Inputs date
     ARXIV-2610.10608 as 2026-10-06 or 2026-10-07, so the month is given.
+    Overlaps: Grow Therapy's adversarial phase also appears in security-threat-intelligence-21 (hunting), and the AIDA design as a guardrail in security-incident-response-11.
 
 - id: security-operations-08
   title: "A 'SOCless' model: AI investigates all alerts and on-call engineers are paged only for serious events"
@@ -448,12 +449,10 @@
     Slack), delegates data-lake questions to a sub-agent that writes SQL, and keeps case, steering and procedural memory.
     Slack's security team splits an investigation into separate model calls: a Director that poses questions and moves
     through phases, domain Experts (access, cloud, code, threat) and a Critic that scores findings and assembles the
-    timeline. A research system (SherAgent) lets an LLM iteratively query and filter a provenance graph to find an
-    incident's root cause.
+    timeline.
   outcomes:
     - {lever: speed, description: "Reduction in alert time to resolution at Figma", figure: "71% (summary); 'around 70%' on complex alerts (body)", measures: "Figma: 'alert time-to-resolution' and 'time-to-resolution on complex alerts'; baseline and sample not stated", provenance: self-reported, source_ref: FIGMA-AGENTS-2026}
     - {lever: capacity, description: "Agent redirects staff asking about unapproved tools to approved alternatives", figure: "25% fewer endpoint software approval requests", measures: "Figma's stated reduction", provenance: self-reported, source_ref: FIGMA-AGENTS-2026}
-    - {lever: quality, description: "SherAgent investigation success in the SOC of a major Internet company (not named)", figure: "end-to-end investigation success up 31.1% vs legacy enterprise baselines and 63.7% vs state-of-the-art; under USD 0.10 and under 4 minutes per investigation", measures: "relative improvement in success rate; per-investigation API cost and time, as stated in the abstract", provenance: independent, source_ref: ARXIV-2607.09176}
   prerequisites:
     - "A security data lake with audit logs; the sub-agent writes its own procedural memory for messy schemas (FIGMA-AGENTS-2026)"
     - "Configuration-as-code for the shared tool set so agents do not fragment into variants (FIGMA-AGENTS-2026)"
@@ -474,14 +473,13 @@
   sources:
     - {ref: FIGMA-AGENTS-2026, title: "How we secure Figma's internal systems with agents", publisher: "Figma", type: firm, url: "https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/", date: "2026-07-29", access: full, locator: "Summary paragraph; 'Guardrails'; 'Where we are now and what's next'"}
     - {ref: SLACK-AGENTS-2025, title: "Streamlining Security Investigations with Agents", publisher: "Slack Engineering", type: firm, url: "https://slack.engineering/streamlining-security-investigations-with-agents/", date: "2025-12-01", access: full, locator: "'The Solution'; 'Investigation Loop'; Conclusion"}
-    - {ref: ARXIV-2607.09176, title: "SherAgent: Scaling Attack Investigation in the Wild via LLM-Empowered Iterative Query-Filter Backtracking", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.09176", date: "2026-07-10", access: full, locator: "Abstract"}
     - {ref: DETENGWEEKLY-166-2026, title: "DEW #166 - Figma's Agentic SecOps, AI-EDRs and Anthropic Evals Breaking into Companies", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-166-figmas-agentic-secops-ai", date: "2026-08-05", access: full, locator: "Detection Engineering Gem"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-03, discourse-04 and governance-06. Figma's figures are single-team and self-reported; the
-    headline and body figures differ. Slack describes itself as 'at an early phase'. The incident-response governance
-    file reports that a SherAgent spot-check of 980 cases found a verified success rate above 96%, against an audited
-    64.7% for the legacy tool. Figma's 20% drop in on-call pages is recorded in security-operations-02.
+    Merged from discourse-03 and discourse-04. Figma's figures are single-team and self-reported; the headline and
+    body figures differ. Slack describes itself as 'at an early phase'. Figma's 20% drop in on-call pages is recorded
+    in security-operations-02. The provenance-graph investigation agent SherAgent (governance-06) is not repeated here:
+    see security-incident-response-08, which holds its production audit data.
 
 - id: security-operations-10
   title: Agent prepares the investigation and the analyst makes the call, measured in controlled studies
@@ -569,51 +567,6 @@
   notes: "From practice-09. Qualitative and vendor-authored."
 
 - id: security-operations-12
-  title: Agent-built, reproducible case file - an investigation notebook or schema-based timeline the analyst and agent share
-  archetype: security
-  module: operations
-  function: technology-it
-  work_types: [research-synthesis, document-production]
-  pattern: end-to-end-case-agent
-  ladder: augment
-  change_scope: process
-  runtime_class: shared-team-skills
-  maturity: piloting
-  problem: >-
-    Investigation means 20+ browser tabs across SIEM, threat intelligence and asset tools plus scratch notes, so context
-    is lost and the chain of evidence is weak; AI-generated narratives must stand up to audit, regulatory or legal
-    scrutiny.
-  solution: >-
-    The DNB Cyber Defense Center built marimo notebooks with SDKs that run native SPL and KQL and return typed tables;
-    an agent writes and runs cells in the same live notebook, so the finished notebook is the case file, and domain
-    skills for triage and hunting replace per-alert templates. Centene presented a six-layer pipeline on the Open
-    Cybersecurity Schema Framework (OCSF, a common log schema) in which LLMs help with field inference, clustering and
-    narrative while every transformation is versioned, hash verified and logged.
-  outcomes:
-    - {lever: quality, description: "Reproducibility and chain-of-evidence benefit stated qualitatively", figure: "none published", measures: "no figures in either source", provenance: self-reported, source_ref: CAUCHY-IRNB-2026}
-  prerequisites:
-    - "Query access to SIEM, XDR and warehouse platforms; security data exposed as dataframes (CAUCHY-IRNB-2026)"
-    - "Logs normalised to OCSF, with confidence scoring, prompt traceability and workflow logging (FIRST-CON-2026)"
-  risks_and_guardrails:
-    - "Real cases are confidential, so DNB's published demo is a simplified scenario (CAUCHY-IRNB-2026)"
-    - "Centene's abstract aligns the approach with evidentiary standards (it names Daubert, Frye and Durant); no external review is reported (FIRST-CON-2026)"
-  human_checkpoints:
-    - "The analyst works in the same notebook and owns conclusions (CAUCHY-IRNB-2026)"
-    - "Human-in-the-loop controls so decision authority never leaves the analyst (FIRST-CON-2026)"
-  role_evolution: >-
-    Analyst and agent share one workspace (CAUCHY-IRNB-2026); analysts verify machine-built timelines against
-    hash-verified source evidence (FIRST-CON-2026).
-  evidence_grade: B
-  sources:
-    - {ref: CAUCHY-IRNB-2026, title: "Agentic incident response notebooks", publisher: "DNB Cyber Defense Center (Kyrre Wahl Kongsgard)", type: firm, url: "https://blog.cauchy.org/blog/incident-response-notebooks/", date: "2026-06-19", access: full, locator: "Opening; 'Why marimo fits'"}
-    - {ref: DETENGWEEKLY-165-2026, title: "DEW #165 - Starved & Neglected Rules, Agentic IR Notebooks and Hacker Summer Camp", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-165-starved-and-neglected-rules", date: "2026-07-29", access: full, locator: "State of the Art, 'Agentic incident response notebooks'"}
-    - {ref: FIRST-CON-2026, title: "38th Annual FIRST Conference program and session abstracts", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "Session 'From Logs to Living Timelines: AI-Assisted Incident Response in Hybrid Cloud Using OCSF' (Centene), abstract"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    Merged from discourse-13 and governance-13. Overlaps the incident-response module; kept here for the investigation
-    and case-management step. Centene's abstract describes a designed framework and does not say it is in production.
-
-- id: security-operations-13
   title: Analyst copilot and chat assistants for queries, log analysis, threat explanation and incident summaries
   archetype: security
   module: operations
@@ -665,8 +618,9 @@
     Merged from practice-15, discourse-19, governance-17 (an idea, folded in as a guardrail) and discourse-15 (Hugging
     Face's self-hosted forensic model, also routed to incident-response). The Microsoft study uses 2024 data, is
     observational and vendor-authored, but is the largest live-operations measurement found for this module.
+    Overlaps: holding a vetted self-hosted model ready is a use case in its own right in security-incident-response-03.
 
-- id: security-operations-14
+- id: security-operations-13
   title: Agent drafts the investigation report and case write-up for analyst sign-off
   archetype: security
   module: operations
@@ -712,58 +666,50 @@
     Merged from practice-12 and governance-14. No named SOC reports measured time saved on reporting. The CSA study's
     drop in manual analysts' report detail is in security-operations-10.
 
-- id: security-operations-15
-  title: Scheduled AI hunts and always-on correlation that catch what detection rules miss, feeding the same alert queue
+- id: security-operations-14
+  title: LLM triage of anomaly and correlation signals surfaces an intrusion that no single rule flagged
   archetype: security
   module: operations
   function: technology-it
-  work_types: [research-synthesis, expert-judgment]
+  work_types: [transaction-processing, expert-judgment]
   pattern: monitor-diagnose-act
-  ladder: delegate
-  change_scope: process
+  ladder: augment
+  change_scope: step
   runtime_class: background-agent
   maturity: in-production
   problem: >-
-    Teams can write deterministic detections for major sources such as AWS and Okta but not for every SaaS audit log,
-    and rules miss activity that no single alert flags, so false negatives go unseen.
+    Separating real signals from daily noise in security telemetry is hard, and rules miss activity that no single alert
+    flags, so false negatives go unseen.
   solution: >-
-    Grow Therapy, a healthcare platform, runs daily agent hunts across about 15 log sources. Each hunt is a YAML
-    objective with severity guidelines and known false positives; a five-phase flow (data gathering with a cheaper model,
-    baseline comparison, context enrichment, confidence scoring, adversarial validation) writes findings into the same
-    alerts table as the SQL detections, routed to Slack and Jira. Hugging Face says LLM-based triage in its
-    anomaly-detection pipeline, and correlation of those signals, surfaced an intrusion. Microsoft documents an always-on
-    Dynamic Threat Detection Agent that correlates alerts, events and threat intelligence and raises its own alerts.
+    Hugging Face says its anomaly-detection pipeline uses LLM-based triage over security telemetry, and that correlation
+    of those signals flagged an intrusion it describes as driven by an autonomous AI agent system. Afterwards it changed
+    alerting so a high-severity signal pages a responder within minutes, any day. Scheduled AI hunts over log sources
+    without rules, and Microsoft's always-on detection agent, are in the threat-intelligence module
+    (security-threat-intelligence-21 and -22).
   outcomes:
-    - {lever: quality, description: "Staging the first CloudTrail hunt before it could alert cut its findings per run", figure: "15+ findings per run to 2-3", measures: "findings per run before and after signal-to-noise tuning in staging", provenance: self-reported, source_ref: GROWTHERAPY-HUNT-2026}
-    - {lever: cost, description: "Running cost of the whole hunting system", figure: "USD 320-510 per month", measures: "Grow Therapy cost table (model API, Snowflake compute, Fargate, Lambda/DynamoDB/NAT); existing Datadog spend counted as zero", provenance: self-reported, source_ref: GROWTHERAPY-HUNT-2026}
-    - {lever: risk, description: "Hugging Face credits AI-assisted detection with surfacing the compromise", figure: "none published", measures: "no detection-rate figure", provenance: self-reported, source_ref: HUGGINGFACE-INCIDENT-2026}
+    - {lever: risk, description: "The disclosure credits AI-assisted detection with surfacing the compromise", figure: "none published", measures: "no detection-rate figure", provenance: self-reported, source_ref: HUGGINGFACE-INCIDENT-2026}
   prerequisites:
-    - "Logs already centralised in a warehouse and an observability tool (GROWTHERAPY-HUNT-2026)"
-    - "A feedback loop where analysts mark false positives, built before deployment, and a staging mode for new hunts (GROWTHERAPY-HUNT-2026)"
+    - "A telemetry pipeline feeding the triage model (HUGGINGFACE-INCIDENT-2026)"
+    - "Alerting that pages a responder for high-severity signals at any hour"
   risks_and_guardrails:
-    - "The one-shot first version produced vague findings; structuring the work as an analyst would fixed it (GROWTHERAPY-HUNT-2026)"
-    - "Start with few tools: a large tool set can bloat context and lower signal-to-noise (GROWTHERAPY-HUNT-2026)"
-    - "Detection that does not page anyone is not enough: after the event Hugging Face changed alerting so a high-severity signal pages a responder in minutes, any day (HUGGINGFACE-INCIDENT-2026)"
-    - "Microsoft's documentation gives no accuracy or guardrail information (MSFT-DEFENDER-AGENTS-2026)"
+    - "Detection that pages no one is not enough; Hugging Face's sensors caught activity but did not page anyone at first (TLDRSEC-348-2026, HUGGINGFACE-INCIDENT-2026)"
+    - "After the event Hugging Face added guardrails and stricter admission controls on its clusters (HUGGINGFACE-INCIDENT-2026)"
   human_checkpoints:
-    - "Analysts click false positive or escalate in Slack; Jira tracks state; 90 days of resolved alerts feed known false-positive patterns into later hunts (GROWTHERAPY-HUNT-2026)"
-  role_evolution: >-
-    Hunt definitions are drafted by the model from a one-paragraph description plus a conventions file, then reviewed by
-    the security team (GROWTHERAPY-HUNT-2026).
-  evidence_grade: A
+    - "Responders handled containment and assessment (HUGGINGFACE-INCIDENT-2026)"
+  role_evolution: "Not described in the source."
+  evidence_grade: B
   sources:
-    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: "Grow Therapy engineering", type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026-08", access: full, locator: "Cost table; 'Handling noise: False positives & deduplication'; lessons list"}
     - {ref: HUGGINGFACE-INCIDENT-2026, title: "Security incident disclosure - July 2026", publisher: "Hugging Face", type: firm, url: "https://huggingface.co/blog/security-incident-july-2026", date: "2026-07-16", access: full, locator: "Paragraph beginning 'The attack was initially surfaced through AI-assisted detection'"}
-    - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Dynamic Threat Detection Agent section"}
-    - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: "Detection Engineering Weekly", type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "State of the Art, 'Threat hunt AI'"}
+    - {ref: TLDRSEC-348-2026, title: "[tl;dr sec] #348 - Google's PageBreak Scanner, Perplexity's Agent Security Tool, Defending Agentically", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-348", date: "2026-10-01", access: full, locator: "Item on detection fidelity (routed from application-security discourse)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-05, discourse-14 and practice-20. Grow Therapy's page is undated; the newsletter featured it
-    on 2026-08-19. Microsoft's agent is documentation only (announced). Generic threat-hunting assistants (Microsoft,
-    CrowdStrike, Google, Dropzone) were routed to threat-intelligence by the practice file; hunting loops at Daylight
-    Security and Con Edison (SANS DFIR Summit agenda titles, routed from incident-response) were not read beyond titles.
+    From discourse-14 (also routed here by the ai-security governance-assurance file). One named incident; attribution
+    of the attacking agents is covered in other modules. Discourse-05 (Grow Therapy daily hunts) and practice-20
+    (Microsoft Dynamic Threat Detection Agent) are not repeated: they are security-threat-intelligence-21 and -22.
+    Hunting loops at Daylight Security and Con Edison (SANS DFIR Summit agenda titles, routed from incident-response)
+    were not read beyond titles.
 
-- id: security-operations-16
+- id: security-operations-15
   title: AI drafts, translates and scores detection rules, with a separate judge model and human code review
   archetype: security
   module: operations
@@ -784,13 +730,11 @@
     judge model to score sensitivity and specificity, validates rules on synthetic and real traffic logs and sends the
     best candidate to human code review. Kroll's Detection Engineering Agent finds coverage gaps and translates SIEM
     logic from Splunk, Sentinel and Elastic into CrowdStrike's query language; Google previews a Detection Engineering
-    agent that validates rules with synthetic events. Research benchmarks (CTI-REALM, SIGMERGE, AUTOSIGMA, Sublime
-    Security's evaluation) score generated rules against human-written ones.
+    agent that validates rules with synthetic events. Turning threat reports into rules, and the benchmarks that score
+    it, are in security-threat-intelligence-14.
   outcomes:
     - {lever: speed, description: "Rules produced and validated faster than manually over the last four months of 2025, after confidence scoring was deployed in August 2025", figure: "336% faster", measures: "Amazon's productivity comparison with manual rule creation; the unit is not defined", provenance: self-reported, source_ref: AMAZON-RULEFORGE-2026}
     - {lever: quality, description: "The dedicated judge model reduced false positives while keeping the same true positives", figure: "67% fewer false positives", measures: "candidate rules with judge vs without, as stated by Amazon; test size not stated", provenance: self-reported, source_ref: AMAZON-RULEFORGE-2026}
-    - {lever: quality, description: "Best overall reward among 16 frontier models on CTI-REALM", figure: "0.637 (second 0.624)", measures: "detection results and trajectory rewards on emulated attacks across Linux, cloud and AKS", provenance: independent, source_ref: ARXIV-2603.13517}
-    - {lever: quality, description: "SIGMERGE rules accepted into the official Sigma repository", figure: "4 novel rules accepted", measures: "count of accepted contributions; evaluated on 23 metrics against 16 baselines and 13 LLMs", provenance: independent, source_ref: USENIX-SIGMERGE-2026}
   prerequisites:
     - "A corpus of exploit proofs of concept or machine-readable threat reports, real traffic logs for validation, and rules in a reviewable format (AMAZON-RULEFORGE-2026)"
     - "An existing detection library, a target query language and synthetic event testing"
@@ -808,18 +752,16 @@
     - {ref: AMAZON-RULEFORGE-2026, title: "How Amazon uses agentic AI for vulnerability detection at global scale", publisher: "Amazon Science", type: vendor, url: "https://www.amazon.science/blog/how-amazon-uses-agentic-ai-for-vulnerability-detection-at-global-scale", date: "2026-04-08", access: full, locator: "Key points; 'Multistage validation'; results paragraph"}
     - {ref: CROWDSTRIKE-AGENTWORKS-2026, title: "How AI-leading Security Teams Are Building the Agentic SOC", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/blog/how-ai-leading-security-teams-are-building-the-agentic-soc/", date: "2026-07-06", access: full, locator: "Customer examples list, Kroll bullet"}
     - {ref: TECHINFORMED-GOOGLE-2026, title: "Google's SOC agent cuts alert review from 30 minutes to 60 seconds", publisher: "TechInformed", type: press, url: "https://techinformed.com/googles-soc-agent-cuts-alert-review-from-30-minutes-to-60-seconds/", date: "2026-06-16", access: full, locator: "Paragraph on the Detection Engineering agent (preview)"}
-    - {ref: ARXIV-2603.13517, title: "CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.13517", date: "2026-03-13", access: full, locator: "Abstract"}
-    - {ref: USENIX-SIGMERGE-2026, title: "From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports", publisher: "USENIX Security 2026", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/cai", date: "2026-08", access: full, locator: "Abstract"}
     - {ref: USENIX-SIGMA-2026, title: "Credible Threat Detection? Measuring Contribution Dynamics and Quality Control in a Crowdsourced Threat Detection Ecosystem", publisher: "USENIX Security 2026", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/virkud", date: "2026-08", access: full, locator: "Abstract"}
     - {ref: EXPEL-3LEADERS-2026, title: "Why three security leaders still won't let AI make the call", publisher: "Expel", type: vendor, url: "https://expel.com/blog/why-three-security-leaders-still-wont-let-ai-make-the-call/", date: "2026-10-02", access: full, locator: "McIntyre quote on detection engineering and remediation"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-13, practice-14 and governance-12. RuleForge's scope is CVE-exploit rules in Amazon's own
     format for its honeypot and detection systems, not general SIEM content; it is adjacent to vulnerability-exposure.
-    The Kroll example is stated without scale; Google's agent is in preview. AUTOSIGMA and Sublime Security's framework
-    give no figures in their abstracts.
+    The Kroll example is stated without scale; Google's agent is in preview. Governance-12's report-to-rule benchmarks
+    (CTI-REALM, SIGMERGE, AUTOSIGMA, Sublime Security) overlap security-threat-intelligence-14 and are not repeated.
 
-- id: security-operations-17
+- id: security-operations-16
   title: Coding agents validate detections end to end - write the attack simulation, detonate it in a lab, query the SIEM and retry
   archetype: security
   module: operations
@@ -859,7 +801,7 @@
   last_reviewed: "2026-10-17"
   notes: "From discourse-12. Cisco and Splunk also ran detection validation across more than 2,100 public detections during Black Hat 2026 (SPLUNK-BHUSA-2026; no figures on outcomes)."
 
-- id: security-operations-18
+- id: security-operations-17
   title: Triage-to-detection tuning loop - the agent drafts allowlist and rule-change pull requests after an analyst confirms a false positive
   archetype: security
   module: operations
@@ -895,7 +837,7 @@
   last_reviewed: "2026-10-17"
   notes: "From discourse-11."
 
-- id: security-operations-19
+- id: security-operations-18
   title: SOC teams build their own agents from playbooks and SOPs in a no-code agent workspace
   archetype: security
   module: operations
@@ -937,7 +879,7 @@
     From practice-11. Customer statements are quoted by the vendor and give no outcome figures. Several features in the
     2026-09-18 post are labelled pre-beta or public preview. Pattern 'other': a team-built agent library.
 
-- id: security-operations-20
+- id: security-operations-19
   title: Agents propose containment and response actions that run only through a closed set of templated, validated commands
   archetype: security
   module: operations
@@ -983,8 +925,9 @@
   notes: >-
     Merged from practice-17 and governance-08. Evidence is a preview product, a research design and one customer quote.
     The paper's authors say the fit for operational technology is architectural, not a measured OT deployment.
+    Overlaps: guardrailed automated containment playbooks after a confirmed incident are security-incident-response-14.
 
-- id: security-operations-21
+- id: security-operations-20
   title: Per-action authority for SOC agents - score each action before it may run unattended, and keep agent activity observable, attributable and stoppable
   archetype: security
   module: operations
@@ -1046,7 +989,7 @@
     observability only. No organisation reports running per-action scoring. CISA pages retrieved on 2026-10-17 show
     'AI' replaced by 'Super Intelligence (SI)' in titles.
 
-- id: security-operations-22
+- id: security-operations-21
   title: Measuring the SOC's AI - score verdicts against analyst outcomes, sample what it closes, and replay benchmarks before widening autonomy
   archetype: security
   module: operations
@@ -1112,8 +1055,9 @@
     incident-response). Grade A rests on Elastic's tracked agreement metric; the other figures are vendor claims or
     research benchmarks. The outcome-based metric scheme in governance-16 was an idea; no organisation reports running
     it in full. unsecure.sh builds a competing harness and its scenario may favour it.
+    Overlaps: scenario scorecards for investigation agents are security-incident-response-12; verifying AI findings and hardening tools against attacker-controlled logs is security-incident-response-11.
 
-- id: security-operations-23
+- id: security-operations-22
   title: MDR providers move to agent-led, human-accountable services, and buyers test what the AI actually does
   archetype: security
   module: operations
@@ -1171,8 +1115,9 @@
     applying it to an MDR provider). All performance claims come from the providers; the CIO.com article reads like
     vendor-supplied material. Arctic Wolf's launch date (2026-03-23) was seen only in search results. The Gartner
     documents were not opened.
+    Overlaps: MDR extended to SaaS identity threats is security-identity-access-16.
 
-- id: security-operations-24
+- id: security-operations-23
   title: SOC staffed to build and supervise automation - detection and response engineers use coding agents to build workflows and agents
   archetype: security
   module: operations
@@ -1226,8 +1171,9 @@
     sells an AI SOC product), so B is the ceiling. Postings come from a convenience sample of tech-forward firms.
     Anthropic develops the model used in this research; its posting is one data point among six. Pattern 'other':
     a staffing and operating-model change.
+    Overlaps: the same builder shift appears for incident responders (security-incident-response-25) and IAM engineers (security-identity-access-12).
 
-- id: security-operations-25
+- id: security-operations-24
   title: "Idea: defender agents that contain an active attack without a human in the loop"
   archetype: security
   module: operations
@@ -1262,3 +1208,4 @@
     - {ref: NCSC-AGENTICDEF-2026, title: "One does not simply defend agentically", publisher: "UK National Cyber Security Centre", type: regulator, url: "https://www.ncsc.gov.uk/blogs/one-does-not-simply-defend-agentically", date: "2026-09-21", access: full, locator: "Closing section: problem book; Cyber Shield"}
   last_reviewed: "2026-10-17"
   notes: "Idea, not a deployment (discourse-22). Evidence is practitioner commentary and a regulator's research call."
+

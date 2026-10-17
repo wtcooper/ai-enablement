@@ -236,13 +236,13 @@
     access: full
     locator: Sections on the engine versus data-layer split and the close-to-tax handoff
   - ref: TR-CORPAI-2026
-    title: 'AI in corporate tax: key trends, use cases and what''s next'
-    publisher: Thomson Reuters Tax & Accounting
+    title: "AI in corporate tax: 2026 key trends and use cases"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: vendor
-    url: https://tax.thomsonreuters.com/blog/ai-in-corporate-tax-key-trends-use-cases-and-whats-next/
-    date: '2026-07-01'
+    url: "https://tax.thomsonreuters.com/blog/ai-in-corporate-tax-key-trends-use-cases-and-whats-next/"
+    date: "2026-07-01"
     access: full
-    locator: 'Section ''Thomson Reuters: From compliance to intelligent compliance'''
+    locator: "Section 'Thomson Reuters: From compliance to intelligent compliance'"
   - ref: DELOITTE-TTT-2026
     title: 'Riding the wave: A framework to plan for AI (Tax Transformation Trends AI report, part three)'
     publisher: Deloitte Global
@@ -276,29 +276,29 @@
     access: full
     locator: '''Agentic AI: Promise and Practicalities''; ''Trust in Your People'''
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard'
+    locator: "Section 'A very bad wizard'"
   - ref: BTAX-EYGRIP-2025
-    title: AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way
-    publisher: Bloomberg Tax (EY-authored commentary)
+    title: "AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way (opinion by Daren R. Campbell and Randy Carpenter, EY)"
+    publisher: "Bloomberg Tax (EY authors)"
     type: press
-    url: https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way
-    date: '2025-11-21'
+    url: "https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way"
+    date: "2025-11-21"
     access: full
-    locator: Paragraph on upskilling ('shift their focus from assembling information')
+    locator: "Paragraph on upskilling ('shift their focus from assembling information')"
   - ref: TR-CORPTAX-2025
-    title: 'The GenAI paradox: why most tax departments aren''t using AI yet (State of the Corporate Tax Department 2025)'
-    publisher: Thomson Reuters Tax & Accounting
+    title: "The GenAI paradox: why most tax departments aren't using AI yet (2025 State of the Corporate Tax Department)"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: survey
-    url: https://tax.thomsonreuters.com/blog/the-genai-paradox-why-most-tax-departments-arent-using-ai-yet-and-what-early-adopters-are-gaining-tri/
-    date: '2025-10-22'
+    url: "https://tax.thomsonreuters.com/blog/the-genai-paradox-why-most-tax-departments-arent-using-ai-yet-and-what-early-adopters-are-gaining-tri/"
+    date: "2025-10-22"
     access: full
-    locator: Key insights bullet on 58% under-resourced
+    locator: "Key insights bullet on 58% under-resourced"
   last_reviewed: '2026-10-17'
   notes: >-
     No named customer; Thomson Reuters describes a goal and Deloitte a scenario step, so maturity is announced. The
@@ -423,13 +423,13 @@
   evidence_grade: B
   sources:
   - ref: INNOVATETAX-VXE-2026
-    title: What we learned from Vertex Exchange Europe 2026
-    publisher: Innovate Tax (conference recap)
+    title: "What we learned from Vertex Exchange Europe 2026"
+    publisher: "Innovate Tax"
     type: conference
-    url: https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/
-    date: '2026-05-06'
+    url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/"
+    date: "2026-05-06"
     access: full
-    locator: Section 'Customer stories brought the challenges to life'
+    locator: "Section 'Customer stories brought the challenges to life'"
   - ref: VERTEX-S4-2026
     title: New Perspectives on SAP S/4HANA Migration (white paper with DMA)
     publisher: Vertex
@@ -539,13 +539,13 @@
     access: full
     locator: Summary paragraph
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard'
+    locator: "Section 'A very bad wizard'"
   last_reviewed: '2026-10-17'
   notes: >-
     Baseline, not AI: it shows what the AI-built pipelines in tax-data-technology-07 replace and what they inherit
@@ -604,13 +604,13 @@
     access: full
     locator: '''About the role'' paragraphs; ''Semantic Layer & Application development''; ''Finance analytics'''
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard', paragraphs on silent failure
+    locator: "Section 'A very bad wizard', paragraphs on silent failure"
   last_reviewed: '2026-10-17'
   notes: >-
     Single named employer describing itself in a job posting (an aggregator copy listed as valid through 2026-09-15);
@@ -681,13 +681,13 @@
     access: full
     locator: Section 'End of the traditional model' (tooling poll) and 'Two ways to lose'
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Sections 'A very good man' and 'A very bad wizard'
+    locator: "Sections 'A very good man' and 'A very bad wizard'"
   - ref: SJSU-TEIHTTI-2025
     title: AI and Other Emerging Technologies for Tax Practitioners (41st Annual TEI-SJSU High Tech Tax Institute panel deck)
     publisher: TEI and San Jose State University
@@ -831,13 +831,13 @@
     access: full
     locator: Paragraph on exceptions routed for human review
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard' (undocumented Alteryx workflows)
+    locator: "Section 'A very bad wizard' (undocumented Alteryx workflows)"
   - ref: TEI-TECHTAX-2025
     title: '2025 TechTAXcelerate: Unleashing the Future of Tax Technology (webinar series programme)'
     publisher: Tax Executives Institute
@@ -1013,13 +1013,13 @@
     access: full
     locator: Paragraph after the tooling poll
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard'
+    locator: "Section 'A very bad wizard'"
   last_reviewed: '2026-10-17'
   notes: >-
     Idea; no deployment found. OpenAI's slides show agent demos labelled 'time saved' (for example a research memo
@@ -1082,13 +1082,13 @@
     access: full
     locator: 'Paragraph on the tooling poll: image-to-text solutions for state tax notices'
   - ref: BTAX-EYGRIP-2025
-    title: AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way
-    publisher: Bloomberg Tax (EY-authored commentary)
+    title: "AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way (opinion by Daren R. Campbell and Randy Carpenter, EY)"
+    publisher: "Bloomberg Tax (EY authors)"
     type: press
-    url: https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way
-    date: '2025-11-21'
+    url: "https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way"
+    date: "2025-11-21"
     access: full
-    locator: Section 'Enterprise Tax Functions', 'Tax notes' use case
+    locator: "Section 'Enterprise Tax Functions', 'Tax notes' use case"
   - ref: SAVANT-SPRING-2026
     title: Savant Spring 2026 Release Delivers SOX Compliance Automation, 5x Faster Processing, and Expanded Enterprise Integrations
     publisher: Savant Labs
@@ -1106,21 +1106,21 @@
     access: full
     locator: '''Avi in Outlook'' bullet'
   - ref: AICPA-WERFEL-2026
-    title: A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices A and C (Danny Werfel)
-    publisher: AICPA (The Tax Adviser)
+    title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)"
+    publisher: "The Tax Adviser (AICPA)"
     type: professional-body
-    url: https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
-    date: 2026-06
+    url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf"
+    date: "2026-06"
     access: full
-    locator: Appendix C, risk 3 (Incorrect Document Extraction)
+    locator: "Appendix C, risk 3 (Incorrect Document Extraction)"
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard', first anecdote
+    locator: "Section 'A very bad wizard', first anecdote"
   last_reviewed: '2026-10-17'
   notes: >-
     The notice examples are unnamed attendees in a vendor-owned recap. Notice triage and response belong to
@@ -1216,14 +1216,13 @@
     access: full
     locator: Summary and 'Key Features'
   - ref: OECD-FTA-2025
-    title: Heads of tax administrations agree further work on collaborative projects to reduce compliance burdens and deepen
-      co-operation in tackling tax gaps
-    publisher: OECD
+    title: "Heads of tax administrations agree further work on collaborative projects to reduce compliance burdens and deepen co-operation in tackling tax gaps (FTA 18th Plenary)"
+    publisher: "OECD Forum on Tax Administration"
     type: regulator
-    url: https://www.oecd.org/en/about/news/announcements/2025/11/heads-of-tax-administrations-agree-further-work-on-collaborative-projects-to-reduce-compliance-burdens-and-deepen-co-operation-in-tackling-tax-gaps.html
-    date: '2025-11-20'
+    url: "https://www.oecd.org/en/about/news/announcements/2025/11/heads-of-tax-administrations-agree-further-work-on-collaborative-projects-to-reduce-compliance-burdens-and-deepen-co-operation-in-tackling-tax-gaps.html"
+    date: "2025-11-20"
     access: search-only
-    locator: Blocked by a bot check on every route tried; seen only in search results
+    locator: "Blocked by a bot check on every route tried; seen only in search results"
   - ref: OECD-FTA-STATEMENT-2025
     title: FTA Plenary Statement of Outcomes (18th Plenary, Cape Town, 18-20 November 2025)
     publisher: OECD Forum on Tax Administration (copy hosted by Japan's National Tax Agency)
@@ -1482,13 +1481,13 @@
     access: full
     locator: Paragraphs on continuous transaction controls and clearance regimes
   - ref: INNOVATETAX-VXE-2026
-    title: What we learned from Vertex Exchange Europe 2026
-    publisher: Innovate Tax (conference recap)
+    title: "What we learned from Vertex Exchange Europe 2026"
+    publisher: "Innovate Tax"
     type: conference
-    url: https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/
-    date: '2026-05-06'
+    url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/"
+    date: "2026-05-06"
     access: full
-    locator: Sections 'VAT risk now surfaces at the invoice itself' and 'Partners and skills'
+    locator: "Sections 'VAT risk now surfaces at the invoice itself' and 'Partners and skills'"
   - ref: VERTEX-VIDA-2026
     title: 'ViDA and the Future of ERP Integration: How to Build for Continuous Transaction Controls'
     publisher: Vertex
@@ -1565,13 +1564,13 @@
     access: full
     locator: '''Advanced Rules with AI Visualization'' paragraph'
   - ref: BTAX-EYGRIP-2025
-    title: AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way
-    publisher: Bloomberg Tax (EY-authored commentary)
+    title: "AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way (opinion by Daren R. Campbell and Randy Carpenter, EY)"
+    publisher: "Bloomberg Tax (EY authors)"
     type: press
-    url: https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way
-    date: '2025-11-21'
+    url: "https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way"
+    date: "2025-11-21"
     access: full
-    locator: Opening paragraphs and 'Enterprise Tax Functions' list
+    locator: "Opening paragraphs and 'Enterprise Tax Functions' list"
   - ref: TR-GOVERNANCE-2026
     title: 'The governance reckoning: How tax departments must prepare for the new era of mandatory compliance'
     publisher: Thomson Reuters Institute
@@ -1641,13 +1640,13 @@
     access: full
     locator: Scenario 2 (indirect tax example) and Scenario 3, pp. 5-6; four-scenario framework, pp. 2-3
   - ref: INNOVATETAX-VXE-2026
-    title: What we learned from Vertex Exchange Europe 2026
-    publisher: Innovate Tax (conference recap)
+    title: "What we learned from Vertex Exchange Europe 2026"
+    publisher: "Innovate Tax"
     type: conference
-    url: https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/
-    date: '2026-05-06'
+    url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/"
+    date: "2026-05-06"
     access: full
-    locator: '''VAT risk now surfaces at the invoice itself'' and ''From CTC to Continuous Audit Controls'''
+    locator: "'VAT risk now surfaces at the invoice itself' and 'From CTC to Continuous Audit Controls'"
   - ref: TRINST-TEIAUDITOR-2026
     title: '2026 TEI Tax Technology Seminar: What the auditor already knows'
     publisher: Thomson Reuters Institute
@@ -1844,13 +1843,13 @@
     access: full
     locator: '''Microsoft Tools'' paragraph'
   - ref: PWC-MEGNA-2025
-    title: How PwC's tax team is using agentic AI (interview with Dom Megna, US AI Tax Leader)
-    publisher: CFO.com
+    title: "How PwC's tax team is using agentic AI (interview with Dom Megna, PwC US AI Tax Leader)"
+    publisher: "CFO.com"
     type: press
-    url: https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/
-    date: '2025-06-06'
+    url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/"
+    date: "2025-06-06"
     access: full
-    locator: Answer on Agent OS and integration with internal data
+    locator: "Answer on Agent OS and integration with internal data"
   - ref: MCP-SPEC-2025
     title: 'Model Context Protocol specification, version 2025-11-25: Security Best Practices and Authorization'
     publisher: Model Context Protocol project
@@ -1894,13 +1893,13 @@
     access: full
     locator: About section (landing page; the list itself was not read)
   - ref: COLUMN-TAXCALCBENCH-2025
-    title: 'TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task'
-    publisher: Column Tax (arXiv 2507.16126)
+    title: "TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task (arXiv 2507.16126)"
+    publisher: "Column Tax authors (Bock, Molisee, Ozer, Shah), arXiv preprint"
     type: academic
-    url: https://arxiv.org/abs/2507.16126
-    date: '2025-07-22'
+    url: "https://arxiv.org/abs/2507.16126"
+    date: "2025-07-22"
     access: full
-    locator: Abstract
+    locator: "Abstract"
   - ref: ANROK-MCP-2026
     title: Anrok MCP server (product page)
     publisher: Anrok
@@ -1974,13 +1973,13 @@
   evidence_grade: C
   sources:
   - ref: FONOA-2026
-    title: State of Indirect Tax in the AI Era 2026
-    publisher: Fonoa
+    title: "State of Indirect Tax in the AI Era 2026 (landing page; full report gated)"
+    publisher: "Fonoa"
     type: survey
-    url: https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026
-    date: '2026-06-17'
+    url: "https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026"
+    date: "2026-06-17"
     access: full
-    locator: Sections on confidence, governance, diagnostic checklist and 'How Fonoa Intelligence helps'
+    locator: "Sections on confidence, governance, diagnostic checklist and 'How Fonoa Intelligence helps'"
   - ref: TR-GOVERNANCE-2026
     title: 'The governance reckoning: How tax departments must prepare for the new era of mandatory compliance'
     publisher: Thomson Reuters Institute
@@ -1990,13 +1989,13 @@
     access: full
     locator: Opening anecdote; 'The real-time reporting challenge'; action 1
   - ref: AICPA-WERFEL-2026
-    title: A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices A and C (Danny Werfel)
-    publisher: AICPA (The Tax Adviser)
+    title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)"
+    publisher: "The Tax Adviser (AICPA)"
     type: professional-body
-    url: https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
-    date: 2026-06
+    url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf"
+    date: "2026-06"
     access: full
-    locator: Appendix C risk 1 and Appendix A risk 18
+    locator: "Appendix C risk 1 and Appendix A risk 18"
   - ref: SOVOS-SOVI-2026
     title: Sovos Expands Sovi AI with New Capabilities for Tax Guidance, Intelligent Automation and Agent Interoperability
     publisher: Sovos
@@ -2014,13 +2013,13 @@
     access: full
     locator: Sections 6.01-6.03
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: 'Section ''Regulatory Framework: Circular 230 Provisions'', item 1 (section 10.22)'
+    locator: "Section 'Regulatory Framework: Circular 230 Provisions', item 1 (section 10.22)"
   last_reviewed: '2026-10-17'
   notes: >-
     Pattern 'other': a trail that records other agents' and people's work, not a task pattern. The survey covers
@@ -2081,21 +2080,21 @@
   evidence_grade: C
   sources:
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard', polling paragraph
+    locator: "Section 'A very bad wizard', polling paragraph"
   - ref: TR-TENSIONS-2025
-    title: 5 GenAI tensions corporate tax departments should address
-    publisher: Thomson Reuters Tax & Accounting
+    title: "5 GenAI tensions corporate tax departments should address (from the 2025 Generative AI in Professional Services Report)"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: survey
-    url: https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address
-    date: '2025-06-24'
+    url: "https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address-tri/"
+    date: "2025-06-24"
     access: full
-    locator: 'Tension point 4: the policy and governance development need'
+    locator: "Tension point 4: the policy and governance development need"
   - ref: DART-COSO-2026
     title: COSO Releases Publication on Internal Controls Related to Generative AI (Heads Up, Vol. 33, Issue 3)
     publisher: Deloitte DART
@@ -2198,13 +2197,13 @@
   evidence_grade: C
   sources:
   - ref: FONOA-2026
-    title: State of Indirect Tax in the AI Era 2026
-    publisher: Fonoa
+    title: "State of Indirect Tax in the AI Era 2026 (landing page; full report gated)"
+    publisher: "Fonoa"
     type: survey
-    url: https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026
-    date: '2026-06-17'
+    url: "https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026"
+    date: "2026-06-17"
     access: full
-    locator: Landing page sections on the AI mandate, defending AI decisions, governance and the diagnostic checklist
+    locator: "Landing page sections on the AI mandate, defending AI decisions, governance and the diagnostic checklist"
   - ref: DELOITTE-LU-2025
     title: AI-enabled Tax Transformation (Tax Transformation Trends 2025 analysis)
     publisher: Deloitte Luxembourg
@@ -2222,21 +2221,21 @@
     access: full
     locator: Paragraph on monitoring KPIs and override percentages
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard'
+    locator: "Section 'A very bad wizard'"
   - ref: TR-TENSIONS-2025
-    title: 5 GenAI tensions corporate tax departments should address
-    publisher: Thomson Reuters Tax & Accounting
+    title: "5 GenAI tensions corporate tax departments should address (from the 2025 Generative AI in Professional Services Report)"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: survey
-    url: https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address
-    date: '2025-06-24'
+    url: "https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address-tri/"
+    date: "2025-06-24"
     access: full
-    locator: 'Tension point 3: the ROI measurement gap'
+    locator: "Tension point 3: the ROI measurement gap"
   - ref: TIGTA-2025
     title: The IRS Could Leverage Examination Results in Artificial Intelligence Examination Case Selection Models and Improve
       Processes to Evaluate Performance (2025-308-022)
@@ -2295,13 +2294,13 @@
   evidence_grade: B
   sources:
   - ref: OPENAI-USTAXOPSJOB-2026
-    title: Manager, US Tax Operations
-    publisher: OpenAI (via Glynn Capital job board)
+    title: "Manager, US Tax Operations (OpenAI job listing)"
+    publisher: "Glynn Capital job board (OpenAI)"
     type: job-posting
-    url: https://jobs.glynncapital.com/companies/openai/jobs/74040402-manager-us-tax-operations
-    date: '2026-04-11'
+    url: "https://jobs.glynncapital.com/companies/openai/jobs/74040402-manager-us-tax-operations"
+    date: "2026-04-11"
     access: full
-    locator: Intro paragraph; 'you will' bullets
+    locator: "Intro paragraph; 'you will' bullets"
   - ref: OPENAI-DIRECTTAXJOB-2026
     title: Senior Manager, Direct Tax AI Systems and Operations
     publisher: OpenAI (via Glynn Capital job board)
@@ -2319,13 +2318,13 @@
     access: full
     locator: Responsibilities and qualifications
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard' (poll) and section 'A very good man' (OpenAI demonstration)
+    locator: "Section 'A very bad wizard' (poll) and section 'A very good man' (OpenAI demonstration)"
   - ref: EY-TFO-2025
     title: EY report indicates CFOs and tax leaders innovating with AI to manage mounting geopolitical turbulence, talent
       shortages and regulatory developments (EY Tax and Finance Operations Survey)
@@ -2423,13 +2422,13 @@
     access: full
     locator: Sections 'The choices we keep making' and 'The rebrand starts with how departments see themselves'
   - ref: TR-CORPTAX-2025
-    title: 'The GenAI paradox: why most tax departments aren''t using AI yet (State of the Corporate Tax Department 2025)'
-    publisher: Thomson Reuters Tax & Accounting
+    title: "The GenAI paradox: why most tax departments aren't using AI yet (2025 State of the Corporate Tax Department)"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: survey
-    url: https://tax.thomsonreuters.com/blog/the-genai-paradox-why-most-tax-departments-arent-using-ai-yet-and-what-early-adopters-are-gaining-tri/
-    date: '2025-10-22'
+    url: "https://tax.thomsonreuters.com/blog/the-genai-paradox-why-most-tax-departments-arent-using-ai-yet-and-what-early-adopters-are-gaining-tri/"
+    date: "2025-10-22"
     access: full
-    locator: Sections 'The confidence gap and resource connection' and 'Budget realities'
+    locator: "Sections 'The confidence gap and resource connection' and 'Budget realities'"
   - ref: KPMG-READINESS-2026
     title: 2026 KPMG Global Tax Readiness Dividend
     publisher: KPMG International
@@ -2471,13 +2470,13 @@
     access: full
     locator: Strategy 'Tailor training by persona'
   - ref: TEI-TAXTECH-2026
-    title: '2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain'
-    publisher: Thomson Reuters Institute (recap of the Tax Executives Institute seminar)
+    title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)"
+    publisher: "Thomson Reuters Institute"
     type: conference
-    url: https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain
-    date: '2026-05-04'
+    url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain"
+    date: "2026-05-04"
     access: full
-    locator: Section 'A very bad wizard'
+    locator: "Section 'A very bad wizard'"
   - ref: TR-CORPTECH-2026
     title: Corporate tax teams eager for AI, but frustrated by pace of change (2026 Corporate Tax Department Technology Report)
     publisher: Thomson Reuters Institute with Tax Executives Institute
@@ -2503,13 +2502,13 @@
     access: full
     locator: Insight 4 (a new operating model takes shape)
   - ref: SALA-TAXNOTES-2026
-    title: AI Won't Shrink Corporate Tax Teams Much. Here's Why. (abstract of M. Sala, 121 Tax Notes State 189)
-    publisher: TaxProf Blog
+    title: "AI Won't Shrink Corporate Tax Teams Much. Here's Why. (Michael V. Sala, Tax Notes State 121:189; abstract on TaxProf Blog)"
+    publisher: "Tax Notes / TaxProf Blog"
     type: press
-    url: https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
-    date: '2026-07-20'
+    url: "https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/"
+    date: "2026-07-20"
     access: full
-    locator: Abstract
+    locator: "Abstract"
   last_reviewed: '2026-10-17'
   notes: >-
     Graded B on one named deployment (Unilever's centralised tax operations centre, described by Unilever Ice Cream's
@@ -2573,13 +2572,13 @@
     access: full
     locator: '''Agentic AI: Promise and Practicalities'' (interviews) and ''Trust in Your People'''
   - ref: TR-TENSIONS-2025
-    title: 5 GenAI tensions corporate tax departments should address
-    publisher: Thomson Reuters Tax & Accounting
+    title: "5 GenAI tensions corporate tax departments should address (from the 2025 Generative AI in Professional Services Report)"
+    publisher: "Thomson Reuters Tax & Accounting"
     type: survey
-    url: https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address
-    date: '2025-06-24'
+    url: "https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address-tri/"
+    date: "2025-06-24"
     access: full
-    locator: 'Tension point 1: the vendor transparency gap'
+    locator: "Tension point 1: the vendor transparency gap"
   - ref: DELOITTE-TTT-2026
     title: 'Riding the wave: A framework to plan for AI (Tax Transformation Trends AI report, part three)'
     publisher: Deloitte Global
@@ -2589,29 +2588,29 @@
     access: full
     locator: p. 5 (Scenario 2) and p. 7 (Scenario 4)
   - ref: INNOVATETAX-VXE-2026
-    title: What we learned from Vertex Exchange Europe 2026
-    publisher: Innovate Tax (conference recap)
+    title: "What we learned from Vertex Exchange Europe 2026"
+    publisher: "Innovate Tax"
     type: conference
-    url: https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/
-    date: '2026-05-06'
+    url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/"
+    date: "2026-05-06"
     access: full
-    locator: Section 'Partners and skills are now central to success'
+    locator: "Section 'Partners and skills are now central to success'"
   - ref: AICPA-WERFEL-2026
-    title: A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices A and C (Danny Werfel)
-    publisher: AICPA (The Tax Adviser)
+    title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)"
+    publisher: "The Tax Adviser (AICPA)"
     type: professional-body
-    url: https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
-    date: 2026-06
+    url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf"
+    date: "2026-06"
     access: full
-    locator: Appendix C, risks 2 and 14
+    locator: "Appendix C, risks 2 and 14"
   - ref: IRS-OPR-2026
-    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
-    publisher: IRS Office of Professional Responsibility
+    title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
+    publisher: "IRS Office of Professional Responsibility"
     type: regulator
-    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
-    date: '2026-06-24'
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: "2026-06-24"
     access: full
-    locator: Section on firm procedures, 'Contracting with external providers'
+    locator: "Section on firm procedures, 'Contracting with external providers'"
   last_reviewed: '2026-10-17'
   notes: >-
     Sources are provider commentary and a provider-run survey; no named in-house team reported a result. Co-sourcing
