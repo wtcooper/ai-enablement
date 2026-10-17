@@ -13,7 +13,7 @@
 - **The visible failures are in written advocacy.** *Clinco v. Commissioner* (T.C. Memo. 2026-16) found that three of four cases cited were apparently hallucinated. Judge Holmes told Bloomberg he had seen fewer than a dozen such instances and issued no sanctions yet. In *Khoja v. Commissioner* a Tax Court judge questioned an IRS attorney about a non-existent citation in an IRS motion. IRS OPR Alert 2026-19 (24 Jun 2026) applies existing Circular 230 duties, including §10.27 on fees, to AI use.
 - **Tax authorities are scaling AI while shrinking.** GAO counted 126 active IRS AI use cases at June 2025 (10 in August 2022), with 61% still in development. TIGTA found the IRS has no process to show AI selection models beat prior methods. The IRS CEO announced an "AI-first IRS" on 30 Sep 2026 with headcount flat at about 74,000. ATO's own CDO describes an AI assistant that orders substantiation documents for auditors, while ANAO found 74% of ATO production models had no completed data ethics assessment.
 - **Roles are shifting, but the sources are thin.** The most concrete role signals are an IRS Chief Counsel attorney saying staff must adopt AI or leave, an IRS statement that AI "is not designed to eliminate jobs", a TEI poll in which two of more than 50 hands said tax owns AI implementation, and EY's finding that securing talent is the top barrier (44%).
-- **Counts:** 20 candidate use cases (1 grade A, 8 grade B, 10 grade C, 1 grade D). 12 use cases are practitioner or in-house side (01 to 08 and 20, plus related checks inside 05) and 11 are tax-authority side; see the module notes for the split.
+- **Counts:** 20 candidate use cases (1 grade A, 8 grade B, 10 grade C, 1 grade D). 9 use cases are practitioner or in-house side (01 to 08 and 20) and 11 are tax-authority side (09 to 19).
 
 ## 2. Use cases
 
@@ -196,7 +196,7 @@
   change_scope: step
   runtime_class: shared-team-skills
   maturity: announced
-  problem: "Authorities now use technology to review documentation. EY's global TP controversy leader puts it as 'documentation prepared today will be reviewed by the technology of tomorrow'. Inconsistencies between files and public data can invite challenge."
+  problem: "Authorities now use technology to review documentation. EY's Global International Tax and Transactions Services Controversy Leader puts it as 'documentation prepared today will be reviewed by the technology of tomorrow'. Inconsistencies between files and public data can invite challenge."
   solution: "EY describes TP Doc Insights, a GenAI tool that identifies discrepancies between existing TP documentation and publicly available data so teams can address areas likely to draw attention. KPMG says GenAI can help in TP controversy by reviewing historical documents and formulating responses."
   outcomes:
     - lever: risk
@@ -333,7 +333,7 @@
     - "Circular 230 §§10.22, 10.35, 10.36, 10.37 and AICPA SSTS 1.4 place responsibility for accuracy on the practitioner (IRS-OPR-2026; TAXCT-CLINCO-2026)."
     - "Tax Court has no Rule 11 equivalent, but counsel are bound by ABA Model Rules under Tax Court Rule 201(a); IRC §6673 allows penalties up to $25,000 for frivolous or groundless positions (TAXCT-CLINCO-2026; BBG-TAXCT-2026)."
     - "Judge Holmes said a rule requiring certification that AI was not used might not make sense because there are legitimate uses, and the court is 'feeling our way in the dark' (BBG-TAXCT-2026, 'Feeling Our Way')."
-    - "The IRS side is not immune: in Khoja v. Commissioner a judge held a 11 March 2026 hearing on an IRS motion that cited a non-existent case and questioned the signing IRS attorney about AI use and safeguards (BBG-TAXCT-2026, 'Protecting Taxpayers')."
+    - "The IRS side is not immune: in Khoja v. Commissioner a judge held a hearing on 11 March 2026 on an IRS motion that cited a non-existent case and questioned the signing IRS attorney about AI use and safeguards (BBG-TAXCT-2026, 'Protecting Taxpayers')."
   human_checkpoints:
     - "Independent verification of every cited authority against authoritative sources before filing."
   role_evolution: "Responsibility stays with the practitioner; firms add supervisory review and documentation (TAXCT-CLINCO-2026, 'Practical risk management')."
@@ -386,7 +386,7 @@
     - "Selection criteria are not published, so practitioners cannot see why a return was chosen."
   human_checkpoints:
     - "TSCPA says humans review AI outputs and make final decisions on audits to pursue (TSCPA-2026); TIGTA did not test this."
-  role_evolution: "Examiners receive pre-scored inventory; EisnerAmper says revenue agents are beginning to get generative AI for drafting IDRs and exam reports (secondary, EISNER-IRSAI-2026)."
+  role_evolution: "EisnerAmper says revenue agents are beginning to get generative AI for drafting IDRs and exam reports (secondary, EISNER-IRSAI-2026)."
   evidence_grade: A
   sources:
     - { ref: TIGTA-2025, title: "The IRS Could Leverage Examination Results in AI Examination Case Selection Models and Improve Processes to Evaluate Performance (2025-308-022)", publisher: Treasury Inspector General for Tax Administration, type: regulator, url: "https://www.tigta.gov/sites/default/files/reports/2025-08/2025308022fr.pdf", date: 2025-05-19, access: full, locator: "Highlights; pp. 3 (no-change rates), 7-8 (SB/SE pilot; LAR and LPC), 13-14 (Recommendation 3)" }
@@ -565,7 +565,7 @@
     - "ATO states adverse decisions affecting taxpayers' rights are made by a human and taxpayers keep a right of review (ATO-AI-2026, 'AI governance')."
   human_checkpoints:
     - "Auditors determine the validity of deduction claims."
-  role_evolution: "Staff receive an AI assistant in place of a 'randomly organised digital shoebox' (ATO-SPEECH-2026). Microsoft Copilot was made available to all ATO staff during 2025."
+  role_evolution: "Staff receive an AI assistant in place of a 'randomly organised digital shoebox' (ATO-SPEECH-2026). The CDO says staff were given much broader access to Microsoft Copilot tools during 2025."
   evidence_grade: B
   sources:
     - { ref: ATO-SPEECH-2026, title: "Speech to Australian Government Data Summit (Andrew Watson, Deputy Commissioner and Chief Data Officer)", publisher: Australian Taxation Office, type: regulator, url: "https://www.ato.gov.au/media-centre/speech-to-australian-government-data-summit", date: 2026-04-22, access: full, locator: "section 'What changed with Generative AI - and what didn't'" }
@@ -866,7 +866,7 @@
 
 ## 5. Sources
 
-Types: regulator 8, professional-body 5, firm 10, vendor 8, press 11, academic 2, conference 3, survey 1, job-posting 1 (49 listed below counting distinct documents; 25 or more opened across at least nine source types).
+45 distinct sources, all opened (some in part, as marked): press 11, regulator 8, firm 8, vendor 7, professional-body 4, conference 3, academic 2, survey 1, job-posting 1. 37 are cited in use cases; the rest are used in the notes or routed.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
