@@ -63,7 +63,8 @@
     Central technology and methodology teams take on certification as a defined role: methodology teams sign off
     in the certification record at most of the six UK firms (FRC-ATT-2025), and the FRC asks methodology staff
     to understand tool limits so guidance matches what outputs can support (FRC-GENAI-2026, p. 40). Deloitte UK
-    has created a dedicated board for technology risk (DELOITTE-UKTR-2026).
+    has created a dedicated board for technology risk (DELOITTE-UKTR-2026). ICAEW notes the FRC guidance is
+    aimed mainly at system managers at audit firms (ICAEW-FRCVIEW-2026).
   evidence_grade: B
   sources:
     - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "pp. 26, 30-33 (certification, recertification), p. 40"}
@@ -75,6 +76,7 @@
     - {ref: IAASB-TQM-2026, title: "Technology Quality Management Roundtables: Outcomes and Next Steps", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-02/IAASB-Technology-Quality-Management-Roundtables-Feedback.pdf", date: "2026-02-10", access: full, locator: "p. 4 (emerging practices)"}
     - {ref: NFRA-CAALLEY-2026, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement (press report of the NFRA staff series; the NFRA document was not opened)", publisher: "CAalley.com", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24", access: full, locator: "section 'Governance must come before deployment'"}
     - {ref: CPAB-EVOLVING-2025, title: "The evolving use of technology in the audit (CPAB Exchange)", publisher: "Canadian Public Accountability Board", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2025-evolving-use-of-technology-in-the-audit-en.pdf", date: "2025-12-16", access: full, locator: "Firm and network-level considerations, p. 3"}
+    - {ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC guidance on generative and agentic AI? (viewpoint)", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "intro and 'Smaller firms' sections"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-01, practice-04 (recertification triggers), discourse-01 and governance-01. Grade B
@@ -110,7 +112,8 @@
     samples (NFRA-CAALLEY-2026). The FRC sets out options: curate a narrow range of use cases or leave staff to
     judge; control prompts centrally, require prompts from a library validated in certification, or let teams
     write their own. Library prompts may have been validated but cannot match the diversity of bespoke prompts
-    (FRC-GENAI-2026, pp. 35-36).
+    (FRC-GENAI-2026, pp. 35-36). Deloitte's Martin Brown described firms working out how to approve tools and
+    how to balance expectations between central functions and engagement teams (ICAEW-POD-2025).
   outcomes:
     - {lever: risk, description: "No measured outcome. Some firms barred GenAI in audit or attest procedures; others allowed it for administrative tasks and initial drafts", figure: "some firms (count not given)", measures: "audit firms in PCAOB staff outreach, mainly larger firms; count not stated", provenance: independent, source_ref: PCAOB-GENAI-2024}
     - {lever: risk, description: "Deloitte UK lists risk thresholding and triage among its responses to a rated GenAI risk; no result published", figure: "none published", measures: "n/a", provenance: self-reported, source_ref: DELOITTE-UKTR-2025}
@@ -141,6 +144,7 @@
     - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "pp. 9, 35-36"}
     - {ref: FRC-ATT-2025, title: "Thematic Review: Certification of Automated Tools and Techniques (PDF; an AI-converted HTML version is at https://www.frc.org.uk/docs/8383/html/)", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://www.frc.org.uk/documents/8383/Thematic_Review_on_the_Certification_of_Automated_Tools_and_Techniques.pdf", date: "2025-06-26", access: full, locator: "Certification and implementation: application of certification processes"}
     - {ref: IRBA-SPA11-2025, title: "Staff Audit Practice Alert 11: integration of generative AI into the audit process", publisher: "Independent Regulatory Board for Auditors (South Africa)", type: regulator, url: "https://www.irba.co.za/upload/Staff%20Practice%20Alert%2011%20Sep%202025.pdf", date: "2025-09", access: full, locator: "section B, paras 14-21"}
+    - {ref: ICAEW-POD-2025, title: "How should audit firms use AI? (Beyond Finance podcast transcript; recorded 7 Nov 2025)", publisher: "ICAEW", type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: "2025-11-11", access: full, locator: "transcript, Brown answer after the McConnon remarks on objectives"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-03, governance-02 and discourse-19 (idea: curated use-case policy and prompt library,
@@ -187,6 +191,7 @@
     - "Banning tools without approved alternatives pushes use out of sight; TRI says establishing governance, approving secure tools and giving usage guidance are essential (TRI-FOP-2026)"
     - "AFM asks firms to ensure confidential client data used as tool input is processed, transferred and stored safely (AFM-12BB-2025, p. 3)"
     - "Botic's lifecycle expectations are one PCAOB board member's view, not Board policy (PCAOB-BOTICSF-2026)"
+    - "PCAOB staff heard in 2024 that some firms did not allow GenAI for audit or attest procedures, citing data privacy and reliability (PCAOB-GENAI-2024, p. 4)"
   human_checkpoints:
     - "Escalation when an unapproved or outdated tool is found in use"
     - "Exceptions approved by a named function"
@@ -203,13 +208,18 @@
     - {ref: IAASB-TQMPLAN-2026, title: "Technology Quality Management Workstream: Action Plan to Develop Non-Authoritative Material (Agenda Item 3-F, approved March 2026)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/0260316-Agenda-Item-3F-Approved-Tech-QM-Action-Plan.pdf", date: "2026-03", access: full, locator: "para 25(c); Table 1"}
     - {ref: TRI-FOP-2026, title: "Future of Professionals Report 2026: what tax and audit firm leaders should be prioritizing now (summary page; undated, 2026-07 per the landscape)", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: "2026-07", access: full, locator: "Universal priorities: 'Govern the tools being used'"}
     - {ref: AFM-12BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "Autoriteit Financiele Markten (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "p. 3"}
+    - {ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative AI in Audits and Financial Reporting", publisher: "PCAOB (staff)", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "p. 4"}
+    - {ref: DELOITTE-UKTR-2026, title: "Deloitte UK annual review 2026: Audit transparency report (year ended 31 May 2026)", publisher: "Deloitte LLP (UK)", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2026/deloitte-uk-annual-review-2026-audit-transparency-report.pdf", date: "2026-09", access: full, locator: "Appendix 5, p. 48; leadership biographies"}
+    - {ref: PREPRINT-AIJGDI-2026, title: "Professional Judgment and AI Governance in Audit and Sustainability Assurance: Public Evidence from the UK Big Four (later published in J. Risk Financial Management 2026, 19(9), 675)", publisher: "Preprints.org", type: academic, url: "https://www.preprints.org/manuscript/202607.1693/v1", date: "2026-07", access: full, locator: "sections 4.2 and 4.3"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-02 (B), discourse-02 (B, capped) and governance-20 (C). Graded C here: the inventory
     and preventive controls are observed by the FRC across six firms without attribution to any one firm, and
-    the evidence covers automated tools generally rather than GenAI. The Deloitte UK board that practice-02
-    relied on is carried in entry 01. The TRI survey is vendor-published and the page is undated (2026-07 per
-    the landscape).
+    the evidence covers automated tools generally rather than GenAI. The Deloitte UK Technology Controls Board
+    and Chief AI Officer (DELOITTE-UKTR-2026) and the preprint's account of EY's global committee and Deloitte's
+    use-case approval and risk thresholding (PREPRINT-AIJGDI-2026), on which practice-02 relied, concern
+    approval rather than inventory and are carried in entries 01 and 08. The TRI survey is vendor-published and
+    the page is undated (2026-07 per the landscape).
 
 - id: assurance-quality-management-04
   title: "Evaluation sets, benchmarks and parallel running before and during limited deployment of an AI tool"
@@ -363,6 +373,7 @@
     - "Third-party assurance on a component may inform testing, but the firm may still test it for the use case (FRC-GENAI-2026, p. 32)"
     - "ICAEW's technology faculty chair says the FRC guidance gives little on questions to put to vendors, although most audit AI tools are features added to existing products (ICAEW-FRCVIEW-2026)"
     - "IAASB stakeholders raised an uneven playing field: larger firms are better able than small and medium practices to govern such tools (IAASB-TQMPLAN-2026, para 11)"
+    - "The AFM says some larger firms lead on policies and risk management and there is room for improvement at all firms (AFM-2025)"
   human_checkpoints:
     - "Procurement, information security and methodology approve the vendor before onboarding"
     - "Firm re-approves the tool when the vendor changes the model"
@@ -383,6 +394,7 @@
     - {ref: ICAEW-POD-2025, title: "How should audit firms use AI? (Beyond Finance podcast transcript; recorded 7 Nov 2025)", publisher: "ICAEW", type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: "2025-11-11", access: full, locator: "transcript, final third (off-the-shelf solutions)"}
     - {ref: PCAOB-BOTICSF-2026, title: "Smaller Audit Engagements, Significant Impact: Audit Quality, Investor Protection, and the Future of the Profession (speech, G. Botic; read via text mirror)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/smaller-audit-engagements--significant-impact--audit-quality--investor-protection--and-the-future-of-the-profession", date: "2026-09-22", access: full, locator: "section 'Expanding Use of Technology in Audits'"}
     - {ref: IAASB-TQMPLAN-2026, title: "Technology Quality Management Workstream: Action Plan to Develop Non-Authoritative Material (Agenda Item 3-F, approved March 2026)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/0260316-Agenda-Item-3F-Approved-Tech-QM-Action-Plan.pdf", date: "2026-03", access: full, locator: "paras 11, 16, 25"}
+    - {ref: AFM-2025, title: "12 building blocks for controlled use of advanced (Gen)AI auditing tools (press release)", publisher: "Autoriteit Financiele Markten (Netherlands)", type: regulator, url: "https://www.afm.nl/en/sector/actueel/2025/dec/pb-12-bouwstenen-beheerst-gebruik-audit-tooling", date: "2025-12-11", access: full, locator: "press release text"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-11, governance-06 and discourse-16 (idea: proportionate governance for small and
@@ -761,7 +773,11 @@
     FRC-SANDBOXPAGE-2026; ICAS-SANDBOX-2026). IFIAR encourages early engagement with local regulators and IFIAR
     where technology may significantly alter the nature of audit work (IFIAR-TTF-2026, p. 4). The
     inspection-ready file draws on the FRC's split of documentation, which keeps a tool's purpose, development,
-    certification and training in a central record (FRC-AIAUDIT-2025, pp. 13-15).
+    certification and training in a central record (FRC-AIAUDIT-2025, pp. 13-15). PCAOB staff said in December
+    2024 they would continue to inquire about the use of technology in audit procedures (PCAOB-PRIORITIES-2024).
+    The FRC's head of assurance technology said an overarching goal of its AI guidance was to show the regulator
+    is fine in principle with firms using AI, provided it is done sensibly, and that the FRC works with firm
+    representatives on a working group (ICAEW-POD-2025).
   outcomes:
     - {lever: risk, description: "CPAB 2025 inspections: tools used as the primary source of evidence with limited validation of data inputs in some instances; one tool where testing was limited to flagged items", figure: "no count published", measures: "instances in CPAB's 2025 inspections; number and denominator not stated", provenance: independent, source_ref: CPAB-EVOLVING-2025}
     - {lever: risk, description: "No outcome published; sandbox participants not named", figure: "none", measures: "no measure published", provenance: independent, source_ref: FRC-SANDBOXPAGE-2026}
@@ -771,7 +787,7 @@
     - "Ability to explain a tool and how it was validated (PCAOB-BOTICSF-2026), and a single owner for regulator queries"
   risks_and_guardrails:
     - "Sandbox participation gives no approval, endorsement or compliance guarantee (FRC-SANDBOXPAGE-2026)"
-    - "PCAOB staff views are not Board policy (DART-SECPCAOB-2025)"
+    - "PCAOB staff views are not Board policy (DART-SECPCAOB-2025); the July 2024 staff spotlight on GenAI is not a binding rule (FIELDGUIDE-PCAOB-2026)"
     - "Regulators' stated focus includes how firms' quality control addresses AI at firm level as well as what appears in selected files (CAALLEY-PCAOBPE-2025)"
     - "The FRC says its March 2026 guidance is not a response to identified quality deficiencies (FRC-GENAINEWS-2026)"
   human_checkpoints:
@@ -796,6 +812,9 @@
     - {ref: CPAB-EVOLVING-2025, title: "The evolving use of technology in the audit (CPAB Exchange)", publisher: "Canadian Public Accountability Board", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2025-evolving-use-of-technology-in-the-audit-en.pdf", date: "2025-12-16", access: full, locator: "pp. 1-2"}
     - {ref: PCAOB-BOTICSF-2026, title: "Smaller Audit Engagements, Significant Impact: Audit Quality, Investor Protection, and the Future of the Profession (speech, G. Botic; read via text mirror)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/smaller-audit-engagements--significant-impact--audit-quality--investor-protection--and-the-future-of-the-profession", date: "2026-09-22", access: full, locator: "section 'Expanding Use of Technology in Audits'"}
     - {ref: FRC-GENAINEWS-2026, title: "Innovative new guidance supports audit firm adoption of emerging AI technologies (news release)", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/", date: "2026-03-30", access: full, locator: "news release"}
+    - {ref: PCAOB-PRIORITIES-2024, title: "Spotlight: Staff Priorities for 2025 Inspections and Interactions With Audit Committees", publisher: "PCAOB (staff)", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2025-priorities-spotlight_v3.pdf", date: "2024-12", access: full, locator: "pp. 6-7"}
+    - {ref: ICAEW-POD-2025, title: "How should audit firms use AI? (Beyond Finance podcast transcript; recorded 7 Nov 2025)", publisher: "ICAEW", type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: "2025-11-11", access: full, locator: "transcript, McConnon answer on objectives for the guidance"}
+    - {ref: FIELDGUIDE-PCAOB-2026, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026-08-06", access: full, locator: "section 'What the PCAOB Spotlight says about GenAI in audits'"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from practice-21, discourse-09 and governance-19 (all C). The Gunia remarks reach us through press
@@ -824,12 +843,13 @@
     Idea raised by regulators. The SEC's chief accountant said the SEC asks auditors how they use AI to improve
     engagement-level audit quality and how they use AI to monitor their system of quality control
     (KPMG-HOHL-2026). NFRA's principles, as reported, call for root-cause analysis of technology-related
-    findings to feed the annual evaluation of the system of quality management (NFRA-CAALLEY-2026). No firm
-    example was found.
+    findings to feed the annual evaluation of the system of quality management (NFRA-CAALLEY-2026). The FRC
+    noted that firms' tool use may sometimes be captured in other activities such as root-cause analysis,
+    without saying AI does the analysis (FRC-ATT-2025). No firm example was found.
   outcomes:
     - {lever: quality, description: "none published", figure: "none", measures: "no measure published", provenance: independent, source_ref: KPMG-HOHL-2026}
   prerequisites:
-    - "Structured inspection, internal-review and engagement data, and a defined root-cause taxonomy"
+    - "Structured inspection, internal-review and engagement data, and a defined root-cause taxonomy (PCAOB-BOTICIOWA-2026)"
   risks_and_guardrails:
     - "IFIAR's 2025 survey shows no AI-specific category in firm-wide quality-management findings (IFIAR-SURVEY-2026, Appendix A)"
     - "IFIAR says inspection results do not provide a complete measure of audit quality (IFIAR-SURVEY-2026, p. 2)"
@@ -847,6 +867,8 @@
     - {ref: KPMG-HOHL-2026, title: "Q&A with Kurt Hohl, SEC chief accountant", publisher: "KPMG US Board Leadership Center", type: firm, url: "https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html", date: "2026-05-27", access: full, locator: "answer on AI and quality control monitoring"}
     - {ref: NFRA-CAALLEY-2026, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement (press report of the NFRA staff series; the NFRA document was not opened)", publisher: "CAalley.com", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24", access: full, locator: "section 'Audit documentation and training to change'"}
     - {ref: STARLING-IMC-2026, title: "Modernizing US PCAOB Audit Inspections", publisher: "Starling Insights", type: press, url: "https://insights.starlingtrust.com/content/observations/modernizing-us-pcaob-audit-inspections", date: "2026-09-01", access: full, locator: "paragraph on technology"}
+    - {ref: FRC-ATT-2025, title: "Thematic Review: Certification of Automated Tools and Techniques (PDF; an AI-converted HTML version is at https://www.frc.org.uk/docs/8383/html/)", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://www.frc.org.uk/documents/8383/Thematic_Review_on_the_Certification_of_Automated_Tools_and_Techniques.pdf", date: "2025-06-26", access: full, locator: "Monitoring the use and impact of ATTs"}
+    - {ref: PCAOB-BOTICIOWA-2026, title: "The Role of the Financial Statement Auditor, and Thoughts on the PCAOB Inspection Process and Its Contemplated Transformation (speech, G. Botic; read via text mirror)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/the-role-of-the-financial-statement-auditor--and-thoughts-on-the-pcaob-inspection-process-and-its-contemplated-transformation", date: "2026-10-05", access: full, locator: "section 'The PCAOB: Inspection-related Developments'"}
   last_reviewed: "2026-10-16"
   notes: >-
     Idea. Merged from practice-09, discourse-18 and governance-17 (all D). Hohl asked the question; no firm
@@ -1461,7 +1483,8 @@
     change as AI is integrated (IFIAR-TTF-2025, p. 8). The Thomson Reuters Institute's firm-leader paper says
     firms must ensure junior staff still get structured development and supervision before automation erodes
     these opportunities (TRI-FOP-2026). CPAB asks firms how to develop junior auditors' critical thinking
-    (CPAB-EVOLVING-2025, p. 3).
+    (CPAB-EVOLVING-2025, p. 3). Botic added critical thinking and communication to the attributes he wants
+    entrants to build (PCAOB-BOTICIOWA-2026).
   outcomes:
     - {lever: risk, description: "none published", figure: "none", measures: "no measure published", provenance: self-reported, source_ref: BI-PWC-2025}
     - {lever: quality, description: "Baseline, not an AI measure: findings on failure to establish policies for sufficient, timely engagement supervision and review", figure: "31 findings in 2025; 10 in 2024", measures: "number of findings (not firms) reported to IFIAR in the theme", provenance: independent, source_ref: IFIAR-SURVEY-2026}
@@ -1498,6 +1521,7 @@
     - {ref: IAASB-TQMPLAN-2026, title: "Technology Quality Management Workstream: Action Plan to Develop Non-Authoritative Material (Agenda Item 3-F, approved March 2026)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/0260316-Agenda-Item-3F-Approved-Tech-QM-Action-Plan.pdf", date: "2026-03", access: full, locator: "para 10"}
     - {ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Table A.3"}
     - {ref: PODWISE-ACCTPOD-2026, title: "The Accounting Podcast episode summary (AI-generated Podwise summary; audio not heard)", publisher: "The Accounting Podcast via Podwise", type: podcast, url: "https://podwise.ai/episodes/9035550", date: "2026-10-01", access: full, locator: "episode summary"}
+    - {ref: PCAOB-BOTICIOWA-2026, title: "The Role of the Financial Statement Auditor, and Thoughts on the PCAOB Inspection Process and Its Contemplated Transformation (speech, G. Botic; read via text mirror)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/the-role-of-the-financial-statement-auditor--and-thoughts-on-the-pcaob-inspection-process-and-its-contemplated-transformation", date: "2026-10-05", access: full, locator: "section 'Attributes of an Effective Financial Statement Auditor'"}
   last_reviewed: "2026-10-16"
   notes: >-
     Merged from discourse-08 (C) and governance-22 (idea, D). PwC's statement is a forward-looking claim

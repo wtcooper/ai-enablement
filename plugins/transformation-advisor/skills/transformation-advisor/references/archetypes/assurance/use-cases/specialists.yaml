@@ -1,0 +1,580 @@
+# Use cases: assurance / specialists
+# Synthesised 2026-10-17 from the wave 1 landscape scan and the combined specialists deep dive
+# (research/runs/wave1/assurance-specialists-combined.md). Low-evidence module: no source states that
+# audit-employed valuation, actuarial, tax, forensic or environmental specialists use AI on audits. Most entries
+# are ideas (grade D) discussed by a regulator, standard-setter, professional body, practitioner or researcher.
+# The two grade-B entries are adjacent: valuation advisory and tax advisory practices, not specialists on audits.
+# Source refs are canonical keys; where a sibling module already holds the same document, its key is reused.
+# Not repeated here (see the sibling entries): algorithm aversion to AI evidence on complex estimates
+# (assurance-substantive-testing-19), authenticating AI-fabricated evidence (assurance-substantive-testing-04),
+# specialist reviewers of firm AI output (assurance-quality-management-18).
+
+- id: assurance-specialists-01
+  title: Valuation analysts use AI to gather data, format it and build routine model components
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [data-reporting, research-synthesis]
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Valuation analysts spend many hours importing filings data, adjusting multiples and benchmarking against
+    guideline public companies before judgment work begins [BVR-BIGFOUR-2025].
+  solution: >-
+    Big Four valuation practice leaders told the ASA Spring Fair Value Conference in New York that AI is used
+    primarily to automate data gathering, formatting and routine modelling, so analysts can focus on
+    interpretation and judgment. They described AI or RPA tools handling tasks such as importing 10-K data,
+    adjusting multiples and benchmarking against guideline public companies [BVR-BIGFOUR-2025]. A 2026 BVR report
+    on the same conference series says Big Four leaders described AI as accelerating valuation workflows while
+    changing how juniors are trained [BVR-PANEL-2026].
+  outcomes:
+    - { lever: capacity, description: "Leaders said routine tasks that took hours of manual effort are increasingly handled by AI or RPA tools; no time or cost figures were given", figure: "none published", measures: "not applicable; qualitative panel statement", provenance: self-reported, source_ref: BVR-BIGFOUR-2025 }
+  prerequisites:
+    - "Proprietary or approved platforms: panelists said EY is developing a platform (EYQ) because firms do not see public tools as suitable for confidential work [BVR-BIGFOUR-2025]"
+  risks_and_guardrails:
+    - "Junior staff may miss the learning that came from building models and digging into source data; one panelist said they may miss key learning if they rely on AI results without understanding inputs and assumptions [BVR-BIGFOUR-2025]"
+    - "Panelists said final valuations still require human oversight and professional skepticism [BVR-BIGFOUR-2025]"
+  human_checkpoints:
+    - "Analysts interpret outputs and validate AI-generated results; final valuations stay with people [BVR-BIGFOUR-2025]"
+  role_evolution: >-
+    Junior staff move toward interpreting outputs, exercising judgment and validating AI-generated results
+    [BVR-BIGFOUR-2025]. A 2026 panel said firms may need to be more intentional about training and mentorship as
+    the apprenticeship model evolves, and some panelists saw juniors reaching substantive analysis sooner
+    [BVR-PANEL-2026].
+  evidence_grade: B
+  sources:
+    - { ref: BVR-BIGFOUR-2025, title: "Big Four investing heavily in AI", publisher: "Business Valuation Resources (BVWire)", type: press, url: "https://www.bvresources.com/articles/bvwire/big-four-investing-heavily-in-ai", date: "2025-05-21", access: full, locator: "whole article (panelists from PwC, Deloitte, KPMG, EY; moderator from Kroll)" }
+    - { ref: BVR-PANEL-2026, title: "Big Four panel: AI is reshaping the valuation talent pipeline", publisher: "Business Valuation Resources (BVWire)", type: press, url: "https://www.bvresources.com/articles/bvwire/big-four-panel-ai-is-reshaping-the-valuation-talent-pipeline", date: "2026-05-20", access: full, locator: "whole article" }
+    - { ref: BVR-ASA2026-2026, title: "Special Conference Report: Extended Coverage of the ASA Spring Fair Value Conference, May 7, 2026 (teaser only)", publisher: "Business Valuation Resources", type: conference, url: "https://www.bvresources.com/articles/bvresearch/special-conference-report-extended-coverage-of-the-asa-spring-fair-value-conference-may-7-2026", date: "2026-05", access: search-only, locator: "title and teaser (conference date only)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-01; combined-03 folded in here as a note. Grade B is capped by adjacency: the panelists spoke
+    for Big Four valuation advisory practices, neither article says audit-employed valuation specialists use these
+    tools, and no named audit engagement is described. Such providers are often management's experts, whose work
+    auditors evaluate under ISA 500 or AS 1105 Appendix A. The same panel said AI tools are 'being developed' for
+    client deliverables such as automated sensitivity analyses, dashboards and custom scenario-modelling portals
+    [BVR-BIGFOUR-2025]; no use is evidenced, so it is not a separate entry. The 2025-05-21 date comes from a search
+    extract; the page itself shows no date. BVR's 2026 conference was held 7 May 2026 [BVR-ASA2026-2026]. Pricing:
+    panelists rejected the idea that AI efficiencies should lower billing rates and expect value-based pricing to
+    evolve [BVR-BIGFOUR-2025].
+
+- id: assurance-specialists-02
+  title: Valuation providers build third-party AI analytics into their methodology (large-data analysis, peer and transaction recommendations)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [data-reporting, research-synthesis, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Fund managers are asked for more frequent, faster and more traceable valuations amid investor scrutiny and
+    tougher audit expectations, often without matching budget or headcount [COHNREZNICK-VALUATION-2026].
+    Selecting comparable companies and transactions is a manual, judgment-heavy step in valuation work
+    [VALUTICO-APR26-2026].
+  solution: >-
+    CohnReznick announced on 26 Mar 2026 that its Valuation Advisory practice is incorporating 73 Strings'
+    valuation analytics into its established methodologies to analyse large data sets, increase consistency across
+    models and give deeper insight into valuation drivers, across private equity, private credit, public company
+    and complex asset classes [COHNREZNICK-VALUATION-2026; CPAPA-COHNREZNICK-2026]. Valutico's April 2026 release
+    adds continuous AI-powered recommendations to improve peer selection, transactions and qualitative
+    assessments, and expanded AI capabilities for financial structuring and reporting [VALUTICO-APR26-2026].
+    Valutico bought the AI specialist Paraloq Analytics on 24 Jun 2025 to integrate its AI into the platform
+    [VALUTICO-PARALOQ-2025].
+  outcomes:
+    - { lever: quality, description: "CohnReznick says the analytics support faster, more transparent and more defensible valuations; no measurements were published", figure: "none published", measures: "not applicable; firm claim", provenance: self-reported, source_ref: COHNREZNICK-VALUATION-2026 }
+    - { lever: speed, description: "Valutico says the features help users save time and produce more efficient, data-driven valuations; no figures published", figure: "none published", measures: "not applicable; vendor claim", provenance: vendor-published, source_ref: VALUTICO-APR26-2026 }
+  prerequisites:
+    - "A third-party analytics platform (73 Strings) integrated into existing valuation methodology [COHNREZNICK-VALUATION-2026]"
+    - "Vendor platform with uploaded financial statements and supporting documents [VALUTICO-APR26-2026]"
+  risks_and_guardrails:
+    - "CohnReznick says it keeps independence, professional judgment and oversight by its valuation professionals [COHNREZNICK-VALUATION-2026]"
+    - "IVS requires the valuer to assess and select data and inputs using professional judgment, so recommendations do not remove the valuer's responsibility [IVSC-AI-2025]"
+  human_checkpoints:
+    - "Valuation professionals retain judgment on complex inputs, scenario analysis and conclusions [COHNREZNICK-VALUATION-2026]"
+    - "Valuer reviews and selects peers and inputs [IVSC-AI-2025]"
+  role_evolution: >-
+    CohnReznick says the technology lets teams spend more time on complex inputs, scenario analysis and defensible
+    conclusions [COHNREZNICK-VALUATION-2026].
+  evidence_grade: C
+  sources:
+    - { ref: COHNREZNICK-VALUATION-2026, title: "CohnReznick's Valuation Advisory practice enhances valuation services through advanced analytics technology", publisher: "CohnReznick", type: firm, url: "https://www.cohnreznick.com/insights/cohnreznicks-valuation-advisory-enhanced-through-ai-analytics/", date: "2026-03-26", access: full, locator: "press release body" }
+    - { ref: CPAPA-COHNREZNICK-2026, title: "CohnReznick's Valuation Advisory Practice Enhances Valuation Services", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/03/24/cohnreznicks-valuation-advisory-practice-enhances-valuation-services/180187/", date: "2026-03-24", access: full, locator: "article body" }
+    - { ref: VALUTICO-APR26-2026, title: "April 2026 Masterclass: Powering Smarter, More Connected Valuations", publisher: "Valutico", type: vendor, url: "https://help.valutico.com/en/articles/15773327-april-2026-masterclass-powering-smarter-more-connected-valuations", date: "2026-07-01", access: full, locator: "webinar description" }
+    - { ref: VALUTICO-PARALOQ-2025, title: "Valutico Acquires AI Innovator Paraloq Analytics to Revolutionize Private Company Analysis", publisher: "Valutico", type: vendor, url: "https://valutico.com/valutico-acquires-paraloq-analytics/", date: "2025-06-24", access: full, locator: "press release body" }
+    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "p4 (IVS 104 quotation)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from combined-02 (CohnReznick, grade C, announced) and combined-04 (Valutico, grade C, announced): both
+    describe a valuation provider adding vendor AI analytics inside its valuation workflow. Pattern 'other': AI
+    analytics embedded in a valuation methodology (combined-04 had used research-brief for the peer-recommendation
+    part). Graded C: an announcement and a vendor product description with no usage detail. CohnReznick is a
+    valuation provider to fund clients; in an audit it would typically be management's expert, and the release
+    itself cites 'tougher audit expectations'. The firm's release dates from 26 Mar 2026; trade press ran it 24-25
+    Mar. No financial terms of the 73 Strings arrangement were found. The Valutico site lists an 'Audit / Tax /
+    Accounting' industry page, but no named audit-firm customer or use by auditor's specialists was found.
+
+- id: assurance-specialists-03
+  title: Valuers use GenAI to draft report sections such as market commentary, and some firms automate report writing
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    Valuation reports contain narrative sections (market commentary, descriptions) that take time to write
+    [IVSC-AI-2025].
+  solution: >-
+    The IVSC says AI is already frequently used by some valuers to assist report writing, through ChatGPT or other
+    publicly available AI for parts such as market commentary, and that in other cases report writing may be a
+    fully automated process within the firm [IVSC-AI-2025].
+  outcomes:
+    - { lever: speed, description: "none published", figure: "none published", measures: "not applicable; standard-setter observation without named organizations", provenance: independent, source_ref: IVSC-AI-2025 }
+  prerequisites:
+    - "Valuer keeps control of content: materiality and relevance of descriptions, verified data sources, unbiased and accurate facts [IVSC-AI-2025]"
+  risks_and_guardrails:
+    - "Open-source or some closed-source AI without safeguards may pose client-confidentiality risks and could breach data-protection laws or non-disclosure agreements [IVSC-AI-2025]"
+    - "The IVSC sees transparency as a core principle: valuers should state whether, how and why AI was used in the scope of work or documentation [IVSC-AI-2025]"
+  human_checkpoints:
+    - "Valuer verifies data sources and confirms facts before issuing the report [IVSC-AI-2025]"
+  role_evolution: "Not described in the source."
+  evidence_grade: C
+  sources:
+    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "pp10-12 (IVS 106 documentation and reporting; transparency; data and inputs)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-05. Graded C because the IVSC does not name any organization or give a measure. The IVSC reports
+    that it is aware of valuers 'knowingly or unknowingly' using AI elements (p10), which is itself a risk signal
+    for auditors relying on valuation reports from management's experts.
+
+- id: assurance-specialists-04
+  title: AI-assisted quality-control review of valuation reports (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: >-
+    Valuation reports must use the correct basis of value and be consistent internally, and quality controls are
+    manual [IVSC-AI-2025].
+  solution: >-
+    The IVSC paper says AI and other technology could be used in the valuation quality-control process, to review
+    valuation reports for the correct basis of value and for inconsistencies, and to check that the scope of work
+    contains all relevant elements [IVSC-AI-2025]. The IVSC's January 2026 draft would add a new quality-controls
+    chapter (IVS 107) and AI requirements across several chapters [IVSC-IVSED-2026].
+  outcomes:
+    - { lever: quality, description: "none published", figure: "none published", measures: "not applicable; idea", provenance: independent, source_ref: IVSC-AI-2025 }
+  prerequisites:
+    - "Valuation quality-control procedures that an AI check can sit inside (IVS 100) [IVSC-AI-2025]"
+  risks_and_guardrails:
+    - "The IVSC says IVS may need revising so quality controls include review and challenge of AI-based work [IVSC-AI-2025]"
+  human_checkpoints:
+    - "Valuer or reviewer remains responsible for the report [IVSC-AI-2025]"
+  role_evolution: "Not described in the source."
+  evidence_grade: D
+  sources:
+    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "p8 (IVS 100, 101, 102 boxes); pp13-14 (quality control)" }
+    - { ref: IVSC-IVSED-2026, title: "International Valuation Standards: Summary and Consultation Questions (IVS Exposure Draft, January 2026)", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_", date: "2026-01", access: full, locator: "pp4-5 (summary of proposed changes); p13 (consultation questions)" }
+  last_reviewed: "2026-10-17"
+  notes: "From combined-06. Idea (label: idea). The IVSC describes it as a possibility, not a deployment. No named user found."
+
+- id: assurance-specialists-05
+  title: Agents build complete valuation or financial models, with analysts supplying and reviewing assumptions (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: step
+  runtime_class: background-agent
+  maturity: emerging
+  problem: >-
+    Building a full valuation model is slow, and the judgment sits in company-specific assumptions
+    [ARXIV-GAUGE-2026].
+  solution: >-
+    Researchers report that language-model agents can now construct complete financial models, and introduce
+    GAUGE, a benchmark built from 1,001 professional valuations spanning 922 companies to grade them
+    [ARXIV-GAUGE-2026].
+  outcomes:
+    - { lever: quality, description: "Current agents are far better at constructing financial models than at deriving the company-specific assumptions that drive valuation, a gap that persists after fine-tuning", figure: "median score 0.33", measures: "median score when financial models built by different professional analysts for the same company are graded against one another under standard tolerances, which the authors use to show single-reference grading confounds disagreement with error", provenance: independent, source_ref: ARXIV-GAUGE-2026 }
+  prerequisites:
+    - "Evaluation sets that tolerate legitimate professional disagreement instead of a single expert answer [ARXIV-GAUGE-2026]"
+  risks_and_guardrails:
+    - "Agents may build mechanically sound models with weak assumptions, so assumption review is the control point [ARXIV-GAUGE-2026]"
+  human_checkpoints:
+    - "Analyst supplies and challenges company-specific assumptions [ARXIV-GAUGE-2026]"
+  role_evolution: "Not described in the source."
+  evidence_grade: D
+  sources:
+    - { ref: ARXIV-GAUGE-2026, title: "One Analyst Is Not Ground Truth: Grading Agent-Built Financial Models Against Observed Professional Practice", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.24889", date: "2026-07-27", access: full, locator: "abstract" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-07. Idea (label: idea). Graded D because no deployment was found, even though the benchmark gives
+    an independent measurement. Abstract only. The only delegate-rung entry in this module. A Reference Global
+    paper on LLM discounted-cash-flow valuation (look-ahead leakage and unsupported factual claims; landscape lead
+    A14, abstract page only) was not reopened.
+
+- id: assurance-specialists-06
+  title: Actuaries use GenAI for analysis and code under model-validation standards (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [expert-judgment, data-reporting]
+  pattern: draft-review-loop
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Actuarial work must meet standards of practice that require explaining methods, justifying assumptions and
+    validating models, which opaque GenAI tools complicate [SOA-GENAI-2026].
+  solution: >-
+    The American Academy of Actuaries paper treats GenAI as a model, so ASOP No. 56 (the US actuarial standard of
+    practice on modeling) applies, and says a result cannot be used without validation [AAA-GENAI-2024]. The SOA's
+    September 2026 guide describes actuarial use cases as human-led with agent support, or agent-led with human
+    support [SOA-GENAI-2026]. A July 2026 benchmark of 12,050 actuarial questions found frontier LLMs strong on
+    standardized knowledge but much weaker on case reasoning, tool-based workflows and jurisdiction-sensitive
+    practice [ARXIV-INSACTBENCH-2026].
+  outcomes:
+    - { lever: quality, description: "Capability boundary: strong on standardized actuarial knowledge, much weaker on long-context case reasoning, spreadsheet and R-code tasks, and jurisdiction-sensitive practice", figure: "none published (abstract gives no scores)", measures: "benchmark of 12,050 Q&A pairs from public exams and sample questions of 16 actuarial associations; nine LLMs and human actuarial experts compared", provenance: independent, source_ref: ARXIV-INSACTBENCH-2026 }
+  prerequisites:
+    - "Validation testing and analysis sufficient to support conclusions (ASOP No. 56) [AAA-GENAI-2024]"
+  risks_and_guardrails:
+    - "The AAA paper says actuaries should refrain from using AI to fill a critical skill or knowledge gap [AAA-GENAI-2024]"
+    - "GenAI results are not always accurate and reproducible, so great care is warranted where explainability matters [AAA-GENAI-2024]"
+    - "The AAA paper asks whether reliance on AI could withstand audit challenge and whether free public tools allow meeting audit requirements [AAA-GENAI-2024]"
+  human_checkpoints:
+    - "Actuary vets and validates AI recommendations before applying them [AAA-GENAI-2024]"
+  role_evolution: >-
+    The AAA paper says actuaries must stay qualified to do the service without AI and encourages interdisciplinary
+    work with AI specialists [AAA-GENAI-2024].
+  evidence_grade: D
+  sources:
+    - { ref: AAA-GENAI-2024, title: "Actuarial Professionalism Considerations for Generative AI", publisher: "American Academy of Actuaries", type: professional-body, url: "https://actuary.org/article/actuarial-professionalism-considerations-for-generative-ai/", date: "2024", access: full, locator: "Part 1 questions; Part 2 practical considerations" }
+    - { ref: SOA-GENAI-2026, title: "Model Governance/Ethics for GenAI Models - Practical Guide and Educational Handbook", publisher: "Society of Actuaries Research Institute", type: professional-body, url: "https://www.soa.org/resources/research-reports/2026/model-gov-ethics-for-gen-ai/", date: "2026-09-23", access: full, locator: "Overview and FAQ (landing page; report PDF not downloaded)" }
+    - { ref: ARXIV-INSACTBENCH-2026, title: "INS-ActBench: A Comprehensive Benchmark for Assessing Professional Actuarial Capability of Large Language Models", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.24273", date: "2026-07-27", access: full, locator: "abstract" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-08. Idea (label: idea). It covers actuaries generally, including management's actuaries whose
+    work auditors evaluate. No named actuarial team deployment was found. The AAA paper's year is from the page
+    ('released earlier this year', reprinted in late 2024); its first release month was not found.
+
+- id: assurance-specialists-07
+  title: Actuarial audit specialists test a client's AI reserving model with benchmarks, explainability techniques and reproducibility checks (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    Black-box reserving models give little visibility of inner workings, so auditors' usual in-model checks
+    (visual inspection of claim development, lapse plots) may no longer work [FORVIS-RESERVING-2025].
+  solution: >-
+    A Forvis Mazars Ireland actuarial director describes ten steps. They include upskilling actuarial audit teams
+    in machine learning, treating model bias, overfitting, data quality and transparency as in-scope risks,
+    benchmarking against traditional reserving methods, testing explainability with global techniques such as
+    surrogate models and local ones such as LIME and SHAP (methods that show which inputs drove a model's
+    output), assessing architecture and hyperparameters, and testing reproducibility [FORVIS-RESERVING-2025].
+  outcomes:
+    - { lever: risk, description: "none published", figure: "none published", measures: "not applicable; practitioner proposal", provenance: self-reported, source_ref: FORVIS-RESERVING-2025 }
+  prerequisites:
+    - "Actuarial audit staff with machine-learning skills [FORVIS-RESERVING-2025]"
+    - "Insurer documentation of code management, model logs and deployment procedures to allow reproducibility [FORVIS-RESERVING-2025]"
+  risks_and_guardrails:
+    - "The author says commonly accepted AI audit standards are even less mature than AI use in reserving [FORVIS-RESERVING-2025]"
+    - "Manual data cleansing and feature engineering are potential sources of management bias and will likely become an audit focus [FORVIS-RESERVING-2025]"
+  human_checkpoints:
+    - "Actuarial audit teams apply expert judgment and professional skepticism about when to bring more sophisticated techniques in [FORVIS-RESERVING-2025]"
+  role_evolution: >-
+    Actuarial audit specialists need machine-learning and coding skills, and the author expects scarcity of that
+    blend to concentrate reliance on a small group of management experts [FORVIS-RESERVING-2025].
+  evidence_grade: D
+  sources:
+    - { ref: FORVIS-RESERVING-2025, title: "Ten steps to help auditors evolve and adapt to AI reserving systems", publisher: "Forvis Mazars (Ireland)", type: firm, url: "https://www.forvismazars.com/ie/en/insights/news-opinions/steps-to-adapt-to-ai-reserving-systems", date: "2025", access: full, locator: "steps 1-10" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-09. Idea (label: idea). Pattern 'other': an audit procedure over a client's AI model (benchmark,
+    explain, reproduce). The page shows no publication date; the year 2025 is an estimate (the article uses the
+    Forvis Mazars name, which postdates 2024), so treat the date as unverified. No firm states it has done this on
+    an engagement. Closest non-AI precedent: a PwC audit where risk-modelling specialists reviewed an
+    expected-credit-loss model, including code reviews of new elements [FRC-ARAQ-2026, p92].
+
+- id: assurance-specialists-08
+  title: Auditor's actuarial specialist builds an independent AI challenger model to test a client's AI reserving model (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: emerging
+  problem: >-
+    If a client's black-box model claims results that traditional methods cannot validate, the auditor has no
+    independent comparison [FORVIS-RESERVING-2025].
+  solution: >-
+    The Forvis Mazars author says using one AI model to challenge another ('black box versus black box') could
+    become commonplace in actuarial audit and could help identify user bias in model selection and design, which
+    requires actuarial audit teams to build coding skills to develop credible algorithms independently
+    [FORVIS-RESERVING-2025].
+  outcomes:
+    - { lever: risk, description: "none published", figure: "none published", measures: "not applicable; practitioner proposal", provenance: self-reported, source_ref: FORVIS-RESERVING-2025 }
+  prerequisites:
+    - "Access to the client's data and model documentation, and independent coding capability in the audit team [FORVIS-RESERVING-2025]"
+  risks_and_guardrails:
+    - "Neural-network models cannot be identically replicated, so the author says teams should aim to reproduce reasonable imitations [FORVIS-RESERVING-2025]"
+  human_checkpoints:
+    - "Specialist judges whether differences between the client's and the challenger model are explained [FORVIS-RESERVING-2025]"
+  role_evolution: "Actuarial audit specialists become model builders as well as reviewers [FORVIS-RESERVING-2025]."
+  evidence_grade: D
+  sources:
+    - { ref: FORVIS-RESERVING-2025, title: "Ten steps to help auditors evolve and adapt to AI reserving systems", publisher: "Forvis Mazars (Ireland)", type: firm, url: "https://www.forvismazars.com/ie/en/insights/news-opinions/steps-to-adapt-to-ai-reserving-systems", date: "2025", access: full, locator: "steps 4-5" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-10. Idea (label: idea). Same source and date caveat as -07. Pattern 'other': an independent
+    challenger model. A related idea for AI-operated controls (re-performing outputs with challenger models) sits
+    in assurance-assurance-over-ai-06.
+
+- id: assurance-specialists-09
+  title: Auditors obtain AI-use disclosures and validation evidence when management's expert uses AI (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    A specialist's work is highly technical and often not entirely transparent to the auditor, who may not have
+    complete access to it [PCAOB-SPECIALISTS-2025]. AI inside an expert's valuation adds opacity.
+  solution: >-
+    The IVSC says valuers should disclose whether, how and why AI was used, in the scope of work or documentation,
+    and must understand and assess any valuation model for fit with its intended use [IVSC-AI-2025]. Its January
+    2026 draft would make documentation of significant AI use mandatory in IVS 106 [IVSC-IVSED-2026]. Auditors
+    already evaluate a company specialist's data, significant assumptions and methods (not by re-performing the
+    specialist's work) [PCAOB-SPECIALISTS-2025], so such disclosures would feed that evaluation.
+  outcomes:
+    - { lever: risk, description: "none published", figure: "none published", measures: "not applicable; idea", provenance: independent, source_ref: IVSC-AI-2025 }
+  prerequisites:
+    - "Valuation standards that require AI-use disclosure; the IVSC draft would take effect 31 Jan 2028 if adopted as proposed, subject to responses [IVSC-IVSED-2026]"
+  risks_and_guardrails:
+    - "Auditor evaluation of company-produced data, external data, assumptions and methods remains required [PCAOB-SPECIALISTS-2025]"
+    - "Neither ISA (UK) 620 nor the PCAOB specialist material read here mentions AI, so the procedure would rest on general requirements [FRC-620STD-2026; PCAOB-SPECIALISTS-2025]"
+  human_checkpoints:
+    - "Engagement partner and team evaluate whether the specialist's work provides sufficient appropriate evidence [PCAOB-SPECIALISTS-2025]"
+  role_evolution: "Not described in the sources."
+  evidence_grade: D
+  sources:
+    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "pp10-12 (transparency; data and inputs; valuation models)" }
+    - { ref: IVSC-IVSED-2026, title: "International Valuation Standards: Summary and Consultation Questions (IVS Exposure Draft, January 2026)", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_", date: "2026-01", access: full, locator: "pp4-5; p10 (effective date); p13 (questions 4-9)" }
+    - { ref: PCAOB-SPECIALISTS-2025, title: "Spotlight: Considerations for Audit Firms Using the Work of Specialists", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf", date: "2025-02", access: full, locator: "p3 (background); p6 (evaluating a company specialist)" }
+    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.caalley.com/intl_cnt/frc/ISA_UK_620_Revised_September_2026.pdf", date: "2026-09-23", access: full, locator: "paras 2(b), 6, A22, A35-A37" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-11. Idea (label: idea). Pattern 'other': evidence request and evaluation over an expert's AI use.
+    The IVSC asks valuers to disclose AI use; no source describes auditors requesting or using that disclosure. The
+    IVS draft's comment period closed 30 Apr 2026, so the final text may differ. Management's experts are handled
+    under ISA (UK) 500 paras A45-A59 and PCAOB AS 1105 Appendix A.
+
+- id: assurance-specialists-10
+  title: Auditors treat a client's significant AI use like complex valuation models and external specialists (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    Clients embed AI in financial reporting while their AI governance is immature: only 6% of audit partners rate
+    AI governance at their largest client as advanced [BOARDMEMBER-CAQ-2026].
+  solution: >-
+    The AICPA practice aid says that when an entity's AI plays a significant role in financial reporting,
+    considerations may be similar to those for entities using external specialists and complex valuation models.
+    If management lacks the understanding needed to take responsibility for the outputs, that may indicate a lack
+    of appropriate skills and competencies [AT-AICPAPA-2026]. The AUASB says auditors need to understand AI
+    applications that produce material information and that restricted access to a third-party AI application's
+    logic, data and assumptions may be a scope limitation if no alternative procedures are possible
+    [AUASB-AI-2025].
+  outcomes:
+    - { lever: risk, description: "Audit partners rate AI governance at their largest client as advanced in a small minority of cases", figure: "6%", measures: "share of audit partners who described the maturity of AI governance at their largest client as advanced, meaning formal frameworks, policies and oversight structures fully in place (46% early stage, 40% developed but incomplete); sample size not stated in the source", provenance: independent, source_ref: BOARDMEMBER-CAQ-2026 }
+    - { lever: risk, description: "Most frequently cited AI-related internal control challenges at the largest client include insufficient in-house AI expertise and thin model documentation", figure: "33% and 26%", measures: "share of audit partners citing insufficient in-house AI expertise and control capability (33%) and insufficient documentation of AI models, assumptions and decision logic (26%) as most significant challenges at their largest client", provenance: independent, source_ref: BOARDMEMBER-CAQ-2026 }
+  prerequisites:
+    - "Auditor understanding of the entity's AI use in the risk-assessment phase [AT-AICPAPA-2026]"
+    - "Access to the AI application's logic, data and assumptions, or suitable alternative procedures [AUASB-AI-2025]"
+  risks_and_guardrails:
+    - "The AICPA practice aid is non-authoritative, and further guidance on risk of material misstatement and audit evidence is promised [AT-AICPAPA-2026]"
+    - "The AUASB says auditors should not over-rely on technology-generated information (automation bias) [AUASB-AI-2025]"
+  human_checkpoints:
+    - "Auditor remains responsible for the audit and the opinion [AICPA-PA-2026]"
+  role_evolution: >-
+    The AICPA says practitioners may need a blend of auditing expertise, AI knowledge, data skills, professional
+    skepticism and specialist support [AICPA-PA-2026].
+  evidence_grade: D
+  sources:
+    - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "acceptance and continuance section; quotation on external specialists and complex valuation models" }
+    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "'Considering an organization's use of AI' bullets" }
+    - { ref: AUASB-AI-2025, title: "Impact of AI on Auditors", publisher: "AUASB", type: regulator, url: "https://auasb.gov.au/publications/impact-of-ai-on-auditors/", date: "2025-07", access: full, locator: "section 'Impact of the use of AI by audited entities'" }
+    - { ref: BOARDMEMBER-CAQ-2026, title: "What Audit Partners Are Seeing On AI And What It Means For Audit Committees", publisher: "Corporate Board Member (CAQ author)", type: survey, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "items 1 and 3 (Spring 2026 Audit Partner Pulse)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-12. Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source
+    documents auditors using specialists this way on engagements. Pattern 'other': applying complex-model and
+    specialist procedures to client AI. The same AICPA analogy appears from other angles in
+    assurance-acceptance-independence-10, assurance-planning-risk-assessment-06 and assurance-assurance-over-ai-01;
+    this entry keeps only the specialists angle. The AICPA practice aid full text is behind a login; its wording
+    here comes from the AICPA release and Accounting Today. The AUASB page address was not recorded exactly in the
+    input; the page was read from a copy saved in the landscape run.
+
+- id: assurance-specialists-11
+  title: AI and data-science experts are engaged as auditor's experts or internal specialists to evaluate client AI (idea)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [expert-judgment, review-assurance]
+  pattern: other
+  ladder: assist
+  change_scope: model
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    ISA 620 and PCAOB specialist material give valuation, actuarial, environmental, legal and tax examples, not AI
+    [FRC-620STD-2026; PCAOB-SPECIALISTS-2025]. Audit teams still need people who can evaluate AI systems.
+  solution: >-
+    ICAN asked the IAASB to expand application-material examples in ISA 620 and ISAE 3000 to refer to AI and
+    machine-learning experts, noting AI experts, data scientists and cybersecurity professionals are increasingly
+    engaged [ICAN-620-2025]. The AICPA says engagement teams may need specialist support [AICPA-PA-2026]. The FRC
+    reports a recent spike in demand for AI specialists across audit and consultancy [FRC-ARAQ-2026].
+  outcomes:
+    - { lever: capacity, description: "Share of Big Four job postings requiring AI expertise rose; this is hiring evidence, not evidence of AI specialists acting as auditor's experts", figure: "nearly 7% in 2025 versus under 2% in 2022", measures: "share of the four firms' job postings that required AI expertise, per an FT analysis as reported by Computerworld; one firm noted a single posting can cover multiple positions", provenance: independent, source_ref: COMPUTERWORLD-FT-2026 }
+  prerequisites:
+    - "Evaluation of the expert's competence, capabilities and objectivity under the revised ISA 620 (effective for periods commencing on or after 15 Dec 2026 in the UK version) [FRC-620STD-2026]"
+  risks_and_guardrails:
+    - "An AI vendor or data-science team that built or tuned the client's system may face the objectivity threats ISA 620 para 9A treats as disqualifying if not reduced to an acceptable level [FRC-620STD-2026]"
+  human_checkpoints:
+    - "Auditor evaluates adequacy of the expert's work for the auditor's purposes [FRC-620STD-2026]"
+  role_evolution: >-
+    The FRC says firms must attract and retain staff for advanced technology, with a recent spike in demand for AI
+    specialists [FRC-ARAQ-2026]. About a third of 54 surveyed US firms said they needed at least one
+    non-traditional skill, led by data analysts, data scientists and IT specialists [CPACOM-ATR-2025].
+  evidence_grade: D
+  sources:
+    - { ref: ICAN-620-2025, title: "Response template, ED of proposed narrow-scope amendments arising from IESBA's Using the Work of an External Expert project (ICAN)", publisher: "Institute of Chartered Accountants of Nigeria", type: professional-body, url: "https://www.iaasb.org/sites/default/files/2025-07/IAASB-Exposure-Draft-Narrow-Scope-Amendments-Experts-Response-Template_0.pdf", date: "2025-07", access: full, locator: "Part B, question 4 'Other matters', item 2 (PDF p11)" }
+    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "'Considering an organization's use of AI' bullet on audit team capabilities" }
+    - { ref: FRC-ARAQ-2026, title: "Annual Review of Audit Quality 2026", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9772/Annual_Review_of_Audit_Quality_2026_2eSTaw8P.pdf", date: "2026-07-22", access: full, locator: "p28 (resourcing and AI specialists)" }
+    - { ref: COMPUTERWORLD-FT-2026, title: "The Big Four accounting firms are now hiring more AI specialists than accountants", publisher: "Computerworld (reporting an FT analysis)", type: press, url: "https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html", date: "2026-05-19", access: full, locator: "whole article" }
+    - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "p20 (new approaches require new skills)" }
+    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.caalley.com/intl_cnt/frc/ISA_UK_620_Revised_September_2026.pdf", date: "2026-09-23", access: full, locator: "paras 6(a), 9, 9A, A1, A19A" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-13. Idea (label: idea). Change scope 'model' because the change is who does the work: a new kind
+    of auditor's expert. IT and AI-system assurance itself belongs to controls-testing and assurance-over-ai; this
+    entry covers only how it touches ISA 620 and specialist use. ISA 620 defines an auditor's expert as an
+    individual or organization, so on the standard's wording an AI tool is not itself an expert
+    [FRC-620STD-2026, para 6(a)]. The 2025 ICAN letter is the only one of 49 readable comment letters that names
+    AI, and the UK final standard shows no such addition. Hiring data is about AI roles generally, not auditor's
+    experts.
+
+- id: assurance-specialists-12
+  title: Auditors use a firm-specific LLM on a complex inventory valuation task (randomized field experiment)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [review-assurance, research-synthesis]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Complex valuation tasks require auditors to produce correct documentation under time pressure
+    [SSRN-LLMAQ-2026].
+  solution: >-
+    A preregistered randomized field experiment gave 100 professional auditors at a global audit firm a complex
+    inventory valuation task, either with the traditional digital tool set or with additional support from a
+    firm-specific LLM [SSRN-LLMAQ-2026].
+  outcomes:
+    - { lever: quality, description: "LLM access significantly improved audit output quality (more formally correct documentation) and reduced task completion time; it did not improve adherence to internal audit guidelines", figure: "none (abstract gives direction only)", measures: "audit output quality and task completion time of 100 auditors with versus without firm-specific LLM access, on one inventory valuation task", provenance: independent, source_ref: SSRN-LLMAQ-2026 }
+    - { lever: quality, description: "Gains were largest for active users and did not differ systematically by auditor experience", figure: "none (abstract gives direction only)", measures: "heterogeneity of performance gains by LLM adoption intensity and auditor experience in the same experiment", provenance: independent, source_ref: SSRN-LLMAQ-2026 }
+  prerequisites:
+    - "A firm-specific LLM provided to auditors [SSRN-LLMAQ-2026]"
+  risks_and_guardrails:
+    - "The abstract concludes LLMs enhance productivity and output quality without uniformly strengthening process discipline [SSRN-LLMAQ-2026]"
+  human_checkpoints:
+    - "Not described in the abstract."
+  role_evolution: >-
+    No experience-based difference in gains, which the authors call surprising given earlier evidence that LLMs
+    help less-experienced users more [SSRN-LLMAQ-2026].
+  evidence_grade: C
+  sources:
+    - { ref: SSRN-LLMAQ-2026, title: "The Effect of Large Language Models on Audit Quality: Causal Evidence from a Randomized Field Experiment", publisher: "SSRN (Jezierski, Kaltenpoth, Mueller, Weissenberger)", type: academic, url: "https://doi.org/10.2139/ssrn.6095166", date: "2026", access: full, locator: "abstract (retrieved from the Crossref record; SSRN page blocked)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-16. The strongest independent quality result found, but graded C: the firm is not named in the
+    abstract, so no named-organization measurement exists, and inventory valuation is a substantive procedure
+    rather than specialist work. Kept here because it is the only causal evidence on AI in a valuation task by
+    auditors. Abstract only; the paper's figures were not read. The Crossref record was created 2026-07-29; the
+    paper's posting date was not found. Also routed to substantive-testing.
+
+- id: assurance-specialists-13
+  title: "Tax specialists use a GenAI tax research assistant (adjacent: tax advisory, not audit tax specialists)"
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [research-synthesis]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    Tax professionals spend time searching and analysing tax legislation and case law [KPMGUK-BLUEJ-2024].
+  solution: >-
+    KPMG UK and Blue J announced on 22 Feb 2024 a generative AI product (Ask Blue J), built on fine-tuned OpenAI GPT
+    models and Blue J's curated tax content, to answer tax research questions. KPMG said it was available in the
+    firm's 3,000-strong tax and legal function and that KPMG would have exclusive access among UK Big Four firms
+    for three years [KPMGUK-BLUEJ-2024].
+  outcomes:
+    - { lever: speed, description: "The release says the tool dramatically reduces time spent searching legislation and case law; no figure given", figure: "none published", measures: "not applicable; qualitative claim", provenance: vendor-published, source_ref: KPMGUK-BLUEJ-2024 }
+    - { lever: quality, description: "KPMG says its earlier Blue J alliance predicts tax scenario outcomes, such as employed versus self-employed status, with 90%+ accuracy for employees to review; this refers to a separate predictive tool", figure: "90%+", measures: "accuracy of tax-scenario outcome predictions; basis and sample not stated", provenance: vendor-published, source_ref: KPMGUK-BLUEJ-2024 }
+  prerequisites:
+    - "Curated tax content database and a fine-tuned model [KPMGUK-BLUEJ-2024]"
+  risks_and_guardrails:
+    - "The release says employees review the predictions [KPMGUK-BLUEJ-2024]"
+  human_checkpoints:
+    - "Tax professionals review outputs and advise clients [KPMGUK-BLUEJ-2024]"
+  role_evolution: "KPMG says tax experts can spend more time on complicated and urgent issues [KPMGUK-BLUEJ-2024]."
+  evidence_grade: B
+  sources:
+    - { ref: KPMGUK-BLUEJ-2024, title: "KPMG UK and Blue J expand strategic alliance to introduce generative AI into tax tools", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/media/press-releases/2024/02/kpmg-uk-and-blue-j-expand-strategic-alliance-to-introduce-generative-ai-into-tax-tools.html", date: "2024-02-22", access: full, locator: "press release body" }
+    - { ref: HUX-2022, title: "Auditors' and Tax Specialists' Interprofessional Collaboration During Audit Engagements", publisher: "SSRN (Hux, Andiola, Noga)", type: academic, url: "https://doi.org/10.2139/ssrn.4260469", date: "2022", access: full, locator: "abstract via Crossref (cited in notes only)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From combined-17. Grade B is capped by adjacency: the release is about KPMG's tax and legal advisory function,
+    not specialists supporting audits. It also predates the 12-18 month window, so use it as a foundation; its
+    present status was not verified. The release says both that the product 'will launch' and that the tool is
+    'now available'. No source on audit income-tax-provision specialists using AI was found. Hux, Andiola and Noga
+    (2022) document audit tax specialists' roles through 33 interviews but do not cover AI [HUX-2022].

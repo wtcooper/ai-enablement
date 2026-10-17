@@ -1,0 +1,1053 @@
+# Use cases: assurance / completion-reporting
+# Synthesised 2026-10-17 from the wave 1 landscape scan and the practice, discourse and governance deep dives
+# (research/runs/wave1/). Source refs are canonical keys; where another assurance module already uses a key for the
+# same document, that key is reused. The synthesis report maps every key back to the input files' refs.
+# Evidence clusters on two steps: the disclosure checklist and the mechanical review (casting, tie-out) of draft
+# statements. Subsequent events, written representations, the summary of misstatements, engagement quality review,
+# key/critical audit matter wording, opinion drafting and live going-concern work have no public AI evidence; they
+# are open questions in the module file, not entries here.
+# PwC's fund-audit tie-out pilot (Audit Innovation Hub) already lives in substantive-testing as
+# assurance-substantive-testing-13 and is not repeated.
+# Almost every outcome figure is vendor-published or self-reported. No accuracy, miss-rate or override-rate figure
+# exists for any completion-stage tool in live use.
+
+- id: assurance-completion-reporting-01
+  title: "AI first pass of the disclosure checklist against the draft financial statements, with cited answers (Caseware, Thomson Reuters, Ideagen, DataSnipper)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: piloting
+  problem: >-
+    Disclosure checklists run to hundreds of questions that a reviewer answers by cross-referencing the client's
+    statements by hand; Caseware's documentation says this typically takes several hours per engagement. Thomson
+    Reuters says a fully completed checklist in its Guided Assurance product can run to 1,200-1,500 requirements,
+    that fatigue sets in, that many firms roll last year's checklist forward or spend senior and manager time
+    redoing it, and that a missed disclosure can surface as an inspection finding, a peer review deficiency or a
+    restatement.
+  solution: >-
+    The tool reads the draft statements (a PDF in Caseware's and Ideagen's case) and works through the checklist
+    requirement by requirement. It proposes an answer (Caseware: Yes, No or N/A; Thomson Reuters: identified or not
+    found) with a plain-language rationale and a citation to the supporting passage, and flags questions it cannot
+    support instead of answering them. The auditor accepts, edits or rejects each suggestion; Caseware says only
+    approved answers are written to the engagement file. Ideagen marks items it cannot find as No for review and
+    lets the user apply AI answers globally or selectively. DataSnipper describes Disclosure Agents that work inside
+    Excel and tie each requirement to a snippet of the statements.
+  outcomes:
+    - lever: speed
+      description: "Average time saved per disclosure checklist run by firms in Caseware's beta programme"
+      figure: "2.7 hours per checklist run (average)"
+      measures: "Caseware's wording: firms in the beta program saved 2.7 hours per disclosure checklist run on average; results vary by engagement. Number of firms, number of runs and the manual baseline are not stated. Caseware's launch release gives the same figure 'per workflow', so the unit is not consistent across its own documents."
+      provenance: vendor-published
+      source_ref: CASEWARE-CWX-2026
+    - lever: capacity
+      description: "Uptake of Thomson Reuters Disclosure Review at launch, after an extended customer beta"
+      figure: "about 30% of eligible customers; close to 300 analyses a month"
+      measures: "Share of eligible Disclosure-module customers of Guided Assurance already using the feature, and disclosure review analyses generated a month across mid-sized and large firms. Counts analyses run, not engagements or hours. Customers not named; no accuracy figure."
+      provenance: vendor-published
+      source_ref: TR-DISCLOSURE-2026
+    - lever: speed
+      description: "Ideagen claims checklist completion drops from days to hours"
+      figure: "days to hours (no basis given)"
+      measures: "Marketing statement; no sample, firm or baseline stated."
+      provenance: vendor-published
+      source_ref: IDEAGEN-DISCLOSE-2026
+  prerequisites:
+    - "Caseware: Caseware Cloud and access to the agent, which depends on firm configuration and licensing. At general availability it covers US GAAP checklists and PDF statements only; IFRS, FRS 102, AASB, ASPE and firm-authored checklists are roadmap items for 2026 (CASEWARE-DCA-DOCS-2026, section Availability)."
+    - "Thomson Reuters: Guided Assurance with the Disclosure module; the feature comes at no additional cost (TR-DISCLOSURE-2026)."
+    - "Ideagen states coverage of UK GAAP, IFRS and US GAAP checklists (IDEAGEN-DISCLOSE-2026). DataSnipper's agents work in an Excel-based workflow (DATASNIPPER-RISKS-2025)."
+  risks_and_guardrails:
+    - "Caseware's documentation says the AI reasoning and citations do not persist in the engagement file after the engagement is locked (CASEWARE-DCA-DOCS-2026, section Governance and engagement documentation)."
+    - "The FRC lists omission, hallucination and distortion as deficient-output risks and expects mitigations matched to the tool and use (FRC-GENAI-2026, 'Risk of deficient output'); a law-firm summary says reviewers need the competence to spot such outputs (KN-FRC-2026)."
+    - "ISA 220 (Revised) names automation bias, a tendency to favour automated output, as an impediment to scepticism (IAASB-ISA220-2020, para A35)."
+    - "A completed checklist proves coverage, not adequacy: Fieldguide notes that SEC segment-reporting comments kept rising after checklist rows were added (FIELDGUIDE-DISC-2026)."
+    - "No source publishes an accuracy, miss rate (requirements wrongly marked identified) or reviewer override rate for any of these tools."
+  human_checkpoints:
+    - "Auditor verifies the cited evidence for each suggested answer and approves or changes it (CASEWARE-DCA-DOCS-2026)."
+    - "Questions the agent cannot support are flagged for the auditor instead of answered (CASEWARE-DCA-DOCS-2026)."
+    - "Conditional requirements such as 'if material' or 'unless impracticable' call for professional judgment and lean on senior staff (DATASNIPPER-RISKS-2025)."
+  role_evolution: >-
+    Caseware's chief product officer says staff move from searching the statements to reviewing, validating and
+    learning, and Caseware's beta partner at Withum likened the agent to a partner walking a junior through a
+    checklist, at scale (CASEWARE-CWX-2026). Thomson Reuters says the visible rationale helps junior staff understand
+    the requirement, not only trust the output (TR-DISCLOSURE-2026). DataSnipper says juniors can handle more of the
+    process with AI suggestions while seniors focus on judgment and oversight (DATASNIPPER-RISKS-2025).
+  evidence_grade: C
+  sources:
+    - {ref: TR-DISCLOSURE-2026, title: "Turning Disclosure Review From Manual Matching Into AI-Assisted Confidence", publisher: "Thomson Reuters (Corey Wells, General Manager of Audit)", type: vendor, url: "https://www.thomsonreuters.com/en-us/posts/innovation/turning-disclosure-review-from-manual-matching-into-ai-assisted-confidence/", date: "2026-09-23", access: full, locator: "sections 'Bringing AI into the checklist itself' and 'Meeting the market, with room to grow'"}
+    - {ref: CASEWARE-CWX-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: "2026-06-17", access: full, locator: "section 'Disclosure Checklist Agent'; 'What time savings did beta firms report'; 'Feedback from beta partner firms'"}
+    - {ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: "2026-07-28", access: full, locator: "section 'The Caseware Verity Agentic Suites'; FAQ on time saved; 'Why it matters for your team'"}
+    - {ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: "2026-05-20", access: full, locator: "paragraph listing the first workflow-embedded agents; paragraph on accepting, refining or overriding suggestions"}
+    - {ref: CASEWARE-DCA-DOCS-2026, title: "What is Disclosure Checklist Agent?", publisher: "Caseware Docs", type: vendor, url: "https://www.caseware.com/docs/en/cloud/caseware-verity/disclosure-checklist-agent/what-is-disclosure-checklist-agent", date: "2026-10", access: full, locator: "whole page; page undated, retrieved 2026-10-16"}
+    - {ref: IDEAGEN-DISCLOSE-2026, title: "Revolutionary AI now powers your financial disclosure process", publisher: "Ideagen", type: vendor, url: "https://www.ideagen.com/ideagen/lp/demos/audit-and-risk/disclose", date: "2026-10", access: full, locator: "how-it-works steps and benefits; page undated, retrieved 2026-10-16"}
+    - {ref: DATASNIPPER-RISKS-2025, title: "The 5 hidden risks of disclosure review", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/5-hidden-risks-in-disclosure-review", date: "2025", access: full, locator: "risk 3 (reliance on senior expertise); sections on automation and agentic AI; page undated"}
+    - {ref: DATASNIPPER-AGENTS-2025, title: "Disclosure Agents from DataSnipper (product page)", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/campaign/disclosure-agents", date: "2025-10", access: full, locator: "sections 'Automated disclosure review' and 'Link disclosure directly to evidence'"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "section 'Risk of deficient output'"}
+    - {ref: KN-FRC-2026, title: "Navigating Generative and Agentic AI: The FRC's Latest Expectations for Auditors", publisher: "Kingsley Napley", type: press, url: "https://www.kingsleynapley.co.uk/insights/blogs/regulatory-blog/navigating-generative-and-agentic-ai-the-frcs-latest-expectations-for-auditors", date: "2026-04-22", access: full, locator: "risk categories and mitigations lists"}
+    - {ref: IAASB-ISA220-2020, title: "International Standard on Auditing 220 (Revised), Quality Management for an Audit of Financial Statements", publisher: "IAASB", type: standard-setter, url: "https://www.ifac.org/_flysystem/azure-private/publications/files/IAASB-International-Standard-Auditing-220-Revised.pdf", date: "2020-12-17", access: full, locator: "paras A34-A35"}
+    - {ref: FIELDGUIDE-DISC-2026, title: "The 2026 audit disclosure checklist: What to add, and where judgment takes over", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-disclosure-checklist-2026", date: "2026-08-06", access: full, locator: "section 'A checklist confirms coverage while quality requires judgment'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-01, -02, -03, discourse-01 and governance-01. Graded C: no named firm reports using a
+    checklist agent on a live engagement. Caseware names Withum, Citrin Cooperman and EisnerAmper as beta partners
+    that piloted Verity on live engagements in the 2025 busy season, but the page does not say they used the
+    checklist agent; the Withum comment describes the agent without a result. Governance graded B on that basis and
+    on KPMG's own engine (now -02); not adopted. Thomson Reuters customers are unnamed. Ideagen's '9 of 10 top UK
+    accounting firms' describes use of its Disclose checklist product, not the AI feature. Caseware's 94% accuracy
+    and '15-20 minutes to under two minutes' figures describe the whole Verity platform in beta and are not used. A
+    Caseware homepage panel (78% time saving in select Reporting use cases) changed between retrievals and is not
+    used. A search-only Caseware page (209 questions across 3 checklists) is unverified. DataSnipper's risks page
+    describes its Disclosure Agents in the future tense; its earliest archived copy is 2025-10-12 (discourse dated
+    the same page 2026 from a reference to DataSnipper Connect New York 2026). The 1,200-1,500 figure describes a
+    completed Guided Assurance checklist, not a limit of the tool.
+
+- id: assurance-completion-reporting-02
+  title: "Disclosure-checklist and financial-statement analysis engines built into Big Four audit platforms (KPMG Clara Financial Report Analyzer; Deloitte Omnia)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Auditors must complete the required disclosure checklists against the financial report, evaluate compliance with
+    regulatory and disclosure requirements, and review the draft statements before sign-off.
+  solution: >-
+    KPMG announced on 2025-04-22 a Financial Report Analyzer AI engine whose output helps auditors complete the
+    required disclosure checklists, released alongside agents for expense vouching and unrecorded-liability searches
+    in KPMG Clara; it said more agents would be deployed over the next 12 months into controls testing, financial
+    statement analysis and more. Deloitte announced on 2026-06-24 a network of agents in Omnia whose listed examples
+    include assisting with evaluating compliance with regulatory and disclosure requirements. PwC said in October
+    2025 it plans tools to guide the financial statement review and tie-out portion of the audit.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "Neither the KPMG nor the Deloitte release gives a usage, time or accuracy figure for these capabilities."
+      provenance: self-reported
+      source_ref: KPMG-CLARA-2025
+  prerequisites:
+    - "KPMG Clara. The release says the agents aim to reach more than 95,000 auditors globally; that figure refers to the agent deployment as a whole, not to this engine (KPMG-CLARA-2025)."
+    - "Deloitte Omnia, built by Deloitte's internal engineering teams and aimed at nearly 85,000 Audit & Assurance practitioners (DELOITTE-OMNIA-2026)."
+  risks_and_guardrails:
+    - "KPMG states a human-in-the-loop approach and says auditors stay in control of decisions to maintain quality, accuracy and professional scepticism (KPMG-CLARA-2025, section AI and our audit quality imperative)."
+    - "Deloitte says capabilities follow its Trustworthy AI framework and that professionals supervise, validate and work alongside AI (DELOITTE-OMNIA-2026)."
+  human_checkpoints:
+    - "Auditors complete the checklists using the AI-generated output and make the decisions (KPMG-CLARA-2025)."
+    - "Preliminary conclusions are developed for professionals to review (DELOITTE-OMNIA-2026)."
+  role_evolution: >-
+    KPMG says it is upskilling its professionals alongside the deployment (KPMG-CLARA-2025). Deloitte describes a tutor
+    mode giving on-demand micro-training in the context of the work, plus its AI Academy and the Scout learning
+    assistant (DELOITTE-OMNIA-2026). No completion-specific role change is described.
+  evidence_grade: C
+  sources:
+    - {ref: KPMG-CLARA-2025, title: "KPMG advances AI integration in KPMG Clara smart audit platform", publisher: "KPMG International", type: firm, url: "https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html", date: "2025-04-22", access: full, locator: "heading on the Financial Report Analyzer; paragraph beginning 'Additional AI agents will be deployed over the next 12 months'"}
+    - {ref: DELOITTE-OMNIA-2026, title: "Deloitte Unveils Connected Agentic Intelligence in Deloitte Omnia to Advance Audit & Assurance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: "2026-06-24", access: full, locator: "section 'Transforming how audit and assurance work gets done' (agent examples); 'Investing in upskilling'"}
+    - {ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph beginning 'Panson said PwC is also planning to equip its auditors with tools'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-04, practice-05 (disclosure part) and discourse-07. Announcements only, graded C under the
+    practice convention that a firm's own product announcement is a C. KPMG's 12-month window ended in April 2026 and
+    no follow-up on a financial statement analysis agent was found. Governance read a Deloitte US copy of the same
+    announcement (deloitte.com/us/.../deloitte-unveils-connected-agentic-intelligence-in-omnia.html). Bloomberg Law
+    coverage of both launches was paywalled and is not used. Deloitte's drafting of documentation and preliminary
+    conclusions is in -13.
+
+- id: assurance-completion-reporting-03
+  title: "AI second look at a checklist the team has already completed, flagging answers that diverge from the AI's reading"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: piloting
+  problem: >-
+    Thomson Reuters describes fatigue on long checklists and firms rolling last year's checklist forward. Caseware's
+    beta found completed checklists with answers that were wrong because the requirement had been misread.
+  solution: >-
+    The tool is run against the auditor's own answers and flags automatically where the AI's reading of a
+    requirement differs, so review effort goes to the disagreements rather than a full re-check (Thomson Reuters).
+    Caseware reports that beta firms also used its agent as a quality check on checklists they had already
+    completed.
+  outcomes:
+    - lever: quality
+      description: "In one beta case the agent surfaced questions answered incorrectly because of misinterpretation and explained the correct reading"
+      figure: "one case; count and rate not published"
+      measures: "An anecdote reported by Caseware from its beta programme; no number of checklists reviewed and no rate."
+      provenance: vendor-published
+      source_ref: CASEWARE-CWX-2026
+    - lever: speed
+      description: "Divergences flagged automatically so teams are not re-checking everything"
+      figure: "none published"
+      measures: "No figure given."
+      provenance: vendor-published
+      source_ref: TR-DISCLOSURE-2026
+  prerequisites:
+    - "A first-pass checklist answered by a person, and access to the vendor's disclosure feature (TR-DISCLOSURE-2026)."
+    - "A way to record each divergence and how it was resolved in the file."
+  risks_and_guardrails:
+    - "The FRC lists 'critic' among an LLM's roles, reviewing an input that may itself be another LLM's output; its mitigations include certification and recertification of the system (FRC-GENAI-2026, table of LLM roles; 'Certification')."
+    - "If reviewers over-trust the second look, the same misreading can pass both checks. The ICAEW Technology Faculty chair criticised the FRC guidance for treating automation bias in one paragraph (ICAEW-FRCVIEW-2026)."
+  human_checkpoints:
+    - "The auditor resolves each flagged divergence (TR-DISCLOSURE-2026)."
+  role_evolution: >-
+    Thomson Reuters presents the flags as a way to stop redoing the checklist, work it says now takes senior and
+    manager time (TR-DISCLOSURE-2026).
+  evidence_grade: C
+  sources:
+    - {ref: TR-DISCLOSURE-2026, title: "Turning Disclosure Review From Manual Matching Into AI-Assisted Confidence", publisher: "Thomson Reuters (Corey Wells, General Manager of Audit)", type: vendor, url: "https://www.thomsonreuters.com/en-us/posts/innovation/turning-disclosure-review-from-manual-matching-into-ai-assisted-confidence/", date: "2026-09-23", access: full, locator: "paragraph beginning 'Where the AI and the auditor's own judgment diverge'"}
+    - {ref: CASEWARE-CWX-2026, title: "CwX 2026: How agentic AI is transforming audit and assurance", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/cwx-2026-how-agentic-ai-is-transforming-audit-and-assurance", date: "2026-06-17", access: full, locator: "paragraph beginning 'Firms also found the agent useful as a quality check'"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "table of LLM roles; section 'Certification'"}
+    - {ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Misinterpretation or misuse will take the most work for audit firms'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from discourse-02 and governance-02, plus the divergence feature from practice-02. Kept separate from -01
+    because the AI moves from first drafter to checker of human work. Ladder augment (discourse) over assist
+    (governance). Maturity piloting: discourse said in production, but no organisation using it is named. Both
+    vendor sources are descriptions, not measurements.
+
+- id: assurance-completion-reporting-04
+  title: "AI proposes 'No' and 'Not applicable' determinations on disclosure requirements, the harder judgment calls"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Conditional requirements such as 'if material' or 'unless impracticable' call for professional judgment, so they
+    lean on experienced staff, which limits how much juniors can do (DataSnipper). Thomson Reuters' current feature
+    marks requirements identified or not found.
+  solution: >-
+    Thomson Reuters says future Disclosure Review capabilities will extend into harder judgment calls such as 'No' and
+    'Not applicable' determinations; no release date or design was given. Ideagen's tool already marks items it
+    cannot find as No for the user to review.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Roadmap statement only; no result."
+      provenance: vendor-published
+      source_ref: TR-DISCLOSURE-2026
+  prerequisites:
+    - "Reliable 'identified or not found' matching first (-01)."
+    - "A documented basis for materiality and applicability that the tool can cite, and a way to record the applicability judgment."
+  risks_and_guardrails:
+    - "Thomson Reuters itself describes these determinations as where auditor expertise matters most (TR-DISCLOSURE-2026, paragraph beginning 'Meeting the market')."
+    - "Fieldguide says a checklist cannot confirm a disclosure is right or catch a file that omits something material (FIELDGUIDE-DISC-2026)."
+    - "The FRC lists faulty reasoning among the ways an AI output can be deficient (KN-FRC-2026)."
+    - "A wrong 'not applicable' removes a disclosure from review; no source quantifies this risk."
+  human_checkpoints:
+    - "Not specified by Thomson Reuters for the future capability. The applicability and materiality decision stays with a senior or manager in today's practice (DATASNIPPER-RISKS-2025)."
+  role_evolution: >-
+    Not described for this capability. DataSnipper argues AI suggestions let juniors handle more of the process while
+    seniors focus on judgment and oversight (DATASNIPPER-RISKS-2025).
+  evidence_grade: C
+  sources:
+    - {ref: TR-DISCLOSURE-2026, title: "Turning Disclosure Review From Manual Matching Into AI-Assisted Confidence", publisher: "Thomson Reuters (Corey Wells, General Manager of Audit)", type: vendor, url: "https://www.thomsonreuters.com/en-us/posts/innovation/turning-disclosure-review-from-manual-matching-into-ai-assisted-confidence/", date: "2026-09-23", access: full, locator: "paragraph beginning 'Meeting the market, with room to grow'"}
+    - {ref: DATASNIPPER-RISKS-2025, title: "The 5 hidden risks of disclosure review", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/5-hidden-risks-in-disclosure-review", date: "2025", access: full, locator: "risk 3, heavy reliance on senior expertise"}
+    - {ref: IDEAGEN-DISCLOSE-2026, title: "Revolutionary AI now powers your financial disclosure process", publisher: "Ideagen", type: vendor, url: "https://www.ideagen.com/ideagen/lp/demos/audit-and-risk/disclose", date: "2026-10", access: full, locator: "step 2, AI analysis; page undated, retrieved 2026-10-16"}
+    - {ref: FIELDGUIDE-DISC-2026, title: "The 2026 audit disclosure checklist: What to add, and where judgment takes over", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-disclosure-checklist-2026", date: "2026-08-06", access: full, locator: "section 'A checklist confirms coverage while quality requires judgment'"}
+    - {ref: KN-FRC-2026, title: "Navigating Generative and Agentic AI: The FRC's Latest Expectations for Auditors", publisher: "Kingsley Napley", type: press, url: "https://www.kingsleynapley.co.uk/insights/blogs/regulatory-blog/navigating-generative-and-agentic-ai-the-frcs-latest-expectations-for-auditors", date: "2026-04-22", access: full, locator: "risk categories list"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-06 and discourse-03. Maturity announced (discourse) over emerging (practice): the evidence
+    is a vendor's statement about a future feature. Graded C because the only evidence is a vendor roadmap statement
+    and a vendor marketing description; it is not a researcher's idea.
+
+- id: assurance-completion-reporting-05
+  title: "AI-assisted review of the management report against statutory disclosure requirements: link passages to requirements, check arithmetic, compare versions (German Big 4 firm)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    The audit of management reports has traditionally relied on a manual, checklist-based approach. Fieldguide
+    describes the read of MD&A and other front-section text for inconsistencies with the statements as tedious, and
+    says late-stage edits break cross-references and comparatives.
+  solution: >-
+    A task-specific AI system on a digital platform at a German Big 4 firm finds relevant passages in the management
+    report and links them to the statutory disclosure requirements, in both directions. Auditors review and document
+    the suggestions passage by passage. It also checks for calculation errors, highlights changes between report
+    versions, and supports team collaboration with task allocation and review functions that follow the
+    dual-control principle.
+  outcomes:
+    - lever: quality
+      description: "Surveyed auditors judged the tool to improve audit effectiveness and efficiency, most for standardised tasks and less for complex qualitative issues. Perception, not a measured error rate."
+      figure: "none published (perception survey; no numeric result in the abstract or release)"
+      measures: "Auditors' perceptions of effectiveness and efficiency, from a survey of employees of a Big 4 audit firm in Germany who had used the tool; sample size not seen."
+      provenance: independent
+      source_ref: FABIAN-2026
+  prerequisites:
+    - "A digital review platform with the requirement-to-text linkage built in (HAMBURG-FABIAN-2026)."
+    - "Training programmes, clear communication of opportunities and risks, and staff involvement in the change, which the authors give as practical implications (HAMBURG-FABIAN-2026)."
+  risks_and_guardrails:
+    - "Some auditors raised concern about over-reliance on AI results and possible loss of skills (HAMBURG-FABIAN-2026)."
+    - "The tool reaches its limits on discretionary leeway, linguistic nuance and strategic statements (HAMBURG-FABIAN-2026)."
+    - "Acceptance and perceived deskilling vary with professional position, work experience and involvement in digital transformation (FABIAN-2026)."
+  human_checkpoints:
+    - "The study says the tool does not replace professional judgement; auditors review and document each suggestion, with dual-control review functions (HAMBURG-FABIAN-2026)."
+  role_evolution: >-
+    The study reports that routine tasks speed up and auditors gain time for more demanding analysis, and that views
+    differ by position and experience (HAMBURG-FABIAN-2026).
+  evidence_grade: B
+  sources:
+    - {ref: FABIAN-2026, title: "Auditing Corporate Disclosures with the Assistance of Task-Specific Artificial Intelligence: Evidence on Effectiveness and Efficiency (Fabian and Ratzinger-Sakel)", publisher: "Journal of Information Systems (American Accounting Association)", type: academic, url: "https://doi.org/10.2308/ISYS-2025-054", date: "2026-03-03", access: full, locator: "abstract via the Crossref record; article page returned 403"}
+    - {ref: HAMBURG-FABIAN-2026, title: "AI in auditing: New study highlights opportunities and limitations", publisher: "University of Hamburg Business School", type: academic, url: "https://www.bwl.uni-hamburg.de/en/ueber-die-fakultaet/aktuelles/2026/0320-ki-loesungen-in-der-wirtschaftspruefung-jette-fabian-nicole-ratzinger-sakel.html", date: "2026-03-20", access: full, locator: "paragraphs 2-5 (tool description, findings, practical implications)"}
+    - {ref: FIELDGUIDE-DISC-2026, title: "The 2026 audit disclosure checklist: What to add, and where judgment takes over", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-disclosure-checklist-2026", date: "2026-08-06", access: full, locator: "section 'The other-information read'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-07, discourse-04 and governance-03. Grade judgement: the firm is anonymised, so a strict
+    reading of 'named organization' gives C (governance's grade). Kept at B (practice and discourse) because a
+    peer-reviewed, independent study documents the tool in real use; flag for the verifier. Change scope step
+    (discourse, governance) over process (practice). A management report (Lagebericht) is a German statutory
+    document, so transfer to US MD&A or the ISA 720 'other information' read is by analogy. Only the abstract and the
+    university release were read; sample size and effect sizes are unknown.
+
+- id: assurance-completion-reporting-06
+  title: "Automated casting, cross-referencing and tie-out of draft financial statements, re-checking only what changed between drafts (Caseware Validate at HLB Mann Judd Perth and MHA; Suralink)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    HLB Mann Judd Perth reviews over 300 sets of financial statements a year. A first review of a full-year set took
+    3 to 4 hours and a half-year set 1.5 to 2 hours, over at least 4 to 5 drafts per engagement: about 1,200 hours a
+    year on first-draft reviews. Its earlier Excel add-in crashed, lost data, misread scans and did not carry review
+    marks between drafts. MHA says each set took close to an hour to cast, cross-check and reconcile, and methods
+    varied by office. Suralink describes tie-out as the last and most critical step of the audit, still done at many
+    firms with lengthy manual procedures prone to human error.
+  solution: >-
+    Caseware Validate is described as an AI-powered, cloud-based tool that runs thousands of checks in seconds,
+    cross-referencing data points for consistency, accuracy and compliance. It carries forward earlier checks and
+    mark-ups so later drafts need only the changes re-checked, and exports marked-up PDFs with cross-reference links.
+    Suralink's Financial Statement Tie Out checks mathematical accuracy, internal consistency, prior-year consistency
+    and version comparison of the final statements.
+  outcomes:
+    - lever: capacity
+      description: "Hours saved per year at HLB Mann Judd Perth"
+      figure: "about 600 hours a year; 40-50% efficiencies on subsequent drafts"
+      measures: "Case study wording: significant time savings on first drafts and 40-50% efficiencies on subsequent drafts, resulting in approximately 600 hours saved annually. Baseline is the firm's own estimate of about 1,200 hours a year on first-draft reviews across over 300 sets. The first-draft saving is not quantified."
+      provenance: vendor-published
+      source_ref: CASEWARE-HLB-2025
+    - lever: speed
+      description: "Average casting time and full first-pass review time in MHA's pilot of two shortlisted tools"
+      figure: "casting 25 to 12 minutes; first-pass review 58 to 42 minutes"
+      measures: "Measured in a head-to-head pilot between two shortlisted tools; the source does not say whether the comparison baseline is the other tool or manual work, and gives no sample size."
+      provenance: vendor-published
+      source_ref: CASEWARE-MHA-2025
+    - lever: quality
+      description: "False positives in MHA's pilot, defined as the tool saying an item is correct when it is wrong"
+      figure: "zero false positives (pilot)"
+      measures: "Number of sets or items tested not stated."
+      provenance: vendor-published
+      source_ref: CASEWARE-MHA-2025
+    - lever: capacity
+      description: "Baseline adoption of automation (not specifically AI) for these steps at US CPA firms"
+      figure: "39% automated foot and proofing; 17% automated report production"
+      measures: "Share of 54 firms with complete survey data answering that the firm has an automated solution for the function; not limited to AI; the authors say it is not representative of all CPA firms."
+      provenance: independent
+      source_ref: CPACOM-ATR-2025
+  prerequisites:
+    - "Statements in a form the tool can read; HLB cites better OCR as a benefit over its earlier Excel add-in (CASEWARE-HLB-2025, section Solution)."
+    - "A firm-wide standard review workflow; MHA selected the tool to standardise review across offices (CASEWARE-MHA-2025, section Challenge)."
+    - "Prior-year statements and earlier draft versions available to compare (SURALINK-2026)."
+  risks_and_guardrails:
+    - "MHA values the tool's indeterminate flag for items it cannot call, which prompts professional judgement rather than reliance on the software (CASEWARE-MHA-2025, section Results)."
+    - "HLB cites a clear audit trail of changes through the marked-up PDF export (CASEWARE-HLB-2025, section Results)."
+    - "A mechanical tie-out cannot show that a disclosure is adequate (FIELDGUIDE-DISC-2026)."
+    - "DataSnipper describes agents handling vouching, tie-outs and extraction while the auditor still holds the pen (DATASNIPPER-CONNECT-2026)."
+  human_checkpoints:
+    - "Managers and seniors review the output and focus on key risk areas and on compliance and completeness of disclosures (CASEWARE-HLB-2025, section Results)."
+    - "Each exception is cleared by the preparer or reviewer before the report is issued."
+  role_evolution: >-
+    HLB's audit manager says initial input can be done by any team member, letting senior staff focus on disclosures
+    and judgment areas (CASEWARE-HLB-2025). MHA's tool selection was led by its Technical Director for Audit Data
+    Analytics (CASEWARE-MHA-2025).
+  evidence_grade: A
+  sources:
+    - {ref: CASEWARE-HLB-2025, title: "HLB Mann Judd Perth: Australian firm reduces manual financial statement review time by up to 50 percent with Caseware Validate", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/au/resources/success-stories/hlb-mann-judd-perth", date: "2025-04-10", access: full, locator: "sections Challenge, Solution, Results"}
+    - {ref: CASEWARE-MHA-2025, title: "UK Firm Cuts Financial Statement Review Times with Caseware Validate", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/au/resources/success-stories/uk-firm-cuts-financial-statement-review-times-with-caseware-validate", date: "2025-07-17", access: full, locator: "sections Challenge, Solution, Results"}
+    - {ref: SURALINK-2026, title: "Suralink Launches Financial Statement Tie Out, Redefining the Final Mile of the Audit", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/08/suralink-launches-financial-statement-tie-out-redefining-the-final-mile-of-the-audit/181200/", date: "2026-04-08", access: full, locator: "paragraph listing the four validation areas"}
+    - {ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "chart 'For which of the following does the firm have an automated solution?' (p.10)"}
+    - {ref: FIELDGUIDE-DISC-2026, title: "The 2026 audit disclosure checklist: What to add, and where judgment takes over", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-disclosure-checklist-2026", date: "2026-08-06", access: full, locator: "section 'A checklist confirms coverage while quality requires judgment'"}
+    - {ref: DATASNIPPER-CONNECT-2026, title: "The 6 Biggest Takeaways from DataSnipper Connect New York 2026", publisher: "DataSnipper", type: conference, url: "https://www.datasnipper.com/resources/the-6-biggest-takeaways-from-datasnipper-connect-new-york-2026", date: "2026-09", access: full, locator: "section introducing Alwin; date approximate from page listing data"}
+    - {ref: BOARDAGENDA-FRC-2026, title: "Auditors warned they remain accountable despite use of AI", publisher: "Board Agenda", type: press, url: "https://boardagenda.com/2026/03/31/auditors-warned-they-remain-accountable-despite-use-of-ai/", date: "2026-03-31", access: full, locator: "paragraph listing the FRC's examples of AI in the audit process, including checking the accuracy of financial statements"}
+    - {ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "p.4 (comparing amounts in the statements or notes with audited amounts listed as a potential area)"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-08, discourse-05 (Suralink part) and governance-05 (CPA.com part). Graded A because two
+    named firms publish measured outcomes, but both are vendor-published case studies and neither baseline is
+    independently verified; the MHA comparison may be tool against tool. Suralink is a vendor launch with no named
+    firm. The CPA.com figures measure traditional automation, not AI. Board Agenda reports the FRC saying AI is
+    already used to check the accuracy of financial statements; cited only for that general point. PwC's fund-audit
+    tie-out pilot (practice-10, discourse-05 PwC part) is the same change in a narrower setting and already lives in
+    assurance-substantive-testing-13. Fieldguide's continuous Review and Tie-Out Agent is in -07.
+
+- id: assurance-completion-reporting-07
+  title: "Agents draft the financial statements from the prior-year report and live trial balance, re-validate them continuously and roll forward footnotes (Fieldguide Field Financials)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [document-production, review-assurance]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Fieldguide says preparing financials has needed a fragmented mix of reports and spreadsheets.
+  solution: >-
+    Field Financials bundles three agents. The Drafting Agent produces a rolled-forward, formatted first draft from
+    the prior-year report linked to current-year trial balance data. The Review and Tie-Out Agent runs continuous,
+    deterministic validation and flags stale overrides when trial-balance adjustments change. The Disclosure Agent
+    rolls forward footnote language and fills schedule-driven disclosures. Because drafting and checks are tied to
+    live trial-balance data, validation runs as adjustments happen instead of once per draft.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "The announcement gives no customer, time or accuracy figure."
+      provenance: vendor-published
+      source_ref: CPAPA-FIELDGUIDE-2026
+  prerequisites:
+    - "Fieldguide platform, the firm's own prior-year reports, and live trial balance data (CPAPA-FIELDGUIDE-2026; FIELDGUIDE-FINANCIALS-2026)."
+  risks_and_guardrails:
+    - "Fieldguide describes the tie-out validation as deterministic (CPAPA-FIELDGUIDE-2026); the FRC lists rules-based components that evaluate LLM outputs as a mitigation for deficient output (FRC-GENAI-2026, 'Mitigations for GenAI component performance risk')."
+    - "The release does not say whether the statements are the client's or the audit team's, and does not address independence or management responsibility. The CCAB draft names a management-responsibility threat when autonomous AI agents are used for audit clients (CCAB-AI-2026, section 10)."
+    - "A Fieldguide article says AI output survives review only if it carries its inputs, steps and sources into a file a human can challenge (FIELDGUIDE-QR-2026)."
+  human_checkpoints:
+    - "Not specified for the Financials agents. Fieldguide says other agents' output is reviewed by practitioners (CPAPA-FIELDGUIDE-2026)."
+  role_evolution: >-
+    Not described for this product. Fieldguide's CEO framed the launch as a step toward an agentic firm in which AI
+    amplifies practitioner expertise (CPAPA-FIELDGUIDE-2026).
+  evidence_grade: C
+  sources:
+    - {ref: CPAPA-FIELDGUIDE-2026, title: "Fieldguide Rolls Out Field Financials and Fieldguide MCP", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/fieldguide-rolls-out-field-financials-and-fieldguide-mcp/188469/", date: "2026-08-13", access: full, locator: "paragraphs on Field Financials and its three agents"}
+    - {ref: FIELDGUIDE-FINANCIALS-2026, title: "Fieldguide Launches Field Financials and Fieldguide MCP, Along With a Refreshed Brand", publisher: "Fieldguide (GlobeNewswire via AAP)", type: vendor, url: "https://aapnews.aap.com.au/news/globenewswire9808260", date: "2026-08-12", access: full, locator: "paragraph describing Field Financials and its three agents; availability paragraph"}
+    - {ref: FIELDGUIDE-QR-2026, title: "Audit Quality Review in an AI World: What Reviewers Look At Now", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-quality-review-ai-what-reviewers-look-at-now", date: "2026", access: full, locator: "section on agentic review; page undated, banner implies on or after Aug 2026"}
+    - {ref: CCAB-AI-2026, title: "Draft Statement to the Accountancy Profession on the Ethical Use of Artificial Intelligence (exposure draft)", publisher: "CCAB Ethics Group", type: professional-body, url: "https://www.ccab.org.uk/wp-content/uploads/2026/06/CCAB.Draft-Statement-to-the-Profession-on-Use-of-AI.-Exposure-Draft.6.6.26-002.pdf", date: "2026-06", access: full, locator: "section 10, 'Management Responsibility Threat'"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "section 'Mitigations for GenAI component performance risk'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-09, governance-04 and governance-05 (Fieldguide part). The announcement says the Drafting
+    Agent was the first available and that the Review and Tie-Out and Disclosure Agents would follow 'in the fall';
+    whether they shipped by 2026-10-16 was not confirmed. Change scope process (practice) over step (governance):
+    drafting, tie-out and footnote roll-forward become one continuous flow. The Disclosure Agent here rolls forward
+    footnotes and is not the checklist matching of -01. An audit firm drafting a client's statements raises a
+    non-attest service question that the sources do not discuss.
+
+- id: assurance-completion-reporting-08
+  title: "Engagement-file review assistant: asks what the team missed, tracks open issues and sign-off readiness before manager, partner and engagement quality review (Caseware Verity; Fieldguide Field Reviewer)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance, coordination-scheduling]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Fieldguide argues that manual review re-performs the engagement by hand, spreads scrutiny evenly and has
+    reviewers chasing missing tickmarks. Caseware says managers need faster reviews and partners earlier visibility
+    of sign-off readiness and inspection risks. PCAOB staff found engagement quality review (EQR) deficiencies at 42%
+    of inspected firms in 2022, up from 37% in 2020; one common deficiency was failing to document the EQR properly.
+  solution: >-
+    Caseware's launch release lists cross-file risk checks, unresolved-issue tracking and automated review pack
+    generation for managers, and earlier visibility of sign-off readiness, inspection risks and findings for
+    partners. In a CwX 2026 scenario a reviewer asks Verity whether the team missed anything; it pulls the trial
+    balance, checks materiality, reviews logged risks and surfaces a variance against board minutes with no risk
+    attached. Fieldguide lists a Field Reviewer agent rolling out later in 2026 without describing it. Firms told
+    PCAOB staff in 2024 that evaluating the completeness of audit documentation against documentation requirements
+    was a possible GenAI use.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Capability lists, a product demonstration and announcements only."
+      provenance: vendor-published
+      source_ref: CASEWARE-LAUNCH-2026
+  prerequisites:
+    - "Engagement data, prior year and review notes held in the vendor platform so the assistant can read trial balance, risks and documents (CASEWARE-AIDA-2026; CASEWARE-LAUNCH-2026)."
+  risks_and_guardrails:
+    - "Caseware says the review call stays with the reviewer and nothing is written in without a human accepting, editing or rejecting it (CASEWARE-AIDA-2026)."
+    - "Documentation of the review, including how AI was used, stays a firm obligation; IAASB non-authoritative material explains how automated tools may affect documentation under ISA 230 (IAASB-NAM-2020)."
+    - "AS 1220 requires the engagement quality reviewer to evaluate significant judgments and give concurring approval before the report is released (PCAOB-AS1220); ISQM 2 defines the EQR as an objective evaluation of the team's significant judgments (IAASB-ISQM2-2020, para 8). No source discusses how AI support fits these requirements."
+    - "Firms told PCAOB staff that supervisors reviewing GenAI-assisted work apply the same diligence as for other work (PCAOB-GENAI-2024, pp.4-5)."
+  human_checkpoints:
+    - "The reviewer decides what holds and what goes back; Fieldguide says the reviewer's job shifts from re-performance to judging the output (FIELDGUIDE-QR-2026)."
+    - "The engagement quality reviewer's concurring approval (PCAOB-AS1220)."
+  role_evolution: >-
+    Fieldguide says the reviewer becomes the first real judgment applied to the work and goes deep on high-stakes
+    calls such as revenue recognition and going concern (FIELDGUIDE-QR-2026); this is a vendor view. Caseware lists
+    separate benefits for preparers, managers and partners (CASEWARE-LAUNCH-2026).
+  evidence_grade: C
+  sources:
+    - {ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: "2026-05-20", access: full, locator: "paragraph beginning 'Caseware says the ecosystem is designed to deliver value across multiple roles'"}
+    - {ref: CASEWARE-AIDA-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: "2026-07-28", access: full, locator: "section 'Meet Caseware Verity' (CwX 2026 planning review scenario)"}
+    - {ref: CPAPA-FIELDGUIDE-2026, title: "Fieldguide Rolls Out Field Financials and Fieldguide MCP", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/fieldguide-rolls-out-field-financials-and-fieldguide-mcp/188469/", date: "2026-08-13", access: full, locator: "paragraph naming Field Planner and Field Reviewer as rolling out later this year"}
+    - {ref: FIELDGUIDE-QR-2026, title: "Audit Quality Review in an AI World: What Reviewers Look At Now", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-quality-review-ai-what-reviewers-look-at-now", date: "2026", access: full, locator: "sections 'Why Manual Quality Review Breaks Down' and 'Redefining the Reviewer's Job in an AI World'; page undated"}
+    - {ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "p.4 (list of potential areas); pp.4-5 (supervision and review)"}
+    - {ref: PCAOB-EQR-2023, title: "Spotlight: Inspection Observations Related to Engagement Quality Reviews", publisher: "PCAOB staff", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/eqr-spotlight.pdf", date: "2023-10", access: full, locator: "p.3 (37% in 2020 to 42% in 2022); p.8 (documentation of the EQR)"}
+    - {ref: PCAOB-AS1220, title: "AS 1220: Engagement Quality Review", publisher: "PCAOB", type: standard-setter, url: "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1220", date: "2026", access: full, locator: "objective and qualifications paragraphs; note on 2026-12-15 amendments; read through a text mirror"}
+    - {ref: IAASB-ISQM2-2020, title: "International Standard on Quality Management 2, Engagement Quality Reviews", publisher: "IAASB", type: standard-setter, url: "https://www.ifac.org/_flysystem/azure-private/publications/files/IAASB-Quality-Management-ISQM-2-Engagement-Quality-Reviews.pdf", date: "2020-12-17", access: full, locator: "para 8"}
+    - {ref: IAASB-NAM-2020, title: "Non-Authoritative Support Material: Audit Documentation When Using Automated Tools and Techniques", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/publications/non-authoritative-support-material-audit-documentation-when-using-automated-tools-and-techniques", date: "2020-04-23", access: full, locator: "summary paragraph"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-12, discourse-06 and governance-11 (an idea centred on pre-review before EQR). Ladder augment
+    and scope step (two of three inputs). The CwX scenario is a planning-stage demo, included because the
+    reviewer-assistant pattern carries across the completion file review. No source describes AI used by an
+    engagement quality reviewer. The PCAOB EQR percentages count inspected firms with at least one EQR-deficiency
+    comment form, not engagements. A Fieldguide figure on non-Big-Four deficiency rates is the vendor's reading of an
+    unopened inspection report and is not used.
+
+- id: assurance-completion-reporting-09
+  title: "Tool analyses audit committee communications to surface issues earlier in the audit cycle (PwC, 2026 year-end audits)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [research-synthesis, client-interaction]
+  pattern: research-brief
+  ladder: assist
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    In IFIAR's 2025 survey, 79 of 725 inspected listed public-interest audits had at least one audit committee
+    communications finding, against 24 of 593 in 2024; the pages read do not explain the rise. PwC describes issues
+    from audit committee communications that need handling sooner in the audit preparation cycle.
+  solution: >-
+    In October 2026 PwC's US assurance transformation leader said that for 2026 year-end audits another tool analyses
+    audit committee communications to surface issues to be handled sooner in the audit preparation cycle. The source
+    does not say which communications the tool reads or who uses its output.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "One sentence in a trade-press interview; the firm 'will be using' the tool for 2026 year-end audits. No usage or time figures."
+      provenance: self-reported
+      source_ref: CFODIVE-PWC-2026
+  prerequisites:
+    - "Not described in the source."
+  risks_and_guardrails:
+    - "IFIAR encourages transparency to those charged with governance about how technology is used in the audit and how it affects decisions (IFIAR-TTF-2026, pp.7-8)."
+    - "Audit committee chairs told PCAOB staff they want insight from auditors on AI's effect on financial reporting, and several asked how firms' AI use would affect fees (PCAOB-ACCHAIRS-2026, p.8)."
+    - "KPMG's 2026 agenda guidance says committees should discuss with the external auditor how it uses GenAI and AI agents, how quality is ensured, and the effect on audit strategy and resources (KPMG-ACAGENDA-2025)."
+    - "CPAB's audit committee forums say committees want transparency on auditors' AI use, how professional scepticism is preserved, and the effect on fees and talent (CPAB-AC-2026)."
+  human_checkpoints:
+    - "Not described in the source. AS 1301 sets the auditor's objectives for communications with the audit committee, including timely observations significant to financial reporting (PCAOB-AS1301, para .03)."
+  role_evolution: >-
+    PwC said the final audit report still looks the same (CFODIVE-PWC-2026). On the demand side, 75% of audit
+    committee respondents in the Deloitte and CAQ survey ranked AI governance a top-three priority (35% a year
+    earlier) and 56% were confident they could oversee it (DELOITTE-ACPR-2026).
+  evidence_grade: C
+  sources:
+    - {ref: CFODIVE-PWC-2026, title: "PwC exec ushers in AI-assisted audits, awaits bigger time savings", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/pwc-exec-ushers-ai-assisted-audits-awaits-bigger-time-savings/832412/", date: "2026-10-07", access: full, locator: "paragraph beginning 'For 2026 year-end audits'; paragraph on what has and has not changed"}
+    - {ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "table '2021-2025 Survey Results: Audits Inspected with at Least One Finding by Inspection Theme'"}
+    - {ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality 2026", publisher: "IFIAR Technology Task Force (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "section 'Transparency of Use and for Those Charged with Governance' (pp.7-8)"}
+    - {ref: PCAOB-ACCHAIRS-2026, title: "Spotlight: 2025 Conversations With Audit Committee Chairs", publisher: "PCAOB staff", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2025-conversations-with-audit-committee-chairs-spotlight.pdf", date: "2026-04", access: full, locator: "section 'Top Technology Risks Discussed With Auditors' (p.8)"}
+    - {ref: KPMG-ACAGENDA-2025, title: "On the 2026 audit committee agenda", publisher: "KPMG Board Leadership Center", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/boardleadership/pdf/2026/on-the-2026-audit-committee-agenda.pdf", date: "2025-12-05", access: full, locator: "section on the audit committee and the external auditor"}
+    - {ref: CPAB-AC-2026, title: "Audit Committee Insights: Perspectives from Across Canada", publisher: "CPAB", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/event-highlights/2026-audit-committee-insights-part-1-en.pdf", date: "2026-07", access: full, locator: "AI section of the forum summary"}
+    - {ref: DELOITTE-ACPR-2026, title: "Enterprise Risk Management Takes the Lead, AI Governance Gains Urgency for Audit Committees (media alert on the Audit Committee Practices Report)", publisher: "Deloitte with the Center for Audit Quality", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-caq-announce-2026-audit-committee-practices-report.html", date: "2026-09-22", access: full, locator: "highlights list"}
+    - {ref: PCAOB-AS1301, title: "AS 1301: Communications with Audit Committees", publisher: "PCAOB", type: standard-setter, url: "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1301", date: "2026", access: full, locator: "para .03; read through a text mirror"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-13, discourse-08 and governance-12. The tool's function is ambiguous in the only source:
+    it may read the committee's papers and minutes, the auditor's own required communications, or both. Drafting or
+    delivering AS 1301 / ISA 260 communications with AI has no public evidence. The PCAOB added a research project on
+    communications with audit committees to its agendas dated 2026-09-30 (TR-PCAOBAGENDA-2026, in the module).
+
+- id: assurance-completion-reporting-10
+  title: "Predictive model or LLM gives the auditor a going-concern signal to set against their own judgment (BDO Netherlands thesis experiment; a Spanish audit firm)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [expert-judgment, research-synthesis]
+  pattern: document-to-decision
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: piloting
+  problem: >-
+    Going-concern assessment is a matter of significant judgment, and regulators asked for more scepticism during
+    the COVID-19 period (2022 paper). A 2025 thesis says traditional machine-learning bankruptcy models struggle with
+    complex, unstructured data and that LLM use for going-concern assessment of healthcare organisations had not
+    been explored.
+  solution: >-
+    In Spain, the authors built a decision tree from quantitative indicators such as Z-scores and qualitative factors
+    such as partners' judgment and industry risk; an audit firm used it as a supplemental guide and compared its
+    suggestions with the auditors' reports. In the Netherlands, a prompt-optimised LLM (built with DSPy) combined
+    structured financial data with audit-report text to predict bankruptcy within two years, and showed BDO
+    accountants the prediction plus a model-generated summary of one auditor's-report page. ISA 570 (Revised 2024)
+    lists predictive bankruptcy or insolvency models as an example of automated tools in risk assessment.
+  outcomes:
+    - lever: quality
+      description: "Accuracy on 20 case-study organisations: model versus accountants with and without the LLM"
+      figure: "model 85%; control group 77%; LLM-assisted group 78%"
+      measures: "Share of organisations correctly classified as bankrupt or not within two years, on 20 healthcare organisations from the model's test set; two groups of five BDO accountants."
+      provenance: independent
+      source_ref: LEIDEN-GC-2025
+    - lever: quality
+      description: "Cross-validated model accuracy on the full sample"
+      figure: "up to 79%"
+      measures: "Accuracy of the best prompt optimiser (COPRO) in stratified 3-fold cross-validation over 82 Dutch healthcare organisations (41 bankrupt, 41 matched non-bankrupt)."
+      provenance: independent
+      source_ref: LEIDEN-GC-2025
+    - lever: speed
+      description: "No difference in speed"
+      figure: "18.4 organisations per participant in both groups"
+      measures: "Average number of organisations assessed per participant within a 45-minute limit."
+      provenance: independent
+      source_ref: LEIDEN-GC-2025
+    - lever: quality
+      description: "Agreement between the decision tree and the auditors' going-concern conclusions in the Spanish firm's test"
+      figure: "not stated as a percentage in the abstract"
+      measures: "Abstract wording: the model's predictions were significantly similar to the auditors' assessments, indicating a high level of accuracy; number of engagements not given."
+      provenance: independent
+      source_ref: BERETTA-GC-2022
+  prerequisites:
+    - "Financial indicators for the entity plus partner-level qualitative inputs (BERETTA-GC-2022)."
+    - "Structured financial data and audit reports for comparable organisations; expert-selected features performed better than automatic selection (LEIDEN-GC-2025)."
+  risks_and_guardrails:
+    - "The LLM-assisted group did slightly better only on edge cases (67% versus 60%); overall accuracy and speed did not differ (LEIDEN-GC-2025, section 4.3)."
+    - "The thesis setting was structured and the sample small; it was not a replica of a real audit (LEIDEN-GC-2025, section 3.6)."
+    - "The Spanish model was used as additional audit evidence and a supplemental guide, not a replacement for the auditor's conclusion (BERETTA-GC-2022)."
+  human_checkpoints:
+    - "The accountant makes the going-concern call; the model prediction and summary are inputs (LEIDEN-GC-2025)."
+    - "Differences between the model's proposed outcome and the auditors' final conclusion were investigated (BERETTA-GC-2022)."
+  role_evolution: >-
+    All thesis participants said they would use the model in real evaluations and valued it for highlighting key
+    financial indicators (LEIDEN-GC-2025).
+  evidence_grade: B
+  sources:
+    - {ref: LEIDEN-GC-2025, title: "Evaluating LLMs in Practice: Enhancing Going Concern Assessments for Healthcare Organizations (master's thesis)", publisher: "Leiden University (LIACS), with BDO Netherlands as company supervisor", type: academic, url: "https://theses.liacs.nl/pdf/2024-2025-JongTdeTessa.pdf", date: "2025-04-14", access: full, locator: "abstract; sections 3.6 and 4.3"}
+    - {ref: BERETTA-GC-2022, title: "Decision Tree Tool for Auditors' Going Concern Assessment in Spain", publisher: "International Journal of Digital Accounting Research (Universidad Pontificia Comillas repository record)", type: academic, url: "https://repositorio.comillas.edu/items/17c90a44-9e11-4354-b05c-0875629bd585", date: "2022-10-01", access: full, locator: "abstract"}
+    - {ref: IAASB-ISA570-2025, title: "International Standard on Auditing 570 (Revised 2024), Going Concern (final pronouncement)", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2025-04/IAASB-ISA570-Going-Concern-Revised.pdf", date: "2025-04-09", access: full, locator: "application material para A13"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-14 and governance-08. Governance graded the thesis A because BDO Netherlands is named and
+    the outcome is measured; downgraded to B here because it is a ten-person student experiment on historical cases,
+    not live engagement work, and it found no accuracy or speed gain. The Spanish firm is unnamed and the 2022 study
+    is classical machine learning, older than the 12-18 month window. No 2025-2026 firm deployment for going concern
+    was found; treat this as the best measured result, not proof of value.
+
+- id: assurance-completion-reporting-11
+  title: "Idea: automated tools run sensitivity analysis on management's going-concern assessment and test the reliability of its data (ISA 570 Revised 2024)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: full-population-testing
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    The IAASB says ISA 570 (Revised 2024) significantly enhances the auditor's work in evaluating management's
+    going-concern assessment and strengthens communication with those charged with governance and in the auditor's
+    report. It takes effect for periods beginning on or after 15 December 2026.
+  solution: >-
+    The standard's application material says automated tools and techniques may assist with sensitivity analysis of
+    management's assessment (for example discount or growth rates) and with evaluating the reliability of large
+    volumes of data from several sources used by management. It also gives analytical procedures on key financial
+    ratios as an example of tool use in risk assessment.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "The standard gives examples, not results."
+      provenance: independent
+      source_ref: IAASB-ISA570-2025
+  prerequisites:
+    - "Management's assessment covering at least twelve months from the approval date of the financial statements, or an auditor request to extend it (IAASB-ISA570-2025, para 21)."
+  risks_and_guardrails:
+    - "The standard says tools 'may' assist; it sets no requirement and no quality criteria for them (IAASB-ISA570-2025, paras A13, A42, A46)."
+    - "The PCAOB's going-concern standard (AS 2415) is a different, older text; its project page says the work 'may examine' how technology affects the evaluation, with no proposal (PCAOB-AGENDA-2026)."
+  human_checkpoints:
+    - "The auditor evaluates management's method, assumptions and data (IAASB-ISA570-2025)."
+  role_evolution: "Not described in the sources."
+  evidence_grade: D
+  sources:
+    - {ref: IAASB-ISA570-2025, title: "International Standard on Auditing 570 (Revised 2024), Going Concern (final pronouncement)", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2025-04/IAASB-ISA570-Going-Concern-Revised.pdf", date: "2025-04-09", access: full, locator: "para 21; application material A13, A42, A46"}
+    - {ref: IAASB-ISA570PAGE-2025, title: "ISA 570 (Revised 2024), Going Concern (landing page)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/publications/isa-570-revised-2024-going-concern", date: "2025-04-09", access: full, locator: "landing page: effective for periods beginning on or after 15 December 2026"}
+    - {ref: PCAOB-AGENDA-2026, title: "Standard-Setting, Research, Rulemaking, and Related Activities", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/standards/standard-setting-research-projects", date: "2026", access: full, locator: "going-concern project entry; page undated, read 2026-10-16 through a text mirror"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea: a standard-setter's illustration; no public deployment found. From governance-09.
+
+- id: assurance-completion-reporting-12
+  title: "Idea: an LLM proposes candidate key or critical audit matters for comparison with the engagement team's list (research)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [expert-judgment, research-synthesis]
+  pattern: research-brief
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Auditors select key audit matters (KAMs; critical audit matters, CAMs, under PCAOB AS 3101) from the significant
+    matters communicated to those charged with governance, a matter of professional judgment. PCAOB feedback shows
+    differing views on how useful CAM disclosures are, and staff plan a further post-implementation review.
+  solution: >-
+    A 2026 University of Genoa master's thesis tested a large language model's ability to identify KAMs from the
+    annual report alone, compared its output with the KAMs in the audit reports, and discussed results with audit
+    partners from three firms. A December 2024 seminar abstract by an Iowa State researcher reports using generative
+    AI to identify CAM topics from filings and comparing them with the CAMs auditors reported.
+  outcomes:
+    - lever: quality
+      description: "Share of auditor-reported CAMs that AI could predict; CAMs found by both were associated with financial reporting risk and abnormal stock returns, while those found by only one side were not"
+      figure: "approximately 37%"
+      measures: "Share of auditor-reported CAMs predicted by AI, per the seminar abstract; sample and model not stated."
+      provenance: independent
+      source_ref: GUO-CAM-2024
+    - lever: quality
+      description: "The thesis reports the model can support KAM identification, with limits on client business context and judgment-heavy assessments"
+      figure: "none published (no figures in the abstract)"
+      measures: "Qualitative result from the thesis abstract."
+      provenance: independent
+      source_ref: UNIGE-KAM-2026
+  prerequisites:
+    - "Not applicable; research designs only."
+  risks_and_guardrails:
+    - "The thesis names limits on business-context understanding and judgment-heavy assessments (UNIGE-KAM-2026)."
+    - "The seminar authors expect AI to be less informative than auditors because it lacks professional judgment and access to private client information (GUO-CAM-2024)."
+  human_checkpoints:
+    - "The auditor decides which matters meet the CAM definition in AS 3101 (PCAOB-PIRCAM-2022); the thesis concludes AI can support the process without replacing professional judgement (UNIGE-KAM-2026)."
+  role_evolution: >-
+    The partners interviewed for the thesis agreed almost unanimously on usefulness for standardised tasks and
+    differed on discretionary ones (UNIGE-KAM-2026).
+  evidence_grade: D
+  sources:
+    - {ref: UNIGE-KAM-2026, title: "Artificial intelligence in auditing: an application to key audit matters (master's thesis)", publisher: "Universita degli studi di Genova", type: academic, url: "https://unire.unige.it/handle/123456789/16396", date: "2026-07-16", access: full, locator: "abstract and metadata (dc.date.issued)"}
+    - {ref: GUO-CAM-2024, title: "Man + machines: assessing the informativeness of critical audit matters identified by AI and human auditors (seminar abstract)", publisher: "Wuhan University Economics and Management School (speaker: Feng Guo, Iowa State University)", type: academic, url: "https://ems.whu.edu.cn/info/1900/263911.htm", date: "2024-12-17", access: full, locator: "abstract"}
+    - {ref: PCAOB-AGENDA-2026, title: "Standard-Setting, Research, Rulemaking, and Related Activities", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/standards/standard-setting-research-projects", date: "2026", access: full, locator: "section 'Post-Implementation Review for Critical Audit Matters'; page undated"}
+    - {ref: PCAOB-PIRCAM-2022, title: "Post-Implementation Review: Auditor Reporting (critical audit matters)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/oversight/standards/pir/auditor-reporting", date: "2022-12", access: full, locator: "key findings; reminder paragraph on AS 3101"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea: research only, no firm deployment. Merged from practice-15 and governance-10. The Guo item is a seminar
+    abstract; no paper was located. Search-only leads (an arXiv preprint predicting CAMs from 10-K MD&A text, a
+    Regensburg FinBERT study of KAMs) were not opened. No source on AI drafting of KAM or CAM wording was found.
+
+- id: assurance-completion-reporting-13
+  title: "GenAI and platform agents draft audit memos, completion documentation and preliminary conclusions for professional review, with source checks before sign-off"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [document-production, review-assurance]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: piloting
+  problem: >-
+    Teams write memos, presentations and documentation that record procedures, preliminary conclusions and judgments.
+    AI-drafted text can be fluent and wrong: Big4News reports EY Canada withdrew a report after an outside check found
+    16 of 27 references hallucinated, and argues partners' high-level review habits do not catch this. That was a
+    consulting report, not an audit document.
+  solution: >-
+    PCAOB staff reported in July 2024 that some firms let staff use GenAI for initial drafts of memos and
+    presentations related to the audit. Deloitte's June 2026 announcement lists executing preliminary procedures,
+    including drafting documentation and developing preliminary conclusions for professionals to review, among its
+    Omnia agent examples. Big4News proposes mandatory citation checks and disclosure of AI use; a verification gate
+    of this kind (a named person checks each cited source before sign-off) is an idea with no published deployment.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "No time or quality figure is given for memo or documentation drafting in the PCAOB or Deloitte sources, and no measurement of a verification gate was found."
+      provenance: independent
+      source_ref: PCAOB-GENAI-2024
+  prerequisites:
+    - "Firm safeguards on what data may be uploaded to GenAI tools (PCAOB-GENAI-2024, p.4)."
+    - "AI-drafted content identifiable as such, with source citations kept against each drafted statement."
+  risks_and_guardrails:
+    - "Some firms did not allow GenAI for audit or attest procedures because of data privacy and reliability concerns (PCAOB-GENAI-2024, p.4)."
+    - "FinancialAuditBench, a benchmark on synthetic engagements, found agents sometimes produce incorrect documentation (ARXIV-FAB-2026)."
+    - "The FRC lists omission, hallucination and distortion as deficient-output risks (FRC-GENAI-2026)."
+    - "Deloitte Australia partially refunded the Australian government for a 237-page advisory report with apparent AI-generated errors, including a fabricated court quote and nonexistent references (BNN-DELOITTEAU-2025); not an audit report."
+    - "RSM UAE warns that AI-drafted MD&A and footnotes can read plausibly while containing errors, and that unapproved consumer tools leave no validation trail (RSM-UAE-2026; a low-authority firm blog)."
+  human_checkpoints:
+    - "Firms said a team member who uses GenAI remains responsible for the output; some had not changed their supervision and review policies (PCAOB-GENAI-2024, pp.4-5)."
+    - "Professionals review the agents' preliminary conclusions (DELOITTE-OMNIA-2026)."
+  role_evolution: >-
+    PCAOB staff reported that firms expected GenAI to augment, not replace, humans (PCAOB-GENAI-2024, p.4). Deloitte
+    says professionals will supervise, validate and work alongside AI (DELOITTE-OMNIA-2026). Big4News expects stronger
+    partner accountability to be needed (BIG4NEWS-2026).
+  evidence_grade: C
+  sources:
+    - {ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "pp.4-5, observations on GenAI in audits; supervision and review"}
+    - {ref: DELOITTE-OMNIA-2026, title: "Deloitte Unveils Connected Agentic Intelligence in Deloitte Omnia to Advance Audit & Assurance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/about/press-room/unveils-connected-agentic-intelligence-omnia-advance-audit-assurance.html", date: "2026-06-24", access: full, locator: "list of agent examples; closing paragraph on supervising AI"}
+    - {ref: BIG4NEWS-2026, title: "The Big Four AI Arms Race, Evergrande, Governance and Culture", publisher: "Big4News", type: press, url: "https://www.big4news.com/p/big-four-news-20-may-2026", date: "2026-05-20", access: full, locator: "section 'EY Canada Retracts Report after GPTZero Investigation'"}
+    - {ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "section 'Risk of deficient output'"}
+    - {ref: BNN-DELOITTEAU-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors", publisher: "BNN Bloomberg (Associated Press)", type: press, url: "https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/10/07/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "opening paragraphs"}
+    - {ref: RSM-UAE-2026, title: "Is AI already in your audit? The standards are still catching up", publisher: "RSM UAE", type: firm, url: "https://www.rsm.global/uae/node/274", date: "2026-08-24", access: full, locator: "section on AI-drafted disclosures"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Merged from practice-11, governance-14 and discourse-10 (the verification-gate idea, folded in as a guardrail
+    because it is a control rather than a separate AI use). Ladder augment (practice) over delegate (governance): the
+    sources describe drafts for review. The PCAOB evidence is staff-level, from 2024, does not name firms and is not
+    specific to completion memos. No source describes AI drafting a completion memo, a summary of uncorrected
+    misstatements, a representation letter or an audit report. A Bloomberg Law report of agents drafting staff memos
+    was seen only in search extracts and is not relied on. Big4News's claim that all four Big Four networks had
+    AI-content failures by August 2026 was not checked.
+
+- id: assurance-completion-reporting-14
+  title: "ChatGPT used in audit preparation, fieldwork and audit reporting in an internal audit function (Uniper)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [document-production, research-synthesis]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    Internal audit teams draft engagement reports and related documents as part of every audit.
+  solution: >-
+    The internal audit function of Uniper, a large multinational energy company, uses ChatGPT in audit preparation,
+    fieldwork and audit reporting tasks. The authors also report key risks and challenges and the practices and rules
+    Uniper adopted.
+  outcomes:
+    - lever: speed
+      description: "The function's estimate of efficiency gains from initial tests across various processes, including reporting"
+      figure: "50 to 80 percent (estimate)"
+      measures: "Abstract wording: based on initial tests, the internal audit function estimates efficiency gains ranging from 50 to 80 percent for various processes. Not split by process, so not a reporting-only figure; baseline not stated in the abstract."
+      provenance: self-reported
+      source_ref: EULERICH-2025
+  prerequisites:
+    - "Rules and practices for using ChatGPT set by the function (EULERICH-2025)."
+  risks_and_guardrails:
+    - "The paper reports key risks and challenges of using ChatGPT in internal audit and the practices Uniper adopted (EULERICH-2025)."
+  human_checkpoints:
+    - "Not described in the abstract."
+  role_evolution: >-
+    The study assessed internal auditors' perception of the effect on efficiency and effectiveness (EULERICH-2025).
+    An Internal Audit Foundation survey says most respondents use GenAI extensively or often for the planning or
+    reporting phases (IIA-RIDDLE-2024).
+  evidence_grade: B
+  sources:
+    - {ref: EULERICH-2025, title: "Leveraging ChatGPT for Enhancing the Internal Audit Process: A Real-World Example from Uniper, a Large Multinational Company", publisher: "Accounting Horizons (American Accounting Association)", type: academic, url: "https://doi.org/10.2308/HORIZONS-2023-111", date: "2025-04-24", access: full, locator: "synopsis (abstract), from the Crossref record"}
+    - {ref: IIA-RIDDLE-2024, title: "Solving the Riddle: Harnessing Generative AI for Internal Audit Activities", publisher: "Internal Audit Foundation with Wolters Kluwer TeamMate", type: professional-body, url: "https://www.theiia.org/en/content/research/foundation/2024/solving-the-riddle-harnessing-generative-ai-for-internal-audit-activities/", date: "2024-10-21", access: full, locator: "summary page"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    From practice-16. Capped at B: internal audit is adjacent to external audit completion, the efficiency figure
+    covers several processes and is an estimate, and only the abstract was read. It is the only named, measured
+    evidence of AI in audit report drafting found. A search-only lead on the UK Government Internal Audit Agency's
+    'Writing Engine' is not used.
+
+- id: assurance-completion-reporting-15
+  title: "Idea: an LLM reviews financial statements for errors and maps each to the accounting standard breached (benchmark research)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: document-to-decision
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    The benchmark authors say manual financial statement auditing is inefficient and error-prone and that auditors
+    still miss errors despite extensive verification.
+  solution: >-
+    One benchmark uses real financial tables with synthesised transaction data and a five-stage framework that maps
+    statement errors to the accounting standards violated. A separate unsupervised approach flags likely
+    misinformation in statements, and the financial variables behind it, using past statements and audit reports.
+  outcomes:
+    - lever: quality
+      description: "LLMs found statement errors when given historical transaction data, but were weak at explaining errors, citing the relevant standards and executing a complete audit with revisions"
+      figure: "none published (qualitative in the abstract)"
+      measures: "Qualitative result on the authors' benchmark; sample size not in the abstract."
+      provenance: independent
+      source_ref: ARXIV-LLMAUDIT-2025
+    - lever: quality
+      description: "The unsupervised method was demonstrated on a corpus of statements and audit reports"
+      figure: "11,460 financial statements over 5 years"
+      measures: "Size of the corpus used to demonstrate the method; accuracy figures not read."
+      provenance: independent
+      source_ref: ARXIV-FSMISINFO-2026
+  prerequisites:
+    - "Historical transaction data for the LLM benchmark (ARXIV-LLMAUDIT-2025); a corpus of past statements and audit reports for the unsupervised method (ARXIV-FSMISINFO-2026)."
+  risks_and_guardrails:
+    - "The five-stage benchmark's authors conclude there is a critical gap in domain-specific accounting knowledge (ARXIV-LLMAUDIT-2025)."
+    - "FinancialAuditBench found agents completed substantial portions of staff-level workpaper tasks well but sometimes performed inappropriate procedures or wrote incorrect documentation (ARXIV-FAB-2026)."
+  human_checkpoints:
+    - "The auditor explores flagged data sources and business processes to validate suggestions (ARXIV-FSMISINFO-2026)."
+  role_evolution: "Not described in the sources."
+  evidence_grade: D
+  sources:
+    - {ref: ARXIV-LLMAUDIT-2025, title: "Automating Financial Statement Audits with Large Language Models", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2506.17282", date: "2025-06-14", access: full, locator: "abstract"}
+    - {ref: ARXIV-FSMISINFO-2026, title: "Financial Audit Assistance using Misinformation Detection and Explanation", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2607.17797", date: "2026-07-20", access: full, locator: "abstract"}
+    - {ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea, with research results only. Merged from practice-17 (error-detection part) and governance-07. Model
+    capability benchmarks on synthetic or public data, not firm tools; abstracts only.
+
+- id: assurance-completion-reporting-16
+  title: "Idea: an LLM checks XBRL tagging and cross-document consistency in filed statements (benchmark research)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: assist
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: >-
+    Fieldguide says tagging errors, such as sign flips on credit balances and custom tags where a standard tag
+    existed, still draw SEC comments, and that one person should own the tagging review; auditors do not attest the
+    XBRL in that setting. The benchmark authors frame XBRL filings as a structured extraction and reasoning problem
+    across concepts, taxonomy relations and documents.
+  solution: >-
+    FinAuditing, a benchmark of 1,102 instances built from real XBRL filings (averaging over 33,000 tokens each),
+    tests whether LLMs can match concepts, extract taxonomy relations and reason mathematically across documents.
+  outcomes:
+    - lever: quality
+      description: "Thirteen models showed substantial gaps in concept retrieval, taxonomy-aware relation modelling and consistent cross-document reasoning"
+      figure: "1,102 instances; 13 models; no headline score in the abstract"
+      measures: "Count of annotated benchmark instances and models evaluated; per-task scores not read."
+      provenance: independent
+      source_ref: ARXIV-FINAUDITING-2025
+  prerequisites:
+    - "Filings in XBRL with a taxonomy the tool can use (ARXIV-FINAUDITING-2025)."
+  risks_and_guardrails:
+    - "Current models fail on cross-document reasoning in the benchmark; the authors call for realistic, structure-aware benchmarks (ARXIV-FINAUDITING-2025)."
+  human_checkpoints:
+    - "A named reviewer owns the tagging review (FIELDGUIDE-DISC-2026)."
+  role_evolution: "Not described in the sources."
+  evidence_grade: D
+  sources:
+    - {ref: ARXIV-FINAUDITING-2025, title: "FinAuditing: A Financial Taxonomy-Structured Multi-Document Benchmark for Evaluating LLMs", publisher: "arXiv (accepted at SIGIR 2026 Resource Track)", type: academic, url: "https://arxiv.org/abs/2510.08886", date: "2025-10-10", access: full, locator: "abstract; last revised 2026-05-17"}
+    - {ref: FIELDGUIDE-DISC-2026, title: "The 2026 audit disclosure checklist: What to add, and where judgment takes over", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/audit-disclosure-checklist-2026", date: "2026-08-06", access: full, locator: "section 'XBRL'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea (research only). Merged from discourse-12, governance-06 and practice-17 (FinAuditing part). Ladder assist
+    (governance, practice) over augment (discourse). The Fieldguide piece describes human review of tagging and does
+    not propose AI for it.
+
+- id: assurance-completion-reporting-17
+  title: "Idea: a reviewing agent checks the preparing agent's work before the human reviewer and partner sign"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: draft-review-loop
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: emerging
+  problem: >-
+    As agents prepare more of the file, human review becomes the bottleneck and the main control.
+  solution: >-
+    The AICPA practice aid (13 October 2026) says one AI tool may be used to help the auditor evaluate whether another
+    is performing correctly, without reducing supervision and review duties. The FRC guidance lists 'critic' among
+    an LLM's roles and says reviews may be done by humans, other LLMs or rules-based protocols. A DataSnipper
+    conference panel asked what a human attests to when one agent prepares, another reviews and a person signs.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "No measurement found."
+      provenance: independent
+      source_ref: AT-AICPAPA-2026
+  prerequisites:
+    - "A defined audit methodology the agents run inside, with traceable outputs."
+    - "Evaluation sets showing the reviewer agent catches what a person would."
+  risks_and_guardrails:
+    - "The second tool does not take the place of the auditor's supervision and review (AT-AICPAPA-2026)."
+    - "In DataSnipper's survey of 200+ audit and finance professionals, 80% were comfortable with AI extracting data and 38% with AI signing off (DATASNIPPER-AIREPORT-2026)."
+    - "A reviewer agent built on similar models may share the first agent's blind spots; no source tests this."
+  human_checkpoints:
+    - "The human reviewer and partner still sign (AT-AICPAPA-2026; DATASNIPPER-CONNECT-2026)."
+  role_evolution: >-
+    On the ICAEW podcast, Grant Thornton's director of audit and professional standards expected AI reviewing 'a few
+    years down the line' (ICAEW-POD-2025).
+  evidence_grade: D
+  sources:
+    - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraph beginning 'The guidance also said that, in an audit of financial statements, one AI tool may be used'"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "table of LLM roles; mitigations (human in the loop review)"}
+    - {ref: KN-FRC-2026, title: "Navigating Generative and Agentic AI: The FRC's Latest Expectations for Auditors", publisher: "Kingsley Napley", type: press, url: "https://www.kingsleynapley.co.uk/insights/blogs/regulatory-blog/navigating-generative-and-agentic-ai-the-frcs-latest-expectations-for-auditors", date: "2026-04-22", access: full, locator: "mitigations list, first item (reviews by humans, other LLMs or rules-based protocols)"}
+    - {ref: DATASNIPPER-CONNECT-2026, title: "The 6 Biggest Takeaways from DataSnipper Connect New York 2026", publisher: "DataSnipper", type: conference, url: "https://www.datasnipper.com/resources/the-6-biggest-takeaways-from-datasnipper-connect-new-york-2026", date: "2026-09", access: full, locator: "2026 audit trends panel section"}
+    - {ref: DATASNIPPER-AIREPORT-2026, title: "2026 AI Report: Everyone says AI is essential. Almost no one has embedded it.", publisher: "DataSnipper", type: survey, url: "https://www.datasnipper.com/resources/ai-report-2026-ai-in-audit-and-finance", date: "2026-06", access: full, locator: "landing-page summary of findings; month approximate"}
+    - {ref: ICAEW-POD-2025, title: "Behind the Numbers: How should audit firms use AI? (transcript)", publisher: "ICAEW", type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: "2025-11-11", access: full, locator: "section 'Understanding explainability and the need for human oversight'"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea (D), from discourse-09. Discussed by a standard-setter's practice aid, a regulator and practitioners, but no
+    named deployment was found. The DataSnipper survey is a vendor survey; its sample method is not stated beyond
+    '200+ audit and finance professionals'. The AICPA practice aid itself is behind a login; its content here comes
+    from Accounting Today's quotation.
+
+- id: assurance-completion-reporting-18
+  title: "Idea: an agent completes and reviews staff-level workpapers across the engagement file (benchmark research)"
+  archetype: assurance
+  module: completion-reporting
+  function: service-delivery
+  work_types: [document-production, review-assurance]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: emerging
+  problem: >-
+    Preparing and cleaning up workpapers consumes staff time before a reviewer can look at the file, and limited
+    access to proprietary audit data has constrained measurement of where agents can be relied on.
+  solution: >-
+    FinancialAuditBench sets 90 workpaper completion and review tasks across six synthetic engagements (about 179
+    files each) and evaluates eleven frontier models. Caseware has a Document Intelligence Agent in closed beta that
+    extracts information from source documents into workpapers.
+  outcomes:
+    - lever: quality
+      description: "Agents completed substantial portions of staff-level tasks well but sometimes performed inappropriate procedures or produced incorrect documentation"
+      figure: "90 tasks; 6 engagements of about 179 files; 11 models; no score in the abstract"
+      measures: "Counts of benchmark tasks, synthetic engagements, average files per engagement and models evaluated."
+      provenance: independent
+      source_ref: ARXIV-FAB-2026
+  prerequisites:
+    - "Firm-specific evaluation sets, since a public synthetic benchmark does not show performance on the firm's own files."
+  risks_and_guardrails:
+    - "Inappropriate procedures and incorrect documentation are the failure modes named (ARXIV-FAB-2026)."
+  human_checkpoints:
+    - "Professional review remains necessary where agents are not reliable (ARXIV-FAB-2026, abstract)."
+  role_evolution: >-
+    Fieldguide argues that review, not preparation, becomes the core of the job and that review hours rise at first
+    (FIELDGUIDE-REVIEW-2026); a vendor argument, not measured.
+  evidence_grade: D
+  sources:
+    - {ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract"}
+    - {ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: "2026-05-20", access: full, locator: "paragraph on the Document Intelligence Agent, in closed beta"}
+    - {ref: FIELDGUIDE-REVIEW-2026, title: "Review Is the New Prepare: The Auditor's Job in an Agent-First World", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/review-is-the-new-prepare", date: "2026-07-29", access: full, locator: "paragraphs 5-6 (review hours) and the developmental-objection section; on-page date label"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Idea (D). Merged from discourse-11 and governance-13. The benchmark's tasks are generic workpaper tasks, not
+    completion-stage steps, and the engagements are synthetic (built from differentially private statistics of
+    historical audits); no real engagement was tested.
