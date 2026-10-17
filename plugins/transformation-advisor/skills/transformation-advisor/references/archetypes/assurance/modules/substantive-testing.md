@@ -37,7 +37,7 @@ use; evidence-to-sample matching has the only per-task time figures; firms' own 
 | Design procedures | Tailor tests to assessed risks; choose all items, specific items or a sample | expert-judgment | GenAI used mostly for admin and research so far [PCAOB-GENAI-2024] |
 | Journal-entry and fraud testing | Score or filter entries, select, investigate, extend fraud work | review-assurance, data-reporting | Rules-based filters miss subtle patterns and flood teams with false positives (§3) |
 | Item selection and sample size | Risk-based selection; smaller samples where methodology allows | review-assurance, data-reporting | 46 of 420 inspected listed audits had a sampling finding (11%) in 2025 [IFIAR-SURVEY-2026] |
-| Evidence requests and confirmations | Request lists, client uploads; bank, AR/AP and legal confirmations | coordination-scheduling, transaction-processing | Manual chasing; PDFs and screenshots are easy to forge; BDO NL got 156+ bank files per engagement |
+| Evidence requests and confirmations | Request lists, client uploads; bank, AR/AP and legal confirmations | coordination-scheduling, transaction-processing | Manual chasing; PDFs and screenshots are easy to forge; BDO NL sometimes got 156+ bank files per engagement |
 | Vouching, tracing, tie-out | Match each item to invoices, contracts and bank activity; recompute; foot | review-assurance, transaction-processing | About two days per engagement (one practitioner); selections of hundreds of items; review backlog |
 | Contract and lease review | Extract terms and risk indicators for revenue and lease testing | research-synthesis, review-assurance | Long contracts; a screening summary mistaken for a full read [FRC-GENAI-2026] |
 | Substantive analytics | Build an expectation, compare, investigate differences | data-reporting | Only 11% of US firms surveyed automate it [CPACOM-ATR-2025] |
@@ -59,11 +59,11 @@ periods beginning on or after 15 Dec 2026 [IAASB-ED330-2026; IAASB-ISA240-2025].
 
 **What the work looks like now (`#01`).** A tool scores every ledger entry with machine-learning and statistical
 models, alongside rules; auditors drill down and investigate entries above a threshold. Named users: Buzzacott, BDO UK
-(firm-wide after a trial, June 2026), KPMG (MindBridge feeding Clara) and EY (Canvas processes more than 1.4 trillion
+(across its audit practice after a trial, June 2026), KPMG (MindBridge feeding Clara) and EY (Canvas processes more than 1.4 trillion
 journal-entry lines a year). The FRC's hypothetical example weights an unsupervised model and rules-based routines in
 one tool and shows which features made an item unusual [FRC-AIAUDIT-2025].
 
-**Follow-up is the new bottleneck (`#03`).** MindBridge announced evidence-linked triage in Sep 2026. The FRC warns
+**Follow-up is the new bottleneck (`#03`).** MindBridge announced (Sep 2026) a capability linking evidence, analytics and assertions, with explainable full-population risk detection. The FRC warns
 that a flagged item may be fine while similar unflagged items are the risky ones, so follow-up must go beyond the list.
 
 **Research frontier (`#02`, idea).** A language model that flags entries and explains why. On a synthetic ledger,
@@ -79,7 +79,8 @@ and provenance independently (`#04`). Preparedness is low: of 713 anti-fraud pro
 GenAI document fraud and forgery over two years and only 7% say their organisation is more than moderately prepared
 [SAS-ACFE-2026]; of 373 internal-audit leaders, 65% name fabricated invoices or documents among top concerns and 62%
 say they are unprepared or minimally prepared [IIA-AIFRAUD-2026]. When the client's own AI produces entries or
-accruals, the AICPA says auditors may test the outputs substantively or must test controls (`#05`, idea; see `CT#15`).
+accruals, the AICPA says auditors may test the outputs substantively and, if that is not enough, should test controls (`#05`,
+idea; see `CT#15`).
 
 **Guardrails specific to this area.** Run rules-based routines alongside any model (an unsupervised model misses
 entries that are consistently miscoded); document why use criteria were met; run with and without the tool to check
@@ -148,7 +149,7 @@ Ask in the person's setting (audit firm partner or manager, methodology or innov
 4. **"When an agent's match disagrees with a person, who wins, how often, and where is it recorded? Any parallel-run
    results?"** Reveals quality evidence; IFIAR suggests false positives and negatives against a manual sample.
 5. **"How do you evidence completeness and reliability of client data before a tool runs, including external
-   information the client gives you electronically?"** Reveals readiness for AS 1105.10A and AFM's main finding.
+   information the client gives you electronically?"** Reveals readiness for AS 1105.10A and an AFM inspection finding.
 6. **"How do you know a document is authentic before you vouch to it? Which confirmations still arrive as PDFs,
    screenshots or email?"** Reveals exposure to AI-forged evidence (`#04`, `#17`).
 7. **"Who decided a tool's output was persuasive enough to reduce or replace a sample, and what does the file
@@ -210,8 +211,8 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
   [SEC-TAAORDER-2024]: AS 1105.10A (understand the source and handling of external information the company provides
   electronically, and test it or the controls over it), AS 2301.48 (what a test of details is), AS 2301.49-.50
   (investigate items the criteria identify) [PCAOB-PS2025-004; PCAOB-STAFF-1105-2025]. The Board says they do not
-  address AI as such [PCAOB-TAA-2024]. All six commenters asked for implementation guidance and PwC would not support
-  them without it [SEC-TAAORDER-2024]. New confirmation standard: paper and electronic, confirm third-party cash or
+  address AI as such [PCAOB-TAA-2024]. All commenters said implementation guidance was warranted, and PwC would not
+  support them without further amendment or interpretive guidance [SEC-TAAORDER-2024]. New confirmation standard: paper and electronic, confirm third-party cash or
   access external data directly [PCAOB-CONFIRM-2023].
 - **AICPA.** SAS No. 150 (confirmations, published 13 Jul 2026) and SAS No. 151 (fraud, published 19 Aug 2026) take
   effect for periods ending on or after 15 Dec 2028 [JOFA-SAS150-2026; JOFA-SAS151-2026]. The 13 Oct 2026 practice aid
@@ -224,7 +225,7 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
 - **FRC (UK).** June 2025 journal-testing example [FRC-AIAUDIT-2025]; March 2026 generative and agentic AI guidance with
   a contract-review example: risks are deficient output, misuse of output and non-compliant methodology; outputs need
   not match the persuasiveness of the procedure replaced if the methodology does not overstate them [FRC-GENAI-2026].
-  The six largest UK firms did no formal monitoring of tools' audit-quality impact [FRC-ATT-2025].
+  The six largest UK firms did no formal monitoring to quantify tools' audit-quality impact [FRC-ATT-2025].
 - **IFIAR and others.** Keep auditors in control; consult regulators early where AI decides without a human; define
   "human-led" [IFIAR-TTF-2025; IFIAR-TTF-2026]. AFM: auditors often do not verify input-data reliability, especially
   with weak IT general controls [AFM-BB-2025]. IRBA: add procedures to verify the authenticity of evidence [IRBA-AI-2024].
@@ -252,7 +253,7 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
   [CTRLCOUNCIL-WSJ-2026]; PwC hires engineers and dual-track CPA and data-science recruits [PWC-AT-2025]. AI-skilled
   roles were almost 7% of Big Four postings in 2025 against just under 3% for audit roles [COMPUTERWORLD-FT-2026].
 - **Juniors.** Upside: Sanville's first-years now do complex revenue testing. Risk: the PCAOB's acting chair said firms
-  may need new paths for juniors to build foundational skills [NYSSCPA-BOTIC-2025]; Thomson Reuters urges structured
+  and educators may need new paths for juniors to build foundational skills [NYSSCPA-BOTIC-2025]; Thomson Reuters urges structured
   development as work is automated [TRI-FOP-2026]. Deloitte adds "tutor mode" micro-training (`#22`).
 - **Reliance behaviour.** Auditors discount AI evidence relative to a human specialist, and defensive reactions can
   weaken skepticism (`#19`).
@@ -287,8 +288,8 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
   cannot be projected, and "we test everything" widens the expectation gap (`#24`, `#25`).
 - **"The savings figures are hype."** Mostly true: single named cases published by vendors, and PwC calls its own
   savings modest. Run in shadow mode and measure your own time per selection and override rate.
-- **"Regulators will penalise us."** None prohibits AI and the PCAOB amendments are in force; the FRC accepts less
-  per-item persuasiveness if not overstated. The risk is documentation and data reliability (§7).
+- **"Regulators will penalise us."** None prohibits AI and the PCAOB amendments are in force; the FRC says AI outputs
+  need not match the persuasiveness of the procedure replaced if the methodology does not overstate them. The risk is documentation and data reliability (§7).
 - **"LLMs give a different answer each time."** RSM UK's analytics director suggests a rules-based tool alongside AI
   [ICAEW-FRCVIEW-2026]; Ledgerline pairs agents with deterministic code.
 - **"Documents can be faked now, so matching is worthless."** Matching still helps but must be corroborated:
@@ -298,8 +299,8 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 - **"Small firms can't afford this."** A PIA Group leader says the business case "just doesn't hold up" for a firm of
   fifty [NYENRODE-SHIFTS-2026]. Yet Sanville (about 20 people) and Oberlander (a sole practitioner) report gains from
   vendor tools.
-- **"Clients will demand lower fees."** A secondary report says KPMG pressed its own auditor for about a 14% cut
-  citing AI [THEFINANCESTORY-KPMGFEE-2026; VERDANTIX-KPMGFEE-2026]; Sanville reports realisation rising instead.
+- **"Clients will demand lower fees."** A secondary report says KPMG pressed its auditor, Grant Thornton UK, for a fee
+  cut because of AI and got about 14% [THEFINANCESTORY-KPMGFEE-2026; VERDANTIX-KPMGFEE-2026]; Sanville reports realisation rising instead.
 
 ## 11. Sources
 
