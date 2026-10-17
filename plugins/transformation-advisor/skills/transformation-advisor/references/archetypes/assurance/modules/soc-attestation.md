@@ -1,11 +1,11 @@
 # SOC and attestation (assurance)
 
-Last reviewed 2026-10-16. Use cases live in `../use-cases/soc-attestation.yaml` (16 entries). `#05` means
+Last reviewed 2026-10-17. Use cases live in `../use-cases/soc-attestation.yaml` (16 entries). `#05` means
 `assurance-soc-attestation-05`. `CT-11` means `assurance-controls-testing-11` in the controls-testing module. That
 module already holds AI-assisted SOC testing (CT-11), SOC-cycle drafting of Section 3 and deviation responses
 (CT-12), reading vendor SOC reports (CT-13), platforms feeding examiners (CT-14) and evidence-fabrication screening
 (CT-23); use those ids here instead of looking for duplicates. Source keys in brackets are in the YAML or in §10.
-Almost every figure is self-reported or vendor-published. No independent measure of AI quality in SOC work exists.
+Almost every figure is self-reported or vendor-published. No independent measure of AI quality in SOC work was found.
 Everything about Delve is allegation: Delve denies it, and no regulator finding exists. Say both whenever it comes up.
 
 ## Contents
@@ -38,7 +38,7 @@ independence; AI as a productivity tool comes second.
 |---|---|---|---|
 | Scoping and acceptance | Choose SOC 1/2/3 or ISAE 3402, Trust Services categories (one to five), system boundary, Type 1 or 2, period; subservice organisations (outside providers) carved out or included; independence check | expert-judgment, coordination-scheduling | Platform referrals can set fee and timeline [JOFA-SOCETH-2026]; whether the client's AI is in scope is a new question [SD-TQA] |
 | Readiness and remediation | Gap assessment, policies, risk assessment, fixing failing tests | review-assurance, software-systems, document-production | Templated policies and risk questions miss industry risks [LINFORD-FAQ-2022] |
-| System description and assertion | Management writes Section 3 and asserts it is fair | document-production | Generic descriptions are the clearest template tell [CHIARO-VIBE-2026, KPMG-CHECKBOX-2026] |
+| System description and assertion | Management writes Section 3 and asserts it is fair | document-production | Two companies should never share a Section 3; identical text signals a template [CHIARO-VIBE-2026, KPMG-CHECKBOX-2026] |
 | Planning | Risk assessment, test plan, sample sizes | expert-judgment | Identical risk assessments and sample sizes across clients are flagged by peer review [JOFA-PRB] |
 | Walkthroughs and test of design | Meetings with control owners; flowcharts; design conclusion | research-synthesis, review-assurance | Many meetings and follow-ups (CT-01, CT-11) |
 | Evidence requests and collection | Requests, platform integrations, screenshots, exports | coordination-scheduling, data-reporting | Screenshots and Excel files; stale integrations; wrong populations [SCRUT-EVIDENCE-2026] |
@@ -64,19 +64,19 @@ platform-heavy: half the entries sit on the service-organisation side (`function
 - Improve: `#02` platforms draft policies, risk assessments and system descriptions (Vanta, Comp AI); a person
   approves each. `#03` AI-generated remediation snippets with expert approval (Vanta, Secureframe, Oneleet).
   `#04` cross-framework mapping and evidence reuse (A-LIGN: ~15 hours saved per extra framework, vendor figure).
-  CT-12: general AI drafting of Section 3 (45% of EY poll attendees) and deviation responses (41%).
+  CT-12: general AI for updating Section 3 (45% of EY poll attendees) and deviation responses (41%).
 - Automate: `#05` continuous control monitoring with agent-collected evidence (Vanta, Drata; named users Snyk,
-  WorkJam, Wispr Flow). Only vendor figures: 82% less prep time (IDC via Vanta), 4 hours a week.
+  WorkJam, Wispr Flow). Only vendor figures: 82% less time per audit (IDC via Vanta), 4 hours a week.
 
 **Walkthroughs, evidence and testing (service auditor)**
-- Improve: CT-11 and CT-01, KPMG UK: ~18% less testing time on recent SOC 1, SOC 2 and ISAE engagements with
+- Improve: CT-11 and CT-01, KPMG UK: ~18% less testing time on recent controls assurance engagements with
   Clara AI, Copilot and DataSnipper, the only firm-published measure. `#06` A-LIGN screens evidence against audit
   intent before fieldwork (Teleperformance: 30-40% less evidence time, vendor-published). `#07` Weaver's engagement
   platform and client portal (process change, little AI yet): realization up 10-12% in year one.
 - Automate: CT-14, the examiner pulls evidence from the client's platform (contested; see §6).
 - Delegate: `#08` Fieldguide's four agents (planner, auditor, reviewer, orchestrator) run a SOC engagement;
   announced, demo scheduled 13 Oct 2026; vendor figures (55% fewer hours, 4x capacity) are undefined.
-- Idea: CT-23, screening evidence for AI fabrication; ISACA authors report a fabricated document [ISACA-EVIDENCE-2026].
+- Idea: CT-23, screening evidence for AI fabrication; an ISACA Now author reports an AI-fabricated document [ISACA-EVIDENCE-2026].
 
 **Reporting**
 - Improve: `#09` Linford reviews draft reports with AI to catch details on late pages; it says it saves no time.
@@ -96,7 +96,7 @@ platform-heavy: half the entries sit on the service-organisation side (`function
 - `#16` AI-native CPA firm (Chiaro) publishes its method, tests complete populations by default and bundles
   readiness; one Type I issued, no Type II.
 
-**Coverage.** Ladder: assist 3, augment 7, automate 4, delegate 2. Scope: step 9, process 3, model 4. Delegate rests
+**Coverage.** Ladder: assist 4, augment 7, automate 3, delegate 2. Scope: step 9, process 3, model 4. Delegate rests
 on one announced product (`#08`) and one new firm's self-description (`#16`); no measured delegate deployment exists.
 No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outside KPMG UK.
 
@@ -144,15 +144,15 @@ No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outsid
 updating Section 3 45%, drafting deviation responses 41%, project management 29% [EY-SOC].
 
 **Vendor claims (grade C unless a named customer is attached; ask for measured cases)**
-- Vanta: 82% less audit prep time (an IDC finding Vanta quotes); AI agent saves 4 hours a week on average; WorkJam
+- Vanta: 82% less time per audit (Vanta cites IDC; study not shown); AI agent saves 4 hours a week on average; WorkJam
   ~1 hour a week instead of 7-8 (`#05`); questionnaire answers 95% accepted (`#10`).
 - A-LIGN: ~15 hours saved per extra framework (`#04`); Teleperformance 30-40% less evidence time, 25% less prep (`#06`).
 - Fieldguide: 55% fewer engagement hours, 90% less testing time, 4x capacity; firm and baseline not named (`#08`).
 - Weaver: realization up 10-12% in year one on an engagement platform, published by the vendor (`#07`).
 
 **Market and price (asking prices, not paid fees)**
-- Listed SOC 2 Type 2 fees in a lead-generation directory: specialist CPA firms $15,500-$50,000; full-service firms
-  $30,000-$80,000; Big Four $65,000-$200,000 [SOC2AUD-COST-2026]. Median ballpark quote $9,000 for companies of
+- Directory fee bands for SOC 2 Type 2, mostly the site's own estimates: specialist CPA firms $15,500-$50,000;
+  full-service $30,000-$80,000; Big Four $65,000-$200,000 [SOC2AUD-COST-2026]. Median ballpark quote $9,000 for companies of
   1-50 staff; $9,500 for AI companies (middle half $7,000-$13,500); fastest listed fieldwork-to-report: 1 week (`#14`).
 - Vanta ~$300M ARR in April 2026, up ~69% (Sacra estimate); 16,000+ customers (Fortune, from Vanta) (`#05`).
 - A-LIGN benchmark (1,000+ respondents): 60% would switch auditors to improve the quality of the final report
@@ -173,8 +173,8 @@ review test); customer rejections or re-examinations; questionnaire answers spot
 - **TQA 9561 (11 Sep 2026; an AICPA technical Q&A, text behind a login).** AI creates no separate SOC model
   and no new criteria; relevance depends on whether AI is used in the services delivered or only internally. A SOC 1
   description must disclose AI's nature where it is part of the services and relevant to customers' financial
-  reporting. Third-party AI providers go through the subservice analysis. An auditor using AI stays responsible.
-  Avoid scope inflation [SD-TQA, DART-TQA-2026, AICPA-TQA9561-2026].
+  reporting. Third-party AI providers go through the subservice analysis. Schneider Downs adds that an auditor
+  using AI stays responsible and warns against scope inflation [SD-TQA, DART-TQA-2026, AICPA-TQA9561-2026].
 - **Criteria.** SOC 2 still uses the 2017 TSC with 2022 points of focus; no AI-specific criteria as of Oct 2026
   [AICPA-TSC-2023, CSA-SOC2, SOC2AUD-AICOS-2026]. A KPMG webcast page (22 Sep 2026) expects a restructuring with AI considerations; no
   effective date is announced [KPMG-SOC-2026].
@@ -182,20 +182,20 @@ review test); customer rejections or re-examinations; questionnaire answers spot
   consider tool coverage, reliability and consistency; do not rely on the tool alone; validate a sample of its
   results [LINFORD-TOOLS-2021, LINFORD-FAQ-2022, AICPA-FAQ-2026].
 - **Ethics staff on tool providers (6 and 13 Apr 2026).** Terms that shift control, judgement, fees or evidence
-  access to the provider threaten independence. The auditor sets the fee; disclose referral fees; avoid guaranteed
+  access to the provider can create independence threats. The auditor sets the fee; disclose referral fees; avoid guaranteed
   outcomes. If significant threats cannot be reduced by safeguards, performing the examination is not appropriate
   [JOFA-SOCETH-2026, AICPA-ESISOC-2026].
 - **Peer review alert (May 2026).** Identical reports, risk assessments, sample sizes and procedures can be judged
   nonconforming. A single file is often not enough; reviewers may compare about five engagements from different
   partners; outreach from 1 Jun 2026. Staff communication, not Board-approved guidance [JOFA-PRB, AICPA-REVALERT-2026].
 - **State law.** SOC is attest work for licensed CPAs; unlicensed signatories, or CPAs outside peer review, who sign
-  such reports violate state law. A SOC 2 report is not a "certification" [JOFA-PODSOC].
+  fraudulent reports violate state law. A SOC 2 report is not a "certification" [JOFA-PODSOC].
 - **Liability.** A CPA can be liable for a third party's false claims made on its behalf if it endorses them by act
   or omission [JOFA-FAST].
 - **ISAE 3402.** Enquiry must be combined with other procedures; subsequent-events duty ends at the report date
   (New Zealand adoption, paras 25 and 43-44) [XRB-3402-2026]. ISAE 3000 expert amendments apply from 15 Dec 2026 [FRC-620-2026].
 - **Coming.** ASB exposure drafts revising AT-C 105, 205 and 210 (Feb and Mar 2026) address baseline concepts and
-  sustainability, not AI; effective 15 Jun 2029 if finalised [JOFA-ATTEST-2026].
+  sustainability (the JofA summary does not mention AI); effective 15 Jun 2029 if finalised [JOFA-ATTEST-2026].
 - **Confidentiality.** Client evidence entered into generative AI tools may be shared with the tool's owners; the
   AICPA Code's guidance on outside service providers applies [CHIARO-WHO-2026].
 - **Model behaviour.** EY: AI may invent details even when told not to; agents may change behaviour to work around
@@ -213,19 +213,19 @@ responses to deviations. Customers decide reliance and test CUECs.
 
 ## 7. Roles and how they evolve
 
-- **Service-organisation compliance staff** move from evidence chasing to exception queues and "GRC engineering"
-  [SCRUT-EVIDENCE-2026, VANTACON-2026]; Vanta markets its agent as a GRC engineer the customer never hired (`#05`).
+- **Service-organisation compliance staff** keep scoping and exception decisions as tools automate retrieval
+  [SCRUT-EVIDENCE-2026]; "GRC Engineer" appears as a VantaCon speaker title [VANTACON-2026] (`#05`).
 - **Service auditors** spend less time collecting evidence and more on control execution and management oversight
   [KPMG-CHECKBOX-2026]. SOC leaders urge them to resist cutting hours and to set internal benchmarks for a
   thorough examination [JOFA-FAST]. The AICPA says SOC examiners need deep security and privacy expertise [JOFA-PODSOC].
 - **Warning signs** named by a specialist firm: testing offshored to unqualified staff, no walkthroughs, no partner
   review of the report [LINFORD-ASSURE-2026].
-- **Peer reviewers** do deeper, multi-engagement reviews of firms with SOC 2 practices [JOFA-PRB].
+- **Peer reviewers** of firms with SOC 2 practices dig deeper and, when risk is elevated, compare engagements [JOFA-PRB].
 - **Vendor-risk teams** treat a report as the start of due diligence and vet the signing CPA [KPMG-CHECKBOX-2026, WHISTIC-DELVE-2026].
 - **New roles, so far at vendors only**: Fieldguide's audit methodology lead and director of audit transformation for
   an "agentic operating model"; Drata's audit-firm alliances manager. No audit-firm job posting showing AI use in SOC
   work was found [FIELDGUIDE-JOBS-2026, DRATA-JOBS-2026].
-- **Skills**: AI literacy and digital forensics [ISACA-EVIDENCE-2026]; EY sees chief data strategy officers rising [EY-SOC].
+- **Skills**: AI literacy and digital forensics [ISACA-EVIDENCE-2026]; EY notes firms hiring chief data strategy officers [EY-SOC].
 
 ## 8. Frontier
 
@@ -234,8 +234,8 @@ responses to deviations. Customers decide reliance and test CUECs.
 - **2026-02-01** AICPA SOC 2 Working Group chair warns that "fast and easy" may cost quality; a SOC Quality Center
   badge is being explored [JOFA-FAST].
 - **2026-02-26 / 03-25** ASB attestation exposure drafts (effective 2029-06-15 if finalised) [JOFA-ATTEST-2026].
-- **2026-03-19 to 04-23** Delve: anonymous allegations, denied; Delve apologises and changes its auditor network
-  (3 Apr); Y Combinator parts ways; named customers move [DEEPDELVER-2026, DELVE-RECORD-2026, TC-DELVEYC-2026, TC-CONTEXT-2026].
+- **2026-03-19 to 04-23** Delve: anonymous allegations, denied; Delve apologises and says it will rebuild its
+  auditor network (3 Apr); Y Combinator parts ways; named customers move [DEEPDELVER-2026, DELVE-RECORD-2026, TC-DELVEYC-2026, TC-CONTEXT-2026].
 - **2026-03-20** Vanta launches compliance, third-party-risk and customer-trust agents [VERDICT-VANTA-2026].
 - **2026-04-06 to 06-01** AICPA ethics guidance, podcast, Peer Review alert and reviewer outreach [JOFA-SOCETH-2026, JOFA-PODSOC, JOFA-PRB].
 - **2026-08-04** Drata releases AI Agent Governance in limited availability; Chiaro publishes its SOC 2 method
@@ -246,7 +246,7 @@ responses to deviations. Customers decide reliance and test CUECs.
 - **2026-09-22** KPMG expects a TSC restructuring with AI considerations [KPMG-SOC-2026].
 - **2026-09-23** Linford: AI made compliance cheaper, not assurance [LINFORD-ASSURE-2026].
 - **2026-10-13** Fieldguide scheduled a live demonstration of agents running a SOC 2 engagement [FIELDGUIDE-WEBINAR-2026].
-- **2026-11-12** VantaCon, billed as "the AI governance event" (scheduled) [VANTACON-2026].
+- **2026-11-10 to 11-12** VantaCon, billed as "the AI governance event" (scheduled) [VANTACON-2026].
 - **2026-12-15** ISAE 3000 expert amendments take effect [FRC-620-2026]. Watch: AICPA inquiry outcome, TSC changes,
   SOC Quality Center, first national peer review data on SOC practices.
 
@@ -267,18 +267,18 @@ responses to deviations. Customers decide reliance and test CUECs.
 - **"Testing every item means certainty."** Chiaro's own caveat: a flawless census of an incomplete population
   proves nothing; reasonable assurance still applies (`#16`).
 - **"Delve proves the platforms are fraudulent."** The claims are unproven allegations, denied, from an anonymous
-  author. The AICPA stresses most SOC reports are done properly and most firms use technology appropriately [JOFA-PODSOC].
+  author. The AICPA says most service organisations hire credible firms and most firms use technology appropriately [JOFA-PODSOC].
 - **"No regulator will act."** A compliance podcast says regulators are unlikely to step in, so buyers must reassess
   due diligence [CPN-WEEDS-2026]. AICPA staff planned peer review outreach from 1 Jun 2026, and state law applies to signatories.
 
 ## 10. Sources
 
-Full details (title, publisher, type, URL, date, access) are in the YAML; the synthesis report maps keys to input refs.
+Full details (title, publisher, type, URL, date, access) are in the YAML.
 - **In the YAML, professional bodies and standard-setters:** JOFA-FAST, JOFA-PRB, JOFA-PODSOC, JOFA-SOCETH-2026, AICPA-SOC-2026, AICPA-REVALERT-2026, CSA-SOC2, XRB-3402-2026, OSCPA-PR-2026, LASCPA-PR-2026.
 - **In the YAML, firms and conferences:** EY-SOC, KPMG-CHECKBOX-2026, BAKERTILLY-TRUST-2026, LINFORD-ASSURE-2026, LINFORD-FAQ-2022, LINFORD-TOOLS-2021, GT-SOC2-2023, ALIGN-ASCEND-2026, ALIGN-BENCH-2026, WISPR-2026, CHIARO-METHOD-2026, CHIARO-BUNDLE-2026, CHIARO-AINATIVE-2026, CHIARO-WHO-2026, VANTACON-2026.
 - **In the YAML, vendors:** VANTA-AUDIT-2026, VANTA-AI-2026, VANTA-AUDITORS-2026, VANTA-VS-2026, DRATA-AGENTGOV-2026, DRATA-INTEGRITY-2026, DRATA-JOBS-2026, FIELDGUIDE-SOC-2026, FIELDGUIDE-WEBINAR-2026, FIELDGUIDE-JOBS-2026, FIELDGUIDE-WEAVER-2026, THOROPASS-2026, COMPAI-2026, SECUREFRAME-2026, ONELEET-2026, SCRUT-EVIDENCE-2026, WHISTIC-DELVE-2026, CYBERSECIFY-2026, SOC2AUD-FIRMS-2026, SOC2AUD-AICOS-2026, SOC2AUD-DELVE-2026.
 - **In the YAML, press and community:** VANTA-HNS-2025, VERDICT-VANTA-2026, FORTUNE-VANTA-2026, SACRA-VANTA-2026, TC-DELVE-2026, TC-WHISTLE2-2026, TC-DELVEYC-2026, TC-LITELLM-2026, TC-CONTEXT-2026, TC-COMPAI-2026, IANS-DELVE, DEEPDELVER-2026 (anonymous, unverified), DELVE-RESPONSE-2026, DELVE-CHANGES-2026, DELVE-RECORD-2026, HN-CHIARO-2026.
-- **Not in the YAML (all opened by the deep dives unless noted):**
+- **Not in the YAML (all opened and checked on 2026-10-17 unless noted):**
   - K-UKCA (KPMG UK, *Reimagining Controls Assurance with AI*, 2026-01, https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf); in controls-testing YAML.
   - EY-SOC-2025 (EY, *13th annual EY SOC Reporting Conference highlights*, 2025-08, https://www.ey.com/content/dam/ey-unified-site/ey-com/en-ch/insights/technology-risk/documents/ey-13th-annual-soc-reporting-conference-highlights.pdf).
   - SD-TQA (Schneider Downs, *AI in SOC Examinations: TQA Section 9561*, 2026-09-30, https://schneiderdowns.com/our-thoughts-on/ai-in-soc-examinations-what-the-aicpas-new-tqa-section-9561-means-for-service-organizations/); in controls-testing YAML.

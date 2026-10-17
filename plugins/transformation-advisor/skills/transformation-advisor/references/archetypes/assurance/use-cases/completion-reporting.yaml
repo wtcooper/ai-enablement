@@ -574,12 +574,13 @@
     - {ref: CPAB-AC-2026, title: "Audit Committee Insights: Perspectives from Across Canada", publisher: "CPAB", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/event-highlights/2026-audit-committee-insights-part-1-en.pdf", date: "2026-07", access: full, locator: "AI section of the forum summary"}
     - {ref: DELOITTE-ACPR-2026, title: "Enterprise Risk Management Takes the Lead, AI Governance Gains Urgency for Audit Committees (media alert on the Audit Committee Practices Report)", publisher: "Deloitte with the Center for Audit Quality", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-caq-announce-2026-audit-committee-practices-report.html", date: "2026-09-22", access: full, locator: "highlights list"}
     - {ref: PCAOB-AS1301, title: "AS 1301: Communications with Audit Committees", publisher: "PCAOB", type: standard-setter, url: "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1301", date: "2026", access: full, locator: "para .03; read through a text mirror"}
+    - {ref: TR-PCAOBAGENDA-2026, title: "PCAOB unveils first standard-setting, rulemaking agendas under chairman Logothetis", publisher: "Thomson Reuters Tax & Accounting", type: press, url: "https://tax.thomsonreuters.com/news/pcaob-unveils-first-standard-setting-rulemaking-agendas-under-chairman-logothetis/", date: "2026-10-01", access: full, locator: "research agenda (communications with audit committees); agendas dated 2026-09-30"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-13, discourse-08 and governance-12. The tool's function is ambiguous in the only source:
     it may read the committee's papers and minutes, the auditor's own required communications, or both. Drafting or
     delivering AS 1301 / ISA 260 communications with AI has no public evidence. The PCAOB added a research project on
-    communications with audit committees to its agendas dated 2026-09-30 (TR-PCAOBAGENDA-2026, in the module).
+    communications with audit committees to its agendas dated 2026-09-30 (TR-PCAOBAGENDA-2026).
 
 - id: assurance-completion-reporting-10
   title: "Predictive model or LLM gives the auditor a going-concern signal to set against their own judgment (BDO Netherlands thesis experiment; a Spanish audit firm)"

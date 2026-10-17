@@ -1,13 +1,13 @@
 # Use cases: assurance / acceptance-independence
-# Synthesised 2026-10-16 from the wave 1 landscape scan and the practice, discourse and governance deep dives
-# (research/runs/wave1/). Source refs are canonical keys; where the same document already has a key in the
-# controls-testing file (AICPA-PA, FRC-GENAI, IFIAR-2025F, VERDANTIX, CPACOM-ATR) that key is reused. The synthesis
-# report maps every key back to the input files' own refs.
+# Last reviewed 2026-10-16; sources re-opened and checked 2026-10-16. Source refs are canonical keys; where the same
+# document already has a key in the controls-testing file (AICPA-PA, FRC-GENAI, IFIAR-2025F, VERDANTIX, CPACOM-ATR)
+# that key is reused.
 # Two directions: entries 01-09 are AI or automation inside acceptance, KYC and independence work (thin, mostly
 # vendor-described); entries 10-15 are new acceptance and independence steps created by AI use (ideas from
 # guidance); entries 16-21 are structural change (private equity, alternative practice structures, AI-native firms,
 # fees), where the evidence is stronger but the AI link is often indirect.
-# No entry has a measured outcome for AI in acceptance, KYC or independence work. Where `ladder: assist` is used
+# No entry has a measured outcome for AI in acceptance, KYC or independence work (entry 21's fee figure is a fee
+# change, not a measure of AI performance). Where `ladder: assist` is used
 # for a human control step, the AI belongs to the client, a vendor or the firm's structure, and the value is nominal.
 
 - id: assurance-acceptance-independence-01
@@ -27,8 +27,8 @@
     and long completion times before an engagement letter goes out (INTAPP-CRETE-2024).
   solution: >-
     Crete Professionals Alliance feeds all member-firm data into a consolidated data warehouse. Intapp Conflicts
-    uses applied AI and predictive risk-scoring to search for and analyse potential conflicts and independence
-    impairments, so the compliance team concentrates on high-risk results (INTAPP-CRETE-2024). Intapp's product
+    uses applied AI and predictive risk-scoring to search for and analyse potential conflicts, so the compliance
+    team concentrates on results with high-risk issues (INTAPP-CRETE-2024). Intapp's product
     page describes AI that surfaces potential issues for analysts and escalation of independence issues to
     partners (INTAPP-CONFLICTS-2026).
   outcomes:
@@ -48,14 +48,13 @@
   evidence_grade: B
   sources:
     - {ref: INTAPP-CRETE-2024, title: "Crete Professionals Alliance uses Intapp to drive innovation and rapid growth in the highly regulated accounting market", publisher: "Intapp", type: vendor, url: "https://www.intapp.com/news/crete-pa-intapp-conflicts/", date: "2024-10-15", access: full, locator: "Addressing conflicts clearance; Multiplying success sections (read via text mirror)"}
-    - {ref: INTAPP-CONFLICTS-2026, title: "Conflicts and independence management for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/conflicts", date: "2026-10-16", access: full, locator: "Opening description; 'AI-assisted review'; 'Independence tracking' (page undated; retrieval date; read via text mirror)"}
+    - {ref: INTAPP-CONFLICTS-2026, title: "Conflicts and independence management for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/conflicts", date: "2026-07-29", access: full, locator: "Opening description; 'AI-assisted review'; 'Independence tracking' (date is the page's last-modified date)"}
     - {ref: IFIAR-2025F, title: "IFIAR Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix A, Table A.3, p. A-3"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-01. The only named, in-use AI acceptance or independence tool found in any angle. Vendor press
-    release with customer quotes, dated October 2024, outside the 12-18 month window. Graded B (named deployment,
-    no measurement). Intapp's claims of use at 16 of the top 20 firms (practice) and at 10+ top-25 firms
-    (landscape) were seen only in snippets or blocked pages and are not used.
+    The only named, in-use AI acceptance or independence tool found. Vendor press release with customer quotes,
+    dated October 2024, outside the 12-18 month window. Graded B (named deployment, no measurement). Intapp
+    claims of use at most top-20 or top-25 firms were seen only in snippets or blocked pages and are not used.
 
 - id: assurance-acceptance-independence-02
   title: Risk-scored acceptance and continuance workflow with automated data pull, routing to reviewers and AI request summaries
@@ -102,22 +101,23 @@
     - "Decisions route to reviewers for sign-off; higher-risk conflicts go to appropriate reviewers (KINGLAND-ACCEPT; KINGLAND-PA-2026)"
     - "In the prototype, the risk level guides the decision; the decision stays with the firm (CEBI-2024)"
   role_evolution: >-
-    Intapp says partners' time is freed from routine acceptance tasks (INTAPP-INTAKE-2026); Kingland says routing
-    lets a firm focus attention where risk is highest (KINGLAND-ACCEPT). No source measures either.
+    Intapp says its intake product frees up partners' time, and its white paper says automation reduces time partners
+    and senior staff spend on routine tasks (INTAPP-INTAKE-2026; INTAPP-WP-2018); Kingland says routing lets a firm
+    focus attention where risk is highest (KINGLAND-ACCEPT). No source measures either.
   evidence_grade: C
   sources:
-    - {ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/client-onboarding-continuance/", date: "2026-10-16", access: full, locator: "Opening description; 'AI request summaries'; 'Independence tracking' (page undated; retrieval date; read via text mirror)"}
+    - {ref: INTAPP-WP-2018, title: "Acceptance, continuance, and independence: Cost and compliance: necessity to revenue generator", publisher: "Intapp", type: vendor, url: "https://intapp.com/wp-content/uploads/2024/02/Acceptance-continuance-independence-in-accounting.pdf", date: "2018-10", access: full, locator: "PDF p. 6, acceptance row 'Improve efficiency' (date from PDF metadata; re-uploaded 2024-02)"}
+    - {ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/client-onboarding-continuance/", date: "2026-07-29", access: full, locator: "Opening description; 'AI request summaries'; 'Independence tracking' (date is the page's last-modified date)"}
     - {ref: KINGLAND-ACCEPT, title: "Client & Engagement Acceptance", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/client-engagement-acceptance", date: "2026-10-16", access: full, locator: "Solution description; 'AI Ecosystem' (page undated; retrieval date)"}
-    - {ref: KINGLAND-WP-2024, title: "Solving for Acceptance & Continuance", publisher: "Kingland", type: vendor, url: "https://blog.kingland.com/hubfs/Whitepapers/Public%20Accounting/PA%20TL%20-%20Solving%20for%20Acceptance%20%26%20Continuance.pdf", date: "2024-12-03", access: full, locator: "Workflow Configurability; Risk Radar & Escalation; Roll-forward Continuance"}
+    - {ref: KINGLAND-WP-2024, title: "Solving for Acceptance & Continuance", publisher: "Kingland", type: vendor, url: "https://blog.kingland.com/hubfs/Whitepapers/Public%20Accounting/PA%20TL%20-%20Solving%20for%20Acceptance%20%26%20Continuance.pdf", date: "2024", access: full, locator: "Workflow Configurability (p. 4); Risk Radar & Escalation and Roll-forward Continuance (p. 5); date from the copyright line, no day given"}
     - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Conflict Checking and AI framework sections (page undated; retrieval date)"}
     - {ref: IESBA-NAM-2026, title: "Emerging Technologies: A Characteristics-Based Approach to Ethical Considerations for Professional Accountants", publisher: "IESBA", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-07/Emerging-Technologies-Ethical-Considerations-for-Professional-Accountants.pdf", date: "2026-07-15", access: full, locator: "PDF pp. 10 and 14"}
-    - {ref: CEBI-2024, title: "Development of a decision support system for client acceptance in independent audit process", publisher: "International Journal of Accounting Information Systems", type: academic, url: "https://avesis.cumhuriyet.edu.tr/yayin/cffa6431-8a21-4556-a92e-66d0ba2e1092/development-of-a-decision-support-system-for-client-acceptance-in-independent-audit-process", date: "2024-06", access: full, locator: "Abstract only (vol. 53, article 100683)"}
-    - {ref: JB-JAR-2004, title: "Audit firm portfolio management decisions", publisher: "Journal of Accounting Research", type: academic, url: "https://academicnewsletter.sufe.edu.cn/info/413496", date: "2004-07-29", access: full, locator: "Abstract, via a third-party index page"}
+    - {ref: CEBI-2024, title: "Development of a decision support system for client acceptance in independent audit process", publisher: "International Journal of Accounting Information Systems", type: academic, url: "https://avesis.cumhuriyet.edu.tr/yayin/cffa6431-8a21-4556-a92e-66d0ba2e1092/development-of-a-decision-support-system-for-client-acceptance-in-independent-audit-process", date: "2024", access: full, locator: "Abstract only (vol. 53, article 100683); index page gives the year only"}
+    - {ref: JB-JAR-2004, title: "Audit firm portfolio management decisions", publisher: "Journal of Accounting Research", type: academic, url: "https://academicnewsletter.sufe.edu.cn/info/413496", date: "2004", access: full, locator: "Abstract, via a third-party index page (DOI 10.1111/j.1475-679X.2004.00153.x)"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-03, governance-01 and governance-05 (an idea, grade D: the machine-learning acceptance
-    scoring prototype, folded in here because it is the same change, risk-scored acceptance, and no firm uses it).
-    Product descriptions only; no named customer for either product. Intapp's named customer for the related
+    Includes the academic acceptance-scoring prototype (on its own an idea, grade D), because it is the same change,
+    risk-scored acceptance, and no firm uses it. Product descriptions only; no named customer for either product. Intapp's named customer for the related
     conflicts product is entry 01. JB-JAR-2004 is a pre-AI foundation study.
 
 - id: assurance-acceptance-independence-03
@@ -154,13 +154,14 @@
     the change as removing friction for clients and teams (GT-FENERGO-2026).
   evidence_grade: C
   sources:
-    - {ref: FENERGO-GT-2026, title: "Grant Thornton UK Selects Fenergo to Streamline Client Onboarding and Drive Efficiency", publisher: "Fenergo", type: vendor, url: "https://www.fenergo.com/newsroom/grant-thornton-uk-selects-fenergo-to-streamline-client-onboarding-and-drive-efficiency", date: "2026-03-04", access: full, locator: "Paragraphs 1-3 and quoted statements"}
+    - {ref: FENERGO-GT-2026, title: "Grant Thornton UK Selects Fenergo to Streamline Client Onboarding and Drive Efficiency", publisher: "Fenergo", type: vendor, url: "https://www.fenergo.com/newsroom/grant-thornton-uk-selects-fenergo-to-streamline-client-onboarding-and-drive-efficiency", date: "2026-03-03", access: full, locator: "Paragraphs 1-3 and quoted statements"}
     - {ref: GT-FENERGO-2026, title: "Faster starts, stronger safeguards: Grant Thornton upgrades client onboarding with Fenergo", publisher: "Grant Thornton UK", type: firm, url: "https://www.grantthornton.co.uk/news-centre/fenergo---march-2026/", date: "2026-03-04", access: full, locator: "Press release, paragraphs 1-3"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-02 and discourse-01. The firm is named but both releases say 'selected' or announce a
-    partnership; go-live and use are not stated, so maturity is announced and the grade is C. The only named audit
-    firm acceptance-tool announcement found.
+    The firm is named but both releases say 'selected' or announce a partnership, and the COO calls the platform
+    'the first key stage'; go-live and use are not stated, so maturity is announced and the grade is C. The only
+    named audit firm acceptance-tool announcement found. Fenergo's page shows 'published date March 3, 2026'; the
+    firm's release is dated 4 March 2026.
 
 - id: assurance-acceptance-independence-04
   title: AI-assisted AML onboarding at professional firms - document classification, client risk scoring and sanctions/PEP hit triage
@@ -182,10 +183,11 @@
     A vendor prototype entering pilot replaces email with document upload, OCR and AI document classification
     feeding a configurable client risk-scoring model mapped to EU anti-money-laundering directives and Cyprus
     rules; a language-model pipeline filters false positives from third-party screening results and presents the
-    remaining hits as a plain-language assessment with a confidence score. Its pilot firms are law, accounting and
-    corporate-service practices, not audit firms specifically (ZYGOS-AISENSE-2026). In the UK, the AML strategy of
-    15 Sep 2026 expects digital identity and AI to play a larger part in customer due diligence and commits the FCA,
-    HMRC and the Gambling Commission to encourage responsible AI use in AML compliance (UKGOV-AMLSTRAT-2026).
+    remaining hits as a plain-language assessment with a confidence score. The vendor writes for law firms,
+    accounting practices and corporate service providers; its trial firms are not named and are not described as
+    audit firms (ZYGOS-AISENSE-2026). In the UK, the AML strategy of 15 Sep 2026 says the government will support
+    the use of AI and digital ID to make customer due diligence quicker and easier, and says the FCA, HMRC and the
+    Gambling Commission will encourage responsible use of AI (UKGOV-AMLSTRAT-2026).
   outcomes:
     - {lever: quality, description: "Baseline problem measure from vendor user research, not a result of the tool", figure: "93% and 87%", measures: "Of 15 surveyed compliance professionals and managing partners: 93% still gathered onboarding information by unstructured email; 87% said clients routinely submitted incomplete information", provenance: vendor-published, source_ref: ZYGOS-AISENSE-2026}
     - {lever: capacity, description: "No accuracy, false-positive reduction or time-saving figure published; the vendor calls the false-positive filter its core innovation", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: ZYGOS-AISENSE-2026}
@@ -200,7 +202,7 @@
     - "HMRC is to monitor implementation so supervised firms do not adopt disproportionate or blanket checks (UKGOV-AMLSTRAT-2026, para 71)"
     - "Prototype only, with a 15-person survey; no validation data (ZYGOS-AISENSE-2026)"
   human_checkpoints:
-    - "Compliance officer decides on each screening case (ZYGOS-AISENSE-2026)"
+    - "The vendor says the AI does not replace the compliance officer, who receives cases already triaged and reasoned (ZYGOS-AISENSE-2026)"
     - "The money laundering reporting officer oversees compliance and decides on suspicious activity reports (ICAEW-AML-2026)"
   role_evolution: >-
     The vendor positions the compliance officer as reviewing pre-reasoned cases (ZYGOS-AISENSE-2026). ICAEW says AML
@@ -208,16 +210,15 @@
     accountant (ICAEW-AML-2026).
   evidence_grade: C
   sources:
-    - {ref: ZYGOS-AISENSE-2026, title: "Artificial Intelligence in AML Compliance", publisher: "Zygos (Softline Computer Systems)", type: vendor, url: "https://getzygos.com/?p=49476", date: "2026-02-10", access: full, locator: "Sections on what AI-SENSE set out to do and what was delivered"}
-    - {ref: UKGOV-AMLSTRAT-2026, title: "Anti-money laundering and asset recovery strategy: 2026 to 2029", publisher: "HM Treasury and Home Office (GOV.UK)", type: regulator, url: "https://www.gov.uk/government/publications/anti-money-laundering-and-asset-recovery-strategy-2026-to-2029", date: "2026-09-15", access: full, locator: "Paras 64-66, 70-72, 84-85"}
+    - {ref: ZYGOS-AISENSE-2026, title: "Artificial Intelligence in AML Compliance", publisher: "Zygos (Softline Computer Systems)", type: vendor, url: "https://getzygos.com/?p=49476", date: "2026-05-18", access: full, locator: "Sections on what AI-SENSE set out to do and what was delivered (first published 2026-02-10; the version read was modified 2026-05-18 and describes the project ending March 2026)"}
+    - {ref: UKGOV-AMLSTRAT-2026, title: "Anti-money laundering and asset recovery strategy: 2026 to 2029", publisher: "HM Treasury and Home Office (GOV.UK)", type: regulator, url: "https://www.gov.uk/government/publications/anti-money-laundering-and-asset-recovery-strategy-2026-to-2029", date: "2026-09-15", access: full, locator: "Strategy PDF linked from the page: paras 69-72, 84-85, and the System Prioritisation section"}
     - {ref: ICAEW-AML-2026, title: "AML latest updates and reviewer insights: key takeaways from our webinar", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/regulation/regulatory-news/regulatory-news-2026-06/aml-latest-updates-and-reviewer-insights-webinar", date: "2026-06", access: full, locator: "Companies House verification; Identity verification and ongoing monitoring; Technology and AI"}
     - {ref: TLT-AML-2026, title: "AML reform is accelerating: what firms should take from the UK's 2026-2029 strategy", publisher: "TLT LLP", type: press, url: "https://www.tlt.com/insights-and-events/insight/aml-reform-is-accelerating-what-firms-should-take-from-the-uks-2026-2029-strategy", date: "2026-09-18", access: full, locator: "Expected actions timeline"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from discourse-02, discourse-03 and governance-06 (an idea, grade D, on regulator-encouraged digital ID
-    and AI in customer due diligence). Grade C rests on the vendor pilot; the vendor serves small professional
-    practices in Cyprus, not audit firms. No accountancy-firm deployment, error rate or false-positive rate was
-    found. FCA good and poor practice examples on AI in AML are planned for 2026-27 (UKGOV-AMLSTRAT-2026, para 70);
+    Grade C rests on a vendor prototype in early client trials (production release planned Q2-Q3 2026); its risk
+    model is mapped to Cyprus and EU rules and it is not described as serving audit firms. No accountancy-firm
+    deployment, error rate or false-positive rate was found. FCA good and poor practice examples on AI in AML are planned for 2026-27 (UKGOV-AMLSTRAT-2026, para 70);
     transfer of accountancy AML supervision to the FCA is expected in 2028/29 (TLT-AML-2026).
 
 - id: assurance-acceptance-independence-05
@@ -234,7 +235,7 @@
   problem: >-
     Independence and conflict checks depend on a complete map of a client's affiliates (its "family tree"), often
     built by hand from filings and client documents. EY UK's Global Independence System holds family-tree data
-    validated by engagement teams (EY-TR-2025, p. 49). IFIAR counted 11 findings in 2025 on failing to keep a
+    validated by client-serving engagement teams (EY-TR-2025, p. 50). IFIAR counted 11 findings in 2025 on failing to keep a
     reliable tracking system for business relationships, financial interests and corporate family trees
     (IFIAR-2025F).
   solution: >-
@@ -250,23 +251,20 @@
     - "A firm restricted list and rules that the extracted structure feeds (KINGLAND-PA-2026)"
   risks_and_guardrails:
     - "A missed affiliate would pass through every downstream check; the vendor states no extraction accuracy figure (KINGLAND-PA-2026)"
-    - "The SEC's chief accountant says problems arise when firms partner with non-audit clients that also rely on audit clients, and that how firms monitor this is top of mind (STARLING-HOHL-2026)"
+    - "The SEC's chief accountant says problems arise when firms partner with non-audit clients that also rely on audit clients, and that understanding how pervasive this is and how firms monitor independence is top of mind (STARLING-HOHL-2026)"
   human_checkpoints:
     - "The tool walks professionals through building or updating a tree, so a person confirms the structure (KINGLAND-PA-2026)"
-    - "Engagement teams validate family-tree data in EY UK's (non-AI) system (EY-TR-2025, p. 49)"
-  role_evolution: >-
-    Not stated in the sources. The governance analyst infers that independence staff would move from assembling
-    trees to checking extracted ones.
+    - "Engagement teams validate family-tree data in EY UK's (non-AI) system (EY-TR-2025, p. 50)"
+  role_evolution: "Not stated in the sources."
   evidence_grade: C
   sources:
     - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Client Data and Family Tree Management; Restricted List Management (page undated; retrieval date)"}
-    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "p. 49, independence systems"}
+    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "Printed p. 50 (PDF p. 51), Global Independence System"}
     - {ref: IFIAR-2025F, title: "IFIAR Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix A, Table A.3, p. A-3"}
     - {ref: STARLING-HOHL-2026, title: "US SEC Weighs Audit Oversight Changes", publisher: "Starling Insights (summary of a Wall Street Journal interview)", type: press, url: "https://insights.starlingtrust.com/content/observations/us-sec-weighs-audit-oversight-changes", date: "2026-01-22", access: full, locator: "Paragraphs 2-3"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From governance-02, with the EY UK baseline from the practice module notes. Vendor description only; no named
-    customer. The Starling item summarises a Wall Street Journal interview with the SEC's chief accountant
+    Vendor description only; no named customer. The Starling item summarises a Wall Street Journal interview with the SEC's chief accountant
     published the month before; the interview itself was not read.
 
 - id: assurance-acceptance-independence-06
@@ -282,20 +280,21 @@
   maturity: announced
   problem: >-
     Independence is checked at points in time (acceptance, annual confirmations), so emerging issues surface late.
-    IFIAR's 2025 survey recorded 22 findings on failing to monitor firm and partner personal independence
-    (IFIAR-2025F). The SEC's chief accountant says how firms monitor independence is top of mind
-    (STARLING-HOHL-2026).
+    IFIAR's 2025 survey recorded 22 findings on failing to monitor firm staff and partner personal independence
+    (IFIAR-2025F). The SEC's chief accountant, speaking about firms' partnerships with non-audit clients, says how
+    firms monitor independence is top of mind (STARLING-HOHL-2026).
   solution: >-
     Kingland describes dashboards over a single data store joining independence, risk and engagement data to show
     trends for independence and risk leaders, a breach workflow that centralises intake, assessment, remediation
     and regulatory reporting, and a personal-independence tool that checks new holdings against the restricted
-    list; it says the dashboards support advanced analytics but does not say AI drives these functions
+    list within 24 hours of a trade. The one AI function it names here is reading broker statements to extract
+    holdings automatically; it says the dashboards support advanced analytics but does not say AI drives them
     (KINGLAND-PA-2026). Firms already run non-AI systems: EY UK's Global Monitoring System requires staff to enter
     securities held by them and their immediate families and notifies them when a security becomes proscribed
-    (EY-TR-2025, p. 49); Intapp sells brokerage-linked monitoring and pre-clearance (INTAPP-EMPCOMP-2026).
+    (EY-TR-2025, p. 50); Intapp sells brokerage-linked monitoring and pre-clearance (INTAPP-EMPCOMP-2026).
   outcomes:
     - {lever: risk, description: "Vendor says dashboards give real-time visibility of emerging issues instead of point-in-time review, and breach records are auditable. No measured result", figure: "none published", measures: "not applicable: descriptive vendor claim only", provenance: vendor-published, source_ref: KINGLAND-PA-2026}
-    - {lever: speed, description: "Vendor figure for the personal-independence check; automation, not AI, as described", figure: "within 24 hours of a trade", measures: "time within which new holdings are checked against the restricted list, per the vendor page", provenance: vendor-published, source_ref: KINGLAND-PA-2026}
+    - {lever: speed, description: "Vendor figure for the personal-independence check; broker-feed automation, not AI, as described", figure: "within 24 hours of a trade", measures: "time within which new holdings are checked against the restricted list, per the vendor page", provenance: vendor-published, source_ref: KINGLAND-PA-2026}
   prerequisites:
     - "Connected independence, risk and engagement data across the firm's business systems (KINGLAND-PA-2026)"
   risks_and_guardrails:
@@ -306,15 +305,14 @@
   role_evolution: "Not stated in the sources."
   evidence_grade: C
   sources:
-    - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Independence and Risk Monitoring; Breach Management; personal independence (page undated; retrieval date)"}
-    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "p. 49, Global Monitoring System"}
-    - {ref: INTAPP-EMPCOMP-2026, title: "Financial interest compliance software for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/employee-compliance/", date: "2026-10-16", access: full, locator: "Product page (undated; retrieval date; read via text mirror)"}
+    - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Independence and Risk Monitoring; Breach Management; Personal Independence and Financial Statement Processing (page undated; retrieval date)"}
+    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "Printed p. 50 (PDF p. 51), Global Monitoring System"}
+    - {ref: INTAPP-EMPCOMP-2026, title: "Financial interest compliance software for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/employee-compliance/", date: "2026-10-12", access: full, locator: "Product page (date is the page's last-modified date)"}
     - {ref: PCAOB-BOULAY-2026, title: "Final Report of Inspection, Boulay PLLP", publisher: "PCAOB", type: regulator, url: "https://boulaygroup.com/wp-content/uploads/2026/09/PCAOB-Final-Inpection-Report-Boulay-PLLP-9-14-2026.pdf", date: "2026-09-14", access: full, locator: "Part I.C, Independence, pp. 5-6"}
     - {ref: IFIAR-2025F, title: "IFIAR Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix A, Table A.3, p. A-3"}
     - {ref: STARLING-HOHL-2026, title: "US SEC Weighs Audit Oversight Changes", publisher: "Starling Insights (summary of a Wall Street Journal interview)", type: press, url: "https://insights.starlingtrust.com/content/observations/us-sec-weighs-audit-oversight-changes", date: "2026-01-22", access: full, locator: "Paragraph 2"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From governance-03, with the EY UK and Intapp employee-compliance baselines from the practice module notes.
     The PCAOB report is used only to show how independence is reported to the regulator; it found no Rule 3520
     non-compliance at that firm and says nothing about AI.
 
@@ -349,12 +347,11 @@
   evidence_grade: C
   sources:
     - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Partner Rotation section (page undated; retrieval date)"}
-    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "Independence practices, partner rotation"}
+    - {ref: EY-TR-2025, title: "EY UK 2025 Transparency Report", publisher: "EY UK", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/about-us/documents/ey-uk-2025-transparency-report.pdf", date: "2025-10", access: full, locator: "Rotation and long association section (UK PIE key audit partners rotate after five years)"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From governance-04. Pattern 'other': rule-constrained matching and recommendation. Included because rotation
-    is in the module scope. RSM's AI staffing tool (landscape CAQ-RSM-2026) concerns capacity planning and was not
-    opened in the deep dives.
+    Pattern 'other': rule-constrained matching and recommendation. Included because rotation is in the module
+    scope.
 
 - id: assurance-acceptance-independence-08
   title: Automated engagement-letter production
@@ -370,7 +367,8 @@
   problem: "Engagement letters are produced for every audit and must reflect the engagement's terms (CPACOM-ATR)."
   solution: >-
     Some firms use an automated solution for engagement letters. The survey item asks about 'automated solutions'
-    and does not say whether AI is used (CPACOM-ATR).
+    and does not say whether AI is used (CPACOM-ATR). Intapp markets automated creation and collection of
+    engagement letters inside its acceptance product, without naming customers (INTAPP-INTAKE-2026).
   outcomes:
     - {lever: capacity, description: "Share of surveyed firms with an automated engagement-letter solution (automation, not necessarily AI)", figure: "26%", measures: "share of respondents (54 US CPA firms with complete data) saying the firm has an automated solution for engagement letters; multi-select question", provenance: independent, source_ref: CPACOM-ATR}
   prerequisites:
@@ -383,10 +381,10 @@
   evidence_grade: C
   sources:
     - {ref: CPACOM-ATR, title: "2025 Audit Transformation Report (CPA.com and AICPA Audit Benchmark Survey)", publisher: "CPA.com (AICPA)", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Theme 1 chart 'For which of the following does the firm have an automated solution?', pp. 9-10; Appendix I for the sample"}
+    - {ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/client-onboarding-continuance/", date: "2026-07-29", access: full, locator: "'Engagement letter generation' (date is the page's last-modified date)"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-05; the same 26% figure is cited as adjacent in governance-08. Unnamed firms, so maturity is
-    emerging. Kept because engagement letters are in scope and nothing else covers their production; the AI role
+    Unnamed firms, so maturity is emerging. Kept because engagement letters are in scope and nothing else covers their production; the AI role
     is not evidenced. Nothing was found on AI-drafted engagement terms tailored to client risk.
 
 - id: assurance-acceptance-independence-09
@@ -402,27 +400,27 @@
   maturity: announced
   problem: >-
     Intapp's white paper says firms have treated acceptance, continuance and independence checking as a cost
-    centre, and argues the true cost and risk of each engagement are not known well enough to price it
-    (INTAPP-WP-2024).
+    centre, and asks whether firms have the data to know the true cost of each engagement and how to price it
+    given the true cost of risk (INTAPP-WP-2018).
   solution: >-
     Use historical firm data inside the automated acceptance process to set prices and terms to reflect expected
-    value, to target high-value clients, and to steer partners with whitelists and blacklists (INTAPP-WP-2024).
+    value, to target high-value clients, and to steer partners with whitelists and blacklists (INTAPP-WP-2018).
   outcomes:
-    - {lever: growth, description: "White paper lists 'potential revenue impact' ranges for automating acceptance, continuance and independence processes; estimates, not measured results", figure: "1.5-4% (informed pricing); 1-3% (strategic targeting); 0.05-1.5% (identifying ethical and business conflicts)", measures: "labelled 'potential revenue impact'; revenue base and method not stated", provenance: vendor-published, source_ref: INTAPP-WP-2024}
+    - {lever: growth, description: "White paper lists 'potential revenue impact' ranges for automating acceptance, continuance and independence processes; estimates, not measured results", figure: "1.5-4% (informed pricing); 1-3% (strategic targeting); 0.05-1.5% (identifying ethical and business conflicts)", measures: "labelled 'potential revenue impact'; revenue base and method not stated", provenance: vendor-published, source_ref: INTAPP-WP-2018}
   prerequisites:
-    - "Historical engagement cost and outcome data held in one place (INTAPP-WP-2024)"
+    - "Historical engagement cost and outcome data held in one place (INTAPP-WP-2018)"
   risks_and_guardrails:
-    - "The white paper does not discuss how pricing from risk data interacts with independence rules on fees or with the conflicts check (practice analyst's observation on INTAPP-WP-2024)"
+    - "The white paper does not discuss how pricing from risk data interacts with independence rules on fees or with the conflicts check (INTAPP-WP-2018)"
   human_checkpoints:
     - "Not stated in the source"
   role_evolution: "Not stated in the source."
   evidence_grade: C
   sources:
-    - {ref: INTAPP-WP-2024, title: "Acceptance, continuance, and independence: Cost and compliance: necessity to revenue generator", publisher: "Intapp", type: vendor, url: "https://intapp.com/wp-content/uploads/2024/02/Acceptance-continuance-independence-in-accounting.pdf", date: "2024-02", access: full, locator: "p. 5, 'Using the acceptance, continuance and independence processes to maximize revenue'"}
+    - {ref: INTAPP-WP-2018, title: "Acceptance, continuance, and independence: Cost and compliance: necessity to revenue generator", publisher: "Intapp", type: vendor, url: "https://intapp.com/wp-content/uploads/2024/02/Acceptance-continuance-independence-in-accounting.pdf", date: "2018-10", access: full, locator: "PDF p. 6, 'Using the acceptance, continuance and independence processes to maximize revenue' (date from PDF metadata; re-uploaded 2024-02)"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-04. Date from the file's upload path. The white paper is about automation in general; AI is not
-    the stated mechanism. Vendor estimate only. Pattern 'other': data-driven pricing and targeting.
+    The PDF was created in October 2018 and re-uploaded in February 2024, so it is older than the upload path
+    suggests. The white paper is about automation in general; AI is not the stated mechanism. Vendor estimate only. Pattern 'other': data-driven pricing and targeting.
 
 - id: assurance-acceptance-independence-10
   title: "Idea: extend acceptance and continuance to assess how heavily a client relies on AI in financial reporting, and whether the team can audit it"
@@ -447,8 +445,9 @@
     outputs, the more information the auditor may need, such as whether evidence can be gathered; heavy AI use may
     resemble reliance on external specialists and complex valuation models (AT-AICPAPA-2026). The AICPA release
     says auditors should address client AI reliance at the start of an engagement and check the team has the
-    skills needed (AICPA-PA). This is a new human assessment step, not AI performing the task; no firm practice
-    was found.
+    skills needed (AICPA-PA); the practice aid's first section covers how an organization's use of AI affects the
+    financial statement audit (JOFA-AIPA-2026). This is a new human assessment step, not AI performing the task; no
+    firm practice was found.
   outcomes:
     - {lever: risk, description: "none published", figure: "none published", measures: "not applicable", provenance: independent, source_ref: AT-AICPAPA-2026}
   prerequisites:
@@ -457,7 +456,7 @@
   risks_and_guardrails:
     - "The entity's use of AI does not change management's responsibility for the financial statements (AT-AICPAPA-2026)"
     - "If management lacks the understanding needed to take responsibility for AI outputs, that may indicate a lack of appropriate skills and competencies (AT-AICPAPA-2026)"
-    - "The practice aid is nonauthoritative; more guidance on risk of material misstatement and audit evidence is to be added (AICPA-PA)"
+    - "The practice aid is nonauthoritative guidance (AICPA-AIPAID-2026); more guidance on risk of material misstatement and audit evidence is to be added (AICPA-PA)"
     - "The AICPA release lists data, model, hallucination, explainability and bias risks to consider (AICPA-PA)"
   human_checkpoints:
     - "Engagement partner and firm risk function make the acceptance or continuance decision; the practice aid lists factors and does not describe a tool (AT-AICPAPA-2026)"
@@ -468,14 +467,15 @@
   sources:
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "Paragraphs on acceptance or continuance and on external specialists and complex valuation models"}
     - {ref: AICPA-PA, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "Section 'Considering an organization's use of AI'"}
+    - {ref: AICPA-AIPAID-2026, title: "Explore new AICPA guidance on artificial intelligence (AI) and the financial statement audit", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit", date: "2026-10-12", access: full, locator: "Resource page description and download panel ('nonauthoritative guidance'; download reserved for members)"}
     - {ref: JOFA-AIPA-2026, title: "AI and the audit: AICPA publishes practice aid to assist auditors", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/", date: "2026-10-13", access: full, locator: "Paragraphs 1-4"}
     - {ref: KPMG-HOHL-2026, title: "Q&A with Kurt Hohl, SEC chief accountant", publisher: "KPMG Board Leadership Center (interview of an SEC official)", type: firm, url: "https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html", date: "2026-05-27", access: full, locator: "Answer on AI and audit committees"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). Merged from practice-07, discourse-04 and governance-07. The practice aid is member-gated and was not
-    read by any angle; the acceptance wording is Accounting Today's paraphrase, which the discourse angle could not
-    confirm from the AICPA release alone. Guidance issued three days before this synthesis. The AI is the client's;
-    ladder and pattern are nominal.
+    Idea (D). The practice aid's download is reserved for AICPA members and was not read
+    (AICPA-AIPAID-2026); the acceptance wording is Accounting Today's paraphrase and quotation, which the AICPA
+    release supports only in general terms. Guidance issued in October 2026. The AI is the client's; ladder and
+    pattern are nominal.
 
 - id: assurance-acceptance-independence-11
   title: "Idea: engagement terms that address the firm's AI use and client-data consent"
@@ -524,10 +524,9 @@
     - {ref: IRISHTIMES-GT-2026, title: "Grant Thornton's UK boss defends private equity ownership", publisher: "The Irish Times (Financial Times syndication)", type: press, url: "https://www.irishtimes.com/business/2026/09/22/grant-thorntons-uk-boss-defends-private-equity-ownership/", date: "2026-09-22", access: full, locator: "Final paragraphs on AI and graduate hiring"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). Merged from practice-06, discourse-05 and governance-08. The practice aid's position comes from press
-    accounts that agree. The IRBA communique is older than 18 months and states it was itself generated by AI and
-    then reviewed. A low-authority CPE commentary (LearnFormula) cited by discourse was dropped. The governance
-    angle's adjacent 26% engagement-letter automation figure sits in entry 08.
+    Idea (D). The practice aid's position comes from press accounts that agree. The IRBA communique is older than
+    18 months and states that it was generated by artificial intelligence. The 26% engagement-letter automation
+    figure sits in entry 08.
 
 - id: assurance-acceptance-independence-12
   title: "Idea: audit-committee communication on the auditor's own AI use and its independence implications"
@@ -545,9 +544,9 @@
     AI use, and that his office asks auditors how they use AI to improve engagement-level quality and to monitor
     quality control (KPMG-HOHL-2026).
   solution: >-
-    A firm's account of its AI tools, vendors and alliances becomes part of the continuing relationship and of the
-    communication with those charged with governance (governance analyst's framing of KPMG-HOHL-2026). No firm
-    describes a standard communication on this topic.
+    Idea, prompted by the questions the SEC's chief accountant lists for audit committees (KPMG-HOHL-2026): a
+    firm's account of its AI tools, vendors and alliances becomes part of the continuing relationship and of the
+    communication with those charged with governance. No firm describes a standard communication on this topic.
   outcomes:
     - {lever: experience, description: "none published", figure: "none published", measures: "not applicable", provenance: independent, source_ref: KPMG-HOHL-2026}
   prerequisites:
@@ -565,7 +564,7 @@
     - {ref: ICAS-ATI-2026, title: "Confidence in audit remains high, but stakeholder expectations are evolving (Audit Trust Index 2026)", publisher: "ICAS (summarising CPIA research)", type: survey, url: "https://icas.com/news-insights-events/news/audit-assurance/confidence-in-audit-remains-high-but-stakeholder-expectations-are-evolving/", date: "2026-10-13", access: full, locator: "Survey findings on AI"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). From governance-14. The KPMG page is a Q&A with a regulator hosted by a firm; it reports the
+    Idea (D). The KPMG page is a Q&A with a regulator hosted by a firm; it reports the
     regulator's views, not KPMG's practice. Context: the ICAS Audit Trust Index (257 UK finance leaders, audit
     committee chairs and investors) found 79% satisfied with how audit firms deploy AI and technology, and the
     biggest concern was auditors becoming over-reliant on AI (ICAS-ATI-2026); it is not about independence. Also
@@ -607,6 +606,7 @@
   prerequisites:
     - "A register of AI tools and vendor contracts across the firm, including vendors that also serve attest clients (JOFA-SOCETH-2026; ACCWEEKLY-INDEP-2026)"
     - "A PEEC decision on how the APS interpretation treats technology vendors; a second exposure draft was under discussion in Aug 2026 (JOFA-PEEC-2026)"
+    - "Kingland markets a register of business, vendor and marketplace relationships overlaid on acceptance and conflict checks; it is not described as AI or as covering AI vendors specifically (KINGLAND-PA-2026)"
   risks_and_guardrails:
     - "If safeguards cannot eliminate significant threats, the firm should consider declining or discontinuing the engagement or the business arrangement (JOFA-SOCETH-2026)"
     - "IESBA's technology revisions strengthened independence provisions on self-review, assuming management responsibility and commercial dependencies (ICAS-IESBASNAP-2026)"
@@ -628,12 +628,13 @@
     - {ref: ICAS-IESBASNAP-2026, title: "IESBA issues snapshot on the ethical implications of using technology, including AI", publisher: "ICAS", type: professional-body, url: "https://icas.com/news-insights-events/news/ethics/iesba-issues-snapshot-on-the-ethical-implications-of-using-technology-including-ai/", date: "2026-07-14", access: full, locator: "Technology-related revisions, independence paragraph"}
     - {ref: IESBA-NAM-2026, title: "Emerging Technologies: A Characteristics-Based Approach to Ethical Considerations for Professional Accountants", publisher: "IESBA", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-07/Emerging-Technologies-Ethical-Considerations-for-Professional-Accountants.pdf", date: "2026-07-15", access: full, locator: "PDF p. 10"}
     - {ref: IESBA-EEA-2026, title: "Ethics is not the constraint on AI assurance. It is the foundation (EAA Congress presentation)", publisher: "IESBA", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-06/EAA_IESBA_Presentation_final.pdf", date: "2026-05", access: full, locator: "Slide 5, research questions"}
+    - {ref: KINGLAND-PA-2026, title: "Public Accounting", publisher: "Kingland", type: vendor, url: "https://www.kingland.com/public-accounting", date: "2026-10-16", access: full, locator: "Business Relationship Independence section (page undated; retrieval date)"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). Merged from practice-11 (vendor licensing classification under the APS draft), practice-12,
-    discourse-09 and governance-09. The AICPA article concerns SOC 2 tool providers and does not use the word AI;
+    Idea (D). Covers vendor licensing classification under the APS draft as well as contract review. The AICPA
+    article concerns SOC 2 tool providers and does not use the word AI;
     the AI extension is the commentators'. CL 16 is by an insider who builds an audit technology firm. Crete PA's
-    letter (CL 25) is from the same network as entry 01. The PICPA letter (CL 65) asks about added risks when a PE
+    letter (CL 25, dated 2026-04-28) is from the same network as entry 01. The PICPA letter (CL 65) asks about added risks when a PE
     portfolio technology company offers financial reporting software used by the attest firm's clients.
 
 - id: assurance-acceptance-independence-14
@@ -650,8 +651,8 @@
   problem: >-
     Large networks have firm-wide alliances with AI and cloud vendors: Deloitte is making Claude available to
     470,000 people (ANTHROPIC-DELOITTE-2025); KPMG is integrating it for more than 276,000 staff and will build
-    Claude-powered products with Anthropic (ANTHROPIC-KPMG-2026); EY's assurance agent framework runs on Microsoft
-    technology under a long-standing alliance (EY-CANVAS-2026). The SEC's chief accountant says the rules are
+    Claude-powered products with Anthropic (ANTHROPIC-KPMG-2026); EY's assurance agent framework is integrated with
+    Microsoft technology, which EY attributes to its strategic alliance with Microsoft (EY-CANVAS-2026). The SEC's chief accountant says the rules are
     fairly clear on direct business relationships with audit clients, but it becomes complicated when a firm
     partners with a non-audit client that uses an audit client in its service delivery (NYSSCPA-HOHL-2025).
   solution: >-
@@ -666,11 +667,11 @@
     - "A current register of audit clients, affiliates and commercial relationships, which IFIAR found some firms fail to maintain reliably (IFIAR-2025F)"
     - "A network-level register of alliances and co-developed offerings; no firm describes one in the sources"
   risks_and_guardrails:
-    - "Press reports in Aug 2026, citing the Financial Times and not confirmed at source, say Big Four AI alliances leave EY as the likely auditor of Anthropic; neither the firms nor Anthropic have confirmed this in any source read (CRYPTOBRIEFING-ANTHROPICEY-2026; FOURTHWEB-ANTHROPICEY-2026; BIG4NEWS-2026)"
+    - "Press reports in Aug 2026 (one linking to a Financial Times article that could not be opened) say Big Four AI alliances leave EY as the likely auditor of Anthropic; neither the firms nor Anthropic have confirmed this in any source read (CRYPTOBRIEFING-ANTHROPICEY-2026; FOURTHWEB-ANTHROPICEY-2026; BIG4NEWS-2026)"
     - "The SEC's chief accountant said 'there's nothing in the works to loosen the independence rule' (STARLING-HOHL-2026) and that the rules must stay fit for purpose when AI is integrated into audit delivery (KPMG-HOHL-2026)"
     - "Low-authority commentary argues AI alliances create operational dependence not covered by rules written for industrial companies (FOURTHWEB-ANTHROPICEY-2026)"
   human_checkpoints:
-    - "Not stated in the sources; the discourse angle suggests global independence leadership sign-off and audit-committee dialogue"
+    - "Not stated in the sources. Suggested check (idea): global independence leadership sign-off and audit-committee dialogue"
   role_evolution: "Not stated in the sources."
   evidence_grade: D
   sources:
@@ -686,10 +687,9 @@
     - {ref: IFIAR-2025F, title: "IFIAR Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix A, Table A.3, p. A-3"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). Merged from practice-13 and discourse-10. The alliances are firm-announced facts from primary releases.
-    That an independence consequence has occurred rests on secondary reports of an unopened Financial Times
-    article. A PwC alliance appears only in those secondary reports. The SEC remarks of Dec 2025 predate the KPMG
-    announcement. Disclosure: the research and synthesis model is made by Anthropic; its releases are used only for
+    Idea (D). The alliances are firm-announced facts from primary releases. That an independence consequence has
+    occurred rests on secondary reports; the Financial Times article one of them links to could not be opened. A PwC alliance appears only in those secondary reports. The SEC remarks of Dec 2025 predate the KPMG
+    announcement. Disclosure: this content was prepared with an Anthropic model; Anthropic's releases are used only for
     the fact and scale of the alliances.
 
 - id: assurance-acceptance-independence-15
@@ -735,9 +735,7 @@
   human_checkpoints:
     - "Independence and conflicts teams review before take-on approval (DELOITTE-UKTR-2025, Appendix 5)"
     - "Audit partner evaluates threats and safeguards for each proposed non-audit service (IESBA-APESB-2023, Scenario 2)"
-  role_evolution: >-
-    Not stated in the sources. The discourse angle infers that independence staff will need enough technical
-    understanding of AI services to classify them.
+  role_evolution: "Not stated in the sources."
   evidence_grade: D
   sources:
     - {ref: DELOITTE-UKTR-2025, title: "2025 Transparency Report (Deloitte LLP and Deloitte Limited)", publisher: "Deloitte UK", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2025/deloitte-uk-annual-review-2025-audit-transparency-report-accessible.pdf", date: "2025-11", access: full, locator: "Executive summary on AI assurance; ethics section on non-audit engagements; Appendix 5"}
@@ -754,9 +752,8 @@
     - {ref: ANTHROPIC-KPMG-2026, title: "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/anthropic-kpmg", date: "2026-05-19", access: full, locator: "Section on products for PE portfolio companies"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea (D). Merged from practice-14, discourse-11 and governance-10. Discourse graded its entry B because
-    Deloitte's pre-approval workflow is a named deployment; the synthesis grades the merged entry D because no
-    source shows that workflow (or any other) applied to AI services, which is the change this entry describes.
+    Idea (D). Deloitte's pre-approval workflow is a named deployment, but the entry is graded D because no source
+    shows that workflow (or any other) applied to AI services, which is the change this entry describes.
     The service offerings are real; whether any buyer is an audit client is not stated. Transparency-report
     publication dates are not printed in the documents (Deloitte UK from file metadata; KPMG Australia year only).
 
@@ -772,27 +769,28 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Private-equity (PE) investment, mostly through alternative practice structures (APS: attest work in a
-    CPA-owned firm, other services in an investor-backed entity linked by an administrative services agreement),
-    can create independence threats through investor holdings, network-firm status and shared services
-    (JOFA-NILSEN-2025). The PCAOB's acting chair said PE capital can finance investment in technology including AI
-    (AT-PCAOBPE-2025), and the SEC's chief accountant says APS can provide capital for new technology but introduce
-    risk, particularly to independence (TR-HOHL-2026). IFAC says new governance layers can dilute audit partners'
+    Private-equity (PE) investment enters the profession mainly through alternative practice structures (APS: attest
+    work in a CPA-owned firm, other services in an investor-backed entity linked by an administrative services
+    agreement), and the existing Code does not directly address some new structures (JOFA-NILSEN-2025). The PCAOB's acting chair said PE capital can finance investment in technology including AI
+    (AT-PCAOBPE-2025), and Thomson Reuters, reporting the SEC chief accountant's remarks, notes that APS can provide
+    capital for new technologies but can introduce risks, particularly to independence (TR-HOHL-2026). IFAC says new governance layers can dilute audit partners'
     control or oversight of client selection and engagement performance (IFAC-AQ-2026).
   solution: >-
-    Firms run a pre-transaction review with counsel and, where relevant, regulators: map which entities are network
-    firms and which individuals are covered members, draft the administrative services agreement, set
-    quality-management controls and investor education, then monitor (JOFA-NILSEN-2025). Grant Thornton UK's
+    AICPA guidance describes pre-transaction due diligence with legal counsel, regulators and standard setters; an
+    administrative services agreement drafted with regulation, ethics and compliance experts; quality-management
+    controls such as monitoring independence; investor and employee education; and a multipronged independence
+    evaluation that includes the network-firm interpretation (JOFA-NILSEN-2025). Grant Thornton UK's
     Cinven investment closed in early 2025 after regulatory approval, with the audit practice kept in its LLP and
-    advisory and tax moved to a new entity (AE-PE-2026). IFAC's concern points to reserving acceptance and
-    continuance authority to the audit entity so investor profit targets cannot decide client selection
-    (IFAC-AQ-2026). This is a human control process, not AI doing the work.
+    advisory and tax moved to a new entity (AE-PE-2026). IFAC is concerned that new governance layers can
+    dilute audit partners' oversight of client selection (IFAC-AQ-2026); reserving acceptance authority to the
+    audit entity is a suggested response (idea), not a described firm practice. This is a human control process,
+    not AI doing the work.
   outcomes:
     - {lever: risk, description: "Context measure of structural change, not an outcome of the review step", figure: "385 transactions in 2025, 139 involving audit firms", measures: "transactions (direct investments and roll-overs) involving accountancy and audit firms identified across Europe in 2025; 139 involved audit firms", provenance: independent, source_ref: AE-PE-2026}
     - {lever: risk, description: "Context measure of PE reach into public-interest-entity (PIE) audit", figure: "46 firms owned directly; 52 further PIE audit firms rolled up into them", measures: "per IFAC, direct PE investment has produced equity ownership in 46 firms that audit PIEs, and 52 PIE audit firms were acquired or rolled up into those 46 (data as of 30 Jun 2026)", provenance: independent, source_ref: IFAC-AQ-2026}
   prerequisites:
-    - "Counsel experienced in the Code and in state or national law; engagement with regulators and standard-setters; a draft administrative services agreement (JOFA-NILSEN-2025)"
-    - "Governance documents that reserve client acceptance authority to the audit entity (discourse analyst's reading of IFAC-AQ-2026)"
+    - "Legal counsel; engagement with regulators and standard setters; an administrative services agreement that addresses current and future resource needs (JOFA-NILSEN-2025)"
+    - "Idea prompted by IFAC's governance concern (IFAC-AQ-2026): governance documents that reserve client acceptance authority to the audit entity"
   risks_and_guardrails:
     - "Where the Code does not address a structure, such as PE with significant influence but not control, apply the conceptual framework and document safeguards (JOFA-NILSEN-2025)"
     - "The AICPA exposure draft (Dec 2025; comments closed 30 Apr 2026) separates significant influence from control and widens the network-firm definition; a second exposure draft was under discussion in Aug 2026 (JOFA-PEED-2025; JOFA-PEEC-2026)"
@@ -801,8 +799,8 @@
     - "PCAOB officials warned that PE-driven profit pressure could reduce staffing and specialists, and that roll-ups may reduce the number of firms auditing public companies (AT-PCAOBPE-2025)"
     - "The SEC's chief accountant said some PE-backed small firms left the public-company market because it is too expensive (NYSSCPA-HOHL-2025)"
   human_checkpoints:
-    - "Firm governance vote and regulator engagement before closing; independence consultation on the structure (discourse angle, from JOFA-NILSEN-2025 and AE-BEYONDPE-2025)"
-    - "Audit-entity leadership decides acceptance; independent oversight of the administrative services agreement (discourse angle, from IFAC-AQ-2026)"
+    - "Regulator engagement before closing: the FRC asks firms to engage early and with full candour, and Grant Thornton UK's deal closed after regulatory approval (FRC-PCLETTER-2024; AE-PE-2026)"
+    - "Suggested (idea, no firm describes it): audit-entity leadership decides acceptance, with independent oversight of the administrative services agreement"
   role_evolution: >-
     Ethics and independence leaders add transaction work to their role; Accountancy Europe says firms need expert
     legal, governance and transaction support (AE-BEYONDPE-2025). Audit partners' standing in firm governance is
@@ -810,9 +808,9 @@
   evidence_grade: B
   sources:
     - {ref: JOFA-NILSEN-2025, title: "Navigating outside investors: Safeguarding ethics and independence in evolving practice structures", publisher: "Journal of Accountancy (AICPA staff author)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/oct/navigating-outside-investors-safeguarding-ethics-and-independence-in-evolving-practice-structures/", date: "2025-10-24", access: full, locator: "Paragraphs on due diligence, administrative services agreement and multipronged approach"}
-    - {ref: AE-PE-2026, title: "Private Equity in European Accountancy and Audit Firms: an update on market activity, January 2025 - April 2026", publisher: "Accountancy Europe", type: professional-body, url: "https://accountancyeurope.eu/wp-content/uploads/2026/05/260629-Private-equity-investment-in-accountancy-and-audit-sector-in-EU-from-January-2025-to-April-2026.pdf", date: "2026-07", access: full, locator: "Market overview and Grant Thornton case"}
+    - {ref: AE-PE-2026, title: "Private Equity in European Accountancy and Audit Firms: an update on market activity, January 2025 - April 2026", publisher: "Accountancy Europe", type: professional-body, url: "https://accountancyeurope.eu/wp-content/uploads/2026/05/260629-Private-equity-investment-in-accountancy-and-audit-sector-in-EU-from-January-2025-to-April-2026.pdf", date: "2026-06", access: full, locator: "Market overview and Grant Thornton case (cover reads June/July 2026; file name dated 2026-06-29)"}
     - {ref: AE-BEYONDPE-2025, title: "Beyond private equity: third party ownership in the accountancy and audit sector (summary)", publisher: "Accountancy Europe", type: professional-body, url: "https://accountancyeurope.eu/wp-content/uploads/2025/11/251121-Beyond-Private-Equity-Third-Party-ownership-summary.pdf", date: "2025-11-21", access: full, locator: "Risks and governance mechanisms sections"}
-    - {ref: IFAC-AQ-2026, title: "Audit Quality: Considerations and Implications", publisher: "IFAC", type: professional-body, url: "https://www.ifac.org/private-equity-investment-accountancy/audit-quality-considerations-and-implications", date: "2026-06", access: full, locator: "Intro data paragraph and 'Governance' challenge"}
+    - {ref: IFAC-AQ-2026, title: "Audit Quality: Considerations and Implications", publisher: "IFAC", type: professional-body, url: "https://www.ifac.org/private-equity-investment-accountancy/audit-quality-considerations-and-implications", date: "2026", access: full, locator: "Intro data paragraph and 'Governance' challenge (page undated; data as of 2026-06-30)"}
     - {ref: JOFA-PEED-2025, title: "AICPA proposes changes to independence guidelines related to private equity", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2025/dec/aicpa-proposes-changes-to-independence-rules-related-to-private-equity/", date: "2025-12-19", access: full, locator: "Paragraphs 1-4"}
     - {ref: JOFA-PEEC-2026, title: "PEEC to continue discussions on alternative practice structures", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/", date: "2026-08-10", access: full, locator: "Paragraphs 1-3"}
     - {ref: FRC-PCLETTER-2024, title: "External private capital and UK audit firms (letter from the FRC CEO)", publisher: "Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/7733/Letter_on_private_capital_in_audit_firms.pdf", date: "2024-09-26", access: full, locator: "Paras 3-8 and the request for early engagement"}
@@ -821,11 +819,11 @@
     - {ref: NYSSCPA-HOHL-2025, title: "SEC's Chief Accountant Discusses Audit Inspections, Conflict-of-Interest Rule Changes", publisher: "New York State Society of CPAs", type: press, url: "https://nysscpa.org/news/1045145-secs-chief-accountant-discusses-audit-inspections-conflict-of-interest-rule-changes-2025-12-12", date: "2025-12-12", access: full, locator: "Final three paragraphs"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from discourse-06 (grade B) and discourse-14 (an idea, grade D, on safeguarding audit partners' control
-    of client selection). Grade B rests on Grant Thornton UK's completed, regulator-approved structuring; no measured
-    outcome exists, and the acceptance-authority safeguard itself is IFAC's concern, not a described firm practice.
+    Grade B rests on Grant Thornton UK's completed, regulator-approved structuring; no measured outcome exists, the
+    firm's own due-diligence steps are not described, and the acceptance-authority safeguard is an idea prompted
+    by IFAC's concern, not a described firm practice.
     Ladder and pattern are nominal: this is a human control step; the AI link is that PE capital is a stated route
-    to technology and AI investment. The Accountancy Europe date is the cover's June/July 2026 label.
+    to technology and AI investment. The Accountancy Europe cover shows both June and July 2026; the file name date is used.
 
 - id: assurance-acceptance-independence-17
   title: Screen prospective and continuing clients against the firm's investor group, and consult the regulator on grey areas
@@ -873,17 +871,16 @@
   evidence_grade: B
   sources:
     - {ref: IRISHTIMES-GT-2026, title: "Grant Thornton's UK boss defends private equity ownership", publisher: "The Irish Times (Financial Times syndication)", type: press, url: "https://www.irishtimes.com/business/2026/09/22/grant-thorntons-uk-boss-defends-private-equity-ownership/", date: "2026-09-22", access: full, locator: "Paragraphs 2-3 and the paragraph on consulting the FRC"}
-    - {ref: ICAEW-PE-2024, title: "Private equity investment in audit firms", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/regulation/working-in-the-regulated-area-of-audit/audit-regulations-and-guidance/private-equity-investment-in-audit-firms", date: "2024-10", access: full, locator: "FRC confirmation and covered-person paragraphs (page undated; month inferred)"}
-    - {ref: AICPA-APSED-2025, title: "Exposure draft: Proposed revisions related to alternative practice structures", publisher: "AICPA Professional Ethics Division", type: standard-setter, url: "https://assets.ctfassets.net/rb9cdnjh59cm/3M0CFAUnOquO2oDNiH0VF5/b8adc950ef4775cbe359349dc706cbbe/ethics-ED-APS-2025.pdf", date: "2025-12-29", access: full, locator: "Explanatory material paras 23 and 52-59; proposed .18b"}
+    - {ref: ICAEW-PE-2024, title: "Private equity investment in audit firms", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/regulation/working-in-the-regulated-area-of-audit/audit-regulations-and-guidance/private-equity-investment-in-audit-firms", date: "2024-10-25", access: full, locator: "FRC confirmation and covered-person paragraphs (page marked 'Published: 25 Oct 2024')"}
+    - {ref: AICPA-APSED-2025, title: "Exposure draft: Proposed revisions related to alternative practice structures", publisher: "AICPA Professional Ethics Division", type: standard-setter, url: "https://assets.ctfassets.net/rb9cdnjh59cm/3M0CFAUnOquO2oDNiH0VF5/b8adc950ef4775cbe359349dc706cbbe/ethics-ED-APS-2025.pdf", date: "2025-12-29", access: full, locator: "Explanatory material paras 23, 49 and 52-53; proposed .18b"}
     - {ref: AICPA-APSCL-2026, title: "Comment Letters: Alternative Practice Structures", publisher: "AICPA", type: standard-setter, url: "https://downloads.ctfassets.net/rb9cdnjh59cm/2k2SNDfzw8AbcvW0nfoiOs/bcfdc3e65de4e2c18a45be3e44e26900/Comment_letters_-_Alternative_practice_structures__APS_.pdf", date: "2026-05-14", access: full, locator: "CL 16 section III.B; CL 77 recommendation on upstream relationships"}
     - {ref: JOFA-PE-2025, title: "AICPA seeks feedback on independence rules related to private equity", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2025/mar/independence-rules-private-equity/", date: "2025-03-10", access: full, locator: "Network-firm paragraphs"}
     - {ref: JOFA-PEEC-2026, title: "PEEC to continue discussions on alternative practice structures", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/", date: "2026-08-10", access: full, locator: "Paragraph 1"}
-    - {ref: INTAPP-CONFLICTS-2026, title: "Conflicts and independence management for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/conflicts", date: "2026-10-16", access: full, locator: "'Independence tracking' (page undated; retrieval date; read via text mirror)"}
+    - {ref: INTAPP-CONFLICTS-2026, title: "Conflicts and independence management for accounting firms", publisher: "Intapp", type: vendor, url: "https://intapp.com/accounting/conflicts", date: "2026-07-29", access: full, locator: "'Independence tracking'; 'Visibility into outside business interests' (date is the page's last-modified date)"}
     - {ref: AT-PCAOBPE-2025, title: "PCAOB warns auditors about AI and PE", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pcaob-warns-auditors-about-ai-and-pe", date: "2025-12-09", access: full, locator: "Section 'PE warning'"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from discourse-07 (grade B), governance-11, practice-16 and discourse-08 (ideas, grade D). Grade B rests
-    on a named firm stating the practice in an interview (a Financial Times piece syndicated by The Irish Times);
+    Grade B rests on a named firm stating the practice in an interview (a Financial Times piece syndicated by The Irish Times);
     no tooling or measurement is described. Pattern and ladder are nominal: matching client lists against investor
     holdings is the reconcile-exceptions shape if tooled, but no AI was found. CL 77 is from Florida State
     University and does not concern AI. A Bloomberg Tax report on PCAOB inspections of PE-backed firms was readable
@@ -907,31 +904,33 @@
     agreement (APESB-PE-2025), so a shared AI platform raises the question of who provides it and whether
     independence rules reach that arrangement.
   solution: >-
-    Grant Thornton US launched Gtap, a cloud platform that embeds analytics, automation and AI into every stage of
-    the audit, with AI agents that identify risks, anomalies and insights. It was first developed by Grant Thornton
-    Ireland, will be used on private-company audits first and is expected to expand to public-company audits the
-    next year (GT-GTAP-2026). The discourse angle proposes treating AI and data platforms provided across attest and
-    non-attest entities as part of the independence assessment: who builds, owns and controls them, how they are
-    paid for, and whether access and judgment stay with the attest firm.
+    Grant Thornton LLP announced on 7 May 2026 that it has launched gtap, a cloud audit infrastructure with AI-driven
+    workflows and intelligent agents that surface risks, anomalies and insights. Grant Thornton Ireland developed it
+    and enhanced it with Grant Thornton's US technology team; it will be introduced on private-company audits first
+    and expand to public-company audits the next year (GT-GTAPPR-2026; GT-GTAP-2026). Idea (no firm describes it):
+    treat AI and data platforms provided across attest and non-attest entities as part of the independence
+    assessment: who builds, owns and controls them, how they are paid for, and whether access and judgment stay
+    with the attest firm.
   outcomes:
     - {lever: quality, description: "The CEO says automating transactional work lets teams focus on judgment and increases consistency. No measured result", figure: "none published", measures: "not applicable", provenance: self-reported, source_ref: GT-GTAP-2026}
   prerequisites:
     - "An APS with attest and non-attest entities and a written administrative services agreement that addresses current and future resource needs (GT-GTAP-2026; JOFA-NILSEN-2025)"
   risks_and_guardrails:
-    - "The article does not say who owns or licenses Gtap or how the arrangement was assessed for independence (GT-GTAP-2026)"
+    - "Neither the firm's release nor the press report says which entity owns or licenses gtap or how the arrangement was assessed for independence; the release quotes the chief information officer of Grant Thornton Advisors LLC, the non-attest entity, on the platform (GT-GTAPPR-2026; GT-GTAP-2026)"
     - "Attest and non-attest entities are kept separate for regulatory reasons (GT-GTAP-2026)"
     - "PEEC's discussion memorandum treated the non-attest entity as a network firm of the attest firm (JOFA-PE-2025); its exposure draft would add entities that control, or are controlled by, a network firm and cooperate to enhance its capabilities (JOFA-PEED-2025)"
     - "A commentator at a competing AI-native firm says technology businesses 'closely aligned' with audit firms could fall within APS scope (AT-PEEC-2026)"
     - "Accountancy Europe says questions remain about whether administrative services agreements always protect independence (AE-BEYONDPE-2025)"
     - "PCAOB inspectors will focus on independence, culture and resources at firms with PE or APS changes (AT-PCAOBPE-2025)"
   human_checkpoints:
-    - "The firm says professionals supervise every step (GT-GTAP-2026)"
-    - "Attest-firm leadership approval of any shared-technology arrangement, with independence consultation (discourse angle; not described by a firm)"
+    - "The firm says professionals supervise every step and remain in control of the decision-making process (GT-GTAP-2026; GT-GTAPPR-2026)"
+    - "Suggested (idea, no firm describes it): attest-firm leadership approval of any shared-technology arrangement, with independence consultation"
   role_evolution: >-
     Teams focus on professional skepticism, judgment and risk assessment rather than transactional steps, per the
     CEO (GT-GTAP-2026).
   evidence_grade: C
   sources:
+    - {ref: GT-GTAPPR-2026, title: "Grant Thornton launches gtap to transform audit", publisher: "Grant Thornton (US)", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/may/grant-thornton-launches-gtap-audit-transformation-us", date: "2026-05-07", access: full, locator: "Press release paragraphs on launch, rollout, 'Built across borders' and the APS boilerplate"}
     - {ref: GT-GTAP-2026, title: "Grant Thornton launches AI platform for audit business", publisher: "Consulting.us", type: press, url: "https://www.consulting.us/news/13378/grant-thornton-launches-ai-platform-for-audit-business", date: "2026-05-11", access: full, locator: "Paragraphs 1-8"}
     - {ref: APESB-PE-2025, title: "Update on Private Equity Investment in Firms (agenda item 11)", publisher: "APESB (Australia)", type: standard-setter, url: "https://apesb.org.au/wp-content/uploads/2025/06/Agenda_Item_11_Update_on_Private_Equity_Investment_In_Firms.pdf", date: "2025-06", access: full, locator: "Section on the APS structure and administrative services agreement"}
     - {ref: JOFA-NILSEN-2025, title: "Navigating outside investors: Safeguarding ethics and independence in evolving practice structures", publisher: "Journal of Accountancy (AICPA staff author)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/oct/navigating-outside-investors-safeguarding-ethics-and-independence-in-evolving-practice-structures/", date: "2025-10-24", access: full, locator: "Administrative services agreement paragraph"}
@@ -942,9 +941,9 @@
     - {ref: AT-PCAOBPE-2025, title: "PCAOB warns auditors about AI and PE", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pcaob-warns-auditors-about-ai-and-pe", date: "2025-12-09", access: full, locator: "Section 'PE warning'"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-08, governance-12 and discourse-13 (an idea, grade D, on governing shared platforms under
-    the administrative services agreement). Grade C: a firm announcement relayed by trade press, with no evidence of
-    use in audits yet. The landscape dates the launch 7 May 2026; the opened page is dated 11 May 2026. The
+    Grade C: the firm announces a launch and phased rollout, but no source shows use on named audits, and the
+    shared-platform governance step is an idea. The firm's release is dated 7 May 2026; the trade-press report
+    11 May 2026. The
     platform's audit functions belong to the planning and substantive modules; this entry covers the structural
     and independence angle only.
 
@@ -971,7 +970,7 @@
   prerequisites:
     - "An audit firm willing to take investment and share expertise to improve the tools (AT-MODUS-2026)"
   risks_and_guardrails:
-    - "The article does not discuss independence; the AICPA's draft treatment of investors, upstream entities and network firms would apply to firms in this kind of structure (practice analyst, citing AICPA-APSED-2025)"
+    - "The article does not discuss independence (AT-MODUS-2026); no source addresses whether the AICPA draft's provisions on investors, upstream entities and network firms (AICPA-APSED-2025) reach this structure"
   human_checkpoints:
     - "Not stated in the source"
   role_evolution: "Not stated in the source."
@@ -981,11 +980,11 @@
     - {ref: AICPA-APSED-2025, title: "Exposure draft: Proposed revisions related to alternative practice structures", publisher: "AICPA Professional Ethics Division", type: standard-setter, url: "https://assets.ctfassets.net/rb9cdnjh59cm/3M0CFAUnOquO2oDNiH0VF5/b8adc950ef4775cbe359349dc706cbbe/ethics-ED-APS-2025.pdf", date: "2025-12-29", access: full, locator: "Explanatory material paras 16-23"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-09. The deployment count is an investor's statement about an unnamed firm. Whether Modus's
+    The deployment count is an investor's statement about an unnamed firm. Whether Modus's
     structure counts as an APS under the AICPA draft is not addressed in any opened source.
 
 - id: assurance-acceptance-independence-20
-  title: New regulated audit firms built around AI from the start, with venture capital kept out of the attest entity
+  title: New regulated audit firms built around AI from the start; in the US, venture capital sits outside the attest entity
   archetype: assurance
   module: acceptance-independence
   function: service-delivery
@@ -1007,9 +1006,10 @@
     signature (CFI-REPODO-2026). Oath Verified describes itself as a modern audit firm running a continuous
     verification platform (OATH-2026). Its chief assurance officer, a former PCAOB board member, says it uses an APS
     because its platform company is venture-backed and state regulators require one to create an attest entity,
-    and that it is building an AI-native audit methodology starting with private companies (AT-PEEC-2026).
+    and that she is building the methodology for an AI-native audit from the ground up (AT-PEEC-2026).
   outcomes:
-    - {lever: growth, description: "Funding figures only; no client, quality or independence result is published", figure: "EUR 8.2 million pre-seed (Repodo); about $10 million raised in total (Oath Verified)", measures: "amounts raised as reported by the press; not an outcome of audit work", provenance: vendor-published, source_ref: CFI-REPODO-2026}
+    - {lever: growth, description: "Funding figure only; no client, quality or independence result is published", figure: "EUR 8.2 million pre-seed (Repodo)", measures: "amount raised as reported by the press; not an outcome of audit work", provenance: vendor-published, source_ref: CFI-REPODO-2026}
+    - {lever: growth, description: "Funding figure only; no client, quality or independence result is published", figure: "about $10 million raised in total (Oath Verified)", measures: "amount raised as reported by the press; not an outcome of audit work", provenance: vendor-published, source_ref: AT-PEEC-2026}
   prerequisites:
     - "A licensed auditor who can sign opinions (CFI-REPODO-2026)"
     - "In the US, an attest entity set up inside an APS when a technology company has venture investors (AT-PEEC-2026)"
@@ -1031,9 +1031,9 @@
     - {ref: FINSTORY-OATH-2026, title: "Ex-PCAOB regulator QUITS...joins AI Audit startup targeting 80% Automation", publisher: "The Finance Story", type: press, url: "https://thefinancestory.com/ex-pcaob-regulator-joins-ai-native-audit-firm-oath", date: "2026-06-03", access: full, locator: "Paragraphs on what Oath is building"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-10, discourse-12 and governance-13. Discourse graded Oath B as a named, licensed firm;
-    practice and governance graded C because neither firm is shown delivering AI-performed audits. The synthesis
-    keeps C: the structure is real, but the use case (AI delivering the audit) is not evidenced. Repodo's
+    Graded C: the firms and structures are real and named, but the use case (AI delivering the audit) is not
+    evidenced for either firm. Oath's funding: $6.6 million seed in December 2025 and about $10 million in total
+    (AT-PEEC-2026). Repodo's
     authorisation rests on press coverage, not the Danish register. A secondary relay of the Wall Street Journal
     says Oath aims to automate 80% of audit work by 2030 (FINSTORY-OATH-2026); that is a founder target, not an
     outcome.
@@ -1048,30 +1048,35 @@
   ladder: assist
   change_scope: model
   runtime_class: personal-assistant
-  maturity: emerging
+  maturity: in-production
   problem: >-
     Audit has been priced on hours, seniority and review depth; if AI speeds execution, clients may expect lower
     fees (VERDANTIX).
   solution: >-
-    Verdantix reports that KPMG reportedly argued to its own auditor, Grant Thornton UK, that AI would make parts of
-    the work cheaper and that fees should reflect this. Commentators split between holding fees because humans
-    still validate and sign off, and moving to subscription or continuous 'audit as a service' pricing (VERDANTIX).
+    KPMG International negotiated a lower audit fee from its auditor, Grant Thornton UK, by arguing that AI would
+    make the work cheaper and that savings should be passed on, according to people familiar with the matter cited
+    in a Financial Times report syndicated by The Irish Times; KPMG International did not comment on confidential
+    commercial matters and Grant Thornton declined to comment on the negotiations (IRISHTIMES-KPMG-2026).
+    Commentators split between holding fees because humans still validate and sign off, and moving to
+    subscription or continuous 'audit as a service' pricing (VERDANTIX).
   outcomes:
-    - {lever: cost, description: "No fee figure is given on the opened page", figure: "none published", measures: "not applicable", provenance: independent, source_ref: VERDANTIX}
+    - {lever: cost, description: "Audit fee change reported from KPMG International's filing; the link to AI rests on unnamed sources", figure: "14% lower ($416,000 to $357,000)", measures: "KPMG International's total audit fee for 2025 versus 2024, in dollars, per the filing cited by the report; the fee was paid in sterling", provenance: independent, source_ref: IRISHTIMES-KPMG-2026}
   prerequisites:
     - "Not stated in the source"
   risks_and_guardrails:
-    - "The analyst warns that firms may normalise trade-offs in audit integrity in pursuit of efficiency (VERDANTIX)"
+    - "A Verdantix analyst warns that trade-offs in audit integrity may be normalised in pursuit of efficiency (VERDANTIX)"
+    - "Grant Thornton told the FT that its fees reflect the cost of its people and of the technology that supports them (IRISHTIMES-KPMG-2026)"
     - "The PCAOB's acting chair said PE-driven pressure on profitability could lead to cost-cutting and aggressive fee negotiations, citing Accountancy Europe research (AT-PCAOBPE-2025)"
   human_checkpoints:
     - "Not stated in the source"
   role_evolution: "Not stated in the source."
-  evidence_grade: C
+  evidence_grade: B
   sources:
+    - {ref: IRISHTIMES-KPMG-2026, title: "KPMG pressed its auditor to pass on AI cost savings", publisher: "The Irish Times (Financial Times syndication)", type: press, url: "https://www.irishtimes.com/business/2026/02/06/kpmg-pressed-its-auditor-to-pass-on-ai-cost-savings/", date: "2026-02-06", access: full, locator: "Paragraphs 1-3 and the paragraphs on the filing and on comments from both firms"}
     - {ref: VERDANTIX, title: "What goes around comes around: KPMG's AI-driven fee argument raises uncomfortable questions about audit pricing models", publisher: "Verdantix", type: press, url: "https://www.verdantix.com/venture/blog/what-goes-around-comes-around--kpmg-s-ai-driven-fee-argument-raises-uncomfortable-questions-about-audit-pricing-models", date: "2026-02-10", access: full, locator: "Paragraphs 1-5"}
     - {ref: AT-PCAOBPE-2025, title: "PCAOB warns auditors about AI and PE", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pcaob-warns-auditors-about-ai-and-pe", date: "2025-12-09", access: full, locator: "Botic's remarks on private-equity risks"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-15. The fee episode is reported with 'reportedly' and no primary source was found; the pilot's fee
-    figure is not on the opened page. Analyst commentary, so grade C. Fee pressure also belongs to the cross-cutting
-    business-model lens.
+    Graded B: named organisations and a real negotiation, with the fee change taken from a filing as reported by the
+    FT. Not A, because the AI argument rests on unnamed sources and neither firm confirms it; the 14% is a fee
+    change, not a measure of AI efficiency. Fee pressure also belongs to the cross-cutting business-model lens.

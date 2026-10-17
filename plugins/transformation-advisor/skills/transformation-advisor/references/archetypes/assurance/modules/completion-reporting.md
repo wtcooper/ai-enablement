@@ -279,7 +279,8 @@ Full details for YAML keys are in the YAML. Keys cited here but not in the YAML 
 - ICAEW-REPLETTER-2026: ICAEW, Letters of representation: a key protection for auditors, 2026-05, https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/letters-of-representation-a-key-protection-for-auditors
 - JOFA-AIPA-2026: Journal of Accountancy, AICPA publishes practice aid, 2026-10-13, https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/
 - KPMG-HOHL-2026: KPMG Board Leadership Center, Q&A with Kurt Hohl, 2026-05-27, https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
-- PCAOB-AS2415 / PCAOB-AS2801 (2026, text mirror): https://pcaobus.org/oversight/standards/auditing-standards/details/AS2415 and .../AS2801
+- PCAOB-AS2415: PCAOB, AS 2415 Going Concern (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2415
+- PCAOB-AS2801: PCAOB, AS 2801 Subsequent Events (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2801
 - PCAOB-IAG-2026: PCAOB investor advisory on CAM/KAM examples, 2026-04-30, https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory--pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters-5-2026
 - PCAOB-PIR1220-2018: PCAOB, Post-implementation review of AS 1220, 2018-12-19, https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/pir/documents/pir-as1220-board-report.pdf
 - TCC-PCAOBQ-2026: TheCorporateCounsel.net, PCAOB-related questions to ask your auditor, 2026-07-09, https://www.thecorporatecounsel.net/blog/2026/07/audit-committees-pcaob-related-questions-to-ask-your-auditor.html
