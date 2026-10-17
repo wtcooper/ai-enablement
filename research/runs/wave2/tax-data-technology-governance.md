@@ -4,12 +4,12 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
 
 ## 1. Summary
 
-- 15 candidate use cases: grade A 0, B 1, C 11, D 2 (labelled ideas). No use case reaches grade A. The only measured outcomes in the public record are survey figures published by firms and vendors, one vendor benchmark (Column Tax) and one independent academic measurement of e-invoicing mandates (Peru) that sits on the tax-authority side, so it caps the grade at B (and the e-invoicing entry stays at C because no named in-house deployment is behind it).
-- 45 distinct sources read or seen (43 opened, 2 search-only). By type: survey 10, regulator 8, press 6, standard-setter 4, academic 5, professional-body 3, firm 3, vendor 3, conference 3 (the Thomson Reuters Institute recaps of the 2026 TEI seminar are typed conference). Counts are in section 5.
+- 15 candidate use cases: grade A 0, B 1, C 12, D 2 (labelled ideas). No use case reaches grade A. The only measured outcomes in the public record are survey figures published by firms and vendors, one vendor benchmark (Column Tax) and one independent academic measurement of e-invoicing mandates (Peru) that sits on the tax-authority side, so it caps the grade at B (and the e-invoicing entry stays at C because no named in-house deployment is behind it).
+- 45 distinct sources read or seen (43 opened, 2 search-only). By type: survey 10, regulator 8, press 6, academic 5, standard-setter 4, professional-body 4, firm 3, vendor 3, conference 2 (the two Thomson Reuters Institute recaps of the 2026 TEI seminar). Counts are in section 5.
 - What constrains the work, in order of weight: (1) record-keeping and documentation rules that make the ERP-to-return data flow auditable (IRS Rev. Proc. 98-25); (2) a growing set of real-time reporting mandates that make bad master data a legal-validity problem (EU ViDA timetable, UK 2029 mandate, more than 60 jurisdictions on continuous transaction controls per a TEI seminar account); (3) internal-control frameworks that now cover generative AI (COSO, February 2026) and agent interoperability standards that carry their own security rules (MCP specification, NIST AI Agent Standards Initiative, OWASP).
 - What measures the work: almost nothing independent. Surveys measure adoption, barriers and confidence. There is no published error rate, override rate, parallel-run result or inspection finding for AI in in-house tax data pipelines. The nearest quality evidence is adjacent: a vendor benchmark in which frontier models computed fewer than one third of simplified federal individual returns correctly, a 2019 vendor survey of bot failure and an independent study of e-invoicing mandates in Peru.
 - Practitioners at the 2026 TEI Tax Technology Seminar (as reported by Thomson Reuters Institute) said tax rarely owns AI implementation: two hands out of more than 50 when polled. A vendor-run survey of indirect tax leaders found only 12.5% had specific AI targets or KPIs and 57.4% were not confident they could defend AI-assisted decisions to an authority.
-- Three landscape statements could not be confirmed on the pages opened (EY 80% and 75% figures, the Deloitte Pillar Two Agent, and the OECD Tax Administration 2025 body text). See Gaps.
+- Some landscape statements could not be confirmed on the pages opened (the EY 80% and 75% figures) and the OECD Tax Administration 2025 body text was blocked. See Gaps.
 
 ## 2. Use cases
 
@@ -198,7 +198,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
   runtime_class: workflow-automation
   maturity: piloting
   problem: "Automation breaks when the systems it depends on change. A 2019 Pegasystems survey of more than 500 RPA and desktop-automation decision makers (not tax-specific) found 87% experienced some level of bot failures and 41% said ongoing bot management was taking more time and resources than expected (PEGA-RPA-2019). In tax, TEI seminar attendees described Alteryx workflows nobody could explain after the person who built them left (TEI-TAXTECH-2026)."
-  solution: "Tax and IT treat each automation as a controlled asset: documented logic, an owner, run history, KPI monitoring and revalidation after changes. TEI ran a November 2025 session titled 'Automation Sustainment: Ensuring Deployed Automation Continues to Deliver; Best Practices, Tips and Frameworks' (TEI-TECHTAX-2025). Deloitte's COSO commentary says 'set-and-forget' does not work for generative AI in financial reporting and suggests monitoring transaction volume, transaction size and override percentages to detect drift (DART-COSO-2026)."
+  solution: "Tax and IT treat each automation as a controlled asset: documented logic, an owner, run history, KPI monitoring and revalidation after changes. TEI's November 2025 webinar series listed a session titled 'Automation Sustainment: Ensuring Deployed Automation Continues to Deliver; Best Practices, Tips and Frameworks' (TEI-TECHTAX-2025). Deloitte's COSO commentary says 'set-and-forget' does not work for generative AI in financial reporting and suggests monitoring transaction volume, transaction size and override percentages to detect drift (DART-COSO-2026)."
   outcomes:
     - lever: quality
       description: "Baseline, not an outcome of the use case: bot failures in a vendor-run survey of automation users (not tax-specific)"
@@ -431,7 +431,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
       provenance: vendor-published
       source_ref: COLUMN-TAXCALCBENCH-2025
     - lever: cost
-      description: "The JHU paper reports that the approach reduces expected cost to well below real-world averages of error penalties; no figure is given in the abstract"
+      description: "The JHU abstract says the approach reduces costs to well below real-world averages, with cost estimated from real-world penalties for tax errors; no figure is given in the abstract"
       figure: null
       measures: null
       provenance: independent
@@ -465,7 +465,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
   runtime_class: workflow-automation
   maturity: piloting
   problem: "State tax notices never arrive in the same format twice, and the TEI seminar account says attendees are using AI image-to-text solutions to pull structured data out of them (TR-AUDITOR-2026). The AICPA-published risk register for preparers describes incorrect document extraction as errors that flow silently into a return, with a W-2 box 12 misclassification as its scenario (AICPA-WERFEL-2026)."
-  solution: "AI extracts fields from notices and source documents into the tax data layer; every extracted value is verified against the source document and complex or ambiguous documents escalate to a person. The register's illustrative controls are independent verification of AI-extracted figures against source documents, spot-check audits of extraction accuracy and an escalation protocol (AICPA-WERFEL-2026). The Tax Court-style example of silent failure at TEI: an agent that said it could not open the file after giving numbers that looked wrong (TEI-TAXTECH-2026)."
+  solution: "AI extracts fields from notices and source documents into the tax data layer; every extracted value is verified against the source document and complex or ambiguous documents escalate to a person. The register's illustrative controls are independent verification of AI-extracted figures against source documents, spot-check audits of extraction accuracy and an escalation protocol (AICPA-WERFEL-2026). A TEI attendee described the failure mode to guard against: an agent that gave numbers that did not look right and, when challenged, said it could not open the file (TEI-TAXTECH-2026)."
   outcomes:
     - lever: quality
       description: none published
@@ -572,7 +572,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
     - "In the 2025 Generative AI report relayed by Thomson Reuters, 24% of organizations considered generative AI skills nice to have in new hires and 2% made them a requirement (TR-GENAI-2025)."
   human_checkpoints:
     - "Not described in the sources."
-  role_evolution: "EY reports 73% prioritising the hiring of data scientists and tax technology experts and 89% investing in upskilling (EY-TFO-2025); KPMG Germany reports 58% expect stable domestic tax headcount (KPMG-DE-2026); a Tax Notes State article summarised in the landscape argues AI will not shrink corporate tax teams much (not opened here)."
+  role_evolution: "EY reports 73% prioritising the hiring of data scientists and tax technology experts and 89% investing in upskilling (EY-TFO-2025); KPMG Germany reports 58% expect stable domestic tax headcount (KPMG-DE-2026)."
   evidence_grade: C
   sources:
     - { ref: TR-CORPTAX-2025, title: "Why most tax departments aren't using AI yet", publisher: Thomson Reuters Tax & Accounting, type: survey, url: "https://tax.thomsonreuters.com/blog/the-genai-paradox-why-most-tax-departments-arent-using-ai-yet-and-what-early-adopters-are-gaining-tri/", date: "2025-10-22", access: full, locator: "Sections 'The confidence gap and resource connection' and 'Budget realities'" }
@@ -583,7 +583,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
     - { ref: EY-TFO-2025, title: "EY report indicates CFOs and tax leaders innovating with AI to manage mounting geopolitical turbulence, talent shortages and regulatory developments", publisher: EY, type: survey, url: "https://ey.com/en_gl/newsroom/2025/11/ey-report-indicates-cfos-and-tax-leaders-innovating-with-ai-to-manage-mounting-geopolitical-turbulence-talent-shortages-and-regulatory-developments", date: "2025-11-18", access: full, locator: "Press release, workforce paragraph" }
     - { ref: KPMG-DE-2026, title: "Tax departments are increasingly turning to artificial intelligence", publisher: KPMG Germany, type: survey, url: "https://kpmg.com/de/en/media/press-releases/2026/05/tax-departments-are-increasingly-turning-to-artificial-intelligence.html", date: "2026-05-07", access: full, locator: "Headline findings" }
   last_reviewed: 2026-10-17
-  notes: "All figures are associations from vendor- or firm-owned surveys; none show that the operating model caused the outcome. The 31% and 56% penalty shares are the blog's statement of survey responses. The Sala article cited in the landscape was not opened by this run and is not used as a source."
+  notes: "All figures are associations from vendor- or firm-owned surveys; none show that the operating model caused the outcome. The 31% and 56% penalty shares are the blog's statement of survey responses."
 
 - id: tax-data-technology-14
   title: AI transparency and data-handling due diligence for tax service providers and software vendors
@@ -669,7 +669,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
     - { ref: EC-VATGAP-2025, title: "VAT gap in Europe - report 2025", publisher: European Commission, type: regulator, url: "https://taxation-customs.ec.europa.eu/vat-gap_en", date: "2025-12-11", access: full, locator: "Section 'Development of VAT compliance gap between 2019 and 2023'" }
     - { ref: IMF-WP-2025-089, title: "Leveraging Digital Technologies in Boosting Tax Collection (Working Paper 2025/089)", publisher: International Monetary Fund (Nose, Pierri, Honda), type: academic, url: "https://econpapers.repec.org/paper/imfimfwpa/2025_2f089.htm", date: "2025-05-09", access: full, locator: "Abstract (RePEc record; the IMF site was blocked)" }
   last_reviewed: 2026-10-17
-  notes: "Grade scope: the Peru study measures a tax-authority regime on taxpayers' reported figures, an adjacent measurement that caps the grade at B; no named in-house deployment is behind it, so the grade is C. In-production is stated at regime level (the EC and TEI sources say regimes operate) not for a named company. The Commission figures are projections. The UK Peppol and 23 June 2026 details come from a trade-press item (Fiscal Solutions), not from the gov.uk page; the gov.uk consultation response (26 November 2025) confirms mandatory e-invoicing from 2029 and a roadmap at Budget 2026. The Commission VAT gap page was read in part; it does not mention e-invoicing."
+  notes: "Grade scope: the Peru study measures a tax-authority regime on taxpayers' reported figures, an adjacent measurement that caps the grade at B; no named in-house deployment is behind it, so the grade is C. In-production is stated at regime level: the named organizations are the Peruvian tax authority's regime and the EU and UK programmes, not an in-house team. The Commission figures are projections. The UK Peppol and 23 June 2026 details come from a trade-press item (Fiscal Solutions), not from the gov.uk page; the gov.uk consultation response (26 November 2025) confirms mandatory e-invoicing from 2029 and a roadmap at Budget 2026. The Commission VAT gap page was read in part; it does not mention e-invoicing."
 ```
 
 ## 3. Module notes
@@ -721,7 +721,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
 | over 5% | Increase in reported sales, purchases and VAT liabilities in the first year after e-invoicing, Peru | independent | BELLON-PERU-2022 |
 | 9.5% | EU VAT compliance gap in 2023 as a share of the VAT total tax liability | regulator | EC-VATGAP-2025 |
 
-Cross-check: the 2022 BDO article cites a Center for Audit Quality report (June 2024) that tax accounting issues averaged 12% of restatements from 2013 to 2022. This is search-only for the CAQ document and is routed to the provision module (section 4).
+Cross-check: an undated BDO article cites a Center for Audit Quality report (June 2024) that tax accounting issues averaged 12% of restatements from 2013 to 2022. This is search-only for the CAQ document and is routed to the provision module (section 4). Also search-only and adjacent (finance, not tax): Gartner's 2025 AI in Finance Survey of 183 CFOs and senior finance leaders reported AI use in 59% of finance functions against 58% in 2024, which Gartner attributes to complexity, data and talent challenges (GARTNER-FIN-2025, per search summary).
 
 ### Guardrails and regulatory points
 
@@ -788,7 +788,7 @@ Cross-check: the 2022 BDO article cites a Center for Audit Quality report (June 
 
 ## 5. Sources
 
-Read in full or in the relevant part unless marked search-only. Counts by type: survey 10, regulator 8, press 6, academic 5, standard-setter 4, professional-body 3, firm 3, vendor 3, conference 3 (45 in all; 43 opened, 2 search-only).
+Read in full or in the relevant part unless marked search-only. Counts by type: survey 10, regulator 8, press 6, academic 5, standard-setter 4, professional-body 4, firm 3, vendor 3, conference 2 (45 in all; 43 opened, 2 search-only).
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
@@ -845,7 +845,7 @@ Notes on the table: GARTNER-FIN-2025 and CAQ-RESTATE-2024 are the two search-onl
 - Independent quality evidence is missing. No source gives an error rate, override rate, parallel-run result or inspection finding for AI in in-house tax data flows, ERP-to-tax mapping or e-invoice validation. The nearest items are a vendor benchmark on individual returns, a 2019 non-tax vendor survey of bot failure and a regime-level study in Peru.
 - No independent view of in-house practice: every survey is run by a firm or vendor that sells tax technology or services (EY, KPMG, Deloitte, Thomson Reuters, Fonoa, Pegasystems). Sample sizes were not stated on the pages for KPMG Germany, Deloitte, the Thomson Reuters ViDA blog and the Thomson Reuters corporate tax blogs (the TR corporate technology report gives 170 leaders).
 - Not reached or blocked: OECD Tax Administration 2025 body text, OECD Tax Administration 3.0, IMF site, official French, Polish and German e-invoicing pages (impots.gouv.fr, podatki.gov.pl, bundesfinanzministerium.de returned errors or blocks), PCAOB AS 1105, ISO/IEC 42001, Gartner and COSO's own publication. ICAP/tax control framework material was found only as search summaries.
-- Landscape items not confirmed on the pages opened: EY's 80% struggling with foundational data and 75% in earliest stages of GenAI (the press release gives 51% and 44% instead); the Deloitte Pillar Two Agent; the gated Thomson Reuters Institute reports. Deloitte's published date is inferred from PDF metadata and its page sample size is not stated.
+- Landscape items not confirmed on the pages opened: EY's 80% struggling with foundational data and 75% in earliest stages of GenAI (the press release gives 51% and 44% instead); the gated Thomson Reuters Institute reports. The landscape's Deloitte Pillar Two Agent item was not checked. Deloitte's published date is inferred from PDF metadata and its page sample size is not stated.
 - Dates: the GAO report date is carried from the landscape; the Rev. Proc. 98-25 date is the bulletin date; the AICPA appendices date is the upload month. The BDO article cited for the CAQ figure carries no publication date, so only the CAQ report is listed. The UK Budget 2026 date is reported inconsistently in secondary sources.
 - Unchecked: whether Rev. Proc. 98-25 has since been modified or superseded; whether the Thomson Reuters ViDA survey sample matches the 2026 Corporate Tax Technology Report sample; France, Poland and Spain regime details beyond the TEI account.
 - Not found: any tax-specific peer-reviewed study of in-house tax technology, any inspection or enforcement action involving in-house tax data automation, any published override-rate benchmark for tax AI, and any published figure for the cost or token spend of tax agents.

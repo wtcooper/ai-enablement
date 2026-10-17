@@ -1,6 +1,6 @@
 # Source landscape: Security archetype (wave 4)
 
-Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.ai); web search used 9 times for items that could not be reached directly. Items I could not open myself are marked `(via search)` or `(unverified)`. Source refs use `PUBLISHER-SHORT-YYYY` and are reusable by later researchers. Vendor-authored sources are flagged `[vendor]` because their performance claims are self-reported.
+Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.ai); web search used 10 times for items that could not be reached directly. Items I could not open myself are marked `(via search)` or `(unverified)`. Source refs use `PUBLISHER-SHORT-YYYY` and are reusable by later researchers. Vendor-authored sources are flagged `[vendor]` because their performance claims are self-reported.
 
 ---
 
@@ -62,7 +62,7 @@ Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.a
 | Ref | Venue and URL | AI-related content found | Why it matters |
 |---|---|---|---|
 | `USENIX-SEC-2026` | 35th USENIX Security Symposium, Baltimore, 12-14 Aug 2026, https://www.usenix.org/conference/usenixsecurity26/technical-sessions | Many LLM/agent papers, e.g. "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"; "Context Contamination in LLM Analysis of Network Security Logs"; "AttriGuard: Defeating Indirect Prompt Injection in LLM Agents"; "Do Not Mention This to the User: Detecting and Understanding Malicious Agent Skills in the Wild"; "A Large-Scale Study of Personalized Phishing using Large Language Models" | Peer-reviewed evidence on agent defenses and AI-driven human-risk |
-| `IEEE-SP-2026` | IEEE Symposium on Security and Privacy, 18-21 May 2026, https://sp2026.ieee-security.org/program.html | Roughly three dozen program lines mention LLMs/agents (jailbreak guardrails SoKs, LLM-guided fuzzing) | Top venue for AI-security science |
+| `IEEE-SP-2026` | IEEE Symposium on Security and Privacy, 18-21 May 2026, https://sp2026.ieee-security.org/program.html | About 36 lines of the program page mention LLMs/agents (jailbreak guardrails SoKs, LLM-guided fuzzing) | Top venue for AI-security science |
 | `NDSS-2026` | NDSS Symposium, San Diego, 23-27 Feb 2026, https://www.ndss-symposium.org/ndss2026/ | e.g. "Decompiling the Synergy: An Empirical Study of Human-LLM Teaming in Software Reverse Engineering" (Arizona State and others) | Human-AI teaming study relevant to analyst work |
 | `CCS-2026` | ACM CCS 2026, The Hague, 15-19 Nov 2026, https://www.sigsac.org/ccs/CCS2026/ | Program overview posted 2026-09-27 (papers not reviewed) | Upcoming; lead for late-2026 papers |
 
@@ -72,7 +72,7 @@ Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.a
 
 | Ref | Source, publisher, URL | Date | Why it matters for AI in security |
 |---|---|---|---|
-| `NIST-CSF-2024` | NIST Cybersecurity Framework 2.0 hub, https://www.nist.gov/cyberframework | CSF 2.0 released Feb 2024 (page checked 2026-10-17) | Six functions (Govern, Identify, Protect, Detect, Respond, Recover) are the organizing frame for this archetype |
+| `NIST-CSF-2024` | NIST Cybersecurity Framework 2.0 hub, https://www.nist.gov/cyberframework | CSF 2.0 published Feb 2024 (date from prior knowledge; page checked 2026-10-17) | Six functions (Govern, Identify, Protect, Detect, Respond, Recover) are the organizing frame for this archetype |
 | `NIST-COSAIS-2026` | NIST SP 800-53 Control Overlays for Securing AI Systems (COSAiS), https://csrc.nist.gov/projects/cosais | Concept paper 2025-08-14; annotated outline 2026-01-08 | Implementation-level controls for AI systems; feedback was invited at a "Cyber AI Profile Workshop #2" on 2026-01-14, which corroborates the NIST Cyber AI Profile effort (the draft's own page, NIST IR 8596, could not be opened: unverified) |
 | `NIST-AI1002-2025` | NIST AI 100-2 E2025 Adversarial Machine Learning taxonomy, https://csrc.nist.gov/pubs/ai/100/2/e2025/final | Mar 2025 | Common vocabulary for attacks on ML systems |
 | `NIST-AIRMF` | NIST AI Risk Management Framework hub, https://www.nist.gov/itl/ai-risk-management-framework | page checked 2026-10-17 | Governance anchor for AI risk programs |
@@ -91,7 +91,7 @@ Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.a
 | `UKAISI-2026` | UK AI Security Institute research page (Frontier AI Trends Report; cyber and autonomous-systems category), https://www.aisi.gov.uk/research | checked 2026-10-17 | Government evaluator of frontier cyber capability |
 | `SEC-CYBER-2023` | SEC final rules on cyber risk management and incident disclosure (Form 8-K Item 1.05, Reg S-K Item 106), https://www.sec.gov/newsroom/press-releases/2023-139 | adopted 2023 | Baseline US disclosure regime; four business days after a materiality determination |
 | `SIFMA-SEC-2026` | Joint trade-association letters urging SEC to rescind or narrow Item 1.05 and Item 106, https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades (via search) | petition May 2025; letter 2026-04-10 | Signals possible US rollback; no final SEC action found |
-| `MITRE-ATLAS` | MITRE ATLAS matrix for AI systems, https://atlas.mitre.org/ | checked 2026-10-17 | 16 tactic columns; includes agent-oriented items such as agent trigger channels and RAG-indexed targets; community for AI-security tooling |
+| `MITRE-ATLAS` | MITRE ATLAS matrix for AI systems, https://atlas.mitre.org/ | checked 2026-10-17 | matrix of 16 tactic columns (counted from the page); includes agent-oriented items such as agent trigger channels and RAG-indexed targets; community for AI-security tooling |
 | `OWASP-LLM-2025` | OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection to LLM10 Unbounded Consumption), https://genai.owasp.org/llm-top-10/ | 2025-03-12 | The standard AI-application risk list |
 | `OWASP-AGENTIC-2025` | OWASP Top 10 for Agentic Applications 2026, https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | 2025-12-09 | 100+ contributors; agent-specific risk list |
 | `OWASP-GENAI-RES-2026` | OWASP GenAI Security Project resources, https://genai.owasp.org/resources/ | items dated Aug-Sep 2026 | Lists "OWASP GenAI LLM Top 10 2026" (3 Aug 2026), "Agent Control Standard" and "GenAI Security Industry Framework Crosswalk" (1 Sep 2026), Q2 2026 solution landscapes for agentic AI and AI red teaming, GenAI data-security guide, MCP server guides |
@@ -106,7 +106,7 @@ Compiled 2026-10-17. Method: pages opened with curl or the text mirror (r.jina.a
 |---|---|---|---|
 | `ISC2-WORKFORCE-2025` | 2025 ISC2 Cybersecurity Workforce Study, https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study | 2025-12-04 | AI is the top skills need (41%), ahead of cloud (36%); roles like SOC analyst and incident responder are "evolving"; ISC2 dropped its workforce-gap estimate, shifting from headcount to skills |
 | `ISC2-CISSP` | CISSP exam outline (eight domains), https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline | effective 2024-04-15 | Domain model used in the module check |
-| `ISACA-SOC-2026` | ISACA State of Cybersecurity 2026, https://www.isaca.org/resources/reports/state-of-cybersecurity-2026; press release 2026-09-22 | 2026-09-22 | Only 8% of organizations run regular AI-specific response exercises; AI-driven stress and soft-skill gaps. ISACA also sells AI credentials (AAIA, AAIR, AAISM) |
+| `ISACA-SOC-2026` | ISACA State of Cybersecurity 2026, https://www.isaca.org/resources/reports/state-of-cybersecurity-2026; press release 2026-09-22 | 2026-09-22 | Only 8% of organizations run regular AI-specific response exercises; threat-landscape stress and soft-skill gaps. ISACA also sells AI credentials (AAIA, AAIR, AAISM) |
 | `SANS-GIAC-WORKFORCE-2026` | 2026 SANS/GIAC Workforce Report (premiered at RSAC), https://www.sans.org/white-papers/2026-sans-giac-workforce-report/ | Mar 2026 | Year's focus is AI's impact on the workforce (landing page content not retrievable; see `RSAC-WORKFORCE-2026`) |
 | `SANS-SOC-2026` | SANS 2026 SOC Report: A Decade of Evolution in Cyber Defense, https://www.sans.org/research/security-operations-report | 2026 | See section 9 |
 | `FIRST-AISIG` | FIRST AI Security Special Interest Group, https://www.first.org/global/sigs/ai-security | active 2026 | Community for LLMs in security and incident response |
@@ -164,8 +164,6 @@ Journals to mine (not opened): ACM Transactions on Privacy and Security, IEEE Tr
 | `GOOGLE-AGENTICSCAN-2026` | Google, "Using AI agents to secure Google infrastructure" (pre-submit agentic scanning; Mantis multi-agent harness; live threat models), https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/ | 2026-09-19 | Best in-house AI appsec case study `[vendor/in-house]`; also GTIG 2026-08-18 "Staying Ahead of Adversarial AI Through Agentic Source Code Review" (title only) |
 | `AWS-SECAGENT-2026` | AWS Security Blog, "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/ | 2026-10-15 | 89.2% end-to-end on the intended path after audit reclassified two; also a two-part "AI vulnerability harness" series (2026-10-07) `[vendor]` |
 | `GITHUB-TASKFLOW-2026` | GitHub Security Lab, "AI-powered fuzzing with the Taskflow Agent", https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/ | 2026-09-24 | Open-source security agent; related posts: 24 Android vulnerabilities found (2026-09-28) and "What 50 open source projects taught us about security in the AI era" (2026-08-13) |
-| `JPMC-GLASSWING-2026` | JPMorganChase CISO Pat Opet quoted in Project Glasswing; RSAC 2026 fireside | 2026-04-07 | Rare large-bank in-house CISO position on AI-era supply-chain and authorization models |
-| `META-RADAR-2026` | Meta engineering paper (see `ARXIV-2605.30208`) | 2026-05 | In-house code-review automation |
 | `CISCO-SPLUNK-CONF26-2026` | Cisco/Splunk live agentic SOC at .conf26, https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/ | 2026-10-08 | Operating principle: agents prepare work, humans decide; Splunk ES AI Triage Agent `[vendor]` |
 | `ARCTICWOLF-AURORA-2026` | Arctic Wolf "Aurora Agentic SOC" (MDR provider), https://arcticwolf.com/ | 2026 | MDR provider positions itself as a large commercial agentic SOC `[vendor]` |
 | `EXPEL-RUXIE-2026` | Expel "Ruxie AI" and Workbench (MDR), https://expel.com/ | 2026 | MDR provider with agentic capabilities across the threat lifecycle `[vendor]` |
@@ -175,6 +173,8 @@ Journals to mine (not opened): ACM Transactions on Privacy and Security, IEEE Tr
 | `UNIT42-2026` | Palo Alto Unit 42 research feed, https://unit42.paloaltonetworks.com/ | 2026-09/10 | Includes agent-security posts (credentials in agent harnesses, Kubernetes operators) and an "AI-powered espionage campaign" report (2026-10-15; attacker context only) |
 | `EY-AIRISK-2026` | EY AI Risk and Governance Survey (reported "autonomous AI implementation outpaces oversight"), https://www.ey.com/en_us/insights/cybersecurity | 2026-09-15 | Big Four governance-gap evidence (report body not read) |
 | `SPLUNK-CISO-2026` | Splunk CISO report 2026 (650 CISOs, Oxford Economics, fielded Jul-Aug 2025), https://www.splunk.com/en_us/form/ciso-report.html (via search) | Feb 2026 | 39% exploring agentic AI for security; 78% have dedicated teams for AI agents (search figures) `[vendor]` |
+
+In-house examples folded into the rows above: JPMorganChase CISO Pat Opet (quoted in Project Glasswing and on the RSAC 2026 program) and Meta's code-review paper (`ARXIV-2605.30208`).
 
 ### 6.2 Collaborations worth tracking
 
@@ -211,6 +211,7 @@ Gap: Big Four and Accenture pages were blocked or generic (see section 14), so c
 
 | Ref | Outlet and URL | Note |
 |---|---|---|
+| `THN-CERTIN-2026` | The Hacker News on CERT-In advisory of 2026-10-15, https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html | AI agents under online testing reached live systems of Indian organizations and read business records via exposed credentials and over-permissive cloud roles; none of the organizations noticed; AI developers self-reported |
 | `DARKREADING-2026` | Dark Reading, https://www.darkreading.com/ | Daily; recent AI items include enterprise AI risk-management phase (CompTIA research, 2026-10-15), agent liability question (2026-10-16), GhostJacking identity gaps in agents |
 | `THN-2026` | The Hacker News, https://thehackernews.com/ | Daily; CERT-In agent advisory story (2026-10-16), AI SOC platforms piece |
 | `CSO-2026` | CSO Online, https://www.csoonline.com/ | Enterprise-CISO angle; items 2026-10-16 on AI supply chain, Xbow's USD 40K AI cost to crack Chrome, researchers urging air-gapped training for cyberattack-capable AI |
@@ -255,7 +256,6 @@ Blocked: BleepingComputer (Cloudflare challenge). Substack and Medium pages load
 | `SPLUNK-CISO-2026` | Splunk CISO report | Feb 2026 | See section 6 `[vendor]` |
 | `AIXCC-DARPA-2025` | AIxCC scoring | Aug 2025 | 86% found, 68% patched (synthetic flaws) |
 | `AWS-SECAGENT-2026` | AWS agent test on 37 CVEs | 2026-10-15 | 33/37 `[vendor self-test]` |
-| `MSFT-CTIREALM-2026` | Microsoft open-source CTI-REALM benchmark, cited in the Glasswing page | 2026 | Benchmark for model threat-intelligence ability (no direct link retrieved) |
 | `EVANTA-2026` / `NEURALTRUST-2026` | Evanta CISO priorities 2026; NeuralTrust agent-security survey (both via search) | 2026 | Evanta: AI enablement/protection among top 3 CISO initiatives; NeuralTrust (vendor, 160+ CISOs): 73% highly concerned about agent risk, 30% with mature safeguards (low confidence) |
 
 ---
@@ -461,4 +461,19 @@ Observable markers for security teams (in-house or provider):
 
 ## 15. Source count by type
 
-COUNTS_PLACEHOLDER
+Counts are unique source refs introduced in each section's tables (a ref used again in a later section is counted once). Items marked (via search) were not opened by me directly; a few refs bundle closely related pages.
+
+| Type | Section | Distinct sources |
+|---|---|---|
+| Conferences & events | 2 | 30 |
+| Regulators & standard-setters | 3 | 25 |
+| Professional bodies | 4 | 6 |
+| Academic | 5 | 21 |
+| Firms | 6 | 15 |
+| Vendors | 7 | 14 |
+| Press, podcasts & communities | 8 | 21 |
+| Surveys & benchmarks | 9 | 7 |
+| **Total** | | **139** |
+
+Source types represented: 8 of 8. Pages opened directly: well over 100 fetches (HTML, RSS, PDF text) plus 10 web searches for items marked (via search).
+

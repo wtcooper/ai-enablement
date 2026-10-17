@@ -2,8 +2,8 @@
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/transfer-pricing.yaml` (23 entries). Ids are shortened
 here: `#06` means `tax-transfer-pricing-06`. Source keys in brackets, such as [IRS-LBI-TP-2026], are in the YAML or
-in §10. **Evidence is thin.** Only 4 of 23 entries are graded A or B, and none of those is shown to use generative
-AI. Almost every figure is vendor-published (mostly by Aibidia, a TP software vendor) or a conference speaker's own
+in §10. **Evidence is thin.** Only 4 of 23 entries are graded A or B: three are rules-based automation or sourcing
+changes, and one is tax-authority AI. Almost every figure is vendor-published (mostly by Aibidia, a TP software vendor) or a conference speaker's own
 claim. No error rate, override rate, parallel run or independent test of AI in TP exists. Say so when you quote a figure.
 
 ## Contents
@@ -98,7 +98,7 @@ Ask in the person's setting (in-house TP team, advisory practice or controversy 
    sign-off, and where did the time go?"** Reveals the baseline (Trivium: up to six weeks, 3-4 rounds) and whether
    the pain is data (`#04`, `#09`), drafting (`#07`) or review (`#08`).
 2. **"How many ERPs and ledgers feed your TP work, who owns the mapping, and how clean is the data at year end?"**
-   Reveals readiness. Only 22% call their data clean enough for AI; most gains so far come from fixing data first.
+   Reveals readiness. Only 22% call their data clean enough for AI; the named results rest on central data.
 3. **"Which TP steps do people already do with a general assistant, what do they paste in, and is company data
    allowed?"** Reveals shadow use (`#02`) and confidentiality exposure [IRS-OPR-2026].
 4. **"When AI suggests comparables, can you reproduce the rejection reason for every excluded company, and who
@@ -114,7 +114,7 @@ Ask in the person's setting (in-house TP team, advisory practice or controversy 
 9. **"Which work do you pay advisors for, and what would you bring in-house if the data were structured?"** Reveals
    sourcing options (`#21`, `#22`); 53% already run hybrid models (vendor survey).
 10. **"Who in the team writes down how TP decisions are made, so a model can be given that context?"** Reveals
-    tacit-knowledge risk; KPMG Germany says context, not prompts, limits results [KPMG-KITP-2026].
+    tacit-knowledge risk; KPMG Germany says even the best prompt is not enough without written-down context [KPMG-KITP-2026].
 
 ## 5. Metrics and benchmarks
 
@@ -135,7 +135,7 @@ on another; method not given) [AIBIDIA-LEADERS-2026] [AIBIDIA-SOTP-2026].
 | Comparability work (PwC Singapore) | AI "may" do ~80%; up to 100 hours to ~30 minutes "under certain conditions" [DDTC-WUTA-2026] | self-reported, conference |
 | Packaged service price | ~USD 9,000 and ~4 weeks for a first set vs a claimed USD 60K and six months [COMMENDA-TP-2026] | vendor claim |
 | Penalty exposure | Up to 40% of the adjustment without contemporaneous documentation (Exactera speaker) [TR-CHECKPOINT-2025] | self-reported |
-| IRS AI oversight (adjacent) | IRS cannot show selection models beat prior methods [TIGTA-2025]; 126 IRS AI use cases [GAO-2026] | independent, not TP-specific |
+| IRS AI oversight (adjacent) | IRS lacks processes to show its selection models beat prior methods [TIGTA-2025]; 126 IRS AI use cases [GAO-2026] | independent, not TP-specific |
 
 What to measure in a pilot: hours per local file and per benchmarking study; review rounds; share of entities
 documented; reviewer override rate on AI drafts and comparables; year-end adjustment size; time to answer an
@@ -152,16 +152,17 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
   the IRS wants reasons for the method chosen, sources reviewed and methods rejected, and calculations in working
   formats [IRS-TPFAQ-2026]. No source tests how AI-drafted documentation fares under these rules.
 - **Practitioner conduct.** IRS OPR Alert 2026-19 maps AI onto Circular 230 (due diligence, competence, firm
-  procedures, written advice), bars client data on unsecured tools, and says AI savings should be credited to
-  clients; the AICPA has asked for clarification [IRS-OPR-2026] [AICPA-CART-2026]. UK PCRT bodies issued AI
+  procedures, written advice), says client data should not go to unsecured tools, and says AI savings should be
+  credited to clients; the AICPA has asked for clarification [IRS-OPR-2026] [AICPA-CART-2026]. UK PCRT bodies issued AI
   guidance [ATT-PCRTAI-2026].
 - **Courts and evidence.** Clinco: the Tax Court found likely hallucinated citations and issued a warning
   [TAXCT-CLINCO-2026]. An IRS valuation expert report in Riddle Aggregates was challenged over hallucinated
-  citations and recorded as withdrawn [RIDDLE-TRANSCRIPT-2026]. Proposed Federal Rule of Evidence 707 on machine
-  output was not advanced in June 2026 [PROSKAUER-707-2026].
-- **OECD.** The Chapter VII (intragroup services) draft of June 2026 has 21 new examples, some with AI tools shared
-  between affiliates; it is "not intended to change the general principles" [PWCDE-CH7-2026] [HLB-CH7-2026].
-  AstraZeneca and others asked the OECD to clarify how AI transactions are characterised [OECD-INTRAGROUP-2026].
+  citations and recorded as withdrawn [RIDDLE-TRANSCRIPT-2026]. On proposed Federal Rule of Evidence 707 (machine
+  output), a federal rules committee decided in June 2026 not to recommend action yet [PROSKAUER-707-2026].
+- **OECD.** The Chapter VII (intragroup services) draft of June 2026 has 21 new examples and is "not intended to
+  change the general principles" [PWCDE-CH7-2026] [HLB-CH7-2026]. Bloomberg reports some examples involve AI tools
+  shared between affiliates, and that AstraZeneca and others asked how AI transactions are characterised
+  [OECD-INTRAGROUP-2026].
   There is no law or international standard on pricing shared AI agents [BGOV-AGENTS-2026]. This is TP of AI, not
   AI in TP; see research-advisory.
 - **Cross-tax.** The CJEU's Arcomet ruling on VAT consequences of TP adjustments matters for year-end true-ups
@@ -178,8 +179,9 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
 - **Preparers become supervisors.** A P&G head of tax likens AI to a junior associate needing supervision and
   clean-up; PwC Singapore speakers keep "the crucial 20%" for people [DDTC-WUTA-2026]. Speakers say judgment and
   accountability matter more, not less [AIBIDIA-WEBINAR-2026].
-- **Hiring signals.** Twilio, Adobe (Frame.io) and dsm-firmenich TP postings ask for AI in benchmarking, drafting
-  and workflow design [JOB-TWILIO-2026] [JOB-ADOBE-2026] [JOB-DSM-2026].
+- **Hiring signals.** Twilio's TP manager posting asks the hire to lead integrating AI into the TP workflow; Adobe
+  (Frame.io) lists applying AI to research, benchmarking, drafting and review; dsm-firmenich asks for strong
+  interest in AI [JOB-TWILIO-2026] [JOB-ADOBE-2026] [JOB-DSM-2026].
 - **New titles and teams.** Global Head of TP and Tax Automation at Deutsche Bank [TPMINDS-INTL-2026]; KPMG's
   Global TP Technology Leader [TPMINDS-WC-2026]; KPMG Germany's TP innovation and technology centre
   [KPMG-KITP-2026]; a BIP and Aibidia task force of TP specialists, data engineers and technologists [AIBIDIA-BIP-2026].
@@ -215,7 +217,7 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
   [AIBIDIA-LEADERS-2026], and Clinco and Riddle Aggregates show the cost. Response: use grounded tools with
   citations (`#01`), keep a verification log (`#20`), and have a named professional sign every output.
 - **"Our data isn't ready."** Usually true (22% say it is). Response: the named results (Trivium, Fortum, Kemira)
-  came from centralising data first (`#09`, `#12`); start there and add AI drafting on top.
+  all rest on centralised data and harmonised systems (`#09`, `#12`); AI drafting would sit on that layer.
 - **"The authority won't accept AI work."** The IRS says AI can support judgment if you can show inputs and
   formulas [IRS-LBI-TP-2026]. Plante Moran: an AI comparables list is a first pass, unlikely to meet standards on
   its own [PLANTEMORAN-2026]. Use AI for the first pass and keep the documented screen.
