@@ -176,7 +176,7 @@ planning missed; planning hours and senior review time; internal and external in
 **Standards and regulators (none prohibits AI in planning; none sets AI-specific requirements)**
 - **ISA 315 (Revised 2019)** (read in its UK adoption): automated tools may analyse large data volumes (A21) and whole
   populations to find significant classes (A203); procedures must not be biased toward corroborative evidence (para
-  13); AI is named once, in Appendix 5, with auditor responsibilities "unchanged" [ISAUK315-2025].
+  13); AI is named once, in Appendix 5: responsibilities for IT applications "remain unchanged" [ISAUK315-2025].
 - **AS 2110** has no AI wording. Hooks: understanding the company and changes since prior periods (.07-.08), analytics
   with expectations and limited precision (.46-.48), fraud discussion with the partner (.49-.53), inquiries of the audit
   committee and others (.54), revising the assessment (.74) [AS2110-PCAOB-2026].

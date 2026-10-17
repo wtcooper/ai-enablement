@@ -70,10 +70,10 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     source_ref: TR-DISCLOSURE-2026
   prerequisites:
   - >-
-    Draft financial statements in a form the tool can read, and a checklist inside the same platform (TR-DISCLOSURE-2026;
-    CASEWARE-VERITY-2026).
+    Thomson Reuters' feature is available to Guided Assurance customers with the Disclosure module (TR-DISCLOSURE-2026).
   - >-
-    Suggestions land in the engagement workflow so the auditor can accept, refine or override them (CASEWARE-VERITY-2026).
+    Caseware's agent works inside its audit engagement workflow, where suggestions can be accepted, refined or overridden
+    (CASEWARE-VERITY-2026).
   risks_and_guardrails:
   - >-
     The FRC lists omission, hallucination and distortion as deficient-output risks, and expects mitigations matched
@@ -190,7 +190,7 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     provenance: vendor-published
     source_ref: CASEWARE-CWX-2026
   prerequisites:
-  - A completed checklist and the draft statements in the same tool (TR-DISCLOSURE-2026).
+  - Not stated beyond access to the vendor's disclosure feature (TR-DISCLOSURE-2026).
   risks_and_guardrails:
   - >-
     The FRC lists 'critic' among an LLM's roles, where the LLM reviews an input that may itself be another LLM's
@@ -404,7 +404,8 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     provenance: independent
     source_ref: CPACOM-ATR-2025
   prerequisites:
-  - Trial balance and draft statements in one system (FIELDGUIDE-FINANCIALS-2026).
+  - >-
+    Trial balance data in the platform; adjustments to it trigger the checks (FIELDGUIDE-FINANCIALS-2026).
   risks_and_guardrails:
   - >-
     Fieldguide calls the validation deterministic (FIELDGUIDE-FINANCIALS-2026); the FRC lists rules-based components
@@ -826,7 +827,7 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     provenance: independent
     source_ref: PCAOB-GENAI-2024
   prerequisites:
-  - Audit documentation held in a system the tool can read.
+  - Not stated in the sources.
   risks_and_guardrails:
   - >-
     AS 1220 requires the engagement quality reviewer to evaluate significant judgments and give concurring approval
@@ -991,7 +992,7 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     provenance: independent
     source_ref: ARXIV-FAB-2026
   prerequisites:
-  - Engagement files in a form an agent can read (ARXIV-FAB-2026).
+  - The test input was synthetic engagements averaging 179 files each (ARXIV-FAB-2026).
   risks_and_guardrails:
   - Inappropriate procedures and incorrect documentation are the failure modes named (ARXIV-FAB-2026).
   human_checkpoints:
@@ -1040,7 +1041,7 @@ Schema per `vocabulary.md`. Outcome provenance is marked on every figure. Grades
     provenance: vendor-published
     source_ref: DELOITTE-OMNIA-2026
   prerequisites:
-  - Agents operate inside Omnia on engagement data (DELOITTE-OMNIA-2026).
+  - The agents run inside Deloitte Omnia (DELOITTE-OMNIA-2026).
   risks_and_guardrails:
   - >-
     The FRC says regulatory accountability does not change and the human auditor is always accountable (FRC-NEWS-2026).
