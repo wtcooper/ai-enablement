@@ -39,7 +39,7 @@ attack the system missed), recall (share of real attacks caught), MTTR (mean tim
 | Detection engineering | Turn threats, CVEs and reports into rules; test against logs; peer review; deploy | software-systems, expert-judgment | Each rule is slow to write and validate, so coverage is rationed [AMAZON-RULEFORGE-2026]; crowdsourced rules show informal quality control [USENIX-SIGMA-2026] |
 | Detection validation and tuning | Check rules still see data; suppress known-benign patterns | review-assurance, software-systems | Rules that "run but can't see" (disconnected, starved, missing fields, ingest lag) [DETENGWEEKLY-165-2026]; benign alerts fire until someone writes the suppression |
 | Alert intake and Tier-1 triage | Enrich with user, asset and threat context; close or escalate | transaction-processing | 28% of alerts never investigated (vendor survey) [HNS-GARTNER-2026]; triage varies by shift [DROPZONE-ECS-2026] |
-| Investigation (Tier 2/3) | Pivot across SIEM, EDR, identity and cloud logs; build timeline and verdict | research-synthesis, expert-judgment | About 30 minutes per alert by hand [ELASTIC-AGENTICSOC1-2026]; context spread over 20+ tabs [CAUCHY-IRNB-2026] |
+| Investigation (Tier 2/3) | Pivot across SIEM, EDR, identity and cloud logs; build timeline and verdict | research-synthesis, expert-judgment | About 30 minutes per alert by hand [ELASTIC-AGENTICSOC1-2026]; context spread over 20+ tabs [CAUCHY-IRNOTEBOOKS-2026] |
 | Hunting that feeds the queue | Look for activity no rule flags, in sources with no detections | research-synthesis | No detections for many SaaS audit logs [GROWTHERAPY-HUNT-2026] |
 | Case management and reporting | Attach evidence, write the report, close with a reason | document-production, coordination-scheduling | Closed cases without reasoning teach nothing [FIGMA-AGENTS-2026]; report detail falls with fatigue [CSA-SOCBENCH-PR-2025] |
 | Response and containment | Block, isolate, disable, notify | transaction-processing, expert-judgment | A wrong automated action can disrupt the business as badly as an attack [NCSC-AGENTICDEF-2026] |
@@ -259,12 +259,12 @@ SOC. Advise clients to measure their own (`#21`).
   vendors touching AI in security operations [SACR-AISOCMKT-2026]. Response: proof of value on your own alerts and a
   side-by-side run (`#05`, `#21`).
 - **"We tried building it ourselves and it failed."** 46% of home builds were abandoned or replaced (vendor survey)
-  [HNS-GARTNER-2026]. Figma, Elastic and Grow Therapy succeeded with structure: memory, critics, staged rollout
+  [HNS-GARTNER-2026]. Figma, Elastic and Grow Therapy report results from built systems that rely on memory, critics and staged rollout
   (`#01`, `#09`; security-threat-intelligence-21).
 - **"Our data can't leave, and hosted models refuse attack content."** Local and open-weight models worked for a
   university SOC and for Hugging Face during an incident [NDSS-WOSOC-2026, HUGGINGFACE-INCIDENT-2026].
-- **"Faster to the wrong answer."** AI SOCs depend on the data fed to them [RESILIENTCYBER-FASTER-2026]; fix data
-  coverage first [OMB-M2614-2026].
+- **"Faster to the wrong answer."** AI SOCs depend on the data fed to them [RESILIENTCYBER-FASTER-2026]. US federal
+  rules now measure logging coverage per system [OMB-M2614-2026]; ask what the client's coverage is.
 
 ## 10. Sources
 
@@ -285,6 +285,6 @@ Keys cited above that are not in the YAML (all others are given in full there):
 - USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs", USENIX Security 2026, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai
 - IBM-CODB-2026: IBM and Ponemon, Cost of a Data Breach Report 2026, 2026-07, https://www.ibm.com/reports/data-breach
 - SACR-AISOCMKT-2026: Software Analyst Cyber Research, "The AI SOC Market, 2026", 2026-07-30, https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-the-ai
-- CAUCHY-IRNB-2026: DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (the use case itself is security-incident-response-07)
+- CAUCHY-IRNOTEBOOKS-2026 (CAUCHY-IRNB-2026 in the operations inputs): DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (the use case itself is security-incident-response-07)
 - DROPZONE-JD2030-2026: Dropzone AI, "SOC Analyst Job Description: Rewriting It for 2030", 2026-05-13, https://www.dropzone.ai/blog/soc-analyst-job-description-2030
 - RESILIENTCYBER-FASTER-2026: Resilient Cyber, "Faster to the Wrong Answer" (partner content with Censys), 2026-10-14, https://www.resilientcyber.io/p/faster-to-the-wrong-answer

@@ -1,8 +1,7 @@
 # Tax (archetype)
 
-Last researched 2026-10-17. This is the index for the tax archetype. Read it once onboarding points to tax, then load
-only the module and archetype files the conversation needs. Source keys in brackets resolve in
-[sources.md](sources.md).
+Last researched 2026-10-17. The index for the tax archetype: read it once onboarding points to tax, then load only the
+module and archetype files the conversation needs. Source keys in brackets resolve in [sources.md](sources.md).
 
 ## What it covers
 
@@ -14,14 +13,13 @@ examine it years later.
 
 ## Who it serves
 
-- **Firms of every size:** the Big Four, mid-tier and private-equity-backed firms, small CPA and enrolled-agent
-  practices, retail preparers, and AI-native entrants and roll-ups. Their starting points differ sharply (see
-  [state-of-ai.md](state-of-ai.md)).
+- **Firms of every size:** the Big Four, mid-tier and PE-backed firms, small CPA and enrolled-agent practices, retail
+  preparers, AI-native entrants and roll-ups. Starting points differ sharply ([state-of-ai.md](state-of-ai.md)).
 - **In-house corporate tax departments.** They run compliance, provision, indirect tax and transfer pricing for their
   own group, buy outside help, and often own the tax data and technology. Most are under-resourced: 58% of 288
   departments said so in 2025 [TR-CORPTAX-2025].
-- **Typical users:** tax partners and practice leaders, managing partners, heads of tax, tax directors and VPs, tax
-  technology leads, indirect tax, transfer pricing and controversy leads, national-office and risk partners.
+- **Typical users:** tax partners, managing partners, heads of tax and tax directors, tax technology, indirect tax,
+  transfer pricing and controversy leads, national-office and risk partners.
 
 ## What it extends
 
@@ -41,8 +39,7 @@ Match on what is delivered, to whom and who regulates it, not on job titles. Cue
 - "Transfer pricing", "local file", "master file", "CbCR", "benchmarking", "intercompany agreements", "APA".
 - "Notices", "CP2000", "IDRs", "the exam", "Appeals", "Tax Court"; "Circular 230", "OPR", "section 7216".
 - "Research memo", "opinion", "planning", "M&A tax diligence", "Blue J", "CoCounsel", "Bloomberg Tax".
-- "ONESOURCE", "Corptax", "Vertex", "Avalara", "tax data", "tax technology team".
-- From in-house: "head of tax", "our tax department", "TEI", "the auditors review our provision", "IT owns the ERP".
+- "ONESOURCE", "Corptax", "Vertex", "Avalara", "tax data"; in house: "head of tax", "TEI", "our auditors review the provision".
 
 Not tax: auditing a client's tax balances or provision inside a financial-statement audit (assurance: its specialists
 and substantive-testing modules); bookkeeping and the monthly close (no archetype yet; use the library); tax
@@ -66,8 +63,7 @@ measured result. No module has an independent error, override or parallel-run re
 | [research-advisory](modules/research-advisory.md) | Research, memos, written advice, planning and M&A tax diligence; firm and in-house buyers. Speed figures are practitioners' estimates in vendor case studies | moderate (11 of 25 A/B) |
 | [data-technology](modules/data-technology.md) | In-house tax data layer, automation and its sustainment, real-time reporting interfaces, MCP access, the tax technology team. Some B entries are not AI | moderate (8 of 24 A/B) |
 
-Professional responsibility (Circular 230, section 7216, PCRT, TPB, the Werfel framework) has no module; it sits in
-[guardrails.md](guardrails.md), which every module relies on.
+Professional responsibility (Circular 230, section 7216, PCRT, TPB, Werfel) sits in [guardrails.md](guardrails.md).
 
 ## Journey-stage markers (tax)
 
