@@ -1,10 +1,10 @@
 # Corporate direct-tax compliance (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/compliance-corporate.yaml` (24 entries). Ids are shortened
-here: `#05` means `tax-compliance-corporate-05`. Source keys in brackets, such as [PWC-MEGNA-2025], are given in full
-in the YAML or in §10. **Evidence is thin.** No entry has a measured outcome from a named organisation (no grade A);
-3 of 24 entries are grade B (a named deployment without published numbers). Sources re-verified 2026-10-17.
-Nearly every figure here is vendor-published or self-reported. Say so when you quote one.
+Sources checked 2026-10-17. Use cases live in `../use-cases/compliance-corporate.yaml` (24 entries). Ids are
+shortened here: `#05` means `tax-compliance-corporate-05`; other modules' ids are in full. Source keys in brackets,
+such as [PWC-MEGNA-2025], are given in full in the YAML or in §10. **Evidence is thin.** No entry has a measured
+outcome from a named organisation (no grade A); 3 of 24 entries are grade B (a named deployment without published
+numbers). Nearly every figure here is vendor-published or self-reported. Say so when you quote one.
 
 ## Contents
 
@@ -36,7 +36,7 @@ effectively settled and the harder problems are silent failures, ownership, trai
 |---|---|---|---|
 | Data collection and tax-sensitising | Extract trial balances and ledgers from many entities; map accounts to the tax chart of accounts | data-reporting, transaction-processing | Weeks of manual mapping at multinationals [EY-COMPL-2024]; Baker Tilly states 63% of departments still gather ERP/GL data manually and 76% rely heavily on Excel (survey unnamed) [BAKERTILLY-2026] |
 | Source-document intake | Read K-1s (partnership income statements), foreign financials, third-party data | transaction-processing | Many formats; footnotes need interpretation; extraction errors flow silently into the return [TAXADVISER-WERFEL-2026] |
-| Book-to-tax adjustments | M-1/M-3 schedules (reconciling book income to taxable income), depreciation, E&P | transaction-processing | Rules-heavy; mostly rules-based automation today (Baxter's Corptax bots) [CSC-BAXTER-2026] |
+| Book-to-tax adjustments | M-1/M-3 schedules (reconciling book income to taxable income), depreciation, E&P (earnings and profits) | transaction-processing | Rules-heavy; mostly rules-based automation today (Baxter's Corptax bots) [CSC-BAXTER-2026] |
 | Federal return and workpapers | Roll forward prior-year workpapers; prepare the 1120 in the compliance engine (ONESOURCE, Corptax) | document-production | Staff-level preparation followed by layers of review [EY-COMPL-2024] |
 | International forms | 5471, 8858, foreign tax credit forms | transaction-processing, data-reporting | Volume; no AI-specific case found, only rules-based bots (200+ reports in 2 hours, vendor-published) [CSC-BAXTER-2026] |
 | State apportionment and returns | Apportion income, file state returns | transaction-processing | Only one source describes AI here (Byron) [BYRON-2026] |
@@ -55,29 +55,34 @@ model 4. Automate has almost no deployed evidence.
 **Data intake and mapping**
 - Improve: `#01` AI maps ledger accounts to tax accounts; EY says weeks become two days with review (illustration).
   `#02` PwC agents interpret K-1 footnotes, state a confidence level and log override reasons (grade B; adjacent
-  asset-management setting). `#17` analysts build their own pipelines with AI coding tools (about 15 minutes against
-  about two months in the IT queue, as attendees described it).
+  asset-management setting; the fuller entry for the same change is `tax-compliance-individual-business-02`). `#17`
+  analysts build their own pipelines with AI coding tools (about 15 minutes against about two months in the IT
+  queue, as attendees described it; the control side is `tax-data-technology-07`).
 - Automate: `#10` Oxford Industries' tax team deploys Savant's governed automation platform (grade B; a pre-event
   vendor release names the team but not its workflows; Savant's demos covered reconciliation, extraction and lineage,
-  and also indirect tax).
+  and also indirect tax; the reconciliation itself is `tax-data-technology-09`).
 - Ideas: `#23` a gate that checks inputs for contradictions before any calculation; `#22` a deterministic engine
   computes while a model translates rules into tested logic.
 
 **Return preparation and workpapers**
-- Improve: `#11` cited research inside ONESOURCE and Bloomberg Tax workpapers; `#18` PwC's model explains inputs,
+- Improve: `#11` cited research inside ONESOURCE and Bloomberg Tax workpapers (stand-alone research assistants are
+  `tax-research-advisory-01`); `#18` PwC's model explains inputs,
   outputs and assumptions so the reasoning chain replaces the memo, and approved logic is locked (grade C: the named
-  deployment is an effective-tax-rate model, a provision process); `#19` a record of AI use and verification with each AI-assisted item.
+  deployment is an effective-tax-rate model, a provision process); `#19` a record of AI use and verification with
+  each AI-assisted item (the fuller entry is `tax-research-advisory-19`).
 - Delegate: `#06` agents roll forward workpapers and prepare review-ready 1120, 1120-S and 1065 returns, including
-  book-to-tax and state apportionment (Byron; >97% extraction accuracy is the company's claim).
+  book-to-tax and state apportionment (Byron; >97% extraction accuracy is the company's claim). Firm-side
+  pass-through returns, with fuller evidence, are `tax-compliance-individual-business-06`.
 - Reinvent: `#05` AI prepares, staff review, and fewer review layers may be needed (EY's stated direction; PwC keeps
   multi-eye review for complex outputs). `#07` OpenAI's tax team sets out to move from outsourced preparation to
   agent-driven computation of 1120, 1065, 5471 and state returns (grade B; job listings and a live demonstration of
-  automation pipelines).
+  automation pipelines; the same team as an operating model is `tax-data-technology-22`).
 
 **Credits and incentives**
 - Reinvent the process: `#09` Neo.Tax in ONESOURCE builds contemporaneous R&D evidence from project, payroll and
   ledger data and populates Form 6765 with Section G [TR-CORPAI-2026]. Vendor figures: weeks to days; 50-75% lower
-  fees and 20-30% lower FIN 48 reserves, "companies report", no sample [TR-NEOTAX-2025].
+  fees and 20-30% lower FIN 48 reserves (reserves for uncertain tax positions), "companies report", no sample
+  [TR-NEOTAX-2025].
 
 **Review, risk and sign-off**
 - Improve: `#03` year-on-year anomaly flags on returns, source data and reconciliations; `#04` validation agents
@@ -94,8 +99,9 @@ model 4. Automate has almost no deployed evidence.
 **Operating and service model**
 - Delegate/reinvent: `#08` firm agent platforms (EY Tax Agent Factory, PwC Agent OS, KPMG Digital Gateway with
   Claude). `#15` compliance bought as an AI-enabled managed service, with in-house teams asking providers to
-  disclose AI use. `#16` idea: value-based pricing in place of hours. `#20` approved enterprise tools with vendor
-  terms that bar training on company data and require notice of model changes.
+  disclose AI use. `#16` idea: value-based pricing in place of hours (the fuller entry is
+  `tax-research-advisory-25`). `#20` approved enterprise tools with vendor terms that bar training on company data
+  and require notice of model changes (the firm-wide standard is `tax-research-advisory-07`).
 
 ## 4. Interview probes
 
@@ -158,27 +164,21 @@ returns, Forms 5471/8858, state returns or Section G.
 
 ## 6. Guardrails
 
-- **Existing duties apply; no AI-specific rule for corporate returns.** IRS OPR Alert 2026-19 (24 Jun 2026) maps
-  Circular 230 onto AI: review all AI output before it reaches a client or the IRS (10.22 due diligence); fees
-  must not bill time not spent (10.27); understand the tool (10.35); firm procedures and documentation (10.36);
-  no reliance on AI authorities without verification (10.37); IRC 6713 and 7216 on disclosure of return
-  information [IRS-OPR-2026]. It addresses practitioners, not in-house teams directly.
+- **Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties), section 7216 consent, the UK PCRT
+  guidance, Australia's TPB guidance and *Clinco* are set out once in [the archetype guardrails](../guardrails.md)
+  and apply here. Points specific to this module follow. There is no AI-specific rule for corporate returns, and the
+  OPR alert addresses practitioners, not in-house teams directly [IRS-OPR-2026].
 - **Preparer reliance.** Treas. Reg. 1.6694-1(e) allows good-faith reliance on taxpayer-furnished information but
   not ignoring apparent errors; the sources do not say how it applies to AI output [ECFR-1694-1].
 - **Section G.** Required for tax years beginning after 2025, with exceptions for qualified small businesses and
-  small filers; report at least 80% of QREs by business component, but no more than 50 components
+  small filers; report at least 80% of QREs (qualified research expenses) by business component, but no more than 50 components
   [IRS-F6765-INSTR-2025]. Records must
   be in "sufficiently usable form and detail" [ECFR-141-4]. Sources disagree on timeline wording; use the IRS
   instructions for the filing year.
 - **Risk framework.** Werfel's framework, with a 20-risk register for tax authorities and a 15-risk register for
   preparers [TAXADVISER-WERFEL-2026], and the AICPA's Council on AI Risk in Tax (CART, 23 Sep 2026) [AICPA-CART-2026];
   the article states it is the author's view, not AICPA policy.
-- **UK and software.** PCRT guidance: members remain responsible for AI-assisted work and must apply professional
-  judgement; entering client data into a public AI model without consent is likely a breach of confidentiality
-  [ICAEW-PCRT-2026]. HMRC expects AI tax software to keep monitoring and version control
-  [HMRC-GENAI-2026].
-- **Courts.** *Clinco* (T.C. Memo. 2026-16): three of four cited cases likely fabricated; no formal sanction
-  [TAXCT-CLINCO-2026].
+- **Software.** HMRC expects AI tax software to keep monitoring and version control [HMRC-GENAI-2026].
 - **Audit trail.** Deloitte says agentic corrections to source data must be written back to the system of record
   [DELOITTE-TTT-2026].
 
