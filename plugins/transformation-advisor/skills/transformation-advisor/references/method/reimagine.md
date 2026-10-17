@@ -59,7 +59,7 @@ respondents [MCKINSEY-SOAI-2025].
 |---|---|
 | Curious | Mostly lens 1. Explain the ladder with archetype examples. Aim for two or three quick wins with existing tools. Name lens 4 as a "what if" without going deep |
 | Experimenting | Lenses 1 and 2 in depth; lenses 3 and 4 as a target picture, not a plan. Turn individual use into a shared team workflow. Look for repeatable, high-volume steps |
-| Adopting | All four lenses. Delegate only bounded, low-risk outcomes with explicit human checkpoints and a control plan; broader delegation belongs to Scaling (advisor rule; BCG finds agent use concentrated in its most AI-mature firms [BCG-GAP-2025]) |
+| Adopting | All four lenses. Delegate only one or two bounded, low-risk outcomes, and only when all five gates in `onboarding.md` hold (otherwise the missing gate becomes a foundation item); broader delegation belongs to Scaling (advisor rule; BCG finds agent use concentrated in its most AI-mature firms [BCG-GAP-2025]) |
 | Scaling | All four, with reuse: which options share components across units. Delegation at scale, agent governance, lens 4 across the portfolio |
 | AI-native | Start from lens 4: business model, pricing, new services, AI-native competitors, then work back to steps |
 

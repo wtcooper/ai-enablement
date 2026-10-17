@@ -135,7 +135,7 @@ wins raises time to value; a Scaling portfolio raises strategic fit. Children in
 | **Treat the leader's account as work-as-imagined;** write hypotheses for Map | Leaders, [U/O] | Where practice differs from belief; the cheap wins usually sit in that gap [HOLLNAGEL-2017] |
 | **Choose what to map by pain, frequency, impact and readiness,** not by what demos well (F18) | End of Frame | Avoids visible-use-case bias: executives in MIT NANDA's study steered hypothetical budgets to sales and marketing, partly because results there are easier to attribute (interview-based, preliminary) [MIT-NANDA-2025; OPENAI-ACADEMY-2025] |
 | **Pair efficiency with a growth or quality measure** | Setting levers | Wharton/GBK report 35% strongly positive ROI among leaders tracking a growth measure against 13% tracking efficiency only (self-reported association) [WHARTON-2026] |
-| **State the capacity stance early** (redeploy to backlog, growth or quality; absorb through hiring pace; or reduce) | Before mapping | Whether the case is growth or cost, and how staff will read the project; Wharton/GBK advise rebuilding how work is managed rather than cutting headcount [WHARTON-2026] |
+| **State the capacity stance early** (redeploy to backlog, growth or quality; or reduce, including through hiring pace or attrition; see `people-and-change.md`) | Before mapping | Whether the case is growth or cost, and how staff will read the project; Wharton/GBK advise rebuilding how work is managed rather than cutting headcount [WHARTON-2026] |
 
 ## 6. Common traps
 
