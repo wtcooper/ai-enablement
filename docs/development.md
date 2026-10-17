@@ -28,13 +28,20 @@ This process is for building the plugin. None of it appears in the product.
 
 ```
 ai-enablement/
+├── .claude-plugin/ · .agents/plugins/ ·  # marketplace index per client (Claude, Codex,
+│   .cursor-plugin/ · .github/plugin/     #   Cursor, Copilot); all point to the plugin below
 ├── plugins/transformation-advisor/       # THE PRODUCT: everything that ships
+│   ├── plugin.json                       # Agent Plugins 1.0 manifest (+ .claude-plugin/, .cursor-plugin/)
 │   └── skills/transformation-advisor/
-│       ├── SKILL.md                      # the conductor (next milestone)
+│       ├── SKILL.md                      # the conductor: rules, onboarding, the loop, delegation
 │       └── references/
 │           ├── method/                   # 11 step guides + index
-│           ├── archetypes/<id>/          # ARCHETYPE.md, field guides, modules/, use-cases/
-│           └── schemas/                  # controlled vocabulary
+│           ├── library/                  # shared backbone: ladder, patterns, runtime classes, scoring
+│           ├── archetypes/<id>/          # ARCHETYPE.md, field guides, modules/, use-cases/ (+ index.md)
+│           ├── briefs/                   # self-contained subagent briefs
+│           ├── schemas/                  # plan, opportunities and use-case formats; vocabulary
+│           └── templates/                # plan and unit-brief skeletons
+├── templates/workspace/                  # starter folder for users, with overlay examples
 ├── research/                             # build-only: briefs, raw research, retros
 ├── scripts/validate.py                   # content checks
 ├── intent/ · spec/ · plan/               # design documents
@@ -74,9 +81,12 @@ Results and lessons from each wave:
 `python3 scripts/validate.py` checks:
 
 - file sizes, and that long files have a table of contents
-- that links resolve
+- that links and file paths resolve
 - that every use case uses the controlled vocabulary and has dated, linked sources
 - each focus area against its evidence targets
+
+Before a release, also run `claude plugin validate --strict` on the repo and the plugin, then the
+[install and smoke-test checklist](install-testing.md) in each client.
 
 ## Background notes
 

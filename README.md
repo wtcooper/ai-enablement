@@ -8,8 +8,9 @@ It runs as a plugin inside the AI tool you already use: Claude, ChatGPT / Codex,
 Copilot. It interviews you the way an experienced transformation lead would, draws on deep,
 researched knowledge of your field, and leaves you with a transformation plan you can act on.
 
-> **Status: in development.** The method and the first business archetype (assurance) are
-> researched and verified. The installable skill is the next milestone. See [Status](#status).
+> **Status: in development (pre-release).** The method, the first business archetype (assurance) and the
+> installable skill are built. It installs and runs in Claude Code; the other tools are still being checked.
+> See [Status](#status).
 
 ## Why
 
@@ -63,9 +64,10 @@ More detail: [How the advisor works](docs/how-it-works.md).
 
 ## Getting started
 
-### 1. Install (available from v0.1)
+### 1. Install
 
-The plugin installs from this repository's marketplace. Pick your tool:
+The plugin installs from this repository's marketplace. Pick your tool. Installation is confirmed in Claude
+Code; the other tools are being checked ([checklist](docs/install-testing.md)).
 
 | Tool | Install |
 |---|---|
@@ -78,7 +80,8 @@ The plugin installs from this repository's marketplace. Pick your tool:
 ### 2. Start in a folder for your plan
 
 Open your AI tool in an empty folder, or in a shared folder or repo your team uses. The advisor saves
-your plan there.
+your plan there. A [starter folder](templates/workspace/) is available if you want one, with examples of
+the optional organization content.
 
 ### 3. Ask for help in your own words
 
@@ -104,9 +107,10 @@ any time, and it picks up where you left off next time.
 
 | Done | Next |
 |---|---|
-| Method: 11 step-by-step guides, fact-checked | The advisor skill and installation in each tool |
-| Assurance archetype: 10 focus areas and 11 field-level guides, fact-checked | Test runs with real audit and tax leaders |
-| Research program and quality checks | Tax, then professional services |
+| Method: 11 step-by-step guides, fact-checked | Confirm installation in Codex, Cursor and Copilot |
+| Assurance archetype: 10 focus areas and 11 field-level guides, fact-checked | Test runs with real audit and tax leaders, and an eval suite |
+| The advisor skill: installs and runs in Claude Code | Tax, then professional services |
+| Research program and quality checks | Detailed pattern and function guides for the shared library |
 
 ## Learn more
 

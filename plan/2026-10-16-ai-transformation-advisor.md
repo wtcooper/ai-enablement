@@ -110,7 +110,11 @@ This calibrates depth, briefs and schema before the large fan-out.
 
 That is 6 agents in total.
 
-### M2. Install skeleton and client verification (can run alongside M1)
+### M2. Install skeleton and client verification (can run alongside M1) · **Claude Code done; other clients with the owner**
+
+Status: built with the full skill rather than a stub. Marketplaces and manifests pass `claude plugin validate
+--strict`; the plugin installs from a local clone in Claude Code 2.1.302 and the skill triggers and reads its
+references. The per-client checklist is [`docs/install-testing.md`](../docs/install-testing.md).
 
 - Marketplace indexes and manifests for every target client (spec §7.5).
 - A stub `SKILL.md` that:
@@ -223,7 +227,11 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 M2 (install skeleton) and M5 (authoring) can start during wave 1, using the pilot module as the first
 real archetype content.
 
-### M5. Author the skill
+### M5. Author the skill · **first version done** (library pattern and function files wait for stream B)
+
+Status: `SKILL.md`, `library/index.md`, `archetypes/index.md`, six briefs, schemas, templates and
+`templates/workspace/` are written and pass the validator. The library index carries short working definitions
+of patterns and functions until stream B produces the detailed files.
 
 - `SKILL.md`, following spec §7.2 (the conductor), with the rules first.
 - `method/` files from stream M. Each has its expert moves, question bank, traps and examples.
