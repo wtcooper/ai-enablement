@@ -213,9 +213,9 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 | Wave | Content | Agents |
 |---|---|---|
 | 1 · **done** | The rest of assurance (the landscape grew it to 10 modules), cross-cutting topics, archetype-level files, consistency pass. Stream M (method): 11 files. 63 agents, about 23M tokens, about 2 hours. See the [retro](../research/runs/wave1/RETRO.md) | 63 |
-| 2 · **in progress** | Tax. Landscape done (160 sources); module set revised to 8 modules plus 4 cross-cutting topics; 26 research agents, then synthesis and verification | ~50–60 |
+| 2 · **done** | Tax. Landscape (160 sources) revised the module set to 8 modules plus 4 cross-cutting topics. 48 agents, about 16M tokens. 135 of 183 entries corrected by verification, none rejected. See the [retro](../research/runs/wave2/RETRO.md) | 48 |
 | 3 | Professional services, plus stream B (backbone library) | ~50–60 + ~15 |
-| 4 | Security (added 2026-10-17). Landscape first, then module sign-off with the owner before the deep dives. Up to 11 proposed modules, so likely the largest archetype | ~55–70 |
+| 4 · **in progress** | Security (added 2026-10-17). Landscape (139 sources) confirmed 11 modules, signed off by the owner; 33 research agents done; synthesis and verification under way | ~60–65 |
 
 **Changes adopted after wave 1:**
 

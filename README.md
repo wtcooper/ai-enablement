@@ -58,7 +58,8 @@ More detail: [How the advisor works](docs/how-it-works.md).
 | Archetype | Status |
 |---|---|
 | **Assurance**: audit, SOC and attestation, sustainability assurance, assurance over AI | Ready: 10 focus areas, 206 sourced examples, all fact-checked |
-| **Tax** | Next |
+| **Tax**: individual and corporate compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research and advisory, tax data and technology | Ready: 8 focus areas, 183 sourced examples, all fact-checked. Public evidence is thinner than in audit, and the advisor says so |
+| **Security**: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure, application security, cloud, identity, data security and privacy, human risk, AI security | In progress: researched, now being written up and fact-checked |
 | **Professional services**: the base for consulting and firm operations | Planned |
 | Other fields | The advisor uses its general method, and can optionally research a field on the spot |
 
