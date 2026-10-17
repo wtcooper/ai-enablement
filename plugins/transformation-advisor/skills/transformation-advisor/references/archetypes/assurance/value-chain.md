@@ -23,9 +23,9 @@ pain points and AI use cases are in the module files; this file does not repeat 
 - For each process the leader cares about, open the linked module's §2 for the step table and typical pains, then ask
   for their own numbers: engagements a year, hours per step, review notes, rework, findings.
 - Stages 0 and 7 come from professional-services and work the same way here, with the assurance differences noted.
-- Inspection findings show where the work is hardest. At the six largest networks in 2025, 35% of inspected listed
-  public-interest audits had at least one finding, and internal control testing was the largest single source
-  [IFIAR-SURVEY-2026].
+- Inspection findings show where the work is hardest. In IFIAR's 2025 survey of the six largest networks, 35% of inspected
+  listed public-interest audits had at least one finding. Internal control testing produced the most findings by count;
+  accounting estimates had the highest share of inspected audits with a finding [IFIAR-SURVEY-2026].
 
 ## 2. Stages at a glance
 
@@ -51,9 +51,9 @@ pain points and AI use cases are in the module files; this file does not repeat 
 | Tender and proposal | Respond to request for proposal; meet the audit committee; describe team, approach and technology | client-interaction, document-production |
 | Fee and scope | Budget hours by grade; set the fee; agree scope changes | expert-judgment, data-reporting |
 
-Assurance differences: audit committees run the tender, and buyers who ran a competitive review reported fee cuts of
-25-30% in one 95-respondent survey [FERF-2026]. Two-thirds of 54 small and mid-size US firms present their technology to
-clients as a differentiator [CPACOM-ATR-2025]. See [economics.md](economics.md).
+Assurance differences: for listed clients the audit committee oversees the tender, and buyers who ran a competitive
+review reported fee cuts of 25-30% in one 95-respondent survey [FERF-2026]. Two-thirds of 54 US firms surveyed present
+their technology to clients as a value differentiator [CPACOM-ATR-2025]. See [economics.md](economics.md).
 
 ### Stage 1. Accept and continue
 
@@ -61,7 +61,7 @@ clients as a differentiator [CPACOM-ATR-2025]. See [economics.md](economics.md).
 |---|---|---|---|
 | Client risk and due diligence | Intake questionnaire; risk score; KYC and AML screening | client-interaction, research-synthesis, transaction-processing | [acceptance-independence](modules/acceptance-independence.md) |
 | Independence clearance | Map affiliates; check services, relationships, holdings; rotation | review-assurance, data-reporting, coordination-scheduling | same |
-| Decide and contract | Partner and risk approval; engagement letter, now including AI use and data consent | expert-judgment, document-production | same |
+| Decide and contract | Partner and risk approval; engagement letter, covering AI use and data consent where law, contract or firm policy requires it | expert-judgment, document-production | same |
 
 ### Stage 2. Plan
 
@@ -104,24 +104,25 @@ clients as a differentiator [CPACOM-ATR-2025]. See [economics.md](economics.md).
 ### Stage 7. Bill, collect and learn (inherited)
 
 Billing, realization and knowledge management work as in professional-services. The assurance difference is that 87% of
-54 surveyed US firms track realization and only 13% track value-billed engagements, so hours saved show up first as
-realization or idle capacity [CPACOM-ATR-2025]. See [economics.md](economics.md).
+54 surveyed US firms track realization and only 13% track value-billed engagements [CPACOM-ATR-2025], so hours saved are
+likely to show up first as realization or idle capacity (inference). See [economics.md](economics.md).
 
 ## 4. The data and evidence acquisition layer
 
 No module owns this layer, but it decides whether AI tools in stages 2-5 work at all.
 
-**Why it matters.** Among 54 small and mid-size US firms, poor client data (60%) and no access to client systems (53%)
-were top blockers, and firms further along named client-data access as their biggest obstacle more often. The most
-automated steps were the data-in steps: confirmations (39%), foot-and-proof (39%) and trial-balance import (35%); data
-ingestion was 19% and substantive analytics 11% [CPACOM-ATR-2025]. KPMG argues continuous testing "cannot be achieved
+**Why it matters.** Among 54 US firms surveyed, the top-ranked blockers were untrained staff (66%), poor client data (60%)
+and no access to client information and systems (53%), and firms further along named client-data access as their
+biggest obstacle more often. The most common automated solutions were workflow management, foot-and-proof and
+confirmations (39% each) and trial-balance import (35%); data ingestion was 19% and substantive analytics 11%
+[CPACOM-ATR-2025]. KPMG argues continuous testing "cannot be achieved
 without continuous evidence collection" (a forecast) [KPMG-SOX-2026].
 
 | Process | Key steps | Work types | Notes |
 |---|---|---|---|
-| Request and collect | Request list (PBC); client uploads; match each upload to the request; chase gaps | coordination-scheduling, client-interaction | Agents that screen uploads on arrival are vendor-described [SURALINK-CTEST-2026; OPTRO-CRX-2026] |
+| Request and collect | Request list (PBC); client uploads; match each upload to the request; chase gaps | coordination-scheduling, client-interaction | Agents that pre-screen client uploads are vendor-described [SURALINK-CTEST-2026]; Optro lists automated evidence collection as upcoming [OPTRO-CRX-2026] |
 | Extract and import | Pull ledger and trial balance from the client's system; map fields; reconcile to the trial balance | data-reporting, software-systems | Extraction layers claim any-system coverage (vendor) [VALIDIS-2026; INFLO-ADA-2026] |
-| Validate reliability | Completeness and accuracy of the population; reliability of electronic information from the client | review-assurance | Required under AS 1105.10A for fiscal years beginning on or after 15 Dec 2025 [PCAOB-TAA-2024] |
+| Validate reliability | Completeness and accuracy of the population; reliability of electronic information from the client | review-assurance | AS 1105.10A (fiscal years beginning on or after 15 Dec 2025) requires evaluating external information the company supplies electronically; a PCAOB policy statement (18 Sep 2025) says separate testing may be unnecessary where the risk of modification is remote [PCAOB-TAA-2024] |
 | Confirm with third parties | Bank, receivables, payables and legal confirmations; direct access to source data | transaction-processing, review-assurance | AS 2310 allows direct access to a knowledgeable external source, with intermediary due diligence [PCAOB-AS2310-2023]; SAS 150 applies to periods ending on or after 15 Dec 2028 [JOFA-SAS150-2026] |
 | Check authenticity | Spot altered or generated documents; verify out of band | review-assurance, expert-judgment | 75% of 713 anti-fraud professionals saw GenAI document fraud rise over two years; audit-specific incidence is unmeasured [ACFE-SAS-2026] |
 
@@ -129,8 +130,8 @@ without continuous evidence collection" (a forecast) [KPMG-SOX-2026].
 (b) extracts from client systems depend on completeness, field mapping and IT general controls; (c) data held at the
 source (banks, counterparties) is strongest, provided the intermediary's controls and independence from the client are
 assessed [IAASB-ED500-2026; PCAOB-AS2310-2023]. The IAASB notes that the ability to extract information in usable form
-can decide whether tools can be used at all, and that privacy law may bar some client data from some tools without
-consent or safeguards [IAASB-ED500-2026]. BDO Netherlands moved bank data from client downloads to a bank consent flow,
+may affect whether a procedure can be performed with technological tools, and that privacy law may bar some client data
+from some tools without consent or safeguards [IAASB-ED500-2026]. BDO Netherlands moved bank data from client downloads to a bank consent flow,
 aiming to test whole populations (self-reported, no outcome figures) [CIRCIT-CS-BDONL-2026].
 
 Every time-saving figure found for this layer is vendor-published or a customer quote, for example a sole practitioner
@@ -189,7 +190,7 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 | Work type | Typical assurance steps | Usual AI pattern | Evidence strength |
 |---|---|---|---|
 | review-assurance | Tests of controls, vouching, disclosure checklists, review of workpapers | full-population-testing, reconcile-exceptions, draft-review-loop | Strong in controls and substantive testing; thin at completion |
-| data-reporting | Ledger analytics, journal entries, population validation | full-population-testing, monitor-diagnose-act | Strong for journal entries (88% of IFIAR members answering saw tools there frequently) [IFIAR-TTF-2025] |
+| data-reporting | Ledger analytics, journal entries, population validation | full-population-testing, monitor-diagnose-act | Strong for journal entries (88% of IFIAR members answering frequently saw tools there, 2024 data) [IFIAR-TTF-2025] |
 | research-synthesis | Reading minutes, contracts, prior files, SOC reports | document-to-decision, research-brief | Moderate; regulator worked examples exist [FRC-GENAI-2026] |
 | document-production | Planning memos, walkthrough write-ups, Section 3 text, reports | draft-review-loop | Moderate; widely used, rarely measured |
 | expert-judgment | Risk assessment, materiality, deficiency severity, going concern, opinion | assist only; AI as input | Regulators keep these with the auditor [FRC-GENAI-2026; NFRA-CAALLEY-2026] |
@@ -201,6 +202,6 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 
 Keys not listed here are in [sources.md](sources.md).
 
-- **INFLO-ADA-2026**: Inflo, *Audit Data Analytics* (vendor, undated). https://inflo.com/audit-data-analytics/
-- **SURALINK-CTEST-2026**: Suralink, *Cloud Testing Suite* (vendor, undated). https://www.suralink.com/technology/cloud-testing-suite-suralink
-- **VALIDIS-2026**: Validis, *Validis home page* (vendor, accessed 16 Oct 2026). https://validis.com/
+- **INFLO-ADA-2026**: Inflo, *Audit Data Analytics* (vendor, undated page, accessed 17 Oct 2026). https://inflo.com/audit-data-analytics/
+- **SURALINK-CTEST-2026**: Suralink, *Cloud Testing Suite* (vendor, undated page, accessed 17 Oct 2026). https://www.suralink.com/technology/cloud-testing-suite-suralink
+- **VALIDIS-2026**: Validis, *Validis home page* (vendor, undated page, accessed 17 Oct 2026). https://validis.com/

@@ -1,12 +1,11 @@
 # Use cases: assurance / soc-attestation
-# Synthesised 2026-10-16 from the wave 1 landscape scan and the practice, discourse and governance deep dives
-# (research/runs/wave1/). Source refs are canonical keys: documents already in the controls-testing pilot keep the
-# pilot's key (EY-SOC, JOFA-FAST, JOFA-PRB, JOFA-PODSOC, SD-TQA, CSA-SOC2, IANS-DELVE); the synthesis report maps
-# every key back to the input files' refs. Figures are self-reported or vendor-published unless a note says otherwise.
+# Source refs are canonical keys: documents already cited in controls-testing.yaml keep that file's key (EY-SOC,
+# JOFA-FAST, JOFA-PRB, JOFA-PODSOC, SD-TQA, CSA-SOC2, IANS-DELVE). Figures are self-reported or vendor-published unless a note says otherwise.
 # SOC testing, SOC-cycle drafting, reading vendor SOC reports, platform-fed examiners and evidence-fabrication
-# screening already live in controls-testing (assurance-controls-testing-11, -12, -13, -14, -23) and are not repeated.
+# screening already live in controls-testing (assurance-controls-testing-11, assurance-controls-testing-12, assurance-controls-testing-13,
+# assurance-controls-testing-14, assurance-controls-testing-23) and are not repeated.
 # Everything about Delve is allegation: Delve denies it and no regulator finding exists.
-# Verified 2026-10-17: every cited URL was reopened and checked against the claims.
+# Sources checked 2026-10-17: every cited URL was opened and checked against the claims.
 
 - id: assurance-soc-attestation-01
   title: AI support for client acceptance, sample selection and scheduling of concurrent audits at a SOC specialist firm
@@ -38,10 +37,10 @@
     - {ref: LINFORD-ASSURE-2026, title: "AI Made Compliance Cheaper. It Didn't Make Assurance Cheaper.", publisher: "Linford & Company", type: firm, url: "https://linfordco.com/blog/ai-compliance-vs-assurance/", date: "2026-09-23", access: full, locator: "section 'What Actually Got Cheaper'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-09. Pattern 'other': AI decision support across acceptance, sampling and scheduling, which the
-    source lists in one sentence; split if a firm gives separate detail. Acceptance and independence questions belong
-    to the acceptance-independence module. The post cites 2025 PCI Security Standards Council guidance that an AI
-    system cannot act as assessor; that guidance was not opened.
+    Pattern 'other': AI decision support across acceptance, sampling and scheduling, which the source lists in one
+    sentence; split if a firm gives separate detail. Acceptance and independence questions belong to the
+    acceptance-independence module. The post cites 2025 PCI Security Standards Council guidance that an AI system
+    cannot act as assessor; that guidance was not opened.
 
 - id: assurance-soc-attestation-02
   title: Compliance platforms draft policies, risk assessments and system descriptions for SOC 2 preparers
@@ -97,10 +96,10 @@
     - {ref: JOFA-SOCETH-2026, title: "SOC engagements: Ethics risks with tool providers", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/apr/soc-engagements-ethics-risks-with-tool-providers/", date: "2026-04-06", access: full, locator: "section 'Common threats'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-16 and governance-03. General-purpose AI drafting of Section 3 and of management responses
-    to deviations is assurance-controls-testing-12 (EY poll: 45% and 41% of attendees); this entry covers drafts
-    generated inside compliance platforms. Comp AI raised a $34M Series A on 17 Sep 2026 (TechCrunch) and says its
-    software does not replace independent audit review.
+    General-purpose AI drafting of Section 3 and of management responses to deviations is
+    assurance-controls-testing-12 (EY poll: 45% and 41% of attendees); this entry covers drafts generated inside
+    compliance platforms. Comp AI raised a $34M Series A on 17 Sep 2026 (TechCrunch) and says its software does not
+    replace independent audit review.
 
 - id: assurance-soc-attestation-03
   title: AI-generated remediation of failing controls before the examination, with expert approval
@@ -140,7 +139,7 @@
     - {ref: LINFORD-FAQ-2022, title: "AICPA FAQs on SOC 2 Automation Tools: Insights from an Auditor", publisher: "Linford & Company", type: firm, url: "https://linfordco.com/blog/soc-2-automation-tools-aicpa-faqs", date: "2022-06-15", access: full, locator: "sections on integrations and risks"}
     - {ref: TC-DELVE-2026, title: "Delve accused of misleading customers with 'fake compliance'", publisher: TechCrunch, type: press, url: "https://techcrunch.com/2026/03/21/delve-accused-of-misleading-customers-with-fake-compliance/", date: "2026-03-21", access: full, locator: "paragraph on fabricated-evidence allegations and Delve's response"}
   last_reviewed: "2026-10-17"
-  notes: "From practice-15. Vendor descriptions only; no named customer outcome."
+  notes: "Vendor descriptions only; no named customer outcome."
 
 - id: assurance-soc-attestation-04
   title: AI mapping of controls, customer commitments and evidence across SOC 2 and other frameworks
@@ -194,10 +193,9 @@
     - {ref: SOC2AUD-AICOS-2026, title: "SOC 2 for AI Companies (2026): Scope, Controls & AICPA Guidance", publisher: "SOC2Auditors.org (comparison site)", type: vendor, url: "https://soc2auditors.org/insights/soc-2-for-ai-companies/", date: "2026-10-13", access: full, locator: "table on SOC 2, SOC 2+ and ISO 42001"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-02 and governance-12, with A-LIGN's evidence-reuse figure from practice-05. Pattern 'other':
-    cross-framework control mapping fits none of the listed patterns. Change scope: discourse said step, governance
-    process; step chosen because the deployed change is the mapping, not a redesigned flow. Discourse rated the
-    Customer Commitments feature announced; maturity is in-production on Vanta's and A-LIGN's live cross-mapping.
+    Pattern 'other': cross-framework control mapping fits none of the listed patterns. Change scope is step because
+    the deployed change is the mapping, not a redesigned flow. The Customer Commitments feature is only announced;
+    maturity is in-production on Vanta's and A-LIGN's live cross-mapping.
 
 - id: assurance-soc-attestation-05
   title: Continuous control monitoring and agent-collected evidence on compliance platforms (service-organisation side)
@@ -272,15 +270,13 @@
     - {ref: DRATA-AGENTGOV-2026, title: "Drata Extends Trust Management Platform to Continuously Monitor and Govern AI Agents (press release; read through a text mirror because the host returned 403)", publisher: Drata, type: vendor, url: "https://drata.com/about/news/drata-extends-trust-management-platform-to-continuously-monitor-and-govern-ai-agents", date: "2026-08-04", access: full, locator: "'About Drata' paragraph (8,500+ organizations); announcement paragraphs"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-12, discourse-03, discourse-04 and governance-01. Ladder: three of four said automate
-    (discourse-03 said augment). Runtime: two said workflow-automation and two background-agent; background-agent
-    chosen because the AI layer is agent-based. Grade B rests on named users (Snyk, WorkJam, Wispr Flow), not on
-    measurement; every figure is vendor-quoted and the IDC study was not seen. The examiner's use of the same data is
-    assurance-controls-testing-14. EY poll: 63% of attendees chose evidence collection as an AI use (multiple
-    answers; respondent count not stated). Scale (vendor or analyst): Sacra estimates Vanta at about $300M ARR in
-    April 2026, up about 69% a year; Fortune reports, from the company, $300M ARR and 16,000+ customers; Drata says
-    8,500+ organizations. Drata's AI Agent Governance product (4 Aug 2026; limited availability) is routed to the
-    assurance-over-AI module.
+    Runtime is background-agent because the AI layer is agent-based. Grade B rests on named users (Snyk, WorkJam,
+    Wispr Flow), not on measurement; every figure is vendor-quoted and the IDC study was not seen. The examiner's
+    use of the same data is assurance-controls-testing-14. EY poll: 63% of attendees chose evidence collection as an
+    AI use (multiple answers; respondent count not stated). Scale (vendor or analyst): Sacra estimates Vanta at
+    about $300M ARR in April 2026, up about 69% a year; Fortune reports, from the company, $300M ARR and 16,000+
+    customers; Drata says 8,500+ organizations. Drata's AI Agent Governance product (4 Aug 2026; limited
+    availability) is covered in the assurance-over-ai module.
 
 - id: assurance-soc-attestation-06
   title: SOC firm's audit platform screens client evidence against audit intent before fieldwork (A-LIGN A-SCEND)
@@ -320,9 +316,9 @@
     - {ref: LINFORD-TOOLS-2021, title: "How Does the Usage of SOC 2 Software Tools Affect SOC 2 Audits?", publisher: "Linford & Company", type: firm, url: "https://linfordco.com/blog/using-soc-2-software-tools-for-audit-compliance", date: "2021-12-22", access: full, locator: "section 'Does SOC 2 Compliance Software Affect an Individual Auditor's Responsibilities?'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-05. Grade B, not A: the figures are an approximate customer testimonial and are published by A-LIGN
-    without a method, and part of the effect comes from evidence reuse, which is not AI. A-LIGN's 15-hours-per-framework
-    reuse figure is in -04. Overlaps assurance-controls-testing-03 (pre-submission evidence checks in SOX); kept here
+    Grade B, not A: the figures are an approximate customer testimonial and are published by A-LIGN without a
+    method, and part of the effect comes from evidence reuse, which is not AI. A-LIGN's 15-hours-per-framework reuse
+    figure is in -04. Overlaps assurance-controls-testing-03 (pre-submission evidence checks in SOX); kept here
     because it is a SOC specialist firm's own platform. A-LIGN reports serving over 6,400 organizations
     (vendor-published). The page is undated; the date is the access month.
 
@@ -360,9 +356,9 @@
     - {ref: FIELDGUIDE-WEAVER-2026, title: "Weaver scales GRC services with Fieldguide to deliver transparency and accelerate growth (case study)", publisher: Fieldguide, type: vendor, url: "https://www.fieldguide.io/case-studies/weaver-scales-grc-services-with-fieldguide-to-deliver-transparency-and-accelerate-growth", date: "2026-10", access: full, locator: "'The Results' and 'The Road Ahead' sections (undated page; date is the access month)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-07. Pattern 'other': engagement workflow and client-portal platform. Grade capped at B because the
-    measured effect (realization) comes from a workflow platform, not from AI; embedding AI agents is described as
-    under way. A vendor case study with no date on the page or in the sitemap; the date is the access month.
+    Pattern 'other': engagement workflow and client-portal platform. Grade capped at B because the measured effect
+    (realization) comes from a workflow platform, not from AI; embedding AI agents is described as under way. A
+    vendor case study with no date on the page or in the sitemap; the date is the access month.
 
 - id: assurance-soc-attestation-08
   title: "Agent-executed SOC engagement: planning, evidence requests, testing, exception drafting and orchestration"
@@ -408,10 +404,10 @@
     - {ref: JOFA-FAST, title: "Promises of 'fast and easy' threaten SOC credibility", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/feb/promises-of-fast-and-easy-threaten-soc-credibility/", date: "2026-02-01", access: full, locator: "section 'What's the issue?'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-06. No named SOC firm is tied to the figures, so grade C and maturity announced. Search only (not
-    opened, not used): a Fieldguide page claiming firms saved 36-50 hours per SOC engagement and a customer cut
-    test-procedure drafting time by 66%. Weaver (-07) says it plans to embed these agents. Fieldguide's SOX-side
-    testing agents are covered in controls-testing.
+    No named SOC firm is tied to the figures, so grade C and maturity announced. Search only (not opened, not used):
+    a Fieldguide page claiming firms saved 36-50 hours per SOC engagement and a customer cut test-procedure drafting
+    time by 66%. Weaver (-07) says it plans to embed these agents. Fieldguide's SOX-side testing agents are covered
+    in controls-testing.
 
 - id: assurance-soc-attestation-09
   title: AI review of draft SOC reports for errors and inconsistencies
@@ -443,8 +439,8 @@
     - {ref: LINFORD-ASSURE-2026, title: "AI Made Compliance Cheaper. It Didn't Make Assurance Cheaper.", publisher: "Linford & Company", type: firm, url: "https://linfordco.com/blog/ai-compliance-vs-assurance/", date: "2026-09-23", access: full, locator: "sections 'What Actually Got Cheaper' and 'What AI Can't Do'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-08. One sentence in an opinion post by a named firm; no tool, volume or error-catch rate is
-    reported. Related to AI secondary review of workpapers (assurance-controls-testing-10).
+    One sentence in an opinion post by a named firm; no tool, volume or error-catch rate is reported. Related to AI
+    secondary review of workpapers (assurance-controls-testing-10).
 
 - id: assurance-soc-attestation-10
   title: Security questionnaire answers drafted from issued SOC reports and approved answer libraries
@@ -489,9 +485,9 @@
     - {ref: DEEPDELVER-2026, title: "Delve - Fake Compliance as a Service - Part I (anonymous allegations; unverified)", publisher: "DeepDelver (pseudonymous Substack)", type: community, url: "https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service", date: "2026-03-19", access: full, locator: "introduction"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-14, discourse-07 and governance-08. Customer-assurance work beside the SOC examination, not
-    part of it. Delve said, in its own defence, that the anonymous critic acknowledged its AI automated 70% of a
-    security questionnaire (as reported by TechCrunch); a company claim, not used.
+    Customer-assurance work beside the SOC examination, not part of it. Delve said, in its own defence, that the
+    anonymous critic acknowledged its AI automated 70% of a security questionnaire (as reported by TechCrunch); a
+    company claim, not used.
 
 - id: assurance-soc-attestation-11
   title: Trust centre with an AI chatbot as the buyer-facing front end for the SOC report and control documentation
@@ -535,9 +531,8 @@
     - {ref: JOFA-PODSOC, title: "The risks of quick-turn SOC engagements and what CPAs should know (podcast with Amy Pawlicki, AICPA)", publisher: "Journal of Accountancy (AICPA)", type: podcast, url: "https://www.journalofaccountancy.com/podcast/2026/apr/the-risks-of-quick%E2%80%91turn-soc-engagements-and-what-cpas-should-know/", date: "2026-04-30", access: full, locator: "opening explanation that SOC 2 is not a certification"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-08 and governance-07. Ladder and scope: discourse said assist/process, governance
-    automate/step; automate/step chosen because the AI element is the chatbot answering buyers. The Whistic page has
-    no printed date (2026-03 inferred from its footnotes). No adoption or buyer-use data was found.
+    Ladder and scope are automate and step because the AI element is the chatbot answering buyers. The Whistic page
+    has no printed date (2026-03 inferred from its footnotes). No adoption or buyer-use data was found.
 
 - id: assurance-soc-attestation-12
   title: Flagging templated SOC reports by comparing language and tests across reports (vendor-announced; peer-review use is an idea)
@@ -593,10 +588,9 @@
     - {ref: KPMG-CHECKBOX-2026, title: "Beyond the Checkbox: How Confident Are You in Your SOC 2 Reports?", publisher: KPMG US, type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/beyond-checkbox.pdf", date: "2026-07", access: full, locator: "pp.4-5"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from governance-09 (an idea, grade D) and the uniform-language feature in discourse-09. Graded C on
-    Whistic's vendor claim (announced; no named user). The peer-review use of AI comparison remains an idea. General
-    AI review of received SOC reports (scope, deviations, CUECs) is assurance-controls-testing-13. Louisiana's report
-    (LASCPA-PR-2026) also shows 0 SOC reports reviewed.
+    Graded C on Whistic's vendor claim (announced; no named user). The peer-review use of AI comparison remains an
+    idea. General AI review of received SOC reports (scope, deviations, CUECs) is assurance-controls-testing-13.
+    Louisiana's report (LASCPA-PR-2026) also shows 0 SOC reports reviewed.
 
 - id: assurance-soc-attestation-13
   title: Platform-curated auditor networks and audit hubs that route SOC buyers to audit firms
@@ -652,11 +646,10 @@
     - {ref: SOC2AUD-DELVE-2026, title: "Delve Review (2026): Who Actually Audits You?", publisher: "SOC2Auditors.org (comparison site)", type: vendor, url: "https://soc2auditors.org/insights/delve-review/", date: "2026-10-13", access: full, locator: "buyer checklist ('Named CPA' row); secondary"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From governance-06, with Vanta's network figures and the A-LIGN quote from practice-13 (the auditor-API part of
-    practice-13 is the change in assurance-controls-testing-14). Change scope normalised from step to model: the
-    change is who routes buyers to auditors. Ladder changed from automate to assist at verification: no source
-    describes AI or automated routing; buyers choose from the network or bring their own auditor (VANTA-AUDIT-2026).
-    EY poll: 29% of attendees chose project management as an AI use.
+    The auditor-API side of the same platforms is assurance-controls-testing-14. Change scope is model: the change
+    is who routes buyers to auditors. Ladder is assist: no source describes AI or automated routing; buyers choose
+    from the network or bring their own auditor (VANTA-AUDIT-2026). EY poll: 29% of attendees chose project
+    management as an AI use.
 
 - id: assurance-soc-attestation-14
   title: "Bundled 'SOC-as-a-service': readiness platform, referred CPA firm, fixed fee and timeline (contested; Delve allegations denied)"
@@ -731,16 +724,15 @@
     - {ref: SOC2AUD-DELVE-2026, title: "Delve Review (2026): Who Actually Audits You?", publisher: "SOC2Auditors.org (comparison site)", type: vendor, url: "https://soc2auditors.org/insights/delve-review/", date: "2026-10-13", access: full, locator: "dispute table and later events (secondary; court details not independently checked)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Cautionary entry, not a recommended practice. Merged from practice-19, discourse-13, governance-04 and
-    governance-05. Ladder: three of four said automate (governance-05 said delegate); pattern end-to-end-case-agent
-    (two of four). Grade B rests on named vendors openly operating the bundled model and on customer moves reported by
-    TechCrunch, not on the allegations. Everything about Delve's conduct is allegation; Delve disputes it, and one of
-    the audit firms named also denies wrongdoing (SOC2AUD-DELVE-2026, secondary). Allegation figures from the
-    anonymous author, unverified and disputed: in 575 leaked files (494 attributed as SOC 2 reports), one
-    test-procedure string in 493 of 494 reports and one auditor-conclusion sentence in 259 of 259 Type II reports
-    (DEEPDELVER-2026; repeated by IANS-DELVE). Delve's $32M Series A at a $300M valuation is reported by TechCrunch. Secondary reporting lists two federal suits
-    filed in April 2026 with no ruling on the allegations; dockets were not checked. No AICPA or state-board
-    outcome was found as of 2026-10-17. Delve price points of $6,000-$15,000 appear only in unopened secondary sources and are not used.
+    Cautionary entry, not a recommended practice. Grade B rests on named vendors openly operating the bundled model
+    and on customer moves reported by TechCrunch, not on the allegations. Everything about Delve's conduct is
+    allegation; Delve disputes it, and one of the audit firms named also denies wrongdoing (SOC2AUD-DELVE-2026,
+    secondary). Allegation figures from the anonymous author, unverified and disputed: in 575 leaked files (494
+    attributed as SOC 2 reports), one test-procedure string in 493 of 494 reports and one auditor-conclusion
+    sentence in 259 of 259 Type II reports (DEEPDELVER-2026; repeated by IANS-DELVE). Delve's $32M Series A at a
+    $300M valuation is reported by TechCrunch. Secondary reporting lists two federal suits filed in April 2026 with
+    no ruling on the allegations; dockets were not checked. No AICPA or state-board outcome was found as of
+    2026-10-17. Delve price points of $6,000-$15,000 appear only in unopened secondary sources and are not used.
 
 - id: assurance-soc-attestation-15
   title: "Licensed CPA firm and compliance platform sold as one 'auditor-led' service (Thoropass, A-LIGN)"
@@ -780,11 +772,10 @@
     - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14", access: full, locator: "bullets on technology and timelines"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-20, with A-LIGN's platform-plus-firm model from practice's service-model notes. Pattern 'other': a
-    platform and a licensed firm sold as one service. This entry records a structure, not a finding: the sources do not
-    say either arrangement raises an independence issue; the AICPA article describes what must be evaluated.
-    Thoropass's claim of the highest AICPA peer review rating is its own and was not verified. A-LIGN says it serves
-    6,400+ organizations (vendor-published).
+    Pattern 'other': a platform and a licensed firm sold as one service. This entry records a structure, not a
+    finding: the sources do not say either arrangement raises an independence issue; the AICPA article describes
+    what must be evaluated. Thoropass's claim of the highest AICPA peer review rating is its own and was not
+    verified. A-LIGN says it serves 6,400+ organizations (vendor-published).
 
 - id: assurance-soc-attestation-16
   title: AI-native CPA firm with a published machine-readable method, complete-population testing and bundled readiness (Chiaro)
@@ -840,11 +831,9 @@
     - {ref: JOFA-SOCETH-2026, title: "SOC engagements: Ethics risks with tool providers", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/apr/soc-engagements-ethics-risks-with-tool-providers/", date: "2026-04-06", access: full, locator: "'Objectivity, conflicts of interest, and independence'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-21 and discourse-12. Grade: practice said C, discourse B; B chosen because a named firm
-    reports issuing a Type I with the method, but every claim is the firm's own and unverified. Ladder: practice said
-    augment, discourse delegate; delegate chosen because AI collects and grades evidence against calibrated criteria
-    with CPA review and signature as the checkpoint. Pattern: practice said full-population-testing; the census
-    default is kept in the solution. Maturity: practice said piloting, discourse in-production; in-production because
-    one report has been issued, though the firm has no track record. The HN post date (2026-08-04) was confirmed
-    through the HN API; HN users flagged the post. The repository has grown since (89 controls, 387 attributes,
-    945 calibration examples at 2026-10-17).
+    Grade B because a named firm reports issuing a Type I with the method, but every claim is the firm's own and
+    unverified. Ladder delegate because AI collects and grades evidence against calibrated criteria with CPA review
+    and signature as the checkpoint. The census (full-population) default is described in the solution. Maturity
+    in-production because one report has been issued, though the firm has no track record. The HN post date
+    (2026-08-04) was confirmed through the HN API; HN users flagged the post. The repository has grown since (89
+    controls, 387 attributes, 945 calibration examples at 2026-10-17).

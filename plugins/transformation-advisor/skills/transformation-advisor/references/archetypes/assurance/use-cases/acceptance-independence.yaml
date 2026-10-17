@@ -1,5 +1,5 @@
 # Use cases: assurance / acceptance-independence
-# Last reviewed 2026-10-16; sources re-opened and checked 2026-10-16. Source refs are canonical keys; where the same
+# Last reviewed 2026-10-16; sources checked 2026-10-16. Source refs are canonical keys; where the same
 # document already has a key in the controls-testing file (AICPA-PA, FRC-GENAI, IFIAR-2025F, VERDANTIX, CPACOM-ATR)
 # that key is reused.
 # Two directions: entries 01-09 are AI or automation inside acceptance, KYC and independence work (thin, mostly
@@ -942,10 +942,9 @@
   last_reviewed: "2026-10-16"
   notes: >-
     Grade C: the firm announces a launch and phased rollout, but no source shows use on named audits, and the
-    shared-platform governance step is an idea. The firm's release is dated 7 May 2026; the trade-press report
-    11 May 2026. The
-    platform's audit functions belong to the planning and substantive modules; this entry covers the structural
-    and independence angle only.
+    shared-platform governance step is an idea. The firm's release is dated 7 May 2026; the trade-press report 11
+    May 2026. The platform's audit functions belong to the planning and substantive modules; this entry covers the
+    structural and independence side only.
 
 - id: assurance-acceptance-independence-19
   title: Investor-funded holding company that builds AI audit tooling and invests in audit firms

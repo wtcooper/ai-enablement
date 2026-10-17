@@ -55,8 +55,8 @@
     - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-05, discourse-04 and governance-01. CFO Dive date taken from page metadata. KPMG's
-    walkthrough agents (K-AGENTIC) are described without a named deployment.
+    CFO Dive date taken from page metadata. KPMG's walkthrough agents (K-AGENTIC) are described without a named
+    deployment.
 
 - id: assurance-controls-testing-02
   title: Test-of-design support and AI-drafted control test plans
@@ -106,10 +106,9 @@
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-06 and governance-13 (an idea, grade D, on AI test-of-design evaluation with
-    aggregation). search only: PWC-DCT (pwc.com returns 403) was seen in search extracts only, including its claimed
-    30-40% effort reduction, which is not used here; the entry's grade rests on KPMG UK. Verifier (2026-10-16) removed
-    an unverifiable PwC version-control guardrail.
+    search only: PWC-DCT (pwc.com returns 403) was seen in search extracts only, including its claimed 30-40% effort
+    reduction, which is not used here; the entry's grade rests on KPMG UK. Verifier (2026-10-16) removed an
+    unverifiable PwC version-control guardrail.
 
 - id: assurance-controls-testing-03
   title: Agent-assisted evidence requests (PBC) and pre-submission evidence checks
@@ -163,11 +162,11 @@
     - {ref: CSA-SOC2, title: "The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted", publisher: "Cloud Security Alliance", type: professional-body, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/", date: "2026-08-30"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-17, discourse-03 and governance-08. Discourse classed the evidence-collection agent
-    as automate / announced with pattern 'other' (an agent that negotiates with control owners); normalised to
-    intake-triage / improve because deployed use is request clarification. search only: FG-FRAZIER (figure
-    seen in search extracts on 2026-10-16; the case-study page returns 404 to direct requests). Verifier removed an
-    uncited claim that Weaver and Sanville clients see live request status.
+    Discourse classed the evidence-collection agent as automate / announced with pattern 'other' (an agent that
+    negotiates with control owners); normalised to intake-triage / improve because deployed use is request
+    clarification. search only: FG-FRAZIER (figure seen in search extracts on 2026-10-16; the case-study page
+    returns 404 to direct requests). Verifier removed an uncited claim that Weaver and Sanville clients see live
+    request status.
 
 - id: assurance-controls-testing-04
   title: Risk-scored sample, coverage and control targeting
@@ -219,11 +218,10 @@
     - {ref: PCAOB-2024-007, title: "PCAOB Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: "2024-06-12"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-18, discourse-08, governance-07 and discourse-20 (predictive targeting, grade C).
-    Microsoft's agent supports internal-audit coverage across partner and compliance audits, not SOX
-    statistical sampling. The ~2K hours/year figure was confirmed on the rendered PDF page (verifier, 2026-10-16;
-    the text layer drops some glyphs). Microsoft PDFs are dated FY26. The PCAOB's 2024-007 release reports that
-    all US global network firms used tools to select samples for testing (2023 inspection year).
+    Microsoft's agent supports internal-audit coverage across partner and compliance audits, not SOX statistical
+    sampling. The ~2K hours/year figure was confirmed on the rendered PDF page (verifier, 2026-10-16; the text layer
+    drops some glyphs). Microsoft PDFs are dated FY26. The PCAOB's 2024-007 release reports that all US global
+    network firms used tools to select samples for testing (2023 inspection year).
 
 - id: assurance-controls-testing-05
   title: Agentic attribute testing of SOX key controls against unstructured evidence, with workpapers drafted for review
@@ -297,12 +295,11 @@
     - {ref: JOB-REDDIT, title: "Senior, Business Risk & AI Automation (Reddit; expired listing)", publisher: "Reddit via Working Nomads", type: job-posting, url: "https://www.workingnomads.com/jobs/senior-business-risk-ai-automation-reddit", date: "2026"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-01, discourse-01, governance-03 and discourse-09 (workpaper drafting, grade C).
-    Graded A because a named organisation published a measured figure, but the figures are self-reported by
-    Reddit's CAE and republished by the vendor; they cover time and volume, not test quality. The original
-    reddit.com post was unreachable (403) and was read via a mirror that carries the TL;DR and summary only. Petual, Midship and the a16z quote (an unnamed
-    customer cutting SOX budget 'to a quarter') are vendor or investor claims. Workiva has no named customer
-    outcome. Function is in-house internal audit, not an audit firm.
+    Graded A because a named organisation published a measured figure, but the figures are self-reported by Reddit's
+    CAE and republished by the vendor; they cover time and volume, not test quality. The original reddit.com post
+    was unreachable (403) and was read via a mirror that carries the TL;DR and summary only. Petual, Midship and the
+    a16z quote (an unnamed customer cutting SOX budget 'to a quarter') are vendor or investor claims. Workiva has no
+    named customer outcome. Function is in-house internal audit, not an audit firm.
 
 - id: assurance-controls-testing-06
   title: Two-agent ITGC change-management testing (attribute extraction plus evidence tick-marking)
@@ -353,10 +350,9 @@
     - {ref: AFM-12, title: "12 building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12-11"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-02, discourse-02 and governance-02. Correction: the figure is 850 hours/year. The
-    landscape's '50 hours' was a text-extraction error (a dropped glyph in the PDF text layer); all three deep
-    dives read 850 on the rendered PDFs. Self-reported by a company that also sells the platform; no quality
-    measure published. Microsoft PDFs are dated FY26.
+    Correction: the figure is 850 hours/year. The landscape's '50 hours' was a text-extraction error (a dropped
+    glyph in the PDF text layer); all three deep dives read 850 on the rendered PDFs. Self-reported by a company
+    that also sells the platform; no quality measure published. Microsoft PDFs are dated FY26.
 
 - id: assurance-controls-testing-07
   title: Matching client-provided evidence to selected samples with agents (sample-to-evidence matching)
@@ -410,12 +406,11 @@
     - {ref: PCAOB-2024-007, title: "PCAOB Release No. 2024-007: Amendments related to aspects of designing and performing audit procedures that involve technology-assisted analysis", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/2024-007-adoptingrelease.pdf", date: "2024-06-12"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-12 and discourse-05. Most cited figures are tests of details (substantive testing);
-    shared with the substantive-testing module, since tests of controls use the same matching step. PwC's
-    controls-testing variant was 'expected' in October 2025 with no later public confirmation; the discourse
-    deep dive graded the controls-specific use C. Verifier downgraded A to B: the measured figures (Oberlander,
-    RMF's ~50%, Sanville) are for tests of details; RMF and KPMG UK name controls use but publish no
-    controls-specific measure.
+    Most cited figures are tests of details (substantive testing); shared with the substantive-testing module, since
+    tests of controls use the same matching step. PwC's controls-testing variant was 'expected' in October 2025 with
+    no later public confirmation; the discourse deep dive graded the controls-specific use C. Verifier downgraded A
+    to B: the measured figures (Oberlander, RMF's ~50%, Sanville) are for tests of details; RMF and KPMG UK name
+    controls use but publish no controls-specific measure.
 
 - id: assurance-controls-testing-08
   title: Full-population testing of transactional and master-data controls instead of samples
@@ -479,10 +474,9 @@
     - {ref: AT-GARTNER, title: "Audit teams' AI use common but most lack strategy (Gartner webinar poll)", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-17"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-09, discourse-06 and governance-06. Lens set to reinvent (two of three deep dives)
-    because sampling is replaced; ladder automate. Armanino acts as a risk advisory provider on client SOX and
-    internal audit work; its figures are practitioner estimates in a vendor story. KPMG says management's
-    25-item sample adds little when the auditor can test 100%.
+    Lens set to reinvent (two of three deep dives) because sampling is replaced; ladder automate. Armanino acts as a
+    risk advisory provider on client SOX and internal audit work; its figures are practitioner estimates in a vendor
+    story. KPMG says management's 25-item sample adds little when the auditor can test 100%.
 
 - id: assurance-controls-testing-09
   title: Continuous, year-round control testing and monitoring instead of point-in-time cycles
@@ -535,9 +529,9 @@
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-10, discourse-07 and governance-05. Snowflake's monitoring is query-based analytics
-    more than GenAI; it is included as the data base agentic testing builds on. The Snowflake page is dated
-    27 Feb 2024 (verifier corrected the date from '2026'), so it predates agentic testing.
+    Snowflake's monitoring is query-based analytics more than GenAI; it is included as the data base agentic testing
+    builds on. The Snowflake page is dated 27 Feb 2024 (verifier corrected the date from '2026'), so it predates
+    agentic testing.
 
 - id: assurance-controls-testing-10
   title: AI secondary review and multi-agent challenge of control-testing workpapers
@@ -592,9 +586,8 @@
     - {ref: ICAEW-FRC, title: "How helpful is FRC guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-11, governance-14 (IntelliAudit idea, grade D) and governance-19 (idea:
-    structured skepticism prompts, folded in as a guardrail). IntelliAudit is not peer reviewed and used a
-    small simulated sample. ICAEW notes the FRC guidance covers automation bias in a single paragraph.
+    IntelliAudit is not peer reviewed and used a small simulated sample. ICAEW notes the FRC guidance covers
+    automation bias in a single paragraph.
 
 - id: assurance-controls-testing-11
   title: AI-assisted testing in SOC 1 / SOC 2 / ISAE 3402 service-auditor engagements
@@ -637,10 +630,10 @@
     - {ref: SD-TQA, title: "AI in SOC Examinations: What the AICPA's New TQA Section 9561 Means for Service Organizations", publisher: "Schneider Downs", type: firm, url: "https://schneiderdowns.com/our-thoughts-on/ai-in-soc-examinations-what-the-aicpas-new-tqa-section-9561-means-for-service-organizations/", date: "2026-09-30"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-07. KPMG UK percentages are firm-reported for 'recent engagements' with no sample size given.
-    search only: FG-FRAZIER (page returns 404; search extracts report HITRUST controls testing ~40% faster, 71
-    hours). Verifier moved that figure out of the outcomes because it could not be opened, and removed an
-    unsupported 'without a matching rise in staff' clause.
+    KPMG UK percentages are firm-reported for 'recent engagements' with no sample size given. search only:
+    FG-FRAZIER (page returns 404; search extracts report HITRUST controls testing ~40% faster, 71 hours). Verifier
+    moved that figure out of the outcomes because it could not be opened, and removed an unsupported 'without a
+    matching rise in staff' clause.
 
 - id: assurance-controls-testing-12
   title: AI drafting in the SOC cycle (Section 3 system descriptions, evidence tracking, responses to deviations)
@@ -683,9 +676,8 @@
     - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-08, discourse-11 and governance-11. The poll covers conference attendees with
-    multiple selections allowed; it is not a representative survey. Mostly management-side work around the SOC
-    examination.
+    The poll covers conference attendees with multiple selections allowed; it is not a representative survey. Mostly
+    management-side work around the SOC examination.
 
 - id: assurance-controls-testing-13
   title: AI review of third-party SOC reports for user-entity reliance (scope, deviations, CUECs)
@@ -725,7 +717,7 @@
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
-  notes: "Merged from practice-16 and governance-12. Maturity set to piloting (practice said emerging, governance piloting). Verifier added K-SOX30 as the source for the vendor-AI SOC review guardrail."
+  notes: "Maturity set to piloting (practice said emerging, governance piloting). Verifier added K-SOX30 as the source for the vendor-AI SOC review guardrail."
 
 - id: assurance-controls-testing-14
   title: Compliance-automation platforms feeding SOC 2 examiners with continuously pulled evidence
@@ -769,9 +761,9 @@
     - {ref: CCI-DELVE, title: "SOC 2 Is Broken. The Delve Scandal Is Showing Us How. (C. Chio)", publisher: "Corporate Compliance Insights", type: press, url: "https://www.corporatecomplianceinsights.com/soc-2-broken-delve-scandal-shows/", date: "2026-05-21"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From discourse-12. Included because it is the most contested change in SOC controls testing. The use case
-    is real; the risk is automation replacing the examiner's own testing. The Delve allegations are unproven
-    and denied. The JofA podcast URL contains a non-standard hyphen as given in the input.
+    Included because it is the most contested change in SOC controls testing. The use case is real; the risk is
+    automation replacing the examiner's own testing. The Delve allegations are unproven and denied. The JofA podcast
+    URL contains a non-standard hyphen as given in the input.
 
 - id: assurance-controls-testing-15
   title: Testing controls that AI performs (AI-enabled controls as a new ICFR and SOC test object)
@@ -839,13 +831,11 @@
     - {ref: UNIQUS, title: "What the SEC's Filer Status Overhaul Means for ICFR Governance", publisher: "Uniqus", type: firm, url: "https://uniqus.com/what-the-secs-filer-status-overhaul-means-for-icfr-governance/", date: "2026-06-04"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-15, discourse-13, governance-09, governance-10 (SOC scoping of AI) and discourse-15
-    (idea: testing self-healing embedded controls). Pattern 'other': assurance over controls that AI performs;
-    proposed as a new pattern. A field study of large audit firms (Kokina et al. 2025, 22 interviews) found
-    'simple AI' such as document extraction widely used in audits while 'complex AI' tools were still being
-    developed. Uniqus suggests companies with agentic AI in the close may want to keep a
-    voluntary 404(b) attestation if the SEC filer-status proposal is adopted. TQA 9561 text was not read
-    directly (known via Schneider Downs and CSA).
+    Pattern 'other': assurance over controls that AI performs; proposed as a new pattern. A field study of large
+    audit firms (Kokina et al. 2025, 22 interviews) found 'simple AI' such as document extraction widely used in
+    audits while 'complex AI' tools were still being developed. Uniqus suggests companies with agentic AI in the
+    close may want to keep a voluntary 404(b) attestation if the SEC filer-status proposal is adopted. TQA 9561 text
+    was not read directly (known via Schneider Downs and CSA).
 
 - id: assurance-controls-testing-16
   title: Firm-wide audit-platform agents extending into tests of controls in integrated audits
@@ -897,10 +887,10 @@
     - {ref: FRC-GENAI, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-13 and discourse-19. The platforms are deployed; their use in tests of controls
-    specifically is announced or planned, not evidenced, so maturity is piloting. KPMG's April 2025 promise of
-    controls-testing agents 'over the next 12 months' was not confirmed as shipped. EY 'now vs 2028': agents
-    are embedded in all phases from April 2026, with full end-to-end support targeted for 2028.
+    The platforms are deployed; their use in tests of controls specifically is announced or planned, not evidenced,
+    so maturity is piloting. KPMG's April 2025 promise of controls-testing agents 'over the next 12 months' was not
+    confirmed as shipped. EY 'now vs 2028': agents are embedded in all phases from April 2026, with full end-to-end
+    support targeted for 2028.
 
 - id: assurance-controls-testing-17
   title: AI-native audit pilot where agents test controls and balances on full populations
@@ -933,8 +923,8 @@
     - {ref: AT-PWCAU, title: "PwC Australia rolls out pilot program for AI-assisted full audits", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/pwc-australia-rolls-out-pilot-program-for-ai-assisted-full-audits", date: "2025-10-28"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-14. The landscape described the pilot clients as lower-risk; the article read in the
-    practice deep dive does not say so, so that detail is not used (deep dive wins).
+    The landscape described the pilot clients as lower-risk; the article read in the practice deep dive does not say
+    so, so that detail is not used (deep dive wins).
 
 - id: assurance-controls-testing-18
   title: Orchestrated agent 'swarms' working alongside auditors in internal audit
@@ -978,9 +968,9 @@
     - {ref: CPAPA-ZANIN, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents (A. Zanin)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=188703", date: "2026-08-18"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-19 and discourse-17. Pattern 'other': multi-agent orchestration with a defined
-    human-agent collaboration layer across audit work. Described from podcast content and episode summaries;
-    no figures. Verifier removed an unsourced 'vibe-coded tools' guardrail. By September 2026 the PayPal data-science lead had founded AssureSwarm (name spelled Penfill
+    Pattern 'other': multi-agent orchestration with a defined human-agent collaboration layer across audit work.
+    Described from podcast content and episode summaries; no figures. Verifier removed an unsourced 'vibe-coded
+    tools' guardrail. By September 2026 the PayPal data-science lead had founded AssureSwarm (name spelled Penfill
     and Penfil in different sources).
 
 - id: assurance-controls-testing-19
@@ -1022,8 +1012,8 @@
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-03. Havertys has announced and begun the move; no measured outcome yet. The Petual figure is
-    from an unnamed customer via an investor.
+    Havertys has announced and begun the move; no measured outcome yet. The Petual figure is from an unnamed
+    customer via an investor.
 
 - id: assurance-controls-testing-20
   title: Agent-delivered co-sourced and outsourced controls testing by audit and advisory firms
@@ -1078,9 +1068,9 @@
     - {ref: NFRA-CAALLEY, title: "NFRA sets 10 principles for technology use in audits, says AI cannot replace auditor judgement", publisher: "CAalley", type: press, url: "https://caalley.com/news-updates/indian-news/nfra-sets-10-principles-for-technology-use-in-audits-says-ai-cannot-replace-auditor-judgement", date: "2026-07-24"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Merged from practice-04, discourse-10 and governance-04. No named RSM Beacon client or measured outcome was
-    found. Verifier: the RSM-Andera announcement does not name Beacon, so 'Beacon built with Andera' was
-    reworded. Lens and ladder follow discourse and governance (reinvent / delegate); practice had ladder augment.
+    No named RSM Beacon client or measured outcome was found. Verifier: the RSM-Andera announcement does not name
+    Beacon, so 'Beacon built with Andera' was reworded. Lens and ladder follow discourse and governance (reinvent /
+    delegate); practice had ladder augment.
 
 - id: assurance-controls-testing-21
   title: Encoding SOX testing judgment into agent evaluation sets (practitioner-in-the-loop development)
@@ -1118,8 +1108,8 @@
     - {ref: CPAPA-ZANIN, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents (A. Zanin)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=188703", date: "2026-08-18"}
   last_reviewed: "2026-10-16"
   notes: >-
-    From practice-20. Pattern 'other': a human-labelled evaluation harness for audit agents. Job pages carry
-    AI-generated summaries; only the posting text was used.
+    Pattern 'other': a human-labelled evaluation harness for audit agents. Job pages carry AI-generated summaries;
+    only the posting text was used.
 
 - id: assurance-controls-testing-22
   title: "Idea: AI-assisted deviation evaluation and deficiency classification, grounded in a deviation memory"
@@ -1153,7 +1143,7 @@
     - {ref: OPTRO-FIRST, title: "Agentic AI in Internal Audit: What to Automate First", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/agentic-ai-internal-audit-controls", date: "2026-08-11"}
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
   last_reviewed: "2026-10-16"
-  notes: "Idea. From discourse-16; discussed by Optro and Confluent's CAE in a webinar; no deployment found."
+  notes: "Idea. Discussed by Optro and Confluent's CAE in a webinar; no deployment found."
 
 - id: assurance-controls-testing-23
   title: "Idea: screening control evidence for AI fabrication and embedded prompt injection before testing"
@@ -1194,7 +1184,7 @@
     - {ref: IAASB-ED, title: "Proposed Revisions for Audit Evidence & Risk Response: ISA 330, ISA 500 & ISA 520", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520", date: "2026-08-05"}
     - {ref: AUASB-CP, title: "Consultation Paper: IAASB Proposed International Standards on Audit Evidence & Risk Response", publisher: "AUASB (Australia)", type: standard-setter, url: "https://www.auasb.gov.au/media/fegpk4s5/auasb_cp_iaasbproposedintlstdonauditevidence__riskresponse1.pdf", date: "2026-08"}
   last_reviewed: "2026-10-16"
-  notes: "Idea. From governance-15. IAASB ED texts are login-gated; the authenticity attribute was confirmed in the AUASB consultation paper (AUASB-CP)."
+  notes: "Idea. IAASB ED texts are login-gated; the authenticity attribute was confirmed in the AUASB consultation paper (AUASB-CP)."
 
 - id: assurance-controls-testing-24
   title: "Idea: external-auditor reliance on management's or internal audit's AI-enabled control testing"
@@ -1245,8 +1235,7 @@
     - {ref: IFIAR-2025F, title: "2025 Survey of Inspection Findings (report)", publisher: "IFIAR", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01"}
   last_reviewed: "2026-10-16"
   notes: >-
-    Idea and open debate. Merged from discourse-18 and governance-16. Pattern 'other': cross-party reliance on
-    AI-generated assurance evidence.
+    Idea and open debate. Pattern 'other': cross-party reliance on AI-generated assurance evidence.
 
 - id: assurance-controls-testing-25
   title: "Idea: synthetic transaction data and simulation agents to stress-test controls before an ERP go-live or acquisition"
@@ -1282,4 +1271,4 @@
     - {ref: K-SOX30, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24"}
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/generative-ai", date: "2026-02-23"}
   last_reviewed: "2026-10-16"
-  notes: "Idea. Merged from discourse-14 and governance-17; discussed by KPMG, no deployment found."
+  notes: "Idea. Discussed by KPMG, no deployment found."

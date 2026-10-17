@@ -351,7 +351,7 @@
     access: full
     locator: "5320.11 A1 (p. 45)"
   last_reviewed: 2026-10-17
-  notes: "Idea. Large financial-audit platforms (EY, KPMG, Deloitte) describe agents that draft audit documentation; none says this extends to sustainability work. That material is routed to other modules."
+  notes: "Idea. Large financial-audit platforms (EY, KPMG, Deloitte) describe agents that draft audit documentation; none says this extends to sustainability work. That material is in assurance-substantive-testing-22."
 
 - id: assurance-sustainability-assurance-06
   title: AI-supported risk assessment and planning priorities for sustainability engagements (idea)
@@ -563,7 +563,7 @@
     access: full
     locator: "A91 (p. 79)"
   last_reviewed: 2026-10-17
-  notes: "Preparer side. Merged from deep-dive candidates 08 (Workiva agent) and 15 (LLM narrative drafting): both describe preparers drafting disclosure text with AI before the assurance provider sees it. Runtime class is workflow-automation (candidate 15 had personal-assistant). Dates conflict across Workiva coverage: ESG News and ESG Post date the Sustainability Disclosure Agent launch 12 Jun 2026; IT Brief (30 Jul 2026) reports it as one of three agents launched together. Some search extracts gave late July. This entry uses 12 Jun 2026 for the agent. All figures and features are vendor-stated. The ESGsource statement that a majority of sustainability executives use AI tools has no cited source and is not used as a figure. A FINRA statement quoted by IRIS Carbon relates to broker-dealers and is not relied on."
+  notes: "Preparer side. Combines the Workiva agent and LLM narrative drafting: both describe preparers drafting disclosure text with AI before the assurance provider sees it. Runtime class is workflow-automation. Dates conflict across Workiva coverage: ESG News and ESG Post date the Sustainability Disclosure Agent launch 12 Jun 2026; IT Brief (30 Jul 2026) reports it as one of three agents launched together. Some search extracts gave late July. This entry uses 12 Jun 2026 for the agent. All figures and features are vendor-stated. The ESGsource statement that a majority of sustainability executives use AI tools has no cited source and is not used as a figure. A FINRA statement quoted by IRIS Carbon relates to broker-dealers and is not relied on."
 
 - id: assurance-sustainability-assurance-09
   title: Automated ingestion, cleaning and spend-based Scope 3 classification with calculation lineage (preparer side)
@@ -902,4 +902,4 @@
     access: full
     locator: "A262 (p. 117)"
   last_reviewed: 2026-10-17
-  notes: "Idea. The IAASB item is the strongest source: a standard-setter acknowledging the question exists. ESGsource is a low-authority site and the page date is its live-update stamp. The financial-audit counterpart (AICPA practice aid on AI-operated controls; COSO guidance) is routed to controls-testing and specialists."
+  notes: "Idea. The IAASB item is the strongest source: a standard-setter acknowledging the question exists. ESGsource is a low-authority site and the page date is its live-update stamp. The financial-audit counterpart (AICPA practice aid on AI-operated controls; COSO guidance) is covered in controls-testing (assurance-controls-testing-15) and specialists (assurance-specialists-10)."

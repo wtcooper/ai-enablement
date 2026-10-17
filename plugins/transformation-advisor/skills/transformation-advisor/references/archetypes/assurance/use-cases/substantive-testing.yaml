@@ -1,10 +1,9 @@
 # Use cases: assurance / substantive-testing
-# Synthesised 2026-10-16 from the wave 1 landscape scan and the practice, discourse and governance deep dives
-# (research/runs/wave1/). Source refs follow PUBLISHER-SHORT-YYYY; where the inputs used two refs for one
-# document, the synthesis report names the canonical key. Figures are self-reported or vendor-published unless
-# the outcome says `independent`. Cross-module overlaps: evidence-to-sample matching (#10) is the canonical home
-# of the measured matching figures also quoted in assurance-controls-testing-07; full-population testing of
-# balances (#24) complements assurance-controls-testing-08 (controls populations).
+# Source refs follow PUBLISHER-SHORT-YYYY. Figures are self-reported or vendor-published unless the outcome says
+# `independent`. Cross-module overlaps: evidence-to-sample matching (assurance-substantive-testing-10) holds the
+# measured matching figures; assurance-controls-testing-07 covers the same step in tests of controls and points
+# here. Full-population testing of balances (assurance-substantive-testing-24) complements
+# assurance-controls-testing-08 (control populations).
 
 - id: assurance-substantive-testing-01
   title: Full-population journal-entry testing with machine-learning anomaly scoring (fraud and management-override response)
@@ -99,11 +98,10 @@
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Barriers chart (PDF p.9)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-01, discourse-01 and governance-01. Change scope set to process (two of three angles;
-    governance said step). The IFIAR and PCAOB figures cover all automated tools, including non-AI analytics,
-    so they show how mature tool-assisted journal-entry testing is, not how mature AI is. No detection-quality,
-    false-positive, override-rate or parallel-run figure was found for any named firm. The MindBridge page for
-    KPMG describes the alliance, not results. The FRC example is hypothetical.
+    The IFIAR and PCAOB figures cover all automated tools, including non-AI analytics, so they show how mature
+    tool-assisted journal-entry testing is, not how mature AI is. No detection-quality, false-positive,
+    override-rate or parallel-run figure was found for any named firm. The MindBridge page for KPMG describes the
+    alliance, not results. The FRC example is hypothetical.
 
 - id: assurance-substantive-testing-02
   title: "Idea: language-model anomaly detection with written explanations, layered on journal-entry tests"
@@ -158,10 +156,10 @@
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: a research prototype with measured benchmark results but no deployment found. Merged from practice-02
-    and governance-02. The paper's Table 1 is internally inconsistent (JET lists recall 0.90 yet 0 false
-    negatives), so only counts are reported. The landscape's search extract about real-data precision falling
-    without a statistical hint is superseded by the Table 2 counts above.
+    Idea: a research prototype with measured benchmark results but no deployment found. The paper's Table 1 is
+    internally inconsistent (JET lists recall 0.90 yet 0 false negatives), so only counts are reported. A
+    search-extract claim about real-data precision falling without a statistical hint is superseded by the Table 2
+    counts above.
 
 - id: assurance-substantive-testing-03
   title: Evidence-linked triage and explanation of items flagged by whole-population tests
@@ -213,11 +211,10 @@
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.8-9" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From governance-15 (single source). Kept because exception follow-up is the step full-population testing
-    moves work into, and no other entry covers it. Vendor statements and regulator illustration only; no
-    customer names, accuracy or time figures for follow-up of flagged items. The September 2026 Agentic Risk
-    Assessment is a planning capability (planning-risk-assessment), not exception triage; the entry previously
-    implied otherwise.
+    Kept because exception follow-up is the step full-population testing moves work into, and no other entry covers
+    it. Vendor statements and regulator illustration only; no customer names, accuracy or time figures for follow-up
+    of flagged items. The September 2026 Agentic Risk Assessment is a planning capability
+    (planning-risk-assessment), not exception triage; the entry previously implied otherwise.
 
 - id: assurance-substantive-testing-04
   title: Corroborating and authenticating documents before relying on them, as AI makes forged evidence cheap
@@ -277,10 +274,8 @@
     - { ref: AFM-BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "Precondition 2" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-11 (grade C), discourse-12 (idea) and governance-14 (idea). Ladder and scope follow
-    the two idea entries (assist, step); discourse-11 framed the population-wide corroboration as augment,
-    process. The JofA guide is written from the preparer and forensic side, so it is adjacent to audit
-    procedures; MindBridge's post is vendor marketing. The controls-testing analogue is the idea in
+    The JofA guide is written from the preparer and forensic side, so it is adjacent to audit procedures;
+    MindBridge's post is vendor marketing. The controls-testing analogue is the idea in
     assurance-controls-testing-23 (screening control evidence for fabrication and prompt injection).
 
 - id: assurance-substantive-testing-05
@@ -325,10 +320,10 @@
     - { ref: CAQ-GENAI-2024, title: "Auditing in the Age of Generative AI", publisher: "Center for Audit Quality", type: professional-body, url: "https://thecaq.wpenginepowered.com/wp-content/uploads/2024/04/caq_auditing-in-the-age-of-generative-ai__2024-04.pdf", date: "2024-04", access: full, locator: "section on future state (citing AS 2301.17)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: guidance on how to respond, not a reported audit. From discourse-17, with the CAQ point routed from
-    governance. Pattern 'other': assurance over AI-produced entity information as a new substantive test object.
-    The full practice aid sits behind an AICPA login and was not opened. The controls side of the same shift is
-    assurance-controls-testing-15 (testing controls that AI performs).
+    Idea: guidance on how to respond, not a reported audit. Pattern 'other': assurance over AI-produced entity
+    information as a new substantive test object. The full practice aid sits behind an AICPA login and was not
+    opened. The controls side of the same shift is assurance-controls-testing-15 (testing controls that AI
+    performs).
 
 - id: assurance-substantive-testing-06
   title: Generative AI assistant that helps teams design substantive procedures from engagement documentation (KPMG Clara)
@@ -378,9 +373,9 @@
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.7" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-21 and governance-16. The July 2024 integration is reported in KPMG's April 2025
-    release; the original July 2024 release was not opened. No named engagement result. ICAEW's test used a
-    fictional retailer and three models and is not a benchmark.
+    The July 2024 integration is reported in KPMG's April 2025 release; the original July 2024 release was not
+    opened. No named engagement result. ICAEW's test used a fictional retailer and three models and is not a
+    benchmark.
 
 - id: assurance-substantive-testing-07
   title: Agent in Excel cleans, validates and reconciles client general-ledger data to the trial balance before substantive procedures
@@ -426,9 +421,9 @@
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Blockers and automated-solutions charts (PDF pp.9-10)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-09 (single source). Authors are Gang (Ernest) Pan and Li Wang. A demonstration on simulated
-    data, so capped at C; no firm deployment is named. Kept because it is the only entry on defining and
-    validating the population, the step full-population testing depends on.
+    Authors are Gang (Ernest) Pan and Li Wang. A demonstration on simulated data, so capped at C; no firm deployment
+    is named. Kept because it is the only entry on defining and validating the population, the step full-population
+    testing depends on.
 
 - id: assurance-substantive-testing-08
   title: "Technology-assisted selection of items to test: all items, specific high-risk items or a risk-targeted sample"
@@ -487,7 +482,6 @@
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from governance-08 and discourse-04 (the FRC contract-scoring part of discourse-04 moved to #14).
     Named firms are the six U.S. global networks as listed by the PCAOB; the data are firm-reported for the 2023
     inspection year and mostly describe non-AI analytics. The Oberlander statement is thin. Pattern follows the
     controls-side analogue, assurance-controls-testing-04 (risk-scored sample selection).
@@ -538,10 +532,9 @@
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6 (inspection findings)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-14 (single source). The 66% is an illustration, so the entry stays at B. The case study is
-    dated 8 May 2022 in the page metadata. The statement that a firm needs 60% of its assurance
-    from sampling under a third-party methodology is a Cherry Bekaert director's quotation on the vendor page and
-    is not independently checked.
+    The 66% is an illustration, so the entry stays at B. The case study is dated 8 May 2022 in the page metadata.
+    The statement that a firm needs 60% of its assurance from sampling under a third-party methodology is a Cherry
+    Bekaert director's quotation on the vendor page and is not independently checked.
 
 - id: assurance-substantive-testing-10
   title: Agents match sampled items to supporting documents and bank activity (evidence-to-sample matching, or vouching)
@@ -647,17 +640,16 @@
     - { ref: CASEWARE-VERITY-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: "2026-07-28", access: full, locator: "section on human review of suggestions" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-04, practice-05, practice-08, discourse-03 and governance-03. Grade A rests on two
-    named-firm figures published by vendors (Oberlander, one practitioner's estimate; Sanville, a vendor case
-    study); none measures match accuracy. Canonical home of the measured matching figures: they are tests of
-    details, and assurance-controls-testing-07 quotes Oberlander and Sanville for the controls variant of the
-    same step. KPMG's expense-vouching agents are in #20. PwC's 'already has' Evidence Match is PwC's own claim;
-    the 20 versus 30 document-type accounts conflict on timing. PwC's Simplified Audit - Execute, which reads
-    supporting documents and flags missing information (CFODIVE-PWC-2026), may overlap; the source does not say.
-    Thomson Reuters' 'up to 70%' belongs to a different product (#14). The Sanville page is undated (2026
-    inferred). Checked 2026-10-17: the Oberlander quotation and all Sanville figures match the sources, and
-    both describe sample-to-evidence tracing (tests of details); Oberlander is described only as the owner of
-    the firm, not as a sole practitioner.
+    Grade A rests on two named-firm figures published by vendors (Oberlander, one practitioner's estimate; Sanville,
+    a vendor case study); none measures match accuracy. This entry holds the measured matching figures: they are
+    tests of details. assurance-controls-testing-07 covers the controls variant of the same step and points here for
+    figures. KPMG's expense-vouching agents are in #20. PwC's 'already has' Evidence Match is PwC's own claim; the
+    20 versus 30 document-type accounts conflict on timing. PwC's Simplified Audit - Execute, which reads supporting
+    documents and flags missing information (CFODIVE-PWC-2026), may overlap; the source does not say. Thomson
+    Reuters' 'up to 70%' belongs to a different product (#14). The Sanville page is undated (2026 inferred). Checked
+    2026-10-17: the Oberlander quotation and all Sanville figures match the sources, and both describe
+    sample-to-evidence tracing (tests of details); Oberlander is described only as the owner of the firm, not as a
+    sole practitioner.
 
 - id: assurance-substantive-testing-11
   title: Firm-built Excel agents for evidence-heavy tests of details, with reviewer-side agents (FGMK on DataSnipper)
@@ -717,12 +709,12 @@
     - { ref: DATASNIPPER-ALWIN-2026, title: "DataSnipper Launches Alwin: End-to-End Agentic Automation for Audit & Finance", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance", date: "2026-09-22", access: full, locator: "paras 1-3 (Robbins, FGMK); 'Early results' section (CROP Accountants & Advisers)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-06 (single source). Graded A on named firms' before-and-after figures, vendor-published, with
-    no method. Checked 2026-10-17: the FGMK figure traces to DataSnipper's February 2026 customer story, where
-    the 'about 5 minutes' is review time per selection for a pilot group, and the tests are evidence location
-    and revenue tracing (tests of details); the Connect recap repeats it without that context. Maturity set to
-    piloting because FGMK's use is described as a design-partner pilot. Alwin itself is a newly launched
-    product. The QC-agent use is routed to quality-management. DataSnipper's vendor claims (600,000+ users in 175 countries, all Big Four as customers,
+    Graded A on named firms' before-and-after figures, vendor-published, with no method. Checked 2026-10-17: the
+    FGMK figure traces to DataSnipper's February 2026 customer story, where the 'about 5 minutes' is review time per
+    selection for a pilot group, and the tests are evidence location and revenue tracing (tests of details); the
+    Connect recap repeats it without that context. Maturity set to piloting because FGMK's use is described as a
+    design-partner pilot. Alwin itself is a newly launched product. The QC-agent use is covered in
+    quality-management. DataSnipper's vendor claims (600,000+ users in 175 countries, all Big Four as customers,
     $1.4B of productivity savings in 2025) are in #12's sources and are not independently measured.
 
 - id: assurance-substantive-testing-12
@@ -778,10 +770,9 @@
     - { ref: PCAOB-PS2025-004, title: "Policy Statement Regarding Implementation of Paragraph .10A of AS 1105, Audit Evidence (Release 2025-004)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/pcaob-release-no-2025-004.pdf", date: "2025-09-18", access: full, locator: "p.1 and footnote 2" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-07 (single source). Capped at B: the only named-organisation figure (NAO) is second-hand and the
-    type of work is not stated. The ODP Corporation story concerns internal audit (SOX and operational audits)
-    and is cited only for the reviewer workflow. An undated Baker Tilly Germany story on the vendor site (40-50%
-    time saved) is not relied on.
+    Capped at B: the only named-organisation figure (NAO) is second-hand and the type of work is not stated. The ODP
+    Corporation story concerns internal audit (SOX and operational audits) and is cited only for the reviewer
+    workflow. An undated Baker Tilly Germany story on the vendor site (40-50% time saved) is not relied on.
 
 - id: assurance-substantive-testing-13
   title: Automated financial-statement tie-out and testing in fund audits (PwC Audit Innovation Hub pilot)
@@ -823,8 +814,8 @@
     - { ref: CFOBREW-PWC-2025, title: "A look at PwC's 'next generation' audit", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/2025/11/05/a-look-at-pwc-s-next-generation-audit", date: "2025-11-05", access: full, locator: "'ROI' paragraphs (Kosar)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-18 (single source). Pilot status per October 2025; no later report found. Graded B only because
-    PwC names the engagement area in which it is being tested.
+    Pilot status per October 2025; no later report found. Graded B only because PwC names the engagement area in
+    which it is being tested.
 
 - id: assurance-substantive-testing-14
   title: Language-model contract and lease review to target and support revenue and lease testing
@@ -899,11 +890,10 @@
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "AI and audit section (contracts, leases and debt agreements)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-12 (C), practice-13 (idea), governance-05 (C), discourse-05 (C) and the FRC part of
-    discourse-04. The FRC example is a regulator's hypothetical design; the FRC says the examples show one way
-    tools may be designed, which may not be the best or only approach. No named audit deployment with a measured
-    result was found; the Polish evidence uses general chat models, not audit products. EY's remark is a
-    forward-looking expectation.
+    The FRC example is a regulator's hypothetical design; the FRC says the examples show one way tools may be
+    designed, which may not be the best or only approach. No named audit deployment with a measured result was
+    found; the Polish evidence uses general chat models, not audit products. EY's remark is a forward-looking
+    expectation.
 
 - id: assurance-substantive-testing-15
   title: Agents applied to judgment-heavier substantive tests (complex revenue such as pharmaceutical rebates; memos checked against data)
@@ -950,9 +940,9 @@
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-06 (B) and discourse-16 (idea). Grade B is generous: it rests on one sentence from a
-    named PwC leader about an attempt ('attempting'), read through a republished copy of the WSJ article. The EY
-    memo-checking part is an idea only (an expectation reported second-hand).
+    Grade B is generous: it rests on one sentence from a named PwC leader about an attempt ('attempting'), read
+    through a republished copy of the WSJ article. The EY memo-checking part is an idea only (an expectation
+    reported second-hand).
 
 - id: assurance-substantive-testing-16
   title: Substantive analytical procedures with technology-built expectations from detailed or unstructured data
@@ -1026,11 +1016,10 @@
     - { ref: KPMG-SOX-2026, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG US", type: firm, url: "https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html", date: "2026-09-24", access: full, locator: "Point of view #4: Scalable, AI-enabled testing" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-19, discourse-08 and governance-07. Change scope set to step (two of three). No named
-    firm deployment of AI-built expectations was found. The IAASB drafts are exposure drafts (comments due 15 Dec
-    2026), not final standards, and frame whole-population analysis mainly as aiding risk identification. The
-    Deloitte NL and KPMG items describe internal audit and SOX respectively (adjacent). The IFIAR 2025 value is
-    from IFIAR-TTF-2026, p.10.
+    No named firm deployment of AI-built expectations was found. The IAASB drafts are exposure drafts (comments due
+    15 Dec 2026), not final standards, and frame whole-population analysis mainly as aiding risk identification. The
+    Deloitte NL and KPMG items describe internal audit and SOX respectively (adjacent). The IFIAR 2025 value is from
+    IFIAR-TTF-2026, p.10.
 
 - id: assurance-substantive-testing-17
   title: Digital confirmation platforms and direct, authenticated access to bank and third-party data
@@ -1118,16 +1107,15 @@
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Theme 1 chart (automated solutions); Appendix I" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-10 (A), practice-11 (B), discourse-10 (C) and governance-06 (C). Downgraded from A to
-    B on 2026-10-17: the 'up to 20 hours' is Circit's own narrative, not the quoted Moore Polska director, and
-    it spans PBC document requests, an adjacent process; no other named firm publishes a figure. Named
-    deployments (Moore Polska, Crowe Spain, Beever & Struthers, Kreston Iberaudit) support B. Pattern 'other': a confirmation workflow and direct
-    data-access platform (two angles chose 'other', two 'reconcile-exceptions'; the strongest entry chose
-    'other'). Circit case-study dates are the pages' own datePublished values and probably reflect
-    republication. BDO NL tested the Rabobank connection; no go-live or use on an issued audit is reported.
-    Thomson Reuters is a confirmation vendor, so its fraud framing is advocacy; its statistic on AI-driven fraud
-    attempts was not traced to the underlying research and is not used. Kept although mostly non-AI, because
-    confirmations are in the module's scope and are the most automated substantive step in smaller firms.
+    Downgraded from A to B on 2026-10-17: the 'up to 20 hours' is Circit's own narrative, not the quoted Moore
+    Polska director, and it spans PBC document requests, an adjacent process; no other named firm publishes a
+    figure. Named deployments (Moore Polska, Crowe Spain, Beever & Struthers, Kreston Iberaudit) support B. Pattern
+    'other': a confirmation workflow and direct data-access platform. Circit case-study dates are the pages' own
+    datePublished values and probably reflect republication. BDO NL tested the Rabobank connection; no go-live or
+    use on an issued audit is reported. Thomson Reuters is a confirmation vendor, so its fraud framing is advocacy;
+    its statistic on AI-driven fraud attempts was not traced to the underlying research and is not used. Kept
+    although mostly non-AI, because confirmations are in the module's scope and are the most automated substantive
+    step in smaller firms.
 
 - id: assurance-substantive-testing-18
   title: Drone and imaging tools for inventory counts, reconciled to perpetual records
@@ -1189,11 +1177,10 @@
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-20 (B), discourse-13 (idea) and governance-12 (idea). Ladder follows the only entry that
-    describes a working tool (the two idea entries said assist). Grade capped at B: the independent measure is
-    for livestock, which the study chose because current technology suits homogeneous items, and EY's work was a
-    2018 proof of concept. No 2025-26 firm deployment of AI-based counting was found; an unopened July 2026
-    preprint on drone imagery (search snippet only) is not used.
+    Ladder follows the only entry that describes a working tool (the two idea entries said assist). Grade capped at
+    B: the independent measure is for livestock, which the study chose because current technology suits homogeneous
+    items, and EY's work was a 2018 proof of concept. No 2025-26 firm deployment of AI-based counting was found; an
+    unopened July 2026 preprint on drone imagery (search snippet only) is not used.
 
 - id: assurance-substantive-testing-19
   title: "Idea: AI-generated independent expectations and challenge for management's accounting estimates"
@@ -1247,10 +1234,10 @@
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: discussed by researchers and a regulator; no firm deployment for estimates testing was found. Merged
-    from discourse-14 and governance-13. Commerford et al. is a 2022, pre-generative-AI experiment; the Peecher
-    et al. paper itself was not opened. The landscape's SSRN field experiment on inventory valuation could not be
-    reached by any angle. Use of valuation specialists is routed to the specialists module.
+    Idea: discussed by researchers and a regulator; no firm deployment for estimates testing was found. Commerford
+    et al. is a 2022, pre-generative-AI experiment; the Peecher et al. paper itself was not opened. An SSRN field
+    experiment on inventory valuation could not be reached. Use of valuation specialists is covered in the
+    specialists module.
 
 - id: assurance-substantive-testing-20
   title: Agents run routine substantive tests (expense vouching, search for unrecorded liabilities), moving to orchestrated end-to-end runs
@@ -1324,12 +1311,11 @@
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3; section 6.3" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-02 (B), practice-03 (C), governance-11 (C) and practice-09 (C). Tense matters: KPMG's
-    April 2025 release describes agents as deployed, but no usage figure, customer, inspection comment or outcome
-    was found 18 months later; the orchestration phase is a pilot, with deployment on certain tests planned for
-    2027. Field Orchestrator is a product post with no named customer. The WSJ text was read through a
-    republished copy, so wording should be checked against the original before external use. A Bloomberg Tax
-    headline of 1 Apr 2026 ('KPMG to Test Advanced AI Agents in Next Phase') was not opened.
+    Tense matters: KPMG's April 2025 release describes agents as deployed, but no usage figure, customer, inspection
+    comment or outcome was found 18 months later; the orchestration phase is a pilot, with deployment on certain
+    tests planned for 2027. Field Orchestrator is a product post with no named customer. The WSJ text was read
+    through a republished copy, so wording should be checked against the original before external use. A Bloomberg
+    Tax headline of 1 Apr 2026 ('KPMG to Test Advanced AI Agents in Next Phase') was not opened.
 
 - id: assurance-substantive-testing-21
   title: Auditor agents and client agents exchange evidence requests and support, with auditors reviewing the resulting workpapers (EY pilot)
@@ -1372,10 +1358,9 @@
     - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "section 'Appearance is not authentication'" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-07 (single source). The WSJ text says the agent-to-agent exchange is among changes 'being
-    piloted now'; EY's release says AI is embedded in all phases and expected to support all end-to-end
-    activities by 2028. These are different claims and are not merged. Evidence-request agents on the controls
-    side are in assurance-controls-testing-03.
+    The WSJ text says the agent-to-agent exchange is among changes 'being piloted now'; EY's release says AI is
+    embedded in all phases and expected to support all end-to-end activities by 2028. These are different claims and
+    are not merged. Evidence-request agents on the controls side are in assurance-controls-testing-03.
 
 - id: assurance-substantive-testing-22
   title: Firm-wide agent platforms that execute preliminary procedures and draft substantive workpapers for review (EY Canvas, Deloitte Omnia, Grant Thornton Gtap)
@@ -1458,12 +1443,11 @@
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.5 and 7" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-17 (C) and governance-09 (C). The firm items are announcements; no firm has published
-    error or override rates for substantive agents. The benchmark is the only measured result: synthetic
-    engagements, authors include Modus Audit Inc. employees (hence vendor-published), model names as reported in
-    the paper. Grant Thornton's launch date is 7 May in the landscape; the opened article is dated 11 May 2026.
-    The Bloomberg Tax report that RSM US plans to invest $1 billion over three years in agents is search-only and
-    supports nothing here.
+    The firm items are announcements; no firm has published error or override rates for substantive agents. The
+    benchmark is the only measured result: synthetic engagements, authors include Modus Audit Inc. employees (hence
+    vendor-published), model names as reported in the paper. Grant Thornton's own release is dated 7 May 2026; the
+    trade article cited here is dated 11 May 2026. The Bloomberg Tax report that RSM US plans to invest $1 billion
+    over three years in agents is search-only and supports nothing here.
 
 - id: assurance-substantive-testing-23
   title: "Idea: a second AI reviews AI-performed substantive work for errors and omissions"
@@ -1513,10 +1497,9 @@
     - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'When is AI reliable enough?'" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea: permitted in guidance and measured in a benchmark, but no deployment on substantive workpapers was
-    found. Merged from governance-10 and discourse-15. Synthetic engagements; benchmark authors include Modus
-    Audit Inc. employees. A deployed analogue on control-testing workpapers is assurance-controls-testing-10 (FJ
-    Management).
+    Idea: permitted in guidance and measured in a benchmark, but no deployment on substantive workpapers was found.
+    Synthetic engagements; benchmark authors include Modus Audit Inc. employees. A deployed analogue on
+    control-testing workpapers is assurance-controls-testing-10 (FJ Management).
 
 - id: assurance-substantive-testing-24
   title: AI-native audit pilot where agents test balances on full populations and against third-party data instead of samples (PwC Australia)
@@ -1587,12 +1570,12 @@
     - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "Audit Intelligence Test section (bank activity)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-16 (B, delegate) and governance-04 (B, automate). Ladder delegate because PwC describes
-    agents that assess risk, design plans and test balances; pattern full-population-testing because the change
-    to substantive work is replacing samples. No results, error rates or inspection outcome have been published
-    and no follow-up reporting on the pilot was found. The ED-500 example is application material in an
-    exposure draft, not a deployment. Shares its expectation-gap guardrail with assurance-controls-testing-08,
-    which covers control populations (Armanino, Microsoft) and should be read alongside.
+    Ladder delegate because PwC describes agents that assess risk, design plans and test balances; pattern
+    full-population-testing because the change to substantive work is replacing samples. No results, error rates or
+    inspection outcome have been published and no follow-up reporting on the pilot was found. The ED-500 example is
+    application material in an exposure draft, not a deployment. Shares its expectation-gap guardrail with
+    assurance-controls-testing-08, which covers control populations (Armanino, Microsoft) and should be read
+    alongside.
 
 - id: assurance-substantive-testing-25
   title: Specialist audit firm built to test every transaction in employee-benefit-plan audits (Ledgerline, pre-launch)
@@ -1640,9 +1623,8 @@
     - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "hero text ('launching for the upcoming season'); FAQ ('We're pre-launch'); JSON-LD availabilityStarts 2026-12-01 (undated site, read 2026-10-17)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-15 (single source; governance-04 cites the same article for its warnings). Downgraded on
-    2026-10-17 from B and in-production to C and announced: the firm's own site says it is pre-launch and
-    assembling its founding audit team, so there is no deployment yet. The site does not mention AI agents; the
-    agent description is the CEO's general account of full-population testing. Included as an example of a
-    proposed different service model (an audit firm built on data pulls and whole-population testing), not
-    because outcomes are shown. The same article is cited in assurance-controls-testing-08.
+    Downgraded on 2026-10-17 from B and in-production to C and announced: the firm's own site says it is pre-launch
+    and assembling its founding audit team, so there is no deployment yet. The site does not mention AI agents; the
+    agent description is the CEO's general account of full-population testing. Included as an example of a proposed
+    different service model (an audit firm built on data pulls and whole-population testing), not because outcomes
+    are shown. The same article is cited in assurance-controls-testing-08.

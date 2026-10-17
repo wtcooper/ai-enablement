@@ -45,30 +45,31 @@ finance teams that prepare statements or sustainability reports (only the effect
 
 ## Modules
 
-**Evidence** reflects each module's share of use cases graded A or B, plus how much named practice stands behind it.
-**Use thin modules for risk awareness and interview probes, not as proof points.** Quote their examples as ideas or
-early signals, and say plainly that no named firm has published a measured result.
+**Evidence** reflects each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under
+30%), plus how much named practice stands behind it; counts are as of the last review. **Use thin modules for risk
+awareness and interview probes, not as proof points.** Quote their examples as ideas or early signals, and say plainly
+that no named firm has published a measured result.
 
 | Module | What it covers | Evidence |
 |---|---|---|
-| [acceptance-independence](modules/acceptance-independence.md) | Taking on and keeping clients, and proving independence. AI inside the checks is vendor-described; AI-driven structural change (private equity, alternative practice structures, AI vendor ties) is where the activity is | thin |
-| [planning-risk-assessment](modules/planning-risk-assessment.md) | Understanding the entity and its own AI, risk assessment, fraud, materiality, scoping, budgets. AI drafts; a person concludes | moderate |
-| [controls-testing](modules/controls-testing.md) | Walkthroughs, ITGCs, operating-effectiveness tests and deficiencies across ICFR, SOX and SOC work. Internal audit leads on agents | strong |
-| [substantive-testing](modules/substantive-testing.md) | Journal-entry and fraud testing, evidence matching, confirmations, analytics, contracts, estimates | strong |
-| [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input | thin |
-| [completion-reporting](modules/completion-reporting.md) | Disclosure checklists, tie-out, going concern, EQR, KAMs and CAMs, audit committee communications, the opinion | thin |
-| [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output | moderate |
-| [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns | strong |
-| [sustainability-assurance](modules/sustainability-assurance.md) | ISSA 5000, CSRD limited assurance, GHG engagements; almost no AI evidence from assurance providers | thin |
-| [assurance-over-ai](modules/assurance-over-ai.md) | Auditing an entity's AI used in ICFR, and standalone assurance over AI systems | moderate |
+| [acceptance-independence](modules/acceptance-independence.md) | Taking on and keeping clients, and proving independence. AI inside the checks is vendor-described; regulators focus on structural change around firms (private equity, alternative practice structures, AI vendor ties) | thin (4 of 21 A/B) |
+| [planning-risk-assessment](modules/planning-risk-assessment.md) | Understanding the entity and its own AI, risk assessment, fraud, materiality, scoping, budgets. AI drafts; a person concludes | moderate (11 of 25 A/B) |
+| [controls-testing](modules/controls-testing.md) | Walkthroughs, ITGCs, operating-effectiveness tests and deficiencies across ICFR, SOX and SOC work. Internal audit leads on agents | strong (16 of 25 A/B) |
+| [substantive-testing](modules/substantive-testing.md) | Journal-entry and fraud testing, evidence matching, confirmations, analytics, contracts, estimates | strong (13 of 25 A/B) |
+| [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input; A/B entries are advisory, not audit | thin (2 of 13 A/B) |
+| [completion-reporting](modules/completion-reporting.md) | Disclosure checklists, tie-out, going concern, EQR, KAMs and CAMs, audit committee communications, the opinion | thin (3 of 18 A/B) |
+| [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output; no measured outcome | moderate (10 of 25 A/B) |
+| [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns | strong (9 of 16 A/B) |
+| [sustainability-assurance](modules/sustainability-assurance.md) | ISSA 5000, CSRD limited assurance, GHG engagements; almost no AI evidence from assurance providers | thin (0 of 13 A/B) |
+| [assurance-over-ai](modules/assurance-over-ai.md) | Auditing an entity's AI used in ICFR, and standalone assurance over AI systems; named certifications, no measured outcome | thin (6 of 24 A/B) |
 
 Data and evidence acquisition (getting client data into the file) has no module; it sits in
 [value-chain.md](value-chain.md) §4.
 
 ## Journey-stage markers (assurance)
 
-Stage names and "ready when" gates follow `method/onboarding.md` §5; these are the field-specific versions. Place each
-scope (team, practice, firm) by markers you can see or count, not by self-rating.
+Stage names and "ready when" gates follow [onboarding.md](../../method/onboarding.md) §5; these are the field-specific
+versions. Place each scope (team, practice, firm) by markers you can see or count, not by self-rating.
 
 | Stage | Markers in an assurance firm or internal audit team | Ready for the next stage when |
 |---|---|---|
@@ -79,9 +80,9 @@ scope (team, practice, firm) by markers you can see or count, not by self-rating
 | **AI-native** | Methodology built around whole populations with follow-up by exception [KPMG-SOX-2026]; fee model or service changed by AI (continuous or subscription assurance, assurance over AI); firms built AI-first [REPODO-2026; MODUS-2026] | Re-diagnose at each review. No firm has yet published a measured cost or quality advantage, so treat AI-native claims with scepticism |
 
 **Delegation.** Plan delegated (agentic) work only at Adopting or later, behind the five gates in onboarding §5. The
-assurance reference case is internal audit agents testing defined SOX control attributes with cited evidence, a reviewer
-signing off every conclusion and exception (controls-testing `#05`; figures self- or vendor-reported). Regulators expect
-named owners for each decision checkpoint [IFIAR-TTF-2026].
+assurance reference case is internal audit agents testing defined SOX control attributes with cited evidence, exceptions
+routed to a reviewer who signs off (controls-testing `#05`; figures self- or vendor-reported). IFIAR suggests firms
+assign named people to each decision checkpoint and review autonomous decisions overall [IFIAR-TTF-2026].
 
 ## Files in this archetype
 

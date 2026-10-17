@@ -88,13 +88,14 @@ Pick two or three. Markers and gates are in [ARCHETYPE.md](ARCHETYPE.md).
 Use these in addition to each phase file's question bank.
 
 **Frame**
-- "If audits took half the hours, what would happen to your fees, your realization and your staffing?" (87% of small US
-  firms track realization; 13% track value billing [CPACOM-ATR-2025].)
+- "If audits took half the hours, what would happen to your fees, your realization and your staffing?" (Of 54 US firms
+  surveyed, 87% track realization and 13% track the share of engagements on value billing [CPACOM-ATR-2025].)
 - "Has a client or an audit committee asked for a lower fee because of AI? What did you say?" [FERF-2026]
 - "What would your quality partner and your regulator accept as proof that an AI-assisted procedure worked?"
 - "Which of your service lines would AI threaten, change a lot, or mainly help?" ([disruption.md](disruption.md) §9)
 - "How many of your audit clients would lose the ICFR audit requirement under the SEC's filer-status proposal?" (US
-  public-company practices) [UNIQUS-FILER-2026]
+  public-company practices; proposed 19 May 2026, not final; by the SEC's own estimate about half of currently attested
+  issuers would leave SOX 404(b) auditor attestation [UNIQUS-FILER-2026].)
 - "Who funds AI here: partners, debt or an outside investor? On what return?"
 
 **Map**
@@ -105,8 +106,9 @@ Use these in addition to each phase file's question bank.
 - "Which steps are done offshore or by a delivery centre?"
 
 **Diagnose**
-- "Which steps produce the most review notes or inspection findings?" (Internal control testing is the largest single
-  source of findings at the six largest networks [IFIAR-SURVEY-2026].)
+- "Which steps produce the most review notes or inspection findings?" (At the six largest networks, internal control
+  testing produces the most inspection findings by count; accounting estimates have the highest share of inspected
+  audits with a finding [IFIAR-SURVEY-2026].)
 - "Which steps are rolled forward from last year without real change?"
 - "Where does work wait on the client?" (Poor client data and no system access are top blockers [CPACOM-ATR-2025].)
 - "Which steps need judgement, and which are mechanical checks against evidence?" (Use the work-type table in
@@ -127,7 +129,7 @@ Use these in addition to each phase file's question bank.
 
 **Make the case**
 - "What is the baseline, measured on real engagements: hours per selection, hours per control, review notes, rework?"
-  (Hours per control was 16 in FY2024 in one company survey [KPMG-SOX-2026].)
+  (Average testing hours per control rose from 12 in FY2022 to 16 in FY2024 in KPMG's company survey [KPMG-SOX-2026].)
 - "Where will the hours go: lower budgets, more testing, fewer staff, or more clients?" ([economics.md](economics.md) §4)
 - "What does certification, monitoring and parallel running cost in the first year?"
 - "Where will juniors learn the judgement this step used to teach?" ([workforce.md](workforce.md) §7)
@@ -140,8 +142,8 @@ Use these in addition to each phase file's question bank.
 
 ## 6. Internal audit variants
 
-- "How did budget and headcount move in the last two years, and who approves the budget?" (19% of functions had budget
-  cuts in 2025 [JOFA-IAPULSE-2026].)
+- "How did budget and headcount move in the last two years, and who approves the budget?" (19% of 373 North American
+  respondents reported internal audit budget cuts in 2025 [JOFA-IAPULSE-2026].)
 - "What share of the plan is co-sourced, and have you reopened co-source terms since providers began announcing AI?"
 - "Which controls does an agent test today, what is the re-performance rate, and who signs off?"
 - "Has your external auditor agreed to rely on agent-produced workpapers? If not, what would they need?" (No public case

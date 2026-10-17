@@ -41,16 +41,16 @@ Latest reported years; fiscal years differ, so this is not a like-for-like ranki
 | Deloitte | 31 May 2026 | US$74.5bn, +3.8% local currency | Audit and assurance +5% local currency | [CPAPA-DELREV-2026] |
 | EY | 30 Jun 2026 | US$57bn, +4.7% local currency | Assurance US$18.9bn, +3.0% local currency (slowest-growing line) | [EY-REV-2026] |
 | KPMG | 30 Sep 2025 | US$39.8bn, +5.1% local currency | Audit US$14.1bn, +6.0% local currency | [KPMG-REV-2025] |
-| PwC | 30 Jun 2025 | US$56.9bn, +2.7% local currency | Not given | [CPAPA-PWCREV-2025] |
-| PwC UK group | 30 Jun 2026 | £6.155bn, -3% | Audit £1.483bn, +1% | [PWCUK-FY26-2026] |
+| PwC | 30 Jun 2025 | US$56.9bn, +2.7% local currency | Assurance US$19.8bn, +1.9% in US dollars | [CPAPA-PWCREV-2025] |
+| PwC UK group (UK, Middle East, Channel Islands) | 30 Jun 2026 | £6.155bn, -3% | Audit £1.483bn, +1% | [PWCUK-FY26-2026] |
 
 - Assurance was about a third of EY's FY26 revenue and audit about 35% of KPMG's FY25 revenue (computed from the
   sources above).
 - KPMG attributed its audit growth partly to "transformative AI capabilities"; that is the firm's own causal claim
-  [KPMG-REV-2025]. Firm leaders attribute AI-linked revenue growth to non-audit lines: EY said sales from AI services grew
-  49% in FY26 [EY-REV-2026].
-- Small and mid-size US firms reported median audit-practice revenue growth of 8%, and 89% expect growth over three years
-  (54 firms, self-reported) [CPACOM-ATR-2025].
+  [KPMG-REV-2025]. EY reported 49% growth in sales from AI services in FY26, without a split by service line
+  [EY-REV-2026].
+- In a US benchmark of 54 CPA firms of varying sizes (not representative, its authors say), median audit-practice revenue
+  growth was 8%, and 89% expect growth over three years (self-reported) [CPACOM-ATR-2025].
 
 ## 3. Fees and market structure
 
@@ -67,7 +67,7 @@ Latest reported years; fiscal years differ, so this is not a like-for-like ranki
 
 ## 4. Pricing models and the metrics firms track
 
-Among 54 small and mid-size US firms [CPACOM-ATR-2025]:
+Among the 54 US CPA firms in the CPA.com benchmark [CPACOM-ATR-2025]:
 
 | Metric tracked | Share of firms |
 |---|---|
@@ -81,8 +81,8 @@ Among 54 small and mid-size US firms [CPACOM-ATR-2025]:
 
 - 74% of the same firms list "increasing fees" as a growth strategy; 33% list adding technology to take on more clients.
 - The report's authors say realization, utilization and billable hours "are becoming less relevant" as AI shortens tasks,
-  and recommend audit margin per engagement (revenue minus cost to serve). That is a recommendation, not observed
-  behaviour [CPACOM-ATR-2025].
+  and list audit margin per engagement (revenue minus cost to serve) among the metrics to track instead. That is a
+  recommendation, not observed behaviour [CPACOM-ATR-2025].
 - A Thomson Reuters Institute survey reports that nearly half of tax and audit professionals feel pressure to show
   financial gains from AI and a third say their firms have not adapted commercial models (vendor-run) [TRI-FOP-2026].
 - No firm leader's public statement on how audit pricing will change was found.
@@ -96,14 +96,16 @@ capture offshore teams.
 
 **Offshore.** The UK regulator says some firms are moving away from the traditional pyramid and that remote teams are
 increasingly asked to exercise professional judgement [FRC-ARAQ-2026]. About a quarter of KPMG UK's audit staff were
-reported to be offshore (FT figure relayed, not checked against the transparency report) [TAO-OFFSHORE-2026].
+reported to be offshore (the FT's reading of KPMG UK's transparency report, relayed by trade press; not checked against
+the report) [TAO-OFFSHORE-2026].
 
 **Partner pay (UK disclosures).** PwC UK distributable profit per partner £935,000 in FY26 (+8%) [PWCUK-FY26-2026]; EY UK
 £787,000 in FY25 (+9%) [EYUK-FY25-2025]; Deloitte UK average profit per equity partner £1.05m in FY25 [YAHOO-DELUK-2025].
 Partner profit rose while intake fell; none of the sources attributes this to AI.
 
 **Inputs being cut.** Bloomberg Law reported KPMG would cut 10% of US audit partners, tied by KPMG to aligning "size,
-shape and skills" with its audit platform [BBL-KPMGPARTNERS-2026]. UK Big Four graduate intake fell (see
+shape and skills" with its audit platform (paywalled; only the headline and KPMG's statement were read)
+[BBL-KPMGPARTNERS-2026]. UK Big Four graduate intake fell (see
 [workforce.md](workforce.md)).
 
 **Cost of the work, client side.** In KPMG's SOX survey, testing hours per control rose from 12 (FY2022) to 16 (FY2024)
@@ -116,7 +118,7 @@ and the cost of maintaining SOX controls rose 45% between its 2023 and 2025 surv
 | Firm | Commitment as stated | Source |
 |---|---|---|
 | KPMG | US$4.2bn over three years from 2023 (technology, talent, sustainability) | [KPMG-REV-2025] |
-| Deloitte | More than US$3bn in generative AI through FY2030 | [CPAPA-DELREV-2026] |
+| Deloitte | US$3bn through 2030 to modernise delivery and operations and bring new offerings to market (all businesses) | [CPAPA-DELREV-2026] |
 | EY | US$1bn in audit technology, AI and analytics; US$448m on training in FY26 | [EYUK-FY25-2025; EY-REV-2026] |
 | PwC | Nearly US$1.5bn in AI capabilities (firm-wide) | [CFODIVE-PWC-2026] |
 | RSM US | US$1bn over three years, including agents in assurance | [RSM-1B-2025] |
@@ -126,43 +128,46 @@ investor-backed entity holds other services and supplies the CPA firm under a se
 BIG4AF-CROWE-2026].
 - Ten of the top 20 US firms were reported as PE-owned or about to be (WSJ, as summarised); Crowe and Eide Bailly both
   said they wanted capital to invest in AI [CFOBREW-PE-2026].
-- Grant Thornton Advisors agreed on 29 Jul 2026 to buy CBIZ for US$5bn including debt (announced, not closed at the page
-  date) [HL-GTCBIZ-2026].
+- Grant Thornton Advisors agreed on 29 Jul 2026 to buy CBIZ in a US$5bn deal (announced, not closed at the page date)
+  [HL-GTCBIZ-2026].
 - The PCAOB counted more than 90 significant PE-related deals and mergers since 2020, over half in 2025, and said
   inspectors would examine quality control at PE-backed firms [CAALLEY-PCAOBPE-2025].
 - Europe: 385 PE-related transactions in accountancy and audit in 2025, 139 of them involving audit firms [ACCTEU-PE-2026].
-- Stated reasons: capital for technology, acquisitions and succession, and partner liquidity [CFOBREW-PE-2026;
-  BIG4AF-CROWE-2026]. Regulators warn returns could shift incentives toward profitability over quality
+- Reasons given by firms or commentators: capital for technology, acquisitions and succession, and partner liquidity
+  [CFOBREW-PE-2026; BIG4AF-CROWE-2026]. Regulators warn returns could shift incentives toward profitability over quality
   [CAALLEY-PCAOBPE-2025]. No study yet measures PE effects on audit fees or quality.
 
-**Capital is the scarce input for mid-size firms.** Network budgets run to billions; small firms cite budget (53%) and
-untrained staff (66%) as blockers [CPACOM-ATR-2025]. For them the practical choice is which capabilities to buy from
+**Capital is the scarce input for mid-size firms.** Network budgets run to billions; firms in the 54-firm US benchmark cite
+budget (53%) and untrained staff (66%) as blockers [CPACOM-ATR-2025]. For them the practical choice is which capabilities to buy from
 vendors.
 
 ## 7. Pricing pressure from AI
 
 - **The audit-fee case is one anecdote.** Trade retellings of a Financial Times report say KPMG International argued AI
   should lower its own audit fee and paid Grant Thornton UK US$357,000 for 2025 against US$416,000 for 2024, about 14%
-  less. It is one small audit of an accounting network, reported second-hand [TFS-KPMGFEE-2026; VERDANTIX-KPMGFEE-2026].
+  less. It is one small audit of an accounting network, reported second-hand; the FT original is paywalled
+  [TFS-KPMGFEE-2026; VERDANTIX-KPMGFEE-2026].
 - **The documented discounts are consulting.** PwC's chief AI officer said clients asked for a "fair share" of AI
   efficiencies, that systems-integration savings were "in large part" showing up as discounts, and that the cuts had
-  plateaued [BBL-PWCPRICE-2025; SFN-PWCPRICE-2025].
+  plateaued (a Bloomberg interview; the paywalled original was read only in part, and the figures come from a retelling)
+  [BBL-PWCPRICE-2025; SFN-PWCPRICE-2025].
 - **Firm view.** PwC's US assurance leader called busy-season savings "not that drastic yet" and said the report "still
   looks the same" [CFODIVE-PWC-2026].
 - **Research is mixed.** Client AI adoption showed no systematic effect on US audit fees, with process-oriented AI lowering
   them (working paper) [UBC-CLIENTAI-2026]; a Chinese study found client AI lowered fees [LAI-2025]; audit offices that
   adopted AI increased auditor headcount and had fewer serious restatements (authors' summary of a peer-reviewed paper)
-  [ISCA-LAWSHEN-2025]. No study measures fees against the audit firm's own AI use.
+  [ISCA-LAWSHEN-2025]. That study also looked at fees against the audit office's own AI use, but the summary does not
+  report the result; no other such study was found.
 - **Vendor pricing signal.** Thomson Reuters added its AI disclosure review to an existing subscription at no extra cost
   [TR-DISCLOSURE-2026].
-- **The likely channel** is negotiation and tendering, not published price cuts: buyers ask "where are those savings
-  going?" [FERF-2026]. Scenarios are in [disruption.md](disruption.md).
+- **The likely channel** is negotiation and tendering, not published price cuts. FERF's lead researcher says CFOs are
+  asking "where are those savings going?" [FERF-2026]. Scenarios are in [disruption.md](disruption.md).
 
 ## 8. Internal audit budgets
 
-- In the Internal Audit Foundation's 2026 North American Pulse (373 leaders, as reported), 19% of functions had budget
+- In the Internal Audit Foundation's 2026 North American Pulse (373 respondents, as reported), 19% of functions had budget
   cuts in 2025 (11% in 2024) and 18% staff cuts; 45% called funding mostly or completely sufficient (53% in 2024). The
-  survey does not attribute the cuts to AI [JOFA-IAPULSE-2026].
+  reports do not attribute the cuts to AI [JOFA-IAPULSE-2026; OPTRO-IAFUND-2026].
 - Functions closely aligned with strategy reported sufficient funding far more often (59%) than those only somewhat
   aligned (29%) [JOFA-IAPULSE-2026].
 - In a vendor poll of over 200 leaders, 64% had flat or lower budgets, 36% said the CFO had final approval, and 26% had
@@ -178,9 +183,9 @@ vendors.
 |---|---|---|
 | Hours per engagement by stage and grade | Baseline for any capacity claim | Firm data; no public benchmark |
 | Hours per control tested | SOX and SOC baseline | 16 hours per control in FY2024 (company survey) [KPMG-SOX-2026] |
-| Realization and utilization | Where saved hours appear first | 87% and 72% of small firms track them [CPACOM-ATR-2025] |
+| Realization and utilization | Where saved hours appear first | 87% and 72% of the 54 benchmark firms track them [CPACOM-ATR-2025] |
 | Audit margin per engagement | The metric that survives shorter tasks | Tracked by 28% [CPACOM-ATR-2025] |
-| Staff per partner | Pyramid shape | 13-19 in UK firms [FRC-METRICS-2026] |
+| Staff per partner | Pyramid shape | About 9-19 across 12 UK firms; 15-19 at the Big Four (2026) [FRC-METRICS-2026] |
 | Inspection finding rate | Quality cost and risk | 35% of inspected listed PIE audits had a finding in 2025 [IFIAR-SURVEY-2026] |
 | Fee per hour and fee change at tender | Pricing pressure | 25-30% cuts after competitive reviews (self-reported) [FERF-2026] |
 | Internal audit budget and co-source share | Capacity within a flat budget | 19% cut budgets in 2025 [JOFA-IAPULSE-2026] |
@@ -194,7 +199,7 @@ Keys not listed here are in [sources.md](sources.md).
 - **CPAPA-GTNM-2024**: CPA Practice Advisor, *Grant Thornton Closes Deal With Private Equity Firm New Mountain Capital* (press, 3 Jun 2024). https://www.cpapracticeadvisor.com/2024/06/03/gra/106284/
 - **EYUK-FY25-2025**: EY UK, *EY reports another year of UK revenue growth in FY25* (firm press release, 27 Oct 2025). https://www.ey.com/en_uk/newsroom/2025/10/ey-reports-another-year-of-uk-revenue-growth-in-fy25
 - **LAI-2025**: International Review of Economics & Finance, vol. 103 (via RePEc), *Artificial intelligence applications and audit fees: An empirical study* (academic (journal article), 2025). https://ideas.repec.org/a/eee/reveco/v103y2025ics1059056025005842.html
-- **OPTRO-IAFUND-2026**: Optro, *Mitigating the risks of declining internal audit resources* (vendor blog (cites IAF and its own April 2026 poll), undated). https://optro.ai/blog/mitigating-risks-of-declining-internal-audit-resources
+- **OPTRO-IAFUND-2026**: Optro (Richard Chambers), *Internal audit's new resource reality: Diminishing resources, expanding risks* (vendor blog (cites IAF and its own April 2026 poll), 5 May 2026). https://optro.ai/blog/mitigating-risks-of-declining-internal-audit-resources
 - **PWCUK-FY26-2026**: PwC UK, *PwC UK 2026 financial results: transformation delivering results as UK business grows* (firm press release, 17 Sep 2026). https://www.pwc.co.uk/press-room/press-releases/corporate-news/pwc-uk-2026-financial-results--transformation-delivering-results.html
 - **UBC-CLIENTAI-2026**: Gene Moo Lee, University of British Columbia (blog), *Client AI Adoption and Auditing: Evidence from Process- and Product-Oriented AI (working paper abstract)* (academic (working paper, under review), 21 Apr 2026). https://blogs.ubc.ca/genemoolee/2026/04/21/client-ai-adoption-and-auditing-evidence-from-process-and-product-oriented-ai/
 - **YAHOO-DELUK-2025**: Yahoo Finance, *Deloitte's global rebound is shadowed by its first revenue decline in 15 years in the UK* (press, 1 Oct 2025). https://finance.yahoo.com/news/deloittes-7-6-billion-uk-164459410.html

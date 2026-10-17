@@ -447,13 +447,13 @@
     - { ref: BOARDMEMBER-CAQ-2026, title: "What Audit Partners Are Seeing On AI And What It Means For Audit Committees", publisher: "Corporate Board Member (CAQ author)", type: survey, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "items 1 and 3 (Spring 2026 Audit Partner Pulse)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source
-    documents auditors using specialists this way on engagements. Pattern 'other': applying complex-model and
-    specialist procedures to client AI. The same AICPA analogy appears from other angles in
-    assurance-acceptance-independence-10, assurance-planning-risk-assessment-06 and assurance-assurance-over-ai-01;
-    this entry keeps only the specialists angle. The practice aid, 'Artificial Intelligence (AI) Considerations for
-    Financial Statement Auditors' (13 Oct 2026), is behind a member login; its wording here comes from the AICPA
-    pages and Accounting Today. The AUASB page is marked non-authoritative.
+    Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source documents auditors
+    using specialists this way on engagements. Pattern 'other': applying complex-model and specialist procedures to
+    client AI. The same AICPA analogy also appears in assurance-acceptance-independence-10,
+    assurance-planning-risk-assessment-06 and assurance-assurance-over-ai-01; this entry keeps only the specialists'
+    use. The practice aid, 'Artificial Intelligence (AI) Considerations for Financial Statement Auditors' (13 Oct
+    2026), is behind a member login; its wording here comes from the AICPA pages and Accounting Today. The AUASB
+    page is marked non-authoritative.
 
 - id: assurance-specialists-11
   title: AI and data-science experts are engaged as auditor's experts or internal specialists to evaluate client AI (idea)

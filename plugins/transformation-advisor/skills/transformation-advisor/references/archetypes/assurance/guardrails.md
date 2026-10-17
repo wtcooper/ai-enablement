@@ -24,9 +24,10 @@ brackets resolve in §12 or in [sources.md](sources.md).
 ## 1. Principles
 
 - **No regulator prohibits AI in audit, and every one that has spoken keeps the human auditor accountable.** The FRC says
-  accountability is unchanged [FRC-NEWS-2026]; IFIAR says audits "will remain human-led" and firms should explain what that
-  means [IFIAR-TTF-2026]; India's NFRA staff say the opinion belongs to an identified auditor, not a tool
-  [NFRA-CAALLEY-2026]; the AICPA says the auditor remains responsible for the audit and the opinion [JOFA-AIPA-2026].
+  accountability is unchanged [FRC-NEWS-2026]; IFIAR notes that firms say audits "will remain human-led" and asks them
+  to spell out what that means [IFIAR-TTF-2026]; India's NFRA staff say the opinion belongs to an identified auditor,
+  not a tool [NFRA-CAALLEY-2026]; the AICPA says the auditor remains responsible for the audit and the opinion
+  [JOFA-AIPA-2026].
 - **The binding rules have barely changed; the guidance layer has.** Several regulators say their AI guidance creates no
   new requirement [FRC-AIAUDIT-2025; NFRA-CAALLEY-2026]. The IAASB chose guidance over a technology requirement
   [IAASB-ED500-2026].
@@ -39,16 +40,16 @@ brackets resolve in §12 or in [sources.md](sources.md).
 
 | Body | Role | AI position, dated | Binding? |
 |---|---|---|---|
-| PCAOB (US) | Standards and inspections for US issuer audits | 2024 staff outreach; technology-assisted-analysis amendments; QC 1000 amendments adopted 9 Sep 2026; data and technology research project; independence project [PCAOB-GENAI-2024; PCAOB-SSR-PAGE-2026] | Standards yes; staff material no |
-| SEC (Office of the Chief Accountant) | Oversees the PCAOB; owns independence rules | Independence rules must stay fit for purpose as AI enters audit delivery; review starts with refreshed FAQs (June 2026) [KPMG-HOHL-2026; TR-HOHL-2026] | Rules yes; speeches no |
+| PCAOB (US) | Standards and inspections for US issuer audits | 2024 staff outreach; technology-assisted-analysis amendments; QC 1000 amendments adopted 9 Sep 2026 (SEC approval pending); data and technology research project; independence project [PCAOB-GENAI-2024; PCAOB-TAA-2024; PCAOB-SSR-PAGE-2026] | Standards yes; staff material no |
+| SEC (Office of the Chief Accountant) | Oversees the PCAOB; owns independence rules | Independence rules must stay fit for purpose as AI enters audit delivery; first step is refreshed independence FAQs (Chief Accountant's remarks, May and June 2026) [KPMG-HOHL-2026; TR-HOHL-2026] | Rules yes; speeches no |
 | IAASB | ISAs, ISQMs, ISSA 5000 | Evidence exposure drafts (5 Aug 2026); technology quality-management guides planned [IAASB-ED500-2026; IAASB-TQMPLAN-2026] | Standards yes; guides no |
-| IESBA | International ethics and independence code | 2023 technology revisions in force; no further code changes planned; AI material planned [IESBA-SNAPSHOT-2026] | Code yes |
+| IESBA | International ethics and independence code | 2023 technology revisions in force since Dec 2024; no further Code revisions being pursued; non-authoritative technology guidance planned [IESBA-SNAPSHOT-2026] | Code yes |
 | IFIAR | Forum of audit regulators | Technology reports (Mar 2025, Apr 2026) [IFIAR-TTF-2025; IFIAR-TTF-2026] | No |
 | FRC (UK) | Regulator and standard-setter | AI documentation guidance (Jun 2025); certification thematic review; GenAI and agentic guidance (30 Mar 2026); sandbox; new supervision model [FRC-AIAUDIT-2025; FRC-ATT-2025; FRC-GENAI-2026; FRC-SANDBOX-2026] | Standards yes; guidance not prescriptive |
-| AICPA (ASB, ethics committee, peer review board) | US non-issuer standards, ethics code, peer review | Practice aid (13 Oct 2026); SOC guidance on AI (11 Sep 2026); alternative-practice-structure project; SOC 2 peer-review alert (May 2026) [AICPA-PA-2026; DART-TQA-2026; JOFA-PEEC-2026; JOFA-PEER-2026] | Standards and code yes; practice aids no |
+| AICPA (ASB, ethics committee, peer review board) | US non-issuer standards, ethics code, peer review | Practice aid (13 Oct 2026); technical Q&As on a service organisation's use of AI in SOC 1 and SOC 2 (Section 9561, reported 21 Sep 2026); alternative-practice-structure project; SOC 2 peer-review guidance (14 May 2026) [AICPA-PA-2026; DART-TQA-2026; JOFA-PEEC-2026; JOFA-PEER-2026] | Standards and code yes; practice aids no |
 | CPAB (Canada), NFRA (India), IRBA, AUASB | National regulators and standard-setters | Inspection observations; principles; risk communiques [CPAB-EVOLVING-2025; NFRA-CAALLEY-2026; IRBA-AI-2024; AUASB-AI-2025] | Guidance |
 | COSO | Internal control framework | Generative AI control guidance (Feb 2026) [JOFA-COSO-2026] | Voluntary |
-| EU institutions, EDPB | AI Act; GDPR | AI Omnibus adopted by 1 Jul 2026 [ADDLESHAW-AIOMNIBUS-2026; EDPB-OPINION-2024] | Law |
+| EU institutions, EDPB | AI Act; GDPR | AI Omnibus formally adopted (reported 1 Jul 2026); EDPB opinion on AI models (Dec 2024) [ADDLESHAW-AIOMNIBUS-2026; EDPB-OPINION-2024] | Law |
 
 ## 3. Standards changing, with dates
 
@@ -56,30 +57,32 @@ brackets resolve in §12 or in [sources.md](sources.md).
 |---|---|---|---|
 | PCAOB technology-assisted-analysis amendments (AS 1105, AS 2301) | In force | Fiscal years beginning on or after 15 Dec 2025 | [PCAOB-TAA-2024] |
 | PCAOB AS 2310 (confirmations; direct access to external sources) | In force | Fiscal years ending on or after 15 Jun 2025 | [PCAOB-AS2310-2023] |
-| PCAOB QC 1000, as amended | Adopted 9 Sep 2026; SEC approval pending at last check | 15 Dec 2026 | [PCAOB-SSR-PAGE-2026; JOFA-QC1000-2026] |
-| ISSA 5000 (sustainability assurance) | Issued | Periods beginning on or after 15 Dec 2026 | [ISSA5000-2024] |
-| ISA (UK) 620 on using experts | Final | 15 Dec 2026 | [FRC-620-2026] |
-| IAASB ED ISA 330, 500, 520 | Exposure draft | Comments by 15 Dec 2026; final not before 2027 (inference) | [IAASB-ED500-2026] |
+| PCAOB QC 1000, as amended | Amendments adopted 9 Sep 2026; SEC approval pending (PCAOB page, 17 Oct 2026) | Effective 15 Dec 2026, subject to SEC approval | [PCAOB-SSR-PAGE-2026; JOFA-QC1000-2026] |
+| ISSA 5000 (sustainability assurance) | Issued Nov 2024 | Periods beginning on or after 15 Dec 2026, or as at a date on or after 15 Dec 2026 | [ISSA5000-2024] |
+| ISA (UK) 620 on using experts (with ISAE (UK) 3000) | Final revisions issued 23 Sep 2026 | Effective 15 Dec 2026, aligned with the IAASB's revised ISA 620 | [FRC-620-2026] |
+| IAASB ED ISA 330, 500, 520 | Exposure drafts published 5 Aug 2026 | Comments by 15 Dec 2026; final not before 2027 (inference) | [IAASB-ED500-2026; IAASB-EDPAGE-2026] |
 | PCAOB auditor independence | Proposal in preparation | Q1 2027 (anticipated) | [PCAOB-SSR-PAGE-2026] |
-| AICPA alternative practice structures | Second exposure draft in preparation | After the October 2026 meeting | [JOFA-PEEC-2026] |
-| AICPA SAS 150 (confirmations) and SAS 151 (fraud) | Issued or approved | Periods ending on or after 15 Dec 2028 | [JOFA-SAS150-2026; JOFA-SAS151-2026] |
-| EU AI Act high-risk obligations | Delayed by the Omnibus | 2 Dec 2027 (Annex III); 2 Aug 2028 (Annex I) | [GIBSONDUNN-AIOMNIBUS-2026] |
+| SEC filer-status proposal (scope of SOX 404(b) auditor attestation) | Proposed 19 May 2026; comments closed 20 Jul 2026; not final | If adopted, about half of currently attested issuers would leave 404(b) (SEC estimate) | [UNIQUS-FILER-2026; CAQ-404-2026] |
+| AICPA alternative practice structures | First exposure draft Dec 2025; second under discussion | PEEC to discuss issuing it at an interim October 2026 meeting | [JOFA-PEEC-2026] |
+| AICPA SAS 150 (confirmations) and SAS 151 (fraud) | Both issued (SAS 150 published 13 Jul 2026; SAS 151 approved Aug 2026, published 14 Oct 2026) | Periods ending on or after 15 Dec 2028 | [JOFA-SAS150-2026; JOFA-SAS151-2026] |
+| EU AI Act high-risk obligations | Delayed by the Omnibus | 2 Dec 2027 (Annex III); 2 Aug 2028 (Annex I) | [ADDLESHAW-AIOMNIBUS-2026; GIBSONDUNN-AIOMNIBUS-2026] |
 
 ## 4. What inspectors look at
 
 - **FRC.** Most of the six largest UK firms had established certification processes for automated tools, some less
   mature and undocumented, and firms were still adapting certification to AI risks and building ways to monitor use and
-  quality impact [FRC-ATT-2025]. From April 2026 supervision puts the firm's system of quality management at the centre
-  [FRC-SUPERVISION-2026]. The March 2026 guidance was "not a response to identified quality deficiencies" [FRC-NEWS-2026].
+  quality impact [FRC-ATT-2025]. From April 2026 supervision of the largest firms puts the firm's system of quality
+  management at the centre [FRC-SUPERVISION-2026]. The March 2026 guidance was "not a response to identified quality
+  deficiencies" [FRC-NEWS-2026].
 - **IFIAR.** 31% of members found tools not used as intended [IFIAR-TTF-2025]. Monitoring may be fragmented between
   networks and member firms. Documents such as invoices "may originate from AI systems", and auditors should watch for
   deliberate misuse of AI by audited entities [IFIAR-TTF-2026].
-- **CPAB.** The first public AI-type finding: tools used as primary evidence with limited input validation and no testing
-  of items rated low risk [CPAB-EVOLVING-2025].
+- **CPAB.** A public 2025 inspection finding on automated tools (not specifically AI): tools used as primary evidence with
+  limited validation of input data, and in one tool no testing of items it rated low risk [CPAB-EVOLVING-2025].
 - **PCAOB.** Inspectors said AI and private-equity transactions would be 2026 focus areas [CAALLEY-PCAOBPE-2025]; no
   inspection-report finding specific to AI tools was found.
-- **AICPA peer review.** A May 2026 alert targets SOC 2 engagements with identical reports, risk assessments and samples,
-  and asks reviewers to understand the firm's use of SOC platforms [JOFA-PEER-2026].
+- **AICPA peer review.** In May 2026 the Peer Review Board targeted SOC 2 engagements with identical reports, risk
+  assessments, sample sizes and tests, and asked reviewers to understand the firm's use of SOC platforms [JOFA-PEER-2026].
 
 ## 5. Documentation and evidence
 
@@ -95,8 +98,9 @@ brackets resolve in §12 or in [sources.md](sources.md).
 - **No lower evidence bar.** Tool output meets the same evidence standard; low-risk classifications by a tool should be
   tested periodically [NFRA-CAALLEY-2026]. AI-enabled procedures need not match the persuasiveness of the procedure they
   replace if the methodology does not overstate them [FRC-GENAI-2026].
-- **No safe harbour for LLM evidence.** The IAASB considered and rejected a requirement to evaluate tool inputs,
-  operation and outputs, because for GenAI that may be impossible [IAASB-ED500-2026]. Firms build the test themselves.
+- **No safe harbour for LLM evidence.** The IAASB considered and decided against a requirement to evaluate tool inputs,
+  operation and outputs, partly because for GenAI tools it may not be possible to fully evaluate inputs or operation
+  [IAASB-ED500-2026]. Firms build the test themselves.
 
 ## 6. Client data and confidentiality
 
@@ -119,19 +123,20 @@ brackets resolve in §12 or in [sources.md](sources.md).
   employment and credit scoring but, on one reading, no audit or assurance category [AIACT-ANNEX3].
 - An AI tool for staffing, task allocation or performance evaluation could fall in the employment category depending on
   design (an inference, not a regulator statement) [AIACT-ANNEX3].
-- The AI literacy duty has applied since 2 Feb 2025, softened by the Omnibus to supporting staff literacy
-  [GIBSONDUNN-AIOMNIBUS-2026].
+- The AI literacy duty has applied since 2 Feb 2025. The adopted Omnibus softens it to taking measures to support staff
+  literacy, without guaranteeing any level [ADDLESHAW-AIOMNIBUS-2026].
 - Clients using AI for credit scoring or HR decisions may be in scope from December 2027, which is audit-relevant
   compliance exposure (inference) [AIACT-ANNEX3; GIBSONDUNN-AIOMNIBUS-2026].
 
 ## 8. Independence, ownership and AI vendors
 
-- **SEC and PCAOB** are reviewing independence rules, prompted by private equity and AI adoption; a PCAOB proposal is
-  anticipated in Q1 2027 [TR-HOHL-2026; PCAOB-SSR-PAGE-2026].
-- **AICPA.** Contract terms that shift control, judgment, fees or evidence access to a SOC tool provider can threaten
-  independence, and "may also be relevant" to other attest work [JOFA-SOCETH-2026]. Building or hosting an AI system for an
-  attest client can raise independence concerns [JOFA-ETHAI-2026]. Whether licensing an AI audit tool from a vendor that
-  also serves audit clients raises an issue is unresolved [AT-PEEC-2026].
+- **SEC and PCAOB** are reviewing independence rules; the SEC's Chief Accountant cites private equity and AI adoption.
+  PCAOB staff are developing a proposal for Board consideration in Q1 2027 [TR-HOHL-2026; PCAOB-SSR-PAGE-2026].
+- **AICPA.** Contract terms that shift control, professional judgment, financial dependency or evidence access to a SOC
+  tool provider can threaten independence, and "may also be relevant" to other attest work [JOFA-SOCETH-2026]. Building
+  or hosting an AI system for an attest client can raise independence concerns [JOFA-ETHAI-2026]. A former PCAOB board
+  member argues in comment letters that the AICPA's revised draft still leaves unclear when licensing an AI audit tool
+  becomes an independence conflict [AT-PEEC-2026].
 - **IESBA.** The 2023 technology revisions cover self-review, management responsibility and commercial dependencies in
   technology services [IESBA-SNAPSHOT-2026].
 - **UK.** The FRC is "not in principle against" private capital and expects early engagement with full candour
@@ -164,8 +169,8 @@ points.
 | Risk assessment conclusions | An AI risk output is an input to judgement, not a conclusion | [FRC-GENAI-2026] |
 | Review of AI output | Reviewers need competence, scepticism and awareness of automation bias; may need an independent view of the source | [FRC-GENAI-2026] |
 | Scepticism | Cannot be delegated; fluent output must not reduce challenge | [NFRA-CAALLEY-2026; IESBA-SNAPSHOT-2026] |
-| Relying on opaque output | "Not acceptable" without assessing fitness, limits and data quality | [IESBA-SNAPSHOT-2026] |
-| Supervision and review responsibilities | Unchanged by AI use | [PCAOB-GENAI-2024] |
+| Relying on opaque output | Relying on opaque or unexplained output is "not acceptable"; accountants should understand and evaluate the technology they use | [IESBA-SNAPSHOT-2026] |
+| Supervision and review responsibilities | Firms told PCAOB staff (2024) their supervision and review policies are unchanged and the user stays responsible | [PCAOB-GENAI-2024] |
 | Low-risk items screened out by a tool | Test them periodically | [NFRA-CAALLEY-2026; CPAB-EVOLVING-2025] |
 
 None of the sources says going concern, EQR or KAM selection must be human-only by rule; they stay with the auditor
