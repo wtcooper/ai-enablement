@@ -1595,7 +1595,7 @@
     which covers control populations (Armanino, Microsoft) and should be read alongside.
 
 - id: assurance-substantive-testing-25
-  title: AI-native specialist audit firm testing every transaction in employee-benefit-plan audits (Ledgerline)
+  title: Specialist audit firm built to test every transaction in employee-benefit-plan audits (Ledgerline, pre-launch)
   archetype: assurance
   module: substantive-testing
   function: service-delivery
@@ -1604,15 +1604,18 @@
   ladder: automate
   change_scope: model
   runtime_class: managed-agent-runtime
-  maturity: in-production
+  maturity: announced
   problem: >-
     The annual 401(k) audit is described as a four-month chore of requests, reviews and follow-ups, and testing is
     a sample of contributions extrapolated to the plan (LEDGERLINE-CPAPA-2026; LEDGERLINE-SITE-2026).
   solution: >-
-    The firm pulls payroll and recordkeeper data directly from systems instead of requesting it, reconciles
-    contributions across payroll, trust and recordkeeper, and uses AI agents with deterministic code to check
-    every deposit against payroll, every match against the plan formula and every distribution against its
-    record. Agents read plan documents and cite the page and section for each provision tested.
+    Ledgerline describes itself as a pre-launch specialist 401(k) and 403(b) audit firm, launching for the
+    upcoming audit season (its site lists service availability from 1 Dec 2026). It says it will pull payroll
+    and recordkeeper data directly from source systems instead of requesting it, reconcile contributions across
+    payroll, trust and recordkeeper, and test the whole population rather than a sample (LEDGERLINE-SITE-2026).
+    Its CEO writes that AI agents paired with deterministic code can check every deposit against payroll, every
+    match against the plan formula and every distribution against its record, and that agents can read plan
+    documents and cite the page and section for each provision tested (LEDGERLINE-CPAPA-2026).
   outcomes:
     - lever: speed
       description: "None published for the firm's engagements. The CEO asserts, in general terms, that work taking a junior associate 20 hours can run in minutes"
@@ -1631,7 +1634,7 @@
   role_evolution: >-
     The CEO says the hours saved move to investigating exceptions, assessing controls and deciding what a finding
     means (LEDGERLINE-CPAPA-2026).
-  evidence_grade: B
+  evidence_grade: C
   sources:
     - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "sections 'What full-population testing changes', 'The trap', 'How to roll it out safely'" }
     - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "'Our approach' section (undated site, read 2026-10-16)" }
