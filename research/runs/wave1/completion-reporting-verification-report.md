@@ -20,8 +20,8 @@ choices, references to search-only leads, and the "flag for the verifier" note. 
 research paths. References to other modules' use-case ids (ST-13) remain.
 
 **Sources:** 84 unique URLs cited across both files. All 84 were opened:
-- 72 directly with curl;
-- 10 through the r.jina.ai text mirror (9 PCAOB pages that return 403, and one Fieldguide article that reset the
+- 73 directly with curl;
+- 8 through the r.jina.ai text mirror (7 PCAOB pages that return 403, and one Fieldguide article that reset the
   connection);
 - 2 DOI pages (AAA journals, 403): abstracts read from the Crossref API;
 - 1 (ISA 570 PDF) returned 404 at the cited URL. The correct URL was found on the IAASB landing page and opened, and
