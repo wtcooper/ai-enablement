@@ -26,8 +26,9 @@ Income tax accounting: the tax provision under ASC 740 (US GAAP) and IAS 12 (IFR
 current and deferred tax, valuation allowances and uncertain tax positions, plus the expanded disclosures required by
 ASU 2023-09. It also covers the OECD global minimum tax (Pillar Two): GloBE calculations by jurisdiction, safe-harbour
 tests, the GloBE Information Return (GIR) and its XML filing, domestic top-up tax returns (QDMTTs), and the data
-pipeline and audit conversations around them. In the first GIR season (due 30 June 2026) the hard part was data and
-XML plumbing, not tax law or AI [FGS-GIR-2026, BTAX-KPMG-GIR-2026]. Return preparation, R&D credit studies and stand-alone
+pipeline and audit conversations around them. For many groups the hardest part of the first GIR season (due 30 June
+2026) was creating and transmitting the XML files, not tax law [FGS-GIR-2026]; KPMG authors describe schema errors,
+conflicting business rules and portals that went live late [BTAX-KPMG-GIR-2026]. Return preparation, R&D credit studies and stand-alone
 tax research sit in other tax modules (compliance-corporate, research-advisory).
 
 ## 2. Processes and key steps
@@ -87,7 +88,8 @@ entries, including both model entries, are rules-based software with no AI claim
 **Operating and service model**
 - Reinvent (rules-based): `#15` firm-run platforms sold with specialist teams (Deloitte Pillar Two Agent under
   co-sourcing; EY GloBE Engine; FGS). `#16` insourcing: AMG's two-person team covered 70-80 entities in 25
-  jurisdictions with no added headcount (vendor case study). Ask whether AI is part of either; the sources say no.
+  jurisdictions with no added headcount (vendor case study). Ask whether AI is part of either; the sources claim no AI for the core work, though the insurer's case
+  study says the XatBot copilot helped with day-to-day filing-season issues [ORBITAX-LEAN-2026].
 
 ## 4. Interview probes
 
@@ -111,8 +113,8 @@ entries, including both model entries, are rules-based software with no AI claim
    Places the client on `#15` or `#16`.
 9. **Does your Pillar Two platform include an AI assistant, and does anyone use it for filing-file content?** Tests
    `#14` and whether verification and professional judgment are recorded [ORBITAX-XATBOTPRO-2026].
-10. **Who validates an AI feature before your team relies on it: the vendor, your team, or your auditor?** TR hires
-    experienced provision staff to validate its AI features [TR-JOB-2026].
+10. **Who validates an AI feature before your team relies on it: the vendor, your team, or your auditor?** TR is
+    recruiting experienced provision staff to validate its AI features [TR-JOB-2026].
 11. **Have you measured anything before and after: close days, review findings, return-to-provision true-ups,
     audit adjustments?** No published baseline exists for this module, so any number the client has is valuable.
 
@@ -125,11 +127,11 @@ AI in provision or Pillar Two work.**
 
 | Figure | What it counts | Source and caveat |
 |---|---|---|
-| 67% | Corporate tax departments not using GenAI | [TR-CORPTAX-2025], vendor-owned survey, sample not stated on the page |
+| 67% | Corporate tax departments not using GenAI | [TR-CORPTAX-2025], vendor-owned survey of 288 tax departments |
 | 58% (51% a year earlier) | Departments saying they are under-resourced | [TR-CORPTAX-2025] |
 | 71% / 66% | Companies' tax departments using AI tools / AI users reporting noticeable time savings | [KPMG-DE-2026], KPMG Germany quick survey, sample not stated |
 | 47% / 41% / 41% | Hurdles: IT approvals / data protection / lack of knowledge | [KPMG-DE-2026] |
-| 91% / 41% | Want AI more accurate than humans / will not use AI without review unless 100% accurate | [TR-AGENTICCORP-2025], TR Future of Professionals 2025 |
+| 91% / 41% | Want AI more accurate than humans / will not use AI without review unless 100% accurate | [TR-AGENTICCORP-2025], vendor blog; the article does not name the survey behind these two figures |
 | 20% | GIRs filed successfully before the initial deadline in some jurisdictions | [BTAX-KPMG-GIR-2026], KPMG's experience, not a global rate |
 | 120+ | Business rules in the OECD digital rulebook | [BTAX-KPMG-GIR-2026] |
 | 100+ | Data points the first GIR required | [TR-CORPAI-2026], vendor |
@@ -137,9 +139,9 @@ AI in provision or Pillar Two work.**
 | ~10 days; 2 people; 70-80 entities; 25 jurisdictions | AMG's implementation time and team size for first-year Pillar Two compliance | [ORBITAX-AMG-2026], vendor case study, no baseline, not AI |
 | 21% | Respondents very prepared for Pillar Two reporting | [EY-TFO-2025], EY survey (1,600 CFOs and tax and finance leaders) |
 | 85% / 81% | Expect to pay more tax / call Pillar Two the biggest legislative change | [EY-GLOBE-ENGINE-2026], EY quoting its 2025 survey |
-| 70% / 76% | Expect to pay over US$500,000 a year to comply / CFOs expecting technology to absorb cost at the same staffing | [DELOITTE-P2AGENT-2024], survey date not stated |
+| 70% / 76% | Expect to pay over US$500,000 a year to comply / CFOs expecting technology to absorb cost at the same staffing | [DELOITTE-P2AGENT-2024], Deloitte survey of over 500 tax leaders and CFOs, date not stated |
 | 92% | Respondents expecting a global minimum tax to increase disputes | [EY-PAPERJAM-2026], EY Luxembourg, promotional |
-| 12% | Restatements from tax accounting issues, 2013-2022 | [CAQ-RESTATE-2024], **search-only**, relayed by a BDO article; context only |
+| 12% | Share of US restatement events citing tax accounting issues, 2013-2022 (717 of 5,793; 7% in 2022) | [CAQ-RESTATE-2024], report PDF read; context only, not AI |
 | < 1/3 | Simplified US personal federal returns computed correctly by frontier models | [ARXIV-TAXCALCBENCH-2025], adjacent (individual tax), not provision |
 
 ## 6. Guardrails
@@ -151,10 +153,11 @@ AI in provision or Pillar Two work.**
 - **OECD filing rules.** The GIR XML user guide sets validation elements a receiver may check automatically
   [OECD-GIR-XML]; June 2026 guidance fixed errors and switched off some rules [OECDPILLARS-GIRXML-2026]; the
   11 September 2026 package brings a revised GIR and a peer review of domestic laws [OECD-P2-SEP-2026].
-- **Audit.** PCAOB staff (July 2024; staff views, not Board policy) say firms expect GenAI to augment people, the user
-  stays responsible for the result, and preparers worry about black-box tools and inconsistent output
-  [PCAOB-GENAI-2024]. Nothing tax-specific exists on auditing AI-prepared tax balances. BDO says tax errors are a
-  common source of material weakness (via [CAQ-RESTATE-2024], search-only).
+- **Audit.** A PCAOB staff spotlight (July 2024; staff views, not Board policy) reports that audit firms expect GenAI
+  to augment, not replace, people and that an engagement team member using GenAI stays responsible for the work; it
+  also reports preparers' concerns about black-box tools and inconsistent output [PCAOB-GENAI-2024]. No tax-specific
+  guidance on auditing AI-prepared tax balances was found. Tax accounting issues were cited in 12% of US restatements
+  from 2013 to 2022, falling to 7% in 2022 [CAQ-RESTATE-2024].
 - **Controls.** Finrep (vendor) says AI inside a provision should be documented as a SOX control; this reading was not
   verified [FINREP-ASC740-2026]. Kognitos logs every data step because the provision feeds audited statements [KOGNITOS-2026].
 - **Professional body.** The AICPA's Council on AI Risk in Tax (23 September 2026) will refine a 20-risk framework
@@ -171,10 +174,11 @@ AI in provision or Pillar Two work.**
 - **Lean teams on platforms.** AMG's vice president of tax and one manager delivered first-year Pillar Two compliance
   with no added headcount (vendor-published, not AI) [ORBITAX-AMG-2026].
 - **Validators of AI.** Thomson Reuters seeks provision practitioners with 5-7 years' experience to judge AI accuracy
-  [TR-JOB-2026]. A SaaS company's tax manager posting asks for a builder who uses AI and automation to keep the function
+  [TR-JOB-2026]. Gamma's senior tax manager posting asks for a builder who uses AI and automation to keep the function
   lean [GAMMA-JOB-2026]. Apple's tax technology lead posting lists Pillar Two reporting knowledge as preferred [APPLE-JOB-2026].
-- **Data and validation managers.** Lucanet and Orbitax say Pillar Two work shifts toward managing data, validation
-  results and local filings [LUCANET-2025, ORBITAX-SEASON-2026]. PwC Ireland expects "tax data lead" and "model
+- **Data and validation managers.** Orbitax says understanding local filing obligations became as important as the
+  calculations, with reviews, validation checks and submissions still to manage once calculations were done
+  [ORBITAX-SEASON-2026]. PwC Ireland expects "tax data lead" and "model
   governance lead" roles [PWC-IE-2026].
 - **Skills gap.** Deloitte's research lists technology skills as the third biggest talent gap in Pillar Two
   implementation [DELOITTE-P2AGENT-2024].
@@ -189,11 +193,12 @@ AI in provision or Pillar Two work.**
   (the tax-data-technology module holds this).
 - **2026-01-05 and 2026-09-11:** OECD Side-by-Side package, then a second package with a revised GIR; a revised XML
   schema is expected [OECD-SBS-2026, OECD-P2-SEP-2026].
-- **2026-03-15 to 18:** TEI Midyear ran a "Pillar Two and Technology" lab, an Excel-and-AI lab and a "Tax GPT" closing
-  plenary (titles only) [TEI-MIDYEAR-2026].
+- **2026-03-15 to 18:** TEI Midyear's preliminary programme (February 2026) scheduled a "Pillar Two and Technology"
+  lab, an Excel-and-AI lab and a "Tax GPT" closing plenary (titles only) [TEI-MIDYEAR-2026].
 - **2026-04-19 and 2026-05-04:** Orbitax adds Autopilot, Deep Research, MCP connections and Tax Skills to XatBot, then
   offers Pro+ to GMT users for the filing season [ORBITAX-XATBOT-2026, ORBITAX-XATBOTPRO-2026].
-- **2026-05-20:** KPMG and Anthropic announce Claude in KPMG's Digital Gateway, tax clients first [KPMG-ANTHROPIC-2026].
+- **2026-05-20:** KPMG and Anthropic announce Claude in KPMG's Digital Gateway, with an initial focus on tax clients and
+  private equity firms [KPMG-ANTHROPIC-2026].
 - **2026-06-16 and 18:** a Bloomberg Tax forum panel on AI in compliance, provisioning and risk (pre-event notice only)
   [BTAX-FORUM-2026]; a TPMinds Pillar 2 Summit session on operational implementation, data and technology [TPMINDS-P2-2026].
 - **2026-06-24:** Thomson Reuters recruits a ONESOURCE Tax Provision specialist to test generative AI features [TR-JOB-2026].
@@ -209,15 +214,15 @@ AI in provision or Pillar Two work.**
 - **"AI is not accurate enough for audited numbers."** Agree on the evidence: 41% will not use AI without review unless
   it is 100% accurate [TR-AGENTICCORP-2025], and no accuracy test exists for provision AI. Start with assist and
   augment uses (`#01`, `#04`, `#14`) where a person reviews every output, and keep judgments human.
-- **"Our auditor will not rely on it."** No regulator or audit firm has said how it would. PCAOB staff say the user
-  stays responsible [PCAOB-GENAI-2024]. Raise it early, as KPMG UK advises for Side-by-Side reporting [OECD-SBS-2026].
+- **"Our auditor will not rely on it."** No regulator or audit firm was found saying how it would. Audit firms told PCAOB
+  staff that the person using GenAI stays responsible for the work [PCAOB-GENAI-2024]. Raise it early, as KPMG UK advises for Side-by-Side reporting [OECD-SBS-2026].
 - **"Our data is not ready."** Often true. EY says automation and AI should follow standardised data processes
   [EY-P2DATA-2024]; Finrep warns that skipping cleanup lengthens the review list [FINREP-ASC740-2026]. Data work
   (`#03`, `#09`) comes first.
 - **"The AI features are marketing."** Partly right: several are roadmap items or rules-based tools [CORPTAX-2026,
   FINREP-ASC740-2026]. Ask vendors for a named customer and an error rate; none has published one.
 - **"Pillar Two is a filing problem, not an AI problem."** The first season supports this: XML variants and business
-  rules were the main hurdle [FGS-GIR-2026], and the platforms used in the first season are rules-based (`#11`, `#12`).
+  rules were the main hurdle [FGS-GIR-2026], and the platforms described in `#11` and `#12` are rules-based.
 - **"We cannot get approvals."** IT approvals, data protection and lack of knowledge are the top hurdles [KPMG-DE-2026].
 - **"AI cannot take responsibility."** True, and Sala's argument [SALA-TAXNOTES-2026]: sign-off stays with people.
 
@@ -232,7 +237,7 @@ Keys used above that are not in the YAML (all opened unless marked; full details
 - ARXIV-LAWORDER-2026: Law And Order: Tax Law Autoformalization, arXiv 2610.02792, 2026-10-02 (abstract).
 - ARXIV-TAXCALCBENCH-2025: TaxCalcBench, arXiv 2507.16126, 2025-07-22 (abstract).
 - BTAX-FORUM-2026: Bloomberg Tax Leadership Forum press release, 2026-06-10.
-- CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends 2013-2022, 2024-06 (search-only; via BDO).
+- CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends in the United States 2013-2022, 2024-06 (report PDF opened at https://thecaq.wpenginepowered.com/wp-content/uploads/2024/06/caq-financial-restatement-trends-us-2013-2022_2024-06.pdf; Taxes row in the accounting-issues table).
 - EY-PAPERJAM-2026: Paperjam (EY Luxembourg), Tax controversy in a GenAI world, 2026-03-06.
 - EY-TFO-2025: EY Tax and Finance Operations survey press release, 2025-11-18.
 - GAMMA-JOB-2026: Gamma, Senior Tax Manager job posting (via Accel), 2026-08-04.

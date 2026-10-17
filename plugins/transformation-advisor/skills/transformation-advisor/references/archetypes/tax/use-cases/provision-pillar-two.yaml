@@ -24,8 +24,8 @@
   runtime_class: personal-assistant
   maturity: announced
   problem: >-
-    After the books close, the provision team has little time and moves between spreadsheets and research tools to
-    check rates, rules and positions such as uncertain tax positions [BTAX-ASC740-2026].
+    After accounting closes the books, tax teams face immediate pressure to finish the provision; Bloomberg Tax pitches
+    research answers and current rates inside the spreadsheets to reduce interruptions [BTAX-ASC740-2026].
   solution: >-
     Vendors place an AI assistant where the provision work happens. Bloomberg Tax describes AI-powered insights and
     current rates inside its Workpapers spreadsheets [BTAX-ASC740-2026]. Thomson Reuters says CoCounsel Tax was
@@ -42,7 +42,7 @@
     - "Provision workpapers and calculations held in the same vendor suite as the assistant, with Workpapers outputs pushed to Provision [BTAX-ASC740-2026]."
     - "Access to the vendor's research content (Checkpoint for CoCounsel Tax) [TR-AGENTICCORP-2025]."
   risks_and_guardrails:
-    - "TR reports from its Future of Professionals 2025 report that 91% of tax professionals believe AI outputs should be more accurate than human work and 41% will not use AI without human review unless it is 100% accurate [TR-AGENTICCORP-2025]."
+    - "TR states that 91% of tax professionals believe AI outputs should be more accurate than human work and 41% will not use AI without human review unless it is 100% accurate; the article does not name the survey behind these two figures [TR-AGENTICCORP-2025]."
     - "Bloomberg Tax (selling its own tools) warns that a single reasoning error can cascade through provision calculations, ETR analysis and disclosures, and that generic tools can invent citations [BTAX-HALLUC-2026]."
   human_checkpoints:
     - "The preparer reads the linked primary sources before relying on an answer; TR says each response links to them and shows the reasoning chain [TR-AGENTICCORP-2025]."
@@ -78,8 +78,9 @@
     Many provision teams still build workpapers in Excel; Finrep, a vendor, calls an Excel-only provision a control
     risk that auditors are increasingly unwilling to accept [FINREP-ASC740-2026].
   solution: >-
-    Idea: an AI assistant reads provision workbooks to explain formulas, check tie-outs and answer questions. TEI
-    Midyear 2026 ran a hands-on Tax Lab on using AI to analyse Excel files for accountants [TEI-MIDYEAR-2026].
+    Idea: an AI assistant reads provision workbooks to explain formulas, check tie-outs and answer questions. TEI's
+    preliminary Midyear 2026 programme scheduled a Tax Lab titled 'Escaping Excel: Using AI to Analyze Excel Files for
+    Accountants' [TEI-MIDYEAR-2026].
     Bloomberg Tax describes AI-powered insights inside Workpapers spreadsheets [BTAX-ASC740-2026]. No source shows a
     provision team doing this.
   outcomes:
@@ -98,11 +99,13 @@
   role_evolution: No source describes role change.
   evidence_grade: D
   sources:
-    - {ref: TEI-MIDYEAR-2026, title: "TEI Midyear Conference 2026 At a Glance Agenda (rev 3.2)", publisher: "Tax Executives Institute", type: conference, url: "https://www.tei.org/sites/default/files/MY%202026%20At%20a%20Glance%20Agenda_rev3.2_0.pdf", date: "2026-03-15", access: full, locator: "Page 3, Tuesday 17 March 2026, 'TEI Tax Lab: Escaping Excel: Using AI to Analyze Excel Files for Accountants'"}
+    - {ref: TEI-MIDYEAR-2026, title: "TEI Midyear Conference 2026 At a Glance Agenda (rev 3.2)", publisher: "Tax Executives Institute", type: conference, url: "https://www.tei.org/sites/default/files/MY%202026%20At%20a%20Glance%20Agenda_rev3.2_0.pdf", date: "2026-02", access: full, locator: "Page 3, Tuesday 17 March 2026, 'TEI Tax Lab: Escaping Excel: Using AI to Analyze Excel Files for Accountants'; preliminary programme, PDF created 2026-02-09"}
     - {ref: FINREP-ASC740-2026, title: "AI Tax Provision ASC 740 Reporting: A 2026 Practitioner Walkthrough", publisher: "Finrep (Gana Misra, CEO)", type: vendor, url: "https://www.finrep.ai/blog/ai-tax-provision-asc-740-reporting-a-2026-practitioner-walkthrough", date: "2026-09-30", access: full, locator: "Opening paragraph and section 'SOX 404 and PCAOB Audit Implications'"}
     - {ref: BTAX-ASC740-2026, title: "Accelerate your ASC 740 process (Bloomberg Tax Research, Provision and Workpapers product page)", publisher: "Bloomberg Tax", type: vendor, url: "https://pro.bloombergtax.com/products/accelerate-your-asc-740-process/", date: "2026-03-25", access: full, locator: "Section 'Get research answers directly in your spreadsheets'"}
   last_reviewed: "2026-10-17"
-  notes: Idea. From combined-15. The TEI lab is a generic accountants' session, not provision-specific.
+  notes: >-
+    Idea. From combined-15. The TEI lab is a generic accountants' session, not provision-specific, and the source is a
+    preliminary programme, so it shows what was scheduled, not what took place.
 
 - id: tax-provision-pillar-two-03
   title: Provision data assembly and the close-to-tax handoff
@@ -118,8 +121,8 @@
   problem: >-
     The provision runs on financial data from the close. Kognitos (a vendor) calls the handoff from close to tax an
     often manual, error-prone junction and says tax accuracy is decided in the source data, not the calculation
-    [KOGNITOS-2026]. Its figure that 58% of tax departments are under-resourced comes from the TR 2025 survey
-    [TR-CORPTAX-2025].
+    [KOGNITOS-2026]. Kognitos cites an unnamed analysis that 58% of tax departments are under-resourced; the same
+    figure appears in Thomson Reuters' 2025 survey of 288 tax departments [TR-CORPTAX-2025].
   solution: >-
     Bloomberg Tax describes automated data cleansing, rollforwards and book-to-tax adjustments in Workpapers that push
     into Provision [BTAX-ASC740-2026]. Thomson Reuters says its aim is agentic AI that handles data import, validation
@@ -140,11 +143,12 @@
     - "Finrep says AI inherits every error in the source data, and that teams that skip data cleanup can get a longer review list rather than a shorter one [FINREP-ASC740-2026]."
     - "Kognitos says its steps are logged so the data preparation is auditable, because the provision feeds audited statements [KOGNITOS-2026]."
   human_checkpoints:
-    - "Tax staff review the exceptions the data layer raises before data reaches the provision engine [KOGNITOS-2026]."
+    - "No source says who reviews the exceptions; Kognitos says its platform reasons about exceptions and logs every step before data reaches the provision engine [KOGNITOS-2026]."
     - "Direct tax professionals keep oversight of import, validation and mapping [TR-CORPAI-2026]."
   role_evolution: >-
-    TR and Kognitos both say the time returned goes to forecasting, modelling and advisory work [TR-CORPAI-2026,
-    KOGNITOS-2026]; these are vendor statements with no measured change in roles.
+    Kognitos says automation frees tax teams for forecasting, modelling and advisory work [KOGNITOS-2026], and TR says
+    professionals keep oversight and focus on judgment-intensive work [TR-CORPAI-2026]; these are vendor statements
+    with no measured change in roles.
   evidence_grade: C
   sources:
     - {ref: BTAX-ASC740-2026, title: "Accelerate your ASC 740 process (Bloomberg Tax Research, Provision and Workpapers product page)", publisher: "Bloomberg Tax", type: vendor, url: "https://pro.bloombergtax.com/products/accelerate-your-asc-740-process/", date: "2026-03-25", access: full, locator: "Sections 'Automate book-to-tax adjustments' and 'Clean, map, and export your data with ease'"}
@@ -187,20 +191,20 @@
       provenance: vendor-published
       source_ref: TR-JOB-2026
   prerequisites:
-    - "Clean source data first; Finrep says anomaly detection otherwise flags noise with the signal [FINREP-ASC740-2026]."
+    - "Clean source data first; Finrep says that without data cleanup, AI-assisted difference identification flags noise alongside signal and lengthens the review list [FINREP-ASC740-2026]."
   risks_and_guardrails:
     - "The TR posting asks for awareness of auditability, explainability and appropriate AI use in regulated accounting and tax settings [TR-JOB-2026]."
     - "Finrep says valuation allowance and uncertain tax position recognition remain human judgments that AI should not make [FINREP-ASC740-2026]."
   human_checkpoints:
-    - "A reviewer clears each flagged item before sign-off [FINREP-ASC740-2026]."
+    - "Flagged outliers go to human review before close [FINREP-ASC740-2026]."
   role_evolution: >-
     Thomson Reuters wants practitioners with 5-7 years of provision experience to judge AI accuracy and fitness for
     high-stakes tax work [TR-JOB-2026], so experienced provision staff are being hired to validate AI features.
   evidence_grade: C
   sources:
     - {ref: CORPTAX-2026, title: "AI and ML in Tax: Applications, Considerations, and Responsible Engagement (webinar page with Corptax AI/ML roadmap)", publisher: "CSC Corptax with ACT", type: vendor, url: "https://go.corptax.com/act-ai-ml-tax", date: "2026", access: full, locator: "'Corptax AI/ML roadmap' bullet list"}
-    - {ref: TR-JOB-2026, title: "Senior Tax Product Specialist, ONESOURCE Tax Provision (job posting, via Ann Arbor USA job board)", publisher: "Thomson Reuters", type: job-posting, url: "https://jobs.annarborusa.org/companies/thomson-reuters/jobs/83860571-senior-tax-product-specialist", date: "2026-06-24", access: full, locator: "Section 'Product Roadmap Delivery & AI', third bullet; 'AI & Technology Fluency'"}
-    - {ref: FINREP-ASC740-2026, title: "AI Tax Provision ASC 740 Reporting: A 2026 Practitioner Walkthrough", publisher: "Finrep (Gana Misra, CEO)", type: vendor, url: "https://www.finrep.ai/blog/ai-tax-provision-asc-740-reporting-a-2026-practitioner-walkthrough", date: "2026-09-30", access: full, locator: "Section 'Step 3: Deferred Tax Assets and Liabilities'"}
+    - {ref: TR-JOB-2026, title: "Senior Tax Product Specialist, ONESOURCE Tax Provision (job posting, via Ann Arbor USA job board)", publisher: "Thomson Reuters", type: job-posting, url: "https://jobs.annarborusa.org/companies/thomson-reuters/jobs/83860571-senior-tax-product-specialist", date: "2026-06-24", access: full, locator: "Section 'Product Roadmap Delivery & AI', second bullet; qualifications on generative AI and responsible AI"}
+    - {ref: FINREP-ASC740-2026, title: "AI Tax Provision ASC 740 Reporting: A 2026 Practitioner Walkthrough", publisher: "Finrep (Gana Misra, CEO)", type: vendor, url: "https://www.finrep.ai/blog/ai-tax-provision-asc-740-reporting-a-2026-practitioner-walkthrough", date: "2026-09-30", access: full, locator: "Sections 'Step 1: Book-to-Tax Difference Identification' (pitfall) and 'Step 3: Deferred Tax Assets and Liabilities'"}
   last_reviewed: "2026-10-17"
   notes: >-
     From combined-03. Return-side anomaly flagging is tax-compliance-corporate-03. Corptax's roadmap also lists audit
@@ -358,8 +362,8 @@
     Finrep notes that a rate change signed into law but not yet effective forces immediate remeasurement of deferred
     balances [FINREP-ASC740-2026].
   solution: >-
-    Orbitax says its Tax Flows mode tracks regulatory changes across jurisdictions and sends comparison reports to
-    stakeholders [TR-CORPAI-2026, ORBITAX-XATBOT-2026]. CSC Corptax lists tax code version tracking on its roadmap
+    Orbitax says its Tax Flows mode (formerly XatBot Monitor) tracks regulatory changes [ORBITAX-XATBOT-2026];
+    Thomson Reuters adds that it distributes comparison reports to stakeholders [TR-CORPAI-2026]. CSC Corptax lists tax code version tracking on its roadmap
     [CORPTAX-2026]. KPMG US's tax vice chair says building an AI agent to help clients adjust to changing tax rules
     went from weeks to minutes on KPMG's Digital Gateway with Claude [KPMG-ANTHROPIC-2026].
   outcomes:
@@ -370,12 +374,12 @@
       provenance: self-reported
       source_ref: KPMG-ANTHROPIC-2026
   prerequisites:
-    - "For Orbitax Tax Flows, the platform's regulatory content across jurisdictions [ORBITAX-XATBOT-2026]."
+    - "For Orbitax Tax Flows, a XatBot subscription on the Orbitax International Tax Platform [ORBITAX-XATBOT-2026]."
   risks_and_guardrails:
     - "Orbitax adds a Verification tab that scores each key point High, Medium or Low against its database and live web sources [ORBITAX-XATBOT-2026]; this is a vendor control, not independently tested."
     - "Bloomberg Tax notes that models trained on static data can give outdated tax guidance [BTAX-HALLUC-2026]."
   human_checkpoints:
-    - "Stakeholders read the comparison reports and decide the accounting or compliance response [TR-CORPAI-2026]."
+    - "No source describes the review step; TR says the comparison reports go to stakeholders [TR-CORPAI-2026]."
   role_evolution: No source describes role change.
   evidence_grade: C
   sources:
@@ -383,7 +387,7 @@
     - {ref: ORBITAX-XATBOT-2026, title: "XatBot's Latest Release: Autopilot, Deep Research, MCP Connections, and Intelligent Tax Skills", publisher: "Orbitax", type: vendor, url: "https://orbitax.com/newsroom/announcements/xatbots-latest-release-autopilot-deep-research-mcp-connections-and-intelligent-tax-skills", date: "2026-04-19", access: full, locator: "Introduction (three modes) and 'Verification Tab'"}
     - {ref: CORPTAX-2026, title: "AI and ML in Tax: Applications, Considerations, and Responsible Engagement (webinar page with Corptax AI/ML roadmap)", publisher: "CSC Corptax with ACT", type: vendor, url: "https://go.corptax.com/act-ai-ml-tax", date: "2026", access: full, locator: "'Tax code version tracking' roadmap bullet"}
     - {ref: KPMG-ANTHROPIC-2026, title: "KPMG Partners with Anthropic for Digital Gateway Powered by Claude", publisher: "CPA Practice Advisor (reproducing the KPMG and Anthropic announcement)", type: press, url: "https://www.cpapracticeadvisor.com/2026/05/20/kpmg-partners-with-anthropic-for-digital-gateway-powered-by-claude/183743/", date: "2026-05-20", access: full, locator: "Quote from Rema Serafi, Vice Chair, Tax at KPMG US"}
-    - {ref: OECD-SBS-2026, title: "Further details on the OECD Pillar Two 'Side-by-Side' package (KPMG UK Tax Matters Digest; the OECD package was released 5 January 2026)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-further-details-on-the-oecd-pillar-two-side-by-side-package.html", date: "2026-01-22", access: full, locator: "Paragraphs 1 and 4"}
+    - {ref: OECD-SBS-2026, title: "Further details on the OECD Pillar Two 'Side-by-Side' package (KPMG UK Tax Matters Digest; the OECD package was released 5 January 2026)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-further-details-on-the-oecd-pillar-two-side-by-side-package.html", date: "2026-01-21", access: full, locator: "Paragraphs 1 and 4"}
     - {ref: OECD-P2-SEP-2026, title: "OECD Releases New Pillar Two Guidance, Updated GIR And Framework For Legislative Reviews (Loyens & Loeff; the OECD package was released 11 September 2026)", publisher: "Loyens & Loeff via Mondaq", type: firm, url: "https://www.mondaq.com/oecd-releases-new-pillar-two-guidance-updated-gir-and-framework-for-legislative-reviews/1842556", date: "2026-09-14", access: full, locator: "Section 'Updated GIR'"}
     - {ref: FINREP-ASC740-2026, title: "AI Tax Provision ASC 740 Reporting: A 2026 Practitioner Walkthrough", publisher: "Finrep (Gana Misra, CEO)", type: vendor, url: "https://www.finrep.ai/blog/ai-tax-provision-asc-740-reporting-a-2026-practitioner-walkthrough", date: "2026-09-30", access: full, locator: "Section 'Step 3: Deferred Tax Assets and Liabilities'"}
     - {ref: BTAX-HALLUC-2026, title: "AI Hallucinations in Tax: The Risks and How to Mitigate Them", publisher: "Bloomberg Tax", type: vendor, url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-hallucinations-in-tax-the-risks-and-how-to-mitigate-them/", date: "2026-05-11", access: full, locator: "Section 'Why does generative AI hallucinate?'"}
@@ -415,14 +419,14 @@
     automation; none claims AI for this step.
   outcomes:
     - lever: speed
-      description: AMG says the Accelerator cut its implementation path to around 10 days.
+      description: Orbitax's case study says the Accelerator shortened AMG's path to implementation to around 10 days.
       figure: around 10 days
       measures: Time for AMG to implement Pillar Two data collection after uploading its existing validated CbCR XML; no baseline stated.
       provenance: vendor-published
       source_ref: ORBITAX-AMG-2026
   prerequisites:
     - "An existing validated CbCR XML file [ORBITAX-AMG-2026]."
-    - "Finance teams in each jurisdiction willing to supply entity-level data [ORBITAX-LEAN-2026]."
+    - "Close collaboration with accounting and finance teams in each jurisdiction to collect entity-level data [ORBITAX-LEAN-2026]."
   risks_and_guardrails:
     - "Pillar Two needed data beyond CbCR; the insurer found entities in Latin American jurisdictions newly in scope through the UK income inclusion rule [ORBITAX-LEAN-2026]."
     - "Small inconsistencies, such as sign conventions for related-party amounts, can move a jurisdiction's effective tax rate [ORBITAX-LEAN-2026]."
@@ -459,9 +463,9 @@
     calls a substantial change from single-entity income tax work [EY-P2DATA-2024]. Mapping tax data into a compliant
     XML structure takes significant technical skill [LUCANET-2025].
   solution: >-
-    Idea: AI helps map data from different ERP systems to common data standards. EY's global compliance technology
-    leader says AI can assist in this mapping, but standardisation is long-term and needs governance, and intrinsic
-    data quality issues still need human correction [EY-P2DATA-2024].
+    Idea: AI helps map data from different ERP systems to common data standards. EY's global compliance and reporting
+    technology leader says AI can assist in this mapping, but standardisation is long-term and needs governance; the
+    same EY article says intrinsic data-quality issues still need human correction [EY-P2DATA-2024].
   outcomes:
     - lever: quality
       description: none published
@@ -518,12 +522,12 @@
       source_ref: ORBITAX-LEAN-2026
   prerequisites:
     - "Entity-level data collected and validated in the platform [ORBITAX-AMG-2026, EY-GLOBE-ENGINE-2026]."
-    - "Tracking each OECD package and local law, since both change calculations and filing mechanics [WK-PILLAR2-2026]."
+    - "Tracking each OECD release (administrative guidance, safe-harbour rules, GIR technical artefacts), which Wolters Kluwer says affects calculations, safe-harbour eligibility and filing mechanics [WK-PILLAR2-2026]."
   risks_and_guardrails:
     - "Pillar Two calculations are sensitive to individual data elements [ORBITAX-LEAN-2026]."
     - "KPMG UK recommends early dialogue with auditors on financial reporting while Side-by-Side legislation is pending [OECD-SBS-2026]."
   human_checkpoints:
-    - "Tax staff review dashboards and results before filing [EY-GLOBE-ENGINE-2026]."
+    - "EY's engine provides dashboards and reports for the team to review before filing [EY-GLOBE-ENGINE-2026]."
     - "In-scope groups must assess the Side-by-Side components themselves, including the end of the transitional CbCR safe harbour and the new ETR safe harbour [OECD-SBS-2026]."
   role_evolution: AMG ran this with a two-person tax function and no extra headcount [ORBITAX-AMG-2026].
   evidence_grade: C
@@ -532,7 +536,7 @@
     - {ref: DELOITTE-P2BROCH-2024, title: "Facilitating your Pillar Two compliance and reporting obligations (Pillar Two Agent brochure)", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2024/dttl-pillar-two-agent.pdf", date: "2024-05-15", access: full, locator: "Page 2, 'One-stop shop'"}
     - {ref: ORBITAX-AMG-2026, title: "How AMG Brought Pillar Two Compliance In-House with Orbitax (case study)", publisher: "Orbitax", type: vendor, url: "https://orbitax.com/newsroom/case-studies/amg-pillar-two-compliance-case-study", date: "2026-09-28", access: full, locator: "Sections 'Choosing to Bring Pillar Two In-House' and 'Results'"}
     - {ref: ORBITAX-LEAN-2026, title: "How a lean global tax team completed Swiss and UK Pillar Two filings ahead of deadline (case study)", publisher: "Orbitax", type: vendor, url: "https://orbitax.com/newsroom/case-studies/how-a-lean-global-tax-team-completed-swiss-and-uk-pillar-two-filings", date: "2026-08-10", access: full, locator: "Section 'Selecting Orbitax for Pillar Two Compliance'"}
-    - {ref: OECD-SBS-2026, title: "Further details on the OECD Pillar Two 'Side-by-Side' package (KPMG UK Tax Matters Digest; the OECD package was released 5 January 2026)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-further-details-on-the-oecd-pillar-two-side-by-side-package.html", date: "2026-01-22", access: full, locator: "Paragraphs 1-4"}
+    - {ref: OECD-SBS-2026, title: "Further details on the OECD Pillar Two 'Side-by-Side' package (KPMG UK Tax Matters Digest; the OECD package was released 5 January 2026)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-further-details-on-the-oecd-pillar-two-side-by-side-package.html", date: "2026-01-21", access: full, locator: "Paragraphs 1-4"}
     - {ref: OECD-P2-SEP-2026, title: "OECD Releases New Pillar Two Guidance, Updated GIR And Framework For Legislative Reviews (Loyens & Loeff; the OECD package was released 11 September 2026)", publisher: "Loyens & Loeff via Mondaq", type: firm, url: "https://www.mondaq.com/oecd-releases-new-pillar-two-guidance-updated-gir-and-framework-for-legislative-reviews/1842556", date: "2026-09-14", access: full, locator: "Section 'Updated GIR'"}
     - {ref: WK-PILLAR2-2026, title: "BEPS Pillar Two Technology Procurement Guide", publisher: "Wolters Kluwer", type: vendor, url: "https://www.wolterskluwer.com/en/expert-insights/beps-pillar-two-procurement-checklist", date: "2026-02-16", access: full, locator: "Section 'Why technology matters now'"}
   last_reviewed: "2026-10-17"
@@ -557,9 +561,9 @@
     [FGS-GIR-2026]. Germany and the Netherlands adopted the OECD schema largely unchanged, while Luxembourg, France and
     Austria changed it, so vendors kept several country variants [FGS-GIR-2026]. National portals with business rules
     acted as gatekeepers; some opened days or weeks before the deadline, and the OECD schema itself held errors and
-    conflicting rules [FGS-GIR-2026, BTAX-KPMG-GIR-2026]. KPMG International authors say that in some jurisdictions
-    only 20% of GIRs were filed successfully before the initial deadline, the rest failing validation
-    [BTAX-KPMG-GIR-2026]. The OECD issued guidance on 8 June 2026 with fixes, workarounds and switched-off validation
+    conflicting rules [FGS-GIR-2026, BTAX-KPMG-GIR-2026]. KPMG International authors say that, based on KPMG's
+    experience, only 20% of GIRs were filed successfully before the initial deadline in some jurisdictions, where the
+    vast majority failed initial validation checks [BTAX-KPMG-GIR-2026]. The OECD issued guidance on 8 June 2026 with fixes, workarounds and switched-off validation
     rules [OECDPILLARS-GIRXML-2026].
   solution: >-
     Platforms populate the GIR from calculation outputs, generate the XML, validate it against schema and OECD content
@@ -591,8 +595,10 @@
   human_checkpoints:
     - "The tax team reviews validation results and resolves errors; the insurer called this the most demanding part of the season [ORBITAX-LEAN-2026]."
   role_evolution: >-
-    The tax team's work shifts toward managing data, validation results and local filing obligations, a point Lucanet
-    and Orbitax make [LUCANET-2025, ORBITAX-SEASON-2026].
+    Orbitax says understanding local filing obligations became as important as the calculations, and that teams still
+    had reviews, approvals, validation checks and submissions to manage once calculations were done
+    [ORBITAX-SEASON-2026]. Lucanet says mapping tax data into a compliant XML structure takes significant technical
+    skill [LUCANET-2025].
   evidence_grade: C
   sources:
     - {ref: FGS-GIR-2026, title: "XML statt Steuerrecht: Die wahren Herausforderungen der ersten Pillar-2-Saison (German)", publisher: "Flick Gocke Schaumburg", type: firm, url: "https://www.fgs.de/news-and-insights/blog/detail/xml-statt-steuerrecht-die-wahren-herausforderungen-der-ersten-pillar-2-saison", date: "2026-08-03", access: full, locator: "Sections on country variants, business rules, schema gaps, deactivated rules and corrections"}
@@ -690,10 +696,10 @@
     - "Scenarios and entity data already in the Orbitax platform [ORBITAX-XATBOTPRO-2026]."
     - "Optional MCP connections to data warehouses, document stores and ERPs [ORBITAX-XATBOT-2026]."
   risks_and_guardrails:
-    - "Orbitax's Verification tab scores each key point against its database and the web, and Orbitax says High-confidence points can go into a filing file 'with appropriate professional judgment applied' [ORBITAX-XATBOTPRO-2026]; this is the vendor's claim."
+    - "Orbitax's Verification tab scores each key point against its database and the web, and Orbitax says High-confidence points can go into a filing file 'with appropriate professional judgment applied', without a separate manual verification step [ORBITAX-XATBOTPRO-2026]; this is the vendor's claim, not an independent test."
     - "Deep Research during the beta was limited to five requests a month [ORBITAX-XATBOTPRO-2026]."
   human_checkpoints:
-    - "Autopilot lets the user review the generated workflow before it runs [ORBITAX-XATBOT-2026]."
+    - "Autopilot lets the user review the generated workflow before it runs, or launch it immediately [ORBITAX-XATBOT-2026]."
     - "Professional judgment on anything entering a filing file [ORBITAX-XATBOTPRO-2026]."
   role_evolution: >-
     No source quantifies role change. Orbitax's case study says XatBot helped the unnamed insurer's lean team work
@@ -729,7 +735,8 @@
     Deloitte offers its Pillar Two Agent only when clients work with its tax team under co-sourcing or outsourcing; the
     platform collects data by API or manually, calculates top-up tax, validates returns, and produces GIR and QDMTT
     (qualified domestic minimum top-up tax) filings, with Deloitte teams filing [DELOITTE-P2AGENT-2024,
-    DELOITTE-P2BROCH-2024]. Deloitte Germany demonstrated it live in a February 2026 webcast [DELOITTE-DE-TTI-2026].
+    DELOITTE-P2BROCH-2024]. The platform won a 2025 ITR Americas award [DELOITTE-ITR-2025], and Deloitte Germany's
+    notice for a 24 February 2026 webcast promised a live demonstration [DELOITTE-DE-TTI-2026].
     EY's slipsheet offers access to EY professionals with its GloBE Engine [EY-GLOBE-ENGINE-2026]. FGS runs its own
     Pillar 2 Management App for clients [FGS-GIR-2026]. The sources do not describe AI.
   outcomes:
@@ -744,10 +751,10 @@
   risks_and_guardrails:
     - "AMG weighed outsourcing against in-house and chose in-house to keep ownership of its data, calculations and process [ORBITAX-AMG-2026]."
   human_checkpoints:
-    - "Clients review and sign off data and results inside the platform [DELOITTE-P2BROCH-2024]."
+    - "The platform offers clients options for reviewing and signing off on data [DELOITTE-P2BROCH-2024]."
   role_evolution: >-
-    The client team steps back to review and sign-off [DELOITTE-P2BROCH-2024]; Deloitte's research lists technology
-    skills as the third biggest talent gap in Pillar Two implementation [DELOITTE-P2AGENT-2024].
+    No source describes how the client team's role changes. Deloitte's research lists technology skills as the third
+    biggest talent gap in Pillar Two implementation [DELOITTE-P2AGENT-2024].
   evidence_grade: C
   sources:
     - {ref: DELOITTE-P2AGENT-2024, title: "Pillar Two Agent: Tech-powered compliance", publisher: "Deloitte", type: firm, url: "https://www.deloitte.com/global/en/services/tax/services/tech-powered-compliance.html", date: "2024-07-26", access: full, locator: "Sections 'Supported by specialists' and the survey statistics list"}
@@ -763,7 +770,7 @@
     From combined-14 (graded B there). Graded C for AI use: despite the product name 'Agent', the sources do not
     describe generative or agentic AI; as evidence of a firm-run platform alone it would be grade B (named firms, no
     client, volume or outcome figure). Runtime changed from managed-agent-runtime to workflow-automation because no
-    agent is described. The Deloitte survey date and sample are not given on the page. AI-enabled managed compliance in
+    agent is described. The Deloitte page gives the survey sample as over 500 tax leaders and CFOs but not its date. AI-enabled managed compliance in
     general is tax-compliance-corporate-15.
 
 - id: tax-provision-pillar-two-16
@@ -811,6 +818,7 @@
   last_reviewed: "2026-10-17"
   notes: >-
     From combined-16 (graded A there). Graded C for AI use: same named case study as -09; vendor-published, not
-    independent, no baseline cost, and software, not AI. As evidence of software-enabled insourcing alone it would be
+    independent, no baseline cost, and software, not AI. The insurer's case study does say the XatBot copilot helped
+    its team with day-to-day issues in the filing season (see -14) [ORBITAX-LEAN-2026]. As evidence of software-enabled insourcing alone it would be
     grade A. Maturity describes the software. Comparable insourcing moves elsewhere are tax-compliance-corporate-07
     (agent-driven, OpenAI) and tax-transfer-pricing-21.
