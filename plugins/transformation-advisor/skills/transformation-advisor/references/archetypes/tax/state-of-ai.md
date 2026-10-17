@@ -91,7 +91,7 @@ study [WCG-2026].
   [OPENAI-CODEX-2026].
 - **Failures on the record.** Fabricated citations reached the Tax Court (*Clinco*, an admonishment, no sanction)
   [TAXCT-CLINCO-2026]; the IRS withdrew two expert reports after AI-related errors were raised (*Riddle Aggregates*)
-  [TAXCT-RIDDLE-2026]. TEI attendees describe AI that "fails quietly and even politely" [TEI-TAXTECH-2026].
+  [RIDDLE-TRANSCRIPT-2026]. TEI attendees describe AI that "fails quietly and even politely" [TEI-TAXTECH-2026].
 
 ## 5. How maturity is spread
 

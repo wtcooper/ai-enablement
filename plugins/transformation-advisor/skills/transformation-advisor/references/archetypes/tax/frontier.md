@@ -29,12 +29,12 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 |---|---|---|---|---|
 | 19 Jan 2026 | Seven UK PCRT bodies publish AI guidance: members stay responsible; client data in a public model without consent is likely a confidentiality breach | Professional guidance | UK firms need data rules and review records now | [PCRT-AI-2026] |
 | 9 Feb 2026 | *Clinco*: the Tax Court admonishes counsel over apparently hallucinated cases and says it has not sanctioned for AI "Yet." | Decision | Citation checks before anything reaches a court or authority | [CLINCO-OPINION-2026] |
-| 18 Mar 2026 | IRS withdraws two expert rebuttal reports at trial after AI-related errors are raised (*Riddle Aggregates*) | Trial record | The authority's own work product is exposed too; challenge its reports | [TAXCT-RIDDLE-2026] |
+| 18 Mar 2026 | IRS withdraws two expert rebuttal reports at trial after AI-related errors are raised (*Riddle Aggregates*) | Trial record | The authority's own work product is exposed too; challenge its reports | [RIDDLE-TRANSCRIPT-2026] |
 | 6 May 2026 | EU provisional deal would defer stand-alone high-risk AI Act duties to 2 Dec 2027; formal adoption unconfirmed in the sources | Provisional law | Watch dates for HR and authority-side systems; literacy duty for firms as deployers | [GIBSON-AIACT-2026] |
 | 24 Jun 2026 | IRS OPR Alert 2026-19 maps AI onto Circular 230 (due diligence, fees, competence, firm procedures, written advice, confidentiality) | Regulator guidance | Procedures, training, vendor vetting and records are expected now | [IRS-OPR-2026] |
 | 22 Jul 2026 | Australia's TPB issues TPB(GS) 55/2026: client permission before data goes into third-party AI; documented verification | Regulator guidance | Engagement letters can carry the permission | [TPB-GS55-2026] |
 | 31 Aug 2026 | Werfel's AI risk framework published: 20 risks for authorities, 15 for preparers | Professional-body framework (author's views) | A ready risk register for a firm or department | [TAXADVISER-WERFEL-2026] |
-| 8 Sep 2026 | AICPA asks the IRS to clarify OPR's fee language, which it says appears not to allow value pricing | Pending | Do not lock a pricing model until the answer lands | [JOFA-FEES-2026] |
+| 8 Sep 2026 | AICPA asks the IRS to clarify OPR's fee language, which it says appears not to allow value pricing | Pending | Do not lock a pricing model until the answer lands | [AICPA-FEES-2026] |
 | 23 Sep 2026 | AICPA launches the Council on AI Risk in Tax (CART) with Werfel | Council | Possible basis for later guidance and insurer questions (advisor inference) | [AICPA-CART-2026] |
 | 6 Oct 2026 | ABA Tax Section panel on sections 7216 and 6713 and AI (listed) | Scheduled panel | The consent question for AI vendors is live, not settled | [WINTHROP-ABA-2026] |
 
@@ -92,7 +92,7 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 | Tax years beginning after 2025 | Form 6765 Section G (R&D credit business-component detail) required | [IRS-F6765-INSTR-2025] |
 | 2027 | Second GIR season: 19 more jurisdictions join the original 37 | [BTAX-KPMG-GIR-2026] |
 | 2 Dec 2027 | EU AI Act stand-alone high-risk duties, if the provisional deferral is adopted | [GIBSON-AIACT-2026] |
-| 1 Jul 2028; 1 Jul 2030; 1 Jan 2035 | ViDA milestones: platform rules and single registration; intra-EU e-invoicing and digital reporting; harmonisation | [EC-VIDA-2025] |
+| 1 Jul 2028; 1 Jul 2030; 1 Jan 2035 | ViDA milestones: platform rules and single registration; intra-EU e-invoicing and digital reporting; harmonisation | [EC-VIDA-2026] |
 | 2030 | HMRC target: at least 90% of interactions digital | [ICAS-HMRC-2025] |
 
 **Forecasts in circulation** (none proven; most made by interested parties):

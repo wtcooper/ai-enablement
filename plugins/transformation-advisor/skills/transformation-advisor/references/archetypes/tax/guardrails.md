@@ -114,7 +114,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 | Case | What happened | Source |
 |---|---|---|
 | *Clinco v. Commissioner* (Tax Court, 9 Feb 2026) | Three of four cited cases apparently hallucinated; counsel did not correct the record; admonishment, no sanction; "Tax Court has not done so. Yet." | [CLINCO-OPINION-2026; TAXCT-CLINCO-2026] |
-| *Riddle Aggregates* (Tax Court trial, 18 Mar 2026) | IRS withdrew two expert rebuttal reports after AI-related errors were raised; cause disputed | [TAXCT-RIDDLE-2026] |
+| *Riddle Aggregates* (Tax Court trial, 18 Mar 2026) | IRS withdrew two expert rebuttal reports after AI-related errors were raised; cause disputed | [RIDDLE-TRANSCRIPT-2026] |
 | *Khoja* (Tax Court, Mar 2026) | Judge questioned an IRS attorney over a motion citing a nonexistent case (Bloomberg's account; order not read) | [BLAW-TAXCT-2026] |
 | *Harber v HMRC* (UK FTT, 4 Dec 2023) | Taxpayer cited nine non-genuine decisions; appeal decided on the merits | [FTT-HARBER-2023] |
 
@@ -156,7 +156,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 
 - **Fees.** OPR's section 10.27 reading (§3) is contested: the AICPA says it implies efficiencies must be passed on,
   overlooks AI costs and appears not to allow value pricing; its CEO called it non-authoritative and possibly
-  "overstepping"; no IRS clarification was found by 17 Oct 2026 [JOFA-FEES-2026]. Contingent fees remain barred for most
+  "overstepping"; no IRS clarification was found by 17 Oct 2026 [AICPA-FEES-2026]. Contingent fees remain barred for most
   IRS matters [ECFR-10.27]. Review the pricing model, engagement letter and AI records together.
 - **Disclosure.** No universal US duty to disclose AI use in most tax matters is stated in the sources; PCRT asks
   members to consider transparency; TPB requires client permission for third-party AI [TAXCT-CLINCO-2026; PCRT-AI-2026;
@@ -208,7 +208,7 @@ Keys not listed here are in [sources.md](sources.md).
 
 - **AICPA-SSTS-2024**: AICPA & CIMA, *Statements on Standards for Tax Services landing page* (professional-body, SSTS effective 1 Jan 2024; page viewed Oct 2026). https://www.aicpa-cima.com/resources/landing/statements-on-standards-for-tax-services
 - **CAMICO-FAQ-2025**: CAMICO (CPA professional liability insurer), *Generative AI: Frequently Asked Risk Management Questions on CAMICO's Advisory Hotline* (vendor, 12 Nov 2025). https://www.camico.com/blog/generative-artificial-intelligence-ai-frequently-asked-risk-management-questions-faq-on-camicos-advisory-hotline/
-- **CHARLOTIN-2026**: Damien Charlotin, *AI Hallucination Cases Database (tax filter)* (academic, viewed 17 Oct 2026). https://www.damiencharlotin.com/hallucinations/?q=tax
+- **CHARLOTIN-DB-2026**: Damien Charlotin, *AI Hallucination Cases Database (web page and CSV)* (academic, 2026-10-16). https://www.damiencharlotin.com/hallucinations/
 - **GUARDIAN-DELOITTE-2025**: The Guardian, *Deloitte to pay money back to Albanese government after using AI in $440,000 report* (press, 6 Oct 2025). https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - **HADWICK-EUAIACT**: European Papers, *Slipping Through the Cracks: the Carve-outs for AI Tax Enforcement Systems in the EU AI Act* (academic, undated). https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
 - **IRS-I8867-2025**: Internal Revenue Service, *Instructions for Form 8867: Paid Preparer's Due Diligence Checklist (Rev. November 2025)* (regulator, 2025-11). https://www.irs.gov/pub/irs-pdf/i8867.pdf

@@ -75,7 +75,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
   whether halved hours are "margin for me or … price reduction"; RKL pilots value pricing with "several dozen" clients
   [BTAX-PRICING-2026].
 - **Regulatory friction.** OPR says billing manual time not spent may breach section 10.27; the AICPA says that appears
-  not to allow value pricing and has asked for clarification [IRS-OPR-2026; JOFA-FEES-2026].
+  not to allow value pricing and has asked for clarification [IRS-OPR-2026; AICPA-FEES-2026].
 - **Small firms are already off the clock.** 3% bill tax preparation hourly in one customer survey [IGNITION-2025].
 - **Not found.** Any firm publishing outcome-contingent fees on tax work; Circular 230 bars most contingent fees anyway
   [ECFR-10.27].
@@ -88,7 +88,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
   [AVALARA-AGENTIC-2025; TR-SUTAI-2026; SOVOS-SOVI-2026].
 - **Authority drivers are real.** OECD administrations are moving toward real-time information-sharing pilots
   [OECD-FTA-2025]; France's e-invoicing mandate starts receipt of e-invoices from 1 Sep 2026 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026]; ViDA brings intra-EU
-  digital reporting from 1 Jul 2030 [EC-VIDA-2025].
+  digital reporting from 1 Jul 2030 [EC-VIDA-2026].
 - **Agentic commerce adds a collection question.** AI systems "can't bear tax obligations", so the company operating
   the agent may have to collect; the US$3-5 trillion by 2030 figure is a McKinsey forecast cited by Bloomberg Tax
   [BTAX-AGENTICCOMMERCE-2026].

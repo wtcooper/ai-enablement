@@ -49,7 +49,7 @@ use-case YAML files carry full rows with locators.
 | HMRC; UK First-tier Tribunal | Roadmap, annual report, software guidelines, tribunal cases | HMRC-ARA-2026; HMRC-GENAI-2026; ICAS-HMRC-2025; FTT-HARBER-2023 |
 | Tax Practitioners Board and ATO (Australia) | Practitioner guidance; authority AI governance | TPB-GS55-2026; ANAO-ATO-2025 |
 | OECD (FTA, Inclusive Framework) | Pillar Two packages and GIR; real-time sharing; intragroup services | OECD-P2-SEP-2026; OECD-FTA-2025; OECD-INTRAGROUP-2026 |
-| European Union | ViDA; AI Act dates | EC-VIDA-2025; GIBSON-AIACT-2026 |
+| European Union | ViDA; AI Act dates | EC-VIDA-2026; GIBSON-AIACT-2026 |
 | FASB | ASU 2023-09 income tax disclosures (see provision-pillar-two) | (module sources) |
 
 ### Professional bodies
@@ -67,7 +67,7 @@ use-case YAML files carry full rows with locators.
 
 | Source | Why it matters | Key examples |
 |---|---|---|
-| The Tax Adviser; Journal of Accountancy (AICPA) | Werfel framework, Clinco analysis, surveys, fee dispute | TAXADVISER-WERFEL-2026; TAXCT-CLINCO-2026; JOFA-FEES-2026 |
+| The Tax Adviser; Journal of Accountancy (AICPA) | Werfel framework, Clinco analysis, surveys, fee dispute | TAXADVISER-WERFEL-2026; TAXCT-CLINCO-2026; AICPA-FEES-2026 |
 | Tax Notes (via TaxProf Blog abstracts) | Sala on corporate team size; state agency AI | SALA-TAXNOTES-2026 |
 | IBFD International Transfer Pricing Journal | GenAI in TP practice | IBFD-ITPJ-2025 |
 | Oxford CBT; Exeter TARC (Journal of Tax Administration); Stanford RegLab | AI in tax policy and administration; audit-selection fairness | OXFORD-CBT-2026; STANFORD-AUDIT-2022 |
@@ -120,6 +120,7 @@ Format: key, publisher, title (type, date), URL.
 - **AICPA-CART-2026**: The Tax Adviser, *AICPA, former IRS commissioner to lead initiative on AI in tax* (professional-body, 23 Sep 2026). https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/
 - **AICPA-ENGAGE-2026**: Karbon (preview of the AICPA & CIMA conference), *AICPA & CIMA ENGAGE 2026* (conference, 8-11 Jun 2026). https://karbonhq.com/resources/aicpa-cima-engage-2026/
 - **AICPA-ENROLL-2026**: AICPA & CIMA / Journal of Accountancy, *U.S. Accounting Undergraduate Enrollment Continues to Outpace Growth Rate for Business Majors Overall (release 9 Jun 2026; JofA coverage "Student enrollment in accounting continues to rise")* (professional-body, 2026-06-09). https://www.aicpa-cima.com/news/article/u-s-accounting-undergraduate-enrollment-continues-to-outpace-growth-rate-for-business-majors-overall
+- **AICPA-FEES-2026**: The Tax Adviser (AICPA), *AICPA seeks IRS clarity on AI guidelines, CPA fees* (press, 2026-09-08). https://www.thetaxadviser.com/news/2026/sep/aicpa-seeks-irs-clarity-on-ai-guidelines-cpa-fees/
 - **AICPA-TAXSW-2026**: The Tax Adviser and Journal of Accountancy (AICPA), *2026 tax software survey (1,808 AICPA members; AI adoption questions)* (survey, 2026-08-31). https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/
 - **AICPA-TOPISSUES-2026**: Journal of Accountancy (AICPA), *CPA Firm Top Issues Survey: technology rises* (professional-body, Jun 2026). https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
 - **ANAO-ATO-2025**: Australian National Audit Office, *Governance of Artificial Intelligence at the Australian Taxation Office (Auditor-General Report No. 22 2024-25)* (regulator, 2025-02-28). https://www.anao.gov.au/work/performance-audit/governance-of-artificial-intelligence-the-australian-taxation-office
@@ -151,7 +152,7 @@ Format: key, publisher, title (type, date), URL.
 - **DCBAR-TAX-2026**: D.C. Bar, *Tax Conference session: Rise of the Machines: How Artificial Intelligence Is Changing the Tax World* (conference, 8 Jan 2026). https://events.dcbar.org/Tax2026/session/3513387/rise-of-the-machines-how-artificial-intelligence-is-changing-the-tax-world
 - **DELOITTE-TTT-2026**: Deloitte Global, *Riding the wave: A framework to plan for AI (AI-enabled Tax Transformation)* (firm, PDF created 2 Jul 2026). https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf
 - **DIGIN-INSURERS-2026**: Digital Insurance / Accounting Today (Gaetano), *Insurers eyeing AI risk at CPA firms* (press, 21 Apr 2026). https://www.dig-in.com/news/insurers-eyeing-ai-risk-at-cpa-firms
-- **EC-VIDA-2025**: European Commission, *VAT in the Digital Age (ViDA)* (regulator, page undated; package adopted 2025). https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en
+- **EC-VIDA-2026**: European Commission, *VAT in the Digital Age (ViDA)* (regulator, 2026-07-29). https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en
 - **ECFR-7216-2026**: eCFR / Cornell LII (Treasury), *26 CFR §§301.7216-1, -2, -3* (regulator, current). https://www.law.cornell.edu/cfr/text/26/301.7216-2
 - **ECFR-C230-2026**: eCFR (Treasury), *31 CFR Part 10 (Circular 230) §§10.22, 10.34, 10.35, 10.36, 10.51* (regulator, current as of 1 Oct 2026). https://www.ecfr.gov/current/title-31/subtitle-A/part-10
 - **EIDE-2026**: PR Newswire (Eide Bailly, Reverence Capital), *Eide Bailly Advances Growth Strategy ... Through Investment from Reverence Capital Partners* (firm, 2026-06-23). https://www.prnewswire.com/news-releases/eide-bailly-advances-growth-strategy-and-client-service-commitment-through-investment-from-reverence-capital-partners-302807934.html
@@ -183,7 +184,6 @@ Format: key, publisher, title (type, date), URL.
 - **ITR-AIFORUM-2025**: International Tax Review, *ITR AI in Tax Forum (inaugural), speakers* (conference, 16 Sep 2025). https://event.internationaltaxreview.com/event/bfd4f100-335f-47de-841d-b03beb6a3d86/speakers
 - **JHU-TAXREASON-2025**: arXiv (Johns Hopkins), *Language Models and Logic Programs for Trustworthy Tax Reasoning* (academic, 28 Aug 2025, rev. 5 Feb 2026). https://arxiv.org/abs/2508.21051
 - **JOB-DATABRICKS-2026**: Databricks (Greenhouse API), *Tax Data & Technology Manager* (job-posting, first published 2026-09-14; updated 2026-10-06). https://databricks.com/company/careers/open-positions/job?gh_jid=8679978002
-- **JOFA-FEES-2026**: Journal of Accountancy, *AICPA seeks IRS clarity on AI guidelines, CPA fees* (professional-body, 8 Sep 2026). https://www.journalofaccountancy.com/news/2026/sep/aicpa-seeks-irs-clarity-on-ai-guidelines-cpa-fees/
 - **KPMG-ANTHROPIC-2026**: CPA Practice Advisor (KPMG/Anthropic release), *KPMG Partners with Anthropic for Digital Gateway Powered by Claude* (press, 20 May 2026). https://www.cpapracticeadvisor.com/2026/05/20/kpmg-partners-with-anthropic-for-digital-gateway-powered-by-claude/183743/
 - **KPMG-DE-2026**: KPMG AG (Germany), *Tax departments are increasingly turning to artificial intelligence* (survey, 7 May 2026). https://kpmg.com/de/en/media/press-releases/2026/05/tax-departments-are-increasingly-turning-to-artificial-intelligence.html
 - **KPMG-INDIRECT-2026**: KPMG International, *Benchmarking Indirect Tax in a data-driven era* (survey, 2026-05). https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/05/benchmarking-indirect-tax-in-a-data-driven-era.pdf.coredownload.inline.pdf
@@ -201,6 +201,7 @@ Format: key, publisher, title (type, date), URL.
 - **PCRT-AI-2026**: ICAEW for the seven PCRT bodies, *Topical guidance covering the application of PCRT to the ethical use of AI tools* (professional-body, 2026-01-19). https://www.icaew.com/technical/tax/working-in-tax/pcrt/topical-guidance-application-of-pcrt-to-ethical-use-of-artificial-intelligence-tools
 - **PERPLEXITY-2026**: PYMNTS, *Perplexity Launches AI Agent That Drafts Tax Returns* (press, 6 Apr 2026 (announcement 2 Apr)). https://www.pymnts.com/taxes/2026/perplexity-launches-ai-agent-that-drafts-tax-returns/
 - **PWC-MEGNA-2025**: CFO.com, *How PwC's tax team is using agentic AI* (press, 6 Jun 2025). https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/
+- **RIDDLE-TRANSCRIPT-2026**: US Tax Court (via Charlotin database), *Riddle Aggregates v. Commissioner, trial transcript vol. 3 (Docket 31104-21)* (regulator, 2026-03-18). https://www.damiencharlotin.com/documents/1972/Riddle_Aggregates.pdf
 - **RSM-MYRSM-2025**: RSM US, *RSM expands AI commitment with launch of myRSM Tax* (firm, 16 Jun 2025). https://rsmus.com/newsroom/2025/rsm-expands-ai-commitment-with-launch-of-myrsm-tax.html
 - **SALA-TAXNOTES-2026**: TaxProf Blog / Tax Analysts, *AI Won't Shrink Corporate Tax Teams Much. Here's Why. (Tax Notes State 121:189)* (academic, 20 Jul 2026). https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
 - **SAVANT-2026**: Savant Labs, *Savant at TEI Tax Technology Seminar 2026* (vendor, 16 Apr 2026). https://savantlabs.io/press/tei-tax-tech-2026-ai-tax-automation/
@@ -212,7 +213,6 @@ Format: key, publisher, title (type, date), URL.
 - **TAXADVISER-WERFEL-2026**: The Tax Adviser (AICPA), *A risk framework for AI use in tax administration and preparation (Danny Werfel)* (professional-body, 2026-08-31). https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/
 - **TAXCT-ANNOUNCE-2026**: US Tax Court, *Announcement and notice of proposed rule amendments; press-release listing* (regulator, 26 May 2026). https://ustaxcourt.gov/files/documents/Announcement_05262026.pdf
 - **TAXCT-CLINCO-2026**: Journal of Accountancy (AICPA), Newkirk and Webber, *A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner)* (professional-body, 1 Sep 2026). https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/
-- **TAXCT-RIDDLE-2026**: US Tax Court (transcript via Charlotin), *Riddle Aggregates, LLC v. Commissioner, Docket 31104-21, trial transcript Vol. 3* (regulator (court), 18 Mar 2026). https://www.damiencharlotin.com/documents/1972/Riddle_Aggregates.pdf
 - **TEI-ANNUAL-2026**: Tax Executives Institute, *2026 Annual Conference: agenda and speakers* (conference, 18-21 Oct 2026). https://events.tei.org/e/2026-annual-conference/page/agenda-and-speakers
 - **TEI-MIDYEAR-2026**: Tax Executives Institute, *TEI Midyear Conference 2026 at-a-glance agenda, preliminary (Washington DC, 15-18 Mar 2026)* (conference, 2026-02). https://www.tei.org/sites/default/files/MY%202026%20At%20a%20Glance%20Agenda_rev3.2_0.pdf
 - **TEI-TAXTECH-2026**: Thomson Reuters Institute, *2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain* (conference, Apr-May 2026 (seminar 27-29 Apr 2026)). https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain

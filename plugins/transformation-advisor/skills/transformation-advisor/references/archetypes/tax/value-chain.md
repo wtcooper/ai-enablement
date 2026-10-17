@@ -158,7 +158,7 @@ functional interviews (research-synthesis) in [transfer-pricing](modules/transfe
 ### Stage 9. Bill, collect and learn (inherited)
 
 Tax difference: OPR says billing manual time not actually spent may breach the Circular 230 fee rule, and the AICPA
-disputes this reading [IRS-OPR-2026; JOFA-FEES-2026]. Pricing policy for AI-assisted work is therefore a governance
+disputes this reading [IRS-OPR-2026; AICPA-FEES-2026]. Pricing policy for AI-assisted work is therefore a governance
 document as well as a commercial one ([economics.md](economics.md) §7).
 
 ## 6. Firm and in-house variants

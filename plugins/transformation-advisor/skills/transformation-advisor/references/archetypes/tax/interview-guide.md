@@ -89,7 +89,7 @@ Use these in addition to each phase file's question bank.
 - "If preparation took half the hours, what would happen to your fees, your season staffing and your offshore spend?"
   (Of 219 US firms on one billing platform, 3% bill tax preparation hourly and 37% use a fixed fee [IGNITION-2025].)
 - "Who keeps an AI saving: you, the client, or both? Has anyone read your engagement letters against OPR's fee
-  language?" (OPR says billing manual time not spent may breach section 10.27; the AICPA disputes it [IRS-OPR-2026; JOFA-FEES-2026].)
+  language?" (OPR says billing manual time not spent may breach section 10.27; the AICPA disputes it [IRS-OPR-2026; AICPA-FEES-2026].)
 - "Which of your services would AI threaten, change a lot, or mainly help?" ([disruption.md](disruption.md) §8)
 - "Where is the tax authority ahead of you on data and analytics?" (Deloitte's scenarios cross a company's AI adoption
   with its authority's [DELOITTE-TTT-2026].)

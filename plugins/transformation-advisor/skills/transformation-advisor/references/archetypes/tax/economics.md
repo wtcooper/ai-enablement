@@ -128,7 +128,7 @@ Latest reported years; currencies and service-line definitions differ, so do not
 - **Regulator.** OPR Alert 2026-19 (24 Jun 2026) says billing manual time not actually spent, or double billing for
   AI-assisted tasks, may breach section 10.27 "depending on the facts", and that savings should be credited openly
   [IRS-OPR-2026]. The AICPA says this appears not to allow value pricing and "overlooks" AI costs, and has asked the IRS
-  to clarify; no reply was found [JOFA-FEES-2026].
+  to clarify; no reply was found [AICPA-FEES-2026].
 - **Clients (adjacent).** KPMG International pressed its own auditor to pass on AI savings; the audit fee fell 14% in
   dollar terms. One small audit fee, not tax [IRISHTIMES-KPMG-2026].
 - **Sellers.** Nearly half of tax and audit professionals feel pressure to generate financial gains from AI, and a third
