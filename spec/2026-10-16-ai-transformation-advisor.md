@@ -122,7 +122,7 @@ The profile sets the path through the loop:
 | **4. Reimagine** | Generate options through four lenses (§4.2) | For each high-value step | For each unit or value-chain stage, including new services and pricing |
 | **5. Prioritize** | Score and sort into quick win, foundation, big bet or park. Sequence by dependencies | Team opportunities | **Roll up** the units' plans: remove duplicates, find shared platforms, combine value along the value tree |
 | **6. Make the case** | Value as ranges with assumptions, risks, human checkpoints, **role evolution** | Top three to five | Top initiatives and the portfolio as a whole |
-| **7. Plan** | Actions, owners, KPIs, control plan, event-triggered checkpoints. Sequenced by steps and dependencies, never by calendar dates | Now, Next and Later | Workstreams with gates, a value creation plan, and decision points |
+| **7. Plan** | Actions, owners, KPIs, control plan, rhythm. Steps sequenced by dependency, not calendar deadlines | Now, Next and Later | Workstreams, a value creation plan and a review cadence |
 
 ### 4.2 The four lenses of Reimagine
 
@@ -281,7 +281,7 @@ There is one reference file per phase plus cross-cutting files. Each phase file 
 The content is grounded in research stream M (§11). It covers:
 
 - lean and Six Sigma applied to knowledge work
-- PE value-creation practice (diagnostic, value creation plan, workstreams and program office), borrowing the discipline but sequencing by dependency rather than by a fixed 100 days
+- PE value-creation practice (diagnostic, value creation plan, workstreams, program office cadence)
 - current AI transformation frameworks and evidence
 - agentic workflow redesign
 - AI maturity models
@@ -626,7 +626,7 @@ ai-enablement/                               # this repo = the marketplace
 | Opportunities | `opportunities.yaml` |
 | Unit brief | `units/<id>/brief.md` (one page) |
 | Business case, one page per top opportunity | A section in the plan |
-| Portfolio, workstreams with gates, value creation plan (higher levels) | Sections in the top plan |
+| Portfolio, workstreams, value creation plan, cadence (higher levels) | Sections in the top plan |
 | Leadership summary | A section that can be pasted elsewhere |
 
 ## 9. Behavioral rules (cannot be overridden)

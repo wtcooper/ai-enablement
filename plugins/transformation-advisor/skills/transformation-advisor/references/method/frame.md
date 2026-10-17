@@ -37,7 +37,7 @@ look in the right places and score options the same way.
 
 ## 2. How to run it
 
-1. **Start from the profile's goals.** Ask the success question (§3, F1). Play it back as an ambition sentence.
+1. **Start from the profile's goals.** Ask the twelve-month success question (§3, F1). Play it back as an ambition sentence.
 2. **Test the breadth of the ambition.** If it is efficiency only, ask what the scope could do or sell that it cannot
    today (F2, F3). Do not force growth where the user's remit cannot deliver it; note it instead.
 3. **Ask why now.** For fee-based work, ask how the work is priced and what happens to revenue if effort halves (F6).
@@ -61,7 +61,7 @@ Core questions first. Ask in this plain wording, one at a time.
 
 | # | Question | Scope | Notes |
 |---|---|---|---|
-| F1 | If this goes well, what will be different for your clients and for your people? | [all] | The ambition. Play it back as one sentence |
+| F1 | If this goes well, what will be different in twelve months, for your clients and for your people? | [all] | The ambition. Play it back as one sentence |
 | F2 | Is that mainly about doing the same work with less effort, or also about better quality, more revenue or something new? | [all] | Efficiency versus wider ambition [MCKINSEY-SOAI-2025] |
 | F3 | If the tools were free and quality guaranteed, which piece of work, from request to delivery, would you rebuild? | [all] | Workflow thinking versus tool thinking |
 | F4 | What are you measured on today, how is it measured, and how often is it reviewed? | [all] | Existing measures beat new ones |
@@ -121,7 +121,7 @@ wins raises time to value; a Scaling portfolio raises strategic fit. Children in
 
 | Move | When | What it reveals |
 |---|---|---|
-| **Ask for success in P&L or KPI terms** (F1, F5) | Opening Frame | Whether the ambition is efficiency only. McKinsey's high performers named growth (82%) and innovation (79%) objectives far more often than others (50% each); self-reported and correlational [MCKINSEY-SOAI-2025] |
+| **Ask for success in P&L or KPI terms at twelve months** (F1, F5) | Opening Frame | Whether the ambition is efficiency only. McKinsey's high performers named growth (82%) and innovation (79%) objectives far more often than others (50% each); self-reported and correlational [MCKINSEY-SOAI-2025] |
 | **Ask what they would rebuild if tools were free** (F3) before asking which tools they want | Early Frame | Workflow versus tool thinking. 55% of high performers reported fundamentally redesigned workflows against 20% of others (self-reported) [MCKINSEY-SOAI-2025] |
 | **Ask how the work is priced and what happens if effort halves** (F6) | Fee-based work, Experimenting and above | Margin compression hidden by an efficiency plan. Sage's worked arithmetic: a job cut from 8 hours to 3 loses more than half its revenue if billed hourly; on a fixed fee it frees 5 hours that earn nothing unless they are put to productive use [SAGE-2026] |
 | **Ask who captures the gain** (F17) | Services lines, internal service units | Whether clients or internal customers will expect lower fees or budgets [BAIN-DILIGENCE-2025] |

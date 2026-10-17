@@ -90,7 +90,7 @@ Use these to answer "will AI take my job?" without dismissing or inflating the f
 5. **Write the new work**: verification and review, exception handling, keeping rules and evaluation sets
    current, client time, judgment earlier in the career. AI users name quality control of AI output and
    critical thinking among the skills growing in importance (vendor survey) [MICROSOFT-WTI-2026].
-6. **Name the skills and the path**: what people need to be able to do as the work changes, how they will learn it,
+6. **Name the skills and the path**: what people need to be able to do in 12 months, how they will learn it,
    and who protects the time.
 
 ## 5. Redeploy or reduce

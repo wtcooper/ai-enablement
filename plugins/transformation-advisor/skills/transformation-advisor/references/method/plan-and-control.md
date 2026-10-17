@@ -1,10 +1,10 @@
 # Plan and control (phase 7)
 
-Read this on entering phase 7. It tells you how to turn the chosen opportunities into a **sequenced plan**:
-what to do first, what each step unlocks, who owns it, how you will know it is working, and what happens
-when it drifts. Plans are ordered by **steps and dependencies, not calendar dates**. With AI, work that
-once took months can move in days, so fixed time boxes (30/60/90 days, 100-day plans) slow things down or
-mislead. Keys in brackets are listed in §9.
+Read this on entering phase 7. It tells you how to turn the chosen opportunities into actions, owners,
+KPIs, a control plan and a review rhythm: next steps sequenced by dependency for a team (Now, Next, Later),
+or workstreams, a value creation plan and cadence for a unit or organization. Steps are ordered by what they
+depend on, not by calendar deadlines such as 30/60/90 days or 100 days; with AI, steps can move far faster
+than those manual-era time boxes assume. Keys in brackets are listed in §9.
 
 ## Contents
 
@@ -20,80 +20,72 @@ mislead. Keys in brackets are listed in §9.
 
 ## 1. Goal and exit criteria
 
-**Goal.** A plan that can start immediately and notices when it drifts. A pilot with no baseline, no owner
-and no control plan is the typical stall; the plan exists to prevent it.
+**Goal.** A plan that can start now and notices when it drifts. A pilot with no baseline, no owner and
+no control plan is the typical stall; the plan exists to prevent it.
 
 **Exit criteria.**
 
-- Every chosen opportunity has a `next_step` (`action`, `owner`, `depends_on`), and at least one action
-  can start now, with nobody else's approval.
-- The plan is a **sequence**: *Now* (no dependencies), *Next* (unlocked when named steps or gates are done)
-  and *Later* (needs foundations first). Each step names what it depends on and what it unlocks. No dates.
-- Unit or organization scope adds a value creation plan (the bridge from `business-case.md`) with
-  workstreams, owners and the gates between them.
-- A control plan for each live opportunity: metric, baseline, normal range, owner, when it is checked, and
-  what happens when the metric moves out of range. Automated and delegated steps are included (§3.4).
+- Every chosen opportunity has a `next_step` (`action`, `owner`, `depends_on`), and at least one action can start now.
+- Team scope: next steps sequenced by dependency (Now, Next, Later). Unit or organization scope: workstreams
+  sequenced the same way, a value creation plan (the bridge from `business-case.md`) and a review cadence.
+- A control plan for each live opportunity: metric, baseline, normal range, owner, review rhythm, and what
+  happens when the metric moves out of range. Automated and delegated steps are included (§3.4).
 - Three to five KPIs per opportunity, with a quality guardrail, and a way to report realized against expected value.
-- Go/no-go and promotion rules written before each pilot starts, as conditions (for example "after 20 cases
-  with no serious miss"), not dates.
-- A people plan drawn from `people-and-change.md`: what staff are told and at which step, training by role,
-  manager readiness, commitments and who owns them.
-- The next journey stage named with three observable exit criteria.
+- Go/no-go and promotion rules written before each pilot starts.
+- A people plan drawn from `people-and-change.md`: what staff are told and when, training by role, manager
+  readiness, commitments and who owns them.
+- The next journey stage named with three observable exit criteria, re-checked at the regular review.
 
 ## 2. How to run it
 
-1. **Name the phase.** "Last phase: turning this into a plan with owners and clear next steps."
+1. **Name the phase.** "Last phase: turning this into a plan with owners and a rhythm."
 2. **Owners first.** For each opportunity ask: "Who will own this, and do they have the authority it needs?"
    Owners are named by role, or by name where the user offers it; never assess individuals.
 3. **Start now.** Ask for one action per opportunity that needs nobody else's approval.
-4. **Sequence by dependency** using the Prioritize order: quick wins and foundations in *Now*; what they
-   unlock in *Next*; big bets in *Later*, starting in shadow mode once their foundations are in place.
-   If the user asks "by when?", answer with the gate ("when the checklist is tested on 20 cases"), and let
-   them add dates in their own planning tools if they need them.
+4. **Sequence** using the Prioritize order: foundations and quick wins first, big bets in shadow mode once
+   their foundations are in place. Order steps by what they depend on, not by calendar deadlines.
 5. **Write the control plan** with the user, one opportunity at a time (§3.3, §3.4).
-6. **Set KPIs and checkpoints** (§3.5, §3.6). Ask: "What event should trigger a look at this, who looks,
-   and what will they do if it moves?"
+6. **Set KPIs and the rhythm** (§3.5, §3.6). Ask: "Who will look at this, how often, and what will they do
+   if it moves?"
 7. **Add the people plan** (read `people-and-change.md` if not already done this session).
 8. **Play back** the plan in one screen. Write the output (§8), mark the plan complete, and tell the user
    which files to share and how; sharing is their choice.
 
-**Adapt by journey stage.** Curious: two or three quick wins, a safe-use rule, and a check-in after the
-first real uses. Experimenting: one shared workflow with a baseline, owner and human check. Adopting:
+**Adapt by journey stage.** Curious: a one-page plan of two or three quick wins, a safe-use rule and a
+check-in after the first real uses. Experimenting: one shared workflow with a baseline, owner and human check. Adopting:
 control plans for production workflows; at most one or two bounded delegated workflows, in shadow mode.
 Scaling: governance tiers, shared platform, an inventory of live agents, portfolio reviews. AI-native: add
-pricing and service-model steps and workforce redesign checkpoints.
+pricing and service-model milestones and workforce redesign checkpoints.
 
 ## 3. What the plan contains
 
 ### 3.1 Team scope: Now, Next, Later
 
-- **Now** (no dependencies, start immediately): one to three actions needing no one else's approval, such as
-  recording baseline numbers, picking the pilot cases, drafting the checklist, telling the team what is
-  happening. Quick wins whose prerequisites already exist also start here.
-- **Next** (unlocked by named gates): foundations finished; quick wins live on a few cases with a comparison;
-  a go/no-go when the pilot's stopping condition is met; extend or stop.
-- **Later** (needs foundations): big bets, starting in shadow mode; a value review once there is enough real
-  data to compare against the case; re-check the journey stage.
+- **Now:** one to three actions, each needing no one else's approval (record baseline numbers, pick the
+  pilot cases, draft the checklist, tell the team what is happening).
+- **Next** (once the Now steps are done): foundations under way; quick wins live on a few cases with a
+  comparison; go/no-go on the quick wins when their stopping condition is met; extend or stop.
+- **Later** (once foundations are in place): first value review against the case; decide the next big bet;
+  re-check the journey stage.
 
-### 3.2 Unit or organization scope: workstreams, value creation plan, gates
+### 3.2 Unit or organization scope: workstreams, value creation plan, cadence
 
-- **Workstreams:** the highest-conviction levers become workstreams, each with one owner, a target range,
-  early wins and the gates between steps. Install the management system as the first step, not the last:
-  operating reviews, a KPI dashboard and clear decision rights [SBI-2025]. Name one person ultimately
-  accountable [GT-2013]. Private-equity owners often organize this as a "100-day plan" (almost 90% did in a
-  2013 survey, self-reported) [GT-2013]; borrow the discipline (owners, workstreams, early wins, a management
-  system), not the clock.
+- **Workstreams:** the highest-conviction levers become workstreams, each with one owner, a target range
+  and early wins, sequenced by dependency. Install the management system early: operating reviews, a KPI dashboard and
+  clear decision rights [SBI-2025]. Name one person ultimately accountable [GT-2013]. In a 2013 survey,
+  almost 90% of private-equity firms used a 100-day plan, often drafted during diligence (self-reported,
+  dated) [GT-2013].
 - **Value creation plan:** the bridge from `business-case.md`, one bar per initiative with owner, baseline,
-  target range and the gate that releases it, reconciled at each review [BDEMERSON-2026].
+  target range and the step it depends on, reconciled every quarter [BDEMERSON-2026].
 - **Substitutes for missing forcing functions.** A unit leader lacks a private-equity owner's board control,
   equity incentives and exit date [ACHARYA-2009]. Build substitutes: a named sponsor, funded targets,
-  incentives that reward the plan, and explicit decision points.
+  incentives that reward the plan, and a regular review.
 - **Units:** set `wave` and `status` for each child unit; plan later waves after the first wave's evidence.
 
 ### 3.3 Control plan for every live opportunity
 
-For each opportunity write: metric · baseline · normal range · owner · when it is checked · response when
-out of range. Plot metrics over time with limits before reacting to one bad result; a single point outside the
+For each opportunity write: metric · baseline · normal range · owner · review rhythm · response when out
+of range. Plot metrics over time with limits before reacting to one bad week; a single point outside the
 limits signals a cause worth finding, movement inside them is usually noise [NIST-CTRL-ND]. Include
 automated steps: they drift unobserved when inputs or systems change [WIKI-DMAIC-2025; LEI-ETHINGTON-2026].
 Automations need an owner and a maintenance budget: in a vendor-sponsored survey of RPA users, 69% had bots
@@ -124,27 +116,21 @@ management, human interaction points, monitoring and oversight, and staff skills
   guardrail, plus cost per outcome where consumption matters.
 - Report realized against expected value; counts of pilots, tools rolled out or use cases in production are
   activity, not impact [GARTNER-CFO1-2026]. Mark every benefit realized or expected.
-- Adoption indicators the team can read at each review (advisor heuristic): share of people using it
-  regularly, workflows in production, share with a measured baseline, time from pilot to production, reuse count.
+- Adoption indicators the team can read monthly (advisor heuristic): share of people using it weekly,
+  workflows in production, share with a measured baseline, time from pilot to production, reuse count.
 - People indicators: quality of AI-assisted work, use by group, manager confidence, junior learning.
 - Re-baseline when the model, prices or the process change.
 
-### 3.6 Checkpoints, triggered by events
+### 3.6 Rhythm
 
-Check things when something happens, not on a calendar:
+| Scope | Weekly | Monthly | Quarterly | Mid-point |
+|---|---|---|---|---|
+| Team | 15-minute check while pilots run | Review with the sponsor: KPIs, go/no-go | Written value review against the case | Re-plan once the first items have landed |
+| Unit or organization | Owner check-ins while the first workstreams start | Steering: portfolio KPIs, blockers, decisions | Written value review: what landed, slipped, changed [BDEMERSON-2026] | Reset: re-underwrite, fund winners, stop laggards [BAIN-MIDYEAR-2026] |
 
-| Trigger | Team | Unit or organization |
-|---|---|---|
-| A pilot starts | Short check after the first few cases | Owner check-in on each workstream's first step |
-| A gate condition is met | Go/no-go: extend, adjust or stop | Steering decision: release the next step, fund or stop [BAIN-MIDYEAR-2026] |
-| Enough real data to compare | Written value review against the case | Portfolio value review: what landed, slipped, changed [BDEMERSON-2026] |
-| The tool, model, data or process changes | Re-run checks and re-perform a sample | Same, plus re-baseline the affected KPIs |
-| A KPI moves out of range | Owner finds the cause before continuing | Escalate if it affects other workstreams |
-| Several items have landed | Re-plan: what is next, re-check the journey stage | Reset: re-underwrite, fund winners, stop laggards |
-
-Early, close contact matters: in a study of 66 UK buyouts, 92% of sponsors were in contact with the CEO
-weekly or more early in the deal (independent, dated) [ACHARYA-2009]. Keep the people close, but tie
-decisions to evidence, not dates. Re-check the journey stage at each re-plan: placements age fast.
+Interview data on 66 UK buyouts found 92% of sponsors in contact with the CEO weekly or more in the first
+100 days, and 68% holding at least monthly board meetings (independent, dated) [ACHARYA-2009]. Re-check the
+journey stage at each quarterly review: placements age fast.
 
 ## 4. Question bank
 
@@ -154,17 +140,17 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 - Who will own each of these, and do they have the authority it needs? [T][U/O]
 - What can you start right now without anyone else's approval? [T][U/O]
 - What number would tell you this is slipping, and what would you do then? [T][U/O]
-- What event should trigger a look at the results, and who looks? [T][U/O]
-- What will you tell your people, and at which step? [T][U/O]
+- Who will look at the results, how often, and in which meeting? [T][U/O]
+- What will you tell your people, and when? [T][U/O]
 
 **Follow-ups**
 - Which cases are in the pilot, and what are the same kinds of cases doing the old way? [T]
 - What has to be true to carry on, and what would make you stop? [T][U/O]
 - Where will a person check the work, and what happens to the things they correct? [T]
 - If the tool or the systems around it change, who notices and who re-tests? [T][U/O]
-- What does it cost to run, and who sees that number? [U/O]
+- What does it cost per month to run, and who sees that number? [U/O]
 - Who is the visible sponsor, and what will they do that others can see? [U/O]
-- What would make you re-plan, and who decides to stop something? [U/O]
+- When will you re-plan, and who decides to stop something? [U/O]
 - How do the units report so the same benefit is not counted twice? [U/O] *Scaling*
 - What three things would show you have reached the next stage? [T][U/O]
 
@@ -179,29 +165,28 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 4. **Write the agent a job description**: duties, limits, escalation, good and bad examples, and a feedback
    loop from reviewers [MCKINSEY-1YR-2025].
 5. **"Would you let it run without a check?"** Map the checkpoints before any delegation [BCG-GAP-2025].
-6. **Go/no-go before the pilot**, written as a condition, not a date [GARTNER-CSO-2026].
+6. **Go/no-go before the pilot**, with a defined review point [GARTNER-CSO-2026].
 7. **Pre-mortem on controllable failure**: planning and resourcing, over-optimistic targets, poor buy-in.
    A 2025 survey of private-equity investors attributed 67% of initiative failures to controllable causes
    (self-reported) [SIMONK-2025].
 8. **Plan to the next stage only**, with three observable exit criteria (advisor heuristic) [MITCISR-2024].
 9. **Anchor visible early wins** and communicate them; they build credibility with the sponsor [SBI-2025].
-10. **Re-plan when the evidence or conditions change**, not when a calendar says so. Plans that are
-    reviewed more often stay useful; private-equity firms report reviewing value creation plans more
-    frequently (self-reported intentions) [SIMONK-2025].
+10. **Shorten the review cycle when conditions shift**; the share of private-equity firms reviewing value
+    creation plans every 3–6 months is expected to rise from 20% to 39% (self-reported intentions) [SIMONK-2025].
 
 ## 6. Common traps
 
 | Trap | How the advisor avoids it |
 |---|---|
 | **Pilot with no baseline, owner or control plan** | Exit criteria require all three before go-live |
-| **Artificial deadlines** | Sequence by dependency and gate; dates belong in the user's own planning tools if they need them |
-| **A plan without an execution engine** | Owners with authority, event-triggered checkpoints and explicit decision points; substitutes for missing forcing functions |
+| **Artificial deadlines** | Sequence steps by dependency; avoid 30/60/90-day or 100-day time boxes carried over from manual-era planning |
+| **A plan without an execution engine** | Owners with authority, a rhythm and a regular review; substitutes for missing forcing functions |
 | **Activity reported as impact** | Realized against expected value; usage is a leading indicator only |
 | **Rubber-stamp checkpoints** | Override rate and time to approve tracked; review audited |
 | **Autonomy granted faster than evidence** | Written promotion thresholds; demote on a miss |
 | **No AI KPIs** | In one survey, 36% of PE firms with an AI strategy had no AI milestones or KPIs (vendor-published) [FTI-PLAYS-2024]; every bar gets a KPI and an owner |
 | **Set and forget automation** | Maintenance owner; re-test on model, tool or system change |
-| **Stale plan** | Re-plan whenever items land or conditions change |
+| **Stale plan** | Quarterly value review and a mid-point reset |
 | **People plan missing** | Communication, training by role and commitments are part of the plan, not an appendix |
 
 ## 7. Worked example: the audit practice
@@ -209,40 +194,39 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 Continuing the audit partner's practice (team-level plan; at unit scope the same content becomes the
 first workstream). Illustrative.
 
-- **Now:** the partner tells the practice what is being tried and why, in a "what we know, what we don't,
-  what we commit to" note (`people-and-change.md`); the pilot lead pulls last season's matching hours from
-  time records for five engagements; a senior manager drafts the review checklist for the three most common
-  control types (F1).
-- **Next**, unlocked when F1 is drafted and the baseline is in: F1 extended to ten control types;
-  evidence-request templates rewritten for the top chase reasons; `ct-07` runs on five engagements with a
-  re-performed sample; roll-forward rule written into the methodology note; short training for staff.
-  When the five engagements are done: go/no-go on `ct-07`, extend to all engagements if met, and `ct-10`
-  starts on files that use F1.
-- **Later**, once `ct-07` is in production: value review against the case; choose the client for `ct-08`;
-  re-check the stage against the Experimenting exit criteria in `onboarding.md` (one workflow with a named
-  owner, a baseline, a designed human check and an approved tool).
+- **Now:** the partner tells the practice what is being tried and why, in a "what we know, what
+  we don't, what we commit to" note (`people-and-change.md`); the pilot lead pulls last season's matching
+  hours from time records for five engagements; a senior manager drafts the review checklist for the three
+  most common control types (F1).
+- **Next:** F1 covers ten control types; evidence-request templates rewritten for the top chase reasons;
+  `ct-07` runs on five engagements with a re-performed sample; roll-forward rule written into the
+  methodology note; two-hour training for staff.
+- **Then:** go/no-go on `ct-07` once the five engagements are done; extend to all engagements if met; `ct-10` starts on files that use F1.
+- **Later:** value review against the case; choose the client for `ct-08`; re-check the stage against the
+  Experimenting exit criteria in `onboarding.md` (one workflow with a named owner, a baseline, a designed human
+  check and an approved tool).
 
-| KPI (`ct-07`) | Baseline | Normal range | Owner | When checked | If out of range |
+| KPI (`ct-07`) | Baseline | Normal range | Owner | Rhythm | If out of range |
 |---|---|---|---|---|---|
-| Net hours per engagement | 50–80 h matching (last season) | At or above the low case | Pilot lead | Per engagement | Find the cause: unreadable documents, training, or a control type to exclude |
+| Net hours per engagement | 50–80 h matching (last season) | At or above the low case | Pilot lead | Per engagement, then monthly | Find the cause: unreadable documents, training, or a control type to exclude |
 | Re-performed matches that disagree | Set in the first five engagements | Within control limits; no serious miss | Engagement manager | Each engagement | Stop use for that document type; root cause before restarting |
-| Review notes on evidence per file | Last season | No higher than last season | Quality reviewer | At each file review | Check checklist use and reviewer load |
+| Review notes on evidence per file | Last season | No higher than last season | Quality reviewer | Monthly | Check checklist use and reviewer load |
 | Files with complete tool documentation | — | 100% | Engagement manager | At file review | Fix before sign-off |
 
-*Checkpoints:* a short check after each pilot engagement; a leadership decision at the go/no-go gate; a
-value review once the season's data is in; re-perform a sample whenever the tool version changes. *Later:* if `ct-16` returns after the stage gate, it
+*Rhythm:* weekly 15-minute pilot check; monthly practice leadership review; quarterly value review;
+re-perform a sample whenever the tool version changes. *Later:* if `ct-16` returns after the stage gate, it
 starts in shadow mode with written thresholds for supervised and then monitored use.
 
 ## 8. Output
 
-In `transformation-plan.md`, write a Plan section with: Now · Next · Later (each step with its owner, what
-it depends on and what it unlocks) · for unit or organization scope, workstreams and the value creation
-plan with their gates · control plan table per live opportunity · KPIs and benefit tracking · checkpoints
-and their triggers · people and change plan · next stage and its exit criteria · leadership summary
-(pasteable). No calendar dates. In frontmatter set `phase_completed: 7`, `next_phase: null`, `updated`,
+In `transformation-plan.md`, write a Plan section with: Now · Next · Later, each step with its owner and
+what it depends on (team), or workstreams sequenced the same way, value creation plan and review cadence
+(unit or organization) · control plan table per live
+opportunity · KPIs and benefit tracking · people and change plan · next stage and its exit criteria ·
+leadership summary (pasteable). In frontmatter set `phase_completed: 7`, `next_phase: null`, `updated`,
 and `status: complete` (or `in-progress` while child units are still planning); keep `units` with `wave`
-and `status`. In `opportunities.yaml`, every chosen item has `next_step: { action, owner, depends_on }` and
-its `human_checkpoints` match the control plan. Close by naming the files to share and suggesting how.
+and `status`. In `opportunities.yaml`, every chosen item has `next_step: { action, owner, depends_on }` and its
+`human_checkpoints` match the control plan. Close by naming the files to share and suggesting how.
 
 ## 9. Sources
 
