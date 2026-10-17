@@ -59,10 +59,10 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "items 1 and 3"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. Maturity 'announced' because no named customer use was found. The vendor's 2025
-    report page says practical AI adoption is in country-specific documentation requirements, researching TP methods,
-    comparing jurisdictional rules and tracking compliance timelines (AIBIDIA-SOTP-2026). General tax research
-    assistants are tax-research-advisory-01.
+    Maturity 'announced' because no named customer use was found. The vendor's 2025 report page says practical AI
+    adoption is in country-specific documentation requirements, researching TP methods, comparing jurisdictional rules
+    and tracking compliance timelines (AIBIDIA-SOTP-2026). General tax research assistants are
+    tax-research-advisory-01.
 
 - id: tax-transfer-pricing-02
   title: General-purpose AI assistants used by in-house TP staff for drafting, research and stress-testing
@@ -158,10 +158,9 @@
     - {ref: JOB-TWILIO-2026, title: "Transfer Pricing Manager (Twilio)", publisher: "Twilio via CV Keskus", type: job-posting, url: "https://www.cvkeskus.ee/transfer-pricing-manager-kodukontori-voimalusega-twilio-estonia-ou-1048858", date: "2026-08-14", access: full, locator: "responsibilities bullet 1"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merges an internal escalation chatbot (practice angle) with business-side use of general assistants (governance
-    angle): both give non-specialists a first answer before a specialist. Deloitte's page is a service offering with
-    no client named; Andersen's test is a single conversation. Overlap: tax-research-advisory-17 (client-facing
-    assistant that escalates to an adviser).
+    Combines an internal escalation chatbot with business-side use of general assistants: both give non-specialists a
+    first answer before a specialist. Deloitte's page is a service offering with no client named; Andersen's test is a
+    single conversation. Overlap: tax-research-advisory-17 (client-facing assistant that escalates to an adviser).
 
 - id: tax-transfer-pricing-04
   title: AI-assisted aggregation and standardisation of intercompany data from several ERPs
@@ -256,8 +255,8 @@
     - {ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: press, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "'Emerging AI dilemma' section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merges the discourse angle's industry-research entry with the governance angle's functional-analysis entry. One
-    named illustrative example from a conference report, a firm claim and a firm's list of uses; no figure.
+    Combines industry research with functional analysis. One named illustrative example from a conference report, a
+    firm claim and a firm's list of uses; no figure.
 
 - id: tax-transfer-pricing-06
   title: AI-assisted comparables search, screening and benchmarking draft
@@ -324,11 +323,10 @@
     - {ref: AIBIDIA-BENCH-2026, title: "Transfer Pricing Benchmarking Studies", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/use-cases/benchmarking-studies", date: "2026-10-17", access: full, locator: "page body; undated, retrieval date used"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. The discourse angle graded this B on the PwC Singapore remarks; the practice and
-    governance angles graded C. Kept at C because the remarks are opinions ('may', 'under certain conditions') and
-    name no engagement, and no named customer, accuracy test or tax-authority outcome exists for any AI comparables
-    tool. The KPMG patent item (2024) is background only. Aibidia sells expert-run benchmarking studies 'in days, not
-    weeks' (AIBIDIA-BENCH-2026), which is a service model, not AI.
+    Graded C, not B, because the remarks are opinions ('may', 'under certain conditions') and name no engagement, and
+    no named customer, accuracy test or tax-authority outcome exists for any AI comparables tool. The KPMG patent item
+    (2024) is background only. Aibidia sells expert-run benchmarking studies 'in days, not weeks'
+    (AIBIDIA-BENCH-2026), which is a service model, not AI.
 
 - id: tax-transfer-pricing-07
   title: First-draft local file, master file and TP report narratives with expert review
@@ -400,10 +398,9 @@
     - {ref: KPMG-DE-2025, title: "Transfer pricing: Why GenAI will significantly simplify the creation of master files and local files in future", publisher: KPMG Germany, type: firm, url: "https://kpmg.com/de/en/home/insights/2025/01/unlocking-the-future-of-transfer-pricing.html", date: "2025-01", access: search-only, locator: "search extract only; page returns 404"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. Job postings show employers expect the skill; they do not show results. The vendor
-    survey page says 75% of respondents expect a first documentation draft to be handled by AI in two to three years
-    (AIBIDIA-SOTP-2026; an expectation, not a result). The KPMG Germany item is search-only and supports nothing on
-    its own.
+    Job postings show employers expect the skill; they do not show results. The vendor survey page says 75% of
+    respondents expect a first documentation draft to be handled by AI in two to three years (AIBIDIA-SOTP-2026; an
+    expectation, not a result). The KPMG Germany item is search-only and supports nothing on its own.
 
 - id: tax-transfer-pricing-08
   title: AI review of TP documentation against country requirements and for cross-report consistency
@@ -449,9 +446,9 @@
     - {ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "preamble"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. No customer named and no result published. Exactera's own site returned 403, so
-    current availability was not checked. Overlap: tax-controversy-05 (EY TP Doc Insights finds discrepancies
-    between TP documentation and public data).
+    No customer named and no result published. Exactera's own site returned 403, so current availability was not
+    checked. Overlap: tax-controversy-05 (EY TP Doc Insights finds discrepancies between TP documentation and public
+    data).
 
 - id: tax-transfer-pricing-09
   title: Central transaction data feeding bulk local-file and master-file production
@@ -503,13 +500,13 @@
     - {ref: AIBIDIA-LEADERS-2026, title: "From information to intelligence: What senior TP leaders say must change", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/blog/from-information-to-intelligence-what-senior-tp-leaders-say-must-change", date: "2026-09-23", access: full, locator: "sections 2 and 3"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Grade A rests on named-customer statements published by the vendor (vendor-published, not independent). The
+    Grade B rests on named-customer statements published by the vendor (vendor-published, not independent). The
     sources do not establish that any step uses generative AI: this is data-driven document automation, and the grade
-    applies to that. The discourse angle read the Trivium page and excluded it for lack of a date and of an AI link;
-    treat it as the data foundation that AI drafting (tax-transfer-pricing-07) would sit on. Regraded B on 2026-10-17
-    under the measured-outcome rule: Trivium's 80% saving rests on its manager's recollection of a two-to-five-day
-    (up to six-week) baseline, and Fortum's 65% automation rate and 'over 8,000' transactions are a manager's quoted
-    statements with no denominator or measurement described.
+    applies to that. The Trivium page is undated and does not link the work to AI; treat it as the data foundation
+    that AI drafting (tax-transfer-pricing-07) would sit on. Not graded A because no outcome is measured: Trivium's
+    80% saving rests on its manager's recollection of a two-to-five-day (up to six-week) baseline, and Fortum's 65%
+    automation rate and 'over 8,000' transactions are a manager's quoted statements with no denominator or measurement
+    described.
 
 - id: tax-transfer-pricing-10
   title: First-draft intercompany agreements from the TP policy, and clause extraction from contracts
@@ -598,9 +595,9 @@
     - {ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads: disruption, data, and the decade ahead (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: "2026-09-21", access: full, locator: "paragraph on new generation of AI-powered TP platforms"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. The ladder is 'delegate' because the described agents run a multi-step review and
-    drafting outcome; the human checkpoints are not described, which is itself a probe for advisers. The VAT and
-    customs parts overlap the indirect-tax module.
+    The ladder is 'delegate' because the described agents run a multi-step review and drafting outcome; the human
+    checkpoints are not described, which is itself a probe for advisers. The VAT and customs parts overlap the
+    indirect-tax module (tax-indirect-tax-15 for indirect-tax decision records).
 
 - id: tax-transfer-pricing-12
   title: "Automated operational TP: intercompany price calculation, segmented P&Ls, invoicing and posting"
@@ -644,7 +641,7 @@
   notes: >-
     Rules-based automation plus robotics, not generative AI. Included because it is the clearest named operational TP
     deployment and shows the prerequisites AI features would sit on. Graded B because there is no quantified result
-    beyond 'hundreds of hours'. Pillar Two interplay with operational TP is routed to the international-pillar-two
+    beyond 'hundreds of hours'. Pillar Two interplay with operational TP is covered in the provision-pillar-two
     module.
 
 - id: tax-transfer-pricing-13
@@ -706,9 +703,8 @@
     - {ref: KPMG-GR-2026, title: "Ensuring Robust, Relevant, and Fit-for-Purpose Transfer Pricing", publisher: KPMG Greece, type: firm, url: "https://kpmg.com/gr/en/insights/2026/03/ensuring-robust-relevant-and-fit-for-purpose-transfer-pricing.html", date: "2026-03-02", access: full, locator: "closing recommendations paragraph"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. No named deployment of AI-based monitoring; Kemira (tax-transfer-pricing-12) is the
-    named non-AI precedent. The governance angle classed this as 'automate'; kept at 'augment' because every source
-    leaves the decision on a flag with the TP team.
+    No named deployment of AI-based monitoring; Kemira (tax-transfer-pricing-12) is the named non-AI precedent. Kept
+    at 'augment', not 'automate', because every source leaves the decision on a flag with the TP team.
 
 - id: tax-transfer-pricing-14
   title: Connected TP knowledge model linking policies, agreements, financials and evidence, with flagged inconsistencies
@@ -813,11 +809,11 @@
     - {ref: REPTUNE-TPMWC-2026, title: "Reptune sponsor profile, TPMinds West Coast", publisher: "Informa Connect / Reptune", type: vendor, url: "https://informaconnect.com/tp-minds-west-coast/sponsors/reptune/", date: "2026", access: full, locator: "'Profile' paragraph (publication date not shown)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. Capability claims and scheduled panels only; no product named for this specific
-    function and no accuracy figure. Reptune says authorities are moving to near real-time data and AI to assess TP
-    continuously (vendor marketing). Authority-side selection itself is tax-controversy-13 (IRS) and
-    tax-controversy-15 (Hungary and other authorities). Overlaps: tax-controversy-05 (EY TP Doc Insights checks TP
-    documentation against public data) and tax-compliance-corporate-13 (pre-filing audit-risk screening of returns).
+    Capability claims and scheduled panels only; no product named for this specific function and no accuracy figure.
+    Reptune says authorities are moving to near real-time data and AI to assess TP continuously (vendor marketing).
+    Authority-side selection itself is tax-controversy-13 (IRS) and tax-controversy-15 (Hungary and other
+    authorities). Overlaps: tax-controversy-05 (EY TP Doc Insights checks TP documentation against public data) and
+    tax-compliance-corporate-13 (pre-filing audit-risk screening of returns).
 
 - id: tax-transfer-pricing-16
   title: "Audit defence: drafting and stress-testing responses to tax-authority queries from prior documentation"
@@ -874,11 +870,10 @@
     - {ref: ABA-TAXTIMES-2026, title: "Transforming compliance risk management (ABA Tax Times report on the AI and TP panel)", publisher: ABA Section of Taxation, type: professional-body, url: "https://www.americanbar.org/groups/taxation/resources/tax-times/2026/transforming-compliance-risk-management/", date: "2026", access: search-only, locator: "search extract only; page blocked"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles. Firm claims and vendor-reported participant practice; no named user or result. A
-    search extract of the ABA Tax Times summary says panelists held that AI may increase speed and scale but does not
-    change the legal framework (search-only; supports nothing on its own). Authority-side AI and the wider dispute
-    process belong to the controversy module; overlaps are tax-controversy-07 (agents draft audit-query responses)
-    and tax-controversy-05.
+    Firm claims and vendor-reported participant practice; no named user or result. A search extract of the ABA Tax
+    Times summary says panelists held that AI may increase speed and scale but does not change the legal framework
+    (search-only; supports nothing on its own). Authority-side AI and the wider dispute process belong to the
+    controversy module; overlaps are tax-controversy-07 (agents draft audit-query responses) and tax-controversy-05.
 
 - id: tax-transfer-pricing-17
   title: AI-assisted economic analysis in TP litigation and expert reports, with disclosure of tools (idea)
@@ -924,10 +919,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Idea (grade D): discussed by an IRS official, an ABA panel and a law-firm commentary; no deployment or measurement
-    found. The IRS remark is reported second-hand by EY. The Riddle Aggregates item was routed here from the
-    research-advisory governance angle; it concerns a valuation expert report, and the source does not say the case is
-    a TP case. Proskauer post dated 29 July 2026 on the page. Overlap: tax-controversy-08 (AI-assisted Tax Court
-    submissions with citation checks).
+    found. The IRS remark is reported second-hand by EY. The Riddle Aggregates item concerns a valuation expert
+    report, and the source does not say the case is a TP case. Proskauer post dated 29 July 2026 on the page. Overlap:
+    tax-controversy-08 (AI-assisted Tax Court submissions with citation checks).
 
 - id: tax-transfer-pricing-18
   title: AI support for APA and MAP preparation, negotiation and outcome prediction (idea)
@@ -970,9 +964,9 @@
     - {ref: TPMINDS-AM-2027, title: "TPMinds Americas 2027 event page (planned session list)", publisher: Informa Connect, type: conference, url: "https://informaconnect.com/tp-minds-americas-conference/", date: "2026-10-17", access: full, locator: "planned session list for the 1-3 March 2027 event (APAs and MAPs session; no AI link stated); page undated, retrieval date used"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea (grade D). Merged from the discourse and governance angles. No APA or MAP deployment of AI was found. The
-    TPMinds Americas 2027 page is undated (retrieval date used; event 1-3 March 2027) and does not tie APAs to AI. The UN draft protocol
-    on dispute prevention (which lists APAs) is routed to international-pillar-two.
+    Idea (grade D). No APA or MAP deployment of AI was found. The TPMinds Americas 2027 page is undated (retrieval
+    date used; event 1-3 March 2027) and does not tie APAs to AI. The UN draft protocol on dispute prevention (which
+    lists APAs) is outside this module.
 
 - id: tax-transfer-pricing-19
   title: TP policy modelling and planning-opportunity screening
@@ -1014,8 +1008,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Kept at C because a firm states that some companies are experimenting, which is a claim of use without a named
-    deployment. Advice on the TP of AI itself (pricing AI tools and AI-generated assets between affiliates) is routed
-    to research-advisory. Overlap: tax-research-advisory-10 (planning-alternative ideation).
+    deployment. Advice on the TP of AI itself (pricing AI tools and AI-generated assets between affiliates) is outside
+    this module (it is advice on AI, not AI in the work). Overlap: tax-research-advisory-10 (planning-alternative
+    ideation).
 
 - id: tax-transfer-pricing-20
   title: AI-use and verification log embedded in TP workpapers (idea)
@@ -1061,9 +1056,8 @@
   notes: >-
     Idea (grade D): recommended by a firm, a regulator alert and a risk framework; no evidence of adoption. Pattern
     'other': a control layer around AI-assisted work. The OPR alert is general to federal tax practice, not
-    TP-specific. ATT-PCRTAI-2026 is the ATT news item; the governance angle called it PCRT-AI-2026, a key another tax
-    file uses for the ICAEW guidance page itself. Same control in other modules: tax-research-advisory-19,
-    tax-compliance-corporate-19 and tax-indirect-tax-15.
+    TP-specific. ATT-PCRTAI-2026 is the ATT news item; PCRT-AI-2026 is the ICAEW guidance page itself. Same control in
+    other modules: tax-research-advisory-19, tax-compliance-corporate-19 and tax-indirect-tax-15.
 
 - id: tax-transfer-pricing-21
   title: Insourcing recurring TP documentation onto a central data platform, with external advisors limited to review
@@ -1146,5 +1140,5 @@
   notes: >-
     Pattern 'other': a platform-plus-experts managed service. Commenda says 'experts do the work; the platform keeps
     it live', and neither provider says which steps AI performs, so the ladder is set at 'augment' rather than
-    'delegate' (the synthesis value) and no agent delivery is claimed.
-    Similar managed-service models: tax-compliance-corporate-15 and tax-indirect-tax-19.
+    'delegate', and no agent delivery is claimed. Similar managed-service models: tax-compliance-corporate-15 and
+    tax-indirect-tax-19.

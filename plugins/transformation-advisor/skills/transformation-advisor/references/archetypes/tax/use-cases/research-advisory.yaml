@@ -289,15 +289,14 @@
     url: https://tools.prnewswire.com/en-us/live/20813/release/20251006EN90727
     date: '2025-10-06'
     access: full
-    locator: release text on Avi research (routed from the tax-data-technology practice deep dive)
+    locator: release text on Avi research
   last_reviewed: '2026-10-17'
   notes: >-
-    Graded B at verification (was A): the before-and-after times are named practitioners' recollections (Barnes
-    Wendling, Sorren) or the vendor's own narrative (Sasserath), published by the vendors that sell the tools; none is
-    a measurement and none is independent, which is why the discourse and governance angles also graded it B. The 700+
-    queries a month is a usage count, not an outcome. Adoption context: Blue J's 2026 survey (1,000 US accountants,
-    12-23 Mar 2026) found 60% work at firms that adopted AI-powered tax research versus 33% in the 2025 edition, with
-    a different sample [BLUEJ-OUTLOOK-2026]. Routed from tax-data-technology: Avalara markets AI tax research for
+    Graded B, not A: the before-and-after times are named practitioners' recollections (Barnes Wendling, Sorren) or
+    the vendor's own narrative (Sasserath), published by the vendors that sell the tools; none is a measurement and
+    none is independent. The 700+ queries a month is a usage count, not an outcome. Adoption context: Blue J's 2026
+    survey (1,000 US accountants, 12-23 Mar 2026) found 60% work at firms that adopted AI-powered tax research versus
+    33% in the 2025 edition, with a different sample [BLUEJ-OUTLOOK-2026]. Avalara markets AI tax research for
     indirect tax, with one accounts-payable user quoted as cutting research time by more than 80% (vendor quote,
     adjacent) [AVALARA-AGENTIC-2025].
 
@@ -459,11 +458,10 @@
     locator: section 'A very bad wizard'
   last_reviewed: '2026-10-17'
   notes: >-
-    The discourse angle classed the Bloomberg and Thomson Reuters modes as delegate; they are placed at augment here
-    because the adviser answers the clarifying questions and reviews each run. Graded B at verification (was A): the
-    speed figure is one named practitioner's estimate quoted by the vendor, not a measured outcome, and not
-    independent. Accordance's claim that it 'outperforms major foundation models' is a vendor statement; no benchmark
-    was published in the pages read.
+    The Bloomberg and Thomson Reuters modes are placed at augment, not delegate, because the adviser answers the
+    clarifying questions and reviews each run. Graded B, not A: the speed figure is one named practitioner's estimate
+    quoted by the vendor, not a measured outcome, and not independent. Accordance's claim that it 'outperforms major
+    foundation models' is a vendor statement; no benchmark was published in the pages read.
 
 - id: tax-research-advisory-03
   title: Research agent that works a question end to end and submits a cited memo-style answer
@@ -555,7 +553,7 @@
       https://www.ey.com/en_in/newsroom/2026/02/ey-india-strengthens-tax-technology-leadership-with-the-launch-of-ai-enabled-enterprise-tax-solutions
     date: '2026-02-18'
     access: full
-    locator: AI Tax Hub paragraph (routed from the indirect-tax practice deep dive)
+    locator: AI Tax Hub paragraph
   - ref: SJSU-TEIHTTI-2025
     title: >-
       AI and Other Emerging Technologies for Tax Practitioners (41st Annual TEI-SJSU High Tech Tax Institute panel deck)
@@ -565,7 +563,7 @@
     date: '2025-11-03'
     access: full
     locator: >-
-      agent demo slides, 'time saved' and 'time to result' (routed from the tax-data-technology discourse deep dive)
+      agent demo slides, 'time saved' and 'time to result'
   - ref: TAXADVISER-WERFEL-2026
     title: A risk framework for AI use in tax administration and preparation (Danny Werfel)
     publisher: The Tax Adviser (AICPA)
@@ -603,12 +601,12 @@
     locator: '''Define the role of early-career professionals'''
   last_reviewed: '2026-10-17'
   notes: >-
-    The governance angle graded this A; the synthesis grades it C because the measured outcome is a benchmark of
-    models in a test harness, not an outcome from a named organization's deployment, and no named organization is
-    shown running a delegate-level research agent in production. Vals sells evaluation services. The panel deck's
-    slides show demo timings for the research memo agent (3 hours saved, 2 minutes to result); these are presenter
-    demo timings, not outcomes, and the deck does not say whether it is in production [SJSU-TEIHTTI-2025]. The EY
-    India hub is an announcement. Related: the KPMG agent platform is tax-research-advisory-24.
+    Graded C because the measured outcome is a benchmark of models in a test harness, not an outcome from a named
+    organization's deployment, and no named organization is shown running a delegate-level research agent in
+    production. Vals sells evaluation services. The panel deck's slides show demo timings for the research memo agent
+    (3 hours saved, 2 minutes to result); these are presenter demo timings, not outcomes, and the deck does not say
+    whether it is in production [SJSU-TEIHTTI-2025]. The EY India hub is an announcement. Related: the KPMG agent
+    platform is tax-research-advisory-24.
 
 - id: tax-research-advisory-04
   title: Specialist multi-jurisdiction and state-by-state research workflow (idea)
@@ -683,8 +681,8 @@
     locator: section on jurisdictional flattening
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea, from governance-16. The measured weakness is real; the specialist-workflow remedy is Vals' suggestion, not
-    a tested result. The Vals narrative about question P-004 may rest on its earlier analysis set.
+    Idea. The measured weakness is real; the specialist-workflow remedy is Vals' suggestion, not a tested result. The
+    Vals narrative about question P-004 may rest on its earlier analysis set.
 
 - id: tax-research-advisory-05
   title: Knowledge assistant over the firm's or department's own memos, precedents and guidance
@@ -940,14 +938,14 @@
     url: https://www2.sjsu.edu/taxinstitute/docs/4D_AI.pdf
     date: '2025-11-03'
     access: full
-    locator: agent demo slides (routed from the tax-data-technology discourse deep dive)
+    locator: agent demo slides
   last_reviewed: '2026-10-17'
   notes: >-
     Sponsor-produced surveys with different samples; do not combine figures. No named in-house department published a
-    research-assistant outcome. Routed from tax-data-technology: a TEI-SJSU panel deck (panellists included OpenAI's
-    tax reporting director) shows a sample Slack Q&A agent with demo timings of 15 minutes saved and under one minute
-    to result; these are presenter timings, not outcomes [SJSU-TEIHTTI-2025]. In-house data pipelines and process
-    automation belong to tax-data-technology.
+    research-assistant outcome. A TEI-SJSU panel deck (panellists included OpenAI's tax reporting director) shows a
+    sample Slack Q&A agent with demo timings of 15 minutes saved and under one minute to result; these are presenter
+    timings, not outcomes [SJSU-TEIHTTI-2025]. In-house data pipelines and process automation belong to the
+    data-technology module.
 
 - id: tax-research-advisory-07
   title: Firm-wide standard on approved, closed research assistants, with a named tax AI owner and governance
@@ -1338,9 +1336,9 @@
     locator: objectivity risk table
   last_reviewed: '2026-10-17'
   notes: >-
-    Graded B at verification (was A): the speed figure is one named shareholder's estimate ('maybe two or two and a
-    half') quoted by the vendor, not a measured outcome, and not independent. The firm trialled the tool beside its
-    existing platform with a five-person tax team in April 2025.
+    Graded B, not A: the speed figure is one named shareholder's estimate ('maybe two or two and a half') quoted by
+    the vendor, not a measured outcome, and not independent. The firm trialled the tool beside its existing platform
+    with a five-person tax team in April 2025.
 
 - id: tax-research-advisory-10
   title: Planning-alternative ideation and anti-abuse screening of structures (idea)
@@ -1442,9 +1440,9 @@
     locator: section 'Quality'
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea. Merged from practice-17, discourse-09 and governance-06. Only the paper's abstract was read. Tax-authority
-    use of the same capability is routed to controversy. A Deloitte survey line on AI for tax planning was seen in search
-    extracts only and is not used.
+    Idea. Only the paper's abstract was read. Tax-authority use of the same capability is covered in the controversy
+    module (tax-controversy-25). A Deloitte survey line on AI for tax planning was seen in search extracts only and is
+    not used.
 
 - id: tax-research-advisory-11
   title: >-
@@ -1538,8 +1536,8 @@
     locator: Tool Use
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea. Merged from discourse-08 and governance-12 (both use AI to challenge an answer before reliance). A Becker CPE
-    course on comparing tool outputs was seen in a search extract only and is not used.
+    Idea. Both parts use AI to challenge an answer before reliance. A Becker CPE course on comparing tool outputs was
+    seen in a search extract only and is not used.
 
 - id: tax-research-advisory-12
   title: 'Auditable computation in advice: the model translates rules, a deterministic engine calculates'
@@ -1928,9 +1926,9 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Named deployments and pilots without a drafting-specific measurement. Tolley (2024) is outside the window and used
-    as foundation. Related idea from the governance angle (not a separate entry): PCRT uses AI meeting transcription
-    feeding the factual section of an advice note as a worked scenario and says minutes must be reviewed for
-    completeness and accuracy [PCRT-AI-2026]. Drafting responses to IRS notices is routed to controversy.
+    as foundation. Related idea (not a separate entry): PCRT uses AI meeting transcription feeding the factual section
+    of an advice note as a worked scenario and says minutes must be reviewed for completeness and accuracy
+    [PCRT-AI-2026]. Drafting responses to IRS notices is tax-controversy-02.
 
 - id: tax-research-advisory-15
   title: >-
@@ -1987,7 +1985,6 @@
     Sala argues AI cannot shoulder the regulatory, ethical or financial consequences of culpability [SALA-TAXNOTES-2026]
   - >-
     No authority was found on whether AI-generated advice can support a reasonable-cause or preparer-penalty defence
-    (governance-angle search)
   human_checkpoints:
   - >-
     Signing professional owns the conclusion and verifies law, facts and every cited authority; opinion committee or
@@ -2052,9 +2049,9 @@
     locator: Performance by Category
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea. Merged from discourse-07, governance-13 and practice-16. No firm describes an AI-drafted opinion in production.
-    Sala's question would change the sourcing model (in-house direction instead of an external opinion) if it came true;
-    only an abstract and excerpt were read. Siva's Heppner reference (privilege waiver) was not checked against the case.
+    Idea. No firm describes an AI-drafted opinion in production. Sala's question would change the sourcing model
+    (in-house direction instead of an external opinion) if it came true; only an abstract and excerpt were read.
+    Siva's Heppner reference (privilege waiver) was not checked against the case.
 
 - id: tax-research-advisory-16
   title: Answering client questions during the call instead of researching and calling back
@@ -2266,8 +2263,8 @@
     locator: opening paragraphs
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea, from governance-09. The 39% to 47% figure is for ChatGPT 3.5 and 4 in 2023-24, not a governed firm assistant;
-    it shows why scope and escalation matter.
+    Idea. The 39% to 47% figure is for ChatGPT 3.5 and 4 in 2023-24, not a governed firm assistant; it shows why scope
+    and escalation matter.
 
 - id: tax-research-advisory-18
   title: >-
@@ -2363,8 +2360,8 @@
     locator: search extract only; not opened
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea. Merged from discourse-16 and governance-15. The Pearl.com and Taxpayer Advocate figures quoted in the CPA Practice
-    Advisor piece are second-hand and not used. The AccountingWEB Elden item is search-only.
+    Idea. The Pearl.com and Taxpayer Advocate figures quoted in the CPA Practice Advisor piece are second-hand and not
+    used. The AccountingWEB Elden item is search-only.
 
 - id: tax-research-advisory-19
   title: Citation verification and an AI-use record as a standing review step
@@ -2395,8 +2392,8 @@
     description: Decisions worldwide in which a court or tribunal addressed hallucinated content by a party
     figure: 2,199 (as of 16 Oct 2026)
     measures: >-
-      Decisions in all areas of law listed in the database header; not tax-only and not a rate (the governance angle
-      counted 25 rows tagged tax)
+      Decisions in all areas of law listed in the database header; not tax-only and not a rate (25 rows are
+      tagged tax)
     provenance: independent
     source_ref: CHARLOTIN-DB-2026
   - lever: risk
@@ -2479,7 +2476,7 @@
       https://www.wolterskluwer.com/en/expert-insights/how-controllers-and-corporate-tax-leaders-can-use-ai-for-faster-defensible-tax-returns
     date: '2026-04-02'
     access: full
-    locator: documentation guidance (routed from the compliance-corporate discourse deep dive)
+    locator: documentation guidance
   - ref: IRS-OPR-2026
     title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)
     publisher: IRS Office of Professional Responsibility
@@ -2568,11 +2565,11 @@
     locator: introduction ('nearly 800 cases'); paragraph on sanctions (about 90% without formal professional sanctions)
   last_reviewed: '2026-10-17'
   notes: >-
-    Governance-14's idea, tooling that captures prompts, tools, sources and sign-offs automatically and attaches them
-    to the engagement file, has no deployment and is kept here as a note; the UK tribunal in Elden ordered statements
-    of truth about AI use (Charlotin outcome field, not checked against the judgment) [CHARLOTIN-DB-2026]. A Texas
+    A further idea, tooling that captures prompts, tools, sources and sign-offs automatically and attaches them to the
+    engagement file, has no deployment and is kept here as a note; the UK tribunal in Elden ordered statements of
+    truth about AI use (Charlotin outcome field, not checked against the judgment) [CHARLOTIN-DB-2026]. A Texas
     A&M-affiliated preprint (not peer reviewed) carries the same 'nearly 800' wording; the journal attribution is
-    unverified. Clinco and other court records are routed to controversy for litigation conduct.
+    unverified. Clinco and other court records as litigation conduct are tax-controversy-08.
 
 - id: tax-research-advisory-20
   title: Automated check that every cited authority exists and supports the point, before release

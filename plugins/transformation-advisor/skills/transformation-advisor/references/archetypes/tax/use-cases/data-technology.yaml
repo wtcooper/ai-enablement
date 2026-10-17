@@ -303,8 +303,8 @@
   notes: >-
     No named customer; Thomson Reuters describes a goal and Deloitte a scenario step, so maturity is announced. The
     ledger-to-tax mapping step inside corporate compliance is tax-compliance-corporate-01 and year-on-year anomaly
-    flags on returns are tax-compliance-corporate-03; this entry records the data layer that feeds the engines.
-    Provision and Pillar Two parts of the Kognitos argument are routed to those modules.
+    flags on returns are tax-compliance-corporate-03; this entry records the data layer that feeds the engines. The
+    provision and Pillar Two parts of the Kognitos argument are covered in the provision-pillar-two module.
 - id: tax-data-technology-03
   title: Agent keeps tax-engine configuration in sync with ERP master-data changes, with review checkpoints for high-impact
     changes
@@ -738,10 +738,10 @@
     locator: Responsibilities bullets 1 and 3
   last_reviewed: '2026-10-17'
   notes: >-
-    Graded C: the governance angle proposed B on OpenAI's live demonstration, but a demonstration is not a production
-    claim and the practitioners behind the 15-minute figure are unnamed; OpenAI's team is recorded separately in
-    tax-data-technology-22. The same practice is recorded for return work as tax-compliance-corporate-17; this entry
-    covers the data-platform and control side.
+    Graded C, not B: OpenAI's live demonstration is a demonstration, not a production claim and the practitioners
+    behind the 15-minute figure are unnamed; OpenAI's team is recorded separately in tax-data-technology-22. The same
+    practice is recorded for return work as tax-compliance-corporate-17; this entry covers the data-platform and
+    control side.
 - id: tax-data-technology-08
   title: 'Tax automations run as controlled assets: version control, sign-off before production, evidence logs, run history
     and drift monitoring'
@@ -1021,9 +1021,11 @@
     access: full
     locator: Section 'A very bad wizard'
   last_reviewed: '2026-10-17'
-  notes: 'Idea, from discourse-13; no deployment found. OpenAI''s slides show agent demos labelled ''time saved'' (for example
-    a research memo agent: 3 hours saved); these are presenter demonstration timings, not outcomes, and the research agents
-    are routed to research-advisory. Firm agent platforms that host such workflows are tax-compliance-corporate-08.'
+  notes: >-
+    Idea; no deployment found. OpenAI's slides show agent demos labelled 'time saved' (for example a research memo
+    agent: 3 hours saved); these are presenter demonstration timings, not outcomes, and the research agents are
+    covered in the research-advisory module (tax-research-advisory-03). Firm agent platforms that host such workflows
+    are tax-compliance-corporate-08.
 - id: tax-data-technology-11
   title: AI extraction of tax notices and source documents into structured tax data, with independent verification of extracted
     values
@@ -1497,7 +1499,7 @@
     locator: '''ERP integration becomes the real bottleneck'''
   last_reviewed: '2026-10-17'
   notes: >-
-    The e-invoicing engines and rejection handling are recorded from the indirect-tax angle as tax-indirect-tax-08;
+    The e-invoicing engines and rejection handling are recorded in the indirect-tax module as tax-indirect-tax-08;
     this entry keeps the ERP-to-format mapping and data-quality side. The AI contribution to the France figure is not
     isolated in any source. Roedl's article does not discuss AI.
 - id: tax-data-technology-15
@@ -1663,9 +1665,10 @@
     access: full
     locator: '''Continuous transaction controls as an operating model'''
   last_reviewed: '2026-10-17'
-  notes: 'Idea. Merged from practice-10, discourse-11 and governance-03, all labelled ideas. No source says AI performs the
-    full reconciliation and no deployment was found; the ladder describes the idea as written. Related: pre-filing audit-exposure
-    review against third-party data, tax-controversy-04; preventive controls and real-time exchange, tax-controversy-12.'
+  notes: >-
+    Idea. No source says AI performs the full reconciliation and no deployment was found; the ladder describes the
+    idea as written. Related: pre-filing audit-exposure review against third-party data, tax-controversy-04;
+    preventive controls and real-time exchange, tax-controversy-12.
 - id: tax-data-technology-17
   title: Read-only MCP access lets general AI assistants answer questions from the company's own tax-compliance data
   archetype: tax
@@ -1909,9 +1912,9 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Vendor-only evidence: no customer, partner or in-house team was found using a tax MCP server, so maturity is
-    announced. The landscape said Sovos 'added MCP and A2A interoperability'; the release says the gateway is being
-    developed and A2A is expected. Thomson Reuters ONESOURCE MCP support was not found. The determination-engine side
-    is tax-indirect-tax-16; this entry covers the interoperability and access controls. TaxCalcBench is adjacent
+    announced. Secondary coverage said Sovos 'added MCP and A2A interoperability'; the release says the gateway is
+    being developed and A2A is expected. Thomson Reuters ONESOURCE MCP support was not found. The determination-engine
+    side is tax-indirect-tax-16; this entry covers the interoperability and access controls. TaxCalcBench is adjacent
     evidence (individual returns, vendor authors); computation routed to deterministic engines is recorded as
     tax-compliance-individual-business-10 and tax-compliance-corporate-22.
 - id: tax-data-technology-19
@@ -2335,11 +2338,10 @@
   last_reviewed: '2026-10-17'
   notes: >-
     Three OpenAI postings (2025-01, 2026-03, 2026-04) show the direction; they state intent and self-description, not
-    independently observed practice, and give no outcome measures. Maturity set to piloting (practice said in
-    production) to match tax-compliance-corporate-07, which records the same team's move to agent-driven return
-    computation. The landscape's 'four people' shorthand is not supported: the recap says four members were sent, not
-    the department's size. Pattern 'other': tax staff become builders and first-level reviewers of automated
-    pipelines.
+    independently observed practice, and give no outcome measures. Maturity is set to piloting to match
+    tax-compliance-corporate-07, which records the same team's move to agent-driven return computation. A 'four
+    people' shorthand for the department is not supported: the recap says four members were sent, not the department's
+    size. Pattern 'other': tax staff become builders and first-level reviewers of automated pipelines.
 - id: tax-data-technology-23
   title: Central tax operations and technology team, built with finance and IT, owns tax data, automation and AI
   archetype: tax

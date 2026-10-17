@@ -78,7 +78,7 @@
     does not say whether the model is in production. The commercial-tool figures are vendor claims at grade C level.
     Maturity is piloting: Vertex says customers have moved to production but names none. Thomson Reuters's 94/81/67%
     confidence figures in its blog illustrate the output format and are not measured accuracy. Harmonized System
-    (customs) classification evidence is routed to tax-data-technology or a customs sub-topic.
+    (customs) classification is outside this module.
 
 - id: tax-indirect-tax-02
   title: Agent-prepared sales and use tax and VAT returns, filed only after human approval
@@ -145,10 +145,10 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Maturity is piloting: Thomson Reuters says the product is available now, but the public evidence is unnamed early
-    customers (Thomson Reuters), early-access programmes (Avalara) and proof-of-concept work (Deloitte). Thomson Reuters
-    figures disagree between releases (40-60% vs up to 65%). Avalara's 9 Apr 2026 "AI-executed" release could not be
-    opened (search-only in the landscape). The governance angle graded this augment; delegate is used because the agent
-    owns import-to-filing with an approval checkpoint.
+    customers (Thomson Reuters), early-access programmes (Avalara) and proof-of-concept work (Deloitte). Thomson
+    Reuters figures disagree between releases (40-60% vs up to 65%). Avalara's 9 Apr 2026 "AI-executed" release could
+    not be opened (search-only) and is not used. Ladder is delegate, not augment, because the agent owns
+    import-to-filing with an approval checkpoint.
 
 - id: tax-indirect-tax-03
   title: AI validation and routing of exemption certificates as they arrive
@@ -441,8 +441,8 @@
     - {ref: INNOVATETAX-VXE-2026, title: "What we learned from Vertex Exchange Europe 2026", publisher: "Innovate Tax", type: conference, url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/", date: "2026-05-06", access: full, locator: "section 'Master data came up a lot'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    The discourse angle graded this delegate/process; augment/step is used because each correction needs a user's
-    approval. The 1.6% figure is adjacent to, not a measure of, AI diagnosis. Sovos's transaction volume differs between
+    Ladder and scope are augment and step, not delegate and process, because each correction needs a user's approval.
+    The 1.6% figure is adjacent to, not a measure of, AI diagnosis. Sovos's transaction volume differs between
     releases ('nearly 20 billion' a year in March 2026; 'more than 70 billion' in Aug and Sep 2026). Overlaps
     tax-data-technology research entries on e-invoicing remediation.
 
@@ -492,10 +492,10 @@
     - {ref: INNOVATETAX-VXE-2026, title: "What we learned from Vertex Exchange Europe 2026", publisher: "Innovate Tax", type: conference, url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/", date: "2026-05-06", access: full, locator: "section 'AI is becoming a default expectation'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    No customer, usage or accuracy data found for any of these monitoring products. The discourse file titles the Fonoa
-    page 'The Math No Longer Works for Indirect Tax Regulatory Change Monitoring' (same URL). Overlaps
-    tax-research-advisory-23 and tax-compliance-corporate-12 (law and rule-change monitoring); this one is indirect-tax
-    specific (e-invoicing mandates, rates, nexus).
+    No customer, usage or accuracy data found for any of these monitoring products. The Fonoa page at the same URL is
+    also titled 'The Math No Longer Works for Indirect Tax Regulatory Change Monitoring'. Overlaps
+    tax-research-advisory-23 and tax-compliance-corporate-12 (law and rule-change monitoring); this one is
+    indirect-tax specific (e-invoicing mandates, rates, nexus).
 
 - id: tax-indirect-tax-10
   title: AI extraction and enrichment of invoice, receipt and expense data for VAT recovery and e-invoicing onboarding
@@ -805,10 +805,10 @@
     - {ref: OPENAI-JOB-2026, title: "Indirect Tax Technology Manager (OpenAI)", publisher: "Stripes job board (OpenAI posting)", type: job-posting, url: "https://jobs.stripes.co/companies/openai/jobs/78936040-indirect-tax-technology-manager", date: "2026-05-15", access: full, locator: "responsibilities: support indirect tax audits with transaction-level data gathering, reconciliations and system documentation"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Pattern 'other': decision logging and evidence assembly. Merges three angles (practice augment, discourse augment,
-    governance assist). Fonoa's full report is gated; figures come from its landing page and blog. The OpenAI posting
-    does not mention AI doing audit work. Overlaps the AI-use records in tax-compliance-corporate-19,
-    tax-research-advisory-19 and tax-transfer-pricing-20; this one is specific to indirect-tax determinations.
+    Pattern 'other': decision logging and evidence assembly. Fonoa's full report is gated; figures come from its
+    landing page and blog. The OpenAI posting does not mention AI doing audit work. Overlaps the AI-use records in
+    tax-compliance-corporate-19, tax-research-advisory-19 and tax-transfer-pricing-20; this one is specific to
+    indirect-tax determinations.
 
 - id: tax-indirect-tax-16
   title: Tax engines callable by customers' own AI agents through MCP, agent-to-agent protocols and APIs
@@ -915,11 +915,11 @@
     - {ref: BTAX-OECDVAT-2026, title: "OECD Identifies Crypto and AI As Challenges to VAT Systems (opening paragraphs; rest paywalled)", publisher: "Bloomberg Tax", type: press, url: "https://news.bloombergtax.com/daily-tax-report-international/oecd-identifies-crypto-and-ai-as-challenges-to-vat-systems", date: "2026-01-29", access: full, locator: "opening paragraphs"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Angles disagreed on grade (practice D, discourse C, governance B). C is used: the Shopify design is the Sales Tax
-    Institute's second-hand description, not verified with Shopify, and no organization reports tax handling in agent
-    checkout. The McKinsey estimate of $3-5 trillion in agent-orchestrated sales by 2030 is relayed by Bloomberg Tax and
-    was not checked. Visa, Mastercard and American Express agentic commerce announcements are relayed by the Sales Tax
-    Institute, unverified. Taxability of AI products themselves is tax on AI, not AI in tax work, and is kept as context.
+    Graded C: the Shopify design is the Sales Tax Institute's second-hand description, not verified with Shopify, and
+    no organization reports tax handling in agent checkout. The McKinsey estimate of $3-5 trillion in
+    agent-orchestrated sales by 2030 is relayed by Bloomberg Tax and was not checked. Visa, Mastercard and American
+    Express agentic commerce announcements are relayed by the Sales Tax Institute, unverified. Taxability of AI
+    products themselves is tax on AI, not AI in tax work, and is kept as context.
 
 - id: tax-indirect-tax-18
   title: Compliance-by-design finance agents that embed VAT and e-invoicing rules in AP, procure-to-pay and invoicing
@@ -1057,11 +1057,11 @@
     - {ref: TR-INSTITUTE-2025, title: "AI and the indirect tax department: From compliance to strategy", publisher: "Thomson Reuters Institute", type: vendor, url: "https://www.thomsonreuters.com/en/institute/articles/ai-indirect-tax", date: "2025-09-17", access: full, locator: "section 'Elevating your profile'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Grade B rests on one employer's job posting, a weak real-use signal, so no outcome is claimed. The posting date was
-    not shown; 2026-05 is the month the job was removed. Merges the practice job-posting entry with the governance
-    sanctioned-workspace idea. Thomson Reuters's 65% GenAI use and 26% ROI measurement figures have undefined
-    denominators. Tax-analyst-built pipelines ('vibe coding') are tax-compliance-corporate-17; approved enterprise
-    tools for return data are tax-compliance-corporate-20.
+    Grade B rests on one employer's job posting, a weak real-use signal, so no outcome is claimed. The posting date
+    was not shown; 2026-05 is the month the job was removed. The sanctioned-workspace part is an idea. Thomson
+    Reuters's 65% GenAI use and 26% ROI measurement figures have undefined denominators. Tax-analyst-built pipelines
+    ('vibe coding') are tax-compliance-corporate-17; approved enterprise tools for return data are
+    tax-compliance-corporate-20.
 
 - id: tax-indirect-tax-21
   title: Ongoing indirect-tax exposure, accrual and scenario analysis by agents (idea)
