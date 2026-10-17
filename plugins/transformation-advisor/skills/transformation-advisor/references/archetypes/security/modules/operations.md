@@ -285,6 +285,6 @@ Keys cited above that are not in the YAML (all others are given in full there):
 - USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs", USENIX Security 2026, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai
 - IBM-CODB-2026: IBM and Ponemon, Cost of a Data Breach Report 2026, 2026-07, https://www.ibm.com/reports/data-breach
 - SACR-AISOCMKT-2026: Software Analyst Cyber Research, "The AI SOC Market, 2026", 2026-07-30, https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-the-ai
-- CAUCHY-IRNOTEBOOKS-2026 (CAUCHY-IRNB-2026 in the operations inputs): DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (the use case itself is security-incident-response-07)
+- CAUCHY-IRNOTEBOOKS-2026: DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (CAUCHY-IRNB-2026 in the operations inputs; the use case is security-incident-response-07)
 - DROPZONE-JD2030-2026: Dropzone AI, "SOC Analyst Job Description: Rewriting It for 2030", 2026-05-13, https://www.dropzone.ai/blog/soc-analyst-job-description-2030
 - RESILIENTCYBER-FASTER-2026: Resilient Cyber, "Faster to the Wrong Answer" (partner content with Censys), 2026-10-14, https://www.resilientcyber.io/p/faster-to-the-wrong-answer

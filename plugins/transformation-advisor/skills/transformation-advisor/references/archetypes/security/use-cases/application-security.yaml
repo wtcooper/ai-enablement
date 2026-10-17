@@ -30,8 +30,8 @@
     human experts focus on complex architectural decisions. Anthropic's application security team lists AI-assisted
     threat modelling that generates intake questions, drafts the model and recommends which design reviews need a
     human; MongoDB's assessments team lists AI-based analysis for threat modelling. Cloudflare runs a spec reviewer
-    agent over design specifications before implementation, against its codified engineering standards (see -04).
-    Mandiant's discovery harness generates a threat model that a consultant approves before analysis continues (see -11).
+    agent over design specifications before implementation, against its codified engineering standards (see -05).
+    Mandiant's discovery harness generates a threat model that a consultant approves before analysis continues (see security-vulnerability-exposure-04).
   outcomes:
     - {lever: speed, description: "Security review duration in Stripe's self-service agent workflow", figure: "from weeks to minutes", measures: "Stripe's description in a conference abstract; no sample, baseline or definition of a review is given", provenance: self-reported, source_ref: UNPROMPTED-2026}
     - {lever: capacity, description: "Design specifications reviewed by Cloudflare's spec reviewer agent since May 2026", figure: "close to 600 unique specs; over 3,200 review invocations", measures: "unique open specs reviewed and review invocations; findings were rated major 65%, minor 29%, critical 6%", provenance: self-reported, source_ref: CLOUDFLARE-CODEX-2026}
@@ -258,7 +258,7 @@
     governance angles: agentic PR review, Cloudflare code review, maintainers' review bots and the separate AI
     reviewer pass over AI-generated code.
 
-- id: security-application-security-NEWCODEX
+- id: security-application-security-05
   title: Engineering standards rewritten as machine-readable rules that review agents enforce
   archetype: security
   module: application-security
@@ -302,7 +302,7 @@
     measurement is adjacent to security. The incident report reviewer in the same post is in incident-response
     (security-incident-response-16 uses the same source).
 
-- id: security-application-security-05
+- id: security-application-security-06
   title: Risk-tiered automated review that lands low-risk code changes without a human reviewer
   archetype: security
   module: application-security
@@ -350,7 +350,7 @@
     Grade capped at B: general code review with revert and incident outcomes, not security-specific review. Only the
     arXiv abstract was read. Merged from all three angles.
 
-- id: security-application-security-06
+- id: security-application-security-07
   title: Pre-submit agentic security scanning of every code change, with a reachability-proving triage agent
   archetype: security
   module: application-security
@@ -371,7 +371,7 @@
     metadata and a cross-package call graph. A specialised triage agent validates the quick scan's findings using
     abstract syntax tree (AST) parsing, call-graph traversal and pre-indexed safety rules to test whether the
     vulnerable path is reachable. A nightly post-submit scan is a second layer. A bug-fix agent drafts fixes for
-    human review inside the original change request (see -16).
+    human review inside the original change request (see -12).
   outcomes:
     - {lever: quality, description: "Triage agent precision and turnaround", figure: "over 92% precision; under one minute", measures: "precision of the triage agent's reachability verdicts as stated by Google; numerator, denominator and sample are not given; time is the agent's completion time", provenance: self-reported, source_ref: GOOGLE-AGENTICSCAN-2026}
     - {lever: quality, description: "False-positive rate with localized threat models", figure: "3% 'in some cases'", measures: "false-positive rate of the scanning agents in some cases, as stated; no denominator, baseline or number of cases", provenance: self-reported, source_ref: GOOGLE-AGENTICSCAN-2026}
@@ -404,7 +404,7 @@
     angles, including the governance angle's separate triage-agent entry. The same deployment also appears in the
     vulnerability-exposure research, which names this module as its primary home.
 
-- id: security-application-security-07
+- id: security-application-security-08
   title: Reasoning-based AI code scanning alongside rule-based static analysis
   archetype: security
   module: application-security
@@ -445,7 +445,7 @@
     - "Single model calls missed CVEs in AISLE's study, which is why findings were accumulated over four runs (AISLE-SAST-2026)"
     - "Semgrep notes that newer models are not reliably better at finding IDORs (SEMGREP-IDOR-2026)"
     - "Familiar-pattern attacks on LLM static analysis transfer across OpenAI, Anthropic and Google models and remain effective when models are warned (NDSS-FPA-2026, abstract)"
-    - "Memorised benchmarks can inflate results (see -24); Semgrep's design partners are unnamed (SEMGREP-AGENTICWF-2026)"
+    - "Memorised benchmarks can inflate results (see -16); Semgrep's design partners are unnamed (SEMGREP-AGENTICWF-2026)"
   human_checkpoints:
     - "An analyst or developer reviews validated findings and approves patches (ANTHROPIC-CCS-2026; OPENAI-CODEXSEC-2026)"
     - "The researcher reviews the stored results and reports only confirmed vulnerabilities (GITHUB-ANDROID-2026)"
@@ -477,7 +477,7 @@
     cloud-infrastructure. Merged: reasoning-based scanning (practice), LLM analysis versus SAST and IDOR detection
     (discourse), and the GitHub Android taskflows (practice).
 
-- id: security-application-security-08
+- id: security-application-security-09
   title: Reachability-first triage and closure tracking for AI-generated vulnerability candidates
   archetype: security
   module: application-security
@@ -497,7 +497,7 @@
     reasons, explicit ownership, detector replay, and a refusal to auto-patch bug classes that cannot be validated
     cheaply. Opened, reviewed and fixed are kept as separate states. OpenAI's Codex Security documentation offers a
     task to triage an existing backlog from another scanner or issue tracker, and Google's triage agent proves
-    reachability before a finding reaches a developer (see -06).
+    reachability before a finding reaches a developer (see -07).
   outcomes:
     - {lever: quality, description: "Operating-loop results", figure: "none published", measures: "the abstract lists the loop's components but no measured results", provenance: self-reported, source_ref: UNPROMPTED-2026}
   prerequisites:
@@ -527,8 +527,8 @@
     industry paper on LLM filtering of static-analysis false positives was seen only in search results; its figures
     are unverified and not used.
 
-- id: security-application-security-09
-  title: Agentic dynamic testing that proves exploitability against running applications
+- id: security-application-security-10
+  title: Validator-gated agentic testing of an organisation's own running web applications
   archetype: security
   module: application-security
   function: technology-it
@@ -539,161 +539,49 @@
   runtime_class: background-agent
   maturity: in-production
   problem: >-
-    LLM code scanners flood security teams with unverified hypotheses, so a real flaw is hard to tell from a
-    convincing hallucination. Scanners report candidates without proof that an attacker can exploit or chain them,
-    and periodic penetration tests leave long untested periods.
+    LLM code scanners flood security teams with unverified hypotheses ('AI slop'), so a real flaw is hard to tell from
+    a convincing hallucination, and code-reading scanners report candidates without proof that they can be exploited
+    or chained.
   solution: >-
-    Google's product security team runs PageBreak, an internal agent that hypothesises web flaws and passes each
-    hypothesis to a validator that is not written by AI and that confirms the flaw against a running environment
-    with a deterministic signal. Findings that cannot be confirmed are kept as seeds for later scans and for building
-    new validators; they are not sent to product teams. The agent is run repeatedly with identical seeds. Vendors
-    sell the same shape: AWS Security Agent (now part of AWS Continuum) maps the attack surface, has specialist agents
-    raise candidates and a validator confirm or reject each before exploitation; Snyk describes continuous offensive
-    testing of a running application; XBOW agents log in as each role to map what it may do before testing
-    authorization (reported by tl;dr sec). A PortSwigger researcher's system generated attack ideas from fragments of
-    specifications and tested them continuously against live bug-bounty targets.
+    Google's product security team runs PageBreak, an internal agent that hypothesises web flaws in Google's own
+    applications and passes each hypothesis to a validator that is not written by AI and that confirms the flaw
+    against a running environment with a deterministic signal. Findings that cannot be confirmed are kept as seeds for
+    later scans and for building new validators; they are not sent to product teams. The agent is run repeatedly with
+    identical seeds to raise the chance of finding the path. Snyk describes the same idea as a product: continuous
+    offensive testing of a running application to prove exploit chains rather than list findings. Vendor
+    autonomous-pentest agents run against external targets (AWS Security Agent, XBOW) are covered in
+    security-vulnerability-exposure-17 and security-vulnerability-exposure-18.
   outcomes:
     - {lever: quality, description: "Cross-site scripting (XSS) flaws found by PageBreak in Google's first-party web applications since a November 2025 pilot (full project from January 2026)", figure: "over 500", measures: "XSS vulnerabilities, each confirmed by a deterministic validator; severity and application names not given", provenance: self-reported, source_ref: GOOGLE-PAGEBREAK-2026}
     - {lever: risk, description: "XSS found in applications built on Google's high-assurance web framework", figure: "2 across hundreds of applications as of 2026-09-04", measures: "XSS found by the scanner in framework-based applications; both were in internal applications or debug endpoints with hardening gaps", provenance: self-reported, source_ref: GOOGLE-PAGEBREAK-2026}
-    - {lever: quality, description: "AWS Security Agent on its own audited benchmark of recent CVEs", figure: "33 of 37 (89.2%)", measures: "2025-2026 CVEs packaged as live targets where the agent captured the flag through the intended vulnerability after a per-sample audit; one run, 10-hour limit; two captures reclassified as off-path count as unsolved", provenance: vendor-published, source_ref: AWS-SECAGENT-2026}
-    - {lever: quality, description: "AWS validator filtering of the agent's own findings", figure: "159 auto-labelled false positives of 475 surfaced findings; over 1,200 more de-duplicated", measures: "validator labels across the run, not precision measured against ground truth", provenance: vendor-published, source_ref: AWS-SECAGENT-2026}
     - {lever: quality, description: "Snyk's dynamic tester versus a code-only scan on a deliberately vulnerable app", figure: "10 of 15 exploit chains confirmed; severity-weighted detection 75.7% versus 49.6%", measures: "points found out of 938 against a fixed answer key (57 vulnerabilities, 15 chains); a dynamic tester against a white-box code scanner, so not like for like", provenance: vendor-published, source_ref: SNYK-CHAINS-2026}
-    - {lever: growth, description: "New attack technique research (PortSwigger)", figure: "about 15,000 specification fragments from 138 specifications; 30,000 vectors tested against 30,000 websites", measures: "tl;dr sec's summary of the researcher's write-up; the DEF CON abstract says the resulting exploits compromised banks, security vendors and government infrastructure", provenance: self-reported, source_ref: TLDRSEC-346-2026}
   prerequisites:
-    - "Running test environments the validators can attack, and validators written per vulnerability class"
+    - "Running test environments the validators can attack, and validators written per vulnerability class and attack surface"
     - "Google credits a mono-repo, live HTTP traffic mapped to source lines and an existing authenticated scanner for PageBreak's effectiveness"
-    - "Isolated sandboxes or non-production targets, and non-destructive guardrails for production use"
-    - "Targets that permit testing, such as bug-bounty programmes"
   risks_and_guardrails:
-    - "Google says validators do not yet cover all vulnerability types, so false negatives are possible (GOOGLE-PAGEBREAK-2026, 'Internal Feedback Loop')"
-    - "In both AWS misses the agent exploited the bug and took the target down; AWS says non-destructive guardrails govern production engagements (AWS-SECAGENT-2026)"
-    - "The agent bypassed the intended vulnerability in 2 of 37 challenges, which is why AWS audited every win; AWS calls the benchmark contamination-reduced, not contamination-free, and it covers known-CVE reproduction, not novel discovery (AWS-SECAGENT-2026)"
-    - "The PortSwigger researcher says neither he nor the system would have found the best new technique alone (TLDRSEC-346-2026)"
+    - "Validators are not written by the AI; Google says they do not yet cover all vulnerability types, so false negatives are possible (GOOGLE-PAGEBREAK-2026, 'Internal Feedback Loop')"
+    - "Models can wander into unproductive paths, so agents run with identical seeds across many iterations (GOOGLE-PAGEBREAK-2026, 'The present and the future')"
+    - "Agents that exploit live targets can take them down; AWS's agent did so in both of its benchmark misses (AWS-SECAGENT-2026; see security-vulnerability-exposure-17)"
   human_checkpoints:
-    - "Only deterministically validated findings go to product teams (GOOGLE-PAGEBREAK-2026)"
-    - "Per-win integrity audit by people and tooling, benchmark only; checkpoints for customer engagements are not stated (AWS-SECAGENT-2026)"
-    - "The PortSwigger researcher validated the key idea manually (TLDRSEC-346-2026)"
+    - "Only deterministically validated findings go to product teams; unverified candidates are withheld (GOOGLE-PAGEBREAK-2026)"
   role_evolution: >-
-    Google's post describes product security staff building validators and agent tooling (GOOGLE-PAGEBREAK-2026). The
-    DEF CON abstract promises a blueprint for turning personal expertise into an autonomous research cascade
-    (DEFCON-34-2026).
+    Not described beyond product security staff building validators and agent tooling (GOOGLE-PAGEBREAK-2026).
   evidence_grade: A
   sources:
     - {ref: GOOGLE-PAGEBREAK-2026, title: "Agentic Hacks, Real Proofs: Inside Google's PageBreak Project", publisher: "Google (Michal Bentkowski, Information Security Engineer)", type: firm, url: "https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project/", date: "2026-09-24", access: full, locator: "Sections 'Security landscape in 2026', 'How Agent Validators Work', 'PageBreak vs a High-Assurance Framework'"}
-    - {ref: AWS-SECAGENT-2026, title: "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", publisher: "AWS Security Blog", type: vendor, url: "https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/", date: "2026-10-15", access: full, locator: "Summary results; benchmark design; finding validation; integrity audit"}
+    - {ref: TLDRSEC-348-2026, title: "[tl;dr sec] #348 - Google's PageBreak Scanner, Perplexity's Agent Security Tool, Defending Agentically", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-348", date: "2026-10-01", access: full, locator: "AppSec section, PageBreak item"}
     - {ref: SNYK-CHAINS-2026, title: "Finding Vulnerabilities Isn't Proving Exploit Chains", publisher: "Snyk", type: vendor, url: "https://snyk.io/blog/frontier-models-vulnerabilities-attacker-chains/", date: "2026-10-07", access: full, locator: "'The results' table"}
-    - {ref: TLDRSEC-349-2026, title: "[tl;dr sec] #349 - Vulns & Exploits in the AI Era", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-349", date: "2026-10-08", access: full, locator: "AppSec section, XBOW IDOR item"}
-    - {ref: TLDRSEC-346-2026, title: "[tl;dr sec] #346 - Can AI Do Novel Security Research?", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-346", date: "2026-09-17", access: full, locator: "AppSec section"}
-    - {ref: DEFCON-34-2026, title: "DEF CON 34 main stage talks: Can AI do novel security research? Meet the HTTP Terminator (James Kettle, PortSwigger)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08", access: full, locator: "Talk abstract"}
+    - {ref: AWS-SECAGENT-2026, title: "AWS Security Agent (now part of AWS Continuum) exploited 33 of 37 new real-world CVEs", publisher: "AWS Security Blog", type: vendor, url: "https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/", date: "2026-10-15", access: full, locator: "Misses and non-destructive guardrails"}
   last_reviewed: "2026-10-17"
   notes: >-
     Grade A rests on Google's PageBreak counts (self-reported); Google calls the false-positive rate 'near zero' but
-    publishes no number. The AWS result is a vendor self-test on Claude Opus 5, not a customer deployment (grade C on
-    its own); median time to capture was about four hours. Pattern 'other': agent hypothesis checked by a
-    deterministic, non-AI validator before any human sees it. Search-only press coverage of PageBreak (no application
-    names, a plan to connect it to CodeMender) is not relied on. Overlaps the vulnerability-exposure module
-    (penetration testing). No exploit detail recorded.
-
-- id: security-application-security-10
-  title: 'Agent-built fuzzing campaigns: harnesses, coverage gap analysis and crash triage'
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [software-systems, review-assurance]
-  pattern: end-to-end-case-agent
-  ladder: delegate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: in-production
-  problem: >-
-    Fuzzing (feeding programs large volumes of generated input to find crashes) needs a person to watch coverage,
-    write harnesses for unreached code and triage crashes, and that attention is the bottleneck; bespoke campaigns
-    were costly.
-  solution: >-
-    GitHub Security Lab's open-source Fuzzing Taskflow takes a C or C++ repository and has an LLM agent identify entry
-    points, analyse the build, write harnesses, run AFL++, read coverage reports, improve the harnesses and triage
-    crashes into per-bug reports with a verdict, suggested patch and regression test, while deterministic tools do the
-    execution. Trail of Bits drove OpenAI's cyber-tuned model through a goal-persistence feature in Codex to build a
-    zlib fuzzing lab (sanitizer builds, seeds from existing tests, harnesses across a dozen entry points) with a strict
-    definition of a reportable finding.
-  outcomes:
-    - {lever: speed, description: "Time to stand up a bespoke fuzzing lab", figure: "built in under a day; the firm estimates two to three weeks for one fuzzing expert", measures: "Trail of Bits' estimate of manual effort for the zlib lab; not a measured comparison", provenance: self-reported, source_ref: TOB-PTP-2026}
-    - {lever: quality, description: "Findings from the zlib campaign", figure: "none published", measures: "multiple findings under coordinated disclosure; no count given", provenance: self-reported, source_ref: TOB-ZLIB-2026}
-  prerequisites:
-    - "A buildable C or C++ project with sanitizer and coverage builds"
-    - "A disposable, unprivileged execution environment"
-    - "A model that does not refuse security tasks (GitHub notes some models impose guardrails)"
-    - "Validity rules written into the goal so the agent reports only reachable bugs (Trail of Bits)"
-  risks_and_guardrails:
-    - "GitHub warns that the taskflow runs build commands chosen by the model directly on the host, so a prompt-injected agent could do anything the user can; run it only in a throwaway environment (GITHUB-TASKFLOW-2026)"
-    - "Suggested patches are marked 'review required' and the author says the agent gets things wrong (GITHUB-TASKFLOW-2026)"
-    - "Without strong validity rules the agent produces high-confidence noise; weaker models escalate crashes that are not reachable (TOB-ZLIB-2026, 'Reporting discipline')"
-  human_checkpoints:
-    - "A person reviews each crash report and suggested patch; verdicts are a starting point (GITHUB-TASKFLOW-2026)"
-    - "Engineers orchestrate and triage findings before reporting, and disclose after maintainers patch (TOB-PTP-2026)"
-  role_evolution: >-
-    GitHub's author hands coverage reading, harness writing, gap chasing and crash triage to the agent
-    (GITHUB-TASKFLOW-2026). Trail of Bits calls the model a force multiplier for skilled researchers and a raised floor
-    for low-skill attackers (TOB-ZLIB-2026, 'The moat is gone').
-  evidence_grade: B
-  sources:
-    - {ref: GITHUB-TASKFLOW-2026, title: "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent", publisher: "GitHub Blog (Security Lab)", type: vendor, url: "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/", date: "2026-09-24", access: full, locator: "Design rule; coverage-feedback loop; triage and vulnerability reports; warning on host execution"}
-    - {ref: TOB-ZLIB-2026, title: "GPT-5.5-Cyber built a zlib fuzzing lab in a day", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/07/02/field-reports-from-patch-the-planet/", date: "2026-07-02", access: full, locator: "'The lab GPT-5.5-Cyber built in a day'; 'Reporting discipline is the hard part'"}
-    - {ref: TOB-PTP-2026, title: "Introducing Patch the Planet", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/", date: "2026-06-22", access: full, locator: "'A few highlights from the week'"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    The two-to-three-week figure is the firm's estimate. GitHub's post publishes no yield figures. Merged from all
-    three angles. The vulnerability-exposure research carries the same campaigns; this module is the closer fit for
-    in-SDLC testing.
+    publishes no number. Pattern 'other': an agent hypothesis checked by a deterministic, non-AI validator before any
+    human sees it. Search-only press coverage of PageBreak (no application names, a plan to connect it to CodeMender)
+    is not relied on. The research angles merged PageBreak with AWS Security Agent, XBOW and a PortSwigger research
+    system; those parts are left to vulnerability-exposure (17, 18) and the module's frontier notes. No exploit
+    detail recorded.
 
 - id: security-application-security-11
-  title: Multi-agent vulnerability discovery harness run by consultants on client and incident code
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [review-assurance, software-systems]
-  pattern: draft-review-loop
-  ladder: delegate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: in-production
-  problem: >-
-    Manual source-code review is slow, and when proprietary source code is exposed defenders must find and patch
-    vulnerabilities before attackers do.
-  solution: >-
-    Google Threat Intelligence Group's Mandiant uses an Agentic Vulnerability Discovery Harness (AVDH), built on
-    Google's Agent Development Kit, in proactive reviews, penetration tests, red-team work and incident response. A
-    deterministic pipeline chains specialist agents: explorers identify the code base's purpose and a threat model;
-    discovery agents extract entry points; enrichment agents gather context; access-control and data-flow agents
-    brainstorm hypotheses under a consultant-set confidence filter; later stages validate and rank findings for a
-    human expert.
-  outcomes:
-    - {lever: speed, description: "Critical findings in one incident response", figure: "over 100 true-positive critical vulnerabilities in two days", measures: "true-positive critical vulnerabilities found in a single investigation of stolen corporate repositories; the post says this took a fraction of manual review time and gives no baseline", provenance: self-reported, source_ref: GTIG-AVDH-2026}
-    - {lever: quality, description: "CVEs assigned from large-scale runs", figure: "12 CVEs", measures: "CVEs assigned for flaws in web extensions and open-source projects, from analysis spanning tens of millions of lines of code, thousands of pipelines and tens of thousands of findings", provenance: self-reported, source_ref: GTIG-AVDH-2026}
-  prerequisites:
-    - "Asset inventories, SBOMs (software bills of materials), architecture documentation and threat intelligence as agent context"
-    - "A distilled human knowledge base so agents pick relevant skills and vulnerability patterns"
-    - "An agent orchestration framework (the post names Google ADK)"
-  risks_and_guardrails:
-    - "The harness orchestrates agents deterministically to limit LLM non-determinism (GTIG-AVDH-2026)"
-    - "Early agents do minimal self-validation and are filtered by a consultant-configured confidence filter (GTIG-AVDH-2026)"
-    - "12 assigned CVEs against tens of thousands of findings means most findings do not become CVEs; the post gives no precision rate"
-  human_checkpoints:
-    - "A consultant verifies the textual and visual threat model before analysis continues (GTIG-AVDH-2026)"
-    - "A human expert reviews the prioritised, risk-rated findings (GTIG-AVDH-2026)"
-  role_evolution: >-
-    The post says the framework lets humans focus their impact while agents now augment routine vulnerability
-    discovery and validation (GTIG-AVDH-2026).
-  evidence_grade: A
-  sources:
-    - {ref: GTIG-AVDH-2026, title: "Staying Ahead of Adversarial AI Through Agentic Source Code Review", publisher: "Google Cloud Blog (Google Threat Intelligence Group / Mandiant)", type: firm, url: "https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review", date: "2026-08-18", access: full, locator: "Results after 10 months of use; pipeline description; threat model approval gate"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    Self-reported by Google's Mandiant and GTIG; the harness is described as an internal, point-in-time architecture.
-    Its use during an incident response is also relevant to incident-response, and the vulnerability-exposure
-    research carries the same harness.
-
-- id: security-application-security-12
   title: Agents build bespoke analysis tooling and formal models before a manual security audit
   archetype: security
   module: application-security
@@ -737,178 +625,7 @@
     Client named in the post (Miden). Pattern 'other': agents build the review workbench, not only review code. Merged
     from practice and discourse; the vulnerability-exposure research carries the same post.
 
-- id: security-application-security-13
-  title: Frontier-model scanning of open-source projects with external human triage before disclosure
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [review-assurance, research-synthesis]
-  pattern: full-population-testing
-  ladder: delegate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: in-production
-  problem: >-
-    Widely used open-source code holds bugs that survived years of expert review and automated testing, and
-    maintainers cannot afford large security teams.
-  solution: >-
-    Anthropic runs Claude models, including a Mythos Preview snapshot, over open-source repositories; with about 50
-    partners it scanned more than 1,000 open-source projects and partner code (Project Glasswing). Candidate findings
-    are reproduced and re-rated by Anthropic or one of six external security research firms, checked for existing
-    fixes, written up and disclosed to maintainers under a coordinated disclosure policy, with progress on a public
-    ledger. With Mozilla, Claude Opus 4.6 found vulnerabilities in Firefox, and Mozilla's triage process shaped what
-    was submitted. An opt-in OSS Scanner now offers some projects reports straight from the model without human review.
-  outcomes:
-    - {lever: capacity, description: "Disclosure ledger", figure: "6,157 vulnerabilities disclosed across 591 projects; 516 patched upstream; 584 CVE or advisory identifiers", measures: "dashboard counts as of 2026-10-02 for findings discovered 2025-11-01 to 2026-10-02; 'patched' is 'to our knowledge'", provenance: vendor-published, source_ref: ANTHROPIC-CVD-2026}
-    - {lever: quality, description: "True-positive rate of triaged findings", figure: "92.7%", measures: "share of manually reviewed findings the external firms confirmed as valid, including already-reported and won't-fix bugs; the denominator is not unambiguous in the dashboard text", provenance: vendor-published, source_ref: ANTHROPIC-CVD-2026}
-    - {lever: capacity, description: "Findings reaching a fix, counted by a third party", figure: "202 of 26,153 claimed findings (0.8%) marked fixed; 2,096 (8%) disclosed but not confirmed fixed", measures: "VulnCheck's count of Anthropic's ledger entries as of 2026-09-08 against Anthropic's claimed total findings", provenance: independent, source_ref: VULNCHECK-GLASSWING-2026}
-    - {lever: quality, description: "Severity agreement between model and maintainers", figure: "model rated 91.5% critical or high; maintainers rated 51.3%", measures: "ledger findings with both a Claude severity and a maintainer severity", provenance: independent, source_ref: VULNCHECK-GLASSWING-2026}
-    - {lever: quality, description: "Firefox findings in a two-week collaboration", figure: "22 vulnerabilities, 14 rated high-severity by Mozilla", measures: "vulnerabilities Claude Opus 4.6 found in Firefox in February 2026; Anthropic says the 14 are almost a fifth of all high-severity Firefox vulnerabilities remediated in 2025", provenance: vendor-published, source_ref: ANTHROPIC-FIREFOX-2026}
-    - {lever: quality, description: "One maintainer's check of a single scan", figure: "5 'confirmed' findings became 1 low-severity CVE", measures: "curl security team's triage of the five vulnerabilities in a 2026-05-06 Mythos report on 178K lines: three false positives, one 'just a bug'", provenance: independent, source_ref: STENBERG-MYTHOS-2026}
-  prerequisites:
-    - "Access to the most capable models (gated through Anthropic's Cyber Verification Program, three tiers from 2026-10-06)"
-    - "External triage capacity and a coordinated-disclosure policy"
-    - "Reproducible evidence in each report (Mozilla named three submission components that built trust)"
-    - "For OSS Scanner: a Dockerfile so an offline agent can build and audit the project"
-  risks_and_guardrails:
-    - "Anthropic says human triage is the rate-limiting step and the disclosed count is a subset of what models found (ANTHROPIC-CVD-2026)"
-    - "Some maintainers asked Anthropic to slow disclosures; disclosure follows the 90-day convention, so public detail lags (ANTHROPIC-GLASSWINGUPDATE-2026)"
-    - "VulnCheck reports ledger inconsistencies and 18 revealed findings patched before Anthropic reported them (VULNCHECK-GLASSWING-2026)"
-    - "Reports without human review may contain false positives (ANTHROPIC-OSSSCAN-2026)"
-    - "In exploit tests of several hundred runs costing about USD 4,000, Opus 4.6 turned only two Firefox bugs into crude exploits, in an environment without the sandbox (ANTHROPIC-FIREFOX-2026)"
-    - "Ireland's NCSC noted on 2026-04-13 that the model was unavailable for independent testing and urged coordinated disclosure and engagement with national CSIRTs (GOVIE-NCSC-2026)"
-  human_checkpoints:
-    - "An external security firm or Anthropic reproduces and rates each finding before disclosure (ANTHROPIC-CVD-2026)"
-    - "Maintainers acknowledge, fix and decide whether to publish advisories"
-  role_evolution: >-
-    Anthropic says it will shift its support from finding vulnerabilities to disclosing, fixing and deploying patched
-    software (ANTHROPIC-EXPAND-2026), and that several maintainers are severely capacity-constrained
-    (ANTHROPIC-GLASSWINGUPDATE-2026). Mozilla researchers have started experimenting with Claude for security
-    internally (ANTHROPIC-FIREFOX-2026).
-  evidence_grade: A
-  sources:
-    - {ref: ANTHROPIC-CVD-2026, title: "Anthropic's coordinated vulnerability disclosure dashboard (counts as of 2026-10-02)", publisher: "Anthropic Frontier Red Team (red.anthropic.com)", type: vendor, url: "https://red.anthropic.com/2026/cvd/", date: "2026-10-02", access: full, locator: "Counts as of 2026-10-02; triage process and glossary"}
-    - {ref: ANTHROPIC-GLASSWINGUPDATE-2026, title: "Project Glasswing: An initial update", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/research/glasswing-initial-update", date: "2026-05-22", access: full, locator: "Sections 'Evidence from our partners and external testers' and 'Open-source software'"}
-    - {ref: VULNCHECK-GLASSWING-2026, title: "The Anthropic Glasswing Receipts Are Starting to Trickle In", publisher: "VulnCheck (Patrick Garrity)", type: vendor, url: "https://www.vulncheck.com/blog/anthropic-glasswing-receipts", date: "2026-09-08", access: full, locator: "'A Look at Anthropic's Receipts' and severity section"}
-    - {ref: ANTHROPIC-FIREFOX-2026, title: "Partnering with Mozilla on Firefox security", publisher: "Anthropic Frontier Red Team (red.anthropic.com)", type: vendor, url: "https://red.anthropic.com/2026/firefox/", date: "2026-03-06", access: full, locator: "Opening summary; task verifiers; exploit evaluation"}
-    - {ref: STENBERG-MYTHOS-2026, title: "Mythos finds a curl vulnerability", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead developer)", type: community, url: "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/", date: "2026-05-11", access: full, locator: "Section 'Five findings became one'"}
-    - {ref: ANTHROPIC-EXPAND-2026, title: "Expanding Project Glasswing", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/expanding-project-glasswing", date: "2026-06-02", access: full, locator: "Bottleneck statement; partners' flaws"}
-    - {ref: ANTHROPIC-OSSSCAN-2026, title: "OSS Scanner", publisher: "Anthropic Frontier Red Team (red.anthropic.com)", type: vendor, url: "https://red.anthropic.com/oss-scanner", date: "2026-10", access: full, locator: "Fast-track without human review"}
-    - {ref: ANTHROPIC-GLASSWING-2026, title: "Project Glasswing: Securing critical software for the AI era", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/glasswing", date: "2026-04-07", access: full, locator: "Launch partners and claims (page updated 2026-10-06)"}
-    - {ref: GOVIE-NCSC-2026, title: "NCSC statement on Anthropic's Mythos Preview model for defensive cyber security purposes", publisher: "Ireland NCSC (Department of Justice, Home Affairs and Migration)", type: regulator, url: "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/press-releases/national-cyber-security-centre-ncsc-statement-on-anthropics-mythos-preview-model-for-defensive-cyber-security-purposes/", date: "2026-04-13", access: full, locator: "Paragraphs 1-4"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    Counts are published by the model provider and are not audited. Denominators differ between Anthropic's May
-    update (90.6%, 1,587 of 1,752 assessed findings valid; 23,019 total findings estimated), the October dashboard and
-    VulnCheck's September count (26,153 claimed); VulnCheck says the dashboard and ledger do not fully match, and
-    VulnCheck itself sells vulnerability intelligence. Glasswing partners' results (more than 10,000 high- or
-    critical-severity flaws) are reported by Anthropic, not by the partners. A second-hand quote that Mozilla fixed
-    271 Firefox vulnerabilities found with the model (Computer Weekly) is unverified. curl's high-severity
-    CVE-2026-92392 was found by an Anthropic researcher using OSS Scanner, per the curl maintainer (STENBERG-UAF-2026).
-    Strong overlap with the vulnerability-exposure module.
-
-- id: security-application-security-14
-  title: Specialist AI-augmented audit of a critical open-source project, validated by its maintainers
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [review-assurance, software-systems]
-  pattern: draft-review-loop
-  ladder: augment
-  change_scope: process
-  runtime_class: background-agent
-  maturity: in-production
-  problem: >-
-    Heavily fuzzed and audited projects such as curl still contain undiscovered vulnerabilities, and small volunteer
-    maintainer teams cannot find them all or scale their review.
-  solution: >-
-    Engineers at AISLE pointed AI-powered analysis tooling at the curl source over about a year, with human security
-    staff backing each finding, and worked closely with the curl team, which triaged, fixed and decided which reports
-    merited CVEs. curl published AISLE's audit report as its fifth external audit. curl's maintainer separately reports
-    that AISLE, ZeroPath and OpenAI's Codex Security together triggered hundreds of merged bugfixes.
-  outcomes:
-    - {lever: quality, description: "Published curl vulnerabilities attributed to the AISLE work", figure: "35 vulnerabilities with CVE identifiers", measures: "count stated by curl's lead maintainer of published curl vulnerabilities resulting from AISLE engineers' AI-assisted analysis over 'the last year or so'", provenance: independent, source_ref: CURL-AISLE-2026}
-    - {lever: quality, description: "Merged bugfixes triggered by AI tools in curl", figure: "two to three hundred, plus a dozen or more CVEs", measures: "the maintainer's approximate count, as of 2026-05-11, of bugfixes merged over 'the recent 8-10 months' attributed to AISLE, ZeroPath and Codex Security together", provenance: independent, source_ref: STENBERG-MYTHOS-2026}
-    - {lever: capacity, description: "Share of one release's new vulnerabilities reported by AISLE", figure: "18 of 24 in curl 8.23.0", measures: "AISLE's count; curl's own pre-release post said 22 were pending, so the counts differ (STENBERG-PENDING-2026)", provenance: vendor-published, source_ref: AISLE-YEAR-2026}
-  prerequisites:
-    - "A maintainer team willing to cooperate closely and able to triage a high volume of reports"
-    - "Skilled humans validating findings and authoring patches (the curl post credits this as the difference)"
-    - "Maintainer capacity to fix reports quickly"
-  risks_and_guardrails:
-    - "Maintainers decide what is a vulnerability: curl's maintainer rejected three of five Mythos 'confirmed' findings as false positives and one as an ordinary bug (STENBERG-MYTHOS-2026)"
-    - "The post does not say how many AI-generated candidates were rejected, so yield per finding is unknown; the maintainer says curl is scanned by countless humans and AIs (CURL-AISLE-2026)"
-    - "GTIG reports that 50% of vulnerabilities it identified as likely AI-discovered (January-August 2026) led to remote code execution versus 26% across the broader CVE ecosystem, using a heuristic attribution method, and saw the first exploiting cluster within 4 days of disclosure for one AI-found flaw (GTIG-VULNTRENDS-2026)"
-    - "Kernel policy tells AI users to build a reproducer before reporting, because many unverified reports prove invalid (LINUX-KERNEL-AI-2026)"
-  human_checkpoints:
-    - "AISLE's skilled humans back up each finding (CURL-AISLE-2026)"
-    - "curl maintainers reproduce, fix and decide CVE status (CURL-AISLE-2026)"
-  role_evolution: >-
-    AISLE employees have authored several dozen commits in curl, so the external auditors also act as contributors
-    (CURL-AISLE-2026). curl's security team is its core team of six volunteers (CURL-TEAM-2026), and its maintainer
-    reports security reports at 4-5 times the 2024 rate, more than one a day (STENBERG-PRESSURE-2026).
-  evidence_grade: A
-  sources:
-    - {ref: CURL-AISLE-2026, title: "A curl audit by Aisle", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead maintainer)", type: community, url: "https://daniel.haxx.se/blog/2026/10/14/a-curl-audit-by-aisle/", date: "2026-10-14", access: full, locator: "Whole post (paragraphs 1-4 for the count)"}
-    - {ref: STENBERG-MYTHOS-2026, title: "Mythos finds a curl vulnerability", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead developer)", type: community, url: "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/", date: "2026-05-11", access: full, locator: "Section 'AI scans of curl'"}
-    - {ref: AISLE-YEAR-2026, title: "AISLE's Year on the Cyber Frontier: 500 CVEs Later", publisher: "AISLE (Stanislav Fort)", type: vendor, url: "https://aisle.com/blog/aisle-year-on-the-cyber-frontier", date: "2026-10-14", access: full, locator: "Introduction and 'Why We Chose curl'"}
-    - {ref: STENBERG-PENDING-2026, title: "Twenty-two pending curl vulnerabilities", publisher: "daniel.haxx.se", type: community, url: "https://daniel.haxx.se/blog/2026/10/07/twenty-two-pending-curl-vulnerabilities/", date: "2026-10-07", access: full, locator: "Whole post"}
-    - {ref: STENBERG-PRESSURE-2026, title: "The pressure", publisher: "daniel.haxx.se", type: community, url: "https://daniel.haxx.se/blog/2026/05/26/the-pressure/", date: "2026-05-26", access: full, locator: "Report-rate paragraphs"}
-    - {ref: CURL-TEAM-2026, title: "The 2026 curl team", publisher: "daniel.haxx.se (Daniel Stenberg, curl lead maintainer)", type: community, url: "https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/", date: "2026-10-12", access: full, locator: "Security team"}
-    - {ref: GTIG-VULNTRENDS-2026, title: "Vulnerability Discovery and Exploitation Trends in the AI Era", publisher: "Google Threat Intelligence Group", type: firm, url: "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/", date: "2026-09-30", access: full, locator: "Sections 'AI as the Hunter', 'Risk Profile Divergence'"}
-    - {ref: LINUX-KERNEL-AI-2026, title: "AI Coding Assistants; Kernel Guidelines for Tool-Generated Content", publisher: "The Linux Kernel documentation", type: community, url: "https://docs.kernel.org/process/coding-assistants.html", date: "2026", access: full, locator: "'Procedure for finding and fixing bugs'"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    The maintainer's counts come from a third party to the vendor, hence 'independent', but they are blog statements,
-    not an audit of the audit, and the source does not name AISLE's tools. AISLE's headline claims (500+ CVEs across
-    100+ code bases; about 1% of 2026 open-source CVEs) are vendor-published and unchecked; a maintainer comparison
-    AISLE quotes ('Mythos 0 / Aisle 29') was not found in the maintainer's own posts. Merged from all three angles.
-
-- id: security-application-security-15
-  title: Autonomous cyber reasoning systems that find and patch vulnerabilities (DARPA AI Cyber Challenge)
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [software-systems, review-assurance]
-  pattern: end-to-end-case-agent
-  ladder: delegate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: piloting
-  problem: >-
-    Finding and patching vulnerabilities by current methods is slow, expensive and depends on a limited workforce
-    (DARPA's director, as quoted by DARPA).
-  solution: >-
-    DARPA's AI Cyber Challenge (AIxCC, 2023-2025) had seven finalist teams build fully autonomous systems that find and
-    patch vulnerabilities in open-source code; winners were Team Atlanta, Trail of Bits and Theori. All seven systems
-    are being released as open source, and DARPA and ARPA-H added prizes for integrating them into software relevant
-    to critical infrastructure.
-  outcomes:
-    - {lever: quality, description: "Final-round discovery and patching of synthetic vulnerabilities", figure: "54 of 63 found (86%); 43 patched (68% of the 63); semifinal rates 37% found, 25% patched", measures: "unique synthetic vulnerabilities in the final competition's scored round, as published by DARPA", provenance: independent, source_ref: AIXCC-DARPA-2025}
-    - {lever: quality, description: "Real, non-synthetic findings", figure: "18 real vulnerabilities; 11 patches", measures: "real vulnerabilities found in the final (6 in C, 12 in Java, being disclosed to maintainers) and patches provided for real vulnerabilities", provenance: independent, source_ref: AIXCC-DARPA-2025}
-    - {lever: cost, description: "Average cost per competition task", figure: "about USD 152", measures: "average cost per task of competitor systems, as stated by DARPA", provenance: independent, source_ref: AIXCC-DARPA-2025}
-  prerequisites:
-    - "An open-source code base with build and test infrastructure"
-    - "LLM credits (frontier labs donated credits to each finalist)"
-  risks_and_guardrails:
-    - "Scoring used synthetic vulnerabilities, so rates may not transfer to production code; a USENIX Security 2026 systematisation of the competition says limitations remain open (USENIX-SEC-2026, SoK abstract)"
-    - "PatchBench found proof-of-concept-only validation inflates agent patch solve rates by 1.83 times on average across 11 agents, including the top three AIxCC agents (ARXIV-2609.04075)"
-  human_checkpoints:
-    - "Real findings are disclosed to maintainers for confirmation (AIXCC-DARPA-2025)"
-  role_evolution: >-
-    Not described in the sources.
-  evidence_grade: B
-  sources:
-    - {ref: AIXCC-DARPA-2025, title: "AI Cyber Challenge marks pivotal inflection point for cyber defense (page undated; final at DEF CON 33, August 2025)", publisher: "DARPA", type: regulator, url: "https://www.darpa.mil/news/2025/aixcc-results", date: "2025-08", access: full, locator: "'Deep Dive: Final Competition Findings'"}
-    - {ref: USENIX-SEC-2026, title: "SoK: DARPA's AI Cyber Challenge (AIxCC): Competition Design, Architectures, and Lessons Learned (35th USENIX Security Symposium)", publisher: "USENIX", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/technical-sessions", date: "2026-08", access: full, locator: "Software Security 2 session, abstract"}
-    - {ref: ARXIV-2609.04075, title: "PatchBench: Evaluating AI Agents for Vulnerability Patching", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.04075", date: "2026-09-03", access: full, locator: "Abstract"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    Capped at B: a government-run competition on synthetic vulnerabilities, adjacent to production AppSec. DARPA
-    organised and scored it, so 'independent' means independent of the competitors. DARPA is typed 'regulator' for
-    lack of a better source type. Note the 68% is 43 of all 63 synthetic vulnerabilities, not of those found. The
-    winners' names come from the landscape scan.
-
-- id: security-application-security-16
+- id: security-application-security-12
   title: AI-drafted fixes for scanner alerts and critical vulnerabilities, delivered as reviewable changes
   archetype: security
   module: application-security
@@ -941,7 +658,7 @@
     - "GitHub's application card says suggestions can be non-deterministic, semantically wrong, partial, at the wrong location, or can introduce fabricated dependencies, and that review is required (GITHUB-APPCARD-2026, Limitations)"
     - "GitHub tests Autofix on a harness of over 2,300 alerts and reports that 'many' suggestions could be committed as-is, but publishes no success rate (GITHUB-APPCARD-2026, Custom evaluations)"
     - "In a 15-day single-case study in a closed-source industrial C++ repository, AI-assisted remediation produced hundreds of commits that saturated build-on-commit CI and reviewer attention until changes were batched by directory and capped in size (ARXIV-2609.29172)"
-    - "Controlled studies show agent patches are often incomplete (see -18)"
+    - "Controlled studies show agent patches are often incomplete (security-vulnerability-exposure-13, security-vulnerability-exposure-14)"
   human_checkpoints:
     - "A developer reviews and accepts or edits every suggested fix (GITHUB-APPCARD-2026; GOOGLE-AGENTICSCAN-2026)"
     - "Fixes that add or update dependencies are checked before merge"
@@ -961,116 +678,7 @@
     The Meta figure is from a conference abstract for an event not yet held, so B rather than A. The Snyk figure is a
     vendor benchmark of its own product. Merged from practice and the governance angle's bug-fix agent entry.
 
-- id: security-application-security-17
-  title: Engineer-directed agent patching of open-source vulnerabilities, reviewed by maintainers
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [software-systems, review-assurance]
-  pattern: draft-review-loop
-  ladder: augment
-  change_scope: process
-  runtime_class: shared-team-skills
-  maturity: in-production
-  problem: >-
-    Frontier models produce a flood of security findings that stretched open-source maintainers must sort into real
-    vulnerabilities and plausible false positives, let alone fix.
-  solution: >-
-    Trail of Bits, with OpenAI, pairs its engineers with open-source projects under 'Patch the Planet'. Agents find
-    bugs and write patches, tests, fuzzing harnesses and CI hardening while the engineers direct the work, triage the
-    findings and check the results; maintainers decide whether to merge, revise or reject each pull request. A bot
-    tracks every project and posts findings and merged patches to the team's chat.
-  outcomes:
-    - {lever: quality, description: "Maintainer disposition of decided pull requests", figure: "126 of 186 merged (67.7%); 60 closed unmerged, 4 of them explicitly rejected on technical grounds", measures: "Patch the Planet pull requests that maintainers had merged or closed by 2026-09-14; 54 still open are excluded", provenance: self-reported, source_ref: TOB-1PASSWORD-2026}
-    - {lever: quality, description: "Merged patches that kept the proposed security fix", figure: "91 of 126 (72.2%) with no security-relevant revision observed; 33 (26.2%) with one", measures: "merged pull requests, by whether maintainers revised the security fix", provenance: self-reported, source_ref: TOB-1PASSWORD-2026}
-    - {lever: risk, description: "Problems found after merge", figure: "at least 10 functional bugs, 4 build, test or release bugs, 1 performance bug; no exploitable vulnerabilities", measures: "result of an agent-and-engineer review of about 33,500 later commits in Patch the Planet projects, looking for changes that repaired a problem the patches introduced; extension to all patches under way", provenance: self-reported, source_ref: TOB-1PASSWORD-2026}
-    - {lever: capacity, description: "First-week output", figure: "64 pull requests and 51 issues across 19 projects; 37 merged", measures: "public tally at 2026-06-22; private reports not counted", provenance: self-reported, source_ref: TOB-PTP-2026}
-  prerequisites:
-    - "Access to frontier models, including a cyber-oriented variant (the posts name GPT-5.5-Cyber)"
-    - "Engineer time set aside (the first week cleared dozens of engineers' schedules)"
-    - "Coordinated-disclosure channels and maintainers who want the help"
-  risks_and_guardrails:
-    - "In a freenginx case an agent-written patch left one vulnerable path open and added a crash during request cleanup; the maintainer's own replacement had the same crash (TOB-1PASSWORD-2026)"
-    - "Maintainer acceptance does not establish correctness (TOB-1PASSWORD-2026)"
-    - "The firm says its post-patch-validation skill was not used in this work (TOB-1PASSWORD-2026; see -18)"
-    - "GitHub's fund report says maintainers keep context, judgement and accountability for what ships (GITHUB-SECUREFUND-2026)"
-  human_checkpoints:
-    - "Trail of Bits engineers direct the agents and check results (TOB-PTP-2026)"
-    - "Project maintainers decide whether to merge each pull request (TOB-1PASSWORD-2026)"
-  role_evolution: >-
-    The firm says its experts orchestrate and triage findings and handle fixing and hardening alongside maintainers,
-    rather than filing issues and leaving (TOB-PTP-2026).
-  evidence_grade: A
-  sources:
-    - {ref: TOB-1PASSWORD-2026, title: "1Password's AI patching benchmark is misleading", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/", date: "2026-09-15", access: full, locator: "Sections 'What happened to our patches in real projects' and 'We checked what happened after our patches were merged'"}
-    - {ref: TOB-PTP-2026, title: "Introducing Patch the Planet", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/", date: "2026-06-22", access: full, locator: "Introduction; first-week tally"}
-    - {ref: GITHUB-SECUREFUND-2026, title: "What 50 open source projects taught us about security in the AI era", publisher: "GitHub Blog", type: vendor, url: "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/", date: "2026-08-13", access: full, locator: "Lesson: maintainers keep judgement and accountability"}
-    - {ref: RESILIENTCYBER-VULNMGMT-2026, title: "AI Just Broke Vulnerability Management", publisher: "Resilient Cyber (Chris Hughes)", type: podcast, url: "https://www.resilientcyber.io/p/ai-just-broke-vulnerability-management", date: "2026-10-03", access: full, locator: "Video summary text"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    All figures are the firm's own; Trail of Bits is also the party criticising a rival benchmark. The merge rate
-    counts only decided pull requests. A commentator's summary gives a different funnel (1,646 issues, 615 patches,
-    13% merged as of 2026-10-03; RESILIENTCYBER-VULNMGMT-2026). Merged from all three angles; the vulnerability-
-    exposure research carries the same programme as a service to maintainers.
-
-- id: security-application-security-18
-  title: Independent verification of AI-written security patches before human review
-  archetype: security
-  module: application-security
-  function: service-delivery
-  work_types: [review-assurance, software-systems]
-  pattern: draft-review-loop
-  ladder: augment
-  change_scope: step
-  runtime_class: shared-team-skills
-  maturity: piloting
-  problem: >-
-    A patch can stop the supplied proof-of-concept (PoC) crash without fixing the root cause, and both agents and
-    developers submit incomplete fixes.
-  solution: >-
-    Trail of Bits released two agent skills. Post-patch-validation has the agent write a check that fails on the
-    vulnerable code and passes on the patched version, test at least one other path to the same failure, check for
-    regressions with project tests, sanitizers or a bounded fuzzing run, and treat broken builds as inconclusive.
-    Review-walkthrough turns a branch diff into an ordered walkthrough with findings beside the code for the
-    reviewing engineer. Anthropic used 'task verifiers' that check the vulnerability is gone and functionality is
-    preserved in its Firefox work, and Snyk has deterministic engines, not the model that wrote the fix, verify it.
-  outcomes:
-    - {lever: quality, description: "Developers' first fixes that failed to fully resolve the issue (the human baseline)", figure: "283 of 2,265 (12.5%; 95% interval 10.5% to 14.5%)", measures: "first fixes for vulnerabilities in 236 Trail of Bits assessments, 2024-2026, that the firm reviewed; may undercount; the firm says it is not directly comparable with agent results", provenance: self-reported, source_ref: TOB-1PASSWORD-2026}
-    - {lever: quality, description: "Autonomous agent patch quality in a controlled study", figure: "26.0% fully mitigated with no side effects; 49.3% failed to fix at least one exploit path; 4.5% introduced a new vulnerability", measures: "6,080 valid iterations of two frontier coding agents on six recent high-complexity CVEs, several prompting and iteration modes", provenance: vendor-published, source_ref: ONEPASSWORD-FLAWED-2026}
-    - {lever: quality, description: "Trail of Bits' reanalysis of the same data", figure: "2,634 of 3,067 patches (86%) blocked the supplied exploit", measures: "trials where agents could run code and were not told to apply the wrong fix, excluding runs that consulted the upstream fix; blocking the exploit does not establish a complete repair", provenance: self-reported, source_ref: TOB-1PASSWORD-2026}
-    - {lever: quality, description: "Inflation from checking only the proof-of-concept", figure: "1.83 times on average; 25% of agent patches substantially similar to historical developer patches", measures: "increase in solve rate under PoC-only validation versus PatchBench's fuller validation, across 11 agents including the top three AIxCC agents", provenance: independent, source_ref: ARXIV-2609.04075}
-  prerequisites:
-    - "A vulnerability report and the vulnerable and patched revisions"
-    - "A runnable build with project tests, sanitizer builds or bounded fuzzing"
-    - "Reviewers able to read an ordered walkthrough of the diff"
-  risks_and_guardrails:
-    - "Trail of Bits says the 1Password sample was chosen for difficulty, 22% of the data used prompts telling agents to apply a wrong fix and 36% prohibited testing (TOB-1PASSWORD-2026)"
-    - "1Password concludes highly automated LLM remediation pipelines are more likely to change behaviour or introduce or mask vulnerabilities than fix them, and recommends tightly constrained environments with skilled oversight (ONEPASSWORD-FLAWED-2026, abstract)"
-    - "Anthropic's feedback to 1Password, as published by 1Password: make verification execution-grounded and keep domain experts as final reviewers at current capability (ONEPASSWORD-FLAWEDBLOG-2026)"
-    - "Anthropic says it cannot guarantee that patches passing its verifiers are good enough to merge and recommends the same scrutiny as for any outside patch (ANTHROPIC-FIREFOX-2026)"
-    - "Unaided agents can claim a fix that a rescan contradicts, so the verifier must not trust the agent (SNYK-VULNBUMP-2026)"
-  human_checkpoints:
-    - "Engineers review the walkthrough and decide to merge (TOB-1PASSWORD-2026)"
-    - "Maintainers review AI-authored patches as for any external author (ANTHROPIC-FIREFOX-2026)"
-  role_evolution: >-
-    The post releases review-walkthrough to help engineers review patches they are responsible for merging; it does not
-    describe role changes (TOB-1PASSWORD-2026).
-  evidence_grade: B
-  sources:
-    - {ref: TOB-1PASSWORD-2026, title: "1Password's AI patching benchmark is misleading", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/", date: "2026-09-15", access: full, locator: "'Developers get one in eight fixes wrong'; 'How the experiment produces a misleading headline'; 'Agent skills for better security patches'"}
-    - {ref: ONEPASSWORD-FLAWED-2026, title: "Frontier Models' Vulnerability Patches are Often F.L.A.W.E.D.", publisher: "1Password (Off-by-1 Labs)", type: vendor, url: "https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf", date: "2026-08-06", access: full, locator: "Abstract; section 3.1; section 5.1"}
-    - {ref: ONEPASSWORD-FLAWEDBLOG-2026, title: "Off-by-1 Labs: AI-Generated Vulnerability Patches and Human Review (FLAWED study blog)", publisher: "1Password", type: vendor, url: "https://1password.com/blog/why-ai-generated-patches-still-require-human-review", date: "2026-08-06", access: full, locator: "Feedback from model providers"}
-    - {ref: ARXIV-2609.04075, title: "PatchBench: Evaluating AI Agents for Vulnerability Patching", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2609.04075", date: "2026-09-03", access: full, locator: "Abstract"}
-    - {ref: ANTHROPIC-FIREFOX-2026, title: "Partnering with Mozilla on Firefox security", publisher: "Anthropic Frontier Red Team (red.anthropic.com)", type: vendor, url: "https://red.anthropic.com/2026/firefox/", date: "2026-03-06", access: full, locator: "Task verifiers"}
-    - {ref: SNYK-VULNBUMP-2026, title: "VulnBump: Can AI Agents Safely Fix Dependencies?", publisher: "Snyk Blog", type: vendor, url: "https://snyk.io/blog/vulnbump/", date: "2026-10-15", access: full, locator: "Independent verifier in a clean container"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    No outcome is published for the skills themselves; the figures show why verification matters. The 1Password and
-    Trail of Bits figures come from a published dispute between commercial parties; the 1Password report's date is
-    taken from the Trail of Bits post (the blog was updated 2026-09-16). PatchBench was read at abstract level only.
-    Merged from all three angles plus the governance angle's controlled-study evidence.
-
-- id: security-application-security-19
+- id: security-application-security-13
   title: Agent-applied compiler bounds-safety annotations to remove whole vulnerability classes
   archetype: security
   module: application-security
@@ -1113,61 +721,7 @@
     The 72-fix count does not measure the hardening work itself, for which no figures were published. The post was
     last modified 2026-07-13.
 
-- id: security-application-security-20
-  title: Agents that upgrade vulnerable dependencies and prove the upgrade builds and removes the vulnerability
-  archetype: security
-  module: application-security
-  function: technology-it
-  work_types: [software-systems]
-  pattern: bulk-transformation
-  ladder: automate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: piloting
-  problem: >-
-    Most vulnerable packages already have a fixed version, but upgrading safely is hard: most are transitive
-    dependencies (pulled in by other packages), about a quarter need a major version bump and even minor releases can
-    break builds.
-  solution: >-
-    A remediation agent applies one recommended upgrade per task, runs the build and tests, rescans, and repairs errors
-    before finishing. Snyk's Evo Remediation Agent is the product example, with policies deciding what goes to human
-    review. Anthropic lists automated dependency vulnerability remediation across its own code base as a
-    representative project for its application security team, and an AppSec lead described a self-built CVE-fixing
-    bot at BSides Las Vegas 2026.
-  outcomes:
-    - {lever: quality, description: "Pass rate on real dependency upgrades (all agents on Claude Sonnet 5.5)", figure: "Evo Remediation Agent 90.2%; Claude Code with Snyk scan 77.5%; Claude Code unaided 59.6%; package-manager bump with no AI 46.9%", measures: "share of 307 upgrade tasks across 43 repositories and 2,066 fixable vulnerabilities passing all gates (vulnerability removed, installs, builds, previously passing tests pass) in a clean container; Snyk's own VulnBump benchmark", provenance: vendor-published, source_ref: SNYK-VULNBUMP-2026}
-    - {lever: quality, description: "Unaided agent claiming a fix that a rescan contradicted", figure: "70 of 124 failures", measures: "failures of unaided Claude Code where it said it had fixed vulnerabilities that a rescan still found", provenance: vendor-published, source_ref: SNYK-VULNBUMP-2026}
-    - {lever: risk, description: "CVE count under a self-built fixing bot", figure: "0 CVEs for three months", measures: "the speaker's claim in a talk abstract; organisation and scope not named", provenance: self-reported, source_ref: BSIDESLV-2026}
-  prerequisites:
-    - "Projects that install, build and pass most of their tests before the change"
-    - "Scanner data with recommended upgrades, to confirm the vulnerability is gone"
-    - "A policy on which upgrades merge automatically and which need review"
-  risks_and_guardrails:
-    - "Build success was about 93% for all three agents, so removing the vulnerability, not keeping the build green, was the hard part (SNYK-VULNBUMP-2026)"
-    - "GitHub warns AI fixes may suggest fabricated or unsupported dependency versions (GITHUB-APPCARD-2026)"
-    - "Snyk says deterministic engines should verify proposed fixes rather than the model that wrote them (SNYK-AGENTIC-2026)"
-  human_checkpoints:
-    - "Teams define policies and acceptance criteria; items outside policy go to human review (SNYK-AGENTIC-2026)"
-    - "The BSides speaker paired by hand with an AI assistant on flaky tests after a bot failed (BSIDESLV-2026)"
-  role_evolution: >-
-    The BSides speaker, an AppSec lead, took on pipeline fixes nobody else would touch and built four bots alone over
-    six months (BSIDESLV-2026).
-  evidence_grade: C
-  sources:
-    - {ref: SNYK-VULNBUMP-2026, title: "VulnBump: Can AI Agents Safely Fix Dependencies?", publisher: "Snyk Blog", type: vendor, url: "https://snyk.io/blog/vulnbump/", date: "2026-10-15", access: full, locator: "Findings and method"}
-    - {ref: SNYK-AGENTIC-2026, title: "Introducing Evo Agentic AppSec: Security That Keeps Up With AI Development", publisher: "Snyk Blog", type: vendor, url: "https://snyk.io/blog/announcing-snyk-agentic-appsec/", date: "2026-10-15", access: full, locator: "Evo Remediation Agent"}
-    - {ref: ANTHROPIC-JOB-APPSEC-2026, title: "Job posting: Staff+ Application Security Engineer (first published 2025-01-22, updated 2026-08-21)", publisher: "Anthropic (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/4502508008", date: "2026-08-21", access: full, locator: "Representative project: automated dependency vulnerability remediation"}
-    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list (Came for the AppSec scans, stayed for the flaky tests, Aldo Salas)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026", access: full, locator: "Talk abstract, Common Ground track"}
-    - {ref: GITHUB-APPCARD-2026, title: "Application card: GitHub security and quality AI features (page undated; date is retrieval date)", publisher: "GitHub Docs", type: vendor, url: "https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-autofix-for-codeql-code-scanning", date: "2026-10-17", access: full, locator: "Dependency changes limitation"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    The benchmark and the product belong to the same vendor. Snyk also reports from its own data that 94% of 459
-    million findings over six months had a known fixed version and only about 10% had been resolved; that is a vendor
-    statistic about backlog, not about the agent. GitLab's posting describes a service that turns advisories into
-    dependency-update merge requests but does not say it uses AI. The BSides page shows no month, so the year alone
-    is recorded. Overlaps the vulnerability-exposure research on dependency and container remediation.
-
-- id: security-application-security-21
+- id: security-application-security-14
   title: 'Automated AI screening of untrusted inbound code: packages, agent skills and outside pull requests'
   archetype: security
   module: application-security
@@ -1234,73 +788,7 @@
     AI-suggested dependencies and adversarial testing of AI review pipelines, each grade D). Skill and plugin scanning
     was routed here from the ai-security research. No attack detail recorded.
 
-- id: security-application-security-22
-  title: AI triage of inbound vulnerability reports for bug-bounty and product security incident response teams
-  archetype: security
-  module: application-security
-  function: technology-it
-  work_types: [transaction-processing, review-assurance, coordination-scheduling]
-  pattern: intake-triage
-  ladder: automate
-  change_scope: process
-  runtime_class: workflow-automation
-  maturity: in-production
-  problem: >-
-    Programmes and maintainers receive rising volumes of reports, many low quality or AI-generated, and each needs
-    reproduction before it can be fixed. Human-only triage brings slipping service levels, duplicate hunting across
-    tools and severity decided by intuition. Product security incident response teams (PSIRTs) also face new EU
-    reporting duties, and 85% of APAC PSIRTs have fewer than five members (FIRST session abstract).
-  solution: >-
-    Anthropic's application security team says Claude performs first-line bug-bounty triage and drafting while
-    engineers handle escalations and corner cases. GM's Auto-Triage sits on top of HackerOne and Slack and combines
-    scope and asset mapping, multi-signal duplicate detection, safe automated reproduction in sandboxes and a
-    multi-agent 'severity meeting'. A three-year FIRST conference series moved from a PSIRT vision with generative AI
-    (2025) to multi-agent systems automating complex PSIRT workflows with human oversight for critical decisions
-    (2026). Coinbase's posting asks for AI-driven automation of triage, validation and remediation for its bug-bounty
-    pipeline, and open-source maintainers in GitHub's Secure Open Source Fund explored Copilot for vulnerability triage.
-  outcomes:
-    - {lever: capacity, description: "Effect of AI triage", figure: "none published", measures: "the postings and abstracts state intended or current practice without measured results", provenance: self-reported, source_ref: ANTHROPIC-JOB-APPSEC-2026}
-  prerequisites:
-    - "A programme with defined scope and severity, and a tracker"
-    - "Engineers on an escalation rota"
-    - "Sandboxed reproduction environments for reports"
-    - "A PSIRT process with defined decision points"
-  risks_and_guardrails:
-    - "GitHub's private vulnerability reports rose from about 550 a week in January to over 3,000 a week for most of May 2026 (GITHUB-ADVDB-2026)"
-    - "The Linux Foundation says maintainers face a higher velocity of security reports, many AI-generated, and OpenAI says maintainers want fewer low-quality reports and false positives, not more (LF-GLASSWING-2026; OPENAI-CODEXSEC-2026)"
-    - "Anthropic, citing the Firefox team, urges researchers who use LLM tools to include evidence of verification and reproducibility with each report (ANTHROPIC-FIREFOX-2026)"
-    - "The FIRST abstract reports a tension between precision and scale in early implementations; the session was TLP:AMBER (shared with attendees only), so details are not public (FIRST-CON-2026)"
-    - "EU Cyber Resilience Act reporting of actively exploited vulnerabilities applies from 2026-09-11: early warning within 24 hours, notification within 72 hours, final report within 14 days after a corrective measure, through ENISA's Single Reporting Platform (EC-CRA-REPORTING-2026)"
-  human_checkpoints:
-    - "Engineers handle escalations and corner cases (ANTHROPIC-JOB-APPSEC-2026)"
-    - "Human insight is kept for critical PSIRT decisions (FIRST-CON-2026)"
-    - "Humans oversee generative AI output (COINBASE-JOB-PSE-2026)"
-  role_evolution: >-
-    Anthropic's posting says automation handles routine triage and root-cause work while engineers handle escalations
-    (ANTHROPIC-JOB-APPSEC-2026). The FIRST abstract says agentic AI can amplify small PSIRT teams only when guided
-    adequately by human expertise (FIRST-CON-2026).
-  evidence_grade: B
-  sources:
-    - {ref: ANTHROPIC-JOB-APPSEC-2026, title: "Job posting: Staff+ Application Security Engineer (first published 2025-01-22, updated 2026-08-21)", publisher: "Anthropic (Greenhouse)", type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/4502508008", date: "2026-08-21", access: full, locator: "About the role; Key responsibilities"}
-    - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list (Five AIs Walk Into a Severity Meeting: Auto-Triage and the Evolution of GM's Bug Bounty)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026", access: full, locator: "Talk abstract, Common Ground track"}
-    - {ref: FIRST-CON-2026, title: "38th FIRST Conference program (Denver, 2026-06-14 to 2026-06-19): PSIRT 2.0 in Action: Implementing Agentic AI Architecture for Autonomous Operations", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06-18", access: full, locator: "Session abstract (GMO Cybersecurity by IERAE, Ken Associates)"}
-    - {ref: COINBASE-JOB-PSE-2026, title: "Job posting: Product Security Engineer (Offensive Security, Application Security team)", publisher: "Coinbase (Greenhouse)", type: job-posting, url: "https://www.coinbase.com/careers/positions/8165389?gh_jid=8165389", date: "2026-08-28", access: full, locator: "Responsibilities: AI-driven automation for vulnerability triage, validation and remediation"}
-    - {ref: GITHUB-SECUREFUND-2026, title: "What 50 open source projects taught us about security in the AI era", publisher: "GitHub Blog", type: vendor, url: "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/", date: "2026-08-13", access: full, locator: "Introduction"}
-    - {ref: ANTHROPIC-FIREFOX-2026, title: "Partnering with Mozilla on Firefox security", publisher: "Anthropic Frontier Red Team (red.anthropic.com)", type: vendor, url: "https://red.anthropic.com/2026/firefox/", date: "2026-03-06", access: full, locator: "What the Firefox team said built trust"}
-    - {ref: LF-GLASSWING-2026, title: "Introducing Project Glasswing: Giving Maintainers Advanced AI to Secure the World's Code", publisher: "Linux Foundation", type: community, url: "https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source", date: "2026-04-07", access: full, locator: "Maintainer burden from AI-generated reports"}
-    - {ref: OPENAI-CODEXSEC-2026, title: "Codex Security: now in research preview", publisher: "OpenAI", type: vendor, url: "https://openai.com/index/codex-security-now-in-research-preview/", date: "2026-03-06", access: full, locator: "Maintainer feedback"}
-    - {ref: GITHUB-ADVDB-2026, title: "Inside the Advisory Database and what happens when vulnerability volume breaks records", publisher: "GitHub Blog", type: vendor, url: "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/", date: "2026-06-29", access: full, locator: "Private vulnerability report volumes"}
-    - {ref: EC-CRA-REPORTING-2026, title: "Cyber Resilience Act reporting obligations", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting", date: "2026-09-11", access: full, locator: "Reporting timelines"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    B: Anthropic's posting describes current practice at a named company and GM's abstract describes a built
-    pipeline; neither publishes figures. The GM and FIRST items are abstracts only; the Coinbase posting shows intent.
-    The ladder is set to automate for Anthropic's first-line triage with escalation to engineers; GM's and the FIRST
-    session's autonomy levels are not public. Merged: bug-bounty triage (practice, discourse), the agentic PSIRT
-    session (practice, discourse) and maintainers' AI-assisted report triage (discourse). The GM talk was also routed
-    here from the security-operations research. Overlaps PSIRT intake in the vulnerability-exposure research.
-
-- id: security-application-security-23
+- id: security-application-security-15
   title: AI-assisted research for curators of a vulnerability advisory database
   archetype: security
   module: application-security
@@ -1339,7 +827,7 @@
     No measurement of the AI tooling's own effect was published. NIST's AI-enabled NVD effort is routed to
     vulnerability-exposure.
 
-- id: security-application-security-24
+- id: security-application-security-16
   title: Testing AI security tools on contamination-reduced, audited benchmarks before trusting them
   archetype: security
   module: application-security
@@ -1363,7 +851,7 @@
   outcomes:
     - {lever: quality, description: "Benchmark inflation from memorisation (Claude Opus 5.5 on SusVibes)", figure: "93 of 176 judged solutions (53%) near-identical to the real code; 57 of 102 secure solutions (56%) memorised", measures: "solutions with code similarity of 0.80 or more to the project's real implementation (added lines in non-test files); Semgrep says similarity is not proof of recall", provenance: vendor-published, source_ref: SEMGREP-SUSVIBES-2026}
     - {lever: quality, description: "Headline score on the same benchmark", figure: "54.8% correct and secure of 186 tasks, against a previous best of 43.5%", measures: "tasks passing the project's functional tests and the CVE-fix security tests, run by Semgrep under the leaderboard protocol on 2026-09-26", provenance: vendor-published, source_ref: SEMGREP-SUSVIBES-2026}
-    - {lever: quality, description: "Inflation of patching results from proof-of-concept-only validation", figure: "1.83 times on average", measures: "solve rate under PoC-only validation versus fuller validation, across 11 agents (see -18)", provenance: independent, source_ref: ARXIV-2609.04075}
+    - {lever: quality, description: "Inflation of patching results from proof-of-concept-only validation", figure: "1.83 times on average", measures: "solve rate under PoC-only validation versus fuller validation, across 11 agents (see security-vulnerability-exposure-14)", provenance: independent, source_ref: ARXIV-2609.04075}
     - {lever: quality, description: "Effect of removing contaminated samples from bug-fixing benchmarks", figure: "reported resolution rates of most LLMs fall by more than 20% relative on medium-difficulty tasks", measures: "SWE-bench Verified and Multi-SWE-bench after filtering contaminated samples; general bug-fixing, adjacent to security", provenance: independent, source_ref: USENIX-BENCHCHECKER-2026}
   prerequisites:
     - "Labelled vulnerable applications or recent CVEs the model has not seen"
@@ -1373,7 +861,7 @@
     - "AWS reports its own benchmark as contamination-reduced, not contamination-free (AWS-SECAGENT-2026)"
     - "Quoting the rival study's tables, Trail of Bits found 8% of its ActiveMQ verdicts penalised an intended behaviour change and that automated graders agreed with human reviewers on the full outcome in 65.9% of reviewed cases (TOB-1PASSWORD-2026)"
     - "A run that failed because of a broken build can be mistaken for evidence (TOB-1PASSWORD-2026)"
-    - "The same patching dataset reads as 26.0% (1Password) or 86% (Trail of Bits reanalysis) depending on subset and success definition (TOB-1PASSWORD-2026; see -18)"
+    - "The same patching dataset reads as 26.0% (1Password) or 86% (Trail of Bits reanalysis) depending on subset and success definition (TOB-1PASSWORD-2026; see security-vulnerability-exposure-14)"
     - "CSET observed that code-model benchmarks often measure function but not security, and training-data transparency is inadequate (CSET-CODEGEN-2024)"
   human_checkpoints:
     - "Experts review graders' verdicts (TOB-1PASSWORD-2026)"
@@ -1395,7 +883,7 @@
     grader-agreement numbers are Trail of Bits' reading of 1Password's report. BenchChecker was routed from the
     vulnerability-exposure research and covers general bug-fixing benchmarks. Merged from practice and governance.
 
-- id: security-application-security-25
+- id: security-application-security-17
   title: Security team rebuilt around building and operating its own AI skills and agents
   archetype: security
   module: application-security
