@@ -2,7 +2,8 @@
 # Source-verified 2026-10-17. Low-evidence module: no source states that
 # audit-employed valuation, actuarial, tax, forensic or environmental specialists use AI on audits. Most entries
 # are ideas (grade D) discussed by a regulator, standard-setter, professional body, practitioner or researcher.
-# The two grade-B entries are adjacent: valuation advisory and tax advisory practices, not specialists on audits.
+# The grade-B entries are adjacent: valuation advisory and tax advisory practices, and (14) an audit firm's own
+# impairment-model tool that the source does not tie to its specialists.
 # Where a sibling module already holds the same document, its source key is reused.
 # Not repeated here (see the sibling entries): algorithm aversion to AI evidence on complex estimates
 # (assurance-substantive-testing-19), authenticating AI-fabricated evidence (assurance-substantive-testing-04),
@@ -594,3 +595,52 @@
     also predates the 12-18 month window, so use it as a foundation; its present status was not verified. No
     source on audit income-tax-provision specialists using AI was found. Hux, Andiola and Noga
     (2022) document audit tax specialists' roles through 33 interviews but do not cover AI [HUX-2022].
+
+- id: assurance-specialists-14
+  title: Automated recalculation and sensitivity analysis of management's impairment cash-flow models on audits (Deloitte UK)
+  archetype: assurance
+  module: specialists
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Impairment is a judgemental, higher-risk area: Deloitte UK reports inspection findings on valuation and
+    impairment and lists enhancements to its impairment specialist consultation policy among its responses; its
+    impairment specialists provide independent challenge to engagement teams [DELOITTE-UKTR-2025, PDF p. 21 and
+    Appendix 5, PDF p. 102].
+    Recalculating management's cash-flow models and running sensitivities by hand takes time away from the
+    assumptions that matter.
+  solution: >-
+    Deloitte UK says it deployed automated impairment modelling across its largest audits, automating the
+    recalculation and sensitivity analysis of impairment cash-flow models. In audits of consumer businesses it ran
+    the modelling across ten entities and identified several calculation inaccuracies in their impairment models,
+    which helped teams in discussions with management and let them focus on judgemental areas. An audit manager
+    quoted in the report calls it an 'AI impairment tool' that helped risk-assess management's assumptions. The
+    firm plans to extend the modelling to going concern, viability and other forward-looking judgements
+    [DELOITTE-UKTR-2025, Appendix 7, PDF p. 111].
+  outcomes:
+    - { lever: quality, description: "Calculation inaccuracies found in management's impairment models across consumer-business audits; count of errors not given", figure: "10 entities; 'several' inaccuracies", measures: "entities whose impairment models were run through the tool, and the firm's description of what it found; no error count, size or effect on the audit stated", provenance: self-reported, source_ref: DELOITTE-UKTR-2025 }
+  prerequisites:
+    - "Management's impairment cash-flow models in a form the tool can recalculate [DELOITTE-UKTR-2025, Appendix 7]"
+  risks_and_guardrails:
+    - "The report does not say whether the firm's impairment specialists or engagement teams run the tool, or how its outputs are reviewed; treat it as an engagement-level tool in a specialist area, not as evidence that specialists use AI [DELOITTE-UKTR-2025]"
+    - "Recalculation tests arithmetic and sensitivity, not whether management's assumptions are reasonable; that judgment stays with the auditor and any specialist [DELOITTE-UKTR-2025, Appendix 7]"
+  human_checkpoints:
+    - "Practitioners apply professional judgement to the patterns and anomalies the tools identify [DELOITTE-UKTR-2025, Appendix 7]"
+    - "Impairment specialists provide independent challenge to engagement teams on their approach and conclusions [DELOITTE-UKTR-2025, Appendix 5]"
+  role_evolution: >-
+    The firm says having the data to hand let teams focus on audit procedures in judgemental areas
+    [DELOITTE-UKTR-2025, Appendix 7].
+  evidence_grade: B
+  sources:
+    - { ref: DELOITTE-UKTR-2025, title: "Deloitte UK annual review 2025: Audit transparency report (year ended 31 May 2025)", publisher: "Deloitte LLP (UK)", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2025/deloitte-uk-annual-review-2025-audit-transparency-report-accessible.pdf", date: "2025-11", access: full, locator: "Appendix 7 'Deloitte digital audit', PDF p. 111 (case study 'Automation in audits of consumer businesses'); quality overview PDF pp. 21-22; Appendix 5, PDF p. 102 (Impairment Centre of Excellence)" }
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Grade B: a named firm describes a deployed tool on its audits, with a self-reported, unquantified result. It
+    is adjacent to this module: impairment testing is an area where valuation specialists usually work, but the
+    report does not say specialists use the tool. The same report's quality overview says the modelling improved
+    efficiency and identified calculation inaccuracies. Date from the PDF's creation metadata (19 Nov 2025).

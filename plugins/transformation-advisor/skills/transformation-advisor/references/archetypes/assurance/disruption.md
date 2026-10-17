@@ -23,15 +23,17 @@ resolve in §10 or in [sources.md](sources.md).
 - The disruption with primary-source evidence today is **structural**: ownership, independence rules and regulatory
   scope are changing faster than fees. No source measures a loss of audit revenue or a market-wide fee fall caused by
   AI [CFODIVE-PWC-2026; CPACOM-ATR-2025].
-- Audit revenue grew at all four networks in the latest years reported [KPMG-REV-2025; EY-REV-2026; CPAPA-DELREV-2026].
-- The audit is legally mandated and the opinion must come from an accountable, licensed auditor, which slows entrants
-  [REPODO-2026; NFRA-CAALLEY-2026].
-- The question leaders are least ready for is pricing: what would they charge for the same opinion with half the hours?
+- Audit revenue grew at all four networks in the latest years reported [KPMG-REV-2025; EY-REV-2026; CPAPA-DELREV-2026;
+  CPAPA-PWCREV-2025].
+- The audit is legally mandated and the opinion must come from an accountable, licensed auditor [REPODO-2026;
+  NFRA-CAALLEY-2026]. That slows entrants (inference).
+- In the advisor's view, the question leaders are least ready for is pricing: what would they charge for the same opinion
+  with half the hours? No firm leader has said publicly how audit pricing will change ([economics.md](economics.md) §4).
 
 ## 2. Scenario 1: AI-native competitors
 
 **What is evidenced.** Funded entrants exist but report no market share, pricing or quality results.
-- Repodo (Denmark): a licensed, AI-built audit firm; EUR 8.2m pre-seed; small-company audits first; the article notes
+- Repodo (Denmark): a licensed, AI-built audit firm; EUR 8.2m pre-seed; small and medium-sized companies first; the article notes
   it carries professional liability for its opinions and that client and supervisor trust is "an open question"
   [REPODO-2026].
 - Modus: US$85m to build AI audit software and invest in audit firms; one top-200 firm so far, with "seven AI
@@ -40,8 +42,8 @@ resolve in §10 or in [sources.md](sources.md).
   [AT-PEEC-2026].
 
 **Forecasts.** Founders and investors promise lower cost and "faster closes, fewer surprises" [REPODO-2026; MODUS-2026];
-a finance-executive newsletter predicts AI-first mid-tier firms will "significantly cut fees" (opinion)
-[ONLYCFO-KPMGFEE-2026].
+a CFO's newsletter expects a couple of the top 10 US firms to adopt AI heavily and "significantly cut fees"
+(opinion) [ONLYCFO-KPMGFEE-2026].
 
 **Signals to watch.** First audit opinions issued by an entrant; inspection results for entrants; a published price
 list; independence rulings on software-plus-ownership models.
@@ -51,9 +53,9 @@ charge and which of your clients would listen?"
 
 ## 3. Scenario 2: platform scale decides who wins
 
-**What is evidenced.** Firm-wide agent platforms at the Big Four and Grant Thornton US [EY-CANVAS-2026; KPMG-CLARA-2025;
-DELOITTE-OMNIA-2026; GT-GTAP-2026]; network commitments in the billions against US$1bn-scale mid-tier commitments
-[KPMG-REV-2025; CPAPA-DELREV-2026; RSM-1B-2025]; 75% of 54 small US firms with no documented plan [CPACOM-ATR-2025].
+**What is evidenced.** Firm-wide agent platforms at KPMG, EY, Deloitte and Grant Thornton US, with PwC's planned
+[EY-CANVAS-2026; KPMG-CLARA-2025; DELOITTE-OMNIA-2026; GT-GTAP-2026]; network commitments in the billions against US$1bn-scale mid-tier commitments
+[KPMG-REV-2025; CPAPA-DELREV-2026; RSM-1B-2025]; 75% of the 54 firms in a US benchmark with no documented plan [CPACOM-ATR-2025].
 
 **Counterweights.** Vendors rent capability to smaller firms [FIELDGUIDE-2026; TR-DISCLOSURE-2026]. The UK regulator runs
 a project on smaller firms' technology barriers [FRC-SANDBOX-2026]. A former PCAOB board member argues draft
@@ -67,15 +69,15 @@ statements on smaller firms' tool use.
 
 ## 4. Scenario 3: the fee model shifts
 
-**Two directions, both forecasts.**
-- *Compression:* buyers ask "where are those savings going?"; competitive reviews yielded 25-30% fee cuts in one
+**Two directions, both argued; neither is measured across the market.**
+- *Compression:* FERF's lead researcher says CFOs ask "where are those savings going?"; competitive reviews yielded 25-30% fee cuts in one
   95-respondent survey [FERF-2026]; KPMG reportedly argued AI should lower its own audit fee [VERDANTIX-KPMGFEE-2026].
 - *Repricing upward:* analysts report a camp arguing for "continuous assurance, not cheaper assurance", possibly sold as
   a subscription [VERDANTIX-KPMGFEE-2026]; Thomson Reuters describes paths to "command premium fees" (vendor)
   [TRI-FOP-2026].
 
-**What holds firms back.** 87% of 54 small US firms track realization and 13% track value billing [CPACOM-ATR-2025]; 74%
-plan fee increases. PwC says the audit product is unchanged [CFODIVE-PWC-2026].
+**What holds firms back.** 87% of the 54 benchmark firms track realization and 13% track value billing [CPACOM-ATR-2025];
+74% plan fee increases. PwC says the audit product is unchanged [CFODIVE-PWC-2026].
 
 **Signals.** Public statements by audit leaders on fees; fixed-fee or subscription audit offers; tender outcomes citing
 AI; regulators commenting on fee pressure and quality.
@@ -87,7 +89,7 @@ opinion with half the hours, and for an opinion backed by whole-population testi
 ## 5. Scenario 4: capital and ownership restructure the mid-tier
 
 **What is evidenced.** Ten of the top 20 US firms reported PE-owned or about to be; Crowe and Eide Bailly named AI
-investment as a reason [CFOBREW-PE-2026]. Grant Thornton Advisors agreed to buy CBIZ for US$5bn [HL-GTCBIZ-2026]. In
+investment as a reason [CFOBREW-PE-2026]. Grant Thornton Advisors agreed to buy CBIZ in a US$5bn deal (not closed at the page date) [HL-GTCBIZ-2026]. In
 Europe, 139 of 385 PE-related accountancy deals in 2025 involved audit firms [ACCTEU-PE-2026]. PCAOB inspectors will
 examine quality control at PE-backed firms [CAALLEY-PCAOBPE-2025].
 
@@ -104,11 +106,11 @@ investor were involved?"
 ## 6. Scenario 5: regulation moves the size of the market
 
 - **SOX 404(b).** The SEC's May 2026 proposal would move about half of currently attested issuers out of 404(b) if
-  adopted [UNIQUS-FILER-2026]. The CAQ argues attestation stays valuable because "technology-driven complexity increases
+  adopted [UNIQUS-FILER-2026]. The CAQ (the US auditing profession's policy body) argues attestation stays valuable because "technology-driven complexity increases
   the need" for oversight [CAQ-404-2026]. A Texas CPA committee supports the proposal [TXCPA-FILER-2026].
 - **EU sustainability.** Directive (EU) 2026/470 narrowed CSRD scope and removed the plan for reasonable-assurance
-  standards "to avoid an increase in the costs of assurance"; it also eases entry for non-audit assurance providers
-  [EURLEX-2026-470].
+  standards "to avoid an increase in the costs of assurance"; it also relaxes approval requirements for audit firms that
+  only provide sustainability assurance [EURLEX-2026-470].
 - **Interaction with AI (scenario, not finding).** Cheap continuous testing could make 404(b)-style assurance viable for
   more companies, or the proposal could remove demand first. No source analyses this.
 
@@ -118,7 +120,7 @@ revenue? Does your controls-testing investment case still work?"
 ## 7. Scenario 6: new services around AI
 
 **What is evidenced.**
-- Big Four offers of assurance over AI governance and controls, including a KPMG UK reasonable-assurance opinion; no
+- Big Four offers of assurance over AI governance and controls, including a KPMG UK opinion under ISAE (UK) 3000; no
   volumes, fees or client counts disclosed [KPMGUK-GOVAI-2026; EY-CANVAS-2026; DELOITTE-OMNIA-2026].
 - Client demand signals: 6% of largest clients' AI governance rated advanced [BOARDMEMBER-CAQ-2026]; the AICPA practice
   aid on client AI [AICPA-PA-2026]; SOC guidance on service organisations' AI [DART-TQA-2026].
@@ -140,8 +142,8 @@ Institute's "reimagine" path replaces periodic compliance with continuous suppor
 
 **Brakes.** The IAASB says technology requirements are premature [IAASB-ED500-2026]; regulators say whole-population
 insight on each item may be less conclusive and low-risk items still need testing [FRC-GENAI-2026; NFRA-CAALLEY-2026].
-In KPMG's own framing, continuous monitoring is first- and second-line and internal audit work, not the external
-auditor's [KPMG-SOX-2026].
+KPMG places continuous monitoring with first-line control owners and testing and validation with internal audit, while
+saying external auditors could also test full populations continuously [KPMG-SOX-2026].
 
 **For internal audit** this is the most direct scenario: agents moving from SOX into the wider plan [OPTRO-CRX-2026] and
 more coverage within flat budgets ([economics.md](economics.md) §8).
@@ -151,8 +153,8 @@ who would own the monitoring?"
 
 ## 9. Exposure by service line
 
-A starting point for the Frame exposure sort; confirm with the leader. "Threat", "change" and "help" follow the Frame
-question F15.
+A starting point for the Frame exposure sort; confirm with the leader. "Threat", "change" and "help" follow Frame
+question F15 in [frame.md](../../method/frame.md).
 
 | Service line | Mostly | Why | Evidence |
 |---|---|---|---|

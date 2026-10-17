@@ -467,7 +467,9 @@
     - "A risk-scored sample remains a sample; the FRC's example shows AI improving targeting, not replacing the sample (FRC-GENAI-2026, illustrative example 2)"
     - "IFIAR members' common technology findings include insufficient testing of outliers (IFIAR-TTF-2025, pp.5-6)"
     - "In IFIAR's 2025 survey, 46 of 420 inspected listed public-interest-entity audits where sampling was inspected had a finding (11%); not AI-specific (IFIAR-SURVEY-2026, Table B.2)"
+    - "CPAB's 2025 inspections found auditors relying on automated tools as the primary source of evidence for a class of transactions, in some instances with limited procedures to validate the completeness and accuracy of data inputs; with one tool, substantive testing was generally limited to items flagged as higher risk or outliers, and items the algorithm classed as low risk got no further testing (CPAB-EVOLVING-2025, p. 1)"
   human_checkpoints:
+    - "Auditor challenges how the tool classified items as low risk and decides what, if any, testing the unflagged remainder needs; CPAB questioned whether auditors sufficiently challenged tool outputs (CPAB-EVOLVING-2025, p. 1)"
     - "Auditor applies procedures appropriate to the objective to each selected item and investigates identified items (PCAOB-TAA-2024, discussion of AS 2301.48-.50)"
   role_evolution: >-
     The PCAOB's data show a growing toolset per firm but do not describe role changes (PCAOB-TAA-2024).
@@ -480,6 +482,7 @@
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "Illustrative example 2, pp.49-59" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6" }
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
+    - { ref: CPAB-EVOLVING-2025, title: "The evolving use of technology in the audit (CPAB Exchange)", publisher: "Canadian Public Accountability Board", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2025-evolving-use-of-technology-in-the-audit-en.pdf", date: "2025-12-16", access: full, locator: "'What our inspections reveal', p. 1" }
   last_reviewed: "2026-10-17"
   notes: >-
     Named firms are the six U.S. global networks as listed by the PCAOB; the data are firm-reported for the 2023

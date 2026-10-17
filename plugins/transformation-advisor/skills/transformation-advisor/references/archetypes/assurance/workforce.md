@@ -24,12 +24,12 @@ brackets resolve in §10 or in [sources.md](sources.md).
 | Role | Core work today | Direction of change (evidence status) |
 |---|---|---|
 | Engagement partner | Accept, judge significant risks, sign the opinion, face the audit committee and inspectors | Accountability unchanged [FRC-NEWS-2026]; fewer partners at one firm (reported) [BBL-KPMGPARTNERS-2026] |
-| Director, senior manager | Run portfolios, review files, manage quality | Review of AI output becomes the main control [FRC-GENAI-2026] |
+| Director, senior manager | Run portfolios, review files, manage quality | Human review and oversight of AI output is one of four mitigations in regulator guidance [FRC-GENAI-2026] |
 | Manager | Plan, supervise, review, deal with clients | Review load and agent oversight grow; tool use planned at the start [IFIAR-TTF-2026] |
 | Senior | Run fieldwork, coach juniors, draft memos | Shifts from preparing to reviewing; coaching is where learning now has to be designed |
 | Associate or staff | Walkthroughs, vouching, tick-and-tie, requests, workpapers | The work most exposed to agents (firm forecasts below) |
 | Offshore or delivery-centre teams | Standardised testing and documentation | Increasingly asked to exercise judgement; under FRC monitoring [FRC-ARAQ-2026] |
-| IT audit, data and valuation specialists | ITGCs, analytics, experts' work | ITGCs extend to AI components; AI specialists in demand [FRC-ARAQ-2026] |
+| IT audit, data and valuation specialists | ITGCs, analytics, experts' work | Demand for AI specialists has spiked across audit and consulting [FRC-ARAQ-2026] |
 | Quality and methodology teams | Methodology, tool certification, internal inspection | Own tool governance and monitoring ([quality-management](modules/quality-management.md)) |
 | New roles | AI engineers, audit-transformation leads, "AI-native auditor", product roles for audit agents | Seen in postings at AI-native firms and vendors; no Big Four "agent evaluator" posting found [MODUS-JOBS-2026; FIELDGUIDE-JOBS-2026] |
 
@@ -37,15 +37,15 @@ brackets resolve in §10 or in [sources.md](sources.md).
 
 - **The pyramid is changing at both ends, but measured shape data is thin.** The UK regulator says some firms are moving
   away from the traditional pyramid and pulling offshore teams into the onshore team (an "extended team model"), and will
-  monitor this for a year [FRC-ARAQ-2026].
+  monitor the largest firms' resource models over the next year [FRC-ARAQ-2026].
 - **Leverage moved in different directions.** UK staff per partner or Responsible Individual, 2026 against 2024: KPMG
   19.2 vs 22.6, Deloitte 15 vs 16, EY 19 vs 19, PwC 19 vs 17, BDO 14.2 vs 16.7, MHA 15 vs 9 (firm-supplied, firm-defined,
   offshore not captured) [FRC-METRICS-2026].
-- **Offshore scale.** About a quarter of KPMG UK's audit staff were reported to be offshore (FT figure relayed)
-  [TAO-OFFSHORE-2026]. KPMG's US and UK firms bought a 33% stake in KPMG Global Services in India, serving 50 member firms
+- **Offshore scale.** About a quarter of KPMG UK's audit staff were reported to be offshore (the FT's reading of KPMG
+  UK's transparency report, relayed) [TAO-OFFSHORE-2026]. KPMG's US and UK firms bought a 33% stake in KPMG Global Services in India, serving 50 member firms
   [VI-KGS-2025].
-- **Shapes in circulation.** KPMG's audit digital chief: "We're lifting the pyramid up", not slicing off the bottom
-  (forecast) [CTRLCOUNCIL-WSJ-2026]. A vendor-authored article argues for a "diamond" with a smaller entry layer
+- **Shapes in circulation.** KPMG's audit chief digital officer: "We're lifting the pyramid up", not slicing off the
+  bottom (forecast; WSJ, reproduced) [CTRLCOUNCIL-WSJ-2026]. A vendor-authored article argues for a "diamond" with a smaller entry layer
   (advocacy, not evidence) [CPAPA-DIAMOND-2026].
 - **AI and offshore are two levers on the same pyramid.** Ask how each affects supervision and accountability before
   choosing between them.
@@ -58,7 +58,7 @@ brackets resolve in §10 or in [sources.md](sources.md).
 - **The licensure route is being rewritten.** By 29 Jun 2026, 39 US jurisdictions had signed alternative pathways
   (typically a bachelor's degree plus two years' experience) and 23 were in effect [AT-150HOUR-2026]. No source yet shows
   more licensed CPAs as a result.
-- **UK.** Student numbers rose 0.9% to 156,367; registered audit businesses fell 9% to 3,421 [THEACCOUNTANT-KFAT-2026].
+- **UK.** Student numbers in the UK and Ireland rose 0.9% to 156,367; registered audit businesses fell 9% to 3,421 [THEACCOUNTANT-KFAT-2026].
   About 1,800 members gained the Audit Qualification in 2024 against 1,900 in 2023 [FRC-KFAT-2025].
 - **Long-run demand (forecast).** BLS projects accountant and auditor employment up 5% from 2025 to 2035, about 115,300
   openings a year, and says technology "is not expected to reduce overall demand" [BLS-OOH-2026].
@@ -66,9 +66,11 @@ brackets resolve in §10 or in [sources.md](sources.md).
 ## 4. Intake trends
 
 - **UK Big Four (measured, press-relayed).** Combined graduate and apprentice intake fell from 6,500 (2023) to 5,400
-  (2025); EY and Deloitte UK said 2026 would be broadly flat, while private-equity-backed Grant Thornton UK, Azets and
-  Cooper Parry planned increases [OMANOBS-GT-2026].
-- **PwC.** PwC UK hired 200 fewer entry-level people, citing the economy first and AI second [FORTUNE-PWCUK-2025]. A
+  (2025); EY and Deloitte UK said 2026 would be broadly flat. Private-equity-backed firms are hiring more: Grant Thornton
+  UK planned a 30% rise, Azets expected to match or beat 2025, and Cooper Parry had its largest trainee cohort in 2025
+  [OMANOBS-GT-2026].
+- **PwC.** PwC UK hired 200 fewer entry-level people (1,300 against 1,500); its UK head tied the cut to the economic
+  slowdown while noting that AI is reshaping roles [FORTUNE-PWCUK-2025]. A
   leaked PwC US slide showed junior associate hiring falling 32% by FY2028; PwC confirmed lower campus hiring, citing
   technology and low attrition, but not the numbers [ENTREPRENEUR-PWC-2025].
 - **Postings.** Nearly 7% of Big Four postings in 2025 required AI expertise (under 2% in 2022); auditing roles were just
@@ -80,13 +82,14 @@ brackets resolve in §10 or in [sources.md](sources.md).
 ## 5. How roles are evolving
 
 Firm statements and forecasts (all from interested parties):
-- KPMG's audit digital chief expects "next to no human beings" in routine testing within two to three years, will not
-  hire a graduate "to create workpapers", and says "audit know-how is still going to be gold" [CTRLCOUNCIL-WSJ-2026].
+- A KPMG briefing showed routine testing with no human team within two to three years. Its audit chief digital officer
+  expects "next to no human beings" there, will not hire a graduate "to create workpapers", and says "audit know-how is
+  still going to be gold" (WSJ, reproduced) [CTRLCOUNCIL-WSJ-2026].
 - Unnamed Big Four leaders estimate agents will do 20-30% of a typical audit by 2029 [CTRLCOUNCIL-WSJ-2026].
 - PwC's AI assurance leader: in three years first-years will function "more like fourth years"; training goes "back to
   basics", bringing scepticism and negotiation earlier [YAHOO-KOSAR-2025].
-- All four UK Big Four firms say they are overhauling graduate programmes; KPMG front-loads exams and pairs trainees with
-  experienced staff [RESULTSENSE-GRADTRAIN-2026].
+- All four UK Big Four firms say they have overhauled or are overhauling graduate programmes; KPMG front-loads exams and
+  pairs trainees with experienced staff (City AM, relayed) [RESULTSENSE-GRADTRAIN-2026].
 
 Counter-evidence: US audit offices that adopted AI (identified by AI-skilled hiring) increased auditor headcount,
 mostly junior and mid-level, according to the authors' summary of a peer-reviewed study [ISCA-LAWSHEN-2025].
@@ -141,9 +144,9 @@ UK audit-practice attrition, latest period, firm-supplied [FRC-METRICS-2026]:
 - Busy-period hours as a share of contracted hours, managers and senior managers: Deloitte 116%, EY 124%, KPMG 115%, PwC
   123% [FRC-METRICS-2026]. The FRC summarises "sustained workload pressures and elevated attrition among experienced
   staff" [FRC-ARAQ-2026].
-- Shortage and cuts sit at different grades: the shortage is described at the experienced, qualified layer, while cuts
-  are at entry level. In a vendor survey, 73% of about 500 firms said they turn away work for lack of staff
-  [CONSULTANCY-ADVANCETRACK-2026].
+- Shortage and cuts sit at different grades (advisor reading): the FRC describes elevated attrition among experienced
+  staff, while cuts are at entry level. In a global survey by an outsourcing vendor, 73% of about 500 accounting firms
+  said they turn away clients for lack of staff [CONSULTANCY-ADVANCETRACK-2026].
 
 ## 9. Internal audit talent
 
@@ -176,4 +179,4 @@ Keys not listed here are in [sources.md](sources.md).
 - **LESSENTIEL-2026**: L'Essentiel de l'Eco, *Audit: le "deal" de carriere des Big Four a l'epreuve des nouvelles generations* (press, 2026-05-18). https://lessentieldeleco.fr/7031-audit-deal-de-carriere-des-big-four-a-lepreuve-des-nouvelles-generations/
 - **MODUS-JOBS-2026**: Modus via Ashby public API, *Modus job board (AI-Native Auditor, Audit Manager, others)* (job-posting, postings 2026-04-06 to 2026-06-14). https://api.ashbyhq.com/posting-api/job-board/modus
 - **RESULTSENSE-GRADTRAIN-2026**: Resultsense, *Big Four rebuild graduate training as AI takes first-year work (relays City AM)* (press, 2026-09-23). https://www.resultsense.com/news/2026-09-23-big-four-graduate-training-ai/
-- **VI-KGS-2025**: Venture Intelligence, *Big Four captive divestiture: KPMG US, UK units buy 33% stake in India's KGS for $210-M* (press, 2025). https://news.ventureintelligence.com/ma/big-four-captive-divestiture%3A-kpmg-us%2C-uk-units-buy-33%25-stake-in-india%E2%80%99s-kgs-for-%24210-m
+- **VI-KGS-2025**: Venture Intelligence, *Big Four captive divestiture: KPMG US, UK units buy 33% stake in India's KGS for $210-M* (press, citing Economic Times, 15 Apr 2025). https://news.ventureintelligence.com/ma/big-four-captive-divestiture%3A-kpmg-us%2C-uk-units-buy-33%25-stake-in-india%E2%80%99s-kgs-for-%24210-m

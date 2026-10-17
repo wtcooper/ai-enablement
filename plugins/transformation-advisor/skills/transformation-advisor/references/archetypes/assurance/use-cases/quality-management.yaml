@@ -447,6 +447,7 @@
   evidence_grade: C
   sources:
     - {ref: FRC-ATT-2025, title: "Thematic Review: Certification of Automated Tools and Techniques (PDF; an AI-converted HTML version is at https://www.frc.org.uk/docs/8383/html/)", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://www.frc.org.uk/documents/8383/Thematic_Review_on_the_Certification_of_Automated_Tools_and_Techniques.pdf", date: "2025-06-26", access: full, locator: "Maintenance and monitoring: monitoring the use and impact of ATTs; Global versus UK certification"}
+    - {ref: BOARDAGENDA-FRC-2026, title: "Auditors warned they remain accountable despite use of AI", publisher: "Board Agenda", type: press, url: "https://boardagenda.com/2026/03/31/auditors-warned-they-remain-accountable-despite-use-of-ai/", date: "2026-03-31", access: full, locator: "paragraph on last year's FRC review of six firms' monitoring of automated tools"}
     - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p. 33 (monitoring)"}
     - {ref: AFM-12BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "Autoriteit Financiele Markten (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "pp. 14-15 (building block 3)"}
     - {ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution (2025 report)", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp. 5-6 (ISQM 1 perspectives, point 1)"}
@@ -457,7 +458,11 @@
   notes: >-
     'Piloting' is inferred from IFIAR's statement that some firms have started oversight committees and internal
     protocols to validate tool effectiveness, and from the AFM's single unnamed good-practice dashboard. No firm has
-    published any of the metrics IFIAR suggests.
+    published any of the metrics IFIAR suggests. Board Agenda reports the FRC review as finding that none of the six
+    firms monitored tools' impact on audit quality (BOARDAGENDA-FRC-2026). The FRC's own wording is narrower:
+    monitoring mainly counted teams using tools, there was no formal monitoring to quantify audit-quality impact, and
+    firms were developing capabilities to monitor usage and impact (FRC-ATT-2025, executive summary and p. 20). Quote
+    the FRC wording ('0 of 6 quantified impact'), not the press summary.
 
 - id: assurance-quality-management-08
   title: "Leadership and independent board oversight of AI in the firm's quality plan, with an AI oversight committee and escalation channels"
@@ -945,7 +950,7 @@
     Grade B, not A: the figures are named and measured but vendor-published and measure an adjacent change (a
     platform and methodology overhaul), not the AI component. The page has no publication date; 2026 is inferred
     (the vendor's sitemap shows a July 2026 update). The same customer story appears in
-    assurance-controls-testing-07 for its testing figures.
+    assurance-substantive-testing-10 for its testing figures.
 
 # ---- Part B: engagement-level supervision and review of AI output ----
 
