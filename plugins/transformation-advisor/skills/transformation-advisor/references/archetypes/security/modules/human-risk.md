@@ -2,8 +2,8 @@
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/human-risk.yaml` (18 entries). Ids are shortened here:
 `#06` means `security-human-risk-06`. Source keys in brackets, such as [UCSD-PHISHTRAIN-2025], are given in full in the
-YAML or listed in §10. **Evidence is thin and vendor-heavy on the defender side.** 9 of 18 entries are graded A or B;
-the two A grades (`#01`, `#10`) rest on figures published only on the vendor's own customer pages. Independent,
+YAML or listed in §10. **Evidence is thin and vendor-heavy on the defender side.** 9 of 18 entries are graded A or B
+(1 A, 8 B); the one A grade (`#01`) rests on figures published only on the vendor's own customer pages. Independent,
 peer-reviewed numbers exist mostly for what AI does for attackers, not for AI-based defences. Say so when you quote
 a figure.
 
@@ -41,14 +41,14 @@ training and nudges), SEG (secure email gateway, a filter in front of the mail s
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
 | Awareness programme design and content | Choose topics, build and localise modules, schedule | document-production | Library gaps for own policies and new attacks; modules take days to build [HOXHUNT-CONTENT-2026] |
-| Phishing, vishing and deepfake simulation | Design lures, send, record clicks, reports and credential entry, compare cohorts | review-assurance, data-reporting | Results swing with lure difficulty: 1-2% clicks on banal lures, 30%+ on others [UCSD-PHISHTRAIN-2025]; staff cannot tell voice clones from real callers [BSIDESLV-2026] |
+| Phishing, vishing and deepfake simulation | Design lures, send, record clicks, reports and credential entry, compare cohorts | review-assurance, data-reporting | Results swing with lure difficulty: 1-2% clicks on banal lures, 30%+ on others [UCSD-PHISHTRAIN-2025]; people struggle to tell AI voices from human callers (human callers correctly recognised only 24-45% of the time) [BSIDESLV-2026] |
 | Training delivery and follow-up | Embedded training after a failed simulation, annual courses, nudges | document-production | Over half of embedded-training sessions ended within 10 seconds; under 24% completed the material [UCSD-PHISHTRAIN-2025] |
 | Reported-email handling | Intake from the report button, classify, remove or release, reply to the reporter | transaction-processing | Report volume rises as training works and swamps the SOC [HOXHUNT-AVANADE-2026] |
-| Human-risk measurement and intervention | Combine simulation, ticket and security-tool signals into risk views; coach or escalate | data-reporting | Annual compliance training shows no risk reduction; small teams for large populations [HOXHUNT-UBER-2026] |
+| Human-risk measurement and intervention | Combine simulation, ticket and security-tool signals into risk views; coach or escalate | data-reporting | Uber judged compliance-based training unable to reduce risk effectively; a two-person team for 25,000+ users [HOXHUNT-UBER-2026] |
 | Impersonation and scam takedown | Find lookalike domains, profiles and ads; file takedowns | transaction-processing | "Days to weeks" to find and remove scams by hand [DOPPEL-ARK-2026] |
-| Identity and request verification | New-hire identity checks; verifying payment and credential requests | review-assurance | Checks built for false claims, not stolen real identities with AI-enhanced photos [KNOWBE4-NKHIRE-2024] |
+| Identity and request verification | New-hire identity checks; verifying payment and credential requests | review-assurance | Background checks come back clear when a real, stolen identity is used; the applicant's photo was AI-enhanced [KNOWBE4-NKHIRE-2024] |
 | Insider-risk detection and investigation | Correlate user activity, open cases, escalate to HR or legal | review-assurance, data-reporting | Log volume beyond manual review [ARXIV-2503.02702]; 67 days average to contain (vendor-sponsored survey) [HELPNET-PONEMON-2026] |
-| Social-engineering assessment | Authorised vishing and pretext tests of staff and help desk | expert-judgment | Human-caller testing is slow; AI callers are now cheap for attackers [ARXIV-2607.09970] |
+| Social-engineering assessment | Authorised vishing and pretext tests of staff and help desk | expert-judgment | AI vishing is now economically viable for attackers where human-operated vishing is not [ARXIV-2607.09970] |
 
 ## 3. Where AI is changing the work
 
@@ -63,8 +63,8 @@ research system. Do not suggest otherwise.
   (Avanade: 11% lower failure and 27% higher reporting than its old tool over three months; Qualcomm; vendor pages).
   `#02` behaviour signals trigger just-in-time micro-training and nudges (Uber: 25,000+ users, two-person team;
   research prototypes put LLM coaching inside the browser). `#03` LLMs draft custom modules that a person publishes
-  (vendor claims). `#04` LLM plus OSINT personalised simulations (a 7,700-person university study: about 2.7 times the
-  click rate of generic lures). `#05` AI-voice vishing practice (vendor announcements, no results). `#06` deepfake and
+  (vendor claims). `#04` LLM plus OSINT personalised simulations (a 7,700-person university study: 2.4 to 2.7 times the
+  click rate of generic lures). `#05` AI-voice vishing practice in simulated conversations (vendor announcements, no results). `#06` deepfake and
   executive-impersonation drills, which NYDFS names as an option (no results).
 
 **Reported email and email defence**
@@ -75,7 +75,7 @@ research system. Do not suggest otherwise.
 
 **Impersonation and scams**
 - Automate: `#10` AI detection and automated takedown of brand and executive impersonation (ARK Invest: median 5.5
-  hours to resolve a domain; vendor page). Evidence-packaging agents for takedown: `security-threat-intelligence-18`.
+  hours to resolve a domain, the vendor's own platform metric on its page). Evidence-packaging agents for takedown: `security-threat-intelligence-18`.
 - Delegate: `#11` LLM scam-baiting runs weeks-long conversations with scammers to extract mule accounts (research,
   about 32% disclosure rate).
 
@@ -86,8 +86,8 @@ research system. Do not suggest otherwise.
   version is `security-identity-access-18`). Deepfake voice detection in calls is `security-identity-access-23`.
 
 **Insider risk and shadow AI**
-- Improve: `#14` LLM analysis of insider-threat logs (Xiaohongshu: about 90% less manual intervention in log review, authors'
-  abstract).
+- Improve: `#14` LLM analysis of insider-threat logs (Xiaohongshu: about 90% fewer log samples for engineers
+  to analyse, the authors' estimate on historical SOC logs).
   `#15` insider-risk platforms with AI scoring and investigation (Purview; 42% of surveyed firms use AI here). `#16`
   "audit and educate" coaching on risky AI prompts instead of blocking (vendor claims).
 
@@ -124,24 +124,24 @@ research system. Do not suggest otherwise.
 
 | Measure | Typical figure | Source and provenance |
 |---|---|---|
-| Field trial of training (19,500 staff, 8 months) | Median 10% fail per exercise; 56%+ clicked at some point; embedded training cut failure by 2 points; annual training not linked to fewer failures | [UCSD-PHISHTRAIN-2025], independent, randomised |
+| Field trial of training (19,500 staff, 8 months) | Median 10% fail per exercise; 56%+ clicked at some point; embedded training cut failure by about 1.7 points on average; annual training not linked to fewer failures | [UCSD-PHISHTRAIN-2025], independent, randomised |
 | How embedded training works | Mainly through nudging; content rarely read; delayed training as effective as immediate | [ARXIV-2409.01378], independent |
 | LLM-personalised lures | 10.0% click vs 3.7% (LLM generic) and 4.1% (manual generic); about USD 0.03 per email | [USENIX-CZYBIK-2026], independent, 7,700 people |
 | AI vs human spear phishing | 54% click for both AI and human experts; control 12% | [ARXIV-2412.00586], independent, 101 people |
-| AI voice scams | 16.5% overall compliance; up to 36% (relative in distress) | [ARXIV-2607.09970], independent, survey experiment N=4,100 |
+| AI voice scams | 16.5% said they would or might comply; up to 36% (relative in distress) | [ARXIV-2607.09970], independent, survey experiment N=4,100 (recordings or transcripts, not live calls) |
 | LLM romance-baiting agent | 46% compliance vs 18% for human operators; 87% of scam labour is systematised conversation | [USENIX-ROMANCE-2026], independent, blinded week-long study |
-| Spotting AI-written messages | Only 36% identified the human-written message | [OKTA-AUTHSURVEY-2026], vendor survey, about 2,000 respondents |
+| Spotting AI-written messages | Only 36% of security professionals identified the human-written message | [OKTA-AUTHSURVEY-2026], vendor survey, nearly 2,000 respondents |
 | AI attacks experienced | 44% at least one successful AI-driven attack; 43% saw voice or video impersonation of executives or clients | [OKTA-AUTHSURVEY-2026], vendor survey |
 | Deepfake readiness | 37% rely on legacy tools for deepfake detection | [PINDROP-DRI-2026], vendor survey, 250 US leaders |
-| "Good" failure rate | 5-10% mature programme; 25-35% untrained (definitions vary) | [HOXHUNT-FAILRATE-2026], vendor dataset |
-| Cohort benchmark | 43% higher resilience ratio, 11% lower failure, 27% higher reporting vs previous tool | [HOXHUNT-AVANADE-2026], vendor page, two 1,000-user cohorts |
+| "Good" failure rate | 5-10% mature programme; 25-35% untrained (definitions vary) | [HOXHUNT-FAILRATE-2026], vendor data plus industry studies |
+| Cohort benchmark | 43% higher resilience ratio, 11% lower failure, 27% higher reporting vs previous tool | [HOXHUNT-AVANADE-2026], vendor page, two 1,000-user cohorts; simulations differed between tools |
 | Report-triage time saved | Over 900 SOC hours a month "by one calculation"; 480 hours a month at Valvoline | [HOXHUNT-AVANADE-2026], [ABNORMAL-VALVOLINE-2026], vendor pages |
-| Takedown speed | Median 5.5 hours per domain; 98% success | [DOPPEL-ARK-2026], vendor page |
+| Takedown speed | Median 5.5 hours per domain; 98% success | [DOPPEL-ARK-2026], vendor's own platform metrics for ARK, not reported by ARK |
 | AI in cybercrime (US, 2025) | 22,364 complaints citing AI; USD 893M adjusted losses; AI-related BEC USD 30.3M of over USD 3.0B BEC | [FBI-IC3-2025], regulator; FBI says victims often miss AI's role |
-| Phishing share (EU) | 77.8% of social-engineering techniques in the 2026 dataset | [ENISA-ETL-2026], regulator |
-| AI-supported phishing | Over 80% by early 2025, per third-party reporting ENISA cites | [ENISA-ETL-2025]; the research files describe the base differently (phishing emails vs social-engineering activity); check before quoting |
+| Phishing share (EU) | 77.8% of social-engineering techniques in incidents recorded in 2025 | [ENISA-ETL-2026], regulator |
+| AI-supported phishing | Over 80% by early 2025, per third-party reporting ENISA cites | [ENISA-ETL-2025]; the report itself states the base two ways (80% of observed social-engineering activity in its summary; 80% of phishing emails, Sept 2024-Feb 2025, in its AI section), so quote it as approximate |
 | Insider-risk cost | USD 19.5M a year average; negligent insiders USD 10.3M; 42% use AI for detection | [HELPNET-PONEMON-2026], vendor-sponsored survey |
-| AI tools in data loss | 37% of material data loss cases from misuse or misconfiguration of AI tools | [PROOFPOINT-VOC-2026], vendor survey |
+| AI tools in data loss | 37% of CISOs cite misuse or misconfiguration of AI tools as a cause of material data loss | [PROOFPOINT-VOC-2026], vendor survey of 1,600 CISOs |
 
 Not found anywhere: independent error, override or missed-attack rates for AI phishing triage, AI-personalised
 training, AI insider detection or deepfake detectors in production. Advise clients to measure their own, with a
@@ -154,9 +154,9 @@ control group.
   simulated phishing and voice and video impersonation exercises; cover verifying unexpected money-transfer requests
   and when human review is required; not all authentication factors resist deepfakes [NYDFS-AIGUIDE-2024].
 - FinCEN (2024-11-13): alert on deepfake-media fraud, with more suspicious-activity reports citing deepfakes
-  [FINCEN-DEEPFAKE-NR-2024]. FBI: verify through a known channel, do not rely on hearing an AI voice
+  [FINCEN-DEEPFAKE-NR-2024]. FBI: independently find the person's number and call to verify; AI voices can sound nearly identical to a known contact
   [FBI-IC3PSA-2025]; verify remote workers' identity across the whole employment lifecycle [FBI-DPRK-2025].
-- NIST SP 800-50 Rev. 1 (2024-09-12): lifecycle approach to a learning programme, with metrics and evaluation
+- NIST SP 800-50 Rev. 1 (2024-09): lifecycle approach to a learning programme, with metrics and evaluation
   [NIST-SP80050-2024].
 - EU AI Act: AI literacy duties from 2025-02-02; transparency rules, including labelling AI-generated content, from
   August 2026; high-risk employment uses from 2027-12-02; emotion recognition at work is prohibited [EC-AIACT-2026].
@@ -169,34 +169,33 @@ control group.
   such as financial hardship or job security [SOPHOS-PHAKE-2025].
 - Judge simulations with a control group and with reporting rate and difficulty, not click rate alone
   [UCSD-PHISHTRAIN-2025, HOXHUNT-FAILRATE-2026].
-- Triage agents get their own least-privilege identity and explain each verdict [MSFT-PHISHTRIAGE-2026].
+- Microsoft recommends a dedicated, least-privilege identity for its triage agent, which explains each verdict [MSFT-PHISHTRIAGE-2026].
 - Insider-risk tools pseudonymise users by default and restrict investigator access [PURVIEW-IRM-2026].
 
 **Steps that need human judgment**
-- Approving any payment, credential or data request that arrived by voice, video or email [NYDFS-AIGUIDE-2024].
-- Selecting cohorts and deciding on rollout after a test [HOXHUNT-QUALCOMM-2023].
+- Verifying unexpected payment, credential or data requests received by phone, video or email, with human review where procedures require it [NYDFS-AIGUIDE-2024].
+- Selecting cohorts and deciding on rollout after a test [HOXHUNT-QUALCOMM-2024].
 - Acting on insider-risk cases and escalating to HR or legal [PURVIEW-IRM-2026].
 - Hiring and onboarding identity decisions; the SOC call on anomalous new-hire activity [KNOWBE4-NKHIRE-2024].
-- Scenario approval for vishing and deepfake tests, including executive consent to use their likeness (`#06`, `#17`).
+- Approving simulation scenarios and pretexts: staff-committee approval [USENIX-CZYBIK-2026]; no "unfair" pretexts [SOPHOS-PHAKE-2025].
 
 ## 7. Roles and how they evolve
 
-- **Awareness teams** move from running a training calendar to running a signal-and-intervention system; Uber covers
-  25,000+ users with two people [HOXHUNT-UBER-2026]. Vendors pitch AI as an "on-demand instructional design team"
+- **Awareness teams**: Uber's two-person team runs a signal-and-intervention programme for 25,000+ users instead of
+  relying on annual training [HOXHUNT-UBER-2026]. Vendors pitch AI as an "on-demand instructional design team"
   [HOXHUNT-CONTENT-2026] and as freeing staff for higher-level risk decisions [SECURITYBRIEF-AIDA-2026].
 - **SOC analysts** handling reported email: Avanade says the platform did the work of over 5 analysts a month
   [HOXHUNT-AVANADE-2026]; Valvoline says 4-5 analysts had spent 90% of each day on email tasks, and that analyst time
   has moved to other tasks [ABNORMAL-VALVOLINE-2026]. No source reports headcount cuts.
-- **HR, hiring managers, finance and help desk** become part of the security perimeter and need training
-  [FBI-DPRK-2025, NYDFS-AIGUIDE-2024].
+- **HR and hiring managers**: the FBI recommends educating HR staff, hiring managers and development teams about fake
+  remote workers [FBI-DPRK-2025]; NYDFS expects AI social-engineering training for all personnel, senior executives
+  included [NYDFS-AIGUIDE-2024].
 - **Insider-risk programmes** are urged to treat AI agents as identities with defined access [HELPNET-PONEMON-2026].
-- **Hiring signal**: a Johnson & Johnson awareness-lead posting asks for experience with human risk management
-  platforms and behavioural analytics [JNJ-JOB-2026, search-only].
 
 ## 8. Frontier
 
 - 2025-05: randomised trial at UC San Diego Health questions classic training [UCSD-PHISHTRAIN-2025].
-- 2025-10-24: voice-phishing training on live calls announced [HOXHUNT-VOICE-2025].
+- 2025-10-24: AI voice-phishing practice in simulated conversations announced [HOXHUNT-VOICE-2025].
 - 2026-01-16: AI takedown case at ARK Invest published [DOPPEL-ARK-2026].
 - 2026-01-30: KnowBe4 says seven AI agents are in market for human risk management [SECURITYBRIEF-AIDA-2026].
 - 2026-02-26: few surveyed firms treat AI agents as insiders [HELPNET-PONEMON-2026].
@@ -208,15 +207,18 @@ control group.
   USENIX-ROMANCE-2026]; DEF CON 34 runs a vishing bot contest and BSides LV presents ScamBench
   [DEFCON-34-CONTESTS-2026, BSIDESLV-2026]; Black Hat recap names AI-native insider investigations
   [SWI-BLACKHAT-2026]; in-browser LLM coaching prototypes [ARXIV-2608.02296].
-- 2026: SANS says AI moved from #4 to #2 among human risks in its awareness report (page only) [SANS-AWARENESS-2026].
-- 2026-09-22: ENISA links a higher insider share to the DPRK actor Famous Chollima [ENISA-ETL-2026].
+- 2026-08-31: SANS webcast says AI moved from #4 to #2 among human risks in its 2026 awareness report (page only)
+  [SANS-AWARENESS-2026].
+- 2026-09-22: ENISA says a higher insider share is likely due to the DPRK actor Famous Chollima [ENISA-ETL-2026].
+- 2026-09-23: KnowBe4 launches a browser extension to discover and block, warn or allow shadow-AI sites
+  [KNOWBE4-ARM-2026].
 - 2026-10-07: Okta calls AI "the accelerant" and says identity fundamentals still decide outcomes [CSD-OKTA-2026].
 - 2026-10-14: US charges and raids against DPRK IT-worker facilitators; more than 70 US companies affected
   [CSD-DPRK-2026].
 
 ## 9. Common objections
 
-- **"Training doesn't work."** Partly fair: the largest field trial found little effect from annual or embedded
+- **"Training doesn't work."** Partly fair: a large randomised field trial found little effect from annual or embedded
   training [UCSD-PHISHTRAIN-2025], and community debate echoes it [HN-PHISHTRAIN-2025]. Response: measure with a
   control group; shift toward targeted, behaviour-triggered interventions (`#01`, `#02`) and controls that do not
   depend on users (`#08`, `#13`).
@@ -226,13 +228,14 @@ control group.
 - **"Personalised AI training is just hype."** A controlled study found no measurable advantage for complex
   psychometric personalisation over good generic content [ARXIV-2512.01893]. Response: the targeting with named-deployment
   evidence is by role and repeat failure (`#01`), not personality.
-- **"People can learn to spot deepfakes and AI emails."** Evidence says no: 36% picked the human-written message
+- **"People can learn to spot deepfakes and AI emails."** Evidence says no: only 36% of security professionals picked the human-written message
   [OKTA-AUTHSURVEY-2026]; persuasiveness, not robotic voice, drove compliance [ARXIV-2607.09970]. Response:
   verification procedures that work without spotting fakes (`#13`) [FBI-IC3PSA-2025].
 - **"Behaviour scoring is surveillance."** It is workplace monitoring under ICO guidance, and emotion inference at
   work is banned in the EU [ICO-MONITORING-2023, EC-AIACT-2026]. Response: data minimisation, pseudonymisation,
   agreed purposes [PURVIEW-IRM-2026].
-- **"All the success stories are vendors'."** True: every named defender outcome here is on a vendor page. Response:
+- **"All the success stories are vendors'."** Largely true: every named defender outcome here is on a vendor page or, for Xiaohongshu (`#14`), in a paper
+  partly written by its own staff. Response:
   run a cohort comparison or proof of value on your own users and mail, as Avanade did with two 1,000-user
   cohorts (`#01`).
 - **"Click rate is falling, so we're fine."** Click rate depends on lure difficulty [UCSD-PHISHTRAIN-2025]; track
@@ -243,12 +246,11 @@ control group.
 Keys cited above that are not in the YAML (all others are given in full there):
 
 - ARXIV-2409.01378: "Content, Nudges and Incentives: Embedded Phishing Training", ACM CCS 2024 via arXiv, 2024-09-02, https://arxiv.org/abs/2409.01378
-- NIST-SP80050-2024: NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program, 2024-09-12, https://csrc.nist.gov/pubs/sp/800/50/r1/ipd
+- NIST-SP80050-2024: NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (final), 2024-09, https://csrc.nist.gov/pubs/sp/800/50/r1/final
 - ENISA-ETL-2025: ENISA Threat Landscape 2025, 2025-10, https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025
 - USENIX-ROMANCE-2026: "Love, Lies, and Language Models: Investigating AI's Role in Romance-Baiting Scams", USENIX Security 2026, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/gressel
 - OKTA-AUTHSURVEY-2026: Okta with Yubico, 2026 Global State of Authentication survey, 2026-10-07, https://www.okta.com/newsroom/articles/global-state-of-authentication-2026-ai-phishing-resistance/
-- PINDROP-DRI-2026: Pindrop, Deepfake Readiness Index 2026 (survey of 250 US security leaders), 2026-09-29, https://www.pindrop.com/resources/report/deepfake-readiness-index
-- SANS-AWARENESS-2026: SANS 2026 Security Awareness and Culture Report webcast page (report not opened), 2026, https://www.sans.org/webcasts/sans-2026-security-awareness-culture-report
+- PINDROP-DRI-2026: Pindrop, Deepfake Readiness Index 2026 (Wakefield Research survey of 250 US security leaders, fieldwork June 2026; page shows no publication date), 2026, https://www.pindrop.com/resources/report/deepfake-readiness-index
+- SANS-AWARENESS-2026: SANS 2026 Security Awareness and Culture Report webcast page (report not opened), 2026-08-31, https://www.sans.org/webcasts/sans-2026-security-awareness-culture-report
 - CSD-OKTA-2026: Cybersecurity Dive, Okta report on AI and identity attacks, 2026-10-07, https://www.cybersecuritydive.com/news/phishing-authentication-ai-okta/832376/
 - HN-PHISHTRAIN-2025: Hacker News discussion "Cybersecurity training programs don't prevent phishing scams" (community comments, not evidence), 2025-10-09, https://news.ycombinator.com/item?id=45529577
-- JNJ-JOB-2026: Johnson & Johnson, Senior Manager, Cybersecurity Awareness Training (search-only; date not shown), 2026, https://www.careers.jnj.com/en/jobs/r-092295/senior-manager-cybersecurity-awareness-training/
