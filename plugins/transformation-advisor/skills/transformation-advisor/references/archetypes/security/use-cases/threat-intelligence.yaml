@@ -615,9 +615,9 @@
     - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "feature list; FAQ; customer quote (page undated; retrieval date)"}
     - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "callouts; sections 1.2, 2.1, 3"}
     - {ref: GOOGLE-GTIRELEVANCE-2026, title: "Getting Started with our new Dark Web Intel capabilities, powered by the relevance system", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/dark-web-intel", date: "2026-06-22", access: full, locator: "note 'AI settings need to be enabled'"}
-    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-08-02", access: full, locator: "sections on prompts, plugin and promptbooks"}
+    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "sections on prompts, plugin and promptbooks (ms.date 2026-07-30; updated 2026-09-23)"}
     - {ref: CLOUDFLARE-CLOUDY-2025, title: "Automating threat analysis and response with Cloudy", publisher: Cloudflare, type: vendor, url: "https://blog.cloudflare.com/automating-threat-analysis-and-response-with-cloudy/", date: "2025-08-29", access: full, locator: "sections on the Cloudforce One Threat Events integration"}
-    - {ref: CRWD-CHARLOTTE-2026, title: "Charlotte AI: Agentic Analyst for Cybersecurity", publisher: CrowdStrike, type: vendor, url: "https://www.crowdstrike.com/en-us/platform/charlotte-ai/", date: "2026-10-17", access: full, locator: "FAQ (page undated; retrieval date)"}
+    - {ref: CRWD-CHARLOTTE-2026, title: "Charlotte AI: Agentic Analyst for Cybersecurity", publisher: CrowdStrike, type: vendor, url: "https://www.crowdstrike.com/en-us/platform/charlotte-ai/", date: "2026-09-14", access: full, locator: "FAQ (date from the page's JSON-LD dateModified)"}
     - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -639,7 +639,7 @@
   maturity: in-production
   problem: >-
     Producers write the same finding several times for different readers (SOC, resilience leads, executives); 91% of
-    CISOs value CTI but only 26% say it significantly influences their decisions (SANS-CTIPR-2026). Building a briefing
+    CISOs value CTI but only 26% say it significantly influences their decisions (SANS-CTI-2026). Building a briefing
     means pulling and filtering data from several feeds and tools before writing, which Microsoft says can take hours
     or days (MSFT-TIBAGENT-2026).
   solution: >-
@@ -649,8 +649,8 @@
     'Flows' schedule a prompt such as a daily sector digest and can email the result (GOOGLE-GTIFLOWS-2026;
     GOOGLE-GTICHANGELOG-2026). Recorded Future AI drafts template or custom reports (RF-AI-2026); Cowbell receives
     reports and short summaries for decision-makers (RF-COWBELL-2026); a US public-sector customer uses AI for weekly
-    reports (RF-PUBSECTOR-2026). CISA is building a RAG tool to draft summaries of approved products, with staff
-    reviewing drafts (DHS-AIINV-CISA-2026, DHS-2335). ServiceNow's CTI team advertises a reports-officer role expected
+    reports (RF-PUBSECTOR-2026). CISA's December 2024 inventory listed a RAG tool, at the initiation stage, that drafts
+    tailored summaries of approved CISA products, with staff reviewing drafts (CISA-AIUC-2024, DHS-2335). ServiceNow's CTI team advertises a reports-officer role expected
     to use generative AI for synthesis and trend summaries (JOB-SERVICENOW-2025). Health-ISAC is looking into AI to speed
     alert distribution and collate open-source intelligence for daily member reports (CSD-ISACAI-2026; HISAC-AIISAC-2026).
   outcomes:
@@ -667,7 +667,7 @@
     - "Intel 471 says an AI output is only as effective as the analyst validating it (INTEL471-AIHUMAN-2026)"
     - "RH-ISAC's chief security officer warned AI analysis could break chain of custody of threat data and saw nothing on the market people trust (CSD-ISACAI-2026)"
   human_checkpoints:
-    - "Drafts are reviewed, edited and coordinated by authorized CISA personnel before publication (DHS-AIINV-CISA-2026, DHS-2335)"
+    - "Drafts are reviewed, edited and coordinated by authorized CISA personnel before publication (CISA-AIUC-2024, DHS-2335)"
     - "Analyst approves the final analytic content and carries accountability (ENISA-CTL-2026, section 2.4.7)"
     - "Google Flows keeps each run's input and output and links to the full agent session (GOOGLE-GTIFLOWS-2026)"
   role_evolution: >-
@@ -822,7 +822,7 @@
     next step after detection-as-code, so analysts encode triage and tuning knowledge too (DETENGWEEKLY-167-2026).
   evidence_grade: C
   sources:
-    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-08-02", access: full, locator: "promptbooks 'Check impact of an external threat article' and 'Threat Intelligence 360 report'"}
+    - {ref: MSFT-MDTICOPILOT-2026, title: "Use Microsoft Security Copilot for threat intelligence", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence", date: "2026-07-30", access: full, locator: "promptbooks 'Check impact of an external threat article' and 'Threat Intelligence 360 report' (ms.date 2026-07-30)"}
     - {ref: ANTHROPIC-JOBTIE-2026, title: "Threat Intelligence Engineer (job posting)", publisher: Anthropic, type: job-posting, url: "https://job-boards.greenhouse.io/anthropic/jobs/5074937008", date: "2026-01-20", access: full, locator: "Responsibilities bullets on YARA infrastructure and hunting queries"}
     - {ref: SECURITYARSENAL-RAPID7-2026, title: "AI-Driven Detection Engineering: Converting Threat Intel into Executable Hunt Plans", publisher: Security Arsenal, type: press, url: "https://securityarsenal.com/blog/ai-driven-detection-engineering-converting-threat-intel-into-executable-hunt-plans", date: "2026-06-10", access: full, locator: "paragraphs on Rapid7's pipeline; recommendations list"}
     - {ref: FEEDLY-AUTOMATE-2026, title: "How to automate common CTI workflows (J. D. MacLellan)", publisher: Feedly TI Essentials, type: vendor, url: "https://feedly.com/ti-essentials/posts/how-to-automate-common-cti-workflows", date: "2026-06-12", access: full, locator: "Workflow 5; 'Where the human analyst is still required'"}
@@ -1093,7 +1093,7 @@
   evidence_grade: B
   sources:
     - {ref: INTEL471-HUNTING-2025, title: "How AI can (and can't) help in threat hunting", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-can-and-cant-help-in-threat-hunting", date: "2025-09-09", access: full, locator: "sections 'How AI can help your threat hunting teams', 'Hypothesis Development', 'Data Scoping and Query Design', 'Data Analysis', 'Reporting and Documentation'"}
-    - {ref: MSFT-HUNTASSIST-2026, title: "Microsoft Security Copilot Threat Hunting Assistant in advanced hunting", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant", date: "2026-09-10", access: full, locator: "key capabilities; response components"}
+    - {ref: MSFT-HUNTASSIST-2026, title: "Microsoft Security Copilot Threat Hunting Assistant in advanced hunting", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant", date: "2026-07-02", access: full, locator: "key capabilities; response components (ms.date 2026-07-02; updated 2026-09-10)"}
     - {ref: GOOGLE-DEFADV-HMT-2026, title: "Human-Machine Teaming: Applying AI to Frontline Threat Intelligence Workflows (The Defender's Advantage podcast; show notes)", publisher: Google Threat Intelligence Group / Mandiant, type: podcast, url: "https://feeds.buzzsprout.com/1762840.rss", date: "2026-07-13", access: full, locator: "episode description"}
     - {ref: TECHINFORMED-GOOGLE-2026, title: "Google's SOC agent cuts alert review from 30 minutes to 60 seconds", publisher: TechInformed, type: press, url: "https://techinformed.com/googles-soc-agent-cuts-alert-review-from-30-minutes-to-60-seconds/", date: "2026-06-16", access: full, locator: "paragraph on Detection Engineering and Threat Hunting agents (preview); routed from the security-operations practice deep dive"}
     - {ref: HUNTRESS-JOBDETH-2026, title: "Senior Detection Engineering & Threat Hunting Analyst (job posting)", publisher: Huntress, type: job-posting, url: "https://job-boards.greenhouse.io/huntress/jobs/7998321003", date: "2026-09-23", access: full, locator: "responsibilities and requirements on AI-assisted workflows"}

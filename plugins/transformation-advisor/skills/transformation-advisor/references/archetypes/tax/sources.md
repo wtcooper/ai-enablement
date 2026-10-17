@@ -49,7 +49,7 @@ use-case YAML files carry full rows with locators.
 | HMRC; UK First-tier Tribunal | Roadmap, annual report, software guidelines, tribunal cases | HMRC-ARA-2026; HMRC-GENAI-2026; ICAS-HMRC-2025; FTT-HARBER-2023 |
 | Tax Practitioners Board and ATO (Australia) | Practitioner guidance; authority AI governance | TPB-GS55-2026; ANAO-ATO-2025 |
 | OECD (FTA, Inclusive Framework) | Pillar Two packages and GIR; real-time sharing; intragroup services | OECD-P2-SEP-2026; OECD-FTA-2025; OECD-INTRAGROUP-2026 |
-| European Union | ViDA; AI Act dates | EC-VIDA-2026; GIBSON-AIACT-2026 |
+| European Union | ViDA; AI Act dates | EC-VIDA-2026; GIBSON-AIACT-2026; CUATRECASAS-AIOMNIBUS-2026 |
 | FASB | ASU 2023-09 income tax disclosures (see provision-pillar-two) | (module sources) |
 
 ### Professional bodies
@@ -149,10 +149,12 @@ Format: key, publisher, title (type, date), URL.
 - **CPAPA-TAXGPT-2026**: CPA Practice Advisor, *Why General AI is Not Suitable for Tax Research (Accounting Technology Lab)* (podcast, 2026-06). https://www.cpapracticeadvisor.com/podcasts/why-general-ai-is-not-suitable-for-tax-research-accounting-technology-lab-podcast-june-2026/
 - **CPATL-PEVAL-2026**: CPA Trendlines, *Outlook 2026: AI, Not Layoffs, Powers PE Valuations* (press, 2026-01-02). https://cpatrendlines.com/?p=151910
 - **CRETE-REUTERS-2025**: Reuters via Yahoo Finance, *Thrive-backed accounting firm Crete to spend $500 million in AI roll-up* (press, 4 Jun 2025). https://finance.yahoo.com/news/thrive-backed-accounting-firm-crete-130200467.html
+- **CUATRECASAS-AIOMNIBUS-2026**: Cuatrecasas, *Digital Omnibus on AI has been published (Regulation (EU) 2026/1744)* (firm, 2026-07-24). https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published
 - **DCBAR-TAX-2026**: D.C. Bar, *Tax Conference session: Rise of the Machines: How Artificial Intelligence Is Changing the Tax World* (conference, 8 Jan 2026). https://events.dcbar.org/Tax2026/session/3513387/rise-of-the-machines-how-artificial-intelligence-is-changing-the-tax-world
 - **DELOITTE-TTT-2026**: Deloitte Global, *Riding the wave: A framework to plan for AI (AI-enabled Tax Transformation)* (firm, PDF created 2 Jul 2026). https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf
 - **DIGIN-INSURERS-2026**: Digital Insurance / Accounting Today (Gaetano), *Insurers eyeing AI risk at CPA firms* (press, 21 Apr 2026). https://www.dig-in.com/news/insurers-eyeing-ai-risk-at-cpa-firms
 - **EC-VIDA-2026**: European Commission, *VAT in the Digital Age (ViDA)* (regulator, 2026-07-29). https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en
+- **ECFR-10.27**: eCFR (Treasury), *31 CFR §10.27 Fees (Circular 230), including (b) contingent fees* (regulator, up to date as of 15 Oct 2026). https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27
 - **ECFR-7216-2026**: eCFR / Cornell LII (Treasury), *26 CFR §§301.7216-1, -2, -3* (regulator, current). https://www.law.cornell.edu/cfr/text/26/301.7216-2
 - **ECFR-C230-2026**: eCFR (Treasury), *31 CFR Part 10 (Circular 230) §§10.22, 10.34, 10.35, 10.36, 10.51* (regulator, current as of 1 Oct 2026). https://www.ecfr.gov/current/title-31/subtitle-A/part-10
 - **EIDE-2026**: PR Newswire (Eide Bailly, Reverence Capital), *Eide Bailly Advances Growth Strategy ... Through Investment from Reverence Capital Partners* (firm, 2026-06-23). https://www.prnewswire.com/news-releases/eide-bailly-advances-growth-strategy-and-client-service-commitment-through-investment-from-reverence-capital-partners-302807934.html
@@ -233,4 +235,4 @@ Format: key, publisher, title (type, date), URL.
 - **TRINST-TEIAUDITOR-2026**: Thomson Reuters Institute, *2026 TEI Tax Technology Seminar: What the auditor already knows* (conference, 2026-05-12). https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-auditor-already-knows
 - **VALS-TAXAGENT-2026**: Vals AI, *Tax Agent Bench: Agentic US corporate tax research (leaderboard and methodology)* (vendor, 2026-10-16). https://www.vals.ai/benchmarks/tax_agent_bench
 - **WCG-2026**: WCG (CPA firm), *AI Tax Prep in 2026: Not Quite There Yet* (firm, 24 Jul 2026). https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/
-- **WINTHROP-ABA-2026**: Winthrop & Weinstine, *You May Be a Return Preparer: Using AI Without Violating Sections 7216 and 6713 (panel notice)* (firm, event listed 6 Oct 2026). https://winthrop.com/bold-perspectives/you-may-be-a-return-preparer-using-ai-without-violating-sections-7216-and-6713/
+- **WINTHROP-ABA-2026**: Winthrop & Weinstine, *You May Be a Return Preparer: Using AI Without Violating Sections 7216 and 6713 (panel notice)* (firm, published 14 Aug 2026; panel 6 Oct 2026). https://winthrop.com/bold-perspectives/you-may-be-a-return-preparer-using-ai-without-violating-sections-7216-and-6713/

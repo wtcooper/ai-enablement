@@ -56,7 +56,7 @@ or in [sources.md](sources.md).
 | "AI will shrink our team." | In-house leaders mostly expect stable headcount (58% domestic in KPMG Germany's survey) [KPMG-DE-2026], and Sala argues culpability keeps people in the loop [SALA-TAXNOTES-2026]. In corporate accounting functions (not tax specifically), one study finds AI-linked declines concentrated in junior roles, through attrition [MIT-DOWNING-2026]. Expect a change in composition rather than a uniform cut. |
 | "Juniors will learn by reviewing AI output." | Practitioners propose it, but AICPA's Profession Ready lead warns juniors must do the work before supervising AI's version, and more than half of incoming tax-firm staff already need remediation on fundamentals [TRI-JUDGMENT-2026]. No firm has published results. See [workforce.md](workforce.md) §6. |
 | "Our people don't want AI." | More than a quarter of tax and audit professionals would not join a firm without professional-grade AI, and more than a third already use unapproved tools (vendor survey) [TR-FOP-2026]. The issue is governance more than refusal. |
-| "We can't hire tax technologists." | Employers are hiring them (one 2026 posting asks for only two years in a "tax or tax adjacent field"), and 57% of departments that hired a technologist solely for tax chose a technology background [JOB-DATABRICKS-2026; TRI-DUALROLES-2025]. |
+| "We can't hire tax technologists." | Employers are hiring them (one 2026 posting asks for six years in tax automation or data engineering, of which two need be in a "tax or tax adjacent field"), and 57% of departments that hired a technologist solely for tax chose a technology background [JOB-DATABRICKS-2026; TRI-DUALROLES-2025]. |
 
 ## 5. Data, clients and the tax authority
 
