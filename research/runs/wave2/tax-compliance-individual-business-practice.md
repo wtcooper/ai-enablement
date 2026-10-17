@@ -22,7 +22,7 @@
   - No source publishes override rates.
   - CPA Trendlines teaser research in April 2026 reported fewer tax returns produced, rising salaries and flat-to-down headcount. That is a counter-signal to claimed efficiency (CPATL-SEASON-2026, gated).
 - **Governance is "existing duties apply".** The IRS Office of Professional Responsibility alert 2026-19 (24 Jun 2026) ties AI use to Circular 230 §§10.22, 10.27(a), 10.35, 10.36 and 10.37 and to IRC §§6713 and 7216 (IRS-OPR-2026). The UK PCRT bodies (19 Jan 2026) and the Australian TPB (22 Jul 2026) say the same. No source read gives AI-specific §7216 guidance.
-- **Counts:** 17 use cases (A: 1, B: 10, C: 6, D: 0) and 54 sources. The A entry rests on one named-firm testimonial and is not independent.
+- **Counts:** 17 use cases (A: 1, B: 9, C: 7, D: 0) and 53 sources. The A entry rests on one named-firm testimonial and is not independent.
 
 ---
 
@@ -94,11 +94,11 @@
       provenance: vendor-published
       source_ref: BLACKORE-2026
     - lever: speed
-      description: "Maxwell Locke & Ritter's lead partner is quoted (second-hand, in search coverage only) saying a high-net-worth return with many K-1s that took several days is ready for review in minutes. This is search-only and is not counted as a figure."
-      figure: "none counted"
-      measures: "search-only quotation; not used"
+      description: "Kyle Parks of Maxwell Locke & Ritter is quoted saying a high-net-worth return could take several days to prepare and is now ready for review in minutes."
+      figure: "from several days to minutes (one high-net-worth return type)"
+      measures: "time to a review-ready high-net-worth return, per a customer quote in trade coverage of the launch; no sample or method"
       provenance: vendor-published
-      source_ref: BLACKORE-2026
+      source_ref: MYCPE-BLACKORE-2026
   prerequisites:
     - "Firm tax software integration (Black Ore routes into the firm's software; Accrual currently integrates with CCH Axcess; WCG says Black Ore exports mapped inputs into Lacerte)"
     - "Per-return or per-page pricing accepted: WCG reports Black Ore's pricing as $100 to $150 per return on average, built on $1 per scanned page and $3 per K-1 page, and estimated $200 to $250 for its own mix (WCG's account)"
@@ -119,9 +119,11 @@
     - { ref: BLACKORE-2026, title: "AI Tax Startup Black Ore Opens Platform to CPA Firms", publisher: Sovereign Magazine, type: press, url: "https://www.sovereignmagazine.com/article/ai-tax-startup-black-ore-opens-platform-to-cpa-firms", date: 2026-04-29, access: full, locator: "paragraphs 2-4 (pilot size, product description, accuracy and time-saving claims)" }
     - { ref: ACCTODAY-BLACKORE-2026, title: "Black Ore's Tax Autopilot now generally available", publisher: Accounting Today, type: press, url: "https://www.accountingtoday.com/news/black-ores-tax-autopilot-now-generally-available", date: 2026-04-29, access: full, locator: "CEO statements on touchless rates and CPA attestation; paragraph on compressing preparer functions and prior-year delta concern" }
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: WCG CPAs & Advisors, type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: 2026-07-24, access: full, locator: "Black Ore section (Lacerte handoff, pricing)" }
+    - { ref: MYCPE-BLACKORE-2026, title: "Can Black Ore's Tax Autopilot Fix the CPA Labor Shortage?", publisher: my-cpe, type: press, url: "https://my-cpe.com/insights/news-and-insights/technology/can-black-ore-tax-autopilot-fix-the-cpa-labor-shortage", date: 2026-05-04, access: full, locator: "section on early-user numbers (cost reduction up to 80%) and the Maxwell Locke & Ritter quote" }
+    - { ref: ACCRUAL-HOME-2026, title: "Accrual home page", publisher: Accrual, type: vendor, url: "https://www.accrual.com/", date: 2026-10-17, access: full, locator: "'Complex individual, trust, and partnership returns, prepared end to end' (page undated)" }
     - { ref: ACCRUAL-LAUNCH-2026, title: "Tax platform Accrual launches with AI automation support for all forms", publisher: Accounting Today, type: press, url: "https://www.accountingtoday.com/news/tax-platform-accrual-launches-with-ai-automation-support-for-all-forms", date: 2026-02-05, access: full, locator: "paragraphs on complexity-matrix pricing and CCH Axcess integration" }
   last_reviewed: 2026-10-17
-  notes: "Graded A on the strength of one named-firm, quantified, before-and-after statement (Boulay). It is a vendor-published testimonial, not an independent measurement, and the return form is not stated. Black Ore's pilot lists 75 firms including 40% of the 20 largest CPA firms by revenue (company claim). Maxwell Locke & Ritter is named as a customer. Aiwyn, a practice-management vendor, was reported to be recruiting 100 firms for a 1040 pilot in the 2026 season (BLACKORE-2026)."
+  notes: "Graded A on the strength of one named-firm, quantified, before-and-after statement (Boulay). It is a vendor-published testimonial, not an independent measurement, and the return form is not stated. Black Ore's pilot lists 75 firms including 40% of the 20 largest CPA firms by revenue (company claim). Maxwell Locke & Ritter is named as a customer in the launch coverage. Black Ore's own site claims review time cut by over 50% (BLACKORE-SITE-2026, vendor claim). Aiwyn, a practice-management vendor, was reported to be recruiting 100 firms for a 1040 pilot in the 2026 season (BLACKORE-2026)."
 
 - id: tax-compliance-individual-business-03
   title: Source-document classification, extraction and K-1 mapping with exception-only review
@@ -225,10 +227,10 @@
   runtime_class: workflow-automation
   maturity: piloting
   problem: "Preparers in assisted-tax offices spend much of an appointment collecting and entering information, leaving less time for advice."
-  solution: "H&R Block's CEO said the company is 'transforming how work gets done inside our offices by automating away the mechanical aspects of tax prep', from using AI to eliminate manual data entry to automating the initial review of prior-year returns. The model was tested in pilot offices and will expand to a full designated market area for tax season 27."
+  solution: "H&R Block management said the company is 'transforming how work gets done inside our offices by automating away the mechanical aspects of tax prep', from using AI to eliminate manual data entry to automating the initial review of prior-year returns. This supports an advice-focused office model that was run in pilot offices and will expand to a full designated market area for tax season 27."
   outcomes:
     - lever: experience
-      description: "In the pilot offices H&R Block reported higher client satisfaction, stronger belief in its expertise and value, and more engagement beyond tax season. No figures were given for these pilot results."
+      description: "For the advice-focused pilot-office model (which management says technology enables), H&R Block reported higher client satisfaction, stronger belief in its expertise and value, and more engagement beyond tax season. No figures were given for these pilot results."
       figure: "none published"
       measures: "qualitative management statement about pilot offices; no counts or rates"
       provenance: self-reported
@@ -242,7 +244,7 @@
   role_evolution: "Management says tax pros spend less time collecting and entering information and more on guidance, planning and advice; field leadership is also being reshaped toward year-round development of associates."
   evidence_grade: B
   sources:
-    - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: H&R Block (transcript via earningswhispers.com, read via r.jina.ai mirror), type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: 2026-08-11, access: full, locator: "CEO prepared remarks on pilot offices and 'automating away the mechanical aspects'" }
+    - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: H&R Block (transcript via earningswhispers.com, read via r.jina.ai mirror), type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: 2026-08-11, access: full, locator: "management prepared remarks on pilot offices and 'automating away the mechanical aspects'" }
   last_reviewed: 2026-10-17
   notes: "The transcript is a third-party copy of the company call dated 11 Aug 2026. H&R Block's fiscal year ends 30 June. Management also reported a 200 basis point conversion improvement and a 190 basis point retention gain in the season but did not attribute them to this AI change."
 
@@ -258,7 +260,7 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: "Second Look, a service for new clients that reviews their last three years of returns for missed opportunities, was manual, so tax pros rarely offered it to new clients."
-  solution: "Over about 18 months H&R Block automated Second Look using newer AI capabilities, so a much higher share of new assisted clients opt in. The stated goal is for every new assisted client to get it."
+  solution: "In an analyst Q&A answer, management said that over about 18 months H&R Block automated Second Look using newer AI capabilities, so a much higher share of new assisted clients opt in. The stated goal is for every new assisted client to get it."
   outcomes:
     - lever: growth
       description: "New clients who received Second Look returned at a rate more than 600 basis points higher than those that did not. The comparison is for the Second Look service, not for the AI automation alone, and is not a controlled comparison."
@@ -276,7 +278,7 @@
   role_evolution: "Tax pros no longer carry the manual work of look-back reviews and can concentrate on the highest-opportunity returns."
   evidence_grade: B
   sources:
-    - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: H&R Block (transcript via earningswhispers.com), type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: 2026-08-11, access: full, locator: "CEO remarks on Second Look retention; analyst Q&A answer on automating Second Look" }
+    - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: H&R Block (transcript via earningswhispers.com), type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: 2026-08-11, access: full, locator: "prepared remarks on Second Look retention; analyst Q&A answer on automating Second Look" }
   last_reviewed: 2026-10-17
   notes: "The 600 basis point figure measures an existing service's retention link and is shown for context. The AI automation's own effect is not measured in any published figure."
 
@@ -292,10 +294,10 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: "Retail tax pros must stay current on tax code changes and answer unusual client questions during appointments."
-  solution: "H&R Block built an assistant with OpenAI, powered by vetted content from its Tax Institute, for its tax pros. The 2025 announcement said an initial phase would launch later in 2025 with a large-scale deployment ahead of the 2026 season; on the August 2026 call management called the 'Sidekick' assistant widely adopted across offices."
+  solution: "In April 2025 H&R Block and OpenAI said they were developing a generative AI tool for H&R Block tax pros, powered by vetted data from the Tax Institute, with an initial phase later in 2025 and large-scale deployment ahead of the 2026 season. On the August 2026 call management described 'Sidekick, our AI TaxPro assistant' as having strong adoption across offices."
   outcomes:
     - lever: quality
-      description: "Management said Sidekick 'marched across our offices and saw strong adoption throughout the season' and helped tax pros with complex tax questions. No usage counts or accuracy figures were published."
+      description: "Management said Sidekick 'marched across our offices and saw strong adoption throughout the season' and also said it helped navigate complex tax questions more efficiently. No usage counts or accuracy figures were published."
       figure: "none published"
       measures: "qualitative adoption statement; no counts"
       provenance: self-reported
@@ -312,7 +314,7 @@
     - { ref: CNBC-HRB-2025, title: "ChatGPT for taxes? OpenAI and H&R Block have a plan for tax pros", publisher: CNBC via NBC 7 San Diego, type: press, url: "https://www.nbcsandiego.com/news/business/money-report/chatgpt-for-taxes-openai-and-hr-block-have-a-plan-for-tax-pros/3804532/?amp=1", date: 2025-04-15, access: full, locator: "paragraphs on the project, the Tax Institute data and the 2026 season timing" }
     - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: H&R Block (transcript via earningswhispers.com), type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: 2026-08-11, access: full, locator: "CEO prepared remarks: 'Sidekick, our AI TaxPro assistant'" }
   last_reviewed: 2026-10-17
-  notes: "The transcript uses the name Sidekick and the 2025 report does not; the link between the two is management's description of an AI assistant for tax pros. Naming the 2025 project 'Sidekick' is inferred from the earnings-call wording, not stated in the CNBC article. The research-assistant side of this belongs to the research-advisory module."
+  notes: "The transcript read does not say that Sidekick is the tool built with OpenAI. A search summary of H&R Block earnings commentary said so, but that item was not opened, so the link is unconfirmed. The research-assistant side of this belongs to the research-advisory module."
 
 - id: tax-compliance-individual-business-08
   title: AI-assisted return review with source tie-out, diagnostics and prior-year variance lists
@@ -325,8 +327,8 @@
   change_scope: step
   runtime_class: workflow-automation
   maturity: in-production
-  problem: "Review is the costliest phase of 1040 and business-return work, because reviewers bill at the highest rate and must check numbers against sources line by line."
-  solution: "Intuit's ProConnect runs an AI assistant against thousands of diagnostics. Basis ties every number in a draft return to its source, builds the prior-year variance list and flags exceptions. Accrual shows prepared values, open issues, changes and supporting work together, with every figure traced to its source in one click. Thomson Reuters says agents verify inputs against source documents and provide two-year comparisons and categorised diagnostics."
+  problem: "Reviewers must check figures against source documents and prior years, which takes senior time."
+  solution: "Intuit's ProConnect runs an AI assistant against thousands of diagnostics. Basis ties every number in a draft return to its source, builds the prior-year variance list and flags exceptions. Accrual shows prepared values, open issues, changes and supporting work together, with every figure traced to its source. Thomson Reuters says agents verify inputs against source documents and provide two-year comparisons and categorised diagnostics."
   outcomes:
     - lever: quality
       description: "Seed Money Consulting says knowing the AI is checking its work against thousands of diagnostics gives it confidence. No error counts are published."
@@ -366,7 +368,7 @@
   runtime_class: managed-agent-runtime
   maturity: in-production
   problem: "Partnership and trust returns need trial-balance import, partner capital and allocations, depreciation, §199A and §163(j) calculations, basis tracking and K-1 tie-out, much of it built in spreadsheets."
-  solution: "Accrual describes preparing 1041 work from the governing instrument through to each beneficiary's K-1, and partnership returns from trial balance import to partner K-1s, computing depreciation, §199A, §163(j), allocations and capital accounts deterministically and syncing workpapers to the firm's tax engine. Armanino is its named customer. Basis announced that one of its agents completed a 1065 return autonomously (a demonstration)."
+  solution: "Accrual describes preparing 1041 work from the governing instrument through to each beneficiary's K-1, and partnership returns from trial balance import to partner K-1s, computing depreciation, §199A, §163(j), allocations and capital accounts deterministically and syncing workpapers to the firm's tax engine. Armanino is its named customer. Basis demonstrated an agent that autonomously completed a 1065 return."
   outcomes:
     - lever: speed
       description: "Quotes on Accrual's partnership page, presented under 'How Armanino prepares partnership returns on Accrual' but unattributed by person, say a workpaper that takes about three hours to prepare could potentially be set up in 10 or 15 minutes, and that the saving for an average preparer and reviewer could be four or five hours."
@@ -392,7 +394,7 @@
     - { ref: WCG-PLAYBOOK-2026, title: "AI Tax Preparation and Automation: What It Means for You", publisher: WCG CPAs & Advisors, type: firm, url: "https://wcginc.com/blog/ai-tax-preparation-and-automation-what-it-means-for-you/", date: 2026-07-05, access: full, locator: "Key Takeaways: 'Business entity returns still require human judgment'" }
     - { ref: ACCRUAL-LAUNCH-2026, title: "Tax platform Accrual launches with AI automation support for all forms", publisher: Accounting Today, type: press, url: "https://www.accountingtoday.com/news/tax-platform-accrual-launches-with-ai-automation-support-for-all-forms", date: 2026-02-05, access: full, locator: "paragraphs on K-1 focus, 'not 100%' automation and plans beyond individual returns" }
   last_reviewed: 2026-10-17
-  notes: "Armanino's role is shown on Accrual's own pages (a partnership announcement dated 2026-02-18 is listed on Accrual's press page, but the release returned 403 and was not read). The Basis 1065 item is a demonstration, not a customer deployment. Accrual's CEO told Accounting Today that the product is accurate 'at 100%', a vendor claim set against WCG's view that no vendor is yet end-to-end."
+  notes: "Armanino's role is shown on Accrual's own pages (a partnership announcement dated 2026-02-18 is listed on Accrual's press page, but the release returned 403 and was not read). The Basis 1065 item is a demonstration, not a customer deployment. Accrual's CEO told Accounting Today that its AI is 100% accurate (his claim), which sits against WCG's view that no vendor is yet end-to-end."
 
 - id: tax-compliance-individual-business-10
   title: Trial balance to tax workpapers for pass-through entity returns (account mapping, M-1 adjustments, fixed assets)
@@ -478,7 +480,7 @@
   runtime_class: shared-team-skills
   maturity: announced
   problem: "Firms want to use filed or prior-year returns for advisory work, but cannot paste client data into public AI tools."
-  solution: "WCG says it will use a PII/SOC 2-compliant, zero-data-retention sandbox from a vendor to upload tax returns for client-facing narratives, engagement quoting, tax-plan comparisons, strategy recommendations and internal training. It bought a block of 500 returns at $44 each to get access. Intuit and Thomson Reuters describe a client briefing and an advice product built on prepared-return data."
+  solution: "WCG says it will use a PII/SOC 2-compliant, zero-data-retention sandbox from a vendor to upload tax returns for client-facing narratives, engagement quoting, tax-plan comparisons, strategy recommendations and internal training. It bought a block of 500 returns at $44 each to get access. Intuit lists an AI Client Briefing for ProConnect users."
   outcomes:
     - lever: growth
       description: "none published. WCG describes this as a legitimate, high-value use at the current capability level and says its move toward advisory work is the goal."
@@ -500,6 +502,7 @@
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: WCG CPAs & Advisors, type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: 2026-07-24, access: full, locator: "sections 'What WCG Actually Is Doing' and Juno" }
     - { ref: WCG-PLAYBOOK-2026, title: "AI Tax Preparation and Automation: What It Means for You", publisher: WCG CPAs & Advisors, type: firm, url: "https://wcginc.com/blog/ai-tax-preparation-and-automation-what-it-means-for-you/", date: 2026-07-05, access: full, locator: "section 'Let's Be Direct About What This Is'" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "item 6, IRC sections 6713 and 7216(a)" }
+    - { ref: INTUIT-PROCONNECTAI-2026, title: "AI-Powered Tax Prep Tools (ProConnect)", publisher: Intuit, type: vendor, url: "https://accountants.intuit.com/tax-software/tax-online/ai-features/", date: 2026-10-17, access: full, locator: "resource list entry 'AI Client Briefing' (title only; page undated)" }
   last_reviewed: 2026-10-17
   notes: "Graded C rather than B because the WCG description is a stated plan with no results, and the sandbox vendor is identified only as the source of the Juno sandbox the post names. This is a first-person firm description."
 
@@ -575,7 +578,7 @@
     - { ref: TR-FOP-2026, title: "What the 2026 Future of Professionals Report says tax & audit firm leaders should be prioritizing now", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: 2026-07-21, access: full, locator: "'Universal priorities for firm leaders': govern the tools" }
     - { ref: CPATL-WORKFORCE-2026, title: "CPAs Not Wanted: Firms Build a New Workforce - without Accountants", publisher: CPA Trendlines, type: press, url: "https://cpatrendlines.com/2026/05/29/cpas-not-wanted-firms-build-a-new-workforce-without-accountants", date: 2026-05-29, access: full, locator: "opening paragraphs (the rest is behind a membership wall)" }
   last_reviewed: 2026-10-17
-  notes: "The PwC counts are firm-wide, not tax-specific, and come from a June 2025 interview. The WCG pod is a stated plan (launches November 2026). Graded B on the PwC interview and the WCG announcement together."
+  notes: "Pattern is other: this is organisational enablement (team, champions, governance), not a work pattern. The PwC counts are firm-wide, not tax-specific, and come from a June 2025 interview. The WCG pod is a stated plan (launches November 2026). Graded B on the PwC interview and the WCG announcement together."
 
 - id: tax-compliance-individual-business-15
   title: Taxpayer-facing general-purpose agent reviews uploaded documents and drafts a federal return
@@ -677,7 +680,7 @@
   sources:
     - { ref: ACCRUAL-ARC-2026, title: "Accrual launches Arc AI for accounting workflows", publisher: Accounting Today, type: press, url: "https://www.accountingtoday.com/news/accrual-launches-arc-ai-can-learn-from-and-replicate-accounting-workflows", date: 2026-09-22, access: full, locator: "paragraphs on the three task types and the Clarity Partners PPC demonstration" }
   last_reviewed: 2026-10-17
-  notes: "The notice-sweep part belongs to the controversy module (see Routed). The demonstration used a theoretical client."
+  notes: "Pattern is other: a general agent harness that plans, asks for approval and executes multi-system tasks. The notice-sweep part belongs to the controversy module (see Routed). The demonstration used a theoretical client."
 ```
 
 ---
@@ -698,8 +701,9 @@
 
 ### Common pain points
 
-- Busy-season volume and talent supply: Black Ore cites a Bureau of Labor Statistics figure of about 300,000 net departures and a 17-year-low CPA exam candidate count; the departure figure is not tied to an external source in the article (BLACKORE-2026). WCG says the pipeline is thinning while the workload is not.
+- Busy-season volume and talent supply: The Sovereign article attributes about 300,000 net departures from the profession to the Bureau of Labor Statistics and a 17-year-low CPA exam candidate count to the AICPA; a 125-million-hour annual shortfall in US tax services is Black Ore's own figure, unattributed (BLACKORE-2026). WCG says the pipeline is thinning while the workload is not.
 - K-1 complexity: WCG says K-1s and consolidated 1099s are central to complex individual returns; one product that did not handle them was "disqualifying" for WCG (WCG-NOTREADY-2026).
+- Baseline before LLM agents: scan-and-push extraction into the tax engine (SurePrep with UltraTax CS) is the established workflow; a Thomson Reuters-hosted case study quotes a small firm saying there were not enough hours in the day in busy season (TR-MADSEN-2026, older tool generation, not LLM-based). WCG still uses SurePrep at about 4,500 1040s.
 - Tool handoffs: extraction and pre-preparation tools push data into an engine that recalculates and re-runs diagnostics, so upstream checks are repeated (WCG-NOTREADY-2026).
 - Client chasing and late documents: an Accrual customer quote says document collection was the biggest win (ACCRUAL-INDIV-2026, anonymous).
 - Cost: WCG says AI raises its technology stack cost by about 25% (WCG-PLAYBOOK-2026).
@@ -708,7 +712,7 @@
 
 - Boulay: returns with 60-70+ K-1s from more than 100 hours to about 15-20 hours (vendor-published testimonial; BASIS-TAX-2026).
 - CLH CPAs: about one hour saved per simple 1040 (vendor-published; TR-COCOUNSEL-2025).
-- Black Ore pilot: 75 firms; more than 99% accuracy across tens of thousands of returns; time savings up to 98%; cost per return down by up to 80% (vendor claims; BLACKORE-2026, MYCPE-BLACKORE-2026). Pricing reported by WCG as $100-150 per return on average (WCG's account).
+- Black Ore pilot: 75 firms; more than 99% accuracy across tens of thousands of returns; time savings up to 98%; cost per return down by up to 80%; review time cut by over 50% (vendor claims; BLACKORE-2026, MYCPE-BLACKORE-2026, BLACKORE-SITE-2026). Pricing reported by WCG as $100-150 per return on average (WCG's account).
 - CCH Axcess Scan: 97.5% average overall accuracy on K-1 extraction (vendor claim; WK-AXCESSSCAN-2026).
 - Canopy: up to 20 minutes saved per client (vendor claim; CANOPY-SMARTINTAKE-2025).
 - TaxGPT: 90% reduction in first-pass preparation time (vendor claim; TAXGPT-SITE-2026).
@@ -729,19 +733,22 @@
 
 - 2026-02-05: Accrual launches with $75M and "all forms" support, starting with complex K-1 work and the top 50 firms (ACCRUAL-LAUNCH-2026).
 - 2026-04-29: Black Ore opens Tax Autopilot after a two-year pilot; about 3,700 firms on its waiting list (BLACKORE-2026).
-- 2026-09-22: Accrual's Arc agent, "give it an objective, approve its plan, review the result" (ACCRUAL-ARC-2026).
-- 2026-07-24: WCG says no vendor yet completes a return inside commercial tax software; it will reconsider "November 2026, maybe". It reports Ready to Review's K-1 support is on a November 2026 roadmap (WCG-NOTREADY-2026).
+- 2025-06-16 (older anchor): RSM launched myRSM Tax, built on a $1 billion technology and AI investment, to automate manual tasks and integrate workflows across entities and individuals; no outcome figures were published (RSM-MYRSM-2025, dated 2025-06-16).
+- Basis announced an End-to-End Tax Platform that deploys agents from client intake through preparation and review; the blog post is undated and says leading firms are already building practices around agents doing the first pass (BASIS-E2E-2026).
+- CPA Trendlines (gated) framed 2026 as a tipping point for agentic AI in tax and accounting firms (CPATL-OUTLOOK-2026, 2026-01-10, teaser only).
+- 2026-09-22: Accrual's Arc agent, where a practitioner gives an objective, approves the plan and reviews the result (ACCRUAL-ARC-2026).
+- 2026-07-24: WCG says no vendor yet completes a return inside commercial tax software and that it may revisit in November 2026. It reports Ready to Review's K-1 support is on a November 2026 roadmap (WCG-NOTREADY-2026).
 - 2026-08-11: H&R Block will expand its AI-supported appointment model to a full designated market area for tax season 27 (HRB-Q4CALL-2026).
 - Vendors compete on pricing models: per page or per return (Black Ore, per WCG) versus fees linked to a firm's engagement fees by complexity tier (Accrual) (ACCRUAL-LAUNCH-2026).
 - TaxBench (Columbia, in development) targets 500+ rules and 50+ scenarios for tax year 2025 and field-by-field scoring including whether agents ask for missing information (COLUMBIA-TAXBENCH-2026).
 
 ### Workforce and role effects
 
-- Reviewers start from a prepared draft; staff investigate exceptions (Basis); one reviewer replaces three people on K-1 footnote decisions (PwC); preparers become reviewers (Juno testimonial: "I'm reviewing, and that's a completely different job", anonymous).
+- Reviewers start from a prepared draft; staff investigate exceptions (Basis); one reviewer replaces three people on K-1 footnote decisions (PwC); preparers become reviewers (anonymous Juno testimonial: "I'm reviewing, and that's a completely different job"; JUNO-SITE-2026).
 - Retail: H&R Block says tax pros move from collecting and entering information to guidance and planning (HRB-Q4CALL-2026).
 - Early-career development: Thomson Reuters' article says firms must ensure junior staff still build professional judgment as tasks automate (TR-FOP-2026). Black Ore's CEO said engineering needs "less and less" human engineers and he expects fewer people in other functions (ACCTODAY-BLACKORE-2026).
 - Hiring mix: CPA Trendlines reports public accounting firms adding few accountants but many sales, finance, systems and data roles since 2021 (CPATL-WORKFORCE-2026, gated).
-- Vendors hire accountants as product and deployment staff (BASIS-CAREERS-2026). Basis's open-roles list also includes "Product Manager - Atlas Internal Agents" and "Intelligence Architect" role slugs (listing seen, posting text not read).
+- Vendors hire accountants as product and deployment staff: the Basis accounting-staff posting asks for 4-10 years in audit or tax at a top firm and says the person will not do client accounting but shapes agent behaviour with engineers and prompt work (BASIS-CAREERS-2026).
 
 ### Objections and concerns practitioners raise
 
@@ -795,6 +802,7 @@ Date is the publication date except where marked "retrieval date" (undated vendo
 | BASIS-CAREERS-2026 | Careers at Basis (Member of Accounting Staff; Deployed Intelligence Strategist; open roles list) | Basis | job-posting | https://www.getbasis.ai/careers | 2026-10-17 (retrieval) | full |
 | ACCRUAL-LAUNCH-2026 | Tax platform Accrual launches with AI automation support for all forms | Accounting Today | press | https://www.accountingtoday.com/news/tax-platform-accrual-launches-with-ai-automation-support-for-all-forms | 2026-02-05 | full |
 | ACCRUAL-ARC-2026 | Accrual launches Arc AI for accounting workflows | Accounting Today | press | https://www.accountingtoday.com/news/accrual-launches-arc-ai-can-learn-from-and-replicate-accounting-workflows | 2026-09-22 | full |
+| ACCRUAL-HOME-2026 | Accrual home page | Accrual | vendor | https://www.accrual.com/ | 2026-10-17 (retrieval) | full |
 | ACCRUAL-INDIV-2026 | Accrual: individual (1040, 1041) tax preparation | Accrual | vendor | https://www.accrual.com/tax/individuals | 2026-10-17 (retrieval) | full |
 | ACCRUAL-PARTNER-2026 | Accrual: partnership returns | Accrual | vendor | https://www.accrual.com/tax/partnerships | 2026-10-17 (retrieval) | full |
 | JUNO-SITE-2026 | Juno: tax prep automation (customer quotes) | Juno | vendor | https://www.juno.tax/ | 2026-10-17 (retrieval) | full |
@@ -832,15 +840,15 @@ Date is the publication date except where marked "retrieval date" (undated vendo
 | PCRT-AI-2026 | Professional bodies issue AI advice to members | Association of Taxation Technicians (PCRT bodies) | professional-body | https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members | 2026-01-19 | full |
 | ICAEW-PCRT-2026 | PCRT bodies publish guidance on using AI in tax | ICAEW | professional-body | https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax | 2026-01 | full |
 
-Source counts (distinct rows above, 49): vendor 14, press 14 (incl. 3 CPA Trendlines teasers), firm 8, regulator 4, academic 2, professional-body 2, survey 1, job-posting 1, conference 0, podcast 0, community 0. (Totals: 14+14+8+4+2+2+1+1 = 46; see the corrected tally in the closing note.)
+Source counts: 53 distinct sources, all opened (several only as gated teasers or short summaries, noted in the table): vendor 19, press 16, firm 8, regulator 4, academic 2, professional-body 2, survey 1, job-posting 1.
 
 ---
 
 ## 6. Gaps
 
 - **Independent quality evidence is absent.** No error rates, override rates, parallel-run results, regulator inspection findings or third-party measurement for Ready to Review, Black Ore, Basis, Accrual, Juno or TaxGPT. TaxCalcBench is an LLM-only calculation test from 2025 with 2025-vintage models.
-- **Named customers and outcomes are thin.** Only Boulay, CLH, Maxwell Locke & Ritter, Armanino, Kulangy CPA, Whitcomb & Sheridan, Seed Money Consulting and H&R Block are named; all outcome statements are testimonials or management remarks. Maxwell Locke & Ritter's quote came only from search coverage. Armanino's partnership release (2026-02-18, BusinessWire) returned 403.
-- **Blocked or unread:** Wolters Kluwer news pages (CCH Axcess Expert AI releases, 403 even through the mirror), BusinessWire releases for Canopy (Sep and Oct 2025) and Accrual (Sep 2026), the Axios IRS story (not in scope), the AICPA small-firm generative AI policy template (no content returned), the AICPA 2026 tax software survey AI results (page summary only), the Thomson Reuters 2026 State of Tax Professionals report and the Blue J/CPA.com outlook (landing pages only), Reddit r/taxpros (blocked by network policy), TaxDome and Karbon AI pages (no usable text), the full TaxGPT trade article (paywalled), and CPA Trendlines bodies (membership-gated).
+- **Named customers and outcomes are thin.** Only Boulay, CLH, Maxwell Locke & Ritter, Armanino, Kulangy CPA, Whitcomb & Sheridan, Seed Money Consulting and H&R Block are named; all outcome statements are testimonials or management remarks. Armanino's partnership release (2026-02-18, BusinessWire) returned 403.
+- **Blocked or unread:** Wolters Kluwer news pages (CCH Axcess Expert AI releases, 403 even through the mirror), BusinessWire releases for Canopy (Sep and Oct 2025) and Accrual (Sep 2026), the AICPA small-firm generative AI policy template (no content returned), the AICPA 2026 tax software survey AI results (page summary only), the Thomson Reuters 2026 State of Tax Professionals report and the Blue J/CPA.com outlook (landing pages only), Reddit r/taxpros (blocked by network policy), TaxDome and Karbon AI pages (no usable text), the full TaxGPT trade article (paywalled), and CPA Trendlines bodies (membership-gated).
 - **Job postings:** only Basis role pages were read. A search result pointed to a Utah firm's tax manager posting that mentions drafting, research and review with AI tools, but the page returned no text and the posting has no confirmed date, so it is not used. No Big Four, mid-tier or H&R Block postings were reached.
 - **UK and other markets:** only ApariPro and the PCRT guidance were read. An IRIS (UK) anomaly-check tool and the CCH iFirm collaboration were seen only in a search summary or on ApariPro's own page. Nothing on Germany, Canada, Australia (beyond the TPB statement) or India.
 - **Trusts and estates (1041)** appear only on Accrual's pages. No practitioner source on AI use for fiduciary returns was found.
