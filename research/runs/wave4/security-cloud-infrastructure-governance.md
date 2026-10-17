@@ -5,7 +5,7 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
 
 ## 1. Summary
 
-**Counts.** 16 candidate use cases: evidence grade A: 0, B: 0, C: 1, D: 15. Sources: see section 5 (counts by type are in the reply to the caller). No source gives a measured outcome from a named organization using AI for cloud posture, network or endpoint security in production. All grade-D entries are labelled "idea" and rest on academic benchmarks, regulator guidance or both.
+**Counts.** 16 candidate use cases: evidence grade A: 0, B: 0, C: 1, D: 15. Sources: 71 listed in section 5 (academic 37, regulator 14, standard-setter 6, survey 6, vendor 6, press 2); 25 of them are used in the module notes rather than in use-case entries. No source gives a measured outcome from a named organization using AI for cloud posture, network or endpoint security in production. All grade-D entries are labelled "idea" and rest on academic benchmarks, regulator guidance or both.
 
 **What the evidence says**
 
@@ -1177,7 +1177,7 @@ Compiled 2026-10-17. Archetype `security`, module `cloud-infrastructure` (cloud 
     date: '2026-10-17'
     access: full
     locator: '''The research'' list'
-  notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. This is a control set for AI used on infrastructure, backed by regulator guidance; the agent-identity detail is in the ai-security and identity-access modules.'
+  notes: 'Grade D, idea: research-stage; no named organization''s production use found. The figures in outcomes come from academic benchmarks and prototypes, not deployments. Pattern is `other`: a control set (identity, egress, approval, logging) wrapped around any agent, rather than a task pattern. This is a control set for AI used on infrastructure, backed by regulator guidance; the agent-identity detail is in the ai-security and identity-access modules.'
   archetype: security
   module: cloud-infrastructure
   function: technology-it

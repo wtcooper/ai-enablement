@@ -1,6 +1,6 @@
 # Security operations (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/operations.yaml` (25 entries). Ids are shortened here:
+Last reviewed 2026-10-17. Use cases live in `../use-cases/operations.yaml` (24 entries). Ids are shortened here:
 `#05` means `security-operations-05`. Source keys in brackets, such as [SANS-SOC-2026], are given in full in the YAML
 or listed in §10. Almost every outcome figure is self-reported by the deploying team or published by a vendor about its
 own product or customer. No independent, production-scale measure of AI miss rates or override rates exists yet. Say
@@ -53,9 +53,9 @@ Context: SANS 2026 found 79% of SOCs use AI or ML tools but only 36% have built 
 
 Grouped by the four Reimagine lenses: improve (assist or augment a step), automate (no person on the normal path),
 delegate (an agent owns a multi-step outcome with checkpoints), reinvent (the service or operating model changes).
-Coverage: augment 11, automate 6, delegate 5, assist 2; step 10, process 11, model 3. Assist is thin because plain
-copilot use is common but rarely written up; model-level change has only three entries, all vendor-reported or
-hiring data.
+Coverage: augment 11, automate 6, delegate 5, assist 2; step 10, process 11, model 3. Assist is thin: the sources rarely
+write up plain copilot use, though SANS says most analysts use AI individually [SANS-SOC-2026]. Model-level change
+has three entries, all vendor-reported or hiring data.
 
 **Alert triage**
 - Improve: `#02` precedent retrieval shows how similar alerts were closed (Figma: 20% fewer on-call pages). `#03`

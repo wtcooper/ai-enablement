@@ -32,8 +32,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: background-agent
   maturity: in-production
-  problem: Periodic scans and inside-out data classification list assets and known CVEs, but do not show what is reachable from the internet and exploitable. At project44, false-positive-heavy scanners meant analysts validated findings before engineers would act.
-  solution: A vendor-built agent (Wiz Red Agent) continuously discovers the perimeter, tests reachable endpoints, checks whether sensitive data is exposed, classifies and redacts what it finds, and raises a finding with a severity. Orca describes the same attacker-side role as one of three agent pods (Red, Blue, Green).
+  problem: Periodic scans and inside-out data classification list assets and known CVEs, but do not show what is reachable from the internet and exploitable. At project44, false-positive-heavy scanners meant analysts validated findings before engineers would act. (WIZ-PROJECT44-2026)
+  solution: A vendor-built agent (Wiz Red Agent) continuously discovers the perimeter, tests reachable endpoints, checks whether sensitive data is exposed, classifies and redacts what it finds, and raises a finding with a severity. Orca describes the same attacker-side role as one of three agent pods (Red, Blue, Green). (WIZ-REDAGENT-2026; ORCA-AGENTPODS-2026)
   outcomes:
   - lever: speed
     description: project44 reports faster remediation after adopting the Wiz Red and Green Agents with Wiz Code
@@ -131,8 +131,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: background-agent
   maturity: in-production
-  problem: Cloud detections require pulling identity, network, runtime and code context from several consoles. Wiz says manual investigation across sprawling cloud environments can take hours. ZS wanted analysts to spend their time on advanced investigations; Owkin runs a three-person security team over a large AWS estate.
-  solution: 'The Wiz Blue Agent investigates a cloud threat: it gathers evidence, compares activity with a baseline (30 days in Wiz''s worked example), checks IP reputation and correlates across AWS and GitHub, then returns a verdict with the full investigation flow. ZS first ran it in parallel with analysts for three months, then let it close a defined set of low-severity cloud detections inside Wiz Defend.'
+  problem: Cloud detections require pulling identity, network, runtime and code context from several consoles. Wiz says manual investigation across sprawling cloud environments can take hours. ZS wanted analysts to spend their time on advanced investigations; Owkin runs a three-person security team over a large AWS estate. (WIZ-BLUEAGENT-GA-2026; WIZ-ZS-2026; WIZ-OWKIN-2026)
+  solution: 'The Wiz Blue Agent investigates a cloud threat: it gathers evidence, compares activity with a baseline (30 days in Wiz''s worked example), checks IP reputation and correlates across AWS and GitHub, then returns a verdict with the full investigation flow. ZS first ran it in parallel with analysts for three months, then let it close a defined set of low-severity cloud detections inside Wiz Defend. (WIZ-BLUEAGENT-CASE-2026; WIZ-BLUEAGENT-GA-2026; WIZ-ZS-2026)'
   outcomes:
   - lever: quality
     description: ZS compared Blue Agent analyses with its analysts' parallel investigations before operationalizing
@@ -256,8 +256,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: workflow-automation
   maturity: in-production
-  problem: Cloud findings arrive without an owner or a fix. La Centrale's three-person security team had to correlate network exposure, IAM permissions and data sensitivity by hand, and fixes have to be made where resources are defined.
-  solution: The Wiz Green Agent uses code-to-cloud mapping, ownership context and remediation history to say where, who and how, and can open a pull request or hand the fix to a coding agent. Orca's Green Pod works out who owns a finding and drafts the fix in the team's usual format. La Centrale is running a proof of concept to automate Jira ticket generation with tailored remediation blueprints.
+  problem: Cloud findings arrive without an owner or a fix. La Centrale's three-person security team had to correlate network exposure, IAM permissions and data sensitivity by hand, and fixes have to be made where resources are defined. (WIZ-LACENTRALE-2026)
+  solution: The Wiz Green Agent uses code-to-cloud mapping, ownership context and remediation history to say where, who and how, and can open a pull request or hand the fix to a coding agent. Orca's Green Pod works out who owns a finding and drafts the fix in the team's usual format. La Centrale is running a proof of concept to automate Jira ticket generation with tailored remediation blueprints. (WIZ-OPMODEL-2026; ORCA-AGENTPODS-2026; WIZ-LACENTRALE-2026)
   outcomes:
   - lever: speed
     description: project44 uses the Green Agent for dependency-upgrade recommendations and code fixes, alongside the Red Agent
@@ -347,8 +347,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: managed-agent-runtime
   maturity: in-production
-  problem: Individual runtime findings on EC2, ECS and EKS are noisy; AWS says customer feedback consistently names noise as a major pain point. A runtime signal alone often stays below the threshold for a critical finding.
-  solution: Amazon GuardDuty Extended Threat Detection correlates weak signals into one attack-sequence finding when they cross a credibility threshold. From 2026-05-20 it attaches five indicator types (vulnerability, malicious package, reachability, misconfiguration, sensitive data) taken from Inspector, VPC Reachability Analyzer, Macie and Security Hub posture data.
+  problem: Individual runtime findings on EC2, ECS and EKS are noisy; AWS says customer feedback consistently names noise as a major pain point. A runtime signal alone often stays below the threshold for a critical finding. (AWS-GUARDDUTY-ETD-2026)
+  solution: Amazon GuardDuty Extended Threat Detection correlates weak signals into one attack-sequence finding when they cross a credibility threshold. From 2026-05-20 it attaches five indicator types (vulnerability, malicious package, reachability, misconfiguration, sensitive data) taken from Inspector, VPC Reachability Analyzer, Macie and Security Hub posture data. (AWS-GUARDDUTY-ETD-2026)
   outcomes:
   - lever: quality
     description: Net-new attack sequences on the runtime-process surface after the indicators were added
@@ -400,8 +400,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: background-agent
   maturity: piloting
-  problem: WRITER saw thousands of alerts from cloud security tooling, of which roughly 100 were truly actionable after triage, about a 2% signal rate. Analysts kept an undocumented heuristic about what to ignore, and it left when senior analysts left.
-  solution: 'WRITER built Cerebro, an open-source agent system. It normalizes findings from CSPM, CNAPP and vulnerability tools, builds a resource graph, groups related findings into one incident, and has an agent choose: resolve now, ticket (with priority and owner), or defer/accept/monitor.'
+  problem: WRITER saw thousands of alerts from cloud security tooling, of which roughly 100 were truly actionable after triage, about a 2% signal rate. Analysts kept an undocumented heuristic about what to ignore, and it left when senior analysts left. (WRITER-CEREBRO-2026)
+  solution: 'WRITER built Cerebro, an open-source agent system. It normalizes findings from CSPM, CNAPP and vulnerability tools, builds a resource graph, groups related findings into one incident, and has an agent choose: resolve now, ticket (with priority and owner), or defer/accept/monitor. (WRITER-CEREBRO-2026)'
   outcomes:
   - lever: quality
     description: 'Baseline before Cerebro: share of cloud alerts that were actionable'
@@ -452,8 +452,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: workflow-automation
   maturity: piloting
-  problem: Permissions accumulate. IAM Access Analyzer can recommend right-sized policies, but a console fix is overwritten at the next deployment if the role is defined in CloudFormation or CDK, and manual remediation leaves no record of why. Tightening access can also break workflows.
-  solution: 'AWS describes a daily automation that reads Access Analyzer findings, uses CloudTrail to find how each role was created, and uses Bedrock models to produce a pull request with CDK code and a plain-English explanation (IaC roles), an issue with migration steps (manual roles) or a soft-disable plan (unused roles). Two fwd:cloudsec 2026 talks show practitioners building agent versions: one describes a coding agent that drafts least-privilege Terraform updates from CloudTrail, plus agents that raise PRs after AccessDenied errors and check break-glass use against stated intent. A third talk describes a four-agent team (IAM, red team, threat intelligence, UEBA) that scored and reduced identity risk in an AWS account.'
+  problem: Permissions accumulate. IAM Access Analyzer can recommend right-sized policies, but a console fix is overwritten at the next deployment if the role is defined in CloudFormation or CDK, and manual remediation leaves no record of why. Tightening access can also break workflows. (AWS-LEASTPRIV-2026)
+  solution: 'AWS describes a daily automation that reads Access Analyzer findings, uses CloudTrail to find how each role was created, and uses Bedrock models to produce a pull request with CDK code and a plain-English explanation (IaC roles), an issue with migration steps (manual roles) or a soft-disable plan (unused roles). Two fwd:cloudsec 2026 talks show practitioners building agent versions: one describes a coding agent that drafts least-privilege Terraform updates from CloudTrail, plus agents that raise PRs after AccessDenied errors and check break-glass use against stated intent. A third talk describes a four-agent team (IAM, red team, threat intelligence, UEBA) that scored and reduced identity risk in an AWS account. (AWS-LEASTPRIV-2026; FWDCLOUDSEC-SMOLEN-2026; FWDCLOUDSEC-HORSMAN-2026)'
   outcomes:
   - lever: risk
     description: A speaker (Field CTO at Sonrai Security) ran a four-agent team against a real AWS account
@@ -519,8 +519,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: shared-team-skills
   maturity: emerging
-  problem: AI coding assistants now write much of the infrastructure code, so guardrails aimed at developers' judgment (approved Terraform modules, policy gates, training) no longer reach the party doing the reasoning.
-  solution: 'A reference architecture presented at fwd:cloudsec 2026: an MCP server exposes approved Terraform modules from an internal registry, runs OPA policies with output designed for agents (severity, fix hints, auto-fix eligibility), auto-remediates fixable violations, scores exceptions by risk and sends high-risk ones to humans, then opens a compliant PR with a reasoning trace.'
+  problem: AI coding assistants now write much of the infrastructure code, so guardrails aimed at developers' judgment (approved Terraform modules, policy gates, training) no longer reach the party doing the reasoning. (FWDCLOUDSEC-RENGASAMY-2026)
+  solution: 'A reference architecture presented at fwd:cloudsec 2026: an MCP server exposes approved Terraform modules from an internal registry, runs OPA policies with output designed for agents (severity, fix hints, auto-fix eligibility), auto-remediates fixable violations, scores exceptions by risk and sends high-risk ones to humans, then opens a compliant PR with a reasoning trace. (FWDCLOUDSEC-RENGASAMY-2026)'
   outcomes:
   - lever: risk
     description: none published
@@ -570,8 +570,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: workflow-automation
   maturity: announced
-  problem: Patching takes weeks and cannot match AI-speed vulnerability discovery. A fwd:cloudsec abstract cites a 43-day median time to patch a critical vulnerability, and critical-infrastructure operators say uptime and safety testing prevent patching at AI speed. Tuning WAF rules across hundreds of stacks does not scale with headcount.
-  solution: 'Two routes. In-house: a DevSecOps manager at Adobe describes AI-assisted WAF rule generation and context-aware tuning inside a human-in-the-loop pipeline. Vendor: Palo Alto Networks announced Frontier Virtual Patching, network-level patches delivered through its Frontier AI Critical Defense Program (2026-08-19) and a collaboration with IBM and Red Hat (2026-06-24) that plans same-day network protection for newly discovered flaws.'
+  problem: Patching takes weeks and cannot match AI-speed vulnerability discovery. A fwd:cloudsec abstract cites a 43-day median time to patch a critical vulnerability, and critical-infrastructure operators say uptime and safety testing prevent patching at AI speed. Tuning WAF rules across hundreds of stacks does not scale with headcount. (FWDCLOUDSEC-ALIM-2026; PANW-FRONTIERCDP-2026)
+  solution: 'Two routes. In-house: a DevSecOps manager at Adobe describes AI-assisted WAF rule generation and context-aware tuning inside a human-in-the-loop pipeline. Vendor: Palo Alto Networks announced Frontier Virtual Patching, network-level patches delivered through its Frontier AI Critical Defense Program (2026-08-19) and a collaboration with IBM and Red Hat (2026-06-24) that plans same-day network protection for newly discovered flaws. (FWDCLOUDSEC-ALIM-2026; PANW-FRONTIERCDP-2026; PANW-LIGHTWELL-2026)'
   outcomes:
   - lever: speed
     description: Claim in the Adobe manager's talk abstract about the approach
@@ -638,8 +638,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: managed-agent-runtime
   maturity: announced
-  problem: Firewall rulebases grow through temporary exceptions, cloud deployments and new AI-driven workloads. Check Point says policies become risky after months of incremental changes, and reviews wait for the next policy review cycle.
-  solution: Cato Networks' AI-Driven Posture agent analyses rule behaviour against traffic across the Internet, WAN and LAN firewalls and remote port forwarding, flags forgotten test rules and overly permissive rules, and a wizard recommends rules to enable (for example TLS inspection for AI tools). Check Point's AI Auditor and AI Insights look for redundant rules, excessive permissions, conflicts and unused access paths, and prioritize IPS protections by risk.
+  problem: Firewall rulebases grow through temporary exceptions, cloud deployments and new AI-driven workloads. Check Point says policies become risky after months of incremental changes, and reviews wait for the next policy review cycle. (CHECKPOINT-AGENTICNET-2026)
+  solution: Cato Networks' AI-Driven Posture agent analyses rule behaviour against traffic across the Internet, WAN and LAN firewalls and remote port forwarding, flags forgotten test rules and overly permissive rules, and a wizard recommends rules to enable (for example TLS inspection for AI tools). Check Point's AI Auditor and AI Insights look for redundant rules, excessive permissions, conflicts and unused access paths, and prioritize IPS protections by risk. (CATO-AUTONOMOUSPOL-2026; CHECKPOINT-AGENTICNET-2026)
   outcomes:
   - lever: risk
     description: none published
@@ -689,8 +689,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: background-agent
   maturity: in-production
-  problem: First-pass triage of Kubernetes incidents needs pod state, logs, metrics and deployment history from many clusters.
-  solution: An open-source investigation agent runs in a production Kubernetes estate, one instance per cluster, doing first-pass triage from pod state, logs, metrics and deployment history. The abstract's author, who leads cloud and autonomous systems security at a European automotive manufacturer, says it has run for over a year and has never written to a cluster; the title and abstract speak of 'our' fleet.
+  problem: First-pass triage of Kubernetes incidents needs pod state, logs, metrics and deployment history from many clusters. (FWDCLOUDSEC-RAJI-2026)
+  solution: An open-source investigation agent runs in a production Kubernetes estate, one instance per cluster, doing first-pass triage from pod state, logs, metrics and deployment history. The abstract's author, who leads cloud and autonomous systems security at a European automotive manufacturer, says it has run for over a year and has never written to a cluster; the title and abstract speak of 'our' fleet. (FWDCLOUDSEC-RAJI-2026)
   outcomes:
   - lever: quality
     description: Four failure modes found despite a 'read-only' permission label
@@ -732,8 +732,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: managed-agent-runtime
   maturity: announced
-  problem: Detections exceed what SOC staff can triage in a day. Models that emit a label directly do not reason about whether a detection is a genuine threat, and chain-of-thought degrades the confidence score that automation depends on.
-  solution: CrowdStrike trained a chain-of-thought triage classifier on real, human-labelled Windows endpoint detections using prompt optimization, self-training and reinforcement learning with verifiable rewards, plus a separate calibrator that reads the reasoning trace and estimates whether the verdict is correct. CrowdStrike says its Charlotte AI triage models already give true/false-positive verdicts with calibrated confidence; the reasoning model is research focused on Windows endpoint detections.
+  problem: Detections exceed what SOC staff can triage in a day. Models that emit a label directly do not reason about whether a detection is a genuine threat, and chain-of-thought degrades the confidence score that automation depends on. (ARXIV-2607.28460)
+  solution: CrowdStrike trained a chain-of-thought triage classifier on real, human-labelled Windows endpoint detections using prompt optimization, self-training and reinforcement learning with verifiable rewards, plus a separate calibrator that reads the reasoning trace and estimates whether the verdict is correct. CrowdStrike says its Charlotte AI triage models already give true/false-positive verdicts with calibrated confidence; the reasoning model is research focused on Windows endpoint detections. (ARXIV-2607.28460; CROWDSTRIKE-TRIAGE-2026)
   outcomes:
   - lever: quality
     description: Overall test accuracy of the reasoning-enabled classifier
@@ -790,8 +790,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: managed-agent-runtime
   maturity: piloting
-  problem: Security administrators and vulnerability teams keep a continuous queue of posture recommendations. The difficulty is knowing which to fix first. Wiz Research reports that high-priority alerts lose more than half their count once reachability, toxic permissions and sensitive-data access are applied.
-  solution: Microsoft's Posture Prioritization Agent (Project Perception, limited public preview) ingests cloud and device posture findings and produces a ranked, explained action plan, including a threat-driven mode that maps a threat to posture findings. CrowdStrike announced AI-enhanced remediation plans in Falcon Cloud Security with time estimates, confidence indicators, permission needs and a validation check.
+  problem: Security administrators and vulnerability teams keep a continuous queue of posture recommendations. The difficulty is knowing which to fix first. Wiz Research reports that high-priority alerts lose more than half their count once reachability, toxic permissions and sensitive-data access are applied. (WIZ-CLOUDRISK-2026)
+  solution: Microsoft's Posture Prioritization Agent (Project Perception, limited public preview) ingests cloud and device posture findings and produces a ranked, explained action plan, including a threat-driven mode that maps a threat to posture findings. CrowdStrike announced AI-enhanced remediation plans in Falcon Cloud Security with time estimates, confidence indicators, permission needs and a validation check. (MSFT-LEARN-PPA-2026; CROWDSTRIKE-CLOUDREM-2026)
   outcomes:
   - lever: quality
     description: Wiz Research compared high-priority alerts before and after applying external reachability, toxic permission combinations and sensitive-data access
@@ -858,8 +858,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: managed-agent-runtime
   maturity: announced
-  problem: Point-in-time compliance checks struggle to keep pace with dynamic cloud environments; public-sector teams also need AI workload discovery and remediation inside a FedRAMP High boundary.
-  solution: Wiz announced on 2026-10-14 that its Red, Blue and Green agents are available in Wiz for Gov, its FedRAMP High environment. Wiz says continuous visibility enhanced by AI analysis simplifies evidence collection and risk-posture tracking for continuous authorization to operate and continuous monitoring, and that operators can configure which routine remediations agents may make autonomously.
+  problem: Point-in-time compliance checks struggle to keep pace with dynamic cloud environments; public-sector teams also need AI workload discovery and remediation inside a FedRAMP High boundary. (WIZ-FORGOV-2026)
+  solution: Wiz announced on 2026-10-14 that its Red, Blue and Green agents are available in Wiz for Gov, its FedRAMP High environment. Wiz says continuous visibility enhanced by AI analysis simplifies evidence collection and risk-posture tracking for continuous authorization to operate and continuous monitoring, and that operators can configure which routine remediations agents may make autonomously. (WIZ-FORGOV-2026)
   outcomes:
   - lever: speed
     description: none published
@@ -908,8 +908,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: step
   runtime_class: personal-assistant
   maturity: emerging
-  problem: Detection engineers must write and keep up rules across cloud, endpoint and identity telemetry as threats change.
-  solution: A Wiz job posting for a cloud threat detection researcher lists using AI/LLM-driven tools to enhance detection generation and telemetry analysis as a responsibility. A Cloudflare network security engineer posting lists generative AI and automation for log analysis and root-cause analysis during incidents. Wiz Defend ships out-of-the-box content (rules, dashboards, queries, playbooks) that it now exposes in Google Security Operations through a content pack.
+  problem: Detection engineers must write and keep up rules across cloud, endpoint and identity telemetry as threats change. (WIZ-JOB-CLOUDDET-2026)
+  solution: A Wiz job posting for a cloud threat detection researcher lists using AI/LLM-driven tools to enhance detection generation and telemetry analysis as a responsibility. A Cloudflare network security engineer posting lists generative AI and automation for log analysis and root-cause analysis during incidents. Wiz Defend ships out-of-the-box content (rules, dashboards, queries, playbooks) that it now exposes in Google Security Operations through a content pack. (WIZ-JOB-CLOUDDET-2026; CLOUDFLARE-JOB-NETSEC-2026; WIZ-DEFENDGSO-2026)
   outcomes:
   - lever: speed
     description: none published
@@ -983,8 +983,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: model
   runtime_class: managed-agent-runtime
   maturity: piloting
-  problem: Each security function (detection and response, threat intelligence, vulnerability management, red team, GRC, continuous monitoring) wants agents, but each building its own risks inconsistent identity, isolation and audit.
-  solution: 'Databricks advertises a horizontal Agentic Security Engineering team that ''enables every Databricks security function AI-native'' and owns the shared platform on which functions build, deploy and run governed AI personas, covering agent identity, isolation and sandboxing, policy enforcement, auditability, evaluation and orchestration. CrowdStrike sells the same idea as Charlotte AI AgentWorks: agents bounded in scope, versioned, role-governed, cost-capped and traceable. Block''s platform-security posting asks for integrations with CSPM and DSPM tools to surface and prioritize findings (BLOCK-JOB-PLATSEC-2026). Robinhood''s security engineering posting splits AI work in two: securing its AI infrastructure and building AI platforms that improve detection fidelity and coverage.'
+  problem: Each security function (detection and response, threat intelligence, vulnerability management, red team, GRC, continuous monitoring) wants agents, but each building its own risks inconsistent identity, isolation and audit. (DATABRICKS-JOB-AGENTICSEC-2026)
+  solution: 'Databricks advertises a horizontal Agentic Security Engineering team that ''enables every Databricks security function AI-native'' and owns the shared platform on which functions build, deploy and run governed AI personas, covering agent identity, isolation and sandboxing, policy enforcement, auditability, evaluation and orchestration. CrowdStrike sells the same idea as Charlotte AI AgentWorks: agents bounded in scope, versioned, role-governed, cost-capped and traceable. Block''s platform-security posting asks for integrations with CSPM and DSPM tools to surface and prioritize findings (BLOCK-JOB-PLATSEC-2026). Robinhood''s security engineering posting splits AI work in two: securing its AI infrastructure and building AI platforms that improve detection fidelity and coverage. (DATABRICKS-JOB-AGENTICSEC-2026; CROWDSTRIKE-AGENTWORKS-2026; BLOCK-JOB-PLATSEC-2026; ROBINHOOD-JOB-SECENG-2026)'
   outcomes:
   - lever: capacity
     description: none published for Databricks; CrowdStrike quotes a customer analyst on build time
@@ -1059,8 +1059,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: model
   runtime_class: managed-agent-runtime
   maturity: announced
-  problem: Managed service providers juggle fragmented consoles, client policies and scattered visibility, which slows their response while their client estates grow.
-  solution: Wiz announced an MSP programme on 2026-09-28 with centralized multi-tenant management, just-in-time provisioning and portfolio-level dashboards on its AI Application Protection Platform; partners quoted include Optiv, SEP2 and Deloitte. Wiz also launched an integration so Wiz Defend and its Blue Agent analysis appear inside Google Security Operations cases.
+  problem: Managed service providers juggle fragmented consoles, client policies and scattered visibility, which slows their response while their client estates grow. (WIZ-MSP-2026)
+  solution: Wiz announced an MSP programme on 2026-09-28 with centralized multi-tenant management, just-in-time provisioning and portfolio-level dashboards on its AI Application Protection Platform; partners quoted include Optiv, SEP2 and Deloitte. Wiz also launched an integration so Wiz Defend and its Blue Agent analysis appear inside Google Security Operations cases. (WIZ-MSP-2026; WIZ-DEFENDGSO-2026)
   outcomes:
   - lever: growth
     description: none published
@@ -1109,8 +1109,8 @@ Source access is `full` for every source listed (each was opened and read). Cust
   change_scope: process
   runtime_class: workflow-automation
   maturity: announced
-  problem: Triage output must turn into action across tools and teams, but an LLM that can issue commands on production hosts adds a new path for attackers who control log content.
-  solution: Wiz Workflows (2026-03-25) lets teams chain triggers, approvals, rescans and remediation, including steps run by Wiz agents; after the Blue Agent's verdict, teams can escalate, notify responders or trigger containment playbooks by verdict and confidence. CrowdStrike markets Charlotte Agentic SOAR to connect its own, custom and third-party agents. A research paper proposes confining an LLM to a closed intent vocabulary with templated commands, an argument validator and a guardrails proxy.
+  problem: Triage output must turn into action across tools and teams, but an LLM that can issue commands on production hosts adds a new path for attackers who control log content. (ARXIV-2610.09906)
+  solution: Wiz Workflows (2026-03-25) lets teams chain triggers, approvals, rescans and remediation, including steps run by Wiz agents; after the Blue Agent's verdict, teams can escalate, notify responders or trigger containment playbooks by verdict and confidence. CrowdStrike markets Charlotte Agentic SOAR to connect its own, custom and third-party agents. A research paper proposes confining an LLM to a closed intent vocabulary with templated commands, an argument validator and a guardrails proxy. (WIZ-WORKFLOWS-2026; WIZ-BLUEAGENT-GA-2026; CROWDSTRIKE-AGENTWORKS-2026; ARXIV-2610.09906)
   outcomes:
   - lever: risk
     description: Research on guarding automated response actions

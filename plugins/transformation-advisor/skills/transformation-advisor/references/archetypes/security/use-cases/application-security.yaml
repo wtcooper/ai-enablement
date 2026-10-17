@@ -234,13 +234,12 @@
     - "Security engineers validated comments before developer reporting in the shadow deployment (ARXIV-2601.19138)"
     - "Human review continues alongside AI review on curl (STENBERG-MYTHOS-2026)"
   role_evolution: >-
-    Cloudflare says engineers focus their time and judgement on the resulting findings (CLOUDFLARE-CODEX-2026). curl's
-    maintainer says review bots regularly highlight issues that get fixed and that AI reviews do not replace humans
-    (STENBERG-MYTHOS-2026).
+    Cloudflare describes the earlier cycle as a reviewer context-switching to leave nitpicks while authors waited hours
+    for a first review (CLOUDFLARE-CODEREVIEW-2026, introduction). curl's maintainer says review bots regularly
+    highlight issues that get fixed and that AI reviews do not replace humans (STENBERG-MYTHOS-2026).
   evidence_grade: A
   sources:
     - {ref: CLOUDFLARE-CODEREVIEW-2026, title: "Orchestrating AI Code Review at scale", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/ai-code-review", date: "2026-04-20", access: full, locator: "Introduction; results for the first 30 days; cost and risk-tier sections"}
-    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "Introduction; 'AI code reviewer' section"}
     - {ref: ARXIV-2601.19138, title: "AgenticSCR: An Autonomous Agentic Secure Code Review for Immature Vulnerabilities Detection", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2601.19138", date: "2026-01-27", access: full, locator: "Abstract"}
     - {ref: ANTHROPIC-SECREVIEW-2025, title: "Automate security reviews with Claude Code", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/automate-security-reviews-with-claude-code", date: "2025-08-06", access: full, locator: "The /security-review command and GitHub Action; examples caught internally"}
     - {ref: SEMGREP-CURSOR-2026, title: "Cursor Origin Security Scanning: Semgrep Checks Every PR", publisher: "Semgrep Blog", type: vendor, url: "https://semgrep.dev/blog/2026/cursor-origin-security-scanning", date: "2026-10-14", access: full, locator: "Scans on every pull request in Cursor Origin"}
@@ -256,8 +255,52 @@
     findings, 4%) and the security-specific AgenticSCR shadow deployment (study setting Atlassian per the abstract;
     author affiliations not checked). No accuracy figure against human reviewers is published. The 3% to 61% figures
     are quoted by Semgrep and were not read in the 2022 paper's body. Merged from the practice, discourse and
-    governance angles: agentic PR review, Cloudflare code review, Cloudflare standards Codex, maintainers' review bots
-    and the separate AI reviewer pass over AI-generated code.
+    governance angles: agentic PR review, Cloudflare code review, maintainers' review bots and the separate AI
+    reviewer pass over AI-generated code.
+
+- id: security-application-security-NEWCODEX
+  title: Engineering standards rewritten as machine-readable rules that review agents enforce
+  archetype: security
+  module: application-security
+  function: technology-it
+  work_types: [review-assurance, document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Standards live in documents, chat threads and individual memory; no engineer can read every standard and
+    reviewers cannot reliably check every requirement (Cloudflare).
+  solution: >-
+    Cloudflare rebuilt its engineering standards as a governed 'Codex' of RFC-format documents with MUST and SHOULD
+    statements, which an agent extracts into structured rules with stable identifiers. Review agents for code,
+    specifications and incident reports retrieve the statements; findings from approved RFCs are advisory and only
+    RFCs promoted to 'enforced' block merges. Rules that can be checked mechanically also ship as linter packages and
+    a local command-line tool.
+  outcomes:
+    - {lever: quality, description: "Standards violations flagged by the AI code reviewer since the Codex began earlier in 2026", figure: "close to 230,000 flagged; almost 16,000 withheld approval", measures: "violations flagged over about four months (the introduction says 'nearly a quarter of a million'); the almost 16,000 referred to MUST statements on enforced RFCs and caused approval to be withheld", provenance: self-reported, source_ref: CLOUDFLARE-CODEX-2026}
+    - {lever: capacity, description: "Design reviews before implementation", figure: "close to 600 unique specs; over 3,200 review invocations since May 2026", measures: "unique open specs reviewed by the spec reviewer; findings rated major 65%, minor 29%, critical 6%", provenance: self-reported, source_ref: CLOUDFLARE-CODEX-2026}
+  prerequisites:
+    - "A governed standards body with domain owners and an RFC process"
+    - "A promotion step from approved to enforced so teams can adapt"
+  risks_and_guardrails:
+    - "A large corpus would strain context windows, so statements are extracted and compacted rather than fed whole (CLOUDFLARE-CODEX-2026)"
+    - "Blocking only after explicit promotion of an RFC to enforced (CLOUDFLARE-CODEX-2026)"
+  human_checkpoints:
+    - "Domain owners approve and promote RFCs; engineers act on findings (CLOUDFLARE-CODEX-2026)"
+  role_evolution: >-
+    The post says engineers focus their time and judgement on the resulting findings (CLOUDFLARE-CODEX-2026,
+    introduction).
+  evidence_grade: B
+  sources:
+    - {ref: CLOUDFLARE-CODEX-2026, title: "How Cloudflare enforces engineering standards using AI", publisher: "Cloudflare Blog", type: firm, url: "https://blog.cloudflare.com/engineering-standards-enforcement/", date: "2026-08-04", access: full, locator: "Introduction; 'AI code reviewer' and 'Spec reviewer' sections"}
+    - {ref: TLDRSEC-346-2026, title: "[tl;dr sec] #346 - Can AI Do Novel Security Research?", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-346", date: "2026-09-17", access: full, locator: "AppSec section, Cloudflare item"}
+  last_reviewed: "2026-10-17"
+  notes: >-
+    Grade capped at B: the Codex covers engineering standards of all kinds (security is one domain), so the
+    measurement is adjacent to security. The incident report reviewer in the same post is in incident-response
+    (security-incident-response-17 uses the same source).
 
 - id: security-application-security-05
   title: Risk-tiered automated review that lands low-risk code changes without a human reviewer
