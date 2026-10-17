@@ -1284,7 +1284,7 @@
     over baseline). security-operations points to this entry rather than repeating the agent (see security-operations-14).
 
 - id: security-threat-intelligence-23
-  title: Machine-learning anomaly surfacing that focuses government threat hunters on critical-infrastructure network data
+  title: Machine-learning anomaly surfacing that focuses government threat hunters on federal and critical-infrastructure network data
   archetype: security
   module: threat-intelligence
   function: technology-it
@@ -1295,30 +1295,37 @@
   runtime_class: background-agent
   maturity: in-production
   problem: >-
-    Hunt and SOC analysts handle terabytes of daily network log data and need a way to narrow what they review
-    (DHS-AIINV-CISA-2026, DHS-106).
+    CISA threat hunting and SOC analysts process terabytes of daily network log data from the Einstein sensor grid and
+    need a way to narrow what they review (CISA-AIUC-2024, DHS-2403).
   solution: >-
-    CISA's CyberSentry program uses unsupervised machine learning with rule-based heuristics to fuse and correlate data
-    and highlight anomalies in participating critical-infrastructure networks for analyst review, with a query interface
-    and dashboards (DHS-AIINV-CISA-2026, DHS-106, deployed). A similar federal-network use case based on Einstein sensor
-    data (DHS-2403) is listed as retired.
+    CISA's December 2024 AI inventory lists SOC Network Anomaly Detection (DHS-2403) in operation and maintenance: it
+    uses methods such as unsupervised machine learning to fuse and correlate Einstein network data and highlight
+    anomalies, which analysts review alongside rule-based heuristics, and it absorbed two earlier threat-hunting models
+    (DHS-103 and DHS-105). The same page lists the equivalent for opt-in critical-infrastructure partners in the
+    CyberSentry programme (DHS-106) at the initiation stage, with an interactive dashboard for analysts (CISA-AIUC-2024).
   outcomes:
-    - {lever: capacity, description: "none published", figure: "none published", measures: "The inventory gives no detection or workload figures", provenance: self-reported, source_ref: DHS-AIINV-CISA-2026}
+    - {lever: capacity, description: "none published", figure: "none published", measures: "The inventory gives no detection or workload figures", provenance: self-reported, source_ref: CISA-AIUC-2024}
   prerequisites:
-    - "Partner opt-in to CyberSentry monitoring (DHS-AIINV-CISA-2026, DHS-106)"
+    - "Network sensor data at scale (Einstein for federal agencies) or partner opt-in to CyberSentry monitoring (CISA-AIUC-2024, DHS-2403 and DHS-106)"
   risks_and_guardrails:
-    - "The inventory gives no reasons for retiring DHS-2403, so lessons are not public (DHS-AIINV-CISA-2026, Inactive section)"
+    - "CISA publishes no detection, false-positive or workload results for either capability (CISA-AIUC-2024)"
   human_checkpoints:
-    - "Anomalies are highlighted for CISA analyst review (DHS-AIINV-CISA-2026, DHS-106)"
+    - "Anomalies are highlighted for CISA analyst review, and analysts prioritize alerts for further investigation (CISA-AIUC-2024, DHS-2403 and DHS-106)"
   role_evolution: >-
-    Analysts narrow the scope of analysis and prioritize data for review (DHS-AIINV-CISA-2026, DHS-2403 summary).
+    CISA says the capability lets analysts narrow the scope of analysis and prioritize data for review
+    (CISA-AIUC-2024, DHS-2403).
   evidence_grade: B
   sources:
-    - {ref: DHS-AIINV-CISA-2026, title: "Cybersecurity and Infrastructure Security Agency - AI Use Cases (DHS AI Use Case Inventory)", publisher: US Department of Homeland Security, type: regulator, url: "https://www.dhs.gov/ai/use-case-inventory/cisa", date: "2026-01-28", access: full, locator: "Deployment: DHS-106; Inactive: DHS-2403"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "SOC Network Anomaly Detection (DHS 2403), stage 'Operation and Maintenance'; Critical Infrastructure Network Anomaly Detection (DHS-106), stage 'Initiation' (read through a text mirror)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-23. Classical or predictive machine learning, not generative AI; included because it shows named,
-    deployed AI in government threat hunting. The mirror text of the DHS page renders 'AI' as 'SI'.
+    From practice-23. Rewritten in verification: synthesis cited the January 2026 DHS AI use case inventory
+    (dhs.gov/ai/use-case-inventory/cisa) for CyberSentry (DHS-106) as deployed and the Einstein capability (DHS-2403) as
+    retired, and it attributed the 'terabytes' problem statement to DHS-106. That page returned HTTP 403 directly and
+    through the text mirror on 2026-10-17. CISA's own December 2024 page puts the terabytes statement under DHS-2403,
+    lists DHS-2403 in operation and DHS-106 at initiation, and names anomaly detection, regression and generative AI
+    among both capabilities' techniques. Grade B rests on DHS-2403 as a named deployment on CISA's own page; if the 2026
+    inventory's retirement of DHS-2403 is confirmed, this entry should be re-dated and its maturity reviewed.
 
 - id: security-threat-intelligence-24
   title: Model providers' threat intelligence teams using their own models to investigate and disrupt misuse

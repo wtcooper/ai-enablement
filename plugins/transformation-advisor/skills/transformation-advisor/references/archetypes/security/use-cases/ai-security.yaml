@@ -255,7 +255,7 @@
     - {ref: HACKMYCLAW-2026, title: "What happened after 2,000 people tried to hack my AI assistant", publisher: "Fernando Irarrazaval", type: community, url: "https://www.fernandoi.cl/posts/hackmyclaw/", date: "2026-06-25", access: full, locator: "Opening; 'What went wrong'; 'What I learned'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-04 (competitions, A), -05 (adaptive attacks, A) and -18 (public challenge, B). Grade A for
+    Measured in: public red-teaming competitions and research labs, not production deployments. Merged: threats-redteam-04 (competitions, A), -05 (adaptive attacks, A) and -18 (public challenge, B). Grade A for
     research measurements by named organisations; these measure model robustness, not an enterprise adopting the practice.
     arXiv figures are abstract-level. MUZZLE found 44 new attacks with minimal human effort (abstract).
 
@@ -339,6 +339,7 @@
     - {ref: NIST-CAISI-CHEATING-2025, title: "Cheating On AI Agent Evaluations", publisher: "NIST CAISI", type: regulator, url: "https://www.nist.gov/blogs/caissi-research-blog/cheating-ai-agent-evaluations", date: "2025-12-02", access: full, locator: "Summary and cheating-rate table"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: government and lab pre-deployment evaluations; OpenAI's figure is a preliminary internal experiment.
     Merged: threats-redteam-07 (government stress tests, A) and -08 (simulated propensity testing, B). The OpenAI figure
     also appears in agent-identity-containment-08 (where it supported an A for monitoring); it measures the harness and
     prompt, not monitoring, so it sits here. The two deep dives name the production harness differently (Codex in one,
@@ -619,7 +620,7 @@
     - lever: risk
       description: In the controlled study human reviewers caught the dangerous command 13.6% of the time and auto mode blocked 89% of the same commands.
       figure: "13.6% (143 of 1,053) humans; 89% (937 of 1,053) auto mode"
-      measures: "Share of 1,053 paid testers who refused a swapped-in clearly dangerous permission prompt, versus share of the same commands the classifier blocked (vendor description)"
+      measures: "Share of 1,053 paid testers, working in a vendor-built test environment and aware they were in a study, who refused a swapped-in clearly dangerous permission prompt, versus share of the same commands the classifier blocked (vendor description)"
       provenance: vendor-published
       source_ref: ANTHROPIC-AUTOMODE-2026
     - lever: quality
@@ -673,7 +674,8 @@
     - {ref: OWASP-AGENTIC-2025, title: "OWASP Top 10 for Agentic Applications for 2026", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/", date: "2025-12-09", access: full, locator: "ASI02 mitigation 2, p.14; ASI03 mitigation 4, p.17"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged: threats-redteam-06 (guard evaluation, A) and agent-identity-containment-14 (human approval, C). Grade A for
+    Measured in: a vendor-run controlled study in a purpose-built test environment and vendor-commissioned lab evaluations;
+    only the 97% approval rate comes from real use. Merged: threats-redteam-06 (guard evaluation, A) and agent-identity-containment-14 (human approval, C). Grade A for
     the evaluation design and measured figures; all headline numbers are vendor-published and the third-party evaluators
     were commissioned by the vendor. One independent test contradicts the zero-success claim for a specific chain, so
     treat 0 of 720 as unreplicated. Proposed pattern: 'agent action gate'. Attack steps are not recorded. Related: security-operations-20 and
@@ -832,6 +834,7 @@
     - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08-03", access: full, locator: "'Spanning the Eras: Egress Domain Governance from On-Premises to Agentic Sandboxes' (abstract only)"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: one author-run lab test (Trail of Bits) and AISI's own evaluation runs; no production enterprise measurement.
     Merged: threats-redteam-09 (evaluation range security, B), agent-identity-containment-05 (egress allowlist, B), -06
     (microVM isolation, A) and -19 (agent-to-agent channels, B). Grade A rests on Trail of Bits' measured test (one host,
     one model, one run series; the author had preview access to an OpenAI cyber model through Trail of Bits' Patch the Planet
@@ -1176,6 +1179,7 @@
     - {ref: OWASP-GENAI-RES-2026, title: "OWASP GenAI Security Project resources library", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resources/", date: "2026-09-01", access: full, locator: "Entries on MCP server guides and the AIBOM Generator"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: an academic whole-registry scan of public skill registries and an internet measurement of live MCP servers.
     Merged: threats-redteam-15 (A), agent-identity-containment-12 (C), governance-assurance-19 (MCP review gate, C) and
     -10 (AI and agent bills of materials, C). Grade A rests on an independent, measured whole-registry study; it is a
     research measurement, not an enterprise deployment. Wiz also markets agentless AI-BOM discovery (vendor claim). Gartner
@@ -1244,6 +1248,7 @@
     - {ref: OWASP-LLM-2026, title: "OWASP Top 10 for LLM Applications 2026 (OWASP GenAI LLM Top 10 2026)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/", date: "2026-08-03", access: full, locator: "LLM06 Unbounded Consumption, item 7, p.39"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: model providers' production API traffic (Anthropic, Google) and a government advisory.
     Source: threats-redteam-16. Grade A: measured by named organisations and a joint government advisory. Figures describe
     the threat and detection scope; none report false-positive rates or the result of response degradation. Relevant
     mainly to organisations that host models for others. Related: security-threat-intelligence-24 (model providers'
@@ -1376,6 +1381,7 @@
     - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 5.5 and 5.6, p.7"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: the labs' own evaluation and training records, not customer deployments.
     Merged: threats-redteam-11 (A), agent-identity-containment-22 (A) and governance-assurance-11 (A). Grade A: measured,
     named organisations, all figures self-reported; no recall or false-negative rate is published for any review
     pipeline, and Anthropic's first scan missed transcripts. OpenAI also reports retrospective reviews of 'millions of
@@ -1458,6 +1464,7 @@
     - {ref: COLLUSIONWIKI-2026, title: "Discovery of a new OpenAI agent message board", publisher: "Nightingale Collective, Trajectory Institute and contributors", type: community, url: "https://collusion.wiki/", date: "2026-09-04", access: full, locator: "Reconstruction of a separate message board"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: METR's review of OpenAI's evaluation transcripts, and Hugging Face's forensics on its production platform.
     Merged: threats-redteam-12 (A) and the forensic half of governance-assurance-12 (A). Grade A: independent, measured,
     named reviewers (METR). The agent counts come from METR, not from OpenAI's report text. Only the first part of each
     report was read. The forensic-model lesson is shared with incident-response, which owns AI-assisted forensics in
@@ -1852,6 +1859,7 @@
     - {ref: AIUC-1-2026, title: "AIUC-1 Standard (home page; 'Last updated Q4: Oct 15, 2026')", publisher: "Artificial Intelligence Underwriting Company (AIUC)", type: vendor, url: "https://www.aiuc-1.com/", date: "2026-10-15", access: full, locator: "Home page: MSCI listed as 'Adopted AIUC-1'"}
   last_reviewed: "2026-10-17"
   notes: >-
+    Measured in: AIUC's test engagement on one MSCI agent, reported in AIUC's own case study.
     Source: governance-assurance-03. Grade A under the 2026-10-17 rule: the test and role counts and the severity finding
     are results the tester reports from its own testing, not a practitioner's recollection; but every figure comes from a
     vendor-authored case study with no independent check, and the counts are activity measures. The CISO's quote is B-level
