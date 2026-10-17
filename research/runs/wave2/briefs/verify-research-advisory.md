@@ -46,3 +46,5 @@ any error damages credibility. Check the synthesized content against its sources
   - patterns of error to fix in the briefs
 
 Then reply with a summary of **no more than 150 words**.
+
+- **Grade A rule (2026-10-17):** A needs a figure the named organization reports as measured (a tracked metric, a study or data). A practitioner's recollection or rough estimate quoted in a vendor case study, even with numbers, is grade B; keep the figure, labelled with its provenance.

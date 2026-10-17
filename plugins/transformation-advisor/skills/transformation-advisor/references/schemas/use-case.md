@@ -36,7 +36,7 @@ provisional archetype written by on-the-spot research. Each file is a YAML list.
 
 | Grade | Meaning |
 |---|---|
-| A | A measured outcome from a named organization |
+| A | A measured outcome from a named organization: a figure it reports as measured (a tracked metric, a study or data). A practitioner's recollection or rough estimate, even with numbers, is B |
 | B | A named, real deployment without published measurements |
 | C | A vendor claim or analyst estimate |
 | D | An idea practitioners or researchers discuss, with no public deployment yet (labelled "idea") |

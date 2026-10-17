@@ -750,7 +750,7 @@ agents in total, the program runs in waves (see `plan/`).
 - **Synthesis agent per module:** merges the three angles, removes duplicates, maps entries to
   patterns, work types, ladder levels and change scope, and writes the module file and use-case YAML.
 - **Verifier agent per module:** checks every claim against its cited source, assigns the evidence
-  grade (A: a measured outcome from a named organization; B: a named deployment; C: a vendor claim or
+  grade (A: a measured outcome from a named organization, meaning a figure it reports as measured, not a recollection or rough estimate; B: a named deployment; C: a vendor claim or
   analyst estimate; D: a plausible idea, labelled "idea"), and rejects anything unsupported.
 - **Schema validation** runs on every file.
 - **Review** of the merged content before it is committed. The research logs are kept in `research/`.

@@ -82,7 +82,7 @@ reports, academic studies, trade press) and is fact-checked against them. Each o
 
 | Grade | Meaning |
 |---|---|
-| **A** | A measured result from a named organization |
+| **A** | A measured result from a named organization (a tracked figure, not a rough recollection) |
 | **B** | A named, real deployment without published measurements |
 | **C** | A vendor claim or analyst estimate |
 | **D** | An idea practitioners discuss, with no public deployment yet |

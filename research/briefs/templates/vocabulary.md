@@ -77,7 +77,7 @@ fields.
 
 | Grade | Meaning |
 |---|---|
-| `A` | A measured outcome from a named organization |
+| `A` | A measured outcome from a named organization: a figure the named organization reports as measured (a tracked metric, a study or data). A practitioner's recollection or rough estimate, even with numbers, is B (rule adopted 2026-10-17) |
 | `B` | A named real deployment, without published measurements |
 | `C` | A vendor claim or analyst estimate |
 | `D` | A plausible idea with no public deployment found. Must be labelled "idea" |
