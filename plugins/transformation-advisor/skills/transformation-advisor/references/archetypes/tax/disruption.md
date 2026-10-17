@@ -87,7 +87,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
   sells "touchless compliance … by default, manual by exception"; Sovos plans issue detection before deadlines
   [AVALARA-AGENTIC-2025; TR-SUTAI-2026; SOVOS-SOVI-2026].
 - **Authority drivers are real.** OECD administrations are moving toward real-time information-sharing pilots
-  [OECD-FTA-2025]; France's e-invoicing mandate went live in Sep 2026 [SOVOS-FRANCE-GOLIVE-2026]; ViDA brings intra-EU
+  [OECD-FTA-2025]; France's e-invoicing mandate starts receipt of e-invoices from 1 Sep 2026 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026]; ViDA brings intra-EU
   digital reporting from 1 Jul 2030 [EC-VIDA-2025].
 - **Agentic commerce adds a collection question.** AI systems "can't bear tax obligations", so the company operating
   the agent may have to collect; the US$3-5 trillion by 2030 figure is a McKinsey forecast cited by Bloomberg Tax

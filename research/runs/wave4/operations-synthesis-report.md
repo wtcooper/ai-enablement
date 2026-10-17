@@ -15,7 +15,7 @@ warnings for either file (the remaining errors are in the tax archetype).
 Plus items routed to operations by other security files (used: CyberProof managed-SOC case, Hugging Face anomaly
 triage, the tl;dr sec note on detections that page no one, SIABench triage accuracy, the SherAgent spot-check).
 
-**Out: 24 use cases** (`security-operations-01` to `-24`); 87 distinct source refs in the YAML plus 18 in the module's
+**Out: 24 use cases** (`security-operations-01` to `-24`); 90 distinct source refs in the YAML plus 18 in the module's
 own Sources list.
 
 ## 2. Duplicates merged

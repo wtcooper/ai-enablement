@@ -64,7 +64,7 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 | 30 Jun 2026 | First GloBE Information Returns due; country XML variants and business rules were the hard part | Deadline passed | Pillar Two is a data pipeline problem | [FGS-GIR-2026] |
 | Jul 2026 | HMRC says AI and advanced analytics enabled GBP 10bn of tax protected and recovered in 2025-26 | Self-reported | Authority analytics already pay for themselves, by its own account | [HMRC-ARA-2026] |
 | 29 Jul 2026 | IRS LB&I: AI "shouldn't replace" judgment in TP; experts must explain AI inputs and methods; IRS will "want to see the formulas" | Official remarks | Document AI-assisted analyses for exam | [IRS-LBI-TP-2026] |
-| 1 Sep 2026 | France's e-invoicing mandate goes live | Mandate | Real-time reporting spreads in Europe | [SOVOS-FRANCE-2026] |
+| 1 Sep 2026 | France's e-invoicing mandate starts with receipt of e-invoices (vendor summary) | Mandate | Real-time reporting spreads in Europe | [SOVOS-FRANCE-GOLIVE-2026] |
 | 11 Sep 2026 | Second OECD Pillar Two package with a revised GIR | Rules | The target keeps moving; budget for change | [OECD-P2-SEP-2026] |
 | 30 Sep 2026 | IRS CEO: "AI-first IRS", flat headcount near 74,000, mid-90s compliance in five years (about 85% now) | Stated aim; forecast | Expect more automated matching and notices | [IRS-AIFIRST-2026] |
 
