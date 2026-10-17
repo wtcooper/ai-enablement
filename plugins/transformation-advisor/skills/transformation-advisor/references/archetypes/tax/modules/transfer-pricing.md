@@ -1,7 +1,7 @@
 # Transfer pricing (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/transfer-pricing.yaml` (22 entries). Ids are shortened
-here: `#06` means `tax-transfer-pricing-06`. Source keys in brackets, such as [IRS-LBI-TP-2026], are in the YAML or
+Sources checked 2026-10-17. Use cases live in `../use-cases/transfer-pricing.yaml` (22 entries). Ids are
+shortened here: `#06` means `tax-transfer-pricing-06`; other modules' ids are in full. Source keys in brackets, such as [IRS-LBI-TP-2026], are in the YAML or
 in §10. **Evidence is thin.** Only 3 of 22 entries are graded A or B, and all three are rules-based automation or
 sourcing changes. Almost every figure is vendor-published (mostly by Aibidia, a TP software vendor) or a conference speaker's own
 claim. No error rate, override rate, parallel run or independent test of AI in TP exists. Say so when you quote a figure.
@@ -57,7 +57,8 @@ conference-reported only. No automate entry is at the step level.
 - Improve: `#01` grounded research assistant (TP Aurora, Aibidia with IBFD data; vendor claims 90% less research
   time). `#02` staff use Copilot, ChatGPT and Claude for drafting, research and stress-testing (93% use AI in some
   form, vendor survey). `#03` internal chatbot answers local finance and escalates to the TP team (Deloitte Poland
-  offering). `#04` AI aggregation of data from several ERPs (one firm article; "standardise data first").
+  offering). `#04` AI aggregation of data from several ERPs (one firm article; "standardise data first"; the general
+  tax data layer is `tax-data-technology-01`).
 
 **Analysis and benchmarking**
 - Improve: `#05` AI-drafted functional and industry analysis, e.g. explaining glove-maker margin surges (PwC
@@ -82,9 +83,11 @@ conference-reported only. No automate entry is at the step level.
   Intelligence, release planned December 2026; EUR 4.8 million risk found in a demo, not a client result).
 
 **Controversy, APAs and governance**
-- Improve: `#16` drafting and stress-testing audit responses from prior files. Ideas (D): `#17` AI in expert
-  economic reports with full disclosure; `#18` APA and MAP outcome prediction; `#20` AI-use and verification log.
-- Context: authorities using AI to select TP audits (Hungary's 2026 plan, IRS models): `tax-controversy-13`, `-15`.
+- Improve: `#16` drafting and stress-testing audit responses from prior files (general audit queries:
+  `tax-controversy-07`). Ideas (D): `#17` AI in expert economic reports with full disclosure; `#18` APA and MAP
+  outcome prediction; `#20` AI-use and verification log (the fuller entry is `tax-research-advisory-19`).
+- Context: authorities using AI to select TP audits (Hungary's 2026 plan, IRS models): `tax-controversy-13` and
+  `tax-controversy-15`.
   EY's TP Doc Insights checks documentation against public data: `tax-controversy-05`.
 
 **Operating and service model**
@@ -154,10 +157,9 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
 - **US documentation standard.** Section 6662(e) documentation avoids the penalty only if adequate and reasonable;
   the IRS wants reasons for the method chosen, sources reviewed and methods rejected, and calculations in working
   formats [IRS-TPFAQ-2026]. No source tests how AI-drafted documentation fares under these rules.
-- **Practitioner conduct.** IRS OPR Alert 2026-19 maps AI onto Circular 230 (due diligence, competence, firm
-  procedures, written advice), says client data should not go to unsecured tools, and says AI savings should be
-  credited to clients; the AICPA has asked for clarification [IRS-OPR-2026] [AICPA-CART-2026]. UK PCRT bodies issued AI
-  guidance [ATT-PCRTAI-2026].
+- **Practitioner conduct.** The shared rules (IRS OPR Alert 2026-19 and Circular 230, section 7216, the UK PCRT and
+  Australian TPB guidance) are in [the archetype guardrails](../guardrails.md); they apply to TP work as to any
+  federal or UK tax practice [IRS-OPR-2026] [ATT-PCRTAI-2026].
 - **Courts and evidence.** Clinco: the Tax Court found likely hallucinated citations and issued a warning
   [TAXCT-CLINCO-2026]. An IRS valuation expert report in Riddle Aggregates was challenged over hallucinated
   citations and recorded as withdrawn [RIDDLE-TRANSCRIPT-2026]. On proposed Federal Rule of Evidence 707 (machine
@@ -167,7 +169,7 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
   shared between affiliates, and that AstraZeneca and others asked how AI transactions are characterised
   [OECD-INTRAGROUP-2026].
   There is no law or international standard on pricing shared AI agents [BGOV-AGENTS-2026]. This is TP of AI, not
-  AI in TP; see research-advisory.
+  AI in TP; see the research-advisory module (§8).
 - **Cross-tax.** The CJEU's Arcomet ruling on VAT consequences of TP adjustments matters for year-end true-ups
   [BTAX-VAT2026]; multi-agent cross-tax review (`#11`) should cover it.
 - **Data and security.** Use a closed environment for company data [DDTC-WUTA-2026]; evaluate vendor security
@@ -241,7 +243,7 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
 Full details for keys used in the use cases are in the YAML. Keys cited above that are not in the YAML:
 
 - BGOV-AGENTS-2026: "Companies' Sharing of AI Agents Risks More Tax Fights", Bloomberg Government, 2026-08-21, https://news.bgov.com/daily-tax-report/companies-sharing-of-ai-agents-risks-more-tax-fights (first paragraphs)
-- BTAX-VAT2026: "Digital Mandates and AI Reshape VAT Compliance Landscape in 2026" (E. Trombitas), Bloomberg Tax, 2026-01-06, https://news.bloombergtax.com/tax-insights-and-commentary/digital-mandates-and-ai-reshape-vat-compliance-landscape-in-2026 (routed from indirect-tax)
+- BTAX-VAT2026: "Digital Mandates and AI Reshape VAT Compliance Landscape in 2026" (E. Trombitas), Bloomberg Tax, 2026-01-06, https://news.bloombergtax.com/tax-insights-and-commentary/digital-mandates-and-ai-reshape-vat-compliance-landscape-in-2026
 - CIAT-BLOG-2026: "Artificial Intelligence Agents in the control of Transfer Pricing" (P. Porporatto), CIAT, 2026-02-03, https://www.ciat.org/artificial-intelligence-agents-in-the-control-of-transfer-pricing/?lang=en
 - GAO-2026: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management" (GAO-26-107522), GAO, 2026-03-24, https://www.gao.gov/products/gao-26-107522
 - COLUMN-TAXCALCBENCH-2025: "TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task", arXiv (Column Tax), 2025-07-22, https://arxiv.org/abs/2507.16126 (abstract)

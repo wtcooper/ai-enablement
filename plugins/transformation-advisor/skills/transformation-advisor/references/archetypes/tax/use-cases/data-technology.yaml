@@ -911,7 +911,7 @@
   - Reconciliation logic the tax accountant can maintain (SAVANT-ROVER-2026).
   risks_and_guardrails:
   - The figures come from a vendor press release announcing a webinar, not a published study (SAVANT-ROVER-2026).
-  - The measured process is sales tax reconciliation, an indirect-tax process, so the grade is capped at B for this module.
+  - The process behind the vendor figures is sales tax reconciliation, an indirect-tax process, so the grade is capped at B for this module.
   - Savant's TEI release is promotional and published no result (SAVANT-2026).
   human_checkpoints:
   - Not described for Rover; Savant says exceptions can be routed for human review before results move downstream (SAVANT-CLAUDE-2026).

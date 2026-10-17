@@ -46,10 +46,10 @@ personal data to other services. Agent identities sit in ai-security; insider ri
 ## 3. Where AI is changing the work
 
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
-multi-step outcome), reinvent (the service or operating model changes). **Coverage:** 2 assist, 10 augment, 9
+multi-step outcome), reinvent (the service or operating model changes). **Coverage:** 2 assist, 11 augment, 8
 automate; 12 step, 9 process. **No evidence was found for delegate or for model-level change**; do not suggest they
-are happening. Agents that act (#11) still need approval for each action. Four automate entries are research ideas
-or vendor-only (#16, #17, #18, #08).
+are happening. Agents that act (#11) still need approval for each action. Of the 8 automate entries, three are research ideas
+(#16 to #18) and three rest on vendor documentation or telemetry with no named user (#08, #09, #12).
 
 **Discovery and classification** (the best-evidenced area)
 - Improve: `#01` LLM agents write column descriptions and suggest sensitivity tags; stewards accept or reject each one
@@ -85,8 +85,8 @@ or vendor-only (#16, #17, #18, #08).
   data controls using lineage (B). `#15` AI first drafts of PIAs, reassessments and evidence reviews (C).
   `#20` Capital One found direct differentially private synthesis beat an LLM-based generator (B, negative result;
   differential privacy adds calibrated noise so no one person can be singled out).
-- Automate: `#21` Google's "Provably Private Insights": LLMs read chatbot data inside attested secure hardware and
-  only differentially private totals leave (B, Recorder app).
+- Automate: `#21` Google's "Provably Private Insights": LLMs interpret unstructured usage data inside attested secure
+  hardware (trusted execution environments) and only differentially private totals leave (B, Recorder app).
 
 ## 4. Interview probes
 
@@ -102,7 +102,7 @@ or vendor-only (#16, #17, #18, #08).
 5. **Who owns the shadow-AI decision: security, procurement or privacy?** Without an owner, block lists age and
    embedded AI features go unreviewed [OWASP-DATASEC-2026; NETSKOPE-CTR-2026].
 6. **What share of your data is labelled, and who adjudicates labels a model proposes?** Low coverage blocks
-   label-based DLP and retrieval controls; a steward role is the prerequisite for #01 to #03.
+   label-based DLP and retrieval controls; someone to adjudicate suggestions is a prerequisite for #01 to #03.
 7. **Do you track missed sensitive data (false negatives) as well as acceptance of suggestions?** Acceptance alone
    cannot see misses [ARXIV-GLYPH-2026]; Meta tracks per-class recall [META-ENG-ASSETCLASS-2026].
 8. **Before rolling out an AI assistant, did you review who can see what?** Reveals oversharing risk (#10) and
@@ -110,7 +110,7 @@ or vendor-only (#16, #17, #18, #08).
 9. **Where do PIAs, DPIAs and privacy code review spend their time, and which part could a first draft cover with a
    reviewer signing off?** Points to #15 or #14, and to the reviewer capacity they need.
 10. **Do agents you run pass customer or employee data to outside tools or services?** Opens #17 and the
-    ai-security module; research measured unnecessary sensitive data in 81-88% of tool calls [ARXIV-TOOLMINIMIZE-2026].
+    ai-security module; research measured unnecessary sensitive data in 81-88% of tool calls under default prompts [ARXIV-TOOLMINIMIZE-2026].
 11. **Do you have a current inventory of keys and certificates, and who renews them?** Reveals readiness for shorter
     certificate lifespans; AI evidence here is a single vendor announcement (#19).
 
@@ -175,7 +175,7 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 - **Data security admins** write natural-language classification instructions instead of curating training files
   [GOOGLE-WSAICLASS-2026], and approve or tune agent-proposed fixes [MSFT-DSPM-2026].
 - **DLP analysts** work a ranked queue with explanations and tune it with feedback
-  [MSFT-PURVIEWDLPTRIAGE-2026]; OpenWeb's CISO says the team now trusts alerts enough to automate on them
+  [MSFT-PURVIEWDLPTRIAGE-2026]; OpenWeb's CISO says the team now trusts alerts enough to use them for decisions and automation
   [MIND-OPENWEB-2026].
 - **Privacy engineers** are a growing dedicated role: Anthropic describes one of its first dedicated privacy engineers
   building automated discovery, classification, lineage and compliance controls [ANTHROPIC-JOB-PRIVACYENG-2026].
@@ -195,7 +195,7 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 | 2026-01-28 | MIND announces DLP for agentic AI (agent discovery, risky-access detection, remediation) | MIND-AGENTICDLP-2026 |
 | 2026-03-17 | OWASP publishes its GenAI data security risks and mitigations guide v1.0 | OWASP-DATASEC-2026 |
 | 2026-04-29 | Black Hat Asia privacy keynote asks which privacy tools are "privacy theater" | BLACKHAT-ASIAPR-2026 |
-| 2026-06-01 | PEPR 2026: LLM-for-privacy-engineering talks from Meta, Microsoft, Capital One, Google and others, open about limits | PEPR-2026 |
+| 2026-06-01 | PEPR 2026: LLM-for-privacy-engineering talks from Meta, Microsoft, Google, Capital One, CMU and others, open about limits | PEPR-2026 |
 | 2026-06-10 | Cyera announces a US$600 million Series G at a US$12 billion valuation | CYERA-SERIESG-2026 |
 | 2026-06-25 | Meta describes shrinking the LLM's role by distilling its findings into rules | META-ENG-ASSETCLASS-2026 |
 | 2026-07-02 | Akamai completes its LayerX purchase (browser security and AI usage control, about US$205 million) | AKAMAI-LAYERX-2026 |
@@ -206,8 +206,8 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 | 2026-10-09 | CSA publishes its DLP-in-the-AI-era survey | CSA-AI-2026 |
 | 2026-10-15 | Proofpoint agrees to buy Varonis for about US$6.3 billion; close expected first half of 2027 | VARONIS-PROOFPOINT-2026 |
 
-Direction: data security and AI security are merging in the market; research is moving from detecting PII to
-minimising what agents send (#17, #18). Practitioner discourse is very thin: 100 recent Risky Business episode titles
+Direction: the market is consolidating around data plus AI security (the deals above). Research prototypes target
+what agents send to tools and coding agents (#17, #18); no deployment was found. Practitioner discourse is very thin: 100 recent Risky Business episode titles
 had none on DLP or privacy engineering [RISKYBIZ-2026].
 
 ## 9. Common objections
@@ -224,8 +224,9 @@ had none on DLP or privacy engineering [RISKYBIZ-2026].
 - **"We'll just block ChatGPT."** 90% of Netskope customers block at least one genAI app, but tracked apps grew from
   317 to more than 1,600 in a year [NETSKOPE-CTR-2026], and blocking does not reach AI embedded in procured software
   [OWASP-DATASEC-2026]. Pair blocks with sanctioned alternatives (#09).
-- **"Copilot respects permissions, so we're safe."** It respects existing permissions, which are often too broad
-  [MSFT-PURVIEWAI-2026; VARONIS-SODS-2025]. Restricting discovery is temporary and leaves access unchanged
+- **"Copilot respects permissions, so we're safe."** It returns what users can already reach. Microsoft says generative AI amplifies
+  oversharing [MSFT-PURVIEWAI-2026]; Varonis found sensitive data AI can easily surface in 99% of 1,000 environments
+  [VARONIS-SODS-2025]. Restricting discovery is temporary and leaves access unchanged
   [MSFT-SPRCD-2026] (#10).
 - **"AI can write our DPIAs."** Vendor tools flag AI-completed fields for review [ONETRUST-W26-2026]; one study found
   stricter formats gave consistent output but more hallucinations [ARXIV-DPIALLM-2026]. Treat output as a first draft.

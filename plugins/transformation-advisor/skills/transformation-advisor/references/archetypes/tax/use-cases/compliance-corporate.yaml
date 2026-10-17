@@ -1193,8 +1193,8 @@
     - {ref: IRS-MEF-2026, title: "Modernized e-File (MeF) schemas and business rules", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/e-file-providers/modernized-e-file-mef-schemas-and-business-rules", date: "2026-05-29", access: full, locator: "Introductory paragraph and form list (Forms 1120 family)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Idea with measured research results, all on individual-return or statutory-reasoning data. The Han et al. authors
-    built the system they measured; 'independent' means a third-party academic source, not a replication. The
+    Idea backed by published research results, all on individual-return or statutory-reasoning data. The Han et al.
+    authors built the system they tested; 'independent' means a third-party academic source, not a replication. The
     TaxCalcBench figure is vendor-published because its authors work at a deterministic-engine vendor. Same design
     idea: tax-compliance-individual-business-10, tax-research-advisory-12 and tax-indirect-tax-22.
 

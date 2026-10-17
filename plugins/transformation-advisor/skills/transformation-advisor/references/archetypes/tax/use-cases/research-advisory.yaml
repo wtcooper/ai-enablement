@@ -597,7 +597,7 @@
     locator: '''Define the role of early-career professionals'''
   last_reviewed: '2026-10-17'
   notes: >-
-    Graded C because the measured outcome is a benchmark of models in a test harness, not an outcome from a named
+    Graded C because the only figure is a benchmark of models in a test harness, not an outcome from a named
     organization's deployment, and no named organization is shown running a delegate-level research agent in
     production. Vals sells evaluation services. The panel deck's slides show demo timings for the research memo agent
     (3 hours saved, 2 minutes to result); these are presenter demo timings, not outcomes, and the deck does not say
@@ -677,7 +677,7 @@
     locator: section on jurisdictional flattening
   last_reviewed: '2026-10-17'
   notes: >-
-    Idea. The measured weakness is real; the specialist-workflow remedy is Vals' suggestion, not a tested result. The
+    Idea. The benchmark weakness is real; the specialist-workflow remedy is Vals' suggestion, not a tested result. The
     Vals narrative about question P-004 may rest on its earlier analysis set.
 
 - id: tax-research-advisory-05

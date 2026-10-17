@@ -183,7 +183,7 @@ on the authority side, every adverse decision and every selection override.
   argues AI cannot hold culpability, so corporate tax teams will shrink less than predicted [SALA-TAXNOTES-2026].
 - IRS: headcount flat at about 74,000; leadership says AI is "not designed to eliminate jobs" [IRS-AIFIRST-2026]. GAO
   found AI skills lost and no workforce plan [GAO-2026]. A Chief Counsel attorney: adopt or leave
-  [IRS-AGENTFORCE-2025; quotation not re-verified, see `#22`]. Classifiers review and override model suggestions [TIGTA-2025].
+  [IRS-AGENTFORCE-2025; quotation not re-checked, see `#22`]. Classifiers review and override model suggestions [TIGTA-2025].
 - HMRC: broadly the same size in 2030 with AI assisting officials [CSW-HMRC-2026]; 5,500 more compliance officers
   [PINSENT-HMRC-2026]. Assistor-answered calls fell 20% while voicebot volume rose 4% [NTA-OBJ-2026].
 - Werfel's register lists skill erosion (preparers) and expertise erosion (authorities) as risks [TAXADVISER-WERFEL-2026].
