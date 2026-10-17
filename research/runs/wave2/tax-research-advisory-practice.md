@@ -560,7 +560,7 @@
   - lever: capacity
     description: PwC US AI Tax Leader says the firm has over 3,200 AI champions and about 80% of people have taken some AI training
     figure: 3,200+ champions; about 80% trained
-    measures: Champions across the whole US firm (not tax only) and share of people who took some form of AI training, as stated by the PwC tax AI leader
+    measures: AI champions 'across the firm' (many inside tax; not tax only) and share of 'our people' who took some form of AI training, as stated by the PwC US AI tax leader
     provenance: self-reported
     source_ref: PWC-MEGNA-2025
   prerequisites:

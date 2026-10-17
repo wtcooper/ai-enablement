@@ -94,7 +94,7 @@
     - Staff able to check outputs against agreements, policies and regulation
   risks_and_guardrails:
     - Participants raised hallucinations, overconfident answers and general models' inability to interpret company-specific TP data without context (AIBIDIA-LEADERS-2026).
-    - KPMG Germany describes a 'jagged frontier': good results on one task and failure on a similar one, so teams must decide which steps AI supports (KPMG-KITP-2026).
+    - "KPMG Germany describes a 'jagged frontier': good results on one task and failure on a similar one, so teams must decide which steps AI supports (KPMG-KITP-2026)."
     - Andersen Australia found a general chatbot's answers on Australian documentation requirements accurate but generic, leaving relevance and defensibility to the user (ANDERSEN-2026).
   human_checkpoints:
     - Named accountable professional validates AI output before it enters the record (AIBIDIA-WEBINAR-2026, 'human oversight architecture')
@@ -134,7 +134,7 @@
     - Implicit expert knowledge written down as reusable context (KPMG-KITP-2026)
     - Accountable sign-off structure (AIBIDIA-WEBINAR-2026)
   risks_and_guardrails:
-    - BDO Canada reports recurring gaps in AI-generated TP outputs: functional profiles that do not reflect operational reality, unsupported method selection, benchmarking lacking depth or screening rationale, oversimplified intangibles and DEMPE treatment, and documentation that looks complete but lacks audit-ready support (BDO-2026).
+    - "BDO Canada reports recurring gaps in AI-generated TP outputs: functional profiles that do not reflect operational reality, unsupported method selection, benchmarking lacking depth or screening rationale, oversimplified intangibles and DEMPE treatment, and documentation that looks complete but lacks audit-ready support (BDO-2026)."
     - Output can read as more plausible than it is; KPMG Germany says benchmarking narratives should flag assumptions and open questions (KPMG-KITP-2026).
     - Keep a record of how AI was used, inputs and review (BDO-2026).
   human_checkpoints:
@@ -186,9 +186,9 @@
       provenance: vendor-published
       source_ref: AIBIDIA-TRIVIUM-2026
   prerequisites:
-    - Centralised, standardised intercompany data; vendor survey: only 14% draw data directly from a single ERP and 79% spend more than 10% of TP time gathering and reconciling data (AIBIDIA-SOTP-2026)
+    - "Centralised, standardised intercompany data; vendor survey: only 14% draw data directly from a single ERP and 79% spend more than 10% of TP time gathering and reconciling data (AIBIDIA-SOTP-2026)"
     - Shared definitions and ownership between TP, controllers and local finance (AIBIDIA-LEADERS-2026)
-    - Setup effort: building the 'single source of truth' is more intensive up front (AIBIDIA-MANUAL-2026)
+    - "Setup effort: building the 'single source of truth' is more intensive up front (AIBIDIA-MANUAL-2026)"
   risks_and_guardrails:
     - Fortum says it has not automated everything yet (AIBIDIA-FORTUM-2026).
     - The tool is sensitive to business model and ERP changes; Kemira notes the same for its tool (AIBIDIA-KEMIRA-2026).
@@ -209,7 +209,7 @@
   notes: Grade A rests on named-customer statements published by the vendor (provenance vendor-published, not independent). The sources do not establish that any step uses generative AI; this is data-driven document automation, and the grade applies to that. Process is the same one this module covers (documentation), so no adjacent-process cap applies.
 
 - id: tax-transfer-pricing-05
-  title: Automated operational TP: intercompany price calculation, segmented P&Ls and invoicing
+  title: "Automated operational TP: intercompany price calculation, segmented P&Ls and invoicing"
   archetype: tax
   module: transfer-pricing
   function: finance-accounting
@@ -234,7 +234,7 @@
     - About a year of co-development (2020) before go-live in January 2021
   risks_and_guardrails:
     - The tool is sensitive to business-model changes (Kemira cites an APAC change and SAP S/4HANA migration) and needs continued joint maintenance (AIBIDIA-KEMIRA-2026).
-    - Vendor survey: 60% still rely primarily on Excel, email and other manual processes for operational TP, and only 7% formally monitor transfer prices monthly (AIBIDIA-LEADERS-2026), so Kemira's setup is unusual.
+    - "Vendor survey: 60% still rely primarily on Excel, email and other manual processes for operational TP, and only 7% formally monitor transfer prices monthly (AIBIDIA-LEADERS-2026), so Kemira's setup is unusual."
   human_checkpoints:
     - Monthly close review of results and unusual movements (AIBIDIA-OTPBLOG-2026, describing practice at a prior employer, not Kemira)
   role_evolution: Kemira's Head of Taxes says a small tax team depends on automation and that the team now focuses on value-adding work instead of searching for data and manual calculation (AIBIDIA-KEMIRA-2026).
@@ -284,7 +284,7 @@
     - { ref: AIBIDIA-WEBINAR-2026, title: "AI in Transfer Pricing: What's Working, What's Not, and What's Next", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/blog/ai-in-transfer-pricing-whats-working-whats-not-and-whats-next", date: 2026-06-25, access: full, locator: "obstacle 'LLMs and numbers don't mix well'" }
     - { ref: AIBIDIA-SOTP-2026, title: "Aibidia Report 2026: The State of Transfer Pricing", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/reports/2026-the-state-of-transfer-pricing", date: 2026, access: full, locator: "challenges chart" }
   last_reviewed: 2026-10-17
-  notes: Maturity is 'announced': vendor materials and a firm article, no named deployment of AI-based monitoring. Kemira (use case 05) is the named non-AI precedent for monitoring.
+  notes: "Maturity is 'announced': vendor materials and a firm article, no named deployment of AI-based monitoring. Kemira (use case 05) is the named non-AI precedent for monitoring."
 
 - id: tax-transfer-pricing-07
   title: AI-assisted comparables search and benchmarking draft
@@ -470,7 +470,7 @@
   notes: Announced two days before this scan. The vendor's home page lists Nokia, Fujifilm, Symrise, Xebia, HMD and Phoenix Group as teams that trust the platform (AIBIDIA-HOME-2026); none is shown using TP Intelligence.
 
 - id: tax-transfer-pricing-12
-  title: Audit defence: drafting and stress-testing responses to tax-authority queries
+  title: "Audit defence: drafting and stress-testing responses to tax-authority queries"
   archetype: tax
   module: transfer-pricing
   function: finance-accounting
@@ -507,7 +507,7 @@
     - { ref: BDO-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "section 'recurring gaps'" }
     - { ref: AIBIDIA-OECD-2026, title: "OECD Proposes Revisions of Intra-group Services Guidance", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/blog/oecd-proposes-revisions-of-intra-group-services-guidance", date: 2026-08-21, access: full, locator: "final bullet 'Future-proof documentation now'" }
   last_reviewed: 2026-10-17
-  notes: The ABA May 2026 session also covers the likelihood that tax authorities deploy similar technologies (ABA-MAYMTG-2026). A search result described an ABA Tax Times summary of the session saying AI may speed TP work but does not change the legal framework; I could not open it (ABA-TAXTIMES-2026, search-only). Routed: authority-side AI to the controversy module.
+  notes: "The ABA May 2026 session also covers the likelihood that tax authorities deploy similar technologies (ABA-MAYMTG-2026). A search result described an ABA Tax Times summary of the session saying AI may speed TP work but does not change the legal framework; I could not open it (ABA-TAXTIMES-2026, search-only). Routed: authority-side AI to the controversy module."
 
 - id: tax-transfer-pricing-13
   title: Internal TP policy chatbot and self-service for non-specialists
@@ -642,7 +642,7 @@
     - Vendor claims; the BIP partnership says the model works 'without replacing professional judgement' (AIBIDIA-BIP-2026).
   human_checkpoints:
     - Provider experts review deliverables; client explains the business and reviews output (COMMENDA-2026)
-  role_evolution: Vendor survey: hybrid resourcing is the most common model, with 53% combining substantial internal capability with external support, up from 38% in 2024 (AIBIDIA-LEADERS-2026). BIP and Aibidia state the model aims to maintain central control without expanding internal headcount (AIBIDIA-BIP-2026).
+  role_evolution: "Vendor survey: hybrid resourcing is the most common model, with 53% combining substantial internal capability with external support, up from 38% in 2024 (AIBIDIA-LEADERS-2026). BIP and Aibidia state the model aims to maintain central control without expanding internal headcount (AIBIDIA-BIP-2026)."
   evidence_grade: C
   sources:
     - { ref: COMMENDA-2026, title: "Commenda vs Aibidia for Transfer Pricing (2026)", publisher: Commenda, type: vendor, url: "https://www.commenda.io/transfer-pricing/commenda-vs-aibidia", date: 2026-06, access: full, locator: "pricing block and FAQ" }
@@ -678,7 +678,7 @@
     - In-house teams keep ownership of data, judgment and institutional knowledge while buying specialist expertise where it adds value (AIBIDIA-LEADERS-2026).
   human_checkpoints:
     - Advisor review of local files
-  role_evolution: Hybrid resourcing is the most common model in the vendor's survey: 53% combine substantial internal capability with external support, up from 38% in 2024; 63% have three or fewer dedicated TP professionals (AIBIDIA-LEADERS-2026).
+  role_evolution: "Hybrid resourcing is the most common model in the vendor's survey: 53% combine substantial internal capability with external support, up from 38% in 2024; 63% have three or fewer dedicated TP professionals (AIBIDIA-LEADERS-2026)."
   evidence_grade: B
   sources:
     - { ref: AIBIDIA-TRIVIUM-2026, title: "How Trivium Packaging Cut TP Documentation Time by 80% with Aibidia", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/case-studies/how-trivium-packaging-cut-tp-documentation-time-by-80-percent-with-aibidia", date: 2026-10-17, access: full, locator: "section 'Scaling Transfer Pricing Process'; page undated" }
@@ -699,7 +699,7 @@
   runtime_class: personal-assistant
   maturity: emerging
   problem: Policy design and planning needs analysis of how entity results, tax rates and new business models interact.
-  solution: Idea: use AI to scan global tax and TP developments for planning opportunities and to test subsidiary financials against country tax rates. KPMG US says GenAI can pinpoint novel planning prospects; Plante Moran says some companies are experimenting with lightweight models of this kind, which work best as a conversation starter with an advisor.
+  solution: "Idea: use AI to scan global tax and TP developments for planning opportunities and to test subsidiary financials against country tax rates. KPMG US says GenAI can pinpoint novel planning prospects; Plante Moran says some companies are experimenting with lightweight models of this kind, which work best as a conversation starter with an advisor."
   outcomes:
     - lever: growth
       description: none published
