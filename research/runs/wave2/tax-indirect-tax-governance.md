@@ -110,6 +110,14 @@
     date: '2026-06-30'
     access: full
     locator: "Sections 'Most tax teams can't govern their AI outputs' and 'AI tax decisions face an audit defensibility gap'"
+  - ref: IRS-OPR-2026
+    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)
+    publisher: IRS Office of Professional Responsibility
+    type: regulator
+    url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70"
+    date: '2026-06-24'
+    access: full
+    locator: Opening paragraph and Circular 230 discussion (scope is federal tax practice)
   - ref: KPMG-INDIRECT-2026
     title: "Benchmarking Indirect Tax in a data-driven era: 2026 KPMG Indirect Tax Benchmarking Survey"
     publisher: KPMG International
@@ -1014,6 +1022,14 @@
     date: 2026-06
     access: full
     locator: "Appendix A, risk 1"
+  - ref: TAXNOTES-CDTFA-2025
+    title: "Experts Urge Caution as State Tax Agencies Deploy Generative AI (Tax Notes, DOC 2025-24791; copy hosted by American University Kogod School)"
+    publisher: Tax Notes (Tax Analysts)
+    type: press
+    url: "https://kogod.american.edu/hubfs/experts_urge_caution_as_state_tax_agencies_deploy_generative_ai_20250826-161144.pdf"
+    date: '2025-08-26'
+    access: full
+    locator: "pp. 2-3, written versus verbal advice"
   last_reviewed: '2026-10-17'
   notes: "Grade capped at B: the published measure covers all transactional queries across tax types, not GST alone, and the measurement is the agency's own estimate relayed by the OECD."
 - id: tax-indirect-tax-14
