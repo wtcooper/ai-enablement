@@ -380,7 +380,8 @@
     - "Valuation standards that require AI-use disclosure; the IVSC draft would take effect 31 Jan 2028 if adopted as proposed, subject to responses [IVSC-IVSED-2026]"
   risks_and_guardrails:
     - "Auditor evaluation of company-produced data, external data, assumptions and methods remains required [PCAOB-SPECIALISTS-2025]"
-    - "Neither ISA (UK) 620 nor the PCAOB specialist material read here mentions AI, so the procedure would rest on general requirements [FRC-620STD-2026; PCAOB-SPECIALISTS-2025]"
+    - "Neither ISA (UK) 620 nor the PCAOB's 2025 specialists Spotlight mentions AI, so the procedure would rest on general requirements [FRC-620STD-2026; PCAOB-SPECIALISTS-2025]"
+    - "The IAASB's proposed ISA 500 (Revised) para 14 would require the auditor to evaluate a management's expert's competence, capabilities and objectivity, understand the expert's work, and understand how management used and modified it; it adds nothing AI-specific [IAASB-ED500-2026]"
   human_checkpoints:
     - "Engagement partner and team evaluate whether the specialist's work provides sufficient appropriate evidence [PCAOB-SPECIALISTS-2025]"
   role_evolution: "Not described in the sources."
@@ -388,14 +389,17 @@
   sources:
     - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "pp10-12 (transparency; data and inputs; valuation models)" }
     - { ref: IVSC-IVSED-2026, title: "International Valuation Standards: Summary and Consultation Questions (IVS Exposure Draft, January 2026)", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_", date: "2026-01", access: full, locator: "pp4-5; p10 (effective date); p13 (questions 4-9)" }
-    - { ref: PCAOB-SPECIALISTS-2025, title: "Spotlight: Considerations for Audit Firms Using the Work of Specialists", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf", date: "2025-02", access: full, locator: "p3 (background); p6 (evaluating a company specialist)" }
-    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.caalley.com/intl_cnt/frc/ISA_UK_620_Revised_September_2026.pdf", date: "2026-09-23", access: full, locator: "paras 2(b), 6, A22, A35-A37" }
+    - { ref: PCAOB-SPECIALISTS-2025, title: "Spotlight: Considerations for Audit Firms Using the Work of Specialists", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf", date: "2025-02", access: full, locator: "p3 (background); p5 (standards in play); p6 (evaluating a company specialist)" }
+    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9933/ISA_UK_620_Revised_September_2026_cR37odIc.pdf", date: "2026-09-23", access: full, locator: "paras 2(b), 6, A22, A35-A37" }
+    - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed International Standard on Auditing 500 (Revised), Audit Evidence", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "proposed ISA para 14 and A62-A68 (management's expert); comments due 15 Dec 2026" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From combined-11. Idea (label: idea). Pattern 'other': evidence request and evaluation over an expert's AI use.
+    Idea (label: idea). Pattern 'other': evidence request and evaluation over an expert's AI use.
     The IVSC asks valuers to disclose AI use; no source describes auditors requesting or using that disclosure. The
-    IVS draft's comment period closed 30 Apr 2026, so the final text may differ. Management's experts are handled
-    under ISA (UK) 500 paras A45-A59 and PCAOB AS 1105 Appendix A.
+    IVS draft (published 30 Jan 2026) closed for comment on 30 Apr 2026; the IVSC plans to publish the next edition
+    on 31 Jan 2027, effective 31 Jan 2028, subject to responses, so the final text may differ. Management's experts
+    are handled under ISA (UK) 500 paras A45-A59 [FRC-620STD-2026, footnote 2] and PCAOB AS 1105 Appendix A
+    [PCAOB-SPECIALISTS-2025, p5].
 
 - id: assurance-specialists-10
   title: Auditors treat a client's significant AI use like complex valuation models and external specialists (idea)
@@ -426,7 +430,7 @@
     - "Auditor understanding of the entity's AI use in the risk-assessment phase [AT-AICPAPA-2026]"
     - "Access to the AI application's logic, data and assumptions, or suitable alternative procedures [AUASB-AI-2025]"
   risks_and_guardrails:
-    - "The AICPA practice aid is non-authoritative, and further guidance on risk of material misstatement and audit evidence is promised [AT-AICPAPA-2026]"
+    - "The AICPA describes the practice aid as nonauthoritative guidance [AICPA-GUIDE-2026], and further guidance on risk of material misstatement and audit evidence is promised [AICPA-PA-2026]"
     - "The AUASB says auditors should not over-rely on technology-generated information (automation bias) [AUASB-AI-2025]"
   human_checkpoints:
     - "Auditor remains responsible for the audit and the opinion [AICPA-PA-2026]"
@@ -436,18 +440,19 @@
   evidence_grade: D
   sources:
     - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "acceptance and continuance section; quotation on external specialists and complex valuation models" }
-    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "'Considering an organization's use of AI' bullets" }
-    - { ref: AUASB-AI-2025, title: "Impact of AI on Auditors", publisher: "AUASB", type: regulator, url: "https://auasb.gov.au/publications/impact-of-ai-on-auditors/", date: "2025-07", access: full, locator: "section 'Impact of the use of AI by audited entities'" }
+    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section one bullets; paragraph on future guidance; Jennifer Burns quotation" }
+    - { ref: AICPA-GUIDE-2026, title: "Explore new AICPA guidance on artificial intelligence (AI) and the financial statement audit", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit", date: "2026-10-12", access: full, locator: "opening sentence (practice aid 'offers timely, nonauthoritative guidance'); full aid behind member login" }
+    - { ref: AUASB-AI-2025, title: "Impact of AI on Auditors", publisher: "AUASB", type: standard-setter, url: "https://auasb.gov.au/publications/impact-of-ai-on-auditors/", date: "2025-07", access: full, locator: "'Issued July 2025'; section on audited entities' use of AI" }
     - { ref: BOARDMEMBER-CAQ-2026, title: "What Audit Partners Are Seeing On AI And What It Means For Audit Committees", publisher: "Corporate Board Member (CAQ author)", type: survey, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "items 1 and 3 (Spring 2026 Audit Partner Pulse)" }
   last_reviewed: "2026-10-17"
   notes: >-
-    From combined-12. Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source
+    Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source
     documents auditors using specialists this way on engagements. Pattern 'other': applying complex-model and
     specialist procedures to client AI. The same AICPA analogy appears from other angles in
     assurance-acceptance-independence-10, assurance-planning-risk-assessment-06 and assurance-assurance-over-ai-01;
-    this entry keeps only the specialists angle. The AICPA practice aid full text is behind a login; its wording
-    here comes from the AICPA release and Accounting Today. The AUASB page address was not recorded exactly in the
-    input; the page was read from a copy saved in the landscape run.
+    this entry keeps only the specialists angle. The practice aid, 'Artificial Intelligence (AI) Considerations for
+    Financial Statement Auditors' (13 Oct 2026), is behind a member login; its wording here comes from the AICPA
+    pages and Accounting Today. The AUASB page is marked non-authoritative.
 
 - id: assurance-specialists-11
   title: AI and data-science experts are engaged as auditor's experts or internal specialists to evaluate client AI (idea)
@@ -487,7 +492,7 @@
     - { ref: FRC-ARAQ-2026, title: "Annual Review of Audit Quality 2026", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9772/Annual_Review_of_Audit_Quality_2026_2eSTaw8P.pdf", date: "2026-07-22", access: full, locator: "p28 (resourcing and AI specialists)" }
     - { ref: COMPUTERWORLD-FT-2026, title: "The Big Four accounting firms are now hiring more AI specialists than accountants", publisher: "Computerworld (reporting an FT analysis)", type: press, url: "https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html", date: "2026-05-19", access: full, locator: "whole article" }
     - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "p20 (new approaches require new skills)" }
-    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.caalley.com/intl_cnt/frc/ISA_UK_620_Revised_September_2026.pdf", date: "2026-09-23", access: full, locator: "paras 6(a), 9, 9A, A1, A19A" }
+    - { ref: FRC-620STD-2026, title: "ISA (UK) 620 (Revised September 2026) Using the Work of an Auditor's Expert", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9933/ISA_UK_620_Revised_September_2026_cR37odIc.pdf", date: "2026-09-23", access: full, locator: "paras 6(a), 9, 9A, A1, A19A" }
   last_reviewed: "2026-10-17"
   notes: >-
     From combined-13. Idea (label: idea). Change scope 'model' because the change is who does the work: a new kind
