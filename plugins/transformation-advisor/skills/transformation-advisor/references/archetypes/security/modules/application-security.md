@@ -1,6 +1,6 @@
 # Application security (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/application-security.yaml` (17 entries). Ids are shortened
+Sources checked 2026-10-17. Use cases live in `../use-cases/application-security.yaml` (17 entries). Ids are shortened
 here: `#05` means `security-application-security-05`; other modules' ids are given in full. Source keys in brackets,
 such as [GOOGLE-AGENTICSCAN-2026], are in the YAML or in §10. Almost every outcome figure is self-reported by the
 deploying organisation or published by a vendor about its own product; no independent production measurement of an
@@ -27,7 +27,7 @@ assistants, code review, static and dynamic testing in the pipeline, fixing find
 code (packages, agent skills, outside pull requests), and how AppSec teams reorganise around their own agents. The
 2026 story is that finding flaws got cheap while verifying, reviewing and closing them did not
 [ANTHROPIC-GLASSWINGUPDATE-2026, UNPROMPTED-2026]. Vulnerability
-discovery programmes, consultant audits, fuzzing campaigns, bug-bounty and PSIRT intake, patching programmes and
+discovery programmes, consultant audits, fuzzing campaigns, bug-bounty and PSIRT (product security incident response team) intake, patching programmes and
 pentest agents are in the vulnerability-exposure module; this file points to them by id.
 
 ## 2. Processes and key steps
@@ -142,7 +142,7 @@ entries; reinvent has one, at a consultancy.
   scanners found 36.6% (static) or 77.8% (runtime-aware) of a ground-truth set [ARXIV-2609.23042, abstract].
 - Disclosure volume: 5,045 (Jan 2026) to 10,740 (Aug 2026) CVEs a month; GTIG says automated CNA assignment inflates
   counts [GTIG-VULNTRENDS-2026].
-- Maturity benchmark: BSIMM16 (111 organisations, Jan 2026) names AI adoption, SBOM growth and regulatory
+- Maturity benchmark: BSIMM16 (111 organisations, Jan 2026) names AI adoption, SBOM (software bill of materials) growth and regulatory
   self-attestation as themes; body gated [BLACKDUCK-BSIMM-2026].
 
 **Named outcomes (self-reported; most measure volume or effort, not quality)**
@@ -281,8 +281,8 @@ decisions; certifying origin of contributed code.
 
 ## 10. Sources
 
-Full details for every key used in the use cases are in the YAML. Keys cited only in this file (all opened by the
-research angles unless marked):
+Full details for every key used in the use cases are in the YAML. Keys cited only in this file (all opened in full
+unless marked):
 - **Regulators and standard-setters:** EC-CRA-2026 (European Commission, *Cyber Resilience Act*, 2026-09-07, https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act); EC-CRAREPORT-2026 (*Cyber Resilience Act - Reporting obligations* (page last updated 2026-09-11), 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting); EURLEX-NIS2-2022 (Directive (EU) 2022/2555 (NIS 2), 2022-12-14, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555); DORA-RTS-2024 (Delegated Regulation (EU) 2024/1774, 2024-06-25, https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1774); EC-AIACT-2026 (*AI Act: regulatory framework for AI (status page)*, 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai); NIST-SSDF-218R1-2025 (SP 800-218 Rev 1 ipd, 2025-12-17, https://csrc.nist.gov/pubs/sp/800/218/r1/ipd); NIST-SSDF-218A-2024 (SP 800-218A, 2024-07-26, https://csrc.nist.gov/pubs/sp/800/218/a/final); NIST-IR8596-2025 (IR 8596 iprd, 2025-12-16, https://csrc.nist.gov/pubs/ir/8596/iprd); CISA-SBD-2023 (Secure by Design, 2023-10-25, https://www.cisa.gov/resources-tools/resources/secure-by-design); UK-DSIT-SSCOP-2025 (Software Security Code of Practice, 2025-05-07, https://www.gov.uk/government/publications/software-security-code-of-practice); GOVIE-NCSC-2026 (Ireland NCSC statement on Mythos Preview, 2026-04-13, https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/press-releases/national-cyber-security-centre-ncsc-statement-on-anthropics-mythos-preview-model-for-defensive-cyber-security-purposes/).
 - **Firms and vendors:** GTIG-VULNTRENDS-2026 (Google Threat Intelligence Group, 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/); ANTHROPIC-GLASSWING-2026 (2026-04-07, https://www.anthropic.com/glasswing); SNYK-VULNBUMP-2026 (2026-10-15, https://snyk.io/blog/vulnbump/); SEMGREP-APPSEC-2026 (*What Application Security Actually Does All Day*, 2026-09-25, https://semgrep.dev/blog/2026/what-application-security-does); ONEPASSWORD-FLAWED-2026 (1Password Off-by-1 Labs, 2026-08-06, https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf); GITHUB-TASKFLOW-2026 (GitHub Blog, 2026-09-24, https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/); LF-GLASSWING-2026 (Linux Foundation, 2026-04-07, https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source).
 - **Surveys, press, community:** BLACKDUCK-BSIMM-2026 (BSIMM16 landing page, 2026-01, https://www.blackduck.com/resources/analyst-reports/bsimm.html); ISC2-WORKFORCE-2025 (2025-12-04, https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study); REGISTER-VERACODE-2026 (The Register, 2026-02-26, https://www.theregister.com/software/2026/02/26/rapid-ai-driven-development-makes-security-unattainable/4285126); STENBERG-PRESSURE-2026 (2026-05-26, https://daniel.haxx.se/blog/2026/05/26/the-pressure/); CURL-TEAM-2026 (2026-10-12, https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/).

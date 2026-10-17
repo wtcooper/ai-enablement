@@ -162,7 +162,7 @@
     - { ref: CONVEYOR-SUMO-2026, title: "Sumo Logic automates 100% of security requests with Conveyor Trust Center", publisher: "Conveyor", type: vendor, url: "https://www.conveyor.com/customers/sumo-logic", date: "2026-07", access: full, locator: "Challenge and Results sections"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Graded B: the measured results combine a document portal that does not need AI with the AI agent. Snowflake
+    Graded B: the reported results combine a document portal that does not need AI with the AI agent. Snowflake
     (2,000+ hours saved annually) and Sumo Logic (100% of document requests automated) are trust-centre results with
     no AI claim.
 

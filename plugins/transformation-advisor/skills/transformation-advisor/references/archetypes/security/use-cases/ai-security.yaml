@@ -1,17 +1,17 @@
-# Use cases: security / ai-security
-# Synthesised 2026-10-17 from the wave 4 landscape scan and three angle deep dives (threats and red teaming; agent
-# identity and containment; governance and assurance), plus items other security modules routed here.
+# Use cases: security / ai-security (securing AI systems and agents: threat modelling and red teaming, agent identity
+# and action control, containment and monitoring, inputs and supply chain, agent incidents, AI governance and
+# assurance). Sources checked 2026-10-17.
 # In most entries AI is the OBJECT of the security work (the thing being tested, contained or governed). ladder and
 # runtime_class then describe the control or tooling, not the AI being secured. pattern is often 'other' (proposed new
 # patterns in notes: 'adversarial evaluation of an AI system', 'agent action gate', 'containment architecture').
 # Evidence base: most measured figures come from AI labs' own training and evaluation environments (OpenAI, Anthropic,
 # UK AISI) and from vendor-sponsored surveys. No independent measurement of a deployed enterprise control was found.
-# Ref keys: one key per document across this file. OPENAI-HFTECH-2026 = OpenAI's Hugging Face incident technical report;
-# NISTCISA-IRKEY-2026 = NIST CAISI, NSA and CISA key practices (2026-10-16); ANTHROPIC-EVALINC-2026 = Anthropic's
-# evaluation-incident post (2026-07-30); HF-TIMELINE-2026 = Hugging Face technical timeline (2026-07-27).
-# US agency pages retrieved on 2026-10-17 print 'super intelligence (SI)' where earlier documents say 'AI'; titles use AI,
-# except NISTCISA-IRKEY-2026, which was issued on 2026-10-16 with 'Super Intelligence' in its title and is cited as issued.
-
+# Key notes: OPENAI-HFTECH-2026 is OpenAI's Hugging Face incident technical report; NISTCISA-IRKEY-2026 is the NIST,
+# NSA and CISA key practices (2026-10-16); ANTHROPIC-EVALINC-2026 is Anthropic's evaluation-incident post
+# (2026-07-30); HF-TIMELINE-2026 is the Hugging Face technical timeline (2026-07-27).
+# Some US agency documents issued after an Executive Order of 2026-09-29 use 'Super Intelligence (SI)' where earlier
+# documents say 'AI'. Titles are cited as issued (NISTCISA-IRKEY-2026 carries 'Super Intelligence' in its title);
+# this file's own text says AI. Search both terms.
 # ---------------------------------------------------------------------------------------------------------------
 # Area 1: threat modelling and adversarial testing
 # ---------------------------------------------------------------------------------------------------------------
@@ -498,7 +498,7 @@
     - {ref: MSFT-ENTRAAGENTID-2026, title: "What are agent identities? - Microsoft Entra Agent ID", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/entra/agent-id/identity-platform/what-is-agent-id", date: "2026-06-15", access: full, locator: "Agent identities in practice; How to get started"}
     - {ref: OKTA-AGENTSSO-2026, title: "Okta brings first-class identity to AI agents with Agent SSO", publisher: "Okta", type: vendor, url: "https://okta.com/newsroom/press-releases/okta-brings-first-class-identity-to-ai-agents-with-agent-sso/", date: "2026-08-24", access: full, locator: "The Agent Identity Gap; How Agent SSO Works"}
     - {ref: CROWDSTRIKE-AGENTICIDP-2026, title: "CrowdStrike Announces Agentic Identity Provider", publisher: "CrowdStrike", type: vendor, url: "https://www.crowdstrike.com/en-us/blog/crowdstrike-announces-agentic-identity-provider/", date: "2026-09-02", access: full, locator: "Introducing the Agentic Identity Provider; Broker short-lived, least-privilege access"}
-    - {ref: OKTA-DEX-2026, title: "Lessons learned from securing our digital workforce (J. Cline, SVP Technology, Data & Intelligence)", publisher: "Okta Newsroom", type: vendor, url: "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/", date: "2026-09-17", access: full, locator: "Lesson 2 (routed from the identity-access practice dive)"}
+    - {ref: OKTA-DEX-2026, title: "Lessons learned from securing our digital workforce (J. Cline, SVP Technology, Data & Intelligence)", publisher: "Okta Newsroom", type: vendor, url: "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/", date: "2026-09-17", access: full, locator: "Lesson 2"}
     - {ref: CSA-AGENTIDSPRAWL-2026, title: "AI Agent Identity Sprawl: The Enterprise Authorization Crisis", publisher: "Cloud Security Alliance AI Safety Initiative", type: survey, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-identity-sprawl-authorization-202/", date: "2026-06-20", access: full, locator: "Key Takeaways; Who Owns Agent Identity; Strategic Considerations"}
     - {ref: OKTA-AIAGENTS-2026, title: "AI Agents at Work 2026: Securing the agentic enterprise (Apprize360 survey of 292 executives and 492 knowledge workers, fielded March 2026)", publisher: "Okta", type: survey, url: "https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/", date: "2026-05-27", access: full, locator: "Key findings list"}
     - {ref: PANW-IDIRA-2026, title: "Palo Alto Networks Introduces Idira: the Next-Generation Identity Security Platform Built for the AI Enterprise", publisher: "Palo Alto Networks", type: vendor, url: "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise", date: "2026-05-12", access: full, locator: "Paragraphs 2-3"}
@@ -1118,7 +1118,7 @@
     - lever: risk
       description: A measurement of live remote MCP servers found many expose tools without authentication, and every OAuth-enabled server tested had at least one flaw.
       figure: "40.55% of 7,973 servers; 119 of 119 OAuth servers with a flaw"
-      measures: "Live remote MCP servers exposing tools without authentication; OAuth-enabled servers tested showing at least one flaw (abstract; routed from the identity-access governance dive)"
+      measures: "Live remote MCP servers exposing tools without authentication; OAuth-enabled servers tested showing at least one flaw (abstract)"
       provenance: independent
       source_ref: ARXIV-2605.22333
     - lever: risk
@@ -1145,7 +1145,7 @@
     - "Agent definitions and tool configurations in machine-readable form for bills of materials"
   risks_and_guardrails:
     - "Each malicious skill averaged 4.03 vulnerabilities and sophistication correlated with concealment, which limits static detection (USENIX-SKILLS-2026)."
-    - "Trail of Bits bypassed all tested public skill scanners with four purpose-built malicious skills (TOB-SKILLS-2026; routed from the application-security discourse dive)."
+    - "Trail of Bits bypassed all tested public skill scanners with four purpose-built malicious skills (TOB-SKILLS-2026)."
     - "GTIG reports a threat actor published trojanized forks of MCP servers via a package registry (GTIG-AITRACKER-2026, UNC6780)."
     - "CISA/ACSC warn of tool 'squatting' with look-alike names and persuasive tool descriptions that bias tool selection (CISA-AGENTIC-2026, pp.11-12)."
     - "AgentRiskBOM's authors say scoring thresholds require human calibration (ARXIV-2606.21877)."
@@ -1159,11 +1159,11 @@
   evidence_grade: A
   sources:
     - {ref: USENIX-SKILLS-2026, title: "'Do Not Mention This to the User': Detecting and Understanding Malicious Agent Skills in the Wild", publisher: "USENIX Security Symposium 2026 (Griffith University and others)", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yi", date: "2026-08", access: full, locator: "Abstract"}
-    - {ref: ARXIV-2605.22333, title: "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.22333", date: "2026-05-21", access: full, locator: "Abstract (read by the identity-access governance dive; routed)"}
+    - {ref: ARXIV-2605.22333, title: "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.22333", date: "2026-05-21", access: full, locator: "Abstract"}
     - {ref: HIDDENLAYER-2026, title: "2026 AI Threat Landscape Report (landing page with key findings; full report gated)", publisher: "HiddenLayer", type: survey, url: "https://www.hiddenlayer.com/report-and-guide/threatreport2026", date: "2026-03-18", access: full, locator: "'Key findings at a glance'"}
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "'OffGuard: Breaking the Most Popular AI Gateway from Auth Bypass to Cloud Compromise' (Saturday 8 Aug, Wiz; abstract)"}
     - {ref: ARXIV-2606.21877, title: "AgentRiskBOM: A Risk-Scoping Security Bill of Materials for Agentic AI Systems", publisher: "arXiv (IEEE Cyber-AI 2026)", type: academic, url: "https://arxiv.org/abs/2606.21877", date: "2026-06-20", access: full, locator: "Abstract"}
-    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening and 'Bypassing ClawHub scanning' (read by the application-security discourse dive; routed)"}
+    - {ref: TOB-SKILLS-2026, title: "The sorry state of skill distribution", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/", date: "2026-06-03", access: full, locator: "Opening and 'Bypassing ClawHub scanning'"}
     - {ref: GTIG-AITRACKER-2026, title: "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", publisher: "Google Threat Intelligence Group", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/", date: "2026-09-08", access: full, locator: "UNC6780 supply chain compromise"}
     - {ref: OWASP-AGENTIC-2025, title: "OWASP Top 10 for Agentic Applications for 2026", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/", date: "2025-12-09", access: full, locator: "ASI04 Agentic Supply Chain Vulnerabilities, pp.18-20"}
     - {ref: MCP-SECBP-2026, title: "Security Best Practices - Model Context Protocol", publisher: "Model Context Protocol project", type: standard-setter, url: "https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices", date: "2026-10-17", access: full, locator: "Local MCP Server Compromise (page undated; accessed 2026-10-17)"}

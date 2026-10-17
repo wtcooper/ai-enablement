@@ -1,7 +1,7 @@
 # Identity and access (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/identity-access.yaml` (24 entries). Ids are shortened here:
-`#06` means `security-identity-access-06`. Source keys in brackets, such as [SANS-ITDR-2026], are in the YAML or in
+Sources checked 2026-10-17. Use cases live in `../use-cases/identity-access.yaml` (24 entries). Ids are shortened here:
+`#06` means `security-identity-access-06`; other modules' ids are in full. Source keys in brackets, such as [SANS-ITDR-2026], are in the YAML or in
 §10. **Evidence is thin and vendor-heavy.** 11 of 24 entries are graded A or B; the one A (contact-centre caller
 authentication) rests on the vendor's own case studies. No override rate, false-approval rate or error rate from
 production was found for any AI feature in workforce IAM (access reviews, approvals, policy agents, risk scoring).
@@ -27,7 +27,7 @@ leavers, access requests and approvals, access reviews (certifications), authent
 Access policies), privileged access, identity threat detection and response (ITDR), identity proofing, help-desk
 account recovery, and identity-related fraud such as account takeover (ATO) and caller impersonation. Identities for
 AI agents (agent registration, sponsors, agent credentials, MCP authorisation) are covered in the ai-security module;
-general non-human identity hygiene and privileged access stay here. This project's security landscape scan judges that
+general non-human identity hygiene and privileged access stay here. This archetype's own reading is that
 fraud is usually run by fraud and risk teams outside the CISO's organisation, so check who owns it before probing.
 
 ## 2. Processes and key steps
@@ -74,16 +74,16 @@ announced entry (`#16`). No evidence was found for assist at process or model le
   AI coding tools (Cloudflare's postings make it a requirement).
 - Automate: `#08` continuous full-population posture checks with remediation and recorded evidence (SailPoint,
   Saviynt, Idira announcements; regulator-evidence idea). Audit-side testing of access reviews is in governance-risk
-  (provisional id `security-governance-risk-07`).
+  (`security-governance-risk-07`).
 
 **Identity threat detection and response**
 - Improve: `#13` plain-language risky-user summaries and next steps (Microsoft documentation).
 - Automate: `#14` ML risk scoring of sign-ins and sessions drives step-up, block or session end (Okta, Microsoft).
   `#15` closed-loop response on high-confidence detections, with a second threshold to a person.
 - Delegate: `#17` Push Security's agents hunt for identity-targeting browser attacks and draft detections
-  researchers ship (tripled detections shipped; self-reported, adjacent process). Compare `security-operations-18`.
+  researchers ship (tripled detections shipped; self-reported, adjacent process). Compare `security-operations-17`.
 - Reinvent: `#16` MDR (managed detection and response) extended to SaaS identity threats (CrowdStrike, announced);
-  the wider MDR shift is `security-operations-23`. Containment playbooks: `security-incident-response-11`.
+  the wider MDR shift is `security-operations-22`. Containment playbooks: `security-incident-response-11`.
 
 **Verification, recovery and fraud**
 - Automate: `#18` enforced verification before help-desk resets (Cisco via Persona: a wait of "three or four hours"
@@ -137,7 +137,7 @@ announced entry (`#16`). No evidence was found for assist at process or model le
 | Caller authentication | 90s to 45s (MSUFCU); IVR match 31% to 71% (HealthEquity) [PINDROP-MSUFCU-2025] [PINDROP-HEALTHEQUITY-2026] | vendor-published |
 | Security-question pass rate by fraudsters | 53% average over 2,500 fraud calls at 10 institutions [PINDROP-VEC-2025] | vendor data |
 | Phishing-resistant policy (counterfactual) | Could have stopped 88% of ATO attempts, 99.75% with app sign-in enforcement, in ~6,000 events [OKTA-TI-2026] | vendor-published estimate |
-| Factors in ATO sessions | password 87%; push 58%; app OTP 36%; SMS OTP 22% [OKTA-TI-2026] | vendor-published |
+| Factors in ATO sessions | password 87%; push 58%; app OTP (one-time passcode) 36%; SMS OTP 22% [OKTA-TI-2026] | vendor-published |
 | AI-driven attacks | 44% had a successful AI-driven attack; 43% saw voice or video impersonation; 36% spotted the human-written message [OKTA-AUTHSURVEY-2026] | vendor survey, ~2,000 |
 | Identity proofing (DHS test of vendors) | median presentation-attack detection 78%; genuine users validated 85% (median); errors 20% for 46+ vs 9% for 18-45 [DHS-RIVTD-2025] | independent, 2023 event |
 | Deepfake-voice detectors | best equal error rate 13.50% of 12; others above 20% [USENIX-VOICEWUKONG-2025] | independent |
@@ -222,7 +222,7 @@ time to contain, recovery time, false positives and lockouts. None has a publish
   Silverfort's lab agents went from initial credentials to domain takeover in four to five minutes, which it calls
   patterns rather than benchmarks [SILVERFORT-ASSUMPTIONS-2026].
 - Upcoming: FIDO Authenticate (2026-10-19 to 21) on "agentic authentication" [FIDO-AUTH-2026]; Gartner IAM Summit from
-  2026-12-07, whose agenda lists AI-enhanced IGA and deepfake-resistant identity verification among its topics
+  2026-12-07, whose agenda lists AI-enhanced IGA (identity governance and administration) and deepfake-resistant identity verification among its topics
   [GARTNER-IAMSUMMIT-2026].
 
 ## 9. Common objections

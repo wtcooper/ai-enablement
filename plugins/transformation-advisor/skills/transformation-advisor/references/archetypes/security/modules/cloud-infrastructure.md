@@ -1,7 +1,7 @@
 # Cloud and infrastructure security (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/cloud-infrastructure.yaml` (24 entries). Ids are shortened
-here: `#05` means `security-cloud-infrastructure-05`. Source keys in brackets are in the YAML or in §10.
+Sources checked 2026-10-17. Use cases live in `../use-cases/cloud-infrastructure.yaml` (24 entries). Ids are shortened
+here: `#05` means `security-cloud-infrastructure-05`; other modules' ids are in full. Source keys in brackets are in the YAML or in §10.
 Read this first: almost every outcome figure is **vendor-published** (Wiz, AWS, Tamnoon, CrowdStrike, Check Point) or
 **self-reported** by the deploying organisation; no independent measurement of any cloud-security agent exists, and
 the independent lab research is more cautious. Only 5 of 24 entries are graded B and none A: ZS's figure (`#02`) is a
@@ -41,10 +41,10 @@ AWS Security Agent are `security-vulnerability-exposure-17`; calibrated endpoint
 | Posture assessment and prioritisation | Score misconfigurations (CSPM, CNAPP: posture and cloud-native protection platforms); rank by reachability, privilege, data | review-assurance, data-reporting | Teams investigate about 4% of alerts (vendor research) [TAMNOON-REMEDIATION-2026]; over half of high-priority findings fall away with context [WIZ-CLOUDRISK-2026] |
 | Ownership and routing | Find who owns the resource and at which layer to fix it | coordination-scheduling | Routing can take longer than the fix [WIZ-PILLAR2-2026]; ownership graph is never complete [WRITER-CEREBRO-2026] |
 | Remediation and change | Fix, approve, apply, verify, prevent recurrence | software-systems | Critical misconfigurations open 128 days on average (vendor) [TAMNOON-REMEDIATION-2026]; fear of breaking production |
-| Identity and permission hygiene | Right-size roles, keys, service accounts | software-systems, review-assurance | 59% of AWS IAM users have an access key over a year old [DATADOG-SOCS-2025]; console fixes are overwritten by IaC [AWS-LEASTPRIV-2026] |
+| Identity and permission hygiene | Right-size roles, keys, service accounts | software-systems, review-assurance | 59% of AWS IAM (identity and access management) users have an access key over a year old [DATADOG-SOCS-2025]; console fixes are overwritten by IaC [AWS-LEASTPRIV-2026] |
 | Preventive guardrails in IaC | Approved modules, policy as code, pipeline gates | software-systems | AI assistants write most IaC in many organisations (speaker claim) [FWDCLOUDSEC-RENGASAMY-2026]; LLM IaC has 3.21x-3.87x human vulnerability density [ARXIV-2608.28021] |
 | Runtime detection and investigation | Cloud and Kubernetes alerts, verdicts, containment | transaction-processing, research-synthesis | About 2% of cloud alerts actionable at WRITER [WRITER-CEREBRO-2026]; runtime noise [AWS-GUARDDUTY-ETD-2026] |
-| Network and edge policy | Firewall rules, WAF virtual patches, segmentation | software-systems, review-assurance | Rulebases drift between review cycles [CHECKPOINT-AGENTICNET-2026]; 43-day median patch time cited [FWDCLOUDSEC-ALIM-2026] |
+| Network and edge policy | Firewall rules, WAF (web application firewall) virtual patches, segmentation | software-systems, review-assurance | Rulebases drift between review cycles [CHECKPOINT-AGENTICNET-2026]; 43-day median patch time cited [FWDCLOUDSEC-ALIM-2026] |
 | Endpoint protection | EDR (endpoint detection and response) policy, developer endpoints | software-systems, expert-judgment | Coding agents act on privileged endpoints, approvals often skipped [PERPLEXITY-NUMBAT-2026] |
 | Detection engineering and validation | Write, test and retire cloud detection rules; attack simulation | software-systems, review-assurance | 1 in 3 of 2,000+ public cloud rules defective (speaker claim) [FWDCLOUDSEC-GOWTHAM-2026] |
 | Compliance and continuous authorisation | Evidence for FedRAMP-style regimes; policy as code | review-assurance, document-production | Point-in-time checks lag dynamic cloud [WIZ-FORGOV-2026] |
@@ -64,7 +64,7 @@ people keep merges, risky fixes and higher-severity verdicts; WRITER also reserv
 - Automate: `#02` an agent investigates cloud detections; ZS ran it in parallel with analysts for three months
   ("around 95.17%" agreement, its own validation), then let it close a defined set of low-severity alerts with an
   end-of-shift human review. Redis: 85.7% accuracy over 431 cases (vendor-published). Grade B: method unpublished.
-- Improve (process): `#03` in-house triage agents over posture findings: Cohere via an MCP server (attack-path
+- Improve (process): `#03` in-house triage agents over posture findings: Cohere via an MCP (Model Context Protocol, how agents connect to tools) server (attack-path
   analysis "up to 120 minutes to 20 seconds", vendor headline); WRITER's open-source Cerebro with evidence rules
   (grade B).
 - Improve: `#04` GuardDuty folds weak runtime signals and posture context into one attack sequence (AWS: about one in
@@ -191,7 +191,7 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
   rules (PR.PS-01) [NIST-IR8596-2025].
 - **Speed versus approval.** ENISA's "Authority Gap": change boards cannot approve in the minutes available, so critical
   providers may be forced into autonomous patching, at the risk of outages [ENISA-FRONTIER-2026].
-- **US federal.** BOD 26-04 (2026-06-10, per a vendor summary): risk-based remediation by exposure, KEV status, exploit
+- **US federal.** BOD 26-04 (2026-06-10, per a vendor summary): risk-based remediation by exposure, KEV (CISA's Known Exploited Vulnerabilities catalogue) status, exploit
   automatability and impact; three days for the highest risk [CROWDSTRIKE-BOD2604-2026].
 - **Financial services and EU.** FINRA: consider how to monitor agent system access, where to place human checks and
   how to track agent actions [FINRA-ROR-2026]. DORA's 19 designated critical ICT providers include AWS, Google Cloud
@@ -242,7 +242,7 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 - 2026-09-08: fwd:cloudsec Europe talks on agents in Kubernetes, sandboxes and "infrastructure security"
   [FWDCLOUDSEC-RAJI-2026, FWDCLOUDSEC-GONDA-2026].
 - 2026-09-17 and 09-28: Cisco's Policy Change Impact Analyzer, per FwChange; Wiz MSP programme [FWCHANGE-VENDORAI-2026, WIZ-MSP-2026].
-- 2026-10-05 and 10-06: CrowdStrike AI remediation plans; Wiz AI SAST ties code findings to what runs in production
+- 2026-10-05 and 10-06: CrowdStrike AI remediation plans; Wiz AI SAST (static code scanning) ties code findings to what runs in production
   [CROWDSTRIKE-CLOUDREM-2026, WIZ-AISAST-2026].
 - 2026-10-12 and 10-14: GuardDuty attack sequences gain posture indicators; Wiz agents run inside FedRAMP High [AWS-GUARDDUTY-ETD-2026, WIZ-FORGOV-2026].
 - 2026-10-15: CERT-In advisory treats AI agents as attack vectors exploiting conventional cloud weaknesses

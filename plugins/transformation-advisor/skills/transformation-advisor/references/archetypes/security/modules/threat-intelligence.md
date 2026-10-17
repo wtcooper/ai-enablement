@@ -1,7 +1,7 @@
 # Threat intelligence (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/threat-intelligence.yaml` (24 entries). Ids are shortened here: `#05`
-means `security-threat-intelligence-05`. Source keys in brackets, such as [SANS-CTIPR-2026], are in the YAML or in §10.
+Sources checked 2026-10-17. Use cases live in `../use-cases/threat-intelligence.yaml` (24 entries). Ids are shortened here: `#05`
+means `security-threat-intelligence-05`; other modules' ids are in full. Source keys in brackets, such as [SANS-CTIPR-2026], are in the YAML or in §10.
 **Evidence is thin and mostly vendor-shaped.** 14 of 24 entries are graded A or B, but only two carry a figure a named
 organization reports as measured (Grow Therapy's own cost and noise data, `#21`; Microsoft's customer-feedback precision for its
 own agent, `#22`). Everything else is a vendor claim, a customer quote in a vendor case study, a survey share or a lab benchmark.
@@ -36,14 +36,14 @@ of AI systems themselves to ai-security; overlaps are flagged by entry.
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
 | Direction and requirements | Agree priority intelligence requirements (PIRs: the standing questions the team must answer) with stakeholders | expert-judgment, coordination-scheduling | 91% of CISOs value CTI but only 26% say it drives their decisions; 57% of programs do not track maturity and 49% gather no systematic feedback [SANS-CTIPR-2026] |
-| Collection | Feeds, vendor reports, OSINT, dark web and forums, stealer logs, partner and ISAC sharing, telemetry | research-synthesis | Alert noise and false positives top the problem list (65% of Flashpoint interviewees), then analyst bandwidth (55%) [FLASHPOINT-ENTERPRISE-2026]; over 50 million stealer logs posted in 2025 [FIRST-CON-2026] |
+| Collection | Feeds, vendor reports, OSINT (open-source intelligence), dark web and forums, stealer logs, partner and ISAC sharing, telemetry | research-synthesis | Alert noise and false positives top the problem list (65% of Flashpoint interviewees), then analyst bandwidth (55%) [FLASHPOINT-ENTERPRISE-2026]; over 50 million stealer logs posted in 2025 [FIRST-CON-2026] |
 | Processing and enrichment | Extract indicators and entities, normalize, tag, map to MITRE ATT&CK (the public catalogue of attacker techniques), translate | data-reporting, transaction-processing | 13 of 18 practitioners struggle to isolate indicators from noisy data; 10 of 18 to map to taxonomies [ARXIV-2609.01174] |
 | Analysis | Relevance to the organization, prioritization, malware analysis, attribution, campaign tracking | expert-judgment | Vendor reports contradict each other because of each vendor's collection bias [FIRST-CON-2026; ARXIV-2602.17458] |
 | Production and dissemination | Briefings and finished reports for SOC, resilience leads and executives | document-production | Analyzing one incident from an article typically takes several hours (Microsoft-authored paper) [ARXIV-2603.09452] |
-| Sharing | Redact, package as STIX/TAXII (the standard exchange formats) or MISP, label under TLP, publish to ISACs and partners | review-assurance, document-production | 17 of 18 practitioners cite exposure of sensitive data [ARXIV-2609.01174]; 55% of organizations lack legally reviewed sharing processes [SANS-CTIPR-2026] |
+| Sharing | Redact, package as STIX/TAXII (the standard exchange formats) or MISP, label under TLP (Traffic Light Protocol sharing labels), publish to ISACs and partners | review-assurance, document-production | 17 of 18 practitioners cite exposure of sensitive data [ARXIV-2609.01174]; 55% of organizations lack legally reviewed sharing processes [SANS-CTIPR-2026] |
 | Action | Turn intelligence into detection rules, blocklists, hunts, tickets and SOAR (automated response) playbooks | software-systems, coordination-scheduling | One inbound report can consume a morning from extraction to ticket [FEEDLY-AUTOMATE-2026]; about 40% say integration into workflows is mostly manual (vendor survey) [CYWARE-RSAC-2026] |
 | Threat hunting | Trigger, hypothesis, query, analysis, conversion to standing detection | expert-judgment, research-synthesis | Scarce senior hunters [CYBERPROOF-HUNTING-2026]; query-language expertise [MSFT-HUNTASSIST-2026]; short log retention [INTEL471-HUNTING-2025] |
-| Feedback and measurement | Track whether intelligence changed decisions | data-reporting | Practitioners reject report and IOC counts in favour of decisions influenced and time from intelligence to action [FEEDLY-ROUNDUP-2026] |
+| Feedback and measurement | Track whether intelligence changed decisions | data-reporting | Practitioners reject report and IOC (indicator of compromise) counts in favour of decisions influenced and time from intelligence to action [FEEDLY-ROUNDUP-2026] |
 
 Teams are small: most formal CTI teams have fewer than four full-time staff, and lack of time and of funding (44% each) are the
 top barriers [SANS-CTIPR-2026].
@@ -99,13 +99,13 @@ for automate at step level**, or for new CTI service lines, pricing or sourcing 
 Cross-module: `#21` overlaps `security-operations-07` (evidence-gated dismissal); `#22` is referenced from `security-operations-14`;
 `#14` hands off to detection-rule work in `security-operations-15`; `#08` feeds `security-vulnerability-exposure-09` (prioritisation);
 prompt-injection hardening is `security-ai-security-13`; `#18` sits next to fraud and brand protection in human-risk; Datadog's hunt for fake job applicants with "AI-driven risk
-assessment" [FIRST-CON-2026] is routed to human-risk.
+assessment" [FIRST-CON-2026] is in `security-human-risk-12`.
 
 ## 4. Interview probes
 
 Ask in the person's setting (in-house CTI team, intelligence vendor, managed provider or ISAC).
 
-1. **"Walk me through one inbound report: which steps does AI touch, and what review sits between AI output and your TIP, SIEM,
+1. **"Walk me through one inbound report: which steps does AI touch, and what review sits between AI output and your TIP, SIEM (the log and detection platform),
    ticketing or a stakeholder?"** Reveals where they sit on the ladder and whether `#05`, `#14` or `#17` apply; Feedly's rule is an
    approval step between any read stage and any write stage [FEEDLY-AUTOMATE-2026].
 2. **"For one AI step, what share of output is accepted without edit, and have you measured precision against analyst verdicts on

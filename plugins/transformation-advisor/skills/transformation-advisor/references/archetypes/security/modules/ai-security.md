@@ -1,6 +1,6 @@
 # AI security (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/ai-security.yaml` (25 entries). Ids are shortened here: `#05`
+Sources checked 2026-10-17. Use cases live in `../use-cases/ai-security.yaml` (25 entries). Ids are shortened here: `#05`
 means `security-ai-security-05`; other modules' ids are in full. Source keys in brackets are listed in §10 and given in
 full in the YAML. **Read this first:** in most entries AI is the *object* of the security work (the thing being tested,
 contained or governed), not the tool doing it. Most measured figures come from AI labs' own evaluation environments
@@ -178,11 +178,11 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 - **Regulation:** EU AI Act Article 73 serious-incident reporting (15 days; 2 days for widespread infringement; 10 days
   for a death) for high-risk providers, with Annex III duties moved to 2027-12-02 by the AI Omnibus
   [EU-AIACT-ART73-2024; EC-AIACT-2026]; California SB 53 (since 2026-01-01) and New York RAISE (from 2027-01-01) apply to
-  frontier developers only [KPMG-STATEAI-2026]; CERT-In requires incident reports within 6 hours [THN-CERTIN-2026]; MAS
+  frontier developers only [KPMG-STATEAI-2026]; CERT-In requires incident reports within 6 hours [THN-CERTIN-2026]; MAS (Monetary Authority of Singapore)
   expects inventory including embedded vendor AI, generally within 12 months (with oversight and materiality) and full
   implementation within 24
   [MAS-AIRM-RESPONSE-2026]; NYDFS and FINRA cover AI vendor due diligence and agent supervision [NYDFS-AIGUIDE-2024;
-  FINRA-ROR-2026]. The EU GPAI Code lists red teaming and training-data tamper checks for systemic-risk models
+  FINRA-ROR-2026]. The EU GPAI (general-purpose AI) Code lists red teaming and training-data tamper checks for systemic-risk models
   [EU-GPAICODE-2025].
 - **Steps that need human judgment:** whether a capability combination is acceptable (`#01`); severity of red-team
   findings and whether a behaviour gives real attacker uplift (`#02`); which actions need approval, set by designers not
@@ -215,7 +215,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 - 2025-12-09: OWASP Agentic Top 10 with a weekly incident tracker [OWASP-AGENTIC-2025].
 - 2026 (RSAC Conference): Innovation Sandbox won by Geordie AI (agent visibility and behaviour monitoring) [RSAC-ISB-2026].
 - 2026-05-01: joint government guidance on agentic AI (CISA, ACSC and partners) [CISA-AGENTIC-2026].
-- 2026-05 to 2026-09: agent identity and AI gateway products: Palo Alto Idira and Portkey (gateway), Okta Agent SSO,
+- 2026-05 to 2026-09: agent identity and AI gateway products: Palo Alto Idira and Portkey (gateway), Okta Agent SSO (single sign-on),
   CrowdStrike Agentic IdP
   [PANW-IDIRA-2026; PANW-PORTKEY-2026; OKTA-AGENTSSO-2026; CROWDSTRIKE-AGENTICIDP-2026].
 - 2026-07-16 to 2026-08-26: OpenAI agents escape a sandbox and breach Hugging Face; Anthropic and AISI disclose their own
@@ -285,10 +285,10 @@ CSA-STARAI-2026, ETSI-EN304223-2025 and OKTA-DEX-2026 are also in the YAML.
 - Not in the YAML (module only):
   - GTIG-VULNTRENDS-2026: Google Threat Intelligence Group, "Vulnerability Discovery and Exploitation Trends in the AI
     Era", 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/
-    (routed from vulnerability-exposure; Table 2).
+    (Table 2).
   - VULNCHECK-1H-2026: VulnCheck, "State of Exploitation 1H-2026", 2026-07-28,
-    https://www.vulncheck.com/blog/state-of-exploitation-1h-2026 (routed from vulnerability-exposure).
+    https://www.vulncheck.com/blog/state-of-exploitation-1h-2026.
   - RSAC-ISB-2026: RSAC Innovation Sandbox (2026 contest winner), https://www.rsaconference.com/usa/programs/innovation-sandbox,
     2026 (page names the 2026 winner; the month is not stated on the page).
   - MITRE-ATTCK-2026: MITRE ATT&CK updates (v20), https://attack.mitre.org/resources/updates/, 2026-10-13 (v20 release
-    notes list AI-focused and AI-enabled techniques; verified 2026-10-17).
+    notes list AI-focused and AI-enabled techniques).

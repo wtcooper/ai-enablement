@@ -1,8 +1,8 @@
 # Data security and privacy (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/data-privacy.yaml` (21 entries). Ids are shortened here:
+Sources checked 2026-10-17. Use cases live in `../use-cases/data-privacy.yaml` (21 entries). Ids are shortened here:
 `#06` means `security-data-privacy-06`; other modules' ids are in full. Source keys in brackets are in the YAML or in
-§10. **Evidence is thin.** This module had one combined deep dive. 8 of 21 entries are graded A or B; the one A
+§10. **Evidence is thin.** 8 of 21 entries are graded A or B; the one A
 entry (Meta's rule-versus-LLM routing split) is the deploying team's own figure and publishes no error or miss rate.
 Microsoft's privacy code detection (#14) is B: its only figure comes from a conference abstract. No independent override, false-positive or miss rate was found
 for LLM-based DLP, alert triage or classification in production. Most other numbers are vendor telemetry that sizes
@@ -111,7 +111,7 @@ are happening. Agents that act (#11) still need approval for each action. Of the
 9. **Where do PIAs, DPIAs and privacy code review spend their time, and which part could a first draft cover with a
    reviewer signing off?** Points to #15 or #14, and to the reviewer capacity they need.
 10. **Do agents you run pass customer or employee data to outside tools or services?** Opens #17 and the
-    ai-security module; research measured unnecessary sensitive data in 81-88% of tool calls under default prompts [ARXIV-TOOLMINIMIZE-2026].
+    ai-security module; research found unnecessary sensitive data in 81-88% of tool calls under default prompts [ARXIV-TOOLMINIMIZE-2026].
 11. **Do you have a current inventory of keys and certificates, and who renews them?** Reveals readiness for shorter
     certificate lifespans; AI evidence here is a single vendor announcement (#19).
 
@@ -209,7 +209,7 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 
 Direction (our reading of the deals above): two acquisitions (Akamai and LayerX, Proofpoint and Varonis) and Cyera's
 funding round point to data security and AI usage control being sold together. Research prototypes target
-what agents send to tools and coding agents (#17, #18); no deployment was found. Practitioner discourse is very thin: 100 recent Risky Business episode titles
+what agents send to tools and coding agents (#17, #18); no deployment was found. Practitioner discussion is very thin: 100 recent Risky Business episode titles
 had none on DLP or privacy engineering [RISKYBIZ-FEED-2026].
 
 ## 9. Common objections
@@ -257,7 +257,7 @@ Cited here only (all opened in full unless marked):
 - BLACKHAT-ASIAPR-2026: Black Hat Asia 2026 post-event press release, Black Hat (Informa), 2026-04-29, https://blackhat.com/html/press/2026-04-29.html
 - COINBASE-JOB-PRIVACYANALYST-2026: Analyst, Privacy (Incident Management) (job posting), Coinbase, 2026-09-01, https://www.coinbase.com/careers/positions/8168175?gh_jid=8168175
 - DATADOG-JOB-AIDATASEC-2026: Product Manager II, AI & Data Security (job posting), Datadog, 2026-06-04, https://careers.datadoghq.com/detail/7982288/?gh_jid=7982288
-- EC-AIACT-2026: AI Act regulatory framework status page (undated; checked 2026-10-17), European Commission, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- EC-AIACT-2026: AI Act: regulatory framework for AI (status page), European Commission, 2026-10-17 (page undated; retrieval date), https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - EDPB-OPINION2824-2024: Opinion 28/2024 on data protection aspects of AI models, EDPB, 2024-12-17, https://www.edpb.europa.eu/system/files/documents/2024-12/edpb_opinion_202428_ai-models_en.pdf
 - GARTNER-DLP-2025: Gartner Insights abstract, document 7192130, Gartner, 2025-11-17, https://www.gartner.com/en/documents/7192130 (search-only)
 - IBM-CODB-2025: IBM Report, 13% of organizations reported breaches of AI models or applications (Cost of a Data Breach 2025), IBM, 2025-07-30, https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls

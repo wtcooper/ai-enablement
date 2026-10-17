@@ -1,11 +1,10 @@
 # Incident response (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/incident-response.yaml` (22 entries). Ids are shortened
-here: `#05` means `security-incident-response-05`; other modules' ids are in full and not repeated here. Source keys in brackets, such as [GOOGLE-IRGENAI-2024], are in
-the YAML or in §10. Almost every outcome figure is self-reported by the deploying organisation, published by a vendor,
+Sources checked 2026-10-17. Use cases live in `../use-cases/incident-response.yaml` (22 entries). Ids are shortened
+here: `#05` means `security-incident-response-05`; other modules' ids are in full. Source keys in
+brackets, such as [GOOGLE-IRGENAI-2024], are in the YAML or in §10. Almost every outcome figure is self-reported by the deploying organisation, published by a vendor,
 or a lab benchmark. No independent production measure of AI in incident response was found: no override rates, no
-parallel runs, no inspection findings. Say so when you quote a figure. Verified against sources 2026-10-17
-(`research/runs/wave4/incident-response-verification-report.md`).
+parallel runs, no inspection findings. Say so when you quote a figure.
 
 ## Contents
 
@@ -32,7 +31,7 @@ declared sits in security-operations; agent containment controls sit in ai-secur
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Plans and playbooks | Write and maintain the IR plan, runbooks and escalation paths | document-production, review-assurance | Updated reactively; 48% don't know if they have AI incident playbooks [ISACA-SOC-2026] |
+| Plans and playbooks | Write and maintain the IR (incident response) plan, runbooks and escalation paths | document-production, review-assurance | Updated reactively; 48% don't know if they have AI incident playbooks [ISACA-SOC-2026] |
 | Exercises | Tabletops, drills, crisis simulations | coordination-scheduling | Scenarios written once a year go stale; 64% have run no AI-related IR exercise [ISACA-SOC-2026] |
 | Readiness | Log retention, model access, clean recovery baselines, retainers | software-systems | Hosted models refused attack payloads mid-incident [HF-DISCLOSURE-2026]; agent prompt context lost to log retention [SANS-DFIRSUMMIT-2026] |
 | Declare and escalate | Turn signals into an incident with a severity and an owner (triage itself: security-operations) | review-assurance | Early signs not escalated at OpenAI [OPENAI-HFROAD-2026]; Hugging Face's AI correlation did not raise criticality [HF-TIMELINE-2026] |
@@ -179,7 +178,7 @@ halt time for AI systems in drills; restore-point accuracy in recovery tests.
 - **EU AI Act Art. 73**: providers of high-risk AI report serious incidents, outer limit 15 days; Annex III
   obligations moved to 2027-12-02 [EU-AIACT-ART73-2024; EC-AIACT-2026].
 - **US**: SEC Form 8-K Item 1.05 four business days after a materiality determination, under a rescission push with no
-  final action found [SEC-CYBER-2023; SIFMA-SEC-2026]; CIRCIA not yet in force (no final rule in the Federal Register through 2026-10-17) [FR-CIRCIA-2026]. **India**: CERT-In 6
+  final action found [SEC-CYBER-2023; SIFMA-SEC-2026]; CIRCIA (the US Cyber Incident Reporting for Critical Infrastructure Act) not yet in force (no final rule in the Federal Register through 2026-10-17) [FR-CIRCIA-2026]. **India**: CERT-In 6
   hours [CERTIN-BLUEPRINT-2026]. **UK**: a bill would add 24 and 72-hour reporting [GOVUK-CSRB-2025].
 
 **Standards and guidance**
@@ -277,9 +276,9 @@ Full details (title, publisher, type, URL, date, access) are in the YAML for eve
   WIRED-OPENAI-2026, THN-CERTIN-2026, SILICONANGLE-SAFE-2026, AXIOS-SAFE-2026, SECURITYWEEK-SAFE-2026, OSAA-SAFERFC-2026,
   HELPNET-GARTNER-2026, UPHACK-HF-2026,
   DATABRICKS-JOB-IR-2026, GITLAB-JOB-2026, TWILIO-JOB-2026, CLOUDFLARE-JOB-CMDC-2026, BLOCK-JOB-2026.
-- **Not in the YAML (opened by the research angles; reopened by the verifier 2026-10-17):** UNSECURE-EVAL-2026 (unsecure.sh, John Ao and
+- **Not in this module's YAML (all opened in full):** UNSECURE-EVAL-2026 (unsecure.sh, John Ao and
   Michel San, *A scenario to evaluate your Agentic SOC*, 2026-08-27, https://unsecure.sh/blog/agentic-soc-scenario/; same key as
-  `security-operations-21`; the page does not name Cotool, so the earlier 'Cotool' attribution was dropped);
+  `security-operations-21`; the page does not name Cotool);
   ISACA-AIPULSE-EU-2026 (ISACA, *A Third of European Organisations
   Don't Know if They've Been Hit by an AI-Powered Cyberattack*, 2026-06-17,
   https://www.isaca.org/about-us/newsroom/press-releases/2026/a-third-of-european-organisations-dont-know-if-they-have-been-hit-by-an-ai-powered-cyberattack);

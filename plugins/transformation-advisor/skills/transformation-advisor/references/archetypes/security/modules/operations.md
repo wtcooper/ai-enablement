@@ -1,7 +1,7 @@
 # Security operations (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/operations.yaml` (24 entries). Ids are shortened here:
-`#05` means `security-operations-05`. Source keys in brackets, such as [SANS-SOC-2026], are given in full in the YAML
+Sources checked 2026-10-17. Use cases live in `../use-cases/operations.yaml` (24 entries). Ids are shortened here:
+`#05` means `security-operations-05`; other modules' ids are in full. Source keys in brackets, such as [SANS-SOC-2026], are given in full in the YAML
 or listed in §10. Almost every outcome figure is self-reported by the deploying team or published by a vendor about its
 own product or customer. No independent, production-scale measure of AI miss rates or override rates exists yet. Say
 so when you quote a figure.
@@ -75,8 +75,8 @@ has three entries, all vendor-reported or hiring data.
   resolution, observational). `#13` agent drafts the report for sign-off.
 - Delegate: `#09` an agent investigates end to end and on-call staff supervise (Figma: about 70% shorter time to
   resolution; Slack's Director/Expert/Critic design).
-- Elsewhere: agent-built case notebooks and timelines are security-incident-response-07 and -04; provenance-graph
-  root-cause agents are security-incident-response-08.
+- Elsewhere: agent-built incident timelines are security-incident-response-04; provenance-graph root-cause
+  agents are security-incident-response-07.
 
 **Hunting and detection engineering**
 - Improve: `#14` LLM triage of anomaly signals surfaced an intrusion no single rule flagged (Hugging Face). `#15` AI
@@ -90,7 +90,7 @@ has three entries, all vendor-reported or hiring data.
 
 **Response actions**
 - Improve: `#19` agents propose actions that run only through templated, validated commands (Google preview,
-  research design). Post-incident containment playbooks: security-incident-response-14.
+  research design). Post-incident containment playbooks: security-incident-response-11.
 - Automate: `#20` per-action authority: score each action before it may run unattended; keep agents observable,
   attributable and stoppable (NCSC proposal, grade C).
 - Idea: `#24` defender agents that contain an attack with no human in the loop (no deployment found).
@@ -148,7 +148,7 @@ holds hunting and report-to-rule work; ai-security holds attacks on the SOC's ow
 | Detection rules | 336% faster production; 67% fewer false positives with a judge model | [AMAZON-RULEFORGE-2026], self-reported |
 | AI hunting cost | USD 320-510 a month for daily hunts over about 15 sources (security-threat-intelligence-21) | [GROWTHERAPY-HUNT-2026], self-reported |
 | Missed attacks in replay | Every approach missed at least 40.4%; challenge-and-judge design 3.1% with 18.4% escalated | [ARXIV-2610.10608], academic, one scenario |
-| Triage benchmark | GPT-5 98%, Claude-4.5-Sonnet 96%, GPT-4o-mini 75% on a 100-alert set; best model fully solved 8 of 25 deep-analysis scenarios | [ARXIV-2603.06422], academic (paper tables checked at verification) |
+| Triage benchmark | GPT-5 98%, Claude-4.5-Sonnet 96%, GPT-4o-mini 75% on a 100-alert set; best model fully solved 8 of 25 deep-analysis scenarios | [ARXIV-2603.06422], academic (paper tables checked) |
 | Log-borne prompt injection | Up to 88.2% success at baseline; 8.4% residual after layered defences | [USENIX-LOGINJECT-2026], academic |
 | Breach cost | USD 4.99M average, up 12%; USD 1.93M lower with extensive AI and automation | [IBM-CODB-2026], vendor-sponsored research |
 | Adversary speed | Average breakout time 29 minutes | [CROWDSTRIKE-AGSOC-2026], vendor |
@@ -166,8 +166,8 @@ SOC. Advise clients to measure their own (`#21`).
   interim agent controls: log agent activity as security telemetry, make it attributable, keep emergency shutdown,
   name owners, evaluate judge agents independently [NCSC-AGENTICRISK-2026].
 - CISA with Australia's ACSC: joint guidance on adopting agentic AI (2026-05-01) [CISA-AGENTIC-2026]. CISA, NIST and
-  NSA: ten practices for agent control incidents (2026-10-16) [NISTCISA-IRKEY-2026]. CISA pages retrieved on
-  2026-10-17 show "AI" replaced by "Super Intelligence (SI)"; search for both terms.
+  NSA: ten practices for agent control incidents (2026-10-16) [NISTCISA-IRKEY-2026]. Some US agency documents
+  issued in 2026 use "Super Intelligence (SI)" where earlier ones say "AI"; search for both terms.
 - US federal: OMB M-26-14 sets risk-based logging with a maturity model; first agency logging plans due 2026-11-18
   [OMB-M2614-2026, CISA-LOGGING-2026]. AI tuning appears only at the top level, so AI is not mandated.
 - NIST: SP 800-53 control overlays for AI systems, including single- and multi-agent use cases [NIST-COSAIS-2026]; SP
@@ -281,12 +281,12 @@ Keys cited above that are not in the YAML (all others are given in full there):
 - EC-AIACT-2026: European Commission, AI Act page, checked 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - EC-ACTIONPLAN-2026: European Commission, EU Action Plan on Cybersecurity and AI, 2026-07-07, https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence
 - SEC-CYBER-2023: US SEC, cyber incident disclosure rules, 2023-07-26, https://www.sec.gov/newsroom/press-releases/2023-139
-- SIFMA-SEC-2026: SIFMA and trade associations, letter on Regulation S-K cyber disclosures, 2026-04-10, https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades
+- SIFMA-SEC-2026: SIFMA and trade associations, "Joint trades comment letter: Reforming Regulation S-K's Cybersecurity Disclosures (Item 106 and Form 8-K Item 1.05)", 2026-04-10, https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades
 - MITRE-ATTCK-2026: MITRE, ATT&CK v20 release notes, 2026-10-13, https://attack.mitre.org/resources/updates/
 - OWASP-AGENTIC-2025: OWASP, Top 10 for Agentic Applications for 2026, 2025-12-09, https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitigation Evaluation", USENIX Security '26, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai
 - IBM-CODB-2026: IBM and Ponemon, Cost of a Data Breach Report 2026, 2026-07, https://www.ibm.com/reports/data-breach
 - SACR-AISOCMKT-2026: Software Analyst Cyber Research, "The AI SOC Market, 2026", 2026-07-30, https://softwareanalyst.substack.com/p/ai-soc-technoscope-series-the-ai
-- CAUCHY-IRNOTEBOOKS-2026: DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (CAUCHY-IRNB-2026 in the operations inputs; the use case is security-incident-response-07)
+- CAUCHY-IRNOTEBOOKS-2026: DNB Cyber Defense Center (Kyrre Wahl Kongsgard), "Agentic incident response notebooks", 2026-06-19, https://blog.cauchy.org/blog/incident-response-notebooks/ (no use case entry)
 - DROPZONE-JD2030-2026: Dropzone AI, "SOC Analyst Job Description: Rewriting It for 2030", 2026-05-13, https://www.dropzone.ai/blog/soc-analyst-job-description-2030
 - RESILIENTCYBER-FASTER-2026: Resilient Cyber, "Faster to the Wrong Answer" (partner content with Censys), 2026-10-14, https://www.resilientcyber.io/p/faster-to-the-wrong-answer

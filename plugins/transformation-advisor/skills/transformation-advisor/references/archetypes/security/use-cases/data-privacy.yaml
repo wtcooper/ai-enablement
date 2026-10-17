@@ -1,10 +1,5 @@
-# Use cases: security / data-privacy
-# Synthesised 2026-10-17 from the wave-4 combined deep dive (security-data-privacy-combined.md), the security
-# landscape scan and items other security angle files routed to data-privacy (21 candidate entries in, 21 out,
-# no duplicates found to merge). One entry was regraded at synthesis: security-data-privacy-01 moved from A to B
-# because the deploying organization is not named. Grade mix: A 2, B 6, C 10, D 3.
-# Verified 2026-10-17 (wave-4 verifier): every source reopened. security-data-privacy-14 moved from A to B (abstract-only,
-# relative figure between two AI detector variants). Grade mix after verification: A 1, B 7, C 10, D 3.
+# Use cases: security / data-privacy (data discovery and classification, data loss prevention, privacy engineering,
+# privacy reviews and assessments, and AI-specific data controls). Sources checked 2026-10-17.
 # Evidence is thin. Almost every outcome figure is self-reported or vendor-published; no independent override,
 # false-positive or miss rate was found for LLM-based DLP, alert triage or classification in production.
 # Cyera and MIND customer-story pages show no publication date; the date given for them is the retrieval date
@@ -69,7 +64,7 @@
     access: full
     locator: Abstract; Section 1 (scale and cost); Table 3 (F2 by configuration); Section 5.2 and Figure 2 (steward acceptance)
   last_reviewed: '2026-10-17'
-  notes: The authors are affiliated with Apple, but the paper describes 'a single organization's production catalog' without naming the deploying organization, so the deployer is not independently confirmed. Acceptance and F2 are both measured by the deploying team (self-reported); no outside measurement exists. The F2 evaluation uses only 4 evaluation files. Regraded from A to B at synthesis on 2026-10-17. The figures are measured and tracked, but grade A needs a named organization, and the deploying organization is not named.
+  notes: 'The authors are affiliated with Apple, but the paper describes ''a single organization''s production catalog'' without naming the deploying organization, so the deployer is not independently confirmed. Acceptance and F2 are both computed by the deploying team (self-reported); no outside measurement exists. The F2 evaluation uses only 4 evaluation files. Graded B, not A: the figures are tracked by the deploying team, but grade A needs a named organization, and the deploying organization is not named.'
 - id: security-data-privacy-02
   title: Deterministic-first asset classification with an LLM fallback, where stable LLM findings are distilled into versioned rules
   archetype: security
@@ -882,7 +877,7 @@
     access: full
     locator: 'Tuesday 2:00 pm ''Surfacing Hidden Privacy Risks in Code: Lessons from LLM and Retrieval Assisted Detection'''
   last_reviewed: '2026-10-17'
-  notes: Regraded from A to B at verification on 2026-10-17. The only evidence is a 2026-06-02 conference abstract (no slides are posted; the talk video was not reviewed). Its one measured figure is a relative comparison between two AI detector variants in an evaluation, with no counts, base or confirmation method, and the false-positive rate that motivated the change was not reduced. That meets the letter of A but overstates it; B (named deployment of LLM detection in pull requests at scale) is the honest grade. The topic overlaps application-security; see security-application-security-04 (AI review of every pull request) and security-application-security-08 (reasoning-based AI code scanning).
+  notes: Graded B, not A. The only evidence is a 2026-06-02 conference abstract (no slides are posted; the talk video was not reviewed). Its one figure is a relative comparison between two AI detector variants in an evaluation, with no counts, base or confirmation method, and the false-positive rate that motivated the change was not reduced. That meets the letter of A but overstates it; B (named deployment of LLM detection in pull requests at scale) is the honest grade. The topic overlaps application-security; see security-application-security-04 (AI review of every pull request) and security-application-security-08 (reasoning-based AI code scanning).
 - id: security-data-privacy-15
   title: AI first drafts of privacy impact assessments, reassessments and evidence reviews
   archetype: security
@@ -958,7 +953,7 @@
     access: full
     locator: Abstract
   last_reviewed: '2026-10-17'
-  notes: 'Graded C: the deployed element is a vendor feature claim; the measured elements are research studies, not deployments. A search snippet said OneTrust AI agents cut assessments ''from weeks to minutes''; that claim was not opened and is not used.'
+  notes: 'Graded C: the deployed element is a vendor feature claim; the elements with figures are research studies, not deployments. A search snippet said OneTrust AI agents cut assessments ''from weeks to minutes''; that claim was not opened and is not used.'
 - id: security-data-privacy-16
   title: 'Idea: LLM-based PII and sensitive-data detection to redact prompts, conversation logs and stored text'
   archetype: security

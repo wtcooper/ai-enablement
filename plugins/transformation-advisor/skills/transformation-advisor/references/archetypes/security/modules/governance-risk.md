@@ -1,14 +1,14 @@
 # Security governance, risk and compliance (security)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/governance-risk.yaml` (21 entries). Ids are shortened here:
-`#05` means `security-governance-risk-05`. Source keys in brackets are in the YAML or in §10.
+Sources checked 2026-10-17. Use cases live in `../use-cases/governance-risk.yaml` (21 entries). Ids are shortened here:
+`#05` means `security-governance-risk-05`; other modules' ids are in full. Source keys in brackets are in the YAML or in §10.
 Read this first: every outcome figure for AI in GRC work is **vendor-published** on a GRC vendor's own site (Vanta,
 Conveyor, Whistic, Hyperproof, Safe Security) and quotes the customer. No override rate, error rate, parallel run,
 auditor-reliance study or regulator inspection finding exists for AI used in GRC work. The independent numbers are
 small lab studies and surveys. 11 of 21 entries are graded A or B; the two A grades (`#01`, `#05`) rest on vendor
 case studies. Say "vendor-published" whenever you quote a figure. Regulation and workforce at archetype level are in
-the cross-cutting research files `research/runs/wave4/security-x-guardrails-regulation.md` and
-`research/runs/wave4/security-x-workforce-talent.md`; this file links to them rather than repeating them.
+the archetype files `../guardrails.md` and `../workforce.md`; this file links to them rather than repeating
+them.
 
 ## Contents
 
@@ -28,7 +28,7 @@ the cross-cutting research files `research/runs/wave4/security-x-guardrails-regu
 Security governance, risk and compliance (GRC): answering customers' security reviews, assessing vendors (third-party
 risk management, TPRM), running control frameworks such as SOC 2 and ISO 27001 and their audits, writing policy,
 keeping the risk register, quantifying cyber risk and reporting to boards and regulators. It also covers two things
-the landscape scan asked to add: the security team's own AI policy (and its role as AI policy author for the
+this archetype adds: the security team's own AI policy (and its role as AI policy author for the
 business), and the security workforce and operating model. Security architecture is treated as a lens here, mostly
 as approval gates and limits on agents. Runtime controls for agents belong to ai-security; AI incident handling to
 incident-response.
@@ -109,9 +109,9 @@ regulators.
 
 Coverage: all four ladder levels and all three scopes have entries. Thin cells: automate (three entries, none at
 model scope); delegate (`#03` B, `#07` announced, `#20` survey-based); model scope has no measured outcome. Related
-entries elsewhere: ai-security-21/22/24 (AI inventory, governance, AI vendor assurance), ai-security-07/08/12 and
-operations-19/20 (agent gates and logs), incident-response-02/15/16/17 (tabletops, regulator notifications,
-post-incident review, AI-agent incidents), identity-access-11 (policy as code).
+entries elsewhere: `security-ai-security-21`, `-22`, `-24` (AI inventory, governance, AI vendor assurance), `security-ai-security-07`, `-08`, `-12` and
+`security-operations-19`, `-20` (agent gates and logs), `security-incident-response-02`, `-15`, `-16`, `-17` (tabletops, regulator notifications,
+post-incident review, AI-agent incidents), `security-identity-access-11` (policy as code).
 
 ## 4. Interview probes
 
@@ -172,7 +172,7 @@ vendor trigger to reassessment.
 ## 6. Guardrails
 
 - **Regulation at archetype level** (disclosure clocks, NIS2 and DORA accountability, EU AI Act, insurance, steps that
-  need a person) is in `research/runs/wave4/security-x-guardrails-regulation.md`. Module-specific points follow.
+  need a person) is in `../guardrails.md`. Module-specific points follow.
 - **EU AI Act.** Applicable from 2026-08-02; the AI Omnibus (in force 2026-07-27) moved Annex III high-risk duties to
   2027-12-02 [EC-AIACT-2026]. **NIS2** makes top management accountable for risk-management measures [EC-NIS2].
   **DORA** covers ICT third-party risk; the first critical ICT providers were designated on 2025-11-18 [EBA-CTPP-2025].
@@ -217,7 +217,7 @@ vendor trigger to reassessment.
   Anthropic posts a GRC "security policy partner for AI agent governance" [ANTHROPIC-JOB-AGENTSEC-2026]. In eight EU
   countries AI builder postings outnumber governance postings about 7 to 1 (all functions) [VANTA-AIGOVGAP-2026].
 - **Juniors:** Venables proposes control-failure post-mortems instead of evidence gathering (`#21`). Wider pipeline,
-  skills and hiring data: `research/runs/wave4/security-x-workforce-talent.md`.
+  skills and hiring data: `../workforce.md`.
 - Not measured anywhere: entry-level GRC hiring, analysts' override rates, headcount effects.
 
 ## 8. Frontier

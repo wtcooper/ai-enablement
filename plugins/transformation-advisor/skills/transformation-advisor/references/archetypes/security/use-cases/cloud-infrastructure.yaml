@@ -129,7 +129,7 @@
     - lever: quality
       description: "Redis: Blue Agent verdicts compared with analysts' final case dispositions"
       figure: "85.7% overall accuracy; false negative rate below 2%"
-      measures: "Wiz blog: measured against analysts' final case dispositions across 431 cases since October 2025; denominator for the false negative rate not stated; measured differently from ZS, so not comparable"
+      measures: "Wiz blog: compared with analysts' final case dispositions across 431 cases since October 2025; denominator for the false negative rate not stated; defined differently from ZS, so not comparable"
       provenance: vendor-published
       source_ref: WIZ-RUNTIME-2026
     - lever: speed
@@ -225,7 +225,7 @@
     - lever: speed
       description: "Cohere: time for attack-path analysis of a critical finding"
       figure: "from up to 120 minutes to 20 seconds"
-      measures: "headline metric on Wiz's Cohere case page ('attack path analysis time'); number of findings measured and method not stated"
+      measures: "headline metric on Wiz's Cohere case page ('attack path analysis time'); number of findings and method not stated"
       provenance: vendor-published
       source_ref: WIZ-COHERE-2026
     - lever: capacity

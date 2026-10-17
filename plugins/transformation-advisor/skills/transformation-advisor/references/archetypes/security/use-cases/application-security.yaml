@@ -1,18 +1,15 @@
 # Use cases: security / application-security (secure design, AI-written code, code review, scanning and testing in
 # the development pipeline, fixing in code, software supply chain intake, and the AppSec team's own operating model).
-# Synthesised 2026-10-17 from the wave-4 landscape scan and the practice, discourse and governance deep dives
-# (research/runs/wave4/); see research/runs/wave4/application-security-synthesis-report.md. 70 candidates in, 17 out.
-# Split with vulnerability-exposure (synthesised first): discovery programmes, consultant and maintainer audits,
-# fuzzing campaigns, finding validation, inbound report and PSIRT intake, patching programmes, patch validation,
-# dependency remediation and pentest agents live there and are referenced by id, not duplicated:
+# Sources checked 2026-10-17.
+# Split with vulnerability-exposure: discovery programmes, consultant and maintainer audits, fuzzing campaigns,
+# finding validation, inbound report and PSIRT intake, patching programmes, patch validation, dependency remediation
+# and pentest agents live there and are referenced by id, not duplicated:
 # security-vulnerability-exposure-01 (frontier-model OSS discovery), -03 (curl and AISLE), -04 (Mandiant harness),
 # -05 (agent-built fuzzing), -06 and -11 (validation and VulnOps), -07 and -08 (bounty triage, PSIRT), -12 (Patch the
 # Planet), -13 and -14 (automated patching limits, patch validation), -15 (dependency remediation), -17 and -18
 # (autonomous pentest agents). Google pre-submit scanning and the Trail of Bits Miden tooling live here.
-# Source refs are canonical keys; where the angle files used different keys for one document, one key is kept
-# (TOB-AUDIT-2026 = TOB-AUDITING-2026 = TOB-AUDIT-2026; GITHUB-SECUREFUND-2026 = GITHUB-FUND-2026). Outcome
-# provenance says who published each figure: almost all are self-reported by the deploying organisation or published
-# by a vendor about its own product. No independent production measurement of an AI AppSec tool exists.
+# Outcome provenance says who published each figure: almost all are self-reported by the deploying organisation or
+# published by a vendor about its own product. No independent production measurement of an AI AppSec tool exists.
 
 - id: security-application-security-01
   title: Agent-assisted security design review and threat modelling
@@ -69,10 +66,10 @@
     Grade B rests on Anthropic's present-tense description of AI-assisted threat modelling for design reviews,
     Mandiant's threat-model approval gate and Cloudflare's spec reviewer (engineering standards broadly, so adjacent
     to security). Stripe's claim comes from the abstract of a talk scheduled for 2026-10-28 that has not yet taken
-    place, so it cannot support the grade. Job postings describe intended or current projects without results. Merged idea (grade D on its own): a
-    USENIX Security 2026 talk describes deriving threat models automatically from code, infrastructure and
-    configuration and computing threat-model diffs to flag changes to attack surfaces, trust boundaries, privilege
-    relationships and sensitive data flows (USENIX-SEC-2026); no deployment was found.
+    place, so it cannot support the grade. Job postings describe intended or current projects without results.
+    Included idea (grade D on its own): a USENIX Security 2026 talk describes deriving threat models automatically
+    from code, infrastructure and configuration and computing threat-model diffs to flag changes to attack surfaces,
+    trust boundaries, privilege relationships and sensitive data flows (USENIX-SEC-2026); no deployment was found.
 
 - id: security-application-security-02
   title: Security guardrails for AI-written code at the point of generation, with oversight set by code criticality
@@ -151,10 +148,10 @@
   notes: >-
     Grade C: the only deployment outcomes are vendor statistics with unnamed customers (Semgrep names Notion,
     Snowflake and Dropbox as platform customers, not Guardian users), and the Reddit posting shows intent, not a
-    working control. Merged here: the governance ideas on gating AI-generated code, security instruction files
-    (grade D) and the NCSC criticality spectrum (grade D, regulator guidance with no named adopter). The formal-
-    verification preprint uses the authors' own pipeline. The ARXIV-2211.03622 study used an older model
-    (codex-davinci-002) and is a foundation, not current evidence.
+    working control. Also covers ideas on gating AI-generated code, security instruction files (grade D) and the NCSC
+    criticality spectrum (grade D, regulator guidance with no named adopter). The formal-verification preprint uses
+    the authors' own pipeline. The ARXIV-2211.03622 study used an older model (codex-davinci-002) and is a foundation,
+    not current evidence.
 
 - id: security-application-security-03
   title: Disclosure, attribution and human accountability rules for AI-assisted contributions
@@ -261,13 +258,12 @@
     - {ref: ARXIV-2604.05292, title: "Broken by Default: A Formal Verification Study of Security Vulnerabilities in AI-Generated Code", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2604.05292", date: "2026-04-07", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Grade A rests on two measured sources: Cloudflare's telemetry (security is one of seven reviewers, so most
-    figures cover code review broadly; the post says the security reviewer flags the highest proportion of critical
-    findings, 4%) and the security-specific AgenticSCR shadow deployment (study setting Atlassian per the abstract;
-    author affiliations not checked). No accuracy figure against human reviewers is published. The 3% to 61% figures
-    are quoted by Semgrep and were not read in the 2022 paper's body. Merged from the practice, discourse and
-    governance angles: agentic PR review, Cloudflare code review, maintainers' review bots and the separate AI
-    reviewer pass over AI-generated code.
+    Grade A rests on two measured sources: Cloudflare's telemetry (security is one of seven reviewers, so most figures
+    cover code review broadly; the post says the security reviewer flags the highest proportion of critical findings,
+    4%) and the security-specific AgenticSCR shadow deployment (study setting Atlassian per the abstract; author
+    affiliations not checked). No accuracy figure against human reviewers is published. The 3% to 61% figures are
+    quoted by Semgrep and were not read in the 2022 paper's body. Covers agentic PR review, Cloudflare code review,
+    maintainers' review bots and the separate AI reviewer pass over AI-generated code.
 
 - id: security-application-security-05
   title: Engineering standards rewritten as machine-readable rules that review agents enforce
@@ -309,8 +305,8 @@
     - {ref: TLDRSEC-346-2026, title: "[tl;dr sec] #346 - Can AI Do Novel Security Research?", publisher: "tl;dr sec (Clint Gibler)", type: press, url: "https://tldrsec.com/p/tldr-sec-346", date: "2026-09-17", access: full, locator: "AppSec section, Cloudflare item"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Grade capped at B: the Codex covers engineering standards of all kinds (security is one domain), so the
-    measurement is adjacent to security. The incident report reviewer in the same post is in incident-response
+    Grade capped at B: the Codex covers engineering standards of all kinds (security is one domain), so the figures
+    are adjacent to security. The incident report reviewer in the same post is in incident-response
     (security-incident-response-16 uses the same source).
 
 - id: security-application-security-06
@@ -343,7 +339,7 @@
     - "Deterministic validation steps before landing"
   risks_and_guardrails:
     - "The threshold trades automation yield against safety, the paper's second research question (ARXIV-2605.30208)"
-    - "The measured safety outcomes are reverts and production incidents, not security defects"
+    - "The reported safety outcomes are reverts and production incidents, not security defects"
     - "LLM-based review can be steered by crafted pull-request context (ARXIV-2603.18740)"
     - "At another AI-forward company, per-reviewer load roughly doubled while automated review overtook human review and merge and revert rates held steady (ARXIV-2607.01904, abstract)"
   human_checkpoints:
@@ -359,7 +355,7 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Grade capped at B: general code review with revert and incident outcomes, not security-specific review. Only the
-    arXiv abstract was read. Merged from all three angles.
+    arXiv abstract was read.
 
 - id: security-application-security-07
   title: Pre-submit agentic security scanning of every code change, with a reachability-proving triage agent
@@ -413,12 +409,11 @@
   notes: >-
     In-house case study; all figures are Google's own. Grade A rests only on the triage agent's 'over 92% precision',
     a metric Google states for a named production deployment; it is precision without recall (a triage agent that
-    rejects most findings can score high precision), with no method, sample or period, so quote it as
-    self-reported and never as detection accuracy. The 3% false-positive rate ('in some cases') and 'hundreds of
-    vulnerabilities per month' are approximate claims that would not support A on their own. The [un]prompted talk
-    is scheduled for 2026-10-27 and cannot support the grade. Merged from all three
-    angles, including the governance angle's separate triage-agent entry. The vulnerability-exposure synthesis dropped
-    its copy and names this module as the home for this deployment.
+    rejects most findings can score high precision), with no method, sample or period, so quote it as self-reported
+    and never as detection accuracy. The 3% false-positive rate ('in some cases') and 'hundreds of vulnerabilities per
+    month' are approximate claims that would not support A on their own. The [un]prompted talk is scheduled for
+    2026-10-27 and cannot support the grade. Includes the separate triage agent. This module, not
+    vulnerability-exposure, holds this deployment.
 
 - id: security-application-security-08
   title: Reasoning-based AI code scanning alongside rule-based static analysis
@@ -457,7 +452,7 @@
     - "For authorization flaws, the product's role and tenancy model"
   risks_and_guardrails:
     - "Each vendor says a human approves patches (ANTHROPIC-CCS-2026; OPENAI-CODEXSEC-2026)"
-    - "An AISLE abstract for a talk scheduled for 2026-10-28 says an LLM scanner can miss a real bug on one run and find it on the next, measured in 25,000 trials across 50 models, and that repeated passes and diverse cheaper models helped (UNPROMPTED-2026; not yet presented)"
+    - "An AISLE abstract for a talk scheduled for 2026-10-28 says an LLM scanner can miss a real bug on one run and find it on the next, based on 25,000 trials across 50 models, and that repeated passes and diverse cheaper models helped (UNPROMPTED-2026; not yet presented)"
     - "Single model calls missed CVEs in AISLE's study, which is why findings were accumulated over four runs (AISLE-SAST-2026)"
     - "Semgrep notes that newer models are not reliably better at finding IDORs (SEMGREP-IDOR-2026)"
     - "Familiar-pattern attacks on LLM static analysis transfer across OpenAI, Anthropic and Google models and remain effective when models are warned (NDSS-FPA-2026, abstract)"
@@ -484,17 +479,17 @@
     - {ref: NDSS-FPA-2026, title: "Trust Me, I Know This Function: Hijacking LLM Static Analysis using Bias", publisher: "NDSS Symposium 2026", type: academic, url: "https://www.ndss-symposium.org/ndss-paper/trust-me-i-know-this-function-hijacking-llm-static-analysis-using-bias/", date: "2026-02", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Downgraded from A to B in verification (2026-10-17). The only non-vendor-product figure is GitHub Security Lab's
-    count of 24 vulnerabilities: one researcher's tally from vulnerability research on third-party Android apps (an
-    adjacent process, not pipeline scanning beside SAST), published by the tool's own developer, with no
-    false-positive rate or baseline. B rests on named real use without published measurements: NETGEAR (customer
-    quote) and vLLM use Codex Security, and GitHub Security Lab uses the taskflows. Every product figure is
-    vendor-published, and OpenAI's are cohort-wide. AISLE's benchmark uses CVEs it discovered; Semgrep sells an approach its benchmark
-    favours. Also published: Aardvark 92% recall on OpenAI's 'golden' test repositories (OPENAI-AARDVARK-2025) and
-    Semgrep's claim that its AI-powered detection (AI plus program analysis) finds 3.5 times more true
-    positives than Opus 4.8 alone at 19% lower cost per true positive (SEMGREP-AGENTICWF-2026), both vendor-published. Wiz AI SAST's code-to-cloud correlation is routed to
-    cloud-infrastructure. Merged: reasoning-based scanning (practice), LLM analysis versus SAST and IDOR detection
-    (discourse), and the GitHub Android taskflows (practice).
+    Graded B, not A. The only non-vendor-product figure is GitHub Security Lab's count of 24 vulnerabilities: one
+    researcher's tally from vulnerability research on third-party Android apps (an adjacent process, not pipeline
+    scanning beside SAST), published by the tool's own developer, with no false-positive rate or baseline. B rests on
+    named real use without published measurements: NETGEAR (customer quote) and vLLM use Codex Security, and GitHub
+    Security Lab uses the taskflows. Every product figure is vendor-published, and OpenAI's are cohort-wide. AISLE's
+    benchmark uses CVEs it discovered; Semgrep sells an approach its benchmark favours. Also published: Aardvark 92%
+    recall on OpenAI's 'golden' test repositories (OPENAI-AARDVARK-2025) and Semgrep's claim that its AI-powered
+    detection (AI plus program analysis) finds 3.5 times more true positives than Opus 4.8 alone at 19% lower cost per
+    true positive (SEMGREP-AGENTICWF-2026), both vendor-published. Wiz AI SAST's code-to-cloud correlation is
+    discussed in the cloud-infrastructure module. Covers reasoning-based scanning, LLM analysis versus SAST, IDOR
+    detection and the GitHub Android taskflows.
 
 - id: security-application-security-09
   title: Reachability-first triage and closure tracking for AI-generated vulnerability candidates
@@ -543,14 +538,13 @@
     - {ref: ANTHROPIC-CYBERMISSION-2026, title: "Introducing the Anthropic Cyber Mission", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/anthropic-cyber-mission", date: "2026-10-08", access: full, locator: "Verifying, prioritizing and fixing remain the challenge"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Downgraded from B to C in verification (2026-10-17): the closure loop is known only from the abstract of a talk
-    scheduled for 2026-10-27, which cannot support an A or B grade. Reachability-first triage itself is in
-    production at Google (see -07), but that entry, not this one, carries that evidence; maturity stays
-    in-production on that basis. SastBench was read at abstract level only. Programme-
-    level validation of AI-found findings and standing 'VulnOps' workflows are in security-vulnerability-exposure-06
-    and security-vulnerability-exposure-11; this entry keeps the engineering team's closure loop. An ICSE 2026
-    industry paper on LLM filtering of static-analysis false positives was seen only in search results; its figures
-    are unverified and not used.
+    Graded C, not B: the closure loop is known only from the abstract of a talk scheduled for 2026-10-27, which cannot
+    support an A or B grade. Reachability-first triage itself is in production at Google (see -07), but that entry,
+    not this one, carries that evidence; maturity stays in-production on that basis. SastBench was read at abstract
+    level only. Programme-level validation of AI-found findings and standing 'VulnOps' workflows are in
+    security-vulnerability-exposure-06 and security-vulnerability-exposure-11; this entry keeps the engineering team's
+    closure loop. An ICSE 2026 industry paper on LLM filtering of static-analysis false positives was seen only in
+    search results; its figures are unverified and not used.
 
 - id: security-application-security-10
   title: Validator-gated agentic testing of an organisation's own running web applications
@@ -602,9 +596,8 @@
     Grade A rests on Google's PageBreak counts (self-reported); Google calls the false-positive rate 'near zero' but
     publishes no number. Pattern 'other': an agent hypothesis checked by a deterministic, non-AI validator before any
     human sees it. The post itself says PageBreak is working with CodeMender on automated fixes; search-only press
-    coverage of PageBreak is not relied on. The research angles merged PageBreak with AWS Security Agent, XBOW and a PortSwigger research
-    system; those parts are left to vulnerability-exposure (17, 18) and the module's frontier notes. No exploit
-    detail recorded.
+    coverage of PageBreak is not relied on. AWS Security Agent, XBOW and a PortSwigger research system are covered in
+    security-vulnerability-exposure-17 and -18 and the module's frontier notes. No exploit detail recorded.
 
 - id: security-application-security-11
   title: Agents build bespoke analysis tooling and formal models before a manual security audit
@@ -647,8 +640,8 @@
     - {ref: TOB-AINATIVE-2026, title: "How we made Trail of Bits AI-native (so far)", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/03/31/how-we-made-trail-of-bits-ai-native-so-far/", date: "2026-03-31", access: full, locator: "AI-native definition"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Client named in the post (Miden). Pattern 'other': agents build the review workbench, not only review code. Merged
-    from practice and discourse; security-vulnerability-exposure-19 cross-references this entry.
+    Client named in the post (Miden). Pattern 'other': agents build the review workbench, not only review code;
+    security-vulnerability-exposure-19 cross-references this entry.
 
 - id: security-application-security-12
   title: AI-drafted fixes for scanner alerts and critical vulnerabilities, delivered as reviewable changes
@@ -703,8 +696,7 @@
   notes: >-
     Grade B rests on Google's bug-fix agent (a named in-house deployment with no published figure) and GitHub's
     Copilot Autofix product. The Meta figure is from the abstract of a talk scheduled for 2026-10-27 and not yet
-    given, so it cannot support an A or B grade. The Snyk figure is a
-    vendor benchmark of its own product. Merged from practice and the governance angle's bug-fix agent entry.
+    given, so it cannot support an A or B grade. The Snyk figure is a vendor benchmark of its own product.
     Engineer-directed patching programmes and patch validation are in security-vulnerability-exposure-12 and
     security-vulnerability-exposure-14.
 
@@ -805,7 +797,7 @@
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "Talk 'LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails' (Aviv Donenfeld, Check Point Software Technologies); Talk abstract (Main Track 5, Friday 13:00)"}
     - {ref: USENIX-SEC-2025-HALLUC, title: "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs", publisher: "USENIX Security 2025 (Distinguished Paper)", type: academic, url: "https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen", date: "2025-08", access: full, locator: "Abstract"}
     - {ref: ARXIV-2608.23897, title: "Names Can Hurt: Spotting Slopsquatting Risks Caused by Package Name Hallucinations in Local Coding LLMs", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2608.23897", date: "2026-08-24", access: full, locator: "Abstract"}
-    - {ref: GTIG-AITRACKER-2026, title: "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", publisher: "Google Threat Intelligence Group", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/", date: "2026-09-08", access: full, locator: "AI supply-chain section (as routed by the threat-intelligence discourse file)"}
+    - {ref: GTIG-AITRACKER-2026, title: "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", publisher: "Google Threat Intelligence Group", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/", date: "2026-09-08", access: full, locator: "AI supply-chain section"}
     - {ref: ARXIV-2603.18740, title: "Measuring and Exploiting Contextual Bias in LLM-Assisted Security Code Review", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2603.18740", date: "2026-03-19", access: full, locator: "Abstract"}
     - {ref: NDSS-FPA-2026, title: "Trust Me, I Know This Function: Hijacking LLM Static Analysis using Bias", publisher: "NDSS Symposium 2026", type: academic, url: "https://www.ndss-symposium.org/ndss-paper/trust-me-i-know-this-function-hijacking-llm-static-analysis-using-bias/", date: "2026-02", access: full, locator: "Abstract"}
     - {ref: TOB-PKGMGR-2026, title: "Package managers have an integrity problem", publisher: "Trail of Bits Blog", type: firm, url: "https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/", date: "2026-10-14", access: full, locator: "Opening"}
@@ -814,10 +806,10 @@
     B because ClawHub, skills.sh and OpenSearch are named deployments, but the only outcome evidence is independent
     bypass research, not detection rates. The OpenSearch deployment is the researcher's claim in an abstract. Semgrep
     cites an estimate of 1.8 million malicious packages in Q2 2026 and Snyk cites more than 20 high-profile attacks in
-    2026; both are unverified vendor figures and are not used as outcomes. Merged: malicious-package detection
-    (practice), skill scanning and the LLM build gate (discourse), and two governance ideas (registry checks for
-    AI-suggested dependencies and adversarial testing of AI review pipelines, each grade D). Skill and plugin scanning
-    was routed here from the ai-security research. No attack detail recorded.
+    2026; both are unverified vendor figures and are not used as outcomes. Covers malicious-package detection, skill
+    scanning, the LLM build gate and two ideas (registry checks for AI-suggested dependencies and adversarial testing
+    of AI review pipelines, each grade D). Skill and plugin scanning from the security side is also in
+    security-ai-security-14. No attack detail recorded.
 
 - id: security-application-security-15
   title: AI-assisted research for curators of a vulnerability advisory database
@@ -877,7 +869,7 @@
     Teams build their own evaluation harnesses. GitLab's code security team hires engineers to build harnesses that
     measure false positives and missed findings against benchmark applications with known vulnerabilities. AWS built a
     continuously refreshed benchmark of recent CVEs, disabled runtime CVE lookup and audited every success. Semgrep
-    measured how closely a model's 'secure' solutions matched the project's real code. Trail of Bits checks grader
+    compared how closely a model's 'secure' solutions matched the project's real code. Trail of Bits checks grader
     verdicts against expert review.
   outcomes:
     - {lever: quality, description: "Benchmark inflation from memorisation (Claude Opus 5.5 on SusVibes)", figure: "93 of 176 judged solutions (53%) near-identical to the real code; 57 of 102 secure solutions (56%) memorised", measures: "solutions with code similarity of 0.80 or more to the project's real implementation (added lines in non-test files); Semgrep says similarity is not proof of recall", provenance: vendor-published, source_ref: SEMGREP-SUSVIBES-2026}
@@ -911,8 +903,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Pattern 'other': evaluation of AI tools before reliance. The SusVibes run is by a scanner vendor. The ActiveMQ and
-    grader-agreement numbers are Trail of Bits' reading of 1Password's report. BenchChecker was routed from the
-    vulnerability-exposure research and covers general bug-fixing benchmarks. Merged from practice and governance.
+    grader-agreement numbers are Trail of Bits' reading of 1Password's report. BenchChecker covers general bug-fixing
+    benchmarks.
 
 - id: security-application-security-17
   title: Security team rebuilt around building and operating its own AI skills and agents
@@ -968,7 +960,6 @@
     - {ref: SAMSARA-JOB-APPSEC-2026, title: "Job posting: Staff Application Security Engineer", publisher: "Samsara (Greenhouse)", type: job-posting, url: "https://www.samsara.com/company/careers/roles/8205149?gh_jid=8205149", date: "2026-09-15", access: full, locator: "Qualification: hands-on AI use in triage, detection logic and remediation drafting"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Pattern 'other': an operating-model change, not a workflow pattern. Graded B, not A: the
-    '200 bugs a week' figure is a management claim with no definition, and asset counts are not work outcomes (the
-    discourse angle had graded this A). The post was adapted from an [un]prompted talk. This is the only entry with
-    change scope 'model'. Merged from practice and discourse.
+    Pattern 'other': an operating-model change, not a workflow pattern. Graded B, not A: the '200 bugs a week' figure
+    is a management claim with no definition, and asset counts are not work outcomes. The post was adapted from an
+    [un]prompted talk. This is the only entry with change scope 'model'.

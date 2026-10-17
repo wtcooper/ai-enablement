@@ -1,7 +1,7 @@
 # Human risk (security)
 
-Last reviewed and source-verified 2026-10-17. Use cases live in `../use-cases/human-risk.yaml` (18 entries). Ids are shortened here:
-`#06` means `security-human-risk-06`. Source keys in brackets, such as [UCSD-PHISHTRAIN-2025], are given in full in the
+Sources checked 2026-10-17. Use cases live in `../use-cases/human-risk.yaml` (18 entries). Ids are shortened here:
+`#06` means `security-human-risk-06`; other modules' ids are in full. Source keys in brackets, such as [UCSD-PHISHTRAIN-2025], are given in full in the
 YAML or listed in §10. **Evidence is thin and vendor-heavy on the defender side.** 9 of 18 entries are graded A or B
 (1 A, 8 B); the one A grade (`#01`) rests on figures published only on the vendor's own customer pages. Independent,
 peer-reviewed numbers exist mostly for what AI does for attackers, not for AI-based defences. Say so when you quote
@@ -25,7 +25,7 @@ a figure.
 The people side of security: awareness training and phishing simulation, handling the suspicious emails employees
 report, defending against impersonation, deepfakes and scams aimed at staff and the brand, verifying the identity of
 new hires and of people asking for money or access, insider-risk detection, and testing staff with social-engineering
-exercises. Fraud has no module of its own; the landscape scan folds scams and impersonation in here and into
+exercises. Fraud has no module of its own; this archetype folds scams and impersonation in here and into
 identity-access. Help-desk reset verification, identity proofing and contact-centre voice security sit in
 identity-access; the SOC side of phishing triage sits in operations.
 
@@ -65,7 +65,7 @@ research system. Do not suggest otherwise.
   research prototypes put LLM coaching inside the browser). `#03` LLMs draft custom modules that a person publishes
   (vendor claims). `#04` LLM plus OSINT personalised simulations (a 7,700-person university study: 2.4 to 2.7 times the
   click rate of generic lures). `#05` AI-voice vishing practice in simulated conversations (vendor announcements, no results). `#06` deepfake and
-  executive-impersonation drills, which NYDFS names as an option (no results).
+  executive-impersonation drills, which NYDFS (New York State Department of Financial Services) names as an option (no results).
 
 **Reported email and email defence**
 - Automate: `#07` the report button feeds automated triage (Avanade: "over 900 hours a month" by the vendor's
@@ -81,7 +81,7 @@ research system. Do not suggest otherwise.
 
 **Identity and request verification**
 - Improve: `#12` HR, IT and SOC checks against fake remote workers (KnowBe4's own hire; Datadog's AI-assisted
-  applicant hunting is `security-threat-intelligence-21`; ML identity proofing is `security-identity-access-19`).
+  applicant hunting [FIRST-CON-2026]; ML identity proofing is `security-identity-access-19`).
   `#13` idea: out-of-band verification of voice or video requests for money or access (regulator advice; help-desk
   version is `security-identity-access-18`). Deepfake voice detection in calls is `security-identity-access-23`.
 

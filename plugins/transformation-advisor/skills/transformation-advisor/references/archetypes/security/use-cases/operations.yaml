@@ -479,7 +479,7 @@
     audit data.
 
 - id: security-operations-10
-  title: Agent prepares the investigation and the analyst makes the call, measured in controlled studies
+  title: Agent prepares the investigation and the analyst makes the call, tested in controlled studies
   archetype: security
   module: operations
   function: technology-it
