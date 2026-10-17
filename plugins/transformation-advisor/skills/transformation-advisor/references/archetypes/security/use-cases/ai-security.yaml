@@ -605,7 +605,7 @@
   problem: >-
     Permission prompts shown to developers are approved reflexively: Anthropic reports users approve 97% of Claude Code
     permission prompts (ANTHROPIC-AUTOMODE-2026). Agents can take irreversible actions faster than humans can monitor, and
-    approvals that people click through without understanding give little protection (CISA-AGENTIC-2026).
+    approval requests that people click through without understanding give little protection.
   solution: >-
     Anthropic replaced most per-command approvals in Claude Code with a classifier ('auto mode') and tested it four ways: a
     controlled study with 1,053 paid testers, a find-fix-verify engagement with Apollo Research using a held-out attack
@@ -1323,7 +1323,7 @@
   outcomes:
     - lever: risk
       description: Anthropic's lookback found real-world intrusions no one had noticed.
-      figure: "3 incidents in 141,006 runs (6 runs; 4 hit the same organisation); 2 of 2 organisations reached had not detected the activity"
+      figure: "3 incidents in 141,006 runs (6 runs; 4 hit the same organisation); the 2 affected organisations Anthropic reached had not detected the activity"
       measures: "Evaluation runs reviewed where Claude could have obtained internet access; incidents involving unauthorised access to production infrastructure of three organisations"
       provenance: self-reported
       source_ref: ANTHROPIC-EVALINC-2026

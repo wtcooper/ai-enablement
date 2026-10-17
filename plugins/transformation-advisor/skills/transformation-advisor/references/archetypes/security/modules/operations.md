@@ -161,7 +161,7 @@ SOC. Advise clients to measure their own (`#21`).
 ## 6. Guardrails
 
 **Standards and regulators**
-- UK NCSC: eight risks for AI-enabled defence, usable as a supplier checklist [NCSC-AIADOPT-2026]; a five-part score
+- UK NCSC: eight risks for AI-enabled defence, which the governance research proposes as an MDR supplier checklist (an idea) [NCSC-AIADOPT-2026]; a five-part score
   for each defensive action (potency, scope, criticality, rollout confidence, recoverability) [NCSC-AGENTICDEF-2026];
   interim agent controls: log agent activity as security telemetry, make it attributable, keep emergency shutdown,
   name owners, evaluate judge agents independently [NCSC-AGENTICRISK-2026].
@@ -184,10 +184,10 @@ SOC. Advise clients to measure their own (`#21`).
 
 **Design guardrails seen in practice**
 - Deterministic first: plain queries for predictable checks, agents only for reading and reasoning
-  [ELASTIC-AGENTICSOC1-2026]; SOAR stays the tested, deterministic action layer [NCSC-AGENTICDEF-2026].
+  [ELASTIC-AGENTICSOC1-2026]; the NCSC notes SOAR rules are crafted, tested and deterministic [NCSC-AGENTICDEF-2026].
 - Conservative closure: only high-confidence false positives; weak matches escalate (`#01`, `#02`, `#07`).
 - Treat logs as hostile input: attacker-controlled fields can instruct the analyst model; summarisation is the
-  riskiest task [ARXIV-2605.24421, USENIX-LOGINJECT-2026]. Give summarising agents no tools [ELASTIC-ACCURACY-2026]. A
+  riskiest task [ARXIV-2605.24421, USENIX-LOGINJECT-2026]. Elastic gives its pattern and summary agents no tools [ELASTIC-ACCURACY-2026]. A
   vendor SOC assistant was reported steerable by an alert into minting API keys [PROMPTARMOR-ELASTIC-2026].
 - Controls outside the prompt: draft-only pull requests set by a workflow step, no ambient channel access
   [FIGMA-AGENTS-2026]; closed action vocabularies [ARXIV-2610.09906].

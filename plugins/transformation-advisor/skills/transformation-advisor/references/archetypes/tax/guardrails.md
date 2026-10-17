@@ -45,7 +45,7 @@ unsettled, say so and suggest the leader takes advice. Source keys in brackets r
 | Treasury regulations, IRC sections 7216 and 6713 | Use and disclosure of return information by preparers | No AI-specific guidance found [ECFR-7216-2026] |
 | FTC Safeguards Rule (via IRS Publication 4557) | Preparers as financial institutions: written security plan, MFA, oversight of service providers | Predates AI; applies to AI vendors as service providers (advisor inference) [IRS-P4557-2024] |
 | US Tax Court | Filings, sanctions, practitioner admission | No AI rule; proposed 2026 rule amendments contain no AI text [TAXCT-ANNOUNCE-2026] |
-| AICPA | SSTS (members); CART; independence for PE structures | SSTS 1.4 on reliance on tools; CART launched 23 Sep 2026 [JOFA-CLINCO-2026; AICPA-CART-2026] |
+| AICPA | SSTS (members); CART; independence for PE structures | SSTS 1.4 on reliance on tools; CART launched 23 Sep 2026 [TAXCT-CLINCO-2026; AICPA-CART-2026] |
 | UK PCRT bodies (AAT, ACCA, ATT, CIOT, ICAEW, ICAS, STEP); HMRC | Members' conduct; software that interacts with HMRC | PCRT topical guidance 19 Jan 2026; HMRC software guidelines [PCRT-AI-2026; HMRC-GENAI-2026] |
 | Tax Practitioners Board (Australia) | Code of Professional Conduct under the Tax Agent Services Act | TPB(GS) 55/2026, 22 Jul 2026 [TPB-GS55-2026] |
 | Bundessteuerberaterkammer (Germany) | Steuerberater professional rules | FAQ dated 27 Jan 2026 [BSTBK-KI-2026] |
@@ -113,7 +113,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 
 | Case | What happened | Source |
 |---|---|---|
-| *Clinco v. Commissioner* (Tax Court, 9 Feb 2026) | Three of four cited cases apparently hallucinated; counsel did not correct the record; admonishment, no sanction; "Tax Court has not done so. Yet." | [CLINCO-OPINION-2026; JOFA-CLINCO-2026] |
+| *Clinco v. Commissioner* (Tax Court, 9 Feb 2026) | Three of four cited cases apparently hallucinated; counsel did not correct the record; admonishment, no sanction; "Tax Court has not done so. Yet." | [CLINCO-OPINION-2026; TAXCT-CLINCO-2026] |
 | *Riddle Aggregates* (Tax Court trial, 18 Mar 2026) | IRS withdrew two expert rebuttal reports after AI-related errors were raised; cause disputed | [TAXCT-RIDDLE-2026] |
 | *Khoja* (Tax Court, Mar 2026) | Judge questioned an IRS attorney over a motion citing a nonexistent case (Bloomberg's account; order not read) | [BLAW-TAXCT-2026] |
 | *Harber v HMRC* (UK FTT, 4 Dec 2023) | Taxpayer cited nine non-genuine decisions; appeal decided on the merits | [FTT-HARBER-2023] |
@@ -144,7 +144,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 
 - **AICPA SSTS 1.4 (reliance on tools)**, as summarised by the Journal of Accountancy: members may rely on tools but are
   not absolved, must use professional care, and may use AI to improve understanding but not to supplant judgment
-  [JOFA-CLINCO-2026]. SSTS took effect 1 Jan 2024 [AICPA-SSTS-2024].
+  [TAXCT-CLINCO-2026]. SSTS took effect 1 Jan 2024 [AICPA-SSTS-2024].
 - **Werfel's risk framework** (The Tax Adviser, Aug 2026 issue): 20 risks for authorities in four categories and 15 for
   preparers in five layers, including hallucinated advice, client data leakage, incorrect document extraction, control
   dilution, liability ambiguity, skill erosion and vendor dependence; phased deployment, for example summarisation
@@ -159,7 +159,7 @@ A commentator argues untraceable output forces a manual verification layer ("pay
   "overstepping"; no IRS clarification was found by 17 Oct 2026 [JOFA-FEES-2026]. Contingent fees remain barred for most
   IRS matters [ECFR-10.27]. Review the pricing model, engagement letter and AI records together.
 - **Disclosure.** No universal US duty to disclose AI use in most tax matters is stated in the sources; PCRT asks
-  members to consider transparency; TPB requires client permission for third-party AI [JOFA-CLINCO-2026; PCRT-AI-2026;
+  members to consider transparency; TPB requires client permission for third-party AI [TAXCT-CLINCO-2026; PCRT-AI-2026;
   TPB-GS55-2026]. A broker recommends engagement-letter disclosure with an opt-out [DIGIN-INSURERS-2026].
 - **Liability.** Werfel lists "liability ambiguity" between the signing preparer and the vendor; BStBK notes vendors
   often exclude liability [TAXADVISER-WERFEL-2026; BSTBK-KI-2026].

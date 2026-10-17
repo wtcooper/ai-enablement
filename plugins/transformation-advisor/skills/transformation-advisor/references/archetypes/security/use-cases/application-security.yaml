@@ -300,7 +300,7 @@
   notes: >-
     Grade capped at B: the Codex covers engineering standards of all kinds (security is one domain), so the
     measurement is adjacent to security. The incident report reviewer in the same post is in incident-response
-    (security-incident-response-17 uses the same source).
+    (security-incident-response-16 uses the same source).
 
 - id: security-application-security-05
   title: Risk-tiered automated review that lands low-risk code changes without a human reviewer
