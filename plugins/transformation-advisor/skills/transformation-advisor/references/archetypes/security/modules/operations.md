@@ -39,7 +39,7 @@ attack the system missed), recall (share of real attacks caught), MTTR (mean tim
 | Detection engineering | Turn threats, CVEs and reports into rules; test against logs; peer review; deploy | software-systems, expert-judgment | Each rule is slow to write and validate, so coverage is rationed [AMAZON-RULEFORGE-2026]; crowdsourced rules show informal quality control [USENIX-SIGMA-2026] |
 | Detection validation and tuning | Check rules still see data; suppress known-benign patterns | review-assurance, software-systems | Rules that "run but can't see" (disconnected, starved, missing fields, ingest lag) [DETENGWEEKLY-165-2026]; benign alerts fire until someone writes the suppression |
 | Alert intake and Tier-1 triage | Enrich with user, asset and threat context; close or escalate | transaction-processing | 28% of alerts never investigated (vendor survey) [HNS-GARTNER-2026]; triage varies by shift [DROPZONE-ECS-2026] |
-| Investigation (Tier 2/3) | Pivot across SIEM, EDR, identity and cloud logs; build timeline and verdict | research-synthesis, expert-judgment | About 30 minutes per alert by hand [ELASTIC-AGENTICSOC1-2026]; context spread over 20+ tabs [CAUCHY-IRNOTEBOOKS-2026] |
+| Investigation (Tier 2/3) | Pivot across SIEM, EDR, identity and cloud logs; build timeline and verdict | research-synthesis, expert-judgment | About 30 minutes per alert by hand [ELASTIC-AGENTICSOC1-2026]; context spread over many tabs, side notes and copied tables [CAUCHY-IRNOTEBOOKS-2026] |
 | Hunting that feeds the queue | Look for activity no rule flags, in sources with no detections | research-synthesis | No detections for many SaaS audit logs [GROWTHERAPY-HUNT-2026] |
 | Case management and reporting | Attach evidence, write the report, close with a reason | document-production, coordination-scheduling | Closed cases without reasoning teach nothing [FIGMA-AGENTS-2026]; report detail falls with fatigue [CSA-SOCBENCH-PR-2025] |
 | Response and containment | Block, isolate, disable, notify | transaction-processing, expert-judgment | A wrong automated action can disrupt the business as badly as an attack [NCSC-AGENTICDEF-2026] |
@@ -148,7 +148,7 @@ holds hunting and report-to-rule work; ai-security holds attacks on the SOC's ow
 | Detection rules | 336% faster production; 67% fewer false positives with a judge model | [AMAZON-RULEFORGE-2026], self-reported |
 | AI hunting cost | USD 320-510 a month for daily hunts over about 15 sources (security-threat-intelligence-21) | [GROWTHERAPY-HUNT-2026], self-reported |
 | Missed attacks in replay | Every approach missed at least 40.4%; challenge-and-judge design 3.1% with 18.4% escalated | [ARXIV-2610.10608], academic, one scenario |
-| Triage benchmark | GPT-5 98%, Claude-4.5-Sonnet 96%, GPT-4o-mini 75% on a 100-alert set; best model fully solved 8 of 25 deep-analysis scenarios | [ARXIV-2603.06422], academic (as read by the incident-response governance file) |
+| Triage benchmark | GPT-5 98%, Claude-4.5-Sonnet 96%, GPT-4o-mini 75% on a 100-alert set; best model fully solved 8 of 25 deep-analysis scenarios | [ARXIV-2603.06422], academic (paper tables checked at verification) |
 | Log-borne prompt injection | Up to 88.2% success at baseline; 8.4% residual after layered defences | [USENIX-LOGINJECT-2026], academic |
 | Breach cost | USD 4.99M average, up 12%; USD 1.93M lower with extensive AI and automation | [IBM-CODB-2026], vendor-sponsored research |
 | Adversary speed | Average breakout time 29 minutes | [CROWDSTRIKE-AGSOC-2026], vendor |
@@ -177,7 +177,7 @@ SOC. Advise clients to measure their own (`#21`).
   statement found on whether SOC AI is high-risk [EC-AIACT-2026]. The EU action plan encourages defenders to use AI,
   including open models [EC-ACTIONPLAN-2026].
 - US SEC: material incidents disclosed four business days after the materiality determination [SEC-CYBER-2023]; trade
-  groups asked for rescission (search-only) [SIFMA-SEC-2026].
+  groups asked the SEC to rescind the annual Item 106 disclosure and the Form 8-K Item 1.05 incident filing [SIFMA-SEC-2026].
 - MITRE ATT&CK v20 adds AI techniques, including prompt injection and "Impair Autonomous Defenses", so detection
   content can cover attacks on the SOC's own AI [MITRE-ATTCK-2026]; OWASP's Top 10 for Agentic Applications
   [OWASP-AGENTIC-2025].
@@ -203,13 +203,15 @@ SOC. Advise clients to measure their own (`#21`).
 
 ## 7. Roles and how they evolve
 
-- **Tier 1 analysts** move from gathering context to reviewing agent-prepared findings [CISCO-SPLUNK-CONF26-2026];
+- **Tier 1 analysts** review agent-prepared findings [CISCO-SPLUNK-CONF26-2026] and start from evidence instead of
+  assembling context manually [SPLUNK-BHUSA-2026];
   on-call engineers at Figma and Slack now supervise investigations [FIGMA-AGENTS-2026, SLACK-AGENTS-2025].
 - **Detection engineers** write investigation guides the AI follows as instructions [ELASTIC-ACCURACY-2026], review
   generated rules [AMAZON-RULEFORGE-2026] and act more like site-reliability engineers [DETENGWEEKLY-162-2026].
 - **New analysts** reached Tier 2 work with agent support at one event SOC [SPLUNK-CISCOLIVE-2026]. But entry-level
   roles were 5.9% of 665 postings, and D3 warns that cutting junior seats empties the senior bench
-  [D3-SOCHIRING-2026]; Forrester heard of a "five-year problem" [FORRESTER-RSAC-2026].
+  [D3-SOCHIRING-2026]; Forrester heard vendors are hiring fewer early-career staff, doubt mid- and senior-level staff
+  will embrace AI, and have no answer to a potential "five-year problem" [FORRESTER-RSAC-2026].
 - **Builders**: postings show about three engineering seats per analyst seat [D3-SOCHIRING-2026]; Robinhood
   advertises a "Security Operations AI Tech Lead" [ROBINHOOD-JOB-SECOPSAI-2026].
 - **Owners of agents**: NCSC advice implies a named owner for each agent's activity [NCSC-AGENTICRISK-2026]. Vendor
@@ -221,7 +223,7 @@ SOC. Advise clients to measure their own (`#21`).
 ## 8. Frontier
 
 - 2026-03-31: Forrester says "agentic SOC" is used loosely [FORRESTER-RSAC-2026].
-- 2026-05-01: first joint government guidance on agentic AI adoption [CISA-AGENTIC-2026].
+- 2026-05-01: CISA and ASD's ACSC publish joint guidance on adopting agentic AI [CISA-AGENTIC-2026].
 - 2026-06: Google's triage agent generally available; detection-engineering, hunting and containment agents in
   preview [TECHINFORMED-GOOGLE-2026]. FIRST sessions test Tier-1 triage with general LLMs [FIRST-CON-2026].
 - 2026-06-05: Gartner Hype Cycle puts AI SOC agents at the peak [DROPZONE-GARTNERHC-2026].
@@ -235,7 +237,7 @@ SOC. Advise clients to measure their own (`#21`).
   [CROWDSTRIKE-AGSOC-2026].
 - 2026-09-21: NCSC plans an "AI for Cyber Defence" problem book and names Cyber Shield, a national agentic defence
   effort [NCSC-AGENTICDEF-2026].
-- 2026-10-06/07: evidence-gated triage and constrained-action remediation preprints [ARXIV-2610.10608,
+- 2026-10-07: evidence-gated triage and constrained-action remediation preprints [ARXIV-2610.10608,
   ARXIV-2610.09906].
 - 2026-10-16: decision models proposed as cheap, auditable per-alert scorers [THN-DECISIONMODELS-2026]; CISA, NIST
   and NSA publish agent-incident practices [CISA-KEYPRACTICES-2026].
@@ -255,8 +257,8 @@ SOC. Advise clients to measure their own (`#21`).
   summarisers, closed action sets, human approval for actions, injection red-teaming (§6).
 - **"Who owns the mistake?"** "You want a human to be able to own that mistake" [EXPEL-3LEADERS-2026]. Response: name
   owners per agent and grant authority per action [NCSC-AGENTICRISK-2026, SACR-TRUSTEDSOC-2026].
-- **"Every vendor says agentic."** Gartner warns of agent washing [DROPZONE-GARTNERHC-2026]; SACR counts close to 140
-  vendors touching AI in security operations [SACR-AISOCMKT-2026]. Response: proof of value on your own alerts and a
+- **"Every vendor says agentic."** Gartner warns of agent washing [DROPZONE-GARTNERHC-2026]; SACR cites peer trackers counting close
+  to 140 vendors touching AI in security operations [SACR-AISOCMKT-2026]. Response: proof of value on your own alerts and a
   side-by-side run (`#05`, `#21`).
 - **"We tried building it ourselves and it failed."** 46% of home builds were abandoned or replaced (vendor survey)
   [HNS-GARTNER-2026]. Figma, Elastic and Grow Therapy report results from built systems that rely on memory, critics and staged rollout
@@ -279,7 +281,7 @@ Keys cited above that are not in the YAML (all others are given in full there):
 - EC-AIACT-2026: European Commission, AI Act page, checked 2026-10-17, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - EC-ACTIONPLAN-2026: European Commission, EU Action Plan on Cybersecurity and AI, 2026-07-07, https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence
 - SEC-CYBER-2023: US SEC, cyber incident disclosure rules, 2023-07-26, https://www.sec.gov/newsroom/press-releases/2023-139
-- SIFMA-SEC-2026: SIFMA and trade associations, letter on Regulation S-K cyber disclosures, 2026-04-10 (search-only), https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades
+- SIFMA-SEC-2026: SIFMA and trade associations, letter on Regulation S-K cyber disclosures, 2026-04-10, https://www.sifma.org/advocacy/letters/reforming-regulation-s-ks-cybersecurity-disclosures-joint-trades
 - MITRE-ATTCK-2026: MITRE, ATT&CK v20 release notes, 2026-10-13, https://attack.mitre.org/resources/updates/
 - OWASP-AGENTIC-2025: OWASP, Top 10 for Agentic Applications for 2026, 2025-12-09, https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 - USENIX-LOGINJECT-2026: Karanjai et al., "Context Contamination in LLM Analysis of Network Security Logs", USENIX Security 2026, 2026-08, https://www.usenix.org/conference/usenixsecurity26/presentation/karanjai

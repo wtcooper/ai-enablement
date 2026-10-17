@@ -3,6 +3,8 @@
 # landscape scan and items other security angle files routed to data-privacy (21 candidate entries in, 21 out,
 # no duplicates found to merge). One entry was regraded at synthesis: security-data-privacy-01 moved from A to B
 # because the deploying organization is not named. Grade mix: A 2, B 6, C 10, D 3.
+# Verified 2026-10-17 (wave-4 verifier): every source reopened. security-data-privacy-14 moved from A to B (abstract-only,
+# relative figure between two AI detector variants). Grade mix after verification: A 1, B 7, C 10, D 3.
 # Evidence is thin. Almost every outcome figure is self-reported or vendor-published; no independent override,
 # false-positive or miss rate was found for LLM-based DLP, alert triage or classification in production.
 # Cyera and MIND customer-story pages show no publication date; the date given for them is the retrieval date
@@ -81,7 +83,7 @@
   change_scope: process
   runtime_class: workflow-automation
   maturity: in-production
-  problem: Privacy controls (retention, access, purpose limits, sharing, anonymization) need a reliable view of what each data asset is, and manual review cannot keep up with the volume and pace of AI-native products. The same field name can be personal data in one context and system metadata in another (META-ENG-ASSETCLASS-2026, 'Why Asset Classification Matters').
+  problem: Privacy controls (retention, access, purpose limits, sharing, anonymization) need a reliable view of what each data asset is, and manual review cannot keep up with the volume and pace of AI-native products. The same field name can be personal data in one context and system metadata in another (META-ENG-ASSETCLASS-2026, introduction and Figure 1).
   solution: 'Meta describes a hybrid classifier. It assembles an evidence brief per asset (code resolution, lineage, ownership, semantic annotations, scanner outputs), masks any pre-existing privacy label to avoid circular reasoning, and routes the asset through a funnel: versioned deterministic rules first, an LLM only for novel or ambiguous assets. A nightly lane samples served decisions, scores them against human-reviewed reference labels using a three-judge LLM panel, and proposes rules distilled from stable patterns. Rules go through holdout validation and shadow mode before promotion (META-ENG-ASSETCLASS-2026, decision-funnel and rule-distillation sections).'
   outcomes:
   - lever: cost
@@ -227,7 +229,7 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: Organizations do not know what sensitive data they hold or where; Varonis telemetry across 1,000 environments found only about one in ten companies had labelled files (VARONIS-SODS-2025).
-  solution: 'Cyera''s customer stories describe agentless scanning of data stores to find and classify sensitive records, then clean-up and remediation: ChenMed resolved more than 32,000 data security issues and strengthened compliance across 30 policies; Paramount scanned trillions of records and identified billions as sensitive; Vetcor found and fixed externally shared sensitive files, including data left from a Google-to-Microsoft migration (CYERA-CHENMED-2026; CYERA-PARAMOUNT-2026; CYERA-VETCOR-2026). The pages do not describe how AI contributes beyond the platform being called ''AI-native''.'
+  solution: 'Cyera''s customer stories describe agentless scanning of data stores to find and classify sensitive records, then clean-up and remediation: ChenMed resolved more than 32,000 data security issues and strengthened compliance across 30 policies; Paramount scanned trillions of records and identified billions as sensitive; Vetcor found and fixed externally shared sensitive files, including data left from a Google-to-Microsoft migration (CYERA-CHENMED-2026; CYERA-PARAMOUNT-2026; CYERA-VETCOR-2026). The pages do not describe how AI contributes; the only mention is Vetcor''s ''AI-driven automation''.'
   outcomes:
   - lever: risk
     description: Issues remediated at a named healthcare organization
@@ -316,7 +318,7 @@
   runtime_class: background-agent
   maturity: piloting
   problem: Triaging and prioritising DLP alerts is complex and time-consuming (MSFT-PURVIEWAGENTS-2026). The CSA report says DLP often detects data loss after the fact and examines how false positives and alert fatigue affect analyst workload and team retention (CSA-AI-2026).
-  solution: The Microsoft Purview Triage Agent in DLP reads alerts from active-mode DLP policies on Exchange, Teams, OneDrive, SharePoint and endpoint devices, analyses the content of the files behind each alert, and sorts alerts into 'Needs attention' and 'Less urgent' with an explanation. It ranks on content risk (sensitive information types, trainable classifiers, default labels), exfiltration risk and policy risk. Admins can add natural-language custom instructions (content conditions only) and give feedback to revise a verdict (MSFT-PURVIEWAGENTS-2026; MSFT-PURVIEWDLPTRIAGE-2026). AI summaries and categories also appear in Defender XDR; Microsoft's Message Center says the public preview would begin rolling out in early April 2026 (MSFT-MC1255406-2026).
+  solution: The Microsoft Purview Triage Agent in DLP reads alerts from active-mode DLP policies on Exchange, Teams, OneDrive, SharePoint and endpoint devices, analyses the content of the files behind each alert, and sorts alerts into 'Needs attention' and 'Less urgent' with an explanation. It ranks on content risk (sensitive information types, trainable classifiers, default labels), exfiltration risk and policy risk. Admins can add natural-language custom instructions (in preview; content- and metadata-based, for example file type) and give feedback to revise a verdict (MSFT-PURVIEWAGENTS-2026; MSFT-PURVIEWDLPTRIAGE-2026). AI summaries and categories also appear in Defender XDR; Microsoft's Message Center says the public preview would begin rolling out in early April 2026 (MSFT-MC1255406-2026).
   outcomes:
   - lever: speed
     description: Microsoft says prioritisation reduces triage time and sharpens analyst focus
@@ -410,8 +412,8 @@
   - Both outcomes are vendor-published case-study statements, one from an unnamed customer; there is no independent measurement (MIND-OPENWEB-2026; CYERA-FI-2026)
   - The OpenWeb page says 'almost no false positives' but gives no recall or miss rate, so missed leaks are not measured (MIND-OPENWEB-2026)
   human_checkpoints:
-  - Security teams review remaining alerts; the institution describes a risk-driven DLP programme that security, privacy and governance teams could use together (CYERA-FI-2026)
-  role_evolution: OpenWeb's CISO says the team now trusts alerts enough to use them for decisions and automation (MIND-OPENWEB-2026). The institution says DLP moved from a manual, noisy process to a risk-driven programme shared by security, privacy and governance teams (CYERA-FI-2026).
+  - Not described in detail. The OpenWeb story says the security team previously reviewed alerts by hand (MIND-OPENWEB-2026); the institution's story says security, privacy and governance teams now share a risk-driven DLP programme (CYERA-FI-2026)
+  role_evolution: OpenWeb's CISO says the team now sees far fewer alerts and can trust them; the vendor's page adds that OpenWeb can trust MIND to guide decision-making and enable automation (MIND-OPENWEB-2026). The institution says DLP moved from a manual, noisy process to a risk-driven programme shared by security, privacy and governance teams (CYERA-FI-2026).
   evidence_grade: B
   sources:
   - ref: MIND-OPENWEB-2026
@@ -453,7 +455,7 @@
   runtime_class: workflow-automation
   maturity: announced
   problem: Staff paste source code, regulated data and credentials into generative AI tools. Netskope telemetry shows the average organization has 3% of genAI users committing about 223 policy violations a month (NETSKOPE-CTR-2026), and Cyberhaven reports that 39.7% of data movements into AI tools involve sensitive data (CYBERHAVEN-AIRISK-2026). In the CSA survey, only 29% of respondents could routinely produce a 30-day report of sensitive data sent to GenAI tools (CSA-AI-2026).
-  solution: Endpoint DLP policies in Microsoft Purview can warn or block users who paste sensitive information into third-party generative AI sites in a browser (for example credit card numbers into ChatGPT), and sensitive information types and trainable classifiers can inspect prompts and responses in supported AI apps (MSFT-PURVIEWAI-2026). A practitioner on Hacker News describes routing LLM API traffic through a proxy that tokenises PII and blocks secrets, and says policy-only rules do not work (HN-ASKLLMAPI-2026).
+  solution: Endpoint DLP policies in Microsoft Purview can warn or block users who paste sensitive information into third-party generative AI sites in a browser (for example credit card numbers into ChatGPT), and sensitive information types and trainable classifiers can inspect prompts and responses in supported AI apps (MSFT-PURVIEWAI-2026). A Hacker News commenter whose team built such a gateway describes routing LLM API traffic through a proxy that tokenises PII and blocks secrets, and says policy-only rules do not work (HN-ASKLLMAPI-2026).
   outcomes:
   - lever: risk
     description: 'Baseline: genAI policy violations detected per organization'
@@ -686,7 +688,7 @@
   runtime_class: background-agent
   maturity: piloting
   problem: Access and sharing problems are found in dashboards but fixed by hand, one object at a time. Microsoft describes DSPM as consolidating DLP, insider risk, labelling and investigation signals into one view of data risks and policy coverage (MSFT-DSPM-2026).
-  solution: In the current Purview DSPM, Security Copilot and AI agents analyse access patterns, sharing behaviour and policy gaps, prioritise risks, and can take direct action on detected risks such as removing public sharing links, applying DLP policies or revoking permissions. Microsoft says users review, approve or customise the automated actions, and the actions are audited (MSFT-DSPM-2026, 'How AI helps achieve data security outcomes').
+  solution: In the current Purview DSPM, Security Copilot and AI agents analyse access patterns, sharing behaviour and policy gaps, prioritise risks, and can take direct action on detected risks such as removing public sharing links, applying DLP policies or revoking permissions. Microsoft says the agents act under the user's guidance and that users review, approve or customise the automated actions, which are always audited (MSFT-DSPM-2026, 'How AI helps achieve data security outcomes').
   outcomes:
   - lever: speed
     description: Microsoft says AI makes data security 'more adaptive' and less reliant on manual intervention
@@ -699,11 +701,11 @@
   - Entra Compliance Administrator or Purview Compliance Administrator role, and the Data Security Viewer role for Security Copilot
   - Allow about a day after first set-up before tenant data appears (MSFT-DSPM-2026)
   risks_and_guardrails:
-  - Actions are approved or customised by a person and are always audited (MSFT-DSPM-2026)
+  - Microsoft says users review, approve or customise the agents' automated actions and that these actions are always audited; the page does not say whether approval always precedes the action (MSFT-DSPM-2026)
   - Agents can run under a dedicated Entra agent identity rather than an admin's identity (MSFT-PURVIEWAGENTS-2026, 'Agent identity')
   - Coverage of non-Microsoft locations depends on partner integrations; Microsoft names Varonis, Cyera, BigID and OneTrust as integrated partners (MSFT-DSPM-2026)
   human_checkpoints:
-  - An administrator approves or edits each automated action before it takes effect (MSFT-DSPM-2026)
+  - Administrators review, approve or customise automated actions taken by the agents (MSFT-DSPM-2026, 'How AI helps achieve data security outcomes')
   role_evolution: Data security admins approve and tune agent-proposed fixes instead of performing each fix themselves (MSFT-DSPM-2026).
   evidence_grade: C
   sources:
@@ -757,7 +759,7 @@
   - OWASP says its mitigations 'work around' the flat-context limitation rather than solve it (OWASP-DATASEC-2026, p. 6-7)
   - A simulated deletion test (delete a test record and check database, logs, embeddings, backups and outputs) is recommended as a standard validation (OWASP-DATASEC-2026, DSGAI07)
   human_checkpoints:
-  - Data owners assign labels and review high-impact RAG corpora (OWASP-DATASEC-2026, p. 11)
+  - OWASP recommends human review gates for high-impact RAG corpora (OWASP-DATASEC-2026, p. 11); Microsoft's controls rely on labels the organization has already applied (MSFT-PURVIEWAI-2026)
   role_evolution: Not documented in these sources.
   evidence_grade: C
   sources:
@@ -817,8 +819,8 @@
   - The abstract names misinterpretation of requirements and lineage gaps as failure modes (PEPR-2026, Monday 9:30)
   - Slides and videos were not opened; claims here are limited to the program abstracts
   human_checkpoints:
-  - Engineers review each suggested job, enforcement point and verification state; the talk says human judgment remained essential in places (PEPR-2026, Monday 9:30)
-  role_evolution: Engineers work from decomposed 'privacy jobs' and tracked state instead of reading requirement text and mapping data flows manually (PEPR-2026, Monday 9:30).
+  - The workflow suggests candidate enforcement and monitoring points to engineers and tracks each requirement through verification; the abstract says human judgment remained essential in places but does not describe the review steps (PEPR-2026, Monday 9:30)
+  role_evolution: The workflow helps engineers decompose requirement text into 'privacy jobs to be done' and find affected datasets through lineage (PEPR-2026, Monday 9:30). The abstract does not describe how the engineers' work changed or by how much.
   evidence_grade: B
   sources:
   - ref: PEPR-2026
@@ -850,7 +852,7 @@
   - lever: quality
     description: RAG detector against standalone LLM detector
     figure: More than twice as many confirmed privacy-relevant issues found
-    measures: Confirmed privacy-relevant issues found by the RAG system versus the standalone LLM approach across nine production repositories, four languages and 183,000+ methods; absolute counts and the confirmation process are not given in the abstract.
+    measures: Confirmed privacy-relevant issues found by the RAG system versus the standalone LLM approach in an evaluation across nine production repositories, four languages and 183,000+ methods. This compares two AI detector variants; it is not a before-and-after measure of privacy review work. Absolute counts, the baseline and the confirmation process are not given in the abstract.
     provenance: self-reported
     source_ref: PEPR-2026
   - lever: quality
@@ -869,7 +871,7 @@
   human_checkpoints:
   - Code reviewers see detections inside the pull request review and confirm issues (PEPR-2026, Tuesday 2:00)
   role_evolution: Reviewers receive privacy-relevant flags in pull requests and must triage them, with the talk stressing avoiding reviewer overload (PEPR-2026, Tuesday 2:00).
-  evidence_grade: A
+  evidence_grade: B
   sources:
   - ref: PEPR-2026
     title: PEPR '26 program (USENIX Conference on Privacy Engineering Practice and Respect, 1-2 June 2026, Santa Clara)
@@ -880,7 +882,7 @@
     access: full
     locator: 'Tuesday 2:00 pm ''Surfacing Hidden Privacy Risks in Code: Lessons from LLM and Retrieval Assisted Detection'''
   last_reviewed: '2026-10-17'
-  notes: Graded A on a measured, named-organization result, but the evidence is a conference abstract (talk slides and paper not read), the measures are the team's own, and the abstract gives no absolute counts. The topic overlaps application-security; see security-application-security-04 (AI review of every pull request) and security-application-security-08 (reasoning-based AI code scanning).
+  notes: Regraded from A to B at verification on 2026-10-17. The only evidence is a 2026-06-02 conference abstract (no slides are posted; the talk video was not reviewed). Its one measured figure is a relative comparison between two AI detector variants in an evaluation, with no counts, base or confirmation method, and the false-positive rate that motivated the change was not reduced. That meets the letter of A but overstates it; B (named deployment of LLM detection in pull requests at scale) is the honest grade. The topic overlaps application-security; see security-application-security-04 (AI review of every pull request) and security-application-security-08 (reasoning-based AI code scanning).
 - id: security-data-privacy-15
   title: AI first drafts of privacy impact assessments, reassessments and evidence reviews
   archetype: security
@@ -894,7 +896,7 @@
   change_scope: step
   runtime_class: shared-team-skills
   maturity: announced
-  problem: Product teams often lack the expertise to spot privacy risks early, so privacy experts translate principles and correct late choices (PEPR-2026, Privy session, Monday 9:10). Privacy teams describe 'assessment fatigue' from manual PIAs and recurring reassessments (ONETRUST-W26-2026). Writing a DPIA is hard because it needs interdisciplinary expertise and follows no standard format (ARXIV-DPIALLM-2026).
+  problem: Product teams often lack the expertise to spot privacy risks early, so privacy experts translate principles and correct late choices (PEPR-2026, Privy session, Monday 9:10). OneTrust describes privacy teams managing manual PIAs, 'assessment fatigue' and constrained budgets (ONETRUST-W26-2026). Writing a DPIA is hard because it needs interdisciplinary expertise and follows no standard format (ARXIV-DPIALLM-2026).
   solution: 'OneTrust''s Winter ''26 release adds ''AI Inventory Analysis'', which drafts suggested answers for reassessments from earlier evaluations and flags AI-completed fields for review, and ''AI Evidence Analysis'', which reviews evidence in several file formats and produces a summary, a justification score and gap and remediation guidance (ONETRUST-W26-2026). Academic work tests the same idea: Privy gives non-privacy experts a GenAI ''first draft'' of risks and mitigations during AI product ideation, and PIA-Bench measures LLMs against 73 structured PIAs curated from 499 US federal agency PIAs (PEPR-2026; ARXIV-PIABENCH-2026).'
   outcomes:
   - lever: quality
@@ -924,11 +926,11 @@
   evidence_grade: C
   sources:
   - ref: ONETRUST-W26-2026
-    title: 'Evolving Privacy Programs with AI: What''s New in the OneTrust Winter ''26 Release (date from page metadata; a search snippet dated the release to March 2026)'
+    title: 'Evolving Privacy Programs with AI: What''s New in the OneTrust Winter ''26 Release (on-page byline date; page metadata shows a later modification on 2026-06-10)'
     publisher: OneTrust
     type: vendor
     url: https://www.onetrust.com/blog/evolving-privacy-programs-with-ai-whats-new-in-the-onetrust-winter-26-release/
-    date: '2026-06-10'
+    date: '2026-03-04'
     access: full
     locator: '''From Assessment Fatigue to Intelligent Automation'''
   - ref: PEPR-2026
@@ -1220,8 +1222,16 @@
     date: '2026-06-01'
     access: full
     locator: 'Tuesday 10:00 am ''Profile-Then-Simulate: Can LLMs Faithfully Generate Differentially Private Synthetic Data?'''
+  - ref: PEPR-BOUZID-SLIDES-2026
+    title: 'Profile-then-Simulate: Can LLMs Faithfully Generate DP Synthetic Data? (PEPR ''26 talk slides, Nassima Bouzid, Capital One)'
+    publisher: USENIX
+    type: conference
+    url: https://www.usenix.org/system/files/pepr26_slides-bouzid.pdf
+    date: '2026-06-02'
+    access: full
+    locator: Slides 6-7 (architecture and evaluation setup)
   last_reviewed: '2026-10-17'
-  notes: Included as a named-organization negative result; no production deployment is claimed. Abstract-level evidence only.
+  notes: Included as a named-organization negative result from an offline experiment; no production deployment is claimed. Graded B as a named-organization trial, not a deployment. The posted slides (PEPR-BOUZID-SLIDES-2026) add the setup (24M transactions condensed to 1.6K DP personas; XGBoost trained on synthetic data and tested on 100K real transactions; epsilon 1, 5 and 10) and report utility by AUC and fidelity by total variation distance.
 - id: security-data-privacy-21
   title: 'Privacy-preserving analytics on AI chatbot use: LLMs interpret unstructured data inside secure enclaves and release only differentially private aggregates'
   archetype: security
@@ -1236,7 +1246,7 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: Understanding real-world generative AI usage is needed to improve products, but conventional analytics risks exposing sensitive input data (PEPR-2026, Google session, Tuesday 9:00).
-  solution: Google's 'Provably Private Insights' framework combines trusted execution environments (for external transparency and verifiability), 'Data Expert' LLMs that interpret unstructured data inside the enclave, and differential privacy for aggregation. The speakers describe the open-sourced architecture and its real-world use in the Recorder app (PEPR-2026).
+  solution: Google's 'Provably Private Insights' framework combines trusted execution environments (for external transparency and verifiability), 'Data Expert' LLMs that interpret unstructured data inside the enclave, and differential privacy for aggregation. The speakers describe the open-sourced architecture and its real-world use in the Pixel Recorder app, where it classifies transcripts into categories of interest (PEPR-2026; PEPR-TANDON-SLIDES-2026). The slides say current production workloads run on CPUs inside TEEs with a Gemma 3 4B model, processing up to O(100k) inputs in a single batch pipeline (PEPR-TANDON-SLIDES-2026, 'Scalability Challenges').
   outcomes:
   - lever: risk
     description: Provably private standard for server-side processing
@@ -1262,5 +1272,13 @@
     date: '2026-06-01'
     access: full
     locator: Tuesday 9:00 am 'Toward Provably Private Insights into AI Use'
+  - ref: PEPR-TANDON-SLIDES-2026
+    title: Toward Provably Private Insights into AI Use (PEPR '26 talk slides, Rakshita Tandon, Google)
+    publisher: USENIX
+    type: conference
+    url: https://www.usenix.org/system/files/pepr26_slides-tandon.pdf
+    date: '2026-06-02'
+    access: full
+    locator: 'Real world application in Pixel Recorder; Scalability Challenges'
   last_reviewed: '2026-10-17'
-  notes: Named deployment in a consumer app described in a conference abstract; deployment scale is not stated. Pattern 'other' means private analytics, where an LLM interprets unstructured data inside an attested enclave and only differentially private aggregates leave it.
+  notes: Named deployment in a consumer app described in a conference abstract and talk slides; the slides give batch size (up to O(100k) inputs) but no user counts, utility or privacy-loss results beyond a user-level epsilon of 1 for label discovery. Pattern 'other' means private analytics, where an LLM interprets unstructured data inside an attested enclave and only differentially private aggregates leave it.

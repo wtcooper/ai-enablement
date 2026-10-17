@@ -27,8 +27,8 @@ leavers, access requests and approvals, access reviews (certifications), authent
 Access policies), privileged access, identity threat detection and response (ITDR), identity proofing, help-desk
 account recovery, and identity-related fraud such as account takeover (ATO) and caller impersonation. Identities for
 AI agents (agent registration, sponsors, agent credentials, MCP authorisation) are covered in the ai-security module;
-general non-human identity hygiene and privileged access stay here. The security landscape scan notes fraud is
-usually run by fraud and risk teams outside the CISO's organisation, so check who owns it before probing.
+general non-human identity hygiene and privileged access stay here. This project's security landscape scan judges that
+fraud is usually run by fraud and risk teams outside the CISO's organisation, so check who owns it before probing.
 
 ## 2. Processes and key steps
 
@@ -86,8 +86,8 @@ announced entry (`#16`). No evidence was found for assist at process or model le
   the wider MDR shift is `security-operations-23`. Containment playbooks: `security-incident-response-11`.
 
 **Verification, recovery and fraud**
-- Automate: `#18` enforced verification before help-desk resets (Cisco via Persona: "three-to-four-hour" wait to
-  "as little as five minutes", a practitioner's description, grade B). `#19` ML identity proofing with liveness,
+- Automate: `#18` enforced verification before help-desk resets (Cisco via Persona: a wait of "three or four hours"
+  for an agent to "as little as five minutes", a practitioner's description plus a vendor statement, grade B). `#19` ML identity proofing with liveness,
   injection and deepfake detection (Coinbase posting; DHS tests). `#20` identity-graph and 1:N biometric search for
   rings and duplicates. `#21` passive caller authentication: Michigan State University Federal Credit Union (MSUFCU) authentication time 90 to 45 seconds within 90
   days, HealthEquity IVR match 31% to 71% (grade A, vendor-published).
@@ -182,9 +182,11 @@ time to contain, recovery time, false positives and lockouts. None has a publish
 
 - **Administrators become approvers of agent output.** Conditional Access admins approve or reject suggestions
   instead of reading policy logic [MSFT-CAAGENT-2026]; reviewers check evidence and exceptions [LUMOS-UAR-2025].
-- **Approvals move to code and bots.** At Instacart, staff engineers no longer approve requests; security engineers
-  write the policy code and the bot [C1-INSTACART-2024].
-- **Help desk stops interrogating.** Cisco's agents spend less time on verification calls [PERSONA-CISCO-2026];
+- **Approvals move to code and bots.** At Instacart, highly paid staff engineers no longer approve sensitive requests
+  or run quarterly reviews; access policies are code that account owners review quarterly, and the infrastructure
+  security team built the approval bot [C1-INSTACART-2024].
+- **Help desk stops interrogating.** Persona says each case automated at Cisco frees help-desk time for complex issues
+  (a vendor statement) [PERSONA-CISCO-2026];
   Specops argues staff should follow a process that holds even with a persuasive caller [PETRI-SERVICEDESK-2026].
 - **New skills in hiring.** Cloudflare's IAM postings require hands-on LLM use [CLOUDFLARE-JOB-IAM-2026]; Elastic's
   ITDR product role asks for LLM and agentic fluency [ELASTIC-JOB-ITDR-2026]; Coinbase's identity ML engineers own
@@ -220,7 +222,8 @@ time to contain, recovery time, false positives and lockouts. None has a publish
   Silverfort's lab agents went from initial credentials to domain takeover in four to five minutes, which it calls
   patterns rather than benchmarks [SILVERFORT-ASSUMPTIONS-2026].
 - Upcoming: FIDO Authenticate (2026-10-19 to 21) on "agentic authentication" [FIDO-AUTH-2026]; Gartner IAM Summit from
-  2026-12-07 with sessions on AI-enhanced IGA and deepfake-resistant verification [GARTNER-IAMSUMMIT-2026].
+  2026-12-07, whose agenda lists AI-enhanced IGA and deepfake-resistant identity verification among its topics
+  [GARTNER-IAMSUMMIT-2026].
 
 ## 9. Common objections
 
@@ -229,7 +232,8 @@ time to contain, recovery time, false positives and lockouts. None has a publish
   each feature by what it decides and what it logs, and ask for an override or error rate; none is published.
 - **"An LLM shouldn't approve access."** Instacart agrees: the LLM reads and interprets, a separate score decides,
   with a 90-day cap and quarterly policy review [C1-INSTACART-2024]. Opal keeps risky requests with a person
-  [OPAL-PALADIN-2026]. Start in advisory mode and track overrides [MSFT-GOVOPT-2026].
+  [OPAL-PALADIN-2026]. Start in advisory mode, as Opal offers [OPAL-PALADIN-2026], and track overrides, which
+  Microsoft's tooling can query [MSFT-GOVOPT-2026].
 - **"Deepfake detection will lose the arms race."** The evidence supports caution: best voice detector error 13.50%
   [USENIX-VOICEWUKONG-2025]; clones bypass speaker verification [ARXIV-2601.02914]. Response: use detection as a
   triage signal and move high-risk steps to factors deepfakes cannot copy, as NYDFS and FinCEN advise
@@ -244,26 +248,27 @@ time to contain, recovery time, false positives and lockouts. None has a publish
   [SAILPOINT-HORIZONS-2026], and NIST requires disclosure of AI use [NIST-SP80063-4-2025].
 - **"Behavioural signals will block real customers."** Forrester flags false positives and possible PII status
   [FORRESTER-BIOCATCH-2026]; DHS found higher errors for older users [DHS-RIVTD-2025]. Test on your own population.
-- **"Cost."** The Entra agent bills at least one compute unit a month even if unused [MSFT-CAAGENT-2026]; Okta warns
+- **"Cost."** Security Copilot, which the Entra agent runs on, bills at least one provisioned compute unit a month
+  even if unused [MSFT-CAAGENT-2026]; Okta warns
   of a "tool tax" on tokens [OKTA-DEX-2026].
 
 ## 10. Sources
 
-Keys used here but not in the YAML (full details for all others are in the YAML):
+Keys used here but not in the YAML (full details for all others are in the YAML). All were opened on 2026-10-17.
 
-- [OKTA-AUTHSURVEY-2026] Yubico and Okta, 2026 Global State of Authentication (Okta Newsroom survey), 2026-10-07.
-- [SAILPOINT-HORIZONS-2026] SailPoint, Horizons of Identity Security, fifth edition (press release), 2026-10-06.
-- [PINDROP-DRI-2026] Pindrop, The Deepfake Readiness Index 2026 (survey of 250 U.S. security leaders), 2026-09-29.
-- [USENIX-PASSKEYS-2026] Jannett et al., The State of Passkeys, USENIX Security 2026, 2026-08.
-- [SWI-BLACKHAT-2026] Start with Identity, Black Hat USA 2026 recap, 2026-08-06.
-- [FORRESTER-RSAC-2026] Forrester, RSAC 2026: An AI Coming-Of-Age Story Without The Romance, 2026-03-31.
-- [ISC2-WORKFORCE-2025] ISC2, 2025 Cybersecurity Workforce Study, 2025-12-04.
-- [SAVIYNT-IARA-2026] Saviynt release (agent access gateway; identity verification in certification), 2026-06-15.
-- [OKTA-AGENTS-2026] Okta Newsroom, Okta for AI Agents innovations (Oktane 2026), 2026-09-22.
-- [SILVERFORT-ASSUMPTIONS-2026] Silverfort, 5 cybersecurity assumptions AI attacks break, 2026-10-13.
-- [FIDO-AUTH-2026] FIDO Alliance, Authenticate U.S. 2026 event page, retrieved 2026-10-17.
-- [GARTNER-IAMSUMMIT-2026] Gartner, Identity & Access Management Summit 2026 agenda, retrieved 2026-10-17.
-- [FIRST-CON-2026] FIRST, 38th annual conference programme, Denver, 2026-06-14 to 19.
-- [OWASP-STATE-AGENTIC-2026] OWASP GenAI Security Project, State of Agentic AI Security and Governance v2.01, 2026.
-- [VECTRA-SPIDER-2026] Vectra AI, The FBI wrote down the Scattered Spider playbook, and it starts with a phone call, 2026-07-06.
-- [IBM-CODB-2026] IBM and Ponemon, Cost of a Data Breach Report 2026 (landing page), 2026-07.
+- [OKTA-AUTHSURVEY-2026] Yubico and Okta, 2026 Global State of Authentication (Okta Newsroom article on a survey of nearly 2,000 professionals), 2026-10-07. https://www.okta.com/newsroom/articles/global-state-of-authentication-2026-ai-phishing-resistance/
+- [SAILPOINT-HORIZONS-2026] SailPoint, Horizons of Identity Security, fifth edition (press release; survey of 340 leaders), 2026-10-06. https://www.sailpoint.com/press-releases/sailpoint-horizons-identity-security-ai-adoption-gap
+- [PINDROP-DRI-2026] Pindrop, The Deepfake Readiness Index 2026 (Wakefield Research survey of 250 U.S. security leaders, fielded 2026-06-11 to 22; page undated, date is the sitemap last-modified), 2026-09-29. https://www.pindrop.com/resources/report/deepfake-readiness-index
+- [USENIX-PASSKEYS-2026] Jannett et al., The State of Passkeys, USENIX Security 2026, 2026-08. https://www.usenix.org/conference/usenixsecurity26/presentation/jannett
+- [SWI-BLACKHAT-2026] Start with Identity, Black Hat USA 2026 recap, 2026-08-06. https://startwithidentity.com/blog/black-hat-usa-2026-recap/
+- [FORRESTER-RSAC-2026] Forrester, RSAC 2026: An AI Coming-Of-Age Story Without The Romance, 2026-03-31. https://www.forrester.com/blogs/rsac-2026-an-ai-coming-of-age-story-without-the-romance
+- [ISC2-WORKFORCE-2025] ISC2, 2025 Cybersecurity Workforce Study, 2025-12-04. https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study
+- [SAVIYNT-IARA-2026] Saviynt, Saviynt Expands Identity Security for AI Solution with Intent-Aware Runtime Authorization for AI Agents (press release; also announces identity verification inside human identity certification), 2026-06-15. https://saviynt.com/press-release/saviynt-expands-identity-security-for-ai-solution-with-intent-aware-runtime-authorization-for-ai-agents
+- [OKTA-AGENTS-2026] Okta Newsroom, Okta for AI Agents innovations (Oktane 2026), 2026-09-22. https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/
+- [SILVERFORT-ASSUMPTIONS-2026] Silverfort, 5 cybersecurity assumptions AI attacks break, 2026-10-13. https://www.silverfort.com/blog/5-cybersecurity-assumptions-ai-attacks-break/
+- [FIDO-AUTH-2026] FIDO Alliance, Authenticate U.S. 2026 event page (event 2026-10-19 to 21), retrieved 2026-10-17. https://authenticatecon.com/event/authenticate-u-s-2026/
+- [GARTNER-IAMSUMMIT-2026] Gartner, Identity & Access Management Summit 2026 agenda and FAQ (event from 2026-12-07), retrieved 2026-10-17. https://www.gartner.com/en/conferences/na/identity-access-management-us/agenda
+- [FIRST-CON-2026] FIRST, 38th annual conference programme, Denver, 2026-06-14 to 19 (session on 2026-06-17). https://www.first.org/conference/2026/program
+- [OWASP-STATE-AGENTIC-2026] OWASP GenAI Security Project, State of Agentic AI Security and Governance v2.01 (139-page PDF; governance maturity model, level 3), 2026-06-01. https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/
+- [VECTRA-SPIDER-2026] Vectra AI, The FBI wrote down the Scattered Spider playbook, and it starts with a phone call, 2026-07-06. https://www.vectra.ai/blog/the-fbi-wrote-down-the-scattered-spider-playbook-and-it-starts-with-a-phone-call
+- [IBM-CODB-2026] IBM and Ponemon, Cost of a Data Breach Report 2026 (landing page, 'Secure and control agentic identities'; month from IBM's 2026-07-29 press release), 2026-07. https://www.ibm.com/reports/data-breach

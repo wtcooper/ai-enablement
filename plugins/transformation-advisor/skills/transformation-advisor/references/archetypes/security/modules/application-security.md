@@ -4,7 +4,8 @@ Last reviewed 2026-10-17. Use cases live in `../use-cases/application-security.y
 here: `#05` means `security-application-security-05`; other modules' ids are given in full. Source keys in brackets,
 such as [GOOGLE-AGENTICSCAN-2026], are in the YAML or in §10. Almost every outcome figure is self-reported by the
 deploying organisation or published by a vendor about its own product; no independent production measurement of an
-AI AppSec tool exists yet. Say so when you quote one.
+AI AppSec tool exists yet. Say so when you quote one. Claims from [un]prompted 2026 abstracts [UNPROMPTED-2026]
+come from talks scheduled for 2026-10-27 and 2026-10-28 that have not yet been given; treat them as unpresented claims.
 
 ## Contents
 
@@ -33,12 +34,12 @@ pentest agents are in the vulnerability-exposure module; this file points to the
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Secure design and threat modelling | Intake questions, threat model, design review, risk tracking | expert-judgment, document-production | Specialists gather context by hand while developers wait (Stripe abstract) [UNPROMPTED-2026] |
+| Secure design and threat modelling | Intake questions, threat model, design review, risk tracking | expert-judgment, document-production | Specialists gather context by hand while developers wait (Stripe, abstract of a talk scheduled for 2026-10-28) [UNPROMPTED-2026] |
 | Coding with AI assistants | Developers and coding agents write code; rules files and IDE checks | software-systems | 55.8% of 3,500 AI-generated artifacts had a flagged vulnerability (preprint) [ARXIV-2604.05292] |
 | Code review | Human and automated review before merge; risk tiering | review-assurance | At Meta, lines per human-landed diff +105.9% in a year, over 80% of the growth from agentic AI [ARXIV-2605.30208] |
 | Scanning in CI (SAST, SCA, secrets) | Pre-submit and nightly scans; reachability checks | review-assurance | Rules find only what someone wrote a rule for; false positives need costly manual triage [ARXIV-2601.02941] |
 | Dynamic testing and audit | Test running apps; build tools for unfamiliar code | review-assurance, software-systems | Scanners give candidates, not proof of exploitability [GOOGLE-PAGEBREAK-2026] |
-| Finding triage and closure | De-duplicate, rank by reachability, assign owner, track to fixed | review-assurance, data-reporting | "Opened" is not "fixed"; a passing build does not prove the path is gone (Rubrik abstract) [UNPROMPTED-2026] |
+| Finding triage and closure | De-duplicate, rank by reachability, assign owner, track to fixed | review-assurance, data-reporting | "Opened" is not "fixed"; a passing build does not prove the path is gone (Rubrik, abstract of a talk scheduled for 2026-10-27) [UNPROMPTED-2026] |
 | Fixing in code | Draft fix, review, merge; dependency upgrades | software-systems | Snyk data: about eight vulnerabilities introduced per one remediated [SNYK-AGENTIC-2026]; 12.5% of first fixes incomplete [TOB-1PASSWORD-2026] |
 | Supply chain intake | Package intake, malware blocking, agent-skill vetting, advisory data | review-assurance, transaction-processing | Malicious packages run at install, before a PR scan [SNYK-AGENTIC-2026]; models invent package names [USENIX-SEC-2025-HALLUC] |
 | Inbound reports and PSIRT | Bug bounty, product security incident response | transaction-processing | GitHub private reports ~550/week (Jan) to 3,000+/week (May 2026) [GITHUB-ADVDB-2026]; see security-vulnerability-exposure-07, -08 |
@@ -54,8 +55,8 @@ multi-step outcome), reinvent (the operating model changes). Improve is crowded;
 entries; reinvent has one, at a consultancy.
 
 **Design and threat modelling**
-- Improve: `#01` agents run the security review lifecycle (Stripe, "weeks to minutes", abstract only); Anthropic's
-  AppSec team lists AI-drafted threat models and AI suggestions on which reviews need a human; Cloudflare's spec reviewer covered ~600 specs. Idea:
+- Improve: `#01` agents run the security review lifecycle (Stripe, "weeks to minutes", from the abstract of a talk
+  scheduled for 2026-10-28); Anthropic's AppSec team lists AI-drafted threat models and AI suggestions on which reviews need a human; Cloudflare's spec reviewer covered ~600 specs. Idea:
   threat-model diffs on every change (USENIX talk).
 
 **Writing code with AI**
@@ -72,16 +73,17 @@ entries; reinvent has one, at a consultancy.
 
 **Scanning and testing in the pipeline**
 - Improve: `#07` pre-submit agentic scanning of every change with a reachability-proving triage agent (Google: over
-  92% precision, recall not stated). `#08` reasoning-based scanners beside SAST (Codex Security, Claude Code Security,
+  92% precision of its reachability verdicts, recall not stated). `#08` reasoning-based scanners beside SAST (Codex Security, Claude Code Security,
   Wiz, Semgrep, Snyk; GitHub Security Lab found 24 Android flaws with open-source taskflows).
 - Delegate: `#10` Google's PageBreak hunts web flaws and only deterministically validated ones reach teams (over 500
   XSS). `#11` agents build a decompiler, analyser and Lean model before a manual audit (Trail of Bits: 95 proofs).
 - Elsewhere: agent-built fuzzing campaigns security-vulnerability-exposure-05; pentest agents -17 and -18.
 
 **Triage, closure and fixing**
-- Improve: `#09` reachability-first triage with separate opened, reviewed and fixed states (Rubrik, abstract).
-  `#12` AI-drafted fixes delivered as reviewable changes (Copilot Autofix, Google bug-fix agent; Meta says over 40% of
-  critical vulnerabilities fixed by AI diffs, without faster fixing). `#13` CodeMender adds compiler bounds checks to
+- Improve: `#09` reachability-first triage with separate opened, reviewed and fixed states (Rubrik, abstract of a
+  talk scheduled for 2026-10-27; grade C). `#12` AI-drafted fixes delivered as reviewable changes (Copilot Autofix,
+  Google bug-fix agent; Meta's abstract for a talk scheduled for 2026-10-27 says over 40% of critical
+  vulnerabilities were fixed by AI diffs, without faster fixing). `#13` CodeMender adds compiler bounds checks to
   remove a vulnerability class.
 - Elsewhere: Patch the Planet security-vulnerability-exposure-12; patch validation -14; limits of automated patching
   -13; dependency upgrade agents -15; validation and VulnOps backlogs -06, -11.
@@ -110,7 +112,7 @@ entries; reinvent has one, at a consultancy.
    queue, or do findings arrive as prose?"** Reveals noise risk; Google's systems put validation first (`#07`, `#10`).
 5. **"Which AI scanners or reviewers do you run, and what did you measure yourselves: false positives, missed
    findings, override rates? What happens when two runs disagree?"** Reveals reliance on vendor benchmarks (`#16`);
-   AISLE reports one run can miss what the next finds [UNPROMPTED-2026].
+   AISLE's abstract for a talk scheduled for 2026-10-28 says one run can miss what the next finds [UNPROMPTED-2026].
 6. **"For an AI-proposed fix, what do you check beyond 'the exploit no longer works'?"** Reveals PoC-only
    validation, which inflated agent results 1.83 times in PatchBench [ARXIV-2609.04075] (`#12`).
 7. **"Do your reviewers and scanners know the product's authorization and tenancy rules?"** Reveals blind spots:
@@ -134,7 +136,8 @@ entries; reinvent has one, at a consultancy.
 - Backlog: Snyk says 94% of 459 million findings had a known fixed version but about 10% were resolved over six
   months [SNYK-VULNBUMP-2026, vendor]. Veracode (as reported): 82% of companies carry known vulnerabilities unresolved
   for over a year, up from 74%; Veracode says more testing may explain part of the rise [REGISTER-VERACODE-2026].
-- Fix quality: 283 of 2,265 developers' first fixes (12.5%) did not fully resolve the issue [TOB-1PASSWORD-2026].
+- Fix quality: across 236 Trail of Bits assessments, developers' first fixes for 283 of 2,265 vulnerabilities (12.5%)
+  did not fully resolve the issue [TOB-1PASSWORD-2026].
 - Secrets: in one organisation 113 of about 2,000 assets (5.65%) served live credentials, and the best of nine
   scanners found 36.6% (static) or 77.8% (runtime-aware) of a ground-truth set [ARXIV-2609.23042, abstract].
 - Disclosure volume: 5,045 (Jan 2026) to 10,740 (Aug 2026) CVEs a month; GTIG says automated CNA assignment inflates
@@ -146,7 +149,7 @@ entries; reinvent has one, at a consultancy.
 
 | Measure | Figure | Use case |
 |---|---|---|
-| Triage-agent precision; false positives | over 92%; 3% "in some cases" (Google) | `#07` |
+| Triage-agent precision (no recall published); false positives | over 92%; 3% "in some cases" (Google) | `#07` |
 | Validated XSS found by agent | over 500 (Google PageBreak) | `#10` |
 | AI review at scale | 131,246 runs, 48,095 MRs in 30 days; median 3m39s; break glass 0.6%; USD 1.19 average (Cloudflare) | `#04` |
 | Security comments validated, shadow mode | 54% (Atlassian setting) | `#04` |
@@ -154,7 +157,7 @@ entries; reinvent has one, at a consultancy.
 | Standards violations flagged; approvals withheld | ~230,000; ~16,000 (Cloudflare) | `#05` |
 | Android vulnerabilities found with taskflows | 24 (GitHub Security Lab, one researcher) | `#08` |
 | Machine-checked proofs before an audit | 95 (Trail of Bits) | `#11` |
-| Critical vulnerabilities fixed by AI diffs | over 40%, no faster fixing (Meta, abstract) | `#12` |
+| Critical vulnerabilities fixed by AI diffs | over 40%, no faster fixing (Meta, abstract of a talk scheduled for 2026-10-27; not yet presented) | `#12` |
 
 **Vendor claims (ask for named, measured cases)**: OpenAI Codex Security false positives down over 50% in beta
 [OPENAI-CODEXSEC-2026]; AISLE best AI analyser 68% vs best SAST 12.1% on CVEs AISLE found [AISLE-SAST-2026]; Snyk fix
@@ -188,8 +191,8 @@ override rate for security findings or a parallel run of AI against human AppSec
   not using AI to code [NIST-SSDF-218A-2024]; the Cyber AI Profile draft suggests extending AI checks to secure
   development and lists AI source-code vulnerability detection among examples [NIST-CYBERAI-2025].
 - **UK**: Software Security Code of Practice, 14 principles (updated 2026-01-15) [UK-DSIT-SSCOP-2025]; NCSC "vibe
-  coding spectrum": manual coding for authentication, authorisation, secrets, personal data and safety-critical code
-  [NCSC-VIBE-2026]. **US**: CISA Secure by Design [CISA-SBD-2023].
+  coding spectrum": slide towards manual coding for authentication, authorisation, secrets, personal data and
+  safety-critical code [NCSC-VIBE-2026]. **US**: CISA Secure by Design [CISA-SBD-2023].
 - **Community**: OpenSSF guide for assistant instructions (developer stays responsible) [OPENSSF-AIGUIDE-2025];
   Linux kernel rules on AI contributions (`#03`). EU AI Act high-risk rules moved to 2027-12-02 [EC-AIACT-2026].
 - A Semgrep blog quotes Amp saying SOC 2 does not require pull requests; that is a vendor's argument, not an auditor's
@@ -239,15 +242,16 @@ decisions; certifying origin of contributed code.
   2026-06-02 it predicts comparable models elsewhere within 6-12 months (vendor forecast) [ANTHROPIC-EXPAND-2026].
 - **2026-06-18** NCSC publishes the vibe coding spectrum [NCSC-VIBE-2026].
 - **2026-06-23 to 07-28** Semgrep Guardian (write-time scanning) and Agentic Workflows [SEMGREP-GUARDIAN-2026, SEMGREP-AGENTICWF-2026].
-- **2026-08** DEF CON: an LLM CI gate bypassed; a PortSwigger system finds new HTTP desync triggers and a new attack
-  class against bug-bounty targets [DEFCON-34-2026, TLDRSEC-346-2026].
+- **2026-08** DEF CON: an LLM CI gate bypassed; a PortSwigger researcher's autonomous system finds new HTTP desync
+  triggers on bug-bounty targets and a behaviour he treats as evidence of a new desync class [DEFCON-34-2026, TLDRSEC-346-2026].
 - **2026-08-06 / 09-15** 1Password's 26% clean-patch headline and Trail of Bits' rebuttal [ONEPASSWORD-FLAWED-2026, TOB-1PASSWORD-2026].
 - **2026-09-11** CRA vulnerability reporting applies [EC-CRA-REPORTING-2026].
 - **2026-09-19 / 09-24** Google publishes pre-submit agentic scanning and PageBreak (`#07`, `#10`).
 - **2026-10-06 to 10-15** Wiz AI SAST, OSS Scanner, Semgrep in Cursor Origin, Snyk Evo Agentic AppSec [WIZ-AISAST-2026,
   ANTHROPIC-CYBERMISSION-2026, SEMGREP-CURSOR-2026, SNYK-AGENTIC-2026].
-- **2026-10-27 to 10-29** [un]prompted talks by Meta, Stripe, Rubrik, Google and AISLE on closure, repeatability and
-  agent-run reviews [UNPROMPTED-2026]. **2026-11-05/06** OWASP Global AppSec USA (schedule seen via search) [OWASP-APPSEC-2026].
+- **2026-10-27 to 10-28** [un]prompted talks by Meta, Google and Rubrik (27 October) and Stripe and AISLE (28 October)
+  are scheduled on AI fixes, closure, repeatability and agent-run reviews; their claims are unpresented abstracts
+  [UNPROMPTED-2026].
 - **2027-12-11** CRA main obligations [EC-CRA-2026].
 
 ## 9. Common objections
@@ -256,14 +260,16 @@ decisions; certifying origin of contributed code.
   [STENBERG-MYTHOS-2026], yet the same maintainer credits AISLE's AI-assisted audit with 35 published curl CVEs
   (security-vulnerability-exposure-03).
   Ask for maintainer-confirmed counts, not model counts.
-- **"AI only finds known bug types."** Stenberg's view (2026-05-11); PortSwigger's 2026 system found a new attack
-  class with a researcher's help [TLDRSEC-346-2026].
-- **"Benchmarks prove it works."** Memorisation, PoC-only checks and grader disagreement inflate scores (§5); AWS calls
-  its own benchmark "contamination-reduced, not contamination-free" [AWS-SECAGENT-2026]. Test on your own labelled set (`#16`).
-- **"Results change run to run."** True; AISLE saw it across 25,000 trials [UNPROMPTED-2026]. Deployments repeat runs
+- **"AI only finds known bug types."** Stenberg's view (2026-05-11); a PortSwigger researcher's 2026 autonomous system
+  found new desync techniques and what he treats as evidence of a new desync class [TLDRSEC-346-2026].
+- **"Benchmarks prove it works."** Memorisation, PoC-only checks and grader disagreement inflate scores (§5); AWS says
+  its own benchmark's controls "reduce contamination rather than eliminate it" [AWS-SECAGENT-2026]. Test on your own labelled set (`#16`).
+- **"Results change run to run."** True; AISLE's abstract for a talk scheduled for 2026-10-28 reports it across
+  25,000 trials [UNPROMPTED-2026], and GitHub's taskflows use repeated runs for the same reason [GITHUB-ANDROID-2026]. Deployments repeat runs
   and put deterministic validators in front (`#07`, `#10`).
-- **"AI fixes will save us."** Meta's AI fixes did not by themselves speed fixing [UNPROMPTED-2026]; mass remediation
-  saturated CI and reviewers in one industrial study [ARXIV-2609.29172]. Budget review capacity (`#09`, `#12`).
+- **"AI fixes will save us."** Meta's abstract for a talk scheduled for 2026-10-27 says its AI fixes did not by
+  themselves speed fixing [UNPROMPTED-2026]; AI-assisted code-quality remediation (not security fixes) saturated CI
+  and reviewers in one industrial study [ARXIV-2609.29172]. Budget review capacity (`#09`, `#12`).
 - **"AI code is insecure, so adding AI review is circular."** Generation and review differ: models caught 78.7% of
   their own flaws in review mode [ARXIV-2604.05292]. Keep deterministic checks and human sign-off (`#04`).
 - **"An AI gate is enough."** Skill scanners and an LLM build gate were bypassed in 2026 [TOB-SKILLS-2026,
@@ -279,5 +285,5 @@ Full details for every key used in the use cases are in the YAML. Keys cited onl
 research angles unless marked):
 - **Regulators and standard-setters:** EC-CRA-2026 (European Commission, *Cyber Resilience Act*, 2026-09-07, https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act); EC-CRA-REPORTING-2026 (*CRA reporting obligations*, 2026-09-11, https://digital-strategy.ec.europa.eu/en/policies/cra-reporting); EURLEX-NIS2-2022 (Directive (EU) 2022/2555, 2022-12-27, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555); EURLEX-DORA-RTS-2024 (Delegated Regulation (EU) 2024/1774, 2024-06-25, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1774); EC-AIACT-2026 (AI Act status page, 2026-10, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai); NIST-SSDF-218R1-2025 (SP 800-218 Rev 1 ipd, 2025-12-17, https://csrc.nist.gov/pubs/sp/800/218/r1/ipd); NIST-SSDF-218A-2024 (SP 800-218A, 2024-07-26, https://csrc.nist.gov/pubs/sp/800/218/a/final); NIST-CYBERAI-2025 (IR 8596 iprd, 2025-12-16, https://csrc.nist.gov/pubs/ir/8596/iprd); CISA-SBD-2023 (Secure by Design, 2023-10-25, https://www.cisa.gov/resources-tools/resources/secure-by-design); UK-DSIT-SSCOP-2025 (Software Security Code of Practice, 2025-05-07, https://www.gov.uk/government/publications/software-security-code-of-practice); GOVIE-NCSC-2026 (Ireland NCSC statement on Mythos Preview, 2026-04-13, https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/press-releases/national-cyber-security-centre-ncsc-statement-on-anthropics-mythos-preview-model-for-defensive-cyber-security-purposes/).
 - **Firms and vendors:** GTIG-VULNTRENDS-2026 (Google Threat Intelligence Group, 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/); ANTHROPIC-GLASSWING-2026 (2026-04-07, https://www.anthropic.com/glasswing); SNYK-VULNBUMP-2026 (2026-10-15, https://snyk.io/blog/vulnbump/); SEMGREP-APPSEC-2026 (*What Application Security Actually Does All Day*, 2026-09-25, https://semgrep.dev/blog/2026/what-application-security-does); ONEPASSWORD-FLAWED-2026 (1Password Off-by-1 Labs, 2026-08-06, https://1password.com/files/resources/frontier-models-vulnerability-patches-flawed.pdf); GITHUB-TASKFLOW-2026 (GitHub Blog, 2026-09-24, https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/); LF-GLASSWING-2026 (Linux Foundation, 2026-04-07, https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source).
-- **Surveys, press, community:** BLACKDUCK-BSIMM-2026 (BSIMM16 landing page, 2026-01, https://www.blackduck.com/resources/analyst-reports/bsimm.html); ISC2-WORKFORCE-2025 (2025-12-04, https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study); REGISTER-VERACODE-2026 (The Register, 2026-02-26, https://www.theregister.com/software/2026/02/26/rapid-ai-driven-development-makes-security-unattainable/4285126); STENBERG-PRESSURE-2026 (2026-05-26, https://daniel.haxx.se/blog/2026/05/26/the-pressure/); CURL-TEAM-2026 (2026-10-12, https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/); OWASP-APPSEC-2026 (OWASP Global AppSec USA, San Francisco, 2026-11-05/06; listed in the landscape scan via search only, schedule page blocked, so no URL was opened).
+- **Surveys, press, community:** BLACKDUCK-BSIMM-2026 (BSIMM16 landing page, 2026-01, https://www.blackduck.com/resources/analyst-reports/bsimm.html); ISC2-WORKFORCE-2025 (2025-12-04, https://www.isc2.org/Insights/2025/12/2025-isc2-cybersecurity-workforce-study); REGISTER-VERACODE-2026 (The Register, 2026-02-26, https://www.theregister.com/software/2026/02/26/rapid-ai-driven-development-makes-security-unattainable/4285126); STENBERG-PRESSURE-2026 (2026-05-26, https://daniel.haxx.se/blog/2026/05/26/the-pressure/); CURL-TEAM-2026 (2026-10-12, https://daniel.haxx.se/blog/2026/10/12/the-2026-curl-team/).
 - **Academic and job postings:** ARXIV-2609.23042 (*Secrets That Survive Everything*, 2026-09, https://arxiv.org/abs/2609.23042, abstract); OKTA-JOB-PSE-2026 (2026-09-17, https://www.okta.com/company/careers/opportunity/8156825?gh_jid=8156825); STRIPE-JOB-VM-2026 (2026-08-04, https://stripe.com/jobs/search?gh_jid=8089353); DATADOG-JOB-APPSEC-2026 (2026-09-25, https://careers.datadoghq.com/detail/8230663/?gh_jid=8230663).

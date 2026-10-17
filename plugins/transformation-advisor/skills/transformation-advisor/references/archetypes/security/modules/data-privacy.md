@@ -2,9 +2,9 @@
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/data-privacy.yaml` (21 entries). Ids are shortened here:
 `#06` means `security-data-privacy-06`; other modules' ids are in full. Source keys in brackets are in the YAML or in
-§10. **Evidence is thin.** This module had one combined deep dive. 8 of 21 entries are graded A or B; the two A
-entries (Meta's rule-versus-LLM routing split, Microsoft's privacy code detection) are the deploying teams' own
-figures, and neither publishes an error or miss rate. No independent override, false-positive or miss rate was found
+§10. **Evidence is thin.** This module had one combined deep dive. 8 of 21 entries are graded A or B; the one A
+entry (Meta's rule-versus-LLM routing split) is the deploying team's own figure and publishes no error or miss rate.
+Microsoft's privacy code detection (#14) is B: its only figure comes from a conference abstract. No independent override, false-positive or miss rate was found
 for LLM-based DLP, alert triage or classification in production. Most other numbers are vendor telemetry that sizes
 the problem, not the effect of a control. Several vendor customer stories (Cyera, MIND) carry no publication date;
 the YAML gives the retrieval date (2026-10-17) and says so. Say all this when you quote a figure.
@@ -80,13 +80,14 @@ are happening. Agents that act (#11) still need approval for each action. Of the
   certificate inventory to agents (announced, C). No deployment or measurement exists.
 
 **Privacy engineering**
-- Improve: `#14` retrieval-augmented LLM flags privacy-relevant code patterns in pull requests at Microsoft (A; also
-  see security-application-security-04). `#13` Meta's LLM-guided workflow that turns privacy requirements into
+- Improve: `#14` retrieval-augmented LLM flags privacy-relevant code patterns in pull requests at Microsoft (B,
+  conference abstract only; also see security-application-security-04). `#13` Meta's LLM-guided workflow that turns privacy requirements into
   data controls using lineage (B). `#15` AI first drafts of PIAs, reassessments and evidence reviews (C).
-  `#20` Capital One found direct differentially private synthesis beat an LLM-based generator (B, negative result;
+  `#20` Capital One found direct differentially private synthesis beat an LLM-based generator (B, offline experiment with a negative result;
   differential privacy adds calibrated noise so no one person can be singled out).
 - Automate: `#21` Google's "Provably Private Insights": LLMs interpret unstructured usage data inside attested secure
-  hardware (trusted execution environments) and only differentially private totals leave (B, Recorder app).
+  hardware (trusted execution environments) and only differentially private totals leave (B, Pixel Recorder app;
+  slides give batches of up to about 100,000 inputs).
 
 ## 4. Interview probes
 
@@ -125,20 +126,20 @@ and on managed accounts, time to remediate exposures, and assessment cycle time.
 | DLP prevention | 16% of respondents who lost data said DLP blocked their most significant incident (433 surveyed) | CSA-AI-2026 | independent survey |
 | GenAI visibility | 29% can routinely produce a 30-day report of sensitive data sent to GenAI tools | CSA-AI-2026 | independent survey |
 | Data controls in place | Only three of seven key data risk measures implemented; data classification 49%, DLP on key egress channels 48% (3,934 leaders) | PWC-GDTI-2027 | survey |
-| AI-caused data loss | Misuse or misconfiguration of AI tools caused 37% of material data loss cases | PROOFPOINT-VOC-2026 | vendor survey |
+| AI-caused data loss | 37% of surveyed CISOs cited misuse or misconfiguration of AI tools as a cause of material data loss (causes are not exclusive; it is not a share of cases) | PROOFPOINT-VOC-2026 | vendor survey |
 | Shadow-AI breaches | Shadow-AI incidents exposed personal data in 65% (global average 53%) and IP in 40% (33%); population is breached organizations | IBM-CODB-2025 | vendor survey |
-| Unapproved-tool sharing | Of employees using unapproved tools, 54% share internal messages and emails, 45% HR information, 39% confidential documents | OKTA-AIAGENTS-2026 | vendor survey |
+| Unapproved-tool sharing | Of knowledge workers using unapproved AI tools, 54% had entered internal messages and emails into an AI tool or agent in the past 6 months, 45% HR information, 39% confidential documents (492 workers surveyed) | OKTA-AIAGENTS-2026 | vendor survey |
 | GenAI policy violations | Average organization: 3% of genAI users commit about 223 violations a month; 50% of organizations lack enforceable genAI data policies | NETSKOPE-CTR-2026 | vendor telemetry |
 | Sensitive data in AI use | 39.7% of data movements into AI tools involve sensitive data; 32.3% of ChatGPT use via personal accounts | CYBERHAVEN-AIRISK-2026 | vendor telemetry |
 | Exposure to AI | 99% of 1,000 environments had sensitive data AI can easily surface | VARONIS-SODS-2025 | vendor telemetry |
 | Steward acceptance | 63.3% to 99.8% over six weeks, about 24,000 decisions; blind to false negatives | ARXIV-GLYPH-2026 | self-reported |
 | Tagging quality | F2 0.890 fused (F2 weights recall twice as much as precision); regex alone 0.050; 4 evaluation files | ARXIV-GLYPH-2026 | self-reported |
 | Rules versus LLM | About 85% of requests by rules, 15% by LLM at roughly 400x the compute | META-ENG-ASSETCLASS-2026 | self-reported |
-| Privacy code detection | Retrieval found more than 2x the confirmed issues of a standalone LLM; false positives not significantly improved | PEPR-2026 | self-reported |
+| Privacy code detection | In an evaluation, retrieval found more than 2x the confirmed issues of a standalone LLM (no counts given); false positives not significantly improved | PEPR-2026 (abstract) | self-reported |
 | DLP noise (case study) | About 16,000 false-positive events cut to "just a handful" (unnamed institution) | CYERA-FI-2026 | vendor-published |
 | PII detector limits | Rule-based recall 0.07 on the most sensitive categories; no detector reached full cross-turn coverage without false positives | ARXIV-REDACT-2026; ARXIV-PIITRACE-2026 | independent (academic) |
 | Agent over-sharing | 81-88% of tool calls held unnecessary sensitive data; 36-76% even with privacy instructions | ARXIV-TOOLMINIMIZE-2026 | independent (academic) |
-| Breach cost | Global average US$4.99M; US$1.93M lower with extensive security AI and automation (landing page only) | IBM-CODB-2026 | vendor survey |
+| Breach cost | Global average US$4.99M; US$1.93M lower with extensive use of AI and automation in security than with none (landing page only) | IBM-CODB-2026 | vendor survey |
 
 Benchmarks for override rate or accuracy of DLP triage agents in production: **none published.**
 
@@ -175,9 +176,9 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 - **Data security admins** write natural-language classification instructions instead of curating training files
   [GOOGLE-WSAICLASS-2026], and approve or tune agent-proposed fixes [MSFT-DSPM-2026].
 - **DLP analysts** work a ranked queue with explanations and tune it with feedback
-  [MSFT-PURVIEWDLPTRIAGE-2026]; OpenWeb's CISO says the team now trusts alerts enough to use them for decisions and automation
+  [MSFT-PURVIEWDLPTRIAGE-2026]; OpenWeb's CISO says the team now sees far fewer alerts and can trust them
   [MIND-OPENWEB-2026].
-- **Privacy engineers** are a growing dedicated role: Anthropic describes one of its first dedicated privacy engineers
+- **Privacy engineers**: job postings show dedicated roles. Anthropic describes one of its first dedicated privacy engineers
   building automated discovery, classification, lineage and compliance controls [ANTHROPIC-JOB-PRIVACYENG-2026].
   Coinbase's privacy incident analyst posting asks for automation and responsible GenAI use with human oversight
   [COINBASE-JOB-PRIVACYANALYST-2026]. Datadog hires a product manager for AI and data security
@@ -206,7 +207,8 @@ Benchmarks for override rate or accuracy of DLP triage agents in production: **n
 | 2026-10-09 | CSA publishes its DLP-in-the-AI-era survey | CSA-AI-2026 |
 | 2026-10-15 | Proofpoint agrees to buy Varonis for about US$6.3 billion; close expected first half of 2027 | VARONIS-PROOFPOINT-2026 |
 
-Direction: the market is consolidating around data plus AI security (the deals above). Research prototypes target
+Direction (our reading of the deals above): two acquisitions (Akamai and LayerX, Proofpoint and Varonis) and Cyera's
+funding round point to data security and AI usage control being sold together. Research prototypes target
 what agents send to tools and coding agents (#17, #18); no deployment was found. Practitioner discourse is very thin: 100 recent Risky Business episode titles
 had none on DLP or privacy engineering [RISKYBIZ-2026].
 
@@ -230,8 +232,8 @@ had none on DLP or privacy engineering [RISKYBIZ-2026].
   [MSFT-SPRCD-2026] (#10).
 - **"AI can write our DPIAs."** Vendor tools flag AI-completed fields for review [ONETRUST-W26-2026]; one study found
   stricter formats gave consistent output but more hallucinations [ARXIV-DPIALLM-2026]. Treat output as a first draft.
-- **"Retrieval will fix the false positives."** At Microsoft it found more than twice the issues but did not
-  significantly cut false positives [PEPR-2026] (#14).
+- **"Retrieval will fix the false positives."** In Microsoft's evaluation it found more than twice the confirmed issues
+  but did not significantly cut false positives [PEPR-2026] (#14).
 - **"LLM-generated synthetic data solves sharing."** Capital One found model bias, not privacy noise, was the main
   error, and direct differentially private synthesis did better [PEPR-2026] (#20).
 - **"Policy is enough."** In three German organizations, regulatory pressure became policy without regard to actual
@@ -246,7 +248,8 @@ CYERA-CHENMED-2026, CYERA-PARAMOUNT-2026, CYERA-VETCOR-2026, CYERA-FI-2026, CYER
 VARONIS-SODS-2025, CSA-AI-2026, NETSKOPE-CTR-2026, CYBERHAVEN-AIRISK-2026, HN-ASKLLMAPI-2026, OWASP-DATASEC-2026,
 AKAMAI-LAYERX-2026, ARXIV-ARBITER-2025, PEPR-2026, ONETRUST-W26-2026, ARXIV-PIABENCH-2026, ARXIV-DPIALLM-2026,
 ARXIV-REDACT-2026, ARXIV-PIITRACE-2026, ARXIV-MINDGAP-2026, ARXIV-SURROGATESHIELD-2026, ARXIV-TOOLMINIMIZE-2026,
-ARXIV-POLICYGUARD-2026, APPVIEWX-SUMMER-2026. Cyera and MIND customer stories are undated (retrieval date given).
+ARXIV-POLICYGUARD-2026, APPVIEWX-SUMMER-2026, PEPR-BOUZID-SLIDES-2026, PEPR-TANDON-SLIDES-2026. Cyera and MIND customer
+stories are undated (retrieval date given).
 
 Cited here only (all opened in full unless marked):
 - ANTHROPIC-JOB-PRIVACYENG-2026: Staff+ Software Engineer, Privacy (job posting), Anthropic, 2026-08-07, https://job-boards.greenhouse.io/anthropic/jobs/5383114008
@@ -263,11 +266,11 @@ Cited here only (all opened in full unless marked):
 - NIST-AI600-2024: NIST AI 600-1, Generative AI Profile, NIST, 2024-07, https://doi.org/10.6028/NIST.AI.600-1
 - NIST-PF-2026: NIST Privacy Framework 1.1 page, NIST, 2026-04-01, https://www.nist.gov/privacy-framework/privacy-framework-version-11
 - NOERR-OMNIBUS-2026: Digital Omnibus AI is nearing the finish line, Noerr, 2026-06-18, https://www.noerr.com/en/insights/digital-omnibus-ai-is-nearing-the-finish-line-is-eu-data-law-heading-down-the-wrong-track
-- OKTA-AIAGENTS-2026: AI Agents at Work 2026 (survey of 292 executives and 492 knowledge workers), Okta, 2026-05, https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/
+- OKTA-AIAGENTS-2026: AI Agents at Work 2026 (survey of 292 executives and 492 knowledge workers), Okta, 2026-05-27, https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/
 - OPENAI-HFUPDATES-2026: The Hugging Face incident and other third-party impact from misaligned models (running updates), OpenAI, 2026-09-30, https://openai.com/hugging-face-incident-and-misalignment/
 - PERKINSCOIE-IAPPGPS-2026: Key Takeaways From the 2026 IAPP Global Privacy Summit, Perkins Coie, 2026-04-17, https://www.ashurstperkinscoie.com/en/insights/where-privacy-is-headed-next-key-takeaways-from-the-2026-iapp-global-privacy-summit/
 - PROOFPOINT-VOC-2026: The risk has moved: Proofpoint's 2026 Voice of the CISO, Proofpoint, 2026-09-09, https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals
-- PWC-GDTI-2027: 2027 Global Digital Trust Insights (survey of 3,934 leaders), PwC, 2026-10-01, https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html
+- PWC-GDTI-2027: 2027 Global Digital Trust Insights (survey of 3,934 leaders), PwC, 2026-10-01, https://www.pwc.com/gx/en/issues/cybersecurity/global-digital-trust-insights.html (read through a text mirror; the site blocks direct requests)
 - RISKYBIZ-2026: Risky Business podcast feed (100 episode titles scanned), 2026-10-14, https://risky.biz/feeds/risky-business/
 - VARONIS-PROOFPOINT-2026: Proofpoint to Acquire Varonis in a $6.3 Billion Transaction, Varonis / Proofpoint, 2026-10-15, https://www.varonis.com/announcement
 - WIZ-REDAGENT-2026: How the Wiz Red Agent caught a Fortune 500 firm's data exposure, Wiz, 2026-10-07, https://www.wiz.io/blog/red-agent-financial-services-data-exposure

@@ -2,6 +2,8 @@
 # impersonation and scam defence, identity and request verification, insider risk, social-engineering testing).
 # Synthesised 2026-10-17 from the wave-4 landscape scan, the single combined human-risk deep dive (21 candidates) and
 # items other security angle files routed to human-risk. 18 entries out.
+# Verified 2026-10-17 against the cited sources (research/runs/wave4/human-risk-verification-report.md); 0 rejected,
+# security-human-risk-10 downgraded from A to B.
 # Canonical refs (one key per document across security files): NYDFS-AIGUIDE-2024 (= NYDFS-AI-2024 in the deep dive);
 # FBI-IC3-2025 means the 2025 Internet Crime Report, published 2026-04 (= FBI-IC3-2026 in the deep dive);
 # FBI-IC3PSA-2025 is the FBI public service announcement of 2025-05-15. FINCEN-DEEPFAKE-NR-2024 is FinCEN's news
@@ -25,30 +27,30 @@
   change_scope: process
   runtime_class: workflow-automation
   maturity: in-production
-  problem: "A small group of repeat clickers is said to cause most phishing incidents, and blanket annual training treats everyone the same. Qualcomm says 4% of users are responsible for 80% of its phishing incidents (the case page attributes the pattern to Cyentia research)."
+  problem: "A small group of repeat clickers is said to cause most phishing incidents, and blanket annual training treats everyone the same. The Qualcomm case page cites research (it names Cyentia) that 4% of users cause 80% of phishing incidents; this is a general research figure, not Qualcomm's own incident data."
   solution: "Qualcomm picked its 1,000 highest-risk employees (people who had failed 3 or more of the previous 6 exercises and who worked in frequently targeted roles such as accounts payable, sales/marketing or executive support) and enrolled them in Hoxhunt's gamified, reward-based adaptive phishing programme. Their results were compared with the rest of the company in periodic benchmark phishing tests, and the result won support for a rollout to about 48,000 employees. Avanade ran a three-month proof of concept comparing two 1,000-user cohorts, one on Hoxhunt and one on its previous awareness tool, before choosing the platform."
   outcomes:
-    - { lever: risk, description: "Three-month benchmark of two 1,000-user cohorts, Hoxhunt versus Avanade's previous awareness tool", figure: "43% higher resilience ratio; 11% lower failure rate; 27% higher reporting rate; 37% more simulations sent", measures: "resilience ratio is defined on the page as engagement divided by phishing-simulation failure rate; cohorts of 1,000 users each; the comparison was run by Avanade as a proof of concept", provenance: vendor-published, source_ref: HOXHUNT-AVANADE-2026 }
-    - { lever: risk, description: "Baseline phishing-simulation failure rate of Qualcomm's selected cohort before enrolment", figure: "30-50% failure rate, negligible reporting", measures: "failure rate of the 1,000 selected employees in Qualcomm's earlier simulations, as stated on the Hoxhunt case page; period not stated", provenance: vendor-published, source_ref: HOXHUNT-QUALCOMM-2023 }
-    - { lever: risk, description: "Change in Qualcomm's simulation failure rate after the company-wide rollout", figure: "6X improvement (case-page text); 3.5x drop in failure rate and 73% increase in reporting (summary card on the case-study index)", measures: "ratio of failure rate before versus after rollout on simulated phishing; the page gives two different headline figures and does not state the baseline, period or sample", provenance: vendor-published, source_ref: HOXHUNT-QUALCOMM-2023 }
+    - { lever: risk, description: "Three-month benchmark of two 1,000-user cohorts, Hoxhunt versus Avanade's previous awareness tool", figure: "43% higher resilience ratio; 11% lower failure rate; 27% higher reporting rate; 37% more simulations sent", measures: "resilience ratio is defined on the page as phishing-simulation engagement rate divided by failure rate; two cohorts of 1,000 users over a three-month proof of concept that the page says Avanade performed; the tools sent different simulations (Hoxhunt's adapt in difficulty and 37% more were sent), so failure rates are not like-for-like, and the page does not say whether 11% is relative or in percentage points", provenance: vendor-published, source_ref: HOXHUNT-AVANADE-2026 }
+    - { lever: risk, description: "Baseline phishing-simulation failure rate of Qualcomm's selected cohort before enrolment", figure: "30-50% failure rate, negligible reporting", measures: "failure rate of the 1,000 selected employees in Qualcomm's earlier simulations, as stated on the Hoxhunt case page; period not stated", provenance: vendor-published, source_ref: HOXHUNT-QUALCOMM-2024 }
+    - { lever: risk, description: "Change in simulation failure rates for the risky cohort and then company-wide, as stated by Qualcomm's Global Head of Cybersecurity on the case page", figure: "risky cohort went from double their colleagues' failure rate to roughly half over a 9-month enrollment; company-wide failure rates then fell by a factor of 6 (the case-study index card says 3.5x drop in failure rate and 73% increase in reporting)", measures: "simulated-phishing failure rate, quoted from Kris Virtue on the vendor page; absolute rates, sample sizes and the period of the company-wide drop are not stated, and the index card's figures differ from the quote", provenance: vendor-published, source_ref: HOXHUNT-QUALCOMM-2024 }
   prerequisites:
     - "History of simulation results and role data to identify the highest-risk users"
     - "A training platform that supports gamified, reward-based programmes rather than penalties"
-    - "Support from leadership obtained through a cohort experiment before the general rollout (HOXHUNT-QUALCOMM-2023, Solution)"
+    - "Support from leadership obtained through a cohort experiment before the general rollout (HOXHUNT-QUALCOMM-2024, Solution)"
   risks_and_guardrails:
-    - "The only large randomised field trial found (UCSD Health, 19,500 employees) reported limited value from embedded phishing training and stressed the need for a no-training control group; Qualcomm's page describes comparison against the rest of the company, not a randomised control (UCSD-PHISHTRAIN-2025, Abstract and Section 1)"
+    - "A large randomised field trial (UCSD Health, over 19,500 employees, 8 months) reported limited value from embedded phishing training and stressed the need for a no-training control group; Qualcomm's page describes comparison against the rest of the company, not a randomised control (UCSD-PHISHTRAIN-2025, Abstract and Section 1)"
     - "The vendor's own blog says a failure rate only means something next to simulation difficulty and reporting rate (HOXHUNT-FAILRATE-2026, opening summary)"
   human_checkpoints:
-    - "Security team selects the cohort and decides on the general rollout after the cohort comparison (HOXHUNT-QUALCOMM-2023)"
-  role_evolution: "The Qualcomm page describes replacing 'phishing prison' with a reward-based programme for repeat clickers; it does not describe changes to security-team roles (HOXHUNT-QUALCOMM-2023)."
+    - "Security team selects the cohort and decides on the general rollout after the cohort comparison (HOXHUNT-QUALCOMM-2024)"
+  role_evolution: "The Qualcomm page describes replacing 'phishing prison' with a reward-based programme for repeat clickers; it does not describe changes to security-team roles (HOXHUNT-QUALCOMM-2024)."
   evidence_grade: A
   sources:
     - { ref: HOXHUNT-AVANADE-2026, title: "How Avanade reduces human cyber risk and saves over 900 hours of SOC analysis per month", publisher: Hoxhunt, type: vendor, url: "https://hoxhunt.com/case-studies/avanade-reduced-cyber-risk-and-saved-5-soc-analyst-ftes-with-hoxhunt", date: 2026, access: full, locator: "'The Hoxhunt challenge benchmark study'" }
-    - { ref: HOXHUNT-QUALCOMM-2023, title: "How Qualcomm used Hoxhunt to turn their 1,000 highest-risk employees into their top performers", publisher: Hoxhunt, type: vendor, url: "https://hoxhunt.com/case-studies/how-qualcomm-used-targeted-security-awareness-training-for-employees", date: 2023, access: full, locator: "Challenge; Solution; 'How did Qualcomm start transforming their culture'; 'CSO50 Award-Winning Results'" }
+    - { ref: HOXHUNT-QUALCOMM-2024, title: "How Qualcomm used Hoxhunt to turn their 1,000 highest-risk employees into their top performers", publisher: Hoxhunt, type: vendor, url: "https://hoxhunt.com/case-studies/how-qualcomm-used-targeted-security-awareness-training-for-employees", date: 2024, access: full, locator: "Challenge; Solution; 'How did Qualcomm start transforming their culture'; 'CSO50 Award-Winning Results' (Kris Virtue quote)" }
     - { ref: UCSD-PHISHTRAIN-2025, title: "Understanding the Efficacy of Phishing Training in Practice", publisher: "IEEE Symposium on Security and Privacy (UC San Diego, University of Chicago, UC San Diego Health)", type: academic, url: "https://sysnet.ucsd.edu/~voelker/pubs/phishtrain-oakland25.pdf", date: 2025-05, access: full, locator: "Abstract; Section 1 findings list" }
     - { ref: HOXHUNT-FAILRATE-2026, title: "What is a good phishing failure rate?", publisher: Hoxhunt, type: vendor, url: "https://hoxhunt.com/blog/what-is-a-good-phishing-failure-rate", date: 2026-03-09, access: full, locator: "Opening summary" }
   last_reviewed: 2026-10-17
-  notes: "Merged from deep-dive 01 (Qualcomm) and the benchmark outcome of deep-dive 02 (Avanade). Low-confidence A: it rests on Avanade's three-month, two-cohort benchmark, a measured comparison the named organisation ran, but published only on the winning vendor's page, not randomised, and limited to simulation metrics (no incident data). Qualcomm's figures alone would be B: the page gives two inconsistent headline figures and no baseline. The pages call the training adaptive but do not describe the AI method. Both case pages are undated; Qualcomm's year comes from its statement of a general rollout in August 2023, Avanade's from current listing only."
+  notes: "Merged from deep-dive 01 (Qualcomm) and the benchmark outcome of deep-dive 02 (Avanade). Low-confidence A, kept after verification on 2026-10-17: the page says Avanade itself performed the three-month, two-cohort benchmark (a study, so it meets the A rule), and Qualcomm's Global Head of Cybersecurity states measured failure-rate changes in his own words. Both appear only on the winning vendor's pages; neither is randomised; both are simulation metrics on non-identical simulations, with no incident data. The pages call the training adaptive but do not describe the AI method. Both case pages are undated. Qualcomm's page reports results 'within 6 months of the global rollout' in August 2023, so it was written in 2024 at the earliest (key renamed from HOXHUNT-QUALCOMM-2023). Avanade's year reflects only the current listing; the Wayback Machine could not be reached to date it."
 
 - id: security-human-risk-02
   title: "Behaviour-signal-driven human risk management with just-in-time micro-training and nudges"
@@ -61,8 +63,8 @@
   change_scope: process
   runtime_class: workflow-automation
   maturity: in-production
-  problem: "Compliance-based annual awareness training does not show risk reduction, and traditional programmes are delivered outside real-world contexts. Uber wanted a human risk management programme for over 25,000 users with a two-person team and no existing playbook."
-  solution: "Uber and Hoxhunt co-developed a programme that takes behavioural signals (phishing simulation outcomes, incident response data, vulnerability and bug tickets, data-handling events, policy exceptions, endpoint and network telemetry, external threat intelligence) and triggers targeted micro-learning and nudges at the moment of risk. The page says content is selected 'with AI capabilities' by role, behaviour pattern and observed risk. Hoxhunt markets the resulting Behavior Risk Console, which combines Hoxhunt, Microsoft Defender, CrowdStrike, Zscaler and other signals into per-employee, team and organisation views. Research prototypes go further: TrainShield (ACM Hypertext 2026) embeds LLM-generated learning overlays in the browsing workflow, triggered by real-time phishing or data-loss detection, and CyberGLA (2026) pairs a spoof-detection tool with an LLM security coach that selects training modules based on detection outcomes."
+  problem: "Uber judged that compliance-based awareness training could not reduce risk effectively, and the TrainShield authors note that traditional programmes are delivered outside real-world contexts (ARXIV-2608.02296). Uber wanted a human risk management programme for over 25,000 users with a two-person team and no existing playbook."
+  solution: "Uber and Hoxhunt co-developed a programme that takes behavioural signals (phishing simulation outcomes, incident response data, vulnerability and bug tickets, data-handling events, policy exceptions, endpoint and network telemetry, external threat intelligence) and triggers targeted micro-learning and nudges at the moment of risk. The page says content is selected 'with AI capabilities' by role, behaviour pattern and observed risk. The page says many of the co-developed capabilities are now part of Hoxhunt's HRM platform; Hoxhunt also markets a Behavior Risk Console that combines Hoxhunt, Microsoft Defender, CrowdStrike, Zscaler and other signals into per-employee, team and organisation views. Research prototypes go further: TrainShield (ACM Hypertext 2026) embeds LLM-generated learning overlays in the browsing workflow, triggered by real-time phishing or data-loss detection, and CyberGLA (2026) pairs a spoof-detection tool with an LLM security coach that selects training modules based on detection outcomes."
   outcomes:
     - { lever: experience, description: "Training completion after moving from forced compliance to voluntary participation", figure: "60% to over 90%", measures: "security-training completion as stated on the case page; user base and period not stated", provenance: vendor-published, source_ref: HOXHUNT-UBER-2026 }
     - { lever: risk, description: "Simulated threat reporting", figure: "3-fold increase", measures: "simulated threat reporting as stated on the case page; baseline not stated", provenance: vendor-published, source_ref: HOXHUNT-UBER-2026 }
@@ -148,7 +150,7 @@
     - "A policy on what public personal information may be used"
   risks_and_guardrails:
     - "The study's lures covered a university workplace and may differ from corporate or government settings (USENIX-CZYBIK-2026, Section 5.1)"
-    - "Sophos warns that 'unfair' simulations that use pretexts such as financial hardship or job security cross ethical lines and can cause stress (SOPHOS-PHAKE-2025)"
+    - "Sophos lists 'unfair' simulations among common mistakes, including pretexts about financial hardship or job security and lures built from personal information scraped from social media, which bears directly on OSINT-personalised simulations (SOPHOS-PHAKE-2025, list of common mistakes)"
   human_checkpoints:
     - "Ethics and staff-committee review before launch; participants are briefed and debriefed (USENIX-CZYBIK-2026, Section 5.1)"
   role_evolution: "Authors recommend incorporating personalised phishing into awareness training and limiting public information linkable to email addresses (USENIX-CZYBIK-2026, Abstract); no role change is described."
@@ -157,7 +159,7 @@
     - { ref: USENIX-CZYBIK-2026, title: "A Large-Scale Study of Personalized Phishing using Large Language Models", publisher: "USENIX Security Symposium (BIFOLD, TU Berlin, Inria, Ruhr-University Bochum)", type: academic, url: "https://www.usenix.org/system/files/usenixsecurity26-czybik.pdf", date: 2026-08, access: full, locator: "Abstract; Section 5.1; Section 6.1 and campaign table" }
     - { ref: ARXIV-2505.12104, title: "The Impact of Emerging Phishing Threats: Assessing Quishing and LLM-generated Phishing Emails against Organizations", publisher: AsiaCCS 2025 via arXiv, type: academic, url: "https://arxiv.org/abs/2505.12104", date: 2025-05-17, access: full, locator: "Abstract" }
     - { ref: ADAPTIVE-HOME-2026, title: "Adaptive Security homepage", publisher: Adaptive Security, type: vendor, url: "https://www.adaptivesecurity.com/", date: 2026-10-15, access: full, locator: "Product menu: Phishing Simulations (Realistic Email Phishing, Voice Call & SMS Phishing, OSINT & AI Email Spearphishing)" }
-    - { ref: SOPHOS-PHAKE-2025, title: "Phake phishing: Phundamental or pholly?", publisher: Sophos, type: vendor, url: "https://www.sophos.com/en-us/blog/phake-phishing-phundamental-or-pholly", date: 2025-10-31, access: full, locator: "Opening list of common mistakes" }
+    - { ref: SOPHOS-PHAKE-2025, title: "Phake phishing: Phundamental or pholly?", publisher: Sophos, type: vendor, url: "https://www.sophos.com/en-us/blog/phake-phishing-phundamental-or-pholly", date: 2025-10-31, access: full, locator: "Opening list of common mistakes (read via a text mirror)" }
   last_reviewed: 2026-10-17
   notes: "From deep-dive 05. Grade B rather than A: the named-organisation measurement shows how susceptible staff are to LLM-personalised lures, not that using them in training reduces risk. The Adaptive date is the latest dated item on its blog index; the product menu itself is undated."
 
@@ -172,8 +174,8 @@
   change_scope: step
   runtime_class: workflow-automation
   maturity: announced
-  problem: "Employees are trained to scrutinise emails, but a live call (vishing: voice phishing; smishing: SMS phishing) demands instant reaction. A survey experiment (N=4,100) found overall compliance of 16.5% across five AI voice scam categories and up to 36% for a relative-in-distress scenario, and judged AI vishing economically viable where human-operated vishing at US wages is not."
-  solution: "Hoxhunt describes (blog dated 2025-10-24) an immersive voice-phishing training capability in which employees practise handling attackers' conversational tactics on live phone calls; Adaptive lists voice-call and SMS phishing simulations; Infosec markets AI agents that simulate deepfake voice attacks and give post-call coaching (the Infosec claim is search-only)."
+  problem: "Employees are trained to scrutinise emails, but a live call (vishing: voice phishing; smishing: SMS phishing) demands instant reaction. A survey experiment (N=4,100) found that 16.5% of participants said they would or might comply across five AI voice scam categories, and up to 36% in a relative-in-distress scenario (participants heard recordings or read transcripts; these were not live calls). The authors judged AI vishing economically viable where human-operated vishing at US wages is not."
+  solution: "Hoxhunt describes (blog dated 2025-10-24) an immersive voice-phishing training capability in which employees practise against an AI voice in simulated phone conversations that adapt to their responses; Adaptive lists voice-call and SMS phishing simulations."
   outcomes:
     - { lever: risk, description: "none published for the training itself; no customer names or results found", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: HOXHUNT-VOICE-2025 }
   prerequisites:
@@ -181,7 +183,7 @@
     - "Out-of-band verification procedures that staff are trained to apply"
   risks_and_guardrails:
     - "Caller persuasiveness, not whether the caller was believed to be human, was the strongest predictor of compliance in the survey experiment, so training on spotting 'robotic' voices is unlikely to be sufficient (ARXIV-2607.09970, abstract)"
-    - "Humans struggle to tell AI-generated scam calls from human voices (BSIDESLV-2026, 'Devising and Detecting Voice Phishing' abstract)"
+    - "Humans struggle to tell AI-generated scam calls from human voices: participants correctly recognised human callers only 24-45% of the time (BSIDESLV-2026, 'Devising and Detecting Voice Phishing' abstract)"
   human_checkpoints:
     - "Awareness team reviews scenario design and results"
   role_evolution: "Not described in the sources."
@@ -192,7 +194,7 @@
     - { ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "'Devising and Detecting Voice Phishing' (Ground Truth, Monday 10:00)" }
     - { ref: ADAPTIVE-HOME-2026, title: "Adaptive Security homepage", publisher: Adaptive Security, type: vendor, url: "https://www.adaptivesecurity.com/", date: 2026-10-15, access: full, locator: "Product menu: Voice Call & SMS Phishing" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 06. BSides LV month is from the landscape file (early August 2026); exact dates were not verified. The Infosec claim is search-only and not used as an outcome."
+  notes: "From deep-dive 06. BSides LV month is from the landscape file (early August 2026); exact dates were not verified. An Infosec product claim seen only in search results was removed in verification because no source was opened."
 
 - id: security-human-risk-06
   title: "Deepfake and executive-impersonation drills for finance, help desk and executive staff"
@@ -214,7 +216,7 @@
     - "Executive consent to use their likeness in simulations"
   risks_and_guardrails:
     - "NYDFS expects training to address when human review and oversight must be included in verification procedures (NYDFS-AIGUIDE-2024, training section)"
-    - "A callback or video check can itself be compromised when it uses a channel or number supplied by the requester (general practice; the sources read do not give a primary statement)"
+    - "The FBI advises independently finding the person's phone number and calling to verify, and confirming new contact details through a previously confirmed platform, rather than trusting details supplied with the request (FBI-IC3PSA-2025, Recommendations)"
   human_checkpoints:
     - "Human review and oversight inside verification procedures for money transfers (NYDFS-AIGUIDE-2024)"
   role_evolution: "Not described in the sources."
@@ -224,8 +226,9 @@
     - { ref: CNN-ARUP-2024, title: "Arup revealed as victim of USD 25 million deepfake scam involving Hong Kong employee", publisher: CNN, type: press, url: "https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk", date: 2024-05-17, access: full, locator: "Paragraphs 1-8" }
     - { ref: FBI-IC3-2025, title: "2025 IC3 Annual Report (2025 Internet Crime Report)", publisher: FBI Internet Crime Complaint Center, type: regulator, url: "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf", date: 2026-04, access: full, locator: "pp. 39-43, Artificial Intelligence (AI) Used in Cybercrime; AI references tables" }
     - { ref: SECURITYBRIEF-AIDA-2026, title: "KnowBe4 marks AIDA decade, names AI innovation VP", publisher: SecurityBrief UK, type: press, url: "https://securitybrief.co.uk/story/knowbe4-marks-aida-decade-names-ai-innovation-vp", date: 2026-01-30, access: full, locator: "Agent function list" }
+    - { ref: FBI-IC3PSA-2025, title: "Senior US Officials Impersonated in Malicious Messaging Campaign (Alert I-051525-PSA)", publisher: FBI Internet Crime Complaint Center, type: regulator, url: "https://www.ic3.gov/PSA/2025/PSA250515", date: 2025-05-15, access: full, locator: "Recommendations" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 07. NYDFS date comes from the URL (il20241016); the page text did not show it. IC3 report date: PDF creation date 2026-04-16 (the deep dive keyed it FBI-IC3-2026). Arup's figure (about USD 25 million) is the company-confirmed loss reported by CNN; HKD 200 million in 15 transfers per police via RTHK."
+  notes: "From deep-dive 07. NYDFS date confirmed on the page ('Date: October 16, 2024'), read via a text mirror because the site blocks scripted access. IC3 report date: PDF creation date 2026-04-16 (the deep dive keyed it FBI-IC3-2026). Arup's figure (about USD 25 million) is the company-confirmed loss reported by CNN; HKD 200 million in 15 transfers per police via RTHK."
 
 - id: security-human-risk-07
   title: "Automated triage of employee-reported suspicious emails"
@@ -241,13 +244,13 @@
   problem: "Once training works, employees report more suspicious emails. Avanade says its people 'began reporting far more threats', a volume that was hard to analyse manually, and Microsoft describes analysts facing a continuous stream of user-reported emails."
   solution: "Avanade used Hoxhunt's response platform to categorise and prioritise reported messages (legitimate email, spam, threats, incidents) automatically. Microsoft documents a Phishing Triage Agent in Defender that classifies user-reported phishing as real threat or false positive with a natural-language rationale and analyst feedback; the SOC-side agent is covered in security-operations-04."
   outcomes:
-    - { lever: capacity, description: "Monthly SOC analysis time saved by automated response handling", figure: "over 900 hours a month; described as up to 5 full-time analysts", measures: "SOC analyst hours of analysis saved per month, as stated on the Hoxhunt case page for Avanade; method of calculation described only as 'by one calculation'", provenance: vendor-published, source_ref: HOXHUNT-AVANADE-2026 }
+    - { lever: capacity, description: "Monthly SOC analysis time saved by automated response handling", figure: "over 900 hours a month; described as up to 5 full-time analysts", measures: "SOC analyst hours of analysis saved per month, as stated on the Hoxhunt case page for Avanade; the page says 'by one calculation' and elsewhere describes an analysis that assigned a time value to each report the platform handled, compared with an analyst; it gives 3-5 FTEs in one place and over 5 in another", provenance: vendor-published, source_ref: HOXHUNT-AVANADE-2026 }
     - { lever: quality, description: "Reduction in false positives and incident escalations due to the response platform", figure: "98%", measures: "stated on the case page as a reduction in false positives and incident escalations; baseline and period not stated", provenance: vendor-published, source_ref: HOXHUNT-AVANADE-2026 }
   prerequisites:
     - "A one-click report button integrated with the mail platform (Microsoft: 'Monitor reported messages in Outlook' must be enabled)"
     - "For Microsoft's agent: Defender for Office 365 Plan 2, Security Copilot capacity (SCUs), unified RBAC and the 'Email reported by user as malware or phish' alert policy; alerts resolved by tuning rules are not triaged (MSFT-PHISHTRIAGE-2026, prerequisites)"
   risks_and_guardrails:
-    - "Microsoft says the agent needs its own identity with least-privilege permissions and recommends a dedicated agent identity (MSFT-PHISHTRIAGE-2026, identity section)"
+    - "Microsoft recommends creating a dedicated agent identity with the minimum required permissions; an existing user account can be assigned instead (MSFT-PHISHTRIAGE-2026, agent identity section)"
     - "Verdicts are explained in natural language and analysts can give feedback, so wrong classifications can be corrected (MSFT-PHISHTRIAGE-2026, key capabilities)"
     - "No independent false-negative or override-rate data was found for either product"
   human_checkpoints:
@@ -258,7 +261,7 @@
     - { ref: HOXHUNT-AVANADE-2026, title: "How Avanade reduces human cyber risk and saves over 900 hours of SOC analysis per month", publisher: Hoxhunt, type: vendor, url: "https://hoxhunt.com/case-studies/avanade-reduced-cyber-risk-and-saved-5-soc-analyst-ftes-with-hoxhunt", date: 2026, access: full, locator: "Key takeaways; Overview" }
     - { ref: MSFT-PHISHTRIAGE-2026, title: "Microsoft Security Copilot Phishing Triage Agent in Microsoft Defender", publisher: Microsoft Learn, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/phishing-triage-agent", date: 2026-07-02, access: full, locator: "Overview; key capabilities; prerequisites; agent identity" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 02 (graded A there). Graded B under the 2026-10-17 rule: the 900-hour figure is 'by one calculation' and the 98% has no baseline, so both read as estimates on a vendor page; kept with that provenance. The Avanade cohort benchmark moved to security-human-risk-01. Overlaps security-operations-04, which holds the Microsoft agent from the SOC side; this entry keeps the reporter-loop view (report volume rises as training works). Avanade page is undated; no Microsoft customer figures were found."
+  notes: "From deep-dive 02 (graded A there). Graded B under the 2026-10-17 rule: the 900-hour figure is a modelled estimate (a time value per report, 'by one calculation') and the 98% has no baseline, so both read as estimates on a vendor page; kept with that provenance. The Avanade cohort benchmark moved to security-human-risk-01. Overlaps security-operations-04, which holds the Microsoft agent from the SOC side; this entry keeps the reporter-loop view (report volume rises as training works). Avanade page is undated; no Microsoft customer figures were found."
 
 - id: security-human-risk-08
   title: "Behavioural-AI email security that replaces the secure email gateway, re-checks delivered mail and answers employee reports"
@@ -305,7 +308,7 @@
   runtime_class: background-agent
   maturity: emerging
   problem: "LLM-written, personalised lures remove the language errors users were trained to spot."
-  solution: "idea (research): a study of 101 participants used language models to detect the intent of emails; Claude 3.5 Sonnet scored well above 90% with low false-positive rates and flagged some seemingly benign messages that passed human detection."
+  solution: "idea (research): a study whose phishing experiment involved 101 participants also tested language models on detecting the intent of emails; Claude 3.5 Sonnet scored well above 90% with low false-positive rates and flagged some seemingly benign messages that passed human detection."
   outcomes:
     - { lever: quality, description: "Intent-detection accuracy of an LLM on the study's emails", figure: "well above 90%, low false-positive rates", measures: "authors' statement for Claude 3.5 Sonnet on detecting email intent; test set and exact rates not captured from the abstract", provenance: independent, source_ref: ARXIV-2412.00586 }
   prerequisites:
@@ -319,7 +322,7 @@
   sources:
     - { ref: ARXIV-2412.00586, title: "Evaluating Large Language Models' Capability to Launch Fully Automated Spear Phishing Campaigns: Validated on Human Subjects", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2412.00586", date: 2024-11-30, access: full, locator: "Abstract" }
   last_reviewed: 2026-10-17
-  notes: "Idea, from deep-dive 19. Older than 18 months; included because the authors are cited by practitioners (also behind ScamBench). Click rates reported in the same study: control 12%, human experts 54%, fully AI 54%, AI with human in the loop 56%."
+  notes: "Idea, from deep-dive 19. Older than 18 months; included because the authors are cited by practitioners (the first author, Fred Heiding, presents ScamBench at BSides LV 2026). Click rates reported in the same study: control 12%, human experts 54%, fully AI 54%, AI with human in the loop 56%."
 
 - id: security-human-risk-10
   title: "AI-driven detection and automated takedown of brand and executive impersonation"
@@ -335,8 +338,8 @@
   problem: "ARK Invest had a high-profile social media presence and faced impersonation across LinkedIn, Instagram, WhatsApp and Telegram. Before the tool, its brand marketing manager says it took 'days to weeks' to identify and remove many scams, and the firm received hundreds of calls and emails each year from concerned people."
   solution: "ARK adopted Doppel's platform, which detects impersonation across domains, social media and the dark web, links signals into a threat graph and acts on takedowns rather than only flagging."
   outcomes:
-    - { lever: speed, description: "Median domain resolution time", figure: "5.5 hours", measures: "median time to resolve domain impersonation alerts for ARK, as stated on the case study", provenance: vendor-published, source_ref: DOPPEL-ARK-2026 }
-    - { lever: quality, description: "Takedown success rate", figure: "98%", measures: "stated on the case study as takedown success rate; denominator not stated", provenance: vendor-published, source_ref: DOPPEL-ARK-2026 }
+    - { lever: speed, description: "Median domain resolution time", figure: "5.5 hours", measures: "Doppel's own platform metric for ARK, stated in the story's narrative beside 'over 10,500 alerts to date'; not attributed to anyone at ARK, and 'resolution' and the period are not defined", provenance: vendor-published, source_ref: DOPPEL-ARK-2026 }
+    - { lever: quality, description: "Takedown success rate", figure: "98%", measures: "headline card and narrative on the vendor's story; denominator, period and definition of success not stated; not attributed to ARK", provenance: vendor-published, source_ref: DOPPEL-ARK-2026 }
     - { lever: risk, description: "Impersonations and scams reported directly to ARK", figure: "about 400 in 2024; roughly halved in 2025", measures: "reports the firm heard about directly, as recalled by its brand marketing manager in the vendor's story", provenance: self-reported, source_ref: DOPPEL-ARK-2026 }
   prerequisites:
     - "Defined brand and executive assets to protect; takedown authorisations and registrar/platform relationships"
@@ -345,11 +348,11 @@
   human_checkpoints:
     - "Not described beyond ARK choosing the partnership"
   role_evolution: "The case says the platform relieved the team of manual takedown work so it can focus on other work (DOPPEL-ARK-2026)."
-  evidence_grade: A
+  evidence_grade: B
   sources:
     - { ref: DOPPEL-ARK-2026, title: "From Weeks to Minutes: Why ARK Invest Chose Doppel to Automate Social Engineering Defense", publisher: Doppel, type: vendor, url: "https://www.doppel.com/customers/ark-invest", date: 2026-01-16, access: full, locator: "Sections 'Fighting Machine Speed with Machine Speed' and 'Quantifiable Risk Reduction'" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 10. Low-confidence A: it rests on tracked operating metrics for a named customer (a median resolution time and a success rate), not on a recollection, but they appear only in the vendor's story, with no period or denominator (provenance vendor-published). The before-and-after figures ('days to weeks'; about 400 reports, roughly halved) are the customer's recollections and on their own would be B. Sits between human-risk and fraud or brand protection. See security-threat-intelligence-18 for agents that package takedown evidence."
+  notes: "From deep-dive 10. Downgraded from a low-confidence A to B in verification (2026-10-17): the median resolution time and success rate are Doppel's own service metrics, written in the vendor's narrative and not reported by ARK, so they are not a figure the named organisation reports as measured. ARK's own figures ('days to weeks'; about 400 reports in 2024, roughly halved in 2025) are a manager's recollections, which the A rule grades B. All figures are kept with their provenance. Sits between human-risk and fraud or brand protection. See security-threat-intelligence-18 for agents that package takedown evidence."
 
 - id: security-human-risk-11
   title: "LLM scam-baiting honeypots to extract mule accounts and map scam workflows"
@@ -381,7 +384,7 @@
     - { ref: ARXIV-2509.08493, title: "Send to which account? Evaluation of an LLM-based Scambaiting System", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.08493", date: 2025-09-10, access: full, locator: "Abstract" }
     - { ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "'Victim as a Service: Engaging with Trust Based Scams using AI' (Ground Truth, Monday 11:00)" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 11. Graded B, not A: outcomes are measured but the deploying organisation was not captured from the sources read (affiliations not retrieved). Mostly consumer-scam context; relevant to organisations as banks, telcos and platforms. Possibly better placed with fraud or threat intelligence."
+  notes: "From deep-dive 11. Graded B, not A: outcomes are measured on a real five-month deployment, but the paper does not name the operating organisation; the first author lists Cybera Global Inc. and UNC Wilmington as affiliations (arXiv HTML version). Mostly consumer-scam context; relevant to organisations as banks, telcos and platforms. Possibly better placed with fraud or threat intelligence."
 
 - id: security-human-risk-12
   title: "Identity and liveness verification of remote candidates, new hires and contractors (fake IT worker defence)"
@@ -404,11 +407,11 @@
   risks_and_guardrails:
     - "Laptop-farm schemes route the work through US-based facilitators; GTIG also reports IT workers targeting bring-your-own-device setups from January 2025 (GTIG-DPRKIT-2025)"
     - "The US indictment describes a roughly six-year operation affecting more than 70 US companies (CSD-DPRK-2026)"
-    - "ENISA's 2026 landscape reports a higher insider share linked to the same actor, Famous Chollima (ENISA-ETL-2026, Section 1)"
+    - "ENISA's 2026 landscape says insider threats contributed a higher share of unauthorised access than in its previous report, likely due to Famous Chollima, the DPRK-linked actor (ENISA-ETL-2026, Section 1)"
     - "A vendor report discusses the limits of video verification against impersonation (NAMETAG-IMPERSONATION-2026, p. 13)"
   human_checkpoints:
     - "HR interview and onboarding steps with identity checks; SOC call to the new hire on anomalous activity (KNOWBE4-NKHIRE-2024)"
-  role_evolution: "HR staff and hiring managers become part of the security perimeter and need training on the threat (FBI-DPRK-2025)."
+  role_evolution: "The FBI recommends educating HR staff, hiring managers and development teams about the threat (FBI-DPRK-2025); KnowBe4 calls for better coordination between HR, IT and security teams (KNOWBE4-NKHIRE-2024)."
   evidence_grade: B
   sources:
     - { ref: KNOWBE4-NKHIRE-2024, title: "How a North Korean Fake IT Worker Tried to Infiltrate Us", publisher: KnowBe4, type: vendor, url: "https://blog.knowbe4.com/how-a-north-korean-fake-it-worker-tried-to-infiltrate-us", date: 2024-07-23, access: full, locator: "TLDR; summary; 'Story updated 10/19/2024'" }
@@ -417,7 +420,7 @@
     - { ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: 2026-06, access: full, locator: "'DPRK Fake Applicants in Your Recruitment Funnel? How to Catch Them All' abstract, 17 June 2026" }
     - { ref: GTIG-DPRKIT-2025, title: "DPRK IT Workers Expanding in Scope and Scale", publisher: Google Threat Intelligence Group, type: firm, url: "https://cloud.google.com/blog/topics/threat-intelligence/dprk-it-workers-expanding-scope-scale", date: 2025-04-01, access: full, locator: "Europe expansion; facilitators; BYOD sections" }
     - { ref: CSD-DPRK-2026, title: "Feds crack down on North Korean IT-worker schemes with new raids, charges and arrests", publisher: Cybersecurity Dive, type: press, url: "https://www.cybersecuritydive.com/news/north-korea-it-worker-raids-arrests-charges/832968/", date: 2026-10-14, access: full, locator: "Paragraphs 1-6" }
-    - { ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026", date: 2026-09-22, access: full, locator: "Section 1, Overview & Trends" }
+    - { ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026", date: 2026-09-22, access: full, locator: "Report PDF, Section 1, Overview & Trends" }
     - { ref: NAMETAG-IMPERSONATION-2026, title: "Rebuilding Trust in the Age of AI: The 2026 Workforce Impersonation Report", publisher: Nametag, type: vendor, url: "https://www.go.nametag.co/hubfs/The%202026%20Workforce%20Impersonation%20Report.pdf", date: 2026, access: full, locator: "p. 9 and p. 13 'The Limits of Video Verification'" }
   last_reviewed: 2026-10-17
   notes: "From deep-dive 15, plus routed items: Datadog's FIRST session (held in full as security-threat-intelligence-21), Nametag's report and the IC3 interview voice-spoofing point (both routed from identity-access). Graded B: KnowBe4 is a named real case with process changes but no measured defender outcome. The AI role in Datadog's stack is a single phrase ('AI-driven risk assessment'); the session is TLP:AMBER and only the abstract is public. ML identity proofing with liveness and deepfake detection is security-identity-access-19. Vendor claims on candidate-fraud detection were seen only in search results and are not used."
@@ -441,7 +444,7 @@
     - "Named verification channels and contact data held independently of the request"
   risks_and_guardrails:
     - "NYDFS: not all authentication factors resist AI-manipulated deepfakes; consider factors that withstand them (NYDFS-AIGUIDE-2024, access controls section)"
-    - "The FBI recommends verifying contacts independently through a known channel and not relying on spotting AI voices by ear (FBI-IC3PSA-2025, Recommendations)"
+    - "The FBI recommends independently finding the person's number and calling to verify, and warns that AI-generated voices can sound nearly identical to a known contact (FBI-IC3PSA-2025, Recommendations)"
   human_checkpoints:
     - "Human review and oversight inside verification procedures (NYDFS-AIGUIDE-2024)"
   role_evolution: "Not described."
@@ -463,29 +466,29 @@
   ladder: augment
   change_scope: process
   runtime_class: background-agent
-  maturity: piloting
+  maturity: in-production
   problem: "Dedicated staff cannot manually examine the volume of logs needed to catch insider threats."
   solution: "RedChronos (authors' system) analyses logs with an LLM using weighted voting and a genetic algorithm with LLM mutations. A separate 2026 framework generates structured risk indicators from per-user timelines with retrieval of the user's history and classifies them zero-shot (without task-specific training examples)."
   outcomes:
-    - { lever: capacity, description: "Reduction in the need for manual intervention in log review at Xiaohongshu's SOC", figure: "approximately 90%", measures: "authors' statement of reduced manual intervention in security log reviews at the Xiaohongshu Security Operation Center; baseline and period not given in the abstract", provenance: self-reported, source_ref: ARXIV-2503.02702 }
+    - { lever: capacity, description: "Reduction in log samples that security engineers must analyse at Xiaohongshu's SOC", figure: "approximately 90%", measures: "authors' estimate based on historical SOC log data after deploying RedChronos in Xiaohongshu's SOC (Section 5.3); the introduction says 'over 90%'; no baseline volume, period or missed-threat rate is given; several co-authors work at Xiaohongshu", provenance: self-reported, source_ref: ARXIV-2503.02702 }
     - { lever: quality, description: "Benchmark F1 gain over the previous best LLM framework on a public insider-threat dataset", figure: "+11.40 percentage points on CERT r5.2", measures: "F1-score of the best configuration versus GABM on the CERT r5.2 benchmark dataset (a public benchmark, not production data)", provenance: independent, source_ref: ARXIV-2608.16508 }
   prerequisites:
     - "Centralised user-activity logs (endpoint, email, file, logon)"
     - "A legal basis and governance for monitoring staff"
   risks_and_guardrails:
-    - "Benchmark datasets are not production data; no false-positive or override rates at the production site were published in the abstract (ARXIV-2503.02702; ARXIV-2608.16508)"
+    - "Benchmark datasets are not production data; neither paper publishes false-positive, missed-threat or override rates from a production site (ARXIV-2503.02702; ARXIV-2608.16508)"
     - "Workplace monitoring is regulated: ICO guidance on monitoring workers (ICO-MONITORING-2023); EU AI Act high-risk rules for employment-related use cases apply from 2027-12-02 (EC-AIACT-2026); whether a given insider-risk tool falls inside them is not addressed in the sources read"
   human_checkpoints:
-    - "Not described in the abstracts"
-  role_evolution: "Not described."
+    - "Security engineers and experts still analyse the log samples RedChronos flags; it assists rather than replaces them (ARXIV-2503.02702, Section 5.3)"
+  role_evolution: "The authors expect engineers to focus on investigating the log samples most likely to be threats (ARXIV-2503.02702, Conclusion)."
   evidence_grade: B
   sources:
-    - { ref: ARXIV-2503.02702, title: "RedChronos: A Large Language Model-Based Log Analysis System for Insider Threat Detection in Enterprises", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.02702", date: 2025-03-04, access: full, locator: "Abstract" }
+    - { ref: ARXIV-2503.02702, title: "RedChronos: A Large Language Model-Based Log Analysis System for Insider Threat Detection in Enterprises", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.02702", date: 2025-03-04, access: full, locator: "Abstract; Section 5.3; Conclusion (arXiv HTML version)" }
     - { ref: ARXIV-2608.16508, title: "LLMs for Zero-Shot Threat Detection via Structured Risk Indicators", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.16508", date: 2026-08-17, access: full, locator: "Abstract" }
     - { ref: ICO-MONITORING-2023, title: "Employment practices and data protection: monitoring workers", publisher: UK Information Commissioner's Office, type: regulator, url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/", date: 2023-10, access: full, locator: "Page banner and contents" }
     - { ref: EC-AIACT-2026, title: "AI Act (regulatory framework for AI)", publisher: European Commission, type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: 2026-10-17, access: full, locator: "Application timeline" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 12 (graded a low-confidence A there). Graded B under the 2026-10-17 rule: only the abstract was read, the figure is 'approximately 90%' with no baseline, period or method, and the abstract does not say whether RedChronos runs in production or in a trial at Xiaohongshu, so it cannot be confirmed as a tracked metric. Maturity set conservatively to piloting."
+  notes: "From deep-dive 12 (graded a low-confidence A there). Graded B under the 2026-10-17 rule. Verification read the full paper: it says RedChronos is deployed in Xiaohongshu's SOC (so maturity is in-production), but the 90% is an estimate computed on historical log data ('can reduce'), not a tracked operating metric, and the paper is a preprint written partly by Xiaohongshu staff."
 
 - id: security-human-risk-15
   title: "Insider-risk programmes with AI-assisted detection, risk scoring and investigation"
@@ -533,8 +536,8 @@
   change_scope: step
   runtime_class: background-agent
   maturity: announced
-  problem: "Employees put internal documents, source code and meeting content into public AI tools and AI meeting assistants; AI browsers and agents can bypass traditional logging. Proofpoint's 2026 CISO survey reports misuse or misconfiguration of AI tools as the cause of 37% of material data loss cases."
-  solution: "DTEX's CTO describes shifting from a block-first approach to an audit and educate approach with prompt inspection and real-time nudges. Adaptive lists an 'AI Governance' product (live feed of risky prompts across AI tools, with policy enforcement and coaching). KnowBe4 lists an Agent Risk Manager browser extension that discovers new and unknown domains and lets admins block, warn or allow them."
+  problem: "Employees put internal documents, source code and meeting content into public AI tools and AI meeting assistants; AI browsers and agents can bypass traditional logging. In Proofpoint's 2026 survey of 1,600 CISOs, 37% cite misuse or misconfiguration of AI tools as a cause of material data loss (respondents could cite several causes)."
+  solution: "DTEX's CTO describes shifting from a block-first approach to an audit and educate approach with prompt inspection and real-time nudges. Adaptive lists an 'AI Governance' product (live feed of risky prompts across AI tools, with policy enforcement and coaching). KnowBe4 announced on 2026-09-23 an Agent Risk Manager browser extension for Chrome and Edge that discovers new and unknown AI sites and lets security teams block, warn or allow them; it was in early access for some US customers."
   outcomes:
     - { lever: speed, description: "Claimed effect of audit-and-educate on containment time", figure: "17% reduction, from 81 to 67 days (CTO statement)", measures: "average days to contain an insider incident, as claimed by DTEX's CTO; the same article gives 86 days for 2023", provenance: vendor-published, source_ref: HELPNET-PONEMON-2026 }
   prerequisites:
@@ -549,10 +552,11 @@
   sources:
     - { ref: HELPNET-PONEMON-2026, title: "The USD 19.5 million insider risk problem", publisher: Help Net Security, type: survey, url: "https://www.helpnetsecurity.com/2026/02/26/insider-risk-costs-2026/", date: 2026-02-26, access: full, locator: "Paragraphs on shadow AI and CTO quotes" }
     - { ref: ADAPTIVE-HOME-2026, title: "Adaptive Security homepage", publisher: Adaptive Security, type: vendor, url: "https://www.adaptivesecurity.com/", date: 2026-10-15, access: full, locator: "AI Governance section" }
-    - { ref: PROOFPOINT-VOC-2026, title: "The risk has moved: what Proofpoint's 2026 Voice of the CISO reveals", publisher: Proofpoint, type: survey, url: "https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals", date: 2026-09-09, access: full, locator: "Paragraphs on GenAI risk (as routed from the governance-risk practice file)" }
+    - { ref: PROOFPOINT-VOC-2026, title: "The risk has moved: what Proofpoint's 2026 Voice of the CISO reveals", publisher: Proofpoint, type: survey, url: "https://www.proofpoint.com/au/blog/corporate-news/risk-has-moved-what-proofpoints-2026-voice-ciso-reveals", date: 2026-09-09, access: full, locator: "'Human risk is now a core data security challenge' paragraphs" }
+    - { ref: KNOWBE4-ARM-2026, title: "KnowBe4 Shuts Down Shadow AI with Agent Security Innovation", publisher: KnowBe4, type: vendor, url: "https://www.knowbe4.com/press/knowbe4-shuts-down-shadow-ai-with-agent-security-innovation", date: 2026-09-23, access: full, locator: "Subtitle; paragraphs 1 and 4-5 (read via a text mirror)" }
     - { ref: ICO-MONITORING-2023, title: "Employment practices and data protection: monitoring workers", publisher: UK Information Commissioner's Office, type: regulator, url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/", date: 2023-10, access: full, locator: "Page banner and contents" }
   last_reviewed: 2026-10-17
-  notes: "From deep-dive 14, plus the Proofpoint figure routed from governance-risk. Partly belongs to the data-security-privacy module. The KnowBe4 Agent Risk Manager is from the KnowBe4 press listing (not opened beyond its listing line). Proofpoint's survey is vendor-run."
+  notes: "From deep-dive 14, plus the Proofpoint figure routed from governance-risk. Partly belongs to the data-security-privacy module. The KnowBe4 Agent Risk Manager claim is now sourced to the press release itself (opened in verification). Proofpoint's survey is vendor-run."
 
 - id: security-human-risk-17
   title: "AI voice agents in authorised vishing red-team tests of help desks and staff (idea)"
@@ -578,11 +582,11 @@
   role_evolution: "Not described."
   evidence_grade: D
   sources:
-    - { ref: DEFCON-34-CONTESTS-2026, title: "DEF CON 34 contest results index", publisher: DEF CON, type: conference, url: "https://defcon.org/html/defcon-34/dc-34-contest-results.html", date: 2026-08, access: full, locator: "Contest list: 'Battle of the Bots: Vishing Edition'; 'Social Engineering Community Vishing Competition (SECVC)'" }
+    - { ref: DEFCON-34-CONTESTS-2026, title: "DEF CON 34 contests", publisher: DEF CON, type: conference, url: "https://defcon.org/html/defcon-34/dc-34-contests.html", date: 2026-08, access: full, locator: "Contest list and descriptions: 'Battle of the Bots: Vishing Edition'; 'Social Engineering Community Vishing Competition (SECVC)'" }
     - { ref: IBM-JOHNHENRY-2026, title: "John Henry vs. the chatbot: Can humans outsmart AI scam artists?", publisher: IBM Think (Security Intelligence podcast), type: podcast, url: "https://www.ibm.com/think/podcasts/security-intelligence/john-henry-vs-chatbot-can-humans-outsmart-ai-scam-artists", date: 2026-01-30, access: full, locator: "Episode description" }
     - { ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talk list", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "'ScamBench: Measuring Real-World Risk of AI-Generated Social Engineering' (Ground Truth, Tuesday 18:00)" }
   last_reviewed: 2026-10-17
-  notes: "Idea, from deep-dive 21: titles and abstracts only. DEF CON ran 6-9 Aug 2026 per a search result. No ScamBench scores were found."
+  notes: "Idea, from deep-dive 21: titles and abstracts only. DEF CON 34 ran 6-9 Aug 2026 (shown on the contest results page, which lists no result for the bot contest). The source URL was corrected from the results index, which does not list either vishing contest, to the contests page, which describes both. No ScamBench scores were found."
 
 - id: security-human-risk-18
   title: "Sequence analysis of real social-engineering call transcripts to design detection and training (idea)"

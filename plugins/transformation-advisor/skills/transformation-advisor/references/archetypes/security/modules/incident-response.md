@@ -3,8 +3,9 @@
 Last reviewed 2026-10-17. Use cases live in `../use-cases/incident-response.yaml` (22 entries). Ids are shortened
 here: `#05` means `security-incident-response-05`; other modules' ids are in full and not repeated here. Source keys in brackets, such as [GOOGLE-IRGENAI-2024], are in
 the YAML or in §10. Almost every outcome figure is self-reported by the deploying organisation, published by a vendor,
-or a lab benchmark. No independent production measure of AI in incident response exists yet: no override rates, no
-parallel runs, no inspection findings. Say so when you quote a figure.
+or a lab benchmark. No independent production measure of AI in incident response was found: no override rates, no
+parallel runs, no inspection findings. Say so when you quote a figure. Verified against sources 2026-10-17
+(`research/runs/wave4/incident-response-verification-report.md`).
 
 ## Contents
 
@@ -40,7 +41,7 @@ declared sits in security-operations; agent containment controls sit in ai-secur
 | Recover | Decide what is clean, restore in order, validate | coordination-scheduling, expert-judgment | Attackers target backups, identity and hypervisors ("recovery denial") [MANDIANT-MTRENDS-2026] |
 | Notify and report | Regulator, customer and public notices on statutory clocks | document-production, review-assurance | Clocks of 4, 6, 24 and 72 hours start before forensics ends; "major", "significant", "material" are legal calls |
 | Communicate | Executive and stakeholder updates during the incident | document-production | Close to an hour per summary [GOOGLE-IRGENAI-2024] |
-| Learn | Post-incident review, close findings, update policy | review-assurance | Few AI cases; Cloudflare's reviewer blocks closure of high-severity incidents until findings are addressed (`#16`) |
+| Learn | Post-incident review, close findings, update policy | review-assurance | Few AI cases; Cloudflare's AI reviewer is mandatory for high-severity incident reports, which are not complete until its findings are addressed (`#16`) |
 | AI-agent incidents (new) | Detect, halt, investigate and report incidents where an agent is the actor | expert-judgment, coordination-scheduling | Affected organisations in CERT-In's cases did not detect agent access [CERTIN-CIAD0049-2026]; 56% don't know how fast they could halt an AI system [ISACA-AIPULSE-2026] |
 
 ## 3. Where AI is changing the work
@@ -54,7 +55,7 @@ in investigation and in the new AI-agent incident work; recovery and exercises a
   `#02` AI builds tabletop scenarios from your own playbooks (Immersive release, 2026-10-01; CIS guidance).
   `#03` keep a vetted self-hosted model ready, so forensic AI is not blocked by provider guardrails (Hugging Face).
 - Before trusting an investigation agent, benchmark it on ground-truth scenarios (`security-operations-22`); 5 of 7
-  frontier models hard-failed one published scenario (vendor test) [COTOOL-AGENTICSOC-2026].
+  frontier models hard-failed one published scenario (unsecure.sh blog test, best of two runs) [UNSECURE-EVAL-2026].
 
 **Investigate and scope**
 - Improve: `#04` LLM agents rebuild timelines from logs and artifacts, validated before export (Hugging Face "hours
@@ -77,13 +78,14 @@ in investigation and in the new AI-agent incident work; recovery and exercises a
 
 **Communicate, report and learn**
 - Improve: `#14` draft incident summaries and executive updates (Google: 51% less time per summary, 300 summaries;
-  the module's only measured A outside AI-agent work). `#15` draft regulator notifications inside parallel clocks
-  (vendor-only evidence). `#16` AI reviews post-incident reports against standards before closure (Cloudflare).
+  the module's only grade A). `#15` draft regulator notifications inside parallel clocks
+  (vendor-only evidence). `#16` AI reviews post-incident reports against a written standard; mandatory for high-severity reports (Cloudflare,
+  engineering incidents generally).
   SOC investigation reports drafted for sign-off: `security-operations-14`.
 
 **Incidents caused by AI agents (new scope)**
 - Improve: `#17` treat agent control incidents as a new class: scoped identities, stop rules, drills, halt authority
-  (NIST/NSA/CISA practices, CERT-In). `#20` staged AI review of about 50 PB of agent records found outside
+  (NIST/NSA/CISA practices, CERT-In). `#20` staged AI review of about 50 PB of agent records (ongoing) finds outside
   organisations to notify; a person confirms every case (OpenAI, over 100 notified).
 - Automate: `#18` reconstruct agent actions from tamper-resistant logs (Uber ADR, 200,000+ sessions a day, as
   reported). `#19` monitors page responders; severe alerts pause unless cleared in 30 minutes (OpenAI, Anthropic).
@@ -124,7 +126,7 @@ was found.
 ## 5. Metrics and benchmarks
 
 **Baselines to ask for first**
-- Time per incident summary and executive update (Google: close to an hour) [GOOGLE-IRGENAI-2024].
+- Time per incident summary and executive update (Google estimates nearly an hour) [GOOGLE-IRGENAI-2024].
 - Hours from awareness to classification, and from classification to each filing (`#15`).
 - Time to triage a host or high-severity alert (analyst day per host [SANS-FINDEVIL-2026]; 10-20 minutes per alert
   in a 10-person user study [ARXIV-2607.09176]).
@@ -135,7 +137,8 @@ was found.
 **Named outcomes (self-reported; mostly effort, not accuracy)**
 - Google: 51% less time per summary (300 summaries); LLM summaries rated 10% higher in a 50-vs-50 blind test; 53% less
   time on executive updates (2024) `#14`.
-- OpenAI: about 50 PB reviewed, over 100 organisations notified, about 7,000 GPUs, 45 minutes to days per human case `#20`.
+- OpenAI: about 50 PB under review, over 100 organisations notified, about 7,000 GPUs, 45 minutes to days per human case;
+  scale and effort counts, not a measured effect of the AI stages `#20`.
 - SherAgent (unnamed SOC, preprint): above 96% verified success on 980 sampled cases vs 64.7% audited legacy; under
   USD 0.10 and 4 minutes per investigation `#07`.
 - Meta: 42% root-cause accuracy in backtesting (reliability incidents) `#08`. Grafana: 3.5x faster on one incident.
@@ -149,7 +152,7 @@ Rubrik AI "trusted by one-third" of customers `#13`; Magnet: 68% of 350+ DFIR pr
 - SIABench: best of 11 LLMs fully solved 8 of 25 incident-analysis scenarios; 33.33% on hard memory forensics [ARXIV-2603.06422].
 - ALERT-BENCH: every agent approach missed at least 40.4% of attack alerts; a challenge-step design missed 3.1% [ARXIV-2610.10608].
 - Log prompt injection: up to 88.2% attack success; layered defences cut it 90.4%, leaving 8.4% [USENIX-LOGINJECT-2026].
-- Cotool scenario: 5 of 7 frontier models hard-failed; best 29% of weighted score (vendor) [COTOOL-AGENTICSOC-2026].
+- unsecure.sh scenario: 5 of 7 frontier models hard-failed; best 29% of weighted score (one scenario, recall-only scorecard) [UNSECURE-EVAL-2026].
 
 **Adoption and readiness surveys**
 - SANS 2026: 79% of SOCs use AI or ML tools, 36% in a defined workflow; 70% still cite incident count as the top
@@ -169,13 +172,14 @@ halt time for AI systems in drills; restore-point accuracy in recovery tests.
 
 **Reporting clocks (the rules govern timing, not tools; none of the texts read mentions AI as a responder tool)**
 - **DORA** (EU finance): initial report within four hours of classifying an incident as major and no later than 24
-  hours from awareness; intermediate within 72 hours; final within one month [EUR-LEX-DORA301-2025].
+  hours from awareness (or four hours from a later classification); intermediate within 72 hours of the initial
+  notification; final within one month of the intermediate report [EUR-LEX-DORA301-2025].
 - **NIS2**: early warning 24 hours, notification 72 hours, final report one month [EUR-LEX-NIS2-2022].
 - **Cyber Resilience Act**: manufacturers' 24-hour and 72-hour reports apply from 2026-09-11 [EUR-LEX-CRA-2024].
 - **EU AI Act Art. 73**: providers of high-risk AI report serious incidents, outer limit 15 days; Annex III
   obligations moved to 2027-12-02 [FLI-AIACT73-2024; EC-AIACT-2026].
 - **US**: SEC Form 8-K Item 1.05 four business days after a materiality determination, under a rescission push with no
-  final action found [SEC-CYBER-2023; SIFMA-SEC-2026]; CIRCIA not yet in force [FR-CIRCIA-2026]. **India**: CERT-In 6
+  final action found [SEC-CYBER-2023; SIFMA-SEC-2026]; CIRCIA not yet in force (no final rule in the Federal Register through 2026-10-17) [FR-CIRCIA-2026]. **India**: CERT-In 6
   hours [CERTIN-BLUEPRINT-2026]. **UK**: a bill would add 24 and 72-hour reporting [GOVUK-CSRB-2025].
 
 **Standards and guidance**
@@ -218,10 +222,11 @@ restarting a halted agent; signing anything that may go to court.
 - **2026-01-16 / 03-09** SANS launches Protocol SIFT, an AI layer over forensic tools [ROBLEE-SUBSTACK-2026; SANS-PROTOCOLSIFT-2026].
 - **2026-05-14** NIST workshop on AI incident management [NIST-AIINCIDENTWS-2026].
 - **2026-06** FIRST: DFIR tools add LLM features and are attacked through artifacts; Centene's AI timelines [FIRST-CON-2026].
-- **2026-07-07** EU Action Plan: an ENISA/JRC testing platform for AI in cybersecurity, including incident response [EC-ACTIONPLAN-2026].
+- **2026-07-07** EU Action Plan on Cybersecurity and AI: an ENISA blueprint for secure access to advanced AI for cybersecurity and a
+  secure testing platform for critical-sector organisations [EC-ACTIONPLAN-2026].
 - **2026-07-16 to 09-30** Hugging Face discloses an agent-driven intrusion and AI-assisted forensics; OpenAI overhauls its IR
   and notifies 100+ organisations [HF-DISCLOSURE-2026; OPENAI-HFROAD-2026; OPENAI-HFREVIEW-2026].
-- **2026-08-04/05** SAFE draft for sharing agent incidents and near-misses [SILICONANGLE-SAFE-2026].
+- **2026-08-04/05** SAFE draft for sharing agent incidents and near-misses [SILICONANGLE-SAFE-2026; OSAA-SAFERFC-2026].
 - **2026-09-15** Rubrik exposes recovery data to customers' agents through MCP (private preview) [RUBRIK-MCP-2026].
 - **2026-10-01** AI crisis-simulation builder released [IMMERSIVE-AIBUILDER-2026]. Risky Business reports OpenAI found dozens
   of examples of agents acting in undesirable ways [RISKYBIZ-2026].
@@ -239,14 +244,15 @@ restarting a halted agent; signing anything that may go to court.
 - **"The AI can be manipulated by the attacker's own data."** True: up to 88.2% attack success in a lab, 8.4% residual
   with layered defences. Treat inputs as hostile and keep a human on conclusions (`#09`).
 - **"Hosted models refuse our work."** It happened to Hugging Face. Pre-approve a self-hosted or trusted-access model (`#03`).
-- **"Agentic is hype."** Partly: Cotool says the label covers different systems, some fully deterministic
-  [COTOOL-AGENTICSOC-2026]; Splunk's RSAC SOC authors said theirs was not fully agentic [SPLUNK-RSACSOC-2026]. Ask
+- **"Agentic is hype."** Partly: an unsecure.sh post says the label covers different systems, some fully deterministic
+  [UNSECURE-EVAL-2026]; Splunk's RSAC SOC authors said theirs was not fully agentic [SPLUNK-RSACSOC-2026]. Ask
   what the system does, and test on scenarios (`security-operations-22`).
 - **"The savings figures are vendor numbers."** Mostly true. The best measured case is Google's 2024 summary study (`#14`).
 - **"We built our own and it didn't last."** Common: 46% of self-built tools failed or were replaced in a sponsored
   survey [HELPNET-GARTNER-2026]. Budget for upkeep (`#22`).
 - **"The Hugging Face case is an AI scare story."** One blog calls it a classic isolation failure [UPHACK-HF-2026], and
-  a podcast host asked whether firms use such incidents to sell products [REGISTER-BHDC-2026]. Either way, the response
+  a Register podcast reported vendors privately calling OpenAI's account partly marketing, while the FBI and Chris Inglis
+  called the threat real [REGISTER-BHDC-2026]. Either way, the response
   lessons (logs, halt authority, notification) hold (`#17`-`#19`).
 - **"Regulators will object to AI-drafted notices."** No regulator statement on AI-drafted notices was found. Even the
   vendor says classification needs human review before filing; keep classification and sign-off human (`#15`).
@@ -268,16 +274,18 @@ Full details (title, publisher, type, URL, date, access) are in the YAML for eve
 - **Academic:** ARXIV-2603.06422, ARXIV-2607.09176, ARXIV-2610.10608, ARXIV-2605.24421, USENIX-LOGINJECT-2026,
   ARXIV-2608.15016, NDSS-HAMMAR-2026, ARXIV-2610.09906, ARXIV-2507.14201, ARXIV-2601.03287.
 - **Conferences, press, community, jobs:** FIRST-CON-2026, SANS-DFIRSUMMIT-2026, BSIDESLV-2026, GOOGLE-TIMESKETCH-2025,
-  WIRED-OPENAI-2026, THN-CERTIN-2026, SILICONANGLE-SAFE-2026, AXIOS-SAFE-2026, HELPNET-GARTNER-2026, UPHACK-HF-2026,
+  WIRED-OPENAI-2026, THN-CERTIN-2026, SILICONANGLE-SAFE-2026, AXIOS-SAFE-2026, SECURITYWEEK-SAFE-2026, OSAA-SAFERFC-2026,
+  HELPNET-GARTNER-2026, UPHACK-HF-2026,
   DATABRICKS-JOB-2026, GITLAB-JOB-2026, TWILIO-JOB-2026, CLOUDFLARE-JOB-2026, BLOCK-JOB-2026.
-- **Not in the YAML (opened by the research angles):** COTOOL-AGENTICSOC-2026 (Cotool, *A scenario to evaluate your
-  Agentic SOC*, 2026-08-27, https://unsecure.sh/blog/agentic-soc-scenario/; vendor test);
+- **Not in the YAML (opened by the research angles; reopened by the verifier 2026-10-17):** UNSECURE-EVAL-2026 (unsecure.sh, John Ao and
+  Michel San, *A scenario to evaluate your Agentic SOC*, 2026-08-27, https://unsecure.sh/blog/agentic-soc-scenario/; same key as
+  `security-operations-22`; the page does not name Cotool, so the earlier 'Cotool' attribution was dropped);
   ISACA-AIPULSE-EU-2026 (ISACA, *A Third of European Organisations
   Don't Know if They've Been Hit by an AI-Powered Cyberattack*, 2026-06-17,
   https://www.isaca.org/about-us/newsroom/press-releases/2026/a-third-of-european-organisations-dont-know-if-they-have-been-hit-by-an-ai-powered-cyberattack);
   NIST-AIINCIDENTWS-2026 (NIST, *Workshop on AI Incident Management*, 2026-05-14,
   https://www.nist.gov/news-events/events/2026/05/nist-workshop-ai-incident-management);
-  EC-ACTIONPLAN-2026 (European Commission, *EU Action Plan on Cybersecurity and AI*, 2026-07-07,
+  EC-ACTIONPLAN-2026 (European Commission, *EU Action Plan on Cybersecurity and Artificial Intelligence*, 2026-07-07,
   https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence);
   CISCO-SPLUNK-CONF26-2026 (Cisco, *Tracking the Triage Agent in the Agentic SOC at Splunk .conf26*, 2026-10-08,
   https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/);
