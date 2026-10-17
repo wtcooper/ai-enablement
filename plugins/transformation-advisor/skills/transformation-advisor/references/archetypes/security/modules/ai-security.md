@@ -168,7 +168,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 ## 6. Guardrails
 
 - **Standards (voluntary):** OWASP Top 10 for LLM Applications 2026 and for Agentic Applications, Agent Control Standard
-  [OWASP-LLM-2026; OWASP-AGENTIC-2025; OWASP-ACS-2026]; MITRE ATLAS; [MITRE-ATLAS]; NIST AI 100-2, COSAiS overlays, preliminary Cyber AI
+  [OWASP-LLM-2026; OWASP-AGENTIC-2025; OWASP-ACS-2026]; MITRE ATLAS [MITRE-ATLAS]; NIST AI 100-2, COSAiS overlays, preliminary Cyber AI
   Profile, AI RMF (under revision) [NIST-AI1002-2025; NIST-COSAIS-2026; NIST-IR8596-2025; NIST-AIRMF]; CISA/ACSC
   agentic guidance, which advises using agentic AI only for low-risk, non-sensitive tasks and never granting broad access [CISA-AGENTIC-2026]; NIST,
   NSA and CISA ten incident practices for training and evaluation [NISTCISA-IRKEY-2026]; MCP authorisation (optional;
