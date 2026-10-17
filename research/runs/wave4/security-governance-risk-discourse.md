@@ -65,9 +65,9 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     sysadmin work, with tools learnable in months (GRCENGINEER-086-2026).
   evidence_grade: C
   sources:
-    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough", publisher: BleepingComputer (byline Maril Vernon, GRC Engineering Evangelist, Anecdotes), type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: 2026-06-26, access: full, locator: "Sections 'What Agentic Actually Means Here', 'Three Things That Actually Change', 'What It Looks Like to Build One'" }
-    - { ref: VENABLES-CRE-2026, title: "Control Reliability Engineering (CRE): Applying SRE Principles to Cybersecurity Controls", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/control-reliability-engineering-cre-applying-sre-principles-to-cybersecurity-controls", date: 2026-07-25, access: full, locator: "'The 10 Essential Elements' (Continuous Control Monitoring; Synthetic Event Injection)" }
-    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: 2026-10-15, access: full, locator: "Opening and 'What the work actually looks like' table" }
+    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough", publisher: "BleepingComputer (byline Maril Vernon, GRC Engineering Evangelist, Anecdotes)", type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: 2026-06-26, access: full, locator: "Sections 'What Agentic Actually Means Here', 'Three Things That Actually Change', 'What It Looks Like to Build One'" }
+    - { ref: VENABLES-CRE-2026, title: "Control Reliability Engineering (CRE): Applying SRE Principles to Cybersecurity Controls", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/control-reliability-engineering-cre-applying-sre-principles-to-cybersecurity-controls", date: 2026-07-25, access: full, locator: "'The 10 Essential Elements' (Continuous Control Monitoring; Synthetic Event Injection)" }
+    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: 2026-10-15, access: full, locator: "Opening and 'What the work actually looks like' table" }
   last_reviewed: 2026-10-17
   notes: >
     The BleepingComputer piece is vendor-authored (Anecdotes) and describes Anecdotes Agent Studio as in early access. Control reliability engineering
@@ -117,8 +117,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     GRC team becomes a verifier of its platform and auditor (IANS-DELVE-2026).
   evidence_grade: C
   sources:
-    - { ref: IANS-DELVE-2026, title: "Delve Allegations Expose Weak Points in Modern Compliance", publisher: IANS Research, type: firm, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: 2026-03-24, access: full, locator: "Key Points; Big Picture; 'IANS Faculty Recommendations'" }
-    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough", publisher: BleepingComputer (byline Anecdotes employee), type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: 2026-06-26, access: full, locator: "'Trust becomes the bottleneck'" }
+    - { ref: IANS-DELVE-2026, title: "Delve Allegations Expose Weak Points in Modern Compliance", publisher: "IANS Research", type: firm, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/03/30/delve-allegations-expose-weak-points-in-modern-compliance", date: 2026-03-24, access: full, locator: "Key Points; Big Picture; 'IANS Faculty Recommendations'" }
+    - { ref: BLEEPING-ANECDOTES-2026, title: "Your First GRC Agent: A Red Teamer's Walkthrough", publisher: "BleepingComputer (byline Anecdotes employee)", type: press, url: "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/", date: 2026-06-26, access: full, locator: "'Trust becomes the bottleneck'" }
   last_reviewed: 2026-10-17
   notes: >
     Everything about Delve is an allegation reported by IANS; Delve denies it, saying it does not issue compliance reports and that auditors are responsible
@@ -170,7 +170,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     much like third parties (CLOUDSECPOD-LOVABLE-2026).
   evidence_grade: C
   sources:
-    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: Cloud Security Podcast, type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: 2026-05-27, access: full, locator: "Transcript, roughly 00:07-00:16 and 00:25-00:36" }
+    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: 2026-05-27, access: full, locator: "Transcript, roughly 00:07-00:16 and 00:25-00:36" }
   last_reviewed: 2026-10-17
   notes: >
     The vendor founder is a guest and sells the product; the transcript does not say Lovable uses Ethira. Practice-file use cases 03 and 04 hold named-customer
@@ -216,9 +216,9 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     so the third-party team governs a wider set of producers (CLOUDSECPOD-LOVABLE-2026).
   evidence_grade: C
   sources:
-    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: TechTarget (Gartner analyst Bernard Woo), type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "Opening paragraphs; 'Filter regulatory noise through internal partnerships'" }
-    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: Cloud Security Podcast, type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: 2026-05-27, access: full, locator: "Transcript, roughly 00:08-00:12" }
-    - { ref: SOFTWARESTRATEGIES-GARTNERHC-2026, title: "Gartner AI Governance Hype Cycle 2026: What CISOs Fund First", publisher: Software Strategies Blog (Louis Columbus), type: community, url: "https://softwarestrategiesblog.com/2026/08/10/gartners-2026-ai-governance-hype-cycle-and-what-cisos-must-change-to-control-agentic-ai-and-rogue-agents/", date: 2026-08-10, access: full, locator: "Paragraphs on the AI Leaders Effectiveness Survey and the Priority Matrix (secondary summary of Gartner)" }
+    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: "TechTarget (Gartner analyst Bernard Woo)", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "Opening paragraphs; 'Filter regulatory noise through internal partnerships'" }
+    - { ref: CLOUDSECPOD-LOVABLE-2026, title: "How AI Agents Will Negotiate Your Vendor Contracts", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-ai-agents-will-negotiate-your-vendor-contracts", date: 2026-05-27, access: full, locator: "Transcript, roughly 00:08-00:12" }
+    - { ref: SOFTWARESTRATEGIES-GARTNERHC-2026, title: "Gartner AI Governance Hype Cycle 2026: What CISOs Fund First", publisher: "Software Strategies Blog (Louis Columbus)", type: community, url: "https://softwarestrategiesblog.com/2026/08/10/gartners-2026-ai-governance-hype-cycle-and-what-cisos-must-change-to-control-agentic-ai-and-rogue-agents/", date: 2026-08-10, access: full, locator: "Paragraphs on the AI Leaders Effectiveness Survey and the Priority Matrix (secondary summary of Gartner)" }
   last_reviewed: 2026-10-17
   notes: >
     The Gartner survey figure comes from a secondary blog, not from Gartner's own page, which was blocked. Practice-file use case 16 covers the same inventory problem as an idea.
@@ -280,10 +280,10 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     AppSec engineer is not automatically an AI security engineer (CLOUDSECPOD-SENDBIRD-2025).
   evidence_grade: B
   sources:
-    - { ref: BSIDESLV-2026, title: "From the Wild West to Yes, If: Building an AI Security & Governance Program (Bo Barger, Alex Sayre, Cengage)", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Proving Ground talk abstract, Tuesday 11:30-12:00" }
-    - { ref: CLOUDSECPOD-SENDBIRD-2025, title: "How to secure your AI Agents: A CISOs Journey", publisher: Cloud Security Podcast, type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-to-secure-your-ai-agents-a-cisos-journey", date: 2025-12-09, access: full, locator: "Transcript, roughly 00:19-00:36" }
-    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides)", publisher: RSA Conference / SANS-GIAC, type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: 2026-03-23, access: full, locator: "Slides 5-8, 21-22" }
-    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: TechTarget (Gartner analyst Bernard Woo), type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "'Ground AI strategy with risk-based principles'" }
+    - { ref: BSIDESLV-2026, title: "From the Wild West to Yes, If: Building an AI Security & Governance Program (Bo Barger, Alex Sayre, Cengage)", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Proving Ground talk abstract, Tuesday 11:30-12:00" }
+    - { ref: CLOUDSECPOD-SENDBIRD-2025, title: "How to secure your AI Agents: A CISOs Journey", publisher: "Cloud Security Podcast", type: podcast, url: "https://www.cloudsecuritypodcast.tv/videos/how-to-secure-your-ai-agents-a-cisos-journey", date: 2025-12-09, access: full, locator: "Transcript, roughly 00:19-00:36" }
+    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: 2026-03-23, access: full, locator: "Slides 5-8, 21-22" }
+    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: "TechTarget (Gartner analyst Bernard Woo)", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "'Ground AI strategy with risk-based principles'" }
   last_reviewed: 2026-10-17
   notes: >
     Grade B: two named organizations describe real programs, but neither publishes outcome measurements beyond an activity count in a talk abstract.
@@ -330,8 +330,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     system, not engineers' vocabulary (FAIR-ATTACKSURFACE-2026).
   evidence_grade: C
   sources:
-    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: FAIR Institute (Todd Tucker, Standards Director), type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: 2026-09-25, access: full, locator: "Takeaways 1-4 (the post continues to eight; takeaways 5-8 not read)" }
-    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: FAIR Institute (Todd Tucker), type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: 2026-10-14, access: full, locator: "'Third, agent identity' and 'So what is the asset?'" }
+    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: "FAIR Institute (Todd Tucker, Standards Director)", type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: 2026-09-25, access: full, locator: "Takeaways 1-4 (the post continues to eight; takeaways 5-8 not read)" }
+    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: 2026-10-14, access: full, locator: "'Third, agent identity' and 'So what is the asset?'" }
   last_reviewed: 2026-10-17
   notes: >
     The FAIR page lists a different author label than the byline; the byline in the body (Todd Tucker) is used. Takeaways 5 to 8 of the first post were not read.
@@ -386,7 +386,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     (FAIR-CRMSURVEY-2026).
   evidence_grade: C
   sources:
-    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: FAIR Institute (with Hanover Research; sponsored by GuidePoint Security and SAFE), type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: 2026, access: full, locator: "Executive Summary; 'AI Is Not Limited to Experimental Use' (pp. 27-28); Methodology (p. 5)" }
+    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: "FAIR Institute (with Hanover Research; sponsored by GuidePoint Security and SAFE)", type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: 2026, access: full, locator: "Executive Summary; 'AI Is Not Limited to Experimental Use' (pp. 27-28); Methodology (p. 5)" }
   last_reviewed: 2026-10-17
   notes: >
     Publication month not found; fieldwork was April 2026. Graded C because the evidence is a vendor-sponsored survey of self-reported use, not a deployment with results.
@@ -433,7 +433,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     literacy to assess pipelines (FAIR-AGENTICCODING-2026).
   evidence_grade: D
   sources:
-    - { ref: FAIR-AGENTICCODING-2026, title: "What Risk Leaders Should Be Asking When AI Is Building Software", publisher: FAIR Institute (Todd Tucker), type: standard-setter, url: "https://www.fairinstitute.org/blog/what-risk-leaders-should-be-asking-when-ai-is-building-software", date: 2026-10-02, access: full, locator: "'Questions to assess variance management'" }
+    - { ref: FAIR-AGENTICCODING-2026, title: "What Risk Leaders Should Be Asking When AI Is Building Software", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/what-risk-leaders-should-be-asking-when-ai-is-building-software", date: 2026-10-02, access: full, locator: "'Questions to assess variance management'" }
   last_reviewed: 2026-10-17
   notes: >
     Idea: proposed by a practitioner body, no deployment found. Figures quoted in the post, all attributed by the author to third parties and not verified here: JetBrains 2026 survey
@@ -485,9 +485,9 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     reductions yet; only 24% of organizations provide well-defined career progression (RSAC-WORKFORCE-2026). A BSides talk abstract says many organizations hire L1 analysts with no written career ladder (BSIDESLV-2026).
   evidence_grade: D
   sources:
-    - { ref: VENABLES-WORKFORCE-2026, title: "AI and Challenges in Workforce Development", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/ai-and-challenges-in-workforce-development", date: 2026-10-03, access: full, locator: "Consequences 1-2; Actions 1-7" }
-    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides)", publisher: RSA Conference / SANS-GIAC, type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: 2026-03-23, access: full, locator: "Slides 7, 15" }
-    - { ref: BSIDESLV-2026, title: "Nobody Told Me I Could Grow: Building a SOC Career You Actually Want", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract" }
+    - { ref: VENABLES-WORKFORCE-2026, title: "AI and Challenges in Workforce Development", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ai-and-challenges-in-workforce-development", date: 2026-10-03, access: full, locator: "Consequences 1-2; Actions 1-7" }
+    - { ref: RSAC-WORKFORCE-2026, title: "AI, Regulation, & the Battle for Talent: The Future of the Cyber Workforce (slides)", publisher: "RSA Conference / SANS-GIAC", type: conference, url: "https://www.rsaconference.com/library/presentation/usa/2026/ai%20regulation%20%20the%20battle%20for%20talent%20the%20future%20of%20the%20cyber%20workforce", date: 2026-03-23, access: full, locator: "Slides 7, 15" }
+    - { ref: BSIDESLV-2026, title: "Nobody Told Me I Could Grow: Building a SOC Career You Actually Want", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract" }
   last_reviewed: 2026-10-17
   notes: >
     Idea: discussed by a practitioner with direct leadership experience; no named organization has published a result. Slides state 'AI is impacting entry-level jobs' with SOC and security analysts leading at 32% (selected all that apply); respondent count is not stated.
@@ -536,11 +536,11 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     A BSides talk organizes careers into four role families (Builders, Breakers, Defenders, Governors) (BSIDESLV-2026).
   evidence_grade: C
   sources:
-    - { ref: GRCENGINEER-STATEOFGRC-2026, title: "State of GRC 2026 Report: Spreadsheets are still #1", publisher: GRC Engineer newsletter (Ayoub Fandi), type: survey, url: "https://www.grcengineer.com/p/state-of-grc-2026-report-spreadsheets-are-still-1", date: 2026-03-16, access: full, locator: "'5 Key Takeaways from the Report'" }
-    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: 2026-10-15, access: full, locator: "Task table; 'Reading is most of it'" }
-    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: 2026-01-08, access: full, locator: "'The Year-Long Mission'" }
-    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: Cloud Security Alliance with SANS, [un]prompted and OWASP GenAI Security Project, type: standard-setter, url: "https://labs.cloudsecurityalliance.org/mythos-ciso/", date: 2026-04-12, access: full, locator: "PDF v1.0 p. 14" }
-    - { ref: BSIDESLV-2026, title: "How to Stand Out in Cybersecurity's Most Competitive Job Market", publisher: BSides Las Vegas, type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract (Hire Ground, Monday 18:00-18:55)" }
+    - { ref: GRCENGINEER-STATEOFGRC-2026, title: "State of GRC 2026 Report: Spreadsheets are still #1", publisher: "GRC Engineer newsletter (Ayoub Fandi)", type: survey, url: "https://www.grcengineer.com/p/state-of-grc-2026-report-spreadsheets-are-still-1", date: 2026-03-16, access: full, locator: "'5 Key Takeaways from the Report'" }
+    - { ref: GRCENGINEER-086-2026, title: "Most GRC Engineering Is Sysadmin Work. That's the Good News.", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/most-grc-engineering-is-sysadmin-work-that-s-the-good-news", date: 2026-10-15, access: full, locator: "Task table; 'Reading is most of it'" }
+    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: 2026-01-08, access: full, locator: "'The Year-Long Mission'" }
+    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: "Cloud Security Alliance with SANS, [un]prompted and OWASP GenAI Security Project", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/mythos-ciso/", date: 2026-04-12, access: full, locator: "PDF v1.0 p. 14" }
+    - { ref: BSIDESLV-2026, title: "How to Stand Out in Cybersecurity's Most Competitive Job Market", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: 2026-08, access: full, locator: "Talk abstract (Hire Ground, Monday 18:00-18:55)" }
   last_reviewed: 2026-10-17
   notes: >
     Companion to practice-file use case 13 (job-posting evidence). The survey's sponsor-free claim is the author's own statement.
@@ -582,8 +582,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The CISO's remit extends to controls the regulations aim at harms to people, which Gartner says falls within CISO purview (TECHTARGET-GARTNERREG-2026).
   evidence_grade: C
   sources:
-    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: TechTarget (Gartner analyst Bernard Woo), type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "Whole article" }
-    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: Cloud Security Alliance, type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/mythosreadyv1.0.pdf", date: 2026-04-12, access: full, locator: "Risk register item 12, p. 18" }
+    - { ref: TECHTARGET-GARTNERREG-2026, title: "How to prepare security controls for future AI regulations", publisher: "TechTarget (Gartner analyst Bernard Woo)", type: press, url: "https://www.techtarget.com/cybersecurity/opinion/How-to-prepare-security-controls-for-future-AI-regulations", date: 2026-06-02, access: full, locator: "Whole article" }
+    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: "Cloud Security Alliance", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/mythosreadyv1.0.pdf", date: 2026-04-12, access: full, locator: "Risk register item 12, p. 18" }
   last_reviewed: 2026-10-17
   notes: >
     Little AI is used in the work itself; the use case records how analysts say regulatory mapping should be approached. Practice-file use case 12 covers tool-assisted mapping.
@@ -633,10 +633,10 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     the business before, during and after an attack rather than maximize prevention (TECHTARGET-GARTNERCISO-2026).
   evidence_grade: C
   sources:
-    - { ref: TECHTARGET-GARTNERBOARD-2026, title: "Lost in translation: Cybersecurity board reporting for CISOs", publisher: TechTarget (Richard Livingston), type: press, url: "https://www.techtarget.com/cybersecurity/news/366643884/Lost-in-translation-Cybersecurity-board-reporting-for-CISOs", date: 2026-06-03, access: full, locator: "Whole article" }
-    - { ref: TECHTARGET-GARTNERCISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow", publisher: TechTarget (Richard Livingston), type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: 2026-06-08, access: full, locator: "'The security drag'; 'A new mandate for CISOs'" }
-    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: Cloud Security Alliance, type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/mythosreadyv1.0.pdf", date: 2026-04-12, access: full, locator: "Action 6 'Update Risk Models and Reporting' p. 20; Section V 'Executive and Board Briefing' p. 22; risk register items 11-12 pp. 17-18" }
-    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: FAIR Institute, type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: 2026, access: full, locator: "Executive Summary item 4" }
+    - { ref: TECHTARGET-GARTNERBOARD-2026, title: "Lost in translation: Cybersecurity board reporting for CISOs", publisher: "TechTarget (Richard Livingston)", type: press, url: "https://www.techtarget.com/cybersecurity/news/366643884/Lost-in-translation-Cybersecurity-board-reporting-for-CISOs", date: 2026-06-03, access: full, locator: "Whole article" }
+    - { ref: TECHTARGET-GARTNERCISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow", publisher: "TechTarget (Richard Livingston)", type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: 2026-06-08, access: full, locator: "'The security drag'; 'A new mandate for CISOs'" }
+    - { ref: CSA-MYTHOSREADY-2026, title: "The 'AI Vulnerability Storm': Building a 'Mythos-ready' Security Program", publisher: "Cloud Security Alliance", type: standard-setter, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/mythosreadyv1.0.pdf", date: 2026-04-12, access: full, locator: "Action 6 'Update Risk Models and Reporting' p. 20; Section V 'Executive and Board Briefing' p. 22; risk register items 11-12 pp. 17-18" }
+    - { ref: FAIR-CRMSURVEY-2026, title: "2026 State of Cyber Risk Management Report", publisher: "FAIR Institute", type: survey, url: "https://www.fairinstitute.org/hubfs/State%20of%20Cyber%20Risk%20Management%20Report%202026.pdf", date: 2026, access: full, locator: "Executive Summary item 4" }
   last_reviewed: 2026-10-17
   notes: >
     The Gartner board-reporting format is not itself AI-based; the AI-specific content comes from the CSA briefing, whose authors are CISO-community members and who
@@ -676,7 +676,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The guest expects concurrent incidents to become the new floor as AI raises attacker capability, and says regulators and plaintiffs will ask for proof of continuous readiness (RESILIENTCYBER-TABLETOP-2026).
   evidence_grade: C
   sources:
-    - { ref: RESILIENTCYBER-TABLETOP-2026, title: "AI-Accelerated Micro Tabletops and Incident Readiness", publisher: Resilient Cyber (Chris Hughes; guest Matt Hartley, BreachRx), type: podcast, url: "https://www.resilientcyber.io/p/ai-accelerated-micro-tabletops-and", date: 2026-10-12, access: full, locator: "Episode description and 'We discuss' list (video not watched)" }
+    - { ref: RESILIENTCYBER-TABLETOP-2026, title: "AI-Accelerated Micro Tabletops and Incident Readiness", publisher: "Resilient Cyber (Chris Hughes; guest Matt Hartley, BreachRx)", type: podcast, url: "https://www.resilientcyber.io/p/ai-accelerated-micro-tabletops-and", date: 2026-10-12, access: full, locator: "Episode description and 'We discuss' list (video not watched)" }
   last_reviewed: 2026-10-17
   notes: >
     Primarily an incident-response topic; kept here for the regulator-reporting and evidence-of-readiness angle. Description only, vendor guest.
@@ -719,9 +719,9 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Security architecture becomes a governance lens: GRC and risk staff are asked to specify and test limits that sit outside the model (VENABLES-HFT-2026, DARKREADING-ROGUE-2026).
   evidence_grade: D
   sources:
-    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: 2026-05-02, access: full, locator: "'HFT Controls: A Template for Agentic Safety'; 'Goldman Sachs Options Error (2013)'" }
-    - { ref: DARKREADING-ROGUE-2026, title: "Is It Fair to Blame 'Rogue' AI for Security Failures?", publisher: Dark Reading, type: press, url: "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures", date: 2026-10-02, access: full, locator: "Sections 'Changing the Lexicon' and 'For Defenders, AI Agent Intention Should Not Matter'" }
-    - { ref: RESILIENTCYBER-KORMAN-2026, title: "Cybersecurity is Ceding AI Safety, But Should We?", publisher: Resilient Cyber (Chris Hughes; guest Zack Korman, Embroidery), type: podcast, url: "https://www.resilientcyber.io/p/cybersecurity-is-ceding-ai-safety", date: 2026-09-28, access: full, locator: "Episode description and timestamps (21:24 eight layers of failure)" }
+    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: 2026-05-02, access: full, locator: "'HFT Controls: A Template for Agentic Safety'; 'Goldman Sachs Options Error (2013)'" }
+    - { ref: DARKREADING-ROGUE-2026, title: "Is It Fair to Blame 'Rogue' AI for Security Failures?", publisher: "Dark Reading", type: press, url: "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures", date: 2026-10-02, access: full, locator: "Sections 'Changing the Lexicon' and 'For Defenders, AI Agent Intention Should Not Matter'" }
+    - { ref: RESILIENTCYBER-KORMAN-2026, title: "Cybersecurity is Ceding AI Safety, But Should We?", publisher: "Resilient Cyber (Chris Hughes; guest Zack Korman, Embroidery)", type: podcast, url: "https://www.resilientcyber.io/p/cybersecurity-is-ceding-ai-safety", date: 2026-09-28, access: full, locator: "Episode description and timestamps (21:24 eight layers of failure)" }
   last_reviewed: 2026-10-17
   notes: >
     Idea: discussed widely, no GRC deployment with results found. The OpenAI-Hugging Face incident described by guests is routed to ai-security and incident-response; only the control-design points are used here.
@@ -762,8 +762,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The Centene speaker biography describes elevating analysts from reactive responders to supervisory decision-makers (FIRST-CON-2026).
   evidence_grade: C
   sources:
-    - { ref: FIRST-CON-2026, title: "From Logs to Living Timelines: AI-Assisted Incident Response in Hybrid Cloud Using OCSF (Centene); AI Interpretability as a Security Control: Introducing the CIRCUIT Framework (Jumpmind)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: 2026-06-16, access: full, locator: "Centene session 16 Jun 2026 11:45-12:20; Jumpmind session 17 Jun 2026 13:30-14:15" }
-    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: 2026-05-02, access: full, locator: "'Post-Trade Analysis (Drop-Copy Auditing)'" }
+    - { ref: FIRST-CON-2026, title: "From Logs to Living Timelines: AI-Assisted Incident Response in Hybrid Cloud Using OCSF (Centene); AI Interpretability as a Security Control: Introducing the CIRCUIT Framework (Jumpmind)", publisher: "FIRST", type: conference, url: "https://www.first.org/conference/2026/program", date: 2026-06-16, access: full, locator: "Centene session 16 Jun 2026 11:45-12:20; Jumpmind session 17 Jun 2026 13:30-14:15" }
+    - { ref: VENABLES-HFT-2026, title: "High Frequency Trading and Lessons for Agentic AI", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/high-frequency-trading-and-lessons-for-agentic-ai", date: 2026-05-02, access: full, locator: "'Post-Trade Analysis (Drop-Copy Auditing)'" }
   last_reviewed: 2026-10-17
   notes: >
     Graded C: named organization and a framework description, but the abstract does not state that the framework is in production, and there are no measurements. Routed to incident-response for the investigation workflow.
@@ -802,8 +802,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Venables describes CISO 2.0 as shaping the environment rather than bolting security on, and as 'CEO' of the security program (VENABLES-CISO2-2026).
   evidence_grade: D
   sources:
-    - { ref: VENABLES-CISO2-2026, title: "CISO Version 2.0", publisher: Phil Venables (personal blog), type: community, url: "https://www.philvenables.com/post/ciso-version-2-0", date: 2026-06-12, access: full, locator: "'What Next - Two Divergent Paths?'" }
-    - { ref: TECHTARGET-GARTNERCISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow", publisher: TechTarget, type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: 2026-06-08, access: full, locator: "'A new mandate for CISOs'" }
+    - { ref: VENABLES-CISO2-2026, title: "CISO Version 2.0", publisher: "Phil Venables (personal blog)", type: community, url: "https://www.philvenables.com/post/ciso-version-2-0", date: 2026-06-12, access: full, locator: "'What Next - Two Divergent Paths?'" }
+    - { ref: TECHTARGET-GARTNERCISO-2026, title: "CISO role changes as cyber-risk appetites in the C-suite grow", publisher: "TechTarget", type: press, url: "https://www.techtarget.com/cybersecurity/news/366644003/CISO-role-changes-as-cyber-risk-appetites-in-the-C-suite-grow", date: 2026-06-08, access: full, locator: "'A new mandate for CISOs'" }
   last_reviewed: 2026-10-17
   notes: >
     Idea: the author reports observing the pattern but names no organization.
@@ -841,7 +841,7 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     The author says GRC professionals who master AI scaffolding will define the next decade (GRCENGINEER-AIUSAGE-2026).
   evidence_grade: D
   sources:
-    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: GRC Engineer newsletter, type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: 2026-01-08, access: full, locator: "'The 3 Mistakes' and templates" }
+    - { ref: GRCENGINEER-AIUSAGE-2026, title: "3 Basic Things Killing Your AI Usage for GRC", publisher: "GRC Engineer newsletter", type: community, url: "https://www.grcengineer.com/p/3-basic-things-killing-your-ai-usage-for-grc", date: 2026-01-08, access: full, locator: "'The 3 Mistakes' and templates" }
   last_reviewed: 2026-10-17
   notes: >
     Idea. Practice-file use case 08 covers policy drafting with tooling.
@@ -880,8 +880,8 @@ Compiled 2026-10-17. Archetype `security`, module `governance-risk` (landscape n
     Third-party risk analysts add model-provider documents to their reading list (FAIR-RISKREPORT-2026).
   evidence_grade: D
   sources:
-    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: FAIR Institute (Todd Tucker), type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: 2026-10-14, access: full, locator: "'Back to the big picture'" }
-    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: FAIR Institute (Todd Tucker), type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: 2026-09-25, access: full, locator: "Takeaway 2" }
+    - { ref: FAIR-ATTACKSURFACE-2026, title: "An AI Attack Surface Primer for Risk Professionals", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/an-ai-attack-surface-primer-for-risk-professionals", date: 2026-10-14, access: full, locator: "'Back to the big picture'" }
+    - { ref: FAIR-RISKREPORT-2026, title: "Eight Takeaways from Anthropic's Risk Report for AI Risk Leaders", publisher: "FAIR Institute (Todd Tucker)", type: standard-setter, url: "https://www.fairinstitute.org/blog/eight-takeaways-from-anthropics-risk-report-for-ai-risk-leaders", date: 2026-09-25, access: full, locator: "Takeaway 2" }
   last_reviewed: 2026-10-17
   notes: >
     Idea: described as practice advice, no deployment found.

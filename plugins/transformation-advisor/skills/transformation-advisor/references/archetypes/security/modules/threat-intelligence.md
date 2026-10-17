@@ -207,7 +207,7 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
 ## 7. Roles and how they evolve
 
 - **Work is becoming engineering-shaped.** Anthropic, Cloudflare, Coinbase and GitLab postings ask threat intelligence staff to build
-  pipelines, MCP integrations and agent workflows [ANTHROPIC-JOBTIE-2026; CLOUDFLARE-JOBSTIE-2026; COINBASE-JOBTIPE-2026;
+  pipelines, automation, MCP integrations or AI-powered workflows [ANTHROPIC-JOBTIE-2026; CLOUDFLARE-JOBSTIE-2026; COINBASE-JOBTIPE-2026;
   GITLAB-JOBTRE-2026]; OpenAI pairs engineers with investigators [OPENAI-JOBII-2025]. Not every posting changes: Recorded Future and
   Dragos analyst postings read in full do not mention AI [RECORDEDFUTURE-JOBTIRA-2026; DRAGOS-JOBCTI-2026].
 - **Analysts become reviewers and validators.** Feedly says AI absorbs feed aggregation, enrichment and first drafts, and the premium
@@ -216,7 +216,7 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
   [JOB-SERVICENOW-2025]. Hunters are asked to verify AI output before production [HUNTRESS-JOBDETH-2026].
 - **Hunters stay in charge of hypotheses.** Experts quoted by SecurityWeek expect augmentation, not replacement [SECURITYWEEK-HUNTING-2026].
 - **Non-security staff self-serve.** Superhuman's engineers query intelligence directly [RF-SUPERHUMAN-2026].
-- **Capacity pressure, not cuts, is the stated driver.** A healthcare leader says "we can't hire our way out" [FLASHPOINT-ENTERPRISE-2026].
+- **Capacity pressure is a stated driver.** A healthcare leader says "we can't hire our way out" [FLASHPOINT-ENTERPRISE-2026].
   Feedly warns efficiency narratives could bring budget cuts, hiring freezes and fewer entry-level roles [FEEDLY-VALUE-2026].
 - **Gap:** no headcount, hiring or junior-pipeline data for CTI teams exists in the sources; AI is the top skills need across
   cybersecurity (41%) [ISC2-WORKFORCE-2025].
@@ -256,7 +256,7 @@ the final analytic judgement [ENISA-CTL-2026]; any active engagement with threat
 - **"It will break trust and chain of custody in sharing"** (RH-ISAC) [CSD-ISACAI-2026]. Keep provenance links and human approval;
   CISA's PII screening routes every flag to an analyst [DHS-AIINV-CISA-2026; CLOUDFLARE-THREATSIGNALS-2026].
 - **"It's just rebranded enrichment and summarization"** [FEEDLY-ROUNDUP-2026]. Often fair; Forrester argues for the "least AI" that
-  does the job [SANS-LEASTAI-2026]. The distinct new capability is continuous, agent-run hunting (`#21`, `#22`).
+  does the job [SANS-LEASTAI-2026]. Where the evidence shows more than enrichment, it is continuous, agent-run hunting (`#21`, `#22`).
 - **"Our analysts will lose their skills."** A real risk [FEEDLY-VALUE-2026]. Require primary-source review before an assessment is
   submitted and disclose AI use in methodology [FEEDLY-VALUE-2026; ENISA-ETL-2026].
 - **"Attackers will poison the inputs."** Correct and demonstrated [FIRST-CON-2026; GTIG-AITRACKER-2026]. Layered defences cut log
@@ -270,7 +270,7 @@ Full entries (title, publisher, URL, date, locator) are in the YAML for every ke
 
 - [GTIG-AITRACKER-2026] Google Threat Intelligence Group, "GTIG AI Threat Tracker: From Prompting to Autonomy", 2026-09-08, https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/
 - [GTIG-VULNTRENDS-2026] Google Threat Intelligence Group, "Vulnerability Discovery and Exploitation Trends in the AI Era", 2026-09-30, https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/
-- [THN-CERTIN-2026] The Hacker News, report on the CERT-In advisory on AI agents, 2026-10-15, https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html
+- [THN-CERTIN-2026] The Hacker News, report on the CERT-In advisory of 2026-10-15 on AI agents, 2026-10-16, https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html
 - [NIST-CSF-2024] NIST, Cybersecurity Framework 2.0, 2024-02-26, https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf
 - [EURLEX-DORATLPT-2025] Commission Delegated Regulation (EU) 2025/1190 (threat-led penetration testing), 2025-02-13, https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R1190
 - [EC-AIACT-2026] European Commission, AI Act policy page (undated; read 2026-10-17), https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai

@@ -343,13 +343,14 @@
     - {ref: ARXIV-2503.23175, title: "Large Language Models Are Unreliable for Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2503.23175", date: "2025-03-29", access: full, locator: "abstract"}
     - {ref: ARXIV-2509.23573, title: "Uncovering Vulnerabilities of LLM-Assisted Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2509.23573", date: "2025-09-28", access: full, locator: "abstract"}
     - {ref: MITRE-ATTCK-2026, title: "ATT&CK v20 release (Updates - October 2026)", publisher: MITRE, type: standard-setter, url: "https://attack.mitre.org/resources/updates/", date: "2026-10-13", access: full, locator: "v20 release notes"}
+    - {ref: ARXIV-2608.06778, title: "Retrieval-Constrained Policy Optimization for Attack Technique Extraction from Cyber Threat Intelligence", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2608.06778", date: "2026-08-07", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged practice-17 (C), discourse-02 (B) and governance-03 (C). Grade B rests on Intel 471 describing its own
     hunters' use; no figures are published for that use. The F1 values are lab benchmarks and are not comparable with
     each other. CTI2TTP's authors report macro-F1 of 76.48% and 87.39% on two sets they defined, for their own
     evidence-anchored design (ARXIV-2605.25836). A fine-tuned 8B model (TTP-R1) reportedly beat a retrieval-augmented
-    frontier model on sub-technique F1 by 7.4 points (ARXIV-2608.06778, abstract only; not listed in sources).
+    frontier model on sub-technique F1 by 7.4 points (ARXIV-2608.06778, abstract only).
     TRAM's README references ATT&CK v13 and an earlier supervised model, so it is a foundation source.
 
 - id: security-threat-intelligence-07
@@ -689,6 +690,7 @@
     - {ref: DTN-CTI-2026, title: "Your Threat Intelligence Team Is Collecting Data and Calling It Intelligence", publisher: DTN Advisory (Substack), type: community, url: "https://dtnadvisory.substack.com/p/your-threat-intelligence-team-is", date: "2026-03-31", access: full, locator: "section on AI in the intelligence cycle"}
     - {ref: INTEL471-AIHUMAN-2026, title: "How AI and the human advantage beat tomorrow's threats", publisher: Intel 471, type: vendor, url: "https://www.intel471.com/blog/how-ai-and-the-human-advantage-beat-tomorrows-threats", date: "2026-02-20", access: full, locator: "'The danger of blind trust: automation bias'"}
     - {ref: CSD-ISACAI-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing", publisher: Cybersecurity Dive, type: press, url: "https://www.cybersecuritydive.com/news/ai-isacs-threat-intelligence-information-sharing-trust/815499/", date: "2026-03-23", access: full, locator: "paragraphs on Health-ISAC, RH-ISAC and FS-ISAC comments"}
+    - {ref: SOCRADAR-SANSCTI-2026, title: "2026 SANS CTI Survey Report: Key Findings on CTI's Influence Gap", publisher: SOCRadar, type: vendor, url: "https://socradar.io/blog/2026-sans-cti-survey-report-findings/", date: "2026-07-01", access: full, locator: "paragraph on AI use and human-in-the-loop"}
     - {ref: HISAC-AIISAC-2026, title: "ISACs confront AI's promise and peril for threat intelligence-sharing (Health-ISAC media mention)", publisher: Health-ISAC, type: community, url: "https://health-isac.org/isacs-confront-ais-promise-and-peril-for-threat-intelligence-sharing/", date: "2026-03-27", access: full, locator: "summary paragraphs"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -697,7 +699,7 @@
     is pre-deployment; CISAChat (internal search and summaries) is deployed. Runtime class follows the scheduled agents
     (Microsoft, Google); analysts also draft with personal assistants. A sponsor's summary of the SANS survey gives use
     shares of 56% (summarization and report writing), 46% (parsing and normalization) and 45% (workflow automation)
-    without a stated denominator (SOCRADAR-SANSCTI-2026, not listed here). The National Council of ISACs is considering
+    without a stated denominator (SOCRADAR-SANSCTI-2026). The National Council of ISACs is considering
     a cross-sector AI working group (CSD-ISACAI-2026).
 
 - id: security-threat-intelligence-13
