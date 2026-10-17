@@ -1,12 +1,11 @@
 # Use cases: tax / compliance-individual-business
 # Individual, trust, partnership and small-business return preparation (1040, 1041, 1065, 1120-S; UK self
-# assessment) by CPA firms, enrolled agents and retail preparers. Synthesised 2026-10-17 from the wave 2 landscape
-# scan and the practice, discourse and governance deep dives, plus items routed here from other tax deep dives.
-# Every source was opened by the researcher who cited it (access: full) unless marked otherwise; several were read
-# only as gated teasers or show notes, which the locator says. Almost every outcome figure is vendor-published or
-# self-reported. No independent error rate, override rate or parallel-run result for AI-prepared returns exists in
-# the inputs. Overlaps: research tools belong to the research-advisory module, notice response to controversy,
-# corporate and in-house direct-tax compliance to compliance-corporate.
+# assessment) by CPA firms, enrolled agents and retail preparers. Sources checked 2026-10-17. Every source was opened
+# (access: full) unless marked otherwise; several were read only as gated teasers or show notes, which the locator
+# says. Almost every outcome figure is vendor-published or self-reported. No independent error rate, override rate or
+# parallel-run result for AI-prepared returns was found. Overlaps: research tools are in research-advisory
+# (tax-research-advisory-01), notice response in controversy (tax-controversy-01, -02), corporate and in-house
+# direct-tax compliance in compliance-corporate.
 
 - id: tax-compliance-individual-business-01
   title: AI-prefilled organizers, tailored document requests, missing-information follow-up and automated chasing

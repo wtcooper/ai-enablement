@@ -1,5 +1,6 @@
-# Use cases: tax / data-technology (in-house tax operations and data architecture). Last reviewed 2026-10-17.
-# Synthesised from the wave 2 landscape and the practice, discourse and governance deep dives.
+# Use cases: tax / data-technology (in-house tax operations and data architecture). Sources checked 2026-10-17.
+# No entry has a measured outcome from a named organisation (no grade A). Cross-references to other tax modules use
+# full ids in each entry's notes.
 - id: tax-data-technology-01
   title: Tax-owned data layer that pulls ERP, ledger and other data into one reconciled, documented source for tax work and
     AI

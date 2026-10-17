@@ -1,15 +1,14 @@
 # Use cases: tax / compliance-corporate
 # Corporate direct-tax compliance in house and at large firms: federal, state and international income tax returns
 # (1120, 5471/8858, state apportionment), return workpapers and review, credits and incentives (R&D credit, Form 6765
-# Section G), estimated payments and the tax calendar.
-# Merged 2026-10-17 from three wave-2 deep dives (practice, discourse, governance; 48 candidates) into 24 entries.
-# Every source was opened by the deep-dive analysts (access: full); none is search-only. Verified 2026-10-17: every URL
-# reopened; see research/runs/wave2/compliance-corporate-verification-report.md. No entry has a measured outcome
-# from a named organisation (no grade A). Almost every figure is vendor-published or self-reported; say so when quoting.
-# Canonical refs: where the deep dives used two keys for one document, one key is used here (see the synthesis report).
-# Overlaps: individual and partnership return agents sit in the compliance (individual and small-business) module;
-# stand-alone tax research in research-advisory; ASC 740 and effective-tax-rate work in provision; notices and
-# tax-authority AI in controversy. Final ids for those modules were not yet published, so they are named by module.
+# Section G), estimated payments and the tax calendar. Sources checked 2026-10-17; every source was opened (access:
+# full). No entry has a measured outcome from a named organisation (no grade A). Almost every figure is
+# vendor-published or self-reported; say so when quoting. Source refs are shared with the other tax modules where the
+# same document is cited.
+# Overlaps are referenced by id in each entry's notes: individual and pass-through returns are in
+# compliance-individual-business (for example tax-compliance-individual-business-02, -06, -12); stand-alone research
+# is tax-research-advisory-01; ASC 740 and Pillar Two work is in provision-pillar-two; notices and tax-authority AI are
+# in controversy (tax-controversy-04, -13).
 
 - id: tax-compliance-corporate-01
   title: AI imports, validates and maps ledger and trial-balance data to the tax chart of accounts, with tie-out checks before the compliance load

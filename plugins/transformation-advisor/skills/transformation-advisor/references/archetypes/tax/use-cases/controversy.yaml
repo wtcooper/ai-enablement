@@ -1,13 +1,10 @@
 # Use cases: tax / controversy (audits, notices, appeals, disputes, plus tax-authority AI)
-# Synthesised 2026-10-17 from research/runs/wave2/tax-controversy-{practice,discourse,governance}.md, the landscape
-# scan, and items other tax deep dives routed to controversy. Every source was opened by the researchers (access:
-# full) unless marked; several long reports were read only in part. Source refs are canonical keys; where the deep
-# dives used different keys for one document, one key was kept (e.g. BLAW-TAXCT-2026 for the Bloomberg Law Tax Court
-# article, WK-NOTICE-2026, BTAX-EYGRIP-2025, ICAS-HMRC-2025, PINSENT-HMRC-2026, GT-IE-OECD-2025).
+# Sources checked 2026-10-17. Every source was opened (access: full) unless marked; several long reports were read
+# only in part. Source refs are shared with the other tax modules where the same document is cited.
 # Entries 01-12 are practitioner and in-house side; 13-25 are tax-authority side (context for advisers).
 # Practitioner-side evidence is thin: no firm or in-house team has published an error rate, override rate,
 # parallel-run result or time saving for notice, examination or Appeals work. Cross-references to other tax modules
-# use their synthesised ids as of 2026-10-17.
+# use full ids.
 
 - id: tax-controversy-01
   title: AI reads and triages incoming IRS and state tax notices

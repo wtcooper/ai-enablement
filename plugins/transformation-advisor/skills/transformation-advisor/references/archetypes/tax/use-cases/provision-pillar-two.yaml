@@ -1,16 +1,15 @@
 # Use cases: tax / provision-pillar-two
 # Income tax accounting under ASC 740 and IAS 12 (the provision), ASU 2023-09 disclosures, and the OECD global minimum
 # tax (Pillar Two): GloBE calculations, safe harbours, the GloBE Information Return (GIR) and its XML filing, QDMTTs,
-# and the data pipeline and audit overlap.
-# Merged 2026-10-17 from one combined wave-2 deep dive (16 candidates; low-evidence module) plus items routed from other
-# tax deep dives, into 16 entries. Every source was opened by the analyst (access: full); none is search-only.
+# and the data pipeline and audit overlap. Sources checked 2026-10-17; every source was opened (access: full).
 # GRADES ARE FOR AI USE. Entries -09, -11, -12, -13, -15 and -16 describe rules-based software that is in production at
 # named organisations, but no source shows AI doing that work. They are graded C for AI use, and each note says what the
 # software evidence alone would earn. No entry has a measured AI outcome from a named organisation (no A or B for AI).
-# Overlaps (published ids): research inside tools tax-compliance-corporate-11 and tax-research-advisory-01; ledger
-# mapping tax-compliance-corporate-01 and -10; R&D credits tax-compliance-corporate-09; law-change monitoring
-# tax-compliance-corporate-12 and tax-research-advisory-23; effective-tax-rate modelling and explainable ETR models
-# tax-compliance-corporate-14 and -18 (not duplicated here); managed service tax-compliance-corporate-15.
+# Overlaps: research inside tools tax-compliance-corporate-11 and tax-research-advisory-01; ledger mapping
+# tax-compliance-corporate-01 and the data layer tax-data-technology-02; R&D credits tax-compliance-corporate-09;
+# law-change monitoring tax-compliance-corporate-12 and tax-research-advisory-23; effective-tax-rate modelling and
+# explainable ETR models tax-compliance-corporate-14 and -18 (not duplicated here); managed service
+# tax-compliance-corporate-15.
 
 - id: tax-provision-pillar-two-01
   title: Cited research and AI insights embedded in the provision and direct-tax workflow

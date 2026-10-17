@@ -1,13 +1,10 @@
 # Use cases: tax / transfer-pricing
-# Synthesised 2026-10-17 from the wave-2 practice, discourse and governance deep dives and the tax landscape scan
-# (48 candidate entries in, 22 out). Source refs are canonical keys: where the angles used different keys for the
-# same document, one key is kept (for example AIBIDIA-LEADERS-2026 = the discourse angle's AIBIDIA-STATETP-2026;
-# BDO-AIGOV-2026 = BDO-2026 / BDO-CA-2026; DDTC-WUTA-2026 = DDTC-PWCSG-2026; WTS-HU-2026 = WTS-NAV-2026;
-# AIBIDIA-OTP-2026 = AIBIDIA-OTPBLOG-2026). Almost every figure is vendor-published or a speaker's own claim; no
-# error rate, override rate, parallel run or independent test of AI in transfer pricing (TP) was found. Aibidia
-# case-study and product pages are undated; their date is the retrieval date (2026-10-17). Overlaps with other tax
-# modules are cross-referenced by id in notes. Tax-authority AI for selecting TP audits (Hungary, IRS models, HMRC
-# ICTS, South Africa and Nigeria) is not repeated here: see tax-controversy-13 and tax-controversy-15.
+# Sources checked 2026-10-17. Source refs are shared with the other tax modules where the same document is cited.
+# Almost every figure is vendor-published or a speaker's own claim; no error rate, override rate, parallel run or
+# independent test of AI in transfer pricing (TP) was found. Aibidia case-study and product pages are undated; their
+# date is the retrieval date (2026-10-17). Overlaps with other tax modules are cross-referenced by id in notes.
+# Tax-authority AI for selecting TP audits (Hungary, IRS models, HMRC ICTS, South Africa and Nigeria) is not repeated
+# here: see tax-controversy-13 and tax-controversy-15.
 
 - id: tax-transfer-pricing-01
   title: Grounded TP research assistant for legislation, guidance, deadlines and local requirements

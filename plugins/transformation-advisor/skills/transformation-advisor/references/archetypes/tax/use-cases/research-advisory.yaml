@@ -1,11 +1,9 @@
 # Use cases: tax / research-advisory
-# Sources checked 2026-10-17 (wave 2). Synthesised from the landscape scan and the practice, discourse and
-# governance deep dives, plus items routed here from other tax modules. 25 entries: A 0, B 11, C 8, D 6
-# (after verification 2026-10-17; #01, #02 and #09 moved from A to B). Evidence is thin on measured outcomes: the
+# Sources checked 2026-10-17. 25 entries: A 0, B 11, C 8, D 6. Evidence is thin on measured outcomes: the
 # before-and-after times are named practitioners' estimates quoted in case studies published by the vendors that
 # sell the tools, not measurements; no independent test of a commercial tax research product exists.
 # Independent measures (Stanford, Vals legal research, Vals Tax Agent Bench, TaxCalcBench, Antinozzi) test models
-# or adjacent tools, not firm deployments. Cross-module overlaps are noted in each entry's notes.
+# or adjacent tools, not firm deployments. Cross-module overlaps are noted by full id in each entry's notes.
 
 - id: tax-research-advisory-01
   title: Cited conversational tax research assistant in place of keyword database search

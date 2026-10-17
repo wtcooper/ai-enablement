@@ -1,20 +1,12 @@
 # Use cases: tax / indirect-tax (VAT, GST, US sales and use tax, e-invoicing and continuous transaction controls,
-# exemption certificates, registration and nexus, agentic commerce, indirect-tax audits).
-# Merged from research/runs/wave2/tax-indirect-tax-practice.md, -discourse.md and -governance.md, plus items
-# routed to indirect-tax from other wave 2 tax files. See research/runs/wave2/indirect-tax-synthesis-report.md.
+# exemption certificates, registration and nexus, agentic commerce, indirect-tax audits). Sources checked 2026-10-17.
 # Figures are vendor-published unless the outcome says otherwise. No error rate, override rate or parallel-run
 # result exists for any commercial indirect-tax AI tool in the sources read.
 # Tax-authority AI is left to the controversy module (CDTFA agent assist: tax-controversy-20; chatbots:
 # tax-controversy-18; Austrian, Hungarian and state risk targeting: tax-controversy-15). Tax-analyst-built pipelines
-# are tax-compliance-corporate-17; three-way reconciliation of calculated, invoiced and reported tax is left to
-# tax-data-technology (not yet synthesised). The VAT and customs part of cross-tax intercompany review is
-# tax-transfer-pricing-11.
-# Canonical source keys: ACCTODAY-AVALARA-2025 (= ACCTODAY-AVALARA-2025), AVALARA-AGENTIC-2025b (= ITWIRE-AVALARA-2025),
-# FONOA-2026 (= FONOA-2026, FONOA-INDIRECT-2026), FONOA-176-2026 (governance file's FONOA-BLOG-2026),
-# FONOA-CITATION-2026 (= FONOA-PRIMARY-2026), FONOA-MONITORING-2026 (= FONOA-REGMON-2026),
-# TR-INDIRECT-2026 (= TR-INDIRECT-DATA-2026), TR-AGENTICIT-2026 (= TR-READYEXP-2026),
-# BTAX-AGENTICCOMMERCE-2026 (= BTAX-AGENTIC-2026, BTAX-BAL-2026), SOVOS-FRANCE-2026b (discourse file's SOVOS-FRANCE-GOLIVE-2026),
-# EC-VIDA-2025 (= EC-VIDA-2026).
+# are tax-compliance-corporate-17; three-way reconciliation of calculated, invoiced and reported tax is
+# tax-data-technology-16 (an idea) and tax-data-technology-09. The VAT and customs part of cross-tax intercompany
+# review is tax-transfer-pricing-11. Source refs are shared with the other tax modules where the same document is cited.
 
 - id: tax-indirect-tax-01
   title: AI-proposed product tax codes with confidence scores, reviewed by a person
