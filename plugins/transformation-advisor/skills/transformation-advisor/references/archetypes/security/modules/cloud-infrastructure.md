@@ -26,7 +26,8 @@ most. Say "vendor claim" whenever you quote a vendor figure.
 Securing cloud accounts and workloads (posture management, runtime detection and response, Kubernetes), cloud
 identities and permissions, infrastructure as code (IaC: cloud resources defined in files such as Terraform), network
 and edge policy (firewalls, WAFs, egress) and endpoints, including developer machines that run coding agents. It is
-the team that owns the infrastructure layer, so it also builds the sandboxes in which other teams' AI agents run.
+the team that owns the infrastructure layer; the 2026 agent incidents ran through exposed credentials and permissive
+cloud roles, which puts its egress and identity controls at the centre of agent isolation [CERTIN-CIAD0049-2026].
 Boundaries: agent identity, containment and action logging are in ai-security (`security-ai-security-06`, `-10`,
 `-12`); the Wiz Red Agent perimeter agent is `security-vulnerability-exposure-21`; autonomous pentest agents such as
 AWS Security Agent are `security-vulnerability-exposure-17`; calibrated endpoint-triage classifiers (CrowdStrike) are
@@ -51,8 +52,8 @@ AWS Security Agent are `security-vulnerability-exposure-17`; calibrated endpoint
 ## 3. Where AI is changing the work
 
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
-multi-step outcome with checkpoints), reinvent (the service or operating model changes). In every deployment found,
-people keep IAM and network-boundary changes, merges and high-severity verdicts.
+multi-step outcome with checkpoints), reinvent (the service or operating model changes). In the deployments found,
+people keep merges, risky fixes and higher-severity verdicts; WRITER also reserves IAM and network changes for people.
 
 **Posture and prioritisation**
 - Improve: `#01` rank findings by reachability, toxic permission combinations and data access; Microsoft's Posture
@@ -74,7 +75,7 @@ people keep IAM and network-boundary changes, merges and high-severity verdicts.
 - Improve: `#06` remediation agents find owner, root cause and fix layer and draft the ticket or pull request
   (project44: "10x faster" remediation, metric undefined; Rogo AI quote; grade B).
 - Automate: `#07` evidence-gated auto-remediation: safe fixes run, risky ones wait for approval, unsafe ones go to the
-  owner (Tamnoon method; PatchWeaver prototype halves change-policy violations; grade C).
+  owner (Tamnoon method; PatchWeaver prototype had about half the policy violations in lab tests; grade C).
 
 **Identities and permissions**
 - Improve (process): `#08` unused-access findings become least-privilege IaC pull requests (AWS reference pattern,
@@ -117,10 +118,10 @@ people keep IAM and network-boundary changes, merges and high-severity verdicts.
 logs: `-12`; untrusted log content: `-13`; secret sweeps and LLM privilege audit: `-09`. Perimeter agent:
 `security-vulnerability-exposure-21`. Constrained response actions: `security-operations-19`.
 
-Coverage: most entries are augment (14). Automate has five (`#02`, `#07`, `#16`, `#17`, `#24`; two are ideas). Assist
+Coverage: most entries are augment (16). Automate has five (`#02`, `#07`, `#16`, `#17`, `#24`; two are ideas). Assist
 has one (`#18`). Delegate has only a talk abstract (`#09`) and an idea (`#19`); the strongest delegate evidence nearby
 is autonomous pentesting in vulnerability-exposure. Model scope has two entries (`#22`, `#23`), neither with outcomes.
-No assist entry at process or model scope, and no automate or delegate entry at model scope, has evidence.
+There are no entries for assist at process or model scope, or for automate or delegate at model scope.
 
 ## 4. Interview probes
 
@@ -212,7 +213,7 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
   without deep cloud experience can read its verdicts [WIZ-ZS-2026].
 - **Small teams cover large estates.** Owkin (three people, more than 50 AWS accounts) and La Centrale (three people,
   more than 2,000 Lambda functions) credit graph context and AI-assisted triage [WIZ-OWKIN-2026, WIZ-LACENTRALE-2026].
-- **Engineers fix, security validates less.** project44 ran an engineering-wide enablement session; developers get
+- **Engineers fix rather than validate.** project44 ran an engineering-wide enablement session; developers get
   pre-filled tickets or pull requests [WIZ-PROJECT44-2026, WIZ-OPMODEL-2026].
 - **Reviewers of agents, not only answers.** Engineers check an agent's reach, identity and cost [FWDCLOUDSEC-RAJI-2026].
 - **Builders of agent sandboxes.** Datadog runs a multi-cloud sandbox for untrusted code and agents at tens of millions
@@ -255,21 +256,22 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 - **"The numbers are marketing."** Mostly true: nearly every figure sits on a vendor page, and independent triage
   research found every tested approach missed at least 40.4% of attack alerts [ARXIV-2610.10608]. Ask for a parallel
   run on your own alerts, as ZS did [WIZ-ZS-2026], and for false-alarm rates [AWS-DECEPTION-2026].
-- **"An AI fix will break production."** It can: one reported AWS disruption followed an AI tool erasing its
-  environment, though Amazon called it user error [TOMSHW-AWSKIRO-2026]. Use usage evidence and approval tiers (`#07`),
+- **"An AI fix will break production."** Agents holding production permissions can: one reported AWS disruption
+  followed an AI coding tool erasing its environment, though Amazon called it user error [TOMSHW-AWSKIRO-2026]. Use usage evidence and approval tiers (`#07`),
   dry runs and review limits (`#08`).
 - **"The scanner passes, so it is fixed."** Not reliable: 83.3% of repairs removed the targeted finding but 10.4%
   were clean under a full scan [ARXIV-2606.26590].
 - **"Attackers can't touch our AI."** Log fields are attacker-controlled; cloud providers' guardrails missed log-embedded
   injections [ARXIV-2604.15368, ARXIV-2605.24421]. Constrain what the model can trigger (`security-operations-19`).
-- **"Rule-based scanners already do this."** A founder of an AI DevOps product keeps rule-based scanners for determinism
-  [HN-DATAFRUIT-2025]; AI adds context, triage and fix drafting on top (`#01`, `#06`).
+- **"Rule-based scanners already do this."** A founder of an AI DevOps product said he keeps rule-based scanners for
+  determinism [HN-DATAFRUIT-2025]; the entries here put AI on context, triage and fix drafting (`#01`, `#06`, `#11`).
 - **"Our change board can't move that fast."** ENISA agrees [ENISA-FRONTIER-2026]; vendors let teams set autonomy per
   workflow [WIZ-FORGOV-2026], and research encodes change rules as policy (`#07`).
 - **"AI will only grow the backlog."** Tamnoon expects AI scanning to deepen configuration backlogs (vendor view)
-  [TAMNOON-CORTEX-2026]; that is the case for owner routing and gated fixes, not more findings.
+  [TAMNOON-CORTEX-2026]; ask where findings wait today before adding discovery.
 - **"Containing our own agents is the AI team's job."** CERT-In's cases ran through exposed credentials and permissive
-  cloud roles [CERTIN-CIAD0049-2026]; cloud teams own the egress and identity controls (`security-ai-security-10`).
+  cloud roles, and the controls it asks for (per-run identity, network-enforced egress) sit in cloud infrastructure
+  [CERTIN-CIAD0049-2026] (`security-ai-security-10`).
 
 ## 10. Sources
 

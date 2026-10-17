@@ -677,7 +677,7 @@
     entry-level roles (FEEDLY-VALUE-2026).
   evidence_grade: B
   sources:
-    - {ref: SANS-CTI-2026, title: "SANS 2026 Cyber Threat Intelligence Survey Insights (key findings page and FAQ)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/research/cyber-threat-intelligence-report", date: "2026-05", access: full, locator: "FAQ on AI use in CTI"}
+    - {ref: SANS-CTI-2026, title: "SANS 2026 Cyber Threat Intelligence Survey Insights (key findings page and FAQ)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/research/cyber-threat-intelligence-report", date: "2026-05", access: full, locator: "Top Takeaways; FAQ on AI use in CTI"}
     - {ref: SANS-CTIPR-2026, title: "91% of CISOs Value Cyber Threat Intelligence. Only 26% Say It Drives Their Decisions (2026 SANS CTI Survey press release)", publisher: SANS Institute, type: survey, url: "https://www.sans.org/press/announcements/2026-cyber-threat-intelligence-survey-insights-report", date: "2026-05-19", access: full, locator: "opening; paragraphs on AI use"}
     - {ref: MSFT-TIBAGENT-2026, title: "Security Copilot Threat Intelligence Briefing Agent in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/threat-intel-briefing-agent-defender", date: "2026-07-02", access: full, locator: "introduction; prerequisites; agent identity section"}
     - {ref: MSFT-DEFENDER-AGENTS-2026, title: "Deploy AI agents in Microsoft Defender", publisher: Microsoft, type: vendor, url: "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender", date: "2026-05-12", access: full, locator: "Threat Intelligence Briefing Agent permissions section (page ms.date 2026-05-12; updated August 2026)"}
@@ -685,9 +685,9 @@
     - {ref: GOOGLE-GTICHANGELOG-2026, title: "August 12th, 2026 - Agentic Flows & API, and Threat Actor Naming Updates", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/changelog/august-5th-2026-agentic-flows-api-and-threat-actor-naming-updates", date: "2026-08-12", access: full, locator: "Public Preview: Google TI Flows"}
     - {ref: RF-AI-2026, title: "Streamline Security Workflows with AI", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/platform/ai", date: "2026-10-17", access: full, locator: "AI Report Creation (page undated; retrieval date)"}
     - {ref: RF-COWBELL-2026, title: "Cowbell Achieves 90% Cost Savings With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/cowbell", date: "2026-09-30", access: full, locator: "paragraph on reports and short summaries"}
-    - {ref: RF-PUBSECTOR-2026, title: "Public Sector Agency Collects Intelligence 95% Faster Using Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/public-sector-agency", date: "2026-09-29", access: full, locator: "'Streamlining Security Workflows With Integrations'"}
+    - {ref: RF-PUBSECTOR-2026, title: "Public Sector Agency Collects Intelligence 95% Faster Using Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/public-sector-agency", date: "2026-09-29", access: full, locator: "'Eliminating Manual Work With AI and Automation'"}
     - {ref: RF-SUPERHUMAN-2026, title: "How Superhuman Unlocked a New Era of AI-Driven Threat Intelligence With Recorded Future", publisher: Recorded Future, type: vendor, url: "https://www.recordedfuture.com/case-study/superhuman", date: "2026-06-08", access: full, locator: "paragraphs on leadership communication"}
-    - {ref: DHS-AIINV-CISA-2026, title: "Cybersecurity and Infrastructure Security Agency - AI Use Cases (DHS AI Use Case Inventory)", publisher: US Department of Homeland Security, type: regulator, url: "https://www.dhs.gov/ai/use-case-inventory/cisa", date: "2026-01-28", access: full, locator: "DHS-2335 (pre-deployment); DHS-2306 (deployed)"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "DHS-2335 (stage 'Initiation'); CISAChat DHS-2306 (stage 'Implementation and Assessment') (read through a text mirror)"}
     - {ref: JOB-SERVICENOW-2025, title: "Staff Cyber Threat Intelligence Analyst | Reports Officer", publisher: ServiceNow (via Built In), type: job-posting, url: "https://builtin.com/job/staff-cyber-threat-intelligence-analyst-reports-officer/7520264", date: "2025-10-30", access: full, locator: "Responsibilities; Required Qualifications"}
     - {ref: ENISA-CTL-2026, title: "ENISA Cybersecurity Threat Landscape Methodology (updated 18 September 2026)", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20CTL%20Methodology_Updated%2018%20september%202026.pdf", date: "2026-09-18", access: full, locator: "section 2.4.7"}
     - {ref: ENISA-ETL-2026, title: "ENISA Threat Landscape 2026", publisher: ENISA, type: regulator, url: "https://www.enisa.europa.eu/sites/default/files/2026-09/ENISA%20Threat%20Landscape%202026_Final.pdf", date: "2026-09", access: full, locator: "Disclaimer"}
@@ -700,8 +700,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged practice-07 (B), discourse-04 (C), governance-01 (B) and practice-22 (ISAC operations, D idea). Grade B:
-    Cowbell, Superhuman, CISA and ServiceNow are named, but none publishes a measured time saving. CISA's drafting tool
-    is pre-deployment; CISAChat (internal search and summaries) is deployed. Runtime class follows the scheduled agents
+    Cowbell, Superhuman, CISA and ServiceNow are named, but none publishes a measured time saving. CISA's December 2024
+    page lists its drafting tool at the initiation stage and CISAChat (internal search and summaries) at implementation
+    and assessment; the January 2026 DHS inventory used in synthesis could not be reopened (HTTP 403). Runtime class follows the scheduled agents
     (Microsoft, Google); analysts also draft with personal assistants. A sponsor's summary of the SANS survey gives use
     shares of 56% (summarization and report writing), 46% (parsing and normalization) and 45% (workflow automation)
     without a stated denominator (SOCRADAR-SANSCTI-2026). The National Council of ISACs is considering
@@ -727,16 +728,18 @@
   solution: >-
     CISA's Automated Indicator Sharing (AIS) service uses natural-language processing to flag potential personal data
     in submissions; flagged items go to CISA analysts, who confirm or reject and redact, while privacy experts monitor
-    the system and audits run regularly (DHS-AIINV-CISA-2026, DHS-4). Researchers pilot LLMs for two further steps:
+    the system and audits run regularly (CISA-AIUC-2024, DHS-4). GAO audited this component in 2024 and confirms that
+    analysts review each flag and remove personal data not related to a threat before dissemination (GAO-24-106246). Researchers pilot LLMs for two further steps:
     redacting victim identifiers from an incident report while keeping attacker detail, and converting findings into a
     STIX 2.1 file (ARXIV-2609.01174, section 6). CISA's IMX tool helps experts publish STIX packages in minutes through
     a guided interface; its abstract makes no AI claim (FIRST-CON-2026, 15 June).
   outcomes:
-    - {lever: risk, description: "none published for CISA's tool", figure: "none published", measures: "The inventory gives no detection rate, false-positive rate or review volume", provenance: self-reported, source_ref: DHS-AIINV-CISA-2026}
+    - {lever: risk, description: "none published for CISA's tool; GAO reports CISA set up metrics in September 2024 (number of PII detections, rate of false detections, time from detection to dissemination) shown to analysts monthly, but no values are public", figure: "none published", measures: "Neither CISA's inventory nor GAO's report gives a detection rate, false-positive rate or review volume", provenance: independent, source_ref: GAO-24-106246}
     - {lever: quality, description: "Redaction pilot: under a privacy-first prompt the three models missed at most 3 of 92 injected identifiers, but one removed 50 values that identified no one (35% of all its removals); a utility-first prompt reversed the errors", figure: "at most 3 of 92 injected values missed (privacy prompt); 50 over-removals by GPT-5.5", measures: "Injected personal and organization-identifying values (92 values plus 10 phrases) in 4 held-out incident reports, three LLMs, two prompts (Table 3); lab pilot", provenance: independent, source_ref: ARXIV-2609.01174}
     - {lever: quality, description: "STIX pilot: every model produced files that parse and carry the supplied findings, but every model asserted relationships the findings did not support", figure: "38 of 73 asserted links correct (GLM 5.2); 67 links asserted (GPT-5.5)", measures: "Correct links among links asserted in generated STIX files on reserved test campaigns (Table 4)", provenance: independent, source_ref: ARXIV-2609.01174}
   prerequisites:
-    - "A review queue staffed by trained analysts and a privacy function that monitors the tool and feeds corrections back (DHS-AIINV-CISA-2026, DHS-4)"
+    - "A review queue staffed by trained analysts and a privacy function that monitors the tool and feeds corrections back (CISA-AIUC-2024, DHS-4)"
+    - "Documented data sources, data-reliability assessment, testing, monitoring and performance metrics; GAO's 2024 audit found the first two missing, and CISA closed all eight recommendations by January 2025 (GAO-24-106246)"
     - "A written redaction policy stating what a shared report must keep and may lose; the pilot found models follow whichever goal the prompt states (ARXIV-2609.01174, Experiment 3)"
     - "A model option that keeps the unredacted report inside the organization, since sending it to a third party discloses what the organization is trying to protect (ARXIV-2609.01174, discussion)"
   risks_and_guardrails:
@@ -747,15 +750,16 @@
     - "NIS2 Article 29 and DORA Article 45 frame voluntary sharing arrangements; DORA adds GDPR and competition-law limits (EURLEX-NIS2-2022; EURLEX-DORA-2022)"
     - "Liability protections for sharing through AIS rest on the Cybersecurity Information Sharing Act of 2015, which CISA's page says was extended to 2026-09-30; its status after that date was not confirmed (CISA-AIS-2026)"
   human_checkpoints:
-    - "CISA analysts confirm or reject each flagged detection and redact (DHS-AIINV-CISA-2026, DHS-4)"
+    - "CISA analysts confirm or reject each flagged detection and redact before the indicator is disseminated (CISA-AIUC-2024, DHS-4; GAO-24-106246)"
     - "Expert review at each of the four steps of generating shareable CTI (ARXIV-2609.01174, abstract)"
   role_evolution: >-
-    Privacy experts become reviewers of the tool's output and a source of feedback (DHS-AIINV-CISA-2026, DHS-4).
+    Privacy experts become reviewers of the tool's output and a source of feedback (CISA-AIUC-2024, DHS-4).
     Practitioners rated redaction among the strongest candidates for AI support while doubting reliability: 14 of 18
     lacked confidence AI would do sharing tasks correctly (ARXIV-2609.01174, section 3.2).
   evidence_grade: B
   sources:
-    - {ref: DHS-AIINV-CISA-2026, title: "Cybersecurity and Infrastructure Security Agency - AI Use Cases (DHS AI Use Case Inventory)", publisher: US Department of Homeland Security, type: regulator, url: "https://www.dhs.gov/ai/use-case-inventory/cisa", date: "2026-01-28", access: full, locator: "Deployment: DHS-4; Inactive: DHS-5"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Automated Detection of PII in Cybersecurity Data (DHS-4), stage 'Operation and Maintenance'; DHS-5 (read through a text mirror)"}
+    - {ref: GAO-24-106246, title: "Artificial Intelligence: Fully Implementing Key Practices Could Help DHS Ensure Responsible Use for Cybersecurity (GAO-24-106246)", publisher: US Government Accountability Office, type: regulator, url: "https://www.gao.gov/products/gao-24-106246", date: "2024-02-07", access: full, locator: "Highlights; description of Automated PII Detection; recommendations 2 to 8 and their closure notes (read through a text mirror)"}
     - {ref: ARXIV-2609.01174, title: "A SoK for SoCs: Reading the TI Leaves on AI for Cyber Threat Intelligence Generation and Sharing", publisher: "arXiv (UC Santa Barbara et al.)", type: academic, url: "https://arxiv.org/abs/2609.01174", date: "2026-09-01", access: full, locator: "section 3.2; section 6, Experiments 3 and 4, Tables 3 and 4; discussion"}
     - {ref: FIRST-CON-2026, title: "38th FIRST Conference program, Denver, 14-19 June 2026 (session abstracts)", publisher: FIRST, type: conference, url: "https://www.first.org/conference/2026/program", date: "2026-06", access: full, locator: "'Indicator Message eXchange (IMX)' (CISA), 15 June"}
     - {ref: CISAGOV-IMX-2026, title: "cisagov/imx README", publisher: CISA, type: regulator, url: "https://raw.githubusercontent.com/cisagov/imx/develop/README.md", date: "2026-10-17", access: full, locator: "whole file (undated; retrieval date)"}
@@ -768,9 +772,11 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged practice-10 (B), practice-11 (D), discourse-03 (D), governance-05 (C) and governance-06 (C). Grade B rests on
-    CISA's deployed PII screening, which the inventory classifies as natural-language processing, not generative AI;
-    the LLM redaction and STIX results are a lab pilot on 4 reports. A decision-tree confidence score for AIS
-    submissions is listed as retired and consolidated into the PII use case (DHS-5). IMX's FIRST abstract calls it
+    CISA's operational PII screening, which CISA and GAO describe as natural-language processing; the LLM redaction and
+    STIX results are a lab pilot on 4 reports. Synthesis cited the January 2026 DHS inventory, which returned HTTP 403
+    directly and through the text mirror on 2026-10-17; the entry now rests on CISA's December 2024 page and GAO's 2024
+    audit. CISA's 2024 page also lists a decision-tree confidence score for AIS submissions (DHS-5) in operation; the
+    synthesis reading that the 2026 inventory retired it could not be rechecked. IMX's FIRST abstract calls it
     newly open-sourced, but its README read on 2026-10-17 says 'Code coming soon'. Only 3 of the 18 surveyed
     practitioners used LLMs to turn attack data into CTI. Routed: legal review of sharing processes to
     security-governance-risk.
@@ -899,7 +905,7 @@
     Future. Alert triage itself belongs to security-operations; this entry covers the intelligence feed into it.
 
 - id: security-threat-intelligence-16
-  title: New indicators matched automatically against enterprise telemetry by a hunting pipeline that also rechecks earlier intelligence
+  title: New indicators matched automatically against enterprise telemetry by an LLM-fed hunting pipeline
   archetype: security
   module: threat-intelligence
   function: technology-it
@@ -916,14 +922,16 @@
     Adobe's Cybersecurity Threat Research and Intelligence team built a platform on a lakehouse architecture that
     monitors dozens of sources, normalizes them into one schema, uses LLMs to extract indicators, enriches them, launches
     parallel hunting jobs across EDR, email security, cloud and authentication logs, and sends structured reports to
-    analysts. It also revisits earlier intelligence that produced no matches, to catch delayed signals (ADOBE-CTRI-2026).
+    analysts (ADOBE-CTRI-2026, workflow steps 1 to 5). In its design guidance for teams building similar systems, Adobe
+    recommends periodically re-evaluating earlier intelligence that produced no matches, to catch delayed signals
+    (ADOBE-CTRI-2026, 'Implement an automated monitoring and recheck system').
   outcomes:
     - {lever: speed, description: "Adobe says each hunting job processes thousands of indicators across millions of security events and completes within minutes; no before-and-after comparison is given", figure: "scans completed within minutes", measures: "Adobe's description of a hunting job; no baseline, sample or error rate", provenance: self-reported, source_ref: ADOBE-CTRI-2026}
   prerequisites:
     - "A common data schema for indicators, detections, workflows and system state (ADOBE-CTRI-2026, 'Start with a unified data architecture')"
     - "Telemetry from EDR, email, cloud and authentication logs in one queryable store laid out for fast scans (ADOBE-CTRI-2026, 'Design for scale from the start')"
   risks_and_guardrails:
-    - "Circuit breakers when external sources fail, retry strategies, asynchronous job queues and pipeline-health dashboards (ADOBE-CTRI-2026, 'Engineer for production reliability')"
+    - "Adobe's design guidance recommends circuit breakers when external sources fail, retry strategies, asynchronous job queues and pipeline-health dashboards (ADOBE-CTRI-2026, 'Engineer for production reliability')"
     - "Run the agentic system beside existing processes so teams can build trust before relying on it (ADOBE-CTRI-2026, closing section)"
     - "Poisoned content in ingested reports is a known attack on LLM-assisted workflows (FIRST-CON-2026, CyCraft session, 18 June)"
   human_checkpoints:
@@ -938,7 +946,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     From practice-03. Adobe gives no precision, false-positive or override data and does not say how many hunts ran.
-    Publication date from the page metadata.
+    Publication date from the page metadata. The recheck of earlier intelligence and the reliability controls appear in
+    Adobe's guidance for others ('how security teams can approach building a similar system'), not in its description
+    of its own platform, so they are recorded as recommendations.
 
 - id: security-threat-intelligence-17
   title: Chained agentic workflow from an inbound report to asset scoping, tickets and draft detections, with approval gates
@@ -1067,8 +1077,8 @@
     automated script decoding, hunting query creation, metadata labelling, 'judge agents' for quality control and AI
     assistants for onboarding under a human-machine teaming model (GOOGLE-DEFADV-HMT-2026). Google's Threat Hunting
     agent was in preview in June 2026 (TECHINFORMED-GOOGLE-2026). Huntress and Twilio postings expect hunters to work
-    with AI (HUNTRESS-JOBDETH-2026; TWILIO-JOBSSETH-2026), and BSides Las Vegas 2026 ran a workshop on AI skill files
-    for network hunts (BSIDESLV-2026).
+    with AI (HUNTRESS-JOBDETH-2026; TWILIO-JOBSSETH-2026), and the BSides Las Vegas 2026 programme listed a workshop on
+    AI skill files for network hunts (BSIDESLV-2026).
   outcomes:
     - {lever: quality, description: "Intel 471 publishes no figures. A research prototype (AHLERT) that constrains hunt leads to the defender's own assets and controls lifted lead quality over a flat retrieval baseline", figure: "mean F1 0.44 to 0.85", measures: "Mean F1 of hunt leads generated from public CTI reports for well-known APTs, hybrid retrieval with ATT&CK-seeded ontology grounding versus single-route flat retrieval, across proprietary and open-weight models; authors' own system", provenance: independent, source_ref: ARXIV-2609.08790}
   prerequisites:
@@ -1197,11 +1207,13 @@
     - "Analysts mark false positives in Slack, which syncs to Jira and back; findings with 3 or more occurrences and an 80% or higher false-positive rate are injected as known false positives (GROWTHERAPY-HUNT-2026, 'Handling noise')"
     - "A weekly report on hunts, findings, false positives and cost decides which hunts need tuning (GROWTHERAPY-HUNT-2026)"
   role_evolution: >-
-    Not discussed in the post beyond the analyst feedback loop (GROWTHERAPY-HUNT-2026). Risky Business sponsor segments
-    argue the data layer is the lever for automated security work (RISKYBIZ-SOAPBOX109-2026; RISKYBIZ-855-2026).
+    Not discussed in the post beyond the analyst feedback loop and the weekly tuning review (GROWTHERAPY-HUNT-2026).
+    Two sponsored Risky Business segments put the data layer at the centre: Nebulock's product is built on the idea that
+    much of security is a data problem (RISKYBIZ-SOAPBOX109-2026), and Corelight's segment asks whether a strong model
+    or well-structured data matters more for automated SOC work (RISKYBIZ-855-2026).
   evidence_grade: A
   sources:
-    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: Grow Therapy engineering blog, type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026-08", access: full, locator: "'How it runs on AWS', 'Multi-phase analysis', 'Handling noise', 'Lessons from building this', 'Where it stands today'"}
+    - {ref: GROWTHERAPY-HUNT-2026, title: "Threat hunt AI: How we built an AI security analyst on AWS for under $500/month", publisher: Grow Therapy engineering blog, type: firm, url: "https://engineering.growtherapy.com/post/threat-hunt-ai-how-we-built-an-ai-security-analyst-on-aws-for-under-500-month", date: "2026", access: full, locator: "'How it runs on AWS', 'Multi-phase analysis', 'Handling noise', 'Lessons from building this', 'Where it stands today' (post undated; published by 2026-08-19, when DEW #167 featured it)"}
     - {ref: DETENGWEEKLY-167-2026, title: "DEW #167 - More Security Agentic Breaches, Cheap and Scalable Threat Hunting & Detection Skills", publisher: Detection Engineering Weekly, type: community, url: "https://www.detectionengineering.net/p/dew-167-more-security-agentic-breaches", date: "2026-08-19", access: full, locator: "item on the Grow Therapy post (summary and cost caveat)"}
     - {ref: FORRESTER-PREDICT-2025, title: "Recorded Future Predict 2025: Intelligence To Operations ... And Now To Action (J. Shabadu)", publisher: Forrester, type: firm, url: "https://www.forrester.com/blogs/recorded-future-predict-2025-intelligence-to-operations-and-now-to-action/", date: "2025-10-21", access: full, locator: "'Inching Toward Autonomy, One Advanced Automation At A Time'"}
     - {ref: SECURITYWEEK-HUNTING-2026, title: "Cyber Insights 2026: Threat Hunting in an Age of Automation and AI", publisher: SecurityWeek, type: press, url: "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/", date: "2026-01-26", access: full, locator: "'The continuing rise of automation' (read through a text mirror)"}
@@ -1218,7 +1230,8 @@
     before-and-after finding counts, which are the company's own tracked data; the noise shares (about 40%; about one
     third of confirmed findings dismissible with 30 seconds of context) are the team's estimates and are labelled so.
     Single company, own definitions, self-reported. The hunts are log-based and not all are intelligence-driven. The
-    post is undated; Detection Engineering Weekly featured it on 2026-08-19. The adversarial dismissal phase is also
+    post is undated (date recorded as 2026); Detection Engineering Weekly featured it on 2026-08-19. The cost figures
+    count as measured because the post says token usage and cost are logged per hunt and reported weekly. The adversarial dismissal phase is also
     security-operations-07 (evidence-gated dismissal). Hardening against injected content: see security-ai-security-13
     and security-incident-response-09.
 
@@ -1255,8 +1268,9 @@
   human_checkpoints:
     - "Customer feedback on each alert is the evaluation signal; whether a person reviews before an alert is raised is not stated (ARXIV-2605.20896)"
   role_evolution: >-
-    Microsoft describes the agent as uncovering false negatives and filling gaps for analysts, not replacing them
-    (MSFT-DEFENDER-AGENTS-2026).
+    Microsoft describes the agent as an always-on backend service that identifies gaps and uncovers false negatives,
+    raising dynamic alerts with context for analysts (MSFT-DEFENDER-AGENTS-2026); neither source describes how analyst
+    roles change.
   evidence_grade: A
   sources:
     - {ref: ARXIV-2605.20896, title: "GenAI-Driven Threat Detection with Microsoft Security Copilot", publisher: "arXiv (Microsoft authors)", type: academic, url: "https://arxiv.org/abs/2605.20896", date: "2026-05-20", access: full, locator: "abstract"}
@@ -1336,7 +1350,7 @@
   risks_and_guardrails:
     - "Not described in the postings or the report beyond the provider advising defenders to experiment with AI in SOC automation, detection, vulnerability assessment and incident response (ANTHROPIC-GTG1002-2025)"
   human_checkpoints:
-    - "Investigators and analysts remain responsible for assessments; engineers build tools to accelerate them (OPENAI-JOBII-2025)"
+    - "Engineers build tools with and for analysts and investigators, who conduct the investigations (OPENAI-JOBII-2025)"
   role_evolution: >-
     OpenAI pairs engineers with analysts and investigators on one team; Anthropic describes a small engineering role
     that may become a multi-person collections function (OPENAI-JOBII-2025; ANTHROPIC-JOBTIE-2026).

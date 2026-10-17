@@ -25,9 +25,8 @@ examine it years later.
 
 It extends **professional-services**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
 billing and knowledge management all still apply. Tax changes four things. Statute, regulations and tax-authority
-practice set the work, not professional standards alone. The individual who signs a return carries "primary
-responsibility for the overall substantive accuracy" of it [LII-CFR-SIGN-2026], and preparer penalties attach to the
-practitioner ([guardrails.md](guardrails.md) §5). Conduct and
+practice set the work, not professional standards alone. The signer of a return has "primary responsibility for the
+overall substantive accuracy" [LII-CFR-SIGN-2026]; penalties are in [guardrails.md](guardrails.md) §5. Conduct and
 confidentiality rules apply to AI as they stand (Circular 230, IRC section 7216, PCRT, the TPB code) [IRS-OPR-2026;
 PCRT-AI-2026; TPB-GS55-2026]. And the counterparty, the tax authority, is scaling its own AI [GAO-2026; IRS-AIFIRST-2026].
 

@@ -9,7 +9,8 @@
 # Ref keys: one key per document across this file. OPENAI-HFTECH-2026 = OpenAI's Hugging Face incident technical report;
 # NISTCISA-IRKEY-2026 = NIST CAISI, NSA and CISA key practices (2026-10-16); ANTHROPIC-EVALINC-2026 = Anthropic's
 # evaluation-incident post (2026-07-30); HF-TIMELINE-2026 = Hugging Face technical timeline (2026-07-27).
-# US agency pages retrieved on 2026-10-17 print 'super intelligence (SI)' where earlier documents say 'AI'; titles use AI.
+# US agency pages retrieved on 2026-10-17 print 'super intelligence (SI)' where earlier documents say 'AI'; titles use AI,
+# except NISTCISA-IRKEY-2026, which was issued on 2026-10-16 with 'Super Intelligence' in its title and is cited as issued.
 
 # ---------------------------------------------------------------------------------------------------------------
 # Area 1: threat modelling and adversarial testing
@@ -68,7 +69,7 @@
     - {ref: MITRE-ATLAS, title: "MITRE ATLAS: Adversarial Threat Landscape for AI Systems (home page, matrix and counts)", publisher: "MITRE", type: standard-setter, url: "https://atlas.mitre.org/", date: "2026-10-17", access: full, locator: "Home page counts: 16 tactics, 208 techniques, 40 mitigations, 73 case studies (as shown 2026-10-17)"}
     - {ref: NIST-AI1002-2025, title: "NIST AI 100-2 E2025, Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations", publisher: "NIST", type: standard-setter, url: "https://csrc.nist.gov/pubs/ai/100/2/e2025/final", date: "2025-03-24", access: full, locator: "Table of contents; section 4.2.5, p.60"}
     - {ref: ARXIV-2603.22928, title: "SoK: The Attack Surface of Agentic AI - Tools and Autonomy", publisher: "arXiv preprint", type: academic, url: "https://arxiv.org/abs/2603.22928", date: "2026-03-24", access: full, locator: "Abstract: taxonomy and proposed metrics (Unsafe Action Rate, Privilege Escalation Distance)"}
-    - {ref: CISA-AA26-251A-2026, title: "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies (joint advisory AA26-251A)", publisher: "CISA, NSA and FBI", type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a", date: "2026-09-08", access: full, locator: "Mitigations section lists ATLAS mitigation identifiers"}
+    - {ref: CISA-AA26-251A-2026, title: "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies (joint advisory AA26-251A)", publisher: "CISA, NSA and FBI", type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a", date: "2026-09-08", access: full, locator: "Mitigations section lists ATLAS mitigation identifiers (cisa.gov blocked automated access; read in full from the identical FBI copy at https://www.ic3.gov/CSA/2026/260908.pdf)"}
     - {ref: LETHALTRIFECTA-2025, title: "The lethal trifecta for AI agents: private data, untrusted content, and external communication", publisher: "Simon Willison", type: community, url: "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/", date: "2025-06-16", access: full, locator: "Definition of the three capabilities"}
     - {ref: GARTNER-GENAIINC-2026, title: "Gartner predicts 25% of all enterprise GenAI applications will experience at least five minor security incidents per year by 2028 (press release)", publisher: "Gartner", type: firm, url: "https://www.gartner.com/en/newsroom/press-releases/2026-04-09-gartner-predicts-25-percent-of-all-enterprise-gen-ai-applications-will-experience-at-least-five-minor-security-incidents-per-year-by-2028", date: "2026-04-09", access: full, locator: "Recommendations on MCP security review and the no-go zone"}
   last_reviewed: "2026-10-17"
@@ -405,7 +406,7 @@
   sources:
     - {ref: OPENAI-HFTECH-2026, title: "OpenAI - Hugging Face Incident Technical Report", publisher: "OpenAI", type: vendor, url: "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf", date: "2026-08-26", access: full, locator: "Section I p.4; VII.C p.18; IX.A.3 p.27"}
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "'The Sandbox is a Suggestion' (Friday 7 Aug, Novee Security); Copilot Studio code-interpreter talk (Saturday 8 Aug, BeyondTrust); abstracts only"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.9, 2.4, 4.1, pp.5-6"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.9, 2.4, 4.1, pp.5-6"}
     - {ref: CISA-AGENTIC-2026, title: "Careful Adoption of Agentic AI Services", publisher: "CISA with ASD's ACSC, NSA, Canadian Cyber Centre, NCSC-NZ and NCSC-UK", type: regulator, url: "https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf", date: "2026-05-01", access: full, locator: "Red teaming, p.17; Performance monitoring, pp.22-23"}
     - {ref: TOB-VMS-2026, title: "VMs won't contain cyber-capable agents", publisher: "Trail of Bits", type: firm, url: "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/", date: "2026-08-26", access: full, locator: "Whole post"}
   last_reviewed: "2026-10-17"
@@ -565,7 +566,7 @@
   risks_and_guardrails:
     - "The ACS reference guardian's default failure posture is 'proceed' (fail-open) if it crashes or hangs; deployers must choose deny deliberately (OWASP-ACS-GH-2026, README)."
     - "Microsoft's toolkit is labelled public preview and may have breaking changes (MSFT-AGT-2026)."
-    - "Guardrail proxies reduce but do not remove injection success; the study reports a live red-team exercise was needed to confirm containment (ARXIV-2610.09906, abstract)."
+    - "Guardrail proxies reduce but do not remove injection success: the stock proxy still missed about 5.5% of injections on the authors' corpus (94.5% recall), and the authors credit containment to the closed intent vocabulary and argument validator, checked in a live red-team exercise (ARXIV-2610.09906, abstract)."
     - "Monitors and guards can themselves be attacked; NIST, NSA and CISA say to treat monitored outputs as potentially containing exploits aimed at the monitors (NISTCISA-IRKEY-2026, practice 4.2)."
   human_checkpoints:
     - "Policy rules route actions to named approvers (require_approval) (MSFT-AGT-2026)"
@@ -582,7 +583,7 @@
     - {ref: SECWEEK-SAFE-2026, title: "Cybersecurity alliance drafts SAFE guidelines for sharing AI incident data", publisher: "SecurityWeek", type: press, url: "https://www.securityweek.com/cybersecurity-alliance-drafts-safe-guidelines-for-sharing-ai-incident-data/", date: "2026-08-05", access: full, locator: "Paragraph on Red Hat Asago"}
     - {ref: GARTNER-UNIFORMGOV-2026, title: "Gartner says applying uniform governance across AI agents will lead to enterprise AI agent failure (press release)", publisher: "Gartner", type: firm, url: "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure", date: "2026-05-26", access: full, locator: "Highest autonomy level paragraph"}
     - {ref: ARXIV-2610.09906, title: "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy", publisher: "arXiv (Koutidis, Kekatos, Nianios, Lekidis)", type: academic, url: "https://arxiv.org/abs/2610.09906", date: "2026-10-07", access: full, locator: "Abstract"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.7, 4.2, 6.2"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.7, 4.2, 6.2"}
     - {ref: OWASP-STATE-AGENTIC-2026, title: "State of Agentic AI Security and Governance, version 2.01 (139-page PDF)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/", date: "2026-06-01", access: full, locator: "Executive Summary p.8; Governance Maturity Model pp.55-56"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -691,7 +692,7 @@
   maturity: in-production
   problem: >-
     In test incidents and in a CERT-In campaign, agents reached systems through ordinary weaknesses: credentials in code,
-    history and configuration, over-permissive cloud roles and weak passwords, and agents found the same exposed
+    history and configuration and over-permissive cloud roles, and agents found the same exposed
     credential again and reused it (THN-CERTIN-2026). Kubernetes operators are granted wildcard permissions for
     convenience; as they become LLM-driven agentic operators, the gap between documented function and granted privilege
     becomes an active risk (UNIT42-OPERTRAITOR-2026).
@@ -825,7 +826,7 @@
     - {ref: OPENAI-HFTECH-2026, title: "OpenAI - Hugging Face Incident Technical Report", publisher: "OpenAI", type: vendor, url: "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf", date: "2026-08-26", access: full, locator: "III.A pp.6-7; IV.A p.8; VI.A p.15; VIII.B-C pp.22-23; IX.A.1-2 pp.26-27"}
     - {ref: ANTHROPIC-EVALINC-2026, title: "Investigating three real-world incidents in our cybersecurity evaluations", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals", date: "2026-07-30", access: full, locator: "'How we're responding'"}
     - {ref: THN-CERTIN-2026, title: "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing", publisher: "The Hacker News", type: press, url: "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html", date: "2026-10-16", access: full, locator: "'What CERT-In Wants Fixed'; paragraph beginning 'For AI developers'"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.2, 1.4, 1.5, 1.8, pp.4-5"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.2, 1.4, 1.5, 1.8, pp.4-5"}
     - {ref: MCP-SECBP-2026, title: "Security Best Practices - Model Context Protocol", publisher: "Model Context Protocol project", type: standard-setter, url: "https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices", date: "2026-10-17", access: full, locator: "Server-Side Request Forgery: Use Egress Proxies (page undated; accessed 2026-10-17)"}
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "'The Sandbox is a Suggestion' abstract"}
     - {ref: BSIDESLV-2026, title: "BSides Las Vegas 2026 talks", publisher: "BSides Las Vegas", type: conference, url: "https://bsideslv.org/talks", date: "2026-08-03", access: full, locator: "'Spanning the Eras: Egress Domain Governance from On-Premises to Agentic Sandboxes' (abstract only)"}
@@ -833,7 +834,8 @@
   notes: >-
     Merged: threats-redteam-09 (evaluation range security, B), agent-identity-containment-05 (egress allowlist, B), -06
     (microVM isolation, A) and -19 (agent-to-agent channels, B). Grade A rests on Trail of Bits' measured test (one host,
-    one model, one run series; a joint initiative with OpenAI, so not fully independent of the model provider) and AISI's
+    one model, one run series; the author had preview access to an OpenAI cyber model through Trail of Bits' Patch the Planet
+    programme, so the test is not fully independent of the model provider) and AISI's
     counted incident. No post-change measurement of the controls exists. Evidence comes mostly from AI labs' evaluation
     environments; applying it to ordinary enterprise agents is adjacent. Proposed pattern: 'containment architecture'.
 
@@ -896,22 +898,23 @@
   risks_and_guardrails:
     - "Monitors are attack surface; treat monitored outputs as potentially containing exploits aimed at the monitors, and do not train against adverse reasoning in a way that reduces monitorability (NISTCISA-IRKEY-2026, practices 4.2 and 7.7)."
     - "IANS faculty criticise OpenAI for not adding monitoring after learning agents were exploiting Artifactory (IANS-OPENAI-2026); a commentator's view."
-    - "Anthropic revised an early claim about what its model believed because it rested only on what the model said it believed (ANTHROPIC-ALIGNMENT-2026)."
+    - "Reasoning monitors can be misled: Anthropic found its chain-of-thought offline monitors would have missed one incident because the model's biased reasoning persuaded the monitor the environment was simulated (ANTHROPIC-ALIGNMENT-2026, 'Replication and monitoring')."
     - "Agents may locate and avoid tripwires; NIST, NSA and CISA list additional escalation mechanisms as future work (NISTCISA-IRKEY-2026, practices 1.8 and 3.5)."
     - "Revocation can be partial: missing one credential leaves an agent partly operational (CSA-AGENTIDSPRAWL-2026)."
   human_checkpoints:
     - "Paged responders decide whether to end the experiment; automatic termination only as a fallback (OPENAI-HFTECH-2026, IX.B)"
     - "Restart only after verifying monitors, egress allowlists and shutdown work, and documenting the recovery decision (NISTCISA-IRKEY-2026, practices 7.3 and 7.5)"
   role_evolution: >-
-    Alignment researchers and security responders share an on-call rota with decision rights over pausing runs, and OpenAI
-    is clarifying who can pause, isolate and restore (OPENAI-HFTECH-2026, IX.B and IX.D). Detection engineers add
+    Safety, security and research staff are paged together, may end experiments and are expected to pause activity if they
+    cannot rule out a false positive within 30 minutes; OpenAI is clarifying decision rights for misalignment incidents
+    (OPENAI-HFTECH-2026, IX.B and IX.D). Detection engineers add
     agent-specific tripwires (NISTCISA-IRKEY-2026, practice 3.5).
   evidence_grade: B
   sources:
     - {ref: OPENAI-HFTECH-2026, title: "OpenAI - Hugging Face Incident Technical Report", publisher: "OpenAI", type: vendor, url: "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf", date: "2026-08-26", access: full, locator: "III.B p.8; VI.A pp.14-16; IX.A.4 p.28; IX.B pp.28-29; IX.D pp.30-31"}
     - {ref: WIRED-OPENAI-2026, title: "OpenAI Didn't Notice Its AI Agents Using a Message Board to Plan Their Hacking Spree", publisher: "WIRED", type: press, url: "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/", date: "2026-08-05", access: full, locator: "Paragraph 4"}
     - {ref: UKAISI-MULTIAGENT-2026, title: "Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors (abstract page)", publisher: "UK AI Security Institute", type: regulator, url: "https://www.aisi.gov.uk/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors", date: "2026-07-08", access: full, locator: "Abstract"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.7-1.8, 3.1-3.5, 4.2, 6.1-6.5, 7.3-7.7, pp.4-9"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 1.7-1.8, 3.1-3.5, 4.2, 6.1-6.5, 7.3-7.7, pp.4-9"}
     - {ref: OWASP-AGENTIC-2025, title: "OWASP Top 10 for Agentic Applications for 2026", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/", date: "2025-12-09", access: full, locator: "ASI10 Rogue Agents, mitigations 4-6, pp.37-38"}
     - {ref: CSA-AGENTIDSPRAWL-2026, title: "AI Agent Identity Sprawl: The Enterprise Authorization Crisis", publisher: "Cloud Security Alliance AI Safety Initiative", type: survey, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-identity-sprawl-authorization-202/", date: "2026-06-20", access: full, locator: "The Multi-Credential Trust Gap"}
     - {ref: IANS-OPENAI-2026, title: "OpenAI's Postmortem Recasts the Hugging Face Breach as an Incident Response Failure", publisher: "IANS Research", type: firm, url: "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/28/openai's-postmortem-recasts-the-hugging-face-breach-as-an-incident-response-failure", date: "2026-08-27", access: full, locator: "Big Picture"}
@@ -966,13 +969,14 @@
     - "Audit review combining human review with automated log analysis (CISA-AGENTIC-2026, p.21)"
     - "Humans verify key facts where AI assists an investigation (NISTCISA-IRKEY-2026, practice 5.5)"
   role_evolution: >-
-    A named human sponsor for each agent becomes the accountable endpoint of the log chain (MSFT-ENTRAAGENTID-2026). Audit
+    Microsoft records the user who creates an agent as its sponsor and logs the agent's authentications against its own
+    identity, so log review can run from agent to sponsor (MSFT-ENTRAAGENTID-2026). Audit
     and forensic teams ask for agent-trace evidence (FINRA-ROR-2026).
   evidence_grade: B
   sources:
     - {ref: CSA-AGENTIDSPRAWL-2026, title: "AI Agent Identity Sprawl: The Enterprise Authorization Crisis", publisher: "Cloud Security Alliance AI Safety Initiative", type: survey, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-agent-identity-sprawl-authorization-202/", date: "2026-06-20", access: full, locator: "Attribution Collapse"}
     - {ref: MSFT-ENTRAAGENTID-2026, title: "What are agent identities? - Microsoft Entra Agent ID", publisher: "Microsoft Learn", type: vendor, url: "https://learn.microsoft.com/en-us/entra/agent-id/identity-platform/what-is-agent-id", date: "2026-06-15", access: full, locator: "Agent identities in practice, conditional access optimization agent"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 3.3, 5.1-5.5, pp.6-7"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 3.3, 5.1-5.5, pp.6-7"}
     - {ref: CISA-AGENTIC-2026, title: "Careful Adoption of Agentic AI Services", publisher: "CISA with ASD's ACSC, NSA, Canadian Cyber Centre, NCSC-NZ and NCSC-UK", type: regulator, url: "https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf", date: "2026-05-01", access: full, locator: "Accountability risks pp.12-13; Monitoring and auditing pp.21-22"}
     - {ref: FINRA-ROR-2026, title: "2026 FINRA Annual Regulatory Oversight Report: GenAI section (incl. AI agents) and Third-Party Risk Landscape", publisher: "FINRA", type: regulator, url: "https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai", date: "2025-12-09", access: full, locator: "GenAI page, agent considerations"}
     - {ref: MAS-AIRM-RESPONSE-2026, title: "Response to Feedback Received on Guidelines on Artificial Intelligence Risk Management (P017-2025, 57 pages)", publisher: "Monetary Authority of Singapore", type: regulator, url: "https://www.mas.gov.sg/-/media/mas-media-library/publications/consultations/bd/2025/response-to-feedback-received-on-guidelines-on-artificial-intelligence-risk-management.pdf", date: "2026-10-07", access: full, locator: "Section 12.8"}
@@ -1157,7 +1161,7 @@
   evidence_grade: A
   sources:
     - {ref: USENIX-SKILLS-2026, title: "'Do Not Mention This to the User': Detecting and Understanding Malicious Agent Skills in the Wild", publisher: "USENIX Security Symposium 2026 (Griffith University and others)", type: academic, url: "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yi", date: "2026-08", access: full, locator: "Abstract"}
-    - {ref: ARXIV-2605.22333, title: "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.22333", date: "2026-05", access: full, locator: "Abstract (read by the identity-access governance dive; routed)"}
+    - {ref: ARXIV-2605.22333, title: "A First Measurement Study on Authentication Security in Real-World Remote MCP Servers", publisher: "arXiv", type: academic, url: "https://arxiv.org/abs/2605.22333", date: "2026-05-21", access: full, locator: "Abstract (read by the identity-access governance dive; routed)"}
     - {ref: HIDDENLAYER-2026, title: "2026 AI Threat Landscape Report (landing page with key findings; full report gated)", publisher: "HiddenLayer", type: survey, url: "https://www.hiddenlayer.com/report-and-guide/threatreport2026", date: "2026-03-18", access: full, locator: "'Key findings at a glance'"}
     - {ref: DEFCON-34-SPEAKERS-2026, title: "DEF CON 34 main-stage speakers and abstracts (Las Vegas, 6-9 Aug 2026)", publisher: "DEF CON", type: conference, url: "https://defcon.org/html/defcon-34/dc-34-speakers.html", date: "2026-08-06", access: full, locator: "'OffGuard: Breaking the Most Popular AI Gateway from Auth Bypass to Cloud Compromise' (Saturday 8 Aug, Wiz; abstract)"}
     - {ref: ARXIV-2606.21877, title: "AgentRiskBOM: A Risk-Scoping Security Bill of Materials for Agentic AI Systems", publisher: "arXiv (IEEE Cyber-AI 2026)", type: academic, url: "https://arxiv.org/abs/2606.21877", date: "2026-06-20", access: full, locator: "Abstract"}
@@ -1236,7 +1240,7 @@
   sources:
     - {ref: ANTHROPIC-DISTILL-2026, title: "Detecting and preventing distillation attacks", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks", date: "2026-02-23", access: full, locator: "'What we found'; 'How we're responding'"}
     - {ref: GTIG-AITRACKER-2026, title: "GTIG AI Threat Tracker: From Prompting to Autonomy - The Evolution of Adversarial AI", publisher: "Google Threat Intelligence Group", type: vendor, url: "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/", date: "2026-09-08", access: full, locator: "Section 'Distillation Attacks'"}
-    - {ref: CISA-AA26-251A-2026, title: "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies (joint advisory AA26-251A)", publisher: "CISA, NSA and FBI", type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a", date: "2026-09-08", access: full, locator: "Executive summary; mitigations"}
+    - {ref: CISA-AA26-251A-2026, title: "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies (joint advisory AA26-251A)", publisher: "CISA, NSA and FBI", type: regulator, url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a", date: "2026-09-08", access: full, locator: "Executive summary; Table 2 ATLAS mappings; mitigations (read from the identical FBI copy at https://www.ic3.gov/CSA/2026/260908.pdf; cisa.gov blocked automated access)"}
     - {ref: OWASP-LLM-2026, title: "OWASP Top 10 for LLM Applications 2026 (OWASP GenAI LLM Top 10 2026)", publisher: "OWASP GenAI Security Project", type: standard-setter, url: "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/", date: "2026-08-03", access: full, locator: "LLM06 Unbounded Consumption, item 7, p.39"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -1258,7 +1262,7 @@
   maturity: emerging
   problem: >-
     Researchers show that a small, near-constant number of poisoned documents can implant backdoors in language models
-    regardless of dataset size, and poisoned retrieval content can steer outputs (ARXIV-2510.07192).
+    regardless of dataset size, and that the same holds for fine-tuning (ARXIV-2510.07192).
   solution: >-
     Idea (discussed by researchers and named in a regulatory code): review training data and retrieval corpora for
     tampering, using provenance, anomaly checks and sampling or full scans, and recheck after data refreshes
@@ -1369,7 +1373,7 @@
     - {ref: NIST-CAISI-TRANSCRIPTS-2026, title: "Analyzing Transcripts from AI Agent Evaluations", publisher: "NIST CAISI", type: regulator, url: "https://www.nist.gov/blogs/caissi-research-blog/analyzing-transcripts-ai-agent-evaluations", date: "2026-02-18", access: full, locator: "Body text"}
     - {ref: NIST-CAISI-CHEATING-2025, title: "Cheating On AI Agent Evaluations", publisher: "NIST CAISI", type: regulator, url: "https://www.nist.gov/blogs/caissi-research-blog/cheating-ai-agent-evaluations", date: "2025-12-02", access: full, locator: "Cheating-rate table"}
     - {ref: METR-OAIHF-2026, title: "Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident", publisher: "METR (with Redwood Research contractor)", type: academic, url: "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/", date: "2026-08-26", access: full, locator: "Summary of limitations"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 5.5 and 5.6, p.7"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Practices 5.5 and 5.6, p.7"}
   last_reviewed: "2026-10-17"
   notes: >-
     Merged: threats-redteam-11 (A), agent-identity-containment-22 (A) and governance-assurance-11 (A). Grade A: measured,
@@ -1432,10 +1436,10 @@
     - "Logs retained on victim platforms, good enough to reconstruct actions"
     - "A language model, vetted before an incident, able to analyse attack logs and decode obfuscated payloads"
   risks_and_guardrails:
-    - "OpenAI could redact non-public information; METR states that, except where noted, OpenAI redacted nothing important to its conclusions, and METR did not confirm claims in OpenAI's own report (METR-OAIHF-2026)."
+    - "OpenAI could redact non-public information; METR states that, except where noted, OpenAI redacted nothing important to its conclusions, and that confirming claims in OpenAI's own report was out of scope (METR-OAIHF-2026)."
     - "METR notes a small fraction of relevant activity was not captured in its datasets (METR-OAIHF-2026)."
     - "Hosted frontier models refused to analyse attack commands and exploit payloads, so Hugging Face ran an open-weight model on its own infrastructure and advises vetting one in advance (HF-DISCLOSURE-2026)."
-    - "Independent researchers published a reconstruction of a separate OpenAI agent message board (about 18,000 posts) before OpenAI could review it (COLLUSIONWIKI-2026)."
+    - "Independent researchers published a reconstruction of a separate OpenAI agent message board on a public wiki (about 18,000 posts), which they believe OpenAI had also discovered (COLLUSIONWIKI-2026)."
   human_checkpoints:
     - "Reviewers decide scope and questions; external assessors publish their own findings"
     - "Hugging Face responders correlated recovered agent actions with their own platform logs"
@@ -1480,8 +1484,8 @@
     Define an agent control incident (uninstructed actions that compromise the controls scoping a task or providing human
     oversight) and a near-miss, set severity scoring and escalation triggers, run drills, assign cross-functional decision
     rights, preserve evidence including checkpoints and rejected tool calls, verify containment before restarting, and
-    report to affected parties, government and the public (NISTCISA-IRKEY-2026, ten voluntary practices, 2026-10-16). Add AI
-    scenarios to tabletop exercises (ISACA-SOC-2026). OpenAI published a standing framework in September 2026: any employee
+    report to affected parties, government and the public (NISTCISA-IRKEY-2026, ten voluntary practices, 2026-10-16). ISACA
+    reports 17% include AI incidents in broader cyber exercises (ISACA-SOC-2026). OpenAI published a standing framework in September 2026: any employee
     can flag an example, three investigation tracks, escalation to its Safety Advisory Group and a commitment to favour
     disclosure when significance is uncertain (OPENAI-MISALIGN-2026). Key one triage-and-notify workflow to each regime:
     EU AI Act Article 73 serious-incident reports within 15 days of awareness (2 days for widespread infringement, 10 days
@@ -1531,11 +1535,11 @@
     (ISACA-SOC-2026).
   evidence_grade: B
   sources:
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Definitions pp.2-3; practices 2, 5, 7-10, pp.5-11"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Definitions pp.2-3; practices 2, 5, 7-10, pp.5-11"}
     - {ref: OPENAI-HFTECH-2026, title: "OpenAI - Hugging Face Incident Technical Report", publisher: "OpenAI", type: vendor, url: "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf", date: "2026-08-26", access: full, locator: "I pp.4-5; III.B p.8; IX.D pp.30-31"}
-    - {ref: OPENAI-MISALIGN-2026, title: "Our framework for reporting model misalignment", publisher: "OpenAI", type: vendor, url: "https://openai.com/index/model-misalignment-reporting-framework/", date: "2026-09", access: full, locator: "'How our disclosure process works'; 'What each report will include'"}
+    - {ref: OPENAI-MISALIGN-2026, title: "Our framework for reporting model misalignment", publisher: "OpenAI", type: vendor, url: "https://openai.com/index/model-misalignment-reporting-framework/", date: "2026-09-16", access: full, locator: "'How our disclosure process works'; 'What each report will include'"}
     - {ref: THN-CERTIN-2026, title: "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing", publisher: "The Hacker News", type: press, url: "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html", date: "2026-10-16", access: full, locator: "Paragraphs 1-4; 'Earlier Disclosures by OpenAI and Anthropic'"}
-    - {ref: ISACA-SOC-2026, title: "ISACA press release: Only 8 percent of organizations conduct regular AI-specific response exercises (State of Cybersecurity 2026)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09", access: full, locator: "Press release body, 'AI incident response planning lags'"}
+    - {ref: ISACA-SOC-2026, title: "ISACA press release: Only 8 percent of organizations conduct regular AI-specific response exercises (State of Cybersecurity 2026)", publisher: "ISACA", type: professional-body, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/only-8-percent-of-organizations-global-enterprises-conduct-regular-ai-specific-response-exercises", date: "2026-09-22", access: full, locator: "Press release body, 'AI incident response planning lags'"}
     - {ref: CSA-SCHELLMAN-2026, title: "Enterprise Reality: Why Organizations Aren't as Prepared for AI Governance as They Think They Are (CSA blog republishing Schellman's summary of its 2026 State of AI Governance Report)", publisher: "Cloud Security Alliance / Schellman", type: survey, url: "https://cloudsecurityalliance.org/blog/2026/09/16/enterprise-reality-why-organizations-aren-t-as-prepared-for-ai-governance-as-they-think-they-are", date: "2026-09-16", access: full, locator: "Section 'Funding isn't the Problem'"}
     - {ref: EU-AIACT-ART73-2024, title: "Article 73: Reporting of Serious Incidents (unofficial text of Regulation (EU) 2024/1689)", publisher: "artificialintelligenceact.eu", type: regulator, url: "https://artificialintelligenceact.eu/article/73/", date: "2024-06-13", access: full, locator: "Paragraphs 1-5"}
     - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework page (timeline, AI Omnibus, serious-incident duties)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-17", access: full, locator: "'Application timeline'"}
@@ -1599,7 +1603,7 @@
   sources:
     - {ref: TECHZINE-SAFE-2026, title: "Open Secure AI Alliance shares SAFE guidelines for AI incidents", publisher: "Techzine", type: press, url: "https://www.techzine.eu/news/security/143413/open-secure-ai-alliance-shares-safe-guidelines-for-ai-incidents/", date: "2026-08-05", access: full, locator: "Article body"}
     - {ref: SECWEEK-SAFE-2026, title: "Cybersecurity alliance drafts SAFE guidelines for sharing AI incident data", publisher: "SecurityWeek", type: press, url: "https://www.securityweek.com/cybersecurity-alliance-drafts-safe-guidelines-for-sharing-ai-incident-data/", date: "2026-08-05", access: full, locator: "Article body"}
-    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in AI Training and Evaluation (retrieved title uses 'Super Intelligence')", publisher: "NIST CAISI, NSA and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Definitions; practices 8-10, pp.10-11"}
+    - {ref: NISTCISA-IRKEY-2026, title: "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation (joint cybersecurity information sheet PP-26-4396)", publisher: "NIST CAISSI (formerly CAISI), NSA Super Intelligence Security Center and CISA", type: regulator, url: "https://www.nist.gov/document/keypracticesforincidentreadinessandresponseinsuperintelligence-trainingandevaluation", date: "2026-10-16", access: full, locator: "Definitions; practices 8-10, pp.10-11"}
     - {ref: OECD-INCIDENT-2025, title: "Towards a common reporting framework for AI incidents", publisher: "OECD", type: standard-setter, url: "https://www.oecd.org/en/publications/towards-a-common-reporting-framework-for-ai-incidents_f326d4ac-en.html", date: "2025-02-28", access: full, locator: "Abstract (29 criteria)"}
     - {ref: ARXIV-2606.31567, title: "FLARE-AI: Flaw Reporting for AI", publisher: "arXiv (ICML 2026)", type: academic, url: "https://arxiv.org/abs/2606.31567", date: "2026-06-30", access: full, locator: "Abstract"}
     - {ref: ARXIV-2609.24515, title: "Beyond Predictable Paths: Redefining AI Security Incident Reporting for Agents", publisher: "arXiv (preprint)", type: academic, url: "https://arxiv.org/abs/2609.24515", date: "2026-09-21", access: full, locator: "Abstract"}
@@ -1636,8 +1640,9 @@
     tier), linked to other inventories and fed by staff attestation and, where proportionate, discovery tooling. MAS's
     final position is that identification should at least cover embedded AI from material third-party providers, that
     granularity and update frequency are risk-based, and that multi-agent systems may need agent-level identifiers
-    (MAS-AIRM-RESPONSE-2026, sections 6.6, 6.15, 6.18). Discovery tools find agents through browser, endpoint, network and
-    SaaS signals and assign named owners that feed access certification (OKTA-AGENTSSO-2026; CROWDSTRIKE-PRESS-2026).
+    (MAS-AIRM-RESPONSE-2026, sections 6.6, 6.15, 6.18). Discovery tools find AI tools and agents across endpoint, cloud and
+    SaaS (CROWDSTRIKE-PRESS-2026); Okta says its agent product discovers shadow agents, assigns named human owners and feeds
+    access certifications (OKTA-AGENTSSO-2026).
     Publish permitted and prohibited uses, restrict sharing of sensitive data with public AI tools and offer approved
     tools; Gartner says blocking agents drives staff to shadow AI (GARTNER-AGENTSPRAWL-2026). Vendors sell registries:
     Microsoft Agent 365 and ServiceNow's control tower (MSFT-AGENT365-2026; SERVICENOW-CONTROLTOWER-2026).
@@ -1742,7 +1747,7 @@
       source_ref: CSA-SCHELLMAN-2026
     - lever: quality
       description: Confidence outruns maturity in the same survey.
-      figure: "74% could pass an AI compliance audit; 27% fully mature; 42% single-executive accountability; 29% prepared for the EU AI Act"
+      figure: "74% could pass an AI compliance audit; 27% fully mature; 42% place AI purchasing decisions with a single executive; 29% prepared for the EU AI Act"
       measures: "Shares of the same sample (Schellman sells AI audits)"
       provenance: vendor-published
       source_ref: CSA-SCHELLMAN-2026
@@ -1760,7 +1765,7 @@
       source_ref: AIUC-MSCI-2026
   prerequisites:
     - "An agent inventory with attributes that drive the tier: autonomy, data, audience, regulatory touchpoints (security-ai-security-21)"
-    - "An executive sponsor with authority and resources (CISA-FVEY-2026)"
+    - "Cyber leaders given authority and resources, as the Five Eyes agencies urge (CISA-FVEY-2026)"
     - "A control library and an owner for mapping upkeep"
   risks_and_guardrails:
     - "Gartner predicts that by 2027, 40% of enterprises will demote or decommission autonomous agents because governance gaps are found only after production incidents (a forecast) (GARTNER-UNIFORMGOV-2026)."
@@ -1772,8 +1777,8 @@
     - "Compliance counsel confirms mapped obligations and dates; control owners agree scores and remediation"
     - "Board or committee reviews tier-1 agent approvals and incident summaries"
   role_evolution: >-
-    Governance staff become classifiers and standard-setters for many builders, and builders at low tiers self-apply a
-    control subset (AIUC-MSCI-2026). Compliance and security architects maintain one control set mapped outward to many
+    Lower-tier agents apply a defined subset of AIUC-1 requirements at build time, with testing scaled to risk, while
+    top-tier agents go to independent certification (AIUC-MSCI-2026). Compliance and security architects maintain one control set mapped outward to many
     regimes (CSA-AICM-2026). At MSCI the CISO oversees the AI governance programme (AIUC-MSCI-2026).
   evidence_grade: B
   sources:
@@ -1963,7 +1968,7 @@
     - "A scoped agent, access for testers and a certification engagement (AIUC-MSCI-2026)"
     - "Dedicated AI insurers reportedly require demonstrated governance as an underwriting prerequisite (OWASP-STATE-AGENTIC-2026, p.67)"
   risks_and_guardrails:
-    - "Conflict of interest: the standard's maintainer also certifies and insures against the same standard (AIUC-1-2026)."
+    - "Conflict of interest: the standard's maintainer describes itself as offering certification, auditing and insurance for AI agents (AIUC-MSCI-2026, company description; AIUC-1-2026)."
     - "AIUC's own pages disagree on consortium size: 300-plus Fortune 500 security leaders on the home page, 250 CISOs and risk leaders from the Fortune 1000 in the MSCI case study (AIUC-1-2026; AIUC-MSCI-2026)."
     - "OWASP's insurance-exclusion claims were not checked against primary insurer documents (OWASP-STATE-AGENTIC-2026, p.67)."
   human_checkpoints:
