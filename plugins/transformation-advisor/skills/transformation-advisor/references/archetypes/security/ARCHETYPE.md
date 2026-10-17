@@ -47,18 +47,18 @@ parts the security team owns. Privacy law advice with no security work belongs t
 ## Modules
 
 **Evidence** is each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under 30%);
-counts are as of the last review. **In every module almost all A and B figures are self-reported by the deploying
-team or published by a vendor, and no module has an independent production miss, override or error rate.** Use thin
-modules for risk awareness and interview probes, not as proof points.
+counts are as of the last review. **Most A and B figures are self-reported by the deploying team or published by a
+vendor; the independent figures are mostly surveys, benchmarks and lab tests, and no module has an independent
+production miss, override or error rate.** Use thin modules for risk awareness and interview probes, not as proof points.
 
 | Module | What it covers | Evidence |
 |---|---|---|
 | [governance-risk](modules/governance-risk.md) | Customer reviews, vendor risk, control evidence, policy, risk quantification, board reporting, the security team's own AI policy, workforce model. Figures are GRC vendors' customer stories | strong (11 of 21 A/B) |
-| [operations](modules/operations.md) | The SOC and MDR: detection engineering, triage, investigation, response actions, measuring the SOC's AI. Six A grades, all deployers' own figures | strong (20 of 24 A/B) |
+| [operations](modules/operations.md) | The SOC and MDR: detection engineering, triage, investigation, response actions, measuring the SOC's AI. Six A grades: five on deployers' own figures, one on a Microsoft-authored study | strong (20 of 24 A/B) |
 | [threat-intelligence](modules/threat-intelligence.md) | Intelligence cycle, enrichment, reporting, sharing, threat hunting. Two entries carry measured figures | strong (14 of 24 A/B) |
 | [incident-response](modules/incident-response.md) | Plans, exercises, forensics, containment, recovery, regulatory notices, and incidents caused by AI agents | strong (12 of 22 A/B) |
 | [vulnerability-exposure](modules/vulnerability-exposure.md) | Discovery, validation, prioritisation, remediation, disclosure, pentest and red-team services; the 2026 disclosure surge | strong (16 of 25 A/B) |
-| [application-security](modules/application-security.md) | Threat modelling, AI-written code, code review, pipeline scanning, AI fixes, supply-chain intake. A grades come from very large engineering firms | strong (15 of 17 A/B) |
+| [application-security](modules/application-security.md) | Threat modelling, AI-written code, code review, pipeline scanning, AI fixes, supply-chain intake. A grades come from Cloudflare, Google and one testing firm (Trail of Bits) | strong (15 of 17 A/B) |
 | [cloud-infrastructure](modules/cloud-infrastructure.md) | Posture, runtime, Kubernetes, IaC, network and edge, endpoints including machines that run coding agents | thin (5 of 24 A/B) |
 | [identity-access](modules/identity-access.md) | Joiner-mover-leaver, requests and reviews, privileged access, authentication, ITDR, proofing, help-desk and caller fraud | moderate (11 of 24 A/B) |
 | [data-privacy](modules/data-privacy.md) | Discovery, classification, DLP, access governance, keys, privacy engineering, data exposure through AI tools | moderate (8 of 21 A/B) |

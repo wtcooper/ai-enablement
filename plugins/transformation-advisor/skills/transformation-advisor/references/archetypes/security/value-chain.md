@@ -151,10 +151,10 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
   quoted) tells buyers to demand clarity on which parts are AI-augmented and which analyst-delivered [EXPEL-GARTNERMDR-2026].
   Professional-services, not yet written, would cover the generic wrapper.
 - **Small teams.** SOC coverage can be bought per unit: managed EDR with a 24/7 SOC lists at USD 8.99 per endpoint a
-  month [HUNTRESS-PRICING-2026].
+  month (MSRP at 100 units) [HUNTRESS-PRICING-2026].
   Public case evidence comes almost entirely from large enterprises and large providers, so check fit.
 - **OT and critical infrastructure.** No module. Evidence is mostly vendor programmes and regulator warnings; Accenture
-  announced a majority stake in Dragos on 2026-06-18 [ACCENTURE-DRAGOS-2026]. Use the method and the closest modules (vulnerability-exposure, incident-response).
+  agreed on 2026-06-18 to take a majority stake in Dragos, closed 2026-09-16 [ACCENTURE-DRAGOS-2026]. Use the method and the closest modules (vulnerability-exposure, incident-response).
 - **In-house versus outsourced split.** ISC2 respondents offset skills shortages by outsourcing (20%), third-party
   providers (19%) and AI and automation (25%) [ISC2-WORKFORCE-2025]. Map who does each step before planning.
 

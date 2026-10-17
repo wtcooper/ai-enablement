@@ -43,7 +43,7 @@ Use these in place of, or after, the starred questions in onboarding §3.
 | Pressures | "What is pushing hardest: alert volume, the patch backlog, staffing, regulators, customers' questionnaires, vendor bundling, or AI risk in the business?" | Why now |
 | Constraints | "What must not change: who approves containment, what data leaves your tenant, what your insurer or auditor expects?" | Guardrails ([guardrails.md](guardrails.md)) |
 | Tools and data | "Which SIEM, EDR and case tools do you run, and do closed cases carry a reason?" | Data readiness ([value-chain.md](value-chain.md) §5) |
-| Unapproved use | "In most teams some analysts paste logs or code into AI tools that aren't approved. Is that happening here? There's no wrong answer." | Shadow AI; 33% of employees in a Gartner survey admitted entering sensitive data into unapproved tools [GARTNER-TRENDS-2026] |
+| Unapproved use | "In most teams some analysts paste logs or code into AI tools that aren't approved. Is that happening here? There's no wrong answer." | Shadow AI; 33% of 175 employees in a Gartner survey admitted entering sensitive data into unapproved tools [GARTNER-TRENDS-2026] |
 | Session goal | "What would make this worthwhile: one workflow to fix, a plan for the function, or a case for the board or your partners?" | Path |
 
 **Bring evidence in early.** Once you know the focus, give one real example from the relevant module with its grade,

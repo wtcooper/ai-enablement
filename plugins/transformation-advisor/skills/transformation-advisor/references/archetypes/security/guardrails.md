@@ -40,10 +40,10 @@ hold step-level guardrails. Source keys in brackets resolve in §10 or in [sourc
 | Cyber Resilience Act (EU product manufacturers) | 24 hours early warning, 72 hours notification for actively exploited vulnerabilities and severe incidents | Reporting applies from 2026-09-11; main duties from 2027-12-11 | [EC-CRAREPORTING-2026; EC-CRA-2026] |
 | CIRCIA (US critical infrastructure) | 72 hours for covered incidents, 24 hours for ransom payments | Final rule sent for White House review 2026-10-01 | [COVINGTON-CIRCIA-2026] |
 | UK Cyber Security and Resilience Bill | 24-hour report, full report in 72 hours (as described by the Government); medium and large MSPs in scope | In the House of Lords | [HANSARD-CSRB-2026] |
-| HIPAA Security Rule overhaul (US health) | Proposes a technology-asset inventory that would include AI touching ePHI | Proposal (NPRM 2025-01-06) | [HHS-HIPAA-NPRM-2025] |
+| HIPAA Security Rule overhaul (US health) | Proposes a technology-asset inventory that would include AI touching ePHI | Proposal (NPRM 2025-01-06); no final rule found in the sources read | [HHS-HIPAA-NPRM-2025] |
 | EU AI Act serious-incident reporting | Providers of high-risk AI report serious incidents, outer limit 15 days | A provider duty, not a general SOC duty | [AIACT-EXPLORER-2024, Art 73] |
 
-Practice note: after the SEC's 2024 clarification, 29 issuers filed under Item 1.05 and 50 under Item 8.01 for
+Practice note: after SEC staff's May 2024 clarification, 29 issuers filed under Item 1.05 and 50 under Item 8.01 for
 incidents not yet determined material (law-firm tracker, to 2026-05-21) [DEBEVOISE-8K-2026]. Whether AI-assisted
 detection changes when an entity is "aware" is a legal question the sources do not answer; raise it before automating
 incident classification.
@@ -74,8 +74,8 @@ incident classification.
 - **NIS2 recital 51:** Member States should encourage AI for detection and prevention, in line with data-protection law
   (accuracy, minimisation, fairness, transparency, security) [EURLEX-NIS2-2022].
 - **NYDFS (New York financial services):** the 2024 letter adds no requirements but expects board-level understanding
-  of AI risk, third-party diligence, MFA that deepfakes cannot defeat, and training for security staff; it invites AI
-  for log review and anomaly detection [NYDFS-AI-2024]. The 2026-05-21 letter asks for faster remediation and updated
+  of AI risk, third-party diligence and training for security staff, and suggests MFA factors that deepfakes cannot
+  impersonate; it notes AI's value for log review and anomaly detection [NYDFS-AI-2024]. The 2026-05-21 letter asks for faster remediation and updated
   risk assessments [NYDFS-FRONTIER-2026].
 
 **Voluntary guidance and standards** (no duty, but customers, auditors and insurers cite them)
@@ -89,10 +89,10 @@ incident classification.
 ## 5. Cyber insurance as a guardrail
 
 - **Underwriting asks for baseline controls:** MFA, EDR, backups and third-party oversight, increasingly with a vendor
-  inventory [BIS-FSI75-2026]. The application is a signed attestation; know what it says.
+  inventory [BIS-FSI75-2026]. Know what your insurance application attests to.
 - **AI in cyber policies:** "So far, AI risks are not yet excluded in most cyber policies," per a BIS/FSI paper, which
-  warns of "silent AI" [BIS-FSI75-2026]. Beazley added affirmative AI cover in cyber and tech E&O (2026-09-17), subject
-  to jurisdiction and terms [BEAZLEY-AICYBER-2026].
+  warns of "silent AI" [BIS-FSI75-2026]. Beazley confirmed affirmative AI wording in its cyber and tech E&O policies
+  (2026-09-17), for AI-related risks it says were already covered, subject to jurisdiction and terms [BEAZLEY-AICYBER-2026].
 - **Exclusions elsewhere:** optional generative-AI exclusions for US general liability took effect January 2026
   [INDAGENT-VERISK-2025]; CSIS reports, second-hand, that regulators approved more than 80% of carrier requests to
   exclude AI-related damages, and reads AI-related breaches as generally still insurable under standalone cyber
