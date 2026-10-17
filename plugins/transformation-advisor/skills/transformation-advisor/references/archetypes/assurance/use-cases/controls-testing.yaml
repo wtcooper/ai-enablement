@@ -475,8 +475,9 @@
     provider on client SOX and internal audit work; its figures are practitioner estimates in a vendor story. KPMG
     says management's 25-item sample adds little when the auditor can test 100%. Substantive full-population entries
     are separate: balances against third-party data in assurance-substantive-testing-24 (PwC Australia) and a firm
-    built to test every transaction in assurance-substantive-testing-25 (Ledgerline, citing the same CPAPA-ADEWOLE
-    article for the expectation-gap guardrail). Journal-entry populations are assurance-substantive-testing-01.
+    built to test every transaction in assurance-substantive-testing-25 (Ledgerline; the same article is
+    CPAPA-ADEWOLE here and LEDGERLINE-CPAPA-2026 there, and both entries use it for the expectation-gap guardrail).
+    Journal-entry populations are assurance-substantive-testing-01.
 
 - id: assurance-controls-testing-09
   title: Continuous, year-round control testing and monitoring instead of point-in-time cycles

@@ -1,8 +1,8 @@
 # Quality management (assurance)
 
-Last reviewed 2026-10-17; sources verified 2026-10-17. Use cases live in `../use-cases/quality-management.yaml` (25
-entries). Ids are shortened here: `#07` means `assurance-quality-management-07`, and `ct-#10` means
-`assurance-controls-testing-10`. Source keys in brackets, such as [FRC-GENAI-2026], are in the YAML or in §10.
+Last reviewed 2026-10-17; sources checked 2026-10-17. Use cases live in `../use-cases/quality-management.yaml` (25
+entries). Ids are shortened here: `#07` means `assurance-quality-management-07`; other modules' ids
+are in full. Source keys in brackets, such as [FRC-GENAI-2026], are in the YAML or in §10.
 **No outcome in this module is measured.** No firm or regulator has published an error rate, override rate or
 parallel-run result for AI tools or for review of their output. Say so whenever quality is discussed.
 
@@ -102,7 +102,7 @@ Most Part A entries are governance gates run by people (`ladder: assist`, `patte
 - Delegate: `#18` human control points in agentic workflows: authorise, escalate, approve before use (Deloitte, KPMG).
 - Improve: `#19` review mechanics: citations and run traces, tie-back to source, confirmation gates (AFM good practice).
   `#21` AI review of files for omissions and inconsistencies (Deloitte UK Smart Review, all FTSE audits have access);
-  for multi-model secondary review of workpapers at a named internal-audit team see `ct-#10`.
+  for multi-model secondary review of workpapers at a named internal-audit team see `assurance-controls-testing-10`.
 - Ideas: `#20` structured scepticism: independent view first, counter-arguing step. `#22` a second model or rules
   engine cross-checks AI output, human at the end (AICPA permits; duties unchanged).
 
@@ -146,6 +146,7 @@ Ask in the person's setting: firm quality leader, methodology or technology lead
 - FRC, six largest UK firms (snapshot from April 2024 requests; GenAI then limited to chatbots): 0 of 6 quantified
   quality impact; 1 of 6 reported usage against targets; 2 of 6 ran annual owner confirmations; 1 of 6 had a
   three-year recertification backstop; 2 of 6 required UK-level certification of global tools [FRC-ATT-2025].
+  A press summary says none "monitored" impact [BOARDAGENDA-FRC-2026]; the FRC's wording is narrower: firms counted usage and were building impact monitoring (`#07`).
 - AFM (Dutch study): engagement-level usage estimated for 74% of auditing tools, actual data for 20%, unclear 6% [AFM-12BB-2025].
 - IFIAR 2025 firm-level themes (161 member firms inspected): engagement performance 37%, monitoring and remediation
   32%, human resources 24%, EQR 20%, technological resources 9%; 31 supervision-and-review policy findings
@@ -282,7 +283,7 @@ Full details (title, publisher, type, URL, date, access, locator) are in the YAM
   CFODIVE-PWC-2026, PWC-AT-2025, BI-PWC-2025, EY-CANVAS-2026, BAKERTILLY-GAM-2026, FOLEY-PCAOB-2026,
   DART-SECPCAOB-2025, STARLING-IMC-2026, AT-AICPAPA-2026, JOFA-AIPA-2026,
   JOFA-5IMP-2026, CALCPA-AISTD-2026, ICAEW-FRCVIEW-2026, ICAEW-POD-2025, ICAEW-EXPECT-2026, ICAS-SANDBOX-2026,
-  NYSSCPA-BOTIC-2025, CAALLEY-PCAOBPE-2025, RSM-SECPCAOB-2025, NYENRODE-2026, CPAPRACTICE-RSMANDERA-2026.
+  NYSSCPA-BOTIC-2025, CAALLEY-PCAOBPE-2025, RSM-SECPCAOB-2025, NYENRODE-2026, CPAPRACTICE-RSMANDERA-2026, BOARDAGENDA-FRC-2026.
 - **Vendors, surveys, academic, podcasts (in the YAML):** FIELDGUIDE-PCAOB-2026, FIELDGUIDE-SANVILLE-2026,
   TRI-FOP-2026, CPACOM-ATR-2025, PREPRINT-AIJGDI-2026, PETERS-2022, HOLMSTROM-2024, COMMERFORD-2022, FEDYK-2022,
   ARXIV-FAB-2026, FABIAN-2026, KOSMYNA-2025, PODWISE-ACCTPOD-2026.

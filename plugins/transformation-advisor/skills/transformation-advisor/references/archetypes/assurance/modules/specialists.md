@@ -1,6 +1,6 @@
 # Specialists (assurance)
 
-Source-verified 2026-10-17. Use cases live in `../use-cases/specialists.yaml` (13 entries).
+Sources checked 2026-10-17. Use cases live in `../use-cases/specialists.yaml` (14 entries).
 Ids are shortened here: `#05` means `assurance-specialists-05`. Source keys in brackets are listed in §10.
 
 **Read this first.** This is a low-evidence module. No audit firm, regulator or standard-setter source states that
@@ -76,7 +76,10 @@ entry, delegate has one idea, and reinvent has one idea.** Do not present any of
 **Auditor-side evidence and tax**
 - Improve: `#12` randomized field experiment: a firm-specific LLM improved quality and speed on an inventory
   valuation task but not guideline adherence (grade C). `#13` KPMG UK tax advisers use a Blue J predictive tax tool;
-  the GenAI product Ask Blue J was announced in the same 2024 release (grade B, adjacent).
+  the GenAI product Ask Blue J was announced in the same 2024 release (grade B, adjacent). `#14` Deloitte UK automates
+  recalculation and sensitivity analysis of impairment cash-flow models on its largest audits; across ten consumer
+  entities it found several calculation errors in management's models. The report does not say its impairment
+  specialists run the tool (grade B, adjacent) [DELOITTE-UKTR-2025].
 
 Covered in sibling modules, not repeated: algorithm aversion when the firm's AI contradicts management's estimate
 (`assurance-substantive-testing-19`); authenticating AI-fabricated evidence, including forensic skills
@@ -135,6 +138,8 @@ rate or parallel-run result tied to specialist AI use was found. What exists:
 - **Actuarial LLM benchmark:** 12,050 questions from 16 associations; strong on knowledge, weaker on case
   reasoning, spreadsheet and R-code tasks (#06).
 - **Hiring:** nearly 7% of Big Four postings required AI expertise in 2025 versus under 2% in 2022 (#11).
+- **Impairment models:** Deloitte UK ran automated impairment modelling on ten consumer entities and found "several"
+  calculation inaccuracies; no error count or effect is given (#14).
 
 **Suggested measures (no benchmark yet):** share of significant estimates where an expert used AI (disclosed or
 found); specialist review notes and inspection findings on those estimates; challenger-versus-client model gaps;

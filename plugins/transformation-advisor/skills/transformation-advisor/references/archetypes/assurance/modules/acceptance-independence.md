@@ -1,6 +1,6 @@
 # Acceptance and independence (assurance)
 
-Last reviewed 2026-10-16. Use cases live in `../use-cases/acceptance-independence.yaml` (21 entries). Ids are shortened
+Last reviewed 2026-10-17. Use cases live in `../use-cases/acceptance-independence.yaml` (21 entries). Ids are shortened
 here: `#05` means `assurance-acceptance-independence-05`. Source keys in brackets are listed in §10 and given in full
 in the YAML. **Read this first:** no source anywhere reports a measured result (time, accuracy, false positives,
 overrides, missed conflicts) for AI used in acceptance, KYC or independence work. Only one in-use AI tool is named
@@ -185,7 +185,11 @@ generative and agentic AI guidance does not mention acceptance or independence [
   self-review, management responsibility and commercial dependency in technology services [IESBA-TECHREV-2023,
   IESBA-SNAPSHOT-2026]. Staff publication (15 Jul 2026): vendor updates and model drift are new information requiring
   re-evaluation [IESBA-NAM-2026]. AI-specific publication planned Q4 2026 [IESBA-SNAPSHOT-2026]; PE workstream
-  terms of reference approved June 2026 [IESBA-HIGHLIGHTS-2026].
+  terms of reference approved June 2026 [IESBA-HIGHLIGHTS-2026]. For sustainability assurance clients, the IESSA (periods
+  from 15 Dec 2026) treats implementing sustainability reporting software as a self-review threat where it affects the
+  client's records or controls (5606.4 A3), bars IT systems services that might create one for public-interest clients
+  (R5606.6), and makes designing or implementing software to collect or produce sustainability data a management
+  responsibility (5400.20 A3). This applies to firms selling AI reporting tools to clients they assure (`#15`) [IESBA-IESSA-2025].
 - **SEC and PCAOB.** Rule 2-01 bars financial information system design and implementation unless the results
   will not be subject to audit procedures [SEC-REGSX-2-01]. The chief accountant says independence rules must stay
   fit for purpose as AI enters audit delivery, AI partnerships complicate them, and nothing is planned to loosen
@@ -271,7 +275,7 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 Full details (title, publisher, type, URL, date, locator) are in the YAML.
 - **Regulators and standard-setters:** IFIAR-2025F, PCAOB-BOULAY-2026, SEC-REGSX-2-01, FRC-PCLETTER-2024, FRC-GENAI,
   UKGOV-AMLSTRAT-2026, IRBA-AI-2023, AICPA-PA, AICPA-APSED-2025, AICPA-APSCL-2026, IESBA-SNAPSHOT-2026, IESBA-NAM-2026,
-  IESBA-APESB-2023, IESBA-TECHREV-2023, IESBA-EEA-2026, APESB-PE-2025, AICPA-AIPAID-2026.
+  IESBA-APESB-2023, IESBA-TECHREV-2023, IESBA-EEA-2026, APESB-PE-2025, AICPA-AIPAID-2026, IESBA-IESSA-2025.
 - **Professional bodies:** JOFA-ETHAI-2026, JOFA-SOCETH-2026, JOFA-NILSEN-2025, JOFA-PE-2025, JOFA-PEED-2025,
   JOFA-PEEC-2026, JOFA-AIPA-2026, ICAEW-PE-2024, ICAEW-AML-2026, ICAS-IESBASNAP-2026, IFAC-AQ-2026, AE-PE-2026, AE-BEYONDPE-2025.
 - **Firms:** EY-TR-2025, DELOITTE-UKTR-2025, DELOITTE-IE-TR-2026, DELOITTE-LU-TR-2026, KPMG-AUTR-2025, KPMG-HOHL-2026,

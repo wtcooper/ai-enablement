@@ -1,10 +1,10 @@
 # SOC and attestation (assurance)
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/soc-attestation.yaml` (16 entries). `#05` means
-`assurance-soc-attestation-05`. `CT-11` means `assurance-controls-testing-11` in the controls-testing module. That
-module already holds AI-assisted SOC testing (CT-11), SOC-cycle drafting of Section 3 and deviation responses
-(CT-12), reading vendor SOC reports (CT-13), platforms feeding examiners (CT-14) and evidence-fabrication screening
-(CT-23); use those ids here instead of looking for duplicates. Source keys in brackets are in the YAML or in §10.
+`assurance-soc-attestation-05`; other modules' ids are in full. The controls-testing module already holds AI-assisted
+SOC testing (`assurance-controls-testing-11`), SOC-cycle drafting of Section 3 and deviation responses (`assurance-controls-testing-12`),
+reading vendor SOC reports (`assurance-controls-testing-13`), platforms feeding examiners (`assurance-controls-testing-14`) and
+evidence-fabrication screening (`assurance-controls-testing-23`); use those ids here instead of looking for duplicates. Source keys in brackets are in the YAML or in §10.
 Almost every figure is self-reported or vendor-published. No independent measure of AI quality in SOC work was found.
 Everything about Delve is allegation: Delve denies it, and no regulator finding exists. Say both whenever it comes up.
 
@@ -40,7 +40,7 @@ independence; AI as a productivity tool comes second.
 | Readiness and remediation | Gap assessment, policies, risk assessment, fixing failing tests | review-assurance, software-systems, document-production | Templated policies and risk questions miss industry risks [LINFORD-FAQ-2022] |
 | System description and assertion | Management writes Section 3 and asserts it is fair | document-production | Two companies should never share a Section 3; identical text signals a template [CHIARO-VIBE-2026, KPMG-CHECKBOX-2026] |
 | Planning | Risk assessment, test plan, sample sizes | expert-judgment | Identical risk assessments and sample sizes across clients are flagged by peer review [JOFA-PRB] |
-| Walkthroughs and test of design | Meetings with control owners; flowcharts; design conclusion | research-synthesis, review-assurance | Many meetings and follow-ups (CT-01, CT-11) |
+| Walkthroughs and test of design | Meetings with control owners; flowcharts; design conclusion | research-synthesis, review-assurance | Many meetings and follow-ups (`assurance-controls-testing-01`, `assurance-controls-testing-11`) |
 | Evidence requests and collection | Requests, platform integrations, screenshots, exports | coordination-scheduling, data-reporting | Screenshots and Excel files; stale integrations; wrong populations [SCRUT-EVIDENCE-2026] |
 | Operating-effectiveness testing | Inquiry, observation, inspection, reperformance, sampling (test detail sits in controls-testing) | review-assurance | 90% of exceptions on manual controls, 39% on system access (KPMG UK, 180+ reports) [K-UKCA]; over-reliance on inquiry and "test of one" [KPMG-CHECKBOX-2026] |
 | Deviations and management responses | Evaluate, root-cause, respond, judge effect on opinion | expert-judgment, document-production | Logical access behind 52% of SOC 1 and 40% of SOC 2 deviations (EY, 2,000+ reports) [EY-SOC-2025] |
@@ -58,32 +58,32 @@ platform-heavy: half the entries sit on the service-organisation side (`function
 
 **Scoping, acceptance and planning (service auditor)**
 - Improve: `#01` Linford uses AI for client acceptance, sampling and scheduling concurrent audits; it says this makes
-  audits more thorough, not faster. CT-02: KPMG UK agents score control wording and draft test plans.
+  audits more thorough, not faster. `assurance-controls-testing-02`: KPMG UK agents score control wording and draft test plans.
 
 **Readiness (service organisation)**
 - Improve: `#02` platforms draft policies, risk assessments and system descriptions (Vanta, Comp AI); a person
   approves each. `#03` AI-generated remediation snippets with expert approval (Vanta, Secureframe, Oneleet).
   `#04` cross-framework mapping and evidence reuse (A-LIGN: ~15 hours saved per extra framework, vendor figure).
-  CT-12: general AI for updating Section 3 (45% of EY poll attendees) and deviation responses (41%).
+  `assurance-controls-testing-12`: general AI for updating Section 3 (45% of EY poll attendees) and deviation responses (41%).
 - Automate: `#05` continuous control monitoring with agent-collected evidence (Vanta, Drata; named users Snyk,
   WorkJam, Wispr Flow). Only vendor figures: 82% less time per audit (IDC via Vanta), 4 hours a week.
 
 **Walkthroughs, evidence and testing (service auditor)**
-- Improve: CT-11 and CT-01, KPMG UK: ~18% less testing time on recent controls assurance engagements with
+- Improve: `assurance-controls-testing-11` and `assurance-controls-testing-01`, KPMG UK: ~18% less testing time on recent controls assurance engagements with
   Clara AI, Copilot and DataSnipper, the only firm-published measure. `#06` A-LIGN screens evidence against audit
   intent before fieldwork (Teleperformance: 30-40% less evidence time, vendor-published). `#07` Weaver's engagement
   platform and client portal (process change, little AI yet): realization up 10-12% in year one.
-- Automate: CT-14, the examiner pulls evidence from the client's platform (contested; see §6).
+- Automate: `assurance-controls-testing-14`, the examiner pulls evidence from the client's platform (contested; see §6).
 - Delegate: `#08` Fieldguide's four agents (planner, auditor, reviewer, orchestrator) run a SOC engagement;
   announced, demo scheduled 13 Oct 2026; vendor figures (55% fewer hours, 4x capacity) are undefined.
-- Idea: CT-23, screening evidence for AI fabrication; an ISACA Now author reports an AI-fabricated document [ISACA-EVIDENCE-2026].
+- Idea: `assurance-controls-testing-23`, screening evidence for AI fabrication; an ISACA Now author reports an AI-fabricated document [ISACA-EVIDENCE-2026].
 
 **Reporting**
 - Improve: `#09` Linford reviews draft reports with AI to catch details on late pages; it says it saves no time.
 
 **After issuance and report use**
 - Improve: `#10` questionnaire answers drafted from the issued report and approved answers (Vanta: 95% of
-  suggestions accepted, vendor). CT-13: AI reads received SOC reports for scope, deviations and CUECs. `#12`
+  suggestions accepted, vendor). `assurance-controls-testing-13`: AI reads received SOC reports for scope, deviations and CUECs. `#12`
   flagging templated reports by uniform language (Whistic, announced); AI in peer review comparison is an idea.
 - Automate: `#11` trust centre with an AI chatbot answering buyers (Vanta); claims must not exceed the report.
 
@@ -111,7 +111,7 @@ No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outsid
 3. **"When are the system description, test-procedure text and opinion first drafted, and by whom, relative to
    period end and evidence arrival?"** Reveals the pattern at the centre of the Delve allegations and AICPA warnings.
 4. **"How do you test what a compliance platform collects? What share do you re-perform at the source system, and
-   how do you catch broken syncs, wrong populations or edited exports?"** Reveals reliance on tool data (CT-14, `#05`).
+   how do you catch broken syncs, wrong populations or edited exports?"** Reveals reliance on tool data (`assurance-controls-testing-14`, `#05`).
 5. **"Where do you use AI today (readiness, walkthroughs, evidence extraction, testing, report review, acceptance,
    scheduling)? What is the review standard, and what do you measure?"** Reveals maturity against KPMG UK's ~18%
    and whether any quality evidence (deviations found, rework, overrides) exists. Most have hours at best.
@@ -120,13 +120,13 @@ No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outsid
 7. **"At small-company population sizes, do you still sample? What would testing every item change in your
    method, documentation and peer review?"** Reveals readiness for `#16`'s model and its caveat on incomplete populations.
 8. **"When a client builds an LLM into its product or uses foundation-model providers, what changes in scoping,
-   description and carve-out analysis under TQA 9561?"** Reveals AI-as-test-object readiness (CT-15) and scope inflation.
+   description and carve-out analysis under TQA 9561?"** Reveals AI-as-test-object readiness (`assurance-controls-testing-15`) and scope inflation.
 9. **"What client evidence goes into AI tools, under what terms, and do clients know?"** Reveals confidentiality
    exposure; no standard requires disclosing AI use [CHIARO-WHO-2026].
 10. **"How have fees, realization and staff mix changed since platforms and AI arrived? How do you show a buyer
     your report is tailored?"** Reveals business-model pressure (`#07`, `#14`, `#15`).
 11. **Report users: "Since March 2026, what changed in how you read vendors' SOC reports (signing firm, CUECs,
-    exclusions, gap period)? How often do you reject one?"** Reveals buyer due diligence (CT-13, `#12`).
+    exclusions, gap period)? How often do you reject one?"** Reveals buyer due diligence (`assurance-controls-testing-13`, `#12`).
 12. **Service organisations: "How do you know your platform's integrations cover the whole system boundary and the
     right populations, such as service accounts?"** Reveals false-green risk in `#05`.
 
@@ -134,7 +134,7 @@ No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outsid
 
 **Firm-published (self-reported; no baseline or engagement count)**
 - KPMG UK: ~18% less testing time on recent controls assurance engagements; ~15% for one team using DataSnipper
-  (CT-11) [K-UKCA]. The tools are bundled, so AI alone cannot be credited.
+  (`assurance-controls-testing-11`) [K-UKCA]. The tools are bundled, so AI alone cannot be credited.
 - KPMG UK benchmark of 180+ reports (2024-25): 90% of operating-effectiveness exceptions on manual controls; 39%
   on system access and authorisation; qualified reports 15% (20% the year before) [K-UKCA].
 - EY review of 2,000+ SOC reports: logical access behind 52% of SOC 1 and 40% of SOC 2 deviations [EY-SOC-2025].

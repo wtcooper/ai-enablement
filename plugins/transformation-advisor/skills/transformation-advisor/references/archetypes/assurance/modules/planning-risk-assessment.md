@@ -1,8 +1,8 @@
 # Planning and risk assessment (assurance)
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/planning-risk-assessment.yaml` (25 entries). `#05` means
-`assurance-planning-risk-assessment-05`; `CT-04` means `assurance-controls-testing-04` (controls-testing module: walkthroughs
-CT-01, risk-scored coverage CT-04, PwC Australia's AI-native audit trial CT-17). Source keys in brackets are in the YAML or
+`assurance-planning-risk-assessment-05`; other modules' ids are in full (controls-testing: walkthroughs
+`assurance-controls-testing-01`, risk-scored coverage `assurance-controls-testing-04`, PwC Australia's AI-native audit trial `assurance-controls-testing-17`). Source keys in brackets are in the YAML or
 §10. No entry reaches grade A: no named organisation has published a measured outcome for AI in planning; every figure
 is self-reported, vendor-claimed or a prevalence count. Say so.
 
@@ -34,7 +34,7 @@ conclusion.
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Understand the entity and its IT | Read minutes and documents, research industry, inquire, walk through processes | research-synthesis, review-assurance | Reading is slow and items are missed; walkthroughs redone yearly (CT-01) |
+| Understand the entity and its IT | Read minutes and documents, research industry, inquire, walk through processes | research-synthesis, review-assurance | Reading is slow and items are missed; walkthroughs redone yearly (`assurance-controls-testing-01`) |
 | Understand the entity's own AI | Ask where AI touches reporting and controls, and how it is governed | review-assurance, expert-judgment | Partners rate only 6% of largest clients' AI governance advanced [CAQ-INSIDER-2026]; AS 2110 has no AI wording |
 | Risk assessment procedures and analytics | Inquiry, analytical procedures, observation, inspection; ledger analytics | data-reporting | Poor client data (60%) and no system access (53%) block analytics [CPACOM-ATR-2025] |
 | Identify and assess RMM | Inherent and control risk by assertion; significant risks; rationale | expert-judgment | 60% of US firms prioritise carrying forward last year's risk assessment [CPACOM-ATR-2025] |
@@ -60,7 +60,7 @@ outcome), reinvent (model changes). Improve dominates; automate has one entry; d
   minutes). `#02` enterprise and grounded assistants for entity research and methodology (KPMG 2.175M Audit Chat
   conversations; RSM Ask Luca; PwC ChatNational). `#03` Deloitte agents scan media for emerging threats and draft
   staff memos. `#04` PwC tool analyses audit-committee communications (announced). `#05` access-rights analytics
-  and guided IT-risk identification (AFM good practice; vendor viewpoint). Walkthrough narratives: see CT-01.
+  and guided IT-risk identification (AFM good practice; vendor viewpoint). Walkthrough narratives: see `assurance-controls-testing-01`.
 - New planning topic (idea): `#06` understanding the client's own AI use (AICPA practice aid Part 1, ISA 315
   Appendix 5). No firm has published results; AICPA RMM guidance for AI-using clients is still to come.
 
@@ -71,7 +71,7 @@ outcome), reinvent (model changes). Improve dominates; automate has one entry; d
   engagement-specific risks (launched 6 Oct 2026). `#10` agentic risk assessment linking evidence, assertions and
   materiality (MindBridge, announced) and risk-to-procedure agents (Wolters Kluwer future state).
 - Delegate: `#11` firm-platform agent frameworks (EY Canvas "all phases", Deloitte Omnia, KPMG orchestration trials);
-  planning-specific agents are not itemised. CT-17: PwC Australia says agents will assess risk and design plans
+  planning-specific agents are not itemised. `assurance-controls-testing-17`: PwC Australia says agents will assess risk and design plans
   (5 audit clients first, all clients by 2028).
 - Ideas and tests: `#12` chatbot RMM drafting failed ICAEW's test; `#13` multi-agent restatement-risk scoring
   (research prototype, AUROC 0.782).
@@ -96,7 +96,7 @@ outcome), reinvent (model changes). Improve dominates; automate has one entry; d
 **Continuous risk assessment and internal audit**
 - Delegate (direction of travel): `#24` continuous risk assessment and dynamic plans; no live external-audit case.
 - Improve: `#25` internal audit work programs, risk considerations and risk-to-control scoping (Helvetia Baloise,
-  Fieldguide, FJ Management vision). Audit-universe risk scoring (Optro): see CT-04.
+  Fieldguide, FJ Management vision). Audit-universe risk scoring (Optro): see `assurance-controls-testing-04`.
 
 **Open questions: steps with no evidence of AI use in practice.** Materiality (`#16`: one ICAEW test, no deployment),
 group-audit scoping (`#17`: no source on AI component scoping beyond one vendor article), and fraud brainstorming
@@ -233,7 +233,7 @@ observation or inspection.
 ## 8. Frontier
 
 - **2025-10-28** PwC targets a tool for every audit step in 2026, a risk-assessment tool "soon" (not seen since)
-  [PWC-AT-2025]; PwC Australia trials agents that assess risk and design plans (CT-17).
+  [PWC-AT-2025]; PwC Australia trials agents that assess risk and design plans (`assurance-controls-testing-17`).
 - **2025-12-09** PCAOB acting chair: AI can already enhance risk assessment "in certain scenarios"; warns on scepticism [ACCTODAY-BOTIC-2025].
 - **2026-03-30** FRC generative and agentic AI guidance, with the board-minutes example [FRC-GENAI-2026].
 - **2026-04-07** EY embeds agents in all audit phases; end-to-end by 2028 [EY-CANVAS-2026].
@@ -242,7 +242,7 @@ observation or inspection.
 - **2026-06-24** Deloitte unifies agents in Omnia, including risk-factor identification [DELOITTE-OMNIA-2026].
 - **2026-07-24** NFRA principles cover planning and risk assessment [NFRA-CAALLEY-2026].
 - **2026-08-05** IAASB EDs on ISA 330, 500 and 520; comments due 15 Dec 2026 [IAASB-EDPAGE-2026].
-- **2026-09-22 / 10-06 / 10-14** MindBridge, Caseware and Optro launch risk-assessment agents (`#10`, `#09`, CT-04).
+- **2026-09-22 / 10-06 / 10-14** MindBridge, Caseware and Optro launch risk-assessment agents (`#10`, `#09`, `assurance-controls-testing-04`).
 - **2026-10-13** AICPA practice aid; RMM guidance for AI-using clients to follow [AICPA-PA-2026].
 - **2026-11-06/07** WCARS: "Taming the Autonomous Frontier" (scheduled) [WCARS-2026].
 - **2026-12-15** ISA (UK) 240 (Revised March 2026) applies to periods from this date [ISAUK240-2026]; IAASB comment deadline. Watch for AICPA RMM guidance and FRC sandbox output.

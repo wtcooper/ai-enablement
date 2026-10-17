@@ -1,7 +1,7 @@
 # Assurance over AI (assurance)
 
 Last reviewed 2026-10-17. Use cases live in `../use-cases/assurance-over-ai.yaml` (24 entries). Ids are shortened
-here: `#05` means `assurance-assurance-over-ai-05`; `CT#15` means `assurance-controls-testing-15`. Source keys in
+here: `#05` means `assurance-assurance-over-ai-05`; other modules' ids are in full. Source keys in
 brackets are listed in §10 and given in full in the YAML. **Read this first:** in most entries the AI is the *object*
 of the assurance work, not the tool doing it. No measured quality outcome exists anywhere in this module: no error
 rate, override rate, parallel run, inspection finding, fee or certificate count. The figures are readiness surveys,
@@ -29,7 +29,7 @@ evidence. **Area 2: standalone assurance over AI systems**: readiness work, ISO/
 organisation's AI management system, meaning its policies, roles and controls for AI), ISAE (UK) 3000 opinions,
 AIUC-1 agent certification, technical and bias testing, EU AI Act conformity, and the accreditation and skills of the
 assurers themselves. Area 1 is guidance-rich and practice-poor. Area 2 has named certifications but no issued Big Four
-client report was found. Testing AI-performed controls inside a SOX programme is covered in controls-testing (`CT#15`).
+client report was found. Testing AI-performed controls inside a SOX programme is covered in controls-testing (`assurance-controls-testing-15`).
 
 ## 2. Processes and key steps
 
@@ -62,7 +62,7 @@ audit object and new services. Only four entries have AI doing assurance work (a
 
 **ITGCs and evidence for AI-operated controls**
 - Redesign: `#03` extend ITGCs to models, pipelines and agents (native, UI-driven, headless) and choose between testing
-  outputs, testing AI controls or testing around (AICPA aid); builds on `CT#15`. `#04` evidence trail: retained prompts,
+  outputs, testing AI controls or testing around (AICPA aid); builds on `assurance-controls-testing-15`. `#04` evidence trail: retained prompts,
   model versions, reviewer records; research on tamper-evident agent records. `#05` idea: monitoring metrics,
   multi-metric tolerance ranges and remediation logs as evidence.
 - Improve: `#06` idea: re-perform outputs with test populations or challenger models. `#07` idea: SOC reports and

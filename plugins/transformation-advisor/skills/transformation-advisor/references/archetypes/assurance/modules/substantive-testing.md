@@ -1,8 +1,8 @@
 # Substantive testing (assurance)
 
 Last reviewed 2026-10-17. Use cases: `../use-cases/substantive-testing.yaml`
-(25 entries). `#10` means `assurance-substantive-testing-10`; `CT#07` means `assurance-controls-testing-07` (controls
-testing module). Source keys in brackets, such as [IFIAR-TTF-2025], are in the YAML or in §11. Almost every outcome
+(25 entries). `#10` means `assurance-substantive-testing-10`; other modules' ids are
+written in full. Source keys in brackets, such as [IFIAR-TTF-2025], are in the YAML or in §11. Almost every outcome
 figure is self-reported or vendor-published; no independent measure of any AI substantive tool's accuracy in a live
 audit exists. Say so when you quote one.
 
@@ -80,7 +80,7 @@ GenAI document fraud and forgery over two years and only 7% say their organisati
 [SAS-ACFE-2026]; of 373 internal-audit leaders, 65% name fabricated invoices or documents among top concerns and 62%
 say they are unprepared or minimally prepared [IIA-AIFRAUD-2026]. When the client's own AI produces entries or
 accruals, the AICPA says auditors may test the outputs substantively and, if that is not enough, should test
-controls (`#05`, idea; see `CT#15`).
+controls (`#05`, idea; see `assurance-controls-testing-15`).
 
 **Guardrails specific to this area.** Run rules-based routines alongside any model (an unsupervised model misses
 entries that are consistently miscoded); document why use criteria were met; run with and without the tool to check
@@ -102,7 +102,7 @@ entry has a measured result.
   illustrative client; process scope).
 - **Vouching, matching and tie-out.** Automate: `#10` agents match sampled items to documents and bank activity
   (Oberlander about 16 hours to 5-6 per engagement; Sanville hours to minutes; PwC Evidence Match). This is the
-  canonical home of these measured figures; `CT#07` is the same step used for tests of controls. `#13` PwC fund-audit
+  home of these measured figures; `assurance-controls-testing-07` covers the same step in tests of controls. `#13` PwC fund-audit
   tie-out (pilot). Improve: `#11` FGMK's firm-built Excel agents (pilot group: 30-45 minutes to about 5 minutes of
   review per selection, plus reviewer-side agents); `#12` DataSnipper evidence snipping and extraction (assist).
 - **Contracts, revenue and judgment-heavier tests.** Improve: `#14` contract and lease review (FRC design for revenue
@@ -119,8 +119,8 @@ entry has a measured result.
   unrecorded-liabilities search end to end; `#21` EY auditor agents exchange evidence requests with client agents
   (pilot); `#22` firm-wide platforms (EY, Deloitte, Grant Thornton) run preliminary procedures; `#24` PwC Australia's
   AI-native pilot tests balances on full populations against third-party data (also reinvent: the sample goes; for
-  control populations see `CT#08`). Improve: `#23` idea: a second AI reviews AI-performed work (deployed analogue
-  `CT#10`). Reinvent: `#25` Ledgerline, a pre-launch benefit-plan audit firm built to test every transaction.
+  control populations see `assurance-controls-testing-08`). Improve: `#23` idea: a second AI reviews AI-performed work (deployed analogue
+  `assurance-controls-testing-10`). Reinvent: `#25` Ledgerline, a pre-launch benefit-plan audit firm built to test every transaction.
 
 ## 5. Interview probes
 
@@ -207,6 +207,7 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
 - **IFIAR and others.** Keep auditors in control; consult regulators early where AI decides without a human; define
   "human-led" [IFIAR-TTF-2025; IFIAR-TTF-2026]. AFM: auditors do not always verify input-data reliability, especially
   with ineffective IT general controls [AFM-BB-2025]. IRBA: add procedures to verify authenticity [IRBA-AI-2024].
+  CPAB (2025 inspections): tools used as primary evidence with limited input validation; one tool left "low-risk" items untested (`#08`) [CPAB-EVOLVING-2025].
 
 **Design guardrails seen in deployments and guidance**
 - Rules-based routines and deterministic code alongside models (FRC; Ledgerline's CEO); certification per use case
@@ -275,7 +276,7 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
 - **Regulators and standard-setters:** IFIAR-TTF-2025, IFIAR-TTF-2026, IFIAR-SURVEY-2026, PCAOB-TAA-2024, SEC-TAAORDER-2024,
   PCAOB-PS2025-004, PCAOB-CONFIRM-2023, PCAOB-GENAI-2024, FRC-AIAUDIT-2025, FRC-GENAI-2026, FRC-ATT-2025, IAASB-ED500-2026,
-  IAASB-ED520-2026, IAASB-ED330-2026, IAASB-EDOVERALL-2026, IAASB-500SERIES-2026, AFM-BB-2025, IRBA-AI-2024.
+  IAASB-ED520-2026, IAASB-ED330-2026, IAASB-EDOVERALL-2026, IAASB-500SERIES-2026, AFM-BB-2025, IRBA-AI-2024, CPAB-EVOLVING-2025.
 - **Firms and press:** KPMG-CLARA-2025, ACCTODAY-KPMG-2025, PWC-AT-2025, CFOBREW-PWC-2025, CFODIVE-PWC-2026, PWCAU-AT-2025,
   EY-CANVAS-2026, ACCTODAY-EY-2024, DELOITTE-OMNIA-2026, GT-GTAP-2026, CTRLCOUNCIL-WSJ-2026, BUZZACOTT-PRIME-2025,
   RSM-AUS-2026, DELOITTE-NL-SAMPLE-2026, KPMG-SOX-2026, LEDGERLINE-CPAPA-2026, LEDGERLINE-SITE-2026, AT-AICPAPA-2026,

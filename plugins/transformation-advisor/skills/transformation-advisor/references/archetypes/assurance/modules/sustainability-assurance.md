@@ -45,11 +45,11 @@ preparer-side AI where it changes what the assurance provider must test.
 - From that date ISAE 3000 (Revised) no longer applies internationally to sustainability engagements, and ISAE 3410 is
   withdrawn (approved Mar 2025). A jurisdiction that has not yet adopted ISSA 5000, or whose law requires a local ISAE
   3410, may keep the older standard, but practitioners then cannot claim IAASB compliance [IAASB-ISSA5000FAQ-2025, Q1–Q4].
-- Adoption (IAASB list, Sep 2026): adopted in Australia (ASSA 5000, periods from 1 Jan 2025), Canada (CSSA 5000, periods
-  beginning on or after 15 Dec 2027), the UK, Hong Kong, New Zealand, South Africa, Malaysia and others; in progress in
-  Germany, India, Singapore, South Korea and the US, where the AICPA ASB is converging its attestation standards and the
-  PCAOB does not adopt IAASB standards. The Netherlands, France, Spain and several other EU states are marked as
-  subject to the Commission's delegated act [IAASB-ISSA5000PAGE-2026].
+- Adoption (IAASB list, Sep 2026): adopted in Australia (ASSA 5000, periods from 1 Jan 2025), Canada (CSSA 5000, periods beginning on or after 15 Dec
+  2027), the UK, Hong Kong, New Zealand, South Africa, Malaysia and others; in progress in Germany, India, Singapore, South Korea and the US, where the
+  AICPA ASB is converging its attestation standards and the PCAOB does not adopt IAASB standards. The ASB's exposure draft proposes new AT-C 325 and 330
+  (examination and review of sustainability information), effective for engagements beginning on or after 15 Jun 2029 if adopted [CPAPA-ASB-2026]. The
+  Netherlands, France, Spain and several other EU states are marked as subject to the Commission's delegated act [IAASB-ISSA5000PAGE-2026].
 
 **EU: CSRD after the Omnibus**
 - Directive (EU) 2026/470 (OJ 26 Feb 2026) limits CSRD to undertakings above EUR 450 million net turnover and 1,000
@@ -290,7 +290,7 @@ against sources, since hallucinated numbers read smoothly [IRIS-GENAI-2026].
 
 Full details for keys used in use cases are in the YAML. Keys used only in this file (all opened and checked on 2026-10-17):
 - IESBA-SUST-2024: IESBA, Sustainability project page (effective dates), 2024-12, https://www.ethicsboard.org/consultations-projects/sustainability; IAASB-ISSA5000FAQ-2025: IAASB staff, FAQ on applicability of ISSA 5000, ISAE 3000 (Revised) and ISAE 3410, 2025-08, https://ifacweb.blob.core.windows.net/publicfiles/2025-08/IAASB-ISSA-5000-FAQ-Applicability-ISAE-3000-3410.pdf; IAASB-ISSA5000PAGE-2026: IAASB, Understanding the ISSA 5000 (adoption list), 2026-09, https://www.iaasb.org/focus-areas/sustainability-assurance
-- IAASB-ENEWS-2026: IAASB eNews October 2026, 2026-10-05, https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026; IAASB-TQM-2026: IAASB, Technology Quality Management Roundtables, 2026-02, https://ifacweb.blob.core.windows.net/publicfiles/2026-02/IAASB-Technology-Quality-Management-Roundtables-Feedback.pdf
+- CPAPA-ASB-2026: CPA Practice Advisor, AICPA Seeks Public Comment on Proposed Updates to Attestation Standards, 2026-02-27, https://www.cpapracticeadvisor.com/2026/02/27/aicpa-seeks-public-comment-on-proposed-updates-to-attestation-standards/177561/; IAASB-ENEWS-2026: IAASB eNews October 2026, 2026-10-05, https://www.iaasb.org/news-events/2026-10/iaasb-enews-october-2026; IAASB-TQM-2026: IAASB, Technology Quality Management Roundtables, 2026-02, https://ifacweb.blob.core.windows.net/publicfiles/2026-02/IAASB-Technology-Quality-Management-Roundtables-Feedback.pdf
 - CEAOB-TA-2026: CEAOB technical advice on limited assurance on sustainability reporting, 2026-09-25, https://finance.ec.europa.eu/document/download/abd3fbf5-e2e1-4eb2-8af8-8d8fd5803303_en?filename=260925-ceaob-technical-advice-limited-assurance-sustainability-reporting_en.pdf; ESMA-AWP-2027: ESMA 2027 Annual Work Programme, 2026-09-28, https://www.esma.europa.eu/sites/default/files/2026-09/ESMA22-50751485-1673_Annual_Work_Programme_2027.pdf
 - WPK-ESRS-2026: Wirtschaftsprüferkammer, revised ESRS published in the OJ, 2026-09-23, https://www.wpk.de/neu/delegierte-verordnungen-zu-den-ueberarbeiteten-esrs-und-zum-vs-im-eu-amtsblatt-veroeffentlicht/; ACCA-EUPA-2026: ACCA, EU update - September 2026 (Europe public affairs page), 2026-09, https://www.accaglobal.com/sg/en/professional-insights/public-affairs/europe-public-affairs.html; IFIAR-SATF-2026: IFIAR, Public Factsheet on the 2025 Sustainability Survey Results, 2026-06-09, https://www.ifiar.org/?wpdmdl=20061; IFIAR-TTF-2026: IFIAR, Use of technology in audits: Innovation and audit quality 2026, 2026-04-20, https://www.ifiar.org/?wpdmdl=19893
 - IFAC-STATEPLAY-2026: IFAC and AICPA & CIMA, The State of Play: Sustainability Disclosure and Assurance 2019-2024, 2026-06, https://ifacweb.blob.core.windows.net/publicfiles/2026-07/IFAC-State-of-Play-Sustainability-Disclosure-Assurance-2019-2024.pdf; LEEDS-ASSURANCE-2026: Leeds University Business School and Wits, for the IAASB, The State of Global Sustainability Assurance, 2026-07, https://ifacweb.blob.core.windows.net/publicfiles/2026-07/The-State-of-Global-Sustainability-Assurance-Finding-Snapshot.pdf

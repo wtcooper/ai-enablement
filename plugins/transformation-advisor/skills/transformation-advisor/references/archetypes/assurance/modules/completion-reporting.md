@@ -1,8 +1,8 @@
 # Completion and reporting (assurance)
 
-Verified against sources 2026-10-17. Use cases live in `../use-cases/completion-reporting.yaml` (18
-entries). Ids are shortened here: `#06` means `assurance-completion-reporting-06`; `ST-13` means
-`assurance-substantive-testing-13`. Source keys in brackets are in the YAML or in §12. Public evidence sits almost
+Sources checked 2026-10-17. Use cases live in `../use-cases/completion-reporting.yaml` (18
+entries). Ids are shortened here: `#06` means `assurance-completion-reporting-06`; other modules'
+ids are in full. Source keys in brackets are in the YAML or in §12. Public evidence sits almost
 entirely in two steps, the disclosure checklist and the mechanical review of draft statements. Nearly every figure is
 vendor-published, and no accuracy or miss rate exists for any completion tool in live use. Say so when you quote one.
 
@@ -36,12 +36,12 @@ audit committee communications, and drafting the opinion.
 | Step | What happens | Work type | Typical pain | AI evidence |
 |---|---|---|---|---|
 | Disclosure checklist | Answer each requirement against the draft; decide "not applicable" and "if material" calls | review-assurance, expert-judgment | 1,200-1,500 requirements in one product's checklist; fatigue; last year's checklist rolled forward [TR-DISCLOSURE-2026] | Vendor products, beta figures (`#01`-`#04`) |
-| Casting, cross-referencing, tie-out | Foot, cross-check and agree figures; repeat on every draft | review-assurance, data-reporting | 4-5 drafts per engagement; ~1,200 h a year on first drafts at one firm [CASEWARE-HLB-2025] | Two named firms, measured (`#06`); ST-13 |
+| Casting, cross-referencing, tie-out | Foot, cross-check and agree figures; repeat on every draft | review-assurance, data-reporting | 4-5 drafts per engagement; ~1,200 h a year on first drafts at one firm [CASEWARE-HLB-2025] | Two named firms, measured (`#06`); `assurance-substantive-testing-13` |
 | Other information, management report | Read front-half text for consistency and statutory content | review-assurance | Manual and checklist-based; late edits break cross-references [HAMBURG-FABIAN-2026; FIELDGUIDE-DISC-2026] | One peer-reviewed study (`#05`) |
 | Subsequent events | Events after the balance-sheet date, adjusting or not [PCAOB-AS2801] | expert-judgment, research-synthesis | Reading minutes, legal letters, interim figures | None (§4) |
 | Going concern | Evaluate substantial doubt / management's assessment [PCAOB-AS2415; IAASB-ISA570-2025] | expert-judgment | Significant judgment; regulators ask for more scepticism | Experiments only (`#10`, `#11`) |
 | Written representations | Obtain management's letter | document-production, client-interaction | Letters left in an inbox, not on file [ICAEW-REPLETTER-2026] | None (§4) |
-| Summary of misstatements | Accumulate and evaluate uncorrected misstatements | data-reporting, expert-judgment | Not described in the inputs | None (§4) |
+| Summary of misstatements | Accumulate and evaluate uncorrected misstatements | data-reporting, expert-judgment | No public source describes it | None (§4) |
 | Manager and partner file review | Clear notes, check completeness, sign-off readiness | review-assurance, coordination-scheduling | Review re-performs the work; gaps found late [FIELDGUIDE-QR-2026] | Demos, announcements (`#08`) |
 | Engagement quality review | Objective evaluation of significant judgments; concurring approval [PCAOB-AS1220; IAASB-ISQM2-2020] | review-assurance, expert-judgment | 42% of inspected firms had an EQR deficiency comment (2022) [PCAOB-EQR-2023] | None for the reviewer (§4) |
 | KAMs / CAMs | Select from matters communicated to the committee; draft the wording | expert-judgment, document-production | Usefulness contested [PCAOB-AGENDA-2026]; CAM count per report declining [PCAOB-PIRCAM-2022] | Research on identification only (`#12`) |
@@ -63,7 +63,7 @@ found for reinvent; nobody sells completion as an agent-delivered service, and n
 
 **Statements: casting, tie-out, drafting**
 - Automate: `#06` Caseware Validate at HLB Mann Judd Perth (~600 h a year) and MHA (casting 25 to 12 min, zero
-  false positives in a head-to-head trial); Suralink tie-out. PwC's fund-audit tie-out tool is ST-13.
+  false positives in a head-to-head trial); Suralink tie-out. PwC's fund-audit tie-out tool is `assurance-substantive-testing-13`.
 - Improve, process scope: `#07` Fieldguide Field Financials drafts from prior year and live trial balance with
   continuous tie-out (announced; raises a non-attest question if the auditor drafts).
 - Ideas: `#15` LLM finds statement errors and the standard breached; `#16` XBRL consistency. Both benchmarks show gaps.

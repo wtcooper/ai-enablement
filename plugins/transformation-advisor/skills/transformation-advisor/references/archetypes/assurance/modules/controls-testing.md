@@ -1,7 +1,7 @@
 # Controls testing (assurance)
 
-Last reviewed and source-verified 2026-10-16. Use cases live in `../use-cases/controls-testing.yaml` (25 entries). Ids are shortened
-here: `#05` means `assurance-controls-testing-05`. Source keys in brackets, such as [K-SOX30], are listed in §10
+Last reviewed 2026-10-17; sources checked 2026-10-16. Use cases live in `../use-cases/controls-testing.yaml` (25 entries). Ids are
+shortened here: `#05` means `assurance-controls-testing-05`; other modules' ids are in full. Source keys in brackets, such as [K-SOX30], are listed in §10
 and given in full in the YAML. Almost every outcome figure is self-reported by the deploying organisation or its
 vendor; no independent measure of AI test quality exists yet. Say so when you quote one.
 
@@ -61,13 +61,13 @@ or a process that stops existing). All four have evidence; automate and delegate
 
 **Evidence and sampling**
 - Improve: `#03` agents clarify PBC requests and check submissions before testing (Optro, RSM; collection agents announced).
-- Reinvent: `#08` full-population tests replace samples (Armanino tests 100% of vendor master changes).
+- Reinvent: `#08` full-population tests replace samples (Armanino tests 100% of vendor master changes); balances: `assurance-substantive-testing-24`.
 
 **Testing operating effectiveness and ITGCs**
 - Delegate: `#05` agents read unstructured evidence, test attributes, cite sources and draft workpapers; Reddit
   automated 175 controls in 90 days, -60% time per control (vendor-published, CAE-confirmed).
 - Automate: `#06` Microsoft's two-agent ITGC change-management tester (850 h and $185K a year). `#07` agents match
-  client documents to samples (Oberlander 16 h to 5-6 h; mostly substantive work so far).
+  client documents to samples; the measured cases are tests of details (`assurance-substantive-testing-10`).
 - Reinvent: `#09` continuous, year-round testing; internal audit tests the first line's monitoring (Klaviyo, Snowflake).
 - Ideas: `#23` screen evidence for fabrication and hidden instructions; `#25` synthetic data to stress-test controls pre-go-live.
 
@@ -116,7 +116,7 @@ Ask in the person's own setting (audit firm, internal audit, SOX programme or SO
    tool was used" is not enough.
 9. **"Which in-scope controls (yours or your clients') now depend on AI output? Are you testing around the AI or
    relying on it, and what do you keep: prompts, model versions, logs?"** Reveals exposure to the new test object
-   (`#15`); KPMG expects the first AI-related material weaknesses in 2027.
+   (`#15`), including "invisible AI" in ERP tools and "shadow AI" outside approved channels [CAQ-ACI-2026-08]; KPMG expects the first AI-related material weaknesses in 2027.
 10. **"Has full-population or continuous testing changed your exception volumes? Who works them, and are
     investigation thresholds set before you see results?"** Reveals capacity and expectation-gap risk (`#08`, `#09`).
 11. **"How has co-source spend, or your hours-based testing revenue, changed? What came in-house first?"**
@@ -138,8 +138,8 @@ Ask in the person's own setting (audit firm, internal audit, SOX programme or SO
 - Microsoft IA: 850 h and $185K a year from one ITGC agent, built in 1-3 months `#06`; sample selection weeks to
   one day `#04`; whole function: quality-review effort ~-50%, reports 3 to 2 weeks `#08`.
 - KPMG UK SOC engagements: ~18% less testing time; ~15% on one engagement using DataSnipper `#11`.
-- Oberlander: sample-to-evidence 16 h to 5-6 h; RMF: ~50% on 60+ invoice samples (both tests of details); Sanville: realisation
-  $150-200 to $250+ an hour and zero PCAOB comment forms (after a full methodology overhaul) `#07`.
+- Evidence-to-sample matching: no controls-specific measure (`#07`); the named figures (Oberlander, Sanville) are tests
+  of details, in `assurance-substantive-testing-10`.
 - PwC (external audit, year one): savings "not that drastic yet" [CFODIVE-PWC].
 
 **Vendor claims (grade C; ask for named, measured cases)**: Petual 68-80% efficiency [FTG-PETUAL]; Andera "save 70%
@@ -211,7 +211,7 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
   audit (PayPal); engineers and dual-track CPA/data-science hires at PwC; Reddit's "AI-first" internal audit role.
 - **IT auditors** must read configuration and model logs as fluently as a ledger; KPMG says these skills are not
   core to the CPA curriculum.
-- **Juniors.** Upside: Sanville's first-years now do complex revenue testing under guidance. Risk: moving from
+- **Juniors.** Upside: Sanville's first-years now do complex revenue testing under guidance (`assurance-substantive-testing-10`). Risk: moving from
   preparing to reviewing may erode autonomy and skill-building [HOLMSTROM]; Thomson Reuters urges protecting
   juniors' structured development [TRI-FOP]. NFRA wants role-specific training: safe use, critical review, governance.
 - **Co-source economics.** Clients redirect testing spend to advisory (Havertys); firms repackage testing as
@@ -245,7 +245,7 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 - **"AI isn't reliable; reruns give different answers."** True of LLMs alone. Deployments pair them with rules:
   Microsoft's pass/fail logic is rule-based; the FRC recommends output schemas and deterministic rules; vendors
   build evaluation sets so the same evidence gives the same conclusion (`#06`, `#21`). Ask for override rates.
-- **"Our external auditor won't rely on it."** Fair: no public case exists. Involve them before the pilot, agree the
+- **"Our external auditor won't rely on it."** Fair: no public case exists. Involve them before piloting, agree the
   workpaper format, run in parallel. The IIA is pressing the PCAOB to modernise AS 2605 (`#24`).
 - **"Review time will eat the savings."** 46% report more validation time and PwC calls savings modest, yet Reddit
   reports 60% less testing time per control. Design the review: cited evidence, risk-based re-performance, secondary AI review (`#10`).
@@ -263,13 +263,14 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 
 ## 10. Sources
 
-Full details (title, publisher, type, URL, date) are in the YAML; the synthesis report maps keys to input refs.
+Full details (title, publisher, type, URL, date, access) are in the YAML.
 - **Regulators and standard-setters:** FRC-GENAI (FRC, 2026-03-30); FRC-THEMATIC (FRC, 2025-06-26); IFIAR-2025F
   (2026-04-01); IFIAR-TTF25 (IFIAR, *Use of technology in audits*, 2025-03-27,
   https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf); IFIAR-TTF26 (2026-04-20); PCAOB-2024-007; IAASB-ED
   (2026-08-05); COSO-GENAI (2026-02-23); AFM-12 (2025-12-11); IRBA (2024-09-19).
-- **Professional bodies:** AICPA-PA, JOFA-PRB, JOFA-FAST, JOFA-COSO, JOFA-EVAL, CSA-SOC2, IIA-PCAOB, ICAEW-FRC, CALCPA.
-- **Not in the YAML (added at verification, all opened 2026-10-16):** FRC-SANDBOX (FRC, *Audit Tech & AI Sandbox*,
+- **Professional bodies:** AICPA-PA, JOFA-PRB, JOFA-FAST, JOFA-COSO, JOFA-EVAL, CSA-SOC2, IIA-PCAOB, ICAEW-FRC, CALCPA,
+  CAQ-ACI-2026-08, CAQ-ACI-2026-03.
+- **Not in the YAML (all opened 2026-10-16):** FRC-SANDBOX (FRC, *Audit Tech & AI Sandbox*,
   2026-06-04, https://www.frc.org.uk/news-and-events/news/2026/06/frc-invites-firms-and-companies-to-experiment-innovate-and-reduce-burdens-through-new-sandbox-programmes/);
   JOFA-QC1000 (JofA, *PCAOB postpones QC 1000*, 2025-08-29, https://www.journalofaccountancy.com/news/2025/aug/pcaob-postpones-effective-date-for-new-quality-control-system/);
   CPAB-AI (CPAB, *The use of AI in the audit*, 2024-09, https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2024-use-of-artificial-intelligence-in-the-audit-en.pdf);
@@ -281,7 +282,7 @@ Full details (title, publisher, type, URL, date) are in the YAML; the synthesis 
 - **Firms and in-house teams:** K-SOX30, K-404A, K-AGENTIC, K-UKCA, K-CLARA (KPMG); MSFT-CM, MSFT-IA (Microsoft);
   DELOITTE-OMNIA; RSM-BEACON; RIVERON; GT-SOX; BDO-ITGC; SD-TQA; UNIQUS; FOLEY-BOTIC; PWC-DCT (search only).
 - **Vendors:** OPTRO-LAUNCH, OPTRO-ACT, OPTRO-FIRST, OPTRO-MIDSHIP, OPTRO-HAVERTYS, OPTRO-FJM, OPTRO-SNOW,
-  AUDITBOARD-ACC; FG-AGENTS, FG-SANVILLE, FG-PCAOB, FG-FRAZIER (search only); DS-ARMANINO, DS-RMF; TR-AGENTIC;
+  AUDITBOARD-ACC; FG-AGENTS, FG-PCAOB, FG-FRAZIER (search only); DS-ARMANINO, DS-RMF; TR-AGENTIC;
   PETUAL-HOME, A16Z-PETUAL; MINDBRIDGE-PCAOB; YC-ARDEN, YC-MIDSHIP. Not in the YAML: ANDERA-HOME (Andera homepage,
   accessed 2026-10-16, https://www.andera.ai/); FG-FINAUDIT (Fieldguide, *Increase Capacity and Audit Quality with Field
   Agents for Financial Audit*, 2025-06, https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit).
