@@ -156,7 +156,7 @@ exercises per year; tiered agents with current assurance evidence. No published 
 | 1 in 5; USD 670,000 more | Breached organisations citing shadow AI; cost gap with high shadow-AI use | vendor-published | [IBM-CODB-2025] |
 | 8% / 64% | Run regular AI response exercises / have run none (1,800+ respondents) | independent | [ISACA-SOC-2026] |
 | 74% vs 27% | Could pass an AI audit vs fully mature governance | vendor-published | [CSA-SCHELLMAN-2026] |
-| About 1,400 tests; 112 roles; no major findings | One SOX-scoped agent tested for MSCI | vendor-published | [AIUC-MSCI-2026] |
+| About 1,400 tests; 112 roles; no major or significant vulnerabilities | One SOX-scoped agent tested for MSCI | vendor-published | [AIUC-MSCI-2026] |
 
 Forecasts, not measurements: 25% of enterprise GenAI applications with five or more minor security incidents a year by
 2028 [GARTNER-GENAIINC-2026]; 40% of enterprises demoting or decommissioning autonomous agents by 2027
@@ -167,7 +167,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
 - **Standards (voluntary):** OWASP Top 10 for LLM Applications 2026 and for Agentic Applications, Agent Control Standard
   [OWASP-LLM-2026; OWASP-AGENTIC-2025; OWASP-ACS-2026]; MITRE ATLAS; NIST AI 100-2, COSAiS overlays, preliminary Cyber AI
   Profile, AI RMF (under revision) [NIST-AI1002-2025; NIST-COSAIS-2026; NIST-IR8596-2025; NIST-AIRMF]; CISA/ACSC
-  agentic guidance, which advises agentic AI only for low-risk, non-sensitive tasks at first [CISA-AGENTIC-2026]; NIST,
+  agentic guidance, which advises using agentic AI only for low-risk, non-sensitive tasks and never granting broad access [CISA-AGENTIC-2026]; NIST,
   NSA and CISA ten incident practices for training and evaluation [NISTCISA-IRKEY-2026]; MCP authorisation (optional;
   audience binding required where used; token passthrough forbidden) [MCP-AUTHZ-2026; MCP-SECBP-2026]; CSA AICM and STAR
   for AI; ISO/IEC 42001; UK AI Cyber Security Code and ETSI EN 304 223 [CSA-AICM-2026; UK-DSIT-AICODE-2025].
@@ -175,7 +175,8 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
   for a death) for high-risk providers, with Annex III duties moved to 2027-12-02 by the AI Omnibus
   [EU-AIACT-ART73-2024; EC-AIACT-2026]; California SB 53 (since 2026-01-01) and New York RAISE (from 2027-01-01) apply to
   frontier developers only [KPMG-STATEAI-2026]; CERT-In requires incident reports within 6 hours [THN-CERTIN-2026]; MAS
-  expects inventory including embedded vendor AI, with 12 months for core and 24 for full implementation
+  expects inventory including embedded vendor AI, generally within 12 months (with oversight and materiality) and full
+  implementation within 24
   [MAS-AIRM-RESPONSE-2026]; NYDFS and FINRA cover AI vendor due diligence and agent supervision [NYDFS-AIIL-2024;
   FINRA-ROR-2026]. The EU GPAI Code lists red teaming and training-data tamper checks for systemic-risk models
   [EU-GPAICODE-2025].
@@ -193,7 +194,7 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
   LLM automation [ANTHROPIC-JOB-REDTEAM-2026; OPENAI-JOB-REDTEAMCYBER-2026].
 - **Agent sponsor:** each agent gets a named human owner who ends the accountability chain [MSFT-ENTRAAGENTID-2026];
   identity teams manage agents as a new identity class.
-- **Evaluators become security engineers and responders:** AISI requires internet access to be justified and runs
+- **Evaluators become security engineers and responders:** AISI requires internet access to be justified and publishes
   incident reports on its own tests [UKAISI-INCIDENT-2026]; security and research staff share an on-call rota with
   rights to pause runs [OPENAI-HFTECH-2026].
 - **Transcript analyst and scanner designer:** CAISI and UK AISI describe designing and validating transcript scanners
@@ -215,7 +216,8 @@ Forecasts, not measurements: 25% of enterprise GenAI applications with five or m
   incidents; METR reviews independently [HF-DISCLOSURE-2026; ANTHROPIC-EVALINC-2026; UKAISI-INCIDENT-2026; METR-OAIHF-2026].
 - 2026-08-05: SAFE request for comments on a shared AI near-miss exchange, 120+ members [TECHZINE-SAFE-2026].
 - 2026-08-07 and 2026-08-26: classifier-gated auto mode becomes default; an independent researcher contests it
-  [ANTHROPIC-AUTOMODE-2026; REHBERGER-AUTOMODE-2026]. Same day, Trail of Bits: VMs will not contain cyber-capable agents.
+  [ANTHROPIC-AUTOMODE-2026; REHBERGER-AUTOMODE-2026]. On 2026-08-26 Trail of Bits also publishes that VMs won't contain
+  cyber-capable agents [TOB-VMS-2026].
 - 2026-09-01: OWASP Agent Control Standard and framework crosswalk [OWASP-ACS-2026; OWASP-XWALK-2026].
 - 2026-09-08: joint CISA/NSA/FBI distillation advisory; Google sees adversaries move to agentic workflows
   [CISA-AA26-251A-2026; GTIG-AITRACKER-2026].
