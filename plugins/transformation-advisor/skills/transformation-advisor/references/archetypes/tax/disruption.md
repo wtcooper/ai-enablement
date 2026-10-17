@@ -113,8 +113,10 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 
 ## 7. Scenario 6: new services around AI
 
-- **Selling agents and platforms.** EY's Tax Agent Factory builds agents with clients; KPMG's Digital Gateway lets
-  clients use Claude-built tax agents [EY-TAXLABS-2025; KPMG-ANTHROPIC-2026].
+- **Selling agents and platforms.** EY's Tax Agent Factory is a method and operating model for deploying agents with
+  clients; KPMG embeds Claude in its client delivery platform with tax clients the first focus, and its US tax vice chair
+  says building a client agent for changing tax rules went "from weeks to minutes" (a quote, not a study)
+  [EY-TAXLABS-2025; KPMG-ANTHROPIC-2026].
 - **Managed services.** KPMG says 40% of companies have adopted managed services at scale in tax (its survey); its
   leader says the market is "approaching $1B" (his experience) [KPMG-MS-2026].
 - **Advice on AI itself.** Companies asked the OECD how to characterise AI transactions between affiliates
