@@ -1,9 +1,9 @@
 # Transfer pricing (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/transfer-pricing.yaml` (23 entries). Ids are shortened
+Last reviewed 2026-10-17. Use cases live in `../use-cases/transfer-pricing.yaml` (22 entries). Ids are shortened
 here: `#06` means `tax-transfer-pricing-06`. Source keys in brackets, such as [IRS-LBI-TP-2026], are in the YAML or
-in §10. **Evidence is thin.** Only 4 of 23 entries are graded A or B: three are rules-based automation or sourcing
-changes, and one is tax-authority AI. Almost every figure is vendor-published (mostly by Aibidia, a TP software vendor) or a conference speaker's own
+in §10. **Evidence is thin.** Only 3 of 22 entries are graded A or B, and all three are rules-based automation or
+sourcing changes. Almost every figure is vendor-published (mostly by Aibidia, a TP software vendor) or a conference speaker's own
 claim. No error rate, override rate, parallel run or independent test of AI in TP exists. Say so when you quote a figure.
 
 ## Contents
@@ -26,7 +26,8 @@ arm's-length principle (the price unrelated parties would agree). The module run
 agreements through benchmarking (finding comparable independent companies or deals), local files, master files and
 country-by-country (CbC) reports, intragroup services and operational TP (setting and monitoring prices during the
 year), to audit defence, advance pricing agreements (APAs) and mutual agreement procedures (MAPs). It covers in-house
-TP teams and advisory firms; tax authorities' own AI appears only as context (`#23`).
+TP teams and advisory firms. Tax authorities' AI for picking TP audits is in `tax-controversy-13` (IRS) and
+`tax-controversy-15` (Hungary, HMRC and others).
 
 ## 2. Processes and key steps
 
@@ -83,7 +84,8 @@ conference-reported only. No automate entry is at the step level.
 **Controversy, APAs and governance**
 - Improve: `#16` drafting and stress-testing audit responses from prior files. Ideas (D): `#17` AI in expert
   economic reports with full disclosure; `#18` APA and MAP outcome prediction; `#20` AI-use and verification log.
-- Context: `#23` authorities using AI to select TP audits (Hungary's 2026 plan; IRS selection models; grade B).
+- Context: authorities using AI to select TP audits (Hungary's 2026 plan, IRS models): `tax-controversy-13`, `-15`.
+  EY's TP Doc Insights checks documentation against public data: `tax-controversy-05`.
 
 **Operating and service model**
 - Reinvent: `#21` insourcing recurring documentation with advisors limited to review (Trivium, Fortum; grade B).
@@ -110,7 +112,7 @@ Ask in the person's setting (in-house TP team, advisory practice or controversy 
 7. **"If an authority or court asked how an AI-assisted analysis was produced, what could you show: inputs,
    formulas, tool, reviewer?"** Reveals readiness for IRS expectations [IRS-LBI-TP-2026] and whether `#20` exists.
 8. **"Do your functional analysis, agreements, local files, CbC report and returns tell the same story?"** Reveals
-   exposure to authority analytics (`#23`) and the case for `#08` and `#15`.
+   exposure to authority analytics (`tax-controversy-15`) and the case for `#08` and `#15`.
 9. **"Which work do you pay advisors for, and what would you bring in-house if the data were structured?"** Reveals
    sourcing options (`#21`, `#22`); 53% already run hybrid models (vendor survey).
 10. **"Who in the team writes down how TP decisions are made, so a model can be given that context?"** Reveals
@@ -239,8 +241,10 @@ Full details for keys used in the use cases are in the YAML. Keys cited above th
 - BGOV-AGENTS-2026: "Companies' Sharing of AI Agents Risks More Tax Fights", Bloomberg Government, 2026-08-21, https://news.bgov.com/daily-tax-report/companies-sharing-of-ai-agents-risks-more-tax-fights (first paragraphs)
 - BTAX-VAT2026: "Digital Mandates and AI Reshape VAT Compliance Landscape in 2026" (E. Trombitas), Bloomberg Tax, 2026-01-06, https://news.bloombergtax.com/tax-insights-and-commentary/digital-mandates-and-ai-reshape-vat-compliance-landscape-in-2026 (routed from indirect-tax)
 - CIAT-BLOG-2026: "Artificial Intelligence Agents in the control of Transfer Pricing" (P. Porporatto), CIAT, 2026-02-03, https://www.ciat.org/artificial-intelligence-agents-in-the-control-of-transfer-pricing/?lang=en
+- GAO-2026: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management" (GAO-26-107522), GAO, 2026-03-24, https://www.gao.gov/products/gao-26-107522
 - COLUMN-TAXCALCBENCH-2025: "TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task", arXiv (Column Tax), 2025-07-22, https://arxiv.org/abs/2507.16126 (abstract)
 - HLB-CH7-2026: "OECD Proposes Revisions to TP Guidelines on Intra-group Services", HLB Thailand, 2026-08-31, https://www.hlbthai.com/oecd-proposes-revisions-to-transfer-pricing-guidelines-on-intra-group-services/
 - OECD-INTRAGROUP-2026: "Companies Want OECD to Clarify Character of AI Transactions", Bloomberg Tax Daily Tax Report, 2026-08-25, https://news.bgov.com/daily-tax-report/companies-want-oecd-to-clarify-character-of-ai-transactions (first paragraphs)
 - OXFORD-CBT-2026: Oxford CBT Summer Conference 2026 booklet, Session 4, 2026-06-26, https://oxfordtax.sbs.ox.ac.uk/sitefiles/cbt-summer-conference-booklet-2026
+- TIGTA-2025: "The IRS Could Leverage Examination Results in AI Examination Case Selection Models and Improve Processes to Evaluate Performance" (2025-308-022), TIGTA, 2025-05-19, https://www.tigta.gov/sites/default/files/reports/2025-08/2025308022fr.pdf
 - PWCDE-CH7-2026: "OECD: Public consultation on Transfer Pricing Guidelines", PwC Germany, 2026-06-10, https://blogs.pwc.de/en/german-tax-and-legal-news/article/255082/oecd-public-consultation-on-transfer-pricing-guidelines/

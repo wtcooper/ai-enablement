@@ -2142,7 +2142,9 @@
     access: full
     locator: Section 1, due diligence
   last_reviewed: '2026-10-17'
-  notes: From practice-05. Only one named firm gives a figure, and it is a usage count.
+  notes: >-
+    From practice-05. Only one named firm gives a figure, and it is a usage count. Larson Gross's customer page describes
+    reduced time on routine tasks, with no figures [BLUEJ-LARSON-2025].
 
 - id: tax-research-advisory-17
   title: >-
@@ -3058,7 +3060,7 @@
   risks_and_guardrails:
   - >-
     OPR (s10.27): do not bill manual time not spent; pass efficiencies on openly and disclose AI activities in general
-    or specific terms [IRS-OPR-2026]
+    or specific terms [IRS-OPR-2026; KTS-AI-2026]
   - >-
     The AICPA calls OPR's fee language non-authoritative and 'overly simplistic', says it does not appear to allow value
     pricing, and is working with the IRS on FAQs [AICPA-FEES-2026; AICPA-CART-2026]

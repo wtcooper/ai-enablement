@@ -128,10 +128,10 @@
     - "Historical treatment data and staff guides to train the agents; PwC keeps retraining on new data (PWC-MEGNA-2025)"
     - "A tool-management layer for agents (PwC's Agent OS) and reviewers who record override reasons"
     - "For Scan, the CCH Axcess platform, which receives the extracted data"
-    - "Source documents retained and linkable to each extracted figure, and a sampling or full-verification procedure defined before go-live (AICPA-WERFELAPP-2026, Appendix C, risk 3)"
+    - "Source documents retained and linkable to each extracted figure, and a sampling or full-verification procedure defined before go-live (AICPA-WERFEL-2026, Appendix C, risk 3)"
   risks_and_guardrails:
     - "PwC says confidence rarely reaches 100% and reviewers remain in the loop; 'it's not a complete handoff'. Simpler diagnostics may need fewer review layers, while complex outputs such as tax calculations keep multi-eye review (PWC-MEGNA-2025)."
-    - "Werfel's illustrative scenario: a W-2 box 12 code is misclassified, a pre-tax health premium is treated as taxable wages, and the error surfaces only when the taxpayer receives a notice. It is hypothetical, not an observed incident (AICPA-WERFELAPP-2026, Appendix C, risk 3)."
+    - "Werfel's illustrative scenario: a W-2 box 12 code is misclassified, a pre-tax health premium is treated as taxable wages, and the error surfaces only when the taxpayer receives a notice. It is hypothetical, not an observed incident (AICPA-WERFEL-2026, Appendix C, risk 3)."
     - "WCG judged K-1 and consolidated-1099 coverage a minimum bar for any vendor serving complex individual returns (WCG-NOTREADY-2026)."
     - "Under the section 7216 regulations a person who develops software used to prepare returns is itself a tax return preparer, and contractors receiving return information for software work must get written notice of sections 6713 and 7216. Whether a given AI vendor falls within those provisions is not answered by the sources (TREAS-7216-2008)."
   human_checkpoints:
@@ -141,14 +141,14 @@
   role_evolution: >-
     Preparers move from keying and interpreting footnotes to exception review and verification; PwC says reviewers'
     override explanations train the agents (PWC-MEGNA-2025). Werfel's register warns that junior staff can end up
-    operating the tool without building the tax-law understanding needed to catch its errors (AICPA-WERFELAPP-2026,
+    operating the tool without building the tax-law understanding needed to catch its errors (AICPA-WERFEL-2026,
     Appendix C, risk 13).
   evidence_grade: B
   sources:
-    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: press, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "answer to first question (K-1 mapping, confidence and override loop); answers on Agent OS and review layers" }
+    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: firm, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "answer to first question (K-1 mapping, confidence and override loop); answers on Agent OS and review layers" }
     - { ref: WK-AXCESSSCAN-2026, title: "CCH Axcess Scan", publisher: "Wolters Kluwer", type: vendor, url: "https://www.wolterskluwer.com/en/solutions/cch-axcess/scan", date: "2026-10-17", access: full, locator: "sections on complex K-1 extraction ('97.5% overall accuracy') and FAQ (page undated; read via r.jina.ai mirror)" }
     - { ref: INTUIT-PROCONNECTAI-2026, title: "AI-Powered Tax Prep Tools (ProConnect)", publisher: "Intuit", type: vendor, url: "https://accountants.intuit.com/tax-software/tax-online/ai-features/", date: "2026-10-17", access: full, locator: "SmartReturn and 'Intelligent data import' blocks with customer quotes (page undated)" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 13" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 13" }
     - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "section 'Ratings': importing data and integration" }
     - { ref: TREAS-7216-2008, title: "26 CFR 301.7216-1, 301.7216-2 and 301.7216-3: disclosure or use of tax return information by tax return preparers", publisher: "U.S. Treasury (T.D. 9375, as amended), text read from eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-26/section-301.7216-3", date: "2008-01", access: full, locator: "301.7216-1(b)(2)(i)(B); 301.7216-2(d)(2)" }
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "vendor sections on K-1 and consolidated 1099 coverage" }
@@ -159,6 +159,7 @@
     verifying every extracted figure is running it as augment. PwC's K-1 example is from its asset and wealth
     management work, adjacent to individual and small-business returns, and the interview is from June 2025; this
     caps the grade at B. The Intuit and Wolters Kluwer figures are undated vendor-page claims.
+    Overlaps: tax-compliance-corporate-02 uses the same PwC interview for the corporate lens.
 
 - id: tax-compliance-individual-business-03
   title: Retail preparer offices replace manual data entry with AI to free appointment time for advice
@@ -237,7 +238,7 @@
   prerequisites:
     - "Source documents and the prior-year return uploaded to CoCounsel Tax; a firm-defined document intake process"
     - "A client portal for review and signature, and the firm's usual e-file process"
-    - "A documented verification policy and logging before any client return is processed (AICPA-WERFELAPP-2026, Appendix D, Step 5)"
+    - "A documented verification policy and logging before any client return is processed (AICPA-WERFEL-2026, Appendix D, Step 5)"
   risks_and_guardrails:
     - "WCG reported that at its 2026 evaluation Ready to Review did not handle K-1s or consolidated 1099 brokerage statements, and said both were on the vendor's roadmap for November 2026 (WCG's account, not confirmed by Thomson Reuters)."
     - "WCG noted the product works inside Thomson Reuters' own environment, which it saw as a structural problem for firms on other tax engines (WCG-NOTREADY-2026)."
@@ -258,7 +259,7 @@
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "section 'Thomson Reuters Ready to Review'" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework, items 1 and 3" }
     - { ref: COLUMN-TAXCALCBENCH-2025, title: "TaxCalcBench: Evaluating Frontier Models on the Tax Calculation Task (arXiv 2507.16126)", publisher: "Column Tax authors (Bock, Molisee, Ozer, Shah), arXiv preprint", type: academic, url: "https://arxiv.org/abs/2507.16126", date: "2025-07-22", access: full, locator: "abstract; section 4 results table" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Step 5" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Step 5" }
     - { ref: IRS-PUB1345-2025, title: "Publication 1345: Handbook for Authorized IRS e-file Providers of Individual Income Tax Returns (Rev. 12-2025)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p1345.pdf", date: "2025-12", access: full, locator: "Form 8878/8879 signature authorisation section" }
   last_reviewed: "2026-10-17"
   notes: >-
@@ -326,7 +327,7 @@
   risks_and_guardrails:
     - "WCG found the host tax software still re-runs its own calculations and diagnostics, so pre-preparation work is rechecked and the firm still handles diagnostics, e-file setup, Form 8879 and delivery (WCG's assessment of Black Ore)."
     - "Black Ore told Accounting Today that complex returns are about 98% touchless and that a CPA must attest to the return and resolve edge cases; some firm leaders worried that returns prepared at a higher level of abstraction might differ from prior-year returns and create audit risk in the transition year (ACCTODAY-BLACKORE-2026)."
-    - "Werfel's preparer register names incorrect document extraction that flows silently into the return, and control dilution, where AI-driven volume makes partner review less rigorous in practice even if unchanged on paper (AICPA-WERFELAPP-2026, Appendix C, risks 3 and 6)."
+    - "Werfel's preparer register names incorrect document extraction that flows silently into the return, and control dilution, where AI-driven volume makes partner review less rigorous in practice even if unchanged on paper (AICPA-WERFEL-2026, Appendix C, risks 3 and 6)."
     - "On the TaxCalcBench tax year 2025 edition (50 cases), strict return-level correctness of unaided models ran from 0 to 71 percent depending on model and web search; this tests the calculation step only, not these products (COLUMN-TCBREPO-2026)."
     - "No independent audit of the accuracy or time claims was found."
   human_checkpoints:
@@ -351,7 +352,7 @@
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "Black Ore section (Lacerte handoff, pricing)" }
     - { ref: ACCRUAL-HOME-2026, title: "Accrual home page", publisher: "Accrual", type: vendor, url: "https://www.accrual.com/", date: "2026-10-17", access: full, locator: "'Complex individual, trust, and partnership returns, prepared end to end' (page undated)" }
     - { ref: ACCRUAL-LAUNCH-2026, title: "Tax platform Accrual launches with AI automation support for all forms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/tax-platform-accrual-launches-with-ai-automation-support-for-all-forms", date: "2026-02-05", access: full, locator: "paragraphs on complexity-matrix pricing and CCH Axcess integration" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 6" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 6" }
     - { ref: COLUMN-TCBREPO-2026, title: "TaxCalcBench repository README and TY2025 leaderboard", publisher: "Column Tax (GitHub)", type: vendor, url: "https://github.com/column-tax/tax-calc-bench", date: "2026-06", access: full, locator: "Leaderboard, Tax Year 2025 table and notes" }
     - { ref: CPAPA-BLACKORE-2024, title: "Review of Black Ore Tax Autopilot - Accounting Technology Lab Podcast", publisher: "CPA Practice Advisor", type: podcast, url: "https://www.cpapracticeadvisor.com/podcasts/review-of-black-ore-tax-autopilot-the-accounting-technology-lab-podcast-june-2024/", date: "2024-06", access: full, locator: "transcript, hosts' discussion of partner-reviewable returns and tie-out" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework, item 4 (vetting third-party tools)" }
@@ -409,7 +410,7 @@
     - "WCG says business-entity returns involve book-to-tax adjustments, allocations and depreciation decisions that still belong in experienced human hands, and it begins AI preparation with individual 1040s (WCG-PLAYBOOK-2026)."
     - "Accrual's CEO said the product does not automate 100% of the work (ACCRUAL-LAUNCH-2026)."
     - "OPR expects the signing practitioner to verify facts, citations and calculations that AI produces (IRS-OPR-2026)."
-    - "Control dilution and incorrect document extraction apply as for 1040 agents (AICPA-WERFELAPP-2026, Appendix C)."
+    - "Control dilution and incorrect document extraction apply as for 1040 agents (AICPA-WERFEL-2026, Appendix C)."
   human_checkpoints:
     - "Review of the draft with open items and treatment decisions surfaced before anything commits"
     - "Approval of agent changes (Accrual shows proposed changes and asks for approval before applying them)"
@@ -428,7 +429,7 @@
     - { ref: WCG-PLAYBOOK-2026, title: "AI Tax Preparation and Automation: What It Means for You", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-preparation-and-automation-what-it-means-for-you/", date: "2026-07-05", access: full, locator: "Key Takeaways: 'Business entity returns still require human judgment'" }
     - { ref: ACCRUAL-LAUNCH-2026, title: "Tax platform Accrual launches with AI automation support for all forms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/tax-platform-accrual-launches-with-ai-automation-support-for-all-forms", date: "2026-02-05", access: full, locator: "paragraphs on K-1 focus, 'not 100%' automation and plans beyond individual returns" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework, item 1" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 6" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 3 and 6" }
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from the practice entry (B) and the discourse entry (C), plus a podcast routed from the compliance-corporate
@@ -437,6 +438,7 @@
     Accounting Today its AI is 100% accurate (his claim), which sits against WCG's view that no vendor is yet end to
     end. The 2027 prediction is the podcast hosts' summary of industry predictions. No source describes 1120-S
     preparation in use, and trust (1041) evidence is limited to Accrual's pages.
+    Overlaps: tax-compliance-corporate-06 (roll-forward agents for 1120, 1120-S and 1065 business returns).
 
 - id: tax-compliance-individual-business-07
   title: Trial balance to tax workpapers for pass-through returns (account mapping, book-to-tax adjustments, fixed assets)
@@ -650,6 +652,7 @@
     in production. From the governance angle, with the tax year 2025 leaderboard from the discourse angle. In the 2025
     edition one tax year 2025 case was excluded from the best row because the model copied the expected output from
     the repository (COLUMN-TCBREPO-2026).
+    Overlaps: tax-compliance-corporate-22, tax-research-advisory-12 and tax-indirect-tax-22 describe the same model-plus-engine design.
 
 - id: tax-compliance-individual-business-11
   title: Grounded assistant for preparers on code changes, unusual questions and return positions, with every authority verified
@@ -706,24 +709,25 @@
     - "Reviewer opens and reads each cited authority; a second reviewer cross-checks authorities in litigation filings (TAXCT-CLINCO-2026)"
   role_evolution: >-
     Research shifts from searching to verifying. Werfel's register warns that junior staff may accept confident,
-    well-formatted AI lists without checking authorities (AICPA-WERFELAPP-2026, Appendix C, risk 4). H&R Block frames
+    well-formatted AI lists without checking authorities (AICPA-WERFEL-2026, Appendix C, risk 4). H&R Block frames
     the tax pro's value as judgment and advice (HRB-Q4CALL-2026).
   evidence_grade: B
   sources:
     - { ref: CNBC-HRB-2025, title: "ChatGPT for taxes? OpenAI and H&R Block have a plan for tax pros", publisher: "CNBC via NBC 7 San Diego", type: press, url: "https://www.nbcsandiego.com/news/business/money-report/chatgpt-for-taxes-openai-and-hr-block-have-a-plan-for-tax-pros/3804532/?amp=1", date: "2025-04-15", access: full, locator: "paragraphs on the project, the Tax Institute data, 2026 season timing and the ROI study" }
     - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: "H&R Block (transcript via earningswhispers.com)", type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: "2026-08-11", access: full, locator: "CEO prepared remarks: 'Sidekick, our AI TaxPro assistant'" }
     - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "section 'Use of AI and other technical tools'" }
-    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: press, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "'The apparitions in the briefing'; 'A recipe for sanctions'; 'Litigation safeguards'" }
+    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "'The apparitions in the briefing'; 'A recipe for sanctions'; 'Litigation safeguards'" }
     - { ref: MAGESH-HALLUC-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Magesh, Surani, Dahl, Suzgun, Manning and Ho (Stanford)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Real-World Consequences; Regulatory Framework item 1" }
     - { ref: TREAS-C230-2014, title: "31 CFR 10.34, Circular 230 standards with respect to tax returns and documents", publisher: "U.S. Treasury (Circular 230, Rev. 6-2014), text read from eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-31/section-10.34", date: "2014-06", access: full, locator: "10.34(a)(1)" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risk 4" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risk 4" }
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from the practice entry on Sidekick (B), the discourse entry on the H&R Block and OpenAI announcement (C)
     and the governance entry on research for return positions (B). The transcript does not say Sidekick is the tool
     built with OpenAI; a search summary said so but was not opened, so the link is unconfirmed. The research product
     landscape (Blue J, CoCounsel, Bloomberg Tax, CCH) and its accuracy belong to the research-advisory module.
+    Overlaps: tax-research-advisory-01 (cited research assistants) and tax-compliance-corporate-11.
 
 - id: tax-compliance-individual-business-12
   title: AI-assisted return review with source tie-out, diagnostics, prior-year variance and audit-sensitive flags
@@ -761,7 +765,7 @@
   risks_and_guardrails:
     - "WCG notes the host tax software repeats its own diagnostics, so upstream pre-checks may be duplicated (WCG's assessment of one vendor architecture)."
     - "OPR Alert 2026-19 says practitioners must carefully review everything AI produces; AI review does not replace the practitioner's own section 10.22 due diligence (IRS-OPR-2026)."
-    - "Control dilution: AI-driven volume can make review less rigorous in practice even if the process is unchanged on paper (AICPA-WERFEL-2026)."
+    - "Control dilution: AI-driven volume can make review less rigorous in practice even if the process is unchanged on paper (TAXADVISER-WERFEL-2026)."
     - "TEI attendees described grappling with how to review a growing volume of work when AI errors are 'polite, quiet and technical' (TEI-TAXTECH-2026; corporate setting)."
     - "In an adjacent month-end close benchmark, in three of the four AI-assisted sessions that did not score perfectly, the AI had the correct figure at some point but it did not reach the final submission (ACCTODAY-AIBENCH-2026; accounting, not tax)."
   human_checkpoints:
@@ -779,10 +783,10 @@
     - { ref: TR-RTR-2026, title: "Complete tax returns faster with Ready to Review (product page and FAQ)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/products/ready-to-review", date: "2026-10-17", access: full, locator: "FAQ answer on verification, two-year comparisons and diagnostics" }
     - { ref: TAXGPT-2026, title: "TaxGPT Releases Autonomous Tax Workflow Agent", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/03/24/taxgpt-releases-autonomous-tax-workflow-agent/180159/", date: "2026-03-24", access: full, locator: "free portion of the page: return-review agent (routed from the controversy practice deep dive)" }
     - { ref: CPAPA-TAXGPT-2026, title: "Why General AI is Not Suitable for Tax Research - Accounting Technology Lab Podcast", publisher: "CPA Practice Advisor", type: podcast, url: "https://www.cpapracticeadvisor.com/podcasts/why-general-ai-is-not-suitable-for-tax-research-accounting-technology-lab-podcast-june-2026/", date: "2026-06", access: full, locator: "transcript, founder's account of review then preparation agents" }
-    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: press, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "introduction (tax diagnostics)" }
+    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: firm, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "introduction (tax diagnostics)" }
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "Black Ore section on host-software diagnostics" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "opening section; 'Section 10.22 - Due Diligence'" }
-    - { ref: AICPA-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA), August 2026 issue", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, 'Control dilution'" }
+    - { ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA), August 2026 issue", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, 'Control dilution'" }
     - { ref: TEI-TAXTECH-2026, title: "2026 TEI Tax Tech: the man behind the curtain", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain", date: "2026-05-04", access: full, locator: "section 'A very bad wizard'" }
     - { ref: ACCTODAY-AIBENCH-2026, title: "AI beats human accountants at monthly close, transaction categorization", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ai-beats-human-accountants-at-monthly-close-transaction-categorization", date: "2026-10-16", access: full, locator: "The Mercor benchmark section" }
   last_reviewed: "2026-10-17"
@@ -790,6 +794,7 @@
     Merged from the practice entry (B), the discourse entry (C) and TaxGPT's review agent routed from the controversy
     practice deep dive. Seed Money Consulting is the named firm. No source reports false-positive, miss or override
     rates for AI review.
+    Overlaps: tax-controversy-04 (pre-filing audit-exposure review) and tax-compliance-corporate-13.
 
 - id: tax-compliance-individual-business-13
   title: Review controls for AI-assisted returns - decision logs, override-rate monitoring, scaled sampling and escalation (idea)
@@ -821,14 +826,14 @@
       description: "none published"
       figure: "none published"
       measures: "no figure published"
-      source_ref: AICPA-WERFELAPP-2026
+      source_ref: AICPA-WERFEL-2026
   prerequisites:
     - "A tool or workflow that records suggestions and user decisions in a retrievable form"
     - "Baseline review time and error data for pre-AI returns"
     - "A working definition of 'novel or uncertain' positions for escalation, and someone assigned to act on error patterns"
   risks_and_guardrails:
     - "Without a baseline a firm cannot tell whether review quality fell. The only human-error baseline found is old: a 2014 GAO study of 19 undercover visits found 2 of 19 preparers computed the correct refund, and GAO estimated errors in 60% of preparer-prepared returns against 50% of self-prepared ones for tax years 2006-2009. The sample cannot be generalised (GAO-14467T-2014)."
-    - "Logs are firm records that may be produced in an IRS examination or client dispute, and they hold client return information under the firm's security duties (AICPA-WERFELAPP-2026; IRS-PUB5708-2024)."
+    - "Logs are firm records that may be produced in an IRS examination or client dispute, and they hold client return information under the firm's security duties (AICPA-WERFEL-2026; IRS-PUB5708-2024)."
     - "Override-rate monitoring is a proposal; there is no published evidence of what rate indicates good practice. Werfel's illustrative case study treats a per-preparer override rate below 5% as a trigger for review, because it suggests approval rather than analysis."
     - "Circular 230 section 10.36 expects principals to take reasonable steps to ensure firm procedures are followed (IRS-OPR-2026, item 4)."
   human_checkpoints:
@@ -838,10 +843,10 @@
     Reviewers' decisions become auditable data, which is what the TPB expects to see under its Determination sections
     30 and 40 (TPB-GS55-2026). Reviewers move from catching keying errors to testing positions and auditing the tool;
     Werfel warns of a hollowing out of experienced staff as AI reduces demand for their expertise
-    (AICPA-WERFELAPP-2026, Appendix C, risk 15).
+    (AICPA-WERFEL-2026, Appendix C, risk 15).
   evidence_grade: D
   sources:
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 1, 4-7, 12 and 15; Appendix D Steps 5-7" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 1, 4-7, 12 and 15; Appendix D Steps 5-7" }
     - { ref: TPB-GS55-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Competency section, paragraph 10 and Table 1" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework item 4; Best Practices for Responsible AI Use" }
     - { ref: GAO-14467T-2014, title: "Paid Tax Return Preparers: In a Limited Study, Preparers Made Significant Errors (GAO-14-467T)", publisher: "U.S. Government Accountability Office", type: regulator, url: "https://www.gao.gov/products/gao-14-467t", date: "2014-04", access: full, locator: "Highlights: What GAO Found" }
@@ -851,6 +856,7 @@
     Idea. Merged two governance-angle ideas (decision logging and override monitoring; review redesign against control
     dilution). The TPB paragraph is an Australian regulator's expectation, not a US requirement; Werfel's retention
     periods and thresholds are illustrative figures in a hypothetical case study.
+    Overlaps: tax-compliance-corporate-19 and tax-research-advisory-19 (AI-use and verification records).
 
 - id: tax-compliance-individual-business-14
   title: Automated look-back review of prior-year returns for missed opportunities, offered to every new client ("Second Look")
@@ -890,6 +896,7 @@
   evidence_grade: B
   sources:
     - { ref: HRB-Q4CALL-2026, title: "H&R Block Q4 fiscal 2026 earnings call transcript", publisher: "H&R Block (transcript via earningswhispers.com)", type: firm, url: "https://earningswhispers.com/transcript/HRB/Q42026", date: "2026-08-11", access: full, locator: "prepared remarks on Second Look retention; analyst Q&A answer on automating Second Look" }
+    - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "planning-opportunity review tools (93% use none; 2% use Holistiplan)" }
   last_reviewed: "2026-10-17"
   notes: >-
     From the practice angle only. The 600 basis point figure measures an existing service's retention link and is
@@ -939,7 +946,7 @@
   risks_and_guardrails:
     - "OPR warns against uploading sensitive data to unsecured or public systems and says only secure, enterprise-approved AI should be used with client data (IRS-OPR-2026, item 6)."
     - "Written advice must rest on reasonable factual and legal assumptions and cannot rely on unverified AI output (IRS-OPR-2026, item 5, section 10.37)."
-    - "The UK PCRT guidance says members should review AI-prepared correspondence for appropriate tone and content (ICAEW-PCRT-2026)."
+    - "The UK PCRT guidance says members should review AI-prepared correspondence for appropriate tone and content (PCRT-AI-2026)."
     - "A Taxpayer Advocate Service note cites an informal Washington Post test in which two tax software companies' consumer chatbots gave inaccurate or irrelevant answers up to 50% of the time on 16 complex questions (TAS-AIBLOG-2024; consumer chatbots, not drafting tools)."
     - "WCG says AI spend raises its technology stack cost by about 25% (WCG-PLAYBOOK-2026)."
   human_checkpoints:
@@ -956,7 +963,7 @@
     - { ref: WCG-PLAYBOOK-2026, title: "AI Tax Preparation and Automation: What It Means for You", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-preparation-and-automation-what-it-means-for-you/", date: "2026-07-05", access: full, locator: "section 'Let's Be Direct About What This Is'" }
     - { ref: INTUIT-PROCONNECTAI-2026, title: "AI-Powered Tax Prep Tools (ProConnect)", publisher: "Intuit", type: vendor, url: "https://accountants.intuit.com/tax-software/tax-online/ai-features/", date: "2026-10-17", access: full, locator: "resource list entry 'AI Client Briefing' (title only; page undated)" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 5 and 6" }
-    - { ref: ICAEW-PCRT-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: professional behaviour" }
+    - { ref: PCRT-AI-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: professional behaviour" }
     - { ref: TAS-AIBLOG-2024, title: "Is AI Generated Tax Advice Making the Grade?", publisher: "Taxpayer Advocate Service (IRS)", type: regulator, url: "https://www.taxpayeradvocate.irs.gov/news/tax-tips/is-ai-generated-tax-advice-making-the-grade/2024/06/", date: "2024-06", access: full, locator: "paragraph on the Washington Post review" }
   last_reviewed: "2026-10-17"
   notes: >-
@@ -964,6 +971,7 @@
     entry on return-derived narratives (C). WCG's plan is described in its own post; the practice deep dive's summary
     says WCG is using AI now for narratives, quoting and plan comparisons while its entry describes a plan, so
     maturity is set to piloting. No named firm or accuracy evidence exists for correspondence drafting.
+    Overlaps: tax-research-advisory-14 (memo and client email drafting); notice replies are tax-controversy-02.
 
 - id: tax-compliance-individual-business-16
   title: Return assembly, delivery, e-signature and Form 8879 e-file authorisation automation
@@ -1004,6 +1012,7 @@
   sources:
     - { ref: TR-TRUST7-2026, title: "Can you trust it? 7 questions to ask any platform that claims to handle your entire tax workflow", publisher: "Thomson Reuters Tax and Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/can-you-trust-it-7-questions-to-ask-any-platform-that-claims-to-handle-your-entire-tax-workflow/", date: "2026-10-14", access: full, locator: "questions 2, 4 and 5" }
     - { ref: IRS-PUB1345-2025, title: "Publication 1345: Handbook for Authorized IRS e-file Providers of Individual Income Tax Returns (Rev. 12-2025)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p1345.pdf", date: "2025-12", access: full, locator: "signature, ERO and Responsible Official passages" }
+    - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "Black Ore section (final steps stay in the tax software)" }
   last_reviewed: "2026-10-17"
   notes: >-
     From the discourse angle. Vendor marketing for a competitive evaluation; treat the minutes-per-return figure as a
@@ -1039,7 +1048,7 @@
   prerequisites:
     - "Integration with the firm's tax software (CCH iFirm is named)"
   risks_and_guardrails:
-    - "The PCRT AI guidance (19 Jan 2026) says members remain responsible for work produced with AI, and that entering client data into a publicly available AI model without consent is likely to breach confidentiality (PCRT-AI-2026, ICAEW-PCRT-2026)."
+    - "The PCRT AI guidance (19 Jan 2026) says members remain responsible for work produced with AI, and that entering client data into a publicly available AI model without consent is likely to breach confidentiality (ATT-PCRTAI-2026, PCRT-AI-2026)."
     - "HMRC expects continuous monitoring, version control and timely updates of code and data sources in tax software that uses generative AI, with human oversight (HMRC-GENAI-2026)."
   human_checkpoints:
     - "Team review and approval before submission"
@@ -1048,8 +1057,8 @@
   evidence_grade: C
   sources:
     - { ref: APARIPRO-2026, title: "ApariPro: AI powered tax preparation for accountancy firms", publisher: "ApariPro", type: vendor, url: "https://www.aparipro.com/", date: "2026-06-17", access: full, locator: "hero, workflow comparison table, FAQ (date is the page's modified time)" }
-    - { ref: PCRT-AI-2026, title: "Professional bodies issue AI advice to members", publisher: "Association of Taxation Technicians (for the PCRT bodies)", type: professional-body, url: "https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members", date: "2026-01-19", access: full, locator: "announcement text on PCRT topical guidance" }
-    - { ref: ICAEW-PCRT-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "summary of the 'Confidentiality' principle and 'responsible for any work they produce'" }
+    - { ref: ATT-PCRTAI-2026, title: "Professional bodies issue AI advice to members", publisher: "Association of Taxation Technicians (for the PCRT bodies)", type: professional-body, url: "https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members", date: "2026-01-19", access: full, locator: "announcement text on PCRT topical guidance" }
+    - { ref: PCRT-AI-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "summary of the 'Confidentiality' principle and 'responsible for any work they produce'" }
     - { ref: HMRC-GENAI-2026, title: "Guidelines for using generative artificial intelligence if you're a software developer", publisher: "HMRC (GOV.UK)", type: regulator, url: "https://www.gov.uk/guidance/guidelines-for-using-generative-artificial-intelligence-if-youre-a-software-developer", date: "2026-01-28", access: full, locator: "testing and deployment processes; human oversight paragraphs (routed from the research-advisory governance deep dive)" }
   last_reviewed: "2026-10-17"
   notes: >-
@@ -1092,27 +1101,28 @@
   prerequisites:
     - "A way to classify return complexity at intake, by schedule and state count (CPAPA-BLACKORE-2024)"
     - "Prior-year returns and source documents, and baseline measures captured before the change, such as median days from organizer sent to documents complete (CPAPA-POSTEXT-2026)"
-    - "A named owner with authority to restrict or suspend the tool, and Phase 1 gate conditions such as a tested verification policy, confirmed logging, counsel-approved engagement letters and a vendor contract with an accuracy SLA (AICPA-WERFELAPP-2026, Appendix D, Steps 6-7)"
+    - "A named owner with authority to restrict or suspend the tool, and Phase 1 gate conditions such as a tested verification policy, confirmed logging, counsel-approved engagement letters and a vendor contract with an accuracy SLA (AICPA-WERFEL-2026, Appendix D, Steps 6-7)"
   risks_and_guardrails:
     - "The reviewer in the 2024 podcast said AI can break down on, for example, a return with 30 states if it has seen too few training instances (CPAPA-BLACKORE-2024)."
-    - "Werfel's thresholds are illustrative figures in a hypothetical case study, not standards; the article says the framework is not a standard, and the AICPA says the views are the author's (AICPA-WERFEL-2026)."
-    - "Werfel advises piloting with limited scope and testing thoroughly before scaling, and says a tool restricted to summarisation would not trigger malpractice exposure at meaningful intensity because no filed position is involved (AICPA-WERFEL-2026)."
+    - "Werfel's thresholds are illustrative figures in a hypothetical case study, not standards; the article says the framework is not a standard, and the AICPA says the views are the author's (TAXADVISER-WERFEL-2026)."
+    - "Werfel advises piloting with limited scope and testing thoroughly before scaling, and says a tool restricted to summarisation would not trigger malpractice exposure at meaningful intensity because no filed position is involved (TAXADVISER-WERFEL-2026)."
     - "In an adjacent month-end close study, accountants working with Claude took about 15 times longer per task than Claude alone, and participants sometimes overrode a correct AI answer (ACCTODAY-AIBENCH-2026; accounting, vendor-run)."
   human_checkpoints:
     - "Partner reviews the difference between the AI draft and the filed prior-year return (CPAPA-BLACKORE-2024)"
     - "Sign-off on each phase: managing partner for Phase 1, senior partner and counsel for Phase 2, managing partner and general counsel for Phase 3 in Werfel's case study"
   role_evolution: >-
     Adoption becomes a governed programme owned by a partner rather than a tool a preparer starts using; Werfel's Phase
-    3 gates include an annual check that staff can perform AI-assisted tasks without the tool (AICPA-WERFELAPP-2026).
+    3 gates include an annual check that staff can perform AI-assisted tasks without the tool (AICPA-WERFEL-2026).
     Commentators expect the main labour effect on outsourced services (see tax-compliance-individual-business-23).
   evidence_grade: C
   sources:
     - { ref: CPAPA-BLACKORE-2024, title: "Review of Black Ore Tax Autopilot - Accounting Technology Lab Podcast", publisher: "CPA Practice Advisor", type: podcast, url: "https://www.cpapracticeadvisor.com/podcasts/review-of-black-ore-tax-autopilot-the-accounting-technology-lab-podcast-june-2024/", date: "2024-06", access: full, locator: "transcript, second and last speaker turns; remark about running a prior-year return" }
     - { ref: CPAPA-POSTEXT-2026, title: "The Post-Extension Window: How to Sequence Firm Automation Before Busy Season", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/16/the-post-extension-window-how-to-sequence-firm-automation-before-busy-season/191855/", date: "2026-10-16", access: full, locator: "sections 'Run the new workflow on a subset' and 'Measure before you change anything'" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Steps 1, 5, 6 and 7 (phased rollout)" }
-    - { ref: AICPA-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA), August 2026 issue", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "'Innovate, but responsibly'; preparers register discussion" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Steps 1, 5, 6 and 7 (phased rollout)" }
+    - { ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA), August 2026 issue", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "'Innovate, but responsibly'; preparers register discussion" }
     - { ref: TR-COCOUNSEL-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows", date: "2025-11-05", access: full, locator: "CLH quote on 'simple 1040'" }
     - { ref: ACCTODAY-AIBENCH-2026, title: "AI beats human accountants at monthly close, transaction categorization", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ai-beats-human-accountants-at-monthly-close-transaction-categorization", date: "2026-10-16", access: full, locator: "The Mercor benchmark section" }
+    - { ref: AICPA-CART-2026, title: "AICPA, former IRS commissioner to lead initiative on AI in tax", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/", date: "2026-09-23", access: full, locator: "paragraphs on CART's purpose (testing and refining the framework)" }
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from the discourse entry on complexity routing (C), the discourse idea on parallel runs (D) and the
@@ -1120,6 +1130,7 @@
     2024 podcast (an older foundation source). The parallel-run and phase-gate parts are ideas: no firm has published
     a parallel-run result or used the gates. The AICPA's Council on AI Risk in Tax (CART, launched 2026-09-23) will
     test and refine Werfel's framework (AICPA-CART-2026).
+    Overlaps: tax-compliance-corporate-21 (gated rollout of AI-drafted return work).
 
 - id: tax-compliance-individual-business-19
   title: Firm AI policy, approved-tool list under the written information security plan, and vendor due diligence (Circular 230 section 10.36)
@@ -1171,13 +1182,13 @@
     - "A named principal accountable for AI use across the practice (JOFA-POLICY-2026)"
     - "An approved-tools list, a vendor review checklist (security, confidentiality, data-use terms) and a current WISP with a named qualified individual (IRS-PUB5708-2024)"
     - "Enterprise or business-tier tools with defined data terms; OPR names 'secure, enterprise-approved AI' without defining it (BARMORE-OPR-2026)"
-    - "A firm test set of anonymised return types to run before purchase, counsel for contract terms and an exit plan (AICPA-WERFELAPP-2026)"
+    - "A firm test set of anonymised return types to run before purchase, counsel for contract terms and an exit plan (AICPA-WERFEL-2026)"
   risks_and_guardrails:
     - "Section 10.36 discipline requires willfulness, recklessness or gross incompetence plus a pattern or practice of non-compliance; it does not make every AI error a principal's violation (IRS-OPR-2026, item 4)."
     - "Competence under section 10.35 includes understanding how AI systems work, their limits and risks (IRS-OPR-2026, item 3)."
     - "For AICPA members, SSTS section 1.4 (Reliance on Tools) says tools may be reasonably relied on but do not remove responsibility (as summarised in TAXCT-CLINCO-2026)."
     - "Where client data goes into a model that retains or trains on it, the firm may face section 7216 and 6713 questions (IRS-OPR-2026, item 6)."
-    - "A vendor contract reduces exposure but does not change who is responsible for positions filed (AICPA-WERFELAPP-2026); a CPA-technology podcast says vendor indemnification from major AI providers generally does not remove confidentiality, professional-liability and accuracy exposures (CPAPA-AILIAB-2026, show notes only)."
+    - "A vendor contract reduces exposure but does not change who is responsible for positions filed (AICPA-WERFEL-2026); a CPA-technology podcast says vendor indemnification from major AI providers generally does not remove confidentiality, professional-liability and accuracy exposures (CPAPA-AILIAB-2026, show notes only)."
     - "None of the IRS operational publications read (Publications 1345, 4557 and 5708, Form 8867 instructions) mention AI (IRS-PUB4557-2024, IRS-PUB5708-2024)."
   human_checkpoints:
     - "Principal or AI committee approves tools and use cases before use on client work"
@@ -1186,20 +1197,20 @@
     Partners and principals take on an explicit AI oversight duty under section 10.36 (IRS-OPR-2026); a new AI lead
     role appears (JOFA-POLICY-2026). Practice administrators or IT leads take on AI vendor oversight alongside data
     security. Werfel names vendor dependence, where a vendor discontinues a product and the firm has no manual
-    workflow, as a risk (AICPA-WERFELAPP-2026, Appendix C, risk 14).
+    workflow, as a risk (AICPA-WERFEL-2026, Appendix C, risk 14).
   evidence_grade: C
   sources:
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 3, 4 and 6; Best Practices" }
     - { ref: JOFA-POLICY-2026, title: "Drafting an AI policy that actually works", publisher: "Journal of Accountancy (Nicole L. Graham, Esq.)", type: press, url: "https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/", date: "2026-07-01", access: full, locator: "sections 'Governance', 'Documentation and Supervision'" }
     - { ref: IRS-PUB5708-2024, title: "Publication 5708: Creating a Written Information Security Plan for your Tax and Accounting Practice (Rev. 8-2024)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p5708.pdf", date: "2024-08", access: full, locator: "'Requirements' (page 2): FTC Safeguards Rule elements" }
     - { ref: IRS-PUB4557-2024, title: "Publication 4557: Safeguarding Taxpayer Data (Rev. 5-2024; footer reads 6-2024)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p4557.pdf", date: "2024-06", access: full, locator: "Safeguards program section: select service providers" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Step 6 (questions and contract terms); Appendix C risks 7, 8 and 14" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix D, Step 6 (questions and contract terms); Appendix C risks 7, 8 and 14" }
     - { ref: TR-FOP-2026, title: "Future of Professionals Report 2026: Actionable insights for tax and audit leaders", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: "2026-07-21", access: full, locator: "'Universal priorities for firm leaders': govern the tools" }
     - { ref: TR-CHEAP-2026, title: "Why cheap AI for tax work costs more than you think", publisher: "Thomson Reuters Tax and Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-cheap-ai-for-tax-work-costs-more-than-you-think/", date: "2026-10-07", access: full, locator: "34 percent unauthorised-tool figure" }
     - { ref: WK-FRA-2025, title: "Wolters Kluwer releases inaugural report, the Future Ready Accountant", publisher: "Wolters Kluwer", type: survey, url: "https://www.wolterskluwer.com/en/news/wolters-kluwer-releases-inaugural-report-the-future-ready-accountant", date: "2025-01-14", access: full, locator: "key findings on adoption and policies" }
     - { ref: TEI-TAXTECH-2026, title: "2026 TEI Tax Tech: the man behind the curtain", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain", date: "2026-05-04", access: full, locator: "paragraph on the poll of more than 50 attendees" }
     - { ref: BARMORE-OPR-2026, title: "The IRS Just Weighed In on AI", publisher: "AI Lab for Accountants (Charlie Barmore, CPA)", type: community, url: "https://ai-lab-for-accountants.beehiiv.com/p/the-irs-just-weighed-in-on-ai", date: "2026-06-24", access: full, locator: "'What to do Monday morning'; 'What OPR did NOT resolve'" }
-    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: press, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "sections on Circular 230 and SSTS; sidebar on firm policies" }
+    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "sections on Circular 230 and SSTS; sidebar on firm policies" }
     - { ref: CPAPA-AILIAB-2026, title: "AI Liability for Accounting Firms: Are You Covered? - Accounting Technology Lab Podcast", publisher: "CPA Practice Advisor", type: podcast, url: "https://www.cpapracticeadvisor.com/podcasts/ai-liability-for-accounting-firms-are-you-covered-microsoft-google-openai-anthropic-accounting-technology-lab-podcast-oct-2026/", date: "2026-10", access: full, locator: "episode description" }
   last_reviewed: "2026-10-17"
   notes: >-
@@ -1208,6 +1219,7 @@
     vendor diligence and contract terms (an idea). Prevalence figures come from vendor-run surveys with different
     samples; the TEI poll is from corporate tax departments, not small firms. The AICPA small-firm AI policy template
     (April 2026) was not opened. Publication 5708 text is from the August 2024 edition; check FTC rule detail before use.
+    Overlaps: tax-compliance-corporate-20 and tax-research-advisory-07 (approved tools and governance).
 
 - id: tax-compliance-individual-business-20
   title: Dedicated AI pod, champion network and competence training that protects the junior pipeline
@@ -1241,11 +1253,11 @@
       source_ref: PWC-MEGNA-2025
   prerequisites:
     - "Executive sponsorship, protected training time and a vendor-testing process"
-    - "A training owner and escalation rules for novel positions regardless of AI confidence (AICPA-WERFELAPP-2026)"
+    - "A training owner and escalation rules for novel positions regardless of AI confidence (AICPA-WERFEL-2026)"
     - "Governance principles of explainability, traceability and auditability (PwC's responsible AI toolkit)"
   risks_and_guardrails:
     - "OPR ties section 10.36 to firm procedures for AI: staff training, secure data handling, AI accuracy monitoring and vetting of third-party tools, all documented (IRS-OPR-2026, item 4)."
-    - "Werfel's register describes skill erosion (juniors who cannot analyse a novel partnership allocation without the tool) and institutional knowledge loss when senior preparers leave early; both are illustrative scenarios (AICPA-WERFELAPP-2026, Appendix C, risks 13 and 15)."
+    - "Werfel's register describes skill erosion (juniors who cannot analyse a novel partnership allocation without the tool) and institutional knowledge loss when senior preparers leave early; both are illustrative scenarios (AICPA-WERFEL-2026, Appendix C, risks 13 and 15)."
     - "Only 41.2% of AICPA survey respondents received any training in using their tax software, which is software training, not AI training (AICPA-TAXSW-2026)."
   human_checkpoints:
     - "Governance committee oversight; approved outputs are locked and changes controlled (PwC)"
@@ -1259,12 +1271,12 @@
     representatives, 11,140 financial managers and 8,130 computer and information systems managers (CPATL-WORKFORCE-2026).
   evidence_grade: B
   sources:
-    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: press, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "answers on governance, 'AI champions' and 'My AI' training" }
+    - { ref: PWC-MEGNA-2025, title: "How PwC's tax team is using agentic AI (interview with Dom Megna)", publisher: "CFO Dive (Informa TechTarget)", type: firm, url: "https://www.cfo.com/news/how-pwcs-dom-megna-tax-team-is-using-agentic-ai-agent-os-cpa-cfo-/750062/", date: "2025-06-06", access: full, locator: "answers on governance, 'AI champions' and 'My AI' training" }
     - { ref: WCG-PLAYBOOK-2026, title: "AI Tax Preparation and Automation: What It Means for You", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-preparation-and-automation-what-it-means-for-you/", date: "2026-07-05", access: full, locator: "Key Takeaways: AI Tax Prep Pod" }
     - { ref: BASIS-CAREERS-2026, title: "Careers at Basis: Member of Accounting Staff; Deployed Intelligence Strategist", publisher: "Basis", type: job-posting, url: "https://www.getbasis.ai/careers/member-of-accounting-staff-bf7e34d6", date: "2026-10-17", access: full, locator: "'About the Team', 'What you'll bring' (postings undated; retrieval date)" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 3 and 4" }
-    - { ref: ICAEW-PCRT-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: professional competence and due care" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 13 and 15; Appendix D Step 7" }
+    - { ref: PCRT-AI-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: professional competence and due care" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 13 and 15; Appendix D Step 7" }
     - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "'Technical support and training'" }
     - { ref: TR-FOP-2026, title: "Future of Professionals Report 2026: Actionable insights for tax and audit leaders", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026", date: "2026-07-21", access: full, locator: "introduction; 'Universal priorities for firm leaders'" }
     - { ref: CPATL-WORKFORCE-2026, title: "CPAs Not Wanted: Firms Build a New Workforce - without Accountants", publisher: "CPA Trendlines", type: press, url: "https://cpatrendlines.com/2026/05/29/cpas-not-wanted-firms-build-a-new-workforce-without-accountants", date: "2026-05-29", access: full, locator: "opening paragraphs (rest behind a membership wall)" }
@@ -1273,6 +1285,7 @@
     Pattern is other: organisational enablement, not a work pattern. Merged from the practice entry on a dedicated
     AI team (B) and the governance idea on competence training (D). The PwC counts are firm-wide, not tax-specific,
     and come from a June 2025 interview; the WCG pod is a plan. Graded B on the PwC interview.
+    Overlaps: tax-research-advisory-08 (research training for junior staff).
 
 - id: tax-compliance-individual-business-21
   title: Client disclosure, engagement-letter wording and section 7216 consent before AI touches return information
@@ -1314,10 +1327,10 @@
     - "Rev. Proc. 2013-14 states the penalties: section 7216 is a misdemeanor (up to one year, a $1,000 fine, or both) and section 6713 a civil penalty of $250 per disclosure, capped at $10,000 a year; amounts were not checked for later change (IRS-RP201314-2013)."
     - "Consent to disclose to a preparer outside the United States is required, and disclosing a Form 1040 filer's SSN abroad is restricted (TREAS-7216-2008, 301.7216-3(b)(4))."
     - "Guidance conflicts on form: a vendor blog says the AICPA told CNBC the consent must be a separate document for individual returns (not confirmed against CNBC), while a Journal of Accountancy article suggests disclosure language in all engagement letters (VERITO-DISCL-2026, JOFA-POLICY-2026). CNBC reported the IRS guidance does not say whether preparers must tell clients (LDS-CNBC-2026, secondary summary)."
-    - "UK PCRT guidance says entering client data into a publicly available AI model without consent is likely to breach confidentiality and suggests anonymised data (ICAEW-PCRT-2026)."
+    - "UK PCRT guidance says entering client data into a publicly available AI model without consent is likely to breach confidentiality and suggests anonymised data (PCRT-AI-2026)."
   human_checkpoints:
     - "Client signs and dates the consent before any disclosure or use"
-    - "Counsel reviews the language before the tool is used on any client matter (AICPA-WERFELAPP-2026, Appendix D, Step 6)"
+    - "Counsel reviews the language before the tool is used on any client matter (AICPA-WERFEL-2026, Appendix D, Step 6)"
   role_evolution: >-
     Client onboarding gains a technology-disclosure conversation, and preparers and firm leaders take on an AI-tool
     inventory and consent-management task. The Journal of Accountancy notes practitioners are beginning to weigh when
@@ -1332,9 +1345,10 @@
     - { ref: VERITO-DISCL-2026, title: "Do Tax Preparers Have to Disclose AI Use to Clients?", publisher: "Verito (vendor blog)", type: vendor, url: "https://verito.com/blog/ai-tax-preparer-disclosure-requirements/", date: "2026-08-14", access: full, locator: "section 'Does Section 7216 Require Telling Clients When AI Prepares Their Return?'" }
     - { ref: LDS-CNBC-2026, title: "IRS AI Guidance Leaves Client Disclosure Question Open", publisher: "Let's Data Science (summarising CNBC)", type: press, url: "https://letsdatascience.com/news/irs-ai-guidance-leaves-client-disclosure-question-open-f5400ffe", date: "2026-08-04", access: full, locator: "section 'Existing rules and the disclosure gap'" }
     - { ref: JOFA-POLICY-2026, title: "Drafting an AI policy that actually works", publisher: "Journal of Accountancy (Nicole L. Graham, Esq.)", type: press, url: "https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/", date: "2026-07-01", access: full, locator: "section 'Transparency and Client Communication'" }
-    - { ref: ICAEW-PCRT-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: confidentiality" }
-    - { ref: AICPA-WERFELAPP-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 7, 8, 10 and 12; Appendix D Step 6" }
-    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: press, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "'Disclosure considerations'" }
+    - { ref: PCRT-AI-2026, title: "Professional Conduct in Relation to Taxation bodies publish guidance on using AI in tax", publisher: "ICAEW Insights (news item on the seven-body PCRT guidance)", type: professional-body, url: "https://www.icaew.com/insights/tax-news/2026/jan-2026/professional-conduct-in-relation-to-taxation-bodies-publish-guidance-on-using-ai-in-tax", date: "2026-01-19", access: full, locator: "Fundamental principles: confidentiality" }
+    - { ref: AICPA-WERFEL-2026, title: "Appendices A to D to the AI risk framework (authorities register, authority case study, preparers register, preparer case study)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C risks 7, 8, 10 and 12; Appendix D Step 6" }
+    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "'Disclosure considerations'" }
+    - { ref: WCG-7216-2026, title: "One Team, One Heartbeat: WCG Engagements Requires A 7216 Consent", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/one-team-one-heartbeat-7216-consent/", date: "2026-08-28", access: full, locator: "consent requested before the engagement letter (offshore team)" }
   last_reviewed: "2026-10-17"
   notes: >-
     Pattern is other: a consent and disclosure control, not an AI task. Merged from the discourse entry (C) and the
@@ -1396,6 +1410,7 @@
     documented, but no firm has published how it prices AI-assisted preparation. Pattern is other: the change is
     commercial. Vendors' own pricing models differ (per page or per return for Black Ore, per WCG; engagement-fee tiers
     for Accrual), see tax-compliance-individual-business-05.
+    Overlaps: tax-compliance-corporate-16, tax-research-advisory-25 and tax-controversy-10 (pricing).
 
 - id: tax-compliance-individual-business-23
   title: Replace offshore or contract data entry and first-pass preparation with AI-prepared returns
@@ -1561,3 +1576,4 @@
     this module serves. Perplexity's accuracy claims come from its own announcement, and no customer outcome was found.
     Forum comments are anonymous and anecdotal (one commenter says an LLM prepared a return more accurately than their
     accountant without saying how that was measured).
+    Overlaps: tax-research-advisory-18 (triage of AI answers that clients bring).

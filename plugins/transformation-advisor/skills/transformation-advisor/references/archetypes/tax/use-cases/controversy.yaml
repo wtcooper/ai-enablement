@@ -6,8 +6,8 @@
 # article, WK-NOTICE-2026, BTAX-EYGRIP-2025, ICAS-HMRC-2025, PINSENT-HMRC-2026, GT-IE-OECD-2025).
 # Entries 01-12 are practitioner and in-house side; 13-25 are tax-authority side (context for advisers).
 # Practitioner-side evidence is thin: no firm or in-house team has published an error rate, override rate,
-# parallel-run result or time saving for notice, examination or Appeals work. Other tax modules were not yet
-# synthesised, so cross-references name the module rather than an id.
+# parallel-run result or time saving for notice, examination or Appeals work. Cross-references to other tax modules
+# use their synthesised ids as of 2026-10-17.
 
 - id: tax-controversy-01
   title: AI reads and triages incoming IRS and state tax notices
@@ -72,7 +72,7 @@
     customer, accuracy figure or time measurement for any vendor notice tool was found. Routed from
     compliance-individual-business: Accrual's Arc agent demo includes notice intake, response-letter drafting and a
     power-of-attorney step (ACCRUAL-ARC-2026); it is the only practitioner-side delegate-level signal and sits in that
-    module. The author of ACCTODAY-2026 works at a vendor and several of its claims could not be traced.
+    module (tax-compliance-individual-business-09). Indirect-tax notice intake: tax-indirect-tax-14. The author of ACCTODAY-2026 works at a vendor and several of its claims could not be traced.
 
 - id: tax-controversy-02
   title: AI drafts client explanations and formal replies to notices (CP2000 responses, penalty abatement requests)
@@ -121,7 +121,7 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-02, discourse-01 (drafting part) and governance-16 (drafting part). Blue J Tax Writing was
-    routed from research-advisory, where general memo and client drafting is covered. The FindSkill article is a
+    routed from research-advisory, where general memo and client drafting is covered (tax-research-advisory-14). The FindSkill article is a
     training-course vendor blog; its '45-minute call becomes a 5-minute email' line is an illustration, not a
     measurement.
 
@@ -213,8 +213,9 @@
     - {ref: TPB-GS-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-04 (C), discourse-02 (D) and governance-17 (D). TaxGPT's return-review agent that 'surfaces
-    audit-sensitive items' belongs to the compliance modules. The authority-side analogue is ATO's lodgment prompts
+    Merged from practice-04 (C), discourse-02 (D) and governance-17 (D). Overlaps: tax-compliance-corporate-13,
+    tax-compliance-individual-business-12 (including TaxGPT's return-review agent) and, for intercompany positions,
+    tax-transfer-pricing-15. The authority-side analogue is ATO's lodgment prompts
     (tax-controversy-19). Unverified ACCTODAY-2026 claims (an IRM 10.24.1 description, a GAO finding on model
     validation, TIGTA workforce figures) are not used.
 
@@ -256,7 +257,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     From practice-05. Primarily a transfer-pricing item, kept here because it is framed as audit defence; documentation
-    review tools (Exactera) and benchmarking sit in the transfer-pricing module. EY's survey also says 49% of
+    review against country requirements is tax-transfer-pricing-08 (see also -14), and TP audit defence drafting is
+    tax-transfer-pricing-16. EY's survey also says 49% of
     respondents expect to tailor TP documentation to individual tax authorities; that is an expectation, not a
     deployment.
 
@@ -411,7 +413,8 @@
     Aggregates) and transfer-pricing (Buckeye Trust). Graded C: use is shown by incidents, not by a named firm's
     managed deployment, and no source reports verification error rates. JofA says Clinco appears to be the first Tax
     Court case on potential hallucinations; the determinations rested on a bank-deposit analysis, not the citation
-    failure. Citation-resolution tooling and screening of incoming AI-generated material sit in research-advisory.
+    failure. Citation-resolution tooling and AI-use records sit in tax-research-advisory-19 and -20, screening of incoming
+    AI-generated material in tax-research-advisory-18, and AI in TP expert reports in tax-transfer-pricing-17.
 
 - id: tax-controversy-09
   title: "Idea: counsel-directed, enterprise-tool AI analysis to preserve privilege in controversy matters"
@@ -485,7 +488,8 @@
     - {ref: AICPA-CART-2026, title: "AICPA, former IRS commissioner to lead initiative on AI in tax", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/", date: "2026-09-23", access: full, locator: "paragraph on OPR guidelines and value pricing"}
     - {ref: ACCTODAY-OPR-2026, title: "IRS rolls out AI guidelines for tax pros", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/irs-rolls-out-introductory-ai-guidelines-for-tax-practitioners", date: "2026-06-24", access: full, locator: "paragraphs on 10.27(a)"}
   last_reviewed: "2026-10-17"
-  notes: "Idea, from discourse-14. A live dispute, not a deployed model. Kept because it is the only model-scope evidence on the practitioner side."
+  notes: "Idea, from discourse-14. A live dispute, not a deployed model. Kept because it is the only model-scope evidence on the practitioner side. Same debate for compliance work:
+    tax-compliance-corporate-16, tax-compliance-individual-business-22."
 
 - id: tax-controversy-11
   title: "Idea: risk-register due diligence before deploying AI in tax administration or practice (Werfel framework)"
@@ -760,7 +764,7 @@
     from indirect-tax (South Carolina, Tax Notes survey, SEATA, Hungary) and transfer-pricing (Hungary, HMRC ICTS,
     South Africa and Nigeria). All revenue figures are the authorities' own attributions with no published method;
     do not compare HMRC's GBP 10 billion with its GBP 50.2 billion total compliance yield. Whether the HMRC ICTS
-    proposal was adopted was not checked. An OECD speaker's claim that some administrations cut VAT investigations
+    proposal was adopted was not checked. TP-specific authority targeting is also tax-transfer-pricing-23. An OECD speaker's claim that some administrations cut VAT investigations
     from about nine months to three is second-hand (SSL-OECDVAT-2026) and is not used as an outcome.
 
 - id: tax-controversy-16
@@ -1225,4 +1229,4 @@
     - {ref: JHU-TAXABUSE-2025, title: "Can LLMs Identify Tax Abuse?", publisher: "arXiv (Blair-Stanek, Holzenberger, Van Durme)", type: academic, url: "https://arxiv.org/abs/2508.20097", date: "2025-08-10", access: full, locator: "abstract; v2 of 21 Jan 2026"}
     - {ref: JHU-TAXREASON-2025, title: "Language Models and Logic Programs for Trustworthy Tax Reasoning", publisher: "arXiv (Jurayj, Holzenberger, Van Durme)", type: academic, url: "https://arxiv.org/abs/2508.21051", date: "2025-08-28", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
-  notes: "Idea, from governance-18 (also routed from research-advisory). Research paper, not a deployment; kept as a frontier signal."
+  notes: "Idea, from governance-18 (also routed from research-advisory). Research paper, not a deployment; kept as a frontier signal. Practitioner-side anti-abuse screening: tax-research-advisory-10."

@@ -4,8 +4,11 @@
 # routed to indirect-tax from other wave 2 tax files. See research/runs/wave2/indirect-tax-synthesis-report.md.
 # Figures are vendor-published unless the outcome says otherwise. No error rate, override rate or parallel-run
 # result exists for any commercial indirect-tax AI tool in the sources read.
-# Tax-authority AI (CDTFA agent assist, IRAS chatbot, Austrian risk models, state audit selection) is left to the
-# controversy module; tax-team-built pipelines and three-way reconciliation are left to tax-data-technology.
+# Tax-authority AI is left to the controversy module (CDTFA agent assist: tax-controversy-20; chatbots:
+# tax-controversy-18; Austrian, Hungarian and state risk targeting: tax-controversy-15). Tax-analyst-built pipelines
+# are tax-compliance-corporate-17; three-way reconciliation of calculated, invoiced and reported tax is left to
+# tax-data-technology (not yet synthesised). The VAT and customs part of cross-tax intercompany review is
+# tax-transfer-pricing-11.
 # Canonical source keys: AVALARA-AGENTIC-2025 (= ACCTODAY-AVALARA-2025), AVALARA-AGENTIC-2025b (= ITWIRE-AVALARA-2025),
 # FONOA-2026 (= FONOA-2026-SURVEY, FONOA-INDIRECT-2026), FONOA-176-2026 (governance file's FONOA-BLOG-2026),
 # FONOA-CITATION-2026 (= FONOA-PRIMARY-2026), FONOA-MONITORING-2026 (= FONOA-REGMON-2026),
@@ -335,8 +338,8 @@
   notes: >-
     Grade A is for a measured outcome by a named academic team on real cases from a named consultancy. It is a research
     prototype on one country's law, not a deployed tool. Small real-world sample (20); the RAG versus fine-tuning
-    difference is not significant (McNemar p = 0.683). GPT-4o and a naive RAG design date the figures. Overlaps the
-    research-advisory module's grounded research assistants; this entry is the only VAT-specific measured study.
+    difference is not significant (McNemar p = 0.683). GPT-4o and a naive RAG design date the figures. Overlaps
+    tax-research-advisory-01 (grounded research assistant); this entry is the only VAT-specific measured study.
 
 - id: tax-indirect-tax-07
   title: Plain-language drafting of tax-engine rules, simulated on past transactions before activation
@@ -495,8 +498,9 @@
   last_reviewed: "2026-10-17"
   notes: >-
     No customer, usage or accuracy data found for any of these monitoring products. The discourse file titles the Fonoa
-    page 'The Math No Longer Works for Indirect Tax Regulatory Change Monitoring' (same URL). Overlaps the
-    research-advisory and compliance modules' law-change monitoring entries; this one is indirect-tax specific.
+    page 'The Math No Longer Works for Indirect Tax Regulatory Change Monitoring' (same URL). Overlaps
+    tax-research-advisory-23 and tax-compliance-corporate-12 (law and rule-change monitoring); this one is indirect-tax
+    specific (e-invoicing mandates, rates, nexus).
 
 - id: tax-indirect-tax-10
   title: AI extraction and enrichment of invoice, receipt and expense data for VAT recovery and e-invoicing onboarding
@@ -601,7 +605,7 @@
     Merges pre-filing anomaly detection (practice), full-population invoice review (discourse) and exception triage
     (governance). Maturity piloting rests only on a vendor blog's anecdotal statement that some teams triage exceptions
     with AI; no named organization. Fonoa's '20% error rate' headline is rhetorical and its spreadsheet-error studies were
-    not opened. Overlaps compliance and tax-data-technology research entries on upstream anomaly flags.
+    not opened. The direct-tax counterparts are tax-compliance-corporate-03 and -13.
 
 - id: tax-indirect-tax-12
   title: Validation and repair of tax-relevant master and transaction data at the point of entry
@@ -739,8 +743,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     The TEI recap does not say which tax type the state notices concern. Maturity piloting reflects attendee practice
-    without a named team. Overlaps notice-triage entries in the controversy and tax-data-technology research; drafting
-    responses belongs to controversy.
+    without a named team. Notice triage and reply drafting for IRS and state notices are tax-controversy-01 and -02;
+    this entry covers indirect-tax notices handled inside the compliance platform.
 
 - id: tax-indirect-tax-15
   title: Audit-ready decision records for AI-assisted determinations, overrides and filings
@@ -804,8 +808,8 @@
   notes: >-
     Pattern 'other': decision logging and evidence assembly. Merges three angles (practice augment, discourse augment,
     governance assist). Fonoa's full report is gated; figures come from its landing page and blog. The OpenAI posting
-    does not mention AI doing audit work. Overlaps AI-use-log entries in compliance, research-advisory and
-    tax-data-technology research; this one is specific to indirect-tax determinations.
+    does not mention AI doing audit work. Overlaps the AI-use records in tax-compliance-corporate-19,
+    tax-research-advisory-19 and tax-transfer-pricing-20; this one is specific to indirect-tax determinations.
 
 - id: tax-indirect-tax-16
   title: Tax engines callable by customers' own AI agents through MCP, agent-to-agent protocols and APIs
@@ -997,7 +1001,7 @@
   notes: >-
     Maturity in-production because the provider (Numeral) is a named organization running the service; the grade stays
     C because the only evidence is the provider's own funding release. The KPMG delivery-model shift is not attributed
-    to AI by the source. Overlaps the compliance module's managed-service entries.
+    to AI by the source. The corporate-compliance counterpart is tax-compliance-corporate-15.
 
 - id: tax-indirect-tax-20
   title: General-purpose AI for first-pass analysis and month-end summaries in a sanctioned workspace
@@ -1056,7 +1060,8 @@
     Grade B rests on one employer's job posting, a weak real-use signal, so no outcome is claimed. The posting date was
     not shown; 2026-05 is the month the job was removed. Merges the practice job-posting entry with the governance
     sanctioned-workspace idea. Thomson Reuters's 65% GenAI use and 26% ROI measurement figures have undefined
-    denominators. Tax-analyst-built pipelines ('vibe coding') are left to tax-data-technology.
+    denominators. Tax-analyst-built pipelines ('vibe coding') are tax-compliance-corporate-17; approved enterprise
+    tools for return data are tax-compliance-corporate-20.
 
 - id: tax-indirect-tax-21
   title: Ongoing indirect-tax exposure, accrual and scenario analysis by agents (idea)
@@ -1140,4 +1145,5 @@
   notes: >-
     Idea: labelled D because no deployment was found. The accuracy figures come from a research pilot on synthetic cases
     by an independent researcher (preprint). Pattern 'other': a model proposes and a rule engine verifies each step.
-    Overlaps the compliance and research-advisory modules' 'deterministic engine plus language model' entries.
+    Same design idea as tax-compliance-corporate-22, tax-compliance-individual-business-10 and tax-research-advisory-12;
+    this entry holds the VAT-specific evidence.

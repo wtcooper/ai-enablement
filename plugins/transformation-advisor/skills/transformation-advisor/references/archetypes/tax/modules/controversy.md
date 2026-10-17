@@ -56,12 +56,12 @@ announcements.
   every number and authority. `#03` weekly transcript monitoring for 700 clients catches the underreporter flag before
   the CP2000 arrives (one named practitioner, 2019).
 - Delegate: no controversy-specific evidence. The nearest is Accrual's Arc agent demo, which includes notice intake
-  and response letters; it sits in the compliance-individual-business module [ACCRUAL-ARC-2026].
+  and response letters; it sits in `tax-compliance-individual-business-09` [ACCRUAL-ARC-2026]. Indirect-tax notices: `tax-indirect-tax-14`.
 
 **Pre-filing and documentation**
 - Improve: `#04` review a return "as though it were a partner-level signer" for audit-sensitive items before sign-off
-  (vendor feature, no outcomes). `#05` check TP documentation against public data (EY TP Doc Insights; see the
-  transfer-pricing module). `#06` in-house teams summarise legislation and dispute files (EY survey: 39% built a
+  (vendor feature, no outcomes; compliance overlaps `tax-compliance-corporate-13`, `tax-compliance-individual-business-12`).
+  `#05` check TP documentation against public data (EY TP Doc Insights; see `tax-transfer-pricing-08`, `-16`). `#06` in-house teams summarise legislation and dispute files (EY survey: 39% built a
   controversy pilot or tool).
 - Reinvent (idea): `#12` preventive controls and real-time data exchange replace after-the-fact audit defence
   (Deloitte scenarios; OECD real-time sharing pilots agreed Nov 2025).
@@ -69,7 +69,7 @@ announcements.
 **Examination, Appeals and litigation**
 - Improve: `#07` agents draft responses to audit queries and track IDRs (described by EY authors; no deployment).
   `#08` AI-assisted research and drafting for filings, with citation verification as the control (Clinco: 3 of 4
-  cited cases apparently invented). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
+  cited cases apparently invented; tooling in `tax-research-advisory-19`, `-20`). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
 - Authority side: `#22` Agentforce case summaries for Chief Counsel, Appeals and TAS (announced, single source).
   `#23` Brazil groups similar appeal files for the same officers (over 80% sensitivity and specificity in trials).
   `#21` examiner and caseworker assistants (ATO orders substantiation documents; HMRC document scanning; IRS revenue

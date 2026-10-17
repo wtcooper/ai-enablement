@@ -1,12 +1,13 @@
 # Use cases: tax / transfer-pricing
 # Synthesised 2026-10-17 from the wave-2 practice, discourse and governance deep dives and the tax landscape scan
-# (48 candidate entries in, 23 out). Source refs are canonical keys: where the angles used different keys for the
+# (48 candidate entries in, 22 out). Source refs are canonical keys: where the angles used different keys for the
 # same document, one key is kept (for example AIBIDIA-LEADERS-2026 = the discourse angle's AIBIDIA-STATETP-2026;
 # BDO-AIGOV-2026 = BDO-2026 / BDO-CA-2026; DDTC-WUTA-2026 = DDTC-PWCSG-2026; WTS-HU-2026 = WTS-NAV-2026;
 # AIBIDIA-OTP-2026 = AIBIDIA-OTPBLOG-2026). Almost every figure is vendor-published or a speaker's own claim; no
 # error rate, override rate, parallel run or independent test of AI in transfer pricing (TP) was found. Aibidia
-# case-study and product pages are undated; their date is the retrieval date (2026-10-17). No other tax module had
-# been synthesised when this file was written, so cross-module overlaps are named in notes by module, not by id.
+# case-study and product pages are undated; their date is the retrieval date (2026-10-17). Overlaps with other tax
+# modules are cross-referenced by id in notes. Tax-authority AI for selecting TP audits (Hungary, IRS models, HMRC
+# ICTS, South Africa and Nigeria) is not repeated here: see tax-controversy-13 and tax-controversy-15.
 
 - id: tax-transfer-pricing-01
   title: Grounded TP research assistant for legislation, guidance, deadlines and local requirements
@@ -60,7 +61,7 @@
     Merged from all three angles. Maturity 'announced' because no named customer use was found. The vendor's 2025
     report page says practical AI adoption is in country-specific documentation requirements, researching TP methods,
     comparing jurisdictional rules and tracking compliance timelines (AIBIDIA-SOTP-2026). General tax research
-    assistants belong to the research-advisory module.
+    assistants are tax-research-advisory-01.
 
 - id: tax-transfer-pricing-02
   title: General-purpose AI assistants used by in-house TP staff for drafting, research and stress-testing
@@ -106,7 +107,7 @@
   notes: >-
     No named organization. The two Aibidia pages give different sample sizes (138 vs 97), and the earlier edition
     (140+ respondents) said roughly 40% described use as minimal; definitions differ, so treat the figures as
-    indicative.
+    indicative. Similar use in indirect tax: tax-indirect-tax-20.
 
 - id: tax-transfer-pricing-03
   title: Self-service TP answers for non-specialists, with escalation to the TP team
@@ -158,7 +159,8 @@
   notes: >-
     Merges an internal escalation chatbot (practice angle) with business-side use of general assistants (governance
     angle): both give non-specialists a first answer before a specialist. Deloitte's page is a service offering with
-    no client named; Andersen's test is a single conversation.
+    no client named; Andersen's test is a single conversation. Overlap: tax-research-advisory-17 (client-facing
+    assistant that escalates to an adviser).
 
 - id: tax-transfer-pricing-04
   title: AI-assisted aggregation and standardisation of intercompany data from several ERPs
@@ -445,7 +447,8 @@
   last_reviewed: "2026-10-17"
   notes: >-
     Merged from all three angles. No customer named and no result published. Exactera's own site returned 403, so
-    current availability was not checked.
+    current availability was not checked. Overlap: tax-controversy-05 (EY TP Doc Insights finds discrepancies
+    between TP documentation and public data).
 
 - id: tax-transfer-pricing-09
   title: Central transaction data feeding bulk local-file and master-file production
@@ -804,7 +807,9 @@
   notes: >-
     Merged from all three angles. Capability claims and scheduled panels only; no product named for this specific
     function and no accuracy figure. Reptune says authorities are moving to near real-time data and AI to assess TP
-    continuously (vendor marketing). Authority-side selection itself is tax-transfer-pricing-23.
+    continuously (vendor marketing). Authority-side selection itself is tax-controversy-13 (IRS) and
+    tax-controversy-15 (Hungary and other authorities). Overlaps: tax-controversy-05 (EY TP Doc Insights checks TP
+    documentation against public data) and tax-compliance-corporate-13 (pre-filing audit-risk screening of returns).
 
 - id: tax-transfer-pricing-16
   title: "Audit defence: drafting and stress-testing responses to tax-authority queries from prior documentation"
@@ -864,7 +869,8 @@
     Merged from all three angles. Firm claims and vendor-reported participant practice; no named user or result. A
     search extract of the ABA Tax Times summary says panelists held that AI may increase speed and scale but does not
     change the legal framework (search-only; supports nothing on its own). Authority-side AI and the wider dispute
-    process belong to the controversy module.
+    process belong to the controversy module; overlaps are tax-controversy-07 (agents draft audit-query responses)
+    and tax-controversy-05.
 
 - id: tax-transfer-pricing-17
   title: AI-assisted economic analysis in TP litigation and expert reports, with disclosure of tools (idea)
@@ -912,7 +918,8 @@
     Idea (grade D): discussed by an IRS official, an ABA panel and a law-firm commentary; no deployment or measurement
     found. The IRS remark is reported second-hand by EY. The Riddle Aggregates item was routed here from the
     research-advisory governance angle; it concerns a valuation expert report, and the source does not say the case is
-    a TP case. Proskauer page date is from its syndication path.
+    a TP case. Proskauer page date is from its syndication path. Overlap: tax-controversy-08 (AI-assisted Tax Court
+    submissions with citation checks).
 
 - id: tax-transfer-pricing-18
   title: AI support for APA and MAP preparation, negotiation and outcome prediction (idea)
@@ -1000,6 +1007,7 @@
     Merged from the practice angle (graded D, idea) and the discourse angle (graded C). Kept at C because a firm
     states that some companies are experimenting, which is a claim of use without a named deployment. Advice on the TP
     of AI itself (pricing AI tools and AI-generated assets between affiliates) is routed to research-advisory.
+    Overlap: tax-research-advisory-10 (planning-alternative ideation).
 
 - id: tax-transfer-pricing-20
   title: AI-use and verification log embedded in TP workpapers (idea)
@@ -1046,8 +1054,8 @@
     Idea (grade D): recommended by a firm, a regulator alert and a risk framework; no evidence of adoption. Pattern
     'other': a control layer around AI-assisted work. The OPR alert is general to federal tax practice, not
     TP-specific. ATT-PCRTAI-2026 is the ATT news item; the governance angle called it PCRT-AI-2026, a key another tax
-    file uses for the ICAEW guidance page itself. Cross-cutting professional-responsibility guidance belongs to
-    research-advisory.
+    file uses for the ICAEW guidance page itself. Same control in other modules: tax-research-advisory-19,
+    tax-compliance-corporate-19 and tax-indirect-tax-15.
 
 - id: tax-transfer-pricing-21
   title: Insourcing recurring TP documentation onto a central data platform, with external advisors limited to review
@@ -1130,70 +1138,4 @@
   notes: >-
     The ladder value describes the provider owning the outcome with client and expert checkpoints; Commenda's
     statements about what AI does inside its service were not specific, so how much is agent-delivered is unknown.
-
-- id: tax-transfer-pricing-23
-  title: Tax-authority AI and analytics for selecting TP audit targets (context for taxpayers)
-  archetype: tax
-  module: transfer-pricing
-  function: risk-compliance-legal
-  work_types: [review-assurance, data-reporting]
-  pattern: intake-triage
-  ladder: automate
-  change_scope: process
-  runtime_class: background-agent
-  maturity: in-production
-  problem: >-
-    Tax authorities want to find TP risk earlier and with less manual selection. The IRS has had too few resources to
-    assess risks relating to large corporations and complex structures, and high no-change rates mean audits that
-    burden compliant taxpayers.
-  solution: >-
-    WTS summarises Hungary's 2026 inspection plan: audit targets will be chosen even more through data-driven
-    processes using AI and real-time information, with AI-based analytical models filtering high-risk companies, even
-    at the moment an invoice is issued; TP is a priority, targeting routine-function entities at a loss or very low
-    profit, and audits can also be launched from CbC reports and international data exchange. The IRS says it uses AI
-    and advanced analytics to select complex partnerships for audit, with machine learning applied to risk in
-    partnership, general income tax and accounting, and international tax, and names large corporations suspected of
-    TP tactics among recipients of compliance alerts. KPMG South Africa and Nigeria authors describe how AI risk
-    engines and language analysis could check consistency across filings and agreements, but say SARS has not openly
-    confirmed GenAI use in audits and no evidence shows Nigeria has deployed an advanced AI-driven TP audit system.
-  outcomes:
-    - {lever: quality, description: "TIGTA found the IRS has not established processes to evaluate whether AI selection-model performance beats prior methods or meets intended objectives; it made three recommendations, and the IRS agreed with all three, two subject to staffing constraints and expected Treasury guidance", figure: "3 recommendations; IRS agreed with all 3", measures: "TIGTA recommendations on LB&I and SB/SE AI return and issue selection models and the IRS response; not specific to TP", provenance: independent, source_ref: TIGTA-2025}
-    - {lever: risk, description: "GAO counted active IRS AI use cases in the June 2025 inventory, many not publicly reportable, and found gaps in benefit information and skills", figure: "126 use cases (65 non-public), up from 10 in August 2022; over 25% without benefit information; one group lost 63 staff who worked on AI", measures: "GAO: active AI use cases in the IRS inventory as of June 2025; share lacking benefit information; employees in one analytics group who worked on AI full or part time and were lost; not specific to TP", provenance: independent, source_ref: GAO-2026}
-    - {lever: risk, description: "WTS expects a further increase in Hungarian TP inspections compared with 2025", figure: "none published", measures: "No figures in the source", provenance: self-reported, source_ref: WTS-HU-2026}
-  prerequisites:
-    - "Real-time invoice and transaction data feeds to the authority (WTS-HU-2026)"
-    - "Examination results fed back into models, and a measurement plan to monitor benefit and correct drift (TIGTA-2025)"
-  risks_and_guardrails:
-    - "KPMG authors warn AI-driven risk assessment could systematically mischaracterise legitimate arrangements, and call for taxpayer rights to challenge assumptions, human-in-the-loop review, pre-audit dialogue and SOPs defining which indicators trigger enhanced review (BTAX-AFRICA-2026)"
-    - "Werfel framework risks for tax authorities include hallucination, drift and explainability, with controls such as audit logs linking outputs to inputs (AICPA-WERFEL-2026, Appendix A)"
-    - "Aprio says authorities including the IRS, HMRC and ATO have begun integrating AI into TP audits but cites only an IRS plan on partnership audit targeting (APRIO-AI-2025)"
-    - "The Hungarian plan is known only through consultancy summaries; the Philippine BIR framework is system-assisted analytics, not specified as AI (GT-BIR-2026)"
-  human_checkpoints:
-    - "Examiners and managers decide whether to open an examination; the sources do not detail the review step for TP issues"
-    - "In the KPMG authors' description, audit officials interview the taxpayer and decide on adjustments (BTAX-AFRICA-2026)"
-  role_evolution: >-
-    GAO links IRS staff reductions to a shortage of skilled employees to support or develop AI tools (GAO-2026).
-    WTS says cooperative Hungarian taxpayers who make mistakes will continue to receive support, with fast and firm
-    action for repeated non-compliance (WTS-HU-2026).
-  evidence_grade: B
-  sources:
-    - {ref: WTS-HU-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: WTS Klient Hungary, type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: "2026-03-12", access: full, locator: "paragraphs under 'Strengthening of transfer pricing audits'"}
-    - {ref: KPMG-HU-2026, title: "Tax alert 2026-02-26 (Hungarian tax authority audit plan)", publisher: KPMG Hungary, type: firm, url: "https://kpmg.com/hu/en/insights/2026/02/taxalert-2026-02-26.html", date: "2026-02-26", access: full, locator: "text on AI screening and TP focus areas"}
-    - {ref: TIGTA-2025, title: "The IRS Could Leverage Examination Results in AI Examination Case Selection Models and Improve Processes to Evaluate Performance (2025-308-022)", publisher: TIGTA, type: regulator, url: "https://www.tigta.gov/sites/default/files/reports/2025-08/2025308022fr.pdf", date: "2025-05-19", access: full, locator: "Highlights page and memorandum"}
-    - {ref: GAO-2026, title: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management (GAO-26-107522)", publisher: GAO, type: regulator, url: "https://www.gao.gov/products/gao-26-107522", date: "2026-03-24", access: full, locator: "What GAO Found; Recommendations (read via text mirror)"}
-    - {ref: IRS-SOP-2024, title: "IRS IRA Strategic Operating Plan, Annual Update Supplement (Pub. 3744-A)", publisher: IRS, type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p3744a.pdf", date: "2024-04", access: full, locator: "p. 6 ('Alternative Interventions for Emerging Concerns'); p. 38 ('Leveraging Data and AI')"}
-    - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation (appendices)", publisher: "AICPA, The Tax Adviser (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 1-3"}
-    - {ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: press, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "South Africa and Nigeria sections; 'Key Considerations'"}
-    - {ref: APRIO-AI-2025, title: "AI and the Future of Transfer Pricing: Risks and Opportunities", publisher: Aprio, type: firm, url: "https://www.aprio.com/ai-and-the-future-of-transfer-pricing-risks-and-opportunities-ins-article-intl/", date: "2025-08-14", access: full, locator: "section 'AI tools for worldwide taxing authorities'"}
-    - {ref: GT-BIR-2026, title: "Transfer pricing consideration in BIR's new audit selection process", publisher: Grant Thornton Philippines, type: firm, url: "https://www.grantthornton.com.ph/insights/articles-and-updates1/lets-talk-tp/transfer-pricing-consideration-in-birs-new-audit-selection-process/", date: "2026-02-24", access: full, locator: "discussion of RMO No. 1-2026"}
-    - {ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 final program, session 'AI and Transfer Pricing Under §482'", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: "2026-05-08", access: full, locator: "p. 34 (likelihood that authorities deploy similar technologies)"}
-    - {ref: KPMG-UK-ICTS-2025, title: "HMRC proposals to enable automated TP risk assessment at scale", publisher: KPMG UK, type: firm, url: "https://kpmg.com/uk/en/insights/tax/tmd-hmrc-proposals-to-enable-automated-tp-risk-assessment-at-scale.html", date: "2025-04-30", access: full, locator: "description of the International Controlled Transactions Schedule proposal (28 April 2025)"}
-  last_reviewed: "2026-10-17"
-  notes: >-
-    Merges the governance angle's three authority-side entries (Hungary, IRS selection models, and authority document
-    review, which was an idea). Grade B rests on a named authority's stated practice, reported second-hand; the TIGTA
-    and GAO measurements concern IRS models generally, not TP. The practice and discourse angles routed authority-side
-    AI to the controversy module, which is its main home; it is kept here as context because TP teams must plan for
-    it. Authority document review by language models is unconfirmed (BTAX-AFRICA-2026). HMRC consulted in April 2025
-    on an International Controlled Transactions Schedule designed for automated risk assessment (KPMG-UK-ICTS-2025);
-    adoption was not checked.
+    Similar managed-service models: tax-compliance-corporate-15 and tax-indirect-tax-19.
