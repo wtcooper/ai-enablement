@@ -193,8 +193,9 @@ vendor trigger to reassessment.
 - **ISACA figures (re-checked 2026-10-17).** ISACA's 2026 release and global infographic say 8% of organisations run
   AI-related incident response exercises regularly, 64% have run none, 17% fold AI into broader incident exercises
   and 16% plan to; 56% of respondents say they or their team helped develop an AI-use policy [ISACA-SOC-2026,
-  ISACA-SOCINFO-2026]. An earlier reading of "71% none" and "60%" is wrong: the release's only 71% is the share naming
-  the complex threat landscape as a stress driver.
+  ISACA-SOCINFO-2026]. The "71% none" and "60%" read elsewhere are European figures (494 respondents): ISACA's
+  London release and European infographic give 5% regularly, 71% none and 60% involved in AI-use policy
+  [ISACA-SOCEU-2026]. Quote global and European figures separately.
 - **Human judgment stays on:** residual-risk and vendor approval decisions; approving control mappings and policy;
   what is told to customers, auditors, boards and regulators; risk appetite and acceptance; calibration of risk
   estimates; which agent actions need approval; disclosure and notification determinations.
@@ -259,7 +260,7 @@ vendor trigger to reassessment.
   [ARXIV-2605.05424]; the authors say use them alongside people, not alone. Keep calibration with analysts (`#11`, `#12`).
 - **"Speed will cost us assurance."** The Delve allegations (denied) show the worry [IANS-DELVE-2026]; the Anecdotes
   author names a "verification tax" [BLEEPING-ANECDOTES-2026]. Build spot-checks and auditor independence in (`#16`).
-- **"We should just block AI."** 78% block or limit employee GenAI [PROOFPOINT-VOC-2026], but Sendbird's CSO says
+- **"We should just block AI."** 78% block or limit employee GenAI [PROOFPOINT-VOC-2026], but Sendbird's CISO says
   security can never stop everything [CLOUDSECPOD-SENDBIRD-2025] and Gartner's Candrick warns more security means
   stalled innovation and dated AI tools [TECHTARGET-CISO-2026]. Cengage aimed to stop being "the Department of No" [BSIDESLV-2026].
 - **"Our auditors won't accept it."** Unknown: no source documents auditor reliance. Ask them early (probe 3).
@@ -270,6 +271,10 @@ vendor trigger to reassessment.
 
 Full details are in the YAML. Keys cited here but not in the YAML:
 
+- [ISACA-SOCEU-2026] ISACA, "Cyber teams stretched too thin as attacks intensify and budgets shrink, ISACA research
+  finds", press release (London), 2026-09-22; European figures from the 2026 State of Cybersecurity survey (494 of
+  1,888 respondents), matching ISACA's European-edition infographic.
+  https://www.isaca.org/about-us/newsroom/press-releases/2026/cyber-teams-stretched-too-thin-as-attacks-intensify-and-budgets-shrink-isaca-research-finds
 - [EBA-CTPP-2025] European Banking Authority (for the ESAs), "The ESAs designate critical ICT third-party providers
   under the Digital Operational Resilience Act", press release, 2025-11-18.
   https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital

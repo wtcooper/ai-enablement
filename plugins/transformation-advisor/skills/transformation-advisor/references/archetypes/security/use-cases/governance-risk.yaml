@@ -1105,7 +1105,7 @@
     - lever: risk
       description: "Survey: security professionals involved in writing their organisation's AI policy"
       figure: "56%"
-      measures: "'56 percent of respondents say that they or someone from their team were involved in the development of a policy governing the use of AI' (ISACA State of Cybersecurity 2026, more than 1,800 professionals); up from 47% in 2025 and 35% in 2024 per ISACA's infographic"
+      measures: "56% of respondents say 'they or someone from their team were involved in the development of a policy governing the use of AI' (ISACA State of Cybersecurity 2026, more than 1,800 professionals); up from 47% in 2025 and 35% in 2024 per ISACA's infographic"
       provenance: independent
       source_ref: ISACA-SOC-2026
     - lever: risk
@@ -1162,9 +1162,11 @@
     Merged from P14, D05 and D16 (an idea about the CISO's remit). Grade B: named organisations (Cengage, Sendbird) and
     named role postings describe real programmes; the only number is an activity count in a talk abstract. The
     ISACA figures checked 2026-10-17 against the release and ISACA's global infographic: 56% involved in AI policy, 8%
-    run AI-related incident response exercises regularly, 64% have run none. The 60% and '71% none' read by the
-    cross-cutting regulation file are not in the release (its only 71% is the share naming the complex threat landscape
-    as a stress driver). The AI governance framework itself (board oversight, risk tiers) is
+    run AI-related incident response exercises regularly, 64% have run none (global, more than 1,800 respondents). The
+    60% and '71% none' read by the cross-cutting regulation file are European figures: ISACA's London release
+    ('Cyber teams stretched too thin...', 2026-09-22) and its European infographic report, for 494 European
+    respondents, 5% running exercises regularly, 71% none and 60% involved in AI-use policy. Quote global and European
+    figures separately. The AI governance framework itself (board oversight, risk tiers) is
     ai-security-22; the AI inventory is ai-security-21.
 
 - id: security-governance-risk-18
@@ -1255,7 +1257,7 @@
     -10, -11, -12 (gating, containment, monitoring, logging), operations-19, -20, -21 (constrained SOC actions,
     per-action authority, measuring the SOC's AI), incident-response-17 (AI-agent incidents). Trail of Bits' wider
     AI-native programme is in application-security. ISACA figures re-checked 2026-10-17 against the release and ISACA's
-    global infographic (see entry 17); the earlier '71% none' reading was wrong.
+    global infographic (see entry 17); '71% none' is the European-edition figure, not the global one.
 
 - id: security-governance-risk-19
   title: "GRC engineering operating model: engineers and analysts build compliance automation and agent workflows inside the GRC team"
