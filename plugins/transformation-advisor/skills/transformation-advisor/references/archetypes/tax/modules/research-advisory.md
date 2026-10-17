@@ -1,7 +1,8 @@
 # Research and advisory (tax)
 
 Sources checked 2026-10-17. Use cases live in `../use-cases/research-advisory.yaml` (25 entries).
-Ids are shortened here: `#05` means `tax-research-advisory-05`. Source keys in brackets are in the YAML or in §10.
+Ids are shortened here: `#05` means `tax-research-advisory-05`; other modules' ids are in full. Source keys in
+brackets are in the YAML or in §10.
 
 **Read this first.** Adoption is broad, but measured evidence is thin. Grades: A 0, B 11, C 8, D 6 (44% A/B). No entry
 reaches grade A: the before-and-after times (#01, #02, #09) are named practitioners' estimates quoted in case studies
@@ -41,7 +42,7 @@ Return preparation sits in compliance, litigation conduct in controversy, and in
 | Draft | Memo, advice letter, opinion, workpaper footnote, client email | document-production | Days of junior time per draft [BTAX-LOWY-2026] |
 | Review and sign off | Partner or national-office review; JofA now recommends firm policies requiring human verification of every cited authority [TAXCT-CLINCO-2026] | review-assurance | Errors that are "polite, quiet and technical" and hard to review at volume [TEI-TAXTECH-2026] |
 | Deliver and follow up | Answer client, business-unit and auditor questions | client-interaction | "We will research and call you back" [ACCORDANCE-BARNES-2026] |
-| Transaction work | Read SPAs and partnership agreements, spot issues, write the diligence report, structure | review-assurance, document-production | Deal deadlines; long documents [KPMG-MA-2025] |
+| Transaction work | Read SPAs (share purchase agreements) and partnership agreements, spot issues, write the diligence report, structure | review-assurance, document-production | Deal deadlines; long documents [KPMG-MA-2025] |
 | Monitor and keep knowledge | Track law changes; keep playbooks, prior memos, internal guidance | research-synthesis, coordination-scheduling | Outdated law in model answers [BTAX-HALLUC-2026]; knowledge leaves as seniors retire [TR-AGENTICBLOG-2026] |
 | In-house: serve the business | Ad hoc questions from finance, legal, auditors | research-synthesis, client-interaction | 58% of 288 departments under-resourced; over half of time reactive [TR-CORPTAX-2025] |
 | Scope and price | Engagement letter, fee basis | coordination-scheduling | Hourly billing versus OPR's fee rule (#25) |
@@ -86,9 +87,11 @@ process-level automation. Delegate has four entries, none above C. Reinvent has 
 - Reinvent: `#25` (B) fixed-fee and value pricing (Sasserath, RKL, RSM). `#24` (C) firms co-build agents with clients
   on their platforms (KPMG with Claude; EY Tax Agent Factory).
 
-Sibling modules (final ids not yet published at this synthesis): controversy holds *Clinco* as litigation conduct and
-notice responses; compliance holds TaxCalcBench and return agents; tax-data-technology holds in-house pipelines and
-OpenAI's automation demos; provision holds PwC's explainable effective-tax-rate model.
+Covered in other tax modules: *Clinco* as litigation conduct (`tax-controversy-08`) and notice replies
+(`tax-controversy-02`); research inside compliance tools (`tax-compliance-corporate-11`); TaxCalcBench and the
+deterministic-engine design (`tax-compliance-individual-business-10`, `tax-compliance-corporate-22`); in-house
+pipelines and OpenAI's demo agents (`tax-data-technology-07`, `tax-data-technology-10`); PwC's explainable
+effective-tax-rate model (`tax-compliance-corporate-18`); authority-side abuse detection (`tax-controversy-25`).
 
 ## 4. Interview probes
 
@@ -162,27 +165,18 @@ rework, disagreement with seniors' answers, citation-check failures, share of an
 
 ## 6. Guardrails
 
-**United States**
-- OPR Alert 2026-19 (24 Jun 2026) applies existing Circular 230 duties: due diligence (s10.22: verify facts, citations
-  and calculations), fees (s10.27: do not bill manual time not spent; pass savings on openly), competence (s10.35),
-  firm procedures (s10.36), written advice (s10.37: opaque logic can make reliance unreasonable), and IRC 6713 and 7216
-  on taxpayer information [IRS-OPR-2026]. Law-firm commentary reads it as covering corporate, payroll and plan advice,
-  not only Form 1040 work [NATLAW-OPR-2026].
-- AICPA SSTS section 1.4: members may rely on tools, stay responsible, and may use AI to enhance but not supplant judgment
-  (as summarised by JofA) [TAXCT-CLINCO-2026].
-- Tax Court: *Clinco* (T.C. Memo. 2026-16) admonished counsel for three probable hallucinated cases of four, without
-  sanctions [TAXCT-CLINCO-2026]. Judge Holmes calls section 6673 the most prominent tool and doubts a no-AI
-  certification would make sense [BLAW-TAXCT-2026].
-- No authority yet on whether AI-generated advice supports reasonable cause or a preparer-penalty defence (#15).
-
-**United Kingdom and Australia**
-- PCRT topical guidance (19 Jan 2026): treat output like a junior colleague's work; consider disclosing actual use;
-  explain how a conclusion was reached; keep an audit trail; no client data in public tools without consent or
-  anonymisation [PCRT-AI-2026]. Tribunals: in *Elden v HMRC* an ICAEW-regulated firm was criticised for unverified AI
-  output; *Zzaman* involved real cases that did not support the argument [ICAS-TAXTRIB-2026].
+**Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties, including s10.22 due diligence, s10.27 fees and
+s10.37 written advice), section 7216, AICPA SSTS 1.4, the UK PCRT guidance, Australia's TPB(GS) 55/2026 and *Clinco*
+are set out once in [the archetype guardrails](../guardrails.md). Points that matter most for research and advice:
+- Written advice: OPR says opaque logic can make reliance unreasonable [IRS-OPR-2026]; law-firm commentary reads the
+  alert as covering corporate, payroll and plan advice, not only Form 1040 work [NATLAW-OPR-2026]. No authority yet
+  says whether AI-generated advice supports reasonable cause or a preparer-penalty defence (#15).
+- Verification: PCRT says treat output like a junior colleague's work, explain how a conclusion was reached and keep
+  an audit trail [PCRT-AI-2026]; the TPB says AI "cannot be relied on as a replacement for tax knowledge"
+  [TPB-GS55-2026]. Courts have seen fabricated and misapplied authority: in *Elden v HMRC* an ICAEW-regulated firm was
+  criticised for unverified AI output, and *Zzaman* involved real cases that did not support the argument
+  [ICAS-TAXTRIB-2026]; Judge Holmes calls section 6673 the most prominent tool [BLAW-TAXCT-2026].
 - HMRC (28 Jan 2026) expects generative-AI tax software to flag nuanced rules and prompt users to check [HMRC-GENAI-2026].
-- TPB(GS) 55/2026 (22 Jul 2026): AI "cannot be relied on as a replacement for tax knowledge"; client permission before
-  data goes into third-party AI; document verification [TPB-GS55-2026].
 
 **Frameworks, not standards**
 - Werfel's framework: 20 risks for tax authorities and 15 for preparers (hallucinated advice, control dilution, skill
@@ -222,7 +216,7 @@ doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2
 - **2026-01** PCRT guidance (19th), HMRC software guidelines (28th); ICAS summarises UK tribunal AI cases including *Elden* (26th) [ICAS-TAXTRIB-2026].
 - **2026-03-09** Bloomberg Tax Deep Thinking Mode (#02). **2026-03-20** Tax Court "feeling our way in the dark" [BLAW-TAXCT-2026].
 - **2026-03-26** Werfel presents his framework at Duke [TAXPROF-WERFEL-2026]. **2026-05-01** TR: "reason-and-act" research (#02).
-- **2026-05-20** KPMG and Anthropic Digital Gateway, initial focus on tax clients and PE firms (#23, #24). **2026-06-24** OPR Alert 2026-19.
+- **2026-05-20** KPMG and Anthropic Digital Gateway, initial focus on tax clients and private equity firms (#23, #24). **2026-06-24** OPR Alert 2026-19.
 - **2026-07-22** TPB guidance. **2026-08-31** Werfel framework published. **2026-09-08** AICPA asks IRS to clarify fees.
 - **2026-09-23** CART launched [AICPA-CART-2026]. **2026-10-16** Vals Tax Agent Bench update, best model below 50% (#03).
 - **Advisory demand from AI itself:** companies asked the OECD to clarify how AI transactions between affiliates are
@@ -230,7 +224,7 @@ doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2
   intragroup-services examples cover pricing shared AI tools (Aug 2026) [OECD-INTRAGROUP-2026]; nexus and
   value-creation questions were on the D.C. Bar programme [DCBAR-TAX-2026]; R&D credit for clients' AI projects
   [CPAPA-RD-2026]. These are advice topics, not AI-in-practice use cases.
-- **Watch:** conferences after the scan date were not covered; Siva's proposed judicial certification and s10.22
+- **Watch:** conferences after 2026-10-17 are not covered; Siva's proposed judicial certification and s10.22
   amendment are one practitioner's proposal [BTAX-SIVA2-2026].
 
 ## 9. Common objections
