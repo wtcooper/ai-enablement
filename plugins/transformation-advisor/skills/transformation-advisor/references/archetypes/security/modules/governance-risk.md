@@ -5,7 +5,7 @@ Last reviewed 2026-10-17. Use cases live in `../use-cases/governance-risk.yaml` 
 Read this first: every outcome figure for AI in GRC work is **vendor-published** on a GRC vendor's own site (Vanta,
 Conveyor, Whistic, Hyperproof, Safe Security) and quotes the customer. No override rate, error rate, parallel run,
 auditor-reliance study or regulator inspection finding exists for AI used in GRC work. The independent numbers are
-small lab studies and surveys. 13 of 21 entries are graded A or B; the two A grades (`#01`, `#05`) rest on vendor
+small lab studies and surveys. 11 of 21 entries are graded A or B; the two A grades (`#01`, `#05`) rest on vendor
 case studies. Say "vendor-published" whenever you quote a figure. Regulation and workforce at archetype level are in
 the cross-cutting research files `research/runs/wave4/security-x-guardrails-regulation.md` and
 `research/runs/wave4/security-x-workforce-talent.md`; this file links to them rather than repeating them.
@@ -70,8 +70,9 @@ regulators.
 - Delegate: `#03` an agent collects vendor documents, extracts exceptions, drafts the evaluation and follow-ups; the
   analyst decides residual risk. Samsara "up to 50% faster" (no baseline); Anthropic, Plaid and OpenAI postings
   describe the work (grade B).
-- Improve: `#04` trigger-based reassessment instead of annual reviews, extended (as an idea) to AI features and agents
-  vendors add after approval (grade B on one posting).
+- Improve: `#04` trigger-based reassessment instead of annual reviews, with vendor agents (Safe, Vanta) that watch for
+  triggers, extended (as an idea) to AI features and agents vendors add after approval (grade C: Anthropic's posting
+  shows analysts running trigger-based reassessment; the AI part is vendor product claims).
 
 **Controls, evidence and audits**
 - Improve: `#05` an agent proposes a common control set and maps evidence; Samsara went from 820 to 260 controls
@@ -90,8 +91,8 @@ regulators.
 - Improve: `#10` mapping AI and security regulations into controls from shared principles (postings, Gartner; grade C).
 
 **Risk**
-- Improve: `#11` risk intake triage and first-draft analyses (Anthropic, Plaid postings; grade B). Five LLMs
-  consistently underestimated risk against 50 experts [ARXIV-2605.05424].
+- Improve: `#11` risk intake triage and first-draft analyses (Anthropic and Plaid postings describe tooling to be
+  built; grade C). Five LLMs consistently underestimated risk against 50 experts [ARXIV-2605.05424].
 - Improve: `#12` quantification with AI scoping, data gathering and LLM "expert panels" (lab r = 0.91-0.98; 80% of a
   sponsored survey use or test AI; grade C).
 - Improve: `#13` risk analyses extended to the firm's own agents, model providers and coding agents (FAIR guidance,
@@ -157,11 +158,11 @@ post-incident review, AI-agent incidents), identity-access-11 (policy as code).
 | LLM risk scoring vs 50 experts | five models consistently lower | [ARXIV-2605.05424] (independent, lab) |
 | LLM expert panel vs ground truth | r = 0.91-0.98 on proxies | [ARXIV-2602.08889] (independent, lab) |
 | AI in cyber risk programmes | 80% use or test (37% / 43%); boardroom use of risk data 63% | [FAIR-CRMSURVEY-2026] (survey of 400, vendor-sponsored) |
-| Security staff in AI policy | 56% involved; 51% help implement AI (29% in 2024) | [ISACA-SOC-2026] (survey, 1,800+) |
-| AI-specific response exercises | 8% regularly, 64% none (see §6 on a conflicting reading) | [ISACA-SOC-2026] |
+| Security staff in AI policy | 56% say they or their team helped develop an AI-use policy (47% in 2025, 35% in 2024); 51% help develop, onboard or implement AI (29% in 2024) | [ISACA-SOC-2026], [ISACA-SOCINFO-2026] (survey, 1,800+) |
+| AI-related incident response exercises | 8% run them regularly; 64% have run none; 17% fold AI into broader incident exercises; 16% plan to | [ISACA-SOC-2026], [ISACA-SOCINFO-2026] (survey, 1,800+) |
 | Assess AI tool security | 64% (37% in 2025) | [WEF-GCO-2026] (survey) |
 | Agents allowed to act unapproved | 22% fully; 38% partial | [PWC-GDTI-2027] (survey, 3,934) |
-| Primary GRC tool | spreadsheets most cited (93 of 795); skill 5.4 of 10 | [GRCENGINEER-STATEOFGRC-2026] (independent, self-selected) |
+| Primary GRC tool | spreadsheets most cited (93 of 795); skill 5.4 of 10 | [GRCENGINEER-STATEOFGRC-2026] (independent; recruitment not described) |
 
 What to measure with a client: share of AI answers and assessments sent unchanged; override and correction rate by
 reviewer; sampled accuracy of AI answers against an assessor; vendor review cycle time and backlog; controls per
@@ -189,9 +190,11 @@ vendor trigger to reassessment.
 - **Known failure modes.** Mapping precision started below 35% [VANTA-QUALITYEVAL-2026]; small models invented policy
   content and gave confidence scores that track the verdict, not certainty [ARXIV-2607.22885]; LLMs understated risk
   [ARXIV-2605.05424]; a single adversarial alert can steer a SOC LLM [ARXIV-2610.09906].
-- **Data conflict to flag.** Two research angles read ISACA's 2026 release as 56% involved in AI policy and 8%
-  running regular AI exercises (64% none); the cross-cutting regulation file read 60% and 71% none and could not find
-  the 8% [ISACA-SOC-2026]. Check the release before quoting.
+- **ISACA figures (re-checked 2026-10-17).** ISACA's 2026 release and global infographic say 8% of organisations run
+  AI-related incident response exercises regularly, 64% have run none, 17% fold AI into broader incident exercises
+  and 16% plan to; 56% of respondents say they or their team helped develop an AI-use policy [ISACA-SOC-2026,
+  ISACA-SOCINFO-2026]. An earlier reading of "71% none" and "60%" is wrong: the release's only 71% is the share naming
+  the complex threat landscape as a stress driver.
 - **Human judgment stays on:** residual-risk and vendor approval decisions; approving control mappings and policy;
   what is told to customers, auditors, boards and regulators; risk appetite and acceptance; calibration of risk
   estimates; which agent actions need approval; disclosure and notification determinations.
@@ -201,7 +204,7 @@ vendor trigger to reassessment.
 - **GRC analysts:** from collecting evidence and answering forms to verifying agent drafts and tuning the tools
   (Anthropic supplier-assurance and risk-analyst postings) [ANTHROPIC-JOB-SUPPLIER-2026, ANTHROPIC-JOB-RISKANALYST-2026];
   "from collecting to managing" [BLEEPING-ANECDOTES-2026]. Plaid asks analysts to handle more reviews without adding
-  headcount and to be "AI power users" [PLAID-JOB-TPRM-2026, PLAID-JOB-RISK-2026].
+  headcount and to operate as an "AI power user" [PLAID-JOB-TPRM-2026, PLAID-JOB-RISK-2026].
 - **GRC engineers:** seven employers post builder roles in GRC (`#19`); a practitioner says most of the work is
   reading systems, learnable in months [GRCENGINEER-086-2026].
 - **Risk analysts:** add system-card reading, agent privilege review and engineering literacy [FAIR-RISKREPORT-2026,
@@ -224,15 +227,17 @@ vendor trigger to reassessment.
 - 2026-04-10: trade groups ask the SEC to rescind Item 106 [SIFMA-SEC-2026].
 - 2026-04-12: CSA "Mythos-ready" briefing tells CISOs to update risk models and board reporting [CSA-MYTHOSREADY-2026].
 - 2026-05-01: joint CISA, NSA and partner guidance on adopting agentic AI [CISA-AGENTIC-BULLETIN-2026].
-- 2026-06: Vanta describes TPRM, compliance and risk "agents" [VANTA-TPRMAGENT-2026].
-- 2026-06 to 10: Anthropic, OpenAI, Plaid, Cloudflare, Okta, GitLab and Figma post GRC roles that build or
-  supervise agents (`#19`).
+- 2026-03-19 and 2026-06-02: Vanta announces its TPRM and Compliance agents and an Agent for Risk
+  [VANTA-TPRMAGENT-2026, VANTA-COMPLIANCEAGENT-2026, VANTA-RISKAGENT-2026].
+- 2026-06 to 10: Anthropic, OpenAI, Plaid, Cloudflare, Okta, GitLab and Figma post GRC roles that build automation,
+  AI workflows or agents (Figma's names automation only) (`#19`).
 - 2026-06-22: CSA AI Controls Matrix v1.1 with AI-CAIQ [CSA-AICM-2026].
 - 2026-07-21: Gartner's first Hype Cycle for AI Governance (via a secondary blog) [SOFTWARESTRATEGIES-GARTNERHC-2026].
 - 2026-07-27: EU AI Omnibus in force; 2026-08-02 AI Act applicable [EC-AIACT-2026].
 - 2026-08-25: Gartner names AI-enabled vulnerability discovery the top emerging risk, with third-party controls among
   its recommendations [GARTNER-EMERGING-2026].
-- 2026-09-22: ISACA finds AI incident readiness lags AI use [ISACA-SOC-2026].
+- 2026-09-22: ISACA finds AI incident readiness lags AI use: 8% run AI-related incident exercises regularly, 64% none
+  [ISACA-SOC-2026].
 - 2026-10-01: PwC finds 22% would let agents act without approval and no single owner for AI governance [PWC-GDTI-2027].
 - 2026-10-02 to 14: FAIR Institute series on assessing agents, coding agents and the AI attack surface
   [FAIR-AGENTICCODING-2026, FAIR-ATTACKSURFACE-2026].
@@ -255,8 +260,8 @@ vendor trigger to reassessment.
 - **"Speed will cost us assurance."** The Delve allegations (denied) show the worry [IANS-DELVE-2026]; the Anecdotes
   author names a "verification tax" [BLEEPING-ANECDOTES-2026]. Build spot-checks and auditor independence in (`#16`).
 - **"We should just block AI."** 78% block or limit employee GenAI [PROOFPOINT-VOC-2026], but Sendbird's CSO says
-  blocking everything cannot be won [CLOUDSECPOD-SENDBIRD-2025] and Gartner warns more security can stall AI adoption
-  [TECHTARGET-CISO-2026]. Cengage aimed to stop being "the Department of No" [BSIDESLV-2026].
+  security can never stop everything [CLOUDSECPOD-SENDBIRD-2025] and Gartner's Candrick warns more security means
+  stalled innovation and dated AI tools [TECHTARGET-CISO-2026]. Cengage aimed to stop being "the Department of No" [BSIDESLV-2026].
 - **"Our auditors won't accept it."** Unknown: no source documents auditor reliance. Ask them early (probe 3).
 - **"Juniors will lose the work that taught them."** Venables agrees and proposes deliberate on-ramps (`#21`); only
   24% of organisations have well-defined career progression [RSAC-WORKFORCE-2026].
@@ -267,9 +272,9 @@ Full details are in the YAML. Keys cited here but not in the YAML:
 
 - [EBA-CTPP-2025] European Banking Authority (for the ESAs), "The ESAs designate critical ICT third-party providers
   under the Digital Operational Resilience Act", press release, 2025-11-18.
-  https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital%5C
+  https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital
 
 Most-used YAML keys: VANTA-SAMSARA-2026, VANTA-SYNTHESIA-2026, VANTA-GITHUB-2026, CONVEYOR-CARTA-2026,
 VANTA-QUALITYEVAL-2026, ANTHROPIC-JOB-SUPPLIER-2026, ANTHROPIC-JOB-CONTROLS-2026, ARXIV-2607.22885, ARXIV-2605.05424,
-FAIR-CRMSURVEY-2026, FAIR-RISKREPORT-2026, IANS-DELVE-2026, ISACA-SOC-2026, RSAC-WORKFORCE-2026, TECHTARGET-BOARD-2026,
+FAIR-CRMSURVEY-2026, FAIR-RISKREPORT-2026, IANS-DELVE-2026, ISACA-SOC-2026, ISACA-SOCINFO-2026, RSAC-WORKFORCE-2026, TECHTARGET-BOARD-2026,
 TECHTARGET-AIREG-2026, NIST-CYBERAI-2025, FINRA-OVERSIGHT-2026, CSA-MYTHOSREADY-2026, PWC-GDTI-2027.
