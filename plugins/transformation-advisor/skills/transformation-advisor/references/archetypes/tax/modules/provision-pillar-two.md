@@ -1,7 +1,7 @@
 # Income tax provision and Pillar Two (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/provision-pillar-two.yaml` (16 entries). Ids are shortened
-here: `#05` means `tax-provision-pillar-two-05`. Source keys in brackets, such as [FGS-GIR-2026], are given in full in
+Sources checked 2026-10-17. Use cases live in `../use-cases/provision-pillar-two.yaml` (16 entries). Ids are
+shortened here: `#05` means `tax-provision-pillar-two-05`; other modules' ids are in full. Source keys in brackets, such as [FGS-GIR-2026], are given in full in
 the YAML or in §10. **Evidence is thin, and thinner still for AI.** No entry has a measured AI outcome from a named
 organisation: 13 entries are grade C and 3 are labelled ideas (grade D). The strongest named evidence (AMG Critical
 Materials, `#09`, `#16`) is about rules-based Pillar Two software, not AI, so it is graded for AI use, not for software.
@@ -62,7 +62,7 @@ entries, including both model entries, are rules-based software with no AI claim
 - Improve: `#01` cited research and AI insights inside Bloomberg Tax Workpapers and ONESOURCE (CoCounsel Tax); TR's
   "hours to minutes" has no baseline. `#02` idea: AI explains and checks Excel provision workbooks (a TEI lab topic).
 - Automate: `#03` automated cleansing, rollforwards and book-to-tax adjustments, with an agentic data layer upstream
-  of the engine (vendor descriptions only). `#07` live R&D credit data in the provision, which TR says can reduce
+  of the engine (vendor descriptions only; the data layer itself is `tax-data-technology-02`). `#07` live R&D credit data in the provision, which TR says can reduce
   return-to-provision adjustments (vendor; the credit work itself is `tax-compliance-corporate-09`).
 - Forecasting: PwC Ireland says AI on a sound data foundation can improve forecasts of effective tax rates and
   deferred tax balances [PWC-IE-2026]. Not a separate entry here; see `tax-compliance-corporate-14` (continuous ETR
@@ -146,6 +146,8 @@ AI in provision or Pillar Two work.**
 
 ## 6. Guardrails
 
+- **Shared conduct rules** for tax practitioners (IRS OPR Alert 2026-19, section 7216, PCRT, TPB) are in
+  [the archetype guardrails](../guardrails.md). The rules below are specific to tax accounting and Pillar Two filing.
 - **ASU 2023-09.** Public business entities must give a tabular rate reconciliation in percentages and amounts by
   category, with items at or above 5% of statutory tax broken out, and taxes paid by federal, state/local and
   foreign; effective for fiscal years beginning after 15 December 2024 (others after 15 December 2025) [KPMG-ASU-2023].
@@ -190,7 +192,7 @@ AI in provision or Pillar Two work.**
 
 - **2025-11-03:** a TEI-SJSU panel deck puts multi-agent workflows, including provision-to-return automation with
   people handling exceptions, at the top of its progression [SJSU-TEIHTTI-2025]. Delegate-level; no deployment shown
-  (the tax-data-technology module holds this).
+  (see `tax-data-technology-10`).
 - **2026-01-05 and 2026-09-11:** OECD Side-by-Side package, then a second package with a revised GIR; a revised XML
   schema is expected [OECD-SBS-2026, OECD-P2-SEP-2026].
 - **2026-03-15 to 18:** TEI Midyear's preliminary programme (February 2026) scheduled a "Pillar Two and Technology"
@@ -228,21 +230,38 @@ AI in provision or Pillar Two work.**
 
 ## 10. Sources
 
-Keys used above that are not in the YAML (all opened unless marked; full details in the wave-2 research files):
+Keys used above that are not in this module's YAML (all opened; show notes and abstracts are marked):
 
-- ACAST-TAXTECH-2026: Tax, tech, and other stuff podcast, ep. 26, Pillar Two Reality Check, 2026-06-25 (show notes).
-- AICPA-CART-2026: The Tax Adviser, AICPA Council on AI Risk in Tax, 2026-09-23.
-- AICPA-WERFEL-2026: The Tax Adviser, appendices to Werfel's AI tax risk framework, 2026-06.
-- APPLE-JOB-2026: Apple, Tax Technology Lead job posting (via AnitaB.org), 2026-06-25.
-- HAN-LAWORDER-2026: Law And Order: Tax Law Autoformalization, arXiv 2610.02792, 2026-10-02 (abstract).
-- COLUMN-TAXCALCBENCH-2025: TaxCalcBench, arXiv 2507.16126, 2025-07-22 (abstract).
-- BTAX-FORUM-2026: Bloomberg Tax Leadership Forum press release, 2026-06-10.
-- CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends in the United States 2013-2022, 2024-06 (report PDF opened at https://thecaq.wpenginepowered.com/wp-content/uploads/2024/06/caq-financial-restatement-trends-us-2013-2022_2024-06.pdf; Taxes row in the accounting-issues table).
-- EY-PAPERJAM-2026: Paperjam (EY Luxembourg), Tax controversy in a GenAI world, 2026-03-06.
-- EY-TFO-2025: EY Tax and Finance Operations survey press release, 2025-11-18.
-- GAMMA-JOB-2026: Gamma, Senior Tax Manager job posting (via Accel), 2026-08-04.
-- IFRS-IAS12-2023: IFRS Foundation, Pillar Two amendments to IAS 12 project page, 2023-05.
-- KPMG-DE-2026: KPMG Germany, tax departments turning to AI (quick surveys), 2026-05.
-- PWC-IE-2026: PwC Ireland, Evolving the tax function with AI, 2026-07-21.
-- SJSU-TEIHTTI-2025: TEI-SJSU High Tech Tax Institute panel deck on AI, 2025-11-03.
-- TPMINDS-P2-2026: Informa Connect, TPMinds International Pillar 2 Summit agenda, 2026-06-18.
+- ACAST-TAXTECH-2026: Tax, tech, and other stuff podcast (Acast), ep. 26, Tax, Tech & The Pillar Two Reality Check,
+  2026-06-25 (show notes only), https://shows.acast.com/tax-tech-and-other-stuff/episodes/6a3ce7b00ad474357457b7fb
+- AICPA-CART-2026: The Tax Adviser (AICPA), AICPA, former IRS commissioner to lead initiative on AI in tax, 2026-09-23,
+  https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/
+- AICPA-WERFEL-2026: The Tax Adviser (AICPA), A Risk Framework for the Use of AI in Tax Administration and
+  Preparation: appendices A to D, 2026-06, https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf
+- APPLE-JOB-2026: Apple (via AnitaB.org job board), Tax Technology Lead, 2026-06-25,
+  https://jobs.anitab.org/companies/apple/jobs/84254724-tax-technology-lead
+- BTAX-FORUM-2026: Bloomberg Tax, Bloomberg Tax Leadership Forum to Examine AI, Policy Shifts, and Global Tax Risk,
+  2026-06-10, https://pro.bloombergtax.com/?p=17345
+- CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends in the United States 2013-2022, 2024-06,
+  https://thecaq.wpenginepowered.com/wp-content/uploads/2024/06/caq-financial-restatement-trends-us-2013-2022_2024-06.pdf
+  (Taxes row in the accounting-issues table).
+- COLUMN-TAXCALCBENCH-2025: Column Tax authors (Bock, Molisee, Ozer, Shah), arXiv preprint, TaxCalcBench: Evaluating
+  Frontier Models on the Tax Calculation Task (arXiv 2507.16126), 2025-07-22 (abstract), https://arxiv.org/abs/2507.16126
+- EY-PAPERJAM-2026: Paperjam (EY Luxembourg, promotional), Tax controversy in a GenAI world, 2026-03-06,
+  https://en.paperjam.lu/article/tax-controversy-in-a-genai-world
+- EY-TFO-2025: EY, EY Tax and Finance Operations Survey press release, 2025-11-18,
+  https://ey.com/en_gl/newsroom/2025/11/ey-report-indicates-cfos-and-tax-leaders-innovating-with-ai-to-manage-mounting-geopolitical-turbulence-talent-shortages-and-regulatory-developments
+- GAMMA-JOB-2026: Gamma, Senior Tax Manager job posting (via Accel job board), 2026-08-04,
+  https://jobs.accel.com/companies/gamma-3/jobs/88655517-senior-tax-manager
+- HAN-LAWORDER-2026: arXiv preprint (Han, Takashima, Wei, Li, Genesereth), Law And Order: Tax Law Autoformalization
+  (arXiv 2610.02792), 2026-10-02 (abstract), https://arxiv.org/abs/2610.02792
+- IFRS-IAS12-2023: IFRS Foundation / IASB, International Tax Reform - Pillar Two Model Rules (amendments to IAS 12
+  project page), 2023-05, https://www.ifrs.org/projects/completed-projects/2023/international-tax-reform-pillar-two-model-rules/
+- KPMG-DE-2026: KPMG Germany, Tax departments are increasingly turning to artificial intelligence (KPMG Germany quick
+  surveys), 2026-05-07, https://kpmg.com/de/en/media/press-releases/2026/05/tax-departments-are-increasingly-turning-to-artificial-intelligence.html
+- PWC-IE-2026: PwC Ireland, Evolving the tax function with AI: Four key insights to guide tax leaders, 2026-07-21,
+  https://www.pwc.ie/services/tax/insights/evolving-the-tax-function-with-ai.html
+- SJSU-TEIHTTI-2025: TEI and San Jose State University, AI and Other Emerging Technologies for Tax Practitioners
+  (High Tech Tax Institute panel deck), 2025-11-03, https://www2.sjsu.edu/taxinstitute/docs/4D_AI.pdf
+- TPMINDS-P2-2026: Informa Connect, TPMinds International Pillar 2 Summit agenda, 2026-06-18,
+  https://informaconnect.com/tp-minds-international-conference/agenda/4/
