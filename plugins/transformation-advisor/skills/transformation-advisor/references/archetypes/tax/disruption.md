@@ -22,7 +22,7 @@ source assigns probabilities; neither does this file. Source keys in brackets re
 | Scenario | Evidence status | Who it hits first | Signal to watch |
 |---|---|---|---|
 | 1. Agentic preparers | Products shipped; quality unmeasured; one adopter found none ready | Small and mid-size firms' 1040 and 1065 work; offshore preparers | Independent error rates; vendors' K-1 coverage |
-| 2. AI-native roll-ups | Funded and buying; results company-stated; PE is the larger wave | Owner-managed small firms | Deal volume; buyers' margins |
+| 2. AI-native roll-ups | Funded and buying; results company-stated; PE is larger | Owner-managed small firms | Deal volume; buyers' margins |
 | 3. Fee model shifts | Statements of intent; regulator friction | Hourly advisory and large-firm compliance | IRS answer to the AICPA; published value-priced contracts |
 | 4. Continuous compliance | Vendor framing; authority mandates real | Indirect tax and in-house data teams | E-invoicing mandates; agent-executed filings |
 | 5. Authority computes more | Policy and research; no AI-driven return-free system live | Retail and simple-return preparers | Pre-population pilots; authority data timing |
@@ -57,7 +57,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
   [MULTIPLIER-2025]. Crete, Thrive-backed, planned over US$500m of acquisitions and reported over US$300m revenue, 20+
   firms and 900 staff at Jun 2025 [CRETE-REUTERS-2025]. Its investor says the model works best on small firms, which are
   "more open to changing their existing processes" [MULTIPLIER-2025].
-- **The larger wave is private equity.** 10 of the top 20 US firms are or will soon be PE-owned [CFOBREW-2026]; Grant
+- **Private equity is the larger force.** 10 of the top 20 US firms are or will soon be PE-owned [CFOBREW-2026]; Grant
   Thornton Advisors agreed to buy CBIZ at US$5.0bn [GT-CBIZ-2026]; PE investors pay more for firms using AI to expand
   capacity [CPATL-PEVAL-2026].
 - **Software-first entrants sell to firms instead.** Basis raised US$100m at a US$1.15bn valuation [BASIS-2026]; Accrual
@@ -146,3 +146,5 @@ own revenue mix.
 ## 9. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **NBER-PREPOP-2022**: NBER, *Automatic Tax Filing: Simulating a Pre-Populated Form 1040 (WP 30008)* (academic, 2022). https://www.nber.org/papers/w30008

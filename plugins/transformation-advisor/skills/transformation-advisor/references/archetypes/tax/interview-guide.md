@@ -171,7 +171,7 @@ Use these in addition to each phase file's question bank.
 | Local file, master file, CbCR; DEMPE; APA, MAP | TP documentation; functions around intangibles; certainty procedures | Transfer pricing |
 | Nexus; exemption certificate; CTC; ViDA | Duty to collect; buyer's exemption proof; continuous transaction controls; EU VAT in the Digital Age | Indirect tax |
 | SSTS; PCRT; TPB | AICPA tax standards; UK conduct rules; Australia's practitioner regulator | Professional duties |
-| Extension season; roll-forward | The second deadline wave; reusing last year's work | Timing and baseline |
+| Extension season; roll-forward | The second deadline peak; reusing last year's work | Timing and baseline |
 
 **Words to avoid:** "AI files the return", "automated tax advice", "replace preparers", "AI-signed". Say instead
 "agent-drafted return for review", "first pass", "the signing preparer", "review record", "human control point".
@@ -179,3 +179,5 @@ Use these in addition to each phase file's question bank.
 ## 9. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+(All keys cited here are in sources.md.)

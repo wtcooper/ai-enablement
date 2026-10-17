@@ -176,3 +176,5 @@ document as well as a commercial one ([economics.md](economics.md) §7).
 ## 7. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+(All keys cited here are in sources.md.)

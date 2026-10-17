@@ -1,10 +1,11 @@
 # Tax data and technology (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/data-technology.yaml` (24 entries). Ids are shortened here:
-`#05` means `tax-data-technology-05`. Source keys in brackets, such as [TEI-TAXTECH-2026], are given in full in the YAML
-or in §10. **Evidence is thin.** No entry has a measured outcome from a named organisation (no grade A); 8 of 24 are
-grade B (a named deployment without published measurements), two of those are not AI (#04, #05), and the named example behind #23 does not mention AI. Every survey
-figure here comes from a firm or vendor that sells tax technology or services. Say so when you quote one.
+Sources checked 2026-10-17. Use cases live in `../use-cases/data-technology.yaml` (24 entries). Ids are shortened
+here: `#05` means `tax-data-technology-05`; other modules' ids are in full. Source keys in brackets, such as
+[TEI-TAXTECH-2026], are given in full in the YAML or in §10. **Evidence is thin.** No entry has a measured outcome
+from a named organisation (no grade A); 8 of 24 are grade B (a named deployment without published measurements), two
+of those are not AI (#04, #05), and the named example behind #23 does not mention AI. Every survey figure here comes
+from a firm or vendor that sells tax technology or services. Say so when you quote one.
 
 ## Contents
 
@@ -61,6 +62,10 @@ have no named deployment and #12 is a regulatory regime.
   business-language map of the data (grade B, Snowflake posting).
 - Improve the project: `#04` tax sets data requirements in ERP migrations (grade B, Siemens Energy and Daimler Truck
   talks; not AI).
+- The same constraint in other processes: in indirect tax, 58% name data quality their top concern, 61% fix it by
+  hand and 23% call their ERP fit for purpose [KPMG-INDIRECT-2026]; in transfer pricing, a sponsored piece lists clean
+  data across ERPs, entities and agreements as the prerequisite for AI platforms [ITR-NEXDIGM-2026] and KPMG Greece
+  advises automated data collection and real-time data access [KPMG-GR-2026].
 - Automate (baseline): `#05` Alteryx and Power Query consolidation (DuPont named; 1,100+ and 500+ hours at unnamed
   clients, vendor-published). Not AI; it shows what AI-built pipelines replace and inherit.
 
@@ -79,8 +84,9 @@ have no named deployment and #12 is a regulatory regime.
 - Automate: `#13` validation of invoice and master data before submission, with preventive controls upstream.
   `#16` idea: continuous reconciliation of calculated, invoiced, reported and authority-held data.
 - Reinvent: `#12` real-time transaction reporting replaces periodic returns (ViDA cross-border reporting from 2030-07-01; the UK's 2029 e-invoicing mandate initially has no e-reporting to HMRC [FISCAL-UK-2026]).
-  The only independent measure in this module is here: Peru's e-invoicing raised reported sales, purchases and VAT
-  liabilities by over 5% in the first year [BELLON-PERU-2022]. It measures the regime, not AI.
+  The only independent figure in this module is here: Peru's e-invoicing raised reported sales, purchases and VAT
+  liabilities by over 5% in the first year [BELLON-PERU-2022]. It concerns the regime, not AI. E-invoicing ownership
+  is split (Finance 38%, Tax 30%, IT 11%) [KPMG-INDIRECT-2026].
 
 **Notices and documents**
 - Improve: `#11` extraction of notices and documents into tax data, with every value verified against the source.
@@ -90,6 +96,7 @@ have no named deployment and #12 is a regulatory regime.
   (Kintsugi, announced).
 - Delegate: `#18` company agents call tax engines through vendor MCP servers with least-privilege scopes and logged
   tool calls (Avalara and Anrok list write-capable servers; Sovos gateway in development; no customer use published).
+  Orbitax added MCP connections to its XatBot Pillar Two assistant in April 2026 [ORBITAX-XATBOT-2026].
 
 **Governance and evidence**
 - Improve: `#19` decision log of AI-assisted determinations, overrides and approvals, recorded as work happens.
@@ -103,7 +110,7 @@ have no named deployment and #12 is a regulatory regime.
 
 **Covered in other tax modules (cross-references, not duplicated):** ledger-to-tax mapping in compliance
 (`tax-compliance-corporate-01`), PwC K-1 agents (`tax-compliance-corporate-02`), Oxford Industries' governed
-reconciliation (`tax-compliance-corporate-10`), effective-rate modelling (`tax-compliance-corporate-14`), approved
+reconciliation (`tax-compliance-corporate-10`), provision data assembly (`tax-provision-pillar-two-03`), effective-rate modelling (`tax-compliance-corporate-14`), approved
 enterprise tools (`tax-compliance-corporate-20`), deterministic engines with a model layer
 (`tax-compliance-individual-business-10`, `tax-compliance-corporate-22`), e-invoice rejection handling
 (`tax-indirect-tax-08`), engines callable by agents (`tax-indirect-tax-16`), notice triage (`tax-controversy-01`).
@@ -182,8 +189,9 @@ pipelines, mappings, reconciliations or e-invoice interfaces; any figure for age
   tool call and idempotent filings [AVALARA-MCP-2026]. NIST launched an AI Agent Standards Initiative on
   2026-02-17 [NIST-CAISI-2026].
 - **Write-back.** Deloitte says agentic corrections to source data will need to be stored back in the system of record to keep an audit-ready posture [DELOITTE-TTT-2026].
-- **Practitioner duties.** IRS OPR Alert 2026-19 applies Circular 230 duties to practitioners using AI (verify
-  facts, citations and calculations; vet third-party tools) [IRS-OPR-2026]. It is addressed to practitioners before the IRS, not to in-house departments as such. The UK Senior Accounting Officer regime puts personal accountability on named executives for tax
+- **Practitioner duties.** The shared conduct rules (IRS OPR Alert 2026-19, section 7216, PCRT, TPB) are in
+  [the archetype guardrails](../guardrails.md). The OPR alert is addressed to practitioners before the IRS, not to
+  in-house departments as such [IRS-OPR-2026]. The UK Senior Accounting Officer regime puts personal accountability on named executives for tax
   accounting arrangements [TR-GOVERNANCE-2026].
 - **Risk frameworks, not standards.** The AICPA-published Werfel framework and register [AICPA-WERFEL-2026] and the
   AICPA's Council on AI Risk in Tax, launched 2026-09-23 [AICPA-CART-2026].
@@ -266,6 +274,14 @@ Full details for every key used in the use cases are in the YAML. Keys cited her
   Orchestration Platform, 2026-10-01, https://sovos.com/press-releases/sovos-acquires-flowie-launching-the-industrys-first-agentic-compliant-finance-orchestration-platform/
 - [AICPA-CART-2026] The Tax Adviser, AICPA, former IRS commissioner to lead initiative on AI in tax, 2026-09-23,
   https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/
+- [KPMG-INDIRECT-2026] KPMG International, Benchmarking Indirect Tax in a data-driven era (2026 KPMG Indirect Tax
+  Benchmarking Survey), 2026-05, https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/05/benchmarking-indirect-tax-in-a-data-driven-era.pdf.coredownload.inline.pdf
+- [ITR-NEXDIGM-2026] International Tax Review (Nexdigm), Transfer pricing at the crossroads: disruption, data, and the
+  decade ahead (sponsored), 2026-09-21, https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead
+- [KPMG-GR-2026] KPMG Greece, Ensuring Robust, Relevant, and Fit-for-Purpose Transfer Pricing, 2026-03-02,
+  https://kpmg.com/gr/en/insights/2026/03/ensuring-robust-relevant-and-fit-for-purpose-transfer-pricing.html
+- [ORBITAX-XATBOT-2026] Orbitax, XatBot's Latest Release: Autopilot, Deep Research, MCP Connections, and Intelligent
+  Tax Skills, 2026-04-19, https://orbitax.com/newsroom/announcements/xatbots-latest-release-autopilot-deep-research-mcp-connections-and-intelligent-tax-skills
 - [NIST-AI600-1] NIST, AI Risk Management Framework: Generative AI Profile (NIST AI 600-1), 2024-07,
   https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 

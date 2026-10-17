@@ -90,7 +90,7 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 | Fall 2026 | IRS update on GAO's AI workforce recommendation due | [GAO-2026] |
 | Dec 2026 | Aibidia's TP Intelligence first release planned; ATO enterprise-wide model monitoring due | [AIBIDIA-TPINTEL-2026; ANAO-ATO-2025] |
 | Tax years beginning after 2025 | Form 6765 Section G (R&D credit business-component detail) required | [IRS-F6765-INSTR-2025] |
-| 2027 | Second GIR wave: 19 more jurisdictions join the original 37 | [BTAX-KPMG-GIR-2026] |
+| 2027 | Second GIR season: 19 more jurisdictions join the original 37 | [BTAX-KPMG-GIR-2026] |
 | 2 Dec 2027 | EU AI Act stand-alone high-risk duties, if the provisional deferral is adopted | [GIBSON-AIACT-2026] |
 | 1 Jul 2028; 1 Jul 2030; 1 Jan 2035 | ViDA milestones: platform rules and single registration; intra-EU e-invoicing and digital reporting; harmonisation | [EC-VIDA-2025] |
 | 2030 | HMRC target: at least 90% of interactions digital | [ICAS-HMRC-2025] |
@@ -110,3 +110,10 @@ scenarios in [disruption.md](disruption.md).
 ## 7. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **ACCRUAL-ARC-2026**: Accounting Today, *Accrual launches Arc AI for accounting workflows* (press, 2026-09-22). https://www.accountingtoday.com/news/accrual-launches-arc-ai-can-learn-from-and-replicate-accounting-workflows
+- **AIBIDIA-TPINTEL-2026**: Aibidia, *Aibidia introduces TP Intelligence, a new AI system of intelligence for transfer pricing* (vendor, 2026-10-15). https://www.aibidia.com/news/aibidia-introduces-tp-intelligence-a-new-ai-system-of-intelligence-for-transfer-pricing
+- **AVALARA-AVIATOR-2026**: Avalara via iTWire, *Avalara Ushers in New Era of Agentic Tax and Compliance with Avalara Aviator* (vendor, 2026-09-23). https://itwire.com/guest-articles/company-news/avalara-ushers-in-new-era-of-agentic-tax-and-compliance-with-avalara-aviator
+- **BTAX-KPMG-GIR-2026**: Bloomberg Tax (Daily Tax Report), *Pillar Two's First Real Test Has Lessons for 2027 Filing Season (Conrad Turley and Tam Do, KPMG International)* (firm, 2026-08-21). https://news.bloombergtax.com/daily-tax-report/pillar-twos-first-real-test-has-lessons-for-2027-filing-season
+- **IRS-AGENTFORCE-2025**: Axios, *Exclusive: IRS deploys AI agents* (press, 21 Nov 2025). https://www.axios.com/2025/11/21/irs-deploys-ai-agents
+- **IRS-F6765-INSTR-2025**: Internal Revenue Service, *Instructions for Form 6765 (12/2025), Credit for Increasing Research Activities* (regulator, 2025-12). https://www.irs.gov/instructions/i6765

@@ -205,3 +205,16 @@ A commentator argues untraceable output forces a manual verification layer ("pay
 ## 13. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **AICPA-SSTS-2024**: AICPA & CIMA, *Statements on Standards for Tax Services landing page* (professional-body, SSTS effective 1 Jan 2024; page viewed Oct 2026). https://www.aicpa-cima.com/resources/landing/statements-on-standards-for-tax-services
+- **CAMICO-FAQ-2025**: CAMICO (CPA professional liability insurer), *Generative AI: Frequently Asked Risk Management Questions on CAMICO's Advisory Hotline* (vendor, 12 Nov 2025). https://www.camico.com/blog/generative-artificial-intelligence-ai-frequently-asked-risk-management-questions-faq-on-camicos-advisory-hotline/
+- **CHARLOTIN-2026**: Damien Charlotin, *AI Hallucination Cases Database (tax filter)* (academic, viewed 17 Oct 2026). https://www.damiencharlotin.com/hallucinations/?q=tax
+- **GUARDIAN-DELOITTE-2025**: The Guardian, *Deloitte to pay money back to Albanese government after using AI in $440,000 report* (press, 6 Oct 2025). https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
+- **HADWICK-EUAIACT**: European Papers, *Slipping Through the Cracks: the Carve-outs for AI Tax Enforcement Systems in the EU AI Act* (academic, undated). https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
+- **IRS-I8867-2025**: Internal Revenue Service, *Instructions for Form 8867: Paid Preparer's Due Diligence Checklist (Rev. November 2025)* (regulator, 2025-11). https://www.irs.gov/pub/irs-pdf/i8867.pdf
+- **IRS-P4557-2024**: IRS, *Publication 4557, Safeguarding Taxpayer Data (Rev. 6-2024)* (regulator, Jun 2024). https://www.irs.gov/pub/irs-pdf/p4557.pdf
+- **KTS-OPR-2026**: Kilpatrick Townsend (Hughes, Andres), *Using AI in Tax Practice: What Practitioners Need to Know Before Filing Season* (firm, 29 Sep 2026). https://ktslaw.com/blog/kilpatricks-state-and-local-tax-blog/2026/9/using-ai-in-tax-practice-what-practitioners-need-to-know-before-filing-season
+- **LII-USC-7216-6713**: Cornell LII (US Code), *26 USC §§7216, 6713* (regulator, current). https://www.law.cornell.edu/uscode/text/26/7216
+- **LII-USC-PREP-2026**: Cornell LII, *26 USC §§6694, 6695* (regulator, current). https://www.law.cornell.edu/uscode/text/26/6694
+- **MYCPE-7216-2026**: MYCPE ONE (CPE vendor), *AI Compliance for CPA and Accounting Firms: Client Consent Rules Under IRC §7216, AICPA, and FTC* (vendor, published 6 May 2026; updated 26 Jun 2026). https://my-cpe.com/blogs/using-ai-cpa-accounting-firms-irc-7216-aicpa-ftc-compliance-guide
+- **ORRICK-HEPPNER-2026**: Orrick, *Court Rules AI Conversations Are Not Privileged: What United States v. Heppner Means for You* (firm, Mar 2026 (ruling 13 Feb 2026 per Orrick)). https://www.orrick.com/Insights/2026/03/Court-Rules-AI-Conversations-Are-Not-Privileged-What-United-States-v-Heppner-Means-for-You

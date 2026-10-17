@@ -155,3 +155,21 @@ workforce plan [GAO-2026]. For practitioners, that means faster automated matchi
 ## 11. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **AT-150HR-2026**: Accounting Today, *The 150-hour revolution in accounting* (press, 2026-06-29). https://www.accountingtoday.com/news/the-150-hour-revolution-in-accounting
+- **AT-EYBONUS-2026**: Accounting Today, *EY doubles CPA exam bonus to $10K* (press, 2026-03-11). https://www.accountingtoday.com/news/ey-doubles-cpa-exam-bonus-to-10k
+- **BARMORE-OPR-2026**: beehiiv newsletter, *The IRS Just Weighed In on AI (AI Lab for Accountants newsletter, C. Barmore)* (community, 2026-06-24). https://ai-lab-for-accountants.beehiiv.com/p/the-irs-just-weighed-in-on-ai
+- **CFODIVE-PWCBONUS-2026**: CFO Dive, *PwC doubles CPA exam bonus to $10K* (press, 2026-05-27 (date on page)). https://www.cfodive.com/news/pwc-doubles-cpa-exam-bonus-10k-next-gen-talent-push-accounting-shortage/821183/
+- **CPAPA-LEDGER-2026**: CPA Practice Advisor, *Accounting Firms Need an AI "Apprenticeship Ledger" (G. Tsipursky)* (press, 2026-09-01). https://www.cpapracticeadvisor.com/2026/09/01/accounting-firms-need-an-ai-apprenticeship-ledger/189423/
+- **CPAPA-STOPTRAIN-2026**: CPA Practice Advisor, *Stop Training CPAs for Yesterday's Work (M. Mukkamala, HubSync)* (press, 2026-09-02). https://www.cpapracticeadvisor.com/2026/09/02/stop-training-cpas-for-yesterdays-work/189548/
+- **DELOITTE-LU-2025**: Deloitte Luxembourg, *AI-enabled tax transformation* (firm, 2025-11-19). https://www.deloitte.com/lu/en/services/tax/research/ai-enabled-tax-transformation.html
+- **HRB-10K-2026**: H&R Block, Inc. (SEC), *Form 10-K for fiscal year ended 30 Jun 2026* (regulator, filed 2026-08-14). https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/hrb-20260630.htm
+- **IRS-PREPCRED-2026**: IRS, *Understanding tax return preparer credentials and qualifications* (regulator, undated; accessed 2026-10-17). https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications
+- **IRS-PREPSTATS-2026**: IRS, *Tax Professional Management Office federal tax return preparer statistics* (regulator, data as of 2026-09-01 (page reviewed 2026-09-08)). https://www.irs.gov/tax-professionals/tax-professional-management-office-federal-tax-return-preparer-statistics
+- **JOB-ANTHROPIC-2026**: Anthropic (Greenhouse API), *Finance Systems Analyst, Tax* (job-posting, first published 2026-08-07; updated 2026-10-13). https://job-boards.greenhouse.io/anthropic/jobs/5357947008
+- **JOB-STRIPE-2026**: Stripe (Greenhouse API), *Business Systems Architect (Tax)* (job-posting, first published 2026-08-20; updated 2026-10-07). https://stripe.com/jobs/search?gh_jid=8145117
+- **KARBON-JUNIOR-2026**: Karbon, *How do junior accountants learn when AI does the grunt work?* (vendor, 2026 (undated on page)). https://karbonhq.com/resources/training-junior-accountants-ai/
+- **MGMTCONS-PWC-2025**: Management Consulted, *PwC Entry-Level Recruiting To Slow as AI and Offshoring Reshape Big 4 Hiring* (press, 2025-08-23). https://managementconsulted.com/pwc-entry-level-recruiting-to-slow/
+- **PRIMEGLOBAL-2026**: PrimeGlobal, *The apprenticeship crisis (Trisha Daho)* (professional-body, 2026-06-26). https://www.primeglobal.net/news/the-apprenticeship-crisis
+- **SFN-BIGFOUR-2025**: Scottish Financial News, *Big Four slash graduate jobs as AI takes over entry-level tasks* (press, 2025-06-23). https://www.scottishfinancialnews.com/articles/big-four-slash-graduate-jobs-as-ai-takes-over-entry-level-tasks
+- **TR-TENSIONS-2025**: Thomson Reuters Tax & Accounting, *The corporate tax GenAI evolution: five key tensions* (survey, 2025-06-24). https://tax.thomsonreuters.com/blog/the-corporate-tax-genai-evolution-five-key-tensions-your-department-should-address-tri/

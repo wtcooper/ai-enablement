@@ -192,7 +192,7 @@ per return, not preparation hours alone.
   single VAT registration and platform deemed-supplier rules (short-term accommodation, passenger transport; the
   directive lets Member States apply the platform rule as late as 1 Jan 2030); 1 Jul
   2030 digital reporting for cross-border B2B; 1 Jan 2035 alignment of domestic real-time systems. The Commission
-  estimates up to EUR 11 billion a year less VAT fraud [EU-DIRECTIVE-2025-516, EC-VIDA-2025].
+  estimates up to EUR 11 billion a year less VAT fraud [EU-DIRECTIVE-2025-516, EC-VIDA-2026].
 - **France**: from 1 Sep 2026 every established company must be able to receive e-invoices and large and medium
   companies must issue and report; smaller ones follow in Sep 2027 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026].
 - **Marketplace and deemed-supplier rules** apply by function (payment control, transmitting orders), not label; AI
@@ -254,7 +254,7 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
   which plans "self-healing" agents [AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026]; AICPA launches CART [AICPA-CART-2026].
 - **Watch**: Vertex Exchange, 25-28 Oct 2026 [VERTEX-EXCHANGE-2026]; German e-invoicing in 2027 (Vertex expects revenue
   to ramp then) [VERTEX-Q1CALL-2026]; HMRC plans real-time risking on VAT returns and guidance usable by AI products
-  [HMRC-ROADMAP-2025]; ViDA 1 Jul 2028, 1 Jul 2030 and 1 Jan 2035 [EC-VIDA-2025].
+  [HMRC-ROADMAP-2025]; ViDA 1 Jul 2028, 1 Jul 2030 and 1 Jan 2035 [EC-VIDA-2026].
 
 ## 9. Common objections
 
@@ -283,7 +283,7 @@ Full details are in the YAML.
 - **In the YAML, surveys, firms and conferences:** FONOA-2026, FONOA-176-2026, KPMG-INDIRECT-2026, TR-INDIRECT-2026, DELOITTE-AGENTIC-2026, INNOVATETAX-VXE-2026, TEI-TAXTECH-2026, TRINST-TEIAUDITOR-2026, SAFFERY-VAT-2026, FLSALESTAX-AI-2026, STI-AGENTIC-2026, BTAX-AGENTICCOMMERCE-2026, BTAX-VAT2026, BTAX-OECDVAT-2026, OPENAI-JOB-2026, PLUSGRADE-JOB-2026.
 - **In the YAML, vendors:** TR-SUTAI-2026, TR-ONESOURCEPLUS-2025, TR-CLASSIFICATION-2026, TR-HELP-PRODCLASS, TR-AGENTICIT-2026, TR-INSTITUTE-2025, TR-BUSINESSCASE-2026, TR-WEBINAR-JLL, ACCTODAY-AVALARA-2025, AVALARA-AGENTIC-2025b, AVALARA-AVI-2025, AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026, AVALARA-NEXT-2026, AVALARA-ECM-2026, AVALARA-LLMTEST-2025, SOVOS-SOVI-2026, SOVOS-FRANCE-GOLIVE-2026, SOVOS-FRANCE-2026b, SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026, SOVOS-DOCS-AICLASS, VERTEX-Q1CALL-2026, VERTEX-SMARTCAT-2026, VERTEX-COPILOT-2025, FONOA-CITATION-2026, FONOA-MONITORING-2026, FONOA-STACK-2025, FONOA-ACCURACY-2025, FONOA-ERRORRATE-2025, NUMERAL-2026, TAXUALLY-2026, TAXCLOUD-2025, TRUSS-KINTSUGI-2026.
 - **Not in the YAML (opened by the wave 2 researchers unless noted):**
-  - EC-VIDA-2025 (European Commission, *VAT in the Digital Age*, page undated, https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en).
+  - EC-VIDA-2026 (European Commission, *VAT in the Digital Age (ViDA)*, 2026-07-29, https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en).
   - CDTFA-2025 (Tax Notes, *Experts Urge Caution as State Tax Agencies Deploy Generative AI*, 2025-08-26, https://kogod.american.edu/hubfs/experts_urge_caution_as_state_tax_agencies_deploy_generative_ai_20250826-161144.pdf); in controversy YAML.
   - KPMG-HU-2026 (KPMG Hungary, tax alert, 2026-02-26, https://kpmg.com/hu/en/insights/2026/02/taxalert-2026-02-26.html); in controversy YAML.
   - HADWICK-EUAIACT (D. Hadwick, *Slipping Through the Cracks*, European Papers 9(3), 2024-12-30, https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act).

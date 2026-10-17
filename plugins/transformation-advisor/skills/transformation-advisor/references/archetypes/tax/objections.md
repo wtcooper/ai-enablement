@@ -86,3 +86,5 @@ or in [sources.md](sources.md).
 ## 8. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+(All keys cited here are in sources.md.)

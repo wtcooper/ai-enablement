@@ -137,3 +137,9 @@ KPMG's readiness survey of 2,084 senior leaders finds most organizations in "the
 ## 9. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **ANTINOZZI-2024**: Antinozzi and Cooper (Wealth Strategies Journal posting), *Is ChatGPT an Accurate Source of Information for Uninformed Taxpayers?* (academic, 2024-06-18). https://wealthstrategiesjournal.com/2024/06/30/hannah-smith-antinozzi-lauren-cooper-is-chatgpt-an-accurate-source-of-information-for-uninformed-taxpayers-june-18-2024/
+- **CPAPA-TR-2026**: CPA Practice Advisor, *The Real AI Story in Tax and Audit Isn't Adoption: It's Impact (Thomson Reuters-authored piece)* (press, 2026-04-21). https://www.cpapracticeadvisor.com/2026/04/21/the-real-ai-story-in-tax-and-audit-isnt-adoption-its-impact/181846/
+- **HRB-Q4CALL-2026**: H&R Block (transcript via earningswhispers.com), *H&R Block Q4 fiscal 2026 earnings call transcript* (firm, 2026-08-11). https://earningswhispers.com/transcript/HRB/Q42026
+- **KPMG-READINESS-2026**: KPMG, *2026 KPMG Global Tax Readiness Dividend* (survey, 2026). https://kpmg.com/xx/en/our-insights/transformation/global-tax-readiness-dividend.html
+- **OECD-DIGIT-2025**: Bloomberg Tax, *Tax Authorities Increasingly Use AI in Audits, OECD Report Finds (OECD FTA digitalisation report, 2024 data)* (press, 17 Jun 2025). https://news.bloombergtax.com/daily-tax-report/tax-authorities-increasingly-use-ai-in-audits-oecd-report-finds

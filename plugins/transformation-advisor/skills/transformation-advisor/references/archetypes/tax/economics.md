@@ -168,3 +168,21 @@ Latest reported years; currencies and service-line definitions differ, so do not
 ## 10. Sources
 
 Keys not listed here are in [sources.md](sources.md).
+
+- **AICPA-MAP-2025**: AICPA and CIMA, *CPA Firms Report Steady Growth in Revenue and Profit, AICPA Research Finds* (professional-body, 2025-09-10). https://www.aicpa-cima.com/news/article/cpa-firms-report-steady-growth-in-revenue-and-profit-aicpa-research-finds
+- **ATODAY-TOP100-2026**: Accounting Today, *Top takeaways from the Top 100 Firms (podcast transcript, editor's remarks)* (podcast, 2026-03-30). https://www.accountingtoday.com/podcast/top-takeaways-from-the-top-100-firms
+- **ATODAY-WORTH-2026**: Accounting Today, *What is your accounting firm worth?* (press, 2026-03-30). https://www.accountingtoday.com/news/what-is-your-accounting-firm-worth
+- **CBIZ-Q2-2026**: CBIZ, Inc. (Nasdaq copy), *CBIZ Reports Second-Quarter and First-Half 2026 Financial Results* (firm (listed company), 2026-07-29). https://www.nasdaq.com/press-release/cbiz-reports-second-quarter-and-first-half-2026-financial-results-2026-07-29
+- **CPAPA-EYREV-2025**: CPA Practice Advisor, *EY Posts 4% Jump in Global Revenue in 2025* (press, 2025-10-17). https://www.cpapracticeadvisor.com/2025/10/17/ey-posts-4-jump-in-global-revenue-in-2025/171117/
+- **CPAPA-KPMGREV-2025**: CPA Practice Advisor, *KPMG Sees Global Revenue Rise to $39.8 Billion in 2025* (press, 2025-12-17). https://www.cpapracticeadvisor.com/2025/12/17/kpmg-sees-global-revenue-rise-to-39-8-billion-in-2025/175177/
+- **CPAPA-PWCREV-2025**: CPA Practice Advisor, *PwC Reports Global Revenue of $56.9 Billion in 2025* (press, 2025-10-28). https://www.cpapracticeadvisor.com/2025/10/28/pwc-reports-global-revenue-of-56-9-billion-in-2025/171838/
+- **DELOITTE-REV-2026**: Deloitte Global, *Deloitte reports FY2026 revenue of US$74.5 billion* (firm, 2026-09-24). https://www.deloitte.com/global/en/about/press-room/global-revenue-announcement.html
+- **EY-TAXNEWS-2025**: EY Tax News, *Tax departments evolve: Companies embrace outsourcing for compliance* (firm (vendor), 2025 (exact date not shown)). https://taxnews.ey.com/news/2025-0754-tax-departments-evolve-companies-embrace-outsourcing-for-compliance
+- **HRB-FY2026**: H&R Block, Inc., *H&R Block Reports Fiscal 2026 Results* (firm (listed company), 2026-08-11). https://investors.hrblock.com/news-releases/news-release-details/hr-block-reports-fiscal-2026-results-and-enters-fiscal-2027
+- **IPA-RPP-2026**: INSIDE Public Accounting, *IPA Data Dive: Revenue Per Partner Trends Across Two Decades* (press, 2026-04-29). https://insidepublicaccounting.com/2026/04/29/ipa-revenue-per-partner-trends/
+- **IRISHTIMES-KPMG-2026**: The Irish Times (Financial Times content), *KPMG pressed its auditor to pass on AI cost savings* (press, 2026-02-06). https://www.irishtimes.com/business/2026/02/06/kpmg-pressed-its-auditor-to-pass-on-ai-cost-savings/
+- **PEEC-2025**: Journal of Accountancy (AICPA), *AICPA proposes changes to independence rules related to private equity* (standard-setter, 2025-12-19). https://www.journalofaccountancy.com/news/2025/dec/aicpa-proposes-changes-to-independence-rules-related-to-private-equity/
+- **PEEC-2026**: Journal of Accountancy (AICPA), *PEEC to continue discussions on alternative practice structures* (standard-setter, 2026-08-10). https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/
+- **TR-Q2-2026**: Thomson Reuters, *Thomson Reuters Reports Second-Quarter 2026 Results* (vendor (listed company), 2026-08-05). https://ir.thomsonreuters.com/news-releases/news-release-details/thomson-reuters-reports-second-quarter-2026-results
+- **TR-TFG-2025**: Thomson Reuters Institute, *Tax firm growth: Private equity and more* (survey (vendor-owned), 2025-09 (PDF path)). https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2025/09/Tax-Firm-Growth-2025.pdf
+- **UKAD-TOP75-2026**: Business & Accountancy Daily, *Top 75 Firms Survey 2026: private equity drives growth and M&A surge* (press, 2026-03-30). https://www.accountancydaily.co/top-75-firms-survey-2026-private-equity-drives-growth-and-ma-surge
