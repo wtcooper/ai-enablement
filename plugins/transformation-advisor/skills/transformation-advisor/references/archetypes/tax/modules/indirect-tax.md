@@ -33,7 +33,7 @@ in-house tax departments, advisers and managed-service providers. Tax-authority 
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Determination | Engine sets taxability, rate and place of supply for each transaction from ERP, billing or checkout | transaction-processing | Stays rule-based by consensus [FONOA-STACK-2025, TR-AGENTICIT-2026]; stale rules multiply errors [STI-AGENTIC-2026] |
+| Determination | Engine sets taxability, rate and place of supply for each transaction from ERP, billing or checkout | transaction-processing | Vendors keep it rule-based [FONOA-STACK-2025, TR-AGENTICIT-2026]; stale rules multiply errors [STI-AGENTIC-2026] |
 | Product mapping | Map each product (SKU) to a tax code or category | transaction-processing, data-reporting | Thousands of SKUs, manual, inconsistent; wrong code means wrong tax [TR-CLASSIFICATION-2026] |
 | Exemption certificates | Collect, validate, store and link customer certificates | review-assurance | Manual; invalid certificates found only at audit (`#03`, `#04`) |
 | Registration and nexus | Track thresholds, register in new states or countries | transaction-processing, expert-judgment | A few stray orders from a new channel can cross a threshold [TAXCLOUD-2025] |
@@ -48,8 +48,8 @@ in-house tax departments, advisers and managed-service providers. Tax-authority 
 ## 3. Where AI is changing the work
 
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
-multi-step outcome with checkpoints), reinvent (the service or operating model changes). Every vendor design reviewed
-puts a person's approval before filing, rule activation or correction.
+multi-step outcome with checkpoints), reinvent (the service or operating model changes). Every vendor filing, rule-activation and correction design
+reviewed puts a person's approval first.
 
 **Determination and product mapping**
 - Improve: `#01` AI proposes product tax codes with confidence scores; a person confirms. The only measured result is
@@ -93,8 +93,8 @@ puts a person's approval before filing, rule activation or correction.
   with no defined process to feel able to defend AI decisions (Fonoa, vendor survey).
 
 **Data foundation and everyday use**
-- Improve (process): `#12` validation and repair of master and transaction data at entry (Deloitte proof of concept;
-  49% of KPMG respondents say data quality will be their main AI use).
+- Idea (process): `#12` validation and repair of master and transaction data at entry (Deloitte describes it as a
+  potential use; 49% of KPMG respondents say data quality will be their main AI use).
 - Improve: `#20` general AI for first-pass analysis and month-end summaries in a sanctioned workspace (Plusgrade job
   posting, grade B). Analyst-built pipelines are `tax-compliance-corporate-17`.
 
@@ -122,8 +122,8 @@ beyond headlines.
    that line?"** Reveals whether AI touches the calculation itself, which vendors and researchers advise against
    (`#22`), or stays in mapping, research and exceptions.
 2. **"Pick your last AI-assisted determination or filing. What record shows the rule version, inputs, reviewer and
-   approver, and could you give it to an auditor within a day?"** Reveals audit defensibility (`#15`); most teams
-   cannot (57.4% not confident).
+   approver, and could you give it to an auditor within a day?"** Reveals audit defensibility (`#15`); 57.4% would
+   not be confident defending an AI-assisted decision.
 3. **"What are your human error and override rates for product mapping, certificate checks and return lines? Have
    you measured an AI tool against them?"** Reveals whether any baseline exists; without one, vendor claims cannot be tested.
 4. **"Which of these does a vendor agent do without a person today: validate certificates, prepare a return, file,
@@ -167,7 +167,7 @@ beyond headlines.
   tools; denominators undefined [TR-INDIRECT-2026]. Deloitte relays that 77% of surveyed tax leaders require 90%+
   accuracy before trusting AI [DELOITTE-AGENTIC-2026].
 - Avalara/Censuswide, 1,500+ finance leaders (finance-wide, not indirect-tax): 76% lack in-house expertise to
-  understand how their agents work; 30% have not updated controls for AI-driven actions [AVALARA-GOVERNANCE-2026].
+  understand how their agents work; 30% have not updated their control framework for AI-driven actions in the past year [AVALARA-GOVERNANCE-2026].
 
 **Vendor claims (grade C; ask for named, measured cases)**
 - Thomson Reuters: up to 65% less routine reporting time (40-60% in an earlier release); 30 to 11 days; up to 75% lower
@@ -189,7 +189,8 @@ per return, not preparation hours alone.
 **No regulator has written rules specifically for AI in indirect tax.** The binding constraints are general:
 - **EU ViDA (VAT in the Digital Age), Directive (EU) 2025/516**, adopted 11 Mar 2025, in force 14 Apr 2025: e-invoices
   should in principle follow the European standard EN 16931; 1 Jan 2027 OSS and IOSS clarifications; 1 Jul 2028
-  platform deemed-supplier rules (short-term accommodation, passenger transport) and single VAT registration; 1 Jul
+  single VAT registration and platform deemed-supplier rules (short-term accommodation, passenger transport; the
+  directive lets Member States apply the platform rule as late as 1 Jan 2030); 1 Jul
   2030 digital reporting for cross-border B2B; 1 Jan 2035 alignment of domestic real-time systems. The Commission
   estimates up to EUR 11 billion a year less VAT fraud [EU-DIRECTIVE-2025-516, EC-VIDA-2025].
 - **France**: from 1 Sep 2026 every established company must be able to receive e-invoices and large and medium
@@ -200,8 +201,8 @@ per return, not preparation hours alone.
   procedures, written advice) to AI use in federal practice; it does not address state sales tax or VAT [IRS-OPR-2026].
 - **UK PCRT guidance (19 Jan 2026)**: members stay responsible for AI-assisted work, should be able to explain a
   conclusion, and should not put client data into a public model without consent [PCRT-AI-2026, ICAEW-PCRT-2026].
-- **UK tribunal**: in *Rafique v HMRC* [2026] TC09874 a VAT-penalty appeal was struck out after repeated AI-generated
-  submissions with fabricated citations; the judge said there is no bar on AI but submissions must be correct [ROSSMARTIN-RAFIQUE-2026].
+- **UK tribunal**: in *Rafique v HMRC* [2026] TC09874 a VAT-penalty appeal struck out for breaching unless orders was not
+  reinstated; the tribunal found repeated AI-generated submissions with fabricated citations and said every party must verify what it submits [ROSSMARTIN-RAFIQUE-2026].
 - **EU AI Act**: Article 4 requires AI literacy measures for staff [EU-AIACT-2024]. Recital 59 keeps tax-administration
   systems out of the law-enforcement high-risk class; Hadwick counts at least 85 such systems in 26 Member States [HADWICK-EUAIACT].
 - **Authority advice**: California's Publication 70 excuses liabilities only for written advice, while AI-assisted
@@ -210,7 +211,7 @@ per return, not preparation hours alone.
   enforced in the model) [AICPA-WERFEL-2026]; the AICPA Council on AI Risk in Tax launched 23 Sep 2026
   [AICPA-CART-2026]; NIST AI RMF, voluntary [NIST-AIRMF-2023].
 
-**Design guardrails seen in practice**: approval before filing, rule activation or correction (`#02`, `#07`, `#08`);
+**Design guardrails in vendor designs**: approval before filing, rule activation or correction (`#02`, `#07`, `#08`);
 confidence thresholds that route uncertain items to people (`#01`, `#11`); primary source attached to every research
 answer and alert (`#05`, `#09`); a decision log with rule version and approver (`#15`); calculation kept in the
 deterministic engine (`#22`); customer data kept out of external model training (Sovos) [SOVOS-SOVI-2026].
@@ -225,7 +226,7 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
   roles and to lead on AI in tax; 58% expect AI to leave headcount largely unchanged, 21% expect a rise, 21% a fall [KPMG-INDIRECT-2026].
 - **Reviewers of AI output**: classifiers become reviewers of low-confidence cases (Thomson Reuters view)
   [TR-CLASSIFICATION-2026]; preparers move to review and sign-off (vendor projection) [TR-AGENTICIT-2026].
-- **Tax technology roles are growing**: OpenAI hires an Indirect Tax Technology Manager to run Vertex, product mappings,
+- **Tax technology roles appear in job postings**: OpenAI hires an Indirect Tax Technology Manager to run Vertex, product mappings,
   exemption configuration and testing [OPENAI-JOB-2026]; EY advertises an indirect-tax engine implementation manager
   [EY-JOB-2026]; Plusgrade's tax manager posting expects a CPA who builds AI workflows [PLUSGRADE-JOB-2026].
 - **Hybrid skills**: the Vertex Exchange Europe recap describes teams combining tax with ERP, data, automation and AI
@@ -233,8 +234,8 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 - **Ownership gap**: tax rarely owns AI implementation [TEI-TAXTECH-2026]; Fonoa frames the leader's job as setting KPIs
   and accountability [FONOA-2026].
 - **Workload outgrows teams**: 85.8% saw workload grow and 31.2% grew headcount [FONOA-176-2026].
-- **Vendors' own staff**: Vertex announced a reduction in force while saying support analysts handle more cases with
-  AI [VERTEX-Q1CALL-2026].
+- **Vendors' own staff**: Vertex announced a reduction in force (its CEO would not call it AI-related) while saying
+  support analysts handle more cases with AI [VERTEX-Q1CALL-2026].
 
 ## 8. Frontier
 
@@ -247,7 +248,7 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 - **2026-05-07** Vertex: Smart Categorization in production use; Brinta acquired in Q1; ERP agents [VERTEX-Q1CALL-2026].
 - **2026-09-01** France's e-invoicing mandate goes live [SOVOS-FRANCE-2026].
 - **2026-09 to 10** Fonoa reports headlines on Spanish B2B e-invoicing dates, Dutch plans and a Bulgarian proposal for 2028 [FONOA-BLOGINDEX-2026].
-- **2026-08-24 / 09-02** Research on rule-checked VAT agents and a peer-reviewed VAT RAG study [SANTOS-VAT-2026, LUKETINA-VAT-2026].
+- **2026-08-24 / 09-02** A pilot on splitting VAT determination across agents and a peer-reviewed VAT RAG study [SANTOS-VAT-2026, LUKETINA-VAT-2026].
 - **2026-09-15 / 10-01** Sovos buys Blue dot (VAT recovery AI) and Flowie (finance agents) [SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026].
 - **2026-09-23** Numeral raises $100M [NUMERAL-2026]; Avalara unveils Aviator, generally available 8 Oct per Avalara,
   which plans "self-healing" agents [AVALARA-AVIATOR-2026, AVALARA-CRUSHEU-2026]; AICPA launches CART [AICPA-CART-2026].
@@ -257,8 +258,8 @@ good-faith rules apply (not retrieved by the research); marketplace or deemed-su
 
 ## 9. Common objections
 
-- **"AI can't be trusted to calculate tax."** Agreed, and nobody serious asks it to: vendors and researchers keep the
-  math in a deterministic engine [FONOA-STACK-2025, TR-AGENTICIT-2026]. The one real-case VAT study got 20-30% of
+- **"AI can't be trusted to calculate tax."** Agreed, and the vendors and researchers reviewed don't ask it to: they keep
+  the math in a deterministic engine [FONOA-STACK-2025, TR-AGENTICIT-2026]. The one real-case VAT study got 20-30% of
   analyses wrong and its authors call that unacceptable (`#06`). Use AI for mapping, research, exceptions and records.
 - **"We could never defend an AI decision to an authority."** 57.4% feel that way. Fonoa's data say the predictor is a
   defined process, not the tool; a BDO partner: you are "demonstrating a process" [FONOA-2026]. Build the record (`#15`).
@@ -289,7 +290,7 @@ Full details are in the YAML.
   - ROSSMARTIN-RAFIQUE-2026 (Ross Martin Tax, summary of *Rafique v HMRC* [2026] TC09874, 2026-05-13, https://rossmartin.co.uk/sme-tax-news/8927-ai-hallucinates-at-the-ftt-again).
   - PCRT-AI-2026 (ATT for the PCRT bodies, *Professional bodies issue AI advice to members*, 2026-01-19, https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members).
   - AICPA-CART-2026 (The Tax Adviser, Council on AI Risk in Tax, 2026-09-23, https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/).
-  - AVALARA-GOVERNANCE-2026 (Avalara, *Agentic AI in finance: Speed is outrunning governance*, 2026-08-10, https://www.avalara.com/us/en/blog/agentic-ai-finance-governance-survey.html).
+  - AVALARA-GOVERNANCE-2026 (Avalara, *Agentic AI in finance: Speed is outrunning governance*, 2026-08-11, https://www.avalara.com/us/en/blog/agentic-ai-finance-governance-survey.html).
   - TR-FORRESTER-2024 (Thomson Reuters, Forrester TEI summary, 2024-03-25, https://tax.thomsonreuters.com/blog/the-corporate-tax-department-business-case-making-the-final-tax-technology-pitch/).
   - EY-JOB-2026 (EY Careers, Tax Technology and Transformation - Indirect Tax - Manager, 2026-10-15, https://careers.ey.com/ey/job/new-york-tax-technology-and-transformation-indirect-tax-manager-ny-10001-8604/1437580833/).
   - VERTEX-EXCHANGE-2026 (Vertex, Vertex Exchange 2026, 2026-06-24, https://www.vertexinc.com/node/8263).
