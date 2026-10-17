@@ -225,17 +225,18 @@ vendor trigger to reassessment.
 - 2026-04-12: CSA "Mythos-ready" briefing tells CISOs to update risk models and board reporting [CSA-MYTHOSREADY-2026].
 - 2026-05-01: joint CISA, NSA and partner guidance on adopting agentic AI [CISA-AGENTIC-BULLETIN-2026].
 - 2026-06: Vanta describes TPRM, compliance and risk "agents" [VANTA-TPRMAGENT-2026].
+- 2026-06 to 10: Anthropic, OpenAI, Plaid, Cloudflare, Okta, GitLab and Figma post GRC roles that build or
+  supervise agents (`#19`).
 - 2026-06-22: CSA AI Controls Matrix v1.1 with AI-CAIQ [CSA-AICM-2026].
-- 2026-07-27: EU AI Omnibus in force; 2026-08-02 AI Act applicable [EC-AIACT-2026].
 - 2026-07-21: Gartner's first Hype Cycle for AI Governance (via a secondary blog) [SOFTWARESTRATEGIES-GARTNERHC-2026].
+- 2026-07-27: EU AI Omnibus in force; 2026-08-02 AI Act applicable [EC-AIACT-2026].
 - 2026-08-25: Gartner names AI-enabled vulnerability discovery the top emerging risk, with third-party controls among
   its recommendations [GARTNER-EMERGING-2026].
-- 2026-09 to 10: Anthropic, OpenAI, Plaid, GitLab and Figma post GRC roles that build or supervise agents (`#19`).
 - 2026-09-22: ISACA finds AI incident readiness lags AI use [ISACA-SOC-2026].
 - 2026-10-01: PwC finds 22% would let agents act without approval and no single owner for AI governance [PWC-GDTI-2027].
-- 2026-10-03: Venables' pyramid-to-diamond workforce argument [VENABLES-WORKFORCE-2026].
 - 2026-10-02 to 14: FAIR Institute series on assessing agents, coding agents and the AI attack surface
   [FAIR-AGENTICCODING-2026, FAIR-ATTACKSURFACE-2026].
+- 2026-10-03: Venables' pyramid-to-diamond workforce argument [VENABLES-WORKFORCE-2026].
 - 2026-10-12: CSA note on vendor-embedded agents and liability [CSA-AGENTS-2026].
 - 2026-10-14: Optro (formerly AuditBoard) announces agentic compliance, autonomous testing and agentic TPRM [OPTRO-CRX-2026].
 

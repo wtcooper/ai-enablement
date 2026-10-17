@@ -741,11 +741,11 @@
     - { ref: PLAID-JOB-RISK-2026, title: "Senior Security Analyst, Security Risk Management (job posting)", publisher: Plaid, type: job-posting, url: "https://jobs.ashbyhq.com/plaid/4c4af954-2c70-4a3c-acc2-97c58211f920", date: "2026-10-12", access: full, locator: "'Scale Through AI and Automation'" }
     - { ref: VANTA-RISKAGENT-2026, title: "Vanta Delivers: Agent for Risk", publisher: Vanta, type: vendor, url: "https://www.vanta.com/resources/vanta-delivers-agent-for-risk", date: "2026-06", access: full, locator: "Risk to Asset, Control and Vendor Mapping" }
     - { ref: ARXIV-2605.05424, title: "Evaluating the Reliability of Multiple LLMs in Risk Assessment: A CIS Controls Based Approach", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.05424", date: "2026-05-06", access: full, locator: "Abstract; Methodology (50 respondents, five models)" }
+    - { ref: OPTRO-CRX-2026, title: "GRC Intelligence takes the stage at CRX '26", publisher: "Optro (formerly AuditBoard)", type: vendor, url: "https://optro.ai/blog/grc-intelligence-takes-the-stage-crx-26", date: "2026-10-14", access: full, locator: "AURA Risk Assessment announcement" }
   last_reviewed: "2026-10-17"
   notes: >-
     From P09. Grade B on named employer postings in present or design-and-build language; no before-and-after metrics
-    anywhere. Optro announced 'AURA Risk Assessment' (evidence-backed risk scores) on 2026-10-14 (OPTRO-CRX-2026, not
-    listed as a source here).
+    anywhere. Optro announced 'AURA Risk Assessment' (evidence-backed risk scores) on 2026-10-14 (OPTRO-CRX-2026).
 
 - id: security-governance-risk-12
   title: "Cyber risk quantification with AI: scenario scoping, data gathering and LLM-assisted expert elicitation"
