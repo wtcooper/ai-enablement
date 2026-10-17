@@ -162,7 +162,6 @@ UK audit-practice attrition, latest period, firm-supplied [FRC-METRICS-2026]:
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
 - **AICPA-TRENDS-2025**: AICPA & CIMA, *Accounting Firms Report Strong Hiring Outlook, AICPA Report Finds* (professional-body, 2025-10-27). https://www.aicpa-cima.com/news/article/accounting-firms-report-strong-hiring-outlook-aicpa-report-finds
 - **AT-150HOUR-2026**: Accounting Today, *States overhaul 150-hour rule* (press, 2026-06-29). https://www.accountingtoday.com/list/states-overhaul-150-hour-rule
 - **COMPUTERWORLD-FT-2026**: Computerworld, *The Big Four accounting firms are now hiring more AI specialists than accountants (relays FT analysis)* (press, 2026-05-19). https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html

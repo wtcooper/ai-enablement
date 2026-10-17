@@ -201,7 +201,6 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
 - **INFLO-ADA-2026**: Inflo, *Audit Data Analytics* (vendor, undated). https://inflo.com/audit-data-analytics/
 - **SURALINK-CTEST-2026**: Suralink, *Cloud Testing Suite* (vendor, undated). https://www.suralink.com/technology/cloud-testing-suite-suralink
 - **VALIDIS-2026**: Validis, *Validis home page* (vendor, accessed 16 Oct 2026). https://validis.com/

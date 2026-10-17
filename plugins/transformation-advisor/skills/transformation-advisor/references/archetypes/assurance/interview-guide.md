@@ -190,5 +190,4 @@ Use these in addition to each phase file's question bank.
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
 (All keys cited here are in sources.md.)

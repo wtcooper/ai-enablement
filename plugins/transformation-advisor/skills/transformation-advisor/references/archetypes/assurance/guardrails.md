@@ -185,7 +185,6 @@ through the accountability principle.
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
 - **AT-AICPAPA-2026**: Accounting Today, *AICPA releases practice guide for auditors dealing with AI* (press, 14 Oct 2026). https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai
 - **FRC-SUPERVISION-2026**: FRC, *FRC introduces evolved approach to audit supervision* (regulator, 25 Mar 2026). https://www.frc.org.uk/news-and-events/news/2026/03/frc-introduces-evolved-approach-to-audit-supervision/
 - **HEPLER-LIAB-2026**: Hepler Broom LLC, *Professional Liability Risks for CPA Firms in 2026 (white paper, Glenn E. Davis)* (law firm, Jun 2026). https://heplerbroom.com/wp-content/uploads/2026/06/accounting-malpractice-white-paper-8JY697202.pdf

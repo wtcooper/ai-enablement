@@ -107,7 +107,7 @@ shape and skills" with its audit platform [BBL-KPMGPARTNERS-2026]. UK Big Four g
 [workforce.md](workforce.md)).
 
 **Cost of the work, client side.** In KPMG's SOX survey, testing hours per control rose from 12 (FY2022) to 16 (FY2024)
-and the cost of maintaining SOX controls rose 45% between survey waves (self-reported by companies) [KPMG-SOX-2026].
+and the cost of maintaining SOX controls rose 45% between its 2023 and 2025 surveys (self-reported by companies) [KPMG-SOX-2026].
 
 ## 6. Technology investment and capital
 
@@ -191,7 +191,7 @@ Probes for these figures are in [interview-guide.md](interview-guide.md) (Frame 
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
+- **CPAPA-GTNM-2024**: CPA Practice Advisor, *Grant Thornton Closes Deal With Private Equity Firm New Mountain Capital* (press, 3 Jun 2024). https://www.cpapracticeadvisor.com/2024/06/03/gra/106284/
 - **EYUK-FY25-2025**: EY UK, *EY reports another year of UK revenue growth in FY25* (firm press release, 27 Oct 2025). https://www.ey.com/en_uk/newsroom/2025/10/ey-reports-another-year-of-uk-revenue-growth-in-fy25
 - **LAI-2025**: International Review of Economics & Finance, vol. 103 (via RePEc), *Artificial intelligence applications and audit fees: An empirical study* (academic (journal article), 2025). https://ideas.repec.org/a/eee/reveco/v103y2025ics1059056025005842.html
 - **OPTRO-IAFUND-2026**: Optro, *Mitigating the risks of declining internal audit resources* (vendor blog (cites IAF and its own April 2026 poll), undated). https://optro.ai/blog/mitigating-risks-of-declining-internal-audit-resources

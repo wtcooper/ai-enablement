@@ -101,6 +101,4 @@ Put scheduled dates into the plan's milestones. Treat forecasts as scenarios in 
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
-- **BIG4AF-CROWE-2026**: The Big 4 Accounting Firms (blog), *Crowe Takes Private Equity Money: What the KKR Deal Means* (blog (retelling WSJ), 16 Aug 2026). https://big4accountingfirms.com/the-blog/crowe-takes-private-equity-money-kkr-deal-means-accounting-firm-profession/
 - **WCARS-2026**: Rutgers, *75th World Continuous Auditing and Reporting Symposium* (conference, 6-7 Nov 2026). https://raw.rutgers.edu/75wcars.html

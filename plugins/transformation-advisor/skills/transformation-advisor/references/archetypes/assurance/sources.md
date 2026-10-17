@@ -113,7 +113,6 @@ Treat every figure from these as vendor-published.
 
 Format: key, publisher, title (type, date), URL.
 
-<!-- sources:shared -->
 - **AAA-MIDYEAR-2026**: American Accounting Association, *Auditing Section Midyear Meeting 2026: workshop programme* (conference, Jan 2026). https://aaahq.org/Meetings/2026/Auditing-Section-Midyear-Meeting/Workshop
 - **ACCTEU-PE-2026**: Accountancy Europe, *Private equity in European accountancy and audit firms: market update Jan 2025-Apr 2026* (professional body, Jun-Jul 2026). https://accountancyeurope.eu/wp-content/uploads/2026/05/260629-Private-equity-investment-in-accountancy-and-audit-sector-in-EU-from-January-2025-to-April-2026.pdf
 - **ACFE-SAS-2026**: SAS / ACFE, *ACFE and SAS 2026 Anti-Fraud Technology Benchmarking Report (press release)* (survey, 25 Mar 2026). https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html
@@ -128,6 +127,7 @@ Format: key, publisher, title (type, date), URL.
 - **AUASB-AI-2025**: AUASB, *Impact of AI on Auditors* (standard-setter, Jul 2025). https://www.auasb.gov.au/publications/impact-of-ai-on-auditors/
 - **BBL-KPMGPARTNERS-2026**: Bloomberg Law, *KPMG to Cut 10% of US Audit Partners to Reshape Practice* (press, 23 Apr 2026). https://news.bloomberglaw.com/financial-accounting/kpmg-to-cut-10-of-us-audit-partners-in-bid-to-reshape-practice
 - **BBL-PWCPRICE-2025**: Bloomberg Law, *PwC's AI Chief Says Firm Has Cut Prices as Tech Saves Staff Time* (press, 27 Jun 2025). https://news.bloomberglaw.com/artificial-intelligence/pwcs-ai-chief-says-firm-has-cut-prices-as-tech-saves-staff-time
+- **BIG4AF-CROWE-2026**: The Big 4 Accounting Firms (blog), *Crowe Takes Private Equity Money: What the KKR Deal Means* (blog (retelling WSJ), 16 Aug 2026). https://big4accountingfirms.com/the-blog/crowe-takes-private-equity-money-kkr-deal-means-accounting-firm-profession/
 - **BLS-OOH-2026**: US Bureau of Labor Statistics, *Occupational Outlook Handbook: Accountants and Auditors (2025-35 projections)* (government-data, current edition). https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm
 - **BOARDMEMBER-CAQ-2026**: Corporate Board Member (CAQ author), *What audit partners are seeing on AI and what it means for audit committees* (press, 15 Jul 2026). https://boardmember.com/what-audit-partners-are-seeing-on-ai-and-what-it-means-for-audit-committees/
 - **BUSINESSINS-AIEO-2026**: Business Insurance, *AI use amplifies professional liability risks* (trade press, 26 Jun 2026). https://www.businessinsurance.com/ai-use-amplifies-professional-liability-risks/
@@ -206,6 +206,7 @@ Format: key, publisher, title (type, date), URL.
 - **JOFA-SAS150-2026**: Journal of Accountancy, *AICPA updates audit standards related to external confirmations (SAS No. 150)* (press, Jul 2026). https://www.journalofaccountancy.com/news/2026/jul/aicpa-updates-audit-standards-related-to-external-confirmations/
 - **JOFA-SAS151-2026**: Journal of Accountancy, *ASB approves standard on auditors' responsibilities relating to fraud* (press, Aug 2026). https://www.journalofaccountancy.com/news/2026/aug/asb-approves-standard-on-auditors-responsibilities-relating-to-fraud/
 - **JOFA-SOCETH-2026**: Journal of Accountancy, *SOC engagements: ethics risks with tool providers* (professional body, 6 Apr 2026). https://www.journalofaccountancy.com/news/2026/apr/soc-engagements-ethics-risks-with-tool-providers/
+- **KPMG-CLARA-2025**: KPMG International, *KPMG advances AI integration in KPMG Clara smart audit platform* (firm, 22 Apr 2025). https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html
 - **KPMG-HOHL-2026**: KPMG, *Q&A with Kurt Hohl, SEC chief accountant* (firm, May 2026). https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
 - **KPMG-NORDIC-2026**: KPMG, *2026 Nordic Internal Audit Survey* (survey, 2026-06). https://assets.kpmg.com/content/dam/kpmgsites/se/pdf/2026/KPMG-2026-Nordic-Internal-Audit-Survey.pdf
 - **KPMG-REV-2025**: KPMG International, *KPMG delivers rise in global revenue (FY25)* (firm press release, 16 Dec 2025). https://kpmg.com/kw/en/media/2025/12/kpmg-delivers-rise-in-global-revenue.html

@@ -85,5 +85,4 @@ or in [sources.md](sources.md).
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
 (All keys cited here are in sources.md.)

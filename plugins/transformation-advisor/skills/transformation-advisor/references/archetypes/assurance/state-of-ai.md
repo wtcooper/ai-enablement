@@ -147,7 +147,5 @@ cases are in [controls-testing](modules/controls-testing.md).
 
 Keys not listed here are in [sources.md](sources.md).
 
-<!-- sources:auto -->
-- **KPMG-CLARA-2025**: KPMG International, *KPMG advances AI integration in KPMG Clara smart audit platform* (firm, 22 Apr 2025). https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html
 - **PWC-AT-2025**: Accounting Today, *PwC expects end-to-end AI audit automation within 2026* (press, 28 Oct 2025). https://www.accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026
 - **TR-STATE-2026**: Thomson Reuters Tax and Accounting, *The state of AI in audit in 2026: Interview with experts* (vendor, 2026-03-30). https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/
