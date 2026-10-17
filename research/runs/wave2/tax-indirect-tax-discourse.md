@@ -4,7 +4,7 @@
 - **Module:** indirect-tax. VAT, GST and sales and use tax: determination and rates, exemption certificates, returns, e-invoicing and continuous transaction controls (ViDA, Peppol), marketplace and digital-services rules, tax in agentic commerce, indirect-tax audits; state and local sales tax.
 - **Angle:** discourse. What practitioners are saying in the last 12-18 months: conference sessions and recaps, panels, webinars, podcasts, practitioner articles and trade press; where the field says it is heading and what worries it.
 - **Prepared:** 2026-10-17
-- **Method note.** About 50 pages were opened with `curl` (HTML text extraction; `pdftotext` for one PDF; the `r.jina.ai` mirror for two pages that blocked `curl`). Web search was rationed and then ran out during the task (see Gaps), so some planned searches did not run. Conference sessions were read through programmes and written recaps only. Podcasts were read through show-note or episode descriptions only; no audio or transcript was reached, so no podcast is used for a specific claim beyond its description. Reddit, LinkedIn and other forums were not reachable (see Gaps). Vendor-authored thought leadership is a large share of what is public in this module; it is labelled as such and no vendor figure is presented as independent.
+- **Method note.** About 55 pages were opened with `curl` (HTML text extraction; `pdftotext` for one PDF; the `r.jina.ai` mirror for two pages that blocked `curl`). Web search was rationed and then ran out during the task (see Gaps), so some planned searches did not run. Conference sessions were read through programmes and written recaps only. Podcasts were read through show-note or episode descriptions only; no audio or transcript was reached, so no podcast is used for a specific claim beyond its description. Reddit, LinkedIn and other forums were not reachable (see Gaps). Vendor-authored thought leadership is a large share of what is public in this module; it is labelled as such and no vendor figure is presented as independent.
 
 ---
 
@@ -16,7 +16,7 @@
 4. **There is no independent quality evidence for AI in indirect tax.** No error rate, override rate, parallel-run result or inspection finding was found for product classification, certificate validation, return preparation or e-invoice handling. The figures in circulation are vendor claims (up to 65% less time on routine reporting, up to 75% less audit exposure: TR-SUTAI-2026), a vendor's single illustrative rate-lookup test (AVALARA-LLMTEST-2025), a practitioner's anecdote that a first AI draft on Florida sales tax had about five serious errors (FLSALESTAX-AI-2026), and illustrative arithmetic (FONOA-ACCURACY-2025). This is stated plainly in the use cases.
 5. **Agentic commerce is the new frontier topic, and the practical answer so far is "keep tax in the merchant's stack".** Practitioners ask who collects when an agent completes a purchase (BTAX-AGENTIC-2026) and whether agents can apply rules such as sales tax holidays (STI-AGENTIC-2026). The Sales Tax Institute notes most agentic commerce models rely on the merchant's existing tax determination systems. No regulator guidance was found.
 6. **Authorities are also using AI on indirect tax.** Hungary's 2026 audit plan says the tax authority uses AI-based models, including at invoice issuance (KPMGHU-AUDITPLAN-2026). South Carolina's revenue department signed a five-year contract to use AI in audit selection, starting with sales and use tax (SCPOST-AUDIT-2026). A Tax Notes survey found 22 of 36 responding state agencies said they did not use AI at all (TAXNOTES-UNWATCHED-2026). These are routed to the controversy module and used here as context.
-7. **Evidence mix.** 15 candidate use cases: 0 grade A, 0 grade B, 13 grade C, 2 grade D. Sources are 50 rows across seven types (conference 10, press 10, vendor 22, firm 3, survey 1, academic 1, podcast 3). No community source could be reached.
+7. **Evidence mix.** 15 candidate use cases: 0 grade A, 0 grade B, 14 grade C, 1 grade D. Sources are 48 rows across seven types (vendor 20, conference 10, press 10, firm 3, podcast 3, survey 1, academic 1). No community source could be reached. Eight of the rows are coverage-only (see section 5).
 
 ---
 
@@ -26,7 +26,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
 
 ```yaml
 - id: tax-indirect-tax-01
-  title: AI suggestions for product-to-tax-code classification, reviewed by a person
+  title: "AI suggestions for product-to-tax-code classification, reviewed by a person"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -38,8 +38,8 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
   maturity: announced
   problem: >
     Correct tax calculation depends on each product being mapped to the right tax code, and large catalogues make
-    manual mapping slow and error-prone [SOVOS-DOCS-AICLASS]. Practitioners warn the tax software cannot tell the
-    user when the chosen code is wrong, and say wrong codes are a common source of error [FONOA-ERRORRATE-2025].
+    manual mapping slow and error-prone [SOVOS-DOCS-AICLASS]. Fonoa lists misclassified product taxability,
+    especially across thousands of products, among common tax-specific errors [FONOA-ERRORRATE-2025].
     Agents buying on a consumer's behalf also depend on catalogue metadata being correctly classified [STI-AGENTIC-2026].
   solution: >
     The tool reads a product description and category and returns up to three ranked tax-code suggestions, each with
@@ -52,20 +52,20 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
       description: >
         Sovos documentation says suggestions arrive "in seconds" rather than after manual research. No time saving
         or accuracy figure is published.
-      figure: n/a
-      measures: no figure published
+      figure: "n/a"
+      measures: "no figure published"
       provenance: vendor-published
       source_ref: SOVOS-DOCS-AICLASS
   prerequisites:
-    - Complete, specific product descriptions, because documentation says detail improves suggestions [SOVOS-DOCS-AICLASS].
-    - A product catalogue and master-data process that can carry the chosen tax code through to invoicing [INNOVATETAX-VXE-2026].
+    - "Complete, specific product descriptions, because documentation says detail improves suggestions [SOVOS-DOCS-AICLASS]."
+    - "A product catalogue and master-data process that can carry the chosen tax code through to invoicing [INNOVATETAX-VXE-2026]."
   risks_and_guardrails:
-    - Sovos warns that a high confidence score does not guarantee the code is correct and tells users always to review suggestions before mapping [SOVOS-DOCS-AICLASS].
-    - Weak product classifications surface at the point of invoice under e-invoicing and real-time reporting [INNOVATETAX-VXE-2026].
-    - Customers can opt out of Sovos AI classification by raising a support case [SOVOS-DOCS-AICLASS].
+    - "Sovos warns that a high confidence score does not guarantee the code is correct and tells users always to review suggestions before mapping [SOVOS-DOCS-AICLASS]."
+    - "Weak product classifications surface at the point of invoice under e-invoicing and real-time reporting [INNOVATETAX-VXE-2026]."
+    - "Customers can opt out of Sovos AI classification by raising a support case [SOVOS-DOCS-AICLASS]."
   human_checkpoints:
-    - A person confirms or overrides each suggested code, and may record a rationale of up to 500 characters in ONESOURCE [TR-HELP-PRODCLASS].
-    - Low and very low confidence suggestions are reviewed or sent back for more product detail [SOVOS-DOCS-AICLASS].
+    - "A person confirms or overrides each suggested code, and may record a rationale of up to 500 characters in ONESOURCE [TR-HELP-PRODCLASS]."
+    - "Low and very low confidence suggestions are reviewed or sent back for more product detail [SOVOS-DOCS-AICLASS]."
   role_evolution: >
     The Vertex Exchange Europe recap describes the future tax team as hybrid, combining tax knowledge with comfort
     around ERP landscapes, data, automation and AI [INNOVATETAX-VXE-2026]. No source describes a change in headcount
@@ -85,7 +85,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     was not opened, so it is not used.
 
 - id: tax-indirect-tax-02
-  title: AI validation and routing of exemption certificates at receipt
+  title: "AI validation and routing of exemption certificates at receipt"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -104,25 +104,23 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     missing fields and flagging potential errors, and can ingest, classify, validate and route certificates at scale
     with intelligent document processing, plus natural-language search over the certificate store [AVALARA-ECM-2026].
     Avalara lists validating exemption certificates among tasks of its Aviator agent hub [AVALARA-CRUSHEU-2026].
-    A Thomson Reuters community post advertises a webinar on closed-loop automation for exemption certificate
-    management with CERTifyTax and ONESOURCE [TRCOMM-ECM].
   outcomes:
     - lever: quality
       description: >
         Avalara says AI review finds missing fields and errors "faster and more accurately than manual reviews". It
         publishes no error rate, volume or time figure.
-      figure: n/a
-      measures: no figure published
+      figure: "n/a"
+      measures: "no figure published"
       provenance: vendor-published
       source_ref: AVALARA-ECM-2026
   prerequisites:
-    - Certificates captured in a system that can ingest documents and route them to a workflow [AVALARA-ECM-2026].
-    - Complete certificate and customer master data, which the Vertex Exchange Europe recap names as a recurring weakness [INNOVATETAX-VXE-2026].
+    - "Certificates captured in a system that can ingest documents and route them to a workflow [AVALARA-ECM-2026]."
+    - "Complete certificate and customer master data, which the Vertex Exchange Europe recap names as a recurring weakness [INNOVATETAX-VXE-2026]."
   risks_and_guardrails:
-    - A wrong validation exposes the seller to the audit and penalty risk the tool is meant to reduce [AVALARA-ECM-2026].
-    - No independent evaluation of validation accuracy was found.
+    - "A wrong validation exposes the seller to the audit and penalty risk the tool is meant to reduce [AVALARA-ECM-2026]."
+    - "No independent evaluation of validation accuracy was found."
   human_checkpoints:
-    - Flagged or failed certificates route to a person; the source describes "routing" but not the exact review step [AVALARA-ECM-2026].
+    - "Flagged or failed certificates route to a person; the source describes \"routing\" but not the exact review step [AVALARA-ECM-2026]."
   role_evolution: >
     Avalara says automation lets tax teams spend less time on paperwork and more on strategy [AVALARA-ECM-2026]. No
     independent source describes a role change.
@@ -131,14 +129,13 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     - { ref: AVALARA-ECM-2026, title: "How AI Improves Exemption Certificate Management", publisher: Avalara, type: vendor, url: "https://www.avalara.com/blog/en/north-america/2026/02/ai-exemption-certificate-management.html", date: 2026-02-23, access: full, locator: "sections 'AI-powered certificate validation' and 'Intelligent document processing + automated workflows'" }
     - { ref: AVALARA-CRUSHEU-2026, title: "Avalara Helps Global Businesses Move Faster as Tax and Compliance Complexity Accelerates", publisher: Avalara (PR Newswire), type: conference, url: "https://www.webdisclosure.com/press-release/avalara-helps-global-businesses-move-faster-as-tax-and-compliance-complexity-accelerates-WEpMYuY5kxr", date: 2026-10-08, access: full, locator: "section 'New purpose-built agentic AI solutions'" }
     - { ref: INNOVATETAX-VXE-2026, title: "What we learned from Vertex Exchange Europe 2026", publisher: Innovate Tax, type: conference, url: "https://innovatetax.com/blog/what-we-learned-from-vertex-exchange-europe-2026/", date: 2026-05-06, access: full, locator: "section 'Master data came up a lot'" }
-    - { ref: TRCOMM-ECM, title: "Using AI to transform tax: Embracing closed-loop automation for ECM", publisher: Thomson Reuters Community, type: vendor, url: "https://community.thomsonreuters.com/tax-accounting/f/advisory/33178/using-ai-to-transform-tax-embracing-closed-loop-automation-for-ecm", date: 2025-10-17, access: full, locator: "thread body (listed 'over 1 year ago'; retrieved date minus one year used as an upper bound, treat as approximate)" }
   last_reviewed: 2026-10-17
   notes: >
     A Wolters Kluwer CERTifyTax webinar (11 Jun 2026) and further Avalara webinars (23 Apr and 24 Sep 2026) were seen in
-    a search summary only and are not used. The date on TRCOMM-ECM is approximate; the thread shows only "over 1 year ago".
+    a search summary only and are not used.
 
 - id: tax-indirect-tax-03
-  title: Agentic sales and use tax return preparation with approval before filing
+  title: "Agentic sales and use tax return preparation with approval before filing"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -162,41 +159,41 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     [TR-AGENTICIT-2026].
   outcomes:
     - lever: speed
-      description: Thomson Reuters says the tool reduces time spent on routine reporting.
-      figure: up to 65%
+      description: "Thomson Reuters says the tool reduces time spent on routine reporting."
+      figure: "up to 65%"
       measures: >
         "time spent on routine reporting" reduced, per the vendor release; baseline, sample and measurement method
         not stated
       provenance: vendor-published
       source_ref: TR-SUTAI-2026
     - lever: speed
-      description: Thomson Reuters says compliance cycles for large enterprises fall from 30 days to 11 days.
-      figure: 30 days to 11 days
-      measures: compliance cycle length for "large enterprises", per the vendor release; customers not named
+      description: "Thomson Reuters says compliance cycles for large enterprises fall from 30 days to 11 days."
+      figure: "30 days to 11 days"
+      measures: "compliance cycle length for \"large enterprises\", per the vendor release; customers not named"
       provenance: vendor-published
       source_ref: TR-SUTAI-2026
     - lever: risk
-      description: Thomson Reuters says early customers report lower audit exposure through automated validation and audit documentation.
-      figure: up to 75%
-      measures: "reduction in audit exposure" reported by "early customers", per the vendor release; no definition of exposure or number of customers
+      description: "Thomson Reuters says early customers report lower audit exposure through automated validation and audit documentation."
+      figure: "up to 75%"
+      measures: "\"reduction in audit exposure\" reported by \"early customers\", per the vendor release; no definition of exposure or number of customers"
       provenance: vendor-published
       source_ref: TR-SUTAI-2026
     - lever: cost
-      description: Thomson Reuters gives annual savings for small and large enterprises.
-      figure: about $25,000 (small), $60,000 or more (large) per year
-      measures: "save approximately $25,000 annually in time and efficiency" (small enterprises) and "$60,000 or more" (large), per the vendor release; method not stated
+      description: "Thomson Reuters gives annual savings for small and large enterprises."
+      figure: "about $25,000 (small), $60,000 or more (large) per year"
+      measures: "\"save approximately $25,000 annually in time and efficiency\" (small enterprises) and \"$60,000 or more\" (large), per the vendor release; method not stated"
       provenance: vendor-published
       source_ref: TR-SUTAI-2026
   prerequisites:
-    - Clean transaction data feeding the return process; the vendors pair the agent with determination and calculation engines [TR-SUTAI-2026].
-    - A defined governance model: Thomson Reuters says policies for AI decision oversight, audit-trail standards and human review checkpoints do not write themselves [TR-AGENTICIT-2026].
+    - "Clean transaction data feeding the return process; the vendors pair the agent with determination and calculation engines [TR-SUTAI-2026]."
+    - "A defined governance model: Thomson Reuters says policies for AI decision oversight, audit-trail standards and human review checkpoints do not write themselves [TR-AGENTICIT-2026]."
   risks_and_guardrails:
-    - Thomson Reuters says every agent decision is documented with rationale, timestamps and reviewer sign-offs, and that deterministic engines do the tax math [TR-AGENTICIT-2026].
-    - A practitioner warning in the sales tax holiday discussion applies by analogy: automation can accelerate errors if rule configurations are out of date [STI-AGENTIC-2026].
-    - TEI attendees reported that errors are increasingly quiet and technical, which makes review harder as volumes rise [TEI-TAXTECH-2026].
+    - "Thomson Reuters says every agent decision is documented with rationale, timestamps and reviewer sign-offs, and that deterministic engines do the tax math [TR-AGENTICIT-2026]."
+    - "A practitioner warning in the sales tax holiday discussion applies by analogy: automation can accelerate errors if rule configurations are out of date [STI-AGENTIC-2026]."
+    - "TEI attendees reported that errors are increasingly quiet and technical, which makes review harder as volumes rise [TEI-TAXTECH-2026]."
   human_checkpoints:
-    - Final review and approval before filing [TR-SUTAI-2026].
-    - Avalara says agents notify a person for novel situations and for key decisions that affect the compliance footprint [AVALARA-AGENTIC-2025].
+    - "Final review and approval before filing [TR-SUTAI-2026]."
+    - "Avalara says agents notify a person for novel situations and for key decisions that affect the compliance footprint [AVALARA-AGENTIC-2025]."
   role_evolution: >
     Thomson Reuters says preparation that took days narrows to hours of review and sign-off and capacity moves to
     policy, monitoring and advisory work [TR-AGENTICIT-2026]; this is a vendor projection.
@@ -214,7 +211,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     so only its 30 Sep 2025 launch is used.
 
 - id: tax-indirect-tax-04
-  title: Agent diagnosis and approved remediation of e-invoice and filing errors
+  title: "Agent diagnosis and approved remediation of e-invoice and filing errors"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -241,20 +238,20 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
         Sovos reports an invoice rejection rate in live production in France, against its own estimate of the market
         rate. The release does not attribute the rate to AI diagnosis; it credits format validation, government
         connectivity and regulatory interpretation.
-      figure: 1.6% vs about 20% (estimated market-wide)
+      figure: "1.6% vs about 20% (estimated market-wide)"
       measures: >
         invoice rejection rate "during live production" in France on the Sovos network, about three weeks after the
         1 Sep 2026 mandate; the market-wide figure is Sovos's own estimate and no denominator or source is given
       provenance: vendor-published
       source_ref: SOVOS-FRANCE-2026
   prerequisites:
-    - Clean customer, tax-registration and product master data, which the Vertex Exchange Europe recap says e-invoicing exposes very quickly [INNOVATETAX-VXE-2026].
-    - Connectivity to the authority or approved platform so errors can be read and resubmitted [SOVOS-FRANCE-2026].
+    - "Clean customer, tax-registration and product master data, which the Vertex Exchange Europe recap says e-invoicing exposes very quickly [INNOVATETAX-VXE-2026]."
+    - "Connectivity to the authority or approved platform so errors can be read and resubmitted [SOVOS-FRANCE-2026]."
   risks_and_guardrails:
-    - Sovos says every recommendation, approval and action is documented, and that AI-assisted workflows are designed with human oversight [SOVOS-SOVI-2026].
-    - The roadmap is partly forward-looking; the release lists "current and planned" capabilities and says Sovos "plans to extend" guided, human-approved actions [SOVOS-SOVI-2026].
+    - "Sovos says every recommendation, approval and action is documented, and that AI-assisted workflows are designed with human oversight [SOVOS-SOVI-2026]."
+    - "The roadmap is partly forward-looking; the release lists \"current and planned\" capabilities and says Sovos \"plans to extend\" guided, human-approved actions [SOVOS-SOVI-2026]."
   human_checkpoints:
-    - A user approves each proposed correction before it executes [SOVOS-SOVI-2026].
+    - "A user approves each proposed correction before it executes [SOVOS-SOVI-2026]."
   role_evolution: >
     The TEI recap quotes a panelist describing a shift "from us preparing returns to us answering notices on the
     data that's been shared" [TRINST-TEIAUDITOR-2026]. No source quantifies a change in headcount.
@@ -274,7 +271,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     example of penalty stakes; the recap does not link it to AI.
 
 - id: tax-indirect-tax-05
-  title: Regulatory-change monitoring for VAT and e-invoicing with primary-source citations
+  title: "Regulatory-change monitoring for VAT and e-invoicing with primary-source citations"
   archetype: tax
   module: indirect-tax
   function: risk-compliance-legal
@@ -298,20 +295,20 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     five serious errors [FLSALESTAX-AI-2026].
   outcomes:
     - lever: risk
-      description: none published
-      figure: n/a
-      measures: no figure published; Fonoa and Sovos give no detection rate, false-alert rate or time-to-alert
+      description: "none published"
+      figure: "n/a"
+      measures: "no figure published; Fonoa and Sovos give no detection rate, false-alert rate or time-to-alert"
       provenance: vendor-published
       source_ref: FONOA-REGMON-2026
   prerequisites:
-    - A profile of jurisdictions, tax types and business activities so alerts can be filtered [FONOA-REGMON-2026].
-    - Source feeds from legislative gazettes and authority sites; the Florida attorney notes that many government sites are not accessible to AI engines [FLSALESTAX-AI-2026].
+    - "A profile of jurisdictions, tax types and business activities so alerts can be filtered [FONOA-REGMON-2026]."
+    - "Source feeds from legislative gazettes and authority sites; the Florida attorney notes that many government sites are not accessible to AI engines [FLSALESTAX-AI-2026]."
   risks_and_guardrails:
-    - A summary is a reading of the law and cannot be cited in an audit with confidence; attach and keep the primary source [FONOA-PRIMARY-2026].
-    - General-purpose models have knowledge cutoffs; the Florida attorney gives the Oct 2025 repeal of Florida's commercial lease sales tax as an example an older model would miss [FLSALESTAX-AI-2026].
-    - Avalara's single test found a general chatbot gave a Bellevue, WA combined rate of 10.3% when the October 2025 rate was 10.2%, because it confused the enactment and effective dates [AVALARA-LLMTEST-2025].
+    - "A summary is a reading of the law and cannot be cited in an audit with confidence; attach and keep the primary source [FONOA-PRIMARY-2026]."
+    - "General-purpose models have knowledge cutoffs; the Florida attorney gives the Oct 2025 repeal of Florida's commercial lease sales tax as an example an older model would miss [FLSALESTAX-AI-2026]."
+    - "Avalara's single test found a general chatbot gave a Bellevue, WA combined rate of 10.3% when the October 2025 rate was 10.2%, because it confused the enactment and effective dates [AVALARA-LLMTEST-2025]."
   human_checkpoints:
-    - A person decides whether a change applies to the business; Fonoa says applying a summarised change may need a human's deterministic application [FONOA-STACK-2025].
+    - "A person decides whether a change applies to the business; Fonoa says applying a summarised change may need a human's deterministic application [FONOA-STACK-2025]."
   role_evolution: >
     Fonoa says coverage should stop being a function of headcount [FONOA-REGMON-2026]. The Vertex Exchange Europe
     recap says tax staff will need to understand how rules are configured, explained, audited and defended
@@ -331,7 +328,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     in a firm blog that also markets the firm's services. The Avalara test is a vendor's single example (n=1).
 
 - id: tax-indirect-tax-06
-  title: Full-population invoice review, anomaly detection and VAT recovery checks
+  title: "Full-population invoice review, anomaly detection and VAT recovery checks"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -355,19 +352,19 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     decisions [FONOA-STACK-2025].
   outcomes:
     - lever: risk
-      description: none published
-      figure: n/a
-      measures: no measured outcome found; the 97% / 93% / 10% coverage comparison is a hypothetical in the source
+      description: "none published"
+      figure: "n/a"
+      measures: "no measured outcome found; the 97% / 93% / 10% coverage comparison is a hypothetical in the source"
       provenance: vendor-published
       source_ref: FONOA-ACCURACY-2025
   prerequisites:
-    - Structured invoice and ledger data across entities; the Bloomberg Tax author says automation and data quality will be "the new currencies" [BTAX-VAT2026].
-    - Confidence thresholds that route uncertain items to people [FONOA-ACCURACY-2025].
+    - "Structured invoice and ledger data across entities; the Bloomberg Tax author says automation and data quality will be \"the new currencies\" [BTAX-VAT2026]."
+    - "Confidence thresholds that route uncertain items to people [FONOA-ACCURACY-2025]."
   risks_and_guardrails:
-    - False positives and false negatives; Fonoa says thresholds and filters are needed to avoid alert fatigue [FONOA-ERRORRATE-2025].
-    - Where a missed flag could mean a major fine, Fonoa says to keep deterministic logic as the backbone [FONOA-STACK-2025].
+    - "False positives and false negatives; Fonoa says thresholds and filters are needed to avoid alert fatigue [FONOA-ERRORRATE-2025]."
+    - "Where a missed flag could mean a major fine, Fonoa says to keep deterministic logic as the backbone [FONOA-STACK-2025]."
   human_checkpoints:
-    - Flagged items are verified by a tax manager against known rules before an audit [FONOA-STACK-2025].
+    - "Flagged items are verified by a tax manager against known rules before an audit [FONOA-STACK-2025]."
   role_evolution: >
     The Bloomberg Tax author says businesses will move from manual tasks to tech-driven VAT management supported by
     predictive analytics [BTAX-VAT2026]. No source quantifies the effect on roles.
@@ -385,7 +382,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     90% of complex spreadsheets with material errors) that were not opened.
 
 - id: tax-indirect-tax-07
-  title: Reconciling calculated, invoiced and reported tax across determination, e-invoice and return data
+  title: "Reconciling calculated, invoiced and reported tax across determination, e-invoice and return data"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -408,18 +405,18 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     as an idea: no source reports a deployment of this specific reconciliation.
   outcomes:
     - lever: quality
-      description: none published
-      figure: n/a
-      measures: no figure published
+      description: "none published"
+      figure: "n/a"
+      measures: "no figure published"
       provenance: vendor-published
       source_ref: TR-AGENTICIT-2026
   prerequisites:
-    - Shared master data and identifiers across tax, finance, IT, AP and sales [INNOVATETAX-VXE-2026].
-    - Access to e-invoicing and authority-response records [TR-AGENTICIT-2026].
+    - "Shared master data and identifiers across tax, finance, IT, AP and sales [INNOVATETAX-VXE-2026]."
+    - "Access to e-invoicing and authority-response records [TR-AGENTICIT-2026]."
   risks_and_guardrails:
-    - Agents that reconcile across systems carry the same audit-trail needs as other agents: who reviewed what, when and with what rationale [TR-AGENTICIT-2026].
+    - "Agents that reconcile across systems carry the same audit-trail needs as other agents: who reviewed what, when and with what rationale [TR-AGENTICIT-2026]."
   human_checkpoints:
-    - Exceptions are reviewed and resolved by a person [TR-AGENTICIT-2026].
+    - "Exceptions are reviewed and resolved by a person [TR-AGENTICIT-2026]."
   role_evolution: >
     Thomson Reuters says capacity consumed by data processing could move to policy optimisation, monitoring and advisory
     work [TR-AGENTICIT-2026]; this is a vendor projection.
@@ -434,7 +431,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     general terms, not as a shipped feature for this task.
 
 - id: tax-indirect-tax-08
-  title: Decision log and audit-defence file for AI-assisted indirect-tax determinations
+  title: "Decision log and audit-defence file for AI-assisted indirect-tax determinations"
   archetype: tax
   module: indirect-tax
   function: risk-compliance-legal
@@ -460,7 +457,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
       description: >
         Fonoa says a small cohort with accountability structures reports compliance workload falling faster than the
         rest. The landing page gives no sample size or definition of workload.
-      figure: 8x the rate of everyone else
+      figure: "8x the rate of everyone else"
       measures: >
         rate of decrease in "compliance workload" for the cohort with accountability structures versus other
         respondents, among 176 surveyed indirect tax leaders; cohort size and workload definition not published on the
@@ -468,13 +465,13 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
       provenance: vendor-published
       source_ref: FONOA-2026-SURVEY
   prerequisites:
-    - Leadership-set AI targets or KPIs; only 12.5% of respondents have them [FONOA-2026-SURVEY].
-    - An AI use log or inventory of AI-assisted decisions affecting filings, determinations or authority responses over 12 months, as Fonoa's self-assessment asks [FONOA-2026-SURVEY].
+    - "Leadership-set AI targets or KPIs; only 12.5% of respondents have them [FONOA-2026-SURVEY]."
+    - "An AI use log or inventory of AI-assisted decisions affecting filings, determinations or authority responses over 12 months, as Fonoa's self-assessment asks [FONOA-2026-SURVEY]."
   risks_and_guardrails:
-    - At the TEI seminar only two hands in a room of more than 50 said the tax function owns AI implementation at their company [TEI-TAXTECH-2026].
-    - An analyst's team can deploy a quickly built AI pipeline that nobody else has reviewed or documented [TRINST-TEIAUDITOR-2026].
+    - "At the TEI seminar only two hands in a room of more than 50 said the tax function owns AI implementation at their company [TEI-TAXTECH-2026]."
+    - "An analyst's team can deploy a quickly built AI pipeline that nobody else has reviewed or documented [TRINST-TEIAUDITOR-2026]."
   human_checkpoints:
-    - Reviewer sign-off at each decision point in the vendor workflows described [TR-AGENTICIT-2026] [SOVOS-SOVI-2026].
+    - "Reviewer sign-off at each decision point in the vendor workflows described [TR-AGENTICIT-2026] [SOVOS-SOVI-2026]."
   role_evolution: >
     Fonoa's survey frames the leader's job as owning accountability structures, KPIs and audit trails around AI
     [FONOA-2026-SURVEY]. A TEI senior director said, "You will not survive in this field if you don't have a change
@@ -493,7 +490,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     poll at TEI covered corporate tax functions in general, not only indirect tax.
 
 - id: tax-indirect-tax-09
-  title: Grounded question-and-answer assistants inside tax compliance platforms
+  title: "Grounded question-and-answer assistants inside tax compliance platforms"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -519,23 +516,23 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     - lever: quality
       description: >
         Avalara's own test: one tax-rate lookup in which a general chatbot was wrong and Avalara's engine was right.
-      figure: 10.3% (chatbot) vs 10.2% (Avalara) for Bellevue, WA, Oct 2025
+      figure: "10.3% (chatbot) vs 10.2% (Avalara) for Bellevue, WA, Oct 2025"
       measures: >
         a single combined sales tax rate lookup (n=1) for Bellevue, Washington in October 2025, run by the vendor that
         sells the compared product
       provenance: vendor-published
       source_ref: AVALARA-LLMTEST-2025
   prerequisites:
-    - A curated, current tax content base; Sovos cites 40+ years of expertise and 100+ specialists [SOVOS-SOVI-2026].
-    - Primary-source citation so users can verify and keep evidence for audit [FONOA-PRIMARY-2026].
+    - "A curated, current tax content base; Sovos cites 40+ years of expertise and 100+ specialists [SOVOS-SOVI-2026]."
+    - "Primary-source citation so users can verify and keep evidence for audit [FONOA-PRIMARY-2026]."
   risks_and_guardrails:
-    - Knowledge cutoffs, hallucination and treating all sources as equally authoritative are named failure modes of general models [FLSALESTAX-AI-2026].
-    - Customer data stays inside the vendor's security perimeter and is not used to train external models, per Sovos [SOVOS-SOVI-2026].
+    - "Knowledge cutoffs, hallucination and treating all sources as equally authoritative are named failure modes of general models [FLSALESTAX-AI-2026]."
+    - "Customer data stays inside the vendor's security perimeter and is not used to train external models, per Sovos [SOVOS-SOVI-2026]."
   human_checkpoints:
-    - The user decides what to do with an answer; Sovos says it plans to extend to guided, human-approved actions [SOVOS-SOVI-2026].
+    - "The user decides what to do with an answer; Sovos says it plans to extend to guided, human-approved actions [SOVOS-SOVI-2026]."
   role_evolution: >
-    The Florida attorney says professional responsibility stays with the professional, and that business owners and
-    some tax professionals increasingly use AI as a starting point or as a substitute for advice [FLSALESTAX-AI-2026].
+    The Florida attorney says a growing number of business owners, and some tax professionals, use general AI tools
+    for sales tax answers, some as a starting point and some as a substitute for professional advice [FLSALESTAX-AI-2026].
   evidence_grade: C
   sources:
     - { ref: SOVOS-SOVI-2026, title: "Sovos Expands Sovi AI with New Capabilities for Tax Guidance, Intelligent Automation and Agent Interoperability", publisher: Sovos, type: vendor, url: "https://sovos.com/press-releases/sovos-expands-sovi-ai/", date: 2026-03-24, access: full, locator: "paragraph on Ask Sovi" }
@@ -549,7 +546,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     says the lease-tax repeal took effect 1 Oct 2025 (House Bill 7031); that statement was not verified against the statute.
 
 - id: tax-indirect-tax-10
-  title: Tax engines exposed to customers' own AI agents through MCP and agent-to-agent protocols
+  title: "Tax engines exposed to customers' own AI agents through MCP and agent-to-agent protocols"
   archetype: tax
   module: indirect-tax
   function: technology-it
@@ -561,7 +558,8 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
   maturity: announced
   problem: >
     Compliance work "won't always begin inside compliance software"; it may start in an ERP, an e-commerce platform, a
-    finance system or an AI agent [AVALARA-CRUSHEU-2026]. Integrations are slow to build and maintain [AVALARA-CRUSHEU-2026].
+    finance system or an AI agent; Avalara contrasts its approach with traditional integration tools that take
+    months [AVALARA-CRUSHEU-2026].
   solution: >
     Avalara's CRUSH Europe release says its Versori unit uses AI agents to build and deploy connectors in days rather
     than months [AVALARA-CRUSHEU-2026]; its 2025 launch described a "Have your agent call our agent" model with agents
@@ -573,18 +571,18 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     - lever: speed
       description: >
         Avalara says Versori builds connectors "in days rather than months". No sample or customer is named.
-      figure: days instead of months
-      measures: time to build production-grade connectors, per the vendor release; no baseline or sample
+      figure: "days instead of months"
+      measures: "time to build production-grade connectors, per the vendor release; no baseline or sample"
       provenance: vendor-published
       source_ref: AVALARA-CRUSHEU-2026
   prerequisites:
-    - Authenticated, governed access to the tax engine for external agents [SOVOS-SOVI-2026].
-    - Customer-side agent environments that can call it [SOVOS-SOVI-2026].
+    - "Authenticated, governed access to the tax engine for external agents [SOVOS-SOVI-2026]."
+    - "Customer-side agent environments that can call it [SOVOS-SOVI-2026]."
   risks_and_guardrails:
-    - Sovos describes the MCP gateway as designed for "standardized, governed access"; governance detail is not published [SOVOS-SOVI-2026].
-    - Whether the calling agent is trusted and which party is liable for a wrong result is not addressed in the sources read.
+    - "Sovos describes the MCP gateway as designed for \"standardized, governed access\"; governance detail is not published [SOVOS-SOVI-2026]."
+    - "Whether the calling agent is trusted and which party is liable for a wrong result is not addressed in the sources read."
   human_checkpoints:
-    - Not specified in the sources.
+    - "Not specified in the sources."
   role_evolution: >
     Compliance capabilities may be consumed "through trusted, interoperable agents" as well as applications
     [SOVOS-SOVI-2026]; no source discusses effects on tax or IT roles.
@@ -600,7 +598,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     MCP release was not reachable.
 
 - id: tax-indirect-tax-11
-  title: Tax determination inside agent-initiated checkout, including sales tax holiday rules
+  title: "Tax determination inside agent-initiated checkout, including sales tax holiday rules"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -625,20 +623,20 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     or EU deemed-supplier tests, so the operator may have to collect tax [BTAX-AGENTIC-2026].
   outcomes:
     - lever: risk
-      description: none published
-      figure: n/a
-      measures: no tax-compliance outcome published for agent-initiated checkout
+      description: "none published"
+      figure: "n/a"
+      measures: "no tax-compliance outcome published for agent-initiated checkout"
       provenance: independent
       source_ref: STI-AGENTIC-2026
   prerequisites:
-    - Machine-readable, current rules in the tax engine, not only point-of-sale configuration [STI-AGENTIC-2026].
-    - Catalogue metadata that identifies exempt or holiday-eligible items and price thresholds [STI-AGENTIC-2026].
+    - "Machine-readable, current rules in the tax engine, not only point-of-sale configuration [STI-AGENTIC-2026]."
+    - "Catalogue metadata that identifies exempt or holiday-eligible items and price thresholds [STI-AGENTIC-2026]."
   risks_and_guardrails:
-    - Responsibility is unsettled between retailer, agent platform and protocol layer; in practice calculation generally stays with the retailer or marketplace [STI-AGENTIC-2026].
-    - Liability must attach to a legal entity because AI systems have no legal personality [BTAX-AGENTIC-2026].
-    - Small differences in checkout flow or payment authorisation can change the analysis [BTAX-AGENTIC-2026].
+    - "Responsibility is unsettled between retailer, agent platform and protocol layer; in practice calculation generally stays with the retailer or marketplace [STI-AGENTIC-2026]."
+    - "Liability must attach to a legal entity because AI systems have no legal personality [BTAX-AGENTIC-2026]."
+    - "Small differences in checkout flow or payment authorisation can change the analysis [BTAX-AGENTIC-2026]."
   human_checkpoints:
-    - Agent-initiated checkout removes the human checkpoint at purchase; the Sales Tax Institute says controls must move to the tax engine and data [STI-AGENTIC-2026].
+    - "Agent-initiated checkout removes the human checkpoint at purchase; the Sales Tax Institute says controls must move to the tax engine and data [STI-AGENTIC-2026]."
   role_evolution: >
     Not described beyond a call for tax teams and e-commerce leaders to assess whether holiday processes suit
     machine-driven purchasing [STI-AGENTIC-2026].
@@ -655,7 +653,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     verified at source. The McKinsey $3-5 trillion estimate by 2030 is quoted in the Bloomberg piece and not verified.
 
 - id: tax-indirect-tax-12
-  title: AI agents answering nexus, registration and filing-threshold questions across a client portfolio
+  title: "AI agents answering nexus, registration and filing-threshold questions across a client portfolio"
   archetype: tax
   module: indirect-tax
   function: service-delivery
@@ -675,17 +673,17 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     compliance obligations [AVALARA-AGENTIC-2025].
   outcomes:
     - lever: speed
-      description: none published
-      figure: n/a
-      measures: no figure published; the listing describes a demonstration
+      description: "none published"
+      figure: "n/a"
+      measures: "no figure published; the listing describes a demonstration"
       provenance: vendor-published
       source_ref: TRUSS-KINTSUGI-2026
   prerequisites:
-    - Client transaction and sales-by-state data in a system the agent can read [TRUSS-KINTSUGI-2026].
+    - "Client transaction and sales-by-state data in a system the agent can read [TRUSS-KINTSUGI-2026]."
   risks_and_guardrails:
-    - Answers on nexus carry registration and liability consequences; the source does not describe review controls beyond a tax professional reading the output.
+    - "Answers on nexus carry registration and liability consequences; the source does not describe review controls beyond a tax professional reading the output."
   human_checkpoints:
-    - Not specified beyond the practitioner asking and reviewing [TRUSS-KINTSUGI-2026].
+    - "Not specified beyond the practitioner asking and reviewing [TRUSS-KINTSUGI-2026]."
   role_evolution: >
     Not described; the webinar is aimed at firms keeping up with changes and applying them to clients [TRUSS-KINTSUGI-2026].
   evidence_grade: C
@@ -698,7 +696,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     17 Sep 2026. No recording or results were found.
 
 - id: tax-indirect-tax-13
-  title: Compliance-by-design finance orchestration that embeds tax rules in AP, procure-to-pay and invoicing agents
+  title: "Compliance-by-design finance orchestration that embeds tax rules in AP, procure-to-pay and invoicing agents"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -722,19 +720,19 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     - lever: cost
       description: >
         Sovos cites an EY figure for end-to-end agentic finance implementations; the EY source was not opened.
-      figure: up to 40%
+      figure: "up to 40%"
       measures: >
         "cost savings" from "end-to-end agentic AI implementation", as quoted by Sovos and attributed to EY; sample and
         method unknown
       provenance: vendor-published
       source_ref: SOVOS-FLOWIE-2026
   prerequisites:
-    - Replacing or sitting on top of existing ERP landscapes [SOVOS-FLOWIE-2026].
-    - Integration of Sovos' regulatory data with the agents; the release uses forward-looking wording ("will", "will launch") [SOVOS-FLOWIE-2026].
+    - "Replacing or sitting on top of existing ERP landscapes [SOVOS-FLOWIE-2026]."
+    - "Integration of Sovos' regulatory data with the agents; the release uses forward-looking wording (\"will\", \"will launch\") [SOVOS-FLOWIE-2026]."
   risks_and_guardrails:
-    - Announced two weeks before this review; no deployment evidence. Control design for autonomous AP and invoicing agents is not described.
+    - "Announced two weeks before this review; no deployment evidence. Control design for autonomous AP and invoicing agents is not described."
   human_checkpoints:
-    - Not specified in the release.
+    - "Not specified in the release."
   role_evolution: >
     Sovos says CFOs and CIOs could retire dozens of surrounding applications [SOVOS-FLOWIE-2026]; no source describes
     effects on tax or finance staff.
@@ -747,7 +745,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     Whether this belongs in indirect-tax or in tax-data-technology is a synthesis call.
 
 - id: tax-indirect-tax-14
-  title: Tax-team-built AI data pipelines for reconciliations and notice data extraction
+  title: "Tax-team-built AI data pipelines for reconciliations and notice data extraction"
   archetype: tax
   module: indirect-tax
   function: finance-accounting
@@ -770,20 +768,20 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     - lever: speed
       description: >
         The recap says pipelines can be vibe-coded in 15 minutes that would have waited two months in an IT queue.
-      figure: 15 minutes vs two months
+      figure: "15 minutes vs two months"
       measures: >
         time to build a data integration pipeline versus time waiting in an IT queue, as an anecdote in the recap; no
         organisation, sample or measurement named
       provenance: vendor-published
       source_ref: TRINST-TEIAUDITOR-2026
   prerequisites:
-    - Data platform access and a tool-approval path; TEI attendees' polls listed the platforms in use [TRINST-TEIAUDITOR-2026].
+    - "Data platform access and a tool-approval path; TEI attendees' polls listed the platforms in use [TRINST-TEIAUDITOR-2026]."
   risks_and_guardrails:
-    - A pipeline built in minutes may be deployed without review, documentation or anyone who can maintain it; an OpenAI panelist conceded the security point when asked about vibe coding [TRINST-TEIAUDITOR-2026].
-    - Attendees described Alteryx workflows nobody could explain after the builder left [TEI-TAXTECH-2026].
-    - Silent failures: an AI agent told a user it had not been able to open the uploaded file and had been "telling you what you wanted to hear" [TEI-TAXTECH-2026].
+    - "A pipeline built in minutes may be deployed without review, documentation or anyone who can maintain it; an OpenAI panelist conceded the security point when asked about vibe coding [TRINST-TEIAUDITOR-2026]."
+    - "Attendees described Alteryx workflows nobody could explain after the builder left [TEI-TAXTECH-2026]."
+    - "Silent failures: an AI agent told a user it had not been able to open the uploaded file and had been \"telling you what you wanted to hear\" [TEI-TAXTECH-2026]."
   human_checkpoints:
-    - Human-in-the-loop was "a constant refrain" at the seminar, with concern about reviewing rising volumes of quiet, technical errors [TEI-TAXTECH-2026].
+    - "Human-in-the-loop was \"a constant refrain\" at the seminar, with concern about reviewing rising volumes of quiet, technical errors [TEI-TAXTECH-2026]."
   role_evolution: >
     The recap says the job has become as much a data-science problem as an accounting one [TRINST-TEIAUDITOR-2026]. At
     the TEI seminar two hands of more than 50 said the tax function owns AI implementation [TEI-TAXTECH-2026].
@@ -799,7 +797,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     demonstrations and attendee practice without naming a deploying indirect-tax team.
 
 - id: tax-indirect-tax-15
-  title: Plain-language configuration of tax rules, matrices and engine logic
+  title: "Plain-language configuration of tax rules, matrices and engine logic"
   archetype: tax
   module: indirect-tax
   function: technology-it
@@ -819,17 +817,17 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
     [INNOVATETAX-VXE-2026].
   outcomes:
     - lever: speed
-      description: none published
-      figure: n/a
-      measures: no figure published
+      description: "none published"
+      figure: "n/a"
+      measures: "no figure published"
       provenance: vendor-published
       source_ref: INNOVATETAX-VXE-2026
   prerequisites:
-    - A tax engine with an auditable configuration layer and the ability to reverse changes [INNOVATETAX-VXE-2026].
+    - "A tax engine with an auditable configuration layer and the ability to reverse changes [INNOVATETAX-VXE-2026]."
   risks_and_guardrails:
-    - Misconfiguration changes tax outcomes for many transactions at once; Vertex's stated mitigation is explainability, reversibility, auditability and human oversight [INNOVATETAX-VXE-2026].
+    - "Misconfiguration changes tax outcomes for many transactions at once; Vertex's stated mitigation is explainability, reversibility, auditability and human oversight [INNOVATETAX-VXE-2026]."
   human_checkpoints:
-    - A person approves configuration changes; the source says human oversight sits within the guardrails [INNOVATETAX-VXE-2026].
+    - "A person approves configuration changes; the source says human oversight sits within the guardrails [INNOVATETAX-VXE-2026]."
   role_evolution: >
     The recap says partners are investing in enablement, certification and AI-powered knowledge tools, and that the
     future tax team is hybrid across legislation, systems, process design and data flows [INNOVATETAX-VXE-2026].
@@ -876,7 +874,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
 - ONESOURCE Sales and Use Tax AI vendor claims: up to 65% less time on routine reporting; up to 75% less audit exposure; 30 to 11 days compliance cycle; $25,000 and $60,000+ annual savings [TR-SUTAI-2026].
 - Sovos France e-invoicing: 1.6% rejection rate versus an estimated 20% market-wide; 170,000 registrants; vendor claims [SOVOS-FRANCE-2026].
 - Avalara single-lookup test of a general chatbot (10.3% vs 10.2%) [AVALARA-LLMTEST-2025].
-- State agencies: of 36 responding agencies in Tax Notes' 2025 survey of 49, 22 said they used no AI, 7 used AI, 6 were interested, 3 did not say [TAXNOTES-UNWATCHED-2026].
+- State agencies: Tax Notes' 2025 survey went to 49 state and jurisdictional agencies; of 36 responding, 22 said they used no AI, 7 said they did, 6 said they were interested in AI (including some non-users) and 3 did not say [TAXNOTES-UNWATCHED-2026].
 - Tax authority speed claim: the OECD's Hanna Lee said some administrations cut VAT non-compliance investigations from about nine months to three, reported by a trade site from a June 2026 OECD conference; second-hand [SSL-OECDVAT-2026].
 - **Independent measurement of AI quality in indirect tax: none found.** No override rate, error rate, parallel run or inspection result.
 
@@ -894,7 +892,7 @@ Notes on fields. `maturity` is `announced` where the only evidence is a vendor a
 - **30 Sep 2025:** Avalara announces an agentic platform with agents that call each other and customers' agents ("Have your agent call our agent") [AVALARA-AGENTIC-2025].
 - **15 Jan 2026:** Thomson Reuters launches ONESOURCE Sales and Use Tax AI, "touchless by default, manual by exception" [TR-SUTAI-2026].
 - **24 Mar 2026:** Sovos announces error remediation and an MCP Gateway under development [SOVOS-SOVI-2026].
-- **Apr-May 2026:** Vertex Exchange Europe (Vienna) frames the shift from continuous transaction controls to "continuous audit controls" and asks whether Europe will extend mandates beyond invoices to wider transaction data, as LATAM has [INNOVATETAX-VXE-2026].
+- **Recap dated 6 May 2026:** Vertex Exchange Europe (Vienna) frames the shift from continuous transaction controls to "continuous audit controls" and asks whether Europe will extend mandates beyond invoices to wider transaction data, as LATAM has [INNOVATETAX-VXE-2026].
 - **Apr 2026:** TEI Tax Technology Seminar: panel says authorities arrive at audits with structured data already analysed; one panelist heard of companies abandoning compliance and padding numbers, and a panelist answered "Do not do this" [TRINST-TEIAUDITOR-2026].
 - **26 Feb 2026:** Hungary's tax authority audit plan says it uses AI-based models and real-time data to identify high-risk companies, even at invoice issuance [KPMGHU-AUDITPLAN-2026].
 - **Jul 2026:** the Sales Tax Institute flags agent-initiated checkout as a sales tax holiday problem [STI-AGENTIC-2026].
@@ -976,7 +974,6 @@ Access is `full` unless stated. For podcasts, "full" means the episode or show-n
 | TR-HELP-PRODCLASS | Review product classification results | Thomson Reuters | vendor | https://www.thomsonreuters.com/en-us/help/onesource-indirect-tax/indirect-tax-compliance/mappings/product-classification/review-product-classification-results | 2026-10-17 (retrieved) | full |
 | TR-AGENTICIT-2026 | Is your tax department ready for the agentic AI explosion? | Thomson Reuters Tax & Accounting | vendor | https://tax.thomsonreuters.com/blog/is-your-tax-department-ready-for-the-agentic-ai-explosion/ | 2026-06-08 | full |
 | TR-WEBINAR-JLL | Transforming indirect tax with AI (on-demand webinar with JLL) | Thomson Reuters | vendor | https://europe.thomsonreuters.com/on-demand-webinars/transforming-indirect-tax-ai | 2026-10-17 (retrieved) | full (description) |
-| TRCOMM-ECM | Using AI to transform tax: Embracing closed-loop automation for ECM | Thomson Reuters Community | vendor | https://community.thomsonreuters.com/tax-accounting/f/advisory/33178/using-ai-to-transform-tax-embracing-closed-loop-automation-for-ecm | 2025-10-17 (approximate; thread says "over 1 year ago") | full |
 | AVALARA-ECM-2026 | How AI Improves Exemption Certificate Management | Avalara | vendor | https://www.avalara.com/blog/en/north-america/2026/02/ai-exemption-certificate-management.html | 2026-02-23 | full |
 | AVALARA-LLMTEST-2025 | Why AI not backed by tax expertise can get sales tax rates wrong | Avalara | vendor | https://www.avalara.com/blog/en/north-america/2025/11/ai-tax-expertise-accurate-sales-tax-rates.html | 2025-11-20 | full |
 | FONOA-AIERA-2025 | Preparing for the Era of AI in Indirect Tax | Fonoa | vendor | https://www.fonoa.com/resources/blog/ai-era-indirect-tax-strategy | 2025-10-23 | full |
@@ -1012,7 +1009,7 @@ Notes on the coverage-only rows:
 
 ## 6. Gaps
 
-- **Community discussion not reached.** Reddit (r/taxpros and others) blocked access; TaxProTalk, LinkedIn and AccountingWEB threads were not reached. The only community-style item, a Thomson Reuters Community thread, is a vendor webinar post with no replies. No practitioner forum evidence about indirect-tax AI errors, overrides or workarounds is in this file.
+- **Community discussion not reached.** Reddit (r/taxpros and others) blocked access; TaxProTalk, LinkedIn and AccountingWEB threads were not reached. The only community-style item seen, a Thomson Reuters Community thread, was a vendor webinar post with no replies and no usable date, so it was left out. No practitioner forum evidence about indirect-tax AI errors, overrides or workarounds is in this file.
 - **Web search ran out.** The shared quota was exhausted during the task. Directions not searched: agentic commerce protocol tax handling (ACP/UCP) and Stripe/Shopify documentation; practitioner interviews on AI in VAT returns; post-launch reports on France's September 2026 e-invoicing rejections (no post-launch independent reports were found); Poland KSeF (Feb 2026) experience; Peppol and ViDA AI commentary; Anrok, Kintsugi, Zamp and Numeral claims.
 - **Primary material not reached or paywalled:** Fonoa's full survey report; Thomson Reuters Corporate Tax Department reports; Tax Notes full text; Bloomberg Tax articles beyond the opening; the OECD sources behind the "76% / 69%" enforcement figures and the "9 months to 3" claim (seen only through a trade site and search summaries, so the OECD figures are not used in any use case); vatcalc.com and Wolters Kluwer pages (bot-blocked); Avalara's 9 Apr 2026 release (404); Vertex investor and product pages; GTM Insights, ENVISION 2026 recap (blocked); KPMG UK's "From Gen AI to Agentic AI in tax" article (opened but undated, so excluded; it says about half of surveyed tax leaders at a client event use gen AI weekly and about a third daily).
 - **Podcasts and webinars:** no audio or transcript was reached; only descriptions of EY talks tax, Deloitte Tax on Air #35, the Saffery webinar and the Thomson Reuters/JLL webinar. The JLL experience is not reported in a form that can be quoted.
@@ -1020,4 +1017,4 @@ Notes on the coverage-only rows:
 - **Quality evidence.** No error rates, override rates, parallel-run results, inspection findings or independent benchmarks for AI in indirect tax. Evidence grades therefore stop at C; there are no A or B use cases. The only quantified quality items are vendor claims or single examples.
 - **Named customer deployments.** No indirect-tax team was found describing its own AI use with numbers. Companies named at vendor events (Fortnum & Mason, ASOS, Siemens Energy, Daimler Truck, Oxford Nanopore) were described using automation or tax engines, not AI-specific outcomes; JLL appears only in a webinar blurb.
 - **Under-covered areas:** non-US, non-EU, non-UK markets (India GST, Brazil's reform, Gulf VAT) beyond headlines; customs and tariff classification (routed in the landscape to a separate topic); payroll and property taxes.
-- **Date caveats:** TRCOMM-ECM has an approximate date; undated product-documentation pages carry the retrieval date; the Truss webinar year is inferred.
+- **Date caveats:** undated product-documentation pages carry the retrieval date; the Truss webinar year is inferred. A Thomson Reuters Community thread on closed-loop exemption-certificate automation (CERTifyTax with ONESOURCE) shows only "over 1 year ago" and was left out.

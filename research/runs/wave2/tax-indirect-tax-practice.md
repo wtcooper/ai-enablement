@@ -3,6 +3,7 @@
 - **Archetype:** tax. **Module:** indirect-tax (VAT, GST, US sales and use tax, e-invoicing and continuous transaction controls, marketplace and digital-services rules, agentic commerce, indirect-tax audits).
 - **Angle:** practice. What firms, vendors and in-house teams actually do.
 - **Prepared:** 2026-10-17. Method: pages opened with `curl` (text extraction, `pdftotext` for PDFs); one site (Withum) was opened only through the r.jina.ai text mirror because it blocked `curl`. Web search was used until the shared budget ran out; it ran out before the podcast and community searches (see Gaps).
+- **Prerequisites:** items marked (inferred) are not stated by a source; the rest are taken from the product descriptions.
 - **Reading convention:** every figure below carries its provenance in the YAML (`self-reported`, `vendor-published`, `independent`). Nothing in this file is `independent`.
 
 ## 1. Summary
@@ -142,7 +143,7 @@
   prerequisites:
     - Clean, complete transaction data reaching the tax engine (Deloitte says outcomes depend on data quality).
     - A tax engine or return platform with form and jurisdiction coverage and e-filing connections.
-    - Defined review and sign-off roles.
+    - Defined review and sign-off roles (TR: final review and approval).
   risks_and_guardrails:
     - Deloitte warns that poor implementation can cause filing errors and penalties, and says its Tax Transformation Trends 2025 research found 77% of surveyed tax leaders require 90% or better accuracy before trusting AI (DELOITTE-AGENTIC-2026, section 'Mitigating risk and supporting accountability').
     - Avalara states nothing is submitted without explicit human consent and that steps are logged (AVALARA-AVI-2025, section 'Agentic workflow').
@@ -158,13 +159,13 @@
     - {ref: TR-ONESOURCEPLUS-2025, title: "Thomson Reuters launches ONESOURCE+", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-onesource-plus-the-ai-powered-intelligent-compliance-network", date: "2025-11-05", access: full, locator: "product highlights, first bullet"}
     - {ref: AVALARA-AGENTIC-2025, title: "Avalara launches 'always on, always ready' AI agents", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/avalara-launches-always-on-always-ready-ai-agents", date: "2025-09-30", access: full, locator: "paragraph on Returns AI"}
     - {ref: AVALARA-AVI-2025, title: "Avalara launches Avi AI agents for secure automated tax compliance", publisher: "IT Brief UK", type: press, url: "https://itbrief.co.uk/story/avalara-launches-avi-ai-agents-for-secure-automated-tax-compliance", date: "2025-11-04", access: full, locator: "sections 'Functions and agent network' and 'Agentic workflow'"}
+    - {ref: AVALARA-AGENTIC-2025b, title: "Avalara Launches Agentic Tax and Compliance: AI Agents That Work for You", publisher: "Avalara via iTWire", type: vendor, url: "https://itwire.com/business-it-news/data/avalara-launches-agentic-tax-and-compliance-ai-agents-that-work-for-you", date: "2025-10-01", access: full, locator: "section 'Have Your Agent Call Our Agent' (VAT returns in Europe)"}
     - {ref: DELOITTE-AGENTIC-2026, title: "Agentic AI and indirect tax: a practical view for tax directors", publisher: "Deloitte Global", type: firm, url: "https://www.deloitte.com/global/en/services/tax/perspectives/agentic-ai-and-indirect-tax-practical-view-for-tax-directors.html", date: "2026-07-01", access: full, locator: "section 2 'Filing'; section 'Mitigating risk and supporting accountability'"}
   last_reviewed: "2026-10-17"
   notes: >-
     Maturity is piloting because the public evidence is early-access programmes (Avalara), proof-of-concept work
     (Deloitte) and unnamed early customers (Thomson Reuters), even though TR says its product is available now.
-    Avalara's Returns AI also covers European VAT returns per its Oct 2025 release (AVALARA-AGENTIC-2025b, section
-    'Why Avalara's Agentic Stack...'); no customer evidence found. TR figures disagree between releases (40-60% vs up to 65%).
+    Avalara's Returns AI also covers European VAT returns per its Oct 2025 release (AVALARA-AGENTIC-2025b, section 'Have Your Agent Call Our Agent'); no customer evidence found. TR figures disagree between releases (40-60% vs up to 65%).
 
 - id: tax-indirect-tax-03
   title: Full-population exemption and resale certificate validation
@@ -203,9 +204,9 @@
       provenance: vendor-published
       source_ref: NUMERAL-2026
   prerequisites:
-    - Existing certificates digitised or uploadable.
-    - Access to registries or validation sources for the jurisdictions in scope.
-    - A customer-to-certificate link in the billing or tax engine.
+    - Existing certificates digitised or uploadable (inferred).
+    - Access to registries or validation sources for the jurisdictions in scope (Avalara names authoritative registries; the rest is inferred).
+    - A link between each customer and its certificate in the billing or tax engine (inferred).
   risks_and_guardrails:
     - Certificates that fail validation indicate compliance issues that may not have been identified before (NUMERAL-2026), so findings need a remediation process, not just a report.
     - Avalara says its agents run within its security perimeter and keep checkpoints for human review (AVALARA-AVI-2025).
@@ -304,13 +305,13 @@
       source_ref: AVALARA-AVIATOR-2026
   prerequisites:
     - Historical transaction data in the engine to simulate against.
-    - Role-based approval for tax-logic changes.
+    - Role-based approval for tax-logic changes (TR Institute advice).
   risks_and_guardrails:
     - Thomson Reuters Institute advises segregation of duties and approval workflows for changes to tax logic, and versioned prompts and outputs (TR-INSTITUTE-2025, last section on controls). This is vendor-institute advice, not a reported practice.
   human_checkpoints:
     - Customer reviews and approves the drafted rule before the agent activates it (AVALARA-AVIATOR-2026).
   role_evolution: >-
-    Not described. Vertex says the aim is simpler configuration so customers can do more themselves (VERTEX-Q1CALL-2026, analyst Q&A).
+    Not described. Vertex says it sees room to simplify how customers configure tax rules and manage data updates (VERTEX-Q1CALL-2026, analyst Q&A).
   evidence_grade: C
   sources:
     - {ref: AVALARA-AVIATOR-2026, title: "Avalara Ushers in New Era of Agentic Tax and Compliance with Avalara Aviator", publisher: "Avalara via iTWire", type: vendor, url: "https://itwire.com/guest-articles/company-news/avalara-ushers-in-new-era-of-agentic-tax-and-compliance-with-avalara-aviator", date: "2026-09-23", access: full, locator: "paragraph beginning 'For example, a customer can describe a needed tax rule...'"}
@@ -351,8 +352,8 @@
       provenance: vendor-published
       source_ref: SOVOS-FRANCE-2026b
   prerequisites:
-    - Certified connection to the government platform or accredited platform and format validation.
-    - Access to the upstream transaction data and master data that cause errors.
+    - Certified connection to the government platform or accredited platform, and format validation (inferred from Sovos's PA status and format-validation remarks).
+    - Access to the upstream transaction data and master data that cause errors (stated as the goal in the Blue dot release).
   risks_and_guardrails:
     - Sovos says the AI is built within its security perimeter, customer data is not used to train external models, and workflows are designed with human oversight and auditability (SOVOS-SOVI-2026).
     - Sovos describes French penalties for late submission beginning at 10% of VAT due, rising to 40% for repeat non-compliance and up to 80% for fraud, and per-invoice penalties capped at 25% (SOVOS-FRANCE-2026). This is the vendor's summary of the law.
@@ -401,8 +402,8 @@
       provenance: vendor-published
       source_ref: FONOA-MONITORING-2026
   prerequisites:
-    - A profile of the entities, jurisdictions and tax types in scope.
-    - Access to primary legal sources (gazettes, directives) in their languages.
+    - A profile of the entities, jurisdictions and tax types in scope (Fonoa: monitoring filtered to the company's profile).
+    - Access to primary legal sources (gazettes, directives) in their languages (Fonoa).
   risks_and_guardrails:
     - Fonoa says summaries are a reading of the law, not the law, and cannot be relied on alone in an audit (FONOA-CITATION-2026).
     - Fonoa reports a confidence score on each alert and says uncertainty is disclosed (FONOA-CITATION-2026). No accuracy of those scores is published.
@@ -490,7 +491,7 @@
       provenance: vendor-published
       source_ref: TR-BUSINESSCASE-2026
   prerequisites:
-    - Consolidated, reasonably clean tax data across entities and periods.
+    - Consolidated tax data across entities and periods (inferred).
   risks_and_guardrails:
     - Thomson Reuters Institute recommends regular sampling of AI decisions with documented findings (TR-INSTITUTE-2025, controls paragraph). The example in TR-BUSINESSCASE-2026 is illustrative.
   human_checkpoints:
@@ -579,8 +580,8 @@
       provenance: vendor-published
       source_ref: NUMERAL-2026
   prerequisites:
-    - Sales and transaction data by state or country in near-real time.
-    - Authority integrations or the vendor's filing channels.
+    - Sales and transaction data by state or country, current enough to track thresholds (inferred).
+    - Authority integrations or the vendor's filing channels (inferred).
   risks_and_guardrails:
     - TaxCloud notes a few stray orders from a new channel can push a seller past a state's nexus threshold (TAXCLOUD-2025, section 'AI is simply the next test'), which is the risk this use case addresses.
   human_checkpoints:
@@ -623,7 +624,7 @@
       provenance: vendor-published
       source_ref: AVALARA-AVI-2025
   prerequisites:
-    - Notices received in a channel the agent can read (mail, portal, inbox integration).
+    - Notices received in a channel the agent can read (inferred).
   risks_and_guardrails:
     - Avalara says agents run inside its existing security perimeter with audit trails (AVALARA-AVI-2025).
   human_checkpoints:
@@ -663,8 +664,8 @@
       provenance: vendor-published
       source_ref: FONOA-2026
   prerequisites:
-    - Actions and decisions captured in the workflow at the time they occur.
-    - Access to invoices, contracts and customs records.
+    - Actions and decisions captured in the workflow at the time they occur (Deloitte).
+    - Access to invoices, contracts and customs records (Deloitte).
   risks_and_guardrails:
     - Fonoa's survey found the strongest predictor of audit confidence was whether a defined process sat behind the output, not the tool; only about a third run formal human-in-the-loop review (FONOA-2026, section 'Why AI governance matters more than the AI model you choose').
     - A BDO indirect-tax partner is quoted: you are not defending a technology, you are demonstrating a process (FONOA-2026).
@@ -711,7 +712,7 @@
       provenance: vendor-published
       source_ref: VERTEX-Q1CALL-2026
   prerequisites:
-    - Local clearance connectivity and certification.
+    - Local clearance connectivity and certification (inferred).
   risks_and_guardrails:
     - Vertex says in regions like Latin America accuracy, auditability and regulatory evidence are non-negotiable (VERTEX-Q1CALL-2026, CEO remarks on Brinta).
   human_checkpoints:
@@ -803,8 +804,8 @@
       provenance: vendor-published
       source_ref: STI-AGENTIC-2026
   prerequisites:
-    - A current inventory of channels, including AI assistants, through which sales can occur.
-    - Machine-readable catalogue data and tax-engine rules.
+    - A current inventory of channels, including AI assistants, through which sales can occur (inferred).
+    - Machine-readable catalogue data and tax-engine rules (Sales Tax Institute's recommended checks).
   risks_and_guardrails:
     - Bloomberg Tax commentary says the answer depends on how existing marketplace rules apply; AI systems have no legal personality, so the company operating the agent may have to collect tax (BTAX-AGENTICCOMMERCE-2026).
     - Sales Tax Institute notes that most agentic commerce models rely on the merchant's existing tax determination systems, and that agents can accelerate errors if configurations are stale (STI-AGENTIC-2026).
@@ -898,8 +899,10 @@
       measures: Growth in Taxually's active clients, per its own Oct 2026 post; period and base not stated.
       provenance: vendor-published
       source_ref: TAXUALLY-2026
-    - lever: cost
-      description: In-house local return preparation fell between KPMG's 2021 and 2026 surveys while co-sourced and outsourced models grew.
+    - lever: capacity
+      description: >-
+        Adjacent measure, not an AI outcome: in-house local return preparation fell between KPMG's 2021 and 2026
+        surveys while co-sourced and outsourced models grew.
       figure: "44% to about 23% prepared locally"
       measures: >-
         Share of surveyed organizations that prepare VAT/GST returns locally in-house (2021 survey vs 2026 survey);
@@ -1003,7 +1006,7 @@
       provenance: self-reported
       source_ref: DELOITTE-AGENTIC-2026
   prerequisites:
-    - Consolidated transaction and customer data with product mapping.
+    - Consolidated transaction and customer data with product mapping (inferred).
   risks_and_guardrails:
     - Deloitte calls its examples "illustrative" and says tax professionals stay responsible for decisions (DELOITTE-AGENTIC-2026, section 3 and the introduction to 'Mitigating risk').
   human_checkpoints:
@@ -1063,8 +1066,8 @@
 - Sovos: Compliance Network GA 2 Jun 2026; Blue dot (15 Sep 2026) and Flowie (1 Oct 2026) acquisitions move it toward agent-run finance processes (SOVOS-CN-2026, SOVOS-BLUEDOT-2026, SOVOS-FLOWIE-2026).
 - Vertex: Smart Categorization in production; Brinta acquired in Q1 2026; ERP agents (a Microsoft one announced); cost reduction in force announced alongside the AI roadmap (VERTEX-Q1CALL-2026). Vertex also says it expects e-invoicing revenue to ramp after French mandates and again in 2027 when German mandates come online.
 - Funding: Numeral raised $100M Series C on 23 Sep 2026 (NUMERAL-2026).
-- Regulators: France mandate live 1 Sep 2026; Fonoa reports Spain published B2B e-invoicing dates (5 Oct 2026), the Netherlands confirmed plans (28 Sep 2026), Bulgaria proposed mandatory structured e-invoicing from 2028 (9 Oct 2026) (Fonoa blog index, seen 17 Oct 2026; headlines only).
-- Agentic commerce: Google's Universal Commerce Protocol and OpenAI/Stripe's Agentic Commerce Protocol are referenced by Sales Tax Institute; Visa, Mastercard and American Express announced agentic commerce initiatives as of April 2026 (STI-AGENTIC-2026).
+- Regulators: France mandate live 1 Sep 2026; Fonoa reports Spain published B2B e-invoicing dates (5 Oct 2026), the Netherlands confirmed plans (28 Sep 2026), Bulgaria proposed mandatory structured e-invoicing from 2028 (9 Oct 2026) (FONOA-BLOG-2026, headlines only, seen 17 Oct 2026).
+- Agentic commerce: Google's Universal Commerce Protocol and ChatGPT's Agentic Commerce Protocol (which TaxCloud attributes to Stripe) are referenced by Sales Tax Institute and TaxCloud; Visa, Mastercard and American Express announced agentic commerce initiatives as of April 2026 (STI-AGENTIC-2026).
 - Tax authorities: the OECD Global Forum on VAT met in Paris on 26-29 Jan 2026 and discussed crypto-assets and AI (search-only, OECD-GFVAT-2026). South Carolina's DOR is adding AI audit selection to GenTax in 2026 (see Routed).
 
 ### Workforce and role effects
@@ -1131,6 +1134,7 @@ Access is `full` unless noted. Types follow the controlled vocabulary. "Via mirr
 | FONOA-CITATION-2026 | Why Primary Source Citation Matters for Tax Audit Defense | Fonoa | vendor | https://www.fonoa.com/resources/blog/primary-source-tax-law-citation-audit | 2026-09-21 | full |
 | FONOA-MONITORING-2026 | Why Manual Indirect Tax Regulatory Change Monitoring No Longer Scales | Fonoa | vendor | https://www.fonoa.com/resources/blog/indirect-tax-regulatory-change-monitoring | 2026-09-16 | full |
 | FONOA-AIERA-2025 | Preparing for the Era of AI if You Manage Indirect Tax | Fonoa | vendor | https://www.fonoa.com/resources/blog/ai-era-indirect-tax-strategy | 2025-11-19 | full |
+| FONOA-BLOG-2026 | Fonoa blog index (regulatory updates, Oct 2026 headlines) | Fonoa | vendor | https://www.fonoa.com/resources/blog | 2026-10-09 (latest item listed) | full (index page only) |
 | EU-VIDA-2024 | EU Member States Approve the VAT in the Digital Age (ViDA) Package | Fonoa | vendor | https://www.fonoa.com/resources/blog/eu-member-states-approve-vat-in-the-digital-age-vida-package | 2024-11-05 | full |
 | EC-VIDA-2026 | VAT in the Digital Age (ViDA) | European Commission, DG TAXUD | regulator | https://taxation-customs.ec.europa.eu/taxation/vat/vat-digital-age-vida_en | 2026-05-20 (page lists items to 2026-07-28) | full |
 | KPMG-INDIRECT-2026 | Benchmarking Indirect Tax in a data-driven era (2026 KPMG Indirect Tax Benchmarking Survey) | KPMG International | survey | https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/05/benchmarking-indirect-tax-in-a-data-driven-era.pdf.coredownload.inline.pdf | 2026-05 | full |
@@ -1152,7 +1156,7 @@ Access is `full` unless noted. Types follow the controlled vocabulary. "Via mirr
 | POSTCOURIER-SCDOR-2026 | SC using Artificial Intelligence to determine who to audit | The Post and Courier | press | https://www.postandcourier.com/news/sc-taxes-artificial-intelligence-audits-fast-scdor/article_54662d56-ae30-4130-845a-366547409477.html | 2026-04 (month of the Kogod summary) | search-only (blocked) |
 | KINTSUGI-2026 | Kintsugi Sales Tax Monthly: March 2026 | Kintsugi | vendor | https://trykintsugi.com/blog/kintsugi-sales-tax-monthly-march-2026.md | 2026-03 | search-only (page returned 404 to curl) |
 
-**Counts.** 42 sources opened (access full) and 4 search-only. By type, opened: vendor 24, survey 4, firm 5, press 4, conference 1, regulator 1, job-posting 3. Search-only: vendor 2, regulator 1, press 1. No professional-body, academic or podcast source was reached.
+**Counts.** 43 sources opened (access full) and 4 search-only. By type, opened: vendor 25, survey 4, firm 5, press 4, conference 1, regulator 1, job-posting 3. Search-only: vendor 2, regulator 1, press 1. No professional-body, academic or podcast source was reached.
 
 ## 6. Gaps
 
