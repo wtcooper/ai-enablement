@@ -325,7 +325,7 @@
     - { ref: BDO-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "'recurring gaps' list" }
     - { ref: AIBIDIA-WEBINAR-2026, title: "AI in Transfer Pricing: What's Working, What's Not, and What's Next", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/blog/ai-in-transfer-pricing-whats-working-whats-not-and-whats-next", date: 2026-06-25, access: full, locator: "section 'Comparable searches and benchmarking'" }
   last_reviewed: 2026-10-17
-  notes: No named customer, accuracy test or tax-authority outcome found for any AI comparables tool. Search-only items not used as outcomes - an '80% time saving' claim on a G2 listing for ArmsLength AI, and a KPMG US patent for an AI comparables tool (Feb 2024, via a syndicated release). The ABA May 2026 panel agenda lists AI-driven benchmarking tools that identify comparables as a topic (ABA-MAYMTG-2026, p. 34). Aibidia sells expert-run benchmarking studies 'in days, not weeks' (AIBIDIA-BENCH page), which is a service model, not AI.
+  notes: No named customer, accuracy test or tax-authority outcome found for any AI comparables tool. Search-only items not used as outcomes - an '80% time saving' claim on a G2 listing for ArmsLength AI, and a KPMG US patent for an AI comparables tool (Feb 2024, via a syndicated release). The ABA May 2026 panel agenda lists AI-driven benchmarking tools that identify comparables as a topic (ABA-MAYMTG-2026, p. 34). Aibidia sells expert-run benchmarking studies 'in days, not weeks' (AIBIDIA-BENCH-2026), which is a service model, not AI.
 
 - id: tax-transfer-pricing-08
   title: First-draft intercompany agreements generated from the TP policy
@@ -389,7 +389,7 @@
   risks_and_guardrails:
     - Speakers at the same conference were reported as unanimous that AI enhances expertise but does not replace it, and that data quality, governance and human oversight remain fundamental (AIBIDIA-TPMINDS-2026).
   human_checkpoints:
-    - Humans review the draft agreements the workflow produces (AIBIDIA-TPMINDS-2026, implied by 'draft')
+    - Not stated in the source
   role_evolution: Not reported.
   evidence_grade: C
   sources:
@@ -459,14 +459,15 @@
     - The vendor says the goal is not autonomous AI making unsupported decisions (AIBIDIA-LEADERS-2026).
     - Announced product, not yet released at the time of the release (AIBIDIA-TPINTEL-2026).
   human_checkpoints:
-    - Controller, reviewer or auditor follows each flag to its source (AIBIDIA-TPINTEL-2026 home-page language on the vendor site)
+    - Reviewer follows each flag back to its source evidence; the vendor says insights trace to original evidence (AIBIDIA-LEADERS-2026)
   role_evolution: The vendor frames the shift as moving TP teams from completing tasks to controlling outcomes (AIBIDIA-TPINTEL-2026).
   evidence_grade: C
   sources:
     - { ref: AIBIDIA-TPINTEL-2026, title: "Aibidia introduces TP Intelligence, a new AI system of intelligence for transfer pricing", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/news/aibidia-introduces-tp-intelligence-a-new-ai-system-of-intelligence-for-transfer-pricing", date: 2026-10-15, access: full, locator: "paragraphs 3-9 (release text; launch planned December 2026)" }
     - { ref: AIBIDIA-LEADERS-2026, title: "From information to intelligence: What senior TP leaders say must change", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/blog/from-information-to-intelligence-what-senior-tp-leaders-say-must-change", date: 2026-09-23, access: full, locator: "section 5 (Helsinki demonstration)" }
+    - { ref: AIBIDIA-HOME-2026, title: "Aibidia home page", publisher: Aibidia, type: vendor, url: "https://www.aibidia.com/", date: 2026-10-17, access: full, locator: "'Trusted by tax & transfer pricing teams at' strip; page undated, retrieved 2026-10-17" }
   last_reviewed: 2026-10-17
-  notes: Announced two days before this scan. The same vendor lists Nokia, Fujifilm, Symrise, Xebia, HMD and Phoenix Group on its home page as customers of the platform; none is shown using TP Intelligence.
+  notes: Announced two days before this scan. The vendor's home page lists Nokia, Fujifilm, Symrise, Xebia, HMD and Phoenix Group as teams that trust the platform (AIBIDIA-HOME-2026); none is shown using TP Intelligence.
 
 - id: tax-transfer-pricing-12
   title: Audit defence: drafting and stress-testing responses to tax-authority queries
@@ -496,7 +497,7 @@
     - BDO Canada warns that gaps in AI-assisted documentation can surface once the tax authority asks deeper questions (BDO-2026).
   human_checkpoints:
     - Accountable professional approves the submission
-  role_evolution: Participants at vendor events said they pay advisors mainly for external validation and risk absorption while doing much of the analysis themselves (AIBIDIA-LEADERS-2026).
+  role_evolution: At a vendor-hosted London event, some in-house professionals said they still do much of the analysis while paying advisors mainly for external validation and risk absorption (AIBIDIA-LEADERS-2026).
   evidence_grade: C
   sources:
     - { ref: AIBIDIA-LEADERS-2026, title: "From information to intelligence: What senior TP leaders say must change", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/blog/from-information-to-intelligence-what-senior-tp-leaders-say-must-change", date: 2026-09-23, access: full, locator: "section 4 task list and section 1" }
@@ -632,9 +633,9 @@
     - lever: cost
       description: Commenda contrasts its fixed prices and delivery time with a traditional-advisor figure, without a source for the latter.
       figure: "about 4 weeks and about USD 9,000 for a first set (vendor), versus USD 60K and six months for traditional advisors (vendor claim)"
-      measures: "Vendor price list and marketing comparison; no customer or independent comparison cited"
+      measures: "Vendor price list (COMMENDA-2026) and marketing comparison (COMMENDA-TP-2026); no customer or independent comparison cited"
       provenance: vendor-published
-      source_ref: COMMENDA-2026
+      source_ref: COMMENDA-TP-2026
   prerequisites:
     - ERP integration and entity data (COMMENDA-2026)
   risks_and_guardrails:
@@ -644,7 +645,8 @@
   role_evolution: Vendor survey: hybrid resourcing is the most common model, with 53% combining substantial internal capability with external support, up from 38% in 2024 (AIBIDIA-LEADERS-2026). BIP and Aibidia state the model aims to maintain central control without expanding internal headcount (AIBIDIA-BIP-2026).
   evidence_grade: C
   sources:
-    - { ref: COMMENDA-2026, title: "Commenda vs Aibidia for Transfer Pricing (2026)", publisher: Commenda, type: vendor, url: "https://www.commenda.io/transfer-pricing/commenda-vs-aibidia", date: 2026-06, access: full, locator: "pricing block and FAQ; Commenda's own TP page also states four weeks versus six months" }
+    - { ref: COMMENDA-2026, title: "Commenda vs Aibidia for Transfer Pricing (2026)", publisher: Commenda, type: vendor, url: "https://www.commenda.io/transfer-pricing/commenda-vs-aibidia", date: 2026-06, access: full, locator: "pricing block and FAQ" }
+    - { ref: COMMENDA-TP-2026, title: "Commenda transfer pricing page", publisher: Commenda, type: vendor, url: "https://www.commenda.io/transfer-pricing", date: 2026-10-17, access: full, locator: "sentence contrasting USD 60K and six months with four weeks; page undated, retrieved 2026-10-17" }
     - { ref: AIBIDIA-BIP-2026, title: "Redefining Transfer Pricing Delivery Models: Driving Innovation and Efficiency", publisher: Aibidia / BIP Law & Tax, type: vendor, url: "https://www.aibidia.com/news/redefining-transfer-pricing-delivery-models-driving-innovation-and-efficiency-across-the-transfer-pricing-landscape", date: 2026-02-26, access: full, locator: "paragraphs 1-7" }
     - { ref: AIBIDIA-LEADERS-2026, title: "From information to intelligence: What senior TP leaders say must change", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/blog/from-information-to-intelligence-what-senior-tp-leaders-say-must-change", date: 2026-09-23, access: full, locator: "section 1" }
   last_reviewed: 2026-10-17
@@ -738,7 +740,7 @@
 
 **Common pain points**
 - Data: 79% spend more than 10% of TP time sourcing and reconciling data, 21% spend at least half, nearly half work across four or more ERP or reporting systems (AIBIDIA-LEADERS-2026, vendor survey). Only 14% draw data from a single ERP (AIBIDIA-SOTP-2026).
-- Operational gap: 38% describe operational TP as well defined, 60% rely primarily on Excel/email, 7% monitor monthly, half report moderately or very significant year-end adjustments (AIBIDIA-LEADERS-2026). The 2025 edition said 35% had a well-defined OTP process and 24% none (AIBIDIA-SOTP-2025 page text, via the report landing page).
+- Operational gap: 38% describe operational TP as well defined, 60% rely primarily on Excel/email, 7% monitor monthly, half report moderately or very significant year-end adjustments (AIBIDIA-LEADERS-2026). The 2025 edition said 35% had a well-defined OTP process (AIBIDIA-PRIORITIES-2026) and 24% had none (AIBIDIA-SOTP-2026, 2025-edition summary on the report page).
 - Resources: 63% have three or fewer dedicated TP professionals while 58% operate in more than 30 jurisdictions (AIBIDIA-LEADERS-2026).
 - Audit pressure: three in four expect disputes to increase (AIBIDIA-PRIORITIES-2026); audit response cost and hours rose (AIBIDIA-SOTP-2025).
 - Local documentation: Trivium described up to six weeks for one local file and 3-4 review rounds (AIBIDIA-TRIVIUM-2026).
@@ -770,7 +772,7 @@
 
 **Workforce and role effects**
 - Job postings (Twilio, Adobe, dsm-firmenich) now list AI tool use in TP roles (JOB-TWILIO-2026; JOB-ADOBE-2026; JOB-DSM-2026). The Workday senior analyst posting (2025-04-11) asks for automation of TP data flow, not AI (JOB-WORKDAY-2025).
-- Team structures seen: KPMG Germany has a Center of Excellence for Transfer Pricing Innovation & Technology (KPMG-KITP-2026, author footer); the BIP and Aibidia task force mixes TP specialists, data engineers and technology experts (AIBIDIA-BIP-2026); Aibidia's professional-services team includes ex-Big Four and ex-in-house OTP staff (AIBIDIA-OTPBLOG-2026; AIBIDIA-MANUAL-2026). Aibidia is the source of all three non-KPMG items.
+- Team structures seen: KPMG Germany has a Center of Excellence for Transfer Pricing Innovation & Technology (KPMG-KITP-2026, author footer); the BIP and Aibidia task force mixes TP specialists, data engineers and technology experts (AIBIDIA-BIP-2026); Aibidia's professional-services team includes ex-Big Four and ex-in-house OTP staff (AIBIDIA-OTPBLOG-2026; AIBIDIA-MANUAL-2026). Both of these structure examples come from Aibidia.
 - Speakers say AI makes expert judgment and accountability more important, not less (AIBIDIA-WEBINAR-2026).
 - Sourcing shifts toward in-house ownership of recurring work (use case 17).
 
@@ -833,6 +835,9 @@ Access is `full` unless marked search-only. Types follow the controlled list.
 | AIBIDIA-TPMINDS-2026 | TPMinds International 2026: Five Strategic Shifts | Aibidia | vendor | https://www.aibidia.com/blog/tpminds-international-2026-five-strategic-shifts-in-transfer-pricing | 2026-06-30 | full |
 | AIBIDIA-BIP-2026 | Redefining Transfer Pricing Delivery Models (BIP Law & Tax partnership) | Aibidia / BIP | vendor | https://www.aibidia.com/news/redefining-transfer-pricing-delivery-models-driving-innovation-and-efficiency-across-the-transfer-pricing-landscape | 2026-02-26 | full |
 | AIBIDIA-OECD-2026 | OECD Proposes Revisions of Intra-group Services Guidance | Aibidia | vendor | https://www.aibidia.com/blog/oecd-proposes-revisions-of-intra-group-services-guidance | 2026-08-21 | full |
+| AIBIDIA-HOME-2026 | Aibidia home page | Aibidia | vendor | https://www.aibidia.com/ | 2026-10-17 (retrieved; undated) | full |
+| AIBIDIA-BENCH-2026 | Transfer Pricing Benchmarking Studies | Aibidia | vendor | https://www.aibidia.com/use-cases/benchmarking-studies | 2026-10-17 (retrieved; undated) | full |
+| COMMENDA-TP-2026 | Commenda transfer pricing page | Commenda | vendor | https://www.commenda.io/transfer-pricing | 2026-10-17 (retrieved; undated) | full |
 | AIBIDIA-SERIESB-2025 | Aibidia raises $28M Series B | Aibidia | vendor | https://www.aibidia.com/news/aibidia-raises-28m-usd-series-b-to-expand-ai-powered-financial-tax-technology-in-the-us | 2025-06-04 | full |
 | EXACTERA-2025 | AI is transforming transfer pricing (sponsored) | The Tax Adviser (AICPA) / Exactera | vendor | https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/ | 2025-08-31 | full |
 | ROYALTYRANGE-2026 | Accelerating Transfer Pricing Benchmarking with AI | RoyaltyRange | vendor | https://www.royaltyrange.com/news/accelerating-transfer-pricing-benchmarking-with-ai/ | 2026-07-28 | full |
