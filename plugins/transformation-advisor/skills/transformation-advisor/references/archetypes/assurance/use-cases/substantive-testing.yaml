@@ -21,9 +21,9 @@
     Testing the appropriateness of journal entries is a required fraud response under ISA 240 (Revised),
     paragraphs 47-48, and responds to the risk that management overrides controls. Teams filter very large
     ledgers with rules such as posting times or values, which can miss subtler patterns and flood the team with
-    false positives: in one research benchmark a rules-based journal-entry test flagged 942 false positives on
-    5,000 posting IDs. Large general ledgers held across many Excel files make sampling, searching and
-    navigating slow (Buzzacott).
+    false positives: in one research benchmark on a synthetic, tax-related ledger a rules-based journal-entry
+    test flagged 942 false positives on 5,000 posting IDs (ARXIV-AUDITCOPILOT-2025). Large general ledgers held
+    across many Excel files make sampling, searching and navigating slow (BUZZACOTT-PRIME-2025).
   solution: >-
     A tool scores every entry in the general ledger with machine-learning and statistical models, often run
     alongside rules-based routines, and shows which features made an item unusual. Auditors drill down by
@@ -54,10 +54,10 @@
       provenance: self-reported
       source_ref: EY-CANVAS-2026
   prerequisites:
-    - "A complete general-ledger extract reconciled to the trial balance and loaded in one place (BUZZACOTT-PRIME-2025)"
+    - "General ledgers loaded into the tool in one place rather than across multiple Excel files (BUZZACOTT-PRIME-2025)"
     - "Ledger data with date, time, poster, description, value and account references (FRC-AIAUDIT-2025, p.11)"
     - "Methodology and technology teams build the tool together; certification before use; version control so only the latest approved version runs (FRC-AIAUDIT-2025, pp.10-11)"
-    - "A technical committee or equivalent that owns standards mapping, methodology and policy (BUZZACOTT-PRIME-2025)"
+    - "A technical committee involved from initial research through implementation, plus a dedicated project team (BUZZACOTT-PRIME-2025)"
     - "Access to client systems and usable client data: 60% of surveyed US firms name poor client data and 53% lack of system access among top blockers (CPACOM-ATR-2025)"
   risks_and_guardrails:
     - "31% of IFIAR members reported findings that a tool was not used as intended in 2024 (29% in 2023); the most common were misreading results and thin testing of outliers (IFIAR-TTF-2025, pp.5-6)"
@@ -71,7 +71,7 @@
     - "Team decides whether use criteria are met (data quality sufficient; fraud risk not already reduced to an acceptably low level by other procedures) and documents it (FRC-AIAUDIT-2025, p.11)"
     - "Auditor sets control-point weightings and decides how scored results are applied (BUZZACOTT-PRIME-2025)"
     - "Team follows up each high-risk item, considers why it was flagged and stays alert to signs that the tool is systematically flawed for the engagement (FRC-AIAUDIT-2025, p.11)"
-    - "Auditor decides what is a misstatement (IAASB-ED500-2026, EM para 64)"
+    - "Auditor investigates items that are unusual for the population, as they may indicate a possible misstatement (IAASB-ED500-2026, EM para 64)"
   role_evolution: >-
     RSM Australia describes the role moving from selecting samples to investigating and understanding
     exceptions, so quality depends on how exceptions are triaged (RSM-AUS-2026). In the FRC example, central

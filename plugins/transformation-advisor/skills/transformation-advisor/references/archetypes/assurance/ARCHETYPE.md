@@ -1,0 +1,99 @@
+# Assurance (archetype)
+
+Last researched 2026-10-17. This is the index for the assurance archetype. Read it once onboarding points to assurance,
+then load only the module and archetype files the conversation needs. Source keys in brackets resolve in
+[sources.md](sources.md).
+
+## What it covers
+
+External audit and other assurance: audits of financial statements and of internal control over financial reporting
+(ICFR, including SOX 404 integrated audits), SOC and other attestation, sustainability assurance, and assurance over AI
+systems. What the client buys is an independent opinion or conclusion that others rely on. It is given under
+professional standards and independence rules, and an audit regulator or peer reviewer can re-examine it.
+
+## Who it serves
+
+- **Firms of every size:** the Big Four networks, mid-tier and private-equity-backed firms, small practices, and
+  AI-native entrants. Their starting points differ sharply (see [state-of-ai.md](state-of-ai.md)).
+- **In-house internal audit and SOX teams.** Their controls testing, risk assessment and reporting overlap with
+  external audit, and in controls testing they are often further along with agents than external auditors.
+- **Typical users:** engagement and practice partners, managing partners, innovation or digital audit leaders,
+  quality and risk partners, SOC and sustainability practice leads, chief audit executives (CAEs) and SOX leads.
+
+## What it extends
+
+It extends **professional-services**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
+billing and knowledge management all still apply. Assurance changes four things. Auditing standards (ISA, PCAOB,
+AICPA, ISSA 5000) set the steps of the value chain. Independence rules limit which services, vendors and owners are
+allowed. Inspectors or peer reviewers re-examine the work. And the human auditor stays accountable for the opinion
+whatever tools are used [FRC-NEWS-2026; NFRA-CAALLEY-2026; JOFA-AIPA-2026].
+
+## Recognition cues
+
+Match on what is delivered, to whom and who regulates it, not on job titles. Cues that point to assurance:
+- "We audit ...", "sign the opinion", "year-end", "busy season", "fieldwork", "the file", "workpapers", "PBC list".
+- Inspections, findings, peer review, PCAOB, FRC or "the regulator pulled one of our files".
+- Engagement partner, EQR, independence clearance, partner rotation, audit committee reporting.
+- SOX testing, ITGCs, walkthroughs, the RCM, deficiencies or a material weakness (external or internal).
+- SOC 1 or SOC 2 reports, Type 2, Section 3, Trust Services Criteria, bridge letters.
+- Limited assurance on ESG or CSRD reports, ISSA 5000, GHG verification.
+- Certifying or attesting AI systems: ISO/IEC 42001, AIUC-1, an ISAE 3000 opinion on AI governance.
+- From a CAE: the audit universe, the annual plan, three lines, co-sourcing, reporting to the audit committee.
+
+Not assurance: tax compliance and provision (tax); consulting or advisory work with no opinion (professional-services);
+finance teams that prepare statements or sustainability reports (only the effect on assurance belongs here).
+
+## Modules
+
+**Evidence** reflects each module's share of use cases graded A or B, plus how much named practice stands behind it.
+**Use thin modules for risk awareness and interview probes, not as proof points.** Quote their examples as ideas or
+early signals, and say plainly that no named firm has published a measured result.
+
+| Module | What it covers | Evidence |
+|---|---|---|
+| [acceptance-independence](modules/acceptance-independence.md) | Taking on and keeping clients, and proving independence. AI inside the checks is vendor-described; AI-driven structural change (private equity, alternative practice structures, AI vendor ties) is where the activity is | thin |
+| [planning-risk-assessment](modules/planning-risk-assessment.md) | Understanding the entity and its own AI, risk assessment, fraud, materiality, scoping, budgets. AI drafts; a person concludes | moderate |
+| [controls-testing](modules/controls-testing.md) | Walkthroughs, ITGCs, operating-effectiveness tests and deficiencies across ICFR, SOX and SOC work. Internal audit leads on agents | strong |
+| [substantive-testing](modules/substantive-testing.md) | Journal-entry and fraud testing, evidence matching, confirmations, analytics, contracts, estimates | strong |
+| [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input | thin |
+| [completion-reporting](modules/completion-reporting.md) | Disclosure checklists, tie-out, going concern, EQR, KAMs and CAMs, audit committee communications, the opinion | thin |
+| [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output | moderate |
+| [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns | strong |
+| [sustainability-assurance](modules/sustainability-assurance.md) | ISSA 5000, CSRD limited assurance, GHG engagements; almost no AI evidence from assurance providers | thin |
+| [assurance-over-ai](modules/assurance-over-ai.md) | Auditing an entity's AI used in ICFR, and standalone assurance over AI systems | moderate |
+
+Data and evidence acquisition (getting client data into the file) has no module; it sits in
+[value-chain.md](value-chain.md) §4.
+
+## Journey-stage markers (assurance)
+
+Stage names and "ready when" gates follow `method/onboarding.md` §5; these are the field-specific versions. Place each
+scope (team, practice, firm) by markers you can see or count, not by self-rating.
+
+| Stage | Markers in an assurance firm or internal audit team | Ready for the next stage when |
+|---|---|---|
+| **Curious** | No documented transformation plan (75% of 54 US firms surveyed) [CPACOM-ATR-2025]; individual chat use for memos and research; no tool inventory or certification; policy is a ban, or silent on client data | An acceptable-use rule covers client data and confidentiality; named people use AI weekly on real, non-confidential work; one quick win shown to peers |
+| **Experimenting** | Enterprise assistant or guidance copilot under a policy [CAQ-RSM-2026]; point tools on some engagements (confirmations, foot-and-proof, trial-balance import) [CPACOM-ATR-2025]; GenAI for drafting more than testing; AI use not visible on the file | One workflow (for example evidence matching, a disclosure checklist or a defined control set) has an owner, a baseline (hours per selection or control, review notes), a written human control point and a certified tool |
+| **Adopting** | Tools certified per use case and recertified when the model changes [FRC-GENAI-2026; IFIAR-TTF-2026]; control points written into methodology; tool, version and use recorded on the file [FRC-AIAUDIT-2025]; defined engagement types run the tool by default; reviewers trained on AI output; AI use explained to audit committees | Two or more workflows in production; the second reused the first's data connection or review checklist; tool use and quality impact monitored in one place; a named owner for AI in the practice |
+| **Scaling** | Agents across audit phases on a shared platform [EY-CANVAS-2026; DELOITTE-OMNIA-2026]; network and member-firm monitoring with clear ownership [IFIAR-TTF-2026]; client data arrives through standard connectors; staffing tied to AI capacity; active regulator dialogue (sandbox, comment letters) | Value shows in engagement margin or coverage, and leaders are asking about pricing, new services and the staffing model |
+| **AI-native** | Methodology built around whole populations with follow-up by exception [KPMG-SOX-2026]; fee model or service changed by AI (continuous or subscription assurance, assurance over AI); firms built AI-first [REPODO-2026; MODUS-2026] | Re-diagnose at each review. No firm has yet published a measured cost or quality advantage, so treat AI-native claims with scepticism |
+
+**Delegation.** Plan delegated (agentic) work only at Adopting or later, behind the five gates in onboarding §5. In
+assurance the reference case is an agent testing a defined control set in shadow mode under reviewer sign-off, with
+override rates tracked (controls-testing `#05`). Regulators expect named owners for each decision checkpoint
+[IFIAR-TTF-2026].
+
+## Files in this archetype
+
+| File | Read when | What it gives you |
+|---|---|---|
+| [interview-guide.md](interview-guide.md) | Onboarding, and on entering each phase | Field-specific profile questions, boundary probes, phase questions, vocabulary to mirror |
+| [value-chain.md](value-chain.md) | Map; choosing focus modules; unit breakdown | Stages, processes and key steps with work types, linked to modules; the data-acquisition layer |
+| [economics.md](economics.md) | Frame; Make the case; any talk of fees, margins or budgets | Revenue, fee benchmarks, pricing models, cost structure, capital, AI pricing pressure |
+| [state-of-ai.md](state-of-ai.md) | Onboarding (evidence early); Frame | Measured adoption, firm platforms, maturity tiers, what is measured versus announced |
+| [frontier.md](frontier.md) | Frame (why now); Reimagine lens 4; Plan dates | Dated signals for the next 12-36 months and what each means for a leader |
+| [guardrails.md](guardrails.md) | Frame constraints; Reimagine fit checks; Make the case risks | Regulators, standards in flight, documentation, confidentiality, independence, liability, human judgment |
+| [workforce.md](workforce.md) | Role evolution; capacity choice; any fear for roles | Roles, pyramid and leverage, pipeline, skills, the apprenticeship question |
+| [disruption.md](disruption.md) | Unit or organization scope; Frame exposure; lens 4 | Business-model scenarios with evidence status and signals to watch |
+| [objections.md](objections.md) | When the user pushes back | Cross-cutting objections with evidence-based responses |
+| [sources.md](sources.md) | To resolve a source key, or to plan more research | The source landscape and the shared source list |

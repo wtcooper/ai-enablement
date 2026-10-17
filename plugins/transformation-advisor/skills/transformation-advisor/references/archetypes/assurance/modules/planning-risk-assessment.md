@@ -1,10 +1,10 @@
 # Planning and risk assessment (assurance)
 
-Last reviewed 2026-10-16. Use cases live in `../use-cases/planning-risk-assessment.yaml` (25 entries). Ids are
-shortened: `#05` means `assurance-planning-risk-assessment-05`; `CT-04` means `assurance-controls-testing-04` in the
-pilot, which holds walkthroughs (CT-01), risk-scored coverage targeting (CT-04) and the PwC Australia AI-native pilot
-(CT-17). Source keys in brackets are in the YAML or §10. No entry reaches grade A: no named organisation has published a
-measured outcome for AI in planning; every figure is self-reported, vendor-claimed or a prevalence count. Say so.
+Last reviewed 2026-10-17. Use cases live in `../use-cases/planning-risk-assessment.yaml` (25 entries). `#05` means
+`assurance-planning-risk-assessment-05`; `CT-04` means `assurance-controls-testing-04` (controls-testing module: walkthroughs
+CT-01, risk-scored coverage CT-04, PwC Australia's AI-native audit trial CT-17). Source keys in brackets are in the YAML or
+§10. No entry reaches grade A: no named organisation has published a measured outcome for AI in planning; every figure
+is self-reported, vendor-claimed or a prevalence count. Say so.
 
 ## Contents
 
@@ -70,9 +70,9 @@ outcome), reinvent (model changes). Improve dominates; automate has one entry; d
   tools in risk assessment frequently in 55% of responses. `#09` Caseware Risk Suggestion Agent drafts
   engagement-specific risks (launched 6 Oct 2026). `#10` agentic risk assessment linking evidence, assertions and
   materiality (MindBridge, announced) and risk-to-procedure agents (Wolters Kluwer future state).
-- Delegate: `#11` firm-platform agent frameworks (EY Canvas "all phases", Deloitte Omnia, KPMG orchestration pilots);
+- Delegate: `#11` firm-platform agent frameworks (EY Canvas "all phases", Deloitte Omnia, KPMG orchestration trials);
   planning-specific agents are not itemised. CT-17: PwC Australia says agents will assess risk and design plans
-  (5 pilot clients, all by 2028).
+  (5 audit clients first, all clients by 2028).
 - Ideas and tests: `#12` chatbot RMM drafting failed ICAEW's test; `#13` multi-agent restatement-risk scoring
   (research prototype, AUROC 0.782).
 
@@ -139,8 +139,8 @@ Ask in the person's own setting (audit firm partner or manager, methodology lead
 - IFIAR members "frequently" seeing automated tools in risk assessment: 55% of 47 (2024), 49% of 45 (2023); journal
   entries 88%; 31% reported a tool "not used as intended", mostly misread results and thin outlier testing [IFIAR-TTF-2025].
 - Six large networks: about 30% year-on-year growth in AI-enabled tools in 2025, inconsistently reported [IFIAR-TTF-2026].
-- Dutch PIE firms: risk assessment 28% of average tool use (tests of details 51%); AI is 3% of tool types available to
-  staff (data analytics 32%) [AFM-12BB-2025].
+- Six Dutch PIE firms: tools used in risk assessment 28% on average (tests of details 51%; areas overlap); AI is 3% of
+  tool types available to staff (data analytics 32%) [AFM-12BB-2025].
 - US firms (54 with complete data): 22% have automated risk assessment, 11% substantive analytics, 22% no automated
   solution; 85% prioritise rolling binders forward, 60% carrying forward the prior risk assessment [CPACOM-ATR-2025].
 - The FRC found no formal monitoring quantifying the audit-quality impact of tools at the six largest UK firms [FRC-ATT-2025].
@@ -163,8 +163,8 @@ complete by year-end, unsourced (`#24`).
 - UMAR prototype: AUROC 0.782, PR-AUC 0.341 on 3,200 10-K firm-years, label is restatement, not a planning decision (`#13`).
 - Fraud-rating experiment with ChatGPT (66 auditors, one vignette): weak evidence, design inconsistencies (`#14`).
 
-**Client-side context**: 6% of largest clients have advanced AI governance [CAQ-INSIDER-2026]; 47% of 202 large companies
-bypassed AI governance and 36% had a material AI incident [CAQ-INSIDERSEP-2026]; see also `#15`.
+**Client-side context**: partners rate 6% of their largest clients' AI governance advanced [CAQ-INSIDER-2026]; 47% of
+202 large companies bypassed AI governance and 36% had a material AI incident [CAQ-INSIDERSEP-2026]; see also `#15`.
 
 **What to measure (recommend these)**: IFIAR's suggested metrics: engagement coverage, false-positive and
 false-negative rates against a manual sample, rework rates, escalation incidence, and benchmarking against traditional
@@ -183,7 +183,7 @@ planning missed; planning hours and senior review time; internal and external in
 - **PCAOB.** Release 2024-007: a procedure's purpose decides its category, and a multi-purpose procedure must meet each
   objective; reliability evaluation for risk-assessment information takes less effort; it does not address AI
   [PCAOB-TAA-2024]. Staff (2024): standards not seen as an impediment; some firms bar GenAI on procedures [PCAOB-GENAI-2024].
-  The acting chair wants a "human-in-the-lead" model [KSLAW-SEIAG-2025].
+  Board speakers (Nov 2025) stressed a "human-in-the-lead" model [KSLAW-SEIAG-2025].
 - **ISA (UK) 240 (Revised March 2026, effective periods from 15 Dec 2026):** tools may support fraud brainstorming
   (A56); AI or ML that initiates entries may heighten fraud risk (A101); authenticity technology where documents are
   doubtful (A36); tools do not replace scepticism (A9) [ISAUK240-2026].
@@ -216,23 +216,24 @@ observation or inspection.
 ## 7. Roles and how they evolve
 
 - **Preparers become reviewers of cited drafts.** The FRC example moves training to reviewing outputs and resisting
-  automation bias (`#01`); ICAEW's faculty chair wants training in judgement and scepticism, not tool mechanics [ICAEW-FRCVIEW-2026].
+  automation bias (`#01`); ICAEW's Technology Faculty Board chair says training must cover judgement and scepticism over
+  outputs, not only how to use the software [ICAEW-FRCVIEW-2026].
 - **Juniors.** The PCAOB acting chair warned AI may erode critical thinking and that juniors need new routes to build
-  those skills [ACCTODAY-BOTIC-2025]; an AAA panel examined how juniors use GenAI in planning [AAA-MIDYEAR-2026].
+  those skills [ACCTODAY-BOTIC-2025]; an AAA panel examined juniors' GenAI use in planning and other phases [AAA-MIDYEAR-2026].
   Caseware and Citrin Cooperman say visible reasoning helps juniors learn (`#20`); Deloitte adds a tutor mode (`#03`).
 - **Evidence on judgement is mixed.** Automation reduced scepticism in one study [PETERS-2022]; auditors discounted
   contradicting AI advice more than human advice [COMMERFORD-2022]; a registered report proposes testing GenAI's effect
   on motivation [HOLMSTROM-2024].
-- **New roles.** PwC hires engineers and dual-track CPA and data-science staff (`#18`); vendors hire audit practitioners
-  as agent architects and audit engineers [FIELDGUIDE-JOB-2026]; the AFM saw "tool ambassadors" at planning meetings (`#05`).
+- **New roles.** PwC hires engineers and seeks dual-track CPA and data-science staff (`#18`); Fieldguide hires CPAs with
+  8-10+ years of audit as agent architects [FIELDGUIDE-JOB-2026]; the AFM saw "tool ambassadors" at planning meetings (`#05`).
 - **Engagement partners** take on knowing which tools are used and checking they are approved (`#21`).
 - **Internal audit.** FJ Management's head moved from executing procedures to designing the work (`#25`).
 - **Workforce size.** Pre-GenAI, AI investment correlated with 7.1% fewer accounting staff after four years [FEDYK-2022].
 
 ## 8. Frontier
 
-- **2025-10-27/28** PwC targets a tool for every audit step in 2026, a risk-assessment tool "soon" (not seen since)
-  [PWC-AT-2025]; PwC Australia pilots agents that assess risk and design plans (CT-17).
+- **2025-10-28** PwC targets a tool for every audit step in 2026, a risk-assessment tool "soon" (not seen since)
+  [PWC-AT-2025]; PwC Australia trials agents that assess risk and design plans (CT-17).
 - **2025-12-09** PCAOB acting chair: AI can already enhance risk assessment "in certain scenarios"; warns on scepticism [ACCTODAY-BOTIC-2025].
 - **2026-03-30** FRC generative and agentic AI guidance, with the board-minutes example [FRC-GENAI-2026].
 - **2026-04-07** EY embeds agents in all audit phases; end-to-end by 2028 [EY-CANVAS-2026].
@@ -244,7 +245,7 @@ observation or inspection.
 - **2026-09-22 / 10-06 / 10-14** MindBridge, Caseware and Optro launch risk-assessment agents (`#10`, `#09`, CT-04).
 - **2026-10-13** AICPA practice aid; RMM guidance for AI-using clients to follow [AICPA-PA-2026].
 - **2026-11-06/07** WCARS: "Taming the Autonomous Frontier" (scheduled) [WCARS-2026].
-- **2026-12-15** ISA (UK) 240 (revised 2026-04-30) effective [ISAUK240-2026]; IAASB comment deadline. Watch for AICPA RMM guidance and FRC sandbox output.
+- **2026-12-15** ISA (UK) 240 (Revised March 2026) applies to periods from this date [ISAUK240-2026]; IAASB comment deadline. Watch for AICPA RMM guidance and FRC sandbox output.
 
 ## 9. Common objections
 
@@ -259,21 +260,21 @@ observation or inspection.
   planning-specific. Measure before claiming.
 - **"Agent washing."** Richard Chambers warns that basic features are rebranded as agents; ask for live demos on new
   inputs [AUDITBOARD-AGENTICERA-2026].
-- **"Small firms can't certify tools."** ICAEW says guidance assumes specialist teams small firms lack [ICAEW-FRCVIEW-2026];
-  methodology platforms (`#20`) and the FRC sandbox are routes.
+- **"Small firms can't certify tools."** ICAEW's data-analytics head says the guidance assumes specialist teams smaller
+  firms lack [ICAEW-FRCVIEW-2026]; methodology platforms (`#20`) and the FRC sandbox are routes.
 - **"Client data won't support it."** 60% cite poor data, 53% no access [CPACOM-ATR-2025]; standardised ingestion (`#07`) comes first.
 - **"Continuous risk assessment oversells certainty."** More data means more exceptions and a wider expectation gap if
   sold as certainty [CPAPA-LEDGERLINE-2026].
 
 ## 10. Sources
 
-Full details are in the YAML except for keys listed as not in it; the synthesis report maps keys to the inputs and pilot.
+Full details are in the YAML except for keys listed as not in it. All were re-opened on 2026-10-17.
 - **Regulators and standard-setters:** FRC-GENAI-2026, AFM-12BB-2025, IFIAR-TTF-2025, IFIAR-TTF-2026, IFIAR-SURVEY-2026,
   PCAOB-TAA-2024, PCAOB-GENAI-2024, PCAOB-PRIORITIES-2024, ISAUK315-2025, ISAUK240-2026, AS2110-PCAOB-2026,
   AUASB-CPED-2026, ACRA-APG1-2025, FSA-DP-2025, IRBA-AIUPDATE-2024, CPAB-AI-2024.
 - **Professional bodies:** AICPA-PA-2026, JOFA-AIPA-2026, CAQ-GENAI-2024, CAQ-RSM-2026, CAQ-INSIDER-2026,
   CAQ-INSIDERSEP-2026, CAQ-INSIDERAPR-2026, CAQ-INSIDERMAY-2026, ICAEW-PIERPOINT-2025, ICAEW-315-2025, ICAEW-GROUP-2025.
-- **Firms:** KPMG-CLARA-2024, KPMG-CLARA-2025, KPMG-HOHL-2026, EY-CANVAS-2026, DELOITTE-OMNIA-2026, DART-SECPCAOB-2025,
+- **Firms:** KPMG-CLARA-2024, KPMG-CLARA-2025, KPMG-US-CLARA-2025, KPMG-HOHL-2026, EY-CANVAS-2026, DELOITTE-OMNIA-2026, DART-SECPCAOB-2025,
   GT-GTAP-2026. **Vendors:** CASEWARE-RSA-2026, CASEWARE-LAUNCH-2026, CASEWARE-VERITY-2026, CASEWARE-AIDA-2026, CASEWARE-EISNERAMPER-2026,
   CASEWARE-CITRIN-2026, CASEWARE-PKF-2026, MINDBRIDGE-ARA-2026, WK-AGENTRA-2026, WK-CONNECTED-2026, WK-SAS145-2024,
   WK-GROUP-2025, WK-DYNAMIC-2026, WK-MICRO-2026, WK-MULTIYEAR-2026, TR-CHALLENGES-2026, OPTRO-HELVETIA-2026, OPTRO-FJ-2026,
@@ -283,12 +284,12 @@ Full details are in the YAML except for keys listed as not in it; the synthesis 
   CPIA-ARAQ-2026, BOARDAGENDA-FRC-2026, AT-AICPAPA-2026, ACCTODAY-BOTIC-2025, FINSTORY-KPMGFEE-2026, GRCREPORT-DELOITTE-2026.
 - **Surveys, academic, conference:** CPACOM-ATR-2025, TRI-FOP-2026, IIAF-AIFRAUD-2026, ARXIV-UMAR-2026, ARXIV-FAB-2026,
   CPAJ-AIPLAN-2026, INDO-ICOBUSS-2025, PETERS-2022, VLGAA-NUCCIO-2026.
-- **Not in the YAML (all opened by the deep dives):** FRC-ATT-2025 (FRC, *Thematic Review: Certification of Automated
+- **Not in the YAML:** FRC-ATT-2025 (FRC, *Thematic Review: Certification of Automated
   Tools and Techniques*, 2025-06-26, https://www.frc.org.uk/docs/8383/html/); FRC-SANDBOX-2026 (FRC sandbox release,
   2026-06-04, https://www.frc.org.uk/news-and-events/news/2026/06/frc-invites-firms-and-companies-to-experiment-innovate-and-reduce-burdens-through-new-sandbox-programmes/);
   IAASB-EDPAGE-2026 (IAASB, ISA 330/500/520 proposals, 2026-08-05, https://www.iaasb.org/publications/proposed-revisions-audit-evidence-risk-response-isa-330-isa-500-isa-520);
   CFODIVE-AICPA-2026 (CFO Dive, 2026-10-13, https://www.cfodive.com/news/aicpa-issues-guidance-ai-assisted-auditing/832907/);
-  KSLAW-SEIAG-2025 (King & Spalding, PCAOB SEIAG highlights, 2025-11, https://www.kslaw.com/blog-posts/pcaob-seiag-meeting-highlights-ai-and-crypto-take-center-stage);
+  KSLAW-SEIAG-2025 (King & Spalding, PCAOB SEIAG highlights, 2025-11-07, https://www.kslaw.com/blog-posts/pcaob-seiag-meeting-highlights-ai-and-crypto-take-center-stage);
   ICAEW-FRCVIEW-2026 (ICAEW, 2026-05-06, https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai);
   AUDITBOARD-AGENTICERA-2026 (Optro blog, R. Chambers, 2026-08-12, https://auditboard.com/blog/agentic-audit-era-what-caes-must-rethink);
   AAA-MIDYEAR-2026 (AAA workshop agenda, 2026-01-15, https://aaahq.org/Meetings/2026/Auditing-Section-Midyear-Meeting/Workshop);
@@ -296,4 +297,4 @@ Full details are in the YAML except for keys listed as not in it; the synthesis 
   FEDYK-2022 (*Review of Accounting Studies* 27(3), 2022-09, https://ideas.repec.org/a/spr/reaccs/v27y2022i3d10.1007_s11142-022-09697-x.html);
   COMMERFORD-2022 (*Journal of Accounting Research* 60(1), 2022-03, https://ideas.repec.org/a/bla/joares/v60y2022i1p171-201.html);
   HOLMSTROM-2024 (PCAOB registered report proposal, 2024-06, https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf);
-  FIELDGUIDE-JOB-2026 (Fieldguide Agent Architect posting, accessed 2026-10-16, https://www.builtinboston.com/job/agent-architect-audit/10693122).
+  FIELDGUIDE-JOB-2026 (Fieldguide Agent Architect posting, accessed 2026-10-17, https://www.builtinboston.com/job/agent-architect-audit/10693122).
