@@ -140,7 +140,7 @@ ahead of the company means "heightened audit and dispute exposure" [DELOITTE-TTT
 | Research and advisory | Medium for routine research | Drafting, pricing | Planning, diligence, advice on AI | Clients arrive with chatbot answers |
 | Tax data and technology | Low | Ownership and controls | Everything above | Grows as the other lines automate |
 
-These ratings are the advisor's synthesis of the evidence above, not a source's forecast. Revisit them with the leader's
+These ratings are the advisor's reading of the evidence above, not a source's forecast. Revisit them with the leader's
 own revenue mix.
 
 ## 9. Sources

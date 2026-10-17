@@ -1,8 +1,9 @@
 # Controversy (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/controversy.yaml` (25 entries). Ids are shortened here: `#05`
-means `tax-controversy-05`. Source keys in brackets, such as [GAO-2026], are listed in §10 and given in full in the
-YAML. Read this first: almost every measured figure in this module describes **tax authorities**, not practitioners.
+Sources checked 2026-10-17. Use cases live in `../use-cases/controversy.yaml` (25 entries). Ids are shortened here:
+`#05` means `tax-controversy-05`; other modules' ids are in full. Source keys in brackets, such as [GAO-2026], are
+given in full in the YAML or in §10. Read this first: almost every figure in this module describes **tax
+authorities**, not practitioners.
 No firm or in-house team has published an error rate, override rate, parallel-run result or time saving for notice,
 examination or Appeals work. Vendor and firm claims are graded C; say so when you quote one. The module is honestly
 thin: 10 of 25 entries are graded A or B, and nine of those ten are authority-side.
@@ -61,15 +62,16 @@ announcements.
 **Pre-filing and documentation**
 - Improve: `#04` review a return "as though it were a partner-level signer" for audit-sensitive items before sign-off
   (vendor feature, no outcomes; compliance overlaps `tax-compliance-corporate-13`, `tax-compliance-individual-business-12`).
-  `#05` check TP documentation against public data (EY TP Doc Insights; see `tax-transfer-pricing-08`, `-16`). `#06` in-house teams summarise legislation and dispute files (EY survey: 39% built a
+  `#05` check TP documentation against public data (EY TP Doc Insights; see `tax-transfer-pricing-08` and `tax-transfer-pricing-16`). `#06` in-house teams summarise legislation and dispute files (EY survey: 39% built a
   controversy pilot or tool).
 - Reinvent (idea): `#12` preventive controls and real-time data exchange replace after-the-fact audit defence
   (Deloitte scenarios; OECD real-time sharing pilots agreed Nov 2025 [OECD-FTA-2025]).
 
 **Examination, Appeals and litigation**
-- Improve: `#07` agents draft responses to audit queries and track IDRs (described by EY authors; no deployment).
+- Improve: `#07` agents draft responses to audit queries and track IDRs (described by EY authors; no deployment;
+  the TP version is `tax-transfer-pricing-16`).
   `#08` AI-assisted research and drafting for filings, with citation verification as the control (Clinco: 3 of 4
-  cited cases apparently invented; tooling in `tax-research-advisory-19`, `-20`). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
+  cited cases apparently invented; tooling in `tax-research-advisory-19` and `tax-research-advisory-20`). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
 - Authority side: `#22` Agentforce case summaries for Chief Counsel, Appeals and TAS (announced, single source).
   `#23` Brazil groups similar appeal files for the same officers (over 80% sensitivity and specificity in early trials; a model accuracy measure, not a speed result).
   `#21` examiner and caseworker assistants (ATO orders substantiation documents; HMRC document scanning; IRS revenue
@@ -105,7 +107,7 @@ announcements.
 7. Who owns AI in your tax function (tax, IT, legal)? *In a TEI room poll, two of more than 50 hands said tax does
    [TEI-TAXTECH-2026]; no owner usually means no verification standard.*
 8. Since 2025, where has resolution slowed (POA processing, exam assignment, Appeals, collection), and what changed in
-   client expectations or staffing? *Measures the capacity asymmetry the discourse describes.*
+   client expectations or staffing? *Measures the capacity gap that commentators describe.*
 9. Do clients use consumer AI on their own matters, and do you tell them about privilege? *Heppner risk; `#09`.*
 10. If an authority used AI against your client, what record would you request, and what have you been given?
     *Shows how the firm handles opaque selection; links to `#13`-`#15`.*
@@ -142,14 +144,10 @@ override or error rate for its selection models.
 ## 6. Guardrails
 
 **Practitioner rules ("existing duties apply")**
-- IRS OPR Alert 2026-19 (24 Jun 2026) applies Circular 230 §§10.22 (due diligence), 10.27 (fees), 10.35
-  (competence), 10.36 (firm procedures), 10.37 (written advice) and IRC §§6713 and 7216 (disclosure of return
-  information). Treat AI text as a draft, use only enterprise-approved tools for client data, and do not bill manual
-  time not spent [IRS-OPR-2026]. The AICPA has asked for clarification on value pricing [AICPA-CART-2026].
-- AICPA SSTS §1.4 permits reliance on tools but keeps responsibility with the member [TAXCT-CLINCO-2026].
-- Australia TPB(GS) 55/2026: verify AI content at each step, document verification, get client permission before
-  entering client data into a tool that discloses it to a third party [TPB-GS55-2026]. UK PCRT AI guidance (19 Jan 2026): integrity, due care, confidentiality,
-  limits of AI [ATT-PCRTAI-2026].
+- IRS OPR Alert 2026-19 (Circular 230 duties and IRC §§6713 and 7216), AICPA SSTS §1.4, Australia's TPB(GS) 55/2026
+  and the UK PCRT guidance are set out once in [the archetype guardrails](../guardrails.md). For controversy work:
+  treat AI text as a draft and use only enterprise-approved tools for client data [IRS-OPR-2026]; the AICPA has asked
+  for clarification on value pricing [AICPA-CART-2026].
 
 **Courts and evidence**
 - Tax Court: no AI rule; Rule 201(a) binds lawyers to the ABA Model Rules [TAXCT-CLINCO-2026]; IRC §6673 penalties up to
@@ -170,7 +168,7 @@ override or error rate for its selection models.
 - ATO: adverse decisions are made by a human with a right of review [ATO-AI-2026]. HMRC lost a tribunal case for
   refusing to confirm or deny LLM use in R&D compliance [ELSBURY-ICO-2025].
 - EU AI Act Recital 59: tax-authority administrative AI is not classed as high-risk law-enforcement AI, leaving no
-  dedicated category [EU-AIACT; HADWICK-EUAIACT].
+  dedicated category [EU-AIACT-2024; HADWICK-EUAIACT].
 
 **Steps that need human judgment:** choosing the position on a notice; signing anything sent to an authority or
 court; verifying every authority, number and deadline; settlement and Appeals strategy; fee basis and AI disclosure;
@@ -238,10 +236,10 @@ Not yet moved: a Tax Court AI rule; Treasury minimum-practice guidance (none as 
 Full titles, URLs, dates and locators are in the YAML. Keys used here but not in the YAML:
 
 - ACCRUAL-ARC-2026: Accrual launches Arc AI (Accounting Today, 2026-09-22), https://www.accountingtoday.com/news/accrual-launches-arc-ai-can-learn-from-and-replicate-accounting-workflows
-- EU-AIACT: Regulation (EU) 2024/1689, Recital 59 (2024-07-12), https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689
+- EU-AIACT-2024: Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (AI Act), Recital 59 (European Parliament and Council, 2024-06-13), https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689
 - HADWICK-EUAIACT: Slipping Through the Cracks (European Papers, 2024-12-30), https://www.europeanpapers.eu/e-journal/slipping-through-cracks-carve-outs-ai-tax-enforcement-systems-eu-ai-act
 - OECD-DIGIT-2025: Tax Authorities Increasingly Use AI in Audits (Bloomberg Tax, 2025-06-17), https://news.bloombergtax.com/daily-tax-report/tax-authorities-increasingly-use-ai-in-audits-oecd-report-finds
-- ATT-PCRTAI-2026: PCRT topical guidance on AI (seven UK bodies, 2026-01-19), https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members
+- ATT-PCRTAI-2026: Professional bodies issue AI advice to members (Association of Taxation Technicians, for the PCRT bodies, 2026-01-19), https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members
 - PROSKAUER-707-2026: Proposed FRE 707 (Proskauer Rose, 2026-07-29), https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707
 - SALA-TAXNOTES-2026: AI Won't Shrink Corporate Tax Teams Much (Tax Notes State, abstract, 2026-07-20), https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
 - SSL-OECDVAT-2026: OECD: AI Is Cutting VAT Investigations from 9 Months to 3 (SharedServicesLink, 2026-06-29), https://sharedserviceslink.com/news/oecd-ai-is-cutting-vat-non-compliance-investigations-from-9-months-to-3

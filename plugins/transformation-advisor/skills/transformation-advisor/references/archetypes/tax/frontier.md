@@ -86,7 +86,6 @@ lists for their own steps. Source keys in brackets resolve in §7 or in [sources
 |---|---|---|
 | 18-21 Oct 2026 | TEI Annual Conference (no AI session titles published; re-check recaps) | [TEI-ANNUAL-2026] |
 | 18-22 Oct 2026 | IFA Congress, Melbourne | [IFA-MELB-2026] |
-| 25-28 Oct 2026 | CCH Connections (Wolters Kluwer user conference) | [WK-CONNECT-2026] |
 | 4-5 Nov 2026 | TPMinds West Coast, with TP heads from Anthropic, OpenAI and Uber | [TPMINDS-WC-2026] |
 | Fall 2026 | IRS update on GAO's AI workforce recommendation due | [GAO-2026] |
 | Dec 2026 | Aibidia's TP Intelligence first release planned; ATO enterprise-wide model monitoring due | [AIBIDIA-TPINTEL-2026; ANAO-ATO-2025] |

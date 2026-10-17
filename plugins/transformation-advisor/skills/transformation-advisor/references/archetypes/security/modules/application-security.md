@@ -212,7 +212,7 @@ decisions; certifying origin of contributed code.
 ## 7. Roles and how they evolve
 
 - **AppSec engineers become builders and operators of agent systems.** Anthropic's engineers each own a
-  Claude-powered system and the posting calls human work "the judgement layer" [ANTHROPIC-JOB-APPSEC-2026]; GitLab
+  Claude-powered system and the posting describes human work as the judgement layer [ANTHROPIC-JOB-APPSEC-2026]; GitLab
   expects all staff to use AI daily and wants engineers who evaluate AI detection on labelled data [GITLAB-JOB-CODESEC-2026].
 - **AI skills in hiring.** Samsara, Cloudflare, Coinbase, Okta, MongoDB and Stripe postings ask for AI-driven triage,
   testing, detection or remediation work [SAMSARA-JOB-APPSEC-2026, CLOUDFLARE-JOB-PSE-2026, COINBASE-JOB-PSE-2026,
