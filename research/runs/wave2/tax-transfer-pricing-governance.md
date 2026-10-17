@@ -10,9 +10,9 @@
 - **No regulator has issued TP-specific AI rules.** The binding constraints are the existing ones: IRS Circular 230 duties as restated in OPR Alert 2026-19 (24 Jun 2026), the section 6662(e) documentation regime, expert-evidence rules, and the UK, Australian and AICPA professional-conduct guidance. The only TP-specific regulator statement found is from the IRS LB&I director of treaty and transfer pricing operations (29 Jul 2026): AI can support but not replace judgment, and expert witnesses must explain inputs, assumptions, methods and AI tools (IRS-LBI-TP-2026, reported by EY).
 - **The OECD is the one standard-setter touching the module, and from the other direction.** Its June 2026 draft of revised Chapter VII (intra-group services) has 21 new examples, and Bloomberg Tax reports companies, including AstraZeneca, asking the OECD to clarify how AI transactions between affiliates are characterised. The OECD draft itself was not reachable (site blocks bots), so its AI examples are unverified.
 - **Evidence on quality is almost absent.** No survey, error rate, override rate or parallel run specific to AI in TP was found. The measurements that exist are independent but adjacent: TIGTA on IRS exam-selection models (2025), GAO on IRS AI governance (2026), and TaxCalcBench on return calculation (2025). TP-specific "results" are practitioner estimates at a conference (PwC Singapore, about 80% of comparability work, 100 hours to about 30 minutes) and vendor claims.
-- **Qualitative failure modes are consistent across firm sources.** BDO Canada reports recurring gaps in AI-generated TP documentation: functional profiles that miss operational reality, unsupported method selection, shallow benchmarking, and thin DEMPE treatment. Andersen Australia warns of false confidence. These match what the IRS says it wants in documentation (IRS-TPFAQ-2026).
+- **Qualitative failure modes are consistent across firm sources.** BDO Canada reports recurring gaps in AI-generated TP documentation: functional profiles that miss operational reality, unsupported method selection, shallow benchmarking, and thin DEMPE treatment. Andersen Australia warns of false confidence. These overlap with documentation weaknesses the IRS lists (IRS-TPFAQ-2026, Q4).
 - **Tax authorities are the other half of the governance story.** Hungary's 2026 inspection plan, as summarised by WTS, uses AI-based models to select TP audit targets. The IRS uses machine learning to select large-partnership and international-risk cases. KPMG authors say South Africa and Nigeria have not confirmed AI-driven TP audits. Independent oversight finds the IRS lacks processes to show its models beat prior methods (TIGTA-2025).
-- **Use cases: 17.** Grades: A 0, B 2, C 12, D 3. Both B entries are authority-side. No A is supportable because no TP-specific outcome has been measured by a named organisation.
+- **Use cases: 17.** Grades: A 0, B 2, C 11, D 4. Both B entries are authority-side. No A is supportable because no TP-specific outcome has been measured by a named organisation.
 
 ## 2. Use cases
 
@@ -46,7 +46,6 @@
   prerequisites:
     - "Clean, reliable input data; the PwC speaker summarised the dependency as AI being good if the data is good (DDTC-PWCSG-2026)."
     - "A closed or private AI environment, because of confidentiality of company data (DDTC-PWCSG-2026; IBFD-ITPJ-2025 abstract covers set-up of private GenAI tools)."
-    - "Access to licensed financial databases for the underlying comparables data (not stated in the sources; the sources do not say how AI tools connect to them)."
   risks_and_guardrails:
     - "The IRS expects documentation to address all comparability criteria, the effect of risk and function differences, and reasoned adjustments (IRS-TPFAQ-2026, Q4). An AI screen that cannot show its rejection logic fails that expectation."
     - "Section 6662(e) documentation does not automatically protect against penalties; it must also be adequate and reasonable (IRS-TPFAQ-2026, preamble). Practitioners remain responsible for due diligence and for understanding AI limits under Circular 230 sections 10.22 and 10.35 (IRS-OPR-2026)."
@@ -57,13 +56,13 @@
   role_evolution: "PwC Singapore speakers said the remaining crucial 20% still needs human perspective (DDTC-PWCSG-2026). They did not describe staffing changes."
   evidence_grade: C
   sources:
-    - { ref: DDTC-PWCSG-2026, title: "Challenges in Transfer Pricing Benchmarking Changes in the AI Era", publisher: DDTCNews, type: conference, url: "https://news.ddtc.co.id/en/insight/1822922/challenges-in-transfer-pricing-benchmarking-changes-in-the-ai-era", date: 2026-10-01, access: full, locator: "paragraphs on Falgun Thakkar and Jimit Parikh (WU-TA Advanced TP Programme 2026, Singapore)" }
-    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: 2025-08-31, access: full, locator: "Q&A 2, ExactMatch" }
-    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "section 'How is AI being used', list of recurring gaps" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "preamble; Q4" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "Regulatory Framework items 1 and 3" }
-    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: 2026-05-08, access: full, locator: "Transfer Pricing program, 4:15 PM session, p. 34" }
-  last_reviewed: 2026-10-17
+    - { ref: DDTC-PWCSG-2026, title: "Challenges in Transfer Pricing Benchmarking Changes in the AI Era", publisher: DDTCNews, type: conference, url: "https://news.ddtc.co.id/en/insight/1822922/challenges-in-transfer-pricing-benchmarking-changes-in-the-ai-era", date: "2026-10-01", access: full, locator: "paragraphs on Falgun Thakkar and Jimit Parikh (WU-TA Advanced TP Programme 2026, Singapore)" }
+    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: "2025-08-31", access: full, locator: "Q&A 2, ExactMatch" }
+    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: "2026-08-20", access: full, locator: "section 'How is AI being used', list of recurring gaps" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "preamble; Q4" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 1 and 3" }
+    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: "2026-05-08", access: full, locator: "Transfer Pricing program, 4:15 PM session, p. 34" }
+  last_reviewed: "2026-10-17"
   notes: "Grade C: the only figures are a conference speaker's estimates and a vendor description. The IBFD abstract is paywalled beyond its overview."
 
 - id: tax-transfer-pricing-02
@@ -91,7 +90,7 @@
     - "Data supplied to the IRS in a functional format that preserves calculations, and a clear intercompany transaction summary, which the IRS says speeds review (IRS-TPFAQ-2026, Q5 and Q6)."
     - "Enterprise-approved AI only; no client data to unsecured sites (IRS-OPR-2026, item 6)."
   risks_and_guardrails:
-    - "Documentation must be in existence when the return is filed and provided on request to avoid the net adjustment penalty; the IRS can still find it inadequate (IRS-TPFAQ-2026; BTAX-GT6662-2024). No source tests how AI-drafted documentation fares under these rules."
+    - "The net adjustment penalty is avoided only if section 6662(e) documentation is adequate and timely, and the IRS can still find it inadequate (IRS-TPFAQ-2026, preamble). A Grant Thornton author reports the IRS asserting penalties where it judged documentation insufficient (BTAX-GT6662-2024). No source tests how AI-drafted documentation fares under these rules."
     - "Written advice must rest on reasonable assumptions and verified inputs; opaque logic may make reliance unreasonable (IRS-OPR-2026, item 5, section 10.37)."
     - "In Canada, BDO frames the risk as adjustments, penalties, interest and double taxation if gaps surface in a CRA audit (BDO-AIGOV-2026)."
     - "The EU AI Act and data protection law treatment of AI in TP is described as unsettled (INTERTAX-SIVA-2026 abstract)."
@@ -102,14 +101,14 @@
   role_evolution: "BDO says people remain accountable for the judgment that makes documentation defensible (BDO-AIGOV-2026). Andersen asks who in a company will own AI-assisted documentation if the preparer is not a TP specialist (ANDERSEN-AI-2026)."
   evidence_grade: C
   sources:
-    - { ref: KPMG-TP-2025, title: "GenAI Revolutionizes Transfer Pricing and Valuation", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2025/genai-revolutionizes-transfer-pricing-valuation.html", date: 2025, access: full, locator: "opening paragraph" }
-    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "'How is AI being used' and 'recurring gaps' list" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "Q4, Q5, Q6" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "items 1, 5, 6" }
-    - { ref: BTAX-GT6662-2024, title: "IRS Transfer Pricing Enforcement Trend Calls for Self-Assessment", publisher: Bloomberg Tax (author Steven C. Wrappe, Grant Thornton), type: firm, url: "https://news.bloombergtax.com/tax-insights-and-commentary/irs-transfer-pricing-enforcement-trend-calls-for-self-assessment", date: 2024-09-23, access: full, locator: "section on Section 6662 penalties" }
-    - { ref: INTERTAX-SIVA-2026, title: "AI in Transfer Pricing: Risk or Opportunity?", publisher: "Intertax 54(6/7) (Pramod Siva)", type: academic, url: "https://kluwerlawonline.com/journalarticle/Intertax/54.6/TAXI2026050", date: 2026-06-01, access: full, locator: "abstract (full text paywalled)" }
-    - { ref: ANDERSEN-AI-2026, title: "AI in Transfer Pricing: Insight, Illusion and Risk", publisher: Andersen Australia, type: firm, url: "https://au.andersen.com/ai-in-transfer-pricing/", date: 2026-02-17, access: full, locator: "section 'Our View on the Use of AI'" }
-  last_reviewed: 2026-10-17
+    - { ref: KPMG-TP-2025, title: "GenAI Revolutionizes Transfer Pricing and Valuation", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2025/genai-revolutionizes-transfer-pricing-valuation.html", date: "2025", access: full, locator: "opening paragraph" }
+    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: "2026-08-20", access: full, locator: "'How is AI being used' and 'recurring gaps' list" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "Q4, Q5, Q6" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "items 1, 5, 6" }
+    - { ref: BTAX-GT6662-2024, title: "IRS Transfer Pricing Enforcement Trend Calls for Self-Assessment", publisher: Bloomberg Tax (author Steven C. Wrappe, Grant Thornton), type: firm, url: "https://news.bloombergtax.com/tax-insights-and-commentary/irs-transfer-pricing-enforcement-trend-calls-for-self-assessment", date: "2024-09-23", access: full, locator: "section on Section 6662 penalties" }
+    - { ref: INTERTAX-SIVA-2026, title: "AI in Transfer Pricing: Risk or Opportunity?", publisher: "Intertax 54(6/7) (Pramod Siva)", type: academic, url: "https://kluwerlawonline.com/journalarticle/Intertax/54.6/TAXI2026050", date: "2026-06-01", access: full, locator: "abstract (full text paywalled)" }
+    - { ref: ANDERSEN-AI-2026, title: "AI in Transfer Pricing: Insight, Illusion and Risk", publisher: Andersen Australia, type: firm, url: "https://au.andersen.com/ai-in-transfer-pricing/", date: "2026-02-17", access: full, locator: "section 'Our View on the Use of AI'" }
+  last_reviewed: "2026-10-17"
   notes: "No named organisation with a deployment and no measurement. Maturity 'emerging' because BDO describes market use without naming users. The KPMG page date is shown as 2025 from its URL path; page metadata shows 2026-10-12, likely a modification date."
 
 - id: tax-transfer-pricing-03
@@ -144,10 +143,10 @@
   role_evolution: "No source describes role change for this step."
   evidence_grade: C
   sources:
-    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "'Industry lens' section" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "Q4, risk analysis consistent with intercompany agreements" }
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "'Emerging AI dilemma' section" }
-  last_reviewed: 2026-10-17
+    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: "2026-08-20", access: full, locator: "'Industry lens' section" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "Q4, risk analysis consistent with intercompany agreements" }
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "'Emerging AI dilemma' section" }
+  last_reviewed: "2026-10-17"
   notes: "Grade C because the only support is a firm's list of uses and observed shortcomings."
 
 - id: tax-transfer-pricing-04
@@ -182,10 +181,10 @@
   role_evolution: "Exactera expects tax professionals to spend less time on repetitive tasks and more on analysis (EXACTERA-2025); this is the vendor's expectation."
   evidence_grade: C
   sources:
-    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: 2025-08-31, access: full, locator: "Q&A 2 and 3, ExactReport" }
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "'What Can Multinationals Do?', data integrity and documentation consistency" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "preamble" }
-  last_reviewed: 2026-10-17
+    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: "2025-08-31", access: full, locator: "Q&A 2 and 3, ExactReport" }
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "'What Can Multinationals Do?', data integrity and documentation consistency" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "preamble" }
+  last_reviewed: "2026-10-17"
 
 - id: tax-transfer-pricing-05
   title: AI drafting and abstraction of intercompany agreements and transaction flows
@@ -217,12 +216,12 @@
   role_evolution: "No source describes role change."
   evidence_grade: C
   sources:
-    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "list of uses" }
-    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: 2025-08-31, access: full, locator: "Q&A 2" }
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "South Africa: AI in audit initiation and document review" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "Q4" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "item 6" }
-  last_reviewed: 2026-10-17
+    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: "2026-08-20", access: full, locator: "list of uses" }
+    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: "2025-08-31", access: full, locator: "Q&A 2" }
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "South Africa: AI in audit initiation and document review" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "Q4" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "item 6" }
+  last_reviewed: "2026-10-17"
 
 - id: tax-transfer-pricing-06
   title: Continuous operational TP monitoring of intercompany flows
@@ -236,7 +235,7 @@
   runtime_class: background-agent
   maturity: emerging
   problem: "TP positions are set annually and tested after year end, so margin drift against policy is found late, when true-ups and adjustments are harder."
-  solution: "ML or agent-based monitoring watches intercompany transactions and flags invoices, margins or restructurings that fall out of range against policy, so teams can adjust during the year. A sponsored Nexdigm piece describes this as 'agentic monitoring'. A peer-reviewed-style survey article reports MNEs applying ML to operational TP monitoring and predictive compliance controls."
+  solution: "ML or agent-based monitoring watches intercompany transactions and flags invoices, margins or restructurings that fall out of range against policy, so teams can adjust during the year. A sponsored Nexdigm piece describes this as 'agentic monitoring'. A journal article reviewing the literature reports MNEs applying ML to operational TP monitoring and predictive compliance controls."
   outcomes:
     - lever: risk
       description: "The Intertax article lists faster benchmarking and documentation, predictive compliance controls and more consistent policy application as measurable opportunities drawn from the literature; the abstract gives no figures."
@@ -255,10 +254,10 @@
   role_evolution: "ITR-NEXDIGM-2026 argues the work shifts from annual retrospective justification to continuous compliance; this is a sponsor's view."
   evidence_grade: C
   sources:
-    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads: disruption, data, and the decade ahead (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: 2026-09-21, access: full, locator: "section 'When AI enters - on both sides of the table'" }
-    - { ref: INTERTAX-SIVA-2026, title: "AI in Transfer Pricing: Risk or Opportunity?", publisher: "Intertax 54(6/7) (Pramod Siva)", type: academic, url: "https://kluwerlawonline.com/journalarticle/Intertax/54.6/TAXI2026050", date: 2026-06-01, access: full, locator: "abstract" }
-    - { ref: KPMG-GR-2026, title: "Ensuring Robust, Relevant, and Fit-for-Purpose Transfer Pricing", publisher: KPMG Greece, type: firm, url: "https://kpmg.com/gr/en/insights/2026/03/ensuring-robust-relevant-and-fit-for-purpose-transfer-pricing.html", date: 2026-03-02, access: full, locator: "closing recommendations paragraph" }
-  last_reviewed: 2026-10-17
+    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads: disruption, data, and the decade ahead (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: "2026-09-21", access: full, locator: "section 'When AI enters - on both sides of the table'" }
+    - { ref: INTERTAX-SIVA-2026, title: "AI in Transfer Pricing: Risk or Opportunity?", publisher: "Intertax 54(6/7) (Pramod Siva)", type: academic, url: "https://kluwerlawonline.com/journalarticle/Intertax/54.6/TAXI2026050", date: "2026-06-01", access: full, locator: "abstract" }
+    - { ref: KPMG-GR-2026, title: "Ensuring Robust, Relevant, and Fit-for-Purpose Transfer Pricing", publisher: KPMG Greece, type: firm, url: "https://kpmg.com/gr/en/insights/2026/03/ensuring-robust-relevant-and-fit-for-purpose-transfer-pricing.html", date: "2026-03-02", access: full, locator: "closing recommendations paragraph" }
+  last_reviewed: "2026-10-17"
   notes: "Intertax full text was not reachable; only the abstract was read."
 
 - id: tax-transfer-pricing-07
@@ -291,11 +290,11 @@
   role_evolution: "No source describes role change."
   evidence_grade: C
   sources:
-    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: 2025-08-31, access: full, locator: "Q&A 1" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "Q1, Q2, Q5" }
-    - { ref: WTS-NAV-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: WTS Klient, type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: 2026-03-12, access: full, locator: "'Strengthening of transfer pricing audits'" }
-    - { ref: GT-BIR-2026, title: "Transfer pricing consideration in BIR's new audit selection process", publisher: Grant Thornton Philippines, type: firm, url: "https://www.grantthornton.com.ph/insights/articles-and-updates1/lets-talk-tp/transfer-pricing-consideration-in-birs-new-audit-selection-process/", date: 2026-02-24, access: full, locator: "discussion of RMO No. 1-2026 triggers" }
-  last_reviewed: 2026-10-17
+    - { ref: EXACTERA-2025, title: "AI is transforming transfer pricing (advertising supplement)", publisher: "The Tax Adviser (Exactera)", type: vendor, url: "https://www.thetaxadviser.com/issues/2025/sep/ai-is-transforming-transfer-pricing/", date: "2025-08-31", access: full, locator: "Q&A 1" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "Q1, Q2, Q5" }
+    - { ref: WTS-NAV-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: WTS Klient, type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: "2026-03-12", access: full, locator: "'Strengthening of transfer pricing audits'" }
+    - { ref: GT-BIR-2026, title: "Transfer pricing consideration in BIR's new audit selection process", publisher: Grant Thornton Philippines, type: firm, url: "https://www.grantthornton.com.ph/insights/articles-and-updates1/lets-talk-tp/transfer-pricing-consideration-in-birs-new-audit-selection-process/", date: "2026-02-24", access: full, locator: "discussion of RMO No. 1-2026 triggers" }
+  last_reviewed: "2026-10-17"
 
 - id: tax-transfer-pricing-08
   title: Grounded AI research assistant for TP law, guidance and compliance questions
@@ -328,10 +327,10 @@
   role_evolution: "No source describes role change."
   evidence_grade: C
   sources:
-    - { ref: AIBIDIA-IBFD-2025, title: "Aibidia and IBFD Launch TP Aurora", publisher: IBFD, type: vendor, url: "https://www.ibfd.org/news/aibidia-and-ibfd-launch-tp-aurora-groundbreaking-ai-transfer-pricing-research-assistant", date: 2025-05-22, access: full, locator: "body of release" }
-    - { ref: IBFD-ITPJ-2025, title: "Operationalizing Transfer Pricing with Generative Artificial Intelligence: Practical Applications and Challenges", publisher: "International Transfer Pricing Journal 32(6) (D. Olzhabayeva)", type: academic, url: "https://shop.ibfd.org/journal/operationalizing-transfer-pricing-generative-artificial-intelligence-practical-applications", date: 2025-09-26, access: full, locator: "overview (abstract only; article paywalled)" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "items 1 and 3" }
-  last_reviewed: 2026-10-17
+    - { ref: AIBIDIA-IBFD-2025, title: "Aibidia and IBFD Launch TP Aurora", publisher: IBFD, type: vendor, url: "https://www.ibfd.org/news/aibidia-and-ibfd-launch-tp-aurora-groundbreaking-ai-transfer-pricing-research-assistant", date: "2025-05-22", access: full, locator: "body of release" }
+    - { ref: IBFD-ITPJ-2025, title: "Operationalizing Transfer Pricing with Generative Artificial Intelligence: Practical Applications and Challenges", publisher: "International Transfer Pricing Journal 32(6) (D. Olzhabayeva)", type: academic, url: "https://shop.ibfd.org/journal/operationalizing-transfer-pricing-generative-artificial-intelligence-practical-applications", date: "2025-09-26", access: full, locator: "overview (abstract only; article paywalled)" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "items 1 and 3" }
+  last_reviewed: "2026-10-17"
 
 - id: tax-transfer-pricing-09
   title: Business-side self-service AI Q&A on TP documentation requirements
@@ -363,8 +362,8 @@
   role_evolution: "Andersen sees AI raising baseline client knowledge and the quality of questions put to advisers (ANDERSEN-AI-2026)."
   evidence_grade: C
   sources:
-    - { ref: ANDERSEN-AI-2026, title: "AI in Transfer Pricing: Insight, Illusion and Risk", publisher: Andersen Australia, type: firm, url: "https://au.andersen.com/ai-in-transfer-pricing/", date: 2026-02-17, access: full, locator: "sections 'The Rise of AI-Assisted Expertise' and 'The Execution Gap'" }
-  last_reviewed: 2026-10-17
+    - { ref: ANDERSEN-AI-2026, title: "AI in Transfer Pricing: Insight, Illusion and Risk", publisher: Andersen Australia, type: firm, url: "https://au.andersen.com/ai-in-transfer-pricing/", date: "2026-02-17", access: full, locator: "sections 'The Rise of AI-Assisted Expertise' and 'The Execution Gap'" }
+  last_reviewed: "2026-10-17"
   notes: "Firm marketing page; the test is a single conversation."
 
 - id: tax-transfer-pricing-10
@@ -397,11 +396,11 @@
   role_evolution: "No source describes role change."
   evidence_grade: C
   sources:
-    - { ref: KPMG-TP-2025, title: "GenAI Revolutionizes Transfer Pricing and Valuation", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2025/genai-revolutionizes-transfer-pricing-valuation.html", date: 2025, access: full, locator: "opening paragraph" }
-    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: 2026-06-28, access: full, locator: "Q1, Q5, Q6" }
-    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax", publisher: Journal of Accountancy, type: regulator, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: 2026-09-01, access: full, locator: "discussion of Clinco v. Commissioner, T.C. Memo. 2026-16" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "items 1 and 5" }
-  last_reviewed: 2026-10-17
+    - { ref: KPMG-TP-2025, title: "GenAI Revolutionizes Transfer Pricing and Valuation", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2025/genai-revolutionizes-transfer-pricing-valuation.html", date: "2025", access: full, locator: "opening paragraph" }
+    - { ref: IRS-TPFAQ-2026, title: "Transfer pricing documentation best practices FAQs", publisher: IRS, type: regulator, url: "https://www.irs.gov/businesses/international-businesses/transfer-pricing-documentation-best-practices-frequently-asked-questions-faqs", date: "2026-06-28", access: full, locator: "Q1, Q5, Q6" }
+    - { ref: TAXCT-CLINCO-2026, title: "A recipe for sanctions: AI-hallucinated citations in tax", publisher: Journal of Accountancy, type: regulator, url: "https://www.journalofaccountancy.com/issues/2026/sep/a-recipe-for-sanctions-ai-hallucinated-citations-in-tax/", date: "2026-09-01", access: full, locator: "discussion of Clinco v. Commissioner, T.C. Memo. 2026-16" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "items 1 and 5" }
+  last_reviewed: "2026-10-17"
 
 - id: tax-transfer-pricing-11
   title: AI-assisted economic analysis for TP controversy and expert reports, with disclosure of tools
@@ -435,10 +434,10 @@
   role_evolution: "The IRS expectation puts personal accountability on the expert, not the tool (IRS-LBI-TP-2026)."
   evidence_grade: D
   sources:
-    - { ref: IRS-LBI-TP-2026, title: "Report on recent US international tax developments, 31 July 2026", publisher: "EY Tax News (reporting IRS LB&I remarks of 29 Jul 2026)", type: regulator, url: "https://taxnews.ey.com/news/2026-1658-report-on-recent-us-international-tax-developments-31-july-2026", date: 2026-07-31, access: full, locator: "paragraphs 1-2 under the IRS AI in transfer pricing item" }
-    - { ref: PROSKAUER-707-2026, title: "Machine-Generated Evidence Challenges the Federal Rules: Inside the Contested Proposed FRE 707", publisher: Proskauer Rose, type: firm, url: "https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707", date: 2026-07, access: full, locator: "timeline and 'Divided Opinions' sections" }
-    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: 2026-05-08, access: full, locator: "p. 34, panel description" }
-  last_reviewed: 2026-10-17
+    - { ref: IRS-LBI-TP-2026, title: "Report on recent US international tax developments, 31 July 2026", publisher: "EY Tax News (reporting IRS LB&I remarks of 29 Jul 2026)", type: regulator, url: "https://taxnews.ey.com/news/2026-1658-report-on-recent-us-international-tax-developments-31-july-2026", date: "2026-07-31", access: full, locator: "paragraphs 1-2 under the IRS AI in transfer pricing item" }
+    - { ref: PROSKAUER-707-2026, title: "Machine-Generated Evidence Challenges the Federal Rules: Inside the Contested Proposed FRE 707", publisher: Proskauer Rose, type: firm, url: "https://www.proskauer.com/blog/machine-generated-evidence-challenges-the-federal-rules-inside-the-contested-proposed-federal-rule-of-evidence-707", date: "2026-07", access: full, locator: "timeline and 'Divided Opinions' sections" }
+    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: "2026-05-08", access: full, locator: "p. 34, panel description" }
+  last_reviewed: "2026-10-17"
   notes: "Idea: discussed by an IRS official, an ABA panel and a law-firm commentary; no deployment or measurement found. The IRS remark is a statement of expectation, reported second-hand by EY. The proskauer.com page carries no visible date; 2026-07 is from the lexblog syndication path (2026/07/29)."
 
 - id: tax-transfer-pricing-12
@@ -478,11 +477,11 @@
   role_evolution: "GAO links staff reductions to a shortage of skilled employees to support or develop AI tools (GAO-2026)."
   evidence_grade: B
   sources:
-    - { ref: TIGTA-2025, title: "The IRS Could Leverage Examination Results in AI Examination Case Selection Models and Improve Processes to Evaluate Performance (2025-308-022)", publisher: TIGTA, type: regulator, url: "https://www.tigta.gov/sites/default/files/reports/2025-08/2025308022fr.pdf", date: 2025-05-19, access: full, locator: "Highlights page and memorandum, Figure 2 discussion" }
-    - { ref: GAO-2026, title: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management (GAO-26-107522)", publisher: GAO, type: regulator, url: "https://www.gao.gov/products/gao-26-107522", date: 2026-03-24, access: full, locator: "What GAO Found; Recommendations (read via text mirror)" }
-    - { ref: IRS-SOP-2024, title: "IRS IRA Strategic Operating Plan, Annual Update Supplement (Pub. 3744-A)", publisher: IRS, type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p3744a.pdf", date: 2024-04, access: full, locator: "pp. 36-38: 'Alternative Interventions' and 'Leveraging Data and AI'" }
-    - { ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation (appendices)", publisher: "AICPA, The Tax Adviser (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: 2026-06, access: full, locator: "Appendix A, risks 1-3" }
-  last_reviewed: 2026-10-17
+    - { ref: TIGTA-2025, title: "The IRS Could Leverage Examination Results in AI Examination Case Selection Models and Improve Processes to Evaluate Performance (2025-308-022)", publisher: TIGTA, type: regulator, url: "https://www.tigta.gov/sites/default/files/reports/2025-08/2025308022fr.pdf", date: "2025-05-19", access: full, locator: "Highlights page and memorandum, Figure 2 discussion" }
+    - { ref: GAO-2026, title: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management (GAO-26-107522)", publisher: GAO, type: regulator, url: "https://www.gao.gov/products/gao-26-107522", date: "2026-03-24", access: full, locator: "What GAO Found; Recommendations (read via text mirror)" }
+    - { ref: IRS-SOP-2024, title: "IRS IRA Strategic Operating Plan, Annual Update Supplement (Pub. 3744-A)", publisher: IRS, type: regulator, url: "https://www.irs.gov/pub/irs-pdf/p3744a.pdf", date: "2024-04", access: full, locator: "p. 6 ('Alternative Interventions for Emerging Concerns'); p. 38 ('Leveraging Data and AI' box)" }
+    - { ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation (appendices)", publisher: "AICPA, The Tax Adviser (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 1-3" }
+  last_reviewed: "2026-10-17"
   notes: "Grade capped at B: the measurements concern IRS selection models and the AI programme generally, not TP case selection. The IRS Supplement and the GAO report do not say whether any model targets TP issues specifically; the only TP reference is the compliance-alert sentence."
 
 - id: tax-transfer-pricing-13
@@ -515,9 +514,9 @@
   role_evolution: "No source describes role change for Hungarian auditors."
   evidence_grade: B
   sources:
-    - { ref: WTS-NAV-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: WTS Klient, type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: 2026-03-12, access: full, locator: "paragraphs under 'Strengthening of transfer pricing audits'" }
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "Nigeria section, 'Key Considerations'" }
-  last_reviewed: 2026-10-17
+    - { ref: WTS-NAV-2026, title: "2026 tax inspection plan of the Hungarian tax authority", publisher: WTS Klient, type: firm, url: "https://wtsklient.hu/en/2026/03/12/2026-tax-inspection-plan-of-the-hungarian-tax-authority/", date: "2026-03-12", access: full, locator: "paragraphs under 'Strengthening of transfer pricing audits'" }
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "Nigeria section, 'Key Considerations'" }
+  last_reviewed: "2026-10-17"
   notes: "Grade B rests on a named authority's stated practice, reported second-hand."
 
 - id: tax-transfer-pricing-14
@@ -550,10 +549,10 @@
   role_evolution: "No source describes role change."
   evidence_grade: D
   sources:
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "South Africa section" }
-    - { ref: APRIO-AI-2025, title: "AI and the Future of Transfer Pricing: Risks and Opportunities", publisher: Aprio, type: firm, url: "https://www.aprio.com/ai-and-the-future-of-transfer-pricing-risks-and-opportunities-ins-article-intl/", date: 2025-08-14, access: full, locator: "section 'AI tools for worldwide taxing authorities'" }
-    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: 2026-05-08, access: full, locator: "p. 34, panel description" }
-  last_reviewed: 2026-10-17
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "South Africa section" }
+    - { ref: APRIO-AI-2025, title: "AI and the Future of Transfer Pricing: Risks and Opportunities", publisher: Aprio, type: firm, url: "https://www.aprio.com/ai-and-the-future-of-transfer-pricing-risks-and-opportunities-ins-article-intl/", date: "2025-08-14", access: full, locator: "section 'AI tools for worldwide taxing authorities'" }
+    - { ref: ABA-MAYMTG-2026, title: "ABA Section of Taxation May Meeting 2026 agenda", publisher: ABA Section of Taxation, type: conference, url: "https://sitepilot11.firmseek.com/client/chamberlain/www/media/event/657_ABA_Section_of_Taxation_2026_May_Meeting_Agenda.pdf", date: "2026-05-08", access: full, locator: "p. 34, panel description" }
+  last_reviewed: "2026-10-17"
   notes: "Idea: practitioners discuss it; no confirmed authority deployment of document-reading AI for TP was found. ITR-NEXDIGM-2026 (sponsored) asserts authorities are deploying AI agent frameworks for TP audits but names none, so it is not used as support."
 
 - id: tax-transfer-pricing-15
@@ -586,11 +585,11 @@
   role_evolution: "No source describes role change."
   evidence_grade: D
   sources:
-    - { ref: APRIO-AI-2025, title: "AI and the Future of Transfer Pricing: Risks and Opportunities", publisher: Aprio, type: firm, url: "https://www.aprio.com/ai-and-the-future-of-transfer-pricing-risks-and-opportunities-ins-article-intl/", date: 2025-08-14, access: full, locator: "section 'AI tools for worldwide taxing authorities'" }
-    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: 2026-06-08, access: full, locator: "'What Can Multinationals Do?', APA programs" }
-    - { ref: IRS-LBI-TP-2026, title: "Report on recent US international tax developments, 31 July 2026", publisher: "EY Tax News", type: regulator, url: "https://taxnews.ey.com/news/2026-1658-report-on-recent-us-international-tax-developments-31-july-2026", date: 2026-07-31, access: full, locator: "UN draft protocol paragraph" }
-    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: 2026-09-21, access: full, locator: "paragraph beginning 'None of this should be read as a claim'" }
-  last_reviewed: 2026-10-17
+    - { ref: APRIO-AI-2025, title: "AI and the Future of Transfer Pricing: Risks and Opportunities", publisher: Aprio, type: firm, url: "https://www.aprio.com/ai-and-the-future-of-transfer-pricing-risks-and-opportunities-ins-article-intl/", date: "2025-08-14", access: full, locator: "section 'AI tools for worldwide taxing authorities'" }
+    - { ref: BTAX-AFRICA-2026, title: "South Africa and Nigeria Drive AI-Enabled Transfer Pricing Audits", publisher: "Bloomberg Tax (authors from KPMG South Africa and Nigeria)", type: firm, url: "https://news.bloomberglaw.com/tax-insights-and-commentary/south-africa-and-nigeria-drive-ai-enabled-transfer-pricing-audits", date: "2026-06-08", access: full, locator: "'What Can Multinationals Do?', APA programs" }
+    - { ref: IRS-LBI-TP-2026, title: "Report on recent US international tax developments, 31 July 2026", publisher: "EY Tax News", type: regulator, url: "https://taxnews.ey.com/news/2026-1658-report-on-recent-us-international-tax-developments-31-july-2026", date: "2026-07-31", access: full, locator: "UN draft protocol paragraph" }
+    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: "2026-09-21", access: full, locator: "paragraph beginning 'None of this should be read as a claim'" }
+  last_reviewed: "2026-10-17"
   notes: "Idea. No APA or MAP deployment of AI was found."
 
 - id: tax-transfer-pricing-16
@@ -622,8 +621,8 @@
   role_evolution: "No source describes role change."
   evidence_grade: C
   sources:
-    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads: disruption, data, and the decade ahead (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: 2026-09-21, access: full, locator: "paragraph on new generation of AI-powered TP platforms" }
-  last_reviewed: 2026-10-17
+    - { ref: ITR-NEXDIGM-2026, title: "Transfer pricing at the crossroads: disruption, data, and the decade ahead (sponsored)", publisher: "International Tax Review (Nexdigm)", type: vendor, url: "https://www.internationaltaxreview.com/article/2gxa3xiio1u5wu2o18y68/sponsored/transfer-pricing-at-the-crossroads-disruption-data-and-the-decade-ahead", date: "2026-09-21", access: full, locator: "paragraph on new generation of AI-powered TP platforms" }
+  last_reviewed: "2026-10-17"
   notes: "The VAT and customs parts may route to the indirect-tax module."
 
 - id: tax-transfer-pricing-17
@@ -656,12 +655,12 @@
   role_evolution: "Werfel's preparer register also lists skill erosion, vendor dependence and institutional knowledge loss as workforce risks, with controls such as capability assessments and documented manual workflows (AICPA-WERFEL-2026, Appendix C, risks 13-15)."
   evidence_grade: D
   sources:
-    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: 2026-08-20, access: full, locator: "'3 ways to build audit-ready AI practices', third principle" }
-    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: 2026-06-24, access: full, locator: "items 2 and 4; 'Best Practices for Responsible AI Use'" }
-    - { ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation (appendices)", publisher: "AICPA, The Tax Adviser (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: 2026-06, access: full, locator: "Appendix C, risks 12-15" }
-    - { ref: AICPA-CART-2026, title: "AICPA, former IRS commissioner to lead initiative on AI in tax", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/", date: 2026-09-23, access: full, locator: "final paragraphs" }
-    - { ref: PCRT-AI-2026, title: "Professional bodies issue AI advice to members", publisher: "Association of Taxation Technicians (PCRT bodies)", type: standard-setter, url: "https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members", date: 2026-01-19, access: full, locator: "news item body" }
-  last_reviewed: 2026-10-17
+    - { ref: BDO-AIGOV-2026, title: "AI governance in transfer pricing: Is your documentation CRA-ready?", publisher: BDO Canada, type: firm, url: "https://www.bdo.ca/insights/ai-governance-in-transfer-pricing-how-to-create-defensible-documentation", date: "2026-08-20", access: full, locator: "'3 ways to build audit-ready AI practices', third principle" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "items 2 and 4; 'Best Practices for Responsible AI Use'" }
+    - { ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation (appendices)", publisher: "AICPA, The Tax Adviser (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 12-15" }
+    - { ref: AICPA-CART-2026, title: "AICPA, former IRS commissioner to lead initiative on AI in tax", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/news/2026/sep/aicpa-former-irs-commissioner-to-lead-initiative-on-ai-in-tax/", date: "2026-09-23", access: full, locator: "final paragraphs" }
+    - { ref: PCRT-AI-2026, title: "Professional bodies issue AI advice to members", publisher: "Association of Taxation Technicians (PCRT bodies)", type: standard-setter, url: "https://www.att.org.uk/technical/news/professional-bodies-issue-ai-advice-members", date: "2026-01-19", access: full, locator: "news item body" }
+  last_reviewed: "2026-10-17"
   notes: "Idea: recommended by firms, a regulator alert and a risk framework; no evidence of adoption rates. Pattern 'other': a control layer wrapped around AI-assisted work. The OPR alert is general to federal tax practice, not TP-specific."
 ```
 
@@ -699,9 +698,9 @@
 - **US documentation:** section 6662(e) and Treas. Reg. 1.6662-6 documentation must support a reasonable method and application; documentation does not guarantee penalty protection (IRS-TPFAQ-2026).
 - **Expert evidence:** IRS expects experts to explain inputs, assumptions, methods and AI tools and show formulas (IRS-LBI-TP-2026). Proposed FRE 707 sent back for revision on 3-4 Jun 2026 (PROSKAUER-707-2026).
 - **UK:** PCRT topical guidance on AI applies fundamental principles (integrity, due care, confidentiality) (PCRT-AI-2026).
-- **Risk frameworks:** Werfel's 20-risk framework, tested by the AICPA's Council on AI Risk in Tax (AICPA-WERFEL-2026; AICPA-CART-2026). The AICPA says AI moves too fast for lasting standards (landscape-tax.md, from the CART/Werfel coverage).
+- **Risk frameworks:** Werfel's 20-risk framework, tested by the AICPA's Council on AI Risk in Tax (AICPA-WERFEL-2026; AICPA-CART-2026).
 - **Courts:** Tax Court warning in Clinco on hallucinated citations (TAXCT-CLINCO-2026). An Indian tribunal order recalled after relying on non-existent judgments (ITATONLINE-BUCKEYE-2025); this concerns tax-authority AI misuse, not TP.
-- **OECD:** Chapter VII revisions "not intended to change the general principles" (PWCDE-CH7-2026). Firms say AI services may need cost-plus pricing to be tested, but this is secondary and unverified here.
+- **OECD:** Chapter VII revisions "not intended to change the general principles" (PWCDE-CH7-2026). A search extract of a PwC alert (not opened) says multinationals should test cost-plus pricing of AI-enabled services; unverified here.
 
 ### Frontier signals
 
@@ -711,7 +710,10 @@
 - 2026-07-29: IRS LB&I official sets expert-witness expectations on AI (IRS-LBI-TP-2026).
 - 2026-03-12: Hungary 2026 plan uses AI-based models for TP audit selection (WTS-NAV-2026).
 - 2026-06-08: KPMG authors describe where AI-enabled TP audits could go in South Africa and Nigeria (BTAX-AFRICA-2026).
-- 2026-01-05 (planned): Philippine BIR RMO No. 1-2026 adds TP indicators to analytics-based audit selection (GT-BIR-2026; the date is the memorandum year per the article; no AI claim).
+- 2026 (article dated 2026-02-24): Philippine BIR RMO No. 1-2026 adopts a system-assisted, risk-based selection framework that includes TP indicators (GT-BIR-2026; the article does not say AI).
+- 2025-10-06 and 2025-09-16: AI sessions at the IFA Congress side seminar (speakers include NOEMA Global's head of TP) and the ITR AI in Tax Forum (speakers include Shell's global head of TP and tax technology). Speaker lists only; no content was available (IFA-LISBON-2025; ITR-AIFORUM-2025).
+- 2026-07-15: KPMG podcast asks what GenAI reprogramming the value chain means for IP, cost allocation and TP; only the page description was read (KPMG-TPPOD-2026).
+- 2025-09-18: OECD *Governing with AI* names tax administration among areas showing concrete results and lists privacy, fairness and accountability risks, per a Grant Thornton Ireland summary (OECD-GOVAI-2025).
 
 ### Workforce and role effects
 
@@ -788,7 +790,7 @@
 | OECD-GOVAI-2025 | Governing with AI (OECD), via Grant Thornton Ireland summary | Grant Thornton Ireland | firm | https://www.grantthornton.ie/insights/factsheets/governing-ai-tax-authorities/ | 2025-09-18 | full (summary only) |
 | ABA-TT-2026 | Transforming compliance risk management (ABA Tax Times report on the AI and TP panel) | ABA Section of Taxation | professional-body | https://www.americanbar.org/groups/taxation/resources/tax-times/2026/transforming-compliance-risk-management/ | 2026-05 | search-only |
 
-Source type count (distinct sources, 39 including 1 search-only): conference 5, regulator 8, standard-setter 1, professional-body 3 (one search-only), firm 14, vendor 3, academic 3, press 2, podcast 1. No survey sources: none specific to TP were found.
+Source type count (38 distinct sources, one of them search-only): conference 5, regulator 7, standard-setter 1, professional-body 3 (one search-only), firm 13, vendor 3, academic 3, press 2, podcast 1. No survey sources: none specific to TP were found.
 
 ## 6. Gaps
 

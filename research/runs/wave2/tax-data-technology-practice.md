@@ -4,7 +4,7 @@ Archetype: tax. Module: tax-data-technology (in-house tax operations and data ar
 
 ## 1. Summary
 
-- 16 candidate use cases: grade A 0, B 7, C 8, D 1. No use case reaches grade A: no source publishes a measured outcome from a named in-house tax function for this module.
+- 16 candidate use cases: grade A 0, B 7, C 8, D 1. No use case reaches grade A: the only named in-house figures (Rover, 80% and 50%) are vendor-published and come from an adjacent indirect-tax reconciliation, so that entry is capped at B.
 - 45 distinct sources read or seen (43 opened, 2 search-only). By type: conference 2, firm 6, job-posting 7, press 2, professional-body 1, survey 6, vendor 21.
 - Practice is clearest in three places. (1) Job postings from OpenAI, Snowflake, Fortive, Apple and EY show tax functions staffing for a tax data layer, light coding and review of automated pipelines. (2) Vendors are exposing tax platforms to customers' own agents through MCP (Avalara shipped, Kintsugi read-only, Sovos developing) but no customer use is published. (3) Real-time reporting (France's September 2026 mandate) turns master-data quality into a legal-validity issue, and conference accounts say regulators are ahead of the companies they audit.
 - Evidence is thin where it matters. Outcomes are vendor-published or anecdotal; there is no independent error-rate, override-rate or parallel-run evidence. The strongest governance signals are survey and event findings: 57.4% of surveyed indirect tax leaders are not confident they could defend AI-assisted decisions to an authority (vendor-sponsored survey), and only two of more than 50 TEI attendees polled said tax owns AI implementation.
