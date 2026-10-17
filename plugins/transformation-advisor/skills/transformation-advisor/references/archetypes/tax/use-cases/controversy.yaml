@@ -68,11 +68,12 @@
     - {ref: TPB-GS-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-01, discourse-01 (intake part) and governance-16 (triage part, graded D there). No named
-    customer, accuracy figure or time measurement for any vendor notice tool was found. Routed from
+    No named customer, accuracy figure or time measurement for any vendor notice tool was found. Routed from
     compliance-individual-business: Accrual's Arc agent demo includes notice intake, response-letter drafting and a
     power-of-attorney step (ACCRUAL-ARC-2026); it is the only practitioner-side delegate-level signal and sits in that
-    module (tax-compliance-individual-business-09). Indirect-tax notice intake: tax-indirect-tax-14. The author of ACCTODAY-2026 is operations manager at Ledger Labs, an outsourced accounting provider, and several of its claims could not be traced.
+    module (tax-compliance-individual-business-09). Indirect-tax notice intake: tax-indirect-tax-14. The author of
+    ACCTODAY-2026 is operations manager at Ledger Labs, an outsourced accounting provider, and several of its claims
+    could not be traced.
 
 - id: tax-controversy-02
   title: AI drafts client explanations and formal replies to notices (CP2000 responses, penalty abatement requests)
@@ -120,10 +121,9 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework items 1, 2 and 6"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-02, discourse-01 (drafting part) and governance-16 (drafting part). Blue J Tax Writing was
-    routed from research-advisory, where general memo and client drafting is covered (tax-research-advisory-14). The FindSkill article is a
-    training-course vendor blog; its '45-minute call becomes a 5-minute email' line is an illustration, not a
-    measurement.
+    Blue J Tax Writing was routed from research-advisory, where general memo and client drafting is covered
+    (tax-research-advisory-14). The FindSkill article is a training-course vendor blog; its '45-minute call becomes a
+    5-minute email' line is an illustration, not a measurement.
 
 - id: tax-controversy-03
   title: Weekly IRS transcript monitoring to act before CP2000 underreporter notices arrive
@@ -161,10 +161,9 @@
     - {ref: ACCTODAY-2019, title: "Using AI to get ahead of the IRS", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/using-ai-to-get-ahead-of-the-irs", date: "2019-10-22", access: full, locator: "paragraphs 2-9 (Bill Nemeth, Atlanta practitioner)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-03. Older than the review window; kept as the only named practitioner deployment found. The 'AI'
-    label is the article's; the software checks transcripts for a flag code. The software (Tax Help) was designed by
-    Nemeth's son, who made this capability a selling point, so the account is not independent. No 2025-2026 follow-up
-    was found.
+    Older than the review window; kept as the only named practitioner deployment found. The 'AI' label is the
+    article's; the software checks transcripts for a flag code. The software (Tax Help) was designed by Nemeth's son,
+    who made this capability a selling point, so the account is not independent. No 2025-2026 follow-up was found.
 
 - id: tax-controversy-04
   title: Pre-filing audit-exposure review that reconciles returns to third-party data and flags audit-sensitive items
@@ -215,10 +214,9 @@
     - {ref: TPB-GS-2026, title: "TPB(GS) 55/2026 The use of Artificial Intelligence and the Code of Professional Conduct", publisher: "Tax Practitioners Board (Australia)", type: regulator, url: "https://www.tpb.gov.au/tpbgs-552026-use-artificial-intelligence-and-code-professional-conduct", date: "2026-07-22", access: full, locator: "Confidentiality section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-04 (C), discourse-02 (D) and governance-17 (D). Overlaps: tax-compliance-corporate-13,
-    tax-compliance-individual-business-12 (including TaxGPT's return-review agent) and, for intercompany positions,
-    tax-transfer-pricing-15. The authority-side analogue is ATO's lodgment prompts
-    (tax-controversy-19). Unverified ACCTODAY-2026 claims (an IRM 10.24.1 description, a GAO finding on model
+    Overlaps: tax-compliance-corporate-13, tax-compliance-individual-business-12 (including TaxGPT's return-review
+    agent) and, for intercompany positions, tax-transfer-pricing-15. The authority-side analogue is ATO's lodgment
+    prompts (tax-controversy-19). Unverified ACCTODAY-2026 claims (an IRM 10.24.1 description, a GAO finding on model
     validation, TIGTA workforce figures) are not used.
 
 - id: tax-controversy-05
@@ -258,11 +256,10 @@
     - {ref: TR-CHECKPOINT-2026, title: "AI-powered IRS audits are here but taxpayers have new relief options, tax pros say", publisher: "Thomson Reuters Checkpoint News", type: press, url: "https://tax.thomsonreuters.com/news/ai-powered-irs-audits-are-here-but-taxpayers-have-new-relief-options-tax-pros-say/", date: "2026-08-05", access: full, locator: "report on a 30 Jul 2026 PwC webcast"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-05. Primarily a transfer-pricing item, kept here because it is framed as audit defence; documentation
-    review against country requirements is tax-transfer-pricing-08 (see also -14), and TP audit defence drafting is
-    tax-transfer-pricing-16. EY's survey also says 49% of
-    respondents expect to tailor TP documentation to individual tax authorities; that is an expectation, not a
-    deployment.
+    Primarily a transfer-pricing item, kept here because it is framed as audit defence; documentation review against
+    country requirements is tax-transfer-pricing-08 (see also -14), and TP audit defence drafting is
+    tax-transfer-pricing-16. EY's survey also says 49% of respondents expect to tailor TP documentation to individual
+    tax authorities; that is an expectation, not a deployment.
 
 - id: tax-controversy-06
   title: In-house tax teams summarise legislation and dispute files and check consistency of data shared with authorities
@@ -302,9 +299,9 @@
     - {ref: EY-PAPERJAM-2026, title: "Tax controversy in a GenAI world", publisher: "Paperjam (EY Luxembourg, promotional)", type: firm, url: "https://en.paperjam.lu/article/tax-controversy-in-a-genai-world", date: "2026-03-06", access: full, locator: "sections 'Key figures', 'A new approach to tax governance'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-06. The press release says 70% have implemented or are integrating at least one GenAI tool for
-    controversy management; the survey page splits 'nearly seven in 10' into 39% plus 30%, where the 30% is 'other key
-    processes'. Use the split. The survey PDF was not opened.
+    The press release says 70% have implemented or are integrating at least one GenAI tool for controversy management;
+    the survey page splits 'nearly seven in 10' into 39% plus 30%, where the 30% is 'other key processes'. Use the
+    split. The survey PDF was not opened.
 
 - id: tax-controversy-07
   title: Agents draft responses to audit queries and track information document requests during an examination
@@ -348,9 +345,8 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework item 1"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-07, plus routed items (TR-TEIAUDITOR-2026 from research-advisory and tax-data-technology; EY-INDIA-2026
-    from indirect-tax). An IDR-tracking agent page (Cassidy) and a vendor case study claiming 28% fewer audit
-    adjustments (CleverX) appeared only in search results and could not be opened; neither is used.
+    An IDR-tracking agent page (Cassidy) and a vendor case study claiming 28% fewer audit adjustments (CleverX)
+    appeared only in search results and could not be opened; neither is used.
 
 - id: tax-controversy-08
   title: AI-assisted research and drafting for Tax Court, tribunal and IRS submissions, with citation verification as the control
@@ -411,13 +407,11 @@
     - {ref: ITATONLINE-BUCKEYE-2025, title: "Buckeye Trust v. Registrar, ITAT (Karnataka High Court) digest", publisher: "itatonline.org", type: press, url: "https://itatonline.org/digest/verdicts/buckeye-trust-v-registrar-itat/", date: "2025-10-29", access: full, locator: "digest summary and linked Karnataka High Court order in WP 25280/2025 dated 18 Sep 2025 (digest uploaded 29 Oct 2025)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-08 (C), discourse-03 (D), discourse-16 (D, pro se filers and court guardrails) and
-    governance-14 (D), plus routed items from research-advisory (UK tribunal cases, the Charlotin database, Riddle
-    Aggregates) and transfer-pricing (Buckeye Trust). Graded C: use is shown by incidents, not by a named firm's
-    managed deployment, and no source reports verification error rates. JofA says Clinco appears to be the first Tax
-    Court case on potential hallucinations; the determinations rested on a bank-deposit analysis, not the citation
-    failure. Citation-resolution tooling and AI-use records sit in tax-research-advisory-19 and -20, screening of incoming
-    AI-generated material in tax-research-advisory-18, and AI in TP expert reports in tax-transfer-pricing-17.
+    Graded C: use is shown by incidents, not by a named firm's managed deployment, and no source reports verification
+    error rates. JofA says Clinco appears to be the first Tax Court case on potential hallucinations; the
+    determinations rested on a bank-deposit analysis, not the citation failure. Citation-resolution tooling and AI-use
+    records sit in tax-research-advisory-19 and -20, screening of incoming AI-generated material in
+    tax-research-advisory-18, and AI in TP expert reports in tax-transfer-pricing-17.
 
 - id: tax-controversy-09
   title: "Idea: counsel-directed, enterprise-tool AI analysis to preserve privilege in controversy matters"
@@ -637,12 +631,11 @@
     - {ref: TR-CHECKPOINT-2025, title: "Transfer Pricing Expert: 'Prepare Now' for Best Chance to Avoid Scrutiny", publisher: "Thomson Reuters Checkpoint News", type: press, url: "https://tax.thomsonreuters.com/news/transfer-pricing-expert-prepare-now-for-best-chance-to-avoid-scrutiny/", date: "2025-10-15", access: full, locator: "report on an Exactera webinar of 12 Sep 2025"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-09 (graded A there), discourse-05 (B) and governance-01 (B), plus a routed transfer-pricing
-    item. Graded B: TIGTA's figures are redacted and the NTA figures are not attributed to AI, so no measured AI
-    outcome is published. TIGTA's report predates the 2025 staff cuts. Accounting Today's claim that pilots show the
-    models 'outperform' prior methods is not supported by TIGTA and is not used; EisnerAmper's statement that AI is in
-    the DIF system is not supported by TIGTA either. The IRM URL in this form opened for the discourse researcher;
-    other researchers got a 404 on a variant URL.
+    Graded B: TIGTA's figures are redacted and the NTA figures are not attributed to AI, so no measured AI outcome is
+    published. TIGTA's report predates the 2025 staff cuts. Accounting Today's claim that pilots show the models
+    'outperform' prior methods is not supported by TIGTA and is not used; EisnerAmper's statement that AI is in the
+    DIF system is not supported by TIGTA either. The IRM URL in this form opened for the discourse researcher; other
+    researchers got a 404 on a variant URL.
 
 - id: tax-controversy-14
   title: "Idea: outcome feedback, drift monitoring and disparity testing for AI audit-selection models"
@@ -766,13 +759,11 @@
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risk 7 (illustrative controls)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-10 (B, states), discourse-12 (B, HMRC Connect), governance-09 (A, HMRC; caseworker tools
-    moved to tax-controversy-21), governance-13 (A, Austria) and the Austria part of discourse-18, plus routed items
-    from indirect-tax (South Carolina, Tax Notes survey, SEATA, Hungary) and transfer-pricing (Hungary, HMRC ICTS,
-    South Africa and Nigeria). All revenue figures are the authorities' own attributions with no published method;
-    do not compare HMRC's GBP 10 billion with its GBP 50.2 billion total compliance yield. Whether the HMRC ICTS
-    proposal was adopted was not checked. TP-specific authority targeting is also tax-transfer-pricing-23. An OECD speaker's claim that some administrations cut VAT investigations
-    from about nine months to three is second-hand (SSL-OECDVAT-2026) and is not used as an outcome.
+    HMRC caseworker tools are in tax-controversy-21. All revenue figures are the authorities' own attributions with no
+    published method; do not compare HMRC's GBP 10 billion with its GBP 50.2 billion total compliance yield. Whether
+    the HMRC ICTS proposal was adopted was not checked. TP-specific authority targeting is also
+    tax-transfer-pricing-23. An OECD speaker's claim that some administrations cut VAT investigations from about nine
+    months to three is second-hand (SSL-OECDVAT-2026) and is not used as an outcome.
 
 - id: tax-controversy-16
   title: AI fraud and identity-theft screening that flags returns and pauses refunds, with human review (IRS)
@@ -817,9 +808,8 @@
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 13, 14 and 17"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-13 and governance-06. No published error, false-positive or release-time rates for IRS fraud
-    models were found. The 'Zero Paper AI Routing' mail tool (pre-deployment) is routed to compliance and the 'IRS IaaP
-    Accelerator' to tax-data-technology.
+    No published error, false-positive or release-time rates for IRS fraud models were found. The 'Zero Paper AI
+    Routing' mail tool (pre-deployment) is routed to compliance and the 'IRS IaaP Accelerator' to tax-data-technology.
 
 - id: tax-controversy-17
   title: AI and automation to speed IRS amended-return processing
@@ -857,10 +847,10 @@
     - {ref: TREAS-AIINV-2026, title: "IRS ramps up AI use amid staff cuts, Treasury inventory shows", publisher: "FedScoop", type: press, url: "https://fedscoop.com/treasury-irs-ai-use-case-inventory/", date: "2026-01-29", access: full, locator: "paragraph on IT staffing"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-12 (B), discourse-07 (B) and governance-05 (A). Graded B: the only figure is an official's
-    spoken remark (from a transcript and audio obtained by Government Executive, reported by Nextgov) with no method,
-    sample or independent check. Pattern 'other': document-heavy transaction processing; the source does not describe
-    whether the flow was redesigned, so change_scope is step. Adjacent to controversy.
+    Graded B: the only figure is an official's spoken remark (from a transcript and audio obtained by Government
+    Executive, reported by Nextgov) with no method, sample or independent check. Pattern 'other': document-heavy
+    transaction processing; the source does not describe whether the flow was redesigned, so change_scope is step.
+    Adjacent to controversy.
 
 - id: tax-controversy-18
   title: Voicebots and chatbots answering taxpayer calls, questions and payment plans (IRS and others)
@@ -910,10 +900,9 @@
     - {ref: GT-IE-OECD-2025, title: "Governing with AI: The new face of tax authorities", publisher: "Grant Thornton Ireland", type: firm, url: "https://www.grantthornton.ie/insights/factsheets/governing-ai-tax-authorities/", date: "2025-09-19", access: full, locator: "sections 'Personalised and proactive taxpayer services', 'The trust factor'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-08 (A), governance-04 (A) and the Singapore and South Korea parts of discourse-18. Graded A
-    on TAS measurements of IRS deployments; the measures are weak proxies for quality, as TAS itself says. A former
-    SB/SE commissioner's claim that pay plans were worth at least ten times the $13 million programme cost has no
-    stated method and is not used. TAS sits inside the IRS but reports independently to Congress.
+    Graded A on TAS measurements of IRS deployments; the measures are weak proxies for quality, as TAS itself says. A
+    former SB/SE commissioner's claim that pay plans were worth at least ten times the $13 million programme cost has
+    no stated method and is not used. TAS sits inside the IRS but reports independently to Congress.
 
 - id: tax-controversy-19
   title: Real-time prompts during online filing that ask taxpayers to check unusual entries (ATO myTax)
@@ -958,10 +947,10 @@
     - {ref: ONENEWS-2026, title: "ATO using AI to scan tax returns: what it knows", publisher: "OneNews Australia", type: press, url: "https://www.onenewsaustralia.com/ato-ai-tax-return", date: "2026-08-10", access: full, locator: "section on third-party reporting and pre-fill"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-15 (B), governance-11 (A) and the ATO part of discourse-18. Grant Thornton Ireland rounds the
-    OECD figures to 600,000 and close to AUD 80 million; the OECD primary is used. The ATO statement's update date is
-    uncertain (27 Feb 2026 per a search result, 27 Jul 2026 per ONENEWS), so only the year is given. Australian Privacy
-    Act automated-decision disclosure changes apply from 10 Dec 2026, per ONENEWS (not checked against the law).
+    Grant Thornton Ireland rounds the OECD figures to 600,000 and close to AUD 80 million; the OECD primary is used.
+    The ATO statement's update date is uncertain (27 Feb 2026 per a search result, 27 Jul 2026 per ONENEWS), so only
+    the year is given. Australian Privacy Act automated-decision disclosure changes apply from 10 Dec 2026, per
+    ONENEWS (not checked against the law).
 
 - id: tax-controversy-20
   title: Agent-assist tools for tax-authority service staff (IRS Archie, California CDTFA, HMRC call summaries)
@@ -1013,11 +1002,9 @@
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 1, 4 and 17"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-11, discourse-09, governance-19 (Archie, all B), practice-18 and discourse-11 (CDTFA, B),
-    governance-10 (HMRC, B) and the France part of discourse-18. CDTFA status: a July 2025 reporter understood the
-    tool was not yet used in real time; the August 2025 Tax Notes piece says agents had begun using it, so maturity is
-    in-production for that tool. HMRC call summaries are a pilot. Links to controversy are indirect (notice and
-    examination questions).
+    CDTFA status: a July 2025 reporter understood the tool was not yet used in real time; the August 2025 Tax Notes
+    piece says agents had begun using it, so maturity is in-production for that tool. HMRC call summaries are a pilot.
+    Links to controversy are indirect (notice and examination questions).
 
 - id: tax-controversy-21
   title: Tax-authority examiner and caseworker assistants that sort evidence, summarise cases and draft documents
@@ -1069,11 +1056,9 @@
     - {ref: BLAW-TAXCT-2026, title: "Tax Court Navigates AI Misuse Rules for Self-Represented Filers", publisher: "Bloomberg Law (Daily Tax Report)", type: press, url: "https://news.bloomberglaw.com/daily-tax-report/tax-court-navigates-ai-misuse-rules-for-self-represented-filers", date: "2026-03-20", access: full, locator: "section 'Protecting Taxpayers'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-14 (B, ATO), practice-19 (B, TAS drafting), discourse-17 and governance-08 (C, IRS revenue
-    agents) and the caseworker parts of governance-09. Graded B on the ATO and HMRC named deployments; the IRS revenue
-    agent part is a single secondary claim (C on its own), and TAS's AI-assisted drafting is of a report to Congress,
-    not casework, so it does not support the grade. The ANAO figures cover all ATO production models, not this
-    tool.
+    Graded B on the ATO and HMRC named deployments; the IRS revenue agent part is a single secondary claim (C on its
+    own), and TAS's AI-assisted drafting is of a report to Congress, not casework, so it does not support the grade.
+    The ANAO figures cover all ATO production models, not this tool.
 
 - id: tax-controversy-22
   title: AI agents for case summaries and search in IRS Chief Counsel, Appeals and the Taxpayer Advocate Service
@@ -1117,12 +1102,12 @@
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation, Appendices", publisher: "AICPA (Danny Werfel)", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix A, risks 3 and 18"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-10, discourse-06 and governance-07 (all C). Verification 2026-10-17: Axios could not be reopened
-    (403 to curl; the text mirror blocked axios.com for the whole session), so the Axios quotations (the vendor
-    executive on guardrails, the Chief Counsel attorney) rest on the researchers' earlier mirror read and were not
-    re-verified. The core claim, Agentforce for document search and case summaries across Chief Counsel, TAS and Appeals,
-    is independently stated by EisnerAmper (EISNER-IRSAI-2026), so the entry stays at C, the most a blocked source allows.
-    An exclusive based on a vendor announcement plus one IRS attorney; whether it is live in Appeals was not confirmed, and no IRS document describes it. Appeals outcomes
+    Verification 2026-10-17: Axios could not be reopened (403 to curl; the text mirror blocked axios.com for the whole
+    session), so the Axios quotations (the vendor executive on guardrails, the Chief Counsel attorney) rest on the
+    researchers' earlier mirror read and were not re-verified. The core claim, Agentforce for document search and case
+    summaries across Chief Counsel, TAS and Appeals, is independently stated by EisnerAmper (EISNER-IRSAI-2026), so
+    the entry stays at C, the most a blocked source allows. An exclusive based on a vendor announcement plus one IRS
+    attorney; whether it is live in Appeals was not confirmed, and no IRS document describes it. Appeals outcomes
     (cycle time, settlement rates) are not published. The Treasury inventory (Jan 2026) does not describe this
     deployment.
 
@@ -1157,11 +1142,11 @@
     - {ref: OECD-GOVAI-2025, title: "Governing with Artificial Intelligence: The State of Play and Way Forward in Core Government Functions", publisher: "OECD", type: regulator, url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/governing-with-artificial-intelligence_398fa287/795de142-en.pdf", date: "2025-09", access: full, locator: "Chapter 5, Box 5.2 and 'Managing risks and challenges'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From governance-12. The OECD box cites a 2022 OECD source, so the trial may predate 2025; current status not stated.
-    Trial metrics are classification measures, not dispute outcomes. Graded B at verification (was A): the only
-    figure is a model's sensitivity and specificity in first trials, which does not measure throughput, ruling time or
-    any work outcome, and the deploying body is not named beyond 'Brazil'. The only appeals-stage AI with any measured
-    result in the inputs.
+    The OECD box cites a 2022 OECD source, so the trial may predate 2025; current status not stated. Trial metrics are
+    classification measures, not dispute outcomes. Graded B at verification (was A): the only figure is a model's
+    sensitivity and specificity in first trials, which does not measure throughput, ruling time or any work outcome,
+    and the deploying body is not named beyond 'Brazil'. The only appeals-stage AI with any measured result in the
+    inputs.
 
 - id: tax-controversy-24
   title: Announced agentic case management for tax-authority casework (ATO priorities, HMRC roadmap)
@@ -1207,9 +1192,8 @@
     - {ref: CIAT-BLOG-2026, title: "Artificial Intelligence Agents in the control of Transfer Pricing", publisher: "CIAT (Inter-American Center of Tax Administrations)", type: regulator, url: "https://www.ciat.org/artificial-intelligence-agents-in-the-control-of-transfer-pricing/?lang=en", date: "2026-02-03", access: full, locator: "blog text (author's opinion)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-16 (C, ATO), practice-17 and discourse-13 (C, HMRC), plus the CIAT item routed from
-    transfer-pricing. Announced priorities, not deployments; the only delegate-level evidence in the module, and it is
-    on the authority side.
+    Announced priorities, not deployments; the only delegate-level evidence in the module, and it is on the authority
+    side.
 
 - id: tax-controversy-25
   title: "Idea: LLM reasoning to detect and analyse abusive tax strategies (authority research)"

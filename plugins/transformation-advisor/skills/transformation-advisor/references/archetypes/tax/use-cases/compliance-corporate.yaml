@@ -71,10 +71,10 @@
     - {ref: EY-BTAX-2025, title: "AI Is Gaining Grip on Tax Compliance. Tax Pros Must Lead the Way (opinion by Daren R. Campbell and Randy Carpenter, EY)", publisher: "Bloomberg Tax", type: firm, url: "https://news.bloombergtax.com/tax-insights-and-commentary/ai-is-gaining-grip-on-tax-compliance-tax-pros-must-lead-the-way", date: "2025-11-21", access: full, locator: "Section 'People, Skills, Culture'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-01 and governance-01. Grade C: the only quantified statement is EY's own illustration and
-    TR describes a goal. Verification: the EY page's own metadata (firstpublishdate) and on-page date are 22 Jul 2024;
-    2026-02-12 is a later republication timestamp, so the ref is EY-COMPL-2024. The Salesforce case is rules-based and is cited only for the prerequisite. K-1 intake
-    is a separate entry (tax-compliance-corporate-02).
+    Grade C: the only quantified statement is EY's own illustration and TR describes a goal. Verification: the EY
+    page's own metadata (firstpublishdate) and on-page date are 22 Jul 2024; 2026-02-12 is a later republication
+    timestamp, so the ref is EY-COMPL-2024. The Salesforce case is rules-based and is cited only for the prerequisite.
+    K-1 intake is a separate entry (tax-compliance-corporate-02).
 
 - id: tax-compliance-corporate-02
   title: Agents interpret K-1 footnotes and mixed-format source items, map them to tax treatments with a confidence level, and learn from logged reviewer overrides
@@ -122,12 +122,12 @@
     - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, technical risks: 'Incorrect document extraction'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-02 and discourse-01. The setting is K-1 intake in PwC's asset and wealth management tax
-    work, which feeds partnership and corporate-investor returns; the interviewee says mapping happens 'across all
-    our tax businesses', so use in corporate direct-tax compliance is inferred, not shown. Grade capped at B (named
-    deployment, adjacent setting, no measurements). 'In production' reflects the reporter's paraphrase that agents
-    are deployed beyond pilots. PwC also reports more than 800 custom GPTs and more than 250 agents firm-wide; whether
-    these are in this workflow is not stated.
+    The setting is K-1 intake in PwC's asset and wealth management tax work, which feeds partnership and
+    corporate-investor returns; the interviewee says mapping happens 'across all our tax businesses', so use in
+    corporate direct-tax compliance is inferred, not shown. Grade capped at B (named deployment, adjacent setting, no
+    measurements). 'In production' reflects the reporter's paraphrase that agents are deployed beyond pilots. PwC also
+    reports more than 800 custom GPTs and more than 250 agents firm-wide; whether these are in this workflow is not
+    stated.
 
 - id: tax-compliance-corporate-03
   title: AI compares returns, source data and reconciliations year on year and flags anomalies for reviewers before filing
@@ -179,9 +179,8 @@
     - {ref: BTAX-CORPAI-2026, title: "AI for Corporate Tax: Verified Intelligence That Stands Up to Scrutiny", publisher: "Bloomberg Tax", type: vendor, url: "https://pro.bloombergtax.com/insights/artificial-intelligence/ai-for-corporate-tax-verified-intelligence-for-complex-calculations-and-compliance/", date: "2026-05-18", access: full, locator: "Risk list (restatement, IRS examination, SOX control failure)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-03 and discourse-09 (the Deloitte idea). All sources describe capability, a roadmap or a
-    scenario; no named corporate team or measured result was found. Taxpayer-side screening modelled on how
-    authorities score returns is tax-compliance-corporate-13.
+    All sources describe capability, a roadmap or a scenario; no named corporate team or measured result was found.
+    Taxpayer-side screening modelled on how authorities score returns is tax-compliance-corporate-13.
 
 - id: tax-compliance-corporate-04
   title: Validation agents critique other agents' output and reviewers do first-level review of automated outputs
@@ -226,8 +225,8 @@
     - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, practice risks: 'Control dilution'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-07. Practitioner statements and one roadmap item; no named deployment with a result. The
-    agent-critiques-agent claim is attributed to unnamed attendees in a recap by a vendor-owned institute.
+    Practitioner statements and one roadmap item; no named deployment with a result. The agent-critiques-agent claim
+    is attributed to unnamed attendees in a recap by a vendor-owned institute.
 
 - id: tax-compliance-corporate-05
   title: Preparation shifts to AI and staff review its output, with fewer review layers where outputs are consistent
@@ -274,9 +273,9 @@
     - {ref: TEI-TAXTECH-2026, title: "2026 TEI Tax Technology Seminar: All eyes on the Man Behind the Curtain (recap of the 27-29 Apr 2026 seminar)", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/2026-tei-tax-tech-man-behind-the-curtain", date: "2026-05-04", access: full, locator: "Paragraph on the poll about who owns AI implementation"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-04. A forward-looking statement by a firm, with a contrary academic view. No firm reports having
-    removed a review layer. KPMG Germany's press release is dated 6 or 7 May 2026 in different deep dives, so the
-    month is used. Pricing effects are tax-compliance-corporate-16.
+    A forward-looking statement by a firm, with a contrary academic view. No firm reports having removed a review
+    layer. KPMG Germany's press release is dated 6 or 7 May 2026 in different deep dives, so the month is used.
+    Pricing effects are tax-compliance-corporate-16.
 
 - id: tax-compliance-corporate-06
   title: Agents roll forward prior-year workpapers and prepare review-ready business returns (1120, 1120-S, 1065), including book-to-tax and state apportionment
@@ -326,9 +325,9 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Regulatory Framework item 6 and best practices (secure, enterprise-approved AI)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-05. Aimed at CPA firms preparing returns for clients, so firm-side, not in-house. No named customer
-    firm and no independent test was found; Thomson Reuters' business-return statement is a plan. Byron is the only
-    source describing AI in state apportionment. Agentic 1040 and 1065 preparation (Ready to Review, Basis, Black Ore)
+    Aimed at CPA firms preparing returns for clients, so firm-side, not in-house. No named customer firm and no
+    independent test was found; Thomson Reuters' business-return statement is a plan. Byron is the only source
+    describing AI in state apportionment. Agentic 1040 and 1065 preparation (Ready to Review, Basis, Black Ore)
     belongs to the compliance (individual and small-business) module.
 
 - id: tax-compliance-corporate-07
@@ -386,10 +385,10 @@
     - {ref: BTAX-FORUM-2026, title: "Bloomberg Tax Leadership Forum to Examine AI, Policy Shifts, and Global Tax Risk (programme announcement for the 16 Jun 2026 forum)", publisher: "Bloomberg Tax", type: conference, url: "https://pro.bloombergtax.com/?p=17345", date: "2026-06-10", access: full, locator: "Panel 'Emerging Technologies and AI Integration' panellist list (OpenAI tax operations director)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-03 and practice-09. Named in-house team, no published measurement, so grade B. Maturity is
-    'piloting' because the evidence is job listings and a demonstration (the practice angle read it as in
-    production). The recap says OpenAI sent four tax department members to the seminar; that is not the size of the
-    department. An AI lab's own tax team is an unusual starting point, so transfer to other companies is not shown.
+    Named in-house team, no published measurement, so grade B. Maturity is 'piloting' because the evidence is job
+    listings and a demonstration (the practice angle read it as in production). The recap says OpenAI sent four tax
+    department members to the seminar; that is not the size of the department. An AI lab's own tax team is an unusual
+    starting point, so transfer to other companies is not shown.
 
 - id: tax-compliance-corporate-08
   title: Large firms build agent platforms ('agent factories') to create, deploy and manage tax agents, and let professionals and clients build their own
@@ -441,9 +440,9 @@
     - {ref: DELOITTE-TTT-2026, title: "Riding the wave: A framework to plan for AI (Tax Transformation Trends AI report, part three)", publisher: "Deloitte Global", type: firm, url: "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf", date: "2026-07", access: full, locator: "Scenario 2 (p. 5): write-back of agentic corrections"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-06 and discourse-16. Pattern 'other': a platform for building, deploying and governing many
-    agents, not a single workflow. Firm announcements only; no corporate compliance return process is specified. The
-    landscape's EY-NVIDIA '3 million compliance tasks' target was not confirmed in a primary source and is not used.
+    Pattern 'other': a platform for building, deploying and governing many agents, not a single workflow. Firm
+    announcements only; no corporate compliance return process is specified. The landscape's EY-NVIDIA '3 million
+    compliance tasks' target was not confirmed in a primary source and is not used.
 
 - id: tax-compliance-corporate-09
   title: 'R&D credit: AI builds contemporaneous qualified-research evidence from project, payroll and ledger systems and populates Form 6765, including Section G'
@@ -510,11 +509,11 @@
     - {ref: TEI-MIDYEAR-2026, title: "TEI Midyear Conference 2026 at-a-glance agenda, preliminary (Washington DC, 15-18 Mar 2026)", publisher: "Tax Executives Institute", type: conference, url: "https://www.tei.org/sites/default/files/MY%202026%20At%20a%20Glance%20Agenda_rev3.2_0.pdf", date: "2026-02", access: full, locator: "Tuesday 17 March 2026: 'TEI Tax Lab: Research Credit Automation' (preliminary programme)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-07, discourse-05 and governance-02. All outcome figures are vendor-published and attributed
-    to no named customer. The Neo.Tax customer list seen in search results is search-only and not used; the vendor's
-    Kyocera citation was not checked. Strike Tax's page carries conflicting date metadata (May and August 2026), so
-    only the year is given. The IRS wording ('tax years beginning after 2025') is used in preference to the vendor's.
-    Verification removed a Baker Tilly 'find and replace' quotation that is not on the cited page.
+    All outcome figures are vendor-published and attributed to no named customer. The Neo.Tax customer list seen in
+    search results is search-only and not used; the vendor's Kyocera citation was not checked. Strike Tax's page
+    carries conflicting date metadata (May and August 2026), so only the year is given. The IRS wording ('tax years
+    beginning after 2025') is used in preference to the vendor's. Verification removed a Baker Tilly 'find and
+    replace' quotation that is not on the cited page.
 
 - id: tax-compliance-corporate-10
   title: An in-house tax team deploys a governed AI automation platform for tax workflows; the vendor's platform covers extraction, multi-system reconciliation and reporting with lineage
@@ -566,14 +565,13 @@
     - {ref: DELOITTE-TTT-2026, title: "Riding the wave: A framework to plan for AI (Tax Transformation Trends AI report, part three)", publisher: "Deloitte Global", type: firm, url: "https://www.deloitte.com/content/dam/assets-shared/docs/services/tax/2026/dttl-deloitte-tax-transformation-trends-ai-report-2025-part-three.pdf", date: "2026-07", access: full, locator: "Scenario 2 (p. 5): write-back to the system of record; accountability"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-08, discourse-04 and governance-11 (the write-back idea). Grade B rests on one named in-house
-    team in a vendor press release dated 2026-04-16; no outcomes and no workflow list for Oxford. Verification: the
-    demonstration list belongs to Savant's booth, not the Oxford session, so the title and solution no longer attribute
-    those workflows to Oxford; the TEI recaps read do not mention the session, and no post-event case study was found. The demos also
-    covered sales and use tax and VAT/GST, so relevance to direct-tax compliance is partial (see indirect-tax and
-    tax-data-technology). Ladder: the practice angle read this as automate (exceptions to people), the discourse
-    angle as augment; automate is used because the pattern is reconciliation with exception routing. Savant's and
-    Kognitos' customer lists in search results were not verified.
+    Grade B rests on one named in-house team in a vendor press release dated 2026-04-16; no outcomes and no workflow
+    list for Oxford. Verification: the demonstration list belongs to Savant's booth, not the Oxford session, so the
+    title and solution no longer attribute those workflows to Oxford; the TEI recaps read do not mention the session,
+    and no post-event case study was found. The demos also covered sales and use tax and VAT/GST, so relevance to
+    direct-tax compliance is partial (see indirect-tax and tax-data-technology). Ladder: the practice angle read this
+    as automate (exceptions to people), the discourse angle as augment; automate is used because the pattern is
+    reconciliation with exception routing. Savant's and Kognitos' customer lists in search results were not verified.
 
 - id: tax-compliance-corporate-11
   title: Cited AI tax research inside the compliance engine and workpapers, with every authority verified before reliance
@@ -627,10 +625,10 @@
     - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, workforce risks (skill erosion)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-10 and governance-05. Vendors and a conference programme only. Clinco involved an
-    individual's Schedule C, not a corporate return; it is cited for the verification duty. Stand-alone research
-    belongs to the research-advisory module; this entry covers research embedded in compliance engines and
-    workpapers. No independent benchmark of commercial tax research tools was found.
+    Vendors and a conference programme only. Clinco involved an individual's Schedule C, not a corporate return; it is
+    cited for the verification duty. Stand-alone research belongs to the research-advisory module; this entry covers
+    research embedded in compliance engines and workpapers. No independent benchmark of commercial tax research tools
+    was found.
 
 - id: tax-compliance-corporate-12
   title: Agents track the filing calendar and form, instruction and rule changes, and send change reports to the tax team
@@ -683,8 +681,8 @@
     - {ref: OPENAI-TAXCOMPLIANCEJOB-2025, title: "Manager, Tax Compliance and Automation (OpenAI job listing)", publisher: "Omega Venture Partners job board (OpenAI)", type: job-posting, url: "https://jobs.omegavp.com/companies/openai/jobs/52055389-manager-tax-compliance-and-automation", date: "2025-06-05", access: full, locator: "'In this role you'll': compliance calendar"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-11, discourse-06 and governance-12. Product announcements and roadmap items only; no named
-    user or measurement. Tax Flows is part of Orbitax's international tax product and is cited as a pattern.
+    Product announcements and roadmap items only; no named user or measurement. Tax Flows is part of Orbitax's
+    international tax product and is cited as a pattern.
 
 - id: tax-compliance-corporate-13
   title: Pre-filing audit-risk prediction and anomaly screening of the return, informed by how authorities score returns
@@ -732,9 +730,8 @@
     - {ref: GAO-2026, title: "Artificial Intelligence: IRS Actions Needed to Address Skills Gaps, Information Quality, and Strategic Management (GAO-26-107522)", publisher: "U.S. Government Accountability Office", type: regulator, url: "https://www.gao.gov/products/gao-26-107522", date: "2026-03-24", access: full, locator: "What GAO Found (126 active IRS AI use cases as of June 2025)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-12, discourse-11 and governance-10. Roadmap-level only. Authority-side AI (audit selection,
-    the 'AI-first IRS') belongs to the controversy module. The GAO date (24 Mar 2026) was confirmed from the report PDF
-    through a text mirror.
+    Roadmap-level only. Authority-side AI (audit selection, the 'AI-first IRS') belongs to the controversy module. The
+    GAO date (24 Mar 2026) was confirmed from the report PDF through a text mirror.
 
 - id: tax-compliance-corporate-14
   title: Continuously updated effective-tax-rate and cash-tax modelling with what-if scenarios
@@ -775,8 +772,8 @@
     - {ref: KOGNITOS-2026, title: "AI for Corporate Tax and Provision Automation (2026)", publisher: "Kognitos", type: vendor, url: "https://www.kognitos.com/blog/ai-corporate-tax-provision-automation-2026/", date: "2026-06-17", access: full, locator: "Data as binding constraint section"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-13. Provision-heavy; the direct-compliance part is cash-tax forecasting ahead of estimated payments.
-    No source describes AI computing or paying corporate estimated payments. Read with the provision module.
+    Provision-heavy; the direct-compliance part is cash-tax forecasting ahead of estimated payments. No source
+    describes AI computing or paying corporate estimated payments. Read with the provision module.
 
 - id: tax-compliance-corporate-15
   title: Corporate compliance bought as an AI-enabled managed service, with in-house teams asking providers to disclose AI use and verification
@@ -824,9 +821,9 @@
     - {ref: AICPA-WERFEL-2026, title: "A Risk Framework for the Use of AI in Tax Administration and Preparation: appendices A to D (risk registers and case studies)", publisher: "The Tax Adviser (AICPA), Danny Werfel", type: professional-body, url: "https://www.thetaxadviser.com/wp-content/uploads/sites/2/2026/06/appendices-ai-tax-risk-framework.pdf", date: "2026-06", access: full, locator: "Appendix C, risks 8 to 12 (legal and business layers)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-14 (managed service) and governance-16 (provider disclosure). Pattern 'other': a sourcing
-    model in which an outside provider delivers AI-enabled compliance under agreed disclosure and review terms.
-    Survey, firm and conference evidence only; no published provider deployment or in-house disclosure requirement.
+    Pattern 'other': a sourcing model in which an outside provider delivers AI-enabled compliance under agreed
+    disclosure and review terms. Survey, firm and conference evidence only; no published provider deployment or
+    in-house disclosure requirement.
 
 - id: tax-compliance-corporate-16
   title: 'Idea: value-based or fixed-fee pricing of AI-enabled compliance work in place of hourly billing'
@@ -922,8 +919,7 @@
     - {ref: WK-CORPRES-2026, title: "How controllers and corporate tax leaders can use AI for faster, defensible tax returns (corporate tax research guide)", publisher: "Wolters Kluwer Tax & Accounting", type: vendor, url: "https://www.wolterskluwer.com/en/expert-insights/how-controllers-and-corporate-tax-leaders-can-use-ai-for-faster-defensible-tax-returns", date: "2026-04-02", access: full, locator: "Section 'The non-negotiables for purchasing decision-makers'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from practice-15, discourse-08 and discourse-14 (the 'Escaping Excel' idea). Unnamed attendees in a recap by
-    a vendor-owned institute; no named department outcome and no quality evidence.
+    Unnamed attendees in a recap by a vendor-owned institute; no named department outcome and no quality evidence.
 
 - id: tax-compliance-corporate-18
   title: A tax model explains its inputs, outputs and assumptions so the reasoning chain is the deliverable in place of a memo, and approved logic is locked
@@ -961,10 +957,10 @@
     - {ref: TAXADVISER-WERFEL-2026, title: "A risk framework for AI use in tax administration and preparation (Danny Werfel)", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/a-risk-framework-for-ai-use-in-tax-administration-and-preparation/", date: "2026-08-31", access: full, locator: "Figure 3, business risks: 'Lack of transparency'"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From discourse-12. Verification lowered the grade from B to C: the only named deployment is an effective-tax-rate
-    model, which is provision work (an adjacent process this module excludes), so it cannot carry a B for compliance
-    workpapers; no measurement is published. Relevant to compliance workpaper documentation by analogy; read with the
-    provision module.
+    Verification lowered the grade from B to C: the only named deployment is an effective-tax-rate model, which is
+    provision work (an adjacent process this module excludes), so it cannot carry a B for compliance workpapers; no
+    measurement is published. Relevant to compliance workpaper documentation by analogy; read with the provision
+    module.
 
 - id: tax-compliance-corporate-19
   title: A record of AI use and verification (prompt, output, sources, checks, conclusion) is kept with each AI-assisted item in the return workpapers
@@ -1017,8 +1013,8 @@
     - {ref: FONOA-2026, title: "State of Indirect Tax in the AI Era 2026", publisher: "Fonoa", type: survey, url: "https://www.fonoa.com/resources/guides/state-of-indirect-tax-in-the-ai-era-2026", date: "2026-06-17", access: full, locator: "Sections on defending AI decisions to an authority and on AI governance (landing page; report gated)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from discourse-15 and governance-04. Vendor, firm and regulator guidance; no named corporate deployment of
-    AI-use logging with a result. The Fonoa figures are indirect-tax and vendor-sponsored.
+    Vendor, firm and regulator guidance; no named corporate deployment of AI-use logging with a result. The Fonoa
+    figures are indirect-tax and vendor-sponsored.
 
 - id: tax-compliance-corporate-20
   title: Tax staff move to approved enterprise AI tools under vendor terms that bar training on company data, with revalidation when vendors change models
@@ -1072,10 +1068,9 @@
     - {ref: NIST-AI600-2024, title: "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)", publisher: "NIST", type: standard-setter, url: "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence", date: "2024-07-26", access: full, locator: "Abstract (voluntary cross-sector profile; landing page only)"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from governance-07 and governance-14. Pattern 'other': a governed tooling environment rather than a work
-    pattern. Survey-level evidence only; no named organisation is described, and no vendor contract adopting the
-    Werfel terms was found. The KPMG Germany sample covers German companies; the TR-FOP figure covers tax and audit
-    professionals, not only corporate tax departments.
+    Pattern 'other': a governed tooling environment rather than a work pattern. Survey-level evidence only; no named
+    organisation is described, and no vendor contract adopting the Werfel terms was found. The KPMG Germany sample
+    covers German companies; the TR-FOP figure covers tax and audit professionals, not only corporate tax departments.
 
 - id: tax-compliance-corporate-21
   title: Gated rollout of AI-drafted return work, with full logging, override and error-rate thresholds, ROI baselines and unaided-competence checks
@@ -1132,11 +1127,10 @@
     - {ref: TR-CORPAI-2026, title: "AI in corporate tax: 2026 key trends and use cases", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/ai-in-corporate-tax-key-trends-use-cases-and-whats-next/", date: "2026-07-01", access: full, locator: "'Four steps to build AI momentum in corporate tax', step 3"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from governance-03, governance-13 and governance-15. Pattern 'other': a governance gate and measurement
-    loop around AI-assisted preparation. The worked case is a preparer firm using the tool on client returns
-    (individual examples: W-2, 1099, Schedule C), not a corporate return; the article says the views are the author's,
-    not AICPA policy. Graded C on the vendor recommendation and surveys; no firm or department has published applying
-    the thresholds.
+    Pattern 'other': a governance gate and measurement loop around AI-assisted preparation. The worked case is a
+    preparer firm using the tool on client returns (individual examples: W-2, 1099, Schedule C), not a corporate
+    return; the article says the views are the author's, not AICPA policy. Graded C on the vendor recommendation and
+    surveys; no firm or department has published applying the thresholds.
 
 - id: tax-compliance-corporate-22
   title: 'Idea: a deterministic tax engine computes the return while a language model translates rules into logic that is checked against test returns'

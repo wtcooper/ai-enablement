@@ -164,10 +164,13 @@
     access: full
     locator: Insight 4 (new operating model)
   last_reviewed: '2026-10-17'
-  notes: Merged from practice-01, discourse-01 and governance-01. Graded B on the Snowflake posting, which describes a team
-    already working this way; Fortive and Apple describe roles to build or oversee it, not completed builds, and the Apple
-    posting does not mention AI. Postings are self-description, not independently observed practice; no outcome figure is
-    published. The 80% and 91% figures come from the Bloomberg Tax write-up and were not on EY's own release page. The Deloitte item is an alliance announcement. The Fortive posting has expired and was read through a text mirror; the page shows no exact posting date.
+  notes: >-
+    Graded B on the Snowflake posting, which describes a team already working this way; Fortive and Apple describe
+    roles to build or oversee it, not completed builds, and the Apple posting does not mention AI. Postings are
+    self-description, not independently observed practice; no outcome figure is published. The 80% and 91% figures
+    come from the Bloomberg Tax write-up and were not on EY's own release page. The Deloitte item is an alliance
+    announcement. The Fortive posting has expired and was read through a text mirror; the page shows no exact posting
+    date.
 - id: tax-data-technology-02
   title: Agentic data layer that assembles, maps, validates and anomaly-checks ledger data before it reaches the provision
     and compliance engines
@@ -297,10 +300,11 @@
     access: full
     locator: Key insights bullet on 58% under-resourced
   last_reviewed: '2026-10-17'
-  notes: Merged from practice-15, discourse-02 and discourse-03. No named customer; Thomson Reuters describes a goal and Deloitte
-    a scenario step, so maturity is announced. The ledger-to-tax mapping step inside corporate compliance is tax-compliance-corporate-01
-    and year-on-year anomaly flags on returns are tax-compliance-corporate-03; this entry records the data layer that feeds
-    the engines. Provision and Pillar Two parts of the Kognitos argument are routed to those modules.
+  notes: >-
+    No named customer; Thomson Reuters describes a goal and Deloitte a scenario step, so maturity is announced. The
+    ledger-to-tax mapping step inside corporate compliance is tax-compliance-corporate-01 and year-on-year anomaly
+    flags on returns are tax-compliance-corporate-03; this entry records the data layer that feeds the engines.
+    Provision and Pillar Two parts of the Kognitos argument are routed to those modules.
 - id: tax-data-technology-03
   title: Agent keeps tax-engine configuration in sync with ERP master-data changes, with review checkpoints for high-impact
     changes
@@ -369,8 +373,10 @@
     access: full
     locator: Section 'Avi Everywhere', browser extension bullet
   last_reviewed: '2026-10-17'
-  notes: 'From practice-07. The engine is an indirect-tax determination engine, so the engine itself belongs to indirect-tax;
-    this entry records the ERP-to-engine data flow. Related: validation and repair of master data at the point of entry, tax-indirect-tax-12.'
+  notes: >-
+    The engine is an indirect-tax determination engine, so the engine itself belongs to indirect-tax; this entry
+    records the ERP-to-engine data flow. Related: validation and repair of master data at the point of entry,
+    tax-indirect-tax-12.
 - id: tax-data-technology-04
   title: Tax data requirements and tax-engine integration built into an ERP migration from the start
   archetype: tax
@@ -449,10 +455,12 @@
     access: full
     locator: Action 2 (fixing the data access problem)
   last_reviewed: '2026-10-17'
-  notes: 'From discourse-16. Graded B on two named customers (Siemens Energy, Daimler Truck AG) discussing their implementations,
-    as reported in a third-party recap of a vendor-run conference; no measurements published. AI is not the subject of the
-    named-customer talks; the entry is kept because practitioners cite ERP data flows as the prerequisite for tax AI. Pattern
-    ''other'': a cross-functional project practice in which tax sets data requirements at the source, not an agentic pattern.'
+  notes: >-
+    Graded B on two named customers (Siemens Energy, Daimler Truck AG) discussing their implementations, as reported
+    in a third-party recap of a vendor-run conference; no measurements published. AI is not the subject of the
+    named-customer talks; the entry is kept because practitioners cite ERP data flows as the prerequisite for tax AI.
+    Pattern 'other': a cross-functional project practice in which tax sets data requirements at the source, not an
+    agentic pattern.
 - id: tax-data-technology-05
   title: Low-code data preparation and consolidation for tax (the pre-generative-AI baseline that AI-built pipelines replace)
   archetype: tax
@@ -539,10 +547,12 @@
     access: full
     locator: Section 'A very bad wizard'
   last_reviewed: '2026-10-17'
-  notes: 'From practice-16. Baseline, not AI: it shows what the AI-built pipelines in tax-data-technology-07 replace and what
-    they inherit (sustainment, key-person risk). Capped at B: only DuPont is named and gives no figures; the hours figures
-    are from anonymised clients. Nucleus Research reports 67% of tax tasks automated and other figures across organisations
-    it interviewed, but how they were calculated and who commissioned them is not stated, so they are not used as outcomes.'
+  notes: >-
+    Baseline, not AI: it shows what the AI-built pipelines in tax-data-technology-07 replace and what they inherit
+    (sustainment, key-person risk). Capped at B: only DuPont is named and gives no figures; the hours figures are from
+    anonymised clients. Nucleus Research reports 67% of tax tasks automated and other figures across organisations it
+    interviewed, but how they were calculated and who commissioned them is not stated, so they are not used as
+    outcomes.
 - id: tax-data-technology-06
   title: Plain-language analytics and reusable tax agents over a semantic layer on the tax data
   archetype: tax
@@ -602,7 +612,8 @@
     access: full
     locator: Section 'A very bad wizard', paragraphs on silent failure
   last_reviewed: '2026-10-17'
-  notes: From practice-02. Single named employer describing itself in a job posting (an aggregator copy listed as valid through 2026-09-15);
+  notes: >-
+    Single named employer describing itself in a job posting (an aggregator copy listed as valid through 2026-09-15);
     not independently confirmed. The 'AI-first' framing is the employer's own.
 - id: tax-data-technology-07
   title: Tax analysts build data pipelines and small tools with AI coding and low-code agent tools, under review, documentation
@@ -726,10 +737,11 @@
     access: full
     locator: Responsibilities bullets 1 and 3
   last_reviewed: '2026-10-17'
-  notes: 'Merged from practice-04, discourse-05 and governance-04. Graded C: the governance angle proposed B on OpenAI''s
-    live demonstration, but a demonstration is not a production claim and the practitioners behind the 15-minute figure are
-    unnamed; OpenAI''s team is recorded separately in tax-data-technology-22. The same practice is recorded for return work
-    as tax-compliance-corporate-17; this entry covers the data-platform and control side.'
+  notes: >-
+    Graded C: the governance angle proposed B on OpenAI's live demonstration, but a demonstration is not a production
+    claim and the practitioners behind the 15-minute figure are unnamed; OpenAI's team is recorded separately in
+    tax-data-technology-22. The same practice is recorded for return work as tax-compliance-corporate-17; this entry
+    covers the data-platform and control side.
 - id: tax-data-technology-08
   title: 'Tax automations run as controlled assets: version control, sign-off before production, evidence logs, run history
     and drift monitoring'
@@ -851,10 +863,11 @@
     access: full
     locator: Paragraphs on bot deployment, lifespans and maintenance
   last_reviewed: '2026-10-17'
-  notes: 'Merged from practice-05 and governance-05. Graded B on a named customer (Oxford Industries) quoted by the vendor;
-    no measurements. Oxford Industries'' governed reconciliation and extraction are recorded as tax-compliance-corporate-10.
-    The release''s claim of about five times faster processing ''compared to other tools in the market'' is unsourced and
-    not used. Pattern note: this is a control framework around automations rather than an agentic task.'
+  notes: >-
+    Graded B on a named customer (Oxford Industries) quoted by the vendor; no measurements. Oxford Industries'
+    governed reconciliation and extraction are recorded as tax-compliance-corporate-10. The release's claim of about
+    five times faster processing 'compared to other tools in the market' is unsourced and not used. Pattern note: this
+    is a control framework around automations rather than an agentic task.
 - id: tax-data-technology-09
   title: Scheduled multi-system reconciliation of tax data across source transactions, tax engine, ledger and returns, with
     exceptions to staff
@@ -928,9 +941,11 @@
     access: full
     locator: Paragraph on out-of-the-box agents for bank reconciliation, sales tax automation and close support
   last_reviewed: '2026-10-17'
-  notes: Merged from practice-06 and discourse-04. Named customer, vendor-published figures; the webinar was announced for
-    2026-03-19 and no recording or independent check was found. Oxford Industries' reconciliation work with Savant is tax-compliance-corporate-10;
-    sales tax filing agents belong to indirect-tax (tax-indirect-tax-02). The release page header shows 6 March 2026; the dateline used here is 4 March.
+  notes: >-
+    Named customer, vendor-published figures; the webinar was announced for 2026-03-19 and no recording or independent
+    check was found. Oxford Industries' reconciliation work with Savant is tax-compliance-corporate-10; sales tax
+    filing agents belong to indirect-tax (tax-indirect-tax-02). The release page header shows 6 March 2026; the
+    dateline used here is 4 March.
 - id: tax-data-technology-10
   title: 'Idea: multi-agent workflows that carry data from provision to return and credits, with people handling exceptions'
   archetype: tax
@@ -1105,10 +1120,10 @@
     access: full
     locator: Section 'A very bad wizard', first anecdote
   last_reviewed: '2026-10-17'
-  notes: Merged from practice-14, discourse-06 and governance-11. The notice examples are unnamed attendees in a vendor-owned
-    recap. Notice triage and response belong to controversy (tax-controversy-01, tax-controversy-02), notice intake for indirect
-    tax is tax-indirect-tax-14, and return-document extraction (W-2, K-1) belongs to the compliance modules; this entry is
-    the data-capture step.
+  notes: >-
+    The notice examples are unnamed attendees in a vendor-owned recap. Notice triage and response belong to
+    controversy (tax-controversy-01, tax-controversy-02), notice intake for indirect tax is tax-indirect-tax-14, and
+    return-document extraction (W-2, K-1) belongs to the compliance modules; this entry is the data-capture step.
 - id: tax-data-technology-12
   title: Transaction-level real-time reporting to tax authorities replaces periodic return data, and tax data architecture
     is built around it
@@ -1248,11 +1263,12 @@
     access: full
     locator: Abstract (RePEc record)
   last_reviewed: '2026-10-17'
-  notes: 'From governance-15. The Peru study measures a tax-authority regime''s effect on taxpayers'' reported figures, adjacent
-    evidence that caps the grade at B; no named in-house deployment is behind it, so the grade is C. In-production is stated
-    at regime level (Peru, the EU and UK programmes), not for an in-house team. The Commission figures are projections. This
-    is not itself an AI use case: it is the regulatory change that makes AI-assisted validation (tax-data-technology-13, -14)
-    and continuous reconciliation (-16) matter.'
+  notes: >-
+    The Peru study measures a tax-authority regime's effect on taxpayers' reported figures, adjacent evidence that
+    caps the grade at B; no named in-house deployment is behind it, so the grade is C. In-production is stated at
+    regime level (Peru, the EU and UK programmes), not for an in-house team. The Commission figures are projections.
+    This is not itself an AI use case: it is the regulatory change that makes AI-assisted validation
+    (tax-data-technology-13, -14) and continuous reconciliation (-16) matter.
 - id: tax-data-technology-13
   title: Invoice and master data validated before submission, with preventive controls built into the processes that create
     the data
@@ -1362,10 +1378,11 @@
     access: full
     locator: '''3 actions tax departments must take now'', actions 2 and 3'
   last_reviewed: '2026-10-17'
-  notes: 'Merged from governance-02 and discourse-12 (the latter an idea from Deloitte''s scenario framework). Maturity piloting
-    is conservative: clearance regimes operate, but no source names a company running AI-assisted validation. The Italy 70%
-    figure is as stated in the recap and was not checked against Italian law. Related: validation and repair at the point
-    of entry, tax-indirect-tax-12; preventive controls and real-time exchange as an idea in controversy, tax-controversy-12.'
+  notes: >-
+    Maturity piloting is conservative: clearance regimes operate, but no source names a company running AI-assisted
+    validation. The Italy 70% figure is as stated in the recap and was not checked against Italian law. Related:
+    validation and repair at the point of entry, tax-indirect-tax-12; preventive controls and real-time exchange as an
+    idea in controversy, tax-controversy-12.
 - id: tax-data-technology-14
   title: AI-generated field mapping from ERP data to country e-invoicing and real-time reporting formats, with rejected submissions
     diagnosed and fixed after approval
@@ -1479,9 +1496,10 @@
     access: full
     locator: '''ERP integration becomes the real bottleneck'''
   last_reviewed: '2026-10-17'
-  notes: Merged from practice-09 and discourse-07. The e-invoicing engines and rejection handling are recorded from the indirect-tax
-    angle as tax-indirect-tax-08; this entry keeps the ERP-to-format mapping and data-quality side. The AI contribution to
-    the France figure is not isolated in any source. Roedl's article does not discuss AI.
+  notes: >-
+    The e-invoicing engines and rejection handling are recorded from the indirect-tax angle as tax-indirect-tax-08;
+    this entry keeps the ERP-to-format mapping and data-quality side. The AI contribution to the France figure is not
+    isolated in any source. Roedl's article does not discuss AI.
 - id: tax-data-technology-15
   title: Agent assesses how rule changes and detected errors affect the company's tax configuration, proposes fixes and executes
     them after approval
@@ -1561,10 +1579,11 @@
     access: full
     locator: '''The real-time reporting challenge'''
   last_reviewed: '2026-10-17'
-  notes: 'Merged from practice-08 and discourse-10. Vendor announcements and firm commentary only; no named customer, figure
-    or independent test. Overlaps: continuous compliance monitoring as an idea, tax-compliance-corporate-24; calendar and
-    rule-change tracking, tax-compliance-corporate-12; regulatory-change monitoring for indirect tax, tax-indirect-tax-09.
-    This entry keeps the configuration side: the impact of a change on the company''s own tax settings.'
+  notes: >-
+    Vendor announcements and firm commentary only; no named customer, figure or independent test. Overlaps: continuous
+    compliance monitoring as an idea, tax-compliance-corporate-24; calendar and rule-change tracking,
+    tax-compliance-corporate-12; regulatory-change monitoring for indirect tax, tax-indirect-tax-09. This entry keeps
+    the configuration side: the impact of a change on the company's own tax settings.
 - id: tax-data-technology-16
   title: 'Idea: continuous reconciliation of calculated, invoiced, reported and authority-held transaction data, with exceptions
     routed to reviewers'
@@ -1720,7 +1739,10 @@
     access: full
     locator: FAQ answers 1, 3 and 4 (undated product page, read through a text mirror on 2026-10-17)
   last_reviewed: '2026-10-17'
-  notes: From practice-11. Vendor announcements; no customer use. Anrok's product page, read through a text mirror, describes a write-capable server, which belongs with tax-data-technology-18. The write-capable version is tax-data-technology-18; the indirect-tax engine side is tax-indirect-tax-16.
+  notes: >-
+    Vendor announcements; no customer use. Anrok's product page, read through a text mirror, describes a write-capable
+    server, which belongs with tax-data-technology-18. The write-capable version is tax-data-technology-18; the
+    indirect-tax engine side is tax-indirect-tax-16.
 - id: tax-data-technology-18
   title: Company agents call tax engines through vendor MCP servers under least-privilege scopes and full tool-call logging
   archetype: tax
@@ -1885,12 +1907,13 @@
     access: full
     locator: FAQ answers 3 and 4 (undated product page, read through a text mirror on 2026-10-17)
   last_reviewed: '2026-10-17'
-  notes: 'Merged from practice-12, discourse-08 and governance-09. Vendor-only evidence: no customer, partner or in-house
-    team was found using a tax MCP server, so maturity is announced. The landscape said Sovos ''added MCP and A2A interoperability'';
-    the release says the gateway is being developed and A2A is expected. Thomson Reuters ONESOURCE MCP support was not found.
-    The determination-engine side is tax-indirect-tax-16; this entry covers the interoperability and access controls. TaxCalcBench
-    is adjacent evidence (individual returns, vendor authors); computation routed to deterministic engines is recorded as
-    tax-compliance-individual-business-10 and tax-compliance-corporate-22.'
+  notes: >-
+    Vendor-only evidence: no customer, partner or in-house team was found using a tax MCP server, so maturity is
+    announced. The landscape said Sovos 'added MCP and A2A interoperability'; the release says the gateway is being
+    developed and A2A is expected. Thomson Reuters ONESOURCE MCP support was not found. The determination-engine side
+    is tax-indirect-tax-16; this entry covers the interoperability and access controls. TaxCalcBench is adjacent
+    evidence (individual returns, vendor authors); computation routed to deterministic engines is recorded as
+    tax-compliance-individual-business-10 and tax-compliance-corporate-22.
 - id: tax-data-technology-19
   title: Decision log and audit trail for AI-assisted tax determinations, overrides and approvals, recorded as the work happens
   archetype: tax
@@ -1996,10 +2019,11 @@
     access: full
     locator: 'Section ''Regulatory Framework: Circular 230 Provisions'', item 1 (section 10.22)'
   last_reviewed: '2026-10-17'
-  notes: 'Merged from discourse-09 and governance-08. Pattern ''other'': a trail that records other agents'' and people''s
-    work, not a task pattern. The survey covers indirect tax leaders (adjacent). The same control appears as tax-indirect-tax-15
-    (indirect tax), tax-compliance-corporate-19 (return workpapers) and tax-compliance-individual-business-13 (preparer review);
-    this entry is the shared data-layer capability.'
+  notes: >-
+    Pattern 'other': a trail that records other agents' and people's work, not a task pattern. The survey covers
+    indirect tax leaders (adjacent). The same control appears as tax-indirect-tax-15 (indirect tax),
+    tax-compliance-corporate-19 (return workpapers) and tax-compliance-individual-business-13 (preparer review); this
+    entry is the shared data-layer capability.
 - id: tax-data-technology-20
   title: Tax-owned AI and automation inventory, policy and accountability mapped into the enterprise control framework
   archetype: tax
@@ -2111,9 +2135,10 @@
     access: full
     locator: Highlights, 'What GAO Found'
   last_reviewed: '2026-10-17'
-  notes: 'From governance-06. The COSO publication itself was not opened; two secondary summaries were read. Firm-side equivalents:
-    a firm-wide standard with a named tax AI owner, tax-research-advisory-07; approved enterprise tools, tax-compliance-corporate-20.
-    Pattern ''other'': a governance practice, not an agentic task.'
+  notes: >-
+    The COSO publication itself was not opened; two secondary summaries were read. Firm-side equivalents: a firm-wide
+    standard with a named tax AI owner, tax-research-advisory-07; approved enterprise tools,
+    tax-compliance-corporate-20. Pattern 'other': a governance practice, not an agentic task.
 - id: tax-data-technology-21
   title: Acceptance thresholds set before go-live, then ongoing accuracy, override-rate and cycle-time measurement for tax
     AI and automation
@@ -2219,9 +2244,10 @@
     access: full
     locator: Highlights page, 'What TIGTA Found'
   last_reviewed: '2026-10-17'
-  notes: 'From governance-07. Capped at C: the Fonoa survey covers indirect tax leaders (adjacent) and the 8x figure is vendor-published
-    with its measure in a gated report. Related: gated rollout with override and error thresholds for return work, tax-compliance-corporate-21;
-    review controls for preparers, tax-compliance-individual-business-13.'
+  notes: >-
+    Capped at C: the Fonoa survey covers indirect tax leaders (adjacent) and the 8x figure is vendor-published with
+    its measure in a gated report. Related: gated rollout with override and error thresholds for return work,
+    tax-compliance-corporate-21; review controls for preparers, tax-compliance-individual-business-13.
 - id: tax-data-technology-22
   title: AI-first in-house tax operating model in which preparation runs in database-driven workflows and tax staff build
     and review them
@@ -2307,11 +2333,13 @@
     access: full
     locator: Talent and reskilling paragraph
   last_reviewed: '2026-10-17'
-  notes: 'From practice-03. Three OpenAI postings (2025-01, 2026-03, 2026-04) show the direction; they state intent and self-description,
-    not independently observed practice, and give no outcome measures. Maturity set to piloting (practice said in production)
-    to match tax-compliance-corporate-07, which records the same team''s move to agent-driven return computation. The landscape''s
-    ''four people'' shorthand is not supported: the recap says four members were sent, not the department''s size. Pattern
-    ''other'': tax staff become builders and first-level reviewers of automated pipelines.'
+  notes: >-
+    Three OpenAI postings (2025-01, 2026-03, 2026-04) show the direction; they state intent and self-description, not
+    independently observed practice, and give no outcome measures. Maturity set to piloting (practice said in
+    production) to match tax-compliance-corporate-07, which records the same team's move to agent-driven return
+    computation. The landscape's 'four people' shorthand is not supported: the recap says four members were sent, not
+    the department's size. Pattern 'other': tax staff become builders and first-level reviewers of automated
+    pipelines.
 - id: tax-data-technology-23
   title: Central tax operations and technology team, built with finance and IT, owns tax data, automation and AI
   archetype: tax
@@ -2481,9 +2509,11 @@
     access: full
     locator: Abstract
   last_reviewed: '2026-10-17'
-  notes: 'Merged from discourse-14 and governance-13. Graded B on one named deployment (Unilever''s centralised tax operations centre, described by Unilever Ice Cream''s head of tax in a podcast episode listing; no measurements; the description does not say how much of it is AI). Survey figures
-    are context and associations, not outcomes of this change. The TRI/TEI report itself was not opened; its figures come
-    from Thomson Reuters'' article about it. Pattern ''other'': an operating-model change.'
+  notes: >-
+    Graded B on one named deployment (Unilever's centralised tax operations centre, described by Unilever Ice Cream's
+    head of tax in a podcast episode listing; no measurements; the description does not say how much of it is AI).
+    Survey figures are context and associations, not outcomes of this change. The TRI/TEI report itself was not
+    opened; its figures come from Thomson Reuters' article about it. Pattern 'other': an operating-model change.
 - id: tax-data-technology-24
   title: Tax operations co-sourced or run as a managed service on a provider's AI and data platforms, with AI-use due diligence
     on providers
@@ -2581,7 +2611,7 @@
     access: full
     locator: Section on firm procedures, 'Contracting with external providers'
   last_reviewed: '2026-10-17'
-  notes: 'Merged from discourse-15 and governance-14 (the latter an idea with no in-house practice found). Sources are provider
-    commentary and a provider-run survey; no named in-house team reported a result. Co-sourcing predates AI; the AI-specific
-    part is the provider''s tooling. Overlaps: tax-compliance-corporate-15 (compliance as an AI-enabled managed service) and
-    tax-indirect-tax-19.'
+  notes: >-
+    Sources are provider commentary and a provider-run survey; no named in-house team reported a result. Co-sourcing
+    predates AI; the AI-specific part is the provider's tooling. Overlaps: tax-compliance-corporate-15 (compliance as
+    an AI-enabled managed service) and tax-indirect-tax-19.

@@ -556,9 +556,9 @@
     - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (Alert 2026-19)", publisher: IRS Office of Professional Responsibility, type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "item 6"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from all three angles (the first half of the discourse angle's agreement entry; the multi-agent half is
-    tax-transfer-pricing-11). The Commenda price list (agreements USD 1,500) is a vendor price as of June 2026; it
-    states experts do the work and does not say how much is AI-generated.
+    The multi-agent version of the same agreement work is tax-transfer-pricing-11. The Commenda price list (agreements
+    USD 1,500) is a vendor price as of June 2026; it states experts do the work and does not say how much is
+    AI-generated.
 
 - id: tax-transfer-pricing-11
   title: Multi-agent review of intercompany agreements and transactions across TP, VAT, withholding tax and customs
@@ -755,11 +755,11 @@
     - {ref: TPMINDS-WC-2026, title: "TPMinds West Coast 2026 agendas (Palo Alto; programme published, event not yet held)", publisher: Informa Connect, type: conference, url: "https://informaconnect.com/tp-minds-west-coast/agenda/", date: "2026-10-17", access: full, locator: "Day 1 (4 November 2026), 15:35-16:35 session 'Case Studies on the Application of AI in Transfer Pricing'; page undated, retrieval date used"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from the practice and discourse angles; the discourse angle classed it 'delegate', kept at 'augment' because
-    the vendor positions it as decision support with a reviewer on every flag. Announced two days before the scan.
-    The home page lists Nokia, Fujifilm, Symrise, Xebia, HMD and Phoenix Group as platform users; none is shown using
-    TP Intelligence. A scheduled TPMinds West Coast session says AI is evolving from a productivity tool into an
-    integral part of TP operating models (TPMINDS-WC-2026; programme text, not yet held).
+    Kept at augment, not delegate, because the vendor positions it as decision support with a reviewer on every flag.
+    Announced two days before the scan. The home page lists Nokia, Fujifilm, Symrise, Xebia, HMD and Phoenix Group as
+    platform users; none is shown using TP Intelligence. A scheduled TPMinds West Coast session says AI is evolving
+    from a productivity tool into an integral part of TP operating models (TPMINDS-WC-2026; programme text, not yet
+    held).
 
 - id: tax-transfer-pricing-15
   title: Taxpayer-side audit-risk screening of intercompany positions against authority indicators before filing
@@ -1013,10 +1013,9 @@
     - {ref: AIBIDIA-SOTP-2026, title: "Aibidia Report 2026: The State of Transfer Pricing (landing page)", publisher: Aibidia, type: survey, url: "https://www.aibidia.com/reports/2026-the-state-of-transfer-pricing", date: "2026", access: full, locator: "'THE AI SHIFT' block"}
   last_reviewed: "2026-10-17"
   notes: >-
-    Merged from the practice angle (graded D, idea) and the discourse angle (graded C). Kept at C because a firm
-    states that some companies are experimenting, which is a claim of use without a named deployment. Advice on the TP
-    of AI itself (pricing AI tools and AI-generated assets between affiliates) is routed to research-advisory.
-    Overlap: tax-research-advisory-10 (planning-alternative ideation).
+    Kept at C because a firm states that some companies are experimenting, which is a claim of use without a named
+    deployment. Advice on the TP of AI itself (pricing AI tools and AI-generated assets between affiliates) is routed
+    to research-advisory. Overlap: tax-research-advisory-10 (planning-alternative ideation).
 
 - id: tax-transfer-pricing-20
   title: AI-use and verification log embedded in TP workpapers (idea)

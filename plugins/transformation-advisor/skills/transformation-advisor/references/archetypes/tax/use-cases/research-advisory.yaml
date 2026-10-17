@@ -292,14 +292,14 @@
     locator: release text on Avi research (routed from the tax-data-technology practice deep dive)
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-01, discourse-01 and governance-01. Graded B at verification (was A): the before-and-after
-    times are named practitioners' recollections (Barnes Wendling, Sorren) or the vendor's own narrative (Sasserath),
-    published by the vendors that sell the tools; none is a measurement and none is independent, which is why the
-    discourse and governance angles also graded it B. The 700+ queries a month is a usage count, not an outcome. Adoption context:
-    Blue J's 2026 survey (1,000 US accountants, 12-23 Mar 2026) found 60% work at firms that adopted AI-powered tax research
-    versus 33% in the 2025 edition, with a different sample [BLUEJ-OUTLOOK-2026]. Routed from tax-data-technology: Avalara
-    markets AI tax research for indirect tax, with one accounts-payable user quoted as cutting research time by more
-    than 80% (vendor quote, adjacent) [AVALARA-AGENTIC-2025].
+    Graded B at verification (was A): the before-and-after times are named practitioners' recollections (Barnes
+    Wendling, Sorren) or the vendor's own narrative (Sasserath), published by the vendors that sell the tools; none is
+    a measurement and none is independent, which is why the discourse and governance angles also graded it B. The 700+
+    queries a month is a usage count, not an outcome. Adoption context: Blue J's 2026 survey (1,000 US accountants,
+    12-23 Mar 2026) found 60% work at firms that adopted AI-powered tax research versus 33% in the 2025 edition, with
+    a different sample [BLUEJ-OUTLOOK-2026]. Routed from tax-data-technology: Avalara markets AI tax research for
+    indirect tax, with one accounts-payable user quoted as cutting research time by more than 80% (vendor quote,
+    adjacent) [AVALARA-AGENTIC-2025].
 
 - id: tax-research-advisory-02
   title: Multi-step research plans for gray-area questions, run inside the adviser's session
@@ -459,11 +459,11 @@
     locator: section 'A very bad wizard'
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-02 and discourse-02. The discourse angle classed the Bloomberg and Thomson Reuters modes as
-    delegate; they are placed at augment here because the adviser answers the clarifying questions and reviews each run.
-    Graded B at verification (was A): the speed figure is one named practitioner's estimate quoted by the vendor, not
-    a measured outcome, and not independent. Accordance's claim
-    that it 'outperforms major foundation models' is a vendor statement; no benchmark was published in the pages read.
+    The discourse angle classed the Bloomberg and Thomson Reuters modes as delegate; they are placed at augment here
+    because the adviser answers the clarifying questions and reviews each run. Graded B at verification (was A): the
+    speed figure is one named practitioner's estimate quoted by the vendor, not a measured outcome, and not
+    independent. Accordance's claim that it 'outperforms major foundation models' is a vendor statement; no benchmark
+    was published in the pages read.
 
 - id: tax-research-advisory-03
   title: Research agent that works a question end to end and submits a cited memo-style answer
@@ -603,12 +603,12 @@
     locator: '''Define the role of early-career professionals'''
   last_reviewed: '2026-10-17'
   notes: >-
-    From governance-02, with routed items. The governance angle graded this A; the synthesis grades it C because the
-    measured outcome is a benchmark of models in a test harness, not an outcome from a named organization's deployment,
-    and no named organization is shown running a delegate-level research agent in production. Vals sells evaluation services.
-    The panel deck's slides show demo timings for the research memo agent (3 hours saved, 2 minutes to result); these are presenter
-    demo timings, not outcomes, and the deck does not say whether it is in production [SJSU-TEIHTTI-2025]. The EY India
-    hub is an announcement. Related: the KPMG agent platform is tax-research-advisory-24.
+    The governance angle graded this A; the synthesis grades it C because the measured outcome is a benchmark of
+    models in a test harness, not an outcome from a named organization's deployment, and no named organization is
+    shown running a delegate-level research agent in production. Vals sells evaluation services. The panel deck's
+    slides show demo timings for the research memo agent (3 hours saved, 2 minutes to result); these are presenter
+    demo timings, not outcomes, and the deck does not say whether it is in production [SJSU-TEIHTTI-2025]. The EY
+    India hub is an announcement. Related: the KPMG agent platform is tax-research-advisory-24.
 
 - id: tax-research-advisory-04
   title: Specialist multi-jurisdiction and state-by-state research workflow (idea)
@@ -774,8 +774,7 @@
     locator: section 'Why does generative AI hallucinate?'
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from discourse-05 and the knowledge-base element of practice-08. Vendor positioning plus a conference panel
-    listing; no named deployment or outcome found.
+    Vendor positioning plus a conference panel listing; no named deployment or outcome found.
 
 - id: tax-research-advisory-06
   title: >-
@@ -944,11 +943,11 @@
     locator: agent demo slides (routed from the tax-data-technology discourse deep dive)
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-08, discourse-06 and governance-10. Sponsor-produced surveys with different samples; do not
-    combine figures. No named in-house department published a research-assistant outcome. Routed from tax-data-technology:
-    a TEI-SJSU panel deck (panellists included OpenAI's tax reporting director) shows a sample Slack Q&A agent with demo timings of 15 minutes saved and under
-    one minute to result; these are presenter timings, not outcomes [SJSU-TEIHTTI-2025]. In-house data pipelines and
-    process automation belong to tax-data-technology.
+    Sponsor-produced surveys with different samples; do not combine figures. No named in-house department published a
+    research-assistant outcome. Routed from tax-data-technology: a TEI-SJSU panel deck (panellists included OpenAI's
+    tax reporting director) shows a sample Slack Q&A agent with demo timings of 15 minutes saved and under one minute
+    to result; these are presenter timings, not outcomes [SJSU-TEIHTTI-2025]. In-house data pipelines and process
+    automation belong to tax-data-technology.
 
 - id: tax-research-advisory-07
   title: Firm-wide standard on approved, closed research assistants, with a named tax AI owner and governance
@@ -1151,10 +1150,9 @@
     locator: section 'A very bad wizard'
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-07, practice-15 and discourse-03 (same change: one sanctioned tool plus governance). Crowe (2024)
-    and KPMG UK (2024) are older than the 12-18 month window and are kept as the named enterprise deals. The 'unsanctioned'
-    reading of 80% vs 60% is Blue J's inference; the two figures count different things. KPMG UK's older '90%+ accuracy'
-    figure concerns an outcome-prediction tool and is not used.
+    Crowe (2024) and KPMG UK (2024) are older than the 12-18 month window and are kept as the named enterprise deals.
+    The 'unsanctioned' reading of 80% vs 60% is Blue J's inference; the two figures count different things. KPMG UK's
+    older '90%+ accuracy' figure concerns an outcome-prediction tool and is not used.
 
 - id: tax-research-advisory-08
   title: AI-supported research training and coaching for junior staff
@@ -1265,7 +1263,7 @@
     locator: Figure 3
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-13. Named firms describe the practice; no outcome measure for skill development was found.
+    Named firms describe the practice; no outcome measure for skill development was found.
 
 - id: tax-research-advisory-09
   title: Reusable planning 'blueprints' that turn client data into a decision matrix
@@ -1340,9 +1338,9 @@
     locator: objectivity risk table
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-03. Graded B at verification (was A): the speed figure is one named shareholder's estimate ('maybe
-    two or two and a half') quoted by the vendor, not a measured outcome, and not independent. The firm trialled
-    the tool beside its existing platform with a five-person tax team in April 2025.
+    Graded B at verification (was A): the speed figure is one named shareholder's estimate ('maybe two or two and a
+    half') quoted by the vendor, not a measured outcome, and not independent. The firm trialled the tool beside its
+    existing platform with a five-person tax team in April 2025.
 
 - id: tax-research-advisory-10
   title: Planning-alternative ideation and anti-abuse screening of structures (idea)
@@ -1626,9 +1624,9 @@
     locator: answer on explainability of the effective tax rate model
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-18 (idea) and governance-07 (C). Graded C: research results and a vendor-authored benchmark,
-    no named advisory deployment. TaxCalcBench measures return arithmetic, not advisory modelling; the return-preparation
-    result belongs to compliance and the PwC effective-tax-rate model to provision.
+    Graded C: research results and a vendor-authored benchmark, no named advisory deployment. TaxCalcBench measures
+    return arithmetic, not advisory modelling; the return-preparation result belongs to compliance and the PwC
+    effective-tax-rate model to provision.
 
 - id: tax-research-advisory-13
   title: Document-grounded tax analysis of client agreements, trust documents and schedules
@@ -1721,8 +1719,8 @@
     locator: Appendix C, risk 3
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-06. Wright Ford Young is the only named firm reported as already doing this (operating agreements);
-    the Jansen item is a stated intention.
+    Wright Ford Young is the only named firm reported as already doing this (operating agreements); the Jansen item is
+    a stated intention.
 
 - id: tax-research-advisory-14
   title: >-
@@ -1929,11 +1927,10 @@
     locator: opening paragraphs
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-04, discourse-04, discourse-15 and governance-04. Named deployments and pilots without a drafting-specific
-    measurement. Tolley (2024) is outside the window and used as foundation. Related idea from the governance angle (not
-    a separate entry): PCRT uses AI meeting transcription feeding the factual section of an advice note as a worked scenario
-    and says minutes must be reviewed for completeness and accuracy [PCRT-AI-2026]. Drafting responses to IRS notices
-    is routed to controversy.
+    Named deployments and pilots without a drafting-specific measurement. Tolley (2024) is outside the window and used
+    as foundation. Related idea from the governance angle (not a separate entry): PCRT uses AI meeting transcription
+    feeding the factual section of an advice note as a worked scenario and says minutes must be reviewed for
+    completeness and accuracy [PCRT-AI-2026]. Drafting responses to IRS notices is routed to controversy.
 
 - id: tax-research-advisory-15
   title: >-
@@ -2154,8 +2151,8 @@
     locator: Section 1, due diligence
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-05. Only one named firm gives a figure, and it is a usage count. Larson Gross's customer page describes
-    reduced time on routine tasks, with no figures [BLUEJ-LARSON-2025].
+    Only one named firm gives a figure, and it is a usage count. Larson Gross's customer page describes reduced time
+    on routine tasks, with no figures [BLUEJ-LARSON-2025].
 
 - id: tax-research-advisory-17
   title: >-
@@ -2571,12 +2568,11 @@
     locator: introduction ('nearly 800 cases'); paragraph on sanctions (about 90% without formal professional sanctions)
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-09, the manual parts of discourse-11, and governance-14 (idea). Governance-14's idea, tooling
-    that captures prompts, tools, sources and sign-offs automatically and attaches them to the engagement file, has no
-    deployment and is kept here as a note; the UK tribunal in Elden ordered statements of truth about AI use (Charlotin
-    outcome field, not checked against the judgment) [CHARLOTIN-DB-2026]. A Texas A&M-affiliated preprint (not peer reviewed)
-    carries the same 'nearly 800' wording; the journal attribution is unverified. Clinco and other court records are
-    routed to controversy for litigation conduct.
+    Governance-14's idea, tooling that captures prompts, tools, sources and sign-offs automatically and attaches them
+    to the engagement file, has no deployment and is kept here as a note; the UK tribunal in Elden ordered statements
+    of truth about AI use (Charlotin outcome field, not checked against the judgment) [CHARLOTIN-DB-2026]. A Texas
+    A&M-affiliated preprint (not peer reviewed) carries the same 'nearly 800' wording; the journal attribution is
+    unverified. Clinco and other court records are routed to controversy for litigation conduct.
 
 - id: tax-research-advisory-20
   title: Automated check that every cited authority exists and supports the point, before release
@@ -2676,8 +2672,8 @@
     locator: para 1.4 safeguards
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from governance-03 and the automated-checker part of discourse-11. Graded C: the only support is a tool described
-    by its builder; no tax-specific deployment or accuracy figure was found.
+    Graded C: the only support is a tool described by its builder; no tax-specific deployment or accuracy figure was
+    found.
 
 - id: tax-research-advisory-21
   title: 'M&A tax diligence: AI review of purchase agreements and a first-draft diligence report'
@@ -2781,9 +2777,9 @@
     locator: responsibilities list (in-house transaction tax scope; no AI use stated)
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-11, discourse-12 and governance-05. Named firm and named tools; no published measurement. The
-    article rests on a KPMG TaxWatch webcast with Jim Tod. Date: the PDF shows June 2025 and the web page JSON-LD 2026-07-29;
-    2025-06 is used. The Anthropic job posting only shows the shape of in-house transaction tax work.
+    Named firm and named tools; no published measurement. The article rests on a KPMG TaxWatch webcast with Jim Tod.
+    Date: the PDF shows June 2025 and the web page JSON-LD 2026-07-29; 2025-06 is used. The Anthropic job posting only
+    shows the shape of in-house transaction tax work.
 
 - id: tax-research-advisory-22
   title: Diligence agent that reads the data room and drafts a cited tax risk assessment
@@ -2835,9 +2831,8 @@
     locator: page sections 'Time comparison' and 'Why V7 Go'; page undated, access date used
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-12 and discourse-13. Kept as the contrast to KPMG's human-led model (tax-research-advisory-21).
-    The named testimonials on the page (for example a 35% productivity figure) are general V7 Go quotes, not tied to
-    this tax agent.
+    Kept as the contrast to KPMG's human-led model (tax-research-advisory-21). The named testimonials on the page (for
+    example a 35% productivity figure) are general V7 Go quotes, not tied to this tax agent.
 
 - id: tax-research-advisory-23
   title: Law-change monitoring that drafts client-specific impact notes for adviser review
@@ -2949,9 +2944,9 @@
     locator: three reasons hallucinations happen
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from discourse-14 (delegate) and governance-08 (augment); placed at delegate because the agent watches, diagnoses
-    and drafts across many matters, with review at the end. The KPMG quote concerns how fast an agent can be built, not
-    how well monitoring works. The compliance-tracker element also touches compliance.
+    Ladder is delegate because the agent watches, diagnoses and drafts across many matters, with review at the end.
+    The KPMG quote concerns how fast an agent can be built, not how well monitoring works. The compliance-tracker
+    element also touches compliance.
 
 - id: tax-research-advisory-24
   title: Advisers co-build client-specific tax agents with clients on firm platforms as a client service
@@ -3028,8 +3023,8 @@
     locator: Figure 3
   last_reviewed: '2026-10-17'
   notes: >-
-    From practice-14. Both are firm announcements without outcomes. The EY release is oriented to compliance and data
-    processes as much as advice. The monitoring use of these platforms is tax-research-advisory-23.
+    Both are firm announcements without outcomes. The EY release is oriented to compliance and data processes as much
+    as advice. The monitoring use of these platforms is tax-research-advisory-23.
 
 - id: tax-research-advisory-25
   title: Value-based and fixed-fee pricing as AI shortens research and drafting
@@ -3177,6 +3172,6 @@
     locator: pricing paragraph
   last_reviewed: '2026-10-17'
   notes: >-
-    Merged from practice-10 and discourse-17. Pattern 'other': a commercial-model change. An RSM partner's hypothetical
-    (a 20-hour advisory report 'could' take 10 hours with AI plus checking) is an illustration, not a measurement [BTAX-PRICING-2026].
-    The RKL figure is a partner's statement reported by a journalist.
+    Pattern 'other': a commercial-model change. An RSM partner's hypothetical (a 20-hour advisory report 'could' take
+    10 hours with AI plus checking) is an illustration, not a measurement [BTAX-PRICING-2026]. The RKL figure is a
+    partner's statement reported by a journalist.
