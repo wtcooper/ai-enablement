@@ -207,7 +207,7 @@ AI in provision or Pillar Two work.**
 - **2026-08-03 and 2026-08-21:** FGS expects corrections to rise [FGS-GIR-2026]; KPMG authors expect a bigger 2027 test
   as 19 second-wave jurisdictions join the original 37 [BTAX-KPMG-GIR-2026].
 - **2026-10-02:** an arXiv preprint proposes LLM-plus-verification turning tax forms into executable code (adjacent,
-  US personal tax) [ARXIV-LAWORDER-2026].
+  US personal tax) [HAN-LAWORDER-2026].
 
 ## 9. Common objections
 
@@ -234,7 +234,7 @@ Keys used above that are not in the YAML (all opened unless marked; full details
 - AICPA-CART-2026: The Tax Adviser, AICPA Council on AI Risk in Tax, 2026-09-23.
 - AICPA-WERFEL-2026: The Tax Adviser, appendices to Werfel's AI tax risk framework, 2026-06.
 - APPLE-JOB-2026: Apple, Tax Technology Lead job posting (via AnitaB.org), 2026-06-25.
-- ARXIV-LAWORDER-2026: Law And Order: Tax Law Autoformalization, arXiv 2610.02792, 2026-10-02 (abstract).
+- HAN-LAWORDER-2026: Law And Order: Tax Law Autoformalization, arXiv 2610.02792, 2026-10-02 (abstract).
 - COLUMN-TAXCALCBENCH-2025: TaxCalcBench, arXiv 2507.16126, 2025-07-22 (abstract).
 - BTAX-FORUM-2026: Bloomberg Tax Leadership Forum press release, 2026-06-10.
 - CAQ-RESTATE-2024: Center for Audit Quality, Financial Restatement Trends in the United States 2013-2022, 2024-06 (report PDF opened at https://thecaq.wpenginepowered.com/wp-content/uploads/2024/06/caq-financial-restatement-trends-us-2013-2022_2024-06.pdf; Taxes row in the accounting-issues table).

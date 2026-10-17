@@ -1,6 +1,6 @@
 # Individual and small-business return preparation (tax)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/compliance-individual-business.yaml` (25 entries). Ids are
+Sources checked 2026-10-17. Use cases live in `../use-cases/compliance-individual-business.yaml` (25 entries). Ids are
 shortened here: `#05` means `tax-compliance-individual-business-05`; other modules' ids are in full. Source keys in
 brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §10. **Evidence is thin.** One entry is
 grade A (`#05`), and it rests on a single vendor-published pilot: OpenAI's account of 7,000 returns in the Crete
@@ -34,7 +34,7 @@ module; notices after filing are in controversy; research tools are in research-
 |---|---|---|---|
 | Engagement and consent | Engagement letter; section 7216 consent (written client permission to use or disclose return data; Form 1040 wording fixed by Rev. Proc. 2013-14) | document-production, client-interaction | No AI-specific consent guidance; unclear whether an AI vendor is "software" or a third party [BARMORE-OPR-2026] |
 | Organizer and document request | Send the organizer, chase missing items, check what arrived | client-interaction, coordination-scheduling | Weeks of manual reminders; one missing brokerage statement can hold up a return; clients text photos [CPAPA-POSTEXT-2026, TAXADVISER-CLIENTS-2026] |
-| Intake and extraction | Classify W-2s, 1099s, K-1s, brokerage statements; key or import data | transaction-processing | Importing data and integration are the least-liked software attributes (importing averaged 3.4 of 5) [AICPA-TAXSW-2026]; K-1 footnotes defeat template OCR [WK-AXCESSSCAN-2026] |
+| Intake and extraction | Classify W-2s, 1099s, K-1s (partner and shareholder income statements), brokerage statements; key or import data | transaction-processing | Importing data and integration are the least-liked software attributes (importing averaged 3.4 of 5) [AICPA-TAXSW-2026]; K-1 footnotes defeat template OCR [WK-AXCESSSCAN-2026] |
 | Due-diligence interview | Interview and Form 8867 for earned income, child and education credits and head of household | client-interaction, expert-judgment | Personal, contemporaneous duty; $650 per credit penalty for a 2026 filing [IRS-I8867-2025] |
 | Preparation | Federal and state logic, workpapers, depreciation, basis, allocations; trial-balance mapping for 1065 and 1120-S | transaction-processing, expert-judgment | Short season, staff shortage; spreadsheets; tax software re-runs upstream work [WCG-NOTREADY-2026] |
 | Research for positions | Schedule C, partnership and S corporation items | research-synthesis, expert-judgment | Hallucinated authority (*Clinco*) [TAXCT-CLINCO-2026] |
@@ -78,7 +78,7 @@ model-scope change has one B entry (`#24`). Seven entries are controls, enableme
   verified. `#12` AI review with source tie-out, diagnostics, prior-year variance and audit-sensitive flags.
   `#13` idea: decision logs, override-rate monitoring and scaled sampling so review does not thin.
 - Automate: `#14` H&R Block's "Second Look" look-back of three prior years for every new client; new clients who got
-  it returned at a rate 600+ basis points higher (the service, not the AI, is measured).
+  it returned at a rate 600+ basis points higher (the figure is for the service, not the AI).
 
 **Client communication, delivery and other jurisdictions**
 - Improve: `#15` AI-drafted status messages, return explanations and plan comparisons (32% of CPA preparers use AI
@@ -162,6 +162,8 @@ release, plus a projected 45 minutes per 1040 (`#08`); SafeSend 15 minutes and a
 - TaxCalcBench (Column Tax authors, who sell a deterministic engine): best mid-2025 model fully correct on 32.35% of
   51 simplified federal returns; 2026 edition (tax year 2025, 50 cases): 0-71.43% strict, 40% best without web
   search `#10`. Columbia's TaxBench (500+ rules, field-level scoring) is unreleased [COLUMBIA-TAXBENCH-2026].
+- Neuro-symbolic research: a system that turns forms into checked logic matched all 51 held-out TaxCalcBench returns,
+  against 66% for the strongest model alone (academic preprint; abstract only) [HAN-LAWORDER-2026]; see `#10`.
 - Consumer chatbots: average error above $2,000 across eight scenarios in a TaxSlayer test `#25`.
 
 **What to measure (recommend these, not hours alone)**: hours per return by tier before and after; reviewer override
@@ -173,29 +175,22 @@ starting point, not a standard [AICPA-WERFEL-2026].
 ## 6. Guardrails
 
 **Standards and regulators ("existing duties apply"; no rule bans AI)**
-- **IRS OPR Alert 2026-19 (24 Jun 2026)** maps AI onto Circular 230: section 10.22 due diligence (verify facts,
-  citations and calculations), 10.27(a) fees (do not bill manual time not spent; credit savings), 10.35 competence
-  (understand how the tool works and its limits), 10.36 firm procedures (training, secure data handling, accuracy
-  monitoring, documented), 10.37 written advice, 10.51(a)(15) with IRC sections 6713 and 7216; its best practices add
-  vetting vendors' AI before purchase [IRS-OPR-2026]. It calls itself introductory; the AICPA's CEO called its fee
-  language non-authoritative [AICPA-FEES-2026]. Section 10.34(a) (no signing a return with a position lacking
-  reasonable basis) also applies [TREAS-C230-2014]. OPR is to merge with the Return Preparer Office [JOFA-OPR-2026].
-- **Section 7216 and 6713 regulations**: written, signed, dated consent naming purpose and recipient; no retroactive
-  consent; limits on disclosure abroad and on SSNs; software developers count as preparers. None of this mentions AI,
-  and how it applies to an LLM vendor is unresolved; take advice [TREAS-7216-2008, IRS-RP201314-2013, BARMORE-OPR-2026].
+- **Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties), section 7216 and 6713 consent, AICPA SSTS
+  1.4, the UK PCRT and Australian TPB guidance and *Clinco* are set out once in
+  [the archetype guardrails](../guardrails.md). Points that bite hardest in return preparation: the AICPA's CEO
+  called OPR's fee language non-authoritative [AICPA-FEES-2026]; section 10.34(a) bars signing a return with a
+  position lacking reasonable basis [TREAS-C230-2014]; the 7216 regulations require written, signed, dated consent
+  naming purpose and recipient, never mention AI, and leave open how they apply to an LLM vendor, so take advice
+  [TREAS-7216-2008, IRS-RP201314-2013, BARMORE-OPR-2026]. OPR is to merge with the Return Preparer Office [JOFA-OPR-2026].
 - **IRS operating rules that ignore AI**: Publication 1345 (the taxpayer reviews the return before signing Form
   8879), Form 8867 instructions (personal interview, notes kept 3 years), Publications 4557 and 5708 (FTC Safeguards
   Rule: qualified individual, risk assessment, service-provider contracts, MFA, 30-day breach reporting)
   [IRS-PUB1345-2025, IRS-I8867-2025, IRS-PUB5708-2024].
-- **AICPA SSTS 1.4** (reliance on tools): tools may be relied on reasonably but do not remove responsibility
-  [TAXCT-CLINCO-2026]. **Werfel's preparer register** (15 risks in five layers; a proposal) will be tested and
-  refined by the AICPA's Council on AI Risk in Tax, launched 23 Sep 2026 [AICPA-WERFEL-2026, AICPA-CART-2026].
-- **UK**: PCRT AI guidance (19 Jan 2026): members stay responsible; client data in a public model without consent is
-  likely a confidentiality breach [ICAEW-PCRT-2026]. HMRC expects monitoring, version control and human oversight in
-  generative-AI tax software [HMRC-GENAI-2026]. **Australia**: TPB(GS) 55/2026 (22 Jul 2026): competence, reasonable
-  care, client permission (a signed engagement letter can give it), documented verification [TPB-GS55-2026].
-- **Courts**: *Clinco* (T.C. Memo. 2026-16): three of four cited cases apparently hallucinated; no sanctions, but "a
-  recipe for sanctions" [TAXCT-CLINCO-2026]. OPR notes AI laws in California, Colorado, Illinois and Utah [IRS-OPR-2026].
+- **Werfel's preparer register** (15 risks in five layers; a proposal) will be tested and refined by the AICPA's
+  Council on AI Risk in Tax, launched 23 Sep 2026 [AICPA-WERFEL-2026, AICPA-CART-2026].
+- **UK and Australia, module-specific**: HMRC expects monitoring, version control and human oversight in
+  generative-AI tax software [HMRC-GENAI-2026]; under TPB(GS) 55/2026 a signed engagement letter can give the client
+  permission the TPB expects [TPB-GS55-2026].
 
 **Design guardrails seen in products and guidance**
 - Every figure linked to its source document; low-confidence extractions routed to a person (`#02`, `#12`).
@@ -291,10 +286,11 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   BLACKORE-SUMMIT-2026; ACCTPOD-477-2026; ACCTPOD-SAMLEON-2026; BARMORE-OPR-2026; HN-ASK-2026; VERITO-DISCL-2026.
 - **Surveys and academic:** AICPA-TAXSW-2026; TR-FOP-2026; WK-FRA-2025; TEI-TAXTECH-2026 (conference recap);
   COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; STANFORD-HALLUC-2024; SWIDER-2025.
-- **Not in the YAML (opened by the deep-dive researchers):**
+- **Not in the YAML:**
   - AICPA-TOPISSUES-2026: Journal of Accountancy, *CPA Firm Top Issues Survey* (629 respondents), 2026-06-23, https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
   - TR-MADSEN-2026: Thomson Reuters Community, *CPA firm automation case study* (SurePrep/UltraTax baseline), 2026-03-17, https://community.thomsonreuters.com/tax-accounting/f/tax-research-guidance/35077/cpa-firm-automation-case-study-how-one-practice-simplified-1040-tax-prep
   - CPATL-SEASON-2026: CPA Trendlines, *Inside Tax Season's Hidden Shift* (teaser only), 2026-04-05, https://cpatrendlines.com/2026/04/05/inside-tax-seasons-hidden-shift-same-work-fewer-people-higher-cost
   - JUNO-SITE-2026: Juno home page (named customer quotes), retrieved 2026-10-17, https://www.juno.tax/
   - BASIS-E2E-2026: Basis, *The future of tax is end-to-end intelligence*, 2026-08-05 (date shown on the page), https://www.getbasis.ai/blogs/the-future-of-tax-is-end-to-end-intelligence
+  - HAN-LAWORDER-2026: arXiv preprint (Han, Takashima, Wei, Li, Genesereth), *Law And Order: Tax Law Autoformalization* (arXiv 2610.02792), 2026-10-02, https://arxiv.org/abs/2610.02792
   - RSM-MYRSM-2025: RSM US, *RSM Expands AI Commitment with Launch of myRSM Tax*, 2025-06-16, https://rsmus.com/newsroom/2025/rsm-expands-ai-commitment-with-launch-of-myrsm-tax.html
