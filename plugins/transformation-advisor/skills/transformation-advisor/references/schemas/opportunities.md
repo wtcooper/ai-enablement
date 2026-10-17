@@ -49,6 +49,8 @@ items:
 | 6 Make the case | For top options: `value` with assumptions, `human_checkpoints`, `role_evolution`, `evidence` checked |
 | 7 Plan | For chosen options: `next_step` |
 
+- **Quote free text.** Put every free-text value in double quotes (`title`, `description`, `assumptions`,
+  `action`, list items). An unquoted colon or `#` breaks the file or silently truncates the value.
 - **Ranges only.** `low` and `high` with a unit and period (for example `hours/year`, `GBP/year`, `days cycle time`)
   and the assumptions they rest on. Never a single-point ROI.
 - **Scores** use the anchors in `../method/prioritize.md` §3.3. `risk`: a higher score means lower risk.

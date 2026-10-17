@@ -233,6 +233,8 @@ real archetype content.
 Status: `SKILL.md`, `library/index.md`, `archetypes/index.md`, six briefs, schemas, templates and
 `templates/workspace/` are written and pass the validator. The library index carries short working definitions
 of patterns and functions until stream B produces the detailed files.
+The audit-partner end-to-end run completed all phases and wrote valid plan files after one YAML quoting fix
+([review](../evals/e2e/2026-10-17-audit-partner/REVIEW.md)).
 
 - `SKILL.md`, following spec §7.2 (the conductor), with the rules first.
 - `method/` files from stream M. Each has its expert moves, question bank, traps and examples.

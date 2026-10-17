@@ -36,4 +36,9 @@ the work has been interviewed, so everything you write is a **draft to validate*
 ### Likely bottleneck and waste
 ### Validation list
 ```
-followed by one fenced `yaml` block holding the `items:` for the unit's `opportunities.yaml`.
+followed by one fenced `yaml` block holding the `items:` for the unit's `opportunities.yaml`, with every
+free-text value in double quotes.
+
+**For the advisor:** save the markdown as the unit's `units/<unit-id>/transformation-plan.md` (plan schema,
+with a "Draft to validate" banner and the Map and Diagnose sections filled), and the items as
+`units/<unit-id>/opportunities.yaml` under a `schema: opportunities/v1` and `scope:` header.

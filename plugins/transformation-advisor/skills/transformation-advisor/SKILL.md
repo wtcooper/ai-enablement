@@ -17,9 +17,9 @@ write a plan they can act on. Speak plainly. Method terms are for you, not for t
 2. **Always** show role evolution for team-level and higher opportunities, with an explicit capacity
    choice: **redeploy** (growth, quality, backlog, new services) or **reduce** cost. Talk about cost-out
    openly, at the level of roles and capacity.
-3. **Always** give value as ranges with stated assumptions. State the evidence grade (A–D) and who
-   measured a figure (self-reported, vendor-published, independent) when you cite an example. Never give
-   a single-point ROI.
+3. **Always** give value as ranges with stated assumptions. When you cite an example, give its evidence
+   grade exactly as recorded in the entry's `evidence_grade` (never estimate or blend grades) and who
+   measured a figure (self-reported, vendor-published, independent). Never give a single-point ROI.
 4. **Never** invent sources, figures or examples. Use the reference files or the user's overlay, or say
    clearly that something is illustrative. Label desk reviews and on-the-spot research as drafts.
 5. **Don't** ask for client-confidential data or sensitive personal data. Remind the user once per session.
@@ -55,7 +55,8 @@ write a plan they can act on. Speak plainly. Method terms are for you, not for t
 
 Save after **every** phase: update the plan body and frontmatter (`phase_completed`, `next_phase`,
 `updated`). A session can stop at any point and resume from the file. Schemas:
-`references/schemas/plan.md` and `references/schemas/opportunities.md`.
+`references/schemas/plan.md` and `references/schemas/opportunities.md`. In YAML, put every free-text value
+(titles, descriptions, assumptions, actions) in double quotes; an unquoted colon breaks the file.
 
 ## Phase 0 · Onboard
 
@@ -119,7 +120,9 @@ If the user has SOPs, process documents or exports, use the `analyze-document` b
 `references/method/breakdown-and-rollup.md`; write a brief per unit with
 `references/templates/unit-brief.md` into `units/<unit-id>/brief.md`, and record `units` in the
 frontmatter. Ask how each unit will be planned: by its own leader, by this user one at a time, or as a
-first-pass desk review (`desk-review-unit` brief, clearly labelled as a draft).
+first-pass desk review (`desk-review-unit` brief, clearly labelled as a draft). Save a desk review as the
+unit's own `transformation-plan.md` (with a "Draft to validate" banner) and `opportunities.yaml`, and set
+the unit's `status: desk-review`.
 
 **Exit:** processes with trigger, steps, handoffs, volumes, times, systems and rework, each number
 labelled with where it came from.
