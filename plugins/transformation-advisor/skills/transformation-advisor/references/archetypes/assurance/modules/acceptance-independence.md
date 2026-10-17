@@ -227,21 +227,19 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 - **2026-03-02** IFAC publishes global PE research [IFAC-PE-2026]. **2026-03-03/04** Grant Thornton UK selects an AI
   onboarding and acceptance platform [FENERGO-GT-2026, GT-FENERGO-2026].
 - **2026-03-27** IESBA starts gathering information on APS [JOFA-IESBAAPS-2026]. **2026-04-08** Modus raises $85M [AT-MODUS-2026].
-- **2026-05-08** KU/Deloitte symposium pairs an ownership-and-independence panel with AI sessions [KU-SYMPOSIUM-2026].
-- **2026-05-07** Grant Thornton US launches gtap inside an APS [GT-GTAPPR-2026].
+- **2026-05-07** Grant Thornton US launches gtap inside an APS [GT-GTAPPR-2026]. **2026-05-08** KU/Deloitte symposium
+  pairs an ownership-and-independence panel with AI sessions [KU-SYMPOSIUM-2026].
 - **2026-06-05** SEC "in listening mode" on PE and AI; independence FAQ refresh first [TR-HOHL-2026].
 - **2026-07-15** IESBA emerging-technologies staff publication [IESBA-NAM-2026].
 - **2026-08-12/14** Press reports (one linking to an FT article that could not be opened) say AI alliances leave EY
-  as Anthropic's likely auditor [CRYPTOBRIEFING-ANTHROPICEY-2026, FOURTHWEB-ANTHROPICEY-2026]. Treat as a reported,
-  unconfirmed signal.
+  as Anthropic's likely auditor; unconfirmed [CRYPTOBRIEFING-ANTHROPICEY-2026, FOURTHWEB-ANTHROPICEY-2026].
 - **2026-08-27 / 08-31** Repodo raises EUR 8.2M to launch an AI-native Danish audit firm; Oath's Christina Ho says
   AI tool licensing remains ambiguous under the revised APS draft [CFI-REPODO-2026, AT-PEEC-2026].
 - **2026-09-15** UK AML strategy: AI and digital ID in due diligence; FCA AI practice examples due 2026-27 [UKGOV-AMLSTRAT-2026].
 - **2026-09-22** Grant Thornton UK describes declining a grey-area client after consulting the FRC [IRISHTIMES-GT-2026].
 - **2026-10-01** PCAOB agenda includes an auditor-independence standard-setting project [JOFA-PCAOBAG-2026].
 - **2026-10-13** AICPA practice aid adds client AI reliance to acceptance; more sections promised [AICPA-PA].
-- **2026-10-19** PEEC interim meeting, where it agreed to continue discussing a second APS exposure draft
-  [JOFA-PEEC-2026, AICPA-PEECMEET-2026].
+- **2026-10-19** PEEC interim meeting scheduled to continue discussing a second APS exposure draft [JOFA-PEEC-2026, AICPA-PEECMEET-2026].
 - **2026-Q4** IESBA AI-specific guidance planned [IESBA-SNAPSHOT-2026]. **2026-12-15** revised AICPA "attest engagement
   team" definition takes effect [JOFA-PEECTEAM-2026].
 
@@ -284,23 +282,14 @@ Full details (title, publisher, type, URL, date, locator) are in the YAML.
   AT-MODUS-2026, GT-GTAP-2026, CFI-REPODO-2026, FINSTORY-OATH-2026, IRISHTIMES-GT-2026, TR-HOHL-2026, STARLING-HOHL-2026,
   NYSSCPA-HOHL-2025, IRISHTIMES-KPMG-2026, EY-CANVAS-2026, ACCWEEKLY-INDEP-2026, VERDANTIX, TLT-AML-2026, CRYPTOBRIEFING-ANTHROPICEY-2026,
   FOURTHWEB-ANTHROPICEY-2026, BIG4NEWS-2026, CEBI-2024, JB-JAR-2004, CPACOM-ATR, ICAS-ATI-2026.
-- **Not in the YAML:** FRC-GENAI (Financial Reporting Council, *Generative and Agentic AI Guidance: risks, mitigations
-  and illustrative examples*, 2026-03-30, https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf);
-  IFAC-PE-2026 (IFAC, *Private Equity Investment in Accountancy*,
-  2026-03-02, https://www.ifac.org/news-events/2026-03/private-equity-investment-accountancy-ifac-releases-research-and-online-resource);
-  JOFA-FACULTY-2025 (JofA, *What faculty should know about private equity in accounting*, 2025-09-08,
-  https://www.journalofaccountancy.com/newsletters/academic-update/what-faculty-should-know-about-private-equity-in-accounting);
-  BBL-PCAOBSTRAT-2026 (Bloomberg Tax, *Audit Oversight Board Set for Renewed Industry-Friendly Strategy*, 2026-01-16,
-  https://news.bloombergtax.com/financial-accounting/audit-oversight-board-set-for-renewed-industry-friendly-strategy);
-  ACCA-ETHICS-2026 (ACCA, *Navigating ethics for trust*, 2026-10,
-  https://www.accaglobal.com/content/dam/gb/policy-and-insights/reports/2026/navigating-ethics-trust.pdf);
-  AICPA-PEECMEET-2026 (AICPA, *PEEC Meeting Materials and Information*, 2026-09-25,
-  https://www.aicpa-cima.com/resources/article/peec-meeting-information);
-  JOFA-PCAOBAG-2026 (JofA, *PCAOB shares agendas for rulemaking, research*, 2026-10-01,
-  https://www.journalofaccountancy.com/news/2026/oct/pcaob-shares-agenda-for-rulemaking-research/);
-  JOFA-IESBAAPS-2026 (JofA, 2026-03-27, https://www.journalofaccountancy.com/news/2026/mar/iesba-to-assess-need-for-standards-on-alternative-practice-structures/);
-  IESBA-HIGHLIGHTS-2026 (IESBA, *June 2026 Meeting Highlights*, 2026-07,
-  https://www.ethicsboard.org/_flysystem/azure-private/2026-07/June%202026%20IESBA%20Meeting%20Highlights.pdf);
-  JOFA-PEECTEAM-2026 (JofA, 2026-08-17, https://www.journalofaccountancy.com/news/2026/aug/peec-adopts-revised-definition-of-attest-engagement-team/);
-  KU-SYMPOSIUM-2026 (University of Kansas, *Deloitte/KU Auditing Symposium agenda*, 2026-05-08,
-  https://business.ku.edu/research-and-faculty/accounting/deloitte-ku-auditing-symposium).
+- **Not in the YAML:** FRC-GENAI (FRC, *Generative and Agentic AI Guidance: risks, mitigations and illustrative examples*, 2026-03-30, https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf);
+  IFAC-PE-2026 (IFAC, *Private Equity Investment in Accountancy*, 2026-03-02, https://www.ifac.org/news-events/2026-03/private-equity-investment-accountancy-ifac-releases-research-and-online-resource);
+  JOFA-FACULTY-2025 (JofA, *What faculty should know about private equity in accounting*, 2025-09-08, https://www.journalofaccountancy.com/newsletters/academic-update/what-faculty-should-know-about-private-equity-in-accounting);
+  BBL-PCAOBSTRAT-2026 (Bloomberg Tax, *Audit Oversight Board Set for Renewed Industry-Friendly Strategy*, 2026-01-16, https://news.bloombergtax.com/financial-accounting/audit-oversight-board-set-for-renewed-industry-friendly-strategy);
+  ACCA-ETHICS-2026 (ACCA, *Navigating ethics for trust*, 2026-10, https://www.accaglobal.com/content/dam/gb/policy-and-insights/reports/2026/navigating-ethics-trust.pdf);
+  AICPA-PEECMEET-2026 (AICPA, *PEEC Meeting Materials and Information*, 2026-09-25, https://www.aicpa-cima.com/resources/article/peec-meeting-information);
+  JOFA-PCAOBAG-2026 (JofA, *PCAOB shares agendas for rulemaking, research*, 2026-10-01, https://www.journalofaccountancy.com/news/2026/oct/pcaob-shares-agenda-for-rulemaking-research/);
+  JOFA-IESBAAPS-2026 (JofA, *IESBA to assess need for standards on alternative practice structures*, 2026-03-27, https://www.journalofaccountancy.com/news/2026/mar/iesba-to-assess-need-for-standards-on-alternative-practice-structures/);
+  IESBA-HIGHLIGHTS-2026 (IESBA, *June 2026 Meeting Highlights*, 2026-07, https://www.ethicsboard.org/_flysystem/azure-private/2026-07/June%202026%20IESBA%20Meeting%20Highlights.pdf);
+  JOFA-PEECTEAM-2026 (JofA, *PEEC adopts revised definition of 'attest engagement team'*, 2026-08-17, https://www.journalofaccountancy.com/news/2026/aug/peec-adopts-revised-definition-of-attest-engagement-team/);
+  KU-SYMPOSIUM-2026 (University of Kansas, *Deloitte/KU Auditing Symposium agenda*, 2026-05-08, https://business.ku.edu/research-and-faculty/accounting/deloitte-ku-auditing-symposium).
