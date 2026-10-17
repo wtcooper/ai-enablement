@@ -201,7 +201,8 @@ per return, not preparation hours alone.
   companies must issue and report; smaller ones follow in Sep 2027 (vendor summary) [SOVOS-FRANCE-GOLIVE-2026].
 - **Marketplace and deemed-supplier rules** apply by function (payment control, transmitting orders), not label; AI
   has no legal personality, so an agent's operator may have to collect [BTAX-AGENTICCOMMERCE-2026].
-- **Shared conduct rules** (IRS OPR Alert 2026-19, section 7216, the UK PCRT and Australian TPB guidance) are in
+- **Shared conduct rules** (IRS Office of Professional Responsibility (OPR) Alert 2026-19, section 7216 consent, the UK PCRT
+  (Professional Conduct in Relation to Taxation) and Australian Tax Practitioners Board guidance) are in
   [the archetype guardrails](../guardrails.md). The OPR alert covers federal practice and does not address state
   sales tax or VAT [IRS-OPR-2026]; the PCRT guidance applies to UK VAT work [ATT-PCRTAI-2026, ICAEW-PCRT-2026].
 - **UK tribunal**: in *Rafique v HMRC* [2026] TC09874 a VAT-penalty appeal struck out for breaching unless orders was not

@@ -24,7 +24,7 @@ thin: 10 of 25 entries are graded A or B, and nine of those ten are authority-si
 ## 1. What this module covers
 
 Tax disputes from the taxpayer and adviser side: notices (for example the CP2000, the IRS letter that flags a
-mismatch with third-party data), examinations (audits), Appeals and alternative dispute resolution, collection, and
+mismatch with third-party data), examinations (audits), Appeals and alternative dispute resolution (ADR), collection, and
 litigation in the Tax Court or tribunals. It also covers how tax authorities use AI to select, notify, serve and
 decide, because that sets the pace and the evidence bar for every dispute. Authorities are scaling AI while
 shrinking; practitioners mostly use AI to read notices, draft replies and research, and their failures show up in
@@ -41,7 +41,7 @@ court filings.
 | Examination | Answer information document requests (IDRs, the examiner's formal record requests), interviews, proposed adjustments | coordination-scheduling, document-production | In e-invoicing (continuous transaction control) jurisdictions, authorities arrive with transaction data already analysed [TRINST-TEIAUDITOR-2026] |
 | Appeals, Fast Track, ADR | Protest, settlement, mediation | expert-judgment, document-production | Appeals lost 29% of staff in 2025, per a law-firm commentary [CPAPA-APPEALS-2026]; no taxpayer-side AI evidence |
 | Litigation | Research, briefs, motions, expert reports | research-synthesis, document-production | Hallucinated citations by taxpayer counsel and by the IRS [TAXCT-CLINCO-2026; BLAW-TAXCT-2026] |
-| Collection and service | Payment plans, calls, chatbots, identity verification | client-interaction, transaction-processing | IRS assistor-answered calls down 20%, hold time 8 to 14 minutes in FS2026 [NTA-OBJ-2026] |
+| Collection and service | Payment plans, calls, chatbots, identity verification | client-interaction, transaction-processing | IRS assistor-answered calls down 20%, hold time 8 to 14 minutes in the 2026 filing season (FS2026) [NTA-OBJ-2026] |
 | Practice governance | AI policy, engagement letters, billing, confidentiality, privilege | review-assurance | Fee and privilege rules unsettled [AICPA-CART-2026; MOFO-HEPPNER-2026] |
 
 ## 3. Where AI is changing the work
@@ -72,7 +72,7 @@ announcements.
   the TP version is `tax-transfer-pricing-16`).
   `#08` AI-assisted research and drafting for filings, with citation verification as the control (Clinco: 3 of 4
   cited cases apparently invented; tooling in `tax-research-advisory-19` and `tax-research-advisory-20`). `#09` idea: counsel-directed enterprise AI to protect privilege after *Heppner*.
-- Authority side: `#22` Agentforce case summaries for Chief Counsel, Appeals and TAS (announced, single source).
+- Authority side: `#22` Agentforce case summaries for Chief Counsel, Appeals and TAS (the Taxpayer Advocate Service) (announced, single source).
   `#23` Brazil groups similar appeal files for the same officers (over 80% sensitivity and specificity in early trials; a model accuracy measure, not a speed result).
   `#21` examiner and caseworker assistants (ATO orders substantiation documents; HMRC document scanning; IRS revenue
   agents reportedly draft IDRs).
@@ -87,7 +87,7 @@ announcements.
 - Ideas: `#14` feedback, drift and disparity testing for selection models; `#25` LLMs that detect abusive strategies.
 
 **Practice governance**
-- Reinvent (idea): `#10` value-based pricing versus OPR's fee guidance. Improve (idea): `#11` Werfel's risk register
+- Reinvent (idea): `#10` value-based pricing versus the fee guidance of OPR (the IRS Office of Professional Responsibility). Improve (idea): `#11` Werfel's risk register
   as pre-deployment due diligence.
 
 ## 4. Interview probes
@@ -103,10 +103,10 @@ announcements.
 5. Do you check that a real case actually supports the proposition, not just that it exists? *Zzaman shows existence
    checks are not enough.*
 6. What does your engagement letter say about AI on client data, and how do you price notice and exam work as
-   drafting time falls? *Reveals §7216 consent, OPR fee exposure and readiness for `#10`.*
+   drafting time falls? *Reveals §7216 consent (client permission to use return data), OPR fee exposure and readiness for `#10`.*
 7. Who owns AI in your tax function (tax, IT, legal)? *In a TEI room poll, two of more than 50 hands said tax does
    [TEI-TAXTECH-2026]; no owner usually means no verification standard.*
-8. Since 2025, where has resolution slowed (POA processing, exam assignment, Appeals, collection), and what changed in
+8. Since 2025, where has resolution slowed (power-of-attorney processing, exam assignment, Appeals, collection), and what changed in
    client expectations or staffing? *Measures the capacity gap that commentators describe.*
 9. Do clients use consumer AI on their own matters, and do you tell them about privilege? *Heppner risk; `#09`.*
 10. If an authority used AI against your client, what record would you request, and what have you been given?
@@ -144,8 +144,9 @@ override or error rate for its selection models.
 ## 6. Guardrails
 
 **Practitioner rules ("existing duties apply")**
-- IRS OPR Alert 2026-19 (Circular 230 duties and IRC §§6713 and 7216), AICPA SSTS §1.4, Australia's TPB(GS) 55/2026
-  and the UK PCRT guidance are set out once in [the archetype guardrails](../guardrails.md). For controversy work:
+- IRS OPR Alert 2026-19 (Circular 230, the IRS rules for tax practitioners, and IRC §§6713 and 7216), AICPA SSTS §1.4
+  (Statements on Standards for Tax Services), the Australian Tax Practitioners Board's TPB(GS) 55/2026 and the UK PCRT
+  (Professional Conduct in Relation to Taxation) guidance are set out once in [the archetype guardrails](../guardrails.md). For controversy work:
   treat AI text as a draft and use only enterprise-approved tools for client data [IRS-OPR-2026]; the AICPA has asked
   for clarification on value pricing [AICPA-CART-2026].
 

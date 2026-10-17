@@ -113,7 +113,7 @@ model 4. Automate has almost no deployed evidence.
 3. **Who owns AI in tax: tax, finance or IT?** At TEI, 2 of more than 50 attendees said tax does
    [TEI-TAXTECH-2026]. No owner usually means no logs, no metrics and stalled pilots.
 4. **What can a reviewer see on an AI-assisted workpaper: prompt, output, sources, what was checked?** Tests
-   readiness for an examiner or auditor (`#19`) and for OPR's documentation expectation [IRS-OPR-2026].
+   readiness for an examiner or auditor (`#19`) and for the documentation expectation of OPR (the IRS Office of Professional Responsibility) [IRS-OPR-2026].
 5. **What review layers apply to AI-prepared work, and do you record overrides? Do you know the rate?** In a
    worked example, an override rate below 5% signals rubber-stamping [AICPA-WERFEL-2026]; no rate means no quality evidence (`#21`).
 6. **For R&D credits: where does project and time data live today, and can you report by business component for
@@ -124,7 +124,7 @@ model 4. Automate has almost no deployed evidence.
    tax departments want providers to use GenAI, and 59% "aren't sure" about GenAI use (the source's wording is
    ambiguous about whose use) [TR-TENSIONS-2025] (`#15`, `#16`).
 9. **Which AI tools may staff use with return data, and how would you know about use outside that list?**
-   Reveals shadow-AI exposure under IRC 7216 and 6713 (`#20`).
+   Reveals shadow-AI exposure under IRC 7216 and 6713 (limits on using or disclosing return information) (`#20`).
 10. **Have you measured anything before and after: cycle time, review rework, notices, penalties?** Only 20% of
     professional-services organisations measured GenAI ROI in 2025 [TR-TENSIONS-2025], though two-thirds of tax
     departments say they track time savings [TR-TAXTALENT-2026]; it decides whether a business case can be shown.
@@ -164,8 +164,8 @@ returns, Forms 5471/8858, state returns or Section G.
 
 ## 6. Guardrails
 
-- **Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties), section 7216 consent, the UK PCRT
-  guidance, Australia's TPB guidance and *Clinco* are set out once in [the archetype guardrails](../guardrails.md)
+- **Shared conduct rules.** IRS OPR Alert 2026-19 (duties under Circular 230, the IRS rules for tax practitioners), section 7216 consent, the UK
+  PCRT (Professional Conduct in Relation to Taxation) guidance, Australia's Tax Practitioners Board (TPB) guidance and *Clinco* are set out once in [the archetype guardrails](../guardrails.md)
   and apply here. Points specific to this module follow. There is no AI-specific rule for corporate returns, and the
   OPR alert addresses practitioners, not in-house teams directly [IRS-OPR-2026].
 - **Preparer reliance.** Treas. Reg. 1.6694-1(e) allows good-faith reliance on taxpayer-furnished information but

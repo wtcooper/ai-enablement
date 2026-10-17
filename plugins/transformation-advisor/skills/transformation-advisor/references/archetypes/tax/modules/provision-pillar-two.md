@@ -146,7 +146,8 @@ AI in provision or Pillar Two work.**
 
 ## 6. Guardrails
 
-- **Shared conduct rules** for tax practitioners (IRS OPR Alert 2026-19, section 7216, PCRT, TPB) are in
+- **Shared conduct rules** for tax practitioners (IRS Office of Professional Responsibility Alert 2026-19, section 7216
+  consent, the UK PCRT and Australian Tax Practitioners Board guidance) are in
   [the archetype guardrails](../guardrails.md). The rules below are specific to tax accounting and Pillar Two filing.
 - **ASU 2023-09.** Public business entities must give a tabular rate reconciliation in percentages and amounts by
   category, with items at or above 5% of statutory tax broken out, and taxes paid by federal, state/local and

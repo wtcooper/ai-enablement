@@ -40,7 +40,7 @@ module; notices after filing are in controversy; research tools are in research-
 | Research for positions | Schedule C, partnership and S corporation items | research-synthesis, expert-judgment | Hallucinated authority (*Clinco*) [TAXCT-CLINCO-2026] |
 | Review | Preparer, manager and partner review | review-assurance | Senior time; review thins as volume rises ("control dilution") [AICPA-WERFEL-2026] |
 | Delivery, signature, e-file | Assembly, Form 8879 e-file authorisation, payment, filing | coordination-scheduling, document-production | Signing edge cases; final steps still inside the tax software [TR-TRUST7-2026, WCG-NOTREADY-2026] |
-| Billing and advisory | Fee basis; planning conversation from the return | client-interaction, expert-judgment | OPR fee language vs value pricing [AICPA-FEES-2026]; 93% use no tool to find planning opportunities in returns [AICPA-TAXSW-2026] |
+| Billing and advisory | Fee basis; planning conversation from the return | client-interaction, expert-judgment | Fee language of OPR (the IRS Office of Professional Responsibility) vs value pricing [AICPA-FEES-2026]; 93% use no tool to find planning opportunities in returns [AICPA-TAXSW-2026] |
 
 **Context on the pain.** A Black Ore launch article cites BLS data (about 300,000 net departures in two years) and a
 17-year low in CPA exam candidates (2022, AICPA); its 125-million-hour shortfall is unattributed [BLACKORE-2026]. For
@@ -117,7 +117,7 @@ Ask in the person's own setting (small CPA firm, mid-tier firm, enrolled agent, 
    and 7216 consent say?"** Reveals exposure under sections 7216 and 6713 and readiness for OPR's "secure,
    enterprise-approved AI" (`#19`, `#21`).
 8. **"Who owns AI in the firm: a pod, a partner, nobody? What would move you from evaluating to committed?"**
-   Reveals governance under Circular 230 section 10.36 and adoption stage (`#20`).
+   Reveals governance under Circular 230 (the IRS rules for tax practitioners) section 10.36 and adoption stage (`#20`).
 9. **"How do you price returns now, and what happened to hours per return last season? Have you read the OPR fee
    language?"** Reveals business-model pressure and section 10.27 risk (`#22`).
 10. **"How do juniors learn to spot a wrong W-2 box 12 treatment or a fake citation if AI does the first pass?"**
@@ -176,7 +176,8 @@ starting point, not a standard [AICPA-WERFEL-2026].
 
 **Standards and regulators ("existing duties apply"; no rule bans AI)**
 - **Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties), section 7216 and 6713 consent, AICPA SSTS
-  1.4, the UK PCRT and Australian TPB guidance and *Clinco* are set out once in
+  1.4 (Statements on Standards for Tax Services), the UK PCRT (Professional Conduct in Relation to Taxation) and
+  Australian Tax Practitioners Board (TPB) guidance and *Clinco* are set out once in
   [the archetype guardrails](../guardrails.md). Points that bite hardest in return preparation: the AICPA's CEO
   called OPR's fee language non-authoritative [AICPA-FEES-2026]; section 10.34(a) bars signing a return with a
   position lacking reasonable basis [TREAS-C230-2014]; the 7216 regulations require written, signed, dated consent

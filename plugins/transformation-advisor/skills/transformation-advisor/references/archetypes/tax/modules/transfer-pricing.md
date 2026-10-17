@@ -157,8 +157,9 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
 - **US documentation standard.** Section 6662(e) documentation avoids the penalty only if adequate and reasonable;
   the IRS wants reasons for the method chosen, sources reviewed and methods rejected, and calculations in working
   formats [IRS-TPFAQ-2026]. No source tests how AI-drafted documentation fares under these rules.
-- **Practitioner conduct.** The shared rules (IRS OPR Alert 2026-19 and Circular 230, section 7216, the UK PCRT and
-  Australian TPB guidance) are in [the archetype guardrails](../guardrails.md); they apply to TP work as to any
+- **Practitioner conduct.** The shared rules (IRS Office of Professional Responsibility (OPR) Alert 2026-19 and Circular
+  230, section 7216 consent, the UK PCRT (Professional Conduct in Relation to Taxation) and Australian Tax
+  Practitioners Board guidance) are in [the archetype guardrails](../guardrails.md); they apply to TP work as to any
   federal or UK tax practice [IRS-OPR-2026] [ATT-PCRTAI-2026].
 - **Courts and evidence.** Clinco: the Tax Court found likely hallucinated citations and issued a warning
   [TAXCT-CLINCO-2026]. An IRS valuation expert report in Riddle Aggregates was challenged over hallucinated

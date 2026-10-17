@@ -189,7 +189,8 @@ pipelines, mappings, reconciliations or e-invoice interfaces; any figure for age
   tool call and idempotent filings [AVALARA-MCP-2026]. NIST launched an AI Agent Standards Initiative on
   2026-02-17 [NIST-CAISI-2026].
 - **Write-back.** Deloitte says agentic corrections to source data will need to be stored back in the system of record to keep an audit-ready posture [DELOITTE-TTT-2026].
-- **Practitioner duties.** The shared conduct rules (IRS OPR Alert 2026-19, section 7216, PCRT, TPB) are in
+- **Practitioner duties.** The shared conduct rules (IRS Office of Professional Responsibility (OPR) Alert 2026-19, section 7216 consent to use
+  return information, the UK PCRT and Australian Tax Practitioners Board guidance) are in
   [the archetype guardrails](../guardrails.md). The OPR alert is addressed to practitioners before the IRS, not to
   in-house departments as such [IRS-OPR-2026]. The UK Senior Accounting Officer regime puts personal accountability on named executives for tax
   accounting arrangements [TR-GOVERNANCE-2026].

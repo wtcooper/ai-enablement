@@ -45,7 +45,7 @@ Return preparation sits in compliance, litigation conduct in controversy, and in
 | Transaction work | Read SPAs (share purchase agreements) and partnership agreements, spot issues, write the diligence report, structure | review-assurance, document-production | Deal deadlines; long documents [KPMG-MA-2025] |
 | Monitor and keep knowledge | Track law changes; keep playbooks, prior memos, internal guidance | research-synthesis, coordination-scheduling | Outdated law in model answers [BTAX-HALLUC-2026]; knowledge leaves as seniors retire [TR-AGENTICBLOG-2026] |
 | In-house: serve the business | Ad hoc questions from finance, legal, auditors | research-synthesis, client-interaction | 58% of 288 departments under-resourced; over half of time reactive [TR-CORPTAX-2025] |
-| Scope and price | Engagement letter, fee basis | coordination-scheduling | Hourly billing versus OPR's fee rule (#25) |
+| Scope and price | Engagement letter, fee basis | coordination-scheduling | Hourly billing versus the fee rule of OPR, the IRS Office of Professional Responsibility (#25) |
 
 ## 3. Where AI is changing the work
 
@@ -76,7 +76,8 @@ process-level automation. Delegate has four entries, none above C. Reinvent has 
   AI before or instead of a Big Four opinion [SALA-TAXNOTES-2026].
 
 **Review**
-- Improve: `#19` (B) citation verification plus an AI-use record as a standing step (KPMG M&A Tax; JofA, OPR, TPB, PCRT).
+- Improve: `#19` (B) citation verification plus an AI-use record as a standing step (KPMG M&A Tax; JofA, OPR, Australia's Tax Practitioners Board (TPB), the UK PCRT (Professional
+  Conduct in Relation to Taxation) bodies).
 - Automate: `#20` (C) automated existence-and-support check on every citation (PelAIkan; no performance data).
 
 **Transactions**
@@ -109,7 +110,7 @@ Ask tax partners, research or national-office leads, in-house tax directors and 
    third admit unauthorized tools) and the owner gap (two of 50+ TEI attendees said tax owns AI) (#06, #07).
 6. **"How have engagement letters, time capture and fees changed since OPR Alert 2026-19?"** Reveals exposure on the
    s10.27 fee point and readiness for fixed or value pricing (#25).
-7. **"How do you handle client data in research tools: closed systems, consent, section 7216?"** Reveals confidentiality
+7. **"How do you handle client data in research tools: closed systems, consent, section 7216 (consent to use return data)?"** Reveals confidentiality
    control; the TPB requires client permission before data goes to third-party AI (#07, #13).
 8. **"How are juniors learning the research craft if first drafts are machine-made?"** Reveals skill-erosion risk and
    whether training covers judging AI output (#08).
@@ -165,8 +166,8 @@ rework, disagreement with seniors' answers, citation-check failures, share of an
 
 ## 6. Guardrails
 
-**Shared conduct rules.** IRS OPR Alert 2026-19 (Circular 230 duties, including s10.22 due diligence, s10.27 fees and
-s10.37 written advice), section 7216, AICPA SSTS 1.4, the UK PCRT guidance, Australia's TPB(GS) 55/2026 and *Clinco*
+**Shared conduct rules.** IRS OPR Alert 2026-19 (duties under Circular 230, the IRS rules for tax practitioners, including s10.22 due diligence, s10.27 fees and
+s10.37 written advice), section 7216, AICPA SSTS 1.4 (Statements on Standards for Tax Services), the UK PCRT guidance, Australia's TPB(GS) 55/2026 and *Clinco*
 are set out once in [the archetype guardrails](../guardrails.md). Points that matter most for research and advice:
 - Written advice: OPR says opaque logic can make reliance unreasonable [IRS-OPR-2026]; law-firm commentary reads the
   alert as covering corporate, payroll and plan advice, not only Form 1040 work [NATLAW-OPR-2026]. No authority yet
