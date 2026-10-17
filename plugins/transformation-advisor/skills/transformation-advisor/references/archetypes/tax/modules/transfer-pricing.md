@@ -37,14 +37,14 @@ TP teams and advisory firms. Tax authorities' AI for picking TP audits is in `ta
 | Intercompany agreements | Draft and update agreements that match policy and conduct | document-production, review-assurance | Drafting "often stalls for weeks" [PLANTEMORAN-2026]; IRS flags risk analysis inconsistent with agreements [IRS-TPFAQ-2026] |
 | Data collection | Pull entity financials and transactions from ERPs and local finance | data-reporting | 79% spend >10% of TP time on data; nearly half run 4+ ERP or reporting systems (vendor survey) [AIBIDIA-LEADERS-2026] |
 | Functional and industry analysis | Interviews and documents on functions, assets, risks; DEMPE for intangibles (who develops, enhances, maintains, protects, exploits) | research-synthesis, expert-judgment | Most probed by authorities; generic profiles that mirror contracts [BDO-AIGOV-2026] |
-| Benchmarking | Search databases, screen, adjust, set the arm's-length range | research-synthesis, data-reporting | Hours or days per study; every rejection must be justified [IRS-TPFAQ-2026] |
+| Benchmarking | Search databases, screen, adjust, set the arm's-length range | research-synthesis, data-reporting | Hours or days per study [AIBIDIA-WEBINAR-2026]; the IRS wants a complete comparability analysis, with risk and function differences and adjustments explained [IRS-TPFAQ-2026] |
 | Local file, master file, CbC report | Annual documentation per entity and for the group | document-production, data-reporting | Up to six weeks per local file and 3-4 review rounds (Trivium) [AIBIDIA-TRIVIUM-2026]; 30 days to hand over on IRS request [TR-CHECKPOINT-2025] |
 | Requirements and consistency review | Check country rules; reconcile figures across TP files, CbC reports, VAT and tax returns | review-assurance | Rules change often; mismatches invite automated flags [BTAX-AFRICA-2026] |
 | Intragroup services | Benefit test, allocation keys, cost-plus | expert-judgment | OECD rewriting the guidance; benefit-test disputes [HLB-CH7-2026] |
 | Operational TP | Monthly calculation, monitoring, true-ups, invoicing, posting | transaction-processing, data-reporting | 60% rely on Excel and email; 7% monitor monthly; half report significant year-end adjustments [AIBIDIA-LEADERS-2026] |
 | Audit defence and controversy | Answer information requests, expert reports, appeals | expert-judgment, document-production | Half spend 50-200 hours on audit response (vendor survey) [AIBIDIA-SOTP-2025] |
 | APAs and MAPs | Negotiate certainty with one or more authorities | expert-judgment | Long negotiations; no AI evidence found |
-| Research and regulatory tracking | Follow legislation, guidance, deadlines | research-synthesis | Dozens of jurisdictions; local staff touch TP about once a year [AIBIDIA-WEBINAR-2026] |
+| Research and regulatory tracking | Follow legislation, guidance, deadlines | research-synthesis | Dozens of jurisdictions; local subsidiaries touch TP "perhaps once a year" [AIBIDIA-WEBINAR-2026] |
 
 ## 3. Where AI is changing the work
 
@@ -62,7 +62,7 @@ conference-reported only. No automate entry is at the step level.
 **Analysis and benchmarking**
 - Improve: `#05` AI-drafted functional and industry analysis, e.g. explaining glove-maker margin surges (PwC
   Singapore example); BDO: AI cannot tell whether contracts reflect practice. `#06` comparables search and screen
-  (RoyaltyRange, Exactera products; PwC Singapore speakers: AI "may" do ~80% of comparability work).
+  (RoyaltyRange, Exactera products; a PwC Singapore partner: AI "may" do ~80% of comparability work).
 
 **Documentation and agreements**
 - Improve: `#07` first-draft local and master file narratives with expert sign-off (job postings now ask for it;
@@ -126,18 +126,19 @@ on another; method not given) [AIBIDIA-LEADERS-2026] [AIBIDIA-SOTP-2026].
 | Measure | Figure | Provenance |
 |---|---|---|
 | AI use among TP professionals | 93% some use; no use fell 36% to 7%; regular use 37% (from 18%) | vendor survey |
+| AI expectations | 75% expect AI to handle a first documentation draft in 2-3 years; 8% expect AI to touch strategic policy design [AIBIDIA-SOTP-2026] | vendor survey |
 | TP data clean enough for AI without manual work | 22% | vendor survey |
 | Time on data | 79% spend >10% of TP time; 21% at least half; 14% draw from a single ERP | vendor survey |
 | Team size vs reach | 63% have three or fewer TP staff; 58% operate in more than 30 jurisdictions | vendor survey |
 | Operational TP discipline | 38% well defined; 60% Excel/email; 7% monthly monitoring; half significant year-end adjustments | vendor survey |
 | Sourcing | 53% hybrid in-house plus advisors, up from 38% in 2024 | vendor survey |
 | Audit response burden (2025) | Half spend 50-200 hours; half report USD 50,000-500,000 cost [AIBIDIA-SOTP-2025] | vendor survey |
-| Local-file time (Trivium) | 80% saving; up to six weeks to a few hours; was EUR 10,000-15,000 per entity outsourced [AIBIDIA-TRIVIUM-2026] | vendor-published customer statement |
+| Local-file time (Trivium) | 80% saving; 2-5 working days (up to six weeks when waiting on data and advisors) to a few hours for a simple local file; earlier spend over EUR 10,000-15,000 per entity [AIBIDIA-TRIVIUM-2026] | vendor-published customer statement |
 | Transaction automation (Fortum) | 65% in one year; 8,000+ transactions in the model vs 200 [AIBIDIA-FORTUM-2026] | vendor-published customer statement |
-| Comparability work (PwC Singapore) | AI "may" do ~80%; up to 100 hours to ~30 minutes "under certain conditions" [DDTC-WUTA-2026] | self-reported, conference |
+| Comparability work (PwC Singapore) | Partner: AI "may" do ~80% of comparability-analysis work. Senior manager, on "analysis" from modelling to value-chain work (not comparables specifically): up to 100 hours to ~30 minutes "under certain conditions" [DDTC-WUTA-2026] | self-reported opinions, conference |
 | Packaged service price | ~USD 9,000 and ~4 weeks for a first set vs a claimed USD 60K and six months [COMMENDA-TP-2026] | vendor claim |
-| Penalty exposure | Up to 40% of the adjustment without contemporaneous documentation (Exactera speaker) [TR-CHECKPOINT-2025] | self-reported |
-| IRS AI oversight (adjacent) | IRS lacks processes to show its selection models beat prior methods [TIGTA-2025]; 126 IRS AI use cases [GAO-2026] | independent, not TP-specific |
+| Penalty exposure | "Up to 40% of the adjustment" without contemporaneous documentation, in an Exactera speaker's words as reported; the rate base was not checked against the statute [TR-CHECKPOINT-2025] | self-reported |
+| IRS AI oversight (adjacent) | IRS lacks processes to show its selection models beat prior methods [TIGTA-2025]; 126 active IRS AI use cases as of June 2025 [GAO-2026] | independent, not TP-specific |
 
 What to measure in a pilot: hours per local file and per benchmarking study; review rounds; share of entities
 documented; reviewer override rate on AI drafts and comparables; year-end adjustment size; time to answer an
@@ -201,10 +202,11 @@ adjacent: models computed fewer than a third of simplified US returns correctly 
 - 2026-02-03: a CIAT blog author argues authorities are moving from predictive risk models to agentic AI for
   end-to-end TP control, under human supervision (opinion) [CIAT-BLOG-2026].
 - 2026-03-12: Hungary's 2026 inspection plan uses AI-based models to pick TP audit targets [WTS-HU-2026].
-- 2026-05-08: first ABA Tax Section panel on AI and section 482, with an IRS panelist [ABA-MAYMTG-2026].
-- 2026-06-01 to 2026-08: OECD Chapter VII consultation with AI-tool examples [PWCDE-CH7-2026] [OECD-INTRAGROUP-2026].
-- 2026-06-16/17: TPMinds International recap says AI moved from theory to practice; multi-agent example
-  [AIBIDIA-TPMINDS-2026]. 2026-06-26: Oxford CBT asks how delegating decisions to AI affects TP law [OXFORD-CBT-2026].
+- 2026-05-08: ABA Tax Section May Meeting panel on AI and section 482, with an IRS panelist [ABA-MAYMTG-2026].
+- 2026-06-01 to 2026-07-22: OECD Chapter VII consultation; submissions published 2026-08-24 [PWCDE-CH7-2026] [HLB-CH7-2026];
+  companies ask how AI transactions are characterised [OECD-INTRAGROUP-2026].
+- 2026-06-16/17: TPMinds International; the sponsor's recap (2026-06-25) says AI moved from theory to practice and
+  cites an unnamed multi-agent example [AIBIDIA-TPMINDS-2026]. 2026-06-26: Oxford CBT asks how delegating decisions to AI affects TP law [OXFORD-CBT-2026].
 - 2026-07-29: IRS LB&I sets expert-witness expectations on AI [IRS-LBI-TP-2026].
 - 2026-09-23: majorities of vendor-survey respondents expect AI agents to gather and format data, monitor compliance
   and do first-pass audit reviews within two to three years [AIBIDIA-LEADERS-2026].
