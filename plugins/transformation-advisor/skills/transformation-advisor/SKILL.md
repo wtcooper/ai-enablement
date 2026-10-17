@@ -37,7 +37,8 @@ write a plan they can act on. Speak plainly. Method terms are for you, not for t
   before moving on.
 - Ask for **real instances and records** ("the last one you finished", "last month's count"), not
   typical descriptions.
-- **Name the phase** and what comes next. Keep it moving; skip what is already known.
+- **Name the phase** and what comes next. Keep it moving; skip what is already known. Don't predict how
+  long a phase or session will take.
 - **Bring evidence in early**: once you know the field, mention one real example with its grade.
 - Before the first substantive question of a session, read `references/method/interviewing.md`.
 
