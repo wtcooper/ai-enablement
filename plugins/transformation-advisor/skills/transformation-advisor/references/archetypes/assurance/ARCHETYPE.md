@@ -78,10 +78,10 @@ scope (team, practice, firm) by markers you can see or count, not by self-rating
 | **Scaling** | Agents across audit phases on a shared platform [EY-CANVAS-2026; DELOITTE-OMNIA-2026]; network and member-firm monitoring with clear ownership [IFIAR-TTF-2026]; client data arrives through standard connectors; staffing tied to AI capacity; active regulator dialogue (sandbox, comment letters) | Value shows in engagement margin or coverage, and leaders are asking about pricing, new services and the staffing model |
 | **AI-native** | Methodology built around whole populations with follow-up by exception [KPMG-SOX-2026]; fee model or service changed by AI (continuous or subscription assurance, assurance over AI); firms built AI-first [REPODO-2026; MODUS-2026] | Re-diagnose at each review. No firm has yet published a measured cost or quality advantage, so treat AI-native claims with scepticism |
 
-**Delegation.** Plan delegated (agentic) work only at Adopting or later, behind the five gates in onboarding §5. In
-assurance the reference case is an agent testing a defined control set in shadow mode under reviewer sign-off, with
-override rates tracked (controls-testing `#05`). Regulators expect named owners for each decision checkpoint
-[IFIAR-TTF-2026].
+**Delegation.** Plan delegated (agentic) work only at Adopting or later, behind the five gates in onboarding §5. The
+assurance reference case is internal audit agents testing defined SOX control attributes with cited evidence, a reviewer
+signing off every conclusion and exception (controls-testing `#05`; figures self- or vendor-reported). Regulators expect
+named owners for each decision checkpoint [IFIAR-TTF-2026].
 
 ## Files in this archetype
 

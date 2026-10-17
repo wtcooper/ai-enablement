@@ -169,3 +169,5 @@ question F15.
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **ONLYCFO-KPMGFEE-2026**: OnlyCFO newsletter, *AI is Coming for Audit Fees: KPMG Just Proved It* (commentary (finance executive), 13 Feb 2026). https://www.onlycfo.io/p/ai-is-coming-for-audit-fees-kpmg
+- **TXCPA-FILER-2026**: Texas Society of CPAs, *PSC comments on SEC proposal to streamline public company filer status* (professional body, 16 Jul 2026). https://www.tx.cpa/news/latest-news/news/article/2026/07/16/psc-comments-on-sec-proposal-to-streamline-public-company-filer-status

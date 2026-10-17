@@ -57,7 +57,7 @@ brackets resolve in §12 or in [sources.md](sources.md).
 | PCAOB technology-assisted-analysis amendments (AS 1105, AS 2301) | In force | Fiscal years beginning on or after 15 Dec 2025 | [PCAOB-TAA-2024] |
 | PCAOB AS 2310 (confirmations; direct access to external sources) | In force | Fiscal years ending on or after 15 Jun 2025 | [PCAOB-AS2310-2023] |
 | PCAOB QC 1000, as amended | Adopted 9 Sep 2026; SEC approval pending at last check | 15 Dec 2026 | [PCAOB-SSR-PAGE-2026; JOFA-QC1000-2026] |
-| ISSA 5000 and ethics standards for sustainability assurance | Issued | Periods beginning on or after 15 Dec 2026 | [ISSA5000-2024] |
+| ISSA 5000 (sustainability assurance) | Issued | Periods beginning on or after 15 Dec 2026 | [ISSA5000-2024] |
 | ISA (UK) 620 on using experts | Final | 15 Dec 2026 | [FRC-620-2026] |
 | IAASB ED ISA 330, 500, 520 | Exposure draft | Comments by 15 Dec 2026; final not before 2027 (inference) | [IAASB-ED500-2026] |
 | PCAOB auditor independence | Proposal in preparation | Q1 2027 (anticipated) | [PCAOB-SSR-PAGE-2026] |
@@ -186,3 +186,6 @@ through the accountability principle.
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **AT-AICPAPA-2026**: Accounting Today, *AICPA releases practice guide for auditors dealing with AI* (press, 14 Oct 2026). https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai
+- **FRC-SUPERVISION-2026**: FRC, *FRC introduces evolved approach to audit supervision* (regulator, 25 Mar 2026). https://www.frc.org.uk/news-and-events/news/2026/03/frc-introduces-evolved-approach-to-audit-supervision/
+- **HEPLER-LIAB-2026**: Hepler Broom LLC, *Professional Liability Risks for CPA Firms in 2026 (white paper, Glenn E. Davis)* (law firm, Jun 2026). https://heplerbroom.com/wp-content/uploads/2026/06/accounting-malpractice-white-paper-8JY697202.pdf

@@ -79,8 +79,8 @@ have narrower frontier lists for their own steps. Source keys in brackets resolv
 | Date | What happens | Source |
 |---|---|---|
 | 6-7 Nov 2026 | Rutgers WCARS on AI governance, continuous auditing and agentic systems | [WCARS-2026] |
-| 15 Dec 2026 | QC 1000 effective; ISSA 5000 effective for periods beginning on or after; revised ISA (UK) 620 on experts effective; IAASB comment deadline | [PCAOB-SSR-PAGE-2026; ISSA5000-2024; FRC-620-2026; IAASB-ED500-2026] |
 | 2 Dec 2026 | EU AI Act watermarking grace period ends for existing systems | [ADDLESHAW-AIOMNIBUS-2026] |
+| 15 Dec 2026 | QC 1000 effective; ISSA 5000 effective for periods beginning on or after; revised ISA (UK) 620 on experts effective; IAASB comment deadline | [PCAOB-SSR-PAGE-2026; ISSA5000-2024; FRC-620-2026; IAASB-ED500-2026] |
 | Q1 2027 | PCAOB independence proposal (anticipated) | [PCAOB-SSR-PAGE-2026] |
 | 2027 | IAASB technology quality-management guides to the board (proposed timetable) | [IAASB-TQMPLAN-2026] |
 | 1 Jul 2027 | EU limited-assurance standards for sustainability due | [EURLEX-2026-470] |
@@ -102,3 +102,5 @@ Put scheduled dates into the plan's milestones. Treat forecasts as scenarios in 
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **BIG4AF-CROWE-2026**: The Big 4 Accounting Firms (blog), *Crowe Takes Private Equity Money: What the KKR Deal Means* (blog (retelling WSJ), 16 Aug 2026). https://big4accountingfirms.com/the-blog/crowe-takes-private-equity-money-kkr-deal-means-accounting-firm-profession/
+- **WCARS-2026**: Rutgers, *75th World Continuous Auditing and Reporting Symposium* (conference, 6-7 Nov 2026). https://raw.rutgers.edu/75wcars.html

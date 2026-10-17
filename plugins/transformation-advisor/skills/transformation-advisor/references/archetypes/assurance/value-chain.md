@@ -189,7 +189,7 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 | Work type | Typical assurance steps | Usual AI pattern | Evidence strength |
 |---|---|---|---|
 | review-assurance | Tests of controls, vouching, disclosure checklists, review of workpapers | full-population-testing, reconcile-exceptions, draft-review-loop | Strong in controls and substantive testing; thin at completion |
-| data-reporting | Ledger analytics, journal entries, population validation | full-population-testing, monitor-diagnose-act | Strong for journal entries (seen frequently by 88% of regulators answering) [IFIAR-TTF-2025] |
+| data-reporting | Ledger analytics, journal entries, population validation | full-population-testing, monitor-diagnose-act | Strong for journal entries (88% of IFIAR members answering saw tools there frequently) [IFIAR-TTF-2025] |
 | research-synthesis | Reading minutes, contracts, prior files, SOC reports | document-to-decision, research-brief | Moderate; regulator worked examples exist [FRC-GENAI-2026] |
 | document-production | Planning memos, walkthrough write-ups, Section 3 text, reports | draft-review-loop | Moderate; widely used, rarely measured |
 | expert-judgment | Risk assessment, materiality, deficiency severity, going concern, opinion | assist only; AI as input | Regulators keep these with the auditor [FRC-GENAI-2026; NFRA-CAALLEY-2026] |
@@ -202,3 +202,6 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **INFLO-ADA-2026**: Inflo, *Audit Data Analytics* (vendor, undated). https://inflo.com/audit-data-analytics/
+- **SURALINK-CTEST-2026**: Suralink, *Cloud Testing Suite* (vendor, undated). https://www.suralink.com/technology/cloud-testing-suite-suralink
+- **VALIDIS-2026**: Validis, *Validis home page* (vendor, accessed 16 Oct 2026). https://validis.com/

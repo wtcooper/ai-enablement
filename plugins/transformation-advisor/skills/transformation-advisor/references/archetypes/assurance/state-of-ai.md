@@ -61,8 +61,8 @@ sample is not representative) [CPACOM-ATR-2025]:
 - How firms measure return: staff efficiency 83%, audit quality 54%, cost savings 37%.
 
 **Internal audit.**
-- 83% of audit functions were piloting or using AI and 12% planned to within a year (Gartner, 119 CAEs, August 2025;
-  "piloting or using" mixes trials with production). CAEs reported low confidence in reaching their goals because of data
+- 83% of audit functions were trying or using AI and 12% planned to within a year (Gartner, 119 CAEs, August 2025;
+  the category mixes trials with production). CAEs reported low confidence in reaching their goals because of data
   quality, skills and access [GARTNER-2026].
 - About 75% of 47 Nordic internal audit leaders were using or planning AI tools; data access or quality was the top
   barrier (60%) [KPMG-NORDIC-2026].
@@ -130,8 +130,8 @@ cases are in [controls-testing](modules/controls-testing.md).
 - Change in audit hours, fees, staffing mix or margin caused by AI at any firm.
 - Lab benchmarks exist but are not practice evidence. An ICAEW test found three chatbots did not perform ISA 315 risk
   assessment as a human would [ICAEW-PIERPOINT-2025]. A September 2026 benchmark found frontier models complete much
-  staff-level workpaper work but sometimes perform inappropriate procedures or write incorrect documentation; some of its
-  authors appear to work for an AI audit vendor [ARXIV-FAB-2026].
+  staff-level workpaper work but sometimes perform inappropriate procedures or write incorrect documentation; some listed
+  authors share names with an AI audit vendor's founders (affiliation unconfirmed) [ARXIV-FAB-2026].
 - Smaller-firm adoption outside the US 54-firm sample; non-Big Four platform details.
 
 ## 7. Using this in a conversation
@@ -148,3 +148,6 @@ cases are in [controls-testing](modules/controls-testing.md).
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **KPMG-CLARA-2025**: KPMG International, *KPMG advances AI integration in KPMG Clara smart audit platform* (firm, 22 Apr 2025). https://kpmg.com/xx/en/media/press-releases/2025/04/kpmg-advances-ai-integration-in-kpmg-clara-smart-audit-platform.html
+- **PWC-AT-2025**: Accounting Today, *PwC expects end-to-end AI audit automation within 2026* (press, 28 Oct 2025). https://www.accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026
+- **TR-STATE-2026**: Thomson Reuters Tax and Accounting, *The state of AI in audit in 2026: Interview with experts* (vendor, 2026-03-30). https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/

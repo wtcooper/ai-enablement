@@ -128,8 +128,8 @@
   runtime_class: personal-assistant
   maturity: in-production
   problem: >-
-    Valuation reports contain narrative sections (market commentary, descriptions) that take time to write
-    [IVSC-AI-2025].
+    Valuation reports contain narrative sections such as market commentary; the IVSC counts report writing among
+    the more straightforward valuation tasks AI can automate [IVSC-AI-2025].
   solution: >-
     The IVSC says AI is already frequently used by some valuers to assist report writing, through ChatGPT or other
     publicly available AI for parts such as market commentary, and that in other cases report writing may be a
@@ -146,7 +146,7 @@
   role_evolution: "Not described in the source."
   evidence_grade: C
   sources:
-    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "pp10-12 (IVS 106 documentation and reporting; transparency; data and inputs)" }
+    - { ref: IVSC-AI-2025, title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards", publisher: "International Valuation Standards Council", type: standard-setter, url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf", date: "2025-07-23", access: full, locator: "p6 (report writing as a straightforward task); pp10-12 (IVS 106 documentation and reporting; transparency; data and inputs)" }
   last_reviewed: "2026-10-17"
   notes: >-
     Graded C because the IVSC does not name any organization or give a measure, so 'in-production' rests on the
@@ -166,8 +166,8 @@
   runtime_class: workflow-automation
   maturity: emerging
   problem: >-
-    Valuation reports must use the correct basis of value and be consistent internally, and quality controls are
-    manual [IVSC-AI-2025].
+    Valuation reports must use the correct basis of value, be internally consistent and rest on a complete scope of
+    work [IVSC-AI-2025].
   solution: >-
     The IVSC paper says AI and other technology could be used in the valuation quality-control process, to review
     valuation reports for the correct basis of value and for inconsistencies, and to check that the scope of work
@@ -201,8 +201,8 @@
   runtime_class: background-agent
   maturity: emerging
   problem: >-
-    Building a full valuation model is slow, and the judgment sits in company-specific assumptions
-    [ARXIV-GAUGE-2026].
+    The judgment in a valuation model sits in company-specific assumptions, on which professional analysts
+    legitimately disagree [ARXIV-GAUGE-2026].
   solution: >-
     Researchers report that language-model agents can now construct complete financial models, and introduce
     GAUGE, a benchmark built from 1,001 professional valuations spanning 922 companies to grade them
@@ -237,8 +237,8 @@
   runtime_class: personal-assistant
   maturity: emerging
   problem: >-
-    Actuarial work must meet standards of practice that require explaining methods, justifying assumptions and
-    validating models, which opaque GenAI tools complicate [SOA-GENAI-2026].
+    Actuaries must meet standards of practice that require them to explain methods, justify assumptions and
+    communicate findings, which 'black-box' LLMs make difficult [SOA-GENAI-2026].
   solution: >-
     The American Academy of Actuaries paper treats GenAI as a model, so ASOP No. 56 (the US actuarial standard of
     practice on modeling) applies, and says a result cannot be used without validation [AAA-GENAI-2024]. The SOA's
@@ -308,6 +308,7 @@
   sources:
     - { ref: FORVIS-RESERVING-2024, title: "Ten steps to help auditors evolve and adapt to AI reserving systems", publisher: "Forvis Mazars (Ireland); first published by Mazars Ireland", type: firm, url: "https://www.forvismazars.com/ie/en/insights/news-opinions/steps-to-adapt-to-ai-reserving-systems", date: "2024-05-22", access: full, locator: "steps 1-10 (current page undated; date from the archived copy below)" }
     - { ref: BETTERREG-MAZARS-2024, title: "Ten steps to help auditors evole and adapt to AI reserving systems (archived copy of the mazars.ie article)", publisher: "Mazars Ireland, copy hosted by Better Regulation", type: firm, url: "https://service.betterregulation.com/sites/default/files/2024-05/mazars.ie-Ten%20steps%20to%20help%20auditors%20evole%20and%20adapt%20to%20AI%20reserving%20systems.pdf", date: "2024-05-22", access: full, locator: "p1 (byline date 22 May 2024)" }
+    - { ref: FRC-ARAQ-2026, title: "Annual Review of Audit Quality 2026", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9772/Annual_Review_of_Audit_Quality_2026_2eSTaw8P.pdf", date: "2026-07-22", access: full, locator: "p92 (PwC good practice: risk-modelling specialists' code reviews of an expected-credit-loss model; cited in notes only)" }
   last_reviewed: "2026-10-17"
   notes: >-
     Idea (label: idea). Pattern 'other': an audit procedure over a client's AI model (benchmark, explain,
@@ -493,6 +494,7 @@
     - { ref: ICAN-620-2025, title: "Response template, ED of proposed narrow-scope amendments arising from IESBA's Using the Work of an External Expert project (ICAN)", publisher: "Institute of Chartered Accountants of Nigeria", type: professional-body, url: "https://www.iaasb.org/sites/default/files/2025-07/IAASB-Exposure-Draft-Narrow-Scope-Amendments-Experts-Response-Template_0.pdf", date: "2025-07", access: full, locator: "Part B, question 4 'Other matters', item 2 (PDF p11)" }
     - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "'Considering an organization's use of AI' bullet on audit team capabilities" }
     - { ref: FRC-ARAQ-2026, title: "Annual Review of Audit Quality 2026", publisher: "FRC", type: regulator, url: "https://www.frc.org.uk/documents/9772/Annual_Review_of_Audit_Quality_2026_2eSTaw8P.pdf", date: "2026-07-22", access: full, locator: "p28 (resourcing and AI specialists)" }
+    - { ref: PCAOB-SPECIALISTS-2025, title: "Spotlight: Considerations for Audit Firms Using the Work of Specialists", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf", date: "2025-02", access: full, locator: "p3 (types of company specialists); p4 (examples from Release 2018-006)" }
     - { ref: COMPUTERWORLD-FT-2026, title: "The Big Four accounting firms are now hiring more AI specialists than accountants", publisher: "Computerworld (reporting an FT analysis)", type: press, url: "https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html", date: "2026-05-19", access: full, locator: "whole article" }
     - { ref: CPACOM-ATR-2025, title: "2025 Audit Transformation Report", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "printed p19, PDF p20 (new approaches require new skills); p27 (methodology, 54 firms)" }
     - { ref: PCAOB-SPECREL-2018, title: "Amendments to Auditing Standards for Auditor's Use of the Work of Specialists (PCAOB Release No. 2018-006)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket044/2018-006-specialists-final-rule.pdf", date: "2018-12-20", access: full, locator: "p4 (effective for fiscal years ending on or after 15 Dec 2020); pp A3-5 to A3-6 (income taxes and IT outside scope; commenters' AI request)" }

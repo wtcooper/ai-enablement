@@ -1,6 +1,6 @@
 # Completion and reporting (assurance)
 
-Synthesised 2026-10-17; not yet source-verified. Use cases live in `../use-cases/completion-reporting.yaml` (18
+Verified against sources 2026-10-17. Use cases live in `../use-cases/completion-reporting.yaml` (18
 entries). Ids are shortened here: `#06` means `assurance-completion-reporting-06`; `ST-13` means
 `assurance-substantive-testing-13`. Source keys in brackets are in the YAML or in §12. Public evidence sits almost
 entirely in two steps, the disclosure checklist and the mechanical review of draft statements. Nearly every figure is
@@ -35,7 +35,7 @@ audit committee communications, and drafting the opinion.
 
 | Step | What happens | Work type | Typical pain | AI evidence |
 |---|---|---|---|---|
-| Disclosure checklist | Answer each requirement against the draft; decide "not applicable" and "if material" calls | review-assurance, expert-judgment | 1,200-1,500 requirements in one methodology; fatigue; last year's checklist rolled forward [TR-DISCLOSURE-2026] | Vendor products, beta figures (`#01`-`#04`) |
+| Disclosure checklist | Answer each requirement against the draft; decide "not applicable" and "if material" calls | review-assurance, expert-judgment | 1,200-1,500 requirements in one product's checklist; fatigue; last year's checklist rolled forward [TR-DISCLOSURE-2026] | Vendor products, beta figures (`#01`-`#04`) |
 | Casting, cross-referencing, tie-out | Foot, cross-check and agree figures; repeat on every draft | review-assurance, data-reporting | 4-5 drafts per engagement; ~1,200 h a year on first drafts at one firm [CASEWARE-HLB-2025] | Two named firms, measured (`#06`); ST-13 |
 | Other information, management report | Read front-half text for consistency and statutory content | review-assurance | Manual and checklist-based; late edits break cross-references [HAMBURG-FABIAN-2026; FIELDGUIDE-DISC-2026] | One peer-reviewed study (`#05`) |
 | Subsequent events | Events after the balance-sheet date, adjusting or not [PCAOB-AS2801] | expert-judgment, research-synthesis | Reading minutes, legal letters, interim figures | None (§4) |
@@ -43,9 +43,9 @@ audit committee communications, and drafting the opinion.
 | Written representations | Obtain management's letter | document-production, client-interaction | Letters left in an inbox, not on file [ICAEW-REPLETTER-2026] | None (§4) |
 | Summary of misstatements | Accumulate and evaluate uncorrected misstatements | data-reporting, expert-judgment | Not described in the inputs | None (§4) |
 | Manager and partner file review | Clear notes, check completeness, sign-off readiness | review-assurance, coordination-scheduling | Review re-performs the work; gaps found late [FIELDGUIDE-QR-2026] | Demos, announcements (`#08`) |
-| Engagement quality review | Objective evaluation of significant judgments; concurring approval [PCAOB-AS1220; IAASB-ISQM2-2020] | review-assurance, expert-judgment | EQR deficiencies at 42% of inspected firms (2022) [PCAOB-EQR-2023] | None for the reviewer (§4) |
-| KAMs / CAMs | Select from matters communicated to the committee; draft the wording | expert-judgment, document-production | Usefulness contested; CAM count per report declining [PCAOB-PIRCAM-2022] | Research on identification only (`#12`) |
-| Audit committee communications | Required communications (AS 1301, ISA 260) | client-interaction, document-production | Findings rose to 11% of inspected listed audits in 2025 [IFIAR-SURVEY-2026] | One firm statement (`#09`) |
+| Engagement quality review | Objective evaluation of significant judgments; concurring approval [PCAOB-AS1220; IAASB-ISQM2-2020] | review-assurance, expert-judgment | 42% of inspected firms had an EQR deficiency comment (2022) [PCAOB-EQR-2023] | None for the reviewer (§4) |
+| KAMs / CAMs | Select from matters communicated to the committee; draft the wording | expert-judgment, document-production | Usefulness contested [PCAOB-AGENDA-2026]; CAM count per report declining [PCAOB-PIRCAM-2022] | Research on identification only (`#12`) |
+| Audit committee communications | Required communications (AS 1301, ISA 260) | client-interaction, document-production | Findings in 11% of listed audits where inspected in 2025, 4% in 2024 [IFIAR-SURVEY-2026] | One firm statement (`#09`) |
 | Opinion and report drafting | Draft and issue the auditor's report | document-production | PwC: report "still looks the same" [CFODIVE-PWC-2026] | None in external audit; internal audit (`#14`) |
 
 ## 3. Where AI is changing the work
@@ -63,13 +63,13 @@ found for reinvent; nobody sells completion as an agent-delivered service, and n
 
 **Statements: casting, tie-out, drafting**
 - Automate: `#06` Caseware Validate at HLB Mann Judd Perth (~600 h a year) and MHA (casting 25 to 12 min, zero
-  false positives in a pilot); Suralink tie-out. PwC's fund-audit tie-out pilot is ST-13.
+  false positives in a head-to-head trial); Suralink tie-out. PwC's fund-audit tie-out tool is ST-13.
 - Improve, process scope: `#07` Fieldguide Field Financials drafts from prior year and live trial balance with
   continuous tie-out (announced; raises a non-attest question if the auditor drafts).
 - Ideas: `#15` LLM finds statement errors and the standard breached; `#16` XBRL consistency. Both benchmarks show gaps.
 
 **Other information**
-- Improve: `#05` German Big 4 firm links management-report passages to statutory requirements; auditors perceive
+- Improve: `#05` an unnamed German Big 4 firm links management-report passages to statutory requirements; auditors perceive
   gains on standardised tasks, limits on nuance and discretion.
 
 **Review, sign-off and documentation**
@@ -86,17 +86,17 @@ found for reinvent; nobody sells completion as an agent-delivered service, and n
 
 ## 4. Open questions: steps with no public AI evidence
 
-Each step below was searched by at least one deep dive and returned only standards, exam material or unrelated
+Each step below was searched for and returned only standards, exam material or unrelated
 items. Absence of public evidence is not proof no firm does it. Do not offer invented use cases; ask.
 
 | Step | What the research found | Probe |
 |---|---|---|
 | Subsequent events | Nothing on AI reading post-year-end minutes, legal letters or interim figures. Closest analogue: FRC worked example summarising board minutes, a planning use [FRC-GENAI-2026] | "How do you scan for events after year end today, and would a tool that reads minutes and new filings help, or is the risk in what management doesn't write down?" |
-| Written representations | Nothing on AI-drafted letters. The AICPA aid says auditors may need AI-related representations from management, e.g. AI the entity uses [AT-AICPAPA-2026]; that is about client AI | "Who tailors the representation letter, and have you added anything about the client's own AI use?" |
+| Written representations | Nothing on AI-drafted letters. The AICPA aid says that where a service auditor's report is not enough, auditors may obtain AI-related representations from management, such as which AI the entity uses [AT-AICPAPA-2026]; that is about client AI | "Who tailors the representation letter, and have you added anything about the client's own AI use?" |
 | Summary of misstatements | Nothing. Adjacent: `#07` flags stale overrides when trial-balance adjustments change | "Where is the summary built, and how often do late adjustments make it stale?" |
 | Engagement quality review | Nothing on AI used by the reviewer; firms say supervisors review AI work as before [PCAOB-GENAI-2024] | "Does your EQ reviewer use any AI, and how is that documented, given how often EQR documentation is cited?" |
 | KAM / CAM wording | Identification studied (`#12`); drafting not | "Who drafts KAM wording, and would you let a tool propose first drafts from last year's report and the committee papers?" |
-| Opinion and report | Nothing; PwC says the report is unchanged [CFODIVE-PWC-2026]; a vendor says its agents are not writing opinions | "Is any part of report drafting templated or automated now? Where would you never let AI in?" |
+| Opinion and report | Nothing; PwC says the report is unchanged [CFODIVE-PWC-2026] | "Is any part of report drafting templated or automated now? Where would you never let AI in?" |
 | Going concern, live audits | No 2025-26 firm deployment; only experiments (`#10`). ISA 570 names tools as examples (`#11`) | "Under revised ISA 570, do you use any model to challenge management's forecast, and what goes in the file?" |
 | Audit committee communications drafting | Only PwC's analysis tool (`#09`) | "Do you draft committee communications with any AI support, and what do you tell the committee about it?" |
 | Final analytics, completion memo | Nothing specific | "What does your completion memo pull together, and how long does it take?" |
@@ -132,7 +132,7 @@ items. Absence of public evidence is not proof no firm does it. Do not offer inv
 - Disclosure checklist: 2.7 h saved per run, average of unnamed beta firms; unit is "per workflow" in another
   Caseware document [CASEWARE-CWX-2026]. TR: ~30% of eligible customers, close to 300 analyses a month [TR-DISCLOSURE-2026].
 - Statement review: HLB ~600 h a year, 40-50% on later drafts [CASEWARE-HLB-2025]. MHA: casting 25 to 12 min,
-  first pass 58 to 42 min, zero false positives in a two-tool pilot (baseline may be the other tool) [CASEWARE-MHA-2025].
+  first pass 58 to 42 min, zero false positives in a two-tool trial (baseline may be the other tool) [CASEWARE-MHA-2025].
 - Internal audit (Uniper): 50-80% estimated efficiency across several processes [EULERICH-2025].
 - Going concern (BDO NL thesis, 20 cases): model 85%, accountants 77%, LLM-assisted 78%; same speed [LEIDEN-GC-2025].
 - CAMs: AI predicted ~37% of auditor-reported CAMs (seminar abstract) [GUO-CAM-2024].
@@ -144,7 +144,7 @@ items. Absence of public evidence is not proof no firm does it. Do not offer inv
   going concern 11 of 232 (5%); review and supervision 23 of 420 (5%); audit report 24 of 758 (3%); EQ control
   review 10 of 341 (3%). No finding is linked to AI [IFIAR-SURVEY-2026].
 - PCAOB: firms with an EQR-deficiency comment form 37% (2020) to 42% (2022) [PCAOB-EQR-2023]; EQ reviewer hours
-  about 1% (large firms) and 3% (small) of audit hours, a 2018 baseline [PCAOB-PIR1220-2018].
+  about 1% (large firms) and 3% (small) of audit hours, per the 2018 post-implementation review [PCAOB-PIR1220-2018].
 - Audit committee chairs (250+): 90% say the auditor discussed CAMs [PCAOB-ACCHAIRS-2026].
 - GPPC networks report ~30% year-on-year growth in AI-enabled tools for 2025 [IFIAR-TTF-2026].
 
@@ -154,7 +154,7 @@ items. Absence of public evidence is not proof no firm does it. Do not offer inv
 - Deloitte/CAQ (248 committee members): AI governance top-three for 75% (35% a year earlier); 56% confident they
   can oversee it [DELOITTE-ACPR-2026; AT-ACPR-2026]. CAQ partner pulse: AI governance the top committee challenge at
   57% [BOARDMEMBER-CAQ-2026].
-- Secondary academic findings (via the Japan FSA paper, originals not read): one standard deviation more AI
+- Secondary academic findings (Fedyk et al. 2022, via the Japan FSA paper; original not read): one standard deviation more AI
   investment, 5.0% lower likelihood of report reissuance and 0.9% lower fees [FSA-DP-2025].
 
 **What to measure:** reviewer override rate on checklist answers; misses found in a parallel manual run; review hours
@@ -169,7 +169,7 @@ AS 1301, AS 3101 and AS 1220 found no mention of technology (a keyword check, no
   (omission, hallucination, distortion), misuse of output, non-compliant methodology. Mitigations: design,
   certification and recertification, training, human review at control points. Its worked examples are not
   completion steps [FRC-GENAI-2026; FRC-NEWS-2026].
-- **AICPA practice aid (13 Oct 2026, non-authoritative):** the auditor remains responsible for the audit and opinion;
+- **AICPA practice aid (13 Oct 2026):** the auditor remains responsible for the audit and opinion;
   one AI tool may help evaluate another without reducing supervision and review; AU-C 210 does not require naming
   AI tools in the engagement letter [AICPA-PA-2026; AT-AICPAPA-2026].
 - **ISA 220 (Revised):** overreliance on automated tools and automation bias impede scepticism [IAASB-ISA220-2020].
@@ -178,8 +178,8 @@ AS 1301, AS 3101 and AS 1220 found no mention of technology (a keyword check, no
 - **PCAOB:** going concern on the standard-setting agenda; research on audit committee communications; a further
   CAM review planned; no AI proposal [PCAOB-AGENDA-2026; TR-PCAOBAGENDA-2026]. 2024 staff outreach (not Board
   policy): some firms barred GenAI from audit procedures; some had not changed supervision policies [PCAOB-GENAI-2024].
-- **IFIAR (Apr 2026):** keep audits "human-led": named people at decision checkpoints, review of autonomous
-  decisions [IFIAR-TTF-2026].
+- **IFIAR (Apr 2026):** firms say audits will stay "human-led"; IFIAR asks them to show it, e.g. named people for
+  decision checkpoints and review of autonomous decisions [IFIAR-TTF-2026].
 - **IAASB documentation material (2020)** on automated tools under ISA 230 [IAASB-NAM-2020].
 
 **Design guardrails seen in tools:** cited evidence per answer; flag-not-answer when unsure; nothing written to the
@@ -195,12 +195,12 @@ The loudest completion discourse is not about AI doing the work but about who an
   [BOARDAGENDA-FRC-2026]. A law firm says an erroneous AI output is unlikely to excuse an auditor in negligence;
   documentation of judgement will be critical [DACB-2026]. The PCAOB chair said AI can do "the science, the
   transaction part"; the "art" needs people [ATODAY-LOGOTHETIS-2026].
-- **Committees ask first.** Two-thirds of partners say committees raised AI unprompted [BOARDMEMBER-CAQ-2026]. Chairs
+- **Committees ask first.** Two-thirds of audit partners say committees proactively raised the company's use of AI [BOARDMEMBER-CAQ-2026]. Chairs
   want insight on AI in financial reporting, and several asked about fees [PCAOB-ACCHAIRS-2026]. CPAB's forums:
   transparency, scepticism, fees, talent, and an expectation-gap risk if AI-enabled audits are seen as doing more
   than auditors are responsible for [CPAB-AC-2026].
 - **Guidance tells committees what to ask:** how the auditor uses GenAI and agents and assures quality
-  [KPMG-ACAGENDA-2025]; how AI affects estimates and disclosures [CAQ-ACI-2026-03]; how AI-assisted judgments are
+  [KPMG-ACAGENDA-2025]; how the company's AI affects estimates and disclosures [CAQ-ACI-2026-03]; how AI-assisted judgments are
   documented [TCC-PCAOBQ-2026]. IFIAR encourages auditors to explain how technology affects decisions [IFIAR-TTF-2026].
 - **Regulators ask auditors too:** the SEC chief accountant asks how AI improves engagement quality and wants
   independence rules to stay fit for purpose [KPMG-HOHL-2026].
@@ -239,7 +239,7 @@ The loudest completion discourse is not about AI doing the work but about who an
 - **2026-09-30** PCAOB agendas: going concern, audit committee communications research [TR-PCAOBAGENDA-2026].
 - **2026-10-07** PwC: savings modest; committee-communications tool for 2026 year-ends [CFODIVE-PWC-2026].
 - **2026-10-13** AICPA practice aid; sections on risk and evidence to follow [JOFA-AIPA-2026].
-- **2026-12-15** ISA 570 (Revised 2024) and amended AS 1220 take effect [IAASB-ISA570PAGE-2025; PCAOB-AS1220].
+- **2026-12-15** Amended AS 1220 takes effect; ISA 570 (Revised 2024) applies to periods beginning on or after this date [IAASB-ISA570PAGE-2025; PCAOB-AS1220].
 
 ## 11. Common objections
 
@@ -250,7 +250,7 @@ The loudest completion discourse is not about AI doing the work but about who an
   for matching and tie-out, and spend freed senior time on the conditional calls (`#04` stays with people).
 - **"It will miss a disclosure and we'll get an inspection finding."** No miss rate is published. Use flag-not-answer
   tools and a divergence check (`#03`); keep the reviewer's evidence trail after lock.
-- **"Savings aren't real."** PwC calls year-one savings "not that drastic yet" [CFODIVE-PWC-2026]; HLB reports ~600 h
+- **"Savings aren't real."** PwC calls its savings so far "not that drastic yet" [CFODIVE-PWC-2026]; HLB reports ~600 h
   on a narrow, repetitive step. Start where drafts repeat.
 - **"Juniors won't learn."** A real concern [HAMBURG-FABIAN-2026]; vendors argue rationale teaches [TR-DISCLOSURE-2026].
   Design review so juniors explain the answer, not accept it.
@@ -263,7 +263,7 @@ The loudest completion discourse is not about AI doing the work but about who an
 
 ## 12. Sources
 
-Full details for YAML keys are in the YAML. Keys cited here but not in the YAML (all opened by a deep dive):
+Full details for YAML keys are in the YAML. Keys cited here but not in the YAML (all opened and checked):
 - AICPA-PA-2026: AICPA & CIMA, AICPA releases guidance on AI in financial reporting and auditing, 2026-10-13, https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing
 - AT-ACPR-2026: Accounting Today, Audit committees focusing on emerging risks like AI, 2026-09-22, https://www.accountingtoday.com/news/audit-committees-focusing-on-emerging-risks-like-ai
 - AT-PCAOBPE-2025: Accounting Today, PCAOB warns auditors about AI and PE, 2025-12-09, https://www.accountingtoday.com/news/pcaob-warns-auditors-about-ai-and-pe
@@ -276,9 +276,9 @@ Full details for YAML keys are in the YAML. Keys cited here but not in the YAML 
 - FRC-NEWS-2026: FRC, Innovative new guidance supports audit firm adoption of emerging AI technologies, 2026-03-30, https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/
 - FSA-DP-2025: Japan FSA Financial Research Center, DP2025-3 on generative AI in audit, 2025-07, https://www.fsa.go.jp/frtc/english/seika/discussion/2025/DP2025-3_Eng.pdf
 - HOLMSTROM-PETERS-2024: PCAOB conference registered-report proposal, 2024-06, https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf
-- ICAEW-REPLETTER-2026: ICAEW, Letters of representation: a key protection for auditors, 2026-05, https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/letters-of-representation-a-key-protection-for-auditors
+- ICAEW-REPLETTER-2026: ICAEW, Letters of representation: a key protection for auditors, 2026-05-14, https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/letters-of-representation-a-key-protection-for-auditors
 - JOFA-AIPA-2026: Journal of Accountancy, AICPA publishes practice aid, 2026-10-13, https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/
-- KPMG-HOHL-2026: KPMG Board Leadership Center, Q&A with Kurt Hohl, 2026-05-27, https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
+- KPMG-HOHL-2026: KPMG Board Leadership Center, Q&A with Kurt Hohl, 2026-05-26, https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
 - PCAOB-AS2415: PCAOB, AS 2415 Going Concern (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2415
 - PCAOB-AS2801: PCAOB, AS 2801 Subsequent Events (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2801
 - PCAOB-IAG-2026: PCAOB investor advisory on CAM/KAM examples, 2026-04-30, https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory--pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters-5-2026

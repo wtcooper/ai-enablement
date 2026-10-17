@@ -192,3 +192,9 @@ Probes for these figures are in [interview-guide.md](interview-guide.md) (Frame 
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+- **EYUK-FY25-2025**: EY UK, *EY reports another year of UK revenue growth in FY25* (firm press release, 27 Oct 2025). https://www.ey.com/en_uk/newsroom/2025/10/ey-reports-another-year-of-uk-revenue-growth-in-fy25
+- **LAI-2025**: International Review of Economics & Finance, vol. 103 (via RePEc), *Artificial intelligence applications and audit fees: An empirical study* (academic (journal article), 2025). https://ideas.repec.org/a/eee/reveco/v103y2025ics1059056025005842.html
+- **OPTRO-IAFUND-2026**: Optro, *Mitigating the risks of declining internal audit resources* (vendor blog (cites IAF and its own April 2026 poll), undated). https://optro.ai/blog/mitigating-risks-of-declining-internal-audit-resources
+- **PWCUK-FY26-2026**: PwC UK, *PwC UK 2026 financial results: transformation delivering results as UK business grows* (firm press release, 17 Sep 2026). https://www.pwc.co.uk/press-room/press-releases/corporate-news/pwc-uk-2026-financial-results--transformation-delivering-results.html
+- **UBC-CLIENTAI-2026**: Gene Moo Lee, University of British Columbia (blog), *Client AI Adoption and Auditing: Evidence from Process- and Product-Oriented AI (working paper abstract)* (academic (working paper, under review), 21 Apr 2026). https://blogs.ubc.ca/genemoolee/2026/04/21/client-ai-adoption-and-auditing-evidence-from-process-and-product-oriented-ai/
+- **YAHOO-DELUK-2025**: Yahoo Finance, *Deloitte's global rebound is shadowed by its first revenue decline in 15 years in the UK* (press, 1 Oct 2025). https://finance.yahoo.com/news/deloittes-7-6-billion-uk-164459410.html

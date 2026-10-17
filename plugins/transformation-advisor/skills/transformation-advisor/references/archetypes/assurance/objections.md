@@ -52,7 +52,7 @@ or in [sources.md](sources.md).
 | Objection | Response |
 |---|---|
 | "AI means fewer auditors." | Mixed evidence. Some firms cut graduate intake and partners [OMANOBS-GT-2026; BBL-KPMGPARTNERS-2026]; a peer-reviewed study found AI-adopting audit offices hired more junior and mid-level auditors (authors' summary) [ISCA-LAWSHEN-2025]; BLS projects 5% growth to 2035 [BLS-OOH-2026]. Attribution of cuts to AI is unproven. |
-| "We have a talent shortage, so AI can't hurt talent." | The shortage is at the experienced layer, while cuts are at entry level [FRC-ARAQ-2026; OMANOBS-GT-2026]. AI pressure on the entry layer and a shortage of experienced reviewers can coexist, and make each other worse. |
+| "We have a talent shortage, so AI can't hurt talent." | The shortage is at the experienced layer, while cuts are at entry level [FRC-ARAQ-2026; OMANOBS-GT-2026]. AI pressure on the entry layer and a shortage of experienced reviewers can coexist and may compound each other (advisor inference). |
 | "Juniors will learn by reviewing AI output." | Firms say so [YAHOO-KOSAR-2025]; the PCAOB's acting chair says new paths will be needed [NYSSCPA-BOTIC-2025]. The only controlled study (software, not audit) found delegation cut learning and engagement preserved it [ARXIV-SKILL-2026]. Treat it as a risk to design for. See [workforce.md](workforce.md) §7. |
 | "Our people don't want AI." | 81% of tax and audit professionals say they use AI regularly, more than a third admit using unauthorised tools, and almost a third would consider leaving if AI expectations go unmet (vendor-run) [TRI-FOP-2026]. |
 | "Internal audit can cut headcount because AI does the testing." | Budget cuts rose in 2025, but the survey does not attribute them to AI, and strategically aligned functions report better funding [JOFA-IAPULSE-2026]. Only 28% of leaders feel ready to audit AI risks [OPTRO-FOF-2026]. |
@@ -86,3 +86,4 @@ or in [sources.md](sources.md).
 Keys not listed here are in [sources.md](sources.md).
 
 <!-- sources:auto -->
+(All keys cited here are in sources.md.)
