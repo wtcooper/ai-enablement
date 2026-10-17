@@ -402,7 +402,7 @@
     access: full
     locator: "Abstract (AI across the assurance process)"
   last_reviewed: 2026-10-17
-  notes: "Idea. The financial-audit analogue (FRC example on summarising board minutes for risk assessment; IFIAR 55% frequency of tools in risk assessment) sits in landscape-assurance.md and is routed to planning-risk-assessment."
+  notes: "Idea. The financial-audit analogue (FRC example on summarising board minutes for risk assessment; IFIAR figures on tools in risk assessment) belongs to the planning-risk-assessment module."
 
 - id: assurance-sustainability-assurance-07
   title: Continuous or real-time evaluation of digital sustainability data by automated tools (idea)
@@ -663,8 +663,8 @@
   - "A policy on when estimates are acceptable and how uncertainty is disclosed."
   - "Data on the part of the value chain that is available, to support sample or sector-based estimation."
   risks_and_guardrails:
-  - "The revised ESRS 1 lets entities estimate value-chain information from indirect sources, sector averages, sample analyses, spend-based data or other proxies, depending on practicability and reliability (EU-ESRS-2026, ESRS 1 paras 65-66)."
-  - "Where reliable direct or estimated data covers only part of operations or the value chain, the entity discloses that scope limit, except for gross Scope 1, 2, 3 GHG metrics (EU-ESRS-2026, ESRS 1 para 91)."
+  - "The revised ESRS 1 lets entities estimate value-chain information from indirect sources, sector averages, sample analyses, spend-based data or other proxies, depending on practicability and reliability (EU-ESRS-2026, ESRS 1 para 65)."
+  - "Where reliable direct or estimated data can be provided without undue cost or effort only for part of operations or the value chain, the entity discloses that scope limit, except for gross Scope 1, 2, 3 GHG metrics (EU-ESRS-2026, ESRS 1 para 91)."
   - "For estimates, limited-assurance procedures respond to risk at disclosure level, and reasonable-assurance procedures test how management developed the estimate (ACCA-ABMAG-2026)."
   - "Where information comes from a supplier's own assurance report, the practitioner may find it insufficient and need other procedures (ISSA5000-2024, A131)."
   human_checkpoints:
@@ -687,7 +687,7 @@
     url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202601563
     date: 2026-09-21
     access: full
-    locator: "Annex I, ESRS 1 paras 65, 66, 91; entry into force and application articles"
+    locator: "Annex I, ESRS 1 paras 65, 91; Article 3 (entry into force and application)"
   - ref: ACCA-ABMAG-2026
     title: "Get ready for ISSA 5000 (Accounting and Business magazine, April 2026 issue)"
     publisher: ACCA
@@ -733,9 +733,9 @@
   - "SAP technology stack and the firm's CSRD content (KNOWESG-PWCAI-2025)."
   - "An independence assessment of the service if the same firm or network audits or assures the client (IESBA-IESSA-2025, subsection 5606)."
   risks_and_guardrails:
-  - "Implementing sustainability-information management systems or reporting software for a sustainability assurance client can create a self-review threat, whether or not the firm built it (IESBA-IESSA-2025, 5606.4 A3)."
-  - "A firm or network firm shall not provide IT systems services to a public-interest sustainability assurance client if a self-review threat may arise (IESBA-IESSA-2025, R5606.6)."
-  - "Designing or implementing software to collect or produce sustainability data is listed among activities that count as a management responsibility (IESBA-IESSA-2025, 5400.20 A3)."
+  - "Implementing sustainability-information management systems or reporting software, whether or not the firm developed it, is an example of an IT systems service that creates a self-review threat when it forms part of or affects the client's sustainability records or internal control over sustainability reporting (IESBA-IESSA-2025, 5606.4 A3)."
+  - "A firm or network firm shall not provide IT systems services to a public-interest sustainability assurance client if the service might create a self-review threat (IESBA-IESSA-2025, R5606.6)."
+  - "Taking responsibility for designing or implementing software to collect or produce sustainability data for the client is listed as an example of a management responsibility (IESBA-IESSA-2025, 5400.20 A3)."
   human_checkpoints:
   - "Firm evaluates threats and safeguards before accepting a non-assurance service for an assurance client (IESBA-IESSA-2025, section 5600)."
   role_evolution: "Not described in the source."
@@ -756,7 +756,7 @@
     url: "https://ifacweb.blob.core.windows.net/publicfiles/2025-08/IESSA%20and%20Revisions%20to%20the%20Code%20Final%20Pronouncement%20%28updated%20082525%29.pdf"
     date: 2025-08
     access: full
-    locator: "5400.20 A3 (pp. 84-85); 5606.4 A3 and R5606.6 (pp. 172-173)"
+    locator: "5400.20 A3 (pp. 84-85); 5606.4 A3 and R5606.6 (p. 173)"
   last_reviewed: 2026-10-17
   notes: "Not graded B because no client is named and the only source is one promotional article. Nothing in the sources says PwC Germany assures clients that use the tool; the IESSA points explain why the question matters. The article was read through a text mirror because direct access was blocked."
 
@@ -777,7 +777,7 @@
   solution: "Preparers use AI to support materiality assessments. Survey respondents name it a primary AI use case and an investment priority for the next three years. The assurance provider still has to understand and test the entity's process, whatever tool supports it."
   outcomes:
   - lever: capacity
-    description: "A survey summary reports AI in materiality assessments as a primary use case among respondents that use AI. No time or quality figure is given."
+    description: "A survey summary reports AI in materiality assessments as a primary use case and an investment priority for the next three years, though less popular than in the previous year's study, with some sign that practitioners think the technology is not yet mature. No time or quality figure is given."
     figure: none published
     measures: "Reuters Events 2025 Sustainability Reporting Outlook as summarised by Thomson Reuters Institute; the use-case share is not stated"
     provenance: independent
@@ -799,7 +799,7 @@
     publisher: Thomson Reuters Institute
     type: survey
     url: https://www.thomsonreuters.com/en/institute/articles/sustainability-reporting-solutions-csrd-compliance
-    date: 2025-06
+    date: 2025-06-12
     access: full
     locator: "Section on AI in materiality assessments (paragraph after the 37% / 22% figures)"
   - ref: IAASB-EUFAQ-2025
@@ -842,7 +842,7 @@
   runtime_class: shared-team-skills
   maturity: emerging
   problem: "As preparers draft and calculate with AI, the practitioner must decide how to obtain evidence about information produced by systems the team cannot easily inspect, and whether the entity's controls keep the data intact."
-  solution: "Assurance teams extend their understanding of the entity's information system to cover AI-assisted steps: what tool, what data, what prompts or parameters, what validation, and how the output reached the report. Practitioners and vendors suggest asking for traceability and running a dry run of AI-generated reports with the auditor. A sector site says assurance providers are developing methods for assessing AI-generated disclosures; no method is described."
+  solution: "Assurance teams extend their understanding of the entity's information system to cover AI-assisted steps: what tool, what data, what prompts or parameters, what validation, and how the output reached the report. A vendor suggests asking for traceability and running a dry run of AI-generated reports with the auditor. A sector site says assurance providers are developing methods for assessing AI-generated disclosures; no method is described."
   outcomes:
   - lever: risk
     description: none published
@@ -854,10 +854,10 @@
   - "Preparer keeps prompt logs, output versions, source links and validation records (MDPI-SUSAI-2026, section 6.3)."
   - "General IT controls that maintain the integrity of the sustainability information (ISSA5000-2024, A262)."
   risks_and_guardrails:
-  - "The IAASB expects questions on the practitioner's understanding of the entity's information system and internal control, the reliability of information used as evidence, and estimates, assumptions and models as entities use complex systems and external data (IAASB-CATALOG-2026, Theme 10(a))."
+  - "The IAASB says that, as entities use complex systems, external data and value-chain information and practitioners use technological tools, questions may arise about the entity's information system and internal control, the reliability of information used as evidence, and estimates, assumptions and models; it does not name AI (IAASB-CATALOG-2026, Theme 10(a))."
   - "The IAASB's direction is to keep monitoring and wait for ISSA 5000 implementation experience before deciding whether sustainability-specific clarification is needed (IAASB-CATALOG-2026, Theme 10(a))."
   human_checkpoints:
-  - "Practitioner decides what evidence is sufficient and appropriate for information from AI-assisted processes (IAASB-CATALOG-2026, Theme 10(a))."
+  - "Practitioner evaluates the reliability of information used as evidence, including whether its integrity was maintained through all stages of processing in the entity's information systems (ISSA5000-2024, A262)."
   role_evolution: "Not described in the sources."
   evidence_grade: D
   sources:
