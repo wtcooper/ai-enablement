@@ -2,8 +2,8 @@
 # Source-verified 2026-10-17. Low-evidence module: no source states that
 # audit-employed valuation, actuarial, tax, forensic or environmental specialists use AI on audits. Most entries
 # are ideas (grade D) discussed by a regulator, standard-setter, professional body, practitioner or researcher.
-# The grade-B entries are adjacent: valuation advisory and tax advisory practices, and (14) an audit firm's own
-# impairment-model tool that the source does not tie to its specialists.
+# The grade-B entries are adjacent: valuation advisory and tax advisory practices, and an audit firm's own
+# impairment-model tool that the source does not tie to its specialists (assurance-specialists-14).
 # Where a sibling module already holds the same document, its source key is reused.
 # Not repeated here (see the sibling entries): algorithm aversion to AI evidence on complex estimates
 # (assurance-substantive-testing-19), authenticating AI-fabricated evidence (assurance-substantive-testing-04),
