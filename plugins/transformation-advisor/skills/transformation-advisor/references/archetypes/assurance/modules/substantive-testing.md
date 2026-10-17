@@ -1,6 +1,6 @@
 # Substantive testing (assurance)
 
-Synthesised 2026-10-16 from wave 1 research; not yet source-verified. Use cases: `../use-cases/substantive-testing.yaml`
+Last reviewed 2026-10-17. Use cases: `../use-cases/substantive-testing.yaml`
 (25 entries). `#10` means `assurance-substantive-testing-10`; `CT#07` means `assurance-controls-testing-07` (controls
 testing module). Source keys in brackets, such as [IFIAR-TTF-2025], are in the YAML or in §11. Almost every outcome
 figure is self-reported or vendor-published; no independent measure of any AI substantive tool's accuracy in a live
@@ -51,8 +51,8 @@ Inspection context: 35% of inspected listed public-interest-entity audits had at
 
 ## 3. Journal-entry and fraud testing
 
-**Why it is the most mature use.** IFIAR members frequently see automated tools in journal-entry testing in 88% of
-cases (2024), against 55% for other substantive procedures and 43% for controls testing [IFIAR-TTF-2025]. All six US
+**Why it is the most mature use.** 88% of responding IFIAR members frequently saw automated tools in journal-entry
+testing in 2024 audit files, against 55% for other substantive procedures and 43% for controls testing [IFIAR-TTF-2025]. All six US
 network firms report tools that identify and select journal entries [PCAOB-TAA-2024]. These counts cover all tools,
 not only AI. Testing journals is a required fraud response under ISA 240 (Revised), paragraphs 47-48, effective for
 periods beginning on or after 15 Dec 2026 [IAASB-ED330-2026; IAASB-ISA240-2025].
@@ -63,18 +63,18 @@ models, alongside rules; auditors drill down and investigate entries above a thr
 than 1.4 trillion journal-entry lines a year). The FRC's hypothetical example weights an unsupervised model and
 rules-based routines in one tool and shows which features made an item unusual [FRC-AIAUDIT-2025].
 
-**Follow-up is the new bottleneck (`#03`).** MindBridge announced (Sep 2026) a capability linking evidence, analytics
-and assertions, with explainable full-population risk detection. The FRC warns that a flagged item may be fine while
-similar unflagged items are the risky ones, so follow-up must go beyond the flagged list.
+**Follow-up is the new bottleneck (`#03`).** Vendors such as MindBridge pitch explainable full-population risk scores
+that auditors drill into; no follow-up accuracy figure is published. The FRC warns that a flagged item may be fine
+while similar unflagged items are the risky ones, so follow-up must go beyond the flagged list [FRC-AIAUDIT-2025].
 
-**Research frontier (`#02`, idea).** A language model flags entries and explains why. On a synthetic ledger, rules
+**Research frontier (`#02`, idea).** A language model flags entries and explains why (tax-ledger data). On a synthetic ledger, rules
 produced 942 false positives on 5,000 posting IDs against 12 for the best model; on the real ledger, removing the
 statistical hint raised the model's false positives from 32 to 1,973 [ARXIV-AUDITCOPILOT-2025]. Agents passed 16.86%
 of journal-entry risk-testing workpapers, against 94.51% for completeness, in a benchmark [ARXIV-FAB-2026].
 
 **AI-enabled fraud and evidence integrity (`#04`, `#05`).** Generative tools make forged invoices, bank letters and
-vendor files cheap; IRBA and IFIAR warn that evidence may be AI-generated [IRBA-AI-2024; IFIAR-TTF-2026]. Practitioners
-advise corroborating documents against bank records, vendor masters and approval logs, and verifying authenticity
+vendor files cheap; IRBA and IFIAR warn that evidence may be AI-generated [IRBA-AI-2024; IFIAR-TTF-2026]. A vendor and
+practitioners advise corroborating documents against bank records, vendor masters and approval logs, and verifying authenticity
 and provenance independently (`#04`). Preparedness is low: of 713 anti-fraud professionals, 75% report a rise in
 GenAI document fraud and forgery over two years and only 7% say their organisation is more than moderately prepared
 [SAS-ACFE-2026]; of 373 internal-audit leaders, 65% name fabricated invoices or documents among top concerns and 62%
@@ -103,15 +103,15 @@ entry has a measured result.
 - **Vouching, matching and tie-out.** Automate: `#10` agents match sampled items to documents and bank activity
   (Oberlander about 16 hours to 5-6 per engagement; Sanville hours to minutes; PwC Evidence Match). This is the
   canonical home of these measured figures; `CT#07` is the same step used for tests of controls. `#13` PwC fund-audit
-  tie-out (pilot). Improve: `#11` FGMK's firm-built Excel agents (30-45 minutes to about 5 per selection, plus
-  reviewer-side agents); `#12` DataSnipper evidence snipping and extraction (assist).
+  tie-out (pilot). Improve: `#11` FGMK's firm-built Excel agents (pilot group: 30-45 minutes to about 5 minutes of
+  review per selection, plus reviewer-side agents); `#12` DataSnipper evidence snipping and extraction (assist).
 - **Contracts, revenue and judgment-heavier tests.** Improve: `#14` contract and lease review (FRC design for revenue
   sampling; CoCounsel "up to 70% faster", a vendor claim); `#15` PwC attempting agents on pharmaceutical rebate
   revenue, and EY expecting agents to flag memos the data does not support.
 - **Substantive analytics.** Improve: `#16` technology-built expectations from detailed or unstructured data (11%
   adoption; ED-520 examples).
-- **Confirmations and external data.** Automate: `#17` confirmation platforms and direct bank feeds (Moore Polska up
-  to 20 hours per audit; Rabobank and BDO NL feed aimed at 100% testing). Mostly workflow, not AI.
+- **Confirmations and external data.** Automate: `#17` confirmation platforms and direct bank feeds (Moore Polska,
+  Crowe Spain, Beever & Struthers; Rabobank and BDO NL feed aimed at 100% testing). Mostly workflow, not AI.
 - **Inventory and estimates.** Improve: `#18` drone counts reconciled to perpetual records (2018 EY proof of concept;
   681 to 19 hours in a livestock study); `#19` idea: AI-generated challenge of management's estimates.
 - **Agents and the operating model.** Delegate: `#20` KPMG Clara agents for expense vouching and unrecorded
@@ -120,7 +120,7 @@ entry has a measured result.
   (pilot); `#22` firm-wide platforms (EY, Deloitte, Grant Thornton) run preliminary procedures; `#24` PwC Australia's
   AI-native pilot tests balances on full populations against third-party data (also reinvent: the sample goes; for
   control populations see `CT#08`). Improve: `#23` idea: a second AI reviews AI-performed work (deployed analogue
-  `CT#10`). Reinvent: `#25` Ledgerline, an AI-native benefit-plan audit firm that tests every transaction.
+  `CT#10`). Reinvent: `#25` Ledgerline, a pre-launch benefit-plan audit firm built to test every transaction.
 
 ## 5. Interview probes
 
@@ -160,9 +160,10 @@ entry has a measured result.
   8%, substantive analytics 5%, fraud procedures 4% [IFIAR-SURVEY-2026].
 
 **Named outcomes (vendor-published or self-reported; effort, not quality)**
-- Oberlander: about 16 hours to 5-6 hours per engagement; FGMK: 30-45 minutes to about 5 per selection; Sanville:
-  hours to minutes, realisation $150-200 to $250+ an hour, zero PCAOB comment forms after a full methodology overhaul
-  (`#10`, `#11`). Moore Polska: up to 20 hours per audit on confirmations and requests (`#17`).
+- Oberlander (owner's estimate): about 16 hours to 5-6 hours per engagement; Sanville: hours to minutes, realisation
+  $150-200 to $250+ an hour, zero PCAOB comment forms after a full methodology overhaul (`#10`). FGMK pilot group:
+  30-45 minutes to about 5 minutes of review per selection; CROP: cash testing about 80% faster (`#11`). Circit says
+  Moore Polska saved up to 20 hours per audit, including PBC requests (vendor narrative) (`#17`).
 - Cherry Bekaert: 66% smaller sample on an illustrative client (`#09`). NAO via DataSnipper: GBP 400,000 saved and
   routine work up to three times faster (second-hand, work not stated) (`#12`).
 - PwC, a year in: time savings "not that drastic yet" [CFODIVE-PWC-2026]. Forecast: some Big Four leaders expect
@@ -188,11 +189,11 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
   [SEC-TAAORDER-2024]: AS 1105.10A (understand the source and handling of external information the company provides
   electronically, and test it or the controls over it) [PCAOB-PS2025-004], AS 2301.48 (what a test of details is) and
   AS 2301.49-.50 (investigate items the criteria identify). The Board says they do not address AI as such
-  [PCAOB-TAA-2024]. All commenters said implementation guidance was warranted, and PwC would not support the
+  [PCAOB-TAA-2024]. All five commenters to the SEC said guidance was warranted, and PwC would not support the
   amendments without further amendment or interpretive guidance [SEC-TAAORDER-2024]. The new confirmation standard
   covers paper and electronic methods: confirm third-party cash or access external data directly [PCAOB-CONFIRM-2023].
 - **AICPA.** SAS No. 150 (confirmations, published 13 Jul 2026) and SAS No. 151 (fraud, published 19 Aug 2026) take
-  effect for periods ending on or after 15 Dec 2028 [JOFA-SAS150-2026; JOFA-SAS151-2026]. The 13 Oct 2026 practice aid
+  effect for periods ending on or after 15 Dec 2028 [JOFA-SAS150-2026; JOFA-SAS151-2026]. The October 2026 practice aid
   lets one AI tool check another without reducing the auditor's review duties [AT-AICPAPA-2026].
 - **IAASB.** ISA 330/500/520 exposure drafts (5 Aug 2026; comments due 15 Dec 2026) add no technology requirement:
   the board judged it premature, as generative tools may make inputs impossible to evaluate [IAASB-ED500-2026, EM
@@ -204,12 +205,12 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
   need not match the persuasiveness of the procedure replaced if the methodology does not overstate them
   [FRC-GENAI-2026]. The six largest UK firms did no formal monitoring to quantify tools' quality impact [FRC-ATT-2025].
 - **IFIAR and others.** Keep auditors in control; consult regulators early where AI decides without a human; define
-  "human-led" [IFIAR-TTF-2025; IFIAR-TTF-2026]. AFM: auditors often do not verify input-data reliability, especially
+  "human-led" [IFIAR-TTF-2025; IFIAR-TTF-2026]. AFM: auditors do not always verify input-data reliability, especially
   with ineffective IT general controls [AFM-BB-2025]. IRBA: add procedures to verify authenticity [IRBA-AI-2024].
 
 **Design guardrails seen in deployments and guidance**
-- Rules-based routines and deterministic code alongside models (FRC; Ledgerline); certification per use case and
-  version control so only the approved version runs (FRC; FGMK); client data contractually barred from training (FGMK).
+- Rules-based routines and deterministic code alongside models (FRC; Ledgerline's CEO); certification per use case
+  and version control so only the approved version runs (FRC; DataSnipper); client data kept out of model training (FGMK).
 - Every result traced to its source; agents stop at major steps for review (DataSnipper, Fieldguide, Caseware).
 - Shadow mode before cutover and with-and-without runs (Ledgerline; Buzzacott); on file, that a tool was used, why
   use criteria were met, items selected and follow-up done (FRC); corroborate key documents against bank data.
@@ -233,7 +234,7 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 
 ## 9. Frontier
 
-- **2025-10-28** PwC promises a tool for every audit step in 2026; PwC Australia pilots an AI-native audit (5 clients,
+- **2025-10-28** PwC expects a tool for every audit step in 2026; PwC Australia pilots an AI-native audit (5 clients,
   all by 2028) [PWC-AT-2025; PWCAU-AT-2025]. **2025-12-15** PCAOB amendments apply (fiscal years beginning on or after).
 - **2026-03-16 / 03-30** IAASB approves the inventory and confirmations project; FRC issues agentic AI guidance
   [IAASB-500SERIES-2026; FRC-GENAI-2026].
@@ -245,10 +246,10 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 - **2026-07-13 / 08-19** SAS No. 150 and No. 151 published. **2026-08-05** IAASB exposure drafts [IAASB-ED500-2026].
 - **2026-09-22 / 09-26** DataSnipper Alwin and MindBridge agentic risk assessment; FinancialAuditBench published
   [DATASNIPPER-ALWIN-2026; MINDBRIDGE-ARA-2026; ARXIV-FAB-2026].
-- **2026-10-07 / 10-13 / 10-15** PwC: savings "not that drastic yet"; AICPA practice aid (more on evidence promised);
+- **2026-10-07 / 10-14 / 10-15** PwC: savings "not that drastic yet"; AICPA practice aid reported (more on evidence promised);
   Ledgerline warns against selling "we test everything" [CFODIVE-PWC-2026; AT-AICPAPA-2026; LEDGERLINE-CPAPA-2026].
-- **2026-12-15** ISA 240 (Revised) effective; IAASB comment deadline. Thomson Reuters executives are watching whether
-  adoption hits a "hockey stick" by the end of 2026 [TR-STATE-2026]. **2028-12-15** SAS No. 150 and No. 151 effective.
+- **2026-12-15** ISA 240 (Revised) effective; IAASB comment deadline. A Thomson Reuters executive expects adoption to
+  hit a "hockey stick curve" at some point [TR-STATE-2026]. **2028-12-15** SAS No. 150 and No. 151 effective.
 
 ## 10. Common objections
 
@@ -261,18 +262,17 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 - **"Regulators will penalise us."** None prohibits AI and the PCAOB amendments are in force; the FRC says outputs
   need not match the persuasiveness of the procedure replaced if not overstated. The risk is documentation and data.
 - **"LLMs give a different answer each time."** RSM UK's analytics director suggests a rules-based tool alongside AI
-  [ICAEW-FRCVIEW-2026]; Ledgerline pairs agents with deterministic code.
+  [ICAEW-FRCVIEW-2026]; Ledgerline's CEO advises pairing agents with deterministic code.
 - **"Documents can be faked now, so matching is worthless."** Matching still helps but must be corroborated:
   authenticated or direct-access confirmations, bank and vendor data (`#04`, `#17`).
 - **"Small firms can't afford this."** A PIA Group leader says the business case "just doesn't hold up" for a firm of
-  fifty [NYENRODE-SHIFTS-2026]; yet Sanville (about 20 people) and Oberlander (a sole practitioner) report gains.
+  fifty [NYENRODE-SHIFTS-2026]; yet Sanville (about 20 people) and Oberlander's owner report gains.
 - **"Clients will demand lower fees."** A secondary report says KPMG pressed its auditor, Grant Thornton UK, for a fee
   cut because of AI and got about 14% [THEFINANCESTORY-KPMGFEE-2026]; Sanville reports realisation rising instead.
 
 ## 11. Sources
 
-Full details (title, publisher, type, URL, date, access, locator) are in the YAML; the synthesis report maps keys to
-input refs.
+Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
 - **Regulators and standard-setters:** IFIAR-TTF-2025, IFIAR-TTF-2026, IFIAR-SURVEY-2026, PCAOB-TAA-2024, SEC-TAAORDER-2024,
   PCAOB-PS2025-004, PCAOB-CONFIRM-2023, PCAOB-GENAI-2024, FRC-AIAUDIT-2025, FRC-GENAI-2026, FRC-ATT-2025, IAASB-ED500-2026,
   IAASB-ED520-2026, IAASB-ED330-2026, IAASB-EDOVERALL-2026, IAASB-500SERIES-2026, AFM-BB-2025, IRBA-AI-2024.
@@ -280,20 +280,20 @@ input refs.
   EY-CANVAS-2026, ACCTODAY-EY-2024, DELOITTE-OMNIA-2026, GT-GTAP-2026, CTRLCOUNCIL-WSJ-2026, BUZZACOTT-PRIME-2025,
   RSM-AUS-2026, DELOITTE-NL-SAMPLE-2026, KPMG-SOX-2026, LEDGERLINE-CPAPA-2026, LEDGERLINE-SITE-2026, AT-AICPAPA-2026,
   JOFA-SAS150-2026, JOFA-APFRAUD-2026, JOFA-EXCELAGENT-2026.
-- **Vendors:** TR-AGENTIC-2025, TR-STATE-2026, TR-BANKCONF-2026, TR-BANKSTATE-2026, DATASNIPPER-CONNECT-2026, DATASNIPPER-FGMK-2026, DATASNIPPER-ALWIN-2026,
+- **Vendors:** TR-AGENTIC-2025, TR-STATE-2026, TR-BANKCONF-2026, TR-BANKSTATE-2026, DATASNIPPER-CONNECT-2026, DATASNIPPER-FGMKEXCEL-2026, DATASNIPPER-FGMK-2026, DATASNIPPER-ALWIN-2026,
   DATASNIPPER-PRODUCTIVITY-2026, DATASNIPPER-CHILE-2026, DATASNIPPER-ODP-2026, DATASNIPPER-PAYABLES-2026, FIELDGUIDE-SANVILLE-2026, FIELDGUIDE-FIELDAGENTS-2025,
   FIELDGUIDE-ORCH-2026, FIELDGUIDE-CHERRY-2026, MINDBRIDGE-BDOUK-2026, MINDBRIDGE-KPMG-2024, MINDBRIDGE-CHERRY-2022, MINDBRIDGE-ARA-2026, MINDBRIDGE-FAKEINV-2025,
-  CIRCIT-MOORE-2026, CIRCIT-BEEVER-2026, CIRCIT-CROWE-2026, CIRCIT-KRESTON-2026, CIRCIT-RABOBANK-BDONL-2026, CASEWARE-VERITY-2026, WOLTERSKLUWER-EVIDENCE-2026 (search only).
+  CIRCIT-MOORE-2026, CIRCIT-BEEVER-2026, CIRCIT-CROWE-2026, CIRCIT-KRESTON-2026, CIRCIT-RABOBANK-BDONL-2026, CASEWARE-VERITY-2026.
 - **Academic, surveys, professional bodies:** ARXIV-AUDITCOPILOT-2025, ARXIV-FAB-2026, GRACZYK-2025, CHRIST-DRONE-2021,
   EY-DRONE-JOFA-2018, COMMERFORD-2022, ICPAS-PEECHER-2026, NYENRODE-QUALITY-2026, CPACOM-ATR-2025, ISACA-EVIDENCE-2026,
   ICAEW-FRCVIEW-2026, ICAEW-PIERPOINT-2025, CAQ-GENAI-2024.
 - **Not in the YAML (cited in this module only):**
   - SAS-ACFE-2026: SAS with ACFE, *2026 Anti-Fraud Technology Benchmarking Report* release, 2026-03-25, https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html
-  - IIA-AIFRAUD-2026: Internal Audit Foundation with AuditBoard, *Internal Audit and AI-Enabled Fraud*, 2026-02-17, https://www.theiia.org/globalassets/site/content/research/foundation/2026/internal-audit-and-ai-enabled-fraud/ia-and-ai-enabled-fraud-report-en.pdf
+  - IIA-AIFRAUD-2026: Internal Audit Foundation with Optro, *Internal Audit and AI-Enabled Fraud*, 2026-02-17, https://www.theiia.org/globalassets/site/content/research/foundation/2026/internal-audit-and-ai-enabled-fraud/ia-and-ai-enabled-fraud-report-en.pdf
   - JOFA-SAS151-2026: Journal of Accountancy, *ASB approves standard on auditors' responsibilities relating to fraud*, 2026-08-20, https://www.journalofaccountancy.com/news/2026/aug/asb-approves-standard-on-auditors-responsibilities-relating-to-fraud/
   - IAASB-ISA240-2025: IAASB, *IAASB Revises Fraud Standard to Enhance Public Trust*, 2025-07-08, https://www.iaasb.org/news-events/2025-07/iaasb-revises-fraud-standard-enhance-public-trust
   - COMPUTERWORLD-FT-2026: Computerworld (reporting an FT analysis of job postings), 2026-05-19, https://www.computerworld.com/article/4173296/the-big-four-accounting-firms-are-now-hiring-more-ai-specialists-than-accountants.html
-  - TRI-FOP-2026: Thomson Reuters Institute, *Future of Professionals 2026: tax and audit*, 2026-07, https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026
+  - TRI-FOP-2026: Thomson Reuters Institute, *Future of Professionals 2026: tax and audit*, 2026-07-21, https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026
   - NYSSCPA-BOTIC-2025: NYSSCPA, *PCAOB's Botic Flags Opportunities and Risks in AI*, 2025-12-10, https://nysscpa.org/news/1051584-pcaobs-botic-flags-opportunities-and-risks-in-ai-2025-12-10
   - NYENRODE-SHIFTS-2026: Nyenrode, *AI isn't just speeding up accounting, it's changing it fundamentally*, 2026-05-19, https://www.nyenrode.nl/en/news/n/ai-accounting-changing-fundamentally
   - THEFINANCESTORY-KPMGFEE-2026: TheFinanceStory (secondary report of FT and Going Concern items), 2026-02-12, https://thefinancestory.com/kpmg-forced-auditor-for-a-14-ai-discount-will-the-billable-hour-die

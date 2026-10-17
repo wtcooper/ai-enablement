@@ -97,7 +97,7 @@
     - { ref: RSM-AUS-2026, title: "AI in Audit and Accounting Firms: Use Cases and Risks", publisher: "RSM Australia", type: firm, url: "https://www.rsm.global/australia/insights/what-role-ai-audit-and-accounting-firms", date: "2026-08-11", access: full, locator: "section 'Fieldwork', first paragraph" }
     - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'Can AI detect fraud effectively?'" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Barriers chart (PDF p.9)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-01, discourse-01 and governance-01. Change scope set to process (two of three angles;
     governance said step). The IFIAR and PCAOB figures cover all automated tools, including non-AI analytics,
@@ -156,7 +156,7 @@
     - { ref: ARXIV-AUDITCOPILOT-2025, title: "AuditCopilot: Leveraging LLMs for Fraud Detection in Double-Entry Bookkeeping (Kadir, Vasu, Nair, Sonntag; DFKI)", publisher: "arXiv 2512.02726", type: academic, url: "https://arxiv.org/abs/2512.02726", date: "2025-12-02", access: full, locator: "abstract; sections 2-4; Tables 1-2; Limitations" }
     - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "pp.9 and 14 (explainability)" }
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "abstract" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Idea: a research prototype with measured benchmark results but no deployment found. Merged from practice-02
     and governance-02. The paper's Table 1 is internally inconsistent (JET lists recall 0.90 yet 0 false
@@ -211,7 +211,7 @@
     - { ref: PCAOB-TAA-2024, title: "Notice of Filing of Proposed Rules on Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 54922; carries Release 2024-007)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-07-02/pdf/2024-14488.pdf", date: "2024-07-02", access: full, locator: "Discussion of AS 2301.49-.50" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6" }
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.8-9" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From governance-15 (single source). Kept because exception follow-up is the step full-population testing
     moves work into, and no other entry covers it. Vendor statements and regulator illustration only; no
@@ -323,7 +323,7 @@
   sources:
     - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraphs on responding to AI risks and on audit evidence ('AI black box')" }
     - { ref: CAQ-GENAI-2024, title: "Auditing in the Age of Generative AI", publisher: "Center for Audit Quality", type: professional-body, url: "https://thecaq.wpenginepowered.com/wp-content/uploads/2024/04/caq_auditing-in-the-age-of-generative-ai__2024-04.pdf", date: "2024-04", access: full, locator: "section on future state (citing AS 2301.17)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Idea: guidance on how to respond, not a reported audit. From discourse-17, with the CAQ point routed from
     governance. Pattern 'other': assurance over AI-produced entity information as a new substantive test object.
@@ -376,7 +376,7 @@
     - { ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative AI in Audits and Financial Reporting", publisher: "PCAOB staff", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "pp.4-5 (current use, limitations, supervision)" }
     - { ref: ICAEW-PIERPOINT-2025, title: "Testing Gen AI platforms: can they do audit work? (Helen Pierpoint)", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2025/sep-2025/testing-gen-ai-platforms-can-they-do-audit-work", date: "2025-09-24", access: full, locator: "analytical review and risk of material misstatement sections" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.7" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-21 and governance-16. The July 2024 integration is reported in KPMG's April 2025
     release; the original July 2024 release was not opened. No named engagement result. ICAEW's test used a
@@ -424,7 +424,7 @@
   sources:
     - { ref: JOFA-EXCELAGENT-2026, title: "Using an Excel agent to clean, validate, and reconcile data", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/issues/2026/oct/using-an-excel-agent-to-clean-validate-and-reconcile-data/", date: "2026-10-01", access: full, locator: "Introduction; 'The simulated case'; Steps 1-5" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Blockers and automated-solutions charts (PDF pp.9-10)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From discourse-09 (single source). Authors are Gang (Ernest) Pan and Li Wang. A demonstration on simulated
     data, so capped at C; no firm deployment is named. Kept because it is the only entry on defining and
@@ -485,7 +485,7 @@
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "Illustrative example 2, pp.49-59" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6" }
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from governance-08 and discourse-04 (the FRC contract-scoring part of discourse-04 moved to #14).
     Named firms are the six U.S. global networks as listed by the PCAOB; the data are firm-reported for the 2023
@@ -536,7 +536,7 @@
     - { ref: MINDBRIDGE-CHERRY-2022, title: "How Cherry Bekaert drove ROI for their audit engagements", publisher: "MindBridge", type: vendor, url: "https://www.mindbridge.ai/resources/case-studies/cherry-bekaert-llp-case-study", date: "2022-05-08", access: full, locator: "sections 'Redefining risk to save time' and 'The value of implementing a vision' (date from the page's JSON-LD datePublished; modified 2025-12-19)" }
     - { ref: FIELDGUIDE-CHERRY-2026, title: "Cherry Bekaert Selects Fieldguide as Strategic AI Partner to Modernize Audit and Advisory Delivery", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/cherry-bekaert-fieldguide-financial-audit", date: "2026-06-03", access: full, locator: "paras 1-3" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "pp.5-6 (inspection findings)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From practice-14 (single source). The 66% is an illustration, so the entry stays at B. The case study is
     dated 8 May 2022 in the page metadata. The statement that a firm needs 60% of its assurance
@@ -645,7 +645,7 @@
     - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II; section III on AS 1105.10A" }
     - { ref: PCAOB-PS2025-004, title: "Policy Statement Regarding Implementation of Paragraph .10A of AS 1105, Audit Evidence (Release 2025-004)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/pcaob-release-no-2025-004.pdf", date: "2025-09-18", access: full, locator: "p.1 and footnote 2 (text of paragraph .10A)" }
     - { ref: CASEWARE-VERITY-2026, title: "From AiDA to agentic: How Caseware's AI has evolved", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/resources/blog/from-aida-to-agentic-how-casewares-ai-has-evolved", date: "2026-07-28", access: full, locator: "section on human review of suggestions" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-04, practice-05, practice-08, discourse-03 and governance-03. Grade A rests on two
     named-firm figures published by vendors (Oberlander, one practitioner's estimate; Sanville, a vendor case
@@ -715,7 +715,7 @@
     - { ref: DATASNIPPER-CONNECT-2026, title: "DataSnipper Connect New York 2026: 6 Takeaways on AI and Auditing", publisher: "DataSnipper", type: conference, url: "https://www.datasnipper.com/resources/the-6-biggest-takeaways-from-datasnipper-connect-new-york-2026", date: "2026", access: full, locator: "Takeaway 1 (page undated; refers to a September 2026 release)" }
     - { ref: DATASNIPPER-FGMK-2026, title: "FGMK Uses Alwin to Automate Larger, More Complex Audit Work Securely", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/fgmk-alwin-success-story", date: "2026", access: full, locator: "'Taking audit automation further' and Q&A (page undated)" }
     - { ref: DATASNIPPER-ALWIN-2026, title: "DataSnipper Launches Alwin: End-to-End Agentic Automation for Audit & Finance", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance", date: "2026-09-22", access: full, locator: "paras 1-3 (Robbins, FGMK); 'Early results' section (CROP Accountants & Advisers)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From practice-06 (single source). Graded A on named firms' before-and-after figures, vendor-published, with
     no method. Checked 2026-10-17: the FGMK figure traces to DataSnipper's February 2026 customer story, where
@@ -776,7 +776,7 @@
     - { ref: DATASNIPPER-ODP-2026, title: "DataSnipper Success Stories - The ODP Corporation", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/the-odp-corporation", date: "2026", access: full, locator: "'Using DataSnipper as an Internal Audit Reviewer' (undated internal-audit story)" }
     - { ref: DATASNIPPER-ALWIN-2026, title: "DataSnipper Launches Alwin: End-to-End Agentic Automation for Audit & Finance", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance", date: "2026-09-22", access: full, locator: "paras 1-3" }
     - { ref: PCAOB-PS2025-004, title: "Policy Statement Regarding Implementation of Paragraph .10A of AS 1105, Audit Evidence (Release 2025-004)", publisher: "PCAOB", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/rulemaking/docket-052/pcaob-release-no-2025-004.pdf", date: "2025-09-18", access: full, locator: "p.1 and footnote 2" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From practice-07 (single source). Capped at B: the only named-organisation figure (NAO) is second-hand and the
     type of work is not stated. The ODP Corporation story concerns internal audit (SOX and operational audits)
@@ -821,7 +821,7 @@
   sources:
     - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph on Audit Innovation Hub" }
     - { ref: CFOBREW-PWC-2025, title: "A look at PwC's 'next generation' audit", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/2025/11/05/a-look-at-pwc-s-next-generation-audit", date: "2025-11-05", access: full, locator: "'ROI' paragraphs (Kosar)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From practice-18 (single source). Pilot status per October 2025; no later report found. Graded B only because
     PwC names the engagement area in which it is being tested.
@@ -897,7 +897,7 @@
     - { ref: GRACZYK-2025, title: "Use of large language models (LLMs) in auditing as a tool to reduce information asymmetry and fraud risk in the shareholder-management relationship (Graczyk, Majek, Modzelewski)", publisher: "Yearbook of Auditing and Accounting 2025", type: academic, url: "https://pana.gov.pl/wp-content/uploads/2026/04/6.-YoAA_Use-of-large-language-models-LLMs-in-auditing-as-a-tool-o-reduce-information-asymmetry-and-fraud-risk-in-the-hareholder-management-relationship.pdf", date: "2025", access: full, locator: "section 4 error analysis (contract clauses)" }
     - { ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Misinterpretation or misuse will take the most work'" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "AI and audit section (contracts, leases and debt agreements)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-12 (C), practice-13 (idea), governance-05 (C), discourse-05 (C) and the FRC part of
     discourse-04. The FRC example is a regulator's hypothetical design; the FRC says the examples show one way
@@ -948,7 +948,7 @@
     - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "PwC paragraph (Panson, pharmaceutical rebates); EY paragraph (Jackson on inconsistencies)" }
     - { ref: ICAEW-FRCVIEW-2026, title: "How helpful is FRC's guidance on generative and agentic AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/how-helpful-is-frc-guidance-on-generative-and-agentic-ai", date: "2026-05-06", access: full, locator: "section 'Use the illustrative examples' (Bukowski-Kruszyna)" }
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from discourse-06 (B) and discourse-16 (idea). Grade B is generous: it rests on one sentence from a
     named PwC leader about an attempt ('attempting'), read through a republished copy of the WSJ article. The EY
@@ -1024,7 +1024,7 @@
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
     - { ref: DELOITTE-NL-SAMPLE-2026, title: "From sample to full-population examination: what AI changes for the third line", publisher: "Deloitte Netherlands", type: firm, url: "https://www.deloitte.com/nl/en/Industries/financial-services/perspectives/from-sample-to-full-population-examination.html", date: "2026-09-16", access: full, locator: "sections 'What broader coverage actually enables' and 'Transaction testing'" }
     - { ref: KPMG-SOX-2026, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: "KPMG US", type: firm, url: "https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html", date: "2026-09-24", access: full, locator: "Point of view #4: Scalable, AI-enabled testing" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-19, discourse-08 and governance-07. Change scope set to step (two of three). No named
     firm deployment of AI-built expectations was found. The IAASB drafts are exposure drafts (comments due 15 Dec
@@ -1116,7 +1116,7 @@
     - { ref: IAASB-500SERIES-2026, title: "Project proposal to revise audit evidence standards related to inventory and external confirmations (Agenda Item 4-D)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/20260316-Agenda-Item-4D-500Series-Project-Proposal-%28Approved%29.pdf", date: "2026-03-16", access: full, locator: "Problem statement items (g), (h), (j), PDF p.6" }
     - { ref: IAASB-ED500-2026, title: "Exposure Draft: Proposed ISA 500 (Revised), Audit Evidence, with explanatory memorandum", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-08/IAASB-Audit-Evidence-Risk-Response-ISA-500-Exposure-Draft.pdf", date: "2026-08-05", access: full, locator: "Appendix 3, para 3 table" }
     - { ref: CPACOM-ATR-2025, title: "Audit Transformation Report: 2025 CPA.com and AICPA Audit Benchmark Survey (54 US firms with complete data)", publisher: "CPA.com and AICPA", type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: "2025-12", access: full, locator: "Theme 1 chart (automated solutions); Appendix I" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-10 (A), practice-11 (B), discourse-10 (C) and governance-06 (C). Downgraded from A to
     B on 2026-10-17: the 'up to 20 hours' is Circit's own narrative, not the quoted Moore Polska director, and
@@ -1187,7 +1187,7 @@
     - { ref: IAASB-500SERIES-2026, title: "Project proposal to revise audit evidence standards related to inventory and external confirmations (Agenda Item 4-D)", publisher: "IAASB", type: standard-setter, url: "https://www.iaasb.org/_flysystem/azure-private/2026-03/20260316-Agenda-Item-4D-500Series-Project-Proposal-%28Approved%29.pdf", date: "2026-03-16", access: full, locator: "Inventory in ISA 501, items (a) and (b), PDF p.5" }
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "Appendix A, p.12" }
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-20 (B), discourse-13 (idea) and governance-12 (idea). Ladder follows the only entry that
     describes a working tool (the two idea entries said assist). Grade capped at B: the independent measure is
@@ -1245,7 +1245,7 @@
     - { ref: ICPAS-PEECHER-2026, title: "What's Really Behind AI Aversion in Auditing?", publisher: "Illinois CPA Society (authors at UIUC and Erasmus University Rotterdam)", type: academic, url: "https://www.icpas.org/information/copy-desk/insight/article/digital-exclusive-2026/what-s-really-behind-ai-aversion-in-auditing", date: "2026-05-13", access: full, locator: "sections 'Research Overview' and 'How AI Aversion Can Undermine Audit Quality'" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.8 (complex estimates)" }
     - { ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025 (14th annual survey)", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "Appendix B, Table B.2" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Idea: discussed by researchers and a regulator; no firm deployment for estimates testing was found. Merged
     from discourse-14 and governance-13. Commerford et al. is a 2022, pre-generative-AI experiment; the Peecher
@@ -1322,7 +1322,7 @@
     - { ref: PWC-AT-2025, title: "PwC expects end-to-end AI audit automation within 2026", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/pwc-expects-end-to-end-ai-audit-automation-within-2026", date: "2025-10-28", access: full, locator: "paragraph on Evidence Match ('ingest 20 different kinds of documents')" }
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.19 (methodology risk: whole-population outputs)" }
     - { ref: ARXIV-FAB-2026, title: "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors (Huang, Babu et al.; UIUC, Stanford, Modus Audit Inc.)", publisher: "arXiv 2609.32835", type: academic, url: "https://arxiv.org/abs/2609.32835", date: "2026-09-26", access: full, locator: "Table 3; section 6.3" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from discourse-02 (B), practice-03 (C), governance-11 (C) and practice-09 (C). Tense matters: KPMG's
     April 2025 release describes agents as deployed, but no usage figure, customer, inspection comment or outcome
@@ -1370,7 +1370,7 @@
     - { ref: CTRLCOUNCIL-WSJ-2026, title: "Why Audit Firms Are Rewriting the Role of the Modern Accountant (reproduces WSJ, 2026-04-10)", publisher: "Controllers Council", type: press, url: "https://controllerscouncil.org/why-audit-firms-are-rewriting-the-role-of-the-modern-accountant/", date: "2026-05-08", access: full, locator: "EY paragraphs (agents talking with clients' agents; 'changes being piloted now')" }
     - { ref: EY-CANVAS-2026, title: "EY Rolls Out Agentic AI in Assurance Across Its Global Network of Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/", date: "2026-04-07", access: full, locator: "paras 3-4 (all phases now; end-to-end by 2028)" }
     - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "section 'Appearance is not authentication'" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     From discourse-07 (single source). The WSJ text says the agent-to-agent exchange is among changes 'being
     piloted now'; EY's release says AI is embedded in all phases and expected to support all end-to-end
@@ -1456,7 +1456,7 @@
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "certification; human in the loop review and oversight (pp.37-38)" }
     - { ref: IFIAR-TTF-2025, title: "Use of technology in audits: observations, risks and further evolution", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf", date: "2025-03-27", access: full, locator: "p.8" }
     - { ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality", publisher: "IFIAR (Japan FSA mirror)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp.5 and 7" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-17 (C) and governance-09 (C). The firm items are announcements; no firm has published
     error or override rates for substantive agents. The benchmark is the only measured result: synthetic
@@ -1511,7 +1511,7 @@
     - { ref: FRC-AIAUDIT-2025, title: "AI in Audit: illustrative example and documentation guidance", publisher: "FRC (UK)", type: regulator, url: "https://media.frc.org.uk/documents/AI_in_Audit.pdf", date: "2025-06-26", access: full, locator: "p.6 (scope of AI tools)" }
     - { ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: risks, mitigations and illustrative examples", publisher: "Financial Reporting Council", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p.37" }
     - { ref: NYENRODE-QUALITY-2026, title: "AI in auditing: balancing quality, professional skepticism, and responsibility", publisher: "Nyenrode Business University", type: academic, url: "https://www.nyenrode.nl/en/news/n/ai-auditing-quality-skepticism-responsibility", date: "2026-06-18", access: full, locator: "section 'When is AI reliable enough?'" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Idea: permitted in guidance and measured in a benchmark, but no deployment on substantive workpapers was
     found. Merged from governance-10 and discourse-15. Synthetic engagements; benchmark authors include Modus
@@ -1585,7 +1585,7 @@
     - { ref: AFM-BB-2025, title: "12 Building blocks for controlled use of auditing tools", publisher: "AFM (Netherlands)", type: regulator, url: "https://www.afm.nl/~/profmedia/files/rapporten/2025/12-building-blocks-for-controlled-use-of-auditing-tools.pdf", date: "2025-12", access: full, locator: "building blocks 4-6" }
     - { ref: SEC-TAAORDER-2024, title: "Order Granting Approval of Amendments Related to Aspects of Designing and Performing Audit Procedures That Involve Technology-Assisted Analysis of Information in Electronic Form (89 FR 68218)", publisher: "SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2024-08-23/pdf/2024-18986.pdf", date: "2024-08-23", access: full, locator: "Section II" }
     - { ref: TR-AGENTIC-2025, title: "Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and Accounting Workflows", publisher: "Thomson Reuters", type: vendor, url: "https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-launches-agentic-ai-solutions-to-transform-tax-audit-and-accounting-workflows.html", date: "2025-11-05", access: full, locator: "Audit Intelligence Test section (bank activity)" }
-  last_reviewed: "2026-10-16"
+  last_reviewed: "2026-10-17"
   notes: >-
     Merged from practice-16 (B, delegate) and governance-04 (B, automate). Ladder delegate because PwC describes
     agents that assess risk, design plans and test balances; pattern full-population-testing because the change
@@ -1637,11 +1637,12 @@
   evidence_grade: C
   sources:
     - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "sections 'What full-population testing changes', 'The trap', 'How to roll it out safely'" }
-    - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "'Our approach' section (undated site, read 2026-10-16)" }
-  last_reviewed: "2026-10-16"
+    - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "hero text ('launching for the upcoming season'); FAQ ('We're pre-launch'); JSON-LD availabilityStarts 2026-12-01 (undated site, read 2026-10-17)" }
+  last_reviewed: "2026-10-17"
   notes: >-
-    From practice-15 (single source; governance-04 cites the same article for its warnings). Graded B on the
-    firm's description of its operating model; there is no independent evidence of its audit quality, client
-    count or inspection history. Included as a live example of a different service model (an audit firm built
-    on data pulls and agents), not because outcomes are shown. The same article is cited in
-    assurance-controls-testing-08.
+    From practice-15 (single source; governance-04 cites the same article for its warnings). Downgraded on
+    2026-10-17 from B and in-production to C and announced: the firm's own site says it is pre-launch and
+    assembling its founding audit team, so there is no deployment yet. The site does not mention AI agents; the
+    agent description is the CEO's general account of full-population testing. Included as an example of a
+    proposed different service model (an audit firm built on data pulls and whole-population testing), not
+    because outcomes are shown. The same article is cited in assurance-controls-testing-08.
