@@ -95,7 +95,7 @@ to hit the target.
 | Claim attributed to wrong document or speaker | TR narration attributed to Hohl (`16`). FT attribution given to Crypto Briefing (`14`). $10M attributed to the Repodo article (`20`). Wrong EY page (`05`, `06`). Stale ED locator (`17`). |
 | Embellished qualifiers or causes | "long-standing" (`14`). "covered members" and the threat-source list (`16`). "starting with private companies" (`20`). "larger part" (`04`). "pilot firms are law, accounting..." (`04`). Module "2026 areas to watch", "vote expected", "launches". |
 | Unsourced connective claims in role_evolution / risks / checkpoints | Analyst or "angle" inferences in `05`, `09`, `12`, `14`, `15`, `16`, `18`, `19`. Each was removed or labelled as an idea. |
-| Wrong or missing dates | 13 source dates corrected (see table). The biggest: `INTAPP-WP` is 2018, not 2024. 6 frontier dates corrected. `FRC-GENAI` had no URL or date in the module. |
+| Wrong or missing dates | 13 source dates corrected (see table; also `ICAS-IESBASNAP-2026` 2026-07-14 to 2026-07, as the page shows only 'Last updated: 16 July 2026'). The biggest: `INTAPP-WP` is 2018, not 2024. 6 frontier dates corrected. `FRC-GENAI` had no URL or date in the module. |
 | Grade inflated by evidence from an adjacent process | None upgraded wrongly. `15` stays D (the pre-approval workflow is real but not shown on AI services). `16` and `17` stay B as human control steps in named firms. Note that their AI link is indirect. |
 | Search-only figure in an A or B entry | None. All sources are `access: full` and were re-opened. |
 
