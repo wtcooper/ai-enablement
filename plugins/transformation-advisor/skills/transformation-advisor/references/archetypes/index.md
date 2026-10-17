@@ -15,6 +15,7 @@ that archetype's `ARCHETYPE.md`; it indexes its own files and modules.
 | Archetype | Would cover | Until it exists |
 |---|---|---|
 | tax | Tax compliance, provision, indirect tax, transfer pricing, international and global minimum tax, controversy, advisory, tax data and technology; firms and in-house tax teams | Use the method and the library. Assurance's quality-management and specialists modules touch tax work inside an audit only |
+| security | Protecting systems, data, identities and people: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure management, application security, cloud and infrastructure, identity and access, data security and privacy, human risk, AI security; in-house security functions and security service providers | Use the method and the library. Assurance's assurance-over-ai and soc-attestation modules cover attesting to security controls, not running them |
 | professional-services | The shared base: pursuit and proposals, acceptance and risk, scoping and pricing, staffing, delivery management, quality review, billing, knowledge management. Also the base for consulting | Use the method and the library. Assurance files cover the regulated parts of an assurance firm only |
 
 ## How to match

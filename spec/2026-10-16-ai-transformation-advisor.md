@@ -51,7 +51,7 @@ program (§11) is a build activity that produces that content. Its tooling and r
 - A file-based workspace that can live wherever the organization keeps information. A GitHub repo is
   the default example.
 - **Method content** grounded in deep research on transformation practice (§11, stream M).
-- **Business archetypes:** professional services (the base), assurance, and tax. Each is researched in
+- **Business archetypes:** professional services (the base), assurance, tax and security. Each is researched in
   depth (§11, stream A).
 - **Backbone library:** work types, agentic patterns, runtime classes and function cards (§11,
   stream B).
@@ -426,7 +426,8 @@ archetypes/<id>/
 |---|---|---|
 | professional-services | — | pursuit & proposals · acceptance & risk · scoping & pricing · staffing & resourcing · delivery management · quality review · billing & collections · knowledge management |
 | assurance | professional-services | acceptance & independence · planning & risk assessment · controls testing · substantive testing (including journal-entry and fraud testing) · specialists (using the work of experts) · completion & reporting · quality management (firm level and engagement level) · SOC & attestation · sustainability assurance · assurance over AI. The module list was revised in wave 1 from the landscape evidence |
-| tax | professional-services | compliance · provision · indirect tax · transfer pricing · international & global minimum tax · controversy · research & advisory · tax data & technology |
+| tax | professional-services | individual & small-business compliance · corporate compliance (including credits and incentives) · provision & global minimum tax · indirect tax · transfer pricing · controversy (including tax-authority AI) · research & advisory · tax data & technology. Professional responsibility is researched once as a cross-cutting topic. The module list was revised in wave 2 from the landscape evidence |
+| security | — (security service providers also use professional-services) | Proposed, to be tested by the landscape scan: security governance, risk & compliance · security operations (detection, triage, investigation) · threat intelligence & hunting · incident response & recovery · vulnerability & exposure management (including penetration testing and red teaming) · application & product security (including software supply chain) · cloud & infrastructure security · identity & access · data security & privacy · human risk (awareness, phishing, insider) · AI security (securing AI systems and agents). Covers in-house security functions and security service providers |
 
 **Content targets per archetype**
 
@@ -722,6 +723,10 @@ agents in total, the program runs in waves (see `plan/`).
      work; IRS and other tax authority AI programs; tax-technology vendor conferences.
    - **Professional services:** firm operations and legal operations events (as analogs), and
      professional-services benchmark research.
+   - **Security:** RSAC, Black Hat, DEF CON, BSides, FIRST, SANS summits and Gartner security summits;
+     NIST (CSF 2.0, SP 800 series), CISA, ENISA, the SEC cyber disclosure rules, NIS2 and DORA; OWASP,
+     CIS, MITRE ATT&CK and ATLAS, the Cloud Security Alliance; ISC2 and ISACA workforce studies; USENIX
+     Security, IEEE S&P and ACM CCS proceedings; security vendors' and providers' AI agent launches.
 2. **Module deep dives (three angles per module, each its own subagent):**
    - **Practice.** What firms and in-house teams actually do: case studies, firm reports, vendor
      deployments, job postings and product launches that signal real use.
@@ -764,7 +769,7 @@ use cases.
 | Where outputs go | Markdown and YAML in the workspace (§8) |
 | Program workspace location | Anywhere. GitHub template by default (§5) |
 | Clients | Agent Plugins compatible. Verified in Claude Code / Cowork, Codex / ChatGPT desktop, Cursor, Copilot CLI / VS Code (§7.5) |
-| First archetypes | Professional services, assurance, tax (§6.8) |
+| First archetypes | Professional services, assurance, tax, security (§6.8) |
 | Framework IDs (APQC) | Not used |
 
 ## 13. Open questions and items to verify in `plan/`
