@@ -231,23 +231,19 @@ rate (WRITER tracks it); AI-proposed changes reverted or causing incidents; revi
 
 - 2026-03-18 to 03-30: Orca's agentic platform; Wiz Workflows, Green Agent and Blue Agent general availability
   [ORCA-AGENTIC-2026, WIZ-WORKFLOWS-2026, WIZ-GREEN-2026, WIZ-BLUEAGENT-GA-2026].
-- 2026-05-01: joint agentic-AI guidance from six agencies [CISA-AGENTIC-2026].
-- 2026-06-11: SACR names "Agentic Cloud Security Platforms", centred on runtime decisions [SACR-ACSP-2026].
+- 2026-05-01 and 06-11: joint agentic-AI guidance from six agencies; SACR names "Agentic Cloud Security Platforms" [CISA-AGENTIC-2026, SACR-ACSP-2026].
 - 2026-07-02: Wiz MCP server generally available, so customers build their own agents on the graph [WIZ-MCP-2026].
-- 2026-07-07: ENISA's frontier-AI view and the "Authority Gap" [ENISA-FRONTIER-2026].
-- 2026-07-29: Perplexity open-sources Numbat for coding agents on endpoints [PERPLEXITY-NUMBAT-2026].
+- 2026-07-07 and 07-29: ENISA's "Authority Gap"; Perplexity open-sources Numbat for coding agents on endpoints [ENISA-FRONTIER-2026, PERPLEXITY-NUMBAT-2026].
 - 2026-08-03 and 08-06: Microsoft's posture agent preview; Orca's agent pods [MSFT-LEARN-PPA-2026, ORCA-AGENTPODS-2026].
 - 2026-08-19: Palo Alto's Frontier AI Critical Defense Program with virtual patching [PANW-FRONTIERCDP-2026].
 - 2026-08-26: Trail of Bits says a VM will not contain a cyber-capable agent [TOB-VMS-2026]; OpenAI's incident report
   plans narrower egress [OPENAI-HFTECH-2026].
 - 2026-09-08: fwd:cloudsec Europe talks on agents in Kubernetes, sandboxes and "infrastructure security"
   [FWDCLOUDSEC-RAJI-2026, FWDCLOUDSEC-GONDA-2026].
-- 2026-09-17 and 09-28: Cisco's Policy Change Impact Analyzer, per FwChange; Wiz MSP programme
-  [FWCHANGE-VENDORAI-2026, WIZ-MSP-2026].
+- 2026-09-17 and 09-28: Cisco's Policy Change Impact Analyzer, per FwChange; Wiz MSP programme [FWCHANGE-VENDORAI-2026, WIZ-MSP-2026].
 - 2026-10-05 and 10-06: CrowdStrike AI remediation plans; Wiz AI SAST ties code findings to what runs in production
   [CROWDSTRIKE-CLOUDREM-2026, WIZ-AISAST-2026].
-- 2026-10-12: GuardDuty attack sequences enriched with posture indicators [AWS-GUARDDUTY-ETD-2026].
-- 2026-10-14: Wiz agents inside FedRAMP High [WIZ-FORGOV-2026].
+- 2026-10-12 and 10-14: GuardDuty attack sequences gain posture indicators; Wiz agents run inside FedRAMP High [AWS-GUARDDUTY-ETD-2026, WIZ-FORGOV-2026].
 - 2026-10-15: CERT-In advisory treats AI agents as attack vectors exploiting conventional cloud weaknesses
   [CERTIN-CIAD0049-2026]; AWS publishes its audited 37-CVE agent benchmark [AWS-SECAGENT-2026].
 

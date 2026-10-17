@@ -488,16 +488,17 @@
   runtime_class: managed-agent-runtime
   maturity: announced
   problem: >-
-    Malware samples need manual reverse engineering to find indicators and adversary command-and-control, which slows
-    production of shareable intelligence (DHS-AIINV-CISA-2026, DHS-107).
+    Malware samples from partners need manual reverse engineering to find indications of compromise and adversary
+    command-and-control (CISA-AIUC-2024, DHS-107).
   solution: >-
     Google Threat Intelligence's Malware Analyst agent triages files by hash or upload, reverse engineers binaries and
     scripts, deobfuscates PowerShell, VBA, HTA and JavaScript, and explains behaviour in natural language with its
     reasoning shown (GOOGLE-GTIAGENTIC-2026, section 3.1); a 2026-09-10 release added MSI and MSIX installer parsing
-    (GOOGLE-GTICHANGELOG2-2026). CISA lists a malware reverse-engineering use case in pre-deployment that assists
-    analysts with triage and indicator extraction and produces a report they use (DHS-AIINV-CISA-2026, DHS-107).
+    (GOOGLE-GTICHANGELOG2-2026). CISA's December 2024 AI inventory listed a malware reverse-engineering use case at the
+    initiation stage that uses deep learning to help its analysts understand malware samples, to speed the production
+    of threat intelligence shared with partners (CISA-AIUC-2024, DHS-107).
   outcomes:
-    - {lever: speed, description: "none published", figure: "none published", measures: "No measurement found for the Google agent or CISA's pre-deployment tool", provenance: vendor-published, source_ref: GOOGLE-GTIAGENTIC-2026}
+    - {lever: speed, description: "none published", figure: "none published", measures: "No measurement found for the Google agent or CISA's early-stage tool", provenance: vendor-published, source_ref: GOOGLE-GTIAGENTIC-2026}
   prerequisites:
     - "Google Threat Intelligence Enterprise or Enterprise Plus licence; file uploads use the customer's private scanning quota (GOOGLE-GTIAGENTIC-2026, callouts)"
   risks_and_guardrails:
@@ -505,18 +506,20 @@
     - "Google says the AI may be inaccurate and shows reasoning and tool calls so users can spot hallucinations (GOOGLE-GTIAGENTIC-2026, section 1.2)"
     - "Encryption-based concealment severely degrades LLM recovery of indicators from obfuscated code (ARXIV-2605.06910, abstract)"
   human_checkpoints:
-    - "CISA's report is used by human analysts to facilitate triage (DHS-AIINV-CISA-2026, DHS-107)"
-  role_evolution: "Not described in the sources beyond analysts consuming the agent's reports."
+    - "CISA describes its capability as assisting analysts within a larger reverse-engineering toolbox (CISA-AIUC-2024, DHS-107)"
+  role_evolution: "Not described in the sources beyond analysts consuming the agent's output."
   evidence_grade: C
   sources:
     - {ref: GOOGLE-GTIAGENTIC-2026, title: "Agentic Platform (Google Threat Intelligence documentation)", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/docs/agentic-platform", date: "2026-09-24", access: full, locator: "section 3.1 Malware Analyst Agent; section 1.2; callouts"}
     - {ref: GOOGLE-GTICHANGELOG2-2026, title: "September 10th, 2026 - Single Target Operations (GA), Google Insights, Agentic Updates, and Detection Highlights", publisher: Google, type: vendor, url: "https://gtidocs.readme.io/changelog/september-10th-2026-single-target-operations-ga-google-insights-agentic-updates-and-detection-highlights", date: "2026-09-10", access: full, locator: "Google TI Agentic Updates"}
-    - {ref: DHS-AIINV-CISA-2026, title: "Cybersecurity and Infrastructure Security Agency - AI Use Cases (DHS AI Use Case Inventory)", publisher: US Department of Homeland Security, type: regulator, url: "https://www.dhs.gov/ai/use-case-inventory/cisa", date: "2026-01-28", access: full, locator: "Pre-Deployment: Malware Reverse Engineering (DHS-107)"}
+    - {ref: CISA-AIUC-2024, title: "CISA Artificial Intelligence Use Cases (December 2024 inventory refresh)", publisher: CISA, type: regulator, url: "https://www.cisa.gov/ai/cisa-use-cases", date: "2024-12-16", access: full, locator: "Malware Reverse Engineering (DHS-107), stage 'Initiation' (read through a text mirror)"}
     - {ref: ARXIV-2605.06910, title: "Benchmarking Large Language Models for IoC Recovery under Adversarial Code Obfuscation and Encryption", publisher: arXiv, type: academic, url: "https://arxiv.org/abs/2605.06910", date: "2026-05-07", access: full, locator: "abstract"}
   last_reviewed: "2026-10-17"
   notes: >-
-    From practice-08. CISA's tool is classified as classical or predictive machine learning, not generative AI.
-    Google's changelog shows active development from May to October 2026 but no customer evidence. Google's frontline
+    From practice-08. Synthesis cited the January 2026 DHS AI use case inventory (dhs.gov/ai/use-case-inventory/cisa)
+    for CISA's tool as pre-deployment classical machine learning; that page returned HTTP 403 directly and through the
+    text mirror on 2026-10-17, so the entry now rests on CISA's own December 2024 page, which lists classification,
+    clustering, generative AI, information extraction and translation among the tool's techniques. Google's changelog shows active development from May to October 2026 but no customer evidence. Google's frontline
     intelligence team also describes automated script decoding (see use case 19). The security-operations governance
     deep dive routed the CyberSOCEval malware-analysis benchmark (arXiv 2509.20166) here; no figures were passed on.
 
