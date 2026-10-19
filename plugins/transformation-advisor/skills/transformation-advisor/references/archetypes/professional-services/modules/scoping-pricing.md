@@ -67,8 +67,9 @@ entries the ladder value is nominal: AI changes the delivery effort, not the pri
 
 **Negotiation, client demands and buyer terms**
 - Improve (process): `#10` partners lead the AI-value conversation before conceding on fees (TRI survey, C). `#11`
-  in-house teams write AI-savings terms into outside-counsel guidelines; KPMG pressed its auditor into a 14% fee cut
-  (B; audit detail in assurance-acceptance-independence-21). `#12` public-sector buyers: Deloitte Australia repaid a
+  in-house teams write AI-savings terms into outside-counsel guidelines; KPMG, arguing among other things that AI
+  should cut the work, won a reported 14% fee cut from its auditor (B; audit detail in
+  assurance-acceptance-independence-21). `#12` public-sector buyers: Deloitte Australia agreed to repay a
   final instalment after AI errors; Australia will ask panel suppliers to declare planned AI use in quotes (B).
 
 **Budget monitoring and value evidence**
@@ -80,7 +81,7 @@ entries the ladder value is nominal: AI changes the delivery effort, not the pri
   `#18` Kopka Law's KPI-based retainer for insurance defence (B). `#21` AI-native firms Falcon and Crosby sell flat
   bundles or per-document rates with lawyer sign-off (delegate, B). `#23` Debevoise, A&O Shearman and Cooley license or
   share firm-built AI tools; STAAR 2.0 reported as a subscription (B).
-- Accounting and tax: `#16` RSM, KPMG, PwC developing value pricing; RKL piloting it with several dozen clients (B).
+- Accounting and tax: `#16` RSM, KPMG, PwC exploring value and outcome pricing; RKL piloting it with several dozen clients (B).
   `#22` PwC One: agents do the work, professionals review; subscription or consumption pricing "may" follow (delegate, B).
 - Consulting and IT services: `#19` McKinsey says about a quarter of global fees are outcome-based (B). `#20` TCS says
   about 80% of one segment's contracts use outcome measures; reported savings-split deals (B).
@@ -127,13 +128,14 @@ on AI effects; note who would know.
 ## 5. Metrics and benchmarks
 
 **Client pressure (law and corporate buyers)**
-- 78% of corporate clients call AI-enabled quality gains very important or essential; 6% say most or all providers
-  deliver them; 32% have reconsidered or plan to reconsider providers within 12 months (1,816 professionals,
-  Mar-Apr 2026) [TR-FOP-2026].
+- 78% of corporate-client respondents call AI-enabled quality gains very important or essential; 6% say most or all
+  providers deliver them; 32% have reconsidered or plan to reconsider providers within 12 months (corporate buyers
+  within a survey of 1,816 professionals, Mar-Apr 2026) [TR-FOP-2026].
 - ACC-Everlaw (657 in-house legal professionals, 30 countries, 2025): 59% see no GenAI savings from law firms yet; 61%
-  plan to push for change in delivery and pricing; 64% expect to bring more work in-house [ACCEVERLAW-2025;
+  plan to push for change in delivery and pricing; 64% expect to rely less on outside counsel [ACCEVERLAW-2025;
   BLOOMBERGLAW-ACC-2025]. Vendor co-published.
-- KPMG's audit fee from Grant Thornton fell about 14% after it argued AI should cut the work [YAHOO-KPMG-2026].
+- KPMG's audit fee from Grant Thornton reportedly fell about 14% after it argued, among other things, that AI should
+  cut the work (secondary report of an FT story) [YAHOO-KPMG-2026].
 
 **How firms price today**
 - BigHand (800+ legal-finance professionals, UK and North America; vendor): 35% default to standard rates, 28% copy a
@@ -174,9 +176,10 @@ is billable [CALBAR-GENAI-2026; TXETHICS-OP705-2025]. US tax practitioners: bill
 fee rule [IRS-OPR-2026].
 
 **Flat and value fees (diverging; check the state).** California: flat fees may build in AI savings; fee agreements
-should say how far AI factors into rates [CALBAR-GENAI-2026]. ABA 512, as quoted: charging the same flat fee when AI
-makes work much faster may be unreasonable [TRI-ABA512-2025]. Virginia LEO 1901 (approved 24 Nov 2025): reduced time
-does not mean a proportionally reduced fee; explain the fee basis [VSB-LEO1901-2025]. North Carolina: allowed if not
+should say how far AI factors into rates [CALBAR-GENAI-2026]. ABA 512: charging the same flat fee when AI
+makes work much faster may be unreasonable [ABA-OP512-2024]. Virginia LEO 1901 (approved 24 Nov 2025): reduced time
+does not mean a proportionally reduced fee, and contrary views elsewhere are rejected; explain the fee basis
+[VSB-LEO1901-2025]. North Carolina: allowed if not
 clearly excessive and the client consents [NCBAR-FEO1-2024].
 
 **AI costs.** General AI subscriptions are overhead; matter-specific costs only with disclosure, at actual cost, no
@@ -198,8 +201,9 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 ## 7. Roles and how they evolve
 
 - **Pricing professionals** combine modelling with AI and analytics tools and coach partners; postings at McDermott Will
-  & Schulte, Husch Blackwell and Pillsbury ask for this [MCDERMOTT-JOB-2026; HUSCH-JOB-2026; PILLSBURY-JOB-2026]. The
-  role moves toward a commercial, client-facing one; some firms hired more pricing staff [TRI-PRICINGPROS-2024].
+  & Schulte, Husch Blackwell and Pillsbury ask for this [MCDERMOTT-JOB-2026; HUSCH-JOB-2026; PILLSBURY-JOB-2026]. Pricing
+  legal-technology offerings moves the role toward a commercial, client-facing one; some firms hired more pricing staff
+  for that work [TRI-PRICINGPROS-2024].
 - **New senior titles** speak for firms on AI value: Chief Pricing and Innovation Officer (Greenberg Traurig), AI
   innovation head (DLA Piper) [TRI-LEGALWEEK-2026]; Managing Director, Client Value (Goodwin) [GOODWIN-PERSUIT-2025];
   chief client value and innovation officer (Norton Rose Fulbright) [BLOOMBERGLAW-TEXAS-2026].
@@ -209,7 +213,7 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
   track revenue and margin per professional (secondary) [RESULTSENSE-PWC-2026].
 - **Resource managers** expect to shift from filling hours to maximising delivery success if outcome pricing grows
   [KANTATA-RMI-2026].
-- **Juniors**: under AFAs work goes to the cheapest effective resource, which can cut training unless designed for
+- **Juniors**: under AFAs work goes to the most efficient resource, which can limit training unless designed for
   [ILTA-PULSE-2025]; clients resist paying for junior-completed tasks [TRI-LAWYERDEV-2026]. Route to talent-learning.
 - **Delivery models**: AI-native firms cast lawyers as reviewers and agent managers [CROSBY-SITE-2026]; TCS adds engineers
   embedded with clients [REUTERS-ITSERVICES-2026].
@@ -217,12 +221,13 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 ## 8. Frontier
 
 - 2025-10-07: Deloitte to repay part of an AUD 440,000 Australian contract after AI-generated errors [CTV-DELOITTE-2025].
-- 2025-11-13: Australia's Public Service AI plan sets AI-use declarations for consulting panels [CANBERRATIMES-APSAI-2025].
+- 2025-11-12: Australia's Public Service AI plan sets AI-use declarations for consulting panels (reported 2025-11-13)
+  [CANBERRATIMES-APSAI-2025].
 - 2025-11-17: McKinsey says about a quarter of fees are outcome-based [BI-MCKINSEY-2025].
 - 2025-11-24: Virginia approves LEO 1901 on reasonable fees with generative AI [VSB-LEO1901-2025].
 - 2025-12-17: Goodwin rolls out fixed-fee price benchmarking globally [GOODWIN-PERSUIT-2025].
-- 2026-02: KPMG reportedly wins a 14% audit-fee cut from its auditor by citing AI [YAHOO-KPMG-2026].
-- 2026-03-05: KPMG, PwC and RSM reported developing value and outcome pricing [BLOOMBERGTAX-PRICING-2026].
+- 2026-02: KPMG reportedly wins a 14% audit-fee cut from its auditor, citing AI among other arguments [YAHOO-KPMG-2026].
+- 2026-03-05: leaders at KPMG, PwC and RSM reported brainstorming value and outcome pricing [BLOOMBERGTAX-PRICING-2026].
 - 2026-03-13: Legalweek: clients ask for AI line items; some refuse to pay for AI-done work [TRI-LEGALWEEK-2026].
 - 2026-03-19 to 25: PwC One introduced; CEO says some services may become subscription tools [PWC-ONE-2026; CPAPA-PWC-2026].
 - 2026-04-15: Certinia launches Veda agents (estimate, SOW); August shows flat fees from billing history
@@ -231,7 +236,7 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 - 2026-06-25: Salesforce charges only for resolved cases on a help agent (software comparator) [SALESFORCE-AGENTFORCE-2026].
 - 2026-08-21: Reuters reports outcome-based contracts spreading in Indian IT services [REUTERS-ITSERVICES-2026].
 - 2026-08-23: Stanford framework: AI pushes consulting toward hybrid and asset-based pricing [STANFORD-DEL-2026].
-- 2026-09-04: seat-to-consumption AI vendor pricing a hallway topic at ILTACON [EDISCOVERYTODAY-ILTACON-2026].
+- 2026-09-04: seat-to-consumption AI vendor pricing discussed among press at ILTACON [EDISCOVERYTODAY-ILTACON-2026].
 - 2026-09-17: BigHand: 63% of firms price by habit [BIGHAND-LF-2026].
 - 2026-10-02: Falcon launches a flat-fee AI-native law firm [NONBILLABLE-FALCON-2026].
 - 2026-10-13: Legora and Laurel announce AI-work time capture with value measures to follow [LEGORA-LAUREL-2026].
@@ -241,11 +246,11 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 
 - **"Clients still pay by the hour; why change?"** True for now: rates rose nearly 10% in Q1 2026 [TRI-LFFI-Q1-2026], and
   panellists expect the billable hour to last at least five years [TRI-ILTACON-2025]. But 32% of corporate clients are
-  reconsidering providers [TR-FOP-2026], and TRI warns firms using AI mainly to justify higher rates are exposed if
-  budgets tighten [TRI-SOTLM-2026]. Stanford's framework treats hybrid pricing as the usual resting point [STANFORD-DEL-2026].
+  reconsidering providers [TR-FOP-2026], and TRI warns firms relying on premium pricing without measurable efficiency
+  gains are most exposed if budgets tighten [TRI-SOTLM-2026]. Stanford's framework treats hybrid pricing as the usual resting point [STANFORD-DEL-2026].
 - **"If AI halves the work, we must halve the fee."** Not necessarily. On hourly matters, yes [ABA-OP512-2024]. On flat or
   value fees, California and Virginia allow the fee to reflect value and skill [CALBAR-GENAI-2026; VSB-LEO1901-2025];
-  ABA 512 as quoted is stricter, so check the state and document the basis.
+  ABA 512 is stricter [ABA-OP512-2024], so check the state and document the basis.
 - **"Outcome pricing is the answer."** Only where results can be attributed to your work; elsewhere hybrid is the
   resting point [STANFORD-DEL-2026]. McKinsey's own AI leader says its outcome model predates AI [BI-MCKINSEY-2025].
 - **"We can't measure AI savings."** Nobody can yet [TRI-LEGALWEEK-2026]; that is the gap. Start with time records that
@@ -267,19 +272,21 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 
 Full details (title, URL, date, locator, access) are in the YAML. Keys not in the YAML are marked *.
 
-- **Regulators, standard-setters, professional bodies:** CALBAR-GENAI-2026, ABA-OP512-2024, TRI-ABA512-2025 (quotes ABA
-  512), DCBAR-OP388-2024, TXETHICS-OP705-2025, NCBAR-FEO1-2024, VSB-LEO1901-2025, IRS-OPR-2026, AICPA-CODE-2026,
+- **Regulators, standard-setters, professional bodies:** CALBAR-GENAI-2026, ABA-OP512-2024, TRI-ABA512-2025 (commentary
+  on ABA 512), DCBAR-OP388-2024, TXETHICS-OP705-2025, NCBAR-FEO1-2024, VSB-LEO1901-2025, IRS-OPR-2026, AICPA-CODE-2026,
   ILTA-TECHSURVEY-2026, ILTA-PULSE-2025, ICAEW-EXPECT-2026, ABA-LPMRFP-2026.
 - **Academic and surveys:** STANFORD-DEL-2026, TR-FOP-2026, TRI-STANDOUT-2026, SPI-AI-2026, BIGHAND-LF-2026,
   ACCEVERLAW-2025, KANTATA-RMI-2026, FORRESTER-TECHSVCS-2026, TRI-SOTLM-2026, TRI-LFFI-Q1-2026* (Thomson Reuters
-  Institute, Q1 2026 LFFI, 2026-05-13), DELTEK-CLARITY-2026* (Deltek Clarity A&E study, 2026-05-12),
-  BLOOMBERG-AICOST-2026* (Bloomberg Law, Big Law AI cost savings column, 2026-09-03).
-- **Firms:** GOODWIN-PERSUIT-2025, PWC-ONE-2026, CROSBY-SITE-2026, CMS-TRENDS-2026, DEBEVOISE-BLOOMBERG-2026,
+  Institute, Q1 2026 LFFI, 2026-05-13, https://www.thomsonreuters.com/en/institute/articles/lffi-q1-2026-strong-inputs-average-output), DELTEK-CLARITY-2026* (Deltek Clarity A&E study release, 2026-05-12,
+  https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/),
+  BLOOMBERG-AICOST-2026* (Bloomberg Law, Big Law AI cost savings column, 2026-09-03,
+  https://news.bgov.com/business-and-practice/big-law-ai-cost-savings-remain-a-mystery-as-billable-hours-jump).
+- **Firms:** GOODWIN-PERSUIT-2025, PWC-ONE-2026 (search-only; page blocked), CROSBY-SITE-2026, CMS-TRENDS-2026, DEBEVOISE-BLOOMBERG-2026,
   COOLEY-LAWCOM-2026.
 - **Vendors:** CERTINIA-VEDA-2026, CERTINIA-CUSTOMERS-2026, AYORA-LTH-2026, NARRATIVE-ILTA-2026, LTHUB-PERSUIT-2026,
   LEGORA-LAUREL-2026, LEGORA-PORTAL-2026, SALESFORCE-AGENTFORCE-2026.
 - **Conference coverage:** TRI-LEGALWEEK-2026, TRI-ILTACON-2025, EDISCOVERYTODAY-ILTACON-2026, TRI-EVENTS-2026* (Thomson
-  Reuters Institute events page, read 2026-10).
+  Reuters Institute events page, read 2026-10-19, https://www.thomsonreuters.com/en/institute/events).
 - **Press and commentary:** BI-MCKINSEY-2025, AIWEEKLY-MCK-2026, RESULTSENSE-2026, RESULTSENSE-PWC-2026,
   RESULTSENSE-ACCENTURE-2026, FORRESTER-BLOG-2025, REUTERS-ITSERVICES-2026, BLOOMBERGTAX-PRICING-2026,
   BLOOMBERGLAW-ACC-2025, BLOOMBERGLAW-TEXAS-2026, BLAW-ROBB-2026, YAHOO-KPMG-2026, ONLYCFO-KPMG-2026, CPAPA-PWC-2026,

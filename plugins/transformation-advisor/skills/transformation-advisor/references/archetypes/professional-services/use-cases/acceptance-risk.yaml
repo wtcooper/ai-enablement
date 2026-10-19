@@ -161,6 +161,7 @@
     - { ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: Thomson Reuters Institute, type: press, url: "https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed", date: 2026-02-18, access: full, locator: "Premortem No. 1, paragraphs on the conflicts check" }
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Executive Summary p. 2; Duty of Confidentiality pp. 5-6" }
     - { ref: VIRTUALVOCATIONS-2026, title: "Conflicts Analyst (remote job posting)", publisher: Virtual Vocations, type: job-posting, url: "https://www.virtualvocations.com/job/conflicts-analyst-3264522-i.html", date: 2026-09-22, access: full, locator: "Job Summary and Required Qualifications" }
+    - { ref: LEGALTECH-CELESTE-2026, title: "Intapp bets on 'firm AI' with general release of Celeste", publisher: Legal Technology, type: press, url: "https://legaltechnology.com/intapp-bets-on-firm-ai-with-general-release-of-celeste/", date: "2026-07", access: search-only, locator: "search result only (page blocked); not used for the grade" }
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law firms (BakerHostetler named as an early adopter). Celeste was previewed in Feb 2026 and made
