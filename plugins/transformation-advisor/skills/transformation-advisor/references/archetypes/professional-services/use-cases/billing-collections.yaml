@@ -742,9 +742,9 @@
     access: full
     locator: Interview answers on what the tool does, build and rollout, and adoption; closing 'Bigger picture' paragraphs
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firm (UK-headquartered, global). Named firm, in production firmwide (3,000+ lawyers able to use it),
-    but the figures are usage and speed statements by the builder, so B rather than A. The only firm-built billing tool found.
-    Discourse 03.'
+  notes: 'Firm kind: law firm (13 offices named in the launch figures). Named firm, in production firmwide (3,000+ lawyers
+    able to use it), but the figures are usage and speed statements by the builder, so B rather than A. The only firm-built
+    billing tool found. Discourse 03.'
 - id: professional-services-billing-collections-05
   title: AI checks pre-bills against client guidelines and billing history and proposes fixes that a billing partner accepts
     or rejects before the invoice goes out
