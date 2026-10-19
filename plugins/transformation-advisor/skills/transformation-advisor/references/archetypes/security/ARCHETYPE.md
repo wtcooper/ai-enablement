@@ -23,8 +23,8 @@ bought is lower risk at an acceptable cost: detection and response, fewer exploi
 ## What it extends
 
 Nothing for in-house teams: the security function is its own value chain. **Security service providers** also use
-professional-services (pursuit, scoping and pricing, staffing, delivery, billing), which is not yet written; use the
-method and the library for those parts. Security differs from other fields in three ways. The counterparty is an
+professional-services (pursuit, scoping and pricing, staffing, delivery, billing); see
+[professional-services](../professional-services/ARCHETYPE.md). Security differs from other fields in three ways. The counterparty is an
 adversary that adopts AI too. Several legal clocks start from a human determination (materiality, "significant
 incident"), and no rule read bans AI in triage or response ([guardrails.md](guardrails.md)). And the defenders' own AI
 is part of the attack surface [ARXIV-2605.24421].

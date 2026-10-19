@@ -22,7 +22,7 @@ professional standards and independence rules, and an audit regulator or peer re
 
 ## What it extends
 
-It extends **professional-services**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
+It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
 billing and knowledge management all still apply. Assurance changes four things. Auditing standards (ISA, PCAOB,
 AICPA, ISSA 5000) set the steps of the value chain. Independence rules limit which services, vendors and owners are
 allowed. Inspectors or peer reviewers re-examine the work. And the human auditor stays accountable for the opinion

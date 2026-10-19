@@ -8,15 +8,10 @@ that archetype's `ARCHETYPE.md`; it indexes its own files and modules.
 
 | Archetype | Extends | Recognition cues (match on what is delivered, to whom, and who regulates it) | Modules | Status |
 |---|---|---|---|---|
+| [professional-services](professional-services/ARCHETYPE.md) | — | Firms that sell expert work by the matter or engagement, and in-house teams run like them: law firms ("matters", "billable hours", "realisation", "conflicts", "OCGs"), consultancies ("engagements", "SOWs", "utilisation", "bench", "PSA"), accounting and advisory firms' firm side ("WIP", "partner track", "PE investment"), engineering and architecture firms ("projects", "proposals", "Deltek"), in-house legal and shared-service teams ("legal operations", "intake", "outside counsel spend"). The base for assurance, tax and security service providers; their field work is in those archetypes | pursuit-proposals · client-development · acceptance-risk · scoping-pricing · staffing-resourcing · delivery-management · work-production · quality-review · billing-collections · knowledge-management · talent-learning · firm-finance | Available |
 | [assurance](assurance/ARCHETYPE.md) | professional-services | Audit opinions, SOC reports, attestation, sustainability assurance, assurance over AI; inspections and peer review; independence rules; "busy season", "workpapers", "sign the opinion". Also in-house internal audit and SOX teams | acceptance-independence · planning-risk-assessment · controls-testing · substantive-testing · specialists · completion-reporting · quality-management · soc-attestation · sustainability-assurance · assurance-over-ai | Available |
 | [tax](tax/ARCHETYPE.md) | professional-services | Returns (1040, 1065, 1120), K-1s, organizers, extension season; the provision (ASC 740, IAS 12) and Pillar Two; sales and use tax, VAT, e-invoicing; transfer pricing; notices, exams and Appeals; tax research and advice; Circular 230, section 7216, PCRT. Also in-house corporate tax departments ("head of tax", TEI). Auditing a client's tax balances is assurance | compliance-individual-business · compliance-corporate · provision-pillar-two · indirect-tax · transfer-pricing · controversy · research-advisory · data-technology | Available |
 | [security](security/ARCHETYPE.md) | — | Protecting systems, data, identities and people, and the AI an organization runs (NIST CSF 2.0: Govern, Identify, Protect, Detect, Respond, Recover). In-house CISO teams: SOC, "alert fatigue", SIEM and EDR, AppSec and code scanning, IAM and access reviews, GRC, questionnaires and TPRM, NIS2, DORA, SEC 8-K. Providers: MDR, MSSP, pentest and red team, IR retainers. AI security: agent identities, prompt injection, shadow AI. Issuing SOC 2 reports or assurance over AI is assurance | governance-risk · operations · threat-intelligence · incident-response · vulnerability-exposure · application-security · cloud-infrastructure · identity-access · data-privacy · human-risk · ai-security | Available |
-
-## Not yet available
-
-| Archetype | Would cover | Until it exists |
-|---|---|---|
-| professional-services | The shared base: pursuit and proposals, acceptance and risk, scoping and pricing, staffing, delivery management, quality review, billing, knowledge management. Also the base for consulting and for security service providers | Use the method and the library. Assurance, tax and security files cover the field-specific parts of those firms only |
 
 ## How to match
 
@@ -32,5 +27,5 @@ that archetype's `ARCHETYPE.md`; it indexes its own files and modules.
 5. **No match:** follow `../library/index.md` §9. Offer on-the-spot research only if the user agrees and you have
    web access (`../briefs/research-archetype.md`).
 
-Consulting is not an archetype: consulting teams use professional services (once available), the library's
-functions, and their client's archetype.
+Consulting is not an archetype: consulting teams use [professional services](professional-services/ARCHETYPE.md)
+(available) for their firm's own work, the library's functions, and their client's archetype.

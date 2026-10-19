@@ -23,7 +23,7 @@ examine it years later.
 
 ## What it extends
 
-It extends **professional-services**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
+It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
 billing and knowledge management all still apply. Tax changes four things. Statute, regulations and tax-authority
 practice set the work, not professional standards alone. The signer of a return has "primary responsibility for the
 overall substantive accuracy" [LII-CFR-SIGN-2026]; penalties are in [guardrails.md](guardrails.md) §5. Conduct and
