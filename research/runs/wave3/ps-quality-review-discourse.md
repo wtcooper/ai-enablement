@@ -817,7 +817,7 @@ Method: pages opened with `curl` (HTML, PDF via `pdftotext`, one RSS feed, one J
 6. **2026-05-19 to 2026-07-30** GPTZero investigations of EY, KPMG and PwC Middle East lead to withdrawals and corrections (GPTZERO-PWC-2026; TECHCRUNCH-KPMG-2026; ACS-EY-2026).
 7. **2026-07-30** A researcher argues the legal system substitutes process for evidence and sets a research agenda for shared error metrics and benchmarks (ARXIV-WILLIAMS-2026).
 8. **2026-04-18** Sullivan & Cromwell apologises to a bankruptcy court (CANLAWYER-SC-2026).
-9. **2026 (May)** Cal Bar extends guidance to agentic AI (CALBAR-GENAI-2026).
+9. **2026 (PDF created May 2026; adoption date not shown)** Cal Bar extends guidance to agentic AI (CALBAR-GENAI-2026).
 10. **2025-12-16** Clearbrief launches an audit-trail report for partners (LAWSITES-CLEARBRIEF-2025).
 
 ### Workforce and role effects
