@@ -1,0 +1,2103 @@
+- id: professional-services-delivery-management-01
+  title: Delivery plan, solution design and handoff brief drafted from the SOW, deal record and call transcripts
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - document-production
+  - coordination-scheduling
+  - research-synthesis
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: 'Context is lost between the deal team and the delivery team: plans are rebuilt by hand from a signed statement
+    of work (SOW, the document fixing scope, deliverables and fees) and a salesperson''s recollection, and each new team
+    member is briefed by hand. Kantata''s chief product strategy officer says firms can no longer afford to rely on one
+    experienced 20-year project manager to know the customer and spot risk (KANTATA-SUPERAGENT-2026). Deltek''s summary
+    of the SPI benchmark lists streamlining the sales-to-delivery handoff as a way to convert pipeline into delivered work
+    (DELTEK-SPI-2026). Architects spend large blocks of time writing solution-design and plan documents before delivery
+    can start.'
+  solution: An agent drafts the delivery plan, phased roadmap, solution-architecture document or new-joiner brief from the
+    SOW, deal record, call transcripts and project history; the delivery lead or architect reviews it. Spaulding Ridge,
+    a cloud advisory and implementation firm, deployed a Moonnox agent to draft solution architecture documents (CERTINIA-MOONNOX-2026).
+    Certinia lists Sales-to-Delivery Handoff, Solution Architect and Implementation Plan agents (CERTINIA-VEDA-2026). Kantata
+    says its Expertise Agent holds SOWs, meeting notes, past decisions and client history so each new resource gets a role-specific
+    brief and project plans on day one, and that it can generate plans from SOWs and briefings (KANTATA-AGENT-2026; ERPTODAY-KANTATA-2026).
+    Rocketlane describes generating a project plan from a SOW (ROCKETLANE-AGENTIC-2026). Interviewed Finnish IT project
+    managers use generative AI to structure work phases; one tested Gemini on a migration-project framework but did not
+    put it into practice (EINF-2026).
+  outcomes:
+  - lever: speed
+    description: Spaulding Ridge's executive chair says the agent made drafting solution architecture documents four times
+      faster.
+    figure: about 80 hours to under 20 hours per document
+    measures: 'The chair''s statement in Certinia''s release: ''approximately 80 hours to under 20 hours''. Number of documents,
+      period and method are not stated, so this is an estimate.'
+    provenance: self-reported
+    source_ref: CERTINIA-MOONNOX-2026
+  - lever: speed
+    description: Certinia's results panel lists faster client onboarding without naming the agent or customer.
+    figure: 60% faster client onboarding
+    measures: Vendor aggregate; no baseline, sample or definition of onboarding is given.
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  prerequisites:
+  - Deal, scope and SOW held as structured records the agent can read (CERTINIA-VEDA-2026).
+  - Captured requirements, call transcripts and SOW text in a store the agent can reach (CERTINIA-MOONNOX-2026).
+  - Engagement terms that address the scope of AI use, allocation of responsibilities, data protection and any agreed AI
+    restrictions (ICMCI-AICODE-2026, section 7.3).
+  risks_and_guardrails:
+  - Interviewees said generative AI struggles to grasp organisational context and can hallucinate, so plans need human review
+    (EINF-2026, Table 6 p.14).
+  - No review-time, correction-rate or defect data accompany the 80-to-20-hour figure; Certinia's chief executive says teams
+    must be able to trust output 'without manual rework' (CERTINIA-MOONNOX-2026).
+  - Plans and SOW-derived scope statements are commitments; consultants who present AI-assisted output bear the same responsibility
+    as for their own work (ICMCI-AICODE-2026, section 2.2).
+  - Government buyers may require approval of AI use, quality checks on AI outputs and records of AI use; Australia's model
+    clauses do so (AGS-AIMODELCLAUSES-2025, Section 1).
+  - No source publishes error data for handoff briefs; a brief that omits a commitment could reset client expectations.
+  human_checkpoints:
+  - Solution architect reviews and signs off a design draft before it goes to the client or the delivery team.
+  - Engagement lead and delivery lead approve the handoff pack and plan against the signed SOW; the project manager approves
+    the plan before kickoff (EINF-2026, section 5.5 p.15).
+  - Client sign-off on the plan where the contract requires it.
+  role_evolution: Spaulding Ridge's chair says consultants are freed to focus on high-value work (CERTINIA-MOONNOX-2026).
+    Delivery leads receive a structured brief instead of reconstructing it; Kantata frames this as moving senior project
+    managers' tacit knowledge into the platform (KANTATA-SUPERAGENT-2026).
+  evidence_grade: B
+  sources:
+  - ref: CERTINIA-MOONNOX-2026
+    title: Certinia Acquires Moonnox to Power AI-Native Services Delivery
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-acquires-moonnox-to-power-ai-native-services-delivery/
+    date: '2026-07-21'
+    access: full
+    locator: Section 'Customers Are Already Unlocking Proven Value' (Jay Laabs quote); capability list 'Seamless Sales,
+      Handoff & Alignment'; CEO quote
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: Plan and Deliver agent lists (Sales-to-Delivery Handoff, Solution Architect, Implementation Plan); results
+      panel
+  - ref: KANTATA-AGENT-2026
+    title: Expertise Agent and Workflows (product page; undated, date shown is the read date)
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/ai/expertise-agent-and-workflows
+    date: '2026-10-19'
+    access: full
+    locator: Sections 'Perfect Project Handoffs' and 'Tackle What Matters'
+  - ref: KANTATA-SUPERAGENT-2026
+    title: 'More Agents Won''t Fix Unpredictable Projects: Why We Built a Superagent Instead'
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/more-agents-wont-fix-unpredictable-projects-why-we-built-a-superagent-instead
+    date: '2026-06-16'
+    access: full
+    locator: Section 'Predicting What You Couldn't See Before'
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Paragraph 'Kantata is positioning Expertise Agent...' (example use cases)
+  - ref: ROCKETLANE-AGENTIC-2026
+    title: Rocketlane agentic PSA platform (Nitro) product page
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/agentic-psa
+    date: '2026-10-14'
+    access: full
+    locator: Project Delivery capability line
+  - ref: DELTEK-SPI-2026
+    title: '2026 PSO Benchmarks: What We Learned and What''s Next from the SPI Maturity Benchmark Report'
+    publisher: Deltek (SPI Research data)
+    type: survey
+    url: https://www.deltek.com/resources/articles/professional-services-benchmarks/
+    date: '2026-07-30'
+    access: full
+    locator: '''Continuing the Focus on Conversion'''
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Section 4.2 'Planning and strategy' p.8; Table 6 p.14; section 5.5 p.15
+  - ref: ICMCI-AICODE-2026
+    title: Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0
+    publisher: International Council of Management Consulting Institutes
+    type: professional-body
+    url: https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf
+    date: 2026-05
+    access: full
+    locator: Sections 2.2, 7.3
+  - ref: AGS-AIMODELCLAUSES-2025
+    title: 'Legal update no. 327: Artificial Intelligence (AI) model clauses'
+    publisher: Australian Government Solicitor (for the Digital Transformation Agency)
+    type: regulator
+    url: https://www.ags.gov.au/sites/default/files/Legal-update-no327.pdf
+    date: '2025-04-04'
+    access: full
+    locator: Section 1 (services where the seller uses AI)
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: consulting and technology-implementation firms (Spaulding Ridge); vendor descriptions otherwise. Merged
+    from practice-05, practice-06, discourse-04 and governance-05. Grade B rests on Spaulding Ridge only, an executive''s
+    approximation quoted in a vendor release (B under the 2026-10-17 rule); the handoff and plan-generation parts on their
+    own are C, with no named customer. The same Spaulding Ridge result is held in professional-services-scoping-pricing-01
+    as scoping documentation; that entry cites Certinia''s customer blog, which attributes it to Veda agents, while the
+    Moonnox release attributes it to a Moonnox agent. SOW drafting itself is professional-services-scoping-pricing-05; Certinia''s
+    claim that proposal or SOW creation falls from 8 hours to 1 belongs to pursuit-proposals.'
+- id: professional-services-delivery-management-02
+  title: Meeting and call capture turned into summaries, decisions, action items, requirements and backlogs, with consent
+    controls
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - document-production
+  - coordination-scheduling
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: Consultants spend hours writing call notes, requirements and technical plans, and minutes and action lists are
+    written after the fact, so commitments slip. Diabsolut, a Salesforce and Certinia implementer, says senior consultants
+    spent hours writing technical plans and chasing spreadsheets (CERTINIA-CUSTOMERS-2026). A testimonial on Rocketlane's
+    page, speaker not identified, says complex implementations take 10-15 hours of decision and requirements documentation
+    (ROCKETLANE-AGENTIC-2026).
+  solution: AI turns meeting transcripts into summaries, decisions, action items, requirements and backlogs, and a person
+    checks them before they circulate. Diabsolut deployed a Project Assistant and other agents in Slack; its technical-architecture
+    director says the automated steps were 'transcripts, requirements, backlogs, and scoping' (CERTINIA-CUSTOMERS-2026).
+    The project-management team that onboards new franchise stores at EarthWise Pet (in-house team, not a services firm)
+    uses Rocketlane's AI Fills for call summaries and action items (ROCKETLANE-EARTHWISE-2026). Deloitte lists a meeting-insights
+    and status-update agent in its Agent Fleet on AWS Marketplace, naming no client (DELOITTE-AWS-2026). Certinia lists
+    a Project Assistant that turns meeting conversations into summaries (CERTINIA-VEDA-2026). In an interview study of 12
+    Finnish IT project-management consultants, two used meeting transcription, one created action points from transcripts,
+    and two used AI in whiteboard tools to group workshop results (EINF-2026).
+  outcomes:
+  - lever: speed
+    description: Diabsolut cut documentation time by 70%, according to Certinia's account of the deployment.
+    figure: 70% less documentation time
+    measures: 'Certinia''s wording: ''cut documentation time by 70%''. Baseline, sample, task definition and period are
+      not stated.'
+    provenance: vendor-published
+    source_ref: CERTINIA-CUSTOMERS-2026
+  - lever: experience
+    description: EarthWise Pet's project-management VP says AI call summaries save time and remove 'he said, she said' disputes
+      because commitments are documented.
+    figure: none published (qualitative)
+    measures: One customer's statement; no sample or baseline.
+    provenance: vendor-published
+    source_ref: ROCKETLANE-EARTHWISE-2026
+  - lever: speed
+    description: Interviewee-reported effects, not measurements.
+    figure: none
+    measures: One participant said action points from transcripts were sometimes better than manual ones but needed verification;
+      two said workshop-result processing took less time; two said meeting-note quality varied with meeting complexity (section
+      4.2 pp.7-8).
+    provenance: independent
+    source_ref: EINF-2026
+  - lever: speed
+    description: 'Adjacent cross-industry evidence: workers who used a generative AI tool built into email, meeting and
+      writing apps spent less time on email (not meeting time).'
+    figure: two fewer hours on email per week
+    measures: Among the 80% of treated workers who used the tool, weekly email time in the second half of a six-month randomised
+      experiment; 66 firms and 7,137 knowledge workers; not specific to professional services.
+    provenance: independent
+    source_ref: NBER-DILLON-2025
+  prerequisites:
+  - A recording-consent practice for every participant, including clients, and vendor data terms that are reviewed rather
+    than accepted by click-through (CALBAR-GENAI-2026, p.5).
+  - 'A rule for what may be recorded in client engagements: consultants must follow client instructions on AI and not enter
+    confidential data into tools that may reuse it (ICMCI-AICODE-2026, sections 3.4 and 5.4); client organisations largely
+    decide which tools consultants may use (EINF-2026, section 5.5 p.15).'
+  - A baseline of documentation time before deployment, as Certinia advises (CERTINIA-CUSTOMERS-2026, Pro Tips).
+  risks_and_guardrails:
+  - A US federal class action filed in August 2025 alleges Otter.ai's meeting assistant recorded and transcribed conversations
+    without participants' consent; these are allegations (KJZZ-OTTER-2025).
+  - A lawyer needs a client's informed consent before putting client information into a self-learning tool that could disclose
+    it to others (ABA-OP512-2024, Part II.B p.7).
+  - Output quality varies, and interviewees treat it as needing verification and avoid sharing confidential material (EINF-2026,
+    Table 6 p.14).
+  - Certinia asserts that generic AI tools can leave teams spending as much time verifying and correcting output as they
+    save; this is a vendor claim with no data (CERTINIA-MOONNOX-2026).
+  human_checkpoints:
+  - Meeting organiser confirms consent and the permitted tool before recording starts.
+  - Owner checks the summary and action list before they go to the client; the project manager verifies action points (EINF-2026,
+    section 4.2 p.8).
+  role_evolution: Diabsolut's director says the automation frees outcomes architects to focus on outcomes rather than paperwork
+    (CERTINIA-CUSTOMERS-2026). Interviewees converged on AI as an 'assistant not replacement' (EINF-2026, abstract). The
+    NBER experiment detected no shift in the quantity or composition of workers' tasks (NBER-DILLON-2025).
+  evidence_grade: B
+  sources:
+  - ref: CERTINIA-CUSTOMERS-2026
+    title: Certinia Customers Are Proving Veda AI Agents Deliver Real Results
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/blog/certinia-customers-are-proving-veda-ai-agents-deliver-real-results/
+    date: 2026-09
+    access: full
+    locator: Section 'Diabsolut Turns AI Into a New Business Model'; Pro Tips
+  - ref: ROCKETLANE-EARTHWISE-2026
+    title: 'How EarthWise Pets Did It (customer story: AI Fills call summaries in franchise onboarding)'
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/customers/how-earthwise-pets-captures-100-of-franchise-commitments-with-rocketlanes-ai-teammate
+    date: '2026-10-14'
+    access: full
+    locator: Sections on AI Fills and call summaries
+  - ref: ROCKETLANE-AGENTIC-2026
+    title: Rocketlane agentic PSA platform (Nitro) product page
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/agentic-psa
+    date: '2026-10-14'
+    access: full
+    locator: Customer quote on documentation agent
+  - ref: DELOITTE-AWS-2026
+    title: Meeting Data analyzer Agent (Deloitte Agent Fleet, Innovation Support Agent Suite) AWS Marketplace listing
+    publisher: Deloitte / AWS Marketplace
+    type: firm
+    url: https://aws.amazon.com/marketplace/pp/prodview-obfkw4hi57r3i
+    date: '2026-09-30'
+    access: full
+    locator: Product description
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: '''Frictionless operations & delivery''; Manage agent list'
+  - ref: CERTINIA-MOONNOX-2026
+    title: Certinia Acquires Moonnox to Power AI-Native Services Delivery
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-acquires-moonnox-to-power-ai-native-services-delivery/
+    date: '2026-07-21'
+    access: full
+    locator: Section 'Trusted, Real-Time Context Your Services Teams Can Act On'
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Table 3 p.7; section 4.2 pp.7-8; Table 6 p.14; section 5.5 p.15
+  - ref: NBER-DILLON-2025
+    title: Shifting Work Patterns with Generative AI (NBER WP 33795)
+    publisher: National Bureau of Economic Research
+    type: academic
+    url: https://www.nber.org/papers/w33795
+    date: 2025-05
+    access: full
+    locator: Abstract
+  - ref: KJZZ-OTTER-2025
+    title: Class-action suit claims Otter AI secretly records private work conversations
+    publisher: KJZZ / NPR
+    type: press
+    url: https://www.kjzz.org/npr-top-stories/2025-08-15/class-action-suit-claims-otter-ai-secretly-records-private-work-conversations
+    date: '2025-08-15'
+    access: full
+    locator: Paragraphs 1-4
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.B, pp.6-7
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p.5
+  - ref: ICMCI-AICODE-2026
+    title: Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0
+    publisher: International Council of Management Consulting Institutes
+    type: professional-body
+    url: https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf
+    date: 2026-05
+    access: full
+    locator: Sections 3.4, 5.4
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: Salesforce and Certinia implementation consultancy (Diabsolut), an in-house project-management team
+    (EarthWise Pet), a Big Four marketplace listing with no client named (Deloitte), and Finnish IT project-management consultants.
+    Merged from practice-04, discourse-08 and governance-04. The Diabsolut 70% figure is also held in professional-services-scoping-pricing-01
+    (scoping documentation); it is one deployment, not two. Do not confuse it with Diabsolut''s invoice-ageing result on
+    Certinia''s customer-story page, which is a non-agent result routed to billing-collections. Certinia''s blog shows 3
+    September with no year; 2026 is inferred. The NBER figure is adjacent evidence (email time); some authors were Microsoft
+    employees. Certinia acquired Moonnox, a context-capture tool, on 2026-07-21 (CERTINIA-MOONNOX-2026).'
+- id: professional-services-delivery-management-03
+  title: Agent-drafted status reports, client updates and steering-committee packs from live project data
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - document-production
+  - data-reporting
+  - client-interaction
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: Project managers assemble status packs by hand from budgets, task lists, emails and notes, then reformat them
+    for each client or committee. Wellingtone's report summary states that 72% spend half a day or more collating reports
+    every month; the page does not define the base (WELLINGTONE-SOPM-2026). One interviewed IT project-management consultant
+    named reporting as the primary pain point (EINF-2026, section 4.4.1 p.10).
+  solution: A model grounded in the engagement's own data drafts the status report, client update or steering pack in a
+    standard format; the project manager edits and sends it. Nextview, a Salesforce consulting partner in Northern Europe,
+    runs a Project Assistant Agent in Slack that assembles steering-committee reports with budget, risk and project health
+    (CERTINIA-CUSTOMERS-2026). Automation Consultants lists status reporting among the tasks of its 12-agent PMO estate
+    (ATLASSIAN-TEAM26-AC-2026). PwC US markets Intelligent Status Insights, which combines open-source language models with
+    retrieval over project data to produce standardized, client-ready status reports; the page does not say whether it runs
+    on PwC's own engagements (PWC-STATUS-2026). Oracle describes AI-generated program summaries that flag risks (ORACLE-PPM-2026),
+    and Certinia listed configurable AI project summaries in an early-adopter release (IA-CERTINIA-2025). A vendor guide
+    describes a scheduled agent that drafts a weekly client email from team channels, the shared drive and the calendar
+    (EDNA-STATUS-2026).
+  outcomes:
+  - lever: speed
+    description: Nextview says steering-committee reports that used to take hours of manual assembly now generate with a
+      click.
+    figure: none published (qualitative)
+    measures: 'Certinia''s wording about one customer: reports ''used to take hours'' and now generate with a click; no
+      baseline, sample or period.'
+    provenance: vendor-published
+    source_ref: CERTINIA-CUSTOMERS-2026
+  - lever: capacity
+    description: PwC states its offering can lower administrative project overhead; the page names no client and describes
+      the figures as estimates and projections.
+    figure: about 40%; 120 hours a year per resource; USD 7,000-24,000 a year per resource (projected)
+    measures: 'PwC''s wording: reduction in ''administrative project overhead'' in PMO environments; denominator, sample
+      and method are not stated.'
+    provenance: vendor-published
+    source_ref: PWC-STATUS-2026
+  prerequisites:
+  - Project, budget and risk data in a system the agent can read; Certinia ties its results to a single connected data foundation
+    (CERTINIA-SOA-2026).
+  - A written report template and tone the draft can follow (EDNA-STATUS-2026); Nextview's pack covers budget, risk and
+    project health (CERTINIA-CUSTOMERS-2026).
+  - A baseline of time spent before deployment (CERTINIA-CUSTOMERS-2026, Pro Tips).
+  - Client and security policies that let engagement data reach the model; interviewees avoided sharing confidential material
+    with generative AI tools under NDAs (EINF-2026, Table 6 p.14).
+  risks_and_guardrails:
+  - No error, correction or override rate has been published for AI-drafted status reports. PwC says grounding in source
+    data gives 'more accurate, explainable updates'; this is a design claim (PWC-STATUS-2026).
+  - Drafting a summary is reversible, but an agent replying to clients without review is a one-way door (TRI-AGENTIC-2026).
+  - Interviewees found AI email drafts needed substantial editing, and one abandoned low-quality output for manual work
+    (EINF-2026, section 4.2 p.8 and section 4.4.5 p.11).
+  - A report to a client is a communication about the representation; the duty to keep the client reasonably informed and
+    to consider AI disclosure applies (ABA-OP512-2024, Part II.C pp.8-9; CALBAR-GENAI-2026, p.7).
+  - 'Client-facing AI errors cost fees: Deloitte Australia agreed to repay the final instalment of an AUD 440,000 contract
+    after a report (a deliverable, not a status report) had incorrect footnotes and references, including a fabricated court
+    quote (CTV-DELOITTE-2025).'
+  human_checkpoints:
+  - Project manager reviews the draft before it goes to the steering committee or client.
+  - Approval gate before anything reaches a client inbox (ATLASSIAN-TEAM26-AC-2026).
+  - Engagement lead spot-checks figures against the PSA (professional services automation system) or time system.
+  role_evolution: Nextview's delivery director describes steering-committee preparation becoming a 'quality information
+    gathering exercise' (CERTINIA-CUSTOMERS-2026). PwC says the time freed goes to oversight, risk management and issue
+    resolution (PWC-STATUS-2026). A project-management newsletter argues PMO value moves from producing reports to interpreting
+    them and that project managers who mainly consolidate reports 'should be concerned'; this is opinion (VARGAS-NEWS-2026).
+  evidence_grade: B
+  sources:
+  - ref: CERTINIA-CUSTOMERS-2026
+    title: Certinia Customers Are Proving Veda AI Agents Deliver Real Results
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/blog/certinia-customers-are-proving-veda-ai-agents-deliver-real-results/
+    date: 2026-09
+    access: full
+    locator: Section 'Nextview Puts Agents to Work in Slack'; Pro Tips
+  - ref: ATLASSIAN-TEAM26-AC-2026
+    title: 'The agentic PMO: Scaling delivery with Rovo and Claude (sponsored session, Hassan Khadra, Automation Consultants;
+      Team ''26 Europe, Amsterdam)'
+    publisher: Atlassian
+    type: conference
+    url: https://events.atlassian.com/teameurope/session/4417894/the-agentic-pmo-scaling-delivery-with-rovo-and-claude
+    date: '2026-10-08'
+    access: full
+    locator: Session abstract, paragraph 2
+  - ref: PWC-STATUS-2026
+    title: Manual PMO Status Reporting Is Draining 40% of Project Management Hours. This AI Automates It. (Intelligent Status
+      Insights)
+    publisher: PwC US
+    type: firm
+    url: https://www.pwc.com/us/en/tech-effect/innovation/automate-pmo-status-reporting.html
+    date: '2026-03-24'
+    access: full
+    locator: Opening paragraphs and 'What this delivers for PMO leaders and teams'
+  - ref: WELLINGTONE-SOPM-2026
+    title: The State of Project Management Report 2026 (landing page summary)
+    publisher: Wellingtone
+    type: survey
+    url: https://www.wellingtone.co.uk/state-of-project-management/
+    date: '2026-03-12'
+    access: full
+    locator: Headline statistics list
+  - ref: ORACLE-PPM-2026
+    title: Oracle Fusion Cloud Project Management (product page)
+    publisher: Oracle
+    type: vendor
+    url: https://www.oracle.com/erp/project-management/
+    date: '2026-10-19'
+    access: full
+    locator: Program management section, AI-generated summaries
+  - ref: IA-CERTINIA-2025
+    title: Certinia Announces Winter 2026 Release
+    publisher: Insightful Accountant
+    type: press
+    url: https://blog.insightfulaccountant.com/certinia-announces-winter-2026-release
+    date: '2025-12-10'
+    access: full
+    locator: Bullet 'Customize Generative AI Summaries (PS Cloud)'; early-adopter note
+  - ref: EDNA-STATUS-2026
+    title: How to Cut Status Update Time by 70% in Consulting (undated; date shown is the read date)
+    publisher: Enterprise DNA
+    type: vendor
+    url: https://enterprisedna.co/resources/guides/consulting-reduce-time-status-updates
+    date: '2026-10-19'
+    access: full
+    locator: '''The Real Cost of Manual Status Updates''; ''What an AI Agent Does Differently'''
+  - ref: CERTINIA-SOA-2026
+    title: Certinia Unveils the System of Action for Services, and the Largest Expansion of Veda AI to Date
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-unveils-system-of-action-for-services-and-largest-expansion-of-veda-ai-to-date/
+    date: '2026-09-09'
+    access: full
+    locator: Opening section on the unified data foundation
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Section 4.2 p.8; section 4.4.1 p.10; section 4.4.5 p.11; Table 6 p.14
+  - ref: TRI-AGENTIC-2026
+    title: 'ILTACON 2026: Who''s leading the flock? Balancing agentic AI automation and human oversight'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/iltacon-2026-agentic-ai-automation
+    date: '2026-09-14'
+    access: full
+    locator: Section 'Reversibility and the one- or two-way door test'
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.C, pp.8-9
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p.7
+  - ref: CTV-DELOITTE-2025
+    title: Deloitte to partially refund Australian government for report with apparent AI-generated errors
+    publisher: CTV News (Associated Press)
+    type: press
+    url: https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/
+    date: '2025-10-07'
+    access: full
+    locator: Paragraphs 1-6
+  - ref: VARGAS-NEWS-2026
+    title: 'Issue #32 - Are AI Agents the Future of Project Management?'
+    publisher: Ricardo Vargas newsletter
+    type: community
+    url: https://ricardo-vargas.com/newsletter/issue-32-are-ai-agents-the-future-of-project-management/
+    date: '2026-06-29'
+    access: full
+    locator: Sections on PMO effort and the value of the project manager
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: Salesforce consulting partner (Nextview), IT consultancy (Automation Consultants), Big Four firm selling
+    an offering (PwC US, no client named). Merged from practice-01 and discourse-01, with governance-07''s verification
+    and disclosure points kept as guardrails. Discourse graded C on PwC alone; B here rests on Nextview (named, qualitative).
+    Vendor-guide figures (6-8 hours a week per project manager) are illustrative and not used. The Deloitte report and the
+    pre-release reference check belong to professional-services-work-production-11; client AI-use disclosure is professional-services-work-production-25.
+    Related: tax-compliance-individual-business-15 (stage-change status messages to tax clients) and assurance-soc-attestation-07
+    (client portal in place of email).'
+- id: professional-services-delivery-management-04
+  title: Ask for project status, budget consumption and anomalies in plain language over PSA or ERP data
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - coordination-scheduling
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: At zeb, project managers had to navigate the right paths and apps in SAP to find project information, often in
+    a different context from their question (NTTDATA-ZEB-2026). Partners and PMO leads ask team members to reconstruct status
+    from email threads and separate checklists (HARVEY-ORCH-2026); Certinia calls this 'manual status-chasing' (CERTINIA-VEDA-2026).
+  solution: zeb, a European financial-services consultancy, worked with NTT DATA to build an orchestrator agent and specialist
+    agents on SAP. A project-information agent answers natural-language questions on owners, timelines and current status
+    from S/4HANA project data, forecasts budget consumption and flags potential anomalies; financial agents answer cost
+    and invoice questions for a project (NTTDATA-ZEB-2026). Certinia lists a Project Assistant that gives digests on financials,
+    risks and timeline variances and a PMO Leadership agent for portfolio oversight (CERTINIA-VEDA-2026); Deltek (Ask Dela)
+    and Oracle describe comparable assistants (DELTEK-DELA-2026; ORACLE-PPM-2026). Kantata describes an Expertise Agent
+    that answers cross-functional business questions across project, resource and financial systems (ERPTODAY-KANTATA-2026).
+    For law firms, Planning Blox lists agentic requests for matter financials and task status through conversational prompts
+    (LTH-PLANNINGBLOX-2026).
+  outcomes:
+  - lever: speed
+    description: zeb's head of SAP solutions says the implementation took only a few weeks and delivered excellent results.
+    figure: none published
+    measures: Quote on build time; no measure of the agents' effect on delivery is given.
+    provenance: vendor-published
+    source_ref: NTTDATA-ZEB-2026
+  - lever: capacity
+    description: The case study says the agents reduce manual effort and free consultants for strategic work.
+    figure: none published (qualitative)
+    measures: Integrator's description; no baseline or sample.
+    provenance: vendor-published
+    source_ref: NTTDATA-ZEB-2026
+  prerequisites:
+  - Project, timesheet and finance data consolidated in the ERP, with an integration layer between agents and ERP; zeb used
+    SAP BTP and S/4HANA services (NTTDATA-ZEB-2026).
+  - Access controls that keep one client's matter data out of another's answers (CALBAR-GENAI-2026, p.6).
+  - 'Data people trust: in a vendor-sponsored survey only 12% of leaders fully trust their systems'' data (KANTATA-SOPSI-2026).'
+  risks_and_guardrails:
+  - Answers depend on data quality; no source publishes an accuracy or error rate.
+  - Among the top AI concerns of IT and security respondents in Deltek's government-contractor study are inaccurate forecasts
+    (29%) and difficulty validating AI-provided insights (26%) (DELTEK-CLARITY-2026).
+  - 89% of surveyed leaders say they spend significant time verifying AI outputs, which offsets the speed claim (KANTATA-SOPSI-2026).
+  - Information from one matter may reach people who should not see it unless access is configured (ABA-OP512-2024, Part
+    II.B p.7).
+  human_checkpoints:
+  - The project manager or leader reads the answer and decides; the agent retrieves and forecasts. The zeb case study does
+    not describe formal review steps.
+  - Engagement lead checks any digest before it goes to a client.
+  role_evolution: Project managers ask questions instead of navigating apps; zeb says consultants spend more time on strategic
+    work (NTTDATA-ZEB-2026). A project-management newsletter says PMO analysts shift from collecting data to interpreting
+    it; no data (VARGAS-NEWS-2026).
+  evidence_grade: B
+  sources:
+  - ref: NTTDATA-ZEB-2026
+    title: 'zeb: putting agentic AI into action'
+    publisher: NTT DATA
+    type: vendor
+    url: https://nttdata-solutions.com/br/success-stories/zeb-putting-agentic-ai-into-action/
+    date: '2026-05-07'
+    access: full
+    locator: Sections 'Improving project outcomes...' to 'Operating more dynamically...'
+  - ref: HARVEY-ORCH-2026
+    title: Making Harvey the Orchestration Layer for Legal Work
+    publisher: Harvey
+    type: vendor
+    url: https://www.harvey.ai/blog/legal-work-orchestration
+    date: '2026-10-15'
+    access: full
+    locator: '''Keep Reviews and Next Steps Moving'''
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: '''See the business as it actually is''; Manage agent list (Project Assistant, PMO Leadership)'
+  - ref: DELTEK-DELA-2026
+    title: Deltek Dela (AI product page)
+    publisher: Deltek
+    type: vendor
+    url: https://www.deltek.com/en/products/platform/dela/
+    date: '2026-05-27'
+    access: full
+    locator: 'Feature list: Ask Dela, summaries, predictions'
+  - ref: ORACLE-PPM-2026
+    title: Oracle Fusion Cloud Project Management (product page)
+    publisher: Oracle
+    type: vendor
+    url: https://www.oracle.com/erp/project-management/
+    date: '2026-10-19'
+    access: full
+    locator: Reporting and program management sections
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Paragraphs 1-3 and 'Gap Between Insight and Execution'
+  - ref: LTH-PLANNINGBLOX-2026
+    title: Planning Blox vendor profile
+    publisher: Legaltech Hub
+    type: vendor
+    url: https://www.legaltechnologyhub.com/vendors/planning-blox/
+    date: '2026-10-19'
+    access: full
+    locator: Entry 'Agentic AI for Matter Data Requests'
+  - ref: KANTATA-SOPSI-2026
+    title: Kantata Survey Reveals that 87% of Professional Services Teams Plan to Manage AI Agents as Part of Their Workforce
+    publisher: Kantata (survey by Censuswide, 200 leaders)
+    type: survey
+    url: https://www.kantata.com/blog/article/kantata-survey-reveals-that-87-of-professional-services-teams-plan-to-manage-ai-agents-as-part-of-their-workforce
+    date: '2026-01-08'
+    access: full
+    locator: Data-trust paragraph
+  - ref: DELTEK-CLARITY-2026
+    title: The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures
+      for Project-Based Businesses
+    publisher: Deltek
+    type: survey
+    url: https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/
+    date: '2026-05-12'
+    access: full
+    locator: Government-contracting report key findings
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p.6
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.B, p.7
+  - ref: VARGAS-NEWS-2026
+    title: 'Issue #32 - Are AI Agents the Future of Project Management?'
+    publisher: Ricardo Vargas newsletter
+    type: community
+    url: https://ricardo-vargas.com/newsletter/issue-32-are-ai-agents-the-future-of-project-management/
+    date: '2026-06-29'
+    access: full
+    locator: Paragraphs on the PMO of the future
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: financial-services consultancy (zeb), described in its integrator''s own success story (first published
+    2026-05-07, modified 2026-09-08); law-firm listing (Planning Blox). Merged from practice-03, governance-02 and discourse-14.
+    zeb''s timesheet and staffing agents are routed to billing-collections and staffing-resourcing.'
+- id: professional-services-delivery-management-05
+  title: Agents watch project and portfolio data and flag slipping milestones, missing time entries, deliverable discrepancies
+    and health risk
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - coordination-scheduling
+  - review-assurance
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: process
+  runtime_class: background-agent
+  maturity: piloting
+  problem: 'Risk is found in periodic reviews, after margin has already eroded; project managers chase missing time entries
+    and overdue tasks by hand, and red-amber-green ratings depend on each project manager''s judgment. Siemens Digital Industries''
+    SVP of global customer success says the imperative is to identify deliverable discrepancies early across thousands of
+    projects and a workforce of 4,500 (CERTINIA-VEDA-2026). The data underneath is weak: 47% of resource-management respondents
+    cite poor or fragmented data as a top barrier to AI (KANTATA-RMI-2026).'
+  solution: Agents scan project records on a schedule, score health and route alerts to the project manager or PMO. Siemens'
+    SVP says Certinia's Project Agent, built on Salesforce, is making early discrepancy identification a reality (CERTINIA-VEDA-2026).
+    Certinia's Project Assistant flags missing time cards, overdue items and milestones nearing critical status (IA-CERTINIA-2025);
+    its PMO Quality agent scans project scope regularly to score health sentiment and a PMO Leadership agent gives portfolio
+    oversight (CERTINIA-VEDA-2026). Kantata describes continuous portfolio monitoring that routes alerts to the right people
+    (KANTATA-AGENT-2026); Deltek and Rocketlane describe surfacing risks early (DELTEK-POLARIS-2026; ROCKETLANE-AGENTIC-2026).
+    A competing vendor says most 2026 'agentic' PSA launches are summarisation or scoring rather than execution (TANDEM-2026).
+  outcomes:
+  - lever: quality
+    description: Deltek says firms on its platform see more on-time delivery by surfacing risks early; the page does not
+      say how this was measured.
+    figure: 16% increase in on-time project delivery
+    measures: Deltek's wording; unnamed firms, no baseline, period or sample; not specific to AI.
+    provenance: vendor-published
+    source_ref: DELTEK-POLARIS-2026
+  - lever: risk
+    description: Certinia's results panel lists less margin lost to rework and quality issues without naming the agent responsible.
+    figure: 11-23% less margin lost to rework and quality issues
+    measures: Vendor aggregate; denominator, sample and period are not stated.
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  prerequisites:
+  - Clean, connected project, time and finance data; an IDC analyst quoted by Certinia says AI deployed without a unified
+    data environment produces unreliable output and eroding trust (CERTINIA-GSD-2026).
+  - 'Time-entry discipline: the agent flags gaps but does not create the entries (IA-CERTINIA-2025).'
+  - A PMO that owns the scoring method and acts on it (VARGAS-NEWS-2026); where decisions live in calls and chat, a PSA-only
+    scan sees a partial picture (TANDEM-2026).
+  risks_and_guardrails:
+  - 'Alert quality is unmeasured: no false-positive, missed-risk or accuracy rate for any health score was found.'
+  - Kantata warns that agents deployed in silos each optimise one team's view while the business-wide picture fragments
+    (KANTATA-SUPERAGENT-2026).
+  - Sentiment scoring reads client and team communications, which raises confidentiality risk, including across matters
+    (CALBAR-GENAI-2026, pp.5-6); the more autonomy a system has, the more oversight and periodic reassessment are needed
+    (CALBAR-GENAI-2026, pp.4-5).
+  - The EU AI Act lists AI used to monitor and evaluate workers' performance and behaviour as high-risk (EU-AIACT-ANNEX3-2024,
+    Annex III point 4(b)), with those obligations applying from 2 Dec 2027 (EC-AIACT-2026). No source addresses whether
+    delivery-health scoring is in scope.
+  - 'Seen in search only: a Gartner abstract warns that PMOs deploying AI agents without solid foundations risk poor autonomous
+    decisions at scale (GARTNER-PMO-2026).'
+  human_checkpoints:
+  - Project manager acts on each flag; the agent surfaces anomalies but does not change records (IA-CERTINIA-2025).
+  - PMO leader or engagement lead decides the intervention; the score informs and does not trigger action (CERTINIA-VEDA-2026).
+  - Periodic check of the agent's flags against actual engagement outcomes (CALBAR-GENAI-2026, pp.4-5).
+  role_evolution: PMO leaders move from periodic reviews to responding to continuous alerts, and Kantata says senior project
+    managers' pattern recognition is meant to be encoded and shared (KANTATA-SUPERAGENT-2026). Certinia says the agent 'elevates'
+    project managers by reducing administrative overhead (IA-CERTINIA-2025). No data on changed workload was found.
+  evidence_grade: B
+  sources:
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: Customer quote block (Siemens); 'Margin protection & risk management'; Plan and Manage agent lists; results
+      panel
+  - ref: IA-CERTINIA-2025
+    title: Certinia Announces Winter 2026 Release
+    publisher: Insightful Accountant
+    type: press
+    url: https://blog.insightfulaccountant.com/certinia-announces-winter-2026-release
+    date: '2025-12-10'
+    access: full
+    locator: Bullet 'Improve project health and margins with AI (PS Cloud)'; early-adopter note
+  - ref: KANTATA-AGENT-2026
+    title: Expertise Agent and Workflows (product page; undated, date shown is the read date)
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/ai/expertise-agent-and-workflows
+    date: '2026-10-19'
+    access: full
+    locator: Section 'Predictive Portfolio Health'
+  - ref: KANTATA-SUPERAGENT-2026
+    title: 'More Agents Won''t Fix Unpredictable Projects: Why We Built a Superagent Instead'
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/more-agents-wont-fix-unpredictable-projects-why-we-built-a-superagent-instead
+    date: '2026-06-16'
+    access: full
+    locator: Sections 'The Problem Isn't a Lack of AI' and 'Predicting What You Couldn't See Before'
+  - ref: DELTEK-POLARIS-2026
+    title: Deltek Polaris (PSA product page)
+    publisher: Deltek
+    type: vendor
+    url: https://www.deltek.com/en/products/polaris/
+    date: '2026-05-27'
+    access: full
+    locator: '''Results Teams Deliver with Polaris'''
+  - ref: ROCKETLANE-AGENTIC-2026
+    title: Rocketlane agentic PSA platform (Nitro) product page
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/agentic-psa
+    date: '2026-10-14'
+    access: full
+    locator: Capability lines on risks
+  - ref: TANDEM-2026
+    title: 'Agentic PSA in 2026: what execution agents actually change, and a buyer''s guide to who delivers'
+    publisher: Tandem
+    type: vendor
+    url: https://usetandem.ai/blog/agentic-psa-buyers-guide-2026
+    date: '2026-08-19'
+    access: full
+    locator: '''The four capability levels hiding under one label'''
+  - ref: KANTATA-RMI-2026
+    title: New Study Finds Resource Management at a Strategic Crossroads as AI and Outcome-Based Delivery Reshape Professional
+      Services (Resource Management Institute study commissioned by Kantata)
+    publisher: Kantata / Resource Management Institute
+    type: survey
+    url: https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services
+    date: '2026-04-09'
+    access: full
+    locator: Paragraph 2 (barriers)
+  - ref: CERTINIA-GSD-2026
+    title: New Global Study Finds AI Success Three Times More Likely at Fully Integrated Organizations (2026 Global Service
+      Dynamics Report; fieldwork by Sapio Research for Certinia)
+    publisher: Certinia
+    type: survey
+    url: https://www.certinia.com/blog/new-global-study-finds-ai-success-three-times-more-likely-at-fully-integrated-organizations/
+    date: '2026-08-25'
+    access: full
+    locator: IDC analyst quote
+  - ref: VARGAS-NEWS-2026
+    title: 'Issue #32 - Are AI Agents the Future of Project Management?'
+    publisher: Ricardo Vargas newsletter
+    type: community
+    url: https://ricardo-vargas.com/newsletter/issue-32-are-ai-agents-the-future-of-project-management/
+    date: '2026-06-29'
+    access: full
+    locator: Sections on the PMO of the future
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: pp.4-6
+  - ref: EU-AIACT-ANNEX3-2024
+    title: EU AI Act, Annex III (high-risk systems) and Article 113 as displayed with amended dates (unofficial reproduction
+      by the Future of Life Institute)
+    publisher: European Union / artificialintelligenceact.eu
+    type: regulator
+    url: https://artificialintelligenceact.eu/annex/3/
+    date: '2024-07-12'
+    access: full
+    locator: Annex III, point 4(b)
+  - ref: EC-AIACT-2026
+    title: AI Act (Regulatory framework for AI)
+    publisher: European Commission
+    type: regulator
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    date: 2026-10
+    access: full
+    locator: Timeline after the AI Omnibus
+  - ref: GARTNER-PMO-2026
+    title: Gartner Insights abstracts on PMOs and AI agents (documents 8504777 and 8153030)
+    publisher: Gartner
+    type: vendor
+    url: https://www.gartner.com/en/documents/8504777
+    date: '2026'
+    access: search-only
+    locator: Search summary only
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: an in-house services organisation (Siemens Digital Industries customer success) and PSA vendor descriptions.
+    Merged from practice-07, discourse-02, discourse-03 and governance-01. Grade B rests on one Siemens sentence that does
+    not say what is in production or what changed; the page does not say whether ''Project Agent'' is the Project Assistant
+    or the PMO Quality agent. Maturity is set to piloting, the more conservative of the inputs (practice said in-production;
+    discourse piloting, because Certinia''s December 2025 release offered the Project Assistant through an early-adopter
+    programme). Certinia''s Siemens customer story reports platform results, not agent results. Practitioners'' idea of
+    predictive dependency monitoring is entry 10; scope scans are entry 06.'
+- id: professional-services-delivery-management-06
+  title: Scope-drift detection against the SOW, with prompts to raise a change order
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - review-assurance
+  - client-interaction
+  - data-reporting
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: announced
+  problem: Scope expands through chat messages, hallway asks and emails that start 'quick question'; change orders are often
+    written after the extra work is done, and the in-scope call is subjective (EDNA-SCOPE-2026). One project-management
+    vendor names unrecovered scope creep as one of four leak points in delivery margin (TEAMWORK-2026).
+  solution: 'An agent holds the SOW, plan and deliverable list, reads client requests as they arrive and compares them with
+    agreed scope: clear in-scope requests pass, clearly out-of-scope ones notify the project manager, and ambiguous ones
+    are surfaced with context for a person; it also tracks cumulative drift and alerts the engagement lead when margin is
+    at risk. A vendor guide describes this (EDNA-SCOPE-2026). Certinia''s PMO Quality agent scans project scope on a regular
+    basis, and its margin-protection capability runs automated scope scans (CERTINIA-VEDA-2026; CERTINIA-MOONNOX-2026).
+    Oracle mentions AI-driven change management; the page does not say whether this covers client change requests (ORACLE-PPM-2026).
+    A competing vendor suggests testing products by introducing a scope change agreed by email and watching which system
+    notices (TANDEM-2026).'
+  outcomes:
+  - lever: cost
+    description: Illustrative scenario in a vendor guide, not a measured result.
+    figure: USD 120,000 project scoped at 400 hours that ran to 520 hours, described as USD 36,000 of margin given back
+    measures: The vendor's worked example of one hypothetical project; no firm, sample or period.
+    provenance: vendor-published
+    source_ref: EDNA-SCOPE-2026
+  prerequisites:
+  - A structured SOW and deliverable list the agent can compare against (EDNA-SCOPE-2026).
+  - Permitted read access to client-facing channels; client confidentiality terms must allow it (EINF-2026, Table 6 p.14).
+  - 'A firm view of what counts as in scope: the guide says partners interpret SOW wording differently (EDNA-SCOPE-2026).'
+  risks_and_guardrails:
+  - No false-positive or missed-scope rate is published anywhere. False flags could create client friction; misses leave
+    leakage unaddressed.
+  - Scope judgment is subjective, and ambiguous cases go to a person (EDNA-SCOPE-2026). The guide claims the agent removes
+    the trade-off manual change-control boards make between margin protection and client responsiveness, with no evidence
+    (EDNA-SCOPE-2026).
+  - Raising a change order is a commercial and relationship decision for a person.
+  human_checkpoints:
+  - Project manager makes the final call on every flagged request (EDNA-SCOPE-2026).
+  - Engagement lead decides whether to open a scope conversation with the client, re-resource or push back (EDNA-SCOPE-2026).
+  role_evolution: The guide says project managers keep the decision but make it earlier and with fuller information; no
+    data (EDNA-SCOPE-2026).
+  evidence_grade: C
+  sources:
+  - ref: EDNA-SCOPE-2026
+    title: How to Reduce Consulting Project Scope Creep with AI (undated; date shown is the read date)
+    publisher: Enterprise DNA
+    type: vendor
+    url: https://enterprisedna.co/resources/guides/consulting-reduce-scope-creep
+    date: '2026-10-19'
+    access: full
+    locator: Intro; 'What AI Monitoring Looks Like in Practice'; 'Automated Alerts That Protect Margin'
+  - ref: TEAMWORK-2026
+    title: 'Margin erosion in professional services: how to fix it'
+    publisher: Teamwork.com
+    type: vendor
+    url: https://www.teamwork.com/blog/margin-erosion-professional-services/
+    date: '2026-09-24'
+    access: full
+    locator: Summary bullets ('four leak points')
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: 'Plan column: PMO Quality Agent; ''Margin protection & risk management'''
+  - ref: CERTINIA-MOONNOX-2026
+    title: Certinia Acquires Moonnox to Power AI-Native Services Delivery
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-acquires-moonnox-to-power-ai-native-services-delivery/
+    date: '2026-07-21'
+    access: full
+    locator: Capability 'Margin Protection & Risk Management'
+  - ref: ORACLE-PPM-2026
+    title: Oracle Fusion Cloud Project Management (product page)
+    publisher: Oracle
+    type: vendor
+    url: https://www.oracle.com/erp/project-management/
+    date: '2026-10-19'
+    access: full
+    locator: Section on embedded AI and change management
+  - ref: TANDEM-2026
+    title: 'Agentic PSA in 2026: what execution agents actually change, and a buyer''s guide to who delivers'
+    publisher: Tandem
+    type: vendor
+    url: https://usetandem.ai/blog/agentic-psa-buyers-guide-2026
+    date: '2026-08-19'
+    access: full
+    locator: '''Running the evaluation'', step 3 ''Break something on purpose'''
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Table 6 p.14; section 4.4.4 p.11
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: consulting (vendor guides). Merged from practice-08 and discourse-05, with the scope-scan part of governance-01.
+    The weakest-evidenced part of the module: the guide cites ''one advisory firm in our network'' without a name, and searches
+    for named scope-creep detection deployments returned vendor pages. Finnish interviewees wanted deviation alerts but
+    had not used them (EINF-2026, section 4.4.4 p.11). Change scope is step: no source describes a redesigned change-control
+    flow in use (discourse rated it process).'
+- id: professional-services-delivery-management-07
+  title: Engagement margin, budget burn and forecast monitoring with alerts on overruns, unbilled time and missing timesheets
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - coordination-scheduling
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: process
+  runtime_class: background-agent
+  maturity: announced
+  problem: Margin leaks during delivery (underbids, unrecovered scope, wrong-rate staffing, unlogged time), but leadership
+    sees it in a report after month-end; Teamwork calls this the 'erosion gap' (TEAMWORK-2026). Matter budgets and plans
+    are built by hand and overruns are seen late, which leads to write-offs (BIGHAND-MATTERPRICING-2026). In SPI's 2026
+    benchmark of 500+ firms, billable utilization was 66.4% in 2025, on-time delivery 73.8% and project overrun 10.7% (DELTEK-SPI-2026).
+  solution: Agents watch actuals against plan and flag exceptions early. Rocketlane describes agents that hunt for missing
+    timesheets, un-invoiced hours and budget overruns before they become margin surprises (ROCKETLANE-AGENTIC-2026). Certinia's
+    Project Assistant digests financials, risks and timeline variances (CERTINIA-VEDA-2026); Kantata describes finding at-risk
+    projects before margins erode (ERPTODAY-KANTATA-2026); Deltek claims better forecast accuracy from connecting people,
+    projects and financials (DELTEK-POLARIS-2026). For law firms, BigHand Matter Pricing is marketed with near-real-time
+    actual-versus-budget monitoring, AI analysis of raw time entries and automated overrun alerts, and Planning Blox lists
+    AI-assisted plan and budget generation with alerts (BIGHAND-MATTERPRICING-2026; LTH-PLANNINGBLOX-2026).
+  outcomes:
+  - lever: quality
+    description: Deltek attributes better forecast accuracy to connecting people, projects and financials in one application;
+      the claim is about integration, not AI.
+    figure: 20% improvement in forecast accuracy
+    measures: Deltek's wording; unnamed firms, no baseline or sample.
+    provenance: vendor-published
+    source_ref: DELTEK-POLARIS-2026
+  - lever: quality
+    description: In a Certinia-commissioned survey, fully integrated organisations report higher forecast confidence than
+      partially aligned ones.
+    figure: 78% vs 38% report high forecast confidence
+    measures: Share of each alignment group reporting high confidence in resource, demand and revenue forecasts; 1,000 leaders,
+      June 2026, Sapio Research. Self-assessed confidence, not forecast error; 75% of fully siloed organisations also report
+      high confidence.
+    provenance: vendor-published
+    source_ref: CERTINIA-GSD-2026
+  - lever: risk
+    description: The baseline these tools address, across surveyed firms (not an AI result).
+    figure: project overrun 10.7% in 2025 (11.3% in 2024); on-time delivery 73.8%; project margin 37.7%
+    measures: SPI Research 2026 Professional Services Maturity Benchmark, 500+ firms; SPI treats overrun above 10% as damaging
+      to client relationships.
+    provenance: vendor-published
+    source_ref: DELTEK-SPI-2026
+  - lever: risk
+    description: Self-reported budget misses in a vendor-sponsored survey.
+    figure: 54% say at least 10% of their projects miss budget goals
+    measures: Share of 200 professional-services leaders (Censuswide survey for Kantata).
+    provenance: vendor-published
+    source_ref: KANTATA-SOPSI-2026
+  prerequisites:
+  - Timesheet, billing and plan data in one system, captured promptly; Rocketlane and Certinia both position unified data
+    as the base.
+  - 'Integrated systems: SPI reports firms on a project-based ERP had faster revenue growth and higher EBITDA (DELTEK-SPI-2026).'
+  - For law firms, integration with practice-management, time and billing systems (BIGHAND-MATTERPRICING-2026; LTH-PLANNINGBLOX-2026).
+  risks_and_guardrails:
+  - Forecast agents inherit data problems; 29% of Deltek's government-contractor IT and security respondents worry about
+    inaccurate forecasts (DELTEK-CLARITY-2026).
+  - Leaders rate their forecasting confidence 24 points higher than practitioners do, so confidence is a weak proxy for
+    accuracy (CERTINIA-GSD-2026).
+  - SPI links deeper AI use with growth and on-time delivery but publishes no figure for the link in the article, and it
+    is a survey association (DELTEK-SPI-2026).
+  - Teamwork says AI compresses billable hours faster than it cuts cost, which widens the erosion problem (TEAMWORK-2026).
+  - Neither law-firm listing gives evidence on forecast accuracy or alert precision.
+  human_checkpoints:
+  - Project or finance lead acts on each alert; invoicing decisions stay with people.
+  - 'Delivery leader decides the intervention: re-scope, re-staff or change order (CERTINIA-VEDA-2026).'
+  - Lawyer and pricing professional agree the budget with the client and respond to alerts.
+  role_evolution: Project managers receive exception lists instead of reconciling actuals by hand. Pricing professionals
+    and legal project managers get first-draft plans and can query matter data in natural language (LTH-PLANNINGBLOX-2026).
+  evidence_grade: C
+  sources:
+  - ref: TEAMWORK-2026
+    title: 'Margin erosion in professional services: how to fix it'
+    publisher: Teamwork.com
+    type: vendor
+    url: https://www.teamwork.com/blog/margin-erosion-professional-services/
+    date: '2026-09-24'
+    access: full
+    locator: Summary bullets; 'The margin erosion gap'
+  - ref: BIGHAND-MATTERPRICING-2026
+    title: Matter Pricing by BigHand (marketplace listing)
+    publisher: BigHand / SoftwareOne Marketplace
+    type: vendor
+    url: https://platform.softwareone.com/product/matter-pricing/PCP-7252-7893
+    date: '2026-10-19'
+    access: full
+    locator: Product description and feature list
+  - ref: LTH-PLANNINGBLOX-2026
+    title: Planning Blox vendor profile
+    publisher: Legaltech Hub
+    type: vendor
+    url: https://www.legaltechnologyhub.com/vendors/planning-blox/
+    date: '2026-10-19'
+    access: full
+    locator: Entries 'AI-Enabled Plan and Budget Development' and 'Agentic AI for Matter Data Requests'
+  - ref: DELTEK-SPI-2026
+    title: '2026 PSO Benchmarks: What We Learned and What''s Next from the SPI Maturity Benchmark Report'
+    publisher: Deltek (SPI Research data)
+    type: survey
+    url: https://www.deltek.com/resources/articles/professional-services-benchmarks/
+    date: '2026-07-30'
+    access: full
+    locator: Sections 2, 4, 5 and 6 of 'Zooming Out'
+  - ref: ROCKETLANE-AGENTIC-2026
+    title: Rocketlane agentic PSA platform (Nitro) product page
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/agentic-psa
+    date: '2026-10-14'
+    access: full
+    locator: Back-office operations capability text
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: 'Manage column: Project Assistant; ''See the business as it actually is'''
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Paragraph 'Kantata is positioning Expertise Agent...'
+  - ref: DELTEK-POLARIS-2026
+    title: Deltek Polaris (PSA product page)
+    publisher: Deltek
+    type: vendor
+    url: https://www.deltek.com/en/products/polaris/
+    date: '2026-05-27'
+    access: full
+    locator: '''Results Teams Deliver with Polaris'''
+  - ref: CERTINIA-GSD-2026
+    title: New Global Study Finds AI Success Three Times More Likely at Fully Integrated Organizations (2026 Global Service
+      Dynamics Report; fieldwork by Sapio Research for Certinia)
+    publisher: Certinia
+    type: survey
+    url: https://www.certinia.com/blog/new-global-study-finds-ai-success-three-times-more-likely-at-fully-integrated-organizations/
+    date: '2026-08-25'
+    access: full
+    locator: Findings paragraphs on forecasting confidence
+  - ref: KANTATA-SOPSI-2026
+    title: Kantata Survey Reveals that 87% of Professional Services Teams Plan to Manage AI Agents as Part of Their Workforce
+    publisher: Kantata (survey by Censuswide, 200 leaders)
+    type: survey
+    url: https://www.kantata.com/blog/article/kantata-survey-reveals-that-87-of-professional-services-teams-plan-to-manage-ai-agents-as-part-of-their-workforce
+    date: '2026-01-08'
+    access: full
+    locator: Paragraph beginning 'Those gains are becoming increasingly critical'
+  - ref: DELTEK-CLARITY-2026
+    title: The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures
+      for Project-Based Businesses
+    publisher: Deltek
+    type: survey
+    url: https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/
+    date: '2026-05-12'
+    access: full
+    locator: Government-contracting report key findings
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: consulting and implementation firms (PSA vendors), law firms (BigHand, Planning Blox listings; no
+    firm named). Merged from practice-11, discourse-06 and practice-10. Law-firm budget alerts overlap professional-services-scoping-pricing-08
+    (Ayora; BigHand survey: 23% of firms actively monitor budgets throughout a matter), which holds budget setting and re-scoping;
+    this entry holds in-flight monitoring. Related: assurance-planning-risk-assessment-22 (budget planning in an audit resourcing
+    tool). Teamwork''s 35%-to-18% margin example is illustrative. SPI''s 27.1% of projects using GenAI in 2025 (benchmark)
+    and 23.1% (AI study) come from different studies and should not be combined. Time capture and invoicing are billing-collections.'
+- id: professional-services-delivery-management-08
+  title: Agent project manager that keeps the plan current and chases tasks as milestones move
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: announced
+  problem: Plans go stale when milestones slip, and a project manager must reconcile task, calendar and time data by hand.
+  solution: Certinia lists a Project Manager Agent that keeps teams organised, on schedule and driving forward (CERTINIA-VEDA-2026).
+    Kantata says project plans update automatically when milestones shift and that timesheet compliance can be checked against
+    calendars (KANTATA-SUPERAGENT-2026). Rocketlane says plans stay current, updates are sent automatically, and agents
+    do the heavy work while the team approves and intervenes when needed (ROCKETLANE-AGENTIC-2026). Planview announced Agent
+    Resource Management, with project-manager and backlog agents, stating availability from Fall 2026 with early access
+    (SDTIMES-PLANVIEW-2026).
+  outcomes:
+  - lever: capacity
+    description: Certinia's aggregate claim about admin time recovered; no basis is given.
+    figure: about 50% of project time historically lost to admin recovered
+    measures: Vendor aggregate in the results panel; the denominator (project time) and method are not stated.
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  - lever: capacity
+    description: Certinia's product chief says its agents could save a project manager time each month.
+    figure: up to 20 hours a month per project manager
+    measures: Interview statement of potential, not a measured customer result.
+    provenance: vendor-published
+    source_ref: SILICONANGLE-CERTINIA-2026
+  prerequisites:
+  - Integrated task, calendar and project data.
+  - Written rules for which agent actions run without approval (ERPTODAY-KANTATA-2026).
+  risks_and_guardrails:
+  - A 20-month case study of ChatGPT acting as sole project manager for six projects at an unnamed European software firm
+    reports deadlines were largely met, but ambiguous or domain-specific requests were misread, producing misprioritised
+    tasks or scheduling errors; no figures are given (IPM-CHATGPT-PM-2026, section 4).
+  - Multi-step agent reliability falls over repeated runs; one vendor cites a benchmark of about 61% single-attempt success
+    falling to about 25% consistency by the eighth trial (TANDEM-2026, citing tau-bench; not opened).
+  - Certinia says models are probabilistic and need a reasoning layer to apply policies deterministically (SILICONANGLE-CERTINIA-2026).
+  human_checkpoints:
+  - Team approves and intervenes on agent actions (ROCKETLANE-AGENTIC-2026).
+  role_evolution: Kantata argues the project manager's role shifts toward amplified expertise while routine reconciliation
+    moves to the system (KANTATA-SUPERAGENT-2026).
+  evidence_grade: C
+  sources:
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: 'Deliver column: Project Manager Agent; results panel'
+  - ref: KANTATA-SUPERAGENT-2026
+    title: 'More Agents Won''t Fix Unpredictable Projects: Why We Built a Superagent Instead'
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/more-agents-wont-fix-unpredictable-projects-why-we-built-a-superagent-instead
+    date: '2026-06-16'
+    access: full
+    locator: Section 'Predicting What You Couldn't See Before'
+  - ref: ROCKETLANE-AGENTIC-2026
+    title: Rocketlane agentic PSA platform (Nitro) product page
+    publisher: Rocketlane
+    type: vendor
+    url: https://www.rocketlane.com/agentic-psa
+    date: '2026-10-14'
+    access: full
+    locator: Platform capability text
+  - ref: SDTIMES-PLANVIEW-2026
+    title: Planview Launches Agent Resource Management, Redefining Portfolio Resource Management for the AI Era
+    publisher: SD Times
+    type: press
+    url: https://sdtimes.com/agentic-ai/planview-launches-agent-resource-management-redefining-portfolio-resource-management-for-the-ai-era/
+    date: '2026-05-04'
+    access: full
+    locator: Announcement and availability paragraphs
+  - ref: SILICONANGLE-CERTINIA-2026
+    title: Certinia powers professional services with AI (interview with Certinia's chief product and technology officer)
+    publisher: SiliconANGLE
+    type: press
+    url: https://siliconangle.com/2026/04/16/professional-services-ai-certinia/
+    date: '2026-04-16'
+    access: full
+    locator: Interview passages on agent time savings and determinism
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Section 'Agentic PSA Tests New Operating Model'
+  - ref: IPM-CHATGPT-PM-2026
+    title: Can ChatGPT Replace a Human Project Manager? (case study of an unnamed software firm)
+    publisher: Institute of Project Management
+    type: press
+    url: https://instituteprojectmanagement.com/blog/can-chatgpt-replace-human-pm/
+    date: '2026-02-11'
+    access: full
+    locator: Sections 3.2, 4.1 and 4.2
+  - ref: TANDEM-2026
+    title: 'Agentic PSA in 2026: what execution agents actually change, and a buyer''s guide to who delivers'
+    publisher: Tandem
+    type: vendor
+    url: https://usetandem.ai/blog/agentic-psa-buyers-guide-2026
+    date: '2026-08-19'
+    access: full
+    locator: '''What execution agents actually change, and what they don''t'''
+  last_reviewed: '2026-10-19'
+  notes: Vendor descriptions only; no named customer. From practice-14; Planview and the SiliconANGLE interview were routed
+    in from staffing-resourcing and billing-collections. The IPM article is by a training provider about an unnamed firm
+    and is cited as a limit signal, not deployment evidence.
+- id: professional-services-delivery-management-09
+  title: 'Idea: automated stakeholder reminders, calendar coordination and project-tool setup for project managers'
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  pattern: other
+  ladder: automate
+  change_scope: step
+  runtime_class: background-agent
+  maturity: emerging
+  problem: Project managers lose time chasing stakeholders for time sheets, agendas and deadlines, scheduling across time
+    zones, and configuring project tools.
+  solution: Idea. In an interview study of 12 Finnish IT project-management consultants, calendar and meeting management
+    was the capability most often wanted, followed by automated reminders to steering groups and partners and automated
+    tool configuration such as Jira setup (EINF-2026). A project-management commentator lists following up overdue tasks
+    among the work agents could take on (VARGAS-NEWS-2026).
+  outcomes:
+  - lever: capacity
+    description: none published
+    figure: none
+    measures: not applicable
+    provenance: independent
+    source_ref: EINF-2026
+  prerequisites:
+  - Calendar, task and time-sheet systems that an assistant is permitted to read and act on (EINF-2026, section 4.4.1 p.10).
+  risks_and_guardrails:
+  - Interviewees want control kept with the project manager and only controllable, verifiable tasks given to AI (EINF-2026,
+    section 5.5 p.15).
+  - A message sent to a client with no human review is a one-way door (TRI-AGENTIC-2026).
+  human_checkpoints:
+  - Not specified in the sources beyond human control of assistant tasks (EINF-2026, section 5.5 p.15).
+  role_evolution: No change described beyond relief from repetitive follow-ups.
+  evidence_grade: D
+  sources:
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Table 5 p.9; section 4.4.1 'Administrative automation' p.10; section 5.5 p.15
+  - ref: VARGAS-NEWS-2026
+    title: 'Issue #32 - Are AI Agents the Future of Project Management?'
+    publisher: Ricardo Vargas newsletter
+    type: community
+    url: https://ricardo-vargas.com/newsletter/issue-32-are-ai-agents-the-future-of-project-management/
+    date: '2026-06-29'
+    access: full
+    locator: Paragraph on following up overdue tasks
+  - ref: TRI-AGENTIC-2026
+    title: 'ILTACON 2026: Who''s leading the flock? Balancing agentic AI automation and human oversight'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/iltacon-2026-agentic-ai-automation
+    date: '2026-09-14'
+    access: full
+    locator: Section 'Reversibility and the one- or two-way door test'
+  last_reviewed: '2026-10-19'
+  notes: 'Idea (grade D): wanted by practitioners in an academic interview study; no public deployment found for this step.
+    From discourse-09. Pattern ''other'': scheduled reminders and calendar actions by an assistant. The only automate-rung
+    entry in this module.'
+- id: professional-services-delivery-management-10
+  title: 'Idea: predictive monitoring of dependencies, deviations and risks from historical project data'
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - coordination-scheduling
+  pattern: monitor-diagnose-act
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: emerging
+  problem: External project managers find dependency management and early-warning signals hard to keep up by hand; progress
+    is analysed against baselines only when someone compiles the data (EINF-2026).
+  solution: Idea. Interviewees envisioned an assistant that watches data from several sources against baselines, detects
+    when dependencies cannot be met on schedule, proposes coordination actions and drafts risk assessments from historical
+    project data. One interviewee tested Gemini on a migration-project framework and found it identified typical risks,
+    but did not put this into practice (EINF-2026). A project-management commentator describes portfolio agents that look
+    for patterns across hundreds of projects (VARGAS-NEWS-2026).
+  outcomes:
+  - lever: risk
+    description: none published
+    figure: none
+    measures: not applicable
+    provenance: independent
+    source_ref: EINF-2026
+  prerequisites:
+  - Historical project data and consistent baselines (EINF-2026, section 4.4.4 p.11).
+  - Integration across the tools where project information lives (EINF-2026, abstract).
+  risks_and_guardrails:
+  - Interviewees say human verification stays mandatory for error detection (EINF-2026, sections 4.4.3 and 4.4.4).
+  - Multi-step agent consistency falls over repeated runs (TANDEM-2026, citing tau-bench; not opened).
+  human_checkpoints:
+  - Project manager reviews alerts and recommended actions.
+  role_evolution: Vargas argues project managers' value moves toward judgment, context and leadership as monitoring is automated
+    (VARGAS-NEWS-2026). Interviewees see agents as supportive assistants, not peer project managers (EINF-2026, section
+    5.5 p.15).
+  evidence_grade: D
+  sources:
+  - ref: EINF-2026
+    title: Realising the Role of Generative AI Among Project Management Professionals (Sainio, Kettunen, Abrahamsson)
+    publisher: e-Informatica Software Engineering Journal 20(1)
+    type: academic
+    url: https://www.e-informatyka.pl/EISEJ/papers/2026/1/4/eInformatica2026Art04.pdf
+    date: '2026-04-23'
+    access: full
+    locator: Section 4.2 'Planning and strategy' p.8; section 4.4.4 'Intelligent monitoring' p.11; section 5.5 p.15
+  - ref: VARGAS-NEWS-2026
+    title: 'Issue #32 - Are AI Agents the Future of Project Management?'
+    publisher: Ricardo Vargas newsletter
+    type: community
+    url: https://ricardo-vargas.com/newsletter/issue-32-are-ai-agents-the-future-of-project-management/
+    date: '2026-06-29'
+    access: full
+    locator: Paragraphs imagining monitoring, meeting and portfolio agents
+  - ref: TANDEM-2026
+    title: 'Agentic PSA in 2026: what execution agents actually change, and a buyer''s guide to who delivers'
+    publisher: Tandem
+    type: vendor
+    url: https://usetandem.ai/blog/agentic-psa-buyers-guide-2026
+    date: '2026-08-19'
+    access: full
+    locator: '''What execution agents actually change, and what they don''t'''
+  last_reviewed: '2026-10-19'
+  notes: 'Idea (grade D), from discourse-10. Differs from entry 05 (vendor health scoring in use): this is schedule and
+    dependency analysis with proposed actions, as practitioners imagine it.'
+- id: professional-services-delivery-management-11
+  title: 'Matter run from a reusable template: tasks routed to agents and people, named review gates, and status visible
+    without reconstruction'
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  - review-assurance
+  - client-interaction
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: For recurring work such as an M&A transaction, the process is reconstructed for each matter from a checklist,
+    a previous deal or someone's memory; lawyers carry context between steps and track progress themselves, and partners
+    ask associates to reconstruct status from email (HARVEY-ORCH-2026).
+  solution: 'Harvey''s Legal Work Orchestration, announced 2026-10-15, connects a matter''s phases, tasks, people and review
+    points. A reusable template pre-loads phases, tasks, playbooks, agents, collaborators and review gates, and each task
+    carries its scope, inputs and reviewer. When an agent finishes a task (Harvey''s example is a change-of-control consent
+    matrix), the designated partner is notified and approval starts the next step. Lawyers can close or start tasks by replying
+    to email, partners see progress without asking an associate, and a task can go to another lawyer or be shared with the
+    client; the post does not describe how client access is limited. Tasks, comments and notifications are rolling out;
+    templates are in early access. Harvey says the structure fits any matter run more than once, with a quarterly compliance
+    review as a second example (HARVEY-ORCH-2026). An ILTA article proposes a chain of agents from staffing to billing as
+    a concept (ILTA-RISE-2025); Legalweek 2026 listed an in-house session titled ''Agentic Ops: Building a Self-Orchestrating
+    Legal Department'' (EDRM-LEGALWEEK-2026).'
+  outcomes:
+  - lever: capacity
+    description: Harvey's expectation, not a measured result.
+    figure: expects agents to take on an additional 20% of workflow steps within six months, and that share to triple within
+      a year
+    measures: Share of workflow steps agents execute versus steps lawyers prompt; no baseline share; the sentence is ambiguous
+      about whether 'that share' means the additional 20%.
+    provenance: vendor-published
+    source_ref: HARVEY-ORCH-2026
+  prerequisites:
+  - 'Innovation or knowledge teams define the template once: phases, playbooks, review gates (HARVEY-ORCH-2026).'
+  - A firm policy on permissible AI use, training for supervisors and subordinates, and monitoring (ABA-OP512-2024, Part
+    II.E pp.10-11).
+  - Governed data, documented processes and clear integrations; agents are less forgiving of undocumented workflows (TRI-PREMORTEM-2026).
+  - 'Per-client access controls: agentic tools must not transmit client data externally without safeguards and human review
+    (CALBAR-GENAI-2026, p.6).'
+  risks_and_guardrails:
+  - Harvey says agent work stays transparent and auditable and that lawyers still prompt the majority of steps today; no
+    audit, error or gate-skipping data are published (HARVEY-ORCH-2026).
+  - 'Panel advice: allow use cases that are reversible, require an audit trail and decision tracing, and do not let individual
+    lawyers create new agents on their own (TRI-AGENTIC-2026).'
+  - A fictional premortem shows review turning into 'theater' when reviewers approve workflows they cannot parse (TRI-PREMORTEM-2026).
+  - Supervision must scale with autonomy; no document may go to a court without lawyer review, and AI must not file on the
+    lawyer's behalf (CALBAR-GENAI-2026, pp.3, 9).
+  - Sophisticated tracking and compliance tools are in use at fewer than one in five law firms (ILTA-TECHSURVEY-2026, p.9).
+  - Information from one matter may reach people who should not see it (ABA-OP512-2024, Part II.B p.7).
+  human_checkpoints:
+  - Designated reviewer approves each gated task before the next step begins (HARVEY-ORCH-2026).
+  - Engagement lead decides which tasks and outputs are visible to the client.
+  role_evolution: Harvey says lawyers will focus on directing the matter, reviewing consequential outputs and exercising
+    judgment, with innovation and knowledge teams authoring templates (HARVEY-ORCH-2026). An Artificial Lawyer guest post
+    forecasts that agents able to orchestrate workflow erode the mid-level associate role, which it calls the legal world's
+    project managers (AL-LADDER-2026). California's guidance says professional judgment cannot be delegated to AI (CALBAR-GENAI-2026,
+    p.4).
+  evidence_grade: C
+  sources:
+  - ref: HARVEY-ORCH-2026
+    title: Making Harvey the Orchestration Layer for Legal Work
+    publisher: Harvey
+    type: vendor
+    url: https://www.harvey.ai/blog/legal-work-orchestration
+    date: '2026-10-15'
+    access: full
+    locator: Sections 'How Legal Orchestration Works', 'Give Every Task the Context it Needs', 'Keep Reviews and Next Steps
+      Moving', 'The Future of Legal Work Orchestration'
+  - ref: ILTA-RISE-2025
+    title: The Rise of AI Agents in Legal
+    publisher: ILTA (Pulse, ILTACON 2025)
+    type: professional-body
+    url: https://iltanet.org/resources/publications/pulse/iltacon/2025/rise-ai
+    date: '2025'
+    access: full
+    locator: Paragraphs 4-5
+  - ref: EDRM-LEGALWEEK-2026
+    title: Legalweek 2026 select educational sessions preview
+    publisher: EDRM
+    type: conference
+    url: https://edrm.net/2026/03/legalweek-2026-select-educational-sessions-preview/
+    date: '2026-03-06'
+    access: full
+    locator: Session title list (preview text only)
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.B p.7; Part II.E pp.10-11
+  - ref: TRI-PREMORTEM-2026
+    title: 'Premortem: Your 2028 agentic AI pilot program failed'
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/spotlight/premortem-your-2028-agentic-ai-pilot-program-failed
+    date: '2026-02-18'
+    access: full
+    locator: '''Premortem No. 1: The eager overreacher'''
+  - ref: TRI-AGENTIC-2026
+    title: 'ILTACON 2026: Who''s leading the flock? Balancing agentic AI automation and human oversight'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/iltacon-2026-agentic-ai-automation
+    date: '2026-09-14'
+    access: full
+    locator: Section 'Reversibility and the one- or two-way door test'
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: pp.3-4, 6, 9
+  - ref: ILTA-TECHSURVEY-2026
+    title: ILTA Technology Survey 2026 Executive Summary
+    publisher: International Legal Technology Association
+    type: survey
+    url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
+    date: 2026-06
+    access: full
+    locator: p.9, 'Curtain Call for the Data Center'
+  - ref: AL-LADDER-2026
+    title: 'Broken Ladder: Are Lawyers Sleepwalking into a Competence Crisis? (guest post, James Tuke, AI Futures Forum)'
+    publisher: Artificial Lawyer
+    type: press
+    url: https://www.artificiallawyer.com/2026/01/30/broken-ladder-are-lawyers-sleepwalking-into-a-competence-crisis/
+    date: '2026-01-30'
+    access: full
+    locator: Sections 'The Competence Trap' and 'Age of the Digital Worker'
+  last_reviewed: '2026-10-19'
+  notes: 'Law firms and in-house legal teams; no customer named in the launch post. Merged from practice-09, discourse-07,
+    governance-03 and governance-13. This entry holds the coordination and status layer; the agents doing drafting and review
+    inside the template are professional-services-work-production-15 (delegate), shared client workspaces are professional-services-work-production-20,
+    and gate design belongs to quality-review. Ladder is augment because people approve every gate in the flow this entry
+    covers (practice and governance rated augment; discourse delegate). Pattern ''other'': template-driven task orchestration
+    with human review gates. The Legalweek session is the in-house counterpart; only its title was read.'
+- id: professional-services-delivery-management-12
+  title: Self-built PMO agent estate with an orchestrating agent and a human approval gate
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  - data-reporting
+  - document-production
+  pattern: monitor-diagnose-act
+  ladder: delegate
+  change_scope: process
+  runtime_class: background-agent
+  maturity: in-production
+  problem: 'Portfolio reporting is described as one of the last manual processes in many delivery organisations: assembled
+    by hand, often late, and open to challenge (ATLASSIAN-TEAM26-AC-2026).'
+  solution: 'Automation Consultants, an IT consultancy, built a 12-agent estate across Jira, Confluence, Loom and Tempo,
+    with Atlassian Rovo at the centre and Anthropic''s Claude as the reasoning layer. The agents cover knowledge capture,
+    risk and issue management, budget tracking, status reporting, lessons learnt, resourcing, project provisioning and proposal
+    drafting. A single orchestrating ''super agent'' screens every finding, and a human approval gate sits before anything
+    reaches Jira, Confluence or a client inbox; agent memory is kept in state files so the set-up can be rebuilt or moved
+    between models (ATLASSIAN-TEAM26-AC-2026). PSA vendors sell agent builders for firms to do the same: Productive with
+    per-agent permissions, schedules and approval before output goes out (PRODUCTIVE-AGENTS-2026), and Kantata''s Agent
+    Studio, launched 2026-10-07, in which practice leads and PMO owners describe an agent''s work in plain language, with
+    validation checks before publishing (ITBRIEF-KANTATA-2026; KANTATA-AGENT-2026).'
+  outcomes:
+  - lever: capacity
+    description: The presenting firm reports delivery capacity released and throughput tripled across 11 concurrent client
+      engagements.
+    figure: roughly 25% of delivery capacity released; throughput tripled
+    measures: 'Session abstract wording: ''releasing roughly 25% of delivery capacity, and tripling throughput without adding
+      headcount''. Basis, baseline and period are not stated; the talk itself was not reviewed.'
+    provenance: self-reported
+    source_ref: ATLASSIAN-TEAM26-AC-2026
+  prerequisites:
+  - Delivery data already in the team's work tools (Jira, Confluence, Loom and Tempo in this case) (ATLASSIAN-TEAM26-AC-2026).
+  - An orchestration layer and a memory design that lets agents be retired or rebuilt (ATLASSIAN-TEAM26-AC-2026).
+  - Defined access for each agent to read and change parts of the platform (PRODUCTIVE-AGENTS-2026).
+  - Delivery standards written down so an agent can follow them (ITBRIEF-KANTATA-2026).
+  risks_and_guardrails:
+  - Sponsored session; the capacity and throughput figures are the presenter's own and no independent check was found. The
+    session lists which PMO disciplines are safest to automate first as a topic; the answer is not in the abstract (ATLASSIAN-TEAM26-AC-2026).
+  - Kantata's chief executive warns that fast agent answers without full business context risk 'fast, mediocre decisions'
+    (KANTATA-SUPERAGENT-2026).
+  - Governance needs to say which agent actions are autonomous, which need approval, how AI work is costed and how decisions
+    are audited (ERPTODAY-KANTATA-2026).
+  human_checkpoints:
+  - Human approval gate before output reaches Jira, Confluence or a client inbox (ATLASSIAN-TEAM26-AC-2026).
+  - Orchestrating agent screens findings for severity and scope before they reach the gate (ATLASSIAN-TEAM26-AC-2026).
+  - A person triggers each Agent Studio agent, or an automated workflow does (ITBRIEF-KANTATA-2026).
+  role_evolution: The PMO moves from compiling reports to designing, governing and approving an agent estate; the presenter
+    is a senior project manager at the consultancy (ATLASSIAN-TEAM26-AC-2026).
+  evidence_grade: B
+  sources:
+  - ref: ATLASSIAN-TEAM26-AC-2026
+    title: 'The agentic PMO: Scaling delivery with Rovo and Claude (sponsored session, Hassan Khadra, Automation Consultants;
+      Team ''26 Europe, Amsterdam)'
+    publisher: Atlassian
+    type: conference
+    url: https://events.atlassian.com/teameurope/session/4417894/the-agentic-pmo-scaling-delivery-with-rovo-and-claude
+    date: '2026-10-08'
+    access: full
+    locator: Session abstract, paragraphs 1-4
+  - ref: PRODUCTIVE-AGENTS-2026
+    title: AI Agents for Project Management & Operations (product page)
+    publisher: Productive
+    type: vendor
+    url: https://productive.io/agents
+    date: '2026-10-19'
+    access: full
+    locator: Agent builder, permissions and approval sections
+  - ref: ITBRIEF-KANTATA-2026
+    title: Kantata launches Agent Studio for professional services
+    publisher: IT Brief UK
+    type: press
+    url: https://itbrief.co.uk/story/kantata-launches-agent-studio-for-professional-services-6f2e3b71-a9d6-4b5d-9ddb-8be3ee77fe5a
+    date: '2026-10-07'
+    access: full
+    locator: Paragraphs on Agent Studio and Basware
+  - ref: KANTATA-AGENT-2026
+    title: Expertise Agent and Workflows (product page; undated, date shown is the read date)
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/ai/expertise-agent-and-workflows
+    date: '2026-10-19'
+    access: full
+    locator: Sections 'Agent Studio' and 'Set it in Motion'
+  - ref: KANTATA-SUPERAGENT-2026
+    title: 'More Agents Won''t Fix Unpredictable Projects: Why We Built a Superagent Instead'
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/more-agents-wont-fix-unpredictable-projects-why-we-built-a-superagent-instead
+    date: '2026-06-16'
+    access: full
+    locator: Section 'Fast Doesn't Always Mean Accurate'
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Section 'Agentic PSA Tests New Operating Model'
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: IT consultancy (Automation Consultants). From practice-02, with Kantata''s Agent Studio routed in from
+    billing-collections. Session held 2026-10-08; only the abstract was read. The best-documented named build in this module,
+    but sponsored and self-reported; B, not A, because the figures are rough and unaudited. Basware is named as an Agent
+    Studio user for administration; the quote is a statement of intent (ITBRIEF-KANTATA-2026). Agent identity and least-privilege
+    design is covered in security-ai-security-06.'
+- id: professional-services-delivery-management-13
+  title: Agents take on the repeatable tasks of implementation delivery and send routine project documentation to customers
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - software-systems
+  - document-production
+  - coordination-scheduling
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: piloting
+  problem: Implementation and services teams are asked to deliver more go-lives with the same team size, and billable utilization
+    is at a record low in SPI's benchmark (DELTEK-SPI-2026). Basware's chief customer officer described a services organisation
+    that was low-margin, slow to scope, slow to staff, and unsure whether its own software was working (KANTATA-BASWARE-2026).
+  solution: Basware, a software company whose own services organisation delivers customer implementations (in-house; SPI
+    calls such teams embedded service organisations, SPI-AI-2026), implemented Kantata's PSA, automated billing first, and
+    is expanding into an agent that helps services managers staff projects as timelines change, AI embedded across the platform
+    to take on the repetitive work standard to every implementation, and AI that generates and sends project documentation
+    to customers (KANTATA-BASWARE-2026). Rocketlane is described as offering agents that execute repeatable billable tasks
+    such as migrations, configurations, documentation and testing (TANDEM-2026); Kantata describes self-executing workflows
+    (ERPTODAY-KANTATA-2026). Trade press says consulting firms are repositioning around agents and subscription-style products
+    (MARKETSCALE-2026).
+  outcomes:
+  - lever: capacity
+    description: Rocketlane's claim for early deployments, as characterised by a competitor.
+    figure: up to 50% lower delivery effort
+    measures: Tandem's description of Rocketlane's claim, attributed to an Insight Partners piece that was not opened; 'early
+      deployments'; baseline, customers and task mix not stated.
+    provenance: vendor-published
+    source_ref: TANDEM-2026
+  prerequisites:
+  - A PSA platform already in place, with billing automated first in Basware's case (KANTATA-BASWARE-2026).
+  - Rule-heavy, repeatable task types that an agent can run end to end with approval (TANDEM-2026).
+  - Governance on which agent actions are autonomous, which need approval, how AI work is costed and how decisions are audited
+    (ERPTODAY-KANTATA-2026).
+  risks_and_guardrails:
+  - Basware's release does not say what review applies to documentation sent to customers; no quality data are given (KANTATA-BASWARE-2026).
+  - Buyers should ask what happens when the agent is wrong and who approves before an agent touches a customer environment
+    (TANDEM-2026).
+  - Per-seat pricing plus consumption credits can change total cost as agent usage grows (TANDEM-2026).
+  human_checkpoints:
+  - Human gate and audit trail for every agent action touching a customer environment (TANDEM-2026, a vendor's evaluation
+    criterion).
+  - People handle the tasks unique to each customer (KANTATA-BASWARE-2026).
+  role_evolution: Basware's chief customer officer says the aim is to scale the expertise of its people across every project,
+    with AI doing the routine work (KANTATA-BASWARE-2026). ERP Today says firms will need governance models for mixed human-and-agent
+    workforces (ERPTODAY-KANTATA-2026). Trade press reports the Big Four hiring technologists and PwC creating an engineering
+    career track, citing Business Insider (MARKETSCALE-2026, secondary).
+  evidence_grade: C
+  sources:
+  - ref: KANTATA-BASWARE-2026
+    title: Kantata takes Basware from AI Experimentation to Results
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/kantata-takes-basware-from-ai-experimentation-to-results
+    date: '2026-10-13'
+    access: full
+    locator: Sections 'From Chaos to Control', 'Where AI Meets Expertise' and 'From Efficiency to Impact'
+  - ref: SPI-AI-2026
+    title: Impact of AI on Professional Services 2026 (report landing page; report paywalled)
+    publisher: SPI Research
+    type: survey
+    url: https://spiresearch.com/reports/2026-ai-professional-services-survey/
+    date: 2026-10
+    access: full
+    locator: FAQ on who took part (PSOs and ESOs)
+  - ref: TANDEM-2026
+    title: 'Agentic PSA in 2026: what execution agents actually change, and a buyer''s guide to who delivers'
+    publisher: Tandem
+    type: vendor
+    url: https://usetandem.ai/blog/agentic-psa-buyers-guide-2026
+    date: '2026-08-19'
+    access: full
+    locator: TL;DR; 'What is an agentic PSA?'; 'What execution agents actually change, and what they don't'
+  - ref: ERPTODAY-KANTATA-2026
+    title: Kantata's Expertise Agent Targets the Professional Services Delivery Crunch
+    publisher: ERP Today
+    type: press
+    url: https://erp.today/kantata-expertise-agent-psa-ai/
+    date: '2026-06-19'
+    access: full
+    locator: Sections 'Agentic PSA Tests New Operating Model' and 'Professional Services Firms Face AI Workforce Shift'
+  - ref: MARKETSCALE-2026
+    title: Consulting is turning into agent delivery, not decks, as big firms chase 'AI-native' work
+    publisher: MarketScale
+    type: press
+    url: https://www.marketscale.com/industries/business-services/consulting-is-turning-into-agent-delivery-not-decks-as-big-firms-chase-ai-native-work.md
+    date: '2026-08-23'
+    access: full
+    locator: Sections on AI-native delivery models and 'What changes in SOWs'
+  - ref: DELTEK-SPI-2026
+    title: '2026 PSO Benchmarks: What We Learned and What''s Next from the SPI Maturity Benchmark Report'
+    publisher: Deltek (SPI Research data)
+    type: survey
+    url: https://www.deltek.com/resources/articles/professional-services-benchmarks/
+    date: '2026-07-30'
+    access: full
+    locator: Section 2 (utilization 66.4%)
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: an in-house services organisation of a software company (Basware) and implementation firms (Rocketlane
+    customers, unnamed). Merged from discourse-13 and practice-16. Graded C, not the practice angle''s B: the release describes
+    areas Basware is expanding into, not work in routine use. Basware''s customer-success result (4-5 hours a day of pre-call
+    research redeployed) is routed to client-development. Substantive work by law, audit or consulting agents belongs to
+    professional-services-work-production. Tandem sells a competing product, so its comparisons are marketing.'
+- id: professional-services-delivery-management-14
+  title: Engagement leads who plan and run advisory engagements as teams of people and AI agents
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  - expert-judgment
+  - client-interaction
+  pattern: other
+  ladder: delegate
+  change_scope: process
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: Delivery planning assumes work is divided among people; a firm that uses AI for analysis, scenario modelling
+    and documentation must decide what goes to agents and who checks it.
+  solution: Thoughtworks' postings for an Engagement Lead (Singapore) and a Principal Engagement Lead (London) call them
+    the delivery and solution leaders for 'AI-native advisory engagements'. They structure each engagement across team members,
+    AI agents and client stakeholders; design how AI is used for analysis, scenario modelling, code and workflow generation
+    and documentation; delegate to AI while keeping quality and judgment; and capture reusable delivery patterns and AI
+    workflows in a shared library (TW-JOB-8138525-2026; TW-JOB-7995201-2026).
+  outcomes:
+  - lever: capacity
+    description: No outcome published; the postings describe expectations, not results.
+    figure: none published
+    measures: Job postings state role requirements only.
+    provenance: self-reported
+    source_ref: TW-JOB-8138525-2026
+  prerequisites:
+  - Engagement leads comfortable using AI and evaluating the confidence of its output (TW-JOB-7995201-2026).
+  - A library of repeatable engagement models and AI workflows (TW-JOB-8138525-2026; TW-JOB-7995201-2026).
+  risks_and_guardrails:
+  - The Singapore posting expects leads to know when to trust AI and when not to; the London posting expects human oversight
+    to move past 'anodyne' outputs. No quality data are given (TW-JOB-8138525-2026; TW-JOB-7995201-2026).
+  - Consultants remain fully responsible for work products whether or not AI was used (ICMCI-AICODE-2026, section 2.2).
+  human_checkpoints:
+  - The engagement lead is accountable for output accuracy, relevance and readiness for decision (TW-JOB-8138525-2026).
+  role_evolution: The engagement manager role adds AI workflow design and agent supervision; postings first published 2026-07-03
+    (London) and 2026-08-19 (Singapore), both still listed on 2026-10-19 (TW-JOB-7995201-2026; TW-JOB-8138525-2026).
+  evidence_grade: B
+  sources:
+  - ref: TW-JOB-8138525-2026
+    title: Engagement Lead (Singapore) job posting
+    publisher: Thoughtworks
+    type: job-posting
+    url: https://www.thoughtworks.com/careers/jobs/8138525?gh_jid=8138525
+    date: '2026-08-19'
+    access: full
+    locator: Role description paragraphs on AI-native delivery and reusable patterns
+  - ref: TW-JOB-7995201-2026
+    title: Principal Engagement Lead (Technology Advisory), London, job posting
+    publisher: Thoughtworks
+    type: job-posting
+    url: https://www.thoughtworks.com/careers/jobs/7995201?gh_jid=7995201
+    date: '2026-07-03'
+    access: full
+    locator: Responsibilities and requirements on AI workflows and human oversight
+  - ref: ICMCI-AICODE-2026
+    title: Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0
+    publisher: International Council of Management Consulting Institutes
+    type: professional-body
+    url: https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf
+    date: 2026-05
+    access: full
+    locator: Section 2.2
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: technology consultancy (Thoughtworks). From practice-12. Grade B on a named firm''s public postings;
+    they show role design, not outcomes. ''In-production'' is inferred from the postings describing current engagements.
+    Pattern ''other'': engagement design with agents as team members. The workforce-model side (pyramid to diamond or pod)
+    is professional-services-talent-learning-20.'
+- id: professional-services-delivery-management-15
+  title: Retrospective and lessons-learned drafting at engagement close
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - document-production
+  - research-synthesis
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: Lessons from completed engagements are rarely written up in a form the next team can find; Certinia describes
+    organising lessons learned into a searchable, firm-wide knowledge base (CERTINIA-VEDA-2026).
+  solution: Certinia lists a Retrospective Drafter agent that captures learnings and outcomes from completed projects and
+    a Knowledge Base agent that organises documentation into a searchable resource (CERTINIA-VEDA-2026); its Moonnox capability
+    list includes value capture and knowledge transfer (CERTINIA-MOONNOX-2026). Automation Consultants lists lessons learnt
+    among its agents' tasks (ATLASSIAN-TEAM26-AC-2026).
+  outcomes:
+  - lever: quality
+    description: none published
+    figure: none published
+    measures: No figure for retrospective quality, reuse or time saved.
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  prerequisites:
+  - Project records, time and financial data, and communications that can be summarised without breaching confidentiality
+    (CALBAR-GENAI-2026, p.6).
+  risks_and_guardrails:
+  - Lessons drawn from one client's matter may expose confidential or privileged material when reused across matters (CALBAR-GENAI-2026,
+    p.6; ABA-OP512-2024, Part II.B p.7).
+  - For templates or testing, the Law Society advises fictional data rather than client confidential information (LAWSOC-GENAI-2026).
+  human_checkpoints:
+  - Engagement lead edits and approves the retrospective; a confidentiality check strips client-identifying detail before
+    it enters a shared knowledge base.
+  role_evolution: The project manager reviews a drafted retrospective instead of writing one. No source describes a role
+    change.
+  evidence_grade: C
+  sources:
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda AI: System of Action for Professional Services (agent catalogue and results panel)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: '''Value capture & knowledge transfer''; Manage column: Retrospective Drafter, Knowledge Base'
+  - ref: CERTINIA-MOONNOX-2026
+    title: Certinia Acquires Moonnox to Power AI-Native Services Delivery
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-acquires-moonnox-to-power-ai-native-services-delivery/
+    date: '2026-07-21'
+    access: full
+    locator: Capability 'Value Capture & Knowledge Transfer'
+  - ref: ATLASSIAN-TEAM26-AC-2026
+    title: 'The agentic PMO: Scaling delivery with Rovo and Claude (sponsored session, Hassan Khadra, Automation Consultants;
+      Team ''26 Europe, Amsterdam)'
+    publisher: Atlassian
+    type: conference
+    url: https://events.atlassian.com/teameurope/session/4417894/the-agentic-pmo-scaling-delivery-with-rovo-and-claude
+    date: '2026-10-08'
+    access: full
+    locator: Session abstract, paragraph 2
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p.6
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.B, p.7
+  - ref: LAWSOC-GENAI-2026
+    title: 'Generative AI: the essentials'
+    publisher: Law Society of England and Wales
+    type: professional-body
+    url: https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials
+    date: '2026'
+    access: full
+    locator: FAQ on using client confidential and personal data to create templates or test
+  last_reviewed: '2026-10-19'
+  notes: Vendor descriptions; no named customer result. Merged from practice-15 and governance-06. Kept here as the closeout
+    step of delivery; reuse of the captured knowledge belongs to knowledge-management.
+- id: professional-services-delivery-management-16
+  title: 'Idea: engagement economics that count AI, with agent cost and output tracked per engagement, AI spend attributed
+    to the matter, and effort checked against the fee basis'
+  archetype: professional-services
+  module: delivery-management
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - coordination-scheduling
+  pattern: other
+  ladder: assist
+  change_scope: model
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: When agents do part of the delivery, utilization and time-and-materials metrics no longer describe who did the
+    work or what it cost, and resource managers lack the readiness and outcome data to manage blended teams (KANTATA-RMI-2026).
+    Firms bought AI tools by the seat but are increasingly billed by usage across many tools and background agents nobody
+    watches, and a flat subscription cannot be traced to a client (TRI-METER-2026). When AI shortens a task, an hourly bill
+    must show actual time and a flat fee may become unreasonable (ABA-OP512-2024, Part II.F p.12).
+  solution: 'Idea. Meter AI use per matter so its cost is attributable to a client and can be budgeted, controlled and possibly
+    passed through like e-discovery charges (TRI-METER-2026). Track agents as team members with their own margin: Basware''s
+    chief customer officer and Kantata''s chief executive were scheduled to speak on 2026-10-20 in a session titled ''Congratulations,
+    You Hired an AI Agent! Now Who''s Managing Its Margin?'' (KANTATA-BASWARE-2026). Certinia commits to every workflow
+    in its system being executable by an agentic capability or a human by year-end (CERTINIA-SOA-2026), and Planview''s
+    agent resource-management launch covers costing agents and compute spend (SDTIMES-PLANVIEW-2026). During delivery, compare
+    actual effort, AI-assisted effort and fee basis, and flag fixed-fee work where effort has fallen well below the fee
+    basis; California says flat fees may build in AI savings and fee agreements should say how fees and costs are calculated
+    (CALBAR-GENAI-2026, p.8).'
+  outcomes:
+  - lever: cost
+    description: AI budgeting norm stated by one law firm's chief data and AI officer at ILTACON 2026.
+    figure: roughly 1% of revenue
+    measures: AI cost as a share of firm revenue; the speaker said most people are settling on it and his own firm was not
+      there yet; a panel remark, not a survey.
+    provenance: self-reported
+    source_ref: TRI-METER-2026
+  - lever: cost
+    description: Survey expectation that systems will need to attribute work, cost and value across humans and AI agents.
+    figure: 90% of leaders
+    measures: Share of 200 professional-services leaders who say their systems will need to do this 'in the near future'
+      (Censuswide survey for Kantata).
+    provenance: vendor-published
+    source_ref: KANTATA-SOPSI-2026
+  prerequisites:
+  - Usage-level metering from tool vendors and a way to tag usage to a matter or client code (TRI-METER-2026).
+  - Outcome data tied to the people and agents that produced it; only 7.3% of RMI respondents say outcome data are easily
+    accessible and routinely used in staffing (KANTATA-RMI-2026).
+  - Fee agreements that say how AI affects the fee (CALBAR-GENAI-2026, p.8; ABA-OP512-2024, Part II.F pp.11-14).
+  risks_and_guardrails:
+  - Lawyers cannot see how many tokens they spend and reach for the largest model for small tasks (TRI-METER-2026).
+  - General AI subscriptions are overhead; matter-specific AI costs may be billed only if disclosed in the fee agreement,
+    at actual cost, without markup absent informed written consent (CALBAR-GENAI-2026, p.8).
+  - Telemetry improves measurement but not attribution of results to the consultant's work (STANFORD-DEL-2026, p.3).
+  - The RMI study covered 44 organisations and was commissioned by Kantata; treat it as indicative (KANTATA-RMI-2026).
+  - 'Seen in search only: law-firm AI leaders surveyed by The American Lawyer see slowing adoption as a bigger risk than
+    price rises (AMLAW-CONSUMPTION-2026).'
+  human_checkpoints:
+  - Pricing and finance leaders decide what AI cost is passed through to clients (TRI-METER-2026).
+  - Pricing or finance partner reviews flagged engagements before any fee change is raised with the client.
+  role_evolution: 52.7% of RMI respondents say they are not equipped to manage hybrid human and AI teams and 4% feel well
+    equipped; resource managers expect to shift from filling hours toward delivery success, profitability and outcomes if
+    outcome pricing spreads (KANTATA-RMI-2026). Knowledge and innovation managers take on AI cost control (TRI-METER-2026).
+  evidence_grade: D
+  sources:
+  - ref: TRI-METER-2026
+    title: 'Ferraris for emails: At ILTACON 2026, the industry starts reading the meter'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/iltacon-2026-reading-the-meter
+    date: '2026-09-09'
+    access: full
+    locator: Sections 'The receipt is not the cost' and 'The $2 PowerPoint' and closing paragraphs
+  - ref: KANTATA-SOPSI-2026
+    title: Kantata Survey Reveals that 87% of Professional Services Teams Plan to Manage AI Agents as Part of Their Workforce
+    publisher: Kantata (survey by Censuswide, 200 leaders)
+    type: survey
+    url: https://www.kantata.com/blog/article/kantata-survey-reveals-that-87-of-professional-services-teams-plan-to-manage-ai-agents-as-part-of-their-workforce
+    date: '2026-01-08'
+    access: full
+    locator: Third paragraph (attribution across humans and agents)
+  - ref: KANTATA-BASWARE-2026
+    title: Kantata takes Basware from AI Experimentation to Results
+    publisher: Kantata
+    type: vendor
+    url: https://www.kantata.com/blog/article/kantata-takes-basware-from-ai-experimentation-to-results
+    date: '2026-10-13'
+    access: full
+    locator: Final paragraph on the scheduled TSW fireside chat
+  - ref: KANTATA-RMI-2026
+    title: New Study Finds Resource Management at a Strategic Crossroads as AI and Outcome-Based Delivery Reshape Professional
+      Services (Resource Management Institute study commissioned by Kantata)
+    publisher: Kantata / Resource Management Institute
+    type: survey
+    url: https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services
+    date: '2026-04-09'
+    access: full
+    locator: Paragraphs on hybrid teams, outcome data and outcome pricing
+  - ref: CERTINIA-SOA-2026
+    title: Certinia Unveils the System of Action for Services, and the Largest Expansion of Veda AI to Date
+    publisher: Certinia
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-unveils-system-of-action-for-services-and-largest-expansion-of-veda-ai-to-date/
+    date: '2026-09-09'
+    access: full
+    locator: Section 'Committing to 100% Agentic Capability Coverage by Year End'
+  - ref: SDTIMES-PLANVIEW-2026
+    title: Planview Launches Agent Resource Management, Redefining Portfolio Resource Management for the AI Era
+    publisher: SD Times
+    type: press
+    url: https://sdtimes.com/agentic-ai/planview-launches-agent-resource-management-redefining-portfolio-resource-management-for-the-ai-era/
+    date: '2026-05-04'
+    access: full
+    locator: Paragraphs on agent capacity and cost
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: ABA Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.F, pp.11-14
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p.8
+  - ref: STANFORD-DEL-2026
+    title: 'Pricing Consulting Services in the Age of Agentic AI: A Strategy Map for Executives (Brynjolfsson and Petropoulos)'
+    publisher: Stanford Digital Economy Lab
+    type: academic
+    url: https://digitaleconomy.stanford.edu/app/uploads/2026/08/AI_Agents_and_Consulting_Service_Pricing.pdf
+    date: '2026-08-23'
+    access: full
+    locator: p.3
+  - ref: AMLAW-CONSUMPTION-2026
+    title: AI Utilization Is 'Skyrocketing,' but Law Firms Aren't Sweating Consumption Pricing
+    publisher: The American Lawyer
+    type: press
+    url: https://www.law.com/americanlawyer/2026/10/13/ai-utilization-is-skyrocketing-but-law-firms-arent-sweating-consumption-pricing-/
+    date: '2026-10-13'
+    access: search-only
+    locator: Teaser bullet only; body paywalled
+  last_reviewed: '2026-10-19'
+  notes: 'Idea (grade D): discussed at ILTACON 2026, by vendors and in a scheduled talk; no deployed attribution or margin
+    tracking found. Merged from discourse-11, practice-13 and governance-11. Change scope follows the practice angle (model:
+    agents as team members change who does the work and how margin is counted); discourse and governance rated process.
+    The 2026-10-20 session had not been given on the date of this file, so it is a signal only. Pricing choices are professional-services-scoping-pricing-06,
+    -14 and -17; matter-level evidence of AI savings for clients is professional-services-scoping-pricing-09; AI cost pass-through
+    is billing-collections; firm-wide AI ROI is firm-finance. Firm kinds: law firms (ILTACON) and project-based services
+    firms (PSA vendors).'

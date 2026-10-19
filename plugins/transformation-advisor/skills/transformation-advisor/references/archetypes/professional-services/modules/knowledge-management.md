@@ -31,11 +31,11 @@ of what exists. Audit methodology, tax research and security runbooks live in th
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Capture | Close-out notes, retrospectives, call notes, decisions, departing experts' know-how | document-production, research-synthesis | Write-ups are unpaid extra work at close; know-how leaves with people [AL-DIDOMENICO-2026; NETDOCUMENTS-CONTEXTGRAPH-2026] |
+| Capture | Close-out notes, retrospectives, call notes, decisions, departing experts' know-how | document-production, research-synthesis | Expertise stays locked in decks and heads; know-how leaves when people retire [KANTATA-ENGINE-2025; NETDOCUMENTS-CONTEXTGRAPH-2026] |
 | Curate and validate | Decide what is final, exemplary or superseded; strip client detail; owners review on a cycle | review-assurance | Drafts, executed deals and counterparty markups mixed; nobody recorded why a document was "final" [DRAFTWISE-PRECEDENT-2025] |
-| Organise and secure | Taxonomy (agreed categories), metadata, OCR, permissions, ethical walls (screens that block named staff from a matter) | data-reporting, software-systems | Taxonomies sprawl; files scattered across inboxes, OneDrive, SharePoint [IMANAGE-WOMBLE-2026; IMANAGE-DCB-2026] |
+| Organise and secure | Taxonomy (agreed categories), metadata, OCR, permissions, ethical walls (screens that block named staff from a matter) | data-reporting, software-systems | Two-decade taxonomies; files scattered across inboxes, OneDrive, SharePoint [IMANAGE-WOMBLE-2026; IMANAGE-DCB-2026] |
 | Find and retrieve | Search, ask questions of documents, locate an expert or comparable matter | research-synthesis | Enterprise search and expertise management "dramatically underdeveloped" [ILTA-TECHSURVEY-2026] |
-| Reuse and apply | Benchmark terms against deal history; ground drafts and client tools in approved precedent | research-synthesis, document-production | Lawyers take the easiest template, not the best [IMANAGE-ALLENS-2026] |
+| Reuse and apply | Benchmark terms against deal history; ground drafts and client tools in approved precedent | research-synthesis, document-production | Risk that lawyers take the easiest template, not the best [IMANAGE-ALLENS-2026] |
 | Transfer and onboard | Matter or engagement briefs for joiners; pre-call research | research-synthesis, coordination-scheduling | Kickoff research and networking can take about two weeks [MCKINSEY-LILLI-2023] |
 | Govern AI access and use | Approved tools, connectors, policy, training, audit logs | review-assurance, coordination-scheduling | 34% of professionals use unsanctioned AI [TR-FOP-2026]; no public leakage tests |
 | Maintain and measure | De-duplicate, retire, analyse searches and reuse, re-test tools | data-reporting | KM impact hard to measure; firms "still gathering the data" [APQC-KMEXEC-2026; TRI-LEGALWEEK-2026] |
@@ -123,7 +123,7 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
 8. **"When a wrong answer or flawed precedent is filed as knowledge, who corrects it and how would you find where it
    was reused?"** Reveals the verification loop (`#12`); errors can repeat across matters.
 9. **"What do you measure: failed searches, content that never surfaces, reuse rates, overrides, time to orient a
-   joiner?"** Reveals whether `#23` has any baseline; most firms have none.
+   joiner?"** Reveals whether `#23` has any baseline; no firm publishes one.
 10. **"How do client confidentiality terms and AI restrictions reach the people reusing that client's material?"**
     Reveals the sanitisation step (`#12`, `#15`) and client-term gaps.
 11. **"Where do people go when the sanctioned tool is not good enough?"** Reveals shadow AI (34% in TR-FOP-2026) and
@@ -182,8 +182,8 @@ permission-leakage tests with a walled user. Access counts and prompt volumes sa
   knowledge bases create acute confidentiality risk; scope and monitor access; no autonomous external transmission of
   client information without safeguards and human review; oversight rises with autonomy [CALBAR-GENAI-2026].
 - **Verification.** Lawyers must check AI research against authoritative sources, and leaders must take practical
-  measures; the court may ask what they did [EWHC-AYINDE-2025]. 2,202 court decisions concern AI misuse, mostly
-  hallucinated content [CHARLOTIN-DB-2026]. NIST AI 600-1 names confabulation, data privacy and IP risks [NIST-AI600-2024].
+  measures; the court may ask what they did [EWHC-AYINDE-2025]. 2,202 court decisions address AI use, mainly reliance
+  on hallucinated content [CHARLOTIN-DB-2026]. NIST AI 600-1 names confabulation, data privacy and IP risks [NIST-AI600-2024].
 - **Templates and testing.** Do not use client confidential or personal data to create templates or test a system;
   use fictional data [LAWSOC-GENAI-2026].
 - **Recording calls.** NYC Bar Opinion 2026-2: consent of all parties; default is not to record non-client
@@ -211,8 +211,8 @@ pitching or staffing; deciding what clients may see.
   lawyers (lawyers who maintain know-how rather than bill clients) becoming quality guardians of AI metadata
   [KMWORLD-LEXSOFT-2025].
 - **KM merges with AI leadership.** Troutman Pepper Locke's KM and AI partner [TROUTMAN-KM-2026]; Eversheds
-  Sutherland's AI-centric innovation department absorbing research and knowledge [AL-EVERSHEDS-2026]; K&L Gates' AI and
-  innovation partner [AL-X4-2026]; Gilchrist Connell's chief AI and knowledge officer [LAWYERSWEEKLY-GILCHRIST-2026];
+  Sutherland merged research and knowledge services into an AI-centric US innovation department [AL-EVERSHEDS-2026];
+  K&L Gates' AI and innovation partner role covering data and KM [AL-X4-2026]; Gilchrist Connell's chief AI and knowledge officer [LAWYERSWEEKLY-GILCHRIST-2026];
   Gowling WLG's director of AI, innovation and knowledge [HARVEY-GOWLING-2025].
 - **Knowledge lawyers and non-lawyers lead adoption.** Lewis Silkin's knowledge lawyers are Harvey leads
   [HARVEY-LEWISSILKIN-2025]; Chaffetz Lindsey's non-timekeeping staff became champions [IMANAGE-CHAFFETZ-2026];
@@ -221,8 +221,8 @@ pitching or staffing; deciding what clients may see.
   [HARVEY-ORCH-2026]. Hogan Lovells Cadwalader lawyers built custom agents for knowledge management [HARVEY-HLC-2026].
 - **Talent view.** DiDomenico argues for growing existing KM, library and research staff and recruiting practising
   lawyers [AL-DIDOMENICO-2026]. A TRI column suggests junior rotations such as "knowledge operations curator"
-  [TRI-AILAWPROF-JUNIOR-2026]. Vault reports firms "extracting the knowledge of their lawyers" into AI workflows
-  [VAULT-PYRAMID-2026]. Juniors' unaided outcomes split in the NBER trial [NBER-AUTOR-2026]; detail is talent-learning.
+  [TRI-AILAWPROF-JUNIOR-2026]. Vault, quoting Engstrom, describes firms "extracting the knowledge of their lawyers" into AI
+  workflows [VAULT-PYRAMID-2026]. Juniors' unaided outcomes split in the NBER trial [NBER-AUTOR-2026]; detail is talent-learning.
 - **In-house.** Legal operations is becoming its own practice area and first line for AI pressure [TRI-LDOR-2026].
 
 ## 8. Frontier
@@ -247,7 +247,7 @@ pitching or staffing; deciding what clients may see.
 
 - **"Our content is a mess; AI will surface junk."** Firms say so too: AI will not necessarily tell good from bad
   content [IMANAGE-WOMBLE-2026]. Answer: curate first, with owners and a short taxonomy (`#12`); Womble cut a
-  two-decade taxonomy to four nodes.
+  two-decade taxonomy to at most four nodes.
 - **"It could leak across ethical walls or to vendors."** A real duty [NYCBAR-OP2024-5-2024; CALBAR-GENAI-2026], and
   vendor permission claims have no public test. Answer: keep data in the governed store and let tools reach in
   [IMANAGE-CHAFFETZ-2026]; test with a walled user (`#01`, `#09`).

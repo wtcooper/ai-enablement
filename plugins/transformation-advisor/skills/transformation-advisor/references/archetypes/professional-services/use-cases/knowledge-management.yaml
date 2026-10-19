@@ -968,8 +968,8 @@
   runtime_class: background-agent
   maturity: in-production
   problem: >-
-    Lessons from finished engagements rarely reach the next team because writing them up is extra work at project close;
-    too much expertise stays locked in decks or in consultants' heads (CERTINIA-VEDA-2026; KANTATA-ENGINE-2025).
+    Lessons from finished engagements rarely reach the next team because writing them up is extra work at project close.
+    Kantata's launch release describes expertise locked in decks or in consultants' heads (KANTATA-ENGINE-2025).
   solution: >-
     Project capture is automated so outputs, tags and summaries flow into a searchable repository. At KMWorld Europe 2026,
     Alvarez & Marsal described a regional KM repository with automated project capture and defined KM roles; Simon-Kucher

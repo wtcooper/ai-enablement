@@ -386,7 +386,7 @@
     description: Client retention exposure reported by buyers of professional services
     figure: 32% reconsidering; one-third of those estimate more than $1 million of annual work at risk
     measures: Corporate clients who have reconsidered, or plan within 12 months to reconsider, relationships with
-      firms they feel are falling behind on AI; the client subset size is not stated
+      firms they feel are falling behind; the client subset size is not stated
     provenance: vendor-published
     source_ref: TR-FOP-2026
   prerequisites:
