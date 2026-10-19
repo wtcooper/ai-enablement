@@ -2,7 +2,7 @@
 
 Prepared 2026-10-19. Archetype: professional-services. Module: work-production (first drafts, synthesis, review against playbooks or standards, data extraction). Angle: practice (named deployments, firm and vendor announcements, product documentation, job postings).
 
-Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pdftotext` for the Cal Bar and ILTA PDFs, and the public Ashby job-board JSON feeds for Harvey and Legora. Eight web searches were used before the shared search budget ran out. Every source below was opened and read unless marked otherwise. Tags: **in-house** marks a corporate legal department example; unmarked examples are firm-side.
+Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pdftotext` for the Cal Bar and ILTA PDFs, and the public Ashby job-board JSON feeds for Harvey and Legora. Six web searches returned results; a seventh was refused when the shared search budget ran out. Every source below was opened and read unless marked otherwise. Tags: **in-house** marks a corporate legal department example; unmarked examples are firm-side.
 
 ## 1. Summary
 
