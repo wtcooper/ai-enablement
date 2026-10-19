@@ -41,7 +41,7 @@ archetype.
 | Reallocate and cover | Replace people on work in flight; absorb moved deadlines and leave | coordination-scheduling | Delayed starts, overbooked top performers, underused staff [TSIA-RM-2026] |
 | Bench and utilisation | Place unassigned staff; watch over- and under-allocation | data-reporting, coordination-scheduling | Problems found in last month's report [PROJECTWORKS-2026] |
 | Supply decisions | Hire, contract, subcontract, insource or send to outside counsel | expert-judgment | Busy-season help arrives after the core team is stretched [CPAPA-SAAH-2026] |
-| Fair access and development | Opportunity boards, development goals, stretch work | coordination-scheduling | Juniors near favoured partners get seen first [BIGHAND-DLA-2026] |
+| Fair access and development | Opportunity boards, development goals, stretch work | coordination-scheduling | Associates close to particular partners are more visible for new matters [BIGHAND-DLA-2026] |
 | Emerging: plan people and agents | Agents as capacity with cost and owner | coordination-scheduling, data-reporting | 52.7% not equipped for hybrid teams [KANTATA-RMI-2026] |
 
 ## 3. Where AI is changing the work
@@ -49,8 +49,8 @@ archetype.
 Lenses: improve (assist or augment a step), automate (no person on the normal path), delegate (an agent owns a
 multi-step outcome with checkpoints), reinvent (`change_scope: model`, or a process that stops existing).
 **Coverage:** assist 7, augment 13, automate 1, delegate 0; step 10, process 8, model 3. **Delegate has no
-evidence:** every staffing agent read "proposes", "surfaces" or "recommends"; zeb's agent pre-books but a person still
-decides. **Automate has one entry**, an optimisation algorithm in a public agency (`#13`), and it did worse than
+evidence:** every staffing agent read "proposes", "surfaces" or "recommends"; zeb's agent proposes and pre-books
+people, and no source describes an agent owning a staffing outcome end to end. **Automate has one entry**, an optimisation algorithm in a public agency (`#13`), and it did worse than
 managers. Reinvent rests on announcements, surveys and one podcast.
 
 **Capture demand**
@@ -153,7 +153,7 @@ managers. Reinvent rests on announcements, surveys and one podcast.
   AI, sample not stated [RUNN-2025].
 - Law firms: 43% of resourcing decisions lawyer-led; 45% have partial skills data; associate departures 9% to 16%,
   2024 to 2025 [BIGHAND-DLAPR-2026]. Talent capacity is the top profitability constraint for 35% of law-firm COOs
-  [WESTERNALLIANCE-COO-2026]. In-house (2025, 186 departments): 63% name workload and bandwidth the top challenge
+  [WESTERNALLIANCE-COO-2026]. In-house (2025, 186 organisations): 63% name workload and bandwidth the top challenge
   [CLOC-SOTI-2025].
 
 **Measured results (independent, adjacent)**
@@ -180,7 +180,7 @@ went; agent cost and output per engagement.
 
 - **Task allocation is named in law.** EU AI Act Annex III 4(b) lists AI used to allocate tasks based on individual
   behaviour or personal traits, or to monitor and evaluate workers, as high-risk [EU-AIACT-ANNEX3-2024]; obligations
-  apply from 2027-12-02 [EC-AIACT-2026]. Deployers inform workers before use, keep logs six months and owe
+  apply from 2027-12-02 [EC-AIACT-2026]. Deployers inform workers before use, keep logs for at least six months and owe
   explanations in some decisions (Art. 26(6), 26(7), 86) [EU-AIACT-OJ-2024]. California's CCPA regulations list
   "allocation or assignment of work" as a significant decision; automated decisionmaking technology (ADMT) used for one
   must comply by 2027-01-01, and human involvement means a reviewer with authority to change the decision
@@ -208,14 +208,14 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
 - **Resource managers: from searching to choosing and composing teams.** 72% call the role operational today; under
   outcome-based pricing respondents expect it to own team composition, delivery risk and economics [KANTATA-RMI-2026].
   TSIA calls the future office a "hybrid workforce command center" [TSIA-RM-2026]. Womble Bond Dickinson recruited
-  dedicated resource managers [BIGHAND-WBD-2026]; DLA Piper's say they become strategic partners on wellbeing and
-  workforce planning [BIGHAND-DLA-2026]. Reed Smith created a global director of Smart Resourcing
+  dedicated resource managers [BIGHAND-WBD-2026]; DLA Piper's case study says resourcing professionals become strategic
+  partners balancing wellbeing and workforce planning [BIGHAND-DLA-2026]. Reed Smith created a global director of Smart Resourcing
   [REEDSMITH-SMARTRES-2023].
 - **Central staffing teams keep the call.** McKinsey's agents supplement, not replace, professional-development staff
   [BLOOMBERGLAW-MCKINSEY-2026].
 - **Ops leaders: from monthly reports to acting on alerts and forecasts** (vendor description) [PROJECTWORKS-2026].
 - **Associates and consultants: from waiting to be picked to volunteering** for posted work [BIGHAND-WBD-2026]. Project
-  variety is the leading driver of consultant job satisfaction [MCA-SURVEY-2026], so assignment is a retention lever.
+  variety is the leading driver of consultant job satisfaction in the MCA survey (not AI-specific) [MCA-SURVEY-2026].
 - **Administrative roles:** law-firm COOs expect fewer billing administrators and more technology, data and AI
   enablement roles [WESTERNALLIANCE-COO-2026].
 - **Flexible talent** covers overflow and AI review [GEEK-LATITUDE-2026]. Pyramid and junior-pipeline questions:
@@ -244,23 +244,24 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
 
 ## 9. Common objections
 
-- **"A model can't know who works well with whom."** Agreed by the vendors themselves [PROJECTWORKS-2026] and by the
-  Peru trial, where removing managers lowered on-time completion [IPA-PERU-2026]. Answer: keep the person deciding;
+- **"A model can't know who works well with whom."** A vendor says no model captures client dynamics or fit [PROJECTWORKS-2026], and in
+  the Peru trial where removing managers lowered on-time completion [IPA-PERU-2026]. Answer: keep the person deciding;
   use AI to widen the shortlist and show reasons (`#01`), or nudge schedules (`#14`).
 - **"Our skills data is rubbish."** Likely: 47% cite fragmented data [KANTATA-RMI-2026] and 45% of law firms have
   partial skills data [BIGHAND-DLAPR-2026]. Answer: firms with figures built the data layer first (`#12`); Basware
-  fixed billing first [KANTATA-BASWARE-2026].
+  automated billing first [KANTATA-BASWARE-2026].
 - **"It will just be fast and wrong."** Kantata's own chief executive warns of "fast, mediocre decisions"
   [KANTATA-SUPERAGENT-2026]. Answer: track overrides and outcomes from day one; nobody publishes them yet.
 - **"The numbers are vendor marketing."** True for nearly every figure here. Answer: baseline your own time-to-staff
   and utilisation before you start.
 - **"Partners won't give up allocation."** Strategic consensus among partners is hard [WESTERNALLIANCE-COO-2026].
-  Answer: law firms moved with opportunity boards and dedicated resource managers, keeping partner input [BIGHAND-WBD-2026].
+  Answer: law firms moved with opportunity boards and dedicated resource managers [BIGHAND-WBD-2026].
 - **"AI will free capacity, so we need fewer people."** Not shown: Big Law demand rose [BLOOMBERG-AICOST-2026] and the
   extra load fell on associates and non-equity partners [TRI-LFFI-Q2-2026]. Answer: measure where hours went (`#20`).
 - **"Isn't this regulated HR tech?"** Possibly (§6). Answer: inventory tools, keep a reviewer with authority, log
   decisions (`#21`).
-- **"We'll staff agents next year."** No surveyed organisation does yet [KANTATA-RMI-REPORT-2026]. Answer: start by
+- **"We'll staff agents next year."** None of 44 surveyed organisations runs agents as assignable
+  resources yet [KANTATA-RMI-REPORT-2026]. Answer: start by
   costing agent use per engagement (professional-services-delivery-management-16).
 
 ## 10. Sources

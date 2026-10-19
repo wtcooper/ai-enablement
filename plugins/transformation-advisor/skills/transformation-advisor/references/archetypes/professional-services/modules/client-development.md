@@ -35,7 +35,7 @@ billing-collections; conflicts and intake checks in acceptance-risk.
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
 | Capture relationship data | Contacts, meetings and emails reach the CRM (client relationship management system) | data-reporting | Partners do not log activity; CRM adoption "negligible" [INTROHIVE-LAWSITES-2026] |
-| Map relationships and coverage | Who knows whom, strength, warm paths, gaps, departures | research-synthesis | 78% of 123 partners say relationship data is hard to act on [INTROHIVE-LAWSITES-2026] |
+| Map relationships and coverage | Who knows whom, strength, warm paths, gaps, departures | research-synthesis | 78% of 123 partners say their tools give relationship visibility that is hard to act on [INTROHIVE-PARTNER-2026] |
 | Plan key accounts and cross-sell | Account plans, opportunity lists, service-line coordination | expert-judgment, coordination-scheduling | Partners name where to focus (50%) and cross-sell (43%) as top frictions [INTROHIVE-PARTNER-2026] |
 | Find new opportunities | Signals from courts, news, filings and internal data | research-synthesis | Manual searching busy lawyers cannot sustain (`#05`) |
 | Prepare and reach out | Meeting briefs, client notes and alerts, check-ins | research-synthesis, document-production | Senior lawyers skip client notes because they take billable time [TRI-CMBDO-2026] |
@@ -55,7 +55,7 @@ client development through an agent. **Reinvent:** `#21` and `#22` (B), with no 
 
 **Relationship data and intelligence**
 - Automate: `#01` email and calendar capture into the CRM at accounting firms Schneider Downs, KSM, LBMC and Grassi
-  and law firm Howes Percival; figures are vendor activity counts (B).
+  and law firm Thomson Snell & Passmore; figures are vendor activity counts (B).
 - Improve: `#02` relationship maps and warm paths; law firm Thomson Snell & Passmore went from 47 to 97 employees
   connected to its Top 50 accounts (vendor-published, B). `#03` health scores and at-risk alerts (Howes Percival, B).
 
@@ -71,20 +71,21 @@ client development through an agent. **Reinvent:** `#21` and `#22` (B), with no 
   sequences (D).
 
 **Marketing and enquiries**
-- Improve: `#12` AI claims in marketing; 52% of the largest law firms market their AI use versus 2% of the
-  smallest (B). Automate: `#13` website intake chatbots under Oregon and Florida bar rules (C).
+- Improve: `#12` AI claims in marketing (Akin Gump, Debevoise and Parker Poe publicise their own AI tools); 52% of
+  the largest law firms market their AI use versus 2% of the smallest (B). No firm describes drafting this content with AI. Automate: `#13` website intake chatbots under Oregon and Florida bar rules (C).
 
 **AI value conversations and client terms**
 - Improve (process): `#14` partner-led value conversations, sequenced from what changed to price (B). `#15`
   matter-level evidence of AI use (Legora and Laurel announced 2026-10-13; C). `#16` AI terms in engagement
-  letters (B). `#17` in-house teams add AI addenda to OCGs (in-house, C).
+  letters, e.g. Babst Calland's published consent terms (B). `#17` in-house teams add AI addenda to OCGs (in-house, C).
 
 **Listening and measurement** - improve: `#18` AI-analysed client feedback (Shoosmiths, 2023; C); `#19` attribution (C).
 
 **AI offered to clients (reinvent)**
 - `#20` client AI labs and joint use cases (Parker Poe, Fasken; GSK as a client voice) (B). `#21` firm-built
   tools and portals: Debevoise STAAR, Cooley GO Lab, A&O Shearman with Harvey, Legora Portal (B). `#22` client
-  AI-enablement roles (Latham & Watkins) and AI advisory for accounting clients (B).
+  AI-enablement roles (Latham & Watkins) (B); AI advisory for accounting clients is discussed at events but not
+  evidenced as a delivered service.
 
 **Held elsewhere (do not duplicate):** fee side of the value conversation (professional-services-scoping-pricing-10),
 matter-level savings for pricing (professional-services-scoping-pricing-09), AI cost terms (-07), client savings
@@ -128,7 +129,7 @@ Ask a managing partner, CMO or BD director, key-account partner or (in-house) a 
 
 **Client pressure (survey perceptions, not outcomes)**
 - 78% of corporate clients call AI-enabled quality gains very important or essential; 6% say most or all providers
-  deliver them; 32% have reconsidered or plan to reconsider providers within 12 months, a third of those with more
+  deliver them; 32% have reconsidered, or plan within 12 months to reconsider, firms they feel are falling behind, a third of those with more
   than $1 million of work at risk (1,816 professionals, Mar-Apr 2026; client subset size not stated) [TR-FOP-2026].
 - In-house (657 respondents, 30 countries, 2025): 59% see no GenAI savings from law firms yet; 24% satisfied; 61%
   plan to push for change [ACCEVERLAW-2025]. Vendor co-published.
@@ -140,7 +141,8 @@ Ask a managing partner, CMO or BD director, key-account partner or (in-house) a 
   of stand-out lawyers with fewer than 20%. Embedded users report significant impact about nine times as often as
   minimal users [TRI-STANDOUT-2026].
 - 61% of law firms say they proactively discussed Harvey efficiencies; 4% of in-house teams say firms approached
-  them (Harvey-commissioned, 87 respondents) [LEGALIT-RSGI-2026].
+  them (Harvey-commissioned survey of 87 Harvey customers: 60 firms, 27 in-house teams, not matched pairs)
+  [LEGALIT-RSGI-2026].
 - 35% of legal-finance respondents name partner discomfort as the top communication barrier; 56% see more client
   demand for AI efficiencies or transparency [BIGHAND-LF-2026]. 32% of law firms cannot confidently show AI value
   to their most important client [LITERA-LAWSITES-2026].
@@ -208,8 +210,8 @@ information or advice; whether an intake conversation formed a relationship; att
 
 - **Partners** are the firm's "commercial transmission mechanism"; strategy fails unless they see how it changes
   client work [TRI-STANDOUT-2026]. They now take on BD once done by marketing [INTROHIVE-LAWSITES-2026].
-- **BD and marketing** curate opportunity lists, "plant" tailored prompts and train partners one-to-one
-  [TRI-CMBDO-2026]; they take on claim substantiation (`#12`). AI purchasing is often led by IT or innovation, not
+- **BD and marketing** curate client lists and conversation openers ("plant things" in partners' minds, in one
+  panelist's words) and train partners one-to-one [TRI-CMBDO-2026]; they take on claim substantiation (`#12`). AI purchasing is often led by IT or innovation, not
   BD [INTROHIVE-LAWSITES-2026].
 - **New titles:** senior director of marketing and client intelligence (Akin Gump) [AKIN-MONEYBALL-2026]; chief
   pricing and innovation officer (Greenberg Traurig) and senior managing director of AI innovation (DLA Piper)
@@ -232,8 +234,8 @@ information or advice; whether an intake conversation formed a relationship; att
   ICMCI-AICODE-2026].
 - 2026-07-14 and 07-15: firms reported sharing or licensing AI tools [ABAJ-SHARE-2026]; Intapp Celeste generally
   available with BD playbooks [LAWSITES-CELESTE-2026].
-- 2026-08-06: firm leaders tell TRI client pressure has reversed from "do not use AI" to "show us your AI"
-  [TRI-STANDOUT-2026].
+- 2026-08-06: firm leaders tell TRI that client pressure has reversed: a year earlier some clients asked firms not
+  to use AI; now clients ask firms to demonstrate their AI capabilities [TRI-STANDOUT-2026].
 - 2026-09-04: Litera announces firm AI search at ILTACON, routed here as BD intelligence from siloed data
   [LAWSITES-ILTACON4-2026*]; 2026-09-10: Parker Poe's client AI lab [PARKERPOE-LAWSITES-2026].
 - 2026-09-14: ILTACON reversibility test; an Introhive speaker describes an agent watching for relationship change
@@ -242,7 +244,7 @@ information or advice; whether an intake conversation formed a relationship; att
 - 2026-10-13: Introhive partner survey; MCP server described as generally available; Legora and Laurel announce AI
   time capture with value measures to follow [INTROHIVE-LAWSITES-2026; LEGORA-LAUREL-2026].
 - 2026-10-19: a CLO asks who will own the "legal memory" in shared AI environments [BLOOMBERGLAW-GCXAI-2026].
-- Scheduled, not evidence: MCA "AI for SME Consultancies" 2026-11-26 [MCA-EVENTS-2026*]; TRI 34th CMBDO Forum
+- Scheduled, not evidence: MCA "AI for SME Consultancies" 2026-11-06 [MCA-EVENTS-2026*]; TRI 34th CMBDO Forum
   2027-01-27 to 29, on the firm's AI story in pitches and visibility in AI-driven discovery [TRI-CMBDO34-2027*].
 
 ## 9. Common objections
@@ -251,9 +253,10 @@ information or advice; whether an intake conversation formed a relationship; att
   attribution rules first and start with intermediate measures (`#19`); 63% have no revenue link at all.
 - **"Partners will never use a CRM."** Then stop asking them to: capture runs without typing (`#01`) and prompts
   arrive in email (`#08`). Data accuracy becomes the job [INTROHIVE-LAWSITES-2026].
-- **"Our clients aren't asking about AI."** Some are not yet (a search-only CPA survey says 42% of firms
-  [VSCPA-AI-2026*]). But 32% of corporate clients are reconsidering providers [TR-FOP-2026], and firms and clients
-  disagree on whether the conversation happened: 61% vs 4% [LEGALIT-RSGI-2026].
+- **"Our clients aren't asking about AI."** Some are not yet: 42% of 144 respondents to a Virginia Society
+  of CPAs survey say clients are not yet asking [VSCPA-AI-2026]. But 32% of corporate clients have reconsidered or
+  plan to reconsider providers [TR-FOP-2026], and Harvey-customer firms and in-house teams report very differently
+  on whether firms raised it: 61% vs 4% [LEGALIT-RSGI-2026].
 - **"Telling clients about AI will cost trust."** It can [SCHILKE-OBHDP-2025], but being found out later is worse
   and the rules push disclosure of material use [CALBAR-GENAI-2026; ICMCI-AICODE-2026]. Design the wording (`#16`).
 - **"If we show savings, they'll demand discounts."** Leading with concessions trains clients to expect them; lead
@@ -264,8 +267,8 @@ information or advice; whether an intake conversation formed a relationship; att
 - **"If we share our tools, clients will do the work themselves."** That fear is real [ABAJ-SHARE-2026], and one
   in-house participant valued building processes a team can run without the firm [PARKERPOE-LAWSITES-2026]. No data
   shows either loss or gain yet (`#21`).
-- **"AI briefs are generic."** Use them as a foundation, not a script; panelists put AI at about 90% and judgment at
-  the rest, with one-to-one training [TRI-CMBDO-2026].
+- **"AI briefs are generic."** Use them as a foundation, not a script; one law-firm technology specialist put AI at about
+  90% and judgment at the rest, and panelists urged one-to-one training [TRI-CMBDO-2026].
 - **"Let an agent run BD."** Agents are limited by their data [TRI-CMBDO-2026]; California bars autonomous
   external transmission without review [CALBAR-GENAI-2026]. No firm runs it (`#11`).
 - **"AI-enabled delivery wins work."** Reed Smith says so in a vendor customer story [HARVEY-REEDSMITH-2026*]; no
