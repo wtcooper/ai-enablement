@@ -34,10 +34,10 @@ The substantive work itself is in work-production; audit, tax and security proce
 |---|---|---|---|
 | Handoff and mobilise | Deal context, SOW (statement of work: the scope, deliverables and fees) and client terms passed to the delivery team; kickoff brief | coordination-scheduling, document-production | Context lost between sales and delivery; new joiners briefed by hand [KANTATA-SUPERAGENT-2026] |
 | Plan | Work breakdown, phased plan, solution design, review points | document-production, expert-judgment | Plans rebuilt from the SOW and memory; one firm put a design document at about 80 hours [CERTINIA-MOONNOX-2026] |
-| Meetings and documentation | Minutes, decisions, action items, requirements, backlogs | document-production | Written after the fact; commitments slip [ROCKETLANE-EARTHWISE-2026] |
+| Meetings and documentation | Minutes, decisions, action items, requirements, backlogs | document-production | Notes and follow-ups done by hand; "he said, she said" disputes [ROCKETLANE-EARTHWISE-2026] |
 | Status and client reporting | Weekly updates, steering-committee packs, portfolio views | data-reporting, document-production, client-interaction | 72% spend half a day or more a month collating reports (base not stated) [WELLINGTONE-SOPM-2026] |
-| Risk and health tracking | Overdue tasks, missing time entries, slipping milestones, RAG (red-amber-green) ratings | data-reporting, review-assurance | Found in periodic reviews after margin is lost; ratings depend on each manager [CERTINIA-VEDA-2026] |
-| Scope and change control | Compare requests with the SOW; raise change orders | review-assurance, client-interaction | Change orders written after the work is done [EDNA-SCOPE-2026] |
+| Risk and health tracking | Overdue tasks, missing time entries, slipping milestones, RAG (red-amber-green) ratings | data-reporting, review-assurance | Status chased by hand; slippage and overdue milestones surface late [CERTINIA-VEDA-2026] |
+| Scope and change control | Compare requests with the SOW; raise change orders | review-assurance, client-interaction | Drift noticed only once the work is under way [EDNA-SCOPE-2026] |
 | Engagement economics | Budget against actuals, burn, margin, forecast, fee basis | data-reporting | Overrun 10.7% and on-time delivery 73.8% across 500+ firms [DELTEK-SPI-2026] |
 | Run and coordinate | Task routing, reviews, reminders, plan upkeep | coordination-scheduling | Partners ask associates to rebuild status from email [HARVEY-ORCH-2026] |
 | Close-out | Retrospective and lessons learned | document-production, research-synthesis | Lessons not written up where the next team can find them [CERTINIA-VEDA-2026] |
@@ -67,8 +67,7 @@ one idea (`#16`). No firm reports a delivery step that has stopped existing.
   tax-compliance-individual-business-15.
 - Improve: `#04` ask for status, budget consumption and anomalies in plain language (zeb, financial-services
   consultancy, on SAP; Planning Blox for law firms).
-- Related: a client portal in place of email in an attestation practice is
-  assurance-soc-attestation-07; shared client workspaces are professional-services-work-production-20.
+- Related: attestation client portal, assurance-soc-attestation-07; client workspaces, professional-services-work-production-20.
 
 **Monitoring, risk and change control**
 - Improve, process scope: `#05` agents flag slipping milestones, missing time entries, deliverable discrepancies and
@@ -190,11 +189,12 @@ versus after the work; budget variance at close; AI and agent cost per engagemen
   consultants may use [EINF-2026].
 - **Worker monitoring.** The EU AI Act lists AI that monitors or evaluates workers' performance as high-risk
   [EU-AIACT-ANNEX3-2024], applying from 2027-12-02 [EC-AIACT-2026]. Check health scoring and task allocation.
-- **Recording.** Consent from every participant before meeting capture [KJZZ-OTTER-2025; CALBAR-GENAI-2026].
+- **Recording.** Get consent from every participant before meeting capture; a 2025 class action alleges recording
+  without consent [KJZZ-OTTER-2025]. Review vendor data terms; use alone can mean acceptance [CALBAR-GENAI-2026].
 - **Reversibility test.** Summaries and action plans are two-way doors; an agent replying to a client unreviewed is
   a one-way door. Keep an audit trail and stop individuals creating agents ad hoc [TRI-AGENTIC-2026].
 - **Insurance.** Professional indemnity policies tend not to cover AI errors explicitly [DACBEACHCROFT-PI-2026].
-- **PMI's AI standard (2026-06-09)** governs AI projects, not AI used to run projects [PMI-AISTD-2026].
+- **PMI's AI standard (2026-06-09)** covers delivering AI initiatives, not using AI to run projects [PMI-AISTD-2026].
 
 **Steps that stay with a person:** deciding whether a request is out of scope and raising it with the client;
 approving anything that reaches a client; acting on a risk flag; changing fees or budgets; signing off plans and
@@ -213,9 +213,9 @@ designs; confirming recording consent and client AI terms; choosing which agent 
 - **Resource managers are not ready:** 52.7% not equipped to manage hybrid human-agent teams, 4% well equipped
   [KANTATA-RMI-2026].
 - **Legal:** Harvey says lawyers will direct matters and review consequential outputs [HARVEY-ORCH-2026]; a guest
-  post forecasts erosion of mid-level associates, "the project managers of the legal world" [AL-LADDER-2026]. Pricing
-  and innovation officers speak for firms on AI value [TRI-LEGALWEEK-2026]. In-house legal operations, which runs
-  legal project management, takes AI pressure first [TRI-LDOR-2026].
+  post forecasts erosion of mid-level associates, "the project managers of the legal world" [AL-LADDER-2026]. In-house
+  legal operations, whose remit can include legal project management, is the first line of defence for AI pressure
+  [TRI-LDOR-2026].
 - **Sourcing:** UK Big Four graduate cuts were reported alongside offshoring to India, Malaysia and the Philippines;
   causes are mixed [CITYAM-BIG4-2025]. Talk about roles and capacity, not headcount.
 
@@ -229,7 +229,7 @@ designs; confirming recording consent and client AI terms; choosing which agent 
 - **2026-06-16** Kantata launches Expertise Agent [ERPTODAY-KANTATA-2026]; **2026-07-21** Certinia buys Moonnox
   for meeting and tool context capture [CERTINIA-MOONNOX-2026].
 - **2026-08-19** A vendor defines "agentic PSA" and says most launches are summarising or scoring [TANDEM-2026].
-- **2026-09** ILTACON moves from adoption to metering AI cost per matter [TRI-METER-2026].
+- **2026-09-09** ILTACON coverage: firms start metering AI cost and tracing it to clients [TRI-METER-2026].
 - **2026-09-09** Certinia adds 14 agents, doubles its Intelligent Actions library to 135 and makes them callable from
   Slack, Claude and Microsoft Copilot over MCP; it commits to every workflow being executable by an agent or a human
   by year-end [CERTINIA-SOA-2026].
@@ -239,7 +239,7 @@ designs; confirming recording consent and client AI terms; choosing which agent 
 - **2026-10-15** Harvey Legal Work Orchestration; Harvey expects agents to take on a further 20% of workflow steps
   in six months [HARVEY-ORCH-2026].
 - **Scheduled:** 2026-10-20 Basware and Kantata on "who's managing [an agent's] margin" [KANTATA-BASWARE-2026];
-  2026-10-21 to 24 PMI Global Summit with AI as a key topic [PMI-SUMMIT-2026]. Signals only.
+  October 2026 PMI Global Summit, Detroit, with AI among key topics [PMI-SUMMIT-2026]. Signals only.
 - **2027-12-02** EU AI Act high-risk obligations for worker monitoring apply [EC-AIACT-2026].
 
 ## 9. Common objections
@@ -288,8 +288,8 @@ Full details for YAML keys are in the YAML. Keys cited here but not in the YAML:
   https://www.napta.io/blog/napta-report-2026-ai-and-professional-services-firms-moving-from-technological-potential-to-economic-limpact
 - PMI-AISTD-2026: PMI, PMI Publishes World's First Global Standard for AI in Project Work (press release),
   2026-06-09, https://www.pmi.org/about/press-media/2026/pmi-publishes-worlds-first-global-standard-for-ai-in-project-work
-- PMI-SUMMIT-2026: PMI, Global Summit 2026, Detroit (call for speakers; search-only), 2026-10-21,
-  https://www.pmi.org/events/speaking-opportunities/global-summit
+- PMI-SUMMIT-2026: PMI, Global Summit 2026, Detroit (call for speakers, read via mirror; event dates not stated),
+  2026, https://www.pmi.org/events/speaking-opportunities/global-summit
 - TRI-DISCONNECT-2026: Thomson Reuters Institute, The great AI disconnect, 2026-03-18,
   https://www.thomsonreuters.com/en/institute/articles/great-ai-disconnect
 - TRI-IMPL-2026: Thomson Reuters Institute, ILTACON 2026: "Does it make the boat faster?", 2026-08-31,
