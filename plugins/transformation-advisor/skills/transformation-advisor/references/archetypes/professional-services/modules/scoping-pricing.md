@@ -40,7 +40,7 @@ rates, realisation and AI return on investment sit in firm-finance; time capture
 | Approval and reasonableness check | Partner or pricing sign-off; fee-rule and disclosure check | review-assurance | State bar positions on AI-assisted flat fees diverge (§6) |
 | Budget monitoring and change control | Track work in progress (WIP) against budget, re-scope | data-reporting, coordination-scheduling | 23% of law firms actively monitor budgets throughout the matter [BIGHAND-LF-2026] |
 | Post-matter review | Realisation (share of worked value collected), AI effect on effort | data-reporting | AI cost cannot usually be attributed to a project [BLOOMBERGTAX-PRICING-2026] |
-| Pricing the firm's own AI products | Subscription, licence or per-document prices for productised services | expert-judgment | No published prices, uptake or margins (`#21`-`#23`) |
+| Pricing the firm's own AI products | Subscription, licence or per-document prices for productised services | expert-judgment | Few published prices; no uptake, margin or quality data (`#21`-`#23`) |
 
 ## 3. Where AI is changing the work
 
@@ -118,7 +118,7 @@ on AI effects; note who would know.
 9. **"How are partners and staff paid and promoted: hours, revenue, margin, client satisfaction?"** Reveals the main
    internal brake on pricing change (`#13`).
 10. **"Do partners raise AI with clients before the client does? What do they say first: value or discount?"** Reveals
-    the conversation gap (`#10`); TRI finds most do not.
+    the conversation gap (`#10`); TRI finds many do not.
 11. **"Do you sell, or plan to sell, anything clients use without a professional in the loop? How would you price and
     insure it?"** Reveals appetite for `#21`-`#23` and unanswered liability questions.
 12. **"What do you pay for AI tools (per seat or per use), and does any of it reach a client invoice?"** Reveals cost
@@ -180,7 +180,7 @@ does not mean a proportionally reduced fee; explain the fee basis [VSB-LEO1901-2
 clearly excessive and the client consents [NCBAR-FEO1-2024].
 
 **AI costs.** General AI subscriptions are overhead; matter-specific costs only with disclosure, at actual cost, no
-markup without informed written consent [CALBAR-GENAI-2026]; Texas caps recovery at the amount paid
+markup without informed written consent [CALBAR-GENAI-2026]; Texas generally limits recovery to the amount paid to the AI provider
 [TXETHICS-OP705-2025].
 
 **Accounting.** AICPA Code 1.510.001 bars contingent fees for audit, review, certain compilation and prospective
@@ -242,7 +242,7 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 - **"Clients still pay by the hour; why change?"** True for now: rates rose nearly 10% in Q1 2026 [TRI-LFFI-Q1-2026], and
   panellists expect the billable hour to last at least five years [TRI-ILTACON-2025]. But 32% of corporate clients are
   reconsidering providers [TR-FOP-2026], and TRI warns firms using AI mainly to justify higher rates are exposed if
-  budgets tighten [TRI-SOTLM-2026]. Offer hybrid options before clients demand them.
+  budgets tighten [TRI-SOTLM-2026]. Stanford's framework treats hybrid pricing as the usual resting point [STANFORD-DEL-2026].
 - **"If AI halves the work, we must halve the fee."** Not necessarily. On hourly matters, yes [ABA-OP512-2024]. On flat or
   value fees, California and Virginia allow the fee to reflect value and skill [CALBAR-GENAI-2026; VSB-LEO1901-2025];
   ABA 512 as quoted is stricter, so check the state and document the basis.
@@ -253,8 +253,9 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 - **"Fixed fees on AI-assisted work are too risky."** The risk is real: Tech Mahindra declined to guarantee prices on
   assumed 70-80% gains, and Infosys walked away from uneconomic contracts [REUTERS-ITSERVICES-2026]. Kopka Law says AFAs
   built only to save clients money fail [TRI-KOPKA-2026]. Use phase-based scoping and re-scoping triggers [TRI-ILTACON-2025].
-- **"Hold the price; AI makes our work better."** Clients disagree so far: 6% say most providers deliver AI quality gains
-  [TR-FOP-2026]; nearly 60% of in-house teams see no savings [BLOOMBERGLAW-ACC-2025]. Premium holds only if clients see value.
+- **"Hold the price; AI makes our work better."** Client data are not encouraging so far: 6% say most providers deliver AI quality
+  gains [TR-FOP-2026]; nearly 60% of in-house teams see no savings [BLOOMBERGLAW-ACC-2025]. TRI says a premium holds only
+  when clients clearly see value [TRI-SOTLM-2026].
 - **"Our people are paid on hours."** Then pricing will not move. Wipfli is changing metrics [BLOOMBERGTAX-PRICING-2026];
   TR says mismatched billing and performance frameworks undermine AI strategy [TR-FOP-2026].
 - **"Discounting AI work is the easy answer."** Leading with discounts can train clients to expect them; lead with what
