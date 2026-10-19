@@ -339,7 +339,7 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
   maturity: emerging
   problem: >
     Consulting reports for public bodies have gone out with fabricated references and a misquoted judge, and the
-    errors were found by an outside academic and a newspaper, not by the firm's review.
+    errors were found by an outside academic (Australia) and a news publication (Newfoundland and Labrador); no source reports them found by the firm's own review.
   solution: >
     Idea: before a report is issued, every footnote, quotation, calculation and reference in AI-assisted sections is
     traced to its source by a person who did not write the passage. The ICMCI code already says consultants
@@ -604,8 +604,7 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
     - Supervisors assess juniors' unaided review quality.
   role_evolution: >
     TR reports legal professionals expect the time to trusted judgment to extend by nearly two years, while tax
-    professionals expect it to shorten by one (TR-FOP-2026). Early careers in public-sector settings are described
-    as developing through quality assurance as the main learning framework (TR-FOP-2026).
+    professionals expect it to shorten by one (TR-FOP-2026).
   evidence_grade: D
   sources:
     - { ref: TRI-EVENTS-2026, title: "Thomson Reuters Institute events: Trust by Verify; Beyond Human in the Loop", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/events/trust-by-verify-catching-errors-in-ai-output-before-they-reach-the-court-or-client", date: 2026-10, access: full, locator: "event description (webinar listed 15 Oct 2026; abstract only)" }
@@ -638,13 +637,13 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
     running it internally.
   outcomes:
     - lever: quality
-      description: NBER pre-registered trial of a custom AI patent drafting assistant, blinded expert scoring (adjacent task: drafting).
+      description: "NBER pre-registered trial of a custom AI patent drafting assistant, blinded expert scoring (adjacent task: drafting)."
       figure: "Quality up 0.34 SD at 10 days and 0.38 SD at 90 days; unaided redline 0.32 SD better for treated lawyers overall, 0.45 SD for seniors, no average gain for juniors"
       measures: "Standard-deviation differences in blinded expert scores between treated and control lawyers on benchmark drafting tasks (with AI) and on an unaided patent application redline at three months."
       provenance: vendor-published
       source_ref: NBER-AUTOR-2026
     - lever: quality
-      description: HBS/BCG pre-registered experiment, 758 consultants, 18 tasks (adjacent: task performance).
+      description: "HBS/BCG pre-registered experiment, 758 consultants, 18 tasks (adjacent: task performance)."
       figure: "12.2% more tasks completed and 25.1% faster inside the frontier; 19% less likely to produce correct solutions on one task outside the frontier"
       measures: "Average effect of GPT-4 access versus no AI on tasks completed and time, and on the likelihood of a correct solution for one complex managerial task, per the working paper abstract."
       provenance: independent
@@ -723,7 +722,7 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
   title: Documented AI governance for professional indemnity insurance proposals and renewals
   archetype: professional-services
   module: quality-review
-  function: risk-compliance
+  function: risk-compliance-legal
   work_types: [review-assurance, document-production]
   pattern: other
   ladder: assist
@@ -854,7 +853,7 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
   title: Shadow-AI discovery and approved professional-grade tools as a quality control
   archetype: professional-services
   module: quality-review
-  function: risk-compliance
+  function: risk-compliance-legal
   work_types: [review-assurance, coordination-scheduling]
   pattern: monitor-diagnose-act
   ladder: assist
@@ -1033,7 +1032,7 @@ Method: `curl`, `pdftotext` and the r.jina.ai text mirror into a private working
 | IAMAG-LAWPL-2026 | How Generative AI Is Reshaping Professional Liability Risk for Law Firms | Independent Agent magazine | press | https://www.iamagazine.com/?p=32247 | 2026-03-09 | full |
 | TR-SQMS-2025 | SQMS 1 explained | Thomson Reuters tax and accounting blog | vendor | https://tax.thomsonreuters.com/blog/sqms-1-explained-a-practical-guide-to-firm-level-quality-management/ | 2025-09-02 | full |
 
-Counts by type: academic 6 (Stanford x2, HBS, NBER, Vals x2), survey 6 (TR-FOP, ILTA, TRI-STANDOUT, ACC/Everlaw, KPMG; TR-FOP counted once), regulator 5 (Cal Bar x2, FRC, two court judgments), professional-body 4 (ABA, Law Society, Bar Council, ICMCI), press 5, community 2, conference 2, standard-setter 1, firm 1, vendor 1. Total 32 sources opened (including 1 used for context only).
+Counts by type: academic 6 (Stanford x2, HBS, NBER, Vals x2), survey 5 (TR-FOP, ILTA, TRI-STANDOUT, ACC/Everlaw, KPMG), regulator 5 (Cal Bar x2, FRC, two court judgments), professional-body 4 (ABA, Law Society, Bar Council, ICMCI), press 5, community 2, conference 2, standard-setter 1, firm 1, vendor 1. Total 32 sources opened (TRI-STANDOUT used for context only).
 
 ---
 
