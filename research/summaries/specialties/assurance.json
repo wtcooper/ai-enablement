@@ -1,0 +1,106 @@
+{
+ "field": "assurance",
+ "specialties": [
+  {
+   "name": "Auditing the client's own AI",
+   "description": "Auditors gathering evidence over AI that clients use in financial reporting and controls.",
+   "examples": [
+    "assurance-controls-testing-15",
+    "assurance-assurance-over-ai-04"
+   ]
+  },
+  {
+   "name": "Selling AI assurance and certification",
+   "description": "New services giving independent opinions, certificates or bias audits on organisations' AI systems and governance.",
+   "examples": [
+    "assurance-assurance-over-ai-15",
+    "assurance-assurance-over-ai-21"
+   ]
+  },
+  {
+   "name": "Protecting auditor independence",
+   "description": "Keeping auditors independent as AI vendor ties, private-equity owners and AI services to clients grow.",
+   "examples": [
+    "assurance-acceptance-independence-16",
+    "assurance-acceptance-independence-17"
+   ]
+  },
+  {
+   "name": "Spotting forged and AI-made evidence",
+   "description": "Checking that invoices, confirmations and other audit evidence are genuine when AI makes forgery cheap.",
+   "examples": [
+    "assurance-substantive-testing-17",
+    "assurance-substantive-testing-04"
+   ]
+  },
+  {
+   "name": "SOC 2 reports and compliance platforms",
+   "description": "How compliance platforms, bundled offers and AI-native firms are changing SOC 2 reports and trust in them.",
+   "examples": [
+    "assurance-soc-attestation-14",
+    "assurance-soc-attestation-16"
+   ]
+  }
+ ],
+ "assign": {
+  "assurance-assurance-over-ai-01": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-02": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-03": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-04": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-05": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-06": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-07": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-09": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-11": "Auditing the client's own AI",
+  "assurance-controls-testing-15": "Auditing the client's own AI",
+  "assurance-controls-testing-24": "Auditing the client's own AI",
+  "assurance-planning-risk-assessment-06": "Auditing the client's own AI",
+  "assurance-substantive-testing-05": "Auditing the client's own AI",
+  "assurance-specialists-07": "Auditing the client's own AI",
+  "assurance-specialists-08": "Auditing the client's own AI",
+  "assurance-specialists-09": "Auditing the client's own AI",
+  "assurance-specialists-10": "Auditing the client's own AI",
+  "assurance-specialists-11": "Auditing the client's own AI",
+  "assurance-acceptance-independence-10": "Auditing the client's own AI",
+  "assurance-sustainability-assurance-13": "Auditing the client's own AI",
+  "assurance-assurance-over-ai-10": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-12": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-13": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-14": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-15": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-16": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-17": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-18": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-19": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-20": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-21": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-22": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-23": "Selling AI assurance and certification",
+  "assurance-assurance-over-ai-24": "Selling AI assurance and certification",
+  "assurance-quality-management-15": "Selling AI assurance and certification",
+  "assurance-acceptance-independence-01": "Protecting auditor independence",
+  "assurance-acceptance-independence-05": "Protecting auditor independence",
+  "assurance-acceptance-independence-06": "Protecting auditor independence",
+  "assurance-acceptance-independence-07": "Protecting auditor independence",
+  "assurance-acceptance-independence-12": "Protecting auditor independence",
+  "assurance-acceptance-independence-13": "Protecting auditor independence",
+  "assurance-acceptance-independence-14": "Protecting auditor independence",
+  "assurance-acceptance-independence-15": "Protecting auditor independence",
+  "assurance-acceptance-independence-16": "Protecting auditor independence",
+  "assurance-acceptance-independence-17": "Protecting auditor independence",
+  "assurance-acceptance-independence-18": "Protecting auditor independence",
+  "assurance-assurance-over-ai-08": "Spotting forged and AI-made evidence",
+  "assurance-planning-risk-assessment-15": "Spotting forged and AI-made evidence",
+  "assurance-controls-testing-23": "Spotting forged and AI-made evidence",
+  "assurance-substantive-testing-04": "Spotting forged and AI-made evidence",
+  "assurance-substantive-testing-17": "Spotting forged and AI-made evidence",
+  "assurance-soc-attestation-01": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-04": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-12": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-13": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-14": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-15": "SOC 2 reports and compliance platforms",
+  "assurance-soc-attestation-16": "SOC 2 reports and compliance platforms",
+  "assurance-controls-testing-14": "SOC 2 reports and compliance platforms"
+ }
+}

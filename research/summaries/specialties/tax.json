@@ -1,0 +1,108 @@
+{
+ "field": "tax",
+ "specialties": [
+  {
+   "name": "Tax authorities' own AI",
+   "description": "Tax authorities use AI to pick audits, screen fraud, answer taxpayers and work their cases.",
+   "examples": [
+    "tax-controversy-13",
+    "tax-controversy-18"
+   ]
+  },
+  {
+   "name": "Facing tax audits, notices and disputes",
+   "description": "Taxpayers use AI to anticipate audit flags, answer notices and audit queries, and argue disputes.",
+   "examples": [
+    "tax-controversy-03",
+    "tax-controversy-01"
+   ]
+  },
+  {
+   "name": "Real-time reporting and e-invoicing",
+   "description": "Invoices and transactions reported to authorities as they happen, replacing periodic returns.",
+   "examples": [
+    "tax-data-technology-12",
+    "tax-indirect-tax-08"
+   ]
+  },
+  {
+   "name": "Global minimum tax (Pillar Two)",
+   "description": "Collecting data, computing, filing and correcting the new global minimum tax across every jurisdiction.",
+   "examples": [
+    "tax-provision-pillar-two-12",
+    "tax-provision-pillar-two-11"
+   ]
+  },
+  {
+   "name": "Rule engines do the tax math",
+   "description": "AI reads facts and rules, while a deterministic engine computes the tax exactly and auditably.",
+   "examples": [
+    "tax-research-advisory-12",
+    "tax-compliance-individual-business-10"
+   ]
+  },
+  {
+   "name": "Tax when AI agents act",
+   "description": "Tax engines and rules adapting to AI agents that buy, file or answer for taxpayers.",
+   "examples": [
+    "tax-indirect-tax-16",
+    "tax-indirect-tax-17"
+   ]
+  }
+ ],
+ "assign": {
+  "tax-controversy-13": "Tax authorities' own AI",
+  "tax-controversy-14": "Tax authorities' own AI",
+  "tax-controversy-15": "Tax authorities' own AI",
+  "tax-controversy-16": "Tax authorities' own AI",
+  "tax-controversy-17": "Tax authorities' own AI",
+  "tax-controversy-18": "Tax authorities' own AI",
+  "tax-controversy-19": "Tax authorities' own AI",
+  "tax-controversy-20": "Tax authorities' own AI",
+  "tax-controversy-21": "Tax authorities' own AI",
+  "tax-controversy-22": "Tax authorities' own AI",
+  "tax-controversy-23": "Tax authorities' own AI",
+  "tax-controversy-24": "Tax authorities' own AI",
+  "tax-controversy-25": "Tax authorities' own AI",
+  "tax-controversy-01": "Facing tax audits, notices and disputes",
+  "tax-controversy-02": "Facing tax audits, notices and disputes",
+  "tax-controversy-03": "Facing tax audits, notices and disputes",
+  "tax-controversy-04": "Facing tax audits, notices and disputes",
+  "tax-controversy-05": "Facing tax audits, notices and disputes",
+  "tax-controversy-07": "Facing tax audits, notices and disputes",
+  "tax-controversy-08": "Facing tax audits, notices and disputes",
+  "tax-controversy-12": "Facing tax audits, notices and disputes",
+  "tax-compliance-corporate-13": "Facing tax audits, notices and disputes",
+  "tax-transfer-pricing-15": "Facing tax audits, notices and disputes",
+  "tax-transfer-pricing-16": "Facing tax audits, notices and disputes",
+  "tax-transfer-pricing-17": "Facing tax audits, notices and disputes",
+  "tax-transfer-pricing-18": "Facing tax audits, notices and disputes",
+  "tax-indirect-tax-14": "Facing tax audits, notices and disputes",
+  "tax-data-technology-12": "Real-time reporting and e-invoicing",
+  "tax-data-technology-13": "Real-time reporting and e-invoicing",
+  "tax-data-technology-14": "Real-time reporting and e-invoicing",
+  "tax-data-technology-16": "Real-time reporting and e-invoicing",
+  "tax-indirect-tax-08": "Real-time reporting and e-invoicing",
+  "tax-indirect-tax-18": "Real-time reporting and e-invoicing",
+  "tax-compliance-corporate-24": "Real-time reporting and e-invoicing",
+  "tax-provision-pillar-two-09": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-10": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-11": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-12": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-13": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-14": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-15": "Global minimum tax (Pillar Two)",
+  "tax-provision-pillar-two-16": "Global minimum tax (Pillar Two)",
+  "tax-compliance-individual-business-10": "Rule engines do the tax math",
+  "tax-compliance-corporate-22": "Rule engines do the tax math",
+  "tax-compliance-corporate-23": "Rule engines do the tax math",
+  "tax-research-advisory-12": "Rule engines do the tax math",
+  "tax-indirect-tax-22": "Rule engines do the tax math",
+  "tax-indirect-tax-16": "Tax when AI agents act",
+  "tax-indirect-tax-17": "Tax when AI agents act",
+  "tax-data-technology-17": "Tax when AI agents act",
+  "tax-data-technology-18": "Tax when AI agents act",
+  "tax-compliance-individual-business-25": "Tax when AI agents act",
+  "tax-research-advisory-18": "Tax when AI agents act"
+ }
+}

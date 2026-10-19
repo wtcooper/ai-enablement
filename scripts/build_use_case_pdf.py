@@ -204,7 +204,7 @@ for name, what, pats, sc in CATS:
         if not incat(u, pats, sc):
             pool = [v for b, v in allu if b == a and incat(v, pats, sc)]
             u = sorted(pool, key=lambda v: (v.get("title", "").startswith("Idea"), order.get(v.get("grade"), 9), len(v.get("title", ""))))[0]
-        ex.append(f"<font color='#57606a'>{label}:</font> {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
+        ex.append(f"<font color='#57606a'><b>{label[0]}</b></font>  {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
     crow.append([P(f"<b>{e(name)}</b><br/><font size='7.6' color='#57606a'>{e(what)}</font>", ss["cell"]),
                  P(f"<b>{n}</b><br/><font size='7.3' color='#57606a'>" + " · ".join(f"{l[0]}{len(counts[a])}" for a, l, _ in ARCHETYPES) + "</font>", ss["cell"]),
                  P("<br/>".join(ex), ParagraphStyle("ex", parent=ss["cell"], fontSize=7.8, leading=10.1))])
@@ -218,7 +218,7 @@ story += [heading("Executive summary", ss["title"], 0, "summary", "Executive sum
             f"from the AI Transformation Advisor's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
           P("<b>Key takeaways</b>", ss["ct"]), Spacer(1, 4)]
 take = [
-    f"<b>Broad and specific.</b> {N} examples across 29 focus areas in three fields, grouped on the next page into nine recurring categories. Every example names its sources and was checked against them.",
+    f"<b>Broad and specific.</b> {N} examples across 29 focus areas in three fields. Most fall into nine categories shared by all three fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI, tax authorities' own AI, and securing AI models and agents. Every example names its sources and was checked against them.",
     f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations, application security and AI security; audit controls and substantive testing. Thinnest: tax provision and Pillar Two, transfer pricing, corporate tax compliance, sustainability assurance.",
     f"<b>AI mostly does a first pass that a person checks.</b> {pct(lad['augment'], N)}% of examples augment a step and {pct(lad['assist'], N)}% assist a person; {pct(lad['automate'], N)}% automate a step and {pct(lad['delegate'], N)}% delegate a multi-step outcome to an agent with human checkpoints.",
     f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in all three fields.",
@@ -244,7 +244,7 @@ story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss
             "<font color='#9a6700'><b>C</b></font> vendor or analyst claim; <font color='#6e7781'><b>D</b></font> idea, not yet deployed. "
             "<b>Assist, Augment, Automate, Delegate</b> shows how much the AI does. No example uses client-confidential information.", ss["muted"]),
           PageBreak(), heading("Categories of use cases", ss["h1"], 1, "cats", "Executive summary"),
-          P("Nine kinds of change recur in all three fields. A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
+          P(f"Nine kinds of change recur in all three fields. Another {len(ASSIGN)} use cases sit in specialty categories found in only one field, shown on each field's pages. A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
           ct, PageBreak()]
 
 # Per-field category pages

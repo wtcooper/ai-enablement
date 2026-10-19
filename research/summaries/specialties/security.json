@@ -1,0 +1,114 @@
+{
+ "field": "security",
+ "specialties": [
+  {
+   "name": "Securing AI models and agents",
+   "description": "Defending the organisation's own AI models and agents against attack, misuse and data leakage.",
+   "examples": [
+    "security-ai-security-10",
+    "security-ai-security-14"
+   ]
+  },
+  {
+   "name": "AI agent incidents and response",
+   "description": "Detecting, investigating and reporting incidents where AI agents act beyond their authority or reach others.",
+   "examples": [
+    "security-ai-security-17",
+    "security-incident-response-19"
+   ]
+  },
+  {
+   "name": "Deepfakes, impersonation and fraud",
+   "description": "Spotting AI-made fake voices, faces and identities used to impersonate staff, customers or brands.",
+   "examples": [
+    "security-identity-access-21",
+    "security-human-risk-12"
+   ]
+  },
+  {
+   "name": "Surge of AI-found software flaws",
+   "description": "Frontier AI finds software flaws faster than teams can check, fix and disclose them.",
+   "examples": [
+    "security-vulnerability-exposure-01",
+    "security-vulnerability-exposure-12"
+   ]
+  },
+  {
+   "name": "AI-led penetration and attack testing",
+   "description": "AI agents attack the organisation's own systems, as testers would, to prove which weaknesses are real.",
+   "examples": [
+    "security-vulnerability-exposure-17",
+    "security-vulnerability-exposure-04"
+   ]
+  }
+ ],
+ "assign": {
+  "security-ai-security-01": "Securing AI models and agents",
+  "security-ai-security-02": "Securing AI models and agents",
+  "security-ai-security-03": "Securing AI models and agents",
+  "security-ai-security-04": "Securing AI models and agents",
+  "security-ai-security-06": "Securing AI models and agents",
+  "security-ai-security-07": "Securing AI models and agents",
+  "security-ai-security-08": "Securing AI models and agents",
+  "security-ai-security-10": "Securing AI models and agents",
+  "security-ai-security-12": "Securing AI models and agents",
+  "security-ai-security-13": "Securing AI models and agents",
+  "security-ai-security-14": "Securing AI models and agents",
+  "security-ai-security-15": "Securing AI models and agents",
+  "security-ai-security-16": "Securing AI models and agents",
+  "security-cloud-infrastructure-16": "Securing AI models and agents",
+  "security-data-privacy-08": "Securing AI models and agents",
+  "security-data-privacy-10": "Securing AI models and agents",
+  "security-data-privacy-12": "Securing AI models and agents",
+  "security-data-privacy-17": "Securing AI models and agents",
+  "security-data-privacy-18": "Securing AI models and agents",
+  "security-threat-intelligence-24": "Securing AI models and agents",
+  "security-ai-security-11": "AI agent incidents and response",
+  "security-ai-security-17": "AI agent incidents and response",
+  "security-ai-security-18": "AI agent incidents and response",
+  "security-ai-security-19": "AI agent incidents and response",
+  "security-ai-security-20": "AI agent incidents and response",
+  "security-incident-response-17": "AI agent incidents and response",
+  "security-incident-response-18": "AI agent incidents and response",
+  "security-incident-response-19": "AI agent incidents and response",
+  "security-incident-response-20": "AI agent incidents and response",
+  "security-incident-response-21": "AI agent incidents and response",
+  "security-human-risk-05": "Deepfakes, impersonation and fraud",
+  "security-human-risk-06": "Deepfakes, impersonation and fraud",
+  "security-human-risk-10": "Deepfakes, impersonation and fraud",
+  "security-human-risk-11": "Deepfakes, impersonation and fraud",
+  "security-human-risk-12": "Deepfakes, impersonation and fraud",
+  "security-human-risk-13": "Deepfakes, impersonation and fraud",
+  "security-human-risk-17": "Deepfakes, impersonation and fraud",
+  "security-human-risk-18": "Deepfakes, impersonation and fraud",
+  "security-identity-access-18": "Deepfakes, impersonation and fraud",
+  "security-identity-access-19": "Deepfakes, impersonation and fraud",
+  "security-identity-access-20": "Deepfakes, impersonation and fraud",
+  "security-identity-access-21": "Deepfakes, impersonation and fraud",
+  "security-identity-access-22": "Deepfakes, impersonation and fraud",
+  "security-identity-access-23": "Deepfakes, impersonation and fraud",
+  "security-identity-access-24": "Deepfakes, impersonation and fraud",
+  "security-threat-intelligence-18": "Deepfakes, impersonation and fraud",
+  "security-vulnerability-exposure-01": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-06": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-07": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-10": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-11": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-12": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-13": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-16": "Surge of AI-found software flaws",
+  "security-vulnerability-exposure-25": "Surge of AI-found software flaws",
+  "security-application-security-09": "Surge of AI-found software flaws",
+  "security-application-security-10": "Surge of AI-found software flaws",
+  "security-ai-security-05": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-04": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-17": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-18": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-19": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-20": "AI-led penetration and attack testing",
+  "security-vulnerability-exposure-21": "AI-led penetration and attack testing",
+  "security-cloud-infrastructure-10": "AI-led penetration and attack testing",
+  "security-cloud-infrastructure-19": "AI-led penetration and attack testing",
+  "security-application-security-11": "AI-led penetration and attack testing"
+ }
+}
