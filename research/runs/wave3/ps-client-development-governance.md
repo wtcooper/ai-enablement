@@ -55,7 +55,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   human_checkpoints:
     - "The partner decides whether and how to act on a suggested path or contact"
     - "Users or administrators set deny lists and keyword exclusions before data is processed"
-  role_evolution: "Introhive's CEO described CRM adoption at law firms as 'negligible' and said AI can act as the interface that prompts a lawyer to act, rather than asking the lawyer to log in (INTROHIVE-LAWSITES-2026, section 'A New Interface for An Old Problem'). BD teams shift from chasing data entry to governing data quality and access."
+  role_evolution: "Introhive's CEO described CRM adoption at law firms as 'negligible' and said AI can act as the interface that prompts a lawyer to act, rather than asking the lawyer to log in (INTROHIVE-LAWSITES-2026, section 'A New Interface for An Old Problem')."
   evidence_grade: C
   sources:
     - { ref: INTROHIVE-HOME-2026, title: "Relationship Intelligence Platform (home page)", publisher: "Introhive", type: vendor, url: "https://www.introhive.com/", date: 2026-09-27, access: full, locator: "section 'What can Relationship Intelligence do for your firm?'; date is the page's last-modified date" }
@@ -89,7 +89,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   risks_and_guardrails:
     - "For CPA firms, AI-related nonattest services such as developing or hosting an AI system for an attest client can raise independence concerns, and the existing nonattest and information-systems rules still apply (JOA-ETHICS-2026)"
     - "Panelists at the TRI forum warned that AI-generated briefs and opportunity matrices should guide lawyers, not replace judgment (TRI-CMBDO-2026)"
-    - "Information from prospective clients is protected under Model Rule 1.18 and must not be reused across the firm without checking (FMG-ABA512-2024, 'Confidentiality')"
+    - "Confidentiality duties extend to prospective and former clients under Model Rules 1.18(b) and 1.9(c), per ABA Opinion 512 as summarised (FMG-ABA512-2024, 'Confidentiality')"
   human_checkpoints:
     - "Partner reviews each suggested opportunity before outreach"
     - "Independence and conflict check by risk or ethics staff before a new service is proposed to an existing attest or adverse-sensitive client"
@@ -127,7 +127,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - "Contact frequency is a proxy; the source does not report whether it predicts client departure, so alert thresholds are unvalidated"
   human_checkpoints:
     - "Partner decides whether to contact the client and what to say"
-  role_evolution: "Account teams move from periodic manual reviews to responding to alerts; relationship managers need rules for escalation. No source quantifies the change."
+  role_evolution: "No source found describes role changes for alert-driven retention work. Introhive's CEO described the nudge as prompting the lawyer in their day-to-day workflow (INTROHIVE-LAWSITES-2026, 'A New Interface for An Old Problem')."
   evidence_grade: C
   sources:
     - { ref: INTROHIVE-LAWSITES-2026, title: "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds", publisher: "LawSites (Bob Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html", date: 2026-10-13, access: full, locator: "'What Partners Say They Want'; 'A New Interface for An Old Problem' (example of a 35-day nudge)" }
@@ -152,7 +152,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   solution: "Relationship, pipeline and billing data are joined so BD activity (introductions, meetings, cross-sell, pipeline influenced) can be attributed to revenue, replacing login and usage counts as the measure of return."
   outcomes:
     - { lever: growth, description: "Measurement gap in BD return", figure: "63% have no revenue-linked way to measure BD ROI; 15% can track revenue with strong attribution", measures: "Share of firms (as reported by the 123 surveyed partners) with no revenue-linked way to measure BD return on investment; share able to track revenue with strong attribution", provenance: vendor-published, source_ref: INTROHIVE-LAWSITES-2026 }
-    - { lever: growth, description: "What firms track instead", figure: "28% intermediate metrics; 22% usage and logins; 13% no formal measurement", measures: "Share of firms, per surveyed partners, tracking introductions and meetings; tracking usage and logins; having no formal measurement", provenance: vendor-published, source_ref: INTROHIVE-LAWSITES-2026 }
+    - { lever: growth, description: "What firms track instead of revenue-linked measures", figure: "28% intermediate metrics; 22% usage and logins; 13% no formal measurement", measures: "As the source states it, instead of a revenue-linked measure: share of firms tracking intermediate metrics such as introductions and meetings; tracking usage and logins; having no formal measurement (the three add to the 63%)", provenance: vendor-published, source_ref: INTROHIVE-LAWSITES-2026 }
   prerequisites:
     - "Shared identifiers across CRM, matter and billing systems"
     - "Agreement on what counts as influenced revenue; Introhive's CEO acknowledged the 'if I had only known' case is persuasive but 'not a slam dunk' (INTROHIVE-LAWSITES-2026, 'Measuring Return')"
@@ -167,7 +167,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - { ref: INTROHIVE-LAWSITES-2026, title: "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds", publisher: "LawSites (Bob Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html", date: 2026-10-13, access: full, locator: "section 'Measuring Return'" }
     - { ref: TRI-STANDOUT-2026, title: "Turning law firm AI strategies into practice: Findings from the 2026 Stand-out Lawyers Survey", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/turning-law-firm-ai-strategies-into-practice", date: 2026-08-06, access: full, locator: "'Turning strategy into systems', 'Moving to more value-based measurement'" }
   last_reviewed: 2026-10-19
-  notes: "Recorded as a measurement gap, not an outcome of AI. No firm was found that reports a revenue-attributed AI BD result. Percentages for tracking methods sum to more than the share without revenue-linked measurement, so options probably overlap or the bases differ; the source does not explain."
+  notes: "Recorded as a measurement gap, not an outcome of AI. No firm was found that reports a revenue-attributed AI BD result. The three alternative measures (28%, 22%, 13%) add to the 63% without a revenue-linked measure; the remaining firms are not described in the article."
 
 - id: professional-services-client-development-05
   title: Partners using general-purpose AI chatbots for BD research, outreach drafting and pitch preparation
@@ -193,7 +193,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - "ABA Opinion 512 asks lawyers to understand a tool's terms and whether it is self-learning before entering client information (FMG-ABA512-2024, 'Confidentiality')"
   human_checkpoints:
     - "Partner reviews every outbound message and checks claims about the client or the firm"
-  role_evolution: "Partners take on drafting and research once handled by BD staff; firms need guidance on what client information may be used in prompts. Introhive's survey reports that partners are being asked to take on BD responsibilities once left to marketing staff (INTROHIVE-LAWSITES-2026, 'A Complex Environment')."
+  role_evolution: "Introhive's CEO said partners are now being asked to take on BD responsibilities they once left to marketing staff (INTROHIVE-LAWSITES-2026, 'A Complex Environment'). California expects managerial lawyers to set clear AI policies and training (CALBAR-GENAI-2026, p. 7)."
   evidence_grade: C
   sources:
     - { ref: INTROHIVE-LAWSITES-2026, title: "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds", publisher: "LawSites (Bob Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html", date: 2026-10-13, access: full, locator: "paragraph beginning 'Among partners already using AI for business development'" }
@@ -230,7 +230,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   human_checkpoints:
     - "Account lead reviews the summary before it is shared or filed"
     - "Disclosure of the notetaker at the start of the meeting"
-  role_evolution: "Account teams spend less time on note-taking; call-coaching creates a monitoring question for partners that firms have not addressed in the sources found."
+  role_evolution: "No source found describes role changes from AI call summaries or coaching."
   evidence_grade: C
   sources:
     - { ref: CERTINIA-VEDA-2026, title: "Certinia AI and Veda agents", publisher: "Certinia", type: vendor, url: "https://certinia.com/solutions/ai", date: 2026-10, access: full, locator: "agent list: Call Summary Agent, Call Coach Agent; page undated" }
@@ -285,7 +285,6 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   maturity: in-production
   problem: "Clients expect AI to be used and want to know how it lowers cost and improves quality on their matters, but partners rarely raise the subject and firms cannot yet show matter-level savings."
   solution: "Firms prepare partners with talking points, client-specific insight, approved language on risk and limitations, and billing guidance, and sequence the conversation: what changed in the work, what changed for the client, what value that created, then how pricing should reflect it. Some firm leaders advise setting the meeting rather than waiting for the client to set terms."
-  pattern_note: "Not a standard agentic pattern: the AI role is preparation and evidence; the conversation is human."
   outcomes:
     - { lever: growth, description: "Low frequency of AI conversations with clients even among heavy AI users", figure: "about one-third", measures: "Share of 'embedded AI' partners (heavy users) among client-nominated stand-out lawyers who said they had discussed AI with at least 60% of their clients", provenance: vendor-published, source_ref: TRI-STANDOUT-2026 }
     - { lever: growth, description: "Lawyers who rarely have the conversation", figure: "more than one-third", measures: "Share of the stand-out lawyers surveyed who said they had talked about AI with fewer than 20% of their clients", provenance: vendor-published, source_ref: TRI-STANDOUT-2026 }
@@ -318,7 +317,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: professional-body, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: 2026-05-14, access: full, locator: "p. 7 (Communication) and p. 8 (Charging)" }
     - { ref: STANFORD-DEL-2026, title: "Pricing Consulting Services in the Age of Agentic AI: A Strategy Map for Executives", publisher: "Stanford Digital Economy Lab (Brynjolfsson, Petropoulos)", type: academic, url: "https://digitaleconomy.stanford.edu/app/uploads/2026/08/AI_Agents_and_Consulting_Service_Pricing.pdf", date: 2026-08-23, access: full, locator: "Abstract, p. 1; section 3, p. 6" }
   last_reviewed: 2026-10-19
-  notes: "Graded B because named firms (Greenberg Traurig, DLA Piper, Hogan Lovells, Ropes & Gray, Zarwin Baum) and a named client (GSK) describe the conversations in a conference account, and TRI measured how often partners have them; no outcome of the conversations (retained work, fee outcome) is published, so the grade stays below A. TRI is a publisher owned by a legal-technology vendor. The ACC/Everlaw survey was co-published by a vendor (Everlaw). In-house: the 59%, 24% and 61% figures are from in-house respondents. The Stanford paper is about consulting, not law, and its framework is qualitative (the authors call the evidence 'qualitative plausibility'). The 22% of firms with a GenAI strategy comes from a TR speaker at Legalweek; it is unrelated to the 22% in the Introhive survey, which counts partners who say their firm has a fully developed strategy."
+  notes: "Pattern is other: the AI role is preparation and evidence, and the conversation itself is human. Graded B because named firms (Greenberg Traurig, DLA Piper, Hogan Lovells, Ropes & Gray, Zarwin Baum) and a named client (GSK) describe the conversations in a conference account, and TRI measured how often partners have them; no outcome of the conversations (retained work, fee outcome) is published, so the grade stays below A. TRI is a publisher owned by a legal-technology vendor. The ACC/Everlaw survey was co-published by a vendor (Everlaw). In-house: the 59%, 24% and 61% figures are from in-house respondents. The Stanford paper is about consulting, not law, and its framework is qualitative (the authors call the evidence 'qualitative plausibility'). The 22% of firms with a GenAI strategy comes from a TR speaker at Legalweek; it is unrelated to the 22% in the Introhive survey, which counts partners who say their firm has a fully developed strategy."
 
 - id: professional-services-client-development-09
   title: Joint client and firm AI use-case development and measurement with key accounts
@@ -333,7 +332,6 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   maturity: emerging
   problem: "Neither firm nor client has a shared framework for measuring or splitting AI savings, so each side drives its own assumptions."
   solution: "Key clients and their firms agree how AI will be used on the client's work, supply work to test new use cases together, and define the savings measures jointly, instead of the firm presenting a tool tour or the client imposing guidelines."
-  pattern_note: "Relationship model rather than an agentic pattern."
   outcomes:
     - { lever: experience, description: "none published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: TRI-STANDOUT-2026 }
   prerequisites:
@@ -352,7 +350,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: professional-body, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: 2026-05-14, access: full, locator: "pp. 5 and 7" }
     - { ref: FMG-ABA512-2024, title: "ABA Issues Formal Guidance for Lawyers' Use of Generative AI", publisher: "FMG Law (Sunshine R. Fellows)", type: firm, url: "https://www.fmglaw.com/professional-liability/aba-issues-formal-guidance-for-lawyers-use-of-generative-ai/", date: 2024-08-14, access: full, locator: "'Confidentiality'" }
   last_reviewed: 2026-10-19
-  notes: "In-house: the named client voice is GSK (TRI-LEGALWEEK-2026). The evidence is a stated intent by a named client and analyst-reported practice among unnamed stand-out lawyers, so grade C; no named joint programme with results was found."
+  notes: "Pattern is other: a relationship model, not an agentic pattern. In-house: the named client voice is GSK (TRI-LEGALWEEK-2026). The evidence is a stated intent by a named client and analyst-reported practice among unnamed stand-out lawyers, so grade C; no named joint programme with results was found."
 
 - id: professional-services-client-development-10
   title: Client-facing reporting of AI use and savings at matter or account level
@@ -387,7 +385,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - { ref: FMG-ABA512-2024, title: "ABA Issues Formal Guidance for Lawyers' Use of Generative AI", publisher: "FMG Law (Sunshine R. Fellows)", type: firm, url: "https://www.fmglaw.com/professional-liability/aba-issues-formal-guidance-for-lawyers-use-of-generative-ai/", date: 2024-08-14, access: full, locator: "'Fees'" }
     - { ref: LOUBAR-2025, title: "Navigating AI with Outside Counsel: Practical Tips for In-House Counsel", publisher: "Louisville Bar Association, Bar Briefs (Crosby and Lavanga)", type: professional-body, url: "https://www.loubar.org/wp-content/uploads/2025/12/Bar-Briefs_December25_Navigating-AI-with-Outside-Counsel_Crosby-and-Lavanga-1.pdf", date: 2025-12, access: full, locator: "Tips 2, 3 and 6" }
   last_reviewed: 2026-10-19
-  notes: "Idea (grade D): discussed by Legalweek panelists and TRI, but no firm was found reporting matter-level AI value reports sent to clients. The billing mechanics (time capture, line items) belong to billing-collections; this entry covers the client-development step of using the evidence in the relationship. Related announced product work (Legora-Laurel, 2026-10-13) is documented in the firm-finance and landscape files."
+  notes: "Pattern is other: reporting step. Idea (grade D): discussed by Legalweek panelists and TRI, but no firm was found reporting matter-level AI value reports sent to clients. The billing mechanics (time capture, line items) belong to billing-collections; this entry covers the client-development step of using the evidence in the relationship. Related announced product work (Legora-Laurel, 2026-10-13) is documented in the firm-finance and landscape files."
 
 - id: professional-services-client-development-11
   title: AI disclosure and consent terms in engagement letters, outside counsel guideline responses and renewals
@@ -415,8 +413,8 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - "The ICMCI code requires consultants to tell clients when AI materially affects advice, analysis or deliverables, and encourages engagement terms on AI scope; routine productivity tools need not be disclosed individually (ICMCI-AICODE-2026, sections 3.3, 7.1 and 7.3)"
   human_checkpoints:
     - "Partner or risk lead approves the AI terms offered to or accepted from each client"
-    - "Terms reviewed at least annually as tools change"
-  role_evolution: "Account leads and general counsel's office jointly own a per-client register of AI terms; the register is an operating step rather than a one-off drafting exercise."
+    - "Terms reviewed annually as guidance evolves (WOODARD-2025, slide 'AICPA Guidance: AI Use & Transparency')"
+  role_evolution: "No source found describes role changes. Woodard's slides recommend updating AI clauses annually as guidance evolves (WOODARD-2025)."
   evidence_grade: B
   sources:
     - { ref: ILTA-TECHSURVEY-2026, title: "The ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: 2026-06, access: full, locator: "Q3.18 table, p. 5" }
@@ -498,7 +496,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   human_checkpoints:
     - "Responsible lawyer reviews each interaction and decides whether to proceed or tell the prospect no relationship will follow"
     - "Lawyer approval before any autonomous communication goes out"
-  role_evolution: "Intake staff supervise and escalate; Oregon's opinion treats the vendor as a nonlawyer assistant under Rule 5.3 so a lawyer must supervise it (OSB-FO-2026-208, section III)."
+  role_evolution: "Oregon says review of chatbot interactions may be delegated to trained staff, and that Rule 5.3 supervisory duties may reach third parties that provide chatbot services (OSB-FO-2026-208, section III.A footnote 10 and section III)."
   evidence_grade: C
   sources:
     - { ref: OSB-FO-2026-208, title: "Formal Opinion No 2026-208: Chatbots and AI Agent Communications", publisher: "Oregon State Bar", type: professional-body, url: "https://www.osbar.org/_docs/ethics/2026-208.pdf", date: 2026-02, access: full, locator: "Question and Conclusion; sections II, III.A-III.D" }
@@ -527,7 +525,7 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - { lever: growth, description: "none published", figure: "none published", measures: "not applicable. Survey expectation only: respondents expecting to run AI-driven BD rises from 8 to 40 of 123 over 18-24 months", provenance: vendor-published, source_ref: INTROHIVE-LAWSITES-2026 }
   prerequisites:
     - "Accurate relationship data and permissions (INTROHIVE-LAWSITES-2026)"
-    - "A defined limit on what the agent may send without review, which California and Oregon both require in effect (CALBAR-GENAI-2026, p. 6; OSB-FO-2026-208, section III.D)"
+    - "A defined limit on what the agent may send without review: California bars autonomous external transmission of client information without safeguards and human review, and Oregon calls it prudent to subject autonomous actions to lawyer approval (CALBAR-GENAI-2026, p. 6; OSB-FO-2026-208, section III.D)"
   risks_and_guardrails:
     - "A lawyer must not deploy an agentic AI system so that it autonomously transmits client information externally, including automated communications, without safeguards and human review (CALBAR-GENAI-2026, p. 6)"
     - "Lawyers must not let agentic systems communicate legal advice or act in a representative capacity without meaningful supervision (CALBAR-GENAI-2026, Executive Summary, p. 2)"
@@ -564,12 +562,12 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   problem: "Firms measure AI by hours saved. Clients judge on turnaround, transparency, risk identification and fees, and many firms hold little feedback on whether clients value AI-enabled work."
   solution: "Idea: firms ask clients about AI-enabled delivery (comfort by use, transparency, perceived value) through reviews and surveys, and use AI to summarise the feedback for account teams."
   outcomes:
-    - { lever: experience, description: "Client attitudes to AI in law firms (UK consumers and individuals)", figure: "none published as percentages; 642 respondents", measures: "Survey of 642 UK clients fielded in Q4 2025: most perceive AI as supporting lawyers, with unease about its use in case management and administration; the article gives no percentages for AI items", provenance: vendor-published, source_ref: LFMC-SJ-2026 }
+    - { lever: experience, description: "Client attitudes to AI in law firms, qualitative only", figure: "none published for AI items", measures: "Survey of 642 UK clients fielded in the last quarter of 2025: the article says most perceive AI as a supportive tool, with unease about its use in case management and administration, and gives no percentages for AI items", provenance: vendor-published, source_ref: LFMC-SJ-2026 }
   prerequisites:
     - "Value metrics defined with clients: faster turnaround, better risk identification, consistency, client satisfaction, capacity for more strategic work (TRI-STANDOUT-2026, 'Turning strategy into systems')"
   risks_and_guardrails:
     - "Disclosing AI use can lower trust, so wording in feedback requests can shift answers (SCHILKE-OBHDP-2025)"
-    - "Client feedback recorded with AI summaries is client information; the same confidentiality duties apply (CALBAR-GENAI-2026, p. 5)"
+    - "Client information entered into AI tools engages confidentiality duties (CALBAR-GENAI-2026, p. 5)"
   human_checkpoints:
     - "Account lead reviews feedback summaries and decides follow-up with the client"
   role_evolution: "Client-experience or BD roles take on AI-specific feedback design; partners hear AI-related concerns directly."
@@ -595,7 +593,6 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
   maturity: emerging
   problem: "Existing outside counsel guidelines predate AI and give clients no control over which AI tools are used, how output is reviewed or what is disclosed."
   solution: "In-house legal teams add an AI addendum or section to their guidelines (permitted and prohibited tools, no training on client data, written consent for pass-through AI charges, human review, records, audit rights) and add AI questions to panel and performance reviews. Firms must read and act on these as account requirements."
-  pattern_note: "Client-side governance step; included because it sets the terms of the firm's key accounts."
   outcomes:
     - { lever: risk, description: "none published", figure: "none published", measures: "not applicable. Advice articles; no survey of how many clients have adopted AI addenda was found", provenance: vendor-published, source_ref: CONVENTUS-2026 }
   prerequisites:
@@ -603,12 +600,12 @@ Single YAML block. Ids follow `professional-services-client-development-NN`. Gra
     - "Making compliance with the addendum a condition of engagement, per the Louisville Bar article's first tip (LOUBAR-2025, Tip 1)"
   risks_and_guardrails:
     - "Advisers recommend that AI-generated content be reviewed and approved by a qualified lawyer before reaching the client, that client data not go to external AI systems without prior approval, and that firms keep records to answer how AI was used (CONVENTUS-2026)"
-    - "The Louisville article says a firm's AI training time should not be billed unless the client asked for something new and agreed in advance (LOUBAR-2025, Tip 4 area on billing)"
+    - "The Louisville article says AI platform charges should pass through only with advance written consent, and AI training time should not be billed unless the client asked for something new and agreed in advance (LOUBAR-2025, billing paragraphs following Tip 3)"
     - "TRI reports that some clients still send 2023-style directives such as warranties that models are unbiased, alongside demands for savings (TRI-LEGALWEEK-2026)"
   human_checkpoints:
     - "Legal ops and the responsible lawyer decide which tools and uses are permitted for each firm"
     - "Periodic spot-checks of AI-assisted work product and billing (LOUBAR-2025, Tip 6)"
-  role_evolution: "In-house legal ops gain responsibility for AI governance of outside counsel; firm-side relationship partners must track each client's AI terms. In 2026, 86% of general counsel see legal as a significant business contributor against 17% of other C-suite executives (TRI-LDOR-2026)."
+  role_evolution: "TRI says many legal operations leaders see their function shifting into its own practice area and becoming the default first line of defence for AI pressure (TRI-LDOR-2026, key takeaways)."
   evidence_grade: C
   sources:
     - { ref: CONVENTUS-2026, title: "How To Write Outside Counsel Guidelines That Govern AI-Assisted Work", publisher: "Conventus Law", type: vendor, url: "https://conventuslaw.com/report/how-to-write-outside-counsel-guidelines-that-govern-ai-assisted-work/", date: 2026-06-03, access: full, locator: "sections 'What Updated Guidelines Should Cover' and 'Connecting Guidelines to Matter Management'" }
@@ -758,7 +755,7 @@ Each source was opened and read unless marked search-only. Types are the vocabul
 | CONVENTUS-2026 | How To Write Outside Counsel Guidelines That Govern AI-Assisted Work | Conventus Law | vendor | https://conventuslaw.com/report/how-to-write-outside-counsel-guidelines-that-govern-ai-assisted-work/ | 2026-06-03 | full |
 | MCA-SURVEY-2026 | MCA Member Survey 2026 | Management Consultancies Association | professional-body | https://www.mca.org.uk/reports/mca-member-survey-2026 | 2026-01-20 | full (page only; no AI-governance content used) |
 | ABA-LPM-MARKETING-2024 | Ethical Issues When Incorporating AI into Law Firm Marketing | ABA Law Practice Magazine | professional-body | https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2024/september-october-2024/ethical-issues-when-incorporating-ai-into-law-firm-marketing/ | 2024-09 | search-only (page returned 403) |
-| FRCSEARCH-ACC-2026 | ACC 2026 Chief Legal Officers Survey (press release, outside counsel data not seen) | ACC with FTI Consulting | survey | https://www.acc.com/about/newsroom/news/changing-c-suite-clos-grow-strategic-leadership-ai-and-global-uncertainty | 2026-01-29 | search-only |
+| ACC-FTI-CLO-2026 | ACC 2026 Chief Legal Officers Survey (press release, outside counsel data not seen) | ACC with FTI Consulting | survey | https://www.acc.com/about/newsroom/news/changing-c-suite-clos-grow-strategic-leadership-ai-and-global-uncertainty | 2026-01-29 | search-only |
 
 Type counts for the sources read in full: professional-body 15, survey 6, press 4, academic 5, regulator 3, vendor 4, firm 2, conference 2 (a total of 41 read in full, 3 search-only). The Florida text, ABA summaries and the Law Society pages were read through mirrors, summaries or a text mirror, and are marked above.
 
