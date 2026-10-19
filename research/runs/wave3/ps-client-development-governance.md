@@ -4,7 +4,7 @@ Module `client-development` (key-account and client relationship management: rel
 
 ## 1. Summary
 
-**Counts.** 16 candidate use cases: grade A 0, grade B 4, grade C 8, grade D 4 (labelled ideas). 44 sources opened and read (see section 5), plus 3 search-only items. Types read: professional-body 16, survey 6, press 7, academic 4, regulator 3, vendor 5, firm 2, conference 2 (some sources are counted by their closest type; see section 5 for the type of each).
+**Counts.** 16 candidate use cases: grade A 0, grade B 3, grade C 10, grade D 3 (labelled ideas). 40 sources opened and read in full (some through mirrors or summaries, marked in section 5), plus 3 search-only items. Types read: professional-body 14, survey 6, academic 5, press 4, vendor 4, regulator 3, firm 2, conference 2.
 
 **What the governance and evidence record says**
 
@@ -757,7 +757,7 @@ Each source was opened and read unless marked search-only. Types are the vocabul
 | ABA-LPM-MARKETING-2024 | Ethical Issues When Incorporating AI into Law Firm Marketing | ABA Law Practice Magazine | professional-body | https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2024/september-october-2024/ethical-issues-when-incorporating-ai-into-law-firm-marketing/ | 2024-09 | search-only (page returned 403) |
 | ACC-FTI-CLO-2026 | ACC 2026 Chief Legal Officers Survey (press release, outside counsel data not seen) | ACC with FTI Consulting | survey | https://www.acc.com/about/newsroom/news/changing-c-suite-clos-grow-strategic-leadership-ai-and-global-uncertainty | 2026-01-29 | search-only |
 
-Type counts for the sources read in full: professional-body 15, survey 6, press 4, academic 5, regulator 3, vendor 4, firm 2, conference 2 (a total of 41 read in full, 3 search-only). The Florida text, ABA summaries and the Law Society pages were read through mirrors, summaries or a text mirror, and are marked above.
+Type counts for the 40 sources read in full: professional-body 14, survey 6, academic 5, press 4, vendor 4, regulator 3, firm 2, conference 2. Search-only: ABA-OP512-2024, ABA-LPM-MARKETING-2024, ACC-FTI-CLO-2026. The Florida text, the ABA Opinion 512 content and the Law Society pages were read through a third-party mirror, secondary summaries or a text mirror, and are marked above.
 
 ---
 
