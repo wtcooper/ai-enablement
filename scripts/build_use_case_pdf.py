@@ -236,6 +236,63 @@ story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss
           P("Nine kinds of change recur in all three fields. A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
           ct, PageBreak()]
 
+# Per-field category pages
+PACK_PICKS = {   # hand-picked where the automatic choice fits the category poorly: (arch, category) -> [ids]
+    ("assurance", "Documents to decisions, and reconciliation"): ["assurance-substantive-testing-10", "assurance-completion-reporting-06"],
+    ("assurance", "Research and knowledge assistants"): ["assurance-planning-risk-assessment-01", "assurance-quality-management-12"],
+    ("assurance", "Agents that own a case end to end"): ["assurance-substantive-testing-21", "assurance-planning-risk-assessment-11"],
+    ("tax", "Triage, monitoring and response"): ["tax-controversy-19", "tax-controversy-03"],
+    ("tax", "Drafting with expert review"): ["tax-research-advisory-14", "tax-research-advisory-19"],
+    ("tax", "Research and knowledge assistants"): ["tax-research-advisory-01", "tax-indirect-tax-06"],
+    ("tax", "Governing, testing and controlling AI"): ["tax-compliance-individual-business-20", "tax-indirect-tax-15"],
+    ("security", "Documents to decisions, and reconciliation"): ["security-identity-access-03", "security-governance-risk-03"],
+    ("security", "Governing, testing and controlling AI"): ["security-ai-security-02", "security-governance-risk-18"],
+}
+modname = {}
+for a, _, _ in ARCHETYPES:
+    for m, _, _ in modules(a):
+        for u in data[(a, m)]:
+            modname[u["id"]] = NAMES.get(m, m)
+exs = ParagraphStyle("ex2", parent=ss["cell"], fontSize=7.8, leading=10.1)
+for a, label, _ in ARCHETYPES:
+    rows = [[P("<b>Category</b>", ss["cellb"]), P("<b>Use cases</b>", ss["cellb"]),
+             P("<b>Where it shows up</b>", ss["cellb"]), P("<b>Examples</b>", ss["cellb"])]]
+    for name, what, pats, sc in CATS:
+        us = [u for b, u in allu if b == a and incat(u, pats, sc)]
+        if not us:
+            rows.append([P(f"<b>{e(name)}</b>", ss["cell"]), P("0", ss["cell"]), P("", ss["cell"]), P("<font color='#57606a'>None in this field</font>", exs)])
+            continue
+        ab = sum(1 for u in us if u.get("grade") in "AB")
+        top = collections.Counter(modname[u["id"]] for u in us).most_common(3)
+        picks = PACK_PICKS.get((a, name))
+        if picks:
+            chosen = [byid[i] for i in picks]
+            assert all(incat(u, pats, sc) for u in chosen), (a, name, picks)
+        else:
+            cand = sorted(us, key=lambda u: (u.get("title", "").startswith("Idea"), order.get(u.get("grade"), 9), len(u.get("title", ""))))
+            chosen, seen = [], set()
+            for u in cand:
+                if modname[u["id"]] in seen and len(cand) > 2: continue
+                chosen.append(u); seen.add(modname[u["id"]])
+                if len(chosen) == 2: break
+        rows.append([P(f"<b>{e(name)}</b>", ss["cell"]),
+                     P(f"<b>{len(us)}</b> <font size='7.3' color='#57606a'>({pct(len(us), tot[a])}%)<br/>{ab} A/B</font>", ss["cell"]),
+                     P("<br/>".join(f"{e(m)} <font color='#57606a'>({c})</font>" for m, c in top), exs),
+                     P("<br/>".join(f"• {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>" for u in chosen), exs)])
+    pt = Table(rows, colWidths=[1.75 * inch, 0.85 * inch, 1.75 * inch, 2.65 * inch], repeatRows=1)
+    pt.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, 0), 0.8, NAVY),
+                            ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE), ("TOPPADDING", (0, 0), (-1, -1), 3),
+                            ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5)]))
+    us_all = [u for b, u in allu if b == a]
+    lead = collections.Counter()
+    for name, what, pats, sc in CATS:
+        lead[name] = sum(1 for u in us_all if incat(u, pats, sc))
+    big = " and ".join(n[0].lower() + n[1:] for n, _ in lead.most_common(2))
+    story += [heading(f"Categories in {label.lower()}", ss["h1"], 1, f"cats-{a}", "Executive summary"),
+              P(f"{tot[a]} use cases across {len(modules(a))} focus areas. The largest categories are {e(big)}. "
+                "Where it shows up lists the focus areas with the most use cases in that category; (A)-(D) = evidence grade.", ss["muted"]),
+              Spacer(1, 5), pt, PageBreak()]
+
 for a, label, blurb in ARCHETYPES:
     story += [heading(label, ss["h1"], 0, a, label), P(e(blurb), ss["sub"]), Spacer(1, 12)]
     rows = [[P("<b>Focus area</b>", ss["cellb"]), P("<b>What it covers</b>", ss["cellb"]), P("<b>Evidence</b>", ss["cellb"])]]
