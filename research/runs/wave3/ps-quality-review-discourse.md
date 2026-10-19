@@ -774,6 +774,7 @@ Method: pages opened with `curl` (HTML, PDF via `pdftotext`, one RSS feed, one J
 
 - Verification cost: 67% of Morae respondents fear it outweighs benefits; 48% must materially fix outputs (MORAE-ILR-2026).
 - Confident wrong answers: errors arrive in the same assured tone as correct ones (TRI-NEED2KNOW-2026).
+- At ILTACON 2026 (5,782 onsite attendees), the eDiscovery Today moderator of the AI-validation session reported that 'context' was needed when evaluating generative AI results (EDISCOVERYTODAY-ILTACON-2026).
 - Policy not followed under time pressure (CANLAWYER-SC-2026; ABA-LPT-SC-2026, which cites ignored policies, time pressure and overreliance).
 - Assumed validation by someone else in the chain (ACCOUNTINGTODAY-HALLUC1-2026, Desai).
 - Reviewers stressed and out of time to check every reference (ACCOUNTINGTODAY-HALLUC1-2026, Reyes).
@@ -923,7 +924,7 @@ Access is `full` unless stated. Types follow the vocabulary.
 | STANFORD-MAGESH-2024 | Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (2405.20362) | Stanford RegLab/HAI | academic | https://arxiv.org/abs/2405.20362 | 2024-05-30 |
 | VALS-VLAIR-2025 | Vals Legal AI Report | Vals AI | academic | https://www.vals.ai/vlair | 2025-02 |
 
-**Distinct sources opened: 52** (by type, counting each ref once: press 15, conference 7, vendor 7, academic 6, survey 6, podcast 4 (3 episode refs plus the REMINGER item; ABA feed counted once per ref), professional-body 2, community 2, firm 1, regulator 1; some refs share a document or feed). Not opened and not relied on: BriefCatch, LawDroid, Lawmatics, Cozen O'Connor (search summaries only).
+**Distinct source refs opened: 54** (the ABA podcast feed row also lists three further episodes). By type: press 18, conference 8, vendor 7, academic 6, survey 5, podcast 4, community 2, professional-body 2, regulator 1, firm 1. Not opened and not relied on: BriefCatch, LawDroid, Lawmatics, Cozen O'Connor (appeared in search summaries only).
 
 ## 6. Gaps
 

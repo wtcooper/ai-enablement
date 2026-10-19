@@ -4,7 +4,7 @@
 - **Module:** firm-finance. Firm-level finance and performance: rate setting, realization, profitability and partner economics, AI investment and ROI, outside capital and private equity, consumption-based AI costs.
 - **Angle:** practice. What firms and in-house teams actually do: case studies, named deployments, firm announcements, vendor deployments with named customers, product documentation, job postings that show real use.
 - **Prepared:** 2026-10-19. **Inputs:** `research/runs/wave3/landscape-professional-services.md`, `research/briefs/templates/vocabulary.md`.
-- **Method note.** Pages were opened with `curl` (PDFs with `pdftotext`; a few JavaScript-rendered or bot-blocked pages through the `r.jina.ai` text mirror). About 17 web searches were used as leads; the shared search budget then ran out, so the last two planned searches (Big Four FY26 results and UK listed law-firm results) were not run. Items seen only in search results are marked and kept out of grade A and B outcomes.
+- **Method note.** Pages were opened with `curl` (PDFs with `pdftotext`; a few JavaScript-rendered or bot-blocked pages through the `r.jina.ai` text mirror). Eight web searches were used as leads; the shared search budget then ran out, so the last two planned searches (Big Four FY26 results and UK listed law-firm results) were not run. Items seen only in search results are marked and kept out of grade A and B outcomes.
 
 ---
 
@@ -13,9 +13,9 @@
 - **Evidence is thick on commentary, surveys and vendor product pages, and thin on measured results.** 22 candidate use cases: A 0, B 11, C 9, D 2. No named firm publishes a measured effect of AI on rates, realization, profit per partner or return on AI spend. The closest items are self-reported thresholds or ratios: Holland & Hart's 70% weekly-active-user marker for a real pilot (TRI-ILTACON-IMPL-2026), McKinsey's "about a quarter" of fees on outcomes (BUSINESSINSIDER-MCKINSEY-2025), and Ogletree's remark that firms are settling on AI at about 1% of revenue (TRI-METER-2026).
 - **Spending is ahead of proof.** US law firms raised technology spending by nearly 11% and knowledge management by about 10% in 2025 (TRI-SOTLM-2026); PwC reports $3 billion invested across its network in AI and other capabilities (AT-PWC-2026); Kirkland's $500 million commitment came without ROI benchmarks (BLOOMBERGLAW-KIRKLAND-2026). Only 18% of surveyed professionals say their organisation tracks AI ROI (TRI-AIPS-2026), and no one in a 50-plus ILTACON audience claimed a strong measure (TRI-ILTACON-IMPL-2026).
 - **Variable AI cost is the new finance problem.** Legora moved its Agent Pro product to consumption pricing with matter-level attribution on 2026-06-23 (LEGORA-CBP-2026); Harvey's tokens processed rose fourteen-fold in six months (ARTLAW-HARVEY14X-2026); ILTACON sessions turned to "reading the meter" (TRI-METER-2026). Firms are debating whether to absorb the cost or bill it, within California's rule that general subscriptions are overhead (CALBAR-GENAI-2026). No firm is reported to bill token cost through.
-- **Pricing models are moving first in consulting and slowest in law.** McKinsey says about a quarter of fees are outcome-based (BUSINESSINSIDER-MCKINSEY-2025) and PwC plans subscription services (CPAPA-PWC-2026). In law, about 90% of legal dollars still flow through hourly arrangements (TRI-SOTLM-REPORT-2026) and almost two-thirds of law firm professionals say pricing is unchanged (TRI-FOP-LAW-2026), while BigHand's survey finds 89% of firms reporting rising write-offs despite 96% raising rates (BIGHAND-FINANCE-2026).
+- **Pricing change is further along at consulting firms than at law firms in this evidence.** McKinsey says about a quarter of fees are outcome-based (BUSINESSINSIDER-MCKINSEY-2025) and PwC plans subscription services (CPAPA-PWC-2026). In law, about 90% of legal dollars still flow through hourly arrangements (TRI-SOTLM-REPORT-2026) and almost two-thirds of law firm professionals say pricing is unchanged (TRI-FOP-LAW-2026), while BigHand's survey finds 89% of firms reporting rising write-offs despite 96% raising rates (BIGHAND-FINANCE-2026).
 - **Outside capital is real in accounting and early in law.** Crowe closed a KKR investment in August 2026 earmarked for talent, technology and innovation (AT-CROWE-2026). In law, MSO structures are the route, with a reported $700 million letter of intent for Wood Smith (BESTLAW-WSHB-2026) and new state restrictions (Colorado, Illinois).
-- **Quality evidence is almost absent.** No error rate, override rate or parallel-run result was found for AI in rate setting, profitability analytics or billing analytics. The only third-party validation is that bankruptcy fee examiners disclose Legal Decoder's tool as their methodology (LAWSITES-DECODER-2026).
+- **Quality evidence is almost absent.** No error rate, override rate or parallel-run result was found for AI in rate setting, profitability analytics or billing analytics. The nearest thing to third-party validation is that bankruptcy fee examiners disclose Legal Decoder's tool as their methodology (LAWSITES-DECODER-2026).
 - **In-house is thin.** One unnamed general counsel's account (BLOOMBERGLAW-BILLABLE-2026), Legal Decoder's work for UBS (LAWSITES-DECODER-2026) and a TRI report on legal operations (TRI-LDOR-2026) are the sources. No named in-house team publishes AI finance results.
 - **Evidence count:** 22 use cases (A: 0, B: 11, C: 9, D: 2). 55 sources, 54 read in full. Types: press 19, vendor 14, survey 12, conference 3, firm 2, professional-body 1, regulator 1, academic 1, community 1, podcast 1. No job posting was opened directly; Bloomberg Law's report of Kirkland's roughly 40 AI openings is the only job-posting evidence.
 
@@ -175,6 +175,22 @@ Conventions used below:
     date: '2026-03-17'
     access: full
     locator: section 'The reality of the AI efficiency gap'
+  - ref: BIGHAND-FINANCE-2026
+    title: 'BigHand 2026 Annual Law Firm Finance Report: Profitability, Cash Flow & AI Insights (landing page)'
+    publisher: BigHand
+    type: vendor
+    url: https://www.bighand.com/en-us/resources/whitepapers/2026-annual-law-firm-finance-report/
+    date: '2026-01-21'
+    access: full
+    locator: 'landing page: headline findings on billable hours and write-offs'
+  - ref: TRI-STANDOUT-2026
+    title: 'Turning law firm AI strategies into practice: Findings from the 2026 Stand-out Lawyers Survey'
+    publisher: Thomson Reuters Institute
+    type: survey
+    url: https://www.thomsonreuters.com/en/institute/reports/turning-law-firm-ai-strategies-into-practice
+    date: '2026-08-06'
+    access: full
+    locator: section 'How to talk to clients about AI'
   - ref: CALBAR-GENAI-2026
     title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 edition)
     publisher: State Bar of California, COPRAC
@@ -514,6 +530,14 @@ Conventions used below:
     date: '2026-07-08'
     access: full
     locator: analysis section
+  - ref: RADIANT-TOKENS-2026
+    title: Legal has a token problem, and the industry is just starting to notice
+    publisher: Radiant Law
+    type: vendor
+    url: https://www.radiantlaw.com/resources/legal-has-a-token-problem-and-the-industry-is-just-starting-to-notice
+    date: 2026-10
+    access: full
+    locator: opening paragraphs (secondary, vendor commentary)
   last_reviewed: '2026-10-19'
   notes: 'Grade B: named firm staff describe practice at a conference; no firm publishes a measured saving. HIKE2''s director said she has seen companies switch AI services off because usage was not producing revenue (TRI-METER-2026); this is an anecdote and the companies are unnamed. A Radiant Law marketing page reports Uber''s CTO saying the company used its 2026 AI budget in four months (RADIANT-TOKENS-2026, secondary, not verified at source).'
 - id: professional-services-firm-finance-08
@@ -591,6 +615,14 @@ Conventions used below:
     date: '2026-06-26'
     access: full
     locator: e-discovery comparison paragraph
+  - ref: TRI-LEGALWEEK-2026
+    title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide
+    date: '2026-03-13'
+    access: full
+    locator: section 'The contradictions in the room'
   last_reviewed: '2026-10-19'
   notes: 'Labelled an idea: discussed by practitioners and a regulator; no firm is reported to bill token costs through. E-discovery costs are cited as the precedent for pass-through.'
 - id: professional-services-firm-finance-09
@@ -674,6 +706,14 @@ Conventions used below:
     date: '2026-03-13'
     access: full
     locator: section 'Proving AI's path to saving clients money' ('still gathering the data')
+  - ref: BLOOMBERGLAW-KIRKLAND-2026
+    title: Kirkland's $500 Million AI Gambit Requires a Cast of Hundreds
+    publisher: Bloomberg Law
+    type: press
+    url: https://news.bgov.com/business-and-practice/kirklands-500-million-ai-gambit-requires-a-cast-of-hundreds
+    date: '2026-06-15'
+    access: full
+    locator: 'final paragraph: no ROI benchmarks provided'
   last_reviewed: '2026-10-19'
   notes: Holland & Hart's use is a stated practice and threshold, so B. The TRI cross-profession survey statistic is not specific to law firms, so it is context rather than a grade driver.
 - id: professional-services-firm-finance-10
@@ -908,6 +948,22 @@ Conventions used below:
     date: '2026-09-14'
     access: full
     locator: list of products firms are testing or piloting
+  - ref: LAUREL-BILLING-2026
+    title: 'Coming Soon: Laurel Billing - Defend every bill before it goes out'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/blog/coming-soon-laurel-billing
+    date: '2026-09-17'
+    access: full
+    locator: section 'Laurel Billing - your rules, enforced by an agent'
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 edition)
+    publisher: State Bar of California, COPRAC
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: page 8
   last_reviewed: '2026-10-19'
   notes: 'Grade B, not A: the Tonkon Torp figures are in a vendor customer story and are not attributed to the firm''s own tracked data, and time capture is an adjacent process (billing-collections). Outcomes are therefore not independent. The story gives 20 minutes in its summary and 21 in the text. The Legora-Laurel entries are announced, not live. Primary home for time capture and pre-bill review is billing-collections (see Routed).'
 - id: professional-services-firm-finance-14
@@ -961,6 +1017,14 @@ Conventions used below:
     date: '2026-09-03'
     access: full
     locator: body (Ropes & Gray remark; Clifford Chance and A&O Shearman examples)
+  - ref: RADIANT-TOKENS-2026
+    title: Legal has a token problem, and the industry is just starting to notice
+    publisher: Radiant Law
+    type: vendor
+    url: https://www.radiantlaw.com/resources/legal-has-a-token-problem-and-the-industry-is-just-starting-to-notice
+    date: 2026-10
+    access: full
+    locator: 'section ''BigLaw''s answer: own the infrastructure'' (vendor commentary)'
   last_reviewed: '2026-10-19'
   notes: 'Grade B: a named firm with a disclosed budget and team, no measured return. Maturity is ''piloting'': the fund formation tool was reported as launched in early June 2026 (headline in Bloomberg Law related stories), but no usage was seen. The nearly 40 job postings are reported by Bloomberg Law; the postings themselves were not opened.'
 - id: professional-services-firm-finance-15
@@ -1055,6 +1119,14 @@ Conventions used below:
     date: '2026-06-11'
     access: full
     locator: sections 'What Is the Market Saying?' and 'The Billing Model Problem'
+  - ref: CPATRENDLINES-PE-2026
+    title: Private Equity's Big Bet Faces an AI Shake-Up
+    publisher: CPA Trendlines Research
+    type: press
+    url: https://cpatrendlines.com/2026/06/19/private-equitys-big-bet-on-law-and-accounting-faces-an-ai-shake-up/
+    date: '2026-06-19'
+    access: search-only
+    locator: standfirst only (paywalled)
   last_reviewed: '2026-10-19'
   notes: B for a named, closed deal, but AI is only implied by 'technology and innovation'. Search results also named Grant Thornton (New Mountain Capital, January 2025) and Baker Tilly (Hellman & Friedman, February 2024) as earlier PE deals; these were not opened and carry no weight here.
 - id: professional-services-firm-finance-17
@@ -1167,6 +1239,14 @@ Conventions used below:
     date: '2026-05-28'
     access: full
     locator: paragraph on Queen's Tower Advisory (secondary, FT)
+  - ref: BESTLAW-WSHB-2026
+    title: 'Private Equity''s Biggest Law Firm Bet Yet: Inside the $700M Charlesbank-WSHB Deal (David L. Brown)'
+    publisher: Best Law Firms
+    type: press
+    url: https://www.bestlawfirms.com/articles/private-equity-law-firm-charlesbank-wood-smith-700-million/8482
+    date: '2026-09-16'
+    access: full
+    locator: sections on MSO regulation
   last_reviewed: '2026-10-19'
   notes: Audio not listened to. Grade B for the operating firm; the consulting challenger is a stated target, not evidence of operation.
 - id: professional-services-firm-finance-19
@@ -1295,6 +1375,14 @@ Conventions used below:
     date: '2026-10-13'
     access: full
     locator: second-phase paragraph
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 edition)
+    publisher: State Bar of California, COPRAC
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: page 8
   last_reviewed: '2026-10-19'
   notes: Demand is documented; supply (a firm reporting AI savings at matter level) is not. The client-development detail is routed to client-development.
 - id: professional-services-firm-finance-21
