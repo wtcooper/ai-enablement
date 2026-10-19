@@ -1,0 +1,2158 @@
+# professional-services / billing-collections use cases (synthesised 2026-10-19 from research/runs/wave3)
+# Time capture to cash: time entry, narratives and codes, client billing guidelines, pre-bill review, e-billing,
+# rejections and appeals, collections, and the client-side (in-house) review of the bills. Firm-level realisation,
+# profitability, AI cost and ROI live in firm-finance.yaml; deal-level pricing and fee terms in scoping-pricing.yaml.
+# Firm kinds are named in each entry's notes. In-house examples are tagged "in-house".
+
+- id: professional-services-billing-collections-01
+  title: Professionals review AI-drafted time entries built from captured email, document, call and application activity instead
+    of reconstructing time from memory (law and accounting firms)
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - transaction-processing
+  - data-reporting
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: background-agent
+  maturity: in-production
+  problem: Time is often written from memory at the end of a day or week, so short tasks are missed and recording time is
+    itself unbillable work (LEGORA-LAUREL-2026). Lerners lawyers described stopping work to log time and mixing pink slips,
+    Word files and dictation (LAUREL-LERNERS-2026). Warren Averett, an accounting firm, required daily time by 9:00 a.m.,
+    so each day began by reconstructing the previous one (LAUREL-WARREN-2026). A defense-firm COO links the tedium of time
+    capture to talent leaving defense work (TRI-KOPKA-2026).
+  solution: 'A capture layer records activity in email, documents, calls, meetings and applications, assigns it to a client
+    and matter, and drafts entries with narratives; the professional reviews, groups, edits and releases them. Laurel is named
+    at Lerners (integrated with Elite 3E), Obermayer, Tonkon Torp and Berger Singerman (integrated with Aderant) among law
+    firms, and at Warren Averett and GHJ among accounting firms; Allens, Wilson Sonsini and Fosters Solicitors are announced
+    selections or rollouts with no results. A Big Four firm''s tax division (unnamed) rolled it out to 1,000 timekeepers.
+    Billables AI (inside Litify), Ajax and Intapp Time sell comparable capture (LAUREL-LERNERS-2026; LAUREL-BERGER-2026; LAUREL-WARREN-2026;
+    LAUREL-GHJ-2026; LAUREL-BIGFOURTAX-2026; LAWSITES-LITIFY-2026; LAWSITES-AJAX-2025; INTAPP-TIMEKEEPING-2026). Pattern ''other'':
+    passive activity capture, classification and drafting, with a person reviewing.'
+  outcomes:
+  - lever: capacity
+    description: 'Lerners: additional billable time captured per lawyer per day after adopting Laurel.'
+    figure: +0.48 billable hours per lawyer daily
+    measures: '''billable hours captured per lawyer daily'' (customer-story key fact); baseline, period and sample not stated'
+    provenance: vendor-published
+    source_ref: LAUREL-LERNERS-2026
+  - lever: speed
+    description: Lerners' Firm Chair says her daily dockets take about five minutes including clean-ups, against 30 to 45
+      minutes before. A personal recollection, not a tracked metric.
+    figure: about 5 minutes versus 30 to 45 minutes
+    measures: time the Firm Chair says she spends on daily dockets (her own estimate)
+    provenance: self-reported
+    source_ref: LAUREL-LERNERS-2026
+  - lever: capacity
+    description: 'Tonkon Torp: extra time captured, revenue per timekeeper and entries per day.'
+    figure: 21 minutes a day (key facts; the body says 20); about $20,000 more revenue per timekeeper a year; 18% more entries
+      per day
+    measures: 'Laurel''s wording: ''average lift in daily billable hours per Laurel timekeeper'', revenue per timekeeper,
+      entries released per day; the managing partner mentions the firm''s own analytical work but it is not shown; no baseline'
+    provenance: vendor-published
+    source_ref: LAUREL-TONKON-2026
+  - lever: speed
+    description: 'Tonkon Torp: the page says the collection cycle is 20% faster; the key facts call it a 20% increase in release
+      velocity.'
+    figure: 20% faster
+    measures: collection cycle or release velocity (the page uses both); definition and baseline not stated
+    provenance: vendor-published
+    source_ref: LAUREL-TONKON-2026
+  - lever: capacity
+    description: 'Berger Singerman (law): billable time recovered and faster completion of entries.'
+    figure: nearly 15 minutes per attorney per day; entries completed about two days faster
+    measures: average billable time recovered by attorneys each day; time-entry completion time; method not stated
+    provenance: vendor-published
+    source_ref: LAUREL-BERGER-2026
+  - lever: capacity
+    description: 'GHJ (accounting): billable time and fees recovered per timekeeper.'
+    figure: 0.42 billable hours per timekeeper per day; $16,128 billable fees per timekeeper a year; 0.02 fewer days to time
+      submission
+    measures: Laurel key-facts wording; baseline and period not stated
+    provenance: vendor-published
+    source_ref: LAUREL-GHJ-2026
+  - lever: capacity
+    description: 'Unnamed Big Four tax division: first 1,000 adopters against a random control group balanced by sub-service
+      line and rank; Laurel says the firm audited and verified the method. The firm is unnamed, so this does not raise the
+      grade.'
+    figure: +2.3 chargeable hours per timekeeper per week
+    measures: chargeable hours per timekeeper per week attributable to Laurel against a random control group (adopter cohort
+      of 1,000)
+    provenance: vendor-published
+    source_ref: LAUREL-BIGFOURTAX-2026
+  prerequisites:
+  - Integration with the billing system and Microsoft tools (Elite 3E at Lerners; Aderant at Berger Singerman) (LAUREL-LERNERS-2026;
+    LAUREL-BERGER-2026)
+  - 'Switching off the legacy timekeeping route: Obermayer turned off its old system within weeks of launch, and GHJ turned
+    off its legacy system after the pilot (LAUREL-OBERMAYER-2026; LAUREL-GHJ-2026)'
+  - Training from day one (Lerners trains every new partner, associate and student) and a rollout plan for early adopters,
+    the majority and holdouts (Warren Averett) (LAUREL-LERNERS-2026; LAUREL-WARREN-2026)
+  - Client-centred file and matter naming so activity maps to the right matter (an Obermayer attorney changed his naming after
+    seeing the activity log) (LAUREL-OBERMAYER-2026)
+  - A way for timekeepers to pause capture for personal matters; Ajax describes one (LAWSITES-AJAX-2025)
+  - 'Security attestation: Laurel calls SOC 2 Type II the minimum bar and says ISO 42001 is increasingly relevant (LAUREL-TIMESHEETS-2026)'
+  risks_and_guardrails:
+  - Hourly bills must reflect time actually spent; billed time must accurately represent the work done (CALBAR-GENAI-2026,
+    p. 8; AUSLEG-AISTATEMENT-2024, p. 1). A drafted entry is a proposal; the stories do not describe how captured activity
+    is checked against effort.
+  - A Lerners partner says a challenged entry can be defended because it is 'literally AI saying how long I worked' (LAUREL-LERNERS-2026);
+    the regulator texts place the duty on the lawyer, so the lawyer's review stays the control.
+  - Capture reads email, documents and calls, so it monitors workers. The UK ICO has worker-monitoring guidance, marked under
+    review (ICO-MONITORING-2026). The EU AI Act lists AI intended to monitor and evaluate workers' performance and behaviour
+    as high-risk (EU-AIACT-ANNEX3-2024, point 4(b)), with Annex III obligations extended to 2 December 2027 (EC-AIACT-2026).
+    No source says whether time-capture tools fall in scope; it depends on intended use.
+  - On US federal time-and-materials contracts, vouchers must be substantiated by individual daily job timekeeping records
+    or other approved substantiation (FAR-52.232-7, paragraph (a)); no source addresses whether passively captured time meets
+    that.
+  - 'Review burden is a design question: Ajax claims Laurel needs 50-75 activities reviewed a day against 10-20 for Ajax;
+    a competitor''s unverified claim (LAWSITES-AJAX-2025). A rival vendor''s sponsored post calls screen monitoring imprecise
+    and invasive (LAWSITES-BILLABLESAI-2025).'
+  - Laurel states no public LLMs, single-tenant AI and customer-supplied keys; a vendor claim not independently tested (LAURELSITE-2026).
+  human_checkpoints:
+  - The timekeeper reviews, edits and releases each drafted entry (LAUREL-TONKON-2026; LAUREL-LERNERS-2026; LAUREL-WARREN-2026)
+  - Billing partner review of the bill built from the entries (existing step; not described in the stories)
+  role_evolution: Timekeepers move from writing time from memory to reviewing a system record (LEGORA-LAUREL-2026). Obermayer's
+    controller led the rollout and messaging (LAUREL-OBERMAYER-2026); Warren Averett has an AI Strategy Manager who described
+    the rollout (LAUREL-WARREN-2026). Berger Singerman says less time-entry administration frees professional staff for other
+    work (LAUREL-BERGER-2026).
+  evidence_grade: B
+  sources:
+  - ref: LAUREL-LERNERS-2026
+    title: How Lerners repaired client service issues, netting out to zero billing disputes (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/lerners
+    date: '2026-08-21'
+    access: full
+    locator: Key facts; 'Manual time entry created client service issues'; 'Transformative results'
+  - ref: LAUREL-OBERMAYER-2026
+    title: How Obermayer solved their timekeeping issue and reimagined how their attorneys work (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/obermayer
+    date: 2026-08
+    access: full
+    locator: The process; getting change management right
+  - ref: LAUREL-TONKON-2026
+    title: Tonkon Torp LLP embraces Laurel for superior client service and timekeeper happiness (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/tonkon-torp
+    date: '2026-08-21'
+    access: full
+    locator: Customer-story headline statistics; 'After Laurel'; 'Building trust with clients'
+  - ref: LAUREL-BERGER-2026
+    title: 'Berger Singerman and Laurel: a practical approach to AI adoption'
+    publisher: Laurel (customer story)
+    type: vendor
+    url: https://www.laurel.ai/press/berger-singermanand-laurel-a-practical-approach-to-ai-adoption
+    date: '2026-09-28'
+    access: full
+    locator: Paragraph beginning 'Laurel's platform automates time capture' (15 minutes, two days, Aderant integration)
+  - ref: LAUREL-WARREN-2026
+    title: How Warren Averett turned time entry into a competitive advantage (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/warren-averett
+    date: '2026-08-21'
+    access: full
+    locator: Hidden cost of manual time tracking; Getting it right from day one
+  - ref: LAUREL-GHJ-2026
+    title: How Laurel unlocked firmwide time intelligence for GHJ leadership (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/ghj
+    date: 2026-08
+    access: full
+    locator: Key facts; The solution
+  - ref: LAUREL-BIGFOURTAX-2026
+    title: Laurel drives annual profit for a Big Four firm (customer story, firm not named)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/laurel-drives-annual-profit-for-big-four-firm
+    date: 2026-09
+    access: full
+    locator: Key facts; 'A Note on Laurel's ROI Methodology'
+  - ref: LAUREL-AMLAW200-2026
+    title: Am Law 200 top VC firm customer story (firm not named)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/am-law-200-top-vc-firm
+    date: 2026-08
+    access: full
+    locator: Key facts (firm not named)
+  - ref: LAUREL-ALLENS-2026
+    title: Laurel expands Asia-Pacific presence through firmwide partnership with Allens
+    publisher: Laurel (press release)
+    type: vendor
+    url: https://www.laurel.ai/press/laurel-expands-asia-pacific-presence-through-firmwide-partnership-with-allens
+    date: '2026-05-28'
+    access: full
+    locator: Paragraphs 1 and 2 (firmwide rollout)
+  - ref: LAUREL-WSGR-2026
+    title: Laurel brings AI-powered time intelligence to Wilson Sonsini Goodrich & Rosati
+    publisher: Laurel (press release)
+    type: vendor
+    url: https://www.laurel.ai/press/laurel-brings-ai-powered-time-intelligence-to-wilson-sonsini-goodrich-rosati
+    date: 2026-08
+    access: full
+    locator: Paragraphs 1 and 2
+  - ref: LAUREL-FOSTERS-2026
+    title: Fosters Solicitors selects Laurel as its AI time platform
+    publisher: Laurel (press release; date from page metadata shared by several Laurel releases)
+    type: vendor
+    url: https://www.laurel.ai/press/fosters-solicitors-selects-laurel-as-its-ai-time-platform
+    date: '2026-08-19'
+    access: full
+    locator: Paragraph 1 (selected, deploying across 100 fee earners)
+  - ref: LAUREL-TIMESHEETS-2026
+    title: 'Automated timesheets for law firms: A complete 2026 guide'
+    publisher: Laurel (blog)
+    type: vendor
+    url: https://www.laurel.ai/blog/automated-timesheets-law-firms
+    date: '2026-09-17'
+    access: full
+    locator: Buying-criteria sections on capture depth, integrations, security and adoption
+  - ref: LAUREL-SOW-2025
+    title: The State of Work 2025 (report landing page; no publication date shown)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/state-of-work-2025
+    date: '2025'
+    access: full
+    locator: 'Highlights: approximately 11% of unsubmitted time should have been billed'
+  - ref: LAURELSITE-2026
+    title: 'Laurel home page: AI Timekeeping and Work Intelligence Platform'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai
+    date: 2026-10
+    access: full
+    locator: Security block; headline claims
+  - ref: LEGORA-LAUREL-2026
+    title: Legora and Laurel partner to capture the time lawyers spend in Legora as they work
+    publisher: Legora (press release)
+    type: vendor
+    url: https://legora.com/newsroom/legora-and-laurel-partner-to-capture-the-time-lawyers-spend-in-legora-as-they-work
+    date: '2026-10-13'
+    access: full
+    locator: Paragraph 2 (reconstruction from memory; recording time is unbillable)
+  - ref: LAWSITES-AJAX-2025
+    title: 'The Smart Screen Reader: How Ajax Is Automating Legal Timekeeping with AI-Powered Activity Tracking'
+    publisher: LawSites (Bob Ambrogi)
+    type: press
+    url: https://www.lawnext.com/2025/09/the-smart-screen-reader-how-ajax-is-automating-legal-timekeeping-with-ai-powered-activity-tracking.html
+    date: '2025-09-09'
+    access: full
+    locator: Paragraphs on 42-61% case studies, the review-volume claim and the pause function
+  - ref: LAWSITES-LITIFY-2026
+    title: Litify launches AI-powered time capture with Billables AI to recover lost time (press release carried by LawSites)
+    publisher: Litify and Billables AI (via LawSites)
+    type: vendor
+    url: https://www.lawnext.com/2026/05/litify-launches-ai-powered-time-capture-with-billables-ai-to-recover-lost-time.html
+    date: 2026-05
+    access: full
+    locator: Paragraphs 1-3 (AI time capture inside Litify; up to 30% of billable work unrecorded)
+  - ref: LAWSITES-BILLABLESAI-2025
+    title: 'Billing in the age of AI: a practical guide for law firms (sponsored post by Billables AI)'
+    publisher: LawSites (sponsored post)
+    type: press
+    url: https://www.lawnext.com/2025/10/billing-in-the-age-of-ai-a-practical-guide-for-law-firms.html
+    date: '2025-10-07'
+    access: full
+    locator: Factor 1
+  - ref: INTAPP-TIMEKEEPING-2026
+    title: Compliant timekeeping (Intapp Time for law firms)
+    publisher: Intapp
+    type: vendor
+    url: https://www.intapp.com/legal/timekeeping/
+    date: 2026-10
+    access: full
+    locator: '''Capture every minute: flexible timekeeping methods'''
+  - ref: TRI-KOPKA-2026
+    title: How one law firm is challenging a broken status quo around billing (Kopka Law)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/broken-status-quo-around-billing
+    date: '2026-04-30'
+    access: full
+    locator: Section quoting the COO on talent leaving because of time capture
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8, 'Charging for Work Produced by Generative AI and Generative AI Costs'
+  - ref: AUSLEG-AISTATEMENT-2024
+    title: Statement on the Use of Artificial Intelligence in Australian Legal Practice
+    publisher: Law Society of New South Wales, Legal Practice Board of Western Australia, Victorian Legal Services Board +
+      Commissioner
+    type: regulator
+    url: https://www.lawsociety.com.au/sites/default/files/2024-12/LS4590_PSP_Statement_AI_LawSocietyVersion.pdf
+    date: 2024-12
+    access: full
+    locator: p. 1, 'Charging costs that are fair, reasonable and proportionate'
+  - ref: ICO-MONITORING-2026
+    title: 'Employment practices and data protection: monitoring workers (page marked under review)'
+    publisher: UK Information Commissioner's Office
+    type: regulator
+    url: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/
+    date: 2026-10
+    access: full
+    locator: Page introduction and contents list
+  - ref: EU-AIACT-ANNEX3-2024
+    title: 'Annex III: High-risk AI systems referred to in Article 6(2) (online text of Regulation (EU) 2024/1689)'
+    publisher: artificialintelligenceact.eu
+    type: regulator
+    url: https://artificialintelligenceact.eu/annex/3/
+    date: 2024-08
+    access: full
+    locator: Point 4(b)
+  - ref: EC-AIACT-2026
+    title: 'AI Act: regulatory framework for AI (application timeline)'
+    publisher: European Commission
+    type: regulator
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    date: 2026-10
+    access: full
+    locator: '''Application timeline'''
+  - ref: FAR-52.232-7
+    title: FAR 52.232-7 Payments under Time-and-Materials and Labor-Hour Contracts (Nov 2021 clause text)
+    publisher: Acquisition.gov (US federal government)
+    type: regulator
+    url: https://www.acquisition.gov/far/52.232-7
+    date: 2021-11
+    access: full
+    locator: Paragraph (a), vouchers
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kinds: law firms (US, Canada, Australia: Lerners, Obermayer, Tonkon Torp, Berger Singerman, Allens, Wilson
+    Sonsini; also Fosters Solicitors) and accounting and advisory firms (US: Warren Averett, GHJ; an unnamed Big Four tax
+    division). Grade B, not A: every figure is on a vendor-authored page with no stated baseline or method; the only controlled
+    comparison (Big Four) is unnamed; Lerners'' docket time is a recollection. An unnamed Am Law 200 firm''s head-to-head
+    with Intapp Time (70% of users released more time; entries +24%; release more than 40% faster) and Ajax''s 42-61% uplift
+    in recorded hours are vendor claims with no named customer. Vendor sizing of unrecorded time does not agree: about 11%
+    of unsubmitted time (LAUREL-SOW-2025), up to 30% (Litify''s release, entry 02). No override or edit rate for drafted entries
+    is published anywhere. Three Laurel customer pages carry the same page date (21 Aug 2026), which may reflect a site update.
+    Firm-level use of the same data for leakage, profitability and leverage is held in professional-services-firm-finance-03.
+    Merged from practice 01 and 02, discourse 01 and governance 01.'
+- id: professional-services-billing-collections-02
+  title: Work done inside AI platforms is turned into draft time entries with matter context and a narrative, for the lawyer
+    to review
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - transaction-processing
+  - document-production
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: As more of the working day moves into AI platforms, that work is hard to capture and easy to leave off the timesheet;
+    Laurel says AI work has been among the hardest to capture, and firm leaders also want to see what the AI work returns
+    (LEGORA-LAUREL-2026).
+  solution: The AI platform passes completed tasks to the timekeeping system, which creates a draft entry with client, matter,
+    duration and an AI-generated narrative; the lawyer reviews, edits and submits it through the firm's normal approval process.
+    Aderant's iTimekeep integration with Harvey was announced as live on 2026-08-17 for firms using both; Laurel and Legora
+    announced on 2026-10-13 that each Legora task will become a draft entry, with automated capture available first and a
+    second phase to measure AI usage and value; Litify with Billables AI (2026-05) generates review-ready entries inside Litify;
+    Laurel and Thomson Reuters (2026-08-05) cover CoCounsel Legal, Westlaw, Practical Law and HighQ activity (ADERANT-ITIMEKEEPHARVEY-2026;
+    LEGORA-LAUREL-2026; LAWSITES-LITIFY-2026; TR-LAUREL-2026).
+  outcomes:
+  - lever: capacity
+    description: none published
+    figure: none published
+    measures: 'not applicable: announcements with no deployment results'
+    provenance: vendor-published
+    source_ref: ADERANT-ITIMEKEEPHARVEY-2026
+  prerequisites:
+  - Firm licenses both the AI platform and the timekeeping product (ADERANT-ITIMEKEEPHARVEY-2026; LEGORA-LAUREL-2026)
+  - Existing billing controls and approval workflow retained (ADERANT-ITIMEKEEPHARVEY-2026)
+  risks_and_guardrails:
+  - The sources do not say whether the duration on an auto-created entry is the lawyer's time or the AI task's run time. Hourly
+    billing must reflect time actually spent (CALBAR-GENAI-2026, p. 8; DCBAR-OP388-2024, section E), and a lawyer may not
+    bill time 'saved' by the tool (TXETHICS-OP705-2025, Fees). This is an open question for adopters, not a finding of the
+    sources.
+  - Lawyers may not charge a client for time spent learning a general AI tool (ABA-BLT-2024, Fees, summarising Formal Opinion
+    512).
+  - 'A client can bar pass-through of AI time: Zscaler''s guidelines say time and cost associated with AI-generated work product
+    shall not be passed on (ZSCALER-OCG-2025, ''Artificial Intelligence (AI)'').'
+  - Entry quality and guideline compliance are asserted by vendors and not measured publicly (LEGORA-LAUREL-2026; ADERANT-ITIMEKEEPHARVEY-2026).
+  human_checkpoints:
+  - Lawyer reviews, edits and submits each draft; the firm approval process applies (ADERANT-ITIMEKEEPHARVEY-2026; LEGORA-LAUREL-2026)
+  role_evolution: Lawyers confirm drafts generated from their own AI-assisted work instead of reconstructing it (LEGORA-LAUREL-2026;
+    described aim).
+  evidence_grade: C
+  sources:
+  - ref: ADERANT-ITIMEKEEPHARVEY-2026
+    title: Aderant launches iTimekeep integration with Harvey, turning AI-powered legal work into billable time
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-launches-itimekeep-integration-with-harvey
+    date: '2026-08-17'
+    access: full
+    locator: Paragraphs 1 to 3 ('now live'; draft with matter context, duration and narrative)
+  - ref: ADERANT-HARVEY-2025
+    title: Aderant and Harvey announce market-defining partnership
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-and-harvey-announce-market-defining-partnership
+    date: '2025-12-15'
+    access: full
+    locator: Paragraphs 1 to 3 (partnership announcement)
+  - ref: LEGORA-LAUREL-2026
+    title: Legora and Laurel partner to capture the time lawyers spend in Legora as they work
+    publisher: Legora (press release)
+    type: vendor
+    url: https://legora.com/newsroom/legora-and-laurel-partner-to-capture-the-time-lawyers-spend-in-legora-as-they-work
+    date: '2026-10-13'
+    access: full
+    locator: Paragraphs 2 to 5; the two-phase list
+  - ref: LAWSITES-LAUREL-2026
+    title: Legora and Laurel Partner to Enable Automatic Time Capture; Will Later Develop Measures of Legora's Value to Firms
+    publisher: LawSites (Bob Ambrogi)
+    type: press
+    url: https://www.lawnext.com/2026/10/legora-and-laurel-partner-to-enable-automatic-time-capture-will-later-develop-measures-of-legoras-value-to-firms.html
+    date: '2026-10-13'
+    access: full
+    locator: Paragraphs 1 to 6
+  - ref: LAWSITES-LITIFY-2026
+    title: Litify launches AI-powered time capture with Billables AI to recover lost time (press release carried by LawSites)
+    publisher: Litify and Billables AI (via LawSites)
+    type: vendor
+    url: https://www.lawnext.com/2026/05/litify-launches-ai-powered-time-capture-with-billables-ai-to-recover-lost-time.html
+    date: 2026-05
+    access: full
+    locator: Paragraphs 1 to 3
+  - ref: LAUREL-TR-2026
+    title: Laurel and Thomson Reuters partner to help law firms prove the business value of AI
+    publisher: Laurel (press release)
+    type: vendor
+    url: https://www.laurel.ai/press/laurel-and-thomson-reuters
+    date: '2026-08-05'
+    access: full
+    locator: Opening paragraphs
+  - ref: TR-LAUREL-2026
+    title: Thomson Reuters and Laurel connect legal AI to ROI
+    publisher: Thomson Reuters (legal blog)
+    type: vendor
+    url: https://legal.thomsonreuters.com/blog/thomson-reuters-and-laurel-help-law-firms-connect-legal-ai-to-business-outcomes/
+    date: '2026-08-05'
+    access: full
+    locator: Section on Laurel Time capturing CoCounsel Legal, Westlaw, Practical Law and HighQ activity
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  - ref: DCBAR-OP388-2024
+    title: Ethics Opinion 388 (generative AI in client matters)
+    publisher: District of Columbia Bar
+    type: professional-body
+    url: https://www.dcbar.org/for-lawyers/legal-ethics/ethics-opinions-210-present/ethics-opinion-388
+    date: 2024-04
+    access: full
+    locator: Section E, Fees
+  - ref: TXETHICS-OP705-2025
+    title: Opinion 705 (generative AI in the practice of law)
+    publisher: Professional Ethics Committee for the State Bar of Texas, via Texas Center for Legal Ethics
+    type: professional-body
+    url: https://www.legalethicstexas.com/resources/opinions/opinion-705/
+    date: 2025-02
+    access: full
+    locator: Fees section
+  - ref: ABA-BLT-2024
+    title: ABA Ethics Opinion on Generative AI Offers Useful Framework (summary of Formal Opinion 512, issued 29 July 2024)
+    publisher: American Bar Association, Business Law Today
+    type: professional-body
+    url: https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-october/aba-ethics-opinion-generative-ai-offers-useful-framework/
+    date: 2024-10
+    access: full
+    locator: Summary bullets, Fees (Model Rule 1.5)
+  - ref: ZSCALER-OCG-2025
+    title: Outside Counsel Billing Guidelines (revised April 7, 2025); a client's own primary document (in-house)
+    publisher: Zscaler, Inc.
+    type: firm
+    url: https://www.zscaler.com/legal/outside-counsel-billing-guidelines
+    date: '2025-04-07'
+    access: full
+    locator: Section 'Artificial Intelligence (AI)'
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms. Grade C: four vendor announcements, none naming a firm that uses the integration. The Litify
+    release repeats vendor ceilings (''up to 30%'' of billable work unrecorded; up to 90% less narrative time). Dates: the
+    Litify release is dated 2026-05-19 in one input and 2026-05-21 in another; the month is used. Measuring AI value from
+    the same data is held in professional-services-scoping-pricing-09 (client evidence) and firm-finance (ROI). Merged from
+    practice 10, discourse 02 and governance 02.'
+- id: professional-services-billing-collections-03
+  title: Client billing guidelines are turned into rules and checked as each time entry is written, with suggested narratives
+    and task codes
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - document-production
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: 'Outside counsel guidelines (OCGs: a client''s billing rules for the firms it hires) can run 15 to 100 pages per
+    client (LAUREL-BILLING-2026), and a product lead at Zero Systems calls retaining hundreds of clients'' rules humanly impossible
+    (LEGALIT-FOLEY-2024). Clients enforce them hard: Zscaler rejects block-billed lines (resubmit at a 15% reduction, or pay
+    at a non-appealable 10% reduction at its discretion) and discounts invoices received more than 60 days late by 20% (ZSCALER-OCG-2025).
+    E-billing systems reject invoices without valid LEDES or UTBMS codes (LAYER3-BILLINGOCG-2026). Intapp says revenue leaks
+    when entries are coded inconsistently or returned in billing review (INTAPP-TIMERELEASE-2026).'
+  solution: Guideline documents are read once into rules (prohibited activities, restricted words, narrative and format requirements,
+    staffing rules) held at firm, client or matter level; an administrator approves them before they go live. Each entry is
+    then checked as it is written, with suggested narratives and task codes the timekeeper accepts or edits. Intapp's May
+    2026 Time release adds work-code prediction from the narrative and the matter's coding history and one-click narrative
+    compliance; Laurel's compliance feature gives inline feedback and feeds later bill corrections back into narrative and
+    code drafting; Aderant's Time Agent (early access, 2026-08-25) improves narratives, flags billing risk and recommends
+    codes; Elite Validate (announced 2025-02-11) reads OCGs into billing rules and learns from past rejections (INTAPP-TIMERELEASE-2026;
+    LAUREL-COMPLIANCE-2026; LAUREL-BILLING-2026; ADERANT-AGENTSEAP-2026; ELITE-VALIDATE-2025).
+  outcomes:
+  - lever: speed
+    description: Pre-bill review time at one unnamed Laurel customer, which Laurel attributes to rules enforced at timekeeping.
+    figure: 30-40% reduction
+    measures: pre-bill review time at one customer, 'from that alone'; baseline, period and method not stated
+    provenance: vendor-published
+    source_ref: LAUREL-BILLING-2026
+  - lever: speed
+    description: Intapp headline for time-entry release speed.
+    figure: 75% faster time entry release
+    measures: Intapp heading; no numerator, denominator, sample or period stated
+    provenance: vendor-published
+    source_ref: INTAPP-TIME-2026
+  - lever: cost
+    description: Intapp's 'high-ROI' labels for Intapp Time plus Billstream.
+    figure: 40% faster revenue cycles; 20% less time spent entering time; 10% reduction in write-offs
+    measures: Intapp's labels; no sample, period or baseline stated
+    provenance: vendor-published
+    source_ref: INTAPP-TIMEBILL-2026
+  prerequisites:
+  - Each client's guidelines codified and kept current; Zscaler states it may modify its guidelines at any time (ZSCALER-OCG-2025,
+    'Summary')
+  - Administrator review of extracted rules before enforcement; enforcement set per rule as block, acknowledge, warn or awareness
+    (LAUREL-COMPLIANCE-2026)
+  - Matter coding history to learn from (INTAPP-TIMERELEASE-2026) and integration with the billing system (LAUREL-BILLING-2026)
+  risks_and_guardrails:
+  - A narrative drafted to satisfy a guideline must still describe work actually done (AUSLEG-AISTATEMENT-2024, p. 1; CALBAR-GENAI-2026,
+    p. 8).
+  - 'Clients give conflicting AI instructions: some want AI used and savings shown, others require permission before any AI
+    use (TRI-LEGALWEEK-2026, DLA Piper panel), so rules need per-client AI terms as well as format rules (see entry 14).'
+  - The UTBMS code-set index lists no AI-specific code set (LEDES-UTBMS-2026).
+  - Elite Validate applies rules only after the firm accepts them; Aderant says users are the final decision makers in all
+    agent workflows (ELITE-VALIDATE-2025; ADERANT-AGENTSEAP-2026).
+  human_checkpoints:
+  - Risk or billing administrator approves extracted rules (LAUREL-COMPLIANCE-2026)
+  - Timekeeper accepts or edits suggested codes and narratives before release (INTAPP-TIMERELEASE-2026)
+  role_evolution: Timekeepers review suggestions instead of looking up codes; risk and billing administrators approve machine-extracted
+    rules instead of summarising guideline documents (INTAPP-TIMERELEASE-2026; LAUREL-COMPLIANCE-2026). Billers and coordinators
+    are described moving from re-keying partner mark-ups to approving flagged fixes (LAUREL-BILLING-2026; vendor description).
+  evidence_grade: C
+  sources:
+  - ref: LAUREL-BILLING-2026
+    title: 'Coming Soon: Laurel Billing - Defend every bill before it goes out (Nick Bazley)'
+    publisher: Laurel (blog)
+    type: vendor
+    url: https://www.laurel.ai/blog/coming-soon-laurel-billing
+    date: '2026-09-17'
+    access: full
+    locator: '''Careful billing is still done by hand''; ''How it works'''
+  - ref: LAUREL-COMPLIANCE-2026
+    title: 'Compliance: every billing guideline, applied automatically (product page)'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/platform/compliance
+    date: 2026-10
+    access: full
+    locator: Rule extraction and application; entry-level enforcement; generate compliant narratives
+  - ref: INTAPP-TIMERELEASE-2026
+    title: New Intapp Time release brings AI deeper into the time entry workflow to capture more billable hours and protect
+      earned revenue
+    publisher: Intapp (press release via Nasdaq/Business Wire)
+    type: vendor
+    url: https://www.nasdaq.com/press-release/new-intapp-time-release-brings-ai-deeper-time-entry-workflow-capture-more-billable
+    date: '2026-05-21'
+    access: full
+    locator: Paragraphs 3 to 6 (release features)
+  - ref: INTAPP-TIME-2026
+    title: 'Intapp Time: AI time tracking software'
+    publisher: Intapp
+    type: vendor
+    url: https://www.intapp.com/time-tracking/
+    date: 2026-10
+    access: full
+    locator: Protect earned revenue section; 75% heading
+  - ref: INTAPP-TIMEBILL-2026
+    title: AI-powered timekeeping and prebilling for maximum revenue (Intapp compliant time and billing)
+    publisher: Intapp
+    type: vendor
+    url: https://www.intapp.com/legal/ai-powered-timekeeping-compliant-billing/
+    date: 2026-10
+    access: full
+    locator: A high-ROI solution
+  - ref: INTAPP-TERMS-2026
+    title: 'Intapp Terms: enforce client obligations everywhere (product page)'
+    publisher: Intapp
+    type: vendor
+    url: https://www.intapp.com/terms/
+    date: 2026-10
+    access: full
+    locator: Agentic obligation capture; enforcement in Intapp Time and Billstream
+  - ref: ADERANT-AGENTSEAP-2026
+    title: Aderant launches early access to AI agents built to enhance law firm operations
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-launches-early-access-to-ai-agents
+    date: '2026-08-25'
+    access: full
+    locator: Time Agent bullet
+  - ref: ELITE-VALIDATE-2025
+    title: 'Elite launches Elite Validate: legal invoice compliance solution'
+    publisher: Elite (press release)
+    type: vendor
+    url: https://www.elite.com/insights/news/press-releases/elite-launches-elite-validate
+    date: '2025-02-11'
+    access: full
+    locator: Paragraphs 3 to 5 (key benefits)
+  - ref: LEGALIT-FOLEY-2024
+    title: Foley Mansfield goes live with Verify from Zero Systems for gen AI pre-bill review
+    publisher: Legal IT Insider
+    type: press
+    url: https://legaltechnology.com/foley-mansfield-goes-live-with-verify-from-zero-systems-for-gen-ai-pre-bill-review/
+    date: '2024-05-15'
+    access: full
+    locator: Product lead's quote on OCG volume
+  - ref: ZSCALER-OCG-2025
+    title: Outside Counsel Billing Guidelines (revised April 7, 2025); a client's own primary document (in-house)
+    publisher: Zscaler, Inc.
+    type: firm
+    url: https://www.zscaler.com/legal/outside-counsel-billing-guidelines
+    date: '2025-04-07'
+    access: full
+    locator: Sections 'Summary', 'Invoicing', 'Block Billing'
+  - ref: LAYER3-BILLINGOCG-2026
+    title: 'Outside Counsel Billing Guidelines: plain-language guide (updated 7 Jul 2026)'
+    publisher: Layer3 Labs
+    type: vendor
+    url: https://www.layer3labs.io/guides/outside-counsel-billing-guidelines
+    date: '2026-07-07'
+    access: full
+    locator: Core requirements; how software enforces guidelines
+  - ref: TRI-LEGALWEEK-2026
+    title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide
+    date: '2026-03-13'
+    access: full
+    locator: DLA Piper panel, 'The contradictions in the room'
+  - ref: AUSLEG-AISTATEMENT-2024
+    title: Statement on the Use of Artificial Intelligence in Australian Legal Practice
+    publisher: Law Society of New South Wales, Legal Practice Board of Western Australia, Victorian Legal Services Board +
+      Commissioner
+    type: regulator
+    url: https://www.lawsociety.com.au/sites/default/files/2024-12/LS4590_PSP_Statement_AI_LawSocietyVersion.pdf
+    date: 2024-12
+    access: full
+    locator: p. 1
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  - ref: LEDES-UTBMS-2026
+    title: LEDES Oversight Committee site (ledes.org) and UTBMS.com code-set index
+    publisher: LEDES Oversight Committee
+    type: standard-setter
+    url: https://www.utbms.com/
+    date: 2026-10
+    access: full
+    locator: UTBMS.com code-set index (read 19 Oct 2026)
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms. Grade C: vendor releases and one unnamed customer; no named firm reports using the AI entry
+    checks. Intapp Terms names Fredrikson & Byron and Dickinson Wright, but their quotes are about faster review of terms,
+    not billing enforcement; that named use is held in professional-services-acceptance-risk-10 (OCG extraction and categorisation),
+    so it is cross-referenced, not repeated. Elite added generative narrative drafting to 3E in 2023 (search results only).
+    Merged from practice 03 and 04 and governance 03.'
+- id: professional-services-billing-collections-04
+  title: A firm-built tool checks time-entry narratives in bulk before billing and proposes corrections (Linklaters)
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - document-production
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: Reviewing narrative time entries for the wrong workstream, typos and non-compliance with client requirements is
+    laborious (NONBILLABLE-LINKLATERS-2025).
+  solution: Linklaters' Narrative Checker is an Excel plugin that sends narratives to Laila, the firm's in-house chatbot,
+    to find common time-recording issues and propose corrections that the user reviews. A managing associate built it as a
+    side project; it was developed with the in-house development team, piloted globally over the summer and released to the
+    whole firm on 1 September; the interview is dated 2025-10-09 (NONBILLABLE-LINKLATERS-2025).
+  outcomes:
+  - lever: speed
+    description: Processing speed as described by the managing associate who built it.
+    figure: around a thousand narratives a minute
+    measures: narratives processed per minute, as stated by the builder; test conditions not given
+    provenance: self-reported
+    source_ref: NONBILLABLE-LINKLATERS-2025
+  - lever: capacity
+    description: Early use after the global launch.
+    figure: used over 300 times across 13 offices in just over a week
+    measures: number of tool uses, as stated by the builder; users and entries per use not given
+    provenance: self-reported
+    source_ref: NONBILLABLE-LINKLATERS-2025
+  prerequisites:
+  - An in-house, data-secure chatbot the firm already trusts (NONBILLABLE-LINKLATERS-2025)
+  - Senior sponsorship, a six-month internal GenAI secondment and in-house developers to turn a prototype into an enterprise
+    version (NONBILLABLE-LINKLATERS-2025)
+  risks_and_guardrails:
+  - No accuracy, false-positive or override data are published; the builder says the user reviews each suggestion and the
+    aim is to keep humans in the loop (NONBILLABLE-LINKLATERS-2025).
+  - The aim of saving hundreds or thousands of hours a year is a goal, not a result (NONBILLABLE-LINKLATERS-2025).
+  human_checkpoints:
+  - User accepts or rejects each suggested correction (NONBILLABLE-LINKLATERS-2025)
+  role_evolution: The firm says the tool should free lawyers, PAs and secretaries for more valuable work (NONBILLABLE-LINKLATERS-2025).
+  evidence_grade: B
+  sources:
+  - ref: NONBILLABLE-LINKLATERS-2025
+    title: Linklaters' new AI time recording tool started as one associate's side project (interview with James Phoenix)
+    publisher: Non-Billable
+    type: press
+    url: https://www.nonbillable.co.uk/news/linklaters-ai-time-recording-tool-associate-side-project
+    date: '2025-10-09'
+    access: full
+    locator: Interview answers on what the tool does, build and rollout, and adoption; closing 'Bigger picture' paragraphs
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firm (UK-headquartered, global). Named firm, in production firmwide (3,000+ lawyers able to use it),
+    but the figures are usage and speed statements by the builder, so B rather than A. The only firm-built billing tool found.
+    Discourse 03.'
+- id: professional-services-billing-collections-05
+  title: AI checks pre-bills against client guidelines and billing history and proposes fixes that a billing partner accepts
+    or rejects before the invoice goes out
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - transaction-processing
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: Foley Mansfield's managing partner said partners spent an enormous amount of time reviewing pre-bills each month;
+    Verify's product lead says some partners spend up to a week a month cleaning up invoices (LEGALIT-FOLEY-2024). Laurel
+    relays firm anecdotes of a bill that took 210 emails between partners and billing, and of a partner spending 12 hours
+    every first Sunday of the month on a 1,000-page pre-bill (LAUREL-BILLING-2026). Elite reports invoice rejection rates
+    rising from 11% to 18% in 2025, and says 71% of firms in its study still manage guideline compliance mainly by hand (ELITE-REJECT-2026).
+  solution: Foley Mansfield (law) went live firmwide with Verify from Zero Systems, which reads outside counsel guidelines
+    and historical billing data held in Elite and Aderant, flags pre-bill entries that break rules such as block billing,
+    vague narratives or excessive time, and suggests fixes accepted or rejected with one click (LEGALIT-FOLEY-2024). Aderant
+    signed a deal on 2025-08-07 to acquire HerculesAI's legal technology assets, described as AI-driven billing compliance
+    (ADERANT-HERCULES-2025). Elite Validate, Fulcrum GT's e-billing validation and Intapp Billstream take the same approach;
+    Laurel Billing's Compliance agent, announced as coming soon, checks the whole bill against the guidelines and the work
+    record, including duplicate billing across timekeepers, and attaches a reason and a written fix to each flag (ELITE-VALIDATE-2025;
+    FULCRUM-ILTACON-2026; INTAPP-BILLSTREAM-2026; LAUREL-BILLING-2026; LAUREL-BILLINGPAGE-2026).
+  outcomes:
+  - lever: speed
+    description: Foley's managing partner says reviewing the items the AI highlights replaced days of pre-bill review. A stage
+      remark, not a tracked metric.
+    figure: days to minutes (quote)
+    measures: the managing partner's description of pre-bill review time before and after Verify; no figures
+    provenance: self-reported
+    source_ref: LEGALIT-FOLEY-2024
+  - lever: cost
+    description: Zero Systems' CEO says Verify recovers revenue that would otherwise be written off and cuts review time.
+    figure: about 6% of revenue otherwise written off; about 50% less pre-bill review time
+    measures: the vendor CEO's statements to the publication; basis, sample and period not given
+    provenance: vendor-published
+    source_ref: LEGALIT-FOLEY-2024
+  prerequisites:
+  - Guideline documents and historical billing data in the billing system (Elite or Aderant at Foley) (LEGALIT-FOLEY-2024)
+  - Rules the firm accepts before enforcement (ELITE-VALIDATE-2025)
+  - A billing workflow with preparer, billing partner and finance stages (LAUREL-BILLINGPAGE-2026)
+  risks_and_guardrails:
+  - An agent that rewrites narratives can drift from the work done, so reviewers need the work record beside each fix (AUSLEG-AISTATEMENT-2024,
+    p. 1; CALBAR-GENAI-2026, p. 8).
+  - No error, override or false-flag rate is published for any pre-bill tool.
+  - Elite links the rise in rejections to client AI review as an inference ('the data suggests'), and it sells the tooling
+    it recommends (ELITE-REJECT-2026; ELITE-IDEA-2026).
+  - Verify runs its models locally and, per the vendor, data stays inside the firm perimeter (LEGALIT-FOLEY-2024); Laurel
+    says nothing goes out without sign-off (LAUREL-BILLINGPAGE-2026). Laurel Billing is not yet available.
+  - Perlin argues GenAI may help prepare bills that better conform to client guidelines, while also letting sophisticated
+    clients scrutinise invoices in new ways (LEGALFUTURES-PERLIN-2025).
+  human_checkpoints:
+  - Billing partner or biller accepts or dismisses each flagged item and signs off the bill (LEGALIT-FOLEY-2024; LAUREL-BILLINGPAGE-2026)
+  role_evolution: Partners review a short list of flagged items instead of whole pre-bills (LEGALIT-FOLEY-2024). Laurel describes
+    preparers, billing partners and finance in one workspace, with partners 'approving decisions, not entries' (LAUREL-BILLINGPAGE-2026).
+    Elite says billing teams should move from correcting rejected invoices to preventing rejections (ELITE-REJECT-2026).
+  evidence_grade: B
+  sources:
+  - ref: LEGALIT-FOLEY-2024
+    title: Foley Mansfield goes live with Verify from Zero Systems for gen AI pre-bill review
+    publisher: Legal IT Insider
+    type: press
+    url: https://legaltechnology.com/foley-mansfield-goes-live-with-verify-from-zero-systems-for-gen-ai-pre-bill-review/
+    date: '2024-05-15'
+    access: full
+    locator: Paragraphs 2 to 6
+  - ref: ADERANT-HERCULES-2025
+    title: Aderant signs deal to acquire HerculesAI legal technology assets
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-signs-deal-to-acquire-herculesai-legal-technology
+    date: '2025-08-07'
+    access: full
+    locator: Paragraphs 1 to 3
+  - ref: ELITE-VALIDATE-2025
+    title: 'Elite launches Elite Validate: legal invoice compliance solution'
+    publisher: Elite (press release)
+    type: vendor
+    url: https://www.elite.com/insights/news/press-releases/elite-launches-elite-validate
+    date: '2025-02-11'
+    access: full
+    locator: Paragraphs 2 to 5
+  - ref: ELITE-REJECT-2026
+    title: 'New Elite Research: Law Firms See 64% Climb in Rejection Rates as Client AI Billing Scrutiny Advances'
+    publisher: Elite (press release)
+    type: vendor
+    url: https://www.elite.com/insights/news/new-elite-research-law-firms-see-64-climb-in-rejection-rates-as-client-ai-billing-scrutiny-advances
+    date: '2026-05-14'
+    access: full
+    locator: Headline bullets and paragraphs 3-4 (rejection 11% to 18%; 71% manual)
+  - ref: ELITE-IDEA-2026
+    title: Your Clients' AI Is Reviewing Every Invoice. Does Your Firm Know What It's Looking For?
+    publisher: Elite (blog)
+    type: vendor
+    url: https://www.elite.com/insights/ideas/clients-ai-is-reviewing-every-invoice
+    date: '2026-06-15'
+    access: full
+    locator: Section on opacity of client review
+  - ref: FULCRUM-ILTACON-2026
+    title: ILTACON 2026 (Fulcrum GT event page; product descriptions, no session content; page date not shown)
+    publisher: Fulcrum GT
+    type: vendor
+    url: https://iltacon.fulcrumgt.com/
+    date: '2026'
+    access: full
+    locator: Product list ('Cut rejected invoices')
+  - ref: INTAPP-BILLSTREAM-2026
+    title: Intapp Billstream
+    publisher: Intapp
+    type: vendor
+    url: https://www.intapp.com/billing/
+    date: 2026-10
+    access: full
+    locator: Built-in client and firm compliance; prebill workflow
+  - ref: LAUREL-BILLING-2026
+    title: 'Coming Soon: Laurel Billing - Defend every bill before it goes out (Nick Bazley)'
+    publisher: Laurel (blog)
+    type: vendor
+    url: https://www.laurel.ai/blog/coming-soon-laurel-billing
+    date: '2026-09-17'
+    access: full
+    locator: Whole post; 'The Billing Agents do the legwork'
+  - ref: LAUREL-BILLINGPAGE-2026
+    title: 'Billing: the billing workspace, coming soon (product page and FAQ)'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/platform/billing
+    date: 2026-10
+    access: full
+    locator: Compliance agent; 'Review-ready fixes'; FAQ
+  - ref: LEGALFUTURES-PERLIN-2025
+    title: GenAI could 'reinforce rather than disrupt' the billable hour (report on the Perlin article)
+    publisher: Legal Futures
+    type: press
+    url: https://www.legalfutures.co.uk/latest-news/genai-could-reinforce-rather-than-disrupt-the-billable-hour
+    date: '2025-11-14'
+    access: full
+    locator: Paragraphs on write-offs
+  - ref: AUSLEG-AISTATEMENT-2024
+    title: Statement on the Use of Artificial Intelligence in Australian Legal Practice
+    publisher: Law Society of New South Wales, Legal Practice Board of Western Australia, Victorian Legal Services Board +
+      Commissioner
+    type: regulator
+    url: https://www.lawsociety.com.au/sites/default/files/2024-12/LS4590_PSP_Statement_AI_LawSocietyVersion.pdf
+    date: 2024-12
+    access: full
+    locator: p. 1
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  - ref: ILTA-RISE-2025
+    title: The Rise of AI Agents in Legal
+    publisher: ILTA (Pulse, ILTACON 2025)
+    type: professional-body
+    url: https://iltanet.org/resources/publications/pulse/iltacon/2025/rise-ai
+    date: '2025'
+    access: full
+    locator: Paragraphs 3-5 (chain of agents across matter context, staffing, time and billing; concept)
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms (US). Graded B on one named firmwide go-live (Foley Mansfield, 2024-05-15), older than the
+    12-18 month window and kept because it is the only named firm pre-bill deployment. Whether Foley still uses Verify after
+    the 2025 Aderant deal is unknown; the link between Verify and the HerculesAI assets rests on search-result coverage not
+    opened. The CEO''s 6% and 50% are vendor claims reported by the trade press. Laurel Billing''s announcement is dated 2026-09-17
+    in two inputs and 2026-08-19 in a third (a metadata date shared by several Laurel pages). An ILTA article proposes a chain
+    of agents from staffing to billing as a concept only (ILTA-RISE-2025, routed from delivery-management). Merged from practice
+    05, governance 04 and discourse 04.'
+- id: professional-services-billing-collections-06
+  title: AI ranks proforma edits so reviewers spend their time on high-impact bills
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - coordination-scheduling
+  pattern: intake-triage
+  ladder: assist
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Lawyers and billing teams review and adjust draft bills (proformas) before invoices go out; Elite describes routine
+    review decisions as repetitive (CFOTECH-ELITE-2026).
+  solution: Elite added 'Elite Intelligence' to the Proforma workflow in 3E (reported 2026-02-27). It prioritises edits, defers
+    items flagged as low-value and highlights proformas it identifies as high-impact (CFOTECH-ELITE-2026).
+  outcomes:
+  - lever: capacity
+    description: Elite expects the feature to cut proforma review time; an expectation, not a measurement.
+    figure: up to 4 hours per month per lawyer (expected)
+    measures: CFOtech's wording of Elite's expectation; no measured basis
+    provenance: vendor-published
+    source_ref: CFOTECH-ELITE-2026
+  prerequisites:
+  - 3E cloud platform with the new release (cloud-only functions) (CFOTECH-ELITE-2026)
+  risks_and_guardrails:
+  - Deferring items judged low-value is the tool's judgement; the source does not describe how reviewers can audit deferred
+    items (CFOTECH-ELITE-2026).
+  human_checkpoints:
+  - Lawyers and billing teams still review and adjust draft bills (CFOTECH-ELITE-2026)
+  role_evolution: Reviewers receive a prioritised queue rather than an undifferentiated list of proformas (described aim)
+    (CFOTECH-ELITE-2026).
+  evidence_grade: C
+  sources:
+  - ref: CFOTECH-ELITE-2026
+    title: Elite adds AI tools to 3E to streamline work-to-cash
+    publisher: CFOtech UK
+    type: press
+    url: https://cfotech.co.uk/story/elite-adds-ai-tools-to-3e-to-streamline-work-to-cash
+    date: '2026-02-27'
+    access: full
+    locator: Billing workflow section
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms. Graded C: one trade-press report of a vendor release; no customer named. Elite cites Law.com
+    research that firms can lose up to 25% of potential revenue to work-to-cash inefficiency (not opened at source). Practice
+    06.'
+- id: professional-services-billing-collections-07
+  title: Fixed-fee matters get scope-creep flags while the bill is assembled, so a change order can be raised before the matter
+    closes
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - data-reporting
+  - review-assurance
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: announced
+  problem: On fixed-fee matters, work that drifts outside the engagement is absorbed as a write-down at close instead of raised
+    as a change order (LAUREL-BILLING-2026). Thomson Reuters and Laurel describe extra research, drafting and review hours
+    accumulating on a fixed-fee engagement until the write-down is locked in (TR-LAUREL-2026, a hypothetical scenario).
+  solution: Laurel Billing's Scope agent will track budget burn against the engagement and flag hours that have drifted outside
+    it, totalled in dollars, each flag with a proposed fix; approved corrections feed back into timekeeping (LAUREL-BILLING-2026;
+    LAUREL-BILLINGPAGE-2026). Laurel's consulting page makes the same claim for consultants ('scope creep surfaces immediately,
+    not at close') (LAURELSITE-2026).
+  outcomes:
+  - lever: risk
+    description: none published
+    figure: none published
+    measures: 'not applicable: product not yet available'
+    provenance: vendor-published
+    source_ref: LAUREL-BILLINGPAGE-2026
+  prerequisites:
+  - Fixed-fee budgets and scope recorded against the matter, and complete, timely time capture, since alerts depend on time
+    data (TR-LAUREL-2026)
+  risks_and_guardrails:
+  - The agent is unreleased; claims such as a shorter bill review each month are statements of intent (LAUREL-BILLINGPAGE-2026).
+  - 'Flat-fee rules differ by state: North Carolina allows a flat fee that is not clearly excessive with client consent (NCBAR-FEO1-2024);
+    ABA Formal Opinion 512, as quoted, says the same flat fee may be unreasonable if a tool makes the work much quicker (TRI-ABA512-2025);
+    Virginia disagrees (VACOURTS-LEO1901-2025, pp. 2-4). A change order priced on hours AI compressed meets this split.'
+  - Fee agreements should say how fees are calculated and how far AI factors into rates (CALBAR-GENAI-2026, p. 8).
+  human_checkpoints:
+  - Billing or matter partner approves or dismisses each flag and decides whether to raise a change order, adjust staffing
+    or tell the client (LAUREL-BILLINGPAGE-2026; TR-LAUREL-2026)
+  role_evolution: Billing partners are described as approving decisions rather than reading entries (LAUREL-BILLINGPAGE-2026);
+    firm leaders see matter performance while the matter runs (TR-LAUREL-2026).
+  evidence_grade: C
+  sources:
+  - ref: LAUREL-BILLING-2026
+    title: 'Coming Soon: Laurel Billing - Defend every bill before it goes out (Nick Bazley)'
+    publisher: Laurel (blog)
+    type: vendor
+    url: https://www.laurel.ai/blog/coming-soon-laurel-billing
+    date: '2026-09-17'
+    access: full
+    locator: Description of the Scope agent
+  - ref: LAUREL-BILLINGPAGE-2026
+    title: 'Billing: the billing workspace, coming soon (product page and FAQ)'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/platform/billing
+    date: 2026-10
+    access: full
+    locator: '''Scope agent''; FAQ ''How does it catch scope creep'''
+  - ref: LAURELSITE-2026
+    title: 'Laurel home page: AI Timekeeping and Work Intelligence Platform'
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai
+    date: 2026-10
+    access: full
+    locator: Consulting tile
+  - ref: TR-LAUREL-2026
+    title: Thomson Reuters and Laurel connect legal AI to ROI
+    publisher: Thomson Reuters (legal blog)
+    type: vendor
+    url: https://legal.thomsonreuters.com/blog/thomson-reuters-and-laurel-help-law-firms-connect-legal-ai-to-business-outcomes/
+    date: '2026-08-05'
+    access: full
+    locator: Section on profitability problems; the fixed-fee scenario
+  - ref: TRI-MIDSIZE-2026
+    title: 'AI execution for midsize law firms: Why the most obvious AI use case is often the wrong one'
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/spotlight/midsize-firms-obvious-ai-use-cases
+    date: '2026-07-23'
+    access: full
+    locator: Section on fixed-fee work and margin
+  - ref: NCBAR-FEO1-2024
+    title: 2024 Formal Ethics Opinion 1 (use of artificial intelligence in a law practice)
+    publisher: North Carolina State Bar
+    type: professional-body
+    url: https://www.ncbar.gov/for-lawyers/ethics/adopted-opinions/2024-formal-ethics-opinion-1/
+    date: '2024-11-01'
+    access: full
+    locator: Inquiry on a flat fee for estate documents
+  - ref: TRI-ABA512-2025
+    title: Is ABA Formal Opinion 512 off the mark? And if so, what can law firms and GCs do about it? (William Josten; quotes
+      the opinion)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/aba-formal-opinion-512
+    date: '2025-04-02'
+    access: full
+    locator: Section on flat fees, quoting Formal Opinion 512
+  - ref: VACOURTS-LEO1901-2025
+    title: Order approving Legal Ethics Opinion 1901 (full opinion text)
+    publisher: Supreme Court of Virginia
+    type: regulator
+    url: https://www.vacourts.gov/static/courts/scv/amendments/leo_1901.pdf
+    date: '2025-11-24'
+    access: full
+    locator: Analysis, pp. 2-4
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms; Laurel makes the same claim for consulting. Graded C: product page, blog and a hypothetical.
+    TRI notes that on fixed-fee work an efficiency gain goes straight to margin (TRI-MIDSIZE-2026). Overlaps professional-services-scoping-pricing-08
+    (predictive budget-overrun alerts on live WIP); kept here because the output is a change order or write-down decision
+    at bill time. Merged from practice 07, discourse 07 and governance 05.'
+- id: professional-services-billing-collections-08
+  title: 'Idea: score pre-bills for write-down risk by matter, client and timekeeper so partners adjust or explain entries
+    before the bill goes out'
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - data-reporting
+  - expert-judgment
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: emerging
+  problem: Write-downs happen late and unevenly. In TRI's 2023 survey, 43% of partners reported reducing a bill because the
+    time spent exceeded their own expectations, and partners wrote off over 300 hours of their own potentially billable time
+    after it was reported, nearly $190,000 of fees (TRI-WRITEDOWNS-2023, pp. 2-3 and 12). TRI's 2026 rates report shows litigation
+    with far more write-offs than transactional practices, and a long-term decline in realization since 2021 (TRI-RATES-2026,
+    pp. 6, 10-11).
+  solution: 'Idea: use historical realization, client guidelines and AI-assisted bill analysis to flag entries and matters
+    likely to be reduced before the bill is issued. Perlin argues GenAI could help firms predict the cost of tasks and matters
+    and reduce the ''granted reductions'' clients impose (GEORGETOWN-PERLIN-2025; LEGALFUTURES-PERLIN-2025). Laurel''s guideline-based
+    flagging (entry 05) is the nearest product. No deployment found.'
+  outcomes:
+  - lever: cost
+    description: none published
+    figure: none published
+    measures: 'not applicable: idea'
+    provenance: independent
+    source_ref: GEORGETOWN-PERLIN-2025
+  prerequisites:
+  - Several periods of realization data by timekeeper, client and matter type (TRI-RATES-2026 shows such data exist at firm
+    level)
+  risks_and_guardrails:
+  - Some discounting protects client relationships; firms that push for full post-work realization risk damaging them (TRI-RATES-2026,
+    p. 11).
+  - Billing must stay accurate and reasonable whatever the prediction (CALBAR-GENAI-2026, p. 8).
+  - TRI's 2023 write-down data predate current AI tools (TRI-WRITEDOWNS-2023).
+  human_checkpoints:
+  - Billing partner decides adjustments (existing step) (TRI-ROI-2025)
+  role_evolution: Not described in the sources.
+  evidence_grade: D
+  sources:
+  - ref: GEORGETOWN-PERLIN-2025
+    title: How The Billable Hour Can Survive Generative AI (Jonah Perlin), Stetson Business Law Review 5(1) 42-86
+    publisher: Georgetown Law (Scholarship @ Georgetown Law)
+    type: academic
+    url: https://scholarship.law.georgetown.edu/facpub/2694
+    date: '2025'
+    access: full
+    locator: Abstract (Compensation = Hours x Rate - Granted Reductions - Expenses)
+  - ref: LEGALFUTURES-PERLIN-2025
+    title: GenAI could 'reinforce rather than disrupt' the billable hour (report on the Perlin article)
+    publisher: Legal Futures
+    type: press
+    url: https://www.legalfutures.co.uk/latest-news/genai-could-reinforce-rather-than-disrupt-the-billable-hour
+    date: '2025-11-14'
+    access: full
+    locator: Paragraphs on write-offs
+  - ref: TRI-RATES-2026
+    title: Law Firm Rates Report 2026
+    publisher: Thomson Reuters Institute
+    type: survey
+    url: https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2025/10/Law-Firm-Rates-Report-2026.pdf
+    date: 2025-10
+    access: full
+    locator: p. 6; pp. 10-11, Figures 7-8
+  - ref: TRI-WRITEDOWNS-2023
+    title: Law Firm Billing Efficiency and Write Downs (report; foundation, outside the 18-month window)
+    publisher: Thomson Reuters Institute
+    type: survey
+    url: https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2024/04/Law-Firm-Billing-Write-Downs-2023-1.pdf
+    date: '2023'
+    access: full
+    locator: Executive summary pp. 2-3; p. 12
+  - ref: TRI-ROI-2025
+    title: Finding a quicker ROI on law firms' investment in AI
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/law-firm-roi-ai-investment
+    date: '2025-05-19'
+    access: full
+    locator: Paragraphs on write-downs and revenue leakage
+  - ref: LAUREL-BILLING-2026
+    title: 'Coming Soon: Laurel Billing - Defend every bill before it goes out (Nick Bazley)'
+    publisher: Laurel (blog)
+    type: vendor
+    url: https://www.laurel.ai/blog/coming-soon-laurel-billing
+    date: '2026-09-17'
+    access: full
+    locator: Compliance agent description
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  last_reviewed: '2026-10-19'
+  notes: 'Idea: scholarly argument and benchmark data, no deployment. Firm kind: law firms (US). The related idea of aiming
+    AI at the work that gets written down is held in professional-services-firm-finance-06, and firm-level realization analytics
+    in firm-finance-03. Governance 12; discourse 08 cross-referenced to firm-finance-06.'
+- id: professional-services-billing-collections-09
+  title: AI drafts appeals for rejected e-billing invoices and ranks which are worth pursuing
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - document-production
+  - transaction-processing
+  pattern: draft-review-loop
+  ladder: assist
+  change_scope: step
+  runtime_class: background-agent
+  maturity: announced
+  problem: Kopka Law, a defense-litigation firm, describes billers trained on dozens of client platforms and appeals departments
+    chasing payments on appeals, most of which its leaders call unfair and unsuccessful (TRI-KOPKA-2026). Elite says client
+    AI decisions can be opaque to the firm (ELITE-IDEA-2026).
+  solution: Aderant's Appeals Agent identifies and prioritises high-value appeal opportunities after e-billing rejections
+    and drafts supporting rationale for the billing team to review. Announced 2026-05-12; early access opened 2026-08-25 (ADERANT-AGENTCENTER-2026;
+    ADERANT-AGENTSEAP-2026).
+  outcomes:
+  - lever: cost
+    description: none published
+    figure: none published
+    measures: 'not applicable: early access'
+    provenance: vendor-published
+    source_ref: ADERANT-AGENTSEAP-2026
+  prerequisites:
+  - Billing and rejection data in Aderant products (ADERANT-AGENTSEAP-2026)
+  risks_and_guardrails:
+  - Aderant says users remain final decision makers in all agent workflows (ADERANT-AGENTSEAP-2026).
+  - Rules learned from rejections may be incomplete when client AI decisions are opaque (ELITE-IDEA-2026).
+  human_checkpoints:
+  - Billing team reviews each drafted appeal before submission (ADERANT-AGENTSEAP-2026)
+  role_evolution: Billing teams draft fewer appeals from scratch and decide which to send (described aim) (ADERANT-AGENTSEAP-2026).
+  evidence_grade: C
+  sources:
+  - ref: ADERANT-AGENTSEAP-2026
+    title: Aderant launches early access to AI agents built to enhance law firm operations
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-launches-early-access-to-ai-agents
+    date: '2026-08-25'
+    access: full
+    locator: Appeals Agent bullet
+  - ref: ADERANT-AGENTCENTER-2026
+    title: 'Aderant introduces agentic law firm operations: AI Agent Center'
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-introduces-agentic-law-firm-operations-ai-agent-center
+    date: '2026-05-12'
+    access: full
+    locator: '''Initial capabilities: Appeals Agent'''
+  - ref: TRI-KOPKA-2026
+    title: How one law firm is challenging a broken status quo around billing (Kopka Law)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/broken-status-quo-around-billing
+    date: '2026-04-30'
+    access: full
+    locator: Section 'The administrative-industrial complex'
+  - ref: ELITE-IDEA-2026
+    title: Your Clients' AI Is Reviewing Every Invoice. Does Your Firm Know What It's Looking For?
+    publisher: Elite (blog)
+    type: vendor
+    url: https://www.elite.com/insights/ideas/clients-ai-is-reviewing-every-invoice
+    date: '2026-06-15'
+    access: full
+    locator: Section on opacity of client review
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms (US). Graded C: vendor announcements; no firm named in the early access programme. Elite said
+    in 2023 that eBillingHub could categorise rejected invoices (search results only). Practice 08.'
+- id: professional-services-billing-collections-10
+  title: AI prioritises overdue accounts by payment risk and drafts follow-ups for collections staff to send
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - coordination-scheduling
+  - client-interaction
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: announced
+  problem: Collections teams spend hours each week drafting follow-ups and deciding whom to chase and in what tone (ODDR-COLLECTIONS-2026).
+    Oddr argues firms do not know whether a client has opened an invoice and rank accounts from aging reports alone (ODDR-82CENTS-2026).
+  solution: Aderant's Collections Agent prioritises accounts, surfaces aging trends and payment risk, and recommends next
+    actions and outreach (announced 2026-05-12, early access 2026-08-25). Oddr released AI-drafted collection emails with
+    tone controls and follow-up sequences, and says a Collections Agent in development will surface the accounts with most
+    cash impact and prepare a draft email, call brief or note to the attorney. Certinia positions its Veda agents across estimate,
+    staffing, invoice and renewal for project-based services firms (ADERANT-AGENTSEAP-2026; ODDR-COLLECTIONS-2026; CERTINIA-VEDA-2026).
+  outcomes:
+  - lever: speed
+    description: Certinia's AI page headline stats; basis not stated.
+    figure: 24 days faster from delivery to payment; 75% faster time to invoice
+    measures: Certinia page labels; no sample, baseline or period stated
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  prerequisites:
+  - Billing, payment and receivables data in one platform; Oddr integrates with Elite, Aderant and Intapp (ODDR-COLLECTIONS-2026)
+  - A client-relationship rule for who may chase which client (not covered by the sources)
+  risks_and_guardrails:
+  - Oddr says finance teams stay in control of every decision; Aderant says agents recommend and draft while users decide
+    (ODDR-COLLECTIONS-2026; ADERANT-AGENTSEAP-2026).
+  - Sector averages in Oddr's article (about 88% of billable work invoiced, about 93% of invoices collected, 43 days to bill
+    and 32 to collect) are attributed to Clio and were not checked at source (ODDR-82CENTS-2026).
+  human_checkpoints:
+  - Collections staff decide which accounts to chase and what is sent; Oddr says finance teams stay in control of every decision
+    (ODDR-COLLECTIONS-2026)
+  role_evolution: Oddr says collectors should spend less time chasing and more on relationships and judgement calls (ODDR-COLLECTIONS-2026);
+    collections moves from working an aging report to acting on a ranked list (described aim) (ADERANT-AGENTSEAP-2026).
+  evidence_grade: C
+  sources:
+  - ref: ADERANT-AGENTSEAP-2026
+    title: Aderant launches early access to AI agents built to enhance law firm operations
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-launches-early-access-to-ai-agents
+    date: '2026-08-25'
+    access: full
+    locator: Collections Agent bullet
+  - ref: ADERANT-AGENTCENTER-2026
+    title: 'Aderant introduces agentic law firm operations: AI Agent Center'
+    publisher: Aderant (press release)
+    type: vendor
+    url: https://www.aderant.com/news-pr/aderant-introduces-agentic-law-firm-operations-ai-agent-center
+    date: '2026-05-12'
+    access: full
+    locator: '''Initial capabilities: Collections Agent'''
+  - ref: ODDR-COLLECTIONS-2026
+    title: Oddr Announces AI-Powered Collections for Law Firms. Collections Turns Agentic.
+    publisher: Oddr (press release)
+    type: vendor
+    url: https://www.oddr.com/news/oddr-announces-ai-powered-collections-for-law-firms-collections-turns-agentic
+    date: '2026-08-19'
+    access: full
+    locator: Paragraphs on available features and the Collections Agent
+  - ref: ODDR-82CENTS-2026
+    title: Law Firms Collect About 82 Cents on the Dollar. The Rest Is an Architecture Problem.
+    publisher: Oddr (article)
+    type: vendor
+    url: https://www.oddr.com/news/law-firms-collect-about-82-cents-on-the-dollar-the-rest-is-an-architecture-problem
+    date: '2026-09-09'
+    access: full
+    locator: Paragraphs on Clio-attributed figures
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda: AI agents for professional services (Certinia AI page)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: Headline stats tiles (24 days; 75%)
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms (Aderant, Oddr) and project-based services firms (Certinia). Graded C: vendor claims and early-access
+    announcements; no named firm reports using an AI collections tool. The only accounting-firm collections example found
+    (BGW with Anduin) dates from 2021. Merged from practice 09 and discourse 11.'
+- id: professional-services-billing-collections-11
+  title: Overdue invoices are detected and chased automatically, with trained human collectors handling calls and escalations
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - transaction-processing
+  - client-interaction
+  pattern: monitor-diagnose-act
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: CollBox's co-founder, citing Clio data, said it takes law firms an average of 97 days to get paid and that no one
+    owns accounts receivable inside firms (ABAJ-TECHSHOW-2026). Wells Fargo Legal Specialty Group data for H1 2026, as reported
+    secondhand, show inventories up 17.7% and collection cycles slowing by 5% (LAWFUEL-WF-2026).
+  solution: CollBox, winner of ABA Techshow 2026's Startup Alley, integrates with practice management systems, detects unpaid
+    bills and chases them with email reminders and calls from trained accounts-receivable specialists. The ABA Journal headline
+    calls it AI-powered; the pitch as reported describes detection and reminders plus human collectors (ABAJ-TECHSHOW-2026).
+  outcomes:
+  - lever: risk
+    description: Revenue the company says it recovered for law firms.
+    figure: more than $100 million in the past year
+    measures: company-reported at a three-minute pitch; number of firms, period definition and basis not stated
+    provenance: vendor-published
+    source_ref: ABAJ-TECHSHOW-2026
+  prerequisites:
+  - Integration with the practice management system so unpaid bills are detected (ABAJ-TECHSHOW-2026)
+  - A client-relationship rule for who may chase which client (not covered by the sources)
+  risks_and_guardrails:
+  - Some post-work discounting protects client relationships, and weak collections undermine the ability to push rates higher
+    (TRI-RATES-2026, pp. 11-12).
+  - No bar guidance on automated payment reminders or third-party collectors was found.
+  human_checkpoints:
+  - Trained collectors make calls and handle escalations (ABAJ-TECHSHOW-2026)
+  role_evolution: The co-founder says no lawyer joined a firm to be a bill collector; collection moves to a service or to
+    billing staff (ABAJ-TECHSHOW-2026).
+  evidence_grade: C
+  sources:
+  - ref: ABAJ-TECHSHOW-2026
+    title: AI-powered bill collector program takes top spot at ABA Techshow's Startup Alley
+    publisher: ABA Journal
+    type: conference
+    url: https://www.abajournal.com/web/article/tool-that-gets-lawyers-paid-takes-top-spot-at-techshows-startup-alley
+    date: '2026-03-26'
+    access: full
+    locator: Section on CollBox
+  - ref: LAWFUEL-WF-2026
+    title: US Law Firm Revenue Jumps 12.4% in First Half of 2026 as AI Work Drives Demand (reports Wells Fargo Legal Specialty
+      Group figures)
+    publisher: LawFuel
+    type: press
+    url: https://www.lawfuel.com/?p=194355
+    date: '2026-08-26'
+    access: full
+    locator: Paragraphs on inventories and collection cycles
+  - ref: TRI-RATES-2026
+    title: Law Firm Rates Report 2026
+    publisher: Thomson Reuters Institute
+    type: survey
+    url: https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2025/10/Law-Firm-Rates-Report-2026.pdf
+    date: 2025-10
+    access: full
+    locator: p. 11 Stage 3; p. 12 Stage 4
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: law firms (US). Vendor claim from a startup pitch competition; no named customer, so grade C; maturity
+    follows the governance input. The 97-day figure is relayed from Clio and not checked. The Wells Fargo unit for ''collection
+    cycles slowed by 5%'' is not defined. The only entry on the automate rung in this module, and the ''AI'' content is thin.
+    Governance 07.'
+- id: professional-services-billing-collections-12
+  title: Time capture is extended to executives and administrative staff who never tracked time, to show cost to serve (GHJ,
+    accounting)
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - data-reporting
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: background-agent
+  maturity: piloting
+  problem: At GHJ, firm-services teams and executives had no time system at all, so leadership could not see how resources
+    were allocated or whether workloads were sustainable (LAUREL-GHJ-2026).
+  solution: 'After a firmwide rollout to client-services teams, GHJ (250+ professionals, Los Angeles) is rolling out Laurel
+    to firm-services teams and administrative staff who have never tracked time, intending to use the data for resource allocation
+    and hiring evidence. Pattern ''other'': passive capture of time for non-billable roles (LAUREL-GHJ-2026).'
+  outcomes:
+  - lever: experience
+    description: GHJ's Chief of Staff says the data lets her see how her own time is spent; no firm-level results for the
+      extension.
+    figure: none published
+    measures: 'not applicable: qualitative statement'
+    provenance: self-reported
+    source_ref: LAUREL-GHJ-2026
+  prerequisites:
+  - Legacy system switched off so everyone uses the new route (LAUREL-GHJ-2026)
+  risks_and_guardrails:
+  - Time data on non-billable staff is a new form of monitoring; the story frames it as understanding rather than evaluation
+    (LAUREL-GHJ-2026). See the worker-monitoring points in entry 01.
+  human_checkpoints:
+  - Staff review their own entries (LAUREL-GHJ-2026)
+  role_evolution: Administrative and executive roles gain a time record; managers can see when they spend time on work that
+    should be delegated (stated intent) (LAUREL-GHJ-2026).
+  evidence_grade: B
+  sources:
+  - ref: LAUREL-GHJ-2026
+    title: How Laurel unlocked firmwide time intelligence for GHJ leadership (customer story)
+    publisher: Laurel
+    type: vendor
+    url: https://www.laurel.ai/customer-stories/ghj
+    date: 2026-08
+    access: full
+    locator: Extending beyond billable teams; Visibility for non-traditional roles
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: accounting and advisory (US). Graded B: one named firm, described as rolling out; no measurements for
+    this extension; single vendor-authored story. Use of the data for staffing belongs to staffing-resourcing. Practice 12.'
+- id: professional-services-billing-collections-13
+  title: In-house legal teams use AI to review every outside-counsel invoice against billing guidelines and route flagged
+    lines to a reviewer (in-house)
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - transaction-processing
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: Albertsons works with about 180 outside law firms; its legal operations program manager says invoices with hundreds
+    of line items make it easy to gloss over problems (ALBERTSONS-TR-2026). Manual bill review samples high-value bills after
+    the fact and rarely prevents overspend (WK-LEGALSPEND-2026). Insurers employ large departments and vendors to review and
+    cut defense bills (TRI-KOPKA-2026).
+  solution: Albertsons Companies uses Thomson Reuters Legal Tracker's AI-powered audit, which flags invoice line items for
+    the attorney's attention, plus automated volume discounts on submission (ALBERTSONS-TR-2026). Brightflag reads line-item
+    narratives, classifies them into legal tasks, flags guideline violations and emails the reviewer a summary so the invoice
+    can be approved from the inbox (BRIGHTFLAG-AIINVOICE-2025; BRIGHTFLAG-AI-2026). Onit's Spend Agent, Wolters Kluwer's bill
+    review and Milliman's Datalytics-Defense (insurer litigation management) audit every invoice rather than a sample (ONIT-SPEND-2026;
+    WK-LEGALSPEND-2026; MILLIMAN-BILLREVIEW-2026).
+  outcomes:
+  - lever: cost
+    description: Albertsons' Program Manager, Legal Operations, says the AI audit and volume discount together saved 'probably
+      almost $2 million' in outside counsel spend year to date. A recollection; savings are not split between the AI audit
+      and the discount.
+    figure: close to $2 million year to date
+    measures: outside counsel spend saved year to date through Legal Tracker, AI audit and volume discount combined (program
+      manager's estimate)
+    provenance: self-reported
+    source_ref: ALBERTSONS-TR-2026
+  - lever: quality
+    description: Onit says its Spend Agent beats experienced lawyers at flagging invoice problems.
+    figure: 92% invoice-level and 81% line-item accuracy versus 72% and 43% for experienced lawyers
+    measures: accuracy in Onit's published research; test set, ground truth and definition of accuracy not on the page
+    provenance: vendor-published
+    source_ref: ONIT-SPEND-2026
+  - lever: cost
+    description: Wolters Kluwer says automatically enforcing billing guidelines typically reduces legal spend.
+    figure: up to 10%
+    measures: legal spend reduction, per the vendor; basis and sample not given
+    provenance: vendor-published
+    source_ref: WK-LEGALSPEND-2026
+  prerequisites:
+  - Written, current billing guidelines that can be applied line by line (ZSCALER-OCG-2025 is a public example)
+  - Invoices in LEDES format on an e-billing platform (Legal Tracker, Brightflag, TyMetrix, SimpleLegal and BillingPoint are
+    named) (LAYER3-BILLINGOCG-2026)
+  risks_and_guardrails:
+  - Brightflag describes supervised machine learning with human analysts correcting low-confidence cases; no accuracy, false-rejection
+    or override rate is published by any user (BRIGHTFLAG-AIINVOICE-2025).
+  - Albertsons says security concerns made it hard to get the company on board with AI (ALBERTSONS-TR-2026).
+  - Law firms report client AI decisions can be opaque and inconsistently explained (ELITE-IDEA-2026); Perlin notes clients
+    may use GenAI to demand further discounts (LEGALFUTURES-PERLIN-2025).
+  - Gartner's Weston Wicks says more companies ask in their guidelines for lower-risk tasks to be done by AI and the time
+    saved reflected in billable hours (BLOOMBERGLAW-ACC-2025); clients using AI to cut bills sit beside clients refusing to
+    pay for AI-done work (TRI-LEGALWEEK-2026).
+  human_checkpoints:
+  - Attorney or in-house reviewer approves, rejects or amends flagged invoices (ALBERTSONS-TR-2026; BRIGHTFLAG-AIINVOICE-2025)
+  role_evolution: Legal-operations staff focus on strategic firm negotiations while the tool applies discounts and flags items
+    (ALBERTSONS-TR-2026); reviewers move from sampling bills to handling flagged exceptions across all invoices (WK-LEGALSPEND-2026;
+    BRIGHTFLAG-AIINVOICE-2025).
+  evidence_grade: B
+  sources:
+  - ref: ALBERTSONS-TR-2026
+    title: Albertsons Companies strengthens legal operations with Thomson Reuters Legal Tracker (case study)
+    publisher: Thomson Reuters
+    type: vendor
+    url: https://legal.thomsonreuters.com/en/insights/case-studies/albertsons-companies-strengthens-legal-operations-with-thomson-reuters-legal-tracker
+    date: '2026-05-19'
+    access: full
+    locator: Key results; 'Legal Tracker's AI-powered audit transforms invoice management'
+  - ref: BRIGHTFLAG-AIINVOICE-2025
+    title: Legal AI Invoice Review Explained (Sinead Kenny; updated 24 Jul 2025)
+    publisher: Brightflag
+    type: vendor
+    url: https://brightflag.com/resources/ai-invoice-review-how-it-works/
+    date: '2025-07-22'
+    access: full
+    locator: Benefits 1-5; 'How Does AI Invoice Review Work?'
+  - ref: BRIGHTFLAG-AI-2026
+    title: The AI advantage in-house legal teams have been waiting for (Brightflag AI)
+    publisher: Brightflag
+    type: vendor
+    url: https://brightflag.com/brightflag-ai/
+    date: 2026-10
+    access: full
+    locator: '''Legal AI that makes your life easier'''
+  - ref: BRIGHTFLAG-NEXTGEN-2024
+    title: Brightflag launches next-gen AI for e-billing and matter management
+    publisher: Brightflag (press release)
+    type: vendor
+    url: https://brightflag.com/press/next-gen-ai/
+    date: '2024-04-30'
+    access: full
+    locator: Invoice Summaries paragraphs (beta, 2024-04-30)
+  - ref: ONIT-SPEND-2026
+    title: 'Spend Agent: AI-Powered Invoice Review for Legal Teams (product page; no publication date shown)'
+    publisher: Onit
+    type: vendor
+    url: https://www.onit.com/?p=18328
+    date: '2026'
+    access: full
+    locator: 'Page text: accuracy comparison'
+  - ref: WK-LEGALSPEND-2026
+    title: 'AI in legal spend management: A CFO''s guide'
+    publisher: Wolters Kluwer (expert insights)
+    type: vendor
+    url: https://www.wolterskluwer.com/en/expert-insights/ai-in-legal-spend-management-a-cfos-guide
+    date: '2026-02-03'
+    access: full
+    locator: Sections on sampling to total audit coverage and measurable benefits
+  - ref: MILLIMAN-BILLREVIEW-2026
+    title: 'Legal bill review: AI vs manual invoice audit (insight page; no publication date shown)'
+    publisher: Milliman
+    type: vendor
+    url: https://ae.milliman.com/en/insight/legal-bill-review-ai-manual-invoice-audit
+    date: '2026'
+    access: full
+    locator: Comparison of manual, rules-based and AI-enabled bill review
+  - ref: LAYER3-BILLINGOCG-2026
+    title: 'Outside Counsel Billing Guidelines: plain-language guide (updated 7 Jul 2026)'
+    publisher: Layer3 Labs
+    type: vendor
+    url: https://www.layer3labs.io/guides/outside-counsel-billing-guidelines
+    date: '2026-07-07'
+    access: full
+    locator: '''How Software Enforces Billing Guidelines'''
+  - ref: ZSCALER-OCG-2025
+    title: Outside Counsel Billing Guidelines (revised April 7, 2025); a client's own primary document (in-house)
+    publisher: Zscaler, Inc.
+    type: firm
+    url: https://www.zscaler.com/legal/outside-counsel-billing-guidelines
+    date: '2025-04-07'
+    access: full
+    locator: '''Block Billing''; ''Invoicing'''
+  - ref: BLOOMBERGLAW-ACC-2025
+    title: AI Does Little to Reduce Law Firm Billable Hours, Survey Shows (ACC-Everlaw survey)
+    publisher: Bloomberg Law
+    type: press
+    url: https://news.bgov.com/business-and-practice/ai-does-little-to-reduce-law-firm-billable-hours-survey-shows
+    date: '2025-10-14'
+    access: full
+    locator: Paragraph quoting Gartner's Weston Wicks
+  - ref: TRI-KOPKA-2026
+    title: How one law firm is challenging a broken status quo around billing (Kopka Law)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/broken-status-quo-around-billing
+    date: '2026-04-30'
+    access: full
+    locator: Section on insurer bill-review departments
+  - ref: ELITE-IDEA-2026
+    title: Your Clients' AI Is Reviewing Every Invoice. Does Your Firm Know What It's Looking For?
+    publisher: Elite (blog)
+    type: vendor
+    url: https://www.elite.com/insights/ideas/clients-ai-is-reviewing-every-invoice
+    date: '2026-06-15'
+    access: full
+    locator: Sections on client-side AI review and gray-area judgments
+  - ref: LEGALFUTURES-PERLIN-2025
+    title: GenAI could 'reinforce rather than disrupt' the billable hour (report on the Perlin article)
+    publisher: Legal Futures
+    type: press
+    url: https://www.legalfutures.co.uk/latest-news/genai-could-reinforce-rather-than-disrupt-the-billable-hour
+    date: '2025-11-14'
+    access: full
+    locator: Paragraphs on write-offs
+  - ref: TRI-LEGALWEEK-2026
+    title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide
+    date: '2026-03-13'
+    access: full
+    locator: Section on the billing conversation
+  last_reviewed: '2026-10-19'
+  notes: 'in-house. Firm kinds: corporate legal department (Albertsons, retail) and insurer litigation management (Milliman).
+    Graded B on Albertsons: a vendor case study with a named customer and a recollected figure. This is the client-side counterpart
+    of entries 03 and 05: the firm''s bills are increasingly read by the client''s AI. LexisNexis CounselLink, Wolters Kluwer
+    LegalVIEW BillAnalyzer and Epiq managed invoice review were seen in search results only. Panel-level spend analytics and
+    a plain-language query layer over billing data are held in professional-services-firm-finance-04 (practice 14 and discourse
+    06 cross-referenced there). Merged from practice 13, discourse 05 and governance 06.'
+- id: professional-services-billing-collections-14
+  title: 'Idea: tag AI-assisted work in time entries and check it before billing against each client''s AI terms and the fee
+    rules'
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - review-assurance
+  - transaction-processing
+  pattern: reconcile-exceptions
+  ladder: assist
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: Client terms already ask for this. Zscaler's guidelines say a timekeeper who uses generative AI for a discrete
+    task should note it in the time entry and that AI time and cost shall not be passed on (ZSCALER-OCG-2025). At Legalweek
+    2026 a Ropes & Gray innovation director said clients are starting to ask whether AI was used on a task and how much it
+    saved, while DLA Piper's Barclay Blair said other clients will not pay for certain services performed by AI (TRI-LEGALWEEK-2026).
+    In TRI's 2026 survey 68% of corporate legal professionals did not know whether their outside firms use AI (TRI-GREATDISCONNECT-2026).
+    Bar opinions agree an hourly bill must reflect time actually spent but differ on flat fees and AI charges, and a billing
+    partner has to apply them matter by matter (CALBAR-GENAI-2026; TXETHICS-OP705-2025; VACOURTS-LEO1901-2025).
+  solution: 'Idea: the timekeeping tool records, or the AI platform reports (entry 02), which tasks were AI-assisted. Before
+    invoicing, billing checks those entries against the client''s AI terms (write off, discount, disclose or report) and against
+    the fee rules: hourly entries reflect time actually spent, including time refining and checking AI output; any AI charge
+    is classed as overhead or a matter cost; flat fees get a reasonableness review. Everlaw suggests in-house teams put light-touch
+    disclosure requirements into guidelines, RFPs or matter kickoffs (EVERLAW-BLOG-2026). No firm or vendor describes this
+    check; the requirement is documented, the tooling is not.'
+  outcomes:
+  - lever: risk
+    description: none published
+    figure: none published
+    measures: 'not applicable: idea'
+    provenance: self-reported
+    source_ref: ZSCALER-OCG-2025
+  prerequisites:
+  - Per-client AI terms held as rules (entry 03) and a record of which matters and tasks used AI; ILTA says tracking and compliance
+    tools for work-product governance are in use at fewer than one in five firms (ILTA-TECHSURVEY-2026, p. 9)
+  - Firm policy on which AI tools are overhead and which are billed, and fee-agreement wording on AI costs (CALBAR-GENAI-2026,
+    p. 8)
+  risks_and_guardrails:
+  - 'California: hourly billing must reflect time actually spent; general AI subscriptions are overhead; matter-specific AI
+    costs must reasonably reflect actual cost, with no markup without informed written consent; lawyers must follow client
+    guidelines that restrict AI (CALBAR-GENAI-2026, pp. 7-8).'
+  - 'Texas: an hourly lawyer may not bill time ''saved'' by AI, and per-use AI fees are generally not recoverable above the
+    amount paid (TXETHICS-OP705-2025, Fees). DC: absent another arrangement, bill only time actually spent (DCBAR-OP388-2024,
+    section E). North Carolina: a lawyer who now spends one hour instead of three may not bill three (NCBAR-FEO1-2024).'
+  - 'Flat fees: ABA Formal Opinion 512, as quoted, says the same flat fee may be unreasonable if a tool makes the work much
+    quicker (TRI-ABA512-2025); Virginia''s LEO 1901 disagrees (VACOURTS-LEO1901-2025).'
+  - 'Tax practice: the IRS Office of Professional Responsibility says billing manual time not actually spent, or double billing
+    for AI-assisted tasks, may violate Circular 230 section 10.27 depending on the facts (IRS-OPR-2026, item 2).'
+  - 'Australia: solicitors should record and disclose, if the client requests, when and how AI was used and how it is reflected
+    in costs (AUSLEG-AISTATEMENT-2024, p. 2). England and Wales: the SRA has no specific generative AI guidance on use or
+    disclosure for client care (LAWSOC-GENAI-2026).'
+  - Disclosure may invite fee cuts, since some clients use AI adoption as leverage to reduce fees (TRI-LEGALWEEK-2026). Layer3
+    reports some clients require disclosure of AI use and pass-through of efficiency savings, and that charging full hours
+    for AI-accelerated work leads to write-offs (LAYER3-OCG-2026, Clause 4).
+  human_checkpoints:
+  - Timekeeper confirms the AI tag; billing partner applies the client rule and judges reasonableness of flat fees (CALBAR-GENAI-2026,
+    p. 8)
+  - Client informed written consent before any markup on matter-specific AI costs (CALBAR-GENAI-2026, p. 8)
+  role_evolution: Not described in the sources. Pricing and innovation leads (Greenberg Traurig's Chief Pricing and Innovation
+    Officer, DLA Piper's AI innovation lead) handle client AI-value conversations (TRI-LEGALWEEK-2026).
+  evidence_grade: D
+  sources:
+  - ref: ZSCALER-OCG-2025
+    title: Outside Counsel Billing Guidelines (revised April 7, 2025); a client's own primary document (in-house)
+    publisher: Zscaler, Inc.
+    type: firm
+    url: https://www.zscaler.com/legal/outside-counsel-billing-guidelines
+    date: '2025-04-07'
+    access: full
+    locator: Section 'Artificial Intelligence (AI)'
+  - ref: TRI-LEGALWEEK-2026
+    title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide
+    date: '2026-03-13'
+    access: full
+    locator: '''The billing conversation''; ''The contradictions in the room'''
+  - ref: TRI-GREATDISCONNECT-2026
+    title: 'The great AI disconnect: Firms and legal departments are not communicating about AI usage'
+    publisher: Thomson Reuters Institute
+    type: survey
+    url: https://www.thomsonreuters.com/en/institute/articles/great-ai-disconnect
+    date: '2026-03-18'
+    access: full
+    locator: Survey findings
+  - ref: EVERLAW-BLOG-2026
+    title: Setting Expectations for GenAI Usage and Pricing with Outside Counsel
+    publisher: Everlaw
+    type: vendor
+    url: https://www.everlaw.com/blog/corporations/setting-expectations-for-genai-usage-and-pricing-with-outside-counsel/
+    date: '2026-01-29'
+    access: full
+    locator: Section on disclosure requirements
+  - ref: ILTA-TECHSURVEY-2026
+    title: The ILTA Technology Survey 2026 Executive Summary
+    publisher: International Legal Technology Association
+    type: survey
+    url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
+    date: 2026-06
+    access: full
+    locator: p. 9; p. 5, Q3.18
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 7, Rules 1.2 and 1.4 row; p. 8
+  - ref: TXETHICS-OP705-2025
+    title: Opinion 705 (generative AI in the practice of law)
+    publisher: Professional Ethics Committee for the State Bar of Texas, via Texas Center for Legal Ethics
+    type: professional-body
+    url: https://www.legalethicstexas.com/resources/opinions/opinion-705/
+    date: 2025-02
+    access: full
+    locator: Fees section
+  - ref: DCBAR-OP388-2024
+    title: Ethics Opinion 388 (generative AI in client matters)
+    publisher: District of Columbia Bar
+    type: professional-body
+    url: https://www.dcbar.org/for-lawyers/legal-ethics/ethics-opinions-210-present/ethics-opinion-388
+    date: 2024-04
+    access: full
+    locator: Section E
+  - ref: NCBAR-FEO1-2024
+    title: 2024 Formal Ethics Opinion 1 (use of artificial intelligence in a law practice)
+    publisher: North Carolina State Bar
+    type: professional-body
+    url: https://www.ncbar.gov/for-lawyers/ethics/adopted-opinions/2024-formal-ethics-opinion-1/
+    date: '2024-11-01'
+    access: full
+    locator: Opinion 6 (billing inquiry)
+  - ref: TRI-ABA512-2025
+    title: Is ABA Formal Opinion 512 off the mark? And if so, what can law firms and GCs do about it? (William Josten; quotes
+      the opinion)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/aba-formal-opinion-512
+    date: '2025-04-02'
+    access: full
+    locator: Section on flat fees
+  - ref: VACOURTS-LEO1901-2025
+    title: Order approving Legal Ethics Opinion 1901 (full opinion text)
+    publisher: Supreme Court of Virginia
+    type: regulator
+    url: https://www.vacourts.gov/static/courts/scv/amendments/leo_1901.pdf
+    date: '2025-11-24'
+    access: full
+    locator: Analysis, pp. 2-4
+  - ref: IRS-OPR-2026
+    title: Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert, Issue 2026-19)
+    publisher: Internal Revenue Service, Office of Professional Responsibility
+    type: regulator
+    url: https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70
+    date: '2026-06-24'
+    access: full
+    locator: Item 2
+  - ref: AUSLEG-AISTATEMENT-2024
+    title: Statement on the Use of Artificial Intelligence in Australian Legal Practice
+    publisher: Law Society of New South Wales, Legal Practice Board of Western Australia, Victorian Legal Services Board +
+      Commissioner
+    type: regulator
+    url: https://www.lawsociety.com.au/sites/default/files/2024-12/LS4590_PSP_Statement_AI_LawSocietyVersion.pdf
+    date: 2024-12
+    access: full
+    locator: p. 2
+  - ref: LAWSOC-GENAI-2026
+    title: Generative AI - the essentials (page undated; latest event it cites is April 2026)
+    publisher: Law Society of England and Wales
+    type: professional-body
+    url: https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials
+    date: 2026-04
+    access: full
+    locator: Section on client care
+  - ref: LAYER3-OCG-2026
+    title: 'AI Provisions in Outside Counsel Guidelines: A Compliance Guide for Law Firms (updated 7 Sep 2026)'
+    publisher: Layer3 Labs
+    type: vendor
+    url: https://www.layer3labs.io/guides/ai-provisions-outside-counsel-guidelines
+    date: '2026-09-07'
+    access: full
+    locator: '''Clause 4: Billing Rules for AI-assisted Work'''
+  last_reviewed: '2026-10-19'
+  notes: 'Idea: the client demand (Zscaler, Legalweek) and the fee rules are documented; no deployed tagging or AI fee-check
+    tool was found. Firm kinds: law firms; tax practitioners for the IRS point (cross-reference tax-compliance-corporate-16
+    and tax-compliance-individual-business-22). The matter-opening register of client AI restrictions is held in professional-services-acceptance-risk-11;
+    matter-level evidence of AI savings for client conversations in professional-services-scoping-pricing-09; fee-agreement
+    terms in scoping-pricing-07; hourly billing on actual AI-assisted time in scoping-pricing-06; AI cost metering and pass-through
+    in firm-finance-12. Merged from governance 09, practice 15, discourse 09 (invoice part), and two firm-finance governance
+    ideas routed here (pre-bill fee-compliance check; client AI-terms register applied at bill time).'
+- id: professional-services-billing-collections-15
+  title: 'Idea: a summarised ''services rendered'' invoice in place of itemised time when AI compresses tasks'
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - document-production
+  - client-interaction
+  pattern: other
+  ladder: assist
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: At Legalweek 2026 Zarwin Baum's Mitchell Kaplan said that when AI compresses hours into minutes, an itemised hourly
+    bill undersells the value delivered (TRI-LEGALWEEK-2026). Kopka Law's founder calls the billable hour 'a gigantic waste
+    of time for everyone involved' (TRI-KOPKA-2026).
+  solution: 'Idea: replace itemised time entries with a single ''services rendered'' line, which Kaplan noted predates the
+    billable hour, and asked whether clients would accept it (TRI-LEGALWEEK-2026). The sources describe no AI tool that writes
+    such a summary and no firm that has adopted it. Pattern ''other'': an invoice-format change.'
+  outcomes:
+  - lever: cost
+    description: none published
+    figure: none published
+    measures: 'not applicable: idea'
+    provenance: self-reported
+    source_ref: TRI-LEGALWEEK-2026
+  prerequisites:
+  - Client agreement to a non-itemised format; clients whose guidelines require one task per line cannot accept it (ZSCALER-OCG-2025,
+    'Block Billing')
+  risks_and_guardrails:
+  - Where fees are time-based, billing must reflect time actually spent, so a summarised bill still needs underlying records
+    (CALBAR-GENAI-2026, p. 8).
+  - Virginia's opinion requires the fee basis to be adequately explained, particularly where AI reduces time (VACOURTS-LEO1901-2025,
+    pp. 3-4; VALAWYER-2026).
+  - Perlin argues alternative fee arrangements have mostly supplemented rather than replaced hourly billing (LEGALFUTURES-PERLIN-2025).
+  human_checkpoints:
+  - Billing partner agrees the format with the client
+  role_evolution: Rapoport and Tiano predict firms will move from input-based billing towards outputs and that the pyramid
+    will be pressured (WJLTA-RAPOPORT-2025, abstract).
+  evidence_grade: D
+  sources:
+  - ref: TRI-LEGALWEEK-2026
+    title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
+    publisher: Thomson Reuters Institute
+    type: conference
+    url: https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide
+    date: '2026-03-13'
+    access: full
+    locator: Kaplan paragraph in 'The billing conversation'
+  - ref: TRI-KOPKA-2026
+    title: How one law firm is challenging a broken status quo around billing (Kopka Law)
+    publisher: Thomson Reuters Institute
+    type: press
+    url: https://www.thomsonreuters.com/en/institute/articles/broken-status-quo-around-billing
+    date: '2026-04-30'
+    access: full
+    locator: Sections on the billable hour
+  - ref: ZSCALER-OCG-2025
+    title: Outside Counsel Billing Guidelines (revised April 7, 2025); a client's own primary document (in-house)
+    publisher: Zscaler, Inc.
+    type: firm
+    url: https://www.zscaler.com/legal/outside-counsel-billing-guidelines
+    date: '2025-04-07'
+    access: full
+    locator: '''Block Billing'''
+  - ref: CALBAR-GENAI-2026
+    title: Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)
+    publisher: State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)
+    type: regulator
+    url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
+    date: '2026-05-14'
+    access: full
+    locator: p. 8
+  - ref: VACOURTS-LEO1901-2025
+    title: Order approving Legal Ethics Opinion 1901 (full opinion text)
+    publisher: Supreme Court of Virginia
+    type: regulator
+    url: https://www.vacourts.gov/static/courts/scv/amendments/leo_1901.pdf
+    date: '2025-11-24'
+    access: full
+    locator: Rule 1.5(b) analysis
+  - ref: VALAWYER-2026
+    title: 'Using AI in the Face of Rule 1.5: Reasonableness and Client Communication (Genevieve Leah Sankar), Virginia Lawyer,
+      February 2026 issue'
+    publisher: Virginia State Bar (Virginia Lawyer magazine)
+    type: professional-body
+    url: https://virginialawyer.vsb.org/articles/using-ai-in-the-face-of-rule-1-5-reasonableness-and-client-communication
+    date: '2026-01-21'
+    access: full
+    locator: Takeaways
+  - ref: LEGALFUTURES-PERLIN-2025
+    title: GenAI could 'reinforce rather than disrupt' the billable hour (report on the Perlin article)
+    publisher: Legal Futures
+    type: press
+    url: https://www.legalfutures.co.uk/latest-news/genai-could-reinforce-rather-than-disrupt-the-billable-hour
+    date: '2025-11-14'
+    access: full
+    locator: Paragraphs on AFAs
+  - ref: WJLTA-RAPOPORT-2025
+    title: 'Fighting the Hypothetical: Why Law Firms Should Rethink the Billable Hour in the Generative AI Era (Rapoport and
+      Tiano), 20 Wash. J. L. Tech. & Arts 41'
+    publisher: University of Washington School of Law, Washington Journal of Law, Technology & Arts
+    type: academic
+    url: https://digitalcommons.law.uw.edu/wjlta/vol20/iss2/2
+    date: '2025'
+    access: full
+    locator: Abstract
+  last_reviewed: '2026-10-19'
+  notes: 'Idea discussed at a conference. Firm kind: law firms (US). Kopka Law''s KPI-based retainer model, a real non-hourly
+    arrangement, is held in professional-services-scoping-pricing-18; fee-model choices sit in scoping-pricing and firm-finance-01.
+    Governance 10.'
+- id: professional-services-billing-collections-16
+  title: Consulting and project-based firms use agents in their professional services platform to complete, chase and check
+    timesheets
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - transaction-processing
+  - coordination-scheduling
+  pattern: monitor-diagnose-act
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: Certinia describes timekeeping as a chronically low-adoption workflow, leading to less compliance and more unbilled
+    time (CERTINIA-VEDA-2026). Professional services staff spend time on documentation and entering billable time that they
+    would rather spend with customers (ITBRIEF-KANTATA-2026).
+  solution: Certinia's Veda positions 'conversational timekeeping' on its professional services automation (PSA) platform,
+    without describing mechanics or a customer (CERTINIA-VEDA-2026); its Winter 2026 Project Assistant Agent, offered through
+    an early-adopter programme, flags missing time cards to the project manager but does not create entries (IA-CERTINIA-2025).
+    Certinia's chief product officer says its agents apply determinism to policies such as how a timecard should look (SILICONANGLE-CERTINIA-2026).
+    Kantata's Agent Studio lets practice leads describe agents in plain language; Basware, an invoice-software company, is
+    named as using it to reduce administration, and its quote about billable-time entry is a statement of intent (ITBRIEF-KANTATA-2026).
+    NTT DATA's success story for zeb, a European financial-services consultancy, mentions a timesheet agent among its SAP
+    agents without describing it (NTTDATA-ZEB-2026).
+  outcomes:
+  - lever: capacity
+    description: none published
+    figure: none published
+    measures: 'not applicable: no billing-specific figure'
+    provenance: vendor-published
+    source_ref: CERTINIA-VEDA-2026
+  prerequisites:
+  - A system of record holding project, time and financial data (SILICONANGLE-CERTINIA-2026; NTTDATA-ZEB-2026)
+  - Delivery and timesheet standards written down so an agent can follow them (ITBRIEF-KANTATA-2026)
+  risks_and_guardrails:
+  - Mechanics, review step and data handling of conversational timekeeping are not described (CERTINIA-VEDA-2026).
+  - Certinia says models are probabilistic and need a reasoning layer for determinism (SILICONANGLE-CERTINIA-2026).
+  - On US federal time-and-materials contracts, vouchers need individual daily job timekeeping records or other approved substantiation
+    (FAR-52.232-7, paragraph (a)).
+  human_checkpoints:
+  - Project manager acts on missing-time flags; the agent does not change records (IA-CERTINIA-2025)
+  - Each person confirms their own time
+  role_evolution: Kantata says its aim is firms that compound expertise, not just cut cost (ITBRIEF-KANTATA-2026). No role
+    change is described for billing staff.
+  evidence_grade: C
+  sources:
+  - ref: CERTINIA-VEDA-2026
+    title: 'Veda: AI agents for professional services (Certinia AI page)'
+    publisher: Certinia
+    type: vendor
+    url: https://certinia.com/solutions/ai
+    date: 2026-10
+    access: full
+    locator: '''Make time capture a non-issue'''
+  - ref: IA-CERTINIA-2025
+    title: Certinia Announces Winter 2026 Release
+    publisher: Insightful Accountant
+    type: press
+    url: https://blog.insightfulaccountant.com/certinia-announces-winter-2026-release
+    date: '2025-12-10'
+    access: full
+    locator: Bullet 'Improve project health and margins with AI (PS Cloud)'; early-adopter note
+  - ref: SILICONANGLE-CERTINIA-2026
+    title: Certinia powers professional services with AI (interview with Certinia's chief product and technology officer)
+    publisher: SiliconANGLE
+    type: press
+    url: https://siliconangle.com/2026/04/16/professional-services-ai-certinia/
+    date: '2026-04-16'
+    access: full
+    locator: Passage on timecard policies and the reasoning layer
+  - ref: ITBRIEF-KANTATA-2026
+    title: Kantata launches Agent Studio for professional services
+    publisher: IT Brief UK
+    type: press
+    url: https://itbrief.co.uk/story/kantata-launches-agent-studio-for-professional-services-6f2e3b71-a9d6-4b5d-9ddb-8be3ee77fe5a
+    date: '2026-10-07'
+    access: full
+    locator: Paragraphs on Agent Studio, Basware and the quote on billable time
+  - ref: NTTDATA-ZEB-2026
+    title: 'zeb: putting agentic AI into action'
+    publisher: NTT DATA
+    type: vendor
+    url: https://nttdata-solutions.com/br/success-stories/zeb-putting-agentic-ai-into-action/
+    date: '2026-05-07'
+    access: full
+    locator: Case overview (timesheet agent named among the agents)
+  - ref: CERTINIA-PROVING-2026
+    title: Certinia Customers Are Proving Veda AI Agents Deliver Real Results
+    publisher: Certinia (blog)
+    type: vendor
+    url: https://www.certinia.com/blog/certinia-customers-are-proving-veda-ai-agents-deliver-real-results/
+    date: '2026-09-03'
+    access: full
+    locator: Diabsolut passage (invoice turnaround figure)
+  - ref: FAR-52.232-7
+    title: FAR 52.232-7 Payments under Time-and-Materials and Labor-Hour Contracts (Nov 2021 clause text)
+    publisher: Acquisition.gov (US federal government)
+    type: regulator
+    url: https://www.acquisition.gov/far/52.232-7
+    date: 2021-11
+    access: full
+    locator: Paragraph (a), vouchers
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: consulting and project-based services (zeb; Basware, a software company, uses Kantata for its own administration).
+    Graded C: the only named deployment (zeb) mentions a timesheet agent without describing what it does. Certinia''s blog
+    reports Diabsolut''s invoice turnaround 40% faster (CERTINIA-PROVING-2026); the agent or step behind it is not stated
+    in the input, so it is not used as an outcome here. Consulting billing practice (milestone invoicing, T&M versus outcome
+    billing) was not found. Missing-time-card and project-health agents are held in delivery-management. Merged from practice
+    17, discourse 13 and items routed from delivery-management and staffing-resourcing.'
+- id: professional-services-billing-collections-17
+  title: Accounting firms use AI on time, work-in-progress and invoicing to flag WIP problems early and shorten the time from
+    finished work to bill
+  archetype: professional-services
+  module: billing-collections
+  function: finance-accounting
+  work_types:
+  - transaction-processing
+  - data-reporting
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: 'Time capture, work-in-progress (WIP: work done but not yet billed) review, billing and collections in many accounting
+    firms still run on spreadsheets, email and legacy systems, and few managing partners can pull realization, write-down
+    rate and bill-to-collect cycle on demand (AIWYN-2026). In a vendor survey of accounting firms, 15% named slow or inaccurate
+    billing as their single most-cited operational headache (UKU-AIACCOUNTING-2026).'
+  solution: Aiwyn's general manager says AI already changes time and billing through automated time capture, anomaly detection
+    that flags WIP problems early, and predictive billing that surfaces engagement-level profitability (AIWYN-2026). The Journal
+    of Accountancy notes fewer mistakes mean fewer write-offs in client accounting services (JOFA-CAS-2026).
+  outcomes:
+  - lever: speed
+    description: One unnamed firm shortened the gap between finishing work and sending the bill; the article credits visibility
+      of the metric, not AI.
+    figure: 29 to 18 days in a single month
+    measures: WIP-to-invoice time at one unnamed firm, per the vendor; sample of one
+    provenance: vendor-published
+    source_ref: AIWYN-2026
+  prerequisites:
+  - Realization, write-down rate, bill-to-collect cycle and WIP-to-invoice time defined and visible by partner and service
+    line (AIWYN-2026)
+  risks_and_guardrails:
+  - The article warns AI efficiency will not fix an opaque billing process and may speed up client confusion (AIWYN-2026).
+  - Hourly billing is entrenched; in a Blue J/CPA.com poll of tax practitioners, 28% plan to keep hourly billing but raise
+    realization (ACCTODAY-BLUEJ-2026; sample size not stated).
+  - 'Trust: 62% of firms in Uku''s survey said trust depends on a human approving before anything is sent, and none said they
+    fully trust AI yet; 26% would hand ''draft and send invoices'' to an autonomous agent (UKU-AIACCOUNTING-2026, vendor survey
+    of dozens of firms in 8 countries).'
+  human_checkpoints:
+  - Partners review WIP and approve invoices (AIWYN-2026)
+  role_evolution: Firms are asked to decide where people should spend the time AI frees (AIWYN-2026).
+  evidence_grade: C
+  sources:
+  - ref: AIWYN-2026
+    title: 'Time & Billing for Accounting Firms: What AI Is About to Change (The dirty secret about time billing and what
+      AI is about to expose)'
+    publisher: Aiwyn (article by its general manager of experience)
+    type: vendor
+    url: https://www.aiwyn.ai/resources/articles/the-dirty-secret-about-time-billing-and-what-ai-is-about-to-expose/
+    date: '2026-04-27'
+    access: full
+    locator: Sections on five metrics, WIP-to-invoice time and what AI is changing
+  - ref: ACCTODAY-BLUEJ-2026
+    title: Tax research AI usage doubles, more considering alternative billing models
+    publisher: Accounting Today
+    type: press
+    url: https://www.accountingtoday.com/news/tax-research-ai-usage-doubles-more-considering-alternative-billing-models
+    date: '2026-06-09'
+    access: full
+    locator: Paragraphs on 69% considering alternatives and 28% keeping hourly
+  - ref: JOFA-CAS-2026
+    title: Simple but effective AI use cases for CAS
+    publisher: Journal of Accountancy (AICPA)
+    type: professional-body
+    url: https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/
+    date: 2026-01
+    access: full
+    locator: Section on lowering error rates and rework
+  - ref: UKU-AIACCOUNTING-2026
+    title: 'AI in Accounting 2026: What Real Firms Actually Think (Uku report landing page)'
+    publisher: Uku
+    type: survey
+    url: https://getuku.com/ai-in-accounting-report/
+    date: 2026-06
+    access: full
+    locator: Landing-page findings
+  - ref: KARBON-ENGAGE-2026
+    title: 23 must-see sessions at AICPA & CIMA ENGAGE 2026 (session preview)
+    publisher: Karbon Magazine
+    type: conference
+    url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
+    date: '2026-05-21'
+    access: full
+    locator: 'Session list: no billing or collections session among the 23 previewed'
+  last_reviewed: '2026-10-19'
+  notes: 'Firm kind: accounting firms. Graded C: one vendor article and vendor surveys; the 29-to-18-day figure is one unnamed
+    firm and is credited to visibility rather than AI. Named accounting time-capture deployments (Warren Averett, GHJ) are
+    in entry 01. Billing-model choices among tax practitioners belong to scoping-pricing (scoping-pricing-16). Discourse 12,
+    with the Uku survey from the governance input.'

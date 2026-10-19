@@ -160,7 +160,7 @@
   - {ref: TR-CANTSIGN-2026, title: "If You Can't Verify It, You Can't Sign It", publisher: "Thomson Reuters Innovation Blog", type: vendor, url: "https://www.thomsonreuters.com/en-us/posts/innovation/if-you-cant-verify-it-you-cant-sign-it/", date: "2026-05-05", access: full, locator: "'Built for Verification at Every Stage' section"}
   - {ref: HARVEY-GRAPH-2026, title: "Improving Agent Accuracy With Harvey Graph", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph", date: "2026-10-19", access: full, locator: "section 'What's in Harvey Graph Today', final paragraph"}
   - {ref: LAWSITES-MIDPAGE-2026, title: "Harvey Now Connects to Legal Research Platform Midpage Through An MCP Connector", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/harvey-now-connects-to-legal-research-platform-midpage-through-an-mcp-connector.html", date: "2026-10-19", access: full, locator: "list of example uses ('Citation review')"}
-  - {ref: CHARLOTIN-DB-2026, title: "AI Hallucination Cases Database", publisher: "Damien Charlotin", type: academic, url: "https://www.damiencharlotin.com/hallucinations/", date: "2026-10-19", access: full, locator: "header paragraph (PelAIkan mention)"}
+  - {ref: CHARLOTIN-DB-2026, title: "AI Hallucination Cases Database", publisher: "Damien Charlotin", type: academic, url: "https://www.damiencharlotin.com/hallucinations/", date: "2026-10-19", access: full, locator: "header paragraph (PelAIkan mention); header count and country and party filter counts as displayed"}
   - {ref: LAWSOC-GENAI-2026, title: "Generative AI - the essentials", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials", date: "2026", access: full, locator: "section on how generative AI works (recitation checkers)"}
   - {ref: STANFORD-MAGESH-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Stanford RegLab / HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract"}
   - {ref: CANLAWYER-SC-2026, title: "Sullivan & Cromwell apologizes to US bankruptcy judge for AI-generated errors in Prince Group case", publisher: "Canadian Lawyer", type: press, url: "https://www.canadianlawyermag.com/news/international/sullivan-cromwell-apologizes-to-us-bankruptcy-judge-for-aigenerated-errors-in-prince-group-case/394014", date: "2026-04-22", access: full, locator: "paragraphs 4-5"}
@@ -396,6 +396,7 @@
   - {ref: LLRX-FARRIS-2026, title: "\"Hallucinations\" by West & Lexis AI?", publisher: "LLRX", type: press, url: "https://www.llrx.com/2026/04/hallucinations-by-west-lexis-ai/", date: "2026-04", access: full, locator: "paragraphs on study findings and currency"}
   - {ref: ARXIV-TARANUKHIN-2026, title: "Legal LLM Hallucination Should Be Evaluated as Failure of Legal Warrant (arXiv 2609.17546)", publisher: "Taranukhin and Shwartz (AI4Law at ICML 2026)", type: academic, url: "https://arxiv.org/abs/2609.17546", date: "2026-07-15", access: full, locator: "abstract"}
   - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Competence row, p.5"}
+  - {ref: LAWSITES-PERCIPIENT-2026, title: "Percipient Launches Certera.AI, A Blind Head-to-Head Testing Ground for Legal AI, with a Lawyer-Voted Leaderboard On the Way", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/07/percipient-launches-certera-ai-a-blind-head-to-head-testing-ground-for-legal-ai-with-a-lawyer-voted-leaderboard-on-the-way.html", date: "2026-07-13", access: full, locator: "sections 'Legal Only, Vetted Voters' and 'An Elo Leaderboard'"}
   last_reviewed: '2026-10-19'
   notes: >-
     Firm kind: law firms (Linklaters, UK; Vals consortium firms Reed Smith, Fisher Phillips, McDermott Will & Emery
@@ -404,7 +405,7 @@
     proposed grade A on Linklaters' and Vals' measured scores; graded B here because the figures measure tools in
     isolation, not an outcome of people working with AI, matching the work-production module and the tax archetype.
     The Linklaters round is from February 2025. Percipient's lawyer-voted blind model comparison (Certera.AI, beta
-    2026-07-13) published no rankings at launch (LAWSITES-PERCIPIENT-2026, not used as evidence). Related:
+    2026-07-13) published no rankings at launch (LAWSITES-PERCIPIENT-2026), so it is context, not evidence. Related:
     professional-services-work-production-23 (test on the firm's own work, B), professional-services-work-production-07
     (task-by-task rules), assurance-quality-management-04.
 
@@ -787,8 +788,8 @@
   last_reviewed: '2026-10-19'
   notes: >-
     In-house (Microsoft legal department). Merged from practice-09 (B), discourse-15 (idea, D) and TRI-STANDARDS-2026
-    routed from talent-learning (the practice angle's TRI-ACCOUNT-2026 is the same article and is cited here under
-    the archetype's existing key). Grade B with an adjacent-process cap: the figures come from contract redlining, not
+    routed from talent-learning (the practice angle cited the same article under a different key; the archetype's
+    existing key is used). Grade B with an adjacent-process cap: the figures come from contract redlining, not
     review of finished deliverables. Clyde & Co is named in the Microsoft announcement with adoption approaching 90%
     but no quality data. Related: professional-services-work-production-08 (same deployment as playbook review),
     professional-services-work-production-24 (idea: log edits and overrides).

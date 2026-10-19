@@ -69,7 +69,7 @@ owns a finance task.** Ladder values for pricing and capital entries are nominal
   PwC $3 billion network investment, RSM $1 billion commitment, KPMG usage tracking to value its investment (B).
   `#09` track where freed hours go and decide in advance to resell or reprice them (SPI's "leak", C).
 - Improve (step): `#08` pilot-to-licence gate at more than 70% weekly active users (Holland & Hart, law, B).
-- Reinvent: `#10` build a firm-owned platform: Kirkland & Ellis's reported $500 million commitment with Palantir (B).
+- Reinvent: `#10` build a firm-owned platform: Kirkland & Ellis's reported $500 million commitment, Palantir among its partners (B).
 
 **AI cost**
 - Improve (process): `#11` read the meter by tool and user, set model-choice defaults and budgets, renegotiate terms;
@@ -130,7 +130,7 @@ Ask a managing partner, CFO or COO, pricing director, innovation or knowledge le
 ## 5. Metrics and benchmarks
 
 **Market and firm performance (US law unless stated; none attributed to AI by its source)**
-- Q1 2026 LFFI 55, its long-run average, despite Am Law 100 worked-rate growth of almost 10% and demand growth of 2.7%
+- Q1 2026 LFFI 55, its long-run average, despite Am Law 100 worked-rate growth of almost 10% and overall demand growth of 2.7%
   [TRI-LFFI-Q1-2026]; Midsize worked rates grew 5.3% against 9.8% for the Am Law 100 [TRI-LFFI-MIDSIZE-2026]. Q4 2025 index 61, worked-rate
   growth 7.1% [TRI-LFFI-ELASTICITY-2026]. Q2 2026: index up sharply; associates +4.3%, non-equity partners +6.0%,
   equity partners -1.2% in demand; technology plus KM spend +11.6% [TRI-LFFI-Q2-2026; TRI-LFFI-COSTS-2026].
@@ -177,21 +177,21 @@ differ by state; see scoping-pricing §6.
 
 **AI costs.** General AI subscriptions are overhead; matter-specific AI costs may be charged only with disclosure in
 the fee agreement, at actual cost, with no markup without informed written consent [CALBAR-GENAI-2026]. Texas
-generally limits recovery to the amount actually paid [TXETHICS-OP705-2025]. An Illinois State Bar newsletter opinion
+generally limits recovery to the amount actually paid [TXETHICS-OP705-2025]. A practitioner's opinion in an Illinois State Bar Association newsletter
 recommends absorbing ordinary AI use as overhead [ISBA-ELEFANT-2026].
 
 **Client instructions.** Some clients demand AI use and savings targets; others bar AI without permission or refuse
 to pay for AI-done work [TRI-LEGALWEEK-2026]. California requires following client guidelines that restrict AI
 [CALBAR-GENAI-2026].
 
-**Ownership and independence.** ABA Model Rule 5.4 is the main US barrier to non-lawyer ownership; Colorado enacted a
+**Ownership and independence.** ABA Model Rule 5.4 bars fee-sharing and partnerships with non-lawyers; Colorado enacted a
 fee-sharing ban in August 2026 and Illinois requires MSO disclosure to clients [BESTLAW-WSHB-2026]. An April 2026 academic
 essay argues no state bar has issued MSO governance standards [COLUMBIA-BREYDO-2026]. Arizona licenses alternative business structures
 [AZ-ABS-2025]. For accounting firms, the AICPA sought comment on alternative-practice-structure rules for PE-backed
 firms (comments due 30 April 2026) [NYSSCPA-APS-2025]; detail in assurance-acceptance-independence-16.
 
-**People data.** AI used for employment and worker management in the EU is high-risk from 2 December 2027
-[EC-AIACT-2026]; California flags bias risk in AI-assisted employment actions [CALBAR-GENAI-2026]. Passive activity
+**People data.** AI used for employment and worker management is a high-risk use under the EU AI Act; obligations apply from
+2 December 2027 [EC-AIACT-2026]; California flags bias risk in AI-assisted employment actions [CALBAR-GENAI-2026]. Passive activity
 capture (`#03`) needs a privacy review; vendor security claims need checking [LAUREL-WORKSTUDIO-2026].
 
 **Data in finance analytics.** Legal Decoder replaces firm, timekeeper, matter and client names with tokens before an
@@ -216,13 +216,13 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
   enablement roles [WESTERNALLIANCE-COO-2026].
 - **Partners**: PwC's US CEO said partners who resist AI "have no place at the firm" [CPAPA-PWC-2026]; only 25% of
   stand-out lawyers strongly agree their firm has a plan to monetise AI [TRI-STANDOUT-2026]; INSIDE Public Accounting
-  expects partner tracks in operations and technology enablement [IPA-2026].
+  says the fastest-moving firms are expanding partner tracks in operations and technology enablement [IPA-2026].
 - **Associates and non-equity partners** carry most extra demand [TRI-LFFI-Q2-2026]; Legalweek panels treated the
   associate's future as the open question [TRI-LEGALWEEK-CRISIS-2026]. Intake and training: talent-learning.
 - **Engineers inside firms**: Kirkland reports 180+ AI engineers and data scientists and an AI infrastructure
   director opening [BLOOMBERGLAW-KIRKLAND-2026].
-- **In-house legal operations** is the first line for AI pressure; GCs naming technology a top priority doubled from
-  2025 to 2026 [TRI-LDOR-2026].
+- **In-house legal operations** is moving into strategy; the share of GCs naming technology a strategic priority doubled
+  from 2025 to 2026 [TRI-LDOR-2026].
 
 ## 8. Frontier
 
@@ -253,7 +253,7 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
 - **"We're having record years; why change?"** True: rates and demand are strong [TRI-LFFI-Q2-2026;
   BLOOMBERG-AICOST-2026]. But Q1 2026 output was only average despite near-record inputs [TRI-LFFI-Q1-2026], TRI warns
   firms using AI mainly to justify higher rates are exposed if the AI bubble bursts [TRI-SOTLM-2026], and 32% of
-  corporate clients have reconsidered or plan to reconsider providers [TR-FOP-2026].
+  corporate clients have reconsidered, or plan to reconsider, providers they see as falling behind [TR-FOP-2026].
 - **"AI efficiency will cut our revenue."** On hourly work it can: saved time cannot be billed [TXETHICS-OP705-2025].
   That is why the fee mix matters (`#01`): California allows flat fees that build in AI savings [CALBAR-GENAI-2026],
   and McKinsey prices about a quarter of fees on outcomes [BI-MCKINSEY-2025]. Plan where freed hours go (`#09`).
@@ -263,8 +263,8 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
   one major model vendor changed rates in ten of the last 13 months [BAKERDONELSON-TOKENS-2026], and one PowerPoint cost $2 [TRI-METER-2026].
 - **"We'll just pass AI costs to clients."** Only matter-specific costs, disclosed, at cost, no markup without consent
   [CALBAR-GENAI-2026]; Keypoint's CEO expects clients to be annoyed [LAWYERSWEEKLY-KEYPOINT-2026].
-- **"Cut AI spend by limiting the expensive models."** Lawyers pick the costlier model when accuracy matters
-  [ARTLAW-HARVEY14X-2026]; "you cannot tell a client you ran out of tokens" [TRI-METER-2026].
+- **"Cut AI spend by limiting the expensive models."** Artificial Lawyer argues lawyers will pick the costlier model when
+  accuracy matters [ARTLAW-HARVEY14X-2026]; a speaker noted a firm cannot tell a client it ran out of tokens [TRI-METER-2026].
 - **"We should build our own, like Kirkland."** Kirkland gave no ROI benchmarks [BLOOMBERGLAW-KIRKLAND-2026]; Ropes &
   Gray's CIO said building did not make sense for that firm at present [AIWEEKLY-KIRKLAND-2026].
 - **"Outside capital will pay for it."** Crowe did it [AT-CROWE-KKR-2026], but fewer UK mid-tier firms are considering
@@ -277,24 +277,24 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
 
 ## 10. Sources
 
-Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML.
+Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; their date and URL are given here.
 
 - **Regulators and professional bodies:** CALBAR-GENAI-2026, TXETHICS-OP705-2025, DCBAR-OP388-2024, ISBA-ELEFANT-2026, AZ-ABS-2025, NYSSCPA-APS-2025, EC-AIACT-2026, LAWSOC-AGENTIC-2026,
   ICAEW-MIDTIER-2026, ILTA-TECHSURVEY-2026.
 - **Academic:** STANFORD-DEL-2026, NBER-AUTOR-2026, COLUMBIA-BREYDO-2026.
 - **Surveys and market data:** TR-FOP-2026, TR-AIPS-2026, TRI-FOP-LAW-2026, TRI-STANDOUT-2026, TRI-SOTLM-2026, TRI-SOTLM-REPORT-2026, TRI-LFFI-Q1-2026, TRI-LFFI-Q2-2026, TRI-LFFI-COSTS-2026,
-  TRI-LFFI-LEVERAGE-2026, SPI-AI-2026, LITERA-LAWSITES-2026, TRI-LFFI-MIDSIZE-2026* (TRI, Q1 2026 LFFI analysis on Midsize firms, 2026-05-26), TRI-LFFI-ELASTICITY-2026* (TRI, Q4 2025 LFFI analysis,
-  2026-03-02), TRI-GREATDISCONNECT-2026* (TRI, "The great AI disconnect", 2026-03-18), BIGHAND-FINANCE-2026* (BigHand 2026 Annual Law Firm Finance Report landing page, 2026-01-21),
-  DELTEK-CLARITY-2026* (Deltek Clarity A&E study release, 2026-05-12), TRI-LDOR-2026* (TRI 2026 Legal Department Operations Report page, 2026-09-22).
+  TRI-LFFI-LEVERAGE-2026, SPI-AI-2026, LITERA-LAWSITES-2026, TRI-LFFI-MIDSIZE-2026* (TRI, Q1 2026 LFFI analysis on Midsize firms, 2026-05-26, https://www.thomsonreuters.com/en/institute/articles/q1-2026-lffi-analysis-midsize-law-firms), TRI-LFFI-ELASTICITY-2026* (TRI, Q4 2025 LFFI analysis,
+  2026-03-02, https://www.thomsonreuters.com/en/institute/articles/lffi-q4-2025-analysis-rate-elasticity), TRI-GREATDISCONNECT-2026* (TRI, "The great AI disconnect", 2026-03-18, https://www.thomsonreuters.com/en/institute/articles/great-ai-disconnect), BIGHAND-FINANCE-2026* (BigHand 2026 Annual Law Firm Finance Report landing page, 2026-01-21, https://www.bighand.com/en-us/resources/whitepapers/2026-annual-law-firm-finance-report/),
+  DELTEK-CLARITY-2026* (Deltek Clarity A&E study release, 2026-05-12, https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/), TRI-LDOR-2026* (TRI 2026 Legal Department Operations Report page, 2026-09-22, https://www.thomsonreuters.com/en/institute/reports/legal-department-operations-report-2026).
 - **Firms:** BAKERDONELSON-TOKENS-2026, WINSTON-PE-2026, HK-AMLAW-2026, RADIANT-TOKENS-2026.
 - **Vendors:** LAUREL-SIGNAL-2026, LAUREL-WORKSTUDIO-2026, LAUREL-TONKON-2026, LAUREL-WARREN-2026, LEGORA-LAUREL-2026, LEGORA-CBP-2026, ADERANT-AGENTS-2026, NETDOCUMENTS-TOKENS-2026,
   LEXIS-FORRESTER-2025, CLIO-SOLO-2026.
 - **Conference coverage:** TRI-LEGALWEEK-2026, TRI-LEGALWEEK-CRISIS-2026, TRI-METER-2026, TRI-ILTACON-IMPL-2026, TRI-ILTACON-2025, TRI-COOCFO-AI-2025, EDISCOVERYTODAY-ILTACON-2026, TRI-EVENTS-2026*
-  (TRI events page listing the 25th Law Firm COO & CFO Forum).
+  (TRI events page listing the 25th Law Firm COO & CFO Forum, read 2026-10-19, https://www.thomsonreuters.com/en/institute/events).
 - **Press, podcasts and commentary:** BI-MCKINSEY-2025, RESULTSENSE-2026, FORRESTER-BLOG-2025, CTV-DELOITTE-2025, CPAPA-PWC-2026, AT-PWC-2026, AT-CROWE-2026, AT-CROWE-KKR-2026, AT-AINATIVE-2026,
   BLOOMBERG-KPMG-2025, BLOOMBERGTAX-PRICING-2026, BLOOMBERGLAW-KIRKLAND-2026, BLOOMBERGLAW-TEXAS-2026, BLOOMBERGLAW-BILLABLE-2026, BLOOMBERGLAW-GCXAI-2026, AIWEEKLY-KIRKLAND-2026, BESTLAW-WSHB-2026,
   ARTLAW-HARVEY14X-2026, NONBILLABLE-2026, LAW360-LEGORA-2026, LAWSITES-DECODER-2026, LAWSITES-LAUREL-2026, LAWSITES-ILTASURVEY-2026, LAWSITES-HARVEYDJ-2026, LAWSITES-GENERAL-2026,
   LAWYERSWEEKLY-KEYPOINT-2026, CONSULTANCYUK-BONE-2026, HBJ-BILLABLE-2026, MONDAQ-GGI-2026, IPA-2026, VANMORGEN-SUPERRETURN-2026, BLAKEOLIVER-PE-2026, WESTERNALLIANCE-COO-2026, TRI-CHARGING-2026,
-  TRI-EFFICIENCY-2025, TRI-ROI-2025, TRI-RETHINKING-2025, BLOOMBERG-AICOST-2026* (Bloomberg Law, Big Law AI cost savings column, 2026-09-03), LAWSITES-CELESTE-2026* (LawSites, Intapp Celeste general
-  availability, 2026-07-16), AT-AIUC-2026* (Accounting Today, SOC 2 and AIUC-1 certification, 2026-10-19).
+  TRI-EFFICIENCY-2025, TRI-ROI-2025, TRI-RETHINKING-2025, BLOOMBERG-AICOST-2026* (Bloomberg Law, Big Law AI cost savings column, 2026-09-03, https://news.bgov.com/business-and-practice/big-law-ai-cost-savings-remain-a-mystery-as-billable-hours-jump), LAWSITES-CELESTE-2026* (LawSites, Intapp Celeste general
+  availability, 2026-07-16, https://www.lawnext.com/2026/07/intapp-makes-celeste-generally-available-calling-it-an-ai-coworker-to-run-the-business-side-of-law-firms.html), AT-AIUC-2026* (Accounting Today, SOC 2 and AIUC-1 certification, 2026-10-19, https://www.accountingtoday.com/news/new-ai-assurance-certification-combines-soc-2-aiuc-1).
 - **Job postings:** AMBITION-PRICINGMANAGER-2026, AMBITION-PRICINGADVISOR-2026.
