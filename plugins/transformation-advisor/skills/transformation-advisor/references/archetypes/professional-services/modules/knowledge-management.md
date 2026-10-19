@@ -37,7 +37,7 @@ of what exists. Audit methodology, tax research and security runbooks live in th
 | Find and retrieve | Search, ask questions of documents, locate an expert or comparable matter | research-synthesis | Enterprise search and expertise management "dramatically underdeveloped" [ILTA-TECHSURVEY-2026] |
 | Reuse and apply | Benchmark terms against deal history; ground drafts and client tools in approved precedent | research-synthesis, document-production | Risk that lawyers take the easiest template, not the best [IMANAGE-ALLENS-2025] |
 | Transfer and onboard | Matter or engagement briefs for joiners; pre-call research | research-synthesis, coordination-scheduling | A new lawyer spends days reconstructing a matter's context [NETDOCUMENTS-CONTEXTGRAPH-2026]; customer success managers spent four to five hours a day on pre-call research [KANTATA-BASWARE-2026] |
-| Govern AI access and use | Approved tools, connectors, policy, training, audit logs | review-assurance, coordination-scheduling | 34% of professionals use unsanctioned AI [TR-FOP-2026]; no public leakage tests |
+| Govern AI access and use | Approved tools, connectors, policy, training, audit logs | review-assurance, coordination-scheduling | 34% of professionals use unsanctioned AI [TR-FOP-REPORT-2026]; no public leakage tests |
 | Maintain and measure | De-duplicate, retire, analyse searches and reuse, re-test tools | data-reporting | KM impact hard to measure; firms "still gathering the data" [APQC-KMEXEC-2026; TRI-LEGALWEEK-2026] |
 
 ## 3. Where AI is changing the work
@@ -46,7 +46,7 @@ Lenses: improve (assist or augment a step), automate (no person on the normal pa
 multi-step outcome with checkpoints), reinvent (`change_scope: model`). **Coverage:** assist 6, augment 14, automate
 2, delegate 1; step 11, process 11, model 1. Automate has a private preview (`#06`) and a beta client portal (`#22`).
 Delegate has one announced product pair (`#10`). Reinvent has one beta (`#22`). No firm reports a knowledge step that
-has stopped existing. Verification lowered `#04` and `#15` from B to C (see the YAML notes).
+has stopped existing. `#04` and `#15` are C: their named deployments do not show the AI step (see the YAML notes).
 
 **Find and retrieve**
 - Improve: `#01` AI search over a curated precedent library, under existing permissions (Allens and Womble Bond
@@ -129,7 +129,7 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
    joiner?"** Reveals whether `#23` has any baseline; no firm publishes one.
 10. **"How do client confidentiality terms and AI restrictions reach the people reusing that client's material?"**
     Reveals the sanitisation step (`#12`, `#15`) and client-term gaps.
-11. **"Where do people go when the sanctioned tool is not good enough?"** Reveals shadow AI (34% in TR-FOP-2026) and
+11. **"Where do people go when the sanctioned tool is not good enough?"** Reveals shadow AI (34% in TR-FOP-REPORT-2026) and
     whether `#18` is working.
 12. **"Do clients ask for access to your know-how, and who would keep a client-facing tool current?"** Reveals `#22`;
     Debevoise's partner calls himself the gatekeeper and says it takes a lot of time.
@@ -148,7 +148,7 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
 - ILTA by firm size: formal GenAI policy 57% (under 50 lawyers) to 98% (350-699); training before use 11% to 72%;
   client approval 8% to 38% [ILTA-TECHSURVEY-2026].
 - Thomson Reuters (1,816 professionals; vendor): 34% use unsanctioned AI; 41% of AI users lack tools built on verified
-  professional content; 94% say outputs must be grounded in authoritative content [TR-FOP-2026].
+  professional content; 94% say outputs must be grounded in authoritative content [TR-FOP-REPORT-2026].
 - iManage (3,000+ decision makers, cross-industry; vendor): 85% at some stage of AI adoption; fully integrated AI 27%
   in the most mature tier versus 3% in the least; 36% policy violation; 25% public AI with little oversight
   [IMANAGE-BENCH-2026].
@@ -169,9 +169,9 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
   filings [NETDOCS-LCEB-2026].
 
 **Adjacent independent evidence (tools or trials, not firm knowledge bases)**
-- Document Q&A on one supplied document: best tools 94.8 and 89.6 against a lawyer baseline of 70.1 [VALS-VLAIR-2025].
+- Document Q&A on one supplied document: best tools 94.8 and 89.6 against a lawyer baseline of 70.1 [VALS-VLAIRFEB-2025].
 - Retrieval-based legal research tools hallucinated 17% to 33% of the time (2024) [STANFORD-MAGESH-2024].
-- Patent drafting trial, 133 lawyers: quality +0.34 to +0.38 SD; unaided skill gain went to seniors [NBER-AUTOR-2026].
+- Patent drafting trial, 133 lawyers: quality +0.34 to +0.38 SD; unaided skill gain went to seniors; not independent: Google ran and funded it [NBER-AUTOR-2026].
 
 **What to measure:** failed or zero-result searches; content that never surfaces; reuse rate of curated assets;
 share of answers whose citations check out; time for a joiner to get oriented; curation backlog; results of
@@ -214,7 +214,7 @@ pitching or staffing; deciding what clients may see.
 
 - **Knowledge teams become curators and gatekeepers.** Allens' team curates, pins standard documents, trains and
   recruits champions [IMANAGE-ALLENS-2025]; McKinsey's 2023 announcement describes data stewards as central to Lilli's
-  quality (as read by the deep dive; the page could not be re-opened) [MCKINSEY-LILLI-2023];
+  quality (the page could not be re-opened to re-check this) [MCKINSEY-LILLI-2023];
   Debevoise partners curate a client product [BLOOMBERGLAW-DEBEVOISE-2026]. A vendor forecasts professional support
   lawyers (lawyers who maintain know-how rather than bill clients) becoming quality guardians of AI metadata
   [KMWORLD-LEXSOFT-2025].
@@ -237,9 +237,9 @@ pitching or staffing; deciding what clients may see.
 ## 8. Frontier
 
 - **2025-11-11** Oz Benamram (SKILLS): firms have until end-2027 to share knowledge with clients via AI [AL-LAWPUNX-2025].
-- **2026-02-20** TRI premortem (two fictional scenarios): agentic pilots fail on undocumented exceptions and fragmented storage [TRI-PREMORTEM-2026].
+- **2026-02-20** TRI premortem (two fictional scenarios): agentic pilots fail on undocumented exceptions and fragmented storage [TRI-PILOTFAIL-2026].
 - **2026-03-11** Legalweek sessions "What KM Must Still Control" and "KM, DMS, and LLMs in Harmony" (titles only) [EDRM-LEGALWEEK-2026].
-- **2026-04-14** Law Society: accountability frameworks do not yet fit autonomous systems [LAWSOC-AGENTICFUTURE-2026].
+- **2026-04-14** Law Society: accountability frameworks do not yet fit autonomous systems [LAWSOC-AGENTIC-2026].
 - **2026-05-14** NetDocuments context graph, private preview; California approves agentic guidance [NETDOCUMENTS-CONTEXTGRAPH-2026; CALBAR-GENAI-2026].
 - **2026-05-20** Harvey and DeepJudge target the "context tax" [LAWSITES-HARVEYDJ-2026].
 - **2026-07-20** Clifford Chance launches its Knowledge Bank [ARTIFICIALLAWYER-CLIFFORDCHANCE-2026].

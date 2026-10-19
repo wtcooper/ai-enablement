@@ -1,14 +1,18 @@
 # Use cases: professional-services / quality-review
-# Sources checked 2026-10-19. 18 entries: A 0, B 11, C 6, D 1. Merged from 53 candidates in three deep dives
-# (practice 19, discourse 17, governance 17) plus items routed here from the knowledge-management,
-# delivery-management, talent-learning and acceptance-risk deep dives. Evidence is mostly legal (law firms, courts,
+# Sources checked 2026-10-19. 18 entries: A 0, B 11, C 6, D 1. Evidence is mostly legal (law firms, courts,
 # bars, in-house legal teams); accounting and consulting evidence is mostly incidents and trade-press interviews.
 # No named firm or in-house team publishes a reviewer catch rate, override rate, parallel-run result or inspection
-# finding for AI-assisted deliverables. Re-verified 2026-10-19 against the sources (see
-# research/runs/wave3/quality-review-verification-report.md). Tool benchmarks (Vals, Stanford, a firm's own benchmark) are not graded A on
+# finding for AI-assisted deliverables. Tool benchmarks (Vals, Stanford, a firm's own benchmark) are not graded A on
 # their own, matching the work-production module and the tax archetype. Practice-specific review (audit
 # engagement quality review, tax technical review, security operations) lives in the assurance, tax and security
 # archetypes; overlaps are named by full id in notes.
+# Similar keys that name different documents: VALS-VLAIRFEB-2025 (Vals' February 2025 legal AI report) and
+# VALS-VLAIRRES-2025 (its October 2025 legal research report, which the tax archetype cites as VALS-VLAIR-2025);
+# LAWSOC-AGENTIC-2026 (the Law Society's agentic-AI report summary page) and LAWSOC-AGENTICFULL-2026 (the full report);
+# CTV-DELOITTE-2025 (Australia refund) and CTV-DELOITTE-NL-2025 (Newfoundland and Labrador); ABA-LPT-PAYKIN-2026,
+# ABA-LPT-SC-2026 and ABA-LPT-WILLIAMS-2026 are separate episodes of one podcast, which share the feed URL.
+# TR-FOP-REPORT-2026 is Thomson Reuters' full Future of Professionals Report 2026 (released 2026-06-22). The tax
+# archetype's TR-FOP-2026 is a different document: TRI's paper on that report for tax and audit firms.
 
 - id: professional-services-quality-review-01
   title: Turn the AI policy into an enforced review rule, with required human review, independent verification, attestation and compliance checks
@@ -60,7 +64,7 @@
   - A named reviewer for each AI-assisted deliverable or filing
   - Training before access (see professional-services-talent-learning-01)
   - A record of who checked what (see professional-services-quality-review-03)
-  - Visibility of actual use; 34% of surveyed professionals use AI tools their organisation has not sanctioned (TR-FOP-2026)
+  - Visibility of actual use; 34% of surveyed professionals use AI tools their organisation has not sanctioned (TR-FOP-REPORT-2026)
   risks_and_guardrails:
   - A policy alone failed at Butler Snow and Sullivan & Cromwell (EDRM-JOHNSONDUNN-2025; CANLAWYER-SC-2026).
   - Gordon Rees admitted that one of its attorneys had denied to a bankruptcy court that AI was used in filings with fabricated citations, and reimbursed more than $55,000 in fees to the other side's firms (GIGALAW-GORDONREES-2025).
@@ -76,27 +80,25 @@
     update controls as AI becomes more autonomous (CALBAR-GENAI-2026, p.7). Courts may ask leaders what measures they took (EWHC-AYINDE-2025, para 9).
   evidence_grade: B
   sources:
-  - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "Q3.18 policy table, PDF p.5; p.9 governance paragraph"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "Q3.18 policy table, PDF p.5; p.9 governance paragraph"}
   - {ref: MORAE-ILR-2026, title: "The Intelligence Gap: Why AI in Legal Isn't Delivering and What Needs to Change", publisher: "Morae", type: survey, url: "https://www.morae.com/insights/the-intelligence-gap-why-ai-in-legal-isnt-delivering-and-what-needs-to-change/", date: "2026-07-08", access: full, locator: "summary bullets and FAQ"}
   - {ref: LAW360-GA-2026, title: "AI Set To Transform Junior Lawyer Roles, Survey Finds", publisher: "Law360 UK", type: press, url: "https://www.law360.com/articles/2456965/ai-set-to-transform-junior-lawyer-roles-survey-finds", date: "2026-03-24", access: full, locator: "paragraphs 1-12"}
   - {ref: WHITECASE-VERIFY-2026, title: "Verify, Guide, Train: Lessons From Emerging Attorney AI-Misuse Caselaw", publisher: "White & Case", type: firm, url: "https://www.whitecase.com/sites/default/files/2026-04/verify-guide-train-lessons-from-emerging-attorney-ai-misuse-case-law.pdf", date: "2026-04-15", access: full, locator: "'Establish Clear AI-Use Guidelines' section"}
   - {ref: LAWSITES-FILEVINE-2026, title: "Filevine Takes On Shepard's and KeyCite With Its Own AI Case Law Citator and Hallucination Checker", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html", date: "2026-09-02", access: full, locator: "section 'Citators As An Essential Tool' (three sign-offs anecdote)"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.7 duty to supervise; p.9 candor to the tribunal"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.7 duty to supervise; p.9 candor to the tribunal"}
   - {ref: EDRM-JOHNSONDUNN-2025, title: "When AI Policies Fail: The AI Sanctions in Johnson v. Dunn", publisher: "EDRM (Hon. Ralph Artigliere, ret.)", type: community, url: "https://edrm.net/2025/07/when-ai-policies-fail-the-ai-sanctions-in-johnson-v-dunn-and-what-they-mean-for-the-profession/", date: "2025-07-31", access: full, locator: "paragraphs on policy, review, remediation and sanctions"}
   - {ref: CANLAWYER-SC-2026, title: "Sullivan & Cromwell apologizes to US bankruptcy judge for AI-generated errors in Prince Group case", publisher: "Canadian Lawyer", type: press, url: "https://www.canadianlawyermag.com/news/international/sullivan-cromwell-apologizes-to-us-bankruptcy-judge-for-aigenerated-errors-in-prince-group-case/394014", date: "2026-04-22", access: full, locator: "paragraphs 4-5"}
   - {ref: EWHC-AYINDE-2025, title: "R (Ayinde) v London Borough of Haringey; Al-Haroun v Qatar National Bank [2025] EWHC 1383 (Admin)", publisher: "High Court of Justice, King's Bench Division (Divisional Court)", type: regulator, url: "https://www.judiciary.uk/wp-content/uploads/2025/06/Ayinde-v-London-Borough-of-Haringey-and-Al-Haroun-v-Qatar-National-Bank.pdf", date: "2025-06-06", access: full, locator: "paras 7-9"}
-  - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "key findings (34% unsanctioned use)"}
+  - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "key findings (34% unsanctioned use)"}
   - {ref: GIGALAW-GORDONREES-2025, title: "Law Firm Admits Attorney Used AI, Created Fake Citations, Lied to Court (summarising Bloomberg Law)", publisher: "GigaLaw", type: press, url: "https://giga.law/daily-news/2025/10/27/law-firm-admits-attorney-used-ai-created-fake-citations-lied-to-court", date: "2025-10-27", access: full, locator: "paragraph 1"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms (US and UK). Merged from practice-01, practice-12 (training part), discourse-06,
-    governance-04 and governance-17 (unsanctioned-use part), plus LAW360-GA-2026 routed from talent-learning. Grade B:
-    named firms' policies are real, but the public evidence is their failure, and the ILTA data measure how common
-    policies are, not their effect. The ILTA PDF carries no publication date; its file name begins 2606 and its
-    metadata show creation on 2026-08-14, so it is dated to the year only (as in the work-production module). The rollout gate itself (approved tools, training before access)
-    is professional-services-work-production-22 and professional-services-talent-learning-01; this entry holds
-    enforcement and attestation. Related: assurance-quality-management-02.
-
+    Firm kind: law firms (US and UK). Grade B: named firms' policies are real, but the public evidence is their failure,
+    and the ILTA data measure how common policies are, not their effect. The ILTA PDF carries no publication date; its
+    file name begins 2606 and its metadata show creation on 2026-08-14, so it is dated to the year only (as in the
+    work-production module). The rollout gate itself (approved tools, training before access) is
+    professional-services-work-production-22 and professional-services-talent-learning-01; this entry holds enforcement
+    and attestation. Related: assurance-quality-management-02.
 - id: professional-services-quality-review-02
   title: Automated check of citations, quotations and cited propositions before a document is signed
   archetype: professional-services
@@ -162,20 +164,17 @@
   - {ref: HARVEY-GRAPH-2026, title: "Improving Agent Accuracy With Harvey Graph", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph", date: "2026-10-19", access: full, locator: "section 'What's in Harvey Graph Today', final paragraph"}
   - {ref: LAWSITES-MIDPAGE-2026, title: "Harvey Now Connects to Legal Research Platform Midpage Through An MCP Connector", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/harvey-now-connects-to-legal-research-platform-midpage-through-an-mcp-connector.html", date: "2026-10-19", access: full, locator: "list of example uses ('Citation review')"}
   - {ref: CHARLOTIN-DB-2026, title: "AI Hallucination Cases Database", publisher: "Damien Charlotin", type: academic, url: "https://www.damiencharlotin.com/hallucinations/", date: "2026-10-19", access: full, locator: "header paragraph (PelAIkan mention); header count and country and party filter counts as displayed"}
-  - {ref: LAWSOC-GENAI-2026, title: "Generative AI - the essentials", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials", date: "2026", access: full, locator: "section on how generative AI works (recitation checkers)"}
-  - {ref: STANFORD-MAGESH-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Stanford RegLab / HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract"}
+  - {ref: LAWSOC-GENAI-2026, title: "Generative AI: the essentials (guide; page dated 30 Jun 2026)", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials", date: "2026-06-30", access: full, locator: "section on how generative AI works (recitation checkers)"}
+  - {ref: STANFORD-MAGESH-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Stanford RegLab and HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract"}
   - {ref: GPTZERO-KPMG-2026, title: "Chasing the Hallucinations: KPMG's AI-Powered Attempt at Redefining Excellence", publisher: "GPTZero", type: vendor, url: "https://gptzero.me/news/investigations-kpmg/", date: "2026-06-12", access: full, locator: "methodology note on Hallucination Check (false-negative claim)"}
   - {ref: CANLAWYER-SC-2026, title: "Sullivan & Cromwell apologizes to US bankruptcy judge for AI-generated errors in Prince Group case", publisher: "Canadian Lawyer", type: press, url: "https://www.canadianlawyermag.com/news/international/sullivan-cromwell-apologizes-to-us-bankruptcy-judge-for-aigenerated-errors-in-prince-group-case/394014", date: "2026-04-22", access: full, locator: "paragraphs 4-5"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.9 candor to the tribunal"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.9 candor to the tribunal"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms and litigators (US); all named products are vendor launches with no named firm customer
-    and no published false-negative rate. Merged from practice-02, discourse-01 (checker part), governance-02, and
-    the Thomson Reuters Verify description from discourse-02. Counts of court-identified hallucination cases differ
-    by tracker, scope and date and are not a time series. Related: professional-services-work-production-11
-    (pre-release check of citations and references, graded B on Grant Thornton UK), tax-research-advisory-20,
-    assurance-quality-management-19.
-
+    Firm kind: law firms and litigators (US); all named products are vendor launches with no named firm customer and no
+    published false-negative rate. Counts of court-identified hallucination cases differ by tracker, scope and date and
+    are not a time series. Related: professional-services-work-production-11 (pre-release check of citations and
+    references, graded B on Grant Thornton UK), tax-research-advisory-20, assurance-quality-management-19.
 - id: professional-services-quality-review-03
   title: Verification record on the file showing what was checked, by whom, and which material was AI-generated
   archetype: professional-services
@@ -224,17 +223,15 @@
   evidence_grade: C
   sources:
   - {ref: LAWSITES-CLEARBRIEF-2025, title: "Clearbrief Launches Cite Check Report to Give Law Firm Partners an Audit Trail Against AI Hallucinations", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2025/12/clearbrief-launches-cite-check-report-to-give-law-firm-partners-an-audit-trail-against-ai-hallucinations.html", date: "2025-12-16", access: full, locator: "sections 'How the Cite Check Report Works' and 'Providing Verifiable Proof'"}
-  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; ABA site blocked)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4; fn 52, p.10"}
-  - {ref: LAWSOC-GENAI-2026, title: "Generative AI - the essentials", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials", date: "2026", access: full, locator: "Checklist when considering generative AI use"}
-  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, v1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "section 3.6"}
+  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4; fn 52, p.10"}
+  - {ref: LAWSOC-GENAI-2026, title: "Generative AI: the essentials (guide; page dated 30 Jun 2026)", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials", date: "2026-06-30", access: full, locator: "Checklist when considering generative AI use"}
+  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "section 3.6"}
   - {ref: IAMAG-LAWPL-2026, title: "How Generative AI Is Reshaping Professional Liability Risk for Law Firms", publisher: "Independent Agent magazine (IIABA)", type: press, url: "https://www.iamagazine.com/2026/03/09/how-generative-ai-is-reshaping-professional-liability-risk-for-law-firms/", date: "2026-03-09", access: full, locator: "broker recommendations"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms (US product; UK and consulting guidance). Merged from practice-03, discourse-01 (audit-trail
-    part) and governance-08 (an idea graded D). No named firm customer, usage figure or false-negative rate.
-    Related: professional-services-work-production-25 (record AI use per matter and disclose; graded B there),
-    assurance-quality-management-23, tax-research-advisory-19.
-
+    Firm kind: law firms (US product; UK and consulting guidance). No named firm customer, usage figure or
+    false-negative rate. Related: professional-services-work-production-25 (record AI use per matter and disclose;
+    graded B there), assurance-quality-management-23, tax-research-advisory-19.
 - id: professional-services-quality-review-04
   title: Pre-issue audit of every reference, quotation and figure in AI-assisted consulting, advisory and research reports
   archetype: professional-services
@@ -291,23 +288,21 @@
   evidence_grade: C
   sources:
   - {ref: GPTZERO-KPMG-2026, title: "Chasing the Hallucinations: KPMG's AI-Powered Attempt at Redefining Excellence", publisher: "GPTZero", type: vendor, url: "https://gptzero.me/news/investigations-kpmg/", date: "2026-06-12", access: full, locator: "opening summary and methodology note"}
-  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News / Associated Press", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraphs 1-8"}
+  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News (Associated Press)", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraphs 1-8"}
   - {ref: CTV-DELOITTE-NL-2025, title: "N.L. government pledges strict review on AI use after more false citations found in reports", publisher: "CTV News (Canadian Press)", type: press, url: "https://www.ctvnews.ca/canada/newfoundland-and-labrador/article/nl-government-pledges-strict-review-on-ai-use-after-more-false-citations-found-in-reports/", date: "2025-11-26", access: full, locator: "opening paragraphs (Deloitte statement)"}
   - {ref: INDEPENDENT-CPANL-2026, title: "Accounting watchdog to investigate Deloitte over fake citations in $1.6M healthcare report", publisher: "The Independent (Newfoundland and Labrador)", type: press, url: "https://theindependent.ca/news/lji/accounting-watchdog-to-investigate-deloitte-over-fake-citations-in-1-6-million-healthcare-report/", date: "2026-03-07", access: full, locator: "opening paragraphs"}
   - {ref: EWEEK-PWC-2026, title: "GPTZero Flags Suspected AI Content and False Citations in PwC Reports", publisher: "eWeek", type: press, url: "https://eweek.com/news/gptzero-flags-suspected-ai-content-and-false-citations-in-pwc-reports/", date: "2026-07-30", access: full, locator: "paragraphs 1-12"}
   - {ref: REGISTER-KPMG-2026, title: "KPMG's AI report turns into a demo of AI hallucinations", publisher: "The Register", type: press, url: "https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029", date: "2026-06-12", access: full, locator: "KPMG spokesperson statement near end"}
   - {ref: ACCOUNTINGWEEKLY-B4-2026, title: "Big Four AI Hallucinations: What It Means for Your Practice", publisher: "Accounting Weekly (CIBA)", type: press, url: "https://www.accountingweekly.com/trending-news/big-four-ai-hallucinations-what-it-means-for-your-practice", date: "2026-09-09", access: full, locator: "'The controls that actually stop this' section"}
-  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, v1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "sections 2.2, 2.3, 5.1"}
+  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "sections 2.2, 2.3, 5.1"}
   - {ref: ACS-EY-2026, title: "EY retracts cyber report littered with AI errors", publisher: "Information Age (ACS)", type: press, url: "https://ia.acs.org.au/article/2026/ey-retracts-cyber-report-littered-with-ai-errors.html", date: "2026-05-19", access: full, locator: "paragraphs 2-8"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: consulting and accounting firms (Big Four) and their public-sector clients. Merged from discourse-03
-    (C) and governance-06 (idea, D); incident facts shared with practice-10. Graded C on the vendor tool; the
-    pre-issue step itself is an idea. Press summaries said 40 of 45 KPMG citations were hallucinated; GPTZero says 40
-    of 45 citation titles are fake and at least 16 citations are hallucinations by its definition. The department's
-    statement did not give the refund amount. Related: professional-services-work-production-11, professional-services-scoping-pricing-12
-    (buyers recovering fees).
-
+    Firm kind: consulting and accounting firms (Big Four) and their public-sector clients. Graded C on the vendor tool;
+    the pre-issue step itself is an idea. Press summaries said 40 of 45 KPMG citations were hallucinated; GPTZero says
+    40 of 45 citation titles are fake and at least 16 citations are hallucinations by its definition. The department's
+    statement did not give the refund amount. Related: professional-services-work-production-11,
+    professional-services-scoping-pricing-12 (buyers recovering fees).
 - id: professional-services-quality-review-05
   title: Benchmark AI tools against expert answers and map which tasks fall inside their reliable range, to set review depth by task
   archetype: professional-services
@@ -343,7 +338,7 @@
     figure: "Document Q&A: best tool 94.8% vs lawyers 70.1%; redlining: lawyers 79.7% vs best tool 65.0%; EDGAR research: lawyers 70.1% vs 55.2%"
     measures: "Score on predefined criteria per task; vendors chose which tasks to enter; Vals discloses customer relationships with participants"
     provenance: independent
-    source_ref: VALS-VLAIR-2025
+    source_ref: VALS-VLAIRFEB-2025
   - lever: quality
     description: Legal research study with a lawyer baseline (October 2025)
     figure: "AI products 74%-78% weighted score vs lawyers 69%; multi-jurisdiction questions 14 points lower on average"
@@ -374,7 +369,7 @@
   - A plan to re-test when models change; California expects periodic reassessment of a system as it is updated (CALBAR-GENAI-2026, p.5)
   risks_and_guardrails:
   - Benchmarks measure the tool's answers, not how well reviewers catch errors; no source found publishes a firm's reviewer catch rate.
-  - Vals calls its study a snapshot that must be repeated, and vendors opted into tasks (VALS-VLAIR-2025).
+  - Vals calls its study a snapshot that must be repeated, and vendors opted into tasks (VALS-VLAIRFEB-2025).
   - An LLRX author says the Stanford study tested what appear to be older product versions, since updated (LLRX-FARRIS-2026).
   - Researchers argue citation-existence and accuracy metrics can miss cases where the cited authority does not support the claim (ARXIV-TARANUKHIN-2026).
   - Whatever review level is chosen, the lawyer is fully responsible (ABA-OP512-2024, p.4).
@@ -388,32 +383,30 @@
   evidence_grade: B
   sources:
   - {ref: LINKLATERS-LINKSAI-2025, title: "UK - The LinksAI English law benchmark (Version 2)", publisher: "Linklaters", type: firm, url: "https://linklaters.com/insights/blogs/digilinks/2025/february/uk-the-linksai-english-law-benchmark-version-2", date: "2025-02-10", access: full, locator: "sections 'The benchmark' and 'The updated results'"}
-  - {ref: VALS-VLAIR-2025, title: "Vals Legal AI Report (VLAIR), first report", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/vlair", date: "2025-02-27", access: full, locator: "executive summary results table; acknowledgments"}
+  - {ref: VALS-VLAIRFEB-2025, title: "Vals Legal AI Report (VLAIR), February 2025", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/industry-reports/vlair-2-27-25", date: "2025-02-27", access: full, locator: "executive summary results table; acknowledgments"}
   - {ref: VALS-VLAIRRES-2025, title: "VLAIR - Legal Research", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/industry-reports/vlair-10-14-25", date: "2025-10-14", access: full, locator: "executive summary; key findings 1-3"}
-  - {ref: STANFORD-MAGESH-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Stanford RegLab / HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract"}
+  - {ref: STANFORD-MAGESH-2024, title: "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)", publisher: "Stanford RegLab and HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho)", type: academic, url: "https://arxiv.org/abs/2405.20362", date: "2024-05-30", access: full, locator: "abstract"}
   - {ref: ARXIV-LUX-2026, title: "How Much Do Legal RAG Systems Still Hallucinate? (arXiv 2608.14210)", publisher: "Das, Abualhaija, Bianculli (University of Luxembourg)", type: academic, url: "https://arxiv.org/abs/2608.14210", date: "2026-08-14", access: full, locator: "abstract"}
-  - {ref: HBS-DELLACQUA-2023, title: "Navigating the Jagged Technological Frontier (HBS Working Paper 24-013)", publisher: "Harvard Business School", type: academic, url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700", date: "2023-09", access: full, locator: "abstract"}
-  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; ABA site blocked)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4"}
+  - {ref: HBS-DELLACQUA-2023, title: "Navigating the Jagged Technological Frontier (HBS Working Paper 24-013)", publisher: "Harvard Business School with Boston Consulting Group", type: academic, url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700", date: "2023-09", access: full, locator: "abstract"}
+  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4"}
   - {ref: ABA-LPT-PAYKIN-2026, title: "Picking the Right Legal Tech Tools Ahead of ABA TECHSHOW", publisher: "Law Practice Today podcast (ABA Law Practice Division)", type: podcast, url: "https://rss.buzzsprout.com/2268467.rss", date: "2026-03-23", access: full, locator: "episode description (feed item dated 2026-03-23)"}
   - {ref: EDISCOVERYTODAY-ILTACONTUE-2026, title: "Tuesday Happenings at ILTACON 2026", publisher: "eDiscovery Today", type: conference, url: "https://ediscoverytoday.com/2026/08/25/tuesday-happenings-at-iltacon-2026-ediscovery-trends/", date: "2026-08-25", access: full, locator: "'Trust but Verify' and 'Managing AI Tool Overload' session listings"}
   - {ref: LEGORA-HLC-2026, title: "Hogan Lovells Cadwalader rolls out Legora globally", publisher: "Legora", type: vendor, url: "https://legora.com/newsroom/hogan-lovells-cadwalader-rolls-out-legora-globally", date: "2026-10-16", access: full, locator: "opening paragraphs (pilot description)"}
   - {ref: LLRX-FARRIS-2026, title: "\"Hallucinations\" by West & Lexis AI?", publisher: "LLRX", type: press, url: "https://www.llrx.com/2026/04/hallucinations-by-west-lexis-ai/", date: "2026-04", access: full, locator: "paragraphs on study findings and currency"}
   - {ref: ARXIV-TARANUKHIN-2026, title: "Legal LLM Hallucination Should Be Evaluated as Failure of Legal Warrant (arXiv 2609.17546)", publisher: "Taranukhin and Shwartz (AI4Law at ICML 2026)", type: academic, url: "https://arxiv.org/abs/2609.17546", date: "2026-07-15", access: full, locator: "abstract"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Competence row, p.5"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Competence row, p.5"}
   - {ref: LAWSITES-PERCIPIENT-2026, title: "Percipient Launches Certera.AI, A Blind Head-to-Head Testing Ground for Legal AI, with a Lawyer-Voted Leaderboard On the Way", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/07/percipient-launches-certera-ai-a-blind-head-to-head-testing-ground-for-legal-ai-with-a-lawyer-voted-leaderboard-on-the-way.html", date: "2026-07-13", access: full, locator: "sections 'Legal Only, Vetted Voters' and 'An Elo Leaderboard'"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms (Linklaters, UK; Vals consortium firms Reed Smith, Fisher Phillips, McDermott Will & Emery
-    and Ogletree Deakins; Hogan Lovells Cadwalader) and consulting (BCG experiment). Merged from practice-04,
-    practice-08, practice-19, discourse-07, governance-03 and governance-13. The practice and governance angles
-    proposed grade A on Linklaters' and Vals' measured scores; graded B here because the figures measure tools in
-    isolation, not an outcome of people working with AI, matching the work-production module and the tax archetype.
-    The Linklaters round is from February 2025. Percipient's lawyer-voted blind model comparison (Certera.AI, beta
-    2026-07-13) published no rankings at launch (LAWSITES-PERCIPIENT-2026), so it is context, not evidence. Related:
-    professional-services-work-production-23 (test on the firm's own work, B), professional-services-work-production-07
-    (task-by-task rules), assurance-quality-management-04. Grade B confirmed on 2026-10-19: Linklaters' benchmark
-    measures model output, not review, so this adjacent-process evidence caps the grade at B.
-
+    Firm kind: law firms (Linklaters, UK; Vals consortium firms Reed Smith, Fisher Phillips, McDermott Will & Emery and
+    Ogletree Deakins; Hogan Lovells Cadwalader) and consulting (BCG experiment). Graded B because the figures measure
+    tools in isolation, not an outcome of people working with AI, matching the work-production module and the tax
+    archetype. The Linklaters round is from February 2025. Percipient's lawyer-voted blind model comparison (Certera.AI,
+    beta 2026-07-13) published no rankings at launch (LAWSITES-PERCIPIENT-2026), so it is context, not evidence.
+    Related: professional-services-work-production-23 (test on the firm's own work, B),
+    professional-services-work-production-07 (task-by-task rules), assurance-quality-management-04. Grade B confirmed on
+    2026-10-19: Linklaters' benchmark measures model output, not review, so this adjacent-process evidence caps the
+    grade at B.
 - id: professional-services-quality-review-06
   title: Validate AI document review inside a matter with test sets, and sample AI output instead of re-reading all of it
   archetype: professional-services
@@ -472,15 +465,13 @@
   - {ref: EDT-EDRMSURVEY-2026, title: "The EDRM GenAI Survey Results: AI and eDiscovery Trends", publisher: "eDiscovery Today (Doug Austin)", type: press, url: "https://ediscoverytoday.com/2026/04/01/the-edrm-genai-survey-results-ai-and-ediscovery-trends/", date: "2026-04-01", access: full, locator: "sections 'Primary Use Cases' and 'Transparency and Disclosure'"}
   - {ref: EDT-CASEPOINT-2026, title: "From AI Hype to AI Accountability: A New Report from Casepoint", publisher: "eDiscovery Today (Doug Austin)", type: press, url: "https://ediscoverytoday.com/2026/07/23/from-ai-hype-to-ai-accountability-a-new-report-from-casepoint-artificial-intelligence-trends/", date: "2026-07-23", access: full, locator: "'Practitioners Are Skittish About Defensibility'"}
   - {ref: LAWSOC-AGENTIC-2026, title: "The future of agentic AI in legal practice (report summary page)", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/research/the-future-of-agentic-ai-in-legal-practice", date: "2026-04-14", access: full, locator: "section 'Governance and oversight are changing'"}
-  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; ABA site blocked)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4"}
+  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.A p.4"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firm (Covington & Burling, US) and English solicitors (Law Society research). E-discovery review is
-    a legal-practice extension, kept here for its validation method. Merged from practice-06 and LAWSOC-AGENTIC-2026
-    routed from the knowledge-management governance deep dive. Grade B: a named firm's matter-level method with only
+    Firm kind: law firm (Covington & Burling, US) and English solicitors (Law Society research). E-discovery review is a
+    legal-practice extension, kept here for its validation method. Grade B: a named firm's matter-level method with only
     qualitative self-reported results; no firm reports sampling replacing full review on live work. Related:
     professional-services-work-production-23 (which cites the same case), professional-services-work-production-12.
-
 - id: professional-services-quality-review-07
   title: Standing evaluation suites, gold-standard answers and change control for the firm's AI workflows, run by legal engineers
   archetype: professional-services
@@ -531,11 +522,10 @@
   - {ref: HARVEY-JOB-EVALQ-2026, title: "Senior Product Operations Manager, Evaluation Quality (job posting)", publisher: "Harvey", type: job-posting, url: "https://jobs.ashbyhq.com/harvey/f0e4e24a-2a7a-4fc4-8872-9a8a762fecf5", date: "2026-08-04", access: full, locator: "'Role overview'"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firm (Latham & Watkins, US) and legal AI vendors. From practice-05. Maturity and grade rest on a
-    named firm's job description for an existing team; no outcome is public. Latham is the only firm found with a
-    public description of this role. Related: professional-services-work-production-17 (legal engineers package
-    know-how into playbooks and agents), assurance-quality-management-04.
-
+    Firm kind: law firm (Latham & Watkins, US) and legal AI vendors. Maturity and grade rest on a named firm's job
+    description for an existing team; no outcome is public. Latham is the only firm found with a public description of
+    this role. Related: professional-services-work-production-17 (legal engineers package know-how into playbooks and
+    agents), assurance-quality-management-04.
 - id: professional-services-quality-review-08
   title: Review gates in AI workflows, where a named reviewer signs off each AI step before the next one starts
   archetype: professional-services
@@ -589,15 +579,14 @@
   - {ref: LATHAM-JD-2026, title: "Legal Engineering Attorney (job description, Technology & Information Services / Legal Innovation)", publisher: "Latham & Watkins", type: job-posting, url: "https://www.lw.com/admin/upload/SiteAttachments/Legal-Engineering-Attorney.pdf", date: "2026-05-13", access: full, locator: "Essential Duties item 2"}
   - {ref: JOA-TRAINING-2026, title: "How will accountants learn new skills when AI does the work?", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/mar/how-will-accountants-learn-new-skills-when-ai-does-the-work/", date: "2026-03-01", access: full, locator: "Carl Mayes quotes, paragraphs 5-9"}
   - {ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed", date: "2026-02-18", access: full, locator: "Premortem No. 1"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.3 conclusion; p.5 competence row"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.3 conclusion; p.5 competence row"}
   last_reviewed: '2026-10-19'
   notes: >-
     Firm kind: accounting and advisory firm (Armanino, US) and a legal AI vendor (Harvey; no customer named, template
-    early access by request). Merged from practice-07 and discourse-05, plus the review-theatre point routed from
-    delivery-management. Grade B rests on Armanino's AI practice lead describing a workflow in production; Harvey's half
-    is an announcement. The agent-template version is professional-services-work-production-15 (delegate, C); task and
-    status mechanics belong to delivery-management. Related: assurance-quality-management-18 and -19.
-
+    early access by request). Grade B rests on Armanino's AI practice lead describing a workflow in production; Harvey's
+    half is an announcement. The agent-template version is professional-services-work-production-15 (delegate, C); task
+    and status mechanics belong to delivery-management. Related: assurance-quality-management-18 and -19. The
+    coordination layer of the same templates is professional-services-delivery-management-11.
 - id: professional-services-quality-review-09
   title: Oversight tiered by agent autonomy, with escalation triggers and no filing, advice or outside transmission without approval
   archetype: professional-services
@@ -647,19 +636,17 @@
   evidence_grade: C
   sources:
   - {ref: STENO-CLOC-2026, title: "CLOC Global Institute 2026: Stronger By Design, Built By Community", publisher: "Steno (conference recap by a court-reporting vendor)", type: conference, url: "https://brief.steno.com/cloc-global-institute-2026-recap", date: "2026-06-03", access: full, locator: "'AI Constitution' passage"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Executive summary pp.2-3; confidentiality pp.5-6; duty to supervise p.7; candor p.9"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Executive summary pp.2-3; confidentiality pp.5-6; duty to supervise p.7; candor p.9"}
   - {ref: CALBAR-ETHICS-2026, title: "Ethics and Technology Resources (State Bar of California)", publisher: "State Bar of California", type: regulator, url: "https://www.calbar.ca.gov/Attorneys/Conduct-Discipline/Ethics/Ethics-Technology-Resources", date: "2026-05-14", access: full, locator: "paragraph on Board of Trustees approval"}
   - {ref: HARVEY-ORCH-2026, title: "Making Harvey the Orchestration Layer for Legal Work", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/blog/legal-work-orchestration", date: "2026-10-15", access: full, locator: "'The Future of Legal Work Orchestration'"}
   - {ref: TR-AIPS-2026, title: "2026 AI in Professional Services Report", publisher: "Thomson Reuters Institute", type: survey, url: "https://tax.thomsonreuters.com/content/dam/ewp-m/documents/thomsonreuters/en/pdf/reports/2026-ai-in-professional-services-report.pdf", date: "2026-01", access: full, locator: "Agentic AI section, attorney quote on oversight"}
   - {ref: LAWSOC-AGENTIC-2026, title: "The future of agentic AI in legal practice (report summary page)", publisher: "Law Society of England and Wales", type: professional-body, url: "https://www.lawsociety.org.uk/topics/research/the-future-of-agentic-ai-in-legal-practice", date: "2026-04-14", access: full, locator: "summary of key findings"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms and in-house legal teams (CLOC is a legal-operations body). Merged from discourse-10 (C) and
-    governance-07 (idea, D). The three-tier framing is a vendor speaker's talk reported in a vendor recap; the binding
-    constraint is California's guidance. No firm describes an autonomy-tiered gate in use. Related:
-    professional-services-work-production-16 (general agent workspaces with checkpoints sized to risk),
-    professional-services-work-production-15, assurance-quality-management-18.
-
+    Firm kind: law firms and in-house legal teams (CLOC is a legal-operations body). The three-tier framing is a vendor
+    speaker's talk reported in a vendor recap; the binding constraint is California's guidance. No firm describes an
+    autonomy-tiered gate in use. Related: professional-services-work-production-16 (general agent workspaces with
+    checkpoints sized to risk), professional-services-work-production-15, assurance-quality-management-18.
 - id: professional-services-quality-review-10
   title: An AI layer on the firm's existing quality management system, with AI planning, reviewer back-tracing, risk-tiered review and policy checks
   archetype: professional-services
@@ -725,12 +712,11 @@
   - {ref: JOA-TRAINING-2026, title: "How will accountants learn new skills when AI does the work?", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/mar/how-will-accountants-learn-new-skills-when-ai-does-the-work/", date: "2026-03-01", access: full, locator: "Carl Mayes quotes, paragraphs 5-9"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: accounting and advisory firms (Forvis Mazars, Schellman; FRC's six UK audit firms). Merged from
-    discourse-04 (B), governance-09 (idea, D) and discourse-13 (C). Grade B rests on Forvis Mazars' and Schellman's own
-    descriptions of their controls in trade-press interviews; no measurements published. Audit engagement-quality-review
-    detail belongs to the assurance archetype: see assurance-quality-management-07 (monitor tool impact),
-    assurance-quality-management-14 (idea: AI in quality monitoring), assurance-quality-management-17 and -19.
-
+    Firm kind: accounting and advisory firms (Forvis Mazars, Schellman; FRC's six UK audit firms). Grade B rests on
+    Forvis Mazars' and Schellman's own descriptions of their controls in trade-press interviews; no measurements
+    published. Audit engagement-quality-review detail belongs to the assurance archetype: see
+    assurance-quality-management-07 (monitor tool impact), assurance-quality-management-14 (idea: AI in quality
+    monitoring), assurance-quality-management-17 and -19.
 - id: professional-services-quality-review-11
   title: Track acceptance, overrides and review findings on AI output as a live quality signal
   archetype: professional-services
@@ -784,21 +770,18 @@
     (ACCOUNTINGTODAY-HALLUC2-2026); no source describes measuring which reviewers do which.
   evidence_grade: B
   sources:
-  - {ref: LAWSITES-MSFT-2026, title: "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical", publisher: "LawSites (Robert Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html", date: "2026-10-15", access: full, locator: "sections 'What Microsoft Announced' and 'Who Is Using It'"}
+  - {ref: LAWSITES-MSFT-2026, title: "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical", publisher: "LawSites (Bob Ambrogi)", type: press, url: "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html", date: "2026-10-15", access: full, locator: "sections 'What Microsoft Announced' and 'Who Is Using It'"}
   - {ref: TRI-STANDARDS-2026, title: "Between accountability and chaos: Setting the AI standards that professionals demand", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/between-accountability-and-chaos", date: "2026-10-12", access: full, locator: "section 'What standards should actually look like' (judgment validation standard)"}
   - {ref: ARXIV-WILLIAMS-2026, title: "From Process to Evidence: How Computing Can Ground Appropriate Reliance on Legal AI (arXiv 2607.28869)", publisher: "James Bryan Williams", type: academic, url: "https://arxiv.org/abs/2607.28869", date: "2026-07-30", access: full, locator: "abstract"}
   - {ref: ARXIV-TARANUKHIN-2026, title: "Legal LLM Hallucination Should Be Evaluated as Failure of Legal Warrant (arXiv 2609.17546)", publisher: "Taranukhin and Shwartz (AI4Law at ICML 2026)", type: academic, url: "https://arxiv.org/abs/2609.17546", date: "2026-07-15", access: full, locator: "abstract"}
-  - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "p.9 governance paragraph"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "p.9 governance paragraph"}
   - {ref: ACCOUNTINGTODAY-HALLUC2-2026, title: "False info, real problems: The human in the AI loop", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/false-info-real-problems-the-human-in-the-ai-loop", date: "2026-09-02", access: full, locator: "Ard comment on back-tracing"}
   last_reviewed: '2026-10-19'
   notes: >-
-    In-house (Microsoft legal department). Merged from practice-09 (B), discourse-15 (idea, D) and TRI-STANDARDS-2026
-    routed from talent-learning (the practice angle cited the same article under a different key; the archetype's
-    existing key is used). Grade B with an adjacent-process cap: the figures come from contract redlining, not
-    review of finished deliverables. Clyde & Co is named in the Microsoft announcement with adoption approaching 90%
-    but no quality data. Related: professional-services-work-production-08 (same deployment as playbook review),
-    professional-services-work-production-24 (idea: log edits and overrides).
-
+    In-house (Microsoft legal department). Grade B with an adjacent-process cap: the figures come from contract
+    redlining, not review of finished deliverables. Clyde & Co is named in the Microsoft announcement with adoption
+    approaching 90% but no quality data. Related: professional-services-work-production-08 (same deployment as playbook
+    review), professional-services-work-production-24 (idea: log edits and overrides).
 - id: professional-services-quality-review-12
   title: "Idea: cut the verification tax with standard quick-check techniques for AI output"
   archetype: professional-services
@@ -842,7 +825,7 @@
   evidence_grade: D
   sources:
   - {ref: MORAE-ILR-2026, title: "The Intelligence Gap: Why AI in Legal Isn't Delivering and What Needs to Change", publisher: "Morae", type: survey, url: "https://www.morae.com/insights/the-intelligence-gap-why-ai-in-legal-isnt-delivering-and-what-needs-to-change/", date: "2026-07-08", access: full, locator: "summary bullets"}
-  - {ref: KANTATA-SOPSI-2026, title: "Kantata Survey Reveals that 87% of Professional Services Teams Plan to Manage AI Agents as Part of Their Workforce", publisher: "Kantata (survey by Censuswide, 200 leaders)", type: survey, url: "https://www.kantata.com/blog/article/kantata-survey-reveals-that-87-of-professional-services-teams-plan-to-manage-ai-agents-as-part-of-their-workforce", date: "2026-01-08", access: full, locator: "paragraph on data trust; methodology note"}
+  - {ref: KANTATA-SOPSI-2026, title: "Kantata Survey Reveals that 87% of Professional Services Teams Plan to Manage AI Agents as Part of Their Workforce (Censuswide survey of 200 leaders)", publisher: "Kantata (survey by Censuswide, 200 leaders)", type: survey, url: "https://www.kantata.com/blog/article/kantata-survey-reveals-that-87-of-professional-services-teams-plan-to-manage-ai-agents-as-part-of-their-workforce", date: "2026-01-08", access: full, locator: "paragraph on data trust; methodology note"}
   - {ref: BESTLAWFIRMS-VTAX-2026, title: "The Verification Tax: Why AI Might Cost Law Firms More Than It Saves", publisher: "Best Lawfirms (David L. Brown)", type: press, url: "https://www.bestlawfirms.com/articles/ai-verification-tax-tokenization-law-firm-costs/8490", date: "2026-09-23", access: full, locator: "opening and 'A Key Question' sections"}
   - {ref: CLOC-VERIFICATION-2026, title: "Kill the Verification Burden", publisher: "CLOC", type: professional-body, url: "https://cloc.org/blog/legal-hacks/kill-the-verification-burden/", date: "2026-05-13", access: full, locator: "page summary line (short teaser for a webinar)"}
   - {ref: STENO-CLOC-2026, title: "CLOC Global Institute 2026: Stronger By Design, Built By Community", publisher: "Steno (conference recap by a court-reporting vendor)", type: conference, url: "https://brief.steno.com/cloc-global-institute-2026-recap", date: "2026-06-03", access: full, locator: "Anthropic 'AI Constitution' passage; 'Stronger By Design, In Practice' list"}
@@ -850,10 +833,8 @@
   last_reviewed: '2026-10-19'
   notes: >-
     Idea, graded D. In-house and legal operations (CLOC); the Kantata figure is from professional-services firms
-    generally (delivery-management). Merged from discourse-08 and KANTATA-SOPSI-2026 routed from the
-    delivery-management discourse deep dive. Whether all of Morae's respondents are in-house was not confirmed.
-    The return-on-investment side of verification cost belongs to firm-finance.
-
+    generally (delivery-management). Whether all of Morae's respondents are in-house was not confirmed. The
+    return-on-investment side of verification cost belongs to firm-finance.
 - id: professional-services-quality-review-13
   title: Independent machine cross-check of AI output before human review, by a second agent or a deterministic comparison engine
   archetype: professional-services
@@ -903,10 +884,9 @@
   - {ref: ABA-LPT-SC-2026, title: "AI Hallucinations in Court - The Sullivan & Cromwell Lesson", publisher: "Law Practice Today podcast (ABA Law Practice Division)", type: podcast, url: "https://rss.buzzsprout.com/2268467.rss", date: "2026-06-30", access: full, locator: "feed item Buzzsprout-19424504, description"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: legal AI vendors and consulting (community discussion of a KPMG report). Merged from discourse-16 (C)
-    and practice-15 (C). Contested in the sources, so no outcome is claimed; the community suggestions are opinion.
-    Related: assurance-quality-management-22 (idea: a second model or rules-based component cross-checks AI output).
-
+    Firm kind: legal AI vendors and consulting (community discussion of a KPMG report). Contested in the sources, so no
+    outcome is claimed; the community suggestions are opinion. Related: assurance-quality-management-22 (idea: a second
+    model or rules-based component cross-checks AI output).
 - id: professional-services-quality-review-14
   title: After an AI error is found, disclose, correct and re-review the whole matter or the wider set of filings
   archetype: professional-services
@@ -962,7 +942,7 @@
   sources:
   - {ref: CANLAWYER-SC-2026, title: "Sullivan & Cromwell apologizes to US bankruptcy judge for AI-generated errors in Prince Group case", publisher: "Canadian Lawyer", type: press, url: "https://www.canadianlawyermag.com/news/international/sullivan-cromwell-apologizes-to-us-bankruptcy-judge-for-aigenerated-errors-in-prince-group-case/394014", date: "2026-04-22", access: full, locator: "paragraphs 4-8"}
   - {ref: EDRM-JOHNSONDUNN-2025, title: "When AI Policies Fail: The AI Sanctions in Johnson v. Dunn", publisher: "EDRM (Hon. Ralph Artigliere, ret.)", type: community, url: "https://edrm.net/2025/07/when-ai-policies-fail-the-ai-sanctions-in-johnson-v-dunn-and-what-they-mean-for-the-profession/", date: "2025-07-31", access: full, locator: "paragraphs on remedial effort and sanctions"}
-  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News / Associated Press", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraphs 1-6 (refund, revised report, disclosure)"}
+  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News (Associated Press)", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraphs 1-6 (refund, revised report, disclosure)"}
   - {ref: INDEPENDENT-CPANL-2026, title: "Accounting watchdog to investigate Deloitte over fake citations in $1.6M healthcare report", publisher: "The Independent (Newfoundland and Labrador)", type: press, url: "https://theindependent.ca/news/lji/accounting-watchdog-to-investigate-deloitte-over-fake-citations-in-1-6-million-healthcare-report/", date: "2026-03-07", access: full, locator: "opening paragraphs"}
   - {ref: WHITECASE-VERIFY-2026, title: "Verify, Guide, Train: Lessons From Emerging Attorney AI-Misuse Caselaw", publisher: "White & Case", type: firm, url: "https://www.whitecase.com/sites/default/files/2026-04/verify-guide-train-lessons-from-emerging-attorney-ai-misuse-case-law.pdf", date: "2026-04-15", access: full, locator: "'Establish Clear AI-Use Guidelines' (Lacey)"}
   - {ref: ABA-LPT-WILLIAMS-2026, title: "Avoiding AI Hallucinations in Legal Practice", publisher: "Law Practice Today podcast (ABA Law Practice Division)", type: podcast, url: "https://lawpracticetoday.buzzsprout.com/2268467/episodes/19275322-avoiding-ai-hallucinations-in-legal-practice", date: "2026-06-15", access: full, locator: "episode description"}
@@ -970,11 +950,10 @@
   - {ref: TECHCRUNCH-KPMG-2026, title: "KPMG pulls report on AI usage due to apparent hallucinations", publisher: "TechCrunch", type: press, url: "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/", date: "2026-06-13", access: full, locator: "paragraphs 2-4"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms (Sullivan & Cromwell, Butler Snow; US) and consulting and accounting firms (Deloitte
-    Australia, EY Canada, KPMG). Merged from practice-10, discourse-11 and governance-10. Grade B: firm-reported figures
-    reached through secondary accounts. Press accounts differ on report length (Australia 237 pages; Canada 523 or 526
-    pages). How buyers recover fees is professional-services-scoping-pricing-12.
-
+    Firm kind: law firms (Sullivan & Cromwell, Butler Snow; US) and consulting and accounting firms (Deloitte Australia,
+    EY Canada, KPMG). Grade B: firm-reported figures reached through secondary accounts. Press accounts differ on report
+    length (Australia 237 pages; Canada 523 or 526 pages). How buyers recover fees is
+    professional-services-scoping-pricing-12.
 - id: professional-services-quality-review-15
   title: Check incoming work, including authorities in opponents' filings and drafts from contractors or other lawyers
   archetype: professional-services
@@ -1040,12 +1019,10 @@
   - {ref: TR-CANTSIGN-2026, title: "If You Can't Verify It, You Can't Sign It", publisher: "Thomson Reuters Innovation Blog", type: vendor, url: "https://www.thomsonreuters.com/en-us/posts/innovation/if-you-cant-verify-it-you-cant-sign-it/", date: "2026-05-05", access: full, locator: "Litigation Document Analyzer sentence"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms and courts (US, England and Wales, Canada). Merged from practice-13, discourse-12,
-    governance-15 (idea, D) and governance-16. Grade B rests on named matters showing the routine and the duty; the
-    AI-tool part is announced only and on its own would be C. The Reddy v. Saroya holding is as reported by Canadian
-    Lawyer; the decision was not opened. Related: professional-services-talent-learning-10 (junior AI-use disclosure
-    and supervisor second-level review).
-
+    Firm kind: law firms and courts (US, England and Wales, Canada). Grade B rests on named matters showing the routine
+    and the duty; the AI-tool part is announced only and on its own would be C. The Reddy v. Saroya holding is as
+    reported by Canadian Lawyer; the decision was not opened. Related: professional-services-talent-learning-10 (junior
+    AI-use disclosure and supervisor second-level review).
 - id: professional-services-quality-review-16
   title: Tell clients when AI materially contributed and how the work was checked, and involve them in vetting tools
   archetype: professional-services
@@ -1107,25 +1084,24 @@
   evidence_grade: B
   sources:
   - {ref: MORAE-ILR-2026, title: "The Intelligence Gap: Why AI in Legal Isn't Delivering and What Needs to Change", publisher: "Morae", type: survey, url: "https://www.morae.com/insights/the-intelligence-gap-why-ai-in-legal-isnt-delivering-and-what-needs-to-change/", date: "2026-07-08", access: full, locator: "summary bullets"}
-  - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "Q3.18 table, PDF p.5"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "Q3.18 table, PDF p.5"}
   - {ref: EDT-EDRMSURVEY-2026, title: "The EDRM GenAI Survey Results: AI and eDiscovery Trends", publisher: "eDiscovery Today (Doug Austin)", type: press, url: "https://ediscoverytoday.com/2026/04/01/the-edrm-genai-survey-results-ai-and-ediscovery-trends/", date: "2026-04-01", access: full, locator: "section 'Transparency and Disclosure'"}
   - {ref: ACCOUNTINGTODAY-HALLUC2-2026, title: "False info, real problems: The human in the AI loop", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/false-info-real-problems-the-human-in-the-ai-loop", date: "2026-09-02", access: full, locator: "Ard comment on acceptable-use policy and disclosure"}
-  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, v1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "sections 2.2 and 3.3"}
-  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; ABA site blocked)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.C p.8"}
-  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "communication row p.7; disclosure to courts p.9"}
-  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News / Associated Press", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraph on the revised version"}
+  - {ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, Version 1.0", publisher: "International Council of Management Consulting Institutes (ICMCI)", type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "sections 2.2 and 3.3"}
+  - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.C p.8"}
+  - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "communication row p.7; disclosure to courts p.9"}
+  - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press)", publisher: "CTV News (Associated Press)", type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "paragraph on the revised version"}
   - {ref: ACCOUNTINGTODAY-INSURERS-2026, title: "Insurers eyeing AI risk at CPA firms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/insurers-eyeing-ai-risk-at-cpa-firms", date: "2026-04-21", access: full, locator: "Raspante comment"}
   - {ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "'The contradictions in the room'"}
   - {ref: TRI-STANDOUT-2026, title: "Turning law firm AI strategies into practice: Findings from the 2026 Stand-out Lawyers Survey", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/turning-law-firm-ai-strategies-into-practice", date: "2026-08-06", access: full, locator: "paragraph on AI conversations with clients"}
   last_reviewed: '2026-10-19'
   notes: >-
     Firm kind: law firms (US), accounting and advisory (Forvis Mazars; CPA insurers), consulting (Deloitte Australia;
-    ICMCI). Merged from practice-18, discourse-09 and governance-05. Grade B rests on Forvis Mazars' stated policy and
-    Deloitte's revised report; no firm reports how clients responded to disclosure. Kept here for the link between
-    disclosure and evidence of review. Related: professional-services-work-production-25 (record and disclose; B),
-    professional-services-acceptance-risk-10 and -11 (client terms at intake), professional-services-scoping-pricing-07
-    (fee agreements stating AI use), assurance-quality-management-24.
-
+    ICMCI). Grade B rests on Forvis Mazars' stated policy and Deloitte's revised report; no firm reports how clients
+    responded to disclosure. Kept here for the link between disclosure and evidence of review. Related:
+    professional-services-work-production-25 (record and disclose; B), professional-services-acceptance-risk-10 and -11
+    (client terms at intake), professional-services-scoping-pricing-07 (fee agreements stating AI use),
+    assurance-quality-management-24.
 - id: professional-services-quality-review-17
   title: In-house legal teams set bounded, reviewable AI workflows and ask outside firms for evidence of AI use and quality
   archetype: professional-services
@@ -1155,7 +1131,7 @@
     figure: "78% of corporate clients rate AI-enabled quality improvements very important or essential; 6% say most or all providers deliver them"
     measures: "Share of corporate-client respondents within 1,816 professionals surveyed by Thomson Reuters (March-April 2026)"
     provenance: vendor-published
-    source_ref: TR-FOP-2026
+    source_ref: TR-FOP-REPORT-2026
   prerequisites:
   - A records policy that covers AI queries and outputs (EDT-CASEPOINT-2026)
   - Outside-counsel guidelines that address AI
@@ -1175,16 +1151,15 @@
   sources:
   - {ref: EDT-CASEPOINT-2026, title: "From AI Hype to AI Accountability: A New Report from Casepoint", publisher: "eDiscovery Today (Doug Austin)", type: press, url: "https://ediscoverytoday.com/2026/07/23/from-ai-hype-to-ai-accountability-a-new-report-from-casepoint-artificial-intelligence-trends/", date: "2026-07-23", access: full, locator: "highlights 'Your AI Prompts are Now Official Records' and 'No Broad Permission Slips'"}
   - {ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "'Proving AI's path to saving clients money'; 'The contradictions in the room'"}
-  - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "'AI capability is now a procurement criterion' paragraph"}
+  - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "'AI capability is now a procurement criterion' paragraph"}
   - {ref: TR-AIPS-2026, title: "2026 AI in Professional Services Report", publisher: "Thomson Reuters Institute", type: survey, url: "https://tax.thomsonreuters.com/content/dam/ewp-m/documents/thomsonreuters/en/pdf/reports/2026-ai-in-professional-services-report.pdf", date: "2026-01", access: full, locator: "client-firm gap section, CLO quote"}
   last_reviewed: '2026-10-19'
   notes: >-
-    In-house (corporate legal departments: Starbucks, GSK; a federal agency). Merged from practice-16 (B) and
-    discourse-17 (C). Grade B with caution: Starbucks and GSK are named, but Starbucks only through a blog summary of a
-    Casepoint-sponsored report. Thomson Reuters is a vendor, so its survey figure is treated as vendor-published. Related:
-    professional-services-acceptance-risk-11 (idea: register of client AI restrictions), professional-services-scoping-pricing-09
-    and -11 (evidence of savings; AI-savings terms in guidelines).
-
+    In-house (corporate legal departments: Starbucks, GSK; a federal agency). Grade B with caution: Starbucks and GSK
+    are named, but Starbucks only through a blog summary of a Casepoint-sponsored report. Thomson Reuters is a vendor,
+    so its survey figure is treated as vendor-published. Related: professional-services-acceptance-risk-11 (idea:
+    register of client AI restrictions), professional-services-scoping-pricing-09 and -11 (evidence of savings;
+    AI-savings terms in guidelines).
 - id: professional-services-quality-review-18
   title: Documented AI governance ready for professional indemnity insurers at proposal and renewal
   archetype: professional-services
@@ -1230,7 +1205,7 @@
   - {ref: LAWSOC-AGENTICFULL-2026, title: "Shaping the future of agentic AI in legal practice (full report, PDF linked from the summary page)", publisher: "Law Society of England and Wales", type: professional-body, url: "https://tls-sc104-prd-glo-fde-01-duatf0eka4hpcxe6.a03.azurefd.net/-/media/files/topics/research/shaping-the-future-of-agentic-ai-in-legal-practice---the-law-society.pdf?rev=7ddddfd1d63d499096429158de0ea952&hash=C5A5ED8C908146ACC72AF6513E675C1D", date: "2026-04", access: full, locator: "p.45"}
   last_reviewed: '2026-10-19'
   notes: >-
-    Firm kind: law firms (US and UK) and CPA firms. From governance-14 (C), with insurer comments from discourse-06 and
-    the Law Society point routed via acceptance-risk (full report cited as LAWSOC-AGENTICFULL-2026, because
-    LAWSOC-AGENTIC-2026 is the summary page elsewhere). Broker and law-firm commentary only. The acceptance-risk module
-    points here for insurance detail. A search summary on named insurers' AI exclusions was not opened and is not used.
+    Firm kind: law firms (US and UK) and CPA firms. The Law Society point cites the full report
+    (LAWSOC-AGENTICFULL-2026); LAWSOC-AGENTIC-2026 is its summary page. Broker and law-firm commentary only. The
+    acceptance-risk module points here for insurance detail. A search summary on named insurers' AI exclusions was not
+    opened and is not used.

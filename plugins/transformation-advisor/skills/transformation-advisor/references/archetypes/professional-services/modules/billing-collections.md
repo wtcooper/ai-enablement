@@ -89,12 +89,12 @@ module;** the nearest are held elsewhere (below). In every entry with a named us
 - `#15` a single "services rendered" invoice in place of itemised time when AI compresses tasks (Legalweek panel; D).
 
 **Held elsewhere (do not duplicate):** OCG extraction and categorisation (professional-services-acceptance-risk-10) and the matter-opening
-register of client AI restrictions (-acceptance-risk-11); hourly billing on actual AI-assisted time (professional-services-scoping-pricing-06);
-AI cost terms in fee agreements (-scoping-pricing-07); live WIP-against-budget alerts (-scoping-pricing-08); matter-level evidence of AI
-savings for clients (-scoping-pricing-09); KPI-based retainer billing at Kopka Law (-scoping-pricing-18); fee-mix strategy
-(professional-services-firm-finance-01); leakage, profitability and leverage from captured time (-firm-finance-03); line-by-line bill analytics
-and query layer for in-house and pricing teams (-firm-finance-04); Aderant Rates and GL Forecasting agents (-firm-finance-05); aiming AI at
-written-down work (-firm-finance-06); AI cost metering by matter and pass-through (-firm-finance-12). Tax: IRS rules on billing AI-assisted
+register of client AI restrictions (professional-services-acceptance-risk-11); hourly billing on actual AI-assisted time (professional-services-scoping-pricing-06);
+AI cost terms in fee agreements (professional-services-scoping-pricing-07); live WIP-against-budget alerts (professional-services-scoping-pricing-08); matter-level evidence of AI
+savings for clients (professional-services-scoping-pricing-09); KPI-based retainer billing at Kopka Law (professional-services-scoping-pricing-18); fee-mix strategy
+(professional-services-firm-finance-01); leakage, profitability and leverage from captured time (professional-services-firm-finance-03); line-by-line bill analytics
+and query layer for in-house and pricing teams (professional-services-firm-finance-04); Aderant Rates and GL Forecasting agents (professional-services-firm-finance-05); aiming AI at
+written-down work (professional-services-firm-finance-06); AI cost metering by matter and pass-through (professional-services-firm-finance-12). Tax: IRS rules on billing AI-assisted
 work (tax-compliance-corporate-16, tax-compliance-individual-business-22).
 
 ## 4. Interview probes
@@ -108,9 +108,9 @@ Ask a billing or finance director, a billing partner, a controller, a timekeeper
 3. **"Take the last invoice that was cut or rejected. Who found the problem, how long after the work, and what did it cost in write-down
    and delay?"** Reveals the cost of late checks (`#05`, `#09`).
 4. **"Which client guidelines cause most rejections or reductions? Where are they held, and how do changes reach timekeepers and
-   billers?"** Reveals readiness for rules at entry (`#03`; acceptance-risk-10).
+   billers?"** Reveals readiness for rules at entry (`#03`; professional-services-acceptance-risk-10).
 5. **"Where are write-down decisions actually made, by the billing team or the partner? Can you see write-down rates by client, practice
-   and timekeeper?"** Reveals whether `#08` or firm-finance-06 is feasible.
+   and timekeeper?"** Reveals whether `#08` or professional-services-firm-finance-06 is feasible.
 6. **"When AI shortens a task, what do the time entry and invoice show, and who decides? What do your engagement letters and your
    jurisdiction's rules say?"** Reveals exposure on AI-assisted billing (`#02`, `#14`; §6).
 7. **"Which clients' guidelines mention AI (disclosure, no pass-through, approved tools, expected savings), and how do those terms reach
@@ -186,7 +186,7 @@ work much quicker [TRI-ABA512-2025]; Virginia's LEO 1901 (approved 2025-11-24) d
 
 **AI costs.** General AI subscriptions are overhead; matter-specific costs may be charged only if the fee agreement discloses it, at actual
 cost, with no markup without informed written consent [CALBAR-GENAI-2026]; Texas limits recovery to the amount paid [TXETHICS-OP705-2025].
-One Illinois bar newsletter commentary argues ordinary AI use should be absorbed as overhead [ISBA-ELEFANT-2026*]. Detail: firm-finance-12.
+One Illinois bar newsletter commentary argues ordinary AI use should be absorbed as overhead [ISBA-ELEFANT-2026*]. Detail: professional-services-firm-finance-12.
 
 **Client instructions.** California requires following client guidelines that restrict AI [CALBAR-GENAI-2026]. Zscaler's guidelines ask for
 AI use to be noted in the time entry and bar passing on AI time and cost; block-billed lines are rejected (resubmit at 15% less or be paid at
@@ -295,6 +295,6 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys marked * 
   LAURELSITE-2026), LEGORA-LAUREL-2026, TR-LAUREL-2026, Intapp (INTAPP-TIMERELEASE-2026, INTAPP-TIME-2026, INTAPP-TIMEBILL-2026,
   INTAPP-TIMEKEEPING-2026, INTAPP-TERMS-2026, INTAPP-BILLSTREAM-2026), Aderant (ADERANT-AGENTCENTER-2026, ADERANT-AGENTSEAP-2026,
   ADERANT-ITIMEKEEPHARVEY-2026, ADERANT-HARVEY-2025, ADERANT-HERCULES-2025), Elite (ELITE-VALIDATE-2025, ELITE-REJECT-2026, ELITE-IDEA-2026),
-  FULCRUM-ILTACON-2026, LAWSITES-LITIFY-2026, ODDR-COLLECTIONS-2026, ODDR-82CENTS-2026, CERTINIA-VEDA-2026, CERTINIA-PROVING-2026,
+  FULCRUM-ILTACON-2026, LAWSITES-LITIFY-2026, ODDR-COLLECTIONS-2026, ODDR-82CENTS-2026, CERTINIA-VEDA-2026, CERTINIA-CUSTOMERS-2026,
   NTTDATA-ZEB-2026, AIWYN-2026, ALBERTSONS-TR-2026, BRIGHTFLAG-AIINVOICE-2025, BRIGHTFLAG-AI-2026, BRIGHTFLAG-NEXTGEN-2024, ONIT-SPEND-2026,
   WK-LEGALSPEND-2026, MILLIMAN-BILLREVIEW-2026, LAYER3-BILLINGOCG-2026, LAYER3-OCG-2026, EVERLAW-BLOG-2026.

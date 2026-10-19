@@ -1,8 +1,11 @@
-# professional-services / billing-collections use cases (synthesised 2026-10-19 from research/runs/wave3)
+# professional-services / billing-collections use cases (sources checked 2026-10-19)
 # Time capture to cash: time entry, narratives and codes, client billing guidelines, pre-bill review, e-billing,
 # rejections and appeals, collections, and the client-side (in-house) review of the bills. Firm-level realisation,
 # profitability, AI cost and ROI live in firm-finance.yaml; deal-level pricing and fee terms in scoping-pricing.yaml.
 # Firm kinds are named in each entry's notes. In-house examples are tagged "in-house".
+# Similar keys that name different documents: LAYER3-OCG-2026 (Layer3's guide to AI provisions in outside counsel
+# guidelines) and LAYER3-BILLINGOCG-2026 (its guide to billing guidelines); ADERANT-ITIMEKEEPHARVEY-2026 (2026 release)
+# and ADERANT-HARVEY-2025 (2025 partnership release).
 
 - id: professional-services-billing-collections-01
   title: Professionals review AI-drafted time entries built from captured email, document, call and application activity instead
@@ -233,7 +236,7 @@
     locator: Security block; headline claims
   - ref: LEGORA-LAUREL-2026
     title: Legora and Laurel partner to capture the time lawyers spend in Legora as they work
-    publisher: Legora (press release)
+    publisher: Legora
     type: vendor
     url: https://legora.com/newsroom/legora-and-laurel-partner-to-capture-the-time-lawyers-spend-in-legora-as-they-work
     date: '2026-10-13'
@@ -305,19 +308,19 @@
     access: full
     locator: Page introduction and contents list
   - ref: EU-AIACT-ANNEX3-2024
-    title: 'Annex III: High-risk AI systems referred to in Article 6(2) (online text of Regulation (EU) 2024/1689)'
-    publisher: artificialintelligenceact.eu
+    title: 'Annex III: High-risk AI systems referred to in Article 6(2) (text of Regulation (EU) 2024/1689 of 13 June 2024; unofficial reproduction)'
+    publisher: "European Union (text reproduced by the Future of Life Institute, artificialintelligenceact.eu)"
     type: regulator
     url: https://artificialintelligenceact.eu/annex/3/
-    date: 2024-08
+    date: 2024-06-13
     access: full
     locator: Point 4(b)
   - ref: EC-AIACT-2026
-    title: 'AI Act: regulatory framework for AI (application timeline)'
+    title: 'AI Act: regulatory framework for AI (living page; last updated 2026-10-19)'
     publisher: European Commission
     type: regulator
     url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-    date: 2026-10
+    date: 2026-10-19
     access: full
     locator: '''Application timeline'''
   - ref: FAR-52.232-7
@@ -329,17 +332,18 @@
     access: full
     locator: Paragraph (a), vouchers
   last_reviewed: '2026-10-19'
-  notes: 'Firm kinds: law firms (US, Canada, Australia: Lerners, Obermayer, Tonkon Torp, Berger Singerman, Allens, Wilson
-    Sonsini; also Fosters Solicitors) and accounting and advisory firms (US: Warren Averett, GHJ; an unnamed Big Four tax
-    division). Grade B, not A: every figure is on a vendor-authored page with no stated baseline or method; the only controlled
-    comparison (Big Four) is unnamed; Lerners'' docket time is a recollection. An unnamed Am Law 200 firm''s head-to-head
-    with Intapp Time (70% of users released more time; entries +24%; release more than 40% faster) and Ajax''s 42-61% uplift
-    in recorded hours are vendor claims with no named customer. Vendor sizing of unrecorded time is not comparable: Laurel''s
-    11% is the share of unsubmitted time (itself 28% of the workday) that should have been billed (LAUREL-SOW-2025), while
-    Litify''s release (entry 02) says up to 30% of billable work goes unrecorded. No override or edit rate for drafted entries
-    is published anywhere. Most Laurel customer pages carry the same page date (21 Aug 2026), which may reflect a site update.
-    Firm-level use of the same data for leakage, profitability and leverage is held in professional-services-firm-finance-03.
-    Merged from practice 01 and 02, discourse 01 and governance 01.'
+  notes: >-
+    Firm kinds: law firms (US, Canada, Australia: Lerners, Obermayer, Tonkon Torp, Berger Singerman, Allens, Wilson
+    Sonsini; also Fosters Solicitors) and accounting and advisory firms (US: Warren Averett, GHJ; an unnamed Big Four
+    tax division). Grade B, not A: every figure is on a vendor-authored page with no stated baseline or method; the only
+    controlled comparison (Big Four) is unnamed; Lerners' docket time is a recollection. An unnamed Am Law 200 firm's
+    head-to-head with Intapp Time (70% of users released more time; entries +24%; release more than 40% faster) and
+    Ajax's 42-61% uplift in recorded hours are vendor claims with no named customer. Vendor sizing of unrecorded time is
+    not comparable: Laurel's 11% is the share of unsubmitted time (itself 28% of the workday) that should have been
+    billed (LAUREL-SOW-2025), while Litify's release (entry 02) says up to 30% of billable work goes unrecorded. No
+    override or edit rate for drafted entries is published anywhere. Most Laurel customer pages carry the same page date
+    (21 Aug 2026), which may reflect a site update. Firm-level use of the same data for leakage, profitability and
+    leverage is held in professional-services-firm-finance-03.
 - id: professional-services-billing-collections-02
   title: Work done inside AI platforms is turned into draft time entries with matter context and a narrative, for the lawyer
     to review
@@ -408,7 +412,7 @@
     locator: Paragraphs 1 to 3 (partnership announcement)
   - ref: LEGORA-LAUREL-2026
     title: Legora and Laurel partner to capture the time lawyers spend in Legora as they work
-    publisher: Legora (press release)
+    publisher: Legora
     type: vendor
     url: https://legora.com/newsroom/legora-and-laurel-partner-to-capture-the-time-lawyers-spend-in-legora-as-they-work
     date: '2026-10-13'
@@ -464,7 +468,7 @@
     locator: Section E, Fees
   - ref: TXETHICS-OP705-2025
     title: Opinion 705 (generative AI in the practice of law)
-    publisher: Professional Ethics Committee for the State Bar of Texas, via Texas Center for Legal Ethics
+    publisher: Professional Ethics Committee for the State Bar of Texas
     type: professional-body
     url: https://www.legalethicstexas.com/resources/opinions/opinion-705/
     date: 2025-02
@@ -487,11 +491,12 @@
     access: full
     locator: Section 'Artificial Intelligence (AI)'
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms. Grade C: four vendor announcements, none naming a firm that uses the integration. The Litify
-    release repeats vendor ceilings (''up to 30%'' of billable work unrecorded; up to 90% less narrative time). Dates: the
-    Litify release carries a 2026-05-19 dateline; LawSites posted it on 2026-05-21, the date used here. Measuring AI value from
-    the same data is held in professional-services-scoping-pricing-09 (client evidence) and firm-finance (ROI). Merged from
-    practice 10, discourse 02 and governance 02.'
+  notes: >-
+    Firm kind: law firms. Grade C: four vendor announcements, none naming a firm that uses the integration. The Litify
+    release repeats vendor ceilings ('up to 30%' of billable work unrecorded; up to 90% less narrative time). Dates: the
+    Litify release carries a 2026-05-19 dateline; LawSites posted it on 2026-05-21, the date used here. Measuring AI
+    value from the same data is held in professional-services-scoping-pricing-09 (client evidence) and firm-finance
+    (ROI).
 - id: professional-services-billing-collections-03
   title: Client billing guidelines are turned into rules and checked as each time entry is written, with suggested narratives
     and task codes
@@ -607,7 +612,7 @@
     publisher: Intapp
     type: vendor
     url: https://www.intapp.com/terms/
-    date: 2026-10
+    date: 2026-08-18
     access: full
     locator: Agentic obligation capture; enforcement in Intapp Time and Billstream
   - ref: ADERANT-AGENTSEAP-2026
@@ -684,11 +689,12 @@
     access: full
     locator: UTBMS.com code-set index (read 19 Oct 2026)
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms. Grade C: vendor releases and one unnamed customer; no named firm reports using the AI entry
-    checks. Intapp Terms names Fredrikson & Byron and Dickinson Wright, but their quotes are about faster review of terms,
-    not billing enforcement; that named use is held in professional-services-acceptance-risk-10 (OCG extraction and categorisation),
-    so it is cross-referenced, not repeated. Elite added generative narrative drafting to 3E in 2023 (search results only).
-    Merged from practice 03 and 04 and governance 03.'
+  notes: >-
+    Firm kind: law firms. Grade C: vendor releases and one unnamed customer; no named firm reports using the AI entry
+    checks. Intapp Terms names Fredrikson & Byron and Dickinson Wright, but their quotes are about faster review of
+    terms, not billing enforcement; that named use is held in professional-services-acceptance-risk-10 (OCG extraction
+    and categorisation), so it is cross-referenced, not repeated. Elite added generative narrative drafting to 3E in
+    2023 (search results only).
 - id: professional-services-billing-collections-04
   title: A firm-built tool checks time-entry narratives in bulk before billing and proposes corrections (Linklaters)
   archetype: professional-services
@@ -743,9 +749,10 @@
     access: full
     locator: Interview answers on what the tool does, build and rollout, and adoption; closing 'Bigger picture' paragraphs
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firm (13 offices named in the launch figures). Named firm, in production firmwide (3,000+ lawyers
-    able to use it), but the figures are usage and speed statements by the builder, so B rather than A. The only firm-built
-    billing tool found. Discourse 03.'
+  notes: >-
+    Firm kind: law firm (13 offices named in the launch figures). Named firm, in production firmwide (3,000+ lawyers
+    able to use it), but the figures are usage and speed statements by the builder, so B rather than A. The only
+    firm-built billing tool found.
 - id: professional-services-billing-collections-05
   title: AI checks pre-bills against client guidelines and billing history and proposes fixes that a billing partner accepts
     or rejects before the invoice goes out
@@ -914,13 +921,13 @@
     access: full
     locator: Paragraphs 3-5 (chain of agents across matter context, staffing, time and billing; concept)
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms (US). Graded B on one named firmwide go-live (Foley Mansfield, 2024-05-15), older than the
-    12-18 month window and kept because it is the only named firm pre-bill deployment. Whether Foley still uses Verify after
-    the 2025 Aderant deal is unknown; the Foley article itself describes Verify as part of Zero''s Hercules.ai platform, whose
-    legal assets Aderant agreed to buy. The CEO''s 6% and 50% are vendor claims reported by the trade press. Laurel Billing''s
-    blog post carries a 2026-08-19 byline; 2026-09-17 is a JSON-LD date shared by every Laurel blog post. An ILTA article proposes a chain
-    of agents from staffing to billing as a concept only (ILTA-RISE-2025, routed from delivery-management). Merged from practice
-    05, governance 04 and discourse 04.'
+  notes: >-
+    Firm kind: law firms (US). Graded B on one named firmwide go-live (Foley Mansfield, 2024-05-15), older than the
+    12-18 month window and kept because it is the only named firm pre-bill deployment. Whether Foley still uses Verify
+    after the 2025 Aderant deal is unknown; the Foley article itself describes Verify as part of Zero's Hercules.ai
+    platform, whose legal assets Aderant agreed to buy. The CEO's 6% and 50% are vendor claims reported by the trade
+    press. Laurel Billing's blog post carries a 2026-08-19 byline; 2026-09-17 is a JSON-LD date shared by every Laurel
+    blog post. An ILTA article proposes a chain of agents from staffing to billing as a concept only (ILTA-RISE-2025).
 - id: professional-services-billing-collections-06
   title: AI ranks proforma edits so reviewers spend their time on high-impact bills
   archetype: professional-services
@@ -965,9 +972,9 @@
     access: full
     locator: Billing workflow section
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms. Graded C: one trade-press report of a vendor release; no customer named. Elite cites Law.com
-    research that firms can lose up to 25% of potential revenue to work-to-cash inefficiency (not opened at source). Practice
-    06.'
+  notes: >-
+    Firm kind: law firms. Graded C: one trade-press report of a vendor release; no customer named. Elite cites Law.com
+    research that firms can lose up to 25% of potential revenue to work-to-cash inefficiency (not opened at source).
 - id: professional-services-billing-collections-07
   title: Fixed-fee matters get scope-creep flags while the bill is assembled, so a change order can be raised before the matter
     closes
@@ -1086,10 +1093,11 @@
     access: full
     locator: p. 8
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms; Laurel makes the same claim for consulting. Graded C: product page, blog and a hypothetical.
-    TRI notes that on fixed-fee work an efficiency gain goes straight to margin (TRI-MIDSIZE-2026). Overlaps professional-services-scoping-pricing-08
-    (predictive budget-overrun alerts on live WIP); kept here because the output is a change order or write-down decision
-    at bill time. Merged from practice 07, discourse 07 and governance 05.'
+  notes: >-
+    Firm kind: law firms; Laurel makes the same claim for consulting. Graded C: product page, blog and a hypothetical.
+    TRI notes that on fixed-fee work an efficiency gain goes straight to margin (TRI-MIDSIZE-2026). Overlaps
+    professional-services-scoping-pricing-08 (predictive budget-overrun alerts on live WIP); kept here because the
+    output is a change order or write-down decision at bill time.
 - id: professional-services-billing-collections-08
   title: 'Idea: score pre-bills for write-down risk by matter, client and timekeeper so partners adjust or explain entries
     before the bill goes out'
@@ -1190,9 +1198,10 @@
     access: full
     locator: p. 8
   last_reviewed: '2026-10-19'
-  notes: 'Idea: scholarly argument and benchmark data, no deployment. Firm kind: law firms (US). The related idea of aiming
-    AI at the work that gets written down is held in professional-services-firm-finance-06, and firm-level realization analytics
-    in firm-finance-03. Governance 12; discourse 08 cross-referenced to firm-finance-06.'
+  notes: >-
+    Idea: scholarly argument and benchmark data, no deployment. Firm kind: law firms (US). The related idea of aiming AI
+    at the work that gets written down is held in professional-services-firm-finance-06, and firm-level realization
+    analytics in professional-services-firm-finance-03.
 - id: professional-services-billing-collections-09
   title: AI drafts appeals for rejected e-billing invoices and ranks which are worth pursuing
   archetype: professional-services
@@ -1263,7 +1272,7 @@
     locator: Section on opacity of client review
   last_reviewed: '2026-10-19'
   notes: 'Firm kind: law firms (US). Graded C: vendor announcements; no firm named in the early access programme. Elite said
-    in 2023 that eBillingHub could categorise rejected invoices (search results only). Practice 08.'
+    in 2023 that eBillingHub could categorise rejected invoices (search results only).'
 - id: professional-services-billing-collections-10
   title: AI prioritises overdue accounts by payment risk and drafts follow-ups for collections staff to send
   archetype: professional-services
@@ -1340,17 +1349,17 @@
     access: full
     locator: Paragraphs on Clio-attributed figures
   - ref: CERTINIA-VEDA-2026
-    title: 'Veda: AI agents for professional services (Certinia AI page)'
+    title: 'Veda AI: System of Action for Professional Services (product page; undated, read 2026-10-19)'
     publisher: Certinia
     type: vendor
     url: https://certinia.com/solutions/ai
-    date: 2026-10
+    date: 2026-10-19
     access: full
     locator: Headline stats tiles (24 days; 75%)
   last_reviewed: '2026-10-19'
   notes: 'Firm kind: law firms (Aderant, Oddr) and project-based services firms (Certinia). Graded C: vendor claims and early-access
     announcements; no named firm reports using an AI collections tool. The only accounting-firm collections example found
-    (BGW with Anduin) dates from 2021. Merged from practice 09 and discourse 11.'
+    (BGW with Anduin) dates from 2021.'
 - id: professional-services-billing-collections-11
   title: Overdue invoices are detected and chased automatically, with trained human collectors handling calls and escalations
   archetype: professional-services
@@ -1416,10 +1425,10 @@
     access: full
     locator: p. 11 Stage 3; p. 12 Stage 4
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: law firms (US). Vendor claim from a startup pitch competition; no named customer, so grade C; maturity
-    follows the governance input. The 97-day figure is relayed from Clio and not checked. The Wells Fargo unit for ''collection
-    cycles slowed by 5%'' is not defined. The only entry on the automate rung in this module, and the ''AI'' content is thin.
-    Governance 07.'
+  notes: >-
+    Firm kind: law firms (US). Vendor claim from a startup pitch competition; no named customer, so grade C. The 97-day
+    figure is relayed from Clio and not checked. The Wells Fargo unit for 'collection cycles slowed by 5%' is not
+    defined. The only entry on the automate rung in this module, and the 'AI' content is thin.
 - id: professional-services-billing-collections-12
   title: Time capture is extended to executives and administrative staff who never tracked time, to show cost to serve (GHJ,
     accounting)
@@ -1467,7 +1476,7 @@
     locator: Extending beyond billable teams; Visibility for non-traditional roles
   last_reviewed: '2026-10-19'
   notes: 'Firm kind: accounting and advisory (US). Graded B: one named firm, described as rolling out; no measurements for
-    this extension; single vendor-authored story. Use of the data for staffing belongs to staffing-resourcing. Practice 12.'
+    this extension; single vendor-authored story. Use of the data for staffing belongs to staffing-resourcing.'
 - id: professional-services-billing-collections-13
   title: In-house legal teams use AI to review every outside-counsel invoice against billing guidelines and route flagged
     lines to a reviewer (in-house)
@@ -1647,12 +1656,13 @@
     access: full
     locator: Section on the billing conversation
   last_reviewed: '2026-10-19'
-  notes: 'in-house. Firm kinds: corporate legal department (Albertsons, retail) and insurer litigation management (Milliman).
-    Graded B on Albertsons: a vendor case study with a named customer and a recollected figure. This is the client-side counterpart
-    of entries 03 and 05: the firm''s bills are increasingly read by the client''s AI. LexisNexis CounselLink, Wolters Kluwer
-    LegalVIEW BillAnalyzer and Epiq managed invoice review were seen in search results only. Panel-level spend analytics and
-    a plain-language query layer over billing data are held in professional-services-firm-finance-04 (practice 14 and discourse
-    06 cross-referenced there). Merged from practice 13, discourse 05 and governance 06.'
+  notes: >-
+    in-house. Firm kinds: corporate legal department (Albertsons, retail) and insurer litigation management (Milliman).
+    Graded B on Albertsons: a vendor case study with a named customer and a recollected figure. This is the client-side
+    counterpart of entries 03 and 05: the firm's bills are increasingly read by the client's AI. LexisNexis CounselLink,
+    Wolters Kluwer LegalVIEW BillAnalyzer and Epiq managed invoice review were seen in search results only. Panel-level
+    spend analytics and a plain-language query layer over billing data are held in
+    professional-services-firm-finance-04.
 - id: professional-services-billing-collections-14
   title: 'Idea: tag AI-assisted work in time entries and check it before billing against each client''s AI terms and the fee
     rules'
@@ -1750,11 +1760,11 @@
     access: full
     locator: Section on disclosure requirements
   - ref: ILTA-TECHSURVEY-2026
-    title: The ILTA Technology Survey 2026 Executive Summary
-    publisher: International Legal Technology Association
+    title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)"
+    publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: 2026-08-14
     access: full
     locator: p. 9; p. 5, Q3.18
   - ref: CALBAR-GENAI-2026
@@ -1767,7 +1777,7 @@
     locator: p. 7, Rules 1.2 and 1.4 row; p. 8
   - ref: TXETHICS-OP705-2025
     title: Opinion 705 (generative AI in the practice of law)
-    publisher: Professional Ethics Committee for the State Bar of Texas, via Texas Center for Legal Ethics
+    publisher: Professional Ethics Committee for the State Bar of Texas
     type: professional-body
     url: https://www.legalethicstexas.com/resources/opinions/opinion-705/
     date: 2025-02
@@ -1824,11 +1834,11 @@
     access: full
     locator: p. 2
   - ref: LAWSOC-GENAI-2026
-    title: Generative AI - the essentials (page undated; latest event it cites is April 2026)
+    title: "Generative AI: the essentials (guide; page dated 30 Jun 2026)"
     publisher: Law Society of England and Wales
     type: professional-body
     url: https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials
-    date: 2026-04
+    date: 2026-06-30
     access: full
     locator: Section on client care
   - ref: LAYER3-OCG-2026
@@ -1840,13 +1850,15 @@
     access: full
     locator: 'Opening summary; ''Clause 4: Billing Rules for AI-assisted Work'''
   last_reviewed: '2026-10-19'
-  notes: 'Idea: the client demand (Zscaler, Legalweek) and the fee rules are documented; no deployed tagging or AI fee-check
-    tool was found. Firm kinds: law firms; tax practitioners for the IRS point (cross-reference tax-compliance-corporate-16
-    and tax-compliance-individual-business-22). The matter-opening register of client AI restrictions is held in professional-services-acceptance-risk-11;
-    matter-level evidence of AI savings for client conversations in professional-services-scoping-pricing-09; fee-agreement
-    terms in scoping-pricing-07; hourly billing on actual AI-assisted time in scoping-pricing-06; AI cost metering and pass-through
-    in firm-finance-12. Merged from governance 09, practice 15, discourse 09 (invoice part), and two firm-finance governance
-    ideas routed here (pre-bill fee-compliance check; client AI-terms register applied at bill time).'
+  notes: >-
+    Idea: the client demand (Zscaler, Legalweek) and the fee rules are documented; no deployed tagging or AI fee-check
+    tool was found. Firm kinds: law firms; tax practitioners for the IRS point (cross-reference
+    tax-compliance-corporate-16 and tax-compliance-individual-business-22). The matter-opening register of client AI
+    restrictions is held in professional-services-acceptance-risk-11; matter-level evidence of AI savings for client
+    conversations in professional-services-scoping-pricing-09; fee-agreement terms in
+    professional-services-scoping-pricing-07; hourly billing on actual AI-assisted time in
+    professional-services-scoping-pricing-06; AI cost metering and pass-through in
+    professional-services-firm-finance-12.
 - id: professional-services-billing-collections-15
   title: 'Idea: a summarised ''services rendered'' invoice in place of itemised time when AI compresses tasks'
   archetype: professional-services
@@ -1955,9 +1967,10 @@
     access: full
     locator: Abstract
   last_reviewed: '2026-10-19'
-  notes: 'Idea discussed at a conference. Firm kind: law firms (US). Kopka Law''s KPI-based retainer model, a real non-hourly
-    arrangement, is held in professional-services-scoping-pricing-18; fee-model choices sit in scoping-pricing and firm-finance-01.
-    Governance 10.'
+  notes: >-
+    Idea discussed at a conference. Firm kind: law firms (US). Kopka Law's KPI-based retainer model, a real non-hourly
+    arrangement, is held in professional-services-scoping-pricing-18; fee-model choices sit in scoping-pricing and
+    professional-services-firm-finance-01.
 - id: professional-services-billing-collections-16
   title: Consulting and project-based firms use agents in their professional services platform to complete, chase and check
     timesheets
@@ -2006,11 +2019,11 @@
   evidence_grade: C
   sources:
   - ref: CERTINIA-VEDA-2026
-    title: 'Veda: AI agents for professional services (Certinia AI page)'
+    title: 'Veda AI: System of Action for Professional Services (product page; undated, read 2026-10-19)'
     publisher: Certinia
     type: vendor
     url: https://certinia.com/solutions/ai
-    date: 2026-10
+    date: 2026-10-19
     access: full
     locator: '''Make time capture a non-issue'''
   - ref: IA-CERTINIA-2025
@@ -2045,11 +2058,11 @@
     date: '2026-05-07'
     access: full
     locator: Case overview (timesheet agent named among the agents)
-  - ref: CERTINIA-PROVING-2026
-    title: Certinia Customers Are Proving Veda AI Agents Deliver Real Results
-    publisher: Certinia (blog)
+  - ref: CERTINIA-CUSTOMERS-2026
+    title: "Certinia Customers Are Proving Veda AI Agents Deliver Real Results (blog; byline 'September 3' with no year; 2026 inferred from its reference to Dreamforce 14-17 Sep 2026 as upcoming)"
+    publisher: Certinia
     type: vendor
-    url: https://www.certinia.com/blog/certinia-customers-are-proving-veda-ai-agents-deliver-real-results/
+    url: "https://certinia.com/blog/certinia-customers-are-proving-veda-ai-agents-deliver-real-results/"
     date: '2026-09-03'
     access: full
     locator: Diabsolut passage (invoice turnaround figure)
@@ -2062,12 +2075,13 @@
     access: full
     locator: Paragraph (a), vouchers
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: consulting and project-based services (zeb; Basware, a software company, uses Kantata for its own administration).
-    Graded C: the only named deployment (zeb) mentions a timesheet agent without describing what it does. Certinia''s blog
-    reports Diabsolut''s invoice turnaround 40% faster (CERTINIA-PROVING-2026); the agent or step behind it is not stated
-    in the input, so it is not used as an outcome here. Consulting billing practice (milestone invoicing, T&M versus outcome
-    billing) was not found. Missing-time-card and project-health agents are held in delivery-management. Merged from practice
-    17, discourse 13 and items routed from delivery-management and staffing-resourcing.'
+  notes: >-
+    Firm kind: consulting and project-based services (zeb; Basware, a software company, uses Kantata for its own
+    administration). Graded C: the only named deployment (zeb) mentions a timesheet agent without describing what it
+    does. Certinia's blog reports Diabsolut's invoice turnaround 40% faster (CERTINIA-CUSTOMERS-2026); the agent or step
+    behind it is not stated in the input, so it is not used as an outcome here. Consulting billing practice (milestone
+    invoicing, T&M versus outcome billing) was not found. Missing-time-card and project-health agents are held in
+    delivery-management.
 - id: professional-services-billing-collections-17
   title: Accounting firms use AI on time, work-in-progress and invoicing to flag WIP problems early and shorten the time from
     finished work to bill
@@ -2147,7 +2161,7 @@
     access: full
     locator: Landing-page charts ('Biggest operational headache', trust, hand-over tasks) and FAQ methodology
   - ref: KARBON-ENGAGE-2026
-    title: 23 must-see sessions at AICPA & CIMA ENGAGE 2026 (session preview)
+    title: AICPA & CIMA ENGAGE 2026 session preview (event held 8-11 June 2026)
     publisher: Karbon Magazine
     type: conference
     url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
@@ -2155,7 +2169,8 @@
     access: full
     locator: 'Session list: no billing or collections session among the 23 previewed'
   last_reviewed: '2026-10-19'
-  notes: 'Firm kind: accounting firms. Graded C: one vendor article and vendor surveys; the 29-to-18-day figure is one unnamed
-    firm and is credited to visibility rather than AI. Named accounting time-capture deployments (Warren Averett, GHJ) are
-    in entry 01. Billing-model choices among tax practitioners belong to scoping-pricing (scoping-pricing-16). Discourse 12,
-    with the Uku survey from the governance input.'
+  notes: >-
+    Firm kind: accounting firms. Graded C: one vendor article and vendor surveys; the 29-to-18-day figure is one unnamed
+    firm and is credited to visibility rather than AI. Named accounting time-capture deployments (Warren Averett, GHJ)
+    are in entry 01. Billing-model choices among tax practitioners belong to scoping-pricing
+    (professional-services-scoping-pricing-16).

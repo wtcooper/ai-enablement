@@ -249,7 +249,7 @@ certification; what to say in the pitch room.
   machine evaluators too [UPPEREDGE-PROPTRAP-2026]. 2026-09-11: Stinson partners in Law360: reinvest saved time in the
   client [STINSON-LAW360-2026].
 - 2026-10-07: "Is this RFP wired?" capture-agent workshop [G2X-CAPTURE-2026]. 2026-10-08: Litera's CEO, in a sponsored
-  post, says the RFP is the first place a firm's AI investment shows [LAWSITES-LITERA-2026]. 2026-10-13: 84% of partners
+  post, says the RFP is the first place a firm's AI investment shows [LAWSITES-LITERARFP-2026]. 2026-10-13: 84% of partners
   expect their firm to reach Introhive's top two BD-maturity stages within 18-24 months [INTROHIVE-LAWSITES-2026].
 - Scheduled, not evidence: TRI CMBDO Forum, 2027-01-27 to 29, sessions on the firm's AI story in pitches and visibility
   in AI-driven discovery [TRI-CMBDO34-2027].
@@ -270,28 +270,28 @@ certification; what to say in the pitch room.
   each solicitation; some disqualify for undisclosed AI in deliverables [CALDGS-SCM2302-2025; BIDLAB-2026]. Keep a
   record (`#18`).
 - **"Clients only want a list of our tools."** Litera's CEO (sponsored post) says a product name is not an acceptable
-  answer [LAWSITES-LITERA-2026]; a Parker Poe partner urges clients to ask at matter level [PARKERPOE-TR-2026] (`#17`).
+  answer [LAWSITES-LITERARFP-2026]; a Parker Poe partner urges clients to ask at matter level [PARKERPOE-TR-2026] (`#17`).
 - **"Vendor case studies prove the ROI."** They give recollections and projections with no baseline (§5). Ask for a
-  before-and-after on your own bids; only 18% of organisations measure AI return on investment [TR-AIPS-2026*].
+  before-and-after on your own bids; only 18% of organisations measure AI return on investment [TR-AIPSBLOG-2026*].
 
 ## 10. Sources
 
-Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; they are listed in the table below, and each was opened at verification on 2026-10-19.
+Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; they are listed in the table below, and each was opened on 2026-10-19.
 
 - **Regulators and professional bodies:** PPN-017-2025, PPN-0224-2024, CALDGS-SCM2302-2025, FEDREG-GSA-2026, NSF-GENAI-2023, NIH-NOTOD25132-2025, SEC-2024-36, FTC-AICOMPLY-2024, CALBAR-GENAI-2026, ABA-OP512-2024, ABA-LPMAI-2026, ABA-LPMRFP-2026, ICMCI-AICODE-2026, FLBAR-OP241-2024, LGL-SRA-2026*. **Academic:** JBL-MCKINLEY-2026, CUI-DIAS-YE-2025, GALDIN-SILBERT-2025, NOY-ZHANG-2023, STANFORD-MAGESH-2024, NBER-AUTOR-2026*.
-- **Surveys:** LOOPIO-TRENDS-2026, QORUSDOCS-ITBRIEF-2026, IKAUN-BENCH-2026, BDC-UNANET-2026, RESPONSIVE-SRM-2025, INTROHIVE-LAWSITES-2026, TR-FOP-2026, TRI-STANDOUT-2026, SOURCE-PRECISION-2026, DAYSHAPE-ONREC-2026, LEGALIT-IKAUN-2025*, RESPONSIVE-SRM-2026*, TR-AIPS-2026*.
+- **Surveys:** LOOPIO-TRENDS-2026, QORUSDOCS-ITBRIEF-2026, IKAUN-BENCH-2026, BDC-UNANET-2026, RESPONSIVE-SRM-2025, INTROHIVE-LAWSITES-2026, TR-FOP-REPORT-2026, TRI-STANDOUT-2026, SOURCE-PRECISION-2026, DAYSHAPE-ONREC-2026, LEGALIT-IKAUN-2025*, RESPONSIVE-SRM-2026*, TR-AIPSBLOG-2026*.
 - **Conferences and events:** TRI-LEGALWEEK-2026, TRI-CMBDO34-2027 (scheduled), LMA-DECENT-2026, G2X-CAPTURE-2026, TRI-ILTACON-2025*, STANFORD-GENLEGAL-2026*.
 - **Firms and job postings:** VERSENT-BIDASSISTANT-2025, STINSON-LAW360-2026, BROWNEJACOBSON-AIPROC-2025, UPPEREDGE-PROPTRAP-2026, UPPEREDGE-SI-2025, JMW-SRA-2026, MONDAQ-BSB-2026, RANDSTAD-PROPOSALMGR-2026, LATHAM-INNOVATIONATTY-2026, LEGORA-JOB-RFP-2026*.
 - **Vendors:** LOOPIO-CHERRYBEKAERT-2026, LOOPIO-BLOG-2026, KANTIV- (BENESCH, WOODARD, ROBINS, SMPSQ2, COPILOT, GONOGO, TRUST; all 2026), IKAUN- (GRSM, NEUDESIC, ARUP, STINSON, GOWLING; 2026), AUTOGENAI-SERCO-2025, AUTOGENAI-BIG4-2025, HARVEY-BD-2026, HARVEY-LPHS-2025, INTROHIVE-MCP-2026, CERTINIA-VEDA-2026, CERTINIA-SOA-2026, KANTATA-ENGINE-2025, INTAPP-EXPERIENCE-2026, INTAPP-DEALCLOUD-2026, PRIORI-SCOUT-2026, KOJI-PSDOCS-2026, BIDLAB-2026, LITERA-GCRFP-2026, PARKERPOE-TR-2026, PROJECTWORKS-BD-2026*.
-- **Press, podcasts, community:** TRI-INSIDELEGALAI-2025, LAWSITES-CELESTE-2026, LAWSITES-LITERA-2026, LAWFUEL-2025, NYREJ-SMPSNY-2026, NATLAW-BRADLEY-2026, TGC-WK-2025, CANBERRATIMES-APSAI-2025, HINZ-BPCNASHVILLE-2025, PASSLE-EP177-2025*.
+- **Press, podcasts, community:** TRI-INSIDELEGALAI-2025, LAWSITES-CELESTE-2026, LAWSITES-LITERARFP-2026, LAWFUEL-2025, NYREJ-SMPSNY-2026, NATLAW-BRADLEY-2026, TGC-WK-2025, CANBERRATIMES-APSAI-2025, HINZ-BPCNASHVILLE-2025, PASSLE-EP177-2025*.
 
 | Key (*) | Publisher, type | Date | URL |
 |---|---|---|---|
 | LGL-SRA-2026 | Local Government Lawyer, press | 2026-08-17 | https://www.localgovernmentlawyer.co.uk/marketplace/528-market-news/101456-solicitors-regulation-authority-highlights-concern-over-ai-generated-inaccuracies-and-breaches-of-confidentiality3 |
-| NBER-AUTOR-2026 | NBER Working Paper 35720 (abstract via EconPapers), academic | 2026-09 | https://econpapers.repec.org/RePEc:nbr:nberwo:35720 |
+| NBER-AUTOR-2026 | NBER Working Paper 35720 (abstract page; run and funded by Google, whose model was tested), academic, vendor-published | 2026-09-03 | https://www.nber.org/papers/w35720 |
 | LEGALIT-IKAUN-2025 | Legal IT Insider, press | 2025-06-17 | https://legaltechnology.com/ikaun-releases-2025-state-of-proposal-generation-and-bd-in-law-firms-report/ |
 | RESPONSIVE-SRM-2026 | Responsive report landing page (undated), survey | 2026 | https://www.responsive.io/resources/whitepapers/srm-report-2026 |
-| TR-AIPS-2026 | Thomson Reuters legal blog, vendor | 2026-02-26 | https://legal.thomsonreuters.com/blog/highlights-from-the-2026-ai-in-professional-services-report-and-what-it-means-for-legal-teams-tri/ |
+| TR-AIPSBLOG-2026 | Thomson Reuters legal blog, vendor | 2026-02-26 | https://legal.thomsonreuters.com/blog/highlights-from-the-2026-ai-in-professional-services-report-and-what-it-means-for-legal-teams-tri/ |
 | TRI-ILTACON-2025 | Thomson Reuters Institute, conference | 2025-09-02 | https://www.thomsonreuters.com/en/institute/articles/iltacon-2025-billable-hour |
 | STANFORD-GENLEGAL-2026 | Stanford Law School session abstract, conference | 2026-04-17 | https://conferences.law.stanford.edu/generative-legal-2026/sessions/panel-the-client-perspective/ |
 | LEGORA-JOB-RFP-2026 | Legora, "Global Services Solutions Expert", job-posting | 2026-07-31 | https://jobs.ashbyhq.com/legora/f7493093-1ae8-4f56-a332-44fccdbb90cd |

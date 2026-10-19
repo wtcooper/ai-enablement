@@ -1,8 +1,8 @@
 # Quality review (professional services)
 
-Sources checked and re-verified 2026-10-19. Use cases live in `../use-cases/quality-review.yaml` (18 entries: A 0, B 11, C 6,
+Sources checked 2026-10-19. Use cases live in `../use-cases/quality-review.yaml` (18 entries: A 0, B 11, C 6,
 D 1). Ids are shortened here: `#08` means `professional-services-quality-review-08`; other professional-services
-modules drop the `professional-services-` prefix (`work-production-11`); other archetypes' ids are in full. Source
+modules drop the `professional-services-` prefix (`professional-services-work-production-11`); other archetypes' ids are in full. Source
 keys in brackets are in the YAML or in §10. The public record is mostly legal (law firms, courts, bars, in-house
 legal teams). Accounting and consulting evidence is mostly incidents and trade-press
 interviews. No firm or in-house team publishes a reviewer catch rate, an override rate, a parallel-run result
@@ -56,9 +56,9 @@ firm selling review as a service); do not invent one.
 **Verifying citations, references and figures**
 - Improve: `#02` automated cite, quote and proposition checkers before signing (Filevine, BriefCatch, LawDroid,
   Thomson Reuters; Harvey announced). Vendor launches for law firms; no named customer, no false-negative rate.
-  Related: work-production-11 (pre-release check, B), tax-research-advisory-20, assurance-quality-management-19.
+  Related: professional-services-work-production-11 (pre-release check, B), tax-research-advisory-20, assurance-quality-management-19.
 - Improve: `#03` a verification record on the file showing who checked what and which material was AI-generated
-  (Clearbrief product; ABA, Law Society and ICMCI guidance). Related: work-production-25.
+  (Clearbrief product; ABA, Law Society and ICMCI guidance). Related: professional-services-work-production-25.
 - Improve: `#04` pre-issue audit of every reference in consulting and advisory reports, prompted by Big Four
   incidents (Deloitte Australia and Canada, EY, KPMG, PwC Middle East). An idea plus a tool from GPTZero, an
   AI-detection vendor.
@@ -67,42 +67,42 @@ firm selling review as a service); do not invent one.
 
 **Review and sign-off**
 - Improve, process scope: `#08` review gates where a named reviewer signs off each AI step before the next begins
-  (Armanino, US accounting firm, in production; Harvey announced). Agent-template version: work-production-15.
+  (Armanino, US accounting firm, in production; Harvey announced). Agent-template version: professional-services-work-production-15.
 - Improve, process scope: `#10` an AI layer on the firm's quality management system: AI discussed at planning,
   reviewers back-trace claims to source, depth rises with consequence (Forvis Mazars, Schellman; accounting and
   advisory). Audit detail: assurance-quality-management-07, -17, -19.
 - Delegate: `#09` oversight tiered by agent autonomy, with escalation triggers and no filing, advice or outside
-  transmission without approval (a talk at CLOC's conference; California guidance). Related: work-production-16.
+  transmission without approval (a talk at CLOC's conference; California guidance). Related: professional-services-work-production-16.
 
 **Testing tools and setting review depth**
 - Improve: `#05` benchmark tools against expert answers and set review depth task by task (Linklaters' own
   English-law benchmark; Vals with a law-firm consortium; Hogan Lovells Cadwalader's 1,300-lawyer pilot). Related:
-  work-production-23, work-production-07.
+  professional-services-work-production-23, professional-services-work-production-07.
 - Improve, process scope: `#06` validate AI document review inside a matter with test sets, and sample output
   instead of re-reading all of it (Covington & Burling case study; Law Society research on sampling).
 - Improve, process scope: `#07` standing evaluation suites and change control run by legal engineers (Latham &
-  Watkins job description; Legora and Harvey evaluator roles). Related: work-production-17.
+  Watkins job description; Legora and Harvey evaluator roles). Related: professional-services-work-production-17.
 - Improve: `#11` track acceptance, overrides and review findings as a quality signal (Microsoft's in-house
   legal team is an early user; across the early-access programme users kept about seven in ten suggestions).
-  Related: work-production-08, work-production-24.
+  Related: professional-services-work-production-08, professional-services-work-production-24.
 - Improve: `#12` idea: standard quick-check techniques to cut the "verification tax" (CLOC, a legal-operations
   association; in-house).
 
 **Policy, clients, incidents and insurance**
 - Improve, process scope: `#01` turn the AI policy into an enforced review rule with attestation (law firms; Butler
-  Snow and Sullivan & Cromwell show policy alone failing). Rollout gate: work-production-22, talent-learning-01.
+  Snow and Sullivan & Cromwell show policy alone failing). Rollout gate: professional-services-work-production-22, professional-services-talent-learning-01.
 - Improve: `#15` check incoming work: opponents' filings, contractors' and juniors' drafts (US, UK and Canadian
-  courts). Junior disclosure loop: talent-learning-10.
+  courts). Junior disclosure loop: professional-services-talent-learning-10.
 - Improve, process scope: `#14` after an error: disclose, correct, re-review the whole matter (Sullivan & Cromwell,
-  Butler Snow, Deloitte Australia). Fee recovery: scoping-pricing-12.
+  Butler Snow, Deloitte Australia). Fee recovery: professional-services-scoping-pricing-12.
 - Improve: `#16` tell clients when AI materially contributed and how it was checked (Forvis Mazars, Deloitte
-  Australia, ICMCI). Client terms at intake: acceptance-risk-10, -11.
+  Australia, ICMCI). Client terms at intake: professional-services-acceptance-risk-10, -11.
 - Improve, process scope: `#17` in-house teams set bounded, reviewable workflows and ask firms for evidence
-  (Starbucks, GSK; in-house). Related: scoping-pricing-09, -11.
+  (Starbucks, GSK; in-house). Related: professional-services-scoping-pricing-09, -11.
 - Improve: `#18` documented AI governance for professional indemnity insurers (law and CPA firms).
 
-**Juniors as reviewers** are covered in talent-learning: verification-first onboarding (talent-learning-02, -09),
-pre-review feedback tools (talent-learning-06) and the patent-drafting trial (talent-learning-11).
+**Juniors as reviewers** are covered in talent-learning: verification-first onboarding (professional-services-talent-learning-02, -09),
+pre-review feedback tools (professional-services-talent-learning-06) and the patent-drafting trial (professional-services-talent-learning-11).
 
 ## 4. Interview probes
 
@@ -143,7 +143,7 @@ before relying on a tool; attestations completed against policy. None of these i
 - Luxembourg 2026: eight legal retrieval systems, under 10% to nearly half of responses with hallucinations
   [ARXIV-LUX-2026].
 - Vals 2025: tools beat lawyers on document Q&A (94.8% vs 70.1%), lawyers led on redlining (79.7% vs 65.0%) and
-  EDGAR research (US securities filings) [VALS-VLAIR-2025]; legal research 74-78% vs 69%, multi-jurisdiction
+  EDGAR research (US securities filings) [VALS-VLAIRFEB-2025]; legal research 74-78% vs 69%, multi-jurisdiction
   questions 14 points lower [VALS-VLAIRRES-2025].
 - Linklaters' own benchmark: best model 6.4 out of 10 (2025), against 4.4 for the best in 2023; self-reported,
   and a measure of model output, not of review [LINKLATERS-LINKSAI-2025].
@@ -175,7 +175,7 @@ before relying on a tool; attestations completed against policy. None of these i
   checks [LAW360-GA-2026]. 89% of professional-services leaders spend significant time verifying AI output
   (vendor-sponsored) [KANTATA-SOPSI-2026].
 - Clients: 78% of corporate clients rate AI quality gains very important or essential; 6% say most or all providers
-  deliver them [TR-FOP-2026].
+  deliver them [TR-FOP-REPORT-2026].
 
 ## 6. Guardrails
 
@@ -221,7 +221,7 @@ outside; deciding what to tell a client or court; owning the response to an erro
   gates [LATHAM-JD-2026]; vendors hire lawyer-evaluators [LEGORA-JOB-EVALS-2026; HARVEY-JOB-EVALQ-2026].
 - **Juniors.** In a trial of 133 patent lawyers, AI raised quality but the unaided skill gain went to seniors and
   juniors' results split [NBER-AUTOR-2026]. 48% of professionals worry about AI's effect on judgment development;
-  legal professionals expect the path to trusted judgment to lengthen by nearly two years [TR-FOP-2026]. Detail:
+  legal professionals expect the path to trusted judgment to lengthen by nearly two years [TR-FOP-REPORT-2026]. Detail:
   talent-learning.
 - **In-house teams** set rules for suppliers and ask firms how AI was used on their matters [EDT-CASEPOINT-2026;
   TRI-LEGALWEEK-2026].
@@ -260,7 +260,7 @@ outside; deciding what to tell a client or court; owning the response to an erro
   ACS-EY-2026; GPTZERO-KPMG-2026; GPTZERO-PWC-2026], and an accountancy regulator opened an investigation
   [INDEPENDENT-CPANL-2026]. Answer: pre-issue reference audit (`#04`).
 - **"Clients don't want to hear about AI."** Clients are asking, inconsistently: some demand AI, some require permission before
-  it is used [TRI-LEGALWEEK-2026]; 78% want AI quality gains, 6% see them [TR-FOP-2026]. Answer: `#16`, `#17`.
+  it is used [TRI-LEGALWEEK-2026]; 78% want AI quality gains, 6% see them [TR-FOP-REPORT-2026]. Answer: `#16`, `#17`.
 - **"It's an expensive toy until accuracy improves."** An ILTA respondent's view [ILTA-TECHSURVEY-2026]. Answer:
   accuracy varies by task (`#05`); review depth can follow it.
 
@@ -272,6 +272,6 @@ YAML:
 - LAWSITES-COCOUNSEL-2026: LawSites, Thomson Reuters Opens Early Access to the 'Next Generation' of CoCounsel Legal, 2026-06-22, https://www.lawnext.com/2026/06/thomson-reuters-opens-early-access-to-the-next-generation-of-cocounsel-legal-saying-beta-users-fing-loved-the-product.html
 - LAWSITES-FLRULE-2026: LawSites, Florida Supreme Court Tackles AI Hallucinations with New Rule Applicable to All State Courts, 2026-05-28, https://www.lawnext.com/2026/05/florida-supreme-court-tackles-ai-hallucinations-with-new-rule.html
 - LAWSOCIE-SRAWARN-2026: Law Society of Ireland Gazette, SRA issues warning notice on use of AI (secondary report; the SRA page was blocked), 2026-08, https://www.lawsociety.ie/gazette/top-stories/2026/august/sra-issues-warning-notice-on-use-of-ai/
-- NBER-AUTOR-2026: NBER Working Paper 35720, Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (abstract read; study conducted by Google), 2026-09, https://www.nber.org/papers/w35720
+- NBER-AUTOR-2026: NBER Working Paper 35720, Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (abstract read; run and funded by Google, whose model was tested; vendor-published), 2026-09-03, https://www.nber.org/papers/w35720
 - NIST-AI600-2024: NIST, Artificial Intelligence Risk Management Framework: Generative AI Profile (NIST AI 600-1), section 2.2, 2024-07, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - TRI-EVENTS-2026: Thomson Reuters Institute, event pages (Trust by Verify; Beyond Human in the Loop, scheduled for November 2026; abstracts only), 2026-10, https://www.thomsonreuters.com/en/institute/events

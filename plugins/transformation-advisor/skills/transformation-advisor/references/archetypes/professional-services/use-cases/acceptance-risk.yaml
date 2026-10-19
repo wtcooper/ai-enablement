@@ -1,10 +1,12 @@
-# professional-services / acceptance-risk use cases (synthesised 2026-10-19 from research/runs/wave3)
-# Inputs: landscape-professional-services.md, ps-acceptance-risk-combined.md and items routed to acceptance-risk
-# from the other ps-*.md files. Firm kinds are named in each entry's notes; in-house examples are tagged "in-house".
+# professional-services / acceptance-risk use cases (sources checked 2026-10-19)
+# Firm kinds are named in each entry's notes; in-house examples are tagged "in-house".
 # Audit-client independence, AI-vendor independence and the Grant Thornton UK KYC platform are held in the assurance
 # archetype (assurance-acceptance-independence-02, -03, -13) and are cross-referenced, not repeated, here.
-# Source-key note: in this file INTAPP-CONFLICTSAI-2026 is intapp.com/conflicts/ and INTAPP-ONBOARDAI-2026 is
-# intapp.com/intake/; INTAPP-INTAKE-2026 is the accounting acceptance page, matching the key used in the assurance archetype.
+# Source-key notes: INTAPP-CONFLICTSAI-2026 is intapp.com/conflicts/ and INTAPP-ONBOARDAI-2026 is intapp.com/intake/;
+# INTAPP-INTAKE-2026 is the accounting acceptance page, matching the key used in the assurance archetype.
+# XAPIEN-PINSENT-2025 is the case study and XAPIEN-PINSENT-EBOOK-2025 the ebook summary: two documents.
+# ARXIV-ADVERSE-2025 (arXiv preprint, read in full) and ORBILU-ADVERSE-2025 (University of Luxembourg repository record,
+# seen in search only) are two copies of one paper, kept apart because only the preprint was read.
 
 - id: professional-services-acceptance-risk-01
   title: Early opportunity screening against conflicts before a pitch or proposal advances
@@ -33,7 +35,7 @@
   prerequisites:
     - Conflicts data connected to CRM (customer relationship management) and the pipeline.
   risks_and_guardrails:
-    - Early screens use thinner information than a formal intake; no false-negative rate is published (gap noted in the deep dive).
+    - Early screens use thinner information than a formal intake; no false-negative rate is published.
   human_checkpoints:
     - Formal conflicts review follows before acceptance.
   role_evolution: "No source."
@@ -44,9 +46,8 @@
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law and accounting firms (Intapp customers); no named customer for this feature. The product page has no
-    visible date; its date is the page's JSON-LD dateModified (2026-08-17). Overlaps pursuit-proposals; the conflicts screen itself belongs here. Combined dive
-    use case 16.
-
+    visible date; its date is the page's JSON-LD dateModified (2026-08-17). Overlaps pursuit-proposals; the conflicts
+    screen itself belongs here.
 - id: professional-services-acceptance-risk-02
   title: AI-prepopulated intake requests with role-based risk summaries for reviewers
   archetype: professional-services
@@ -90,16 +91,14 @@
   sources:
     - { ref: INTAPP-ONBOARDAI-2026, title: "AI-driven client onboarding for regulated professional firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/intake/", date: 2026-10-06, access: full, locator: "section 'AI-driven intake requests'" }
     - { ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/accounting/client-onboarding-continuance/", date: 2026-07-29, access: full, locator: "section 'Accelerate onboarding...' (AI request summaries)" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Duty of Confidentiality, pp. 5-6" }
-    - { ref: IESBA-SNAPSHOT-2026, title: "IESBA Snapshot: Ethics and Independence Approach to the Use of Technology", publisher: IESBA, type: standard-setter, url: "https://www.ethicsboard.org/news-events/2026-06/iesba-snapshot-ethics-and-independence-approach-use-technology", date: "2026-06", access: full, locator: "Q2 (Code applies to technology); Q4 (use of technology outputs; automation bias)" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Duty of Confidentiality, pp. 5-6" }
+    - { ref: IESBA-SNAPSHOT-2026, title: "IESBA Snapshot: Ethics and Independence Approach to the Use of Technology", publisher: IESBA, type: standard-setter, url: "https://www.ethicsboard.org/news-events/2026-06/iesba-snapshot-ethics-and-independence-approach-use-technology", date: "2026-06-11", access: full, locator: "Q2 (Code applies to technology); Q4 (use of technology outputs; automation bias)" }
     - { ref: OSB-FO-2026-208, title: "Formal Opinion No 2026-208: Chatbots and AI Agent Communications", publisher: Oregon State Bar, type: professional-body, url: "https://www.osbar.org/_docs/ethics/2026-208.pdf", date: "2026-02", access: full, locator: "section III.C" }
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law and accounting firms (Intapp product pages); no named customer is tied to these AI features. Both
     product pages show no visible date; their dates are the pages' JSON-LD dateModified values (intake 2026-10-06,
-    accounting 2026-07-29). The Oregon point was routed from client-development (governance angle). For the accounting
-    version of this workflow, see assurance-acceptance-independence-02. Combined dive use case 02.
-
+    accounting 2026-07-29). For the accounting version of this workflow, see assurance-acceptance-independence-02.
 - id: professional-services-acceptance-risk-03
   title: Agentic conflicts search, hit triage and clearance-summary drafting
   archetype: professional-services
@@ -159,7 +158,7 @@
     - { ref: LAWSITES-CELESTE-2026, title: "Intapp makes Celeste generally available, calling it an AI coworker to run the business side of law firms", publisher: LawSites (LawNext), type: press, url: "https://www.lawnext.com/2026/07/intapp-makes-celeste-generally-available-calling-it-an-ai-coworker-to-run-the-business-side-of-law-firms.html", date: 2026-07-16, access: full, locator: "paragraphs on BakerHostetler and playbooks" }
     - { ref: INTAPP-CONFLICTSAI-2026, title: "AI-powered conflicts management (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/conflicts/", date: 2026-08-17, access: full, locator: "section 'Agentic conflicts clearance'" }
     - { ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: Thomson Reuters Institute, type: press, url: "https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed", date: 2026-02-18, access: full, locator: "Premortem No. 1, paragraphs on the conflicts check" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Executive Summary p. 2; Duty of Confidentiality pp. 5-6" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Executive Summary p. 2; Duty of Confidentiality pp. 5-6" }
     - { ref: VIRTUALVOCATIONS-2026, title: "Conflicts Analyst (remote job posting)", publisher: Virtual Vocations, type: job-posting, url: "https://www.virtualvocations.com/job/conflicts-analyst-3264522-i.html", date: 2026-09-22, access: full, locator: "Job Summary and Required Qualifications" }
     - { ref: LEGALTECH-CELESTE-2026, title: "Intapp bets on 'firm AI' with general release of Celeste", publisher: Legal IT Insider, type: press, url: "https://legaltechnology.com/intapp-bets-on-firm-ai-with-general-release-of-celeste/", date: 2026-07-27, access: full, locator: "paragraphs 'Another early use case is on the intake and conflict side' and 'Baker Hostetler is one of Intapp's Celeste launch clients'" }
   last_reviewed: 2026-10-19
@@ -169,12 +168,9 @@
     "piloting", not "in-production"; graded B on the named early adopter, with no published measurement. LawSites says
     Celeste was in limited release with early adopters including BakerHostetler, and that the firm's focus so far has
     been intake and conflicts. In Legal IT Insider, Intapp's chief product officer calls BakerHostetler a launch client
-    and says intake and conflicts is "the use case that they really grabbed onto" (LEGALTECH-CELESTE-2026, read in full
-    on verification). The conflicts product page shows no visible date; its JSON-LD dateModified (2026-08-17) is used. The
-    same BakerHostetler item was routed here from client-development, firm-finance and pursuit-proposals. For
-    accounting-firm conflicts and independence clearance, see assurance-acceptance-independence-01. Combined dive use
-    case 01.
-
+    and says intake and conflicts is "the use case that they really grabbed onto" (LEGALTECH-CELESTE-2026, read in
+    full). The conflicts product page shows no visible date; its JSON-LD dateModified (2026-08-17) is used. For
+    accounting-firm conflicts and independence clearance, see assurance-acceptance-independence-01.
 - id: professional-services-acceptance-risk-04
   title: Small-firm conflicts-check agent with corporate-family mapping and fuzzy matching
   archetype: professional-services
@@ -216,8 +212,7 @@
   notes: >-
     Firm kind: an unnamed small US law firm. Self-published by the builder, no independent check: usable as a signal
     about false-positive tuning only, and not counted as a named deployment. Kept separate from entry 03 because it is a
-    custom build at a small firm rather than an enterprise platform. Combined dive use case 17.
-
+    custom build at a small firm rather than an enterprise platform.
 - id: professional-services-acceptance-risk-05
   title: Lateral-hire conflicts pre-screening and clearance preparation by an agent
   archetype: professional-services
@@ -256,13 +251,12 @@
     - { ref: INTAPP-CELESTEGA-2026, title: "Intapp announces general availability of Celeste, the expert AI coworker for professional firms", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/general-availability-celeste/", date: 2026-07-15, access: full, locator: "paragraph 'In legal, it surfaces ... lateral hire lifecycle'" }
     - { ref: LAWSITES-CELESTE-2026, title: "Intapp makes Celeste generally available, calling it an AI coworker to run the business side of law firms", publisher: LawSites (LawNext), type: press, url: "https://www.lawnext.com/2026/07/intapp-makes-celeste-generally-available-calling-it-an-ai-coworker-to-run-the-business-side-of-law-firms.html", date: 2026-07-16, access: full, locator: "paragraph on lateral hiring" }
     - { ref: INTAPP-ONBOARDAI-2026, title: "AI-driven client onboarding for regulated professional firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/intake/", date: 2026-10-06, access: full, locator: "'Protect confidential information'" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p. 9" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p. 9" }
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law firms (vendor-described; no named adopter for this playbook). The only delegate-level entry in the
     module, and it is an announcement. Lateral hiring itself is a talent-learning topic; only the conflicts pre-screen
-    belongs here. Combined dive use case 14.
-
+    belongs here.
 - id: professional-services-acceptance-risk-06
   title: LLM-generated sourced due-diligence report with risk-tiered routing at client onboarding
   archetype: professional-services
@@ -318,14 +312,12 @@
   notes: >-
     Firm kind: UK law firm (Pinsent Masons). Graded B because Pinsent Masons is a named co-development partner, but the
     case study is in future tense and publishes no measurement, so maturity is "piloting". The case-study page shows no
-    visible date; its JSON-LD datePublished is 2025-01-30 (modified 2026-06-18), so the ref was renamed from
-    XAPIEN-PINSENT-2026 on verification. A search summary (not opened) attributed to a Xapien interview figures of 26 days average
-    onboarding before, a 58% cut in AML analysis hours and projected savings; those are search-only and not used. A
-    second Xapien case study (Al Tamimi and Company) was seen in search results only. The 2024 Xapien post describes an
-    unnamed law firm. For accounting-firm AML onboarding see assurance-acceptance-independence-04, and for Grant
-    Thornton UK's unified KYC, due-diligence and acceptance platform (Fenergo) see assurance-acceptance-independence-03.
-    Combined dive use case 05.
-
+    visible date; its JSON-LD datePublished is 2025-01-30 (modified 2026-06-18), so the source is dated 2025. A search
+    summary (not opened) attributed to a Xapien interview figures of 26 days average onboarding before, a 58% cut in AML
+    analysis hours and projected savings; those are search-only and not used. A second Xapien case study (Al Tamimi and
+    Company) was seen in search results only. The 2024 Xapien post describes an unnamed law firm. For accounting-firm
+    AML onboarding see assurance-acceptance-independence-04, and for Grant Thornton UK's unified KYC, due-diligence and
+    acceptance platform (Fenergo) see assurance-acceptance-independence-03.
 - id: professional-services-acceptance-risk-07
   title: "Idea: agentic adverse-media screening of prospective clients (research prototype)"
   archetype: professional-services
@@ -354,21 +346,21 @@
   prerequisites:
     - Search access, a scoring rubric tied to recognised risk categories, and analyst review.
   risks_and_guardrails:
-    - No precision or recall against analysts has been published for professional-services use (gap noted in the deep dive).
+    - No precision or recall against analysts has been published for professional-services use.
   human_checkpoints:
     - Analyst reviews the score and justification.
   role_evolution: "No source."
   evidence_grade: D
   sources:
-    - { ref: ARXIV-ADVERSE-2025, title: "An Agentic LLM Framework for Adverse Media Screening in AML Compliance (preprint)", publisher: arXiv (Chernakov, Jafarnejad and Frank, University of Luxembourg), type: academic, url: "https://arxiv.org/abs/2602.23373", date: 2025-12-29, access: full, locator: "abstract; section I (contributions); Table I (mean AMI scores)" }
+    - { ref: ARXIV-ADVERSE-2025, title: "An Agentic LLM Framework for Adverse Media Screening in AML Compliance (preprint)", publisher: "arXiv (Chernakov, Jafarnejad and Frank, University of Luxembourg)", type: academic, url: "https://arxiv.org/abs/2602.23373", date: 2025-12-29, access: full, locator: "abstract; section I (contributions); Table I (mean AMI scores)" }
     - { ref: ORBILU-ADVERSE-2025, title: "An Agentic LLM Framework for Adverse Media Screening in AML Compliance", publisher: University of Luxembourg (ORBilu repository), type: academic, url: "https://orbilu.uni.lu/handle/10993/67145", date: 2025-12-29, access: search-only, locator: "repository record; direct access failed, mirror showed only a truncated abstract" }
   last_reviewed: 2026-10-19
   notes: >-
-    Idea. Adjacent field: the paper targets financial institutions, not professional-services firms. The ORBilu record
-    could not be opened on verification, so the arXiv preprint of the same paper (submitted 29 Dec 2025) was read in full;
-    it confirms the written justifications and open-source implementation. Kept as the only research-grade frontier item on screening.
-    Combined dive use case 07.
-
+    Organization type: a university research group (University of Luxembourg) writing for financial institutions, not a
+    professional-services firm. Idea. Adjacent field: the paper targets financial institutions, not
+    professional-services firms. The ORBilu record could not be opened, so the arXiv preprint of the same paper
+    (submitted 29 Dec 2025) was read in full; it confirms the written justifications and open-source implementation.
+    Kept as the only research-grade frontier item on screening.
 - id: professional-services-acceptance-risk-08
   title: Risk-based acceptance workflow with scoring, routing, audit trail and generated engagement documents
   archetype: professional-services
@@ -434,14 +426,13 @@
   notes: >-
     Firm kind: accounting firms (BDO Canada, BDO Australia) and law firms (Sandberg Phoenix, Loeb & Loeb, Practus).
     Practus LLP and Auxana have used Intapp Conflicts and Walls for two years and have now added Intake (vendor
-    announcement, 1 Sep 2026; no figures). Grade capped at B: the measurements are from non-AI workflow platforms and are
-    vendor-published. BDO Australia implemented its system in 2017; the case study was published in 2024. The Loeb & Loeb
-    study is from 2021, outside the 12-18 month window, kept as the clearest before-and-after account. Intapp claims its
-    Conflicts and Intake products are used by more than 10 of the top 25 accounting firms (vendor claim, product pages).
-    Ladder "automate" refers to the routing and document generation; approvals stay with people. For accounting
-    acceptance that aggregates independence and reputational signals (Kingland, Intapp accounting), see
-    assurance-acceptance-independence-02. Combined dive use case 03.
-
+    announcement, 1 Sep 2026; no figures). Grade capped at B: the measurements are from non-AI workflow platforms and
+    are vendor-published. BDO Australia implemented its system in 2017; the case study was published in 2024. The Loeb &
+    Loeb study is from 2021, outside the 12-18 month window, kept as the clearest before-and-after account. Intapp
+    claims its Conflicts and Intake products are used by more than 10 of the top 25 accounting firms (vendor claim,
+    product pages). Ladder "automate" refers to the routing and document generation; approvals stay with people. For
+    accounting acceptance that aggregates independence and reputational signals (Kingland, Intapp accounting), see
+    assurance-acceptance-independence-02.
 - id: professional-services-acceptance-risk-09
   title: Engagement letters generated from approved intake data and routed for signature
   archetype: professional-services
@@ -480,7 +471,7 @@
     - { ref: INTAPP-ONBOARDAI-2026, title: "AI-driven client onboarding for regulated professional firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/intake/", date: 2026-10-06, access: full, locator: "'Generate engagement documentation automatically'" }
     - { ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/accounting/client-onboarding-continuance/", date: 2026-07-29, access: full, locator: "'Engagement letter generation'" }
     - { ref: INTAPP-LOEB-2021, title: "How Loeb & Loeb transformed new business onboarding with Intapp products", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/loeb-and-loeb/", date: 2021-08-16, access: full, locator: "'Business impact of automated intake'" }
-    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "p. 7" }
+    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "p. 7" }
     - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Ethical risks' (PCRT disclosure point)" }
     - { ref: OSB-FO-2026-208, title: "Formal Opinion No 2026-208: Chatbots and AI Agent Communications", publisher: Oregon State Bar, type: professional-body, url: "https://www.osbar.org/_docs/ethics/2026-208.pdf", date: "2026-02", access: full, locator: "Discussion (engagement-letter example) and section III.D" }
   last_reviewed: 2026-10-19
@@ -489,8 +480,7 @@
     practice-management vendors (Karbon, Canopy, TaxDome, Financial Cents) or Clio on AI-drafted engagement letters. ABA
     Opinion 512 was read from a mirror copy (lawnext.com). See also assurance-acceptance-independence-08 (automated
     engagement letters at CPA firms, survey figure) and -11 (idea: AI-use and client-data consent terms in audit
-    engagement letters). Combined dive use case 11.
-
+    engagement letters).
 - id: professional-services-acceptance-risk-10
   title: AI extraction and categorisation of client outside counsel guidelines and terms, with enforcement at intake, conflicts and time entry
   archetype: professional-services
@@ -535,10 +525,10 @@
   notes: >-
     Firm kind: US law firms (Fredrikson & Byron, Dickinson Wright). The case study is Dec 2024, older than the 12-18
     month window, but it is the only named account of AI in client-terms handling. The product page shows no visible
-    date; its JSON-LD dateModified (2026-08-18) is used.
-    Billing guidelines surfaced at time entry belong to firm-finance (billing). Flagging client guideline and RFP terms
-    against the firm's standard terms during a bid is an idea held in pursuit-proposals. Combined dive use case 08.
-
+    date; its JSON-LD dateModified (2026-08-18) is used. Billing guidelines surfaced at time entry belong to
+    firm-finance (billing). Flagging client guideline and RFP terms against the firm's standard terms during a bid is an
+    idea held in pursuit-proposals. Enforcing client billing rules at time entry is
+    professional-services-billing-collections-03.
 - id: professional-services-acceptance-risk-11
   title: "Idea: structured register of client AI restrictions, consents and disclosures, checked at matter opening"
   archetype: professional-services
@@ -585,29 +575,28 @@
   evidence_grade: D
   sources:
     - { ref: JENNER-SANDPIPER-2026, title: "Partner John Storino to speak at Sandpiper Partners' AI and Outside Counsel Guidelines Roundtable", publisher: Jenner & Block, type: conference, url: "https://www.jenner.com/print/v2/content/103115/partner-john-storino-to-speak-at-sandpiper-partners-ai-and-outside-counsel-guidelines-roundtable.pdf", date: 2026-10-08, access: full, locator: "paragraph 2" }
-    - { ref: LAYER3-OCG-2026, title: "AI Provisions in Outside Counsel Guidelines: A Compliance Guide for Law Firms", publisher: Layer3 Labs, type: vendor, url: "https://www.layer3labs.io/guides/ai-provisions-outside-counsel-guidelines", date: 2026-09-07, access: full, locator: "intro and Clauses 1-5" }
-    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "pp. 7-8" }
+    - { ref: LAYER3-OCG-2026, title: "AI Provisions in Outside Counsel Guidelines: A Compliance Guide for Law Firms (updated 7 Sep 2026)", publisher: Layer3 Labs, type: vendor, url: "https://www.layer3labs.io/guides/ai-provisions-outside-counsel-guidelines", date: 2026-09-07, access: full, locator: "intro and Clauses 1-5" }
+    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "pp. 7-8" }
     - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Contractual risks' and 'Operational and process risks'" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Communication Regarding Generative AI Use, p. 7" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Communication Regarding Generative AI Use, p. 7" }
     - { ref: INTAPP-OPENAI-2026, title: "Intapp collaborates with OpenAI to bring frontier AI to the business of law", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/intapp-celeste-for-openai-for-law/", date: 2026-09-17, access: full, locator: "section 'Entitled access, wherever lawyers work'" }
-    - { ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: International Legal Technology Association, type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "Q3.18, p. 5" }
-    - { ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: 2026-03-13, access: full, locator: "paragraphs on line-item transparency and client guidelines; 'The contradictions in the room'" }
+    - { ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "Q3.18, p. 5" }
+    - { ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: 2026-03-13, access: full, locator: "paragraphs on line-item transparency and client guidelines; 'The contradictions in the room'" }
     - { ref: EDT-CASEPOINT-2026, title: "From AI Hype to AI Accountability: A New Report from Casepoint", publisher: eDiscovery Today (Doug Austin), type: press, url: "https://ediscoverytoday.com/2026/07/23/from-ai-hype-to-ai-accountability-a-new-report-from-casepoint-artificial-intelligence-trends/", date: 2026-07-23, access: full, locator: "highlight 'No Broad Permission Slips'" }
-    - { ref: LITERA-GCRFP-2026, title: "What General Counsel Should Ask About AI in Legal Vendor RFPs", publisher: Litera, type: vendor, url: "https://www.litera.com/node/1585", date: "2026", access: full, locator: "TL;DR and 'Why AI Belongs in Your Legal Vendor RFP'" }
+    - { ref: LITERA-GCRFP-2026, title: "What General Counsel Should Ask About AI in Legal Vendor RFPs", publisher: Litera, type: vendor, url: "https://www.litera.com/node/1585", date: "2026-07-24", access: full, locator: "TL;DR and 'Why AI Belongs in Your Legal Vendor RFP'" }
   last_reviewed: 2026-10-19
   notes: >-
     Idea, graded D: no firm describes a structured client-AI-terms register. Firm kind: law firms and their in-house
     clients (in-house: Starbucks, GSK). The ILTA 2026 survey shows 8% (firms under 50 lawyers) to 38% (350-699 lawyers)
     of firms list "must obtain client approval" in their generative AI policy. The Starbucks item comes from a blog
-    summary of a Casepoint-sponsored report that was not opened. A Litera post relays an Association of Corporate Counsel
-    finding that 59% of in-house counsel do not know whether outside counsel use generative AI on their matters
+    summary of a Casepoint-sponsored report that was not opened. A Litera post relays an Association of Corporate
+    Counsel finding that 59% of in-house counsel do not know whether outside counsel use generative AI on their matters
     (secondhand, original not checked, page date not confirmed); it also urges general counsel to add AI-disclosure
     questions to RFPs. The Sandpiper item is an event description (held 8 Oct 2026). The Layer3 guide is vendor content
-    (published 2026-07-07, updated 2026-09-07); its claim that the ACC publishes sample AI guidelines was not checked. Overlaps professional-services-work-production-25
-    (record AI use per matter and apply client AI terms; graded B there), quality-review (in-house supplier AI rules) and
-    security-ai-security-21 (AI inventory, including shadow AI). Combined dive use case 09 plus routed items from
-    quality-review and pursuit-proposals.
-
+    (published 2026-07-07, updated 2026-09-07); its claim that the ACC publishes sample AI guidelines was not checked.
+    Overlaps professional-services-work-production-25 (record AI use per matter and apply client AI terms; graded B
+    there), quality-review (in-house supplier AI rules) and security-ai-security-21 (AI inventory, including shadow AI).
+    Bid-stage screening of deal-breaker terms is professional-services-pursuit-proposals-19 (idea).
 - id: professional-services-acceptance-risk-12
   title: Ethical-wall and information-barrier enforcement extended to AI assistants and agents
   archetype: professional-services
@@ -650,17 +639,16 @@
   sources:
     - { ref: INTAPP-WALLS-2026, title: "Intapp Walls: information barriers for AI in professional firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/walls/", date: 2026-10-08, access: full, locator: "section 'Define and manage policies in one place' (Nelson Mullins quote); 'Expand AI securely across your firm'" }
     - { ref: INTAPP-HARVEY-2026, title: "Intapp to partner with Harvey bringing ethical wall enforcement directly into the platform", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/intapp-harvey-partner/", date: 2026-02-23, access: full, locator: "paragraphs 2-6" }
-    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "footnote 4 (p. 2) and Confidentiality section (p. 7)" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Duty of Confidentiality, p. 6" }
+    - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "footnote 4 (p. 2) and Confidentiality section (p. 7)" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Duty of Confidentiality, p. 6" }
     - { ref: NYCBAR-OP2024-5-2024, title: "Formal Opinion 2024-5: Ethical Obligations of Lawyers and Law Firms Relating to the Use of Generative Artificial Intelligence in the Practice of Law", publisher: "New York City Bar Association, Professional Ethics Committee", type: professional-body, url: "https://www.nycbar.org/wp-content/uploads/2024/08/20221329_GenerativeAILawPractice.pdf", date: 2024-08-07, access: full, locator: "Confidentiality and Conflicts of Interest rows, pp. 2-4" }
-    - { ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: 2026-10-19, access: full, locator: "paragraph with the ethical-screen figure" }
+    - { ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; page undated, date from the downloadable PDF version created 2026-07-29)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: 2026-07, access: full, locator: "paragraph with the ethical-screen figure" }
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: US law firms (Nelson Mullins; Chaffetz Lindsey for the screen-share context). Graded B on the named
-    Nelson Mullins use of Walls with Copilot; the quote is undated and unmeasured. Intapp claims its walls product is used
-    by more than 70 Am Law 100 firms (vendor claim, product page). The NYC Bar opinion and the Chaffetz Lindsey figure were
-    routed from knowledge-management; the Chaffetz page is undated (retrieval date). Combined dive use case 10.
-
+    Nelson Mullins use of Walls with Copilot; the quote is undated and unmeasured. Intapp claims its walls product is
+    used by more than 70 Am Law 100 firms (vendor claim, product page). The Chaffetz page is undated; its date comes
+    from the downloadable PDF version (created 2026-07-29).
 - id: professional-services-acceptance-risk-13
   title: Continuous monitoring and re-screening of client relationships after acceptance
   archetype: professional-services
@@ -704,13 +692,13 @@
     - { ref: VINCI-AML-2026, title: "AML compliance in 2026: What UK law firms are asking now", publisher: VinciWorks, type: community, url: "https://vinciworks.com/blog/aml-compliance-in-2026-what-uk-law-firms-are-asking-now/", date: 2026-01-28, access: full, locator: "Q&A on technology and false positives" }
   last_reviewed: 2026-10-19
   notes: >-
-    Firm kind: law and accounting firms (vendor-described; no named customer). The 92% and 79% figures are the Solicitors
-    Regulation Authority (SRA) findings as summarised by VinciWorks. On verification the SRA's own report site
-    (publications.sra.org.uk/aml-report-2025, via a mirror) confirmed 935 engagements and 270 non-compliant firms, but the
-    sanctions figures were not in the pages reached, so they remain secondary. They describe current practice at UK law firms, not AI. Measures: share of firms reviewed that screen new
-    clients against sanctions lists, and share that re-check existing clients (source wording). For audit-client
-    independence monitoring, see assurance-acceptance-independence-06. Combined dive use case 04.
-
+    Firm kind: law and accounting firms (vendor-described; no named customer). The 92% and 79% figures are the
+    Solicitors Regulation Authority (SRA) findings as summarised by VinciWorks. The SRA's own report site
+    (publications.sra.org.uk/aml-report-2025, via a mirror) confirmed 935 engagements and 270 non-compliant firms, but
+    the sanctions figures were not in the pages reached, so they remain secondary. They describe current practice at UK
+    law firms, not AI. Measures: share of firms reviewed that screen new clients against sanctions lists, and share that
+    re-check existing clients (source wording). For audit-client independence monitoring, see
+    assurance-acceptance-independence-06.
 - id: professional-services-acceptance-risk-14
   title: In-house legal front door that routes, completes and logs business requests (in-house)
   archetype: professional-services
@@ -757,9 +745,8 @@
   notes: >-
     In-house. This is a client-side request front door, next to firm client acceptance; it may belong to a
     legal-operations extension. B rests on Carvana's senior corporate counsel appearing as a named Harvey design partner
-    and on Legora's own general counsel partnering on the design; no results are published. Legora's release shows
-    13 Oct 2026 beside its headline. Harvey's page has no visible date; its product video's JSON-LD uploadDate
-    (2026-10-13) is used.
-    Coheso, another in-house legal front door, launched Memory on 8 Oct 2026 (held in knowledge-management). Dentsu's
-    in-house team runs workflows for non-compete checks on new customers (professional-services-work-production-18).
-    Combined dive use case 15.
+    and on Legora's own general counsel partnering on the design; no results are published. Legora's release shows 13
+    Oct 2026 beside its headline. Harvey's page has no visible date; its product video's JSON-LD uploadDate (2026-10-13)
+    is used. Coheso, another in-house legal front door, launched Memory on 8 Oct 2026 (held in knowledge-management).
+    Dentsu's in-house team runs workflows for non-compete checks on new customers
+    (professional-services-work-production-18).

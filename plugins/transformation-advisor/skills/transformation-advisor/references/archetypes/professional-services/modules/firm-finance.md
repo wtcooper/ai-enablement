@@ -40,7 +40,7 @@ billing-collections.
 | AI cost and vendor contracts | Licences, tokens and agents; allocate or absorb | data-reporting, coordination-scheduling | Lawyers cannot see spend; seat contracts meet consumption pricing [TRI-METER-2026] |
 | Partner economics | Pay, origination credit, write-off policy, expectations | expert-judgment | Pay keyed to utilisation and hours [TRI-ILTACON-2025] |
 | Capital and ownership | Private equity, MSOs (management services organisations), employee ownership | expert-judgment | Profit paid out yearly; Rule 5.4 and independence limits [HK-AMLAW-2026; NYSSCPA-APS-2025] |
-| Client value reporting (shared) | Show clients what AI saved | client-interaction | Firms "still gathering the data" [TRI-LEGALWEEK-2026]; held in scoping-pricing-09 |
+| Client value reporting (shared) | Show clients what AI saved | client-interaction | Firms "still gathering the data" [TRI-LEGALWEEK-2026]; held in professional-services-scoping-pricing-09 |
 
 ## 3. Where AI is changing the work
 
@@ -198,7 +198,7 @@ capture (`#03`) needs a privacy review; vendor security claims need checking [LA
 LLM sees billing data [LAWSITES-DECODER-2026].
 
 **Insurance.** The Law Society's study reports that professional indemnity insurance rarely covers AI-related
-mistakes [LAWSOC-AGENTIC-2026].
+mistakes [LAWSOC-AGENTICFULL-2026].
 
 **Steps that need human judgment:** rates and discount policy; the target fee mix; whether an AI cost is overhead or
 recovered, and its disclosure; write-down decisions; renewal and budget decisions on AI tools; partner pay and credit
@@ -218,7 +218,7 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
   stand-out lawyers strongly agree their firm has a plan to monetise AI [TRI-STANDOUT-2026]; INSIDE Public Accounting
   says the fastest-moving firms are expanding partner tracks in operations and technology enablement [IPA-2026].
 - **Associates and non-equity partners** carry most extra demand [TRI-LFFI-Q2-2026]; Legalweek panels treated the
-  associate's future as the open question [TRI-LEGALWEEK-CRISIS-2026]. Intake and training: talent-learning.
+  associate's future as the open question [TRI-LEGALWEEK-ASSOC-2026]. Intake and training: talent-learning.
 - **Engineers inside firms**: Kirkland reports 180+ AI engineers and data scientists and an AI infrastructure
   director opening [BLOOMBERGLAW-KIRKLAND-2026].
 - **In-house legal operations** is moving into strategy; the share of GCs naming technology a strategic priority doubled
@@ -253,7 +253,7 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
 - **"We're having record years; why change?"** True: rates and demand are strong [TRI-LFFI-Q2-2026;
   BLOOMBERG-AICOST-2026]. But Q1 2026 output was only average despite near-record inputs [TRI-LFFI-Q1-2026], TRI warns
   firms using AI mainly to justify higher rates are exposed if the AI bubble bursts [TRI-SOTLM-2026], and 32% of
-  corporate clients have reconsidered, or plan to reconsider, providers they see as falling behind [TR-FOP-2026].
+  corporate clients have reconsidered, or plan to reconsider, providers they see as falling behind [TR-FOP-REPORT-2026].
 - **"AI efficiency will cut our revenue."** On hourly work it can: saved time cannot be billed [TXETHICS-OP705-2025].
   That is why the fee mix matters (`#01`): California allows flat fees that build in AI savings [CALBAR-GENAI-2026],
   and McKinsey prices about a quarter of fees on outcomes [BI-MCKINSEY-2025]. Plan where freed hours go (`#09`).
@@ -279,17 +279,17 @@ rules; acceptance of outside capital and its governance; any use of AI data to e
 
 Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; their date and URL are given here.
 
-- **Regulators and professional bodies:** CALBAR-GENAI-2026, TXETHICS-OP705-2025, DCBAR-OP388-2024, ISBA-ELEFANT-2026, AZ-ABS-2025, NYSSCPA-APS-2025, EC-AIACT-2026, LAWSOC-AGENTIC-2026,
+- **Regulators and professional bodies:** CALBAR-GENAI-2026, TXETHICS-OP705-2025, DCBAR-OP388-2024, ISBA-ELEFANT-2026, AZ-ABS-2025, NYSSCPA-APS-2025, EC-AIACT-2026, LAWSOC-AGENTICFULL-2026,
   ICAEW-MIDTIER-2026, ILTA-TECHSURVEY-2026.
 - **Academic:** STANFORD-DEL-2026, NBER-AUTOR-2026, COLUMBIA-BREYDO-2026.
-- **Surveys and market data:** TR-FOP-2026, TR-AIPS-2026, TRI-FOP-LAW-2026, TRI-STANDOUT-2026, TRI-SOTLM-2026, TRI-SOTLM-REPORT-2026, TRI-LFFI-Q1-2026, TRI-LFFI-Q2-2026, TRI-LFFI-COSTS-2026,
+- **Surveys and market data:** TR-FOP-REPORT-2026, TR-AIPS-2026, TRI-FOP-LAW-2026, TRI-STANDOUT-2026, TRI-SOTLM-2026, TRI-SOTLM-REPORT-2026, TRI-LFFI-Q1-2026, TRI-LFFI-Q2-2026, TRI-LFFI-COSTS-2026,
   TRI-LFFI-LEVERAGE-2026, SPI-AI-2026, LITERA-LAWSITES-2026, TRI-LFFI-MIDSIZE-2026* (TRI, Q1 2026 LFFI analysis on Midsize firms, 2026-05-26, https://www.thomsonreuters.com/en/institute/articles/q1-2026-lffi-analysis-midsize-law-firms), TRI-LFFI-ELASTICITY-2026* (TRI, Q4 2025 LFFI analysis,
   2026-03-02, https://www.thomsonreuters.com/en/institute/articles/lffi-q4-2025-analysis-rate-elasticity), TRI-GREATDISCONNECT-2026* (TRI, "The great AI disconnect", 2026-03-18, https://www.thomsonreuters.com/en/institute/articles/great-ai-disconnect), BIGHAND-FINANCE-2026* (BigHand 2026 Annual Law Firm Finance Report landing page, 2026-01-21, https://www.bighand.com/en-us/resources/whitepapers/2026-annual-law-firm-finance-report/),
   DELTEK-CLARITY-2026* (Deltek Clarity A&E study release, 2026-05-12, https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/), TRI-LDOR-2026* (TRI 2026 Legal Department Operations Report page, 2026-09-22, https://www.thomsonreuters.com/en/institute/reports/legal-department-operations-report-2026).
 - **Firms:** BAKERDONELSON-TOKENS-2026, WINSTON-PE-2026, HK-AMLAW-2026, RADIANT-TOKENS-2026.
 - **Vendors:** LAUREL-SIGNAL-2026, LAUREL-WORKSTUDIO-2026, LAUREL-TONKON-2026, LAUREL-WARREN-2026, LEGORA-LAUREL-2026, LEGORA-CBP-2026, ADERANT-AGENTS-2026, NETDOCUMENTS-TOKENS-2026,
   LEXIS-FORRESTER-2025, CLIO-SOLO-2026.
-- **Conference coverage:** TRI-LEGALWEEK-2026, TRI-LEGALWEEK-CRISIS-2026, TRI-METER-2026, TRI-ILTACON-IMPL-2026, TRI-ILTACON-2025, TRI-COOCFO-AI-2025, EDISCOVERYTODAY-ILTACON-2026, TRI-EVENTS-2026*
+- **Conference coverage:** TRI-LEGALWEEK-2026, TRI-LEGALWEEK-ASSOC-2026, TRI-METER-2026, TRI-ILTACON-IMPL-2026, TRI-ILTACON-2025, TRI-COOCFO-AI-2025, EDISCOVERYTODAY-ILTACON-2026, TRI-EVENTS-2026*
   (TRI events page listing the 25th Law Firm COO & CFO Forum, read 2026-10-19, https://www.thomsonreuters.com/en/institute/events).
 - **Press, podcasts and commentary:** BI-MCKINSEY-2025, RESULTSENSE-2026, FORRESTER-BLOG-2025, CTV-DELOITTE-2025, CPAPA-PWC-2026, AT-PWC-2026, AT-CROWE-2026, AT-CROWE-KKR-2026, AT-AINATIVE-2026,
   BLOOMBERG-KPMG-2025, BLOOMBERGTAX-PRICING-2026, BLOOMBERGLAW-KIRKLAND-2026, BLOOMBERGLAW-TEXAS-2026, BLOOMBERGLAW-BILLABLE-2026, BLOOMBERGLAW-GCXAI-2026, AIWEEKLY-KIRKLAND-2026, BESTLAW-WSHB-2026,

@@ -130,7 +130,7 @@ Ask a managing partner, CMO or BD director, key-account partner or (in-house) a 
 **Client pressure (survey perceptions, not outcomes)**
 - 78% of corporate clients call AI-enabled quality gains very important or essential; 6% say most or all providers
   deliver them; 32% have reconsidered, or plan within 12 months to reconsider, firms they feel are falling behind, a third of those with more
-  than $1 million of work at risk (1,816 professionals, Mar-Apr 2026; client subset size not stated) [TR-FOP-2026].
+  than $1 million of work at risk (1,816 professionals, Mar-Apr 2026; client subset size not stated) [TR-FOP-REPORT-2026].
 - In-house (657 respondents, 30 countries, 2025): 59% see no GenAI savings from law firms yet; 24% satisfied; 61%
   plan to push for change [ACCEVERLAW-2025]. Vendor co-published.
 - 54% of corporate legal respondents say firms should use AI on their matters, 29% know it is used, 67% do not know;
@@ -185,7 +185,7 @@ Firm-wide tools can expose information across ethical walls, and duties extend t
 
 **Telling clients and following their instructions.** California: consider disclosing intended AI use and follow
 client limits [CALBAR-GENAI-2026]. ABA 512 as summarised: boilerplate consent is not enough; consult the client
-where AI bears on fees [2CIVILITY-ABA512-2024; FMG-ABA512-2024]. UK: no specific SRA guidance; the Law Society
+where AI bears on fees [CIVILITY-ABA512-2024; FMG-ABA512-2024]. UK: no specific SRA guidance; the Law Society
 says agree use with the client [LAWSOC-GENAI-2026]. Consultants must disclose material AI use [ICMCI-AICODE-2026].
 CPAs: no specific federal or CPA-standard mandate [JOA-DISCLOSE-2025]. Disclosure lowers trust, but being exposed
 later is worse [SCHILKE-OBHDP-2025]: decide how to disclose, not whether.
@@ -224,7 +224,7 @@ information or advice; whether an intake conversation formed a relationship; att
 ## 8. Frontier
 
 - 2025-11-11: a Law Punx contributor predicts clients will consume legal services through AI; firms have to
-  end-2027 to make knowledge AI-accessible [LAWPUNX-2025].
+  end-2027 to make knowledge AI-accessible [AL-LAWPUNX-2025].
 - 2026-02: Oregon opinion on intake chatbots and AI agents [OSB-FO-2026-208]; 2026-02-12: a GC says firms give
   clients nothing from AI [AL-INHOUSE-2026*] (in-house); 2026-02-18: panelists at TRI's chief marketing and BD officer (CMBDO) forum call BD a good starting
   point for agentic AI [TRI-CMBDO-2026].
@@ -236,7 +236,7 @@ information or advice; whether an intake conversation formed a relationship; att
   available with BD playbooks [LAWSITES-CELESTE-2026].
 - 2026-08-06: firm leaders tell TRI that client pressure has reversed: a year earlier some clients asked firms not
   to use AI; now clients ask firms to demonstrate their AI capabilities [TRI-STANDOUT-2026].
-- 2026-09-04: Litera announces firm AI search at ILTACON, routed here as BD intelligence from siloed data
+- 2026-09-04: Litera announces firm AI search at ILTACON, relevant here as BD intelligence from siloed data
   [LAWSITES-ILTACON4-2026*]; 2026-09-10: Parker Poe's client AI lab [PARKERPOE-LAWSITES-2026].
 - 2026-09-14: ILTACON reversibility test; an Introhive speaker describes an agent watching for relationship change
   when a partner leaves [TRI-AGENTIC-2026]. 2026-09-28: corporate legal clients say judgment, transparency and
@@ -255,14 +255,14 @@ information or advice; whether an intake conversation formed a relationship; att
   arrive in the daily workflow (`#08`). Then the data has to be accurate [INTROHIVE-LAWSITES-2026].
 - **"Our clients aren't asking about AI."** Some are not yet: 42% of 144 respondents to a Virginia Society
   of CPAs survey say clients are not yet asking [VSCPA-AI-2026]. But 32% of corporate clients have reconsidered or
-  plan to reconsider providers [TR-FOP-2026], and Harvey-customer firms and in-house teams report very differently
+  plan to reconsider providers [TR-FOP-REPORT-2026], and Harvey-customer firms and in-house teams report very differently
   on whether firms raised it: 61% vs 4% [LEGALIT-RSGI-2026].
 - **"Telling clients about AI will cost trust."** It can [SCHILKE-OBHDP-2025], but being found out later is worse
   and the rules push disclosure of material use [CALBAR-GENAI-2026; ICMCI-AICODE-2026]. Design the wording (`#16`).
 - **"If we show savings, they'll demand discounts."** Leading with concessions trains clients to expect them; lead
   with what changed for the client [TRI-STANDOUT-2026]. Fee options: professional-services-scoping-pricing-10.
 - **"The billable hour isn't going anywhere."** One Legalweek partner sees no client-driven move to alternative fees
-  [TRI-LEGALWEEK-CRISIS-2026*], and demand for Big Law hours rose 4.2% in H1 2026 [BLOOMBERG-AICOST-2026]. But 59%
+  [TRI-LEGALWEEK-ASSOC-2026*], and demand for Big Law hours rose 4.2% in H1 2026 [BLOOMBERG-AICOST-2026]. But 59%
   of in-house teams see no savings and 61% plan to push for change [ACCEVERLAW-2025].
 - **"If we share our tools, clients will do the work themselves."** That fear is real [ABAJ-SHARE-2026], and one
   in-house participant valued building processes a team can run without the firm [PARKERPOE-LAWSITES-2026]. No data
@@ -278,9 +278,9 @@ information or advice; whether an intake conversation formed a relationship; att
 
 Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; their publisher, date and URL are given inline. All sources were opened on 2026-10-19 except three job postings marked search-only in the YAML.
 
-- **Regulators, professional bodies, academic:** CALBAR-GENAI-2026, OSB-FO-2026-208, WSBA-NWSIDEBAR-OSB-2026, FLBAR-OP241-2024, NYCBAR-OP2024-5, FMG-ABA512-2024, 2CIVILITY-ABA512-2024, LOUBAR-2025, LAWSOC-GENAI-2026, LAWSOC-AGENTIC-2026, JOA-DISCLOSE-2025, JOA-ETHICS-2026, ICMCI-AICODE-2026, AIACT-ART50, EC-AIACT-2026, FCC-24-17, SCHILKE-OBHDP-2025, SCHILKE-CONVERSATION-2025, STANFORD-DEL-2026, FANG-ARXIV-2026* (arXiv, Fang et al., v6 2026-06-29, https://arxiv.org/abs/2510.12049).
-- **Surveys:** TR-FOP-2026, TR-AIPS-2026, TRI-STANDOUT-2026, TRI-GREATDISCONNECT-2026, TRI-LDOR-2026, TRI-VISIBILITY-2026, ILTA-TECHSURVEY-2026, ACCEVERLAW-2025, INTUIT-AT-2026, CPAPA-TECHSURVEY-2026, LITERA-LAWSITES-2026, BIGHAND-LF-2026, RAVICAL-ACCOUNTANT-2025, VSCPA-AI-2026.
-- **Conferences and events:** TRI-CMBDO-2026, TRI-LEGALWEEK-2026, TRI-AGENTIC-2026, TRI-COOCFO-AI-2025, TR-NAVIGATING-2026, KARBON-ENGAGE-2026, TRI-LEGALWEEK-CRISIS-2026* (TRI, 2026-03-19, https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-new-existential-crisis), TRI-AIFORUM-2026* (TRI, 2026-09-28, https://www.thomsonreuters.com/en/institute/articles/what-ai-cant-replace), TRI-CMBDO34-2027* (TRI agenda, event 2027-01-27 to 29, https://www.thomsonreuters.com/en/institute/events/the-34th-annual-chief-marketing-business-development-officer-forum/), MCA-EVENTS-2026* (MCA events listing, event 2026-11-06, https://www.mca.org.uk/mca-events).
+- **Regulators, professional bodies, academic:** CALBAR-GENAI-2026, OSB-FO-2026-208, WSBA-NWSIDEBAR-OSB-2026, FLBAR-OP241-2024, NYCBAR-OP2024-5-2024, FMG-ABA512-2024, CIVILITY-ABA512-2024, LOUBAR-2025, LAWSOC-GENAI-2026, LAWSOC-AGENTIC-2026, JOA-DISCLOSE-2025, JOA-ETHICS-2026, ICMCI-AICODE-2026, AIACT-ART50, EC-AIACT-2026, FCC-24-17, SCHILKE-OBHDP-2025, SCHILKE-CONVERSATION-2025, STANFORD-DEL-2026, FANG-ARXIV-2026* (arXiv, Fang et al., v6 2026-06-29, https://arxiv.org/abs/2510.12049).
+- **Surveys:** TR-FOP-REPORT-2026, TR-AIPS-2026, TRI-STANDOUT-2026, TRI-GREATDISCONNECT-2026, TRI-LDOR-2026, TRI-VISIBILITY-2026, ILTA-TECHSURVEY-2026, ACCEVERLAW-2025, INTUIT-AT-2026, CPAPA-TECHSURVEY-2026, LITERA-LAWSITES-2026, BIGHAND-LF-2026, RAVICAL-ACCOUNTANT-2025, VSCPA-AI-2026.
+- **Conferences and events:** TRI-CMBDO-2026, TRI-LEGALWEEK-2026, TRI-AGENTIC-2026, TRI-COOCFO-AI-2025, TR-NAVIGATING-2026, KARBON-ENGAGE-2026, TRI-LEGALWEEK-ASSOC-2026* (TRI, 2026-03-19, https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-new-existential-crisis), TRI-AIFORUM-2026* (TRI, 2026-09-28, https://www.thomsonreuters.com/en/institute/articles/what-ai-cant-replace), TRI-CMBDO34-2027* (TRI agenda, event 2027-01-27 to 29, https://www.thomsonreuters.com/en/institute/events/the-34th-annual-chief-marketing-business-development-officer-forum/), MCA-EVENTS-2026* (MCA events listing, event 2026-11-06, https://www.mca.org.uk/mca-events).
 - **Firms and job postings:** AKIN-MONEYBALL-2026, PARKERPOE-LAWSITES-2026, DEBEVOISE-BLOOMBERG-2026, COOLEY-LAWCOM-2026, WOODARD-2025, BABSTCALLAND-TERMS-2025, LATHAM-INNOVATIONATTY-2026, LATHAM-ADAI-2026, BAKERMCKENZIE-CLIENTAIRISK-2026, WOLFGREENFIELD-2026.
 - **Vendors:** INTROHIVE- (SCHNEIDERDOWNS-2026, KSM-2026, LBMC-2024, GRASSI-2026, TSP-2026, FORRESTER-2024, HOME-2026, PRIVACY-2024, MCP-2026, PARTNER-2026, ACCTXSELL-2026, SAM-2025, LAINGOROURKE-2025); INTAPP- (HOWESPERCIVAL-2025, DEALCLOUD-2026, ACTIVATOR-2026, PRACTUS-2026, WOTTONKEARNEY-2026, FORVISMAZARS-2026, Q3CALL-2026); HARVEY-BD-2026, CERTINIA-VEDA-2026, LEGORA-LAUREL-2026, LEGORA-PORTAL-2026, BRIDGENEXT-AGENTFORCE-2026, CONVENTUS-2026, MCL-SITE-2026, KOJI-LEGAL-2026, HARVEY-REEDSMITH-2026* (Harvey customer story, 2026-05-11, https://www.harvey.ai/customers/reed-smith).
-- **Press, podcasts, community:** INTROHIVE-LAWSITES-2026, LAWSITES-CELESTE-2026, ABAJ-SHARE-2026, LEGALIT-RSGI-2026, BLOOMBERG-AICOST-2026, BLOOMBERGLAW-GCXAI-2026, BLOOMBERGLAW-OTTER-2026, TRI-INTERDEP-2026, AT-DECODE-2026, CUSTOMERTHINK-2026, EDINBURGHNEWS-SHOOSMITHS-2023, SJ-LISTENING-2024, SJ-LFMC-2026, LF-VALUEGAP-2026, LAWPUNX-2025, LPT-FEDER-2026, SOURCE-AI-2026, AL-INHOUSE-2026* (Artificial Lawyer, 2026-02-12, https://www.artificiallawyer.com/2026/02/12/we-get-nothing-from-law-firm-ai-use-client/), LAWSITES-ILTACON4-2026* (LawSites, 2026-09-04, https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html), SOURCE-PRECISION-2026* (Source Global Research, 2026-09-28, https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets), SOURCE-VALUE-2025* (Source podcast page, 2025-09-09, https://sourceglobalresearch.com/podcast/how-to-talk-to-your-clients-about-value).
+- **Press, podcasts, community:** INTROHIVE-LAWSITES-2026, LAWSITES-CELESTE-2026, ABAJ-SHARE-2026, LEGALIT-RSGI-2026, BLOOMBERG-AICOST-2026, BLOOMBERGLAW-GCXAI-2026, BLOOMBERGLAW-OTTER-2026, TRI-INTERDEP-2026, AT-DECODE-2026, CUSTOMERTHINK-2026, EDINBURGHNEWS-SHOOSMITHS-2023, SJ-LISTENING-2024, SJ-LFMC-2026, LF-VALUEGAP-2026, AL-LAWPUNX-2025, LPT-FEDER-2026, SOURCE-AI-2026, AL-INHOUSE-2026* (Artificial Lawyer, 2026-02-12, https://www.artificiallawyer.com/2026/02/12/we-get-nothing-from-law-firm-ai-use-client/), LAWSITES-ILTACON4-2026* (LawSites, 2026-09-04, https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html), SOURCE-PRECISION-2026* (Source Global Research, 2026-09-28, https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets), SOURCE-VALUE-2025* (Source podcast page, 2025-09-09, https://sourceglobalresearch.com/podcast/how-to-talk-to-your-clients-about-value).

@@ -34,9 +34,9 @@ work and security operations live in the assurance, tax and security archetypes;
 | Brief and set up | Load documents or precedent into a controlled workspace; pick the playbook, template or workflow | coordination-scheduling, document-production | Each matter rebuilt from a checklist, a prior deal or memory [HARVEY-ORCH-2026] |
 | Research | Find and synthesise authority or evidence | research-synthesis | Tools invent or misstate sources; multi-jurisdiction questions are weak [STANFORD-MAGESH-2024; VALS-VLAIRRES-2025] |
 | Synthesis of records | Summaries, chronologies, transcript analysis, first-pass translation | research-synthesis | Orientation eats early matter time; language skills scarce [LEGORA-GRANTTHORNTON-2026] |
-| Extraction | Clauses and fields to tables; question answering over a document set | data-reporting | Manual abstracting; multi-clause questions answered incompletely [VALS-VLAIR-2025] |
+| Extraction | Clauses and fields to tables; question answering over a document set | data-reporting | Manual abstracting; multi-clause questions answered incompletely [VALS-VLAIRFEB-2025] |
 | First draft | Clause, memo, brief, agreement, report or deck from precedent and standards | document-production | Repeats past work; quality depends on who drafts [LEGALIT-BMW-2026] |
-| Review against a standard | Playbook review and redlining (marking up the other side's draft); consistency checks | review-assurance | Slow, repetitive, uneven between reviewers; lawyers still beat tools on open-ended redlining [VALS-VLAIR-2025] |
+| Review against a standard | Playbook review and redlining (marking up the other side's draft); consistency checks | review-assurance | Slow, repetitive, uneven between reviewers; lawyers still beat tools on open-ended redlining [VALS-VLAIRFEB-2025] |
 | Verify and release | Check citations, quotes and figures; supervisor sign-off; client disclosure where required | review-assurance, expert-judgment | Fluent output is wrong in ways that look right; 2,202 court decisions on hallucinated content [CHARLOTIN-DB-2026] |
 | Tool approval and re-test | Policy, approved tools, training, evaluation when models change | review-assurance | Coverage varies by firm size; vendor claims hard to test [ILTA-TECHSURVEY-2026] |
 
@@ -138,7 +138,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
 ## 5. Metrics and benchmarks
 
 **Independent task benchmarks (tools tested in isolation, not firm deployments)**
-- Vals, February 2025 [VALS-VLAIR-2025], share of checks passed, lawyer baseline first: document Q&A 70.1% vs
+- Vals, February 2025 [VALS-VLAIRFEB-2025], share of checks passed, lawyer baseline first: document Q&A 70.1% vs
   94.8% best tool; summarisation 50.3% vs 77.2%; transcript analysis 53.7% vs 77.8%; extraction 71.1% vs 75.1%;
   chronology 80.2% vs 80.2%; redlining 79.7% vs 65.0% (59.4% in the report text); EDGAR research 70.1% vs 55.2%.
   Vendors chose which tasks to enter, and Vals discloses a customer relationship with a participant.
@@ -153,7 +153,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
 **Trials with professionals**
 - Patent drafting, 133 lawyers, three months: quality +0.34 SD (standard deviations) at 10 days and +0.38 SD at 90
   days; unaided redlining afterwards +0.32 SD overall, +0.45 SD for seniors, no average gain for juniors.
-  Conducted and funded by Google [NBER-AUTOR-2026].
+  Run and funded by Google, whose model was tested (vendor-published) [NBER-AUTOR-2026].
 - BCG, 758 consultants, GPT-4 (2023): 12.2% more tasks and 25.1% faster inside AI's capability; 19% less likely
   correct on a task outside it [HBS-DELLACQUA-2023].
 
@@ -176,7 +176,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
   rolled it out to lawyers (Legal Geek, citing ILTA) [LEGALIT-LEGALGEEK-2026].
 - Thomson Reuters (1,816 professionals): 34% use unsanctioned AI; 66% with a named AI strategy say AI meets
   expectations vs 22% without; 78% of corporate clients call AI quality gains very important or essential, 6% say
-  most providers deliver them [TR-FOP-2026]. A TR speaker said firms with a strategy are 3.9 times more likely to see ROI and 22%
+  most providers deliver them [TR-FOP-REPORT-2026]. A TR speaker said firms with a strategy are 3.9 times more likely to see ROI and 22%
   have one [TRI-LEGALWEEK-2026].
 - In-house: nearly 60% saw no noticeable savings from outside counsel's AI [BLOOMBERGLAW-ACC-2025]. Consultants:
   50% use GenAI for content creation, 54% use unapproved tools [LEXISNEXIS-FOW-2026]. Professional-services firms:
@@ -222,8 +222,8 @@ an agent may reach or send; disclosure decisions.
   negotiation [MSFT-COPILOTLEGAL-2026]. A former McKinsey consultant says validating AI output is now a big part of
   the junior job [STRATEGYCASE-JUNIOR-2026].
 - **Juniors.** Seniors kept the skill benefit and juniors' unaided outcomes split [NBER-AUTOR-2026]; 48% of
-  professionals fear harm to judgment development [TR-FOP-2026]. Blank Rome and Duane Morris answer with
-  apprenticeship, champions and mentoring [HARVEY-BLANKROME-2026; TRI-ONBOARD-2026]. Allens lawyers say AI
+  professionals fear harm to judgment development [TR-FOP-REPORT-2026]. Blank Rome and Duane Morris answer with
+  apprenticeship, champions and mentoring [HARVEY-BLANKROME-2026; TRI-ONBOARDING-2026]. Allens lawyers say AI
   minimised grunt work and changed mentoring [ALLENS-XEXAM-2026]. A Georgetown writing professor does not see the
   feared skills degradation [TRI-CLARITYWRITE-2026].
 - **New roles.** Legal engineers at vendors (34 Harvey and 54 Legora postings by title on 2026-10-19) and firms
@@ -248,20 +248,20 @@ an agent may reach or send; disclosure decisions.
 - **2026-09-17** OpenAI Astra for Law with Trusted Access for Am Law 200 firms [LAWSITES-OPENAI-2026].
 - **2026-10-15** Microsoft Copilot for Legal generally available, the fourth AI major with a legal vertical in five months [LAWSITES-MSFT-2026]. Harvey Legal Work Orchestration; Harvey forecasts agents taking a further 20% of workflow steps in six months [HARVEY-ORCH-2026]. Legal Geek: the path runs chatbot, workflow, delegated task [LEGALIT-LEGALGEEK-2026].
 - **2026-10-16** Hogan Lovells Cadwalader announces both Legora and Harvey [LEGORA-HLC-2026; HARVEY-HLC-2026].
-- **2026-10-19** Law Society: very limited use of fully autonomous agents so far [LAWSOC-AGENTIC-2026].
+- **2026-10-19** Law Society: very limited use of fully autonomous agents so far [LAWSOC-WHATAGENTIC-2026].
 - **2026-11-11 (scheduled)** TRI webinar on accountability "beyond human in the loop" [TRI-EVENTS-2026]. Signal only.
 
 ## 9. Common objections
 
-- **"The numbers are vendor marketing."** Largely true for firm results. The independent evidence tests tools
-  (Vals, Stanford) or runs trials (NBER, HBS). LegalOn's own CEO says to treat vendor benchmarks sceptically
+- **"The numbers are vendor marketing."** Largely true for firm results. Benchmarks test tools
+  (Vals, Stanford); trials measure people with AI (HBS; NBER, which Google ran and funded). LegalOn's own CEO says to treat vendor benchmarks sceptically
   [ARTLAW-LEGALON-2026]. Answer: test on your own matters before relying (`#23`).
 - **"It hallucinates."** Yes: 17-33% in 2024 research tools [STANFORD-MAGESH-2024]; 2,202 court decisions
   [CHARLOTIN-DB-2026]; Deloitte Australia's partial refund [CTV-DELOITTE-2025]. Answer: grounded tools plus a
   recorded check of every reference (`#01`, `#11`); solicitors stay responsible whether or not AI is used
-  [LAWSOC-AGENTIC-2026].
+  [LAWSOC-WHATAGENTIC-2026].
 - **"It can't do what our lawyers do."** Partly right: lawyers led on redlining and EDGAR research; AI led on Q&A,
-  summarisation and research accuracy [VALS-VLAIR-2025; VALS-VLAIRRES-2025]. Answer: allocate task by task (`#07`).
+  summarisation and research accuracy [VALS-VLAIRFEB-2025; VALS-VLAIRRES-2025]. Answer: allocate task by task (`#07`).
 - **"Clients won't pay for it, or won't let us use it."** Both are happening: some clients mandate AI, some bar it,
   some refuse to pay for AI work [TRI-LEGALWEEK-2026]. Answer: capture client terms at matter opening (`#25`).
 - **"We can't prove savings."** Firms say they are in an anecdotal phase [TRI-LEGALWEEK-2026], and SPI calls hours

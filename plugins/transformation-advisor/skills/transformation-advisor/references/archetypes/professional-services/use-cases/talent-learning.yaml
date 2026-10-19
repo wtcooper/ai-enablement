@@ -1,10 +1,15 @@
 # Use cases: professional-services / talent-learning
 # Recruiting, graduate intake, onboarding and training, the apprenticeship model when AI does entry-level work,
 # performance and incentives, career paths and the leverage pyramid (the ratio of juniors to partners).
-# Merged from three angle deep dives (practice, discourse, governance) and items routed from other modules.
-# Sources checked 2026-10-19 and re-verified 2026-10-19 (wave 3 fact-check). Grades: A 2, B 13, C 7, D 3.
+# Sources checked 2026-10-19. Grades: A 2, B 13, C 7, D 3.
 # Examples come from law firms, accounting and advisory firms, consulting firms, and in-house teams (tagged in notes).
 # Practice-specific procedures (audit, tax, security operations) are cross-referenced by id, not repeated.
+# Similar keys that name different documents: LEXIS-MENTORSHIP-2026 (the report page) and LEXIS-MENTORPR-2026 (the press
+# release); TRI-LEGALWEEK-ASSOC-2026 (TRI's Legalweek article on associates) and TRI-LEGALWEEK-2026 (its article on the
+# firm-client divide, other modules); TRI-CMBDOTALENT-2026 (forum article on talent) and TRI-CMBDO-2026 (forum article on
+# clients, client-development); PWC-AIJB-2026 and PWC-AIJB-PS-2026; LCN-ROPES-2025 and LCN-ROPES-EU-2026.
+# TR-FOP-REPORT-2026 is Thomson Reuters' full Future of Professionals Report 2026 (released 2026-06-22). The tax
+# archetype's TR-FOP-2026 is a different document: TRI's paper on that report for tax and audit firms.
 
 - id: professional-services-talent-learning-01
   title: "Firmwide AI training and certification, with tool access gated on completion"
@@ -19,16 +24,16 @@
   maturity: in-production
   problem: >-
     New lawyers often form AI habits before firm guidance reaches them (TRI-ONBOARDING-2026), and 34% of surveyed
-    professionals use AI tools their organisation has not sanctioned (TR-FOP-2026). Large firms need hundreds of thousands of people to use
-    the tools consistently and safely (ATODAY-PWC-2026; CIODIVE-ACCENTURE-2025). Most AI training teaches what tools
-    do, and rarely when to trust, verify or override their output (TR-FOP-2026).
+    professionals use AI tools their organisation has not sanctioned (TR-FOP-REPORT-2026). Large firms need hundreds of thousands of people to use
+    the tools consistently and safely (AT-PWC-2026; CIODIVE-ACCENTURE-2025). Most AI training teaches what tools
+    do, and rarely when to trust, verify or override their output (TR-FOP-REPORT-2026).
   solution: >-
     Make a training step and a written policy a condition of access to AI tools, and repeat training as tools change.
     Law firms: ILTA reports that requiring training before use is common in large firms and rare in small ones
     (ILTA-TECHSURVEY-2026); Latham & Watkins runs an AI Academy with mandatory two-day in-person associate training
     (NONBILLABLE-RG-2026, second-hand mention); Blank Rome says about 95% of its AI training is built and delivered
     in-house (HARVEY-BLANKROME-2026, vendor customer story). Accounting and consulting networks: PwC says over 330,000
-    people have taken AI training and it is rolling out AI-powered learning platforms (ATODAY-PWC-2026); Accenture's CEO
+    people have taken AI training and it is rolling out AI-powered learning platforms (AT-PWC-2026); Accenture's CEO
     said over 550,000 employees are trained in generative AI fundamentals (CIODIVE-ACCENTURE-2025); Deloitte and
     Anthropic announced a programme to train and certify 15,000 Deloitte professionals on Claude, tied to a Claude
     Center of Excellence (ANTHROPIC-DELOITTE-2025).
@@ -50,7 +55,7 @@
       figure: "330,000+"
       measures: "People who have taken AI training at PwC, as stated; the denominator is not given"
       provenance: self-reported
-      source_ref: ATODAY-PWC-2026
+      source_ref: AT-PWC-2026
     - lever: capacity
       description: "Accenture employees trained in generative AI fundamentals; AI and data professionals"
       figure: "550,000+; 77,000"
@@ -72,7 +77,7 @@
     - "California's State Bar expects managerial and supervisory lawyers to set clear GenAI policies, including for agentic tools, give periodic training, and update both as systems become more autonomous (CALBAR-GENAI-2026, p.7)"
     - "The European Commission page states that AI literacy obligations under the AI Act have applied since 2 February 2025; whether the AI Omnibus changed that duty was not checked (EC-AIACT-2026)"
     - "A secondary summary of ABA Formal Opinion 512 says managerial and supervisory lawyers should establish clear GenAI policies and train subordinate lawyers and staff; the primary text was not reached (ABA-OP512-2024; CIVILITY-ABA512-2024)"
-    - "43% of professionals whose organisation has a strategy-execution gap say people are not equipped or trained to work in the intended way (TR-FOP-2026)"
+    - "43% of professionals whose organisation has a strategy-execution gap say people are not equipped or trained to work in the intended way (TR-FOP-REPORT-2026)"
     - "Karbon's vendor survey of about 600 accounting professionals finds fewer than half of firms invest in AI training and 21% have an AI policy or strategy (KARBON-SOAI-2026)"
     - "Reviewer note: counts of people trained measure activity, not skill or behaviour change; none of the firms publishes an effect measure"
   human_checkpoints:
@@ -86,29 +91,28 @@
     (ANTHROPIC-DELOITTE-2025).
   evidence_grade: B
   sources:
-    - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p.5, Q3.18 table and the paragraph before it"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.7, Duty to Supervise Lawyers and Nonlawyers"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "Timeline paragraph on AI literacy obligations"}
-    - {ref: ABA-OP512-2024, title: "ABA Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: "American Bar Association", type: professional-body, url: "https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf", date: "2024-07-29", access: search-only, locator: "Not opened (403 direct, mirror and archive); see CIVILITY-ABA512-2024"}
+    - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "p.5, Q3.18 table and the paragraph before it"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.7, Duty to Supervise Lawyers and Nonlawyers"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "Timeline paragraph on AI literacy obligations"}
+    - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (read via a LawNext copy; the ABA site blocks downloads)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: search-only, locator: "Not opened (403 direct, mirror and archive); see CIVILITY-ABA512-2024"}
     - {ref: CIVILITY-ABA512-2024, title: "Breaking Down ABA Guidance on Using GenAI in Legal Practice", publisher: "Illinois Supreme Court Commission on Professionalism (2Civility)", type: professional-body, url: "https://www.2civility.org/breaking-down-the-abas-guidance-on-using-generative-ai-in-legal-practice/", date: "2024-08-15", access: full, locator: "paragraphs on supervisory duties and fees"}
     - {ref: TRI-ONBOARDING-2026, title: "Law firms need to redesign new attorney onboarding for the AI era", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/redesigning-new-attorney-onboarding", date: "2026-10-12", access: full, locator: "section 'Associates are already forming AI habits'"}
-    - {ref: ATODAY-PWC-2026, title: "PwC grows 2026 global revenue to $60.2B", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pwc-grows-2026-global-revenue-to-60-2b", date: "2026-10-19", access: full, locator: "paragraph on investment and learning platforms"}
+    - {ref: AT-PWC-2026, title: "PwC grows 2026 global revenue to $60.2B", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pwc-grows-2026-global-revenue-to-60-2b", date: "2026-10-19", access: full, locator: "paragraph on investment and learning platforms"}
     - {ref: CIODIVE-ACCENTURE-2025, title: "Accenture completes 'reinvention' as generative AI revenues roll in", publisher: "CIO Dive", type: press, url: "https://www.ciodive.com/news/accenture-generative-ai-revenue-skills-training-data-modernization/761161/", date: "2025-09-25", access: full, locator: "paragraph on 77,000 AI and data professionals and 550,000 trained"}
     - {ref: DECRYPT-ACCENTURE-2026, title: "Accenture Is Tracking Whether Employees Use AI, and Promotions Are on the Line", publisher: "Decrypt", type: press, url: "https://decrypt.co/358616/accenture-tracking-employees-use-ai-promotions", date: "2026-02-19", access: full, locator: "paragraph 6"}
     - {ref: ANTHROPIC-DELOITTE-2025, title: "Deloitte will make Claude available to 470,000 people across its global network", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/deloitte-anthropic-partnership", date: "2025-10-06", access: full, locator: "paragraphs 1-2"}
     - {ref: NONBILLABLE-RG-2026, title: "Ropes & Gray gives junior lawyers 20% of billable time for AI work", publisher: "Non-Billable", type: press, url: "https://www.nonbillable.co.uk/news/ropes-gray-gives-junior-lawyers-20-of-billable-time-for-ai-work", date: "2026-01-13", access: full, locator: "final two paragraphs (Freshfields; Latham AI Academy)"}
     - {ref: HARVEY-BLANKROME-2026, title: "Developing Lawyers, Not Replacing Them: How Blank Rome Trains the Next Generation With Harvey (customer story)", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/customers/blank-rome", date: "2026-08-06", access: full, locator: "Key highlights; Giving Every Lawyer the Firm's Best Thinking"}
-    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "strategy-execution gap section"}
+    - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "strategy-execution gap section"}
     - {ref: KARBON-SOAI-2026, title: "Karbon State of AI in Accounting 2026 Report shows strategy, training, and governance unlock AI's full potential", publisher: "Karbon", type: vendor, url: "https://karbonhq.com/resources/state-of-ai-accounting-2026/", date: "2026-01-23", access: full, locator: "paragraphs 1-2"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 18, discourse 18 and governance 01; the Blank Rome item was routed from quality-review and
-    work-production. Graded B on named firms with no outcome measure for the training itself; the ILTA figures describe
-    policy content, not completion or error rates. For audit-specific, role-differentiated training gated to tool access
-    see assurance-quality-management-10. An older TRI baseline (Nov 2024) said 18% of law-firm respondents had received
+    Graded B on named firms with no outcome measure for the training itself; the ILTA figures describe policy content,
+    not completion or error rates. For audit-specific, role-differentiated training gated to tool access see
+    assurance-quality-management-10. An older TRI baseline (Nov 2024) said 18% of law-firm respondents had received
     GenAI training (TRI-GENAITALENT-2024, not cited above). In-house: Harvey Academy and the TRI baseline include legal
-    operations and corporate legal teams; no named in-house programme was found.
-
+    operations and corporate legal teams; no named in-house programme was found. The firm-wide rollout gate (policy,
+    approved tools, review rule) is professional-services-work-production-22.
 - id: professional-services-talent-learning-02
   title: "Onboarding rebuilt for new associates: extended orientation, practice-group AI champions and a 'first draft is never final' rule (Duane Morris)"
   archetype: professional-services
@@ -159,14 +163,12 @@
   sources:
     - {ref: TRI-ONBOARDING-2026, title: "Law firms need to redesign new attorney onboarding for the AI era", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/redesigning-new-attorney-onboarding", date: "2026-10-12", access: full, locator: "sections 'Associates are already forming AI habits', 'What a redesigned onboarding program looks like', 'Raising the bar for power skills'"}
     - {ref: TRI-CLOSEGAP-2026, title: "4 ways law firms can close gaps in legal judgment & professional identity", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/closing-legal-judgment-and-professional-identity-gaps", date: "2026-09-10", access: full, locator: "section 'Why associates are facing an identity crisis'"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.7, Duty to Supervise"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.7, Duty to Supervise"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 04, discourse 03 and governance 02 (also routed from quality-review and work-production).
     Single named firm described by its own talent leader; no measurements. The AI-rehearsal tool the same executive
     describes followed an avatar pilot at her prior, unnamed firm; the article does not say where the ChatGPT version
     was built. It is covered in use case 06.
-
 - id: professional-services-talent-learning-03
   title: "Protected billable-credit time and build competitions for junior lawyers to learn AI (Ropes & Gray TrAIlblazers)"
   archetype: professional-services
@@ -232,10 +234,9 @@
     - {ref: HARVEY-BLANKROME-2026, title: "Developing Lawyers, Not Replacing Them: How Blank Rome Trains the Next Generation With Harvey (customer story)", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/customers/blank-rome", date: "2026-08-06", access: full, locator: "Key highlights and Trial Academy paragraph"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 01 and discourse 04; Blank Rome routed from work-production. 'Nearly 400 hours' is stated by
-    LawCareers.Net without a cited source; Legal Cheek's 'roughly 400' is derived from a reported 1,900-hour target.
-    Legal Cheek says Reed Smith has also offered credit for innovation-related projects; no primary source was opened.
-
+    'Nearly 400 hours' is stated by LawCareers.Net without a cited source; Legal Cheek's 'roughly 400' is derived from a
+    reported 1,900-hour target. Legal Cheek says Reed Smith has also offered credit for innovation-related projects; no
+    primary source was opened.
 - id: professional-services-talent-learning-04
   title: "Rotations, seats and secondments that put juniors inside AI, innovation and knowledge teams"
   archetype: professional-services
@@ -298,10 +299,8 @@
     - {ref: TRI-LDEV-2026, title: "Rethinking lawyer development in future AI-enabled law firms", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/lawyer-development-ai-enabled-law-firms", date: "2026-04-16", access: full, locator: "section 'Aligning the talent model to the future business model'"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 02 (Sidley, graded C as an announcement), discourse 09 and governance 05 (A&O Shearman, B);
-    MinterEllison routed from work-production. Graded B on A&O Shearman's operating team. The MinterEllison date is a
-    Legora 'joined' label and is unconfirmed. Sidley recruits up to 19 London trainees a year (Legal Cheek).
-
+    Graded B on A&O Shearman's operating team. The MinterEllison date is a Legora 'joined' label and is unconfirmed.
+    Sidley recruits up to 19 London trainees a year (Legal Cheek).
 - id: professional-services-talent-learning-05
   title: "AI training moved upstream: funded technology master's for incoming trainees, vendor academies and law-school programmes"
   archetype: professional-services
@@ -360,10 +359,8 @@
     - {ref: TRI-TEACHV-2026, title: "The missing skill in legal AI training: How to teach verification and judgment", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/teaching-verification-and-judgment", date: "2026-09-01", access: full, locator: "paragraph on law-school policy variation"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 03 (Freshfields, C) and practice 23 (Harvey and Legora, B). Graded B on Harvey Academy in
-    operation with BPP as a named user; all figures are vendor-published. In-house: Harvey Academy explicitly targets
-    legal operations teams; no named in-house use was found.
-
+    Graded B on Harvey Academy in operation with BPP as a named user; all figures are vendor-published. In-house: Harvey
+    Academy explicitly targets legal operations teams; no named in-house use was found.
 - id: professional-services-talent-learning-06
   title: "AI practice environments that stand in for lost junior repetitions: simulations, personas and pre-review feedback"
   archetype: professional-services
@@ -391,7 +388,7 @@
     prior firm went largely unused; people used the AI version privately (TRI-ONBOARDING-2026). Pre-review feedback: a Brigham Young University accounting
     professor built an AI review tool for Excel that entry-level staff use to find and fix problems before a manager
     reviews (JOA-TRAINING-2026); Ascend, a private-equity-backed accounting-firm platform, describes tools inside the
-    work product that let a junior ask what changed in a return and why the partner changed it (ATODAY-ASCEND-2026).
+    work product that let a junior ask what changed in a return and why the partner changed it (AT-AINATIVE-2026).
   outcomes:
     - lever: quality
       description: "none published"
@@ -404,20 +401,20 @@
       figure: "none published"
       measures: "Anecdote from a platform CEO; no measured time-to-competence"
       provenance: vendor-published
-      source_ref: ATODAY-ASCEND-2026
+      source_ref: AT-AINATIVE-2026
   prerequisites:
     - "A rubric tied to learning objectives, with feedback anchored to specific skills and judgment calls (TRI-SIM-2026)"
     - "Supervisors willing to contribute scenario knowledge, and a defined verification routine to practise against (TRI-SIM-2026; TRI-TEACHV-2026)"
-    - "For live-work feedback, a data environment that captures workflow traces, corrections and client preferences (ATODAY-ASCEND-2026)"
+    - "For live-work feedback, a data environment that captures workflow traces, corrections and client preferences (AT-AINATIVE-2026)"
   risks_and_guardrails:
     - "No published evidence that skills learned in simulation transfer to live matters; a Kennedys leader said the firm has not 'cracked the problem' (LEGALITINSIDER-KENNEDYS-2025)"
     - "Polished AI output can create an illusion of competence and cognitive offloading (TRI-DESIGNL-2026)"
     - "High Rock Accounting's CEO proposes a firm-data assistant for juniors but warns they 'may not be able to review' its advanced output, so firm-level review controls are needed (JOA-TRAINING-2026)"
-    - "The Accounting Today host asks whether people who no longer do returns can be as well informed about clients (ATODAY-ASCEND-2026)"
+    - "The Accounting Today host asks whether people who no longer do returns can be as well informed about clients (AT-AINATIVE-2026)"
   human_checkpoints:
     - "Mentor-mentee coaching using the simulation feedback (TRI-SIM-2026)"
     - "Managers still review after the junior's self-check (JOA-TRAINING-2026)"
-    - "Partners' changes remain the source of truth the assistant explains (ATODAY-ASCEND-2026)"
+    - "Partners' changes remain the source of truth the assistant explains (AT-AINATIVE-2026)"
   role_evolution: >-
     Juniors practise on simulated work and get faster feedback, while supervisors are trained to evaluate AI-assisted
     work (TRI-DESIGNL-2026; TRI-TEACHV-2026). Seyfarth's managing partner suggests AI feedback could
@@ -433,18 +430,16 @@
     - {ref: TRI-TEACHV-2026, title: "The missing skill in legal AI training: How to teach verification and judgment", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/teaching-verification-and-judgment", date: "2026-09-01", access: full, locator: "section 'Solving the junior lawyer learning paradox'"}
     - {ref: TRI-ONBOARDING-2026, title: "Law firms need to redesign new attorney onboarding for the AI era", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/redesigning-new-attorney-onboarding", date: "2026-10-12", access: full, locator: "section 'Raising the bar for power skills'"}
     - {ref: JOA-TRAINING-2026, title: "How will accountants learn new skills when AI does the work?", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/mar/how-will-accountants-learn-new-skills-when-ai-does-the-work/", date: "2026-03-01", access: full, locator: "sections 'AI affects all rungs of the career ladder' and 'Use AI as a training partner'"}
-    - {ref: ATODAY-ASCEND-2026, title: "The 'AI Native' firm (On the Air podcast with Ascend CEO David Wurtzbacher)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "answers on interns, career paths and closed loop (transcript)"}
+    - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO David Wurtzbacher; AI-generated transcript)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "answers on interns, career paths and closed loop (transcript)"}
     - {ref: TRI-DESIGNL-2026, title: "Designing lawyers: Attorney growth in the age of AI-fueled practice", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/designing-lawyers-professional-growth", date: "2026-05-11", access: full, locator: "sections 'A new model for learning' and 'Leadership in an AI age'"}
     - {ref: KARBON-JUNIOR-2026, title: "How do junior accountants learn when AI does the grunt work?", publisher: "Karbon", type: vendor, url: "https://karbonhq.com/resources/training-junior-accountants-ai/", date: "2026-04-30", access: full, locator: "section 'What's actually at stake?'"}
     - {ref: TRI-LEGALWEEK-ASSOC-2026, title: "Move over, 'Death of the billable hour,' Legalweek 2026 has found a new existential crisis", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-new-existential-crisis", date: "2026-03-19", access: full, locator: "section 'Fewer reps, greater weight' (Developing the Future Lawyer panel)"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 05 and 21, discourse 01, 02 and 08, and governance 04. Governance graded the Three Crowns
-    simulator a weak B; it comes from a vendor-authored panel recap and does not show use at scale, so the merged entry
-    is C. Kennedys and Barbri are announcements or plans; the BYU tools are academic; the deposition-simulation vendor
+    The Three Crowns simulator comes from a vendor-authored panel recap and does not show use at scale, so the entry is
+    C. Kennedys and Barbri are announcements or plans; the BYU tools are academic; the deposition-simulation vendor
     (AltaClaro) does not name customers; Ascend is a platform CEO's account (vendor claim). For tax research tutoring
     see tax-research-advisory-08.
-
 - id: professional-services-talent-learning-07
   title: "Entry-level roles redesigned so juniors review and supervise AI output earlier ('seniorised' juniors)"
   archetype: professional-services
@@ -460,7 +455,7 @@
     Entry-level work such as data gathering and processing is being taken over by AI, which removes the work that taught
     execution first and judgment later (BI-PWC-2025). 71% of
     professionals in the TR survey believe early-career roles need structured support from experienced peers to develop
-    the skills AI risks displacing (TR-FOP-2026).
+    the skills AI risks displacing (TR-FOP-REPORT-2026).
   solution: >-
     Shift entry-level job content toward reviewing outputs, validating information, spotting anomalies and client
     contact, with training moved earlier. In accounting, PwC's AI assurance leader said new assurance hires will oversee
@@ -488,7 +483,7 @@
       figure: "71% say structured support needed; 48% fear harm to independent judgment development"
       measures: "Share of 1,816 surveyed professionals (law, tax, audit, accounting, compliance, risk and trade; private practice and in-house; 62 countries; March-April 2026)"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOP-REPORT-2026
   prerequisites:
     - "AI performing the routine data gathering and processing reliably enough to be supervised (BI-PWC-2025)"
     - "Training that teaches the underlying procedure so juniors can supervise a tool (JOA-TRAINING-2026)"
@@ -515,16 +510,15 @@
     - {ref: KARBON-JUNIOR-2026, title: "How do junior accountants learn when AI does the grunt work?", publisher: "Karbon", type: vendor, url: "https://karbonhq.com/resources/training-junior-accountants-ai/", date: "2026-04-30", access: full, locator: "sections 'What's actually at stake?' and 'Redesigning junior roles around oversight'"}
     - {ref: PWC-AIJB-2026, title: "2026 AI Jobs Barometer: Two futures for jobs in an AI era", publisher: "PwC", type: firm, url: "https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html", date: "2026-06-15", access: full, locator: "sections 'AI transforms entry level work' and 'Next steps for business leaders'"}
     - {ref: PWC-AIJB-PS-2026, title: "2026 Global AI Jobs Barometer: Professional Services sector report", publisher: "PwC", type: firm, url: "https://www.pwc.com/gx/en/issues/artificial-intelligence/job-barometer/2026/pwc-aijb-2026-professional-services-report.pdf", date: "2026-06-17", access: full, locator: "key findings page"}
-    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "Key findings 07; 'A generation of disrupted development'"}
+    - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "Key findings 07; 'A generation of disrupted development'"}
     - {ref: VAULT-PYRAMID-2026, title: "The Compressed Pyramid: What AI Means for the Associate Career Ladder", publisher: "Vault", type: press, url: "https://legacy.vault.com/blogs/vaults-law-blog-legal-careers-and-industry-news/the-compressed-pyramid-what-ai-means-for-the-associate-career-ladder", date: "2026-08-11", access: full, locator: "section 'Why This Is a Training Problem'"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 06, discourse 06 and governance 11. For the audit-specific version (supervision and
-    early-career development in assurance engagements) see assurance-quality-management-25; for tax preparation shifting
-    to AI with staff reviewing see tax-compliance-corporate-05; for a security-team apprenticeship idea see
-    security-governance-risk-21. PwC's job-ad figures come from a firm with a stake in the narrative; the TR survey comes
-    from a company that sells AI products. In-house: the TR sample includes corporate and government departments.
-
+    For the audit-specific version (supervision and early-career development in assurance engagements) see
+    assurance-quality-management-25; for tax preparation shifting to AI with staff reviewing see
+    tax-compliance-corporate-05; for a security-team apprenticeship idea see security-governance-risk-21. PwC's job-ad
+    figures come from a firm with a stake in the narrative; the TR survey comes from a company that sells AI products.
+    In-house: the TR sample includes corporate and government departments.
 - id: professional-services-talent-learning-08
   title: "Graduate and associate programmes rebuilt around earlier judgment and explicit human ('power') skills"
   archetype: professional-services
@@ -581,10 +575,8 @@
     - {ref: MCA-SURVEY-2026, title: "MCA Member Survey 2026", publisher: "Management Consultancies Association", type: professional-body, url: "https://www.mca.org.uk/reports/mca-member-survey-2026", date: "2026-01-20", access: full, locator: "landing page foreword"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 07 and 14. The firm statements are answers to a City AM questionnaire; Deloitte and EY gave
-    quotes only. The Bloomberg Law column, read in full on its own site, names the two law firms as Winston Taylor and
-    Sheppard (current firm names).
-
+    The firm statements are answers to a City AM questionnaire; Deloitte and EY gave quotes only. The Bloomberg Law
+    column, read in full on its own site, names the two law firms as Winston Taylor and Sheppard (current firm names).
 - id: professional-services-talent-learning-09
   title: "Teach and check verification and independent reasoning explicitly (curriculum, checklists, challenge exercises)"
   archetype: professional-services
@@ -598,7 +590,7 @@
   maturity: emerging
   problem: >-
     Most AI training teaches what the tools do, not when to trust, verify or override them, yet professionals are held
-    accountable for AI-assisted work (TR-FOP-2026). Surveyed UK lawyers see junior gaps in deep legal reasoning and in
+    accountable for AI-assisted work (TR-FOP-REPORT-2026). Surveyed UK lawyers see junior gaps in deep legal reasoning and in
     verification skills (LEXIS-MENTORSHIP-2026). When AI drafts arrive early and look complete, teams can accept the
     framing without examining what was omitted (TRI-DESIGNJUDG-2026).
   solution: >-
@@ -628,7 +620,7 @@
       figure: "43%"
       measures: "Share of professionals experiencing a strategy-execution gap giving that reason (TR 2026 survey of 1,816)"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOP-REPORT-2026
   prerequisites:
     - "Supervisors trained to evaluate AI-assisted work (TRI-TEACHV-2026)"
     - "Access to authoritative sources for checking, and reviewer time to question juniors on reasoning (ICAEW-WORRY-2026)"
@@ -647,7 +639,7 @@
     taught, such as source discipline and pattern recognition, and teach it another way (LEXIS-SYMPOSIUM-2026).
   evidence_grade: C
   sources:
-    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "Recommendations section, strategy-execution gap"}
+    - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "Recommendations section, strategy-execution gap"}
     - {ref: LEXIS-MENTORSHIP-2026, title: "The mentorship gap (LexisNexis survey of 873 UK legal professionals, January 2026)", publisher: "LexisNexis UK", type: survey, url: "https://www.lexisnexis.co.uk/insights/the-mentorship-gap/index.html", date: "2026-02", access: full, locator: "survey headline figures"}
     - {ref: LCN-LEXIS-2026, title: "New survey highlights shifts in junior lawyer learning as AI use grows", publisher: "LawCareers.Net", type: press, url: "https://www.lawcareers.net/Explore/News/New-survey-highlights-shifts-in-junior-lawyer-learning-as-AI-use-grows-11022026", date: "2026-02-11", access: full, locator: "paragraphs 1-4"}
     - {ref: TRI-LDEV-2026, title: "Rethinking lawyer development in future AI-enabled law firms", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/lawyer-development-ai-enabled-law-firms", date: "2026-04-16", access: full, locator: "section 'Aligning the talent model to the future business model'"}
@@ -657,15 +649,13 @@
     - {ref: TRI-COGDEBT-2025, title: "As AI usage accelerates, companies need to avoid cognitive debt & decay among their talent", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/avoiding-cognitive-debt-agency-decay", date: "2025-10-15", access: full, locator: "section 'Pairing human/AI intelligence'"}
     - {ref: TRI-STANDARDS-2026, title: "Between accountability and chaos: Setting the AI standards that professionals demand", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/between-accountability-and-chaos", date: "2026-10-12", access: full, locator: "sections on the professional competency and judgment validation standards; 'document what you challenged and why'"}
     - {ref: LEXIS-SYMPOSIUM-2026, title: "Lawyering in the Age of AI: Preparing the Next Generation for Practice (LexisNexis AI Symposium panel recap)", publisher: "LexisNexis Legal & Professional", type: vendor, url: "https://www.lexisnexis.com/community/amp-insights/82/lawyering-in-the-age-of-ai-preparing-the-next-generation-for-practice", date: "2026-06-02", access: full, locator: "section 'AI can accelerate growth, but not without cost'"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.4, Duties of Competence and Diligence"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.4, Duties of Competence and Diligence"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from discourse 05 (C) and 19 (idea), practice 24 (idea) and governance 03 (C). Graded C: named firms state
-    goals or single practices, and the survey is vendor-commissioned (LexisNexis sells legal AI); the challenge exercises
-    and AI-off days are ideas with no firm reported using them. For tax, unaided-competence checks inside a gated rollout
-    are in tax-compliance-corporate-21. In-house: the LexisNexis survey quotes in-house lawyers, including a deputy
-    general counsel at Colt Technology Services.
-
+    Graded C: named firms state goals or single practices, and the survey is vendor-commissioned (LexisNexis sells legal
+    AI); the challenge exercises and AI-off days are ideas with no firm reported using them. For tax, unaided-competence
+    checks inside a gated rollout are in tax-compliance-corporate-21. In-house: the LexisNexis survey quotes in-house
+    lawyers, including a deputy general counsel at Colt Technology Services.
 - id: professional-services-talent-learning-10
   title: "Junior AI-use disclosure and second-level review by the supervisor"
   archetype: professional-services
@@ -686,7 +676,7 @@
     and give supervisors the basis for an effective second-level review. DWF (UK law firm) sets these steps out in a
     published guide for trainees and junior solicitors following the SRA warning notice of 17 August 2026
     (DWF-SRA-2026). Bars and regulators place responsibility on supervisors and firms as well as the junior
-    (CALBAR-GENAI-2026; DCBAR-OP388-2024; TXBAR-OP705-2025).
+    (CALBAR-GENAI-2026; DCBAR-OP388-2024; TXETHICS-OP705-2025).
   outcomes:
     - lever: risk
       description: "Reports of AI misuse received by the solicitors' regulator"
@@ -712,7 +702,7 @@
   risks_and_guardrails:
     - "Managerial and supervisory lawyers must make reasonable efforts to ensure subordinates comply; a subordinate must exercise independent professional judgment on AI use (CALBAR-GENAI-2026, p.7)"
     - "Under D.C. Rules 5.1 and 5.3 a lawyer should take reasonable measures so that a supervised lawyer's or nonlawyer's GenAI use conforms to the rules (DCBAR-OP388-2024, section C)"
-    - "Lawyers are responsible for work product regardless of who or what did the original research and drafting (TXBAR-OP705-2025)"
+    - "Lawyers are responsible for work product regardless of who or what did the original research and drafting (TXETHICS-OP705-2025)"
     - "DWF's guide says responsibility for erroneous work falls on trainees, solicitors, supervising partners and the firm (DWF-SRA-2026)"
     - "Reported incidents: a Pinsent Masons junior's AI-assisted research cited a non-existent insolvency rule; Sullivan & Cromwell apologised to a New York court for AI-hallucinated citations (LEGALCHEEK-REDDIT-2026, not verified at source)"
   human_checkpoints:
@@ -726,18 +716,18 @@
   sources:
     - {ref: DWF-SRA-2026, title: "Prompt, review, repeat: A guide to AI for trainees and junior solicitors", publisher: "DWF Group", type: firm, url: "https://dwfgroup.com/en/news-and-insights/insights/2026/8/prompt-review-repeat-a-guide-to-ai-for-trainees-and-junior-solicitors", date: "2026-08-21", access: full, locator: "sections 'The SRA's warning notice', 'Hallucinations', 'Key steps for trainees and junior lawyers'"}
     - {ref: SRA-WARNING-2026, title: "SRA warning notice on the use of AI (issued 17 August 2026)", publisher: "Solicitors Regulation Authority", type: regulator, url: "https://www.sra.org.uk", date: "2026-08-17", access: search-only, locator: "Primary text not reached (Cloudflare challenge); seen only through the DWF article"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.7 Duty to Supervise; p.9 Candor to the Tribunal"}
-    - {ref: DCBAR-OP388-2024, title: "Ethics Opinion 388: Attorneys' Use of Generative Artificial Intelligence in Client Matters", publisher: "District of Columbia Bar", type: professional-body, url: "https://www.dcbar.org/for-lawyers/legal-ethics/ethics-opinions-210-present/ethics-opinion-388", date: "2024-04", access: full, locator: "section C"}
-    - {ref: TXBAR-OP705-2025, title: "Opinion 705: lawyer's use of generative artificial intelligence", publisher: "Professional Ethics Committee for the State Bar of Texas", type: professional-body, url: "https://www.legalethicstexas.com/resources/opinions/opinion-705/", date: "2025-02", access: full, locator: "section 'Oversight/Supervision'"}
-    - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p.5, Q3.18 table"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.7 Duty to Supervise; p.9 Candor to the Tribunal"}
+    - {ref: DCBAR-OP388-2024, title: "Ethics Opinion 388 (generative AI in client matters)", publisher: "District of Columbia Bar", type: professional-body, url: "https://www.dcbar.org/for-lawyers/legal-ethics/ethics-opinions-210-present/ethics-opinion-388", date: "2024-04", access: full, locator: "section C"}
+    - {ref: TXETHICS-OP705-2025, title: "Opinion 705 (generative AI in the practice of law)", publisher: "Professional Ethics Committee for the State Bar of Texas", type: professional-body, url: "https://www.legalethicstexas.com/resources/opinions/opinion-705/", date: "2025-02", access: full, locator: "section 'Oversight/Supervision'"}
+    - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "p.5, Q3.18 table"}
     - {ref: TRI-TEACHV-2026, title: "The missing skill in legal AI training: How to teach verification and judgment", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/teaching-verification-and-judgment", date: "2026-09-01", access: full, locator: "section 'Solving the junior lawyer learning paradox'"}
     - {ref: LEGALCHEEK-REDDIT-2026, title: "Junior lawyers split: Is AI 'eating' their jobs, or just an above-average paralegal?", publisher: "Legal Cheek (reporting an r/biglaw thread)", type: press, url: "https://www.legalcheek.com/2026/07/junior-lawyers-divided-over-whether-ai-is-eating-their-jobs-or-just-cutting-the-boring-bits/amp/", date: "2026-07-08", access: full, locator: "paragraphs 2-4"}
   last_reviewed: "2026-10-19"
   notes: >-
-    From governance 13. Graded C: one firm's published guidance plus regulator and bar text, with no measured effect of
-    the protocol. The SRA figures are second-hand through a law-firm article. The deliverable-level review process
-    belongs to the professional-services quality-review module; this entry covers the junior-supervisor learning loop.
-
+    Graded C: one firm's published guidance plus regulator and bar text, with no measured effect of the protocol. The
+    SRA figures are second-hand through a law-firm article. The deliverable-level review process belongs to the
+    professional-services quality-review module; this entry covers the junior-supervisor learning loop. Treating
+    juniors' and contractors' work as unverified input is professional-services-quality-review-15.
 - id: professional-services-talent-learning-11
   title: "Measuring whether juniors keep building expertise under AI assistance (randomised trial with a later no-AI test)"
   archetype: professional-services
@@ -785,17 +775,15 @@
     (NBER-AUTOR-2026).
   evidence_grade: A
   sources:
-    - {ref: NBER-AUTOR-2026, title: "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (NBER Working Paper 35720)", publisher: "National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)", type: academic, url: "https://www.nber.org/papers/w35720", date: "2026-09", access: full, locator: "Abstract; Acknowledgements and Disclosures (full PDF returned 403)"}
+    - {ref: NBER-AUTOR-2026, title: "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (NBER Working Paper 35720)", publisher: "National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)", type: academic, url: "https://www.nber.org/papers/w35720", date: "2026-09-03", access: full, locator: "Abstract; Acknowledgements and Disclosures (full PDF returned 403)"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 22, discourse 14 and governance 06; also routed from quality-review, work-production,
-    knowledge-management, scoping-pricing and firm-finance. Grade A rests on a pre-registered trial with measured
-    outcomes. Provenance is set to vendor-published because the discourse angle read the disclosures (Google conducted
-    and funded it); the practice and governance angles had marked it independent. Only the abstract and disclosures
-    were read; p-values were garbled in two of three mirrors and are omitted. The firms are unnamed, and patent drafting
-    is practice-specific, so treat the result as a signal for junior development, not a general effect size. Paper dated
-    September 2026, revised October 2026.
-
+    Grade A rests on a pre-registered trial with measured outcomes. Provenance is vendor-published: run and funded by
+    Google, whose model was tested; NBER working paper. Only the abstract and disclosures were read; p-values were
+    garbled in two of three mirrors and are omitted. The firms are unnamed, and patent drafting is practice-specific, so
+    treat the result as a signal for junior development, not a general effect size. Paper dated September 2026, revised
+    October 2026. The same trial's drafting-quality results are professional-services-work-production-06; capturing
+    senior judgment for less experienced staff is professional-services-knowledge-management-19.
 - id: professional-services-talent-learning-12
   title: "Skill-aware task allocation: use AI where juniors gain, and teach where it fails (jagged-frontier evidence)"
   archetype: professional-services
@@ -853,14 +841,14 @@
     - {ref: HBS-DELLACQUA-2023, title: "Navigating the Jagged Technological Frontier (HBS Working Paper 24-013)", publisher: "Harvard Business School with Boston Consulting Group", type: academic, url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700", date: "2023-09", access: full, locator: "Abstract"}
     - {ref: BCG-JAGGED-2023, title: "How People Create and Destroy Value with Gen AI", publisher: "Boston Consulting Group", type: firm, url: "https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai", date: "2023-09-21", access: full, locator: "paragraph beginning 'The lower the individual's baseline proficiency'"}
     - {ref: UMN-CHOI-2024, title: "Lawyering in the Age of Artificial Intelligence, 109 Minn. L. Rev. 147", publisher: "University of Minnesota Law Review (Choi, Monahan, Schwarcz)", type: academic, url: "https://scholarship.law.umn.edu/minnlrev/vol109/iss1/3", date: "2024-11", access: full, locator: "Abstract"}
-    - {ref: NBER-AUTOR-2026, title: "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (NBER Working Paper 35720)", publisher: "National Bureau of Economic Research", type: academic, url: "https://www.nber.org/papers/w35720", date: "2026-09", access: full, locator: "Abstract"}
+    - {ref: NBER-AUTOR-2026, title: "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (NBER Working Paper 35720)", publisher: "National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)", type: academic, url: "https://www.nber.org/papers/w35720", date: "2026-09-03", access: full, locator: "Abstract"}
   last_reviewed: "2026-10-19"
   notes: >-
-    From governance 07, which graded it B. Regraded C here: the experiments measure task performance under AI, not a
-    training or allocation practice, and no firm is named as allocating tasks this way. The 2023-2024 studies are
-    outside the 18-month window and serve as foundations. BCG's own 43% figure is labelled self-reported here because
-    BCG took part in the experiment (the governance angle had labelled it vendor-published).
-
+    Graded C: the experiments measure task performance under AI, not a training or allocation practice, and no firm is
+    named as allocating tasks this way. The 2023-2024 studies are outside the 18-month window and serve as foundations.
+    BCG's own 43% figure is labelled self-reported here because BCG took part in the experiment. Staffing one
+    professional with AI instead of a pair is professional-services-staffing-resourcing-15. NBER-AUTOR-2026 provenance:
+    vendor-published (run and funded by Google, whose model was tested; NBER working paper).
 - id: professional-services-talent-learning-13
   title: "Recruit and assess for judgment, learning agility and working with AI, not credentials or tool lists"
   archetype: professional-services
@@ -907,7 +895,7 @@
     Candidates are expected to treat the AI like a junior team member and explain their reasoning
     (GUARDIAN-MCKINSEY-2026). The talent pool may widen beyond high-GPA accounting graduates to candidates with
     problem-solving histories (TRI-TAAP2030-2026). Ascend's CEO says firms will want curious, hardworking 'sponges'
-    (ATODAY-ASCEND-2026).
+    (AT-AINATIVE-2026).
   evidence_grade: B
   sources:
     - {ref: TRI-LDEV-2026, title: "Rethinking lawyer development in future AI-enabled law firms", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/lawyer-development-ai-enabled-law-firms", date: "2026-04-16", access: full, locator: "section 'Aligning the talent model to the future business model'"}
@@ -916,18 +904,16 @@
     - {ref: ICAEW-JUNIOR-2026, title: "Why we still need junior accountants in the age of AI, and how their roles might change", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/apr-2026/why-we-still-need-junior-accountants-and-how-their-role-might-change", date: "2026-04-02", access: full, locator: "section 'Appetite to learn is becoming more important'"}
     - {ref: TRI-TAAP2030-2026, title: "The tax, accounting & audit firm of 2030: Building the people of tomorrow's tax firm", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/tax-audit-accounting-firm-of-2030-building-people-for-tomorrow", date: "2026-10-16", access: full, locator: "section 'Firms have to hire for figure-it-out ability'"}
     - {ref: TRI-ONBOARDING-2026, title: "Law firms need to redesign new attorney onboarding for the AI era", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/redesigning-new-attorney-onboarding", date: "2026-10-12", access: full, locator: "section 'Raising the bar for power skills'"}
-    - {ref: ATODAY-ASCEND-2026, title: "The 'AI Native' firm (On the Air podcast with Ascend CEO David Wurtzbacher)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "answer on hiring young people"}
+    - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO David Wurtzbacher; AI-generated transcript)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "answer on hiring young people"}
     - {ref: ICO-RECRUIT-2024, title: "ICO intervention into AI recruitment tools leads to better data protection for job seekers", publisher: "Information Commissioner's Office (UK)", type: regulator, url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers/", date: "2024-11-06", access: full, locator: "section 'About the audits'"}
-    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "NYC Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "list of high-risk use cases"}
+    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "New York City Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "list of high-risk use cases"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 12 (McKinsey, C) and 13 (Fredrikson, B), discourse 11 and governance 12. Graded B on one named
-    firm's stated recruiting priority, with no outcome data; the McKinsey item is second-hand and the interview-design
-    advice is a consultant's idea. Search-only, not used: a December 2025 report calling the McKinsey test a pilot for
-    Business Analyst candidates, and a headline in The Lawyer saying A&O Shearman tests graduates on writing accurate
-    prompts.
-
+    Graded B on one named firm's stated recruiting priority, with no outcome data; the McKinsey item is second-hand and
+    the interview-design advice is a consultant's idea. Search-only, not used: a December 2025 report calling the
+    McKinsey test a pilot for Business Analyst candidates, and a headline in The Lawyer saying A&O Shearman tests
+    graduates on writing accurate prompts.
 - id: professional-services-talent-learning-14
   title: "AI-led screening interviews for graduate applicants, run under bias-audit, notice and human-review rules"
   archetype: professional-services
@@ -985,19 +971,18 @@
   sources:
     - {ref: MISHCON-BRIGHT-2025, title: "Mishcon de Reya trials 'Bright Apply' to deliver fairer, more efficient hiring", publisher: "Mishcon de Reya", type: firm, url: "https://www.mishcon.com/news/mishcon-de-reya-trials-bright-apply-to-deliver-fairer-more-efficient-hiring", date: "2025-12-01", access: full, locator: "paragraphs 1-4 and quotes"}
     - {ref: ICO-RECRUIT-2024, title: "ICO intervention into AI recruitment tools leads to better data protection for job seekers", publisher: "Information Commissioner's Office (UK)", type: regulator, url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers/", date: "2024-11-06", access: full, locator: "section 'About the audits'"}
-    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "NYC Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
+    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "New York City Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
     - {ref: ILLINOIS-HB3773-2024, title: "Public Act 103-0804 (HB 3773), amending the Illinois Human Rights Act; effective 1 January 2026", publisher: "Illinois General Assembly", type: regulator, url: "https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0804", date: "2026-01-01", access: full, locator: "section (L) Use of artificial intelligence"}
     - {ref: COLORADO-SB26189-2026, title: "SB26-189 Automated Decision-Making Technology (signed by the Governor 2026-05-14)", publisher: "Colorado General Assembly", type: regulator, url: "https://leg.colorado.gov/bills/sb26-189", date: "2026-05-14", access: full, locator: "Bill Summary; status table"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk list and timeline"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.9"}
-    - {ref: NATLAW-AIHIRING-2026, title: "Patchwork AI Hiring Laws Create Rising Compliance Risks for Employers", publisher: "The National Law Review", type: press, url: "https://natlawreview.com/article/patchwork-ai-hiring-laws-create-rising-compliance-risks-employers", date: "2026-05-12", access: full, locator: "sections on Illinois, Colorado and 'Litigation Signals the Stakes'"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk list and timeline"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.9"}
+    - {ref: NATLAW-AIHIRING-2026, title: "Patchwork AI Hiring Laws Create Rising Compliance Risks for Employers (written before Colorado SB26-189 was signed)", publisher: "The National Law Review", type: press, url: "https://natlawreview.com/article/patchwork-ai-hiring-laws-create-rising-compliance-risks-employers", date: "2026-05-12", access: full, locator: "sections on Illinois, Colorado and 'Litigation Signals the Stakes'"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 11 (Mishcon, B) and governance 18 (regulatory conditions, C). Graded B on a named firm's live
-    trial; no bias or validity data were published. A search summary said Mishcon would not use AI scores for decisions;
-    the page read says the Early Careers team makes all screening decisions. No other professional-services firm was
-    found describing AI applicant screening.
-
+    Graded B on a named firm's live trial; no bias or validity data were published. A search summary said Mishcon would
+    not use AI scores for decisions; the page read says the Early Careers team makes all screening decisions. No other
+    professional-services firm was found describing AI applicant screening. Decision logs, override tracking and
+    disparate-impact testing for staffing tools are professional-services-staffing-resourcing-21 (idea).
 - id: professional-services-talent-learning-15
   title: "AI adoption written into objectives, performance reviews and promotion, tracked through tool data"
   archetype: professional-services
@@ -1059,14 +1044,12 @@
     - {ref: REGISTER-PWC-2026, title: "PwC will say goodbye to staff who aren't convinced about AI", publisher: "The Register", type: press, url: "https://theregister.com/2026/03/19/pwc_ai", date: "2026-03-19", access: full, locator: "paragraphs 1-6"}
     - {ref: TRI-FOPTALENT-2025, title: "Future of Professionals: How to maximize the value of AI investments through talent", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/future-of-professionals-maximizing-ai-investment-through-talent", date: "2025-11-17", access: full, locator: "sections on communicating AI strategy and personal AI goals"}
     - {ref: TRI-CLOSEGAP-2026, title: "4 ways law firms can close gaps in legal judgment & professional identity", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/closing-legal-judgment-and-professional-identity-gaps", date: "2026-09-10", access: full, locator: "section 'Why associates are facing an identity crisis'"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk list: employment and management of workers"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk list: employment and management of workers"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 15, discourse 13 and governance 16. Tracking is in use at KPMG; the rating applies from the
-    2026 review cycle. Accenture's account comes from the Financial Times via Decrypt; the memo was not seen. PwC's
-    statements are CEO interview remarks relayed by trade outlets, not a published policy. The 1.8 times figure is a
-    vendor survey correlation and does not lift the grade.
-
+    Tracking is in use at KPMG; the rating applies from the 2026 review cycle. Accenture's account comes from the
+    Financial Times via Decrypt; the memo was not seen. PwC's statements are CEO interview remarks relayed by trade
+    outlets, not a published policy. The 1.8 times figure is a vendor survey correlation and does not lift the grade.
 - id: professional-services-talent-learning-16
   title: "Firmwide bonus pool tied to staff AI prompt volume (Shoosmiths)"
   archetype: professional-services
@@ -1110,11 +1093,10 @@
     - {ref: LEGALCHEEK-SHOOSMITHS-2025, title: "Shoosmiths drops GBP 1 million into bonus pot after staff hit AI prompt target", publisher: "Legal Cheek", type: press, url: "https://www.legalcheek.com/2025/12/shoosmiths-drops-1-million-into-bonus-pot-after-staff-hit-ai-prompt-target/", date: "2025-12-17", access: full, locator: "paragraphs 1-6"}
   last_reviewed: "2026-10-19"
   notes: >-
-    From practice 16. Grade A because the firm reports a tracked metric against a stated target, but the metric is
-    activity (prompt volume), not a talent, skill or quality outcome. Conflict: the article says the scheme is open to
-    all staff; a search-only summary of the April 2025 announcement said partners and business services directors were
-    excluded. Shoosmiths' own press page returned 404.
-
+    Grade A because the firm reports a tracked metric against a stated target, but the metric is activity (prompt
+    volume), not a talent, skill or quality outcome. Conflict: the article says the scheme is open to all staff; a
+    search-only summary of the April 2025 announcement said partners and business services directors were excluded.
+    Shoosmiths' own press page returned 404.
 - id: professional-services-talent-learning-17
   title: "AI in associate performance evaluation: summaries, feedback analysis and bias checks (AI scoring for promotion or pay is still an idea)"
   archetype: professional-services
@@ -1171,15 +1153,15 @@
     - {ref: NALP-BULLETIN-2026, title: "NALP Foundation: Putting Performance Evaluations Through Their Paces: Problems and Potential", publisher: "NALP Bulletin", type: professional-body, url: "https://nalpbulletin.mydigitalpublication.com/articles/nalp-foundation-putting-performance-evaluations-through-their-paces-problems-and-potential", date: "2026-02", access: full, locator: "section 'Role of AI'"}
     - {ref: ILLINOIS-HB3773-2024, title: "Public Act 103-0804 (HB 3773), amending the Illinois Human Rights Act; effective 1 January 2026", publisher: "Illinois General Assembly", type: regulator, url: "https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0804", date: "2026-01-01", access: full, locator: "section (L)"}
     - {ref: COLORADO-SB26189-2026, title: "SB26-189 Automated Decision-Making Technology (signed by the Governor 2026-05-14)", publisher: "Colorado General Assembly", type: regulator, url: "https://leg.colorado.gov/bills/sb26-189", date: "2026-05-14", access: full, locator: "Bill Summary"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk use-case list"}
-    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "NYC Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.9"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "high-risk use-case list"}
+    - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: "New York City Department of Consumer and Worker Protection", type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07-05", access: full, locator: "first paragraph"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.9"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 17 (C) and governance 19 (idea). Survey evidence only: no firm is named and no error, bias or
-    time-saved data were reported; the NALP Foundation full report is paywalled. The promotion and pay scoring part is
-    an idea kept so interviews can check whether a client firm already does it.
-
+    Survey evidence only: no firm is named and no error, bias or time-saved data were reported; the NALP Foundation full
+    report is paywalled. The promotion and pay scoring part is an idea kept so interviews can check whether a client
+    firm already does it. Decision logs, override tracking and disparate-impact testing for staffing tools are
+    professional-services-staffing-resourcing-21 (idea).
 - id: professional-services-talent-learning-18
   title: "Professional-grade AI access treated as a recruiting and retention lever"
   archetype: professional-services
@@ -1193,10 +1175,10 @@
   maturity: emerging
   problem: >-
     Professionals who see a gap between AI's value to the organisation and to themselves are more likely to consider
-    leaving, and mid-career professionals are the most mobile and hardest to replace (TR-FOP-2026).
+    leaving, and mid-career professionals are the most mobile and hardest to replace (TR-FOP-REPORT-2026).
   solution: >-
     Provide approved professional-grade AI tools, communicate the AI strategy, tie AI value to individual recognition
-    and progression, and discuss AI explicitly in lateral recruiting and retention conversations (TR-FOP-2026;
+    and progression, and discuss AI explicitly in lateral recruiting and retention conversations (TR-FOP-REPORT-2026;
     TRI-HIRINGMYTH-2026).
   outcomes:
     - lever: risk
@@ -1204,42 +1186,40 @@
       figure: "24% considering leaving within two years; USD 232,000 per replacement (TR estimate)"
       measures: "Share of professionals with an AI value gap (more than nine in ten respondents) considering leaving (TR survey, 1,816 professionals); replacement cost is Thomson Reuters' estimate"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOP-REPORT-2026
     - lever: experience
       description: "Access to professional-grade AI as a talent signal"
       figure: "32% versus 12%"
       measures: "Users of 'fiduciary-grade' AI who would turn down a role without it, versus those without access who say the same (TR survey)"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOP-REPORT-2026
     - lever: risk
       description: "Unsanctioned AI use"
       figure: "34%"
       measures: "Share of surveyed professionals using AI tools their organisation has not sanctioned (TR survey)"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOP-REPORT-2026
   prerequisites:
-    - "Sanctioned tools that meet confidentiality and verification needs (TR-FOP-2026)"
-    - "A communicated AI strategy that reaches the desk: 35% of professionals with a named strategy say daily practice does not match it (TR-FOP-2026)"
+    - "Sanctioned tools that meet confidentiality and verification needs (TR-FOP-REPORT-2026)"
+    - "A communicated AI strategy that reaches the desk: 35% of professionals with a named strategy say daily practice does not match it (TR-FOP-REPORT-2026)"
   risks_and_guardrails:
-    - "Thomson Reuters sells AI products and 'fiduciary-grade AI' is its own standard, so the survey has a commercial interest (TR-FOP-2026)"
+    - "Thomson Reuters sells AI products and 'fiduciary-grade AI' is its own standard, so the survey has a commercial interest (TR-FOP-REPORT-2026)"
     - "Reviewer note: stated intentions to leave are not observed departures"
-    - "Shadow AI raises data-exposure and governance risk (TR-FOP-2026)"
+    - "Shadow AI raises data-exposure and governance risk (TR-FOP-REPORT-2026)"
   human_checkpoints:
     - "Recruiters prepared to explain tools, workflow fit, client conversations and career impact (TRI-HIRINGMYTH-2026)"
   role_evolution: >-
     Senior lawyers who decide on AI purchases, not juniors, are the likeliest to leave over inadequate tools: 32% of AI
     decision-makers say they would not accept a job without professional-grade AI, against under 10% of lawyers without
     decision authority (TRI-HIRINGMYTH-2026). TR expects expectations about recognition, progression and pay to shift
-    with AI (TR-FOP-2026).
+    with AI (TR-FOP-REPORT-2026).
   evidence_grade: C
   sources:
-    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "Key findings 03, 05, 06 and 08; 'The professionals most likely to leave'"}
+    - {ref: TR-FOP-REPORT-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "Key findings 03, 05, 06 and 08; 'The professionals most likely to leave'"}
     - {ref: TRI-HIRINGMYTH-2026, title: "The AI hiring myth: Why AI decision-makers are the real law firm recruiting risk", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/ai-hiring-myth", date: "2026-08-17", access: full, locator: "sections 'By the numbers' and 'The impact on hiring'"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from discourse 12 and governance 15. Vendor-published survey only; no named firm. In-house: the TR sample
-    includes corporate and government departments.
-
+    Vendor-published survey only; no named firm. In-house: the TR sample includes corporate and government departments.
 - id: professional-services-talent-learning-19
   title: "Resize and reshape entry-level intake as AI absorbs junior work: smaller classes, more laterals, or a held intake with a redesigned role"
   archetype: professional-services
@@ -1306,7 +1286,7 @@
   prerequisites:
     - "A view on how many juniors are needed to produce future seniors, with scenario planning for intake under uncertainty"
     - "Offshore delivery or sourcing capacity if work moves rather than disappears: the Big Four use hubs in Malaysia, the Philippines and India (CITYAM-BIG4-2025)"
-    - "Lateral integration capacity: CMBDO Forum panellists say firms often fail to integrate laterals (TRI-CMBDO-2026)"
+    - "Lateral integration capacity: CMBDO Forum panellists say firms often fail to integrate laterals (TRI-CMBDOTALENT-2026)"
   risks_and_guardrails:
     - "Attribution is contested: PwC UK named the economy as the single biggest factor in its 1,300 versus 1,500 intake (PEOPLEMATTERS-PWC-2025); ICAEW says it is unclear how much AI contributed (ICAEW-WORRY-2026); High Fliers ties UK graduate cuts to economic uncertainty (HIGHFLIERS-GM-2026)"
     - "Hiring cycles: past peaks were followed by smaller classes three years later, and 2024 was not a recession year, though the columnist argues this decline is driven by AI rather than the economy (BLOOMBERGLAW-HIRING-2026)"
@@ -1338,20 +1318,19 @@
     - {ref: ICAEW-WORRY-2026, title: "AI: are junior accountants worried about roles?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/ai-are-junior-accountants-worried-about-roles", date: "2026-06-10", access: full, locator: "key takeaways and intro"}
     - {ref: ICAEW-EXPECT-2026, title: "Are businesses expecting too much of AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/feb-2026/are-businesses-expecting-too-much-of-ai", date: "2026-02-03", access: full, locator: "opening paragraphs"}
     - {ref: HIGHFLIERS-GM-2026, title: "The Graduate Market in 2026 (report page)", publisher: "High Fliers Research", type: survey, url: "https://highfliers.co.uk/publication-the-graduate-market-report", date: "2026-02-05", access: full, locator: "section 'An Unprecedented Drop in Graduate Jobs'"}
-    - {ref: STANFORD-CANARIES-2026, title: "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence", publisher: "Stanford Digital Economy Lab", type: academic, url: "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/", date: "2026-08-12", access: full, locator: "abstract (revised version)"}
+    - {ref: STANFORD-CANARIES-2026, title: "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (working paper, revised 2026-08-12)", publisher: "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)", type: academic, url: "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/", date: "2026-08-12", access: full, locator: "abstract (revised version)"}
     - {ref: VAULT-PYRAMID-2026, title: "The Compressed Pyramid: What AI Means for the Associate Career Ladder", publisher: "Vault", type: press, url: "https://legacy.vault.com/blogs/vaults-law-blog-legal-careers-and-industry-news/the-compressed-pyramid-what-ai-means-for-the-associate-career-ladder", date: "2026-08-11", access: full, locator: "sections 'The Numbers Behind the Shift' and 'How Firms Are Responding'"}
     - {ref: CONSULTANCYUK-PYRAMID-2026, title: "AI may up-end the consulting pyramid", publisher: "Consultancy.uk", type: press, url: "https://www.consultancy.uk/news/43210/ai-may-up-end-the-consulting-pyramid", date: "2026-02-19", access: full, locator: "sections 'The shape of things to come' and 'The graduate question'"}
-    - {ref: TRI-CMBDO-2026, title: "Chief Marketing & Business Development Officer Forum 2026: Law firms need to play the long game on talent", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/cmbdo-forum-2026-long-game-on-talent", date: "2026-02-06", access: full, locator: "section on lateral integration"}
+    - {ref: TRI-CMBDOTALENT-2026, title: "Chief Marketing & Business Development Officer Forum 2026: Law firms need to play the long game on talent", publisher: "Thomson Reuters Institute", type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/cmbdo-forum-2026-long-game-on-talent", date: "2026-02-06", access: full, locator: "section on lateral integration"}
     - {ref: CPAPA-STOP-2026, title: "Stop Training CPAs for Yesterday's Work", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/09/02/stop-training-cpas-for-yesterdays-work/189548/", date: "2026-09-02", access: full, locator: "paragraph 1"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 08 (B) and 09 (C), discourse 15 (B), 16 (C) and 17 (C), and governance 08 (C), 09 (B) and 10
-    (C). Graded B: named firms and independent hiring datasets, but no measure isolates AI as the cause. Ladder is set to
+    Graded B: named firms and independent hiring datasets, but no measure isolates AI as the cause. Ladder is set to
     automate because the premise is AI taking over entry-level tasks; no AI tool makes the intake decision. City AM's
     headline range ('as much as 29 per cent') does not match its own KPMG figures, which imply about a third. McKinsey's
     12% is North American workforce growth, not graduates. The SurePoint and BCG Attorney Search originals were not
     opened. An anonymous estimate that UK graduate recruitment would fall by about half is secondary and excluded.
-
+    Leverage and partner-income scenarios are professional-services-firm-finance-14 (idea).
 - id: professional-services-talent-learning-20
   title: "Leverage and workforce model redesigned for hybrid human-and-agent teams (pyramid to diamond or pod)"
   archetype: professional-services
@@ -1420,20 +1399,19 @@
     - {ref: LAW360-GA-2026, title: "AI Set To Transform Junior Lawyer Roles, Survey Finds", publisher: "Law360 UK", type: press, url: "https://www.law360.com/articles/2456965/ai-set-to-transform-junior-lawyer-roles-survey-finds", date: "2026-03-24", access: full, locator: "paragraphs 1-12"}
     - {ref: GUARDIAN-MCKINSEY-2026, title: "McKinsey asks graduates to use AI chatbot in recruitment process", publisher: "The Guardian", type: press, url: "https://www.theguardian.com/business/2026/jan/14/mckinsey-graduates-ai-chatbot-recruitment-consultancy", date: "2026-01-14", access: full, locator: "paragraph on agents and staff"}
     - {ref: FORRESTER-BLOG-2025, title: "The Future Of AI Consulting Services Is Disruptively Bright", publisher: "Forrester", type: press, url: "https://www.forrester.com/blogs/the-future-of-ai-consulting-services-is-disruptively-bright", date: "2025-09-15", access: full, locator: "fourth position, 'Rethink their hiring, development, and organizational models'"}
-    - {ref: KANTATA-RMI-2026, title: "New Study Finds Resource Management at a Strategic Crossroads as AI and Outcome-Based Delivery Reshape Professional Services", publisher: "Kantata (study by the Resource Management Institute)", type: survey, url: "https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services", date: "2026-04-09", access: full, locator: "body of the release"}
+    - {ref: KANTATA-RMI-2026, title: "New Study Finds Resource Management at a Strategic Crossroads as AI and Outcome-Based Delivery Reshape Professional Services (Resource Management Institute study commissioned by Kantata)", publisher: "Kantata (study by the Resource Management Institute)", type: survey, url: "https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services", date: "2026-04-09", access: full, locator: "body of the release"}
     - {ref: TRI-LDEV-2026, title: "Rethinking lawyer development in future AI-enabled law firms", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/lawyer-development-ai-enabled-law-firms", date: "2026-04-16", access: full, locator: "sections 'Planning around 3 law firm business models' and 'Aligning the talent model'"}
     - {ref: TRI-HUMANAGENT-2025, title: "How companies are fostering the creation of human & AI agent teams", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/creating-human-ai-agent-teams", date: "2025-10-22", access: full, locator: "whole article"}
-    - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "section 'The Curtain Rises on Enterprise-Scale Adoption'"}
-    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "timeline: employment-related high-risk uses from 2 December 2027"}
+    - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "section 'The Curtain Rises on Enterprise-Scale Adoption'"}
+    - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI (living page; last updated 2026-10-19)", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "timeline: employment-related high-risk uses from 2 December 2027"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 10 and governance 17; Forrester routed from firm-finance. The only entry at the delegate rung:
-    the evidence is firms' expectations and a CEO statement, not a described hybrid team at work, so it stays C and
-    emerging. Law360 defines leverage as the ratio of equity partners to all other lawyers, which looks inverted against
-    the usual definition. A secondary summary reports an AI-native UK consultancy targeting '20 per cent humans, 80 per
-    cent AI agents' (RESULTSENSE-2026 in the landscape); not verified at source. Staffing mechanics belong to the
-    staffing-resourcing area; this entry keeps the workforce-design and manager-skills angle.
-
+    The only entry at the delegate rung: the evidence is firms' expectations and a CEO statement, not a described hybrid
+    team at work, so it stays C and emerging. Law360 defines leverage as the ratio of equity partners to all other
+    lawyers, which looks inverted against the usual definition. A secondary summary reports an AI-native UK consultancy
+    targeting '20 per cent humans, 80 per cent AI agents' (RESULTSENSE-2026); not verified at source. Staffing mechanics
+    belong to the staffing-resourcing area; this entry covers workforce design and manager skills. Agents planned as
+    assignable capacity alongside people are professional-services-staffing-resourcing-16.
 - id: professional-services-talent-learning-21
   title: "Talent strategy of upskilling plus compressed-timeline exits where reskilling is not viable (Accenture)"
   archetype: professional-services
@@ -1481,9 +1459,8 @@
     - {ref: DECRYPT-ACCENTURE-2026, title: "Accenture Is Tracking Whether Employees Use AI, and Promotions Are on the Line", publisher: "Decrypt", type: press, url: "https://decrypt.co/358616/accenture-tracking-employees-use-ai-promotions", date: "2026-02-19", access: full, locator: "paragraphs 5-6"}
   last_reviewed: "2026-10-19"
   notes: >-
-    From practice 19. Figures are expected values from a company announcement; there are no outcome data on retraining
-    success or exits. Search-summary figures on headcount changes are not used.
-
+    Figures are expected values from a company announcement; there are no outcome data on retraining success or exits.
+    Search-summary figures on headcount changes are not used.
 - id: professional-services-talent-learning-22
   title: "Support-function roles re-scoped as AI and hub operations take routine work (Clifford Chance, Baker McKenzie)"
   archetype: professional-services
@@ -1529,10 +1506,9 @@
     - {ref: LEGALCHEEK-BAKERMCK-2026, title: "Baker McKenzie to cut business services roles as AI use grows", publisher: "Legal Cheek", type: press, url: "https://www.legalcheek.com/2026/02/baker-mckenzie-to-cut-business-services-roles-as-ai-use-grows/", date: "2026-02-06", access: full, locator: "paragraphs 1-6"}
   last_reviewed: "2026-10-19"
   notes: >-
-    From practice 20; the support-staff side of the pyramid. Press-reported; the firms did not publish counts.
-    A&O Shearman's reported cuts appear only in search summaries and are excluded. This entry concerns roles and
-    capacity, not headcount targets.
-
+    This entry covers the support-staff side of the pyramid. Press-reported; the firms did not publish counts. A&O
+    Shearman's reported cuts appear only in search summaries and are excluded. This entry concerns roles and capacity,
+    not headcount targets.
 - id: professional-services-talent-learning-23
   title: "Idea: new junior operational roles (AI compliance, legal data analysis, knowledge curation) as an apprenticeship route"
   archetype: professional-services
@@ -1575,11 +1551,9 @@
   sources:
     - {ref: TRI-AILAWPROF-JUNIOR-2026, title: "The AI Law Professor: When AI forces us to rethink how we train junior lawyers", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/ai-law-professor-train-junior-lawyers", date: "2026-02-02", access: full, locator: "section 'The AI-accelerated apprenticeship'"}
     - {ref: TRI-LDEV-2026, title: "Rethinking lawyer development in future AI-enabled law firms", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/lawyer-development-ai-enabled-law-firms", date: "2026-04-16", access: full, locator: "section 'Aligning the talent model to the future business model'"}
-    - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p.5"}
+    - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: "International Legal Technology Association (ILTA)", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-08-14", access: full, locator: "p.5"}
   last_reviewed: "2026-10-19"
-  notes: >-
-    Idea (grade D), from discourse 10: a columnist's prediction, with no firm named as running these rotations.
-
+  notes: "Idea (grade D): a columnist's prediction, with no firm named as running these rotations."
 - id: professional-services-talent-learning-24
   title: "Idea: milestone-based progression, deliberate-mistake exercises and performance measures beyond billable hours"
   archetype: professional-services
@@ -1617,7 +1591,7 @@
   risks_and_guardrails:
     - "A profession built around getting things right is uncomfortable with deliberate mistakes, so learning needs safe, controlled settings, not live client work (TRI-TAAP2030-2026)"
     - "Hourly billing must reflect time actually spent, and general AI subscriptions are overhead (CALBAR-GENAI-2026, p.8)"
-    - "A lawyer billing hourly may not charge for time saved by AI (TXBAR-OP705-2025, quoting D.C. Opinion 388)"
+    - "A lawyer billing hourly may not charge for time saved by AI (TXETHICS-OP705-2025, quoting D.C. Opinion 388)"
     - "The AICPA's 'Profession Ready' research on early-career roles is not expected to report until 2027 (JOA-TRAINING-2026)"
   human_checkpoints:
     - "Debrief questions after meetings and simulations ask what the person noticed, missed and would do differently (TRI-TAAP2030-2026)"
@@ -1635,15 +1609,14 @@
     - {ref: LEXIS-MENTORPR-2026, title: "AI Is Speeding Up Junior Lawyers' Work but Raising Questions About How Judgment Is Learned (press release on The mentorship gap report)", publisher: "LexisNexis Legal & Professional", type: survey, url: "https://www.lexisnexis.com/community/amp-pressroom/ai-is-speeding-up-junior-lawyers-work-but-raising-questions-about-how-judgment-is-learned", date: "2026-02-02", access: full, locator: "paragraph on how success is measured"}
     - {ref: CPAPA-STOP-2026, title: "Stop Training CPAs for Yesterday's Work", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/09/02/stop-training-cpas-for-yesterdays-work/189548/", date: "2026-09-02", access: full, locator: "paragraphs 3-7"}
     - {ref: JOA-TRAINING-2026, title: "How will accountants learn new skills when AI does the work?", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/mar/how-will-accountants-learn-new-skills-when-ai-does-the-work/", date: "2026-03-01", access: full, locator: "sections 'From memorization to conceptual mastery' and 'Upskilling at scale inside firms'"}
-    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.8, Charging for Work Produced by Generative AI"}
-    - {ref: TXBAR-OP705-2025, title: "Opinion 705: lawyer's use of generative artificial intelligence", publisher: "Professional Ethics Committee for the State Bar of Texas", type: professional-body, url: "https://www.legalethicstexas.com/resources/opinions/opinion-705/", date: "2025-02", access: full, locator: "section 'Fees'"}
+    - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct (COPRAC)", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "p.8, Charging for Work Produced by Generative AI"}
+    - {ref: TXETHICS-OP705-2025, title: "Opinion 705 (generative AI in the practice of law)", publisher: "Professional Ethics Committee for the State Bar of Texas", type: professional-body, url: "https://www.legalethicstexas.com/resources/opinions/opinion-705/", date: "2025-02", access: full, locator: "section 'Fees'"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Idea (grade D). Merged from practice 25, discourse 07 and governance 14. The milestone model is attributed to Dr
-    Rachel Anevski of Matters of Management in a consultant's column; no firm has published a milestone-based model or a
-    change to performance metrics with data. The LexisNexis percentages are vendor-published survey results kept as
-    context. LEXIS-MENTORPR-2026 is the press release; LEXIS-MENTORSHIP-2026 is the report page.
-
+    Idea (grade D). The milestone model is attributed to Dr Rachel Anevski of Matters of Management in a consultant's
+    column; no firm has published a milestone-based model or a change to performance metrics with data. The LexisNexis
+    percentages are vendor-published survey results kept as context. LEXIS-MENTORPR-2026 is the press release;
+    LEXIS-MENTORSHIP-2026 is the report page.
 - id: professional-services-talent-learning-25
   title: "Idea: residency-style supervised practice and a funded profession-wide formation system"
   archetype: professional-services
@@ -1685,6 +1658,4 @@
   sources:
     - {ref: TRI-HONING-2026, title: "Honing legal judgment: The AI era requires changes to how lawyers are trained during and after law school", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/honing-legal-judgment-training-lawyers", date: "2026-04-02", access: full, locator: "opening paragraph; Pillar 1"}
   last_reviewed: "2026-10-19"
-  notes: >-
-    Idea (grade D), from discourse 20. Partly a regulatory and legal-education proposal; no firm or regulator has
-    adopted it.
+  notes: "Idea (grade D). Partly a regulatory and legal-education proposal; no firm or regulator has adopted it."

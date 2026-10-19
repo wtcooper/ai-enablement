@@ -130,7 +130,7 @@ on AI effects; note who would know.
 **Client pressure (law and corporate buyers)**
 - 78% of corporate-client respondents call AI-enabled quality gains very important or essential; 6% say most or all
   providers deliver them; 32% have reconsidered or plan to reconsider providers within 12 months (corporate buyers
-  within a survey of 1,816 professionals, Mar-Apr 2026) [TR-FOP-2026].
+  within a survey of 1,816 professionals, Mar-Apr 2026) [TR-FOP-REPORT-2026].
 - ACC-Everlaw (657 in-house legal professionals, 30 countries, 2025): 59% see no GenAI savings from law firms yet; 61%
   plan to push for change in delivery and pricing; 64% expect to rely less on outside counsel [ACCEVERLAW-2025;
   BLOOMBERGLAW-ACC-2025]. Vendor co-published.
@@ -214,7 +214,7 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 - **Resource managers** expect to shift from filling hours to maximising delivery success if outcome pricing grows
   [KANTATA-RMI-2026].
 - **Juniors**: under AFAs work goes to the most efficient resource, which can limit training unless designed for
-  [ILTA-PULSE-2025]; clients resist paying for junior-completed tasks [TRI-LAWYERDEV-2026]. Route to talent-learning.
+  [ILTA-PULSE-2025]; clients resist paying for junior-completed tasks [TRI-LDEV-2026]. Route to talent-learning.
 - **Delivery models**: AI-native firms cast lawyers as reviewers and agent managers [CROSBY-SITE-2026]; TCS adds engineers
   embedded with clients [REUTERS-ITSERVICES-2026].
 
@@ -246,7 +246,7 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
 
 - **"Clients still pay by the hour; why change?"** True for now: rates rose nearly 10% in Q1 2026 [TRI-LFFI-Q1-2026], and
   panellists expect the billable hour to last at least five years [TRI-ILTACON-2025]. But 32% of corporate clients are
-  reconsidering providers [TR-FOP-2026], and TRI warns firms relying on premium pricing without measurable efficiency
+  reconsidering providers [TR-FOP-REPORT-2026], and TRI warns firms relying on premium pricing without measurable efficiency
   gains are most exposed if budgets tighten [TRI-SOTLM-2026]. Stanford's framework treats hybrid pricing as the usual resting point [STANFORD-DEL-2026].
 - **"If AI halves the work, we must halve the fee."** Not necessarily. On hourly matters, yes [ABA-OP512-2024]. On flat or
   value fees, California and Virginia allow the fee to reflect value and skill [CALBAR-GENAI-2026; VSB-LEO1901-2025];
@@ -259,10 +259,10 @@ client AI terms; partner sign-off on every fee proposal and SOW (`#05` and `#02`
   assumed 70-80% gains, and Infosys walked away from uneconomic contracts [REUTERS-ITSERVICES-2026]. Kopka Law says AFAs
   built only to save clients money fail [TRI-KOPKA-2026]. Use phase-based scoping and re-scoping triggers [TRI-ILTACON-2025].
 - **"Hold the price; AI makes our work better."** Client data are not encouraging so far: 6% say most providers deliver AI quality
-  gains [TR-FOP-2026]; nearly 60% of in-house teams see no savings [BLOOMBERGLAW-ACC-2025]. TRI says a premium holds only
+  gains [TR-FOP-REPORT-2026]; nearly 60% of in-house teams see no savings [BLOOMBERGLAW-ACC-2025]. TRI says a premium holds only
   when clients clearly see value [TRI-SOTLM-2026].
 - **"Our people are paid on hours."** Then pricing will not move. Wipfli is changing metrics [BLOOMBERGTAX-PRICING-2026];
-  TR says mismatched billing and performance frameworks undermine AI strategy [TR-FOP-2026].
+  TR says mismatched billing and performance frameworks undermine AI strategy [TR-FOP-REPORT-2026].
 - **"Discounting AI work is the easy answer."** Leading with discounts can train clients to expect them; lead with what
   changed for the client [TRI-STANDOUT-2026].
 - **"Clients contradict themselves."** They do: some demand AI savings, others ban AI without permission
@@ -275,7 +275,7 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys not in th
 - **Regulators, standard-setters, professional bodies:** CALBAR-GENAI-2026, ABA-OP512-2024, TRI-ABA512-2025 (commentary
   on ABA 512), DCBAR-OP388-2024, TXETHICS-OP705-2025, NCBAR-FEO1-2024, VSB-LEO1901-2025, IRS-OPR-2026, AICPA-CODE-2026,
   ILTA-TECHSURVEY-2026, ILTA-PULSE-2025, ICAEW-EXPECT-2026, ABA-LPMRFP-2026.
-- **Academic and surveys:** STANFORD-DEL-2026, TR-FOP-2026, TRI-STANDOUT-2026, SPI-AI-2026, BIGHAND-LF-2026,
+- **Academic and surveys:** STANFORD-DEL-2026, TR-FOP-REPORT-2026, TRI-STANDOUT-2026, SPI-AI-2026, BIGHAND-LF-2026,
   ACCEVERLAW-2025, KANTATA-RMI-2026, FORRESTER-TECHSVCS-2026, TRI-SOTLM-2026, TRI-LFFI-Q1-2026* (Thomson Reuters
   Institute, Q1 2026 LFFI, 2026-05-13, https://www.thomsonreuters.com/en/institute/articles/lffi-q1-2026-strong-inputs-average-output), DELTEK-CLARITY-2026* (Deltek Clarity A&E study release, 2026-05-12,
   https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/),
@@ -289,9 +289,9 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys not in th
   Reuters Institute events page, read 2026-10-19, https://www.thomsonreuters.com/en/institute/events).
 - **Press and commentary:** BI-MCKINSEY-2025, AIWEEKLY-MCK-2026, RESULTSENSE-2026, RESULTSENSE-PWC-2026,
   RESULTSENSE-ACCENTURE-2026, FORRESTER-BLOG-2025, REUTERS-ITSERVICES-2026, BLOOMBERGTAX-PRICING-2026,
-  BLOOMBERGLAW-ACC-2025, BLOOMBERGLAW-TEXAS-2026, BLAW-ROBB-2026, YAHOO-KPMG-2026, ONLYCFO-KPMG-2026, CPAPA-PWC-2026,
+  BLOOMBERGLAW-ACC-2025, BLOOMBERGLAW-TEXAS-2026, BLOOMBERGLAW-BILLABLE-2026, YAHOO-KPMG-2026, ONLYCFO-KPMG-2026, CPAPA-PWC-2026,
   CPAPA-CERTINIA-2026, ACCTODAY-PWC-2026, NEWSTACK-PWC-2026, NONBILLABLE-FALCON-2026, ARTLAW-AUGUST-2026, AL-CLIENT-2026,
   ABAJ-SHARE-2026, CTV-DELOITTE-2025, BNN-DELOITTE-2025, CANBERRATIMES-APSAI-2025, MONDAQ-GGI-2026, LEGALIO-AFA-2025,
   ATL-DEFENSE-2026, TRI-KOPKA-2026, TRI-AFA-2024, TRI-AIBIZ-2025, TRI-ALTPRICING-2025, TRI-CHARGING-2026,
-  TRI-INTERDEP-2026, TRI-LEADFOLLOW-2025, TRI-LAWYERDEV-2026, TRI-PRICINGPROS-2024.
+  TRI-INTERDEP-2026, TRI-LEADFOLLOW-2025, TRI-LDEV-2026, TRI-PRICINGPROS-2024.
 - **Job postings:** MCDERMOTT-JOB-2026, HUSCH-JOB-2026, PILLSBURY-JOB-2026.

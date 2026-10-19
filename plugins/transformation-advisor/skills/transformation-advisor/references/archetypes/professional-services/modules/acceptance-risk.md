@@ -125,7 +125,7 @@ lead. Expect "we don't measure that" on AI effects; note who would know.
 7. **"How do client AI restrictions in guidelines, engagement letters or consents reach the matter team and the tools
    they use? Who confirms a tool is on the client's list?"** Reveals whether `#10` and `#11` are needed and who owns them.
 8. **"Which AI tools are people actually using, compared with the list you approved?"** Reveals shadow use; 34% of
-   professionals use unsanctioned AI [TR-FOP-2026]. Without this, `#11` cannot work.
+   professionals use unsanctioned AI [TR-FOP-REPORT-2026]. Without this, `#11` cannot work.
 9. **"How do your ethical walls apply to AI assistants and agents? Can an assistant see across matters?"** Reveals the
    exposure in `#12`.
 10. **"Do your engagement letters say how you use AI and get consent? Who approves a letter before it goes out?"**
@@ -160,7 +160,7 @@ lead. Expect "we don't measure that" on AI effects; note who would know.
   (350-699) and 34% (over 700) [ILTA-TECHSURVEY-2026].
 - 657 in-house professionals: 61% plan to push for change in how outside counsel deliver and price; 59% see no GenAI
   savings from law firms yet [ACCEVERLAW-2025]. Client pressure behind AI terms, not an acceptance metric.
-- Shadow AI: 34% of professionals use unsanctioned AI [TR-FOP-2026]; 54% of surveyed consultants use tools without
+- Shadow AI: 34% of professionals use unsanctioned AI [TR-FOP-REPORT-2026]; 54% of surveyed consultants use tools without
   approval [LEXISNEXIS-FOW-2026].
 - Chaffetz Lindsey (law): more than 35% of matters carry ethical screens [IMANAGE-CHAFFETZ-2026].
 - Vendor claims: Intapp Conflicts and Intake used by more than 10 of the top 25 accounting firms; Walls by more than 70
@@ -279,7 +279,7 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys not in th
 - **Regulators, standard-setters, professional bodies:** CALBAR-GENAI-2026, ABA-OP512-2024, NYCBAR-OP2024-5-2024,
   OSB-FO-2026-208, IESBA-SNAPSHOT-2026, ACCA-ENGLETTERS-2026, ILTA-TECHSURVEY-2026, PCAOB-QC1000-2025* (PCAOB, QC 1000
   effective-date postponement release, 2025-08).
-- **Surveys:** TR-FOP-2026* (Thomson Reuters, Future of Professionals Report 2026, 2026-07-21), ACCEVERLAW-2025* (ACC and Everlaw,
+- **Surveys:** TR-FOP-REPORT-2026* (Thomson Reuters Institute, Future of Professionals Report 2026, 2026-06-22), ACCEVERLAW-2025* (ACC and Everlaw,
   GenAI survey press release, 2025-10-14), LEXISNEXIS-FOW-2026* (LexisNexis, blog on Future of Work 2026 consulting
   report, 2026-04-16).
 - **Firm and vendor case studies:** INTAPP-BDOCA-2025, INTAPP-SANDBERG-2025, INTAPP-LOEB-2021, INTAPP-BDOAU-2024,

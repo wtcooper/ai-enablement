@@ -1,7 +1,7 @@
 # Delivery management (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/delivery-management.yaml` (16 entries: A 0, B 7,
-C 6, D 3). Ids are shortened here: `#05` means `professional-services-delivery-management-05`; other modules' and
+Sources checked 2026-10-19. Use cases live in `../use-cases/delivery-management.yaml` (15 entries: A 0, B 7,
+C 5, D 3). Ids are shortened here: `#05` means `professional-services-delivery-management-05`; other modules' and
 archetypes' ids are in full. Source keys in brackets are in the YAML or in §10. The public record is thin and mostly
 vendor-published: named deployments come from consulting and implementation firms on PSA platforms (professional
 services automation: the system holding projects, time, resources and billing), plus one consultancy that built its
@@ -97,8 +97,8 @@ one idea (`#16`). No firm reports a delivery step that has stopped existing.
   client stakeholders. Workforce shape: professional-services-talent-learning-20.
 
 **Close-out**
-- Improve: `#15` retrospective and lessons-learned drafting (vendor descriptions). Reuse belongs to
-  knowledge-management.
+- Improve: retrospective and lessons-learned drafting at close-out (vendor descriptions) is held, with its reuse, in
+  professional-services-knowledge-management-15.
 
 ## 4. Interview probes
 
