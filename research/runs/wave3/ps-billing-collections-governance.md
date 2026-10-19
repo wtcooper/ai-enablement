@@ -4,10 +4,10 @@ Archetype: professional-services. Module: billing-collections (time capture to c
 
 ## 1. Summary
 
-- **What the evidence is.** 51 sources were opened and read, plus 1 seen only in a search result (list in section 5; types: 12 vendor, 9 regulator, 9 press, 7 survey, 6 professional-body, 3 conference, 3 academic, 2 standard-setter, 1 firm). The 12 use cases split as 0 grade A, 1 grade B, 7 grade C, 4 grade D. There is no grade A: every outcome figure for AI time capture, billing review or collections is published by the vendor. No error rate, override rate, parallel run or inspection finding for AI-drafted time entries, bill review or collection agents was found.
-- **Hourly billing is bound to actual time, and every bar text read says so.** California, Texas, DC, North Carolina and the Australian regulators' joint statement all say billed time must reflect time actually spent, so time saved by AI cannot be billed under an hourly arrangement (CALBAR-GENAI-2026; TXETHICS-OP705-2025; DCBAR-OP388-2024; NCBAR-FEO1-2024; AUSLEG-AISTATEMENT-2024). ABA Formal Opinion 512 says the same (ABA-BLT-2024; TRI-ABA512-2025). That constraint is why time-capture tools are sold as record-accuracy tools and why the revenue lever is recovered time, not inflated time.
+- **What the evidence is.** 50 sources were opened and read, plus 1 seen only in a search result (list in section 5; types: 11 vendor, 9 regulator, 9 press, 7 survey, 6 professional-body, 3 conference, 3 academic, 2 standard-setter, 1 firm). The 12 use cases split as 0 grade A, 1 grade B, 7 grade C, 4 grade D. There is no grade A: every outcome figure for AI time capture, billing review or collections is published by the vendor. No error rate, override rate, parallel run or inspection finding for AI-drafted time entries, bill review or collection agents was found.
+- **Hourly billing is bound to actual time, and every bar text read says so.** California, Texas, DC, North Carolina and the Australian regulators' joint statement all say billed time must reflect time actually spent, so time saved by AI cannot be billed under an hourly arrangement (CALBAR-GENAI-2026; TXETHICS-OP705-2025; DCBAR-OP388-2024; NCBAR-FEO1-2024; AUSLEG-AISTATEMENT-2024). ABA Formal Opinion 512 says the same, as quoted (TRI-ABA512-2025). Vendor material for time capture frames the gain as recovering time that went unrecorded, not as adding time (LEGORA-LAUREL-2026).
 - **Regulators split on fixed fees.** ABA 512, as quoted, says the same flat fee may be unreasonable if a tool makes the work much quicker; Virginia's LEO 1901 (approved 24 Nov 2025) disagrees; California says flat fees may build in AI savings (TRI-ABA512-2025; VACOURTS-LEO1901-2025; CALBAR-GENAI-2026). Billing staff need the rule of the lawyer's state before an AI-assisted flat fee is invoiced.
-- **Client terms move faster than bar rules.** Zscaler's published guidelines tell firms to note generative AI use in the time entry, not to pass on AI time and cost, and apply fixed reductions for block billing and late invoices (ZSCALER-OCG-2025). At Legalweek 2026 clients asked for line-item AI transparency while others refused to pay for AI-done work (TRI-LEGALWEEK-2026). Gartner's Weston Wicks said more companies are adding such provisions (BLOOMBERGLAW-ACC-2025).
+- **Client terms move faster than bar rules.** Zscaler's published guidelines tell firms to note generative AI use in the time entry, not to pass on AI time and cost, and apply fixed reductions for block billing and late invoices (ZSCALER-OCG-2025). At Legalweek 2026 clients asked for line-item AI transparency while others refused to pay for AI-done work (TRI-LEGALWEEK-2026). Gartner's Weston Wicks said more companies are asking in their outside counsel guidelines for lower-risk tasks to be done by AI and for the time saved to be reflected in billable hours (BLOOMBERGLAW-ACC-2025).
 - **Time capture is the best-evidenced AI use here; the evidence is vendor-sourced.** Laurel customer stories report extra captured time, faster collection cycles and, at one firm, zero billing disputes (LAUREL-TONKON-2026; LAUREL-LERNERS-2026). Governance questions that the stories do not answer: whether captured activity equals time actually spent, and how worker-monitoring and AI Act rules apply (ICO-MONITORING-2026; EU-AIACT-ANNEX3-2024).
 - **The cash end is weakly evidenced.** Wells Fargo data for H1 2026, as reported secondhand, show inventories up 17.7% and collection cycles slowing by 5% (LAWFUEL-WF-2026). The only collections-automation evidence is a startup pitch (ABAJ-TECHSHOW-2026).
 - **Standards and regulators are silent or unreachable in places.** The LEDES and UTBMS code-set index lists no AI-specific code set (LEDES-UTBMS-2026); SRA, ABA 512 and DCAA pages could not be opened; the Law Society of England and Wales page says the SRA has no specific generative AI guidance on client care (LAWSOC-GENAI-2026).
@@ -1170,13 +1170,13 @@ Archetype: professional-services. Module: billing-collections (time capture to c
 
 ### Frontier signals (dated)
 
-- 2025-04-07: Zscaler revises its outside counsel billing guidelines with an AI section (ZSCALER-OCG-2025).
+- 2025-04-07: Zscaler's outside counsel billing guidelines, as revised on this date, include an AI section (ZSCALER-OCG-2025).
 - 2025-10-07: Deloitte Australia to repay part of a AU$440,000 payment (CTV-DELOITTE-2025).
 - 2025-11-13: Australian Public Service AI plan adds AI-use declaration and responsibility clauses for consulting suppliers (CANBERRATIMES-APSAI-2025).
 - 2025-11-24: Virginia Supreme Court approves LEO 1901, disagreeing with parts of ABA 512 and North Carolina's opinion on flat fees (VACOURTS-LEO1901-2025; VALAWYER-2026).
 - 2026-03-13: Legalweek 2026 panels: clients seek line-item AI transparency; some refuse to pay for AI-done work (TRI-LEGALWEEK-2026).
 - 2026-03-26: CollBox wins ABA Techshow Startup Alley with an overdue-invoice recovery service (ABAJ-TECHSHOW-2026).
-- 2026-05-14: California Board of Trustees approves the revised guidance covering agentic AI and billing (CALBAR-ETHICSHUB-2026).
+- 2026-05-14: California's Board of Trustees approves the revised guidance, which addresses agentic AI (CALBAR-ETHICSHUB-2026); the guidance text also sets the billing rules (CALBAR-GENAI-2026, p.8).
 - 2026-08-19: Laurel announces Laurel Billing, with Compliance and Scope agents, as coming soon (LAUREL-BILLING-2026).
 - 2026-08-26: Wells Fargo H1 2026 data reported: inventories up 17.7%, collection cycles slower (LAWFUEL-WF-2026).
 - 2026-09-04: Seat-to-consumption AI pricing discussed at ILTACON 2026 (EDISCOVERYTODAY-ILTACON-2026).
@@ -1188,8 +1188,8 @@ Archetype: professional-services. Module: billing-collections (time capture to c
 - Billers and coordinators move from re-keying partner mark-ups to approving flagged fixes; billing partners approve decisions rather than entries (LAUREL-BILLING-2026; LAUREL-BILLINGPAGE-2026, vendor description).
 - Lawyers' end-of-day docketing shrinks in the Lerners account (about five minutes against 30 to 45) (LAUREL-LERNERS-2026, quote).
 - Kopka Law's COO says talent is leaving defence practice partly because of the tedium of time capture (TRI-BILLING-2026, quote).
-- Greenberg Traurig's Chief Pricing and Innovation Officer and DLA Piper's AI innovation lead speak publicly on client AI value, so pricing and billing ownership is moving to new roles (TRI-LEGALWEEK-2026).
-- Rapoport and Tiano interviewed law firm leaders and argue the pyramid is threatened as routine work moves to technology, which also changes what is billed (WJLTA-RAPOPORT-2025, abstract).
+- Greenberg Traurig's Chief Pricing and Innovation Officer and DLA Piper's AI innovation lead spoke on client AI value at Legalweek; such roles exist at these firms (TRI-LEGALWEEK-2026).
+- Rapoport and Tiano interviewed law firm leaders and argue the pyramid is threatened as routine work moves to technology, (WJLTA-RAPOPORT-2025, abstract).
 - Partners are the commercial transmission mechanism for billing strategy; gaps between partners' views hamper firm policy (TRI-STANDOUT-2026).
 
 ### Objections and concerns practitioners raise
@@ -1200,7 +1200,7 @@ Archetype: professional-services. Module: billing-collections (time capture to c
 - Clients are not seeing savings (ACC-Everlaw) and suspect rate increases offset them; one general counsel asked whether savings are offset by higher partner rates (BLOOMBERGLAW-ACC-2025; TRI-STANDOUT-2026).
 - Using AI mainly to justify higher billing exposes firms if clients tighten budgets (TRI-SOTLM-2026).
 - Trust: accounting firms in a vendor survey want a human to approve before anything is sent (UKU-AIACCOUNTING-2026).
-- Firms spending more time on checking: Australian regulators say verification time must not push costs above traditional methods (AUSLEG-AISTATEMENT-2024, p.1).
+- Verification time: the Australian regulators say AI should not unnecessarily raise costs above traditional methods, for example through time spent checking its output (AUSLEG-AISTATEMENT-2024, p.1).
 - Consumption-based AI pricing could turn AI into a variable matter cost; vendors were reluctant to discuss it (EDISCOVERYTODAY-ILTACON-2026).
 
 ### Interview probes for an advisor
@@ -1240,7 +1240,6 @@ Access is `full` unless stated (opened and read; the Brightflag post was read th
 | COLLAW-BILLING-2025 | A guide to balancing AI-era billing with the Australian Solicitor's Conduct Rules (ASCR) | College of Law (Australia) | press | https://www.collaw.edu.au/community/news/a-guide-to-balancing-ai-era-billing-with-the-legal-professional-conduct-rules/ | 2025-12-02 | full |
 | CTV-DELOITTE-2025 | Deloitte to partially refund Australian government for report with apparent AI-generated errors (Associated Press) | CTV News | press | https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/ | 2025-10-07 | full |
 | DCBAR-OP388-2024 | Ethics Opinion 388 (generative AI in client matters) | District of Columbia Bar | professional-body | https://www.dcbar.org/for-lawyers/legal-ethics/ethics-opinions-210-present/ethics-opinion-388 | 2024-04 | full |
-| DELTEK-CLARITY-2026 | The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures (also carries product navigation text on AI time tracking) | Deltek | vendor | https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/ | 2026-05-12 | full |
 | EC-AIACT-2026 | AI Act: regulatory framework for AI (application timeline) | European Commission | regulator | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai | 2026-10 | full |
 | EDISCOVERYTODAY-ILTACON-2026 | My Five ILTACON 2026 Takeaways (Doug Austin) | eDiscovery Today | conference | https://ediscoverytoday.com/2026/09/04/my-five-iltacon-2026-takeaways-legal-technology-trends/ | 2026-09-04 | full |
 | EU-AIACT-ANNEX3-2024 | Annex III: High-risk AI systems referred to in Article 6(2) (online text of Regulation (EU) 2024/1689) | artificialintelligenceact.eu | regulator | https://artificialintelligenceact.eu/annex/3/ | 2024-08 | full |

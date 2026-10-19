@@ -139,6 +139,14 @@ Grades: A needs a figure the named organisation reports as measured; none found.
     date: '2026'
     access: full
     locator: abstract, Results
+  - ref: GARTNER-PMO-2026
+    title: 'Gartner Insights abstracts on PMOs and AI agents (two documents: 8504777 and 8153030)'
+    publisher: Gartner
+    type: vendor
+    url: https://www.gartner.com/en/documents/8504777
+    date: '2026'
+    access: search-only
+    locator: search summary only
   notes: 'Vendor product page; no named customer result is attached to this agent. The page carries a testimonial
     from Siemens Digital Industries (SVP Global Customer Success) saying a Certinia ''Project Agent'' helps identify
     deliverable discrepancies early, but it does not say whether that is the PMO Quality agent and gives no result.
@@ -1085,6 +1093,14 @@ Grades: A needs a figure the named organisation reports as measured; none found.
     date: '2026-04-09'
     access: full
     locator: paragraph 8
+  - ref: LEGALBUSINESS-KPMGGC-2026
+    title: '''Be bold, be honest about it'' - GCs demand AI transparency from law firms'
+    publisher: Legal Business (Theresa Hargreaves)
+    type: press
+    url: https://www.legalbusiness.co.uk/in-house/be-bold-be-honest-about-it-gcs-demand-ai-transparency-from-law-firms/
+    date: '2026-04-29'
+    access: full
+    locator: paragraph 4 (87% prefer value or outcome-based pricing)
   notes: 'Idea, labelled D: the compliance and margin problems are discussed by bars and researchers, but no firm
     describes a tracking process. Pricing choices belong to scoping-pricing and firm-wide ROI to firm-finance; this
     use case covers the in-flight control only. KPMG''s survey (via Legal Business) says 87% of respondents prefer
@@ -1172,6 +1188,15 @@ Grades: A needs a figure the named organisation reports as measured; none found.
     date: '2026-04-29'
     access: full
     locator: paragraphs 2-3, 7-9
+  - ref: LEXISNEXIS-GENAI-2024
+    title: New Survey Data from LexisNexis Points to Seismic Shifts in Law Firm Business Models and Corporate Legal
+      Expectations Due to Generative AI
+    publisher: LexisNexis Legal & Professional
+    type: vendor
+    url: https://www.lexisnexis.com/community/amp-pressroom/new-survey-data-from-lexisnexis-points-to-seismic-shifts-in-law-firm-business-models-and-corporate-legal-expectations-due-to-generative-ai
+    date: '2024-01-31'
+    access: full
+    locator: section 'Gap in AI Expectations'
   notes: 'In-house. Idea, labelled D: ACC publishes sample guidelines and a question list (named in the ACC article),
     but no in-house team has published a measured programme. A 2024 LexisNexis survey found 80% of Fortune 1000
     executives expected reduced billing from generative AI while only 9% of large law-firm leaders said clients

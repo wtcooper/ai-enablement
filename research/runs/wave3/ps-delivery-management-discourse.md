@@ -1,6 +1,6 @@
 # professional-services / delivery-management / discourse
 
-Prepared 2026-10-19. Archetype: professional-services. Module: delivery-management (running engagements: project planning, status and risk tracking, client reporting, change control and engagement economics during delivery). Angle: discourse (what practitioners are saying). Method: `curl`, `pdftotext` and the r.jina.ai text mirror in a private `mktemp -d` working folder; 15 web searches (rationed). Every source below was opened and read unless the Sources table marks it `search-only`. Podcast entries are episode descriptions only; no audio or transcript was available. In-house or shared-service examples are tagged `in-house`.
+Prepared 2026-10-19. Archetype: professional-services. Module: delivery-management (running engagements: project planning, status and risk tracking, client reporting, change control and engagement economics during delivery). Angle: discourse (what practitioners are saying). Method: `curl`, `pdftotext` and the r.jina.ai text mirror in a private `mktemp -d` working folder; 18 web searches. Every source below was opened and read unless the Sources table marks it `search-only`. Podcast entries are episode descriptions only; no audio or transcript was available. In-house or shared-service examples are tagged `in-house`.
 
 ## 1. Summary
 
@@ -8,7 +8,7 @@ The public discourse on AI in engagement delivery is dominated by two voices: pr
 
 - **Reporting and monitoring are the first targets, and the claims are vendor claims.** PwC published a solution page for AI-generated PMO status reports (24 Mar 2026) that estimates "approximately 40%" less administrative project overhead (PWC-STATUS-2026). Certinia, Kantata, Rocketlane and Harvey all announced or extended agents for project health, anomaly flagging, plan generation or matter orchestration between Dec 2025 and Oct 2026 (IA-CERTINIA-2025; ERPTODAY-KANTATA-2026; TANDEM-2026; HARVEY-ORCH-2026). Only Certinia names customers (Siemens, Diabsolut), and only as unmeasured testimonials (CERTINIA-VEDA-2026).
 - **The baseline the tools address is weak delivery economics.** The SPI Research 2026 benchmark (500+ firms, published via Deltek 30 Jul 2026) reports billable utilization of 66.4% in 2025 (record low), on-time project delivery of 73.8%, and project overrun of 10.7%, above the 10% level SPI says harms client relationships (DELTEK-SPI-2026). Kantata's sponsored survey of 200 leaders reports 54% say at least 10% of their projects miss budget goals (KANTATA-SOPSI-2026).
-- **Data trust is the stated constraint.** In the same Kantata survey only 12% of leaders fully trust their systems' data (down from 24%), and 89% say they spend significant time verifying AI outputs (KANTATA-SOPSI-2026). An independent interview study of 12 Finnish IT project-management consultants found GenAI use "fragmented and peripheral", limited by client policies, with agents seen as assistants rather than peers (EINF-2026).
+- **Data trust is the stated constraint.** In the same Kantata survey only 12% of leaders fully trust their systems' data (down from 24%), and 89% say they spend significant time verifying AI outputs (KANTATA-SOPSI-2026). An independent interview study of 12 Finnish IT project-management consultants found GenAI use "fragmented and peripheral", limited mainly by organisational policies rather than individual resistance, with agents seen as assistants rather than peers (EINF-2026).
 - **Engagement economics is where the new discussion is.** At ILTACON 2026 firms began to count usage-based AI costs and asked how to attribute them to a client (TRI-METER-2026). At Legalweek 2026 clients asked for matter-level proof of AI savings, and firm speakers said they were "still gathering the data" (TRI-LEGALWEEK-2026). At an ILTACON 2026 panel of over 50 attendees, none said their team had a strong measure of AI ROI (TRI-IMPL-2026).
 - **Governance language is converging on reversibility and audit trails.** An ILTACON 2026 panel framed delegation as a "two-way door" test: an agent summarizing client emails and drafting an action plan is reversible, an agent replying to clients without review is not (TRI-AGENTIC-2026). PMI published a standard for AI in project work on 9 Jun 2026; it covers governing AI initiatives, not using AI to run projects (PMI-AISTD-2026).
 
@@ -148,7 +148,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
   change_scope: step
   runtime_class: workflow-automation
   maturity: announced
-  problem: "Delivery teams start from a signed SOW and a salesperson's recollection; plans are rebuilt by hand and context is lost at the sales-to-delivery handoff. SPI's benchmark names streamlining the sales-to-delivery handoff as a conversion lever."
+  problem: "Delivery teams start from a signed SOW and a salesperson's recollection; plans are rebuilt by hand and context is lost at the sales-to-delivery handoff. Deltek's summary of the SPI benchmark lists streamlining the sales-to-delivery handoff as a way to convert pipeline into delivered work."
   solution: "Agents turn the SOW and sales briefing into a draft project plan and connect closed deals to delivery kickoff. Certinia lists Implementation Plan and Sales-to-Delivery Handoff agents; Kantata says its agent can generate project plans from SOWs and briefings and preserve knowledge during handoffs. Interviewed IT project managers use GenAI to structure work phases, though one test with Gemini on a migration framework was not put into practice."
   outcomes:
     - lever: speed
@@ -201,7 +201,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
   risks_and_guardrails:
     - "Scope judgment is subjective; ambiguous cases go to a person (EDNA-SCOPE-2026)"
     - "Manual change-control boards trade margin protection against client responsiveness; the guide claims the agent avoids that trade, with no evidence (EDNA-SCOPE-2026)"
-    - "One accounting-and-consulting platform vendor says unrecovered scope creep is one of four leak points in delivery margin (TEAMWORK-2026)"
+    - "One project-management vendor says unrecovered scope creep is one of four leak points in delivery margin (TEAMWORK-2026)"
   human_checkpoints:
     - "Project manager makes the final call on every flagged request (EDNA-SCOPE-2026)"
     - "Engagement lead decides whether to open a scope conversation with the client, re-resource or push back (EDNA-SCOPE-2026)"
@@ -289,7 +289,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
     - "A commentary scenario shows human review turning into 'theater' when reviewers approve workflows they cannot parse (TRI-PREMORTEM-2026, a fictional premortem)"
   human_checkpoints:
     - "Designated partner or reviewer approves each task at its review gate before the next step begins (HARVEY-ORCH-2026)"
-  role_evolution: "Harvey says lawyers can focus more on directing the matter, reviewing consequential outputs and exercising judgment as agents take on execution (HARVEY-ORCH-2026). An Artificial Lawyer guest post forecasts that agents able to orchestrate workflow erode the mid-level associate role, which it calls the legal world's project managers; this is a forecast from a sponsor of a green paper (AL-LADDER-2026)."
+  role_evolution: "Harvey says lawyers can focus more on directing the matter, reviewing consequential outputs and exercising judgment as agents take on execution (HARVEY-ORCH-2026). An Artificial Lawyer guest post forecasts that agents able to orchestrate workflow erode the mid-level associate role, which it calls the legal world's project managers; this is a forecast from the author of a green paper (AL-LADDER-2026)."
   evidence_grade: C
   sources:
     - { ref: HARVEY-ORCH-2026, title: "Making Harvey the Orchestration Layer for Legal Work", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/legal-work-orchestration", date: 2026-10-15, access: full, locator: "sections 'How Legal Orchestration Works' and closing paragraphs" }
@@ -436,7 +436,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
     - "A policy on pass-through versus overhead for AI cost"
   risks_and_guardrails:
     - "Lawyers cannot see how many tokens they spend, and reach for the largest model for small tasks (TRI-METER-2026)"
-    - "The Cal Bar-style rule that matter-specific AI costs need disclosure is an ethics question for billing, routed to billing-collections"
+    - "Whether and how to pass AI cost through to clients is a billing-ethics question, routed to billing-collections"
     - "Law firm AI leaders surveyed by the American Lawyer see a slowdown in AI adoption as a bigger risk than price rises (AMLAW-CONSUMPTION-2026, teaser only)"
   human_checkpoints:
     - "Pricing and finance leaders decide what is passed through to clients (TRI-METER-2026)"
@@ -613,7 +613,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
 - 19 Aug 2026: a vendor publishes a buyer's guide defining the 'agentic PSA' category and a four-level capability scale; says most 2026 launches are levels one and two (TANDEM-2026). The guide reports Rocketlane raised USD 60 million in March 2026 (secondary, not verified).
 - 16 Jun 2026: Kantata launches Expertise Agent (ERPTODAY-KANTATA-2026).
 - 24 Mar 2026: PwC publishes Intelligent Status Insights (PWC-STATUS-2026).
-- 10 Dec 2025: Certinia Winter '26 release adds a Project Assistant Agent to its early-adopter programme (IA-CERTINIA-2025).
+- 10 Dec 2025 (press report date): Certinia's Winter '26 release adds a Project Assistant Agent, offered through its early-adopter programme (IA-CERTINIA-2025).
 - 8 Jan 2026: Kantata survey: 87% of organizations plan to use AI agents as part of their workforce; 90% expect to need to attribute work, cost and value across humans and agents (KANTATA-SOPSI-2026).
 - Sep 2026: ILTACON 2026 shifts from adoption to counting usage-based cost and asking whether AI pays (TRI-METER-2026; TRI-IMPL-2026).
 - Scheduled: PMI Global Summit 2026, Detroit, 21-24 Oct 2026, lists AI as a key topic; programme content not read (PMI-SUMMIT-2026, search-only).
@@ -634,7 +634,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
 - Oversight: a law-firm attorney said agentic AI 'removes oversight a step too far' (TR-AIPS-2026, p.10).
 - Hype labelling: a competitor says most 'agentic' PSA launches are summarization or scoring (TANDEM-2026).
 - Client contradictions: simultaneous demands for AI savings and for bans on AI use (TRI-LEGALWEEK-2026).
-- Client policy as brake: IT project managers' GenAI use is limited by client policies more than personal resistance (EINF-2026, abstract).
+- Policy as brake: IT project managers' GenAI use is limited by organisational policies more than personal resistance, and client organisations largely decide which tools consultants may use (EINF-2026, abstract; §5.5 p.15).
 
 **Interview probes for an advisor**
 
@@ -653,7 +653,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
 - **acceptance-risk:** the conflicts-check failure in the premortem, where informal knowledge was not in any record (TRI-PREMORTEM-2026).
 - **client-development:** an Introhive speaker's example of an agent watching call and email patterns for a client-relationship change when a partner leaves (TRI-AGENTIC-2026).
 - **quality-review:** the verification burden of agent output (89% spend significant time verifying; KANTATA-SOPSI-2026) and the 'review as theater' failure mode (TRI-PREMORTEM-2026).
-- **talent-learning:** pipeline risk from automating junior and mid-level work (AL-LADDER-2026); PMP exam refresh to emphasise AI from July 2026 (PMI Global Summit 2025 recap, opened but not cited as a source).
+- **talent-learning:** pipeline risk from automating junior and mid-level work (AL-LADDER-2026).
 - **No clear module (firm-level AI programme management):** how PMOs prioritize and run firm technology projects, portfolio change management, hybrid waterfall and agile leadership for legal-tech projects (TRI-PMO-ILTACON-2025; KK-2026; PMI-AISTD-2026). Nearest fit is knowledge-management or talent-learning (adoption). These concern the firm's own AI rollout, not client engagements.
 
 ## 5. Sources
@@ -698,7 +698,7 @@ Two most important insights: (1) the agent claims cluster on admin-heavy steps (
 | MARKETSCALE-2026 | Consulting is turning into agent delivery, not decks, as big firms chase 'AI-native' work | MarketScale | press | https://www.marketscale.com/industries/business-services/consulting-is-turning-into-agent-delivery-not-decks-as-big-firms-chase-ai-native-work.md | 2026-08-23 | full (secondary; reports Business Insider and Forrester) |
 | AMLAW-CONSUMPTION-2026 | AI Utilization Is 'Skyrocketing,' but Law Firms Aren't Sweating Consumption Pricing | The American Lawyer | press | https://www.law.com/americanlawyer/2026/10/13/ai-utilization-is-skyrocketing-but-law-firms-arent-sweating-consumption-pricing-/ | 2026-10-13 | search-only (teaser bullet; body paywalled) |
 
-Source mix (37 distinct sources, 35 read in full): press 8, conference 7, survey 7, vendor 6, firm 3, podcast 2, academic 1, standard-setter 1, professional-body 1, community 1. Of these, 33 are dated within roughly 18 months (Apr 2025 onward); TRI-LPM-2024 is foundation; ILTA-RISE-2025 and TRI-PMO-ILTACON-2025 are 2025. Read and not cited: PMI GenAI report page (Sep 2024, gated), PMI Global Summit 2025 recap (Nov 2025), Certinia margin-leakage blog (undated, header only), Legora newsroom (index only), Rocketlane maturity benchmark page (cookie text only; the figures used appear only through TANDEM-2026 and DELTEK-SPI-2026).
+Source mix (37 distinct sources, 35 read in full): press 8, conference 7, survey 7, vendor 6, firm 3, podcast 2, academic 1, standard-setter 1, professional-body 1, community 1. All but TRI-LPM-2024 (foundation) date from April 2025 onward. Read and not cited: PMI GenAI report page (Sep 2024, gated), PMI Global Summit 2025 recap (Nov 2025; no AI-in-delivery content beyond a PMP exam refresh note), Certinia margin-leakage blog (undated, header only), Legora newsroom (index only), Rocketlane maturity benchmark page (cookie text only; the figures used appear only through TANDEM-2026 and DELTEK-SPI-2026).
 
 ## 6. Gaps
 
