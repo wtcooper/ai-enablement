@@ -1,0 +1,275 @@
+[
+ {
+  "id": "security-data-privacy-01",
+  "title": "AI agents describe and tag data-catalog columns, with stewards approving each",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Data lakes gain tables faster than stewards can document or classify them, so columns lack descriptions and sensitivity labels.",
+  "approach": [
+   "Glyph, a production system of cooperating AI agents, writes column descriptions and assigns labels from a governed 275-label list, never reading values.",
+   "A data steward accepts or rejects every suggested column-tag pair; decisions feed weekly retraining.",
+   "Steward acceptance rose from 63.3% to 99.8% over six weeks (self-reported); the authors call this an association, not a cause."
+  ],
+  "who": "Apple authors (arXiv paper)"
+ },
+ {
+  "id": "security-data-privacy-02",
+  "title": "Rules-first data classification with AI fallback that distils stable findings into rules",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Privacy controls need a reliable view of what each data asset is, and manual review cannot keep pace with AI-native products.",
+  "approach": [
+   "Meta describes a hybrid classifier: versioned rules answer first, and an AI model handles only novel or ambiguous assets.",
+   "About 85% are answered by rules in milliseconds; about 15% go to the AI fallback at roughly 400 times the cost (self-reported).",
+   "People adjudicate reference labels and approve rule promotions; low confidence, judge disagreement or rare sensitive classes escalate to human review."
+  ],
+  "who": "Meta"
+ },
+ {
+  "id": "security-data-privacy-03",
+  "title": "Instruction-driven Gemini labelling of Google Drive files, replacing admin-trained models",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Label-based data loss and retention policies only work on correctly labelled files, and labelling put a considerable manual burden on admins.",
+  "approach": [
+   "Google announced an open beta in which Gemini applies classification labels to Drive files from administrator-written instructions, with no model training.",
+   "File owners and editors with label permission can accept or modify each Gemini-applied label; audit logs record decisions.",
+   "Google states it helps admins reach higher accuracy at scale; no figures published (vendor-published)."
+  ],
+  "who": "Google (vendor announcement)"
+ },
+ {
+  "id": "security-data-privacy-04",
+  "title": "Plain-language sensitive-data search and credential scanning with an AI agent (preview)",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Searching for relevant data and finding out how it is protected is, in Microsoft's words, time-consuming, tedious and highly manual.",
+  "approach": [
+   "Microsoft Purview's Data Security Posture Agent interprets plain-language requests, searches Microsoft 365 content and returns results with an AI-written risk analysis.",
+   "A second preview agent scans Microsoft 365 for exposed credentials and tracks remediation tasks on a board.",
+   "The requester reads the results and decides what to act on; Microsoft claims quick results, no figures (vendor-published)."
+  ],
+  "who": "Microsoft (vendor documentation)"
+ },
+ {
+  "id": "security-data-privacy-05",
+  "title": "AI-native platforms that find, classify and fix sensitive data across cloud",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Organizations do not know what sensitive data they hold or where; Varonis telemetry across 1,000 environments found only about one in ten companies had labelled files.",
+  "approach": [
+   "Cyera customer stories describe agentless scanning to classify sensitive records, then clean-up; the pages say little about how AI contributes.",
+   "ChenMed resolved more than 32,000 data security issues across 30 policies; Paramount scanned trillions of records, billions sensitive (vendor-published).",
+   "Security and data owners decide which findings to remediate; Vetcor says tabletop exercises validated what data an attack would expose."
+  ],
+  "who": "Cyera customers ChenMed, Paramount, Vetcor"
+ },
+ {
+  "id": "security-data-privacy-06",
+  "title": "AI agent sorts data-loss alerts into urgency queues with written rationale",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Triaging and prioritising data loss prevention alerts is complex and time-consuming, and false positives and alert fatigue strain analysts.",
+  "approach": [
+   "Microsoft Purview's Triage Agent reads alerts across Exchange, Teams, OneDrive, SharePoint and endpoints, analyses the files and sorts them, with an explanation.",
+   "Admins can add plain-language custom instructions (preview); Microsoft says prioritisation reduces triage time, no figures (vendor-published).",
+   "Analysts review each categorised alert and rationale and can overrule it through feedback."
+  ],
+  "who": "Microsoft (vendor documentation)"
+ },
+ {
+  "id": "security-data-privacy-07",
+  "title": "Context-aware AI data-loss classification replacing pattern-matching to cut false alerts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Legacy data loss prevention tools struggled with nuanced unstructured files and produced so many false positives that OpenWeb's team could not trust the alerts.",
+  "approach": [
+   "OpenWeb replaced its tools with MIND, which the vendor says uses a proprietary AI engine to classify unstructured data with context.",
+   "OpenWeb's CISO: DLP effort 'probably a fifth' of before; a US financial institution's 16,000 false positives fell to 'just a handful' (vendor-published).",
+   "Human review is not described in detail; the bank's security, privacy and governance teams share a risk-driven programme."
+  ],
+  "who": "OpenWeb, MIND, Cyera, unnamed US bank"
+ },
+ {
+  "id": "security-data-privacy-08",
+  "title": "Inline data-loss controls on prompts, pastes and uploads to generative AI tools",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Staff paste source code, regulated data and credentials into generative AI tools; only 29% of surveyed firms can routinely report what was sent.",
+  "approach": [
+   "Microsoft Purview endpoint policies can warn or block users pasting sensitive information into third-party AI sites, and inspect prompts in supported apps.",
+   "A Hacker News commenter describes a proxy that tokenises personal data and blocks secrets.",
+   "Policy owners decide warn versus block; users may be shown a warning they can override. Baselines come from vendors and a survey."
+  ],
+  "who": "Microsoft, Netskope, Cyberhaven, CSA survey"
+ },
+ {
+  "id": "security-data-privacy-09",
+  "title": "Discover shadow AI use; block or steer unsanctioned AI apps and accounts",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Employees adopt AI tools outside security and procurement review, and AI features appear inside existing apps without governance being told.",
+  "approach": [
+   "Netskope reports 90% of organizations block at least one generative AI app, and personal-account use fell from 78% to 47% (vendor-published).",
+   "OWASP recommends an allowed-tool policy, a central AI service catalogue with security and privacy review, and data loss controls.",
+   "Security and procurement owners approve the allowed-tool list and review new AI services. Akamai announced and then completed its LayerX acquisition."
+  ],
+  "who": "Netskope, OWASP, Akamai"
+ },
+ {
+  "id": "security-data-privacy-10",
+  "title": "Assess and reduce oversharing before and during rollout of AI assistants",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "AI assistants surface content quickly, amplifying existing oversharing; Varonis reports 99% of 1,000 environments hold sensitive data AI can easily surface.",
+  "approach": [
+   "Microsoft Purview's posture tool tracks AI activity such as oversharing and unusual access, and offers data risk assessments.",
+   "SharePoint Restricted Content Discovery removes chosen sites from organization-wide search and Copilot as a temporary control while permissions are fixed.",
+   "Admins choose which sites to restrict and decide on permission clean-up. The 99% figure is a baseline (vendor-published)."
+  ],
+  "who": "Microsoft, Varonis"
+ },
+ {
+  "id": "security-data-privacy-11",
+  "title": "Agents propose and, with approval, fix exposed data such as public links",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Access and sharing problems are found in dashboards but fixed by hand, one object at a time.",
+  "approach": [
+   "Microsoft says Purview's posture tool uses Security Copilot and AI agents to analyse access and sharing, prioritise risks and act on them.",
+   "Actions include removing public sharing links, applying data loss policies or revoking permissions.",
+   "Administrators review, approve or customise automated actions, which are always audited. No outcome figures published (vendor-published)."
+  ],
+  "who": "Microsoft (vendor documentation)"
+ },
+ {
+  "id": "security-data-privacy-12",
+  "title": "Enforce labels and user access when AI assistants retrieve content, including indexes",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "In an AI system, retrieved passages, prompts and tool output sit in one flat space with no internal access control, and classification rules rarely reach embeddings or backups.",
+  "approach": [
+   "Microsoft says supported AI apps withhold content from users lacking access; encrypted labels need view and extract rights.",
+   "OWASP recommends labels follow every derivative, retrieval enforce per-document access control, and erasure cover derived copies.",
+   "A research prototype, ARBITER, filters retrieval queries by role at 85% accuracy (independent); OWASP recommends human review of high-impact corpora."
+  ],
+  "who": "Microsoft, OWASP, ARBITER researchers"
+ },
+ {
+  "id": "security-data-privacy-13",
+  "title": "AI-guided workflow turning privacy requirements into enforceable data controls using data lineage",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Turning written privacy requirements, especially purpose limitation, into controls across large data systems is slow, error-prone and hard to validate.",
+  "approach": [
+   "Meta engineers described an AI-guided workflow that breaks requirement text into implementable tasks and walks data lineage to find affected datasets.",
+   "It suggests enforcement and monitoring points and tracks each requirement through to verification.",
+   "The session reports where automation helped and where human judgment stayed essential, including misinterpretations and lineage gaps (self-reported); no figures."
+  ],
+  "who": "Meta"
+ },
+ {
+  "id": "security-data-privacy-14",
+  "title": "AI detection of privacy-relevant code patterns in pull requests, using retrieved examples",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Many privacy failures come from ordinary coding choices; Default Grant Access, where access is allowed unless blocked, is hard for static analysis to catch.",
+  "approach": [
+   "Microsoft reported deploying AI detection of Default Grant Access in pull requests at scale, then adding retrieved examples from known incidents.",
+   "The retrieval version found more than twice as many confirmed issues; false positives did not significantly improve (self-reported).",
+   "Code reviewers see detections inside the pull request review and confirm issues."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-data-privacy-15",
+  "title": "AI first drafts of privacy impact assessments, reassessments and evidence reviews",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Product teams often lack privacy expertise, and privacy teams manage manual assessments with 'assessment fatigue' and constrained budgets.",
+  "approach": [
+   "OneTrust's Winter '26 release drafts reassessment answers from earlier evaluations and reviews evidence files, giving a summary, justification score and gaps.",
+   "Academic work tests the idea: Privy gives non-experts a first draft of risks, which 13 privacy experts rated high quality (self-reported).",
+   "Privacy staff validate AI-completed fields and review scores; experts still make high-impact decisions."
+  ],
+  "who": "OneTrust, Privy researchers, PIA-Bench authors"
+ },
+ {
+  "id": "security-data-privacy-16",
+  "title": "Idea: AI detection of personal data to redact prompts, logs and text",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "This is an idea, not a deployment: AI providers mask personal data in conversations, yet most detectors and benchmarks target self-contained records, not multi-turn dialogue.",
+  "approach": [
+   "Researchers compare rule-based, encoder and AI detectors on benchmarks; a rule-based detector recalled only 0.07 on high-sensitivity categories (independent).",
+   "No detector reaches full coverage without substantial false positives, and all degrade under shifted inputs.",
+   "Human checkpoints are not specified in the research; reviewers would set thresholds and spot-check misses."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-data-privacy-17",
+  "title": "Idea: middleware trimming AI-agent tool calls to the minimum personal data needed",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "This is an idea, not a deployment: AI agents routinely put sensitive data into tool-call arguments beyond what the tool needs, sending it to third parties.",
+  "approach": [
+   "ToolMinimize, a research prototype, intercepts tool calls and removes, generalises, substitutes or truncates argument values.",
+   "In tests, 81-88% of tool calls held unnecessary sensitive data by default; the middleware cut privacy cost 81.2-92.0% (independent).",
+   "Human checkpoints are not specified in the paper."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-data-privacy-18",
+  "title": "Idea: plain-text policy files let an AI model block risky coding-agent prompts",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "This is an idea, not a deployment: coding agents accept free-form prompts that may hold credentials or proprietary data, and existing controls are rigid.",
+  "approach": [
+   "PolicyGuard, a research prototype, intercepts prompts and classifies them with an AI model guided by a plain-text policy file non-engineers can edit.",
+   "It reached a 96.5% block rate with 3.0% false positives on the authors' test set (independent).",
+   "Policy owners edit the policy file; blocking decisions are automated."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-data-privacy-19",
+  "title": "Giving AI agents governed access to certificate and cryptographic inventory",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Certificate lifespans are stepping down toward 47 days by 2029, so manual certificate management does not scale.",
+  "approach": [
+   "AppViewX announced a Summer 2026 release with a Model Context Protocol server giving AI agents governed access to certificate inventory and metadata.",
+   "The company calls this a foundation for later AI-driven certificate lifecycle operations; no figures published (vendor-published).",
+   "Human checkpoints are not specified; the release exposes read access only."
+  ],
+  "who": "AppViewX (vendor announcement)"
+ },
+ {
+  "id": "security-data-privacy-20",
+  "title": "Testing AI-generated private synthetic financial data against direct synthesis",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Privacy-protected synthetic data is hard to build for high-dimensional tables, so teams ask whether AI simulators could help.",
+  "approach": [
+   "Capital One researchers condensed customer attributes into private profiles under differential privacy and seeded an AI generator to produce transactions.",
+   "Direct synthesis significantly outperformed the AI approach on fraud-detection utility and fidelity; no figures given (self-reported).",
+   "Privacy engineers evaluate fidelity and utility before use."
+  ],
+  "who": "Capital One"
+ },
+ {
+  "id": "security-data-privacy-21",
+  "title": "Private analytics on AI chatbot use: enclave-based AI releasing only noisy totals",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Understanding real-world generative AI use is needed to improve products, but conventional analytics risks exposing sensitive user input.",
+  "approach": [
+   "Google's Provably Private Insights combines secure enclaves, AI models that interpret unstructured data inside them, and differential privacy for aggregation.",
+   "Used in the Pixel Recorder app to classify transcripts; production runs a Gemma 3 4B model on CPUs inside secure enclaves.",
+   "No outcome figures published (self-reported); human checkpoints are not specified in the abstract."
+  ],
+  "who": "Google"
+ }
+]

@@ -1,0 +1,288 @@
+[
+ {
+  "id": "tax-transfer-pricing-01",
+  "title": "Cited-answer research assistant for transfer pricing law and local requirements",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Central transfer pricing teams cover dozens of jurisdictions while rules change constantly, and general chatbots give answers without clear sourcing.",
+  "approach": [
+   "Aibidia with IBFD data announced TP Aurora, returning cited answers from a curated transfer pricing content set, available from 22 May 2025.",
+   "The user opens the cited source before relying on an answer.",
+   "Vendor claims 90% less research time (vendor-published; baseline and method not given)."
+  ],
+  "who": "Aibidia, IBFD, KPMG US"
+ },
+ {
+  "id": "tax-transfer-pricing-02",
+  "title": "General AI assistants used by in-house transfer pricing staff",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Small transfer pricing teams carry growing complexity with limited headcount, and routine drafting, research and data formatting take time away from analysis.",
+  "approach": [
+   "Staff use Microsoft Copilot, ChatGPT and Claude for drafting, research, formatting data and stress-testing authority responses; not integrated with company data.",
+   "An accountable professional validates every AI output before it becomes part of the record.",
+   "93% of surveyed professionals use AI in some form; 37% report regular use in 2026, up from 18% (vendor-published survey)."
+  ],
+  "who": "Aibidia survey; Microsoft, OpenAI, Anthropic tools"
+ },
+ {
+  "id": "tax-transfer-pricing-03",
+  "title": "Self-service transfer pricing answers for non-specialists, escalating to the specialist team",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Transfer pricing teams are small and local finance contacts touch the topic rarely, so recurring policy questions pull specialists away from analysis.",
+  "approach": [
+   "Deloitte Poland offers a GenAI chatbot built on the organisation's own policies; it answers simple questions and routes complex ones onward.",
+   "Andersen Australia tested a general AI platform on documentation rules: answers were well structured, but the tool cannot own the conclusion.",
+   "A specialist handles escalated questions and reviews before any position or document is relied on. No outcome figures published."
+  ],
+  "who": "Deloitte Poland, Andersen Australia"
+ },
+ {
+  "id": "tax-transfer-pricing-04",
+  "title": "AI-assisted gathering of intercompany data from several accounting systems",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Year-end transfer pricing analysis is a scramble to pull and standardise data from disconnected systems; 79% in Aibidia's 2026 survey spend over 10% of team time on it.",
+  "approach": [
+   "Plante Moran says AI can aggregate information from several accounting and ERP platforms into one consistent format, reducing manual spreadsheet work.",
+   "Webinar speakers say fragmented or manual data should be standardised first.",
+   "The team reviews how inputs were prepared and reconciles to ledger and consolidated figures. No outcome figures published."
+  ],
+  "who": "Plante Moran, Aibidia"
+ },
+ {
+  "id": "tax-transfer-pricing-05",
+  "title": "AI-drafted functional and industry analysis, including intangible-asset support",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Functional, asset and risk analysis, intangibles assessment and industry analysis rely on interviews and many outside sources, and are the parts of a transfer pricing file authorities most often probe.",
+  "approach": [
+   "PwC Singapore has the model gather website information to explain commercial factors behind margin changes, such as pandemic glove-manufacturing margins.",
+   "KPMG US says GenAI can automate industry and functional analyses; BDO Canada says AI cannot determine whether arrangements reflect practice.",
+   "A practitioner validates the functional profile with business interviews, and a senior practitioner reviews intangibles conclusions."
+  ],
+  "who": "PwC Singapore, KPMG US, BDO Canada"
+ },
+ {
+  "id": "tax-transfer-pricing-06",
+  "title": "AI-assisted search for comparable companies and benchmarking draft",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Benchmarking means searching databases or websites one by one, screening, documenting each decision, calculating ranges and writing the report, which takes hours or days.",
+  "approach": [
+   "The model returns a candidate list from the practitioner's screening instructions; the practitioner then runs recognised databases and a documented screen.",
+   "A PwC Singapore senior manager said analysis taking up to 100 hours can, under certain conditions, take about 30 minutes (self-reported).",
+   "BDO Canada reports AI benchmarking outputs lacking depth or screening rationale; the practitioner approves each rejection and the final range."
+  ],
+  "who": "PwC Singapore, BDO Canada, RoyaltyRange, Exactera"
+ },
+ {
+  "id": "tax-transfer-pricing-07",
+  "title": "First-draft local file and master file narratives with expert review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Local and master files for many entities repeat similar narrative sections and are updated yearly; an Exactera speaker called check-the-box documents lacking substance the most common mistake.",
+  "approach": [
+   "The professional supplies facts, a GenAI tool drafts the narrative, and the expert reviews, edits and approves.",
+   "BDO Canada reports recurring gaps in AI-generated outputs, including documentation that looks complete but lacks audit-ready support.",
+   "Functional facts are checked against how decisions are actually handled, with sign-off on method selection. No outcome figures published."
+  ],
+  "who": "BDO Canada, Exactera, Aibidia participants"
+ },
+ {
+  "id": "tax-transfer-pricing-08",
+  "title": "AI review of transfer pricing files against country rules and for consistency",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Local files must meet country-specific rules that change often, and authorities compare figures across files, reports and returns, so mismatches invite scrutiny.",
+  "approach": [
+   "Exactera announced ExactReport, a Word-based app that reviews a draft against country requirements and suggests edits; offered through an early adopter programme.",
+   "KPMG South Africa and Nigeria authors advise reconciling data across statements, files and filings to avoid automated flags.",
+   "The preparer accepts or rejects each suggested edit, and a person explains reconciliation breaks before filing."
+  ],
+  "who": "Exactera, KPMG South Africa and Nigeria"
+ },
+ {
+  "id": "tax-transfer-pricing-09",
+  "title": "Central transaction data feeding bulk local file and master file production",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Trivium Packaging built local files per entity from emailed data and manual formatting, so small teams prioritised high-risk entities and reviewed each document three to four times.",
+  "approach": [
+   "A platform imports transaction data once and generates editable local files for many entities; which steps use AI is not stated.",
+   "Trivium reports a simple local file now takes a few hours versus 2-5 working days (vendor-published case study).",
+   "Fortum reports a 65% transaction automation rate (vendor-published); local controllers confirm data and external advisors review rather than prepare."
+  ],
+  "who": "Trivium Packaging, Fortum, Aibidia"
+ },
+ {
+  "id": "tax-transfer-pricing-10",
+  "title": "First-draft intercompany agreements from the policy, with clause extraction",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Intercompany agreements must match the transfer pricing policy and real flows; Plante Moran says drafting often stalls for weeks at growing companies.",
+  "approach": [
+   "AI drafts an agreement from the written policy; an Exactera interviewee says agents can extract pricing and risk clauses for checking.",
+   "Plante Moran says drafting moves from weeks to hours (firm statement, not measured).",
+   "Qualified transfer pricing and legal professionals review each draft against actual conduct before finalising."
+  ],
+  "who": "Plante Moran, BDO Canada, Exactera"
+ },
+ {
+  "id": "tax-transfer-pricing-11",
+  "title": "Multi-agent review of intercompany deals across transfer pricing, VAT and customs",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "The same intercompany transaction has legal, transfer pricing, VAT, withholding-tax and customs consequences that separate teams review in sequence, so inconsistencies show up late.",
+  "approach": [
+   "A TPMinds International 2026 example (organisation not named) used multi-agent workflows reviewing legal, transfer pricing, VAT and withholding-tax implications together before drafting.",
+   "A sponsored Nexdigm article says multi-agent workflows can flag cross-reporting inconsistencies before audit; professionals decide the resolution.",
+   "No outcome figures published; human checkpoints are not stated for the conference example."
+  ],
+  "who": "TPMinds example, Nexdigm (sponsored)"
+ },
+ {
+  "id": "tax-transfer-pricing-12",
+  "title": "Automated intercompany price calculation, invoicing and posting",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Kemira calculated transfer prices manually across 62 legal entities in 40 countries, which was heavy work for tax, finance and local teams.",
+  "approach": [
+   "A tailored tool automates segmented P&Ls and fee, royalty and resale-minus calculations, with robotics sending invoices and posting entries to SAP monthly.",
+   "Kemira reports hundreds of work hours saved (vendor-published).",
+   "The tax team uses the tool for monitoring, with a monthly close review of results and unusual movements."
+  ],
+  "who": "Kemira, Aibidia"
+ },
+ {
+  "id": "tax-transfer-pricing-13",
+  "title": "In-year monitoring of intercompany margins against policy ranges",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Transfer prices are usually tested after year end, so margin drift is found late; in Aibidia's 2026 survey only 7% formally monitor monthly and 60% rely on Excel and email.",
+  "approach": [
+   "Plante Moran describes loading raw data into an AI tool to build dashboards tracking margins against target ranges and flagging deviations.",
+   "A TPMinds recap says organisations already monitor outcomes with AI in real time, without naming any.",
+   "The transfer pricing team investigates flagged deviations and decides adjustments; finance owns execution. No AI outcome figures published."
+  ],
+  "who": "Plante Moran, Aibidia, TPMinds, Nexdigm"
+ },
+ {
+  "id": "tax-transfer-pricing-14",
+  "title": "Connected transfer pricing knowledge model that flags inconsistencies",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Policies, agreements, financial results and audit history sit in different systems, so showing why a position is defensible needs extensive manual investigation.",
+  "approach": [
+   "Aibidia announced TP Intelligence, a connected model that flags inconsistencies and traces findings to source evidence; first release planned December 2026.",
+   "In a Helsinki demonstration it quantified a EUR 4.8 million potential risk in one entity (vendor-published demo, not a client result).",
+   "A controller, reviewer or auditor follows each flag back to its source evidence."
+  ],
+  "who": "Aibidia (vendor demo)"
+ },
+ {
+  "id": "tax-transfer-pricing-15",
+  "title": "Pre-filing audit-risk screening of intercompany positions",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Authorities select transfer pricing audits on indicators such as routine entities at a loss, but taxpayers rarely test their own positions against these signals before filing.",
+  "approach": [
+   "Taxpayer-side analytics score intercompany positions against known authority selection patterns and IRS self-assessment suggestions so documentation can be strengthened.",
+   "Exactera claims AI can predict audit vulnerability, with no accuracy reported (vendor-published).",
+   "The transfer pricing lead decides whether a flagged position needs more documentation, a price change, a defence or an advance pricing agreement."
+  ],
+  "who": "Exactera, Checkpoint report"
+ },
+ {
+  "id": "tax-transfer-pricing-16",
+  "title": "Drafting and stress-testing audit responses from prior documentation",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Audit responses need years of prior files read and consistent answers under deadline; half of respondents in a vendor survey spend 50-200 hours on audit response.",
+  "approach": [
+   "KPMG US says GenAI can review historical documents and formulate responses in transfer pricing controversy.",
+   "Participants at Aibidia briefings said they use general AI tools to stress-test responses to tax authorities.",
+   "The controversy lead reviews every statement of fact and citation, and an accountable professional approves the submission."
+  ],
+  "who": "KPMG US, PwC Singapore, Aibidia participants"
+ },
+ {
+  "id": "tax-transfer-pricing-17",
+  "title": "Idea: AI-assisted economic analysis in transfer pricing litigation, with tool disclosure",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: expert economists could use AI for benchmarking and valuation in litigation, which would make the reliability of the output an evidence question.",
+  "approach": [
+   "An IRS LB&I official said experts must explain inputs, assumptions, methods and AI tools, and that the IRS wants to see formulas.",
+   "Proposed Federal Rule of Evidence 707 on machine output: the Standing Committee decided on 3-4 June 2026 not to recommend action.",
+   "The testifying expert must be able to explain and defend every input, assumption and method."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-transfer-pricing-18",
+  "title": "Idea: AI support for advance pricing agreement and dispute resolution cases",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: advance pricing agreements and authority-to-authority disputes are lengthy negotiations with uncertain outcomes.",
+  "approach": [
+   "A KPMG commentary (October 2024) suggests AI could improve case management, support negotiation and predict outcomes from past cases.",
+   "Aprio says some authorities are developing models to predict outcomes, without naming any.",
+   "Negotiation and position-setting remain with practitioners and competent authorities."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-transfer-pricing-19",
+  "title": "Transfer pricing policy modelling and planning-opportunity screening",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Policy design and planning need analysis of how entity results, tax rates and new business models interact across jurisdictions.",
+  "approach": [
+   "KPMG US says GenAI can scrutinise global tax developments to pinpoint planning prospects, parse financials and update calculations.",
+   "Plante Moran says some companies test subsidiary financials against country tax rates with lightweight models, as a jump-start for an adviser conversation.",
+   "The adviser and transfer pricing lead review the model's result before any policy or structure change. No outcome figures published."
+  ],
+  "who": "KPMG US, Plante Moran"
+ },
+ {
+  "id": "tax-transfer-pricing-20",
+  "title": "Idea: AI-use and verification log inside transfer pricing workpapers",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: if an AI-assisted position is challenged, a team may not be able to show what the AI suggested versus what a person verified.",
+  "approach": [
+   "Record which AI tools, inputs and review steps were used; BDO Canada, the IRS OPR alert and the Werfel register recommend variants.",
+   "It is a governance control around AI-assisted work, not an automation.",
+   "A reviewer attests to verification of each AI-assisted section."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-transfer-pricing-21",
+  "title": "Bringing recurring documentation in-house, with advisors limited to review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Trivium's documentation cost over EUR 10,000-15,000 per entity, forced prioritising high-risk entities, and outside advisors did not know the company fully, according to its transfer pricing manager.",
+  "approach": [
+   "Documentation work moves in-house onto a central data platform, with advisors used for jurisdiction-specific, technical or high-risk matters and for review.",
+   "Trivium says the platform gives a predictable cost while scaling coverage; new cost not stated (vendor-published).",
+   "Fortum's stated goal is to use external parties only to review local files."
+  ],
+  "who": "Trivium Packaging, Fortum, Aibidia"
+ },
+ {
+  "id": "tax-transfer-pricing-22",
+  "title": "Software platform plus experts delivering transfer pricing work at fixed prices",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Traditional advisory engagements take months and cost heavily for repeatable work, and in-house teams question paying advisors mainly for validation and risk absorption.",
+  "approach": [
+   "Commenda advertises about four weeks and USD 9,000 versus USD 60K and six months for traditional advisors (vendor claim).",
+   "Aibidia and BIP Law & Tax announced an exclusive Italian partnership with a joint task force for continuous transfer pricing management.",
+   "Provider experts review deliverables, and the client explains the business and reviews output."
+  ],
+  "who": "Commenda, Aibidia, BIP Law & Tax"
+ }
+]

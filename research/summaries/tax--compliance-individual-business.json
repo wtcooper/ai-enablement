@@ -1,0 +1,330 @@
+[
+ {
+  "id": "tax-compliance-individual-business-01",
+  "title": "AI-prefilled organizers and automatic chasing of missing client documents",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Collecting client information and documents means repeated emails and late files, and one missing brokerage statement can hold up a whole return.",
+  "approach": [
+   "Canopy offers AI-prefilled questionnaires that clients confirm or change, plus AI file classification; Basis and ApariPro describe agents that chase clients.",
+   "Canopy says firms can save as much as 20 minutes per client (vendor-published).",
+   "Staff review request lists and open items; the preparer still conducts the due-diligence interview and signs Form 8867."
+  ],
+  "who": "Canopy, Basis, ApariPro"
+ },
+ {
+  "id": "tax-compliance-individual-business-02",
+  "title": "Reading tax documents and K-1 footnotes with confidence flags and exception review",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "K-1 packages and multi-tier partnerships defeat template scanning and manual keying, and an extraction error can flow into a return without any flag.",
+  "approach": [
+   "CCH Axcess Scan (Wolters Kluwer) extracts figures and surfaces only exceptions; Wolters Kluwer says K-1 extraction averages 97.5% accuracy (vendor-published).",
+   "PwC agents rate each K-1 footnote item with a confidence level and flag it; one reviewer now replaces three people (self-reported).",
+   "Reviewers override low-confidence mappings with a recorded reason and compare extracted figures to source documents."
+  ],
+  "who": "PwC, Wolters Kluwer, Intuit ProConnect"
+ },
+ {
+  "id": "tax-compliance-individual-business-03",
+  "title": "Retail tax offices use AI to cut data entry for advice",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Preparers in assisted-tax offices spend much of an appointment collecting and entering information, leaving less time for advice.",
+  "approach": [
+   "H&R Block management said it is automating mechanical tax preparation work, from manual data entry to the initial review of prior-year returns.",
+   "The advice-focused model runs in pilot offices; H&R Block reported higher client satisfaction, with no figures given (self-reported).",
+   "Tax pros remain responsible for the returns and the client guidance."
+  ],
+  "who": "H&R Block"
+ },
+ {
+  "id": "tax-compliance-individual-business-04",
+  "title": "Agent drafts a simple personal tax return for CPA review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Preparing even simple personal returns means sorting documents, keying data and building the return by hand, which crowds out higher-value work in a short season.",
+  "approach": [
+   "Thomson Reuters' Ready to Review uses agents to extract data from documents and prior returns and draft returns linked to sources.",
+   "An early-adopter partner at CLH CPAs and Consultants said it saves about an hour per simple return (vendor-published).",
+   "Professionals review the draft, diagnostics and source links before delivery; the taxpayer reviews before signing the e-file authorisation."
+  ],
+  "who": "Thomson Reuters, CLH CPAs and Consultants"
+ },
+ {
+  "id": "tax-compliance-individual-business-05",
+  "title": "Agent prepares complex personal returns end to end for CPA sign-off",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Complex returns with many K-1s, brokerage statements and multiple states take days of preparer and reviewer time, and firms are short of staff in busy season.",
+  "approach": [
+   "Black Ore, Basis, Accrual and OpenAI describe agents that extract data, apply tax logic, build workpapers and feed the firm's tax software.",
+   "OpenAI says Tax AI processed 7,000 returns in a Crete pilot and saves about a third of preparation time (vendor-published).",
+   "Boulay's partner says returns with 60-70+ K-1s fell from over 100 hours to about 15-20 hours (vendor-published).",
+   "A CPA reviews and signs off, ties workpapers to source documents and answers questions the system cannot resolve."
+  ],
+  "who": "Black Ore, Basis, Accrual, OpenAI, Crete"
+ },
+ {
+  "id": "tax-compliance-individual-business-06",
+  "title": "Agent prepares partnership, S corporation and trust returns through to K-1s",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Partnership and trust returns need trial-balance import, allocations, depreciation and basis tracking, and K-1 tie-out, much of it built in spreadsheets, so review burden multiplies.",
+  "approach": [
+   "Accrual describes preparing partnership and trust returns through to K-1s, with Armanino named as customer; Basis demonstrated an agent completing a 1065.",
+   "Armanino statistics on Accrual's page show an estimated 50% reduction in federal preparation and review effort (vendor-published).",
+   "Practitioners review drafts and open items, approve agent changes and sign the return."
+  ],
+  "who": "Accrual, Armanino, Basis"
+ },
+ {
+  "id": "tax-compliance-individual-business-07",
+  "title": "Trial balance to tax workpapers for pass-through business returns",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Business returns start with mapping the client's trial balance to return lines and building book-to-tax and fixed-asset workpapers by hand.",
+  "approach": [
+   "Basis agents map client accounts to return lines, flag unmapped accounts and draft book-to-tax and fixed-asset workpapers with figures cited to source.",
+   "A Whitcomb & Sheridan partner says a 2-3 hour task takes about 30 minutes (vendor-published); the quote does not name this step.",
+   "Staff review mapping exceptions and workpaper drafts."
+  ],
+  "who": "Basis, Whitcomb & Sheridan"
+ },
+ {
+  "id": "tax-compliance-individual-business-08",
+  "title": "Agent works inside the firm's own tax software and documents each entry",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Pre-preparation tools push data into the tax engine, so the firm still does the final steps by hand.",
+  "approach": [
+   "TaxGPT's agent signs in to the firm's tax software, enters data, works through diagnostics and documents every entry back to its source.",
+   "TaxGPT claims a 50% cut in first-pass preparation time on its product page (vendor-published).",
+   "The firm's team reviews and signs off, and the firm's software stays the system of record."
+  ],
+  "who": "TaxGPT"
+ },
+ {
+  "id": "tax-compliance-individual-business-09",
+  "title": "General-purpose agents run practitioner-taught routines and build return workpapers",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Multi-source follow-up on a return, such as call notes, open issues, binders and signature requests, is done by hand across systems.",
+  "approach": [
+   "Accrual's Arc, unveiled September 2026, drafts a plan, asks approval, then updates workpapers with an audit trail; no outcome figures are published.",
+   "A practitioner, Sam Leon, uses Claude Cowork to prepare returns; the episode title claims 5x faster (self-reported).",
+   "The practitioner approves the plan and each proposed change."
+  ],
+  "who": "Accrual, Sam Leon (practitioner)"
+ },
+ {
+  "id": "tax-compliance-individual-business-10",
+  "title": "Use a deterministic engine to calculate returns; language model for intake",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: unaided language models calculate returns unreliably, so calculation errors, wrong tax tables and eligibility mistakes are costly and hard to audit.",
+  "approach": [
+   "Researchers recommend pairing the model with a deterministic calculation engine or symbolic solver, with the model handling intake, explanation and orchestration.",
+   "In a benchmark of 51 simplified returns, the best of four models computed 32.35% correctly under the strict test (vendor-published).",
+   "The preparer reviews the engine-calculated return and any model-supplied inputs."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-individual-business-11",
+  "title": "Grounded assistant for tax preparers, with every cited authority checked",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tax pros must keep up with code changes and answer unusual client questions, and general models can invent authorities, as a 2026 Tax Court case about hallucinated citations showed.",
+  "approach": [
+   "H&R Block and OpenAI said in April 2025 they were building an assistant grounded in Tax Institute data; management later reported adoption.",
+   "No usage counts or accuracy figures were published (self-reported).",
+   "The tax pro decides how to answer the client; a reviewer opens and reads each cited authority."
+  ],
+  "who": "H&R Block, OpenAI"
+ },
+ {
+  "id": "tax-compliance-individual-business-12",
+  "title": "AI-assisted return review with source tie-out, diagnostics and prior-year comparison",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Reviewers must check figures against source documents and prior years, which takes senior time, and review becomes the bottleneck when preparation gets faster.",
+  "approach": [
+   "Intuit ProConnect runs an AI assistant against thousands of diagnostics; Basis, Accrual and Thomson Reuters tie figures to source and flag exceptions.",
+   "TaxGPT launched a return-review agent that surfaces audit-sensitive items; PwC lists tax diagnostics among its deployed agents.",
+   "No error counts are published; one user says the checks give it confidence (vendor-published).",
+   "The reviewer inspects flagged exceptions and decides treatments; the preparer or reviewer signs."
+  ],
+  "who": "Intuit, Basis, Accrual, Thomson Reuters, TaxGPT, PwC"
+ },
+ {
+  "id": "tax-compliance-individual-business-13",
+  "title": "Review controls for AI-assisted returns: decision logs, override monitoring, escalation",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: as AI raises volume, partners may spend less time per return, and a firm with no record cannot show what the tool suggested.",
+  "approach": [
+   "Log every AI suggestion and the preparer's decision (accept, modify, reject) with rationale, and review override rates by preparer monthly.",
+   "Scale sampling and spot checks to volume, and escalate novel or uncertain positions to senior review regardless of the AI's confidence.",
+   "Sign-off must evidence real analysis; regulators such as Australia's TPB and the IRS OPR expect AI steps to be verified and documented."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-individual-business-14",
+  "title": "Automated look-back review of prior-year returns offered to every new client",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Second Look, a review of a new client's last three years of returns for missed opportunities, was manual, so tax pros rarely offered it to new clients.",
+  "approach": [
+   "H&R Block management said it automated Second Look over about 18 months with newer AI, so many more new clients opt in.",
+   "Management said Second Look clients returned at a rate over 600 basis points higher; uncontrolled, not due to automation alone (self-reported).",
+   "Tax pros focus on the returns with the greatest opportunity."
+  ],
+  "who": "H&R Block"
+ },
+ {
+  "id": "tax-compliance-individual-business-15",
+  "title": "AI-drafted client messages and return explanations, reviewed before sending",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Clients call to ask where their return stands, preparers write explanatory letters by hand, and firms cannot paste client data into public AI tools.",
+  "approach": [
+   "Short status messages are generated when a job changes stage, and practitioners use AI to draft correspondence.",
+   "WCG plans a SOC 2-compliant, zero-data-retention sandbox for client narratives, quotes and tax-plan comparisons from returns; Intuit lists an AI Client Briefing.",
+   "The preparer reads and edits every client communication before it is sent; no outcome figures are published."
+  ],
+  "who": "WCG CPAs & Advisors, Intuit"
+ },
+ {
+  "id": "tax-compliance-individual-business-16",
+  "title": "Automating return assembly, delivery and e-signature authorisation",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Assembling the return package, collecting signatures, including the Form 8879 e-file authorisation, and taking payment are manual and error-prone.",
+  "approach": [
+   "SafeSend and SurePrep from Thomson Reuters are mostly workflow automation; the vendor claims an AI layer that recognises documents and flags discrepancies.",
+   "Thomson Reuters says firms using SafeSend save about 15 minutes per return (vendor-published).",
+   "The preparer signs the return and the taxpayer reviews it before signing Form 8879."
+  ],
+  "who": "Thomson Reuters"
+ },
+ {
+  "id": "tax-compliance-individual-business-17",
+  "title": "UK self assessment and Making Tax Digital preparation with AI document processing",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "UK firms chase clients for information, review documents manually and re-key data into tax software for self assessment returns and quarterly Making Tax Digital submissions.",
+  "approach": [
+   "ApariPro says it automates client information collection, AI processing of documents such as P60s, return population and submission, integrating with CCH iFirm.",
+   "No figures are published; anonymous testimonials say manual data entry fell (vendor-published).",
+   "The team reviews and approves all information before submission."
+  ],
+  "who": "ApariPro"
+ },
+ {
+  "id": "tax-compliance-individual-business-18",
+  "title": "Phased adoption: simple returns first, scope gates, parallel runs on prior-year returns",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Firms adopt AI preparation on vendor claims and cannot say whether time, quality or cycle time improved, and vendors bundle extraction, deduction suggestion and position drafting together.",
+  "approach": [
+   "Practitioners advise starting with simpler returns, rerunning last year's returns to compare with what was filed, and recording cycle times first.",
+   "An AICPA case study (an idea) authorises the tool in phases, with gates such as a hallucination rate of 2% or less.",
+   "A reviewer compares the AI's version with the filed return; named partners sign off each phase. No parallel-run result is published."
+  ],
+  "who": "Practitioner advice; AICPA case study"
+ },
+ {
+  "id": "tax-compliance-individual-business-19",
+  "title": "Firm AI policy, approved-tool list and vendor due diligence for tax practices",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Staff use AI tools whether or not the firm has sanctioned them, nobody owns AI, and firms cannot show how outputs were verified or what happens to sensitive return data.",
+  "approach": [
+   "The IRS Office of Professional Responsibility says firms should have AI policies covering training, data handling and accuracy monitoring, and vet vendors.",
+   "Guidance adds an approved-tool list, an AI lead or committee, and client data restricted to enterprise-approved AI under the written security plan.",
+   "Thomson Reuters reports more than one-third of professionals use AI tools their firm has not sanctioned (vendor-published).",
+   "A principal or AI committee approves tools before client use; the managing partner and counsel sign off vendor contracts."
+  ],
+  "who": "IRS OPR, Thomson Reuters, Wolters Kluwer, AICPA"
+ },
+ {
+  "id": "tax-compliance-individual-business-20",
+  "title": "Dedicated AI team, champion network and training that protects the junior pipeline",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tools change faster than firm processes, regulators make AI competence personal to the preparer, and AI is automating the entry-level tasks juniors learn on.",
+  "approach": [
+   "PwC reports a governance committee, an Agent OS controlling agent tools, more than 3,200 AI champions and a training programme (self-reported).",
+   "WCG says its AI Tax Prep Pod launches in November 2026 to design workflows, test tools and document best practice.",
+   "An AICPA framework proposes tool-independent tax-law training and an annual check that staff can handle complex matters without the tool."
+  ],
+  "who": "PwC, WCG CPAs & Advisors, Basis"
+ },
+ {
+  "id": "tax-compliance-individual-business-21",
+  "title": "Client disclosure and consent wording before AI touches return information",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Section 7216 requires written consent for some uses of return information, and it is unsettled whether an AI tool counts as software or as a third party.",
+  "approach": [
+   "Practitioners and the AICPA advise a signed stand-alone AI consent, an inventory of AI tools touching client data and security-plan governance.",
+   "Consent must be knowing, voluntary, signed, dated and not retroactive; no rule requiring disclosure of AI use was found.",
+   "The client signs and dates before any use; counsel reviews the language before the tool touches any client matter."
+  ],
+  "who": "IRS OPR, AICPA, Tax Practitioners Board"
+ },
+ {
+  "id": "tax-compliance-individual-business-22",
+  "title": "Reprice return work from hours to value or bundled fees",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea under dispute: hourly billing shrinks when AI cuts preparation time, and billing for time not spent may breach the bar on unconscionable fees.",
+  "approach": [
+   "Price by value, bundle preparation with advisory services, and disclose and credit AI efficiencies, as the IRS Office of Professional Responsibility describes.",
+   "The AICPA disputes that language, saying it does not appear to allow value pricing and overlooks software and governance costs.",
+   "The partner approves the fee basis and the client agrees it in the engagement letter."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-individual-business-23",
+  "title": "Replace offshore or contract data entry and first-pass preparation with AI",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Busy-season volume is met with outsourced, contract and offshore preparers, which raises onboarding, quality and disclosure concerns.",
+  "approach": [
+   "Firms bring first-pass preparation onshore through AI products instead of staffing it offshore or with contractors.",
+   "A vendor founder says users talk of bringing work onshore; a consultant says AI affects outsourcing more than onshore staff. No figures.",
+   "A partner reviews the AI-prepared return."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "tax-compliance-individual-business-24",
+  "title": "AI-native roll-up buys small tax practices and runs them on in-house AI",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Small tax practices carry heavy manual workloads and thin margins and find it hard to adopt new processes, while buyers look for recurring-revenue service businesses.",
+  "approach": [
+   "Multiplier acquired Citrine International Tax, a 12-person cross-border tax boutique, and applied AI tools it built in-house.",
+   "TechCrunch reports the tools helped Citrine more than double its profit margins (self-reported).",
+   "The source does not describe human checkpoints."
+  ],
+  "who": "Multiplier, Citrine International Tax"
+ },
+ {
+  "id": "tax-compliance-individual-business-25",
+  "title": "Taxpayers use general-purpose AI agents to draft or check their own returns",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Self-filers face cost, jargon and complex forms, and some now ask general-purpose AI for help before, or instead of, hiring a preparer.",
+  "approach": [
+   "Perplexity announced Computer for Taxes in April 2026, which maps uploaded documents to IRS forms and drafts a federal return.",
+   "A TaxSlayer test of four chatbots found refund errors averaging more than $2,000 across eight scenarios (vendor-published).",
+   "By design there is no human checkpoint for self-filers; practitioners are asked to validate client-brought AI conclusions."
+  ],
+  "who": "Perplexity, TaxSlayer, PYMNTS, Taxfix"
+ }
+]

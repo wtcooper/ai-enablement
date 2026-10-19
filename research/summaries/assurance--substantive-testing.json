@@ -1,0 +1,327 @@
+[
+ {
+  "id": "assurance-substantive-testing-01",
+  "title": "Testing every journal entry with machine-learning anomaly scoring",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Journal-entry testing is a required fraud response, but rules filters on very large ledgers miss subtler patterns and flood teams with false positives.",
+  "approach": [
+   "A tool scores every ledger entry and shows why items look unusual; auditors select from them. Users include BDO UK and KPMG.",
+   "Regulators saw automated tools in journal-entry testing in 88% of cases in 2024 (independent); all six US network firms reported them (self-reported).",
+   "The team follows up each high-risk item and stays alert to signs the tool is systematically flawed for the engagement."
+  ],
+  "who": "Buzzacott, BDO UK, KPMG, EY, MindBridge"
+ },
+ {
+  "id": "assurance-substantive-testing-02",
+  "title": "Idea: language-model anomaly detection with written explanations for journal entries",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: rule-based journal-entry tests produce many false positives, and machine-learning scores do not explain themselves.",
+  "approach": [
+   "Researchers prompt language models with each ledger record plus a classical anomaly score, asking for a yes/no flag and a plain-language explanation.",
+   "On a synthetic ledger, the best open model had 12 false positives against 942 for rules-based testing, with 2 missed anomalies (independent).",
+   "The auditor reviews each flagged entry with the model's explanation before treating it as an exception."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-substantive-testing-03",
+  "title": "Evidence-linked triage of items flagged by whole-population tests",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Whole-population tests surface more items to follow up, and thin testing of outliers is among regulators' most common technology findings.",
+  "approach": [
+   "MindBridge says its Augmented Assurance offering lets auditors drill into the entries, accounts or periods driving risk, using the system's explanations (vendor-published).",
+   "Its Agentic Risk Assessment, announced September 2026, is positioned for audit planning, not for following up flagged items.",
+   "The auditor investigates and documents the rationale for concluding on flagged and additional items."
+  ],
+  "who": "MindBridge"
+ },
+ {
+  "id": "assurance-substantive-testing-04",
+  "title": "Authenticating documents before relying on them, as AI makes forged evidence cheap",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Regulators warn that AI tools can create realistic false evidence, so a clean-looking invoice or vendor file no longer signals legitimacy.",
+  "approach": [
+   "MindBridge advises matching invoice details to bank records and system metadata; a BDO practitioner advises scanning vendor masters for suspicious entries.",
+   "Whether firms use automated authenticity-detection tools in substantive testing was not found.",
+   "The auditor decides whether evidence is authentic enough to rely on, with out-of-band verification of suspicious items."
+  ],
+  "who": "MindBridge, BDO practitioner, regulators"
+ },
+ {
+  "id": "assurance-substantive-testing-05",
+  "title": "Idea: testing AI-generated client information, or the controls over it",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: when a client uses AI to categorise expenses or prepare accruals, the auditor may not see how the output was produced.",
+  "approach": [
+   "The AICPA practice aid (October 2026) says auditors may test AI outputs substantively; if that is not enough, they should test controls.",
+   "Where the process is a black box, the auditor may need to relate inputs to outputs and explore non-traditional evidence sources.",
+   "The auditor decides whether substantive tests alone suffice or controls must be tested."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-substantive-testing-06",
+  "title": "Generative AI assistant helps teams design substantive procedures (KPMG Clara)",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Teams must tailor substantive procedures to assessed risks and the entity, which means reading engagement documents and methodology.",
+  "approach": [
+   "KPMG said in July 2024 it had integrated generative AI into Clara for 90,000 auditors to develop substantive procedures.",
+   "The assistant works with engagement documentation and methodology. No outcomes published (self-reported).",
+   "The engagement team member stays responsible for results and documentation, and auditors remain in control of decisions."
+  ],
+  "who": "KPMG"
+ },
+ {
+  "id": "assurance-substantive-testing-07",
+  "title": "Excel agent cleans and reconciles ledger data to the trial balance",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Raw client data arrives with mixed fields, inconsistent dates and blank rows, and preparing it for testing is repetitive, slow and error-prone.",
+  "approach": [
+   "Two University of Akron academics built a ChatGPT Excel agent that asks approval before changing data and reconciles to the trial balance.",
+   "A simulated clean, validate and reconcile of 59,157 rows took about 10 minutes, against many hours manually (independent, per the authors).",
+   "The auditor approves the plan and reviews the reconciliation and the generated documentation."
+  ],
+  "who": "University of Akron academics"
+ },
+ {
+  "id": "assurance-substantive-testing-08",
+  "title": "Technology-assisted selection of items to test",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "PCAOB standards covered audit samples but not items chosen when testing all items or specific items, and auditors were already using technology to choose them.",
+  "approach": [
+   "Tools identify and select journal entries, high-risk items or samples; amended PCAOB rules apply the same testing requirements however items are selected.",
+   "All six US network firms reported tools that select samples (self-reported); a Thomson Reuters customer says they significantly improve sample selection (vendor-published).",
+   "The auditor challenges how the tool classified items as low risk and decides what testing the unflagged remainder needs."
+  ],
+  "who": "US global network firms, Thomson Reuters, Oberlander"
+ },
+ {
+  "id": "assurance-substantive-testing-09",
+  "title": "AI risk scoring to cut substantive sample sizes (Cherry Bekaert on MindBridge)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Firms relying only on a third-party audit methodology may need much of their assurance from sampling, tying up seniors for hours selecting or testing items.",
+  "approach": [
+   "Cherry Bekaert adopted MindBridge in 2020 and built it deliberately: standards mapping, methodology, quality-control validation and firm-wide policy.",
+   "The aim is more assurance from risk scoring of full populations, hence smaller samples; 66% reduction on an illustrative client (vendor-published).",
+   "Associates keep autonomy to make decisions and exercise professional judgment."
+  ],
+  "who": "Cherry Bekaert, MindBridge"
+ },
+ {
+  "id": "assurance-substantive-testing-10",
+  "title": "Agents match sampled items to supporting documents and bank activity",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Vouching means opening many differently formatted invoices, contracts and bank records and tracing each sampled amount by hand; one customer put it at about two full days per engagement.",
+  "approach": [
+   "Tools extract data from varied documents, match sampled items to evidence and flag gaps. Users include PwC, Thomson Reuters, Sanville & Co.",
+   "A Kentucky firm owner reports engagement time falling from about two days to five or six hours (vendor-published).",
+   "Auditors work the exceptions and analyse differences; each match carries an evidence trail a reviewer can check."
+  ],
+  "who": "PwC, Thomson Reuters, Sanville & Co, Fieldguide"
+ },
+ {
+  "id": "assurance-substantive-testing-11",
+  "title": "Firm-built Excel agents for evidence-heavy tests of details (FGMK on DataSnipper)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "FGMK auditors often receive unorganised client files, such as PDFs of over 100 pages, so preparers and reviewers spend significant time finding evidence for each selection.",
+  "approach": [
+   "A pilot group at FGMK used DataSnipper Excel Agents to find evidence in client PDFs and trace revenue to contracts.",
+   "Time per selection fell from 30-45 minutes to about 5 minutes of review (vendor-published); firm-wide adoption is planned.",
+   "Reviewer-side agents check consistency across a workbook. The auditor signs off at the end."
+  ],
+  "who": "FGMK, DataSnipper"
+ },
+ {
+  "id": "assurance-substantive-testing-12",
+  "title": "Excel evidence snipping and AI extraction for tie-out and vouching (DataSnipper)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Auditors reconcile numbers from invoices, bank statements and inventory documents to transactions by hand, and reviewers must re-find the evidence.",
+  "approach": [
+   "The auditor snips values from source documents into Excel, keeping a link to the source; AI adds extraction from unstructured documents.",
+   "DataSnipper says AI pre-validated more than two million data points from client documents in 2025 (vendor-published).",
+   "The auditor selects and snips the evidence; the reviewer clicks through to the source."
+  ],
+  "who": "DataSnipper"
+ },
+ {
+  "id": "assurance-substantive-testing-13",
+  "title": "Automated financial-statement tie-out and testing in fund audits (PwC pilot)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Fund audits require financial-statement tie-outs and testing of extracted data and documents, a large volume of repeat work per engagement.",
+  "approach": [
+   "PwC's tool extracts, organises and tests financial data and documents for non-registered fund-to-fund audits, automating parts of tie-out and testing.",
+   "In October 2025 it was being tested with certain asset and wealth management engagement teams, with a plan to expand the pilot.",
+   "No outcomes published (self-reported); human checkpoints are not described in the source."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "assurance-substantive-testing-14",
+  "title": "Language-model contract and lease review to target revenue and lease testing",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Checking many contracts or contracts spanning hundreds of pages is repetitive and slow, and a tool that only screens for a term can be mistaken for a complete read.",
+  "approach": [
+   "Thomson Reuters' CoCounsel Document Analysis uses agentic AI to review client documents at scale; early adopters report up to 70% faster (vendor-published).",
+   "The UK regulator's illustrative design extracts risk indicators from contracts and scores each one; those above a threshold form the sample.",
+   "The auditor sees which indicators were present, tests the selected contracts, and cannot assume checking is done once AI has helped."
+  ],
+  "who": "Thomson Reuters, EY, RSM Australia"
+ },
+ {
+  "id": "assurance-substantive-testing-15",
+  "title": "Agents applied to judgment-heavy tests such as complex revenue and memo checks",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Revenue with complex terms such as rebates needs judgment-heavy testing that routine tools did not cover, and memos can describe something the data does not support.",
+  "approach": [
+   "PwC's US assurance transformation leader said the firm was applying AI agents to assess whether US pharmaceutical rebate revenue was recorded properly.",
+   "EY's assurance AI leader expects agents to flag memos not supported by the data; this is an expectation, not a result.",
+   "No outcomes published (self-reported). Humans oversee agent testing and the auditor reviews flagged inconsistencies."
+  ],
+  "who": "PwC, EY"
+ },
+ {
+  "id": "assurance-substantive-testing-16",
+  "title": "Analytical procedures with technology-built expectations from detailed or unstructured data",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Year-over-year comparisons dominate substantive analytics; only 11% of 54 surveyed US firms have an automated solution, and practice has diverged on how such procedures are categorised.",
+  "approach": [
+   "Draft ISA 520 guidance says tools may structure unstructured industry reports or model revenue against cost of sales to sharpen expectations.",
+   "Deloitte Netherlands (internal audit) and KPMG (SOX) describe 100% transaction coverage where data quality allows.",
+   "The auditor judges whether the expectation is precise enough, investigates differences and obtains evidence for management's explanations."
+  ],
+  "who": "Deloitte Netherlands, KPMG US"
+ },
+ {
+  "id": "assurance-substantive-testing-17",
+  "title": "Digital confirmation platforms and direct, authenticated access to bank data",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Firms prepared and chased bank, customer and supplier confirmations by hand, and external evidence often arrives as screenshots or PDFs that can be forged cheaply.",
+  "approach": [
+   "Platforms create, send and track confirmations and authenticate responses. Users include Moore Polska and Crowe Spain; BDO NL tested direct bank feeds.",
+   "The vendor's case study says Moore Polska saved up to 20 hours per audit (vendor-published).",
+   "The auditor controls the confirmation request, judges response reliability and investigates anomalies that bank-data analytics flag."
+  ],
+  "who": "Moore Polska, Crowe Spain, BDO NL, Circit"
+ },
+ {
+  "id": "assurance-substantive-testing-18",
+  "title": "Drone and imaging tools for inventory counts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Inventory observation requires auditors at counts of large warehouses and outdoor stock, which is slow and disruptive; standards are unclear on remote observation.",
+  "approach": [
+   "EY ran a 2018 proof of concept where drones scan barcodes and labels and send data to the audit platform for reconciliation.",
+   "An academic study found drone counts took 19 hours against 681 manually, with error rates falling from 0.15% to 0.03% (independent).",
+   "The auditor sets scan parameters and sampling, reconciles results and judges the evidence obtained by alternative means."
+  ],
+  "who": "EY, academic study"
+ },
+ {
+  "id": "assurance-substantive-testing-19",
+  "title": "Idea: AI-generated independent expectations and challenge for accounting estimates",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: accounting estimates had the highest finding rate in IFIAR's 2025 survey, 112 of 498 inspected audits (22%).",
+  "approach": [
+   "An AI system supplies contradictory evidence or an alternative estimate that the auditor weighs against management's estimate.",
+   "In an experiment, auditors given contradictory evidence by their firm's AI proposed smaller adjustments than those given it by a human specialist.",
+   "The auditor evaluates the evidence, any specialist's advice and management's estimate, and decides on adjustments."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-substantive-testing-20",
+  "title": "Agents run routine substantive tests, moving to orchestrated end-to-end runs",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Routine testing such as expense vouching and unrecorded-liability searches means pulling samples, extracting data and marking pass or fail, which absorbs junior staff time.",
+  "approach": [
+   "KPMG announced Clara agents (April 2025) for expense vouching and unrecorded liabilities; in April 2026 it described orchestration agents, piloting summer 2026.",
+   "Fieldguide says its Field Orchestrator went live in June 2026, with the unrecorded-liabilities search as its first end-to-end test.",
+   "The auditor confirms the plan, reviews outputs after each phase and exceptions, and signs off. No measured results (self-reported)."
+  ],
+  "who": "KPMG, Fieldguide, DataSnipper"
+ },
+ {
+  "id": "assurance-substantive-testing-21",
+  "title": "Auditor and client agents exchange evidence requests, with workpapers reviewed (EY pilot)",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Selecting items, requesting and chasing client support, and assembling workpapers is manual and slow.",
+  "approach": [
+   "EY described pilots where its agents make preliminary selections and request support; the client's agents collect and send it back.",
+   "EY's agents then prepare workpapers. EY says its multi-agent framework is embedded in all audit phases, with end-to-end support expected by 2028.",
+   "Humans review the workpapers the agents prepare. No outcomes published (self-reported)."
+  ],
+  "who": "EY"
+ },
+ {
+  "id": "assurance-substantive-testing-22",
+  "title": "Firm-wide agent platforms draft substantive workpapers for review (EY, Deloitte, Grant Thornton)",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Global firms need consistent methodology across thousands of engagements, and staff fieldwork takes hours per workpaper; a benchmark team estimated 2-12 hours each.",
+  "approach": [
+   "Deloitte (June 2026) says Omnia agents execute preliminary procedures; EY (April 2026) and Grant Thornton US (May 2026) describe similar agent platforms.",
+   "In a benchmark, the best model strictly passed 69.17% of workpaper tasks in one attempt but 44.44% across all eight attempts (vendor-published).",
+   "Professionals review preliminary conclusions, and Grant Thornton says professionals supervise every step."
+  ],
+  "who": "EY, Deloitte, Grant Thornton US"
+ },
+ {
+  "id": "assurance-substantive-testing-23",
+  "title": "Idea: a second AI reviews AI-performed substantive work for errors",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: senior review of staff workpapers takes time and can miss errors, and AI tools could review work for omissions or inconsistencies.",
+  "approach": [
+   "The AICPA practice aid says one AI tool may perform a procedure and another review it, without reducing the auditor's supervision duties.",
+   "In a benchmark, the best reviewing model raised strict pass on agent-completed workpapers from 28.89% to 62.22% (vendor-published).",
+   "A human reviewer remains responsible for the reviewed workpaper."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-substantive-testing-24",
+  "title": "AI-native audit pilot testing full populations instead of samples (PwC Australia)",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Auditors spend time on data gathering and documentation rather than analysis, and sampling limits the scrutiny applied to balances.",
+  "approach": [
+   "PwC Australia said in October 2025 it was rolling out an AI-native platform in a global pilot, with agents testing full populations.",
+   "It starts with five audit clients and plans to reach all by 2028. No results published (self-reported).",
+   "The auditor investigates every item identified and the team reviews whether the tool met its objective; PwC says humans keep final judgments."
+  ],
+  "who": "PwC Australia"
+ },
+ {
+  "id": "assurance-substantive-testing-25",
+  "title": "Specialist audit firm built to test every transaction in benefit-plan audits (Ledgerline)",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "The annual 401(k) audit is described as a four-month chore of requests and follow-ups, with testing a sample of contributions extrapolated to the plan.",
+  "approach": [
+   "Ledgerline, a pre-launch specialist audit firm, says it will pull data from source systems and test the whole population, not a sample.",
+   "Its CEO says AI agents paired with deterministic code can check every deposit and distribution and cite the plan provision tested.",
+   "A person stays accountable for every conclusion. No outcomes published (self-reported)."
+  ],
+  "who": "Ledgerline"
+ }
+]

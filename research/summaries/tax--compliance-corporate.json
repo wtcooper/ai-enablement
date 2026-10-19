@@ -1,0 +1,314 @@
+[
+ {
+  "id": "tax-compliance-corporate-01",
+  "title": "AI maps ledger and trial-balance data to tax accounts, with tie-out checks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Ledger data from many entities and countries must be extracted, mapped to tax accounts and checked before a return is prepared, and a misclassified figure can flow through unflagged.",
+  "approach": [
+   "EY describes a GenAI tool that standardises ledger data and maps it with pre-vetted prompts; Thomson Reuters aims for agentic mapping.",
+   "EY says the multi-country mapping step can become a two-day process in place of weeks (vendor-published; no client named).",
+   "A qualified team member reviews the mapping before loading, and the preparer ties a sample of figures to source documents."
+  ],
+  "who": "EY, Thomson Reuters"
+ },
+ {
+  "id": "tax-compliance-corporate-02",
+  "title": "Agents read K-1 footnotes, map tax treatments and learn from logged overrides",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Data arrives from several systems in different formats, and K-1 footnotes needed trained staff, heavy human review and group discussion when a footnote was unfamiliar.",
+  "approach": [
+   "PwC says agents assess a footnote, state how they interpreted it and give a confidence level, working within its Agent OS.",
+   "PwC's AI tax leader says one person now reviews where three might have gathered; no figures published (self-reported).",
+   "The reviewer checks flagged items, and every override carries a recorded reason the agent learns from."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "tax-compliance-corporate-03",
+  "title": "AI compares returns and source data year on year, flagging anomalies",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reviewers of corporate returns compare against prior years and source schedules by hand, while tax authorities increasingly use real-time analytics to find errors.",
+  "approach": [
+   "EY says AI-enabled comparison can pinpoint inconsistencies; Baker Tilly describes AI flagging unusual effective tax rate movements across entities.",
+   "Deloitte cites agents flagging anomalies in source data and reconciliations for human review; Corptax lists PDF comparison on its roadmap.",
+   "The reviewer decides which flagged items matter, and the preparer resolves each before sign-off. No outcome figures are published."
+  ],
+  "who": "EY, Baker Tilly, Deloitte, Corptax"
+ },
+ {
+  "id": "tax-compliance-corporate-04",
+  "title": "Validation agents critique other agents' output; reviewers do first-level review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reviewers face rising volumes of work in which errors are quiet and technical, and now receive conclusions to review rather than subtotals to check.",
+  "approach": [
+   "A Thomson Reuters Institute recap says some seminar attendees use validation agents to critique their own agents' outputs.",
+   "OpenAI's 2026 job listing includes first-level review and validation of automated provision outputs. No outcome figures are published.",
+   "A named reviewer signs off the compliance output and samples both AI-flagged and unflagged items."
+  ],
+  "who": "Seminar attendees, OpenAI (job listing)"
+ },
+ {
+  "id": "tax-compliance-corporate-05",
+  "title": "Preparation shifts to AI and staff review it, with fewer review layers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Today a staff-level team member does most compliance preparation, followed by layers of review.",
+  "approach": [
+   "EY says AI will in future do much of the preparation while staff monitor it, and fewer review levels may be needed.",
+   "PwC says complex outputs such as tax calculations keep multi-eye review, while simple diagnostics may not need three layers.",
+   "A qualified professional reviews AI-prepared output. No outcome figures are published."
+  ],
+  "who": "EY, PwC"
+ },
+ {
+  "id": "tax-compliance-corporate-06",
+  "title": "Agents roll forward prior-year workpapers and prepare review-ready business returns",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Business-return preparation involves inconsistent client data and review-heavy processes, and most CPA automation had focused on personal returns because business returns were too complex.",
+  "approach": [
+   "Byron says agents roll prior-year workpapers into a current-year workbook, request missing information and produce source-linked, confidence-scored output.",
+   "Byron says its extraction is more than 97% accurate (vendor-published); Thomson Reuters and RSM describe similar plans.",
+   "Accountants verify outputs and a professional gives final review before filing."
+  ],
+  "who": "Byron, Thomson Reuters, RSM"
+ },
+ {
+  "id": "tax-compliance-corporate-07",
+  "title": "In-house tax team moves from outsourced preparation to agent-driven return computation",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "A company sending its income, gross receipts and property tax compliance to outside preparers must manage vendors, reconcile provision to return and track deadlines through spreadsheets and email.",
+  "approach": [
+   "OpenAI's tax team listed a 2025 role to move to internal, agent-powered return computation on version-controlled tax-logic libraries, with a Corptax implementation.",
+   "OpenAI tax staff demonstrated live automation pipelines in 2026; a 2025 listing states a 12-month goal to automate the tax stack (self-reported).",
+   "A manager oversees vendors during the transition, and reviewers perform first-level review of automated outputs."
+  ],
+  "who": "OpenAI"
+ },
+ {
+  "id": "tax-compliance-corporate-08",
+  "title": "Large firms build agent platforms to create and manage tax agents",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Firms and clients need many agents for data collection and compliance tasks, and dozens of unmanaged agents lack performance tracking and coordination.",
+  "approach": [
+   "EY describes a Tax Agent Factory to build and manage agents at scale; KPMG and Anthropic put Claude inside KPMG's client platform.",
+   "EY said in March 2025 it planned as many as 150 agents for 80,000 tax professionals (self-reported); no usage data published.",
+   "Human review of agent outputs continues inside client engagements, with firm-level governance committee oversight at PwC."
+  ],
+  "who": "EY, KPMG, Anthropic, PwC"
+ },
+ {
+  "id": "tax-compliance-corporate-09",
+  "title": "AI builds R&D credit evidence from project, payroll and ledger systems",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Form 6765 Section G, a business-component breakdown of research expenses, becomes required for tax years after 2025, and interview-based after-the-fact studies struggle to meet that standard.",
+  "approach": [
+   "Thomson Reuters says Neo.Tax links project, payroll and ERP systems, groups tickets into components, applies the four-part test and populates Form 6765.",
+   "Thomson Reuters says filing time falls from weeks to days and companies report 50-75% savings versus accounting-firm fees (vendor-published).",
+   "An R&D tax lead confirms each component qualifies; project owners confirm data; the preparer reviews Section G narratives and cost allocation."
+  ],
+  "who": "Thomson Reuters, Baker Tilly, EY"
+ },
+ {
+  "id": "tax-compliance-corporate-10",
+  "title": "In-house tax team uses a governed AI platform for data reconciliation",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Vendor Kognitos argues the binding constraint in corporate tax is now assembling and reconciling source data from ledgers and systems, not the calculation itself.",
+  "approach": [
+   "Savant says its platform turns messy data into governed outputs with an audit trail, and planned a 2026 session with Oxford Industries.",
+   "Savant's demonstrations covered multi-system reconciliation, document extraction and reporting with lineage; no outcome figures are published for Oxford (vendor-published).",
+   "Tax staff review reconciliation exceptions, and a data owner approves write-backs or reviews a log of them."
+  ],
+  "who": "Oxford Industries, Savant, Kognitos"
+ },
+ {
+  "id": "tax-compliance-corporate-11",
+  "title": "Cited AI tax research inside compliance tools, with every authority verified",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Compliance staff leave their return or workpaper tool to research positions, and general chatbots can invent authorities, creating a professional-conduct risk.",
+  "approach": [
+   "Thomson Reuters embedded CoCounsel Tax in ONESOURCE in late 2024; Bloomberg Tax added AI insights to Workpapers and Compliance Tracker.",
+   "Thomson Reuters says junior staff can handle more complex questions with cited sources; no figure is published (vendor-published).",
+   "The preparer reads each cited authority before relying on it, and a reviewer cross-checks authorities in supporting memos."
+  ],
+  "who": "Thomson Reuters, Bloomberg Tax"
+ },
+ {
+  "id": "tax-compliance-corporate-12",
+  "title": "Agents track filing calendars and rule changes, reporting to the tax team",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Corporate departments track due dates, extensions and rule changes across many entities, often in spreadsheets, while forms and instructions change frequently.",
+  "approach": [
+   "Bloomberg Tax announced an AI Assistant in its Compliance Tracker; Orbitax's XatBot tracks regulatory changes and sends comparison reports.",
+   "Bloomberg Tax says the assistant saves time and reduces risk, without a measurement (vendor-published).",
+   "A tax technical lead decides which changes affect returns or payments, and a person approves any filing or payment action."
+  ],
+  "who": "Bloomberg Tax, Orbitax, Corptax"
+ },
+ {
+  "id": "tax-compliance-corporate-13",
+  "title": "Pre-filing audit-risk prediction and anomaly screening of the return",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "The IRS already uses machine learning to score corporate returns line by line, but preparers get no equivalent signal before filing.",
+  "approach": [
+   "Corptax lists audit prediction to address potential triggers early on its AI roadmap; no outcome figures are published (vendor-published).",
+   "Deloitte's framework says low company AI adoption against a high-adoption tax authority brings heightened audit and dispute exposure.",
+   "The reviewer decides whether a flag is an error, a reportable position or a documentation gap; tax decides whether to change course."
+  ],
+  "who": "Corptax, Deloitte"
+ },
+ {
+  "id": "tax-compliance-corporate-14",
+  "title": "Continuously updated effective-tax-rate and cash-tax modelling with what-if scenarios",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Static spreadsheet models are slow to update when entity structure, transfer pricing or supply chains change, so the effect on cash taxes is seen late.",
+  "approach": [
+   "Baker Tilly describes AI engines that ingest financial data and entity structures to calculate effective rates continuously and run what-if scenarios.",
+   "It also describes agents that download ERP trial balances, summarise them and compare to prior calculations; no figures published (vendor-published).",
+   "Tax reviews scenario outputs before decisions are made."
+  ],
+  "who": "Baker Tilly, Kognitos"
+ },
+ {
+  "id": "tax-compliance-corporate-15",
+  "title": "Compliance bought as an AI-enabled managed service, with AI use disclosed",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Corporate tax departments outsource return work, and 77% want providers to use GenAI while 59% are not sure whether their own companies do (vendor-published).",
+  "approach": [
+   "Deloitte says some companies look to outsourcing to gain AI-powered solutions without capital outlay and upgrade costs.",
+   "The IRS Office of Professional Responsibility says practitioners should disclose AI activities; in-house teams can ask providers what AI is used.",
+   "Client and provider agree what AI does and who reviews it, and the tax director reviews disclosures at renewal."
+  ],
+  "who": "Thomson Reuters survey, Deloitte"
+ },
+ {
+  "id": "tax-compliance-corporate-16",
+  "title": "Idea: value-based or fixed-fee pricing for AI-enabled compliance work",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: AI cuts preparation time, and IRS guidance says billing for manual time not spent, or double billing AI-assisted tasks, may breach the fee rule.",
+  "approach": [
+   "Bloomberg Tax reports top firms exploring value- and outcome-based fees as AI cuts billable hours.",
+   "The AICPA is seeking IRS clarification, saying the guidance does not appear to allow value pricing and overlooks software and governance costs.",
+   "An RSM partner illustrated a 20-hour advisory report taking 10 hours with AI (self-reported); the engagement partner sets the fee basis."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-corporate-17",
+  "title": "Tax analysts build own pipelines and agents with low-code and AI tools",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Data-integration pipelines would otherwise sit in an IT queue for about two months, and only half of corporate tax departments provided technology training in 2025.",
+  "approach": [
+   "Seminar attendees described prompting AI tools to build data pipelines in about 15 minutes instead of a two-month IT queue (self-reported).",
+   "Orbitax's Autopilot is a conversational workflow builder inside its international tax platform.",
+   "Any pipeline is independently reviewed and documented before it feeds a return, and each automation has a named owner."
+  ],
+  "who": "TEI seminar attendees, Orbitax"
+ },
+ {
+  "id": "tax-compliance-corporate-18",
+  "title": "A tax model explains its inputs and assumptions; approved logic is locked",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "CFOs ask whether AI-prepared tax work will hold up under IRS scrutiny; PwC says explainability, traceability and auditability are the test.",
+  "approach": [
+   "PwC says a model it uses for effective tax rates explains inputs, output and assumptions, so the logic chain replaces a memo.",
+   "Once approved, logic is locked and people suggest improvements instead of making ad hoc changes; no figures are published (self-reported).",
+   "Tax calculation outputs keep multi-eye human review, and an approval step precedes locking."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "tax-compliance-corporate-19",
+  "title": "Keep a record of AI use and verification with each AI-assisted item",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "If no record shows what an AI tool did and what a person checked, the team cannot show the process behind an output when it is later challenged.",
+  "approach": [
+   "Wolters Kluwer advises recording the prompt, output, citations, validation steps and conclusion; Thomson Reuters CoCounsel Tax returns cited sources and reasoning.",
+   "The IRS Office of Professional Responsibility lists documenting AI use and verification as a best practice. No outcome is published.",
+   "The preparer records what was verified and signs off; the reviewer confirms the record exists before sign-off."
+  ],
+  "who": "Wolters Kluwer, Thomson Reuters, IRS OPR"
+ },
+ {
+  "id": "tax-compliance-corporate-20",
+  "title": "Approved enterprise AI tools, vendor contract terms and revalidation after model changes",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Preparers use public AI tools with return data, risking exposure under disclosure law, and silent vendor model changes can alter outputs without triggering review.",
+  "approach": [
+   "The IRS Office of Professional Responsibility says practitioners must use only secure, enterprise-approved AI for client data.",
+   "An AICPA framework lists contract terms: accuracy service level with remedy, 60 days' notice of material model changes, audit rights, error notice.",
+   "The tax director approves the tool list, and tax technology staff revalidate outputs after each notified vendor change."
+  ],
+  "who": "IRS OPR, AICPA, KPMG Germany survey"
+ },
+ {
+  "id": "tax-compliance-corporate-21",
+  "title": "Gated rollout of AI-drafted return work with logging, thresholds and unaided-competence checks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Faster AI preparation can make review less rigorous in practice, few teams measure what AI does, and juniors who never draft may not learn to review.",
+  "approach": [
+   "An AICPA framework phases adoption from research and summarisation to AI-drafted positions, each gated by full logging, override-rate review and error thresholds.",
+   "Thomson Reuters suggests tracking baselines for cycle time, documentation hours and audit exposure; one survey found only 20% measure GenAI return (vendor-published).",
+   "The signing preparer verifies every AI-drafted position; novel positions escalate to senior review; managers run an annual unaided-capability check."
+  ],
+  "who": "AICPA framework, Thomson Reuters"
+ },
+ {
+  "id": "tax-compliance-corporate-22",
+  "title": "Idea: deterministic engine computes the return; language model writes checked rule logic",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: language models asked to compute a return directly do so unreliably, and returns must be computed exactly while rules keep changing.",
+  "approach": [
+   "Researchers propose using the model to translate statutes and forms into executable logic checked against test returns, with a deterministic engine computing.",
+   "One such system matched all 51 held-out benchmark returns against 66% for the strongest language model alone (independent research).",
+   "Tax technology staff review generated logic and test coverage; the preparer reviews the computed return and flagged exceptions."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-corporate-23",
+  "title": "Idea: an input-check gate holds contradictory cases for a person before computing",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "This is an idea: real inputs are often incomplete or contradictory, and a model computing straight through a contradiction returns a confident number with no warning.",
+  "approach": [
+   "Researchers add one extra model call that checks the input for conflicts before computing, and abstain when it finds one.",
+   "In tests, strong models computed through injected contradictions without signalling the conflict in 63% to 76% of cases (independent research).",
+   "A person resolves every case where the gate abstains."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-compliance-corporate-24",
+  "title": "Idea: always-on compliance monitoring replaces periodic batch preparation",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "This is an idea: compliance is prepared in periodic batches so issues surface at deadlines, while some authorities already see transactions as they happen.",
+  "approach": [
+   "EY practitioners describe AI agents that analyse compliance metrics continuously and trigger alerts or remediation before deadlines.",
+   "Deloitte's fourth scenario envisions near real-time compliance with preventive AI-driven controls. No outcome figures are published.",
+   "A person reviews alerts and decides on remediation."
+  ],
+  "who": "No named deployment"
+ }
+]

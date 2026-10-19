@@ -1,0 +1,185 @@
+[
+ {
+  "id": "assurance-specialists-01",
+  "title": "Valuation analysts use AI to gather data and build routine model parts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Routine valuation tasks such as importing annual-report data, adjusting multiples and benchmarking against comparable public companies previously took hours of manual effort.",
+  "approach": [
+   "Big Four valuation leaders told a 2025 conference that AI or robotic automation tools now handle data gathering, formatting and routine modelling.",
+   "Analysts focus on interpreting outputs and validating AI-generated results; final valuations stay with people.",
+   "No time or cost figures were given (self-reported). Evidence comes from valuation advisory practices, not audit-employed specialists."
+  ],
+  "who": "PwC, Deloitte, KPMG, EY valuation leaders"
+ },
+ {
+  "id": "assurance-specialists-02",
+  "title": "Valuation providers build third-party AI analytics into their methods",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fund managers are asked for faster, more frequent and more traceable valuations under investor and audit scrutiny, often without extra budget or headcount.",
+  "approach": [
+   "CohnReznick announced it is adding 73 Strings valuation analytics to its methods to analyse large data sets (self-reported; no measurements published).",
+   "Valutico's April 2026 release adds AI recommendations for peer and transaction selection (vendor-published; no figures published).",
+   "Valuation professionals retain judgment on complex inputs and conclusions, and review and select peers and inputs."
+  ],
+  "who": "CohnReznick, Valutico, 73 Strings"
+ },
+ {
+  "id": "assurance-specialists-03",
+  "title": "Valuers use generative AI to draft report sections like market commentary",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Valuation reports contain narrative sections such as market commentary, which the valuation standards body counts among the more straightforward tasks AI can automate.",
+  "approach": [
+   "The International Valuation Standards Council says some valuers already frequently use ChatGPT or other public AI to help write report parts.",
+   "In other cases, report writing may be a fully automated process within the firm.",
+   "The valuer verifies data sources and confirms facts before issuing the report. No outcome figures published (independent)."
+  ],
+  "who": "International Valuation Standards Council (no named firm)"
+ },
+ {
+  "id": "assurance-specialists-04",
+  "title": "AI-assisted quality-control review of valuation reports (idea)",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: valuation reports must use the correct basis of value, be internally consistent and rest on a complete scope of work.",
+  "approach": [
+   "The International Valuation Standards Council paper suggests AI could review reports for the correct basis of value and for inconsistencies.",
+   "It could also check that the scope of work contains all relevant elements.",
+   "The valuer or reviewer remains responsible for the report."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-05",
+  "title": "Agents build complete valuation models; analysts supply and review assumptions (idea)",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "This is an idea, not a deployment: the judgment in a valuation model sits in company-specific assumptions, on which professional analysts legitimately disagree.",
+  "approach": [
+   "Researchers report that language-model agents can now construct complete financial models, and built a benchmark from 1,001 professional valuations to grade them.",
+   "Agents are far better at building models than at deriving the company-specific assumptions that drive valuation (independent research).",
+   "The analyst supplies and challenges the company-specific assumptions."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-06",
+  "title": "Actuaries use generative AI for analysis and code under model-validation standards (idea)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: actuaries must explain methods and justify assumptions, which opaque 'black-box' language models make difficult.",
+  "approach": [
+   "The American Academy of Actuaries treats generative AI as a model, so the US modeling standard applies and results need validation.",
+   "A July 2026 benchmark found frontier models strong on standard actuarial knowledge but much weaker on case reasoning and jurisdiction-sensitive practice (independent).",
+   "The actuary vets and validates AI recommendations before applying them."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-07",
+  "title": "Actuarial audit specialists test a client's AI reserving model (idea)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: black-box reserving models give auditors little visibility, so usual in-model checks of claim development may no longer work.",
+  "approach": [
+   "A Forvis Mazars Ireland actuarial director describes ten steps, including upskilling audit teams in machine learning and benchmarking against traditional reserving methods.",
+   "Steps also include testing which inputs drove outputs, assessing model architecture and testing reproducibility (self-reported).",
+   "Actuarial audit teams apply expert judgment and professional skepticism on when to use more sophisticated techniques."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-08",
+  "title": "Actuarial auditors build AI challenger to test a client's reserving model (idea)",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: if a client's black-box model claims results traditional methods cannot validate, the auditor has no independent comparison.",
+  "approach": [
+   "The Forvis Mazars author says using one AI model to challenge another could become commonplace in actuarial audit (self-reported opinion).",
+   "It could help identify user bias in model selection and design, and requires audit teams to build coding skills.",
+   "The specialist judges whether differences between the client's model and the challenger are explained."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-09",
+  "title": "Auditors obtain AI-use disclosures when management's expert uses AI (idea)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: a specialist's work is technical and often not fully transparent to the auditor, and AI inside an expert's valuation adds opacity.",
+  "approach": [
+   "The valuation standards council says valuers should disclose whether, how and why AI was used; its January 2026 draft would mandate it.",
+   "Auditors already evaluate a specialist's data, assumptions and methods, so such disclosures would feed that evaluation.",
+   "The engagement partner and team evaluate whether the specialist's work provides sufficient appropriate evidence."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-10",
+  "title": "Auditors treat a client's significant AI use like complex valuation models (idea)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: clients embed AI in financial reporting while governance is immature, with only 6% of audit partners rating it advanced at their largest client.",
+  "approach": [
+   "The AICPA practice aid says client AI with a significant reporting role may warrant considerations like external specialists and complex valuation models.",
+   "The Australian auditing standards board says restricted access to a third-party AI application's logic may be a scope limitation (independent sources).",
+   "The auditor remains responsible for the audit and the opinion."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-11",
+  "title": "AI and data-science experts engaged as auditor's experts (idea) (idea)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: current specialist guidance gives valuation, actuarial, environmental, legal and tax examples, not AI, yet audit teams need people who can evaluate AI systems.",
+  "approach": [
+   "Nigeria's chartered accountants institute asked the IAASB in July 2025 to add AI and machine-learning experts to its specialist guidance examples.",
+   "Big Four job postings requiring AI expertise rose to nearly 7% in 2025 from under 2% in 2022; hiring evidence only (independent).",
+   "The auditor evaluates the adequacy of the expert's work for the auditor's purposes."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-specialists-12",
+  "title": "Auditors use a firm-specific language model on a complex inventory valuation task",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Complex valuation tasks require auditors to produce correct documentation under time pressure.",
+  "approach": [
+   "A field experiment gave 100 auditors at a global audit firm an inventory valuation task, with or without a firm-specific language model.",
+   "Access significantly improved output quality and cut completion time, but not adherence to internal audit guidelines (independent; no figures in abstract).",
+   "Gains were largest for active users and did not differ by auditor experience. Human checkpoints are not described."
+  ],
+  "who": "Global audit firm (unnamed), academic study"
+ },
+ {
+  "id": "assurance-specialists-13",
+  "title": "Tax advisers use AI tools: one in use, a generative assistant announced",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tax professionals spend time searching and analysing tax legislation and case law.",
+  "approach": [
+   "KPMG UK already used Blue J's AI to predict tax scenario outcomes for employees to review, in its 3,000-strong tax team.",
+   "KPMG says the predictive tool forecasts outcomes with 90%+ accuracy (self-reported); this is not the generative product.",
+   "In February 2024 KPMG UK and Blue J announced they will launch Ask Blue J, a generative AI tax assistant.",
+   "Tax professionals review outputs and advise clients. This is tax advisory, not audit tax specialists."
+  ],
+  "who": "KPMG UK, Blue J"
+ },
+ {
+  "id": "assurance-specialists-14",
+  "title": "Automated recalculation and sensitivity testing of management's impairment models (Deloitte UK)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Impairment is a judgemental, higher-risk area, and recalculating management's cash-flow models and running sensitivities by hand takes time away from the assumptions that matter.",
+  "approach": [
+   "Deloitte UK says it deployed automated impairment modelling across its largest audits, recalculating models and running sensitivities.",
+   "In consumer-business audits it ran the modelling across ten entities and identified several calculation inaccuracies (self-reported; error count not given).",
+   "Practitioners apply professional judgement to flagged patterns; impairment specialists provide independent challenge. Deloitte plans to extend it to going concern."
+  ],
+  "who": "Deloitte UK"
+ }
+]

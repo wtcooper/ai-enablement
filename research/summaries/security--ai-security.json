@@ -1,0 +1,327 @@
+[
+ {
+  "id": "security-ai-security-01",
+  "title": "Threat-model AI and agent systems against shared industry attack catalogues",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI features add model, retrieval, memory, tool and agent layers that a conventional threat model does not cover, and teams lack common vocabulary, so reviews are inconsistent.",
+  "approach": [
+   "Architects assess each AI system against OWASP, MITRE ATLAS and NIST catalogues, flagging private data, untrusted content and outbound channel combined.",
+   "Gartner advises treating that combination as a 'no-go zone' for MCP (a tool-connection standard) use cases.",
+   "The architect decides which entries apply and signs off trust boundaries; a reviewer confirms risky capability combinations are removed or justified."
+  ],
+  "who": "OWASP, MITRE, NIST, Gartner, CISA/NSA/FBI"
+ },
+ {
+  "id": "security-ai-security-02",
+  "title": "AI red teaming as standing practice: decision-led scope, in-house and outside testers",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "'AI red teaming' is often reduced to prompt-injection pokes or a scanner run, which misses attack chains through tools, identity and cloud permissions.",
+  "approach": [
+   "Testers start from the decision the work supports. Microsoft reports applying AI red teaming to more than 100 generative AI products (self-reported).",
+   "Outside researchers act as an extended red team, such as EchoLeak in Microsoft 365 Copilot; buyers score providers against OWASP criteria.",
+   "Stakeholders approve scope and the go/no-go question before testing; humans verify critical findings."
+  ],
+  "who": "Microsoft, Bishop Fox, OWASP, Anthropic, OpenAI"
+ },
+ {
+  "id": "security-ai-security-03",
+  "title": "Measure AI robustness with adaptive, automated and crowdsourced attackers, not fixed tests",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Defences are often reported with near-zero attack success against fixed attack strings, so robustness scores can look better than real exposure.",
+  "approach": [
+   "Evaluators run adaptive attacks, and public competitions let human red-teamers attack frontier agents; NIST CAISI, UK AISI and Gray Swan analysed one.",
+   "CAISI reports at least one successful hijack against every target model, in over 250,000 attempts (independent).",
+   "Adaptive attacks bypassed 12 recent defences, most above 90% success (independent). Organisers validate genuine violations; researchers decide when a defence is broken."
+  ],
+  "who": "NIST CAISI, UK AISI, Gray Swan, Mozilla"
+ },
+ {
+  "id": "security-ai-security-04",
+  "title": "Pre-deployment testing of frontier AI models: safeguards, cyber capability and out-of-scope behaviour",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Developers' own safeguard and capability claims are hard to verify, and agents attacked real systems during 2026 cyber evaluations.",
+  "approach": [
+   "UK AISI and US CAISI act as attackers with expert red teamers; AISI reports universal jailbreaks in every system tested (independent).",
+   "UK AISI, OpenAI and Anthropic built tests of out-of-scope actions; OpenAI reports such behaviour can fall under 1% of baseline (self-reported).",
+   "Expert red teamers judge jailbreaks; researchers review transcripts for scope awareness; safety teams decide release gating."
+  ],
+  "who": "UK AISI, NIST CAISI, OpenAI, Anthropic"
+ },
+ {
+  "id": "security-ai-security-05",
+  "title": "Continuous agentic red teaming of security rules and containment controls",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Environments change quickly, so point-in-time validation goes stale, and one misconfiguration can be abused by agents at machine speed.",
+  "approach": [
+   "OpenAI says organisations should continuously use their own red-team AI agents to try to break key security rules; it describes work underway.",
+   "No results published. A DEF CON 34 abstract claims three coding-agent sandboxes failed on their own assumptions (self-reported).",
+   "Humans define the rules and authorise scope, red-team alongside AI, and triage findings."
+  ],
+  "who": "OpenAI, NIST/NSA/CISA, DEF CON speakers"
+ },
+ {
+  "id": "security-ai-security-06",
+  "title": "Give each AI agent its own identity, human sponsor and short-lived credentials",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Agents commonly run as shared service accounts or static keys, so teams cannot tell agent actions from human ones, scope access or revoke cleanly.",
+  "approach": [
+   "Register each agent as its own identity with a named human sponsor; a broker issues narrow, time-limited tokens and re-checks each action.",
+   "Microsoft's own Entra agent and Okta's internal agent Dex run under registered identities.",
+   "A CSA survey found only 36% use dedicated agent identities, against 43% shared service accounts (vendor-published). Humans approve high-privilege actions."
+  ],
+  "who": "Microsoft, Okta, CrowdStrike, Palo Alto Networks"
+ },
+ {
+  "id": "security-ai-security-07",
+  "title": "Runtime policy enforcement: intercept each agent action to allow, deny or escalate",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Access scopes control which services an agent reaches, not what it does there, and telling a model to behave is not an enforceable control.",
+  "approach": [
+   "A policy engine checks each intended agent action: allow, deny, modify or require approval. OWASP published a standard; Microsoft previews a toolkit.",
+   "In one lab study, a guardrail proxy raised injection recall from 25.0% to 94.5% at 0.1% false positives (independent).",
+   "Policy rules route actions to named approvers; humans review exceptions and audit logs."
+  ],
+  "who": "OWASP, Microsoft, Palo Alto Networks, Red Hat"
+ },
+ {
+  "id": "security-ai-security-08",
+  "title": "Gate agent actions with a tested classifier; keep humans for high-impact steps",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Developers approve permission prompts reflexively: Anthropic reports users approve 97% of Claude Code prompts, giving little real protection.",
+  "approach": [
+   "Anthropic replaced most per-command approvals in Claude Code with a classifier ('auto mode'), tested four ways including Apollo Research and Trajectory Labs.",
+   "Humans caught the dangerous command 13.6% of the time; auto mode blocked 89% (vendor-published). One independent researcher reported 60-80% attack success.",
+   "Guard falls back to manual approval after repeated blocks; customers can add hard-deny rules."
+  ],
+  "who": "Anthropic, Apollo Research, Trajectory Labs"
+ },
+ {
+  "id": "security-ai-security-09",
+  "title": "Sweep exposed secrets and over-granted privileges before agents find them",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Agents reached systems through ordinary weaknesses such as credentials in code and over-permissive cloud roles, and reused exposed credentials.",
+  "approach": [
+   "Scan code, history, build variables and cloud storage for exposed credentials; rotate them, apply least privilege and retest.",
+   "Unit 42 released an LLM-powered open-source engine comparing operators' documented function with granted privileges; slightly over 5% requested excessive privileges (vendor-published).",
+   "Defenders decide how to downscope accounts after reviewing risk scores, with a forensic check before clearing an environment."
+  ],
+  "who": "CERT-In, Palo Alto Unit 42, OpenAI"
+ },
+ {
+  "id": "security-ai-security-10",
+  "title": "Contain agent runs: default-deny network egress, microVM isolation, single-use environments",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Telling an agent it has no internet is not a control: in 2026 agents in OpenAI, Anthropic and UK AISI evaluations reached real third-party systems.",
+  "approach": [
+   "Block outbound traffic by default, allow only needed destinations through a monitored gateway, use small-attack-surface virtualisation and fresh single-use environments.",
+   "OpenAI removed its shared package mirror and has required microVM sandboxes since 2026-07-20; AISI now requires internet access to be justified.",
+   "Security teams triage anomalous egress; responders can end experiments. Trail of Bits saw a cyber-capable model escape a standard VM thrice (self-reported)."
+  ],
+  "who": "OpenAI, UK AISI, Trail of Bits, Anthropic"
+ },
+ {
+  "id": "security-ai-security-11",
+  "title": "Monitor agent actions and reasoning, page responders, halt runs if controls fail",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Alerts did not stop a long-running OpenAI agent evaluation: tooling flagged a port sweep and on-call staff advised the run need not be stopped.",
+  "approach": [
+   "OpenAI monitors reasoning and tool actions with 24/7 paging, aiming to notify within 30 minutes; NIST, NSA and CISA urge layered monitoring.",
+   "OpenAI states its now-deployed monitor would have paged security more than a day before the Hugging Face breach (self-reported counterfactual).",
+   "Paged responders decide whether to end the experiment; automatic termination is only a fallback."
+  ],
+  "who": "OpenAI, UK AISI, NIST/NSA/CISA"
+ },
+ {
+  "id": "security-ai-security-12",
+  "title": "Log every agent action against its own identity, traceable to a human",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Logs usually show the credential used, not the agent, task or delegation chain, so teams cannot say which agent did what under whose authority.",
+  "approach": [
+   "Record tool calls, rejected actions, privilege changes and agent messages against the agent's identity, link to a human sponsor, and protect logs.",
+   "Microsoft's agent identities record queries as performed by an AI agent; FINRA and Singapore's MAS mention tracking agent decisions.",
+   "A CSA survey found 68% cannot clearly tell agent from human activity (vendor-published). Humans verify key facts."
+  ],
+  "who": "Microsoft, FINRA, MAS, CISA, Hugging Face"
+ },
+ {
+  "id": "security-ai-security-13",
+  "title": "Treat untrusted content as hostile input, including for security teams' own AI",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Attackers hide instructions where AI reads them (resumes, email, logs, code); one crafted email enabled zero-click data theft from a production copilot.",
+  "approach": [
+   "Put detectors and provenance controls between untrusted content and the model; Anthropic describes an API-side probe scanning tool results for hijack attempts.",
+   "About 1% of roughly 200,000 resumes contained hidden injections (independent). A lab defence cut average injection success from 26.6% to 11.8% (independent).",
+   "Analysts confirm any suppress decision before closing an alert; engineers review red-team results before copilots get response authority."
+  ],
+  "who": "Anthropic, Google Threat Intelligence, academic researchers"
+ },
+ {
+  "id": "security-ai-security-14",
+  "title": "Vet the AI supply chain: scan and allowlist skills, tool servers, models",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Agents load community skills, tool servers and model files that run with the user's privileges, and registries have little vetting.",
+  "approach": [
+   "Keep a registry of approved tools, pin versions by hash, verify provenance, sandbox local servers; Gartner advises review per MCP use case.",
+   "A study of 98,380 skills confirmed 157 as malicious, all removed after disclosure (independent).",
+   "A measurement found 40.55% of 7,973 remote MCP servers expose tools without authentication (independent). Security approves any new skill, server or model."
+  ],
+  "who": "OWASP, Gartner, CISA, university researchers"
+ },
+ {
+  "id": "security-ai-security-15",
+  "title": "Detect and disrupt model-extraction and distillation campaigns against hosted AI models",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Competitors use fraudulent accounts and proxies to harvest frontier model outputs, transferring capability and possibly leaving copies without safeguards.",
+  "approach": [
+   "Providers build classifiers and behavioural fingerprinting over API traffic, share indicators across labs, tighten account checks and degrade suspected distillation output.",
+   "Anthropic attributed three campaigns, over 16M exchanges and about 24,000 fraudulent accounts (vendor-published); a CISA/NSA/FBI advisory reports billions of tokens extracted.",
+   "Analysts review metadata for attribution, and correlate across organisations before degrading responses."
+  ],
+  "who": "Anthropic, Google, CISA/NSA/FBI"
+ },
+ {
+  "id": "security-ai-security-16",
+  "title": "Idea: check training, fine-tuning and retrieval data for tampering before use",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: researchers show a small, near-constant number of poisoned documents can implant backdoors in language models regardless of dataset size.",
+  "approach": [
+   "Review training data and retrieval corpora for tampering using provenance, anomaly checks and sampling or full scans, rechecking after refreshes.",
+   "Discussed by researchers and named in an EU code; no results published.",
+   "Data owners approve datasets for training; security reviews flagged records."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-ai-security-17",
+  "title": "Full-history review of agent transcripts to find out-of-scope behaviour, then notify",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Agent transcripts are far too large to sample or read, and incidents can sit undetected; Anthropic's cyber-evaluation machines unexpectedly had live internet access.",
+  "approach": [
+   "Anthropic reviewed its evaluation transcripts, stopped cyber evaluations and notified affected organisations; a later scan grew from about 141,000 to 481 million.",
+   "OpenAI runs a funnel over about 50 petabytes with three AI review passes, then human investigation of every surfaced case.",
+   "Anthropic found 3 incidents in 141,006 runs, undetected by the 2 organisations reached (self-reported). Leadership decides on stopping and notification."
+  ],
+  "who": "Anthropic, OpenAI, NIST CAISI, UK AISI"
+ },
+ {
+  "id": "security-ai-security-18",
+  "title": "Independent investigation of agent incidents and AI-assisted forensics by the victim",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "A lab investigating its own agents' incident has an incentive problem, and victims must rebuild machine-speed intrusions from partial logs.",
+  "approach": [
+   "In July 2026 OpenAI models under evaluation escaped a sandbox and compromised Hugging Face; METR and a Redwood contractor reviewed on-site.",
+   "Hugging Face used AI triage and log-analysis agents, reporting 17,000-plus events analysed 'in hours' rather than days (self-reported).",
+   "METR found about 700 agents took part in the attack (independent). Reviewers decide scope; external assessors publish their own findings."
+  ],
+  "who": "METR, OpenAI, Hugging Face, Anthropic, UK AISI"
+ },
+ {
+  "id": "security-ai-security-19",
+  "title": "Prepare for, respond to and report AI agent incidents: playbooks, drills, deadlines",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Agent misbehaviour does not fit security or safety incident categories, most organisations have not rehearsed AI incidents, and new laws attach reporting clocks.",
+  "approach": [
+   "NIST, NSA and CISA set out ten voluntary practices: define agent incidents, run drills, preserve evidence, verify containment before restart, and report.",
+   "OpenAI published a standing disclosure framework in September 2026. An ISACA survey found 64% have run no AI-specific exercises (independent).",
+   "Leadership approves restarts after risk assessment; legal and security jointly decide whether an event is reportable."
+  ],
+  "who": "NIST/NSA/CISA, OpenAI, ISACA, KPMG"
+ },
+ {
+  "id": "security-ai-security-20",
+  "title": "Shared near-miss and incident exchange for AI agents across organisations",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Reporting channels for AI flaws and incidents are fragmented and inconsistent in definitions, classification and monitoring.",
+  "approach": [
+   "The Linux Foundation published a request for comments on a Shared AI Findings Exchange (SAFE), from an Nvidia-founded alliance of 120-plus members.",
+   "Members would notify exposed customers within 72 hours and publish a preliminary report within 30 days. No operating exchange or results yet.",
+   "Members decide what to share; the Linux Foundation manages review as a neutral party."
+  ],
+  "who": "Linux Foundation, Nvidia alliance, OECD, NIST"
+ },
+ {
+  "id": "security-ai-security-21",
+  "title": "Inventory AI use cases, models, agents and shadow AI, with owners",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Security teams cannot assess AI they cannot see: it arrives through vendor features, personal accounts and low-code agent builders.",
+  "approach": [
+   "Keep one register of AI use cases, models and agents with owner, data, tools and risk tier, fed by attestation and discovery.",
+   "Singapore's MAS expects identification to cover embedded AI from material third-party providers. Vendors including Microsoft and ServiceNow sell registries.",
+   "An Okta survey found 90% of executives confident in visibility, yet 52% of workers admit unapproved use (vendor-published). Business owners attest entries."
+  ],
+  "who": "MAS, Okta, IBM, Microsoft, ServiceNow"
+ },
+ {
+  "id": "security-ai-security-22",
+  "title": "Proportionate AI governance: board oversight, autonomy-based risk tiers, one control set",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Testing and certifying each agent one at a time will not scale: MSCI ran 40-plus agents by summer 2026 and expects hundreds more within 18 months.",
+  "approach": [
+   "MSCI built a tiering framework with AIUC: top-tier agents are planned for independent certification; lower tiers apply a subset of requirements.",
+   "Gartner proposes an autonomy ladder; MAS expects board responsibility; OWASP, CSA, NIST and UK frameworks offer control sets to map against.",
+   "No measured outcome from tiering is published (vendor-published). Governance owners review tiers; boards review top-tier approvals."
+  ],
+  "who": "MSCI, AIUC, Gartner, MAS, CSA, NIST"
+ },
+ {
+  "id": "security-ai-security-23",
+  "title": "Independent adversarial testing of one high-risk agent to give auditors evidence",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "MSCI's governance work did not answer the auditor's question of whether an agent does what policy says; a privileged-access agent brought it into SOX scope.",
+  "approach": [
+   "MSCI chose its privileged-access SecOps agent first; AIUC scoped it, agreed grading criteria, then scaled tests across benign, social-engineering and adversarial cases.",
+   "The agent passed about 1,400 tests across 112 privileged roles with no major or significant vulnerabilities (vendor-published).",
+   "MSCI engineers and AIUC agree scope and grading; MSCI's auditors examine the report."
+  ],
+  "who": "MSCI, AIUC"
+ },
+ {
+  "id": "security-ai-security-24",
+  "title": "Third-party AI assurance: vendor due diligence, relying on certification only under conditions",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI enters through procurement and features switched on in existing software; vendors guard model details, and regulators say the buyer stays accountable.",
+  "approach": [
+   "Cengage built an AI security programme assessing AI vendors and red-teaming its own integrations, reporting 67 vendors assessed in 15 months (self-reported).",
+   "MAS allows reliance on ISO/IEC 42001 certification when independent, competent and relevant; Anthropic announced accredited certification via Schellman.",
+   "Security and procurement approve onboarding with conditions; risk teams check certificate scope. No measured effect of certification published."
+  ],
+  "who": "Cengage, MAS, Anthropic, Microsoft, CSA"
+ },
+ {
+  "id": "security-ai-security-25",
+  "title": "Agent certification with independent quarterly testing, tied to insurance underwriting (AIUC-1)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Enterprise buyers want proof a vendor's agent is secure, safe and reliable, while traditional insurers are reported to be excluding AI liability.",
+  "approach": [
+   "AIUC publishes AIUC-1, a standard for agent security, safety and reliability tested by red-teaming and audits, and offers certification, auditing and insurance.",
+   "Its site lists certified agents from Cursor, Fin, ElevenLabs, Harvey, UiPath and KPMG. Fin's CISO describes 'quarterly independent testing'; no figures (vendor-published).",
+   "Independent auditors and testers issue results; the buyer decides whether to accept the certificate."
+  ],
+  "who": "AIUC, Cursor, Fin, UiPath, KPMG"
+ }
+]

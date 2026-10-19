@@ -1,0 +1,278 @@
+[
+ {
+  "id": "assurance-acceptance-independence-01",
+  "title": "AI-assisted conflicts and independence clearance across a multi-firm accounting network",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A private-equity-backed accounting network must clear conflicts and independence across member firms, which rely on spreadsheets, manual processes and long completion times before an engagement letter goes out.",
+  "approach": [
+   "Crete Professionals Alliance feeds member-firm data into one warehouse; Intapp Conflicts uses AI risk-scoring so compliance staff focus on high-risk results.",
+   "The compliance team reviews high-risk results and decides remediation; potential independence issues are escalated to partners.",
+   "No time, accuracy or error figure is published (vendor-published); executives say the approach will relieve staff."
+  ],
+  "who": "Crete Professionals Alliance, Intapp"
+ },
+ {
+  "id": "assurance-acceptance-independence-02",
+  "title": "Risk-scored acceptance and continuance workflow with automated data pull and AI summaries",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Acceptance and continuance decisions draw on independence, conflict, reputational and know-your-client information held in separate systems and often handled in Excel and email.",
+  "approach": [
+   "Intapp and Kingland sell risk-scored questionnaires and reviewer routing; Intapp adds AI request summaries, Kingland does not say which steps use AI.",
+   "Risk teams review and approve when risk is detected, and decisions route to reviewers for sign-off.",
+   "No customer result, time saving or error rate is published (vendor-published); a 2024 academic prototype outputs a risk level as decision support."
+  ],
+  "who": "Intapp, Kingland, academic prototype"
+ },
+ {
+  "id": "assurance-acceptance-independence-03",
+  "title": "AI-powered client lifecycle platform joining client checks and engagement acceptance",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Client onboarding, due diligence and engagement acceptance at a large audit and advisory firm sit in separate steps with manual hand-offs.",
+  "approach": [
+   "Grant Thornton UK selected Fenergo's AI platform to join client checks, due diligence and acceptance; the AI's decisions are not described.",
+   "Vendor says it removes thousands of hours of manual effort (vendor-published); the firm says it will speed engagement starts (self-reported).",
+   "Who signs off the acceptance decision is not stated in either release."
+  ],
+  "who": "Grant Thornton UK, Fenergo"
+ },
+ {
+  "id": "assurance-acceptance-independence-04",
+  "title": "AI-assisted anti-money-laundering onboarding: document sorting, risk scoring and sanctions hit triage",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Onboarding information arrives by unstructured email, often incomplete, and sanctions and politically-exposed-person screening produces false matches that staff clear by hand.",
+  "approach": [
+   "A vendor prototype entering pilot uses AI document classification to feed a client risk-scoring model; a language-model pipeline filters false screening hits.",
+   "The vendor says the compliance officer receives cases already triaged; the money laundering reporting officer decides on suspicious activity reports.",
+   "No accuracy or time-saving figure is published (vendor-published); trial firms are unnamed and not described as audit firms."
+  ],
+  "who": "Zygos (Softline), unnamed trial firms"
+ },
+ {
+  "id": "assurance-acceptance-independence-05",
+  "title": "AI extraction of client ownership structures into family trees for independence checks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Independence and conflict checks depend on a complete map of a client's affiliates, often built by hand; IFIAR counted 11 findings in 2025 on unreliable tracking.",
+  "approach": [
+   "Kingland says its tool uses AI to read client documents and extract ownership details into a family tree the user completes.",
+   "The tool walks professionals through building the tree, so a person confirms the structure.",
+   "Vendor says it gives a single source of truth for entity records; no measured result (vendor-published)."
+  ],
+  "who": "Kingland, EY UK (non-AI system)"
+ },
+ {
+  "id": "assurance-acceptance-independence-06",
+  "title": "Independence monitoring dashboards, breach management and personal-holdings checks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Independence is checked only at points in time, so emerging issues surface late; IFIAR recorded 22 findings in 2025 on failing to monitor staff and partner personal independence.",
+  "approach": [
+   "Kingland describes dashboards joining independence, risk and engagement data plus a breach workflow; its only named AI function reads broker statements.",
+   "Independence, risk and service-line leaders act on the trends shown.",
+   "Vendor says new holdings are checked within 24 hours of a trade (vendor-published); broker-feed automation, not AI, with no measured result."
+  ],
+  "who": "Kingland, EY UK, Intapp"
+ },
+ {
+  "id": "assurance-acceptance-independence-07",
+  "title": "Partner rotation candidate matching that excludes people the independence rules bar",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Rotation planning must balance experience, availability and career stage against independence limits on who can take over a client.",
+  "approach": [
+   "Kingland describes a tool that surfaces suitable candidates from experience, availability and career data, and excludes people the independence rules bar.",
+   "Firm leaders make the rotation decision; the tool provides a view of candidates.",
+   "Vendor says it gives a clear view of top candidates; no measured result (vendor-published)."
+  ],
+  "who": "Kingland"
+ },
+ {
+  "id": "assurance-acceptance-independence-08",
+  "title": "Automated engagement-letter production",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Engagement letters are produced for every audit and must reflect the engagement's terms.",
+  "approach": [
+   "Some firms use an automated solution for engagement letters; the survey does not say whether AI is used.",
+   "Intapp markets automated creation and collection of engagement letters inside its acceptance product, without naming customers.",
+   "26% of surveyed firms have an automated engagement-letter solution (independent); this is automation, not necessarily AI.",
+   "The human checkpoint is not stated in the source."
+  ],
+  "who": "CPA.com (AICPA), Intapp"
+ },
+ {
+  "id": "assurance-acceptance-independence-09",
+  "title": "Pricing and targeting engagements from historical firm data inside acceptance",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Intapp's white paper says firms treat acceptance and independence checking as a cost centre and asks whether they know the true cost of each engagement.",
+  "approach": [
+   "Use historical firm data in automated acceptance to set prices and terms, target high-value clients and steer partners with whitelists and blacklists.",
+   "Potential revenue impact estimates: 1.5-4% informed pricing, 1-3% strategic targeting, 0.05-1.5% identifying conflicts (vendor-published; not measured results).",
+   "The human checkpoint is not stated in the source."
+  ],
+  "who": "Intapp (white paper)"
+ },
+ {
+  "id": "assurance-acceptance-independence-10",
+  "title": "Idea: assess a client's reliance on AI in financial reporting at acceptance",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: clients increasingly use AI in financial reporting, so the auditor may be unable to gather evidence and management may not understand its own outputs.",
+  "approach": [
+   "An AICPA practice aid says a client's AI use may affect acceptance or continuance; heavier reliance may mean more information is needed.",
+   "The AICPA says auditors should address client AI reliance at the start and check the team has the skills needed.",
+   "A new human assessment step, not AI doing the task; the partner and firm risk function decide. No firm practice found."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-11",
+  "title": "Idea: engagement terms covering the firm's AI use and client-data consent",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: firms use AI on client work, but it is unclear when the engagement letter or a consent must say so.",
+  "approach": [
+   "The AICPA practice aid says the US audit-terms standard does not require naming AI tools, though laws, contracts or policy may.",
+   "AICPA ethics staff say firms should ask whether client consent is needed before client data goes into an AI tool.",
+   "The partner decides what the engagement letter says and whether consent has been obtained. No firm practice was found."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-12",
+  "title": "Idea: tell audit committees about the auditor's AI use and independence implications",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: the SEC's chief accountant says audit committees are asking about the independence implications of auditors' AI use.",
+  "approach": [
+   "A firm's account of its AI tools, vendors and alliances would become part of its communication with those charged with governance.",
+   "The engagement leader would communicate with the audit committee. No firm describes a standard communication on this topic."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-13",
+  "title": "Idea: review AI tool-vendor contracts and licences for independence before adopting them",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: tool vendors can shift control, judgment, fees or evidence access away from the auditor, creating undue-influence and self-interest threats.",
+  "approach": [
+   "Before adopting a vendor, review contracts for cross-referral concentration, vendor involvement in the work, payment for evidence access and marketing control.",
+   "A commentator proposes recording who owns each vendor, what the firm pays, and whether the vendor can train models on client data.",
+   "The independence partner concludes and documents the evaluation. No firm was found that has published such a review."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-14",
+  "title": "Idea: check firm-wide AI-vendor alliances against audit-client lists",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: networks have firm-wide AI vendor alliances, and the SEC's chief accountant says it gets complicated when a firm's non-audit partner uses an audit client.",
+  "approach": [
+   "Independence teams would map AI-vendor relationships against audit-client and affiliate lists before signing and at each acceptance or continuance.",
+   "Context: Deloitte is making Claude available to 470,000 people, KPMG to more than 276,000 staff (vendor-published); scale, not an outcome.",
+   "No firm process was found; the suggested check is global independence leadership sign-off and audit-committee dialogue."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-15",
+  "title": "Idea: permissibility gate for AI services offered to audit clients",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: firms are expanding AI services to clients they may also audit, and building or hosting AI for an attest client can raise independence concerns.",
+  "approach": [
+   "Route every proposed AI build, host, licence or assurance service through pre-approval, checking self-review threats, management responsibility and commercial dependency.",
+   "Deloitte Ireland and Luxembourg describe pre-approval workflows, but none is described as AI-specific; applying the gate to AI services is the idea.",
+   "Independence and conflicts teams review before approval, and the audit partner evaluates threats and safeguards."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-acceptance-independence-16",
+  "title": "Independence due diligence and governance safeguards before taking private-equity investment",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Private-equity investment enters the profession mainly through alternative practice structures, and IFAC says new governance layers can dilute audit partners' control over client selection.",
+  "approach": [
+   "AICPA guidance describes due diligence before the deal, an expert-drafted administrative services agreement, independence monitoring and a multipronged independence evaluation.",
+   "Grant Thornton UK's Cinven investment closed in early 2025 after regulatory approval, with the audit practice kept in its LLP.",
+   "This is a human control process, not AI; the FRC asks firms to engage early and with full candour.",
+   "Context: 385 transactions in 2025, 139 involving audit firms (independent); a measure of structural change, not of the review step."
+  ],
+  "who": "Grant Thornton UK, AICPA, IFAC, FRC"
+ },
+ {
+  "id": "assurance-acceptance-independence-17",
+  "title": "Screen clients against the investor group; consult the regulator on grey areas",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "When a firm's owner or its funds hold stakes in companies, taking those or related companies as audit clients can fall into independence grey areas.",
+  "approach": [
+   "At acceptance the firm checks links to the investor's holdings, declines where independence is doubtful and consults the regulator on unclear cases.",
+   "Grant Thornton UK's chief executive said the firm would not audit a company in which owner Cinven has invested (self-reported).",
+   "One reported case: the FRC agreed a prospective client was a grey area and the firm did not proceed (self-reported).",
+   "Independence and risk leaders assess whether the investor or its staff are covered persons; no source describes AI in this screening."
+  ],
+  "who": "Grant Thornton UK, FRC, ICAEW"
+ },
+ {
+  "id": "assurance-acceptance-independence-18",
+  "title": "AI audit platform launched by Grant Thornton in an alternative practice structure",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "In an alternative practice structure the non-attest entity can supply the attest firm with technology, so a shared AI platform raises who provides it and whether independence rules apply.",
+  "approach": [
+   "Grant Thornton LLP announced gtap on 7 May 2026, a cloud audit platform with AI workflows and agents surfacing risks and anomalies.",
+   "It starts on private-company audits, expanding to public-company audits the next year; the firm says professionals supervise every step.",
+   "The CEO says automating transactional work lets teams focus on judgment; no measured result (self-reported).",
+   "Idea only: treat shared platforms as part of the independence assessment, with attest-firm leadership approval."
+  ],
+  "who": "Grant Thornton US and Ireland"
+ },
+ {
+  "id": "assurance-acceptance-independence-19",
+  "title": "Investor-funded holding company building AI audit tooling and investing in audit firms",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Audit tools and workflows have not meaningfully changed in decades, according to Modus's CEO, and Lightspeed's partners say public accounting has been underserved by technology.",
+  "approach": [
+   "Modus raised $85 million (vendor-published), led by Lightspeed, to invest in audit-first firms and build AI-enabled audit tooling.",
+   "It has invested in one top-200 firm and, according to Lightspeed, has deployed seven AI workflows there (vendor-published).",
+   "No audit-quality or efficiency result is reported; the human checkpoint is not stated in the source."
+  ],
+  "who": "Modus, Lightspeed Venture Partners"
+ },
+ {
+  "id": "assurance-acceptance-independence-20",
+  "title": "New audit firms built around AI from the start",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Auditing has been slower than other professions to absorb automation and still relies on manual collection, matching and documentation, according to coverage of Repodo's launch.",
+  "approach": [
+   "Repodo, a Copenhagen audit firm, raised EUR 8.2 million pre-seed (vendor-published); AI systems are meant to handle much of the repetitive work.",
+   "Oath Verified raised about $10 million in total (vendor-published) and uses an alternative practice structure because its platform company is venture-backed.",
+   "Licensed professionals keep judgment, oversight, the signature and final responsibility; no client, quality or independence result is published."
+  ],
+  "who": "Repodo, Oath Verified"
+ },
+ {
+  "id": "assurance-acceptance-independence-21",
+  "title": "Audit fee renegotiation justified by AI-enabled efficiency",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Audit has been priced on hours, seniority and review depth; if AI speeds execution, clients may expect lower fees.",
+  "approach": [
+   "KPMG International reportedly negotiated a lower audit fee from Grant Thornton UK, arguing AI would cut costs (unnamed sources, Financial Times).",
+   "Fee 14% lower, from $416,000 to $357,000, per KPMG International's filing (independent); the link to AI rests on unnamed sources.",
+   "Commentators split between holding fees because humans validate and sign off, and moving to subscription or continuous audit-as-a-service pricing."
+  ],
+  "who": "KPMG International, Grant Thornton UK"
+ }
+]

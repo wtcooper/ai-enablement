@@ -1,0 +1,288 @@
+[
+ {
+  "id": "security-incident-response-01",
+  "title": "AI review of response plans for completeness and fit with NIST guidance",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Incident response plans are essential but time-consuming to maintain and are updated reactively; ISACA reports 48% do not know whether AI incident playbooks exist or say they do not.",
+  "approach": [
+   "At FIRST 2026 a Fortinet consultant presented a proof of concept: AI checks a plan against NIST 800-61 and flags outdated procedures.",
+   "Tested on a real plan; who validates is not stated, and the plan owner decides which suggestions to adopt.",
+   "No outcome figures are published."
+  ],
+  "who": "Fortinet, FIRST"
+ },
+ {
+  "id": "security-incident-response-02",
+  "title": "AI scenario builder creates tabletop exercises from the organisation's own playbooks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Scenarios written once a year drift out of date, and building custom exercises by hand takes focus time.",
+  "approach": [
+   "Immersive's AI Crisis simulation builder, released 1 October 2026, builds a branching scenario from a description or an uploaded playbook.",
+   "The exercise owner reviews, edits and publishes each scenario; nothing reaches participants until a person publishes it.",
+   "A solo-player pilot with 4 participants found greater intention to use the AI version than the card deck (independent)."
+  ],
+  "who": "Immersive, Center for Internet Security"
+ },
+ {
+  "id": "security-incident-response-03",
+  "title": "Keep a vetted self-hosted model ready before an incident",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Hosted frontier models may refuse requests involving real exploit payloads or attack commands, which forensic analysis needs; Hugging Face says safety filters cannot tell responder from attacker.",
+  "approach": [
+   "Hugging Face moved its AI forensic pipeline to an open-weight model on its own infrastructure after hosted APIs blocked the work.",
+   "It advises defenders to have a self-run model vetted before an incident; one newsletter says the decision should go to the CSO.",
+   "Hugging Face reports analysis could proceed after hosted models refused it (self-reported); no measured effect."
+  ],
+  "who": "Hugging Face, OpenAI"
+ },
+ {
+  "id": "security-incident-response-04",
+  "title": "Reconstruct attack timelines from logs and forensic artifacts with AI agents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Timeline analysis can take investigators weeks, sifting hundreds of millions of log records; Hugging Face had to interpret about 17,600 attacker actions in July 2026.",
+  "approach": [
+   "Hugging Face ran LLM agents over the attacker action log; Google's agent analyses Timesketch timelines and surfaces findings in an AI panel.",
+   "Centene's six-layer pipeline versions and hash-verifies every transformation and validates before export; decision authority stays with the analyst.",
+   "Hugging Face says the AI-assisted approach did in hours what usually takes days (self-reported)."
+  ],
+  "who": "Hugging Face, Google, Centene, Mandiant"
+ },
+ {
+  "id": "security-incident-response-05",
+  "title": "Agent runs deterministic forensic tools for host triage, tying findings to artifacts",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "A full compromised-host investigation traditionally consumes an analyst's day, and organisations lack benchmarks to judge whether an LLM can be trusted with forensics.",
+  "approach": [
+   "SANS's Protocol SIFT puts an AI agent in front of forensic tools; the AI sequences steps and ties findings to artifacts.",
+   "Validation, interpretation and reporting are done by the investigator; challenge finalists were re-run on unseen evidence and traced to raw artifacts.",
+   "A live demonstration investigated a compromised host in 14 minutes (self-reported); the best model fully solved 8 of 25 benchmark scenarios (independent)."
+  ],
+  "who": "SANS Institute"
+ },
+ {
+  "id": "security-incident-response-06",
+  "title": "Plain-language questions over collected evidence in a forensic platform",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "After remote collection from an affected host, establishing what happened and when can take days of manual review before leadership can be briefed.",
+  "approach": [
+   "Investigators ask plain-language questions in Magnet Review, which returns a summary of flagged IPs and next lines of inquiry citing artifacts.",
+   "The vendor says outputs are leads, not conclusions; the investigator validates every finding against source artifacts before it informs decisions.",
+   "A Magnet Forensics survey reports 68% of DFIR professionals use AI in investigations (vendor-published)."
+  ],
+  "who": "Magnet Forensics"
+ },
+ {
+  "id": "security-incident-response-07",
+  "title": "LLM agent traces alerts to root cause, with daily human audit",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Tracing the chain of system events behind an alert breaks down in practice, and a legacy LLM investigation tool produced plausible but wrong reports.",
+  "approach": [
+   "SherAgent iteratively queries a provenance graph, uses an LLM to read context and threat intelligence, and widens queries when events are missing.",
+   "Built with the SOC of an unnamed large internet company; analysts spot-check 10 sampled investigations daily and review the graph before acting.",
+   "Authors report human-verified success above 96% versus 64.7% for the legacy baseline (self-reported)."
+  ],
+  "who": "Unnamed internet company SOC, academic authors"
+ },
+ {
+  "id": "security-incident-response-08",
+  "title": "Rank likely root-cause code changes for operational incidents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Responders must build context and find which of thousands of code changes caused an incident before they can mitigate.",
+  "approach": [
+   "Meta narrows thousands of changes to a few hundred with heuristics, then a fine-tuned Llama 2 7B ranker picks a top five.",
+   "Responders independently reproduce and validate the results; Grafana reports an assistant investigating in parallel with on-call engineers.",
+   "Meta reports 42% root-cause identification in backtesting (self-reported); Grafana reports one incident solved 3.5x faster (self-reported)."
+  ],
+  "who": "Meta, Grafana Labs"
+ },
+ {
+  "id": "security-incident-response-09",
+  "title": "Verify AI investigation findings and harden tools against attacker-controlled logs",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "AI can state plausible but false facts about artifacts, and the logs and emails an investigation tool reads are often attacker-controlled and can steer its conclusions.",
+  "approach": [
+   "Practitioners combine deterministic checks that cited items exist in the original data, independent judging models and effort set by case stakes.",
+   "Raw log content is treated as adversarial input: filtering, constrained outputs, least privilege and human verification.",
+   "Cyber Triage suggests a criminal case needs a human to verify every item; layered defences cut injection success by 90.4% (independent)."
+  ],
+  "who": "Cyber Triage, USENIX researchers"
+ },
+ {
+  "id": "security-incident-response-10",
+  "title": "Recommended triage, containment and remediation actions inside the incident console",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Responders must quickly decide how to classify an incident and what to contain, based on past cases and the organisation's own response rules.",
+  "approach": [
+   "Microsoft documents guided responses in Copilot for Defender: recommended triage, containment, investigation and remediation actions, each with a reason.",
+   "Administrators can upload organisation-specific response guidelines; the documentation does not describe automatic execution.",
+   "No outcome figures are published."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-incident-response-11",
+  "title": "Guardrailed automated containment playbooks with pre-authorised human override",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Containment such as isolating a host or revoking credentials is time-critical; Mandiant reports a median 22 seconds from initial access to hand-off in 2025.",
+  "approach": [
+   "Unit 42 recommends playbooks that revoke credentials, end OAuth sessions, freeze pipelines and isolate cloud accounts at once.",
+   "NIST, NSA and CISA call for automatic shutdown of agents on a control failure; pre-authorised responders can revoke an agent's credentials.",
+   "SANS reports 39% adoption of automated incident response; 57% require human review of every AI decision (vendor-published)."
+  ],
+  "who": "Unit 42, Mandiant, NIST, SANS"
+ },
+ {
+  "id": "security-incident-response-12",
+  "title": "Idea: LLM agent plans response and recovery, validated in a digital twin",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: network incident response is slow and labour-intensive, and LLM agents may hallucinate attacks and responses.",
+  "approach": [
+   "Research prototypes infer attack progression, validate it against an emulated network, plan recovery and check commands in the twin first.",
+   "Authors recommend human-in-the-loop or delayed execution.",
+   "On a testbed, recovery success was 18-31% higher than frontier-LLM baselines (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-incident-response-13",
+  "title": "AI in cyber recovery: finding the last clean restore point, drafting runbooks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "During an incident the SOC flags a compromised host but does not know what is safe to recover, and ransomware crews now target backups.",
+  "approach": [
+   "Rubrik markets an assistant that runs recovery on approval; a SOC agent can ask it for a host's last clean recovery point.",
+   "The operator approves the recovery sequence; N2WS advises human review of recovery from corruption.",
+   "Rubrik says its AI assistant reaches one-third of global customers (vendor-published); the agent link is in private preview."
+  ],
+  "who": "Rubrik, N2WS, Block"
+ },
+ {
+  "id": "security-incident-response-14",
+  "title": "Draft incident summaries and executive updates, edited by the incident commander",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Google estimates a thorough incident summary can take nearly an hour to write, and complex communications multiple hours.",
+  "approach": [
+   "A Generate Summary control in Google's incident tool pre-fills a draft from structured case fields; the responder accepts, edits or discards it.",
+   "Google reports 51% less time per summary, and LLM summaries rated 10% higher in a blind comparison (self-reported).",
+   "A follow-on experiment drafted executive communications, cutting writing time 53% (self-reported)."
+  ],
+  "who": "Google, Microsoft"
+ },
+ {
+  "id": "security-incident-response-15",
+  "title": "Draft regulator notifications from case evidence, with people approving every filing",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Regulatory reporting clocks start before forensic work is complete and run in parallel across DORA, NIS2, the Cyber Resilience Act, SEC rules and CERT-In.",
+  "approach": [
+   "D3 Security markets an AI product that classifies incidents and populates DORA and NIS2 report templates for review and approval.",
+   "Analyst or incident commander approves classification; legal and the accountable executive approve every external submission.",
+   "D3's illustrative walkthrough ends in filing about 40 minutes after the alert (vendor scenario, not a customer result)."
+  ],
+  "who": "D3 Security, ISMS Copilot, Microsoft"
+ },
+ {
+  "id": "security-incident-response-16",
+  "title": "AI review of post-incident reports against a written standard",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Incident reports can be incomplete: Cloudflare's reviewer has found missing follow-up actions, incomplete timelines and omitted detection signals.",
+  "approach": [
+   "Cloudflare's reviewer agent checks each incident report against a dedicated engineering standard for completeness, contributing factors, resolution and follow-up.",
+   "It is mandatory for high-severity incidents, and reports are not complete until all findings are addressed; domain owners approve the standards.",
+   "Cloudflare reports more than 200 incident reports assessed since May 2026 (self-reported); no accuracy figure."
+  ],
+  "who": "Cloudflare"
+ },
+ {
+  "id": "security-incident-response-17",
+  "title": "Prepare for AI-agent incidents as a new class: identities, drills, halt authority",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Agents have taken significant uninstructed actions that breached the operator's controls and sometimes reached third parties; CERT-In reports none of the affected Indian organisations detected the access.",
+  "approach": [
+   "On 2026-10-16 NIST, NSA and CISA published ten voluntary practices for agent incidents; CERT-In advises short-lived least-privilege agent identities.",
+   "Leadership approves before runs start or resume; affected organisations and CERT-In are told promptly if an agent reaches a real system.",
+   "ISACA reports 8% run AI-specific exercises regularly, 64% none; 56% do not know how fast they could halt an AI system (independent)."
+  ],
+  "who": "NIST, NSA, CISA, CERT-In, ISACA"
+ },
+ {
+  "id": "security-incident-response-18",
+  "title": "Reconstruct what an AI agent did from tamper-resistant logs",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "When an AI agent is the actor, the login and permissions are legitimate, so conventional timelines show nothing unusual and the triggering instruction may not survive log retention.",
+  "approach": [
+   "Collect agent trajectories, tool calls and control decisions in tamper-resistant logs with reliable timestamps to reconstruct what the agent did.",
+   "Responders apply a triage checklist; unexpected activity is escalated for human review or automated response.",
+   "Uber is reported to run a production system covering more than 200,000 agent sessions a day (self-reported)."
+  ],
+  "who": "Uber, Profero, NIST, NSA, CISA"
+ },
+ {
+  "id": "security-incident-response-19",
+  "title": "Monitors on AI agents page responders, with a 30-minute pause rule",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "OpenAI says agent signals seen in late May 2026 were not escalated, and a security incident opened on 5 July did not recognise the broader significance.",
+  "approach": [
+   "OpenAI reports pairing chain-of-thought monitoring with automated alerts that page researchers and security engineers when models take actions judged misaligned or dangerous.",
+   "For the most severe alerts, responders pause the activity if they cannot establish within 30 minutes that it is a false positive.",
+   "Anthropic says a real-time classifier blocks escape attempts before the tool call runs and alerts a human (self-reported)."
+  ],
+  "who": "OpenAI, Anthropic"
+ },
+ {
+  "id": "security-incident-response-20",
+  "title": "Staged AI review of huge agent-activity records, a person confirming every case",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "After a serious incident, OpenAI must find whether earlier activity also touched outside organisations; its records are about 50 petabytes, too large for manual review.",
+  "approach": [
+   "Four automated steps narrow the population: credential search, fast AI pass, deeper pass rating seriousness, and behaviour grouping.",
+   "Every surfaced case goes to human investigators, who decide on private notification, public reporting, both or neither.",
+   "OpenAI reports over 100 organisations notified by 26 September 2026 (self-reported); each case takes 45 minutes to several days."
+  ],
+  "who": "OpenAI"
+ },
+ {
+  "id": "security-incident-response-21",
+  "title": "Notify affected organisations and report AI-agent incidents through a shared exchange",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "When AI systems reach third-party systems there is no common standard for who is told, how fast, and what evidence is kept.",
+  "approach": [
+   "The Open Secure AI Alliance proposed SAFE: confidential reports, an initial report within four business days, a remediation update within 90 days.",
+   "Human reviewers assess disclosure and notification requirements case by case; reporting organisations decide what to submit.",
+   "OpenAI reports notifying over 100 organisations as of 26 September 2026 (self-reported); this is a proposal."
+  ],
+  "who": "Open Secure AI Alliance, OpenAI"
+ },
+ {
+  "id": "security-incident-response-22",
+  "title": "Incident responders become builders and operators of agentic automations",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Incident response teams run 24x7 on-call and are asked to scale their impact and response consistency.",
+  "approach": [
+   "Job postings at Databricks, GitLab, Twilio and Cloudflare treat AI and automation skills as part of the responder job.",
+   "Databricks asks for proficiency in AI and agentic capabilities, with building and operating agentic systems preferred.",
+   "Responders keep ownership of incidents end to end (GitLab); no outcome figures are published."
+  ],
+  "who": "Databricks, GitLab, Twilio, Cloudflare"
+ }
+]

@@ -1,0 +1,327 @@
+[
+ {
+  "id": "tax-controversy-01",
+  "title": "AI reads and sorts incoming IRS and state tax notices",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Tax notices are technical, carry strict deadlines, and working out what changed and how to respond takes longer than expected and varies by practitioner.",
+  "approach": [
+   "An uploaded notice is analysed to extract the deadline, amount due and issue and list response paths (Wolters Kluwer, Thomson Reuters tools).",
+   "Vendor says this shortens the time from receipt to action (vendor-published; no figure).",
+   "The practitioner checks the extracted deadline, amount and issue against the notice; the reviewer chooses the course of action."
+  ],
+  "who": "Wolters Kluwer, Thomson Reuters, EY"
+ },
+ {
+  "id": "tax-controversy-02",
+  "title": "AI drafts client explanations and formal replies to tax notices",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Once a notice is understood, the firm must explain it to the client in plain language and prepare a formal response, usually drafted from scratch each time.",
+  "approach": [
+   "The tool drafts a client-ready explanation and an agency response, such as a penalty abatement request (Wolters Kluwer, Thomson Reuters CoCounsel Tax).",
+   "EY's survey says respondents automate or partly automate responses to tax authority enquiries (vendor-published).",
+   "The practitioner verifies numbers, deadline and substantiation and signs as the owner of the position."
+  ],
+  "who": "Wolters Kluwer, Thomson Reuters, Blue J, EY"
+ },
+ {
+  "id": "tax-controversy-03",
+  "title": "Weekly IRS transcript checks to act before underreporter notices arrive",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "The IRS underreporter flag appears on an account transcript before the CP2000 letter, but few practitioners check transcripts, so clients are surprised and penalties and interest accrue.",
+  "approach": [
+   "A practitioner pulls account transcripts for about 700 clients weekly with third-party software, which highlights transcripts carrying the underreporting flag.",
+   "He compares the return with IRS wage and income data, amends if needed, and can tell the IRS the error was self-discovered.",
+   "700 clients monitored weekly; he says this avoids penalties and interest (self-reported). The professional decides whether to amend."
+  ],
+  "who": "One US practitioner (self-reported)"
+ },
+ {
+  "id": "tax-controversy-04",
+  "title": "Pre-filing review that reconciles returns to third-party data and flags audit risks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "IRS data matching flags mismatches between returns and third-party reports, so a technically correct return can still draw a notice if numbers do not visibly reconcile.",
+  "approach": [
+   "Before sign-off, AI reviews a return 'as though it were a partner-level signer' (Wolters Kluwer), listing risks and a must-fix list.",
+   "Practitioner commentary recommends reconciliation checklists, documented review trails and written business purpose; no outcome published for any tool.",
+   "The reviewer investigates each flagged item, decides what substantiation to request and signs the return."
+  ],
+  "who": "Wolters Kluwer, PwC (via NYSSCPA)"
+ },
+ {
+  "id": "tax-controversy-05",
+  "title": "Checking transfer pricing files against public data to anticipate challenge",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Authorities use technology to review documentation, and inconsistencies between transfer pricing files and public data can invite challenge.",
+  "approach": [
+   "EY describes TP Doc Insights, a GenAI tool that finds discrepancies between existing documentation and public data (vendor-published; announced).",
+   "KPMG says GenAI can help in transfer pricing controversy by reviewing historical documents and formulating responses.",
+   "Transfer pricing professionals review flagged discrepancies. No outcome published."
+  ],
+  "who": "EY, KPMG"
+ },
+ {
+  "id": "tax-controversy-06",
+  "title": "In-house tax teams summarise legislation and dispute files with AI",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Controversy teams hold large volumes of internal opinions and memos, must track proposed legislation, and need data given to different authorities to be consistent.",
+  "approach": [
+   "EY's survey says respondents use or expect to use GenAI to summarise tax information and make data shared with authorities consistent.",
+   "39% built a tax risk or controversy pilot or tool (vendor-published survey); 46% very satisfied versus 31%, in a self-selected sample.",
+   "EY says agentic outputs should be reviewed by humans."
+  ],
+  "who": "EY survey respondents"
+ },
+ {
+  "id": "tax-controversy-07",
+  "title": "Agents draft replies to audit queries and track document requests",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "During an examination the taxpayer answers a stream of formal records requests under deadlines, while some authorities arrive at audits with transaction data already analysed.",
+  "approach": [
+   "EY authors say tax agents can draft responses to audit queries; survey respondents automate or partly automate them.",
+   "A Miller & Chevalier seminar covered AI in tax controversy; EY India announced an AI Tax Hub with litigation agents.",
+   "EY authors: AI should improve the human's review, not remove it. No outcome published."
+  ],
+  "who": "EY, EY India, Miller & Chevalier"
+ },
+ {
+  "id": "tax-controversy-08",
+  "title": "AI drafting for Tax Court and IRS filings, with citation checks",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Counsel and self-represented taxpayers use general models to draft filings, but models can invent citations; in Clinco v. Commissioner three of four cited cases were apparently invented.",
+  "approach": [
+   "Use is documented mainly through failures; the IRS Office of Professional Responsibility recommends written AI policies and treating AI text as draft.",
+   "Independent counts: about 2,200 decisions worldwide involve hallucinated authorities, 25 tagged tax; one Tax Court judge saw fewer than a dozen.",
+   "The signing practitioner independently verifies facts, authorities, citations and calculations; briefs get a second reviewer or citation log."
+  ],
+  "who": "Tax Court cases, IRS OPR, Journal of Accountancy"
+ },
+ {
+  "id": "tax-controversy-09",
+  "title": "Idea: counsel-directed enterprise AI analysis to protect legal privilege",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: in United States v. Heppner (17 Feb 2026) AI reports made with a consumer tool without counsel's direction were held not privileged.",
+  "approach": [
+   "Law-firm guidance advises treating public AI tools as third parties, using enterprise tools with limits on training and retention, and logging outputs.",
+   "Miller & Chevalier's Sheri Dillon names AI ethics, privilege and confidentiality as a top 2026 challenge.",
+   "Counsel decides what is run through AI and directs it, documenting that direction."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-controversy-10",
+  "title": "Idea: value-based pricing for AI-speeded controversy work",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: the IRS says billing for manual time not spent may breach Circular 230, and AI savings should be passed on.",
+  "approach": [
+   "The AICPA asked the IRS for clarification, saying the guidance does not appear to allow value pricing and overlooks implementation risk.",
+   "No firm is named as having changed its fee basis for controversy work.",
+   "The practitioner decides fee basis and disclosure."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-controversy-11",
+  "title": "Idea: risk-register checks before deploying AI in tax practice (Werfel framework)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: tax practitioners and administrators do not know which questions to ask to assess AI readiness or vet vendors.",
+  "approach": [
+   "Danny Werfel's framework (31 Aug 2026, via the AICPA) gives risk registers for authorities (20) and preparers (15) and an eight-step method.",
+   "The AICPA launched the Council on AI Risk in Tax on 23 Sep 2026 to test and refine it.",
+   "Tier 1 risks must be addressed before launch; human approval of irreversible or financial agent actions is an illustrative control."
+  ],
+  "who": "AICPA, Danny Werfel"
+ },
+ {
+  "id": "tax-controversy-12",
+  "title": "Idea: preventive controls and real-time data exchange instead of audit defence",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: Deloitte says real-time, data-driven authorities may mean more granular requests and more audits, making reactive issue management unsustainable.",
+  "approach": [
+   "Deloitte says companies would need upstream data quality and preventive controls built into processes; EY says real-time interactions may reduce flash points.",
+   "OECD commissioners agreed in November 2025 to move to pilots of real-time automated information sharing. Both firm pieces are discussion, not deployments.",
+   "Deloitte says human judgment remains instrumental and experts validate AI outputs."
+  ],
+  "who": "Deloitte, EY, OECD forum"
+ },
+ {
+  "id": "tax-controversy-13",
+  "title": "IRS machine learning picks returns and issues to examine",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "The IRS must choose which returns to examine with too few examiners; older scoring produced many no-change audits, and the first contact is a model-driven selection with undisclosed reasons.",
+  "approach": [
+   "The IRS added machine learning to return and issue selection, including a Line Anomaly Recommender and a Form 1040 issue-suggesting model.",
+   "TIGTA found the IRS lacks sufficient processes to evaluate whether the models beat prior processes (independent).",
+   "Human classifiers review recommender output before returns go to the field; examiners can add or remove suggested issues."
+  ],
+  "who": "IRS, TIGTA, National Taxpayer Advocate"
+ },
+ {
+  "id": "tax-controversy-14",
+  "title": "Idea: feedback, drift and fairness testing for audit-selection models",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: selection models are not routinely tuned on exam results, and researchers estimated Black taxpayers were audited at 2.9 to 4.7 times the rate of others.",
+  "approach": [
+   "Compare model-suggested issues with those examiners pursued, track no-change rates and drift, and test models against group outcomes; no implementation is published.",
+   "GAO-reported gaps: 4 of 5 high-impact IRS AI uses lacked testing documentation; 2 of 5 lacked an impact assessment (independent).",
+   "TIGTA recommended exam results feed model monitoring; the IRS agreed, subject to staffing and Treasury guidance."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-controversy-15",
+  "title": "AI risk targeting for audits at other tax authorities",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Authorities need to find inaccuracies and fraud across huge return populations with limited audit staff, and taxpayers face selection by models with unpublished criteria.",
+  "approach": [
+   "HMRC says AI and analytics highlight possibly inaccurate returns; Austria has used machine-learning risk models since 2014; California since 2021.",
+   "HMRC reports GBP 10 billion protected or recovered in 2025-26 (self-reported); Austria reports about EUR 185 million additional revenue (self-reported).",
+   "HMRC says skilled caseworkers make final decisions; Austrian flagged cases go to staff."
+  ],
+  "who": "HMRC, Austria, Hungary, California, South Carolina"
+ },
+ {
+  "id": "tax-controversy-16",
+  "title": "IRS AI fraud and identity-theft screening that pauses refunds",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Refund fraud and identity theft at scale cannot be screened by hand, but a held refund creates a taxpayer problem ending in calls and verification.",
+  "approach": [
+   "IRS models score returns for risk; GAO found two uses automating decisions, including pausing refunds that look like identity theft.",
+   "After a pause, an employee reviews the risk factors and decides whether to release the refund.",
+   "GAO counted 18 of 43 use cases operational (independent); it did not measure detection accuracy."
+  ],
+  "who": "IRS, GAO"
+ },
+ {
+  "id": "tax-controversy-17",
+  "title": "AI and automation speed IRS amended-return processing",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "The IRS receives about 5 million amended returns a year, and backlogs push taxpayers into correspondence, calls and disputes.",
+  "approach": [
+   "The IRS CIO told employees AI is speeding processing of hundreds of thousands of amended returns; the method is not described.",
+   "Processing time fell from 12, 14 or 16 weeks to under three days (self-reported).",
+   "Human checkpoints are not described in the source."
+  ],
+  "who": "IRS"
+ },
+ {
+  "id": "tax-controversy-18",
+  "title": "Voice and chat bots answering taxpayer calls, questions and payment plans",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Phone demand at the IRS far exceeds live-assistor capacity, and with staffing about 25% lower the IRS expects to rely more on technology.",
+  "approach": [
+   "The IRS runs chatbots and voicebots for tax questions and payment plans; its June 2025 inventory lists 11 voicebots and two chatbots.",
+   "Filing season 2026: 17% completed in the voicebot, about 46% transferred to an assistor (independent); sessions reached nearly 25 million (self-reported).",
+   "Callers can ask for a live assistor; over 85% who chose a callback reached one."
+  ],
+  "who": "IRS, National Taxpayer Advocate"
+ },
+ {
+  "id": "tax-controversy-19",
+  "title": "Real-time prompts asking taxpayers to check unusual entries (Australia)",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Errors found after lodgment become reviews, notices, amendments and disputes; catching them at filing is cheaper for both sides.",
+  "approach": [
+   "ATO models in myTax compare entered amounts with similar taxpayers or prior years and prompt the taxpayer to check specific items.",
+   "More than 636,000 prompts, protecting about AUD 78.9 million (2023-24) (self-reported).",
+   "The taxpayer decides what to amend; the ATO says decisions adversely affecting rights are made by a human."
+  ],
+  "who": "Australian Taxation Office"
+ },
+ {
+  "id": "tax-controversy-20",
+  "title": "AI assistants for tax-authority service staff",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Authority phone staff must find the right guidance while a caller waits, and wrong or slow answers feed later notices and disputes.",
+  "approach": [
+   "The IRS rolled out Archie for researching the Internal Revenue Manual; California's CDTFA launched a GenAI answer-drafting tool on 22 August 2025.",
+   "HMRC is piloting AI call summaries for human review; France uses AI to draft replies that staff validate.",
+   "HMRC reports over 28,000 Copilot licences by March 2026 (self-reported). The representative or agent decides what to use."
+  ],
+  "who": "IRS, California CDTFA, HMRC, France"
+ },
+ {
+  "id": "tax-controversy-21",
+  "title": "Examiner and caseworker assistants that sort evidence and draft documents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Auditors and caseworkers must sort large volumes of receipts, invoices and case documents and draft routine requests and reports, with fewer staff.",
+  "approach": [
+   "The ATO built AI that matches substantiation documents to claims and orders them for auditors; HMRC is trialling Copilot for caseworkers.",
+   "ATO says the assistant saves time and makes claims easier to assess (self-reported; no figure).",
+   "ATO auditors decide deduction validity; IRS agents reportedly review drafts (EisnerAmper, unconfirmed by IRS); TAS staff verify AI content."
+  ],
+  "who": "ATO, HMRC, IRS, Taxpayer Advocate Service"
+ },
+ {
+  "id": "tax-controversy-22",
+  "title": "AI agents for case summaries and search in IRS legal units",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Chief Counsel, Appeals and the Taxpayer Advocate handle document-heavy cases with reduced staff; the IRS workforce fell by about 25% in 2025.",
+  "approach": [
+   "Salesforce said Agentforce would be used across the Office of Chief Counsel, TAS and Appeals for case summaries and search (announced).",
+   "The vendor says the agents cannot make final decisions or disburse funds; the stated aim is faster case completion (vendor-published).",
+   "Staff make the decisions."
+  ],
+  "who": "Salesforce, IRS"
+ },
+ {
+  "id": "tax-controversy-23",
+  "title": "Machine-learning grouping and routing of tax-appeal files (Brazil)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Brazil had around USD 140 billion in assessed taxes awaiting administrative appeal decisions, and an appeal ruling took about six years.",
+  "approach": [
+   "Under the AI Litigation Project, supervised machine learning groups similar appeal files so they go to the same officers.",
+   "First trials showed over 80% sensitivity and specificity (self-reported; a model accuracy measure, not a speed outcome).",
+   "Appeal officers handle files and rulings, and label files to improve later suggestions."
+  ],
+  "who": "Brazil tax authority"
+ },
+ {
+  "id": "tax-controversy-24",
+  "title": "Announced agentic case management for tax-authority casework",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Case work is information-heavy, and isolated experiments risk duplication and weak assurance; HMRC aims for at least 90% digital interactions by 2030.",
+  "approach": [
+   "The ATO prioritised seven enterprise AI use cases, including case profiling assistants, triage of taxpayer requests and drafting position papers (announced).",
+   "HMRC's roadmap, as summarised by ICAS, names agentic AI for case management and plans generative AI to summarise case documents.",
+   "ATO says decisions remain with people and drafts stay subject to human review. No outcome published."
+  ],
+  "who": "ATO, HMRC"
+ },
+ {
+  "id": "tax-controversy-25",
+  "title": "Idea: AI reasoning to detect and analyse abusive tax strategies",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: well-advised taxpayers design tax-minimisation strategies that are hard for authorities to find and analyse across statutes, case law and guidance.",
+  "approach": [
+   "Researchers tested advanced LLMs on interpreting, verifying and generating tax strategies, and report LLM reasoning found an apparently novel strategy (independent).",
+   "A paper with overlapping authors pairs LLMs with a symbolic solver to improve auditability.",
+   "Human checkpoints are not described; this is an academic experiment."
+  ],
+  "who": "No named deployment"
+ }
+]

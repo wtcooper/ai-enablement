@@ -1,0 +1,306 @@
+[
+ {
+  "id": "security-cloud-infrastructure-01",
+  "title": "Ranking cloud findings by reachability, permissions and data access, with fix-first plans",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Cloud security tools raise more findings than engineers can fix, many with no route to harm, and teams investigate only about 4% of alerts.",
+  "approach": [
+   "Platforms combine reachability, toxic permissions and sensitive-data access into attack paths; Microsoft's invitation-only preview agent produces a ranked, explained action plan.",
+   "Findings reach engineers only after validation confirms exploitability, and people decide and act on the agent's plan.",
+   "Wiz says more than half of initial high-priority findings were removed once these filters applied (vendor-published)."
+  ],
+  "who": "Wiz, Microsoft, Tamnoon"
+ },
+ {
+  "id": "security-cloud-infrastructure-02",
+  "title": "Agent investigates cloud detections, is validated alongside analysts, then closes low-severity alerts",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Cloud detections need identity, network, runtime and code context from several consoles, and manual investigation across sprawling environments can take hours.",
+  "approach": [
+   "Wiz's Blue Agent gathers evidence, compares activity with a baseline and gives a verdict; ZS first ran it alongside analysts.",
+   "Analysts review what the agent closed at each shift's end, and higher-severity detections stay with analysts.",
+   "ZS reports about 95.17% agreement with analysts (self-reported); Owkin reports a 75% cut in false-positive investigation time (vendor-published)."
+  ],
+  "who": "ZS, Owkin, Redis, Wiz, Orca"
+ },
+ {
+  "id": "security-cloud-infrastructure-03",
+  "title": "In-house cloud triage agent with evidence rules and approval for access changes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "At Cohere one critical finding took 30 minutes to 2 hours to investigate; WRITER saw thousands of alerts with roughly 100 truly actionable, about a 2% signal rate.",
+  "approach": [
+   "Cohere built an MCP server so its agent reads Wiz issues, checks duplicate tickets and writes notes back; WRITER built open-source Cerebro.",
+   "Cohere analysts start from a populated report and ticket; WRITER requires human approval for IAM and network-boundary changes.",
+   "Cohere reports about 145 SecOps hours a week eliminated and attack-path analysis cut to 20 seconds (vendor-published)."
+  ],
+  "who": "Cohere, WRITER, Wiz"
+ },
+ {
+  "id": "security-cloud-infrastructure-04",
+  "title": "Combining weak runtime signals with posture context into one critical attack-sequence finding",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Individual runtime findings on EC2, ECS and EKS are noisy, and a runtime signal alone often stays below the threshold for a critical finding.",
+  "approach": [
+   "Amazon GuardDuty correlates weak signals into one attack-sequence finding and, from 2026-05-20, attaches vulnerability, reachability, misconfiguration and sensitive-data indicators.",
+   "Responders contain exposures, isolate reachable hosts, rotate credentials and patch.",
+   "AWS says roughly one in four prioritised runtime-process attack sequences were net-new after the indicators were added (vendor-published)."
+  ],
+  "who": "AWS"
+ },
+ {
+  "id": "security-cloud-infrastructure-05",
+  "title": "Read-only first-pass incident triage agent across a Kubernetes fleet",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "First-pass triage of Kubernetes incidents needs pod state, logs, metrics and deployment history from many clusters before a person can act.",
+  "approach": [
+   "A talk abstract describes an open-source agent, one per cluster, doing first-pass triage; the author says it never wrote to a cluster.",
+   "Engineers receive the triage and act; the author reports 4 failures in over a year despite read-only permissions (self-reported)."
+  ],
+  "who": "A European automotive manufacturer"
+ },
+ {
+  "id": "security-cloud-infrastructure-06",
+  "title": "Agent finds owner, root cause and fix layer, then drafts the remediation",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Security teams often do not know who owns a vulnerable resource or which layer to fix, and Wiz says routing can take longer than the fix itself.",
+  "approach": [
+   "Wiz's Green Agent suggests an owner, traces root cause, gives a Remediate or Ignore verdict and drafts fixes; Orca, CrowdStrike offer similar.",
+   "Teams choose whether to open a pull request or send the fix to a coding agent; sensitive systems need approval.",
+   "project44 reports 10x faster vulnerability remediation (vendor-published)."
+  ],
+  "who": "project44, Wiz, Orca, CrowdStrike, La Centrale"
+ },
+ {
+  "id": "security-cloud-infrastructure-07",
+  "title": "Evidence-gated automatic fixing of cloud misconfigurations: safe fixes run, risky await",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Tamnoon says teams investigate about 4% of alerts, critical misconfigurations sit unresolved 128 days on average, and human change boards cannot authorise fixes in minutes.",
+  "approach": [
+   "Tamnoon scores findings SAFE, RISKY or UNSAFE: safe fixes run from playbooks, risky ones await approval, unsafe go to the owning team.",
+   "Crossmint and Flywire practitioners built custom auto-remediation; high-impact or irreversible actions go to a person.",
+   "A research prototype cut change-policy violations to 4.73% against 9.95% for a standard toolchain (independent)."
+  ],
+  "who": "Tamnoon, Crossmint, Flywire"
+ },
+ {
+  "id": "security-cloud-infrastructure-08",
+  "title": "AI turns unused-access findings into least-privilege changes delivered as code pull requests",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Permissions accumulate, console fixes are overwritten at next deployment, and tightening access can break workflows; 59% of AWS IAM users had a key older than a year.",
+  "approach": [
+   "An AWS daily automation reads Access Analyzer findings and uses Bedrock models to produce a pull request with code and plain-English explanation.",
+   "The role-owning team reviews the pull request; at Smolen's pipeline, security reviews AccessDenied-driven pull requests.",
+   "No outcome figures are published for the AWS automation or the Smolen pipeline."
+  ],
+  "who": "AWS, Smolen"
+ },
+ {
+  "id": "security-cloud-infrastructure-09",
+  "title": "Multi-agent cloud security team scores identity risk, applies controls and red-teams them",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Most security teams have no dedicated cloud identity person, so access clean-up is nobody's priority.",
+  "approach": [
+   "A fwd:cloudsec abstract describes four agents (identity, red team, threat intelligence, behaviour analytics) in a real AWS account with 500+ identities.",
+   "Identity agent scored risk and applied controls, a red-team agent checked each control blocked its attack path; approval workflows gate dangerous actions.",
+   "The author reports a 42.7% risk score reduction after five days (self-reported)."
+  ],
+  "who": "One practitioner's AWS account (fwd:cloudsec)"
+ },
+ {
+  "id": "security-cloud-infrastructure-10",
+  "title": "AI-assisted discovery of new cloud privilege-escalation paths, validated in a lab first",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Language models surface new attack vectors quickly but also hallucinate issues that are not exploitable, which wastes researcher time.",
+  "approach": [
+   "An agentic workflow pairs AI-driven discovery with deterministic integration tests in an open-source lab, so every candidate is validated before publication.",
+   "The researcher decides what to publish after tests pass.",
+   "The speaker reports over a dozen new AWS privilege-escalation paths found and validated (self-reported)."
+  ],
+  "who": "One researcher (fwd:cloudsec)"
+ },
+ {
+  "id": "security-cloud-infrastructure-11",
+  "title": "Guardrails and independent checks for AI-written infrastructure code",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "AI assistants now write most infrastructure code in many organisations, and valid Terraform is not necessarily secure; repairs can satisfy a scanner while leaving the flaw.",
+  "approach": [
+   "A reference architecture has an MCP server expose approved Terraform modules, run policy checks, auto-fix eligible violations and open a pull request.",
+   "High-risk exceptions go to humans, and destructive changes land as pull requests for review.",
+   "Independent research found 71.4% of plan-compared LLM repairs of Terraform misconfigurations were deceptive (independent)."
+  ],
+  "who": "Datafruit, Wiz, fwd:cloudsec presenter"
+ },
+ {
+  "id": "security-cloud-infrastructure-12",
+  "title": "Idea: agents detect drift from infrastructure code and propose reconciling updates",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: when consoles and scripts are used alongside infrastructure code, deployed systems drift from the specification and later runs may undo valid changes.",
+  "approach": [
+   "Idea from research: agents read API traces to detect out-of-band change and propose infrastructure code updates, with a verifier agent.",
+   "Human checkpoints are not described; engineer review before merge is inferred.",
+   "Research prototypes report drift reconciliation accuracy of 0.71 to 0.97 (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-cloud-infrastructure-13",
+  "title": "Virtual patching at the firewall and network layer, with AI-assisted rules",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Patching takes weeks (a 43-day median for critical flaws is cited), and tuning web firewall rules across hundreds of technology stacks does not scale with headcount.",
+  "approach": [
+   "An Adobe manager's talk abstract describes AI-assisted rule generation and tuning in a human-in-the-loop pipeline; Palo Alto Networks announced network-level virtual patches.",
+   "Humans approve rules; the abstract claims a capability of going from 43 days to single-digit minutes (self-reported claim)."
+  ],
+  "who": "Adobe (speaker), Palo Alto Networks, IBM, Red Hat"
+ },
+ {
+  "id": "security-cloud-infrastructure-14",
+  "title": "AI firewall policy hygiene: flagging stale, overly permissive and conflicting rules",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Firewall rulebases grow through temporary exceptions and cloud deployments, and Check Point says policies become risky after months of change, with reviews waiting for the next cycle.",
+  "approach": [
+   "Cato Networks' announced agent compares rule behaviour with traffic and flags forgotten and overly permissive rules; Check Point finds redundant, conflicting rules.",
+   "Administrators select which recommended rules to apply; no outcome figures are published."
+  ],
+  "who": "Cato Networks, Check Point"
+ },
+ {
+  "id": "security-cloud-infrastructure-15",
+  "title": "AI turns firewall intent into rules, with change-impact checks grounded in topology",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Firewall change-impact analysis used to come from outside tools, and language models translate intent well but miss policy violations when not grounded in topology.",
+  "approach": [
+   "Fortinet, Palo Alto Networks, Check Point and Cisco announced features that take an intent, write a rule and report its effect.",
+   "The change board signs the change, and human approval or a policy check precedes any AI-initiated network change.",
+   "A research prototype cut missed policy violations by over 30% (independent); no vendor adoption figures are published."
+  ],
+  "who": "Fortinet, Palo Alto Networks, Check Point, Cisco"
+ },
+ {
+  "id": "security-cloud-infrastructure-16",
+  "title": "Runtime guardrails and telemetry for coding agents on developer endpoints",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Coding agents act on privileged developer endpoints, users switch approvals off, and an agent can cause an incident without malicious input.",
+  "approach": [
+   "Perplexity open-sourced Numbat, which hooks into coding agents, enforces rules, records activity and sends telemetry; a scheduled agent proposes tested detection changes.",
+   "Rule changes the agent proposes go through human-reviewed pull requests.",
+   "It runs on thousands of Perplexity endpoints, with no detection-quality figures published (self-reported)."
+  ],
+  "who": "Perplexity"
+ },
+ {
+  "id": "security-cloud-infrastructure-17",
+  "title": "Idea: AI agents tune endpoint detection policy from a bounded catalogue",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "Idea, not a deployment: commercial endpoint detection now includes autonomous AI parts, so an agent tuning it acts on a black box that can change its own behaviour.",
+  "approach": [
+   "Idea from research: an LLM agent selects hardening actions from a finite, tool-enforced catalogue, tested in a lab against a commercial product.",
+   "A prototype cut the attacker's expected payoff 59% against a greedy baseline (independent); human checkpoints are not described."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-cloud-infrastructure-18",
+  "title": "AI-assisted cloud detection engineering, with testing that catches hallucinated log fields",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Detection engineers must write and maintain rules across cloud telemetry as threats change, and one AWS rule sat in a production SIEM nine months without firing.",
+  "approach": [
+   "Wiz and Cloudflare postings list AI use for detection and log analysis; a Meta engineer's open-source analyser checks rule fields against schemas.",
+   "Detection researchers own and review rules.",
+   "The Meta engineer found significant quality defects in 1 in 3 cloud detection rules in two public repositories (self-reported)."
+  ],
+  "who": "Wiz, Cloudflare, Meta (speaker)"
+ },
+ {
+  "id": "security-cloud-infrastructure-19",
+  "title": "Idea: agents run attack simulations in sandboxes to map telemetry to techniques",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: cloud detection engineering is hobbled by poor telemetry documentation and vague, static mappings from log entries to attack techniques.",
+  "approach": [
+   "Idea from a conference abstract: agents run attack call graphs in sandbox accounts on three clouds and record which telemetry actually fires.",
+   "Detection engineers curate the resulting knowledge base; review steps are not described and no results are published."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-cloud-infrastructure-20",
+  "title": "Idea: cloud canaries and deception to detect and steer autonomous AI attackers",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: frontier agents can chain attack steps in the cloud, and compromise rate alone says little about whether defenders can see them.",
+  "approach": [
+   "A lab scored 10 models across 599 autonomous attack runs in a hard AWS environment, with canaries and deception present or absent.",
+   "Canary hits go to the normal detection and response queue; results and review steps are not in the abstract."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-cloud-infrastructure-21",
+  "title": "Continuous cloud compliance: AI-assisted evidence collection and policy written as code",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Point-in-time compliance checks cannot keep pace with dynamic cloud environments, and public-sector teams need AI discovery and remediation inside a FedRAMP High boundary.",
+  "approach": [
+   "Wiz announced on 2026-10-14 its agents are available in its FedRAMP High environment; research turns plain-language policy into executable rules.",
+   "Human approval is configurable per workflow for sensitive systems.",
+   "A research prototype's rules compiled 95.3% of the time (independent); no figures published for Wiz's agents."
+  ],
+  "who": "Wiz, NIST (draft profile)"
+ },
+ {
+  "id": "security-cloud-infrastructure-22",
+  "title": "Shared security AI platform team on which security functions build governed agents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Each security function wants agents, and Databricks lists high-risk workflows such as offensive personas, untrusted inputs, sensitive data, production access and automated tool execution.",
+  "approach": [
+   "Databricks advertises a team owning a shared platform where security functions build governed agents, covering identity, sandboxing, policy enforcement, auditability and evaluation.",
+   "Domain teams own their agents' outcomes; the platform team owns guardrails. This is piloting; CrowdStrike sells a similar product.",
+   "No figure for Databricks."
+  ],
+  "who": "Databricks, CrowdStrike, Robinhood, Block"
+ },
+ {
+  "id": "security-cloud-infrastructure-23",
+  "title": "Managed cloud security services delivered on a multi-tenant AI security platform",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Managed service providers juggle fragmented consoles, client policies and scattered visibility, which slows response as client estates grow.",
+  "approach": [
+   "Wiz announced on 2026-09-28 a provider programme with multi-tenant management, just-in-time provisioning and portfolio dashboards; Optiv, SEP2 and Deloitte are quoted.",
+   "Wiz says analysts can review and audit the Blue Agent's investigation and verdict; no outcome figures published."
+  ],
+  "who": "Wiz, Optiv, SEP2, Deloitte"
+ },
+ {
+  "id": "security-cloud-infrastructure-24",
+  "title": "Idea: runtime control layer deciding whether live cloud actions proceed or escalate",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "Idea, not a deployment: SACR argues cloud security platforms still rely on periodic telemetry and human remediation queues while workloads and AI actions change in seconds.",
+  "approach": [
+   "SACR defines a runtime layer linking platform evidence to a decision to proceed, constrain, remediate or escalate, with audit-grade records.",
+   "Escalation sends the action to a person; where that boundary sits was unresolved across CSA's summits."
+  ],
+  "who": "No named deployment"
+ }
+]

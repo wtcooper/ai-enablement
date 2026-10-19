@@ -1,0 +1,340 @@
+[
+ {
+  "id": "assurance-planning-risk-assessment-01",
+  "title": "Summarise board minutes with cited output to focus risk identification",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Auditors read board minutes and similar documents to spot risk indicators, but the volume is large, reading it all is slow, and relevant passages are easy to miss.",
+  "approach": [
+   "KPMG describes Clara AI assistants that review documents such as minutes to flag possible risks, announced for 90,000 auditors in July 2024.",
+   "The FRC's worked example for a hypothetical firm has the tool summarise each meeting, with every point citing its source.",
+   "The auditor reads the minutes to check completeness and accuracy; KPMG gives no usage, accuracy or time figure (self-reported).",
+   "The Dutch regulator AFM says nearly all firms it visited use generative AI, for example to summarise minutes, without naming them."
+  ],
+  "who": "KPMG, FRC (worked example), AFM"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-02",
+  "title": "Chat assistants for entity research and methodology questions during planning",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Building an understanding of the entity, its industry and its regulatory environment takes desk research and document reading, and auditors spend time finding firm-approved guidance.",
+  "approach": [
+   "KPMG reported more than 2.175 million Audit Chat conversations since October 2023 (self-reported); this is usage, not effect.",
+   "RSM's Ask Luca answers questions grounded in firm-approved guidance and, RSM says, reduces research time (self-reported); PwC describes ChatNational.",
+   "The auditor owns the understanding of the entity: ICAEW found chatbots cannot perform inquiry, observation or inspection; RSM calls human review vital."
+  ],
+  "who": "KPMG, RSM, PwC, ICAEW"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-03",
+  "title": "Agents that scan media reports for emerging threats and draft staff memos",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Keeping up with news and events that bear on an audited entity's risk is manual and uneven.",
+  "approach": [
+   "Bloomberg Law reports Deloitte auditors worldwide gained agents that scan media reports for emerging threats and produce first drafts of staff memos.",
+   "Deloitte describes an agent network in Omnia for nearly 85,000 practitioners, running preliminary procedures for review.",
+   "Practitioners supervise and validate agent output; a Deloitte leader expects faster working-paper population, an expectation not a result (self-reported)."
+  ],
+  "who": "Deloitte, Bloomberg Law"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-04",
+  "title": "Analyse audit-committee communications to surface issues earlier in audit preparation",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Issues raised in communications with the audit committee can reach the engagement team late in the audit preparation cycle.",
+  "approach": [
+   "PwC said in October 2026 that one tool it will use for 2026 year-end audits analyses audit-committee communications to surface issues sooner.",
+   "No outcome is published and the human checkpoint is not described in the source."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-05",
+  "title": "Tool-assisted understanding of the client's IT environment and access rights",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Understanding the entity's IT environment is required in risk assessment, but sampling user lists and access logs gives a partial picture, and mid-tier firms often lack IT audit teams.",
+  "approach": [
+   "The Dutch regulator AFM saw auditors using tools to evaluate access rights and user activity; these are analytics tools, not necessarily AI.",
+   "A vendor co-founder writes that agentic AI platforms can map risks to controls and draft ISA 315 documentation with human-in-the-loop review.",
+   "Auditors review, validate and challenge flagged issues and evaluate tool results against the IT auditor's findings. No outcome is published."
+  ],
+  "who": "AFM, ICAEW viewpoint by a vendor co-founder"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-06",
+  "title": "Idea: understand the entity's AI use as a standard risk assessment step",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: audit partners rated only 6% of their largest clients' AI governance as advanced, yet the AS 2110 text has no AI-specific step.",
+  "approach": [
+   "Planning would add inquiry into how the entity uses AI in financial reporting, its governance, and whether AI-generated documents feed audit evidence.",
+   "The AICPA practice aid (13 October 2026) covers AI-specific risks and controls; this is guidance, not yet a measured practice.",
+   "The auditor remains responsible for the audit and the opinion, in the AICPA chief auditor's words; no firm has published results."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-07",
+  "title": "Standardised ERP data ingestion as the base for planning analytics",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Fragmented tools and client data in many formats block analytics at the start of the audit; surveyed US firms name poor client data (60%) among the top blockers.",
+  "approach": [
+   "Grant Thornton's gtap is a cloud platform standardising how audit data from any ERP system is ingested, transformed and analysed.",
+   "It supports full-population analysis, started with private-company audits, and plans public companies the next year.",
+   "Auditors oversee the risks and anomalies agents flag; Grant Thornton says consistency rises and manual steps fall, with no figure (self-reported).",
+   "Adoption signal: 35% of surveyed US firms have automated trial-balance import and 19% automated data ingestion (independent)."
+  ],
+  "who": "Grant Thornton, CPA.com (AICPA)"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-08",
+  "title": "Whole-population ledger analytics to identify risks and unusual flows",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Planning often starts from a trial balance, a few schedules, last year's file and judgment, so significant classes and unexpected flows can stay hidden until costlier substantive testing.",
+  "approach": [
+   "RSM auditors review journal-entry visualisations for risk insight, and KPMG says Clara Transaction Scoring covers 100% of populations.",
+   "The auditor interprets results and follows up outliers; senior team members reflect on whether scepticism was maintained.",
+   "Adoption signal, not quality: 55% of IFIAR members frequently observed automated tools in risk assessment in 2024, 49% in 2023 (independent).",
+   "22% of US firms have an automated risk-assessment solution; every respondent using one reported positive impact (independent)."
+  ],
+  "who": "KPMG, RSM, Wolters Kluwer, IFIAR"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-09",
+  "title": "Draft engagement-specific risk suggestions from trial balance, prior-year file and board minutes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Risk assessment starts from a blank page or from last year's risks, and is time-consuming, according to a customer.",
+  "approach": [
+   "Caseware's Risk Suggestion Agent, launched 6 October 2026, suggests engagement-specific risks with a rationale from financial data and board minutes.",
+   "The auditor accepts, edits or rejects every suggestion; nothing enters the engagement file without a deliberate decision.",
+   "In a demonstration it surfaced 5 risks, one a $118,000 discrepancy with board minutes (vendor-published).",
+   "A GRF CPAs & Advisors partner says it saves time, with no figure (vendor-published)."
+  ],
+  "who": "Caseware, GRF CPAs & Advisors"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-10",
+  "title": "Agentic risk assessment linking evidence, analytics, assertions, materiality and planned procedures",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Risk scores from analytics often sit outside workpaper tools and are hard to tie to assertions and materiality, and linking risks to procedures is manual.",
+  "approach": [
+   "MindBridge announced Agentic Risk Assessment on 22 September 2026, connecting evidence, analytics, assertions, materiality and methodology to support planning decisions.",
+   "Wolters Kluwer describes a future-state vision where agents draft a cited risk narrative and map risks to procedures, with the auditor reviewing.",
+   "The auditor reviews and refines the output; MindBridge claims better planning decisions, with no figure and no named customer (vendor-published)."
+  ],
+  "who": "MindBridge, Wolters Kluwer"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-11",
+  "title": "Large-firm agent platforms covering planning and risk identification",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Separate point tools leave planning, risk assessment and testing disconnected, so risk views are not updated as work proceeds.",
+  "approach": [
+   "EY embedded a multi-agent framework in EY Canvas on 7 April 2026, with end-to-end support expected by 2028.",
+   "Deloitte says Omnia agents identify potential risk factors; KPMG Clara GenAI helps refine risk assessments; PwC expects an agentic platform.",
+   "Practitioners supervise and validate agent output; preliminary conclusions go to professionals for review.",
+   "EY reports reach of 130,000 professionals and 160,000 engagements (self-reported): reach, not effect."
+  ],
+  "who": "EY, Deloitte, KPMG, PwC, Grant Thornton"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-12",
+  "title": "Idea: chatbot drafts risks of material misstatement from financial statements (weak results)",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: identifying risks of material misstatement takes time, and a general-purpose chatbot can produce a polished draft in seconds.",
+  "approach": [
+   "ICAEW tested Copilot, Claude Sonnet 4 and Grok 3 once each on a fictional retailer; the case for chatbots was not made.",
+   "None of three performed risk assessment as a human auditor would; 0 of 3 separated statement-level from assertion-level risks (independent).",
+   "Reports took from under 20 seconds to about 3.5 minutes (independent); Copilot did not treat revenue as a risk area.",
+   "ICAEW concludes human judgement is needed to interpret the output and decide the risks, because each model gave different answers."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-13",
+  "title": "Idea: multi-agent restatement-risk scoring from report text, ratios and audit matters",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: entity-level risk signals come from several evidence streams that can disagree, and point predictions say nothing about how well the streams agree.",
+  "approach": [
+   "A research preprint describes UMAR: three agents score risk from report text, financial ratios and audit matters, each with an uncertainty estimate.",
+   "An aggregator combines the scores and measures conflict between agents; the authors call the output potentially actionable and interpretable.",
+   "On the authors' test set it beat logistic regression, XGBoost and FinBERT: AUROC 0.782, calibration error 0.052 (independent). Human checkpoint not described."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-14",
+  "title": "GenAI as a sounding board in fraud risk assessment and fraud brainstorming",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Fraud risk assessment is vulnerable to cognitive bias, such as irrelevant information diluting relevant indicators, and brainstorming depends on the team's knowledge of schemes elsewhere.",
+  "approach": [
+   "The AFM reports auditors at unnamed Dutch firms making their own fraud risk assessment first, then using GenAI to challenge it.",
+   "A City of Charlotte internal auditor showed a chatbot drafting a table of cemetery fraud schemes; the slides show no review step.",
+   "Conference experiment with irrelevant information added: ratings 8.00 vs 6.42 without ChatGPT, 8.91 vs 7.97 with it (independent).",
+   "No outcome is published for the practitioner demonstration."
+  ],
+  "who": "AFM, City of Charlotte auditor, Tilburg University"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-15",
+  "title": "Idea: extend fraud risk assessment to AI-enabled schemes and AI-generated evidence",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: documents such as invoices and bank statements may now originate from or be altered by AI, which traditional fraud risk factors do not cover.",
+  "approach": [
+   "The fraud risk assessment and team discussion would add AI-enabled schemes such as deepfake impersonation in wire authorisations and fabricated invoices.",
+   "Teams would consider whether AI algorithms initiate accounting entries and plan authenticity checks where document authenticity is in doubt.",
+   "The engagement team discusses with the engagement partner as the human checkpoint.",
+   "Survey of 373 internal audit leaders: 85% rate AI-enabled fraud a moderate to high risk; 62% unprepared or minimally prepared (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-16",
+  "title": "Idea: chatbot proposes the materiality benchmark, percentage and performance materiality",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: setting overall and performance materiality needs a benchmark, a percentage and a rationale, and inspectors scrutinise year-on-year changes.",
+  "approach": [
+   "ICAEW asked three chatbots to calculate materiality with a rationale in one test; no source describes AI setting materiality in practice.",
+   "The models proposed different benchmarks for the same facts: Claude 5% of profit before tax, Copilot 0.75% of revenue (independent).",
+   "Copilot's rationale may be a hallucination; ICAEW concludes human judgement is required to choose the benchmark and thresholds."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-17",
+  "title": "AI-supported scoping decisions, including group components",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Deciding which accounts, processes, locations and components are in scope is a judgment call made largely from prior-year files and team knowledge, and group audits are among the hardest.",
+  "approach": [
+   "PwC said in October 2025 it planned soon to have a scoping risk-assessment tool; its October 2026 follow-up does not mention it.",
+   "Wolters Kluwer says automation and AI can consolidate group data and prioritise exceptions; it describes no component-scoping method and names no customer.",
+   "A person decides scope: PwC says the tool will help people make smarter decisions; auditors evaluate AI-flagged results. No outcome published."
+  ],
+  "who": "PwC, Wolters Kluwer, PCAOB staff"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-18",
+  "title": "Auto-populate the planning document from prior-year information and show what changed",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Planning documents are rebuilt each year from prior-year files, and auditors may not notice what has changed in the business.",
+  "approach": [
+   "PwC's Simplified Audit for Private Business ingests prior-year information and auto-populates a planning document; 2025 was its first year in planning.",
+   "PwC says it saves time and helps auditors ask better questions by showing what changed (self-reported); no figure is published.",
+   "The document is a foundation for the auditor to consider; planning judgments stay with the team; no review steps are described.",
+   "PwC describes AI time savings across its audit tools as not that drastic yet (self-reported)."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-19",
+  "title": "In-file assistant that checks the planning file for gaps at planning review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Gaps in the risk assessment, such as a variance no logged risk covers, are often found during fieldwork rather than at planning review.",
+  "approach": [
+   "In a Caseware CwX 2026 demonstration, the Verity agent flagged a variance against board minutes with no logged risk attached.",
+   "The reviewer accepts, edits or rejects each suggestion before anything enters the engagement.",
+   "Caseware reports early beta cut manual workflows from 15-20 minutes to under two (vendor-published); not specific to planning review.",
+   "Caseware reports 94% accuracy on golden-dataset items (vendor-published); not specific to planning."
+  ],
+  "who": "Caseware"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-20",
+  "title": "Methodology-embedded, risk-based engagement platform with in-context AI guidance for mid-tier firms",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Mid-tier firms use disconnected tools and prior-year habits, and some surveyed firms say they still struggle to move from prior-year workpapers to a risk-driven approach.",
+  "approach": [
+   "EisnerAmper, Citrin Cooperman and PKF O'Connor Davies adopted the Dynamic Assurance Solution risk-focused suite, now with Caseware Verity.",
+   "PKF also joined an agentic pioneer programme to co-develop its own agents; EisnerAmper phased its roll-out with training.",
+   "Caseware says every AI-assisted output is citation-backed, reviewable and traceable before entering the engagement file.",
+   "Adoption, not an AI effect: more than 1,100 EisnerAmper professionals and over 1,500 engagements on the platform (vendor-published)."
+  ],
+  "who": "EisnerAmper, Citrin Cooperman, PKF O'Connor Davies, Caseware"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-21",
+  "title": "Engagement-level plan for AI and tool use, with team competence checked",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Tools are adopted ad hoc, it is not always clear where GenAI was applied in an audit, and teams may use tools they are not trained for.",
+  "approach": [
+   "The audit plan states which tools will be used for which risks; the team's competence to use them is assessed at planning.",
+   "The AFM saw audit plans at some firms stating which tools are used; the AICPA practice aid recommends planning intended AI use.",
+   "The engagement leader sets expectations at the outset; senior team members review overall technology use in the file. No outcome published."
+  ],
+  "who": "AFM, IFIAR, AICPA"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-22",
+  "title": "AI-supported staffing requests, budget planning and engagement-leader review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Manual staffing and budgeting processes give leaders little visibility into engagement planning and resourcing.",
+  "approach": [
+   "RSM Luca Resourcing replaces manual processes with a connected tool supporting initial staffing requests, budget planning and engagement-leader review.",
+   "RSM presents it as one of three AI-related additions to its audit ecosystem; what the AI does inside is not stated.",
+   "Engagement-leader review of staffing and budget is a step in the tool; RSM says it improves visibility and speeds staffing decisions (self-reported)."
+  ],
+  "who": "RSM"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-23",
+  "title": "AI efficiency gains negotiated into audit fees and engagement budgets",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "If firms tell clients AI cuts hours, clients may ask why fees do not fall.",
+  "approach": [
+   "Reported case: KPMG International pressed auditor Grant Thornton UK for a lower fee, arguing AI should cut audit cost; the fee fell.",
+   "Reported fee about 14% lower, $416,000 (2024) to $357,000 (2025); second-hand and unconfirmed (independent).",
+   "PwC said in 2025 clients know AI saves hours and ask for discounts; practitioners disagree on whether quality should support higher fees.",
+   "The human checkpoint is not described in the source."
+  ],
+  "who": "KPMG International, Grant Thornton UK, PwC"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-24",
+  "title": "Continuous risk assessment and dynamic planning that update risks as data arrives",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Risk assessment is a point-in-time planning step revised only when the team notices contradicting evidence, although AS 2110 .74 requires it to continue through the audit.",
+  "approach": [
+   "Direction of travel, not yet practice: Thomson Reuters says client transactions flow continuously into AI engines that flag issues as they occur.",
+   "Grant Thornton designed gtap as the foundation for such a model, and Caseware's long-term aim includes AI that continuously assists planning.",
+   "The engagement team decides whether to revise the risk assessment; auditor intervention protocols apply when anomalies appear.",
+   "Thomson Reuters claims 80-90% complete deliverables by year-end with minimal human intervention (vendor-published); the claim is unsourced."
+  ],
+  "who": "Thomson Reuters, Grant Thornton, Caseware"
+ },
+ {
+  "id": "assurance-planning-risk-assessment-25",
+  "title": "AI-drafted risk considerations, risk-to-control scoping and work programs for internal audit",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Internal audit teams plan many diverse audits with limited staff, and mapping risks to controls by hand before testing starts is where teams lose the most time.",
+  "approach": [
+   "Helvetia Baloise's chief audit executive says the team uses AI to support audit work programs and summarise reports and policies.",
+   "Fieldguide's Field Agents map risks to controls and score them for a scoped starting point; BDO's risk advisory practice is rolling out.",
+   "The auditor reviews the scoping result and makes the final call; severity ratings, materiality calls and sign-off stay with people.",
+   "FJ Management's head of internal audit states a vision of an agent planning procedures and drafting workpapers for review; no outcome published."
+  ],
+  "who": "Helvetia Baloise, Fieldguide, BDO, FJ Management"
+ }
+]

@@ -1,0 +1,327 @@
+[
+ {
+  "id": "tax-research-advisory-01",
+  "title": "Cited conversational tax research in place of keyword database search",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Advisers pay for research databases but find them slow, and general chatbots return confident citations that may not exist.",
+  "approach": [
+   "The adviser asks in plain language and gets an answer citing primary authority from a curated set (Blue J, Accordance, CoCounsel Tax).",
+   "A 25-person firm reports research falling from 1 hour to 10 minutes (vendor-published); Blue J says user disagreement is below 0.2% (vendor-published).",
+   "The adviser reads each cited authority before relying on it; a manager or partner tests the reasoning."
+  ],
+  "who": "Blue J, Accordance, CoCounsel, RSM US, others"
+ },
+ {
+  "id": "tax-research-advisory-02",
+  "title": "Multi-step research plans for gray-area tax questions",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Hard gray-area questions took hours across several databases, and applying findings to a client's situation still took substantial manual effort.",
+  "approach": [
+   "The tool works in steps: extract facts, frame issues, locate authority, weigh relevance, recommend; Accordance, Bloomberg Tax and Thomson Reuters offer versions.",
+   "A CPA at a 100-professional firm says research taking 2-6 hours takes 15-20 minutes (vendor-published).",
+   "A senior researcher checks the plan, conclusions and authority; a partner reviews before advice goes to the client."
+  ],
+  "who": "Accordance, Bloomberg Tax, Thomson Reuters"
+ },
+ {
+  "id": "tax-research-advisory-03",
+  "title": "Research agent works a tax question end to end with cited answer",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Corporate tax research needs several chained lookups, and an early error in a threshold, date or citation carries through to the answer.",
+  "approach": [
+   "An agent with lookup, search and calculator tools researches over many steps and submits a cited answer; EY India announced research agents.",
+   "Vals AI's independent benchmark top score was 49.19% (independent; models run in Vals harness, not a firm deployment).",
+   "A qualified adviser reviews the memo and every authority; scope phases from summarisation to position drafting only after verification."
+  ],
+  "who": "Vals AI, EY India"
+ },
+ {
+  "id": "tax-research-advisory-04",
+  "title": "Idea: specialist multi-state and multi-country tax research workflow",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: multi-jurisdiction questions, such as 50-state surveys, are where tools do worst and manual work is longest.",
+  "approach": [
+   "Idea: a purpose-built workflow searches each jurisdiction's primary law and compiles a comparison table for adviser review.",
+   "Vals suggests a specialist workflow should beat basic prompts; an adjacent legal study found AI scored 14 points lower on multi-jurisdiction questions.",
+   "The adviser verifies each jurisdiction's result against primary law."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-05",
+  "title": "Knowledge assistant over a firm's own memos, precedents and guidance",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Institutional tax knowledge sits in senior practitioners' heads and scattered memos; vendors say it is lost as seniors retire and quality varies.",
+  "approach": [
+   "An assistant answers from the organisation's own memo library and policies alongside licensed content so staff reuse prior positions consistently.",
+   "Thomson Reuters markets CoCounsel Tax for in-house teams with a Knowledge Base; KPMG's knowledge management leader joined a panel. No outcomes.",
+   "The reviewer confirms a retrieved precedent still reflects current law and fits the client's facts."
+  ],
+  "who": "Thomson Reuters, KPMG"
+ },
+ {
+  "id": "tax-research-advisory-06",
+  "title": "In-house tax teams triage technical questions with licensed and enterprise AI",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Corporate tax teams answer ad hoc technical questions with limited staff; Thomson Reuters' 2025 survey found 58% of departments under-resourced.",
+  "approach": [
+   "In KPMG Germany's quick surveys, 89% use company-wide AI solutions and 29% specialised tax applications (base not stated).",
+   "TEI's preliminary Midyear 2026 programme scheduled labs on AI tax research with Thomson Reuters CoCounsel and Accordance.",
+   "Tax director reviews AI-assisted conclusions before they go to the CFO, auditors or authorities."
+  ],
+  "who": "KPMG Germany, Thomson Reuters, TEI"
+ },
+ {
+  "id": "tax-research-advisory-07",
+  "title": "Firm-wide standard on approved research assistants with a named tax AI owner",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Staff use general chatbots for tax questions whether or not approved, and large firms have uneven tools and no central control over what is pasted into AI.",
+  "approach": [
+   "Crowe signed an enterprise agreement for Ask Blue J and has a Tax AI Leader; KPMG US M&A Tax built its own.",
+   "PwC has a US AI Tax Leader, a governance committee, over 3,200 AI champions, 800 custom GPTs and 250 agents (self-reported).",
+   "The managing partner or tax leader approves tools and keeps the approved list; human review applies at each level."
+  ],
+  "who": "Crowe, KPMG US, PwC, Wright Ford Young"
+ },
+ {
+  "id": "tax-research-advisory-08",
+  "title": "AI-supported research training and coaching for junior staff",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Junior staff lack the background to navigate legacy research tools, and seniors act as informal research trainers.",
+  "approach": [
+   "Firms use the cited research assistant as a tutor; Jansen & Company's senior managing director says he uses AI as a tutor.",
+   "Sasserath & Co. says younger staff avoided unlearning legacy methods; Finney Neill says less experienced staff could not reach answers before.",
+   "A supervisor reviews juniors' research and reasoning, not only the answer."
+  ],
+  "who": "Jansen & Company, Sasserath & Co., Finney Neill"
+ },
+ {
+  "id": "tax-research-advisory-09",
+  "title": "Reusable planning blueprints turning client data into a decision matrix",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "An S-corporation election analysis for a sole proprietor was about a 10-hour project, and research on the firm's old platform limited proactive client service.",
+  "approach": [
+   "The firm builds a standard process (a blueprint) that takes client financials, researches the rules and produces a decision matrix.",
+   "A tax shareholder says a 10-hour project becomes roughly two to two and a half hours (vendor-published).",
+   "The tax shareholder reviews the matrix and localised assumptions before it goes to the client."
+  ],
+  "who": "Finney Neill, Accordance"
+ },
+ {
+  "id": "tax-research-advisory-10",
+  "title": "Idea: AI planning-alternative ideation and anti-abuse screening of structures",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: finding and testing planning alternatives across a large body of authority is slow and depends on a few senior people.",
+  "approach": [
+   "Idea: a model proposes or completes planning strategies and probes them against authority; the adviser decides whether any is supportable.",
+   "Blair-Stanek and colleagues report LLM reasoning identified an apparently novel strategy (independent; no rate or count). No adviser-use result published.",
+   "A senior adviser tests every AI-proposed structure against economic substance and professional standards."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-11",
+  "title": "Idea: AI challenges a tax position by arguing the other side",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: positions are often tested only by the author and one reviewer, and a single tool's confident answer can be wrong.",
+  "approach": [
+   "Idea: the adviser asks a model to argue the opposite, list what an IRS examiner would flag, or cross-checks a second tool.",
+   "Disagreement between tools triggers a deeper human check; CPA Practice Advisor's playbook suggests similar prompts for clients.",
+   "The adviser decides which objections are credible, checks material points against primary authority and updates the memo."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-12",
+  "title": "Auditable tax computation: AI translates rules, a calculation engine does the arithmetic",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Advice often turns on a computation, and language models alone get these wrong in ways that are hard to see.",
+  "approach": [
+   "The model translates rules or facts into formal logic or inputs for a solver or tax engine; the logic trace is kept.",
+   "Johns Hopkins researchers tested this on a statutory reasoning dataset; best model computing 2024 returns scored 32.35% strict, 51.96% lenient (vendor-published).",
+   "The adviser reviews inputs, assumptions and the explanation of the calculation."
+  ],
+  "who": "Johns Hopkins researchers, Column Tax"
+ },
+ {
+  "id": "tax-research-advisory-13",
+  "title": "Document-grounded tax analysis of agreements, trusts and schedules",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Advisers read long operating agreements, trust and will documents and supporting schedules by hand before they can apply the tax rules.",
+  "approach": [
+   "The adviser uploads a document; the tool summarises it and checks authority. Wright Ford Young uses it to review operating agreements.",
+   "Jansen & Company says it wants to analyse trust and will documents; Thomson Reuters describes schedule uploads. No outcomes published.",
+   "The adviser checks the summary against the source document before relying on it."
+  ],
+  "who": "Wright Ford Young, Jansen & Company, Thomson Reuters"
+ },
+ {
+  "id": "tax-research-advisory-14",
+  "title": "Drafting technical memos, advice letters and client emails from researched authority",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Writing the memo, advice letter or client explanation after research takes days of associate time, delays the response and varies between staff.",
+  "approach": [
+   "The tool turns facts and authorities into a first draft the adviser edits and owns; Larson Gross uses Blue J.",
+   "KPMG describes a Writing Review Assistant; Lowy says output resembles an average junior associate's, useful for drafts but not ready to send.",
+   "A named adviser edits, verifies every cited authority and approves each client-facing draft; opinion-level documents get a second reviewer."
+  ],
+  "who": "Blue J, Larson Gross, KPMG, Nelson Mullins"
+ },
+ {
+  "id": "tax-research-advisory-15",
+  "title": "Idea: AI support for tax opinions and in-house preliminary positions",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: written advice must rest on reasonable assumptions, and corporates often wait for an expensive Big Four or law-firm opinion.",
+  "approach": [
+   "Idea: AI assembles authorities, maps them to facts and drafts the analysis; a person decides the conclusion and signs.",
+   "Kilpatrick Townsend says AI can help produce an opinion letter if the practitioner verifies analysis and replaces fabricated authorities.",
+   "The signing professional owns the conclusion; opinion committee or second-partner review still applies."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-16",
+  "title": "Answering client questions during the call instead of calling back",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Complex client questions meant saying 'we'll do some research and call you back', because research could consume most of a workday.",
+  "approach": [
+   "With a cited research assistant open, the adviser looks up and tests an answer while the client is on the line.",
+   "A Barnes Wendling director says the team can now get answers on a phone call; 700+ queries per month tracked firm-wide (vendor-published).",
+   "The adviser decides what can be said live and what needs follow-up review."
+  ],
+  "who": "Barnes Wendling, Accordance"
+ },
+ {
+  "id": "tax-research-advisory-17",
+  "title": "Idea: client-facing tax question assistant that escalates to an adviser",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: clients and self-preparers ask routine tax questions that consume adviser time, and many already ask general chatbots.",
+  "approach": [
+   "Idea: a chatbot answers routine questions from the firm's approved content and routes nuanced or high-stakes ones to an adviser.",
+   "HMRC's guidelines for tax software using generative AI ask for flags on nuanced rules; no firm-deployed assistant outcome published.",
+   "Fact-dependent or advice-level questions escalate to a qualified adviser."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-18",
+  "title": "Idea: triage of AI-generated tax answers and citations that others bring",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: clients ask a chatbot first, and counterparties send positions and citations that may be AI-generated and wrong.",
+  "approach": [
+   "Idea: run incoming material through the citation checks used on the firm's own work, and counsel clients to ask AI for sources.",
+   "In Clinco the IRS flagged the nonexistent cases; in Harber the tribunal and HMRC found nine cited decisions did not exist.",
+   "The adviser reviews flagged material and its sources before adopting any position or responding."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-research-advisory-19",
+  "title": "Citation verification and an AI-use record as a standing review step",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI can produce plausible but nonexistent authority; in Clinco three of four cited cases were described as probable AI hallucinations.",
+  "approach": [
+   "Reviewers confirm every cited authority exists and supports the claim, and the file records prompt, output, citations, verification and reviewer.",
+   "KPMG US M&A Tax uses citations and hyperlinks to validate all AI outputs; Aon and Wolters Kluwer advise similar records.",
+   "2,199 decisions worldwide address hallucinated content (independent, 16 Oct 2026). A second reviewer cross-checks; the responsible partner signs off."
+  ],
+  "who": "KPMG US, Aon adviser, Wolters Kluwer, Tax Court"
+ },
+ {
+  "id": "tax-research-advisory-20",
+  "title": "Automated check that every cited authority exists and supports the point",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Fabricated or misdescribed citations reach client memos and court filings, and manual cite-checking of every authority is slow.",
+  "approach": [
+   "A checker resolves every citation in a draft against authoritative sources and flags those that do not exist or support the point.",
+   "Damien Charlotin, who runs a hallucination-decisions database, offers an automated reference checker (PelAIkan); no tax error rates published (announced).",
+   "A person clears every flagged citation and reads the authorities that carry the argument."
+  ],
+  "who": "Damien Charlotin (PelAIkan), Vals AI"
+ },
+ {
+  "id": "tax-research-advisory-21",
+  "title": "M&A tax diligence: AI review of purchase agreements and a first-draft report",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Transaction tax teams read long purchase agreements, research deal rules and write diligence reports under deadlines, leaving less time for structuring and hidden-risk analysis.",
+  "approach": [
+   "KPMG US M&A Tax describes four GenAI tools: research, agreement review against baselines, draft diligence reporting and a writing review assistant.",
+   "KPMG's web page says the firm is compressing weeks of tax analysis into minutes (self-reported).",
+   "Professionals add their own assessments and validate output against source documents; a senior reviewer signs the report."
+  ],
+  "who": "KPMG US, a Hungarian advisory firm"
+ },
+ {
+  "id": "tax-research-advisory-22",
+  "title": "Diligence agent reads data room and drafts cited tax risk assessment",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Tax diligence over entity structures, intercompany agreements and filings takes weeks of document analysis across entities and jurisdictions.",
+  "approach": [
+   "V7 markets an agent that ingests financial statements, returns and agreements, maps entities, flags permanent establishment issues and returns a cited assessment.",
+   "V7's demo project compares 3-4 weeks to 2-3 days, 'average time saved 90%' (vendor-published).",
+   "The deal tax lead reviews the assessment before it informs price, structure or counterparty discussions."
+  ],
+  "who": "V7 (vendor)"
+ },
+ {
+  "id": "tax-research-advisory-23",
+  "title": "Law-change monitoring that drafts client impact notes for adviser review",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "After major legislation advisers must track guidance across jurisdictions and explain the effect to each client, which is repetitive and urgent.",
+  "approach": [
+   "A monitoring agent watches new law and drafts client impact notes. KPMG US says building one went from weeks to minutes (self-reported).",
+   "Bloomberg Tax describes an AI Assistant in its Compliance Tracker; best model scored 66.67% on an independent law-change benchmark category (a proxy).",
+   "The adviser confirms each flagged change and its client impact before anything reaches the client."
+  ],
+  "who": "KPMG US, Anthropic, Bloomberg Tax"
+ },
+ {
+  "id": "tax-research-advisory-24",
+  "title": "Advisers co-build client-specific tax agents with clients on firm platforms",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "KPMG's US tax vice chair says building an agent to help clients adjust to changing tax regulations used to take weeks and several tools.",
+  "approach": [
+   "KPMG's Digital Gateway Powered by Claude, announced 20 May 2026, lets professionals and clients build agentic workflows, starting with tax.",
+   "EY announced EY.ai Tax Labs and the Tax Agent Factory (25 Nov 2025) to build and manage agents with clients.",
+   "KPMG US says weeks became minutes (self-reported). Human checkpoints are not described in the sources."
+  ],
+  "who": "KPMG US, Anthropic, EY"
+ },
+ {
+  "id": "tax-research-advisory-25",
+  "title": "Value-based and fixed-fee pricing as AI shortens research and drafting",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Hourly billing ties revenue to time AI removes, and the IRS says billing for manual time not actually spent may violate the fee rule.",
+  "approach": [
+   "Firms test fixed, hybrid or value-based fees; Sasserath & Co. moved onboarding to fixed monthly fees. A pricing change, not AI workflow.",
+   "RKL is piloting an alternative model and reports several dozen clients onboarded under it (self-reported).",
+   "The engagement partner sets the fee basis and reviews billing against actual work and the IRS fee rule."
+  ],
+  "who": "Sasserath & Co., RKL, RSM US, PwC"
+ }
+]

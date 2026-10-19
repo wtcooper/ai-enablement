@@ -1,0 +1,236 @@
+[
+ {
+  "id": "security-human-risk-01",
+  "title": "Adaptive, reward-based phishing training aimed at the riskiest employees first",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "A small group of repeat clickers is said to cause most phishing incidents, and blanket annual training treats everyone the same.",
+  "approach": [
+   "Qualcomm enrolled its 1,000 highest-risk employees in Hoxhunt's adaptive programme, benchmarked them against colleagues, and won support for rollout to about 48,000.",
+   "Avanade ran a three-month trial of two 1,000-user groups; Hoxhunt showed a 43% higher resilience ratio and 11% lower failure rate (vendor-published).",
+   "Qualcomm says company-wide failure rates fell by a factor of 6 (vendor-published). The security team selects the cohort and decides the rollout."
+  ],
+  "who": "Qualcomm, Avanade, Hoxhunt"
+ },
+ {
+  "id": "security-human-risk-02",
+  "title": "Behaviour-signal-driven human risk management with just-in-time micro-training and nudges",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Uber judged compliance-based awareness training could not reduce risk effectively, and wanted a programme for over 25,000 users with a two-person team.",
+  "approach": [
+   "Uber and Hoxhunt's programme uses behavioural signals to trigger micro-learning at moments of risk, with content chosen 'with AI capabilities'.",
+   "Training completion rose from 60% to over 90% and simulated threat reporting tripled (vendor-published).",
+   "The security team defines escalation playbooks and intervention triggers. Research prototypes TrainShield and CyberGLA go further, with no outcome figures."
+  ],
+  "who": "Uber, Hoxhunt, university researchers"
+ },
+ {
+  "id": "security-human-risk-03",
+  "title": "AI-generated and AI-agent-built security awareness content and campaigns",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Training content libraries have gaps for organisation-specific policies, new attacks and incidents; building modules takes days and waiting on a vendor takes longer.",
+  "approach": [
+   "Hoxhunt's Content Studio turns a prompt and the customer's documents into a draft module; the vendor claims minutes instead of days, unmeasured.",
+   "A person reviews and publishes every generated module. KnowBe4 said in January 2026 it has seven AI agents in market (vendor-published).",
+   "Two controlled studies (N=480) found learning gains from AI-generated training but no advantage from complex personalisation (independent)."
+  ],
+  "who": "Hoxhunt, KnowBe4, academic researchers"
+ },
+ {
+  "id": "security-human-risk-04",
+  "title": "Personalised, public-information-driven spear-phishing simulations inside awareness programmes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Generic simulations may under-represent what attackers can now do cheaply; spear phishing is about 0.1% of phishing emails but linked to 66% of breaches in one cited study.",
+  "approach": [
+   "At TU Braunschweig, 7,700 participants got AI-written emails tailored from web searches; click rate was 10.0% versus 3.7% and 4.1% generic (independent).",
+   "Personalisation cost about USD 0.03 per email (independent).",
+   "Ethics and staff-committee review precede launch, and participants are briefed and debriefed. Adaptive Security lists a similar product."
+  ],
+  "who": "TU Braunschweig, Adaptive Security, academic researchers"
+ },
+ {
+  "id": "security-human-risk-05",
+  "title": "Conversational voice and text-message phishing practice with AI-voice scenarios",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Employees are trained to scrutinise emails, but a live call demands instant reaction; in a survey experiment, 16.5% said they would or might comply with AI voice scams.",
+  "approach": [
+   "Hoxhunt describes training where employees practise against an AI voice in simulated phone conversations that adapt to their responses.",
+   "Adaptive lists voice-call and SMS phishing simulations; no customer names or results published (vendor-published).",
+   "The awareness team reviews scenario design and results."
+  ],
+  "who": "Hoxhunt, Adaptive Security"
+ },
+ {
+  "id": "security-human-risk-06",
+  "title": "Deepfake and executive-impersonation drills for finance, help desk and executive staff",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Arup confirmed a Hong Kong employee paid out about USD 25 million after a video call with deepfake colleagues.",
+  "approach": [
+   "NYDFS tells regulated entities training can use simulated phishing and voice and video impersonation exercises, covering verification of unexpected money-transfer requests.",
+   "Vendors including KnowBe4 and Adaptive sell deepfake simulations; none reported outcomes, and no tested reduction in fraud was found.",
+   "Human review and oversight sit inside the verification procedures for money transfers."
+  ],
+  "who": "Arup, NYDFS, KnowBe4, Adaptive Security"
+ },
+ {
+  "id": "security-human-risk-07",
+  "title": "Automated triage of employee-reported suspicious emails",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Once training works, employees report more suspicious emails; Avanade's people 'began reporting far more threats', a volume hard to analyse manually.",
+  "approach": [
+   "Avanade used Hoxhunt's platform to categorise and prioritise reported messages automatically, reporting over 900 hours a month of analyst time saved (vendor-published).",
+   "It reports a 98% reduction in false positives and incident escalations (vendor-published).",
+   "Microsoft documents a Defender Phishing Triage Agent that classifies reports with a written rationale; analysts review it and can give feedback."
+  ],
+  "who": "Avanade, Hoxhunt, Microsoft"
+ },
+ {
+  "id": "security-human-risk-08",
+  "title": "Behavioural-AI email security replacing the email gateway and answering employee reports",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Valvoline still saw spear phishing and invoice fraud reach inboxes despite a secure email gateway, native security and awareness training.",
+  "approach": [
+   "Valvoline moved to Abnormal's API-based behavioural AI, removed its gateway, and gave users personalised replies to their reports.",
+   "Valvoline cites USD 600K in loss avoided from stopping one recurring invoice fraud, and 480 analyst hours saved monthly (vendor-published).",
+   "Analysts still handle reports and dashboards, and the security team uses the dashboard to spot attack trends."
+  ],
+  "who": "Valvoline, Abnormal AI, Adaptive Security"
+ },
+ {
+  "id": "security-human-risk-09",
+  "title": "Idea: AI as second reader of inbound email intent to warn users",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: AI-written, personalised lures remove the language errors users were trained to spot.",
+  "approach": [
+   "A research study found Claude 3.5 Sonnet detected email intent with accuracy well above 90% and low false positives (independent).",
+   "It also flagged some seemingly benign messages that passed human detection.",
+   "A warning is shown to the user, who decides."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-human-risk-10",
+  "title": "AI-driven detection and automated takedown of brand and executive impersonation",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "ARK Invest faced impersonation across LinkedIn, Instagram, WhatsApp and Telegram; removing scams took 'days to weeks', and it received hundreds of concerned calls and emails yearly.",
+  "approach": [
+   "ARK adopted Doppel's platform, which detects impersonation across domains, social media and the dark web, and acts on takedowns, not just flags.",
+   "Doppel reports a 5.5-hour median domain resolution time and 98% takedown success (vendor-published).",
+   "ARK says reported impersonations roughly halved from about 400 in 2024 to 2025 (self-reported). Human checkpoints are not described."
+  ],
+  "who": "ARK Invest, Doppel"
+ },
+ {
+  "id": "security-human-risk-11",
+  "title": "AI scam-baiting honeypots to extract mule accounts and map scam workflows",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Detection, training and takedown do not remove the infrastructure scammers rely on, such as mule bank accounts; long-running trust scams are hard to study.",
+  "approach": [
+   "A research system used AI to hold weeks-long conversations with scammers, starting more than 2,600 engagements over five months.",
+   "Its information disclosure rate, for items such as mule accounts, was about 32% (independent).",
+   "Human operators compared against the AI's replies in evaluation; acceptance was about 70% (independent)."
+  ],
+  "who": "Academic researchers; BSides Las Vegas talk"
+ },
+ {
+  "id": "security-human-risk-12",
+  "title": "Identity and liveness checks on remote hires (fake IT worker defence)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "The FBI says North Korean IT workers have used AI and face-swapping in video job interviews; KnowBe4 hired one who passed four interviews and background checks.",
+  "approach": [
+   "KnowBe4 detected the hire when endpoint detection flagged malware on the shipped laptop; its security team called the new hire.",
+   "The FBI advises identity verification through interviewing, onboarding and employment, cross-checking HR records, and educating HR staff.",
+   "Datadog describes a detection stack that includes AI-driven risk assessment. No AI effectiveness figures published."
+  ],
+  "who": "KnowBe4, FBI, Datadog"
+ },
+ {
+  "id": "security-human-risk-13",
+  "title": "Idea: out-of-band, deepfake-aware verification for payment and credential requests",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: video, voice and email can all be synthesised, and regulators report more suspicious-activity filings describing suspected deepfake media.",
+  "approach": [
+   "Regulator-recommended approach: treat any voice or video request for money, credentials or data as unverified until confirmed through a separate channel.",
+   "NYDFS says training should cover verifying unexpected transfer requests and when human review must be part of verification.",
+   "No outcome figures published."
+  ],
+  "who": "NYDFS, FinCEN, FBI (guidance only)"
+ },
+ {
+  "id": "security-human-risk-14",
+  "title": "AI-based insider-threat log analysis",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Dedicated staff cannot manually examine the volume of logs needed to catch insider threats.",
+  "approach": [
+   "RedChronos, the authors' system at Xiaohongshu, analyses logs with an AI model using weighted voting and a genetic algorithm.",
+   "It reduced log samples engineers must analyse by approximately 90% (self-reported).",
+   "Engineers still analyse flagged samples; it assists, not replaces. A separate 2026 framework gained 11.40 F1 points on a public dataset (independent)."
+  ],
+  "who": "Xiaohongshu, academic researchers"
+ },
+ {
+  "id": "security-human-risk-15",
+  "title": "Insider-risk programmes with AI-assisted detection, risk scoring and investigation",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Negligent or mistaken insiders are the largest driver of insider-risk cost, and incidents take on average 67 days to contain.",
+  "approach": [
+   "Microsoft documents Purview Insider Risk Management, which correlates signals into policies, alerts and cases, pseudonymises users by default and keeps audit logs.",
+   "Above Security was reported at Black Hat USA 2026 offering AI-native insider-risk investigations. In a Ponemon/DTEX survey, 42% use AI (vendor-published).",
+   "Risk analysts act on cases and escalate to eDiscovery where needed."
+  ],
+  "who": "Microsoft, Above Security, Ponemon/DTEX survey"
+ },
+ {
+  "id": "security-human-risk-16",
+  "title": "Shadow-AI visibility and point-of-risk coaching: 'audit and educate' instead of block",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Employees put internal documents, source code and meeting content into public AI tools, and AI browsers and agents can bypass traditional logging.",
+  "approach": [
+   "DTEX's CTO describes shifting from block-first to audit and educate, with prompt inspection and real-time nudges.",
+   "Adaptive lists an AI Governance product; KnowBe4 announced an Agent Risk Manager browser extension, in early access for some US customers.",
+   "DTEX's CTO claims containment time fell 17%, from 81 to 67 days (vendor-published). Human checkpoints are not described."
+  ],
+  "who": "DTEX, Adaptive Security, KnowBe4"
+ },
+ {
+  "id": "security-human-risk-17",
+  "title": "Idea: AI voice agents in authorised phone-scam red-team tests of help desks",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: help desks and finance staff handle voice requests attackers can now automate, and human-caller testing is slow and limited.",
+  "approach": [
+   "Practitioner activity only: DEF CON 34 lists a 'Battle of the Bots: Vishing Edition' contest; ScamBench appears at BSides Las Vegas 2026.",
+   "No results for the contest were found.",
+   "A red-team lead approves scenarios."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-human-risk-18",
+  "title": "Idea: sequence analysis of real social-engineering calls to design detection and training",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea, not a deployment: social engineering is usually described as isolated techniques, while real interactions follow sequences.",
+  "approach": [
+   "A BSides Las Vegas conference talk describes analysing over 1,200 call transcripts to see whether interaction steps follow stable ordering patterns.",
+   "The aim is to inform detection, red teaming and training. No results published beyond the talk abstract.",
+   "Human checkpoints are not described."
+  ],
+  "who": "No named deployment"
+ }
+]

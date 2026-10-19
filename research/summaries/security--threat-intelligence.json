@@ -1,0 +1,314 @@
+[
+ {
+  "id": "security-threat-intelligence-01",
+  "title": "Idea: agents that watch intelligence-requirement coverage and keep briefings current",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: intelligence requirements are expanding while capacity is constrained, and most formal CTI teams have fewer than four full-time staff.",
+  "approach": [
+   "Flashpoint's interview study says practitioners see coverage monitoring against priority intelligence requirements, and standing briefings, as workflows where agents could extend coverage.",
+   "Tasks with reviewable outputs, reversible actions and clear success criteria are the practical starting point; analysts stay in the process.",
+   "No deployment was found."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-threat-intelligence-02",
+  "title": "AI-supported monitoring and collection of open sources for threat-landscape reporting",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Threat-landscape reporting depends on collecting and curating thousands of open-source incident reports, which have gaps in granularity and timing.",
+  "approach": [
+   "ENISA states AI was used in a limited capacity to support collection and processing for its Threat Landscape 2026.",
+   "All AI outputs were reviewed and validated by subject-matter experts; ENISA published no measure of AI's effect.",
+   "Apura presented an approach using retrieval-augmented generation and agentic workflows at FIRST 2026; a research benchmark reports 89.33% strict F1 (independent)."
+  ],
+  "who": "ENISA, Apura Cyber Intelligence"
+ },
+ {
+  "id": "security-threat-intelligence-03",
+  "title": "Dark-web and stolen-credential log collection triaged by language-model pipelines",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Forum posts, messaging channels and millions of stealer logs are too many and varied for analysts to read; Flare says over 50 million logs were posted in 2025.",
+  "approach": [
+   "Mandiant (2023) described dozens of AI models over botnet, forum and messaging data, with entity extraction, topic classification and translation.",
+   "Flare introduced StealerLens at FIRST 2026, an LLM-powered tool to speed infostealer log investigations.",
+   "Google's relevance system filters dark-web findings against an organization profile. Human checkpoints are not stated; no outcome figures are published."
+  ],
+  "who": "Flare, Mandiant, Google"
+ },
+ {
+  "id": "security-threat-intelligence-04",
+  "title": "Multi-agent system that elicits intelligence in underground forums (research prototype)",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Passive monitoring yields less as forum users grow aware of data collection and valuable intelligence moves to private spaces.",
+  "approach": [
+   "DarkBot, a university and industry prototype, splits interaction across eleven agents, with built-in engagement gating for relevance and safety.",
+   "Operator review of individual conversations is not described.",
+   "It recovered 72.8% of validated techniques from the first post alone; live threads gathered 3.85 more CTI entities than controls (independent)."
+  ],
+  "who": "Politecnico di Milano, BV TECH"
+ },
+ {
+  "id": "security-threat-intelligence-05",
+  "title": "Reports turned into indicators and tags, source attached, checked before storage",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Analysts read vendor blogs and advisories, then retype indicators of compromise into their tools, and indicators get separated from the reason they matter.",
+  "approach": [
+   "Cloudflare's Threat Signals polls chosen feeds, extracts indicators and stores each as an event linked to its source report.",
+   "Analysts see which tags were automatic and trace each indicator to its report; reviewed variants add approval before writing to live tools.",
+   "Independent studies found LLMs recovered only 25-31% of labeled indicators, though with fewer false indicators than rule baselines."
+  ],
+  "who": "Cloudflare, Adobe, Anthropic, Feedly"
+ },
+ {
+  "id": "security-threat-intelligence-06",
+  "title": "Mapping report text to attacker techniques and enriching hunts with actor context",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "MITRE describes mapping the tactics and techniques in threat reports to ATT&CK as difficult, error-prone and time-consuming.",
+  "approach": [
+   "Intel 471's hunt analysts use AI to tag hunts with actors, map techniques to ATT&CK and add industry and severity context.",
+   "Mappings should be reviewed by analysts; Feedly lists attribution and risk ratings as outputs a model tends to assert with unwarranted confidence.",
+   "On sandbox reports three LLMs reached technique F1 of 0.71 to 0.72; on complex reports the best open model scored 0.22 (independent)."
+  ],
+  "who": "Intel 471, MITRE, EclecticIQ, Feedly"
+ },
+ {
+  "id": "security-threat-intelligence-07",
+  "title": "Idea: merging report collections into knowledge graphs to measure vendor bias",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: the same threat gets unrelated names across vendors, and annual vendor reports contradict each other on top intrusion vectors.",
+  "approach": [
+   "Research designs extract each report into a graph, verify entities against evidence and ATT&CK definitions, and merge graphs across sources.",
+   "One team structured 16,096 public reports to measure what each source adds; no team was found using this to manage subscriptions.",
+   "In research, BEACON beat baselines by at least 23% on extraction (independent); human checkpoints are not described."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-threat-intelligence-08",
+  "title": "Global intelligence ranked against an organization profile so only relevant items surface",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "External monitoring floods CTI teams with keyword hits; Google says the problem is lack of relevance, not data, and alert noise was the top challenge for 65% in Flashpoint's interviews.",
+  "approach": [
+   "Google's relevance system (Beta) builds an organization profile, scores intelligence and dark-web findings against it and groups them into alerts.",
+   "Analysts change alert status and give feedback; Forrester asks vendors for testing and validation mechanisms.",
+   "Google reports 98% internal accuracy, with no test design described; Mandiant (2023) reports 96% fewer false positives in alert generation (vendor-published)."
+  ],
+  "who": "Google, Microsoft, Recorded Future, Mandiant"
+ },
+ {
+  "id": "security-threat-intelligence-09",
+  "title": "Malware-analysis agent triages samples, explains behaviour and extracts indicators",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Malware samples from partners need manual reverse engineering to find indications of compromise and adversary command-and-control.",
+  "approach": [
+   "Google's Malware Analyst agent triages files, reverse engineers binaries and scripts, and explains behaviour in natural language with reasoning shown.",
+   "CISA's inventory lists a deep-learning malware reverse-engineering use case at the initiation stage, assisting analysts within a larger toolbox.",
+   "No outcome figures are published."
+  ],
+  "who": "Google, CISA"
+ },
+ {
+  "id": "security-threat-intelligence-10",
+  "title": "Threat research agent triages articles, verifies indicators and drafts cited reports",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Analysts triage articles, gather evidence and write the report; analysts at the authors' organization said analyzing one incident from an article typically takes several hours.",
+  "approach": [
+   "Microsoft authors describe an agent in their CTI workflow that researches a seed article, retrieves supplementary content and drafts a cited report.",
+   "A team of experts reviews outputs and their corrections are fed back into the prompts.",
+   "Indicator precision rose by 0.02 to 0.05 at several times the run time; technique recall was flat or lower (self-reported)."
+  ],
+  "who": "Microsoft Research"
+ },
+ {
+  "id": "security-threat-intelligence-11",
+  "title": "Natural-language questions answered from a curated intelligence corpus",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Analysts pivot by hand across feeds and query languages, and colleagues outside the security team wait days for answers about the threat landscape.",
+  "approach": [
+   "Platforms from Google, Recorded Future, Microsoft, Cloudflare and CrowdStrike put a chat or agent interface on their own intelligence data.",
+   "Analysts read the cited sources and tool-call trace before relying on an answer and still run in-depth investigations themselves.",
+   "Cowbell says stakeholder questions now get answers in minutes instead of two to three days (vendor-published)."
+  ],
+  "who": "Cowbell, Superhuman, Google, Recorded Future"
+ },
+ {
+  "id": "security-threat-intelligence-12",
+  "title": "Drafting and tailoring threat briefings for different audiences, scheduled or on demand",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Producers write the same finding several times for different readers; 91% of CISOs value CTI but only 26% say it significantly influences their decisions.",
+  "approach": [
+   "Microsoft's briefing agent combines actor activity with customer vulnerability data; Google 'Flows' schedule prompts such as a daily sector digest.",
+   "At CISA, authorized personnel review and edit drafts before publication; an analyst approves final analytic content.",
+   "SANS reports 45% of surveyed organizations use AI in CTI, mainly for summarization and report writing (independent)."
+  ],
+  "who": "Microsoft, Google, CISA, Recorded Future"
+ },
+ {
+  "id": "security-threat-intelligence-13",
+  "title": "Preparing intelligence for sharing: personal-data screening, redaction and packaging",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Sharing threat intelligence risks exposing sensitive information; 17 of 18 surveyed practitioners named it a recurring difficulty, and SANS reports 55% lack legally reviewed sharing processes.",
+  "approach": [
+   "CISA's Automated Indicator Sharing uses language processing to flag potential personal data; analysts confirm or reject each flag and redact before dissemination.",
+   "Researchers pilot LLMs for redaction and STIX packaging; expert review is advised at each step.",
+   "In the pilot, every model asserted relationships the findings did not support, for example 38 of 73 links correct (independent)."
+  ],
+  "who": "CISA, GAO, UC Santa Barbara"
+ },
+ {
+  "id": "security-threat-intelligence-14",
+  "title": "Threat reports turned into tested detection rules (Sigma, YARA, KQL)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Moving from a threat report to a detection that fires takes days or weeks of handoff between intelligence analysts and detection engineers.",
+  "approach": [
+   "Microsoft Security Copilot promptbooks extract indicators and generate hunting queries; Anthropic's posting describes using Claude to generate hunting queries.",
+   "A secondary report says Rapid7's team built a pipeline emitting detection rules; the detection engineer reviews and tests rules before deployment.",
+   "Microsoft's benchmark found the best of 16 frontier models reached a 0.637 reward out of 1 (vendor-published)."
+  ],
+  "who": "Microsoft, Anthropic, Rapid7 (secondary report)"
+ },
+ {
+  "id": "security-threat-intelligence-15",
+  "title": "Automated alert enrichment and tool connections letting agents pull threat intelligence",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Alerts need threat scores, actor profiles and indicator context before anyone can decide, and manual lookups across tools slow triage.",
+  "approach": [
+   "Superhuman wired Recorded Future into its SOAR platform and built an internal MCP server so its agents can request and summarize intelligence.",
+   "Google and SOCRadar describe similar connections; Anthropic's posting lists VirusTotal, Censys and Urlscan integrations.",
+   "Superhuman analysts keep doing in-depth investigations; the company says times are lower but gives no numbers (vendor-published)."
+  ],
+  "who": "Superhuman, Recorded Future, Google, SOCRadar"
+ },
+ {
+  "id": "security-threat-intelligence-16",
+  "title": "New indicators matched against enterprise logs by an LLM-fed hunting pipeline",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "When a critical advisory appears, teams spend days reading it, extracting indicators and hunting across tools while attackers exploit the gap.",
+  "approach": [
+   "Adobe's platform monitors sources, uses LLMs to extract indicators and launches parallel hunts across endpoint, email, cloud and authentication logs.",
+   "Analysts receive compiled detections and investigate; whether any step needs approval before a hunt runs is not stated.",
+   "Adobe says each hunting job completes within minutes, with no before-and-after comparison (self-reported)."
+  ],
+  "who": "Adobe"
+ },
+ {
+  "id": "security-threat-intelligence-17",
+  "title": "Chained agentic workflow from inbound report to scoping, tickets and draft detections",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Following one vendor report through extraction, mapping, asset checks, ticketing and leadership notice can consume a morning; about 40% say integration into workflows is mostly manual.",
+  "approach": [
+   "Feedly's guide chains five prompts in low-code tools: extract indicators, map to ATT&CK, scope to assets, then draft detections and tickets.",
+   "Analysts review scoping and approve before any write to live tooling.",
+   "Flashpoint's interviews found 25% of organizations in production with agentic AI and 20% piloting (vendor-published)."
+  ],
+  "who": "Feedly, Flashpoint, Cyware"
+ },
+ {
+  "id": "security-threat-intelligence-18",
+  "title": "Bounded agents that package evidence for takedown of phishing and brand-abuse sites",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Phishing and impersonation sites often live only hours, and Memcyco says manual enrichment and case preparation consume the window for takedown.",
+  "approach": [
+   "Memcyco describes bounded agents that continuously collect, enrich, score and package external threat evidence.",
+   "Analysts keep enforcement decisions; Recorded Future announced AI-driven alert triage in a brand-protection hub with automatic takedowns.",
+   "No outcome figures are published."
+  ],
+  "who": "Memcyco, Recorded Future"
+ },
+ {
+  "id": "security-threat-intelligence-19",
+  "title": "AI assistants inside human-led threat hunts and frontline intelligence work",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Hunters can fixate on one indicator, need to understand unfamiliar techniques and query languages, and must document findings for several audiences.",
+  "approach": [
+   "Intel 471's hunters use AI to stress-test hypotheses, suggest related actors and draft documentation; Microsoft's assistant turns questions into queries.",
+   "The hunter forms and owns the hypothesis and reviews generated queries and results.",
+   "A research prototype lifted mean hunt-lead F1 from 0.44 to 0.85 (independent); Intel 471 publishes no figures."
+  ],
+  "who": "Intel 471, Microsoft, Google Threat Intelligence Group"
+ },
+ {
+  "id": "security-threat-intelligence-20",
+  "title": "Managed-service agents turn new campaigns into hunt hypotheses and detection rules",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Hypothesis-driven hunting is limited by scarce senior hunters, so teams cannot test for emerging campaigns that have not yet triggered an alert.",
+  "approach": [
+   "CyberProof runs four agents for a logistics client: match campaigns, generate 30 to 40 hypotheses, write queries, create standing rules.",
+   "CyberProof says human oversight remains central but does not say which steps need approval.",
+   "CyberProof reports 150 to 200 hunts a month and a 20% increase in active detection coverage (vendor-published)."
+  ],
+  "who": "CyberProof"
+ },
+ {
+  "id": "security-threat-intelligence-21",
+  "title": "Scheduled AI hunt agents that must argue against their own findings",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Grow Therapy needed proactive coverage across systems touching sensitive data, but rules only cover patterns someone knows how to write.",
+  "approach": [
+   "About 20 daily Claude-based hunts run in five phases; the last requires the model to argue against its findings with counter-evidence.",
+   "Analysts mark false positives in Slack, and a weekly report decides which hunts need tuning.",
+   "Grow Therapy reports $320 to $510 a month, and estimates about 40% of findings were noise without the final phase (self-reported)."
+  ],
+  "who": "Grow Therapy"
+ },
+ {
+  "id": "security-threat-intelligence-22",
+  "title": "Always-on investigation agent finds missed malicious activity and writes explainable detections",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Defenders must keep translating new attacker tradecraft into detection logic, which leaves them reactive, and attack stories with gaps go unflagged.",
+  "approach": [
+   "Microsoft's agent runs continuously across Defender, builds a unified timeline, tests attack hypotheses and issues alerts with severity and plain-language description.",
+   "Customer feedback on each alert is the evaluation signal; whether a person reviews before an alert is raised is not stated.",
+   "Customers rated alerts correct 80.1% of the time over 120 days, with novel alerts on about 15% of incidents (vendor-published)."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-threat-intelligence-23",
+  "title": "Machine-learning anomaly surfacing focuses government threat hunters on network data",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "CISA threat hunters and SOC analysts process terabytes of daily network log data and need a way to narrow what they review.",
+  "approach": [
+   "CISA's AI inventory lists an anomaly detection tool in operation that uses unsupervised machine learning on Einstein network data.",
+   "Analysts review anomalies alongside rule-based heuristics and prioritize alerts for investigation.",
+   "A critical-infrastructure equivalent is at the initiation stage; no outcome figures are published."
+  ],
+  "who": "CISA"
+ },
+ {
+  "id": "security-threat-intelligence-24",
+  "title": "Model providers' threat intelligence teams use their own models to disrupt misuse",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Model providers must detect and disrupt misuse of their own products over very large volumes of conversation and telemetry data.",
+  "approach": [
+   "Anthropic states its Threat Intelligence team used Claude extensively to analyse data in its investigation of a campaign reported in November 2025.",
+   "OpenAI's teams build systems using its models for lead generation, triage and synthesis; investigators conduct the investigations.",
+   "No measurement of time saved, accuracy or error rate is published."
+  ],
+  "who": "Anthropic, OpenAI"
+ }
+]

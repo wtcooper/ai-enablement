@@ -1,0 +1,344 @@
+[
+ {
+  "id": "assurance-controls-testing-01",
+  "title": "AI-assisted walkthroughs that prepare, transcribe and draft process narratives",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Walkthroughs, which trace one transaction end to end to confirm how a control works, are repeated every year even when processes barely change, and documenting them is tedious.",
+  "approach": [
+   "PwC's Advanced Walkthrough Assistant ingests prior-year walkthroughs and drafts documentation for review; PwC said it will be used on 2026 year-end audits.",
+   "KPMG UK uses Clara AI to review control wording before walkthroughs and Copilot to transcribe them into flowcharts, where permitted.",
+   "The auditor performs the inquiry and observation; a reviewer approves the narrative, flowchart and design conclusion.",
+   "KPMG UK reports fewer meetings for control owners; PwC says busy-season savings are not that drastic yet (self-reported)."
+  ],
+  "who": "PwC, KPMG UK, Optro"
+ },
+ {
+  "id": "assurance-controls-testing-02",
+  "title": "Test-of-design support and AI-drafted control test plans",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Breaking control descriptions into testable attributes and writing test plans is manual and uneven, and badly worded controls lead to follow-up requests and exceptions later.",
+  "approach": [
+   "KPMG UK's Clara AI agents capture controls, draft a test plan for review and score control wording as decision support only.",
+   "Fieldguide and Petual agents draft test plans from the risk and control matrix; PwC's dynamic controls testing generates procedures that users review.",
+   "The auditor approves the test plan before testing runs and forms an independent view of design before comparing it with tool output.",
+   "KPMG UK says fuller attribute identification reduces follow-up requests, not quantified (self-reported)."
+  ],
+  "who": "KPMG UK, Fieldguide, Petual, PwC"
+ },
+ {
+  "id": "assurance-controls-testing-03",
+  "title": "Agent-assisted evidence requests and pre-submission evidence checks",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Chasing evidence is a main source of SOX delay: testers spend weeks requesting, chasing and re-requesting evidence from control owners across 20+ systems.",
+  "approach": [
+   "Agents draft requests, check submitted evidence for completeness, file integrity and format, and help preparers fix gaps before submission.",
+   "Vendors describe next steps as pulling evidence through integrations and messaging control owners in Slack or Teams.",
+   "The control owner confirms submissions; the auditor determines sufficiency, not the platform.",
+   "Frazier & Deeter: evidence requests about 8% faster (19 hours) with Fieldguide (vendor-published); Optro claims fewer follow-ups, not quantified."
+  ],
+  "who": "Optro, Fieldguide, Frazier & Deeter"
+ },
+ {
+  "id": "assurance-controls-testing-04",
+  "title": "Risk-scored sample, coverage and control targeting",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Sample and coverage choices rely on static lists, geographic assumptions and hard-to-explain judgment, so testing effort follows rotation and habit rather than likely control breakdowns.",
+  "approach": [
+   "Microsoft Internal Audit's Sample Selection Agent scores items on revenue, discounts, country risk and control indicators to produce a defensible risk-based selection.",
+   "Optro offers AI risk-based sample selection; KPMG describes predictive modelling of where control breakdowns are likely.",
+   "The audit lead approves the selection basis, threshold and any untested residual population.",
+   "Microsoft Internal Audit reports weeks of manual analysis cut to one day and ~2K hours/year saved (self-reported)."
+  ],
+  "who": "Microsoft Internal Audit, Optro, KPMG"
+ },
+ {
+  "id": "assurance-controls-testing-05",
+  "title": "Agentic attribute testing of SOX key controls, with workpapers drafted for review",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Testers open PDFs, screenshots and exports for every sample, check each control attribute and document it by hand; KPMG's 2025 survey averages 16 hours per control.",
+  "approach": [
+   "Agents read unstructured evidence, test each attribute with citations to source, and draft workpapers; exceptions route to a human reviewer.",
+   "Reddit's internal audit built this on Midship (now Optro Autonomous Testing); Klaviyo and Navan are other named users.",
+   "Reddit reports testing time down 60% per control (self-reported); 175 controls automated, over 40% of SOX scope (vendor-published).",
+   "People approve the test plan, sign off each conclusion and exception, and own deviation evaluation and deficiency classification."
+  ],
+  "who": "Reddit, Klaviyo, Navan, Optro, Petual"
+ },
+ {
+  "id": "assurance-controls-testing-06",
+  "title": "Two-agent change-management testing for IT general controls",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Testing change-management controls means opening tickets across several systems with inconsistent formats, entering attributes in spreadsheets by hand and annotating evidence sample by sample.",
+  "approach": [
+   "Microsoft Internal Audit built two Copilot Studio agents; one extracts tester, approver and dates from tickets into a table with pass/fail logic.",
+   "A second agent marks each extracted field on the source evidence so the reviewer sees where each attribute was validated.",
+   "Auditors review the audit table and exceptions; a reviewer samples the tick-marked evidence before sign-off.",
+   "Microsoft reports 850 hours/year and $185K/year saved, built and launched in 1-3 months (self-reported)."
+  ],
+  "who": "Microsoft Internal Audit"
+ },
+ {
+  "id": "assurance-controls-testing-07",
+  "title": "Matching client-provided evidence to selected samples with agents",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Each sampled control instance needs its supporting evidence traced to the sample and checked attribute by attribute, and evidence arrives in many formats, so manual tracing slows the test.",
+  "approach": [
+   "Agents trace incoming documents to requested samples, extract and validate values, and record match or exception status with links to the source.",
+   "PwC said in October 2025 its controls-testing automation would work like Evidence Match; KPMG UK uses DataSnipper on IT change tickets.",
+   "The auditor reviews each exception and signs off the test.",
+   "No controls-specific result is published; RMF Audit & Control's roughly 50% saving is for invoice samples, not controls (vendor-published)."
+  ],
+  "who": "PwC, KPMG UK, DataSnipper, RMF Audit & Control"
+ },
+ {
+  "id": "assurance-controls-testing-08",
+  "title": "Full-population testing of transactional and master-data controls instead of samples",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Sample-based tests limit the conclusion to items examined and miss errors outside the sample; IFIAR recorded 24 insufficient-sample and 11 biased-sample findings in 2025.",
+  "approach": [
+   "Extraction and matching agents, paired with deterministic code, test every item and link each value to its source.",
+   "Armanino with DataSnipper tests 100% of vendor master changes rather than a sample (vendor-published); the auditor reviews each match.",
+   "Microsoft Internal Audit agents test high-risk data sets in full; function-wide, report issuance fell from 3 to 2 weeks (self-reported).",
+   "Investigation thresholds are set before seeing output; the auditor investigates every flagged item or a justified subset; the partner approves evidential weight."
+  ],
+  "who": "Armanino, DataSnipper, Microsoft Internal Audit, KPMG"
+ },
+ {
+  "id": "assurance-controls-testing-09",
+  "title": "Continuous, year-round control testing and monitoring instead of point-in-time cycles",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Testing bunched at interim and year-end finds failures months after they occur, often during the external audit, when remediation costs most and little time is left.",
+  "approach": [
+   "Agents test controls as evidence arrives, and scheduled queries watch control data and route exceptions to owners.",
+   "Snowflake Internal Audit runs queries on Snowflake data through the Optro connector; Klaviyo tests throughout the year with Optro Autonomous Testing.",
+   "Owners triage each alert, people periodically review exceptions and agent configuration changes, and the auditor concludes on operating effectiveness.",
+   "Klaviyo and Snowflake report earlier issue detection and faster remediation, not quantified (vendor-published)."
+  ],
+  "who": "Snowflake, Klaviyo, Optro, Fieldguide"
+ },
+ {
+  "id": "assurance-controls-testing-10",
+  "title": "AI secondary review and multi-agent challenge of control-testing workpapers",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Manager review is a bottleneck, so small teams re-review only the riskiest workpapers and errors slip through; auditors are also less skeptical of work done by tools.",
+  "approach": [
+   "FJ Management Internal Audit connects Claude to its Optro record; several models review each workpaper independently and disagreements are flagged.",
+   "A human checks each AI memo before it is attached; severity, materiality and sign-off stay with auditors.",
+   "FJ Management says memos caught actual defects and plans 100% secondary review (vendor-published, not quantified).",
+   "A research prototype, IntelliAudit, left 91.7% of final statuses unchanged on simulated organisations (independent); not accuracy against human auditors."
+  ],
+  "who": "FJ Management, Optro, Microsoft, Tilburg University"
+ },
+ {
+  "id": "assurance-controls-testing-11",
+  "title": "AI-assisted testing in SOC 1, SOC 2 and ISAE 3402 service-auditor engagements",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Service-auditor engagements test high volumes of change-ticket evidence and rely on control owners' time; KPMG UK says demand for controls assurance reports nearly doubled.",
+  "approach": [
+   "KPMG UK uses Clara AI agents for walkthrough preparation and test plans, DataSnipper to extract change tickets, and Copilot for workpaper drafting.",
+   "KPMG UK reports testing time about 18% lower on recent engagements, and about 15% lower with DataSnipper (self-reported).",
+   "The service auditor reviews all extracted data and conclusions; the opinion is unchanged."
+  ],
+  "who": "KPMG UK, Fieldguide, Schneider Downs"
+ },
+ {
+  "id": "assurance-controls-testing-12",
+  "title": "AI drafting in the SOC cycle: system descriptions, evidence tracking, deviation responses",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Every SOC cycle, service organisations draft and update the system description, map it to the Trust Services Criteria, collect evidence snapshots and write management responses to deviations.",
+  "approach": [
+   "GenAI turns process documents into draft control descriptions mapped to the criteria and drafts management responses covering root cause and remediation.",
+   "It also tracks evidence collection and project status and keeps continuous evidence snapshots.",
+   "Management owns the description and responses; the service auditor tests independently and evaluates deviations.",
+   "In a live poll at the 2026 EY SOC conference, 63% of attendees named evidence collection a top AI use case."
+  ],
+  "who": "EY, Schneider Downs"
+ },
+ {
+  "id": "assurance-controls-testing-13",
+  "title": "AI review of third-party SOC reports for reliance by user entities",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "SOX programmes and user auditors read many vendor SOC reports to extract scope, test results, exceptions and complementary user entity controls, then map them to their own risk assessment.",
+  "approach": [
+   "AI reads SOC reports, extracts test results, compares them with the user's risk assessment and prior periods, and flags deviations (EY speakers).",
+   "KPMG lists agents that manage SOC reports and extract control descriptions and test results.",
+   "The auditor or control owner concludes on reliance, evaluates deviations and tests user entity controls.",
+   "Described as a current application by EY and KPMG; no deployment figures found."
+  ],
+  "who": "EY, KPMG"
+ },
+ {
+  "id": "assurance-controls-testing-14",
+  "title": "Compliance-automation platforms feeding SOC 2 examiners with continuously pulled evidence",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Clients submit dozens of screenshots and spreadsheets per SOC engagement, and SOC 2 is a gating requirement for enterprise sales, so speed is prized.",
+  "approach": [
+   "Compliance-automation tools connect to the client's systems and pull evidence into a real-time dashboard that the CPA examiner tests against.",
+   "The debate is about where this automation replaces the examiner's own risk assessment and testing.",
+   "A licensed CPA designs and executes the tests and signs the opinion.",
+   "SOC leaders agree the tools make the process quicker; no figure is published (self-reported)."
+  ],
+  "who": "Unnamed SOC leaders and tool vendors"
+ },
+ {
+  "id": "assurance-controls-testing-15",
+  "title": "Testing controls that AI performs: AI-enabled controls as a new test object",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Clients now put GenAI and agents into financial-reporting processes, audit programmes mostly test around the AI, and there is no accepted method for testing a black-box control.",
+  "approach": [
+   "Auditors scope AI components per use case and decide whether to rely on AI output, extending access and change controls to them.",
+   "AI-specific evidence includes lineage, per-inference logs and drift monitoring; COSO supplies control-testing templates for eight capability types.",
+   "KPMG UK is introducing a SOC 2+ opinion over AI governance and controls; the AICPA practice aid helps auditors understand AI-affected controls.",
+   "KPMG forecasts the first wave of AI-related material weaknesses in 2027 as programmes stop testing around AI (self-reported)."
+  ],
+  "who": "COSO, KPMG, AICPA, CAQ"
+ },
+ {
+  "id": "assurance-controls-testing-16",
+  "title": "Firm-wide audit-platform agents extending into tests of controls in integrated audits",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "External auditors repeat walkthroughs and tests of controls every year across large engagement portfolios at fixed or falling fees, and orchestrate tasks across many separate tools by hand.",
+  "approach": [
+   "Network-wide agent frameworks extract data, analyse evidence, draft documentation and develop preliminary conclusions for professionals to review.",
+   "Deloitte Omnia agents run preliminary procedures; EY Canvas embeds agents; KPMG announced controls-testing agents as next; PwC plans controls-testing automation.",
+   "The engagement team reviews every agent conclusion and the partner signs the opinion.",
+   "EY covers about 130,000 assurance staff; Deloitte's framework reaches about 85,000 practitioners; PwC says year-one savings are not that drastic yet (self-reported)."
+  ],
+  "who": "Deloitte, EY, KPMG, PwC, Grant Thornton"
+ },
+ {
+  "id": "assurance-controls-testing-17",
+  "title": "AI-native audit pilot where agents test controls and balances on full populations",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Sampling-based audits spend most hours on data gathering and documentation rather than judgment.",
+  "approach": [
+   "PwC Australia's AI-native audit platform has agents assess risk, plan audits and test balances and controls in real time on full populations.",
+   "Auditors handle context, communication and final judgments; human auditors oversee and validate all agent work.",
+   "The pilot starts with 5 audit clients, with all clients by 2028 and 1,600 auditors (self-reported plan)."
+  ],
+  "who": "PwC Australia"
+ },
+ {
+  "id": "assurance-controls-testing-18",
+  "title": "Orchestrated agent swarms working alongside auditors in internal audit",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Prompt libraries plateau because nobody owns the prompts or measures their output, routines are built one by one, and one agent per task does not scale across an audit plan.",
+  "approach": [
+   "PayPal Internal Audit describes swarm auditing: teams of agents orchestrated in parallel to run analytics and tests under a defined collaboration framework.",
+   "Scripts and agents built in audit are handed to first- and second-line owners; a separate bucket of hours covers experimentation.",
+   "Auditors remain the decision layer; agents are not replacing the team in the near term. No figures published (self-reported)."
+  ],
+  "who": "PayPal Internal Audit"
+ },
+ {
+  "id": "assurance-controls-testing-19",
+  "title": "In-sourcing previously outsourced SOX and IT general controls testing to agents",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Many SOX programmes buy testing hours from co-sourcers; in KPMG's 2025 survey 58% said providers made up over 20% of SOX budget, and changing testers hurt consistency.",
+  "approach": [
+   "Internal audit teams have agents run formerly outsourced tests, starting with IT general controls and then business-process controls, under their own review.",
+   "Havertys expects external spend to shift from testing hours to advisory work and starts with outsourced IT controls (vendor-published).",
+   "An unnamed Petual customer reportedly cut SOX budget to a quarter of its prior level (vendor-published, anecdotal).",
+   "An IT audit manager reviews every agent test result before acceptance."
+  ],
+  "who": "Havertys, Petual, Optro"
+ },
+ {
+  "id": "assurance-controls-testing-20",
+  "title": "Agent-delivered co-sourced and outsourced controls testing by audit and advisory firms",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Firms selling SOX and internal audit testing as a labour-based service face fee pressure and clients in-sourcing to agents, while unstructured evidence must still be read, matched and documented.",
+  "approach": [
+   "RSM Beacon offers evidence validation, natural-language test steps and outputs traced to source; in August 2026 RSM announced an Andera AI alliance.",
+   "Riveron places agents at specific workflow steps, with a professional reviewing every result before it enters the workpaper.",
+   "Auditors approve, refine or intervene at key stages (RSM); open items are flagged to people.",
+   "Riveron measures review-ready workpapers, shorter cycles and earlier issue visibility rather than hours saved (self-reported); no figures."
+  ],
+  "who": "RSM, Riveron, Andera"
+ },
+ {
+  "id": "assurance-controls-testing-21",
+  "title": "Encoding SOX testing judgment into agent evaluation sets",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "A model right 95% of the time is unusable if no one can tell which 5% to check, and agent conclusions must be defensible under PCAOB review.",
+  "approach": [
+   "Vendors hire experienced SOX testers to write decision rules, define ground truth per control type and document failure modes.",
+   "Engineers use versioned evaluation sets to run regression tests before changing prompts, models or tools.",
+   "Experts sign off evaluation criteria before release; Fieldguide and Nace.AI recruit SOX experts for this (self-reported)."
+  ],
+  "who": "Fieldguide, Nace.AI"
+ },
+ {
+  "id": "assurance-controls-testing-22",
+  "title": "Idea: AI-assisted deviation evaluation and deficiency classification using a deviation memory",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: classifying a failure as a minor gap, significant deficiency or material weakness depends on unwritten context; IFIAR recorded 11 findings in 2025.",
+  "approach": [
+   "Teams would record why past exceptions were accepted in one repository.",
+   "An agent would check new exceptions against it and draft a classification once a human supplies context; the auditor classifies.",
+   "No deployment or measured outcome was found."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-controls-testing-23",
+  "title": "Idea: screen control evidence for AI fabrication and prompt injection before testing",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: GenAI makes fake invoices, approvals and screenshots cheap, and control owners who know auditors use agents could hide instructions in evidence to steer them.",
+  "approach": [
+   "Regulators and practitioners call for authenticity procedures: take evidence from source systems where possible, sanitise agent inputs and constrain outputs.",
+   "The auditor escalates suspected manipulation under the fraud standards; no public deployment of a dedicated screening step was found.",
+   "Survey: 65% of internal audit leaders cite fabricated documents as an AI fraud concern; 62% are unprepared or minimally prepared (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-controls-testing-24",
+  "title": "Idea: external-auditor reliance on management's or internal audit's AI-enabled control testing",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: reliance on others' testing is the main efficiency lever in SOX audits, but the standards predate AI and no public case was found.",
+  "approach": [
+   "Practitioners and the IIA discuss parallel pilots with the external auditor and equal criteria for supervising AI-assisted work, whoever performs it.",
+   "KPMG argues full-population tools could lower the value of relying on management's tests, or raise it if its AI testing qualifies.",
+   "The engagement partner decides on reliance after evaluating competence, objectivity and the AI tool's certification; no measured outcome."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-controls-testing-25",
+  "title": "Idea: synthetic data and simulation agents to stress-test controls before ERP go-live",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: the window between an ERP go-live or acquisition and a stable control environment is among the highest-risk periods, with controls untested against real volumes.",
+  "approach": [
+   "KPMG proposes synthetic transaction populations and agents that simulate users and adversarial conditions to test access controls, approvals and rules before go-live.",
+   "COSO separately recommends test populations to validate AI accuracy and stress-test edge cases.",
+   "The ICFR lead or control designers approve scenarios and interpret failures; no measured outcome."
+  ],
+  "who": "No named deployment"
+ }
+]

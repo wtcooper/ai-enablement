@@ -1,0 +1,222 @@
+[
+ {
+  "id": "security-application-security-01",
+  "title": "AI agents help with security design reviews and threat modelling",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Security design reviews are a chronic bottleneck because specialists gather context by hand while developers wait.",
+  "approach": [
+   "Anthropic's application security team says Claude assists threat modelling; Cloudflare runs a spec reviewer agent over design specifications before implementation.",
+   "Stripe is scheduled to describe agents running the review lifecycle (talk not yet given); human experts take complex architectural decisions.",
+   "Stripe reports reviews going from weeks to minutes; Cloudflare reviewed close to 600 specs since May 2026 (both self-reported)."
+  ],
+  "who": "Anthropic, Stripe, Cloudflare, MongoDB, Mandiant"
+ },
+ {
+  "id": "security-application-security-02",
+  "title": "Security guardrails for AI-written code, with oversight set by code criticality",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Coding agents write production code that people review less, and studies find security flaws in a large share of AI-generated code.",
+  "approach": [
+   "Security checks sit in the coding agent's loop: scans of every touched file, package firewalls, and security instruction files and rule packs.",
+   "Developers review and test AI output as for any code; the UK NCSC advises manual coding for authentication, secrets and safety-critical code.",
+   "Over 3 million write-time scans a week, 95% under 5 seconds (vendor-published); AI-generated code passes security 56% on average (vendor-published)."
+  ],
+  "who": "Semgrep, Snyk, OpenSSF, UK NCSC"
+ },
+ {
+  "id": "security-application-security-03",
+  "title": "Disclosure and human accountability rules for AI-assisted code contributions",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tool-generated contributions raise submission volume while reviewer and maintainer bandwidth is scarce, and provenance and legal certification of AI-written code are unclear.",
+  "approach": [
+   "The Linux kernel project bars AI agents from adding Signed-off-by tags, because only humans can certify the contributor's legal statement.",
+   "It asks for an Assisted-by tag naming the model, and a reproducer and tested fix for any bug an assistant finds.",
+   "A human certifies origin and reviews the code before submission; no measured outcome is published."
+  ],
+  "who": "Linux kernel project"
+ },
+ {
+  "id": "security-application-security-04",
+  "title": "AI review of every pull request, including a dedicated security reviewer agent",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Merge requests queue for hours awaiting first review, and single-prompt AI review produced vague suggestions and noise, while lightweight security checks miss context-dependent vulnerabilities.",
+  "approach": [
+   "Cloudflare runs up to seven specialised reviewer agents per merge request; a coordinator removes duplicates, rates severity and can block serious problems.",
+   "Engineers can override a block: 288 times, 0.6% of merge requests; 131,246 review runs in the first 30 days (self-reported).",
+   "At Atlassian a security review agent had 54% of comments validated by security engineers in a shadow deployment (self-reported)."
+  ],
+  "who": "Cloudflare, Atlassian, Anthropic, Semgrep, curl"
+ },
+ {
+  "id": "security-application-security-05",
+  "title": "Engineering standards rewritten as machine-readable rules that review agents enforce",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Standards live in documents, chat threads and individual memory, so no engineer can read every standard and reviewers cannot reliably check every requirement.",
+  "approach": [
+   "Cloudflare rebuilt its standards as a governed 'Codex'; an agent extracts rules that review agents retrieve for code, specifications and incident reports.",
+   "Domain owners approve and promote documents; only those promoted to 'enforced' block merges, and engineers act on findings.",
+   "Close to 230,000 standards violations flagged, almost 16,000 withheld approval (self-reported)."
+  ],
+  "who": "Cloudflare"
+ },
+ {
+  "id": "security-application-security-06",
+  "title": "Risk-tiered automated review that lands low-risk code changes without a human reviewer",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "AI coding agents increase code volume faster than reviewers can read it, and at Meta the share of changes getting timely review fell.",
+  "approach": [
+   "Meta's RADAR scores each change for risk, runs AI code review and deterministic validation, and lands qualifying changes without a human reviewer.",
+   "Changes failing the eligibility, risk-score or validation gates stay on the normal human review path.",
+   "Meta reports 331K+ changes landed, a revert rate one third and production incident rate one fiftieth of non-RADAR diffs (self-reported)."
+  ],
+  "who": "Meta"
+ },
+ {
+  "id": "security-application-security-07",
+  "title": "Scanning every code change before submission, with an agent proving reachability",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "One-off scans of large code bases are slow and short on context, so vulnerabilities are found late while AI increases the amount of code needing security.",
+  "approach": [
+   "Google's AI Infrastructure team scans each check-in with agents; a triage agent tests whether the vulnerable path is reachable.",
+   "A bug-fix agent drafts fixes that go to human review in the change request; no checkpoint is stated for triage verdicts.",
+   "Triage agent over 92% precision in under a minute; hundreds of vulnerabilities stopped per month (self-reported)."
+  ],
+  "who": "Google"
+ },
+ {
+  "id": "security-application-security-08",
+  "title": "AI reasoning-based code scanning used alongside rule-based static analysis",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Rule-based scanners find only what someone wrote a rule for, miss business-logic and access-control flaws, and create noise that teams spend time triaging.",
+  "approach": [
+   "Agentic scanners from OpenAI, Anthropic, Wiz, Semgrep and Snyk build an editable threat model, test findings in a sandbox and propose fixes.",
+   "An analyst or developer reviews validated findings and approves patches; nothing is applied without human approval.",
+   "OpenAI's beta cut noise 84% in one case and over-reported severity over 90% (vendor-published); GitHub's researcher reported 24 Android vulnerabilities (self-reported)."
+  ],
+  "who": "OpenAI, Anthropic, Wiz, Semgrep, Snyk, GitHub"
+ },
+ {
+  "id": "security-application-security-09",
+  "title": "Reachability-first triage and closure tracking for AI-generated vulnerability candidates",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "AI-assisted programmes generate more vulnerability candidates and patch pull requests than teams can review, so an opened pull request is not a fixed bug.",
+  "approach": [
+   "Rubrik's product security lead is scheduled to describe (talk not yet given) a loop taking findings to merge, rejection, deferral or acceptance.",
+   "It uses root-cause de-duplication, reachability ranking and no auto-patching of bug classes that cannot be validated cheaply; engineers review before merge.",
+   "No operating-loop results are published."
+  ],
+  "who": "Rubrik, OpenAI, Google"
+ },
+ {
+  "id": "security-application-security-10",
+  "title": "Validator-gated AI testing of an organisation's own running web applications",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "AI code scanners flood security teams with unverified hypotheses, so a real flaw is hard to tell from a convincing hallucination, and candidates come without proof of exploitability.",
+  "approach": [
+   "Google's PageBreak agent hypothesises web flaws in Google's own applications; a validator not written by AI confirms each against a running environment.",
+   "Only deterministically validated findings go to product teams; unconfirmed ones are kept as seeds for later scans.",
+   "PageBreak found over 500 cross-site scripting flaws in Google's first-party applications since a 2025 pilot (self-reported)."
+  ],
+  "who": "Google, Snyk"
+ },
+ {
+  "id": "security-application-security-11",
+  "title": "AI agents build custom analysis tools and formal models before manual audits",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Reviewing code in a new virtual machine with a custom assembly language and almost no tooling is slow, and manual review alone may miss classes of bugs.",
+  "approach": [
+   "Before auditing the Miden virtual machine, Trail of Bits spent six months having agents build a language server, decompiler and formal model.",
+   "Auditors use and check the tools during manual review; the audit had 95 machine-checked proofs and one high-severity issue (self-reported)."
+  ],
+  "who": "Trail of Bits"
+ },
+ {
+  "id": "security-application-security-12",
+  "title": "AI-drafted fixes for scanner alerts and critical vulnerabilities, delivered as reviewable changes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Developers often have little secure-coding training, so fixing scanner alerts takes substantial effort, and finding vulnerabilities is only half the work.",
+  "approach": [
+   "LLMs draft a fix for an alert or vulnerability as a proposed change: GitHub's Copilot Autofix, Google's bug-fix agent, Meta's AI-written diffs.",
+   "A developer reviews and accepts or edits every suggested fix.",
+   "Meta is scheduled to report (talk not yet given) over 40% of critical vulnerabilities fixed by AI-written diffs (self-reported)."
+  ],
+  "who": "GitHub, Meta, Google, Snyk"
+ },
+ {
+  "id": "security-application-security-13",
+  "title": "AI agent applies compiler bounds-safety annotations to remove whole classes of bugs",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Patching one bug at a time does not remove whole classes of memory-safety vulnerability, such as the libwebp heap overflow used in a zero-click iPhone exploit.",
+  "approach": [
+   "DeepMind's CodeMender agent applied compiler bounds-safety annotations to parts of libwebp, fixing its own compile errors and test failures.",
+   "Patches reach human reviewers only after static and dynamic analysis, differential testing, fuzzing and solver checks.",
+   "It upstreamed 72 security fixes during the research (self-reported); this is a pilot."
+  ],
+  "who": "Google DeepMind"
+ },
+ {
+  "id": "security-application-security-14",
+  "title": "Automated AI screening of inbound packages, agent skills and outside pull requests",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Malicious packages reach developer machines before pull-request scans, models invent package names, skill marketplaces carry malicious skills, and anonymous pull requests can reach CI secrets.",
+  "approach": [
+   "Automated gates screen inbound code: Semgrep's AI-assisted malware rules, Snyk's package firewall, ClawHub and Cisco skill scanners, OpenSearch's model gate.",
+   "An expert verifies Semgrep's malware rules before publishing; no human check is stated for OpenSearch's gate.",
+   "Independent testing bypassed all deployed skill scanners tested with four purpose-built malicious skills (independent)."
+  ],
+  "who": "Semgrep, Snyk, ClawHub, Cisco, OpenSearch"
+ },
+ {
+  "id": "security-application-security-15",
+  "title": "AI-assisted research for curators of a vulnerability advisory database",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Advisory submissions surged, and the hard ones need package disambiguation, version-range reconstruction and reconciling conflicting upstream data, all of which takes human time.",
+  "approach": [
+   "GitHub gave curators AI assistance in the research phase of advisory review, and better automation for extracting upstream CVE data.",
+   "Curators make every decision, and reviewed advisories remain human-validated.",
+   "1,560 advisories were reviewed in May 2026, over five times a typical month (self-reported)."
+  ],
+  "who": "GitHub"
+ },
+ {
+  "id": "security-application-security-16",
+  "title": "Testing AI security tools on contamination-reduced, audited benchmarks before trusting them",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Public benchmarks built from known CVEs can be memorised by models, exploit-only checks inflate results, and one scan can miss a bug the next run finds.",
+  "approach": [
+   "Teams build their own harnesses: GitLab measures false positives and misses, AWS audits every success on refreshed CVE benchmarks, Semgrep tests memorisation.",
+   "Experts review graders' verdicts, as Trail of Bits does.",
+   "Semgrep found 93 of 176 judged solutions near-identical to real code (vendor-published); exploit-only validation inflated patching results 1.83 times (independent)."
+  ],
+  "who": "GitLab, AWS, Semgrep, Trail of Bits"
+ },
+ {
+  "id": "security-application-security-17",
+  "title": "Security team rebuilt around building and operating its own AI skills",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Trail of Bits says most companies hand out chat licences without changing workflows; a year earlier about 95% of its staff were sceptical or resistant.",
+  "approach": [
+   "Trail of Bits standardised on one coding agent, wrote an AI handbook of approved tools, and built a curated skills marketplace.",
+   "Anthropic's application security engineers each own a Claude-powered security system; humans remain the auditors, under handbook approval rules.",
+   "Trail of Bits reports 94 plugins, 201 skills and 84 agents, and 200 bugs a week on the right engagements (self-reported)."
+  ],
+  "who": "Trail of Bits, Anthropic, GitLab, Cloudflare"
+ }
+]

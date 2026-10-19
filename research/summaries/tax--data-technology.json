@@ -1,0 +1,314 @@
+[
+ {
+  "id": "tax-data-technology-01",
+  "title": "Tax-owned data layer joining ERP and ledger data into one reconciled source",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Tax teams sit downstream of finance systems and often get aggregated data stripped of detail; EY's survey found 51% of tax and finance functions early in data maturity.",
+  "approach": [
+   "Tax owns or co-owns a central store fed from several systems, with documented lineage and reconciliations; Snowflake, Fortive and Apple advertise roles.",
+   "Deloitte Tax and Databricks announced an alliance on 2025-10-08 to build a unified tax data architecture. No outcomes published.",
+   "Tax staff review reconciliations, IT and tax agree ERP changes, and tax leadership signs off data requirements for new business lines."
+  ],
+  "who": "Snowflake, Fortive, Apple, OpenAI, Deloitte"
+ },
+ {
+  "id": "tax-data-technology-02",
+  "title": "Agentic layer that assembles, maps and checks ledger data before tax engines",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Commentators argue data assembly and reconciliation, not tax calculation, is the binding constraint; EY says tax staff spend 53% of time on routine activities.",
+  "approach": [
+   "An agentic layer pulls ledger data, maps accounts to tax categories, validates it, flags anomalies for a person and passes it on.",
+   "Kognitos positions its product this way; Thomson Reuters says its goal for ONESOURCE direct tax is agentic data import, validation and mapping.",
+   "A person reviews every flagged exception, and tax professionals keep oversight of mapped data. No outcomes published."
+  ],
+  "who": "Kognitos, Thomson Reuters, Deloitte, Savant"
+ },
+ {
+  "id": "tax-data-technology-03",
+  "title": "Agent keeps tax-engine settings in sync with ERP master-data changes",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "New entities, registrations, locations and products set up in the ERP must be duplicated in the tax engine, and manual maintenance causes mismatches and delays.",
+  "approach": [
+   "Vertex Configuration Agent for Microsoft Dynamics 365 monitors master-data changes and triggers matching updates in the Vertex tax engine.",
+   "Vertex says it was built with Azure AI Foundry and Copilot Studio; Avalara describes a browser agent guiding ERP configuration.",
+   "The tax team validates high-impact configuration changes before they reach the engine. No outcome figures published."
+  ],
+  "who": "Vertex, Avalara"
+ },
+ {
+  "id": "tax-data-technology-04",
+  "title": "Building tax data and tax engine into ERP migration from the start",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tax determination is often overlooked until late in an ERP project, causing delays and workarounds; one participant managed tax across 40 separate billing systems.",
+  "approach": [
+   "Put a tax expert on the migration team, clean data before it moves, and integrate the tax engine natively.",
+   "At Vertex Exchange Europe 2026, Siemens Energy and Daimler Truck AG described implementing the Vertex tax engine in SAP.",
+   "Roundtable participants used AI for contract review and anomaly detection, warning it needs clean data. A tax expert sits on the team."
+  ],
+  "who": "Siemens Energy, Daimler Truck, Vertex"
+ },
+ {
+  "id": "tax-data-technology-05",
+  "title": "Low-code tax data preparation, the pre-generative-AI baseline",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Large tax departments gather data from scattered sources by hand before provision and return work can begin; at one telecom client 200-plus tax managers worked above capacity.",
+  "approach": [
+   "Not generative AI: Alteryx and Microsoft Power Query consolidate and reconcile data and feed tax engines; DuPont combined Alteryx with ONESOURCE.",
+   "RGP reports 1,100+ hours removed at an automotive client; Concentrix reports 500+ hours a year saved at a telecom client (vendor-published).",
+   "Concentrix says any reviewer can verify the visual workflows; no review step is described."
+  ],
+  "who": "DuPont, RGP, Concentrix, Alteryx"
+ },
+ {
+  "id": "tax-data-technology-06",
+  "title": "Plain-language tax analytics and reusable tax agents over a semantic layer",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Tax analysts work in spreadsheets and filings, and refreshing dashboards by hand takes time that could go to analysis and exception handling.",
+  "approach": [
+   "Snowflake's tax analytics team says it replaced traditional dashboards with AI agents, semantic models for plain-English queries, and Streamlit apps.",
+   "The posting asks for verified-query coverage and accuracy iteration based on evaluation metrics. No outcomes published.",
+   "The builder validates the output; tax leadership receives summaries and owns exception handling."
+  ],
+  "who": "Snowflake"
+ },
+ {
+  "id": "tax-data-technology-07",
+  "title": "Tax analysts build pipelines and tools with AI coding, under controls",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Data integrations tax needs can wait months in an IT queue, and building them fast lets an analyst deploy something nobody has reviewed or documented.",
+  "approach": [
+   "Tax analysts use AI coding and low-code agent tools to build pipelines and apps; four OpenAI tax staff demonstrated pipelines at TEI.",
+   "The recap author describes about 15 minutes versus about two months in an IT queue (self-reported, anecdotal).",
+   "Any pipeline is reviewed and documented before it is relied on; the recap names unreviewed pipelines as the failure mode."
+  ],
+  "who": "OpenAI, RSM, Grant Thornton, EY"
+ },
+ {
+  "id": "tax-data-technology-08",
+  "title": "Tax automations run as controlled assets with sign-off, logs and drift monitoring",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Under SOX, tax teams must document what an automated process ran, when it changed and who approved it, but most workflow tools lack native run history.",
+  "approach": [
+   "Savant's Spring 2026 release added version control, a sign-off step enforcing segregation of duties, and evidence logs with SOX report templates.",
+   "Oxford Industries' senior director of tax and accounting is quoted saying Savant provided the governance controls and audit documentation needed.",
+   "A control owner approves before go-live, exceptions go to human review, and drift signals trigger accuracy evaluations."
+  ],
+  "who": "Savant, Oxford Industries, Deloitte"
+ },
+ {
+  "id": "tax-data-technology-09",
+  "title": "Scheduled multi-system tax reconciliation with exceptions sent to staff",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Month-end sales tax reconciliation between source transactions, tax-engine output and returns is done in manual spreadsheets.",
+  "approach": [
+   "Rover, a pet-care marketplace, rebuilt its monthly reconciliation in Savant: it pulls data including Avalara, matches transactions and produces audit-ready outputs.",
+   "Rover cut month-end close time 80% and data handling costs 50% (vendor-published).",
+   "Human checkpoints are not described for Rover; Savant says exceptions can be routed for human review."
+  ],
+  "who": "Rover, Savant"
+ },
+ {
+  "id": "tax-data-technology-10",
+  "title": "Idea: multi-agent workflows from provision to return, people handling exceptions",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: a TEI-SJSU panel deck says without an orchestration layer AI cannot move from demo to production, and fragmented data leaves tools isolated.",
+  "approach": [
+   "The panel deck (RSM, Grant Thornton, EY, OpenAI speakers) places multi-agent tax workflows at the top of a four-step progression.",
+   "Its examples include provision-to-return automation, R&D credit scanning and state apportionment data ingestion.",
+   "Humans are reserved for exceptions."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-data-technology-11",
+  "title": "AI extraction of tax notices and documents into structured data, independently verified",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "State tax notices never arrive in the same format twice, and incorrect document extraction creates errors that flow silently into a return.",
+  "approach": [
+   "TEI attendees reported using AI image-to-text tools on state notices; EY describes AI that summarises a notice and drafts a response.",
+   "Savant's Spring 2026 release has over ten prebuilt extraction skills; Avalara's Outlook agent scans inbound invoices and validates them.",
+   "Extracted figures are independently verified against source documents, with escalation for complex cases. No error rate published."
+  ],
+  "who": "Savant, Avalara, EY, TEI attendees"
+ },
+ {
+  "id": "tax-data-technology-12",
+  "title": "Transaction-level real-time reporting to tax authorities replaces periodic returns",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Periodic returns give authorities data weeks after the transaction; more than 60 jurisdictions have moved or are moving to continuous transaction controls.",
+  "approach": [
+   "Companies send invoice data to the authority as it is created and build around it; the EU adopted ViDA on 2025-03-11.",
+   "Commission projects up to EUR 11 billion a year less VAT fraud (independent; unmeasured); a Peru study found over 5% higher reports.",
+   "Human checkpoints are not described for in-house teams."
+  ],
+  "who": "European Commission, OECD forum, UK government"
+ },
+ {
+  "id": "tax-data-technology-13",
+  "title": "Invoice and master data validated before submission, with preventive controls",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "In clearance regimes an invoice has no legal force until the authority returns its identifier, so a wrong VAT ID or schema gets it rejected.",
+  "approach": [
+   "Tax, finance and IT run a validation layer over ERP invoice data, checking identifiers, schema and master data, with an exception queue.",
+   "TEI attendees described validation agents critiquing their own outputs, without naming a company or saying they target outbound invoices.",
+   "Sources describe no human checkpoint; only 22% of respondents have a formal ViDA transition programme (vendor-published baseline)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-data-technology-14",
+  "title": "AI mapping of ERP data to e-invoicing formats, with fixes after approval",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "A wrong VAT ID or mismatched master data means a clearance-regime invoice is rejected, the shipment waits and the buyer does not pay.",
+  "approach": [
+   "Avalara says it uses AI to map invoice fields to country requirements; Sovos describes AI that diagnoses and fixes errors once approved.",
+   "Sovos reports a 1.6% invoice rejection rate in live French production versus an estimated 20% market-wide (vendor-published; AI share unstated).",
+   "User approval is required before a correction is executed."
+  ],
+  "who": "Avalara, Sovos, Roedl"
+ },
+ {
+  "id": "tax-data-technology-15",
+  "title": "Agent assesses rule changes and errors against tax configuration, fixing after approval",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Rule and format changes must be mapped to each company's entities and settings, and fixing configuration errors depends on support tickets and hand-offs.",
+  "approach": [
+   "Sovos announced (March 2026) Sovi AI diagnosing compliance errors, proposing fixes and executing corrections once approved, plus regulatory intelligence on configuration impact.",
+   "EY's author describes agents that monitor rule changes and route exceptions; the text says EY's platform aims to work this way.",
+   "Corrections run only after user approval; exceptions are routed for review. No outcomes published."
+  ],
+  "who": "Sovos, Avalara, EY"
+ },
+ {
+  "id": "tax-data-technology-16",
+  "title": "Idea: continuous reconciliation of calculated, invoiced, reported and authority data",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "Idea, not a deployment: where authorities hold structured transaction data, indirect tax teams must show what was calculated is what was invoiced and reported.",
+  "approach": [
+   "Reconcile every transaction across calculation, invoice, report and authority record continuously, toward continuous audit controls discussed at Vertex Exchange Europe 2026.",
+   "Deloitte's scenario describes a digital tax analyst agent that cross-checks invoice data and routes exceptions to reviewers.",
+   "Exceptions go to the appropriate human reviewer."
+  ],
+  "who": "Deloitte, Vertex Exchange (discussion)"
+ },
+ {
+  "id": "tax-data-technology-17",
+  "title": "Read-only access lets general AI assistants answer from company tax-compliance data",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Staff must log in to a compliance portal to see nexus, filings and registrations, and generic assistants answer from general knowledge, not company numbers.",
+  "approach": [
+   "Kintsugi's MCP server gives Claude or ChatGPT read-only access to nexus, filings and registrations; Avalara and Anrok describe similar servers.",
+   "Anrok says its server can also take actions, under scoped OAuth credentials. No outcomes published.",
+   "Kintsugi's assistant answers questions only; filings remain checked by the vendor's experts."
+  ],
+  "who": "Kintsugi, Avalara, Anrok"
+ },
+ {
+  "id": "tax-data-technology-18",
+  "title": "Company agents call tax engines through vendor servers, limited scopes, logged",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Each AI model and tax system needs custom integration, and calling a tax engine from an agent raises questions of authorisation, identity and logging.",
+  "approach": [
+   "Avalara says it ships MCP servers for AvaTax, returns and e-invoicing; an example agent validates a vendor invoice and files use tax.",
+   "Sovos is developing an MCP gateway; Vertex's Dynamics 365 agent and PwC's Agent OS use MCP. No named customer outcomes.",
+   "Users consent to permissions and consents are audited; Vertex keeps review checkpoints for high-impact changes."
+  ],
+  "who": "Avalara, Sovos, Vertex, PwC, Anrok"
+ },
+ {
+  "id": "tax-data-technology-19",
+  "title": "Decision log and audit trail for AI-assisted tax determinations and approvals",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fonoa's 2026 survey of 176 indirect tax leaders found 57.4% would not be confident defending AI-assisted decisions to a tax authority.",
+  "approach": [
+   "Record which AI outputs affected filings, the inputs used, and which suggestions were accepted, modified or rejected, as work happens.",
+   "Fonoa markets an Audit product claiming audit-ready 'in minutes, not weeks' (vendor claim, no sample); Sovos says every approval is documented.",
+   "Formal human review of AI output before it informs a decision, with named owners and documented sign-off."
+  ],
+  "who": "Fonoa, Sovos, AICPA, Thomson Reuters"
+ },
+ {
+  "id": "tax-data-technology-20",
+  "title": "Tax-owned AI and automation inventory, policy and accountability",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "When TEI seminar attendees were asked whether tax owns AI implementation, two hands went up out of more than 50.",
+  "approach": [
+   "Tax keeps a live inventory of AI and automation use cases with owners and escalation paths, a written policy and control mapping.",
+   "COSO's February 2026 guidance sets a six-step roadmap: govern, inventory, assess, design, implement, monitor.",
+   "Each inventoried use case has named ownership and escalation paths. In one report, 45% of tax departments had no relevant policy."
+  ],
+  "who": "COSO guidance, TEI, Thomson Reuters"
+ },
+ {
+  "id": "tax-data-technology-21",
+  "title": "Acceptance thresholds before go-live, then tracking accuracy and override rates",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Tax functions are told to adopt AI but not what good looks like: only 12.5% of Fonoa's respondents had specific AI targets or KPIs.",
+  "approach": [
+   "Tax sets acceptance thresholds before go-live and monitors accuracy, override rates and cycle time afterwards.",
+   "In Deloitte's survey, 77% of tax leaders required 90% or higher accuracy before entrusting AI with tax processes (vendor-published).",
+   "Formal human review of AI outputs before they inform tax decisions, run by about a third of Fonoa's respondents."
+  ],
+  "who": "Fonoa, Deloitte, COSO commentary"
+ },
+ {
+  "id": "tax-data-technology-22",
+  "title": "AI-first in-house tax model where staff build and review database-driven workflows",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "OpenAI's postings describe moving recurring income tax work off spreadsheet preparation and trackers, and making handoffs and documentation easier to review.",
+  "approach": [
+   "OpenAI's tax postings describe an AI-first model where preparation is automated in database-driven workflows and staff review, validate and build.",
+   "The team wants a leader who defines when AI can safely speed work and when human review is needed. No outcomes published.",
+   "First-level review and validation of automated provision outputs and pipelines."
+  ],
+  "who": "OpenAI tax team"
+ },
+ {
+  "id": "tax-data-technology-23",
+  "title": "Central tax operations and technology team owning tax data, automation and AI",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "In the 2026 Thomson Reuters Institute report, 64% placed their tax department at the chaotic or reactive end of a maturity curve, up from 57%.",
+  "approach": [
+   "Set up a central team owning tax technology, data and automation; Unilever Ice Cream's Anna Elphick discussed a centralised tax operations centre.",
+   "A German head of tax told EY of a dedicated AI team for tax; Deloitte advises collaborating with finance and IT.",
+   "Governance framework with named owners, documented sign-off and internal reviews. Reported correlations are not shown to be causal."
+  ],
+  "who": "Unilever Ice Cream, Thomson Reuters, EY"
+ },
+ {
+  "id": "tax-data-technology-24",
+  "title": "Tax run as co-sourced or managed service on a provider's AI platforms",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "In-house teams struggle to build their own solutions; 77% wanted their providers to use generative AI, yet 59% were unsure whether their own firms do.",
+  "approach": [
+   "Use a third party investing in AI and data tooling, or a managed service; 78% in EY's survey said it would help.",
+   "Deloitte lists a managed service or selective outsourcing as an option; most large Vertex implementations are partner-led.",
+   "The business reviews provider output critically and vets AI vendors on data retention and training terms. 85% reported better focus (vendor-published)."
+  ],
+  "who": "EY survey, Deloitte, Thomson Reuters, Vertex"
+ }
+]

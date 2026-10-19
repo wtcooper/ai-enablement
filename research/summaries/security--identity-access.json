@@ -1,0 +1,303 @@
+[
+ {
+  "id": "security-identity-access-01",
+  "title": "Daily agent scan of sign-in policies for gaps, with administrator-approved fixes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Conditional Access policy sets grow over time, so new users, apps and agent identities fall outside MFA or device controls, and finding gaps meant reading policy logic by hand.",
+  "approach": [
+   "A Microsoft Security Copilot agent scans Entra Conditional Access policies every 24 hours and proposes a report-only policy or an edit.",
+   "An administrator reviews each suggestion and rationale before approving; report-only mode and phased rollout show impact before enforcement.",
+   "Microsoft reports 26 policy gaps per customer per month and 73% of customers improving posture (vendor-published)."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-identity-access-02",
+  "title": "Agent-planned passkey adoption campaigns for privileged administrators",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Moving administrators to phishing-resistant sign-in needs readiness checks, nudges, grace periods and a final enforcement switch, which is manual coordination at scale.",
+  "approach": [
+   "Microsoft's announced Conditional Access Optimization Agent finds eligible administrators, checks device and passkey readiness, generates a four-stage plan and guides users.",
+   "An administrator reviews the plan, can edit targeted users and grace periods before deploying, and can dismiss suggestions; no outcomes published."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-identity-access-03",
+  "title": "AI reviewer for access requests approves routine ones and escalates the rest",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Access needing a manager's approval sits in queues, approvers lack context, and Opal found 43.5% of granted access went unused for over 90 days.",
+  "approach": [
+   "Instacart's open-source Gadjit bot compares requester and entitlement holders and approves above a threshold; Opal's Paladin agent decides with a rationale.",
+   "In Opal's design risky or ambiguous requests go to a person; what Instacart does below the threshold is not stated.",
+   "Instacart says accuracy in testing is nearly 100% (vendor-published)."
+  ],
+  "who": "Instacart, Opal"
+ },
+ {
+  "id": "security-identity-access-04",
+  "title": "Zero standing privilege: just-in-time grants and revocation for privileged access",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Privileged access is still mostly always-on; Palo Alto Networks says 61% of privileged requests are fulfilled with standing privilege, while regulators require need-to-use access.",
+  "approach": [
+   "Vendors replace always-on admin rights with task-based access, revoked when risk changes; Palo Alto Networks, CrowdStrike and SailPoint announced products.",
+   "Approval of elevation requests is not described in the vendor sources, though DORA requires ad hoc assignment.",
+   "Instacart moved 95% of privileged permissions to just-in-time access using a rule-based engine, not AI (vendor-published)."
+  ],
+  "who": "Palo Alto Networks, CrowdStrike, SailPoint, Instacart"
+ },
+ {
+  "id": "security-identity-access-05",
+  "title": "Conversational assistant for employee IT and access questions and requests",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Employees must already know which of about 1,500 applications to ask about access, devices and VPN, so requests go to the wrong place.",
+  "approach": [
+   "Okta built Dex, an orchestrating agent acting as one front door for IT, people and expense support, checked against the user's access.",
+   "SailPoint announced an agent for natural-language access requests in chat tools, collecting business justification; Dex's human checkpoints are not described.",
+   "Okta reports 25% adoption in two weeks and over 23,500 interactions (self-reported)."
+  ],
+  "who": "Okta, SailPoint"
+ },
+ {
+  "id": "security-identity-access-06",
+  "title": "Evidence-based recommendations and an AI first pass on access review decisions",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Regulators set review frequencies that create heavy reviewer work, and reviewers face long lists with little context, so many reportedly approve everything.",
+  "approach": [
+   "Review screens carry recommendations: Entra suggests Deny for inactive users, SailPoint uses peer analysis, Lumos an AI first pass, Opal low-risk clearing.",
+   "Application owners and managers approve or deny each item; Opal says risky calls always reach a person.",
+   "Lumos states campaigns finish up to 6x faster than spreadsheet reviews (vendor-published); no error rates published."
+  ],
+  "who": "Microsoft, SailPoint, Lumos, Opal"
+ },
+ {
+  "id": "security-identity-access-07",
+  "title": "Usage-based role mining and entitlement right-sizing recommendations",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Roles are hand-curated, reviewers face dense entitlement lists they cannot evaluate, and 56% of survey respondents cannot enforce continuous least privilege for service accounts.",
+  "approach": [
+   "Google's IAM recommender examines up to 90 days of permission use and recommends removing or replacing roles with excess permissions.",
+   "Opal lists role mining as where its agent is going; recommendations only suggest removal, and applying them is a separate step.",
+   "No reduction in excess permissions or accuracy is published; announced products from Google, Opal and Omada."
+  ],
+  "who": "Google, Opal, Omada"
+ },
+ {
+  "id": "security-identity-access-08",
+  "title": "Continuous full-population identity posture checks with remediation and recorded evidence",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Periodic certifications and dashboards find stale access after the fact and flag risks without fixing them, while several regulations require documented, periodic proof of who has access.",
+  "approach": [
+   "SailPoint's announced posture product detects dormant accounts, orphaned access and shadow admins, then remediates; Saviynt and Palo Alto Networks describe similar tools.",
+   "One-click fixes leave the decision with an administrator; fully automated enforcement is an opt-in. No outcomes published."
+  ],
+  "who": "SailPoint, Saviynt, Palo Alto Networks"
+ },
+ {
+  "id": "security-identity-access-09",
+  "title": "Natural-language governance queries, audit preparation and workflow drafting for identity administrators",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Preparing for a governance audit means pulling data from several admin screens, and administrators spend time configuring and diagnosing joiner-mover-leaver workflows.",
+  "approach": [
+   "Security Copilot in Microsoft Entra answers governance prompts such as pending access reviews and who approved or denied, and guides new workflows.",
+   "The administrator still creates and enables the workflow; Copilot output is guidance. No figures published."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-identity-access-10",
+  "title": "Agentic onboarding of connected and disconnected applications into identity governance",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Bringing applications under identity governance is a long-running bottleneck, and 49% of organisations do not track how many disconnected apps they have.",
+  "approach": [
+   "Saviynt announced on 2025-10-15 agentic onboarding to speed integration of connected and disconnected applications into one governance platform.",
+   "Human checkpoints are not described and no outcomes are published."
+  ],
+  "who": "Saviynt"
+ },
+ {
+  "id": "security-identity-access-11",
+  "title": "Idea: AI-drafted access policy code, checked by tests before human review",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: access requirements written in prose must become enforceable policy code, and even frontier models often produce policies that violate the intended authorisation.",
+  "approach": [
+   "Idea under study: an LLM drafts policy code, then validation, tests or a formal verifier check it before a person reviews it.",
+   "In research a structured pipeline reached 50.3% correct Rego policies against 15.3% for a single prompt (independent); human review is not studied."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "security-identity-access-12",
+  "title": "IAM engineers building identity automation with AI coding tools and LLMs",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Identity teams run single sign-on, account provisioning, role models and privileged-access platforms with small staffs and many applications.",
+  "approach": [
+   "Cloudflare's postings require experience using AI and LLMs on operational problems and judgment on when to trust them; Coinbase expects human oversight.",
+   "Engineers review and own AI-assisted changes; no outcomes are published."
+  ],
+  "who": "Cloudflare, Coinbase"
+ },
+ {
+  "id": "security-identity-access-13",
+  "title": "Risk summaries and next steps for risky users, plus a risk agent",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Investigating identity risk needs context that administrators and security analysts must gather before deciding what to do with a flagged user.",
+  "approach": [
+   "In Microsoft Entra ID Protection, Copilot explains why a user's risk was raised and lists next steps; a preview agent monitors continuously.",
+   "Summaries and recommendations are advice; the administrator or analyst decides on remediation. No outcomes published."
+  ],
+  "who": "Microsoft"
+ },
+ {
+  "id": "security-identity-access-14",
+  "title": "Machine-learning scoring of sign-ins and sessions with automatic step-up, block or logout",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Policies checked only at sign-in miss session hijacking and token theft later; Okta cites 1.9 billion session cookies stolen from Fortune 1000 employees in 2022.",
+  "approach": [
+   "Microsoft and Okta compute sign-in and session risk from anomalies and feed policy that can require step-up, block or end sessions.",
+   "Administrators monitor risk profiles, response flows run through customer-defined workflows, and an administrator can confirm a user as compromised.",
+   "Only a customer quote of hours saved daily is published, organisation not named (vendor-published)."
+  ],
+  "who": "Microsoft, Okta"
+ },
+ {
+  "id": "security-identity-access-15",
+  "title": "Closed-loop identity threat response acting on high-confidence detections without a ticket",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Identity attacks are detected quickly but response waits in a human queue: 68% detect within 24 hours but 55% contain within that window.",
+  "approach": [
+   "Netwrix describes automation running pre-defined responses, such as disabling an account, once a high-confidence threshold is met, rolled out in stages.",
+   "A second, lower threshold routes cases to human review; Palo Alto Networks proposes a joined-up loop. No outcomes published."
+  ],
+  "who": "Netwrix, Palo Alto Networks, SANS"
+ },
+ {
+  "id": "security-identity-access-16",
+  "title": "Managed detection and response extended to cloud-application identity threats, with agentic workflows",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Compromised identities give attackers legitimate access to cloud applications, which lets them operate undetected.",
+  "approach": [
+   "CrowdStrike announced on 2026-09-02 that its managed detection and response service now covers identity and SaaS signals through Falcon Shield, 24/7.",
+   "It uses high-fidelity detections, agentic workflows and expert-led operations; response is expert-led. No outcomes published."
+  ],
+  "who": "CrowdStrike"
+ },
+ {
+  "id": "security-identity-access-17",
+  "title": "AI agents hunt and write detections for identity-targeting browser attacks",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Attacks on identities change weekly or daily and indicators are cheap to rotate, so human-only detection engineering takes days or weeks per technique.",
+  "approach": [
+   "Push Security's agents ingest new research, form hunt hypotheses, test queries on browser-session metadata, triage matches and draft detections.",
+   "Researchers ship the detections.",
+   "Push reports tripled new detections shipped each month after adopting the pipeline (self-reported)."
+  ],
+  "who": "Push Security"
+ },
+ {
+  "id": "security-identity-access-18",
+  "title": "Enforced identity checks before help-desk password, MFA and account-recovery actions",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Attackers call help desks posing as employees to get password and MFA resets, and cloned voices make it harder for staff to judge a caller.",
+  "approach": [
+   "No reset proceeds until the requester passes an enforced step; at Cisco, a chatbot triggers a Persona government ID and selfie check.",
+   "Failed verifications go to support agents and a documented escalation workflow; in Nametag's flow the agent decides after seeing the result.",
+   "Cisco says regaining access dropped from three or four hours to as little as five minutes (vendor-published)."
+  ],
+  "who": "Cisco, Persona, Nametag, Okta"
+ },
+ {
+  "id": "security-identity-access-19",
+  "title": "Machine-learning identity proofing with document checks, liveness and deepfake detection",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Remote onboarding and recovery rely on a selfie and a document image, and criminals use generative AI to alter documents and media and inject forged media into capture.",
+  "approach": [
+   "Layered checks cover documents, face match, liveness, camera tests and media analysis; Coinbase's team owns these models and its own evaluation set.",
+   "Failed or suspicious cases go to people; NIST says automated decisions should be augmented by manual review.",
+   "In a DHS test the median tested subsystem detected 78% of over 1,200 attacks (independent)."
+  ],
+  "who": "Coinbase, DHS test, FinCEN, Nametag"
+ },
+ {
+  "id": "security-identity-access-20",
+  "title": "Identity-graph models and biometric search to find duplicate enrolments, rings and bots",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Fraud rings reuse biometric, device and document signals across accounts, enrol the same face under different names and run bots that mimic humans.",
+  "approach": [
+   "Coinbase is hiring to build graph models clustering accounts by shared signals; Cloudflare's fraud platform routes decisions to people.",
+   "Manual review confirms every automated one-to-many match before an enrolment is declined. No outcomes published."
+  ],
+  "who": "Coinbase, Cloudflare"
+ },
+ {
+  "id": "security-identity-access-21",
+  "title": "Continuous background caller authentication in the contact centre instead of security questions",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Stolen breach data lets fraudsters answer security questions: across 2,500 fraud calls at 10 institutions they passed 53% of the time.",
+  "approach": [
+   "Pindrop Passport analyses voice, device and behaviour in the background, so callers are verified in seconds and agents see risk notifications.",
+   "Agents route elevated-risk calls; MSUFCU and HealthEquity use it.",
+   "MSUFCU cut average authentication from 90 to 45 seconds (vendor-published)."
+  ],
+  "who": "Pindrop, MSUFCU, HealthEquity"
+ },
+ {
+  "id": "security-identity-access-22",
+  "title": "Real-time call risk scoring to catch account-takeover and impersonation fraud by phone",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Contact-centre fraud checks are slow, run after the fact and rely on quizzes that fraudsters pass; Virginia Employment Commission lost an estimated $350M in three years.",
+  "approach": [
+   "Pindrop Protect scores risk throughout the call; at the commission the score decides whether a caller gets a callback or fraud agent.",
+   "Agents see colour codes and investigators run cases from flagged calls.",
+   "HealthEquity reports voice fraud down over 90% (self-reported); the commission detected over 800 potentially fraudulent calls (vendor-published)."
+  ],
+  "who": "Pindrop, Virginia Employment Commission, HealthEquity"
+ },
+ {
+  "id": "security-identity-access-23",
+  "title": "Synthetic-voice detection on contact-centre and meeting audio, with fraud-triage risk scores",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Voice biometrics and callback checks were not designed for AI-generated speech, and a tier-one global bank saw deepfaked calls pass both.",
+  "approach": [
+   "Reality Defender analysed recorded calls for an unnamed bank, then moved to real-time detection for about 600 frontline staff, returning risk scores.",
+   "Fraud analysts triage scored calls under a new triage and escalation process.",
+   "About 960 synthetic voice calls were found among over 1.7 million analysed (vendor-published)."
+  ],
+  "who": "Reality Defender, an unnamed global bank"
+ },
+ {
+  "id": "security-identity-access-24",
+  "title": "Behavioural biometrics and continuous authentication to detect account takeover and scams",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Payment monitoring does not address pre-payment risks such as identity theft, account takeover and scams; FBI IC3 logged USD 359.7 million in account-takeover losses in 2025.",
+  "approach": [
+   "Typing, gesture and mouse behaviour is analysed to detect identity theft, takeover and mule accounts pre-payment; Visa announced intent to acquire BioCatch.",
+   "Human checkpoints are not described, and no customer result is named."
+  ],
+  "who": "BioCatch, Visa (announced acquisition)"
+ }
+]

@@ -1,0 +1,209 @@
+[
+ {
+  "id": "tax-provision-pillar-two-01",
+  "title": "Cited research and AI insights built into provision and direct-tax workflows",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "After the books close, tax teams face immediate pressure to finish the provision, and research interruptions slow the work.",
+  "approach": [
+   "Bloomberg Tax places AI insights and rates inside Workpapers spreadsheets; Thomson Reuters embedded CoCounsel Tax in ONESOURCE direct tax in late 2024.",
+   "Thomson Reuters says research that took hours now takes minutes (vendor-published); neither source names a customer.",
+   "The preparer reads the linked primary sources before relying on an answer."
+  ],
+  "who": "Bloomberg Tax, Thomson Reuters"
+ },
+ {
+  "id": "tax-provision-pillar-two-02",
+  "title": "Idea: AI analysis of Excel-based provision workpapers",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea: many provision teams still build workpapers in Excel, which vendor Finrep calls a control risk auditors are increasingly unwilling to accept.",
+  "approach": [
+   "An AI assistant would read provision workbooks to explain formulas, check tie-outs and answer questions.",
+   "A 2026 Tax Executives Institute programme scheduled an AI-for-Excel lab; no provision team is shown doing this.",
+   "No source describes the review step."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-provision-pillar-two-03",
+  "title": "Provision data assembly and the close-to-tax handoff",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "The provision runs on close data, and vendor Kognitos calls the handoff from close to tax a manual, error-prone junction where accuracy is decided.",
+  "approach": [
+   "Bloomberg Tax describes automated data cleansing, rollforwards and book-to-tax adjustments in Workpapers that push into Provision.",
+   "Thomson Reuters aims for agentic data import, validation and mapping; Kognitos describes an upstream agent layer that reconciles ledger data.",
+   "No source says who reviews exceptions; direct tax professionals keep oversight of import, validation and mapping."
+  ],
+  "who": "Bloomberg Tax, Thomson Reuters, Kognitos"
+ },
+ {
+  "id": "tax-provision-pillar-two-04",
+  "title": "Pre-close anomaly flagging and document comparison in provision review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reviewers must catch outliers in deferred tax balances, rate reconciliation lines and source documents before the provision is final.",
+  "approach": [
+   "Finrep describes comparing deferred tax balances with historical patterns and flagging outliers; CSC Corptax lists PDF comparison on its AI roadmap.",
+   "Thomson Reuters advertised for a specialist to build anomaly detection into ONESOURCE Tax Provision; these are development signals, not shipped features.",
+   "Flagged outliers go to human review before close."
+  ],
+  "who": "Finrep, CSC Corptax, Thomson Reuters"
+ },
+ {
+  "id": "tax-provision-pillar-two-05",
+  "title": "Assembling the rate reconciliation and taxes-paid disclosure under the new accounting standard",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "ASU 2023-09 requires public entities to give a detailed tabular rate reconciliation and split income taxes paid by federal, state and foreign jurisdiction.",
+  "approach": [
+   "Finrep says AI-assisted categorisation of reconciling items from ERP data is the answer; vendor pages do not confirm this.",
+   "Neither vendor's own page was found to confirm this; no outcome figures are published (vendor-published).",
+   "The tax director reviews and approves the categorisation and the narrative."
+  ],
+  "who": "Finrep (vendor claim)"
+ },
+ {
+  "id": "tax-provision-pillar-two-06",
+  "title": "Idea: generative AI first draft of income tax footnote disclosures",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: tax disclosures must be company-specific and consistent with the provision, and Finrep says generic AI language risks SEC comment letters.",
+  "approach": [
+   "Generative AI would draft disclosure language from provision data; Finrep says Big Four firms are piloting this, without a source.",
+   "The PCAOB found preparers using generative AI for first drafts of internal documents, not specifically tax disclosures.",
+   "A tax professional reviews, edits and approves every draft."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-provision-pillar-two-07",
+  "title": "Live R&D credit data feeding provision estimates",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "R&D credit amounts in the provision can rest on estimates or prior-year placeholders rather than live data, and revised Form 6765 adds business-component reporting.",
+  "approach": [
+   "Thomson Reuters says Neo.Tax links project tools, groups data into components, applies the four-part test and allocates costs.",
+   "Thomson Reuters says live data makes the credit visible in real time and can reduce return-to-provision adjustments; no figures (vendor-published).",
+   "No source describes the review step."
+  ],
+  "who": "Thomson Reuters"
+ },
+ {
+  "id": "tax-provision-pillar-two-08",
+  "title": "Law-change monitoring feeding the provision and Pillar Two compliance",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Enacted-law changes drive deferred tax remeasurement, and Pillar Two rules keep moving, with new OECD packages in January and September 2026.",
+  "approach": [
+   "Orbitax's Tax Flows mode tracks regulatory changes and sends comparison reports; CSC Corptax lists tax code version tracking on its roadmap.",
+   "KPMG US's tax vice chair says building an agent for changing tax rules went from weeks to minutes (self-reported).",
+   "No source describes the review step beyond reports going to stakeholders."
+  ],
+  "who": "Orbitax, CSC Corptax, KPMG"
+ },
+ {
+  "id": "tax-provision-pillar-two-09",
+  "title": "Pillar Two data collection seeded from validated country-by-country reporting data",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Pillar Two data drives actual tax and needs more granular data than finance and country-by-country reporting held; the first return needed over 100 data points.",
+  "approach": [
+   "AMG Critical Materials loaded validated reporting XML into Orbitax's Accelerator, then added extra data; sources describe software automation, not AI.",
+   "Orbitax's case study says AMG's path to implementation shortened to around 10 days (vendor-published).",
+   "The tax team completes and reviews the additional information; AMG says it kept control of the financial data."
+  ],
+  "who": "AMG Critical Materials, Orbitax"
+ },
+ {
+  "id": "tax-provision-pillar-two-10",
+  "title": "Idea: AI-assisted mapping of ERP data to global minimum tax data points",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: Pillar Two needs jurisdiction-level calculations built from entity data held in several ERP systems, a substantial change from single-entity income tax work.",
+  "approach": [
+   "EY's technology leader says AI can assist in mapping ERP data to common standards, but standardisation is long-term and needs governance.",
+   "Intrinsic data-quality issues still need human correction; flagged data issues get manual review and correction."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-provision-pillar-two-11",
+  "title": "Pillar Two computation with safe-harbour tests, scenarios and interim estimates",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Global minimum tax calculations must be run by jurisdiction while the rules keep changing, including new safe harbours and a revised information return in 2026.",
+  "approach": [
+   "EY's GloBE Engine and Deloitte's Pillar Two Agent hold the rules and run compliance and scenarios; sources call them rules-based, not AI.",
+   "A Swiss-parented insurer ran Orbitax as an independent check on its Excel calculations, surfacing data issues before filing (vendor-published).",
+   "The team reviews dashboards and reports before filing, and in-scope groups must assess the safe-harbour components themselves."
+  ],
+  "who": "EY, Deloitte, Orbitax, Swiss-parented insurer"
+ },
+ {
+  "id": "tax-provision-pillar-two-12",
+  "title": "Pillar Two return population, XML generation, validation and direct filing",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "For many groups the first return season was an XML problem more than a tax-law problem, with country schema variants, early portal gatekeeping and errors in the OECD schema.",
+  "approach": [
+   "Platforms populate the return, generate and validate XML, and file by machine link where allowed; sources describe rules-based tooling, not AI.",
+   "Orbitax says it prepared or submitted more than 1,700 Pillar Two filings across 34 jurisdictions (vendor-published).",
+   "The tax team reviews validation results and resolves errors, which an insurer called the most demanding part of the season."
+  ],
+  "who": "Orbitax, EY, Deloitte"
+ },
+ {
+  "id": "tax-provision-pillar-two-13",
+  "title": "Correction and amendment management for Pillar Two returns",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Corrections to the Pillar Two return work only against accepted messages and need reference tracking; more corrections are expected as rules change.",
+  "approach": [
+   "Law firm FGS says its Pillar 2 Management App supports correction returns and largely automates correction references; rules-based, no AI claimed.",
+   "FGS names no client and publishes no figures (vendor-published).",
+   "No source describes the review step."
+  ],
+  "who": "Flick Gocke Schaumburg"
+ },
+ {
+  "id": "tax-provision-pillar-two-14",
+  "title": "Conversational assistant over live Pillar Two scenarios",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "After calculations are done, the remaining work is reviewing data, answering finance and audit-committee questions, validating XML and documenting decisions.",
+  "approach": [
+   "Orbitax says its XatBot assistant reads live scenarios, answers questions in plain language, analyses uploaded files and drafts audit-committee updates.",
+   "In Autopilot mode it can create and navigate scenarios from a conversation; no outcome figures are published (vendor-published).",
+   "The user can review the generated workflow before it runs, and professional judgment applies to anything entering a filing."
+  ],
+  "who": "Orbitax"
+ },
+ {
+  "id": "tax-provision-pillar-two-15",
+  "title": "Firm-run Pillar Two platform with specialist team, sold as co-sourcing",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Heads of Tax must run Pillar Two compliance quickly with audit-ready transparency; 70% of surveyed leaders expect to pay over US$500,000 a year to comply.",
+  "approach": [
+   "Deloitte offers its Pillar Two Agent only with its tax team, which collects data, calculates top-up tax and files; EY offers similar.",
+   "The sources do not describe AI, and no outcome figures are published (vendor-published).",
+   "The platform offers clients options for reviewing and signing off on data."
+  ],
+  "who": "Deloitte, EY, Flick Gocke Schaumburg"
+ },
+ {
+  "id": "tax-provision-pillar-two-16",
+  "title": "Bringing Pillar Two compliance in-house on a platform instead of outsourcing",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "AMG's small tax function could not add headcount for Pillar Two and had to choose between outsourcing and building the capability itself.",
+  "approach": [
+   "AMG chose software run in-house, as did a Swiss-parented insurer with a lean tax team; the sources describe software, not AI.",
+   "Orbitax says AMG's two-person tax function delivered first-year compliance across 70-80 entities in 25 jurisdictions with no added headcount (vendor-published).",
+   "AMG's vice president of tax reviewed and filed the returns."
+  ],
+  "who": "AMG Critical Materials, Orbitax"
+ }
+]

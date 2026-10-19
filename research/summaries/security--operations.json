@@ -1,0 +1,315 @@
+[
+ {
+  "id": "security-operations-01",
+  "title": "Agentic alert triage: simple checks first, case built before analyst opens it",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Manual investigation of each alert took about half an hour; Elastic's first AI summaries were wrong about 40% of the time, so analysts stopped reading them.",
+  "approach": [
+   "Rule-based queries close obvious false positives; narrow agents investigate the rest and build a case with a verdict.",
+   "Only high-confidence false positives close without an analyst; analysts confirm or override and record when the AI was wrong.",
+   "Elastic reports AI verdict correctness rising from 60% to 92% after changing the context given to agents, not the models (self-reported).",
+   "Elastic reports a 30-minute investigation now finishing in under 3 minutes (self-reported)."
+  ],
+  "who": "Elastic, Figma"
+ },
+ {
+  "id": "security-operations-02",
+  "title": "Precedent retrieval showing analysts how similar alerts were closed before",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Many alerts resemble cases already investigated, but proving that meant digging through closed tickets, raw logs and colleagues' Slack comments.",
+  "approach": [
+   "Figma indexes alerts with on-call comments, retrieves similar recent alerts, posts a summary and downgrades severity when similar alerts were benign.",
+   "Expel's precedent engine shows a suggested read and nearest past cases; weak matches default to escalation and the analyst always decides.",
+   "Figma reports a 20% drop in on-call pages (self-reported); Expel publishes targets, not measured results."
+  ],
+  "who": "Figma, Expel"
+ },
+ {
+  "id": "security-operations-03",
+  "title": "SIEM triage agent proposes a verdict and next steps; analyst decides",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Analysts pivot manually across data to gather context for every queued finding before deciding whether to close, escalate or investigate it.",
+  "approach": [
+   "Google, Splunk, Microsoft and Cisco embed triage agents in the security monitoring platform (SIEM); the agent proposes a disposition and rationale.",
+   "Analysts decide whether a finding is closed, escalated or acted on; high-impact actions stay with people.",
+   "Google says a typical 30-minute analysis falls to about 60 seconds (vendor-published); Cisco's event figures are observations, not benchmarks."
+  ],
+  "who": "Google, Splunk, Cisco, Microsoft"
+ },
+ {
+  "id": "security-operations-04",
+  "title": "Agent triages user-reported phishing emails and resolves false alarms",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "User-reported suspicious emails arrive continuously; reviewing each one slows response and risks genuine threats being missed.",
+  "approach": [
+   "An agent detonates files and URLs, checks threat intelligence, classifies the email and explains its verdict in plain language.",
+   "False positives are resolved; true positives stay open for an analyst, who can give feedback on the classification.",
+   "Valvoline's CISO says analysts reclaimed hours and containment became automatic on Torq's platform (vendor-published); no figures."
+  ],
+  "who": "Microsoft, Valvoline, Torq"
+ },
+ {
+  "id": "security-operations-05",
+  "title": "AI SOC analyst investigates every first-line alert and closes the benign majority",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Alert volume grew faster than analyst headcount and most alerts were benign; at Zapier a very small team faced 50-100+ daily investigations.",
+  "approach": [
+   "Alerts flow from detection tools into an AI analyst that investigates each one and writes outcomes into the case system.",
+   "Analysts work only what is not closed and see every query and piece of evidence; CyberProof adds QA sampling of closed cases.",
+   "ECS reports 70% of first-line alerts closed automatically (vendor-published); Zapier reports triage falling from 10-15 minutes to under 2 (vendor-published)."
+  ],
+  "who": "ECS, Zapier, CyberProof, Dropzone AI"
+ },
+ {
+  "id": "security-operations-06",
+  "title": "Calibrated models score alerts; confident benign ones close, others go to analysts",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Noise and low-severity alerts consume analyst time, and prose-generating AI triage is costly, variable and hard to audit.",
+  "approach": [
+   "Practitioners argue to start where error cost is lowest: close only alerts judged benign at a stated confidence, keeping recall fixed.",
+   "Decision models return a score with a probability: high closes, low escalates, the middle band goes to analysts, each verdict logged.",
+   "CrowdStrike reports false-positive recall rising from 21.8% to 64.8% with reasoning before the verdict (vendor-published)."
+  ],
+  "who": "CrowdStrike, Swimlane, academic researchers"
+ },
+ {
+  "id": "security-operations-07",
+  "title": "Evidence-gated dismissal: an independent challenge must find counter-evidence before dismissal",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Triage agents tend to dismiss attack alerts when searches return nothing, and self-review in the same context does not correct errors.",
+  "approach": [
+   "Grow Therapy's model must argue against each finding and produce counter-evidence before dismissing it; Slack uses a separate Critic agent.",
+   "Surviving findings go to analysts, who mark false positive or escalate.",
+   "Grow Therapy reports about 40% of findings were noise without the phase (self-reported); a benchmark design cut false negatives to 3.1% (independent)."
+  ],
+  "who": "Grow Therapy, Slack, academic researchers"
+ },
+ {
+  "id": "security-operations-08",
+  "title": "'SOCless' model: AI investigates all alerts, engineers paged only for serious events",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "A small, all-senior engineering team targeted by state-sponsored attackers was swamped by thousands of monthly alerts, mostly false positives.",
+  "approach": [
+   "All alert types go to an AI SOC analyst; results return to the SIEM and on-call engineers are paged for serious events.",
+   "Mysten has no dedicated security analysts.",
+   "Monthly alerts needing human review fell from thousands to under 20; time per alert from 30-60 minutes to roughly 1 (vendor-published)."
+  ],
+  "who": "Mysten Labs, Dropzone AI"
+ },
+ {
+  "id": "security-operations-09",
+  "title": "Agent investigates alerts end to end; on-call staff supervise and correct",
+  "grade": "A",
+  "ladder": "delegate",
+  "problem": "Gathering context was the main burden for on-call engineers, and a single-prompt prototype at Slack was highly variable and sometimes jumped to spurious conclusions.",
+  "approach": [
+   "Figma's agent works in the Slack alert thread with scoped tools; Slack splits investigation across Director, Expert and Critic model calls.",
+   "The on-call engineer reviews what the agent found, confirms or corrects it, and handles cases needing judgment.",
+   "Figma reports a 71% reduction in alert time to resolution (self-reported)."
+  ],
+  "who": "Figma, Slack"
+ },
+ {
+  "id": "security-operations-10",
+  "title": "Agent prepares the investigation and the analyst decides, tested in controlled studies",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Manual investigations are slow, vary by analyst and degrade with fatigue, and vendors claim AI helps with little controlled evidence.",
+  "approach": [
+   "Analysts receive an agent's evidence gathering and draft conclusion, review it and remain author of the verdict.",
+   "A Cloud Security Alliance study with Dropzone AI randomly assigned 148 participants; assisted analysts were 45% and 61% faster (vendor-published).",
+   "A university security team reports about 40% less ticket completion time (independent)."
+  ],
+  "who": "CSA, Dropzone AI, a university SOC"
+ },
+ {
+  "id": "security-operations-11",
+  "title": "Agent-written investigation narratives help new analysts work above their experience",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "New analysts spend their first hours learning where every tool lives and assembling context manually, and juniors take months to ramp up.",
+  "approach": [
+   "Analysts start from an agent-prepared incident narrative, evidence and recommended next steps, then validate and decide.",
+   "At one customer, junior analysts learned from the agent's visible investigation reasoning.",
+   "Cabinetworks says junior ramp-up fell from months to weeks (vendor-published); Cisco Live reports a dozen-plus new analysts operating at Tier 2 level."
+  ],
+  "who": "Cisco Live, Cabinetworks, Splunk"
+ },
+ {
+  "id": "security-operations-12",
+  "title": "Analyst copilot and chat assistants for queries, log analysis and incident summaries",
+  "grade": "A",
+  "ladder": "assist",
+  "problem": "Analysts take time to gather and read incident information from many sources, and most use AI individually without organisational structure or validation.",
+  "approach": [
+   "A copilot in the XDR portal aggregates incident information and answers natural-language queries; the analyst remains decision-maker and author.",
+   "Microsoft authors associate copilot adoption with a 30.13% lower mean time to resolution after three months (vendor-published).",
+   "SANS reports 79% of SOCs use AI or ML tools but only 36% have built them into a defined workflow (independent)."
+  ],
+  "who": "Microsoft, SANS Institute"
+ },
+ {
+  "id": "security-operations-13",
+  "title": "Agent drafts the investigation report for analyst sign-off",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Analysts write structured reports for technical and non-technical readers after gathering evidence across tools, and report detail can decline with fatigue.",
+  "approach": [
+   "Pan-American Life's agent produces structured reports with MITRE ATT&CK mapping, technical for analysts and plain-language for others.",
+   "Expel's Ruxie writes plain-language incident reports that people review and sign off before they are final.",
+   "CrowdStrike says Pan-American Life's reporting that once took hours now arrives automatically (vendor-published); no figures."
+  ],
+  "who": "Pan-American Life, Expel, CrowdStrike, Elastic"
+ },
+ {
+  "id": "security-operations-14",
+  "title": "AI triage of anomaly signals surfaces an intrusion no single rule flagged",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Separating real signals from daily noise is hard, and rules miss activity that no single alert flags, so false negatives go unseen.",
+  "approach": [
+   "Hugging Face says its anomaly-detection pipeline uses AI triage over security telemetry, and correlating those signals flagged an intrusion.",
+   "Responders handled containment and assessment; alerting was changed so a high-severity signal pages a responder within minutes.",
+   "The disclosure credits AI-assisted detection with surfacing the compromise (self-reported); no figures."
+  ],
+  "who": "Hugging Face"
+ },
+ {
+  "id": "security-operations-15",
+  "title": "AI drafts, translates and scores detection rules, with judge model and review",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Turning each new high-severity vulnerability or threat report into a validated detection rule took research, tuning and peer review, so coverage had to be prioritised.",
+  "approach": [
+   "Amazon's RuleForge scores exploit code, runs parallel rule-generation agents and uses a separate judge model to score each rule.",
+   "A security engineer reviews the best rule; human judgment is the final gate before production.",
+   "Amazon reports rules produced 336% faster and 67% fewer false positives from the judge model (self-reported)."
+  ],
+  "who": "Amazon, Kroll, Google"
+ },
+ {
+  "id": "security-operations-16",
+  "title": "Coding agents validate detections end to end in a lab, then retry",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Rules pass code review but nobody checks that telemetry arrives and the detection fires, and driving labs by hand is slow.",
+  "approach": [
+   "DNB's Cyber Defense Center repurposed coding agents to write attack simulations, detonate them in a lab, query Splunk and rewrite on failure.",
+   "A person reviewed every generated simulation.",
+   "DNB reports most simulations were fit for purpose and the loop surfaced mechanical pipeline issues (self-reported; numbers redacted); piloting."
+  ],
+  "who": "DNB Cyber Defense Center"
+ },
+ {
+  "id": "security-operations-17",
+  "title": "Agent drafts allowlist and rule-change proposals after analyst confirms a false positive",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Alerts keep firing for known-benign patterns until someone writes the suppression.",
+  "approach": [
+   "When an on-call engineer confirms a false positive, Figma's agent opens a draft pull request with an allowlist entry or rule tune.",
+   "Pull requests open as drafts for human review, and the agent responds to reviewer comments.",
+   "Figma says the step from understanding an alert to a fixing pull request 'surprised us most' in time saved (self-reported); no figures."
+  ],
+  "who": "Figma, Elastic"
+ },
+ {
+  "id": "security-operations-18",
+  "title": "SOC teams build their own agents from playbooks in a no-code workspace",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Each SOC has its own playbooks and escalation paths; that knowledge is lost to turnover, and generic automation does not capture it.",
+  "approach": [
+   "Analysts encode playbooks and SOPs into agents in plain language on CrowdStrike's Charlotte AI AgentWorks.",
+   "For each workflow, teams set what is fully automated and what requires approval.",
+   "One analyst reports building the same agent in four minutes versus six to eight hours in Microsoft Copilot (vendor-published)."
+  ],
+  "who": "CrowdStrike, Pan-American Life, Kroll"
+ },
+ {
+  "id": "security-operations-19",
+  "title": "Agents propose containment actions that run only as validated, templated commands",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Blocking, killing a process or isolating a host can cause harm if the agent is wrong or manipulated, including by a single adversarial alert.",
+  "approach": [
+   "Google previews agentic containment pairing agents with fixed playbooks that keep high-impact actions under analyst control.",
+   "A research design confines model output to templated commands behind an argument validator, with human approval or a delay window.",
+   "A stock guardrail proxy raised injection recall from 25.0% to 94.5% at 0.1% false positives (independent)."
+  ],
+  "who": "Google, Valvoline, academic researchers"
+ },
+ {
+  "id": "security-operations-20",
+  "title": "Per-action authority for SOC agents, with activity observable and stoppable",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "AI shortened investigation but not the distance to a safe, verified response, and teams lack a shared way to decide which actions an agent may take alone.",
+  "approach": [
+   "Grant authority one action at a time: the UK NCSC proposes scoring each automation on potency, scope, criticality, rollout confidence and recoverability.",
+   "The accountable owner approves each autonomy level and can widen or withdraw it; agent activity is logged, attributable and stoppable.",
+   "A vendor-run survey found 57% require a human to review every AI decision before an alert is closed (vendor-published)."
+  ],
+  "who": "UK NCSC, SACR, Cisco/Splunk"
+ },
+ {
+  "id": "security-operations-21",
+  "title": "Measuring the SOC's AI: score verdicts, sample closures, replay benchmarks",
+  "grade": "A",
+  "ladder": "assist",
+  "problem": "Vendors give clean accuracy figures on curated alerts, but teams need evidence on their own alerts, especially false negatives.",
+  "approach": [
+   "Record the AI verdict and the analyst's closure reason on every case, and sample AI-closed cases for quality review.",
+   "Before go-live and after each change, test on real alerts or replay benchmarks, and decide autonomy on the results.",
+   "Elastic reports AI-analyst agreement rising from 60% to 92% (self-reported); an independent benchmark found every approach missed at least 40.4% of attacks."
+  ],
+  "who": "Elastic, CyberProof, UnderDefense, academic researchers"
+ },
+ {
+  "id": "security-operations-22",
+  "title": "Managed detection services move to agent-led, human-accountable models",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Alerts are investigated in tiers while attackers move, buyers face a wave of 'AI MDR' products, and regulated buyers must show control over suppliers.",
+  "approach": [
+   "Providers describe specialist and judge agents with a route to human experts when confidence is low; Gartner defines MDR as 'AI-augmented, human-led'.",
+   "Buyers can use the NCSC's list of AI risks as a supplier questionnaire and sign off third-party risk before onboarding.",
+   "Expel reports 14 minutes mean time to remediate on fully automated high and critical incidents (self-reported)."
+  ],
+  "who": "Arctic Wolf, Expel, eSentire, Sophos"
+ },
+ {
+  "id": "security-operations-23",
+  "title": "SOC staffed to build and supervise automation with coding agents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Detection and response need custom automation while teams are small, and manual-triage roles are the smallest, lowest-paid and least automated family in SOC hiring.",
+  "approach": [
+   "Job postings ask detection and response engineers to use AI coding tools and some ask for experience building agentic SOC workflows.",
+   "The analyst tier validates AI output.",
+   "D3 Security's sample of US SOC postings found 247 build-family versus 68 SOC analyst postings (vendor-published)."
+  ],
+  "who": "Expel, Databricks, Robinhood, Cloudflare"
+ },
+ {
+  "id": "security-operations-24",
+  "title": "Idea: defender agents that contain an active attack without a human",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: the field is in awe of models that find vulnerabilities while patching and detection lag, and Hugging Face's attacker was bound by no usage policy.",
+  "approach": [
+   "Idea: guardrailed agents stop an active attack without human intervention; no production deployment was found.",
+   "A DARPA-derived programme planned to deploy red and blue team agents on digital twins of water systems.",
+   "No human checkpoint is defined; no results are published."
+  ],
+  "who": "No named deployment"
+ }
+]

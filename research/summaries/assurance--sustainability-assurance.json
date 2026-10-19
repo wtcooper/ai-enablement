@@ -1,0 +1,178 @@
+[
+ {
+  "id": "assurance-sustainability-assurance-01",
+  "title": "AI mapping of sustainability disclosures to reporting standards, with gap list",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Sustainability information is spread across many report sections and documents, and before testing the team must find each disclosure, map it to requirements and spot missing baselines, targets or methods.",
+  "approach": [
+   "Language-model tools locate relevant passages, classify them against ESRS-type categories and produce a preliminary gap list, not a compliance conclusion.",
+   "Analyst commentary says Deloitte has an AI-powered Omnia ESG tool automating disclosure roadmaps and tracking regulatory requirements.",
+   "No time, accuracy or coverage result is published; the analyst describes what the tool does, not how well (vendor-published).",
+   "The practitioner confirms each AI-identified disclosure is complete and supported by evidence; the engagement leader approves the tool for the engagement."
+  ],
+  "who": "Deloitte (per Verdantix), SSKG Hub prototype"
+ },
+ {
+  "id": "assurance-sustainability-assurance-02",
+  "title": "AI text screening of draft sustainability reports for greenwashing-type claims",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Spotting vague, promotional or unsupported claims across a long sustainability report is slow, and assurance must consider whether information is balanced and not misleading.",
+  "approach": [
+   "Text-analysis models score tone, specificity and whether a claim is backed elsewhere in the report; flags tell the practitioner where to look.",
+   "Analyst commentary says KPMG uses NLP and machine learning to detect potential greenwashing in clients' reports; no result is given.",
+   "A university prototype on 150 DAX-company ESG reports found more specific wording went with stronger internal claim support (Spearman rho 0.310; independent).",
+   "The practitioner investigates each flag and decides whether more procedures are needed; the prototype aims to prioritise review, not classify greenwashing."
+  ],
+  "who": "KPMG (per Verdantix), university prototype"
+ },
+ {
+  "id": "assurance-sustainability-assurance-03",
+  "title": "Idea: analytics over multi-year sustainability data and narrative-versus-number checks",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: unexplained changes, unit inconsistencies, restatements and narrative contradicting numbers are easy to miss when multi-year data arrives in many formats.",
+  "approach": [
+   "Analytics or AI would scan reported data and narrative for unusual swings, missing values, inconsistent units and text contradicting the numbers.",
+   "For example, a sharp emissions fall might reflect a boundary or method change; no result is published.",
+   "The practitioner investigates each flag and decides whether it needs recalculation, source inspection, inquiry or control testing."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-sustainability-assurance-04",
+  "title": "Idea: cross-check emissions and supplier claims against external data",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: much sustainability evidence comes from the entity or suppliers the practitioner cannot reach, leaving no independent source to compare reported claims against.",
+  "approach": [
+   "AI tools would match reported figures with outside data: satellite images for site emissions, emission-factor databases, peer outliers, media and regulatory records.",
+   "Results would target procedures and corroborate evidence, not replace direct evidence.",
+   "The practitioner decides whether an external signal calls for further procedures at the entity or supplier; no result is published."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-sustainability-assurance-05",
+  "title": "Idea: source-linked drafting of evidence matrices and workpaper summaries",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: sustainability engagements generate long reports, policies, datasets and correspondence that must be summarised and documented in the assurance file.",
+  "approach": [
+   "Generative AI would summarise long documents, prepare a preliminary evidence matrix and draft descriptions of procedures.",
+   "Every output would be linked to its source, logged and reviewed by the team.",
+   "A reviewer corrects and source-checks all AI drafts before they enter the file; no result is published."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-sustainability-assurance-06",
+  "title": "Idea: AI-supported risk assessment and planning priorities for sustainability engagements",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea only, not a deployment: ISSA 5000 asks for risk assessment across many topics, sites and value-chain components, and teams have limited time to allocate testing.",
+  "approach": [
+   "AI would highlight high-risk areas, unusual metrics, missing evidence and inconsistent disclosures so the team can prioritise procedures and allocate resources.",
+   "The risk assessment itself remains the practitioner's; each AI signal is evaluated for relevance, materiality and need for more procedures."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-sustainability-assurance-07",
+  "title": "Idea: continuous evaluation of digital sustainability data by automated tools",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "Idea only, not a deployment: annual engagements review data months after the fact, so point-in-time sampling can miss problems in continuous meter or sensor feeds.",
+  "approach": [
+   "Automated tools would run continuously over digital data, evaluate its relevance and reliability, and raise exceptions for the practitioner.",
+   "ISSA 5000 gives this as an example of how the practitioner may use automated tools.",
+   "The literature frames it as a move from retrospective document review to continuous, data-driven assurance.",
+   "The practitioner evaluates the relevance and reliability of the information and the tool's operation."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-sustainability-assurance-08",
+  "title": "Reporting-team AI that checks disclosures against standards and drafts narrative",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reporting teams compare long standards with existing content line by line, gaps that surface late can force new data under deadline, and they want drafts quickly but fear unsupported statements.",
+  "approach": [
+   "Workiva's Sustainability Disclosure Agent marks each ESRS or ISSB requirement present, partial or missing in a scorecard and drafts a first version.",
+   "Workiva presents it as supporting expert judgement; the team keeps sign-off.",
+   "Preparers also use AI to draft narrative; vendors say it is valuable only if tied to verified data and human review.",
+   "No time, accuracy or usage figure is published; the team reviews the scorecard and draft before they enter the report."
+  ],
+  "who": "Workiva"
+ },
+ {
+  "id": "assurance-sustainability-assurance-09",
+  "title": "Automated supplier data ingestion and spend-based Scope 3 classification with calculation lineage",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Scope 3 data arrives from hundreds of suppliers as PDFs, spreadsheets and inconsistent questionnaires, reconciling it takes weeks each cycle, and numbers without a traceable source are hard to verify.",
+  "approach": [
+   "OCR extracts data from bills and supplier documents, agents standardise units and remove duplicates, and models map procurement lines to emissions categories.",
+   "Each output is meant to trace to its source, emission factor and approval history, which assurance providers need.",
+   "Vendor reports 90% less OCR data entry time and 65-80% less time to actionable data (vendor-published).",
+   "Vendor says Smiths Group completed its SB 261 report in two days (vendor-published); humans review outputs before use in disclosures."
+  ],
+  "who": "Watershed, Smiths Group, Harris Farm Markets"
+ },
+ {
+  "id": "assurance-sustainability-assurance-10",
+  "title": "AI gap-filling and estimates for missing or value-chain sustainability data (preparer side)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Value-chain data is often unavailable or unreliable; reporting rules allow estimates, and the assurance provider must evaluate the data, methods and assumptions behind them.",
+  "approach": [
+   "Tools flag data gaps and propose gap-fill methods such as proxy data, sector averages and estimation models, recording the assumption and rationale.",
+   "The vendor argues this record reduces friction with auditors; no result is published (vendor-published).",
+   "The practitioner considers assumptions, method changes and comparability, and whether assumptions fit external evidence and are free of management bias."
+  ],
+  "who": "Watershed (vendor), ACCA"
+ },
+ {
+  "id": "assurance-sustainability-assurance-11",
+  "title": "PwC Germany AI tool for clients' EU sustainability data and reports (CSRD)",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "CSRD reporters must gather thousands of data points across the value chain and calculate many KPIs, and manual handling is slow and error-prone.",
+  "approach": [
+   "PwC Germany's CSRD.AI Manager, built with SAP, extracts, organises and analyses data, calculates KPIs and speeds up report generation for clients.",
+   "It uses the firm's CSRD content and customisable data models, on SAP AI Core, HANA Cloud and Datasphere.",
+   "A PwC product owner says it removed a heavy resource drain for clients; no figure is given (self-reported).",
+   "The firm evaluates threats and safeguards before accepting a non-assurance service for an assurance client."
+  ],
+  "who": "PwC Germany, SAP"
+ },
+ {
+  "id": "assurance-sustainability-assurance-12",
+  "title": "AI-assisted double materiality assessment by preparers, and assurance over that process",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "The materiality assessment decides what is reported; it is large, judgement-heavy and a frequent source of assurance findings, and the practitioner must consider the entity's process to identify reportable information.",
+  "approach": [
+   "Survey respondents name AI in materiality assessments a primary use case and an investment priority for the next three years (independent).",
+   "It was less popular than in the previous year's study, with some sign practitioners think the technology is not yet mature.",
+   "No time or quality figure is given.",
+   "The assurance provider must still understand and test the entity's process, whatever tool supports it."
+  ],
+  "who": "Thomson Reuters Institute survey"
+ },
+ {
+  "id": "assurance-sustainability-assurance-13",
+  "title": "Idea: assurance procedures over a client's AI-assisted sustainability reporting pipeline",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea only, not a deployment: as preparers draft and calculate with AI, the practitioner must obtain evidence about information from systems the team cannot easily inspect.",
+  "approach": [
+   "Teams would extend their view of the client's information system to AI-assisted steps: tool, data, prompts, validation and route into the report.",
+   "A vendor suggests asking for traceability and a dry run of AI-generated reports with the auditor.",
+   "A sector site says assurance providers are developing methods for assessing AI-generated disclosures; no method is described.",
+   "The practitioner evaluates the reliability of information used as evidence, including whether its integrity was maintained through processing."
+  ],
+  "who": "No named deployment"
+ }
+]

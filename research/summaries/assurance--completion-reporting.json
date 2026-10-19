@@ -1,0 +1,237 @@
+[
+ {
+  "id": "assurance-completion-reporting-01",
+  "title": "AI first pass of the disclosure checklist, with cited answers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Disclosure checklists run to hundreds of questions that reviewers answer by hand against the client's statements, typically taking several hours per engagement, and missed disclosures can become inspection findings.",
+  "approach": [
+   "The tool reads the draft statements, works through each requirement, proposes a cited answer with rationale, and flags questions it cannot support.",
+   "The auditor accepts, edits or rejects each suggestion; Caseware says only approved answers are written to the engagement file.",
+   "Caseware beta firms saved 2.7 hours per checklist run on average (vendor-published); Thomson Reuters reports about 30% uptake among eligible customers (vendor-published)."
+  ],
+  "who": "Caseware, Thomson Reuters, Ideagen, DataSnipper"
+ },
+ {
+  "id": "assurance-completion-reporting-02",
+  "title": "Disclosure-checklist and statement analysis built into Big Four audit platforms",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Auditors must complete required disclosure checklists, evaluate compliance with disclosure requirements and review draft statements before sign-off.",
+  "approach": [
+   "KPMG announced in April 2025 a Financial Report Analyzer in KPMG Clara whose output helps auditors complete disclosure checklists.",
+   "Deloitte announced in June 2026 Omnia agents that include evaluating disclosure compliance; PwC said it plans statement review and tie-out tools.",
+   "Auditors complete the checklists and make the decisions; preliminary conclusions go to professionals to review. No outcomes published (self-reported)."
+  ],
+  "who": "KPMG, Deloitte, PwC"
+ },
+ {
+  "id": "assurance-completion-reporting-03",
+  "title": "AI second look at a completed checklist, flagging answers that differ",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Long checklists cause reviewer fatigue and firms roll last year's checklist forward; Caseware's beta found completed checklists with answers that were wrong because a requirement was misread.",
+  "approach": [
+   "The tool runs against the auditor's own answers and flags where its reading of a requirement differs, so effort goes to disagreements.",
+   "Caseware reports beta firms also used its agent as a quality check on checklists already completed.",
+   "In one beta case it surfaced questions answered incorrectly through misinterpretation (vendor-published); the auditor resolves each flagged divergence."
+  ],
+  "who": "Thomson Reuters, Caseware"
+ },
+ {
+  "id": "assurance-completion-reporting-04",
+  "title": "AI proposes 'No' and 'Not applicable' answers on disclosure requirements",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Conditional requirements such as 'if material' need professional judgment, so they lean on experienced staff and limit how much juniors can do.",
+  "approach": [
+   "Thomson Reuters says future Disclosure Review will extend to harder calls like 'No' and 'Not applicable'; no release date given.",
+   "Ideagen's tool already marks items it cannot find as No for the user to review.",
+   "Human checkpoint for the future feature is not specified; today a senior or manager decides applicability and materiality. No outcomes published (vendor-published)."
+  ],
+  "who": "Thomson Reuters, Ideagen"
+ },
+ {
+  "id": "assurance-completion-reporting-05",
+  "title": "AI review of management reports against statutory disclosure rules (German Big 4)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Auditing the management report has relied on a manual, checklist-based approach; reading front-section text for inconsistencies with the statements is tedious, and late edits break cross-references.",
+  "approach": [
+   "A task-specific AI system at a German Big 4 firm links report passages to statutory requirements, checks calculations and highlights version changes.",
+   "Auditors review and document suggestions passage by passage, with dual-control review; the tool does not replace professional judgement.",
+   "Surveyed auditors judged it improved effectiveness and efficiency, more for standard tasks than complex ones; perception, not a measured error rate (independent)."
+  ],
+  "who": "A German Big 4 firm (unnamed)"
+ },
+ {
+  "id": "assurance-completion-reporting-06",
+  "title": "Automated checking and tie-out of draft financial statements, re-checking only changes",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "HLB Mann Judd Perth reviews over 300 sets of financial statements a year, about 1,200 hours on first-draft reviews alone; its earlier Excel add-in crashed and lost review marks.",
+  "approach": [
+   "Caseware Validate runs thousands of checks in seconds and carries earlier checks forward, so later drafts need only the changes re-checked.",
+   "HLB Mann Judd Perth reports about 600 hours saved a year; MHA's trial cut casting from 25 to 12 minutes (vendor-published).",
+   "Managers and seniors review the output, focusing on key risks and disclosure completeness; preparers or reviewers clear each exception before issue."
+  ],
+  "who": "HLB Mann Judd Perth, MHA, Caseware, Suralink"
+ },
+ {
+  "id": "assurance-completion-reporting-07",
+  "title": "Agents draft financial statements and keep re-validating them (Fieldguide Field Financials)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fieldguide says preparing financial statements has needed a fragmented mix of reports and spreadsheets.",
+  "approach": [
+   "Fieldguide announced three agents: one drafts a rolled-forward first draft from the prior-year report and current trial balance data.",
+   "A second validates continuously and flags stale overrides when adjustments change; a third rolls forward footnote language and fills schedule-driven disclosures.",
+   "Practitioners stay in the reviewer's seat, per Fieldguide's CEO; how review is recorded is not described. No outcomes published (vendor-published)."
+  ],
+  "who": "Fieldguide"
+ },
+ {
+  "id": "assurance-completion-reporting-08",
+  "title": "Engagement-file review assistant tracking open issues and sign-off readiness",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Manual file review re-performs work by hand, and PCAOB staff found inspected firms with at least one engagement quality review deficiency rose from 37% in 2020 to 42% in 2022.",
+  "approach": [
+   "Caseware announced cross-file risk checks, unresolved-issue tracking and review pack generation for managers, and earlier sign-off visibility for partners (vendor-published).",
+   "In a Caseware scenario a reviewer asks if the team missed anything; the tool surfaces a variance against board minutes.",
+   "Fieldguide lists a reviewer agent rolling out later in 2026. The reviewer decides what holds and what goes back."
+  ],
+  "who": "Caseware, Fieldguide"
+ },
+ {
+  "id": "assurance-completion-reporting-09",
+  "title": "Tool analyses audit committee communications to surface issues earlier (PwC)",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "IFIAR's 2025 survey found audit committee communications findings in 79 of 725 inspected audits, against 24 of 593 in 2024; PwC wants such issues handled sooner in audit preparation.",
+  "approach": [
+   "In October 2026 PwC's US assurance leader said another tool analyses audit committee communications for 2026 year-end audits to surface issues sooner.",
+   "The source does not say which communications the tool reads or who uses its output; no human checkpoint is described.",
+   "No outcomes published (self-reported)."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "assurance-completion-reporting-10",
+  "title": "Predictive or language model gives auditors a going-concern signal (BDO Netherlands)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Going-concern assessment is a matter of significant judgment, and traditional machine-learning bankruptcy models struggle with complex, unstructured data.",
+  "approach": [
+   "In Spain an audit firm used a decision tree as a supplemental guide and compared its suggestions with the auditors' reports.",
+   "In the Netherlands a language model combined financial data with audit-report text to predict bankruptcy within two years, shown to BDO accountants.",
+   "On 20 case studies, accuracy was model 85%, control group 77%, LLM-assisted group 78%, with no speed difference (independent).",
+   "The accountant makes the going-concern call; the prediction and summary are inputs."
+  ],
+  "who": "BDO Netherlands, a Spanish audit firm"
+ },
+ {
+  "id": "assurance-completion-reporting-11",
+  "title": "Idea: tools stress-test management's going-concern assessment and its data",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: the revised going-concern standard strengthens the auditor's evaluation of management's assessment and takes effect for periods beginning on or after 15 December 2026.",
+  "approach": [
+   "The standard's application material says automated tools may help with sensitivity analysis, such as discount or growth rates, on management's assessment.",
+   "They may also help evaluate the reliability of large volumes of data from several sources used by management.",
+   "The auditor evaluates management's method, assumptions and data. No outcomes published (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-completion-reporting-12",
+  "title": "Idea: AI proposes key audit matters for comparison with the team's",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: auditors choose key audit matters from significant matters discussed with governance, a professional judgment, and views differ on how useful disclosures are.",
+  "approach": [
+   "A 2026 University of Genoa thesis tested a language model identifying key audit matters from the annual report alone, then compared them.",
+   "A 2024 seminar abstract reports AI predicted approximately 37% of auditor-reported critical audit matters (independent).",
+   "The auditor decides which matters qualify; the thesis concludes AI can support the process without replacing professional judgement."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-completion-reporting-13",
+  "title": "Generative AI drafts audit memos and documentation for professional review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "AI-drafted audit text can be fluent and wrong; Big4News reports EY Canada withdrew a research report with 16 of 27 references hallucinated, though not an audit document.",
+  "approach": [
+   "PCAOB staff reported in July 2024 that some firms let staff use generative AI for initial drafts of audit memos and presentations.",
+   "Deloitte's June 2026 announcement lists drafting documentation and developing preliminary conclusions among its Omnia agent examples.",
+   "Professionals review the agents' conclusions; the team member stays responsible. A named person checking each cited source is only an idea."
+  ],
+  "who": "Deloitte, firms named by PCAOB staff"
+ },
+ {
+  "id": "assurance-completion-reporting-14",
+  "title": "ChatGPT used across audit preparation, fieldwork and reporting in internal audit (Uniper)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Internal audit teams draft engagement reports and related documents as part of every audit.",
+  "approach": [
+   "Uniper's internal audit function uses ChatGPT in audit preparation, fieldwork and audit reporting tasks.",
+   "The function estimates efficiency gains of 50 to 80 percent from initial tests across various processes, including reporting (self-reported estimate).",
+   "The authors also report the key risks, challenges, and rules Uniper adopted. Human checkpoints are not described in the abstract."
+  ],
+  "who": "Uniper internal audit"
+ },
+ {
+  "id": "assurance-completion-reporting-15",
+  "title": "Idea: a language model reviews financial statements for errors against accounting standards",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: researchers say manual financial statement auditing is inefficient and error-prone, and auditors still miss errors despite extensive verification.",
+  "approach": [
+   "One benchmark maps errors to violated standards; models found errors given transaction data but were weak at citing standards and completing audits.",
+   "A separate unsupervised method flags likely misinformation using past statements and audit reports, demonstrated on 11,460 financial statements over 5 years (independent).",
+   "The auditor explores flagged data sources and business processes to validate suggestions."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-completion-reporting-16",
+  "title": "Idea: a language model checks XBRL tagging and cross-document consistency",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "This is an idea, not a deployment: tagging errors in filed statements, such as sign flips and unneeded custom tags, still draw SEC comments; auditors do not attest the tagging.",
+  "approach": [
+   "The FinAuditing benchmark of 1,102 real-filing instances tests whether language models can match concepts, extract taxonomy relations and reason across documents.",
+   "Thirteen models showed substantial gaps in concept retrieval, relation modelling and consistent cross-document reasoning (independent).",
+   "A named reviewer owns the tagging review."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-completion-reporting-17",
+  "title": "Idea: a reviewing agent checks the preparing agent's work before humans sign",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "This is an idea, not a deployment: as agents prepare more of the file, human review becomes the bottleneck and the main control.",
+  "approach": [
+   "The AICPA practice aid says one AI tool may help the auditor evaluate another, without reducing supervision and review duties.",
+   "The UK Financial Reporting Council guidance says reviews may be done by humans, other language models or rules-based protocols.",
+   "The human reviewer and partner still sign. No outcomes published (independent)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-completion-reporting-18",
+  "title": "Idea: an agent completes and reviews staff-level workpapers across the engagement file",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "This is an idea, not a deployment: preparing workpapers consumes staff time before review, and limited access to proprietary audit data has constrained measuring where agents can be relied on.",
+  "approach": [
+   "FinancialAuditBench sets 90 workpaper completion and review tasks across six synthetic engagements and evaluates eleven frontier models.",
+   "Agents completed substantial portions of staff-level tasks well but sometimes performed inappropriate procedures or produced incorrect documentation (independent).",
+   "Caseware has a Document Intelligence Agent in closed beta. Professional review remains necessary where agents are not reliable."
+  ],
+  "who": "No named deployment"
+ }
+]

@@ -1,0 +1,288 @@
+[
+ {
+  "id": "tax-indirect-tax-01",
+  "title": "AI-proposed product tax codes with confidence scores, reviewed by a person",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Mapping thousands of products to the right tax code by hand is slow and inconsistent, and wrong mappings produce wrong tax that is hard to defend in an audit.",
+  "approach": [
+   "A model proposes a tax code with a confidence score; Vertex, Thomson Reuters, Sovos and Avalara offer this; Dell trained small models.",
+   "Vertex's CEO says categorisation fell from over a minute and a half to seconds per product (vendor-published).",
+   "A person confirms or overrides each suggested code; low-confidence suggestions are reviewed or sent back for more product detail."
+  ],
+  "who": "Vertex, Thomson Reuters, Sovos, Avalara, Dell"
+ },
+ {
+  "id": "tax-indirect-tax-02",
+  "title": "Agent-prepared sales tax and VAT returns, filed only after human approval",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "US sales tax reporting spans more than 19,000 jurisdictions, and 71% of surveyed indirect tax teams have not fully automated a single workflow end to end.",
+  "approach": [
+   "Agents ingest transaction data, validate it, map it to returns and present them for approval; Thomson Reuters, Avalara and Deloitte describe this.",
+   "Thomson Reuters states routine reporting time falls by up to 65% and compliance cycles from 30 days to 11 (vendor-published).",
+   "Final review and approval come before filing, and agents notify a person for novel situations."
+  ],
+  "who": "Thomson Reuters, Avalara, Deloitte"
+ },
+ {
+  "id": "tax-indirect-tax-03",
+  "title": "AI validation and routing of exemption certificates as they arrive",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Exemption and resale certificates are among the most manual areas of compliance, and certificate errors can lead to audit exposure and penalties.",
+  "approach": [
+   "Avalara says its Exemption Certificate Management ingests, classifies, validates and routes certificates with document processing, spots missing fields and flags errors.",
+   "Avalara says AI review is faster and more accurate than manual review; no figure is published (vendor-published).",
+   "Flagged or failed certificates route to a person; Avalara says agents ask a human for novel situations."
+  ],
+  "who": "Avalara"
+ },
+ {
+  "id": "tax-indirect-tax-04",
+  "title": "Re-checking every exemption certificate already on file",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Certificates are collected, stored and checked by hand, so invalid or expired certificates stay undiscovered until an audit.",
+  "approach": [
+   "Document intelligence extracts and validates every certificate on file; Avalara describes agents that cross-check certificates against authoritative registries.",
+   "Numeral reports that 30% to 40% of certificates moved onto its platform fail validation (vendor-published).",
+   "The source does not describe the review step for certificates; Avalara says human approval checkpoints exist across its agent platform."
+  ],
+  "who": "Numeral, Avalara"
+ },
+ {
+  "id": "tax-indirect-tax-05",
+  "title": "Grounded taxability and regulatory Q&A assistant inside the tax platform",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Staff spend time finding taxability answers across jurisdictions, and a general chatbot can be confidently wrong, as in one Avalara example of a wrong local rate.",
+  "approach": [
+   "Platform assistants answer from a curated knowledge base: Sovos's Ask Sovi, Avalara Aviator and Vertex Copilot.",
+   "A beta customer at Singer Equipment Company says Aviator surfaces considerations she might have missed; no figures published (vendor-published).",
+   "The user decides what to do with an answer; Sovos plans guided, human-approved actions."
+  ],
+  "who": "Sovos, Avalara, Vertex, Singer Equipment Company"
+ },
+ {
+  "id": "tax-indirect-tax-06",
+  "title": "VAT place-of-supply assistant grounded in law, answers verified by a tax adviser",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Clients describe VAT cases in free-text emails, and advisers must determine the place of supply and justify it from statute, where errors carry significant financial consequences.",
+  "approach": [
+   "A language model retrieves passages of Austrian and EU VAT law and returns a place-of-supply decision citing its legal sources.",
+   "On textbook cases retrieval scored 93.24% against 68.92% for the plain model; on 20 real inquiries it got 16 right (independent research).",
+   "A tax adviser checks every cited paragraph and approves the analysis before it reaches the client."
+  ],
+  "who": "Austrian university researchers"
+ },
+ {
+  "id": "tax-indirect-tax-07",
+  "title": "Plain-language drafting of tax-engine rules, simulated on past transactions first",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Configuring custom tax rules in a tax engine needs specialist knowledge of the product and the law, and changes can conflict with other rules.",
+  "approach": [
+   "Avalara's agent drafts a rule from a plain-language request, simulates it on past transactions and flags conflicts; Vertex showed similar plain-language configuration.",
+   "Avalara claims Aviator turns days of manual work into minutes of oversight (vendor-published).",
+   "The customer reviews and approves the drafted rule before the agent activates it."
+  ],
+  "who": "Avalara, Vertex"
+ },
+ {
+  "id": "tax-indirect-tax-08",
+  "title": "E-invoice rejection diagnosis, with corrections made after a user approves",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Under clearance e-invoicing an invoice has no legal force until the authority accepts it, so a wrong VAT ID or malformed schema means rejection and stalled goods and payment.",
+  "approach": [
+   "Sovos's Sovi AI diagnoses root causes of compliance errors, proposes fixes and executes them once a user approves, logging each action.",
+   "Thomson Reuters demonstrated AI exception handling in ONESOURCE; Sovos reports a 1.6% rejection rate in French production, not credited to AI (vendor-published).",
+   "A user approves each proposed correction before it executes, and tax reviews recurring root causes."
+  ],
+  "who": "Sovos, Thomson Reuters"
+ },
+ {
+  "id": "tax-indirect-tax-09",
+  "title": "Continuous regulatory-change monitoring with alerts linked to primary sources",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Monitoring often relies on one person watching a few countries and forwarded newsletters, so rule changes frequently surface only at filing time.",
+  "approach": [
+   "Fonoa Knowledge monitors centrally, filtered to the company's jurisdictions, with each alert linked to the primary source and a confidence score.",
+   "Sovos assesses how rule changes affect each customer's configuration; Avalara's research agents summarise primary sources with citations. No outcome figures are published.",
+   "Fonoa says deciding whether a change applies to the business may need a human's deterministic application."
+  ],
+  "who": "Fonoa, Sovos, Avalara, Thomson Reuters"
+ },
+ {
+  "id": "tax-indirect-tax-10",
+  "title": "AI extraction of invoice and expense data for VAT recovery and e-invoicing",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Fragmented travel, expense and payables data must be cleansed and enriched before eligible input VAT can be recovered, and e-invoicing regimes need accurate onboarding and data extraction.",
+  "approach": [
+   "Blue dot's platform extracts, cleanses and validates invoice and expense data; Sovos bought it in September 2026 and plans to embed it.",
+   "Vertex bought AI e-invoicing start-up Brinta in Q1 2026; Sovos says Blue dot has shown accuracy above 98% (vendor-published).",
+   "The sources do not describe the human review step."
+  ],
+  "who": "Sovos, Blue dot, Vertex, Avalara"
+ },
+ {
+  "id": "tax-indirect-tax-11",
+  "title": "Pre-filing anomaly detection and exception triage across invoice and tax data",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Misapplied rates, address mismatches and unusual swings in tax amounts need catching before filing, but manual review samples only a small share of transactions.",
+  "approach": [
+   "Models flag outliers in tax data before filing and route exceptions to reviewers; Thomson Reuters, Sovos and Fonoa describe this.",
+   "Thomson Reuters says some indirect tax teams use AI to triage invoice exceptions; no outcome figures are published (vendor-published).",
+   "Flagged items go to review, and a tax manager verifies flags against known rules."
+  ],
+  "who": "Thomson Reuters, Sovos, Fonoa, Saffery"
+ },
+ {
+  "id": "tax-indirect-tax-12",
+  "title": "Idea: validate and repair tax-relevant master and transaction data at entry",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: most indirect-tax errors start upstream in missing fields and inconsistent configuration, and only 23% of surveyed multinationals say their ERP is fit for purpose.",
+  "approach": [
+   "Practitioners discuss agents near master-data setup and payables flows that extract, enrich and validate data as transactions occur, not at return time.",
+   "In KPMG's survey about 49% said improving data quality will be their primary AI use case, an intention (independent survey).",
+   "AI surfaces results for human review where judgment is required, and the tax team approves rule changes."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-indirect-tax-13",
+  "title": "Nexus monitoring, nexus questions and registration agents",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Companies cross economic-nexus thresholds or start selling into new countries without registering in time, and registration is paper-heavy and multi-authority.",
+  "approach": [
+   "Avalara registration agents prepare and file registration documents and track them to signed storage; Numeral supports nexus monitoring and registrations.",
+   "Numeral states customers can cut time on filings and registrations by up to 80% (vendor-published).",
+   "Avalara states human review checkpoints at every stage, and Deloitte's agent flags patterns for tax professionals to consider."
+  ],
+  "who": "Avalara, Numeral, Deloitte"
+ },
+ {
+  "id": "tax-indirect-tax-14",
+  "title": "Intake, data extraction and routing of tax-authority notices",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Tax-authority notices arrive in many forms and jurisdictions and must be received, classified, routed and tracked to deadlines.",
+  "approach": [
+   "Avalara describes notice-management agents that automate receipt, classification, routing and tracking of notices across jurisdictions.",
+   "Seminar attendees described using image-to-text AI to pull structured data out of state tax notices. No outcome figures are published.",
+   "Avalara states review and approval checkpoints at every stage; notice-specific checkpoints are not described."
+  ],
+  "who": "Avalara, TEI seminar attendees"
+ },
+ {
+  "id": "tax-indirect-tax-15",
+  "title": "Audit-ready decision records for AI-assisted tax determinations, overrides and filings",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "In one survey, 57.4% of indirect tax leaders would not be confident defending AI-assisted decisions to a tax authority, and few run formal documented sign-off.",
+  "approach": [
+   "Log each AI-assisted determination, override and approval with rule version, inputs, rationale and reviewer; Fonoa, Thomson Reuters, Sovos and Avalara describe this.",
+   "Fonoa's survey found organisations with formal human-in-the-loop governance were more than twice as likely to be confident (vendor-published).",
+   "A named human owns each AI-supported decision; tax professionals answer the authority while agents prepare documentation."
+  ],
+  "who": "Fonoa, Deloitte, Thomson Reuters, Sovos, Avalara"
+ },
+ {
+  "id": "tax-indirect-tax-16",
+  "title": "Tax engines callable by customers' own AI agents through standard protocols",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Tax calculation, classification, registration and filing sit inside tax applications, but compliance work may now start in an ERP, a finance system or an AI agent.",
+  "approach": [
+   "Avalara described MCP servers letting customers' agents validate taxes and start registrations; Sovos is developing a governed gateway; Vertex builds ERP agents.",
+   "Avalara says its Versori unit builds connectors in days rather than months (vendor-published).",
+   "Avalara says agents notify a human for novel situations and decisions that affect the compliance footprint."
+  ],
+  "who": "Avalara, Sovos, Vertex, Taxually"
+ },
+ {
+  "id": "tax-indirect-tax-17",
+  "title": "Tax calculation and holiday rules when an AI agent checks out",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "When an AI agent completes a purchase there may be no human at checkout, so who must collect tax is unclear, and tax holidays need exact timing and category rules.",
+  "approach": [
+   "Keep tax calculation in the merchant's existing tax engine, called from the agent's checkout; the Sales Tax Institute says Shopify did this.",
+   "Make holiday rules machine-readable and give agents correct catalogue data; no outcome figures are published (independent).",
+   "Controls move to the tax engine and data, and tax and e-commerce teams confirm configuration before peak events."
+  ],
+  "who": "Sales Tax Institute, Shopify, Stripe (commentary)"
+ },
+ {
+  "id": "tax-indirect-tax-18",
+  "title": "Finance agents that embed VAT and e-invoicing rules in payables and invoicing",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Companies bolting separate finance and tax applications onto ERPs face integration and governance burdens, while authorities require real-time clearance against local rules.",
+  "approach": [
+   "Sovos bought Flowie on 1 October 2026; its agents run payables, procure-to-pay and invoicing on an ERP using Sovos's regulatory data.",
+   "Sovos cites an EY figure of up to 40% for agentic finance implementations; the EY source was not opened (vendor-published).",
+   "Human checkpoints are not described in the release."
+  ],
+  "who": "Sovos, Flowie"
+ },
+ {
+  "id": "tax-indirect-tax-19",
+  "title": "AI-enabled managed sales tax and VAT compliance delivered as a service",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Software, distribution and manufacturing companies face changing multi-state and multi-country tax obligations and want them handled without adding manual work.",
+  "approach": [
+   "Providers such as Numeral run the lifecycle (nexus, registration, filing, certificates) on an AI-native platform covering VAT/GST in more than 90 countries.",
+   "Numeral reports transaction volume growth of 327% year over year and Taxually reports client growth of almost 40% (vendor-published).",
+   "Complex issues go to tax experts at the provider."
+  ],
+  "who": "Numeral, Taxually"
+ },
+ {
+  "id": "tax-indirect-tax-20",
+  "title": "General-purpose AI for first-pass analysis and month-end summaries in an approved workspace",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "An in-house indirect tax manager owns compliance in several countries, and 60.8% of surveyed organisations rely mainly on individuals using public AI tools without governance.",
+  "approach": [
+   "A Plusgrade job posting says AI handles first-pass recurring data analysis and month-end tax summaries so the manager focuses on judgment (self-reported).",
+   "The recommendation is to provide approved, grounded tools with logging and a use policy; no outcome figures are published.",
+   "The Tax Manager owns the final call, and a reviewer checks AI research output against primary sources."
+  ],
+  "who": "Plusgrade"
+ },
+ {
+  "id": "tax-indirect-tax-21",
+  "title": "Idea: ongoing indirect-tax exposure, accrual and scenario analysis by agents",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: indirect-tax teams answer ad hoc questions about supply-chain changes and pricing, and book conservative accruals because of data gaps.",
+  "approach": [
+   "Practitioners suggest agents run ongoing scenario analysis, give a view of exposures that may reduce over-accruals, and flag transactions creating unmanaged exposure.",
+   "Thomson Reuters Institute adds forecasting VAT cash flows and quantifying audit exposure by country, product and customer segment.",
+   "Agents provide structured input for tax professionals to consider."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-indirect-tax-22",
+  "title": "Idea: a rule engine checks each step of AI-agent VAT determination",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "This is an idea: model agents that classify, rate and apply reverse charge can fail silently, and in one study 20-30% of real-world VAT analyses were wrong.",
+  "approach": [
+   "Split VAT determination into auditable steps, let model agents handle language and lookup, and check every step against a deterministic rule engine.",
+   "In a preprint pilot on synthetic cases, a tuned single agent scored 0.755 accuracy and the best orchestrated set-up 0.830 (independent research).",
+   "A tax expert approves outputs the rule engine cannot confirm, and rule-set changes are reviewed."
+  ],
+  "who": "No named deployment"
+ }
+]

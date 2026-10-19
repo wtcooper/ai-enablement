@@ -1,0 +1,337 @@
+[
+ {
+  "id": "assurance-assurance-over-ai-01",
+  "title": "Idea: inventory the entity's AI and scope it to financial-reporting controls",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea only, not a deployment: entities adopt AI through embedded features, vendor tools and unsanctioned 'shadow AI', so auditors cannot tell which AI touches financial reporting.",
+  "approach": [
+   "A living inventory gives each use case an owner and criticality, then maps it to financial-reporting processes, assertions and key controls.",
+   "BDO starts the IT audit with the entity's AI use cases, related systems and service providers, and the governance around them.",
+   "The AICPA practice aid asks auditors to establish early how far the entity relies on AI and what new risks arise.",
+   "Management signs off ownership and criticality per use case; the engagement partner judges whether AI use affects financial reporting."
+  ],
+  "who": "COSO, BDO, AICPA, EY"
+ },
+ {
+  "id": "assurance-assurance-over-ai-02",
+  "title": "Classify AI-enabled controls by reliance to set evidence standards and IT scope",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Some AI-assisted controls are re-performed by a person, others accepted on AI output alone, yet both are called AI controls; treating them alike makes evidence demands too heavy or light.",
+  "approach": [
+   "COSO defines reliance as management depending on AI-generated outputs as evidence for a control's design or operating effectiveness.",
+   "Where reliance exists, COSO expects full financial-reporting control evidence, including prompt, configuration and model version; non-reliance may need less.",
+   "BDO applies the test to IT general controls scoping, saying they matter significantly more under reliance.",
+   "A vendor sorts controls into three classes: AI decides and executes, AI flags and a human decides, AI supplements a key control."
+  ],
+  "who": "COSO, BDO, a finance-technology vendor"
+ },
+ {
+  "id": "assurance-assurance-over-ai-03",
+  "title": "Extend IT controls to AI and choose how to test AI-operated controls",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "IT general controls testing was built around applications and databases; AI adds models, data pipelines and agents that can act on ERP systems.",
+  "approach": [
+   "BDO keeps the four IT control domains and extends them to in-scope AI components, scoped by degree of reliance.",
+   "As reported, the AICPA aid says auditors may test AI outputs substantively or test controls, but cannot rely on control tests alone.",
+   "KPMG says SOX programmes still mostly test around the AI and forecasts the first wave of AI-related material weaknesses in 2027 (self-reported).",
+   "An IT audit specialist scopes components per use case; the human reviewer must have the knowledge to judge AI reliability."
+  ],
+  "who": "BDO, AICPA, KPMG, COSO"
+ },
+ {
+  "id": "assurance-assurance-over-ai-04",
+  "title": "Evidence trail for each AI-touched control: prompts, model versions, agent action records",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "A control relying on probabilistic GenAI output cannot be evidenced by the output alone, and agents that trigger side effects need trustworthy records to reconstruct behaviour.",
+  "approach": [
+   "Retain prompts, system prompts and configurations with version history, plus retained inputs, outputs, model versions and human-review records.",
+   "For significant-impact GenAI processes, COSO says an AI 'bill of materials' should hold logs of prompts, outputs, model version, parameters and plugins.",
+   "The 'Auditable Agents' paper proposes an Auditability Card; its tamper-evident records added little runtime cost, 8.3 ms, in feasibility tests (independent).",
+   "A named reviewer documents what the AI concluded and why they agreed or disagreed; responsibility attribution ties agent actions to accountable people."
+  ],
+  "who": "COSO, Baker Tilly, Auditable Agents authors"
+ },
+ {
+  "id": "assurance-assurance-over-ai-05",
+  "title": "Idea: use management's AI monitoring metrics and remediation logs as control evidence",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: point-in-time testing misses gradual model drift and vendor-driven changes, and Deloitte says 'set-and-forget' does not work for GenAI in financial reporting.",
+  "approach": [
+   "COSO expects continuous monitoring of accuracy, coverage, latency and exception volumes, plus a remediation log of issue, root cause and follow-up.",
+   "Deloitte lists transaction volume, size and override percentages as drift indicators with root-cause review of prompts, retrieval and vendor changes.",
+   "COSO says its illustrative metrics serve both operational monitoring and audit evidence; no result is published.",
+   "Control owners review drift alerts and root causes and sign off tolerance changes; material deficiencies escalate to governance bodies."
+  ],
+  "who": "COSO, Deloitte"
+ },
+ {
+  "id": "assurance-assurance-over-ai-06",
+  "title": "Idea: re-perform AI-operated control outputs with independent test populations or challenger models",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: an auditor cannot inspect a probabilistic model's reasoning, and less insight into how an output was produced makes comfort harder.",
+  "approach": [
+   "COSO lists methods the assurance community now discusses: human review from full re-performance to risk-based sampling, and performance testing on test populations.",
+   "It also lists multi-model validation comparing outputs across independent AI models or deterministic benchmark algorithms, drift analytics and third-party validation.",
+   "KPMG's summary of the COSO roadmap lists these as evolving approaches; no result is published.",
+   "Human reviewers handle disagreements between the model and the challenger."
+  ],
+  "who": "COSO, KPMG"
+ },
+ {
+  "id": "assurance-assurance-over-ai-07",
+  "title": "Idea: evidence over vendor-supplied AI via service-auditor reports and AI-specific representations",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea only, not a deployment: with a service organisation's AI, user auditors' procedures may be limited, and vendor GenAI limits visibility into training data and model updates.",
+  "approach": [
+   "The AICPA aid, as reported, says a service auditor's report often becomes important audit evidence.",
+   "If it is not sufficient, extra procedures may include AI-related management representations, such as identifying the AI the entity uses.",
+   "It also asks whether the entity has a process to identify AI used by vendors and evaluate the effect on financial reporting.",
+   "The user auditor evaluates whether the service-auditor report covers the relevant AI controls."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-assurance-over-ai-08",
+  "title": "Idea: extend fraud-risk assessment to AI manipulation and AI-generated evidence",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea only, not a deployment: COSO says AI creates new routes for fraud, such as deepfakes, synthetic records, model manipulation through crafted prompts, and agents with authorisation risks.",
+  "approach": [
+   "COSO asks fraud risk assessment to identify how these threats could be used and whether existing fraud controls would catch them.",
+   "The AICPA aid, as reported, adds examples: altering training data or the algorithm to create bias, and generating fictitious supporting documents.",
+   "The engagement team's fraud-risk discussion would cover AI-enabled schemes; no result is published."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-assurance-over-ai-09",
+  "title": "Audit committee oversight of AI in financial reporting via auditor dialogue",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Audit committees are taking on AI oversight faster than they feel able to carry it: 75% named AI governance a top-three priority, only 56% felt confident overseeing it.",
+  "approach": [
+   "KPMG's Board Leadership Center tells audit committees to ask the auditor how the audit plan assesses risks from the company's AI use.",
+   "It also suggests tasking management to reassess whether disclosure controls support statements about the company's AI use, risks and governance.",
+   "Committees with primary AI governance responsibility rose from 20% to 29%; 82% call their AI oversight emerging or limited (independent).",
+   "About two-thirds of audit partners say their committee proactively raised AI use in operations or financial reporting (independent)."
+  ],
+  "who": "Deloitte and CAQ survey, KPMG"
+ },
+ {
+  "id": "assurance-assurance-over-ai-10",
+  "title": "Internal audit assurance over AI governance using IIA and COSO frameworks",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Internal audit is not ready: in a vendor survey, 63% of organisations lacked formal AI risk appetites or governance frameworks and only 28% of respondents were confident auditing AI risks.",
+  "approach": [
+   "The IIA framework (updated 13 Sep 2024) gives internal auditors a principles-based way to assess AI governance, risks and controls.",
+   "COSO's February 2026 publication groups GenAI use into eight capability types with minimum control expectations, illustrative metrics and starter templates.",
+   "EY recommends chief audit executives include AI systems with financial-reporting impact in the audit universe.",
+   "The chief audit executive decides whether internal audit acts as adviser or assurance provider; a named human reviews AI-assisted audit work."
+  ],
+  "who": "IIA, COSO, EY, Optro/Panterra survey"
+ },
+ {
+  "id": "assurance-assurance-over-ai-11",
+  "title": "Idea: continuous, AI-assisted assurance over AI systems instead of an annual cycle",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea only, not a deployment: annual audit plans cannot keep pace with continuously changing AI systems, which drift, and agents may change behaviour to work around anomalies.",
+  "approach": [
+   "Move from point-in-time assessment to continuous monitoring with real-time dashboards and dynamic audit planning.",
+   "EY conference speakers said AI can monitor AI system performance and detect problems such as drift early.",
+   "They advised starting with simple automations in controlled environments before multi-agent set-ups under close oversight.",
+   "AIUC-1's quarterly agent re-testing is one live example of the cadence; human oversight of AI-generated outputs remains."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-assurance-over-ai-12",
+  "title": "Scope an AI assessment as governance, conformity or performance, and say which",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Terms like assurance, audit and certification are at times used interchangeably for different AI assessments, and misusing 'assurance' can be a problem in some jurisdictions.",
+  "approach": [
+   "The ACCA and EY paper describes three types: governance assessments, conformity assessments against laws and standards, and performance assessments against predefined metrics.",
+   "EY recommends each assessment state what is assessed, use a clear methodology and suitable criteria, and be done by a qualified provider.",
+   "AICPA and Caseware voices say scope and criteria are negotiated because no comprehensive framework exists.",
+   "The practitioner scopes, selects criteria and gives the opinion; no result is published."
+  ],
+  "who": "ACCA, EY, AICPA, Caseware"
+ },
+ {
+  "id": "assurance-assurance-over-ai-13",
+  "title": "AI governance gap assessments against ISO/IEC 42001 and the NIST AI framework",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Clients adopting AI need to know where their governance falls short of a benchmark standard before an auditor, certifier or customer asks.",
+  "approach": [
+   "Deloitte UK describes a five-pillar framework aligned to ISO/IEC 42001, with 'no-regret' steps such as an AI governance committee and inventory.",
+   "Its AI Assurance page offers third-party challenge over AI risk, governance and control maturity, including certification readiness.",
+   "A Deloitte Singapore job posting (25 Jun 2026) shows consultants maintaining client AI risk registers and supporting gap analyses and remediation roadmaps.",
+   "KPMG Nederland offers AI governance support, gap analyses and readiness scans; senior consultants review risk and quality reports."
+  ],
+  "who": "Deloitte UK, Deloitte Singapore, KPMG Nederland"
+ },
+ {
+  "id": "assurance-assurance-over-ai-14",
+  "title": "Reasonable-assurance opinion on an organisation's AI governance and controls (SOC 2+)",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Customers, boards and procurement teams cannot see whether a supplier's AI is governed in practice rather than only on paper, and no prescriptive regulatory framework mandates external AI assurance.",
+  "approach": [
+   "KPMG UK gives an opinion on AI governance and controls under ISAE (UK) 3000, using its Trusted AI framework and SOC principles.",
+   "It tests whether controls are defined, suitably designed and operating effectively, with a report the client can share with customers.",
+   "KPMG's January 2026 paper calls it 'SOC 2+' reasonable assurance; CSA published CPA guidelines for SOC 2+ attestation in March 2026.",
+   "KPMG UK says, from its own experience, AI assurance is increasingly requested by procurement teams (self-reported); no figure is given."
+  ],
+  "who": "KPMG UK, CSA, Baker Tilly"
+ },
+ {
+  "id": "assurance-assurance-over-ai-15",
+  "title": "ISO/IEC 42001 certification of an AI management system by an accredited body",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Customers, banks and defence buyers want evidence that an AI developer's governance works but cannot inspect its models; ISO/IEC 42001 certifies a management system, not individual AI systems.",
+  "approach": [
+   "A certification body audits the AI management system in two stages, then runs annual surveillance audits over a three-year cycle.",
+   "Schellman became the first ANAB-accredited body after eight months; Anthropic, Sierra and Zendesk posted certificates in the CSA STAR Registry.",
+   "Schellman's CEO said in October 2024 it had signed 26 client contracts for certification (self-reported).",
+   "BSI research cited in its release says 26% of organisations report taking steps to align with the standard (vendor-published)."
+  ],
+  "who": "BSI, Schellman, Umony, CSA"
+ },
+ {
+  "id": "assurance-assurance-over-ai-16",
+  "title": "Accredit and oversee AI management system certifiers against ISO/IEC 42006",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "A certificate is only as trustworthy as the body that issues it, and the CSA note assesses that AI assurance suppliers are growing faster than accreditation can vet entrants.",
+  "approach": [
+   "ISO/IEC 42006 adds requirements, beyond ISO/IEC 17021-1, for bodies that certify AI management systems, and for the accreditation bodies assessing them.",
+   "A compliance vendor's summary lists collective audit-team competence across AI and law, and a calculated minimum audit time.",
+   "BSI announced ANAB accreditation on 10 Mar 2026, adding to UKAS and RvA, calling itself the first with all three (self-reported).",
+   "Accreditation bodies assess certifiers' competence, impartiality and consistency, including by witnessing audits the certifier performs."
+  ],
+  "who": "BSI, Schellman, CSA, UK DSIT"
+ },
+ {
+  "id": "assurance-assurance-over-ai-17",
+  "title": "Audit firms certify their own AI management systems before selling AI assurance",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "A firm selling AI governance advice or assurance must show it holds itself to the same standard, and clients ask who has been through the process.",
+  "approach": [
+   "Firms obtain ISO/IEC 42001 certification for their own AI systems from an accredited body and publicise it.",
+   "KPMG LLP (US) announced certification on 18 Nov 2025 from Schellman Compliance; KPMG International followed in December 2025.",
+   "SGS issued PwC Taiwan its certificate (15 Jun 2026); two EY Italian entities hold certificates, issued by Certiquality and ACM Cert.",
+   "Firms present the certificate as proof of experience and a basis to help clients with their own certification (self-reported)."
+  ],
+  "who": "KPMG, PwC Taiwan, EY Italy, Schellman"
+ },
+ {
+  "id": "assurance-assurance-over-ai-18",
+  "title": "Audit firms build AI assurance service lines and ISO/IEC 42001 offers",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Realtid, summarising the Financial Times, reports AI assurance has no clear standards, quality ranges from superficial advice to technical reviews of single legal requirements, and many providers are developers themselves.",
+  "approach": [
+   "June 2025 press reports said Deloitte, EY, PwC and KPMG were positioning to offer AI assurance, as they had for ESG assurance.",
+   "EY's 7 Apr 2026 release describes AI assurance services across diagnostics, governance and controls; EY CertifyPoint certifies AI management systems.",
+   "PwC Canada launched ISO/IEC 42001 certification on 16 Feb 2026, claiming to be the first Big Four offering accreditation services (trade press).",
+   "By September 2026 KPMG UK marketed an AI governance assurance product; partner sign-off on opinions is not described in the sources."
+  ],
+  "who": "Deloitte, EY, PwC, KPMG"
+ },
+ {
+  "id": "assurance-assurance-over-ai-19",
+  "title": "Certify AI agents through adversarial testing, an authorised auditor and insurance (AIUC-1)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Enterprise security and procurement teams run bespoke risk assessments of AI agents, liability is uncertain, and agent behaviour changes after a point-in-time audit.",
+  "approach": [
+   "AIUC-1 is a security, safety and reliability standard for AI agents; AIUC runs adversarial evaluations and issues the certificate.",
+   "Schellman, first authorised auditor (3 Feb 2026), collects evidence; agents are re-tested at least quarterly, with a full annual audit.",
+   "KPMG LLP's aIQ Capture platform was certified on 27 Aug 2026 after more than 900 technical tests (vendor-published).",
+   "The first AIUC-1-backed insurance policy (ElevenLabs) was reported at $50 million of cover (vendor-published); UiPath says testing produced new guardrails."
+  ],
+  "who": "AIUC, Schellman, KPMG, ElevenLabs, UiPath"
+ },
+ {
+  "id": "assurance-assurance-over-ai-20",
+  "title": "System-level technical assurance of a specific AI system's performance, robustness and bias",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Governance certification does not tell a buyer whether an individual AI system performs as claimed, and much UK AI assurance is supplied by AI developers themselves, raising independence questions.",
+  "approach": [
+   "Engagements borrow the practitioner, responsible-party and intended-user model of financial audit: select criteria, gather evidence by inspection, inquiry, reperformance and analytical testing.",
+   "A Babl AI session used New York City bias audits, LLM testing and EU AI Act risk-management engagements as worked examples.",
+   "Deloitte UK offers third-party challenge over AI technical build and performance; KPMG Nederland added AI Assurance in September 2025, including robustness tests.",
+   "Independent studies: UK AI assurance market about GBP 1.01 billion GVA (2024); AI audit tools often fall short of supporting accountability."
+  ],
+  "who": "Babl AI, Deloitte UK, KPMG Nederland, BSI"
+ },
+ {
+  "id": "assurance-assurance-over-ai-21",
+  "title": "Mandated independent bias audits of automated hiring tools in New York City",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Employers using automated employment decision tools must obtain annual independent bias audits, but the law leaves 'auditor' and 'tool' loosely defined.",
+  "approach": [
+   "Since July 2023, New York City employers using automated employment decision tools must undergo annual bias audits by an independent auditor.",
+   "An interview study of 16 experts and practitioners found auditors, tool vendors and employers defined practice themselves, producing four distinct auditor roles.",
+   "The researchers concluded the law has not established an effective audit regime (independent).",
+   "An independent auditor signs the bias audit."
+  ],
+  "who": "NYC Local Law 144, Groves interview study"
+ },
+ {
+  "id": "assurance-assurance-over-ai-22",
+  "title": "EU AI Act conformity assessment and compliance assurance for high-risk AI",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Providers of high-risk AI systems must show conformity with the Act, but harmonised standards and conformity-assessment capacity are not ready.",
+  "approach": [
+   "Under Article 43, some high-risk providers may choose internal control or assessment with a notified body; others follow the internal-control procedure.",
+   "The first harmonised AI standard, prEN 18286 on quality management, entered public enquiry on 30 Oct 2025.",
+   "The AI Omnibus moved Annex III obligations to 2 Dec 2027 and Annex I obligations to 2 Aug 2028.",
+   "Deloitte UK offers third-party challenge over Act compliance, including conformity assessment; the provider or notified body signs off conformity."
+  ],
+  "who": "European Commission, Deloitte UK, KPMG UK"
+ },
+ {
+  "id": "assurance-assurance-over-ai-23",
+  "title": "Buyers verify AI assurance evidence through certificate registers and trust-mark registries",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Procurement teams receive certificates and reports whose meaning depends on who issued them and against what criteria, and without AI-specific criteria two SOC 2 reports can cover different control sets.",
+  "approach": [
+   "A five-minute register check is recommended for ISO 42001 certificates: who accredited the certifier, and is the scope right.",
+   "KPMG UK says procurement and supplier-risk teams increasingly request and assess AI assurance; techUK says investors and insurers do too.",
+   "CSA STAR for AI Level 1 is a self-assessment; Level 2 (November 2025) adds an accredited third-party ISO/IEC 42001 certificate.",
+   "A procurement or risk reviewer confirms the scope covers the AI system being bought."
+  ],
+  "who": "CSA, KPMG UK, techUK, Coalfire"
+ },
+ {
+  "id": "assurance-assurance-over-ai-24",
+  "title": "Professionalise AI assurers: credentials, skills frameworks, ethics code, information-access rules",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "UK government says the quality of AI assurance certifications is hard to judge, none is issued by a UKAS-accredited organisation, and assurers often struggle to obtain the information they need.",
+  "approach": [
+   "UK government's September 2025 roadmap set four actions: a professionalisation consortium, skills framework, information-access map and innovation fund.",
+   "At one year techUK says the BCS-chaired consortium has three workstreams under way: ethics code, skills framework, information-access map (self-reported).",
+   "ISACA offers an Advanced in AI Audit (AAIA) credential for CISA holders or holders of another qualifying designation.",
+   "Exam and experience requirements apply to the credential; DSIT judged an immediate regulated industry body and professional standard premature."
+  ],
+  "who": "UK DSIT, techUK, ISACA, ICAEW"
+ }
+]

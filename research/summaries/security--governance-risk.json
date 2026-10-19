@@ -1,0 +1,275 @@
+[
+ {
+  "id": "security-governance-risk-01",
+  "title": "Customer security questionnaires answered from an approved knowledge base",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Customer security reviews arrive as long forms answered by hand from policies and audit reports, so a small GRC team becomes a sales bottleneck.",
+  "approach": [
+   "Answers are drafted from approved company documents; only low-confidence or unmatched questions go to an analyst.",
+   "GitHub reports automating 93% of inbound questionnaires in 6 months, against a 12-month goal (vendor-published).",
+   "Carta reports an 83% decrease in review time and 95% AI accuracy (vendor-published); how accuracy was judged is not stated."
+  ],
+  "who": "GitHub, Carta, Calastone"
+ },
+ {
+  "id": "security-governance-risk-02",
+  "title": "Self-serve trust centre with an AI agent answering security questions",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Customers repeatedly request the same audit reports and policies, then ask follow-up questions the documents already answer, which Sumo Logic's compliance lead likens to a second full-time job.",
+  "approach": [
+   "A trust centre exposes audit reports and policies with automated NDA rules, and an AI agent answers inbound questions from that content.",
+   "Questions the agent cannot answer, and non-standard requests, still reach the security team.",
+   "Synthesia reports 20-30% of customer questions resolved without staff and sales cycles two weeks shorter (vendor-published)."
+  ],
+  "who": "Synthesia, Perforce, Sumo Logic"
+ },
+ {
+  "id": "security-governance-risk-03",
+  "title": "Agent-drafted vendor security assessments, with an analyst deciding residual risk",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Each new vendor's SOC 2 report, pen test summary and questionnaire must be read against the buyer's standards; volume outgrows analysts and reviews take weeks.",
+  "approach": [
+   "An AI agent collects vendor documents, extracts exceptions and risk signals, drafts an evaluation and prepares follow-up questions.",
+   "An analyst verifies the draft and decides inherent and residual risk; customers can choose between autonomous and in-the-loop operation.",
+   "Samsara reports vendor reviews up to 50% faster (vendor-published); a payments company reports 150 assessments in under 2 weeks (vendor-published)."
+  ],
+  "who": "Samsara, Calastone, Drata, Hyperproof"
+ },
+ {
+  "id": "security-governance-risk-04",
+  "title": "Continuous vendor monitoring with reassessment when something changes",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Vendor approvals are point-in-time, so new reports, subprocessors, incidents or AI features added after approval can change risk without anyone reopening the review.",
+  "approach": [
+   "The programme defines triggers such as a new SOC 2 report, subprocessor or vendor incident, on which an analyst reopens the assessment.",
+   "Vendors including Safe and Vanta sell agents that monitor breaches, contracts and vendor changes; no outcome figures are published.",
+   "Idea: extend the inventory to vendor-embedded agents, with a named human reviewer for AI-generated findings that trigger action."
+  ],
+  "who": "Safe Security, Vanta, Anthropic"
+ },
+ {
+  "id": "security-governance-risk-05",
+  "title": "Mapping and rationalising controls and evidence across frameworks with an agent",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Organisations holding many frameworks keep duplicate controls and map evidence by hand; Synthesia's case study puts matching 500+ HITRUST controls at 1.5 months of manual work.",
+  "approach": [
+   "An agent proposes a common control framework and maps controls and evidence to each framework; a GRC owner approves the mapping.",
+   "Samsara reports consolidating 820 controls to 260 (68% reduction) across 10 frameworks (vendor-published).",
+   "Synthesia reports HITRUST implementation compressed from 18 months to about 3 months (vendor-published)."
+  ],
+  "who": "Samsara, Synthesia, Vanta"
+ },
+ {
+  "id": "security-governance-risk-06",
+  "title": "Agent-run evidence collection and continuous control monitoring",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Control evidence is gathered by hand before each audit, so failures surface late; manual compliance work took up to 60% of Perforce's team time.",
+  "approach": [
+   "Connectors pull evidence from source systems; agents check it against control descriptions, flag drift and send issues to control owners.",
+   "Control owners drive findings to closure, and humans own thresholds and policy; external audit cycles continue.",
+   "Perforce reports compliance work falling from 60% to 15% of team time; Synthesia reports 60% of evidence collection automated (vendor-published)."
+  ],
+  "who": "Perforce, Synthesia, Vanta"
+ },
+ {
+  "id": "security-governance-risk-07",
+  "title": "Agents test controls end to end and assemble audit workpapers for review",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Control testing is done by sampling and manual fieldwork, then written up as workpapers for internal and external auditors.",
+  "approach": [
+   "Agents ingest unstructured evidence, run attribute tests on the full set of uploaded evidence and record each step.",
+   "They assemble Excel workpapers linked to source evidence; auditors review the workpapers and exceptions.",
+   "Optro announced this capability; no outcome figures are published."
+  ],
+  "who": "Optro (formerly AuditBoard)"
+ },
+ {
+  "id": "security-governance-risk-08",
+  "title": "Drafting and keeping security policies current with AI",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Policy sets must be written and updated for each new framework, and generic chatbot requests for a security policy produce generic output.",
+  "approach": [
+   "AI drafts tailored policy documents and keeps a policy database current across frameworks.",
+   "Prompt templates supply audience, tech stack, certifications and current state; the policy owner reviews and approves drafts.",
+   "Synthesia reports its policy database kept current across six frameworks (vendor-published); an independent test of policy-to-code translation reports 50.3% vs 15.3% (independent)."
+  ],
+  "who": "Synthesia, Vanta, GitLab"
+ },
+ {
+  "id": "security-governance-risk-09",
+  "title": "Gap analysis of security policies against a standard and actual practice",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Security policies are often incomplete against standards and drift from what teams do; finding gaps takes extensive manual effort and scarce experienced reviewers.",
+  "approach": [
+   "AI compares policies with programme data or customer-facing reports and surfaces inconsistencies for policy owners to fix.",
+   "In a lab benchmark, small open-weight models judged ISO 27002 controls as met or not met, as an assistant to the auditor.",
+   "Best model's mean agreement with the human expert was 80.65% (independent); four of eight models reached 52.4-59.9% balanced accuracy."
+  ],
+  "who": "Calastone, Vanta, academic researchers"
+ },
+ {
+  "id": "security-governance-risk-10",
+  "title": "Mapping AI and security regulations into policy and controls",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "A Gartner analyst describes the AI regulatory landscape as fragmented and volatile, and teams must keep policy-to-regulation mappings current.",
+  "approach": [
+   "Governance engineers use AI-assisted workflows to monitor regulations, assess impact with Legal and update policy mappings.",
+   "Gartner advises building a baseline on shared principles rather than law-by-law compliance, with cross-functional review of which mandates apply.",
+   "No outcome figures are published."
+  ],
+  "who": "GitLab, Okta, Gartner"
+ },
+ {
+  "id": "security-governance-risk-11",
+  "title": "Risk register upkeep, intake triage and first-draft risk analyses with AI",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Risk intake, register upkeep, first-draft analyses and reporting are manual work; Anthropic and Plaid job postings seek AI-based automation of it.",
+  "approach": [
+   "Anthropic plans Claude-based tooling to classify and triage incoming risks; Plaid seeks automations for first-draft analyses and reports.",
+   "Analysts own calibration and quality review of AI outputs.",
+   "An independent comparison of five LLMs with 50 human experts found LLM risk scores consistently lower."
+  ],
+  "who": "Anthropic, Plaid, Vanta"
+ },
+ {
+  "id": "security-governance-risk-12",
+  "title": "Cyber risk quantification with AI: data gathering and expert elicitation",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Structured expert elicitation produces calibrated estimates but takes months of coordination, while boards ask for decision-ready, data-driven numbers.",
+  "approach": [
+   "Anthropic plans Claude-based tooling to sense changes in the risk landscape; researchers use LLM personas to replace or supplement expert panels.",
+   "Analysts own estimate calibration; 89% of survey respondents have board-approved risk thresholds.",
+   "A lab study reports Pearson r = 0.91-0.98 against ground truth (independent); T-Mobile reports a 75% reduction in reporting time (vendor-published)."
+  ],
+  "who": "Anthropic, T-Mobile, FAIR Institute"
+ },
+ {
+  "id": "security-governance-risk-13",
+  "title": "Risk analysis extended to the organisation's own AI agents and model providers",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Analysts must assess software agents that hold privileges and can bind the company, but the FAIR threat taxonomy defines AI agents only as malicious tools.",
+  "approach": [
+   "The FAIR Institute's standards director proposes treating agents as privileged insiders and model providers as third parties.",
+   "Analysts collect three numbers on agent activity: share reviewed, delay, and how often review catches something.",
+   "Human approval is required for agent actions above a defined threshold; no outcome figures are published."
+  ],
+  "who": "FAIR Institute, PwC, UC Berkeley CLTC"
+ },
+ {
+  "id": "security-governance-risk-14",
+  "title": "Board and executive risk reports drafted from programme data",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Gartner analysts say many board reports are built around cybersecurity rather than the business, and CISOs may get only five to ten minutes with the board.",
+  "approach": [
+   "Idea: programme data feeds a board pack that AI drafts and the CISO edits; no source describes this in use.",
+   "Perforce plans to use its GRC platform for regular risk reviews and board-level reporting.",
+   "The CISO owns the narrative and the requests to the board; no outcome figures are published."
+  ],
+  "who": "Perforce, Gartner, CSA"
+ },
+ {
+  "id": "security-governance-risk-15",
+  "title": "Audit response drafting and consolidating several audits around one evidence set",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Each external audit asks subject experts for the same walkthroughs and evidence, and several audits run in parallel.",
+  "approach": [
+   "AI drafts responses to auditor requests from existing evidence, and one evidence set is mapped to several frameworks.",
+   "No source describes who reviews AI-drafted audit responses; under NIS2 a named executive owns what is filed.",
+   "Synthesia reports five framework audit cycles in one month; Samsara reports expert time per cycle falling from 70 to 40 hours (vendor-published)."
+  ],
+  "who": "Synthesia, Samsara, Vanta"
+ },
+ {
+  "id": "security-governance-risk-16",
+  "title": "Verifying automated compliance evidence and auditor independence",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "After a whistleblower alleged the platform Delve generated fabricated SOC 2 and ISO 27001 evidence (the company denies this), practitioners worry that customers relying on the certificates carry the liability.",
+  "approach": [
+   "IANS faculty advise buyers to re-read their SOC 2 report and ask the platform vendor what the auditor can access.",
+   "Buyers get written confirmation that the auditor designed its own tests and spot-check 5 to 10 controls at random.",
+   "No outcome figures are published."
+  ],
+  "who": "IANS Research"
+ },
+ {
+  "id": "security-governance-risk-17",
+  "title": "Security team writes AI policy and approval gates for tools and agents",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Staff adopt AI tools and agents faster than policy; security teams must decide what data agents may touch and which actions need human approval.",
+  "approach": [
+   "GRC writes agent governance policies, sets approval criteria and sits as reviewer in engineering approval workflows.",
+   "Cengage reports assessing 67 AI vendors in 15 months (self-reported), aiming not to be 'the Department of No'.",
+   "Sendbird's CISO describes tiered AI tools, blocks on some models and contract review so vendors do not train on customer data."
+  ],
+  "who": "Cengage, Sendbird, Cloudflare, Anthropic"
+ },
+ {
+  "id": "security-governance-risk-18",
+  "title": "The security team's own AI-use policy: approved tools, logging and autonomy limits",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI is in security work faster than control over it: SANS reports 79% of SOCs use AI or ML tools but only 36% have built them into a defined workflow.",
+  "approach": [
+   "The policy sets approved tools and data classes, an owner for each use, and logging of prompts, outputs and model versions.",
+   "Agents get no broad access; deterministic gates and a kill switch outside the agent's control sit before high-risk actions.",
+   "Trail of Bits wrote an AI handbook listing approved and unapproved tools; Centene describes hash-verified records of each AI-assisted step."
+  ],
+  "who": "Trail of Bits, Centene, FINRA, SANS"
+ },
+ {
+  "id": "security-governance-risk-19",
+  "title": "GRC engineering team builds compliance automation and agent workflows",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Compliance headcount scales with frameworks, vendors and customer requests, yet GRC still runs on spreadsheets and skills are uneven.",
+  "approach": [
+   "GRC teams hire automation engineers, define controls as machine-readable code and expect analysts to build their own AI automations.",
+   "The GRC practitioner decides whether a configuration is in fact their control; Anthropic's postings state a human-in-the-loop design.",
+   "Anthropic, Figma, Plaid and Cloudflare are hiring for these roles; no outcome figures are published."
+  ],
+  "who": "Anthropic, Figma, Plaid, Cloudflare"
+ },
+ {
+  "id": "security-governance-risk-20",
+  "title": "Security roles redesigned around AI oversight, with role-based AI training",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Teams report skills rather than headcount as the binding constraint, and only 20% provide comprehensive AI training for all staff.",
+  "approach": [
+   "Work is reassigned between people and AI; new roles such as AI security engineer and AI governance analyst appear.",
+   "Staff get role-based training in AI tools, LLM SecOps (running and securing LLM systems) and AI regulation.",
+   "Surveys report 34% creating AI/ML specialist roles and 41% naming AI the most pressing skills need (independent)."
+  ],
+  "who": "RSA Conference/SANS-GIAC, ISC2, ISACA"
+ },
+ {
+  "id": "security-governance-risk-21",
+  "title": "Deliberate apprenticeship for junior risk staff when AI absorbs entry-level work",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: juniors learned what normal looks like from routine work that AI now automates, so Venables argues the talent pipeline fractures within a few years.",
+  "approach": [
+   "Idea: put juniors on control-failure post-mortems instead of evidence gathering, with AI as a coach.",
+   "Venables also proposes pod or master-and-apprentice structures and hiring tests that spot errors in AI output.",
+   "Juniors review machine-generated work against a standard; no results are published."
+  ],
+  "who": "No named deployment"
+ }
+]
