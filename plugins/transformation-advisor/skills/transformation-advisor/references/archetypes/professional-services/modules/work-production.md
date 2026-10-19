@@ -1,6 +1,6 @@
 # Work production (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/work-production.yaml` (25 entries: A 3, B 15,
+Sources checked 2026-10-19. Use cases live in `../use-cases/work-production.yaml` (25 entries: A 2, B 16,
 C 5, D 2). Ids are shortened here: `#08` means `professional-services-work-production-08`; other archetypes' ids
 are in full. Source keys in brackets are in the YAML or in §10. The named public record is almost all legal (law
 firms and in-house legal teams); consulting and accounting firms publish little. Most outcome figures are
@@ -73,7 +73,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
 
 **Review against a standard**
 - Improve: `#08` playbook review with tracked-change suggestions in Word (Microsoft in-house, GE Aerospace
-  in-house): users kept about 70% of suggestions. The 2026 contract-review benchmarks are vendor-run; lawyers led
+  in-house): users kept about 70% of suggestions (vendor telemetry). The 2026 contract-review benchmarks are vendor-run; lawyers led
   the one independent redlining test (2025).
 - Improve: `#09` AI as a sparring partner on a draft (O'Melveny, Bracewell law firms). `#10` idea: a human
   challenger role so teams can defend AI-structured work without AI.
@@ -90,7 +90,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
   Related: tax-research-advisory-21, assurance-substantive-testing-14.
 - Delegate: `#14` an agent reads a whole data room and writes the memo (Harvey benchmark only; tax:
   tax-research-advisory-22); `#15` matter templates with agent tasks and a named reviewer at each gate (Harvey,
-  announced 2026-10-15); `#16` general-purpose agent workspaces from Anthropic, OpenAI and Microsoft, with
+  announced 2026-10-15); `#16` general-purpose agent workspaces from Anthropic, Google, OpenAI and Microsoft, with
   checkpoints sized to risk and access limited by matter (announced; the Law Society reports very limited
   autonomous use).
 
@@ -104,7 +104,7 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
   `#23` test tools on the firm's own work against an expert baseline and re-test (Vals law-firm consortium,
   Covington & Burling); `#24` idea: log edits, overrides and review findings.
 - Reinvent: `#21` firm expertise packaged as agents and offered to others (A&O Shearman with Harvey; Fried Frank
-  considering; Kirkland building for exclusive use). Plans only. Subscription services without a professional in
+  considering; Kirkland emphasising exclusivity). Plans only. Subscription services without a professional in
   the loop (PwC One) sit in scoping-pricing; tax: tax-research-advisory-24.
 
 ## 4. Interview probes
@@ -145,10 +145,10 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
 - Vals legal research, October 2025: AI 74-78% weighted score vs 69% for lawyers; AI ahead on 150 of 200 questions;
   multi-jurisdiction 14 points lower [VALS-VLAIRRES-2025]. LawSites reports 210 questions and 79-81% vs 71% on
   accuracy alone [LAWSITES-VALSRESEARCH-2025].
-- Stanford 2024: tools from two leading providers each hallucinated (stated things not supported by sources) 17%
-  to 33% of the time [STANFORD-MAGESH-2024].
+- Stanford 2024: tools from two leading providers each hallucinated (gave incorrect information or cited a source that does not support it)
+  17% to 33% of the time [STANFORD-MAGESH-2024].
 - OpenAI GDPval (44 occupations, not specific to professional services): the best model was rated as good as or
-  better than experts in just under half of tasks; vendor-run [OPENAI-GDPVAL-2025].
+  better than experts in just under half of tasks (47.6% on the 220-task gold subset); vendor-run [OPENAI-GDPVAL-2025].
 
 **Trials with professionals**
 - Patent drafting, 133 lawyers, three months: quality +0.34 SD (standard deviations) at 10 days and +0.38 SD at 90
@@ -163,8 +163,8 @@ has one entry, a set of plans and announcements (`#21`); no firm reports a step 
 - Harvey diligence benchmark (synthetic data rooms, LLM-judged): 23.3% to 62.4% mean rubric pass rate [HARVEY-RLM-2026].
 - Dentsu (in-house): DPIA agent "cut the process by 75%" (method not stated); estimated 4-10 hours a week per
   lawyer; 93% weekly use [HARVEY-DENTSU-2026].
-- RSGI survey commissioned by Harvey (87 respondents): power users save 11 hours a week, up from 8.5; 89% of law
-  firms say they can take on more work; 48% of in-house teams mandated AI at their firms, one reported savings
+- RSGI survey of Harvey customers, commissioned by Harvey (87 respondents): power users save 11 hours a week, up
+  from 8.5; 89% of law firms say they can take on more work; 48% of in-house teams mandated AI at their firms, one reported savings
   [LEGALIT-RSGI-2026].
 - Adoption, not quality: CMS 95% active use among 3,000+ lawyers [HARVEY-CMS-2026]; Reed Smith 1,400 monthly users
   of about 1,800 lawyers [HARVEY-REEDSMITH-2026]; Crowell 91% of 700+ attorneys are users, nearly 70% weekly
@@ -227,10 +227,10 @@ an agent may reach or send; disclosure decisions.
   minimised grunt work and changed mentoring [ALLENS-XEXAM-2026]. A Georgetown writing professor does not see the
   feared skills degradation [TRI-CLARITYWRITE-2026].
 - **New roles.** Legal engineers at vendors (34 Harvey and 54 Legora postings by title on 2026-10-19) and firms
-  (PwC Legal Brussels, a London firm) [HARVEY-JOBS-2026; LEGORA-JOBS-2026; PWC-LEGALJOB-2026; RW-LEGALENGINEER-2026];
+  (PwC Legal Brussels) [HARVEY-JOBS-2026; LEGORA-JOBS-2026; PWC-LEGALJOB-2026];
   chief pricing and innovation officer and AI innovation head [TRI-LEGALWEEK-2026]. Ascend (accounting) has a
   30-person AI team working alongside CPAs [AT-AINATIVE-2026].
-- **Hiring signals (vendor-commissioned):** 82% of law firms and 94% of in-house teams are changing hiring criteria
+- **Hiring signals (vendor-commissioned survey of Harvey customers):** 82% of law firms and 94% of in-house teams are changing hiring criteria
   toward AI skills; 69% of firms do not plan to cut graduate intake over two years [LEGALIT-RSGI-2026].
 - **Leaders and in-house teams.** Leaders carry documented accountability [EWHC-AYINDE-2025]. In-house counsel
   draft more themselves and value outside counsel for judgment [TRI-AIFORUM-2026]. Firms are racing to extract
@@ -265,11 +265,11 @@ an agent may reach or send; disclosure decisions.
 - **"Clients won't pay for it, or won't let us use it."** Both are happening: some clients mandate AI, some bar it,
   some refuse to pay for AI work [TRI-LEGALWEEK-2026]. Answer: capture client terms at matter opening (`#25`).
 - **"We can't prove savings."** Firms say they are in an anecdotal phase [TRI-LEGALWEEK-2026], and SPI calls hours
-  saved but not resold or repriced "the leak" [SPI-AI-2026]. Answer: log edits and review findings (`#24`).
+  saved but not turned into revenue "the leak" [SPI-AI-2026]. Answer: log edits and review findings (`#24`).
 - **"Juniors won't learn."** A real risk [NBER-AUTOR-2026]; a counterview reports no degradation
   [TRI-CLARITYWRITE-2026]. Answer: keep unaided practice and a challenger step (`#10`).
-- **"It's hype; it will pass."** An ILTA respondent said so [ILTA-TECHSURVEY-2026], and ILTACON asked about "peak
-  legal tech" [LAWSITES-PEAK-2026]. ILTA also reports 94% of firms engaged with GenAI.
+- **"It's hype; it will pass."** An ILTA respondent said so [ILTA-TECHSURVEY-2026]. LawSites called ILTACON 2026
+  "peak legal tech", meaning peak energy, not a fading trend [LAWSITES-PEAK-2026]. ILTA reports 94% of firms engaged.
 - **"What happens to my job and the time saved?"** Employees ask this [TRI-CLARITYHUMAN-2026]. Talk about roles and
   capacity (§7), not headcount.
 

@@ -1,5 +1,5 @@
 # Use cases: professional-services / work-production
-# Sources checked 2026-10-19. 25 entries: A 3, B 15, C 5, D 2. Merged from 54 candidates in three deep dives
+# Sources checked 2026-10-19 and re-verified the same day. 25 entries: A 2, B 16, C 5, D 2. Merged from 54 candidates in three deep dives
 # (practice, discourse, governance) plus items routed here from the knowledge-management, firm-finance and
 # quality-review deep dives. The named record is almost all legal (law firms and in-house legal teams); consulting
 # and accounting evidence is thin. Independent measures (Vals, Stanford, NBER, HBS) test tools or run trials; no
@@ -56,15 +56,15 @@
     figure: each hallucinated between 17% and 33% of the time
     measures: >-
       Share of responses classed as hallucinated for Lexis+ AI, Westlaw AI-Assisted Research and Ask Practical Law
-      AI over the authors' preregistered query set (202 queries per the governance deep dive)
+      AI over the authors' preregistered set of 202 queries
     provenance: independent
     source_ref: STANFORD-MAGESH-2024
   - lever: risk
     description: Fabricated citations in a randomised law-student trial (adjacent population)
     figure: 'Vincent AI: 3; no AI: 4; o1-preview: 11'
     measures: >-
-      Count of citations to entirely fabricated sources across all completed assignments, by condition (127
-      students, six assignments each)
+      Number of assignments containing at least one citation to an entirely fabricated source, summed across
+      the six tasks, by condition (Figure 7; 127 students; 126-135 graded assignments per task)
     provenance: independent
     source_ref: SCHWARCZ-APL-2025
   - lever: speed
@@ -76,8 +76,9 @@
   prerequisites:
   - Access to authoritative sources the tool can cite (Vals found access to proprietary databases gave legal AI a citation advantage)
   - >-
-    A firm rule that tool output is a lead, not an authority. ILTA reports 25% of firms under 50 lawyers, and 55%
-    to 60% of larger firms, require outputs to be cited or independently verified (ILTA-TECHSURVEY-2026)
+    A firm rule that tool output is a lead, not an authority. ILTA reports 25% of firms under 50 lawyers, 40% to
+    42% of firms with 50-349 lawyers, and 55% to 60% of firms with 350 or more require outputs to be cited or
+    independently verified (ILTA-TECHSURVEY-2026)
   risks_and_guardrails:
   - Lawyers must review all AI output for accuracy, including citations, before submission to a court (CALBAR-GENAI-2026)
   - The English Divisional Court said lawyers who use AI for research must check it against authoritative sources (EWHC-AYINDE-2025)
@@ -89,9 +90,11 @@
   human_checkpoints:
   - Lawyer reads each cited authority and checks each conclusion before it goes into advice or a filing
   role_evolution: >-
-    Research moves from finding authority to verifying it. Cal Bar says the duty to supervise extends to AI output
-    used by subordinates (CALBAR-GENAI-2026). LawSites reports lawyers still did better on about one-third of
-    question categories that needed deeper interpretive analysis (LAWSITES-VALSRESEARCH-2025).
+    Research shifts toward verifying authority: the Divisional Court says lawyers who use AI for research must
+    check it against authoritative sources (EWHC-AYINDE-2025). Cal Bar says managerial lawyers should set AI
+    policies and train the lawyers and staff they supervise (CALBAR-GENAI-2026). LawSites reports lawyers still
+    did better on about one-third of question categories, especially those needing deep interpretive analysis
+    (LAWSITES-VALSRESEARCH-2025).
   evidence_grade: B
   sources:
   - ref: VALS-VLAIRRES-2025
@@ -117,7 +120,7 @@
     url: https://arxiv.org/abs/2405.20362
     date: '2024-05-30'
     access: full
-    locator: Abstract; Section 1 (results summary)
+    locator: Abstract; Section 1 (results summary); limitations section (202 queries)
   - ref: SCHWARCZ-APL-2025
     title: 'AI-Powered Lawyering: AI Reasoning Models, Retrieval Augmented Generation, and the Future of Legal Practice'
     publisher: University of Minnesota and University of Michigan law schools (Schwarcz, Manning, Barry, Cleveland, Prescott, Rich)
@@ -155,7 +158,7 @@
     publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: '2026'
     access: full
     locator: p. 5 policy table (Q3.18)
   last_reviewed: '2026-10-19'
@@ -219,18 +222,19 @@
   - An established practitioner-led review process the tool plugs into (LEGORA-GRANTTHORNTON-2026)
   risks_and_guardrails:
   - Chronology required the most lawyer time, and deciding relevance may be easier for practising lawyers (VALS-VLAIR-2025)
-  - Grant Thornton checks AI translations and summaries for accuracy and context as part of its normal quality assurance (LEGORA-GRANTTHORNTON-2026)
+  - Grant Thornton quality-checks AI translations for accuracy and context and reviews Legora outputs within its overall quality assurance process (LEGORA-GRANTTHORNTON-2026)
   - >-
     An ILTACON 2026 observer said validation principles from technology-assisted review (TAR: machine-learning
     document review with statistical checks) give a quantitative framework, with qualitative validation added for
     generative uses (EDT-CROWD2-2026)
   human_checkpoints:
-  - Quality check of each translation and summary before analysis relies on it (LEGORA-GRANTTHORNTON-2026)
+  - Quality check of each AI translation for accuracy and context before analysis relies on it (LEGORA-GRANTTHORNTON-2026)
   - Lawyer checks key dates and source references in a chronology
   role_evolution: >-
     Grant Thornton's forensic director describes reaching judgment-led analysis earlier instead of starting from
     zero, with less dependence on scarce language specialists for first-pass reading (LEGORA-GRANTTHORNTON-2026).
-    Litigation teams are shifting their focus to adoption, training and validating results (EDT-CROWD3-2026). No
+    An ILTACON observer said litigation teams are beginning to focus on adoption, training and validating results
+    (EDT-CROWD3-2026). No
     headcount effect is reported.
   evidence_grade: B
   sources:
@@ -353,7 +357,7 @@
   - >-
     Firms requiring human review of GenAI work product range from 31% of firms under 50 lawyers to 79% of firms
     over 700 (ILTA-TECHSURVEY-2026)
-  - Harvey cautions that mixing deals with different economics, structures or governing law can obscure more than it shows (HARVEY-INDEMNITY-2026)
+  - Harvey cautions that mixing deals with different economics, structures or governing rules can obscure more than it reveals (HARVEY-INDEMNITY-2026)
   human_checkpoints:
   - Reviewer checks extracted fields against the source text through the returned citations
   - Spot checks on multi-clause questions, where Vals saw incomplete answers
@@ -416,7 +420,7 @@
     publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: '2026'
     access: full
     locator: p. 5 policy table (Q3.18); 'The Curtain Rises' respondent quote
   last_reviewed: '2026-10-19'
@@ -445,8 +449,8 @@
   solution: >-
     Hogan Lovells Cadwalader (law firm) will be a design partner for Legora's Monitors, a regulatory
     horizon-scanning tool, guiding the sources, jurisdictions and alert logic for its global regulatory practice.
-    BMW Group's legal teams (in-house) plan to use AI-supported workflows to monitor regulatory developments. Harvey
-    lists Horizon Scanning as a platform product.
+    BMW Group's legal teams (in-house) plan to use AI-supported workflows to monitor regulatory developments.
+    Harvey's site lists Horizon Scanning (track, assess and act on regulatory changes) as a platform product.
   outcomes:
   - lever: speed
     description: none published
@@ -457,7 +461,7 @@
   prerequisites:
   - The practice defines the sources, jurisdictions and alert logic
   risks_and_guardrails:
-  - Alerts need a lawyer's assessment of relevance before anyone acts on them (practice deep dive; no source tests alert quality)
+  - No source tests alert quality, so a lawyer's assessment of relevance before anyone acts is a design choice, not a measured control
   human_checkpoints:
   - Practice lawyers decide which alerts matter and what to advise
   role_evolution: >-
@@ -480,6 +484,14 @@
     date: '2026-10-08'
     access: full
     locator: Paragraph 3
+  - ref: HARVEY-HLC-2026
+    title: Hogan Lovells Cadwalader adopts Harvey
+    publisher: Harvey
+    type: vendor
+    url: https://www.harvey.ai/blog/hogan-lovells-cadwalader-adopts-harvey
+    date: '2026-10-16'
+    access: full
+    locator: Site navigation (Platform menu, Horizon Scanning)
   last_reviewed: '2026-10-19'
   notes: >-
     Law firm (Hogan Lovells Cadwalader) and in-house (BMW Group). From practice-16. Announcements only. Could also
@@ -509,7 +521,7 @@
     department (in-house) plans first drafts based on approved internal standards and precedents in Legora.
     Microsoft's Copilot for Legal drafts from approved precedents stored in SharePoint with structured placeholders;
     OpenAI made ChatGPT for Word generally available for proofreading, suggested edits and formatting flags; Litera
-    announced first drafts from firm-approved precedent in its Lito agent.
+    announced precedent search in Litera Create Content so lawyers build first drafts from firm-approved language.
   outcomes:
   - lever: capacity
     description: ILTA reports that nearly every responding firm is engaged with GenAI, and most engaged firms use it for drafting, research, summarisation and contract review
@@ -603,7 +615,7 @@
     url: https://www.lawnext.com/2026/08/litera-connects-contract-drafting-and-negotiation-in-one-trusted-legal-ai-workflow.html
     date: '2026-08-18'
     access: full
-    locator: Opening and 'Act on what matters' paragraphs
+    locator: Opening and 'Start from firm-approved precedent' paragraphs
   - ref: AL-COPILOT-2026
     title: Microsoft Copilot For Legal - What Will Be The Fallout?
     publisher: Artificial Lawyer
@@ -617,7 +629,7 @@
     publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: '2026'
     access: full
     locator: pp. 3-5
   - ref: HARVEY-REEDSMITH-2026
@@ -713,7 +725,7 @@
     publisher: National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)
     type: academic
     url: https://www.nber.org/papers/w35720
-    date: 2026-09
+    date: '2026-09-03'
     access: full
     locator: Abstract and disclosures (full PDF not readable)
   - ref: SCHWARCZ-APL-2025
@@ -806,8 +818,8 @@
     structure for analysis, then validate and refine it. Teams keep complex judgment-heavy tasks human-first, with an
     extra check if AI is used. The best field evidence is the Harvard Business School experiment with 758 BCG
     consultants (2023, GPT-4). Deloitte Australia's revised report for an Australian government department disclosed
-    that Azure OpenAI was used in writing it. In law, ILTACON 2026 sessions recommended breaking complex tasks into
-    smaller AI-ready steps and having a panel judge which tasks suit agentic workflows and which stay human-led.
+    that Azure OpenAI was used in writing it. In law, ILTACON 2026 session abstracts describe breaking complex tasks into
+    smaller AI-ready steps and a panel judging which tasks suit agentic workflows and which stay human-led.
   outcomes:
   - lever: speed
     description: For 18 tasks inside AI's capability, consultants using AI completed more tasks and worked faster, with quality rated higher
@@ -949,7 +961,7 @@
     provenance: independent
     source_ref: VALS-VLAIR-2025
   - lever: quality
-    description: Vendor-commissioned blind comparison of one attorney and two AI tools
+    description: Vendor-designed blind comparison (Ivo calls it independent and third-party) of one attorney and two AI tools
     figure: human attorney 4.56; Ivo 4.52; Claude for Word (Opus 4.6) 3.50 (out of 10); attorney about 10 hours for 19 contracts, Ivo average 2 min 45 s per contract
     measures: Mean score of three blind judges on five criteria over 19 anonymised contracts with one reviewing attorney; times as stated in the release
     provenance: vendor-published
@@ -961,18 +973,17 @@
   risks_and_guardrails:
   - Microsoft says the Legal Agent gives no legal advice and users are solely responsible for reviewing and verifying output (MSFT-LEGALAGENT-2026)
   - A lawyer must review, verify and correct AI output, and professional judgment cannot be delegated (CALBAR-GENAI-2026)
-  - Both 2026 contract-review benchmarks (Ivo, LegalOn) are run or commissioned by the vendor whose product leads; LegalOn's own CEO says buyers should treat vendor benchmarks with some scepticism (ARTLAW-LEGALON-2026)
+  - Both 2026 contract-review benchmarks (Ivo, LegalOn) are designed or run by the vendor whose product leads; LegalOn's own CEO says buyers should treat vendor benchmarks with some scepticism (ARTLAW-LEGALON-2026)
   - General-purpose models missed the legal standard even when they found the right clause (ARTLAW-LEGALON-2026)
   human_checkpoints:
-  - Lawyer accepts, edits or rejects each proposed edit before it goes to the counterparty (MSFT-LEGALAGENT-2026)
+  - Lawyer reviews each proposed tracked change before it goes to the counterparty; Microsoft says users are solely responsible for reviewing and verifying output (MSFT-LEGALAGENT-2026)
   - Terms outside playbook authority are escalated; the playbook owner maintains the standard
   role_evolution: >-
     Microsoft's in-house counsel describes spending the saved time on legal judgment, negotiation strategy and
     advising clients (MSFT-COPILOTLEGAL-2026). A general counsel panellist says AI levels technical acumen, that
     fewer distinctions will remain between firms on contract markup, and that judgment and service become the
-    differentiators (TRI-AIFORUM-2026). The first-pass reviewer becomes the approver of suggested edits and the owner
-    of the playbook.
-  evidence_grade: A
+    differentiators (TRI-AIFORUM-2026). No source describes how first-pass review roles changed.
+  evidence_grade: B
   sources:
   - ref: MSFT-COPILOTLEGAL-2026
     title: Introducing Microsoft Copilot for Legal
@@ -1035,7 +1046,7 @@
     publisher: LegalOn
     type: vendor
     url: https://www.legalontech.com/post/the-contract-review-benchmark-2026
-    date: '2026-06-03'
+    date: '2026'
     access: full
     locator: Executive summary; The Rankings
   - ref: ARTLAW-LEGALON-2026
@@ -1065,11 +1076,14 @@
   last_reviewed: '2026-10-19'
   notes: >-
     In-house (Microsoft's legal department, GE Aerospace; JLL panellist) and law firms as buyers. Merged from
-    practice-01, discourse-03 and governance-06. Grade A rests on Microsoft's tracked, vendor-published telemetry of
-    edit acceptance across more than 1,800 Frontier users, which is a usage-and-acceptance measure, not an error
-    rate; the three deep dives graded A, B and C. Microsoft's named firm customer for wider Copilot (Clyde & Co,
+    practice-01, discourse-03 and governance-06. Graded B on verification (2026-10-19), down from A: Microsoft's
+    telemetry (about 70% of suggestions kept by more than 1,800 Frontier users) is the vendor reporting on its own
+    product across unnamed users and measures acceptance, not error; the named deployments (Microsoft's legal
+    department, GE Aerospace) publish no measured outcome beyond one lawyer's estimate. The deep dives graded A, B
+    and C. Microsoft's named firm customer for wider Copilot (Clyde & Co,
     adoption approaching 90%) is Copilot adoption, not Legal Agent use. LegalOn's benchmark (11 models, 21
-    guidelines, LLM-judged pairwise wins) ranks its own product first. Litera's deterministic comparison of AI edits
+    guidelines, LLM-judged pairwise wins) ranks its own product first; its page is undated and it was
+    out by 2026-06-22 (ARTLAW-LEGALON-2026). Litera's deterministic comparison of AI edits
     is covered in the quality-review module. Related: tax-transfer-pricing-10.
 
 - id: professional-services-work-production-09
@@ -1087,9 +1101,9 @@
   maturity: in-production
   problem: Authors have blind spots in their own arguments, and a full adversarial read takes hours of colleagues' time.
   solution: >-
-    A litigator at O'Melveny (law firm) puts a draft motion to dismiss into Harvey and asks what opposing counsel is
-    likely to argue; O'Melveny partners also check how often a provision appears in a lender's prior loans before
-    arguing that a term is market standard. A Bracewell partner (law firm) describes Legora as a tool for testing
+    O'Melveny's Los Angeles managing partner, a litigator (law firm), puts a draft motion to dismiss into Harvey and
+    asks what opposing counsel is likely to argue; an O'Melveny real estate partner checks how often a provision
+    appears in a lender's last 100 loans before arguing that a term is market standard. A Bracewell partner (law firm) describes Legora as a tool for testing
     ideas and developing case strategy.
   outcomes:
   - lever: quality
@@ -1191,7 +1205,7 @@
     publisher: National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)
     type: academic
     url: https://www.nber.org/papers/w35720
-    date: 2026-09
+    date: '2026-09-03'
     access: full
     locator: Abstract
   last_reviewed: '2026-10-19'
@@ -1234,11 +1248,11 @@
   - lever: risk
     description: Scale of the failure the check targets (not an outcome of the check)
     figure: 2,202 decisions; 872 with a lawyer as the party; 1,267 with a pro se litigant (read 2026-10-19)
-    measures: Decisions in which a court or tribunal found or implied reliance on hallucinated content, as catalogued in a live database; a count of found cases, not an error rate
+    measures: Decisions in which a court or tribunal found or implied reliance on hallucinated content, as catalogued in a live database; a count of found cases, not an error rate; the database also includes some decisions where AI use was alleged but not confirmed
     provenance: independent
     source_ref: CHARLOTIN-DB-2026
   - lever: risk
-    description: Deloitte Australia agreed to repay the final instalment on a government contract after the department found incorrect footnotes and references; the revised report disclosed Azure OpenAI use
+    description: Deloitte Australia agreed to repay the final instalment on a government contract after a researcher flagged fabricated references and Deloitte confirmed some footnotes and references were incorrect; the revised report disclosed Azure OpenAI use
     figure: AUD 440,000 contract; 237-page report; a researcher reported up to 20 errors
     measures: Contract value, report length and errors claimed by the researcher who raised the issue, per the AP report
     provenance: independent
@@ -1408,8 +1422,8 @@
   - Specialist lawyers review flagged issues and sign the diligence memo
   role_evolution: >-
     Hogan Lovells Cadwalader's lawyers built custom agents for knowledge management, capital markets and
-    international arbitration (HARVEY-HLC-2026). Junior diligence hours are the work most often cited as compressed,
-    but no firm reports an effect on staffing.
+    international arbitration (HARVEY-HLC-2026). O'Melveny reports lease abstract reviews compressed significantly
+    (HARVEY-OMELVENY-2026); no firm reports an effect on staffing.
   evidence_grade: B
   sources:
   - ref: HARVEY-OMELVENY-2026
@@ -1513,7 +1527,8 @@
     locator: Paragraphs on deployed agents and lessons learned
   last_reviewed: '2026-10-19'
   notes: >-
-    Big Four (PwC). From practice-18. Nineteen months old, outside the 12-18 month window; kept because it is the
+    Big Four (PwC). From practice-18. The automate ladder is inferred from the agent descriptions (extract, map,
+    validate, compile); the source does not say whether people review each output. Nineteen months old, outside the 12-18 month window; kept because it is the
     only firm-described agent deployment for document and data work in advisory delivery. Audit and tax technical
     agents belong to the assurance and tax archetypes (for example tax-data-technology-11).
 
@@ -1533,7 +1548,7 @@
   maturity: announced
   problem: >-
     A full data room can hold thousands of documents and tens of millions of tokens, more than a single model can
-    read at once; chat tools read only a fraction.
+    read at once; in Harvey's tests a standard agent tool loop read under 1% of a data room.
   solution: >-
     Harvey describes a decomposition harness in which a root agent divides the data room by category, sub-agents
     review each part, and the root assembles a diligence memo with citations and recommended next steps, evaluated
@@ -1547,7 +1562,7 @@
     provenance: vendor-published
     source_ref: HARVEY-RLM-2026
   - lever: quality
-    description: Post-training the root agent raised the pass rate further
+    description: Post-training one open-weight root model (Qwen3.5-122B) by reinforcement learning raised its pass rate
     figure: 29.9% to 63.0%
     measures: Rubric criteria pass rate, base root model against post-trained root, on the same 50 data rooms
     provenance: vendor-published
@@ -1588,8 +1603,8 @@
     locator: Agentic AI section, p. 2
   last_reviewed: '2026-10-19'
   notes: >-
-    Vendor research aimed at law firms. From practice-09. Vendor benchmark only. Harvey's estimate that diligence
-    costs 1-4% of deal value is its own and is not used as an outcome. Related: tax-research-advisory-22 (diligence
+    Vendor research aimed at law firms. From practice-09. Vendor benchmark only. Harvey's statement (citing EY) that
+    diligence costs 1-4% of deal value is not used as an outcome. Related: tax-research-advisory-22 (diligence
     agent drafting a cited tax risk assessment).
 
 - id: professional-services-work-production-15
@@ -1669,7 +1684,7 @@
     url: https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials
     date: '2026'
     access: full
-    locator: Glossary definition of agentic AI
+    locator: Section on agentic AI ('limited or no human supervision')
   last_reviewed: '2026-10-19'
   notes: >-
     Vendor product for law firms and in-house teams; no customer named. Merged from practice-10, discourse-04 and
@@ -1696,11 +1711,11 @@
     Work that spans agreements, emails, meetings and files requires a lawyer to move between tools and carry context
     by hand, while professional duties require supervision of anything an agent produces.
   solution: >-
-    Three general-purpose AI providers announced legal packages in 2026: Anthropic (Claude for Legal, 2026-05-12:
+    Four general-purpose AI providers announced legal packages in 2026: Anthropic (Claude for Legal, 2026-05-12:
     connectors, 12 practice-area plugins that start with a setup interview on playbooks, and cookbooks deployable as
-    Managed Agents), OpenAI (Astra for Law, 2026-09-17, offered to Am Law 200 firms through Trusted Access) and
+    Managed Agents), Google (Gemini Enterprise for Legal, 2026-08-25, in preview), OpenAI (Astra for Law, 2026-09-17, offered to Am Law 200 firms through Trusted Access) and
     Microsoft (Copilot for Legal, 2026-10-15, with Cowork for multi-file tasks such as obligation tracking, term
-    comparison and chronologies). The Law Society's example is a solicitor giving an agent a goal such as a
+    comparison and chronologies). In a Law Society article, Simmons & Simmons' Peter Lee gives the example of a solicitor giving an agent a goal such as a
     settlement proposal; the agent reads the file, extracts facts, identifies issues, compares similar matters and
     drafts an advice note. California's guidance lists pleading revisions, discovery responses and coordinating
     document review as agentic examples.
@@ -1789,8 +1804,8 @@
     Vendor packages for law firms and in-house teams; professional-body and regulator views. Merged from practice-21,
     discourse-13 (the Law Society and California examples, graded D as an idea in that deep dive) and governance-16
     (matter-scoped access controls for connected and agentic AI, an idea with no deployed configuration found). Announcements,
-    not deployments. The Law Society page date is given as 2026-10-19 by the discourse deep dive; the landscape lists
-    1 October 2026 for the feature, so the day is uncertain.
+    not deployments. The Law Society page shows 19 Oct 2026 (checked 2026-10-19). Google's package is reported in
+    LAWSITES-MSFT-2026.
 
 - id: professional-services-work-production-17
   title: Legal engineers and practice teams package firm know-how into playbooks, vaults and custom agents
@@ -1840,7 +1855,7 @@
   - Innovation, knowledge-management and practice-group sponsorship and a named AI leadership structure (Reed Smith - chief innovation officer, senior director of AI, director of change leadership)
   - Office hours, workshops and sessions with senior lawyers (HARVEY-HLC-2026)
   risks_and_guardrails:
-  - Output quality is limited by playbook quality; the Robert Walters and PwC Legal postings both ask for evaluation and benchmarking skills (RW-LEGALENGINEER-2026; PWC-LEGALJOB-2026)
+  - No source measures how playbook quality affects output; the PwC Legal posting asks for evaluation and quality frameworks for AI-assisted work (PWC-LEGALJOB-2026)
   - Mid-level associates build their own agents with or without firm training, so firms should shape use early (TRI-ONBOARD-2026)
   - Separately procured agents may start to join up without a conscious decision to adopt agentic systems (LAWSOC-AGENTIC-2026)
   human_checkpoints:
@@ -1848,9 +1863,9 @@
   - Champions test tools on real matters before wider release (TRI-ONBOARD-2026)
   role_evolution: >-
     New roles appear: Harvey had 34 and Legora 54 postings with "Legal Engineer" or "Legal Engineering" in the title
-    on their public job boards on 2026-10-19, some duplicates (HARVEY-JOBS-2026; LEGORA-JOBS-2026). Firm-side
-    postings for legal engineers or AI-enabled legal delivery ask for prompts, workflows, playbooks, evaluation sets
-    and agentic AI skills (PWC-LEGALJOB-2026; RW-LEGALENGINEER-2026). Mid-level associates become tool builders and
+    on their public job boards on 2026-10-19, some duplicates (HARVEY-JOBS-2026; LEGORA-JOBS-2026). A firm-side
+    posting for AI-enabled legal delivery (PwC Legal, Brussels) asks for prompt libraries, workflows, playbooks,
+    evaluation frameworks and agentic AI skills (PWC-LEGALJOB-2026). Mid-level associates become tool builders and
     champions (TRI-ONBOARD-2026).
   evidence_grade: B
   sources:
@@ -1918,14 +1933,6 @@
     date: '2026-09-16'
     access: full
     locator: Responsibilities and requirements
-  - ref: RW-LEGALENGINEER-2026
-    title: Legal Engineer lawyer - leading global law firm (London)
-    publisher: Robert Walters (for an unnamed law firm)
-    type: job-posting
-    url: https://www.robertwalters.co.uk/legal/jobs/in-housegeneralist/1910788-legal-engineer-lawyer---leading-global-law-firm.html
-    date: '2026-09-09'
-    access: full
-    locator: Responsibilities
   - ref: HARVEY-JOBS-2026
     title: Legal Engineer (Law Firm, Corporate) - Harvey job board
     publisher: Harvey (Ashby job board)
@@ -2061,7 +2068,7 @@
   - lever: cost
     description: Few in-house teams report receiving savings from their law firms' AI use, though many have mandated it
     figure: 48% of in-house teams have mandated their law firms to use AI; only one reported receiving cost savings
-    measures: RSGI survey commissioned by Harvey, 87 respondents across 60 firms and 27 in-house teams, fielded April-June 2026
+    measures: RSGI survey of Harvey customers, commissioned by Harvey, 87 respondents across 60 firms and 27 in-house teams, fielded April-June 2026
     provenance: vendor-published
     source_ref: LEGALIT-RSGI-2026
   prerequisites:
@@ -2070,7 +2077,7 @@
   risks_and_guardrails:
   - Directives raise the verification burden; TC Energy's general counsel pairs Harvey with the judgment and expertise of its lawyers (HARVEY-TCENERGY-2026)
   - Lawyers remain responsible for their work whether or not AI is used (LAWSOC-AGENTIC-2026)
-  - The RSGI survey is vendor-commissioned with a small in-house sample (LEGALIT-RSGI-2026)
+  - The RSGI survey is vendor-commissioned, covers only Harvey customers and has a small in-house sample (LEGALIT-RSGI-2026)
   human_checkpoints:
   - In-house lawyer edits and approves the first pass; complex matters stay with senior lawyers
   role_evolution: >-
@@ -2253,8 +2260,8 @@
     to be used internally and sold to corporates, law firms and financial institutions by subscription or usage
     fees, with the firm sharing in software revenue. Bloomberg Law reports A&O Shearman plans to sell AI tools, in
     part focused on fund formation, to other firms, and that Fried Frank (law firm) is considering client use of its
-    proprietary fund formation tool. Kirkland & Ellis (law firm) took the opposite route: its first tool on its own
-    AI platform is a fund formation engine, and it has emphasised exclusivity.
+    proprietary fund formation tool. Kirkland & Ellis (law firm), building its own
+    AI platform, launched a private-funds tool with Palantir and has emphasised exclusivity.
   outcomes:
   - lever: speed
     description: A&O Shearman's head of AI advisory says the agents do in minutes what previously took several hours
@@ -2266,7 +2273,7 @@
     description: No product, price or external customer has been published for firm-built tools offered to others
     figure: none published
     measures: Bloomberg Law's wording is "plans" and "contemplating"
-    provenance: self-reported
+    provenance: independent
     source_ref: BLOOMBERGLAW-KIRKLAND-2026
   prerequisites:
   - Practice experts to encode their method, and a platform able to run multi-step agents
@@ -2279,7 +2286,7 @@
   - Lawyers review agent outputs; the announcement refers to transparency and oversight (AOSHEARMAN-HARVEY-2025)
   - Firm leadership decides what is offered externally
   role_evolution: >-
-    Senior lawyers' expertise becomes a product; a Stanford professor quoted by Vault describes firms racing to
+    Senior lawyers' expertise becomes a product; a Stanford professor, quoted by Vault from Axios reporting, describes firms racing to
     extract their lawyers' knowledge and embed it in AI workflows (VAULT-PYRAMID-2026).
   evidence_grade: C
   sources:
@@ -2381,7 +2388,7 @@
   - The English Divisional Court said it expects to ask whether leadership responsibilities were fulfilled (EWHC-AYINDE-2025)
   - The SRA reported 42 reports of potential AI misuse between July 2025 and July 2026, covering citations, supervision and confidentiality (LAWSOCIE-SRAWARN-2026)
   - EU AI literacy obligations have applied since 2 February 2025 (EC-AIACT-2026)
-  - Free or consumer tools may reuse inputs for training (CALBAR-GENAI-2026; ABA-OP512-2024)
+  - Generative AI products may use inputs to train or refine the model, so lawyers must check terms rather than rely on marketing assurances (CALBAR-GENAI-2026); self-learning tools can expose one client's information in other matters (ABA-OP512-2024)
   - 54% of surveyed consultants report using AI tools without approval (LEXISNEXIS-FOW-2026)
   - Edits tend to cluster on phrasing and tone rather than assumptions (TRI-JUDGMENT-2026)
   human_checkpoints:
@@ -2399,7 +2406,7 @@
     publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: '2026'
     access: full
     locator: p. 5, table Q3.18; p. 3
   - ref: TR-FOP-2026
@@ -2522,8 +2529,8 @@
     and repeats the test when the model or task changes. A consortium of eight law firms (Reed Smith, Fisher
     Phillips, McDermott Will & Emery, Ogletree Deakins and four unnamed) built the dataset for the Vals study. A
     Covington & Burling special counsel published a matter-level case study of test-set validation for GenAI
-    document review. A PwC Legal posting and a London law-firm posting ask for sampling, testing and benchmarking
-    skills.
+    document review. A PwC Legal posting asks for evaluation frameworks with sampling and
+    testing.
   outcomes:
   - lever: quality
     description: An evaluation with a lawyer baseline exposed where tools trailed lawyers as well as where they led
@@ -2533,7 +2540,7 @@
     source_ref: VALS-VLAIR-2025
   - lever: quality
     description: Prompt refinement on curated test sets improved results on some issues but not all
-    figure: two of nine issues reached perfect performance on Test Set 1 by round four; one kept a higher false-positive rate
+    figure: two of nine issues (4 and 9) reached perfect performance on Test Set 1 by round four; for two others (5 and 6) round four slightly raised false positives
     measures: Counts of true and false positives against senior-attorney tags per issue, four prompt rounds, 7,100 documents (chart values not read)
     provenance: self-reported
     source_ref: EDRM-EMORY-2025
@@ -2544,16 +2551,15 @@
   - The ABA says a lawyer may test a tool on a subset before relying on it, that the right level of verification depends on the tool and task, and that the lawyer stays fully responsible whatever level is chosen (ABA-OP512-2024)
   - California says the duty includes periodic reassessment as AI systems change (CALBAR-GENAI-2026)
   - The Law Society says to assess the evidence and benchmarks providers use to support capability claims (LAWSOC-GENAI-2026)
-  - The Covington author says her test was not a defensibility-grade validation of recall (EDRM-EMORY-2025)
+  - The Covington author says the approach was a practical check, not the formal validation TAR protocols use for defensibility (EDRM-EMORY-2025)
   - Benchmarks that treat products as text generators miss workflow design (VALS-VLAIR-2025)
   - A sample that is too small or unrepresentative gives false comfort; no source tests this
   human_checkpoints:
   - Innovation lead and practice partner approve the test set and the pass threshold
   - A lawyer compares sampled tool output with the manual result and decides whether to rely on the tool
   role_evolution: >-
-    Knowledge and innovation staff become evaluators with a method, not only tool administrators; legal-engineer
-    postings ask for review protocols, sampling and testing (PWC-LEGALJOB-2026; RW-LEGALENGINEER-2026). Senior
-    attorneys' time moves upstream into building test sets (EDRM-EMORY-2025).
+    A legal-engineer posting asks for evaluation frameworks with human-in-the-loop review, sampling and testing
+    (PWC-LEGALJOB-2026). Senior attorneys' time moves upstream into building test sets (EDRM-EMORY-2025).
   evidence_grade: B
   sources:
   - ref: VALS-VLAIR-2025
@@ -2603,15 +2609,7 @@
     url: https://legalalphabet.com/job/legal-engineer-ai-enabled-legal-delivery-senior-associate-manager-job-at-pwc-global-legal-in-brussels
     date: '2026-09-16'
     access: full
-    locator: 'Responsibilities: review protocols, sampling and testing'
-  - ref: RW-LEGALENGINEER-2026
-    title: Legal Engineer lawyer - leading global law firm (London)
-    publisher: Robert Walters (for an unnamed law firm)
-    type: job-posting
-    url: https://www.robertwalters.co.uk/legal/jobs/in-housegeneralist/1910788-legal-engineer-lawyer---leading-global-law-firm.html
-    date: '2026-09-09'
-    access: full
-    locator: AI quality assurance and benchmarking responsibility
+    locator: 'Responsibilities: evaluation and quality frameworks (sampling and testing)'
   - ref: TRI-LEGALWEEK-2026
     title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
     publisher: Thomson Reuters Institute
@@ -2622,7 +2620,7 @@
     locator: "'Proving AI's path to saving clients money'"
   last_reviewed: '2026-10-19'
   notes: >-
-    Law firms (consortium, Covington & Burling, an unnamed London firm) and a Big Four legal arm (PwC Legal). Merged
+    Law firms (consortium, Covington & Burling) and a Big Four legal arm (PwC Legal). Merged
     from governance-14 (B), governance-05 (D, idea) and practice-20 (D, idea), with EDRM-EMORY-2025 routed from the
     quality-review practice deep dive, where the Covington case is a full use case (e-discovery document review,
     a legal-practice extension). Graded B: named firms built the Vals dataset and Covington ran a matter-level test,
@@ -2672,8 +2670,8 @@
   - Supervising lawyer or review lead looks at override and error trends periodically
   - Finance and innovation leads decide what is reported to clients
   role_evolution: >-
-    Quality, knowledge and innovation teams gain a measurement role and analyse override patterns
-    (TRI-STANDARDS-2026).
+    Someone must own override analysis: TRI says override patterns show whether a system needs changing or
+    professionals need guidance (TRI-STANDARDS-2026). No source names which team owns it.
   evidence_grade: D
   sources:
   - ref: TRI-LEGALWEEK-2026
@@ -2797,13 +2795,14 @@
   - The ABA suggests marking AI-produced material when stored in client or firm files (ABA-OP512-2024)
   - Disclosure may be appropriate where AI materially affects decisions, and lawyers must follow client guidelines that limit AI use (CALBAR-GENAI-2026)
   - Consultants must tell clients when AI materially affects advice or deliverables, and must comply with client instructions about AI (ICMCI-AICODE-2026)
-  - DLA Piper's head of AI innovation said "must use AI" and "cannot use AI without permission" directives arrive in the same inbox (TRI-LEGALWEEK-2026)
+  - DLA Piper's AI innovation lead described clients that expect AI use alongside directives barring AI without explicit permission (TRI-LEGALWEEK-2026)
   - Billing for AI-assisted work must reflect actual time or the agreed fee basis (ABA-OP512-2024); detail belongs to billing-collections
   human_checkpoints:
   - Responsible partner or engagement lead confirms the client's AI terms at matter opening and records client approval where required
   - Engagement lead decides whether AI use is material and approves disclosure wording
   role_evolution: >-
-    Engagement leads take on a record-keeping duty for AI use that did not exist in earlier sign-off. Firm-side
+    The ICMCI code asks firms to document significant AI-supported decisions and set clear accountability
+    (ICMCI-AICODE-2026). Firm-side
     voices on these terms at Legalweek included a chief pricing and innovation officer and an AI innovation head,
     not only matter partners (TRI-LEGALWEEK-2026).
   evidence_grade: B
@@ -2813,7 +2812,7 @@
     publisher: International Legal Technology Association (ILTA)
     type: survey
     url: https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf
-    date: 2026-06
+    date: '2026'
     access: full
     locator: p. 5, table Q3.18
   - ref: BLOOMBERGLAW-ACC-2025
@@ -2863,7 +2862,7 @@
     url: https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf
     date: 2026-05
     access: full
-    locator: Sections 3.3, 5.4, 7.1 and 7.3
+    locator: Sections 3.3, 3.6, 5.4, 7.1 and 7.3
   - ref: TRI-LEGALWEEK-2026
     title: 'Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide'
     publisher: Thomson Reuters Institute

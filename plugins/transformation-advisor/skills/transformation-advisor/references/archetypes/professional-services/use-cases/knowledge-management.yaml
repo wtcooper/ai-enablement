@@ -163,11 +163,12 @@
   - {ref: LAWSITES-SIMPLEDOCS-2026, title: "SimpleDocs Launches Contract Intelligence Layer", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/02/simpledocs-launches-contract-intelligence-layer-putting-policy-precedent-and-market-data-inside-microsoft-word.html", date: "2026-02-18", access: full, locator: "Three-source description; precedent paragraph"}
   - {ref: DRAFTWISE-PRECEDENT-2025, title: "Garbage In, Garbage Out: How to Build a Precedent Database Lawyers Can Trust", publisher: Draftwise, type: vendor, url: "https://www.draftwise.com/blog/garbage-in-garbage-out-how-to-build-a-precedent-database-your-lawyers-can-trust", date: "2025-09-24", access: full, locator: "Opening scenario; 'Start with Surgical Precision'"}
   - {ref: VALS-VLAIR-2025, title: "Vals Legal AI Report (VLAIR)", publisher: Vals AI, type: vendor, url: "https://www.vals.ai/industry-reports/vlair-2-27-25", date: "2025-02-27", access: full, locator: "Results table, Document Q&A row"}
+  - {ref: IMANAGE-SEYFARTH-2026, title: "Seyfarth Shaw (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/seyfarth-shaw/", date: "2026-10-19", access: full, locator: "Paragraph on the evaluation of the assistant"}
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: law firms (Chaffetz Lindsey; Bicalho Navarro Advogados) and an in-house legal and technology team at a
     bank (Digital Commerce Bank, in-house); SimpleDocs targets in-house legal departments. Seyfarth Shaw's evaluation of
-    Ask iManage was described as underway with no result (IMANAGE-SEYFARTH-2026, not cited further). Drafting from
+    Ask iManage was described as underway with no result (IMANAGE-SEYFARTH-2026). Drafting from
     retrieved precedent belongs to professional-services-work-production-05; cited Q&A over a supplied document set to
     professional-services-work-production-03.
 
@@ -391,8 +392,8 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: law firm (Clifford Chance). Maturity is 'announced' because the sources report a launch without showing
-    use; grade B because a named firm reports the documents are already in the platform. Law360 supports only the fact
-    of the announcement. A Legal IT Insider interview with the firm's knowledge lead could not be opened. The
+    use; grade B because a named firm reports the documents are already in the platform. Law360
+    (LAW360-CLIFFORDCHANCE-2026, lead paragraph only) supports only the fact of the announcement. A Legal IT Insider interview with the firm's knowledge lead could not be opened. The
     firm-finance deep dive also notes this launch (via AI Weekly summarising the FT).
 
 - id: professional-services-knowledge-management-06
@@ -900,13 +901,14 @@
   - {ref: HARVEY-INHOUSE-2026, title: "Building a frontier in-house organization", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/building-a-frontier-in-house-organization", date: "2026-10-13", access: full, locator: "Paragraphs on the department's knowledge and review playbooks"}
   - {ref: TRI-LDOR-2026, title: "2026 Legal Department Operations Report", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/legal-department-operations-report-2026", date: "2026-09-22", access: full, locator: "Key takeaways"}
   - {ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "Remarks by GSK; 'The contradictions in the room'"}
+  - {ref: IMANAGE-LEGALOPS-2026, title: "Global legal operations customer (customer story, organisation unnamed; read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-legal-operations-customer/", date: "2026-10-19", access: full, locator: "Paragraphs on evaluating AI and declining the module"}
   - {ref: BLOOMBERGLAW-GCXAI-2026, title: "GC x AI Retrospective: The Billable Hour, Like a Twinkie, Endures (in-house CLO column)", publisher: Bloomberg Law, type: press, url: "https://news.bloomberglaw.com/business-and-practice/gc-x-ai-retrospective-the-billable-hour-like-a-twinkie-endures", date: "2026-10-19", access: full, locator: "Section 'What Came True', paragraph on legal memory (routed from the client-development deep dive)"}
   last_reviewed: "2026-10-19"
   notes: >-
     In-house throughout (BMW Group, Rio Tinto, GSK). BMW's release is a vendor announcement quoting its general counsel,
     so maturity is 'announced'. Rio Tinto's figure concerns document-platform adoption and supports the prerequisite (a
     findable estate), not an AI effect. An anonymous in-house legal operations customer declined an expensive AI module
-    after a cost-benefit analysis (IMANAGE-LEGALOPS-2026, not cited further). AI-first in-house work is
+    after a cost-benefit analysis (IMANAGE-LEGALOPS-2026). AI-first in-house work is
     professional-services-work-production-19.
 
 - id: professional-services-knowledge-management-14
