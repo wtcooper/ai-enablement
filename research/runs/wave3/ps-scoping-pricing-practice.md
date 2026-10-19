@@ -28,7 +28,7 @@ Use cases: 17 (A: 0, B: 8, C: 6, D: 3). Sources: 36, all opened (access: full).
   change_scope: step
   runtime_class: shared-team-skills
   maturity: in-production
-  problem: Pricing teams answer client requests for fixed fees and budgets from internal precedent and judgment, which makes quotes slow to produce and hard to defend as market-tested.
+  problem: Goodwin's Managing Director, Client Value says clients push for efficiency and predictability, and the firm wants to remove friction from pricing conversations and answer pricing and budgeting requests faster.
   solution: Goodwin announced a global rollout of PERSUIT's Fixed-Fee Price Benchmarking. The vendor describes it as AI-powered and built on anonymised, aggregated data from historical proposals and matters (subject to minimum data thresholds). It returns a range of typical fixed fees for comparable scopes. The vendor says it does not set or recommend prices; lawyers and the pricing team still decide.
   outcomes:
   - lever: speed
@@ -50,7 +50,7 @@ Use cases: 17 (A: 0, B: 8, C: 6, D: 3). Sources: 36, all opened (access: full).
   sources:
   - ref: GOODWIN-PERSUIT-2025
     title: Goodwin Advances Legal Pricing with Global Rollout of PERSUIT's Fixed Fee Benchmarking
-    publisher: Goodwin Procter LLP (press release)
+    publisher: Goodwin (press release)
     type: firm
     url: https://www.goodwinlaw.com/en/news-and-events/news/2025/12/announcements-otherindustries-goodwin-advances-legal-pricing-with-global-rollout
     date: '2025-12-17'
@@ -107,7 +107,7 @@ Use cases: 17 (A: 0, B: 8, C: 6, D: 3). Sources: 36, all opened (access: full).
     locator: Vendor profile paragraph
   - ref: GOODWIN-PERSUIT-2025
     title: Goodwin Advances Legal Pricing with Global Rollout of PERSUIT's Fixed Fee Benchmarking
-    publisher: Goodwin Procter LLP (press release)
+    publisher: Goodwin (press release)
     type: firm
     url: https://www.goodwinlaw.com/en/news-and-events/news/2025/12/announcements-otherindustries-goodwin-advances-legal-pricing-with-global-rollout
     date: '2025-12-17'
@@ -994,7 +994,7 @@ All opened and read in full (access: full) unless noted. Types: academic 1, conf
 | EDISCOVERYTODAY-ILTACON-2026 | My Five ILTACON 2026 Takeaways: Legal Technology Trends | eDiscovery Today (Doug Austin) | conference | https://ediscoverytoday.com/2026/09/04/my-five-iltacon-2026-takeaways-legal-technology-trends/ | 2026-09-04 |
 | ILTA-TECHSURVEY-2026 | ILTA Technology Survey 2026 executive summary | International Legal Technology Association | professional-body | https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf | 2026-06 |
 | PWC-ONE-2026 | PwC Introduces PwC One as Part of Its Vision for AI-Enabled Professional Services | PwC US newsroom | firm | https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-one.html | 2026-03-19 |
-| GOODWIN-PERSUIT-2025 | Goodwin Advances Legal Pricing with Global Rollout of PERSUIT's Fixed Fee Benchmarking | Goodwin Procter LLP (press release) | firm | https://www.goodwinlaw.com/en/news-and-events/news/2025/12/announcements-otherindustries-goodwin-advances-legal-pricing-with-global-rollout | 2025-12-17 |
+| GOODWIN-PERSUIT-2025 | Goodwin Advances Legal Pricing with Global Rollout of PERSUIT's Fixed Fee Benchmarking | Goodwin (press release) | firm | https://www.goodwinlaw.com/en/news-and-events/news/2025/12/announcements-otherindustries-goodwin-advances-legal-pricing-with-global-rollout | 2025-12-17 |
 | CROSBY-SITE-2026 | Crosby: The Agentic Law Firm Built for Execution (home page, read 2026-10-19) | Crosby | firm | https://www.crosby.ai/ | 2026-10 |
 | CMS-TRENDS-2026 | The Trends Redefining Legal Service Delivery | CMS (law firm) | firm | https://cms.law/en/gbr/publication/the-trends-redefining-legal-service-delivery | 2026-02-12 |
 | CERTINIA-VEDA-2026 | Veda AI: agentic intelligence for professional services (solutions page, read 2026-10-19) | Certinia | vendor | https://certinia.com/solutions/ai | 2026-10 |
