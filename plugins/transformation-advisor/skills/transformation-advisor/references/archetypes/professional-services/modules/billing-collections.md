@@ -34,7 +34,7 @@ fee-agreement terms sit in scoping-pricing.
 | Time capture and entry | Recall or log activity; assign client and matter | transaction-processing, data-reporting | Time rebuilt from memory, short tasks missed [LEGORA-LAUREL-2026]; daily time due by 9:00 a.m. at one accounting firm [LAUREL-WARREN-2026] |
 | Narrative and task coding | Write a description and UTBMS task code (a standard legal task code set) that meet the client's rules | document-production, review-assurance | Guidelines run 15 to 100 pages per client [LAUREL-BILLING-2026]; invoices without valid LEDES or UTBMS codes are rejected [LAYER3-BILLINGOCG-2026] |
 | Client guideline rules | Read each client's outside counsel guidelines (OCGs) and turn them into rules | research-synthesis, review-assurance | Rules for hundreds of clients cannot be held in memory [LEGALIT-FOLEY-2024] |
-| Pre-bill review and write-downs | Partner and biller check, edit, write down and approve | review-assurance, expert-judgment | Partners spend days a month on pre-bills [LEGALIT-FOLEY-2024]; 43% of partners cut bills because time exceeded their own expectations [TRI-WRITEDOWNS-2023] |
+| Pre-bill review and write-downs | Partner and biller check, edit, write down and approve | review-assurance, expert-judgment | Some partners spend up to a week a month cleaning up invoices (a vendor's product lead) [LEGALIT-FOLEY-2024]; 43% of partners cut bills because time exceeded their own expectations [TRI-WRITEDOWNS-2023] |
 | Fixed-fee scope at bill time | Compare work against the agreed scope; raise a change order or absorb | data-reporting | Overruns absorbed as write-downs at close [LAUREL-BILLING-2026] |
 | Invoice and e-billing submission | Assemble the invoice; submit in LEDES format to the client's platform | transaction-processing | Rejection rate up from 11% to 18% in 2025 in Elite's data [ELITE-REJECT-2026] |
 | Rejections, reductions and appeals | Find why a line was cut; appeal or resubmit | review-assurance, document-production | Billers trained on dozens of client platforms and appeals teams [TRI-KOPKA-2026]; client AI decisions opaque [ELITE-IDEA-2026] |
@@ -48,7 +48,7 @@ Lenses: improve (assist or augment a step), automate (no person on the normal pa
 reinvent (the service, pricing or operating model changes). **Automate: one thin entry (`#11`).** **Delegate: no evidence.** A chain of agents
 from staffing through time to billing is described only as a concept [ILTA-RISE-2025]; in a vendor survey, 26% of accounting firms would hand
 "draft and send invoices" to an autonomous agent, but none fully trusts AI yet [UKU-AIACCOUNTING-2026]. **Model-scope change: none in this
-module;** the nearest are held elsewhere (below). Every entry with a named user keeps a person reviewing before anything reaches the client.
+module;** the nearest are held elsewhere (below). In every entry with a named user, a person reviews before anything goes to the client (see each entry's checkpoints).
 
 **Time capture and entry**
 - Improve (process): `#01` passive capture of email, document, call and application activity drafts entries the professional reviews and
@@ -144,7 +144,8 @@ Ask a billing or finance director, a billing partner, a controller, a timekeeper
 - Worked realisation (share of standard rates realised) up to 95% at firms with disciplined pricing against 75-80% with aggressive discounting;
   associates 91.5%, partners below 90%; long-term decline since 2021 [TRI-RATES-2026]. Market-standard realisation about 85% (source of the
   figure not stated) [TRI-MIDSIZE-2026].
-- 2023 survey (245 respondents): partners wrote off over 300 hours of their own reported time, nearly $190,000 of fees [TRI-WRITEDOWNS-2023].
+- 2023 survey (245 respondents, firms of 11+ lawyers): partners wrote off over 300 hours of their own potentially billable time after it was
+  reported, nearly $190,000 of fees [TRI-WRITEDOWNS-2023].
 
 **Cash cycle (secondhand)**
 - Wells Fargo H1 2026 (140+ firms): inventories +17.7%, collection cycles slowed by 5%, unit not defined [LAWFUEL-WF-2026]. Clio figures
@@ -160,8 +161,8 @@ Ask a billing or finance director, a billing partner, a controller, a timekeeper
   Wolters Kluwer up to 10% lower spend [WK-LEGALSPEND-2026]; Albertsons almost $2 million year to date, recalled, combined with volume discounts
   [ALBERTSONS-TR-2026]. Nearly 60% of about 650 in-house respondents saw no noticeable savings from firms' AI yet [BLOOMBERGLAW-ACC-2025];
   68% of corporate legal professionals did not know whether their firms use AI [TRI-GREATDISCONNECT-2026].
-- Accounting (vendor survey): 15% name slow or inaccurate billing their top operational headache; 62% want a human to approve before anything
-  is sent [UKU-AIACCOUNTING-2026].
+- Accounting (vendor survey): 15% name slow or inaccurate billing as their single most-cited operational headache; 62% say trust depends on
+  a human approving before anything is sent [UKU-AIACCOUNTING-2026].
 
 **What to measure (recommended; nobody publishes these yet):** edit and override rate on drafted entries; days from work to entry, entry to
 bill and bill to cash; pre-bill review hours; rejections and reductions by rule and client; write-down rate by client, practice and timekeeper;
@@ -169,10 +170,10 @@ false-flag rate of bill checks; share of AI-assisted entries and how each was bi
 
 ## 6. Guardrails
 
-**Hourly bills reflect time actually spent.** California, DC, Texas and North Carolina all say so; time saved by AI cannot be billed, while
-time spent prompting and reviewing output can [CALBAR-GENAI-2026; DCBAR-OP388-2024; TXETHICS-OP705-2025; NCBAR-FEO1-2024]. Australia: billed
-time must accurately represent the work done [AUSLEG-AISTATEMENT-2024]. ABA Formal Opinion 512 bars billing learning time for a general tool
-[ABA-BLT-2024]. Tax: the IRS Office of Professional Responsibility says billing manual time not spent, or double billing for AI-assisted
+**Hourly bills reflect time actually spent.** California, DC, Texas and North Carolina all say so, and time saved by AI cannot be billed
+[CALBAR-GENAI-2026; DCBAR-OP388-2024; TXETHICS-OP705-2025; NCBAR-FEO1-2024]; California adds that time crafting prompts and reviewing output can be. Australia: billed
+time must accurately represent the work done [AUSLEG-AISTATEMENT-2024]. Under ABA Formal Opinion 512 lawyers may not charge for time learning a general
+AI tool [ABA-BLT-2024]. Tax: the IRS Office of Professional Responsibility says billing manual time not spent, or double billing for AI-assisted
 tasks, may breach Circular 230 depending on the facts [IRS-OPR-2026]. A drafted entry (`#01`, `#02`) is a proposal; the timekeeper's review is
 the control.
 
@@ -186,8 +187,8 @@ cost, with no markup without informed written consent [CALBAR-GENAI-2026]; Texas
 One Illinois bar newsletter commentary argues ordinary AI use should be absorbed as overhead [ISBA-ELEFANT-2026*]. Detail: firm-finance-12.
 
 **Client instructions.** California requires following client guidelines that restrict AI [CALBAR-GENAI-2026]. Zscaler's guidelines ask for
-AI use to be noted in the time entry and bar passing on AI time and cost; block-billed lines are cut by 10-15% and late invoices by 20%
-[ZSCALER-OCG-2025]. Australia: record and disclose AI use and its effect on costs if the client asks [AUSLEG-AISTATEMENT-2024]. The SRA has no
+AI use to be noted in the time entry and bar passing on AI time and cost; block-billed lines are rejected (resubmit at 15% less or be paid at
+10% less) and invoices more than 60 days late lose 20% [ZSCALER-OCG-2025]. Australia: record and disclose AI use and its effect on costs if the client asks [AUSLEG-AISTATEMENT-2024]. The SRA has no
 specific generative AI guidance on client care [LAWSOC-GENAI-2026].
 
 **Worker monitoring.** Passive capture reads email, documents and calls. The UK ICO's monitoring guidance is under review [ICO-MONITORING-2026];
@@ -197,7 +198,8 @@ the EU AI Act lists AI to monitor and evaluate workers as high-risk [EU-AIACT-AN
 
 **Government contracts and standards.** US federal time-and-materials vouchers need individual daily job timekeeping records or other approved
 substantiation [FAR-52.232-7]; no source says whether passive capture qualifies. The UTBMS code sets have no AI-specific code [LEDES-UTBMS-2026].
-**Accounting:** the AICPA Code bars contingent fees for audit, review and tax-return work [AICPA-CODE-2026*], which limits outcome-linked billing.
+**Accounting:** the AICPA Code bars contingent fees for audit, review and certain other engagements and for preparing tax returns
+[AICPA-CODE-2026*], so outcome-linked billing cannot be copied into those services.
 
 **Steps that need human judgment:** releasing each time entry; approving rules extracted from guidelines; accepting or rejecting pre-bill
 fixes and write-downs; raising a change order; deciding which appeals to file; whom to chase and in what tone; what AI use to disclose and
@@ -260,7 +262,7 @@ whether any AI cost is charged; flat-fee reasonableness; for in-house teams, whi
   Checks at entry and before billing (`#03`, `#05`) answer it with the client's own rules.
 - **"If AI makes us faster, hourly revenue falls."** On hourly work, saved time cannot be billed [TXETHICS-OP705-2025]. Perlin argues AI may
   reinforce rather than disrupt the billable hour [LEGALFUTURES-PERLIN-2025]; fee-model choices sit in scoping-pricing.
-- **"Disclosing AI use invites fee cuts."** It may [TRI-LEGALWEEK-2026], but clients already require it (Zscaler) and California requires
+- **"Disclosing AI use invites fee cuts."** It may [TRI-LEGALWEEK-2026], but some clients already require it (Zscaler) and California requires
   following client AI guidelines [ZSCALER-OCG-2025; CALBAR-GENAI-2026].
 - **"Collections is relationship work."** The tools leave decisions with staff [ODDR-COLLECTIONS-2026]; some post-work discounting protects
   relationships [TRI-RATES-2026]; CollBox keeps human collectors on calls [ABAJ-TECHSHOW-2026].
