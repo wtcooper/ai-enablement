@@ -40,7 +40,7 @@ Run date 2026-10-19. Archetype `professional-services`, module `quality-review`,
   risks_and_guardrails:
   - The California guidance says a lawyer remains responsible for all outputs and must not let AI file documents or communicate with a court on the lawyer's behalf (CALBAR-GENAI-2026, p.9).
   - A Florida Supreme Court rule effective 2026-06-15 requires the signer of any filing to represent that cited authorities exist and are accurately cited, with sanctions available (LAWSITES-FLRULE-2026).
-  - The UK Divisional Court said heads of chambers and managing partners must take practical and effective measures and that courts can expect to ask whether they have (AYINDE-EWHC-2025, para 9).
+  - The UK Divisional Court said heads of chambers and managing partners must take practical and effective measures, and that in hearings of this kind the profession can expect the court to inquire whether they have (AYINDE-EWHC-2025, para 9).
   - ILTA reports that work-product governance still leans on training and leadership pressure, with tracking and compliance tools in use at fewer than one in five firms (ILTA-TECHSURVEY-2026, p.9).
   - A written policy did not prevent a Gordon Rees attorney from denying AI use to a court; the firm later said it had updated its AI policies (GIGALAW-GORDONREES-2025; BESPACIFIC-GORDONREES-2025).
   human_checkpoints:
@@ -363,11 +363,11 @@ Run date 2026-10-19. Archetype `professional-services`, module `quality-review`,
   change_scope: step
   runtime_class: personal-assistant
   maturity: in-production
-  problem: Consulting reports for governments were found to contain fabricated references that internal review had not caught, and the errors were found by outsiders.
+  problem: Consulting reports for governments were found to contain fabricated references, and in both cases the errors were found by outsiders after delivery.
   solution: After a university researcher flagged errors in a Deloitte Australia report for the Department of Employment and Workplace Relations, Deloitte published a revised version that removed a fabricated court quote and non-existent references, added a disclosure that Azure OpenAI was used, and agreed to repay the final instalment of the AU$440,000 contract. In Newfoundland and Labrador, after The Independent found non-existent journal papers cited in a 526-page Deloitte health workforce plan, Deloitte said it would revise citations and, per the province, committed to a full review of all citations and to report back. The Independent reported in March 2026 that an accountancy regulator, CPA Newfoundland and Labrador, had decided to investigate Deloitte after a resident's complaint.
   outcomes:
   - {lever: risk, description: Financial and reputational consequence of unverified AI-assisted references in a government report, figure: 'partial refund of a AU$440,000 contract (amount not disclosed in the report; department said the final instalment would be repaid)', measures: 'contract value and the instalment Deloitte agreed to repay, per the department''s statement', provenance: independent, source_ref: CTV-DELOITTE-2025}
-  - {lever: risk, description: Scale of citation errors found in the Canadian report, figure: 'at least four citations to non-existent research papers in a 526-page plan; contract fee CAD 1,598,485', measures: count of false citations found by The Independent per Canadian HR Reporter; fee from access-to-information records, provenance: independent, source_ref: HRREPORTER-DELOITTE-NL-2025}
+  - {lever: risk, description: Scale of citation errors found in the Canadian report, figure: 'at least four citations to non-existent research papers in a 526-page plan; contract fee $1,598,485 (currency as reported)', measures: count of false citations found by The Independent per Canadian HR Reporter; fee from access-to-information records, provenance: independent, source_ref: HRREPORTER-DELOITTE-NL-2025}
   prerequisites:
   - Source-by-source citation check before delivery
   - A client-facing disclosure policy for AI use
@@ -411,7 +411,7 @@ Run date 2026-10-19. Archetype `professional-services`, module `quality-review`,
   - Mentors who can review how juniors used AI
   - Exercises where AI output is wrong
   risks_and_guardrails:
-  - 'NBER finds junior outcomes bifurcated: fewer mediocre scores but more poor ones, so average gain hides risk (NBER-AUTOR-2026).'
+  - 'NBER finds junior outcomes bifurcated: fewer mediocre scores but more poor and more good ones, so a zero average gain hides both risk and benefit (NBER-AUTOR-2026).'
   - TRI says training must include verification steps and human review to be effective (TRI-ONBOARD-2026).
   human_checkpoints:
   - Senior reviewer evaluates junior work without assuming AI use was sound
@@ -565,7 +565,7 @@ Run date 2026-10-19. Archetype `professional-services`, module `quality-review`,
   runtime_class: shared-team-skills
   maturity: in-production
   problem: In-house teams get AI work product from outside counsel and vendors and cannot see how it was checked; they also face internal pressure to adopt AI.
-  solution: A Casepoint report, as summarised by eDiscovery Today, says mature legal teams are moving to 'bounded workflows' with known source materials, clear constraints and reviewable outputs, and treats prompts and AI-generated analyses as records. It cites Starbucks as moving from no AI use to controlled internal use while strictly restricting vendor and outside-counsel use. At Legalweek 2026, GSK's chief of staff described asking outside firms what they use, how, and how it generates savings; DLA Piper's AI head said some clients still send directives that bar AI without permission or demand warrants that models are unbiased. [in-house]
+  solution: A Casepoint report, as summarised by eDiscovery Today, says mature legal teams are moving to 'bounded workflows' with known source materials, clear constraints and reviewable outputs, and treats prompts and AI-generated analyses as records. It cites Starbucks as moving from no AI use to controlled internal use while strictly restricting vendor and outside-counsel use. At Legalweek 2026, GSK's chief of staff described asking outside firms what they use, how, and how it generates savings; DLA Piper's senior managing director of AI innovation said some clients still send directives that bar AI without permission or demand warrants that models are unbiased. [in-house]
   outcomes:
   - {lever: risk, description: Control over AI use across the legal supply chain, figure: none published, measures: 'n/a: no measured outcome published', provenance: self-reported, source_ref: EDT-CASEPOINT-2026}
   prerequisites:
