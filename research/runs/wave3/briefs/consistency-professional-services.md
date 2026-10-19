@@ -67,3 +67,4 @@ the validator result. Do not run git. Reply with a summary of **no more than 150
 - CALBAR-GENAI-2026: dated 2026-05-14 in delivery-management, 2026-05 elsewhere. Use 2026-05-14 everywhere if the source confirms.
 - ILTA-TECHSURVEY-2026: settle one date from the publisher page or PDF (verifiers found PDF metadata 2026-08-14; files say 2026-06 or 2026). Use what the publisher states; if none, the PDF date.
 - Several verification reports list renamed keys; read all 12 before unifying.
+- TR-FOP-2026: release date confirmed 2026-06-22 (staffing verifier); four different dates across files.
