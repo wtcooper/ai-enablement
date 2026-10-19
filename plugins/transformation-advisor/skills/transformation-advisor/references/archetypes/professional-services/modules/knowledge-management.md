@@ -1,7 +1,7 @@
 # Knowledge management (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/knowledge-management.yaml` (23 entries: A 0, B 14,
-C 8, D 1). Ids are shortened here: `#08` means `professional-services-knowledge-management-08`; other modules' and
+Sources checked and verified 2026-10-19. Use cases live in `../use-cases/knowledge-management.yaml` (23 entries:
+A 0, B 12, C 10, D 1). Ids are shortened here: `#08` means `professional-services-knowledge-management-08`; other modules' and
 archetypes' ids are in full. Source keys in brackets are in the YAML or in §10. No firm, consultancy or in-house team
 publishes a measured result (search success, error or override rate, permission-leakage test) for its own knowledge
 base, so nothing here is grade A. Named examples are mostly law firms and in-house legal teams, on vendor-hosted
@@ -33,10 +33,10 @@ of what exists. Audit methodology, tax research and security runbooks live in th
 |---|---|---|---|
 | Capture | Close-out notes, retrospectives, call notes, decisions, departing experts' know-how | document-production, research-synthesis | Expertise stays locked in decks and heads; know-how leaves when people retire [KANTATA-ENGINE-2025; NETDOCUMENTS-CONTEXTGRAPH-2026] |
 | Curate and validate | Decide what is final, exemplary or superseded; strip client detail; owners review on a cycle | review-assurance | Drafts, executed deals and counterparty markups mixed; nobody recorded why a document was "final" [DRAFTWISE-PRECEDENT-2025] |
-| Organise and secure | Taxonomy (agreed categories), metadata, OCR, permissions, ethical walls (screens that block named staff from a matter) | data-reporting, software-systems | Two-decade taxonomies; files scattered across inboxes, OneDrive, SharePoint [IMANAGE-WOMBLE-2026; IMANAGE-DCB-2026] |
+| Organise and secure | Taxonomy (agreed categories), metadata, OCR, permissions, ethical walls (screens that block named staff from a matter) | data-reporting, software-systems | Two-decade taxonomies; files kept in separate team repositories and SharePoint libraries [IMANAGE-WOMBLE-2026; IMANAGE-DCB-2026] |
 | Find and retrieve | Search, ask questions of documents, locate an expert or comparable matter | research-synthesis | Enterprise search and expertise management "dramatically underdeveloped" [ILTA-TECHSURVEY-2026] |
-| Reuse and apply | Benchmark terms against deal history; ground drafts and client tools in approved precedent | research-synthesis, document-production | Risk that lawyers take the easiest template, not the best [IMANAGE-ALLENS-2026] |
-| Transfer and onboard | Matter or engagement briefs for joiners; pre-call research | research-synthesis, coordination-scheduling | Kickoff research and networking can take about two weeks [MCKINSEY-LILLI-2023] |
+| Reuse and apply | Benchmark terms against deal history; ground drafts and client tools in approved precedent | research-synthesis, document-production | Risk that lawyers take the easiest template, not the best [IMANAGE-ALLENS-2025] |
+| Transfer and onboard | Matter or engagement briefs for joiners; pre-call research | research-synthesis, coordination-scheduling | A new lawyer spends days reconstructing a matter's context [NETDOCUMENTS-CONTEXTGRAPH-2026]; customer success managers spent four to five hours a day on pre-call research [KANTATA-BASWARE-2026] |
 | Govern AI access and use | Approved tools, connectors, policy, training, audit logs | review-assurance, coordination-scheduling | 34% of professionals use unsanctioned AI [TR-FOP-2026]; no public leakage tests |
 | Maintain and measure | De-duplicate, retire, analyse searches and reuse, re-test tools | data-reporting | KM impact hard to measure; firms "still gathering the data" [APQC-KMEXEC-2026; TRI-LEGALWEEK-2026] |
 
@@ -46,35 +46,37 @@ Lenses: improve (assist or augment a step), automate (no person on the normal pa
 multi-step outcome with checkpoints), reinvent (`change_scope: model`). **Coverage:** assist 6, augment 14, automate
 2, delegate 1; step 11, process 11, model 1. Automate has a private preview (`#06`) and a beta client portal (`#22`).
 Delegate has one announced product pair (`#10`). Reinvent has one beta (`#22`). No firm reports a knowledge step that
-has stopped existing.
+has stopped existing. Verification lowered `#04` and `#15` from B to C (see the YAML notes).
 
 **Find and retrieve**
 - Improve: `#01` AI search over a curated precedent library, under existing permissions (Allens and Womble Bond
   Dickinson UK, law firms). Access counts only; no search-success data.
 - Improve: `#02` ask questions of the firm's own documents to find clauses (Chaffetz Lindsey and Bicalho Navarro, law
   firms; Digital Commerce Bank, in-house). Drafting from what is found is professional-services-work-production-05.
-- Improve: `#03` firm-wide assistant over a consultancy's IP that also names experts (McKinsey Lilli; Deloitte PairD;
-  Infosys). Usage and "30% time saved" are self-reported, second hand.
-- Improve: `#04` "who has done this before?" from matter, people and CV records (McKinsey; Arup, engineering; Intapp,
-  Litera and NetDocuments products). Staffing use is staffing-resourcing; bid assembly is pursuit-proposals.
+- Improve: `#03` firm-wide assistant over a consultancy's IP that also points to experts (McKinsey Lilli; Deloitte
+  PairD; Infosys). Usage and "30% time saved" are self-reported, second hand.
+- Improve: `#04` "who has done this before?" from matter, people and CV records (McKinsey, via a secondary report;
+  Arup's CV platform, engineering, no AI claimed; Intapp, Litera and NetDocuments products). Grade C. Staffing use is
+  staffing-resourcing; bid assembly is pursuit-proposals.
 - Improve: `#09` governed connections (MCP, an open standard for linking AI tools to systems) so approved tools search
   and save back under each user's permissions, logged (iManage, Legora, Harvey, NetDocuments; announced).
 
 **Curate and organise**
 - Improve, process scope: `#12` curated, owned collections as the grounding set, with senior review before entry and
   client detail stripped (Womble Bond Dickinson; McKinsey data stewards). The core KM change.
-- Improve, process scope: `#05` bulk reclassification of 400,000+ documents into a knowledge bank (Clifford Chance,
-  law firm; announced). `#08` context graph mapping matters, documents and people (Harvey, NetDocuments, iManage;
+- Improve, process scope: `#05` reclassification and summarisation of 400,000+ documents into a knowledge bank
+  (Clifford Chance, law firm; launched, use not yet shown). `#08` context graph mapping matters, documents and people (Harvey, NetDocuments, iManage;
   vendor benchmarks only).
 - Improve: `#07` duplicate finding and reorganisation applied only after a person confirms (Digital Commerce Bank).
 - Automate: `#06` classification, extraction and summaries at the moment of filing (NetDocuments private preview).
 
 **Capture**
 - Improve, process scope: `#15` close-out capture and AI-drafted retrospectives (Alvarez & Marsal, Simon-Kucher,
-  consulting; AECOM, engineering; Certinia agents). `#14` in-house decisions turned into positions an attorney
+  consulting, and AECOM, engineering, describe automated capture; the AI drafting step is only in Certinia's catalogue;
+  grade C). `#14` in-house decisions turned into positions an attorney
   approves (Coheso; no customer named).
 - Improve, process scope: `#19` reviewers' corrections and senior judgment captured for juniors, with unaided checks
-  (Ascend, accounting; NBER patent trial, adjacent). `#20` AI "twins" of individual professionals (Twin1; announced).
+  (Ascend's CEO on Ascend's own firms, accounting; NBER patent trial, adjacent). `#20` AI "twins" of individual professionals (Twin1; announced).
 - Improve: `#16` call and meeting transcripts as capture, within consent rules (NYC Bar 2026-2).
 - Idea: `#21` structured interviews with retiring experts, AI-drafted stories approved by the expert.
 
@@ -107,7 +109,8 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
 ## 4. Interview probes
 
 1. **"Who owns each part of your precedent and know-how library, and when was it last reviewed or retired?"** Reveals
-   readiness for `#01` and `#12`; Allens and Womble name curation and owners as the prerequisite.
+   readiness for `#01` and `#12`; Allens relied on its existing curation and taxonomy, and Womble keeps curation with
+   assigned owners.
 2. **"When someone asks 'have we done this before?', how is it answered today, and how current is the answer?"**
    Reveals whether expertise lives in people (`#04`) and how stale directories are.
 3. **"Whose permissions does your AI search run under, and how did you test that someone behind an ethical wall
@@ -138,7 +141,7 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
   and KM 37.2% [TRI-SOTLM-2026].
 - ILTA (508 firms): 94% engage with GenAI, up 14 points; many firms expect added headcount in KM among other functions
   [ILTA-TECHSURVEY-2026].
-- AALL salary survey (257 organisations, 45% response): law library staff average 6.6 FTE in 2025 versus 4.6 in 2019;
+- AALL salary survey (257 organisations, 45% response): law libraries average 6.6 FTE staff, up from 4.6 in 2019;
   the survey does not attribute this to AI [LAWSITES-AALL-2025].
 
 **Governance prevalence**
@@ -150,13 +153,15 @@ were closed before), security-governance-risk-01 (questionnaires answered from a
   in the most mature tier versus 3% in the least; 36% policy violation; 25% public AI with little oversight
   [IMANAGE-BENCH-2026].
 - APQC (164 participants, cross-industry; independent): 59% of KM programmes in the two earliest maturity stages; 40%
-  rank a culture that does not reward sharing as the top threat [APQC-KM-2026].
+  say their culture does not incentivise sharing and reuse, the top-ranked threat to KM success [APQC-KM-2026].
 
 **Usage at named organisations (not quality)**
 - McKinsey Lilli: over 4 million prompts and about 150,000 a week (2024 interview) [BOERSEN-LILLI-2024]; over 75% of
-  43,000 staff monthly and "30% of time saved", relayed from Bloomberg with no method [THEOUTPOST-LILLI-2025].
-- Allens 1,350 legal staff with access; Womble 1,250 Insight+ users [IMANAGE-ALLENS-2026; IMANAGE-WOMBLE-2026]. Rio
-  Tinto legal 80% platform adoption in four months, not an AI measure [IMANAGE-RIOTINTO-2026].
+  43,000 staff monthly and "30% of time saved", relayed by TheOutpost.ai from June 2025 reports (Entrepreneur,
+  Bloomberg) with no method [THEOUTPOST-LILLI-2025]. Another relay gives 70% of 45,000 [OFFICECHAI-LILLI-2025].
+- Allens 1,350 legal staff with access; Womble about 600 lawyers and 1,250 users connected to the platform
+  [IMANAGE-ALLENS-2025; IMANAGE-WOMBLE-2026]. Rio Tinto legal 80% platform adoption in four months, not an AI measure
+  [IMANAGE-RIOTINTO-2025].
 
 **Vendor benchmarks**
 - Harvey Graph: up to 30% higher rubric pass rate and up to about 50% lower task cost with a context graph; task count
@@ -176,14 +181,15 @@ permission-leakage tests with a walled user. Access counts and prompt volumes sa
 
 - **Ethical walls and confidentiality.** Where an AI system uses client information, the firm must apply required
   screens; confidential information must not go to systems that share it with third parties without consent
-  [NYCBAR-OP2024-5-2024]. Secondary summaries of ABA Formal Opinion 512 report a disclosure risk inside one firm with
-  self-learning tools [EZEL-ABA512-2024; ABA-OP512-2024].
+  [NYCBAR-OP2024-5-2024]. ABA Formal Opinion 512 says self-learning tools risk disclosing one client's information
+  even when used only by lawyers at the same firm (p. 6) [ABA-OP512-2024; EZEL-ABA512-2024].
 - **Agentic access (California, approved 2026-05-14).** Agents with standing access to document systems, email and
   knowledge bases create acute confidentiality risk; scope and monitor access; no autonomous external transmission of
   client information without safeguards and human review; oversight rises with autonomy [CALBAR-GENAI-2026].
 - **Verification.** Lawyers must check AI research against authoritative sources, and leaders must take practical
-  measures; the court may ask what they did [EWHC-AYINDE-2025]. 2,202 court decisions address AI use, mainly reliance
-  on hallucinated content [CHARLOTIN-DB-2026]. NIST AI 600-1 names confabulation, data privacy and IP risks [NIST-AI600-2024].
+  measures; the court may ask what they did [EWHC-AYINDE-2025]. Charlotin's database lists 2,202 cases of hallucinated
+  content in court filings as of 2026-10-19, including some where AI use was alleged rather than confirmed
+  [CHARLOTIN-DB-2026]. NIST AI 600-1 names confabulation, data privacy and IP risks [NIST-AI600-2024].
 - **Templates and testing.** Do not use client confidential or personal data to create templates or test a system;
   use fictional data [LAWSOC-GENAI-2026].
 - **Recording calls.** NYC Bar Opinion 2026-2: consent of all parties; default is not to record non-client
@@ -194,8 +200,9 @@ permission-leakage tests with a walled user. Access counts and prompt volumes sa
   rule changes were out for comment to 2026-05-04, adoption not confirmed [CALBAR-RULES-2026]; the BSB lists data
   governance among good practice [BSB-AIGUIDANCE-2026]; the Bar Council told barristers to be extremely vigilant about
   sharing confidential information with an LLM [BARCOUNCIL-GENAI-2024].
-- **People data.** Expertise location uses staff records: EU AI Act high-risk employment uses apply from 2027-12-02
-  [EC-AIACT-2026]; California flags bias in employment uses [CALBAR-GENAI-2026]; the UK ICO's AI guidance is under
+- **People data.** Expertise location uses staff records. The EU AI Act's high-risk rules for employment and
+  worker-management uses apply from 2027-12-02 [EC-AIACT-2026]; whether an expertise finder is in scope depends on its
+  use (inference); California flags bias in employment uses [CALBAR-GENAI-2026]; the UK ICO's AI guidance is under
   review [ICO-AIDP-2023]. AI-literacy duties apply under the EU AI Act since 2025-02-02 [EC-AIACT-2026].
 
 **Steps that stay with a person:** deciding what enters a curated collection and what is retired; stripping client
@@ -205,8 +212,9 @@ pitching or staffing; deciding what clients may see.
 
 ## 7. Roles and how they evolve
 
-- **Knowledge teams become curators and gatekeepers.** Allens' team spends more effort on curation, taxonomy and
-  champions [IMANAGE-ALLENS-2026]; McKinsey's data stewards are central to Lilli's quality [MCKINSEY-LILLI-2023];
+- **Knowledge teams become curators and gatekeepers.** Allens' team curates, pins standard documents, trains and
+  recruits champions [IMANAGE-ALLENS-2025]; McKinsey's 2023 announcement describes data stewards as central to Lilli's
+  quality (as read by the deep dive; the page could not be re-opened) [MCKINSEY-LILLI-2023];
   Debevoise partners curate a client product [BLOOMBERGLAW-DEBEVOISE-2026]. A vendor forecasts professional support
   lawyers (lawyers who maintain know-how rather than bill clients) becoming quality guardians of AI metadata
   [KMWORLD-LEXSOFT-2025].
@@ -214,29 +222,30 @@ pitching or staffing; deciding what clients may see.
   Sutherland merged research and knowledge services into an AI-centric US innovation department [AL-EVERSHEDS-2026];
   K&L Gates' AI and innovation partner role covering data and KM [AL-X4-2026]; Gilchrist Connell's chief AI and knowledge officer [LAWYERSWEEKLY-GILCHRIST-2026];
   Gowling WLG's director of AI, innovation and knowledge [HARVEY-GOWLING-2025].
-- **Knowledge lawyers and non-lawyers lead adoption.** Lewis Silkin's knowledge lawyers are Harvey leads
-  [HARVEY-LEWISSILKIN-2025]; Chaffetz Lindsey's non-timekeeping staff became champions [IMANAGE-CHAFFETZ-2026];
+- **Knowledge lawyers and non-lawyers lead adoption.** Lewis Silkin put knowledge lawyers front and centre of its
+  rollout, with a Harvey Lead in each team [HARVEY-LEWISSILKIN-2025]; Chaffetz Lindsey's non-timekeeping staff became champions [IMANAGE-CHAFFETZ-2026];
   Digital Commerce Bank's librarians govern AI use [IMANAGE-DCB-2026].
 - **Template and agent owners.** Harvey names innovation and knowledge teams as authors of matter templates
   [HARVEY-ORCH-2026]. Hogan Lovells Cadwalader lawyers built custom agents for knowledge management [HARVEY-HLC-2026].
 - **Talent view.** DiDomenico argues for growing existing KM, library and research staff and recruiting practising
   lawyers [AL-DIDOMENICO-2026]. A TRI column suggests junior rotations such as "knowledge operations curator"
-  [TRI-AILAWPROF-JUNIOR-2026]. Vault, quoting Engstrom, describes firms "extracting the knowledge of their lawyers" into AI
-  workflows [VAULT-PYRAMID-2026]. Juniors' unaided outcomes split in the NBER trial [NBER-AUTOR-2026]; detail is talent-learning.
-- **In-house.** Legal operations is becoming its own practice area and first line for AI pressure [TRI-LDOR-2026].
+  [TRI-AILAWPROF-JUNIOR-2026]. Vault, citing Axios, quotes Stanford's David Freeman Engstrom: firms are racing to
+  "extract the knowledge of their lawyers" into AI workflows [VAULT-PYRAMID-2026]. Juniors' unaided outcomes split in the NBER trial [NBER-AUTOR-2026]; detail is talent-learning.
+- **In-house.** Many legal operations leaders say their function is becoming "its own practice area", and the
+  Thomson Reuters Institute calls it the default first line of defence against AI pressure [TRI-LDOR-2026].
 
 ## 8. Frontier
 
-- **2025-11-11** SKILLS founder: firms have until end-2027 to share knowledge with clients via AI [AL-LAWPUNX-2025].
-- **2026-02-20** TRI premortem: agentic pilots fail on undocumented processes and messy data [TRI-PREMORTEM-2026].
+- **2025-11-11** Oz Benamram (SKILLS): firms have until end-2027 to share knowledge with clients via AI [AL-LAWPUNX-2025].
+- **2026-02-20** TRI premortem (two fictional scenarios): agentic pilots fail on undocumented exceptions and fragmented storage [TRI-PREMORTEM-2026].
 - **2026-03-11** Legalweek sessions "What KM Must Still Control" and "KM, DMS, and LLMs in Harmony" (titles only) [EDRM-LEGALWEEK-2026].
 - **2026-04-14** Law Society: accountability frameworks do not yet fit autonomous systems [LAWSOC-AGENTICFUTURE-2026].
 - **2026-05-14** NetDocuments context graph, private preview; California approves agentic guidance [NETDOCUMENTS-CONTEXTGRAPH-2026; CALBAR-GENAI-2026].
 - **2026-05-20** Harvey and DeepJudge target the "context tax" [LAWSITES-HARVEYDJ-2026].
-- **2026-07-20** Clifford Chance announces its Knowledge Bank [ARTIFICIALLAWYER-CLIFFORDCHANCE-2026].
+- **2026-07-20** Clifford Chance launches its Knowledge Bank [ARTIFICIALLAWYER-CLIFFORDCHANCE-2026].
 - **2026-08-06** Debevoise STAAR beta at $150,000 a year [BLOOMBERGLAW-DEBEVOISE-2026]. **2026-08-13** DeepJudge Agent Handoff Protocol [LAWSITES-DEEPJUDGE-2026].
 - **2026-08-20** Twin1 launches AI twins after a $20m raise [AL-TWIN1-2026].
-- **2026-08-23 to 27** ILTACON: "context" the word of the conference; seat-to-consumption pricing worries [EDISCOVERYTODAY-ILTACON-2026].
+- **2026-09-04** eDiscovery Today on ILTACON, held the week before: "context" the word of the conference; talk of a shift from seat to consumption pricing [EDISCOVERYTODAY-ILTACON-2026].
 - **2026-09-17 / 09-30** iManage plug-in for ChatGPT Enterprise; Harvey cross-system agentic search [LAWSITES-IMANAGECHATGPT-2026; HARVEY-AGENTICSEARCH-2026].
 - **2026-10-08** Coheso Memory for in-house teams [AL-COHESO-2026]. **2026-10-15** Harvey Legal Work Orchestration; Microsoft Copilot for Legal draws on approved precedent in SharePoint [HARVEY-ORCH-2026; LAWSITES-MSFT-2026].
 - **2026-10-16** Legora announces plans to connect to the iManage MCP Server [LEGORA-IMANAGE-2026].
@@ -260,7 +269,8 @@ pitching or staffing; deciding what clients may see.
 - **"Too many tools."** Lawyers will only open so many tabs [DRAFTWISE-ILTACON-2025]. Answer: governed connectors
   rather than copies (`#09`); watch lock-in and consumption pricing [EDISCOVERYTODAY-ILTACON-2026].
 - **"Clients get nothing from our AI."** A GC said so [AL-CLIENT-2026]. Answer: Debevoise's client portal (`#22`).
-- **"It costs too much."** One in-house legal operations team declined an expensive AI module [IMANAGE-LEGALOPS-2026].
+- **"It costs too much."** In an iManage story, an unnamed in-house legal operations team says it declined a
+  competitor's expensive AI module with limited out-of-the-box features [IMANAGE-LEGALOPS-2025].
 - **"It's hype."** An ILTA respondent expects it to pass [ILTA-TECHSURVEY-2026]; TRI warns of bubble risk
   [TRI-SOTLM-2026]; Kantata's CEO warns of "fast, mediocre decisions" without firm context (vendor) [KANTATA-SUPERAGENT-2026].
 - **"Juniors won't learn."** A real risk [NBER-AUTOR-2026]. Answer: unaided checks (`#19`); detail in talent-learning.
@@ -268,7 +278,7 @@ pitching or staffing; deciding what clients may see.
 ## 10. Sources
 
 Full details for YAML keys are in the YAML. Keys cited here but not in the YAML:
-- ABA-OP512-2024: American Bar Association, Formal Opinion 512, 2024-07-29, https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf (read via summaries here)
+- ABA-OP512-2024: American Bar Association, Formal Opinion 512, 2024-07-29, https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf (americanbar.org blocks downloads; read in full from the LawNext-hosted copy, https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf, p. 6)
 - BARCOUNCIL-GENAI-2024: Bar Council, New guidance on generative AI for the Bar, 2024-01-30, https://www.barcouncil.org.uk/resource/new-guidance-on-generative-ai-for-the-bar.html
 - CALBAR-RULES-2026: State Bar of California, Proposed amendments related to AI, 2026-03-13, https://www.calbar.ca.gov/public/public-meetings-comment/public-comment/public-comment-archives/2026-public-comment/proposed-amendments-rules-professional-conduct-related-artificial-intelligence
 - CHARLOTIN-DB-2026: Damien Charlotin, AI Hallucination Cases Database (read 2026-10-19), https://www.damiencharlotin.com/hallucinations/

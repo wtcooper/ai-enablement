@@ -6,9 +6,10 @@ keys in brackets are in the YAML or in §10 (keys marked * are only in §10). **
 most widely used and least measured. Loopio's survey of 1,533 bid professionals (all industries, run with APMP, the
 Association of Proposal Management Professionals) finds 79% of teams use AI, yet only 17% name a better win rate as a
 benefit, and the average win rate fell from 45% to 39% [LOOPIO-TRENDS-2026]. No firm publishes a measured outcome: every
-firm figure is a recollection, estimate or projection inside a vendor case study, so nothing reaches grade A. No error
-rate, override rate or win-rate study of AI-drafted bids exists. Law and engineering firms dominate the named examples;
-accounting has one (Cherry Bekaert) and consulting very few (Neudesic, Versent, an unnamed Big 4 firm).
+firm figure is a recollection, estimate, projection or undefined vendor number, mostly in vendor case studies, so
+nothing reaches grade A. No error rate, override rate or win-rate study of AI-drafted bids was found. Law and
+engineering firms dominate the named examples; accounting has one (Cherry Bekaert) and consulting very few (Neudesic,
+Versent, an unnamed Big 4 firm).
 
 ## Contents
 
@@ -157,20 +158,18 @@ a formal one [BDC-UNANET-2026].
 
 **Other surveys** - QorusDocs (297 proposal professionals, half in professional or legal services): 60% say AI raised
 volume handled, 35% credit higher win rates and revenue; most cannot answer 10-20% of incoming RFPs
-[QORUSDOCS-ITBRIEF-2026]. Responsive and APMP 2025 (726): "Leaders" outpace "Novices" in AI for workflow orchestration
-(41% vs 17%), win/loss insight (37% vs 18%) and go/no-go (37% vs 26%) [RESPONSIVE-SRM-2025]; its 2026 report says 6 in
-10 see positive ROI from most or all tools (detail gated) [RESPONSIVE-SRM-2026*].
-
-
+[QORUSDOCS-ITBRIEF-2026]. Responsive and APMP 2025 (726): "Leaders" are likelier than "Novices" to use AI for workflow
+orchestration (41% vs 17%), win/loss insight (37% vs 18%) and go/no-go (37% vs 26%) [RESPONSIVE-SRM-2025]; its 2026
+report says 6 in 10 see positive ROI from most or all tools (detail gated) [RESPONSIVE-SRM-2026*].
 
 **Price and effort:** a Perkins Coie pricing manager said lowest bids on reverse-auction platforms lose 54% of the time
 and highest win 18% (panel remark, no denominator) [TRI-ILTACON-2025*]. A consulting vendor quotes 91 proposals a year
 at about 24 hours each, seniors giving about 11 hours each; unsourced [PROJECTWORKS-BD-2026*].
 
-**Independent evidence (all adjacent):** AI matched human procurement staff on compliance checks but was volatile on
-value-add claims across 123 Ohio IT bids [JBL-MCKINLEY-2026]; tailored cover letters lost signal value after an AI tool
-arrived on a labour platform (51% weaker link to callbacks) [CUI-DIAS-YE-2025]; legal research tools hallucinated 17-33%
-[STANFORD-MAGESH-2024].
+**Independent evidence (all adjacent):** AI models aligned with human procurement staff on compliance signals but were
+volatile on value-add claims across 123 Ohio IT bids [JBL-MCKINLEY-2026]; tailored cover letters lost signal value after
+an AI tool arrived on a labour platform (51% weaker link to callbacks) [CUI-DIAS-YE-2025]; legal research tools
+hallucinated 17-33% [STANFORD-MAGESH-2024].
 
 **What to measure (recommend; nobody publishes these yet):** win and shortlisting rate for AI-assisted versus other bids
 against a pre-AI baseline; hours and senior hours per bid; share of RFPs declined at go/no-go; errors caught at review
@@ -227,17 +226,14 @@ certification; what to say in the pitch room.
   expects new responsibilities [LOOPIO-TRENDS-2026]; more than half of AI adopters are adding staff
   [RESPONSIVE-SRM-2025]; 13% of AEC firms expect workforce reductions [BDC-UNANET-2026].
 - **Juniors:** associates are likelier than seniors to say AI has not changed their role [LOOPIO-TRENDS-2026]; a
-  patent-drafting trial found durable skill gains concentrated in seniors [NBER-AUTOR-2026*]; design is in
-  talent-learning.
+  patent-drafting trial found durable skill gains concentrated in seniors [NBER-AUTOR-2026*] (see talent-learning).
 - **In-house:** legal operations moves from reading each bid to reviewing comparisons [ABA-LPMRFP-2026].
 
 ## 8. Frontier
 
-- 2026-03 (Legalweek, search-only): session "RFP 3.0" on firms and clients co-creating AI proposals
-  [LEGALWEEK-RFP3-2026*].
-- 2026-04-07: Priori announces Scout for outside-counsel selection (in-house) [PRIORI-SCOUT-2026].  2026-04-16:
-  Introhive MCP server (a standard connector for AI assistants) preview for pitch preparation [INTROHIVE-MCP-2026].
-  2026-04-17: Stanford panel asks how in-house leaders judge firms' AI in pitches [STANFORD-GENLEGAL-2026*].
+- 2026-04-07: Priori announces Scout for outside-counsel selection (in-house) [PRIORI-SCOUT-2026]. 2026-04-16: Introhive
+  MCP server (a standard connector for AI assistants) preview for pitch preparation [INTROHIVE-MCP-2026]. 2026-04-17:
+  Stanford panel asks how in-house leaders judge firms' AI in pitches [STANFORD-GENLEGAL-2026*].
 - 2026-06-08: commentary on undisclosed AI in federal proposal evaluation [NATLAW-BRADLEY-2026]. 2026-06-17: GSA draft
   clause on data in LLM systems [FEDREG-GSA-2026]. 2026-06-23: Harvey BD guide with a won-pitch story [HARVEY-BD-2026].
 - 2026-07: ABA reports AI questions in law-firm RFPs and legal departments comparing bids with AI [ABA-LPMRFP-2026];
@@ -270,7 +266,6 @@ certification; what to say in the pitch room.
   record (`#18`).
 - **"Clients only want a list of our tools."** Clients call a product name an unacceptable answer and want matter-level
   detail [PARKERPOE-TR-2026; LAWSITES-LITERA-2026] (`#17`).
-
 - **"Vendor case studies prove the ROI."** They give recollections and projections with no baseline (§5). Ask for a
   before-and-after on your own bids; only 18% of organisations measure AI return on investment [TR-AIPS-2026*].
 
@@ -281,16 +276,14 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys marked * 
 - **Regulators and professional bodies:** PPN-017-2025, PPN-0224-2024, CALDGS-SCM2302-2025, FEDREG-GSA-2026,
   NSF-GENAI-2023, NIH-NOTOD25132-2025, SEC-2024-36, FTC-AICOMPLY-2024, CALBAR-GENAI-2026, ABA-OP512-2024,
   ABA-LPMAI-2026, ABA-LPMRFP-2026, ICMCI-AICODE-2026, FLBAR-OP241-2024, LGL-SRA-2026* (Local Government Lawyer,
-  2026-08-17).
-- **Academic:** JBL-MCKINLEY-2026, CUI-DIAS-YE-2025, GALDIN-SILBERT-2025, NOY-ZHANG-2023, STANFORD-MAGESH-2024,
-  NBER-AUTOR-2026* (NBER Working Paper 35720, 2026-09).
+  2026-08-17). **Academic:** JBL-MCKINLEY-2026, CUI-DIAS-YE-2025, GALDIN-SILBERT-2025, NOY-ZHANG-2023,
+  STANFORD-MAGESH-2024, NBER-AUTOR-2026* (NBER Working Paper 35720, 2026-09).
 - **Surveys:** LOOPIO-TRENDS-2026, QORUSDOCS-ITBRIEF-2026, IKAUN-BENCH-2026, BDC-UNANET-2026, RESPONSIVE-SRM-2025,
   INTROHIVE-LAWSITES-2026, TR-FOP-2026, TRI-STANDOUT-2026, SOURCE-PRECISION-2026, DAYSHAPE-ONREC-2026,
   LEGALIT-IKAUN-2025* (Legal IT Insider, 2025-06-17), RESPONSIVE-SRM-2026* (Responsive report landing page, 2026),
   TR-AIPS-2026* (Thomson Reuters, 2026).
 - **Conferences and events:** TRI-LEGALWEEK-2026, TRI-CMBDO34-2027 (scheduled), LMA-DECENT-2026, G2X-CAPTURE-2026,
-  TRI-ILTACON-2025* (TRI, 2025-09-02),, STANFORD-GENLEGAL-2026* (Stanford Law School, 2026-04-17), LEGALWEEK-RFP3-2026*
-  (Law.com, 2026-03; search-only).
+  TRI-ILTACON-2025* (TRI, 2025-09-02), STANFORD-GENLEGAL-2026* (Stanford Law School, 2026-04-17).
 - **Firms and job postings:** VERSENT-BIDASSISTANT-2025, STINSON-LAW360-2026, BROWNEJACOBSON-AIPROC-2025,
   UPPEREDGE-PROPTRAP-2026, UPPEREDGE-SI-2025, JMW-SRA-2026, MONDAQ-BSB-2026, RANDSTAD-PROPOSALMGR-2026,
   LATHAM-INNOVATIONATTY-2026, LEGORA-JOB-RFP-2026* (Legora job posting, 2026-07-31).

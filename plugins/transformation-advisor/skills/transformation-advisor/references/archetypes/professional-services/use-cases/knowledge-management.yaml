@@ -1,5 +1,6 @@
 # Use cases: professional-services / knowledge-management
-# Sources checked 2026-10-19. 23 entries: A 0, B 14, C 8, D 1. Merged from 48 candidates in three deep dives
+# Sources checked 2026-10-19 and verified against the sources the same day (see
+# research/runs/wave3/knowledge-management-verification-report.md). 23 entries: A 0, B 12, C 10, D 1. Merged from 48 candidates in three deep dives
 # (practice 16, discourse 17, governance 15) plus items routed here from the acceptance-risk, client-development,
 # delivery-management, firm-finance, pursuit-proposals, staffing-resourcing and talent-learning deep dives.
 # No firm, consultancy or in-house team publishes a measured outcome (error rate, override rate, search success,
@@ -22,14 +23,14 @@
   maturity: in-production
   problem: >-
     Lawyers cannot quickly find the precedent or template they want in a growing collection; at Allens, browsing
-    through SharePoint was meant only as an interim fix (IMANAGE-ALLENS-2026). ILTA's 2026 survey summary says
+    through SharePoint was meant only as an interim fix (IMANAGE-ALLENS-2025). ILTA's 2026 survey summary says
     knowledge infrastructure "remains dramatically underdeveloped" across enterprise search and expertise management
     (ILTA-TECHSURVEY-2026, p. 9).
   solution: >-
     The knowledge team keeps a curated library of precedents and templates, with a taxonomy (an agreed set of
     categories), inside the document management system (DMS: the firm's governed store of matter documents). An AI
     search layer surfaces relevant documents in context, with favourites and team-pinned standard documents. Allens and
-    Womble Bond Dickinson UK use iManage Insight+ (IMANAGE-ALLENS-2026; IMANAGE-WOMBLE-2026). Comparable products were
+    Womble Bond Dickinson UK use iManage Insight+ (IMANAGE-ALLENS-2025; IMANAGE-WOMBLE-2026). Comparable products were
     launched or announced in 2025-26: Litera Firm AI Search, Thomson Reuters CoCounsel Knowledge Search, NetDocuments
     SmartSearch (private preview) and DeepJudge with Harvey (LAWSITES-ILTACON4-2026; AL-TRKNOWLEDGE-2025;
     LAWSITES-NETDOCS-2026; LAWSITES-HARVEYDJ-2026).
@@ -39,7 +40,7 @@
     figure: 1,350 legal staff
     measures: Legal staff at Allens who 'now benefit from' the Insight+ search experience (an access count in a vendor case study)
     provenance: vendor-published
-    source_ref: IMANAGE-ALLENS-2026
+    source_ref: IMANAGE-ALLENS-2025
   - lever: experience
     description: Headline statistics on the Womble Bond Dickinson UK story; the text gives no share of lawyers using search
     figure: 1,250 Insight+ users; 600 lawyers
@@ -47,39 +48,39 @@
     provenance: vendor-published
     source_ref: IMANAGE-WOMBLE-2026
   - lever: capacity
-    description: Adoption snapshot from a live poll at one ILTACON 2025 knowledge session, not an outcome of search
+    description: Adoption snapshot from a live poll at one ILTACON 2025 session, not an outcome of search
     figure: 44 of 89 piloting AI tools; 16 in firmwide deployment; 6 not started
     measures: Attendees at one ILTACON 2025 session who answered a live poll, as reported by a vendor (Draftwise)
     provenance: vendor-published
     source_ref: DRAFTWISE-ILTACON-2025
   prerequisites:
-  - "A curated library with an existing taxonomy; Allens' head of knowledge says the vendor's team was impressed by the curation and taxonomy already in place (IMANAGE-ALLENS-2026)"
+  - "A curated library with an existing taxonomy; Allens' head of knowledge says the vendor's team was impressed by the curation and taxonomy already in place (IMANAGE-ALLENS-2025)"
   - "Womble Bond Dickinson cut a two-decade taxonomy to a maximum of four nodes before migration and added search facets and metadata tagging (IMANAGE-WOMBLE-2026)"
   - "Scanned and image-only files made searchable; iManage says its native OCR (text recognition) addresses this (LAWSITES-IMANAGE-2026)"
   - "Permissions and ethical walls (screens that keep named staff away from a matter's information) carried through to the search layer (LAWSITES-HARVEYDJ-2026)"
-  - "Practice-group training and influential lawyer champions (IMANAGE-ALLENS-2026)"
+  - "Practice-group training and influential lawyer champions (IMANAGE-ALLENS-2025)"
   risks_and_guardrails:
-  - "Allens' Chief Knowledge Officer says there is a risk lawyers take the path of least resistance rather than locating the most relevant template (IMANAGE-ALLENS-2026)"
+  - "Allens' Chief Knowledge Officer says there is a risk lawyers take the path of least resistance rather than locating the most relevant template (IMANAGE-ALLENS-2025)"
   - "Womble Bond Dickinson's head of IT applications says AI will not necessarily distinguish good-quality content from content it should not serve up (IMANAGE-WOMBLE-2026)"
-  - "A practitioner at ILTACON 2025 said language models are not good search engines: retrieve the top documents first, then pass them to the model (DRAFTWISE-ILTACON-2025)"
+  - "Draftwise's ILTACON 2025 write-up says language models are not good search engines; Oz Benamram advised searching first for the top documents, then feeding them to the model (DRAFTWISE-ILTACON-2025)"
   - "Where an AI system uses client information, the firm must apply required ethical screens so a screened lawyer is not exposed through it (NYCBAR-OP2024-5-2024, pp. 3-4)"
   - "California's guidance says agentic systems that reach knowledge bases or document systems can disclose confidential information across matters if poorly configured; lawyers must limit and monitor access (CALBAR-GENAI-2026, pp. 5-6)"
   - "No search-success, precision or permission-leakage test results are published in any source read"
   human_checkpoints:
-  - "Knowledge team curates, classifies and retires content before it is searchable (IMANAGE-WOMBLE-2026)"
+  - "Assigned content owners curate and tag material before it enters the knowledge repository (IMANAGE-WOMBLE-2026)"
   - "The lawyer chooses which retrieved precedent applies to the matter"
-  - "IT and KM owners test that a user behind an ethical wall cannot retrieve that matter's material, before and after rollout"
+  - "IT and KM owners test that a user behind an ethical wall cannot retrieve that matter's material, before and after rollout (recommended; no source reports such a test)"
   role_evolution: >-
-    Allens' knowledge team spends more effort on curation, taxonomy, pinning standard documents, training and finding
-    champions (IMANAGE-ALLENS-2026). In an unnamed global firm's story, knowledge lawyers still draft templates and answer
-    queries while KM professionals run the systems (IMANAGE-EMEAFIRM-2026). ILTA reports that many firms anticipate added
+    Allens' knowledge team curates the library and its taxonomy, pins standard documents for everyone, trains practice
+    groups and recruits lawyer champions (IMANAGE-ALLENS-2025); the story does not say how the team's workload changed. In an unnamed global firm's story, knowledge lawyers still draft templates and answer
+    queries while KM professionals run the systems (IMANAGE-EMEAFIRM-2025). ILTA reports that many firms anticipate added
     headcount in knowledge management among other functions (ILTA-TECHSURVEY-2026, p. 5).
   evidence_grade: B
   sources:
-  - {ref: IMANAGE-ALLENS-2026, title: "Allens taps into goldmine of enterprise knowledge with Insight+ (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/allens-insightplus/", date: "2026-10-19", access: full, locator: "Intro; 'The business challenge'; 'The solution'"}
-  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-10-19", access: full, locator: "Headline statistics; 'The solution'; 'The business outcomes'"}
-  - {ref: IMANAGE-EMEAFIRM-2026, title: "Global law firm, EMEA region: Insight+ replaces an in-house knowledge platform (customer story, firm unnamed; read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-law-firm-emea-region/", date: "2026-10-19", access: full, locator: "Paragraphs on go-live, user testers and planned analytics"}
-  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p. 9 'Curtain Call for the Data Center'; p. 5 headcount"}
+  - {ref: IMANAGE-ALLENS-2025, title: "Allens taps into goldmine of enterprise knowledge with Insight+ (customer story; page undated, date from the downloadable PDF version created 2025-09-25)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/allens-insightplus/", date: "2025-09", access: full, locator: "Intro; 'The business challenge'; 'The solution'"}
+  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; page undated, date from the downloadable PDF version created 2026-08-07)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-08", access: full, locator: "Headline statistics; 'The solution'; 'The business outcomes'"}
+  - {ref: IMANAGE-EMEAFIRM-2025, title: "Global law firm, EMEA region: Insight+ replaces an in-house knowledge platform (customer story, firm unnamed; page undated, date from the downloadable PDF version created 2025-06-17)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-law-firm-emea-region/", date: "2025-06", access: full, locator: "Paragraphs on go-live, user testers and planned analytics"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "p. 9 'Curtain Call for the Data Center'; p. 5 headcount"}
   - {ref: LAWSITES-ILTACON4-2026, title: "ILTACON News Round-Up Part 4, The Business of Law", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html", date: "2026-09-04", access: full, locator: "Litera section, Firm AI Search"}
   - {ref: AL-TRKNOWLEDGE-2025, title: "Thomson Reuters Launches CoCounsel Knowledge Search", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2025/07/09/thomson-reuters-launches-cocounsel-knowledge-search/", date: "2025-07-09", access: full, locator: "Paragraphs 1-3"}
   - {ref: LAWSITES-NETDOCS-2026, title: "NetDocuments Unveils Legal Context Graph to Map Legal Knowledge Alongside a Reimagined Platform", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/05/netdocuments-unveils-legal-context-graph-to-map-legal-knowledge-alongside-a-reimagined-platform.html", date: "2026-05-14", access: full, locator: "Feature list (SmartSearch)"}
@@ -90,9 +91,10 @@
   - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Duty of Confidentiality row, pp. 5-6"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Firm kind: law firms (Allens; Womble Bond Dickinson UK); two further iManage stories are anonymous (a global law
-    firm's EMEA region, six months to go live for the knowledge team with about 130 user testers and plans for search
-    analytics; an independent regulatory body with about 15,000 precedent documents) and support notes only. All
+    Firm kind: law firms (Allens; Womble Bond Dickinson UK). A further iManage story is anonymous (a global law firm's
+    EMEA region: six months to go live for the knowledge team, about 130 user testers and planned search analytics) and
+    supports notes only (IMANAGE-EMEAFIRM-2025). iManage customer-story pages carry no date; dates come from the
+    downloadable PDF versions. All
     named-firm evidence is vendor-authored. The Litera, Thomson Reuters, NetDocuments and DeepJudge products are
     launches without named customers. Related: tax-research-advisory-05 (knowledge assistant over a tax function's own
     memos), assurance-quality-management-12 (guidance assistant grounded in audit manuals), security-operations-02
@@ -113,18 +115,18 @@
   maturity: in-production
   problem: >-
     A transactional lawyer remembers a good clause from a prior deal but loses time hunting through folders, and may
-    land on an unexecuted draft or a counterparty's markup (DRAFTWISE-PRECEDENT-2025). Staff open files one by one or
-    rely on remembering where a document sits (IMANAGE-BICALHO-2026).
+    land on an unexecuted draft or a counterparty's markup (DRAFTWISE-PRECEDENT-2025). A Bicalho Navarro partner
+    describes trying to remember where a document is or spending hours searching for it (IMANAGE-BICALHO-2026).
   solution: >-
-    An assistant built into the DMS answers plain-language questions against the firm's own documents and returns
-    marked citations, without moving content outside the governed platform (Ask iManage at Chaffetz Lindsey, Bicalho
-    Navarro and Digital Commerce Bank; NetDocuments markets a comparable ndMAX assistant) (IMANAGE-CHAFFETZ-2026;
+    An assistant built into the DMS answers plain-language questions against the firm's own documents without moving
+    content outside the governed platform (Ask iManage at Chaffetz Lindsey and Digital Commerce Bank, and under evaluation
+    by a select group of attorneys at Bicalho Navarro; NetDocuments markets a comparable ndMAX assistant) (IMANAGE-CHAFFETZ-2026;
     IMANAGE-BICALHO-2026; IMANAGE-DCB-2026; NETDOCUMENTS-NDMAX-2026). Inside Word, precedent tools search past documents
     for matching clauses and some rewrite them for the current deal: Spellbook Library, Litera One Precedent (beta, July
     2025) and SimpleDocs for in-house teams (LAWSITES-SPELLBOOK-2025; LAWSITES-LITERA-2025; LAWSITES-SIMPLEDOCS-2026).
   outcomes:
   - lever: speed
-    description: Chaffetz Lindsey deployed the assistant to everyone in one window, with no staged rollout by practice group
+    description: Chaffetz Lindsey deployed the assistant within a two-month window without staging the rollout or segmenting it by practice group
     figure: two-month window
     measures: Elapsed deployment time, per the vendor case study
     provenance: vendor-published
@@ -154,20 +156,21 @@
     document rather than trying to remember where it is (IMANAGE-BICALHO-2026).
   evidence_grade: B
   sources:
-  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-10-19", access: full, locator: "Paragraphs on the two-month deployment, Ask iManage use and ethical screens"}
+  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; page undated, date from the downloadable PDF version created 2026-07-29)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-07", access: full, locator: "Paragraphs on the two-month deployment, Ask iManage use and ethical screens"}
   - {ref: IMANAGE-BICALHO-2026, title: "Bicalho Navarro Advogados: greater trust in knowledge search results in the iManage Cloud (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/bicalho-navarro/", date: "2026-10-19", access: full, locator: "Partner and IT manager quotes; 1.5 million documents"}
-  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-10-19", access: full, locator: "Ask iManage use and librarians' governance role"}
+  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; page undated, date from the downloadable PDF version created 2026-07-22)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-07", access: full, locator: "Ask iManage use and librarians' governance role"}
   - {ref: NETDOCUMENTS-NDMAX-2026, title: "ndMAX legal AI suite (product page; undated, read 2026-10-19)", publisher: NetDocuments, type: vendor, url: "https://www.netdocuments.com/ndmax", date: "2026-10-19", access: full, locator: "Legal AI Assistant paragraph"}
   - {ref: LAWSITES-SPELLBOOK-2025, title: "Introducing Spellbook Library: Contract AI That Learns From Your Precedents", publisher: LawSites, type: press, url: "https://www.lawnext.com/2025/07/introducing-spellbook-library-contract-ai-that-learns-from-your-precedents.html", date: "2025-07-31", access: full, locator: "Opening paragraphs"}
   - {ref: LAWSITES-LITERA-2025, title: "Litera Expands Litera One Platform with New Drafting and Knowledge Management Features", publisher: LawSites, type: press, url: "https://www.lawnext.com/2025/07/litera-expands-litera-one-platform-with-new-drafting-and-knowledge-management-features.html", date: "2025-07-31", access: full, locator: "Precedent beta; adoption and time-saving paragraph"}
   - {ref: LAWSITES-SIMPLEDOCS-2026, title: "SimpleDocs Launches Contract Intelligence Layer", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/02/simpledocs-launches-contract-intelligence-layer-putting-policy-precedent-and-market-data-inside-microsoft-word.html", date: "2026-02-18", access: full, locator: "Three-source description; precedent paragraph"}
   - {ref: DRAFTWISE-PRECEDENT-2025, title: "Garbage In, Garbage Out: How to Build a Precedent Database Lawyers Can Trust", publisher: Draftwise, type: vendor, url: "https://www.draftwise.com/blog/garbage-in-garbage-out-how-to-build-a-precedent-database-your-lawyers-can-trust", date: "2025-09-24", access: full, locator: "Opening scenario; 'Start with Surgical Precision'"}
   - {ref: VALS-VLAIR-2025, title: "Vals Legal AI Report (VLAIR)", publisher: Vals AI, type: vendor, url: "https://www.vals.ai/industry-reports/vlair-2-27-25", date: "2025-02-27", access: full, locator: "Results table, Document Q&A row"}
-  - {ref: IMANAGE-SEYFARTH-2026, title: "Seyfarth Shaw (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/seyfarth-shaw/", date: "2026-10-19", access: full, locator: "Paragraph on the evaluation of the assistant"}
+  - {ref: IMANAGE-SEYFARTH-2026, title: "Seyfarth Shaw (customer story; page undated, date from the downloadable PDF version created 2026-08-07)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/seyfarth-shaw/", date: "2026-08", access: full, locator: "Paragraph on the evaluation of the assistant"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Firm kind: law firms (Chaffetz Lindsey; Bicalho Navarro Advogados) and an in-house legal and technology team at a
-    bank (Digital Commerce Bank, in-house); SimpleDocs targets in-house legal departments. Seyfarth Shaw's evaluation of
+    Firm kind: law firms (Chaffetz Lindsey, a 75-person firm; Bicalho Navarro Advogados, where a select group of
+    attorneys is evaluating the assistant) and an in-house legal and technology team at a Canadian fintech bank (Digital
+    Commerce Bank, in-house); SimpleDocs targets in-house legal departments. Seyfarth Shaw's evaluation of
     Ask iManage was described as underway with no result (IMANAGE-SEYFARTH-2026). Drafting from
     retrieved precedent belongs to professional-services-work-production-05; cited Q&A over a supplied document set to
     professional-services-work-production-03.
@@ -188,12 +191,13 @@
   problem: >-
     At engagement kickoff, finding the most relevant research documents and experts is described as taking about two
     weeks of researching and networking, even for senior colleagues; analogues and comparables could take days of
-    chasing experts (MCKINSEY-LILLI-2023).
+    chasing experts (MCKINSEY-LILLI-2023, McKinsey's 2023 announcement as read by the deep dive; the page could not be
+    re-opened for verification).
   solution: >-
     McKinsey built its own assistant, Lilli, over more than 40 curated knowledge sources. It returns about five to seven
-    relevant items with summaries and links, and names experts, with internal-knowledge and external-sources modes
-    (MCKINSEY-LILLI-2023). Confidential client data is permitted in Lilli but not in public tools, per a Bloomberg
-    interview as relayed (THEOUTPOST-LILLI-2025). Deloitte's PairD was launched for internal use in 2023, according to a
+    relevant internal content pieces and points users to experts, with internal-knowledge and external-sources modes
+    (OFFICECHAI-LILLI-2025, relaying Business Insider; MCKINSEY-LILLI-2023). Confidential client data may be entered in
+    Lilli but not in public tools, per Bloomberg as relayed by TheOutpost.ai (THEOUTPOST-LILLI-2025). Deloitte's PairD was launched for internal use in 2023, according to a
     Stanford Digital Economy Lab paper (STANFORD-DEL-2026). Infosys built an LLM-based search platform embedded in
     everyday tools so consultants can reuse project artifacts across silos (KMWORLD-APQC-2026).
   outcomes:
@@ -204,7 +208,7 @@
     provenance: self-reported
     source_ref: BOERSEN-LILLI-2024
   - lever: capacity
-    description: Usage and time saving relayed second-hand from a June 2025 Bloomberg interview (original not read)
+    description: Usage and time saving relayed by TheOutpost.ai, which footnotes the figures to Entrepreneur's June 2025 report on Bloomberg's coverage (originals not read)
     figure: over 75% of 43,000 employees monthly; 17 uses a week; over 500,000 prompts a month; 30% of time saved
     measures: Monthly users, uses per average user, prompts a month, and share of time otherwise spent gathering and synthesising information; no method for the 30%
     provenance: self-reported
@@ -222,29 +226,30 @@
     provenance: self-reported
     source_ref: KMWORLD-APQC-2026
   prerequisites:
-  - "Hundreds of data stewards who curate content, check accuracy and quality, sanitise it for client confidentiality and make it searchable (MCKINSEY-LILLI-2023)"
-  - "A project team that grew from three to over 70 people, with input from legal, cyber security, risk and talent functions (MCKINSEY-LILLI-2023)"
-  - "Upskilling users on prompt engineering and content validation (MCKINSEY-LILLI-2023)"
+  - "Hundreds of data stewards who curate content, check accuracy and quality, sanitise it for client confidentiality and make it searchable (MCKINSEY-LILLI-2023, as read by the deep dive; not re-verified)"
+  - "A four-person project team that grew to more than 120 people contributing part of their working time (BOERSEN-LILLI-2024)"
+  - "Training: McKinsey's Erik Roth says employees use Lilli twice as often after an hour of training (BOERSEN-LILLI-2024)"
   risks_and_guardrails:
-  - "McKinsey says the biggest challenge was bringing legal, cyber security, risk management and talent functions to the table quickly, not the technology (MCKINSEY-LILLI-2023)"
+  - "McKinsey's 2023 announcement, as read by the deep dive, says the biggest challenge was bringing legal, cyber security, risk management and talent functions to the table quickly, not the technology (MCKINSEY-LILLI-2023; not re-verified)"
   - "McKinsey's executive said everything that goes out to a client must be reviewed by a person first (BOERSEN-LILLI-2024)"
   - "In the BCG field experiment, consultants using AI on a task selected to be outside AI's capability were 19% less likely to produce correct solutions (HBS-DELLACQUA-2023)"
   - "Deloitte Australia agreed to repay the final instalment of an AUD 440,000 contract after a report contained fabricated references; the revised report disclosed use of Azure OpenAI (CTV-DELOITTE-2025)"
   - "Brynjolfsson and Petropoulos argue internal AI augmentation can heighten information asymmetry between consultant and client (STANFORD-DEL-2026)"
   - "No independent evaluation of Lilli's accuracy was found"
   human_checkpoints:
-  - "Consultants validate what the assistant returns; McKinsey lists content validation as a skill it trains (MCKINSEY-LILLI-2023)"
+  - "Consultants validate what the assistant returns; McKinsey lists content validation as a skill it trains (MCKINSEY-LILLI-2023; not re-verified)"
   - "A person reviews everything before it reaches a client (BOERSEN-LILLI-2024)"
-  - "Data stewards curate and sanitise the underlying sources (MCKINSEY-LILLI-2023)"
+  - "Data stewards curate and sanitise the underlying sources (MCKINSEY-LILLI-2023; not re-verified)"
   role_evolution: >-
-    McKinsey's existing data stewards became central to quality (MCKINSEY-LILLI-2023), and over 120 people contribute
-    part of their time to the platform (BOERSEN-LILLI-2024). McKinsey's technology and AI leader is quoted as saying Lilli
-    could do work such as slide production that analysts used to do, without this necessarily meaning fewer analysts
-    (THEOUTPOST-LILLI-2025).
+    McKinsey's 2023 announcement, as read by the deep dive, describes existing data stewards becoming central to quality
+    (MCKINSEY-LILLI-2023; not re-verified). More than 120 people contribute part of their time to the platform
+    (BOERSEN-LILLI-2024). McKinsey's technology and AI leader is quoted, in an Australian Financial Review report relayed
+    by TheOutpost.ai, as saying the technology could do the PowerPoint work of business analysts, without this
+    necessarily meaning fewer analysts (THEOUTPOST-LILLI-2025).
   evidence_grade: B
   sources:
-  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: full, locator: "Paragraphs on 40+ sources, two-week kickoff search, data stewards, team of 70"}
-  - {ref: BOERSEN-LILLI-2024, title: "AI in consulting: more than just creating slide presentations", publisher: Börsen-Zeitung, type: press, url: "https://boersen-zeitung.de/english/ai-in-consulting-more-than-just-creating-slide-presentations", date: "2024-08-26", access: full, locator: "Paragraphs 2-4"}
+  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL; could not be opened on 2026-10-19, so claims resting only on it are marked not re-verified; a search snippet confirms 40+ curated sources and experts in 70 countries)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: search-only, locator: "Paragraphs on 40+ sources, two-week kickoff search, data stewards"}
+  - {ref: BOERSEN-LILLI-2024, title: "AI in consulting: more than just creating slide presentations", publisher: Börsen-Zeitung, type: press, url: "https://boersen-zeitung.de/english/ai-in-consulting-more-than-just-creating-slide-presentations", date: "2024-08-26", access: full, locator: "Paragraphs 2-4; paragraph on 'prompt anxiety' and training"}
   - {ref: THEOUTPOST-LILLI-2025, title: "McKinsey embraces AI for consulting tasks, transforming junior roles (summary of a Bloomberg interview)", publisher: TheOutpost.ai, type: press, url: "https://theoutpost.ai/news-story/mc-kinsey-embraces-ai-for-consulting-tasks-transforming-junior-roles-16077/", date: "2025-06-03", access: full, locator: "Paragraphs on monthly use, prompts, 30% and client-data policy"}
   - {ref: OFFICECHAI-LILLI-2025, title: "McKinsey Has Built An Internet AI Chatbot Named Lilli Which Is Used By 70% Of Employees (relays Business Insider)", publisher: OfficeChai, type: press, url: "https://officechai.com/ai/mckinsey-has-built-an-internet-ai-chatbot-named-lilli-which-is-used-by-70-of-employees/", date: "2025-04-28", access: full, locator: "Paragraphs 2-4"}
   - {ref: KMWORLD-APQC-2026, title: "The Next Edge in Knowledge Management: KM for the Modern Workforce and the Era of AI (Lynda Braksiek, APQC)", publisher: KMWorld, type: press, url: "https://www.kmworld.com/Articles/Editorial/Features/The-Next-Edge-in-Knowledge-Management-KM-for-the-Modern-Workforce-and-the-Era-of-AI-173630.aspx?pageNum=2", date: "2026-03-09", access: full, locator: "Infosys paragraph"}
@@ -253,9 +258,10 @@
   - {ref: CTV-DELOITTE-2025, title: "Deloitte to partially refund Australian government for report with apparent AI-generated errors (AP)", publisher: CTV News / Associated Press, type: press, url: "https://www.ctvnews.ca/business/article/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/", date: "2025-10-07", access: full, locator: "Article body"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Firm kind: consulting (McKinsey; Deloitte) and an IT-services consultancy (Infosys). Grade B, not A: McKinsey's
-    usage counts and time-saving claims are self-reported with no method, the current figures reach us through secondary
-    relays, and mckinsey.com was blocked. The Stanford paper relays the 30% figure as 'up to 30 percent' (McKinsey n.d.).
+    Firm kind: consulting (McKinsey; Deloitte) and an IT-services consultancy (Infosys). Grade B rests on the
+    Börsen-Zeitung interview in which McKinsey's Erik Roth reports Lilli's usage (a named deployment, self-reported, no
+    method); not A because the current figures reach us through secondary relays and mckinsey.com could not be opened.
+    Secondary relays differ: OfficeChai gives 70% of 45,000 employees, TheOutpost.ai over 75% of 43,000. The Stanford paper relays the 30% figure as 'up to 30 percent' (McKinsey n.d.).
     A landscape snippet (AI Weekly, late 2025) also cites 500,000+ prompts a month. Related:
     professional-services-work-production-07 (consulting analysis and deliverables).
 
@@ -278,10 +284,12 @@
     maintained through annual surveys (AL-DIDOMENICO-2026). ILTA's summary says expertise management is underdeveloped
     (ILTA-TECHSURVEY-2026, p. 9).
   solution: >-
-    The assistant names experts alongside documents (McKinsey's Lilli) (MCKINSEY-LILLI-2023). Experience systems
+    McKinsey's Lilli points users to internal experts alongside documents (OFFICECHAI-LILLI-2025, relaying Business
+    Insider; MCKINSEY-LILLI-2023, not re-verified). Experience systems
     catalogue each lawyer's and engagement's experience and suggest relevant experience for a pursuit (Intapp DealCloud)
     (INTAPP-EXPERIENCE-2026). Intapp says Celeste, generally available from 2026-07-15, surfaces relevant matters, partner
-    experience and pitch materials (INTAPP-CELESTEGA-2026). Litera's Firm AI Search queries matter, client and expertise
+    experience and prior pitch materials in legal; it names Hg and BakerHostetler as early adopters, but not for this use
+    (INTAPP-CELESTEGA-2026). Litera's Firm AI Search queries matter, client and expertise
     data (LAWSITES-ILTACON4-2026). NetDocuments' context graph, in private preview, shows the people who have done the work
     before (NETDOCUMENTS-CONTEXTGRAPH-2026). CV and experience databases such as Arup People (engineering) feed bids and
     staffing (IKAUN-ARUP-2026).
@@ -289,7 +297,7 @@
   - lever: speed
     description: The firm's own description of how long finding analogues took before Lilli; no measurement published
     figure: days (before Lilli)
-    measures: Time to identify analogues or comparables by 'chasing down the right experts', as McKinsey describes it
+    measures: Time to identify analogues or comparables by chasing down the right experts, as McKinsey's 2023 announcement describes it (read by the deep dive; not re-verified)
     provenance: self-reported
     source_ref: MCKINSEY-LILLI-2023
   - lever: experience
@@ -301,7 +309,7 @@
   - lever: quality
     description: Data barrier to outcome-aware expertise matching (resource managers, vendor-commissioned)
     figure: 47% cite poor or fragmented data; 7.3% say outcome data is easily accessible and routinely used in staffing
-    measures: Shares of respondents to the Resource Management Institute study commissioned by Kantata
+    measures: Shares of respondents (from 44 organisations) to the Resource Management Institute study commissioned by Kantata; 47% cite poor or fragmented data as a barrier to AI-augmented resource management
     provenance: vendor-published
     source_ref: KANTATA-RMI-2026
   prerequisites:
@@ -312,8 +320,8 @@
   - "A lawful basis and transparency to staff for using their work records, and a rule separating expertise search from performance evaluation"
   risks_and_guardrails:
   - "No source reports how accurate expert or experience suggestions are"
-  - "Expertise surfaced from matter records may reflect confidential client work, so matter and ethical-wall rules carry over (CALBAR-GENAI-2026)"
-  - "The EU AI Act lists AI for employment and management of workers as high-risk; Annex III obligations run from 2027-12-02 after the AI Omnibus extension (EC-AIACT-2026)"
+  - "California's guidance warns that poorly configured agentic systems may disclose confidential information across matters (CALBAR-GENAI-2026, p. 6); expertise surfaced from matter records raises the same issue (inference)"
+  - "The EU AI Act lists AI for employment and management of workers as high-risk; Annex III obligations run from 2027-12-02 after the AI Omnibus extension (EC-AIACT-2026). Whether an expertise finder falls in scope depends on its use, for example in staffing or evaluation (inference)"
   - "California's guidance warns that AI in employment actions or screening may present a risk of unlawful bias (CALBAR-GENAI-2026, p. 9)"
   human_checkpoints:
   - "The professional decides whom to contact and which experience to cite"
@@ -321,10 +329,11 @@
   - "Staff can correct their own expertise profiles"
   role_evolution: >-
     Not described beyond the assistant doing the first search that colleagues used to do by networking
-    (MCKINSEY-LILLI-2023).
-  evidence_grade: B
+    (MCKINSEY-LILLI-2023; not re-verified).
+  evidence_grade: C
   sources:
-  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: full, locator: "Paragraphs on analogues, comparables and experts"}
+  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL; could not be opened on 2026-10-19, so claims resting only on it are marked not re-verified; a search snippet confirms 40+ curated sources and experts in 70 countries)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: search-only, locator: "Paragraphs on analogues, comparables and experts"}
+  - {ref: OFFICECHAI-LILLI-2025, title: "McKinsey Has Built An Internet AI Chatbot Named Lilli Which Is Used By 70% Of Employees (relays Business Insider)", publisher: OfficeChai, type: press, url: "https://officechai.com/ai/mckinsey-has-built-an-internet-ai-chatbot-named-lilli-which-is-used-by-70-of-employees/", date: "2025-04-28", access: full, locator: "Paragraph 3 (five to seven content pieces; experts)"}
   - {ref: INTAPP-EXPERIENCE-2026, title: "Experience management (Intapp DealCloud product page; undated, read 2026-10-19)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/dealcloud/experience-management/", date: "2026-10-19", access: full, locator: "Experience search, suggested experience, data-integration FAQ"}
   - {ref: INTAPP-CELESTEGA-2026, title: "Intapp announces general availability of Celeste, the expert AI coworker for professional firms", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/general-availability-celeste/", date: "2026-07-15", access: full, locator: "Paragraph on surfacing matters and partner experience (routed from the acceptance-risk deep dive)"}
   - {ref: LAWSITES-ILTACON4-2026, title: "ILTACON News Round-Up Part 4, The Business of Law", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html", date: "2026-09-04", access: full, locator: "Litera Announces Firm AI Search, paragraphs 1-3"}
@@ -332,19 +341,21 @@
   - {ref: IKAUN-ARUP-2026, title: "Leveraging Global Capability through Arup People (case study; undated)", publisher: ikaun, type: vendor, url: "https://www.ikaun.com/case-studies/leveraging-global-capability-through-arup-people", date: "2026", access: full, locator: "Implementation + Rollout; Results (routed from the pursuit-proposals deep dive)"}
   - {ref: KANTATA-RMI-2026, title: "New Study Finds Resource Management at a Strategic Crossroads (Resource Management Institute study commissioned by Kantata)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services", date: "2026-04-09", access: full, locator: "Barriers and outcome-data paragraphs"}
   - {ref: AL-DIDOMENICO-2026, title: "Old Problems, New Tools: Maybe You Need a Knowledge Strategy (sponsored by LegalTech Connect)", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2026/10/15/old-problems-new-tools-maybe-you-need-a-knowledge-strategy/", date: "2026-10-15", access: full, locator: "Paragraph 3"}
-  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p. 9"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "p. 9"}
   - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Confidentiality row; Prohibition on Discrimination row, p. 9"}
   - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission, Digital Strategy", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "High-risk list and application timeline"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Firm kind: consulting (McKinsey), engineering (Arup), law firms (Intapp and Litera customers, unnamed). Grade B rests
-    on McKinsey's own description of Lilli naming experts; Intapp, Litera and NetDocuments items are product claims.
+    Firm kind: consulting (McKinsey), engineering (Arup), law firms (Intapp and Litera customers, unnamed). Grade C
+    (lowered from B at verification): McKinsey's own page could not be opened, so Lilli's expert referral rests on a
+    secondary relay (OfficeChai, citing Business Insider); Arup People is a named deployment of expertise location but the
+    case study does not claim AI; Intapp, Litera and NetDocuments items are product claims.
     Ranking people for staffing (Kantata Expertise Agent) belongs to staffing-resourcing; experience and CV databases used
     to assemble bids (ikaun at GRSM, Stinson, Gowling WLG, Neudesic) belong to pursuit-proposals, which holds their
     proposal-time figures.
 
 - id: professional-services-knowledge-management-05
-  title: AI-assisted reclassification and summarisation of historic documents into an AI-ready knowledge bank
+  title: Reclassification and summarisation of historic documents into an AI-ready knowledge bank
   archetype: professional-services
   module: knowledge-management
   function: service-delivery
@@ -357,11 +368,13 @@
   runtime_class: workflow-automation
   maturity: announced
   problem: >-
-    Decades of firm work sit in repositories with inconsistent metadata, so generative tools cannot be pointed at them
-    safely or usefully.
+    Decades of firm work sit in repositories that generative tools cannot safely or usefully be pointed at; Clifford
+    Chance's stated aim is a curated set so that generative tools use only trusted internal materials
+    (ARTIFICIALLAWYER-CLIFFORDCHANCE-2026; the problem statement is an inference from that aim).
   solution: >-
-    Clifford Chance announced a Knowledge Bank built with Epiq Advisory for Law Firms and Microsoft: more than 400,000
-    documents reclassified and summarised into a curated set, with natural-language search, summarisation, smart tagging,
+    Clifford Chance launched a Knowledge Bank built with Epiq Advisory for Law Firms and Microsoft: more than 400,000
+    documents reclassified and summarised into a curated set (the release does not say how far the reclassification was
+    automated), with natural-language search, summarisation, smart tagging,
     generative answers in the lawyer's workflow, and a Permissioned Search feature that applies metadata-driven
     permissions (ARTIFICIALLAWYER-CLIFFORDCHANCE-2026).
   outcomes:
@@ -387,13 +400,15 @@
   evidence_grade: B
   sources:
   - {ref: ARTIFICIALLAWYER-CLIFFORDCHANCE-2026, title: "Clifford Chance launches AI KM platform with Microsoft and Epiq", publisher: Artificial Lawyer, type: press, url: "https://artificiallawyer.com/2026/07/20/clifford-chance-launches-ai-km-platform-with-microsoft-epiq", date: "2026-07-20", access: full, locator: "Feature list and quotes from the Global Head of Knowledge & Training"}
-  - {ref: LAW360-CLIFFORDCHANCE-2026, title: "Clifford Chance launches AI knowledge management tech (lead paragraph only; paywalled)", publisher: Law360, type: press, url: "https://www.law360.com/articles/2503174", date: "2026-07-20", access: search-only, locator: "Lead paragraph"}
+  - {ref: LAW360-CLIFFORDCHANCE-2026, title: "Clifford Chance launches AI knowledge management tech (lead paragraph only; paywalled)", publisher: Law360, type: press, url: "https://www.law360.com/articles/2503174", date: "2026-07-20", access: full, locator: "Lead paragraph (the only text outside the paywall)"}
   - {ref: KMWORLD-LEXSOFT-2025, title: "Conversational AI interfaces and human-AI collaboration to transform legal knowledge management in 2026 (viewpoint by the CEO of Lexsoft Systems)", publisher: KMWorld, type: press, url: "https://www.kmworld.com/Articles/Editorial/ViewPoints/Conversational-AI-interfaces-and-human-AI-collaboration-to-transform-legal-knowledge-management-in-2026-172705.aspx", date: "2025-12-08", access: full, locator: "Paragraphs on professional support lawyers"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Firm kind: law firm (Clifford Chance). Maturity is 'announced' because the sources report a launch without showing
-    use; grade B because a named firm reports the documents are already in the platform. Law360
-    (LAW360-CLIFFORDCHANCE-2026, lead paragraph only) supports only the fact of the announcement. A Legal IT Insider interview with the firm's knowledge lead could not be opened. The
+    Firm kind: law firm (Clifford Chance). Grade check at verification: kept at B because the firm itself (its Global
+    Head of Knowledge & Training, a partner) reports a launched internal platform already holding 400,000+ reclassified
+    and summarised documents, a named deployment without measures. Maturity stays 'announced' because no source shows
+    lawyers using it. Law360 (LAW360-CLIFFORDCHANCE-2026, lead paragraph only) confirms the launch of an internal
+    platform. A Legal IT Insider interview with the firm's knowledge lead could not be opened. The
     firm-finance deep dive also notes this launch (via AI Weekly summarising the FT).
 
 - id: professional-services-knowledge-management-06
@@ -410,8 +425,9 @@
   runtime_class: workflow-automation
   maturity: piloting
   problem: >-
-    Document metadata and version notes are rarely entered by hand, so search and AI summaries run on poorly described
-    content, and scanned files are invisible to search.
+    Version notes are rarely entered by hand, so search and AI summaries run on poorly described content
+    (LAWSITES-NETDOCS-2026), and scanned or image-only files can be invisible to search and AI assistants
+    (LAWSITES-IMANAGE-2026).
   solution: >-
     On filing, the system classifies the document, extracts parties, dates and clauses into the matter record, generates
     a matter overview and writes a summary of what changed between versions; NetDocuments describes these features in a
@@ -427,7 +443,7 @@
     source_ref: LAWSITES-NETDOCS-2026
   prerequisites:
   - "A shared taxonomy; NetDocuments says its graph draws in part on the SALI and FOLIO legal data standards (LAWSITES-NETDOCS-2026)"
-  - "Permissions and ethical walls preserved on derived summaries (LAWSITES-NETDOCS-2026)"
+  - "Permissions and ethical walls applied to what users can find; NetDocuments says SmartSearch results remain subject to them (LAWSITES-NETDOCS-2026)"
   risks_and_guardrails:
   - "NetDocuments says results remain subject to each user's permissions and ethical walls (LAWSITES-NETDOCS-2026)"
   - "The preview opened only on NetDocuments' enterprise AI tier for select customers, so scale and accuracy are unproven in public sources (LAWSITES-NETDOCS-2026)"
@@ -435,8 +451,8 @@
   - "A lawyer or paralegal confirms extracted parties, dates and clauses before they are relied on"
   - "KM samples machine-assigned labels against the taxonomy"
   role_evolution: >-
-    The KMWorld Europe 2026 programme treats taxonomy and metadata as the base of AI systems (KMWORLD-EUROPE-2026); the
-    sources do not report a role change.
+    A KMWorld Europe 2026 session presented taxonomies and ontologies as structured knowledge that AI agents can reference
+    (KMWORLD-EUROPE-2026); the sources do not report a role change.
   evidence_grade: C
   sources:
   - {ref: LAWSITES-NETDOCS-2026, title: "NetDocuments Unveils Legal Context Graph to Map Legal Knowledge Alongside a Reimagined Platform", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/05/netdocuments-unveils-legal-context-graph-to-map-legal-knowledge-alongside-a-reimagined-platform.html", date: "2026-05-14", access: full, locator: "Feature list: Matter Overview, AI-Generated Version History, Document Intelligence"}
@@ -460,8 +476,8 @@
   runtime_class: personal-assistant
   maturity: in-production
   problem: >-
-    Documents scattered across inboxes, desktops, OneDrive, SharePoint and file servers leave no single authoritative
-    version (IMANAGE-DCB-2026); incoming data rooms and productions arrive with inconsistent or numeric file names
+    Teams store documents wherever is easiest, in separate repositories and SharePoint libraries, so nobody can say where
+    all versions of a document are or which is latest (IMANAGE-DCB-2026); incoming data rooms and productions arrive with inconsistent or numeric file names
     (HARVEY-VAULT-2026).
   solution: >-
     Digital Commerce Bank's legal and technology team uses Ask iManage to find all duplicates of a document so librarians
@@ -485,11 +501,11 @@
   - "Librarians file and delete duplicates (IMANAGE-DCB-2026)"
   - "A person confirms the proposed reorganisation plan (HARVEY-VAULT-2026)"
   role_evolution: >-
-    Librarians at the bank move from finding duplicates by hand to directing and approving the assistant's findings
-    (IMANAGE-DCB-2026).
+    Librarians govern the bank's use of the assistant and file or remove the duplicates it finds (IMANAGE-DCB-2026); the
+    story does not say how duplicates were handled before.
   evidence_grade: B
   sources:
-  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-10-19", access: full, locator: "Paragraphs on duplicates and repository state"}
+  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; page undated, date from the downloadable PDF version created 2026-07-22)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-07", access: full, locator: "Paragraphs on duplicates and repository state"}
   - {ref: HARVEY-VAULT-2026, title: "Agentic Vault Search and Organization", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/agentic-vault-search-and-organization", date: "2026-09-08", access: full, locator: "Sections on Agentic Vault Organization"}
   last_reviewed: "2026-10-19"
   notes: >-
@@ -516,8 +532,8 @@
   solution: >-
     A platform continuously maps relationships at document, matter and firm-wide levels under existing permissions and
     hands that structure to any AI tool at run time: NetDocuments Legal Context Graph (private preview from 2026-05-14),
-    Harvey Graph, iManage Context Fabric (general availability announced for October) and Wolters Kluwer Libra over its
-    own content (NETDOCUMENTS-CONTEXTGRAPH-2026; HARVEY-GRAPH-2026; LAWSITES-IMANAGE-2026; LAWSITES-ILTACON3-2026).
+    Harvey Graph, iManage's next-generation platform built around a 'context fabric' (October general availability
+    announced at ILTACON 2026) and Wolters Kluwer Libra over its own content (NETDOCUMENTS-CONTEXTGRAPH-2026; HARVEY-GRAPH-2026; LAWSITES-IMANAGE-2026; LAWSITES-ILTACON3-2026).
     Accenture authors describe a knowledge-graph approach at an unnamed professional-services firm (CMR-ACCENTURE-2026).
   outcomes:
   - lever: quality
@@ -550,8 +566,8 @@
   - "Answers remain verifiable through citations (HARVEY-GRAPH-2026)"
   - "KM or IT reviews how the graph resolves matter and client boundaries"
   role_evolution: >-
-    The Accenture authors say firms that built reusable data and semantic structures could build new AI applications
-    faster, reusing more than half of the semantic structure (CMR-ACCENTURE-2026).
+    The Accenture authors say companies that had built a semantic layer rolled out new AI applications in weeks rather
+    than months because more than half of the structure could be reused (CMR-ACCENTURE-2026); no role change is reported.
   evidence_grade: C
   sources:
   - {ref: HARVEY-GRAPH-2026, title: "Improving agent accuracy with Harvey Graph", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph", date: "2026-10-19", access: full, locator: "Experiments on Legal Agent Bench"}
@@ -561,7 +577,7 @@
   - {ref: LAWSITES-IMANAGE-2026, title: "iManage Unveils Next Evolution of Platform at ConnectLive 2026 (press release reproduced)", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/05/imanage-unveils-next-evolution-of-platform-at-connectlive-2026-as-organizations-prepare-for-the-next-era-of-ai-ready-knowledge-work.html", date: "2026-05-22", access: full, locator: "Context fabric paragraph"}
   - {ref: LAWSITES-ILTACON3-2026, title: "ILTACON News Round-Up Part 3, Documents, Data and AI", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-3-documents-data-and-ai-imanage-netdocuments-entegrata-wolters-kluwer-thomson-reuters-clio-avvoka.html", date: "2026-09-04", access: full, locator: "NetDocuments and Wolters Kluwer Libra sections"}
   - {ref: LAWSITES-HARVEYDJ-2026, title: "Harvey Launches Command Center for Managing Enterprise AI Adoption and Partners with DeepJudge on Institutional Knowledge", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/05/harvey-launches-command-center-for-managing-enterprise-ai-adoption-and-partners-with-deepjudge-on-institutional-knowledge.html", date: "2026-05-20", access: full, locator: "DeepJudge section ('context tax')"}
-  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03-16", access: full, locator: "Section 'Build the Semantic Layer'"}
+  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03", access: full, locator: "Section 'Build the Semantic Layer'"}
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: legal technology vendors; the Accenture example is an unnamed professional-services firm. All figures are
@@ -584,16 +600,17 @@
   runtime_class: workflow-automation
   maturity: announced
   problem: >-
-    Lawyers use several AI products. Without a shared connection, each needs its own export of firm content, and users
-    re-upload materials when they switch tools. A lawyer wanting to know how a similar issue was handled may not know the
+    Lawyers use several AI products. Without a shared connection, each needs its own integration or bulk export of firm
+    content (IMANAGE-MCP-2026), and users re-upload materials when they switch tools (LAWSITES-DEEPJUDGE-2026). A lawyer wanting to know how a similar issue was handled may not know the
     filename, folder or search terms, and the answer may sit across several systems (HARVEY-AGENTICSEARCH-2026). Work done
-    in public AI tools sits outside the firm record and may not be privileged (GOODWIN-HEPPNER-2026).
+    with public AI tools may not be privileged (GOODWIN-HEPPNER-2026).
   solution: >-
     The repository exposes a Model Context Protocol (MCP: an open standard for connecting AI tools to other systems)
     server so approved tools can search and save back under each user's existing permissions, with every retrieval and
     write-back logged (IMANAGE-MCP-2026). Announced: Legora's connection to the iManage MCP Server (LEGORA-IMANAGE-2026);
-    an iManage plug-in for ChatGPT Enterprise (LAWSITES-IMANAGECHATGPT-2026); NetDocuments' MCP connections, in private
-    preview (NETDOCUMENTS-CONTEXTGRAPH-2026). Harvey's agentic search plans its own search across iManage, SharePoint and
+    an iManage plug-in for ChatGPT Enterprise (LAWSITES-IMANAGECHATGPT-2026); NetDocuments' MCP connections through
+    ndConnect, with Claude, Microsoft Copilot, Perplexity, Gemini Enterprise, Harvey and Legora named as partners
+    (NETDOCUMENTS-CONTEXTGRAPH-2026; LAWSITES-ILTACON3-2026). Harvey's agentic search plans its own search across iManage, SharePoint and
     Google Drive, returns cited results and pauses for the lawyer to review (HARVEY-AGENTICSEARCH-2026). DeepJudge released
     an open Agent Handoff Protocol for moving a user's context between AI products (LAWSITES-DEEPJUDGE-2026).
   outcomes:
@@ -629,18 +646,20 @@
   - {ref: LEGORA-IMANAGE-2026, title: "Legora and iManage deepen integration through iManage MCP Server (press release)", publisher: Legora, type: vendor, url: "https://legora.com/newsroom/legora-and-imanage-deepen-integration-through-imanage-mcp-server", date: "2026-10-16", access: full, locator: "Paragraphs 2-4"}
   - {ref: LAWSITES-IMANAGECHATGPT-2026, title: "iManage to Deliver Governed AI-Powered Knowledge Work in ChatGPT Enterprise (press release reproduced)", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/09/imanage-to-deliver-governed-ai-powered-knowledge-work-in-chatgpt-enterprise.html", date: "2026-09-21", access: full, locator: "Paragraphs 1-5"}
   - {ref: NETDOCUMENTS-CONTEXTGRAPH-2026, title: "NetDocuments Unveils the First Context Graph for Legal Work (press release)", publisher: NetDocuments, type: vendor, url: "https://www.netdocuments.com/company-news/netdocuments-unveils-context-graph-legal-platform/", date: "2026-05-14", access: full, locator: "Paragraphs on AI agents working via MCP through ndConnect"}
+  - {ref: LAWSITES-ILTACON3-2026, title: "ILTACON News Round-Up Part 3, Documents, Data and AI", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-3-documents-data-and-ai-imanage-netdocuments-entegrata-wolters-kluwer-thomson-reuters-clio-avvoka.html", date: "2026-09-04", access: full, locator: "NetDocuments MCP ecosystem section"}
   - {ref: HARVEY-AGENTICSEARCH-2026, title: "Introducing Agentic Search for Your Document Systems", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/agentic-search-document-management-systems", date: "2026-09-30", access: full, locator: "Sections on describing what you need, permissions, availability"}
   - {ref: HARVEY-VAULT-2026, title: "Agentic Vault Search and Organization", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/agentic-vault-search-and-organization", date: "2026-09-08", access: full, locator: "Agent permissions and audit trail"}
   - {ref: LAWSITES-DEEPJUDGE-2026, title: "DeepJudge Releases an Open Protocol for Passing Users and Their Context Between AI Products", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/08/deepjudge-releases-an-open-protocol-for-passing-users-and-their-context-between-ai-products-with-harvey-and-thomson-reuters-on-board.html", date: "2026-08-13", access: full, locator: "Paragraphs 1-6"}
-  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-10-19", access: full, locator: "Section 'Building outward from a governed core'"}
-  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-10-19", access: full, locator: "Director's comments on tools reaching in and MCP"}
+  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; page undated, date from the downloadable PDF version created 2026-08-07)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-08", access: full, locator: "Section 'Building outward from a governed core'"}
+  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; page undated, date from the downloadable PDF version created 2026-07-29)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-07", access: full, locator: "Director's comments on tools reaching in and MCP"}
   - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Duty of Confidentiality row, pp. 5-6"}
   - {ref: GOODWIN-HEPPNER-2026, title: "AI Chatbots, Privilege, and Pitfalls (client alert on United States v. Heppner, S.D.N.Y.)", publisher: Goodwin Procter LLP, type: firm, url: "https://www.goodwinlaw.com/en/insights/publications/2026/03/alerts-practices-ai-chatbots-privilege-and-pitfalls", date: "2026-03-03", access: full, locator: "'Attorney-Client Privilege'; 'Work Product Doctrine'; 'Recommendations'"}
   - {ref: ABAJ-ILTACON-2026, title: "ILTACON 2026: The race to connect the dots and the data (Nicole Black column)", publisher: ABA Journal, type: press, url: "https://www.abajournal.com/columns/article/iltacon-2026-and-the-race-to-connect-the-dots", date: "2026-09-02", access: full, locator: "'Finding partners' and closing paragraphs"}
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: law-firm platforms; Chaffetz Lindsey (law firm) and Womble Bond Dickinson UK (law firm) describe intent,
-    not a live connector. Tense matters: Legora 'announced plans to connect'; Harvey says agentic search is available now
+    not a live connector. Tense matters: Legora's release says mutual customers 'will be able to' use the connection;
+    Harvey says agentic search is available now
     but must be switched on by Harvey, with no customer named; DeepJudge says Harvey is building an integration and Thomson
     Reuters 'will support' it. Heppner is one district court's ruling on its facts. Merges the governance dive's 'AI work
     product in the matter record' candidate.
@@ -685,7 +704,7 @@
   - "Lawyer review at each designated gate before the next task starts (HARVEY-ORCH-2026)"
   - "Periodic review of agent permissions and logs"
   role_evolution: >-
-    Harvey names innovation and knowledge teams as the authors of template structure (HARVEY-ORCH-2026). California says
+    Harvey says innovation and knowledge teams can define the template structure once (HARVEY-ORCH-2026). California says
     supervision must correspond to the level of access and autonomy (CALBAR-GENAI-2026, p. 5).
   evidence_grade: C
   sources:
@@ -734,7 +753,7 @@
   - "Executed agreements held in a collection that can be queried (HARVEY-INDEMNITY-2026)"
   - "A specific question and deal parameters (transaction type, size, jurisdiction, buyer or seller side) to select a comparable set (HARVEY-INDEMNITY-2026)"
   risks_and_guardrails:
-  - "Harvey cautions that a larger precedent set is not automatically better: mixing deals with different economics, structures or governing law can obscure more than it shows (HARVEY-INDEMNITY-2026)"
+  - "Harvey cautions that a larger precedent set is not automatically better: mixing deals with materially different economics, structures or governing rules can obscure more than it reveals (HARVEY-INDEMNITY-2026)"
   - "Older agreements may reflect a negotiating posture that has since changed, and outliers should be identified before they are treated as the norm (HARVEY-INDEMNITY-2026)"
   human_checkpoints:
   - "The lawyer frames the question, chooses the comparable set and decides the negotiating position (HARVEY-INDEMNITY-2026)"
@@ -774,9 +793,10 @@
     Knowledge teams run a submit, enrich, publish, maintain and archive workflow for collections of vetted precedents and
     point assistants at those collections first (IMANAGE-INSIGHT-2026). Womble Bond Dickinson keeps curation with named
     owners and a knowledge profile tagging confidentiality, client and AI-processing status (IMANAGE-WOMBLE-2026).
-    McKinsey's data stewards check accuracy and sanitise content for client confidentiality (MCKINSEY-LILLI-2023). Draftwise
-    describes gold-standard collections limited to firm-authored final documents, with partner validation and a feedback
-    loop (DRAFTWISE-PRECEDENT-2025). Accenture authors describe an unnamed professional-services firm that set rules such as
+    McKinsey's data stewards check accuracy and sanitise content for client confidentiality (MCKINSEY-LILLI-2023, as read
+    by the deep dive; not re-verified). Draftwise recommends filtering to firm-authored final documents, 'gold standard'
+    collections curated by KM lawyers or senior partners, and partner validation with a feedback loop
+    (DRAFTWISE-PRECEDENT-2025). Accenture authors describe an unnamed professional-services firm that set rules such as
     a minimum number of client examples to protect anonymity and had senior reviewers judge which past proposals and
     deliverables were reusable (CMR-ACCENTURE-2026).
   outcomes:
@@ -808,22 +828,23 @@
   - "The Law Society says client confidential and personal data should not be used to create templates or test a generative AI system; use fictional data instead (LAWSOC-GENAI-2026)"
   - "The Law Society's April 2026 report says errors in an agentic system can be repeated rapidly across multiple matters (LAWSOC-AGENTICFUTURE-2026)"
   - "California requires periodic reassessment of an AI system's capabilities and risks, including when it is deployed for new tasks (CALBAR-GENAI-2026, p. 5)"
-  - "Draftwise claims its platform can classify final versus draft automatically so manual curation need not be a prerequisite; the claim is unverified (DRAFTWISE-PRECEDENT-2025)"
+  - "Draftwise argues that advanced platforms can tell final versions from drafts automatically, so manual curation need not be a prerequisite; the claim is unverified (DRAFTWISE-PRECEDENT-2025)"
   human_checkpoints:
   - "A KM lawyer or senior reviewer approves each asset before it enters a collection"
   - "Collection owners retire or refresh assets on a set cycle"
   - "KM validates an AI-drafted answer before it is filed into a precedent or answer bank"
   role_evolution: >-
-    KM lawyers and senior partners become curators who decide which work is exemplary (DRAFTWISE-PRECEDENT-2025).
+    Draftwise suggests KM lawyers or senior partners curate 'trusted collections' of exemplary precedent
+    (DRAFTWISE-PRECEDENT-2025); no firm in the sources reports this role change.
     DiDomenico argues firms should grow existing KM, library and research staff and recruit practising lawyers into these
     roles, since a single person with legal, business, data and AI skills mostly does not exist (AL-DIDOMENICO-2026).
   evidence_grade: B
   sources:
   - {ref: IMANAGE-INSIGHT-2026, title: "iManage Insight+: Discover institutional knowledge (product page; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/imanage-products/knowledge-search-management/insightplus/", date: "2026-10-19", access: full, locator: "'Curation toolset'"}
-  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-10-19", access: full, locator: "'The solution' (controlled curation model, knowledge profile)"}
-  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: full, locator: "Paragraph on data stewards"}
+  - {ref: IMANAGE-WOMBLE-2026, title: "Womble Bond Dickinson UK lays an AI-ready foundation (customer story; page undated, date from the downloadable PDF version created 2026-08-07)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/womble-bond/", date: "2026-08", access: full, locator: "'The solution' (controlled curation model, knowledge profile)"}
+  - {ref: MCKINSEY-LILLI-2023, title: "Meet Lilli, our generative AI tool that's a researcher, a time saver, and an inspiration (alumni-site copy; date from URL; could not be opened on 2026-10-19, so claims resting only on it are marked not re-verified; a search snippet confirms 40+ curated sources and experts in 70 countries)", publisher: McKinsey & Company, type: firm, url: "https://www.mckinsey.com/alumni/news-and-events/global-news/firm-news/2023-10-lilli", date: "2023-10", access: search-only, locator: "Paragraph on data stewards"}
   - {ref: DRAFTWISE-PRECEDENT-2025, title: "Garbage In, Garbage Out: How to Build a Precedent Database Lawyers Can Trust", publisher: Draftwise, type: vendor, url: "https://www.draftwise.com/blog/garbage-in-garbage-out-how-to-build-a-precedent-database-your-lawyers-can-trust", date: "2025-09-24", access: full, locator: "'Create Gold Standard Collections'; partner validation"}
-  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03-16", access: full, locator: "'Codify Tacit Knowledge Without Flattening It', professional-services paragraph"}
+  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03", access: full, locator: "'Codify Tacit Knowledge Without Flattening It', professional-services paragraph"}
   - {ref: AL-DIDOMENICO-2026, title: "Old Problems, New Tools: Maybe You Need a Knowledge Strategy (sponsored by LegalTech Connect)", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2026/10/15/old-problems-new-tools-maybe-you-need-a-knowledge-strategy/", date: "2026-10-15", access: full, locator: "Paragraphs on participation, sponsorship and talent"}
   - {ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: Thomson Reuters Institute, type: press, url: "https://www.thomsonreuters.com/en/institute/articles/feature-agentic-ai-pilot-failure", date: "2026-02-20", access: full, locator: "'The big idea'; case study 1"}
   - {ref: APQC-KM-2026, title: "2026 Knowledge Management Priorities and Trends Survey Report (listing page with key findings)", publisher: APQC, type: survey, url: "https://www.apqc.org/resource-library/resource-listing/2026-knowledge-management-priorities-and-trends-survey-report", date: "2026-01-07", access: full, locator: "Key findings"}
@@ -835,8 +856,8 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: law firm (Womble Bond Dickinson UK), consulting (McKinsey), an unnamed professional-services firm
-    (Accenture article). B rests on the two named firms describing curation as their practice; no firm publishes a
-    measured result. APQC figures are cross-industry. Merges the governance dive's source-checking candidate (the
+    (Accenture article). B rests on Womble Bond Dickinson describing its curation model as its own practice; McKinsey's
+    data-steward description could not be re-verified. No firm publishes a measured result. APQC figures are cross-industry. Merges the governance dive's source-checking candidate (the
     KM-validation step; verification of research answers is professional-services-work-production-01 and -11) and the
     reuse-and-sanitisation part of its precedent-drafting candidate (drafting is professional-services-work-production-05).
 
@@ -854,23 +875,23 @@
   runtime_class: shared-team-skills
   maturity: announced
   problem: >-
-    In-house legal teams hold years of documents and prior advice across fragmented systems, while pressure from the
-    business for AI lands on legal operations (TRI-LDOR-2026).
+    In-house legal teams hold years of documents and prior advice across fragmented systems; Rio Tinto's legal assets
+    go back 20 years (IMANAGE-RIOTINTO-2025). The Thomson Reuters Institute says AI pressure on legal departments is
+    landing on legal operations as the default first line of defence (TRI-LDOR-2026).
   solution: >-
     BMW Group's legal function announced a Legora rollout for research, review and drafting, including first drafts based
     on approved internal standards and precedents, and says it is meant to strengthen knowledge management
     (LEGORA-BMW-2026). Rio Tinto's legal team moved 4.5 million documents to a cloud platform and is considering
-    natural-language queries across them (IMANAGE-RIOTINTO-2026). Harvey describes a 'legal brain' in which a department's
-    policies, prior decisions and outcomes feed agents (HARVEY-INHOUSE-2026). Legal operations selects and governs the tools
-    and asks outside firms what AI they use; GSK says it is learning from its outside firms how they use generative AI
-    (TRI-LEGALWEEK-2026).
+    natural-language queries across them (IMANAGE-RIOTINTO-2025). Harvey describes a 'legal brain' in which a department's
+    policies, prior decisions and outcomes feed agents (HARVEY-INHOUSE-2026). GSK says it is learning from its outside firms how they deploy
+    generative AI and asks what they use and how it generates savings (TRI-LEGALWEEK-2026).
   outcomes:
   - lever: experience
     description: Adoption of the document platform at Rio Tinto's legal team (not an AI feature)
     figure: 80% adoption after four months
     measures: Adoption of the iManage platform across 210 legal-team staff, per a vendor case study quoting Rio Tinto's digital transformation lead
     provenance: vendor-published
-    source_ref: IMANAGE-RIOTINTO-2026
+    source_ref: IMANAGE-RIOTINTO-2025
   - lever: capacity
     description: Shift of general counsel priorities toward technology
     figure: twice the share of GCs name technology their top strategic priority
@@ -879,36 +900,37 @@
     source_ref: TRI-LDOR-2026
   prerequisites:
   - "Approved internal standards and precedents to ground first drafts (LEGORA-BMW-2026)"
-  - "A migrated, centralised document estate; Rio Tinto has legal assets going back 20 years (IMANAGE-RIOTINTO-2026)"
+  - "A migrated, centralised document estate; Rio Tinto has legal assets going back 20 years (IMANAGE-RIOTINTO-2025)"
   - "Outside counsel guidelines that address AI use and reporting"
   risks_and_guardrails:
   - "BMW says the platform is implemented in line with its access, security and governance requirements (LEGORA-BMW-2026)"
   - "Harvey's vision has legal set what agents may resolve and when review is required, with a full audit log of agent and human actions (HARVEY-INHOUSE-2026)"
   - "An in-house chief legal officer asks whether departments will control, and be able to take with them, the 'legal memory' held in shared AI systems, or rent it (BLOOMBERGLAW-GCXAI-2026)"
-  - "Clients differ: some demand AI savings and AI line items, others forbid AI use without explicit permission (TRI-LEGALWEEK-2026)"
+  - "Clients differ: DLA Piper's Barclay Blair sees clients asking how AI will hit savings targets while others still send directives that firms cannot use AI without explicit permission (TRI-LEGALWEEK-2026)"
   human_checkpoints:
   - "Legal decides what agents can handle and where people make the call (HARVEY-INHOUSE-2026)"
   - "Lawyers verify prior advice retrieved by AI before relying on it"
   role_evolution: >-
     BMW's group general counsel says the tools expand capacity to handle work in-house while keeping lawyers on the most
     complex matters (LEGORA-BMW-2026). At Rio Tinto the digital transformation team, rather than IT, manages the platform
-    (IMANAGE-RIOTINTO-2026). The Thomson Reuters Institute describes legal operations as becoming its own practice area
-    (TRI-LDOR-2026).
+    (IMANAGE-RIOTINTO-2025). Many legal operations leaders tell the Thomson Reuters Institute their function is shifting
+    into 'its own practice area' (TRI-LDOR-2026).
   evidence_grade: B
   sources:
   - {ref: LEGORA-BMW-2026, title: "Legora collaborates with BMW Group to advance AI-enabled legal services", publisher: Legora, type: vendor, url: "https://legora.com/newsroom/legora-collaborates-with-bmw-group-to-advance-ai-enabled-legal-services", date: "2026-10-08", access: full, locator: "Opening paragraph; first drafts from approved standards and precedents"}
-  - {ref: IMANAGE-RIOTINTO-2026, title: "Rio Tinto makes institutional knowledge more accessible and actionable with iManage (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/rio-tinto/", date: "2026-10-19", access: full, locator: "Migration of 4.5 million documents, 80 percent adoption, AI plans"}
+  - {ref: IMANAGE-RIOTINTO-2025, title: "Rio Tinto makes institutional knowledge more accessible and actionable with iManage (customer story; page undated, date from the downloadable PDF version created 2025-06-11)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/rio-tinto/", date: "2025-06", access: full, locator: "Migration of 4.5 million documents, 80 percent adoption, AI plans"}
   - {ref: HARVEY-INHOUSE-2026, title: "Building a frontier in-house organization", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/building-a-frontier-in-house-organization", date: "2026-10-13", access: full, locator: "Paragraphs on the department's knowledge and review playbooks"}
   - {ref: TRI-LDOR-2026, title: "2026 Legal Department Operations Report", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/legal-department-operations-report-2026", date: "2026-09-22", access: full, locator: "Key takeaways"}
   - {ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "Remarks by GSK; 'The contradictions in the room'"}
-  - {ref: IMANAGE-LEGALOPS-2026, title: "Global legal operations customer (customer story, organisation unnamed; read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-legal-operations-customer/", date: "2026-10-19", access: full, locator: "Paragraphs on evaluating AI and declining the module"}
+  - {ref: IMANAGE-LEGALOPS-2025, title: "Global legal operations customer (customer story, organisation unnamed; page undated, date from the downloadable PDF version created 2025-04-30)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-legal-operations-customer/", date: "2025-04", access: full, locator: "Paragraphs on evaluating AI and declining the module"}
   - {ref: BLOOMBERGLAW-GCXAI-2026, title: "GC x AI Retrospective: The Billable Hour, Like a Twinkie, Endures (in-house CLO column)", publisher: Bloomberg Law, type: press, url: "https://news.bloomberglaw.com/business-and-practice/gc-x-ai-retrospective-the-billable-hour-like-a-twinkie-endures", date: "2026-10-19", access: full, locator: "Section 'What Came True', paragraph on legal memory (routed from the client-development deep dive)"}
   last_reviewed: "2026-10-19"
   notes: >-
     In-house throughout (BMW Group, Rio Tinto, GSK). BMW's release is a vendor announcement quoting its general counsel,
     so maturity is 'announced'. Rio Tinto's figure concerns document-platform adoption and supports the prerequisite (a
-    findable estate), not an AI effect. An anonymous in-house legal operations customer declined an expensive AI module
-    after a cost-benefit analysis (IMANAGE-LEGALOPS-2026). AI-first in-house work is
+    findable estate), not an AI effect. In an iManage story, an anonymous in-house legal operations team says it declined
+    a competitor's expensive AI module with limited out-of-the-box features after a cost-benefit analysis
+    (IMANAGE-LEGALOPS-2025). AI-first in-house work is
     professional-services-work-production-19.
 
 - id: professional-services-knowledge-management-14
@@ -966,10 +988,11 @@
   ladder: augment
   change_scope: process
   runtime_class: background-agent
-  maturity: in-production
+  maturity: announced
   problem: >-
-    Lessons from finished engagements rarely reach the next team because writing them up is extra work at project close.
-    Kantata's launch release describes expertise locked in decks or in consultants' heads (KANTATA-ENGINE-2025).
+    Lessons from finished engagements rarely reach the next team because writing them up is extra work at project close
+    (inference). A consulting customer quoted in Kantata's launch release, Simon Goldsmith of FOIL, says too much of its
+    expertise was locked in decks or consultants' heads (KANTATA-ENGINE-2025).
   solution: >-
     Project capture is automated so outputs, tags and summaries flow into a searchable repository. At KMWorld Europe 2026,
     Alvarez & Marsal described a regional KM repository with automated project capture and defined KM roles; Simon-Kucher
@@ -985,11 +1008,11 @@
     provenance: self-reported
     source_ref: KMWORLD-EUROPE-2026
   prerequisites:
-  - "Engagement records (SOWs, meeting notes, decisions, outcomes) created in systems that capture them (CERTINIA-VEDA-2026)"
+  - "Engagement records (SOWs, meeting notes, past decisions, client history) held in systems an agent can read (KANTATA-AGENT-2026)"
   - "Defined KM roles; the A&M abstract describes a grassroots culture where mandates are rare (KMWORLD-EUROPE-2026)"
   - "A sanitisation step so client-identifying detail does not enter a firm-wide base"
   risks_and_guardrails:
-  - "A NYC Bar opinion says that even with consent a lawyer should avoid entering details that identify the client, and shared bases mixing clients can breach ethical walls (NYCBAR-OP2024-5-2024, pp. 2-4)"
+  - "A NYC Bar opinion says that, for AI systems that share inputs with third parties, a lawyer should avoid entering details that can identify the client even with consent, and that even closed systems must not expose information to people at the firm behind an ethical wall (NYCBAR-OP2024-5-2024, pp. 2-3)"
   - "APQC's article says AI used for KM should be built on validated, trustworthy knowledge (KMWORLD-APQC-2026)"
   - "The Simon-Kucher abstract does not say whether generative AI is used (KMWORLD-EUROPE-2026)"
   - "Certinia says its agents act within the permissions, approval thresholds and auditability the organisation requires (CERTINIA-VEDA-2026)"
@@ -999,19 +1022,21 @@
   role_evolution: >-
     The A&M abstract reports KM roles defined within three years without executive sponsorship; Buro Happold's KM team
     presented communities of practice as still vital for tacit insight despite AI (KMWORLD-EUROPE-2026).
-  evidence_grade: B
+  evidence_grade: C
   sources:
   - {ref: KMWORLD-EUROPE-2026, title: "KMWorld Europe 2026 Full Programme Listing", publisher: KMWorld, type: conference, url: "https://www.kmworld.com/Europe/2026/Programme.aspx", date: "2026-04", access: full, locator: "KMW203 (A&M, Simon-Kucher), KMW402 (AECOM), KMW102 (Buro Happold)"}
   - {ref: CERTINIA-VEDA-2026, title: "Certinia AI and Veda agents", publisher: Certinia, type: vendor, url: "https://certinia.com/solutions/ai", date: "2026-10", access: full, locator: "'Value capture & knowledge transfer'; Knowledge Base and Retrospective Drafter agents"}
   - {ref: KANTATA-ENGINE-2025, title: "Kantata unveils the Kantata Expertise Engine (press release)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/blog/article/kantata-unveils-the-kantata-expertise-engine-the-first-ai-platform-purpose-built-for-professional-services-transformation", date: "2025-10-09", access: full, locator: "Continuous learning paragraph"}
+  - {ref: KANTATA-AGENT-2026, title: "Expertise Agent and Workflows (product page; undated, read 2026-10-19)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/ai/expertise-agent-and-workflows", date: "2026-10-19", access: full, locator: "Section 'Perfect Project Handoffs'"}
   - {ref: KMWORLD-APQC-2026, title: "The Next Edge in Knowledge Management: KM for the Modern Workforce and the Era of AI (Lynda Braksiek, APQC)", publisher: KMWorld, type: press, url: "https://www.kmworld.com/Articles/Editorial/Features/The-Next-Edge-in-Knowledge-Management-KM-for-the-Modern-Workforce-and-the-Era-of-AI-173630.aspx?pageNum=2", date: "2026-03-09", access: full, locator: "Paragraphs on lessons learned and AI in KM"}
   - {ref: NYCBAR-OP2024-5-2024, title: "Formal Opinion 2024-5: Ethical Obligations of Lawyers and Law Firms Relating to the Use of Generative Artificial Intelligence in the Practice of Law", publisher: "New York City Bar Association, Professional Ethics Committee", type: professional-body, url: "https://www.nycbar.org/wp-content/uploads/2024/08/20221329_GenerativeAILawPractice.pdf", date: "2024-08-07", access: full, locator: "Confidentiality and Conflicts rows, pp. 2-4"}
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: consulting and advisory (Alvarez & Marsal, Simon-Kucher & Partners), engineering (AECOM, Buro Happold).
-    B reflects named firms describing deployed KM work in abstracts for sessions held 14-15 April 2026; only abstracts
-    were read and whether generative AI is used at A&M and Simon-Kucher is unclear. Certinia and Kantata items are
-    vendor catalogue entries. Kantata Converge (scheduled 2026-11-17) lists capturing expertise as an agenda question; not
+    Grade C (lowered from B at verification) and maturity 'announced': the named firms' session abstracts (14-15 April
+    2026) describe automated capture, intelligent tagging and semantic search, and AECOM's 'adoption of AI', but none
+    describes AI-drafted retrospectives; that step appears only in Certinia's and Kantata's vendor catalogues. Only the
+    abstracts were read. Kantata Converge (scheduled 2026-11-17) lists capturing expertise as an agenda question; not
     used for any grade. The delivery-management deep dives route the same Certinia agents here and hold the close-out step
     of delivery.
 
@@ -1046,23 +1071,23 @@
   - "A rule on where transcripts and summaries are stored and how long they are kept"
   - "A decision on which summaries may enter shared knowledge"
   risks_and_guardrails:
-  - "NYC Bar Formal Opinion 2026-2 (2026-08-05) says an attorney should obtain all other parties' consent before recording and, by default, avoid recording non-client conversations absent good reason (NYCBAR-OP2026-2-2026)"
+  - "NYC Bar Formal Opinion 2026-2 (press release 2026-08-17) says an attorney should obtain all other parties' consent before recording and, by default, avoid recording non-client conversations absent good reason (NYCBAR-OP2026-2-2026)"
   - "Confidential client information must not go into AI systems that share it with third parties without informed consent (NYCBAR-OP2024-5-2024, pp. 2-3)"
-  - "Chats with a public AI tool were held not privileged in Heppner, so transcripts held in consumer tools may be discoverable (GOODWIN-HEPPNER-2026)"
+  - "Chats with a public AI tool were held not privileged in Heppner, and Goodwin advises assuming such queries could be discoverable; that call transcripts held in consumer tools face the same risk is an inference (GOODWIN-HEPPNER-2026)"
   human_checkpoints:
   - "The lawyer decides in each instance whether to record at all"
   - "The lawyer checks a summary before it is filed or shared"
   role_evolution: No role change reported in the sources.
   evidence_grade: C
   sources:
-  - {ref: NYCBAR-OP2026-2-2026, title: "NYC Bar Association Releases Formal Opinion on Ethical Use of AI for Recording, Transcribing, and Summarizing Non-Client Conversations (press release for Formal Opinion 2026-2)", publisher: New York City Bar Association, type: professional-body, url: "https://www.nycbar.org/press-releases/nyc-bar-association-releases-formal-opinion-on-ethical-use-of-ai-for-recording-transcribing-and-summarizing-non-client-conversations/", date: "2026-08-17", access: full, locator: "Press release text (opinion issued 2026-08-05)"}
+  - {ref: NYCBAR-OP2026-2-2026, title: "NYC Bar Association Releases Formal Opinion on Ethical Use of AI for Recording, Transcribing, and Summarizing Non-Client Conversations (press release for Formal Opinion 2026-2)", publisher: New York City Bar Association, type: professional-body, url: "https://www.nycbar.org/press-releases/nyc-bar-association-releases-formal-opinion-on-ethical-use-of-ai-for-recording-transcribing-and-summarizing-non-client-conversations/", date: "2026-08-17", access: full, locator: "Press release text; the opinion itself could not be opened"}
   - {ref: NYCBAR-OP2024-5-2024, title: "Formal Opinion 2024-5: Ethical Obligations of Lawyers and Law Firms Relating to the Use of Generative Artificial Intelligence in the Practice of Law", publisher: "New York City Bar Association, Professional Ethics Committee", type: professional-body, url: "https://www.nycbar.org/wp-content/uploads/2024/08/20221329_GenerativeAILawPractice.pdf", date: "2024-08-07", access: full, locator: "Duty of Confidentiality row, pp. 2-3"}
   - {ref: GOODWIN-HEPPNER-2026, title: "AI Chatbots, Privilege, and Pitfalls (client alert on United States v. Heppner, S.D.N.Y.)", publisher: Goodwin Procter LLP, type: firm, url: "https://www.goodwinlaw.com/en/insights/publications/2026/03/alerts-practices-ai-chatbots-privilege-and-pitfalls", date: "2026-03-03", access: full, locator: "'Key Takeaways'"}
   - {ref: CERTINIA-VEDA-2026, title: "Certinia AI and Veda agents", publisher: Certinia, type: vendor, url: "https://certinia.com/solutions/ai", date: "2026-10", access: full, locator: "'Frictionless operations & delivery' entry"}
   last_reviewed: "2026-10-19"
   notes: >-
     Mainly a constraint on a common capture step. The NYC Bar 2026 opinion covers non-client conversations; client calls
-    fall under the 2024 opinion. Only the press release for Opinion 2026-2 was read.
+    fall under the 2024 opinion. Only the press release for Opinion 2026-2 was read; the opinion page did not open.
 
 - id: professional-services-knowledge-management-17
   title: Briefs from institutional memory when someone joins a live matter or prepares for a client call
@@ -1082,8 +1107,8 @@
     prior decisions. At Basware's services organisation, customer success managers spent hours each day researching an
     account before each call (KANTATA-BASWARE-2026).
   solution: >-
-    At Chaffetz Lindsey, an assistant that can search all matter documents summarises the matter and compares how similar
-    matters were handled (IMANAGE-CHAFFETZ-2026). A Kantata release presents Basware's AI-enabled services approach as
+    At Chaffetz Lindsey, attorneys and staff use the DMS assistant to find clauses, compare how similar matters were
+    handled and bring a new team member up to speed on an active trial (IMANAGE-CHAFFETZ-2026). A Kantata release presents Basware's AI-enabled services approach as
     freeing managers from pre-call research, without naming the tool (KANTATA-BASWARE-2026). Platforms propose automatic
     briefs: NetDocuments' matter overview with parties, dates, team and timeline (LAWSITES-NETDOCS-2026), and Kantata's
     Expertise Agent, launched 2026-06-16, with a role-specific brief from SOWs, meeting notes and decisions
@@ -1097,9 +1122,9 @@
     provenance: vendor-published
     source_ref: IMANAGE-CHAFFETZ-2026
   - lever: capacity
-    description: Basware's Chief Customer Officer says time once spent on research is now spent on the phone with customers
+    description: Kantata's release says customer success managers now spend former research time on the phone with customers
     figure: four to five hours a day
-    measures: Hours a day customer success managers previously spent researching before a call, per a Kantata press release quoting the executive (recollection; no method)
+    measures: Hours a day customer success managers previously spent researching before a call, stated in a Kantata press release (no method; the release does not tie it to a named tool)
     provenance: vendor-published
     source_ref: KANTATA-BASWARE-2026
   prerequisites:
@@ -1118,13 +1143,13 @@
     the matter overview as reducing a new associate's orientation time (LAWSITES-NETDOCS-2026).
   evidence_grade: B
   sources:
-  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-10-19", access: full, locator: "Paragraph beginning 'Ask iManage transformed how the firm finds and uses knowledge'"}
+  - {ref: IMANAGE-CHAFFETZ-2026, title: "Governance is a powerful differentiator at Chaffetz Lindsey (customer story; page undated, date from the downloadable PDF version created 2026-07-29)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/chaffetz-lindsey/", date: "2026-07", access: full, locator: "Paragraph beginning 'Ask iManage transformed how the firm finds and uses knowledge'"}
   - {ref: KANTATA-BASWARE-2026, title: "Kantata takes Basware from AI experimentation to results (press release)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/blog/article/kantata-takes-basware-from-ai-experimentation-to-results", date: "2026-10-13", access: full, locator: "Section 'From Efficiency to Impact'"}
   - {ref: LAWSITES-NETDOCS-2026, title: "NetDocuments Unveils Legal Context Graph to Map Legal Knowledge Alongside a Reimagined Platform", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/05/netdocuments-unveils-legal-context-graph-to-map-legal-knowledge-alongside-a-reimagined-platform.html", date: "2026-05-14", access: full, locator: "Matter Overview paragraph"}
   - {ref: NETDOCUMENTS-CONTEXTGRAPH-2026, title: "NetDocuments Unveils the First Context Graph for Legal Work (press release)", publisher: NetDocuments, type: vendor, url: "https://www.netdocuments.com/company-news/netdocuments-unveils-context-graph-legal-platform/", date: "2026-05-14", access: full, locator: "Bullet 'Every matter starts with clarity, not a blank page'"}
   - {ref: KANTATA-AGENT-2026, title: "Expertise Agent and Workflows (product page; undated, read 2026-10-19)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/ai/expertise-agent-and-workflows", date: "2026-10-19", access: full, locator: "Section 'Perfect Project Handoffs'"}
   - {ref: ERPTODAY-KANTATA-2026, title: "Kantata's Expertise Agent Targets the Professional Services Delivery Crunch", publisher: ERP Today, type: press, url: "https://erp.today/kantata-expertise-agent-psa-ai/", date: "2026-06-19", access: full, locator: "Paragraphs 1-4 (launch 2026-06-16; routed from the delivery-management deep dive)"}
-  - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO; AI-generated transcript)", publisher: Accounting Today, type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026", access: full, locator: "Transcript at 30:46-31:25"}
+  - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO; AI-generated transcript)", publisher: Accounting Today, type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "Transcript at 30:46-31:25"}
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: law firm (Chaffetz Lindsey); a software company's services organisation working like a firm (Basware,
@@ -1156,8 +1181,8 @@
     (HARVEY-LEWISSILKIN-2025). Ropes & Gray built one-page tech stacks per practice group with its legal KM team
     (HARVEY-ROPES-2025). Gowling WLG's national director of AI, innovation and knowledge aims for durable playbooks, prompt
     patterns and repeatable workflows (HARVEY-GOWLING-2025). Latham & Watkins' innovation attorney role helps maintain a
-    catalogue of approved AI capabilities for client work (LATHAM-INNOVATIONATTY-2026). Firms pair this with a policy,
-    approved tools and training before access (CALBAR-GENAI-2026, p. 7).
+    catalogue of approved AI capabilities for client work (LATHAM-INNOVATIONATTY-2026). California's guidance says
+    managerial lawyers should set clear AI policies and provide training (CALBAR-GENAI-2026, p. 7).
   outcomes:
   - lever: risk
     description: Share of law firms with a formal GenAI policy, by firm size
@@ -1193,8 +1218,8 @@
   - "Practice-group knowledge partners and leads decide which tools, use cases and playbooks become firm guidance"
   - "Periodic review of the approved-tool list and policy"
   role_evolution: >-
-    New or widened roles: a knowledge management and AI partner (TROUTMAN-KM-2026); knowledge lawyers as Harvey leads
-    (HARVEY-LEWISSILKIN-2025); a national director spanning AI, innovation and knowledge (HARVEY-GOWLING-2025). Eversheds
+    New or widened roles: a knowledge management and AI partner (TROUTMAN-KM-2026); knowledge lawyers 'front and
+    centre' of adoption, with a Harvey Lead in each team (HARVEY-LEWISSILKIN-2025); a national director spanning AI, innovation and knowledge (HARVEY-GOWLING-2025). Eversheds
     Sutherland merged research and knowledge services into an AI-centric US innovation department (AL-EVERSHEDS-2026); K&L
     Gates created a Global AI and Innovation Partner role including data and knowledge management (AL-X4-2026); Gilchrist
     Connell added a chief AI and knowledge officer (LAWYERSWEEKLY-GILCHRIST-2026). Harvey names innovation and knowledge
@@ -1206,7 +1231,7 @@
   - {ref: HARVEY-ROPES-2025, title: "Theresa Spartichino (Ropes & Gray) on driving innovation (Innovation Spotlight interview)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/theresa-spartichino-on-driving-innovation", date: "2025-10-02", access: full, locator: "Answer on one-page tech stacks with Legal KM"}
   - {ref: HARVEY-GOWLING-2025, title: "Al Hounsell (Gowling WLG) on driving legal transformation that lasts (Innovation Spotlight interview)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/al-hounsell-on-driving-legal-transformation-that-lasts", date: "2025-10-30", access: full, locator: "Biography; answers on playbooks and prompt patterns"}
   - {ref: LATHAM-INNOVATIONATTY-2026, title: "Job description: Innovation Attorney - Client Team Enablement (last updated 2026-02-26)", publisher: Latham & Watkins LLP, type: job-posting, url: "https://www.lw.com/admin/upload/SiteAttachments/Innovation-Attorney-Client-Team-Enablement.pdf", date: "2026-02-26", access: full, locator: "Duties (routed from the client-development deep dive)"}
-  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p. 5 Q3.18 table"}
+  - {ref: ILTA-TECHSURVEY-2026, title: "2026 ILTA Technology Survey: Executive Summary (PDF undated; file metadata 2026-08-14)", publisher: International Legal Technology Association (ILTA), type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026", access: full, locator: "p. 5 Q3.18 table"}
   - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: Thomson Reuters, type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "Key finding 03; 'Shadow AI'"}
   - {ref: IMANAGE-BENCH-2026, title: "iManage Knowledge Work Benchmark Report 2026 (headline page; full report not read)", publisher: iManage, type: survey, url: "https://imanage.com/benchmark-report-2026/", date: "2026", access: full, locator: "Headline figures; 'Governance & Risk'"}
   - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, Standing Committee on Professional Responsibility and Conduct", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05-14", access: full, locator: "Duty to Supervise row, p. 7"}
@@ -1228,7 +1253,7 @@
     library), tax-research-advisory-07.
 
 - id: professional-services-knowledge-management-19
-  title: Senior judgment and reviewers' corrections captured so less experienced staff work from them, with unaided skill checks
+  title: Senior judgment and reviewers' corrections captured so less experienced staff can learn from them, with unaided skill checks recommended
   archetype: professional-services
   module: knowledge-management
   function: service-delivery
@@ -1242,8 +1267,8 @@
   maturity: piloting
   problem: >-
     Judgment sits in senior people's heads; NetDocuments frames this as a senior lawyer retiring and decades of judgment
-    leaving (NETDOCUMENTS-CONTEXTGRAPH-2026). Accountants learned client context by preparing returns repeatedly and
-    hearing why a partner changed them (AT-AINATIVE-2026). 71% of professionals say early-career roles need structured
+    leaving (NETDOCUMENTS-CONTEXTGRAPH-2026). Ascend's CEO says that in the accounting apprentice model juniors wait for
+    busy season to end for a partner to explain changes, if the partner remembers (AT-AINATIVE-2026). 71% of professionals say early-career roles need structured
     support from experienced peers (TR-FOP-2026).
   solution: >-
     Ascend, a private-equity-backed accounting-firm platform, describes a 'closed loop' in which every workflow trace,
@@ -1277,26 +1302,27 @@
   - "A way to test what juniors can do unaided"
   risks_and_guardrails:
   - "Foundational expertise may be a prerequisite for durable skill from AI-assisted practice (NBER-AUTOR-2026)"
-  - "A junior using a firm-trained assistant may deliver advanced output they may not be able to review (JOFA-LEARN-2026)"
+  - "High Rock Accounting's CEO warns that juniors using an assistant built on firm data may deliver advanced output they may not be able to review (JOFA-LEARN-2026)"
   - "The Law Society warns of invisible substitution of professional judgment and expects junior roles to change first (LAWSOC-AGENTICFUTURE-2026)"
   - "Ascend's CEO says handing much institutional know-how and client context to outside vendors would leave a firm vulnerable (AT-AINATIVE-2026)"
   - "48% of professionals worry about the effect on independent judgment (TR-FOP-2026)"
   human_checkpoints:
   - "Partner review of the work remains the source of the explanation the assistant draws on"
-  - "Senior review of junior work remains the main quality control, with periodic unaided exercises"
+  - "Senior review of junior work remains the main quality control, with periodic unaided exercises (recommended, by analogy with the NBER trial design; no firm reports doing this)"
   role_evolution: >-
-    In the trial, seniors kept most of the skill benefit and juniors' outcomes split (NBER-AUTOR-2026). Ascend's CEO says
+    In the trial, the unaided skill advantage was concentrated entirely among seniors; juniors showed no average gain and
+    their scores split (NBER-AUTOR-2026). Ascend's CEO says
     firms will want curious young people who can teach themselves from compounded firm know-how, and recounted one firm
     saying its busy-season interns reached staff level without extra training, an anecdote (AT-AINATIVE-2026). A BYU
     professor reports entry-level staff using an AI review tool to get detailed feedback without manager training time
     (JOFA-LEARN-2026).
   evidence_grade: B
   sources:
-  - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO; AI-generated transcript)", publisher: Accounting Today, type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026", access: full, locator: "Transcript at 01:16, 12:10, 15:20"}
+  - {ref: AT-AINATIVE-2026, title: "The AI-native firm (On the Air with Accounting Today; Ascend CEO; AI-generated transcript)", publisher: Accounting Today, type: podcast, url: "https://www.accountingtoday.com/podcast/the-ai-native-firm", date: "2026-10-19", access: full, locator: "Transcript at 01:16, 12:10, 15:20"}
   - {ref: NBER-AUTOR-2026, title: "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting (NBER Working Paper 35720)", publisher: "National Bureau of Economic Research (Autor, Rodchenko, Martin, Iscenko, Strand, Pearl, Ferere)", type: academic, url: "https://www.nber.org/papers/w35720", date: "2026-09", access: full, locator: "Abstract"}
   - {ref: NBER-BRYNJOLFSSON-2023, title: "Generative AI at Work (NBER Working Paper 31161)", publisher: "National Bureau of Economic Research (Brynjolfsson, Li, Raymond)", type: academic, url: "https://www.nber.org/papers/w31161", date: "2023-04", access: full, locator: "Abstract"}
   - {ref: KANTATA-BASWARE-2026, title: "Kantata takes Basware from AI experimentation to results (press release)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/blog/article/kantata-takes-basware-from-ai-experimentation-to-results", date: "2026-10-13", access: full, locator: "Section 'Where AI Meets Expertise'"}
-  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-10-19", access: full, locator: "Final sentence of the Ask iManage governance paragraph"}
+  - {ref: IMANAGE-DCB-2026, title: "Digital Commerce Bank unifies diverse teams on one platform (customer story; page undated, date from the downloadable PDF version created 2026-07-22)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/digital-commerce-bank/", date: "2026-07", access: full, locator: "Final sentence of the Ask iManage governance paragraph"}
   - {ref: NETDOCUMENTS-CONTEXTGRAPH-2026, title: "NetDocuments Unveils the First Context Graph for Legal Work (press release)", publisher: NetDocuments, type: vendor, url: "https://www.netdocuments.com/company-news/netdocuments-unveils-context-graph-legal-platform/", date: "2026-05-14", access: full, locator: "Paragraph on the senior lawyer who retires"}
   - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: Thomson Reuters, type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "Key finding 07; 'A generation of disrupted development'"}
   - {ref: LAWSOC-AGENTICFUTURE-2026, title: "The future of agentic AI in legal practice (report summary page)", publisher: Law Society of England and Wales, type: professional-body, url: "https://www.lawsociety.org.uk/topics/research/the-future-of-agentic-ai-in-legal-practice", date: "2026-04-14", access: full, locator: "'Summary of key findings'; 'Workforce and skills could be impacted'"}
@@ -1304,8 +1330,11 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kind: accounting-firm platform (Ascend), US IP law firms (unnamed, in the NBER trial), a software company's
-    services team (Basware) and an in-house bank team (Digital Commerce Bank). Grade B: Ascend describes its own
-    deployment (piloting, no measures), and the measured evidence is adjacent (patent drafting; customer support). NBER
+    services team (Basware) and an in-house bank team (Digital Commerce Bank). Grade check at verification: kept at B on
+    one basis only, Ascend's CEO describing chat features already inside the work product at Ascend's own firms (a named
+    deploying organisation, self-reported, no measures, AI-generated transcript). The 'closed loop' is described as a
+    concept, the interns story is an anecdote, and the measured evidence (patent drafting; customer support) is adjacent
+    and does not raise the grade. NBER
     provenance follows professional-services-work-production-06, which holds the same trial as a drafting use case: Google
     built the assistant and supported the study. Learning effects belong to talent-learning; related
     tax-research-advisory-08 (AI-supported research coaching for juniors).
@@ -1330,7 +1359,8 @@
     Twin1 (launched August 2026 after a $20m raise) builds an AI twin per person from their work and links the twins so
     expertise moves across the organisation without unrestricted access to private data; its CEO says it works with
     Linklaters, Orrick and Dechert (AL-TWIN1-2026). A KM leader describes building an AI persona from a partner's work
-    product and structured interviews (AL-DIDOMENICO-2026).
+    product and structured interviews, describing what a knowledge manager 'can now' do rather than a named firm's
+    programme (AL-DIDOMENICO-2026).
   outcomes:
   - lever: capacity
     description: none published; the CEO gives a pipeline of more than 400 prospects, which is not an outcome
@@ -1350,8 +1380,8 @@
   - "The colleague treats twin output as input to their own judgment"
   role_evolution: >-
     The Twin1 CEO frames the basic unit of knowledge in a professional organisation as a person, not a document
-    (AL-TWIN1-2026). DiDomenico describes a knowledge manager who once ran expertise directories through annual surveys
-    building such a persona (AL-DIDOMENICO-2026). No source reports the role change as having happened.
+    (AL-TWIN1-2026). DiDomenico says a knowledge manager who once ran expertise directories through annual surveys 'can
+    now' build such a persona (AL-DIDOMENICO-2026). No source reports the role change as having happened.
   evidence_grade: C
   sources:
   - {ref: AL-TWIN1-2026, title: "Interview with Twin1 CEO Lewis Liu", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2026/08/20/interview-with-twin1-ceo-lewis-liu/", date: "2026-08-20", access: full, locator: "Answers on why, customers and pipeline, privacy"}
@@ -1378,8 +1408,8 @@
   maturity: emerging
   problem: >-
     Lessons-learned documents capture facts but not judgment, and senior professionals' tacit knowledge leaves with them.
-    A Thomson Reuters audit-business manager said 75% of audit partners are scheduled to retire within ten years, with no
-    dataset given (TR-AUDIT-2026).
+    The general manager of Thomson Reuters' audit workflow business said 75% of audit partners are scheduled to retire
+    within ten years, with no dataset given (TR-AUDIT-2026).
   solution: >-
     Idea discussed by practitioners. A KMWorld Europe 2026 workshop (13 April) taught pairwise interviews, generative-AI
     supported story prototypes and a Tacit Knowledge Canvas, embedded in communities of practice (KMWORLD-EUROPE-2026).
@@ -1405,12 +1435,12 @@
   - "The expert approves the story or record of their judgment before it is shared"
   role_evolution: >-
     KM staff would act as interviewers and facilitators; no professional-services firm reports such a programme with AI.
-    The Accenture authors describe an automaker whose retiring engineers' tacit knowledge had to be captured by agents
-    (CMR-ACCENTURE-2026).
+    The Accenture authors describe an automaker that built AI agents to capture how its retiring master engineers
+    reasoned (CMR-ACCENTURE-2026), outside professional services.
   evidence_grade: D
   sources:
   - {ref: KMWORLD-EUROPE-2026, title: "KMWorld Europe 2026 Full Programme Listing", publisher: KMWorld, type: conference, url: "https://www.kmworld.com/Europe/2026/Programme.aspx", date: "2026-04", access: full, locator: "Workshop KMW1 abstract (13 April 2026)"}
-  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03-16", access: full, locator: "'Map Tacit Knowledge'; 'Codify Tacit Knowledge Without Flattening It'"}
+  - {ref: CMR-ACCENTURE-2026, title: "Tacit Knowledge Is Your Next Competitive Moat (Tung, Roussiere of Accenture)", publisher: California Management Review Insight, type: firm, url: "https://cmr.berkeley.edu/assets/documents/pdf/2026-03-tacit-knowledge-is-your-next-competitive-moat.pdf", date: "2026-03", access: full, locator: "'Map Tacit Knowledge'; 'Codify Tacit Knowledge Without Flattening It'"}
   - {ref: KMWORLD-APQC-2026, title: "The Next Edge in Knowledge Management: KM for the Modern Workforce and the Era of AI (Lynda Braksiek, APQC)", publisher: KMWorld, type: press, url: "https://www.kmworld.com/Articles/Editorial/Features/The-Next-Edge-in-Knowledge-Management-KM-for-the-Modern-Workforce-and-the-Era-of-AI-173630.aspx?pageNum=2", date: "2026-03-09", access: full, locator: "TechnipFMC paragraph"}
   - {ref: AL-TWIN1-2026, title: "Interview with Twin1 CEO Lewis Liu", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2026/08/20/interview-with-twin1-ceo-lewis-liu/", date: "2026-08-20", access: full, locator: "Answer on partners approaching retirement"}
   - {ref: TR-AUDIT-2026, title: "State of AI in audit", publisher: Thomson Reuters Tax & Accounting, type: vendor, url: "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/", date: "2026-03-30", access: full, locator: "Question 1"}
@@ -1438,8 +1468,9 @@
     lawyers said law firms' AI use gives clients nothing and probably higher bills (AL-CLIENT-2026). Oz Benamram of SKILLS
     argued firms have until the end of 2027 to set knowledge-sharing strategies before a 'drought' (AL-LAWPUNX-2025).
   solution: >-
-    Debevoise built STAAR, a client-facing AI portal on the Legora platform trained on its AI-risk work, sold by
-    subscription to a limited number of clients and in beta with about 10, including Blackstone, Capital One, Evercore, GSK
+    Debevoise built STAAR, a client-facing AI portal on the Legora platform that gives clients access to anonymised
+    AI-risk documents its team drafted for clients (with their consent) and quotes approved text rather than synthesising,
+    sold by subscription to a limited number of clients and in beta with about 10, including Blackstone, Capital One, Evercore, GSK
     and New York Life (BLOOMBERGLAW-DEBEVOISE-2026). Client questions outside the portal still go to lawyers, billed
     hourly. Artificial Lawyer says Legora has launched a Portal product and Eudia is developing a 'legal brain' strategy
     (AL-LAWPUNX-2025).
@@ -1457,7 +1488,7 @@
   risks_and_guardrails:
   - "Licence terms and security testing were still to be worked out at the time of the article (BLOOMBERGLAW-DEBEVOISE-2026)"
   - "Content currency and accuracy depend on continuing partner effort (BLOOMBERGLAW-DEBEVOISE-2026)"
-  - "Client-facing sharing raises confidentiality and privilege questions; California's confidentiality guidance applies to any agentic system with access to firm files (CALBAR-GENAI-2026)"
+  - "California's guidance says agentic systems with access to firm document systems and client files raise acute confidentiality considerations (CALBAR-GENAI-2026, p. 6); how this applies to a client-facing portal is not addressed in the sources"
   human_checkpoints:
   - "A partner approves what enters the portal (BLOOMBERGLAW-DEBEVOISE-2026)"
   - "Questions outside the portal's scope go to lawyers"
@@ -1499,7 +1530,7 @@
   solution: >-
     Usage and reuse data on knowledge assets and AI tools is joined to matter and financial data; iManage describes an
     index that reveals trends across matters, clients, jurisdictions and profitability (IMANAGE-INSIGHT-2026). An unnamed
-    global law firm plans analytics on search terms and on content that is not surfacing (IMANAGE-EMEAFIRM-2026). Firms
+    global law firm plans analytics on search terms and on content that is not surfacing (IMANAGE-EMEAFIRM-2025). Firms
     build test sets of real questions with reference answers and re-run them when models change; in the Vals study, law
     firms contributed the dataset used to score vendor tools against a lawyer baseline (VALS-VLAIR-2025).
   outcomes:
@@ -1535,14 +1566,14 @@
   - "A named owner signs off pass marks before go-live and after material model changes"
   role_evolution: >-
     APQC says KM leaders are asked to link measures to efficiency, productivity, decision quality and reduced rework
-    (APQC-KMEXEC-2026). EDRM counted at least 14 Legalweek 2026 sessions on validation and measurement
+    (APQC-KMEXEC-2026). EDRM's preview listed 12 Legalweek 2026 sessions under 'Validation and Measurement'
     (EDRM-LEGALWEEK-2026).
   evidence_grade: C
   sources:
   - {ref: APQC-KMEXEC-2026, title: "2026 KM Priorities & Trends: Executive Summary", publisher: APQC, type: survey, url: "https://www.apqc.org/resource-library/resource/2026-km-priorities-trends-executive-summary/html", date: "2026-05-12", access: full, locator: "'How can KM leaders prove business value and impact?'"}
   - {ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: Firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "ROI measurement; 'We're still gathering the data'"}
   - {ref: IMANAGE-INSIGHT-2026, title: "iManage Insight+: Discover institutional knowledge (product page; undated, read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/imanage-products/knowledge-search-management/insightplus/", date: "2026-10-19", access: full, locator: "'Connecting your content with context'"}
-  - {ref: IMANAGE-EMEAFIRM-2026, title: "Global law firm, EMEA region: Insight+ replaces an in-house knowledge platform (customer story, firm unnamed; read 2026-10-19)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-law-firm-emea-region/", date: "2026-10-19", access: full, locator: "Planned analytics paragraph"}
+  - {ref: IMANAGE-EMEAFIRM-2025, title: "Global law firm, EMEA region: Insight+ replaces an in-house knowledge platform (customer story, firm unnamed; page undated, date from the downloadable PDF version created 2025-06-17)", publisher: iManage, type: vendor, url: "https://imanage.com/resources/customer-stories/global-law-firm-emea-region/", date: "2025-06", access: full, locator: "Planned analytics paragraph"}
   - {ref: VALS-VLAIR-2025, title: "Vals Legal AI Report (VLAIR)", publisher: Vals AI, type: vendor, url: "https://www.vals.ai/industry-reports/vlair-2-27-25", date: "2025-02-27", access: full, locator: "Introduction; Methodology; Acknowledgments"}
   - {ref: TRI-SOTLM-2026, title: "State of the US Legal Market 2026 analysis: Will the AI bubble burst? A crucial warning for law firms", publisher: Thomson Reuters Institute with Georgetown Law CELP, type: survey, url: "https://www.thomsonreuters.com/en/institute/articles/legal-market-report-2026-analysis-ai-bubble", date: "2026-01-14", access: full, locator: "Technology and KM spend paragraphs"}
   - {ref: DELTEK-CLARITY-2026, title: "The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures", publisher: Deltek, type: survey, url: "https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/", date: "2026-05-12", access: full, locator: "A&E study paragraph"}
