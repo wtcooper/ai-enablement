@@ -1,6 +1,6 @@
 # Quality review (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/quality-review.yaml` (18 entries: A 0, B 11, C 6,
+Sources checked and re-verified 2026-10-19. Use cases live in `../use-cases/quality-review.yaml` (18 entries: A 0, B 11, C 6,
 D 1). Ids are shortened here: `#08` means `professional-services-quality-review-08`; other professional-services
 modules drop the `professional-services-` prefix (`work-production-11`); other archetypes' ids are in full. Source
 keys in brackets are in the YAML or in §10. The public record is mostly legal (law firms, courts, bars, in-house
@@ -38,11 +38,11 @@ A **hallucination** here means AI output that invents a source or misstates what
 |---|---|---|---|
 | Drafter's own check | The person who used AI checks facts and sources before passing work on | review-assurance | AI states errors in the same assured tone as correct answers [TRI-NEED2KNOW-2026] |
 | Citation and reference check | Every authority, quote and figure is matched to its source | review-assurance | Errors are subtle; Sullivan & Cromwell's ordinary cite-check missed invented authority [CANLAWYER-SC-2026] |
-| Supervisory review and sign-off | Senior, manager or partner reviews; the signer takes responsibility | review-assurance, expert-judgment | Each reviewer assumes someone else validated; review becomes a rubber stamp [ACCOUNTINGTODAY-HALLUC1-2026; ACCOUNTINGTODAY-HALLUC2-2026] |
-| Record of the check | What was checked, by whom, which parts were AI-generated | data-reporting | Partners sanctioned for errors they did not make, with no record [LAWSITES-CLEARBRIEF-2025] |
+| Supervisory review and sign-off | Senior, manager or partner reviews; the signer takes responsibility | review-assurance, expert-judgment | Practitioners suspect each reviewer assumed someone else had validated; review can become a rubber stamp [ACCOUNTINGTODAY-HALLUC1-2026; ACCOUNTINGTODAY-HALLUC2-2026] |
+| Record of the check | What was checked, by whom, which parts were AI-generated | data-reporting | Partners sanctioned for errors they did not make, often without knowing AI was used [LAWSITES-CLEARBRIEF-2025] |
 | Client communication | Disclosure of AI use; answering client AI terms | client-interaction | 73% say clients deserve full visibility; 21% deliver it [MORAE-ILR-2026] |
 | Checking incoming work | Opponents' filings, contractors' and juniors' drafts | review-assurance | In reported cases, outsiders found the errors, not the firm [CANLAWYER-SC-2026; CTV-DELOITTE-2025] |
-| Incident response | Correct, disclose, re-review the wider set | review-assurance, client-interaction | Courts criticise quiet corrections and treat concealment as worse than the error [WHITECASE-VERIFY-2026; ABA-LPT-WILLIAMS-2026] |
+| Incident response | Correct, disclose, re-review the wider set | review-assurance, client-interaction | Courts criticise quiet corrections and revised filings that do not disclose AI's role [WHITECASE-VERIFY-2026; ABA-LPT-WILLIAMS-2026] |
 | Quality system | Policy, training, tool testing, monitoring of AI's effect on quality | coordination-scheduling, data-reporting | 71% have policies, 30% are confident they are applied [MORAE-ILR-2026]; the six largest UK audit firms did not formally monitor tools' quality impact [FRC-ATT-2025] |
 
 ## 3. Where AI is changing the work
@@ -138,15 +138,15 @@ time saved; precision and recall (share of flagged items that are right, share o
 before relying on a tool; attestations completed against policy. None of these is published by a named firm.
 
 **Tool accuracy (tools tested in isolation)**
-- Stanford 2024: three commercial legal research tools hallucinated 17% to 33% of the time; versions since
-  replaced [STANFORD-MAGESH-2024; LLRX-FARRIS-2026].
+- Stanford 2024: three commercial legal research tools hallucinated 17% to 33% of the time; the products have
+  since been updated [STANFORD-MAGESH-2024; LLRX-FARRIS-2026].
 - Luxembourg 2026: eight legal retrieval systems, under 10% to nearly half of responses with hallucinations
   [ARXIV-LUX-2026].
 - Vals 2025: tools beat lawyers on document Q&A (94.8% vs 70.1%), lawyers led on redlining (79.7% vs 65.0%) and
   EDGAR research (US securities filings) [VALS-VLAIR-2025]; legal research 74-78% vs 69%, multi-jurisdiction
   questions 14 points lower [VALS-VLAIRRES-2025].
-- Linklaters' own benchmark: best model 6.4 out of 10 (2025), against 4.4 for the best in 2023; self-reported
-  [LINKLATERS-LINKSAI-2025].
+- Linklaters' own benchmark: best model 6.4 out of 10 (2025), against 4.4 for the best in 2023; self-reported,
+  and a measure of model output, not of review [LINKLATERS-LINKSAI-2025].
 - BCG experiment: on a task outside AI's capability, consultants with AI were 19% less likely to be correct
   [HBS-DELLACQUA-2023].
 
@@ -161,8 +161,9 @@ before relying on a tool; attestations completed against policy. None of these i
 
 **Scale of failure**
 - 2,202 court decisions on hallucinated content (1,501 US; 872 with a lawyer as the party), read 2026-10-19; a
-  count of decisions, not a rate; other trackers count differently [CHARLOTIN-DB-2026].
-- Ayinde: 18 of 45 cited cases did not exist [EWHC-AYINDE-2025]. Noland: 21 of 23 quotations fabricated
+  count of decisions, not a rate, and it includes some decisions where AI use was alleged but not confirmed; other
+  trackers count differently [CHARLOTIN-DB-2026].
+- Al-Haroun (decided with Ayinde): 18 of 45 cited cases did not exist [EWHC-AYINDE-2025]. Noland: 21 of 23 quotations fabricated
   [LAWSITES-NOLAND-2025]. KPMG report: 5 of 45 citations accurate, per GPTZero [GPTZERO-KPMG-2026].
 
 **Policy and burden (surveys)**
@@ -195,13 +196,14 @@ before relying on a tool; attestations completed against policy. None of these i
 - **Management consulting:** the code of ICMCI, the international council of consulting institutes (May 2026),
   treats unreviewed AI output submitted as finished work as misuse, and requires verification of facts,
   calculations and references [ICMCI-AICODE-2026].
-- **Accounting:** ISQM 1 and SQMS 1 (the international and US standards for firm-level quality management) frame
-  AI tools as firm resources [ACCOUNTINGWEEKLY-B4-2026]; the UK audit regulator (FRC) encourages metrics on tools'
+- **Accounting:** a CIBA author argues that under ISQM 1 (the international standard for firm-level quality
+  management) an AI tool used with no policy, approved list or documented review step is an unmanaged firm resource
+  [ACCOUNTINGWEEKLY-B4-2026]; the UK audit regulator (FRC) encourages metrics on tools'
   quality impact [FRC-ATT-2025]; CPA Newfoundland and Labrador opened an investigation of Deloitte over a consulting report
   [INDEPENDENT-CPANL-2026]. Detail: assurance archetype.
 - **Standards:** NIST names confabulation (fabricated output) as a generative AI risk [NIST-AI600-2024].
-- **Insurers** are starting to ask how AI-enabled work is supervised; cover is uncertain where work was largely
-  AI-produced and weakly supervised [DACB-PI-2026; ACCOUNTINGTODAY-INSURERS-2026].
+- **Insurers** are starting to ask how AI-enabled work is supervised; policy wording may be unclear where services
+  are delivered with limited professional involvement [DACB-PI-2026; ACCOUNTINGTODAY-INSURERS-2026].
 
 **Steps that stay with a person:** confirming each authority exists and supports the point; signing filings,
 advice and reports; deciding review depth for a task; resolving checker flags; approving anything an agent sends
@@ -209,8 +211,8 @@ outside; deciding what to tell a client or court; owning the response to an erro
 
 ## 7. Roles and how they evolve
 
-- **Signers and supervisors.** Managing and supervising lawyers carry explicit duties to set policy, train and keep
-  controls current [CALBAR-GENAI-2026]; courts may ask leaders what they did [EWHC-AYINDE-2025]. Forvis Mazars says
+- **Signers and supervisors.** California's guidance says managerial and supervisory lawyers should set policy,
+  train and keep controls current [CALBAR-GENAI-2026]; courts may ask leaders what they did [EWHC-AYINDE-2025]. Forvis Mazars says
   professionals must defend AI-assisted work as if they drafted it unaided [ACCOUNTINGTODAY-HALLUC2-2026].
 - **Reviewers.** An AICPA leader says the profession moves from doing to supervising, which needs understanding of
   the procedure [JOA-TRAINING-2026]. Practitioners ask whether reviewers are independent and qualified
@@ -226,16 +228,16 @@ outside; deciding what to tell a client or court; owning the response to an erro
 
 ## 8. Frontier
 
-- **2026-11 (scheduled)** Thomson Reuters Institute webinar on accountability "beyond human in the loop" [TRI-EVENTS-2026]. Signal only.
+- **2026-11-11 (scheduled)** Thomson Reuters Institute webinar on accountability "beyond human in the loop" [TRI-EVENTS-2026]. Signal only.
 - **2026-10-19** Harvey says US case-law cite checking will launch in coming months; Midpage connector lists citation review [HARVEY-GRAPH-2026; LAWSITES-MIDPAGE-2026].
 - **2026-10-15** Harvey Legal Work Orchestration with a reviewer per task; Harvey forecasts agents taking on an additional 20% of workflow steps over six months [HARVEY-ORCH-2026]. Microsoft Copilot for Legal [LAWSITES-MSFT-2026].
-- **2026-09-09** BriefCatch launches RealityCheck citation checking with a hidden-text scan [LAWSITES-BRIEFCATCH-2026]. **2026-09-02** Filevine brief auditor [LAWSITES-FILEVINE-2026].
+- **2026-09-09** BriefCatch makes RealityCheck citation checking generally available, with a hidden-text scan [LAWSITES-BRIEFCATCH-2026]. **2026-09-02** Filevine brief auditor [LAWSITES-FILEVINE-2026].
 - **2026-08** SRA warning notice on AI misuse [LAWSOCIE-SRAWARN-2026]. **2026-08-14** Luxembourg study of legal retrieval systems [ARXIV-LUX-2026].
 - **2026-07-30** A researcher argues courts substitute process for error-rate evidence [ARXIV-WILLIAMS-2026].
-- **2026-05-19 to 07-30** GPTZero investigations of EY, KPMG and PwC Middle East reports; withdrawals follow [ACS-EY-2026; TECHCRUNCH-KPMG-2026; GPTZERO-PWC-2026].
+- **2026-05 to 2026-07-29** GPTZero investigations of EY, KPMG and PwC Middle East reports; EY Canada and KPMG withdraw reports, PwC Middle East corrects citations [ACS-EY-2026; TECHCRUNCH-KPMG-2026; GPTZERO-PWC-2026; EWEEK-PWC-2026].
 - **2026-06-22** Thomson Reuters rebuilds CoCounsel Legal around traceable citations ("fiduciary-grade") [LAWSITES-COCOUNSEL-2026].
 - **2026-05** California guidance covers agentic AI; Florida citation rule adopted (in force 2026-06-15); ICMCI code [CALBAR-GENAI-2026; LAWSITES-FLRULE-2026; ICMCI-AICODE-2026].
-- **2026-04** Sullivan & Cromwell apologises to a bankruptcy court (letter 2026-04-18); County Court refers solicitors to the SRA (2026-04-23); Law Society reports a move toward statistical sampling (2026-04-14) [CANLAWYER-SC-2026; CCDUDLEY-RODNEY-2026; LAWSOC-AGENTIC-2026].
+- **2026-04** Sullivan & Cromwell apologises to a bankruptcy court (letter 2026-04-18); County Court refers solicitors to the SRA (2026-04-23); Law Society reports teams experimenting with statistical sampling in place of manual review (2026-04-14) [CANLAWYER-SC-2026; CCDUDLEY-RODNEY-2026; LAWSOC-AGENTIC-2026].
 - **2026-03-07** Accountancy regulator to investigate Deloitte over a consulting report [INDEPENDENT-CPANL-2026].
 
 ## 9. Common objections
@@ -244,7 +246,7 @@ outside; deciding what to tell a client or court; owning the response to an erro
   courts [EDRM-JOHNSONDUNN-2025; CANLAWYER-SC-2026]; 30% of Morae respondents are confident policies are applied
   [MORAE-ILR-2026]. Answer: enforcement, attestation and a record of the check (`#01`, `#03`).
 - **"Checking AI costs more than it saves."** Many fear it (67%) and most spend significant time verifying
-  [MORAE-ILR-2026; KANTATA-SOPSI-2026], but no one has measured it. Answer: measure review time and findings
+  [MORAE-ILR-2026; KANTATA-SOPSI-2026], but no one has measured it [BESTLAWFIRMS-VTAX-2026]. Answer: measure review time and findings
   (`#11`), set depth by task (`#05`), sample where volume is high (`#06`).
 - **"Our tool is grounded, so it doesn't hallucinate."** Retrieval-based tools still hallucinated 17-33% in 2024
   and up to nearly half in a 2026 study [STANFORD-MAGESH-2024; ARXIV-LUX-2026]. Answer: test on known answers
@@ -252,13 +254,13 @@ outside; deciding what to tell a client or court; owning the response to an erro
 - **"Let AI check the AI."** A Thomson Reuters Labs scientist says self-checking loops are still prediction and
   guarantee nothing [TRI-NEED2KNOW-2026]. Answer: a machine pre-filter at most, with people on every flag (`#13`).
 - **"Our reviewers will catch it."** In the consulting incidents read, outsiders found the errors
-  [CTV-DELOITTE-2025; GPTZERO-KPMG-2026]; reviewers are short of time and trust colleagues
-  [ACCOUNTINGTODAY-HALLUC1-2026]. Answer: gates with a named, independent reviewer and back-tracing (`#08`, `#10`).
-- **"This is a litigation problem, not ours."** Deloitte, EY, KPMG and PwC reports were questioned [ACS-EY-2026;
-  GPTZERO-KPMG-2026; GPTZERO-PWC-2026], and an accountancy regulator opened an investigation
+  [CTV-DELOITTE-2025; GPTZERO-KPMG-2026]; a MindBridge methodology lead suggests reviewers are short of time and
+  trust colleagues [ACCOUNTINGTODAY-HALLUC1-2026]. Answer: gates with a named, independent reviewer and back-tracing (`#08`, `#10`).
+- **"This is a litigation problem, not ours."** Deloitte, EY, KPMG and PwC reports were questioned [CTV-DELOITTE-2025;
+  ACS-EY-2026; GPTZERO-KPMG-2026; GPTZERO-PWC-2026], and an accountancy regulator opened an investigation
   [INDEPENDENT-CPANL-2026]. Answer: pre-issue reference audit (`#04`).
-- **"Clients don't want to hear about AI."** Clients are asking, inconsistently: some demand AI, some bar it
-  [TRI-LEGALWEEK-2026]; 78% want AI quality gains, 6% see them [TR-FOP-2026]. Answer: `#16`, `#17`.
+- **"Clients don't want to hear about AI."** Clients are asking, inconsistently: some demand AI, some require permission before
+  it is used [TRI-LEGALWEEK-2026]; 78% want AI quality gains, 6% see them [TR-FOP-2026]. Answer: `#16`, `#17`.
 - **"It's an expensive toy until accuracy improves."** An ILTA respondent's view [ILTA-TECHSURVEY-2026]. Answer:
   accuracy varies by task (`#05`); review depth can follow it.
 

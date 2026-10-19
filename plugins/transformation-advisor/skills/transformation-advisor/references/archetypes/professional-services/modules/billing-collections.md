@@ -3,7 +3,8 @@
 Last reviewed 2026-10-19. Use cases live in `../use-cases/billing-collections.yaml` (17 entries). Ids are shortened here: `#05` means
 `professional-services-billing-collections-05`. Source keys in brackets are in the YAML unless marked * in §10. **Read this first:** the
 evidence is mostly vendor-published. No firm or in-house team publishes a measured effect of AI on time capture, pre-bill review, rejections or
-collections, and no source publishes an edit, override or error rate for AI-drafted entries or AI bill checks. There is no grade A entry; 5 are
+collections, and no source publishes an edit, override or error rate for AI-drafted entries or firm-side bill checks (Onit's
+client-side accuracy claim is vendor research with no method on the page). There is no grade A entry; 5 are
 B, 9 C and 3 D (ideas). Time capture is the only step with several named deployments.
 
 ## Contents
@@ -34,7 +35,7 @@ fee-agreement terms sit in scoping-pricing.
 | Time capture and entry | Recall or log activity; assign client and matter | transaction-processing, data-reporting | Time rebuilt from memory, short tasks missed [LEGORA-LAUREL-2026]; daily time due by 9:00 a.m. at one accounting firm [LAUREL-WARREN-2026] |
 | Narrative and task coding | Write a description and UTBMS task code (a standard legal task code set) that meet the client's rules | document-production, review-assurance | Guidelines run 15 to 100 pages per client [LAUREL-BILLING-2026]; invoices without valid LEDES or UTBMS codes are rejected [LAYER3-BILLINGOCG-2026] |
 | Client guideline rules | Read each client's outside counsel guidelines (OCGs) and turn them into rules | research-synthesis, review-assurance | Rules for hundreds of clients cannot be held in memory [LEGALIT-FOLEY-2024] |
-| Pre-bill review and write-downs | Partner and biller check, edit, write down and approve | review-assurance, expert-judgment | Some partners spend up to a week a month cleaning up invoices (a vendor's product lead) [LEGALIT-FOLEY-2024]; 43% of partners cut bills because time exceeded their own expectations [TRI-WRITEDOWNS-2023] |
+| Pre-bill review and write-downs | Partner and biller check, edit, write down and approve | review-assurance, expert-judgment | Some partners spend up to a week a month cleaning up invoices (a vendor's product lead) [LEGALIT-FOLEY-2024]; 43% of partners always or usually reduce a bill when time exceeds their own expectations [TRI-WRITEDOWNS-2023] |
 | Fixed-fee scope at bill time | Compare work against the agreed scope; raise a change order or absorb | data-reporting | Overruns absorbed as write-downs at close [LAUREL-BILLING-2026] |
 | Invoice and e-billing submission | Assemble the invoice; submit in LEDES format to the client's platform | transaction-processing | Rejection rate up from 11% to 18% in 2025 in Elite's data [ELITE-REJECT-2026] |
 | Rejections, reductions and appeals | Find why a line was cut; appeal or resubmit | review-assurance, document-production | Billers trained on dozens of client platforms and appeals teams [TRI-KOPKA-2026]; client AI decisions opaque [ELITE-IDEA-2026] |
@@ -81,7 +82,7 @@ module;** the nearest are held elsewhere (below). In every entry with a named us
   18 days, credited to visibility rather than AI; C).
 
 **Client side (in-house)**
-- Improve (process): `#13` AI reviews every outside-counsel invoice, not a sample, and routes flagged lines; Albertsons (retail, in-house)
+- Improve (process): `#13` AI audits every submitted outside-counsel invoice (vendors contrast this with sampling) and routes flagged lines; Albertsons (retail, in-house)
   recalls almost $2 million saved with AI audit plus volume discounts (B). The firm's bills are now read by the client's AI.
 
 **Reinvent (idea)**
@@ -132,20 +133,21 @@ Ask a billing or finance director, a billing partner, a controller, a timekeeper
   collection cycle [LAUREL-TONKON-2026]. Berger Singerman (law) nearly 15 minutes a day; entries about two days faster [LAUREL-BERGER-2026]. GHJ
   (accounting) 0.42 hours a day [LAUREL-GHJ-2026]. Unnamed Big Four tax division +2.3 chargeable hours a week against a random control group
   [LAUREL-BIGFOURTAX-2026].
-- Unrecorded time, vendor sizing that does not agree: about 11% of unsubmitted time [LAUREL-SOW-2025]; 10-30% never reaches an invoice
-  [TR-LAUREL-2026]; up to 30% [LAWSITES-LITIFY-2026].
+- Unrecorded time, vendor sizing on different bases: Laurel estimates 10-30% of billable work never reaches an invoice [TR-LAUREL-2026];
+  Litify up to 30% [LAWSITES-LITIFY-2026]; Laurel's 11% is of unsubmitted time, not of billable work [LAUREL-SOW-2025].
 
 **E-billing and rejections (Elite data, about 400 law firms, vendor-published)**
 - Rejection rate 11% to 18% in 2025, which Elite links to client AI review as an inference; 71% of firms manage guideline compliance mainly
   by hand; days to payment for eBillingHub customers fell from 62 to 50 [ELITE-REJECT-2026]. Largest fee-reduction categories: rate deviation
-  or unapproved rate 23.88%, vague description 7.57%, excessive or unsupported time 7.33% (count or value not stated) [ELITE-IDEA-2026].
+  or unapproved rate 23.88%, administrative or clerical work 15.98%, vague description 7.57%, excessive or unsupported time 7.33%
+  (count or value not stated) [ELITE-IDEA-2026].
 
 **Realisation and write-downs (Thomson Reuters Institute data; TRI belongs to a group that sells legal AI)**
 - Worked realisation (share of standard rates realised) up to 95% at firms with disciplined pricing against 75-80% with aggressive discounting;
   associates 91.5%, partners below 90%; long-term decline since 2021 [TRI-RATES-2026]. Market-standard realisation about 85% (source of the
   figure not stated) [TRI-MIDSIZE-2026].
-- 2023 survey (245 respondents, firms of 11+ lawyers): partners wrote off over 300 hours of their own potentially billable time after it was
-  reported, nearly $190,000 of fees [TRI-WRITEDOWNS-2023].
+- 2023 survey (245 respondents, firms of 11+ lawyers): the average partner wrote off over 300 hours of their own potentially billable time
+  after it was reported, nearly $190,000 of fees per partner [TRI-WRITEDOWNS-2023].
 
 **Cash cycle (secondhand)**
 - Wells Fargo H1 2026 (140+ firms): inventories +17.7%, collection cycles slowed by 5%, unit not defined [LAWFUEL-WF-2026]. Clio figures
@@ -161,8 +163,8 @@ Ask a billing or finance director, a billing partner, a controller, a timekeeper
   Wolters Kluwer up to 10% lower spend [WK-LEGALSPEND-2026]; Albertsons almost $2 million year to date, recalled, combined with volume discounts
   [ALBERTSONS-TR-2026]. Nearly 60% of about 650 in-house respondents saw no noticeable savings from firms' AI yet [BLOOMBERGLAW-ACC-2025];
   68% of corporate legal professionals did not know whether their firms use AI [TRI-GREATDISCONNECT-2026].
-- Accounting (vendor survey): 15% name slow or inaccurate billing as their single most-cited operational headache; 62% say trust depends on
-  a human approving before anything is sent [UKU-AIACCOUNTING-2026].
+- Accounting (vendor survey): 15% name slow or inaccurate billing as their biggest headache (missing deadlines lead, 32%); 62% say
+  trust depends on a human approving before anything is sent [UKU-AIACCOUNTING-2026].
 
 **What to measure (recommended; nobody publishes these yet):** edit and override rate on drafted entries; days from work to entry, entry to
 bill and bill to cash; pre-bill review hours; rejections and reductions by rule and client; write-down rate by client, practice and timekeeper;
@@ -188,8 +190,8 @@ One Illinois bar newsletter commentary argues ordinary AI use should be absorbed
 
 **Client instructions.** California requires following client guidelines that restrict AI [CALBAR-GENAI-2026]. Zscaler's guidelines ask for
 AI use to be noted in the time entry and bar passing on AI time and cost; block-billed lines are rejected (resubmit at 15% less or be paid at
-10% less) and invoices more than 60 days late lose 20% [ZSCALER-OCG-2025]. Australia: record and disclose AI use and its effect on costs if the client asks [AUSLEG-AISTATEMENT-2024]. The SRA has no
-specific generative AI guidance on client care [LAWSOC-GENAI-2026].
+10% less) and invoices more than 60 days late lose 20% [ZSCALER-OCG-2025]. Australia: record and disclose AI use and its effect on costs if the client asks [AUSLEG-AISTATEMENT-2024]. The Law Society
+says the SRA has no specific generative AI guidance on use or disclosure for client care [LAWSOC-GENAI-2026].
 
 **Worker monitoring.** Passive capture reads email, documents and calls. The UK ICO's monitoring guidance is under review [ICO-MONITORING-2026];
 the EU AI Act lists AI to monitor and evaluate workers as high-risk [EU-AIACT-ANNEX3-2024], with those obligations from 2 December 2027
@@ -209,8 +211,8 @@ whether any AI cost is charged; flat-fee reasonableness; for in-house teams, whi
 
 - **Timekeepers** move from writing time from memory to reviewing a system record [LEGORA-LAUREL-2026]; Lerners' Firm Chair still reviews
   and finalises her dockets [LAUREL-LERNERS-2026].
-- **Billing partners** review the items AI flags instead of whole pre-bills at Foley [LEGALIT-FOLEY-2024]; Laurel describes partners
-  "approving decisions, not entries" (vendor description of an unreleased product) [LAUREL-BILLINGPAGE-2026].
+- **Billing partners** review the items AI flags instead of whole pre-bills at Foley [LEGALIT-FOLEY-2024]; Laurel's product page tells
+  partners to "approve decisions, not entries" (vendor description of an unreleased product) [LAUREL-BILLINGPAGE-2026].
 - **Billers and coordinators** move from re-keying partner mark-ups to approving flagged fixes [LAUREL-BILLING-2026]; Elite says billing teams
   should move from correcting rejections to preventing them [ELITE-REJECT-2026]. Kopka Law describes billers trained on dozens of client
   platforms [TRI-KOPKA-2026].
@@ -240,13 +242,11 @@ whether any AI cost is charged; flat-fee reasonableness; for in-house teams, whi
 - 2026-05-14: Elite reports rejections up to 18%; California's revised AI guidance approved [ELITE-REJECT-2026; CALBAR-GENAI-2026].
 - 2026-05-21: Intapp Time adds work-code prediction and narrative compliance [INTAPP-TIMERELEASE-2026].
 - 2026-08-17: Aderant iTimekeep-Harvey integration announced as live [ADERANT-ITIMEKEEPHARVEY-2026].
-- 2026-08-19: Oddr releases AI-drafted collection emails; Collections Agent in development [ODDR-COLLECTIONS-2026].
+- 2026-08-19: Oddr AI-drafted collection emails [ODDR-COLLECTIONS-2026]; Laurel Billing announced as coming soon [LAUREL-BILLING-2026].
 - 2026-09-04: move from seat-based to consumption-based AI pricing discussed at ILTACON [EDISCOVERYTODAY-ILTACON-2026*].
-- 2026-09-17: Laurel Billing (Compliance and Scope agents) announced as coming soon; one input dates it 2026-08-19 [LAUREL-BILLING-2026].
 - 2026-10-07: Kantata launches Agent Studio; Basware named as a user [ITBRIEF-KANTATA-2026].
 - 2026-10-13: Legora and Laurel: Legora tasks to become draft time entries; AI-value measures in phase two [LEGORA-LAUREL-2026].
-- Scheduled: 2027-12-02, EU AI Act Annex III obligations apply [EC-AIACT-2026]. TRI's Law Firm COO & CFO Forum (21-22 Oct 2026) is
-  scheduled, not evidence.
+- Scheduled: 2027-12-02, EU AI Act Annex III obligations apply [EC-AIACT-2026].
 
 ## 9. Common objections
 
@@ -254,15 +254,16 @@ whether any AI cost is charged; flat-fee reasonableness; for in-house teams, whi
   [ICO-MONITORING-2026; EU-AIACT-ANNEX3-2024]. Ajax offers a pause function [LAWSITES-AJAX-2025]; vendor security claims need checking
   [LAURELSITE-2026]. GHJ frames its data as understanding, not evaluation [LAUREL-GHJ-2026].
 - **"AI capture just pads the bill."** The rule is actual time [CALBAR-GENAI-2026]; vendors frame the gain as recovering unrecorded work
-  [LEGORA-LAUREL-2026]. Whether clients pay the extra hours is not measured [LAUREL-GHJ-2026], and most in-house teams see no savings yet
-  [BLOOMBERGLAW-ACC-2025].
-- **"The numbers are marketing."** Agreed: every figure is vendor-published and they conflict (Tonkon Torp 20 or 21 minutes; 11% or 30%
-  unrecorded) [LAUREL-TONKON-2026; LAUREL-SOW-2025; LAWSITES-LITIFY-2026]. Set your own baseline and track edit rates in a pilot.
+  [LEGORA-LAUREL-2026]. No source measures whether clients pay the extra hours; nearly 60% of in-house respondents see no
+  savings from firms' AI yet [BLOOMBERGLAW-ACC-2025].
+- **"The numbers are marketing."** Agreed: every time-capture figure is vendor-published, some conflict (Tonkon Torp 20 or 21 minutes on
+  the same page) and sizing claims use different bases (10-30% of billable work; 11% of unsubmitted time) [LAUREL-TONKON-2026;
+  TR-LAUREL-2026; LAUREL-SOW-2025]. Set your own baseline and track edit rates in a pilot.
 - **"Clients will reject AI-drafted narratives."** Client AI already reads invoices; rejections rose from 11% to 18% [ELITE-REJECT-2026].
   Checks at entry and before billing (`#03`, `#05`) answer it with the client's own rules.
 - **"If AI makes us faster, hourly revenue falls."** On hourly work, saved time cannot be billed [TXETHICS-OP705-2025]. Perlin argues AI may
   reinforce rather than disrupt the billable hour [LEGALFUTURES-PERLIN-2025]; fee-model choices sit in scoping-pricing.
-- **"Disclosing AI use invites fee cuts."** It may [TRI-LEGALWEEK-2026], but some clients already require it (Zscaler) and California requires
+- **"Disclosing AI use invites fee cuts."** It may: some clients use firms' AI adoption as leverage to cut costs [TRI-LEGALWEEK-2026], but some clients already require it (Zscaler) and California requires
   following client AI guidelines [ZSCALER-OCG-2025; CALBAR-GENAI-2026].
 - **"Collections is relationship work."** The tools leave decisions with staff [ODDR-COLLECTIONS-2026]; some post-work discounting protects
   relationships [TRI-RATES-2026]; CollBox keeps human collectors on calls [ABAJ-TECHSHOW-2026].
@@ -278,13 +279,13 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys marked * 
 - **Regulators, professional bodies and standards:** CALBAR-GENAI-2026, TXETHICS-OP705-2025, DCBAR-OP388-2024, NCBAR-FEO1-2024,
   VACOURTS-LEO1901-2025, VALAWYER-2026, ABA-BLT-2024, AUSLEG-AISTATEMENT-2024, LAWSOC-GENAI-2026, IRS-OPR-2026, ICO-MONITORING-2026,
   EU-AIACT-ANNEX3-2024, EC-AIACT-2026, FAR-52.232-7, LEDES-UTBMS-2026, ILTA-RISE-2025, JOFA-CAS-2026, AICPA-CODE-2026* (AICPA Code of
-  Professional Conduct, edition updated through July 2026, 1.510.001), ISBA-ELEFANT-2026* (Illinois State Bar Association newsletter
-  commentary on passing AI costs to clients, 2026-07).
+  Professional Conduct through July 2026, 1.510.001, 2026-07, https://mn.gov/boa/assets/AICPA%20Code%20of%20Professional%20Conduct_tcm1233-764395.pdf),
+  ISBA-ELEFANT-2026* (Elefant, MyShingle Ethics Opinion 2026-1, ISBA newsletter commentary, 2026-07, https://www.isba.org/node/104199).
 - **Academic:** GEORGETOWN-PERLIN-2025, WJLTA-RAPOPORT-2025.
 - **Surveys and market data:** TRI-RATES-2026, TRI-WRITEDOWNS-2023, TRI-GREATDISCONNECT-2026, ILTA-TECHSURVEY-2026, UKU-AIACCOUNTING-2026.
 - **Client documents (in-house):** ZSCALER-OCG-2025.
 - **Conference coverage:** TRI-LEGALWEEK-2026, ABAJ-TECHSHOW-2026, KARBON-ENGAGE-2026, EDISCOVERYTODAY-ILTACON-2026* (eDiscovery Today,
-  "My Five ILTACON 2026 Takeaways", 2026-09-04).
+  2026-09-04, https://ediscoverytoday.com/2026/09/04/my-five-iltacon-2026-takeaways-legal-technology-trends/).
 - **Press:** TRI-KOPKA-2026, TRI-MIDSIZE-2026, TRI-ROI-2025, TRI-ABA512-2025, LEGALIT-FOLEY-2024, NONBILLABLE-LINKLATERS-2025,
   CFOTECH-ELITE-2026, LAWFUEL-WF-2026, BLOOMBERGLAW-ACC-2025, LEGALFUTURES-PERLIN-2025, LAWSITES-AJAX-2025, LAWSITES-LAUREL-2026,
   LAWSITES-BILLABLESAI-2025, ITBRIEF-KANTATA-2026, SILICONANGLE-CERTINIA-2026, IA-CERTINIA-2025, ACCTODAY-BLUEJ-2026.
