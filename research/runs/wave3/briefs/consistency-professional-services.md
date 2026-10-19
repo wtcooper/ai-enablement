@@ -52,3 +52,18 @@ Do not touch the archetype-level files, the archetypes index or other archetypes
 Edit the files in place, then write `/home/user/ai-enablement/research/runs/wave3/professional-services-consistency-report.md`:
 keys unified, duplicates handled, cross-references fixed, provenance and grade changes, build words removed, and
 the validator result. Do not run git. Reply with a summary of **no more than 150 words**.
+
+## Coordinator notes (conflicts reported by the module agents)
+
+- Source key VALS-VLAIR-2025: tax uses it for the Oct 2025 Vals report; PS work-production uses it for the Feb report. Reconcile.
+- CalBar, ILTA, TR-FOP entries differ in date/type between scoping-pricing.yaml and work-production.yaml. Reconcile.
+- NBER patent-lawyer trial (NBER 35720): talent-learning labels provenance vendor-published (Google ran and funded it); other modules say independent. Decide one rule and apply everywhere.
+- talent-learning-synthesis-report lists 14 documents with different source keys across files (aliases). Use it as the key-unification list.
+- ILTA 2026 survey date: PDF metadata 2026-08-14; files say 2026-06. Check the publication date and unify.
+- Dates for TR-FOP-2026 and TR-AIPS-2026 conflict across files; McKinsey outcome-fee share (quarter vs third) conflicts. Unify from verification reports.
+- ACC-Everlaw release: type/URL differ across files. LAWSOC-AGENTIC-2026 collision (work-production vs knowledge-management uses LAWSOC-AGENTICFUTURE-2026).
+- NBER 35720: six of seven authors have Google ties (talent-learning verifier). Use vendor-published everywhere with that note.
+- EC-AIACT-2026 date conflicts across files.
+- CALBAR-GENAI-2026: dated 2026-05-14 in delivery-management, 2026-05 elsewhere. Use 2026-05-14 everywhere if the source confirms.
+- ILTA-TECHSURVEY-2026: settle one date from the publisher page or PDF (verifiers found PDF metadata 2026-08-14; files say 2026-06 or 2026). Use what the publisher states; if none, the PDF date.
+- Several verification reports list renamed keys; read all 12 before unifying.
