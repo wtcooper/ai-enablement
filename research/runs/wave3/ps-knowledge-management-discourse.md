@@ -1,6 +1,6 @@
 # Professional services: knowledge management (precedents, methods, expertise). Discourse angle
 
-Prepared 2026-10-19. Archetype `professional-services`, module `knowledge-management`. Angle: what practitioners are saying (conference sessions, podcasts, practitioner articles, trade press, vendor announcements as read by trade press). Method: `curl` with a text mirror for blocked pages, `pdftotext` for PDFs. Web search budget ran out during the run, so the last leads were followed by direct fetch only. Each source is marked `access: full` (opened and read) because no search-only item supports any claim below. All page text was read in the form returned by the server; for three pages (EDRM, NetDocuments technical report, APQC) the text came through the r.jina.ai mirror.
+Prepared 2026-10-19. Archetype `professional-services`, module `knowledge-management`. Angle: what practitioners are saying (conference sessions, podcasts, practitioner articles, trade press, vendor announcements as read by trade press). Method: `curl` with a text mirror for blocked pages, `pdftotext` for PDFs. Web search budget ran out during the run, so the last leads were followed by direct fetch only. Each source is marked `access: full` (opened and read) because no search-only item supports any claim below. Page text was read as returned by the server, except two pages (the EDRM preview and the NetDocuments technical report) that were read through the r.jina.ai text mirror after a Cloudflare block; the APQC survey page returned no report content.
 
 ---
 
@@ -1083,7 +1083,21 @@ All sources were opened and read (`access: full`) unless stated; the three read 
 
 **Read but not cited**: iManage resource-center item (2026-02-11; headline says only 17% of firms use AI daily, the body gives no definition, so it is not used), Artificial Lawyer notice of an iManage webinar held 8 October 2026 (2026-09-24; no outcome available), LawNext page on the 2024 KM&I conference podcast (2024-09-04), Opus 2/SKILLS survey release (2025-06-16), Bloomberg Law item on Littler's chief AI officer (2026-04-08), Harvey and Legora newsroom pages, and the TRI Legal Department Operations Report, Stand-out Lawyers and Future of Professionals pages (little or nothing on KM).
 
-**Source count by type** (cited in the Sources table, __N__ rows): press 22, vendor 9, conference 6, survey 4, podcast 2, regulator 1, academic 1, firm 1. No job-posting or community items were reachable.
+**Locators for sources cited only in the module notes and summary**
+
+- TRI-SOTLM-2026: paragraphs beginning "This ramped-up competition" and "And, as past Thomson Reuters research showed"; the "From 2021 to 2025" paragraph (39.3% and 37.2%).
+- LAWSITES-AALL-2025: paragraphs 2 to 7 (6.6 FTE average, 4.6 in 2019, 7.9 firm and corporate, chief knowledge officer average salary, 257 organizations, 45% response).
+- AL-X4-2026: K&L Gates paragraphs (new Global AI and Innovation Partner role).
+- LAWYERSWEEKLY-GILCHRIST-2026: paragraphs 1 to 4.
+- EDRM-LEGALWEEK-2026: section "Sessions about the Importance of a Quality Data Foundation".
+- EDISCOVERYTODAY-ILTACON-2026: sections "Is 'tokengeddon' looming for AI pricing?" and "'Context' was the word of the conference".
+- TRI-LEGALWEEK-2026: paragraphs on firms "still gathering the data" and AI line items on invoices.
+- NBER-AUTOR-2026: abstract.
+- GLB-FUTUREKM-2026: Description and Reviews (Law Society Gazette reviewer quote); publication date "Jan 2026".
+- ACCTODAY-CHATNATIONAL-2024: paragraphs 1 to 3.
+- KMI-LEGAL-2026: home page topic list (expertise location, enterprise search); the 21-22 October 2026 dates come from AL-DIDOMENICO-2026, last paragraph.
+
+**Source count by type** (49 cited in the Sources table): press 28, vendor 8, conference 5, survey 3, podcast 2, regulator 1, academic 1, firm 1. Beyond these, about eight further pages were read and not cited (listed above). No job-posting or community items were reachable.
 
 ---
 
