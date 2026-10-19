@@ -370,7 +370,7 @@ Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pd
     - "Data-room documents in a controlled workspace; a defined issue list or playbook per specialty."
     - "Pilot scale and training: Hogan Lovells Cadwalader's Legora pilot covered more than 1,300 lawyers across 18 practice teams, including M&A and real estate."
   risks_and_guardrails:
-    - "No source reports recall (missed-issue) rates from real diligence; Harvey's own synthetic benchmark found no model passed every criterion on any data room (use case 09)."
+    - "No source reports recall (missed-issue) rates from real diligence; in Harvey's own synthetic benchmark, base models in the standard tool-loop harness passed no data room on every criterion (use case 09)."
     - "Cal Bar: AI output must be reviewed and verified; agentic tools must not make substantive legal determinations without lawyer supervision (CALBAR-GENAI-2026, Agentic AI section)."
   human_checkpoints:
     - "Specialist lawyers review flagged issues and sign the diligence memo."
@@ -397,11 +397,11 @@ Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pd
   runtime_class: background-agent
   maturity: announced
   problem: "A full data room can hold thousands of documents and tens of millions of tokens, more than a single model context; chat tools read only a fraction."
-  solution: "Harvey describes a decomposition harness in which a root agent divides the data room by category, sub-agents review each part, and the root assembles a diligence memo with citations and recommended next steps, evaluated against expert rubrics on synthetic data rooms. Harvey also lists Agents that 'execute complex legal work end to end' on its platform; no named customer describes using such an agent for a whole diligence."
+  solution: "Harvey describes a decomposition harness in which a root agent divides the data room by category, sub-agents review each part, and the root assembles a diligence memo with citations and recommended next steps, evaluated against expert rubrics on synthetic data rooms. Harvey's platform menu also lists Agents that 'execute complex legal work end to end' (HARVEY-ORCH-2026, navigation); no named customer describes using such an agent for a whole diligence."
   outcomes:
     - lever: quality
-      description: "On Harvey's synthetic diligence benchmark, the standard tool loop passed under a quarter of rubric criteria; the decomposition harness raised that sharply, and no model passed every criterion."
-      figure: "mean pass rate 23.3% to 62.4% across seven models; no model passes every criterion on any data room"
+      description: "On Harvey's synthetic diligence benchmark, base models in the standard tool-loop harness passed under a quarter of rubric criteria and none passed every criterion on any data room; the decomposition harness raised the mean sharply."
+      figure: "mean pass rate 23.3% (standard tool-loop harness) to 62.4% (decomposition harness) across seven models"
       measures: "mean share of rubric pass-or-fail criteria met by the diligence memo on 50 held-out synthetic data rooms, judged by an LLM against expert rubrics"
       provenance: vendor-published
       source_ref: HARVEY-RLM-2026
@@ -802,7 +802,7 @@ Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pd
     - "Quality of the playbook limits quality of output; the Robert Walters and PwC Legal postings both call for evaluation and benchmarking skills."
   human_checkpoints:
     - "Practice experts own and update playbooks."
-  role_evolution: "New roles: legal engineers (Harvey has 34 postings with 'Legal Engineer' or 'Legal Engineering' in the title and Legora has 54 on their Ashby boards as of 2026-10-19, some duplicates); firm-side postings for 'Legal Engineer' or AI-enabled legal delivery roles ask for prompts, workflows, playbooks, evaluation sets and agentic AI skills (PWC-LEGALJOB-2026, RW-LEGALENGINEER-2026)."
+  role_evolution: "New roles: legal engineers (Harvey has 34 postings with 'Legal Engineer' or 'Legal Engineering' in the title, HARVEY-JOBS-2026, and Legora has 54, LEGORA-JOBS-2026, on their Ashby boards as of 2026-10-19, some duplicates); firm-side postings for 'Legal Engineer' or AI-enabled legal delivery roles ask for prompts, workflows, playbooks, evaluation sets and agentic AI skills (PWC-LEGALJOB-2026, RW-LEGALENGINEER-2026)."
   evidence_grade: B
   sources:
     - { ref: HARVEY-HLC-2026, title: "Hogan Lovells Cadwalader adopts Harvey", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/blog/hogan-lovells-cadwalader-adopts-harvey", date: "2026-10-16", access: full, locator: "paragraph 2" }
@@ -811,7 +811,8 @@ Method: pages opened with `curl` (some through the `r.jina.ai` text mirror), `pd
     - { ref: HARVEY-REEDSMITH-2026, title: "Designing the Frontier Firm: How Reed Smith is Rewriting the Playbook With Harvey", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/customers/reed-smith", date: "2026-05-11", access: full, locator: "Solution: A Trio Built for Transformation" }
     - { ref: PWC-LEGALJOB-2026, title: "Legal Engineer - AI-Enabled Legal Delivery (Senior Associate / Manager)", publisher: "PwC (Global Legal), Brussels, via LegalAlphabet", type: job-posting, url: "https://legalalphabet.com/job/legal-engineer-ai-enabled-legal-delivery-senior-associate-manager-job-at-pwc-global-legal-in-brussels", date: "2026-09-16", access: full, locator: "responsibilities and requirements" }
     - { ref: RW-LEGALENGINEER-2026, title: "Legal Engineer lawyer - leading global law firm (London)", publisher: "Robert Walters (for an unnamed law firm)", type: job-posting, url: "https://www.robertwalters.co.uk/legal/jobs/in-housegeneralist/1910788-legal-engineer-lawyer---leading-global-law-firm.html", date: "2026-09-09", access: full, locator: "responsibilities" }
-    - { ref: HARVEY-JOBS-2026, title: "Legal Engineer (Law Firm, Corporate) - Harvey job board", publisher: "Harvey (Ashby job board)", type: job-posting, url: "https://jobs.ashbyhq.com/harvey/c3b9e500-dc27-4afe-9b8a-31223c6b18fe", date: "2026-06-17", access: full, locator: "Function overview" }
+    - { ref: HARVEY-JOBS-2026, title: "Legal Engineer (Law Firm, Corporate) - Harvey job board", publisher: "Harvey (Ashby job board)", type: job-posting, url: "https://jobs.ashbyhq.com/harvey/c3b9e500-dc27-4afe-9b8a-31223c6b18fe", date: "2026-06-17", access: full, locator: "Function overview: legal engineers translate real legal work into Harvey solutions" }
+    - { ref: LEGORA-JOBS-2026, title: "Legal Engineer (Accounting) - Legora job board", publisher: "Legora (Ashby job board)", type: job-posting, url: "https://jobs.ashbyhq.com/legora/57ec5894-05b4-4fc7-b4b1-a6892d813134", date: "2026-10-15", access: full, locator: "What you'll do" }
   last_reviewed: 2026-10-19
   notes: "Posting counts come from the public Ashby JSON feeds fetched 2026-10-19 (title match), not an official headcount. MinterEllison date is the Legora 'joined' label (2026-09). Talent-learning aspects of the accelerator route to that module."
 
@@ -1017,7 +1018,7 @@ Types: vendor 25, press 7, academic 6, job-posting 4, survey 2, conference 2, re
 | PWC-LEGALJOB-2026 | Legal Engineer - AI-Enabled Legal Delivery | PwC (Global Legal) via LegalAlphabet | job-posting | https://legalalphabet.com/job/legal-engineer-ai-enabled-legal-delivery-senior-associate-manager-job-at-pwc-global-legal-in-brussels | 2026-09-16 |
 | RW-LEGALENGINEER-2026 | Legal Engineer lawyer - leading global law firm | Robert Walters | job-posting | https://www.robertwalters.co.uk/legal/jobs/in-housegeneralist/1910788-legal-engineer-lawyer---leading-global-law-firm.html | 2026-09-09 |
 
-Note on refs: `LEGORA-CROWELL-2026`, `LEGORA-DKSH-2026`, `LEGORA-JOBS-2026`, `HARVEY-CUSTOMERS-2026`, `LEGORA-CUSTOMERS-2026`, `TRI-LDOR-2026` and `HARVEY-LABCONTRACT-2026` appear in the notes and this list, not in a use-case `sources` block, because they support context statements rather than a use-case claim.
+Note on refs: `LEGORA-CROWELL-2026`, `LEGORA-DKSH-2026`, `HARVEY-CUSTOMERS-2026`, `LEGORA-CUSTOMERS-2026`, `TRI-LDOR-2026` and `HARVEY-LABCONTRACT-2026` appear in the notes and this list, not in a use-case `sources` block, because they support context statements rather than a use-case claim.
 
 ## 6. Gaps
 
