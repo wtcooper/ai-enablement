@@ -23,7 +23,7 @@ matters and that firms are not delivering or talking about it. Consulting firms 
 
 ## 1. What this module covers
 
-How a firm keeps and grows the clients it already has: relationship data and intelligence, key-account plans and
+How a firm keeps and grows the clients it already has (business development, BD): relationship data and intelligence, key-account plans and
 cross-sell, meeting preparation and outreach, the conversation with each client about AI (what it changed, what it
 saved, what the terms are), client feedback and retention, and AI offered to clients as part of the relationship.
 Examples come from law, accounting and consulting firms and from in-house legal teams as buyers (tagged `in-house`).
@@ -65,7 +65,7 @@ client development through an agent. **Reinvent:** `#21` and `#22` (B), with no 
 
 **Preparation and outreach**
 - Improve: `#06` pre-meeting briefs (Grassi, LBMC, Thomson Snell & Passmore; B). `#07` partners move from
-  general-purpose chatbots to assistants grounded in firm relationship data (Introhive MCP connector, Intapp
+  general-purpose chatbots to assistants grounded in firm relationship data (Introhive's MCP connector, a standard way for assistants to query a system; Intapp
   Celeste; C). `#08` nudges and drafted client notes (C). `#09` call summaries and coaching (C).
 - Delegate: `#10` Celeste runs origination and BD playbooks (announced, C). `#11` idea: agent-run outbound
   sequences (D).
@@ -105,7 +105,7 @@ Ask a managing partner, CMO or BD director, key-account partner or (in-house) a 
 3. **"When a key client last asked how you use AI on their work and what they get from it, who answered, with
    what evidence?"** Reveals the conversation gap (`#14`) and evidence gap (`#15`).
 4. **"When did a partner last raise AI with a key client unprompted? What did they lead with: value or
-   discount?"** Reveals partner readiness; TRI finds many do not raise it [TRI-STANDOUT-2026].
+   discount?"** Reveals partner readiness; Thomson Reuters Institute (TRI) research finds many do not raise it [TRI-STANDOUT-2026].
 5. **"Do you hold every client's instructions on AI (permitted, prohibited, disclosure, billing) in one place?
    Could two conflict on one matter?"** Reveals exposure under `#16`-`#17` and California's rule to follow
    client limits [CALBAR-GENAI-2026].
@@ -224,7 +224,7 @@ information or advice; whether an intake conversation formed a relationship; att
 - 2025-11-11: a Law Punx contributor predicts clients will consume legal services through AI; firms have to
   end-2027 to make knowledge AI-accessible [LAWPUNX-2025].
 - 2026-02: Oregon opinion on intake chatbots and AI agents [OSB-FO-2026-208]; 2026-02-12: a GC says firms give
-  clients nothing from AI [AL-INHOUSE-2026*] (in-house); 2026-02-18: CMBDO panelists call BD a good starting
+  clients nothing from AI [AL-INHOUSE-2026*] (in-house); 2026-02-18: panelists at TRI's chief marketing and BD officer (CMBDO) forum call BD a good starting
   point for agentic AI [TRI-CMBDO-2026].
 - 2026-03-13: Legalweek: clients ask for matter-level savings; some refuse to pay for AI-done work [TRI-LEGALWEEK-2026].
 - 2026-04-16: Introhive previews an MCP server for relationship data [INTROHIVE-MCP-2026].
