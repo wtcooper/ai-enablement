@@ -1,6 +1,6 @@
 # Pursuit and proposals (professional services)
 
-Last reviewed 2026-10-19. Use cases live in `../use-cases/pursuit-proposals.yaml` (20 entries: A 0, B 10, C 7, D 3). Ids
+Last reviewed 2026-10-19. Use cases live in `../use-cases/pursuit-proposals.yaml` (20 entries: A 0, B 9, C 8, D 3). Ids
 are shortened here: `#06` means `professional-services-pursuit-proposals-06`; other modules' ids are in full. Source
 keys in brackets are in the YAML or in §10 (keys marked * are only in §10). **Read this first:** pursuit is where AI is
 most widely used and least measured. Loopio's survey of 1,533 bid professionals (all industries, run with APMP, the
@@ -45,7 +45,7 @@ scoping-pricing; conflicts and client terms after acceptance in acceptance-risk.
 | Shape the narrative | Executive summary, win themes, one voice | document-production | Multi-partner "Frankenstein" documents [ABA-LPMAI-2026] |
 | Price and staff | Fee scenarios and team | expert-judgment | Held in scoping-pricing (professional-services-scoping-pricing-03) |
 | Answer AI questions | Tools, governance, data use, savings; disclosure of AI in the bid | client-interaction, review-assurance | Firms "still gathering the data" clients ask for [TRI-LEGALWEEK-2026] |
-| Review and approve | Accuracy, compliance, claims, partner or risk sign-off | review-assurance | One invented credential can disqualify (`#11`) |
+| Review and approve | Accuracy, compliance, claims, partner or risk sign-off | review-assurance | In a federal SF-330, one invented project citation can disqualify, per a vendor (`#11`) |
 | Produce and submit | Formatting, templates, portals | document-production, transaction-processing | 45% of RFPs go through online portals [LOOPIO-TRENDS-2026] |
 | Prepare the pitch | Client research, orals rehearsal | research-synthesis, client-interaction | 24 hours of research at one firm before AI (`#08`) |
 | Debrief and learn | Win/loss reasons, library updates, metrics | data-reporting | Lessons rarely reach the next bid (`#16`) |
@@ -67,16 +67,18 @@ named customer (C). **Delegate:** only `#15` (C), with no firm running pursuit e
 - Improve: `#01` first drafts from an approved library at accounting firm Cherry Bekaert ("8 hours to 2", a manager's
   recollection), IT services firm Versent (600 hours a year, projected) and Serco (government services, adjacent) (B).
   `#02` archive search and chat: law firm Ballard Spahr ("X-Ray"; partners estimate about two hours saved per RFP),
-  engineering firms Benesch and Woodard & Curran (B). `#04` lawyer bios rebuilt from time records (Baker Botts, B).
+  engineering firms Benesch and Woodard & Curran (B). `#04` lawyer bios rebuilt from time records (Baker Botts; use in
+  pitches is inferred, B).
 - Automate: `#03` pitchbooks, proposals and CVs generated from structured data at law firms Gordon Rees Scully
-  Mansukhani (GRSM), Stinson and Gowling WLG, IT consultancy Neudesic and engineering firm Arup; GRSM reports "more than
-  50%" less proposal time (B). `#05` reconciling duplicate and stale people and project records before retrieval (vendor
-  to AEC firms, i.e. architecture, engineering and construction; C).
+  Mansukhani (GRSM) and Stinson, IT consultancy Neudesic and engineering firm Arup (Gowling WLG uses the same platform
+  for experience search); GRSM's marketing manager reports "over 50%" less proposal generation time, with no stated
+  baseline (B). `#05` reconciling duplicate and stale people and project records before retrieval (vendor to AEC firms,
+  i.e. architecture, engineering and construction; C).
 
 **Drafting and tailoring**
 - Improve: `#09` partners drafting urgent responses on a legal AI platform; Harvey says law firm Lynn Pinker Hurst &
   Schwegmann answered in under 48 hours and won (vendor anecdote, B). `#10` executive summaries, win themes and one
-  voice (C). `#13` tailoring when tailored text stops proving fit; independent platform studies (adjacent, B). `#14`
+  voice (C). `#13` tailoring when tailored text stops proving fit; independent platform studies (adjacent, C). `#14`
   proposal agents inside PSA (professional services automation) and experience platforms: Certinia, Kantata, Intapp
   (announced, C).
 
@@ -90,17 +92,18 @@ named customer (C). **Delegate:** only `#15` (C), with no firm running pursuit e
   personal chatbots, e.g. Ballard Spahr's "Ask Ellis" for awards and survey submissions (B).
 
 **Pitch, learning and buyer side**
-- Improve: `#08` client-needs and competitor brief; Baker Botts cut 24 hours of research by "more than half" (B).
+- Improve: `#08` client-needs and competitor brief; Baker Botts set out to cut 24 hours of research by "more than half"
+  and reports a two-minute readout; the reduction achieved is not reported (B).
 - Improve (process): `#16` win/loss analytics linking AI use to outcomes (C). Delegate: `#15` agents directed across
   qualification, drafting and review (SMPS trend, Intapp Celeste claim; C).
 - Buyer side (in-house), improve (process): `#20` RFP scoping and proposal comparison (Priori Scout announced;
   independent Ohio study of AI scoring of supplier bids; C).
 
-**Held elsewhere (do not duplicate):** professional-services-client-development-05, -06, -07 (relationship intelligence,
-briefs, BD assistants), -10 (Celeste playbooks), -12 (AI claims in marketing), -14 to -16 (value conversations, matter
-evidence, AI terms), -17 (in-house OCG addenda), -18 (AI-moderated win/loss interviews), -19 (attribution);
-professional-services-scoping-pricing-02, -03, -05, -09, -10, -12 (estimates, fee scenarios, SOWs, savings evidence,
-public-sector AI declarations); professional-services-knowledge-management-04 (experience location);
+**Held elsewhere (do not duplicate):** professional-services-client-development-05, -06, -07 (opportunity scouting,
+pre-meeting briefs, BD assistants), -10 (Celeste playbooks), -12 (AI claims in marketing), -14 to -16 (value
+conversations, matter evidence, AI terms), -17 (in-house OCG addenda), -18 (AI-moderated win/loss interviews), -19
+(attribution); professional-services-scoping-pricing-02, -03, -05, -09, -10, -12 (estimates, fee scenarios, SOWs,
+savings evidence, public-sector AI declarations); professional-services-knowledge-management-04 (experience location);
 professional-services-acceptance-risk-10, -11 (client terms, AI-restriction registers);
 professional-services-work-production-11, -22, -25 (citation checks, tool rollout, per-matter AI records);
 professional-services-talent-learning-06, -07, -11 (junior learning). No assurance, tax or security entry covers
@@ -160,16 +163,16 @@ a formal one [BDC-UNANET-2026].
 volume handled, 35% credit higher win rates and revenue; most cannot answer 10-20% of incoming RFPs
 [QORUSDOCS-ITBRIEF-2026]. Responsive and APMP 2025 (726): "Leaders" are likelier than "Novices" to use AI for workflow
 orchestration (41% vs 17%), win/loss insight (37% vs 18%) and go/no-go (37% vs 26%) [RESPONSIVE-SRM-2025]; its 2026
-report says 6 in 10 see positive ROI from most or all tools (detail gated) [RESPONSIVE-SRM-2026*].
+report says 6 in 10 "Leaders" (not all respondents) see positive ROI from most or all AI tools [RESPONSIVE-SRM-2026*].
 
 **Price and effort:** a Perkins Coie pricing manager said lowest bids on reverse-auction platforms lose 54% of the time
 and highest win 18% (panel remark, no denominator) [TRI-ILTACON-2025*]. A consulting vendor quotes 91 proposals a year
 at about 24 hours each, seniors giving about 11 hours each; unsourced [PROJECTWORKS-BD-2026*].
 
 **Independent evidence (all adjacent):** AI models aligned with human procurement staff on compliance signals but were
-volatile on value-add claims across 123 Ohio IT bids [JBL-MCKINLEY-2026]; tailored cover letters lost signal value after
-an AI tool arrived on a labour platform (51% weaker link to callbacks) [CUI-DIAS-YE-2025]; legal research tools
-hallucinated 17-33% [STANFORD-MAGESH-2024].
+volatile on value-add claims across 123 State of Ohio government supplier bids [JBL-MCKINLEY-2026]; tailored cover
+letters lost signal value after an AI tool arrived on a labour platform (51% weaker link to callbacks)
+[CUI-DIAS-YE-2025]; legal research tools hallucinated 17-33% [STANFORD-MAGESH-2024].
 
 **What to measure (recommend; nobody publishes these yet):** win and shortlisting rate for AI-assisted versus other bids
 against a pre-AI baseline; hours and senior hours per bid; share of RFPs declined at go/no-go; errors caught at review
@@ -180,10 +183,10 @@ per bid; library freshness (share of content past its review date); time to answ
 **Confidentiality and tools.** Do not draft on public large language models (LLMs) that train on inputs; ABA Law
 Practice calls it an "absolute no-no" [ABA-LPMAI-2026]. ABA Formal Opinion 512: informed consent before putting
 representation information into self-learning tools, boilerplate is not enough, and duties extend to prospective and
-former clients; reusing one client's matter information in another's pitch may breach duties [ABA-OP512-2024].
-California: no confidential input to risky tools without consent [CALBAR-GENAI-2026]. Check the solicitation's own
-handling rules before uploading it [BIDLAB-2026]. A commentary on the SRA's 2026-08-17 warning notice puts tool approval
-with the firm [JMW-SRA-2026].
+former clients [ABA-OP512-2024, pp.6-7]; its note 4 quotes a state-bar view that LLMs without ethical walls may breach
+conflict rules by using one representation's information in another [ABA-OP512-2024, p.2 n.4]. California: no confidential input to
+risky tools without consent [CALBAR-GENAI-2026]. Check the solicitation's own handling rules before uploading it
+[BIDLAB-2026]. A commentary on the SRA's 2026-08-17 warning notice puts tool approval with the firm [JMW-SRA-2026].
 
 **Accuracy and claims.** Check every word, including success stories, awards and bios [ABA-LPMAI-2026]; a named person
 signs off each factual claim [BIDLAB-2026]. Claims about the firm's AI must be true: the SEC settled with two investment
@@ -195,10 +198,11 @@ client limits on AI [CALBAR-GENAI-2026]. Some clients demand AI savings while ot
 [TRI-LEGALWEEK-2026].
 
 **Buyer rules.** UK PPN 017 (2025-02-17): supplier AI use "is not prohibited"; optional, unscored disclosure questions;
-buyers may ask bidders to confirm AI text was checked [PPN-017-2025]. California requires disclosure of generative AI in
-deliverables, with possible disqualification; it does not cover AI used to write the bid [CALDGS-SCM2302-2025]. No
-general US federal rule requires disclosing AI used in drafting as of August 2026 [BIDLAB-2026]. Australia's public
-service will require panel suppliers to advise planned AI use in quote responses [CANBERRATIMES-APSAI-2025].
+buyers may ask bidders to confirm AI text was checked [PPN-017-2025]. California makes bidders report generative AI
+delivered, or used materially, in deliverables, on pain of possible disqualification; AI used only to write the bid is
+outside its scope [CALDGS-SCM2302-2025]. No general US federal rule requires disclosing AI used in drafting as of August
+2026 [BIDLAB-2026]. Australia will require management advisory and people panel suppliers to state planned AI use in
+delivery when quoting [CANBERRATIMES-APSAI-2025].
 
 **Evaluators and agents.** Federal evaluators may summarise proposals with undisclosed AI, a bid-protest risk per one
 commentary [NATLAW-BRADLEY-2026]; NSF bars reviewers from uploading proposals to unapproved tools [NSF-GENAI-2023]. More
@@ -212,16 +216,16 @@ certification; what to say in the pitch room.
 ## 7. Roles and how they evolve
 
 - **Proposal function.** Cherry Bekaert replaced side-of-desk RFP work with a dedicated proposal function, built by its
-  "Sr. Manager, Pursuit and Sales Asset Leader" [LOOPIO-CHERRYBEKAERT-2026]. A posting titles a role "Proposal Manager
-  (RFX and AI Orchestration)", with human validation of AI output [RANDSTAD-PROPOSALMGR-2026]. Proposal staff are
+  "Sr. Manager, Pursuit & Sales Asset Leader" [LOOPIO-CHERRYBEKAERT-2026]. A posting titles a role "Proposal Manager
+  (RFX & AI Orchestration)", with human validation of AI output [RANDSTAD-PROPOSALMGR-2026]. Proposal staff are
   described as moving from doing tasks to directing agents (vendor summary) [KANTIV-SMPSQ2-2026]. Latham & Watkins'
-  Innovation Attorney supports panels, pitches and RFPs [LATHAM-INNOVATIONATTY-2026]; BD leaders argue for a seat on the
-  firm's AI council [PASSLE-EP177-2025*].
+  Innovation Attorney prepares technology content with BD for pitches and RFPs [LATHAM-INNOVATIONATTY-2026]; a
+  consultant argues marketing and BD need a seat at the AI table [PASSLE-EP177-2025*].
 - **Who drafts widens.** GRSM says proposal work is spread more evenly [IKAUN-GRSM-2026]; Benesch's technical staff
-  draft their own approaches [KANTIV-BENESCH-2026]; Harvey describes partners drafting without waiting for BD
-  [HARVEY-BD-2026]; Ballard Spahr's IP group runs its own RFPs [TRI-INSIDELEGALAI-2025].
-- **Reviewers become verifiers;** skills shift to strategy, storytelling and quality control [NYREJ-SMPSNY-2026]; 51% of
-  teams say they will need AI and automation skills [LOOPIO-TRENDS-2026].
+  draft their own approaches [KANTIV-BENESCH-2026]; Harvey describes partners drafting RFP responses themselves with AI
+  [HARVEY-BD-2026]; Ballard Spahr's IP group wanted to keep autonomy over its own RFPs [TRI-INSIDELEGALAI-2025].
+- **Skills shift** to strategic thinking, storytelling and quality control [NYREJ-SMPSNY-2026]; 51% of teams say they
+  will need AI and automation skills [LOOPIO-TRENDS-2026].
 - **Most surveyed teams are not cutting people:** 16% replaced internal people resources with AI, 32% say leadership
   expects new responsibilities [LOOPIO-TRENDS-2026]; more than half of AI adopters are adding staff
   [RESPONSIVE-SRM-2025]; 13% of AEC firms expect workforce reductions [BDC-UNANET-2026].
@@ -244,9 +248,9 @@ certification; what to say in the pitch room.
 - 2026-08-17: SRA AI warning notice [JMW-SRA-2026; LGL-SRA-2026*]. 2026-08-25: adviser says vendors write bids for
   machine evaluators too [UPPEREDGE-PROPTRAP-2026]. 2026-09-11: Stinson partners in Law360: reinvest saved time in the
   client [STINSON-LAW360-2026].
-- 2026-10-07: "Is this RFP wired?" capture-agent workshop [G2X-CAPTURE-2026]. 2026-10-08: Litera's CEO calls RFPs the
-  first place clients feel a firm's AI investment [LAWSITES-LITERA-2026]. 2026-10-13: 84% of partners expect AI-driven
-  BD within 18-24 months [INTROHIVE-LAWSITES-2026].
+- 2026-10-07: "Is this RFP wired?" capture-agent workshop [G2X-CAPTURE-2026]. 2026-10-08: Litera's CEO, in a sponsored
+  post, says the RFP is the first place a firm's AI investment shows [LAWSITES-LITERA-2026]. 2026-10-13: 84% of partners
+  expect their firm to reach Introhive's top two BD-maturity stages within 18-24 months [INTROHIVE-LAWSITES-2026].
 - Scheduled, not evidence: TRI CMBDO Forum, 2027-01-27 to 29, sessions on the firm's AI story in pitches and visibility
   in AI-driven discovery [TRI-CMBDO34-2027].
 
@@ -255,43 +259,41 @@ certification; what to say in the pitch room.
 - **"AI makes us faster, so we'll win more."** Not shown: win rates fell while AI use rose, and only 17% see a win
   benefit [LOOPIO-TRENDS-2026; BDC-UNANET-2026]. Use saved time to tailor and to say no more often (`#07`, `#13`).
 - **"AI output all sounds the same."** Committees are said to spot generic text [KANTIV-SMPSQ2-2026], and independent
-  studies show tailored text losing value as a signal [CUI-DIAS-YE-2025]. Ground drafts in the firm's own history and
-  add evidence AI cannot invent (`#02`, `#13`).
-- **"It will make things up."** It can: one invented credential can disqualify [KANTIV-TRUST-2026]. Retrieve approved
-  content rather than generate freely, and keep a named verifier [LOOPIO-CHERRYBEKAERT-2026; BIDLAB-2026].
+  studies of a freelance labour platform show tailored text losing value as a signal [CUI-DIAS-YE-2025]. Ground drafts
+  in the firm's own history and add evidence AI cannot invent (`#02`, `#13`).
+- **"It will make things up."** It can: in a federal SF-330, one invented project citation can disqualify, a vendor
+  warns [KANTIV-TRUST-2026]. Retrieve approved content rather than generate freely, and keep a named verifier
+  [LOOPIO-CHERRYBEKAERT-2026; BIDLAB-2026].
 - **"We can't put RFPs into AI."** Not into public tools that train on inputs [ABA-LPMAI-2026]; approved tools with
   no-training terms are the route, as Ballard Spahr chose (`#12`). Check each solicitation's handling rules.
 - **"Do we have to tell the buyer?"** No general US federal rule requires it for drafting as of August 2026, but read
   each solicitation; some disqualify for undisclosed AI in deliverables [CALDGS-SCM2302-2025; BIDLAB-2026]. Keep a
   record (`#18`).
-- **"Clients only want a list of our tools."** Clients call a product name an unacceptable answer and want matter-level
-  detail [PARKERPOE-TR-2026; LAWSITES-LITERA-2026] (`#17`).
+- **"Clients only want a list of our tools."** Litera's CEO (sponsored post) says a product name is not an acceptable
+  answer [LAWSITES-LITERA-2026]; a Parker Poe partner urges clients to ask at matter level [PARKERPOE-TR-2026] (`#17`).
 - **"Vendor case studies prove the ROI."** They give recollections and projections with no baseline (§5). Ask for a
   before-and-after on your own bids; only 18% of organisations measure AI return on investment [TR-AIPS-2026*].
 
 ## 10. Sources
 
-Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML.
+Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; they are listed in the table below, and each was opened at verification on 2026-10-19.
 
-- **Regulators and professional bodies:** PPN-017-2025, PPN-0224-2024, CALDGS-SCM2302-2025, FEDREG-GSA-2026,
-  NSF-GENAI-2023, NIH-NOTOD25132-2025, SEC-2024-36, FTC-AICOMPLY-2024, CALBAR-GENAI-2026, ABA-OP512-2024,
-  ABA-LPMAI-2026, ABA-LPMRFP-2026, ICMCI-AICODE-2026, FLBAR-OP241-2024, LGL-SRA-2026* (Local Government Lawyer,
-  2026-08-17). **Academic:** JBL-MCKINLEY-2026, CUI-DIAS-YE-2025, GALDIN-SILBERT-2025, NOY-ZHANG-2023,
-  STANFORD-MAGESH-2024, NBER-AUTOR-2026* (NBER Working Paper 35720, 2026-09).
-- **Surveys:** LOOPIO-TRENDS-2026, QORUSDOCS-ITBRIEF-2026, IKAUN-BENCH-2026, BDC-UNANET-2026, RESPONSIVE-SRM-2025,
-  INTROHIVE-LAWSITES-2026, TR-FOP-2026, TRI-STANDOUT-2026, SOURCE-PRECISION-2026, DAYSHAPE-ONREC-2026,
-  LEGALIT-IKAUN-2025* (Legal IT Insider, 2025-06-17), RESPONSIVE-SRM-2026* (Responsive report landing page, 2026),
-  TR-AIPS-2026* (Thomson Reuters, 2026).
-- **Conferences and events:** TRI-LEGALWEEK-2026, TRI-CMBDO34-2027 (scheduled), LMA-DECENT-2026, G2X-CAPTURE-2026,
-  TRI-ILTACON-2025* (TRI, 2025-09-02), STANFORD-GENLEGAL-2026* (Stanford Law School, 2026-04-17).
-- **Firms and job postings:** VERSENT-BIDASSISTANT-2025, STINSON-LAW360-2026, BROWNEJACOBSON-AIPROC-2025,
-  UPPEREDGE-PROPTRAP-2026, UPPEREDGE-SI-2025, JMW-SRA-2026, MONDAQ-BSB-2026, RANDSTAD-PROPOSALMGR-2026,
-  LATHAM-INNOVATIONATTY-2026, LEGORA-JOB-RFP-2026* (Legora job posting, 2026-07-31).
-- **Vendors:** LOOPIO-CHERRYBEKAERT-2026, LOOPIO-BLOG-2026, KANTIV- (BENESCH, WOODARD, ROBINS, SMPSQ2, COPILOT, GONOGO,
-  TRUST; all 2026), IKAUN- (GRSM, NEUDESIC, ARUP, STINSON, GOWLING; 2026), AUTOGENAI-SERCO-2025, AUTOGENAI-BIG4-2025,
-  HARVEY-BD-2026, HARVEY-LPHS-2025, INTROHIVE-MCP-2026, CERTINIA-VEDA-2026, CERTINIA-SOA-2026, KANTATA-ENGINE-2025,
-  INTAPP-EXPERIENCE-2026, INTAPP-DEALCLOUD-2026, PRIORI-SCOUT-2026, KOJI-PSDOCS-2026, BIDLAB-2026, LITERA-GCRFP-2026,
-  PARKERPOE-TR-2026, PROJECTWORKS-BD-2026* (Projectworks blog, 2026-06-23).
-- **Press, podcasts, community:** TRI-INSIDELEGALAI-2025, LAWSITES-CELESTE-2026, LAWSITES-LITERA-2026, LAWFUEL-2025,
-  NYREJ-SMPSNY-2026, NATLAW-BRADLEY-2026, TGC-WK-2025, CANBERRATIMES-APSAI-2025, HINZ-BPCNASHVILLE-2025,
-  PASSLE-EP177-2025* (Passle CMO Series podcast, 2025-08-12; show notes).
+- **Regulators and professional bodies:** PPN-017-2025, PPN-0224-2024, CALDGS-SCM2302-2025, FEDREG-GSA-2026, NSF-GENAI-2023, NIH-NOTOD25132-2025, SEC-2024-36, FTC-AICOMPLY-2024, CALBAR-GENAI-2026, ABA-OP512-2024, ABA-LPMAI-2026, ABA-LPMRFP-2026, ICMCI-AICODE-2026, FLBAR-OP241-2024, LGL-SRA-2026*. **Academic:** JBL-MCKINLEY-2026, CUI-DIAS-YE-2025, GALDIN-SILBERT-2025, NOY-ZHANG-2023, STANFORD-MAGESH-2024, NBER-AUTOR-2026*.
+- **Surveys:** LOOPIO-TRENDS-2026, QORUSDOCS-ITBRIEF-2026, IKAUN-BENCH-2026, BDC-UNANET-2026, RESPONSIVE-SRM-2025, INTROHIVE-LAWSITES-2026, TR-FOP-2026, TRI-STANDOUT-2026, SOURCE-PRECISION-2026, DAYSHAPE-ONREC-2026, LEGALIT-IKAUN-2025*, RESPONSIVE-SRM-2026*, TR-AIPS-2026*.
+- **Conferences and events:** TRI-LEGALWEEK-2026, TRI-CMBDO34-2027 (scheduled), LMA-DECENT-2026, G2X-CAPTURE-2026, TRI-ILTACON-2025*, STANFORD-GENLEGAL-2026*.
+- **Firms and job postings:** VERSENT-BIDASSISTANT-2025, STINSON-LAW360-2026, BROWNEJACOBSON-AIPROC-2025, UPPEREDGE-PROPTRAP-2026, UPPEREDGE-SI-2025, JMW-SRA-2026, MONDAQ-BSB-2026, RANDSTAD-PROPOSALMGR-2026, LATHAM-INNOVATIONATTY-2026, LEGORA-JOB-RFP-2026*.
+- **Vendors:** LOOPIO-CHERRYBEKAERT-2026, LOOPIO-BLOG-2026, KANTIV- (BENESCH, WOODARD, ROBINS, SMPSQ2, COPILOT, GONOGO, TRUST; all 2026), IKAUN- (GRSM, NEUDESIC, ARUP, STINSON, GOWLING; 2026), AUTOGENAI-SERCO-2025, AUTOGENAI-BIG4-2025, HARVEY-BD-2026, HARVEY-LPHS-2025, INTROHIVE-MCP-2026, CERTINIA-VEDA-2026, CERTINIA-SOA-2026, KANTATA-ENGINE-2025, INTAPP-EXPERIENCE-2026, INTAPP-DEALCLOUD-2026, PRIORI-SCOUT-2026, KOJI-PSDOCS-2026, BIDLAB-2026, LITERA-GCRFP-2026, PARKERPOE-TR-2026, PROJECTWORKS-BD-2026*.
+- **Press, podcasts, community:** TRI-INSIDELEGALAI-2025, LAWSITES-CELESTE-2026, LAWSITES-LITERA-2026, LAWFUEL-2025, NYREJ-SMPSNY-2026, NATLAW-BRADLEY-2026, TGC-WK-2025, CANBERRATIMES-APSAI-2025, HINZ-BPCNASHVILLE-2025, PASSLE-EP177-2025*.
+
+| Key (*) | Publisher, type | Date | URL |
+|---|---|---|---|
+| LGL-SRA-2026 | Local Government Lawyer, press | 2026-08-17 | https://www.localgovernmentlawyer.co.uk/marketplace/528-market-news/101456-solicitors-regulation-authority-highlights-concern-over-ai-generated-inaccuracies-and-breaches-of-confidentiality3 |
+| NBER-AUTOR-2026 | NBER Working Paper 35720 (abstract via EconPapers), academic | 2026-09 | https://econpapers.repec.org/RePEc:nbr:nberwo:35720 |
+| LEGALIT-IKAUN-2025 | Legal IT Insider, press | 2025-06-17 | https://legaltechnology.com/ikaun-releases-2025-state-of-proposal-generation-and-bd-in-law-firms-report/ |
+| RESPONSIVE-SRM-2026 | Responsive report landing page (undated), survey | 2026 | https://www.responsive.io/resources/whitepapers/srm-report-2026 |
+| TR-AIPS-2026 | Thomson Reuters legal blog, vendor | 2026-02-26 | https://legal.thomsonreuters.com/blog/highlights-from-the-2026-ai-in-professional-services-report-and-what-it-means-for-legal-teams-tri/ |
+| TRI-ILTACON-2025 | Thomson Reuters Institute, conference | 2025-09-02 | https://www.thomsonreuters.com/en/institute/articles/iltacon-2025-billable-hour |
+| STANFORD-GENLEGAL-2026 | Stanford Law School session abstract, conference | 2026-04-17 | https://conferences.law.stanford.edu/generative-legal-2026/sessions/panel-the-client-perspective/ |
+| LEGORA-JOB-RFP-2026 | Legora, "Global Services Solutions Expert", job-posting | 2026-07-31 | https://jobs.ashbyhq.com/legora/f7493093-1ae8-4f56-a332-44fccdbb90cd |
+| PROJECTWORKS-BD-2026 | Projectworks blog, vendor | 2026-06-23 | https://www.projectworks.com/blog/using-ai-to-win-more-client-work-bd-guide |
+| PASSLE-EP177-2025 | Passle CMO Series podcast show notes, podcast | 2025-08-12 | https://passle.podbean.com/e/unlocking-ai-in-legal-marketing-insights-with-guy-alvarez/ |

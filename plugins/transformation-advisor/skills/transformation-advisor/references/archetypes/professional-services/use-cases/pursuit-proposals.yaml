@@ -23,8 +23,8 @@
     the closest approved answer for each question and drafts or adapts a response; senior people review and tailor
     the parts that matter. Accounting firm Cherry Bekaert uses a bought platform (Loopio); IT services firm Versent
     built its own retrieval tool on Azure services. Government-services provider Serco piloted a generative
-    bid-writing platform (AutogenAI) as one of its Impact Pilots, and an unnamed Big 4 firm replaced an in-house
-    knowledge tool and a private ChatGPT with the same platform (AUTOGENAI-BIG4-2025). In Loopio's survey 62% of teams
+    bid-writing platform (AutogenAI) as one of its Impact Pilots, and an unnamed Big 4 firm chose the same platform after
+    finding its in-house AI knowledge tool and private ChatGPT fell short for bid work (AUTOGENAI-BIG4-2025). In Loopio's survey 62% of teams
     use AI to generate specific answers and 52% to write a first draft (LOOPIO-TRENDS-2026).
   outcomes:
     - lever: speed
@@ -104,13 +104,13 @@
   evidence_grade: B
   sources:
     - { ref: LOOPIO-CHERRYBEKAERT-2026, title: "How Cherry Bekaert Scaled to 550 RFPs a Year, With Loopio", publisher: Loopio, type: vendor, url: "https://loopio.com/case-study/cherry-bekaert/", date: "2026-10-08", access: full, locator: "Results; Solution; quote on guardrails" }
-    - { ref: VERSENT-BIDASSISTANT-2025, title: "Accelerating RFP Response with GenAI (page undated; year from image paths)", publisher: Versent, type: firm, url: "https://versent.com.au/case-studies/accelerating-rfp-response-with-genai/", date: "2025", access: full, locator: "Solution; Outcome / Key Outcomes" }
-    - { ref: AUTOGENAI-SERCO-2025, title: "Serco Increases Efficiency by 85% and Global Revenue by 5% with AutogenAI", publisher: AutogenAI, type: vendor, url: "https://autogenai.com/wp-content/uploads/2024/09/Serco-Increases-Efficiency-by-85-and-Global-Revenue-by-5-with-AutogenAI.pdf", date: "2025-03", access: full, locator: "The Solution; Results" }
-    - { ref: AUTOGENAI-BIG4-2025, title: "How the Fastest Growing Big 4 Professional Services Firm Optimised Competitive Tendering with AutogenAI (unnamed firm)", publisher: AutogenAI, type: vendor, url: "https://autogenai.com/wp-content/uploads/2025/07/Professional-Services-Firm-Case-Study.pdf", date: "2025-07", access: full, locator: "pp.1-3 (image-only PDF, read from page renders)" }
+    - { ref: VERSENT-BIDASSISTANT-2025, title: "Accelerating RFP Response with GenAI", publisher: Versent, type: firm, url: "https://versent.com.au/case-studies/accelerating-rfp-response-with-genai/", date: "2025-08-14", access: full, locator: "Solution; Outcome / Key Outcomes" }
+    - { ref: AUTOGENAI-SERCO-2025, title: "Serco Increases Efficiency by 85% and Global Revenue by 5% with AutogenAI (PDF created 2025-03-27; upload path 2024/09)", publisher: AutogenAI, type: vendor, url: "https://autogenai.com/wp-content/uploads/2024/09/Serco-Increases-Efficiency-by-85-and-Global-Revenue-by-5-with-AutogenAI.pdf", date: "2025-03", access: full, locator: "Introduction; Results" }
+    - { ref: AUTOGENAI-BIG4-2025, title: "How the Fastest Growing Big 4 Professional Services Firm Optimised Competitive Tendering with AutogenAI (unnamed firm)", publisher: AutogenAI, type: vendor, url: "https://autogenai.com/wp-content/uploads/2025/07/Professional-Services-Firm-Case-Study.pdf", date: "2025-07", access: full, locator: "pp.1-2, The Challenge (image-only PDF, read from page renders)" }
     - { ref: LOOPIO-TRENDS-2026, title: "2026 RFP Response Trends & Benchmarks Report", publisher: "Loopio, in partnership with APMP", type: survey, url: "https://link.loopio.com/hubfs/Content%20Pieces/FY26%20Trends%20Report/trends-report-2026-digital-Master.pdf", date: "2026-03", access: full, locator: "Overview pp.5-8; Ch.5 pp.56-61" }
-    - { ref: QORUSDOCS-ITBRIEF-2026, title: "AI shapes RFP proposal teams as revenue pressure grows (reporting a QorusDocs benchmark survey)", publisher: IT Brief UK, type: press, url: "https://itbrief.co.uk/story/ai-shapes-rfp-proposal-teams-as-revenue-pressure-grows", date: "2026-02-25", access: full, locator: "'Automation uneven' section" }
+    - { ref: QORUSDOCS-ITBRIEF-2026, title: "AI shapes RFP proposal teams as revenue pressure grows (reporting a QorusDocs benchmark survey)", publisher: IT Brief UK, type: press, url: "https://itbrief.co.uk/story/ai-shapes-rfp-proposal-teams-as-revenue-pressure-grows", date: "2026-02-26", access: full, locator: "paragraphs on automation and AI impact" }
     - { ref: ABA-LPMAI-2026, title: "Leveraging AI to Respond to Requests for Proposals (RFPs) (Marketing Column)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/march-april-2026/leveraging-ai-to-respond-to-rfps", date: "2026-03", access: full, locator: "item 3; Cautions" }
-    - { ref: BIDLAB-2026, title: "Using AI RFP Solutions: Dos and Don'ts (AI and RFPs: Disclosure Rules, Risk and What You Certify)", publisher: The Bid Lab, type: vendor, url: "https://thebidlab.com/learning-center/using-ai-rfp-solutions-dos-and-donts/", date: "2026-08", access: full, locator: "risk table; internal AI policy section" }
+    - { ref: BIDLAB-2026, title: "Using AI RFP Solutions: Dos and Don'ts (AI and RFPs: Disclosure Rules, Risk and What You Certify)", publisher: The Bid Lab, type: vendor, url: "https://thebidlab.com/learning-center/using-ai-rfp-solutions-dos-and-donts/", date: "2026-08-26", access: full, locator: "risk table; internal AI policy section (page first published 2024-06-06, rewritten as of August 2026)" }
     - { ref: PPN-017-2025, title: "Procurement Policy Note 017: Improving transparency of AI use in procurement", publisher: UK Cabinet Office, type: regulator, url: "https://assets.publishing.service.gov.uk/media/67af7ba0e270ceae39f9e279/PPN_017_Improving_transparency_of_AI_use_in_procurement.pdf", date: "2025-02-17", access: full, locator: "para 15; Annex B" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.B Confidentiality, pp.6-7" }
     - { ref: STINSON-LAW360-2026, title: "Scheck and Valdivia Examine How AI Is Reshaping Law Firm RFPs in Law360", publisher: Stinson LLP, type: firm, url: "https://www.stinson.com/newsroom-news-scheck-and-valdivia-examine-how-ai-is-reshaping-law-firm-rfps-in-law360", date: "2026-09-11", access: full, locator: "second paragraph" }
@@ -119,8 +119,8 @@
   notes: >-
     Firm kinds: accounting (Cherry Bekaert), IT services (Versent), government services (Serco, adjacent to the
     archetype), an unnamed Big 4 firm, and law (Stinson, ABA). Grade B rests on named deployments whose figures are
-    recollections, projections or undefined vendor figures. AutogenAI's customer page says Serco's global revenue rose
-    5%; the Serco PDF says win rates rose 5%. The Loopio blog says 47% expect better results; the report says 42%
+    recollections, projections or undefined vendor figures. The Serco PDF's own title says global revenue rose 5%; its
+    Results section says win rates rose 5%. The Loopio blog says 47% expect better results; the report says 42%
     (report used). An ABA article relays a Responsive/APMP figure that some organisations cut 30-40% of manual proposal
     effort (ABA-LPMRFP-2026); the report was not opened. The ABA column's '70-80% complete first draft' is an assertion,
     and vendor accuracy claims seen only in search results (Tribble) are not used. Merged from practice-01, practice-08,
@@ -176,7 +176,7 @@
       provenance: vendor-published
       source_ref: KANTIV-BENESCH-2026
   prerequisites:
-    - "A consolidated set of past RFPs and proposals that practices are willing to share, with a tagging scheme someone owns (TRI-INSIDELEGALAI-2025)"
+    - "A consolidated set of past RFPs and proposals in one repository, with tagging for reuse (TRI-INSIDELEGALAI-2025)"
     - "A firm-specific taxonomy of services and project types; a vendor argues a generic assistant pointed at SharePoint lacks it (KANTIV-COPILOT-2026, vendor opinion)"
     - "Security and compliance review; Woodard & Curran says the tool met its cybersecurity standards (KANTIV-WOODARD-2026)"
   risks_and_guardrails:
@@ -185,8 +185,7 @@
     - "Selection committees are said to recognise generic AI output, so grounding in real project history matters (KANTIV-SMPSQ2-2026, vendor summary of the SMPS Q2 2026 report)"
     - "Project facts such as square footage or contract value should be checked against the system of record; a vendor claim about general assistants (KANTIV-COPILOT-2026)"
   human_checkpoints:
-    - "Practice groups and lawyers decide what to reuse and edit the response for the client (TRI-INSIDELEGALAI-2025)"
-    - "First drafts are checked against RFP requirements and reviewed by the marketing team (KANTIV-BENESCH-2026)"
+    - "First drafts can be checked for compliance against the RFP's requirements (KANTIV-BENESCH-2026); no source describes who signs off reused content"
   role_evolution: >-
     A practice group (IP) took more ownership of its own RFPs while drawing on firm-wide knowledge
     (TRI-INSIDELEGALAI-2025). Technical staff pulled into a proposal at short notice can draft a technical approach
@@ -229,8 +228,8 @@
     from the website, finance and HR systems, and generates pitches, proposals and CVs from templates. Law firms Gordon
     Rees Scully Mansukhani (GRSM), Stinson and Gowling WLG, IT consultancy Neudesic and engineering-design firm Arup use
     one such platform (ikaun); GRSM also loads an approved-answer library and uses an Answer Agent for RFPs. People then
-    tailor the generated draft. An ABA article says many firms review prior submissions and extract relevant experience
-    and formatting this way.
+    tailor the generated draft. An ABA article says many firms use AI to review prior submissions and extract relevant
+    experience, and that AI can organise matter descriptions to fit the RFP's structure (ABA-LPMRFP-2026).
   outcomes:
     - lever: speed
       description: >-
@@ -260,14 +259,14 @@
     - "A refresh cadence: Neudesic set quarterly consultant updates with automated reminders; Arup built use into appraisals, onboarding and reviews (IKAUN-NEUDESIC-2026; IKAUN-ARUP-2026)"
     - "Clearance for credentials drawn from matter information; confidentiality duties extend to former and prospective clients (ABA-OP512-2024, p.6)"
   risks_and_guardrails:
-    - "GRSM says verification remains important; it flags confidential trial data and keeps a pitch-specific practice overview with experience not published on the web (IKAUN-GRSM-2026)"
-    - "ABA Formal Opinion 512 notes that using information developed in one representation to inform another may breach duties to current and former clients (ABA-OP512-2024, p.2 n.4)"
+    - "The GRSM case study says verification remained important; trial data is confidentiality-flagged where appropriate, and a pitch-specific practice overview holds experience not published on the web (IKAUN-GRSM-2026)"
+    - "ABA Formal Opinion 512 (p.2 n.4) quotes a Pennsylvania and Philadelphia bar opinion that LLMs lacking safeguards such as ethical walls may breach conflict rules by using information from one representation to inform another (ABA-OP512-2024)"
     - "Verify success stories, awards and accolades, and check compiled bios do not pull out-of-date information (ABA-LPMAI-2026, Cautions)"
     - "Much of this is data-driven document generation: the Arup page does not claim AI, while ikaun labels parts of its product AI-powered (IKAUN-ARUP-2026; IKAUN-NEUDESIC-2026)"
   human_checkpoints:
-    - "Lawyers and consultants maintain their own experience entries; talent managers customise resumes (IKAUN-NEUDESIC-2026)"
+    - "Neudesic consultants add their own project contributions each quarter, and regional talent managers help customise resumes (IKAUN-NEUDESIC-2026)"
     - "The team tailors the generated draft to the opportunity (IKAUN-GRSM-2026)"
-    - "A lawyer or practice lead confirms each matter reference is accurate and cleared for use (ABA-LPMAI-2026, Cautions)"
+    - "Someone verifies that each success story drawn from a past matter is described accurately (ABA-LPMAI-2026, Cautions); clearing a matter for confidentiality is a separate check (ABA-OP512-2024, p.6)"
   role_evolution: >-
     GRSM says proposal work once concentrated in a small group is now spread more evenly across the team; Stinson's
     proposal and experience manager oversees content governance and data (IKAUN-GRSM-2026; IKAUN-STINSON-2026). An ABA
@@ -293,7 +292,7 @@
     professional-services-knowledge-management-04. Merged from practice-03 and governance-17.
 
 - id: professional-services-pursuit-proposals-04
-  title: Lawyer bios regenerated from time records, the knowledge system and public sites as the credential feed for pitches
+  title: Lawyer bios regenerated from time records, the knowledge system and public sites
   archetype: professional-services
   module: pursuit-proposals
   function: sales-marketing-bd
@@ -322,7 +321,7 @@
       source_ref: TRI-INSIDELEGALAI-2025
   prerequisites:
     - "Time-sheet data, a knowledge management platform and a current lawyer roster (TRI-INSIDELEGALAI-2025)"
-    - "Guardrails agreed with the firm; the article does not detail them (TRI-INSIDELEGALAI-2025)"
+    - "Guardrails set by the data science team; the article does not detail them (TRI-INSIDELEGALAI-2025)"
   risks_and_guardrails:
     - "Compiled bios must not pull out-of-date information, and awards and success stories must be verified (ABA-LPMAI-2026, Cautions)"
     - "Who approves a generated bio is not stated in the source"
@@ -337,7 +336,8 @@
   notes: >-
     Firm kind: law (Baker Botts), reported from a conference panel. The bio system serves the website and AI-search
     visibility (a client-development concern; see professional-services-client-development-12 for AI claims in
-    marketing) and is also the credential feed for pitches. From discourse-04.
+    marketing). Its use as a credential feed for pitches is an inference; the article does not mention pitches. From
+    discourse-04.
 
 - id: professional-services-pursuit-proposals-05
   title: Reconcile duplicate and stale people and project records before AI retrieval for proposals
@@ -377,7 +377,7 @@
       source_ref: BDC-UNANET-2026
   prerequisites:
     - "Access to proposals, resumes, case studies and systems of record (the vendor names Deltek, Vantagepoint, Unanet and a CRM) (KANTIV-TRUST-2026)"
-    - "Named owners who resolve disputed records (KANTIV-TRUST-2026)"
+    - "Staff who can merge, split or correct records when they spot an error (KANTIV-TRUST-2026)"
   risks_and_guardrails:
     - "The vendor says every large-language-model system can hallucinate and positions its tool as 'a first-draft accelerator, not a final-product generator' (KANTIV-TRUST-2026)"
     - "Wrongly merging two people is treated as worse than leaving two records apart, which is why thresholds differ by record type (KANTIV-TRUST-2026)"
@@ -429,23 +429,23 @@
       provenance: vendor-published
       source_ref: KANTIV-BENESCH-2026
   prerequisites:
-    - "Digitised solicitation documents and a defined review step after extraction (ABA-LPMAI-2026, item 1)"
+    - "A review step after extraction; the ABA column says to check every word of the response for accuracy (ABA-LPMAI-2026, Cautions)"
     - "Handling rules checked first: some solicitation material restricts where it may be stored, so check the tool's terms and the solicitation's rules before upload (BIDLAB-2026, FAQ)"
   risks_and_guardrails:
     - "UK guidance suggests buyers set controls so bidders do not use confidential tender documents as AI training data (PPN-017-2025, para 9)"
-    - "Extraction can miss or misread clauses; check every word of the response (ABA-LPMAI-2026, Cautions)"
+    - "Check every word of the response for accuracy (ABA-LPMAI-2026, Cautions); no source measures how often extraction misses a clause"
     - "A red flag is a reason to investigate, not proof that an award is predetermined (G2X-CAPTURE-2026)"
   human_checkpoints:
     - "Human validation of AI output for compliance, legal and factual accuracy before submission (RANDSTAD-PROPOSALMGR-2026)"
     - "The capture or bid team investigates each flag and decides whether to pursue (G2X-CAPTURE-2026)"
   role_evolution: >-
-    A posting titles the role 'Proposal Manager (RFX and AI Orchestration)', combining drafting with AI tools and
-    validation of the output; the employer is not named (RANDSTAD-PROPOSALMGR-2026). The ABA column describes bid
-    coordinators spending less time on manual review of the pack (ABA-LPMAI-2026, item 1).
+    A posting titles the role 'Proposal Manager (RFX & AI Orchestration)', combining drafting with AI tools and
+    validation of the output; the employer is not named (RANDSTAD-PROPOSALMGR-2026). The ABA column describes AI
+    replacing manual review of the RFP with a structured requirements matrix (ABA-LPMAI-2026, item 1).
   evidence_grade: B
   sources:
     - { ref: KANTIV-BENESCH-2026, title: "Benesch's Pursuit AI Evolution: Smarter Search, Faster Content and Greater Efficiency", publisher: Kantiv, type: vendor, url: "https://www.kantiv.com/case-study/beneschs-ai-evolution-smarter-search-faster-content-and-greater-efficiency", date: "2026-06", access: full, locator: "The Result, Expedited Deliverable Production" }
-    - { ref: RANDSTAD-PROPOSALMGR-2026, title: "Proposal Manager (RFX and AI Orchestration), Brentford", publisher: Randstad, type: job-posting, url: "https://www.randstad.com/jobs/proposal-manager_brentford_47525616/", date: "2026-09-30", access: full, locator: "responsibilities list" }
+    - { ref: RANDSTAD-PROPOSALMGR-2026, title: "Proposal Manager (RFX & AI Orchestration), Brentford", publisher: Randstad, type: job-posting, url: "https://www.randstad.com/jobs/proposal-manager_brentford_47525616/", date: "2026-09-30", access: full, locator: "responsibilities list" }
     - { ref: G2X-CAPTURE-2026, title: "Capture Agent Build-Along: Is This RFP Wired?", publisher: "G2X and ProposalTeam Partners (Luma event page)", type: conference, url: "https://luma.com/xcwn65gt", date: "2026-10-07", access: full, locator: "What you'll build" }
     - { ref: ABA-LPMAI-2026, title: "Leveraging AI to Respond to Requests for Proposals (RFPs) (Marketing Column)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/march-april-2026/leveraging-ai-to-respond-to-rfps", date: "2026-03", access: full, locator: "item 1; Cautions" }
     - { ref: AUTOGENAI-BIG4-2025, title: "How the Fastest Growing Big 4 Professional Services Firm Optimised Competitive Tendering with AutogenAI (unnamed firm)", publisher: AutogenAI, type: vendor, url: "https://autogenai.com/wp-content/uploads/2025/07/Professional-Services-Firm-Case-Study.pdf", date: "2025-07", access: full, locator: "p.2" }
@@ -478,7 +478,7 @@
     follow a formal one (LOOPIO-TRENDS-2026; BDC-UNANET-2026). Decisions run on impressions, and firms cannot quickly tell whether they have done similar work.
   solution: >-
     Experience data tied to financial records lets the team see at once whether the firm has handled similar matters
-    before deciding to pursue (law firm Stinson). Practitioners and vendors also describe scoring 30 to 40 past pursuits
+    before deciding to pursue (law firm Stinson). A vendor (Kantiv) describes scoring 30 to 40 past pursuits
     against the firm's criteria with an AI assistant, comparing average scores for wins and losses, and reweighting the
     criteria; an ABA column describes a predictive version comparing a new RFP with past performance, client history
     and resource availability.
@@ -516,11 +516,11 @@
     - "People sanity-check the AI's scoring and own the judgement calls (KANTIV-GONOGO-2026)"
   role_evolution: >-
     Top-performing teams are more likely to be seen as strategic contributors to deal strategy (60% against 47% of the
-    average) and to run a go/no-go matrix (LOOPIO-TRENDS-2026, Ch.7 pp.83-84).
+    average) and to run a go/no-go matrix (LOOPIO-TRENDS-2026, Ch.6 p.79; Ch.7 p.83).
   evidence_grade: B
   sources:
     - { ref: IKAUN-STINSON-2026, title: "Winning More Time for Strategy: How Stinson is Transforming RFP and Proposal Responses with ikaun (page undated)", publisher: ikaun, type: vendor, url: "https://www.ikaun.com/case-studies/winning-more-time-for-strategy-how-stinson-is-transforming-rfp-and-proposal-responses-with-ikaun", date: "2026", access: full, locator: "Results; Top 3 Results" }
-    - { ref: LOOPIO-TRENDS-2026, title: "2026 RFP Response Trends & Benchmarks Report", publisher: "Loopio, in partnership with APMP", type: survey, url: "https://link.loopio.com/hubfs/Content%20Pieces/FY26%20Trends%20Report/trends-report-2026-digital-Master.pdf", date: "2026-03", access: full, locator: "Ch.1 pp.17-20; Ch.7 pp.83-84" }
+    - { ref: LOOPIO-TRENDS-2026, title: "2026 RFP Response Trends & Benchmarks Report", publisher: "Loopio, in partnership with APMP", type: survey, url: "https://link.loopio.com/hubfs/Content%20Pieces/FY26%20Trends%20Report/trends-report-2026-digital-Master.pdf", date: "2026-03", access: full, locator: "Ch.1 pp.17-20; Ch.6 p.79; Ch.7 p.83" }
     - { ref: RESPONSIVE-SRM-2025, title: "B2B Revenue Leaders Are Winning Big With AI, And They're Hiring, Not Downsizing (release for the 2025 State of Strategic Response Management Report)", publisher: "Responsive with APMP (via Silicon UK)", type: survey, url: "https://www.silicon.co.uk/press-release/b2b-revenue-leaders-are-winning-big-with-ai-and-theyre-hiring-not-downsizing", date: "2025-05-08", access: full, locator: "Key findings, third item" }
     - { ref: BDC-UNANET-2026, title: "AEC report reveals firms are in the throes of AI transition (Unanet, on the 2026 AEC Inspire Report)", publisher: Building Design + Construction, type: survey, url: "https://www.bdcnetwork.com/aec-tech/news/55386606/aec-report-reveals-firms-are-in-the-throes-of-ai-transition", date: "2026-06-25", access: full, locator: "highlights list" }
     - { ref: KANTIV-GONOGO-2026, title: "How to calibrate your go/no-go matrix using your own wins and losses", publisher: Kantiv, type: vendor, url: "https://www.kantiv.com/blog/blog-go-no-go-scorecard-matrix", date: "2026-10-15", access: full, locator: "weighting section" }
@@ -546,9 +546,9 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Preparing to talk to a client or prospect took hours of gathering documents and data. Teams rarely know which firms
-    handle a client's major matters or whether the client rewards low cost or premium expertise, so positioning is
-    guesswork.
+    Preparing to talk to a client or prospect took hours of gathering documents and data (TRI-INSIDELEGALAI-2025). An ABA
+    column suggests AI can show which firms handle a client's most significant matters and whether the client rewards
+    low cost or premium expertise, information pursuit teams otherwise lack (ABA-LPMAI-2026, item 7).
   solution: >-
     Law firm Baker Botts's data science team built a tool in Google's environment using Gemini that combines public
     information, financial data and proprietary firm information into background on a client and a low, medium or high
@@ -559,9 +559,10 @@
     - lever: speed
       description: >-
         Baker Botts's associate director for competitive intelligence said the preparation work previously took 24
-        hours of research and the team's first task was to cut that by more than half; users get a readout with a score
-        after about two minutes of querying.
-      figure: "24 hours of research cut by more than half; readout in about 2 minutes"
+        hours of research and a new data scientist's first task was to use GenAI to cut that by more than half; the
+        article does not report the reduction achieved. Users get a readout with a score after about two minutes of
+        querying.
+      figure: "24 hours of research before; goal to cut it by more than half; readout in about 2 minutes"
       measures: "Hours of research to prepare, as recalled at a conference panel; the article does not say how the later figure was measured"
       provenance: self-reported
       source_ref: TRI-INSIDELEGALAI-2025
@@ -592,15 +593,15 @@
     - { ref: ABA-LPMAI-2026, title: "Leveraging AI to Respond to Requests for Proposals (RFPs) (Marketing Column)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/march-april-2026/leveraging-ai-to-respond-to-rfps", date: "2026-03", access: full, locator: "item 7 (Competitive Intelligence and Benchmarking)" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part II.B p.6" }
     - { ref: LMA-DECENT-2026, title: "From Decent to Great: How to Develop a Compelling Proposal Response (session abstract)", publisher: Legal Marketing Association, type: conference, url: "https://www.legalmarketing.org/Purchase/from-decent-to-great-how-to-develop-a-compelling-proposal-response-mch", date: "2026-05-01", access: full, locator: "session description and learning outcomes" }
-    - { ref: SOURCE-PRECISION-2026, title: "Precision segmentation: How consulting firms can target clients' sector and functional AI budgets", publisher: Source Global Research, type: survey, url: "https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets", date: "2026-09-28", access: full, locator: "buyer segmentation section (as routed from client-development practice)" }
+    - { ref: SOURCE-PRECISION-2026, title: "Precision segmentation: How consulting firms can target clients' sector and functional AI budgets", publisher: Source Global Research, type: survey, url: "https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets", date: "2026-09-28", access: full, locator: "functional-buyer section (60% of enterprise tech buyers)" }
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kinds: law (Baker Botts; Introhive's survey spans law, accounting and other firms); consulting buyer research
     (Source Global Research says C-suite, finance and IT buyers want different AI help and that 60% of enterprise tech
     buyers cite data quality and governance as the largest bottleneck; SOURCE-PRECISION-2026). The article is ambiguous about whether the
     24-hour figure was for onboarding a new attorney or for client preparation. Competitor and client-reward analysis is
-    an idea (ABA column), not a deployment. Relationship intelligence and pre-meeting briefs belong to
-    professional-services-client-development-05, -06 and -07. Merged from discourse-03, governance-12 and discourse-14.
+    an idea (ABA column), not a deployment. Opportunity scouting, pre-meeting briefs and BD assistants belong to
+    professional-services-client-development-05, -06 and -07 respectively. Merged from discourse-03, governance-12 and discourse-14.
 
 - id: professional-services-pursuit-proposals-09
   title: Urgent pitch and RFP responses drafted by partners from firm archives on a legal AI platform
@@ -638,13 +639,13 @@
   human_checkpoints:
     - "Lawyers refine and customise the draft for the client; the ABA describes this as the pattern without naming a firm (ABA-LPMRFP-2026)"
   role_evolution: >-
-    Harvey describes partners drafting responses themselves from firm archives rather than waiting for BD staff to
-    assemble materials (HARVEY-BD-2026). Latham & Watkins' Innovation Attorney - Client Team Enablement role works with
-    BD on panels, pitches and RFPs (LATHAM-INNOVATIONATTY-2026).
+    Harvey describes partners using AI drafting software to mine firm experience and draft RFP responses themselves
+    (HARVEY-BD-2026). Latham & Watkins' Innovation Attorney - Client Team Enablement role collaborates with BD teams to
+    prepare technology-related content for panels, pitches and RFPs (LATHAM-INNOVATIONATTY-2026).
   evidence_grade: B
   sources:
     - { ref: HARVEY-BD-2026, title: "How Law Firms Use AI for Business Development and Client Intelligence", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/blog/ai-for-law-firm-business-development", date: "2026-06-23", access: full, locator: "section 3, Help Partners Respond Faster to RFP Opportunities" }
-    - { ref: HARVEY-LPHS-2025, title: "Sharpening the Edge: How LPHS Uses Harvey to Win Smarter, Faster (customer story)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/customers/lphs", date: "2025-04-24", access: full, locator: "customer story (as routed from client-development practice)" }
+    - { ref: HARVEY-LPHS-2025, title: "Sharpening the Edge: How LPHS Uses Harvey to Win Smarter, Faster (customer story)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/customers/lphs", date: "2025-04-24", access: full, locator: "'Winning New Business' (under 48 hours, where other firms needed a week)" }
     - { ref: INTROHIVE-MCP-2026, title: "Introhive Announces MCP Server for Legal AI", publisher: Introhive, type: vendor, url: "https://www.introhive.com/news/introhive-announces-mcp-server-for-legal-ai-enables-copilots-and-ai-agents-with-real-time-relationship-intelligence/", date: "2026-04-16", access: full, locator: "release body, Client Pitch Preparation" }
     - { ref: INTROHIVE-LAWSITES-2026, title: "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds", publisher: LawSites (Robert J. Ambrogi), type: press, url: "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html", date: "2026-10-13", access: full, locator: "paragraphs on survey findings" }
     - { ref: ABA-LPMRFP-2026, title: "How AI Is Changing the Process of Law Firm Request for Proposals (RFP)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/july-august-2026/how-ai-is-changing-the-law-firm-request-for-proposals", date: "2026-07", access: full, locator: "Real-World Scenarios" }
@@ -697,8 +698,8 @@
     - "If many bidders prompt AI with the same criteria, responses may converge (BROWNEJACOBSON-AIPROC-2025)"
     - "The writing experiment found ChatGPT mostly substituted for worker effort and compressed differences between workers (NOY-ZHANG-2023, abstract)"
   human_checkpoints:
-    - "The bid lead or partner edits the executive summary and win themes before submission (ABA-LPMAI-2026, item 3)"
-    - "A person approves the final document; AI cannot replace human reading of client expectations, differentiators and authenticity (NYREJ-SMPSNY-2026)"
+    - "The bid team and partners tailor strategy and nuance in the AI draft (ABA-LPMAI-2026, item 3); a human refines the final executive summary (LOOPIO-BLOG-2026, item 4)"
+    - "SMPS New York presenters said AI cannot replace the human ability to interpret client expectations, identify differentiators and bring authenticity (NYREJ-SMPSNY-2026)"
   role_evolution: >-
     The writing experiment found tasks restructured toward idea generation and editing and away from rough drafting
     (NOY-ZHANG-2023). SMPS New York presenters urged proposal professionals to build skills in strategic thinking,
@@ -710,6 +711,7 @@
     - { ref: NOY-ZHANG-2023, title: "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence (working paper)", publisher: "Shakked Noy and Whitney Zhang (MIT)", type: academic, url: "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf", date: "2023-03-02", access: full, locator: "abstract" }
     - { ref: BROWNEJACOBSON-AIPROC-2025, title: "Use of AI in public sector procurements", publisher: Browne Jacobson, type: firm, url: "https://www.brownejacobson.com/insights/use-of-ai-in-public-sector-procurements", date: "2025-01-27", access: full, locator: "'AI used for evaluation of tender submissions'" }
     - { ref: NYREJ-SMPSNY-2026, title: "SMPS NY hosts 'Humans at the Helm: Guiding AI in Proposal Management' virtual program", publisher: New York Real Estate Journal, type: press, url: "https://nyrej.com/smps-ny-hosts-humans-at-the-helm-guiding-ai-in-proposal-management-virtual-program", date: "2026-06-30", access: full, locator: "paragraphs 3-4" }
+    - { ref: LOOPIO-BLOG-2026, title: "AI and the Future of Proposal Management: A Look at Industry Trends", publisher: Loopio, type: vendor, url: "https://loopio.com/blog/how-are-proposal-teams-adopting-ai/", date: "2026-04-14", access: full, locator: "item 4, executive summaries" }
   last_reviewed: "2026-10-19"
   notes: >-
     No named firm describes this use, so maturity is 'emerging' under the vocabulary's named-organisation rule even
@@ -767,8 +769,8 @@
     - "A named person signs off each factual claim before submission (BIDLAB-2026)"
     - "Where a solicitation asks, the bidder confirms AI-assisted text was checked and verified (PPN-017-2025, Annex B)"
   role_evolution: >-
-    The reviewer's job shifts from reading for style to verifying claims against records; Loopio reports top performers
-    track granular metrics such as section scores and cost per bid (LOOPIO-TRENDS-2026, Ch.3 p.39).
+    A shift in the reviewer's job from reading for style to verifying claims against records is an inference; no source
+    describes it. Loopio reports top performers track granular metrics such as section scores and cost per bid (LOOPIO-TRENDS-2026, Ch.3 p.39).
   evidence_grade: C
   sources:
     - { ref: LOOPIO-TRENDS-2026, title: "2026 RFP Response Trends & Benchmarks Report", publisher: "Loopio, in partnership with APMP", type: survey, url: "https://link.loopio.com/hubfs/Content%20Pieces/FY26%20Trends%20Report/trends-report-2026-digital-Master.pdf", date: "2026-03", access: full, locator: "Ch.5 pp.57, 59, 67; Ch.3 p.39; Ch.7 p.83" }
@@ -801,8 +803,9 @@
   maturity: in-production
   problem: >-
     Proposal and BD staff reach for general chatbots the firm does not control, while bid content (past RFPs, pricing,
-    client details, solicitation material) is confidential or restricted. At Ballard Spahr leadership would not allow
-    open public chat tools, so staff had no safe way to use AI for writing such as awards submissions within a text limit.
+    client details, solicitation material) is confidential or restricted. At Ballard Spahr, firm leadership treated the
+    privacy and security of an open public tool such as ChatGPT as a non-starter, so the technology team built its own
+    (TRI-INSIDELEGALAI-2025).
   solution: >-
     The firm provides approved tools with no-training terms and access controls, bans pasting restricted material into
     others, and runs retrieval only over content each user may see. Law firm Ballard Spahr built 'Ask Ellis', a
@@ -846,8 +849,8 @@
     - "Before upload, the user checks the tool's terms and the solicitation's own handling rules (BIDLAB-2026, FAQ)"
   role_evolution: >-
     Tool choice becomes a firm decision rather than an individual one (JMW-SRA-2026). Loopio reports enterprise and
-    mid-market teams about 10 points more likely than small businesses to use AI, and suggests software that protects
-    sensitive data is the reason (LOOPIO-TRENDS-2026, Ch.5 p.56).
+    mid-market teams about 10 points more likely than small businesses to use AI, and suggests this may be because they
+    have software that does not put sensitive data at risk (LOOPIO-TRENDS-2026, Ch.5 p.56).
   evidence_grade: B
   sources:
     - { ref: TRI-INSIDELEGALAI-2025, title: "Beyond legal practice: How GenAI is transforming law firm business operations", publisher: Thomson Reuters Institute, type: press, url: "https://www.thomsonreuters.com/en-us/posts/technology/inside-legal-ai-genai-transformation/", date: "2025-12-15", access: full, locator: "Use case 2: AI assistant" }
@@ -877,7 +880,7 @@
   ladder: augment
   change_scope: step
   runtime_class: shared-team-skills
-  maturity: in-production
+  maturity: emerging
   problem: >-
     Tailoring to the buyer has been a costly signal of quality. Once AI makes tailored text cheap, buyers may stop
     treating it as evidence of fit. 41% of QorusDocs respondents already name personalisation as a pain point (QORUSDOCS-ITBRIEF-2026).
@@ -911,9 +914,10 @@
   human_checkpoints:
     - "The bid lead or partner edits the draft for specific evidence and relationship content; in the platform study editing time correlated with hiring success (CUI-DIAS-YE-2025)"
   role_evolution: >-
-    Bid writers move from composing to editing and evidencing. Loopio says top performers spend about two hours more per
+    A move for bid writers from composing to editing and evidencing is an inference from the platform study, where
+    editing time correlated with hiring success (CUI-DIAS-YE-2025). Loopio says top performers spend about two hours more per
     RFP and links this, as likely rather than proven, to personalisation and storytelling (LOOPIO-TRENDS-2026, Ch.7 p.83).
-  evidence_grade: B
+  evidence_grade: C
   sources:
     - { ref: CUI-DIAS-YE-2025, title: "Signaling in the Age of AI: Evidence from Cover Letters (arXiv 2509.25054)", publisher: "Jingyi Cui, Gabriel Dias, Justin Ye", type: academic, url: "https://arxiv.org/abs/2509.25054", date: "2025-09-29", access: full, locator: "abstract" }
     - { ref: GALDIN-SILBERT-2025, title: "Making Talk Cheap: Generative AI and Labor Market Signaling (arXiv 2511.08785)", publisher: "Anais Galdin and Jesse Silbert", type: academic, url: "https://arxiv.org/abs/2511.08785", date: "2025-11-11", access: full, locator: "abstract; introduction" }
@@ -925,9 +929,11 @@
     - { ref: KANTIV-SMPSQ2-2026, title: "What the SMPS Q2 AI Report Means for AEC Pursuit Teams", publisher: Kantiv, type: vendor, url: "https://www.kantiv.com/blog/smps-q2-ai-report", date: "2026-07-13", access: full, locator: "second finding (AI slop)" }
   last_reviewed: "2026-10-19"
   notes: >-
-    Grade capped at B: the independent measurements come from adjacent processes (freelance job applications on online
-    labour platforms; the platform in GALDIN-SILBERT-2025 introduced an AI proposal writer in April 2023), not
-    professional-services RFPs. No equivalent study of professional-services bids was found. From governance-10.
+    Graded C and 'emerging' at verification (2026-10-19; was B, in-production): the independent measurements come from an
+    adjacent process (freelance job applications on online labour platforms; Freelancer.com, the platform in
+    GALDIN-SILBERT-2025, introduced an AI proposal writer in April 2023), not professional-services RFPs, and no named
+    professional-services firm is shown managing this. The professional-services evidence is survey and vendor material
+    (QorusDocs, Loopio, Kantiv). No equivalent study of professional-services bids was found. From governance-10.
 
 - id: professional-services-pursuit-proposals-14
   title: Proposal agents inside professional services platforms that draft from delivery, finance and experience data
@@ -970,7 +976,7 @@
     - "Defined permissions and approval thresholds for what an agent may do or send (CERTINIA-VEDA-2026)"
     - "Experience data connected to HR and financial systems (INTAPP-EXPERIENCE-2026)"
   risks_and_guardrails:
-    - "California guidance says the greater the autonomy, the greater the oversight, and agentic systems must not act in a representative capacity without meaningful lawyer supervision (CALBAR-GENAI-2026, pp.2 and 5)"
+    - "California guidance says the greater the autonomy, the greater the oversight, and agentic systems must not act in a representative capacity without meaningful lawyer supervision (CALBAR-GENAI-2026, pp.2-3 and 5)"
     - "The same guidance bars agentic systems that autonomously transmit client information externally without safeguards and human review, and warns persistent access may expose information across matters (CALBAR-GENAI-2026, p.6)"
     - "The Bar Standards Board's guidance, as described by a law firm, treats AI use as outsourcing under which the barrister stays responsible (MONDAQ-BSB-2026)"
     - "No vendor source discusses the risk of reusing confidential client material in proposals (KANTATA-ENGINE-2025; INTAPP-EXPERIENCE-2026)"
@@ -986,15 +992,15 @@
     - { ref: KANTATA-ENGINE-2025, title: "Kantata unveils the Kantata Expertise Engine (press release)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/blog/article/kantata-unveils-the-kantata-expertise-engine-the-first-ai-platform-purpose-built-for-professional-services-transformation", date: "2025-10-09", access: full, locator: "Paragraphs on the Sales Accelerator and the customer quote from FOIL" }
     - { ref: INTAPP-EXPERIENCE-2026, title: "Experience management (Intapp DealCloud product page; undated, read 2026-10-19)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/dealcloud/experience-management/", date: "2026-10-19", access: full, locator: "Section on proposal and report generation" }
     - { ref: INTAPP-DEALCLOUD-2026, title: "Intapp DealCloud (page undated)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/dealcloud/", date: "2026", access: full, locator: "AI to power your pipeline and win rates (Knowledge and proposal readiness)" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law (2026 version)", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "pp.2, 5, 6, 7" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law (2026 version)", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "pp.2-3, 5, 6, 7" }
     - { ref: MONDAQ-BSB-2026, title: "The BSB Have Released AI Guidance. Should The SRA Follow Suit?", publisher: "Mondaq (contributor: PCB Byrne)", type: firm, url: "https://www.mondaq.com/the-bsb-have-released-ai-guidance-should-the-sra-follow-suit/1825730", date: "2026-08-03", access: full, locator: "'What Does the BSB Guidance Cover?'" }
-    - { ref: CERTINIA-SOA-2026, title: "Certinia Unveils the System of Action for Services, and the Largest Expansion of Veda AI to Date", publisher: Certinia, type: vendor, url: "https://www.certinia.com/blog/certinia-unveils-system-of-action-for-services-and-largest-expansion-of-veda-ai-to-date/", date: "2026-09-09", access: full, locator: "claim relayed in the delivery-management practice routing notes; not re-read here" }
+    - { ref: CERTINIA-SOA-2026, title: "Certinia Unveils the System of Action for Services, and the Largest Expansion of Veda AI to Date", publisher: Certinia, type: vendor, url: "https://www.certinia.com/blog/certinia-unveils-system-of-action-for-services-and-largest-expansion-of-veda-ai-to-date/", date: "2026-09-09", access: full, locator: "'Sell and Plan' paragraph" }
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kinds: project-based consulting and IT services firms on PSA platforms (Certinia, Kantata; FOIL is a
-    consultancy) and law and advisory firms (Intapp). No customer story was found for the RFP Responder agent. The
-    delivery-management practice file relays a Certinia release claim of handling 15 times more RFPs
-    (CERTINIA-SOA-2026, 2026-09-09); it was not checked here and is not used as an outcome. Delivery of Kantata's
+    consultancy) and law and advisory firms (Intapp). No customer story was found for the RFP Responder agent. Certinia's
+    2026-09-09 release claims proposal creation cut from about 8 hours to 1 and 15 times more RFPs handled, with no
+    customer, sample or method named (CERTINIA-SOA-2026, read at verification); it is not used as an outcome. Delivery of Kantata's
     Sales Accelerator plan was not confirmed. Estimate agents are professional-services-scoping-pricing-02 and SOW
     drafting is -05. Ladder 'augment' because the vendors describe drafting, not autonomous submission. Merged from
     practice-14, governance-04 and items routed from knowledge-management and delivery-management.
@@ -1021,14 +1027,17 @@
     agentic capabilities for compliance validation and scoring (IKAUN-STINSON-2026).
   outcomes:
     - lever: capacity
-      description: Firms building their own agentic workflows, and leaders' use of AI to orchestrate bid work
-      figure: "17% of AEC firms developing their own agentic workflows; 41% vs 17% (Leaders vs Novices)"
-      measures: >-
-        Unanet: share of AEC respondents developing their own agentic workflows (sample size not stated). Responsive
-        (RESPONSIVE-SRM-2025): share of Leaders vs Novices using AI to orchestrate workflows and assignments, 726
-        respondents across industries
+      description: AEC firms building their own agentic workflows
+      figure: "17%"
+      measures: "Share of AEC respondents developing their own agentic workflows (sample size not stated)"
       provenance: vendor-published
       source_ref: BDC-UNANET-2026
+    - lever: capacity
+      description: Leaders were more likely than Novices to use AI to orchestrate workflows and assignments; a usage difference, not a result
+      figure: "41% vs 17%"
+      measures: "Share of Leaders vs Novices using AI to orchestrate workflows and assignments; 726 respondents across industries"
+      provenance: vendor-published
+      source_ref: RESPONSIVE-SRM-2025
     - lever: speed
       description: "Intapp's claim that pitch material can be surfaced in minutes rather than hours; no measurement"
       figure: "minutes rather than hours (vendor claim)"
@@ -1042,9 +1051,9 @@
     - "A home-built tool needs an owner for prompt governance, permissions and data freshness, and token-based pricing can produce unexpectedly high bills; vendor opinion (KANTIV-TRUST-2026)"
     - "A consultant's newsletter reports APMP conference attendees moving away from do-it-yourself GenAI as too costly and unfocused (HINZ-BPCNASHVILLE-2025; mostly government-contracting audience)"
     - "Intapp says the same ethical walls, need-to-know restrictions and audit requirements that apply to people apply to Celeste (LAWSITES-CELESTE-2026)"
-    - "California guidance: more autonomy needs more oversight (CALBAR-GENAI-2026, p.2)"
+    - "California guidance: more autonomy needs more oversight (CALBAR-GENAI-2026, p.3)"
   human_checkpoints:
-    - "People direct the agents and review outputs at defined points; no source specifies the gates (KANTIV-SMPSQ2-2026)"
+    - "People direct the agents' work (KANTIV-SMPSQ2-2026); no source specifies review gates"
   role_evolution: >-
     Proposal staff move from doing tasks to directing and reviewing agents, per Kantiv's summary of the SMPS report
     (KANTIV-SMPSQ2-2026, secondary).
@@ -1057,7 +1066,7 @@
     - { ref: IKAUN-STINSON-2026, title: "Winning More Time for Strategy: How Stinson is Transforming RFP and Proposal Responses with ikaun (page undated)", publisher: ikaun, type: vendor, url: "https://www.ikaun.com/case-studies/winning-more-time-for-strategy-how-stinson-is-transforming-rfp-and-proposal-responses-with-ikaun", date: "2026", access: full, locator: "Results (next steps)" }
     - { ref: KANTIV-TRUST-2026, title: "What's Under the Slab: How AI Trust Actually Gets Built in AEC", publisher: Kantiv, type: vendor, url: "https://www.kantiv.com/blog/ai-trust-ai-proposal-software-for-aec", date: "2026-07-21", access: full, locator: "article body (vendor opinion on home-built tools)" }
     - { ref: HINZ-BPCNASHVILLE-2025, title: "Volume 78: Special Edition. BPC Nashville - More Than Just a Conference!", publisher: Hinz Sight newsletter (Hinz Consulting), type: community, url: "https://hinzsight.beehiiv.com/p/volume-78-special-edition-bpc-nashville-more-than-just-a-conference-a-time-to-reconnect-reflect-and", date: "2025-06-02", access: full, locator: "paragraph after 'What people were saying'" }
-    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law (2026 version)", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.2" }
+    - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law (2026 version)", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.3" }
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kinds: AEC (SMPS, Unanet), law (Intapp, Stinson), cross-industry (Responsive). Ladder 'delegate' describes what
@@ -1104,7 +1113,7 @@
     - "Debriefs and win/loss notes captured consistently (LMA-DECENT-2026)"
   risks_and_guardrails:
     - "Self-reported loss reasons differ by seniority: associates more often blame price and competition, directors and above product fit; verify against buyer debriefs (LOOPIO-TRENDS-2026, Ch.2 p.32)"
-    - "Win/loss notes are recollections; score on what was known at the time (KANTIV-GONOGO-2026)"
+    - "Score past pursuits on what was known at the go decision; hindsight inflates the scores of winning pursuits (KANTIV-GONOGO-2026)"
     - "63% of firms in the Introhive survey have no revenue-linked way to measure BD return (INTROHIVE-LAWSITES-2026)"
     - "Use of buyer feedback or personal data is subject to the firm's privacy and confidentiality duties; not addressed in the sources read"
   human_checkpoints:
@@ -1178,7 +1187,7 @@
     - { ref: ABA-LPMRFP-2026, title: "How AI Is Changing the Process of Law Firm Request for Proposals (RFP)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/july-august-2026/how-ai-is-changing-the-law-firm-request-for-proposals", date: "2026-07", access: full, locator: "'AI Questions Being Asked of Law Firms in RFPs'" }
     - { ref: PARKERPOE-TR-2026, title: "From permission to performance: What clients now expect from AI-enabled law firms", publisher: Thomson Reuters (interview with Parker Poe), type: vendor, url: "https://legal.thomsonreuters.com/blog/from-permission-to-performance-what-clients-now-expect-from-ai-enabled-law-firms/", date: "2026-08-14", access: full, locator: "'Building client trust'; 'Assessing meaningful AI integration'" }
     - { ref: LAWSITES-LITERA-2026, title: "I Sent Three Law Firms an RFP. There's Clearly a Client Experience Gap. (sponsored post by Litera's CEO)", publisher: LawSites, type: press, url: "https://www.lawnext.com/2026/10/i-sent-three-law-firms-an-rfp-theres-clearly-a-client-experience-gap.html", date: "2026-10-08", access: full, locator: "'Checking a Box'; 'Clients Want Metrics'" }
-    - { ref: LAWFUEL-2025, title: "AI disruption forces Big Law to rethink billing: 'Firms will give more for free'", publisher: LawFuel, type: press, url: "https://www.lawfuel.com/free-legal-fees-from-big-law/", date: "2025-07-29", access: full, locator: "as routed from client-development discourse" }
+    - { ref: LAWFUEL-2025, title: "AI disruption forces Big Law to rethink billing: 'Firms will give more for free'", publisher: LawFuel, type: press, url: "https://www.lawfuel.com/free-legal-fees-from-big-law/", date: "2025-07-29", access: full, locator: "paragraph on clients requesting AI usage clauses in RFPs and guidelines" }
     - { ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "'Proving AI's path to saving clients money'; 'The contradictions in the room'" }
     - { ref: TRI-STANDOUT-2026, title: "Turning law firm AI strategies into practice: Findings from the 2026 Stand-out Lawyers Survey", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/turning-law-firm-ai-strategies-into-practice", date: "2026-08-06", access: full, locator: "'How to talk to clients about AI'" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "p.2 n.4; p.8" }
@@ -1186,7 +1195,7 @@
     - { ref: SEC-2024-36, title: "SEC Charges Two Investment Advisers with Making False and Misleading Statements About Their Use of Artificial Intelligence (press release 2024-36)", publisher: U.S. Securities and Exchange Commission, type: regulator, url: "https://www.sec.gov/newsroom/press-releases/2024-36", date: "2024-03-18", access: full, locator: "press release body" }
     - { ref: FTC-AICOMPLY-2024, title: "FTC Announces Crackdown on Deceptive AI Claims and Schemes (Operation AI Comply)", publisher: U.S. Federal Trade Commission, type: regulator, url: "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes", date: "2024-09-25", access: full, locator: "chair statement" }
     - { ref: ICMCI-AICODE-2026, title: "Code of Responsible Use of Artificial Intelligence for the Management Consulting Profession, v1.0", publisher: International Council of Management Consulting Institutes, type: professional-body, url: "https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf", date: "2026-05", access: full, locator: "Section 11.2" }
-    - { ref: FLBAR-OP241-2024, title: "Florida Bar Ethics Opinion 24-1 (text as reproduced on a third-party mirror)", publisher: "The Florida Bar, Professional Ethics Committee (mirror: ezel.ai)", type: professional-body, url: "https://ezel.ai/ethics-opinions/flbar/24-1-generative-ai-in-law-practice", date: "2024-01-19", access: full, locator: "Section 'Lawyer Advertising'" }
+    - { ref: FLBAR-OP241-2024, title: "Florida Bar Ethics Opinion 24-1", publisher: "The Florida Bar, Professional Ethics Committee", type: professional-body, url: "https://www-media.floridabar.org/uploads/2024/01/FL-Bar-Ethics-Op-24-1.pdf", date: "2024-01-19", access: full, locator: "Lawyer Advertising, p.7" }
     - { ref: TRI-CMBDO34-2027, title: "The 34th Annual Chief Marketing & Business Development Officer Forum (agenda; scheduled event)", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/events/the-34th-annual-chief-marketing-business-development-officer-forum/", date: "2027-01", access: full, locator: "Day 1 breakout (scheduled)" }
   last_reviewed: "2026-10-19"
   notes: >-
@@ -1230,16 +1239,17 @@
     - "A record of what AI was used for, so an answer takes minutes rather than a reconstruction (BIDLAB-2026)"
   risks_and_guardrails:
     - "UK guidance says its example AI disclosure questions are for information, should not be scored, and should not be used to discriminate between suppliers (PPN-017-2025, Annex B)"
-    - "California's required clause says failure to report generative AI may result in disqualification; it covers AI provided as, or used to complete, a deliverable, not AI used to write the bid (CALDGS-SCM2302-2025)"
+    - "California's required clause says failure to report generative AI may result in disqualification; it covers AI provided as a deliverable, or used to complete a deliverable in a way that materially affects a State system, risk to the State or contract performance, not AI used to write the bid (CALDGS-SCM2302-2025)"
     - "A US funder says proposers remain responsible for accuracy and authenticity (NSF-GENAI-2023)"
     - "GSA published a draft clause on safeguarding government data in LLM systems for comment on 2026-06-17; it concerns AI delivered under contract (FEDREG-GSA-2026)"
     - "Australia's Public Service AI plan (unveiled 2025-11-12) says suppliers on whole-of-government management advisory and people panels will have to advise planned AI use when responding to requests for quotes (CANBERRATIMES-APSAI-2025)"
   human_checkpoints:
     - "The bid lead reviews the disclosure answer against the register before submission (no deployment describes this)"
   role_evolution: >-
-    A compliance-owner role for bid managers is a plausible extension, not described in a source. Browne Jacobson
-    tells buyers not to score AI-use answers and to plan for more tenders and clarification questions
-    (BROWNEJACOBSON-AIPROC-2025).
+    A compliance-owner role for bid managers is a plausible extension, not described in a source. UK guidance tells
+    buyers not to score its example AI-use questions and to plan for more tender responses and clarification questions
+    (PPN-017-2025, para 9 and Annex B); Browne Jacobson warns that more AI-assisted bids may arrive without more
+    evaluation capacity (BROWNEJACOBSON-AIPROC-2025).
   evidence_grade: D
   sources:
     - { ref: PPN-017-2025, title: "Procurement Policy Note 017: Improving transparency of AI use in procurement", publisher: UK Cabinet Office, type: regulator, url: "https://assets.publishing.service.gov.uk/media/67af7ba0e270ceae39f9e279/PPN_017_Improving_transparency_of_AI_use_in_procurement.pdf", date: "2025-02-17", access: full, locator: "para 9; Annex B" }
@@ -1248,8 +1258,8 @@
     - { ref: NSF-GENAI-2023, title: "Notice to Research Community: Use of Generative Artificial Intelligence Technology in the NSF Merit Review Process", publisher: U.S. National Science Foundation, type: regulator, url: "https://www.nsf.gov/news/notice-to-the-research-community-on-ai", date: "2023-12-14", access: full, locator: "'Use of generative AI in proposal preparation'" }
     - { ref: FEDREG-GSA-2026, title: "General Services Acquisition Regulation; Acquisition of Information and Communication Technology; Notice of Listening Sessions and Request for Comments (FR doc. 2026-12205)", publisher: U.S. General Services Administration (Federal Register), type: regulator, url: "https://www.federalregister.gov/documents/2026/06/17/2026-12205/general-services-acquisition-regulation-acquisition-of-information-and-communication-technology", date: "2026-06-17", access: full, locator: "abstract" }
     - { ref: BIDLAB-2026, title: "Using AI RFP Solutions: Dos and Don'ts (AI and RFPs: Disclosure Rules, Risk and What You Certify)", publisher: The Bid Lab, type: vendor, url: "https://thebidlab.com/learning-center/using-ai-rfp-solutions-dos-and-donts/", date: "2026-08", access: full, locator: "'Do You Have to Disclose That You Used AI?'" }
-    - { ref: BROWNEJACOBSON-AIPROC-2025, title: "Use of AI in public sector procurements", publisher: Browne Jacobson, type: firm, url: "https://www.brownejacobson.com/insights/use-of-ai-in-public-sector-procurements", date: "2025-01-27", access: full, locator: "'AI used for answering tender submissions'" }
-    - { ref: CANBERRATIMES-APSAI-2025, title: "New AI plan for the APS sets out expectations for contractors", publisher: The Canberra Times, type: press, url: "https://www.canberratimes.com.au/story/9110516/new-ai-plan-for-the-aps-sets-out-expectations-for-contractors/", date: "2025-11-13", access: full, locator: "paragraphs on contractor expectations (as routed from scoping-pricing)" }
+    - { ref: BROWNEJACOBSON-AIPROC-2025, title: "Use of AI in public sector procurements", publisher: Browne Jacobson, type: firm, url: "https://www.brownejacobson.com/insights/use-of-ai-in-public-sector-procurements", date: "2025-01-27", access: full, locator: "'AI used for evaluation of tender submissions'" }
+    - { ref: CANBERRATIMES-APSAI-2025, title: "New AI plan for the APS sets out expectations for contractors", publisher: The Canberra Times, type: press, url: "https://www.canberratimes.com.au/story/9110516/new-ai-plan-for-the-aps-sets-out-expectations-for-contractors/", date: "2025-11-13", access: full, locator: "paragraphs on whole-of-government panel suppliers and requests for quotes" }
   last_reviewed: "2026-10-19"
   notes: >-
     Idea: buyer requirements are documented by regulators, but no firm's register was found. Firm kinds: any firm
@@ -1271,8 +1281,9 @@
   maturity: emerging
   problem: >-
     Client outside counsel guidelines (OCGs, a client's rules for the firms it hires) and RFP terms carry billing,
-    staffing, data-security, insurance and indemnity provisions, and increasingly AI restrictions. They can be
-    deal-breakers and are reviewed late and by hand under a short turnaround.
+    staffing, data-security, insurance and indemnity provisions, some of which can be deal-breakers (ABA-LPMAI-2026,
+    item 6), and some carry AI restrictions (TRI-LEGALWEEK-2026). That they are reviewed late and by hand is an
+    assumption; no source measures it.
   solution: >-
     Idea from an ABA marketing column: AI cross-references a client's guidelines or RFP terms against the firm's
     standard terms and produces a dashboard of clauses that are standard, need review, or are potential deal-breakers
@@ -1285,7 +1296,7 @@
       provenance: self-reported
       source_ref: ABA-LPMAI-2026
   prerequisites:
-    - "The firm's standard terms and AI policy in a form the tool can compare (ABA-LPMAI-2026, item 6)"
+    - "The firm's standard terms in a form the tool can compare (ABA-LPMAI-2026, item 6)"
   risks_and_guardrails:
     - "Guidelines may restrict or require disclosure of AI use; lawyers must follow client limits and disclose where guidelines require it (CALBAR-GENAI-2026, p.7; ABA-OP512-2024, p.8)"
     - "At Legalweek a DLA Piper speaker described directives demanding warrants that models are unbiased and declarations that firms cannot use AI without explicit permission (TRI-LEGALWEEK-2026)"
@@ -1298,14 +1309,14 @@
   sources:
     - { ref: ABA-LPMAI-2026, title: "Leveraging AI to Respond to Requests for Proposals (RFPs) (Marketing Column)", publisher: ABA Law Practice magazine, type: professional-body, url: "https://www.americanbar.org/groups/law_practice/resources/law-practice-magazine/2026/march-april-2026/leveraging-ai-to-respond-to-rfps", date: "2026-03", access: full, locator: "item 6 (Compliance and Risk Flagging); Cautions" }
     - { ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: "2026-03-13", access: full, locator: "'The contradictions in the room'" }
-    - { ref: LITERA-GCRFP-2026, title: "What General Counsel Should Ask About AI in Legal Vendor RFPs", publisher: Litera, type: vendor, url: "https://www.litera.com/node/1585", date: "2026", access: full, locator: "TL;DR and 'Why AI Belongs in Your Legal Vendor RFP'" }
+    - { ref: LITERA-GCRFP-2026, title: "What General Counsel Should Ask About AI in Legal Vendor RFPs", publisher: Litera, type: vendor, url: "https://www.litera.com/node/1585", date: "2026-07-24", access: full, locator: "TL;DR and 'Why AI Belongs in Your Legal Vendor RFP'" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "p.8" }
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law (2026 version)", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Communication row, p.7" }
   last_reviewed: "2026-10-19"
   notes: >-
     Idea; no firm using it was found. Firm kind: law. Kept here because the check happens inside the bid; extraction
     and enforcement of client terms once work is accepted is professional-services-acceptance-risk-10, and a register
-    of client AI restrictions is professional-services-acceptance-risk-11. The Litera page date is not on the page.
+    of client AI restrictions is professional-services-acceptance-risk-11. The Litera page shows the date Fri 24 Jul 2026.
     Merged from practice-13, discourse-15 and governance-16.
 
 - id: professional-services-pursuit-proposals-20
@@ -1328,14 +1339,15 @@
     service provider, panel or RFP), builds the RFP, collects responses and compares proposals in a structured
     evaluation. An ABA article describes legal operations teams starting to use AI to summarise and compare
     submissions, flag pricing outliers and staffing differences, and draft follow-up questions for panel interviews
-    (ABA-LPMRFP-2026; TGC-WK-2025).
-    Advisers to buyers of IT systems-integration services recommend using AI to audit compliance and consistency, then
-    applying experienced commercial judgement.
+    (ABA-LPMRFP-2026, illustrative scenarios). Wolters Kluwer, as summarised by Today's General Counsel, says legal
+    departments use RFP systems with generative AI and analytics to set out strategy, staffing and billing expectations
+    (TGC-WK-2025). Advisers to buyers of IT systems-integration services recommend using AI to audit compliance and
+    consistency, then applying experienced commercial judgement (UPPEREDGE-PROPTRAP-2026).
   outcomes:
     - lever: quality
       description: >-
         Adjacent, independent: three reasoning models were compared with human procurement professionals on 123 State of
-        Ohio IT supplier bids from 31 projects; the models were consistent and aligned with humans on compliance signals
+        Ohio government supplier bids from 31 projects; the models were consistent and aligned with humans on compliance signals
         and showed high scoring volatility on competitive signals such as value-add claims.
       figure: "123 bids, 31 projects, 3 models; no accuracy percentage in the abstract"
       measures: "Consistency and human alignment on compliance signals; scoring volatility on competitive signals (January 2023 to December 2024 bids)"
@@ -1355,7 +1367,7 @@
     - "Polished AI-assisted proposals can hide weaker economics; in one practitioner's example an LLM rated a statement of work's off-ramps client-friendly without testing whether they could be used (UPPEREDGE-PROPTRAP-2026)"
     - "Buyer advice: require disclosure of AI use, validate in live discussion, bind AI-written commitments into the contract and train procurement staff; the adviser sells advisory services (UPPEREDGE-SI-2025)"
     - "A 2026 legal commentary says US federal evaluators may use generative AI to summarise proposals without telling offerors, creating bid-protest risk (NATLAW-BRADLEY-2026); commentary, not evidence of widespread practice"
-    - "NIH reported one applicant submitting more than 40 applications in a round, now limits applicants to six a year and says it uses AI-detection technology; a grant-funder analogue (NIH-NOTOD25132-2025)"
+    - "NIH says AI tools have enabled some principal investigators to submit more than 40 applications in a single round, now accepts at most six applications per investigator a year and says it uses AI-detection technology; a grant-funder analogue (NIH-NOTOD25132-2025)"
   human_checkpoints:
     - "The legal team makes the final firm selection (PRIORI-SCOUT-2026)"
     - "Humans assess differentiation, value-add and commercial terms; the study treats scoring volatility as the signal that oversight is needed (JBL-MCKINLEY-2026)"
@@ -1369,7 +1381,7 @@
     - { ref: JBL-MCKINLEY-2026, title: "Do Humans and GAI See Eye to Eye? Implications of LLM Scoring Volatility in Supplier Evaluations", publisher: "Journal of Business Logistics (McKinley, Dohmen, Castillo)", type: academic, url: "https://doi.org/10.1111/jbl.70072", date: "2026-05-14", access: full, locator: "Abstract (Crossref record)" }
     - { ref: UPPEREDGE-PROPTRAP-2026, title: "The AI Proposal Trap: How to Evaluate SI Proposals When Vendors Optimize for Machines", publisher: UpperEdge, type: firm, url: "https://upperedge.com/artificial-intelligence/the-ai-proposal-trap-how-to-evaluate-si-proposals-when-vendors-optimize-for-machines/", date: "2026-08-25", access: full, locator: "'How Vendors Are Optimizing' to checklist" }
     - { ref: UPPEREDGE-SI-2025, title: "6 Ways to Stay Protected When System Integrators Use AI in RFP Responses (reprinted from CIO)", publisher: UpperEdge, type: firm, url: "https://upperedge.com/erp-program-management/6-ways-to-stay-protected-when-system-integrators-use-ai-in-rfp-responses/", date: "2025-07-08", access: full, locator: "the six numbered rules" }
-    - { ref: TGC-WK-2025, title: "How AI Is Modernizing Responses to Requests for Proposals", publisher: "Today's General Counsel (summarising Wolters Kluwer)", type: press, url: "https://todaysgeneralcounsel.com/how-ai-is-modernizing-responses-to-requests-for-proposals/", date: "2025-07-11", access: full, locator: "paragraphs 2-3" }
+    - { ref: TGC-WK-2025, title: "How AI Is Modernizing Responses to Requests for Proposals", publisher: "Today's General Counsel (summarising Wolters Kluwer)", type: press, url: "https://todaysgeneralcounsel.com/how-ai-is-modernizing-responses-to-requests-for-proposals/", date: "2025-07-11", access: full, locator: "paragraphs 2-3 (legal departments' RFP systems)" }
     - { ref: BROWNEJACOBSON-AIPROC-2025, title: "Use of AI in public sector procurements", publisher: Browne Jacobson, type: firm, url: "https://www.brownejacobson.com/insights/use-of-ai-in-public-sector-procurements", date: "2025-01-27", access: full, locator: "'AI used for evaluation of tender submissions'" }
     - { ref: NSF-GENAI-2023, title: "Notice to Research Community: Use of Generative Artificial Intelligence Technology in the NSF Merit Review Process", publisher: U.S. National Science Foundation, type: regulator, url: "https://www.nsf.gov/news/notice-to-the-research-community-on-ai", date: "2023-12-14", access: full, locator: "'Use of generative AI by reviewers'" }
     - { ref: NIH-NOTOD25132-2025, title: "NOT-OD-25-132: Supporting Fairness and Originality in NIH Research Applications", publisher: U.S. National Institutes of Health, type: regulator, url: "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html", date: "2025-07-17", access: full, locator: "Policy section" }
@@ -1380,5 +1392,5 @@
     IT systems-integration services (UpperEdge), public buyers (Browne Jacobson; Ohio study; NSF and NIH as grant-funder
     analogues). No named legal department reports results. The ABA article cites CLOC figures second-hand (27% of legal
     departments use dedicated legal RFP tools; 46% run structured law-firm performance evaluations). The independent
-    study concerns government IT bids, so it is adjacent. In-house AI addenda to OCGs and AI questions in panel reviews
+    study concerns State of Ohio government supplier bids, so it is adjacent. In-house AI addenda to OCGs and AI questions in panel reviews
     are professional-services-client-development-17. Merged from practice-12, discourse-10 and governance-13.
