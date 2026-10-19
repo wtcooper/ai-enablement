@@ -252,7 +252,7 @@ information or advice; whether an intake conversation formed a relationship; att
 - **"The relationship won the work, not the data."** Firms do contest attribution [INTROHIVE-LAWSITES-2026]. Agree
   attribution rules first and start with intermediate measures (`#19`); 63% have no revenue link at all.
 - **"Partners will never use a CRM."** Then stop asking them to: capture runs without typing (`#01`) and prompts
-  arrive in email (`#08`). Data accuracy becomes the job [INTROHIVE-LAWSITES-2026].
+  arrive in the daily workflow (`#08`). Then the data has to be accurate [INTROHIVE-LAWSITES-2026].
 - **"Our clients aren't asking about AI."** Some are not yet: 42% of 144 respondents to a Virginia Society
   of CPAs survey say clients are not yet asking [VSCPA-AI-2026]. But 32% of corporate clients have reconsidered or
   plan to reconsider providers [TR-FOP-2026], and Harvey-customer firms and in-house teams report very differently
@@ -276,28 +276,11 @@ information or advice; whether an intake conversation formed a relationship; att
 
 ## 10. Sources
 
-Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML.
+Full details (title, URL, date, locator, access) are in the YAML. Keys marked * are not in the YAML; their publisher, date and URL are given inline. All sources were opened on 2026-10-19 except three job postings marked search-only in the YAML.
 
-- **Regulators, professional bodies, academic:** CALBAR-GENAI-2026, OSB-FO-2026-208, WSBA-NWSIDEBAR-OSB-2026,
-  FLBAR-OP241-2024, NYCBAR-OP2024-5, FMG-ABA512-2024, 2CIVILITY-ABA512-2024, LOUBAR-2025, LAWSOC-GENAI-2026,
-  LAWSOC-AGENTIC-2026, JOA-DISCLOSE-2025, JOA-ETHICS-2026, ICMCI-AICODE-2026, AIACT-ART50, EC-AIACT-2026, FCC-24-17,
-  SCHILKE-OBHDP-2025, SCHILKE-CONVERSATION-2025, STANFORD-DEL-2026, FANG-ARXIV-2026* (arXiv 2510.12049, v6 2026-06-29).
-- **Surveys:** TR-FOP-2026, TR-AIPS-2026, TRI-STANDOUT-2026, TRI-GREATDISCONNECT-2026, TRI-LDOR-2026,
-  TRI-VISIBILITY-2026, ILTA-TECHSURVEY-2026, ACCEVERLAW-2025, INTUIT-AT-2026, CPAPA-TECHSURVEY-2026,
-  LITERA-LAWSITES-2026, BIGHAND-LF-2026, RAVICAL-ACCOUNTANT-2025, VSCPA-AI-2026* (VSCPA 2026 AI survey; search-only).
-- **Conferences and events:** TRI-CMBDO-2026, TRI-LEGALWEEK-2026, TRI-AGENTIC-2026, TRI-COOCFO-AI-2025,
-  TR-NAVIGATING-2026, KARBON-ENGAGE-2026, TRI-LEGALWEEK-CRISIS-2026* (TRI, 2026-03-19), TRI-AIFORUM-2026* (TRI,
-  2026-09-28), TRI-CMBDO34-2027* (agenda, scheduled 2027-01), MCA-EVENTS-2026* (MCA events listing, 2026).
-- **Firms and job postings:** AKIN-MONEYBALL-2026, PARKERPOE-LAWSITES-2026, DEBEVOISE-BLOOMBERG-2026,
-  COOLEY-LAWCOM-2026, WOODARD-2025, LATHAM-INNOVATIONATTY-2026, LATHAM-ADAI-2026, BAKERMCKENZIE-CLIENTAIRISK-2026,
-  WOLFGREENFIELD-2026.
-- **Vendors:** INTROHIVE- (SCHNEIDERDOWNS-2026, KSM-2026, LBMC-2024, GRASSI-2026, TSP-2026, FORRESTER-2024, HOME-2026,
-  PRIVACY-2024, MCP-2026, PARTNER-2026, ACCTXSELL-2026, SAM-2025, LAINGOROURKE-2025); INTAPP- (HOWESPERCIVAL-2025,
-  DEALCLOUD-2026, ACTIVATOR-2026, PRACTUS-2026, WOTTONKEARNEY-2026, FORVISMAZARS-2026, Q3CALL-2026); HARVEY-BD-2026,
-  CERTINIA-VEDA-2026, LEGORA-LAUREL-2026, LEGORA-PORTAL-2026, BRIDGENEXT-AGENTFORCE-2026, CONVENTUS-2026,
-  MCL-SITE-2026, KOJI-LEGAL-2026, HARVEY-REEDSMITH-2026* (Harvey customer story, 2026-05-11).
-- **Press, podcasts, community:** INTROHIVE-LAWSITES-2026, LAWSITES-CELESTE-2026, ABAJ-SHARE-2026, LEGALIT-RSGI-2026,
-  BLOOMBERG-AICOST-2026, BLOOMBERGLAW-GCXAI-2026, BLOOMBERGLAW-OTTER-2026, TRI-INTERDEP-2026, AT-DECODE-2026,
-  CUSTOMERTHINK-2026, EDINBURGHNEWS-SHOOSMITHS-2023, SJ-LISTENING-2024, SJ-LFMC-2026, LF-VALUEGAP-2026, LAWPUNX-2025,
-  LPT-FEDER-2026, SOURCE-AI-2026, AL-INHOUSE-2026* (Artificial Lawyer, 2026-02-12), LAWSITES-ILTACON4-2026*
-  (LawSites, 2026-09-04), SOURCE-PRECISION-2026* (Source, 2026-09-28), SOURCE-VALUE-2025* (Source podcast, 2025-09-09).
+- **Regulators, professional bodies, academic:** CALBAR-GENAI-2026, OSB-FO-2026-208, WSBA-NWSIDEBAR-OSB-2026, FLBAR-OP241-2024, NYCBAR-OP2024-5, FMG-ABA512-2024, 2CIVILITY-ABA512-2024, LOUBAR-2025, LAWSOC-GENAI-2026, LAWSOC-AGENTIC-2026, JOA-DISCLOSE-2025, JOA-ETHICS-2026, ICMCI-AICODE-2026, AIACT-ART50, EC-AIACT-2026, FCC-24-17, SCHILKE-OBHDP-2025, SCHILKE-CONVERSATION-2025, STANFORD-DEL-2026, FANG-ARXIV-2026* (arXiv, Fang et al., v6 2026-06-29, https://arxiv.org/abs/2510.12049).
+- **Surveys:** TR-FOP-2026, TR-AIPS-2026, TRI-STANDOUT-2026, TRI-GREATDISCONNECT-2026, TRI-LDOR-2026, TRI-VISIBILITY-2026, ILTA-TECHSURVEY-2026, ACCEVERLAW-2025, INTUIT-AT-2026, CPAPA-TECHSURVEY-2026, LITERA-LAWSITES-2026, BIGHAND-LF-2026, RAVICAL-ACCOUNTANT-2025, VSCPA-AI-2026.
+- **Conferences and events:** TRI-CMBDO-2026, TRI-LEGALWEEK-2026, TRI-AGENTIC-2026, TRI-COOCFO-AI-2025, TR-NAVIGATING-2026, KARBON-ENGAGE-2026, TRI-LEGALWEEK-CRISIS-2026* (TRI, 2026-03-19, https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-new-existential-crisis), TRI-AIFORUM-2026* (TRI, 2026-09-28, https://www.thomsonreuters.com/en/institute/articles/what-ai-cant-replace), TRI-CMBDO34-2027* (TRI agenda, event 2027-01-27 to 29, https://www.thomsonreuters.com/en/institute/events/the-34th-annual-chief-marketing-business-development-officer-forum/), MCA-EVENTS-2026* (MCA events listing, event 2026-11-06, https://www.mca.org.uk/mca-events).
+- **Firms and job postings:** AKIN-MONEYBALL-2026, PARKERPOE-LAWSITES-2026, DEBEVOISE-BLOOMBERG-2026, COOLEY-LAWCOM-2026, WOODARD-2025, BABSTCALLAND-TERMS-2025, LATHAM-INNOVATIONATTY-2026, LATHAM-ADAI-2026, BAKERMCKENZIE-CLIENTAIRISK-2026, WOLFGREENFIELD-2026.
+- **Vendors:** INTROHIVE- (SCHNEIDERDOWNS-2026, KSM-2026, LBMC-2024, GRASSI-2026, TSP-2026, FORRESTER-2024, HOME-2026, PRIVACY-2024, MCP-2026, PARTNER-2026, ACCTXSELL-2026, SAM-2025, LAINGOROURKE-2025); INTAPP- (HOWESPERCIVAL-2025, DEALCLOUD-2026, ACTIVATOR-2026, PRACTUS-2026, WOTTONKEARNEY-2026, FORVISMAZARS-2026, Q3CALL-2026); HARVEY-BD-2026, CERTINIA-VEDA-2026, LEGORA-LAUREL-2026, LEGORA-PORTAL-2026, BRIDGENEXT-AGENTFORCE-2026, CONVENTUS-2026, MCL-SITE-2026, KOJI-LEGAL-2026, HARVEY-REEDSMITH-2026* (Harvey customer story, 2026-05-11, https://www.harvey.ai/customers/reed-smith).
+- **Press, podcasts, community:** INTROHIVE-LAWSITES-2026, LAWSITES-CELESTE-2026, ABAJ-SHARE-2026, LEGALIT-RSGI-2026, BLOOMBERG-AICOST-2026, BLOOMBERGLAW-GCXAI-2026, BLOOMBERGLAW-OTTER-2026, TRI-INTERDEP-2026, AT-DECODE-2026, CUSTOMERTHINK-2026, EDINBURGHNEWS-SHOOSMITHS-2023, SJ-LISTENING-2024, SJ-LFMC-2026, LF-VALUEGAP-2026, LAWPUNX-2025, LPT-FEDER-2026, SOURCE-AI-2026, AL-INHOUSE-2026* (Artificial Lawyer, 2026-02-12, https://www.artificiallawyer.com/2026/02/12/we-get-nothing-from-law-firm-ai-use-client/), LAWSITES-ILTACON4-2026* (LawSites, 2026-09-04, https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html), SOURCE-PRECISION-2026* (Source Global Research, 2026-09-28, https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets), SOURCE-VALUE-2025* (Source podcast page, 2025-09-09, https://sourceglobalresearch.com/podcast/how-to-talk-to-your-clients-about-value).

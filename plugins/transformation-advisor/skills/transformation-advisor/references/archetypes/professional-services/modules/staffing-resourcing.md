@@ -50,8 +50,9 @@ Lenses: improve (assist or augment a step), automate (no person on the normal pa
 multi-step outcome with checkpoints), reinvent (`change_scope: model`, or a process that stops existing).
 **Coverage:** assist 7, augment 13, automate 1, delegate 0; step 10, process 8, model 3. **Delegate has no
 evidence:** every staffing agent read "proposes", "surfaces" or "recommends"; zeb's agent proposes and pre-books
-people, and no source describes an agent owning a staffing outcome end to end. **Automate has one entry**, an optimisation algorithm in a public agency (`#13`), and it did worse than
-managers. Reinvent rests on announcements, surveys and one podcast.
+people, and no source describes an agent owning a staffing outcome end to end. **Automate has one entry**, an
+optimisation algorithm in a public agency (`#13`), and it did worse than managers.
+Reinvent rests on announcements, surveys and one podcast.
 
 **Capture demand**
 - Improve, process scope: `#03` client emails, procurement portals and SOWs read into roles and suggested assignments
@@ -209,8 +210,8 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
   outcome-based pricing respondents expect it to own team composition, delivery risk and economics [KANTATA-RMI-2026].
   TSIA calls the future office a "hybrid workforce command center" [TSIA-RM-2026]. Womble Bond Dickinson recruited
   dedicated resource managers [BIGHAND-WBD-2026]; DLA Piper's case study says resourcing professionals become strategic
-  partners balancing wellbeing and workforce planning [BIGHAND-DLA-2026]. Reed Smith created a global director of Smart Resourcing
-  [REEDSMITH-SMARTRES-2023].
+  partners balancing wellbeing and workforce planning [BIGHAND-DLA-2026]. Reed Smith created a global director of
+  Smart Resourcing [REEDSMITH-SMARTRES-2023].
 - **Central staffing teams keep the call.** McKinsey's agents supplement, not replace, professional-development staff
   [BLOOMBERGLAW-MCKINSEY-2026].
 - **Ops leaders: from monthly reports to acting on alerts and forecasts** (vendor description) [PROJECTWORKS-2026].
@@ -244,9 +245,9 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
 
 ## 9. Common objections
 
-- **"A model can't know who works well with whom."** A vendor says no model captures client dynamics or fit [PROJECTWORKS-2026], and in
-  the Peru trial where removing managers lowered on-time completion [IPA-PERU-2026]. Answer: keep the person deciding;
-  use AI to widen the shortlist and show reasons (`#01`), or nudge schedules (`#14`).
+- **"A model can't know who works well with whom."** A vendor says no model captures client dynamics or personal
+  fit [PROJECTWORKS-2026]; in the Peru trial, removing managers lowered on-time completion [IPA-PERU-2026]. Answer:
+  keep the person deciding; use AI to widen the shortlist and show reasons (`#01`), or nudge schedules (`#14`).
 - **"Our skills data is rubbish."** Likely: 47% cite fragmented data [KANTATA-RMI-2026] and 45% of law firms have
   partial skills data [BIGHAND-DLAPR-2026]. Answer: firms with figures built the data layer first (`#12`); Basware
   automated billing first [KANTATA-BASWARE-2026].
