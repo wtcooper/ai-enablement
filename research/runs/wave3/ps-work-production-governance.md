@@ -910,7 +910,7 @@ This note covers what constrains and measures AI-assisted substantive work in pr
   human_checkpoints:
   - IT and risk approve the tool list
   - Supervisors review work for undeclared AI use
-  role_evolation: TR-FOP-2026 reports 32% of professionals who use fiduciary-grade AI would turn down a role that lacked it, against 12% of those without access.
+  role_evolution: TR-FOP-2026 reports 32% of professionals who use fiduciary-grade AI would turn down a role that lacked it, against 12% of those without access.
   evidence_grade: C
   sources:
   - ref: TR-FOP-2026
