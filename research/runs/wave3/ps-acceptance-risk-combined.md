@@ -4,7 +4,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
 
 ## 1. Summary
 
-**Public evidence for this module is thin and mostly vendor-published.** I opened 45 sources (3 more were seen only in search results). Nearly every named deployment comes from a vendor's own case study or press release, mainly Intapp. No independent measurement of AI in conflicts, KYC or acceptance exists in what I could reach. There is no error rate, override rate, false-positive rate from a named organisation, parallel run or inspection finding on AI used for acceptance.
+**Public evidence for this module is thin and mostly vendor-published.** I opened 47 sources (3 more were seen only in search results). Nearly every named deployment comes from a vendor's own case study or press release, mainly Intapp. No independent measurement of AI in conflicts, KYC or acceptance exists in what I could reach. There is no error rate, override rate, false-positive rate from a named organisation, parallel run or inspection finding on AI used for acceptance.
 
 - **Conflicts and intake are the most developed use.** Intapp made its agentic assistant Celeste generally available on 15 Jul 2026. It builds the search strategy, triages hits for expert review and drafts clearance summaries (INTAPP-CONFLICTS-2026; INTAPP-CELESTEGA-2026). BakerHostetler is named as an early adopter, but its CIO's quote is forward-looking ("believe ... can have a very positive impact"). The "10 times the matters" line is a conditional vendor statement, not a result.
 - **The measured gains are from workflow digitisation, not AI.** BDO Canada, Sandberg Phoenix and Loeb & Loeb report throughput or cycle-time gains after replacing manual acceptance workflows. Those case studies do not isolate any AI feature, so the grade is capped at B (INTAPP-BDOCA-2025; INTAPP-SANDBERG-2025; INTAPP-LOEB-2021).
@@ -14,7 +14,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
 - **Ethical walls now have to extend to AI tools.** ABA Opinion 512 and the California guidance both raise cross-matter exposure and ethical-wall bypass (ABA-OP512-2024; CALBAR-GENAI-2026). Intapp and Harvey announced in Feb 2026 a plan to enforce walls inside Harvey (INTAPP-HARVEY-2026).
 - **Independence-style checks have almost no AI deployment evidence.** The live discussion is the reverse: when does licensing an AI audit tool become an independence threat for the firm (CIBA-INDEP-2026; IESBA-SNAPSHOT-2026).
 
-**Use cases: 17** (A 0, B 5, C 8, D 4 after final count; see the YAML).
+**Use cases: 17** (A 0, B 6, C 8, D 3; see the YAML).
 
 ## 2. Use cases
 
@@ -74,8 +74,9 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - { ref: INTAPP-CELESTEGA-2026, title: "Intapp announces general availability of Celeste, the expert AI coworker for professional firms", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/general-availability-celeste/", date: 2026-07-15, access: full, locator: "paragraphs 3-7 and supporting quotes (Lowry, Jampol)" }
     - { ref: LAWSITES-CELESTE-2026, title: "Intapp makes Celeste generally available, calling it an AI coworker to run the business side of law firms", publisher: LawSites (LawNext), type: press, url: "https://www.lawnext.com/2026/07/intapp-makes-celeste-generally-available-calling-it-an-ai-coworker-to-run-the-business-side-of-law-firms.html", date: 2026-07-16, access: full, locator: "paragraphs on BakerHostetler and playbooks" }
     - { ref: INTAPP-CONFLICTS-2026, title: "AI-powered conflicts management (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/conflicts/", date: 2026-10-19, access: full, locator: "section 'Agentic conflicts clearance'" }
-    - { ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: Thomson Reuters Institute, type: community, url: "https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed", date: 2026-02-18, access: full, locator: "Premortem No. 1, paragraphs on the conflicts check" }
+    - { ref: TRI-PREMORTEM-2026, title: "Premortem: Your 2028 agentic AI pilot program failed", publisher: Thomson Reuters Institute, type: press, url: "https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed", date: 2026-02-18, access: full, locator: "Premortem No. 1, paragraphs on the conflicts check" }
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Executive Summary p. 2; Duty of Confidentiality pp. 5-6" }
+    - { ref: VIRTUALVOCATIONS-2026, title: "Conflicts Analyst (remote job posting)", publisher: Virtual Vocations, type: job-posting, url: "https://www.virtualvocations.com/job/conflicts-analyst-3264522-i.html", date: 2026-09-22, access: full, locator: "Job Summary and Required Qualifications" }
   last_reviewed: 2026-10-19
   notes: >-
     Celeste was previewed in Feb 2026 and made generally available 15 Jul 2026. The BakerHostetler quote is a belief about future impact, so maturity is "piloting", not "in-production". The Legal Technology article that reports conflicts and intake as the use case BakerHostetler took up first was seen in search results only (LEGALTECH-CELESTE-2026, search-only) and is not used for the grade. The product page is undated; the date is the access date.
@@ -171,7 +172,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - Partner and risk-team approvals along the configured path.
     - Conflicts reviewers resolve hits.
   role_evolution: >-
-    Loeb & Loeb says the workflow made a four-person data-entry team and a "human workflow engine" obsolete, and that engagement letters could no longer be skipped (INTAPP-LOEB-2021). Sandberg Phoenix set up a dedicated intake department (INTAPP-SANDBERG-2025).
+    Loeb & Loeb says the project made its "human workflow engine" obsolete (its earlier paper workflow needed a team of four on data entry) and that engagement letters could no longer be overlooked or delayed (INTAPP-LOEB-2021). Sandberg Phoenix says it needed a dedicated intake department and a more sophisticated system as it grew (INTAPP-SANDBERG-2025).
   evidence_grade: B
   sources:
     - { ref: INTAPP-BDOCA-2025, title: "How BDO Canada increased efficiency by 38% during client and engagement acceptance", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/bdo-canada-acceptance-intapp-intake/", date: 2025-08-14, access: full, locator: "Results and 'Enhanced efficiency and accuracy' sections" }
@@ -179,9 +180,10 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - { ref: INTAPP-LOEB-2021, title: "How Loeb & Loeb transformed new business onboarding with Intapp products", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/loeb-and-loeb/", date: 2021-08-16, access: full, locator: "'Business impact of automated intake'" }
     - { ref: INTAPP-BDOAU-2024, title: "How BDO Australia implemented an automated end-to-end conflicts clearance process", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/bdo-australia-implements-automated-conflicts-clearance-process-intapp-conflicts/", date: 2024-01-18, access: full, locator: "'Modernizing a manual clearance process'; 'Reaping the rewards'" }
     - { ref: INTAPP-INTAKE-2026, title: "AI-driven client onboarding for regulated professional firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/intake/", date: 2026-10-19, access: full, locator: "section 'Onboarding workflow orchestration'" }
+    - { ref: INTAPP-PRACTUS-2026, title: "Practus LLP deploys Intapp's agentic AI solutions to power innovation and growth", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/practus-auxana-intapp/", date: 2026-09-01, access: full, locator: "paragraph 'Delivering elevated legal services'" }
   last_reviewed: 2026-10-19
   notes: >-
-    Grade capped at B: the measurements are from non-AI workflow platforms in an adjacent form of the same process, and are vendor-published. BDO Australia implemented its system in 2017; the case study was published in 2024. The Loeb & Loeb study is from 2021, outside the 12-18 month window, kept as the clearest before-and-after account. Intapp claims its Conflicts and Intake products are used by more than 10 of the top 25 accounting firms (vendor claim, product pages).
+    Practus LLP and Auxana have used Intapp Conflicts and Walls for two years and have now added Intake (vendor announcement, 1 Sep 2026; no figures). Grade capped at B: the measurements are from non-AI workflow platforms in an adjacent form of the same process, and are vendor-published. BDO Australia implemented its system in 2017; the case study was published in 2024. The Loeb & Loeb study is from 2021, outside the 12-18 month window, kept as the clearest before-and-after account. Intapp claims its Conflicts and Intake products are used by more than 10 of the top 25 accounting firms (vendor claim, product pages).
 
 - id: professional-services-acceptance-risk-04
   title: Continuous monitoring and re-screening of client relationships after acceptance
@@ -424,7 +426,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
       source_ref: LAYER3-OCG-2026
   prerequisites:
     - Use case 08 (guidelines captured as structured terms).
-    - An inventory of the AI tools in use, since a TRI/ACCA-style audit often finds use that does not match the authorised list (ACCA-ENGLETTERS-2026).
+    - An inventory of the AI tools actually in use; ACCA notes that real use may not match the list of products a firm believes it has authorised (ACCA-ENGLETTERS-2026).
   risks_and_guardrails:
     - California's guidance says a lawyer must follow client instructions or guidelines that restrict AI use (CALBAR-GENAI-2026, Communication row, p. 7).
     - ABA Opinion 512 says lawyers must disclose AI use if the engagement terms or OCGs require it, and that boilerplate engagement-letter wording is not enough for informed consent to input client information into a self-learning tool (ABA-OP512-2024).
@@ -441,6 +443,8 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Contractual risks' and 'Operational and process risks'" }
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: State Bar of California, COPRAC, type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Communication Regarding Generative AI Use, p. 7" }
     - { ref: INTAPP-OPENAI-2026, title: "Intapp collaborates with OpenAI to bring frontier AI to the business of law", publisher: Intapp, type: vendor, url: "https://www.intapp.com/news/intapp-celeste-for-openai-for-law/", date: 2026-09-17, access: full, locator: "section 'Entitled access, wherever lawyers work'" }
+    - { ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: ILTA, type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "Q3.18, p. 5" }
+    - { ref: TRI-LEGALWEEK-2026, title: "Couples counseling at Legalweek 2026: firms and clients confront the AI value divide", publisher: Thomson Reuters Institute, type: conference, url: "https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide", date: 2026-03-13, access: full, locator: "paragraphs on line-item transparency and client guidelines" }
   last_reviewed: 2026-10-19
   notes: >-
     Idea, graded D. The Sandpiper entry is an event description (the roundtable was held 8 Oct 2026), so it supports the discussion, not any outcome. The Layer3 guide is vendor content: its claim that the Association of Corporate Counsel publishes sample AI guidelines for outside counsel was not checked at the source (ACC document seen in search only, access blocked). Layer3 date is the page's "updated Sep 7, 2026" line; the page's structured date is 2026-07-07.
@@ -559,7 +563,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - Client and entity data in the firm's systems; a defined independence rule set.
   risks_and_guardrails:
     - IESBA (June 2026) says the Code's principles apply regardless of technology, that accountants must assess fitness for purpose and bias of technology outputs, and names automation bias as a threat to objectivity (IESBA-SNAPSHOT-2026).
-    - PCAOB's QC 1000 (a firm quality-control standard) took effect on 15 Dec 2026 after a one-year postponement in Aug 2025; the interim standards stay in force until then (PCAOB-QC1000-2025). I did not read QC 1000's text on acceptance and continuance.
+    - PCAOB's QC 1000 (a firm quality-control standard) is scheduled to take effect on 15 Dec 2026 after a one-year postponement announced in Aug 2025; the interim standards stay in force until then (PCAOB-QC1000-2025). I did not read QC 1000's text on acceptance and continuance.
   human_checkpoints:
     - Reviewers sign off in routed workflow (KINGLAND-CEA-2026).
   role_evolution: "No source."
@@ -571,7 +575,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
     - { ref: PCAOB-QC1000-2025, title: "PCAOB postpones effective date of QC 1000 and related standards, rules, and forms", publisher: PCAOB, type: regulator, url: "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-postpones-effective-date-of-qc-1000-and-related-standards--rules--and-forms", date: "2025-08", access: full, locator: "paragraphs 1 and 'Standards, Rules, and Forms Affected'" }
   last_reviewed: 2026-10-19
   notes: >-
-    The PCAOB release was published in Aug 2025 (28 Aug per trade coverage; the day was not confirmed from the release text). The statement that QC 1000 "took effect on 15 Dec 2026" is future from today's date (19 Oct 2026): the release gives 15 Dec 2026 as the effective date, so it is scheduled, not in force. Kingland page is undated (access date).
+    The PCAOB release was published in Aug 2025 (28 Aug per trade coverage; the day was not confirmed from the release text). As of 19 Oct 2026, QC 1000 is scheduled, not yet in force. Kingland page is undated (access date).
 
 - id: professional-services-acceptance-risk-13
   title: Independence and objectivity assessment of AI tools and AI vendors used on client work
@@ -608,7 +612,7 @@ Prepared 2026-10-19. Archetype: professional-services. Module: acceptance-risk (
   role_evolution: "No source."
   evidence_grade: D
   sources:
-    - { ref: CIBA-INDEP-2026, title: "AI Audit Tools and the Independence Gap Nobody Fixed", publisher: Accounting Weekly (author: CIBA quality-assurance manager), type: professional-body, url: "https://www.accountingweekly.com/trending-news/ai-audit-tools-and-the-independence-gap-nobody-fixed", date: 2026-09-01, access: full, locator: "sections 'Can licensing an AI tool become an independence issue?' and 'What to do about it'" }
+    - { ref: CIBA-INDEP-2026, title: "AI Audit Tools and the Independence Gap Nobody Fixed", publisher: "Accounting Weekly (author: CIBA quality-assurance manager)", type: professional-body, url: "https://www.accountingweekly.com/trending-news/ai-audit-tools-and-the-independence-gap-nobody-fixed", date: 2026-09-01, access: full, locator: "sections 'Can licensing an AI tool become an independence issue?' and 'What to do about it'" }
     - { ref: IESBA-SNAPSHOT-2026, title: "IESBA Snapshot: Ethics and Independence Approach to the Use of Technology", publisher: IESBA, type: standard-setter, url: "https://www.ethicsboard.org/news-events/2026-06/iesba-snapshot-ethics-and-independence-approach-use-technology", date: "2026-06", access: full, locator: "Q4, Q6, Q7" }
   last_reviewed: 2026-10-19
   notes: >-
@@ -833,7 +837,7 @@ All of these are workflow or regulator figures. None measures AI quality in this
 - Reviewer role shifts from doing the search to confirming AI categorisations (Fredrikson & Byron's risk counsel, INTAPP-FREDRIKSON-2024).
 - Firms with growth through lateral hiring expect the conflicts and intake teams to cope with volume (BakerHostetler, INTAPP-CELESTEGA-2026).
 - Public hiring signals show no AI duty yet: one conflicts-analyst posting (Sept 2026) asks for Intapp, iManage and Aderant experience and three years of law-firm conflicts work (VIRTUALVOCATIONS-2026). Three other 2026 postings (Bond Schoeneck & King, Alston & Bird, DLA Piper) were described in search results only and could not be opened; a search summary says none mentions AI.
-- Insurers are starting to engage: Swiss Re Corporate Solutions and Wickard announced AI risk education for law firms (27 Aug 2026), covering supervision, confidentiality and internal AI approval processes (SWISSRE-WICKARD-2026).
+- Professional-liability risk management is a stated concern: Swiss Re Corporate Solutions and Wickard announced AI risk education for law firms (27 Aug 2026), covering supervision, confidentiality and internal AI approval processes (SWISSRE-WICKARD-2026).
 
 ### Objections and concerns practitioners raise
 
@@ -880,7 +884,7 @@ Format: ref | title | publisher | type | URL | date | access. All were opened ("
 | ILTA-TECHSURVEY-2026 | ILTA Technology Survey 2026 Executive Summary | ILTA | survey | https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf | 2026-06 | full |
 | ACC-EVERLAW-2025 | ACC/Everlaw GenAI Strategic Value for Corporate Law Departments (press release) | Everlaw and ACC | survey | https://blog.everlaw.com/press/release/acc-report-2025 | 2025-10-14 | full |
 | TRI-LEGALWEEK-2026 | Couples counseling at Legalweek 2026: firms and clients confront the AI value divide | Thomson Reuters Institute | conference | https://www.thomsonreuters.com/en/institute/articles/legalweek-2026-firm-client-divide | 2026-03-13 | full |
-| TRI-PREMORTEM-2026 | Premortem: Your 2028 agentic AI pilot program failed | Thomson Reuters Institute | community | https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed | 2026-02-18 | full |
+| TRI-PREMORTEM-2026 | Premortem: Your 2028 agentic AI pilot program failed | Thomson Reuters Institute | press | https://www.thomsonreuters.com/en/insights/articles/premortem-your-2028-agentic-ai-pilot-program-failed | 2026-02-18 | full |
 | JENNER-SANDPIPER-2026 | Partner John Storino to speak at Sandpiper Partners' AI and Outside Counsel Guidelines Roundtable | Jenner & Block | conference | https://www.jenner.com/print/v2/content/103115/partner-john-storino-to-speak-at-sandpiper-partners-ai-and-outside-counsel-guidelines-roundtable.pdf | 2026-10-08 | full |
 | SWISSRE-WICKARD-2026 | Swiss Re Corporate Solutions and Wickard announce offering focused on AI risk management and education for law firms | National Law Review (press release) | press | https://natlawreview.com/press-releases/swiss-re-corporate-solutions-and-wickard-announce-offering-focused-ai-risk | 2026-08-27 | full |
 | MORGANLEWIS-WEBINAR-2025 | When Your Law Firms Use GenAI: In-House Counsel's Survival Guide to Avoid Scary Surprises (webinar listing) | Morgan Lewis | firm | https://www.morganlewis.com/events/2025/10/when-your-law-firms-use-genai-in-house-counsels-survival-guide-to-avoid-scary-surprises | 2025-10-30 | full (listing only; no session content) |
@@ -905,7 +909,7 @@ Format: ref | title | publisher | type | URL | date | access. All were opened ("
 | INTAPP-HARVEY-2026 | Intapp to partner with Harvey bringing ethical wall enforcement directly into the platform | Intapp | vendor | https://www.intapp.com/news/intapp-harvey-partner/ | 2026-02-23 | full |
 | INTAPP-GLP-2026 | Global Legal Post: Intapp strikes deals with Anthropic and Harvey (excerpt on Intapp site) | Intapp | press | https://www.intapp.com/news/global-legal-post-intapp-anthropic-harvey/ | 2026-03-02 | full (excerpt only) |
 | INTAPP-OPENAI-2026 | Intapp collaborates with OpenAI to bring frontier AI to the business of law | Intapp | vendor | https://www.intapp.com/news/intapp-celeste-for-openai-for-law/ | 2026-09-17 | full |
-| INTAPP-PRACTUS-2026 | Practus LLP deploys Intapp's agentic AI solutions | Intapp | vendor | https://www.intapp.com/news/practus-auxana-intapp/ | 2026-09-01 | full (Conflicts used two years; Intake added; Celeste planned for DealCloud; not used as evidence of AI in acceptance) |
+| INTAPP-PRACTUS-2026 | Practus LLP deploys Intapp's agentic AI solutions | Intapp | vendor | https://www.intapp.com/news/practus-auxana-intapp/ | 2026-09-01 | full (Conflicts used two years; Intake added; no figures) |
 | INTAPP-Q4-2026 | Intapp announces fourth quarter and fiscal year 2026 financial results | Intapp | vendor | https://s206.q4cdn.com/284424942/files/doc_earnings/2026/q4/earnings-result/Q4-26-Press-Release.pdf | 2026-08-04 | full |
 | FENERGO-GT-2026 | Grant Thornton UK selects Fenergo to streamline client onboarding and drive efficiency | Fenergo | vendor | https://resources.fenergo.com/newsroom/grant-thornton-uk-selects-fenergo-to-streamline-client-onboarding-and-drive-efficiency | 2026-03-03 | full |
 | XAPIEN-PINSENT-2026 | Pinsent Masons case study | Xapien | vendor | https://xapien.com/case-studies/pinsent-masons/ | 2026-10-19 | full (via text mirror; page undated) |
