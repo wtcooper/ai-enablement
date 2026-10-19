@@ -1417,7 +1417,7 @@ Use-case ids follow `professional-services-talent-learning-NN`. Source dates use
 - Entry-level roles move toward review, validation, anomaly spotting and client contact (ICAEW-JUNIOR-2026; PWC-AIJB-2026).
 - Juniors are asked to supervise AI output earlier than before, which trainees themselves flag as a risk (ICAEW-WORRY-2026).
 - New roles: practice-group AI champions, chief legal talent and growth officer, associate innovation seats (TRI-ONBOARDING-2026; NONBILLABLE-AOS-2026).
-- Leverage: associates and non-equity partners carry most extra workload; non-equity-to-equity output ratio highest since late 2018 (TRI-LFFI-Q2-2026).
+- Leverage: associates and non-equity partners carry most extra workload; the ratio of non-equity to equity partner hours is the highest since late 2018 (TRI-LFFI-Q2-2026).
 - Pay premium: AI-related roles in professional services advertise a 67% wage premium over non-AI roles in the sector (PWC-AIJB-PS-2026).
 - Mid-career professionals are the most mobile and operationally critical (TR-FOP-2026).
 - In-house: the TR survey covers corporate and government departments; legal ops is described as becoming a design function for how work is structured (TR-FOP-2026, respondent quote) (in-house).
