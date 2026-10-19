@@ -12,6 +12,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from xml.sax.saxutils import escape
 
 SCR = pathlib.Path(sys.argv[1]); OUT = sys.argv[2]
+SPEC_DIR = SCR / "specialties"   # <field>.json: {"specialties": [...], "assign": {id: name}}
 ARCH = pathlib.Path("/home/user/ai-enablement/plugins/transformation-advisor/skills/transformation-advisor/references/archetypes")
 DATE = "October 2026"
 
@@ -167,7 +168,14 @@ CATS = [
     ("Governing, testing and controlling AI", "Policies, tool approval, testing and oversight that make AI use defensible.", {"other"}, "gov"),
     ("New services, pricing and operating models", "What firms sell, how they price it and who does the work.", {"other"}, "model"),
 ]
+SPEC, ASSIGN = {}, {}
+for a, _, _ in ARCHETYPES:
+    f = SPEC_DIR / f"{a}.json"
+    if f.exists():
+        d = json.loads(f.read_text())
+        SPEC[a] = d["specialties"]; ASSIGN.update(d["assign"])
 def incat(u, pats, sc):
+    if u["id"] in ASSIGN: return False   # counted in its field's specialty instead
     x = meta[u["id"]]
     if x["pattern"] not in pats: return False
     if sc == "model": return x["change_scope"] == "model"
@@ -192,7 +200,10 @@ for name, what, pats, sc in CATS:
     n = sum(len(v) for v in counts.values())
     ex = []
     for (a, label, _), uid in zip(ARCHETYPES, PICKS[name]):
-        u = byid[uid]; assert incat(u, pats, sc) or True
+        u = byid[uid]
+        if not incat(u, pats, sc):
+            pool = [v for b, v in allu if b == a and incat(v, pats, sc)]
+            u = sorted(pool, key=lambda v: (v.get("title", "").startswith("Idea"), order.get(v.get("grade"), 9), len(v.get("title", ""))))[0]
         ex.append(f"<font color='#57606a'>{label}:</font> {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
     crow.append([P(f"<b>{e(name)}</b><br/><font size='7.6' color='#57606a'>{e(what)}</font>", ss["cell"]),
                  P(f"<b>{n}</b><br/><font size='7.3' color='#57606a'>" + " · ".join(f"{l[0]}{len(counts[a])}" for a, l, _ in ARCHETYPES) + "</font>", ss["cell"]),
@@ -265,9 +276,8 @@ for a, label, _ in ARCHETYPES:
         ab = sum(1 for u in us if u.get("grade") in "AB")
         top = collections.Counter(modname[u["id"]] for u in us).most_common(3)
         picks = PACK_PICKS.get((a, name))
-        if picks:
+        if picks and all(incat(byid[i], pats, sc) for i in picks):
             chosen = [byid[i] for i in picks]
-            assert all(incat(u, pats, sc) for u in chosen), (a, name, picks)
         else:
             cand = sorted(us, key=lambda u: (u.get("title", "").startswith("Idea"), order.get(u.get("grade"), 9), len(u.get("title", ""))))
             chosen, seen = [], set()
@@ -291,7 +301,27 @@ for a, label, _ in ARCHETYPES:
     story += [heading(f"Categories in {label.lower()}", ss["h1"], 1, f"cats-{a}", "Executive summary"),
               P(f"{tot[a]} use cases across {len(modules(a))} focus areas. The largest categories are {e(big)}. "
                 "Where it shows up lists the focus areas with the most use cases in that category; (A)-(D) = evidence grade.", ss["muted"]),
-              Spacer(1, 5), pt, PageBreak()]
+              Spacer(1, 5), pt]
+    if SPEC.get(a):
+        srows = [[P("<b>Specialty category</b>", ss["cellb"]), P("<b>Use cases</b>", ss["cellb"]), P("<b>Examples</b>", ss["cellb"])]]
+        nspec = 0
+        for sp in SPEC[a]:
+            us = [u for b, u in allu if b == a and ASSIGN.get(u["id"]) == sp["name"]]
+            nspec += len(us)
+            ab = sum(1 for u in us if u.get("grade") in "AB")
+            chosen = [byid[i] for i in sp.get("examples", []) if i in byid][:2]
+            srows.append([P(f"<b>{e(sp['name'])}</b><br/><font size='7.6' color='#57606a'>{e(sp['description'])}</font>", ss["cell"]),
+                          P(f"<b>{len(us)}</b> <font size='7.3' color='#57606a'>({pct(len(us), tot[a])}%)<br/>{ab} A/B</font>", ss["cell"]),
+                          P("<br/>".join(f"• {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>" for u in chosen), exs)])
+        st = Table(srows, colWidths=[2.6 * inch, 0.85 * inch, 3.55 * inch], repeatRows=1)
+        st.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, 0), 0.8, colors.HexColor("#8250df")),
+                                ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE), ("TOPPADDING", (0, 0), (-1, -1), 3),
+                                ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5), ("BACKGROUND", (0, 1), (-1, -1), colors.HexColor("#faf7ff"))]))
+        story += [CondPageBreak(2.4 * inch), Spacer(1, 10),
+                  heading(f"Specialty categories in {label.lower()}", ss["h2"], 2, f"spec-{a}", "Executive summary"),
+                  P(f"Themes specific to {label.lower()}: {nspec} of its {tot[a]} use cases ({pct(nspec, tot[a])}%). Each use case is counted once, "
+                    "either here or in a shared category above.", ss["muted"]), Spacer(1, 4), st]
+    story.append(PageBreak())
 
 for a, label, blurb in ARCHETYPES:
     story += [heading(label, ss["h1"], 0, a, label), P(e(blurb), ss["sub"]), Spacer(1, 12)]
