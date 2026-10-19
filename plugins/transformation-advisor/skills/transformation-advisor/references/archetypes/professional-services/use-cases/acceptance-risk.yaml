@@ -390,21 +390,21 @@
     02, 03 and 13 sit. The case studies below do not isolate any AI feature.
   outcomes:
     - lever: capacity
-      description: "BDO Canada reports more than 5,000 acceptances a month on average since go-live in January 2025, a 38% improvement on what the same resources could process before."
+      description: "Intapp's case study says BDO Canada has processed more than 5,000 acceptances a month on average since go-live in January 2025, a 38% improvement on what the same resources could process before. No BDO Canada person is quoted on the figure."
       figure: "38%; more than 5,000 acceptances per month"
       measures: "average acceptances processed per month since go-live in January 2025, compared with what the firm could process before the system with the same resources (source wording)"
       provenance: vendor-published
       source_ref: INTAPP-BDOCA-2025
     - lever: capacity
-      description: "Sandberg Phoenix says it can open three times as many matters, with significantly fewer errors."
+      description: "Intapp's case study says Sandberg Phoenix is now opening three times as many matters, with significantly fewer errors."
       figure: "3x (three times more matters)"
       measures: "number of matters the firm opens, compared with its volume before Intapp Conflicts and Intake (source wording; no error figure given)"
       provenance: vendor-published
       source_ref: INTAPP-SANDBERG-2025
     - lever: speed
-      description: "Loeb & Loeb says new business that took weeks (never less than a few days) is usually complete in a few hours. Its conflicts team went from about 200 requests a month to sometimes 800."
+      description: "Loeb & Loeb's Systems Integration Manager says new business that took weeks (always at least a few days) is usually complete in a few hours. The case study says the conflicts team went from about 200 requests a month to sometimes 800."
       figure: "weeks or days to hours; about 200 to sometimes 800 requests per month"
-      measures: "time to complete new business intake, as stated by the firm's Systems Integration Manager; requests processed per month by the conflicts team. The case study says firm growth accounts for some of the increase."
+      measures: "time to complete new business intake, as stated by the firm's Systems Integration Manager; requests processed per month by the conflicts team (case-study narrative). The case study says firm growth accounts for some of the increase."
       provenance: vendor-published
       source_ref: INTAPP-LOEB-2021
   prerequisites:
@@ -418,10 +418,10 @@
     - Partner and risk-team approvals along the configured path.
     - Conflicts reviewers resolve hits.
   role_evolution: >-
-    Loeb & Loeb says the project made its "human workflow engine" obsolete (its earlier paper workflow needed a team of
-    four on data entry) and that engagement letters could no longer be overlooked or delayed (INTAPP-LOEB-2021).
-    Sandberg Phoenix says it needed a dedicated intake department and a more sophisticated system as it grew
-    (INTAPP-SANDBERG-2025).
+    Intapp's Loeb & Loeb case study says the project made the firm's "human workflow engine" (a phrase from its Systems
+    Integration Manager) obsolete, where the earlier paper workflow needed a team of four on data entry, and that
+    engagement letters could no longer be overlooked or delayed (INTAPP-LOEB-2021). The Sandberg Phoenix case study says
+    the firm needed a dedicated intake department and a more sophisticated system as it grew (INTAPP-SANDBERG-2025).
   evidence_grade: B
   sources:
     - { ref: INTAPP-BDOCA-2025, title: "How BDO Canada increased efficiency by 38% during client and engagement acceptance", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/bdo-canada-acceptance-intapp-intake/", date: 2025-08-14, access: full, locator: "Results and 'Enhanced efficiency and accuracy' sections" }
@@ -469,11 +469,11 @@
     - Approved clause library, including AI disclosure and consent wording the firm is willing to offer.
   risks_and_guardrails:
     - ABA Opinion 512 says boilerplate engagement-letter wording does not suffice for informed consent to put client information into a self-learning AI tool (ABA-OP512-2024, p. 7).
-    - ACCA (UK) - disclosure that AI is used belongs in the engagement letter, and where AI is fundamental to the work the client should be told beforehand (ACCA-ENGLETTERS-2026).
-    - Oregon's 2026 opinion says autonomous actions such as sending an engagement letter should be subject to lawyer approval (OSB-FO-2026-208, section III.D).
+    - An ACCA In Practice article (Sept 2026) reports that the January 2026 update to PCRT (the UK tax bodies' Professional Conduct in Relation to Taxation) suggests disclosing AI use in the engagement letter and, where AI is fundamental to the work, informing the client before the work is done (ACCA-ENGLETTERS-2026).
+    - Oregon's 2026 opinion warns that an agent might send an engagement letter to a prospect without consulting the lawyer, which the prospect could read as forming a lawyer-client relationship, and says it would be prudent to subject a chatbot's autonomous actions to lawyer approval (OSB-FO-2026-208, Discussion and section III.D).
   human_checkpoints:
     - Review and signature routing (INTAPP-ONBOARDAI-2026).
-    - Lawyer approval before a letter is sent (OSB-FO-2026-208).
+    - Lawyer approval of an agent's autonomous actions, such as sending a letter (OSB-FO-2026-208, described as prudent).
   role_evolution: "No source."
   evidence_grade: C
   sources:
@@ -481,8 +481,8 @@
     - { ref: INTAPP-INTAKE-2026, title: "Business acceptance and continuance solution for accounting firms (product page)", publisher: Intapp, type: vendor, url: "https://www.intapp.com/accounting/client-onboarding-continuance/", date: 2026-07-29, access: full, locator: "'Engagement letter generation'" }
     - { ref: INTAPP-LOEB-2021, title: "How Loeb & Loeb transformed new business onboarding with Intapp products", publisher: Intapp, type: vendor, url: "https://www.intapp.com/case-study/loeb-and-loeb/", date: 2021-08-16, access: full, locator: "'Business impact of automated intake'" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "p. 7" }
-    - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Contractual risks'" }
-    - { ref: OSB-FO-2026-208, title: "Formal Opinion No 2026-208: Chatbots and AI Agent Communications", publisher: Oregon State Bar, type: professional-body, url: "https://www.osbar.org/_docs/ethics/2026-208.pdf", date: "2026-02", access: full, locator: "section III.D" }
+    - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Ethical risks' (PCRT disclosure point)" }
+    - { ref: OSB-FO-2026-208, title: "Formal Opinion No 2026-208: Chatbots and AI Agent Communications", publisher: Oregon State Bar, type: professional-body, url: "https://www.osbar.org/_docs/ethics/2026-208.pdf", date: "2026-02", access: full, locator: "Discussion (engagement-letter example) and section III.D" }
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law and accounting firms (vendor-described). I did not find 2026 announcements from accounting
@@ -534,7 +534,8 @@
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: US law firms (Fredrikson & Byron, Dickinson Wright). The case study is Dec 2024, older than the 12-18
-    month window, but it is the only named account of AI in client-terms handling. Product page is undated (access date).
+    month window, but it is the only named account of AI in client-terms handling. The product page shows no visible
+    date; its JSON-LD dateModified (2026-08-18) is used.
     Billing guidelines surfaced at time entry belong to firm-finance (billing). Flagging client guideline and RFP terms
     against the firm's standard terms during a bid is an idea held in pursuit-proposals. Combined dive use case 08.
 
@@ -555,8 +556,9 @@
     for warranties that models are unbiased; Starbucks is reported to strictly restrict vendor and outside-counsel AI
     use. Firms must follow these rules, and permitted tools differ by client.
   solution: >-
-    Idea discussed by practitioners: capture each client's AI terms as structured obligations at intake, check each AI tool
-    against the client's list before work starts, and keep a record of which tool touched which matter. Intapp announced a
+    Idea, drawn from a vendor compliance guide (Layer3 Labs): capture each client's AI terms as structured obligations at
+    intake, check each AI tool against the client's list before work starts, and keep a record of which tool touched which
+    matter (LAYER3-OCG-2026). Intapp announced a
     Celeste plug-in for ChatGPT Enterprise that lets professionals check captured work against the firm's outside counsel
     guidelines.
   outcomes:
@@ -568,14 +570,14 @@
       source_ref: LAYER3-OCG-2026
   prerequisites:
     - Client guidelines captured as structured terms (professional-services-acceptance-risk-10).
-    - An inventory of the AI tools actually in use; ACCA notes that real use may not match the list of products a firm believes it has authorised (ACCA-ENGLETTERS-2026).
+    - An inventory of the AI tools actually in use; an ACCA In Practice article notes that real use may not match the list of products a firm believes it has authorised (ACCA-ENGLETTERS-2026).
   risks_and_guardrails:
     - California's guidance says a lawyer must follow client instructions or guidelines that restrict AI use (CALBAR-GENAI-2026, Communication row, p. 7).
     - ABA Opinion 512 says lawyers must disclose AI use if the engagement terms or OCGs require it, and that boilerplate engagement-letter wording is not enough for informed consent to input client information into a self-learning tool (ABA-OP512-2024).
-    - ACCA says inserting an AI clause will not make an unsafe process safe; policies, training and what happens on the file must support it (ACCA-ENGLETTERS-2026).
+    - An ACCA In Practice article says inserting an AI clause will not make an unsafe process safe; policies, training and what happens on the file must support it (ACCA-ENGLETTERS-2026).
     - At Legalweek 2026 a DLA Piper AI innovation leader said some clients still send directives that bar AI without permission or demand warranties that models are unbiased (TRI-LEGALWEEK-2026).
   human_checkpoints:
-    - Partner or risk counsel agrees any client restriction and how compliance will be monitored (ACCA-ENGLETTERS-2026).
+    - The firm agrees any client AI restriction clearly with the client and decides how internal compliance will be monitored (ACCA-ENGLETTERS-2026); who signs off is not specified in the sources.
   role_evolution: >-
     A Sandpiper Partners roundtable listed the role of firm general counsel in managing compliance with AI-related
     guidelines as a session topic (JENNER-SANDPIPER-2026). On the client side, GSK's chief of staff described asking
@@ -583,7 +585,7 @@
   evidence_grade: D
   sources:
     - { ref: JENNER-SANDPIPER-2026, title: "Partner John Storino to speak at Sandpiper Partners' AI and Outside Counsel Guidelines Roundtable", publisher: Jenner & Block, type: conference, url: "https://www.jenner.com/print/v2/content/103115/partner-john-storino-to-speak-at-sandpiper-partners-ai-and-outside-counsel-guidelines-roundtable.pdf", date: 2026-10-08, access: full, locator: "paragraph 2" }
-    - { ref: LAYER3-OCG-2026, title: "AI Provisions in Outside Counsel Guidelines: A Compliance Guide for Law Firms", publisher: Layer3 Labs, type: vendor, url: "https://www.layer3labs.io/guides/ai-provisions-outside-counsel-guidelines", date: "2026-09", access: full, locator: "intro and Clauses 1-5" }
+    - { ref: LAYER3-OCG-2026, title: "AI Provisions in Outside Counsel Guidelines: A Compliance Guide for Law Firms", publisher: Layer3 Labs, type: vendor, url: "https://www.layer3labs.io/guides/ai-provisions-outside-counsel-guidelines", date: 2026-09-07, access: full, locator: "intro and Clauses 1-5" }
     - { ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: American Bar Association, type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: 2024-07-29, access: full, locator: "pp. 7-8" }
     - { ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: ACCA, type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "'Contractual risks' and 'Operational and process risks'" }
     - { ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative AI in the Practice of Law", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "Communication Regarding Generative AI Use, p. 7" }
@@ -600,8 +602,8 @@
     summary of a Casepoint-sponsored report that was not opened. A Litera post relays an Association of Corporate Counsel
     finding that 59% of in-house counsel do not know whether outside counsel use generative AI on their matters
     (secondhand, original not checked, page date not confirmed); it also urges general counsel to add AI-disclosure
-    questions to RFPs. The Sandpiper item is an event description (held 8 Oct 2026). The Layer3 guide is vendor content;
-    its claim that the ACC publishes sample AI guidelines was not checked. Overlaps professional-services-work-production-25
+    questions to RFPs. The Sandpiper item is an event description (held 8 Oct 2026). The Layer3 guide is vendor content
+    (published 2026-07-07, updated 2026-09-07); its claim that the ACC publishes sample AI guidelines was not checked. Overlaps professional-services-work-production-25
     (record AI use per matter and apply client AI terms; graded B there), quality-review (in-house supplier AI rules) and
     security-ai-security-21 (AI inventory, including shadow AI). Combined dive use case 09 plus routed items from
     quality-review and pursuit-proposals.
