@@ -88,12 +88,12 @@ named customer (C). **Delegate:** only `#15` (C), with no firm running pursuit e
   idea: a register of AI used in each bid for buyer disclosure questions (D). `#12` firm-approved assistants instead of
   personal chatbots, e.g. Ballard Spahr's "Ask Ellis" for awards and survey submissions (B).
 
-**Pitch, learning, buyer side**
-- Improve: `#08` client-needs and competitor brief; Baker Botts cut 24 hours of research by "more
-than half" (recollection, B). Improve (process): `#16` win/loss analytics linking AI use to outcomes (C). Delegate:
-`#15` agents directed across qualification, drafting and review (SMPS trend, Intapp Celeste claim; C).
+**Pitch, learning and buyer side**
+- Improve: `#08` client-needs and competitor brief; Baker Botts cut 24 hours of research by "more than half" (B).
+- Improve (process): `#16` win/loss analytics linking AI use to outcomes (C). Delegate: `#15` agents directed across
+  qualification, drafting and review (SMPS trend, Intapp Celeste claim; C).
 - Buyer side (in-house), improve (process): `#20` RFP scoping and proposal comparison (Priori Scout announced;
-independent Ohio study of AI scoring of supplier bids; C).
+  independent Ohio study of AI scoring of supplier bids; C).
 
 **Held elsewhere (do not duplicate):** professional-services-client-development-05, -06, -07 (relationship intelligence,
 briefs, BD assistants), -10 (Celeste playbooks), -12 (AI claims in marketing), -14 to -16 (value conversations, matter
