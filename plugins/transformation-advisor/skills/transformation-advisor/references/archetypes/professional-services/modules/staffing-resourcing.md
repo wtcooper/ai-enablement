@@ -1,12 +1,14 @@
 # Staffing and resourcing (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/staffing-resourcing.yaml` (21 entries: A 0, B 6, C 12,
-D 3). Ids are shortened here: `#05` means `professional-services-staffing-resourcing-05`; other modules' and
+Sources checked 2026-10-19 and verified the same day. Use cases live in `../use-cases/staffing-resourcing.yaml`
+(21 entries: A 0, B 5, C 13, D 3; only 24% are A or B). Ids are shortened here: `#05` means `professional-services-staffing-resourcing-05`; other modules' and
 archetypes' ids are in full. Source keys in brackets are in the YAML or in §10. **Read this first:** no named firm
 publishes a measured result for AI in staffing. Named AI deployments are a handful of consulting and implementation
 firms on PSA platforms (professional services automation: the system holding projects, people, time and billing).
 The best-measured law-firm examples use a resourcing platform not described as AI. The only randomised test of
-automated work allocation is in a public agency, and it favoured the managers. Say so when you quote a figure.
+algorithmic assignment of expert work found here is in a public agency, and it favoured the managers; its authors cite
+an earlier field experiment in another setting where algorithmic assignment raised productivity. Say so when you quote
+a figure.
 
 ## Contents
 
@@ -51,7 +53,7 @@ multi-step outcome with checkpoints), reinvent (`change_scope: model`, or a proc
 **Coverage:** assist 7, augment 13, automate 1, delegate 0; step 10, process 8, model 3. **Delegate has no
 evidence:** every staffing agent read "proposes", "surfaces" or "recommends"; zeb's agent proposes and pre-books
 people, and no source describes an agent owning a staffing outcome end to end. **Automate has one entry**, an
-optimisation algorithm in a public agency (`#13`), and it did worse than managers.
+optimisation algorithm in a public agency (`#13`), and it did worse than managers there.
 Reinvent rests on announcements, surveys and one podcast.
 
 **Capture demand**
@@ -62,7 +64,8 @@ Reinvent rests on announcements, surveys and one podcast.
 **Forecast**
 - Improve, process scope: `#04` rolling demand and capacity forecast from pipeline with what-if scenarios. Kantata
   customer Hakkoda went from four weeks to three to six months ahead; the vendor page lists 10% better project margin
-  (B, vendor-published). Accounting busy-season forecasting is described by vendors only.
+  (C: vendor-published, and the page does not show the forecasting used AI). Accounting busy-season forecasting is
+  described by vendors only.
 - Reinvent (idea): `#20` check whether AI actually freed hours and re-base plans; Big Law demand rose 4.2% in H1 2026
   [BLOOMBERG-AICOST-2026].
 
@@ -72,7 +75,7 @@ Reinvent rests on announcements, surveys and one podcast.
 
 **Match, shortlist and book**
 - Improve: `#01` ranked shortlists inside the PSA or workflow tool, the resource manager deciding. Named uses: Basware
-  (software company's services organisation), Nextview (Salesforce consulting partner), Diabsolut (implementer), zeb
+  (software company's services organisation, expanding into it), Nextview (Salesforce consulting partner), Diabsolut (implementer), zeb
   (financial-services consultancy); products for accounting firms (CCH Axcess Workflow) and an early preview for law
   firms (BigHand). Audit equivalents: assurance-planning-risk-assessment-22, assurance-quality-management-11.
 - Improve: `#02` McKinsey (consulting) plans agents to supplement its professional-development staff (announced).
@@ -80,8 +83,9 @@ Reinvent rests on announcements, surveys and one podcast.
 - Improve: `#09` conversational assistant: "who has these skills and is free in July?" (Kantata, Rocketlane, Certinia).
 - Improve, process scope: `#12` central, skills-based resourcing with open opportunity boards in place of partner-led
   calls. DLA Piper reports 600+ hours saved finding resources at half-year end; Womble Bond Dickinson 10% higher
-  utilisation (law firms; vendor-published; platform not described as AI). Reed Smith (law firm) uses AI decision
-  support (2023 announcement). Development side: professional-services-talent-learning-04.
+  utilisation in its real estate group over two years (law firms; vendor-published; platform not described as AI).
+  Reed Smith (law firm) uses AI decision support (2023 announcement). Development side:
+  professional-services-talent-learning-12.
 - Automate: `#13` algorithm assigns cases instead of managers (Peru public agency, randomised): about 5 points worse
   on-time completion, no quality difference. Treat as the main caution against removing the person.
 - Improve: `#14` suggested completion dates while managers keep assignment: about 4 points better (same trial).
@@ -154,17 +158,18 @@ Reinvent rests on announcements, surveys and one podcast.
   AI, sample not stated [RUNN-2025].
 - Law firms: 43% of resourcing decisions lawyer-led; 45% have partial skills data; associate departures 9% to 16%,
   2024 to 2025 [BIGHAND-DLAPR-2026]. Talent capacity is the top profitability constraint for 35% of law-firm COOs
-  [WESTERNALLIANCE-COO-2026]. In-house (2025, 186 organisations): 63% name workload and bandwidth the top challenge
-  [CLOC-SOTI-2025].
+  [WESTERNALLIANCE-COO-2026]. In-house (CLOC 2025 report on a 2024 survey of 186 organisations): 63% name workload
+  and resource bandwidth the top challenge [CLOC-SOTI-2025].
 
 **Measured results (independent, adjacent)**
 - Algorithm versus manager case assignment: about 5 points lower on-time completion (control about 40%); suggested
-  dates about 4 points higher; 1,405 cases, 95 analysts, public agency [IPA-PERU-2026].
+  dates about 4 points higher; 1,405 cases, 95 analysts, public agency; working paper [IPA-PERU-2026].
 - Individuals with AI matched two-person teams without AI; 776 professionals at Procter & Gamble [NBER-DELLACQUA-2025].
 
 **Named organisations, vendor-published (unaudited)**
 - DLA Piper 600+ hours saved finding resources at half-year end (about GBP 673,000 stated); Womble Bond Dickinson 10%
-  utilisation gain over two years and 33.3% retention gain in one practice group [BIGHAND-DLAPR-2026; BIGHAND-WBD-2026].
+  utilisation gain over two years and 33.3% retention gain, both in one practice group (real estate)
+  [BIGHAND-DLAPR-2026; BIGHAND-WBD-2026].
 - Hakkoda 10% absolute project-margin gain, about 5% utilisation gain [KANTATA-FORECAST-2026]. Nextview's agent scans
   150 colleagues "in seconds" [CERTINIA-CUSTOMERS-2026].
 
@@ -187,15 +192,16 @@ went; agent cost and output per engagement.
   must comply by 2027-01-01, and human involvement means a reviewer with authority to change the decision
   [CPPA-CCPAREGS-2026]. Whether a skills-and-availability matcher is in scope is not settled; get legal advice.
 - **Other employment AI rules:** Illinois from 2026-01-01 [ILLINOIS-HB3773-2024]; Colorado SB26-189 signed
-  2026-05-14 [COLORADO-SB26189-2026]; NYC bias audits [NYC-AEDT-2023], with enforcement found ineffective
-  [OSC-LL144-2025]; UK Articles 22A-22D, commencement not checked [UK-DUAA-2025]. Their reach over work assignment is
-  unconfirmed. A 2026 class action over applicant scoring by a skills platform is unresolved
+  2026-05-14, developer duties from 2027-01-01 [COLORADO-SB26189-2026]; NYC bias audits [NYC-AEDT-2023], with
+  enforcement found ineffective [OSC-LL144-2025]; UK Articles 22A-22D, in force from 2026-02-05 [UK-DUAA-2025]. Their
+  reach over work assignment is unconfirmed. A 2026 class action over applicant scoring by a skills platform is unresolved
   [FISHERPHILLIPS-EIGHTFOLD-2026].
 - **Professional texts.** California bar guidance: AI in employment actions may carry bias risk; oversight grows with
   autonomy [CALBAR-GENAI-2026]. ABA Formal Opinion 512: supervision duties; hourly bills reflect actual time
   [ABA-OP512-2024]. ICMCI code for consultants: employment effects are high-risk; a qualified person able to override;
-  test for disparate impact; beware nominal oversight [ICMCI-AICODE-2026]. Audit firms: ISQM 1 requires teams with
-  competence and time (seen in search summaries only) [IAASB-ISQM1-2020]; see the assurance archetype.
+  test for disparate impact; beware nominal oversight [ICMCI-AICODE-2026]. Audit firms: ISQM 1 requires engagement
+  teams with appropriate competence and capabilities, including sufficient time (para. 32(d)) [IAASB-ISQM1-2020]; see
+  the assurance archetype.
 - **Not on the radar:** only 4% of resource-management respondents name compliance as a gap [KANTATA-RMI-REPORT-2026].
 - **Design rules from the evidence:** keep recommendations advisory with reasons shown [PROJECTWORKS-2026;
   WK-CCHSTAFF-2026]; keep manager discretion where fit matters [IPA-PERU-2026]; record decisions and overrides (`#21`).
@@ -210,30 +216,32 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
   outcome-based pricing respondents expect it to own team composition, delivery risk and economics [KANTATA-RMI-2026].
   TSIA calls the future office a "hybrid workforce command center" [TSIA-RM-2026]. Womble Bond Dickinson recruited
   dedicated resource managers [BIGHAND-WBD-2026]; DLA Piper's case study says resourcing professionals become strategic
-  partners balancing wellbeing and workforce planning [BIGHAND-DLA-2026]. Reed Smith created a global director of
-  Smart Resourcing [REEDSMITH-SMARTRES-2023].
+  partners balancing wellbeing and workforce planning [BIGHAND-DLA-2026]. Reed Smith has a global director of Smart
+  Resourcing [REEDSMITH-SMARTRES-2023].
 - **Central staffing teams keep the call.** McKinsey's agents supplement, not replace, professional-development staff
   [BLOOMBERGLAW-MCKINSEY-2026].
 - **Ops leaders: from monthly reports to acting on alerts and forecasts** (vendor description) [PROJECTWORKS-2026].
 - **Associates and consultants: from waiting to be picked to volunteering** for posted work [BIGHAND-WBD-2026]. Project
   variety is the leading driver of consultant job satisfaction in the MCA survey (not AI-specific) [MCA-SURVEY-2026].
-- **Administrative roles:** law-firm COOs expect fewer billing administrators and more technology, data and AI
-  enablement roles [WESTERNALLIANCE-COO-2026].
+- **Administrative roles:** law-firm COOs at a roundtable on the Blickstein survey pointed to fewer billing
+  administrators and more technology, data and AI enablement roles [WESTERNALLIANCE-COO-2026].
 - **Flexible talent** covers overflow and AI review [GEEK-LATITUDE-2026]. Pyramid and junior-pipeline questions:
   professional-services-talent-learning-19, -20. Talk about roles and capacity, not headcount.
 
 ## 8. Frontier
 
 - **2026-01-08** 87% of 200 leaders plan agents as part of the workforce [KANTATA-SOPSI-2026]; **2026-01-16** Kantata's
-  product chief predicts agents planned and measured like capacity [KANTATA-FORBES-2026].
+  chief product strategy officer predicts agents planned, allocated and measured like capacity [KANTATA-FORBES-2026].
 - **2026-04-09** Resource Management Institute study: hybrid teams and outcome data are the gaps [KANTATA-RMI-2026].
 - **2026-04-15** Certinia launches Veda with resourcing agents in beta [DIGINOMICA-CERTINIA-2026]; **2026-09-09** adds
-  14 agents and 135 intelligent actions [CONSTELLATION-CERTINIA-2026].
+  14 agents and doubles its intelligent actions to 135 [CONSTELLATION-CERTINIA-2026].
 - **2026-05-01** McKinsey reported to plan agents for choosing client teams [BLOOMBERGLAW-MCKINSEY-2026].
 - **2026-05-04** Planview announces Agent Resource Management, available from Fall 2026 [SDTIMES-PLANVIEW-2026].
-- **2026-05-14** Colorado reenacts its AI act; duties from 2027-01-01 [COLORADO-SB26189-2026].
-- **2026-06-05** BigHand previews an AI resourcing agent for law firms [BIGHAND-CONF-2026].
-- **2026-06-11** First randomised evidence on algorithm versus manager assignment of expert work [IPA-PERU-2026].
+- **2026-05-14** Colorado reenacts its AI act; developer duties from 2027-01-01 [COLORADO-SB26189-2026].
+- **2026-06-04** BigHand previews an AI resourcing agent for law firms at its London conference (release 2026-06-05)
+  [BIGHAND-CONF-2026].
+- **2026-06-11** Randomised field evidence on algorithm versus manager assignment of enforcement cases in Peru (working
+  paper) [IPA-PERU-2026].
 - **2026-06-16** Kantata launches Expertise Agent [ERPTODAY-KANTATA-2026]; **2026-07-22** Rocketlane's resource agent
   "in active rollout" [ROCKETLANE-2026].
 - **2026-10-13** Basware describes its staffing agent [KANTATA-BASWARE-2026]; Dayshape survey published
@@ -245,8 +253,8 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
 
 ## 9. Common objections
 
-- **"A model can't know who works well with whom."** A vendor says no model captures client dynamics or personal
-  fit [PROJECTWORKS-2026]; in the Peru trial, removing managers lowered on-time completion [IPA-PERU-2026]. Answer:
+- **"A model can't know who works well with whom."** A vendor says client dynamics and who works well together are
+  inputs no model captures yet [PROJECTWORKS-2026]; in the Peru trial, removing managers lowered on-time completion [IPA-PERU-2026]. Answer:
   keep the person deciding; use AI to widen the shortlist and show reasons (`#01`), or nudge schedules (`#14`).
 - **"Our skills data is rubbish."** Likely: 47% cite fragmented data [KANTATA-RMI-2026] and 45% of law firms have
   partial skills data [BIGHAND-DLAPR-2026]. Answer: firms with figures built the data layer first (`#12`); Basware
@@ -255,8 +263,9 @@ utilisation targets for individuals; hire, contract or outsource decisions; deci
   [KANTATA-SUPERAGENT-2026]. Answer: track overrides and outcomes from day one; nobody publishes them yet.
 - **"The numbers are vendor marketing."** True for nearly every figure here. Answer: baseline your own time-to-staff
   and utilisation before you start.
-- **"Partners won't give up allocation."** Strategic consensus among partners is hard [WESTERNALLIANCE-COO-2026].
-  Answer: law firms moved with opportunity boards and dedicated resource managers [BIGHAND-WBD-2026].
+- **"Partners won't give up allocation."** Partner consensus is hard: 15% of law-firm COOs name a lack of strategic
+  consensus as a profitability constraint [WESTERNALLIANCE-COO-2026]. Answer: Womble Bond Dickinson moved with an
+  opportunity board, dedicated resource managers and board-level champions [BIGHAND-WBD-2026].
 - **"AI will free capacity, so we need fewer people."** Not shown: Big Law demand rose [BLOOMBERG-AICOST-2026] and the
   extra load fell on associates and non-equity partners [TRI-LFFI-Q2-2026]. Answer: measure where hours went (`#20`).
 - **"Isn't this regulated HR tech?"** Possibly (§6). Answer: inventory tools, keep a reviewer with authority, log
@@ -272,8 +281,9 @@ Full details for YAML keys are in the YAML. Keys cited here but not in the YAML:
   https://cloc.org/newsdesk/2025-state-of-the-industry-report
 - CONSTELLATION-CERTINIA-2026: Constellation Research, Certinia launches System of Action, scales Veda AI agents,
   2026-09-09, https://www.constellationr.com/insights/news/certinia-launches-system-action-scales-veda-ai-agents-intelligent-actions
-- IAASB-ISQM1-2020: IAASB, ISQM 1 (publication page; resource requirements seen in search summaries only), 2020-12-17,
-  https://www.iaasb.org/publications/international-standard-quality-management-isqm-1-quality-management-firms-perform-audits-or-reviews
+- IAASB-ISQM1-2020: IAASB, ISQM 1 Quality Management for Firms that Perform Audits or Reviews (standard text read in
+  full; para. 32(d)), 2020-12-17,
+  https://www.iaasb.org/_flysystem/azure-private/publications/files/IAASB-Quality-Management-ISQM-1-Quality-Management-for-Firms.pdf
 - KANTATA-CONVERGE-2026: Kantata, Kantata Converge: Where AI Meets Expertise (event 2026-11-17), 2026-10-08,
   https://www.kantata.com/blog/article/kantata-converge-where-ai-meets-expertise
 - MCA-SURVEY-2026: Management Consultancies Association, MCA Member Survey 2026 (1,060 consultants), 2026-01-20,

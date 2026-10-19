@@ -23,12 +23,12 @@
   solution: >-
     An agent or recommender inside the PSA (professional services automation: the system holding projects, people,
     time and billing) reads project, skills, availability and cost data and proposes ranked candidates with reasons;
-    a resource manager confirms or overrides. Named uses: Basware's services organisation uses an agent built on the
-    Kantata Expertise Engine to decide how to staff projects as timelines and requirements change
-    (KANTATA-BASWARE-2026). Certinia reports that Nextview's Staffing Agent scans 150 colleagues for skills and
+    a resource manager confirms or overrides. Named uses: Basware, having automated billing first, is expanding into an
+    agent built on the Kantata Expertise Engine that helps its services managers determine how to staff projects as
+    timelines and requirements change (KANTATA-BASWARE-2026). Certinia reports that Nextview's Staffing Agent scans 150 colleagues for skills and
     availability, and that Diabsolut deployed a combined Customer Success and Staffing Agent (CERTINIA-CUSTOMERS-2026).
     zeb's case study includes a staffing agent that proposes and pre-books people (NTTDATA-ZEB-2026). An Icon Cloud
-    Consulting architect says the agent removes the hunt for information so managers can 'make the right call'
+    Consulting solution architect says the agent removes the hunt for information so managers can 'make the right call'
     (CERTINIA-VEDA-2026). Products: Certinia Resourcing and Shortlisting agents (CERTINIA-VEDA-2026); Kantata ranked
     recommendations with reasoning (KANTATA-AGENT-2026); Deltek Polaris skills-based matching (DELTEK-POLARIS-2026);
     Wolters Kluwer CCH Axcess Workflow, which shows accounting firms a compatibility score built from historical
@@ -37,7 +37,7 @@
     (BIGHAND-CONF-2026).
   outcomes:
     - lever: capacity
-      description: Certinia says Veda returns up to 10 hours a month to resource managers across staffing analysis, bench matching and work reallocation, attributed to unnamed lighthouse customers.
+      description: Certinia says Veda returns up to 10 hours a month to resource managers across staffing analysis, bench matching and work reallocation; no customer is named.
       figure: up to 10 hours per month
       measures: Hours of resource-manager capacity returned per month, per Certinia; no method, user count or baseline given; not broken out by task
       provenance: vendor-published
@@ -62,19 +62,19 @@
       source_ref: KANTATA-BASWARE-2026
   prerequisites:
     - Skills, availability, project budgets and CRM data in one connected system; Projectworks says AI can help little if they sit in different places (PROJECTWORKS-2026)
-    - Usable data; 47% of respondents in the Resource Management Institute study named poor or fragmented skills, outcome, demand and capacity data as the biggest gap (KANTATA-RMI-2026)
+    - Usable data; 47% of respondents in the Resource Management Institute study named poor or fragmented skills, outcome, demand and capacity data as a barrier, second to limited understanding of where AI applies (49%) (KANTATA-RMI-2026)
     - Basware automated billing before adding the resourcing agent (KANTATA-BASWARE-2026)
     - A defined rule for who may accept or change a shortlist, because the EU and California texts turn on human involvement (CPPA-CCPAREGS-2026)
   risks_and_guardrails:
-    - Projectworks says the best tools advise and do not change assignments themselves, and client dynamics and personal fit are not captured by any model (PROJECTWORKS-2026)
+    - Projectworks says the best tools are advisory and do not make changes on the user's behalf, and that client dynamics, internal politics and who works well together are inputs no model captures yet (PROJECTWORKS-2026)
     - Only 12% of leaders fully trust their systems data and 89% spend significant time verifying AI outputs (KANTATA-SOPSI-2026; Kantata-sponsored survey of 200 leaders)
     - EU AI Act Annex III point 4(b) lists AI intended to allocate tasks based on individual behaviour or personal traits or characteristics as high-risk (EU-AIACT-ANNEX3-2024); obligations apply from 2 December 2027 (EC-AIACT-2026). Whether a skills-and-availability matcher is in scope needs legal review
     - California's CCPA regulations list allocation or assignment of work for employees as a significant decision; automated decisionmaking technology used for one must comply by 1 January 2027, and human involvement means a reviewer who can interpret the output and has authority to change the decision (CPPA-CCPAREGS-2026, s.7001(e)(1), s.7001(ddd)(4)(B), s.7200)
     - California bar guidance warns that AI used in employment actions may present a risk of unlawful or unethical bias (CALBAR-GENAI-2026, p. 9)
     - Only 4% of Resource Management Institute respondents named ethical or compliance concerns as a gap (KANTATA-RMI-REPORT-2026, Q19)
-    - The one randomised test of automated assignment found worse on-time completion than manager assignment (see professional-services-staffing-resourcing-13; IPA-PERU-2026)
+    - A randomised field test of automated case assignment in a public agency found worse on-time completion than manager assignment (see professional-services-staffing-resourcing-13; IPA-PERU-2026)
   human_checkpoints:
-    - Resource manager confirms or overrides each recommendation (KANTATA-AGENT-2026; CERTINIA-VEDA-2026)
+    - The staffing team makes the decision from the ranked options; neither vendor describes the agent booking people on its own (KANTATA-AGENT-2026; CERTINIA-VEDA-2026)
     - In CCH Axcess Workflow the person assigning staff can pick anyone regardless of the recommendation and can open a justification view first (WK-CCHSTAFF-2026)
     - Whether the engagement lead or the person staffed also confirms is not described in any source
   role_evolution: >-
@@ -91,7 +91,7 @@
     - {ref: KANTATA-AGENT-2026, title: "Expertise Agent and Workflows (product page; undated, read 2026-10-19)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/ai/expertise-agent-and-workflows", date: "2026-10-19", access: full, locator: "Section 'Proactive Resourcing' and the 40% statement"}
     - {ref: DELTEK-POLARIS-2026, title: "Deltek Polaris (product page; undated, read 2026-10-19)", publisher: Deltek, type: vendor, url: "https://www.deltek.com/en/products/polaris/", date: "2026-10-19", access: full, locator: "Intelligent Resource Management section"}
     - {ref: WK-CCHSTAFF-2026, title: "The staffing challenge most workflow systems don't solve (CCH Axcess Workflow staff recommendations)", publisher: Wolters Kluwer Tax and Accounting, type: vendor, url: "https://www.wolterskluwer.com/en/expert-insights/the-staffing-challenge-most-workflow-systems-dont-solve", date: "2026-08-12", access: full, locator: "Key Takeaways; how recommendations are generated; maintaining control"}
-    - {ref: BIGHAND-CONF-2026, title: "BigHand Conference Signals a New Priority for Law Firms: Intelligence Before the Point of Decision (post-event release)", publisher: BigHand, type: conference, url: "https://www.bighand.com/en-us/resources/news/bighand-conference-2026-post-event-press-release/", date: "2026-06-05", access: full, locator: "Highlights list ('early preview of its AI resourcing agent')"}
+    - {ref: BIGHAND-CONF-2026, title: "BigHand Conference Signals a New Priority for Law Firms: Intelligence Before the Point of Decision (post-event release)", publisher: BigHand, type: vendor, url: "https://www.bighand.com/en-us/resources/news/bighand-conference-2026-post-event-press-release/", date: "2026-06-05", access: full, locator: "Highlights list ('early preview of its AI resourcing agent'); conference held the day before"}
     - {ref: PROJECTWORKS-2026, title: "How AI Is Changing Resource Planning for Consulting Firms", publisher: Projectworks, type: vendor, url: "https://www.projectworks.com/blog/how-ai-changes-resource-planning", date: "2026-06-25", access: full, locator: "Sections on matching people to roles and where AI resource planning is still early"}
     - {ref: DAYSHAPE-ONREC-2026, title: "Professional services firms lose work as capacity planning falls behind demand (Onrec summary of a Dayshape survey of 400 senior leaders, UK and US)", publisher: Onrec, type: press, url: "https://www.onrec.com/node/129428", date: "2026-10-13", access: full, locator: "Key figures panel"}
     - {ref: KANTATA-RMI-2026, title: "New Study Finds Resource Management at a Strategic Crossroads as AI and Outcome-Based Delivery Reshape Professional Services (Resource Management Institute study commissioned by Kantata)", publisher: Kantata, type: survey, url: "https://www.kantata.com/blog/article/new-study-finds-resource-management-at-a-strategic-crossroads-as-ai-and-outcome-based-delivery-reshape-professional-services", date: "2026-04-09", access: full, locator: "Paragraphs on barriers and on 72% operational"}
@@ -105,7 +105,7 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Firm kinds: Basware is a software company and this is its own services organisation (vendor release with Basware
-    executive quotes; the release is ambiguous on whether the agent is fully in production). Nextview is a Salesforce
+    executive quotes; the release says Basware 'is expanding into' the staffing agent, so it may not yet be fully in production). Nextview is a Salesforce
     consulting partner in Northern Europe; Diabsolut a Salesforce and Certinia implementer; zeb a European
     financial-services consultancy; Icon Cloud Consulting a consulting firm. The Nextview, Diabsolut and zeb details
     were routed from the delivery-management deep dive. Grade B: several named deployments, no measured staffing
@@ -234,7 +234,7 @@
   problem: >-
     Pipeline lives in the CRM, capacity in a spreadsheet, and forecasting happens quarterly at best (PROJECTWORKS-2026).
     55% of firms in a Dayshape survey miss, delay or turn down client work because of capacity constraints, and only a
-    small minority can forecast workforce capacity more than 12 months ahead (DAYSHAPE-ONREC-2026). More than 66% of
+    small minority can accurately forecast workforce capacity more than 12 months ahead (DAYSHAPE-ONREC-2026). More than 66% of
     200 leaders in a Kantata-sponsored survey turned down work because of resourcing constraints (KANTATA-SOPSI-2026).
     In accounting firms, signals about open jobs, slow client documents and deadlines sit in different systems, so
     capacity planning is 'usually too late' (ENTERPRISEDNA-2026).
@@ -245,7 +245,8 @@
     Kantata customer Hakkoda moved from forecasting four weeks ahead to three to six months ahead (KANTATA-FORECAST-2026).
     For accounting firms, a vendor describes forecasting workload by client, deadline, service line, staff availability
     and job stage so a manager can move work before busy season (ENTERPRISEDNA-2026); a sponsored CPA Practice Advisor
-    article recommends an early capacity analysis with contract talent as a planned component (CPAPA-SAAH-2026).
+    article by a Robert Half executive recommends an early capacity analysis with contract talent as a planned component
+    (CPAPA-SAAH-2026).
     Refining forecasts from pipeline and delivery patterns was the AI support respondents most wanted (72.1%;
     KANTATA-RMI-REPORT-2026, Q16).
   outcomes:
@@ -278,7 +279,7 @@
     - Trusted data; only 12% of leaders fully trust their systems data, down from 24% a year earlier (KANTATA-SOPSI-2026)
     - For accounting firms, job status, task history, document receipt and due dates available to the forecast (ENTERPRISEDNA-2026)
   risks_and_guardrails:
-    - Accelo's CEO says AI amplifies whatever foundation exists, so layering it on fragmented systems gives faster confusion (ACCELO-TSIA-2026)
+    - Accelo's write-up says AI amplifies whatever foundation exists, so layering it on fragmented systems gives faster confusion; its CEO says that without the right data foundation it is hard to leverage AI (ACCELO-TSIA-2026)
     - In the Deltek government-contracting findings, 29% named inaccurate forecasts among top AI concerns (DELTEK-CLARITY-2026; adjacent population)
     - No error rate, backtest or accuracy measure for an AI capacity forecast was found in any source
     - Demand for Big Law hours rose 4.2% in H1 2026, so plans should not assume AI has reduced workload (BLOOMBERG-AICOST-2026; see professional-services-staffing-resourcing-20)
@@ -286,9 +287,10 @@
     - The ops leader reviews the forecast and decides hiring, contracting and bids; no source describes a forecast triggering these automatically (PROJECTWORKS-2026; TSIA-RM-2026)
     - Enterprise DNA says its tool does not replace the practice manager or team lead (ENTERPRISEDNA-2026)
   role_evolution: >-
-    Forecasting moves from a quarterly exercise to a weekly one for the ops leader (PROJECTWORKS-2026). TSIA frames
-    resource management as a strategic capability that forecasts demand rather than filling open roles (TSIA-RM-2026).
-  evidence_grade: B
+    In Projectworks' description the ops leader opens each week with a rolling forward view instead of a quarterly
+    forecast (PROJECTWORKS-2026). TSIA frames resource management as a strategic capability rather than an operational
+    function filling open roles (TSIA-RM-2026).
+  evidence_grade: C
   sources:
     - {ref: KANTATA-FORECAST-2026, title: "Resource Forecasting and Staffing (product page; undated, read 2026-10-19)", publisher: Kantata, type: vendor, url: "https://www.kantata.com/solutions/resource-forecasting-and-staffing", date: "2026-10-19", access: full, locator: "Hakkoda quote and results list; spreadsheet statistic"}
     - {ref: PROJECTWORKS-2026, title: "How AI Is Changing Resource Planning for Consulting Firms", publisher: Projectworks, type: vendor, url: "https://www.projectworks.com/blog/how-ai-changes-resource-planning", date: "2026-06-25", access: full, locator: "Section on forecasting demand from pipeline"}
@@ -298,15 +300,16 @@
     - {ref: DAYSHAPE-ONREC-2026, title: "Professional services firms lose work as capacity planning falls behind demand (Onrec summary of a Dayshape survey of 400 senior leaders, UK and US)", publisher: Onrec, type: press, url: "https://www.onrec.com/node/129428", date: "2026-10-13", access: full, locator: "Key figures; 'Capacity constraints are costing firms work'"}
     - {ref: KANTATA-RMI-REPORT-2026, title: "Resource Management in the Age of AI (full survey report; 44 organisations)", publisher: "Resource Management Institute (RTM Consulting) for Kantata", type: survey, url: "https://get.kantata.com/rs/677-LEJ-696/images/AI_in_Resource_Management_Survey.pdf", date: "2026-04", access: full, locator: "Q16, p. 18"}
     - {ref: ENTERPRISEDNA-2026, title: "Best AI Software for Accounting Capacity Planning", publisher: Enterprise DNA, type: vendor, url: "https://enterprisedna.co/resources/blog/accounting-ai-capacity-planning/", date: "2026-08-30", access: full, locator: "Opening sections; 'What capacity planning needs to forecast'"}
-    - {ref: CPAPA-SAAH-2026, title: "Avoiding 'Too Little, Too Late': How to Give Core Teams at CPA Firms Ample Support This Tax Season (sponsored content)", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/01/27/avoiding-too-little-too-late-how-to-give-core-teams-at-cpa-firms-ample-support-this-tax-season/176902/", date: "2026-01-27", access: full, locator: "Steps 1, 3 and 4"}
+    - {ref: CPAPA-SAAH-2026, title: "Avoiding 'Too Little, Too Late': How to Give Core Teams at CPA Firms Ample Support This Tax Season (sponsored content by Steve Saah, Robert Half)", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/01/27/avoiding-too-little-too-late-how-to-give-core-teams-at-cpa-firms-ample-support-this-tax-season/176902/", date: "2026-01-27", access: full, locator: "Steps 1, 3 and 4"}
     - {ref: ACCELO-TSIA-2026, title: "How AI Is Reshaping Resource Utilization and Capacity Management (write-up of a TSIA and Accelo conversation)", publisher: Accelo, type: vendor, url: "https://www.accelo.com/blog/ai-era-resource-utilization-capacity-management", date: "2026-06-03", access: full, locator: "'What Good Capacity Management Looks Like Today'"}
     - {ref: TSIA-RM-2026, title: "Professional Services Resource Management in the PS 2.0 Era (Bo DiMuccio)", publisher: TSIA, type: professional-body, url: "https://www.tsia.com/blog/professional-services-resource-management", date: "2026-05-27", access: full, locator: "'Create a Unified Resource Intelligence Layer'"}
     - {ref: DELTEK-CLARITY-2026, title: "The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures for Project-Based Businesses (896 A&E firms; 917 government contractors)", publisher: Deltek, type: survey, url: "https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/", date: "2026-05-12", access: full, locator: "Key findings, Government Contracting report"}
     - {ref: BLOOMBERG-AICOST-2026, title: "Big Law AI Cost Savings Remain a Mystery as Billable Hours Jump (Big Law Business column)", publisher: Bloomberg Law, type: press, url: "https://news.bgov.com/business-and-practice/big-law-ai-cost-savings-remain-a-mystery-as-billable-hours-jump", date: "2026-09-03", access: full, locator: "Paragraphs on Citi demand data"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Grade B rests on Hakkoda, a named Kantata customer with vendor-published figures; the inputs do not state Hakkoda's
-    sector, and the sources do not show the forecasting was machine-learning based. Accounting-firm material is a vendor
+    Grade C (downgraded from B on verification, 2026-10-19): Hakkoda is a named Kantata customer, but its undated quote
+    and the figures beside it do not show that the forecasting used AI, so the named deployment is of an adjacent,
+    non-AI process; the inputs do not state Hakkoda's sector. Accounting-firm material is a vendor
     how-to and a sponsored article, not deployments. All survey figures are vendor-sponsored or vendor-run. Merged from
     practice-07, discourse-05, discourse-13 and governance-02. Pricing and bid choices that use the forecast belong to
     scoping-pricing and pursuit-proposals.
@@ -324,7 +327,7 @@
   maturity: announced
   problem: >-
     Staffing choices are made with the financial consequence invisible until a later review (PROJECTWORKS-2026).
-    Comparing options across several projects, or internal against external resources, is hard by hand.
+    Kantata pitches its optimiser as evaluating resource permutations 'beyond human capacity' (KANTATA-FORECAST-2026).
   solution: >-
     Kantata's Staffing Optimizer uses optimisation to model staffing scenarios across multiple projects and resource
     permutations, and Candidate Assignments compares internal and external resources side by side on skills,
@@ -340,7 +343,7 @@
   prerequisites:
     - Rates, costs and budgets in the same system as resource plans (PROJECTWORKS-2026)
   risks_and_guardrails:
-    - The one independent field test of an optimisation-based allocation rule found worse on-time completion than manager discretion in its setting (IPA-PERU-2026; see professional-services-staffing-resourcing-13)
+    - An independent randomised field test of an optimisation-based assignment rule in a public agency found worse on-time completion than manager discretion (IPA-PERU-2026; see professional-services-staffing-resourcing-13)
   human_checkpoints:
     - The ops leader or resource manager chooses among scenarios (KANTATA-FORECAST-2026; PROJECTWORKS-2026)
   role_evolution: >-
@@ -510,7 +513,7 @@
   prerequisites:
     - Accurate time and allocation data; only 12% of leaders fully trust their systems data (KANTATA-SOPSI-2026)
   risks_and_guardrails:
-    - SPI advises aiming for 70-75% or more, balanced against burnout and quality risk (DELTEK-SPIKPI-2026)
+    - Deltek's summary of the SPI benchmark gives a best-practice indicator of 70-75% or more, balanced against burnout and quality (DELTEK-SPIKPI-2026)
     - Utilisation targets applied to individuals are performance monitoring, which EU AI Act Annex III 4(b) lists as high-risk where AI evaluates performance and behaviour (EU-AIACT-ANNEX3-2024)
   human_checkpoints:
     - The ops leader or resource manager acts on alerts; alert-to-action practice is not described in any source (PROJECTWORKS-2026)
@@ -522,7 +525,7 @@
     - {ref: PROJECTWORKS-2026, title: "How AI Is Changing Resource Planning for Consulting Firms", publisher: Projectworks, type: vendor, url: "https://www.projectworks.com/blog/how-ai-changes-resource-planning", date: "2026-06-25", access: full, locator: "Section on utilisation and margin monitoring"}
     - {ref: ROCKETLANE-2026, title: "AI for PS Resource Allocation: 2026 Guide", publisher: Rocketlane, type: vendor, url: "https://rocketlane.com/blogs/ai-for-ps-resource-allocation", date: "2026-07-22", access: full, locator: "Section on AI governance and allocation accuracy checks"}
     - {ref: DELTEK-DELA-2026, title: "Dela, the Deltek AI orchestrator (product page; undated, read 2026-10-19)", publisher: Deltek, type: vendor, url: "https://www.deltek.com/en/products/platform/dela/", date: "2026-10-19", access: full, locator: "Paragraph on machine learning and resource utilisation"}
-    - {ref: CERTINIA-SPIBENCH-2026, title: "Analyzing the 2026 SPI Research Professional Services Maturity Benchmark Report (undated; refers to mid-2026)", publisher: Certinia, type: vendor, url: "https://certinia.com/blog/analyzing-the-2026-spi-research-professional-services-maturity-benchmark-report/", date: "2026", access: full, locator: "Section 'Utilization is becoming harder to protect'"}
+    - {ref: CERTINIA-SPIBENCH-2026, title: "Analyzing the 2026 SPI Research Professional Services Maturity Benchmark Report (page undated; sitemap last-modified 2026-08-05)", publisher: Certinia, type: vendor, url: "https://certinia.com/blog/analyzing-the-2026-spi-research-professional-services-maturity-benchmark-report/", date: "2026-08", access: full, locator: "Section 'Utilization is becoming harder to protect'"}
     - {ref: DELTEK-SPI-2026, title: "2026 PSO Benchmarks: What We Learned and What's Next from the SPI Maturity Benchmark Report", publisher: Deltek, type: vendor, url: "https://www.deltek.com/resources/articles/professional-services-benchmarks/", date: "2026-07-30", access: full, locator: "Section 2, Operational Inefficiencies Persist"}
     - {ref: DELTEK-SPIKPI-2026, title: "5 KPIs from the SPI Professional Services Maturity Benchmark Report Every PSO Must Track for Sustainable Growth", publisher: Deltek, type: vendor, url: "https://www.deltek.com/en/resources/articles/5-kpis-from-the-spi-professional-services-maturity-benchmark-report-every-pso-must-track-for-sustainable-growth", date: "2026-07-15", access: full, locator: "Section 1, Billable Utilization"}
     - {ref: DELTEK-CLARITY-2026, title: "The Latest Deltek Clarity Industry Studies Highlight AI Challenges, Talent Strain, and Delivery Capacity Pressures for Project-Based Businesses (896 A&E firms; 917 government contractors)", publisher: Deltek, type: survey, url: "https://www.deltek.com/company/news/latest-deltek-clarity-industry-studies-highlight-ai-challenges/", date: "2026-05-12", access: full, locator: "Key findings, 47th A&E report"}
@@ -606,8 +609,8 @@
     keywords (CINODE-2026); a skills-based view of people is built across recruiting, mobility and staffing
     (EIGHTFOLD-DT-2025); Deltek describes certification tracking with skill-based matching (DELTEK-POLARIS-2026).
     TSIA's first maturity level has AI update consultant profiles from project data, certifications and delivery
-    artefacts, and extends the same register to AI tools (capabilities, reliability, limits, oversight needed)
-    (TSIA-RM-2026).
+    artefacts, and its 'skills genome' extends the same register to AI tools (reliability, known limitations, required
+    oversight) (TSIA-RM-2026).
   outcomes:
     - lever: quality
       description: No outcome published for skills-inventory upkeep. Respondents selected skills intelligence as the second most-wanted AI support.
@@ -619,7 +622,7 @@
     - A skills taxonomy and profile data per person (CINODE-2026; EIGHTFOLD-DT-2025)
     - A structured schema for proficiency, recency, industry and certifications, and access to project history (TSIA-RM-2026)
   risks_and_guardrails:
-    - Skills inference about individuals is being tested in court in hiring; a January 2026 class action alleges Eightfold built hidden applicant scores under US consumer-reporting law, unresolved (FISHERPHILLIPS-EIGHTFOLD-2026)
+    - Skills inference about individuals is being tested in court in hiring; a class action filed on 20 January 2026 alleges Eightfold compiled 'hidden credit reports' and ranked applicants without meeting US consumer-reporting law, unresolved (FISHERPHILLIPS-EIGHTFOLD-2026)
     - The UK ICO's audit of AI recruitment tools found tools inferring gender and ethnicity from names and collecting more personal data than necessary (ICO-RECRUIT-2024; recruitment, not staffing)
     - EU employers must inform workers and their representatives before using a high-risk system at work (EU-AIACT-OJ-2024, Art. 26(7)); whether a skills inventory is high-risk is not settled by the sources
   human_checkpoints:
@@ -723,9 +726,9 @@
       provenance: vendor-published
       source_ref: BIGHAND-DLAPR-2026
     - lever: capacity
-      description: Womble Bond Dickinson reports a utilisation increase over two years since adopting the platform.
+      description: BigHand reports a utilisation increase at Womble Bond Dickinson over two years since adopting the platform; the case-study body places it in the real estate practice group (5% a year).
       figure: 10%
-      measures: Increase in utilisation over two years since implementation; baseline and definition not given
+      measures: Increase in utilisation over two years since implementation, in one practice group (real estate) per the case-study text; baseline and definition not given; not firm-wide
       provenance: vendor-published
       source_ref: BIGHAND-WBD-2026
     - lever: experience
@@ -748,7 +751,7 @@
   role_evolution: >-
     Resourcing professionals become strategic partners balancing wellbeing and workforce planning (BIGHAND-DLA-2026);
     associates can volunteer for matters they would not have seen under a partner-led model (BIGHAND-WBD-2026). Reed
-    Smith created a global director role for Smart Resourcing (REEDSMITH-SMARTRES-2023).
+    Smith has a global director of Smart Resourcing (REEDSMITH-SMARTRES-2023).
   evidence_grade: B
   sources:
     - {ref: BIGHAND-DLA-2026, title: "A Global Firm Needs a Global View: DLA Piper Scales Legal Resourcing Excellence with BigHand Resource Management (case study)", publisher: BigHand, type: vendor, url: "https://www.bighand.com/en-us/resources/case-studies/dla-piper-bighand-resource-management/", date: "2026-06-17", access: full, locator: "'The Challenge: Mapping the Wild West'; 'The Solution'; 'Success by the Numbers'"}
@@ -766,7 +769,7 @@
     resourcing needs. Reed Smith (law firm) is the named AI decision-support use, from a 2023 announcement; its 2026
     status was not confirmed. Deutsche Telekom is a telecom group with consulting businesses; its pilot was described
     as upcoming and no result was found. Grade B rests on named deployments; all figures are vendor-published. Stretch
-    assignments and development effects belong to talent-learning (see professional-services-talent-learning-04).
+    assignments and development effects belong to talent-learning (see professional-services-talent-learning-12).
     Merged from practice-03, practice-16, discourse-10 and discourse-12.
 
 - id: professional-services-staffing-resourcing-13
@@ -786,7 +789,9 @@
   solution: >-
     Peru's environmental enforcement agency (OEFA) tested replacing manager assignment with case lists produced by a
     linear-optimisation algorithm that selects and orders cases given analyst capacity and expected stage times. It is
-    optimisation, not machine learning, and the one randomised test of automated work allocation found (IPA-PERU-2026).
+    optimisation, not machine learning, and the only randomised test of algorithmic assignment of expert work found for
+    this module (IPA-PERU-2026). The authors cite an earlier field experiment (Bai et al. 2022) in which workers saw
+    algorithmic assignment as fairer and became more productive, so results depend on setting (IPA-PERU-2026).
   outcomes:
     - lever: speed
       description: Analysts given algorithm-selected cases were about 5 percentage points less likely to conclude a case on time than those whose cases managers assigned.
@@ -850,7 +855,7 @@
     - Case-level expected processing times for the main procedural stages (IPA-PERU-2026)
   risks_and_guardrails:
     - The nudge did not offset the negative effect of algorithmic case selection (IPA-PERU-2026)
-    - Shown for one agency and one case type; not tested on professional services work
+    - Reviewer note: shown for one agency and one case type; not tested on professional services work
   human_checkpoints:
     - Managers keep case selection in the manager-assigned arm; dates are suggestions (IPA-PERU-2026)
   role_evolution: >-
@@ -910,7 +915,9 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Capped at B: independent randomised evidence at a named organisation, but in consumer-goods product development,
-    not professional services staffing; extrapolation to client work is the reader's judgement. From governance-12.
+    not professional services staffing; extrapolation to client work is the reader's judgement. The NBER disclosures say
+    P&G gave gifts to the Harvard Business School institute behind the study and one author consulted for P&G in
+    2021-2022. From governance-12.
     Junior development effects belong to talent-learning (professional-services-talent-learning-11, -12).
 
 - id: professional-services-staffing-resourcing-16
@@ -934,8 +941,8 @@
     and tracking agent spend and accountability, with availability from Fall 2026 (SDTIMES-PLANVIEW-2026). Accelo and
     TSIA describe separating structured, repeatable work (status reports, reconciliations, documentation) from work that
     needs people when staffing (ACCELO-TSIA-2026); TSIA's third maturity level optimises work across consultants,
-    subcontractors, partners and AI agents in one model (TSIA-RM-2026). Kantata's product chief predicts agents will be
-    planned, allocated and measured like capacity (KANTATA-FORBES-2026).
+    subcontractors, partners and AI agents in one model (TSIA-RM-2026). Kantata's chief product strategy officer predicts agents will be
+    planned, allocated, measured and priced like capacity (KANTATA-FORBES-2026).
   outcomes:
     - lever: capacity
       description: No organisation in the study has agents operationalised as assignable resources; 10.7% are implementing formal pilots, 25.3% are in exploratory experiments and 32% do not have it on the roadmap.
@@ -961,7 +968,7 @@
     - Playbooks and skills enablement before hybrid staffing is routine (KANTATA-RMI-2026)
   risks_and_guardrails:
     - Governance is open; ERP Today names the test as which agent actions are autonomous, which need approval, how AI work is costed and how decisions are audited (ERPTODAY-KANTATA-2026)
-    - Kantata's Edwards asks how to schedule an agent, measure it beside consultants and keep hybrid delivery accountable, without answers (KANTATA-FORBES-2026)
+    - Kantata's Edwards asks how to schedule an agent, measure it beside consultants and keep hybrid delivery accountable, and says leaders must develop frameworks for this; she offers no tested answer (KANTATA-FORBES-2026)
     - California's guidance says the greater a system's autonomy, the greater the lawyer's duty to implement oversight (CALBAR-GENAI-2026, p. 5); ICMCI's code says consultants and firms remain accountable and should document significant AI-supported decisions (ICMCI-AICODE-2026, s.3.6)
     - Thomson Reuters Institute reports open questions over who manages AI agents and how human-AI team performance is evaluated (TRI-HUMANAGENT-2025)
     - The readiness data come from a small vendor-commissioned sample of 44 organisations (KANTATA-RMI-2026)
@@ -1010,8 +1017,8 @@
     stretched (CPAPA-SAAH-2026).
   solution: >-
     Firms bring in experienced attorneys on engagement terms to cover overflow, leave and projects, and to help train
-    internal AI tools and review AI-generated work; Latitude's Alex Su calls this 'outsourced leverage' for the middle
-    layer of legal work (GEEK-LATITUDE-2026). The accounting piece recommends contract talent as a planned component of
+    internal AI tools and review AI-generated work; Latitude's Alex Su describes this as 'outsourced leverage' (a
+    colleague's term) for the middle layer of legal work (GEEK-LATITUDE-2026). The accounting piece recommends contract talent as a planned component of
     busy-season capacity (CPAPA-SAAH-2026).
   outcomes:
     - lever: capacity
@@ -1025,7 +1032,8 @@
   risks_and_guardrails:
     - The speakers are a staffing provider with a commercial interest (GEEK-LATITUDE-2026)
     - Practitioners disagree on whether AI will cut or raise associate demand (GEEK-LATITUDE-2026; BLOOMBERGLAW-BAKER-2026)
-    - Supervision and confidentiality duties follow the lawyer wherever the work sits (ABA-OP512-2024, Part E)
+    - ABA Formal Opinion 512 applies supervisory duties to generative AI use and, citing earlier outsourcing opinions, says lawyers must ensure third parties do the work capably and protect confidentiality (ABA-OP512-2024, Part E)
+    - The accounting article is by an executive of Robert Half, a staffing provider (CPAPA-SAAH-2026)
   human_checkpoints:
     - Flexible lawyers review AI-generated work and do quality control (GEEK-LATITUDE-2026)
   role_evolution: >-
@@ -1034,7 +1042,7 @@
   evidence_grade: C
   sources:
     - {ref: GEEK-LATITUDE-2026, title: "Alex Su and Andy Chagui on Flexible Legal Talent, AI Pressure, and the Future of Law Firm Leverage (The Geek in Review podcast, with transcript)", publisher: "Legal Tech Monitor / The Geek in Review", type: podcast, url: "https://www.legaltechmonitor.com/2026/05/alex-su-and-andy-chagui-on-flexible-legal-talent-ai-pressure-and-the-future-of-law-firm-leverage/", date: "2026-05-18", access: full, locator: "Episode summary; transcript passages on associate credit and 'outsourced leverage'"}
-    - {ref: CPAPA-SAAH-2026, title: "Avoiding 'Too Little, Too Late': How to Give Core Teams at CPA Firms Ample Support This Tax Season (sponsored content)", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/01/27/avoiding-too-little-too-late-how-to-give-core-teams-at-cpa-firms-ample-support-this-tax-season/176902/", date: "2026-01-27", access: full, locator: "Step 3 on contract talent"}
+    - {ref: CPAPA-SAAH-2026, title: "Avoiding 'Too Little, Too Late': How to Give Core Teams at CPA Firms Ample Support This Tax Season (sponsored content by Steve Saah, Robert Half)", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/01/27/avoiding-too-little-too-late-how-to-give-core-teams-at-cpa-firms-ample-support-this-tax-season/176902/", date: "2026-01-27", access: full, locator: "Step 3 on contract talent"}
     - {ref: BLOOMBERGLAW-BAKER-2026, title: "Baker Botts Leader Says AI Threatens Rivals' Associates, Not His", publisher: Bloomberg Law, type: press, url: "https://news.bloomberglaw.com/esg/big-law-leader-says-ai-threatens-rivals-associates-not-his", date: "2026-06-29", access: full, locator: "Opening paragraphs on associate hiring"}
     - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (copy hosted by LawSites)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Part E Supervisory Responsibilities, pp. 10-11"}
   last_reviewed: "2026-10-19"
@@ -1078,7 +1086,7 @@
     - Active generative AI use in the department; 52% in 2025 versus 23% in 2024 among US respondents (ACCEVERLAW-2025)
   risks_and_guardrails:
     - Only 9% said company policy prohibits generative AI use, down from 29% (ACCEVERLAW-2025)
-    - Supervision and confidentiality duties follow the lawyer wherever the work sits (ABA-OP512-2024, Part E; CALBAR-GENAI-2026, Duty to Supervise, p. 7)
+    - ABA Formal Opinion 512 applies supervisory duties to generative AI use, including checking that outside providers work capably and protect confidentiality (ABA-OP512-2024, Part E); California's guidance asks managerial lawyers to set AI policies and supervise lawyers and nonlawyers (CALBAR-GENAI-2026, Duty to Supervise, p. 7)
   human_checkpoints:
     - The decision to insource or outsource a matter stays with the legal department; the survey does not describe a workflow (ACCEVERLAW-2025)
   role_evolution: >-
@@ -1176,8 +1184,8 @@
     from their law firms yet (ACCEVERLAW-2025).
   solution: >-
     Idea: audit whether hours actually fell after AI adoption (TRI-LAWPROF-2026), check effort assumptions per task and
-    role against measured hours and demand, and reset plans. SPI Research calls hours saved but not resold or repriced
-    'the leak' (SPI-AI-2026). Resourcing and timesheet data are the natural place to see it; no source names such a tool.
+    role against measured hours and demand, and reset plans. SPI Research calls the gap between time AI saves and the
+    revenue it generates 'the leak', and advises planning how to reprice or resell saved hours (SPI-AI-2026). Resourcing and timesheet data are the natural place to see it; no source names such a tool.
   outcomes:
     - lever: capacity
       description: Demand for lawyer time rose rather than fell in the first half of 2026.
@@ -1198,9 +1206,9 @@
     - The cited study covers one technology company, not a professional services firm; the columnist extends it to law by analogy (TRI-LAWPROF-2026)
     - Associates and non-equity partners absorbed most extra work in Q2 2026, and the ratio of non-equity to equity partner hours is the highest since late 2018 (TRI-LFFI-Q2-2026)
     - Hourly billing must reflect time actually spent, so AI-saved hours cannot be billed as worked (ABA-OP512-2024, Fees, p. 12)
-    - Rising demand does not show AI saved no time, only that demand rose (BLOOMBERG-AICOST-2026)
+    - The columnist notes firms may be using time AI saves for extra or more thorough work, so rising hours do not show that AI saved no time (BLOOMBERG-AICOST-2026)
   human_checkpoints:
-    - Firm leaders review whether reclaimed time went to rest, development or more work (TRI-LAWPROF-2026)
+    - Firm leaders audit whether associate hours actually fell or reclaimed time was refilled with more work (TRI-LAWPROF-2026)
     - Planners and practice leaders agree effort assumptions; not described in the sources
   role_evolution: >-
     Thomson Reuters's 'Scale' pathway describes AI addressing a capacity question without proportional headcount
@@ -1213,7 +1221,7 @@
     - {ref: SPI-AI-2026, title: "The 2026 Impact of AI on Professional Services (report landing page; report not opened)", publisher: SPI Research, type: survey, url: "https://spiresearch.com/reports/2026-ai-professional-services-survey/", date: "2026-10", access: full, locator: "'The Leak' and Part III contents"}
     - {ref: TRI-LFFI-Q2-2026, title: "Q2 2026 LFFI: A heavier load, yet a faster crossing", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/reports/lffi-q2-2026-heavy-load-picking-up-speed", date: "2026-08-10", access: full, locator: "Key takeaways; demand-by-title section"}
     - {ref: ABA-OP512-2024, title: "Formal Opinion 512: Generative Artificial Intelligence Tools (copy hosted by LawSites)", publisher: "American Bar Association, Standing Committee on Ethics and Professional Responsibility", type: professional-body, url: "https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf", date: "2024-07-29", access: full, locator: "Fees section, p. 12"}
-    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-09-30", access: full, locator: "AI to Scale section"}
+    - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: Thomson Reuters Institute, type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026-06-22", access: full, locator: "AI to Scale section (page undated; release date 22 June 2026 per press coverage)"}
   last_reviewed: "2026-10-19"
   notes: >-
     Idea, grade D: the demand data is independent but describes the market, not a capacity-planning practice. Law firms
@@ -1252,9 +1260,9 @@
   risks_and_guardrails:
     - EU deployers keep automatically generated logs for at least six months (Art. 26(6)), inform workers and representatives before use (Art. 26(7)), and affected persons can obtain explanations of the AI's role in certain Annex III decisions (Art. 86(1)) (EU-AIACT-OJ-2024); Annex III employment obligations apply from 2 December 2027 (EC-AIACT-2026)
     - California ADMT used for a significant decision, which includes allocation or assignment of work, must meet the regulation's requirements by 1 January 2027, with pre-use notice, opt-out and access provisions (CPPA-CCPAREGS-2026, ss.7200-7222)
-    - UK Data (Use and Access) Act 2025 replaces UK GDPR Article 22 with Articles 22A-22D; a decision is solely automated if there is no meaningful human involvement; commencement was not checked (UK-DUAA-2025)
+    - UK Data (Use and Access) Act 2025 replaces UK GDPR Article 22 with Articles 22A-22D; a decision is solely automated if there is no meaningful human involvement; section 80 is fully in force from 5 February 2026 (S.I. 2026/82) (UK-DUAA-2025)
     - Illinois makes it a civil rights violation from 1 January 2026 to use AI with discriminatory effect in employment matters including terms, privileges or conditions of employment, or to fail to give notice; coverage of work assignment is not stated (ILLINOIS-HB3773-2024)
-    - Colorado SB26-189, signed 14 May 2026, repeals and reenacts the state AI act for automated decisions in consequential decisions including employment, with duties from 1 January 2027 (COLORADO-SB26189-2026)
+    - Colorado SB26-189, signed 14 May 2026, repeals and reenacts the state AI act for automated decision-making technology in consequential decisions including employment; the bill summary dates developer duties from 1 January 2027 and gives consumers a right to request human review after an adverse decision (COLORADO-SB26189-2026)
     - New York City requires bias audits and notice for automated employment decision tools (NYC-AEDT-2023); the State Comptroller found enforcement ineffective, with nine of 12 test calls not reaching the enforcing agency (OSC-LL144-2025). Scope over work assignment was not established
     - ICMCI's code treats uses that may materially affect employment as high-risk, requires a qualified individual able to intervene or override, testing for disparate impact where practicable and documentation of significant AI-supported decisions, and warns against oversight that is nominal because of volume, speed or incentives (ICMCI-AICODE-2026, ss.1.3, 3.1, 3.2, 3.6, 11.4)
   human_checkpoints:
@@ -1265,7 +1273,7 @@
     - {ref: EU-AIACT-OJ-2024, title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Official Journal text", publisher: "European Parliament and Council of the European Union (EUR-Lex)", type: regulator, url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689", date: "2024-07-12", access: full, locator: "Annex III 4(b); Article 26(6), 26(7); Article 86(1)"}
     - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework page (timelines after the AI Omnibus)", publisher: European Commission, type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "Application timeline"}
     - {ref: CPPA-CCPAREGS-2026, title: "California Consumer Privacy Act Regulations, effective 1/1/2026 (Article 11, Automated Decisionmaking Technology)", publisher: California Privacy Protection Agency, type: regulator, url: "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf", date: "2026-01-01", access: full, locator: "s.7001(e), s.7001(ddd)(4), s.7200"}
-    - {ref: UK-DUAA-2025, title: "Data (Use and Access) Act 2025, section 80 (automated decision-making; new UK GDPR Articles 22A-22D)", publisher: "UK Parliament (legislation.gov.uk)", type: regulator, url: "https://www.legislation.gov.uk/ukpga/2025/18/section/80", date: "2025-06-19", access: full, locator: "s.80, new Articles 22A-22C"}
+    - {ref: UK-DUAA-2025, title: "Data (Use and Access) Act 2025, section 80 (automated decision-making; new UK GDPR Articles 22A-22D)", publisher: "UK Parliament (legislation.gov.uk)", type: regulator, url: "https://www.legislation.gov.uk/ukpga/2025/18/section/80", date: "2025-06-19", access: full, locator: "s.80, new Articles 22A-22C; commencement note (in force 5.2.2026)"}
     - {ref: ILLINOIS-HB3773-2024, title: "Public Act 103-0804 (HB 3773): use of artificial intelligence in employment, amending the Illinois Human Rights Act (effective 1 January 2026)", publisher: Illinois General Assembly, type: regulator, url: "https://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=103-0804", date: "2026-01-01", access: full, locator: "Section 2-102(L)"}
     - {ref: COLORADO-SB26189-2026, title: "SB26-189, Automated Decision-Making Technology (signed 14 May 2026; repeals and reenacts SB24-205)", publisher: Colorado General Assembly, type: regulator, url: "https://leg.colorado.gov/bills/sb26-189", date: "2026-05-14", access: full, locator: "Bill summary; status table"}
     - {ref: NYC-AEDT-2023, title: "Automated Employment Decision Tools (AEDT), Local Law 144 of 2021", publisher: New York City Department of Consumer and Worker Protection, type: regulator, url: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page", date: "2023-07", access: full, locator: "Page text on bias audit, publication and notice"}
