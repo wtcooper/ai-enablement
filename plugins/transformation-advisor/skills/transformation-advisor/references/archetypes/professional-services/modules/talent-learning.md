@@ -1,6 +1,6 @@
 # Talent and learning (professional services)
 
-Sources checked 2026-10-19. Use cases live in `../use-cases/talent-learning.yaml` (25 entries).
+Sources checked and re-verified 2026-10-19. Use cases live in `../use-cases/talent-learning.yaml` (25 entries).
 Ids are shortened here: `#05` means `professional-services-talent-learning-05`; other modules' ids are in full. Source
 keys in brackets are in the YAML or in §10.
 
@@ -40,13 +40,13 @@ training is cross-referenced, not repeated.
 |---|---|---|---|
 | Workforce planning and intake sizing | Set graduate or first-year class size, lateral share, support-staff levels | coordination-scheduling, data-reporting | 19% of 57 large law firms do not know their 2028 first-year needs [BLOOMBERGLAW-HIRING-2026]; cause of cuts is disputed (#19) |
 | Sourcing and screening | Application forms, screening interviews, CV sorting | transaction-processing, client-interaction | Forms limit what candidates can say [MISHCON-BRIGHT-2025]; employment-AI rules arriving in several places at once (#14) |
-| Selection and assessment | Final-round exercises, hiring criteria | expert-judgment | GPA, school and tool knowledge say less when AI makes surface competence easy to show [TRI-TAAP2030-2026] |
+| Selection and assessment | Final-round exercises, hiring criteria | expert-judgment | GPA, school and technical aptitude say little about performance when the answer is unclear [TRI-TAAP2030-2026]; AI makes surface competence easy to show [TRI-ONBOARDING-2026] |
 | Onboarding and AI training | Orientation, tool training, policy sign-off, AI champions | coordination-scheduling, expert-judgment | Juniors form AI habits before firm guidance [TRI-ONBOARDING-2026]; training before access required by 11% of small and 72% of large law firms [ILTA-TECHSURVEY-2026] |
 | Learning through client work | First drafts, diligence, review, research, reconciliations under supervision | document-production, expert-judgment | This is the step AI absorbs. Junior work 'has always served two purposes: billing and training' [VAULT-PYRAMID-2026] |
-| Supervision and feedback | Review of junior work, questioning, mentoring | review-assurance, expert-judgment | Seniors may bypass juniors because AI makes polished work fast [TRI-TEACHV-2026]; reviewers who never did the work may miss AI errors [KARBON-JUNIOR-2026] |
+| Supervision and feedback | Review of junior work, questioning, mentoring | review-assurance, expert-judgment | Seniors may bypass juniors because AI makes polished work fast [TRI-TEACHV-2026]; juniors good at reviewing AI output may not know what to do when it is wrong [KARBON-JUNIOR-2026] |
 | Performance, incentives, promotion | Objectives, evaluations, bonuses, billable credit | data-reporting, expert-judgment | 44% of 106 law firms took over four weeks to deliver evaluation feedback [CANLAW-NALP-2025]; the billable hour no longer proves a lawyer's worth [TRI-CLOSEGAP-2026] |
-| Career paths and leverage | Seats, rotations, progression, pyramid shape | coordination-scheduling, expert-judgment | No agreed definition of judgment, so firms cannot say which tasks must be kept [TRI-HONING-2026] |
-| Workforce transition | Reskilling, exits, support-role redesign | coordination-scheduling | Skills change faster than firms can retrain [FORTUNE-ACCENTURE-2025] |
+| Career paths and leverage | Seats, rotations, progression, pyramid shape | coordination-scheduling, expert-judgment | No agreed definition of legal judgment or standards for AI use in training [TRI-HONING-2026] |
+| Workforce transition | Reskilling, exits, support-role redesign | coordination-scheduling | Reskilling is not a viable path for some staff [FORTUNE-ACCENTURE-2025] |
 | Retention | Keeping mid-career and AI-capable people | client-interaction, coordination-scheduling | 24% of professionals seeing an AI value gap consider leaving within two years (vendor survey) [TR-FOP-2026] |
 
 ## 3. Where AI is changing the work
@@ -120,7 +120,7 @@ scope, #22). Delegate has one (#20, grade C, at model scope); no entry shows an 
 9. Who in your firm builds and governs AI tools, and can juniors rotate into that work? *Shows whether new career routes
    exist (#04, #23).*
 10. Which partners resist AI, and how do they supervise juniors who use it? *Partners are often the least prepared
-    group (§9); mixed messages confuse juniors.*
+    group (§7); mixed messages confuse juniors.*
 11. For people whose work AI absorbs, including support teams, what are the rules for reskilling versus exit? *Tests
     workforce-transition planning (#21, #22).*
 
@@ -136,9 +136,9 @@ scope, #22). Delegate has one (#20, grade C, at model scope); no entry shows an 
 | Expected first-year cuts (US law) | Two-thirds of 57 large firms expect fewer in 2028 than 2025; 19% unsure | Citi survey | [BLOOMBERGLAW-HIRING-2026] |
 | Associate growth versus first-year growth | 86% plan more associates through 2027; 35% larger first-year classes | Citi/Hildebrandt via press | [LAW360-CITI-2025] |
 | Lateral share of Am Law 200 associate hires | 51% | Vendor report via press | [GLP-SUREPOINT-2026] |
-| UK Big Four graduate intake, 2023 to latest | KPMG 1,399 to 942; Deloitte 1,700 to 1,400; EY 1,800 to 1,600; PwC 1,600 to 1,500 | Telegraph figures via press | [SFN-BIG4-2025] |
+| UK Big Four graduate intake, 2023 to 2024 | KPMG 1,399 to 942 (reported as -29%; counts imply -33%); Deloitte 1,700 to 1,400; EY 1,800 to 1,600; PwC 1,600 to 1,500 | Telegraph figures via press | [SFN-BIG4-2025] |
 | UK accountancy graduate job adverts | -44% versus 2023 (all graduate jobs -33%) | Indeed data via press | [SFN-BIG4-2025] |
-| UK top-employer graduate recruitment | -24.5% since 2022 | Survey of 100 employers | [HIGHFLIERS-GM-2026] |
+| UK top-employer graduate recruitment | -24.5% since 2022 | Survey of top UK graduate employers | [HIGHFLIERS-GM-2026] |
 | Ages 22-25 in AI-exposed jobs (all sectors) | 19% below peer path | Payroll data; descriptive, not causal | [STANFORD-CANARIES-2026] |
 | Demand for US large-firm lawyer hours | +4.2% in H1 2026 (normal about 1.5%) | Citi via press | [BLOOMBERG-AICOST-2026] |
 | Mid-tier accountancy firms expecting fewer early-career roles | 68% | ICAEW research | [ICAEW-WORRY-2026] |
@@ -147,7 +147,7 @@ scope, #22). Delegate has one (#20, grade C, at model scope); no entry shows an 
 | Junior skills gaps (UK law) | 72% reasoning, 69% verification; 2% say AI mainly strengthens learning | Vendor survey, 873 respondents | [LEXIS-MENTORSHIP-2026] |
 | AI in associate evaluations | 31% of 106 law firms | NALP Foundation survey | [CANLAW-NALP-2025] |
 | AI-value-gap attrition | 24% considering leaving within 2 years; USD 232,000 replacement estimate | Vendor survey and estimate | [TR-FOP-2026] |
-| 'Seniorised' entry-level roles | +35% since 2019; AI-exposed junior roles 7x more likely to ask for senior skills | PwC job-ad analysis, all sectors | [PWC-AIJB-2026] |
+| 'Seniorised' entry-level roles | +35% since 2019; AI-exposed junior roles 7x more likely to ask for senior skills | PwC job-ad analysis, highly AI-exposed sectors, not professional services alone | [PWC-AIJB-2026] |
 | Adoption incentive | 1 million Copilot prompts reached over 4 months early | Firm-tracked usage | [LEGALCHEEK-SHOOSMITHS-2025] |
 | AI screening interview | Almost 75% of students rated it 4-5 of 5 | Firm-reported, sample not stated | [MISHCON-BRIGHT-2025] |
 | Hybrid-team readiness | 52.7% of resource managers not equipped; 4% well equipped | Vendor-commissioned, 44 organisations | [KANTATA-RMI-2026] |
@@ -163,19 +163,20 @@ Architecture and engineering firms report 1.2% staff growth against a 9.5% reven
   update both as tools become more autonomous; subordinates must exercise independent judgment, and competence
   includes verifying AI output [CALBAR-GENAI-2026, pp.4, 7]. D.C. Opinion 388 extends supervisory duties to supervised
   lawyers' GenAI use [DCBAR-OP388-2024]; Texas 705 holds lawyers responsible whoever or whatever drafted
-  [TXBAR-OP705-2025]. ABA Opinion 512 is known only from secondary summaries [ABA-OP512-2024].
-- **UK solicitors.** The SRA warning notice of 17 August 2026 followed 42 misuse reports; responsibility falls on
-  trainees, supervisors and the firm. Seen only through a law-firm article [DWF-SRA-2026; SRA-WARNING-2026].
+  [TXBAR-OP705-2025]. ABA Opinion 512 is known only from a secondary summary [ABA-OP512-2024; CIVILITY-ABA512-2024].
+- **UK solicitors.** The SRA issued an AI warning notice on 17 August 2026. DWF reports the SRA received 42 misuse
+  reports in the past year, and its guide says responsibility falls on trainees, supervisors and the firm. Seen only
+  through that law-firm article [DWF-SRA-2026; SRA-WARNING-2026].
 - **Billing limits on training.** Hourly billing must reflect time actually spent; time saved by AI cannot be billed
-  [CALBAR-GENAI-2026, p.8; TXBAR-OP705-2025]. Secondary summaries of ABA 512 say clients should not be billed for
-  learning AI in general [ABA-OP512-2024]. See #03 and #24 for funding options.
+  [CALBAR-GENAI-2026, p.8; TXBAR-OP705-2025]. A secondary summary of ABA 512 says lawyers may not charge clients
+  for time spent learning GenAI tools they will regularly use for clients [CIVILITY-ABA512-2024]. See #03 and #24 for funding options.
 - **Employment-AI law.** These rules reach screening and, in Illinois, promotion, training selection and discipline. NYC bias audit and notices
-  [NYC-AEDT-2023]. Illinois has applied from 1 January 2026 [ILLINOIS-HB3773-2024]. Colorado's developer duties and
-  human-review rights apply from 1 January 2027 [COLORADO-SB26189-2026]. EU high-risk employment uses apply from
+  [NYC-AEDT-2023]. Illinois has applied from 1 January 2026 [ILLINOIS-HB3773-2024]. Colorado's developer duties apply from
+  1 January 2027, and consumers gain a right to request human review of adverse decisions [COLORADO-SB26189-2026]. EU high-risk employment uses apply from
   2 December 2027 [EC-AIACT-2026]. The UK ICO's audit of AI recruitment tools made almost 300 recommendations
   [ICO-RECRUIT-2024].
-- **AI literacy.** The European Commission says AI literacy obligations have applied since 2 February 2025
-  [EC-AIACT-2026].
+- **AI literacy.** The European Commission says AI literacy obligations have applied since 2 February 2025; the page
+  does not say whether the AI Omnibus changed this duty [EC-AIACT-2026].
 - **Accounting.** The CCAB Ethics Group plans a draft statement on ethical AI use (planned, not published when read)
   [ICAEW-CCAB-2026].
 - **Steps that need human judgment:** every screening and hiring decision (#14); intake size and leverage decisions
@@ -189,17 +190,17 @@ Architecture and engineering firms report 1.2% staff growth against a 9.5% reven
   fourth-years within three years (an expectation) [BI-PWC-2025].
 - **New junior routes:** AI seats and innovation-group roles [NONBILLABLE-AOS-2026; LEGALCHEEK-SIDLEY-2026]; 'legal
   engineers' [LEGORA-MINTERELLISON-2026; BLOOMBERGLAW-GCXAI-2026]; proposed AI-compliance and data roles (#23).
-- **Mid-level:** associates build their own agents [TRI-ONBOARDING-2026]. A survey vendor suggests mid-level staff
-  become 'workflow engineers' [LAW360-GA-2026]. Mid-career staff are the most mobile [TR-FOP-2026].
+- **Mid-level:** associates build their own agents [TRI-ONBOARDING-2026]. General Assembly, an AI training provider that ran the
+  survey, suggests mid-level staff become 'workflow engineers' [LAW360-GA-2026]. Mid-career staff are the most mobile [TR-FOP-2026].
 - **Partners and supervisors:** they become coaches of verification [TRI-TEACHV-2026]. In one survey, 55% of
   respondents (74% in law firms) named partners as the least prepared group [LAW360-GA-2026]. PwC US says partners who
   resist AI have no place [CPAPA-PWC-2026].
 - **Talent and learning teams:** practice-group AI champions and a Chief Legal Talent and Growth Officer
-  [TRI-ONBOARDING-2026]. Gilchrist Connell has a chief AI and knowledge officer covering learning, KM and AI
+  [TRI-ONBOARDING-2026]. Gilchrist Connell created a chief AI and knowledge officer role
   [LAWYERSWEEKLY-GILCHRIST-2026]. ILTA firms expect more headcount in training, innovation, KM and data science
   [ILTA-TECHSURVEY-2026].
 - **Other roles named:** data scientists, product managers, pricing experts and AI governance practitioners
-  [LAW360-CITI-2025]. AI roles in professional services advertise a 67% wage premium [PWC-AIJB-PS-2026].
+  [LAW360-CITI-2025]. AI-enabled roles in professional services carry a 67% wage premium in PwC's job-ad analysis [PWC-AIJB-PS-2026].
 - **Resource managers:** from operational staffing to designing team composition [KANTATA-RMI-2026].
 - **Support staff:** some roles phased out, others evolve; consultation applies (#22).
 - **In-house:** legal operations is described as becoming a design function for how work is structured [TR-FOP-2026].
@@ -229,20 +230,21 @@ Architecture and engineering firms report 1.2% staff growth against a 9.5% reven
 
 - **"Juniors will never learn judgment."** This is partly supported. In the trial, juniors showed no average lasting gain
   and their scores split [NBER-AUTOR-2026]. The response is design: unaided checks, verification training and supervised
-  practice (#09, #11). The link between repetitive work and judgment is itself 'inferred', not proven [TRI-DESIGNL-2026].
+  practice (#09, #11). Beliefs about how repetitive work builds judgment are 'largely inferential' [TRI-DESIGNL-2026].
 - **"The tasks AI took were not ones we learned from."** Some trainees say so [ICAEW-WORRY-2026]. A Zarwin Baum managing
-  director calls today's learning 'different, not wrong' [TRI-LEGALWEEK-ASSOC-2026]. The task is to find what the old
+  director says associates develop differently and 'different doesn't mean wrong' [TRI-LEGALWEEK-ASSOC-2026]. The task is to find what the old
   work taught and teach it another way [LEXIS-SYMPOSIUM-2026].
 - **"AI is why we hire fewer graduates."** The cause is contested. PwC UK named the economy [PEOPLEMATTERS-PWC-2025],
-  and High Fliers blames economic uncertainty [HIGHFLIERS-GM-2026]. Past peaks were followed by smaller classes
+  and High Fliers blames economic uncertainty [HIGHFLIERS-GM-2026]. Past peaks were followed by smaller classes, though
+  the same Bloomberg Law columnist argues this decline is driven by AI rather than the economy
   [BLOOMBERGLAW-HIRING-2026]. Demand for lawyer hours rose in 2026 [BLOOMBERG-AICOST-2026].
 - **"Cut intake now and buy laterals later."** Firms that closed intake after 2008 reportedly struggled for managers
-  about five years later [ICAEW-JUNIOR-2026]. If everyone buys experience, nobody trains juniors [VAULT-PYRAMID-2026].
+  about five years later [ICAEW-JUNIOR-2026]. Vault notes no firm has answered where skill comes from if the training ground disappears [VAULT-PYRAMID-2026].
 - **"Mandate usage and adoption will follow."** Usage metrics count log-ins and prompts, not judgment (#15, #16). Mixed
   messages from partners and clients confuse associates [TRI-CLOSEGAP-2026].
 - **"We cannot afford development time."** Billing rules stop firms charging clients for AI learning or saved time
   [CALBAR-GENAI-2026; TXBAR-OP705-2025]. Ropes & Gray funds it as billable credit (#03). Clients already push back on
-  junior hours [ICAEW-EXPECT-2026; TRI-LEGALWEEK-2026].
+  junior hours [ICAEW-EXPECT-2026] and ask for billing transparency on AI-assisted work [TRI-LEGALWEEK-2026].
 - **"Earlier tools changed nothing."** A veteran ILTA respondent said so [ILTA-TECHSURVEY-2026]. A Bloomberg Law
   columnist notes that firms' own uncertainty about AI is now shaping first-year hiring plans [BLOOMBERGLAW-HIRING-2026].
 - **"The surveys are vendor marketing."** Often true: Thomson Reuters, LexisNexis, Karbon and Kantata sell AI or PSA
@@ -266,4 +268,4 @@ Full details for keys used in use cases are in the YAML. Keys cited only in this
 
 Most-used keys: NBER-AUTOR-2026, TR-FOP-2026, ILTA-TECHSURVEY-2026, TRI-ONBOARDING-2026, BLOOMBERGLAW-HIRING-2026,
 SFN-BIG4-2025, CALBAR-GENAI-2026, EC-AIACT-2026, JOA-TRAINING-2026, ICAEW-JUNIOR-2026, ICAEW-WORRY-2026,
-VAULT-PYRAMID-2026. The YAML lists 101 distinct sources, 99 opened in full and 2 search-only.
+VAULT-PYRAMID-2026. The YAML lists 102 distinct sources, 100 opened in full and 2 search-only.

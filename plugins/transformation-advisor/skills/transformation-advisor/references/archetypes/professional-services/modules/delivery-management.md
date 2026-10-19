@@ -48,8 +48,8 @@ Lenses: improve (assist or augment a step), automate (no person on the normal pa
 multi-step outcome with checkpoints), reinvent (`change_scope: model`, or a process that stops existing).
 **Coverage:** assist 2, augment 8, automate 1, delegate 5; step 7, process 8, model 1. Automate has one entry, a
 practitioner idea (`#09`). Delegate's named examples are a consultancy's self-reported agent estate (`#12`),
-Thoughtworks' role design (`#14`) and Basware's plans (`#13`); the rest are announcements or ideas. Reinvent has one idea (`#16`). No firm reports a delivery step that has stopped
-existing.
+Thoughtworks' role design (`#14`) and Basware's plans (`#13`); the rest are announcements or ideas. Reinvent has
+one idea (`#16`). No firm reports a delivery step that has stopped existing.
 
 **Mobilise and plan**
 - Improve: `#01` delivery plan, solution design and handoff brief drafted from the SOW, deal record and transcripts.
@@ -67,7 +67,7 @@ existing.
   tax-compliance-individual-business-15.
 - Improve: `#04` ask for status, budget consumption and anomalies in plain language (zeb, financial-services
   consultancy, on SAP; Planning Blox for law firms).
-- Process-level, client side: a client portal in place of email in an attestation practice is
+- Related: a client portal in place of email in an attestation practice is
   assurance-soc-attestation-07; shared client workspaces are professional-services-work-production-20.
 
 **Monitoring, risk and change control**
@@ -114,7 +114,7 @@ existing.
 4. **"How do you find out a client asked for something out of scope, how long after the work starts, and who
    decides whether it becomes a change order?"** Reveals the leakage `#06` targets and who must own the decision.
 5. **"When a project slips or burns budget, how many days pass before someone with authority knows?"** Reveals the
-   gap `#07` closes; Teamwork calls it the "erosion gap" [TEAMWORK-2026].
+   gap `#07` targets; Teamwork calls it the "erosion gap" [TEAMWORK-2026].
 6. **"How are meetings with clients recorded today, and who confirms consent and the permitted tool?"** Reveals
    exposure in `#02`; a 2025 class action alleges recording without consent [KJZZ-OTTER-2025].
 7. **"Which of your clients have written AI terms (approval, banned tools, records, no payment for AI work), and how
@@ -129,8 +129,8 @@ existing.
     trust the answer?"** Reveals readiness for `#16`; firms at ILTACON were only starting to meter AI cost
     [TRI-METER-2026].
 11. **"Which recurring engagement or matter types run the same way each time, and is that process written down?"**
-    Reveals candidates for templates (`#11`) or agent estates (`#12`); agents fail on undocumented workflows
-    [TRI-PREMORTEM-2026].
+    Reveals candidates for templates (`#11`) or agent estates (`#12`); agents are less forgiving of undocumented
+    workflows (a fictional premortem) [TRI-PREMORTEM-2026].
 12. **"In-house: do you know which of your outside firms use AI on your matters, and what it saved?"** Reveals the
     client-side gap: 59% of in-house respondents do not know [ACC-TRANSPARENCY-2025].
 
@@ -224,7 +224,7 @@ designs; confirming recording consent and client AI terms; choosing which agent 
 - **2025-12-10** Certinia offers its Project Assistant agent through an early-adopter programme [IA-CERTINIA-2025].
 - **2026-03-24** PwC US publishes Intelligent Status Insights [PWC-STATUS-2026].
 - **2026-05-04** Planview announces Agent Resource Management, available from Fall 2026 [SDTIMES-PLANVIEW-2026].
-- **2026-05-14** California approves guidance covering agentic AI [CALBAR-GENAI-2026]. **2026-05** ICMCI adopts its consulting AI code [ICMCI-AICODE-2026].
+- **2026-05** California approves agentic-AI guidance [CALBAR-GENAI-2026]; ICMCI code [ICMCI-AICODE-2026].
 - **2026-06-09** PMI publishes its standard for AI in project work [PMI-AISTD-2026].
 - **2026-06-16** Kantata launches Expertise Agent [ERPTODAY-KANTATA-2026]; **2026-07-21** Certinia buys Moonnox
   for meeting and tool context capture [CERTINIA-MOONNOX-2026].
@@ -244,9 +244,9 @@ designs; confirming recording consent and client AI terms; choosing which agent 
 
 ## 9. Common objections
 
-- **"The numbers are vendor marketing."** Mostly true: every outcome figure here is vendor-published or self-reported, and the
-  best build (`#12`) is a sponsored talk. Answer: baseline your own hours first, as Certinia itself advises
-  [CERTINIA-CUSTOMERS-2026], and track edits to AI drafts.
+- **"The numbers are vendor marketing."** Mostly true: every outcome figure here is vendor-published or
+  self-reported, and the best build (`#12`) is a sponsored talk. Answer: baseline your own hours first, as Certinia
+  itself advises [CERTINIA-CUSTOMERS-2026], and track edits to AI drafts.
 - **"Our data isn't good enough."** A fair worry: 47% cite fragmented data [KANTATA-RMI-2026], and an IDC analyst
   links unintegrated data to unreliable output [CERTINIA-GSD-2026]. Answer: start where data is already in one
   system (zeb on SAP, `#04`) or where a person reviews anyway (`#03`).

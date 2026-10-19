@@ -2,7 +2,7 @@
 # Recruiting, graduate intake, onboarding and training, the apprenticeship model when AI does entry-level work,
 # performance and incentives, career paths and the leverage pyramid (the ratio of juniors to partners).
 # Merged from three angle deep dives (practice, discourse, governance) and items routed from other modules.
-# Sources checked 2026-10-19. Grades: A 2, B 13, C 7, D 3.
+# Sources checked 2026-10-19 and re-verified 2026-10-19 (wave 3 fact-check). Grades: A 2, B 13, C 7, D 3.
 # Examples come from law firms, accounting and advisory firms, consulting firms, and in-house teams (tagged in notes).
 # Practice-specific procedures (audit, tax, security operations) are cross-referenced by id, not repeated.
 
@@ -18,8 +18,8 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Professionals adopt AI faster than firm policy and training reach them, so juniors form habits, and make errors,
-    before any firm standard applies (ILTA-TECHSURVEY-2026). Large firms need hundreds of thousands of people to use
+    New lawyers often form AI habits before firm guidance reaches them (TRI-ONBOARDING-2026), and 34% of surveyed
+    professionals use AI tools their organisation has not sanctioned (TR-FOP-2026). Large firms need hundreds of thousands of people to use
     the tools consistently and safely (ATODAY-PWC-2026; CIODIVE-ACCENTURE-2025). Most AI training teaches what tools
     do, and rarely when to trust, verify or override their output (TR-FOP-2026).
   solution: >-
@@ -71,29 +71,32 @@
   risks_and_guardrails:
     - "California's State Bar expects managerial and supervisory lawyers to set clear GenAI policies, including for agentic tools, give periodic training, and update both as systems become more autonomous (CALBAR-GENAI-2026, p.7)"
     - "The European Commission page states that AI literacy obligations under the AI Act have applied since 2 February 2025; whether the AI Omnibus changed that duty was not checked (EC-AIACT-2026)"
-    - "ABA Formal Opinion 512 is summarised in secondary sources as asking managers to set AI policies and train lawyers and staff; the primary text was not reached (ABA-OP512-2024)"
+    - "A secondary summary of ABA Formal Opinion 512 says managerial and supervisory lawyers should establish clear GenAI policies and train subordinate lawyers and staff; the primary text was not reached (ABA-OP512-2024; CIVILITY-ABA512-2024)"
     - "43% of professionals whose organisation has a strategy-execution gap say people are not equipped or trained to work in the intended way (TR-FOP-2026)"
     - "Karbon's vendor survey of about 600 accounting professionals finds fewer than half of firms invest in AI training and 21% have an AI policy or strategy (KARBON-SOAI-2026)"
-    - "Counts of people trained measure activity, not skill or behaviour change; none of the firms publishes an effect measure"
+    - "Reviewer note: counts of people trained measure activity, not skill or behaviour change; none of the firms publishes an effect measure"
   human_checkpoints:
     - "Training completion before access is granted (ILTA-TECHSURVEY-2026)"
     - "Periodic refresh when tools or their autonomy change (CALBAR-GENAI-2026, p.7)"
-    - "Certified practitioners lead implementations (ANTHROPIC-DELOITTE-2025)"
+    - "Certified practitioners support implementations (ANTHROPIC-DELOITTE-2025)"
   role_evolution: >-
     Training, innovation and AI-governance roles grow: ILTA reports firms anticipating added headcount in IT,
-    innovation, security, training, KM and data science (ILTA-TECHSURVEY-2026). A tier of certified AI practitioners
-    appears inside the firm to lead internal and client implementations (ANTHROPIC-DELOITTE-2025).
+    innovation, security, training, KM and data science (ILTA-TECHSURVEY-2026). At Deloitte, a tier of certified
+    practitioners is planned to support Claude implementations across its network and its internal AI transformation
+    (ANTHROPIC-DELOITTE-2025).
   evidence_grade: B
   sources:
     - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p.5, Q3.18 table and the paragraph before it"}
     - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.7, Duty to Supervise Lawyers and Nonlawyers"}
     - {ref: EC-AIACT-2026, title: "AI Act: regulatory framework for AI", publisher: "European Commission", type: regulator, url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", date: "2026-10-19", access: full, locator: "Timeline paragraph on AI literacy obligations"}
-    - {ref: ABA-OP512-2024, title: "ABA Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: "American Bar Association", type: professional-body, url: "https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf", date: "2024-07-29", access: search-only, locator: "Not opened (403); secondary summaries only"}
+    - {ref: ABA-OP512-2024, title: "ABA Formal Opinion 512: Generative Artificial Intelligence Tools", publisher: "American Bar Association", type: professional-body, url: "https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf", date: "2024-07-29", access: search-only, locator: "Not opened (403 direct, mirror and archive); see CIVILITY-ABA512-2024"}
+    - {ref: CIVILITY-ABA512-2024, title: "Breaking Down ABA Guidance on Using GenAI in Legal Practice", publisher: "Illinois Supreme Court Commission on Professionalism (2Civility)", type: professional-body, url: "https://www.2civility.org/breaking-down-the-abas-guidance-on-using-generative-ai-in-legal-practice/", date: "2024-08-15", access: full, locator: "paragraphs on supervisory duties and fees"}
+    - {ref: TRI-ONBOARDING-2026, title: "Law firms need to redesign new attorney onboarding for the AI era", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/redesigning-new-attorney-onboarding", date: "2026-10-12", access: full, locator: "section 'Associates are already forming AI habits'"}
     - {ref: ATODAY-PWC-2026, title: "PwC grows 2026 global revenue to $60.2B", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pwc-grows-2026-global-revenue-to-60-2b", date: "2026-10-19", access: full, locator: "paragraph on investment and learning platforms"}
     - {ref: CIODIVE-ACCENTURE-2025, title: "Accenture completes 'reinvention' as generative AI revenues roll in", publisher: "CIO Dive", type: press, url: "https://www.ciodive.com/news/accenture-generative-ai-revenue-skills-training-data-modernization/761161/", date: "2025-09-25", access: full, locator: "paragraph on 77,000 AI and data professionals and 550,000 trained"}
     - {ref: DECRYPT-ACCENTURE-2026, title: "Accenture Is Tracking Whether Employees Use AI, and Promotions Are on the Line", publisher: "Decrypt", type: press, url: "https://decrypt.co/358616/accenture-tracking-employees-use-ai-promotions", date: "2026-02-19", access: full, locator: "paragraph 6"}
     - {ref: ANTHROPIC-DELOITTE-2025, title: "Deloitte will make Claude available to 470,000 people across its global network", publisher: "Anthropic", type: vendor, url: "https://www.anthropic.com/news/deloitte-anthropic-partnership", date: "2025-10-06", access: full, locator: "paragraphs 1-2"}
-    - {ref: NONBILLABLE-RG-2026, title: "Ropes & Gray gives junior lawyers 20% of billable time for AI work", publisher: "Non-Billable", type: press, url: "https://www.nonbillable.co.uk/news/ropes-gray-gives-junior-lawyers-20-of-billable-time-for-ai-work", date: "2026", access: full, locator: "final two paragraphs (Freshfields; Latham AI Academy)"}
+    - {ref: NONBILLABLE-RG-2026, title: "Ropes & Gray gives junior lawyers 20% of billable time for AI work", publisher: "Non-Billable", type: press, url: "https://www.nonbillable.co.uk/news/ropes-gray-gives-junior-lawyers-20-of-billable-time-for-ai-work", date: "2026-01-13", access: full, locator: "final two paragraphs (Freshfields; Latham AI Academy)"}
     - {ref: HARVEY-BLANKROME-2026, title: "Developing Lawyers, Not Replacing Them: How Blank Rome Trains the Next Generation With Harvey (customer story)", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/customers/blank-rome", date: "2026-08-06", access: full, locator: "Key highlights; Giving Every Lawyer the Firm's Best Thinking"}
     - {ref: TR-FOP-2026, title: "Future of Professionals Report 2026", publisher: "Thomson Reuters Institute", type: survey, url: "https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report", date: "2026", access: full, locator: "strategy-execution gap section"}
     - {ref: KARBON-SOAI-2026, title: "Karbon State of AI in Accounting 2026 Report shows strategy, training, and governance unlock AI's full potential", publisher: "Karbon", type: vendor, url: "https://karbonhq.com/resources/state-of-ai-accounting-2026/", date: "2026-01-23", access: full, locator: "paragraphs 1-2"}
@@ -144,9 +147,9 @@
     - "The article says responsible-use training must include verification steps and human review to be effective (TRI-ONBOARDING-2026)"
     - "California expects supervisors to provide training on the ethical and practical aspects and pitfalls of AI tools, including those used with limited real-time human direction (CALBAR-GENAI-2026, p.7)"
     - "Mixed messages: some partners and clients may say not to use AI while leadership says to use it (TRI-CLOSEGAP-2026)"
-    - "Reported only by the firm's own talent chief on a Thomson Reuters Institute page; no independent check"
+    - "Reviewer note: reported only by the firm's own talent chief on a Thomson Reuters Institute page; no independent check"
   human_checkpoints:
-    - "Human review of every AI-assisted first draft before submission (TRI-ONBOARDING-2026)"
+    - "No first draft is treated as an appropriate final submission, the firm's one fixed principle (TRI-ONBOARDING-2026)"
     - "Mentorship track for questions such as whether using AI with a given partner will look inefficient (TRI-ONBOARDING-2026)"
   role_evolution: >-
     Practice-group AI champions become a new informal role. Mid-level associates are already building their own agents,
@@ -161,7 +164,8 @@
   notes: >-
     Merged from practice 04, discourse 03 and governance 02 (also routed from quality-review and work-production).
     Single named firm described by its own talent leader; no measurements. The AI-rehearsal tool the same executive
-    describes was built at a prior, unnamed firm and is covered in use case 06.
+    describes followed an avatar pilot at her prior, unnamed firm; the article does not say where the ChatGPT version
+    was built. It is covered in use case 06.
 
 - id: professional-services-talent-learning-03
   title: "Protected billable-credit time and build competitions for junior lawyers to learn AI (Ropes & Gray TrAIlblazers)"
@@ -186,8 +190,8 @@
     partner-led mentoring circles and peer cohorts (LCN-ROPES-EU-2026; SCOTTISHLEGAL-RG-2026). In the registered funds
     practice two first-years present their AI use to partners each month, and a 'World Cup' had teams of young lawyers
     and summer associates build AI workflows for real problems, with full billable credit for taking part
-    (BLAW-ASSOCIATES-2026). Blank Rome (US law firm) runs Trial Academy practicums and a 300-associate hackathon as part
-    of its AI training (HARVEY-BLANKROME-2026, vendor customer story).
+    (BLAW-ASSOCIATES-2026). Blank Rome (US law firm) uses Trial Academy practicums and built a Harvey-sponsored hackathon
+    into a retreat for more than 300 associates (HARVEY-BLANKROME-2026, vendor customer story).
   outcomes:
     - lever: capacity
       description: "Teams entered in the firm's AI 'World Cup'; the winning team built a workflow that extracts information from transaction documents to help draft real estate closing documents"
@@ -208,7 +212,7 @@
   risks_and_guardrails:
     - "Competition entries were judged partly on appropriate AI use (BLAW-ASSOCIATES-2026)"
     - "Legal Cheek's figures of a 1,900-hour target and about 400 hours of AI time are worded 'reportedly' and 'roughly'; treat them as approximate (LEGALCHEEK-RG-2025)"
-    - "The cost is borne in billable-hour credit; no source quantifies the trade-off"
+    - "Reviewer note: the cost is borne in billable-hour credit; no source quantifies the trade-off"
   human_checkpoints:
     - "Partners hear junior presentations and lead mentoring circles (BLAW-ASSOCIATES-2026; LCN-ROPES-EU-2026)"
     - "Regular group reporting of progress (SCOTTISHLEGAL-RG-2026)"
@@ -223,14 +227,14 @@
     - {ref: LCN-ROPES-EU-2026, title: "Ropes & Gray commits 20% of junior lawyer billable hours to AI exploration across Europe", publisher: "LawCareers.Net", type: press, url: "https://www.lawcareers.net/Explore/News/Ropes-Gray-commits-20-of-junior-lawyer-billable-hours-to-AI-exploration-across", date: "2026-01-14", access: full, locator: "paragraphs 1-3"}
     - {ref: SCOTTISHLEGAL-RG-2026, title: "Law firm tasks junior lawyers with exploring AI", publisher: "Scottish Legal News", type: press, url: "https://www.scottishlegal.com/articles/ropes-gray-tasks-junior-lawyers-with-exploring-ai", date: "2026-01-12", access: full, locator: "whole article"}
     - {ref: LEGALCHEEK-RG-2025, title: "Ropes & Gray encourages junior lawyers to spend 20% of billable time on AI", publisher: "Legal Cheek", type: press, url: "https://www.legalcheek.com/2025/11/ropes-gray-encourages-juniors-to-spend-20-of-billable-hours-on-ai/amp/", date: "2025-11-19", access: full, locator: "paragraphs 1-3 and 5"}
-    - {ref: NONBILLABLE-RG-2026, title: "Ropes & Gray gives junior lawyers 20% of billable time for AI work", publisher: "Non-Billable", type: press, url: "https://www.nonbillable.co.uk/news/ropes-gray-gives-junior-lawyers-20-of-billable-time-for-ai-work", date: "2026", access: full, locator: "paragraphs 1-4"}
+    - {ref: NONBILLABLE-RG-2026, title: "Ropes & Gray gives junior lawyers 20% of billable time for AI work", publisher: "Non-Billable", type: press, url: "https://www.nonbillable.co.uk/news/ropes-gray-gives-junior-lawyers-20-of-billable-time-for-ai-work", date: "2026-01-13", access: full, locator: "paragraphs 1-4"}
     - {ref: BLAW-ASSOCIATES-2026, title: "What Does It Take to Get Big Law Associates Excited About AI? (Big Law Business column)", publisher: "Bloomberg Law", type: press, url: "https://news.bgov.com/business-and-practice/what-does-it-take-to-get-big-law-associates-excited-about-ai", date: "2026-07-30", access: full, locator: "paragraphs 3-8"}
     - {ref: HARVEY-BLANKROME-2026, title: "Developing Lawyers, Not Replacing Them: How Blank Rome Trains the Next Generation With Harvey (customer story)", publisher: "Harvey", type: vendor, url: "https://www.harvey.ai/customers/blank-rome", date: "2026-08-06", access: full, locator: "Key highlights and Trial Academy paragraph"}
   last_reviewed: "2026-10-19"
   notes: >-
-    Merged from practice 01 and discourse 04; Blank Rome routed from work-production. 'Nearly 400 hours' is
-    LawCareers.Net citing Reuters, which was blocked. Legal Cheek says Reed Smith has also offered credit for
-    innovation-related projects; no primary source was opened. Non-Billable's page shows a year only.
+    Merged from practice 01 and discourse 04; Blank Rome routed from work-production. 'Nearly 400 hours' is stated by
+    LawCareers.Net without a cited source; Legal Cheek's 'roughly 400' is derived from a reported 1,900-hour target.
+    Legal Cheek says Reed Smith has also offered credit for innovation-related projects; no primary source was opened.
 
 - id: professional-services-talent-learning-04
   title: "Rotations, seats and secondments that put juniors inside AI, innovation and knowledge teams"
@@ -317,8 +321,8 @@
     Freshfields (law firm) offers fully funded places on a King's College London LL.M in Law & Technology to future
     trainees in its February 2026, August 2026 and February 2027 intakes, with a GBP 20,000 maintenance grant and work
     with the Innovation team and Freshfields Lab, before the Trainee Associate Programme (FRESHFIELDS-KCL-2025). Harvey
-    launched Harvey Academy in January 2026, a free hub for lawyers, legal operations teams, innovation leaders and law
-    students, with an 'AI for Legal Basics' certification course, hands-on videos and digital certificates
+    launched Harvey Academy in January 2026, a learning hub for lawyers, legal operations teams, innovation leaders and
+    law students, with a free 'AI for Legal Basics' certification course, hands-on videos and digital certificates
     (HARVEY-ACADEMY-2026). Harvey says it works with more than 100 law schools; BPP made it available to hundreds of
     masters and SQE2 students (NONBILLABLE-HARVEY-2026). Legora launched a US law-school programme with nine founding
     schools, including Stanford, Chicago, Cornell and UCLA (NONBILLABLE-LEGORA-2026).
@@ -383,8 +387,8 @@
     with adjustable cooperation or hostility (TRI-SIM-2026); Three Crowns (arbitration law firm) has worked with
     Stanford on a cross-examination simulator (LEXIS-SYMPOSIUM-2026); Barbri plans a tool bridging law school and
     practice (TRI-TEACHV-2026). Personas: Duane Morris's talent chief describes a ChatGPT-based tool for rehearsing
-    difficult feedback conversations, built at her prior firm, that people used privately after a coach-controlled
-    avatar version went largely unused (TRI-ONBOARDING-2026). Pre-review feedback: a Brigham Young University accounting
+    difficult feedback conversations, rebuilt under her leadership years after a coach-controlled avatar version at her
+    prior firm went largely unused; people used the AI version privately (TRI-ONBOARDING-2026). Pre-review feedback: a Brigham Young University accounting
     professor built an AI review tool for Excel that entry-level staff use to find and fix problems before a manager
     reviews (JOA-TRAINING-2026); Ascend, a private-equity-backed accounting-firm platform, describes tools inside the
     work product that let a junior ask what changed in a return and why the partner changed it (ATODAY-ASCEND-2026).
@@ -408,15 +412,15 @@
   risks_and_guardrails:
     - "No published evidence that skills learned in simulation transfer to live matters; a Kennedys leader said the firm has not 'cracked the problem' (LEGALITINSIDER-KENNEDYS-2025)"
     - "Polished AI output can create an illusion of competence and cognitive offloading (TRI-DESIGNL-2026)"
-    - "A firm-built assistant lets juniors produce advanced output they 'may not be able to review', so firm-level review controls are needed (JOA-TRAINING-2026, High Rock Accounting CEO)"
+    - "High Rock Accounting's CEO proposes a firm-data assistant for juniors but warns they 'may not be able to review' its advanced output, so firm-level review controls are needed (JOA-TRAINING-2026)"
     - "The Accounting Today host asks whether people who no longer do returns can be as well informed about clients (ATODAY-ASCEND-2026)"
   human_checkpoints:
     - "Mentor-mentee coaching using the simulation feedback (TRI-SIM-2026)"
     - "Managers still review after the junior's self-check (JOA-TRAINING-2026)"
     - "Partners' changes remain the source of truth the assistant explains (ATODAY-ASCEND-2026)"
   role_evolution: >-
-    Juniors practise on simulated work and get immediate feedback, while seniors move from correcting basics to
-    supervising verification (TRI-DESIGNL-2026; TRI-TEACHV-2026). Seyfarth's managing partner suggests AI feedback could
+    Juniors practise on simulated work and get faster feedback, while supervisors are trained to evaluate AI-assisted
+    work (TRI-DESIGNL-2026; TRI-TEACHV-2026). Seyfarth's managing partner suggests AI feedback could
     widen access to guidance 'previously limited by time, ego, and hierarchy' (TRI-DESIGNL-2026). Associates can fail
     privately before failing in front of partners (TRI-LEGALWEEK-ASSOC-2026).
   evidence_grade: C
@@ -542,9 +546,9 @@
     or are restructuring. KPMG front-loads exams so graduates can advise clients in year two and has them learn
     alongside experienced staff and partners before client work; its chief people officer says graduates will review and
     exercise judgment more than produce outputs. PwC added debating sessions and KPMG coaching on basic workplace
-    behaviours (CITYAM-BIG4TRAINING-2026). US law firms: Bloomberg Law reports one firm developed a list of 12 'durable'
+    behaviours (CITYAM-BIG4TRAINING-2026). US law firms: Bloomberg Law reports that Winston Taylor developed a list of 12 'durable'
     skills (including work ethic, empathy and coachability) taught partly with Chicago's Steppenwolf Theater Company, and
-    another hired an AI-mindset trainer who presented to about 50 senior leaders (BLAW-ASSOCIATES-2026); Duane Morris
+    that Sheppard hired an AI-mindset trainer who presented to about 50 senior leaders (BLAW-ASSOCIATES-2026); Duane Morris
     stresses client confidence and business fluency (TRI-ONBOARDING-2026).
   outcomes:
     - lever: quality
@@ -556,18 +560,18 @@
   prerequisites:
     - "Reworked exam and curriculum timelines (CITYAM-BIG4TRAINING-2026)"
     - "Experienced staff and partners available to teach alongside graduates (CITYAM-BIG4TRAINING-2026)"
-    - "A professional-development budget for external coaches and partners (BLAW-ASSOCIATES-2026)"
+    - "External partners such as a theatre company or an AI-mindset trainer (BLAW-ASSOCIATES-2026)"
   risks_and_guardrails:
     - "Graduates arrive with strong LLM familiarity but little workplace experience, so basic behaviours need dedicated coaching (CITYAM-BIG4TRAINING-2026)"
     - "Associates get mixed messages from leadership, partners and clients about whether to use AI (TRI-CLOSEGAP-2026)"
     - "The UK consulting trade body's member-survey foreword flags concern about training quality under hybrid working (MCA-SURVEY-2026)"
   human_checkpoints:
     - "Learning alongside experienced staff and partners before client engagements (CITYAM-BIG4TRAINING-2026)"
-    - "Actors and coaches give live feedback on scenes (BLAW-ASSOCIATES-2026)"
+    - "Actors coach lawyers through scenes (BLAW-ASSOCIATES-2026)"
   role_evolution: >-
     Graduates become reviewers and judgment-makers sooner, and human skills become an explicit training target
-    (CITYAM-BIG4TRAINING-2026). Professional-development staff become designers of judgment-building experiences
-    (TRI-CLOSEGAP-2026).
+    (CITYAM-BIG4TRAINING-2026). TRI urges firms to redesign learning programmes to recreate 'cognitive friction' and to
+    break down silos between talent and knowledge-management teams (TRI-CLOSEGAP-2026).
   evidence_grade: B
   sources:
     - {ref: CITYAM-BIG4TRAINING-2026, title: "How AI is forcing the Big Four to rethink graduate training (Beyond The Billable column)", publisher: "City AM", type: press, url: "https://www.cityam.com/?p=2459320", date: "2026-09-23", access: full, locator: "sections 'Human skills are the new valuable skill to have' and 'The human touch'"}
@@ -578,8 +582,8 @@
   last_reviewed: "2026-10-19"
   notes: >-
     Merged from practice 07 and 14. The firm statements are answers to a City AM questionnaire; Deloitte and EY gave
-    quotes only. The Bloomberg Law text retrieved names the two law firms 'Winston Taylor' and 'Sheppard LLP', which look
-    like mirror or editing artefacts; check the original column before naming them.
+    quotes only. The Bloomberg Law column, read in full on its own site, names the two law firms as Winston Taylor and
+    Sheppard (current firm names).
 
 - id: professional-services-talent-learning-09
   title: "Teach and check verification and independent reasoning explicitly (curriculum, checklists, challenge exercises)"
@@ -605,7 +609,7 @@
     checklist built into a student's first exercises and carried into the first job (TRI-TEACHV-2026). TRI authors and
     an academic propose assigning a challenger to AI-generated work, having people reconstruct and defend the reasoning
     in their own words, returning to primary sources, 'AI-off days', and recording what a junior challenged and why
-    (TRI-DESIGNJUDG-2026; TRI-COGDEBT-2025).
+    (TRI-DESIGNJUDG-2026; TRI-COGDEBT-2025; TRI-STANDARDS-2026).
   outcomes:
     - lever: quality
       description: "Survey respondents' views on what would help juniors build reasoning while using AI"
@@ -633,7 +637,7 @@
     - "A lawyer's duty of competence includes reviewing, verifying and correcting AI output (CALBAR-GENAI-2026, p.4)"
     - "Partners and senior associates may bypass juniors because AI makes polished work fast, starving juniors of repetitions (TRI-TEACHV-2026)"
     - "Fredrikson's leader said the goal 'has not fully happened yet' (TRI-LDEV-2026)"
-    - "The cognitive-offloading evidence cited by TRI comes from outside the professions (TRI-COGDEBT-2025)"
+    - "The cognitive-offloading evidence TRI cites is an MIT Media Lab study of ChatGPT use, not a study of professionals (TRI-COGDEBT-2025)"
   human_checkpoints:
     - "Reviewer questions the junior on the reasoning behind AI-assisted conclusions (ICAEW-WORRY-2026)"
     - "Reasoning reconstruction and challenge by someone other than the drafter (TRI-DESIGNJUDG-2026)"
@@ -651,7 +655,7 @@
     - {ref: TRI-TEACHV-2026, title: "The missing skill in legal AI training: How to teach verification and judgment", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/teaching-verification-and-judgment", date: "2026-09-01", access: full, locator: "sections 'A checklist for verifying AI legal work' and 'Solving the junior lawyer learning paradox'"}
     - {ref: TRI-DESIGNJUDG-2026, title: "Designing judgment: Preserving AI-mediated legal collaboration", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/designing-judgment-ai-mediated-legal-collaboration", date: "2026-10-06", access: full, locator: "section 'Delegation versus collaboration'"}
     - {ref: TRI-COGDEBT-2025, title: "As AI usage accelerates, companies need to avoid cognitive debt & decay among their talent", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/avoiding-cognitive-debt-agency-decay", date: "2025-10-15", access: full, locator: "section 'Pairing human/AI intelligence'"}
-    - {ref: TRI-STANDARDS-2026, title: "Between accountability and chaos: Setting the AI standards that professionals demand", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/between-accountability-and-chaos", date: "2026-10-12", access: full, locator: "sections on the professional competency and judgment validation standards"}
+    - {ref: TRI-STANDARDS-2026, title: "Between accountability and chaos: Setting the AI standards that professionals demand", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/between-accountability-and-chaos", date: "2026-10-12", access: full, locator: "sections on the professional competency and judgment validation standards; 'document what you challenged and why'"}
     - {ref: LEXIS-SYMPOSIUM-2026, title: "Lawyering in the Age of AI: Preparing the Next Generation for Practice (LexisNexis AI Symposium panel recap)", publisher: "LexisNexis Legal & Professional", type: vendor, url: "https://www.lexisnexis.com/community/amp-insights/82/lawyering-in-the-age-of-ai-preparing-the-next-generation-for-practice", date: "2026-06-02", access: full, locator: "section 'AI can accelerate growth, but not without cost'"}
     - {ref: CALBAR-GENAI-2026, title: "Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)", publisher: "State Bar of California, COPRAC", type: regulator, url: "https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf", date: "2026-05", access: full, locator: "p.4, Duties of Competence and Diligence"}
   last_reviewed: "2026-10-19"
@@ -709,7 +713,7 @@
     - "Managerial and supervisory lawyers must make reasonable efforts to ensure subordinates comply; a subordinate must exercise independent professional judgment on AI use (CALBAR-GENAI-2026, p.7)"
     - "Under D.C. Rules 5.1 and 5.3 a lawyer should take reasonable measures so that a supervised lawyer's or nonlawyer's GenAI use conforms to the rules (DCBAR-OP388-2024, section C)"
     - "Lawyers are responsible for work product regardless of who or what did the original research and drafting (TXBAR-OP705-2025)"
-    - "Responsibility for erroneous work falls on trainees, solicitors, supervising partners and the firm (DWF-SRA-2026)"
+    - "DWF's guide says responsibility for erroneous work falls on trainees, solicitors, supervising partners and the firm (DWF-SRA-2026)"
     - "Reported incidents: a Pinsent Masons junior's AI-assisted research cited a non-existent insolvency rule; Sullivan & Cromwell apologised to a New York court for AI-hallucinated citations (LEGALCHEEK-REDDIT-2026, not verified at source)"
   human_checkpoints:
     - "Junior discloses AI use to the supervisor (DWF-SRA-2026)"
@@ -727,7 +731,7 @@
     - {ref: TXBAR-OP705-2025, title: "Opinion 705: lawyer's use of generative artificial intelligence", publisher: "Professional Ethics Committee for the State Bar of Texas", type: professional-body, url: "https://www.legalethicstexas.com/resources/opinions/opinion-705/", date: "2025-02", access: full, locator: "section 'Oversight/Supervision'"}
     - {ref: ILTA-TECHSURVEY-2026, title: "ILTA Technology Survey 2026 Executive Summary", publisher: "International Legal Technology Association", type: survey, url: "https://higherlogicdownload.s3.amazonaws.com/ILTANET/ce7f3e74-fb70-402e-a1b3-5dc0abe72260/UploadedImages/Misc%20PDFs/2606_ILTA_Executive_Summary_FINAL__1_.pdf", date: "2026-06", access: full, locator: "p.5, Q3.18 table"}
     - {ref: TRI-TEACHV-2026, title: "The missing skill in legal AI training: How to teach verification and judgment", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/teaching-verification-and-judgment", date: "2026-09-01", access: full, locator: "section 'Solving the junior lawyer learning paradox'"}
-    - {ref: LEGALCHEEK-REDDIT-2026, title: "Junior lawyers split: Is AI 'eating' their jobs, or just an above-average paralegal?", publisher: "Legal Cheek (reporting an r/biglaw thread)", type: community, url: "https://www.legalcheek.com/2026/07/junior-lawyers-divided-over-whether-ai-is-eating-their-jobs-or-just-cutting-the-boring-bits/amp/", date: "2026-07-08", access: full, locator: "paragraphs 2-4"}
+    - {ref: LEGALCHEEK-REDDIT-2026, title: "Junior lawyers split: Is AI 'eating' their jobs, or just an above-average paralegal?", publisher: "Legal Cheek (reporting an r/biglaw thread)", type: press, url: "https://www.legalcheek.com/2026/07/junior-lawyers-divided-over-whether-ai-is-eating-their-jobs-or-just-cutting-the-boring-bits/amp/", date: "2026-07-08", access: full, locator: "paragraphs 2-4"}
   last_reviewed: "2026-10-19"
   notes: >-
     From governance 13. Graded C: one firm's published guidance plus regulator and bar text, with no measured effect of
@@ -770,7 +774,7 @@
     - "A task with blinded expert scoring and a baseline test of judgment without the tool (NBER-AUTOR-2026)"
     - "The authors suggest foundational expertise may be a prerequisite for extracting durable skill from AI-assisted practice (NBER-AUTOR-2026)"
   risks_and_guardrails:
-    - "The study was conducted by Google, which funded the direct costs; five of the seven authors disclose Google employment or contractor ties (NBER-AUTOR-2026, disclosures)"
+    - "The study was conducted by Google, which funded the direct costs; six of the seven authors disclose Google employment or a paid contractor relationship, and Autor acknowledges support from a Google visiting fellows programme (NBER-AUTOR-2026, disclosures)"
     - "One task, one custom assistant, three months: results may not carry over to other tools or junior tasks (NBER-AUTOR-2026)"
     - "The authors suggest AI 'served as a springboard for some juniors and a cushion for others', so a zero average hides both risk and benefit (NBER-AUTOR-2026)"
   human_checkpoints:
@@ -944,8 +948,8 @@
     Bright Network that uses an applicant's application to start a conversation, giving a tailored, untimed virtual
     interview with practice elements in place of a long form. The firm's team reviews each transcript, and the Early
     Careers team makes all screening decisions (MISHCON-BRIGHT-2025). The controls regulators expect: a bias audit and
-    public summary (New York City), notice to applicants or employees (New York City, Illinois), documentation and human
-    review of adverse decisions (Colorado, from 1 January 2027), and EU high-risk obligations for employment uses such as
+    public summary (New York City), notice to applicants or employees (New York City, Illinois), developer documentation
+    duties from 1 January 2027 and a right to request human review of adverse decisions (Colorado), and EU high-risk obligations for employment uses such as
     CV-sorting software from 2 December 2027 (NYC-AEDT-2023; ILLINOIS-HB3773-2024; COLORADO-SB26189-2026; EC-AIACT-2026).
   outcomes:
     - lever: experience
@@ -1007,7 +1011,7 @@
   maturity: in-production
   problem: >-
     Firms that have invested in AI cannot capture value unless staff use it, and leaders lack a view of who uses which
-    tools (BLOOMBERG-KPMG-2025). Most professionals lack personal AI goals, and senior sceptics slow change
+    tools (BLOOMBERG-KPMG-2025). Only 39% of professionals have personal goals linked to AI adoption
     (TRI-FOPTALENT-2025).
   solution: >-
     KPMG (Big Four) tracks how staff use AI through data from tools such as Microsoft Copilot, according to its global AI
@@ -1035,7 +1039,7 @@
     - "Usage telemetry from AI tools such as Copilot (BLOOMBERG-KPMG-2025)"
     - "Managers able to set AI-related objectives for each role, and a communicated organisational AI strategy (BLOOMBERG-KPMG-2025; TRI-FOPTALENT-2025)"
   risks_and_guardrails:
-    - "Usage tracking can reward log-ins rather than quality or judgment; no source measures the effect on output"
+    - "Reviewer note: usage tracking can reward log-ins rather than quality or judgment; no source measures the effect on output"
     - "Associates get mixed signals when partners or clients discourage AI while leadership expects it, and the billable hour no longer works as a proof of worth (TRI-CLOSEGAP-2026)"
     - "PwC's own January survey of 4,454 business leaders found many saw neither higher revenue nor lower costs from AI (REGISTER-PWC-2026)"
     - "The EU AI Act lists AI for employment and management of workers as high-risk from 2 December 2027; whether usage monitoring falls within it is not addressed in the sources read (EC-AIACT-2026)"
@@ -1043,9 +1047,10 @@
     - "Year-end objective setting and review by managers (BLOOMBERG-KPMG-2025)"
     - "Promotion decisions into leadership consider AI adoption; how usage is weighed was not published (DECRYPT-ACCENTURE-2026)"
   role_evolution: >-
-    AI use becomes a condition of progression for juniors and partners alike (BLOOMBERG-KPMG-2025; CPAPA-PWC-2026). KPMG
-    says the monitoring is not for policing but to ensure everyone uses the tools and to measure the value of the
-    investment (BLOOMBERG-KPMG-2025).
+    AI objectives enter the performance reviews of KPMG staff down to juniors, and PwC's US CEO says senior staff who
+    resist AI will be replaced (BLOOMBERG-KPMG-2025; CPAPA-PWC-2026). KPMG's global head of risk services says the
+    monitoring is not for policing but to ensure everyone uses the tools and to measure the value of the investment
+    (BLOOMBERG-KPMG-2025).
   evidence_grade: B
   sources:
     - {ref: BLOOMBERG-KPMG-2025, title: "KPMG Staff to Be Rated on AI Usage in Yearly Performance Reviews", publisher: "Bloomberg", type: press, url: "https://news.bgov.com/health-law-and-business/kpmg-staff-to-be-rated-on-ai-usage-in-yearly-performance-reviews", date: "2025-10-31", access: full, locator: "paragraphs 1-8"}
@@ -1093,7 +1098,7 @@
     - "Firmwide Copilot licences and prompt telemetry (LEGALCHEEK-SHOOSMITHS-2025)"
     - "A bonus scheme open to staff (LEGALCHEEK-SHOOSMITHS-2025)"
   risks_and_guardrails:
-    - "The metric counts prompts, which measures use rather than quality or value"
+    - "Reviewer note: the metric counts prompts, which measures use rather than quality or value"
     - "Hill Dickinson restricted general access to several AI tools after a surge in usage, a counter-example in the same article (LEGALCHEEK-SHOOSMITHS-2025)"
     - "The firm says the tool is for non-legal tasks only (LEGALCHEEK-SHOOSMITHS-2025)"
   human_checkpoints:
@@ -1150,7 +1155,7 @@
     - "For any scoring use: validated, explainable indicators, notice to employees and impact assessment where required (ILLINOIS-HB3773-2024; COLORADO-SB26189-2026)"
   risks_and_guardrails:
     - "Illinois covers AI used in recruitment, hiring, promotion, selection for training or apprenticeship, discharge and discipline, and requires notice to employees (ILLINOIS-HB3773-2024, section (L))"
-    - "Colorado gives a right to request human review after adverse consequential decisions, including those about employment or compensation, from 2027 (COLORADO-SB26189-2026)"
+    - "Colorado gives a right to request human review after adverse consequential decisions, including those about employment; developer duties start 1 January 2027 (COLORADO-SB26189-2026)"
     - "The EU AI Act lists AI for employment and management of workers as high-risk, with obligations from 2 December 2027 (EC-AIACT-2026)"
     - "New York City requires bias audits and notices for automated employment decision tools used for candidates and employees (NYC-AEDT-2023)"
     - "California flags AI in employment actions as a bias risk and says firms should set policies to identify and address bias (CALBAR-GENAI-2026, p.9)"
@@ -1216,8 +1221,8 @@
     - "Sanctioned tools that meet confidentiality and verification needs (TR-FOP-2026)"
     - "A communicated AI strategy that reaches the desk: 35% of professionals with a named strategy say daily practice does not match it (TR-FOP-2026)"
   risks_and_guardrails:
-    - "Thomson Reuters sells AI products and 'fiduciary-grade AI' is its own standard, so the survey has a commercial interest"
-    - "Stated intentions to leave are not observed departures"
+    - "Thomson Reuters sells AI products and 'fiduciary-grade AI' is its own standard, so the survey has a commercial interest (TR-FOP-2026)"
+    - "Reviewer note: stated intentions to leave are not observed departures"
     - "Shadow AI raises data-exposure and governance risk (TR-FOP-2026)"
   human_checkpoints:
     - "Recruiters prepared to explain tools, workflow fit, client conversations and career impact (TRI-HIRINGMYTH-2026)"
@@ -1259,11 +1264,12 @@
     plan larger first-year classes (LAW360-CITI-2025), and laterals were 51% of Am Law 200 associate hires
     (GLP-SUREPOINT-2026). Held intake with a redesigned role: McKinsey (consulting) said it planned to grow North
     American headcount 12% in 2026, arguing younger recruits are more fluent in AI tools (PEOPLEMATTERS-MCK-2025), and
-    the Big Four each plan at least 1,000 UK junior hires this year, with EY expecting 1,600 (ICAEW-JUNIOR-2026).
+    ICAEW reports the Big Four each plan to hire at least 1,000 junior people this year, with EY expecting 1,600
+    (ICAEW-JUNIOR-2026).
   outcomes:
     - lever: cost
-      description: "UK Big Four graduate and school-leaver recruitment, 2023 to the latest full year"
-      figure: "KPMG 1,399 to 942 (-29%); Deloitte 1,700 to 1,400 (-18%); EY 1,800 to 1,600 (-11%); PwC 1,600 to 1,500 (-6%)"
+      description: "UK Big Four graduate and school-leaver recruitment, 2023 to 2024"
+      figure: "KPMG 1,399 to 942 (reported as -29%; the counts imply -33%); Deloitte 1,700 to 1,400 (-18%); EY 1,800 to 1,600 (-11%); PwC 1,600 to 1,500 (-6%)"
       measures: "Recruitment per firm as compiled by The Telegraph and relayed by Scottish Financial News (June 2025); not published by the firms"
       provenance: independent
       source_ref: SFN-BIG4-2025
@@ -1303,19 +1309,21 @@
     - "Lateral integration capacity: CMBDO Forum panellists say firms often fail to integrate laterals (TRI-CMBDO-2026)"
   risks_and_guardrails:
     - "Attribution is contested: PwC UK named the economy as the single biggest factor in its 1,300 versus 1,500 intake (PEOPLEMATTERS-PWC-2025); ICAEW says it is unclear how much AI contributed (ICAEW-WORRY-2026); High Fliers ties UK graduate cuts to economic uncertainty (HIGHFLIERS-GM-2026)"
-    - "Hiring cycles: past peaks were followed by smaller classes three years later, and 2024 was not a recession year (BLOOMBERGLAW-HIRING-2026)"
+    - "Hiring cycles: past peaks were followed by smaller classes three years later, and 2024 was not a recession year, though the columnist argues this decline is driven by AI rather than the economy (BLOOMBERGLAW-HIRING-2026)"
     - "Pipeline risk: firms that closed inbound apprenticeships after 2008 reportedly struggled for management talent about five years later (ICAEW-JUNIOR-2026)"
-    - "Free-rider problem: if every firm buys experience laterally, someone still has to train juniors (VAULT-PYRAMID-2026; CONSULTANCYUK-PYRAMID-2026)"
+    - "Pipeline question: if junior roles contract, it is unclear where future experts come from; one answer offered is hiring people trained in industry (CONSULTANCYUK-PYRAMID-2026), and Vault notes no firm has answered where skill comes from (VAULT-PYRAMID-2026)"
     - "Client pressure: a mid-tier firm partner said a client told them junior hours were too high and AI should reduce them (ICAEW-EXPECT-2026)"
   human_checkpoints:
     - "Partner, board or talent-committee decision on class size, reviewed annually against demand and client pressure"
   role_evolution: >-
-    Associate populations skew more senior, with more lateral and non-equity roles: BCG Attorney Search data cited by
-    Vault show equity-partner headcount down 0.5% and leverage up 4.3% in the first nine months of 2025
-    (VAULT-PYRAMID-2026). Lateral AI-specialism associate hiring grew 106% in 2025 (GLP-SUREPOINT-2026). A consulting
-    managing partner argues for a 'diamond' shape and an inverted path of industry first, consulting later
-    (CONSULTANCYUK-PYRAMID-2026, opinion). EY and PwC US doubled the bonus for entry-level hires who pass all four CPA
-    exam parts to USD 10,000 (CPAPA-STOP-2026).
+    The Citi/Hildebrandt report expects associate populations to shift to a more senior demographic (LAW360-CITI-2025).
+    BCG Attorney Search data cited by Vault show large-firm equity-partner headcount down 0.5%, with all growth in
+    salaried non-equity lawyers, and leverage up 4.3% in the first nine months of 2025 (VAULT-PYRAMID-2026). SurePoint's
+    2025 State of the Legal Industry Report found lateral associate hiring in the AI specialism grew 106%
+    (GLP-SUREPOINT-2026). A Mangrove Consulting managing partner calls the 'diamond' the most discussed model, raises
+    flipping the pyramid, and sees an inverted path of industry first, consulting later (CONSULTANCYUK-PYRAMID-2026,
+    opinion). EY and PwC doubled the bonus for entry-level hires who pass all four CPA exam parts to USD 10,000
+    (CPAPA-STOP-2026).
   evidence_grade: B
   sources:
     - {ref: SFN-BIG4-2025, title: "Big Four slash graduate jobs as AI takes over entry-level tasks (reporting The Telegraph)", publisher: "Scottish Financial News", type: press, url: "https://www.scottishfinancialnews.com/articles/big-four-slash-graduate-jobs-as-ai-takes-over-entry-level-tasks", date: "2025-06-23", access: full, locator: "paragraphs 1-6"}
@@ -1328,8 +1336,8 @@
     - {ref: PEOPLEMATTERS-MCK-2025, title: "McKinsey rejects AI job fears, to boost hiring by 12% in 2026 (reporting Reuters and the Wall Street Journal)", publisher: "People Matters", type: press, url: "https://www.peoplematters.in/news/strategic-hr/mckinsey-rejects-ai-job-fears-to-boost-hiring-by-12percent-in-2026-43536", date: "2025-09-12", access: full, locator: "paragraphs 1-6"}
     - {ref: ICAEW-JUNIOR-2026, title: "Why we still need junior accountants in the age of AI, and how their roles might change", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/apr-2026/why-we-still-need-junior-accountants-and-how-their-role-might-change", date: "2026-04-02", access: full, locator: "paragraphs 1-4"}
     - {ref: ICAEW-WORRY-2026, title: "AI: are junior accountants worried about roles?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/ai-are-junior-accountants-worried-about-roles", date: "2026-06-10", access: full, locator: "key takeaways and intro"}
-    - {ref: ICAEW-EXPECT-2026, title: "Are businesses expecting too much of AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/feb-2026/are-businesses-expecting-too-much-of-ai", date: "2026-02", access: full, locator: "opening paragraphs"}
-    - {ref: HIGHFLIERS-GM-2026, title: "The Graduate Market in 2026 (report page)", publisher: "High Fliers Research", type: survey, url: "https://highfliers.co.uk/publication-the-graduate-market-report", date: "2026-03-19", access: full, locator: "section 'An Unprecedented Drop in Graduate Jobs'"}
+    - {ref: ICAEW-EXPECT-2026, title: "Are businesses expecting too much of AI?", publisher: "ICAEW", type: professional-body, url: "https://www.icaew.com/insights/viewpoints-on-the-news/2026/feb-2026/are-businesses-expecting-too-much-of-ai", date: "2026-02-03", access: full, locator: "opening paragraphs"}
+    - {ref: HIGHFLIERS-GM-2026, title: "The Graduate Market in 2026 (report page)", publisher: "High Fliers Research", type: survey, url: "https://highfliers.co.uk/publication-the-graduate-market-report", date: "2026-02-05", access: full, locator: "section 'An Unprecedented Drop in Graduate Jobs'"}
     - {ref: STANFORD-CANARIES-2026, title: "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence", publisher: "Stanford Digital Economy Lab", type: academic, url: "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/", date: "2026-08-12", access: full, locator: "abstract (revised version)"}
     - {ref: VAULT-PYRAMID-2026, title: "The Compressed Pyramid: What AI Means for the Associate Career Ladder", publisher: "Vault", type: press, url: "https://legacy.vault.com/blogs/vaults-law-blog-legal-careers-and-industry-news/the-compressed-pyramid-what-ai-means-for-the-associate-career-ladder", date: "2026-08-11", access: full, locator: "sections 'The Numbers Behind the Shift' and 'How Firms Are Responding'"}
     - {ref: CONSULTANCYUK-PYRAMID-2026, title: "AI may up-end the consulting pyramid", publisher: "Consultancy.uk", type: press, url: "https://www.consultancy.uk/news/43210/ai-may-up-end-the-consulting-pyramid", date: "2026-02-19", access: full, locator: "sections 'The shape of things to come' and 'The graduate question'"}
@@ -1395,7 +1403,7 @@
     - "A veteran ILTA respondent noted earlier 'transformative' innovations produced minimal change (ILTA-TECHSURVEY-2026)"
     - "Forrester says consultancies still need a talent pipeline to develop the next generation of expertise (FORRESTER-BLOG-2025)"
     - "AI-assisted staffing and task-allocation decisions fall under EU high-risk employment rules from 2 December 2027 (EC-AIACT-2026)"
-    - "General Assembly is an AI training provider with a commercial interest; Kantata sells PSA software"
+    - "General Assembly is an AI training provider with a commercial interest; Kantata sells PSA software (LAW360-GA-2026; KANTATA-RMI-2026)"
   human_checkpoints:
     - "Partners and management committees decide structure"
     - "Resource managers approve team composition (KANTATA-RMI-2026)"
@@ -1404,8 +1412,8 @@
     pricing experts, project managers and AI governance practitioners are named as increasingly prominent
     (LAW360-CITI-2025). General Assembly's head of professional services argues mid-level professionals should become
     'workflow engineers' (LAW360-GA-2026). 72% of RMI respondents say resource management is primarily operational today,
-    and the study frames a shift toward strategic team composition (KANTATA-RMI-2026). 64% of IT leaders in a TRI survey
-    expect HR and IT to merge within five years (TRI-HUMANAGENT-2025).
+    and the study frames a shift toward strategic team composition (KANTATA-RMI-2026). TRI cites a survey in which 64% of
+    IT leaders expect HR and IT to merge within five years (TRI-HUMANAGENT-2025).
   evidence_grade: C
   sources:
     - {ref: LAW360-CITI-2025, title: "Law Firms' Junior Roles At Risk From AI, Report Says", publisher: "Law360 Pulse", type: press, url: "https://www.law360.com/articles/2422148/law-firms-junior-roles-at-risk-from-ai-report-says", date: "2025-12-15", access: full, locator: "paragraphs 4-8"}
@@ -1438,11 +1446,11 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: >-
-    The skills a services firm needs change faster than it can retrain everyone, and its structure and performance
-    measures may not match its AI strategy (FORTUNE-ACCENTURE-2025).
+    For some staff, reskilling is not a viable path to the skills the firm needs, and the CEO says strategy, structure
+    and ways of measuring performance were not aligned (FORTUNE-ACCENTURE-2025).
   solution: >-
     Accenture (consulting and technology services) announced a six-month business optimisation programme with up to
-    USD 865 million of related charges and a three-part talent strategy: invest in upskilling, exit people on a
+    USD 865 million of related charges (including two divestitures) and a three-part talent strategy: invest in upskilling, exit people on a
     compressed timeline where reskilling is not a viable path for the skills needed, and drive operating efficiencies.
     Its CEO said savings above USD 1 billion are expected, to be reinvested, and that headcount is still expected to
     rise overall (FORTUNE-ACCENTURE-2025). AI and data staff nearly doubled to 77,000 in two years
@@ -1455,11 +1463,11 @@
       provenance: self-reported
       source_ref: FORTUNE-ACCENTURE-2025
   prerequisites:
-    - "A skills taxonomy and a view of which skills the firm needs (FORTUNE-ACCENTURE-2025)"
+    - "A view of which skills the firm needs and where reskilling is not viable (FORTUNE-ACCENTURE-2025)"
     - "Training capacity for the upskilling leg (CIODIVE-ACCENTURE-2025)"
   risks_and_guardrails:
     - "The CEO described emotional and strategic difficulty in the departures of senior team leaders and the restructuring (FORTUNE-ACCENTURE-2025)"
-    - "Selection criteria for exits were not published"
+    - "Reviewer note: selection criteria for exits were not published"
   human_checkpoints:
     - "None stated in the sources"
   role_evolution: >-
@@ -1509,9 +1517,9 @@
   risks_and_guardrails:
     - "Legal Cheek states Baker McKenzie's numbers ambiguously ('less than 10% - or roughly 600 positions') and the firm has not confirmed them (LEGALCHEEK-BAKERMCK-2026)"
     - "Employees were unhappy about the timing of the announcement before Christmas (CITYAM-CC-2025)"
-    - "Cause is mixed: Clifford Chance cites AI and reduced demand; Baker McKenzie lists AI among several factors"
+    - "Cause is mixed: Clifford Chance cites AI and reduced demand; Baker McKenzie lists AI among several factors (CITYAM-CC-2025; LEGALCHEEK-BAKERMCK-2026)"
   human_checkpoints:
-    - "Statutory consultation before decisions are final (LEGALCHEEK-BAKERMCK-2026)"
+    - "Consultation processes in applicable jurisdictions before changes are final (LEGALCHEEK-BAKERMCK-2026)"
   role_evolution: >-
     Some support roles disappear and others evolve toward the roles that best serve clients (LEGALCHEEK-BAKERMCK-2026).
     Legal Cheek notes Freshfields and Irwin Mitchell have also announced paralegal layoffs (LEGALCHEEK-BAKERMCK-2026).
@@ -1592,9 +1600,7 @@
     Idea discussed by practitioners and academics. A consultant proposes progression built on milestones (what the
     person must know and do, who teaches it, how often they practise, what evidence shows readiness), with early-career
     staff starting nearer where today's seniors begin and learning through deliberate exposure: returns with buried
-    issues, plausible-but-wrong AI recommendations, and client meetings followed by debriefs (TRI-TAAP2030-2026). Law
-    professors quoted by Vault suggest funding development time outside client billing and weighing associates on client
-    feedback and revenue contribution, not only hours (VAULT-PYRAMID-2026). A LexisNexis survey found law-firm leaders
+    issues, plausible-but-wrong AI recommendations, and client meetings followed by debriefs (TRI-TAAP2030-2026). A LexisNexis survey found law-firm leaders
     rank revenue growth (55%) and client feedback (49%) above billable hours (38%) as success measures, while associates
     rank billable hours and client feedback equally (54% each) (LEXIS-MENTORPR-2026).
   outcomes:
@@ -1618,9 +1624,9 @@
     - "Partner and talent-committee approval of new metrics"
   role_evolution: >-
     Entry-level staff start closer to senior-level work (TRI-TAAP2030-2026); Withum reports pushing tasks down from
-    seniors to juniors (JOA-TRAINING-2026). A TRI contributor writing as a law-firm leader argues leaders must act as
-    systems design architects, because the link between repetitive work and judgment is inferred, not proven
-    (TRI-DESIGNL-2026).
+    seniors to juniors (JOA-TRAINING-2026). Seyfarth's chair and managing partner, writing for TRI, argues leaders must
+    become systems design architects, because beliefs about how repetitive work builds judgment are 'largely
+    inferential' (TRI-DESIGNL-2026).
   evidence_grade: D
   sources:
     - {ref: TRI-TAAP2030-2026, title: "The tax, accounting & audit firm of 2030: Building the people of tomorrow's tax firm", publisher: "Thomson Reuters Institute", type: press, url: "https://www.thomsonreuters.com/en/institute/articles/tax-audit-accounting-firm-of-2030-building-people-for-tomorrow", date: "2026-10-16", access: full, locator: "sections 'Start training through experience' and 'The first 2 years need to look completely different'"}
