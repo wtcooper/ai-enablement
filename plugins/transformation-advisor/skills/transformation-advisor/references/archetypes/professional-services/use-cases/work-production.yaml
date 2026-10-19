@@ -1720,13 +1720,17 @@
   prerequisites:
   - Connectors into document management, research and e-discovery tools; setup of playbooks and escalation chains
   - A permissions framework for tiers of agents, and checkpoints around higher-risk actions (LAWSOC-AGENTIC-2026)
+  - Document and email systems with matter-level permissions, so an agent's access can be limited by matter and client
   risks_and_guardrails:
   - Lawyers must not let agentic systems make substantive legal determinations, communicate advice or file pleadings without meaningful supervision (CALBAR-GENAI-2026)
   - Agentic tools must not send client data externally without safeguards and review (CALBAR-GENAI-2026)
+  - Unrestricted or poorly configured agentic systems may disclose confidential information across matters, so lawyers must limit and monitor their access (CALBAR-GENAI-2026)
+  - Self-learning tools can disclose one client's information in other matters even when used only inside one firm (ABA-OP512-2024)
   - Agents may access things they should not (LAWSOC-AGENTIC-2026)
   - OpenAI offers zero data retention to its Trusted Access programme (LAWSITES-OPENAI-2026)
   human_checkpoints:
   - Lawyer supervises and reviews outputs; checkpoints are designed around higher-risk actions rather than every step (LAWSOC-AGENTIC-2026)
+  - IT and risk approve each data source an agent is connected to; a lawyer approves any external transmission
   role_evolution: >-
     Review shifts from checking every output to designing checkpoints and permissions (LAWSOC-AGENTIC-2026). No firm
     has published results of delegating whole workstreams.
@@ -1771,11 +1775,20 @@
     url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
     date: '2026-05-14'
     access: full
-    locator: Executive summary, Agentic AI section; Confidentiality
+    locator: Executive summary, Agentic AI section; Confidentiality, pp. 5-6
+  - ref: ABA-OP512-2024
+    title: 'Formal Opinion 512: Generative Artificial Intelligence Tools'
+    publisher: American Bar Association, Standing Committee on Ethics and Professional Responsibility
+    type: professional-body
+    url: https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf
+    date: '2024-07-29'
+    access: full
+    locator: Part II.B, p. 6
   last_reviewed: '2026-10-19'
   notes: >-
-    Vendor packages for law firms and in-house teams; professional-body and regulator views. Merged from practice-21
-    and discourse-13 (the Law Society and California examples, graded D as an idea in that deep dive). Announcements,
+    Vendor packages for law firms and in-house teams; professional-body and regulator views. Merged from practice-21,
+    discourse-13 (the Law Society and California examples, graded D as an idea in that deep dive) and governance-16
+    (matter-scoped access controls for connected and agentic AI, an idea with no deployed configuration found). Announcements,
     not deployments. The Law Society page date is given as 2026-10-19 by the discourse deep dive; the landscape lists
     1 October 2026 for the feature, so the day is uncertain.
 
