@@ -5,7 +5,7 @@ Last reviewed 2026-10-19. Use cases live in `../use-cases/acceptance-risk.yaml` 
 the YAML. **Read this first:** public evidence here is thin and mostly vendor-published, chiefly Intapp. No named
 organisation reports an error, override or false-positive rate for AI in conflicts, KYC or acceptance, and no inspection
 finding or independent benchmark exists. The measured gains (BDO Canada, Sandberg Phoenix, Loeb & Loeb) come from
-replacing manual workflows, not from AI. There is no grade A entry; 6 are B, 6 C and 2 D.
+replacing manual workflows, not from AI. There is no grade A entry; 6 are B, 6 C and 2 D, so only 43% are A or B.
 
 ## Contents
 
@@ -69,9 +69,10 @@ separate entry**; the nearest is staff asking an assistant about client terms in
 
 **Due diligence, KYC and AML**
 - Improve (process): `#06` Pinsent Masons (UK law) and Xapien co-developed an LLM-generated, sourced AML due-diligence
-  report; low-risk clients pass with minimal oversight, medium go to the AML team, high need further verification or partner consultation.
+  report; low-risk clients pass with minimal oversight, medium go to the AML team, and high-risk cases may need further
+  verification or partner consultation.
   Results are stated as expectations (piloting, B). `#07` idea: an agent scores adverse media with a written
-  justification (research prototype for banks, D).
+  justification (research prototype for financial institutions, D).
 
 **Acceptance workflow, letters and terms**
 - Automate (process): `#08` risk-scored routing, connected checks, audit trail and generated documents. BDO Canada
@@ -147,14 +148,14 @@ lead. Expect "we don't measure that" on AI effects; note who would know.
 **AI claims (no measured result)**
 - Celeste surfaces matters and partner experience "in minutes rather than hours" (vendor) [INTAPP-CELESTEGA-2026].
 - Pinsent Masons expects low-risk clients cleared in hours rather than days and a report in about 15 minutes
-  (expectation) [XAPIEN-PINSENT-2026]. An ebook summary says fee earners lost 2.4 million hours to opening new matters
+  (expectation) [XAPIEN-PINSENT-2025]. An ebook summary says fee earners lost 2.4 million hours to opening new matters
   (problem statement) [XAPIEN-PINSENT-EBOOK-2025].
 - One unnamed small firm: 2-3 hours to 8 minutes per conflicts check (builder's own account) [ADAI-CONFLICT-2026].
 
 **Regulator and survey context**
 - SRA 2025 AML report, via a VinciWorks summary: 935 supervisory engagements; 270 firms (32%) non-compliant; 39% of
   client and matter risk assessments ineffective or incomplete; 92% screen new clients against sanctions lists, 79%
-  re-check existing clients [VINCI-SRA-2025]. Secondary; the SRA page was blocked.
+  re-check existing clients [VINCI-SRA-2025]. The SRA's own pages confirm 935 and 270; the rest stay secondary.
 - Law firms whose generative AI policy says "must obtain client approval": 8% (under 50 lawyers), 20%, 24%, 38%
   (350-699) and 34% (over 700) [ILTA-TECHSURVEY-2026].
 - 657 in-house professionals: 61% plan to push for change in how outside counsel deliver and price; 59% see no GenAI
@@ -175,26 +176,28 @@ share of matters with client AI terms captured at opening; alerts per analyst.
 determinations without meaningful lawyer supervision; it names autonomously facilitating client intake as an agentic
 example; agent access to client files must be scoped and monitored, since agents with persistent access can disclose
 information across matters; AI used to screen clients or candidates may carry bias risk [CALBAR-GENAI-2026].
-Oregon (Feb 2026): a prospect's disqualifying information gathered by a chatbot should promptly enter the conflict
-system, and autonomous actions such as sending an engagement letter should need lawyer approval [OSB-FO-2026-208].
+Oregon (Feb 2026): lawyers who get enough information about a prospect through a chatbot should promptly enter the
+prospect into their conflict system; an agent could send an engagement letter without consulting the lawyer, so it would
+be prudent to subject a chatbot's autonomous actions to lawyer approval [OSB-FO-2026-208].
 
 **Consent, disclosure and client instructions.** ABA Opinion 512 (2024-07-29): informed consent is needed before putting
 client information into many self-learning tools; boilerplate engagement-letter wording is not enough; disclose AI use
 when engagement terms or OCGs require it [ABA-OP512-2024]. California: follow client guidelines that restrict AI
-[CALBAR-GENAI-2026]. ACCA (UK tax, Sept 2026): disclose AI use in the engagement letter and, where AI is fundamental,
-tell the client first; a clause will not make an unsafe process safe [ACCA-ENGLETTERS-2026].
+[CALBAR-GENAI-2026]. UK tax: an ACCA In Practice article (Sept 2026) reports that the January 2026 PCRT update suggests
+disclosing AI use in the engagement letter and, where AI is fundamental, telling the client first; the article adds that
+a clause will not make an unsafe process safe [ACCA-ENGLETTERS-2026].
 
 **Ethical walls.** Self-learning tools can disclose information to people barred by a wall [ABA-OP512-2024]. Systems that
-keep inputs inside the firm must still stop information reaching colleagues behind a wall; shared knowledge bases that
-mix clients can breach walls [NYCBAR-OP2024-5-2024].
+keep inputs inside the firm must still stop information reaching colleagues behind a wall, and a firm's generative AI
+systems must implement any required ethical screens [NYCBAR-OP2024-5-2024].
 
 **Accounting ethics.** IESBA (June 2026): the Code applies regardless of technology; accountants must assess the fitness
-for purpose and bias of technology outputs; automation bias is named as a threat to objectivity; client data used for AI
-training needs authorisation [IESBA-SNAPSHOT-2026]. PCAOB QC 1000 is scheduled to take effect on 15 Dec 2026
+for purpose and potential bias of technology outputs; automation bias is named as a bias that can impair objectivity;
+client data used for AI training needs authorisation [IESBA-SNAPSHOT-2026]. PCAOB QC 1000 is scheduled to take effect on 15 Dec 2026
 [PCAOB-QC1000-2025]; its acceptance provisions were not read. Detail: assurance archetype.
 
-**UK AML and conduct.** Practitioners expect tougher evidence standards and keep acceptance decisions human-led; AI is
-used for triage [VINCI-AML-2026]. The SRA issued an AI warning notice on 17 Aug 2026, covering confidential data in
+**UK AML and conduct.** UK law-firm compliance staff at a VinciWorks group meeting expect tougher evidence standards and
+keep acceptance decisions human-led; AI is used for triage [VINCI-AML-2026]. The SRA issued an AI warning notice on 17 Aug 2026, covering confidential data in
 unsafe tools (seen via a law-firm article) [DWF-SRA-2026].
 
 **Insurance.** Insurers are expected to ask more about supervision of AI-enabled work, and cover is uncertain where a
@@ -209,18 +212,17 @@ monitoring alerts; any conflict that turns on relationship history.
 - **Risk counsel and conflicts staff** move from doing the work to confirming AI output: Fredrikson & Byron's risk
   counsel confirms AI categorisations of client guidelines, and staff ask the assistant instead of her
   [INTAPP-FREDRIKSON-2024].
-- **Intake and data-entry work** shrinks with workflow platforms: Loeb & Loeb says its paper "human workflow engine",
-  which needed four people on data entry, became obsolete [INTAPP-LOEB-2021]. Sandberg Phoenix built a dedicated intake
-  department as it grew [INTAPP-SANDBERG-2025].
-- **AML analysts** focus on higher-risk cases under risk-tiered routing (vendor statement) [XAPIEN-PINSENT-2026].
+- **Intake and data-entry work** shrinks with workflow platforms: Intapp's Loeb & Loeb case study says the firm's paper
+  "human workflow engine", which needed four people on data entry, became obsolete [INTAPP-LOEB-2021]. Sandberg Phoenix
+  needed a dedicated intake department as it grew (case study) [INTAPP-SANDBERG-2025].
+- **AML analysts** focus on higher-risk cases under risk-tiered routing (vendor statement) [XAPIEN-PINSENT-2025].
 - **Conflicts teams under lateral growth:** BakerHostetler's CIO believes Celeste can help the firm evaluate conflicts
   faster after many lateral-driven onboardings [INTAPP-CELESTEGA-2026].
-- **Hiring signals show no AI duty yet:** one conflicts-analyst posting asks for Intapp, iManage and Aderant experience
-  [VIRTUALVOCATIONS-2026]. A Baker McKenzie "Client AI Risk Lead" posting was seen in search only
-  [BAKERMCKENZIE-CLIENTAIRISK-2026].
-- **Firm general counsel** take on compliance with client AI guidelines (a roundtable topic) [JENNER-SANDPIPER-2026].
-- **In-house lawyers** own each answer an agent gives the business; routine work stops landing on senior people
-  (vendor statement) [LEGORA-INTAKE-2026].
+- **Hiring signals show no AI duty yet:** a conflicts-analyst posting asks for Intapp, iManage and Aderant experience
+  [VIRTUALVOCATIONS-2026].
+- **Firm general counsel:** their role in managing AI-guideline compliance was a roundtable topic [JENNER-SANDPIPER-2026].
+- **In-house lawyers** own each answer an agent gives the business; Legora's general counsel says routine work stops
+  landing on her most senior people (vendor statement) [LEGORA-INTAKE-2026].
 - **Risk managers and insurers**: Swiss Re Corporate Solutions and Wickard announced AI risk education for law
   firms covering supervision, confidentiality and internal AI approval processes [SWISSRE-WICKARD-2026].
 
@@ -242,7 +244,7 @@ monitoring alerts; any conflict that turns on relationship history.
 - 2026-09-17: Celeste plug-in for ChatGPT Enterprise, including checks against client guidelines [INTAPP-OPENAI-2026].
 - 2026-10-08: Sandpiper roundtable on AI in OCGs and engagement letters [JENNER-SANDPIPER-2026]; Coheso launches Memory
   for its in-house front door [AL-COHESO-2026].
-- 2026-10: Legora and Harvey launch in-house Intake products [LEGORA-INTAKE-2026; HARVEY-INTAKE-2026].
+- 2026-10-13: Legora and Harvey launch in-house Intake products [LEGORA-INTAKE-2026; HARVEY-INTAKE-2026].
 - Scheduled, not evidence: PCAOB QC 1000 effective 15 Dec 2026 [PCAOB-QC1000-2025].
 
 ## 9. Common objections
@@ -277,11 +279,11 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys not in th
 - **Regulators, standard-setters, professional bodies:** CALBAR-GENAI-2026, ABA-OP512-2024, NYCBAR-OP2024-5-2024,
   OSB-FO-2026-208, IESBA-SNAPSHOT-2026, ACCA-ENGLETTERS-2026, ILTA-TECHSURVEY-2026, PCAOB-QC1000-2025* (PCAOB, QC 1000
   effective-date postponement release, 2025-08).
-- **Surveys:** TR-FOP-2026* (Thomson Reuters, Future of Professionals Report 2026), ACCEVERLAW-2025* (ACC and Everlaw,
+- **Surveys:** TR-FOP-2026* (Thomson Reuters, Future of Professionals Report 2026, 2026-07-21), ACCEVERLAW-2025* (ACC and Everlaw,
   GenAI survey press release, 2025-10-14), LEXISNEXIS-FOW-2026* (LexisNexis, blog on Future of Work 2026 consulting
   report, 2026-04-16).
 - **Firm and vendor case studies:** INTAPP-BDOCA-2025, INTAPP-SANDBERG-2025, INTAPP-LOEB-2021, INTAPP-BDOAU-2024,
-  INTAPP-FREDRIKSON-2024, INTAPP-PRACTUS-2026, XAPIEN-PINSENT-2026, XAPIEN-PINSENT-EBOOK-2025, XAPIEN-IDD-2024,
+  INTAPP-FREDRIKSON-2024, INTAPP-PRACTUS-2026, XAPIEN-PINSENT-2025, XAPIEN-PINSENT-EBOOK-2025, XAPIEN-IDD-2024,
   IMANAGE-CHAFFETZ-2026, FENERGO-GT-2026* (Fenergo, Grant Thornton UK selection release, 2026-03-03).
 - **Vendor product pages and releases:** INTAPP-CELESTEGA-2026, INTAPP-CONFLICTSAI-2026, INTAPP-ONBOARDAI-2026,
   INTAPP-INTAKE-2026, INTAPP-TERMS-2026, INTAPP-WALLS-2026, INTAPP-HARVEY-2026, INTAPP-OPENAI-2026, LEGORA-INTAKE-2026,
@@ -293,7 +295,6 @@ Full details (title, URL, date, locator, access) are in the YAML. Keys not in th
   DWF-SRA-2026* (DWF, guide to AI for trainees citing the SRA warning notice, 2026-08-21), DACB-PI-2026* (DAC
   Beachcroft, PI insurance and AI hallucinations, 2026-09-28), IAMAG-LAWPL-2026* (Independent Agent magazine, AI and law
   firm professional liability, 2026-03-09), SWISSRE-WICKARD-2026* (National Law Review release, 2026-08-27),
-  BLOOMBERGLAW-DISCLOSURE-2023* (Bloomberg Law, firms on telling clients about AI use, 2023-11-29). Academic:
-  ORBILU-ADVERSE-2025.
-- **Job postings:** VIRTUALVOCATIONS-2026, BAKERMCKENZIE-CLIENTAIRISK-2026* (Baker McKenzie, Client AI Risk Lead,
-  2026, search-only).
+  BLOOMBERGLAW-DISCLOSURE-2023* (Bloomberg Law, firms on telling clients about AI use, 2023-11-29), LEGALTECH-CELESTE-2026 (Legal IT Insider,
+  2026-07-27). Academic: ARXIV-ADVERSE-2025 (read in full), ORBILU-ADVERSE-2025 (repository record, not reachable).
+- **Job postings:** VIRTUALVOCATIONS-2026.

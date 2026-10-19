@@ -621,8 +621,9 @@
   maturity: in-production
   problem: >-
     AI assistants that search firm content can reach matters that a person behind an ethical wall (a screen that keeps
-    a person away from a matter) may not see, and wall policies have historically not extended into AI tools. At one law
-    firm, Chaffetz Lindsey, more than 35 percent of matters carry ethical screens.
+    a person away from a matter) may not see; Intapp and Harvey say governance protocols have historically not extended
+    into AI platforms and agents (INTAPP-HARVEY-2026). At one law firm, Chaffetz Lindsey, more than 35 percent of matters
+    carry ethical screens (IMANAGE-CHAFFETZ-2026).
   solution: >-
     Nelson Mullins' applications manager says that with Intapp Walls she can point Microsoft Copilot where the firm wants
     and it pulls only from matters the user can access. Intapp and Harvey announced plans to sync wall policies with
@@ -639,7 +640,7 @@
     - Integrations between the wall system and each AI tool; Intapp lists Harvey, Microsoft Copilot and Celeste (INTAPP-WALLS-2026).
   risks_and_guardrails:
     - ABA Opinion 512 notes a self-learning tool may disclose information to people in the firm who are barred by an ethical wall, and quotes a Pennsylvania opinion warning that some AI models lack safeguards like ethical walls (ABA-OP512-2024).
-    - The NYC Bar says systems that keep inputs inside the firm do not pose the third-party risk, but the lawyer must still stop information reaching colleagues behind an ethical wall; shared knowledge bases that mix clients can breach walls (NYCBAR-OP2024-5-2024, pp. 2-4).
+    - The NYC Bar says "closed" systems that keep inputs inside the firm do not pose the third-party risk, but the lawyer must still stop confidential information reaching colleagues barred by an ethical wall, and a firm's generative AI systems must implement any required ethical screens (NYCBAR-OP2024-5-2024, pp. 2-4).
     - California's guidance warns that agentic systems may unintentionally disclose confidential information across matters (CALBAR-GENAI-2026).
     - The Harvey-Intapp item is a plan ("announced their plans"), with no named adopting firm or availability date in the release (INTAPP-HARVEY-2026).
   human_checkpoints:
@@ -673,8 +674,8 @@
   maturity: announced
   problem: >-
     Risk checks happen at onboarding, then clients change owners, face sanctions or litigation, or move into new
-    jurisdictions. A summary of UK regulator data suggests re-screening lags: 92% of firms reviewed screen new clients
-    against sanctions lists but 79% re-check existing ones.
+    jurisdictions. A VinciWorks summary of the SRA's 2025 AML report suggests re-screening lags: 92% of firms screen new
+    clients against sanctions lists but only 79% re-check existing ones (VINCI-SRA-2025).
   solution: >-
     Intapp says its intake platform alerts when client ownership, sanctions status, litigation exposure or jurisdictional
     risk shifts, and triggers strategic reviews when AML, independence or risk-score thresholds are crossed. Celeste is
@@ -690,7 +691,7 @@
     - Third-party data feeds (Intapp lists sanctions screening, corporate hierarchies and beneficial ownership data) and entity matching between the firm's records and those feeds (INTAPP-ONBOARDAI-2026).
     - Configured thresholds for escalation by risk type.
   risks_and_guardrails:
-    - A UK practitioner roundtable says AI and screening tools work when calibrated and governed, but over-reliance without tuning causes alert fatigue (VINCI-AML-2026).
+    - The answer recorded at a VinciWorks AML Core Group meeting of UK law-firm compliance staff is that technology, including AI, is effective when well calibrated and governed, but over-reliance without tuning often leads to alert fatigue (VINCI-AML-2026).
     - Alert volumes and false-positive rates for these features are unpublished (gap).
   human_checkpoints:
     - Risk team triages alerts and decides on strategic review or exit.
@@ -704,8 +705,9 @@
   last_reviewed: 2026-10-19
   notes: >-
     Firm kind: law and accounting firms (vendor-described; no named customer). The 92% and 79% figures are the Solicitors
-    Regulation Authority (SRA) findings as summarised by VinciWorks; the SRA page itself was blocked, so they are
-    secondary. They describe current practice at UK law firms, not AI. Measures: share of firms reviewed that screen new
+    Regulation Authority (SRA) findings as summarised by VinciWorks. On verification the SRA's own report site
+    (publications.sra.org.uk/aml-report-2025, via a mirror) confirmed 935 engagements and 270 non-compliant firms, but the
+    sanctions figures were not in the pages reached, so they remain secondary. They describe current practice at UK law firms, not AI. Measures: share of firms reviewed that screen new
     clients against sanctions lists, and share that re-check existing clients (source wording). For audit-client
     independence monitoring, see assurance-acceptance-independence-06. Combined dive use case 04.
 
@@ -744,18 +746,20 @@
   human_checkpoints:
     - Lawyer reviews each piece of work by default; routine pre-approved types can bypass review (LEGORA-INTAKE-2026).
   role_evolution: >-
-    Legora says routine work such as security questionnaires stops landing on the most senior people (LEGORA-INTAKE-2026).
+    Legora's general counsel says that with Intake routine work such as security questionnaires stops landing on her most
+    senior people (LEGORA-INTAKE-2026).
   evidence_grade: B
   sources:
-    - { ref: LEGORA-INTAKE-2026, title: "Legora launches Intake: an agentic front door for in-house legal teams", publisher: Legora, type: vendor, url: "https://legora.com/newsroom/legora-launches-intake-an-agentic-front-door-for-in-house-legal-teams", date: "2026-10", access: full, locator: "paragraphs 1-8" }
-    - { ref: HARVEY-INTAKE-2026, title: "Intake: move every request toward resolution (product page)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/platform/intake", date: 2026-10-19, access: full, locator: "sections 'Give Your Team a Head Start', 'Stay in Control of Every Request'; Carvana quote" }
+    - { ref: LEGORA-INTAKE-2026, title: "Legora launches Intake: an agentic front door for in-house legal teams", publisher: Legora, type: vendor, url: "https://legora.com/newsroom/legora-launches-intake-an-agentic-front-door-for-in-house-legal-teams", date: 2026-10-13, access: full, locator: "paragraphs 1-8" }
+    - { ref: HARVEY-INTAKE-2026, title: "Intake: move every request toward resolution (product page)", publisher: Harvey, type: vendor, url: "https://www.harvey.ai/platform/intake", date: 2026-10-13, access: full, locator: "sections 'Give Your Team a Head Start', 'Stay in Control of Every Request'; Carvana quote" }
     - { ref: AL-COHESO-2026, title: "Legal Front Door Coheso Launches 'Memory' (AL Interview)", publisher: Artificial Lawyer, type: press, url: "https://www.artificiallawyer.com/2026/10/08/legal-front-door-coheso-launches-memory-al-interview/", date: 2026-10-08, access: full, locator: "paragraphs 1-6" }
   last_reviewed: 2026-10-19
   notes: >-
     In-house. This is a client-side request front door, next to firm client acceptance; it may belong to a
     legal-operations extension. B rests on Carvana's senior corporate counsel appearing as a named Harvey design partner
-    and on Legora's own general counsel partnering on the design; no results are published. Legora's release is dated
-    within 12-19 Oct 2026 per the newsroom listing (exact day not confirmed); Harvey's page is undated (access date).
+    and on Legora's own general counsel partnering on the design; no results are published. Legora's release shows
+    13 Oct 2026 beside its headline. Harvey's page has no visible date; its product video's JSON-LD uploadDate
+    (2026-10-13) is used.
     Coheso, another in-house legal front door, launched Memory on 8 Oct 2026 (held in knowledge-management). Dentsu's
     in-house team runs workflows for non-compete checks on new customers (professional-services-work-production-18).
     Combined dive use case 15.
