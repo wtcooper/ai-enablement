@@ -152,8 +152,8 @@ return and a sanitized summary of the file; the senior checks figures; the manag
 the source before signing. Data rule from governance: client identifiers stay out unless the tool is approved for
 client data. A manager who did not write it tests twelve past notices; ten drafts are usable after the checkpoint, and
 two cited the wrong period, both caught. The reviewer approves it as `notice-response-draft`, origin `champion`,
-review triggers "tool or model changes", "notice format changes" and "data rule changes". Six months later the
-practice moves to a new assistant; the entry goes to `needs-retest`. Separately, the volume of notices and the hand
+review triggers "tool or model changes", "notice format changes" and "data rule changes". When the practice later
+moves to a new assistant, the entry goes to `needs-retest`. Separately, the volume of notices and the hand
 re-keying around them suggest a process problem; the user takes that workflow to the transformation-advisor skill.
 
 ## 10. Output

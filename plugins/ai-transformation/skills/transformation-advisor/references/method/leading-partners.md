@@ -1,10 +1,10 @@
 # Leading partners (cross-cutting)
 
-Read this when the people who must back or adopt the change are partners or senior experts who co-own the
-firm or hold its client relationships: law, accounting, tax and consulting firms, and expert-led teams run
-like them. It serves Make the case (the partner briefing) and Plan (leader expectations). Rules 1, 2 and 8
-in `SKILL.md` still apply: map roles, never rank or target people. Keys in brackets are in §12. Most firm
-accounts are self-reported.
+Read this when the people who must back or adopt the change are partners or senior experts who co-own the firm
+or hold its client relationships: law, accounting, tax and consulting firms, and expert-led teams like them.
+It serves Make the case (the partner briefing) and Plan (leader expectations). Rules 1, 2 and 8 in `SKILL.md`
+apply: map roles, never rank or target people. Keys in brackets are in §12; most firm accounts are
+self-reported.
 
 ## Contents
 
@@ -29,12 +29,12 @@ accounts are self-reported.
 - **Power sits in a constellation, not a chart.** The same study names a "leadership constellation": the
   senior pair, practice heads, business-services heads and key influencers [JOTWELL-EMPSON-2013]. A
   sponsor's title is not enough; the advisor maps and recruits the constellation (advisor synthesis).
-- **Diffusion is social:** "essentially a social process" of following people you trust (essay citing
-  Rogers; health care, not a firm) [GAWANDE-2013].
+- **Diffusion is social:** Rogers' phrase "essentially a social process", in which people follow those they
+  know and trust (quoted in an essay on health care, not a firm) [GAWANDE-2013].
 - **What the success stories describe.** The sources reporting progress describe peer influence, visible use
   by senior people and a business-problem framing, not mandates (all self-reported or practitioner cases)
-  [LAW360-2025; CIPD-2026; POLSINELLI-2026]. One firm's chair says that after about a year of "plenty of
-  activity" he gave the program to respected senior people rather than technologists [POLSINELLI-2026].
+  [LAW360-2025; CIPD-2026; POLSINELLI-2026]. After a year of "plenty of activity", one firm's chair asked
+  top business leaders, not technologists, to run it as a business problem [POLSINELLI-2026].
 - **Accountability stays with the professional.** Professional bodies and regulators say responsibility
   cannot be handed to a tool, and managers must set policy, train and supervise [LAWNEXT-2024, on ABA
   Formal Opinion 512, secondary; LAWSOC-GENAI; VINCI-2026, on an SRA warning, secondary].
@@ -42,20 +42,20 @@ accounts are self-reported.
 ## 2. Partner economics: barrier and lever
 
 Partners are paid from profit, and profit depends on hours, rates, leverage (junior staff per partner) and
-realization. Ask what happens to a partner's numbers when they spend time learning, and when a task takes
-less time. Read the archetype's `economics.md` alongside this.
+realization (advisor framing). Ask what happens to a partner's numbers when they spend time learning, and
+when a task takes less time. Read the archetype's `economics.md` alongside this.
 
 | Element | Barrier | Lever | Evidence |
 |---|---|---|---|
 | **Billable hour** | Less time on a task can mean less revenue | Perlin's four variables AI can move: hours, rate, write-offs, expenses; AI could reinforce the hourly model, not only shrink it (argument; paper not read) | [LF-PERLIN-2025] |
-| **Client pressure** | More outside counsel guidelines ask that AI time savings show in bills | Nearly 60% of in-house counsel saw "no noticeable savings yet" from outside counsel's AI use; over 60% said it was too early (about 650 respondents; vendor co-run survey, secondary) | [BLOOMBERG-ACC-2025] |
-| **Conflicting instructions** | Clients pull both ways | 40% of firm respondents had received both "use AI" and "don't use AI" instructions (vendor-affiliated survey) | [TRI-AIPS-2026] |
-| **Learning time** | Unbilled hours cost the partner | Decide and say whether learning time is credited. One chair refuses billing credit for AI training; under ABA 512 a lawyer may not bill a client for gaining AI competence unless the client asks | [POLSINELLI-2026; LAWNEXT-2024] |
-| **Leverage and pipeline** | Automating junior work changes the pyramid that trains future partners | Big Four new partners were reported at 179 for the 2025 cycle versus 276 in 2022 (trade press, no named data origin); Empson notes firms struggle to forecast partner income streams | [ACCTAGE-2025] |
+| **Client pressure** | More outside counsel guidelines ask that AI time savings show in bills (a Gartner analyst, quoted) | Nearly 60% of in-house counsel saw "no noticeable savings yet" from outside counsel's AI use; over 60% said it was too early (ACC and Everlaw survey of about 650 in-house counsel and legal operations staff; Everlaw is a vendor; reported by Bloomberg Law) | [BLOOMBERG-ACC-2025] |
+| **Conflicting instructions** | Clients pull both ways | 40% of firm respondents had received both "use AI" and "don't use AI" instructions (Thomson Reuters Institute survey of 1,500+ respondents in legal, tax, accounting, corporate and government work, 27 countries; vendor-affiliated) | [TRI-AIPS-2026] |
+| **Learning time** | Unbilled hours cost the partner | Decide and say whether learning time is credited. One chair refuses associates billable-hour credit for AI training; under ABA 512 a lawyer may not bill a client for gaining AI competence unless the client asks | [POLSINELLI-2026; LAWNEXT-2024] |
+| **Leverage and pipeline** | Automating junior work changes the pyramid that trains future partners | UK Big Four new partners were reported at 179 for the 2025 cycle versus 276 in 2022 (trade press, citing Financial Times analysis); Empson is reported as saying firms struggle to forecast potential partners' income streams under generative AI | [ACCTAGE-2025] |
 | **New revenue** | Fee base tied to hours | A&O Shearman announced agents to be sold to clients and other firms, sharing revenue (a plan, not an outcome); PwC said it would offer alternatives to hourly billing | [AO-AGENT-2025; ARTLAW-2025; CPAPA-PWC-2026] |
-| **Compensation** | Unchanged incentives | Practitioner opinion: unchanged incentives mean unchanged behavior. This research found no public example of a firm crediting AI work in partner pay | [MANDS-2026, opinion] |
+| **Compensation** | Unchanged incentives | Practitioner opinion on technology adoption generally: unchanged incentives mean unchanged behavior. This research found no public example of a firm crediting AI work in partner pay | [MANDS-2026, opinion] |
 
-Greenwood and Empson argue partnership gives knowledge workers strong incentives under particular
+Greenwood and Empson argue partnerships have superior incentive systems for professionals, within limiting
 conditions (abstract only) [ACCT-GREENWOOD-2003]: the economics are a lever as well as a barrier. **Decision
 rule:** if the fee basis is hourly and the task routine, run the four variables with the practice's partners
 before proposing it [LF-PERLIN-2025], and model three scenarios: hours fall; hours hold with higher rates;
@@ -70,7 +70,7 @@ and its basis, never a view on anyone's performance (rule 1).
 practice heads; business-services heads (IT, finance, risk, HR, knowledge); the influencers whose view
 others wait for; quality or risk partners who sign off; and partner segments by exposure and horizon:
 rainmakers, practice heads, partners near retirement, leverage-dependent partners (segmentation is an
-inference; two opinion sources make similar distinctions [BGOV-ODOWD-2026; MANDS-2026]).
+inference; one opinion source makes similar distinctions [BGOV-ODOWD-2026]).
 
 | Column | What to record |
 |---|---|
@@ -99,8 +99,7 @@ and says the same thing as the pasteable leadership summary in `plan-and-control
    Lead with client outcomes for partners and capacity for associates (opinion) [MANDS-2026; CUMBERLAND-2026].
 2. **One real workflow from this firm.** The baseline from records, the honest result, and what went wrong.
    A tool shown in use on a named workflow, not a demo [inference from PAPERJAM-2025 and TRI-AIPS-2026]. No
-   briefing without a baseline for at least one workflow: only 18% of respondents knew their organization
-   tracked AI ROI [TRI-AIPS-2026].
+   briefing without one workflow's baseline: only 18% of TRI respondents (§2) knew of ROI tracking [TRI-AIPS-2026].
 3. **Graded evidence from peers.** Each example with its `evidence_grade` exactly as recorded and who
    measured it (rule 3). Say when a figure is a recollection: "two to three hours a week" saved is lawyers'
    own report [PAPERJAM-2025].
@@ -127,41 +126,41 @@ into a test. Start with the field's own list: `../archetypes/professional-servic
 
 | Objection | Concede | Show the control or the test |
 |---|---|---|
-| "It makes things up." | Three legal research tools hallucinated in 17% to 33% of answers in a preregistered study (independent; abstract read) [ARXIV-MAGESH-2024]. A government report with fabricated references led Deloitte to repay the final instalment of an A$440,000 contract (press) [PEOPLEMATTERS-2025] | Verification step, named sign-off and a re-performed sample; one firm's rule is "verify, verify, verify" [CIPD-2026] |
-| "I tried it; it doesn't work." | It may not, on that task: consultants were 19% less likely to be correct on a task outside AI's frontier, while faster on tasks inside it (GPT-4 era experiment) [HBS-DELLACQUA-2023] | Ask which task, say the firm will come back to them, then route it to the team that can test it [POLSINELLI-2026, paraphrased] |
+| "It makes things up." | Three legal research tools (2024 versions) hallucinated between 17% and 33% of the time in a preregistered study (independent academics; abstract read) [ARXIV-MAGESH-2024]. A government report with fabricated references led Deloitte to repay the final instalment of an A$440,000 contract (press) [PEOPLEMATTERS-2025] | Verification step, named sign-off and a re-performed sample; one firm's rule is "verify, verify, verify" [CIPD-2026] |
+| "I tried it; it doesn't work." | It may not, on that task: consultants were 19% less likely to be correct on a task outside AI's frontier, while faster on tasks inside it (GPT-4 era experiment) [HBS-DELLACQUA-2023] | Ask which task and say the firm will come back to them [POLSINELLI-2026, paraphrased]; route it to the team that can test it (inference) |
 | "This kills our billings." | Hours can fall | Run the four variables and three scenarios for the practice (§2) [LF-PERLIN-2025] |
 | "I have no time to learn." | Learning time is unbilled | Short, varied training as a condition of access [CIPD-2026; LAW360-2025]; state the credit rule (§2) |
-| "The savings claims are inflated." | Many are self-reported: 56% of consultants using GenAI say they save 3 to 4 hours a day (vendor survey) [LEXIS-CONSULT-2025] | Agree before the pilot what result would change their mind (inference) and measure it [TRI-AIPS-2026] |
+| "The savings claims are inflated." | Many are self-reported: 56% of consultants using GenAI say they save 3 to 4 hours a day (LexisNexis survey of management consultants, sample not stated; vendor) [LEXIS-CONSULT-2025] | Agree before the pilot what result would change their mind (inference) and measure it [TRI-AIPS-2026] |
 | "AI is optional for me." | Adoption is the firm's choice | Policy, training, monitoring and supervision duties apply regardless [LAWNEXT-2024; VINCI-2026] |
 | "Juniors will never learn." | A real pipeline risk (opinion support) [BGOV-ODOWD-2026] | The junior-task audit and explain-back in `people-and-change.md` §6 |
 
 Separate risk objections (answerable with controls) from identity objections (answerable with a role in
 the redesign, `people-and-change.md` §8). Pair a skeptic with a respected peer for repeated, hands-on
-sessions rather than broadcast messages (inference from GAWANDE-2013).
+sessions rather than broadcast messages (both advisor synthesis; the second from GAWANDE-2013).
 
 ## 6. Leader expectations and accountability
 
-- **Leaders are often the least comfortable users.** 47% of senior leaders in an accountancy survey said
-  they were comfortable using AI; 53% of C-suite respondents did not feel prepared for its impact on their
-  role (independent survey) [ICAEW-CAW-2025]. Employees feeling positive about GenAI rose from 15% to 55%
-  with strong leadership support; about a quarter of frontline employees said they received it
-  (cross-industry, self-reported) [BCG-ATWORK-2025].
+- **Leaders are often the least comfortable users.** 47% of senior leaders were comfortable using AI and 53%
+  of C-suite respondents felt unprepared for its impact on their role (Ipsos for Chartered Accountants
+  Worldwide; 2,718 chartered accountants, 48 countries, 2024) [ICAEW-CAW-2025]. In BCG's survey of 10,600+
+  employees in 11 countries and regions (cross-industry, self-reported), 55% felt positive about GenAI with
+  strong leadership support against 15% without; about a quarter of frontline staff got it [BCG-ATWORK-2025].
 - **Visible use first.** Senior lawyers in one case used the tool themselves and shared what worked and what
-  did not [CIPD-2026]. Offer private skill-building and specialist office hours for seniors who do not want
-  to look unskilled [LEXIS-CONSULT-2025]; ask how safe it is to say "I don't know how to use this"
-  [EDMONDSON-1999].
+  did not [CIPD-2026]. Offer specialist office hours and a safe place for basic questions [LEXIS-CONSULT-2025],
+  privately for seniors wary of looking unskilled (inference). Ask how safe it is to say "I don't know how to
+  use this" (psychological safety goes with team learning; one manufacturer's teams) [EDMONDSON-1999].
 - **Expectations are moving into writing.** KPMG was reported to add AI objectives to staff performance
   reviews from 2026 and to describe tracking as not disciplinary (secondary) [IAB-KPMG-2025]. PwC's US CEO was
   reported as saying partners who resist AI have no place at the firm (secondary, FT paywalled)
   [CPAPA-PWC-2026]. No source reports the effect of either.
 - **Write it down.** For each expectation: owner, measure, review forum, support offered, consequence
   stated. Say whether usage tracking is support or policing [IAB-KPMG-2025]. Only set consequences the firm
-  will apply (analyst-proposed). A starting training floor: regular use was sharply higher with at least five
-  hours of training (cross-industry, not a partner standard) [BCG-ATWORK-2025].
-- **Steer on a rhythm.** One firm ran a fortnightly steering group of senior legal and business-services
-  leaders [CIPD-2026]; put partner-level review in an existing forum (`plan-and-control.md` §3).
-- **Usage is not value.** Organization-wide usage rose to 40% from 22% while few track ROI [TRI-AIPS-2026].
-  Ask how "use" is defined: one chair's "90% have used" is a verbal statement [POLSINELLI-2026].
+  will apply (analyst-proposed). Training floor: regular use was sharply higher with five or more hours of
+  training and in-person coaching (association; cross-industry, not a partner standard) [BCG-ATWORK-2025].
+- **Steer on a rhythm.** One firm's fortnightly steering group included employees and senior leaders from
+  legal and business functions [CIPD-2026]; review partner use in an existing forum (`plan-and-control.md` §3).
+- **Usage is not value.** Organization-wide usage rose to 40% in 2026 from 22% (TRI survey, §2) while few track
+  ROI [TRI-AIPS-2026]. Ask how "use" is defined: one chair's "90% have used" is verbal [POLSINELLI-2026].
 
 ## 7. Visible wins and champions inside practices
 
@@ -172,8 +171,9 @@ sessions rather than broadcast messages (inference from GAWANDE-2013).
   recalls lawyers answering "Absolutely not" six months in (recollection, not a tracked metric) [PAPERJAM-2025].
 - **Win in client terms.** Prefer wins a partner can describe to a client; down-rank wins resting only on
   self-reported time saved [PAPERJAM-2025; LEXIS-CONSULT-2025].
-- **Find real demand.** Ask where people already use personal tools: workers at over 90% of surveyed
-  companies reported regular personal AI use (weak, non-random sample; directional only) [MIT-NANDA-2025].
+- **Find real demand.** Ask where people already use personal tools: workers at over 90% of companies MIT NANDA
+  surveyed reported regular personal AI use (52 organizations interviewed, 153 senior leaders surveyed;
+  non-random, directional only) [MIT-NANDA-2025].
 - **Pair access with training, a named workflow and a champion.** Firms are reported to spend heavily on
   licences that go unused (no figure) [LAW360-2025].
 
@@ -216,7 +216,7 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions first.
 | **Incentives that contradict the message** | Decide the credit rule out loud [POLSINELLI-2026; LAWNEXT-2024] |
 | **Overpromising accuracy** | State limits; show the verification control [ARXIV-MAGESH-2024] |
 | **Dismissing resistance** | Turn objections into tests [LEXIS-CONSULT-2025; HBS-DELLACQUA-2023] |
-| **Vague or false reassurance on roles** | Say only what the firm controls, with timing and consultation [LEGALCHEEK-BAKER-2026]; one firm's no-cut commitment worked in its own circumstances [CIPD-2026] |
+| **Vague or false reassurance on roles** | Say only what the firm controls, with timing and consultation [LEGALCHEEK-BAKER-2026]; one firm's statement that AI would not be used to cut support roles lowered anxiety there (case study) [CIPD-2026] |
 | **Threat-first accountability** | Pair expectations with support and clear criteria; no source reports effects [CPAPA-PWC-2026] |
 | **Mapping people, not roles** | Record roles, segments and stance basis; decline to rank partners (rule 1) |
 
@@ -258,9 +258,10 @@ practice leadership meeting (`plan-and-control.md` §7).
 
 ## 11. Output
 
-In `transformation-plan.md`: the stakeholder map by role (§3) under People and change; one briefing per
-audience segment under Make the case; leader expectations and the credit rule under Plan; a Leadership
-summary consistent with the briefing. Never record named individuals beyond action owners.
+In `transformation-plan.md`: the stakeholder map by role (§3) and one briefing per audience segment under
+Make the case; under Plan, the map carried into the people and change plan, leader expectations and the
+credit rule; a Leadership summary consistent with the briefing. Never record named individuals beyond action
+owners. Save after each, as for any phase.
 
 ## 12. Sources
 
