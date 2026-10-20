@@ -1,0 +1,185 @@
+[
+ {
+  "id": "professional-services-acceptance-risk-01",
+  "title": "Early screening of sales opportunities for conflicts before a pitch advances",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Pitching for work that later fails conflicts checks wastes pursuit effort and embarrasses the firm.",
+  "approach": [
+   "Intapp says its conflicts product can screen opportunities before they advance to formal review (vendor-published, announced capability).",
+   "For ChatGPT Enterprise users, the Celeste plug-in is described as sourcing opportunities on work already cleared for conflicts.",
+   "Formal conflicts review still follows before acceptance. No outcome figure is published."
+  ],
+  "who": "Intapp (vendor claim)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-02",
+  "title": "AI-prefilled acceptance requests with role-based risk summaries for reviewers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fee earners re-key client and matter details into acceptance forms, and reviewers read long requests to find conflicts, anti-money-laundering and jurisdiction issues.",
+  "approach": [
+   "Intapp says Celeste prefills requests from emails and files, validates entries, and writes summaries highlighting conflicts, money-laundering risk, jurisdiction and strategic fit.",
+   "The requester confirms prefilled fields before submission; reviewers approve or escalate the request.",
+   "No outcome figure published (vendor-published); described as an announced capability."
+  ],
+  "who": "Intapp (vendor claim)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-03",
+  "title": "AI agent that searches conflicts, triages hits and drafts clearance summaries",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Conflicts analysts build searches, read long hit lists and write up each clearance decision, while volume rises and client history often sits outside the conflicts database.",
+  "approach": [
+   "Intapp says Celeste builds the search strategy, triages high-risk hits, drafts a clearance summary and keeps monitoring data sources for new issues.",
+   "BakerHostetler is named as an early adopter; Intapp says relevant matters surface 'in minutes rather than hours' (vendor-published, no measured study).",
+   "Experts review triaged hits before clearance; a partner or risk counsel decides on waivers and screens."
+  ],
+  "who": "Intapp, BakerHostetler"
+ },
+ {
+  "id": "professional-services-acceptance-risk-04",
+  "title": "Small-firm conflicts-check agent that maps corporate families and fuzzy-matches names",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "A small firm clears conflicts with a spreadsheet and partner memory, missing relationships hidden behind different entity names or corporate parents.",
+  "approach": [
+   "A four-stage agent ingests matter details, maps corporate hierarchies, runs fuzzy and opposing-party searches, and scores each potential match by risk.",
+   "The builder reports conflicts-check time fell from 2-3 hours to 8 minutes per matter (self-reported; unnamed 14-attorney firm).",
+   "Direct and related-entity flags go to the responsible partner for the legal call; no-match results are auto-approved with an audit trail."
+  ],
+  "who": "Unnamed small US law firm (builder's account)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-05",
+  "title": "Agent pre-screens lateral hires for conflicts and prepares clearance",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Lateral hires bring client relationships that must be checked for conflicts before the hire is made, and confidential information has to be handled carefully.",
+  "approach": [
+   "Intapp says Celeste can run an end-to-end lateral hire lifecycle: candidate research, conflicts pre-screening, clearance preparation and onboarding.",
+   "Intapp's intake product also offers lateral candidates a secure portal to share confidential details.",
+   "Announcement only; no outcome figure is published (vendor-published) and human checkpoints are not described in the sources."
+  ],
+  "who": "Intapp (vendor claim)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-06",
+  "title": "AI-written, sourced due-diligence report that routes new clients by risk",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Every new client needs money-laundering and bribery screening, so analysts spend hours on low-risk clients while the few risky ones wait in the same queue.",
+  "approach": [
+   "Pinsent Masons co-developed with Xapien an LLM-powered tool that writes a sourced report on money-laundering, bribery and ESG risks.",
+   "Low-risk reports pass with minimal oversight, medium-risk go to the AML team, and high-risk need further verification or partner consultation.",
+   "Pinsent Masons expects low-risk clients cleared in hours rather than days, and a report in around 15 minutes (expectation)."
+  ],
+  "who": "Pinsent Masons, Xapien"
+ },
+ {
+  "id": "professional-services-acceptance-risk-07",
+  "title": "Idea: AI agent screens news coverage of prospective clients (research prototype)",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Keyword-based adverse-media screening (searching news for negative coverage of a client) produces many false positives, and hybrid systems need extensive manual review.",
+  "approach": [
+   "This is an idea, not a deployment: an LLM agent searches the web and scores adverse media, with a written justification.",
+   "A December 2025 University of Luxembourg paper presents an open-source version aimed at financial institutions' compliance; no outcome figure is published.",
+   "An analyst reviews the score and justification."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-acceptance-risk-08",
+  "title": "Risk-based acceptance workflow with scoring, routing, audit trail and generated engagement letters",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Acceptance run on email chains, paper and legacy systems takes days to weeks, gives partners no status visibility and tempts lawyers to bypass the process.",
+  "approach": [
+   "A configured platform routes approvals by risk score, jurisdiction, service line and counterparty, connects checks, and keeps an audit trail.",
+   "Intapp's case study says BDO Canada handles over 5,000 acceptances a month, a 38% improvement (vendor-published). Sandberg Phoenix reports triple the matters.",
+   "Loeb & Loeb says weeks-long work is usually done in hours (vendor-published).",
+   "Partners and risk teams still approve; the case studies do not isolate any AI feature."
+  ],
+  "who": "BDO Canada, Sandberg Phoenix, Loeb & Loeb"
+ },
+ {
+  "id": "professional-services-acceptance-risk-09",
+  "title": "Engagement letters generated from approved intake data and routed for signature",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Engagement letters get delayed or missed when intake is manual, and scope, terms and client-specific AI wording vary.",
+  "approach": [
+   "Intapp says its intake platform turns approved intake data into engagement letters and routes them for review and signature, enforcing firm policy.",
+   "Loeb & Loeb says letters 'could no longer be overlooked or delayed' once intake fields were mandatory (workflow, not AI; vendor-published).",
+   "Review and signature routing applies; one bar source calls lawyer approval of an agent's autonomous actions, such as sending a letter, prudent."
+  ],
+  "who": "Intapp (vendor claim)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-10",
+  "title": "AI reads client outside counsel guidelines and enforces them at intake",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Each client sends its own outside counsel guidelines, which are slow and risky to manage in documents, and teams cannot quickly answer questions about payment or security terms across clients.",
+  "approach": [
+   "Fredrikson & Byron's risk counsel says the AI makes a first pass categorising each obligation in a client's guidelines; she confirms it.",
+   "Staff can ask a generative AI feature about client terms in Teams; Intapp says terms appear in intake, conflicts and time entry.",
+   "She says she can pull terms across clients much faster; no figure given (vendor-published)."
+  ],
+  "who": "Fredrikson & Byron, Dickinson Wright, Intapp"
+ },
+ {
+  "id": "professional-services-acceptance-risk-11",
+  "title": "Idea: register of client AI restrictions and consents, checked at matter opening",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Clients are adding AI rules to outside counsel guidelines and engagement letters, such as consent, approved tools and no client data in public models, and permitted tools differ by client.",
+  "approach": [
+   "Idea, not a deployment: capture client AI terms as structured obligations at intake and check each AI tool against them.",
+   "The firm would also record which tool touched which matter. A vendor guide (Layer3 Labs) proposes it.",
+   "Intapp announced a Celeste plug-in for ChatGPT Enterprise to check work against outside counsel guidelines."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-acceptance-risk-12",
+  "title": "Ethical walls extended to AI assistants so they only see permitted matters",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "AI assistants that search firm content can reach matters a person behind an ethical wall may not see; governance protocols have historically not extended into AI platforms and agents.",
+  "approach": [
+   "Nelson Mullins' applications manager says with Intapp Walls she can point Microsoft Copilot where she wants and it pulls only permitted matters.",
+   "Intapp and Harvey announced plans to sync wall policies with Harvey's access and sharing controls.",
+   "Risk or IT teams monitor access reports and blocked attempts. No test result or incident count is published."
+  ],
+  "who": "Nelson Mullins, Intapp, Harvey"
+ },
+ {
+  "id": "professional-services-acceptance-risk-13",
+  "title": "Ongoing re-screening of clients after acceptance, with alerts when risk changes",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Risk checks happen at onboarding, then clients change owners or face sanctions; a summary of a 2025 regulator report says 92% of firms screen new clients, 79% re-check existing ones.",
+  "approach": [
+   "Intapp says its intake platform alerts when ownership, sanctions status, litigation exposure or jurisdictional risk shifts, and triggers reviews at risk thresholds.",
+   "Celeste is described as continuously monitoring integrated data sources for conflicts. No outcome figure is published (vendor-published); announced.",
+   "The risk team triages alerts and decides on strategic review or exit."
+  ],
+  "who": "Intapp (vendor claim)"
+ },
+ {
+  "id": "professional-services-acceptance-risk-14",
+  "title": "In-house legal front door that routes, completes and logs business requests",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "In-house teams get a stream of incomplete requests, and business teams stall or proceed without legal input and take on risk legal never sees.",
+  "approach": [
+   "In-house, vendor-described and piloting: Legora's Intake agent reads each request, asks for missing details, routes it and drafts from playbooks.",
+   "A lawyer reviews every piece of work by default; routine pre-approved requests such as a standard NDA can bypass review.",
+   "Harvey's Intake routes requests to approved agents or lawyers with an audit trail."
+  ],
+  "who": "Legora, Harvey, Carvana (design partner)"
+ }
+]

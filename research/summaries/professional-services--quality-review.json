@@ -1,0 +1,238 @@
+[
+ {
+  "id": "professional-services-quality-review-01",
+  "title": "Turn the AI policy into an enforced review rule with attestation",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Written AI policies have not on their own stopped unchecked AI output reaching courts; Butler Snow and Sullivan & Cromwell both had safeguards that failed.",
+  "approach": [
+   "The policy names reviewers, requires independent verification of citations and outputs, limits tools, requires training first, and asks people to attest periodically.",
+   "Butler Snow lawyers were sanctioned in July 2025 despite a June 2023 policy; Sullivan & Cromwell said its protocols were not followed.",
+   "Morae survey: 71% have formal AI policies but 30% are confident they are applied (vendor-published).",
+   "The signing lawyer reviews all AI output and independently verifies citations before submission to a court."
+  ],
+  "who": "Butler Snow, Sullivan & Cromwell, White & Case"
+ },
+ {
+  "id": "professional-services-quality-review-02",
+  "title": "Automated check of citations, quotations and cited propositions before signing",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fabricated cases, altered quotations and real cases that do not support the stated point are hard to spot by eye.",
+  "approach": [
+   "A checker extracts citations, compares them with a case-law corpus and flags what it cannot match; some test the cited proposition too.",
+   "A lawyer reviews each flagged citation in context; the signing lawyer, not the tool, decides whether to file.",
+   "Vendor back-test on 2,073 citations from 68 filings: 61.8% verified, 38.2% flagged (vendor-published; not an error rate for ordinary work)."
+  ],
+  "who": "Filevine, BriefCatch, LawDroid, Thomson Reuters"
+ },
+ {
+  "id": "professional-services-quality-review-03",
+  "title": "Verification record on file: what was checked, by whom, and AI use",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Partners are sanctioned for citation errors they did not make, and firms need to know which parts of a deliverable involved AI and who reviewed them.",
+  "approach": [
+   "Clearbrief's Cite Check Report, launched December 2025, lists each citation, flags problems, records how each was resolved and by whom.",
+   "Guidance suggests marking AI-generated material in files and documenting inputs, outputs and errors; no usage or effectiveness figure is published (vendor-published).",
+   "Reviewer records why a flag was ignored; the partner reviews the report before signing."
+  ],
+  "who": "Clearbrief, ABA, Law Society, ICMCI"
+ },
+ {
+  "id": "professional-services-quality-review-04",
+  "title": "Idea: audit every reference and figure in AI-assisted consulting and advisory reports",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Between October 2025 and July 2026 reports from each Big Four firm were publicly questioned for fabricated or unverifiable citations, found by outsiders.",
+  "approach": [
+   "Idea. A person who did not write the passage traces every footnote, quotation and calculation to its source; no firm does this.",
+   "The ICMCI code requires consultants to verify AI output independently; a second reader is suggested for high-stakes deliverables.",
+   "Deloitte agreed to repay the final instalment of an AUD 440,000 contract (independent); GPTZero claims 99 of 100 flawed citations caught (vendor-published)."
+  ],
+  "who": "Big Four firms, GPTZero, ICMCI"
+ },
+ {
+  "id": "professional-services-quality-review-05",
+  "title": "Benchmark AI tools against expert answers to set review depth by task",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Vendors call their legal AI accurate or hallucination-free, and AI helps on some tasks but hurts on similar ones, so one review rule fits poorly.",
+  "approach": [
+   "Linklaters built a 50-question English-law benchmark marked by senior lawyers; Vals ran studies with law-firm datasets and a lawyer baseline.",
+   "Linklaters' re-test scored OpenAI o1 at 6.4 out of 10 against Bard's 4.4 in 2023 (self-reported).",
+   "Vals: lawyers beat the best tool on redlining, 79.7% against 65.0%; the tool led on document Q&A (independent).",
+   "The firm sets permitted uses and review depth from results. A formal task map is an idea; no firm describes one."
+  ],
+  "who": "Linklaters, Vals, Hogan Lovells Cadwalader"
+ },
+ {
+  "id": "professional-services-quality-review-06",
+  "title": "Validate AI document review with test sets and sampling, not full re-reading",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "AI document review can be wrong in issue-specific ways, formal statistical validation can be too slow, and re-reading every output removes the time saved.",
+  "approach": [
+   "A Covington & Burling special counsel published a case study using Relativity aiR on 7,100 documents; a senior attorney tagged examples.",
+   "Issues 4 and 9 reached perfect performance by round four; issue 8 persistently produced higher false positives (self-reported).",
+   "Weak issues were supplemented with metadata and keyword searches; the team decides when prompt iteration shows diminishing returns."
+  ],
+  "who": "Covington & Burling, Relativity"
+ },
+ {
+  "id": "professional-services-quality-review-07",
+  "title": "Standing evaluation suites, gold-standard answers and change control run by legal engineers",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A firm deploying AI workflows needs to know whether each prompt, retrieval or model change improves or worsens the work, and who owns fixing errors.",
+  "approach": [
+   "Latham & Watkins' job description has legal engineers build evaluation suites from real precedents, measure every change and keep audit trails.",
+   "Legora and Harvey advertise similar roles building gold-standard datasets and owning the quality bar for human evaluations.",
+   "Partners define the quality criteria; legal engineers validate against real matters. Job descriptions only, no results published (self-reported)."
+  ],
+  "who": "Latham & Watkins, Legora, Harvey"
+ },
+ {
+  "id": "professional-services-quality-review-08",
+  "title": "Review gates: a named reviewer signs off each AI step first",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Without forced checkpoints each reviewer may assume someone else validated an AI output, which Schellman's CEO calls a control design problem.",
+  "approach": [
+   "Armanino gives each AI step its own controls, mirroring its technical-memo flow; the senior ticks a box confirming review before continuing.",
+   "Harvey's Legal Work Orchestration, announced 2026-10-15, holds the next step until the designated partner approves an agent-built consent matrix.",
+   "Harvey forecasts agents taking on an additional 20% of workflow steps in six months (vendor-published forecast); Armanino published no measures."
+  ],
+  "who": "Armanino, Harvey, Latham & Watkins"
+ },
+ {
+  "id": "professional-services-quality-review-09",
+  "title": "Idea: oversight tiered by agent autonomy, with escalation triggers and approval gates",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Idea at an early stage: agents can plan and finish tasks without prompting, raising the risk of unreviewed reliance and exposure of confidential information across matters.",
+  "approach": [
+   "An Anthropic speaker at CLOC 2026 framed three designs: human in the loop, lawyer in the loop, and agent in the loop.",
+   "California's 2026 guidance says oversight must rise with autonomy, with no filing, advice or outside transmission without meaningful review.",
+   "Lawyer approves before any filing or outside transmission; autonomy is reassessed periodically. No error rates are published (vendor-published)."
+  ],
+  "who": "Anthropic, CLOC, California guidance"
+ },
+ {
+  "id": "professional-services-quality-review-10",
+  "title": "AI layer on the existing quality system with risk-tiered review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Review can become accountability theater, with reviewers rubber-stamping, and the UK audit regulator found the six largest audit firms did not monitor tools' effect on quality.",
+  "approach": [
+   "Forvis Mazars keeps its quality controls and adds AI requirements: planning discussion, reviewer checklists and independent review of every deliverable.",
+   "An engagement quality reviewer checks whether firm AI policy was followed on higher-risk audits.",
+   "Forvis Mazars describes zero tolerance for skipping review; no error figure (self-reported). The FRC found all six firms lacked formal monitoring (independent)."
+  ],
+  "who": "Forvis Mazars, Schellman, AuditFile"
+ },
+ {
+  "id": "professional-services-quality-review-11",
+  "title": "Track acceptance and overrides of AI output as a live quality signal",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Few firms track how often reviewers accept or reject AI output, so they cannot tell whether review catches errors or rubber-stamps.",
+  "approach": [
+   "Microsoft's legal department uses its Legal Agent for contract review, with suggested edits as tracked changes that reviewers accept or reject.",
+   "Users kept roughly seven in ten suggestions, across about 100,000 edits and over 1,800 users (vendor-published).",
+   "Thomson Reuters Institute recommends tracking override patterns; the department reviews override patterns by area."
+  ],
+  "who": "Microsoft, Thomson Reuters Institute"
+ },
+ {
+  "id": "professional-services-quality-review-12",
+  "title": "Idea: cut the verification tax with quick-check techniques for AI output",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: many professionals fear the cost of checking AI outputs outweighs the benefit, and no measurement compares review time with drafting time saved.",
+  "approach": [
+   "Idea. Teach teams quick, repeatable ways to verify AI output so review time falls without lowering the bar.",
+   "CLOC's May 2026 item promises quick verification techniques (teaser only). Morae survey: 67% fear checking costs outweigh benefits (vendor-published).",
+   "Written principles name who is accountable for outputs and where the lawyer intervenes."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-quality-review-13",
+  "title": "Machine cross-check of AI output before human review",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Checking every reference by hand is slow and skimming reviewers miss near-match citations; this is an emerging approach with no published figures.",
+  "approach": [
+   "Hacker News commenters proposed a sub-agent that validates references, with people reviewing only low-confidence items.",
+   "Litera announced in August 2026 that its Lito agent would build on its deterministic redline comparison engine, surfacing risky changes.",
+   "People verify flagged references and the lawyer reviews flagged changes; no accuracy figure is published for any design (vendor-published)."
+  ],
+  "who": "Litera, Harvey, Clearbrief"
+ },
+ {
+  "id": "professional-services-quality-review-14",
+  "title": "After an AI error is found, disclose, correct and re-review wider filings",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Once one fabricated citation is found, client, court and firm need to know whether others exist, and the response shapes the consequence.",
+  "approach": [
+   "Sullivan & Cromwell's April 2026 letter took responsibility, filed a corrected motion with corrections schedule and re-reviewed all filings in the matter.",
+   "Butler Snow's outside counsel reviewed 2,400+ citations in 330 filings and found no further hallucinated citations (self-reported).",
+   "Deloitte Australia published a revised report disclosing Azure OpenAI use and repaid the final instalment. An outside reviewer conducts the look-back."
+  ],
+  "who": "Sullivan & Cromwell, Butler Snow, Deloitte Australia"
+ },
+ {
+  "id": "professional-services-quality-review-15",
+  "title": "Check incoming work, including opponents' authorities and contractors' drafts",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "In reported matters, fabricated authorities were found by opposing counsel or the judge, and errors also arrive through contractors' or other lawyers' work.",
+  "approach": [
+   "Litigation teams check authorities cited against them; Boies Schiller Flexner flagged errors in Sullivan & Cromwell's filing. Contractor work is unverified.",
+   "BriefCatch and Thomson Reuters market tools for checking opponents' briefs.",
+   "In Noland, 21 of 23 quotations were fabricated and a $10,000 sanction followed (independent). Supervising lawyers verify everything returned before signing."
+  ],
+  "who": "Boies Schiller Flexner, BriefCatch, Thomson Reuters"
+ },
+ {
+  "id": "professional-services-quality-review-16",
+  "title": "Tell clients when AI materially contributed and how the work was checked",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients increasingly ask whether AI was used on their work but are not consistently told, and disclosure rules differ.",
+  "approach": [
+   "Forvis Mazars requires disclosure when AI materially contributed to external content; the ICMCI code and ABA Opinion 512 set related disclosure rules.",
+   "Morae survey: 73% say clients deserve full visibility into AI use, 21% deliver it (vendor-published).",
+   "ILTA: firms requiring client approval ranged from 8% to 38% by size (independent). A partner confirms disclosure language before delivery."
+  ],
+  "who": "Forvis Mazars, ICMCI, ABA, ILTA"
+ },
+ {
+  "id": "professional-services-quality-review-17",
+  "title": "In-house teams set bounded AI workflows and ask outside firms for evidence",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "In-house teams receive AI-assisted work from outside counsel and vendors but cannot see how it was checked.",
+  "approach": [
+   "A Casepoint report says mature teams use bounded, reviewable workflows; Starbucks moved to controlled internal use while restricting vendor and outside-counsel use.",
+   "GSK and Ropes & Gray speakers say clients now ask firms what AI they use and whether it saves cost.",
+   "Thomson Reuters survey: 78% of corporate clients rate AI quality gains important, 6% say providers deliver them (vendor-published)."
+  ],
+  "who": "Starbucks, GSK, Ropes & Gray, Casepoint"
+ },
+ {
+  "id": "professional-services-quality-review-18",
+  "title": "Idea-stage: documented AI governance ready for professional indemnity insurers",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Professional indemnity policies mostly ignore AI, but insurers are starting to ask how AI-enabled work is supervised; this is an emerging expectation.",
+  "approach": [
+   "Firms keep records of AI use, protocols, verification standards and audit trails to answer insurer questions at proposal and renewal.",
+   "CPA-firm insurers say they ask whether firms use and police AI; a broker expects documented protocols within 12 to 18 months (forecast).",
+   "Risk or general counsel signs off proposal-form answers on AI use."
+  ],
+  "who": "CPA-firm insurers, Independent Agent magazine"
+ }
+]

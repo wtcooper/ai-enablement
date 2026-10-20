@@ -1,0 +1,288 @@
+[
+ {
+  "id": "professional-services-client-development-01",
+  "title": "Automatic capture of contacts, meetings and emails into the firm's CRM",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Relationship data sits in individual inboxes and calendars because fee-earners rarely log contacts by hand, so the client relationship system is incomplete.",
+  "approach": [
+   "Software reads email and calendars and updates CRM records automatically. Named: Schneider Downs, LBMC, KSM, Grassi, Thomson Snell & Passmore.",
+   "Introhive's case study says Schneider Downs ingested 3,120,627 meetings and emails and found 71,948 new contacts (vendor-published).",
+   "Professionals review newly found contacts before they enter the CRM; users set deny lists and keywords that block processing."
+  ],
+  "who": "Schneider Downs, LBMC, KSM, Grassi, Introhive"
+ },
+ {
+  "id": "professional-services-client-development-02",
+  "title": "Relationship maps and strength scores for warm paths and partner succession",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Firms cannot see who knows whom across practices, so cross-sell is missed, outreach is duplicated, and relationships can leave with departing partners.",
+  "approach": [
+   "Captured data becomes relationship maps and strength scores for warm introductions and succession planning. Named: Thomson Snell & Passmore, Grassi, Howes Percival.",
+   "Introhive says Thomson Snell & Passmore's employees connected to top accounts rose from 47 to 97 (vendor-published).",
+   "Partners and business development staff decide whom to contact and what to say."
+  ],
+  "who": "Thomson Snell & Passmore, Grassi, Howes Percival"
+ },
+ {
+  "id": "professional-services-client-development-03",
+  "title": "Client-health scores and alerts when a relationship cools",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Relationship owners lose touch, miss job changes and news, and notice a cooling relationship only after work has moved.",
+  "approach": [
+   "The CRM turns contact frequency, meeting density and news into health scores and alerts the owner when a relationship cools.",
+   "Howes Percival says DealCloud dashboards and alerts help it keep in touch at the right frequency; no figure (vendor-published).",
+   "The relationship owner decides whether and how to act on each alert; leadership decides what a cooling key relationship needs."
+  ],
+  "who": "Howes Percival, Thomson Snell & Passmore"
+ },
+ {
+  "id": "professional-services-client-development-04",
+  "title": "Account plans and cross-sell lists built from relationship, matter and client data",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Key-account plans need data from many practices, and partners say knowing where to focus and spotting cross-sell are among their biggest business development frictions.",
+  "approach": [
+   "AI combines email, CRM records, matter history and client news into account summaries and an opportunity matrix (vendor-described, announced).",
+   "No named firm reports AI-built account plans in use; 54% of partners in a survey rank cross-sell the top benefit (vendor-published).",
+   "The account team decides plan content; risk or ethics staff check independence and conflicts before a new service is proposed."
+  ],
+  "who": "Intapp, Introhive, Harvey (vendor claims)"
+ },
+ {
+  "id": "professional-services-client-development-05",
+  "title": "Scheduled AI scans of courts, news and filings to find new work",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Finding new mandates and cross-sell openings means manual searching of court records, news and filings that busy lawyers cannot do consistently.",
+  "approach": [
+   "Tools combine internal relationship and matter data with external sources and return scored opportunities. Akin Gump built 'Moneyball' in-house.",
+   "Quinn Emanuel showed daily deep-research prompts scanning appellate decisions and verdicts, scoring matters for 'who pays' and intervention windows.",
+   "Lawyers and business development staff evaluate and decide which opportunities to pursue."
+  ],
+  "who": "Akin Gump, Quinn Emanuel"
+ },
+ {
+  "id": "professional-services-client-development-06",
+  "title": "AI-prepared pre-meeting client briefs for partners and new teams",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Preparing for a client meeting means searching the CRM, inboxes, news and filings by hand, and partners with little non-billable time arrive underprepared.",
+  "approach": [
+   "A brief is generated from relationship history, account activity, news and sometimes matter history. Named: Grassi, LBMC, Thomson Snell & Passmore, Practus.",
+   "Intapp says briefs that would take hours of research 'can be surfaced in seconds'; no measurement (vendor-published).",
+   "The partner reads, interprets and personalises the brief before use; account partners review priorities extracted from matters."
+  ],
+  "who": "Grassi, LBMC, Thomson Snell & Passmore, Practus"
+ },
+ {
+  "id": "professional-services-client-development-07",
+  "title": "Business development assistants grounded in firm relationship data, not generic chatbots",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Partners take on business development with little time and do not log into the CRM; 68% of those using AI rely only on general-purpose tools.",
+  "approach": [
+   "Vendors connect assistants to governed relationship data: Introhive announced an MCP connector, and Intapp's Celeste answers plain-language questions over relationship history.",
+   "Practus, Wotton Kearney and Ropes & Gray announced selecting DealCloud with Celeste. Intapp says 'minutes rather than hours' (vendor claim).",
+   "The partner reviews every outbound message; staff review answers before acting."
+  ],
+  "who": "Practus, Wotton Kearney, Ropes & Gray (announced)"
+ },
+ {
+  "id": "professional-services-client-development-08",
+  "title": "Nudges when a client goes quiet, with draft notes for the partner",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Partners know they should contact clients regularly but lack time or a reason, and senior lawyers often skip client notes because writing them takes billable time.",
+  "approach": [
+   "The system prompts the partner when a relationship goes quiet and supplies a draft. Intapp sells DealCloud Activator, with leaderboards for leaders.",
+   "AI pulls news and regulatory developments and drafts client alerts (Harvey). An Intapp study links Activator behaviours to up to 32% (vendor-published).",
+   "The partner chooses whether to send and edits the draft; a lawyer reviews each client alert."
+  ],
+  "who": "Intapp, Harvey (vendor claims)"
+ },
+ {
+  "id": "professional-services-client-development-09",
+  "title": "AI call summaries and call coaching filed in the account record",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Notes from client calls and meetings are lost or never reach the account record.",
+  "approach": [
+   "A call summary agent turns calls into meeting summaries, and a call coach agent analyses recordings to improve communication.",
+   "Both feed the account record in a professional services automation system; Certinia lists them (vendor-published, announced). No figure published.",
+   "The account lead reviews the summary before it is filed, and the notetaker is disclosed at the meeting start."
+  ],
+  "who": "Certinia (vendor claim)"
+ },
+ {
+  "id": "professional-services-client-development-10",
+  "title": "Agentic origination and business development playbooks over relationship and intake data",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Intapp argues most legal AI speeds up the practice of law for individuals but not the business behind it, and large-firm business workflows are often inefficient.",
+  "approach": [
+   "Intapp's Celeste runs multi-step playbooks for origination, business development, intake, conflicts, pricing and lateral hiring, with a no-code builder.",
+   "Intapp says it can surface matters and pitch material in 'minutes rather than hours'. Practus and Wotton Kearney announced selecting it.",
+   "Review points in the playbooks are not described in the sources."
+  ],
+  "who": "Intapp, Practus, Wotton Kearney (announced)"
+ },
+ {
+  "id": "professional-services-client-development-11",
+  "title": "Idea: agent-run outbound outreach that picks contacts and drafts messages within limits",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: partners do not follow up consistently, and business development teams are asked to do more outreach with the same people.",
+  "approach": [
+   "Idea discussed by practitioners: an agent chooses contacts, drafts messages and schedules or sends them within limits, escalating replies to a person.",
+   "No firm was found running autonomous outbound outreach; no outcome figure is published.",
+   "The partner approves the target list and message templates; a person reviews replies and messages containing client advice."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-client-development-12",
+  "title": "AI capability claims in marketing and thought leadership under editorial control",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Clients expect AI-savvy firms and vague messaging is a missed opportunity, but AI claims are regulated as marketing statements and AI-generated content has transparency rules.",
+  "approach": [
+   "Firms describe their AI tools in marketing, grounded in facts. Examples: Akin Gump's 'Moneyball', Debevoise's STAAR platform, Parker Poe's client AI lab.",
+   "Drafting that content with AI under editorial control is the proposed method; no firm was found describing it.",
+   "A named editor or partner holds editorial responsibility, and marketing or ethics review checks any AI claim."
+  ],
+  "who": "Akin Gump, Debevoise, Parker Poe"
+ },
+ {
+  "id": "professional-services-client-development-13",
+  "title": "Website chatbot that answers prospective clients, gathers facts and routes leads",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Prospects contact firms outside office hours and intake is slow, but a conversational tool can create a client relationship by accident or mislead.",
+  "approach": [
+   "A chatbot answers visitors' questions, gathers facts and routes leads to a lawyer. California names autonomously facilitating client intake as agentic AI.",
+   "Bar opinions describe intake chatbots as in use; no named firm or measured result was found.",
+   "A responsible lawyer reviews each interaction; lawyer approval is needed before any autonomous communication goes out."
+  ],
+  "who": "No named firm (bar opinions)"
+ },
+ {
+  "id": "professional-services-client-development-14",
+  "title": "Partner-led AI value conversations with key clients, prepared with evidence",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients want AI-enabled quality and savings but hear little, partners rarely raise it, and firms get contradictory instructions from clients about AI use.",
+  "approach": [
+   "Firms prepare partners with talking points, client insight, approved language and billing guidance, then sequence the conversation from what changed to pricing.",
+   "Greenberg Traurig's chief pricing and innovation officer said once-silent clients now ask how AI is used on their matters.",
+   "The partner leads and owns what is claimed; pricing proposals go through the firm's pricing function."
+  ],
+  "who": "Greenberg Traurig, DLA Piper, GSK (client)"
+ },
+ {
+  "id": "professional-services-client-development-15",
+  "title": "Matter-level evidence of AI use and its effect, shown to clients",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Clients ask what AI did on their matters and what it saved, but firms mostly cannot answer from their records.",
+  "approach": [
+   "Capture AI-assisted work against client and matter so account teams can show where AI was used and what was reviewed.",
+   "Legora and Laurel announced on 2026-10-13 that Laurel will turn each Legora task into a draft time entry.",
+   "Lawyers review draft time entries; the billing partner approves any AI-related line item or credit."
+  ],
+  "who": "Legora, Laurel (announced)"
+ },
+ {
+  "id": "professional-services-client-development-16",
+  "title": "AI disclosure and consent terms in engagement letters and client guideline responses",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients ask how AI is used on their work and set terms about it, while professional-body guidance says boilerplate consent is not enough.",
+  "approach": [
+   "Firms standardise AI terms (permitted uses, human review, no confidential data in public AI without written consent) in engagement letters.",
+   "Babst Calland's published terms say it may use AI with attorney oversight and the client consents by using its services.",
+   "A partner or risk lead approves the AI terms for each client; terms are reviewed annually."
+  ],
+  "who": "Babst Calland"
+ },
+ {
+  "id": "professional-services-client-development-17",
+  "title": "In-house teams add AI addenda to outside counsel guidelines and panel reviews",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Existing outside counsel guidelines predate AI and give clients no control over which AI tools firms use or how output is reviewed; two-thirds of general counsel do not know.",
+  "approach": [
+   "In-house teams add an AI addendum covering permitted tools, no training on client data, written consent for pass-through charges and audit rights.",
+   "They also add AI questions to panel reviews; firms must act on these as account requirements. No figure published.",
+   "Legal operations and the responsible lawyer decide which tools and uses are permitted, with periodic spot-checks."
+  ],
+  "who": "No named organisation"
+ },
+ {
+  "id": "professional-services-client-development-18",
+  "title": "AI analysis of client feedback, win-loss and matter-close debriefs",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Client feedback programmes are periodic, siloed and reach few clients, and informal feedback in meetings and emails goes unrecorded.",
+  "approach": [
+   "AI groups free-text feedback from interviews, surveys and debriefs into one view. Shoosmiths announced in May 2023 it would use MyCustomerLens.",
+   "Koji offers AI-moderated client interviews; Shoosmiths' efficiencies are described only qualitatively (self-reported). Current use is not confirmed.",
+   "Account leads and senior decision makers review the analysis and decide follow-up."
+  ],
+  "who": "Shoosmiths, Tozers (vendor-linked)"
+ },
+ {
+  "id": "professional-services-client-development-19",
+  "title": "Linking business development activity to revenue",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Most firms cannot connect business development activity to revenue, so they cannot show whether relationship tools or AI pay back.",
+  "approach": [
+   "Relationship, pipeline and billing data are joined so introductions and cross-sell can be attributed to revenue. Intapp lists 'outcome attribution' in DealCloud.",
+   "A vendor survey says 63% have no revenue-linked way to measure return and 15% track revenue with strong attribution (vendor-published).",
+   "Business development and finance leaders agree attribution rules before results are used, especially in partner pay."
+  ],
+  "who": "Intapp, Introhive (vendor claims)"
+ },
+ {
+  "id": "professional-services-client-development-20",
+  "title": "Co-creating AI with key clients through client AI labs and joint measures",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients want evidence that a firm's AI helps them, but talk rarely turns into shared work, and neither side has a way to measure or split AI savings.",
+  "approach": [
+   "Parker Poe held a 2026-09-10 workshop where general counsel and executives built AI assistants with its lawyers on Lega's builder lab.",
+   "About 90% chose the executive briefing track (self-reported). GSK says it looks to partner with outside firms on new AI use cases.",
+   "Lawyers and client staff jointly judge which outputs are useful; both sides sign off use case and measure first."
+  ],
+  "who": "Parker Poe, Fasken, GSK"
+ },
+ {
+  "id": "professional-services-client-development-21",
+  "title": "Firm-built AI tools and client portals offered to clients",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Clients want AI-enabled service but see little of what firms do, and firms want to stay central as clients adopt AI themselves.",
+  "approach": [
+   "Law firms package knowledge into client tools: Debevoise's STAAR on AI risk, Cooley GO Lab for startups and A&O Shearman's Harvey licensing.",
+   "Legora's Portal lets firms invite clients into a white-labelled workspace; some details are announced, not in use; no outcome published.",
+   "Firm lawyers curate and review the guidance the tools draw on."
+  ],
+  "who": "Debevoise, Cooley, A&O Shearman, Linklaters"
+ },
+ {
+  "id": "professional-services-client-development-22",
+  "title": "Client AI enablement roles that scope and advise on clients' own AI",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients ask what the firm's AI means for them and bring their own AI to their advisers, but partners lack time or knowledge to scope AI engagements.",
+  "approach": [
+   "A dedicated innovation team supports partners and clients. Latham & Watkins' Innovation Attorney scopes client AI engagements and advises on limits.",
+   "No outcome figure is published. Other firms' postings were seen in search only; accounting and consulting uses are event ideas.",
+   "Client AI work is delivered with human oversight, and partners lead advice on tools, risks and use cases."
+  ],
+  "who": "Latham & Watkins"
+ }
+]

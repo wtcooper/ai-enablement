@@ -1,0 +1,310 @@
+[
+ {
+  "id": "professional-services-scoping-pricing-01",
+  "title": "Consultancy agents draft scoping and solution designs from meeting transcripts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Senior consultants spend hours writing technical plans and chasing spreadsheets, with scoping documents built by hand from transcripts and requirements.",
+  "approach": [
+   "Certinia's Veda agents draft solution architectures and automate transcripts, requirements, backlogs and scoping at Spaulding Ridge and Diabsolut.",
+   "Spaulding Ridge: drafting time roughly 80 hours to under 20 (vendor-published); Diabsolut: documentation time 70% cut (vendor-published).",
+   "Review steps are not described in the source; the figures cover drafting, not estimate accuracy or win rate."
+  ],
+  "who": "Spaulding Ridge, Diabsolut, Certinia"
+ },
+ {
+  "id": "professional-services-scoping-pricing-02",
+  "title": "PSA agents build engagement estimates from past engagement actuals (vendor-described)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Estimates for project-based services are built from templates or gut instinct, which Certinia says misses cost and risk exposure.",
+  "approach": [
+   "Certinia announced Veda agents in its Salesforce-native professional services software: one builds estimates, another tracks them with expenses and risks (launched 2026-04-15).",
+   "Estimates and pricing are grounded in the actuals of prior engagements rather than templates.",
+   "Vendor headline: proposal or SOW creation from 8 hours to 1 hour (vendor-published); not specific to the estimating agents.",
+   "Human checkpoints are not described on the vendor page."
+  ],
+  "who": "Certinia"
+ },
+ {
+  "id": "professional-services-scoping-pricing-03",
+  "title": "Fee proposals priced from the firm's own comparable past matters",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Fee proposals are priced by habit: in BigHand's survey, 35% say lawyers default to standard hourly rates and 28% copy a past matter's price.",
+  "approach": [
+   "Ayora (now part of BigHand) and Narrative find comparable past matters, adjust for staffing and scope, and let pricing teams test scenarios.",
+   "August's demo calculates flat fees from uploaded invoices and prior bills; a lawyer drafts the client email.",
+   "Vendor claim for firms using its product: realisation up 2-4%; about 10% more new work won (vendor-published)."
+  ],
+  "who": "Ayora (BigHand), Narrative, August"
+ },
+ {
+  "id": "professional-services-scoping-pricing-04",
+  "title": "Fixed-fee quotes checked against anonymised market ranges before pricing a matter",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Goodwin's clients push for efficiency and predictability, and the firm wants to answer pricing and budgeting requests faster.",
+  "approach": [
+   "Goodwin announced a global rollout of PERSUIT's Fixed-Fee Price Benchmarking, returning a range of typical fees from anonymised historical proposals and matters.",
+   "The vendor says it does not set or recommend prices; lawyers and pricing staff choose the price and the client negotiates independently.",
+   "Goodwin says it can respond to pricing requests more quickly; no measurement published (self-reported)."
+  ],
+  "who": "Goodwin, PERSUIT"
+ },
+ {
+  "id": "professional-services-scoping-pricing-05",
+  "title": "Agent drafts the statement of work from sales context",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Sales and delivery teams re-key deal context into statements of work (the document fixing scope, deliverables and fees) by hand, which slows proposals and weakens the handoff.",
+  "approach": [
+   "Certinia's SOW Drafter Agent generates a statement of work from sales context so delivery starts aligned.",
+   "Neocol brought its entire sales team live on the workflow within nine days of launch (vendor-published); no drafting-time measurement published.",
+   "Review steps are not described; Certinia calls the outputs polished drafts."
+  ],
+  "who": "Certinia, Neocol"
+ },
+ {
+  "id": "professional-services-scoping-pricing-06",
+  "title": "Hourly matters: budget and bill the time AI-assisted work actually takes",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Hourly budgets built on pre-AI task times are a compliance risk, because several bar opinions say an hourly fee must reflect time actually spent.",
+  "approach": [
+   "Norton Rose Fulbright says it bills hours actually worked, not what work might have taken without AI, and expects recovered time redirected.",
+   "Bar guidance says to budget from the effort of AI-assisted work and state in fee agreements how AI affects rates.",
+   "Billing partner reviews the pre-bill against time worked; lawyers verify AI outputs. No savings figure published (self-reported)."
+  ],
+  "who": "Norton Rose Fulbright; bar guidance"
+ },
+ {
+  "id": "professional-services-scoping-pricing-07",
+  "title": "Fee agreements that state AI use, client approval and AI cost treatment",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Fee agreements are often silent on whether AI is used and how its cost is treated, while regulators separate overhead from matter-specific costs.",
+  "approach": [
+   "Engagement letters say whether AI is used, whether client approval is needed, and which AI costs are overhead or billed at cost.",
+   "Idea: a possible shift to consumption-based AI pricing, discussed at ILTACON 2026, would force choices on which costs sit in fees.",
+   "Firms requiring client approval before using generative AI: 8% (under 50 lawyers) to 38% (350-699 lawyers) (independent).",
+   "Billing partner confirms disclosure and client consent before AI costs are charged."
+  ],
+  "who": "Bar opinions and surveys; no named firm"
+ },
+ {
+  "id": "professional-services-scoping-pricing-08",
+  "title": "Predictive alerts on matters heading over budget, tracking work in progress",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Budgets are set but few firms manage them actively, so overruns become write-offs; in BigHand's survey only 23% actively monitor budgets throughout a matter.",
+  "approach": [
+   "Ayora tracks budgets, work in progress, billing and collections against benchmarks from past matters and issues predictive alerts on matters at risk.",
+   "Narrative describes live work in progress against budget and catching overruns before write-off (vendor descriptions).",
+   "Survey baseline: 23% actively monitor and update budgets throughout (vendor-published); the matter team acts on alerts and agrees re-scoping with the client."
+  ],
+  "who": "Ayora (BigHand), Narrative"
+ },
+ {
+  "id": "professional-services-scoping-pricing-09",
+  "title": "Matter-level evidence of AI use and savings to answer client pricing questions",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Clients ask how AI saves them money, but firms are still gathering data, call return measurement anecdotal, and struggle to capture AI work in time records.",
+  "approach": [
+   "Laurel and Legora announced on 2026-10-13 that each task completed in Legora becomes a draft time entry for the lawyer to review.",
+   "A second phase will develop, with customers, measures of how Legora is used and the value of AI-powered work.",
+   "Nearly 60% of in-house counsel see no savings yet from outside counsel's generative AI use (vendor-published)."
+  ],
+  "who": "Laurel, Legora, GSK"
+ },
+ {
+  "id": "professional-services-scoping-pricing-10",
+  "title": "Partners lead the AI-value conversation with clients before conceding on fees",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Few partners discuss AI with clients: over one-third of stand-out lawyers in Thomson Reuters Institute's survey talked about it with under 20% of their clients.",
+  "approach": [
+   "Thomson Reuters Institute recommends partners lead with what changed for the client, agree how AI is used, then discuss pricing.",
+   "DLA Piper's AI innovation head advised firms to lead the conversation before the client sets the terms.",
+   "The partner owns the client conversation; client general counsel and firm leadership agree any pilot terms.",
+   "About one-third of embedded AI partners have discussed AI with at least 60% of their clients (vendor-published)."
+  ],
+  "who": "Thomson Reuters Institute, DLA Piper"
+ },
+ {
+  "id": "professional-services-scoping-pricing-11",
+  "title": "Clients write AI-savings terms into outside-counsel guidelines and press suppliers on fees",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "In-house teams cannot see what AI savings they get, with nearly 60% of surveyed in-house counsel seeing no noticeable savings yet.",
+  "approach": [
+   "In-house teams ask how AI saves money, request AI invoice line items, and add guideline terms reflecting time saved in billed hours.",
+   "In one reported case KPMG pressed its auditor Grant Thornton to cut its fee, arguing AI should make the audit more efficient.",
+   "Reported fee reduction: 14% (about $416,000 in 2024 to about $357,000 in 2025) (independent).",
+   "Client counsel agree the guideline provisions; fees are negotiated between buyer and supplier."
+  ],
+  "who": "KPMG, Grant Thornton, in-house legal teams"
+ },
+ {
+  "id": "professional-services-scoping-pricing-12",
+  "title": "Public-sector buyers recover consulting fees after AI errors and require AI-use declarations",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "A government-commissioned consulting report contained apparent AI-generated errors, including a fabricated court quotation, so government buyers cannot tell whether fees reflect AI use.",
+  "approach": [
+   "Deloitte reviewed the 237-page report and confirmed some footnotes and references were incorrect; a revised version discloses generative AI use.",
+   "The Australian department said Deloitte agreed to repay the final instalment of an AUD 440,000 contract; amount to be made public (independent).",
+   "Australia's Public Service AI plan (12 Nov 2025) says advisory-panel suppliers will have to advise planned AI use in quote responses."
+  ],
+  "who": "Deloitte, Australian government department"
+ },
+ {
+  "id": "professional-services-scoping-pricing-13",
+  "title": "Performance metrics moved off billed hours so non-hourly pricing can work",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "When staff are paid and promoted on billed hours, AI efficiency is not rewarded and value pricing meets internal resistance.",
+  "approach": [
+   "Wipfli is introducing non-traditional metrics such as client satisfaction and cycle time as pricing and technology change.",
+   "Resultsense reports PwC senior-staff bonuses will track revenue and margin per professional rather than hours billed (secondary report).",
+   "A GGI commentary says compensation, origination credit and write-off policy must change if non-hourly pricing is to work."
+  ],
+  "who": "Wipfli, PwC, GGI commentary"
+ },
+ {
+  "id": "professional-services-scoping-pricing-14",
+  "title": "Idea: choose the fee structure by how observable outcomes and costs are",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: pricing models are chosen by convention, and only 7.3% of resource-management respondents say outcome data is easily accessible and routinely used in staffing.",
+  "approach": [
+   "Brynjolfsson and Petropoulos propose asking per engagement whether the client can verify and attribute results, and see the firm's true delivery cost.",
+   "The answers map onto time-based, project, subscription, outcome or hybrid pricing, with hybrid treated as the equilibrium.",
+   "At scoping, agree metrics, baselines and where possible controlled rollouts before tying any fee to outcomes; an executive approves the structure."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-scoping-pricing-15",
+  "title": "Flat or alternative fees for repeatable legal work, pricing in AI savings",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Under hourly billing AI efficiency cuts a firm's own revenue; one author's arithmetic has a task falling from 1 hour to 0.2 hours removing 80% of that revenue.",
+  "approach": [
+   "Firms move repeatable matters to flat or alternative fees and build expected AI time savings into the price, with phase-based scoping.",
+   "Partner and pricing team set scope, fee and re-scoping triggers; the client agrees success measures before the engagement.",
+   "Survey: 30% keep existing pricing and take the profit; 25% offer discounts when clients permit AI use (vendor-published).",
+   "54% of UK firms expect more fixed-fee billing (vendor-published)."
+  ],
+  "who": "Survey data; no named firm"
+ },
+ {
+  "id": "professional-services-scoping-pricing-16",
+  "title": "Accounting firms pilot value-based and subscription pricing as AI shortens work",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI can halve the time to produce a client report, forcing a choice between keeping the saving as margin or passing it on as a lower price.",
+  "approach": [
+   "Per Bloomberg Tax, leaders at KPMG, PwC and RSM are brainstorming charging on value and outcomes; RSM uses several pricing models.",
+   "RKL is piloting a value-based model created by consultancy Fore LLC and has onboarded several dozen new clients (self-reported).",
+   "RSM's example: certain tax advisory reports fall from 20 hours to 10 with generative AI and checking (self-reported).",
+   "The partner prices on the value the client attaches to the work."
+  ],
+  "who": "RSM, RKL, PwC, KPMG, Fore LLC"
+ },
+ {
+  "id": "professional-services-scoping-pricing-17",
+  "title": "Deciding where the AI time dividend goes: price, margin, advisory or quality",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "AI saves delivery time, but if price stays tied to hours the saving is lost or handed to the client.",
+  "approach": [
+   "Thomson Reuters Institute describes three paths for tax firms: redeploy people to advisory, serve more clients, or rebuild around continuous insight.",
+   "Thomson Reuters' 2026 survey describes an Elevate path, preferred by 52% of professionals surveyed: AI raises quality, fees held or raised.",
+   "Firms saying AI saves them time: 84.8% (independent).",
+   "Partners and pricing leads decide whether savings become margin, price reduction or new services."
+  ],
+  "who": "Thomson Reuters Institute, SPI Research"
+ },
+ {
+  "id": "professional-services-scoping-pricing-18",
+  "title": "KPI-based monthly retainer billing replaces hourly billing for insurance-defence work",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Under hourly billing, faster work cuts the firm's revenue, while insurer clients audit and cut bills line by line, costing both sides administrative effort.",
+  "approach": [
+   "Kopka Law moves defence-litigation clients to monthly retainer or portfolio billing judged on KPIs such as cycle time and indemnity outcome.",
+   "It uses the insurer's claim frequency and severity data and its own litigation-category data to set the arrangement.",
+   "Firm reports freed capital and administrative resources; no figures published (self-reported). How KPIs are set and reviewed is not described."
+  ],
+  "who": "Kopka Law"
+ },
+ {
+  "id": "professional-services-scoping-pricing-19",
+  "title": "Management consultancy ties a share of fees to client outcomes",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients arrive with a result they want rather than a defined scope, and AI-compressed analytical work makes hours harder to defend.",
+  "approach": [
+   "McKinsey says clients bring a target outcome and the fee is mostly contingent on performance against a scorecard, with some fixed components.",
+   "Its UK managing partner said in November 2025 that about a quarter of global fees come from outcome-based pricing (self-reported).",
+   "The scorecard is agreed with the client before work starts, and the client signs off results."
+  ],
+  "who": "McKinsey"
+ },
+ {
+  "id": "professional-services-scoping-pricing-20",
+  "title": "IT services firms shift contracts from hours to outcomes, sharing AI savings",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients demand price cuts as AI lifts delivery efficiency, and billing large offshore workforces by the hour loses its logic.",
+  "approach": [
+   "Reuters reports TCS, Infosys, Wipro, HCLTech and Cognizant increasingly tie fees to performance outcomes instead of hours worked.",
+   "TCS's CEO said about 80% of contracts in one segment use outcome performance measures (self-reported).",
+   "Persistent's CEO said clients were demanding the same work for 25% to 30% less (self-reported).",
+   "Reuters, citing people familiar, says a Cognizant-Daimler Truck deal splits AI-related cost savings between vendor and client."
+  ],
+  "who": "TCS, Infosys, Wipro, HCLTech, Cognizant"
+ },
+ {
+  "id": "professional-services-scoping-pricing-21",
+  "title": "AI-native law firms sell fixed-price bundles or per-document rates instead of hours",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Routine commercial contract work is priced by the hour at traditional firms; Falcon's founders say straightforward work can cost small and medium businesses EUR 3,000 to 4,000 a piece.",
+  "approach": [
+   "Falcon (Belgium) offers six contract reviews a month for a flat EUR 1,000, each signed off by a qualified lawyer, same day.",
+   "Crosby advertises fixed rates by the document, with human attorneys reviewing all work.",
+   "Falcon's founders estimate EUR 3,000-4,000 per straightforward piece of work at a traditional firm (self-reported)."
+  ],
+  "who": "Falcon, Crosby"
+ },
+ {
+  "id": "professional-services-scoping-pricing-22",
+  "title": "PwC One packages expertise into AI-delivered services, possibly priced by subscription",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Hours-based billing built on large junior teams doing routine tasks is threatened when AI can do much of that work.",
+  "approach": [
+   "PwC introduced PwC One on 2026-03-19: clients describe a problem, agents do the work, PwC professionals review outputs; beta in March 2026.",
+   "Press coverage says some services may become tools clients access directly, potentially by annual subscription; PwC's release gives no pricing.",
+   "Six automated services at launch, with more promised; no price, uptake or quality figure published (self-reported)."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "professional-services-scoping-pricing-23",
+  "title": "Law firms license firm-built AI tools to clients and peers",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Clients want AI-enabled service but see little of what firms do, and hours are no way to charge for a tool.",
+  "approach": [
+   "Debevoise's STAAR gives clients the firm's AI-risk guidance; ABA Journal reports STAAR 2.0 as a subscription platform built with Legora.",
+   "A&O Shearman has a revenue-sharing arrangement with Harvey to license its tools to clients and other firms.",
+   "Cooley made Cooley GO Lab, a Legora-built workspace, free to a summer Y Combinator cohort.",
+   "Debevoise says the tools complement its lawyers' advice. No figures published (self-reported)."
+  ],
+  "who": "Debevoise, A&O Shearman, Cooley, Legora, Harvey"
+ }
+]

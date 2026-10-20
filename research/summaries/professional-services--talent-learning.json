@@ -1,0 +1,327 @@
+[
+ {
+  "id": "professional-services-talent-learning-01",
+  "title": "Firmwide AI training and certification, with tool access gated on completion",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "New lawyers form AI habits before firm guidance reaches them, and 34% of surveyed professionals use AI tools their organisation has not sanctioned.",
+  "approach": [
+   "Training and a written policy become a condition of access to AI tools, repeated as tools change.",
+   "PwC says over 330,000 people have taken AI training and Accenture over 550,000 (self-reported); Deloitte and Anthropic announced certification for 15,000.",
+   "Training must be completed before access is granted, and refreshed when tools or their autonomy change."
+  ],
+  "who": "PwC, Accenture, Deloitte, Latham & Watkins, Blank Rome"
+ },
+ {
+  "id": "professional-services-talent-learning-02",
+  "title": "Onboarding rebuilt for new associates, with AI champions and a first-draft rule",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI is absorbing the routine tasks that built associates' judgment, so a one-time training session no longer develops either AI practice or judgment.",
+  "approach": [
+   "Duane Morris runs a two-day orientation then twice-monthly sessions; each practice group has AI champions who show new lawyers suitable tools.",
+   "One fixed principle: a first draft is never an appropriate final submission. No outcome measures are published.",
+   "A separate mentorship track remains, and the talent team debriefs each outgoing class to redesign the next programme."
+  ],
+  "who": "Duane Morris"
+ },
+ {
+  "id": "professional-services-talent-learning-03",
+  "title": "Protected billable-credit time and build competitions for junior lawyers to learn AI",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Training time competes with billable targets, so juniors have little protected time to learn AI tools while AI takes over their routine tasks.",
+  "approach": [
+   "Ropes & Gray lets first-year associates spend up to 20% of billable hours (reported as nearly 400 a year) learning AI tools.",
+   "Extended to Europe in January 2026; an AI World Cup drew 25 teams building workflows for real problems (self-reported).",
+   "Partners hear junior presentations and lead mentoring circles; progress is reported regularly."
+  ],
+  "who": "Ropes & Gray, Blank Rome"
+ },
+ {
+  "id": "professional-services-talent-learning-04",
+  "title": "Rotations and secondments putting juniors inside AI, innovation and knowledge teams",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Juniors need a development path when drafting and diligence no longer fill the day, and firms need people who understand both the practice and the AI tools.",
+  "approach": [
+   "A&O Shearman associates work inside its Markets Innovation Group; from September 2026 Sidley London trainees do a seat in its AI lab.",
+   "MinterEllison's accelerator produced more than 150 use cases, and over a thousand employees logged in on day one (vendor-published).",
+   "Outputs are checked against the playbook, and trainees work alongside practice lawyers and knowledge, research and data staff."
+  ],
+  "who": "A&O Shearman, Sidley, MinterEllison, Stephenson Harwood"
+ },
+ {
+  "id": "professional-services-talent-learning-05",
+  "title": "AI training moved upstream: funded master's degrees, vendor academies, law-school programmes",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "New lawyers often arrive with little AI experience, so training falls on employers and delays use on client work.",
+  "approach": [
+   "Freshfields funds a King's College London LL.M in Law & Technology for future trainees, with a GBP 20,000 maintenance grant.",
+   "Harvey launched Harvey Academy in January 2026 and says it works with 100+ law schools; Legora has nine founding schools (vendor-published).",
+   "Freshfields keeps a continued firm connection with trainees during their studies."
+  ],
+  "who": "Freshfields, Harvey, Legora, BPP"
+ },
+ {
+  "id": "professional-services-talent-learning-06",
+  "title": "AI practice environments replacing lost junior repetitions: simulations, personas, pre-review feedback",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "When AI does routine drafting or review, juniors lose the repetitions and feedback loops that built judgment, and seniors have little time to coach.",
+  "approach": [
+   "Kennedys and Spellbook are launching simulated learning scenarios; Three Crowns worked with Stanford on a cross-examination simulator.",
+   "Duane Morris uses a ChatGPT-based tool to rehearse hard feedback; a BYU professor built an Excel review tool. No measures published.",
+   "Mentors coach using simulation feedback, and managers still review after the junior's self-check."
+  ],
+  "who": "Kennedys, Duane Morris, Three Crowns, Ascend, BYU"
+ },
+ {
+  "id": "professional-services-talent-learning-07",
+  "title": "Entry-level roles redesigned so juniors review and supervise AI output earlier",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Entry-level work such as data gathering is being taken over by AI, removing the work that taught execution first and judgment later.",
+  "approach": [
+   "PwC's AI assurance leader said new hires will oversee AI on routine audit tasks and become reviewers quickly; Withum pushes responsibilities down.",
+   "PwC job-ad analysis finds AI-exposed junior roles 7 times more likely to ask for senior skills (vendor-published).",
+   "Reviewers sign off AI-performed tasks, and managers question trainees on their reasoning even when the result is right."
+  ],
+  "who": "PwC, Withum, PKF Smith Cooper"
+ },
+ {
+  "id": "professional-services-talent-learning-08",
+  "title": "Graduate and associate programmes rebuilt around earlier judgment and human skills",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Graduates' first-year work of data entry and basic reports is being automated, so the old sequence of manual tasks first and judgment later no longer fits.",
+  "approach": [
+   "City AM reports all UK Big Four firms overhauled graduate training; KPMG front-loads exams so graduates advise clients in year two.",
+   "Winston Taylor taught 12 durable skills partly with a theatre company; Sheppard hired an AI-mindset trainer. No outcome measures published.",
+   "Graduates learn alongside experienced staff and partners before client engagements."
+  ],
+  "who": "KPMG, PwC, Winston Taylor, Sheppard, Duane Morris"
+ },
+ {
+  "id": "professional-services-talent-learning-09",
+  "title": "Teaching and checking verification and independent reasoning explicitly",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Most AI training teaches what tools do, not when to trust, verify or override them, yet professionals are held accountable for AI-assisted work.",
+  "approach": [
+   "Fredrikson & Byron states a goal of a formal curriculum on supervising AI output; PKF Smith Cooper managers question trainees' correct results.",
+   "Proposals include aviation-style verification checklists, assigned challengers and AI-off days. In one survey, 72% cited gaps in deep legal reasoning (vendor-published).",
+   "A reviewer questions the junior's reasoning, and someone other than the drafter challenges it."
+  ],
+  "who": "Fredrikson & Byron, PKF Smith Cooper, Barbri"
+ },
+ {
+  "id": "professional-services-talent-learning-10",
+  "title": "Junior AI-use disclosure and second-level supervisor review",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Juniors can submit polished AI-assisted work without checking sources or telling the supervisor; in one UK case, fictitious authorities reached the court.",
+  "approach": [
+   "Juniors tell supervisors when AI was used, verify every authority and quote, and escalate errors at once, per DWF's published guide.",
+   "The solicitors' regulator received 42 reports of AI misuse in the past year (independent).",
+   "Supervisors carry out second-level review with sources checked, and a lawyer approves any filing."
+  ],
+  "who": "DWF, UK regulator and bar bodies"
+ },
+ {
+  "id": "professional-services-talent-learning-11",
+  "title": "Measuring whether juniors keep building expertise under AI, using a no-AI test",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "AI can raise the quality of delivered work while stunting the expertise professionals would develop by doing it, and firms have lacked controlled measurement.",
+  "approach": [
+   "A three-month randomised trial gave 133 patent lawyers at eleven US IP firms a custom AI drafting assistant; experts scored work blind.",
+   "Quality rose +0.34 SD at 10 days, +0.38 SD at 90 days (vendor-published); on a no-AI task, juniors showed no average gain.",
+   "The design can serve as a template for a firm-level check on skill formation."
+  ],
+  "who": "Eleven US IP firms (NBER trial)"
+ },
+ {
+  "id": "professional-services-talent-learning-12",
+  "title": "Skill-aware task allocation: use AI where juniors gain, teach where it fails",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Gains from AI differ by task and baseline skill, and outside AI's competence it can make results worse, so firms need evidence on which tasks to protect.",
+  "approach": [
+   "Controlled-experiment evidence sets task rules and teaches the boundary of reliable use; 758 BCG consultants were tested in a preregistered experiment.",
+   "Inside the frontier: 12.2% more tasks, 25.1% faster; outside it: 19% less likely to be correct (independent).",
+   "Human review of any task flagged as outside the AI frontier."
+  ],
+  "who": "BCG, Harvard Business School, University of Minnesota"
+ },
+ {
+  "id": "professional-services-talent-learning-13",
+  "title": "Recruiting and assessing for judgment and learning agility, not credentials",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI makes surface competence easy to show, so hiring proxies such as grades and tool knowledge say less about who will perform when the answer is unclear.",
+  "approach": [
+   "Fredrikson & Byron prioritises curiosity over tool checklists; McKinsey is reported to use an AI interview where finalists prompt Lilli.",
+   "The McKinsey report comes from a preparation firm and the Financial Times; McKinsey declined to comment. No outcome measures published.",
+   "Interviewers judge how a candidate reasons, not whether the answer is right."
+  ],
+  "who": "Fredrikson & Byron, McKinsey"
+ },
+ {
+  "id": "professional-services-talent-learning-14",
+  "title": "AI-led screening interviews for graduate applicants, under bias-audit and human-review rules",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Application forms limit what candidates can say, and recruiters make early screening decisions from thin information.",
+  "approach": [
+   "Mishcon de Reya is trialling Bright Apply for its 2026 graduate season: a tailored, untimed virtual interview replacing a long form.",
+   "Almost 75% of students rated it 4 or 5 out of 5 (self-reported).",
+   "The firm reviews each transcript and its Early Careers team makes all screening decisions; regulators expect bias audits and notice."
+  ],
+  "who": "Mishcon de Reya, Bright Network"
+ },
+ {
+  "id": "professional-services-talent-learning-15",
+  "title": "AI adoption written into objectives, performance reviews and promotion",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Firms that have invested in AI cannot capture value unless staff use it, and only 39% of professionals have personal goals linked to AI adoption.",
+  "approach": [
+   "KPMG tracks AI use through tool data and will assess staff on AI objectives in 2026 performance reviews.",
+   "Accenture reportedly collects senior staff's weekly AI log-ins and requires regular adoption for leadership; PwC's US CEO said resisters have no place.",
+   "Managers set and review year-end objectives; how usage is weighed in promotion was not published."
+  ],
+  "who": "KPMG, Accenture, PwC"
+ },
+ {
+  "id": "professional-services-talent-learning-16",
+  "title": "Firmwide bonus pool tied to staff AI prompt volume",
+  "grade": "A",
+  "ladder": "assist",
+  "problem": "A general-purpose AI tool delivers little unless many people use it, and the firm wanted to encourage everyday use without mandating it.",
+  "approach": [
+   "Shoosmiths set a target of one million Microsoft Copilot prompts within its firmwide bonus scheme, unlocking an extra GBP 1 million.",
+   "The firm reached 1,000,000 prompts more than four months early (self-reported).",
+   "Payout was conditional on the firm meeting its core financial metric."
+  ],
+  "who": "Shoosmiths"
+ },
+ {
+  "id": "professional-services-talent-learning-17",
+  "title": "AI in associate reviews; scoring for pay or promotion is an idea",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Associate evaluations take a great deal of time and feedback often arrives stale; AI scoring of people brings the same legal duties as hiring.",
+  "approach": [
+   "Of 106 US and Canadian firms surveyed, 31% had integrated AI into evaluations, mostly for summaries, feedback analysis and bias checks (independent).",
+   "Using AI indicators for promotion, training selection or pay was not found deployed in professional services.",
+   "Supervising lawyers write the comments, and a human reviews every adverse outcome."
+  ],
+  "who": "NALP Foundation survey of 106 firms"
+ },
+ {
+  "id": "professional-services-talent-learning-18",
+  "title": "Professional-grade AI access as a recruiting and retention lever",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Professionals who see a gap between AI's value to the organisation and to themselves are more likely to consider leaving.",
+  "approach": [
+   "Provide approved professional-grade tools, communicate the AI strategy, and tie AI value to recognition and progression.",
+   "24% considering leaving within two years; USD 232,000 per replacement (Thomson Reuters estimate, vendor-published).",
+   "Recruiters are prepared to explain tools, workflow fit and career impact."
+  ],
+  "who": "Vendor claim (Thomson Reuters survey)"
+ },
+ {
+  "id": "professional-services-talent-learning-19",
+  "title": "Resizing entry-level intake as AI absorbs junior work",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "The leverage pyramid rested on large junior cohorts doing work that both billed and trained; if AI absorbs it, firms must decide how many entrants to hire.",
+  "approach": [
+   "Three positions: smaller intake, more laterals, or held intake with a redesigned role. UK Big Four hiring fell; KPMG 1,399 to 942.",
+   "Two-thirds of 57 large US firms surveyed by Citi expect fewer first-years in 2028 than in 2025 (independent).",
+   "A partner, board or talent committee decides class size, reviewed annually against demand and client pressure."
+  ],
+  "who": "Big Four, McKinsey, large US law firms"
+ },
+ {
+  "id": "professional-services-talent-learning-20",
+  "title": "Leverage and workforce model redesigned for hybrid human-and-agent teams",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "AI compresses the junior layer and clients are reluctant to pay for junior tasks, while resource managers lack playbooks for teams mixing experts and agents.",
+  "approach": [
+   "A quarter of law firms expect leverage changes by 2027; McKinsey's chief executive has said it has 20,000 agents alongside 40,000 staff.",
+   "In one survey, 74% of law firms plan flat headcount using AI and 14% expect agents to do most work (vendor-published).",
+   "Partners and management committees decide structure, and resource managers approve team composition."
+  ],
+  "who": "McKinsey, large law firms (survey evidence)"
+ },
+ {
+  "id": "professional-services-talent-learning-21",
+  "title": "Upskilling plus compressed-timeline exits where reskilling is not viable",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "For some staff, reskilling is not a viable path to the skills the firm needs, and strategy, structure and performance measures were not aligned.",
+  "approach": [
+   "Accenture announced a six-month optimisation programme with up to USD 865 million of related charges and a talent strategy: upskill, exit, efficiency.",
+   "Expected savings above USD 1 billion (self-reported); headcount is still expected to rise overall.",
+   "No human checkpoints are stated in the sources."
+  ],
+  "who": "Accenture"
+ },
+ {
+  "id": "professional-services-talent-learning-22",
+  "title": "Support-function roles re-scoped as AI and hub operations take routine work",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Finance, HR, IT, marketing and secretarial support teams carry routine work that AI and hub operations can take over.",
+  "approach": [
+   "Clifford Chance told London business-services staff greater use of AI meant jobs had to go; about 10% of 550 affected (independent).",
+   "Baker McKenzie says a review of its business professionals functions means some roles will likely be phased out and others will evolve.",
+   "Consultation processes apply in relevant jurisdictions before changes are final."
+  ],
+  "who": "Clifford Chance, Baker McKenzie"
+ },
+ {
+  "id": "professional-services-talent-learning-23",
+  "title": "Idea: new junior operational roles as an apprenticeship route",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: if drafting and research are cheap, junior work moves to operations, data and verification, and firms need a defined route into it.",
+  "approach": [
+   "A Thomson Reuters Institute columnist proposes rotating junior lawyers through AI compliance, legal data analysis, knowledge curation and workflow-prototyping roles.",
+   "A related suggestion is rotations through knowledge management, professional development and technology functions.",
+   "Progression to strategic roles would be supervised."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-talent-learning-24",
+  "title": "Idea: milestone-based progression, deliberate-mistake exercises and measures beyond billable hours",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: time-served progression assumed judgment would emerge from repetition, so firms need another way to develop and certify readiness.",
+  "approach": [
+   "A consultant proposes milestones, with early-career staff learning through returns with buried issues, plausible-but-wrong AI recommendations and client-meeting debriefs.",
+   "A LexisNexis survey found leaders rank revenue growth (55%) and client feedback (49%) above billable hours (38%) (vendor-published).",
+   "Debriefs ask what the person noticed and missed; partners and talent committees approve new metrics."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-talent-learning-25",
+  "title": "Idea: residency-style supervised practice and a funded profession-wide formation system",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: AI reduces traditional first jobs, and the profession has no agreed definition of legal judgment or standards for AI use in training.",
+  "approach": [
+   "A Thomson Reuters Institute white paper proposes work-based learning modelled on medical residencies, teaching judgment as micro-skills with AI as thinking partner.",
+   "Funding might come from a small percentage of legal services revenue; Northeastern Law and UNH Franklin Pierce are cited as existing models.",
+   "Supervised postgraduate practice would form part of licensure (proposed)."
+  ],
+  "who": "No named deployment"
+ }
+]

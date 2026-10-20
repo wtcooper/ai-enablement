@@ -1,0 +1,223 @@
+[
+ {
+  "id": "professional-services-firm-finance-01",
+  "title": "Shifting the fee mix from hours toward fixed, hybrid and outcome-linked fees",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "When AI shortens a task an hourly bill earns less for the same result, yet about 90% of legal dollars still flow through hourly arrangements.",
+  "approach": [
+   "Firm leaders set a target mix of pricing models across the portfolio rather than deal by deal.",
+   "McKinsey says about a quarter of its global fees come from outcomes-based pricing (self-reported); Keypoint Law expects hybrid fees, known part fixed.",
+   "Leadership sets the mix; pricing leads and partners set each price, and agree an outcome scorecard with clients."
+  ],
+  "who": "McKinsey, Keypoint Law"
+ },
+ {
+  "id": "professional-services-firm-finance-02",
+  "title": "Modelling how much AI compresses each type of work before rate setting",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Firms set rates and fee arrangements on averages, without a view of which work AI will shorten, while rates and results are moving apart.",
+  "approach": [
+   "Legal Decoder said it would release a tool sorting legal work into eight archetypes with expected AI compression, plus a pricing builder.",
+   "Recruiter postings for unnamed global firms ask pricing staff to model margins for AI-assisted matters. No firm describes using the modelling.",
+   "Pricing or finance leadership reviews assumptions before rates change, and partners review work clusters before they become fee schedules."
+  ],
+  "who": "Legal Decoder (vendor); unnamed firms"
+ },
+ {
+  "id": "professional-services-firm-finance-03",
+  "title": "Using captured work data to find revenue leakage and manage matter profitability",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Firms learn that a matter lost money after the bill is out; recorded time differs from time worked, and fixed-fee delivery cost is a guess.",
+  "approach": [
+   "Laurel captures activity across applications, drafts time entries, and shows recorded versus actual time, cost against revenue and leverage as work runs.",
+   "Tonkon Torp reports 21 minutes a day per lawyer and 20% faster collection (vendor-published); Aprio and Bonadio Group are cited.",
+   "Timekeepers review drafted entries; finance and practice leaders review flags, and partners decide pricing and staffing."
+  ],
+  "who": "Tonkon Torp, Aprio, Bonadio Group, Laurel"
+ },
+ {
+  "id": "professional-services-firm-finance-04",
+  "title": "Analysing every line of legal bills with machine learning to police fees",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Billing codes are unreliable, so finding block billing or excessive time means reading narratives, and reviewers sample invoices rather than read every line.",
+  "approach": [
+   "Legal Decoder re-categorises every line item from its narrative and applies 45 flags; its Aperture layer answers plain-language questions.",
+   "Fee examiners in 4 named bankruptcy cases disclose the tool as their methodology (vendor-published); client names are tokenised before the language model.",
+   "Users check findings against invoices by export, and legal operations or the fee examiner decides what to dispute."
+  ],
+  "who": "Legal Decoder, UnitedLex, UBS, fee examiners"
+ },
+ {
+  "id": "professional-services-firm-finance-05",
+  "title": "Finance agents in the billing system explain rates and forecast the ledger",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Finance teams spend time assembling context across billing, receivables, time and rate data, and on spreadsheet work to forecast and track rate changes.",
+  "approach": [
+   "Aderant's Agent Center lists a Rates Agent for governed rate requests and a General Ledger Forecasting Agent with variance analysis.",
+   "Aderant says agents prepare, prioritise and draft while the team reviews and decides; announced, with no outcomes published.",
+   "Rate requests go through governed approvals, and finance staff review forecasts and drafts before use."
+  ],
+  "who": "Aderant (vendor); no customer named"
+ },
+ {
+  "id": "professional-services-firm-finance-06",
+  "title": "Aiming AI at the research and drafting time partners write down",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Partners write down time that took too long; TRI puts the average partner's own write-downs at about 300 hours a year.",
+  "approach": [
+   "Start with a revenue-leakage analysis to find where hours are lost, then apply AI to those workflows.",
+   "A commissioned Forrester study models up to $6.2m over 3 years for a theoretical large firm (vendor-published). No firm reports measured results.",
+   "Billing partners decide whether to write down time."
+  ],
+  "who": "Miles & Stockbridge, Thomson Reuters Institute"
+ },
+ {
+  "id": "professional-services-firm-finance-07",
+  "title": "Setting a firm-level AI investment budget and reviewing it against finance measures",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Spending is ahead of proof: only 18% of professionals say their organisation tracks AI return on investment.",
+  "approach": [
+   "Firms set an AI budget and review spend against adoption and measures leaders already watch, such as utilisation and margin.",
+   "PwC reports $3 billion invested across its network in AI and other areas (self-reported); RSM US announced $1 billion over three years.",
+   "The executive committee or CFO approves the budget and reviews return measures before renewals."
+  ],
+  "who": "PwC, RSM US, KPMG"
+ },
+ {
+  "id": "professional-services-firm-finance-08",
+  "title": "Gating pilot-to-licence decisions on weekly active use on real matters",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Lawyers test AI tools on top of billable work, and few legal teams can show a reliable return, so licences risk becoming unused shelfware.",
+  "approach": [
+   "Holland & Hart runs pilots on real matters and treats more than 70% weekly active users as the sign of real adoption.",
+   "Laurel Signal and Harvey's Command Center sell usage analytics for this purpose.",
+   "A technology lead decides to buy, extend or stop based on trial use; the business owner confirms the goal."
+  ],
+  "who": "Holland & Hart, Laurel, Harvey"
+ },
+ {
+  "id": "professional-services-firm-finance-09",
+  "title": "Tracking where AI-freed hours go and deciding whether to resell them",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "AI saves time, but unless freed hours are identified and sold the firm is no more productive; one report calls the gap between time saved and revenue earned the leak.",
+  "approach": [
+   "Advisers tell firms to plan how to reprice or resell saved hours and tie AI to utilisation, margin and revenue per employee.",
+   "84.8% of firms say AI saves time (independent); about one third of small law firms are growing revenue from AI (vendor-published).",
+   "Practice leaders decide how freed hours are redeployed, and finance reviews revenue and margin per head. No firm describes a tracking system."
+  ],
+  "who": "Vendor claim (SPI, Clio); no firm named"
+ },
+ {
+  "id": "professional-services-firm-finance-10",
+  "title": "Funding a firm-owned AI platform as a multi-year investment, not renting",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A firm that only licenses the same AI tools as its rivals has nothing distinctive, and rented tools leave it exposed to vendor pricing changes.",
+  "approach": [
+   "Kirkland & Ellis is building its own platform; Bloomberg Law reports a $500 million commitment, a Palantir relationship and 180+ AI engineers.",
+   "Kirkland's figures are self-reported; Ropes & Gray's CIO said building proprietary tools did not appear to make sense for that firm now.",
+   "Equity partners take part in AI Pods that define custom builds."
+  ],
+  "who": "Kirkland & Ellis, Palantir, Ropes & Gray"
+ },
+ {
+  "id": "professional-services-firm-finance-11",
+  "title": "Governing AI spend under usage-based pricing: read the meter, set budgets",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Firms budgeted per-seat AI fees, but usage-based charges depend on how lawyers prompt and which model they pick, and lawyers cannot see the spend.",
+  "approach": [
+   "At ILTACON 2026, Littler found one PowerPoint cost $2; Barnes & Thornburg saw lawyers choosing the largest model for the smallest task.",
+   "Ogletree's chief data and AI officer said firms seem to be settling on AI at roughly 1% of revenue (self-reported).",
+   "Knowledge and AI leads review spend by tool and user; finance approves budgets and contract terms."
+  ],
+  "who": "Littler, Barnes & Thornburg, Ogletree, Taft"
+ },
+ {
+  "id": "professional-services-firm-finance-12",
+  "title": "Metering consumption-priced AI by matter and deciding whether to bill clients",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Under seat pricing AI could sit in overhead, but agentic tools run many model calls per task, so cost varies by matter and firms must decide who pays.",
+  "approach": [
+   "Legora announced on 2026-06-23 that Agent Pro is priced by consumption, with attribution of every run to a matter and spending controls.",
+   "Harvey reports a 14-fold rise in tokens processed in six months (vendor-published). A practitioner opinion recommends absorbing ordinary AI use as overhead.",
+   "Finance decides whether to allocate or absorb each AI cost, and the billing partner and client agree terms in the engagement letter."
+  ],
+  "who": "Legora, Harvey, Baker Donelson"
+ },
+ {
+  "id": "professional-services-firm-finance-13",
+  "title": "Setting partner expectations, credit and pay rules for AI and non-hourly work",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Partners decide billing and staffing, yet only 25% of stand-out lawyers strongly agree their firm has a plan to monetise AI use.",
+  "approach": [
+   "PwC's US chief executive told the FT that partners who resist AI have no place at the firm.",
+   "Advisers urge reviewing origination credit and partner pay for value-priced work; Wipfli is introducing client satisfaction and cycle time as staff metrics.",
+   "The compensation committee approves metric and credit changes. No firm reports a changed partner pay formula."
+  ],
+  "who": "PwC, Wipfli"
+ },
+ {
+  "id": "professional-services-firm-finance-14",
+  "title": "Idea: modelling leverage and partner income if AI takes over junior work",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: associates and non-equity partners carry most of the extra demand while equity-partner demand slipped.",
+  "approach": [
+   "Scenario models of leverage, billing mix and partner income under different assumptions about how much junior and support work AI takes over.",
+   "DLA Piper's AI head said some financial-contract due diligence is down to two hours from 15-20. No firm uses such a model.",
+   "The executive committee would set associate intake and non-equity partner policy."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-firm-finance-15",
+  "title": "Accounting firms taking private equity capital to fund talent and technology",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Partnerships distribute most profit each year, leaving little capital for technology and talent, and AI productivity cuts revenue under hourly billing.",
+  "approach": [
+   "Crowe announced a KKR investment on 2026-06-11 for talent, technology and innovation, separating attest and non-attest services; it closed in August 2026.",
+   "Crowe then launched CroweONE, a shared ownership plan open to all employees. No use of the capital has been published.",
+   "Partners vote on the transaction and governance terms, and leadership allocates the capital."
+  ],
+  "who": "Crowe, KKR"
+ },
+ {
+  "id": "professional-services-firm-finance-16",
+  "title": "Law firms bringing in outside capital for AI through management services organisations",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "The traditional law-firm structure leaves little cash in reserve while AI platforms need upfront investment, and ABA Model Rule 5.4 bars sharing fees with non-lawyers.",
+  "approach": [
+   "A management services organisation holds the business side so an investor can own it and the law firm pays it fees.",
+   "Charlesbank reportedly signed a letter of intent for a Wood Smith Henning & Berman stake; Dudley DeBosier partnered with Orion Legal.",
+   "Lawyers keep exclusive control of legal matters; partners approve the agreement and ethics counsel reviews the separation."
+  ],
+  "who": "Wood Smith, Charlesbank, Dudley DeBosier, Orion Legal"
+ },
+ {
+  "id": "professional-services-firm-finance-17",
+  "title": "AI-native firms built around agents and experienced reviewers, not the leverage pyramid",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Incumbent economics depend on hourly rates and junior leverage; new entrants claim they can deliver at lower cost without that structure.",
+  "approach": [
+   "General Legal uses a management services structure; six months out of Y Combinator it reports about 400 clients (self-reported).",
+   "Norm Law, Arceus and Falcon are cited in law, Queen's Tower Advisory in consulting, and Ascend in accounting.",
+   "Experienced lawyers review and answer for agent work (recommended; General Legal's review step is not described)."
+  ],
+  "who": "General Legal, Norm Law, Queen's Tower, Ascend"
+ }
+]

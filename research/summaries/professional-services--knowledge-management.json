@@ -1,0 +1,300 @@
+[
+ {
+  "id": "professional-services-knowledge-management-01",
+  "title": "AI search over a curated precedent library, under existing permissions",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Lawyers cannot quickly find the precedent or template they want in a growing collection; at Allens, browsing through SharePoint was meant only as an interim fix.",
+  "approach": [
+   "The knowledge team curates precedents with a taxonomy; AI search surfaces them in the document system at Allens and Womble Bond Dickinson.",
+   "Insight+ search extended to 1,350 legal staff at Allens, with positive feedback and no usage or time measures (vendor-published).",
+   "Content owners curate and tag material first, and the lawyer chooses which retrieved precedent applies to the matter."
+  ],
+  "who": "Allens, Womble Bond Dickinson UK, iManage"
+ },
+ {
+  "id": "professional-services-knowledge-management-02",
+  "title": "Asking questions of the firm's own documents to find clauses and precedents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A lawyer remembers a good clause from a prior deal but loses time hunting through folders, and may land on an unexecuted draft or counterparty markup.",
+  "approach": [
+   "An assistant inside the document system answers plain-language questions against the firm's own documents, at Chaffetz Lindsey and Digital Commerce Bank.",
+   "Chaffetz Lindsey deployed it within a two-month window (vendor-published); Litera claims 2-10 hours per week for its whole platform (vendor-published).",
+   "The lawyer reads the cited passage in the source and decides whether a retrieved clause fits the deal."
+  ],
+  "who": "Chaffetz Lindsey, Digital Commerce Bank, iManage"
+ },
+ {
+  "id": "professional-services-knowledge-management-03",
+  "title": "Consulting firm's own knowledge assistant, with referral to internal experts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "At engagement kickoff, finding the most relevant research and experts is described as taking about two weeks of researching and networking, even for senior colleagues.",
+  "approach": [
+   "McKinsey built Lilli over more than 40 curated knowledge sources; it returns relevant internal content and points users to experts.",
+   "Over 4 million prompts, about 150,000 a week, over 75% of employees had tested it; 30% time saved (all self-reported).",
+   "Consultants validate what Lilli returns, and a person reviews everything before it reaches a client."
+  ],
+  "who": "McKinsey, Deloitte, Infosys"
+ },
+ {
+  "id": "professional-services-knowledge-management-04",
+  "title": "Finding who has done this before from matter, people and engagement records",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "A partner asking whether the firm has handled something similar finds the answer depends on who is in the room; expertise directories were once kept by annual survey.",
+  "approach": [
+   "Lilli points McKinsey users to internal experts; Intapp, Litera and NetDocuments offer experience search, mostly as product claims, some in private preview.",
+   "Arup's CV platform engaged over 12,000 professionals and imported about 7,000 CVs; the case study does not claim AI (vendor-published).",
+   "The professional decides whom to contact, and a KM or practice leader confirms experience claims before pitching on them."
+  ],
+  "who": "McKinsey, Arup, Intapp, Litera, NetDocuments"
+ },
+ {
+  "id": "professional-services-knowledge-management-05",
+  "title": "Reclassifying and summarising historic documents into an AI-ready knowledge bank",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Decades of firm work sit in repositories that generative tools cannot safely be pointed at; Clifford Chance aims for a curated set of trusted internal materials.",
+  "approach": [
+   "Clifford Chance launched a Knowledge Bank with Epiq and Microsoft: 400,000+ documents reclassified and summarised, with natural-language search and permission-aware results.",
+   "It reports the document count (self-reported) but no time, cost or quality measure; no source shows lawyers using it yet.",
+   "Knowledge professionals reviewing AI classifications is a prediction from another source, not reported for Clifford Chance."
+  ],
+  "who": "Clifford Chance, Epiq, Microsoft"
+ },
+ {
+  "id": "professional-services-knowledge-management-06",
+  "title": "Automatic classification, extraction and summaries when a document is filed",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Version notes are rarely entered by hand, so search and AI summaries run on poorly described content, and scanned files can be invisible to search.",
+  "approach": [
+   "On filing, the system classifies the document and extracts parties, dates and clauses; NetDocuments describes this in private preview for select customers.",
+   "iManage describes built-in text recognition so scanned files become searchable; no customer is named and no figure is published.",
+   "A lawyer or paralegal confirms extracted details, and the knowledge team samples machine-assigned labels."
+  ],
+  "who": "NetDocuments, iManage; no customer named"
+ },
+ {
+  "id": "professional-services-knowledge-management-07",
+  "title": "Repository clean-up: AI finds duplicates and proposes reorganisation, applied after confirmation",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Teams store documents wherever is easiest, so nobody can say where all versions of a document are or which is latest.",
+  "approach": [
+   "Digital Commerce Bank uses Ask iManage to find duplicates for librarians to file and delete; roughly 10 users now, 70 planned (vendor-published).",
+   "Harvey's Agentic Vault Organization (early access) proposes a folder or renaming plan, shows the changes, and acts only after a person confirms.",
+   "Librarians file and delete duplicates; a person confirms any proposed reorganisation."
+  ],
+  "who": "Digital Commerce Bank, iManage, Harvey"
+ },
+ {
+  "id": "professional-services-knowledge-management-08",
+  "title": "Context graph mapping how matters, documents, communications and people connect",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Flat search finds passages, not relationships: an agent cannot tell which draft controls or that a counterparty is the same entity under another name.",
+  "approach": [
+   "Platforms map relationships across documents, matters and the firm under existing permissions: NetDocuments (private preview), Harvey Graph, iManage and Wolters Kluwer.",
+   "Harvey: up to 30% better pass rate, up to about 50% cheaper tasks; NetDocuments: $0.68 to $0.36 per correct answer (vendor-published).",
+   "Answers stay verifiable through citations, and KM or IT reviews how the graph resolves matter and client boundaries."
+  ],
+  "who": "Harvey, NetDocuments, iManage; vendor claims"
+ },
+ {
+  "id": "professional-services-knowledge-management-09",
+  "title": "Governed connections letting approved AI tools search firm knowledge and save work",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Lawyers use several AI products, and without a shared connection each needs its own integration or bulk export of firm content.",
+  "approach": [
+   "The repository exposes an MCP server (an open connection standard) so approved tools search and save back under each user's permissions, logged.",
+   "Announced: Legora and a ChatGPT Enterprise plug-in with iManage; NetDocuments connections to Claude, Copilot, Harvey and others. No outcomes are published.",
+   "IT or KM approves which tools connect, and the lawyer reviews saved-back work before it becomes part of the record."
+  ],
+  "who": "iManage, NetDocuments, Legora, Harvey"
+ },
+ {
+  "id": "professional-services-knowledge-management-10",
+  "title": "Agents with scoped, logged access that file work between review gates",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Filing documents, updating metadata and carrying matter context between steps are manual administrative tasks that agents could do but need safe access to.",
+  "approach": [
+   "Agents act through a governed gateway under a person's permissions and audit logging; iManage says AI can draft, file and update metadata.",
+   "Harvey's Legal Work Orchestration lets agents run defined tasks while lawyers review at designated gates; announced, with no outcomes published.",
+   "Lawyers review at each gate before the next task starts, and agent permissions and logs are reviewed periodically."
+  ],
+  "who": "iManage, Harvey; vendor claims"
+ },
+ {
+  "id": "professional-services-knowledge-management-11",
+  "title": "Searchable precedent database built from the firm's deal history to benchmark terms",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Executed agreements hold what counterparties accepted, but relevant deals are spread across systems, so lawyers use generic examples or build comparison spreadsheets by hand.",
+  "approach": [
+   "Ropes & Gray used generative AI to extract and compare historical deal terms into a searchable database for a private equity client.",
+   "Harvey's method: pick comparable deals, extract caps, baskets and survival periods into a review table, verify against citations. No measurement published.",
+   "The lawyer frames the question, chooses the comparable set and decides the negotiating position."
+  ],
+  "who": "Ropes & Gray, Harvey"
+ },
+ {
+  "id": "professional-services-knowledge-management-12",
+  "title": "Curated, owned collections grounding AI, with senior review before entry",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI answers are only as good as what they retrieve; stores mix drafts, executed deals and outdated templates, and nobody records why a document was judged final.",
+  "approach": [
+   "Knowledge teams run a submit, enrich, publish, maintain and archive workflow for vetted precedents; Womble Bond Dickinson tags confidentiality and client.",
+   "McKinsey data stewards sanitise content for client confidentiality; context figures include 59% of organisations in the two earliest knowledge-management maturity stages (independent).",
+   "A KM lawyer or senior reviewer approves each asset before entry, and owners retire or refresh assets on a set cycle."
+  ],
+  "who": "Womble Bond Dickinson, McKinsey, Draftwise, APQC"
+ },
+ {
+  "id": "professional-services-knowledge-management-13",
+  "title": "In-house legal knowledge base of standards and prior decisions for AI",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "In-house legal teams hold years of documents and prior advice across fragmented systems; Rio Tinto's legal assets go back 20 years.",
+  "approach": [
+   "BMW Group's legal function announced a Legora rollout with first drafts from approved standards; Rio Tinto moved 4.5 million documents to cloud.",
+   "Rio Tinto reports 80% adoption of the platform after four months, not an AI feature (vendor-published).",
+   "Legal decides what agents can handle, and lawyers verify prior advice retrieved by AI before relying on it."
+  ],
+  "who": "BMW Group, Rio Tinto, GSK"
+ },
+ {
+  "id": "professional-services-knowledge-management-14",
+  "title": "In-house legal decisions captured as reusable positions, approved by an attorney",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "In-house legal teams make thousands of judgment calls a year; the answer to the next similar request depends on which attorney picks it up.",
+  "approach": [
+   "Coheso Memory, launched October 2026, proposes positions from resolved requests with reasoning, conditions and exceptions, and surfaces the precedent for similar requests.",
+   "Nothing takes effect until an attorney approves it; no outcomes are published (vendor-published)."
+  ],
+  "who": "Coheso (vendor); no customer named"
+ },
+ {
+  "id": "professional-services-knowledge-management-15",
+  "title": "Engagement lessons captured at close-out with AI-drafted retrospectives",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Lessons from finished engagements rarely reach the next team because writing them up is extra work at project close (an inference in the source).",
+  "approach": [
+   "Project capture is automated into a searchable repository; Alvarez & Marsal, Simon-Kucher and AECOM described approaches at KMWorld Europe 2026.",
+   "Certinia and Kantata describe agents that draft retrospectives and organise lessons; no measurements are published.",
+   "The project lead and a responsible partner approve the retrospective, and the KM team checks for client-identifying detail."
+  ],
+  "who": "Alvarez & Marsal, Simon-Kucher, AECOM, Certinia"
+ },
+ {
+  "id": "professional-services-knowledge-management-16",
+  "title": "AI call and meeting summaries as a knowledge source, within consent rules",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Know-how stays in conversation; meeting summaries could feed matter records and knowledge bases, but recording raises consent, confidentiality and tactical risks.",
+  "approach": [
+   "AI tools record, transcribe and summarise calls so notes and decisions can be filed to the matter or knowledge base.",
+   "No outcomes are published (vendor-published).",
+   "The lawyer decides each time whether to record at all, and checks a summary before it is filed or shared."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "professional-services-knowledge-management-17",
+  "title": "Briefs from institutional memory for people joining a live matter",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A new team member on a complex matter spends time reconstructing context that already exists; Basware's customer success managers spent hours daily researching accounts.",
+  "approach": [
+   "Chaffetz Lindsey attorneys use the document assistant to compare similar matters and bring a new team member up to speed.",
+   "Reported as days rather than weeks (vendor-published); Basware says managers regained four to five hours a day (vendor-published).",
+   "The matter lead reviews the brief, and the new team member still reads the key documents."
+  ],
+  "who": "Chaffetz Lindsey, Basware, Kantata, NetDocuments"
+ },
+ {
+  "id": "professional-services-knowledge-management-18",
+  "title": "Knowledge teams curating the firm's AI know-how, tools, playbooks and gated rollout",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI adoption is uneven: Troutman Pepper Locke noticed inconsistencies in who adopted AI and how much value they got, and 34% of professionals use unsanctioned AI.",
+  "approach": [
+   "Troutman Pepper Locke curates approved tools, use cases and lessons in one repository; Lewis Silkin and Ropes & Gray use similar approaches.",
+   "Context figures: 57% of firms under 50 lawyers have a formal AI policy, rising to 98% at 350-699 (independent).",
+   "Practice-group knowledge partners decide which tools and playbooks become guidance, with periodic review of the approved-tool list."
+  ],
+  "who": "Troutman Pepper Locke, Lewis Silkin, Ropes & Gray"
+ },
+ {
+  "id": "professional-services-knowledge-management-19",
+  "title": "Capturing senior judgment and reviewer corrections so juniors learn, with skill checks",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Judgment sits in senior people's heads, and in the accounting apprentice model juniors wait for busy season to end for a partner to explain changes.",
+  "approach": [
+   "Ascend describes a closed loop where workflow traces and corrections feed its AI, plus a chat explaining what changed in a return.",
+   "A trial at eleven US IP firms found quality up 0.34 standard deviations at 10 days, skill retained at three months (vendor-published).",
+   "Partner review stays the source of explanation; periodic unaided exercises are recommended, and no firm is reported doing this."
+  ],
+  "who": "Ascend, eleven US IP firms, Basware"
+ },
+ {
+  "id": "professional-services-knowledge-management-20",
+  "title": "AI twins that capture an individual professional's judgment for colleagues",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "The most valuable knowledge is the context behind a document, which sits in emails, calls and memories and leaves when people retire.",
+  "approach": [
+   "Twin1, launched August 2026, builds an AI twin per person from their work; its CEO says Linklaters, Orrick and Dechert use it.",
+   "No outcomes are published; the CEO's pipeline of more than 400 prospects is not an outcome (vendor-published).",
+   "The individual approves what their twin may say, and colleagues treat twin output as input to their own judgment."
+  ],
+  "who": "Twin1 (vendor), Linklaters, Orrick, Dechert"
+ },
+ {
+  "id": "professional-services-knowledge-management-21",
+  "title": "Idea: structured capture of tacit know-how from people about to retire",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: lessons-learned documents capture facts but not judgment, and senior professionals' tacit knowledge leaves with them.",
+  "approach": [
+   "Practitioners discuss pairwise interviews, AI-supported story prototypes and a Tacit Knowledge Canvas; a KMWorld Europe 2026 workshop taught the method.",
+   "TechnipFMC built per-expert knowledge-transfer plans without AI; the Twin1 CEO says AI twins could help preserve partners' knowledge.",
+   "The expert approves the story or record of their judgment before it is shared."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-knowledge-management-22",
+  "title": "Firm knowledge in a client-facing AI portal sold by subscription",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Clients want direct access to a firm's accumulated work, and one general counsel said law firms' AI use gives clients nothing and probably higher bills.",
+  "approach": [
+   "Debevoise built STAAR on Legora, giving about 10 beta clients anonymised AI-risk documents and quoting approved text rather than synthesising.",
+   "Priced at $150,000 a year per subscription (self-reported); no usage, revenue or retention result reported.",
+   "A partner approves what enters the portal, and questions outside its scope go to lawyers."
+  ],
+  "who": "Debevoise, Legora"
+ },
+ {
+  "id": "professional-services-knowledge-management-23",
+  "title": "Measuring the knowledge layer with search analytics, reuse measures and re-tests",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Firms spend more on knowledge management and AI but cannot show returns; APQC says knowledge management impact is hard to measure.",
+  "approach": [
+   "Usage and reuse data is joined to matter and financial data; an unnamed global law firm plans analytics on search terms.",
+   "Firms re-run test sets of real questions when models change; in the Vals study, law firms contributed over 500 samples (independent).",
+   "KM and finance leaders agree metric definitions first, and a named owner signs off pass marks before go-live."
+  ],
+  "who": "iManage, Vals, APQC; unnamed global law firm"
+ }
+]

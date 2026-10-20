@@ -1,0 +1,263 @@
+[
+ {
+  "id": "professional-services-pursuit-proposals-01",
+  "title": "First drafts of bid answers from an approved library, reviewed by people",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Proposal teams answer hundreds of repeated RFP questions by copy-pasting from old files and chasing subject-matter experts, and half name bandwidth a top challenge.",
+  "approach": [
+   "Approved answers sit in one tagged library; the tool drafts from the best match. Cherry Bekaert uses Loopio; Versent built its own.",
+   "A Cherry Bekaert manager says one government audit RFP draft fell from about 8 hours to about 2 (self-reported).",
+   "Serco piloted AutogenAI; its case study reports an 85% efficiency gain (vendor-published).",
+   "Senior people review and tailor the parts that matter."
+  ],
+  "who": "Cherry Bekaert, Versent, Serco"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-02",
+  "title": "Search and chat over past proposals and RFPs, with drafting from them",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Firms hold hundreds of past proposals, project descriptions and resumes across several systems, so people re-ask marketing for old language and resume versions multiply.",
+  "approach": [
+   "Past proposals go into a searchable store with chat and tagging. Ballard Spahr built 'X-Ray'; Benesch and Woodard & Curran use Kantiv.",
+   "A Ballard Spahr partner estimates about 2 hours saved per RFP; Woodard & Curran estimates 30-40% per proposal (self-reported).",
+   "Drafts can be checked against the RFP's requirements; no source says who signs off reused content."
+  ],
+  "who": "Ballard Spahr, Benesch, Woodard & Curran"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-03",
+  "title": "Pitchbooks, proposals and CVs generated from structured bio and experience data",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Pitches are assembled by hand from Word bios and matter lists, experience data sits in spreadsheets, and in one survey only 7% find relevant experience very easy to locate.",
+  "approach": [
+   "An experience platform holds bios, matter experience and CVs as structured data and drafts from templates. GRSM, Stinson and Arup use it.",
+   "GRSM's marketing manager says proposal generation time fell by over half in the first quarter (self-reported).",
+   "The team tailors each draft, and someone verifies past-matter success stories are accurate."
+  ],
+  "who": "GRSM, Stinson, Neudesic, Arup"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-04",
+  "title": "Lawyer bios regenerated from time records, knowledge system and public sites",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Baker Botts found itself listed alongside attorneys who had left more than five years earlier, and its generic bios did not surface well in search.",
+  "approach": [
+   "Baker Botts's data science team built a tool using vetted AI that draws on time sheets, its knowledge platform and public websites.",
+   "The speaker said bios moved from 'really generic' to more likely to be picked up by AI search (self-reported); no measurement.",
+   "The source does not say who signs off a regenerated bio."
+  ],
+  "who": "Baker Botts"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-05",
+  "title": "Reconcile duplicate and stale people and project records before AI proposal retrieval",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "The same person or project appears under different names across resumes and case studies, so retrieval returns stale records, and one invented citation can disqualify a federal bid.",
+  "approach": [
+   "Before retrieval, the tool extracts roles and dates, matches records for the same person or project, and checks systems of record (vendor-described).",
+   "A vendor says an unnamed contractor group caught a disqualifying issue on a bid; no count given (vendor-published).",
+   "Staff review and correct merges and splits, verified details are locked, and a person reviews every draft."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-06",
+  "title": "Pulling requirements and red flags out of RFPs into a compliance matrix",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Long RFPs bury mandatory requirements and deadlines, so misses cost disqualification, compliance checks come late and by hand, and teams may spend weeks before spotting an incumbent-friendly bid.",
+  "approach": [
+   "The tool lists every requirement, deadline and mandatory clause in a matrix, then checks the draft against it. Benesch describes this.",
+   "In a US government-contracting workshop, an agent also flags vendor-specific requirements and tight timelines, cites pages and drafts clarification questions.",
+   "People validate AI output before submission; the bid team investigates each flag and decides whether to pursue."
+  ],
+  "who": "Benesch"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-07",
+  "title": "Go/no-go bid decisions informed by experience data and win/loss history",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Teams answer more RFPs with less selectivity; decisions run on impressions, and firms cannot quickly tell whether they have done similar work.",
+  "approach": [
+   "Stinson says linking experience data to financial records shows whether it has done similar work before deciding; no figure (vendor-published).",
+   "Predictive bid scoring from past pursuits is described only by an ABA column and a vendor blog, so it is an idea.",
+   "Leadership decides whether to bid; people sanity-check any AI scoring."
+  ],
+  "who": "Stinson"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-08",
+  "title": "Pitch research brief on a client's needs, history and competing firms",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Preparing to talk to a client or prospect took hours of gathering documents and data.",
+  "approach": [
+   "Baker Botts's Gemini tool combines public, financial and firm data into client background and a low, medium or high legal-needs score.",
+   "Its competitive intelligence director said prep took 24 hours, with a goal to halve it (self-reported). Readout takes about 2 minutes.",
+   "The lawyer or business developer reads the readout and decides how to use it."
+  ],
+  "who": "Baker Botts"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-09",
+  "title": "Partners draft urgent pitch responses from firm archives using legal AI",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A competitive or urgent request needs experience, prior pitch language and client context pulled from several practice groups and systems, which partners cobble together by hand over days.",
+  "approach": [
+   "Partners query internal archives and filings through a legal AI platform to draft a response.",
+   "Harvey says Lynn Pinker Hurst & Schwegmann answered an urgent client request in under 48 hours and won the work (vendor-published).",
+   "Lawyers refine and customise the draft for the client."
+  ],
+  "who": "Lynn Pinker Hurst & Schwegmann, Harvey"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-10",
+  "title": "Executive summaries, win themes and one consistent voice across multi-author proposals",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Proposals assembled by several partners read as inconsistent, and executive summaries and strategy sections take senior time.",
+  "approach": [
+   "AI drafts executive summaries, rewrites sections to a consistent voice and suggests strategy points for the bid lead to edit.",
+   "In Loopio's survey 39% of teams use AI for executive summaries, 28% for brand and voice, 21% for strategy (vendor-published).",
+   "Bid teams and partners tailor strategy and nuance in the AI draft."
+  ],
+  "who": "Vendor survey; no named firm"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-11",
+  "title": "AI check of a proposal's accuracy and compliance before submission",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Proposals assert credentials, past performance and staff that buyers may test; AI drafting adds plausible false content, tired reviewers miss gaps, and one invented credential can disqualify.",
+  "approach": [
+   "AI compares draft claims against source records and the solicitation, scores sections against evaluation criteria, and flags unsupported content.",
+   "In Loopio's survey 38% of teams use AI to analyse proposal quality and 34% to check accuracy (vendor-published).",
+   "A named person signs off each factual claim before submission."
+  ],
+  "who": "Vendor survey; no named firm"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-12",
+  "title": "Firm-approved AI assistants instead of personal chatbots for proposals and awards",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Proposal staff reach for general chatbots the firm does not control, while bid content is confidential; Ballard Spahr leadership saw public ChatGPT privacy and security as a non-starter.",
+  "approach": [
+   "The firm provides approved tools with no-training terms and access controls. Ballard Spahr built 'Ask Ellis' for emails, rewrites and awards submissions.",
+   "Ask Ellis has 900 active users across all uses (self-reported).",
+   "The firm, not the individual, decides which tools are approved."
+  ],
+  "who": "Ballard Spahr"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-13",
+  "title": "Tailor each response with AI while keeping the proposal useful as evidence",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Tailoring has been a costly signal of quality; once AI makes tailored text cheap, buyers may stop treating it as evidence of fit.",
+  "approach": [
+   "AI drafts text aligned to the RFP; bidders spend the saved effort on editing, evidence and relationship-specific content.",
+   "Evidence is adjacent: on a freelance platform, the link between letter alignment and callbacks fell 51% after an AI tool (independent).",
+   "The bid lead or partner edits for specific evidence and relationship content."
+  ],
+  "who": "No named firm"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-14",
+  "title": "Proposal agents in services platforms that draft from delivery and finance data",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Estimates, bids and call notes sit apart from delivery actuals and experience records, so proposals rely on templates or judgment rather than what past work cost and delivered.",
+  "approach": [
+   "Certinia lists an RFP Responder agent, Kantata announced a Sales Accelerator, and Intapp says DealCloud generates pitch documents (vendor-described).",
+   "Certinia's headline is proposal creation from 8 hours to 1 (vendor-published), not tied to a customer.",
+   "Organisations set approval thresholds before an agent acts, and humans review external communications."
+  ],
+  "who": "Certinia, Kantata, Intapp (vendor claims)"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-15",
+  "title": "People direct AI agents across qualification, drafting and review of bids",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "AI help is mostly one paragraph at a time, while pursuit work spans qualification, drafting and review, and context built in one person's AI session does not reach the team.",
+  "approach": [
+   "Agents carry out multi-step proposal tasks while people direct and review. Intapp says Celeste can surface pitch material in minutes (vendor claim).",
+   "Stinson says it is preparing to adopt agentic capabilities for compliance validation and scoring; no firm runs one end to end.",
+   "People direct the agents; no source specifies review gates."
+  ],
+  "who": "Intapp, Stinson (preparing)"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-16",
+  "title": "Win/loss analytics showing what separates winning proposals from losing ones",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Firms judge proposal success only by whether they won; debrief notes and past responses sit apart, so lessons rarely reach the next bid.",
+  "approach": [
+   "Tag each bid with outcome, scores, cost, loss reasons and AI use, then have an assistant read proposals and debriefs together.",
+   "Leaders are more likely than novices to use AI on win/loss data, 37% versus 18% (vendor-published); no result published.",
+   "People interpret the pattern and decide what changes in the playbook."
+  ],
+  "who": "Vendor survey; no named firm"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-17",
+  "title": "Idea: answering clients' RFP questions on AI use from a reviewed bank",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: many law-firm RFPs now ask which AI tools a firm uses, how they are governed and what savings resulted, while few firms give hard data.",
+  "approach": [
+   "Idea discussed by practitioners: keep a reviewed bank of answers on AI policies, tools and data handling, adapted per RFP.",
+   "Back savings claims with a short matter-level evidence pack, and flag conflicts with the client's own AI restrictions.",
+   "Partners and risk leaders would approve statements about AI use and savings before bids."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-18",
+  "title": "Idea: register of AI used in each bid for buyers' disclosure questions",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: buyers increasingly ask how AI was used in a bid or will be used in delivery, and the form of the ask varies.",
+  "approach": [
+   "Idea: the bid team records which AI tools touched which sections and what checks were done, and reuses a reviewed disclosure statement.",
+   "UK central government offers optional disclosure questions and California requires a clause for generative-AI deliverables; no firm's register was found.",
+   "The bid lead reviews the disclosure answer against the register before submission."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-19",
+  "title": "Idea: flag deal-breaker terms in RFPs and client guidelines before bidding",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: client guidelines and RFP terms carry billing, data-security and indemnity provisions that can be deal-breakers; no source measures how late or manually they are reviewed.",
+  "approach": [
+   "Idea from an ABA marketing column: AI compares a client's terms against the firm's standard terms.",
+   "It produces a dashboard of clauses that are standard, need review, or are potential deal-breakers. No firm using it was found.",
+   "A lawyer reviews flagged clauses and decides whether to bid or negotiate."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-pursuit-proposals-20",
+  "title": "In-house buyers scope RFPs and compare law-firm proposals with AI (in-house)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "In-house legal teams scatter the information needed to choose outside firms, receive long proposals from many firms, and struggle to scope work so bids are comparable.",
+  "approach": [
+   "Priori announced Scout, an agent that recommends a sourcing path, builds the RFP, collects responses and compares proposals; no result published (vendor-published).",
+   "An ABA article describes legal operations teams starting to use AI to summarise submissions and flag pricing outliers.",
+   "The legal team makes the final firm selection."
+  ],
+  "who": "Priori (announced); no named buyer results"
+ }
+]

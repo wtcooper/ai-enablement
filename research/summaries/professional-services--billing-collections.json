@@ -1,0 +1,225 @@
+[
+ {
+  "id": "professional-services-billing-collections-01",
+  "title": "AI-drafted time entries from captured activity, reviewed by the professional",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Time is often written from memory at day or week end, so short tasks are missed and recording time is itself unbillable work.",
+  "approach": [
+   "A capture layer records email, document, call and application activity and drafts entries by matter; the professional reviews and releases each one.",
+   "Laurel customers include Lerners, Tonkon Torp, Berger Singerman and GHJ; Lerners reports +0.48 billable hours per lawyer daily (vendor-published).",
+   "An unnamed Big Four tax division reported +2.3 chargeable hours per timekeeper weekly against a control group (vendor-published).",
+   "Billing partner review of the resulting bill remains an existing step."
+  ],
+  "who": "Lerners, Tonkon Torp, Berger Singerman, GHJ, Laurel"
+ },
+ {
+  "id": "professional-services-billing-collections-02",
+  "title": "Work done in AI platforms becomes draft time entries for lawyer review",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "As more work moves into AI platforms, it is hard to capture and easy to leave off the timesheet, and leaders want to see what AI work returns.",
+  "approach": [
+   "The AI platform passes completed tasks to timekeeping, which drafts an entry with matter, duration and narrative; the lawyer reviews and submits.",
+   "Aderant announced an iTimekeep integration with Harvey as live on 2026-08-17; Laurel and Legora announced Legora tasks becoming draft entries on 2026-10-13.",
+   "Litify and Thomson Reuters announced similar capture. These are announcements; no results published (vendor-published)."
+  ],
+  "who": "Aderant, Laurel, Legora, Litify, Thomson Reuters"
+ },
+ {
+  "id": "professional-services-billing-collections-03",
+  "title": "Client billing guidelines turned into rules checked as entries are written",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Client billing guidelines run 15 to 100 pages each, are impossible to remember across hundreds of clients, and clients reject non-compliant invoices.",
+  "approach": [
+   "Guidelines become rules an administrator approves; each entry is checked as written, with suggested narratives and codes the timekeeper accepts or edits.",
+   "Intapp released work-code prediction in May 2026; Laurel, Elite and Aderant (early access) announced similar features.",
+   "One unnamed Laurel customer cut pre-bill review time 30-40% (vendor-published); Intapp claims 75% faster time entry release (vendor-published)."
+  ],
+  "who": "Intapp, Laurel, Aderant, Elite"
+ },
+ {
+  "id": "professional-services-billing-collections-04",
+  "title": "Linklaters' firm-built tool checks time-entry narratives in bulk before billing",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Reviewing narrative time entries for the wrong workstream, typos and non-compliance with client requirements is laborious.",
+  "approach": [
+   "Linklaters' Narrative Checker, an Excel plugin, sends narratives to the firm's in-house chatbot to find common issues and propose corrections.",
+   "A managing associate built it as a side project; it was piloted globally and released firm-wide on 1 September.",
+   "Builder says about a thousand narratives a minute, over 300 uses in a week (self-reported). Users accept or reject each correction."
+  ],
+  "who": "Linklaters"
+ },
+ {
+  "id": "professional-services-billing-collections-05",
+  "title": "AI checks pre-bills against client guidelines; a partner accepts or rejects fixes",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Partners spend huge amounts of time reviewing pre-bills each month, and invoice rejection rates are rising.",
+  "approach": [
+   "Foley Mansfield went live firmwide with Verify from Zero Systems, which flags pre-bill entries breaking guideline rules and suggests one-click fixes.",
+   "Foley's managing partner says reviewing highlighted items replaced days of review with minutes (self-reported).",
+   "Zero Systems' CEO claims about 6% of revenue otherwise written off is recovered (vendor-published).",
+   "Billing partner or biller accepts or dismisses each flag and signs off the bill."
+  ],
+  "who": "Foley Mansfield, Zero Systems"
+ },
+ {
+  "id": "professional-services-billing-collections-06",
+  "title": "AI ranks draft-bill edits so reviewers focus on high-impact bills",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Lawyers and billing teams review and adjust draft bills before invoices go out, and Elite describes routine review decisions as repetitive.",
+  "approach": [
+   "Elite added Elite Intelligence to the Proforma workflow in 3E, reported 2026-02-27; it prioritises edits and highlights high-impact proformas.",
+   "Elite expects up to 4 hours saved per month per lawyer; an expectation, not a measurement (vendor-published).",
+   "Lawyers and billing teams still review and adjust draft bills."
+  ],
+  "who": "Elite"
+ },
+ {
+  "id": "professional-services-billing-collections-07",
+  "title": "Scope-creep flags on fixed-fee matters while the bill is assembled",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "On fixed-fee matters, work outside the engagement is absorbed as a write-down at close instead of raised as a change order.",
+  "approach": [
+   "Laurel Billing's Scope agent will track budget burn against the engagement and flag drifted hours in dollars, each with a proposed fix.",
+   "Approved corrections feed back into timekeeping.",
+   "Billing or matter partner approves or dismisses each flag and decides whether to raise a change order. No results published (vendor-published)."
+  ],
+  "who": "Laurel, Thomson Reuters"
+ },
+ {
+  "id": "professional-services-billing-collections-08",
+  "title": "Idea: score pre-bills for write-down risk before the bill goes out",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: write-downs happen late and unevenly; 43% of partners always or usually reduce bills when time exceeds their expectations.",
+  "approach": [
+   "Idea. Use historical realization, client guidelines and AI bill analysis to flag entries and matters likely to be reduced before invoicing.",
+   "Perlin argues GenAI could help firms predict task and matter costs; no deployment was found.",
+   "Billing partner decides adjustments, as today. No figures published."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-billing-collections-09",
+  "title": "AI drafts appeals for rejected e-billing invoices and ranks which to pursue",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Billers manage dozens of client e-billing platforms and appeals departments chase payments on appeals that leaders call mostly unfair and unsuccessful.",
+  "approach": [
+   "Aderant's Appeals Agent identifies and prioritises high-value appeal opportunities after e-billing rejections and drafts supporting rationale (announced 2026-05-12; early access 2026-08-25).",
+   "Billing team reviews each drafted appeal before submission.",
+   "No results published (vendor-published)."
+  ],
+  "who": "Aderant"
+ },
+ {
+  "id": "professional-services-billing-collections-10",
+  "title": "AI prioritises overdue accounts by payment risk and drafts follow-ups for staff",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Collections teams spend hours each week drafting follow-ups and deciding whom to chase and in what tone.",
+  "approach": [
+   "Aderant's Collections Agent prioritises accounts and recommends outreach (early access 2026-08-25); Oddr released AI-drafted collection emails with tone controls.",
+   "Oddr says a Collections Agent in development will draft emails or call briefs; Certinia positions its Veda agents for services firms.",
+   "Certinia's page claims 24 days faster from delivery to payment, basis not stated (vendor-published). Collections staff decide what is sent."
+  ],
+  "who": "Aderant, Oddr, Certinia"
+ },
+ {
+  "id": "professional-services-billing-collections-11",
+  "title": "Overdue invoices chased automatically, with human collectors for calls and escalations",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Law firms take on average 97 days to get paid, per Clio data cited by CollBox, and no one owns accounts receivable.",
+  "approach": [
+   "CollBox integrates with practice management systems, detects unpaid bills and chases them with email reminders and calls from trained accounts-receivable specialists.",
+   "CollBox claims more than $100 million recovered for law firms in the past year (vendor-published; basis not stated).",
+   "Trained collectors make calls and handle escalations."
+  ],
+  "who": "CollBox"
+ },
+ {
+  "id": "professional-services-billing-collections-12",
+  "title": "Time capture extended to executives and administrative staff for cost to serve",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "At GHJ, firm-services teams and executives had no time system, so leadership could not see resource allocation or whether workloads were sustainable.",
+  "approach": [
+   "After piloting Laurel and expanding it firmwide, GHJ is rolling it out to firm-services and administrative staff who never tracked time.",
+   "It intends to use the data for resource allocation and hiring evidence.",
+   "GHJ's Chief of Staff says it shows how her time is spent; no firm-level results (self-reported). Staff review their own entries."
+  ],
+  "who": "GHJ, Laurel"
+ },
+ {
+  "id": "professional-services-billing-collections-13",
+  "title": "In-house teams use AI to review every outside-counsel invoice against guidelines",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Albertsons works with about 180 outside law firms, and invoices with hundreds of line items make problems easy to miss.",
+  "approach": [
+   "Albertsons uses Thomson Reuters Legal Tracker's AI audit to flag invoice lines, plus automated volume discounts; Brightflag and Onit offer similar tools.",
+   "Albertsons' program manager says the audit and discount together saved 'probably almost $2 million' year to date (self-reported).",
+   "Onit claims 92% invoice-level accuracy against 72% for experienced lawyers (vendor-published). An in-house reviewer approves, rejects or amends flagged invoices."
+  ],
+  "who": "Albertsons, Thomson Reuters, Brightflag, Onit"
+ },
+ {
+  "id": "professional-services-billing-collections-14",
+  "title": "Idea: tag AI-assisted work in time entries and check against client terms",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: client terms already ask for AI use to be noted in time entries, and some clients will not pay for AI work.",
+  "approach": [
+   "Idea. The timekeeping tool or AI platform records AI-assisted tasks; billing checks them against client AI terms and fee rules before invoicing.",
+   "Zscaler's guidelines already require noting generative AI use in the time entry. No firm or vendor describes this check.",
+   "Timekeeper confirms the AI tag; billing partner applies the client rule and judges flat-fee reasonableness."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-billing-collections-15",
+  "title": "Idea: a summarised 'services rendered' invoice in place of itemised time",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: when AI compresses hours into minutes, an itemised hourly bill may undersell the value delivered.",
+  "approach": [
+   "Idea. At Legalweek 2026, Zarwin Baum's Mitchell Kaplan suggested a single 'services rendered' line and asked whether clients would accept it.",
+   "No AI tool writes such a summary and no firm has adopted the format.",
+   "Billing partner agrees the format with the client."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-billing-collections-16",
+  "title": "Consulting firms use platform agents to complete, chase and check timesheets",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Certinia describes timekeeping as a chronically low-adoption workflow, leading to less compliance and more unbilled time.",
+  "approach": [
+   "Certinia's Veda positions conversational timekeeping; its Project Assistant Agent, in early adoption, flags missing time cards to managers but creates no entries.",
+   "Kantata's Agent Studio lets practice leads describe agents in plain language; Basware is named as a user, with a statement of intent.",
+   "Project manager acts on flags; each person confirms their own time. No figures published (vendor-published)."
+  ],
+  "who": "Certinia, Kantata, Basware"
+ },
+ {
+  "id": "professional-services-billing-collections-17",
+  "title": "Accounting firms use AI on time, unbilled work and invoices",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Time capture, unbilled work review, billing and collections at many accounting firms still run on spreadsheets and email, and few partners can pull realization on demand.",
+  "approach": [
+   "Aiwyn's general manager says AI already changes time and billing through automated time capture, early flags of unbilled-work problems and predictive billing.",
+   "One unnamed firm cut finished-work-to-bill time from 29 to 18 days in a month; the article credits visibility, not AI (vendor-published).",
+   "A person reviews unbilled work before the bill goes out; no AI checkpoint is described."
+  ],
+  "who": "Aiwyn, one unnamed accounting firm"
+ }
+]
