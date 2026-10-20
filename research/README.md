@@ -2,7 +2,7 @@
 
 This folder holds the research we run to write the plugin's archetype packs, method files and library.
 **None of it ships.** Only the synthesized, verified content copied into
-`plugins/transformation-advisor/` is part of the product. See
+`plugins/ai-transformation/` is part of the product. See
 [plan § What ships and what doesn't](../plan/2026-10-16-ai-transformation-advisor.md) and
 [spec §11](../spec/2026-10-16-ai-transformation-advisor.md).
 

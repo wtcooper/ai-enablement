@@ -7,7 +7,7 @@ Date: 2026-10-17 · Status: draft, revised after the research pilot ([retro](../
 
 ## What ships and what doesn't
 
-The **product** is only what is inside `plugins/transformation-advisor/`. That means the
+The **product** is only what is inside `plugins/ai-transformation/`. That means the
 orchestration skill, the method logic, the archetype packs, the backbone library and the reference
 files they need. Everything else in the repo is how we build, test and maintain it. Research is a
 **build activity**: we do it once, deeply, to write the archetype packs and method files, and rerun it
@@ -15,7 +15,7 @@ to refresh them. The research tooling and its raw output never ship.
 
 | Ships (the product) | Build-only (this repo) |
 |---|---|
-| `plugins/transformation-advisor/**` | `intent/`, `spec/`, `plan/`, `docs/` |
+| `plugins/ai-transformation/**` | `intent/`, `spec/`, `plan/`, `docs/` |
 | The marketplace index files (needed for install) | `research/`: briefs, raw subagent output, source logs |
 | | `evals/`: scenarios, results |
 | | `scripts/`: validators, build helpers |
@@ -29,7 +29,7 @@ ai-enablement/
 ├── .agents/plugins/marketplace.json           # M2
 ├── .github/plugin/marketplace.json            # M2
 ├── .cursor-plugin/marketplace.json            # M2
-├── plugins/transformation-advisor/
+├── plugins/ai-transformation/
 │   ├── plugin.json                            # M2  Agent Plugins 1.0
 │   ├── .claude-plugin/plugin.json             # M2
 │   ├── .cursor-plugin/plugin.json             # M2

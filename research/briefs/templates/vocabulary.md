@@ -1,7 +1,7 @@
 # Research vocabulary (controlled values)
 
 Every research output uses these ids exactly. They come from spec §6.2–6.9. The authoritative list is
-`plugins/transformation-advisor/skills/transformation-advisor/references/schemas/vocabulary.yaml`, and
+`plugins/ai-transformation/skills/transformation-advisor/references/schemas/vocabulary.yaml`, and
 `scripts/validate.py` enforces it.
 
 ## Work types (`work_types`)

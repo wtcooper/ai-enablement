@@ -9,8 +9,8 @@
   },
   "plugins": [
     {
-      "name": "transformation-advisor",
-      "source": "./plugins/transformation-advisor",
+      "name": "ai-transformation",
+      "source": "./plugins/ai-transformation",
       "description": "Guides a team lead, practice leader or head of AI through transforming how their part of the business works with AI: onboarding, a guided loop from framing to a sequenced plan, deep researched knowledge of specific fields (assurance first), and honest handling of how roles change.",
       "version": "0.1.0",
       "author": {

@@ -105,7 +105,7 @@ The opposite extreme, many small skills (one per phase or per pack), is also wro
 ## 4. Recommendation: hybrid of four skills and a shared library
 
 ```
-plugins/transformation-advisor/
+plugins/ai-transformation/
 ├── skills/
 │   ├── start/               # front door: find the workspace and state, ask the role, route (≤ 120 lines)
 │   ├── program-lead/        # the lead's 8-phase flow, as a checklist (≤ 350 lines) + ≤ 8 references

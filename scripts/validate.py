@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the transformation-advisor plugin content (plan M0).
+"""Validate the ai-transformation plugin content (plan M0).
 
 Checks:
   - SKILL.md size budget (fail > 500 lines, warn > 400)
@@ -18,7 +18,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL = ROOT / "plugins/transformation-advisor/skills/transformation-advisor"
+SKILL = ROOT / "plugins/ai-transformation/skills/transformation-advisor"
 REFS = SKILL / "references"
 VOCAB = yaml.safe_load((REFS / "schemas/vocabulary.yaml").read_text())
 

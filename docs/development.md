@@ -30,7 +30,7 @@ This process is for building the plugin. None of it appears in the product.
 ai-enablement/
 ├── .claude-plugin/ · .agents/plugins/ ·  # marketplace index per client (Claude, Codex,
 │   .cursor-plugin/ · .github/plugin/     #   Cursor, Copilot); all point to the plugin below
-├── plugins/transformation-advisor/       # THE PRODUCT: everything that ships
+├── plugins/ai-transformation/       # THE PRODUCT: everything that ships
 │   ├── plugin.json                       # Agent Plugins 1.0 manifest (+ .claude-plugin/, .cursor-plugin/)
 │   └── skills/transformation-advisor/
 │       ├── SKILL.md                      # the conductor: rules, onboarding, the loop, delegation

@@ -72,10 +72,10 @@ Code; the other tools are being checked ([checklist](docs/install-testing.md)).
 
 | Tool | Install |
 |---|---|
-| Claude Code or Claude desktop (Cowork) | `/plugin marketplace add wtcooper/ai-enablement`, then install **transformation-advisor**. In Cowork, use Customize > Plugins |
-| Codex CLI / app or ChatGPT desktop | `codex plugin marketplace add wtcooper/ai-enablement`, then `codex plugin add transformation-advisor@ai-enablement` |
+| Claude Code or Claude desktop (Cowork) | `/plugin marketplace add wtcooper/ai-enablement`, then install **ai-transformation**. In Cowork, use Customize > Plugins |
+| Codex CLI / app or ChatGPT desktop | `codex plugin marketplace add wtcooper/ai-enablement`, then `codex plugin add ai-transformation@ai-enablement` |
 | Cursor | `agent plugin marketplace add https://github.com/wtcooper/ai-enablement`, then install from `/plugins` |
-| GitHub Copilot CLI | `copilot plugin marketplace add wtcooper/ai-enablement`, then `copilot plugin install transformation-advisor@ai-enablement` |
+| GitHub Copilot CLI | `copilot plugin marketplace add wtcooper/ai-enablement`, then `copilot plugin install ai-transformation@ai-enablement` |
 | VS Code with Copilot | Add `wtcooper/ai-enablement` to the `chat.plugins.marketplaces` setting |
 
 ### 2. Start in a folder for your plan

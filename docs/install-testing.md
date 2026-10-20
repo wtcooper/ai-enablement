@@ -13,7 +13,7 @@ Record the results in the table at the end.
 ## Before you start
 
 - Validate locally: `python3 scripts/validate.py` (0 errors) and, if Claude Code is installed,
-  `claude plugin validate --strict .` and `claude plugin validate --strict plugins/transformation-advisor`.
+  `claude plugin validate --strict .` and `claude plugin validate --strict plugins/ai-transformation`.
 - Open each client in a **new, empty folder**, so the advisor starts at onboarding.
 - To test a branch or local copy instead of GitHub, use the client's local-path or `--ref` option where it has one.
 
@@ -21,17 +21,17 @@ Record the results in the table at the end.
 
 | Client | Install | Confirm |
 |---|---|---|
-| Claude Code | `/plugin marketplace add wtcooper/ai-enablement`, then `/plugin install transformation-advisor@ai-enablement`. CLI: `claude plugin marketplace add wtcooper/ai-enablement` and `claude plugin install transformation-advisor@ai-enablement` | `claude plugin details transformation-advisor@ai-enablement` lists one skill |
-| Claude desktop (Cowork) | Customize > Plugins > add marketplace `wtcooper/ai-enablement`, install **transformation-advisor** | The plugin shows as enabled |
-| Codex CLI / app | `codex plugin marketplace add wtcooper/ai-enablement`, then `codex plugin add transformation-advisor@ai-enablement` | The plugin is listed; the skill appears in the skills list |
+| Claude Code | `/plugin marketplace add wtcooper/ai-enablement`, then `/plugin install ai-transformation@ai-enablement`. CLI: `claude plugin marketplace add wtcooper/ai-enablement` and `claude plugin install ai-transformation@ai-enablement` | `claude plugin details ai-transformation@ai-enablement` lists one skill |
+| Claude desktop (Cowork) | Customize > Plugins > add marketplace `wtcooper/ai-enablement`, install **ai-transformation** | The plugin shows as enabled |
+| Codex CLI / app | `codex plugin marketplace add wtcooper/ai-enablement`, then `codex plugin add ai-transformation@ai-enablement` | The plugin is listed; the skill appears in the skills list |
 | ChatGPT desktop | Settings > Plugins, add the same marketplace | The plugin is listed |
 | Cursor | `agent plugin marketplace add https://github.com/wtcooper/ai-enablement`, then install from `/plugins` | The plugin is listed |
-| GitHub Copilot CLI | `copilot plugin marketplace add wtcooper/ai-enablement`, then `copilot plugin install transformation-advisor@ai-enablement` | `copilot plugin list` shows it |
+| GitHub Copilot CLI | `copilot plugin marketplace add wtcooper/ai-enablement`, then `copilot plugin install ai-transformation@ai-enablement` | `copilot plugin list` shows it |
 | VS Code with Copilot | Add `wtcooper/ai-enablement` to `chat.plugins.marketplaces` (needs `chat.plugins.enabled`), then install | The plugin shows in the chat plugins view |
 
 Each client reads its own marketplace index: `.claude-plugin/` (Claude Code, Cowork, VS Code), `.agents/plugins/`
 (Codex, ChatGPT desktop), `.cursor-plugin/` (Cursor), `.github/plugin/` (Copilot CLI). All point to
-`./plugins/transformation-advisor`, whose root `plugin.json` follows Agent Plugins 1.0.
+`./plugins/ai-transformation`, whose root `plugin.json` follows Agent Plugins 1.0.
 
 ## Smoke checks
 

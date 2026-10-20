@@ -38,7 +38,7 @@ lives in an **overlay** in its workspace, never in the plugin.
 
 ## 2. Scope
 
-**The product** is only what ships inside `plugins/transformation-advisor/`: the orchestration skill,
+**The product** is only what ships inside `plugins/ai-transformation/`: the orchestration skill,
 the method logic, the archetype packs, the backbone library and the references they need. The research
 program (§11) is a build activity that produces that content. Its tooling and raw output never ship.
 
@@ -595,7 +595,7 @@ ai-enablement/                               # this repo = the marketplace
 ├── .agents/plugins/marketplace.json         # Codex / ChatGPT desktop ("local" source + policy fields)
 ├── .github/plugin/marketplace.json          # Copilot CLI preferred path (optional)
 ├── .cursor-plugin/marketplace.json          # Cursor (source must be a folder inside this repo)
-└── plugins/transformation-advisor/
+└── plugins/ai-transformation/
     ├── plugin.json                          # Agent Plugins 1.0 ($schema)
     ├── .claude-plugin/plugin.json
     ├── .cursor-plugin/plugin.json
@@ -604,7 +604,7 @@ ai-enablement/                               # this repo = the marketplace
 
 **Per-client rules**
 
-- In-repo `./plugins/transformation-advisor` sources everywhere.
+- In-repo `./plugins/ai-transformation` sources everywhere.
 - The same `name` in every index and manifest.
 - No top-level `bin/` folder.
 - Codex index entries set `policy.installation: AVAILABLE` and `policy.authentication: ON_INSTALL`.

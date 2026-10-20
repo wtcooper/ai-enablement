@@ -13,7 +13,7 @@ from xml.sax.saxutils import escape
 
 SCR = pathlib.Path(sys.argv[1]); OUT = sys.argv[2]
 SPEC_DIR = SCR / "specialties"   # <field>.json: {"specialties": [...], "assign": {id: name}}
-ARCH = pathlib.Path("/home/user/ai-enablement/plugins/transformation-advisor/skills/transformation-advisor/references/archetypes")
+ARCH = pathlib.Path("/home/user/ai-enablement/plugins/ai-transformation/skills/transformation-advisor/references/archetypes")
 DATE = "October 2026"
 
 F = "/usr/share/fonts/truetype/dejavu/"

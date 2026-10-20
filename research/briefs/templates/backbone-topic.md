@@ -19,11 +19,11 @@ covers what is common across fields. Today is {today}.
 
 Before you search, read:
 
-- `/home/user/ai-enablement/plugins/transformation-advisor/skills/transformation-advisor/references/library/index.md`
+- `/home/user/ai-enablement/plugins/ai-transformation/skills/transformation-advisor/references/library/index.md`
   (the current working definitions; your research deepens them)
 - `/home/user/ai-enablement/research/briefs/templates/vocabulary.md` (controlled values: ladder, change scope,
   work types, patterns, runtime classes, functions, evidence grades, provenance)
-- The archetype use cases: `/home/user/ai-enablement/plugins/transformation-advisor/skills/transformation-advisor/references/archetypes/*/use-cases/*.yaml`.
+- The archetype use cases: `/home/user/ai-enablement/plugins/ai-transformation/skills/transformation-advisor/references/archetypes/*/use-cases/*.yaml`.
   Search them (`grep -n "pattern: <id>"` or `"function: <id>"`) for entries that already show your items. Cite
   them by full id and grade; do not re-research them. Your job is to add **cross-industry** evidence and the
   design knowledge they lack.
