@@ -173,7 +173,8 @@ value along the value tree. **Exit:** scored, categorized, sequenced options.
 
 ### 6 · Make the case
 
-**Read now:** `references/method/business-case.md` and `references/method/people-and-change.md`.
+**Read now:** `references/method/business-case.md` and `references/method/people-and-change.md`; when
+partners or senior experts must back the case, also `references/method/leading-partners.md`.
 
 For the top three to five options: value as ranges with assumptions and provenance, the cost stack,
 risks and guardrails (the archetype's `guardrails.md`), human checkpoints, how the result will be proved,
