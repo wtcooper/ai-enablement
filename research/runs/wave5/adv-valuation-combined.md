@@ -53,7 +53,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
   - Subscription to the underlying BVR datasets (RADA is stated to be included at no extra cost for subscribers to the four expanded resources)
   - Analyst able to judge whether the retrieved transactions are comparable
   risks_and_guardrails:
-  - BVR says RADA answers are drawn from BVR's own content rather than the open internet, which limits (but does not remove) accuracy risk
+  - BVR says RADA in BVResearch Pro draws on BVR's vetted content and does not go out to the internet (BVR-RADAJUNIOR-2026); this is stated for that product, not for the transaction datasets
   - 'BVR''s own tip tells users not to stop at the answer: inspect the underlying transactions before relying on a result'
   human_checkpoints:
   - Analyst reviews the underlying transactions and decides which are appropriate for the subject company
@@ -85,6 +85,14 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
     date: '2026-09-23'
     access: full
     locator: '''Key point'' paragraph'
+  - ref: BVR-RADAJUNIOR-2026
+    title: 'RADA tip of the week: Use RADA to train junior analysts (BVWire)'
+    publisher: Business Valuation Resources
+    type: vendor
+    url: https://www.bvresources.com/articles/bvwire/rada-tip-of-the-week-use-rada-to-train-junior-analysts
+    date: '2026-05-06'
+    access: full
+    locator: paragraph 2 (content limited to BVR's vetted content)
   last_reviewed: '2026-10-20'
   notes: 'Grade C: product and vendor claims only. No named firm user, no error or override rate. Maturity is ''announced'' because availability is documented but named customer use is not. The ''AI-powered'' label and the ''does not go beyond BVR''s walls'' point are BVR''s own descriptions (BVR-RADAJUNIOR-2026).'
 - id: advisory-valuation-02
@@ -293,8 +301,8 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
     source_ref: S73-HOME-2026
   prerequisites:
   - 'Structured data layer first: the vendor says AI is only as good as the data under it'
-  - Integration with existing systems, which Stout's interview flags as a make-or-break point for automation
-  - Move from deal-team-led to a central valuation team, which Stout describes as a hard change for some organizations
+  - Integration with existing systems; Stout's interview asks whether added automation will integrate or become another system to access
+  - Move from deal-team-led to a central valuation team, which Stout says will be easier for some organizations to implement than for others
   risks_and_guardrails:
   - 73 Strings describes a deterministic core valuation engine with traceable calculations and human judgement central to valuation decisions (S73-CALLISTO-2026)
   - Standardized models can lose nuance that a bespoke deal-team valuation captured (STOUT-TECH-2024)
@@ -352,7 +360,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
   runtime_class: workflow-automation
   maturity: announced
   problem: Alternative asset managers run fragmented, manual valuation workflows, and the valuation provider is a separate hand-off.
-  solution: 'Stout (an independent valuation and advisory firm; not a top-100 accounting firm) announced Drivr on July 14, 2026: a platform for source documents, monitoring, scenario analysis, reporting and audit support, with AI-powered data extraction and Stout''s independent valuation opinions available inside the workflow, and a statement that it can run as standalone SaaS.'
+  solution: 'Stout (an independent valuation and advisory firm; not a top-100 accounting firm) announced Drivr on July 14, 2026: a platform for source documents, monitoring, scenario analysis, reporting and audit support, with AI-powered data extraction and Stout''s independent valuation opinions available inside the workflow.'
   outcomes:
   - lever: speed
     description: Stout's co-leader of portfolio valuation says teams can move 'hours or days, not weeks'; no measurement.
@@ -365,7 +373,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
   - Source documents and KPI feeds from portfolio companies
   risks_and_guardrails:
   - Release stresses traceable, source-linked support for auditors
-  - Combining platform use with an independent opinion from the same provider raises the independence questions that matter to auditors and LPs; the release does not discuss them
+  - The release does not discuss independence, data handling or model governance
   human_checkpoints:
   - Valuation practitioners issue the independent valuation opinions (per the release)
   role_evolution: Not stated.
@@ -388,7 +396,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
     access: full
     locator: answers on back-office strain and technology (context; automation, not AI)
   last_reviewed: '2026-10-20'
-  notes: 'Grade C: announcement, with no named customer or measurement. A client list on a third-party summary of Stout''s product page was not seen on the firm''s own release and is not used. Stout is the business-model signal: an advisory firm selling valuation as software plus judgment.'
+  notes: 'Grade C: announcement, with no named customer or measurement. Client names that appeared in a search summary of a Stout product page were not seen in the firm''s own release and are not used. Stout is the business-model signal: an advisory firm selling valuation as software plus judgment.'
 - id: advisory-valuation-07
   title: AI-enabled real estate portfolio valuation solution from a global advisory firm
   archetype: advisory
@@ -1029,7 +1037,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 - **Engagement scoping and acceptance** (`document-production`, `coordination-scheduling`): IVS 101 scope of work, which the exposure draft would extend to include significant AI use (IVSC-IVSED-2026 page 3). Independence screening for attest clients (SEC-RULE2-01-2026).
 - **Data intake and normalization** (`data-reporting`, `transaction-processing`): financials, tax returns and management data; the exposure draft adds a section on "Use of Management or Client Data" to IVS 104 (IVSC-IVSED-2026 page 3, item 4).
 - **Market and comparables research** (`research-synthesis`): transactions, multiples, control premiums, DLOM studies (BVR-RADAEXPAND-2026).
-- **Modelling and conclusion** (`expert-judgment`): DCF, market approach, discount-rate build-up; the draft IVS 200 adds a calibration section (IVSC-IVSED-2026 page 5, IVS 200 row).
+- **Modelling and conclusion** (`expert-judgment`): DCF, market approach, discount-rate build-up; the draft IVS 200 adds a calibration section (IVSC-IVSED-2026 pages 4-5, IVS 200 row).
 - **Fair value for financial reporting: PPA, impairment, Level 3 instruments** (`expert-judgment`): PCAOB inspections of the six largest audit firms found deficiencies in impairment testing, DCF-based business-combination valuations and Level 3 measurements (BVR-PCAOBINSP-2026).
 - **Report drafting and quality control** (`document-production`, `review-assurance`): IVS 106 reporting and the new IVS 107 quality controls (IVSC-IVSED-2026 pages 3-4).
 - **Defence of the work** (`review-assurance`): audit testing, tax examination, cross-examination (AICPA-FVS-2026 pre-conference workshop FVC26102 description).
@@ -1050,6 +1058,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 - BVR poll summaries: 73% of valuation experts polled say AI will "significantly" change how they work, while usage was low (BVU, Sept 2025; denominator and sample not visible, paywalled) (BVR-POLLS-2025). A 2026 BVR poll is described as showing adoption moving at an "insane" pace (summary only; no figures visible) (BVR-POLL-2026).
 - Vendor-published: Valutico's repeated "over 90% of users report significant time savings" and "3-5 times faster" (VALUTICO-PKFFI-2025; VALUTICO-ROUSE-2025); basis not stated. Anthropic reports 64.37% for Claude Opus 4.7 on Vals AI's Finance Agent benchmark and 83% for a third-party Excel agent (ANTHROPIC-FSAGENTS-2026; ANTHROPIC-FS-2025); both are general finance benchmarks.
 - Baseline quality evidence (not about AI): PCAOB inspection reports for BDO, Deloitte, EY, Grant Thornton, KPMG and PwC flagged insufficient testing of significant assumptions, inadequate evaluation of data and too much reliance on company valuation specialists; the article gives no counts (BVR-PCAOBINSP-2026).
+- A preprint presents an open-source multi-agent framework for sell-side equity research and valuation; its abstract says output is comparable to brokerage research and reports no measurements (ARXIV-FINROBOT-2024). Public-equity research, adjacent to this module, so not used for grading.
 - Independent, indirect: court re-ran Copilot queries and got different numbers each time (GOLDMAN-WEBER-2024); preprint benchmark in which a specialist model beat frontier LLMs at long-horizon statement forecasting (ARXIV-FORMA-2026); preprint on LLM property price estimates (ARXIV-REAPPRAISAL-2025).
 
 ### 3.4 Guardrails and regulatory points
@@ -1066,14 +1075,17 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 
 ### 3.5 Frontier signals (dated and sourced)
 
-- 2025-07-23: IVSC perspectives paper says valuers are already using AI in data, models and report writing, and that future IVS may add model governance and explainability (IVSC-PERSPECTIVES-2025).
+- 2025-07-23: IVSC perspectives paper says some valuers already use AI in data processing and report writing, and that future IVS may be enhanced on transparency, data and inputs, models and systems, and quality control (IVSC-PERSPECTIVES-2025).
 - 2026-01-07: first AO-41 exposure draft; adopted 2026-04-23 (BVR-TAFAO41-2026; BVR-AO41ADOPT-2026).
 - 2026-01 to 2026-04-30: IVS exposure draft consultation; final planned 2027-01-31, effective 2028-01-31 (IVSC-IVSED-2026).
 - 2026-03-03: Kroll announces an AI-enabled real estate valuation platform (KROLL-REVS-2026).
 - 2026-05-05: Anthropic lists a valuation reviewer among agent templates (ANTHROPIC-FSAGENTS-2026).
 - 2026-05-19: KPMG and Anthropic announce a global alliance with Claude access for 276,000+ employees (ANTHROPIC-KPMG-2026).
 - 2026-06-10: BVWire reports Big Four panellists describing AI as becoming part of everyday valuation workflows and fewer entry-level analyst hires (BVR-KPMGTREND-2026).
+- 2026-06 (summary only): a BVR panel write-up says firms are moving from experimentation to integrating AI into research, workflows and practice management, while facing questions on judgment, staffing, burnout and intellectual property (BVR-EXPERIMENT-2026).
+- 2026-07-22 and 2026-08-25 (summaries only): BVR webinars with live demonstrations of AI use by valuation professionals, and one practitioner's account of moving from skepticism to an AI-assisted practice (BVR-TRAINLIVE-2026; BVR-TRAINFEAR-2026).
 - 2026-07-14: Stout launches Drivr (STOUT-DRIVR-2026).
+- 2026 (programme page): the IVSC Valuation Dialogue Series lists a session on AI in valuation covering use cases across asset classes, data aggregation, modelling and scenario analysis, and governance and model-risk considerations, and says practical implementation remains uneven (IVSC-DIALOGUE-2026). BVWire reports a 25 June panel stressing that governing the technology may now be harder than adopting it (BVR-IVSCDIALOGUE-2026).
 - 2026-09-16: BVR extends its AI research agent to four more valuation datasets (BVR-RADAEXPAND-2026).
 - 2026-09-24: 73 Strings acquires Callisto and says it will make its valuation platforms agent-addressable via the Model Context Protocol, with a deterministic core valuation engine and human judgement central (S73-CALLISTO-2026).
 - 2026-10-04 to 06 (abstracts only): ASA International Conference sessions "AI, Ethics, and Professional Standards", "AI in Valuation: Practical Strategies, Risks, and the Road Ahead" and "Firm of the Future" (ASA-ASAIC26-2026; BVR-ASACONF-2026).
@@ -1099,7 +1111,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 - Data quality as the limiting factor, especially in commercial real estate (BVR-IVSCDIALOGUE-2026).
 - Clients using AI to attack valuers' assumptions (BVR-NACVA-2026).
 - Discovery of prompts and AI interactions (BVR-DISCOVERY-2026).
-- Cheaper, thinner valuation products enabled by automation: not found in valuation sources; Forvis Mazars raises it for quality of earnings (landscape; see section 4).
+- Cheaper, thinner valuation products enabled by automation: not found in valuation sources; the landscape file records that Forvis Mazars raises it for quality of earnings (FORVIS-QOE-2026, not re-read here; see section 4).
 
 ### 3.8 Interview probes for an advisor
 
@@ -1113,7 +1125,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 
 - **forensic-disputes:** proposed Federal Rule of Evidence 707 on machine-generated evidence. The Advisory Committee's October 2026 agenda book says the committee voted at its last meeting to withdraw the proposed rule as published and submit a modified proposal for further study, and has convened a panel on unreliable AI evidence (USCOURTS-EVID-2026 page 5). Also: expert-witness AI cases (GOLDMAN-WEBER-2024; BVR-DISCOVERY-2026; BVR-HEPPNERCOURT-2026; BVR-LEDOUX-2026, a federal case about unreliable methods and AI-generated false citations, summary only).
 - **transactions:** quality of earnings and diligence tooling (FORVIS-QOE-2026 and QoE vendors are in the landscape and were not re-read); data-room analysis automation (S73-CALLISTO-2026); KPMG's Claude-powered offerings for PE portfolio companies (ANTHROPIC-KPMG-2026).
-- **professional-services:** staffing pyramid and entry-level hiring effects (BVR-KPMGTREND-2026; BVR-TRAINSTAFF-2025); PE ownership and valuation-firm consolidation (a "BV Movers" item reports Stout's Drivr launch alongside PE investments in accounting firms; not read beyond the headline); firm pricing and revenue model.
+- **professional-services:** staffing pyramid and entry-level hiring effects (BVR-KPMGTREND-2026; BVR-TRAINSTAFF-2025); PE ownership and consolidation of valuation and accounting firms (BVR-MOVERS-2026 lists such deals next to Stout's Drivr launch; not analyzed here); firm pricing and revenue model.
 - **assurance:** auditors' evaluation of management valuations and company specialists (PCAOB-SPECIALIST-2025; BVR-PCAOBINSP-2026); the AICPA audit practice aid on AI (ACCTODAY-VPF-2026 mentions it; not read here).
 - **tax:** valuations for estate, gift and 409A purposes; the IRS responsible-AI guidance for tax practice (BVWire headline only, not read).
 - **risk-controls:** AI governance and model-risk controls for valuation models (BVR-IVSCDIALOGUE-2026; IVSC-PERSPECTIVES-2025 pages 12-13).
@@ -1121,7 +1133,7 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 
 ## 5. Sources
 
-65 distinct sources: 52 opened and read in full or in the relevant part, and 13 marked `search-only` (BVR paywalled pages where only the publisher's summary was read). By type: 18 press; 15 vendor; 13 conference; 4 academic; 3 standard-setter; 3 survey; 3 regulator; 3 firm; 2 podcast; 1 professional-body. No `community` or `job-posting` sources were reached (see section 6). The search-only items support no A or B grade.
+67 distinct sources: 53 opened and read in full or in the relevant part, and 14 marked `search-only` (BVR paywalled pages where only the publisher's summary was read). By type: 19 press; 15 vendor; 13 conference; 4 academic; 4 firm; 3 standard-setter; 3 survey; 3 regulator; 2 podcast; 1 professional-body. No `community` or `job-posting` sources were reached (see section 6). The search-only items support no A or B grade.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
@@ -1189,6 +1201,8 @@ Grade counts: A: 0, B: 4, C: 8, D: 4. Each entry notes the firm type where one a
 | BVR-EXPERIMENT-2026 | From Experimentation to Integration: AI's Next Phase in Valuation (Business Valuation Update; paywalled, summary read) | Business Valuation Resources | conference | https://www.bvresources.com/articles/business-valuation-update/from-experimentation-to-integration-ais-next-phase-in-valuation | 2026-06 | search-only |
 | BVR-MONOCULTURE-2026 | Are We Headed for an 'Algorithmic Monoculture'? (Business Valuation Update; paywalled, summary read) | Business Valuation Resources | press | https://www.bvresources.com/articles/business-valuation-update/are-we-headed-for-an-algorithmic-monoculture | 2026-08 | search-only |
 | BVR-APRILPREVIEW-2026 | Preview of the April issue of Business Valuation Update (BVWire; item on BV hiring and AI) | Business Valuation Resources | press | https://www.bvresources.com/articles/bvwire/preview-of-the-april-issue-of-business-valuation-update-031826 | 2026-03-18 | full |
+| BVR-MOVERS-2026 | BV Movers (BVWire people and firm news; item on Stout's Drivr launch; date taken from the URL) | Business Valuation Resources | press | https://www.bvresources.com/articles/bvwire/bv-movers-072226 | 2026-07-22 | full |
+| FORVIS-QOE-2026 | Quality of Earnings & Due Diligence in an AI World (not opened in this run; described in landscape-advisory.md) | Forvis Mazars US | firm | https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world | 2026-09-08 | search-only |
 | BVR-MERCER-2025 | Mercer's Take on AI in Business Valuation (Business Valuation Update; paywalled, summary read) | Business Valuation Resources | press | https://www.bvresources.com/articles/business-valuation-update/mercers-take-on-ai-in-business-valuation | 2025-04 | search-only |
 
 ## 6. Gaps
