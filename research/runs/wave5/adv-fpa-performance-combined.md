@@ -1398,6 +1398,7 @@ Archetype: advisory. Module: fpa-performance. Run date: 2026-10-20. Wave 5. Angl
 | 94% / 83% / 2% | Mid-market companies using generative AI / past early experimentation / operationalised at scale (100 decision-makers, December 2025) | KAUFMANROSSIN-AIMIDMARKET-2026 | self-reported (firm survey) |
 | 40% | Among those increasing AI spending, share reallocating budget from external consulting services (43% from BI and analytics, 41% from cybersecurity) | RSM-MMAI-2026, reallocation paragraph | self-reported (firm survey) |
 | 65% / 84% | Finance leaders rating AI performance good or excellent / saying AI ROI meets or exceeds expectations (nearly 230 US finance leaders) | GT-CFOSURVEY-2026 | self-reported (firm survey) |
+| 61% vs 19% | Finance leaders who had purchased FP&A software in 2024 versus those citing FP&A solutions as a must-have in 2023, in a 2024 Datarails survey (older than the window; sample not stated in the article) | FMMAG-CFOSENT-2024, paragraph 3 | vendor-published |
 | 51% | Surveyed accountants naming financial forecasting a top client-service use of AI (725 US professionals; denominator for the list not stated) | INTUIT-ACCTTECH-2026 | vendor-published |
 
 Independent quality evidence is adjacent only. A Journal of Accounting Research paper (277 accountants plus field data on 79 SMEs and 200,000+ transaction records) links generative AI to productivity gains and faster month-end closing, finds accountants intervene when AI confidence is low, and finds that relying on non-consensus AI recommendations can raise error risk (STANFORD-JAR-2026, abstract). A 2026 working paper found three frontier LLMs solved 63, 58 and 42 of 100 synthetic LBO modelling cases (SSRN-VIDAL-2026, abstract). Neither covers FP&A.
@@ -1415,7 +1416,7 @@ Independent quality evidence is adjacent only. A Journal of Accounting Research 
 
 - **2026-02-23.** COSO publishes generative AI control guidance (DELOITTE-DART-COSO-2026).
 - **2026-04-09.** Abacum launches a platform-wide AI layer with agents that flag anomalies, draft narratives, model scenarios and connect to Claude, ChatGPT and Slack through MCP (ABACUM-INTELLIGENCE-2026).
-- **2026-05-28.** Gartner says finance should prepare for embedded AI assistants and AI-enabled simulation, and that forecasting and insight generation are among the lowest-rated use cases (GARTNER-AIREPORTCARD-2026).
+- **2026-05-28.** EY and Microsoft hold a half-day CFO AI Lab on moving from AI use cases to agentic finance, with practical examples listed for source-to-pay, order-to-cash, FP&A and record-to-report (EY-CFOAILAB-2026, event description; event page only). The same day, Gartner says finance should prepare for embedded AI assistants and AI-enabled simulation, and that forecasting and insight generation are among the lowest-rated use cases (GARTNER-AIREPORTCARD-2026).
 - **2026-06-22 and 2026-09-05.** RSM and CFGI announce Abacum alliances (ABACUM-RSM-2026; ABACUM-CFGI-2026).
 - **2026-07-08.** FP&A Trends Survey: 15% of organisations expect to use AI agents within six months and 51% at some point (ONESTREAM-FPAWEBINAR-2026, agents segment).
 - **2026-08-12.** Sage Intacct's Finance Intelligence Agent is in phased rollout and an agent marketplace is announced (ARMANINO-INTACCTR3-2026).
