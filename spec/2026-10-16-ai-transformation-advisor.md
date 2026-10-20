@@ -10,7 +10,7 @@ From: [`intent/2026-10-16-ai-transformation-advisor.md`](../intent/2026-10-16-ai
 
 ## 1. Summary
 
-A portable **Agent Plugin** with one skill, `transformation-advisor`. It guides anyone, from a team
+A portable **Agent Plugin** (`ai-transformation`) whose core skill is `transformation-advisor` (a suite since 2026-10-20; see [`2026-10-20-skill-suite.md`](2026-10-20-skill-suite.md)). It guides anyone, from a team
 lead to an audit partner to a head of AI, through transforming how their part of the business works
 with AI.
 
@@ -488,6 +488,9 @@ overridden.
 ## 7. Plugin architecture
 
 ### 7.1 One skill
+
+> **Revised 2026-10-20:** the plugin is now a suite of skills sharing this knowledge base; see
+> [`2026-10-20-skill-suite.md`](2026-10-20-skill-suite.md). The advisor below remains the core skill.
 
 The plugin has **one skill**, `transformation-advisor`. Team-level and organization-level work are the
 same loop at different scopes, and inspiration is a journey-stage path rather than a separate job.
