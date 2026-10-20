@@ -3,8 +3,7 @@
 Read this when the people who must back or adopt the change are partners or senior experts who co-own the firm
 or hold its client relationships: law, accounting, tax and consulting firms, and expert-led teams like them.
 It serves Make the case (the partner briefing) and Plan (leader expectations). Rules 1, 2 and 8 in `SKILL.md`
-apply: map roles, never rank or target people. Keys in brackets are in §12; most firm accounts are
-self-reported.
+apply: map roles, never rank or target people. Keys in brackets are in §12; most firm accounts are self-reported.
 
 ## Contents
 
