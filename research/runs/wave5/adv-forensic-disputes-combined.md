@@ -319,7 +319,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
     process to accounting-firm forensic work, so the grade is capped at B even though the numbers are measured.
     The page for the product is undated; 2026-10-20 is the access date. The Redgrave paper itself (Keeling et al.)
     was not opened; its numbers are taken from the independent re-analysis. The earlier Relativity and Redgrave Data
-    preprint (2024) reported an estimated 96% recall and 60% precision on a live matter; it is a vendor-affiliated
+    preprint (OMRANI-BEYONDBAR-2024) reported an estimated 96% recall and 60% precision on a live matter; it is a vendor-affiliated
     preprint and is not used for figures. HaystackID's article also quotes unnamed matters (an Am Law 100 firm cutting
     review time by 50-67% with 90%+ accuracy across 126,000 documents; a 2-million-document federal regulatory matter
     at 88% recall and 96% precision); these are unnamed, vendor-authored and not verifiable, so they stay in notes.
@@ -910,6 +910,14 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
 - **UK:** The Civil Justice Council proposed that expert witnesses explain AI use and that the expert declaration (PD35 3.3) be amended; a July 2026 update points to proportionate transparency for expert evidence and a final report later in 2026 (HSFKRAMER-CJC-2026, search-only, law-firm summary; not verified against CJC documents).
 - **Enforcement context:** DOJ's September 2024 compliance guidance asks prosecutors to look at how a company manages AI risk and whether human decision-making is the baseline for assessing AI (DOJ-ECCP-2024, AI sections). FinCEN's November 2024 alert gives deepfake red flags for financial institutions (FINCEN-DEEPFAKE-2024).
 - **Independence:** J.S. Held states it is not a CPA firm and provides no attest services (JSHELD-AIEXPERT-2026, footer). For CPA firms, expert-witness and litigation-support work for audit clients is likely restricted; not verified here. Route to the independence and pricing research.
+
+### Discourse signals (what practitioners are saying)
+
+- **Where the field says it is heading:** AI will become a common part of every expert's practice, and opposing experts will use AI to find flaws, so experts should run pre-emptive AI reviews of their own work (JSHELD-AIEXPERT-2026). Practitioners expect to be asked about AI use in proceedings (JSHELD-AIEXPERT-2026).
+- **Conference programming (all scheduled sessions are signals only):** the AICPA FVS Conference (2026-11-04 to 11-06) has a topic track "AI, technology and advanced data" and sessions on how courts respond to AI-assisted expert evidence (FVC2617), explaining AI-enabled procedures to a trier of fact (FVC2627) and AI use in expert testimony ethics (FVC2638); a 2025 FVS session on experts' use of AI and court opinions is sold as a rebroadcast webcast (AICPA-FVS-2026; AICPA-FVSWEBCAST-2025). ACFE conferences in Asia-Pacific (August) and Canada (November) list AI-washing and ethical-AI sessions (ACFE-APAC-2026; ACFE-CANADA-2026). No recordings or slides were reachable.
+- **Podcasts:** ACFE's Fraud Talk episode 162 (2025-11-11) discusses AI in fraud detection and the need for human intuition alongside automation, per the show notes; the audio was not heard (FRAUDTALK-162-2025).
+- **Academic agenda:** the Journal of Forensic Accounting Research issued a call for a special topic on forensic accounting and AI, with submissions due 2026-03-15 (JFAR-CFP-2024). A 2026 systematic review says evidentiary validity of algorithmic results, interpretability, data quality and professional resistance remain open (JRFM-FORENSICAI-2026). An OSINT and cyber-investigation survey says hallucination is flagged as a major concern in over 20 studies but measured end to end in one (OSINT-ARXIV-2026).
+- **Vendor-led discourse on review quality:** vendors cite recall of 85-95% for gen-AI review (HAYSTACKID-GENAI-2026) while independent authors dispute a flagship comparison (CGP-ARXIV-2026). A 2024 Relativity and Redgrave Data preprint reported an estimated 96% recall and 60% precision on a live matter and is the earlier vendor-affiliated claim (OMRANI-BEYONDBAR-2024).
 
 ### Frontier signals (dated and sourced)
 
