@@ -3,23 +3,12 @@ schema: solution/v1
 doc: brief
 id: ""
 title: ""
-source:
-  portfolio_item: null
-  opportunity: null
+source: { portfolio_item: null, opportunity: null }
 scope: { name: "", level: team }
-owners:
-  business: ""
-  delivery: ""
-  support: null
+owners: { business: "", delivery: "", support: null }
 classification:
-  archetype: null
-  modules: []
-  work_types: []
-  pattern: other
-  ladder: assist
-  ladder_target: null
-  change_scope: step
-  runtime_class: personal-assistant
+  { archetype: null, modules: [], work_types: [], pattern: other, ladder: assist, ladder_target: null,
+    change_scope: step, runtime_class: personal-assistant }
 sourcing: undecided
 tools: []
 vendor_evaluations: []
@@ -32,13 +21,11 @@ updated: YYYY-MM-DD
 
 # Solution brief: <title>
 
-<!-- Schema: references/schemas/solution.md. Replace every <...>; leave unreached sections as "Not started".
-     Describe cases by type, source system and id, never their content. Owners are roles. -->
+<!-- Schema: references/schemas/solution.md. Replace every <...>; unreached sections say "Not started". Cases by type, source and id only. Owners are roles. -->
 
 ## Summary
 
-<One screen: the problem in the owner's terms, the decision so far, the design in two lines, where things stand,
-and what happens next.>
+<One screen: the problem in the owner's terms, decisions so far, the design, where things stand, what is next.>
 
 ## Progress
 
@@ -74,10 +61,8 @@ and what happens next.>
 | <buy / configure> | | | | | | | |
 | <build-on-model / build-custom> | | | | | | | |
 
-- **Catalog check:** <in `overlay/tool-catalog.yaml` / outside it: flagged, vendor evaluation requested>
-- **Decision:** <sourcing id> on <runtime class>, at <ladder id>, because <criteria that decided it>
-- **Maintenance:** <who re-tests when the model, prompts or tools change, and how often>
-- **Revisit when:** <event, e.g. fails eval thresholds, vendor terms change, volume doubles>
+- **Catalog check:** <in the overlay catalog / outside it: flagged, vendor evaluation requested> · **Decision:** <sourcing id> on <runtime class>, at <ladder id>, because <criteria that decided it>
+- **Maintenance:** <who re-tests when the model, prompts or tools change> · **Revisit when:** <event, e.g. fails eval thresholds, vendor terms change, volume doubles>
 
 ## 3. Solution design
 
@@ -94,8 +79,7 @@ and what happens next.>
 - **Security and privacy:** <risk screen (prompt injection, improper output handling, excessive agency) ·
   data handling · access control · risk tier>
 - **Human checkpoints (from the pattern file):** <checkpoint · who · what they check · time budget per item>
-- **Escalation triggers:** <failure thresholds · high-risk actions that always pause for a person>
-- **When it does not know:** <what it says or does; manual fallback>
+- **Escalation triggers:** <failure thresholds · high-risk actions that pause for a person> · **When it does not know:** <what it says or does; manual fallback>
 - **Logging and retention:** <what is logged · how long · who can read it>
 - **Cost envelope:** <range per task and per month at expected volume, with assumptions>
 - **Role evolution:** tasks moving: <...> · new work: <...> · capacity: <redeploy / reduce / mixed>

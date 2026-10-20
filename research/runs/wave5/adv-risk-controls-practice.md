@@ -23,7 +23,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
 6. **Surveys point to a governance gap on the client side.** 63% of surveyed organisations have no formal AI risk appetite or governance framework (AUDITBOARD-FOCUS-2025). 78% lack strong confidence they could pass an independent AI governance audit within 90 days (GT-AIIMPACT-2026). 34% of 417 GRC and audit leaders report acting on an inaccurate agent output (OPTRO-AGENTICREPORT-2026, vendor survey).
 7. **Landscape correction.** The landscape file doubted whether "42% fully assurance ready" was a conflation. The KPMG release itself says fewer than half of organisations (42%) are fully assurance-ready, and separately that 42% of assurance-ready organisations are confident about scaling (KPMG-AIFINANCE-2026). Both statements are in the source.
 
-**Counts.** 19 use cases: A = 0, B = 11, C = 6, D = 2. 45 sources listed (40 opened in full; 3 search-only leads; 2 opened but used only as context). See section 5.
+**Counts.** 19 use cases: A = 0, B = 11, C = 6, D = 2. 46 sources listed: 44 opened (two of them, ANDERA-HOME-2026 and IIA-GAM-2026, used only as context) and 2 search-only job-posting leads (CITI-JOB-2026, AMEX-JOB-2026). Types: firm 15, press 11, vendor 7, survey 6, job-posting 3, conference 2, standard-setter 1, professional-body 1. See section 5.
 
 ---
 
@@ -70,7 +70,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Autonomous Testing paragraph (Reddit); customer quotes (Klaviyo, FJ Management)"}
     - {ref: OPTRO-HAVERTYS-2026, title: "Havertys Brings Agentic AI Into Internal Audit", publisher: Optro, type: vendor, url: "https://optro.ai/blog/havertys-furniture-success-story", date: "2026-09-04", access: full, locator: "paragraphs on review and 'humans in the loop'"}
   last_reviewed: "2026-10-20"
-  notes: "Vendor: Optro (formerly AuditBoard, per the Optro site and the vendor's own AuditBoard-branded 2025 blog). Grade is B, not A, because the figures are the vendor's report, not a customer-reported tracked metric. These are companies, not advisory firms; the entry tells an advisor what their clients' in-house teams are doing."
+  notes: "Vendor: Optro (appears to be AuditBoard's current brand: the AuditBoard-hosted 2025 blog refers to Optro; no rebrand announcement was opened). Grade is B, not A, because the figures are the vendor's report, not a customer-reported tracked metric. These are companies, not advisory firms; the entry tells an advisor what their clients' in-house teams are doing."
 
 - id: advisory-risk-controls-02
   title: "ITGC change-management testing agents extract ticket attributes and mark up evidence (Microsoft Frontier Finance)"
@@ -133,7 +133,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
       provenance: self-reported
       source_ref: RIVERON-MONDAQ-2026
   prerequisites:
-    - "Firm testing methodology codified well enough to configure agents (RSM: uses its proprietary methodology; Aprio and Weaver-style configuration of the vendor platform to the firm's own method)"
+    - "Firm testing methodology codified well enough to configure agents (RSM: uses its own proprietary testing methodology; Aprio: its professionals configure the vendor platform to the firm's engagement methodology)"
     - "Control metadata, test attributes, evidence requirements, sampling logic and exception rules defined more precisely than many programs have historically (RIVERON-MONDAQ-2026)"
     - "Agreement from clients on handling of their data (RSM says Beacon client data is kept in a segregated environment and is not used to train Andera's commercial product)"
   risks_and_guardrails:
@@ -327,11 +327,11 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
   role_evolution: "Not described."
   evidence_grade: C
   sources:
-    - {ref: DILIGENT-AUDITAI-2026, title: "Diligent launches AuditAI to streamline internal audits", publisher: CFOtech, type: press, url: "https://cfotech.news/story/diligent-launches-auditai-to-streamline-internal-audit", date: "2026-03-13", access: full, locator: "paragraphs 3-5"}
+    - {ref: DILIGENT-AUDITAI-2026, title: "Diligent launches AuditAI to streamline internal audits", publisher: CFOtech, type: press, url: "https://cfotech.news/story/diligent-launches-auditai-to-streamline-internal-audits", date: "2026-03-13", access: full, locator: "paragraphs 3-5"}
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic Stakeholder Management paragraph"}
     - {ref: FIELDGUIDE-SIXWAYS-2026, title: "Six Ways Internal Audit Teams Are Putting AI to Work", publisher: Fieldguide, type: vendor, url: "https://www.fieldguide.io/resource-articles/six-ways-internal-audit-teams-are-putting-ai-to-work", date: "2026", access: full, locator: "section on real-time evidence review"}
   last_reviewed: "2026-10-20"
-  notes: "Diligent date is the CFOtech article date; the vendor said the launch coincided with the IIA GAM conference (March 9-11). The CFOtech URL used here is the cfotech.news copy of the article."
+  notes: "Firm type: vendors (Diligent, Optro, Fieldguide). Diligent date is the CFOtech article date; the vendor said the launch coincided with the IIA GAM conference (March 9-11). The CFOtech URL used here is the cfotech.news copy of the article."
 
 - id: advisory-risk-controls-09
   title: "Agents draft internal-audit planning, risk assessment agendas and risk scores"
@@ -367,7 +367,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic Risk Assessment Scoring paragraph"}
     - {ref: FIELDGUIDE-SIXWAYS-2026, title: "Six Ways Internal Audit Teams Are Putting AI to Work", publisher: Fieldguide, type: vendor, url: "https://www.fieldguide.io/resource-articles/six-ways-internal-audit-teams-are-putting-ai-to-work", date: "2026", access: full, locator: "section on planning and drafting"}
   last_reviewed: "2026-10-20"
-  notes: "GT's piece is guidance with sample prompts, not a report of a deployment; no client or result is named. Fieldguide's article describes drafting as the most mature, lowest-risk use. It quotes the IIA's 2025 Pulse of Internal Audit (41% of CAEs use generative AI for internal audit activities; 25% for advisory; 15% for assurance); that figure is second-hand and the IIA source was not opened, so it sits here in notes only. BDO's Risk Assessment Coach is an audit-side (assurance) tool and is routed."
+  notes: "Firm type: Grant Thornton (large US firm; see entry 10) and vendors Optro and Fieldguide. GT's piece is guidance with sample prompts, not a report of a deployment; no client or result is named. Fieldguide's article describes drafting as the most mature, lowest-risk use. It quotes the IIA's 2025 Pulse of Internal Audit (41% of CAEs use generative AI for internal audit activities; 25% for advisory; 15% for assurance); that figure is second-hand and the IIA source was not opened, so it sits here in notes only. BDO's Risk Assessment Coach is an audit-side (assurance) tool and is routed."
 
 - id: advisory-risk-controls-10
   title: "Generative AI drafts risk and control matrices, control definitions, narratives and test steps (Grant Thornton CompliAI)"
@@ -400,7 +400,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
   sources:
     - {ref: GT-COMPLIAI-2024, title: "Grant Thornton taps Microsoft technology to help clients manage compliance and risk using generative AI", publisher: Grant Thornton LLP, type: firm, url: "https://www.grantthornton.com/insights/press-releases/2024/february/grant-thornton-taps-microsoft-technology-to-help-clients-manage-compliance-and-risk-using-generative-ai", date: "2024-02-06", access: full, locator: "paragraphs 1-4; capabilities list"}
   last_reviewed: "2026-10-20"
-  notes: "Older than the 12-18 month window; kept as the foundation for control-design drafting. Grant Thornton is a US top-10 firm; its US advisory arm sits in an alternative practice structure, which is the mechanism for non-attest services (GT-EAS-2026 boilerplate). Current use of CompliAI was not confirmed in 2026 sources."
+  notes: "Older than the 12-18 month window; kept as the foundation for control-design drafting. Firm type: Grant Thornton is a large US firm; Grant Thornton Advisors (non-attest) sits in an alternative practice structure with New Mountain Capital as owner per the landscape (GT-GTAP-2026, not re-read here); the APS statement is in the GT-EAS-2026 boilerplate. Current use of CompliAI was not confirmed in 2026 sources."
 
 - id: advisory-risk-controls-11
   title: "Agents review third-party SOC reports and vendor due diligence"
@@ -434,7 +434,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: KPMG-AGENTICSOX-2025, title: "Seize the future: The agentic shift in SOX compliance", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2025/seize-the-future-the-agentic-shift-in-sox-compliance.html", date: "2025-07", access: full, locator: "list of agent use cases ('Integrated third-party risk and SOC report review')"}
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic TPRM paragraph"}
   last_reviewed: "2026-10-20"
-  notes: "KPMG page date: page metadata shows 2025-07-31 and a May 2026 value; '2025-07' is used with that uncertainty. Reading others' SOC reports is user-entity work and stays here; issuing SOC reports is assurance."
+  notes: "KPMG page date: page metadata shows 2025-07-31 and a May 2026 value; '2025-07' is used with that uncertainty. Firm type: KPMG (Big Four) and vendor Optro. Reading others' SOC reports is user-entity work and stays here; issuing SOC reports is assurance."
 
 - id: advisory-risk-controls-12
   title: "Audit of a client's agentic AI systems: AI governance lifecycle audit and extension of the SOX perimeter to AI"
@@ -471,7 +471,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: KPMG-SOX2030-2026, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html", date: "2026-09-24", access: full, locator: "POV 1: The governance of AI, subsection 'The first AI-related material weaknesses'"}
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: COSO, type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02-23", access: full, locator: "Implementation roadmap section (six steps); eight capability types"}
   last_reviewed: "2026-10-20"
-  notes: "GT case study has no date on the page; '2026' comes from the URL path. The COSO publication is the PDF copy hosted by a Spanish internal-auditors site; the release date of 2026-02-23 is from Deloitte's DART summary (DART-COSO-2026). COSO authors per the PDF: Emett, Pikoos, Eulerich, Wood and Guthrie (EY). This is risk-advisory work on the client's AI; certification against AIUC-1 or ISO 42001 is assurance and is routed."
+  notes: "GT case study has no date on the page; '2026' comes from the URL path. The COSO publication is the PDF copy hosted by a Spanish internal-auditors site; the release date of 2026-02-23 is from Deloitte's DART summary (DART-COSO-2026). COSO authors per the PDF: Emett, Pikoos, Eulerich, Wood and Guthrie (EY). Firm type: Grant Thornton (large US firm, PE-owned advisory arm per the landscape) for the client case; KPMG (Big Four) for the SOX point of view. The client is a large bank, not mid-market. This is risk-advisory work on the client's AI; certification against AIUC-1 or ISO 42001 is assurance and is routed."
 
 - id: advisory-risk-controls-13
   title: "AI governance framework and readiness advisory for clients (inventory, risk tiering, control mapping, monitoring)"
@@ -510,7 +510,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: COSO, type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02-23", access: full, locator: "Implementation roadmap section"}
     - {ref: DART-COSO-2026, title: "Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI", publisher: Deloitte (DART), type: firm, url: "https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai", date: "2026-04-03", access: full, locator: "opening paragraph (release date February 23, 2026); roadmap"}
   last_reviewed: "2026-10-20"
-  notes: "Grade C because the evidence is firm marketing, a standard and one job posting; a posting shows hiring, not delivered engagements. Bloomberg Law reports (2026-09-30) that the Big Four are pitching governance services to clients (BLOOMBERG-BIGFOUR-2026, opened via mirror). EY's survey about materially negative AI incidents is cited there second-hand. The landscape's note that GT's CEO expects AI governance demand (GT-CBIZ-2026) was not re-read in this run. Boundary: certification or attestation over AI systems (AIUC-1, ISO 42001, SOC) is assurance, see section 4."
+  notes: "Firm types: RSM (top-10 US firm serving the middle market) and Grant Thornton. Grade C because the evidence is firm marketing, a standard and one job posting; a posting shows hiring, not delivered engagements. Bloomberg Law reports (2026-09-30) that the Big Four are pitching governance services to clients (BLOOMBERG-BIGFOUR-2026, opened via mirror). EY's survey about materially negative AI incidents is cited there second-hand. The landscape's note that GT's CEO expects AI governance demand (GT-CBIZ-2026) was not re-read in this run. Boundary: certification or attestation over AI systems (AIUC-1, ISO 42001, SOC) is assurance, see section 4."
 
 - id: advisory-risk-controls-14
   title: "AI inventory and shadow-AI discovery to feed a client's AI risk register"
@@ -544,7 +544,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: Optro, type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic AI Governance paragraph"}
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: COSO, type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02-23", access: full, locator: "Implementation roadmap, Step 1 (inventory) and shadow-AI discussion"}
   last_reviewed: "2026-10-20"
-  notes: "Vendor: Optro. The tool is announced; AI Discovery is only a preview."
+  notes: "Firm type: vendor (Optro). The tool is announced; AI Discovery is only a preview."
 
 - id: advisory-risk-controls-15
   title: "Board and audit-committee materials analysed for anomalies and turned into audit actions"
@@ -577,7 +577,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
   sources:
     - {ref: DILIGENT-AUDITAI-2026, title: "Diligent launches AuditAI to streamline internal audits", publisher: CFOtech, type: press, url: "https://cfotech.news/story/diligent-launches-auditai-to-streamline-internal-audits", date: "2026-03-13", access: full, locator: "paragraphs on Smart Prep 360"}
   last_reviewed: "2026-10-20"
-  notes: "Single vendor source. Vendor: Diligent."
+  notes: "Single vendor source. Firm type: vendor (Diligent)."
 
 - id: advisory-risk-controls-16
   title: "Risk-advisory practices move IA, ISO, HITRUST and PCI engagements onto one AI-native platform with firm-built agents"
@@ -601,7 +601,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
       source_ref: FIELDGUIDE-SERIESC-2026
   prerequisites:
     - "Firm methodology configured into the platform (Aprio: Aprio's own methodology shapes how each agent is designed)"
-    - "Platform with AIUC-1 and ISO 42001 credentials was a selection point for Cherry Bekaert, per the vendor's text"
+    - "Open APIs to connect the platform to the firm's wider infrastructure (Cherry Bekaert release)"
   risks_and_guardrails:
     - "Vendor concentration: all named firms use one vendor; the vendor's own CEO quotes drive the announcements"
     - "Aprio says workflows are built to comply with AICPA, PCAOB and GAAS; human oversight at every stage (firm statement, not tested)"
@@ -614,7 +614,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: CB-FIELDGUIDE-2026, title: "Cherry Bekaert Selects Fieldguide as Strategic AI Partner to Modernize Audit and Advisory Delivery", publisher: Cherry Bekaert, type: firm, url: "https://www.cbh.com/newsroom/cherry-bekaert-expands-ai-audit-with-fieldguide/", date: "2026-06-03", access: full, locator: "paragraphs 1-2"}
     - {ref: FIELDGUIDE-SERIESC-2026, title: "Fieldguide Raises $75M Series C Round to Boost Audit and Advisory Firms' Agentic AI Capabilities", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/02/02/fieldguide-raises-75m-series-c-round-to-boost-audit-and-advisory-firms-agentic-ai-capabilities/177323", date: "2026-02-03", access: full, locator: "paragraph on 'half of the top 100 accounting firms'"}
   last_reviewed: "2026-10-20"
-  notes: "Firm types: Cherry Bekaert (top-20 firm per its release) and Aprio (20th-largest US advisory and accounting firm per its release) are mid-market firms. The two firms' rankings differ slightly in each release's wording; both say 20th/top 20. Fieldguide's Series C item is dated by the CPA Practice Advisor byline (2026-02-03); the vendor announced on Feb 2. SOC and financial-audit parts are assurance and are routed. Fieldguide's customer case-study pages (Weaver, Warren Averett, BerryDunn, Forvis Mazars, Aprio PCI) were opened but carry no publication date and mostly describe pre-agent workflow platforms; they are not used as evidence here."
+  notes: "Firm types: Cherry Bekaert (top-20 firm per its release) and Aprio (20th-largest US advisory and accounting firm per its release) are mid-market firms. Fieldguide's Series C item is dated by the CPA Practice Advisor byline (2026-02-03); the vendor announced on Feb 2. SOC and financial-audit parts are assurance and are routed. Fieldguide's customer case-study pages (Weaver, Warren Averett, BerryDunn, Forvis Mazars, Aprio PCI) were opened but carry no publication date and mostly describe pre-agent workflow platforms; they are not used as evidence here."
 
 - id: advisory-risk-controls-17
   title: "AI-native providers sell SOX and internal-audit testing straight to enterprise audit teams"
@@ -684,7 +684,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: KPMG-SOX2030-2026, title: "The Future of SOX: A point of view for 2030 and beyond", publisher: KPMG US, type: firm, url: "https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html", date: "2026-09-24", access: full, locator: "POV 2: Embedded and autonomous controls; 'Challenges on the horizon'"}
     - {ref: OPTRO-HAVERTYS-2026, title: "Havertys Brings Agentic AI Into Internal Audit", publisher: Optro, type: vendor, url: "https://optro.ai/blog/havertys-furniture-success-story", date: "2026-09-04", access: full, locator: "paragraph beginning 'Beyond that plan, Stephanouk sees a bigger future'"}
   last_reviewed: "2026-10-20"
-  notes: "Idea. No deployment found. KPMG also says external auditors and practitioners already test 100% of certain transaction types; see entry 04."
+  notes: "Idea. No deployment found. Firm type: KPMG (Big Four). KPMG also says external auditors and practitioners already test 100% of certain transaction types; see entry 04."
 
 - id: advisory-risk-controls-19
   title: "Pre-go-live control package for client finance agents: inventory and owner, evidence standard, sign-off gate, assurance mapping, exit threshold (idea)"
@@ -719,7 +719,7 @@ Refs follow `PUBLISHER-SHORT-YYYY`. Refs shared with `landscape-advisory.md` reu
     - {ref: CPAPA-AGENTSCLOSE-2026, title: "Before You Let the Agents Run the Close: Five Controls to Put in Writing First", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/", date: "2026-08-13", access: full, locator: "five numbered controls and closing paragraph"}
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: COSO, type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02-23", access: full, locator: "Implementation roadmap"}
   last_reviewed: "2026-10-20"
-  notes: "Idea. The client-accounting side of agentic close belongs to client-accounting-services; the control design belongs here. The article's own '42 percent assurance ready' paraphrase matches the KPMG release (see Summary point 7)."
+  notes: "Idea. Source is a university professor's article in a trade outlet. The client-accounting side of agentic close belongs to client-accounting-services; the control design belongs here. The article's own '42 percent assurance ready' paraphrase matches the KPMG release (see Summary point 7)."
 ```
 
 ---
@@ -876,7 +876,7 @@ Access is `full` unless stated. Type counts are at the end of the table.
 | KPMG-SOX2030-2026 | The Future of SOX: A point of view for 2030 and beyond (web page and PDF) | KPMG US | firm | https://kpmg.com/us/en/articles/2026/future-sox-point-view-2030-beyond.html | 2026-09-24 |
 | KPMG-ICFR-WEBCAST-2026 | Revolutionizing internal controls (insights from an April 2026 Future of SOX webcast) | KPMG US | survey | https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/revolutionizing-internal-controls.pdf | 2026-04 (webcast month; PDF undated) |
 | KPMG-AGENTICSOX-2025 | Seize the future: The agentic shift in SOX compliance | KPMG US | firm | https://kpmg.com/us/en/articles/2025/seize-the-future-the-agentic-shift-in-sox-compliance.html | 2025-07 |
-| KPMG-IPO-2026 | The IT leader's guide to IPO preparedness | KPMG US | firm | https://kpmg.com/us/en/articles/2026/ipo-readiness.html | 2026-06-10 |
+| KPMG-IPO-2026 | The IT leader's guide to IPO preparedness | KPMG US | firm | https://kpmg.com/us/en/articles/2026/it-leaders-guide-ipo-preparedness.html | 2026-06-10 |
 | KPMG-AIFINANCE-2026 | AI adoption in finance doubles, but assurance readiness determines who wins | KPMG International | survey | https://kpmg.com/xx/en/media/press-releases/2026/05/ai-adoption-in-finance-doubles-but-assurance-readiness-determines-who-wins.html | 2026-05-11 |
 | KPMG-GAM-2026 | KPMG at the IIA's 2026 GAM conference | KPMG US | conference | https://kpmg.com/us/en/events/2026/kpmg-iias-2026-gam-conference.html | 2026-02-24 |
 | COSO-GENAI-2026 | Achieving Effective Internal Control Over Generative AI | COSO | standard-setter | https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf | 2026-02-23 (release date per DART-COSO-2026) |
@@ -891,11 +891,11 @@ Access is `full` unless stated. Type counts are at the end of the table.
 | ANDERA-HOME-2026 | Andera: Automate your controls testing with AI (home page; opened, used only for context) | Andera | vendor | https://www.andera.ai/ | 2026 (undated page) |
 | IIA-GAM-2026 | The IIA's Great Audit Minds Conference to be Held March 9-11 (opened; not used as evidence) | The IIA | conference | https://www.theiia.org/en/content/communications/press-releases/2026/the-institute-of-internal-auditors-great-audit-minds-conference-to-be-held-march-9-11-in-las-vegas/ | 2026-02 (page text says February 3, 2025; likely typo) |
 
-**Source count by type (45 listed; 40 opened and used, 3 search-only or context-only, 2 opened but not used as evidence).**
+**Source count by type (46 listed; 44 opened; 2 search-only).**
 
 | Type | Count |
 |---|---|
-| firm | 17 |
+| firm | 15 |
 | press | 11 |
 | vendor | 7 |
 | survey | 6 |
@@ -903,9 +903,9 @@ Access is `full` unless stated. Type counts are at the end of the table.
 | conference | 2 |
 | standard-setter | 1 |
 | professional-body | 1 |
-| **Total** | **48 rows**, counting the 3 search-only/context rows above |
+| **Total** | **46** |
 
-Note: the table has 48 rows once ANDERA-HOME-2026 and IIA-GAM-2026 are included; "45 sources" in the Summary excludes those two opened-but-unused items and the AMEX-JOB-2026 row without a URL. Not all rows were opened.
+Two opened items (ANDERA-HOME-2026, IIA-GAM-2026) are context only and support no entry; BDO-AI-2025 and GT-EAS-2026 are used only for routing. Dates marked "per landscape" were taken from `landscape-advisory.md`.
 
 ---
 
@@ -928,4 +928,4 @@ Note: the table has 48 rows once ANDERA-HOME-2026 and IIA-GAM-2026 are included;
   - A podcast blurb seen in search said Optro acquired Midship; not confirmed from a primary source, not used.
 - **Independence rules** for internal-audit outsourcing and AI-governance advisory to audit clients were not checked against AICPA, SEC, PCAOB or IESBA text in this run.
 - **Blocked or unavailable:** PwC page via direct curl (403; read via mirror); COSO website had no GenAI page on the home page, so the PDF copy hosted by a Spanish internal-auditors site was used; GT-EAS-2026, BDO-AI-2025 and KPMG-GAM-2026 dates are partly from the landscape or page metadata and were not re-verified in full.
-- **Searches used:** about 14 web searches across the run. Several search summaries contained claims that are not repeated here (for example, third-party listicle figures and AI-generated roundup pages).
+- **Searches used:** 17 web searches across the run. Several search summaries contained claims that are not repeated here (for example, third-party listicle figures and AI-generated roundup pages).

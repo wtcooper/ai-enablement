@@ -197,7 +197,6 @@ never talk to the user: play their results back as drafts and confirm with the u
 | Brief | When | One subagent per |
 |---|---|---|
 | `references/briefs/evaluate-tool.md` | Step 6, when a tool needs a desk evaluation and you have web access | tool + tier |
-| `../transformation-advisor/references/briefs/analyze-document.md` | Step 1, when the user provides existing policies or procedures | document |
 
 ## Reference map
 

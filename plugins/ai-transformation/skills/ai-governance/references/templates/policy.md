@@ -23,6 +23,18 @@ parent: null
 
 # AI policy: <firm, practice or team>
 
+## Contents
+
+1. [Where we start](#1-where-we-start-step-1)
+2. [Acceptable use](#2-acceptable-use-step-2)
+3. [Data classes and tool tiers](#3-data-classes-and-tool-tiers-step-2)
+4. [Risk tiers and human review](#4-risk-tiers-and-human-review-step-3)
+5. [Records of AI use](#5-records-of-ai-use-step-4)
+6. [Profession-specific duties and client consent](#6-profession-specific-duties-and-client-consent-step-5)
+7. [Vendor and tool evaluation](#7-vendor-and-tool-evaluation-step-6)
+8. [Requests, review and maintenance](#8-requests-review-and-maintenance-step-7)
+9. [Approvals and change log](#approvals-and-change-log)
+
 <!-- Written by the ai-governance skill, one section per step. Schema: references/schemas/policy.md.
      Keep client-confidential and personal data out of this file. Describe tools, data classes and roles.
      Mark advisor defaults as "default, adjust" so approvers can tell them from sourced requirements. -->

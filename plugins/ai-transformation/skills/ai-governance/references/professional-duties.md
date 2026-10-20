@@ -155,7 +155,7 @@ lines to `overlay/guardrails.md`. Set `step_completed: 5`, `next_step: 6`.
 
 ## 9. Sources
 
-Keys marked † are defined in the archetype `sources.md` or `guardrails.md` named in §5.
+Keys marked † are also cited in the archetype `guardrails.md` files named in §5, where the full context sits.
 
 - **ABA-OP512-2024** †: American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools* (professional body, 2024-07-29). https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
 - **ABA-512-2024**: Ezel, *ABA Formal Opinion 512, Generative AI Tools (summary)* (secondary summary of a professional-body opinion, 2024-07-29). https://ezel.ai/ethics-opinions/aba/512-generative-ai-tools
