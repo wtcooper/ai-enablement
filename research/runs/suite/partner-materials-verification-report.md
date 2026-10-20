@@ -79,7 +79,9 @@ monthly practice leadership review, §8 leadership summary).
   build or run.
 - **Formats:** these files contain no YAML schema examples. The only ids are `ct-07` and
   `assurance-controls-testing-07`, both existing ids; no new vocabulary ids.
-- **Structure:** `scripts/validate.py` reports no ERROR. `leading-partners.md` is 299 lines (limit 300), and its
+- **Structure:** `scripts/validate.py` reports no ERROR for these files. At the final run it reported three errors
+  in sibling skills that are still being written (`ai-portfolio` and `ai-solution-delivery`). Each links to
+  `ai-enablement/SKILL.md`, which does not exist yet. `leading-partners.md` is 299 lines (limit 300), and its
   contents list holds. Every backtick path resolves, including the four archetype `objections.md` files, each
   with a "How to respond well" section.
 
