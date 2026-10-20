@@ -48,7 +48,8 @@ right answer at all, before anyone compares tools.
 2. **Ask for the last real instance**, start to finish, then for last month's actual count and the rework share
    from a record. Typical descriptions hide the exceptions that break solutions.
 3. **Restate the goal as the owner's metric** and ask the owner to confirm it (§5, move 1). If the owner is not
-   available to check outputs, say so now; it is the most cited root cause in practitioner interviews.
+   available to check outputs, say so now: leadership-driven causes, including leaders not available to check
+   intent, were the most cited in RAND's practitioner interviews [RAND-2024].
 4. **Screen the stakes.** Ask which errors would be costly or irreversible and who would notice them.
 5. **Run the fit checks** (§3): could a rule or checklist do it; do the agent-fit signals hold; would a competent
    graduate succeed with the same input and context.
@@ -132,8 +133,8 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions are in SKILL.
 
 ## 7. Worked example: evidence matching in an audit practice
 
-Illustrative, continuing the advisor's audit practice. The portfolio item `ct-evidence-matching` has passed
-its discover gate and opens `solutions/ct-evidence-matching/`.
+Illustrative, continuing the advisor's audit practice. The portfolio item `ct-evidence-matching` is in the
+discover stage, and its owner opens `solutions/ct-evidence-matching/`.
 
 - **Started from:** portfolio item `ct-evidence-matching` (from the advisor option of the same id:
   `document-to-decision`, `augment`, `workflow-automation`, grade-B evidence `assurance-controls-testing-07`).
