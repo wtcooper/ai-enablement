@@ -143,7 +143,7 @@ Four checks for any reduction (advisor synthesis from the sources cited):
   landed than staff report [PROSCI-2026].
 - **Lower the stigma.** Leaders use AI visibly; ask "who uses AI and does not say so?" [ANTHROPIC-INTERVIEWER-2025].
 - **Show early wins** that people can see and relate to the change [KOTTER-1995].
-- **Partner-led firms.** When partners or senior experts must back the change, use the stakeholder map, partner briefing and objection handling in [leading-partners.md](leading-partners.md).
+- **Partner-led firms.** When partners or senior experts must back the change, use the stakeholder map, partner briefing, objection handling and leader expectations in [leading-partners.md](leading-partners.md).
 
 ## 8. Responding to fear
 

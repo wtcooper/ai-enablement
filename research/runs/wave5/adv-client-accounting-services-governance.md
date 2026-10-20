@@ -28,7 +28,7 @@ The AICPA's own ethics article says there is no federal law or professional stan
 1. Governance lags use. 98% of firms use AI but 21% have an AI policy or strategy (KARBON-AISTATE-2026). Three in five accountants say clients ask for proof of AI data protection always or frequently, while 33% proactively explain how AI supports their work (INTUIT-ACCTTECH-2026).
 2. The practical control pattern is the same across COSO, the AICPA and trade guidance: an agent inventory with a named owner, human sign-off scaled to risk, replayable evidence, third-party assurance mapping and monitoring with an exit threshold (COSO-GENAI-2026, CPAPA-AGENTSCLOSE-2026). It rests on guidance and opinion, not on measured results.
 
-**Counts.** 19 candidate use cases (1 grade A, 1 grade B, 5 grade C, 12 grade D). 37 sources (36 opened, 1 search-only).
+**Counts.** 19 candidate use cases (1 grade A, 1 grade B, 6 grade C, 11 grade D). 36 sources (35 opened, 1 search-only).
 
 ---
 
@@ -356,6 +356,8 @@ The AICPA's own ethics article says there is no federal law or professional stan
     - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: COSO, type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02", access: full, locator: "p. 14 and p. 24, illustrative metrics" }
     - { ref: DUALENTRY-BENCH-2026, title: "Accounting AI Benchmark 2026 (leaderboard page, as read 2026-10-20)", publisher: DualEntry, type: vendor, url: "https://dualentry.com/accounting-ai-benchmark", date: "2026-02-20", access: full, locator: "task-area and hardest-areas paragraphs" }
     - { ref: CFOCOM-DUALENTRY-2026, title: "The best AI model still fails 1 in 5 accounting tasks", publisher: "CFO.com (guest post by DualEntry's CFO)", type: press, url: "https://www.cfo.com/news/the-best-ai-model-still-fails-1-in-5-accounting-tasks-Claude-Opus-OpenAI-GPT/818100/", date: "2026-04-22", access: full, locator: "final paragraphs" }
+    - { ref: DUALENTRY-BLOG-2026, title: "AI Still Fails One-Third of Real Accounting Tasks", publisher: DualEntry, type: vendor, url: "https://www.dualentry.com/blog/ai-still-fails-one-third-of-real-accounting-tasks", date: "2026-03-03", access: full, locator: "opening paragraphs (top score 66.0%)" }
+    - { ref: PENROSE-ACCTBENCH-2025, title: "Can LLMs Do Accounting? AccountingBench", publisher: Penrose, type: vendor, url: "https://accounting.penrose.com/", date: "2025-08-05", access: full, locator: "Results" }
   last_reviewed: 2026-10-20
   notes: >-
     Idea (grade D), discussed by COSO, a trade contributor and a benchmark vendor. The DualEntry
@@ -741,6 +743,7 @@ The AICPA's own ethics article says there is no federal law or professional stan
     - { ref: STANFORD-INSIGHTS-2025, title: "AI Is Reshaping Accounting Jobs by Doing the Boring Stuff", publisher: "Stanford Graduate School of Business", type: academic, url: "https://www.gsb.stanford.edu/insights/ai-reshaping-accounting-jobs-doing-boring-stuff", date: "2025-06-26", access: full, locator: "experience-level paragraph" }
     - { ref: JOFA-ETHICS-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "human in the loop section" }
     - { ref: KINGSLEY-FRCICAEW-2025, title: "Tech-driven, ethically bound: new FRC and ICAEW guidance on AI use in the accountancy sector", publisher: "Kingsley Napley (first published in Business and Accountancy Daily, 2025-07-22)", type: firm, url: "https://www.kingsleynapley.co.uk/insights/blogs/regulatory-blog/tech-driven-ethically-bound-new-frc-and-icaew-guidance-on-ai-use-in-the-accountancy-sector", date: "2025-07-24", access: full, locator: "closing paragraphs on junior staff" }
+    - { ref: NBER-GENAIWORK-2023, title: "Generative AI at Work (NBER working paper 31161; QJE 140(2), 2025)", publisher: NBER, type: academic, url: "https://www.nber.org/papers/w31161", date: "2023", access: full, locator: "abstract (34% gain for novices, minimal for experienced workers)" }
   last_reviewed: 2026-10-20
   notes: >-
     Idea (grade D) as a control. The underlying behavioural finding is measured, but no firm reports
@@ -1041,7 +1044,7 @@ The AICPA's own ethics article says there is no federal law or professional stan
 
 ### Objections and concerns practitioners raise
 
-- Data security and confidentiality: the top concern for AI use, including for clients (INTUIT-ACCTTECH-2026; STANFORD-INSIGHTS-2025 reports 43% concerned about data security).
+- Data security and confidentiality: 84% of Intuit respondents agree strong AI data security practices are becoming a competitive advantage (INTUIT-ACCTTECH-2026), and 43% of the Choi and Xie survey respondents were concerned about data security (STANFORD-INSIGHTS-2025).
 - AI-generated errors: 62% of surveyed accountants were concerned (STANFORD-INSIGHTS-2025).
 - Clients may reject AI on privacy or quality grounds, and consent that is conditioned on accepting AI may not be voluntary for 7216 purposes (JOFA-DISCLOSE-2025; CPAPA-SETTLE-2026, opinion).
 - Unreviewed output as a professional liability, with the Deloitte Australia fee refund over fabricated citations cited in the IRS alert and trade press (IRS-OPR-2026; CPAPA-AGENTSCLOSE-2026).
@@ -1112,7 +1115,7 @@ The AICPA's own ethics article says there is no federal law or professional stan
 | KINGSLEY-FRCICAEW-2025 | Tech-driven, ethically bound: new FRC and ICAEW guidance on AI | Kingsley Napley | firm | https://www.kingsleynapley.co.uk/insights/blogs/regulatory-blog/tech-driven-ethically-bound-new-frc-and-icaew-guidance-on-ai-use-in-the-accountancy-sector | 2025-07-24 | full |
 | ZUELLIG-AIPOLICY-2026 | AI Policy for Service Providers/Consultants | Zuellig Pharma | firm | https://edge.sitecorecloud.io/zuelligphar3c90-zpcms-prod-4532/media/Project/Corporate/Policy/Zuellig-Pharma--AI-Policy-for-Service-Providers-Consultants---25022026.pdf | 2026-02 | full |
 
-**Counts by type (37 sources).** Academic 5; regulator 2; standard-setter 1; professional-body 10 (including ABA 512, search-only); firm 5; vendor 3; press 6; survey 3; conference 1; podcast 0; community 0; job-posting 0. Of the 37, 36 were opened and read, and 1 (ABA-FO512-2024) is search-only. DUALENTRY-BLOG-2026 is listed but not cited in a use case; it supports the note on score versions in use case 06. Several sources are vendor-sponsored or contributor opinion pieces, and the table above says which.
+**Counts by type (36 sources).** Academic 5; regulator 2; standard-setter 1; professional-body 11 (including ABA 512, search-only); firm 5; vendor 3; press 5; survey 3; conference 1; podcast 0; community 0; job-posting 0. Of the 36, 35 were opened and read, and 1 (ABA-FO512-2024) is search-only. Several sources are vendor-sponsored or contributor opinion pieces, and the table above says which.
 
 ---
 

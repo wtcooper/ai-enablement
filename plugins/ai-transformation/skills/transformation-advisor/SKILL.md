@@ -173,18 +173,20 @@ value along the value tree. **Exit:** scored, categorized, sequenced options.
 
 ### 6 · Make the case
 
-**Read now:** `references/method/business-case.md` and `references/method/people-and-change.md`; when
-partners or senior experts must back the case, also `references/method/leading-partners.md`.
+**Read now:** `references/method/business-case.md` and `references/method/people-and-change.md`.
 
 For the top three to five options: value as ranges with assumptions and provenance, the cost stack,
 risks and guardrails (the archetype's `guardrails.md`), human checkpoints, how the result will be proved,
 and **role evolution** with the redeploy-or-reduce choice. Optionally use the `review-opportunities`
 brief for an independent check. Use the archetype's `objections.md` and `workforce.md` when the user
-pushes back or worries about roles. **Exit:** one page per top option.
+pushes back or worries about roles. When partners or senior experts must back the case, also read
+`references/method/leading-partners.md` and add a stakeholder map by role and one partner briefing per
+audience. **Exit:** one page per top option (plus the map and briefings when partners must back it).
 
 ### 7 · Plan
 
-**Read now:** `references/method/plan-and-control.md`.
+**Read now:** `references/method/plan-and-control.md`. When partners must adopt the change, set their
+written expectations (§6) and the learning-time credit rule (§2) from `references/method/leading-partners.md`.
 
 - Who will own each of these, and do they have the authority it needs?
 - What can you start right now without anyone else's approval?
