@@ -1,0 +1,42 @@
+# Schema: measures/v1 (see the ai-enablement skill's references/schemas/measures.md).
+# Groups only: never per-person usage, scores or rankings. Quote every free-text value.
+# Targets are ranges with a dependency ("after"), never a date. Readings' as_of dates are records.
+schema: measures/v1
+program: enablement/program.md
+population:
+  description: ""
+  size: 0
+  source: ""
+segments: []
+#  - id: ""
+#    name: ""
+#    groups: [""]
+#    size_low: 0
+#    size_high: 0
+#    depth: not-using            # not-using | one-off | repeatable | builder
+#    main_barrier: access        # access | use-case | time | permission | security | belief | fear | none
+#    manager_behaviour: unknown  # none | encourages | requires | unknown
+#    first_move: ""
+#    basis: ""
+measures: []
+#  - id: ""
+#    name: ""
+#    layer: activity             # reach | activity | depth | embedded | outcome | sentiment | side-effect
+#    definition: ""
+#    numerator: ""
+#    denominator: ""             # everyone in scope, users or not
+#    window: ""
+#    split_by: []
+#    data_source: ""
+#    method: telemetry           # telemetry | survey | sampled-work | records | comparison
+#    provenance: self-reported   # self-reported | vendor-published | independent
+#    measured: true
+#    known_bias: ""
+#    discount: null              # { low: 0.0, high: 0.0, basis: "" } for self-reported time saved
+#    lever: null                 # capacity | speed | quality | growth | cost | risk | experience
+#    links: { workflows: [], opportunity: null, benefit: null }
+#    baseline: null              # { value: null, low: null, high: null, unit: "", as_of: YYYY-MM-DD, basis: "" }
+#    target: null                # { low: 0, high: 0, unit: "", after: "" }
+#    readings: []                # - { as_of: YYYY-MM-DD, value: null, low: null, high: null, unit: "", n: 0, note: "" }
+#    owner: ""
+updated: YYYY-MM-DD

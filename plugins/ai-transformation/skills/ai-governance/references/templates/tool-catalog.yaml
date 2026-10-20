@@ -1,0 +1,35 @@
+# Approved AI tools, mapped to runtime classes. Every skill in the suite reads this file.
+# Schema: references/schemas/tool-catalog.md (tool-catalog/v1). Written by the ai-governance skill.
+# One entry per tool + tier + contract. Keep contract prices and client data out of this file.
+# Runtime class ids: personal-assistant, shared-team-skills, workflow-automation, background-agent, managed-agent-runtime
+schema: tool-catalog/v1
+updated: "YYYY-MM-DD"
+owner: "<role>"
+request_path:
+  how: "<where requests go and who triages them>"
+  response_commitment: "<the response time the owner commits to>"
+  fast_lane: "<which requests are approved from the catalog's conditions>"
+tools:
+  - name: "<Enterprise chat assistant, business tier>"
+    runtime_class: personal-assistant
+    approved_for: "<Plain-language summary of permitted use>"
+    owner: "<role>"
+    id: "<chat-commercial>"
+    status: under-review
+    vendor: "<vendor>"
+    tool_tier: commercial
+    contract: "<contract or terms reference>"
+    data_classes: [public, firm-internal]
+    max_risk_tier: tier-2
+    user_groups: ["<all staff after training>"]
+    embedded_in: null
+    underlying_model: "<model and version as the vendor states it>"
+    processing_regions: ["<region>"]
+    retention: "<retention setting; who can retrieve history>"
+    conditions: ["<setting or rule the approval depends on>"]
+    flags: { tax_7216: false, independence: false, client_consent: false, eu_high_risk: false }
+    vendor_file: "vendors/<vendor-product>.md"
+    reapproval_triggers: [model-change, sub-processor-change, terms-change, new-data-class, new-use, incident]
+    exit_plan: "<how we export and leave>"
+    last_reviewed: "YYYY-MM-DD"
+not_approved_note: "Anything not listed needs a request through the request path before use with firm or client data."
