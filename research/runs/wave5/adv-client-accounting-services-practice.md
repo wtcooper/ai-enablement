@@ -4,7 +4,7 @@ Run date: 2026-10-20. Wave 5. Archetype `advisory`, module `client-accounting-se
 
 ## 1. Summary
 
-**Evidence base.** I opened 63 distinct sources across eight source types (press, vendor, job-posting, academic, professional-body, survey, firm, regulator) and saw 2 more only in search results. Most named deployments are vendor-published case studies from small and solo firms, vendor product launches, and trade-press interviews with Top 100 firm leaders. No source gave production override rates, error rates found in review, or parallel-run results from a CAS firm.
+**Evidence base.** I opened 62 distinct sources across eight source types (press, vendor, job-posting, academic, professional-body, survey, firm, regulator) and saw 2 more only in search results. Most named deployments are vendor-published case studies from small and solo firms, vendor product launches, and trade-press interviews with Top 100 firm leaders. No source gave production override rates, error rates found in review, or parallel-run results from a CAS firm.
 
 **Use cases by evidence grade (17).** A: 1. B: 10. C: 5. D: 1.
 
@@ -769,6 +769,12 @@ Run date: 2026-10-20. Wave 5. Archetype `advisory`, module `client-accounting-se
     measures: hours per bookkeeping client per month reported by the owner; priced at $200-$400 a month against $500-$1,000 for advisory
     provenance: vendor-published
     source_ref: DIGITS-TFMA-2026
+  - lever: capacity
+    description: Solo advisory firm's own estimate of bookkeeping workload reduction after adopting an AI ledger
+    figure: approximately 75%
+    measures: reduction in bookkeeping workload, stated as approximate by the vendor case study; bookkeeping was roughly 70% of the owner's workload before; the owner had earlier tried building custom AI agents but found them costly to keep reliable
+    provenance: vendor-published
+    source_ref: DIGITS-ADEPT-2026
   - lever: growth
     description: Cleanup turned into a recurring service at a Top 100 CAS practice
     figure: one client
@@ -810,6 +816,22 @@ Run date: 2026-10-20. Wave 5. Archetype `advisory`, module `client-accounting-se
     date: '2026-07-08'
     access: full
     locator: migration of 27 clients in about 40 hours
+  - ref: DIGITS-ADEPT-2026
+    title: 'How Adept: Accounting Principles & Solutions Reduced Bookkeeping by 75% with Digits'
+    publisher: Digits (case study)
+    type: vendor
+    url: https://digits.com/case-studies/adept-accounting/
+    date: '2026-03-23'
+    access: full
+    locator: section 'A 75% Reduction in Bookkeeping Time' and the paragraph on bookkeeping as 70% of workload and earlier custom agents
+  - ref: DIGITS-MANA-2025
+    title: 'Mana Accounting & Advisory: Saving Hours with AI-Powered Accounting'
+    publisher: Digits (case study)
+    type: vendor
+    url: https://digits.com/case-studies/mana-accounting-advisory-saving-hours-with-ai-powered-accounting/
+    date: '2025-10-10'
+    access: full
+    locator: paragraphs on cleanups that took hours now taking minutes and frictionless client onboarding (qualitative; no figures)
   - ref: UKU-BOTKEEPER-2026
     title: 'Botkeeper Alternatives: 7 Best Options for Accounting Firms'
     publisher: Uku
@@ -819,7 +841,7 @@ Run date: 2026-10-20. Wave 5. Archetype `advisory`, module `client-accounting-se
     access: full
     locator: section 'What Happened to Botkeeper?' (shutdown 9 Feb 2026; Xendoo announcement 3 Mar 2026)
   last_reviewed: '2026-10-20'
-  notes: 'Firm types: TFMA LLC and Elev8 are small firms; the FloQast firm is an unnamed Top 100 firm. The pricing figures describe a small firm''s own prices; firm pricing in general is routed to professional-services. Independence: bookkeeping and preparing accounting records for an audit client is barred under SEC Rule 2-01(c)(4)(i) when the audit client is an SEC registrant (confirmed in eCFR, SEC-REG210-2026). Treatment for private audit clients under the AICPA and IESBA codes was not checked in this run, so confirm before a firm offers this service to its own attest clients.'
+  notes: 'Firm types: TFMA LLC, Elev8, Adept (solo) and Mana Accounting & Advisory (startup and law-firm clients) are small firms; the FloQast firm is an unnamed Top 100 firm. The pricing figures describe a small firm''s own prices; firm pricing in general is routed to professional-services. Independence: bookkeeping and preparing accounting records for an audit client is barred under SEC Rule 2-01(c)(4)(i) when the audit client is an SEC registrant (confirmed in eCFR, SEC-REG210-2026). Treatment for private audit clients under the AICPA and IESBA codes was not checked in this run, so confirm before a firm offers this service to its own attest clients.'
 - id: advisory-client-accounting-services-11
   title: Payroll preparation with AI-guided workflows, anomaly flagging and multi-client oversight
   archetype: advisory
