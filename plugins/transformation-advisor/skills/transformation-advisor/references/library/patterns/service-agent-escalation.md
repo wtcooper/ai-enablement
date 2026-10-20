@@ -57,7 +57,7 @@ Expand by intent, not by channel *(guidance)*.
 - **The AI's role.** Intent detection with scripted answers ("classified into a predefined intent... deterministic dialogue" [ATRS-MOJ-2026]) or generation grounded on content. Intent-first designs trade flexibility for predictability.
 - **Escalation triggers named in sources:** the bot does not understand, or the customer asks [ATRS-DVLA-CHATBOT-2025]; repeated failure to understand and high-risk actions such as large refunds [OPENAI-AGENTS-2025]; detected capability limits and customer frustration, plus human-initiated takeover [ARXIV-WANG-2026].
 - **Handoff quality.** The adviser receives the transcript (HMRC, DVLA) [ATRS-HMRC-2025; ATRS-DVLA-CHATBOT-2025]; the person should pick up where the bot left off [GARTNER-CSAT-2024].
-- **Monitoring and sampling.** HMRC monitors daily with dashboards and re-scores its test set [ATRS-HMRC-2025]; MoJ's supplier lists transcript review, live-call review and regression testing after each change [ATRS-MOJ-2026]. *(Guidance:)* sample conversations by outcome (resolved, escalated, abandoned) and by intent, with extra weight on conversations that ended without escalation.
+- **Monitoring and sampling.** HMRC monitors daily with dashboards and reports intent accuracy on a dated test set [ATRS-HMRC-2025]; MoJ's supplier lists transcript review, live-call review and regression testing after each change [ATRS-MOJ-2026]. *(Guidance:)* sample conversations by outcome (resolved, escalated, abandoned) and by intent, with extra weight on conversations that ended without escalation.
 - **Logging.** Store conversations for review [ATRS-HMRC-2025]. *(Guidance:)* log the answer, the content it used, the escalation trigger, who took over and the end outcome.
 
 ## 5. Prerequisites
@@ -124,7 +124,7 @@ Expand by intent, not by channel *(guidance)*.
 | "What triggers a handoff: failure count, request, risk, mood?" | Whether capability, frustration and high-risk-action triggers exist |
 | "What does the person see when they take over?" | Handoff quality: transcript, facts gathered, identity status |
 | "How do you define a resolved contact, and when do you count a repeat?" | Whether the metric is resolution, not containment |
-| "Which actions can the agent take, and which need approval?" | Tool risk; start read-only [OPENAI-AGENTS-2025] |
+| "Which actions can the agent take, and which need approval?" | Tool risk: rate each tool by read or write access, reversibility and financial impact [OPENAI-AGENTS-2025] |
 | "Who reads transcripts each week, and what do they change?" | Whether monitoring exists |
 
 ## 11. Sources

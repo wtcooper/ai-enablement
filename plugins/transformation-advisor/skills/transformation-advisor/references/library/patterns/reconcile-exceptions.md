@@ -141,7 +141,7 @@ figures.
 - `KOGNITOS-AP-2026` — Kognitos, *Why most agentic AP pilots stall at 70% touchless*, 2026-06-02. https://www.kognitos.com/blog/agentic-ap-pilot-stalled-70-percent-touchless/
 - `NASDAQ-BROADRIDGE-2019` — Broadridge via Nasdaq, *New AI and ML platform for reconciliation, matching and exception management*, 2019-12-03. https://www.nasdaq.com/press-release/new-artificial-intelligence-and-machine-learning-platform-for-reconciliation-matching
 - `NIST-AIRMF-2023` — NIST, *AI Risk Management Framework 1.0 (NIST AI 100-1)*, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
-- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc22.htm
+- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc21.htm
 - `PEETERS-ENTITYLLM-2024` — Peeters, Steiner, Bizer, *Entity Matching using Large Language Models*, 2024-10-18. https://arxiv.org/pdf/2310.11244
 - `ROBODEBT-RC-2023` — Royal Commission into the Robodebt Scheme, *Report: recommendations*, 2023-07-07. https://robodebt.royalcommission.gov.au/publications/report
 - `TRINTECH-AUTONATION-2026` — Trintech, *The reality of AI reconciliations: AutoNation* (webinar abstract), 2026-08-19. https://www.trintech.com/webinar/reality-of-ai-reconciliations-autonation/

@@ -47,7 +47,7 @@ was below 50% [UIPATH-CCA-2026].
 | `assist` | Summarizes or suggests a category for an item a person pastes in | Decides and routes | `personal-assistant` | A labelled sample of past items and a named taxonomy owner |
 | `augment` | Proposes team, summary, flags; may create a draft case | Confirms or overwrites each item (HMT, ICO, DWP designs) | `workflow-automation`, `shared-team-skills` | Override rate and recall on the urgent class measured per category |
 | `automate` | Routes on arrival; failed validation goes to a manual queue (ICO expects "upwards of 90%" of case creation) | Owns the exception queue; spot checks | `workflow-automation`, `background-agent` | Per-category error rate inside tolerance; permanent random audit sample in place *(guidance)* |
-| `delegate` | Triages, then investigates and closes across systems | Approves at checkpoints; audits | `managed-agent-runtime` | Only seen in security operations in the archetypes, with deterministic checks first and evidence-gated dismissal (§9) |
+| `delegate` | Triages, then investigates and closes across systems | Approves at checkpoints; audits | `managed-agent-runtime` | Only seen in security in the archetypes (`security-vulnerability-exposure-01`, with human triage before disclosure); `security-operations-01` stops at automate, closing only high-confidence false positives after deterministic checks (§9) |
 
 Move up per category, not for the whole inbox *(guidance)*.
 
@@ -100,7 +100,7 @@ Move up per category, not for the whole inbox *(guidance)*.
 | Organization | Industry | What changed | Outcome (provenance) | Grade | Source |
 |---|---|---|---|---|---|
 | DWP (telephony) | Public sector | Callers say why they call; the system signposts, helps log in or routes to an adviser; a person on request | Right-first-time routing +21%, deflection +9%, 97% speech recognition; baselines not stated (self-reported) | A | ATRS-DWPCONV-2025 |
-| Copenhagen Emergency Medical Services | Healthcare | Model listens to emergency calls and alerts dispatchers to suspected cardiac arrest | Randomized trial, 5,242 calls: recognition 93.1% with alerts vs 90.5% without, not significant (independent) | A | JAMANO-BLOMBERG-2021 |
+| Copenhagen Emergency Medical Services | Healthcare | Model listens to emergency calls and alerts dispatchers to suspected cardiac arrest | Randomized trial, 5,242 calls: recognition 93.1% with alerts vs 90.5% without, not significant (peer-reviewed; run by the service's own researchers) | A | JAMANO-BLOMBERG-2021 |
 | FCDO (correspondence) | Public sector | Classifies, summarizes and logs mailbox emails; does not write replies | Category accuracy 0.7333, macro F1 0.7467 on a test of the tool; a prompt classifier rose from about 0.34 to about 0.6 (self-reported; tool test, not a work outcome) | B | ATRS-FCDO-CORR-2025 |
 | FCDO (consular) | Public sector | Questions matched to approved templates before an enquiry is sent; identifiers only | Correct template for 76% to 81% of historic enquiries vs staff choices (self-reported; tool test) | B | ATRS-FCDO-CONSULAR-2024 |
 | DWP (letters) | Public sector | Flags potentially vulnerable people and labels letters into nine themes; caseworkers decide | About 25,000 documents a day; no accuracy published (self-reported) | B | ATRS-DWP-WHITEMAIL-2025 |

@@ -25,14 +25,14 @@ archetype; cite its modules for that work. No archetype covers IT services firms
 
 ## 2. Processes and key steps
 
-The process list is a working grouping under the "manage information technology" category of a cross-industry process framework
-[APQC-PCF-PAYOR-2019].
+The process list is a working grouping under the "manage information technology" category of APQC's process framework; the
+edition opened was the health-insurance payor one, which keeps the cross-industry category [APQC-PCF-PAYOR-2019].
 
 | Process | Key steps | Work types | Typical pain |
 |---|---|---|---|
 | Customer relationships and IT strategy | Understand demand; set roadmap; check service levels | expert-judgment, coordination-scheduling, data-reporting | Half of developers lose 10+ hours a week to non-coding work (vendor survey of 3,500) [ATLASSIAN-DEVEX-2025] |
 | Architecture and design | Evaluate options; record decisions; review against standards | expert-judgment, research-synthesis, document-production, software-systems | "Codebase cognitive debt": AI-written code adopted without the mental models to reason about it [TW-RADAR-2026] |
-| Build and change | Plan; code; test; review; integrate; migrate and upgrade | software-systems, review-assurance | Review becomes the bottleneck: review time +91% in high-adoption teams (vendor telemetry) [FAROS-2025]; upgrades take months or years [AWS-QTRANSFORM-2024] |
+| Build and change | Plan; code; test; review; integrate; migrate and upgrade | software-systems, review-assurance | Review becomes the bottleneck: review time +91% in high-adoption teams (vendor telemetry) [FAROS-2025]; Amazon estimates its Java upgrades would have taken over 4,500 developer-years by hand [AWS-QTRANSFORM-2024] |
 | Deploy and release | Package; approve change; deploy; verify; roll back | software-systems, coordination-scheduling | Delivery instability rises with AI adoption [DORA-2024; DORA-2025] |
 | Run and operate | Monitor; incidents and problems; capacity; configuration and licences | data-reporting, software-systems, transaction-processing | No non-security operations agent with published results found |
 | Service desk and user support | Triage; resolve; fulfil requests; escalate; confirm | client-interaction, transaction-processing | About 50,000 tickets a month at Oracle IT, peaking near 5,000 a day; its earlier rule-based bot struggled with context [ORACLE-AISD-2025] |
@@ -44,12 +44,12 @@ The process list is a working grouping under the "manage information technology"
 **Improve the step** (assist or augment)
 
 - **Coding assistants for individual developers** ([draft-review-loop](../patterns/draft-review-loop.md); assist; step). Mixed:
-  - ANZ Bank (financial services): the assistant group completed algorithmic tasks 42.36% faster than control; participants not
-    monitored, tasks not bank work. Self-reported. Grade A (task measurement, limited scope) [ANZ-COPILOT-2024].
+  - ANZ Bank (financial services): the assistant group completed algorithmic tasks 42.36% faster than control; times self-reported by
+    unmonitored participants, tasks not bank work. Grade B (a task exercise, not a work outcome) [ANZ-COPILOT-2024].
   - Google (technology): about 21% faster on an enterprise task for 96 engineers, with a wide confidence interval. Grade A
     [GOOGLE-RCT-2024]. A 2023 lab task was 55.8% faster [PENG-2023].
   - UK central government (public sector): telemetry showed 15.8% of suggested lines accepted; 56 minutes a day saved is a survey
-    estimate. Grade A for the telemetry; the time saving is survey-based [UK-GDS-AICA-2025].
+    estimate. Grade B: the measured figure is a usage measure, not a work outcome [UK-GDS-AICA-2025].
   - Counter-evidence: 16 experienced developers on 246 tasks in their own repositories took 19% longer with AI, while believing they
     were 20% faster (independent randomized trial) [METR-RCT-2025]. METR's follow-up gave "an unreliable signal" because many
     developers declined to work without AI [METR-UPLIFT-2026].
@@ -87,7 +87,7 @@ The process list is a working grouping under the "manage information technology"
 
 - **Redesign the delivery flow so local gains reach customers** (pattern `other`; process). DORA 2025 reports value stream management
   acting as a force multiplier and seven capabilities that amplify AI's effect (survey-based) [DORA-2025]. Adidas (retail): per a report
-  foreword, teams with loosely coupled architecture and fast feedback loops saw 20-30% productivity gains in commits, pull requests and
+  foreword, in a generative AI pilot, teams with loosely coupled architecture and fast feedback loops saw 20-30% productivity gains in commits, pull requests and
   delivery velocity, while teams tightly coupled to ERP systems saw "little or no AI benefits". Grade B [DORA-2025].
 - **Combine HR and IT planning** (Moderna; see the people-hr card) [UNLEASH-MODERNA-2025].
 
@@ -104,7 +104,7 @@ clean-up), `tax-data-technology-18` (C, agents calling tax engines under least-p
   throughput now improves but instability still rises, 90% use AI and 30% report little or no trust in AI-generated code (surveys)
   [DORA-2024; DORA-2025]. In vendor telemetry from 10,000+ developers, high-adoption teams merged 98% more pull requests, with review
   time +91% and bugs per developer +9%, and no significant company-level correlation [FAROS-2025].
-- **Share of code AI-authored:** 27.4% of merged code across close to 500 companies, with 3.9 hours a week saved (self-reported) and
+- **Share of code AI-authored:** 27.4% of code across close to 500 companies, with 3.9 hours a week saved (self-reported) and
   some companies speeding up as quality degrades (vendor-published) [DX-AIIMPACT-2026].
 - **Acceptance:** 15.8% of suggested lines accepted [UK-GDS-AICA-2025].
 - **Service desk:** deflection rate, share resolved by AI, ticket volume, resolution time, employee satisfaction, engineer
@@ -181,7 +181,7 @@ clean-up), `tax-data-technology-18` (C, agents calling tax engines under least-p
 - **MS-RCACOPILOT-2023**: Chen et al. (Microsoft), *Automatic Root Cause Analysis via Large Language Models for Cloud Incidents* (academic, arXiv 2305.15778, 2023-11-13). https://arxiv.org/pdf/2305.15778
 - **NIST-AIRMF-2023**: NIST, *AI Risk Management Framework 1.0* (standard-setter, 2023-01). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
 - **NIST-AI600-1-2024**: NIST, *AI RMF: Generative AI Profile* (standard-setter, 2024-07). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
-- **ORACLE-AISD-2025**: Oracle, *Transforming IT support: the generative AI-powered service desk* and customer page (vendor, 2025-10, inferred). https://www.oracle.com/customers/oracle-it/
+- **ORACLE-AISD-2025**: Oracle, *Transforming IT support: Introducing the generative AI-powered service desk* (vendor blog, 2025-10, inferred from image paths). https://blogs.oracle.com/ai-and-datascience/post/transforming-it-support-gen-aipowered-service-desk
 - **PENG-2023**: Peng et al., *The Impact of AI on Developer Productivity: Evidence from GitHub Copilot* (academic, arXiv 2302.06590, 2023-02-13). https://arxiv.org/pdf/2302.06590
 - **REGISTER-REPLIT-2025**: The Register, *Vibe coding service Replit deleted production database* (press, 2025-07-21). https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/
 - **STACKOVERFLOW-2025**: Stack Overflow, *2025 Developer Survey, AI section* (survey, 2025). https://survey.stackoverflow.co/2025/ai

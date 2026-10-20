@@ -38,7 +38,7 @@ The process list is a working grouping, not a named framework's categories.
 | Exceptions and escalations | Detect breaks; investigate; approve; resolve | expert-judgment, transaction-processing | Pricing exceptions stay with staff (Danfoss) [GOOGLE-DANFOSS-2026] |
 | Quality assurance and rework | Sample or check outputs; record findings; correct | review-assurance | Equality checks need larger samples than pilots give [HOMEOFFICE-ASYLUM-2025] |
 | Performance monitoring and reporting | Track cycle time, backlog, quality, cost; trigger action | data-reporting | Value does not reach enterprise level: 37% report any EBIT impact [MCKINSEY-SOAI-2026] |
-| Improvement and partner coordination | Root-cause analysis; process change; outsourced work | coordination-scheduling, research-synthesis | Pilots do not reach production: 5% of custom enterprise tools did (preliminary, interview-based) [MIT-NANDA-2025] |
+| Improvement and partner coordination | Root-cause analysis; process change; outsourced work | coordination-scheduling, research-synthesis | Pilots do not reach production: 5% of evaluated enterprise-grade tools, custom or vendor-sold, did (preliminary, interview-based) [MIT-NANDA-2025] |
 
 ## 3. Where AI is changing the work
 
@@ -94,7 +94,8 @@ The process list is a working grouping, not a named framework's categories.
 **Reinvent the work**
 
 - **Replace outsourced back-office work with AI-run processes** (automate; model). MIT NANDA's preliminary, anonymized interviews
-  report its largest documented savings from ending outsourced back-office spend ($2-10 million a year). Grade C [MIT-NANDA-2025].
+  report that some of the most dramatic savings came from back-office automation, including ending outsourced (BPO) spend ($2-10
+  million a year). Grade C [MIT-NANDA-2025].
 - **Managed services delivered by agents with human accountability:** `security-operations-22` (B).
 
 **In the archetypes**: `professional-services-work-production-06` (A, drafting assistant in a randomized trial with blinded scoring),
@@ -176,7 +177,7 @@ alerts), `security-operations-22` (B).
 - **GOOGLE-DANFOSS-2026**: Google Cloud, *Danfoss: Reimagining order management at scale* (vendor customer story, 2026-02, earliest archived copy). https://cloud.google.com/customers/danfoss
 - **HMRC-COPILOT-2026**: HM Revenue and Customs, *Evaluating the Impact of Microsoft Copilot in HMRC* (government evaluation, 2026-07-09). https://www.gov.uk/government/publications/evaluation-report-phase-3-trial-of-microsoft-copilot/evaluating-the-impact-of-microsoft-copilot-in-hmrc
 - **HOMEOFFICE-ASYLUM-2025**: UK Home Office, *Evaluation of AI trials in the asylum decision making process* (government evaluation, 2025-04-29). https://www.gov.uk/government/publications/evaluation-of-ai-trials-in-the-asylum-decision-making-process/evaluation-of-ai-trials-in-the-asylum-decision-making-process
-- **IAI-CONSULT-DWP-2025**: Incubator for AI (UK government), *Consult Evaluation: DWP's Pathways to Work consultation* (government evaluation, 2025-08-27). https://assets.publishing.service.gov.uk/media/68f63fe01c9076042263f0bd/evaluation-report.pdf
+- **IAI-CONSULT-DWP-2025**: Incubator for AI (UK government), *Consult Evaluation: DWP's Pathways to Work consultation* (government evaluation, 2025-10, from the publication asset date). https://assets.publishing.service.gov.uk/media/68f63fe01c9076042263f0bd/evaluation-report.pdf
 - **KP-AISCRIBE-2025**: Kaiser Permanente Division of Research, *AI-assisted notetaking gains steady support from Kaiser Permanente physicians* (firm, 2025-04-01). https://divisionofresearch.kaiserpermanente.org/ai-assisted-notetaking-gains-steady-support-from-kaiser-permanente-physicians/
 - **MCKINSEY-SOAI-2026**: McKinsey, *The state of AI in 2026: On the road to ROI* (survey, n=1,719, 2026-08-25). https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 - **MIT-NANDA-2025**: MIT Project NANDA, *The GenAI Divide: State of AI in Business 2025* (preliminary, interview-based, 2025-07). https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf

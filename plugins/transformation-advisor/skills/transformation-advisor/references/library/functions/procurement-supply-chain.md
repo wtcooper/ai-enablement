@@ -28,7 +28,7 @@ appear in the professional-services archetype (outside-counsel guidelines, propo
 
 | Process | Key steps | Work types | Typical pain |
 |---|---|---|---|
-| Plan (demand, supply, inventory) | Determine requirements; gather resource information; balance requirements and resources; act on gaps [ASCM-2026] | data-reporting, coordination-scheduling, expert-judgment | No measured AI case opened; one search-only proof of concept (see §3) |
+| Plan (demand, supply, inventory) | Determine requirements; gather resource information; balance requirements and resources; act on gaps [ASCM-2026] | data-reporting, coordination-scheduling, expert-judgment | No measured in-house AI case found; one consultancy proof of concept (see §3) |
 | Source (procure) | Spend analysis; sourcing events; negotiation; contracting; ordering and receipt | research-synthesis, expert-judgment, document-production, transaction-processing | Buyers cannot negotiate with every supplier: around 20% of Walmart's 100,000-plus suppliers had agreements with terms that were often not negotiated [HBR-2022] |
 | Supplier management and risk | Onboarding; performance; risk monitoring; alternative sources | review-assurance, research-synthesis, coordination-scheduling | Siloed ways of working are the top barrier to value (57%), then competing priorities (46%) (survey of 250+ CPOs) [DELOITTE-2025] |
 | Contracting in the public sector | Document validation; regulatory review; award | review-assurance, document-production | Long acquisition lead times by acquisition type [NPS-2026] |
@@ -53,7 +53,7 @@ appear in the professional-services archetype (outside-counsel guidelines, propo
 - **Negotiate with tail suppliers who were not negotiated before**
   ([end-to-end-case-agent](../patterns/end-to-end-case-agent.md), bounded; automate; process). Walmart (retail) with a negotiation-bot
   vendor: a chatbot negotiates price, payment terms and other items for smaller contracts with equipment suppliers. The vendor's
-  January 2023 release reported 68% of negotiations closed and 3% average savings; Bloomberg reported nearly three in four suppliers
+  January 2023 release reported deals closed with 68% of suppliers approached and 3% average savings; Bloomberg reported nearly three in four suppliers
   preferred the bot. Vendor-published, reported second-hand. Grade B [PYMNTS-2023; HBR-2022].
 - **Optimize truck routing and loading; link network planning to daily execution**
   ([monitor-diagnose-act](../patterns/monitor-diagnose-act.md); automate; process). Walmart (retail logistics): in FY23, 108,000 routes
@@ -67,7 +67,8 @@ appear in the professional-services archetype (outside-counsel guidelines, propo
   process). Surveyed CPOs rate active alternative sources (74%), supply-chain visibility (64%) and supplier information sharing (61%)
   as effective risk strategies; no measured AI deployment found. Grade C [DELOITTE-2025].
 - **Demand forecasting** ([monitor-diagnose-act](../patterns/monitor-diagnose-act.md); automate; process). A consultancy proof of
-  concept at a grocery retailer (about 150 stores, 500 products) reports 33% lower forecast error. Grade C [SUPCHAINS-2025, search-only].
+  concept at an unnamed grocery retailer (about 150 stores, 500 products) reports 33% lower forecast error than the retailer's
+  current software (machine learning, not generative AI; consultancy-published). Grade C [SUPCHAINS-2025].
 
 **Delegate the outcome**
 
@@ -134,8 +135,8 @@ gated on weekly active use), `professional-services-pursuit-proposals-20` (C), `
 - **Buyers move to larger contracts** while the bot handles the tail (Bloomberg, via PYMNTS) [PYMNTS-2023].
 - **Roles are redesigned by task:** Gartner recommends separating "innately human" tasks from "AI-native" ones, aligning gains to
   financial outcomes and updating productivity measures [GARTNER-2026].
-- **People stay in the loop:** Deloitte's survey finds combined technology and talent competencies correlate with better enterprise
-  performance (correlation, not causation) [DELOITTE-2025].
+- **Technology and talent together:** a Deloitte principal says organizations that prioritize both technology modernization and
+  talent investment are better able to thrive (a statement in the survey release, not a reported measure) [DELOITTE-2025].
 
 ## 8. Sources
 
@@ -150,7 +151,7 @@ gated on weekly active use), `professional-services-pursuit-proposals-20` (C), `
 - **INFORMS-2023**: INFORMS, *Walmart Awarded the 2023 INFORMS Edelman Award* (professional body, 2023-04). https://www.informs.org/News-Room/INFORMS-Releases/Awards-Releases/Operations-Research-Enhances-Retail-Truck-Routing-and-Load-Planning-Walmart-Awarded-the-2023-INFORMS-Edelman-Award
 - **INFORMS-2024**: Mehrotra et al., *Optimizing Walmart's Supply Chain from Strategy to Execution*, INFORMS Journal on Applied Analytics 54(1) (academic, 2024-01). https://courses.ie.bilkent.edu.tr/ie479/wp-content/uploads/sites/16/2024/11/Optimizing-Walmarts-Supply-Chain-from-Strategy-to-Execution.pdf
 - **MCKINSEY-SOAI-2026**: McKinsey, *The state of AI in 2026: On the road to ROI* (survey, n=1,719, 2026-08-25). https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
-- **NPS-2026**: Naval Postgraduate School, *Augmented Acquisition: Operationalizing Human-in-the-Loop AI to Accelerate Warfighting Capabilities* (academic, 2026-04-30). https://dair.nps.edu/bitstream/123456789/5528/1/SYM-AM-26-091.pdf
+- **NPS-2026**: Eudia authors, *Augmented Acquisition: Operationalizing Human-in-the-Loop AI to Accelerate Warfighting Capabilities*, prepared for the Naval Postgraduate School Acquisition Research Symposium (vendor-authored paper, 2026-04-30). https://dair.nps.edu/bitstream/123456789/5528/1/SYM-AM-26-091.pdf
 - **PYMNTS-2023**: PYMNTS, *Walmart Reportedly Finds 75% of Vendors Prefer Negotiating With Chatbot* (press, 2023-04-26). https://www.pymnts.com/news/artificial-intelligence/2023/walmart-finds-75-percent-vendors-prefer-negotiating-with-chatbot/
 - **QIAN-2025**: Qian et al., *Humans, LLMs and Bayesian agents in multi-player bargaining* (academic, arXiv 2509.09071, 2025-09). https://arxiv.org/abs/2509.09071
-- **SUPCHAINS-2025**: N. Vandeput, *Retail demand forecasting: reducing the error by 33%* (consultancy, 2025-06; search-only). https://nicolas-vandeput.medium.com/retail-demand-forecasting-reducing-the-error-by-33-3aeba728954f
+- **SUPCHAINS-2025**: N. Vandeput, *Retail demand forecasting: reducing the error by 33%* (consultancy, 2025-06-16). https://nicolas-vandeput.medium.com/retail-demand-forecasting-reducing-the-error-by-33-3aeba728954f

@@ -62,7 +62,7 @@ a shared inbox nobody reads"; "on-call spends the first hour gathering context";
 
 - **Data.** Telemetry with consistent labels; historical incidents with known root causes (Meta backtested against past investigations; Microsoft used a year of incidents labelled by experienced engineers) [META-RCA-2024; MSFT-RCACOPILOT-2024].
 - **Policy.** Written rules for which actions may run unattended, who can switch the system off, and what triggers fallback. Knight lacked supervisory procedures for incident response and written deployment procedures [SEC-KNIGHT-2013].
-- **Skills.** An owner of detection quality: Google SRE teams typically have "one or sometimes two" members on monitoring [GOOGLE-SREBOOK-2017].
+- **Skills.** An owner of detection quality: a Google SRE team of 10–12 typically has "one or sometimes two" members on monitoring [GOOGLE-SREBOOK-2017].
 - **Safety engineering** where physical or clinical consequences exist; setting BCOOLER's constraints took "significant time" with the systems provider [DEEPMIND-BCOOLER-2022].
 
 ## 6. Failure modes and controls
@@ -125,15 +125,15 @@ a shared inbox nobody reads"; "on-call spends the first hour gathering context";
 
 - `ADAMS-TREWS-2022` — Adams et al., *Prospective, multi-site study of patient outcomes after implementation of TREWS*, Nature Medicine, 2022-07-21. https://www.nature.com/articles/s41591-022-01894-0
 - `BSI-ISO42001-2026` — BSI, *ISO/IEC 42001: AI Management System* (description), retrieved 2026-10-20. https://www.bsigroup.com/en-GB/products-and-services/standards/iso-42001-ai-management-system/
-- `CLOUDOPSBENCH-2026` — *Cloud-OpsBench: a reproducible benchmark for agentic root cause analysis* (preprint), 2026-03. https://arxiv.org/abs/2603.00468
-- `DEEPMIND-BCOOLER-2022` — Luo et al., *Controlling Commercial Cooling Systems Using Reinforcement Learning*, 2022-12-15. https://arxiv.org/abs/2211.07357
+- `CLOUDOPSBENCH-2026` — *Cloud-OpsBench: a reproducible benchmark for agentic root cause analysis* (preprint), 2026-02-28. https://arxiv.org/abs/2603.00468
+- `DEEPMIND-BCOOLER-2022` — Luo et al., *Controlling Commercial Cooling Systems Using Reinforcement Learning*, 2022-11-11. https://arxiv.org/abs/2211.07357
 - `EC-2026` — European Commission, *AI Omnibus enters into force*, 2026-07-27. https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
 - `EU-AIACT-2024` — European Union, *Regulation (EU) 2024/1689 (AI Act)*, 2024-06-13. https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689
 - `FDA-CDS-2026` — US FDA, *Clinical Decision Support Software: guidance*, 2026-01. https://www.fda.gov/media/109618/download
 - `FINTECHFUTURES-DANSKE-2017` — FinTech Futures, *Danske Bank turns to Teradata for AI-powered fraud detection*, 2017-10-23. https://www.fintechfutures.com/ai-in-fintech/danske-bank-turns-to-teradata-for-ai-powered-fraud-detection
 - `FRB-SR117-2011` — Federal Reserve and OCC, *SR 11-7: Model Risk Management*, 2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
 - `GARTNER-AGENTIC-2025` — Gartner, *Over 40% of agentic AI projects will be canceled by end of 2027* (forecast), 2025-06-25. https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
-- `GODDARD-AB-2012` — Goddard, Roudsari, Wyatt, *Automation bias: a systematic review*, JAMIA, 2012. https://doi.org/10.1136/amiajnl-2011-000089
+- `GODDARD-AB-2012` — Goddard, Roudsari, Wyatt, *Automation bias: a systematic review*, JAMIA, 2012. https://pmc.ncbi.nlm.nih.gov/articles/PMC3240751/
 - `GOOGLE-SREBOOK-2017` — Google, *Site Reliability Engineering*, ch. 6 "Monitoring Distributed Systems", 2017. https://sre.google/sre-book/monitoring-distributed-systems/
 - `HENRY-TREWS-2022` — Henry et al., *Factors driving provider adoption of TREWS*, Nature Medicine, 2022-07-21. https://www.nature.com/articles/s41591-022-01895-z
 - `META-RCA-2024` — Engineering at Meta, *Leveraging AI for efficient incident response*, 2024-06-24. https://engineering.fb.com/2024/06/24/data-infrastructure/leveraging-ai-for-efficient-incident-response/

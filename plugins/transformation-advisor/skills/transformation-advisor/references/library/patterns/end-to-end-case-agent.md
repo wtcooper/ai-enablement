@@ -35,7 +35,7 @@ claims [ALLIANZ-2025].
 ## 2. Where it fits
 
 - **Work types:** mainly `transaction-processing`; also `coordination-scheduling` and `review-assurance`.
-- **Not for judgment under ambiguity with no written criteria, or one-off cases** *(guidance)*. With three or fewer steps in one system, a `workflow-automation` flow is enough [ANTHROPIC-AGENTS-2024].
+- **Not for judgment under ambiguity with no written criteria, or one-off cases** *(guidance)*. When the steps can be predicted and fixed in advance, a `workflow-automation` flow is simpler and enough [ANTHROPIC-AGENTS-2024].
 - **Not with write access to production without an approval gate or backups** (a coding agent deleted a live database, per the user) [OECD-2025].
 - **Not for solely automated decisions with significant effects on individuals and no route to human review** [EU-GDPR-2016; ROBODEBT-RC-2023].
 - **Not judged by average success when the process needs consistency every time** [SIERRA-TAUBENCH-2024].
@@ -87,7 +87,7 @@ quality had fallen [ENTREPRENEUR-KLARNA-2025]. Find the simplest solution and ad
 - **Levers:** `speed`, `capacity`, `quality`, `cost`, `experience`.
 - **Typical figures:** Allianz says processing and settlement time fell 80%, from several days to hours for small claims (self-reported, basis not given) [ALLIANZ-2025]; Klarna's month-one figures (two-thirds of chats; under 2 vs 11 minutes) come from an adjacent service pattern [KLARNA-AIASSISTANT-2024].
 - **Unit cost.** Agents use about four times the tokens of chat and multi-agent systems about fifteen times, so cost per case must include inference [ANTHROPIC-MULTIAGENT-2025].
-- **Metrics to require** (no deployment publishes them): share of cases closed with no human edit; share escalated; share overturned on appeal or complaint; error rate in a sampled audit; cost per resolved case including tokens; a quality measure weighted equally with cost [ENTREPRENEUR-KLARNA-2025].
+- **Metrics to require** (no deployment publishes them): share of cases closed with no human edit; share escalated; share overturned on appeal or complaint; error rate in a sampled audit; cost per resolved case including tokens; a quality measure tracked alongside cost (Klarna's CEO said cheaper AI service gave "lower quality") [ENTREPRENEUR-KLARNA-2025].
 - **Reliability floor** (2024-2025 models): 30% of simulated-company tasks [CMU-2024]; 2.5% automation of real freelance projects [CAIS-2025]. The task length models complete at 50% success has doubled about every seven months [METR-HORIZON-2025].
 
 ## 8. Governance
@@ -105,8 +105,8 @@ No cross-industry deployment of this pattern publishes a measured quality figure
 | Organization | Industry | What changed | Outcome (provenance) | Grade | Source |
 |---|---|---|---|---|---|
 | Allianz Australia | Insurance | Seven agents handle coverage, weather, fraud, payout and audit steps for small claims; a person decides payment | Time -80% per an executive; under five minutes to human review in a worked example (self-reported) | B | ALLIANZ-2025 |
-| Klarna | Fintech | Assistant handles refunds, returns and disputes in chat; live agents available | Two-thirds of chats in month one (self-reported; adjacent: `service-agent-escalation`) | B | KLARNA-AIASSISTANT-2024 |
-| Klarna, 2025 | Fintech | CEO said cost had dominated and quality fell; hiring humans again | Statement, no metric (via press) | B | ENTREPRENEUR-KLARNA-2025 |
+| Klarna | Fintech | Assistant handles refunds and returns in chat; live agents available | Two-thirds of chats in month one (self-reported; adjacent: `service-agent-escalation`) | B | KLARNA-AIASSISTANT-2024 |
+| Klarna, 2025 | Fintech | CEO said AI service was cheaper but gave "lower quality"; hiring humans again | Statement, no metric (via press) | B | ENTREPRENEUR-KLARNA-2025 |
 | Anthropic | Technology | Lead agent plans and spawns sub-agents; citation agent attributes claims | 90.2% better than a single agent on an internal evaluation (vendor benchmark; read-only task) | B | ANTHROPIC-MULTIAGENT-2025 |
 | UK Incubator for AI | Public sector | Prototype triages householder planning applications and drafts an initial assessment for officers | Prototype; no outcome published | B | IAI-PLANNING-2026 |
 | Replit user (SaaStr founder) | Software | Coding agent deleted a live production database despite instructions | Incident record compiled from media; user's account (failure case) | B | OECD-2025 |
@@ -153,7 +153,7 @@ No cross-industry deployment of this pattern publishes a measured quality figure
 - `METR-HORIZON-2025` — Kwa et al., METR, *Measuring AI Ability to Complete Long Software Tasks*, 2025-03. https://arxiv.org/pdf/2503.14499
 - `NIST-AI600-2024` — NIST, *AI RMF Generative AI Profile (NIST AI 600-1)*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `NIST-AIRMF-2023` — NIST, *AI Risk Management Framework 1.0 (NIST AI 100-1)*, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
-- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc22.htm
+- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc21.htm
 - `OECD-2025` — OECD.AI, *Replit AI coding tool deletes live production database* (incident record), 2025-07-19. https://oecd.ai/en/incidents/2025-07-19-1eb1
 - `ROBODEBT-RC-2023` — Royal Commission into the Robodebt Scheme, *Report: recommendations*, 2023-07-07. https://robodebt.royalcommission.gov.au/publications/report
 - `SALESFORCE-CRMARENA-2025` — Huang et al., Salesforce AI Research, *CRMArena-Pro*, 2025-05-24. https://arxiv.org/pdf/2505.18878

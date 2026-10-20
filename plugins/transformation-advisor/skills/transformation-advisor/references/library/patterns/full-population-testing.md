@@ -68,7 +68,7 @@ intervention and decision" [DWP-ATRS-2025].
 - **Policy.** A human decision for any adverse outcome and an appeal route [DWP-ATRS-2025; OMB-M2521-2025].
 - **Capacity.** A staffed exceptions queue sized to the flagged volume *(guidance)*; HSBC says fewer alerts let investigators focus on "genuinely suspicious cases" [GOOGLE-HSBC-2023].
 - **Skills.** Data science to calibrate; domain experts to set criteria; central tool certification, which the FRC found partly informal [FRC-ATTREVIEW-2025].
-- **Reviewer acceptance.** External reviewers rated analytics-based audit procedures lower quality for appearing less effortful [EMETT-CAR-2023]; plan that conversation.
+- **Reviewer acceptance.** In two experiments, external reviewers rated analytics-based audit procedures lower quality because they looked less effortful [EMETT-CAR-2023]; plan that conversation.
 
 ## 6. Failure modes and controls
 
@@ -78,7 +78,7 @@ intervention and decision" [DWP-ATRS-2025].
 | Blind spots | Items unusual in a consistent way are not flagged [FRC-AIAUDIT-2025] | Rules alongside the model; random sample of low-scored items [DWP-ATRS-2025] |
 | Adverse action at scale with no human check | MiDAS: a state review found 93% of fraud findings wrong [MICHIGANPUBLIC-MIDAS-2016]; $20 million settlement [UMICH-MIDAS-2024] | Human decision, appeal, pre-deployment testing, monitoring [OMB-M2521-2025] |
 | Disparate impact | Some cohorts referred more often but correctly less often [DWP-FAIRNESS-2025] | Referral rate against confirmed rate by cohort; retrain; drop proxy variables |
-| Overstated benefit | $454.0 million identified vs $133.2 million certified savings [HHSOIG-FPS-2015] | Agree the savings definition with an independent party before reporting |
+| Overstated benefit | $454.0 million unadjusted vs $133.2 million adjusted savings in the same year, both certified by the inspector general [HHSOIG-FPS-2015] | Agree the savings definition with an independent party before reporting |
 | Tool drift | Recertification triggers identified "informally" [FRC-ATTREVIEW-2025] | Defined recertification triggers; version control |
 
 ## 7. Value and metrics

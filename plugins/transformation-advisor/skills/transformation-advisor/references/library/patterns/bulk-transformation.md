@@ -65,7 +65,7 @@ migrations that had stalled for several years [GOOGLE-2025].
 
 - **Data.** An expert-annotated gold set and an agreed definition; Kentucky found billing codes selected patients of whom only 51% truly had the condition [UKY-2025].
 - **Access.** A campaign tool that can re-run subsets; a gradual rollout and rollback path [GOOGLE-2025].
-- **Policy.** An honestly stated baseline: Asana's $6 million manual estimate was "back-of-envelope", per its own lead [PRAGMATIC-2026].
+- **Policy.** An honestly stated baseline: Asana's $6 million manual estimate was a back-of-envelope figure (time per file times file count), as its developer-productivity lead described it to the newsletter [PRAGMATIC-2026].
 - **Skills.** Reviewers with capacity and ownership; people who define rules and build validators. One engineer could generate all the changes in Google's ID migration, cutting coordination overhead [GOOGLE-2025].
 
 ## 6. Failure modes and controls
@@ -101,7 +101,7 @@ migrations that had stalled for several years [GOOGLE-2025].
 |---|---|---|---|---|---|
 | Google | Technology | Toolkit for repo-wide migrations: deterministic location finding, model edits, tests, human review | ~87% of code committed unchanged (JUnit, 5,359 files in 3 months); 80% of ID-migration changes fully AI-authored (self-reported) | A | GOOGLE-2025 |
 | Airbnb | Travel marketplace | ~3,500 test files migrated by a per-file pipeline with retries | 75% in 4 hours; 97% after 4 more days; rest by hand in a week (self-reported, tracked) | A | AIRBNB-2025 |
-| Amazon | Technology, retail | Automated Java upgrades across internal systems | 79% of generated reviews shipped unchanged; over half of production Java systems upgraded in under six months (self-reported) | A | AMAZON-2024 |
+| Amazon | Technology, retail | Automated Java upgrades across internal systems | 79% of generated reviews shipped unchanged; over half of production Java systems upgraded in under six months (self-reported; Amazon also sells the tool) | A | AMAZON-2024 |
 | UK Incubator for AI (Consult) | Public sector | Themes generated for 87,738 consultation responses; 125 reviewers checked | No change for 73%; F1 0.816 model vs reviewer, 0.710 reviewer vs reviewer (self-reported by the builders) | A | IAI-DWP-2025 |
 | University of Kentucky | Healthcare research | Local model extracts structured fields from clinical notes | Over 82% agreement on all but one field, 100-patient benchmark (research study; tool test) | B | UKY-2025 |
 | UK Incubator for AI (Extract) | Public sector | Old planning documents converted into usable data for councils | 2 minutes per document in "early testing" (self-reported) | B | IAI-PLANNING-2026 |
@@ -141,10 +141,10 @@ migrations that had stalled for several years [GOOGLE-2025].
 - `IAI-DWP-2025` — UK Incubator for AI, *Consult evaluation: DWP Pathways to Work consultation*, 2025-08-27. https://assets.publishing.service.gov.uk/media/68f63fe01c9076042263f0bd/evaluation-report.pdf
 - `IAI-PLANNING-2026` — UK Incubator for AI, *Planning: Extract and Augmented Planning Decisions*, 2026-06. https://ai.gov.uk/our-work/planning
 - `IAI-SCOT-2025` — UK Incubator for AI, *Consult evaluation: Scottish Government consultation*, 2025-03-20. https://digitalgovernmenthub.org/wp-content/uploads/2026/02/Scot_Gov_NSCP_Evaluation_Report.pdf
-- `IBM-2024` — Pan et al., IBM Research and UIUC, *Lost in Translation: bugs introduced by LLMs while translating code*, 2023-08. https://arxiv.org/pdf/2308.03109
+- `IBM-2024` — Pan et al., IBM Research and UIUC, *Lost in Translation: bugs introduced by LLMs while translating code* (ICSE '24), 2024-04. https://arxiv.org/pdf/2308.03109
 - `NIST-AI600-2024` — NIST, *AI RMF Generative AI Profile (NIST AI 600-1)*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `NIST-AIRMF-2023` — NIST, *AI Risk Management Framework 1.0 (NIST AI 100-1)*, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
-- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc22.htm
+- `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc21.htm
 - `PRAGMATIC-2026` — The Pragmatic Engineer (G. Orosz), *The Pulse: we need to talk about migrations with AI*, 2026-08-27. https://blog.pragmaticengineer.com/the-pulse-we-need-to-talk-about-migrations-with-ai/
 - `RETAILDIVE-2024` — Retail Dive, *Walmart used AI to crunch 850M product data points*, 2024-08-20. https://www.retaildive.com/news/walmart-generative-ai-product-data-points/724782/
 - `UKY-2025` — Klusty et al., University of Kentucky, *Leveraging LLMs for structured data extraction from unstructured patient records*, 2025-12. https://arxiv.org/pdf/2512.13700

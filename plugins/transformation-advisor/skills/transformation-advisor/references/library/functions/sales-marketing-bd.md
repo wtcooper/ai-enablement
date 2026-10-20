@@ -33,10 +33,10 @@ The process list is a working grouping under the "market and sell" category of a
 | Market and customer insight | Segment; research needs and competitors; set positioning | research-synthesis, data-reporting | No measured case found |
 | Marketing planning and content | Plan campaigns; write copy, images, product descriptions; publish; measure | document-production, coordination-scheduling, data-reporting | Advertising workflows showed no detectable sales effect in randomized tests [FANG-2026] |
 | Lead capture and management | Capture inbound interest; enrich and score; route | transaction-processing, data-reporting | Buyers face search and information friction, especially across languages [FANG-2026] |
-| Prospecting and outreach | Choose accounts; research; personalize; send and follow up | research-synthesis, client-interaction, document-production | Account research before outreach took a seller about four hours (a company statement) [MICROSOFT-2024] |
-| Qualification and pursuit | Discovery; qualify; scope; quote or answer RFPs; negotiate; close | client-interaction, expert-judgment, document-production | SaaStr says a great human salesperson outperforms agents on complex deals [SAASTR-2025a] |
+| Prospecting and outreach | Choose accounts; research; personalize; send and follow up | research-synthesis, client-interaction, document-production | Account research and follow-up drafting take seller time; Lumen estimates its assistant saves sellers four hours a week [MICROSOFT-2024] |
+| Qualification and pursuit | Discovery; qualify; scope; quote or answer RFPs; negotiate; close | client-interaction, expert-judgment, document-production | Larger deals still need people: SaaStr's agents qualify $50-100K+ sponsorship deals, then hand them to humans [SAASTR-2025a] |
 | Account management and growth | Account plans; renewals; cross-sell; relationship health | client-interaction, coordination-scheduling | No measured case found |
-| Sales operations and forecasting | Keep CRM records complete; forecast; report pipeline | data-reporting, transaction-processing | Opportunities never logged in the CRM; SaaStr had to fix its revenue-operations process before agents could help [SAASTR-2025a] |
+| Sales operations and forecasting | Keep CRM records complete; forecast; report pipeline | data-reporting, transaction-processing | Broken revenue-operations processes: SaaStr had to fix them before agents could help, and found about 1,000 leads its team never followed up [SAASTR-2025a] |
 | Enablement | Customize decks and collateral; train sellers | document-production | No measured case found |
 
 ## 3. Where AI is changing the work
@@ -50,7 +50,7 @@ The process list is a working grouping under the "market and sell" category of a
   augment; step to process). Klarna (fintech) said generative AI saved $10 million in annual marketing costs and cut sales and
   marketing spend 11% in Q1 2024 (company statement relayed by press). Grade B [VERDICT-2024]. In randomized tests on an unnamed retail
   platform, product-description and search workflows lifted sales about 2-3% and advertising workflows showed no detectable effect.
-  Independent. Grade B [FANG-2026].
+  Academic authors; two consulted for the platform and one is its employee. Grade B [FANG-2026].
 - **Service representatives turned sellers with an on-screen assistant** ([grounded-knowledge-assistant](../patterns/grounded-knowledge-assistant.md);
   augment; process). Verizon (telecom): the consumer group CEO said sales through the 28,000-person service team were up nearly 40%
   since deployment; no definition or causal design. Self-reported via press. Grade B [REUTERS-2025].
@@ -70,8 +70,8 @@ The process list is a working grouping under the "market and sell" category of a
   "significantly worse" than its own SDRs in a one-month trial; Airtable said its trial was "very short" and never used in production
   (statements reported by press). Grade B [TECHCRUNCH-2025].
 - **Website agent that answers, qualifies and books meetings** ([service-agent-escalation](../patterns/service-agent-escalation.md);
-  automate; process). On the unnamed retail platform a pre-sale chatbot raised sales up to 16.3% against no support, with no
-  deterioration in returns or ratings. Independent; platform unnamed. Grade B [FANG-2026]. SaaStr says its inbound agent "closed over
+  automate; process). On the unnamed retail platform a pre-sale chatbot raised sales 16.3% against an automated "support
+  unavailable" message, with no deterioration in returns or ratings. Platform unnamed; authors tied to it as above. Grade B [FANG-2026]. SaaStr says its inbound agent "closed over
   $1M in 90 days" (self-reported) [SAASTR-2025a].
 
 **Delegate the outcome**
@@ -95,21 +95,21 @@ go/no-go), `professional-services-scoping-pricing-05` (B), `professional-service
 - **Agent-run outbound:** messages, response rate, positive-response rate, meetings booked, revenue closed (SaaStr figures above;
   self-reported) [SAASTR-2025a].
 - **Conversion and sales per consumer:** conversion rose 1-22% across randomized workflows while cart value and purchase frequency did
-  not change (independent; two authors consulted for the platform and one is an employee, per disclosures) [FANG-2026].
+  not change (two authors consulted for the platform and one is an employee, per disclosures) [FANG-2026].
 - **Counter-metrics that catch harm:** returns and ratings [FANG-2026]; sending-domain reputation, which needed a 2-3 week warm-up
   [SAASTR-2025b]; churn of customers who tried an AI SDR product (a former employee cites 70-80% lost; the company says retention is
   79%; not the same measure) [TECHCRUNCH-2025].
 - **Oversight cost:** 15-20 hours a week to coach five agents, and $50,000-100,000 a year per specialized platform (SaaStr's figures)
   [SAASTR-2025a].
-- **Cost:** $10 million annual marketing saving and an 11% cut in sales and marketing spend (Klarna statement, annualized)
+- **Cost:** $10 million annual marketing saving and an 11% cut in sales and marketing spend in Q1 2024 (Klarna statements)
   [VERDICT-2024].
 
 ## 5. Interview probes
 
 1. "Walk me through one outbound sequence from account choice to meeting booked. Where does a person touch it?" Reveals whether AI
    sits on one step or the flow; SaaStr needed proven messaging and a defined ideal customer before agents helped [SAASTR-2025a].
-2. "What does your CRM look like for the last 50 opportunities: complete, current, trusted?" Reveals data readiness; incomplete
-   logging was SaaStr's first blocker [SAASTR-2025a].
+2. "What does your CRM look like for the last 50 opportunities: complete, current, trusted?" Reveals data readiness; SaaStr had
+   to fix broken revenue-operations processes first [SAASTR-2025a].
 3. "Which number would you show your CFO, and who counts it?" Separates tracked metrics from estimates such as "hours saved equals
    dollars" [MICROSOFT-2024].
 4. "What will you do with the seller hours released?" Reveals the destination for capacity; Verizon pointed freed time at selling
@@ -133,8 +133,9 @@ go/no-go), `professional-services-scoping-pricing-05` (B), `professional-service
   express consent [FCC-24-17].
 - **True customer claims and logos.** A prospect's lawyer cited false advertising and trademark causes of action over an unauthorized
   logo [TECHCRUNCH-2025].
-- **Disclose AI interaction** to the person at first interaction in the EU [EU-AIACT-ART50-2024]; application dates have moved under
-  the Digital Omnibus, so check the current date before advising.
+- **Disclose AI interaction:** in the EU, systems that interact with people must tell them they are dealing with an AI system, at the
+  latest at first interaction [EU-AIACT-ART50-2024]. The AI Omnibus adds a grace period to 2 December 2026 for some transparency
+  duties of systems already on the market, pending publication; confirm the date before advising [AG-OMNIBUS-2026].
 - **Decisions that need human judgment:** pricing and discounts; contract terms; strategic accounts and negotiations; large or complex
   deals [SAASTR-2025a; SAASTR-2025b].
 
@@ -147,6 +148,7 @@ go/no-go), `professional-services-scoping-pricing-05` (B), `professional-service
 
 ## 8. Sources
 
+- **AG-OMNIBUS-2026**: Addleshaw Goddard, *EU AI Act: AI Omnibus formally adopted* (law firm briefing, 2026-07-01). https://www.addleshawgoddard.com/en/insights/insights-briefings/2026/technology/eu-ai-act-ai-omnibus-formally-adopted/
 - **APQC-2015**: APQC, *Process Classification Framework, cross-industry overview, v6.1.1* (professional body, 2015-07). https://www.forgov.qld.gov.au/__data/assets/pdf_file/0027/319842/apqc_pcf_ver_6.1.1-final.pdf
 - **EU-AIACT-ART50-2024**: Regulation (EU) 2024/1689, *Article 50: Transparency obligations* (regulation text via artificialintelligenceact.eu, 2024). https://artificialintelligenceact.eu/article/50/
 - **FANG-2026**: Fang, Yuan, Zhang, Donati, Sarvary, *Generative AI and Firm Productivity: Field Experiments in Online Retail* (academic, arXiv 2510.12049 v3, 2026-02-10). https://arxiv.org/pdf/2510.12049v3

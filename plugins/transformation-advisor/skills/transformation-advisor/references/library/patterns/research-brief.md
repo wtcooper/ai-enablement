@@ -38,7 +38,7 @@ pack"; "we redo the same scan every quarter".
 - **Not for weighing nuanced mixed evidence outside the tool's reliable range.** On such a task, consultants using GPT-4 performed 23% worse than controls [BCG-2023].
 - **Not when the brief replaces judgment in a high-risk decision** (EU AI Act Annex III 8(a), Art. 14) [EU-AIACT-2024].
 - **Not for a single known fact**, where a search is cheaper [ANTHROPIC-MULTIAGENT-2025].
-- **Not where the junior's own research is the learning** (`professional-services-talent-learning-11`).
+- **Not where doing the work is how juniors build expertise** (`professional-services-talent-learning-11` measures this for AI drafting).
 
 ## 3. Up the ladder
 
@@ -71,7 +71,7 @@ briefs on a feed shade into `monitor-diagnose-act`.
 | Failure | How it shows up | Control that catches it |
 |---|---|---|
 | Fabricated or misattributed citations | Nonexistent references in a delivered report [GUARDIAN-DELOITTE-2025]; 31% of 2,709 assistant news answers had a significant sourcing issue [BBC-EBU-2025] | Separate citation step; open every cited source for load-bearing claims; spot-check the rest |
-| Confident wrong answers instead of "not found" | Eight search tools wrong on over 60% of citation queries, rarely signalling doubt [CJR-TOW-2025] | Make "could not find" an allowed output and reward it in evaluation *(guidance)* |
+| Confident wrong answers instead of "not found" | Eight search tools together answered over 60% of citation queries incorrectly, rarely signalling doubt [CJR-TOW-2025] | Make "could not find" an allowed output and reward it in evaluation *(guidance)* |
 | Weak source selection | SEO farms preferred [ANTHROPIC-MULTIAGENT-2025]; "source bias transfer" [STANFORD-STORM-2024] | Source-quality rules; allow-lists for regulated work |
 | Lost nuance | Summaries missed nuance or context [ASIC-AWS-2024] | Expert reads the primary text on contested points |
 | Over-trust | Warned consultants still did not challenge wrong output [BCG-2023] | Task-fit map; reviewer forms a view first *(guidance)* |
@@ -97,7 +97,7 @@ briefs on a feed shade into `monitor-diagnose-act`.
 |---|---|---|---|---|---|
 | Boston Consulting Group | Professional services | Over 750 consultants did tasks with or without GPT-4 | Outside the tool's range: 23% worse than controls; inside: 40% better; warned users did not challenge wrong output (self-reported, with academics) | A | BCG-2023 |
 | ASIC with AWS | Financial regulator | Proof of concept: model summarized public submissions; assessors scored against staff summaries | AI 35 of 75 (47%) vs human 61 (81%); assessors said AI could create more work (self-reported; a test of the tool, not used in work) | B | ASIC-AWS-2024 |
-| UK DSIT (Consult) | Public sector | Tool proposes themes for every consultation response; officials review | F1 0.76 vs reviewers; no change for 60% of responses; median 23 seconds a review (self-reported; theme coding is adjacent) | B | DSIT-CONSULT-2025 |
+| UK Incubator for AI (Consult) | Public sector | Tool proposes themes for every consultation response; officials review | F1 0.76 vs reviewers; no change for 60% of responses; median 23 seconds a review (self-reported; theme coding is adjacent) | B | IAI-SCOT-2025 |
 | Anthropic | Technology | Lead agent plans, sub-agents search in parallel, citation step attributes claims | 90.2% better than single agent on an internal evaluation (vendor-published benchmark) | B | ANTHROPIC-MULTIAGENT-2025 |
 | Stanford and Yale researchers | Legal | Preregistered test of three retrieval-based legal research tools on 202 queries | Hallucination 17% to 33%; accurate 65%, 42%, 20% (independent; tool test) | B | STANFORD-LEGAL-2024 |
 | Stanford (STORM) | Academia | Prototype asks perspective-guided questions, builds an outline, then writes | Editors rated more articles organized (+25%) and broad (+10%); flagged source bias (authors' own evaluation) | B | STANFORD-STORM-2024 |
@@ -129,7 +129,6 @@ briefs on a feed shade into `monitor-diagnose-act`.
 - `BBC-EBU-2025` — BBC and EBU, *News Integrity in AI Assistants*, 2025-10. https://www.bbc.co.uk/aboutthebbc/documents/news-integrity-in-ai-assistants-report.pdf
 - `BCG-2023` — Boston Consulting Group, *How people can create, and destroy, value with generative AI*, 2023-09-21. https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai
 - `CJR-TOW-2025` — Tow Center, Columbia Journalism Review, *AI search has a citation problem*, 2025-03. https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php
-- `DSIT-CONSULT-2025` — UK DSIT, *Humphrey AI tool reviews consultation responses for first time*, 2025-05-14. https://www.gov.uk/government/news/government-built-humphrey-ai-tool-reviews-responses-to-consultation-for-first-time-in-bid-to-save-millions
 - `EC-2026` — European Commission, *AI Omnibus enters into force*, 2026-07-27. https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
 - `EU-AIACT-2024` — European Union, *Regulation (EU) 2024/1689 (AI Act)*, 2024-06-13. https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689
 - `FINRA-OVERSIGHT-2026` — FINRA, *2026 Annual Regulatory Oversight Report: GenAI*, 2025-12. https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
@@ -138,6 +137,7 @@ briefs on a feed shade into `monitor-diagnose-act`.
 - `GDS-GOVUKCHAT-2024` — UK Government Digital Service, *The findings of our first generative AI experiment: GOV.UK Chat*, 2024-01-18. https://insidegovuk.blog.gov.uk/2024/01/18/the-findings-of-our-first-generative-ai-experiment-gov-uk-chat/
 - `GUARDIAN-DELOITTE-2025` — The Guardian, *Deloitte to pay money back after using AI in $440,000 report*, 2025-10-06. https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - `HUSAIN-2024` — Hamel Husain, *Your AI product needs evals*, 2024-03-29. https://hamel.dev/blog/posts/evals/
+- `IAI-SCOT-2025` — UK Incubator for AI, *Consult evaluation: Scottish Government consultation*, 2025-03-20. https://digitalgovernmenthub.org/wp-content/uploads/2026/02/Scot_Gov_NSCP_Evaluation_Report.pdf
 - `NIST-AI600-2024` — NIST, *AI RMF Generative AI Profile (NIST AI 600-1)*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `NIST-AIRMF-2023` — NIST, *AI Risk Management Framework 1.0 (NIST AI 100-1)*, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
 - `NIST-SAMPLING-2026` — NIST/SEMATECH, *e-Handbook of Statistical Methods* §6.2.1–6.2.2 (acceptance sampling), retrieved 2026-10-20. https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc21.htm

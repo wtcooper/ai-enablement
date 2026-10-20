@@ -36,7 +36,7 @@ from last year's answers"; "technicians search manuals on the shop floor".
 - **Work types:** `client-interaction`, `research-synthesis`, `expert-judgment`, `physical-field`.
 - **Seen with:** advisers querying the firm's research [OPENAI-MORGANSTANLEY-2026]; citizens querying government guidance [GDS-GOVUKCHAT-2026A]; support agents served documentation links [NBER-BRYNJOLFSSON-2023].
 - **Not public-facing on rules without measured accuracy** (MyCity, Air Canada) [MARKUP-MYCITY-2024; GUARDIAN-AIRCANADA-2024].
-- **Not over a corpus nobody owns, or with permissions nobody cleaned** [GDS-COPILOT-2025].
+- **Not over a corpus nobody owns, or with permissions nobody cleaned** *(guidance)*: such tools retrieve whatever the user can open [GDS-COPILOT-2025].
 - **Not for questions needing personal case data the assistant cannot see**; GOV.UK pilot users wanted an adviser with their information [GDS-GOVUKCHAT-2026A].
 - **Not when the answer is a legal or clinical decision nobody will verify** [STANFORD-LEGAL-2024; NIST-AI600-2024].
 - **Not in place of the learning path of juniors** who need their own judgment (`professional-services-knowledge-management-19`) [MSR-LEE-2025].
@@ -50,11 +50,11 @@ from last year's answers"; "technicians search manuals on the shop floor".
 | `automate` | Releases answers without a person when confident; routes uncertain ones to an analyst (`security-governance-risk-01`) | Answers routed questions; samples released ones | `workflow-automation`, `managed-agent-runtime` | Refusal rule, live monitoring and an owner for every corpus; measured accuracy before wider release |
 
 The usual rung is assist. GOV.UK Chat moved from a 2023 prototype to public pilots, and in March 2026 GDS said it
-would open access more widely, starting with all users of the GOV.UK app [GDS-GOVUKCHAT-2026A].
+would open access more widely, starting with all users of the GOV.UK app [GDS-GOVUKCHAT-2024; GDS-GOVUKCHAT-2026A].
 
 ## 4. How it is built
 
-- **Inputs.** A curated corpus with owners, dates and permissions. GOV.UK Chat draws "exclusively" on published guidance and counts an answer accurate only if it meets all the standards of that content [GDS-GOVUKCHAT-2026A]. Retrieval that follows the user's permissions can expose over-shared files [GDS-COPILOT-2025].
+- **Inputs.** A curated corpus with owners, dates and permissions. GOV.UK Chat draws "exclusively" on published guidance and counts an answer accurate only if it meets all the standards of that content [GDS-GOVUKCHAT-2026A]. Retrieval inherits the user's permissions [GDS-COPILOT-2025], so any over-shared file becomes answerable *(guidance)*.
 - **The AI's role.** Retrieve, answer, cite, and decline outside scope [GDS-GOVUKCHAT-2026A]. Errors in legal tools traced to naive retrieval, inapplicable authority, sycophancy and reasoning errors [STANFORD-LEGAL-2024].
 - **Human checkpoints.** Content owners approve what enters the corpus and retire what is stale; users check the cited source; an analyst takes uncertain answers when automated.
 - **Thresholds and sampling.** GOV.UK manually reviewed 419 conversations and 1,084 question-answer pairs in one pilot, with automated scoring [GDS-GOVUKCHAT-2026A]; Morgan Stanley runs a daily regression suite [OPENAI-MORGANSTANLEY-2026]; a support tool gave no suggestion when it lacked training data, an abstain threshold [NBER-BRYNJOLFSSON-2023].
@@ -76,7 +76,7 @@ would open access more widely, starting with all users of the GOV.UK app [GDS-GO
 | Inconsistent answers | The same housing question got "yes" once and "no" ten times [MARKUP-MYCITY-2024] | Test repeats; log and compare answers |
 | Organization held to what the bot said | Tribunal ordered Air Canada to pay after a wrong fare answer [GUARDIAN-AIRCANADA-2024] | Treat bot output as published policy; one source of truth |
 | Stale or unapproved content | Users over-trust a trusted brand [GDS-GOVUKCHAT-2024] | Content owner and review date per document |
-| Over-exposure of files | Retrieval surfaces files users should not have had [GDS-COPILOT-2025] | Fix permissions before indexing |
+| Over-exposure of files | Retrieval returns anything the user can open, including over-shared files *(guidance)*; the trial tool inherited user permissions [GDS-COPILOT-2025] | Fix permissions before indexing |
 | Cannot show which document was used | Agents "struggled to identify the exact documents" [GDS-COPILOT-2025] | Require source passages in every answer |
 | Low take-up | Agents followed suggestions 38% of the time [NBER-BRYNJOLFSSON-2023] | Treat adherence as a quality signal; study declined answers |
 
@@ -98,9 +98,9 @@ would open access more widely, starting with all users of the GOV.UK app [GDS-GO
 | Organization | Industry | What changed | Outcome (provenance) | Grade | Source |
 |---|---|---|---|---|---|
 | UK Government Digital Service | Public sector | GOV.UK Chat answers citizens only from published guidance | Accuracy 76% to 90% by expert plus automated scoring; 508 jailbreak attempts blocked; over 10,000 users (self-reported) | A | GDS-GOVUKCHAT-2026A |
-| Australian Treasury | Public sector | 218 staff used a retrieval-grounded assistant for 14 weeks | Use lower than expected; clearest benefit in admin tasks; no clear outcome gain (internal evaluation) | A | ACE-TREASURY-2025 |
+| Australian Treasury | Public sector | 218 staff used a retrieval-grounded assistant for 14 weeks | Use lower than expected; clearest benefit in admin tasks; no clear outcome gain; no outcome figure (internal evaluation) | B | ACE-TREASURY-2025 |
 | Unnamed Fortune 500 software firm | Technology | Suggested replies and documentation links shown to support agents | Issues resolved per hour +14%, +34% for novices; 38% adherence (independent academics; firm not named) | B | NBER-BRYNJOLFSSON-2023 |
-| Twelve UK government organizations | Public sector | 20,000 staff used an assistant that retrieves with their permissions | 26 minutes a day saved by user estimate; 17% saw no clear saving (self-reported survey) | B | GDS-COPILOT-2025 |
+| UK government (cross-government trial) | Public sector | 20,000 staff used an assistant that retrieves with their permissions | 26 minutes a day saved by user estimate; 17% saw no clear saving (self-reported survey) | B | GDS-COPILOT-2025 |
 | Morgan Stanley | Financial services | Advisers query the firm's knowledge base; daily regression suite | "Over 98% of advisor teams" use it; document access measure undefined (vendor-published) | B | OPENAI-MORGANSTANLEY-2026 |
 | Stanford and Yale researchers | Legal | Test of three retrieval-based legal research tools | Accurate on 65%, 42% and 20% of queries (independent; tool test) | B | STANFORD-LEGAL-2024 |
 | City of New York | Public sector | MyCity chatbot for business rules | Wrong answers in press testing; later narrowed, then slated for removal (independent) | B | MARKUP-MYCITY-2026 |
@@ -133,7 +133,7 @@ would open access more widely, starting with all users of the GOV.UK app [GDS-GO
 - `EC-2026` — European Commission, *AI Omnibus enters into force*, 2026-07-27. https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
 - `EU-AIACT-2024` — European Union, *Regulation (EU) 2024/1689 (AI Act)*, 2024-06-13. https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689
 - `FINRA-OVERSIGHT-2026` — FINRA, *2026 Annual Regulatory Oversight Report: GenAI*, 2025-12. https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
-- `FINRA-RN2409-2024` — FINRA, *Regulatory Notice 24-09*, 2024-06-27. https://www.finra.org/rules-guidance/notices/24-09
+- `FINRA-RN2409-2024` — FINRA, *Regulatory Notice 24-09: obligations when using generative AI*, 2024-06-27. https://www.finra.org/rules-guidance/notices/24-09
 - `GDS-COPILOT-2025` — UK Government Digital Service, *Microsoft 365 Copilot experiment: cross-government findings*, 2025-06-02. https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html
 - `GDS-GOVUKCHAT-2024` — UK Government Digital Service, *The findings of our first generative AI experiment: GOV.UK Chat*, 2024-01-18. https://insidegovuk.blog.gov.uk/2024/01/18/the-findings-of-our-first-generative-ai-experiment-gov-uk-chat/
 - `GDS-GOVUKCHAT-2026A` — UK Government Digital Service, *5 things we learned testing GOV.UK Chat*, 2026-03-16. https://insidegovuk.blog.gov.uk/2026/03/16/5-things-we-learned-testing-gov-uk-chat-an-ai-assistant-for-government/

@@ -2,8 +2,8 @@
 
 Function id `risk-compliance-legal`. Last reviewed 2026-10-20. Source keys in brackets are listed in §8. **Read this first:** the
 strongest measured result is a before-and-after on a high-volume screening step (HSBC); the strongest warnings are about autonomy
-(Michigan's automated fraud system) [HSBC-GOOGLE-2023; UMICH-MIDAS-2024]. Regulators are asking for evidence of control rather than new
-AI-specific rules. In-house legal is well surveyed, but its private-sector cases are vendor-published with unstated methods, and no
+(Michigan's automated fraud system) [HSBC-GOOGLE-2023; UMICH-MIDAS-2024]. US and UK financial regulators and prosecutors are asking for evidence of
+control rather than new AI-specific rules; the EU AI Act is the exception [FCA-AIAPPROACH-2025; DOJ-ECP-2024]. In-house legal is well surveyed, but its private-sector cases are vendor-published with unstated methods, and no
 source publishes override or escalation rates for in-house legal or compliance AI.
 
 ## Contents
@@ -38,7 +38,7 @@ The process list is a working grouping, not a named framework's categories.
 | Contract lifecycle | Intake; draft from template; review against playbook; negotiate; sign; track obligations | document-production, review-assurance, expert-judgment | Volume: Luminance's own legal team handled "over 50 contracts each day" [TECHUK-LUMINANCE-2024] |
 | Legal advice, research and matters | Research; advise; manage outside counsel | expert-judgment, research-synthesis, coordination-scheduling | Invented legal content: leading research tools hallucinated 17-33% of the time in a 2024 test [STANFORD-MAGESH-2024]; outside-counsel cost [ACC-EVERLAW-2025] |
 | Investigations and regulator engagement | Open case; gather evidence; decide; report; remediate | expert-judgment, coordination-scheduling, document-production | No measured case found |
-| Governance of the organization's own AI | Inventory uses; approve tools; set oversight; monitor; report incidents | review-assurance, coordination-scheduling | Regulators ask how fast the company can "detect and correct decisions made by AI" [DOJ-ECP-2024] |
+| Governance of the organization's own AI | Inventory uses; approve tools; set oversight; monitor; report incidents | review-assurance, coordination-scheduling | US prosecutors ask how quickly the company can "detect and correct decisions made by AI" [DOJ-ECP-2024] |
 
 ## 3. Where AI is changing the work
 
@@ -47,8 +47,8 @@ The process list is a working grouping, not a named framework's categories.
 - **Fraud-risk referral model with a person always deciding** ([intake-triage](../patterns/intake-triage.md); augment; step). UK
   Department for Work and Pensions (benefits): high-risk advance requests go to an employee who decides, mixed with control-group
   referrals, and the reviewer does not see the risk rating; the annual fairness analysis found, for some age groups and non-UK
-  nationals, higher referral likelihood without higher likelihood of a correct referral, and the model will be retrained; median delay
-  for approved referred advances 1 day. Self-reported, including unfavourable findings. Grade A [DWP-UCADV-2025].
+  nationals, higher referral likelihood without higher likelihood of a correct referral, and the model will be retrained; approved referred
+  advances were paid a median 1 day later than automatically approved ones. Self-reported, including unfavourable findings. Grade A [DWP-UCADV-2025].
 - **In-house contract first-pass review and redlining, with a lawyer approving each change**
   ([draft-review-loop](../patterns/draft-review-loop.md); augment; step). Inspired Thinking Group (marketing and technology): a 60%
   cut in contract review time "recorded during the pilot"; no method. Grade B [QANOONI-ITG-2026]. Luminance's own legal team: review
@@ -103,7 +103,7 @@ targeting at tax authorities), `professional-services-acceptance-risk-14` (B), `
 - **Legal research accuracy:** 65% and 42% accuracy; 17-33% hallucination [STANFORD-MAGESH-2024]; 74-78% against a 69% lawyer
   baseline [VALS-VLAIR-2025].
 - **Legal task productivity (randomized, law students):** gains of about 38% to 115% with one tool and 34% to 140%
-  with another, in five of six tasks; published figures changed between versions [UMN-SCHWARCZ-2025; LAWNEXT-2025].
+  with another, in five of six tasks (speed, not quality) [UMN-SCHWARCZ-2025; LAWNEXT-2025].
 - **Financial-sector use:** 75% of surveyed UK firms use AI; 55% of use cases involve some automated decision-making, 24%
   semi-autonomous, 2% fully autonomous [BOE-FCA-AISURVEY-2024].
 - **In-house adoption:** generative AI use in corporate law "more than doubles in a single year" (657 respondents, 30 countries;
@@ -144,7 +144,8 @@ targeting at tax authorities), `professional-services-acceptance-risk-14` (B), `
 - **Design a person who really decides:** DWP's reviewer does not see the risk rating or know the referral came from the model
   [DWP-UCADV-2025]. Plan "appeal and override" in post-deployment monitoring [NIST-AIRMF-2023].
 - **Claims about AI must be true:** the SEC settled with two investment advisers over false statements about AI use, $400,000 in total
-  penalties [SEC-2024-36]. A tribunal held Air Canada liable for its chatbot's advice and awarded $650.88 [MCCARTHY-MOFFATT-2024].
+  penalties [SEC-2024-36]. A tribunal held Air Canada liable for its chatbot's advice and awarded $650.88 in damages plus interest and fees
+  [CRT-2024; MCCARTHY-MOFFATT-2024].
 - **Decisions that need human judgment:** approving or declining a referred claim [DWP-UCADV-2025]; each suggested contract change
   [QANOONI-ITG-2026]; alert dispositions [HSBC-GOOGLE-2023]; legal advice that leaves the team; regulator engagement.
 
@@ -163,6 +164,7 @@ targeting at tax authorities), `professional-services-acceptance-risk-14` (B), `
 - **ACC-EVERLAW-2025**: Everlaw with the Association of Corporate Counsel, *64% of In-House Counsel Expect GenAI to Reduce Reliance on Outside Counsel* (survey release, 2025-10-14). https://blog.everlaw.com/press/release/acc-report-2025
 - **BAINBRIDGE-1983**: Lisanne Bainbridge, *Ironies of Automation*, Automatica 19(6) (academic, 1983). https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf
 - **BOE-FCA-AISURVEY-2024**: Bank of England and FCA, *Artificial intelligence in UK financial services - 2024* (regulator, 2024-11-21). https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024
+- **CRT-2024**: British Columbia Civil Resolution Tribunal, *Moffatt v. Air Canada, 2024 BCCRT 149* (tribunal decision, 2024-02-14). https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do
 - **CHARLOTIN-2026**: Damien Charlotin, *AI Hallucination Cases Database* (community, live database, 2026-10). https://www.damiencharlotin.com/hallucinations/
 - **DOJ-ECP-2024**: US Department of Justice, *Evaluation of Corporate Compliance Programs* (regulator, 2024-09). https://www.justice.gov/criminal/criminal-fraud/page/file/937501/dl
 - **DWP-UCADV-2025**: UK Department for Work and Pensions, *Universal Credit Advances Model: Fairness Assessment* (government, 2025-07-17). https://assets.publishing.service.gov.uk/media/6876219388da2e5804bb6a17/UC_Advances_model_fairness_assessment_-_July_2025.pdf
@@ -173,9 +175,9 @@ targeting at tax authorities), `professional-services-acceptance-risk-14` (B), `
 - **FINRA-GENAI-2025**: FINRA, *2026 Annual Regulatory Oversight Report: GenAI* (regulator, 2025-12-09). https://www.finra.org/rules-guidance/guidance/reports/2026-finra-annual-regulatory-oversight-report/gen-ai
 - **HSBC-GOOGLE-2023**: Richard May (HSBC) on the Google Cloud blog, *Fighting money launderers with artificial intelligence at HSBC* (self-reported on a vendor blog, 2023-11-30). https://cloud.google.com/blog/topics/financial-services/how-hsbc-fights-money-launderers-with-artificial-intelligence
 - **LAWNEXT-2025**: LawSites, *Another new study of legal AI shows some models can significantly improve work quality and efficiency* (press, 2025-03-05). https://lawnext.com/2025/03/another-new-study-of-legal-ai-shows-some-models-can-significantly-improve-work-quality-and-efficiency.html
-- **MCCARTHY-MOFFATT-2024**: McCarthy Tetrault, *Moffatt v. Air Canada: A Misrepresentation by an AI Chatbot* (professional body, 2024-02). https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot
+- **MCCARTHY-MOFFATT-2024**: McCarthy Tetrault, *Moffatt v. Air Canada: A Misrepresentation by an AI Chatbot* (law firm commentary, 2024-02). https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot
 - **NIST-AIRMF-2023**: NIST, *AI Risk Management Framework 1.0* (standard-setter, 2023-01). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
-- **QANOONI-ITG-2026**: Legal Futures (vendor associate content), *In-house team cuts contract review time by 60% after AI pilot in Microsoft Word* (press, 2026-02-04). https://www.legalfutures.co.uk/associate-news/in-house-team-cuts-contract-review-time-by-60-after-ai-pilot-in-microsoft-word/
+- **QANOONI-ITG-2026**: Legal Futures (vendor associate content), *In-house team cuts contract review time by 60% after AI pilot in Microsoft Word* (vendor-written associate content, 2026-02-04). https://www.legalfutures.co.uk/associate-news/in-house-team-cuts-contract-review-time-by-60-after-ai-pilot-in-microsoft-word/
 - **SEC-2024-36**: US Securities and Exchange Commission, *SEC Charges Two Investment Advisers with Making False and Misleading Statements About Their Use of AI* (regulator, 2024-03). https://www.sec.gov/newsroom/press-releases/2024-36
 - **STANFORD-MAGESH-2024**: Magesh et al., *Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools* (academic, arXiv 2405.20362, 2024-05-30). https://arxiv.org/abs/2405.20362
 - **TECHUK-LUMINANCE-2024**: techUK, *AI adoption case study: Luminance's legal team reduced time spent on contract review with AI* (vendor case study, 2024-10-13). https://www.techuk.org/insights/guest-insights/ai-adoption-case-study-learn-how-luminance-s-legal-team-reduced-time-spent-on-contract-review-with-ai

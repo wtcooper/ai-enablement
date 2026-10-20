@@ -88,8 +88,9 @@ The process list is a working grouping, informed by a cross-industry process fra
 
 ## 4. Metrics and benchmarks
 
-- **Blind-rated solution quality:** 22 expert evaluators scored solutions 1-10; top-10% solutions rose 9.2 points for teams with AI
-  (control mean 5.8%), not significant for individuals; AI users were 9.2 points less likely to expect a top-10% result
+- **Blind-rated solution quality:** 22 expert evaluators scored solutions 1-10; top-10% solutions rose 9.2 percentage points for teams
+  with AI (control mean 5.8%), not significant for individuals; AI users were 9.2 percentage points less likely to expect a top-10%
+  result
   [NBER-DELLACQUA-2025].
 - **Synthetic screening reliability:** 90% of human test-retest reliability; distribution similarity above 0.85 [MAIER-2025].
 - **Clinical outcomes:** safety and efficacy endpoints from a randomized trial [INSILICO-2025].
@@ -127,8 +128,8 @@ The process list is a working grouping, informed by a cross-industry process fra
   about behavior [NNG-2024].
 - **IP, privacy and confabulation risks** apply to generated designs and research outputs [NIST-AI600-1-2024].
 - **Regulated products need their own trials**; the Insilico result came from a randomized, placebo-controlled trial [INSILICO-2025].
-- **AI-generated content shown to customers** is subject to marking rules in the EU AI Act's transparency article
-  [EU-AIACT-ART50-2024].
+- **AI-generated content:** providers of generative systems must mark outputs as machine-readable and detectable as AI-generated,
+  and deployers must disclose deepfakes, under the EU AI Act's transparency article [EU-AIACT-ART50-2024].
 - **Decisions that need human judgment:** go/kill and funding at each gate; final concept choice; safety and regulatory sign-off;
   claims made about the product.
 

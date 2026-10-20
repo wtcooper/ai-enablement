@@ -65,8 +65,8 @@ The process list is a working grouping, not a named framework's categories.
   of Payment Integrity (public sector): over $4 billion prevented and recovered in FY2024, against $652.7 million in FY2023; $1 billion
   of recovery credited to machine learning that identifies check fraud. Self-reported; method not published. Grade A [TREASURY-2024].
 - **Cash and FX forecasting from data instead of submissions** ([monitor-diagnose-act](../patterns/monitor-diagnose-act.md);
-  automate; process). AIA Group Treasury (insurance): "up to 90% more accurate forecasts on specific cash flow items", a self-reported
-  statement with no denominator. Grade B [TREASURYTODAY-2024]. An unnamed mega-cap treasury ran legacy and machine-learning forecasts in
+  automate; process). AIA Group Treasury (insurance), a pilot in some markets: "up to 90% more accurate forecasts on specific cash flow items", a
+  self-reported statement with no denominator. Grade B [TREASURYTODAY-2024]. An unnamed mega-cap treasury ran legacy and machine-learning forecasts in
   parallel for about seven months, then "reverse parallel" for three, and reports about 25% better accuracy (statements at a peer-group
   meeting). Grade C (organization unnamed) [NEUGROUP-2025].
 
@@ -76,7 +76,7 @@ The process list is a working grouping, not a named framework's categories.
   ([end-to-end-case-agent](../patterns/end-to-end-case-agent.md); delegate; process). Argued in a vendor blog [KOGNITOS-2026]; in KPMG's
   survey of 1,013 finance leaders, organizations deploying agentic AI report stronger performance on key finance metrics, a perception
   measure [KPMG-2026]. No named deployment. Grade C. On a third-party benchmark of 537 entry-level analyst questions, the top agent scored
-  64.37% as accessed 2026-10-20 (evaluation, not deployment; grade D) [VALS-2026].
+  64.37% as of 2026-06-04 (evaluation, not deployment; grade D) [VALS-2026].
 
 **Reinvent the work** (operating model changes)
 
@@ -136,8 +136,9 @@ The process list is a working grouping, not a named framework's categories.
 - **Payment release and bank-detail changes stay under a person's control** (advisor rule drawn from the incidents). Arup's finance
   worker paid HK$200 million (about $25.6 million) in 15 transactions after a video call with deepfaked colleagues [CNN-2024]; the FBI
   lists virtual meeting applications among channels fraudsters compromise [FBI-2025].
-- **Accounting judgments stay with people:** estimates, policy choices and final sign-off. Stanford's write-up says the "final
-  judgment call" remains human, with seniors stepping in when system confidence drops [STANFORD-2025].
+- **Accounting judgments stay with people:** estimates, policy choices and final sign-off. Co-author Jung Ho Choi, quoted in
+  Stanford's write-up, says the "final judgment call" is still a human decision; seniors step in when system confidence drops
+  [STANFORD-2025].
 - **Risk frameworks:** NIST AI RMF 1.0 and its Generative AI Profile [NIST-AIRMF-2023; NIST-AI600-1-2024].
 - **EU AI Act:** Annex III lists AI that evaluates the creditworthiness of natural persons as high-risk, excluding AI used to detect
   financial fraud; most internal finance work is not on the list, consumer-credit work is [EU-AIACT-ANNEX3-2024].
@@ -146,13 +147,13 @@ The process list is a working grouping, not a named framework's categories.
 
 ## 7. Roles and how they evolve
 
-- **Accountants** spent 8.5% less time on routine back-office work and shifted toward client communication, quality assurance and
-  advisory work (accounting services firms) [STANFORD-2025].
+- **Accountants** spent 8.5% less time on routine back-office work; the write-up says they can redirect that time toward business
+  communication, quality assurance and client-facing advisory work (accounting services firms) [STANFORD-2025].
 - **Seniors become reviewers of AI output;** juniors gained less and accepted flagged outputs more often [STANFORD-2025].
 - **Capacity:** in a vendor survey, 60% of respondents are redeploying employees to higher-value work and 3% are cutting finance staff
   because AI replaced work [DATARAILS-2026].
-- **Talent mix:** most organizations are upskilling existing teams, but only 28% are rethinking the types of talent they need
-  [KPMG-2026].
+- **Talent mix:** 38% are upskilling existing finance teams and 28% are hiring for different skill sets; KPMG reads this as
+  retraining people in place rather than rethinking the talent mix [KPMG-2026].
 - **Process owners** set override and parallel-run rules and own the exception queue (advisor reading of the control guidance above).
 
 ## 8. Sources
@@ -160,12 +161,12 @@ The process list is a working grouping, not a named framework's categories.
 - **CFODIVE-2024**: CFO Dive, *Microsoft finance team uses Copilot* (press, 2024-09-17). https://www.cfodive.com/news/microsoft-finance-copilot-generativeai-software/727176/
 - **CNN-2024**: CNN Business, *British engineering giant Arup revealed as $25 million deepfake scam victim* (press, 2024-05-16). https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk
 - **DATARAILS-2026**: CFO Dive on a Datarails survey, *AI verification eats up 26% of finance teams' workweek* (vendor survey, 2026-10-06). https://www.cfodive.com/news/ai-verification-eats-26percent-finance-teams-workweek-datarails/832210/
-- **DELOITTE-DART-2026**: Deloitte DART, *COSO Releases Publication on Internal Controls Related to Generative AI* (professional body commentary, 2026-04-03). https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai
+- **DELOITTE-DART-2026**: Deloitte DART, *COSO Releases Publication on Internal Controls Related to Generative AI* (firm commentary, 2026-04-03). https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai
 - **EU-AIACT-ANNEX3-2024**: Regulation (EU) 2024/1689, *Annex III: High-risk AI systems* (regulation text via artificialintelligenceact.eu, 2024). https://artificialintelligenceact.eu/annex/3/
 - **FBI-2025**: FBI Internet Crime Complaint Center, *2024 IC3 Annual Report* (regulator, 2025). https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf
-- **GARTNER-2025**: Gartner, *Finance AI Adoption Remains Steady in 2025* (survey release, n=183, 2025-11-18). https://www.cpapracticeadvisor.com/2025/11/18/gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025/173371/
+- **GARTNER-2025**: Gartner, *Finance AI Adoption Remains Steady in 2025* (survey release via CPA Practice Advisor, n=183, 2025-11-18). https://www.cpapracticeadvisor.com/2025/11/18/gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025/173371/
 - **JOA-2026**: Journal of Accountancy, *COSO creates audit-ready guidance for governing generative AI* (professional body, 2026-02-26). https://www.journalofaccountancy.com/news/2026/feb/coso-creates-audit-ready-guidance-for-governing-generative-ai/
-- **KOGNITOS-2026**: Kognitos, *Why AI has not shortened the month-end close* (vendor blog, 2026-08-19). https://www.kognitos.com/blog/why-ai-has-not-shortened-the-month-end-close/
+- **KOGNITOS-2026**: Kognitos, *Why AI Hasn't Shortened Your Month-End Close* (vendor blog, 2026-08-19). https://www.kognitos.com/blog/why-ai-has-not-shortened-the-month-end-close/
 - **KPMG-2026**: KPMG International, *Global AI in Finance 2026* (survey, n=1,013, 2026-06). https://assets.kpmg.com/content/dam/kpmgsites/kz/pdf/2026/06/AI-in-Finance-ENG.pdf
 - **NEUGROUP-2025**: NeuGroup, *Working Cash Flow Forecast Magic With Data Wizards and ML Models* (peer-group community, 2025-09-24). https://connect.neugroup.com/public/blogs/working-cash-flow-forecast-magic-with-data-wizards-and-ml-models
 - **NIST-AIRMF-2023**: NIST, *AI Risk Management Framework 1.0* (standard-setter, 2023-01). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
@@ -173,5 +174,5 @@ The process list is a working grouping, not a named framework's categories.
 - **STANFORD-2025**: Stanford GSB Insights on Choi and Xie, *AI Is Reshaping Accounting Jobs by Doing the "Boring" Stuff* (academic, 2025-06-26). https://gsb.stanford.edu/insights/ai-reshaping-accounting-jobs-doing-boring-stuff
 - **TREASURY-2024**: US Department of the Treasury, *Enhanced Fraud Detection Processes, Including Machine Learning AI, Prevented and Recovered Over $4 Billion in Fiscal Year 2024* (government release, 2024-10-17). https://home.treasury.gov/news/press-releases/jy2650
 - **TREASURYTODAY-2024**: Treasury Today, *Best Cash Flow Forecasting Solution Winner: AIA* (press, 2024-01). https://treasurytoday.com/?p=93746
-- **VALS-2026**: Vals AI, *Finance Agent v1.1 Leaderboard* (third-party benchmark, accessed 2026-10-20). https://www.vals.ai/benchmarks/finance_agent
+- **VALS-2026**: Vals AI, *Finance Agent v1.1 Leaderboard* (third-party benchmark, updated 2026-06-04). https://www.vals.ai/benchmarks/finance_agent
 - **WAKEFIELD-2026**: CFO Dive on Wakefield Research for Maximor AI, *CFOs insist on human oversight for AI in accounting* (vendor-commissioned survey, 2026-01-28). https://www.cfodive.com/news/massive-trust-gap-hinders-cfo-ai-ambitions-study-finds/810786/

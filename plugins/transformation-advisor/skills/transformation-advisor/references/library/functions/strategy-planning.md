@@ -29,7 +29,7 @@ The process list is a working grouping; no process framework for strategy was us
 
 | Process | Key steps | Work types | Typical pain |
 |---|---|---|---|
-| Strategy development | Environment scanning; option generation; evaluation and choice; articulation | research-synthesis, expert-judgment, document-production | Option evaluation is slow and subjective: investor evaluators disagreed enough that an LLM's scores explained about 29% of variation in theirs (experiment) [CSASZAR-2024] |
+| Strategy development | Environment scanning; option generation; evaluation and choice; articulation | research-synthesis, expert-judgment, document-production | Option evaluation is subjective: individual judges agreed with each other less (ICC 0.25) than their averaged scores agreed with an LLM's (ICC 0.51) (experiment) [CSASZAR-2024] |
 | Market and competitive intelligence | Monitor sources; synthesize; draw implications | research-synthesis | No measured case found |
 | Annual planning, budgeting, targets | Assumptions; targets; resource allocation; reconcile bottom-up and top-down | data-reporting, coordination-scheduling, expert-judgment | Forecasts built from many manual submissions (see the finance card) [NEUGROUP-2025] |
 | Scenario and capital-allocation analysis | Scenario design; modelling; investment cases | data-reporting, expert-judgment | Strategic and executional decisions made in separate tools; Walmart built a simulation platform to connect them [INFORMS-2024] |
@@ -65,7 +65,7 @@ The process list is a working grouping; no process framework for strategy was us
   show the shape. For earnings, a working paper reports an LLM outperforming the median analyst at predicting annual earnings
   ("preliminary"). Idea (experiment only), grade D [CHICAGOBOOTH-2024].
 - **Continuous competitive-intelligence monitoring** ([monitor-diagnose-act](../patterns/monitor-diagnose-act.md); automate;
-  process). Described as an illustrative use in a corporate blog; no deployment or result. Idea, grade D [INDIAMART-2025, search-only].
+  process). Described as an illustrative use in a corporate blog; no deployment or result. Idea, grade D [INDIAMART-2025].
 
 **Delegate the outcome**
 
@@ -116,8 +116,8 @@ The process list is a working grouping; no process framework for strategy was us
 
 - **The choice stays human:** strategy, capital allocation and which options to pursue. In the consultation trial reviewers wanted to
   influence the themes and needed more confidence before reviewing only a share of responses [IAI-CONSULT-SCOT-2025].
-- **Tasks outside the frontier:** 19% lower odds of a correct answer when AI was used on a task outside its competence
-  [HBS-DELLACQUA-2023].
+- **Tasks outside the frontier:** consultants using AI were 19% less likely to produce a correct solution on a task chosen to be
+  outside AI's competence [HBS-DELLACQUA-2023].
 - **Missed themes:** check for what the synthesis left out, not only for what it got wrong [IAI-CONSULT-SCOT-2025].
 - **Homogenization:** with one AI idea, stories were 10.7% more similar to each other than with none (adjacent experiment)
   [EXETER-2024]. Keep human-generated options in the set.
@@ -141,7 +141,7 @@ The process list is a working grouping; no process framework for strategy was us
 - **EXETER-2024**: University of Exeter on Doshi and Hauser, *AI found to boost individual creativity but results in less varied content* (academic, 2024-07-15). https://news.exeter.ac.uk/?p=13749
 - **HBS-DELLACQUA-2023**: Dell'Acqua et al., *Navigating the Jagged Technological Frontier*, HBS Working Paper 24-013 (academic, 2023-09). https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
 - **IAI-CONSULT-SCOT-2025**: Incubator for AI (UK government), *Consult Evaluation: Scottish Government's Non-surgical cosmetic procedures consultation* (government evaluation, 2025-03-20). https://digitalgovernmenthub.org/wp-content/uploads/2026/02/Scot_Gov_NSCP_Evaluation_Report.pdf
-- **INDIAMART-2025**: IndiaMART corporate blog, *The new C-suite ally: generative AI* (press, 2025-07-29; search-only). https://corporate.indiamart.com/2025/07/29/the-new-c-suite-ally-generative-ai
+- **INDIAMART-2025**: IndiaMART corporate blog, *The new C-suite ally: generative AI* (firm blog, 2025-07-29). https://corporate.indiamart.com/2025/07/29/the-new-c-suite-ally-generative-ai
 - **INFORMS-2024**: Mehrotra et al., *Optimizing Walmart's Supply Chain from Strategy to Execution*, INFORMS Journal on Applied Analytics 54(1) (academic, 2024-01). https://courses.ie.bilkent.edu.tr/ie479/wp-content/uploads/sites/16/2024/11/Optimizing-Walmarts-Supply-Chain-from-Strategy-to-Execution.pdf
 - **NEUGROUP-2025**: NeuGroup, *Working Cash Flow Forecast Magic With Data Wizards and ML Models* (peer-group community, 2025-09-24). https://connect.neugroup.com/public/blogs/working-cash-flow-forecast-magic-with-data-wizards-and-ml-models
 - **NIST-AIRMF-2023**: NIST, *AI Risk Management Framework 1.0* (standard-setter, 2023-01). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf

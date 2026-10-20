@@ -38,7 +38,7 @@ The process list is a working grouping under the "manage customer service" categ
 | Escalation, complaints, disputes | Judge exceptions; apply policy and law | expert-judgment, client-interaction | Advanced technologies may be less likely to waive fees, per the CFPB [CFPB-2023] |
 | Knowledge management | Write and maintain answers; find gaps from failed contacts | document-production, research-synthesis | Some questions could not be answered because a source page was too long [GDS-2024] |
 | Quality and coaching | Sample conversations; score; coach | review-assurance | Handle time hides quality: ratings can improve without fewer repeat contacts [NI-2026] |
-| Workforce planning | Forecast volume; schedule; train | coordination-scheduling, data-reporting | New-agent ramp and attrition: $10,000-20,000 per agent, cited by one study [NBER-BRYNJOLFSSON-2023] |
+| Workforce planning | Forecast volume; schedule; train | coordination-scheduling, data-reporting | Attrition: industry estimates of $10,000-20,000 per departing agent, cited by one study [NBER-BRYNJOLFSSON-2023] |
 
 ## 3. Where AI is changing the work
 
@@ -47,8 +47,8 @@ The process list is a working grouping under the "manage customer service" categ
 - **Agent assist: drafts and next-step suggestions inside the chat**
   ([grounded-knowledge-assistant](../patterns/grounded-knowledge-assistant.md); augment; step). Alibaba, Taobao after-sales
   (e-commerce): four-week randomized trial with 5,940 new agents; issue identification time -8.2%, chat duration -1.1%, dissatisfaction
-  3.4% lower, ratings +1.2%; no significant effect on three-day repeat contacts; top-quintile agents saw lower quality. Independent
-  (academic authors with an Alibaba co-author). Grade A [NI-2026]. An unnamed Fortune 500 software firm's staggered rollout to 5,179
+  3.4% lower, ratings +1.2%; no significant effect on three-day repeat contacts; top-quintile agents saw lower quality. Academic
+  authors with two Alibaba co-authors. Grade A [NI-2026]. An unnamed Fortune 500 software firm's staggered rollout to 5,179
   agents: about 14% more issues resolved per hour, about 34% for novice or low-skilled agents, minimal effect for experienced agents.
   Independent; firm unnamed. Grade B [NBER-BRYNJOLFSSON-2023].
 - **Draft replies to written inbound messages** ([draft-review-loop](../patterns/draft-review-loop.md); augment; step). UC San Diego
@@ -68,10 +68,12 @@ The process list is a working grouping under the "manage customer service" categ
   - Salesforce help site (software): over 500,000 conversations in six months, more than 84% of questions "resolved" and 4% handed to
     a person; "resolved" is not defined publicly; renewal questions go to people. Self-reported. Grade A [SALESFORCE-2025].
   - GOV.UK Chat (public sector): in January 2024, nearly 70% found answers useful but accuracy was below the required level; a 2026
-    press report of a GDS update gives expert-rated accuracy rising from 76% to 90% and 508 jailbreak attempts mitigated.
+    press report of a GDS update gives accuracy in internal benchmarking rising from 76% to 90% and 508 jailbreak attempts
+    mitigated.
     Self-reported. Grade A [GDS-2024; GOVTRANS-2026].
-- **Pre-sale information chatbot** ([service-agent-escalation](../patterns/service-agent-escalation.md); automate; step). Up to 16.3%
-  more sales against no support on an unnamed retail platform (randomized, independent). Grade B [FANG-2026].
+- **Pre-sale information chatbot** ([service-agent-escalation](../patterns/service-agent-escalation.md); automate; step). 16.3% more
+  sales than an automated "support unavailable" message on an unnamed retail platform (randomized; two authors consulted for the
+  platform and one is its employee). Grade B [FANG-2026].
 - **Passive caller authentication and public-service voicebots**: archetype entries `security-identity-access-21` (A) and
   `tax-controversy-18` (A).
 
@@ -102,8 +104,8 @@ tax-authority staff).
   [NBER-BRYNJOLFSSON-2023]; 17.9% of treated Alibaba agents never used the tool, and use fell from 39.3% in the lowest-rated quintile
   to 18.3% in the highest [NI-2026].
 - **Containment and handoff:** more than 84% "resolved", 4% handed to a person (definition unpublished) [SALESFORCE-2025].
-- **Answer accuracy rated by experts:** 76% rising to 90% (self-reported; the only expert-rated accuracy series found)
-  [GOVTRANS-2026].
+- **Answer accuracy against published guidance:** 76% rising to 90% in internal benchmarking (self-reported; the only
+  accuracy series found) [GOVTRANS-2026].
 - **Customer attitude:** 64% of 5,728 customers would prefer companies did not use AI in service; 53% would consider switching
   [GARTNER-2024].
 
@@ -134,7 +136,8 @@ tax-authority staff).
   chatbot [CRT-2024]. Cursor's support agent invented a one-device policy; a company developer said the response was incorrect
   [ARS-2025].
 - **Keep a path to a person and disclose AI.** The CFPB says deficient chatbots that block access to live support can lead to law
-  violations [CFPB-2023]; EU deployers must tell people they are interacting with an AI system [EU-AIACT-ART50-2024].
+  violations [CFPB-2023]; in the EU, systems that interact with people must be designed so people are told they are dealing with an AI system (a
+  provider duty) [EU-AIACT-ART50-2024].
 - **Ground answers in approved content and test before release.** GDS removed personal data from the knowledge base, ran a red-team
   exercise and recorded jailbreak attempts [GDS-2024; GOVTRANS-2026]. Treat confabulation and over-reliance as risks to manage
   [NIST-AI600-1-2024].
