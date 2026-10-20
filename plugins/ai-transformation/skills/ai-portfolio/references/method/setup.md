@@ -154,7 +154,7 @@ default stages, adding the audit practice's existing independence check to the `
 item that touches audit clients.
 
 Gatekeepers: practice leaders at `g1` and `g2` (they control staff time), the risk and quality partner at `g2`
-and `g3`, the finance director at `g3` and `g4`. Light path: items in the firm's low risk tier and individual-
+and `g3`, the finance director at `g3` and `g4`. Light path: items in the firm's lowest risk tier and individual-
 productivity items combine `g1` and `g2`, and the head of AI decides `g0` alone. Forum: managing partner,
 practice leaders, risk and quality partner, heads of IT and finance, people lead and head of AI; monthly, with a
 rebalance at every third review. Live limit: six, the number of owners who can give the work real time.

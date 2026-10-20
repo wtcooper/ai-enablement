@@ -71,7 +71,7 @@ items:
     owner: role                    # leads the work
     sponsor: role                  # controls the resources it needs next
     benefit_owner: role | null     # owns the benefit in the business
-    risk_tier: string              # tier id from overlay/policy.md, else low | medium | high (provisional)
+    risk_tier: string              # tier id from overlay/policy.md risk_tiers (ai-governance), e.g. tier-2
     gate_path: light | full
     value: [ { lever: id, low: number, high: number, unit: string, assumptions: string } ]
     scores: { value: 1-5, feasibility: 1-5, data_readiness: 1-5, risk: 1-5, time_to_value: 1-5, strategic_fit: 1-5 }
@@ -155,7 +155,7 @@ settings:
 stages:
   - { id: discover, purpose: "Frame the problem and look at the data", entry: ["Passed the screen"], exit: ["Baseline from records", "Data seen in its real state"], gatekeepers: ["Practice leader"] }
 gate_paths:
-  light: "Low risk tier and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
+  light: "tier-1 and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
   full: "Every other item: all gates, gatekeepers per stage"
 roles:
   review_forum: ["Managing partner", "Practice leaders", "Risk and quality partner", "Head of IT", "Finance director", "Head of AI"]
@@ -191,7 +191,7 @@ items:
     owner: "Tax operations manager"
     sponsor: "Tax practice leader"
     benefit_owner: "Tax practice leader"
-    risk_tier: "medium"
+    risk_tier: "tier-2"
     gate_path: full
     value:
       - { lever: capacity, low: 900, high: 2400, unit: "hours/season", assumptions: "3,000 K-1-heavy returns; 0.3-0.8 h saved each after review time" }

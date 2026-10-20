@@ -180,7 +180,7 @@ lead to changing or decommissioning the system [UKGOV-2025].
 *Illustrative*, continuing the firm. **K-1 extraction at `g2`.** The prototype ran on 40 of last season's
 returns. Evidence: data available and governed (yes); skills sourced (the tax data team plus the delivery team);
 process redesign (reviewers check flagged fields instead of keying: owner, the tax operations manager); controls
-(the firm's medium tier: reviewer checks every flagged field); business case on real run costs (holds within the
+(the firm's second risk tier: reviewer checks every flagged field); business case on real run costs (holds within the
 range). Outcome: Go to pilot; resources: two preparers part-time, released by the tax practice leader; next gate
 `g3` needs pilot results against the comparison offices and the readiness checklist. Kill criterion: extraction
 errors found at review above the agreed threshold.

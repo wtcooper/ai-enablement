@@ -77,8 +77,9 @@ improvement from business process change [MSFT-PLAN-2026]; the shared prioritize
 **`gate_path`**: `light` or `full`. A lighter path for low-risk items follows practice in regulated settings
 [HBR-2026; OMB-2025]; which items qualify is set in step 1.
 
-**`risk_tier`**: the tier id from `overlay/policy.md` when ai-governance has written it. Without it, use `low`,
-`medium` or `high` and mark the tier provisional in the intake record.
+**`risk_tier`**: the tier id from `risk_tiers` in `overlay/policy.md`, written by ai-governance (its defaults are
+`tier-1` to `tier-4`, set by the consequence of an error and who relies on the output). Without a policy, place the
+item against ai-governance's default tiers, mark the tier provisional in the intake record, and offer ai-governance.
 
 **Early-warning `type`**: `slippage`, `cost-overrun`, `performance-shortfall` [HBR-2026].
 
