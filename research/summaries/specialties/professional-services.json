@@ -1,0 +1,133 @@
+{
+ "field": "professional-services",
+ "specialties": [
+  {
+   "name": "Hours, fees and pricing models",
+   "description": "Time records, fee structures, rates and partner pay rethought as AI shortens work billed by the hour.",
+   "examples": [
+    "professional-services-firm-finance-01",
+    "professional-services-scoping-pricing-18"
+   ]
+  },
+  {
+   "name": "Clients setting terms for AI use",
+   "description": "Clients and buyers demand disclosure, consent, limits and proof of savings for AI used on their work.",
+   "examples": [
+    "professional-services-work-production-25",
+    "professional-services-quality-review-17"
+   ]
+  },
+  {
+   "name": "Juniors and the leverage pyramid",
+   "description": "Hiring, training and promoting juniors, and sizing the pyramid, as AI absorbs routine junior work.",
+   "examples": [
+    "professional-services-talent-learning-11",
+    "professional-services-talent-learning-19"
+   ]
+  },
+  {
+   "name": "Fabricated citations and AI errors",
+   "description": "Catching invented citations and AI errors before work reaches courts or clients, and correcting them after.",
+   "examples": [
+    "professional-services-work-production-11",
+    "professional-services-quality-review-14"
+   ]
+  },
+  {
+   "name": "AI products and AI-native firms",
+   "description": "Firms sell their expertise as AI tools, portals and agents; AI-native rivals deliver without the pyramid.",
+   "examples": [
+    "professional-services-knowledge-management-22",
+    "professional-services-firm-finance-17"
+   ]
+  },
+  {
+   "name": "Staffing teams of people and agents",
+   "description": "Matching people, contractors and AI agents to client work, and planning capacity around them.",
+   "examples": [
+    "professional-services-staffing-resourcing-13",
+    "professional-services-delivery-management-14"
+   ]
+  }
+ ],
+ "assign": {
+  "professional-services-billing-collections-01": "Hours, fees and pricing models",
+  "professional-services-billing-collections-12": "Hours, fees and pricing models",
+  "professional-services-billing-collections-15": "Hours, fees and pricing models",
+  "professional-services-firm-finance-01": "Hours, fees and pricing models",
+  "professional-services-firm-finance-02": "Hours, fees and pricing models",
+  "professional-services-firm-finance-06": "Hours, fees and pricing models",
+  "professional-services-firm-finance-13": "Hours, fees and pricing models",
+  "professional-services-delivery-management-16": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-06": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-13": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-14": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-15": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-16": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-17": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-18": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-19": "Hours, fees and pricing models",
+  "professional-services-scoping-pricing-20": "Hours, fees and pricing models",
+  "professional-services-client-development-14": "Clients setting terms for AI use",
+  "professional-services-client-development-15": "Clients setting terms for AI use",
+  "professional-services-client-development-17": "Clients setting terms for AI use",
+  "professional-services-client-development-20": "Clients setting terms for AI use",
+  "professional-services-pursuit-proposals-18": "Clients setting terms for AI use",
+  "professional-services-quality-review-16": "Clients setting terms for AI use",
+  "professional-services-quality-review-17": "Clients setting terms for AI use",
+  "professional-services-scoping-pricing-07": "Clients setting terms for AI use",
+  "professional-services-scoping-pricing-09": "Clients setting terms for AI use",
+  "professional-services-scoping-pricing-10": "Clients setting terms for AI use",
+  "professional-services-scoping-pricing-11": "Clients setting terms for AI use",
+  "professional-services-scoping-pricing-12": "Clients setting terms for AI use",
+  "professional-services-acceptance-risk-11": "Clients setting terms for AI use",
+  "professional-services-billing-collections-14": "Clients setting terms for AI use",
+  "professional-services-client-development-16": "Clients setting terms for AI use",
+  "professional-services-pursuit-proposals-17": "Clients setting terms for AI use",
+  "professional-services-work-production-25": "Clients setting terms for AI use",
+  "professional-services-firm-finance-14": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-02": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-03": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-04": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-05": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-08": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-12": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-13": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-19": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-20": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-23": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-24": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-25": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-06": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-07": "Juniors and the leverage pyramid",
+  "professional-services-talent-learning-11": "Juniors and the leverage pyramid",
+  "professional-services-quality-review-01": "Fabricated citations and AI errors",
+  "professional-services-quality-review-14": "Fabricated citations and AI errors",
+  "professional-services-quality-review-02": "Fabricated citations and AI errors",
+  "professional-services-quality-review-03": "Fabricated citations and AI errors",
+  "professional-services-quality-review-04": "Fabricated citations and AI errors",
+  "professional-services-quality-review-13": "Fabricated citations and AI errors",
+  "professional-services-quality-review-15": "Fabricated citations and AI errors",
+  "professional-services-work-production-11": "Fabricated citations and AI errors",
+  "professional-services-client-development-21": "AI products and AI-native firms",
+  "professional-services-knowledge-management-22": "AI products and AI-native firms",
+  "professional-services-scoping-pricing-23": "AI products and AI-native firms",
+  "professional-services-work-production-21": "AI products and AI-native firms",
+  "professional-services-scoping-pricing-22": "AI products and AI-native firms",
+  "professional-services-scoping-pricing-21": "AI products and AI-native firms",
+  "professional-services-firm-finance-17": "AI products and AI-native firms",
+  "professional-services-staffing-resourcing-01": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-02": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-05": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-11": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-12": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-13": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-14": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-15": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-16": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-17": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-19": "Staffing teams of people and agents",
+  "professional-services-staffing-resourcing-21": "Staffing teams of people and agents",
+  "professional-services-delivery-management-14": "Staffing teams of people and agents"
+ }
+}

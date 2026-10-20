@@ -189,15 +189,15 @@ def incat(u, pats, sc):
     if sc == "gov": return x["change_scope"] != "model"
     return True
 PICKS = {
-    "Triage, monitoring and response": ["assurance-controls-testing-09", "tax-controversy-03", "security-operations-01"],
-    "Drafting with expert review": ["assurance-controls-testing-01", "tax-research-advisory-14", "security-incident-response-14"],
-    "Documents to decisions, and reconciliation": ["assurance-substantive-testing-10", "tax-compliance-corporate-02", "security-identity-access-03"],
-    "Testing every item, not a sample": ["assurance-controls-testing-08", "tax-controversy-15", "security-application-security-07"],
-    "Research and knowledge assistants": ["assurance-planning-risk-assessment-01", "tax-research-advisory-01", "security-governance-risk-01"],
-    "Agents that own a case end to end": ["assurance-substantive-testing-21", "tax-compliance-individual-business-05", "security-operations-09"],
-    "Data conversion at scale": ["assurance-planning-risk-assessment-07", "tax-indirect-tax-01", "security-governance-risk-05"],
-    "Governing, testing and controlling AI": ["assurance-quality-management-01", "tax-compliance-individual-business-20", "security-ai-security-02"],
-    "New services, pricing and operating models": ["assurance-assurance-over-ai-17", "tax-research-advisory-25", "security-application-security-17"],
+    "Triage, monitoring and response": ["professional-services-acceptance-risk-03", "assurance-controls-testing-09", "tax-controversy-03", "security-operations-01"],
+    "Drafting with expert review": ["professional-services-work-production-08", "assurance-controls-testing-01", "tax-research-advisory-14", "security-incident-response-14"],
+    "Documents to decisions, and reconciliation": ["professional-services-billing-collections-05", "assurance-substantive-testing-10", "tax-compliance-corporate-02", "security-identity-access-03"],
+    "Testing every item, not a sample": ["professional-services-billing-collections-04", "assurance-controls-testing-08", "tax-controversy-15", "security-application-security-07"],
+    "Research and knowledge assistants": ["professional-services-knowledge-management-01", "assurance-planning-risk-assessment-01", "tax-research-advisory-01", "security-governance-risk-01"],
+    "Agents that own a case end to end": ["professional-services-acceptance-risk-08", "assurance-substantive-testing-21", "tax-compliance-individual-business-05", "security-operations-09"],
+    "Data conversion at scale": ["professional-services-work-production-03", "assurance-planning-risk-assessment-07", "tax-indirect-tax-01", "security-governance-risk-05"],
+    "Governing, testing and controlling AI": ["professional-services-quality-review-07", "assurance-quality-management-01", "tax-compliance-individual-business-20", "security-ai-security-02"],
+    "New services, pricing and operating models": ["professional-services-client-development-22", "assurance-assurance-over-ai-17", "tax-research-advisory-25", "security-application-security-17"],
 }
 order = {"A": 0, "B": 1, "C": 2, "D": 3}
 byid = {u["id"]: u for _, u in allu}
@@ -214,10 +214,10 @@ for name, what, pats, sc in CATS:
             if not pool: continue
             u = sorted(pool, key=lambda v: (v.get("title", "").startswith("Idea"), order.get(v.get("grade"), 9), len(v.get("title", ""))))[0]
         ex.append(f"<font color='#57606a'><b>{label[0]}</b></font>  {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
-    crow.append([P(f"<b>{e(name)}</b><br/><font size='7.6' color='#57606a'>{e(what)}</font>", ss["cell"]),
-                 P(f"<b>{n}</b><br/><font size='7.3' color='#57606a'>" + " · ".join(f"{l[0]}{len(counts[a])}" for a, l, _ in ARCHETYPES) + "</font>", ss["cell"]),
-                 P("<br/>".join(ex), ParagraphStyle("ex", parent=ss["cell"], fontSize=7.8, leading=10.1))])
-ct = Table(crow, colWidths=[2.2 * inch, 1.15 * inch, 3.65 * inch], repeatRows=1)
+    crow.append([P(f"<b>{e(name)}</b><br/><font size='7.2' color='#57606a'>{e(what)}</font>", ParagraphStyle("cn", parent=ss["cell"], fontSize=8.4, leading=10.4)),
+                 P(f"<b>{n}</b><br/><font size='7.0' color='#57606a'>" + "<br/>".join(" ".join(f"{l[0]}{len(counts[a])}" for a, l, _ in ARCHETYPES[i:i + 2]) for i in (0, 2)) + "</font>", ss["cell"]),
+                 P("<br/>".join(ex), ParagraphStyle("ex", parent=ss["cell"], fontSize=7.0, leading=8.6))])
+ct = Table(crow, colWidths=[1.9 * inch, 0.65 * inch, 4.45 * inch], repeatRows=1)
 ct.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, 0), 0.8, NAVY),
                         ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE), ("TOPPADDING", (0, 0), (-1, -1), 3),
                         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5)]))
@@ -227,12 +227,12 @@ story += [heading("Executive summary", ss["title"], 0, "summary", "Executive sum
             f"from the AI Transformation Advisor's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
           P("<b>Key takeaways</b>", ss["ct"]), Spacer(1, 4)]
 take = [
-    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in four fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as pricing and billing AI-assisted work, auditing a client's own AI, tax authorities' own AI, and securing AI models and agents. Every example names its sources and was checked against them.",
-    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, professional services {pct(abshare['professional-services'], tot['professional-services'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations, application security and AI security; audit controls and substantive testing; legal and advisory work production. Thinnest: tax provision and Pillar Two, transfer pricing, staffing, billing and collections. Firms rarely publish measured results from their own AI use.",
+    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in four fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI or tax authorities' own AI. Every example names its sources and was checked against them.",
+    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, professional services {pct(abshare['professional-services'], tot['professional-services'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations and AI security; audit testing; legal and advisory work production. Thinnest: tax provision, transfer pricing, staffing, billing. Firms rarely publish measured results.",
     f"<b>AI mostly does a first pass that a person checks.</b> {pct(lad['augment'], N)}% of examples augment a step and {pct(lad['assist'], N)}% assist a person; {pct(lad['automate'], N)}% automate a step and {pct(lad['delegate'], N)}% delegate a multi-step outcome to an agent with human checkpoints.",
     f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in every field.",
-    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: the lawyer, consultant or accountant under existing professional duties (courts now sanction unverified AI citations), the auditor for the opinion, the tax practitioner under existing conduct rules, and security leaders for the decisions that start regulatory reporting clocks.",
-    f"<b>Beyond efficiency.</b> {modelscope} examples change the service, pricing or operating model, not just a step: fixed, outcome and subscription fees replacing hours, AI assurance services, agent platforms in tax firms, and security teams rebuilt around supervising AI.",
+    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: professionals under existing duties (courts sanction unverified AI citations), the auditor for the opinion, the tax practitioner under existing conduct rules, and security leaders for the decisions that start regulatory reporting clocks.",
+    f"<b>Beyond efficiency.</b> {modelscope} examples change the service, pricing or operating model, not just a step: fixed and outcome fees replacing hours, AI assurance services, agent platforms in tax firms, security teams rebuilt around supervising AI.",
 ]
 story.append(ListFlowable([ListItem(P(t, ss["body"]), leftIndent=12, value="•") for t in take], bulletType="bullet",
                           leftIndent=12, bulletFontName="Sans", bulletColor=NAVY))
@@ -258,6 +258,11 @@ story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss
 
 # Per-field category pages
 PACK_PICKS = {   # hand-picked where the automatic choice fits the category poorly: (arch, category) -> [ids]
+    ("professional-services", "Triage, monitoring and response"): ["professional-services-acceptance-risk-03", "professional-services-delivery-management-05"],
+    ("professional-services", "Drafting with expert review"): ["professional-services-work-production-06", "professional-services-work-production-08"],
+    ("professional-services", "Research and knowledge assistants"): ["professional-services-knowledge-management-01", "professional-services-work-production-01"],
+    ("professional-services", "Governing, testing and controlling AI"): ["professional-services-quality-review-07", "professional-services-work-production-23"],
+    ("professional-services", "New services, pricing and operating models"): ["professional-services-client-development-22", "professional-services-firm-finance-10"],
     ("assurance", "Documents to decisions, and reconciliation"): ["assurance-substantive-testing-10", "assurance-completion-reporting-06"],
     ("assurance", "Research and knowledge assistants"): ["assurance-planning-risk-assessment-01", "assurance-quality-management-12"],
     ("assurance", "Agents that own a case end to end"): ["assurance-substantive-testing-21", "assurance-planning-risk-assessment-11"],
