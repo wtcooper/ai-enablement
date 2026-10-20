@@ -19,7 +19,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
 5. **Quality evidence is mostly cautionary.** The independent measures found are: legal AI research tools hallucinated 17% to 33% of the time (STANFORD-LEGALAI-2024); consultants using GPT-4 were 19% less likely to produce correct solutions on a task outside the AI frontier (HBS-JAGGED-2023); the best model scored 64.37% on a 537-question finance-analyst benchmark (VALS-FAB-2026); and accountants who followed AI suggestions on uncertain transactions risked adding errors (STANFORD-JAR-2026; MITSLOAN-CHOIXIE-2025). No parallel-run or inspection result for AI in IA or SOX work was found.
 6. **Where firms report results, they are vendor-published.** The one figure from a named IA team is Reddit's: 175 controls, more than 40% of SOX scope, 60% less testing time per control in three months, published in the vendor's press release (OPTRO-CRX-2026). KPMG expects the first wave of AI-related material weaknesses in 2027 (KPMG-SOX2030-2026), which makes controls advisory a forward-looking demand story.
 
-**Coverage.** 49 sources opened across professional bodies, regulators, standard-setters, firms, vendors, academic work, surveys and press (counts in section 5). Several primary sources were blocked (ABA, SRA, PCAOB project page, Wolters Kluwer) and reached through mirrors or secondary reports; each case is marked.
+**Coverage.** 49 sources opened across nine source types: professional bodies, press, firms, regulators, academic work, surveys, vendors, standard-setters and a community body (counts in section 5). Several primary sources were blocked (ABA, SRA, PCAOB project page, Wolters Kluwer) and reached through mirrors or secondary reports; each case is marked.
 
 ---
 
@@ -856,7 +856,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
   maturity: in-production
   problem: >-
     Deloitte Australia's 'independent assurance review' for the Department of Employment and Workplace Relations contained
-    nonexistent references and citations, and was re-uploaded with a note that a generative AI tool chain had been used (CITYAM-DELOITTE-2025;
+    nonexistent references and citations, and was re-uploaded with an appendix note that a generative AI large language model had been used (CITYAM-DELOITTE-2025;
     STORYBOARD18-DELOITTE-2025). The SRA reported 42 reports of potential AI misuse between July 2025 and July 2026 (LEGALCHEEK-SRA-2026).
   solution: >-
     Every AI-assisted deliverable passes a verification gate: each citation, quotation and figure is checked against the primary
@@ -1086,7 +1086,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
 
 ### 3.4 Guardrails and regulatory points
 
-- **Competence, confidentiality, communication, supervision, fees.** ABA Formal Opinion 512 (2024-07-29): lawyers need a reasonable understanding of the tool, must verify output, must protect client information, and must charge reasonable fees; it says a flat fee may be unreasonable if AI makes the work much quicker (ABA-FO512-2024, II.A-F, pp. 12-13). Texas Opinion 705 (2025-02) applies the Texas rules similarly (TXBAR-OP705-2025). The SRA warning notice (2026-08-18, read via Legal Cheek) says firms need effective governance, systems and controls for AI risk (LEGALCHEEK-SRA-2026). These bind lawyers; no Florida, NY or California opinion text was read; the Florida page returned no content.
+- **Competence, confidentiality, communication, supervision, fees.** ABA Formal Opinion 512 (2024-07-29): lawyers need a reasonable understanding of the tool, must verify output, must protect client information, and must charge reasonable fees; it says a flat fee may be unreasonable if AI makes the work much quicker (ABA-FO512-2024, sections II.A-F; fees pp. 11-13). Texas Opinion 705 (2025-02) applies the Texas rules similarly (TXBAR-OP705-2025). The SRA warning notice (2026-08-18, read via Legal Cheek) says firms need effective governance, systems and controls for AI risk (LEGALCHEEK-SRA-2026). These bind lawyers; no Florida, NY or California opinion text was read; the Florida page returned no content.
 - **Accountancy bodies.** The AICPA Code's general standards and confidential client information rules apply to AI (JOFA-ETHICS-2026). The AICPA Ethics Staff Insights article "AI Through an Ethics Lens" is cited but its text is in the Online Ethics Library and was not read. ACCA reports the January 2026 PCRT update suggests AI disclosure in engagement letters (ACCA-ENGLETTERS-2026). Management Consultancies Association guidance: none found.
 - **Audit-side models.** AICPA practice aid (2026-10-13; two parts: client's AI in financial reporting, and the firm's AI in the audit; more guidance to be added) (AICPA-AUDITAID-2026). FRC guidance (2026-03-30): three risks to audit quality (deficient output, misuse, non-compliant methodology) and mitigations of design, certification, staff education and governance, and human in the loop (FRC-GENAIGUIDE-2026, pp. 4-6). PCAOB staff spotlight (2024-07; larger firms mainly) (PCAOB-GENAI-2024).
 - **Control frameworks.** COSO GenAI (2026-02-23); IIA AI Auditing Framework (2024-09-13); NIST AI RMF Generative AI Profile (NIST AI 600-1, released 2024-07-26 per the NIST page) (NIST-AIRMF-2024).
@@ -1221,7 +1221,7 @@ All entries opened (`access: full`) unless marked search-only. Provenance of fig
 | SEC-AIWASH-2026 | Law-firm blog summaries of SEC AI-claims actions, August-September 2026 | Secondary blogs only; not opened |
 | PROTIVITI-TOPTECH | Protiviti technology-risk survey (23% of IT audit functions using AI/ML per a search summary) | Year not confirmed; not opened |
 
-**Source counts by type (opened, 49 distinct):** professional-body 12, regulator 7, standard-setter 2, firm 9, press 8, survey 4, vendor 3, academic 6, community 1, conference 0, podcast 0, job-posting 0. Nine of the eleven type values in the vocabulary that apply here are represented.
+**Source counts by type (opened, 49 distinct):** professional-body 11, press 9, firm 8, regulator 6, academic 5, survey 4, vendor 3, standard-setter 2, community 1; conference, podcast and job-posting 0. Nine of the twelve vocabulary source types are represented.
 
 ---
 
