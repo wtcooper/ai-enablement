@@ -1,0 +1,209 @@
+[
+ {
+  "id": "professional-services-delivery-management-01",
+  "title": "Delivery plan and handoff brief drafted from deal records and call transcripts",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Context is lost between the deal team and the delivery team, and each new team member is briefed by hand.",
+  "approach": [
+   "An agent drafts delivery plans and architecture documents from the statement of work, deal record and transcripts; the architect signs off.",
+   "Spaulding Ridge's executive chair says its Moonnox agent cut drafting a solution architecture document from about 80 hours to under 20 (self-reported).",
+   "Certinia's results panel lists 60% faster client onboarding without naming the agent or customer (vendor-published).",
+   "Engagement and delivery leads approve the handoff pack against the signed statement of work before kickoff."
+  ],
+  "who": "Spaulding Ridge, Certinia, Kantata, Rocketlane"
+ },
+ {
+  "id": "professional-services-delivery-management-02",
+  "title": "Meeting capture turned into summaries, action items and backlogs, with consent controls",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Consultants spend hours writing call notes, requirements and technical plans, and onboarding teams take detailed notes and follow up by hand.",
+  "approach": [
+   "AI turns meeting transcripts into summaries, decisions, action items, requirements and backlogs, and a person checks them before they circulate.",
+   "Diabsolut cut documentation time by 70% with agents in Slack (vendor-published); EarthWise Pet's in-house team uses Rocketlane call summaries.",
+   "In a study of 12 Finnish IT project-management consultants, two used meeting transcription; effects are interviewee-reported, not measurements (independent).",
+   "The meeting organiser confirms consent before recording; the owner checks the summary and action list before they go to the client."
+  ],
+  "who": "Diabsolut, EarthWise Pet, Deloitte, Certinia"
+ },
+ {
+  "id": "professional-services-delivery-management-03",
+  "title": "Agent-drafted status reports and steering-committee packs from live project data",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Project managers assemble status packs by hand from budgets, task lists, emails and notes; in Wellingtone's report, 72% spend half a day or more collating reports monthly.",
+  "approach": [
+   "A model grounded in the engagement's own data drafts the status report or steering pack; the project manager edits and sends it.",
+   "Nextview's Project Assistant in Slack assembles steering-committee reports; Nextview says they used to take hours and now generate with a click (vendor-published).",
+   "PwC US markets Intelligent Status Insights; its page projects about 40% lower administrative project overhead (vendor-published), naming no client.",
+   "The project manager reviews each draft before it reaches the steering committee or client."
+  ],
+  "who": "Nextview, Automation Consultants, PwC US"
+ },
+ {
+  "id": "professional-services-delivery-management-04",
+  "title": "Ask for project status, budget use and anomalies in plain language",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "At zeb, project managers had to navigate the right paths and apps in SAP to find project information, often in a different context from their question.",
+  "approach": [
+   "zeb and NTT DATA built SAP agents that answer plain-language questions on owners, timelines and status, forecast budget use and flag anomalies.",
+   "zeb's head of SAP solutions says the implementation took only a few weeks (vendor-published); no figures published.",
+   "The project manager reads the answer and decides; the case study does not describe formal review steps."
+  ],
+  "who": "zeb, NTT DATA"
+ },
+ {
+  "id": "professional-services-delivery-management-05",
+  "title": "Agents flag slipping milestones, missing time entries and project health risks",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Slippage and overdue milestones surface late, and project managers chase status, missing time entries and overdue tasks by hand.",
+  "approach": [
+   "Agents scan project records on a schedule, score health and route alerts to the project manager or PMO leader.",
+   "Siemens Digital Industries' SVP says Certinia's Project Agent, built on Salesforce, is making early discrepancy identification a reality across thousands of projects.",
+   "Deltek says firms on its platform see a 16% increase in on-time project delivery (vendor-published); method not stated.",
+   "The project manager acts on each flag; the agent identifies anomalies but does not change records."
+  ],
+  "who": "Siemens Digital Industries, Certinia, Deltek"
+ },
+ {
+  "id": "professional-services-delivery-management-06",
+  "title": "Scope-drift detection against agreed scope, with prompts to raise a change order",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Scope expands through chat messages and emails that start with a quick question, and by the time the project manager notices the work is under way.",
+  "approach": [
+   "An agent compares client requests with agreed scope: in-scope ones pass, out-of-scope ones alert the project manager, and ambiguous ones are escalated.",
+   "A vendor guide describes this; Certinia's PMO Quality agent scans project scope regularly, and Oracle mentions AI-driven change management.",
+   "Vendor illustration, not a measurement: a USD 120,000 project scoped at 400 hours ran to 520, giving back USD 36,000 of margin.",
+   "The project manager makes the final call on each flagged request; the engagement lead decides whether to raise scope with the client."
+  ],
+  "who": "Certinia, Oracle, vendor guides"
+ },
+ {
+  "id": "professional-services-delivery-management-07",
+  "title": "Engagement margin and budget monitoring with alerts on overruns and missing timesheets",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Margin leaks during delivery but leadership sees it only in a report after month-end, which Teamwork calls the erosion gap.",
+  "approach": [
+   "Agents watch actuals against plan and flag exceptions early; Rocketlane describes agents hunting for missing timesheets, un-invoiced hours and budget overruns.",
+   "Certinia, Kantata and Deltek describe similar monitoring; for law firms, BigHand Matter Pricing is marketed with automated overrun alerts.",
+   "Deltek states a 20% improvement in forecast accuracy from connecting people, projects and financials; the claim is about integration, not AI (vendor-published).",
+   "The project or finance lead acts on each alert; invoicing decisions stay with people."
+  ],
+  "who": "Rocketlane, Certinia, Kantata, Deltek, BigHand"
+ },
+ {
+  "id": "professional-services-delivery-management-08",
+  "title": "Agent project manager keeps plans current and chases tasks as milestones move",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Plans go stale when milestones slip, and a project manager must reconcile task, calendar and time data by hand.",
+  "approach": [
+   "Certinia lists a Project Manager Agent; Kantata says plans update automatically when milestones shift.",
+   "Rocketlane says agents do the heavy work while the team approves and intervenes when needed; Planview announced project-manager agents for Fall 2026.",
+   "Certinia claims up to 20 hours a month saved per project manager (vendor-published); no basis given.",
+   "Certinia also claims about 50% of project time historically lost to admin is recovered (vendor-published)."
+  ],
+  "who": "Certinia, Kantata, Rocketlane, Planview"
+ },
+ {
+  "id": "professional-services-delivery-management-09",
+  "title": "Idea: automated stakeholder reminders, calendar coordination and project-tool setup",
+  "grade": "D",
+  "ladder": "automate",
+  "problem": "Idea, not a deployment: project managers lose time chasing stakeholders for time sheets, agendas and deadlines, scheduling across time zones and configuring project tools.",
+  "approach": [
+   "Idea: in a study of 12 Finnish IT project-management consultants, calendar and meeting management was the most anticipated capability (four of 12).",
+   "Interviewees also wanted automated reminders to steering groups and partners, and automated tool configuration such as Jira setup (independent).",
+   "Human control of assistant tasks is the only checkpoint the sources specify."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-delivery-management-10",
+  "title": "Idea: predictive monitoring of dependencies, deviations and risks from project history",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: external project managers find dependency management and early-warning signals hard to keep up by hand, and progress is analysed only when someone compiles the data.",
+  "approach": [
+   "Idea: interviewees envisioned an assistant that watches data against baselines, flags dependencies that cannot be met and drafts risk assessments.",
+   "One interviewee tested Gemini on a migration-project framework and found it identified typical risks, but did not put it into practice.",
+   "The project manager reviews alerts and recommended actions."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-delivery-management-11",
+  "title": "Reusable matter templates route tasks to agents and people with review gates",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "For recurring work such as an M&A transaction, the process is rebuilt for each matter and partners ask associates to reconstruct status from email.",
+  "approach": [
+   "Harvey announced Legal Work Orchestration on 2026-10-15: a template pre-loads phases, tasks, agents and review gates, and each task carries a reviewer.",
+   "When an agent finishes a task, the designated partner is notified and approval starts the next step.",
+   "Tasks, comments and notifications are rolling out; templates are in early access; no measured results.",
+   "Harvey expects agents to take on an additional 20% of workflow steps within six months (vendor-published expectation)."
+  ],
+  "who": "Harvey"
+ },
+ {
+  "id": "professional-services-delivery-management-12",
+  "title": "Self-built PMO agent estate with an orchestrating agent and human approval gate",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Portfolio reporting is one of the last manual processes in many delivery organisations: assembled by hand, often late and open to challenge.",
+  "approach": [
+   "Automation Consultants built a 12-agent estate across Jira, Confluence, Loom and Tempo, with Rovo at the centre and Claude as reasoning layer.",
+   "An orchestrating agent screens every finding, and a human approval gate sits before anything reaches Jira, Confluence or a client inbox.",
+   "The firm reports roughly 25% of delivery capacity released and throughput tripled across 11 concurrent client engagements (self-reported).",
+   "Vendors Productive and Kantata (Agent Studio, launched 2026-10-07) sell agent builders with approval or validation checks before output goes out."
+  ],
+  "who": "Automation Consultants, Productive, Kantata"
+ },
+ {
+  "id": "professional-services-delivery-management-13",
+  "title": "Agents take on repeatable implementation tasks and send routine project documentation",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Implementation teams are asked to deliver more go-lives with the same headcount, and billable utilization is at a record low in SPI's benchmark.",
+  "approach": [
+   "Basware's in-house services team adopted Kantata, automated billing first, and is expanding into agents that help staff projects.",
+   "AI is embedded to take on repetitive implementation work and to generate and send project documentation to customers.",
+   "Rocketlane is described by a competitor as claiming up to 50% lower delivery effort in early deployments (vendor-published).",
+   "A human gate and audit trail for agent actions touching customer environments is one vendor's evaluation criterion; people handle customer-specific tasks."
+  ],
+  "who": "Basware, Kantata, Rocketlane"
+ },
+ {
+  "id": "professional-services-delivery-management-14",
+  "title": "Engagement leads run advisory work as teams of people and AI agents",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Delivery planning assumes work is divided among people; a firm using AI for analysis, modelling and documentation must decide what goes to agents and who checks it.",
+  "approach": [
+   "Thoughtworks' Engagement Lead and Principal Engagement Lead postings call them delivery leaders for AI-native advisory engagements.",
+   "They structure each engagement across team members, AI agents and client stakeholders, and delegate to AI while keeping quality and judgment.",
+   "They capture reusable delivery patterns and AI workflows in a shared library; the postings describe expectations, not results (self-reported).",
+   "The engagement lead is accountable for output accuracy, relevance and readiness for decision."
+  ],
+  "who": "Thoughtworks"
+ },
+ {
+  "id": "professional-services-delivery-management-16",
+  "title": "Idea: engagement economics that count AI cost, effort and fee basis",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: when agents do part of delivery, utilization and time-and-materials metrics no longer show who did the work or what it cost.",
+  "approach": [
+   "Idea: meter AI use per matter so its cost is attributable to the client, budgeted and possibly passed through.",
+   "Idea: during delivery, compare actual effort, AI-assisted effort and fee basis, flagging fixed-fee work where effort has fallen well below the fee.",
+   "Planview's agent launch covers costing agents and compute spend; a Kantata and Basware session on agent margin was scheduled for 2026-10-20.",
+   "Pricing and finance leaders decide what AI cost passes through; one law firm officer cited roughly 1% of revenue (self-reported)."
+  ],
+  "who": "No named deployment"
+ }
+]
