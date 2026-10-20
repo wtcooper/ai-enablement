@@ -20,7 +20,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape refs whe
 
 **Two things to carry into interviews.** First, the open question is evidence of quality, not speed: nobody public reports how often a reviewer changes an AI-proposed adjustment. Second, buyers' own in-house first-pass diligence and AI-native QoE tiers are the competitive pressure; Forvis Mazars US says AI is also raising the number of cheaper, thinner QoE products (FORVIS-QOE-2026).
 
-**Source type coverage (46 distinct sources; 44 opened):** firm 11, vendor 10, press 8, survey 6, community 3, academic 2, professional body 2, job posting 2, regulator 1, conference 1. No podcast, no standard-setter text, no inspection finding and no independent practitioner survey specific to transaction advisory were found.
+**Source type coverage (46 distinct sources; 45 opened, 1 search-only):** firm 11, vendor 10, press 8, survey 6, community 3, academic 2, professional body 2, job posting 2, regulator 1, conference 1. No podcast, no standard-setter text, no inspection finding and no independent practitioner survey specific to transaction advisory were found.
 
 ---
 
@@ -392,7 +392,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape refs whe
     - "PwC UK's approach anchors outputs to verifiable sources (BLOCKCHAINNEWS-PWCUK-2026, secondary summary)"
   human_checkpoints:
     - "Practitioners review anomalies the AI flags; PwC's deals leader gives an illustrative 20 hours of human time on follow-up (ICAEW-BIGSIX-2024)"
-  role_evolution: "PwC's deals leader says staff can gain more insight and that it is hard to predict which tasks are replaced versus created (ICAEW-BIGSIX-2024). BDO's transaction services partner expects new roles in AI oversight and data interpretation (ICAEW-BIGSIX-2024)."
+  role_evolution: "PwC's deals leader says staff can gain more insight and that it is hard to predict which tasks are replaced versus created (ICAEW-BIGSIX-2024). BDO's transaction services partner says GenAI could lead to new roles in AI oversight, data interpretation and client engagement (ICAEW-BIGSIX-2024)."
   evidence_grade: B
   sources:
     - { ref: PWC-TOLTIQ-2026, title: "Reimagining deals for the Age of AI: PwC and ToltIQ enter strategic relationship", publisher: "PwC US", type: firm, url: "https://www.pwc.com/us/en/about-us/newsroom/press-releases/reimagining-deals-for-the-age-of-ai.html", date: "2026-06-15", access: full, locator: "'Built for the realities of deal execution' paragraph (usage counts); three priorities paragraph. Read through the r.jina.ai mirror" }
@@ -531,7 +531,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape refs whe
   runtime_class: personal-assistant
   maturity: in-production
   problem: "PE and corporate deal teams must evaluate more opportunities and process larger information volumes under tight deadlines. This is the demand-side shift TAS providers face: some first-pass diligence moves in-house (Datasite; Intralinks)."
-  solution: "Deal teams use AI tools in diligence themselves: S&P Global finds diligence has the highest AI integration among PE operations, Datasite reports half of dealmakers regularly use AI in diligence, and Deloitte finds 35% of adopters apply GenAI to diligence. Practitioners on a search-fund forum describe running first-pass QoE work with a general model."
+  solution: "Deal teams use AI tools in diligence themselves: S&P Global finds diligence has the highest AI integration among PE operations, Datasite reports half of dealmakers regularly use AI in diligence, and Deloitte finds 35% of adopters apply GenAI to diligence."
   outcomes:
     - lever: capacity
       description: "S&P Global: share of GPs reporting AI integrated into due diligence"
@@ -583,7 +583,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape refs whe
   runtime_class: shared-team-skills
   maturity: piloting
   problem: "Post-deal value realisation needs coordinated execution across systems and is less structured and harder to scale than pre-deal analysis (Accenture's PE lead, via CFO Dive). Line leaders must juggle integration work with their day jobs (Bain)."
-  solution: "Bain expects early adopters to draft integration workplans and transition service agreements in less than 20% of the time previously spent, then use company data to size cost and revenue synergies and draft value creation plans. Deloitte's pulse study reports 52% of respondents use or pilot GenAI in post-close integration."
+  solution: "Bain expects early adopters to draft integration workplans and transition service agreements in less than 20% of the time previously spent, then use company data to size cost and revenue synergies and draft value creation plans. Deloitte's pulse study reports that 52% of respondents apply GenAI in post-close integration (its survey question covers use or piloting)."
   outcomes:
     - lever: speed
       description: "Bain's expectation for early adopters over the following 12 months"
@@ -758,7 +758,7 @@ Not found: error rates, override rates, parallel-run results, inspection outcome
 
 - Forvis Mazars US: depleting junior ranks will create future holes in executive-level insight; firms that over-rely on automation risk poorly trained people who cannot tell thin from sound work (FORVIS-QOE-2026).
 - Opio's CEO: junior time goes to collecting, checking and adjusting data before interpretation; automating it moves time to analysis and client relationships (TECHEU-OPIO-2026).
-- PwC UK deals leader: contract review once descoped can now be done, but anomalies then need about 20 hours of human follow-up in his example, so AI can create work (ICAEW-BIGSIX-2024, Dec 2024). BDO's transaction services partner compares AI to spreadsheets and expects roles in AI oversight, data interpretation and client engagement (ICAEW-BIGSIX-2024).
+- PwC UK deals leader: contract review once descoped can now be done, but anomalies then need about 20 hours of human follow-up in his example, so AI can create work (ICAEW-BIGSIX-2024, Dec 2024). BDO's transaction services partner compares AI to spreadsheets and says it could create roles in AI oversight, data interpretation and client engagement (ICAEW-BIGSIX-2024).
 - Pease Bell: entry-level aggregation, reconciliation and schedule tasks can be handled with minimal oversight; staff must interpret outputs and challenge them (PEASEBELL-2026). No staffing data in any source.
 - Job postings: an EY-Parthenon financial diligence posting (Kuala Lumpur, 2026-10-09) mentions AI-powered technology only in the firm description; the responsibilities portion read lists no AI-specific task (EY-JOB-2026). Job postings are weak evidence for AI use in this module.
 
@@ -785,7 +785,7 @@ Not found: error rates, override rates, parallel-run results, inspection outcome
 ## 4. Routed to other modules
 
 - **valuation:** SBA valuation independence clause (no valuation prepared for the applicant or seller; no dollar threshold) (QOEAGENT-WHO-2026). Purchase price allocation and fairness opinions were not researched here. IVSC AI disclosure items are in the landscape.
-- **risk-controls:** AI risk and governance diligence on targets (FORVIS-AIBUYSIDE-2024; FASKEN-RWI-2026); PE leaders' AI governance readiness (GT-PEAI-2026: 9% very confident they could pass an AI governance audit in 90 days; 45% still piloting; 24% report revenue growth from AI; date not found); Deloitte Australia AI-error refund as a deliverable-quality case (CITYAM-DELOITTE-AU-2025, see use case 12).
+- **risk-controls:** AI risk and governance diligence on targets (FORVIS-AIBUYSIDE-2024; FASKEN-RWI-2026); PE leaders' AI governance readiness (GT-PEAI-2026: 9% very confident they could pass an AI governance audit in 90 days; 45% still piloting; 24% report revenue growth from AI; date not found); Deloitte Australia AI-error refund as a deliverable-quality case (CITYAM-DELOITTEAU-2025, see use case 12).
 - **fpa-performance:** Portfolio-company value creation and operational AI (S&P: 72% of GPs rank operational improvements top, SPGLOBAL-PE-2026; GT-PEAI-2026).
 - **forensic-disputes:** Fraud and misrepresentation findings surfaced in diligence; deepfaked or forged documents in data rooms (not researched).
 - **professional-services (firm operations):** Forvis Mazars US on junior-pipeline depletion and the effect of cheap QoE products on market pricing (FORVIS-QOE-2026); firms' own pricing and staffing leverage; PE and APS ownership; fee ranges quoted on a broker page (CTACQ-QOE-2026).
@@ -850,7 +850,7 @@ Access: full = opened and read; search-only = seen only in search results. Dates
 
 (CITYAM-DELOITTEAU-2025 is cited in use case 12 and section 4; section 4 uses the same ref.)
 
-**Counts by type (46 distinct sources; 44 full, 2 search-only counting AM-EURODD-2026 and the search-only items below):** firm 11 (FORVIS-QOE-2026, FORVIS-AIBUYSIDE-2024, FORVISGROUP-OPIO-2026, DELOITTE-MAPLATFORM-2026, PWC-TOLTIQ-2026, EY-DILIGENCEEDGE-2026, BAIN-GENAIMA-2025, KJK-NDA-2026, FASKEN-RWI-2026, PEASEBELL-2026, GT-PEAI-2026); vendor 10; press 8; survey 6; community 3; academic 2; professional body 2; job posting 2; regulator 1; conference 1. Search-only items seen but not opened: AM-EURODD-2026 and, for lead purposes only, Finsider.ai's launch release (page returned not found; not cited as evidence).
+**Counts by type (46 distinct sources; 45 full, 1 search-only):** firm 11 (FORVIS-QOE-2026, FORVIS-AIBUYSIDE-2024, FORVISGROUP-OPIO-2026, DELOITTE-MAPLATFORM-2026, PWC-TOLTIQ-2026, EY-DILIGENCEEDGE-2026, BAIN-GENAIMA-2025, KJK-NDA-2026, FASKEN-RWI-2026, PEASEBELL-2026, GT-PEAI-2026); vendor 10; press 8; survey 6; community 3; academic 2; professional body 2; job posting 2; regulator 1; conference 1. Search-only item: AM-EURODD-2026. Finsider.ai's launch release was seen as a lead only (page returned not found) and is not counted or cited as evidence.
 
 ---
 
