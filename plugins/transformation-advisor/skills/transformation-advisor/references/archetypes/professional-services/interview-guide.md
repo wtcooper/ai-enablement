@@ -96,7 +96,7 @@ Use these in addition to each phase file's question bank.
 **Frame**
 - "If AI halved the hours on your most repeatable work, what would happen to fees, realisation and partner pay?"
 - "Who keeps an AI saving today: the firm, the client, or both? Did anyone decide?" (On AI savings, 30% of
-  legal-finance respondents keep the margin and 30% are still evaluating [BIGHAND-LF-2026].)
+  law firms in a vendor pricing survey keep the margin and 30% are still evaluating [BIGHAND-LF-2026].)
 - "Which clients have asked about AI, restricted it, or asked for savings?" (Some ask for line items; others will not
   pay for AI-done work [TRI-LEGALWEEK-2026].)
 - "Which of your services would AI threaten, change a lot, or mainly help?" ([disruption.md](disruption.md))
@@ -140,12 +140,12 @@ Use these in addition to each phase file's question bank.
 
 - **Consultancies:** "What share of revenue is time and materials, fixed fee or outcome-linked?" "Where does your PSA
   hold actuals, and could an agent estimate from them?" "How are partners and directors measured: sales, utilisation,
-  margin?" Resource managers in one study say only 7.3% use outcome data in staffing [KANTATA-RMI-2026].
+  margin?" In one vendor-commissioned study only 7.3% of respondents say outcome data is easily accessible and used in staffing [KANTATA-RMI-2026].
 - **Accounting and advisory firms (firm side):** "Which advisory services could be priced on value?" "Has private
   equity approached the firm, and what would it fund?" Audit, attestation and tax technical work go to the
   [assurance](../assurance/ARCHETYPE.md) and [tax](../tax/ARCHETYPE.md) archetypes.
 - **Engineering and architecture firms:** "What is utilisation by discipline, and where are proposals and project
-  reporting done by hand?" Only 38% of 896 A&E firms report measurable benefit from AI [DELTEK-CLARITY-2026].
+  reporting done by hand?" Only 38% of respondents in a vendor survey of 896 A&E firms report measurable positive business impact from AI [DELTEK-CLARITY-2026].
 - **Security service providers:** pricing, staffing and delivery questions here; detection and response questions in
   the [security](../security/ARCHETYPE.md) archetype.
 

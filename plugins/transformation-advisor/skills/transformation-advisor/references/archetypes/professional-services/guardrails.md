@@ -46,7 +46,7 @@ application to AI is unsettled, say so and suggest the leader takes advice. Sour
 |---|---|---|
 | US state bars and the ABA | Competence, confidentiality, supervision, fees, candour for lawyers | [CALBAR-GENAI-2026; TXETHICS-OP705-2025; DCBAR-OP388-2024; NYCBAR-OP2024-5-2024; ABA-OP512-2024] |
 | UK: SRA, Bar Standards Board, Law Society; courts | Solicitors' and barristers' duties; court expectations on citations | [SRA-WARNING-2026; BSB-AIGUIDANCE-2026; LAWSOC-GENAI-2026; EWHC-AYINDE-2025; CJC-AI-2026] |
-| Accounting bodies (ACCA, ICAEW, IESBA, AICPA) | Ethics surveys and planned guidance; fee and independence rules in assurance and tax | [ACCA-ETHICS-2026; AICPA-CODE-2026] |
+| Accounting bodies (ACCA, ICAEW, IESBA, AICPA) | Ethics surveys (61% of ACCA respondents rank AI use their top ethical challenge); fee and independence rules in assurance and tax | [ACCA-ETHICS-2026; AICPA-CODE-2026] |
 | Consulting: ICMCI and member institutes | Code mandatory for individual certified consultants; firms expected to align | [ICMCI-AICODE-2026] |
 | Engineering: NSPE, ACEC | Responsible charge over AI-assisted sealed work; firm governance guidelines (not a standard of care) | [NSPE-BER24-2; ACEC-AIGUIDE-2024] |
 | EU and US states (employment AI) | AI used to hire, allocate work or evaluate staff | [EC-AIACT-2026; COLORADO-SB26189-2026; ILLINOIS-HB3773-2024] |
@@ -97,13 +97,13 @@ application to AI is unsettled, say so and suggest the leader takes advice. Sour
   and reviewing is billable [CALBAR-GENAI-2026; TXETHICS-OP705-2025; DCBAR-OP388-2024; ABA-OP512-2024].
 - **Flat and value fees: positions differ by state.** California allows flat fees that build AI savings into
   competitive rates, with fee agreements explaining how AI factors in [CALBAR-GENAI-2026]. ABA 512 says the same flat fee
-  may be unreasonable when AI makes work much faster [ABA-OP512-2024]. Virginia says reduced time does not mean a
-  proportionally reduced fee [VSB-LEO1901-2025]. Detail: [scoping-pricing](modules/scoping-pricing.md) §6.
+  may be unreasonable when AI makes work much faster [ABA-OP512-2024]. Virginia (approved November 2025) says value-based fees can reflect
+  AI efficiency gains and stay reasonable, and disagrees with opinions suggesting otherwise [VSB-LEO1901-2025]. Detail: [scoping-pricing](modules/scoping-pricing.md) §6.
 - **AI costs.** General AI subscriptions are overhead; matter-specific costs only if disclosed in the fee agreement, at
   actual cost, and with no markup without informed written consent [CALBAR-GENAI-2026]. Texas limits recovery to the
   amount actually incurred [TXETHICS-OP705-2025].
-- **Learning time.** A summary of ABA 512 says lawyers may not charge for learning tools they will regularly use for
-  clients [CIVILITY-ABA512-2024].
+- **Learning time.** ABA 512 says lawyers may not charge clients to learn a tool they will regularly use for clients
+  [ABA-OP512-2024; CIVILITY-ABA512-2024].
 - **Accounting and tax.** The AICPA bars contingent fees for attest clients and for tax-return preparation
   [AICPA-CODE-2026]; IRS guidance on billing AI-assisted tax work is in the tax archetype [IRS-OPR-2026].
 - **Consulting.** No body-issued billing rule for AI-assisted consulting work was found; ICMCI covers disclosure and
@@ -133,14 +133,14 @@ application to AI is unsettled, say so and suggest the leader takes advice. Sour
 ## 7. Courts, sanctions and incidents
 
 - **Scale.** 2,202 court decisions worldwide on hallucinated content as of 19 October 2026 (1,501 US, 76 UK; 872 with a
-  lawyer as the party); a count of decisions, not a rate, and part of the growth is lag in finding cases
-  [CHARLOTIN-DB-2026].
+  lawyer as the party); a count of decisions, not a rate, and the compiler calls it a work in progress that grows as
+  cases are found [CHARLOTIN-DB-2026].
 - **Named firms.** K&L Gates and Ellis George: $31,100 jointly (May 2025) [ABAJ-KLGATES-2025]. Butler Snow lawyers
   removed from a case and referred (July 2025) [ABAJ-JOHNSON-2025]. Sullivan & Cromwell apologised to a court in April
   2026, listing about three dozen errors, some of which it said were clerical [ABAJ-SC-2026].
 - **UK.** Courts list admonition, costs, strike-out, regulator referral, contempt and police referral; placing false
-  material before a court is likely to merit a regulator referral [EWHC-AYINDE-2025]. In *Rodney* the solicitors and the
-  firm's management were referred to the SRA, the court citing "reckless disregard" for accuracy [CCDUDLEY-RODNEY-2026].
+  material before a court is likely to merit a regulator referral [EWHC-AYINDE-2025]. In *Rodney* both solicitors and their
+  firm were referred to the SRA, the court citing "reckless disregard" for accuracy [CCDUDLEY-RODNEY-2026].
 - **Consulting and advisory.** Deloitte Australia agreed to repay the final instalment of an AUD 440,000 government
   contract after errors, including non-existent references; the revised report disclosed AI use, and Deloitte did not
   say AI caused the errors [GUARDIAN-DELOITTE-2025].
@@ -153,9 +153,10 @@ application to AI is unsettled, say so and suggest the leader takes advice. Sour
 - **Policy wording is moving.** ISO generative-AI endorsements for general liability took effect 1 January 2026; some
   carriers are reported to use "absolute" AI exclusions in D&O and E&O lines. A policyholder lawyer warns an insurer may
   argue unverified AI output was never a "professional service" [OLSHAN-AIEXCL-2026].
-- **Law-firm market.** Most law-firm professional liability policies are reported to be silent on AI; a broker expects
-  firms without documented AI protocols to drop out of preferred tiers within 12-18 months [IAMAG-LAWPL-2026]. Brokers
-  report broad exclusions on some lawyers' and architects' policies [INSINSIDER-LAWYERS-2026].
+- **Law-firm market.** A broker says the vast majority of law-firm professional liability policies have no express AI
+  exclusion, and expects firms without documented AI protocols to drop out of preferred tiers within 12-18 months
+  [IAMAG-LAWPL-2026]. Other brokers report sweeping AI exclusions on some lawyers' E&O policies, with the wording said
+  to be spreading to architects [INSINSIDER-LAWYERS-2026].
 - **Vendors transfer liability.** Legal AI vendors are reported to place liability on the deploying firm
   [INSINSIDER-LAWYERS-2026]. The Law Society tells solicitors to check liability and insurance cover and to negotiate
   warranties and indemnities with vendors [LAWSOC-GENAI-2026].

@@ -24,9 +24,9 @@ Module files keep their own source lists, and the use-case YAML files carry full
 
 ### Conferences and events
 
-| Event (organiser) | Latest edition | Why it matters | Key |
+| Event (organiser) | Latest or next edition | Why it matters | Key |
 |---|---|---|---|
-| ILTACON (International Legal Technology Association) | 23-27 Aug 2026, Nashville; next 8-12 Aug 2027 | The law-firm technology buyers' conference; 2026 programme covered PE, ownership, pricing and AI; recordings members-only | ILTA-ILTACON-2026; EDISCOVERYTODAY-ILTACON-2026 |
+| ILTACON (International Legal Technology Association) | 23-27 Aug 2026, Nashville; next 8-12 Aug 2027 | The law-firm technology buyers' conference; 2026 programme covered PE, ownership, pricing and AI; recordings in a logged-in library or for purchase | ILTA-ILTACON-2026; EDISCOVERYTODAY-ILTACON-2026 |
 | Legalweek (Law.com / ALM) | 9-12 Mar 2026, New York | Main US legal-industry event; at least 18 of 107 sessions on agentic AI; client-firm AI value panels | EDRM-LEGALWEEK-2026; TRI-LEGALWEEK-2026 |
 | CLOC Global Institute (legal operations) | 11-14 May 2026, Chicago | The in-house legal-operations flagship; AI Labs format | CLOC-CGI-2026 |
 | Thomson Reuters Institute forums | Law Firm COO & CFO Forum 21-22 Oct 2026; CMBDO Forum 27-29 Jan 2027 | The firm-management event series (finance, operations, marketing and BD leaders) | TRI-EVENTS-2026; TRI-CMBDO34-2027 |
@@ -115,8 +115,9 @@ Module files keep their own source lists, and the use-case YAML files carry full
 - **Engineering and architecture:** one annual benchmark (Deltek) and two ethics or guidance texts.
 - **In-house beyond legal:** finance, HR and other shared-service teams working like firms are almost undocumented.
 - **Mid-tier and small firms:** data skew to large law firms and vendor customers.
-- **Primary texts not reached:** ABA Formal Opinion 512 (read through summaries), SRA pages, AICPA and IESBA AI
-  guidance, the full NBER paper (abstract only), SPI and Source full reports.
+- **Primary texts not reached:** SRA pages (the August 2026 warning notice was seen only through a DWF article), AICPA
+  and IESBA AI guidance, the full NBER paper (abstract and disclosures only), SPI and Source full reports. ABA Formal
+  Opinion 512 was read in full from a copy hosted by LawNext, not from the ABA site.
 
 ## Part B. Shared source keys
 
@@ -224,7 +225,7 @@ use-case YAML.
 - **SFN-BIG4-2025**: Scottish Financial News, *Big Four slash graduate jobs as AI takes over entry-level tasks (reporting The Telegraph)* (press, 2025-06-23). https://www.scottishfinancialnews.com/articles/big-four-slash-graduate-jobs-as-ai-takes-over-entry-level-tasks
 - **SOURCE-PRECISION-2026**: Source Global Research, *Precision segmentation: How consulting firms can target clients' sector and functional AI budgets* (survey, 2026-09-28). https://sourceglobalresearch.com/market-update/precision-segmentation-how-consulting-firms-can-target-clients-sector-and-functional-ai-budgets
 - **SPI-AI-2026**: SPI Research, *The 2026 Impact of AI on Professional Services (report landing page; full report paid)* (survey, 2026-10). https://spiresearch.com/reports/2026-ai-professional-services-survey/
-- **SRA-WARNING-2026**: Solicitors Regulation Authority, *SRA warning notice on the use of AI (issued 17 August 2026)* (regulator, 2026-08-17). https://www.sra.org.uk
+- **SRA-WARNING-2026**: Solicitors Regulation Authority, *SRA warning notice on the use of AI (issued 17 August 2026; SRA site blocked, notice and date as reported by DWF Group on 2026-08-21)* (regulator, 2026-08-17). https://www.sra.org.uk
 - **STANFORD-CANARIES-2026**: Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen), *Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (working paper, revised 2026-08-12)* (academic, 2026-08-12). https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/
 - **STANFORD-DEL-2026**: Stanford Digital Economy Lab (Brynjolfsson) and USC (Petropoulos), *Pricing Consulting Services in the Age of Agentic AI: A Strategy Map for Executives (Brynjolfsson and Petropoulos)* (academic, 2026-08-23). https://digitaleconomy.stanford.edu/app/uploads/2026/08/AI_Agents_and_Consulting_Service_Pricing.pdf
 - **STANFORD-MAGESH-2024**: Stanford RegLab and HAI (Magesh, Surani, Dahl, Suzgun, Manning, Ho), *Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools (arXiv 2405.20362)* (academic, 2024-05-30). https://arxiv.org/abs/2405.20362

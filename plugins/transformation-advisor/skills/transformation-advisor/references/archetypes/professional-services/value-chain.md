@@ -32,7 +32,7 @@ resolve in §7 or in [sources.md](sources.md).
 
 | # | Stage | Main processes | Modules | Public AI evidence |
 |---|---|---|---|---|
-| 1 | Win the work | Pursuit and proposals; client development | [pursuit-proposals](modules/pursuit-proposals.md), [client-development](modules/client-development.md) | Wide use, little measurement; 79% of bid teams use AI [LOOPIO-TRENDS-2026] |
+| 1 | Win the work | Pursuit and proposals; client development | [pursuit-proposals](modules/pursuit-proposals.md), [client-development](modules/client-development.md) | Wide use, little measurement; 79% of 1,533 bid teams (all industries) used AI in 2025 [LOOPIO-TRENDS-2026] |
 | 2 | Accept and price | Acceptance and risk; scoping and pricing | [acceptance-risk](modules/acceptance-risk.md), [scoping-pricing](modules/scoping-pricing.md) | Acceptance thin and vendor-heavy; pricing-model change well reported, AI pricing tools not |
 | 3 | Staff and deliver | Staffing; delivery management; work production; quality review | [staffing-resourcing](modules/staffing-resourcing.md), [delivery-management](modules/delivery-management.md), [work-production](modules/work-production.md), [quality-review](modules/quality-review.md) | Densest in work production (legal); staffing thinnest; no firm publishes review error rates |
 | 4 | Bill, collect, learn and run the firm | Billing and collections; knowledge management; talent and learning; firm finance | [billing-collections](modules/billing-collections.md), [knowledge-management](modules/knowledge-management.md), [talent-learning](modules/talent-learning.md), [firm-finance](modules/firm-finance.md) | Time capture has named users; firm return on AI is not measured; one randomised trial on skills [NBER-AUTOR-2026] |
@@ -99,8 +99,9 @@ review still apply around it.
 - **Data layer: time, matter, documents and relationships.** Most AI steps depend on joined data that firms hold in
   separate systems: practice management or PSA (matters, time, budgets), the DMS (documents), CRM (relationships) and
   HR systems (skills). Thomson Reuters Institute's premortem (fictional scenarios) has agentic pilots failing on
-  undocumented exceptions and fragmented storage [TRI-PILOTFAIL-2026]. In one resource-management study 47% cite fragmented data
-  [KANTATA-RMI-2026]; 78% of 123 partners say relationship data is hard to act on [INTROHIVE-LAWSITES-2026].
+  undocumented exceptions and fragmented storage [TRI-PILOTFAIL-2026]. In one vendor-commissioned resource-management study 47% cite poor or fragmented
+  data [KANTATA-RMI-2026]; 78% of 123 law and accounting firm partners in a vendor survey say relationship data is hard
+  to act on [INTROHIVE-LAWSITES-2026].
 - **Client AI terms.** What each client allows enters at stage 2 and is checked again at production, release and the
   bill (acceptance-risk, quality-review, billing-collections). Some clients demand AI savings and others forbid AI
   without permission [TRI-LEGALWEEK-2026].

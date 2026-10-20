@@ -78,11 +78,11 @@ firm or in-house function) by markers you can see or count, not by self-rating.
 | **Experimenting** | One enterprise or legal AI tool licensed on request; pilots from a team up to 1,300+ lawyers [LEGORA-HLC-2026]; savings anecdotal, "still gathering the data" [TRI-LEGALWEEK-2026]; no baseline of hours, write-downs or review notes | One workflow has an owner, a baseline, a written review step and an approved tool |
 | **Adopting** | Training required before access; drafting, review and research used on matters with human sign-off; AI use recorded per matter; client AI questions answered with some data; PSA agents draft estimates or SOWs [CERTINIA-VEDA-2026] | Two or more workflows in production; the second reused the first's data, checklist or controls; value recorded in one place; a named owner |
 | **Scaling** | Work redesigned around review gates [HARVEY-ORCH-2026]; AI work flows into time entries and matter economics [LEGORA-LAUREL-2026]; AI cost metered by matter [TRI-METER-2026]; fixed or hybrid fees priced on AI-reduced effort; intake and training redesigned | Value shows in realisation, margin or revenue per head, and leaders ask what to sell and how to price it |
-| **AI-native** | Small expert teams directing agents (a consulting target of "20 per cent humans, 80 per cent AI agents") [RESULTSENSE-2026]; services clients use without a professional in the loop [CPAPA-PWC-2026]; outcome or hybrid fees the default; agents planned as capacity (none of 44 organisations yet) [KANTATA-RMI-REPORT-2026] | Re-diagnose at each review. No firm has published a measured cost or quality advantage from being AI-native |
+| **AI-native** | Small expert teams directing agents (an AI-native advisory boutique's target of "20 per cent humans, 80 per cent AI agents", as reported from the FT) [RESULTSENSE-2026]; services clients use without a professional in the loop (PwC's stated plan) [CPAPA-PWC-2026]; outcome or hybrid fees the default; agents planned as capacity (none of 44 organisations yet) [KANTATA-RMI-REPORT-2026] | Re-diagnose at each review. No firm has published a measured cost or quality advantage from being AI-native |
 
 **Delegation.** Plan agentic work only at Adopting or later, behind the five gates in onboarding §5. Reference case: an
 IT consultancy's 12-agent PMO estate with a human approval gate before anything reaches a client (delivery-management
-`#12`; self-reported). California ties required oversight to the system's autonomy [CALBAR-GENAI-2026].
+`#12`; sponsored conference talk, self-reported). California ties required oversight to the system's autonomy [CALBAR-GENAI-2026].
 
 ## Files in this archetype
 
