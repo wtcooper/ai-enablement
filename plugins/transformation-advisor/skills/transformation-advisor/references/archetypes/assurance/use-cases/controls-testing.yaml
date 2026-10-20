@@ -937,7 +937,7 @@
   module: controls-testing
   function: service-delivery
   work_types: [review-assurance, data-reporting, software-systems]
-  pattern: other
+  pattern: end-to-end-case-agent
   change_scope: process
   ladder: delegate
   runtime_class: managed-agent-runtime

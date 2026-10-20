@@ -893,7 +893,7 @@
   module: quality-review
   function: service-delivery
   work_types: [review-assurance, client-interaction]
-  pattern: other
+  pattern: full-population-testing
   ladder: assist
   change_scope: process
   runtime_class: shared-team-skills

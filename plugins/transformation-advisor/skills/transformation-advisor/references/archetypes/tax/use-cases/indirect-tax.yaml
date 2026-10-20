@@ -1101,7 +1101,7 @@
   module: indirect-tax
   function: service-delivery
   work_types: [transaction-processing, expert-judgment]
-  pattern: other
+  pattern: document-to-decision
   ladder: augment
   change_scope: process
   runtime_class: workflow-automation

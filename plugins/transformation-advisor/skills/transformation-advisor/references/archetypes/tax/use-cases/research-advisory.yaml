@@ -1537,7 +1537,7 @@
   work_types:
   - data-reporting
   - expert-judgment
-  pattern: other
+  pattern: document-to-decision
   ladder: augment
   change_scope: step
   runtime_class: workflow-automation

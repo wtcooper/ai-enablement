@@ -147,7 +147,7 @@
   module: soc-attestation
   function: risk-compliance-legal
   work_types: [review-assurance, data-reporting]
-  pattern: other
+  pattern: bulk-transformation
   ladder: augment
   change_scope: step
   runtime_class: workflow-automation

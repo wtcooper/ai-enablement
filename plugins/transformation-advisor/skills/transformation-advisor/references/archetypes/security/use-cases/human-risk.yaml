@@ -387,7 +387,7 @@
   module: human-risk
   function: people-hr
   work_types: [review-assurance]
-  pattern: other
+  pattern: document-to-decision
   ladder: assist
   change_scope: process
   runtime_class: workflow-automation

@@ -1214,7 +1214,7 @@
   module: staffing-resourcing
   function: risk-compliance-legal
   work_types: [review-assurance, coordination-scheduling]
-  pattern: other
+  pattern: monitor-diagnose-act
   ladder: assist
   change_scope: step
   runtime_class: workflow-automation

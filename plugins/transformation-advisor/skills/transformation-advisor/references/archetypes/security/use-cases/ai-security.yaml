@@ -598,7 +598,7 @@
   module: ai-security
   function: technology-it
   work_types: [review-assurance, software-systems]
-  pattern: other
+  pattern: intake-triage
   ladder: automate
   change_scope: process
   runtime_class: managed-agent-runtime
@@ -933,7 +933,7 @@
   module: ai-security
   function: technology-it
   work_types: [data-reporting, review-assurance]
-  pattern: other
+  pattern: monitor-diagnose-act
   ladder: automate
   change_scope: step
   runtime_class: managed-agent-runtime

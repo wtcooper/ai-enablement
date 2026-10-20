@@ -16,7 +16,7 @@
   work_types:
   - transaction-processing
   - data-reporting
-  pattern: other
+  pattern: draft-review-loop
   ladder: augment
   change_scope: process
   runtime_class: background-agent

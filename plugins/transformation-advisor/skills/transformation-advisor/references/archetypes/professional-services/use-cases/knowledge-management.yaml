@@ -1354,7 +1354,7 @@
   work_types:
   - expert-judgment
   - research-synthesis
-  pattern: other
+  pattern: grounded-knowledge-assistant
   ladder: augment
   change_scope: process
   runtime_class: shared-team-skills
@@ -1407,7 +1407,7 @@
   work_types:
   - expert-judgment
   - research-synthesis
-  pattern: other
+  pattern: draft-review-loop
   ladder: assist
   change_scope: process
   runtime_class: personal-assistant

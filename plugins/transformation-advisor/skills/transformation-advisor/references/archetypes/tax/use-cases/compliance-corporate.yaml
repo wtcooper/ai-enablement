@@ -1093,7 +1093,7 @@
   module: compliance-corporate
   function: risk-compliance-legal
   work_types: [review-assurance, data-reporting]
-  pattern: other
+  pattern: draft-review-loop
   ladder: augment
   change_scope: process
   runtime_class: shared-team-skills

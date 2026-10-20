@@ -1444,7 +1444,7 @@
   - coordination-scheduling
   - review-assurance
   - client-interaction
-  pattern: other
+  pattern: end-to-end-case-agent
   ladder: augment
   change_scope: process
   runtime_class: workflow-automation
@@ -1807,7 +1807,7 @@
   - coordination-scheduling
   - expert-judgment
   - client-interaction
-  pattern: other
+  pattern: end-to-end-case-agent
   ladder: delegate
   change_scope: process
   runtime_class: shared-team-skills

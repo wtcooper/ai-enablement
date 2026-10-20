@@ -565,7 +565,7 @@
   module: compliance-individual-business
   function: service-delivery
   work_types: [coordination-scheduling, transaction-processing]
-  pattern: other
+  pattern: end-to-end-case-agent
   ladder: delegate
   change_scope: process
   runtime_class: background-agent
@@ -619,7 +619,7 @@
   module: compliance-individual-business
   function: technology-it
   work_types: [software-systems, transaction-processing]
-  pattern: other
+  pattern: document-to-decision
   ladder: augment
   change_scope: process
   runtime_class: managed-agent-runtime
