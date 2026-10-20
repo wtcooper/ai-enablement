@@ -1,0 +1,28 @@
+# Blank benefits register. Schema: references/schemas/benefits.md (benefits/v1).
+# Copy to <workspace>/portfolio/benefits.yaml when the first item approaches gate g3.
+# One row per benefit and named metric. Forecasts and actuals are ranges. Owners are roles.
+schema: benefits/v1
+portfolio: "portfolio/portfolio.yaml"
+updated: YYYY-MM-DD
+benefits: []
+# Row skeleton (copy, then fill):
+#  - id: b-<item>-<metric>
+#    item: <item id>
+#    description: ""
+#    lever: capacity
+#    metric: ""
+#    type: direct
+#    financial: false
+#    level: use-case
+#    owner: ""
+#    baseline: { value: 0, unit: "", period: "", basis: from-record, source: "" }
+#    forecast: { low: 0, high: 0, unit: "", period: "", assumptions: "" }
+#    counterfactual: baseline-comparison
+#    attribution: ""
+#    measurement: { method: "", collected_by: "", when: "" }
+#    depends_on: []
+#    actuals: []
+#    status: forecast
+#    confidence: low
+#    capacity: null
+#    lessons: null

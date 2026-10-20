@@ -1,0 +1,44 @@
+# Blank portfolio file. Schema: references/schemas/portfolio.md (portfolio/v1).
+# Copy to <workspace>/portfolio/portfolio.yaml in step 1 and fill it with the user.
+# Quote every free-text value. Owners are roles, never names. No dates as targets.
+schema: portfolio/v1
+portfolio:
+  name: ""
+  scope: ""
+  level: organization
+  owner: ""
+  plan: null
+settings:
+  value_levers: []
+  scoring_weights: { value: 0.30, feasibility: 0.20, data_readiness: 0.15, risk: 0.15, time_to_value: 0.10, strategic_fit: 0.10 }
+  axes:
+    value: [value, strategic_fit, time_to_value]
+    readiness: [feasibility, data_readiness, risk]
+  capacity_stance: undecided
+  inherited_from: null
+  live_limit: null
+stages:
+  - { id: discover, purpose: "Frame the problem, find the baseline and look at the real data", entry: ["Passed the screen (g0)"], exit: [], gatekeepers: [] }
+  - { id: prototype, purpose: "Test technical feasibility on real data", entry: ["Go at g1"], exit: [], gatekeepers: [] }
+  - { id: pilot, purpose: "Test value and adoption on live work with a comparison", entry: ["Go at g2"], exit: [], gatekeepers: [] }
+  - { id: production, purpose: "Run as supported service for the first population; realise and measure benefits", entry: ["Go at g3"], exit: [], gatekeepers: [] }
+  - { id: scale, purpose: "Extend to further practices, offices or client groups; reuse components", entry: ["Go at g4"], exit: [], gatekeepers: [] }
+  - { id: retire, purpose: "Decommission safely, keep lessons and reusable assets", entry: ["Retire decision"], exit: [], gatekeepers: [] }
+gate_paths:
+  light: ""
+  full: ""
+roles:
+  review_forum: []
+  intake_contact: ""
+  other: []
+rhythm:
+  review: ""
+  rebalance: ""
+  benefits_review: ""
+state:
+  status: setting-up
+  step_completed: 0
+  next_step: 1
+  last_review: 0
+  updated: YYYY-MM-DD
+items: []
