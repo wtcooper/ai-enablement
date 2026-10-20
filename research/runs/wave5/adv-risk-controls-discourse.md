@@ -19,7 +19,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape file's r
 
 **Quality evidence.** Absent. There is no published error rate, override rate, parallel-run result or independent measurement of AI-assisted internal audit or SOX work. The nearest items are qualitative (RSM's user-acceptance-testing observations on its RCM agent), self-defined ROI (82% of Sikich AI users say targeted ROI is achieved, with respondents defining ROI themselves), and an informal poll on external-auditor reliance. Gartner reports 54% of CAEs have not started measuring AI value (HELPNET-GARTNER-2026).
 
-**Grades.** No entry earns A. Six entries are B, ten are C and two are D (ideas).
+**Grades.** No entry earns A. Seven entries are B, nine are C and two are D (ideas).
 
 ---
 
@@ -834,7 +834,7 @@ Types: conference, regulator, standard-setter, professional-body, firm, vendor, 
 | AICPA-AUDITAID-2026 | AI and the audit: AICPA publishes practice aid to assist auditors | Journal of Accountancy | professional-body | https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/ | 2026-10-13 |
 | AICPA-AIUC-2026 | AICPA partners on new offering that assures AI systems and agents | Journal of Accountancy | professional-body | https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/ | 2026-10-19 |
 
-**Source counts (distinct, all opened):** 40 sources. By primary type: firm 10 (KPMG-GAM is counted under conference), survey 9, press 6, professional-body 7, conference 3, community 2, vendor 2, podcast 2, standard-setter 1. That is nine types; no regulator, academic or job-posting sources were used in this angle. Search-only items: none are cited in entries; Gartner's two press releases (2026-08-10, 2026-09-10) and Tanner's AI and Business Systems Advisory launch were seen only as search results or were blocked, and are used nowhere as evidence (`access: search-only`).
+**Source counts (distinct, all opened):** 41 sources. By primary type: firm 10, survey 8, professional-body 7, press 6, conference 3, community 2, vendor 2, podcast 2, standard-setter 1. That is nine types; no regulator, academic or job-posting sources were used in this angle. Eleven of the 41 are used in the notes, routing section or summary rather than in a use-case entry. No search-only items are cited as evidence: Gartner's two press releases (2026-08-10, 2026-09-10) and Tanner's AI and Business Systems Advisory launch were seen only as search results or were blocked, and are used nowhere as evidence (`access: search-only`).
 
 ---
 

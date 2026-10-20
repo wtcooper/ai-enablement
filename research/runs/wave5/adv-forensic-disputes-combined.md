@@ -15,12 +15,12 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
 1. **Practice is real but self-reported, and mostly data preparation.** The only named forensic-consulting deployments with figures are two J.S. Held case studies (published 2026-05-21): AI-assisted tools processed 20,000 transactions across 10 accounts "in just hours" and 25,000+ checks "in days rather than weeks". These are narrative case studies with unnamed clients, not tracked metrics (JSHELD-AIFRAUD-2026). J.S. Held is not a CPA firm and says it provides no attest services (JSHELD-AIEXPERT-2026, footer), so independence limits do not apply to it.
 2. **The binding constraint is evidence law, not capability.** Two court decisions turned a vague worry into concrete risk for experts: *Kohls v. Ellison* (D. Minn., 2025-01-10) excluded an expert declaration in full over unverified, fabricated AI citations, and *Matter of Weber* (N.Y. Sur. Ct., Saratoga County, 2024) rejected a damages expert's Copilot cross-check after the judge re-ran the query and got different numbers (KTS-EXPERTAI-2026; AICPA-COPILOT-2025).
 3. **Proposed Federal Rule of Evidence 707 is not law and its path is unsettled.** It was published for comment in August 2025; the Evidence Rules committee met on 2026-05-07; the Standing Committee's September 2026 report lists only "continued consideration" of a possible new Rule 707 and a possible Rule 901(c) on deepfakes (USCOURTS-STDCOMM-2026; USCOURTS-EVAGENDA-2026). This corrects the landscape's June 2026 "sent back" item, which rested on snippet-only secondary sources.
-4. **Deepfake evidence is a discussed risk with thin measured incidence.** A Federal Judicial Center survey found 15 of 931 responding federal judges (about 2%) had met a deepfake challenge (USCOURTS-EVAGENDA-2026, p. 226). One California case ended in a terminating sanction (NBC-DEEPFAKE-2025). Practitioner surveys say fraudsters are ahead: only 7% of ACFE/SAS respondents say they are more than moderately prepared for AI-fuelled fraud (ACFE-TECHBENCH-2026).
+4. **Deepfake evidence is a discussed risk with thin measured incidence.** A Federal Judicial Center survey found 15 of 931 responding federal judges (about 2%) had met a deepfake challenge (USCOURTS-EVAGENDA-2026, pp. 226-227). One California case ended in a terminating sanction (NBC-DEEPFAKE-2025). Practitioner surveys say fraudsters are ahead: only 7% of ACFE/SAS respondents say they are more than moderately prepared for AI-fuelled fraud (ACFE-TECHBENCH-2026).
 5. **Independent measurement of generative-AI review is contested.** Relativity's aiR Review showed 87.7% recall and 28.6% precision in a Redgrave LLP case study; independent academics argue the comparison to managed review was not like for like and that, once adjusted, aiR and manual review are comparable (CGP-ARXIV-2026, dated 2026-10-12).
 
 **Evidence absence, stated plainly.** No survey of accounting-firm forensic teams; no published override or error rates for AI in damages or tracing work; no named Big Four forensic AI launch found; no job postings from forensic practices that show AI duties (the one posting found is an AI lab hiring forensic accountants as trainers); no Reddit or community threads could be reached (blocked). See section 6.
 
-**Counts.** 15 use cases: A=0, B=6, C=4, D=5. 40 sources listed; 36 opened in full and 1 search-only (the rest see section 5).
+**Counts.** 15 use cases: A=0, B=6, C=4, D=5. 39 sources listed: 38 opened in full and 1 search-only (counts by type in section 5).
 
 ---
 
@@ -461,7 +461,7 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
     - Closed-system or enterprise tools whose terms bar training on inputs.
     - Records of prompts, inputs, tool versions and outputs.
   risks_and_guardrails:
-    - The Kohls court said it was not fault of intent: the declaration was excluded although the errors were innocent (KTS-EXPERTAI-2026).
+    - The Kohls court excluded the declaration although the errors were described as innocent; intent did not matter (KTS-EXPERTAI-2026).
     - AICPA's FVS committee guidelines are not a standard but remind members to align AI use with engagement terms, confidentiality and professional judgment (BVR-AICPAAIGUIDE-2025).
     - Verification with the same AI tool is not enough (KTS-EXPERTAI-2026, model verification provision).
   human_checkpoints:
@@ -539,8 +539,8 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: Valid8 Financial, type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: 2025-02, access: full, locator: "Chee interview section" }
   last_reviewed: 2026-10-20
   notes: >-
-    Firm type: Big Four-adjacent global advisory firm (BRG is a global consulting firm, not a Big Four firm; the source
-    states only the author's title); academic and vendor sources. Graded C: the BRG statement is an opinion-column
+    Firm type: the source gives only the author's title at BRG, not the firm's size or type; the other sources
+    are academic and vendor. Graded C: the BRG statement is an opinion-column
     recollection without a described deployment. The Valid8 white paper (a vendor) also has an estimate that 60% of
     forensic accounting companies use AI-powered tools; that is an unsourced vendor estimate and is not used as an outcome.
 
@@ -680,14 +680,14 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
     - Access to specialist deepfake analysis (not found in public sources for accounting firms).
   risks_and_guardrails:
     - A California court dismissed a case on 2025-09-09 as a terminating sanction after plaintiffs submitted AI-generated evidence; reconsideration was denied 2025-11-06 (NBC-DEEPFAKE-2025).
-    - The judiciary's committee prepared but did not approve a possible Rule 901(c) on deepfakes (USCOURTS-EVAGENDA-2026, Tab IV summary, p. 4).
+    - The judiciary's committee prepared but did not approve a possible Rule 901(c) on deepfakes (USCOURTS-EVAGENDA-2026, Tab IV summary, p. 5).
   human_checkpoints:
     - Judges are advised to ask the source of a suspect item, who had access, whether it was altered, and for corroborating evidence (NBC-DEEPFAKE-2025).
   role_evolution: >-
     Not published for forensic accountants.
   evidence_grade: D
   sources:
-    - { ref: USCOURTS-EVAGENDA-2026, title: "Advisory Committee on Evidence Rules, agenda book for the May 7, 2026 meeting", publisher: US federal judiciary, type: regulator, url: "https://www.uscourts.gov/sites/default/files/document/2026-05_evidence_rules_agenda_book.pdf", date: 2026-05-07, access: full, locator: "p. 4 (Tab IV summary); FJC survey memo pp. 226-227" }
+    - { ref: USCOURTS-EVAGENDA-2026, title: "Advisory Committee on Evidence Rules, agenda book for the May 7, 2026 meeting", publisher: US federal judiciary, type: regulator, url: "https://www.uscourts.gov/sites/default/files/document/2026-05_evidence_rules_agenda_book.pdf", date: 2026-05-07, access: full, locator: "p. 5 (Tab IV summary); FJC survey memo pp. 226-227" }
     - { ref: NBC-DEEPFAKE-2025, title: "AI-generated evidence showing up in court alarms judges", publisher: NBC News, type: press, url: "https://www.nbcnews.com/tech/tech-news/ai-generated-evidence-deepfake-use-law-judges-object-rcna235976", date: 2025-11-18, access: full, locator: "Mendones case and judges' comments" }
     - { ref: ACFE-TECHBENCH-2026, title: "Study: Deepfake fraud surges - and only 7% of organizations are firmly ready", publisher: SAS with ACFE, type: survey, url: "https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html", date: 2026-03-25, access: full, locator: "'Fraudsters are winning the AI race' bullet" }
     - { ref: FINCEN-DEEPFAKE-2024, title: "FinCEN Alert FIN-2024-Alert004: Fraud Schemes Involving Deepfake Media Targeting Financial Institutions", publisher: US Treasury FinCEN, type: regulator, url: "https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf", date: 2024-11-13, access: full, locator: "pp. 1-2" }
@@ -897,14 +897,14 @@ Conventions: refs follow `PUBLISHER-SHORT-YYYY` and reuse the landscape's refs w
 - **ACFE Occupational Fraud 2026** (published 2026-05-12): 2,402 cases, 143 countries; tips detected 43%; automated transaction/data monitoring was the initial detection method in 3%; proactive data monitoring/analysis in place in 49% of cases with median loss $70,000 vs $150,000 and 9 vs 16 months (ACFE-RTTN-2026, Fig. 13, p. 41). Not AI-specific.
 - **ACFE/SAS 2026 benchmarking** (2026-03-25, n=713): AI/ML used by 25% (18% in 2024); genAI used by 16%, 58% plan to; 18% test models for bias; 6% fully confident explaining models; 84% cite budget as a major or moderate barrier (ACFE-TECHBENCH-2026).
 - **e-Discovery gen-AI review:** 87.7% recall / 28.6% precision (aiR) vs 64.4% / 39.2% (managed review) on a 1,000-document SME sample; independent critique says not comparable (CGP-ARXIV-2026).
-- **FJC survey of federal judges** (January 2026): 931 responses, 45% response rate; 15 had met a deepfake challenge (USCOURTS-EVAGENDA-2026, p. 226).
+- **FJC survey of federal judges** (January 2026): 931 responses, 45% response rate; 15 had met a deepfake challenge (USCOURTS-EVAGENDA-2026, pp. 226-227).
 - **Rule 707 comment record:** more than 70 written comments and two hearings (USCOURTS-EVAGENDA-2026, p. 4).
 - **Literature:** 76 documents (2019-2026) in a systematic review; ML tends to beat rule-based methods where data quality is high (JRFM-FORENSICAI-2026). For OSINT and cyber investigations, end-to-end hallucination was measured empirically in only one system (4%, favourable and non-reproducible conditions) (OSINT-ARXIV-2026, Abstract and section on the hallucination-validation gap).
 - **Quality evidence for accounting-firm forensic AI:** none. No error rate, override rate, parallel-run result or inspection finding was found. The closest is J.S. Held's description of a parallel check (no results).
 
 ### Guardrails and regulatory points
 
-- **Proposed Rule 707** would subject machine output offered without an expert to Rule 702(a)-(d) reliability, excluding "simple scientific instruments" (USCOURTS-FRE707-2025). Published for comment August 2025; committee met 2026-05-07; the Standing Committee's September 2026 report lists "continued consideration" (USCOURTS-STDCOMM-2026). The committee had also prepared, but not approved, a possible Rule 901(c) on deepfakes (USCOURTS-EVAGENDA-2026, p. 4). Draft note factors include explainability and independent validation (USCOURTS-EVAGENDA-2026, pp. 65-66, 18-19).
+- **Proposed Rule 707** would subject machine output offered without an expert to Rule 702(a)-(d) reliability, excluding "simple scientific instruments" (USCOURTS-FRE707-2025). Published for comment August 2025; committee met 2026-05-07; the Standing Committee's September 2026 report lists "continued consideration" (USCOURTS-STDCOMM-2026). The committee had also prepared, but not approved, a possible Rule 901(c) on deepfakes (USCOURTS-EVAGENDA-2026, p. 5). Draft note changes discussed include explainability and independent validation (USCOURTS-EVAGENDA-2026, pp. 18-19 and 65-66).
 - **Existing law already bites:** Rule 702 and Daubert in Kohls v. Ellison; Frye in Matter of Weber; counsel's duty to disclose AI evidence in Weber (KTS-EXPERTAI-2026).
 - **Professional guidance:** AICPA FVS committee guidelines (Oct 2025, members-only, not a standard) (BVR-AICPAAIGUIDE-2025); AICPA FVS conference sessions on court treatment of AI expert evidence are scheduled for 2026-11-05 (AICPA-FVS-2026, FVC2617).
 - **UK:** The Civil Justice Council proposed that expert witnesses explain AI use and that the expert declaration (PD35 3.3) be amended; a July 2026 update points to proportionate transparency for expert evidence and a final report later in 2026 (HSFKRAMER-CJC-2026, search-only, law-firm summary; not verified against CJC documents).
@@ -1006,9 +1006,7 @@ Access is `full` unless marked. Dates marked "inferred" are explained in the not
 | FRAUDTALK-162-2025 | Decoding the Future: Strategic Foresight for Fraud Examiners (Fraud Talk episode 162) | ACFE (Fraud Talk podcast) | podcast | https://acfe.podbean.com/e/decoding-the-future-strategic-foresight-for-fraud-examiners/ | 2025-11-11 | full (show notes only; audio not heard) |
 | HSFKRAMER-CJC-2026 | Civil Justice Council publishes update on consultation responses on AI for preparing court documents | Herbert Smith Freehills Kramer (law-firm note) | firm | https://www.hsfkramer.com/notes/litigation/2026-07/civil-justice-council-publishes-update-on-consultation-responses-regarding-use-of-ai-for-preparing-court-documents | 2026-07 | search-only |
 
-**Source counts by type (40 listed):** regulator 5 (USCOURTS x3, FINCEN, DOJ), professional-body 6 (ACFE-RTTN, ACFE-CANPR, AICPA-FVSWEBCAST, AICPA-COPILOT, BVR-AICPAAIGUIDE; counted with the AICPA FVS conference below as conference), conference 4 (AICPA-FVS, ACFE-CANADA, ACFE-APAC, plus none other), firm 7 (STEPTOE, KTS, JSHELD x2, DEANDORTON, HSFKRAMER search-only, and CPAPA is press), vendor 7 (VALID8 x3, RELATIVITY, HAYSTACKID, EVERLAW, and none other), academic 6 (CGP, OMRANI, JRFM, FINTAF, JFAR, OSINT), survey 1 (ACFE-TECHBENCH), press 5 (BVR-KOHLS, PPC, NBC, CITYAM, CPAPA), podcast 1, job-posting 1, community 0.
-
-For a precise tally from the table: regulator 5, professional-body 5, conference 3, firm 6, vendor 7, academic 6, survey 1, press 5, podcast 1, job-posting 1, community 0 (total 40). Opened in full: 39; search-only: 1 (HSFKRAMER-CJC-2026). Of the 39 opened, 8 are pages or items from scheduled events or product pages (conference listings and vendor pages) rather than substantive documents. The brief's depth target of 25 distinct sources and four source types is met on opened sources (10 types).
+**Source counts by type (39 listed):** regulator 5, professional-body 5, conference 3, firm 6, vendor 6, academic 6, survey 1, press 5, podcast 1, job-posting 1, community 0. Opened in full: 38; search-only: 1 (HSFKRAMER-CJC-2026). The brief's target of 25 distinct sources across four source types is met on opened sources (10 types). Caveat: several of the opened items are event listings or vendor product pages rather than substantive documents, and the substantive evidence is concentrated in about ten of them (the three judiciary documents, ACFE-RTTN, ACFE-TECHBENCH, CGP-ARXIV, JSHELD x2, KTS, JRFM).
 
 ---
 
