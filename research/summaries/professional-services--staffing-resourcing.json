@@ -1,0 +1,282 @@
+[
+ {
+  "id": "professional-services-staffing-resourcing-01",
+  "title": "Ranked staff shortlists in project software, with the resource manager deciding",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Resource managers match people to roles from memory, spreadsheets and phone calls, so familiarity shapes who is picked and people with the right skills elsewhere are overlooked.",
+  "approach": [
+   "An agent in the firm's project system proposes ranked candidates from skills, availability and cost data; a resource manager confirms or overrides.",
+   "Named uses include Basware (on Kantata), Nextview and Diabsolut (Certinia agents), and zeb, whose agent proposes and pre-books people.",
+   "Kantata states customers see a 40% improvement in resource planning accuracy (vendor-published); no acceptance or override rate for shortlists was found."
+  ],
+  "who": "Basware, Nextview, Diabsolut, zeb; Kantata, Certinia"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-02",
+  "title": "McKinsey plans AI agents to help match consultants to client teams",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "McKinsey's professional-development staff have matched consultants to clients for decades, and the process has become more complex as the firm grew to almost 40,000 employees.",
+  "approach": [
+   "Bloomberg Law reports McKinsey plans to use AI agents to help choose the consultants assigned to client teams.",
+   "Agents supplement rather than replace the professional-development staff.",
+   "No result, pilot size or timeline is published (self-reported)."
+  ],
+  "who": "McKinsey"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-03",
+  "title": "Client emails and statements of work turned into roles and suggested assignments",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Someone reads client requests by email and portal, copies them into the pipeline and checks with managers, and may not reply the same day; kickoff preparation takes days.",
+  "approach": [
+   "Cinode's MailMatch reads emails, portal links and attachments to extract roles, skills and dates, creates a pipeline project and runs semantic matching.",
+   "Rocketlane's Workforce Agent turns a statement of work into a draft plan with suggested assignments; no automatic booking is described.",
+   "Rocketlane says kickoff preparation compresses from days to hours (vendor-published); no baseline given. A staffer reviews Cinode matches and books."
+  ],
+  "who": "Cinode, Rocketlane, Certinia"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-04",
+  "title": "Rolling demand and capacity forecast by role and skill, with what-if scenarios",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Pipeline and capacity sit in separate tools, so forecasts are quarterly at best, and 55% of firms in a Dayshape survey miss, delay or turn down work over capacity.",
+  "approach": [
+   "Pipeline and capacity feed a rolling forecast using win rates and seasonality, showing where demand exceeds supply by role, skill and period.",
+   "Kantata customer Hakkoda moved from forecasting four weeks ahead to three to six months ahead (vendor-published).",
+   "Vendor claims: Kantata lists a 10% absolute improvement in average project margin; Deltek states a 20% improvement in forecast accuracy (vendor-published).",
+   "The operations leader reviews the forecast and decides hiring, contracting and bids; no source describes automatic triggers."
+  ],
+  "who": "Hakkoda, Kantata, Deltek, Projectworks"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-05",
+  "title": "Staffing scenarios compared across projects, with margin impact shown at decision time",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Staffing choices are made with the financial consequence invisible until a later review.",
+  "approach": [
+   "Kantata's Staffing Optimizer models scenarios across projects; Candidate Assignments compares internal and external resources on skills, availability and margin impact.",
+   "Projectworks describes margin impact appearing when a contractor is added or the seniority mix changed.",
+   "No results published; the operations leader or resource manager chooses among scenarios."
+  ],
+  "who": "Kantata, Projectworks"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-06",
+  "title": "Agent re-matches people and proposes replacements for work in flight",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Replacing a person mid-project means finding every assignment and searching for a match on the same criteria and timeframes, and managers scramble without pipeline visibility.",
+  "approach": [
+   "Certinia's Reallocation Agent finds a person's assignments and proposes best-match replacements on the same criteria and timeframes to resource managers.",
+   "Rocketlane's Resource Management Agent, in active rollout, flags people nearing over-capacity and ranks reallocation options by delivery impact and margin fit.",
+   "The agent proposes options and a resource manager decides; no measured outcome or override rate is published."
+  ],
+  "who": "Certinia, Rocketlane"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-07",
+  "title": "Bench gaps detected early and matched to open or unsold work",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Consultants sit idle between projects while the person staffing work does not see them, and the same people get tapped repeatedly.",
+  "approach": [
+   "Rocketlane describes an agent that flags a bench gap when allocation falls below target for the next two to three weeks.",
+   "Kantata's Skills Profiling on Unsold Work lets firms soft-book people before contracts are signed and see skills gaps early.",
+   "Certinia claims reduced bench time but publishes no figure (vendor-published); the agent surfaces gaps and a manager redeploys."
+  ],
+  "who": "Rocketlane, Projectworks, Kantata, Certinia"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-08",
+  "title": "Continuous utilisation and overallocation monitoring with early alerts",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Utilisation problems are found in last month's report, after starting weeks earlier; average billable utilisation fell to 66.4% in 2025, the lowest in SPI Research's survey history.",
+  "approach": [
+   "A background process flags risks early, such as hours above target for two consecutive weeks or a team below a utilisation threshold.",
+   "Rocketlane describes checks flagging anyone booked over 100% across several weeks; Deltek says its Dela uses machine learning on past project performance.",
+   "Baseline, not a result: utilisation fell from 68.9% in 2024 to 66.4% in 2025; top-maturity firms exceed 80% (vendor-published).",
+   "The operations leader acts on alerts; alert-to-action practice is not described."
+  ],
+  "who": "SPI Research, Deltek, Rocketlane, Projectworks"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-09",
+  "title": "Conversational resourcing assistant answers who has the skills and capacity",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Answering who has this experience and capacity in July takes a morning of phone calls and spreadsheet checks, and staffing often depends on one or two people.",
+  "approach": [
+   "Natural-language questions run over project data; assistants can also flag resource conflicts or draft a plan from a statement of work.",
+   "Kantata launched Expertise Agent on 2026-06-16; Rocketlane markets a Nitro Resource Management Agent; Certinia lists an Ask Veda Agent.",
+   "Projectworks says a question that took a morning returns in seconds (illustrative; vendor-published). The person asking decides."
+  ],
+  "who": "Kantata, Rocketlane, Certinia, Projectworks"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-10",
+  "title": "Skills inventory kept current from profiles, project history and role descriptions",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Self-reported skills profiles say little about how recently a skill was used or proficiency, and 45% of law firms in BigHand's survey had only partial skills data.",
+  "approach": [
+   "Cinode's AI suggests skills for a role from its title and description and matches related skills rather than exact keywords.",
+   "Deltek describes certification tracking with skill-based matching; TSIA's first maturity level has AI update profiles from project data.",
+   "No outcome published for skills upkeep; 67.7% of respondents chose skills intelligence as their second most-wanted AI support (vendor-published)."
+  ],
+  "who": "Cinode, Deltek, TSIA"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-11",
+  "title": "One matching view across employees, subcontractors, candidates and partner consultants",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Many systems match only internal employees, while firms use subcontractors and partners to fill gaps; subcontractors contributed 10.4% of revenue in SPI's 2025 benchmark.",
+  "approach": [
+   "Cinode matches employees, subcontractors, candidates and partner consultants in one view and can post unfilled roles to partners.",
+   "Kantata compares internal and external resources side by side on skills, availability and margin impact.",
+   "A staffer chooses and books; no results published."
+  ],
+  "who": "Cinode, Kantata"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-12",
+  "title": "Central skills-based resourcing with open opportunity boards in place of partner-led allocation",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Work was allocated by partners calling around, so lawyers could lack capacity when deadlines moved, and BigHand's survey found 37% of firms say partners resource on personal preference.",
+  "approach": [
+   "Womble Bond Dickinson and DLA Piper use central resourcing teams and opportunities boards where associates volunteer for open requests.",
+   "Reed Smith's tool is decision support, so staffing decisions stay with people; Deutsche Telekom planned Eightfold matching, piloting with about 1,000 people.",
+   "DLA Piper reports time saved finding resources: 600+ hours (about GBP 673,000 in stated value) (vendor-published)."
+  ],
+  "who": "Womble Bond Dickinson, DLA Piper, Reed Smith"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-13",
+  "title": "Algorithm assigns cases to analysts instead of managers (randomised public-agency trial)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Assigning legally complex, deadline-bound cases to analysts is a matching problem between case complexity and skill, and managers use soft information about who fits which case.",
+  "approach": [
+   "Peru's environmental enforcement agency (OEFA) tested replacing manager assignment with case lists from a linear-optimisation algorithm, not machine learning.",
+   "Analysts given algorithm-selected cases were about 5 percentage points less likely to conclude a case on time (control about 40%) (independent).",
+   "No human checkpoint in the automated arm, by design; fines, appeal rates and appeal outcomes did not differ (independent)."
+  ],
+  "who": "OEFA, Peru's environmental enforcement agency"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-14",
+  "title": "Suggested completion dates shown on cases while managers keep assignment (randomised trial)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Analysts working a backlog of deadline-bound cases need cues on sequencing, and managers kept the assignment decision but lacked a scheduling prompt.",
+  "approach": [
+   "The same OEFA system displayed suggested completion dates on randomly chosen cases, leaving case selection with managers or the algorithm.",
+   "Suggested completion dates raised timely completion by about 4 percentage points, mostly among manager-assigned cases (independent).",
+   "Managers keep case selection in the manager-assigned arm; dates are suggestions."
+  ],
+  "who": "OEFA, Peru's environmental enforcement agency"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-15",
+  "title": "One professional with AI instead of a two-person team (field experiment)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Team composition rules assume AI is absent; if AI replaces some benefits of collaboration, staffing two people on a task may add cost without adding quality.",
+  "approach": [
+   "Staff a single professional with AI where a pair would have been used.",
+   "A pre-registered Procter & Gamble experiment randomly assigned 776 professionals to work with or without AI, alone or in two-person teams.",
+   "Individuals with AI matched the performance of teams without AI (independent).",
+   "The experiment compares conditions; it is not a documented staffing policy."
+  ],
+  "who": "Procter & Gamble"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-16",
+  "title": "AI agents planned, allocated and costed alongside people as assignable capacity",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Capacity planning assumed people and hourly rates, yet 87% of 200 leaders plan to use AI agents in their workforce.",
+  "approach": [
+   "Planview announced Agent Resource Management to plan, govern and cost human and agent capacity, with availability from Fall 2026.",
+   "TSIA's third maturity level optimises work across consultants, subcontractors, partners and AI agents in one model.",
+   "No surveyed organisation has agents operational as assignable resources; 10.7% run formal pilots (vendor-published).",
+   "Accountability stays with humans, per Certinia; how a resource manager signs off agent assignments is not described."
+  ],
+  "who": "Planview, Kantata, TSIA, Certinia"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-17",
+  "title": "Experienced flexible talent covers overflow and helps train and review AI tools",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Associates under billable pressure choose client work over AI training even when offered credit, and knowledge teams lack subject-matter experts to train tools and review output.",
+  "approach": [
+   "Firms bring in experienced attorneys to cover overflow and to help train internal AI tools and review AI-generated work.",
+   "A sponsored accounting article recommends contract talent as a planned part of busy-season capacity.",
+   "The provider says one law firm has dozens of its attorneys working for one rainmaker; no firm named, no metrics (vendor-published).",
+   "Flexible lawyers review AI-generated work and do quality control."
+  ],
+  "who": "Latitude; no named firm"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-18",
+  "title": "In-house legal teams move work in-house as AI lifts internal capacity",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "In-house legal teams decide what to do internally and what to send to outside counsel, and AI changes what internal teams can absorb.",
+  "approach": [
+   "Corporate legal departments insource work that generative AI makes manageable internally, reducing reliance on outside counsel for it.",
+   "The survey records expectations, not a measured shift: 64% of in-house respondents expect to rely less on outside counsel (vendor-published).",
+   "78% of respondents see an opportunity to insource drafting (contract management 71%, research 62%) (vendor-published).",
+   "The decision to insource or outsource a matter stays with the legal department."
+  ],
+  "who": "ACC/Everlaw survey of in-house counsel"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-19",
+  "title": "Idea: feed delivery outcomes back into staffing decisions",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: resource managers support outcome-oriented delivery without outcome data, as only 7.3% of Resource Management Institute respondents say it is easily accessible and routinely used.",
+  "approach": [
+   "Idea: feed delivery outcomes (margin, client result, risk) back into staffing so recommendations reflect which people and agent combinations produce strong results.",
+   "73.4% of respondents say this knowledge would be very or extremely valuable (vendor-published).",
+   "Kantata's October 2025 release described a planned Sales Accelerator using delivery history to propose optimal human-AI resource mixes.",
+   "Deal staffing stays with resource managers in the source's framing."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-20",
+  "title": "Idea: check whether AI freed capacity, then reset capacity plans",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: capacity models convert demand into hours, but a columnist argues AI intensifies work so freed capacity gets refilled.",
+  "approach": [
+   "Idea: audit whether hours actually fell after AI adoption, check effort assumptions against measured hours and demand, and reset plans.",
+   "Demand for Big Law hours rose 4.2% in the first half of 2026 against about 1.5% normal growth (independent).",
+   "SPI Research calls the gap between time AI saves and revenue it generates the leak; no source names a tool for this."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-staffing-resourcing-21",
+  "title": "Idea: decision log, disparate-impact testing and explanations for AI-assisted staffing",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: rules naming work allocation are arriving, yet only 4% of Resource Management Institute respondents name ethical or compliance concerns as a gap.",
+  "approach": [
+   "Idea: record each AI staffing recommendation and the human decision, test for disparate impact, and explain the AI's role to affected people.",
+   "Controls come from legal texts and codes; no firm was found operating this, and no source reports override or acceptance rates.",
+   "Cited checkpoints: a reviewer who can change the decision, and a qualified individual able to override or discontinue a high-risk AI system."
+  ],
+  "who": "No named deployment"
+ }
+]
