@@ -24,8 +24,8 @@ Date 2026-10-20. Skill folder: `plugins/ai-transformation/skills/ai-portfolio/`.
 | `references/templates/benefits.yaml` | 28 | benefits/v1 |
 | `references/briefs/prepare-review-item.md` | 45 | Advisor brief format (`review-opportunities.md`) |
 
-Validator: no errors in ai-portfolio files except `../ai-enablement/SKILL.md` (a handoff path the brief requires),
-which resolves once the ai-enablement author writes that file. Both schema examples parse (checked with
+Validator: 0 errors across the plugin after all sibling skills landed (the `../ai-enablement/SKILL.md` handoff path
+now resolves). Both schema examples parse (checked with
 `yaml.safe_load`). Description is 960 characters.
 
 ## Conflicts resolved

@@ -83,8 +83,8 @@ name who checks the output, and that are retired when they stop being right.
 checklists on an internal platform and templates for common use cases (vendor guidance) [MSLEARN-COE-ND]. Law firms
 report knowledge teams curating approved tools, use cases and playbooks in one place
 (`professional-services-knowledge-management-18`, grade B); Gowling WLG aims for durable playbooks, prompt patterns and
-repeatable workflows [HARVEY-GOWLING-2025]. Audit firms describe permitted-use policies with a curated prompt library
-(`assurance-quality-management-02`, grade B). BBVA reports over 2,900 custom assistants built by staff in five months
+repeatable workflows [HARVEY-GOWLING-2025]. Audit firms and regulators describe risk-tiered permitted-use policies, including the option of a curated prompt
+library (`assurance-quality-management-02`, grade B). BBVA reports over 2,900 custom assistants built by staff in five months
 (vendor-published, not verified) [OPENAI-ENTGUIDE-ND].
 
 ## 5. Testing an entry

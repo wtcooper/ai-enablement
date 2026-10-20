@@ -23,8 +23,8 @@ Prepared 2026-10-20. Brief: `research/runs/suite/briefs/author-ai-solution-deliv
 | `references/library/index.md` | 22 | Shared library index (pointer and needs table) |
 | `references/method/people-and-change.md` | 16 | Shared `people-and-change.md` (pointer) |
 
-Validator: no errors in this skill's files except one that depends on a sibling (see §2, item 9). The core-rules
-block matches. Every method file is under 300 lines with a contents list; `SKILL.md` is within the 150–250 target.
+Validator: 0 errors across the plugin on the final run (23 warnings, all pre-existing archetype targets). The
+core-rules block matches. Every method file is under 300 lines with a contents list; `SKILL.md` is within the 150–250 target.
 Schema examples parse with PyYAML (checked).
 
 ## 2. Conflicts resolved
@@ -53,9 +53,8 @@ Schema examples parse with PyYAML (checked).
    in full before production (marked advisor default).
 8. **Risk tiers and status values.** Risk tiers are copied from ai-governance (`tier-1` to `tier-4`), never
    defined here. Solution `status` is kept separate from the portfolio's `stage` and `status`.
-9. **Pending sibling.** `SKILL.md` and the people-and-change pointer reference `ai-enablement/SKILL.md`, which did
-   not exist when I last ran the validator (2 errors in my files, 1 in ai-portfolio's, all the same missing
-   path). They clear once the ai-enablement skill is written.
+9. **Sibling paths.** `SKILL.md` and the people-and-change pointer reference `ai-enablement/SKILL.md`, which did
+   not exist on an earlier validator run; it exists now and the final run is clean.
 10. **Partner-firm example.** The research's Deloitte Australia case is described without naming the firm in the
     eval-plan traps (the Guardian source names it); the shared pattern files already name it.
 

@@ -111,7 +111,7 @@ junior-task audit and the explain-back technique; use it here.
 | Give a safe, low-stakes first phase | Early stage | Comfort as the bottleneck before skill. Gowling describes space for "silly poems and cats" before professional use [HARVEY-GOWLING-2025]; KPMG's survey reports sandbox environments and "AI agent shadowing" in organizations' training (vendor-published) [KPMG-PULSE-2025] |
 | Target low-confidence groups first | Ordering delivery | Where coaching pays [UKGDS-2025] |
 | Teach decomposition explicitly | Module design | Why one-shot, overloaded prompts disappoint [HARVEY-GOWLING-2025] |
-| Keep formats short and varied | Busy professionals | Michael Best used lunch-and-learns, short videos and one-page handouts [LAW360-2025] |
+| Keep formats short and varied | Busy professionals | Law firms in a Law360 report used lunch-and-learns, short videos and one-page handouts [LAW360-2025] |
 | Make training a condition of access where risk warrants | Rollout | Whether access is gated by capability. A CIPD case firm required training before use [CIPD-2026] (`professional-services-talent-learning-01`, grade B) |
 | Check whether training spend is falling while expectations rise | Funding | Wharton reports training investment down 8 points and confidence in training as the main path to fluency down 14 points [WHARTON-GBK-2025] |
 

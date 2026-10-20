@@ -45,7 +45,7 @@ the conditions that make sustained use likely: time, expectations, safe tools an
    gains without changes to how work is organized [MOLLICK-LAB-2025].
 2. **Name target workflows per role** (P2). "AI literacy" is not a goal.
 3. **Find the owner** (P3). Section found 53.2% of workers said their organization had no Head of AI or they were
-   unsure; those with a full-time Head of AI scored higher on its proficiency index (42 versus 33; correlational,
+   unsure; workers with a full-time Head of AI averaged 42 against 33 on Section's scoring (correlational,
    vendor-published) [SECTION-2026].
 4. **Decide learning time and credit** (P4). Say the rule out loud (§6).
 5. **Write expectations** for leaders and managers (§5).
