@@ -69,22 +69,23 @@ patterns fit.
 
 ## 3. Agentic patterns
 
-Reusable shapes of AI-enabled work (`pattern`). These are working definitions for the advisor. Archetype use
-cases carry the evidence; search `use-cases/*.yaml` by `pattern:` to find real examples.
+Reusable shapes of AI-enabled work (`pattern`). Each pattern has a detailed file in `patterns/` (linked below):
+ladder, build, controls, metrics, governance, graded evidence and probes. Archetype use cases carry further
+evidence; search `use-cases/*.yaml` by `pattern:` to find real examples.
 
 | Id | What it does | Usual ladder | Key human checkpoint | Main failure mode |
 |---|---|---|---|---|
-| `intake-triage` | Reads incoming requests or items, classifies, routes and prioritizes them | augment → automate | Spot checks of routing; owner of the exception queue | Misrouted urgent items |
-| `document-to-decision` | Extracts facts from documents and checks them against criteria to propose a decision | augment → automate | A person approves decisions above a threshold | Extraction errors treated as fact |
-| `research-brief` | Gathers sources, compares them and writes a cited brief | assist → augment | The expert reads the sources behind key claims | Invented or misread citations |
-| `draft-review-loop` | Drafts a deliverable from inputs and templates; a reviewer edits and approves | assist → augment | Reviewer sign-off before anything leaves the team | Review turns into a rubber stamp |
-| `full-population-testing` | Tests every item instead of a sample and surfaces exceptions | automate | A person investigates and concludes on exceptions | False positives that swamp reviewers |
-| `monitor-diagnose-act` | Watches signals continuously, explains anomalies and proposes or takes actions | automate → delegate | Approval for actions that are hard to reverse | Alert fatigue; unsafe automatic actions |
-| `reconcile-exceptions` | Matches records across sources and works the breaks | automate | A person clears unresolved breaks | Forced matches that hide real breaks |
-| `service-agent-escalation` | Answers clients or staff directly and hands off to a person when needed | automate | Escalation rules; sampling of conversations | Confident wrong answers; no clean handoff |
-| `grounded-knowledge-assistant` | Answers questions from an approved body of knowledge, with citations | assist | Content owners keep the knowledge current | Stale or unapproved content |
-| `end-to-end-case-agent` | Takes a case from intake to resolution across systems, with checkpoints | delegate | Checkpoints at key decisions and before anything irreversible | Errors compounding across steps |
-| `bulk-transformation` | Converts, migrates or rewrites large volumes of content, data or code | automate | Sampled quality checks; sign-off before cutover | Silent errors at scale |
+| [`intake-triage`](patterns/intake-triage.md) | Reads incoming requests or items, classifies, routes and prioritizes them | augment → automate | Spot checks of routing; owner of the exception queue | Misrouted urgent items |
+| [`document-to-decision`](patterns/document-to-decision.md) | Extracts facts from documents and checks them against criteria to propose a decision | augment → automate | A person approves decisions above a threshold | Extraction errors treated as fact |
+| [`research-brief`](patterns/research-brief.md) | Gathers sources, compares them and writes a cited brief | assist → augment | The expert reads the sources behind key claims | Invented or misread citations |
+| [`draft-review-loop`](patterns/draft-review-loop.md) | Drafts a deliverable from inputs and templates; a reviewer edits and approves | assist → augment | Reviewer sign-off before anything leaves the team | Review turns into a rubber stamp |
+| [`full-population-testing`](patterns/full-population-testing.md) | Tests every item instead of a sample and surfaces exceptions | automate | A person investigates and concludes on exceptions | False positives that swamp reviewers |
+| [`monitor-diagnose-act`](patterns/monitor-diagnose-act.md) | Watches signals continuously, explains anomalies and proposes or takes actions | automate → delegate | Approval for actions that are hard to reverse | Alert fatigue; unsafe automatic actions |
+| [`reconcile-exceptions`](patterns/reconcile-exceptions.md) | Matches records across sources and works the breaks | automate | A person clears unresolved breaks | Forced matches that hide real breaks |
+| [`service-agent-escalation`](patterns/service-agent-escalation.md) | Answers clients or staff directly and hands off to a person when needed | automate | Escalation rules; sampling of conversations | Confident wrong answers; no clean handoff |
+| [`grounded-knowledge-assistant`](patterns/grounded-knowledge-assistant.md) | Answers questions from an approved body of knowledge, with citations | assist | Content owners keep the knowledge current | Stale or unapproved content |
+| [`end-to-end-case-agent`](patterns/end-to-end-case-agent.md) | Takes a case from intake to resolution across systems, with checkpoints | delegate | Checkpoints at key decisions and before anything irreversible | Errors compounding across steps |
+| [`bulk-transformation`](patterns/bulk-transformation.md) | Converts, migrates or rewrites large volumes of content, data or code | automate | Sampled quality checks; sign-off before cutover | Silent errors at scale |
 | `other` | Anything that does not fit; describe it in the option | — | — | — |
 
 ## 4. Runtime classes
@@ -136,7 +137,9 @@ rules are in `../method/prioritize.md` §3.
 
 `curious` → `experimenting` → `adopting` → `scaling` → `ai-native`. Place each scope by what the user can show or
 count, not by self-rating. Markers, blockers, readiness criteria and the delegation gates are in
-`../method/onboarding.md` §5; field-specific markers are in the archetype's `ARCHETYPE.md`.
+`../method/onboarding.md` §5; field-specific markers are in the archetype's `ARCHETYPE.md`. To plan the move to the next
+stage (investments, exit criteria, failure points, how organizations are spread across stages and how published maturity models
+compare), read [journey-stages.md](journey-stages.md).
 
 ## 8. Functions
 
@@ -145,20 +148,21 @@ chain, such as a firm's finance, HR or IT teams.
 
 | Id | Function |
 |---|---|
-| `strategy-planning` | Strategy and planning |
-| `sales-marketing-bd` | Sales, marketing and business development |
-| `product-service-development` | Product and service development |
-| `service-delivery` | Service delivery and operations |
-| `customer-service` | Customer service |
-| `people-hr` | People (HR) |
-| `technology-it` | Technology (IT) |
-| `finance-accounting` | Finance and accounting |
-| `procurement-supply-chain` | Procurement and supply chain |
-| `risk-compliance-legal` | Risk, compliance and legal |
+| [`strategy-planning`](functions/strategy-planning.md) | Strategy and planning |
+| [`sales-marketing-bd`](functions/sales-marketing-bd.md) | Sales, marketing and business development |
+| [`product-service-development`](functions/product-service-development.md) | Product and service development |
+| [`service-delivery`](functions/service-delivery.md) | Service delivery and operations |
+| [`customer-service`](functions/customer-service.md) | Customer service |
+| [`people-hr`](functions/people-hr.md) | People (HR) |
+| [`technology-it`](functions/technology-it.md) | Technology (IT) |
+| [`finance-accounting`](functions/finance-accounting.md) | Finance and accounting |
+| [`procurement-supply-chain`](functions/procurement-supply-chain.md) | Procurement and supply chain |
+| [`risk-compliance-legal`](functions/risk-compliance-legal.md) | Risk, compliance and legal |
 
-Detailed function cards (processes, pain points, top opportunities, metrics, probes) are not yet in this
-version. For a function, run the method as usual: map the real work, tag work types, pick patterns from §3, and
-use any archetype module that covers the same work (for example, quality review or knowledge management).
+Each function has a card in `functions/`, linked from its id: what the function covers and which archetype covers
+firms that sell the work, processes and pain points, where AI is changing the work by Reimagine lens with graded
+examples and archetype use-case ids, metrics, interview probes, guardrails and how roles evolve. Read the card for
+the function the user's work sits in, alongside any archetype module that covers the same work.
 
 ## 9. When no archetype matches
 

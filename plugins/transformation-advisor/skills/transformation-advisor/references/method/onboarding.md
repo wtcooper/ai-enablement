@@ -156,6 +156,8 @@ figures self-reported by the team and republished by the vendor). So:
 | | Have you launched anything you could not have delivered before? | New services [MITCISR-2024] | [U/O] |
 | Individual user | Before a task, do you stop and ask whether AI could help? What do you never hand over, and how do you check output? | Personal fluency [MSFT-WTI-2024] | [T] |
 
+To plan the move to the next stage once the scope is placed, read `../library/journey-stages.md`.
+
 ## 6. Adapting the path
 
 | Stage | Emphasis |
