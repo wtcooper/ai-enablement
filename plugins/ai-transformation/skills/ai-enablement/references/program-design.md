@@ -159,7 +159,7 @@ links; Now / Next / Later.
 
 *Illustrative; the firm and figures are invented.* The accounting firm from step 1. Goal: faster, better first drafts
 of engagement memos and tax technical summaries, and audit review notes cleared with less rework. Target workflows:
-audit seniors' planning memo first draft; tax managers' research summary; advisory analysts' interview synthesis. Owner:
+audit seniors' planning memo first draft; tax managers' research summary; advisory analysts' interview summaries. Owner:
 the director of knowledge, with a budget line and a seat at the operations committee. Operating model: a three-person
 central team builds shared assets and measures; champions in each practice; the central team moves to advice once each
 practice has an active champion group and a library reviewer. Learning time: two hours a week for the first

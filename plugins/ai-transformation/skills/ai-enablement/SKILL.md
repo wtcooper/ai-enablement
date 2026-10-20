@@ -231,7 +231,7 @@ results back as drafts and confirm with the user.
   ids in `../transformation-advisor/references/schemas/vocabulary.yaml`
 - **Shared knowledge** (in the core skill): method `../transformation-advisor/references/method/index.md` (people and
   change, interviewing); archetypes `../transformation-advisor/references/archetypes/index.md` (each has
-  `objections.md`, `workforce.md` and a talent-learning or quality module); library
+  `objections.md` and `workforce.md`); library
   `../transformation-advisor/references/library/index.md`
 
 Read only what the current step needs. Read each index before the files it lists.
