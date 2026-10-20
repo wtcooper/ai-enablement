@@ -1,0 +1,341 @@
+[
+ {
+  "id": "professional-services-work-production-01",
+  "title": "AI-assisted legal research with cited answers, checked against sources before use",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Research memos need accurate answers with valid sources, but AI research tools can invent or misstate authority and vendors' claims have been hard to check.",
+  "approach": [
+   "Lawyers use legal-specific or general AI tools for research and first orientation, as Deutsche Telekom's general counsel and a Gleiss Lutz partner describe with Harvey.",
+   "Lawyer reads each cited authority and checks each conclusion before it goes into advice or a filing.",
+   "Vals study, October 2025: AI products scored 74%-78% against a lawyer baseline of 69% (independent).",
+   "Stanford's 2024 test found two leading providers' research tools hallucinated between 17% and 33% of the time (independent)."
+  ],
+  "who": "Deutsche Telekom, Gleiss Lutz, Vals, Stanford"
+ },
+ {
+  "id": "professional-services-work-production-02",
+  "title": "Summaries, chronologies, transcript analysis and first-pass translation over large record sets",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Summarising long records, building chronologies and reading transcripts take much orientation time, and foreign-language documents wait for colleagues or outside translators.",
+  "approach": [
+   "Tools summarise documents and transcripts, draft chronologies and produce first-pass translations; Grant Thornton UK's forensic team uses Legora for translation and email summaries.",
+   "Each AI translation gets a quality check, and a lawyer checks key dates and source references in a chronology.",
+   "Vals, February 2025: on summarisation, CoCounsel scored 77.2% against a lawyer baseline of 50.3% (independent).",
+   "Chronology generation matched the lawyer baseline at best (80.2%) (independent)."
+  ],
+  "who": "Grant Thornton UK, Legora, Vals"
+ },
+ {
+  "id": "professional-services-work-production-03",
+  "title": "Bulk extraction of clauses and fields, and cited question answering, over document sets",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Pulling clauses, dates and fields out of long agreements and answering questions across document sets is repetitive manual reading, and quality varies between reviewers.",
+  "approach": [
+   "Tools extract requested fields, answer questions over a document set with citations and return tables; named users include Goodwin, Dentsu, CMS and A&O Shearman.",
+   "Reviewer checks extracted fields against the source text through the returned citations, with spot checks on multi-clause questions.",
+   "Vals, February 2025: document Q&A scored up to 94.8% (Harvey Assistant) against a lawyer baseline of 70.1% (independent).",
+   "On the hardest extraction question, results varied widely and the lawyer baseline was low at 39.2% (independent)."
+  ],
+  "who": "Goodwin, Dentsu, CMS, A&O Shearman, Vals"
+ },
+ {
+  "id": "professional-services-work-production-04",
+  "title": "Idea-stage regulatory horizon scanning that feeds advice",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Tracking regulatory change across jurisdictions is a continuous reading task done by people and bulletins; this is an announced plan, with no published results.",
+  "approach": [
+   "Hogan Lovells Cadwalader will be a design partner for Legora's Monitors, guiding sources, jurisdictions and alert logic for its global regulatory practice (announced).",
+   "BMW Group's legal teams plan to use AI-supported workflows to monitor regulatory developments.",
+   "Practice lawyers decide which alerts matter and what to advise. No outcome figure published (vendor-published)."
+  ],
+  "who": "Hogan Lovells Cadwalader, BMW Group, Legora"
+ },
+ {
+  "id": "professional-services-work-production-05",
+  "title": "First drafts of documents and clauses from approved precedents, edited by the lawyer",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Drafting clauses, memos and agreements from scratch repeats earlier work, and consistency with approved language depends on who drafts.",
+  "approach": [
+   "Lawyers use AI to produce initial drafts from approved precedents and standards; Goodwin lists drafting among its Legora uses, and BMW Group plans precedent-based first drafts.",
+   "Lawyer edits and approves every draft before it leaves the firm or department.",
+   "ILTA reports 94% of 508 responding firms engaged with GenAI, up 14 points year on year (independent).",
+   "BMW's general counsel says Legora expands in-house capacity; no measurement given (vendor-published)."
+  ],
+  "who": "Goodwin, BMW Group, Gleiss Lutz, ILTA"
+ },
+ {
+  "id": "professional-services-work-production-06",
+  "title": "Randomised trial of an AI drafting assistant, and its effect on lawyers' own skill",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Drafting complex documents is slow, skilled work, and firms do not know whether AI raises quality or weakens the expertise lawyers build by drafting themselves.",
+  "approach": [
+   "A preregistered trial had 133 patent lawyers at eleven US IP firms use an AI drafting assistant for three months; experts scored the work blind.",
+   "Blinded scores rose +0.34 SD at 10 days and +0.38 SD at 90 days, more for juniors (vendor-published; Google-funded).",
+   "Tested without AI, seniors redlined better than controls (+0.45 SD); juniors showed no average gain (vendor-published).",
+   "Lawyer revises and owns the draft; a first draft is never the final submission."
+  ],
+  "who": "Eleven US IP firms; Google-funded study"
+ },
+ {
+  "id": "professional-services-work-production-07",
+  "title": "Consulting analysis and first-draft deliverables with AI, with rules on what stays human-first",
+  "grade": "A",
+  "ladder": "augment",
+  "problem": "Consultants spend much early-career time on research, data work and first-draft slides, and cannot easily tell which tasks AI helps and which it makes worse.",
+  "approach": [
+   "Consultants use GenAI for research briefs, first drafts and early analysis structure, then validate it; managers keep judgment-heavy tasks human-first with an extra check.",
+   "A Harvard Business School experiment with 758 BCG consultants found 12.2% more tasks completed and 25.1% faster on tasks within AI's capability (independent).",
+   "On one task outside AI's capability, AI users were 19% less likely to be correct (independent).",
+   "A qualified reviewer checks AI-influenced analysis before client release."
+  ],
+  "who": "BCG consultants (HBS study), Deloitte Australia"
+ },
+ {
+  "id": "professional-services-work-production-08",
+  "title": "Playbook-based first-pass contract review with suggested edits as tracked changes in Word",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Reviewing counterparty paper clause by clause against preferred and fallback positions is slow and repetitive, and the playbook often lives in people's heads.",
+  "approach": [
+   "An agent in Word reviews an agreement against a playbook and proposes tracked-change edits with citations; the lawyer accepts or rejects each. Microsoft, Harvey, Legora and Anthropic offer similar tools.",
+   "Microsoft telemetry: users kept about 70% of Legal Agent suggestions, across nearly 100,000 edits and over 1,800 users (vendor-published).",
+   "Vals, February 2025: lawyer baseline beat the tools on open-ended redlining, 79.7% against 59.4% for Harvey Assistant (independent).",
+   "Lawyer reviews each change before it goes out; terms outside playbook authority are escalated."
+  ],
+  "who": "Microsoft, GE Aerospace, Harvey, Vals"
+ },
+ {
+  "id": "professional-services-work-production-09",
+  "title": "AI as a sparring partner that challenges a draft position before it goes out",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Authors have blind spots in their own arguments, and a full adversarial read takes hours of colleagues' time.",
+  "approach": [
+   "O'Melveny's Los Angeles managing partner asks Harvey what opposing counsel is likely to argue about a draft motion to dismiss.",
+   "An O'Melveny real estate partner checks how often a provision appears in a lender's last 100 loans before calling it market standard.",
+   "A Bracewell partner uses Legora to test ideas. The partner decides which counter-arguments are credible; no measurement published (self-reported)."
+  ],
+  "who": "O'Melveny, Bracewell"
+ },
+ {
+  "id": "professional-services-work-production-10",
+  "title": "Idea: challenger role and unaided-reasoning check for AI-structured team work",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: a coherent AI-structured draft invites continuation rather than challenge, so teams can approve work no one has independently reasoned through.",
+  "approach": [
+   "Idea. Thomson Reuters Legal proposes assigning challengers and having team members state the reasoning in their own words.",
+   "It also proposes returning to primary sources and asking whether the team could defend the analysis without AI.",
+   "A challenger reviews framing and omissions before finalising. Practitioner proposal; no measurement found (vendor-published)."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-work-production-11",
+  "title": "Pre-release check of citations, quotations and consistency in AI-assisted documents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "AI can produce fluent text citing authorities or reports that do not exist, and fabricated references have reached courts and clients.",
+  "approach": [
+   "Before release, every authority, quotation, reference and figure is checked against its source and a named person records the check.",
+   "Grant Thornton UK's forensic team uses Legora as an extra layer; it flagged one date inconsistent with the documented timeline (self-reported).",
+   "A live database lists 2,202 court decisions involving hallucinated content (independent); this is the failure scale, not a check result.",
+   "Existing multi-reviewer quality control remains the control; a supervising lawyer confirms the check ran."
+  ],
+  "who": "Grant Thornton UK, Legora, Deloitte Australia"
+ },
+ {
+  "id": "professional-services-work-production-12",
+  "title": "AI-assisted review of whole document sets in due diligence and portfolio review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Diligence means reading hundreds or thousands of documents on a deadline, and teams that sample or split work by hand can miss issues or find them late.",
+  "approach": [
+   "Teams load the data room into a tool that reads all documents and produces abstracts, issue lists and checklists.",
+   "O'Melveny used Harvey on a new property portfolio, surfacing entitlements the client did not know about; it says lease abstract reviews were compressed significantly (self-reported).",
+   "CMS says it can review much larger document sets (self-reported). PwC and IFS build diligence analysis in a shared workspace.",
+   "Specialist lawyers review flagged issues and sign the diligence memo."
+  ],
+  "who": "O'Melveny, CMS, PwC, IFS"
+ },
+ {
+  "id": "professional-services-work-production-13",
+  "title": "Task agents that extract data from documents and spreadsheets, map it and validate it",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Advisory teams extract information from documents and spreadsheets and move it into target formats by hand.",
+  "approach": [
+   "PwC said in March 2025 that it used its Agent OS with 250 agents across tax, assurance and advisory (self-reported; a count, not an outcome).",
+   "Data Bridge agents extract data from Excel files or PDFs, map it to a target format and validate values.",
+   "The source does not describe human checkpoints; exceptions and validation failures would need an owner."
+  ],
+  "who": "PwC"
+ },
+ {
+  "id": "professional-services-work-production-14",
+  "title": "Benchmark-stage agent that reads a whole data room and drafts the diligence memo",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "A full data room can hold tens of millions of tokens, more than one model reads at once; Harvey's standard agent loop read under 1%.",
+  "approach": [
+   "Harvey describes a harness where a root agent divides the data room, sub-agents review each part and the root drafts a cited memo; no customer is named.",
+   "On 50 synthetic data rooms, mean pass rate rose from 23.3% to 62.4% with the decomposition harness (vendor-published).",
+   "Deal lawyers review the memo and decide what the findings mean for price, structure, representations and indemnities."
+  ],
+  "who": "Harvey (benchmark; no named customer)"
+ },
+ {
+  "id": "professional-services-work-production-15",
+  "title": "Reusable matter templates where agents run defined tasks and a named reviewer approves each gate",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Each new matter's process is rebuilt by hand, lawyers brief the AI and track status manually, and supervision of multi-step AI work is not settled.",
+  "approach": [
+   "Harvey announced Legal Work Orchestration on 2026-10-15; tasks and notifications are rolling out, templates in early access.",
+   "Each task carries scope, inputs and a reviewer; an agent can produce a consent matrix and notify the partner, who approves before the next step.",
+   "No usage results yet; Harvey forecasts agents taking on an additional 20% of workflow steps in six months (vendor-published forecast)."
+  ],
+  "who": "Harvey, Certinia"
+ },
+ {
+  "id": "professional-services-work-production-16",
+  "title": "Lawyers hand multi-file tasks to general-purpose agent workspaces, with checkpoints sized to risk",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Work spanning agreements, emails, meetings and files makes lawyers carry context between tools, while professional duties require supervising anything an agent produces.",
+  "approach": [
+   "Anthropic, Google, OpenAI and Microsoft announced legal packages in 2026, some in preview or limited offer, for multi-file tasks such as chronologies and term comparison.",
+   "Simmons & Simmons' Peter Lee describes an agent reading a file, identifying issues and drafting an advice note from a solicitor's goal.",
+   "Lawyer supervises outputs, with checkpoints around higher-risk actions. The Law Society reports very limited use of fully autonomous agents (independent)."
+  ],
+  "who": "Anthropic, Google, OpenAI, Microsoft, Simmons & Simmons"
+ },
+ {
+  "id": "professional-services-work-production-17",
+  "title": "Legal engineers and practice teams package firm know-how into playbooks, vaults and custom agents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "A firm's best precedent and review standards sit with a few experts, and each lawyer prompts AI from scratch, so results vary.",
+  "approach": [
+   "Hogan Lovells Cadwalader built custom agents and playbooks; Blank Rome built a brief-bank vault and playbooks; MinterEllison seconded staff to an accelerator that trained legal engineers.",
+   "MinterEllison identified more than 150 use cases; Hogan Lovells Cadwalader piloted Legora with over 1,300 lawyers (vendor-published, counts not results).",
+   "Practice experts own and update playbooks, and champions test tools on real matters before wider release."
+  ],
+  "who": "Hogan Lovells Cadwalader, Blank Rome, MinterEllison"
+ },
+ {
+  "id": "professional-services-work-production-18",
+  "title": "In-house lawyers build workflow agents for recurring assessments such as privacy impact assessments",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Recurring assessments such as data protection impact assessments and non-compete checks consume legal time for each business request.",
+  "approach": [
+   "Dentsu's in-house lawyers built a Harvey agent for data protection impact assessments and workflows for non-compete checks.",
+   "Harvey's case study says the agent cut process time by 75%, without stating what was timed (vendor-published).",
+   "Dentsu reports 93% weekly use and an estimated 4 to 10 hours saved per lawyer weekly (vendor-published).",
+   "Lawyers review assessment outputs; Dentsu describes AI as supporting, not replacing, the work."
+  ],
+  "who": "Dentsu, Harvey"
+ },
+ {
+  "id": "professional-services-work-production-19",
+  "title": "In-house legal teams make AI the first pass on routine work and keep more work in-house",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Corporate legal departments must do more with the same team and cut outside counsel spend, yet routine drafts used to go to outside counsel.",
+  "approach": [
+   "TC Energy set a 'Harvey-First' directive during its pilot, then deployed Harvey widely; GE Aerospace, Dentsu and BMW Group also use Harvey or Legora in-house.",
+   "JLL's general counsel recalls a solid draft in five to ten minutes (self-reported recollection, not a tracked metric).",
+   "A Harvey-commissioned survey found 48% of in-house teams mandated AI for their law firms; only one reported cost savings (vendor-published).",
+   "In-house lawyer edits and approves the first pass; complex matters stay with senior lawyers."
+  ],
+  "who": "TC Energy, GE Aerospace, Dentsu, BMW Group, JLL"
+ },
+ {
+  "id": "professional-services-work-production-20",
+  "title": "Shared AI workspaces where clients, co-counsel and advisers work from the same material",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Drafts, diligence analysis and regulatory work pass between client, law firm and advisers by email and version control, losing context at each handoff.",
+  "approach": [
+   "Harvey Shared Spaces gives internal teams and outside parties one workspace with a shared vault, workflows and permissions.",
+   "O'Melveny deploys it with clients and Dentsu shares a vault with law-firm partners; Deutsche Telekom and Gleiss Lutz are exploring it.",
+   "Participants describe fewer handoffs; none publish measures (self-reported). Each organisation's lawyers review output; the matter owner sets permissions."
+  ],
+  "who": "O'Melveny, Dentsu, Deutsche Telekom, Gleiss Lutz, PwC"
+ },
+ {
+  "id": "professional-services-work-production-21",
+  "title": "Firm expertise packaged as multi-step agents for complex work, used internally and offered to others",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "High-value matter types such as filing analysis, fund formation and loan review need multi-step reasoning, and the know-how sits with senior lawyers.",
+  "approach": [
+   "A&O Shearman and Harvey announced agents for antitrust filing analysis, cybersecurity, fund formation and loan review, for internal use and sale to others.",
+   "Bloomberg Law reports plans to sell tools to other firms; Kirkland & Ellis launched a private-funds tool with Palantir.",
+   "A&O Shearman says agents do in minutes what took hours (self-reported); no product, price or external customer is published. Lawyers review outputs."
+  ],
+  "who": "A&O Shearman, Harvey, Kirkland & Ellis, Fried Frank"
+ },
+ {
+  "id": "professional-services-work-production-22",
+  "title": "Gated AI rollout for work production: policy, approved tools, training first and human review",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "AI output looks complete, so reviewers may accept it untested, professionals use unapproved tools when approved ones fall short, and policy and training coverage varies by firm size.",
+  "approach": [
+   "The firm adopts a written AI policy, approved professional-grade tools, training before access, a human-review rule and independent citation checks; Reed Smith requires AI certification for associates.",
+   "ILTA survey of 508 firms: formal GenAI policy ranged from 57% (under 50 lawyers) to 98% (350-699) (independent).",
+   "Thomson Reuters survey: 34% of professionals use AI tools their organisation has not sanctioned (vendor-published).",
+   "A partner or committee approves tools and policy; humans review AI-assisted work with periodic re-checks."
+  ],
+  "who": "Reed Smith, ILTA, Thomson Reuters"
+ },
+ {
+  "id": "professional-services-work-production-23",
+  "title": "Test AI tools on the firm's own work against an expert baseline, and re-test when they change",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Vendor claims are hard to compare and have been overstated, reading every output removes the time saving, and relying on an untested tool breaches the competence duty.",
+  "approach": [
+   "The firm tests tools on a sample of its own tasks against a lawyer baseline, relies on a tool only where it passes, and re-tests when models change.",
+   "Vals study built with eight law firms: lawyer baseline beat the best tool on redlining, 79.7% against 65.0% (independent).",
+   "A Covington & Burling case study on document review found prompt refinement improved some issues but not all (self-reported).",
+   "Innovation lead and practice partner approve the test set and pass threshold; a lawyer decides whether to rely on the tool."
+  ],
+  "who": "Reed Smith, Covington & Burling, PwC Legal, Vals"
+ },
+ {
+  "id": "professional-services-work-production-24",
+  "title": "Idea: log edits, overrides and review findings on AI-assisted work to evidence quality and savings",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: clients want proof that AI cut cost or improved quality, and without records of corrections a firm cannot tell whether tools or people need changing.",
+  "approach": [
+   "Idea. Tools would log which tasks used AI, how much output was edited or rejected and what review found, feeding supervision and client reporting.",
+   "Thomson Reuters Institute proposes tracking override and challenge; Microsoft reports how many Legal Agent suggestions users kept (vendor-published).",
+   "No firm publishes acceptance, edit, override or rework rates. Review leads watch trends; finance and innovation leads decide what clients see."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "professional-services-work-production-25",
+  "title": "Record AI use per matter, disclose material use to clients, and apply each client's AI terms",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients and regulators want to know when AI shaped a deliverable, and client guidelines conflict: some require AI use, others bar it or refuse to pay for it.",
+  "approach": [
+   "Matter records capture where AI was used and how it was verified, and deliverables carry a disclosure when AI materially shaped the analysis.",
+   "At matter opening, the client's AI terms are captured and fed into tool access and billing rules; Public Services and Procurement Canada requires suppliers to identify AI use in advance.",
+   "ILTA survey: firms requiring client approval for AI use ranged from 8% to 38% by size (independent).",
+   "Responsible partner confirms client AI terms and the engagement lead approves disclosure wording."
+  ],
+  "who": "Public Services and Procurement Canada, ILTA, Deloitte Australia"
+ }
+]

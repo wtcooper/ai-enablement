@@ -1,4 +1,4 @@
-"""Build docs/AI-use-cases-assurance-tax-security.pdf. Usage: python3 scripts/build_use_case_pdf.py research/summaries docs/AI-use-cases-assurance-tax-security.pdf"""
+"""Build docs/AI-use-cases.pdf. Usage: python3 scripts/build_use_case_pdf.py research/summaries docs/AI-use-cases.pdf"""
 import json, re, sys, pathlib, collections
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
@@ -29,6 +29,8 @@ GRADE = {"A": ("#1a7f37", "Measured result"), "B": ("#0969da", "Named deployment
 EVID = {"strong": "#1a7f37", "moderate": "#9a6700", "thin": "#cf222e"}
 
 ARCHETYPES = [
+    ("professional-services", "Professional services", "How law, consulting, accounting and advisory firms (and in-house legal teams) win, price, staff, "
+     "deliver, check, bill and learn from their work; the base that assurance and tax build on."),
     ("assurance", "Assurance", "External audit, SOC and attestation, sustainability assurance and assurance over AI; "
      "also in-house internal audit and SOX teams."),
     ("tax", "Tax", "Tax compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research "
@@ -37,6 +39,11 @@ ARCHETYPES = [
      "in-house security teams and security service providers."),
 ]
 NAMES = {
+    "pursuit-proposals": "Pursuit and proposals", "client-development": "Client development",
+    "acceptance-risk": "Acceptance and engagement risk", "scoping-pricing": "Scoping and pricing",
+    "staffing-resourcing": "Staffing and resourcing", "delivery-management": "Delivery management",
+    "work-production": "Work production", "quality-review": "Quality review", "billing-collections": "Billing and collections",
+    "knowledge-management": "Knowledge management", "talent-learning": "Talent and learning", "firm-finance": "Firm finance",
     "acceptance-independence": "Client acceptance and independence", "planning-risk-assessment": "Planning and risk assessment",
     "controls-testing": "Controls testing", "substantive-testing": "Substantive testing", "specialists": "Specialists and experts",
     "completion-reporting": "Completion and reporting", "quality-management": "Quality management",
@@ -110,7 +117,7 @@ def card(u, mod_name):
 class Doc(BaseDocTemplate):
     def __init__(self, fn, **kw):
         super().__init__(fn, pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
-                         topMargin=0.75 * inch, bottomMargin=0.7 * inch, title="AI Use Cases: Assurance, Tax and Security",
+                         topMargin=0.75 * inch, bottomMargin=0.7 * inch, title="AI Use Cases: Professional Services, Assurance, Tax and Security",
                          author="AI Transformation Advisor", subject="Summary of researched, fact-checked AI use cases", **kw)
         fr = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="f")
         self.addPageTemplates([PageTemplate(id="p", frames=[fr], onPageEnd=self.deco)])
@@ -199,10 +206,12 @@ for name, what, pats, sc in CATS:
     counts = {a: [u for b, u in allu if b == a and incat(u, pats, sc)] for a, _, _ in ARCHETYPES}
     n = sum(len(v) for v in counts.values())
     ex = []
-    for (a, label, _), uid in zip(ARCHETYPES, PICKS[name]):
-        u = byid[uid]
-        if not incat(u, pats, sc):
+    for a, label, _ in ARCHETYPES:
+        uid = next((i for i in PICKS[name] if i.startswith(a + "-")), None)
+        u = byid.get(uid)
+        if u is None or not incat(u, pats, sc):
             pool = [v for b, v in allu if b == a and incat(v, pats, sc)]
+            if not pool: continue
             u = sorted(pool, key=lambda v: (v.get("title", "").startswith("Idea"), order.get(v.get("grade"), 9), len(v.get("title", ""))))[0]
         ex.append(f"<font color='#57606a'><b>{label[0]}</b></font>  {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
     crow.append([P(f"<b>{e(name)}</b><br/><font size='7.6' color='#57606a'>{e(what)}</font>", ss["cell"]),
@@ -214,28 +223,28 @@ ct.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0
                         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5)]))
 
 story += [heading("Executive summary", ss["title"], 0, "summary", "Executive summary"), Spacer(1, 6),
-          P(f"AI use cases in assurance, tax and security: {N} researched, fact-checked examples of AI changing the work, "
+          P(f"AI use cases in professional services, assurance, tax and security: {N} researched, fact-checked examples of AI changing the work, "
             f"from the AI Transformation Advisor's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
           P("<b>Key takeaways</b>", ss["ct"]), Spacer(1, 4)]
 take = [
-    f"<b>Broad and specific.</b> {N} examples across 29 focus areas in three fields. Most fall into nine categories shared by all three fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI, tax authorities' own AI, and securing AI models and agents. Every example names its sources and was checked against them.",
-    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations, application security and AI security; audit controls and substantive testing. Thinnest: tax provision and Pillar Two, transfer pricing, corporate tax compliance, sustainability assurance.",
+    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in four fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as pricing and billing AI-assisted work, auditing a client's own AI, tax authorities' own AI, and securing AI models and agents. Every example names its sources and was checked against them.",
+    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, professional services {pct(abshare['professional-services'], tot['professional-services'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations, application security and AI security; audit controls and substantive testing; legal and advisory work production. Thinnest: tax provision and Pillar Two, transfer pricing, staffing, billing and collections. Firms rarely publish measured results from their own AI use.",
     f"<b>AI mostly does a first pass that a person checks.</b> {pct(lad['augment'], N)}% of examples augment a step and {pct(lad['assist'], N)}% assist a person; {pct(lad['automate'], N)}% automate a step and {pct(lad['delegate'], N)}% delegate a multi-step outcome to an agent with human checkpoints.",
-    f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in all three fields.",
-    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: the auditor for the opinion, the tax practitioner under existing conduct rules, and security leaders for the decisions that start regulatory reporting clocks.",
-    f"<b>Beyond efficiency.</b> {modelscope} examples change the service, pricing or operating model, not just a step: AI assurance services, agent platforms in tax firms, and security teams rebuilt around supervising AI.",
+    f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in every field.",
+    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: the lawyer, consultant or accountant under existing professional duties (courts now sanction unverified AI citations), the auditor for the opinion, the tax practitioner under existing conduct rules, and security leaders for the decisions that start regulatory reporting clocks.",
+    f"<b>Beyond efficiency.</b> {modelscope} examples change the service, pricing or operating model, not just a step: fixed, outcome and subscription fees replacing hours, AI assurance services, agent platforms in tax firms, and security teams rebuilt around supervising AI.",
 ]
 story.append(ListFlowable([ListItem(P(t, ss["body"]), leftIndent=12, value="•") for t in take], bulletType="bullet",
                           leftIndent=12, bulletFontName="Sans", bulletColor=NAVY))
 story += [Spacer(1, 14), P("<b>By field</b>", ss["ct"]), Spacer(1, 4)]
 rows = [[P("<b>Field</b>", ss["cellb"]), P("<b>Focus areas</b>", ss["cellb"]), P("<b>Use cases</b>", ss["cellb"]),
          P("<b>Named or measured (A/B)</b>", ss["cellb"]), P("<b>Strongest areas</b>", ss["cellb"])]]
-strongest = {"assurance": "Controls testing, SOC reports, substantive testing", "tax": "Research and advisory, individual compliance, controversy",
+strongest = {"professional-services": "Work production, scoping and pricing, quality review", "assurance": "Controls testing, SOC reports, substantive testing", "tax": "Research and advisory, individual compliance, controversy",
              "security": "Application security, operations, AI security"}
 for a, label, _ in ARCHETYPES:
     rows.append([P(label, ss["cell"]), P(str(len(modules(a))), ss["cell"]), P(str(tot[a]), ss["cell"]),
                  P(f"{abshare[a]} ({pct(abshare[a], tot[a])}%)", ss["cell"]), P(strongest[a], ss["cell"])])
-t = Table(rows, colWidths=[0.95 * inch, 0.85 * inch, 0.8 * inch, 1.45 * inch, 2.95 * inch])
+t = Table(rows, colWidths=[1.25 * inch, 0.75 * inch, 0.75 * inch, 1.35 * inch, 2.9 * inch])
 t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, 0), 0.8, NAVY),
                        ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE), ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4)]))
 story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss["ct"]), Spacer(1, 3),
@@ -244,7 +253,7 @@ story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss
             "<font color='#9a6700'><b>C</b></font> vendor or analyst claim; <font color='#6e7781'><b>D</b></font> idea, not yet deployed. "
             "<b>Assist, Augment, Automate, Delegate</b> shows how much the AI does. No example uses client-confidential information.", ss["muted"]),
           PageBreak(), heading("Categories of use cases", ss["h1"], 1, "cats", "Executive summary"),
-          P(f"Nine kinds of change recur in all three fields. Another {len(ASSIGN)} use cases sit in specialty categories found in only one field, shown on each field's pages. A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
+          P(f"Nine kinds of change recur across the four fields. Another {len(ASSIGN)} use cases sit in specialty categories found in only one field, shown on each field's pages. P = professional services, A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
           ct, PageBreak()]
 
 # Per-field category pages
