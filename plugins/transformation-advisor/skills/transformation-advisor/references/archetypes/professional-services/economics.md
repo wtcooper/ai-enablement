@@ -76,9 +76,9 @@ SPI's benchmark is published by Deltek, which sponsors it; BigHand and Clio sell
 | Model | Where it is common | What the evidence says |
 |---|---|---|
 | Hourly | Law; much advisory | About 90% of US legal dollars [TRI-SOTLM-REPORT-2026]; 78% of tax firms bill hourly [TRI-CHARGING-2026]; almost two-thirds of 736 law-firm professionals say pricing is unchanged [TRI-FOP-LAW-2026] |
-| Fixed, capped and AFAs | Repeatable legal work; consulting phases; compliance | 54% of UK law firms expect more fixed-fee billing in the next 12 months [CMS-TRENDS-2026]; 49% of BigHand respondents see rising AFA demand [BIGHAND-LF-2026] |
-| Outcome-linked | Consulting; IT services | McKinsey says about a quarter of global fees are outcome-based (a rounded, self-reported figure; it says the model predates AI) [BI-MCKINSEY-2025]; in HFS buyer data on AI-enabled IT and business services, 20% of current engagements are outcome-based [HFS-SAS-2026] |
-| Hybrid (base plus outcome) | Consulting and services buyers' stated preference | 56% of surveyed buyers prefer a base fee plus outcome kicker (adjacent IT and BPO market) [HFS-SAS-2026]; Stanford's framework treats hybrid as the usual resting point [STANFORD-DEL-2026] |
+| Fixed, capped and AFAs | Repeatable legal work; consulting phases; compliance | 54% of UK law firms expect more fixed-fee billing in the next 12 months (Clio vendor data, as quoted by CMS) [CMS-TRENDS-2026]; 49% of BigHand respondents see rising AFA demand [BIGHAND-LF-2026] |
+| Outcome-linked | Consulting; IT services | McKinsey says about a quarter of global fees are outcome-based (a rounded, self-reported figure; it says the model predates AI) [BI-MCKINSEY-2025]; in HFS data on AI-enabled IT and business services, 20% of 510 enterprise decision makers name outcome-based (shared-revenue) models as their current commercial model [HFS-SAS-2026] |
+| Hybrid (base plus outcome) | Consulting and services buyers' stated preference | 56% of 101 surveyed buyers prefer a base fee plus outcome kicker (adjacent IT and BPO market) [HFS-SAS-2026]; Stanford's framework treats hybrid as the usual resting point [STANFORD-DEL-2026] |
 | Subscription and per-document | Productised services; AI-native firms | PwC's US CEO said some services become subscription tools "without a PwC person in the loop" [CPAPA-PWC-2026]; AI-native law firms sell flat bundles or per-document rates ([scoping-pricing](modules/scoping-pricing.md) `#21`) |
 
 **How firms set prices today.** 35% of BigHand's legal-finance respondents default to standard rates and 28% copy a
@@ -98,14 +98,14 @@ AI-assisted work are in [guardrails.md](guardrails.md) §5.
   [BLOOMBERGLAW-KIRKLAND-2026].
 - **AI is becoming a variable cost.** Vendors are moving from seats to consumption pricing: Legora prices Agent Pro by
   consumption with matter attribution [LEGORA-CBP-2026]; Harvey token use rose 14x in six months [ARTLAW-HARVEY14X-2026];
-  a firm's guide notes one major model vendor changed rates in ten of the last 13 months [BAKERDONELSON-TOKENS-2026].
+  a firm's guide notes that at least one major vendor adjusted rates in ten of the last 13 months [BAKERDONELSON-TOKENS-2026].
   Practitioner figures: about 1% of revenue as the level firms are settling on (one officer's statement) and a $2
   PowerPoint [TRI-METER-2026]; $50-$350 per attorney a month, about 30% on top of tool cost (one estimate)
   [BLOOMBERGLAW-TEXAS-2026].
 - **Who pays for AI.** General AI subscriptions are overhead; matter-specific costs can reach a client only with
   disclosure, at cost, and no markup without informed written consent (California) [CALBAR-GENAI-2026]. Keypoint Law's
   CEO expects clients to be "annoyed" if firms pass AI costs on [LAWYERSWEEKLY-KEYPOINT-2026].
-- **Return is not measured.** 18% of organisations track AI ROI and 40% do not know [TR-AIPS-2026]; 85% of law firms and
+- **Return is not measured.** 18% of respondents say their organisations collect AI ROI metrics and 40% do not know whether they do [TR-AIPS-2026]; 85% of law firms and
   75% of corporate legal respondents collect no AI ROI data or are unsure [TRI-GREATDISCONNECT-2026]. 84.8% of 245
   services firms say AI saves time; the share saying it generates revenue is behind SPI's paywall [SPI-AI-2026].
 

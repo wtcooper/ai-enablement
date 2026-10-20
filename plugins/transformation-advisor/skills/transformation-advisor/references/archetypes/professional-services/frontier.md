@@ -31,10 +31,10 @@ lists for their own steps (§8 in each). Source keys in brackets resolve in §7 
 | 6 Jun 2025 | England's Divisional Court (*Ayinde*): heads of chambers and managing partners must take "practical and effective measures", and courts will ask whether they did | Judgment | The AI policy and training record is evidence for leaders, not just hygiene | [EWHC-AYINDE-2025] |
 | 18 Dec 2025 | Canada's federal procurement agency says it now requires suppliers to identify AI use in advance, after Deloitte report errors | Buyer rule (reported) | Expect AI-use declarations in public-sector bids | [CP-DELOITTECANADA-2025] |
 | 1 Jan 2026 | ISO generative-AI endorsements for general liability policies take effect; broad AI exclusions reported on some professional liability forms | Policy forms | Read the professional indemnity wording before scaling | [OLSHAN-AIEXCL-2026; INSINSIDER-LAWYERS-2026] |
-| Feb 2026 | *United States v. Heppner*: a defendant's own consumer-AI chats held neither privileged nor work product (13 or 17 Feb; sources differ) | Ruling | Account tier and contract terms belong in the plan; enterprise terms untested | [ORRICK-HEPPNER-2026] |
+| 13 Feb 2026 | *United States v. Heppner* (SDNY): a defendant's own consumer-AI chats held neither privileged nor work product | Ruling | Account tier and contract terms belong in the plan; enterprise terms untested | [ORRICK-HEPPNER-2026] |
 | 23 Apr 2026 | *Rodney* (County Court): solicitors and the firm's management referred to the SRA over mis-cited authorities | Ruling | Management, not only the drafter, is in scope | [CCDUDLEY-RODNEY-2026] |
-| 14 May 2026 | California replaces its AI guidance at its Supreme Court's request: oversight scales with autonomy; billing and AI-cost rules | Regulator guidance | A template for agentic controls and fee terms | [CALBAR-GENAI-2026] |
-| 18 May 2026 | Bar Standards Board guidance on AI for barristers | Regulator guidance | UK regulators now address agentic use | [BSB-AIGUIDANCE-2026] |
+| May 2026 | California replaces its AI guidance at its Supreme Court's request: oversight scales with autonomy; billing and AI-cost rules | Regulator guidance | A template for agentic controls and fee terms | [CALBAR-GENAI-2026] |
+| 18 May 2026 | Bar Standards Board guidance on AI for barristers | Regulator guidance | Barristers now have regulator AI guidance, citing *Ayinde* | [BSB-AIGUIDANCE-2026] |
 | May-Jun 2026 | ICMCI code for management consultants: mandatory for certified consultants; firms "expected to align" | Professional code | Consulting gets disclosure and verification duties | [ICMCI-AICODE-2026] |
 | Jun 2026 | Civil Justice Council direction: no new rules for professional drafting; "proportionate transparency" for expert evidence; final report later in 2026 | Announced direction | Watch the expert-evidence rule | [CJC-AI-2026] |
 | 2 Aug 2026 | EU AI Act applicable; AI Omnibus (in force 27 Jul) sets employment high-risk obligations from 2 Dec 2027 | Law | AI in staffing, evaluation and hiring needs a plan for EU-facing firms | [EC-AIACT-2026] |
@@ -49,10 +49,10 @@ lists for their own steps (§8 in each). Source keys in brackets resolve in §7 
 | 11 May 2026 | OpenAI launches a majority-owned Deployment Company and agrees to buy an applied-AI consultancy | Launch (press-reported) | Labs compete for implementation work consultancies do | [DECRYPT-DEPLOYCO-2026] |
 | 12 May 2026 | Anthropic: 20+ legal connectors and 12 practice plugins | Launch | General platforms reach into legal workflows | [LAWSITES-ANTHROPIC-2026] |
 | 9 Sep 2026 | Harvey raises $550m at a $15.5bn valuation | Funding | Capital for deeper legal workflow coverage | [HARVEY-NEWSROOM-2026] |
-| 9 Sep 2026 | Certinia adds 14 agents, callable from Slack, Claude and Copilot over MCP; commits to every workflow being executable by an agent or a human | Launch; commitment | Consulting delivery tools become agent platforms | [CERTINIA-SOA-2026] |
+| 9 Sep 2026 | Certinia adds 14 agents; its intelligent actions are callable from Slack, Claude and Copilot over MCP; commits to 100% agentic coverage of the services lifecycle by year-end | Launch; commitment | Consulting delivery tools become agent platforms | [CERTINIA-SOA-2026] |
 | 17 Sep 2026 | OpenAI Astra for Law, with trusted access for Am Law 200 firms | Launch | Large firms get lab-direct options | [LAWSITES-OPENAI-2026] |
 | 7 Oct 2026 | Kantata Agent Studio: PMO owners describe agents in plain language | Launch | Firms build their own delivery agents | [ITBRIEF-KANTATA-2026] |
-| 13 Oct 2026 | Legora and Harvey launch in-house intake products | Launch | In-house front doors become agent-run | [LEGORA-INTAKE-2026; HARVEY-INTAKE-2026] |
+| 13 Oct 2026 | Legora launches an in-house intake product; Harvey markets a similar Intake product (launch date not confirmed) | Launch | In-house front doors become agent-run | [LEGORA-INTAKE-2026; HARVEY-INTAKE-2026] |
 | 15 Oct 2026 | Microsoft Copilot for Legal: the fourth AI major with a legal vertical in five months | Launch | Specialist vendors compete with the productivity suite | [LAWSITES-MSFT-2026] |
 | 15 Oct 2026 | Harvey Legal Work Orchestration: matter phases, agent tasks and named review gates; Harvey forecasts agents taking a further 20% of workflow steps in six months | Launch; vendor forecast | Delivery and review designed together | [HARVEY-ORCH-2026] |
 | 16 Oct 2026 | Hogan Lovells Cadwalader rolls out Legora firmwide after a 1,300+ lawyer pilot | Announcement | Scale benchmark; no outcomes disclosed | [LEGORA-HLC-2026] |
@@ -63,7 +63,7 @@ lists for their own steps (§8 in each). Source keys in brackets resolve in §7 
 |---|---|---|---|---|
 | 17 Nov 2025 | McKinsey says about a quarter of global fees are outcome-based | Self-reported | Outcome pricing is mainstream at the top of consulting | [BI-MCKINSEY-2025] |
 | 13 Mar 2026 | Legalweek: clients ask for matter-level savings and AI line items; some will not pay for AI-done work | Conference report | Prepare a matter-level answer | [TRI-LEGALWEEK-2026] |
-| 25 Mar 2026 | PwC's US CEO: some services become subscription tools "without a PwC person in the loop"; partners resisting AI "have no place at the firm" | Statement | Productised services and partner expectations | [CPAPA-PWC-2026] |
+| 25 Mar 2026 | PwC's US CEO: some services become subscription tools "without a PwC person in the loop"; partners who resist AI will have no place at the firm (FT interview, as reported) | Statement | Productised services and partner expectations | [CPAPA-PWC-2026] |
 | 23 Jun 2026 | Legora prices Agent Pro by consumption with matter attribution | Pricing change | AI becomes a per-matter variable cost | [LEGORA-CBP-2026] |
 | 21 Jul 2026 | HFS: buyers of AI-enabled IT and business services prefer base fee plus outcome kicker (56%) | Analyst survey (adjacent market) | Hybrid terms will be asked for | [HFS-SAS-2026] |
 | 23 Aug 2026 | Stanford framework: AI pushes consulting toward hybrid and asset-based pricing | Academic (theory) | Invest in measurement before outcome fees | [STANFORD-DEL-2026] |
@@ -94,7 +94,7 @@ lists for their own steps (§8 in each). Source keys in brackets resolve in §7 
 | 11 Nov 2026 | TRI webinar on accountability "beyond human in the loop" | [TRI-EVENTS-2026] |
 | 17 Nov 2026 | Kantata Converge, London (PSA users; AI delivery) | [KANTATA-CONVERGE-2026] |
 | Late 2026 | Civil Justice Council final report on AI in court documents | [CJC-AI-2026] |
-| 1 Jan 2027 | Colorado developer duties for high-risk AI; California ADMT compliance for significant decisions, including work allocation | [COLORADO-SB26189-2026; CPPA-CCPAREGS-2026] |
+| 1 Jan 2027 | Colorado developer duties for automated decision-making technology used in consequential decisions; California ADMT compliance for significant decisions, including work allocation | [COLORADO-SB26189-2026; CPPA-CCPAREGS-2026] |
 | 27-29 Jan 2027 | TRI CMBDO Forum: the firm's AI story in pitches and AI-driven discovery | [TRI-CMBDO34-2027] |
 | 8-12 Aug 2027 | ILTACON 2027, Nashville | [ILTA-ILTACON-2026] |
 | 2 Dec 2027 | EU AI Act high-risk obligations for employment and worker-management AI apply | [EC-AIACT-2026] |
@@ -113,7 +113,8 @@ lists for their own steps (§8 in each). Source keys in brackets resolve in §7 
 - A Law Punx contributor: firms have until end-2027 to make their knowledge AI-accessible to clients [AL-LAWPUNX-2025].
 - Kantata's chief product strategy officer: agents will be planned, allocated, measured and priced like capacity
   [KANTATA-FORBES-2026].
-- Thomson Reuters (vendor): AI is "more likely to accelerate demand" for professional services [TR-FOP-REPORT-2026].
+- Thomson Reuters CEO Steve Hasker (vendor; report foreword): AI is "more likely to accelerate demand" for professional
+  services [TR-FOP-REPORT-2026].
 
 **What a leader should do with this.** Pick the two or three signals that change their own rules, competitors,
 clients or people. Put scheduled dates into the plan's milestones, away from rate rounds, year-end and intake cycles.

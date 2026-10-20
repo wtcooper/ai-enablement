@@ -64,8 +64,8 @@ subscription bases.
 - **Forecasts.** Brynjolfsson and Petropoulos (Stanford): AI pushes consulting toward hybrid and asset-based pricing;
   pure time and materials survives only at the margins (theory-based; the lab discloses a general gift from Accenture)
   [STANFORD-DEL-2026]. Forrester (analyst blog): providers will reprice and put fees at risk [FORRESTER-BLOG-2025]. HFS
-  (analyst): 56% of buyers of AI-enabled IT and business services prefer base fee plus outcome kicker, while 54% of
-  current engagements are effort-based (adjacent market) [HFS-SAS-2026].
+  (analyst): 56% of 101 buyers of AI-enabled IT and business services prefer base fee plus outcome kicker, while 54% of
+  510 decision makers name effort-based pricing as their current model (adjacent market) [HFS-SAS-2026].
 - **What would have to be true.** Clean cost-to-deliver data; outcome baselines and attribution; partner pay not tied
   to hours; fee agreements that explain AI ([guardrails.md](guardrails.md) §5).
 - **Counter-view.** Tech Mahindra (IT services) declined to guarantee prices on assumed 70-80% gains and Infosys walked

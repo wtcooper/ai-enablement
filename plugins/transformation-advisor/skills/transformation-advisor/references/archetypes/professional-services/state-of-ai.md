@@ -26,7 +26,7 @@ so. Source keys in brackets resolve in §9 or in [sources.md](sources.md).
 - **Use is spreading through projects.** SPI reports 43.6% of projects at 245 services firms now use AI, up from 23.1%
   a year earlier [SPI-AI-2026].
 - **Savings are claimed; returns are not measured.** 84.8% of those firms say AI saves time [SPI-AI-2026]; 18% of
-  organisations track AI ROI [TR-AIPS-2026]; at Legalweek, firms asked by clients what AI saved said "we're still
+  respondents say their organisations collect AI ROI metrics [TR-AIPS-2026]; at Legalweek, firms asked by clients what AI saved said "we're still
   gathering the data" [TRI-LEGALWEEK-2026].
 - **Clients are the pressure point.** 78% of corporate clients rate AI-enabled quality gains important or essential;
   6% say most providers deliver them [TR-FOP-REPORT-2026].
@@ -41,7 +41,6 @@ so. Source keys in brackets resolve in §9 or in [sources.md](sources.md).
 | Firm type | Finding | Sample and provenance | Source |
 |---|---|---|---|
 | Law firms | 94% engaged with GenAI (+14 points); drafting, research, summarisation and contract review the common uses | 508 firms; self-reported by firm technology leaders | [ILTA-TECHSURVEY-2026] |
-| Law firms | 19% of firms using or exploring Microsoft 365 Copilot had fully rolled it out to lawyers | ILTA via Legal Geek | [LEGALIT-LEGALGEEK-2026] |
 | Cross-profession (law, tax, audit, risk; firms and in house) | 74% use AI several times a week, 44% several times a day; 34% use unsanctioned tools; 41% of AI users lack professional-grade tools | 1,816 professionals, 62 countries, Mar-Apr 2026; vendor | [TR-FOP-REPORT-2026] |
 | Consulting and project-based firms | 43.6% of projects use AI (23.1% in 2025); 84.8% say it saves time | 245 firms; research firm, report paywalled | [SPI-AI-2026] |
 | UK consultancies | Nearly four in five firms expect digital and AI to be their biggest growth drivers | 1,060 consultants; trade body | [MCA-SURVEY-2026] |
@@ -80,7 +79,7 @@ In-house legal teams show up as buyers and builders: GE Aerospace's legal and co
 
 - **Randomised trial, law.** 133 patent lawyers at 11 US firms: AI raised blinded-scored quality by 0.34 SD at 10
   days and 0.38 SD at 90 days; the lasting unaided skill gain went to seniors, and juniors showed no average gain.
-  Run and funded by Google, whose model was tested; NBER working paper [NBER-AUTOR-2026].
+  Conducted and funded by Google (several authors are Google employees); NBER working paper [NBER-AUTOR-2026].
 - **Field experiment, consulting.** 758 BCG consultants with GPT-4 (2023): 12.2% more tasks and 25.1% faster inside
   AI's capability, 19% less likely to be correct on a task outside it [HBS-DELLACQUA-2023].
 - **Tool benchmarks (tools alone, not firm deployments).** Legal AI tools beat a lawyer baseline on document Q&A and
@@ -95,8 +94,9 @@ In-house legal teams show up as buyers and builders: GE Aerospace's legal and co
 
 ## 5. How maturity is spread
 
-- **By firm size (law).** Formal GenAI policy: 57% of firms under 50 lawyers, 98% at 350-699. Training before use: 11%
-  to 72%. Human review of work product required: 31% to 83%. Client approval required: 8% to 38% [ILTA-TECHSURVEY-2026].
+- **By firm size (law).** Formal GenAI policy: 57% of firms under 50 lawyers, 98% at 350-699 (91% over 700). Training
+  before use: 11% under 50, 72% over 700. Human review of work product required: 31% under 50, 83% at 350-699. Client
+  approval required: 8% under 50, 38% at 350-699 [ILTA-TECHSURVEY-2026].
 - **Strategy versus practice.** Over three-quarters of TRI's stand-out lawyers say their firm has an AI strategy, but
   only 25% strongly agree there is a plan for monetising AI, and just over 10% strongly agree their practice area is
   confident it will succeed [TRI-STANDOUT-2026]. Where a named strategy exists, 66% say AI meets or exceeds expectations,

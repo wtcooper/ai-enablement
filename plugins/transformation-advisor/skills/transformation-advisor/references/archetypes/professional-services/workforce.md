@@ -55,9 +55,9 @@ about roles and capacity, not headcount targets. If a leader is worried for the 
 |---|---|---|---|
 | US large-firm graduate hires | 6,588 in 2025, down 7.5% from the 2024 peak | NALP data via press | [BLOOMBERGLAW-HIRING-2026] |
 | US large firms' expectations | Two-thirds of 57 expect fewer first-years in 2028 than 2025; 19% do not know | Citi survey via press | [BLOOMBERGLAW-HIRING-2026] |
-| US associates overall | 86% of firms plan to grow associate ranks through 2027; 35% plan larger first-year classes | Citi/Hildebrandt via press | [LAW360-CITI-2025] |
+| Large law firms (US, UK and others) | 86% plan to grow associate ranks through 2027; 35% plan larger first-year classes | Citi/Hildebrandt via press | [LAW360-CITI-2025] |
 | UK Big Four graduate intake, 2023 to 2024 | KPMG 1,399 to 942; Deloitte 1,700 to 1,400; EY 1,800 to 1,600; PwC 1,600 to 1,500 | Telegraph figures via press | [SFN-BIG4-2025] |
-| UK mid-tier accountancy firms | 68% expect fewer early-career roles | ICAEW research | [ICAEW-WORRY-2026] |
+| UK mid-tier accountancy firms | 68% expect AI to reduce the need for some early-career roles | ICAEW research | [ICAEW-WORRY-2026] |
 | UK top graduate employers | Recruitment down 24.5% since 2022 | Survey of top employers | [HIGHFLIERS-GM-2026] |
 | Ages 22-25 in AI-exposed jobs (all sectors) | 19% below their peer path | Payroll data; descriptive, not causal | [STANFORD-CANARIES-2026] |
 | "Seniorised" entry-level job ads | +35% since 2019 in highly AI-exposed sectors | PwC job-ad analysis | [PWC-AIJB-2026] |
@@ -71,15 +71,16 @@ business services, with AI cited as one reason [LEGALCHEEK-BAKER-2026; CITYAM-CC
 
 - **Entry level:** from producing first drafts to reviewing and validating AI output ([talent-learning](modules/talent-learning.md)
   `#07`). PwC's assurance leader expects first-years to work like fourth-years within three years (an expectation)
-  [BI-PWC-2025]. Trainees warn that oversight too early is a risk [ICAEW-WORRY-2026].
+  [BI-PWC-2025]. One junior accountant warns that giving juniors AI oversight too early is a risk [ICAEW-WORRY-2026].
 - **New junior routes:** AI seats and innovation-group roles; Sidley made an AI seat compulsory for London trainees
   [LEGALCHEEK-SIDLEY-2026]; legal engineers [LEGORA-MINTERELLISON-2026].
 - **Mid-level:** a training provider that ran a survey suggests mid-level staff become "workflow engineers"
   [LAW360-GA-2026]; engagement leads at one consultancy run teams of people and agents
   ([delivery-management](modules/delivery-management.md) `#14`).
-- **Partners:** become coaches of verification [TRI-TEACHV-2026]; in one survey, 55% of respondents (74% in law firms)
-  named partners the least prepared group [LAW360-GA-2026]. PwC's US CEO said partners who resist AI "have no place at
-  the firm" [CPAPA-PWC-2026].
+- **Partners:** senior lawyers' mentoring and supervision become critical to teaching verification (one expert's view)
+  [TRI-TEACHV-2026]; in one survey, 55% of respondents (74% in law firms)
+  named partners the least prepared group [LAW360-GA-2026]. PwC's US CEO said partners who resist AI will have no place at
+  the firm (FT interview, as reported) [CPAPA-PWC-2026].
 - **Resource managers:** from filling hours to composing teams and owning delivery risk if outcome pricing grows
   [KANTATA-RMI-2026].
 - **Pricing, data and AI roles:** pricing professionals model AI-assisted matters [AMBITION-PRICINGMANAGER-2026]; Kirkland reports 180+ AI engineers
@@ -107,13 +108,13 @@ business services, with AI cited as one reason [LEGALCHEEK-BAKER-2026; CITYAM-CC
 ten years?
 
 - **The one randomised trial.** 133 patent lawyers: AI raised work quality, but after three months the lasting unaided
-  skill gain went to seniors (+0.45 SD); juniors showed no average gain and their scores split. Run and funded by
-  Google, whose model was tested [NBER-AUTOR-2026].
+  skill gain went to seniors (+0.45 SD); juniors showed no average gain and their scores split. Conducted and funded
+  by Google (several authors are Google employees) [NBER-AUTOR-2026].
 - **Practitioners are worried.** 48% of 1,816 professionals fear harm to judgment development; 71% say early-career
   roles need structured support from experienced peers. Legal professionals expect the time to trusted judgment to
   lengthen by about 1.7 years; tax professionals expect it to shorten by about 1.0 (vendor survey) [TR-FOP-REPORT-2026].
-- **Beliefs about how repetitive work builds judgment are "largely inferential"** [TRI-DESIGNL-2026]; some trainees say
-  the tasks AI took were not ones they learned from [ICAEW-WORRY-2026].
+- **Beliefs about how repetitive work builds judgment are "largely inferential"** [TRI-DESIGNL-2026]; one junior accountant says
+  the tasks AI took were not ones he learned from [ICAEW-WORRY-2026].
 - **History warns against closing intake.** Firms that cut intake after 2008 reportedly struggled for managers about
   five years later [ICAEW-JUNIOR-2026]. Vault notes no firm has answered where skill comes from if the training ground
   disappears [VAULT-PYRAMID-2026].
@@ -133,10 +134,10 @@ cutting the work that used to teach it.
   [DELTEK-SPI-2026]; architecture and engineering just under 60%, with staff growth of 1.2% against forecast revenue
   growth of 9.5% and turnover above 13% [DELTEK-CLARITY-2026].
 - **Readiness for agents is low:** 52.7% of resource managers are not equipped to manage hybrid human-agent teams and
-  4% are well equipped; 7.3% use outcome data in staffing [KANTATA-RMI-2026]. No organisation in that study runs agents
-  as assignable resources [KANTATA-RMI-REPORT-2026].
-- **Delegated staffing does not exist yet:** every staffing agent read "proposes" or "recommends"; the only randomised
-  test of algorithmic assignment of expert work (a public agency) favoured the managers [IPA-PERU-2026].
+  4% are well equipped; 7.3% use outcome data in staffing [KANTATA-RMI-2026]. Assignable agents are mostly not on
+  the roadmap: 32% say they are not, 25.3% are exploring and 10.7% are piloting [KANTATA-RMI-REPORT-2026].
+- **Delegated staffing does not exist yet:** every staffing agent read "proposes" or "recommends"; a randomised test of
+  algorithmic assignment of expert work (a public agency) favoured the managers [IPA-PERU-2026].
 - **Employment AI rules reach staffing:** EU high-risk obligations apply to AI that allocates tasks or evaluates
   workers from 2 December 2027 [EC-AIACT-2026]; detail in [guardrails.md](guardrails.md) §9.
 
@@ -156,7 +157,8 @@ cutting the work that used to teach it.
 
 - No named in-house talent or learning programme was found; in-house voices appear in surveys only
   ([talent-learning](modules/talent-learning.md) §1).
-- Legal operations is described as becoming a design function for how work is structured [TR-FOP-REPORT-2026].
+- One legal-operations respondent expects legal ops to become a strategic design function for how legal work is
+  structured [TR-FOP-REPORT-2026].
 - In-house teams building their own agents and AI-first drafting defaults change what in-house lawyers do
   ([work-production](modules/work-production.md) `#18`, `#19`).
 - Non-legal shared-service teams: no evidence found.
