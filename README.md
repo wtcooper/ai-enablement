@@ -60,7 +60,7 @@ More detail: [How the advisor works](docs/how-it-works.md).
 | **Assurance**: audit, SOC and attestation, sustainability assurance, assurance over AI | Ready: 10 focus areas, 206 sourced examples, all fact-checked |
 | **Tax**: individual and corporate compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research and advisory, tax data and technology | Ready: 8 focus areas, 183 sourced examples, all fact-checked. Public evidence is thinner than in audit, and the advisor says so |
 | **Security**: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure, application security, cloud, identity, data security and privacy, human risk, AI security | Ready: 11 focus areas, 245 sourced examples, all fact-checked |
-| **Professional services**: the base for consulting and firm operations | Planned |
+| **Professional services**: the base for law, consulting, accounting and advisory firms and in-house legal teams: pursuit and proposals, client development, acceptance and risk, scoping and pricing, staffing, delivery, work production, quality review, billing, knowledge management, talent and learning, firm finance | Ready: 12 focus areas, 240 sourced examples, all fact-checked. Few firms publish measured results, and the advisor says so |
 | Other fields | The advisor uses its general method, and can optionally research a field on the spot |
 
 ## Getting started
@@ -109,9 +109,9 @@ any time, and it picks up where you left off next time.
 | Done | Next |
 |---|---|
 | Method: 11 step-by-step guides, fact-checked | Confirm installation in Codex, Cursor and Copilot |
-| Three archetypes, fact-checked: assurance (10 focus areas), tax (8) and security (11) | Test runs with real audit, tax and security leaders, and an eval suite |
-| The advisor skill: installs and runs in Claude Code | Professional services (the base for consulting and firm operations) |
-| Research program and quality checks | Detailed pattern and function guides for the shared library |
+| Four archetypes, fact-checked: professional services (12 focus areas), assurance (10), tax (8) and security (11) | Test runs with real audit, tax and security leaders, and an eval suite |
+| The advisor skill: installs and runs in Claude Code | Detailed pattern and function guides for the shared library (next) |
+| Research program and quality checks | |
 
 ## Learn more
 
