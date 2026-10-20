@@ -110,7 +110,8 @@ any time, and it picks up where you left off next time.
 |---|---|
 | Method: 11 step-by-step guides, fact-checked | Confirm installation in Codex, Cursor and Copilot |
 | Four archetypes, fact-checked: professional services (12 focus areas), assurance (10), tax (8) and security (11) | Test runs with real audit, tax and security leaders, and an eval suite |
-| The advisor skill: installs and runs in Claude Code | Detailed pattern and function guides for the shared library (next) |
+| The advisor skill: installs and runs in Claude Code | |
+| Shared library: 11 pattern guides, 10 function cards and journey stages, fact-checked | |
 | Research program and quality checks | |
 
 ## Learn more

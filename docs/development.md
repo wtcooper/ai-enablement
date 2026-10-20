@@ -36,7 +36,7 @@ ai-enablement/
 │       ├── SKILL.md                      # the conductor: rules, onboarding, the loop, delegation
 │       └── references/
 │           ├── method/                   # 11 step guides + index
-│           ├── library/                  # shared backbone: ladder, patterns, runtime classes, scoring
+│           ├── library/                  # shared backbone: index, patterns/, functions/, journey stages
 │           ├── archetypes/<id>/          # ARCHETYPE.md, field guides, modules/, use-cases/ (+ index.md)
 │           ├── briefs/                   # self-contained subagent briefs
 │           ├── schemas/                  # plan, opportunities and use-case formats; vocabulary

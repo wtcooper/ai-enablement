@@ -131,7 +131,7 @@ references. The per-client checklist is [`docs/install-testing.md`](../docs/inst
 | Stream | Research agents | Synthesis | Verify | Total |
 |---|---|---|---|---|
 | **M: Method** (8 topics, see below) | 8 | 2 | 2 | 12 |
-| **B: Backbone** (11 patterns, 10 function cards, journey stages; grouped 2–3 per agent) | 10 | 2 | 2 | 14 |
+| **B: Backbone** (11 patterns, 10 function cards, journey stages; grouped 2–3 per agent) · **done** 2026-10-20, about 4.7M tokens; see the [retro](../research/runs/streamB/RETRO.md) | 10 | 2 | 2 | 14 |
 
 The eight method topics are:
 
@@ -214,7 +214,7 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 |---|---|---|
 | 1 · **done** | The rest of assurance (the landscape grew it to 10 modules), cross-cutting topics, archetype-level files, consistency pass. Stream M (method): 11 files. 63 agents, about 23M tokens, about 2 hours. See the [retro](../research/runs/wave1/RETRO.md) | 63 |
 | 2 · **done** | Tax. Landscape (160 sources) revised the module set to 8 modules plus 4 cross-cutting topics. 48 agents, about 16M tokens. 135 of 183 entries corrected by verification, none rejected. See the [retro](../research/runs/wave2/RETRO.md) | 48 |
-| 3 · **done** | Professional services. Landscape proposed 12 modules (signed off by the owner); 36 research agents, 65 agents in all, about 23.5M tokens. 198 of 241 entries corrected by verification, none rejected. See the [retro](../research/runs/wave3/RETRO.md). Stream B (backbone library) is next | 65 + ~14 |
+| 3 · **done** | Professional services. Landscape proposed 12 modules (signed off by the owner); 36 research agents, 65 agents in all, about 23.5M tokens. 198 of 241 entries corrected by verification, none rejected. See the [retro](../research/runs/wave3/RETRO.md). Stream B (backbone library) followed and is done | 65 + 14 |
 | 4 · **done** | Security (added 2026-10-17). Landscape (139 sources) confirmed 11 modules, signed off by the owner. 60 agents, about 21.5M tokens. 170 of 245 entries corrected by verification, none rejected. See the [retro](../research/runs/wave4/RETRO.md) | 60 |
 
 **Changes adopted after wave 1:**
@@ -228,11 +228,11 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 M2 (install skeleton) and M5 (authoring) can start during wave 1, using the pilot module as the first
 real archetype content.
 
-### M5. Author the skill · **first version done** (library pattern and function files wait for stream B)
+### M5. Author the skill · **done** (library pattern and function files added from stream B)
 
 Status: `SKILL.md`, `library/index.md`, `archetypes/index.md`, six briefs, schemas, templates and
-`templates/workspace/` are written and pass the validator. The library index carries short working definitions
-of patterns and functions until stream B produces the detailed files.
+`templates/workspace/` are written and pass the validator. The library index links each pattern and function
+to its detailed file (stream B), plus `library/journey-stages.md`.
 The audit-partner end-to-end run completed all phases and wrote valid plan files after one YAML quoting fix
 ([review](../evals/e2e/2026-10-17-audit-partner/REVIEW.md)).
 
