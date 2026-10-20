@@ -49,8 +49,8 @@ from last year's answers"; "technicians search manuals on the shop floor".
 | `augment` | Places answers inside the work step (suggested replies, precedent retrieval) | Uses, edits or declines each answer | `shared-team-skills`, `workflow-automation` | Expert-scored accuracy on a held-out set; adherence or override rate tracked |
 | `automate` | Releases answers without a person when confident; routes uncertain ones to an analyst (`security-governance-risk-01`) | Answers routed questions; samples released ones | `workflow-automation`, `managed-agent-runtime` | Refusal rule, live monitoring and an owner for every corpus; measured accuracy before wider release |
 
-The usual rung is assist. GOV.UK Chat moved from a 2023 prototype through public pilots to wider access in the
-GOV.UK app [GDS-GOVUKCHAT-2026A; GDS-GOVUKCHAT-2026B].
+The usual rung is assist. GOV.UK Chat moved from a 2023 prototype to public pilots, and in March 2026 GDS said it
+would open access more widely, starting with all users of the GOV.UK app [GDS-GOVUKCHAT-2026A].
 
 ## 4. How it is built
 

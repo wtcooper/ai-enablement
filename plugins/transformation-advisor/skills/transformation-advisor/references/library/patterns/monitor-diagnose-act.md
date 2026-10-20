@@ -61,7 +61,7 @@ a shared inbox nobody reads"; "on-call spends the first hour gathering context";
 ## 5. Prerequisites
 
 - **Data.** Telemetry with consistent labels; historical incidents with known root causes (Meta backtested against past investigations; Microsoft used a year of incidents labelled by experienced engineers) [META-RCA-2024; MSFT-RCACOPILOT-2024].
-- **Policy.** Written rules for which actions may run unattended, who can switch the system off, and what triggers fallback. Knight lacked written incident and deployment procedures [SEC-KNIGHT-2013].
+- **Policy.** Written rules for which actions may run unattended, who can switch the system off, and what triggers fallback. Knight lacked supervisory procedures for incident response and written deployment procedures [SEC-KNIGHT-2013].
 - **Skills.** An owner of detection quality: Google SRE teams typically have "one or sometimes two" members on monitoring [GOOGLE-SREBOOK-2017].
 - **Safety engineering** where physical or clinical consequences exist; setting BCOOLER's constraints took "significant time" with the systems provider [DEEPMIND-BCOOLER-2022].
 

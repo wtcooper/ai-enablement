@@ -62,7 +62,7 @@ Move up per category, not for the whole inbox *(guidance)*.
 
 ## 5. Prerequisites
 
-- **Data.** A labelled history of items and where they went (HMT trained on 1,085,710 documents [ATRS-HMT-2024]; DWP captured 80,000 caller utterances [ATRS-DWPCONV-2025]). Without history, DWP used synthetic documents plus two redacted real letters per test [ATRS-DWP-WHITEMAIL-2025]; treat that as thin.
+- **Data.** A labelled history of items and where they went (HMT trained on 1,085,710 documents [ATRS-HMT-2024]; DWP captured 80,000 caller utterances [ATRS-DWPCONV-2025]). Without history, DWP tested with at least 15 synthetic documents per theme plus two redacted production letters [ATRS-DWP-WHITEMAIL-2025]; treat that as thin.
 - **Access.** API access to the case system; a scanning or mailbox feed.
 - **Policy.** Data protection impact and equality assessments [ATRS-DWP-WHITEMAIL-2025]; a decision on whether data may leave your estate.
 - **Skills.** A named owner of the taxonomy and templates; at FCDO only a limited number of trained staff can change templates [ATRS-FCDO-CONSULAR-2024].
