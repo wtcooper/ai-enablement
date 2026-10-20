@@ -83,8 +83,9 @@ system achieves its intended purposes and whether development or deployment shou
 requires minimum risk practices for high-impact AI and termination of non-compliant use [NIST-2023; OMB-2025].
 
 **Light path** (set in step 1): `g1` and `g2` are combined into one gate, the portfolio owner decides `g0`, and
-`g3` keeps adoption evidence and benefit rows. The utility in HBR's example values disciplined progression
-because of regulation and suggests a lighter version for lower regulatory burden [HBR-2026].
+`g3` keeps adoption evidence and benefit rows. HBR's utility example values disciplined progression because of
+regulation, and the article says a lighter version suits industries with lower regulatory burden [HBR-2026];
+using a light path for low-risk items inside one firm is this skill's default.
 
 **Agentic items** take the same gates with cost and risk evidence at `g2` and `g3`. Gartner forecasts that over
 40% of agentic AI projects will be cancelled by the end of 2027 for escalating costs, unclear value or inadequate
@@ -123,8 +124,8 @@ risk controls (a forecast, read through a news report) [GARTNER-2025].
 
 ### 5.1 Evidence that should drive a stop
 
-Data not available or not good enough; inadequate risk controls; escalating costs; unclear business value
-(Gartner's stated causes of abandonment and cancellation) [GARTNER-2024; GARTNER-2025]; performance below an
+Poor data quality; inadequate risk controls; escalating costs; unclear business value (Gartner's stated causes in
+its abandonment and cancellation forecasts) [GARTNER-2024; GARTNER-2025]; performance below an
 appropriate level for high-impact AI [OMB-2025]; unacceptable risks or harms found, which UK guidance says should
 lead to changing or decommissioning the system [UKGOV-2025].
 
@@ -135,7 +136,7 @@ lead to changing or decommissioning the system [UKGOV-2025].
   [UKGOV-2025; NIST-2023].
 - The decommissioning procedure is followed and the inventory updated [NIST-2023; OMB-2025].
 - Records of AI use kept as the firm's policy requires (`overlay/policy.md`).
-- Lessons captured and reusable assets kept: data clean-up, evaluation sets, prompts, integrations [AUSGOV-2013].
+- Lessons captured [AUSGOV-2013] and reusable assets kept: data clean-up, evaluation sets, prompts, integrations.
 - Benefits expected but not achieved recorded in `benefits.yaml` (`not-realised` or `withdrawn`) [IVI-ITCMF-n.d.].
 - `status: retired` once the checklist is complete.
 
@@ -165,7 +166,7 @@ lead to changing or decommissioning the system [UKGOV-2025].
 | **Insist the prototype uses real data** | `g1`, `g2` | Optimism that collapses on real data; Deloitte's interviewees describe this [DELOITTE-2025] |
 | **Test feasibility, viability and desirability in the pilot** | Pilot design | Pilots that validate the model, not the integration or the adoption [HBR-2026] |
 | **Require red-team scrutiny before production** | `g3` | Misuse and failure modes before cost rises; HBR notes production usually brings a considerable increase in cost and development time [HBR-2026] |
-| **Ask who pays for run cost at scale** | `g4` | Cost surprises; about one in five McKinsey respondents said AI operating costs constrained their use (respondent-reported) [MCK-2026] |
+| **Ask who pays for run cost at scale** | `g4` | Cost surprises; about one in five respondents to McKinsey's 2026 global survey (1,719 participants) said AI operating costs constrained their organization's AI use (respondent-reported) [MCK-2026] |
 
 | Trap | How to avoid it |
 |---|---|

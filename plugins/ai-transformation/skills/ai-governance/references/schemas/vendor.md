@@ -47,7 +47,10 @@ sources_checked:
 - **Every rating has a note** that says what the evidence is and where it was found (`sources_checked` locator).
   A claim with no document behind it is `unknown`, not `meets`.
 - **`desk` evaluations** keep `label: draft-to-validate`. Published terms may differ from the signed contract and
-  change over time; the decision stays `pending` until someone checks the contract.
+  change over time; for `client-confidential` and `regulated` data the decision stays `pending` until someone checks
+  the contract. A narrower decision (for example a `pilot` on firm-internal data) may rest on what the user confirms.
+- **`pending` in the catalog.** With no narrower approval, the matching catalog entry has `status: under-review`;
+  with one, the entry carries that narrower status and only its data classes.
 - **Decision rules** are in `../vendor-evaluation.md` §5. A `gap` in `retention_training` blocks
   `client-confidential` and `regulated` data.
 - **Screens** come from the regimes in `policy.md`. A screen marked `needs-review` names who reviews it in the body.

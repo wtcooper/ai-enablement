@@ -49,7 +49,8 @@ right answer at all, before anyone compares tools.
    from a record. Typical descriptions hide the exceptions that break solutions.
 3. **Restate the goal as the owner's metric** and ask the owner to confirm it (§5, move 1). If the owner is not
    available to check outputs, say so now: leadership-driven causes, including leaders not available to check
-   intent, were the most cited in RAND's practitioner interviews [RAND-2024].
+   intent, were the most cited in RAND's interviews with 65 experienced data scientists and engineers
+   [RAND-2024].
 4. **Screen the stakes.** Ask which errors would be costly or irreversible and who would notice them.
 5. **Run the fit checks** (§3): could a rule or checklist do it; do the agent-fit signals hold; would a competent
    graduate succeed with the same input and context.
@@ -70,8 +71,8 @@ Delegation). If there is no opportunity at all and the user is still asking wher
 | Rules first | "What would a rule-based or checklist version look like, and why is it not enough?" | If a rule, template or existing tool meets the quality bar on a sample, recommend that instead of a model-based solution | [GOOGLE-RULES, Rule 1; OPENAI-2025] |
 | Agent fit | "Does the work need judgment on exceptions, rules nobody can maintain, or heavy unstructured documents?" | None of the three: a workflow or a single model call is likely enough | [OPENAI-2025] |
 | Intern test | "Given exactly this input and context, would a competent graduate in the field succeed?" | No: missing context to add, a task to split, or a task too hard for current models | [APPLIEDLLMS-2024, 1.4.3] |
-| Task type | "Which tasks in this role are inside what the tools do well, and which are not?" | Test by task, not by role; one task outside the frontier made consultants 19% less likely to be correct | [HBS-2023] |
-| Stakes | "Where is an error costly or irreversible?" | Fully automated significant decisions or high-risk outcomes keep a person deciding | [UKGDS-2025] |
+| Task type | "Which tasks in this role are inside what the tools do well, and which are not?" | Test by task, not by role; on one task outside the frontier, consultants using AI were 19% less likely to reach a correct solution (preregistered experiment with 758 BCG consultants, GPT-4, 2023) | [HBS-2023] |
+| Stakes | "Where is an error costly or irreversible?" | Be cautious about fully automating significant decisions; high-impact or high-risk outputs need a person validating them | [UKGDS-2025] |
 | Owner | "Who will check outputs against intent, every week if needed?" | Nobody: fix ownership before design *(advisor default)* | [RAND-2024] |
 
 **Decision rules**
@@ -104,7 +105,8 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions are in SKILL.
 ## 5. Expert moves
 
 1. **Restate the goal as the business metric the owner needs, and get it confirmed in writing.** RAND's
-   example is the price that maximizes profit, not the price that sells the most. Reveals proxy-metric errors
+   example is the price that gives the greatest profit margin, not the price that sells the most items. Reveals
+   proxy-metric errors
    and an owner who is not available to the team [RAND-2024].
 2. **Ask "would a few if-then rules do this?" and try the rule version first.** Reveals AI applied to a simple
    problem, and gives a baseline to beat [RAND-2024; GOOGLE-RULES, Rules 1 and 3; OPENAI-2025].
@@ -116,19 +118,19 @@ Tags: **[T]** team, **[U/O]** unit or organization. Core questions are in SKILL.
 5. **Test by task type, not by role**, before a role-wide rollout. Reveals tasks inside and outside the jagged
    capability frontier [HBS-2023].
 6. **Ask what people already do with personal AI tools.** Reveals demand, the flexibility users expect and what
-   a sanctioned solution must match. MIT NANDA reports workers at over 90% of surveyed companies using personal
-   AI tools while 40% of companies had bought an LLM subscription (self-reported interviews and survey; the
-   report calls its figures directional) [MITNANDA-2025].
+   a sanctioned solution must match. MIT Project NANDA reports workers at over 90% of surveyed companies using
+   personal AI tools while 40% of companies had bought an LLM subscription (interviews with 52 organizations and
+   a survey of 153 senior leaders; self-reported; the report calls its figures directional) [MITNANDA-2025].
 
 ## 6. Common traps
 
 | Trap | Why it happens | Evidence | How to avoid |
 |---|---|---|---|
-| Optimizing the wrong problem or metric | Technical staff translate a vague goal; owners are not there to check intent | In RAND's interviews, 84% of interviewees cited one or more leadership-driven causes as the primary reason projects fail (interview tally) [RAND-2024] | Move 1; a named owner reviewing outputs |
+| Optimizing the wrong problem or metric | Technical staff translate a vague goal; owners are not there to check intent | In RAND's interviews with experienced data scientists and engineers (65 in all, 50 from industry), 84% of interviewees cited one or more leadership-driven causes as the primary reason projects fail (interview tally; RAND notes its mostly non-managerial sample may skew toward leadership causes) [RAND-2024] | Move 1; a named owner reviewing outputs |
 | Using AI where rules would do | AI treated as a buzzword | [RAND-2024; GOOGLE-RULES, Rule 1] | Build and measure the rule or single-call baseline first |
 | Automating waste | The workflow was not mapped or diagnosed first | No source measured this directly; NANDA reports interview accounts of brittle workflows and misalignment with daily operations [MITNANDA-2025] | Ask for the last real instance and last month's rework; baseline the current process |
 | Chasing technology over the user problem | Builders want the newest tools | 16 of 50 RAND industry interviewees described bottom-up, technology-driven failures [RAND-2024] | Tie each design choice to the problem statement |
-| Ignoring people and process | Algorithms get the attention | BCG's survey attributes about 70% of implementation challenges to people and process, 20% to technology, 10% to algorithms (self-reported survey) [BCG-2024] | Frame adoption and workflow change as part of the problem |
+| Ignoring people and process | Algorithms get the attention | BCG's survey of 1,000 CxOs and senior executives in 59 countries attributes about 70% of implementation challenges to people and process, 20% to technology, 10% to algorithms (self-reported) [BCG-2024] | Frame adoption and workflow change as part of the problem |
 | Data trouble found late | Nobody looked at the real data | 30 of 50 RAND industry interviewees discussed persistent data-quality problems [RAND-2024] | Ask where the inputs live and look at a real sample in step 1 |
 
 ## 7. Worked example: evidence matching in an audit practice
@@ -169,7 +171,7 @@ In `brief.md`, write §1 Problem frame from `../templates/brief.md`. In the fron
 - `BCG-2024` — Boston Consulting Group, *AI Adoption in 2024: 74% of Companies Struggle to Achieve and Scale
   Value*, press release, 2024-10-24. https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
 - `GOOGLE-RULES` — Google for Developers (M. Zinkevich), *Rules of Machine Learning*, practitioner guide,
-  undated. https://developers.google.com/machine-learning/guides/rules-of-ml
+  page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HBS-2023` — Dell'Acqua et al., *Navigating the Jagged Technological Frontier*, HBS working paper 24-013,
   2023-09. https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
 - `MITNANDA-2025` — MIT Project NANDA, *The GenAI Divide: State of AI in Business 2025*, preliminary research

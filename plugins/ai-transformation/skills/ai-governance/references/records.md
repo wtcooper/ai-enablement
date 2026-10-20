@@ -20,7 +20,8 @@ keys in brackets are listed in §9.
 
 **Goal.** Records that make AI-assisted work reconstructable, in proportion to the tier. The UK FRC asks audit firms
 for proportionate documentation of what an AI tool does, how it was developed and tested, and how the firm knows it
-works, including for third-party tools; it says the guidance introduces no new requirements [FRC-AI-2025]. Records
+works, including for third-party tools; it says the guidance introduces no new requirements [FRC-AI-2025;
+FRC-AIAUDIT-2025]. Records
 also create obligations of their own, because tools store prompts and responses [MSFT-COPILOT-ND].
 
 **Exit when all of these are true:**
@@ -37,7 +38,7 @@ also create obligations of their own, because tools store prompts and responses 
 2. **Split central from file** (move 2). Most of the explanation of a tool belongs in one central record; the file
    holds only what is specific to this use.
 3. **Set the per-matter record by tier** (§5 default), starting from the three items practitioners recommend:
-   prompt, how the output was verified, who reviewed [CPAI-ND].
+   prompt, how the output was verified, who reviewed [CPAI-2026].
 4. **Design the inventory** (move 4). Use the catalog for approvals and a separate inventory for every AI system
    and feature in use, including embedded ones.
 5. **Settle logs and retention** with IT and records owners (move 5). Ask who can retrieve prompts and responses and
@@ -59,7 +60,7 @@ also create obligations of their own, because tools store prompts and responses 
 
 1. **Require three items on the file for substantive AI-assisted work: prompt, how the output was verified, who
    reviewed.** Records design. Reveals whether review happened; the CPAi guide puts it as "If it isn't documented, it
-   didn't happen". A practitioner recommendation, not a mandate [CPAI-ND].
+   didn't happen". A practitioner recommendation, not a mandate [CPAI-2026].
 2. **Keep the tool explanation central and the use on the file.** Audit and assurance practices. The FRC's guidance,
    as recorded in the assurance archetype, puts what the tool is, when it is appropriate, how it was built and why the
    firm trusts it centrally, and the tool and model version, configuration, prompts or inputs, why use was
@@ -67,14 +68,15 @@ also create obligations of their own, because tools store prompts and responses 
    outputs are all checked to cited sources it may be appropriate to document less
    (`../../transformation-advisor/references/archetypes/assurance/guardrails.md` §5) [FRC-AIAUDIT-2025].
 3. **For third-party tools, document why you can rely on them where the vendor withholds detail.** Vendor tools in
-   regulated work. Reveals the minimum record regulators are signalling [FRC-AI-2025; KN-2025].
+   regulated work. Reveals the minimum record regulators are signalling; where a vendor withholds detail, the FRC
+   suggests the firm may rely on independent assurance [FRC-AI-2025; FRC-AIAUDIT-2025; KN-2025].
 4. **Build an inventory with NIST's fields.** Organization scope. NIST lists data provenance, known issues,
    human-oversight roles, IP and sensitive-data considerations, and underlying models and versions as inventory
    fields, and suggests policies define exemptions for embedded generative AI [NIST-600-1-2024, GV-1.6-001 to
    GV-1.6-003].
 5. **Ask for retention controls and who holds the activity history.** Before approval. Reveals whether records are
    retrievable for audit: one provider says workspace admins control retention and deleted conversations are removed
-   within 30 days unless legally required to retain [OPENAI-ENT-ND]; another says prompts and responses are stored as
+   within 30 days unless the law requires longer retention or it is needed to protect its services [OPENAI-ENT-ND]; another says prompts and responses are stored as
    activity history that admins can manage [MSFT-COPILOT-ND].
 6. **Design tools to document their source data.** Firm-built tools. PCAOB staff reported some firms design tools to
    document the underlying source data [PCAOB-GENAI-2024, p.5].
@@ -87,8 +89,8 @@ also create obligations of their own, because tools store prompts and responses 
 |---|---|---|
 | `tier-1` | Nothing beyond tool logs | Catalog entry |
 | `tier-2` | Tool used and what was checked, where the work feeds client work | Catalog entry |
-| `tier-3` | Prompt or input description, how the output was verified, who reviewed [CPAI-ND] | Catalog entry and vendor evaluation |
-| `tier-4` | Tier 3, plus tool and model version, configuration, why use was appropriate, approval, how output informed the conclusion [FRC-AIAUDIT-2025] | Approval record: purpose, appropriate use, development and testing, how the firm knows it works [FRC-AI-2025] |
+| `tier-3` | Prompt or input description, how the output was verified, who reviewed [CPAI-2026] | Catalog entry and vendor evaluation |
+| `tier-4` | Tier 3, plus tool and model version, configuration, why use was appropriate, approval, how output informed the conclusion [FRC-AIAUDIT-2025] | Approval record: purpose, appropriate use, development and testing, how the firm knows it works [FRC-AIAUDIT-2025] |
 
 **AI inventory fields:** tool; vendor; tier and contract; underlying model and version; runtime class; data classes
 permitted; data provenance; known issues; human-oversight roles; IP and sensitive-data considerations; retention and
@@ -108,7 +110,8 @@ log location; owner; risk tier; consent, 7216 and independence flags; EU high-ri
   tiers fare is untested (professional-services guardrails §4) [ORRICK-HEPPNER-2026].
 
 **Decision rules**
-- Records scale with the tier; never ask for more on the file than the tier needs [FRC-AI-2025].
+- Records scale with the tier; never ask for more on the file than the tier needs (advisor default, built on the FRC's
+  proportionality principle [FRC-AI-2025]).
 - Logs of prompts and responses are client data when the inputs were: give them the input's data class and retention.
 - A tool change that alters the model or configuration is noted in the central record before the next tier-4 use.
 
@@ -119,7 +122,7 @@ log location; owner; risk tier; consent, 7216 and independence flags; EU high-ri
 | Over-documenting | The FRC seeks proportionate documentation and warns against over-documentation [FRC-AI-2025] | Scale to tier; keep the tool explanation central |
 | Records nobody can retrieve | Prompts and responses sit in vendor activity history [MSFT-COPILOT-ND] | Confirm admin retrieval and retention before approval |
 | Keeping logs forever | Logs hold client data | Set retention to the matter's records policy; secure the logs |
-| Usage tracking read as surveillance | KPMG says it tracks staff AI use and that monitoring is not intended as discipline (secondary) [IAB-KPMG-2025] | Say what records are for (reconstruction, quality) and what they are not |
+| Usage tracking read as surveillance | KPMG is reported to track staff AI use, to say the monitoring is not intended as discipline, and to add AI use to annual performance assessments (secondary) [IAB-KPMG-2025] | Say what records are for (reconstruction, quality) and what they are not; records of AI use never rate individuals (core rule 1) |
 
 ## 7. Worked example
 
@@ -143,7 +146,7 @@ Write section 5 of `overlay/policy.md`. Add `retention` (and `underlying_model` 
 
 - **ABAJ-JOHNSON-2025**: ABA Journal, *5 hallucinated cases lead federal judge to kick 3 Butler Snow lawyers off case* (press, 2025-07-30). https://www.abajournal.com/news/article/5-fabricated-cases-lead-federal-judge-to-kick-3-butler-snow-lawyers-off-case
 - **AIACT-EXPL-2026**: Future of Life Institute, *EU AI Act Explorer: Article 26* (annotated regulation, accessed 2026-10-20). https://artificialintelligenceact.eu/article/26/
-- **CPAI-ND**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, undated). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
+- **CPAI-2026**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, 2026-07). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
 - **FRC-AI-2025**: Financial Reporting Council, *FRC publishes landmark guidance providing clarity to audit profession on the uses of AI* (regulator news release, 2025-06-26). https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/
 - **FRC-AIAUDIT-2025**: Financial Reporting Council, *AI in audit: illustrative example and documentation guidance* (regulator, 2025-06). https://media.frc.org.uk/documents/AI_in_Audit.pdf
 - **IAB-KPMG-2025**: International Accounting Bulletin, *KPMG to include AI performance reviews* (trade press, secondary, 2025-11-03). https://www.internationalaccountingbulletin.com/?p=44130

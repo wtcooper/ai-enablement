@@ -100,6 +100,8 @@ The review each tier needs is in `../risk-tiers.md`.
 ### 3.5 Catalog status, scorecard ratings and screens
 
 - `status` (catalog entry): `approved`, `approved-with-conditions`, `pilot`, `under-review`, `not-approved`, `retired`.
+- `decision` (vendor file): `approved`, `approved-with-conditions`, `pilot`, `not-approved`, `pending`. A `pending`
+  decision with no narrower approval appears in the catalog as `under-review`.
 - `rating` (scorecard dimension): `meets`, `partial`, `gap`, `unknown`.
 - Scorecard dimensions: `security_privacy`, `retention_training`, `certifications`, `contract_terms`,
   `change_control`, `exit`.

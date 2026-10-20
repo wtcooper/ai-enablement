@@ -20,7 +20,7 @@ screening gate (`g0`). Keys in brackets are listed in §9.
 
 **Goal.** Decide which ideas earn discovery effort, with the reasons visible. Screening asks two questions: is
 it worth it, and is it ready? Cooper keeps business-value criteria apart from project-readiness criteria at every
-gate, and pairs any financial model with a scorecard because financial inputs are uncertain or biased
+gate, and pairs a financial model with a scorecard because financial data are often uncertain or biased
 [COOPER-STAGEGATE-n.d.]. Treat the scores as a facilitation device, not a validated model (as the shared
 prioritize method says).
 
@@ -86,8 +86,8 @@ similar split [HBR-2026].
 | **Value < 3.5** | Go only on the light path and if cheap; else Hold or Kill | Kill, or Hold with a `revisit_when` trigger |
 
 When scoring feasibility, count people-and-process readiness (an owner, process redesign, adoption) at least as
-much as technical feasibility; BCG attributes about 70% of implementation challenges to people and process (survey
-of 1,000 executives) [BCG-2024]. That weighting is a proposed default, not BCG's.
+much as technical feasibility; BCG attributes about 70% of implementation challenges to people and process (BCG
+survey of 1,000 CxOs and senior executives) [BCG-2024]. That weighting is a proposed default, not BCG's.
 
 ### 3.3 Readiness checklist
 
@@ -97,14 +97,16 @@ them; whether the process needs redesign and who owns that; the controls the ris
 
 ### 3.4 Payback hurdles and spend thresholds
 
-- **Do not apply a technology-style payback hurdle.** Most of Deloitte's EMEA respondents reported reaching
-  satisfactory ROI on a typical AI use case in two to four years, against the seven to 12 months usually
-  expected of technology investment; 6% reported payback under a year (respondent-reported) [DELOITTE-2025].
-  Google Cloud's survey of gen-AI-in-production users reports 74% saying ROI arrived within the first year
-  (vendor-published) [GOOGLE-2025]. The surveys differ in who was asked and who published, and Google's question
-  wording is ambiguous, so do not use the 74% to set hurdles.
-- **Different hurdles by type.** 85% of Deloitte's "ROI Leaders" use different frameworks or timeframes for
-  generative and agentic AI (respondent-reported) [DELOITTE-2025]. Set hurdles per `item_class` in step 1.
+- **Do not apply a technology-style payback hurdle.** In Deloitte's survey of 1,854 executives in 14 European and
+  Middle East countries (2025), most respondents reported reaching satisfactory ROI on a typical AI use case in two
+  to four years, against the seven to 12 months usually expected of technology investment; 6% reported payback
+  under a year (respondent-reported) [DELOITTE-2025]. Google Cloud's survey of 3,466 senior leaders reports 74% of
+  those using gen AI in production saying ROI arrived within the first year (vendor-published) [GOOGLE-2025]. The
+  surveys differ in who was asked and who published, and Google's question wording is ambiguous, so do not use the
+  74% to set hurdles.
+- **Different hurdles by type.** 85% of Deloitte's "ROI Leaders" (the top fifth of that survey on its ROI index)
+  use different frameworks or timeframes for generative and agentic AI (respondent-reported) [DELOITTE-2025]. Set
+  hurdles per `item_class` in step 1.
 - **Spend thresholds that trigger heavier governance** are a rule to set, not a universal number. UK government
   practice gives one example: a five-part business case typically for investment approaching GBP 10 million
   [UKGOV-2025].
@@ -135,7 +137,7 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 | **Rank with fixed criteria, then pull the next item only when capacity opens** | When the queue is longer than the live limit | Whether the loudest sponsor or the score sets priorities; HBR describes advancement decided by resource availability and fixed criteria [HBR-2026] |
 | **Check the metric the team optimizes against the business metric** | Screen, and again at `g1` | Work aimed at the wrong objective [RAND-2024] |
 | **Ask for the realistic payback window by item class** | Setting hurdles | Unrealistic twelve-month hurdles [DELOITTE-2025] |
-| **Record the build, buy or partner leaning now** | Screen, confirmed at `g2` | Slow custom builds that a bought tool would cover; MIT NANDA's interview-based finding is that external partnerships succeeded about twice as often as internal builds (directional) [MITNANDA-2025] |
+| **Record the build, buy or partner leaning now** | Screen, confirmed at `g2` | Slow custom builds that a bought tool would cover; in MIT NANDA's interviews with 52 organizations, external partnerships reached deployment about twice as often as internal builds (self-reported; directional) [MITNANDA-2025] |
 | **Tier the path by risk** | Setting `gate_path` | Gate fatigue on low-risk items [HBR-2026; OMB-2025] |
 
 ## 6. Common traps
@@ -143,8 +145,8 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 | Trap | How to avoid it |
 |---|---|
 | **AI where simple rules suffice** [RAND-2024] | The rules-or-AI check at intake; the simpler-fix gate here |
-| **Optimizing for the wrong problem.** In RAND's 65 interviews, 84% cited leadership-driven failures as a primary cause (interviewee perceptions) [RAND-2024] | Metric agreed with the benefit owner before Go |
-| **Funding visible functions over high-return ones.** MIT NANDA reports budgets skewed to sales and marketing while back-office automation often yields better ROI; its own figures for the skew are inconsistent (50% in one place, about 70% in another) [MITNANDA-2025] | Score on value and readiness, not visibility; check the budget split at rebalance |
+| **Optimizing for the wrong problem.** Of RAND's 50 industry interviewees (experienced data scientists and engineers), 84% cited leadership-driven failures, such as the wrong problem or metric, as a primary reason AI projects fail (interviewee perceptions) [RAND-2024] | Metric agreed with the benefit owner before Go |
+| **Funding visible functions over high-return ones.** MIT NANDA's executive interviews and survey report budgets skewed to sales and marketing while back-office automation often yields better ROI; its own figures for the skew are inconsistent (50% in one place, about 70% in another) [MITNANDA-2025] | Score on value and readiness, not visibility; check the budget split at rebalance |
 | **One blended number** | Show both indexes; a Go on a low-readiness item names the readiness work |
 | **Expecting short payback** | Class-specific hurdles; hold decisions that allow for ramp-up |
 | **Scoring down, item by item** | Score across, one dimension at a time |

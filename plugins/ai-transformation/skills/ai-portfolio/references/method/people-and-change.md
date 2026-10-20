@@ -34,12 +34,12 @@ Empson's research, as reviewed by Flood, describes partnership as limiting the u
 "leadership constellation" of senior leaders, practice heads, business-services heads and key influencers
 [JOTWELL-EMPSON-2013]. Put practice heads among the gatekeepers, because they control partner and staff time.
 
-**Business-minded partners lead.** Polsinelli's chair says that after a year of activity with little progress he
-gave AI to respected senior people rather than technologists and treated it as a business problem (his account,
-self-reported) [POLSINELLI-2026]. Consider this when choosing item sponsors.
+**Business-minded partners lead.** Polsinelli's chair says that after about a year of plenty of activity but little
+progress, he asked some of the firm's most talented business leaders, not technologists, to build the business
+side alongside the tech team, and treated AI as a business problem (his account, self-reported) [POLSINELLI-2026]. Consider this when choosing item sponsors.
 
-**Turn objections into gate evidence.** Skeptics' concerns are often legitimate: a preregistered study found 17% to
-33% hallucination rates in three legal research tools [ARXIV-MAGESH-2024]. Ask each skeptic what result would change
+**Turn objections into gate evidence.** Skeptics' concerns are often legitimate: a preregistered academic study found three
+legal research tools (2024 versions) each hallucinated between 17% and 33% of the time [ARXIV-MAGESH-2024]. Ask each skeptic what result would change
 their mind and add it to the next gate's evidence (an inference from the partner sources) [TRI-AIPS-2026].
 
 **Partner economics at the case gates.** For hourly-billed work, ask what changes in hours, rate, write-offs and
@@ -50,8 +50,8 @@ measured outcome) [LF-PERLIN-2025]. Add the answer to the `g2` business-case evi
 choice. The redeploy-or-reduce decision itself is recorded in step 6 on realised, not forecast, value.
 
 **Junior work.** When an item automates tasks juniors learn from, flag it at `g2` and use the shared junior-task
-audit. Big Four new partner promotions were reported at 179 for the 2025 cycle against 276 in 2022 (trade press;
-no named data origin) [ACCTAGE-2025]; partners care about succession.
+audit. UK Big Four new partner promotions were reported at 179 for the 2025 cycle against 276 in 2022 (trade press
+citing Financial Times analysis) [ACCTAGE-2025]; partners care about succession.
 
 **Accountability expectations.** KPMG says staff AI objectives enter performance reviews from 2026 and describes the
 tracking as not disciplinary [IAB-KPMG-2025]. No source reports the effect of such expectations; describe them, do
@@ -62,7 +62,7 @@ not copy them into a portfolio as targets, and never set them for named people.
 | Trap | How to avoid it |
 |---|---|
 | **A kill read as blame** | Evidence-based reasons; reuse recorded; no names |
-| **Broadcast mandates to partners** [JOTWELL-EMPSON-2013] | Decisions made in the forum with practice heads present |
+| **Broadcast mandates to partners** (inferred from Empson's point on formal power) [JOTWELL-EMPSON-2013] | Decisions made in the forum with practice heads present |
 | **Vague reassurance on roles** | Say only what the firm controls; use the shared §7 wording |
 | **Capacity decided on forecast** | Decide at a review, on actuals |
 

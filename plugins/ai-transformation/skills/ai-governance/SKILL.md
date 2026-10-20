@@ -64,7 +64,9 @@ to evaluate tools, and a fast path to say yes safely. You design, assess and rec
 1. Look in the working folder for `overlay/policy.md`.
    - **Found:** read its frontmatter (`scope`, `regimes`, `owners`, `status`, `step_completed`, `next_step`).
      Summarize where things stand in two or three lines and offer to continue at `next_step`, or to evaluate a tool
-     (step 6) if that is what the user came for.
+     (step 6) if that is what the user came for. If `next_step` is `null`, all seven steps are done: offer a tool
+     evaluation, a review against the re-approval triggers (raise `policy_version` when approved text changes), or to
+     record approval (`status: approved` only when the user says the approvers signed it off).
    - **Not found:** start at step 1. Create `overlay/` if needed (if only `overlay-example/` exists, ask before
      renaming it) and create `overlay/policy.md` from `references/templates/policy.md` once the scope is confirmed.
 2. Read what the other files already say, and keep it: `overlay/guardrails.md`, `overlay/tool-catalog.yaml` (an older
@@ -88,6 +90,8 @@ criteria, write the output, update the state.
 
 ### 1 · Baseline
 
+**Goal:** an agreed picture of the tools, data and duties in play today, so the policy closes real gaps.
+
 **Read now:** `references/baseline.md`.
 
 - Which AI tools did people use last month for client work, including personal accounts and free tools?
@@ -99,6 +103,8 @@ criteria, write the output, update the state.
 a first gap list. **Output:** `overlay/policy.md` frontmatter and section 1.
 
 ### 2 · Acceptable use and data rules
+
+**Goal:** rules staff can apply in the moment: which data class may go into which tool tier, under which contract.
 
 **Read now:** `references/policy-and-data.md`.
 
@@ -113,6 +119,8 @@ data lines in `overlay/guardrails.md`.
 
 ### 3 · Risk tiers and human review
 
+**Goal:** review sized to the consequence of error, with a named reviewer and check for each tier.
+
 **Read now:** `references/risk-tiers.md`.
 
 - What is the worst realistic failure here?
@@ -125,6 +133,8 @@ a pattern map. **Output:** policy section 4; `max_risk_tier` on catalog entries;
 
 ### 4 · Records of AI use
 
+**Goal:** records, proportionate to the tier, that let a reviewer, regulator, client or court reconstruct AI-assisted work.
+
 **Read now:** `references/records.md`.
 
 - For the last five AI-assisted deliverables, what could we show a regulator, client or court about review?
@@ -136,10 +146,10 @@ section 5; `retention` on catalog entries.
 
 ### 5 · Profession-specific duties
 
-**Read now:** `references/professional-duties.md`. It sends you to the matched archetype's `guardrails.md` for each
-regime: `../transformation-advisor/references/archetypes/tax/guardrails.md`,
-`../transformation-advisor/references/archetypes/assurance/guardrails.md`,
-`../transformation-advisor/references/archetypes/professional-services/guardrails.md`.
+**Goal:** for each regime flagged in step 1, a written rule with the decision it forces, its owner and its record.
+
+**Read now:** `references/professional-duties.md`. Its §5 table names the archetype `guardrails.md` sections to read
+for each regime (tax, assurance, professional services, security).
 
 - Are we building, hosting or configuring AI for any attest client, or sharing a tool with one?
 - Does any AI step touch tax return information, and does it only process data or apply the law?
@@ -150,6 +160,8 @@ regime: `../transformation-advisor/references/archetypes/tax/guardrails.md`,
 **Output:** policy section 6; catalog `flags`; profession lines in the guardrails.
 
 ### 6 · Vendor and tool evaluation
+
+**Goal:** a decision on one tool + tier + contract for named data classes and a maximum risk tier, with evidence.
 
 **Read now:** `references/vendor-evaluation.md`.
 
@@ -162,6 +174,8 @@ regime: `../transformation-advisor/references/archetypes/tax/guardrails.md`,
 exit plan. **Output:** `overlay/vendors/<vendor-product>.md`; the catalog entry; policy section 7.
 
 ### 7 · Secure enablement
+
+**Goal:** a fast, owned way to say yes safely, and a policy ready for the firm's approvers.
 
 **Read now:** `references/secure-enablement.md`.
 

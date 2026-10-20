@@ -20,9 +20,9 @@ organization.
 ## 1. Goal and exit criteria
 
 **Goal.** A picture of current practice the user agrees is true, so the policy closes real gaps instead of
-describing an ideal. Governance work is mostly known duties applied to a new tool: the profession-specific texts all
-say existing duties continue and the user stays responsible for the output [JOFA-2026; IESBA-TECH-2023;
-ABA-OP512-2024; PCAOB-GENAI-2024].
+describing an ideal. Governance work is mostly known duties applied to a new tool: the AICPA ethics article and ABA
+Opinion 512 say existing duties continue and the professional stays responsible for the output, and firms told PCAOB
+staff the same [JOFA-2026; ABA-OP512-2024; PCAOB-GENAI-2024].
 
 **Exit when all of these are true:**
 - **Scope and sponsor:** firm, practice or team; the sponsoring role; who will approve the policy.
@@ -77,14 +77,14 @@ More, as needed:
 Format: **move**: when to use it; what it reveals; source.
 
 1. **Ask about last month's actual tools, including personal accounts and free tools, before drafting anything.**
-   Opening the step. Reveals the real data flows and the gap between policy and practice. In a 47-country survey
-   led by the University of Melbourne with KPMG, most workplace users used free public tools and 48% of employees who
-   use AI said they had uploaded company information to public AI tools (self-reported) [KPMG-MELB-2025, pp.6, 75].
-   Microsoft and LinkedIn's survey reported 78% of AI users bringing their own tools (vendor-published)
-   [MSFT-WTI-2024].
+   Opening the step. Reveals the real data flows and the gap between policy and practice. In a 47-country survey of
+   48,340 people led by the University of Melbourne with KPMG, most employees who use AI at work used free public
+   tools, and 48% said they had uploaded sensitive company information to public AI tools (self-reported)
+   [KPMG-MELB-2025, pp.6, 75]. In Microsoft and LinkedIn's survey of 31,000 knowledge workers in 31 markets, 78% of
+   AI users said they bring their own AI tools to work (vendor-published) [MSFT-WTI-2024].
 2. **Ask what happened after the last "no" or "wait".** Policy diagnosis. Reveals whether restriction drives use out
-   of sight. In the same survey, uploads were reported by 67% where the employer banned generative AI and 33% where
-   there was no policy; the authors say this suggests bans may be ineffective (self-reported, correlational)
+   of sight. In the same survey, such uploads were reported by 67% of employees whose employer banned generative AI
+   and 33% of those with no policy; the authors say this suggests bans may be ineffective (self-reported, correlational)
    [KPMG-MELB-2025, p.75].
 3. **Run a one-question awareness poll: "Do we have an AI policy, and what does it say about client data?"** Before
    and after launch. Reveals the awareness gap: only about two in five employees in the survey said their
@@ -95,7 +95,8 @@ Format: **move**: when to use it; what it reveals; source.
    GV-1.6-002, GV-1.6-003].
 5. **Add AI questions to the privacy impact process you already run, and let its owner lead.** When a privacy or risk
    function exists. Reveals the cheapest route to an AI assessment: IAPP reports AI questions are commonly added to
-   existing privacy documentation, and privacy and legal or compliance were each named the primary owner of AI
+   existing privacy documentation where governance grows out of the privacy program, and in its spring-2024 survey of
+   more than 670 people in 45 countries, privacy and legal and compliance were each named the primary owner of AI
    governance by 22% of respondents (self-reported) [IAPP-GOV-2025].
 6. **Map the informal leaders, not only the org chart.** In a partnership. Reveals who can move peers and who can
    quietly block; Empson's study, as reviewed, describes a "leadership constellation" of the senior pair, practice
@@ -115,10 +116,11 @@ path and time.
   `attest-independence`. It practises law → flag `legal-practice` (consent and fees) [ECFR-7216-2008; JOFA-2026;
   ABA-OP512-2024].
 - Client contracts or outside guidelines mention AI, subcontracting or data location → flag `client-terms`.
-- AI is used in the EU → flag `eu-deployer`; uses that touch hiring, work allocation or evaluation of staff are
-  listed in Annex III [AIACT-EXPL-2026, Annex III point 4].
+- AI is used in the EU → flag `eu-deployer`; recruitment, decisions on terms of work, task allocation based on
+  behaviour or personal traits, and monitoring or evaluating staff are listed in Annex III
+  [AIACT-EXPL-2026, Annex III point 4].
 - A ban with no approved alternative → a first-priority gap (advisor default, built on [KPMG-MELB-2025, p.75]).
-- No record of who reviewed AI-assisted client work → a gap [CPAI-ND].
+- No record of who reviewed AI-assisted client work → a gap [CPAI-2026].
 - The answer to B3 has no owner or no stated time → a gap for step 7.
 
 ## 6. Common traps
@@ -159,14 +161,13 @@ step 2 or 6 decides on them.
 
 - **ABA-OP512-2024**: American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools* (professional body, 2024-07-29). https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
 - **AIACT-EXPL-2026**: Future of Life Institute, *EU AI Act Explorer: Annex III* (annotated regulation, accessed 2026-10-20). https://artificialintelligenceact.eu/annex/3/
-- **CPAI-ND**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, undated). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
+- **CPAI-2026**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, 2026-07). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
 - **ECFR-7216-2008**: US Treasury and IRS, *26 CFR 301.7216-1 to -3* (regulation, T.D. 9375 of 2008 as amended). https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.7216-3
 - **EY-AIGOV-2026**: Ernst & Young LLP, *EY survey finds that autonomous AI implementation outpaces oversight* (consultancy survey press release, 2026-09-15). https://www.ey.com/en_us/newsroom/2026/09/ey-survey-finds-that-autonomous-ai-implementation-outpaces-oversight-yielding-an-ai-governance-gap
-- **IAPP-GOV-2025**: IAPP, *AI Governance Profession Report 2025* (professional association research, page dated 2025-10-30). https://iapp.org/resources/article/ai-governance-profession-report/
-- **IESBA-TECH-2023**: IESBA, *Final Pronouncement: Technology-related Revisions to the Code* (standard-setter, 2023-04-11). https://www.ethicsboard.org/publications/technology-related-revisions-code
+- **IAPP-GOV-2025**: IAPP, *AI Governance Profession Report 2025* (professional association research, survey spring 2024, page dated 2025-10-30). https://iapp.org/resources/article/ai-governance-profession-report/
 - **JOFA-2026**: Journal of Accountancy, *Accounting ethics in the age of AI* (professional body, 2026-08-05). https://www.journalofaccountancy.com/news/2026/aug/accounting-ethics-in-the-age-of-ai.html
 - **JOTWELL-EMPSON-2013**: John Flood, JOTWELL, *How Are Professional Service Firms Governed?* (review of Empson, 2013-09-24). https://legalpro.jotwell.com/?p=653
 - **KPMG-MELB-2025**: University of Melbourne with KPMG, *Trust, attitudes and use of artificial intelligence: A global study 2025* (academic with consultancy, 2025-05). https://kpmg.com/content/dam/kpmgsites/xx/pdf/2025/05/trust-attitudes-and-use-of-ai-global-report.pdf
-- **MSFT-WTI-2024**: Microsoft and LinkedIn, *AI at Work Is Here. Now Comes the Hard Part* (vendor research, 2024). https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+- **MSFT-WTI-2024**: Microsoft and LinkedIn, *AI at Work Is Here. Now Comes the Hard Part* (vendor research; survey fielded by Edelman Data & Intelligence, February-March 2024). https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
 - **NIST-600-1-2024**: NIST, *AI RMF: Generative AI Profile, NIST AI 600-1* (standard, 2024-07). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - **PCAOB-GENAI-2024**: PCAOB staff, *Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative AI in Audits and Financial Reporting* (regulator staff, 2024-07). https://pcaobus.org/documents/generative-ai-spotlight.pdf

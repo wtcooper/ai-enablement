@@ -49,8 +49,9 @@ items are judged against each other and against fixed criteria, not only on thei
    are the senior managers who own or control those resources [COOPER-STAGEGATE-n.d.]. In a partnership, include
    the practice heads whose partners' and staff's time is being spent (see `people-and-change.md`).
 6. **Set the gate paths.** Read `overlay/policy.md` for risk tiers if it exists. Agree which items take a
-   lighter path; a lighter path suits lower regulatory burden, and closely related items with similar risk can
-   share streamlined approvals [HBR-2026; OMB-2025].
+   lighter path. HBR's utility example says a lighter version of its gated process suits industries with lower
+   regulatory burden, and OMB asks agencies to streamline approvals for closely related uses with substantially
+   similar risk [HBR-2026; OMB-2025]; applying that to low-risk items within one firm is this skill's default.
 7. **Set the forum and rhythm.** Agree who sits in the review and what it decides (§3.2). Agree the live limit.
 8. **Agree the central team's stance.** Say plainly that the portfolio office starts as an intake and gate body
    and should plan its move to an advisory role (§3.3) [MSFT-COE-2026].
@@ -71,7 +72,8 @@ and a rebalance at every third review.
 - Weights sum to 1. Each lever has one named metric the finance lead would accept.
 - When agreeing weights, a proposed default: count people-and-process readiness at least as much as technical
   feasibility. BCG attributes about 70% of implementation challenges to people and process, 20% to technology
-  and 10% to algorithms (survey of 1,000 executives) [BCG-2024]; BCG gives the split, not a weight.
+  and 10% to algorithms (BCG survey of 1,000 CxOs and senior executives in 59 countries) [BCG-2024]; BCG gives the
+  split, not a weight.
 - Stage exit evidence is written before any item reaches the gate.
 - Every gate has at least one gatekeeper who controls resources for the next stage.
 - A decommissioning route exists for anything that reaches production [NIST-2023; OMB-2025].
@@ -129,14 +131,14 @@ Tags: **[U]** unit or practice, **[O]** organization. Core questions first.
 | **Ask for the inventory of AI in use and the decommissioning procedure** | Scope | Shadow AI and no exit path; NIST lists inventory and decommissioning mechanisms, and OMB requires an annual use case inventory [NIST-2023; OMB-2025] |
 | **Map the informal power, not the org chart** | Choosing gatekeepers and forum in a partnership | Who can move peers and who can quietly block; Empson describes a "leadership constellation" (review by Flood) [JOTWELL-EMPSON-2013] |
 | **Tier the gate weight by risk** | Gate paths | Gate fatigue on low-risk items, and too little scrutiny on high-impact ones [HBR-2026; OMB-2025] |
-| **Say at set-up that stopping is an expected output** | Setting expectations with the forum | Whether leaders will accept kills. Gartner forecast at least 30% of gen-AI projects abandoned after proof of concept by end of 2025 (a forecast) [GARTNER-2024]; S&P Global's survey, as reported, found the average organization scrapped 46% of proofs of concept (respondent-reported, secondary) [CIODIVE-2025] |
+| **Say at set-up that stopping is an expected output** | Setting expectations with the forum | Whether leaders will accept kills. Gartner forecast in 2024 that at least 30% of gen-AI projects would be abandoned after proof of concept by end of 2025 (a forecast) [GARTNER-2024]; S&P Global Market Intelligence's survey of more than 1,000 respondents in North America and Europe, as reported, found the average organization scrapped 46% of proofs of concept before production (respondent-reported, secondary) [CIODIVE-2025] |
 | **Look for centre-of-excellence bottleneck signs** | Rebalance reviews | When to move the central team toward advisory [MSFT-COE-2026] |
 
 ## 6. Common traps
 
 | Trap | Evidence | How to avoid it |
 |---|---|---|
-| **Pilot sprawl** | HBR describes "too many pilots with too little coordinated oversight" [HBR-2026]; the UK NAO found 15 of 32 bodies with deployed AI always or usually identified use cases at organisational level before deployment (survey of bodies) [NAO-2024] | One register, one intake route, a live limit |
+| **Pilot sprawl** | HBR describes "too many pilots with too little coordinated oversight" [HBR-2026]; the UK NAO found 15 of 32 bodies with deployed AI said use cases were always or usually identified at organisational level before deployment (NAO survey of UK government bodies, autumn 2023) [NAO-2024] | One register, one intake route, a live limit |
 | **Centre as permanent gatekeeper** | Centralizing helps early and hurts later [MSFT-COE-2026] | Review the signals at each rebalance; plan the advisory move |
 | **Gates without resource holders** | A Go without resources is "approval without resources" [COOPER-STAGEGATE-n.d.] | Gatekeepers are the people who control the next stage's resources |
 | **No exit path** | NIST GOVERN 1.7 and OMB's discontinuation plan for under-performing high-impact AI [NIST-2023; OMB-2025] | A retire stage and a decommissioning route from day one |

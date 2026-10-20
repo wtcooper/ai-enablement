@@ -74,8 +74,9 @@ improvement from business process change [MSFT-PLAN-2026]; the shared prioritize
 **`category`**: `quick-win`, `foundation`, `big-bet`, `park`, with the rules in
 `../../../transformation-advisor/references/method/prioritize.md` §3.4.
 
-**`gate_path`**: `light` or `full`. A lighter path for low-risk items follows practice in regulated settings
-[HBR-2026; OMB-2025]; which items qualify is set in step 1.
+**`gate_path`**: `light` or `full`. HBR says a lighter gated process suits lower regulatory burden, and OMB asks for
+streamlined approvals for closely related, similar-risk uses [HBR-2026; OMB-2025]; which items qualify is set in
+step 1.
 
 **`risk_tier`**: the tier id from `risk_tiers` in `overlay/policy.md`, written by ai-governance (its defaults are
 `tier-1` to `tier-4`, set by the consequence of an error and who relies on the output). Without a policy, place the

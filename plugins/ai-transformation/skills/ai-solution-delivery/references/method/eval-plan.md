@@ -75,8 +75,9 @@ and a decision rule for launch.
   one-sided tests reward over-triggering [ANTHROPIC-2026, Step 3].
 - **Two-expert test:** a good task is one two domain experts would independently pass or fail the same way;
   have someone pass it themselves [ANTHROPIC-2026, Step 2].
-- **Gold answers in professional services** usually come from a senior practitioner; the first discovery is often
-  that seniors disagree [ANTHROPIC-2026].
+- **Gold answers in professional services** usually come from a senior practitioner, and seniors often disagree
+  *(advisor default)*. Anthropic notes that experts may disagree on open-ended outputs and that disagreement between
+  human raters needs reconciling [ANTHROPIC-2026].
 
 ### 3.2 Error analysis
 
@@ -113,8 +114,8 @@ any score [ANTHROPIC-2026].
   succeed. A 75% per-trial success rate gives about 42% over three trials (arithmetic example) [ANTHROPIC-2026;
   SIERRA-2024]. For client-facing or evidence-producing work, the all-trials number is the relevant one.
 - **Baseline:** run the current manual or legacy process on the same cases. Vals used a lawyer control group
-  [VALS-2025]; only 39% of surveyed agent practitioners compared their agent with a non-agentic baseline
-  [BERKELEY-2026].
+  [VALS-2025]; in a UC Berkeley-led survey of practitioners with deployed agents, only 39% compared their agent
+  with a non-agentic baseline [BERKELEY-2026].
 
 ### 3.6 Red-teaming
 
@@ -128,8 +129,8 @@ the design brief [OWASP-2025]. GOV.UK Chat ran red teaming with cyber security e
 Keep two suites: a **capability** suite that starts with a low pass rate and shows progress, and a **regression**
 suite that should stay near 100%. Graduate capability cases that pass reliably into regression; retire cases
 that always pass and add nothing [ANTHROPIC-2026; HUSAIN-2026]. A 0% pass rate across many trials usually means
-a broken task or grader: Anthropic reports one benchmark score moving from 42% to 95% after grading and task
-fixes (vendor-published) [ANTHROPIC-2026]. Re-run the regression suite on every model, prompt, retrieval-index,
+a broken task or grader: Anthropic reports one of its models' benchmark scores moving from 42% to 95% after
+grading and task fixes and a less constrained scaffold (vendor-published) [ANTHROPIC-2026]. Re-run the regression suite on every model, prompt, retrieval-index,
 tool or input-system change.
 
 ### 3.8 Online monitoring
@@ -151,10 +152,11 @@ set the normal range from the team's own pilot.
 ### 3.9 Evidence for regulated and professional work
 
 Keep the case inventory, gold answers, results by version, judge calibration, red-team scorecard and decisions.
-The UK audit regulator expects firms to document what a tool does, when it is appropriate, how it was developed
-and tested and how the firm knows it works, including third-party tools [FRC-2025]. Bank model-risk guidance asks
-for independent validation, ongoing monitoring including override analysis, and documentation [FRB-2011;
-BOE-2023]. The ABA says the lawyer stays fully responsible [ABA-2024].
+The UK audit regulator's guidance (which adds no new requirements) sets out what firms should document: what a
+tool does, when it is appropriate to use, how it was developed and tested, and why the firm is confident it works
+as intended, with adjusted expectations for third-party tools [FRC-2025]. Bank model-risk guidance asks for
+independent validation, a model inventory and ongoing monitoring [FRB-2011; BOE-2023], including analysis of
+overrides [FRB-2011]. The ABA says the lawyer stays fully responsible [ABA-2024].
 
 ## 4. Thresholds and starting numbers
 
@@ -166,11 +168,12 @@ BOE-2023]. The ABA says the lawyer stays fully responsible [ABA-2024].
 | Regression suite pass rate | near 100% | [ANTHROPIC-2026] |
 | Capability suite | starts low | [ANTHROPIC-2026] |
 | Acceptance pass rate | a product decision by failure tolerance; 100% on everything suggests the evals are too easy | [HUSAIN-2024; HUSAIN-2026] |
-| Launch accuracy bar | no universal number; GDS judged 80% expert-rated accuracy insufficient for a public pilot of an information service | [UKGDS-2025] |
+| Launch accuracy bar | no universal number; after an early experiment, GDS judged that 80% answer accuracy, assessed by content designers, needed improving before deployment to users on GOV.UK | [UKGDS-2025] |
 | Irreversible or client-facing failure classes | a stated tolerance (including zero) and a mitigating control before launch | *(advisor default)* |
 
-Set the launch bar from expert-rated quality, not from user satisfaction: nearly 70% of surveyed GOV.UK Chat
-testers found responses useful, while expert-rated accuracy was 80% and judged not enough [UKGDS-2025].
+Set the launch bar from expert-rated quality, not from user satisfaction: nearly 70% of GOV.UK Chat testers
+surveyed after use found responses useful, while expert-rated accuracy was 80% and judged not yet enough
+[UKGDS-2025].
 
 **Seen in the field.** `professional-services-quality-review-05` (grade B): firms benchmark tools against expert
 answers to set review depth by task. `professional-services-quality-review-07` (grade B): standing evaluation
@@ -203,8 +206,8 @@ an audit tool (no parallel-run results published).
 5. **Validate the judge against human labels** with precision and recall [HUSAIN-2024; ANTHROPIC-2026].
 6. **Report pass-all with drill-down** [HUSAIN-2026; APPLIEDLLMS-2024].
 7. **Run several trials and report the all-trials rate** where users expect it to work every time; on a 2024
-   retail benchmark the best agent passed under 50% of tasks, and under 25% on all of eight trials
-   [ANTHROPIC-2026; SIERRA-2024].
+   customer-service agent benchmark the best agent (2024 models) succeeded on under 50% of tasks, and in the
+   retail domain under 25% succeeded on all of eight trials [ANTHROPIC-2026; SIERRA-2024].
 8. **Test the verification effort itself:** check the tool on a small, manually reviewed subset, then set how
    much of the rest to review; ABA Opinion 512 gives the example of testing a contract-summary tool on a smaller
    set first [ABA-2024].
@@ -259,13 +262,15 @@ the decisions log. Results from the prototype go into the plan's §10 results lo
   https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
 - `APPLIEDLLMS-2024` — Yan et al., *What We've Learned From A Year of Building with LLMs*, 2024-06-08. https://applied-llms.org/
 - `BERKELEY-2026` — Pan, Arabzadeh et al., *Measuring Agents in Production*, 2026-06-04. https://arxiv.org/pdf/2512.04123
-- `BOE-2023` — Bank of England PRA, *SS1/23 Model risk management principles for banks*, 2023-05-17.
+- `BOE-2023` — Bank of England PRA, *SS1/23 Model risk management principles for banks*, 2023-05-17 (updated
+  version published 2026-04-23, which keeps the model inventory and independent validation principles).
   https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*,
   2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- `FRC-2025` — UK Financial Reporting Council, *FRC publishes landmark guidance … on the uses of AI*, news
-  release, 2025-06-26. https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/
-- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, undated. https://developers.google.com/machine-learning/guides/rules-of-ml
+- `FRC-2025` — UK Financial Reporting Council, *AI in audit: illustrative example and documentation guidance*,
+  regulator guidance, 2025-06-26. https://www.frc.org.uk/documents/8384/AI_in_Audit.pdf (news release:
+  https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/)
+- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `GUARDIAN-2025` — The Guardian Australia, *Deloitte to pay money back to Albanese government after using AI in
   $440,000 report*, 2025-10-06. https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - `HUSAIN-2024` — Hamel Husain, *Your AI Product Needs Evals*, 2024-03-29. https://hamel.dev/blog/posts/evals/
@@ -285,4 +290,4 @@ the decisions log. Results from the prototype go into the plan's §10 results lo
 - `UKGDS-2025` — UK Government, *Artificial Intelligence Playbook for the UK Government*, 2025-02-10.
   https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
 - `VALS-2025` — Vals AI with Legaltech Hub, *Vals Legal AI Report*, updated 2025-02-27. https://www.vals.ai/vlair
-- `YAN-2023` — Eugene Yan, *Patterns for Building LLM-based Systems and Products*, 2023. https://eugeneyan.com/writing/llm-patterns/
+- `YAN-2023` — Eugene Yan, *Patterns for Building LLM-based Systems and Products*, 2023-07. https://eugeneyan.com/writing/llm-patterns/

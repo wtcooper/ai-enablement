@@ -1,0 +1,747 @@
+# Use cases: advisory / transactions (quality of earnings, financial due diligence, deal support, integration)
+# Sources checked 2026-10-20 (wave 5). Merged from the transactions deep dive, the advisory landscape scan and the
+# cross-cutting files on independence and pricing and on the state of AI and disruption.
+# Evidence is thin: no entry is graded A. No error rate, override rate, parallel run, inspection finding or independent
+# accuracy test of AI-assisted quality of earnings (QoE) or financial due diligence (FDD) was found. Speed figures are
+# vendor-published or self-reported, with no method. Vendor pages with no date carry the access date (2026-10-20).
+# Firm operations (pricing the firm's own work, staffing, ownership) are in professional-services; attest work is in
+# assurance; transaction tax work is in tax. Cross-references are by id in notes.
+
+- id: advisory-transactions-01
+  title: "Financial due diligence workbench: data ingestion, trial balance mapping and first-draft databook"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [transaction-processing, data-reporting]
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Financial due diligence starts with collecting, checking and adjusting data before anyone can interpret it, and a
+    large share of junior time goes there (Opio CEO, as reported by Tech.eu). Forvis Mazars US adds that teams can
+    still be held up by target companies that struggle to pull requested data.
+  solution: >-
+    An AI platform built for transaction services teams reads large volumes of unstructured deal information,
+    structures the data and drafts first-pass outputs. Forvis Mazars US describes AI helping with trial balance
+    mapping, first versions of schedules, trend and anomaly spotting, missing-data checks, reconciliations and tailored
+    questions for management. Forvis Mazars Group says its rollout of Opio's platform uses embedded controls, full
+    traceability and mandatory human review.
+  outcomes:
+    - {lever: speed, description: "Opio reports average time saved per financial due diligence (FDD) engagement", figure: "27%", measures: "Opio product page: 'Average time saved per FDD'. Tech.eu words it as saving transaction services professionals 27 per cent of their time. Method, sample and baseline not published.", provenance: vendor-published, source_ref: OPIO-SITE-2026}
+    - {lever: quality, description: "Forvis Mazars Group says that after testing, the solution improved the quality and depth of its due diligence and let teams analyse a broader range of information", figure: "none published", measures: "Qualitative statement by the Group's Financial Advisory Innovation leader in the rollout release; no metric given", provenance: self-reported, source_ref: FORVISGROUP-OPIO-2026}
+  prerequisites:
+    - "A pilot with transaction services professionals and the group AI team; the release describes a nine-month pilot before rollout (FORVISGROUP-OPIO-2026)"
+    - "A deployment that fits confidentiality rules; the release says the platform operates exclusively on premise and does not train on data (FORVISGROUP-OPIO-2026)"
+    - "Engagement data in structured form (trial balance, databook) for the platform to work from"
+  risks_and_guardrails:
+    - "The release says outputs are fully auditable and every figure traceable to its source document (FORVISGROUP-OPIO-2026)"
+    - "Forvis Mazars US warns that firms relying too heavily on automation can produce thin, unsupported conclusions (FORVIS-QOE-2026)"
+    - "Opio's compliance and certification claims (SOC 2 Type II, ISO 27001, GDPR, AI Act) are vendor statements (OPIO-SITE-2026)"
+  human_checkpoints:
+    - "Mandatory human review of platform outputs (FORVISGROUP-OPIO-2026)"
+    - "Professionals own the judgment calls between dataroom and report (OPIO-SITE-2026)"
+  role_evolution: >-
+    Opio's CEO says automating data collection and checking lets junior professionals spend time earlier on analysis,
+    judgement and client relationships (TECHEU-OPIO-2026). Forvis Mazars US warns that depleting junior ranks will
+    create future holes in executive-level insight (FORVIS-QOE-2026).
+  evidence_grade: B
+  sources:
+    - {ref: FORVISGROUP-OPIO-2026, title: "Forvis Mazars scales AI-powered transaction advisory solution", publisher: "Forvis Mazars Group", type: firm, url: "https://www.forvismazars.com/group/en/who-we-are/news-publications/latest-news/scaling-ai-powered-transaction-advisory-solutions", date: "2026-09-25", access: full, locator: "paragraphs 1-5 (rollout, nine-month pilot, mandatory human review); quotes from G. Volpi and T. Fulchiron; 'Responsible AI' paragraph"}
+    - {ref: OPIO-SITE-2026, title: "Frontier AI for transaction services (product page)", publisher: "Opio", type: vendor, url: "https://www.opio.fi", date: "2026-10-20", access: full, locator: "statistics block (27% average time saved per FDD; 15 countries; 1M+ documents); security section. Page is undated; date is access date"}
+    - {ref: TECHEU-OPIO-2026, title: "Opio raises EUR 4M to automate the grunt work of financial due diligence", publisher: "Tech.eu", type: press, url: "https://tech.eu/2026/09/16/opio-raises-eur4m-to-automate-the-grunt-work-of-financial-due-diligence/", date: "2026-09-16", access: full, locator: "paragraphs 3-6 (27% claim, Forvis Mazars Group and BDO named as customers, 15 countries)"}
+    - {ref: FORVIS-QOE-2026, title: "Quality of Earnings & Due Diligence in an AI World", publisher: "Forvis Mazars US (Transaction Advisory)", type: firm, url: "https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world", date: "2026-09-08", access: full, locator: "sections '1. Speed' and '3. Talent'"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: Forvis Mazars Group is an international network (not Big Four); the BDO customer claim comes only from
+    Tech.eu. Opio is an AI-native provider founded in Paris in 2025 (Tech.eu). The group release does not say whether
+    the US member firm uses the platform, and gives no timing or error figure. Proof of cash is the separate entry
+    advisory-transactions-03. Independence: buy-side diligence on a third-party target is the usual setting; which
+    diligence services are restricted for the firm's own audit clients was not verified (see advisory-transactions-11).
+    Junior-role redesign is covered in professional-services-talent-learning-07.
+
+- id: advisory-transactions-02
+  title: "Transaction-level anomaly scoring and flux analysis to prepare management meetings and EBITDA adjustment candidates"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [data-reporting, review-assurance]
+  pattern: full-population-testing
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Preparing for the first management meeting has been a bottleneck: teams eyeball trial balances and comb thousands
+    of rows to find movements worth asking about (Miller Cooper principal and vendor release).
+  solution: >-
+    A module scores each transaction for anomaly risk (Audit Sight's FARS model), flags material balances and
+    movements against materiality and standard-deviation thresholds the user sets, tracks candidate EBITDA
+    adjustments to raise with management, and calculates profitability and efficiency ratios to focus the interview
+    questions. Flux analysis means comparing balances across periods to find unusual movements.
+  outcomes:
+    - {lever: speed, description: "Audit Sight says the module eliminates prep time for the management-meeting step", figure: "80%", measures: "Vendor claim: share of QoE professionals' prep time eliminated for the initial management meeting. Basis not published.", provenance: vendor-published, source_ref: CPAPA-AUDITSIGHT-2025}
+    - {lever: speed, description: "A principal at Miller Cooper Ltd., a named Audit Sight customer, says the tool shaved days off the deal cycle", figure: "none published (days, unquantified)", measures: "Customer's recollection quoted in the vendor release; no tracked metric", provenance: self-reported, source_ref: CPAPA-AUDITSIGHT-2025}
+  prerequisites:
+    - "Trial balance or ledger data for the deal period"
+    - "Team-set materiality and standard-deviation thresholds (CPAPA-AUDITSIGHT-2025)"
+  risks_and_guardrails:
+    - "Flagged movements are candidates to discuss with management, not conclusions (CPAPA-AUDITSIGHT-2025)"
+    - "A practitioner says first-pass automation weakens once normalization and judgment matter (SEARCHFUNDER-SOURCETABLE-2025); the practitioner sells a competing tool"
+  human_checkpoints:
+    - "QoE team decides which flagged movements become adjustments and what to ask management (CPAPA-AUDITSIGHT-2025)"
+  role_evolution: >-
+    The vendor says the tool lets transaction advisory professionals ask better questions and spend less time on
+    manual data review (CPAPA-AUDITSIGHT-2025).
+  evidence_grade: B
+  sources:
+    - {ref: CPAPA-AUDITSIGHT-2025, title: "Audit Sight Launches Management Meeting Module for Transaction Advisory Teams to Accelerate Deal Cycles and Surface Key Insights", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2025/07/10/audit-sight-launches-management-meeting-module-for-transaction-advisory-teams-to-accelerate-deal-cycles-and-surface-key-insights/164674/", date: "2025-07-10", access: full, locator: "intro paragraph; 'Designed for Transaction Advisory Professionals'; FARS paragraph; Todd Wrenn (Miller Cooper) quote under 'Built to Accelerate Deal Execution'"}
+    - {ref: SEARCHFUNDER-SOURCETABLE-2025, title: "Has anyone used Sourcetable AI for QoE Analysis?", publisher: "Searchfunder (community thread)", type: community, url: "https://searchfunder.com/post/has-anyone-used-sourcetable-ai-for-qoe-analysis", date: "2025-10", access: full, locator: "reply from a professional; date approximate from relative timestamps"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Vendor: Audit Sight. Miller Cooper Ltd. is a named accounting-firm customer; its size and ranking were not verified.
+    The release is 15 months old. Pricing and other customers not found. Adjustment sign-off with source evidence is
+    advisory-transactions-04.
+
+- id: advisory-transactions-03
+  title: "Proof of cash and bank-to-ledger reconciliation by AI agents for lower-middle-market QoE"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [transaction-processing, review-assurance]
+  pattern: reconcile-exceptions
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    In lower-middle-market deals the seller's books are often thin: scanned bank statements, several accounts, a
+    system migration or a CPA who posts accruals once a year. Reconciling several years of bank activity to the ledger
+    by hand takes weeks (QoEAgent).
+  solution: >-
+    A proof of cash ties the revenue and expenses in the books to the cash that moved through the bank. AI agents read
+    bank statements, including scanned PDFs, tie revenue and expenses to the bank, map the trial balance to
+    GAAP-format financials, and pass flagged items to CPAs and M&A advisors who review them and deliver a sourced
+    databook. QoEAgent sells this as a staged continuum: a proof of cash within 24 hours, a 48-hour first look, and a
+    full QoE.
+  outcomes:
+    - {lever: speed, description: "QoEAgent says a proof of cash is reconciled within a stated tolerance within a stated time of receiving data", figure: "within 1% in 24 hours", measures: "Vendor claim: revenue and expenses tied to bank statements to within 1%, within 24 hours of receiving the data. Not independently measured.", provenance: vendor-published, source_ref: QOEAGENT-HOME-2026}
+    - {lever: risk, description: "In one described engagement, the proof of cash rebuilt monthly cash-basis statements and found year-end 2024 revenue and cost-of-sales deferrals documented by the seller's CPA but never recorded in the general ledger; the verified numbers did not support the price and the buyer walked away before closing", figure: "46 months rebuilt (January 2022 to October 2025); 1 engagement", measures: "A single QoEAgent engagement published with the client's written permission; target and seller unnamed", provenance: vendor-published, source_ref: QOEAGENT-CASE-2026}
+  prerequisites:
+    - "Bank statements for every account (scanned PDFs accepted), the general ledger and trial balance; prior-year tax returns for a lender QoE (QOEAGENT-HOME-2026)"
+    - "Seller cooperation on a defined list of items, held through weekly diligence calls (QOEAGENT-CASE-2026)"
+  risks_and_guardrails:
+    - "A QoEAgent post tells buyers to ask any AI diligence tool vendor for its exception rate, its training data and what the human review step looks like (SEARCHFUNDER-QOEAGENT-2026)"
+    - "The case study is one engagement written by the vendor (QOEAGENT-CASE-2026)"
+  human_checkpoints:
+    - "Credentialed professionals own every conclusion; software does extraction and matching (QOEAGENT-CASE-2026)"
+    - "CPAs and M&A advisors review every flagged item (QOEAGENT-HOME-2026)"
+  role_evolution: >-
+    QoEAgent's own account is that the platform does the heavy lifting and credentialed people do the judgment
+    (QOEAGENT-HOME-2026). Its founding team combines M&A advisory, valuation and an AI researcher (QOEAGENT-HOME-2026).
+  evidence_grade: B
+  sources:
+    - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-20", access: full, locator: "hero section; 'How AI quality of earnings works' steps 01-04; FAQ. Page is undated; date is access date"}
+    - {ref: QOEAGENT-CASE-2026, title: "Proof of Cash Case Study: An SBA Acquisition the Numbers Did Not Support", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/proof-of-cash-case-study-sba-acquisition/", date: "2026-10-15", access: full, locator: "opening summary; 'The problem'; 'What we did'; 'What we found'; 'The outcome'"}
+    - {ref: SEARCHFUNDER-QOEAGENT-2026, title: "QoEAgent AI: AI Proof of Cash and Quality of Earnings for LMM Diligence", publisher: "Searchfunder (vendor-authored post)", type: community, url: "https://searchfunder.com/post/qoeagent-ai-ai-proof-of-cash-quality-of-earnings-for-lmm-diligence", date: "2026-08", access: full, locator: "post body, three questions to ask before trusting any AI diligence tool; date approximate from '2mos ago'"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: AI-native provider (Denver, founded 2023 per its site). Ladder set to automate because matching runs
+    with no person on the normal path and flagged items go to CPAs; the vendor still says professionals own every
+    conclusion. Change scope is process because the staged products (cash review, first look, full QoE) reorder the
+    diligence flow. Grade B rests on the provider's own named service and one client engagement, with no tracked metric;
+    the client quote and outcome are published by the vendor. The engagement was completed before the SBA technical
+    update effective 2026-10-01 (per the case page). No independent review of QoEAgent was found.
+
+- id: advisory-transactions-04
+  title: "AI-suggested EBITDA adjustment candidates with source-linked evidence for reviewer sign-off"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [expert-judgment, data-reporting]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    The adjustments from reported to normalized EBITDA (add-backs and other changes that show recurring earnings)
+    decide the price, and the work of finding, supporting and tracing them is slow and hard to audit in spreadsheets
+    (Shepi). Forvis Mazars US notes that a single identified adjustment can be worth many times the fee.
+  solution: >-
+    A platform surfaces adjustment candidates, links each to supporting records where source evidence is available,
+    shows gaps, and lets a person approve or reject each one before a PDF and Excel package is produced. Shepi's demo
+    shows a normalized EBITDA bridge with 'adjustments reviewed 12 / 14' and source coverage percentages.
+  outcomes:
+    - {lever: quality, description: "Vendor says every conclusion is linked to source evidence and reviewers can follow a number back to its origin", figure: "none published", measures: "Product description and a demo mock-up on the vendor page; the on-page percentages (source coverage 96%, GL reconciliation 93%) are illustrative demo values, not results", provenance: vendor-published, source_ref: SHEPI-HOME-2026}
+  prerequisites:
+    - "Connected accounting data or uploaded trial balance, ledger, bank statements and supporting files (SHEPI-HOME-2026)"
+  risks_and_guardrails:
+    - "Shepi states the platform surfaces candidates and people decide which adjustments belong; neither path is an audit, review, attestation, valuation or fairness opinion (SHEPI-HOME-2026)"
+    - "A practitioner buyer's guide says extraction is accurate on clean top-line numbers and degrades on add-backs, adjustments and footnotes, so a qualified analyst still owns the number (WORKWISE-QOE-2026). This is an opinion, not a measurement."
+    - "Intralinks reports that 80% of surveyed dealmakers had AI-related security or accuracy incidents or near-misses in the past 12 months, with hallucinated outputs leading to inaccurate diligence among the clusters (INTRALINKS-AIDEAL-2026). The release does not state the denominator for the cluster percentages."
+  human_checkpoints:
+    - "User reviews and approves each adjustment (SHEPI-HOME-2026, Self-Service tier)"
+    - "Licensed CPA reviews adjustments before delivery in the Done-For-You tier (SHEPI-HOME-2026)"
+  role_evolution: >-
+    Shepi pitches the tool to searchers, brokers, accountants and lenders; for accountants it is positioned as extra
+    capacity with traceable workpapers (SHEPI-HOME-2026).
+  evidence_grade: C
+  sources:
+    - {ref: SHEPI-HOME-2026, title: "Shepi: AI Quality of Earnings Software for SMB M&A", publisher: "Shepi", type: vendor, url: "https://www.shepi.ai", date: "2026-10-20", access: full, locator: "hero section; 'Built around the deal'; pricing tiers; 'Why Shepi'. Page is undated; date is access date"}
+    - {ref: WORKWISE-QOE-2026, title: "The Best AI Tools for Quality of Earnings and Financial Due Diligence in 2026", publisher: "WorkWise Solutions (AI consulting firm)", type: vendor, url: "https://workwisesolutions.org/guides/best-ai-qoe-financial-due-diligence-tools.html", date: "2026-07-20", access: full, locator: "TLDR; section 1 'What a Quality of Earnings Analysis Is, and Where AI Fits'"}
+    - {ref: INTRALINKS-AIDEAL-2026, title: "AI Use Permeates Dealmaking Despite Operational Concerns: SS&C Intralinks Report", publisher: "SS&C Intralinks (via Business Wire / Nasdaq)", type: survey, url: "https://www.nasdaq.com/press-release/ai-use-permeates-dealmaking-despite-operational-concerns-ssc-intralinks-report-2026", date: "2026-04-08", access: full, locator: "key findings list, incident bullet"}
+    - {ref: FORVIS-QOE-2026, title: "Quality of Earnings & Due Diligence in an AI World", publisher: "Forvis Mazars US (Transaction Advisory)", type: firm, url: "https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world", date: "2026-09-08", access: full, locator: "section '3. Talent' and closing paragraphs ('Need for Diligence'): value of an identified adjustment"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: vendor (AI-native). Grade C: product claims only; no named customer, no measured outcome. A Capterra
+    listing seen in search showed $2,000 per project against $1,000 on the vendor page now, so pricing has moved or
+    sources conflict (search-only, not used as an outcome). No user ratings found. The WorkWise guide is a
+    consultancy opinion piece that says it takes no referral fees. Practitioners name this step as where AI is least
+    reliable; the autonomous version is the idea in advisory-transactions-16.
+
+- id: advisory-transactions-05
+  title: "AI-native QoE service tiers (cash review, first look, self-service with CPA review) priced below a traditional engagement"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [document-production, transaction-processing]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: model
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Small and lower-middle-market buyers (searchers, independent sponsors) must choose between an expensive
+    traditional engagement and fragile spreadsheet work (Shepi). One searcher reply puts QoE costs anywhere from $500
+    to $25,000 or more depending on size, industry and scope (Searchfunder).
+  solution: >-
+    AI-native providers sell a tiered, scoped product: QoEAgent's Flash Cash Review, Proof-of-Cash Plus in 48 hours,
+    QoE Essentials and a lender QoE at fixed fees quoted up front; Shepi's Self-Service at $1,000 per project or
+    Done-For-You with licensed CPA review. A Columbia team posted that its custom model cuts production cost
+    'significantly' even with an accountant verifying.
+  outcomes:
+    - {lever: cost, description: "Shepi lists a flat price for self-service QoE software", figure: "$1,000 per project (Self-Service)", measures: "List price on the vendor page read 2026-10-20; excludes the Done-For-You tier. Not a measured saving.", provenance: vendor-published, source_ref: SHEPI-HOME-2026}
+    - {lever: cost, description: "A Columbia team says production cost is significantly lower with an accountant in the loop", figure: "none published", measures: "Claim in a community post seeking feedback; no cost figure given", provenance: self-reported, source_ref: SEARCHFUNDER-COLUMBIA-2026}
+  prerequisites:
+    - "Buyer or lender willing to accept a software-assisted, non-attest analysis"
+  risks_and_guardrails:
+    - "Shepi says lenders may require independent CPA involvement and that neither path is an audit, review, attestation or valuation (SHEPI-HOME-2026)"
+    - "A lender-side searcher reply says banks favour providers that help buyer and lender get comfortable with a reconciliation or normalization, and criticised report-only providers (SEARCHFUNDER-COLUMBIA-2026)"
+    - "QoEAgent's reading of the SBA rule is that software cannot be the provider and an independent financial professional must stand behind the conclusions (QOEAGENT-WHO-2026). This is a vendor interpretation."
+    - "Forvis Mazars US says AI is raising the prevalence of lower-quality, lower-cost QoE products (FORVIS-QOE-2026)"
+  human_checkpoints:
+    - "Licensed CPA reviews adjustments in Shepi's Done-For-You tier (SHEPI-HOME-2026); credentialed professionals own conclusions at QoEAgent (QOEAGENT-HOME-2026)"
+  role_evolution: "Not stated by the sources beyond the human-review models above."
+  evidence_grade: C
+  sources:
+    - {ref: SHEPI-HOME-2026, title: "Shepi: AI Quality of Earnings Software for SMB M&A", publisher: "Shepi", type: vendor, url: "https://www.shepi.ai", date: "2026-10-20", access: full, locator: "'Choose the right level of support' (Self-Service and Done-For-You); scope disclaimer"}
+    - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-20", access: full, locator: "'Four products, one continuum' section"}
+    - {ref: SEARCHFUNDER-COLUMBIA-2026, title: "Columbia Team working on Cheaper Quality of Earnings Reports", publisher: "Searchfunder (community thread)", type: community, url: "https://www.searchfunder.com/post/columbia-team-working-on-cheaper-quality-of-earnings-reports", date: "2026-06", access: full, locator: "original post and the two visible replies; date approximate from '4mos ago'"}
+    - {ref: QOEAGENT-WHO-2026, title: "Who Can Prepare an SBA Quality of Earnings Report", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/who-can-prepare-sba-quality-of-earnings/", date: "2026-09-05", access: full, locator: "opening summary and arrangements table"}
+    - {ref: FORVIS-QOE-2026, title: "Quality of Earnings & Due Diligence in an AI World", publisher: "Forvis Mazars US (Transaction Advisory)", type: firm, url: "https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world", date: "2026-09-08", access: full, locator: "section '3. Talent' and closing paragraphs"}
+    - {ref: QOE-VENDORS-2026, title: "Quality of Earnings Software Launched by Finsider.ai (and other QoE automation vendor claims, as seen in search)", publisher: "Barchart (press release distribution)", type: vendor, url: "https://www.barchart.com/story/news/35038707/quality-of-earnings-software-launched-by-finsider-ai-ai-powered-qoe-reports-automation-platform-targets-60-faster-due-diligence-for-ma-deals", date: "2026", access: search-only, locator: "search-result summaries only (100% transaction coverage, proof-of-cash reconciliation, 60-80% faster diligence)"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: AI-native providers selling direct to buyers and lenders. The landscape's QoE-vendor lead
+    (QOE-VENDORS-2026: Finsider, QoEAgent, Shepi; claims of 60-80% faster diligence) was merged here; it is
+    search-only vendor marketing and is not used as an outcome. The 12 comments on the Columbia thread and 8 on the
+    Sourcetable thread are mostly behind login; only the visible replies were read. Prices here are vendor list
+    prices, not a firm's fee data; how a firm prices its own diligence work is in professional-services-scoping-pricing-16
+    and professional-services-scoping-pricing-17.
+
+- id: advisory-transactions-06
+  title: "Sub-contracted or white-labelled AI QoE capacity for transaction advisory and CPA firms"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [transaction-processing, document-production]
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: model
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Transaction advisory and CPA firms need capacity for proof-of-cash and trial-balance work during busy periods
+    (QoEAgent; Shepi).
+  solution: >-
+    QoEAgent says it white-labels or supports parts of engagements for transaction advisory and CPA firms, from proof
+    of cash and trial balance mapping through the databook. Shepi pitches accountants and CPAs on extra capacity
+    through structured workpapers and repeatable analysis.
+  outcomes:
+    - {lever: capacity, description: "none published", figure: "none published", measures: "Positioning statements on vendor pages; no named firm customer or result found", provenance: vendor-published, source_ref: QOEAGENT-HOME-2026}
+  prerequisites:
+    - "Firm engagement terms that allow a sub-contractor or software to handle client financial data"
+  risks_and_guardrails:
+    - "Seller NDAs may restrict who and what may handle diligence material; an AI provider may not count as a permitted representative (KJK-NDA-2026)"
+  human_checkpoints:
+    - "Not described beyond the vendors' own review steps (QOEAGENT-HOME-2026; SHEPI-HOME-2026)"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: C
+  sources:
+    - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-20", access: full, locator: "'Who we serve' (TAS and CPA firms); FAQ 'Do you work with transaction advisory and CPA firms?'"}
+    - {ref: SHEPI-HOME-2026, title: "Shepi: AI Quality of Earnings Software for SMB M&A", publisher: "Shepi", type: vendor, url: "https://www.shepi.ai", date: "2026-10-20", access: full, locator: "'Built around the deal' (Accountants and CPAs)"}
+    - {ref: KJK-NDA-2026, title: "AI and M&A NDAs: Managing Artificial Intelligence Risks in Confidentiality Agreements", publisher: "Kohrman Jackson & Krantz", type: firm, url: "https://kjk.com/2026/03/12/ai-and-ma-ndas-managing-artificial-intelligence-risks-in-confidentiality-agreements/", date: "2026-03-12", access: full, locator: "'Why AI Use in M&A Due Diligence Raises NDA Concerns'"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: AI-native providers selling to accounting firms. No accounting firm was found publicly naming either
+    vendor as a sub-contractor. Marked announced because only vendor positioning was found. Kept as a distinct
+    sourcing model (who does the work) next to the direct-to-buyer model in advisory-transactions-05. Firm staffing
+    decisions belong to professional-services-staffing-resourcing.
+
+- id: advisory-transactions-07
+  title: "AI-assisted lender QoE for SBA 7(a) change-of-ownership loans"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    SBA SOP 50 10 8.1, effective 2026-10-01, makes an independent QoE with a cash proof a condition on larger 7(a)
+    acquisitions, and the lender must use the QoE earnings in the debt service calculation (QoEAgent's reading of the
+    SOP). Lenders and buyers need many such reports quickly.
+  solution: >-
+    QoEAgent offers an SBA Lender QoE built to the SOP: a cash proof for the trailing twelve months and two prior
+    fiscal years, GAAP-format financials, adjusted EBITDA schedules, a book-to-tax reconciliation, and working capital
+    and customer analysis, delivered through a lender portal.
+  outcomes:
+    - {lever: speed, description: "none published", figure: "none published", measures: "Vendor says the rule adds weeks to credit processes; no turnaround data for the lender product", provenance: vendor-published, source_ref: QOEAGENT-SBAREQ-2026}
+  prerequisites:
+    - "Independent, experienced financial professional engaged for the benefit of the lender, per the SOP clause as quoted by QoEAgent (QOEAGENT-SBAREQ-2026)"
+    - "Bank statements, ledger and trial balance, and prior-year tax returns (QOEAGENT-HOME-2026)"
+  risks_and_guardrails:
+    - "Per QoEAgent's reading, the seller-prepared report is barred outright. A buyer-commissioned report is allowed only if one of the lender's own vendors reviews it and the review findings are kept in the loan file (QOEAGENT-SBAUPDATE-2026)"
+    - "The SBA page confirms version 8.1 with technical updates effective 2026-10-01; the SOP's QoE clause text was read only through vendor pages because the SBA document download returned an error (SBA-SOP5010-2026)"
+    - "The $3 million threshold and the Owner Buyout and ESOP exemptions are as stated by QoEAgent; not verified against the SBA text (QOEAGENT-SBAUPDATE-2026)"
+  human_checkpoints:
+    - "A named professional stands behind the conclusions; lender vendor review where a buyer-commissioned report is used (QOEAGENT-SBAUPDATE-2026)"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: C
+  sources:
+    - {ref: SBA-SOP5010-2026, title: "Lender and Development Company Loan Programs (SOP 50 10)", publisher: "U.S. Small Business Administration", type: regulator, url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs", date: "2026-10-01", access: full, locator: "document header: 'Effective: October 1, 2026'; 'Version 8.1 with Technical Updates'. Date is the effective date; QoE clause not on this page"}
+    - {ref: QOEAGENT-SBAUPDATE-2026, title: "The September 25 Update: A Buyer's QoE Can Now Reach the Lender", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/sba-qoe-september-25-update/", date: "2026-10-01", access: full, locator: "'What the clause said, and what it says now'; 'The vendor review is the condition'; 'What did not change'"}
+    - {ref: QOEAGENT-SBAREQ-2026, title: "SBA Quality of Earnings: What the 2026 Rule Requires", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/sba-quality-of-earnings-requirement/", date: "2026-09-01", access: full, locator: "opening 'Short answer'; 'The earnings number is no longer the seller's number'"}
+    - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-20", access: full, locator: "'SBA Lender QoE' section"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: AI-native provider. This is a regulatory demand driver for QoE in the lower middle market, with AI as
+    the delivery method claimed by one vendor. Independence: the SBA clause is about the lender's reliance on the
+    report, not auditor independence. The SBA valuation clause (no valuation prepared for the applicant or seller) is
+    routed to the valuation module.
+
+- id: advisory-transactions-08
+  title: "AI-assisted sell-side QoE and pre-sale diligence readiness"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [document-production, review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Sellers who wait for the buyer's diligence meet findings late, in the middle of a process, which can trigger price
+    adjustments (Pease Bell).
+  solution: >-
+    Run AI-driven pre-sale diligence and a sell-side QoE with proof of cash before going to market, so issues are
+    found and addressed early. Pease Bell describes this for sellers; QoEAgent lists sell-side advisors as a customer
+    group.
+  outcomes:
+    - {lever: risk, description: "Pease Bell says pre-sale AI diligence reduces the likelihood of purchase price adjustments and speeds the path to closing", figure: "none published", measures: "General claim in a firm article; no data or engagement cited", provenance: self-reported, source_ref: PEASEBELL-2026}
+  prerequisites:
+    - "Seller willingness to open books to a pre-sale review"
+  risks_and_guardrails:
+    - "Per QoEAgent's summary of the SBA rule, a seller-prepared report cannot be used by the lender (QOEAGENT-SBAUPDATE-2026)"
+  human_checkpoints:
+    - "Not described"
+  role_evolution: >-
+    Pease Bell says many entry-level transaction advisory tasks (aggregation, reconciliation, schedule preparation,
+    initial analysis) can be handled by AI with minimal oversight and that early-career staff must interpret outputs
+    with professional skepticism (PEASEBELL-2026). It gives no staffing data.
+  evidence_grade: C
+  sources:
+    - {ref: PEASEBELL-2026, title: "AI in Transaction Advisory", publisher: "Pease Bell CPAs", type: firm, url: "https://www.peasebell.com/insights/artificial-intelligence-in-transaction-advisory/", date: "2026-02-27", access: full, locator: "sections 'How AI Accelerates Due Diligence' (sell-side paragraph) and 'What AI Means for Transaction Advisory Staffing'. Read through the r.jina.ai mirror"}
+    - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-20", access: full, locator: "'Who we serve' (sell-side bankers and advisors)"}
+    - {ref: QOEAGENT-SBAUPDATE-2026, title: "The September 25 Update: A Buyer's QoE Can Now Reach the Lender", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/sba-qoe-september-25-update/", date: "2026-10-01", access: full, locator: "'What the clause said, and what it says now'"}
+    - {ref: CTACQ-QOE-2026, title: "2026 QoE Provider Comparison: 18 Firms Ranked by Price & Sector", publisher: "CT Acquisitions (M&A advisory marketing page)", type: vendor, url: "https://www.ctacquisitions.com/guides/qoe-provider-comparison-2026/", date: "2026-05-16", access: full, locator: "Quick Answer paragraph (sell-side QoE cost 40-60% of buy-side); opening only was read"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: mid-market CPA firm (Pease Bell; size not verified) and AI-native provider. The article says firms are
+    'already seeing measurable gains' but gives no figures. A broker's marketing page (CTACQ-QOE-2026) says sell-side
+    QoE typically costs 40-60% of a buy-side QoE; that is a general price observation, not AI-specific, and is not used
+    as an outcome. Vendor due diligence is the UK term for a seller-commissioned report; no AI-specific source on it
+    was found.
+
+- id: advisory-transactions-09
+  title: "Data-room document intelligence with source citations for diligence teams"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [research-synthesis, review-assurance]
+  pattern: grounded-knowledge-assistant
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    Data rooms (the secure document repositories a seller opens to bidders) are growing and timelines are compressing,
+    making it harder to bring the same judgment to each issue (PwC-ToltIQ release). Contract review is often descoped
+    from financial diligence because of time (PwC deals leader, ICAEW).
+  solution: >-
+    Tools ingest data rooms and disparate documents, surface key points with source citations, and let teams question
+    the corpus. PwC's Deals practice has used ToltIQ on live transactions; PwC UK describes using Harvey to analyse
+    deal-room material with citations. PwC's deals leader says contracts that used to be descoped can now be
+    reviewed, which creates follow-up on anomalies.
+  outcomes:
+    - {lever: capacity, description: "PwC and ToltIQ report how widely the platform has been used inside PwC Deals", figure: "4,000+ PwC Deals practitioners; 5,000+ deals; 2 million+ documents", measures: "Usage counts stated in the joint release: practitioners who have used ToltIQ, deals it has been used on at PwC, and documents processed. Adoption counts, not performance.", provenance: self-reported, source_ref: PWC-TOLTIQ-2026}
+    - {lever: capacity, description: "PwC UK deals leader on AI platform coverage in the UK deals business", figure: "2,500 practitioners, each with at least one platform", measures: "Stated by the PwC UK deals leader in a December 2024 magazine interview; adoption count, not performance", provenance: self-reported, source_ref: ICAEW-BIGSIX-2024}
+    - {lever: quality, description: "Adjacent measurement: a law firm's tests of LLM review of commercial contracts in M&A legal due diligence", figure: "74% to 95% accuracy on average", measures: "Addleshaw Goddard's accuracy of LLM review of commercial contracts in its own legal due diligence test, before and after optimised retrieval and prompting. Legal DD, not financial DD.", provenance: self-reported, source_ref: ARTLAW-AG-2024}
+    - {lever: speed, description: "Adjacent estimate: Deloitte UK's e-discovery lead on legal due diligence document review", figure: "25% saving versus traditional AI; 75% versus manual review", measures: "Efficiency saving as stated by Peter Robinson (Deloitte UK) for GenAI in legal due diligence; method not published. Legal DD, a recollection in a magazine interview.", provenance: self-reported, source_ref: ICAEW-BIGSIX-2024}
+  prerequisites:
+    - "Enterprise-grade or private-environment deployment that satisfies seller NDAs (KJK-NDA-2026)"
+    - "Citation back to source documents so reviewers can verify (BLOCKCHAINNEWS-PWCUK-2026)"
+  risks_and_guardrails:
+    - "Uploading confidential data to an AI tool may breach NDA terms on retention, permitted representatives and use; some sellers now bar public AI or require prior written consent (KJK-NDA-2026)"
+    - "The AICPA Code's confidential client information rule means asking whether client consent is needed before client data goes into an AI tool (JOFA-ETHICSAI-2026)"
+    - "Intralinks reports hallucinated outputs leading to inaccurate diligence among the incident clusters it observed (INTRALINKS-AIDEAL-2026)"
+    - "PwC UK's approach anchors outputs to verifiable sources (BLOCKCHAINNEWS-PWCUK-2026, secondary summary)"
+  human_checkpoints:
+    - "Practitioners review anomalies the AI flags; PwC's deals leader gives an illustrative 20 hours of human time on follow-up (ICAEW-BIGSIX-2024)"
+  role_evolution: >-
+    PwC's deals leader says staff can gain more insight and that it is hard to predict which tasks are replaced versus
+    created (ICAEW-BIGSIX-2024). BDO's transaction services partner says GenAI could lead to new roles in AI oversight,
+    data interpretation and client engagement (ICAEW-BIGSIX-2024).
+  evidence_grade: B
+  sources:
+    - {ref: PWC-TOLTIQ-2026, title: "Reimagining deals for the Age of AI: PwC and ToltIQ enter strategic relationship", publisher: "PwC US", type: firm, url: "https://www.pwc.com/us/en/about-us/newsroom/press-releases/reimagining-deals-for-the-age-of-ai.html", date: "2026-06-15", access: full, locator: "'Built for the realities of deal execution' paragraph (usage counts); three priorities paragraph. Read through the r.jina.ai mirror"}
+    - {ref: BLOCKCHAINNEWS-PWCUK-2026, title: "PwC Leverages AI for Faster Deal Execution", publisher: "Blockchain.News (secondary summary of PwC UK Deals CTO)", type: press, url: "https://blockchain.news/news/pwc-ai-deal-execution", date: "2026-05-06", access: full, locator: "paragraphs 1-4 (document ingestion with citations, valuation reading, generative drafting)"}
+    - {ref: ICAEW-BIGSIX-2024, title: "Insight: AI and the Big Six", publisher: "ICAEW Corporate Financier", type: professional-body, url: "https://www.icaew.com/technical/corporate-finance/corporate-finance-faculty/corporate-financier/2024/articles/december/insight-ai-and-the-big-six", date: "2024-12-10", access: full, locator: "PwC (T. Popplewell) contracts example and platform count; Deloitte (P. Robinson) legal DD efficiency paragraph; BDO (M. Jones) on roles"}
+    - {ref: ARTLAW-AG-2024, title: "AG Proves LLMs Can Do Well On Due Diligence", publisher: "Artificial Lawyer (reporting Addleshaw Goddard's research report)", type: press, url: "https://www.artificiallawyer.com/2024/10/08/ag-proves-llms-can-do-well-on-due-diligence/", date: "2024-10-08", access: full, locator: "accuracy 74% to 95% quote; chunking strategy 14%-22% improvement"}
+    - {ref: KJK-NDA-2026, title: "AI and M&A NDAs: Managing Artificial Intelligence Risks in Confidentiality Agreements", publisher: "Kohrman Jackson & Krantz", type: firm, url: "https://kjk.com/2026/03/12/ai-and-ma-ndas-managing-artificial-intelligence-risks-in-confidentiality-agreements/", date: "2026-03-12", access: full, locator: "'Why AI Use in M&A Due Diligence Raises NDA Concerns'; 'How M&A NDAs Are Evolving'"}
+    - {ref: JOFA-ETHICSAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI can create confidentiality risks quickly'"}
+    - {ref: INTRALINKS-AIDEAL-2026, title: "AI Use Permeates Dealmaking Despite Operational Concerns: SS&C Intralinks Report", publisher: "SS&C Intralinks (via Business Wire / Nasdaq)", type: survey, url: "https://www.nasdaq.com/press-release/ai-use-permeates-dealmaking-despite-operational-concerns-ssc-intralinks-report-2026", date: "2026-04-08", access: full, locator: "incident bullet"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: Big Four (PwC US, PwC UK, Deloitte UK) with a vendor (ToltIQ) and a law firm. Grade capped at B: named
+    deployment with usage counts only, and the accuracy and efficiency measurements are from legal due diligence, an
+    adjacent process. The ICAEW article is 22 months old and is used as a foundation. PwC UK's May 2026 account is a
+    secondary news summary; PwC's own page was not read. The older PwC UK-Harvey alliance (2023) appeared only as a
+    search result. Independence: PwC's and Deloitte's attest-client restrictions were not researched (see
+    advisory-transactions-11). Expert-call and commercial diligence synthesis is outside this archetype.
+
+- id: advisory-transactions-10
+  title: "Deeper-cut analytics (SKU, customer, vendor, workforce, working capital) using time freed from routine diligence"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    Routine preparation consumes the time that would otherwise go to deeper analysis, and an identified EBITDA
+    adjustment can be worth many times the fee (Forvis Mazars US).
+  solution: >-
+    By automating the routine, diligence teams spend more of the engagement on SKU-level data, customer and vendor
+    insight, employee productivity and working capital trends. Forvis Mazars US pairs this with sector-specific
+    experience and says the result is more analysis, throughput and data-driven insight.
+  outcomes:
+    - {lever: quality, description: "Forvis Mazars US says depth of analysis increases", figure: "none published", measures: "Qualitative statement in a firm article; no engagement, tool or metric named", provenance: self-reported, source_ref: FORVIS-QOE-2026}
+  prerequisites:
+    - "Pairing experienced professionals with current tools (FORVIS-QOE-2026)"
+  risks_and_guardrails:
+    - "The same article warns that firms that over-rely on automation can head down wrong paths, not know when to stop and miss the true issues, and that AI is raising the prevalence of lower-quality QoE products (FORVIS-QOE-2026)"
+  human_checkpoints:
+    - "Professional judgment on EBITDA quality, net working capital, debt-like items and what matters to the deal (FORVIS-QOE-2026)"
+  role_evolution: >-
+    Forvis Mazars US describes a 'talent flywheel' in high-performing firms and warns that depleting junior ranks will
+    create future holes in executive-level insight (FORVIS-QOE-2026).
+  evidence_grade: C
+  sources:
+    - {ref: FORVIS-QOE-2026, title: "Quality of Earnings & Due Diligence in an AI World", publisher: "Forvis Mazars US (Transaction Advisory)", type: firm, url: "https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world", date: "2026-09-08", access: full, locator: "sections '2. Depth' and '3. Talent'; 'Need for Diligence'"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: top-tier US firm (Forvis Mazars US; ranking not verified). Marked emerging and C because the article is a
+    view from a named practice leader and names no tool or engagement. Pattern 'other': time released from routine work
+    is redeployed to wider analysis (a scope-expansion pattern; candidate new pattern). Forvis Mazars US's January 2024
+    article on diligence of AI-enabled targets is routed to the risk-controls module.
+
+- id: advisory-transactions-11
+  title: "Lifecycle M&A platform with an agent harness, from diligence to integration"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [research-synthesis, coordination-scheduling, expert-judgment]
+  pattern: end-to-end-case-agent
+  ladder: augment
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: in-production
+  problem: >-
+    Deal teams run diligence, structuring and integration as separate, isolated tasks across tax, technology and
+    financial workstreams (Deloitte).
+  solution: >-
+    Deloitte's M&A Platform embeds AI across the deal lifecycle, supported by an agentic harness (software to scale,
+    govern and manage AI agents), and runs structured, interconnected workflows from strategy and diligence through
+    integration. It is delivered through Deloitte's Ascend service delivery platform. EY-Parthenon markets a
+    comparable Diligence Edge platform with a digital diligence assistant and an automation suite.
+  outcomes:
+    - {lever: capacity, description: "Deloitte says how many client engagements the platform is in use across", figure: "more than 1,000 client engagements", measures: "Count of client engagements in which the platform is in use, per Deloitte's release. Adoption count, not outcome.", provenance: self-reported, source_ref: DELOITTE-MAPLATFORM-2026}
+    - {lever: speed, description: "Deloitte's own survey of 500 corporate and PE leaders reports benefits realised from AI in M&A", figure: "66% automated status reporting; 60% enhanced decision-making; 51% streamlined cross-functional coordination", measures: "Share of surveyed dealmakers who say they already see productivity gains in each area (Deloitte GenAI in M&A Pulse Survey, 500 corporate and PE leaders); respondent perceptions, not measured performance", provenance: vendor-published, source_ref: DELOITTE-MAPLATFORM-2026}
+  prerequisites:
+    - "Integration with approved deal data sources, the capability respondents rank as most important (DELOITTE-PULSE-2026)"
+    - "Ring-fenced client and transaction data environment (DELOITTE-MAPLATFORM-2026)"
+  risks_and_guardrails:
+    - "Deloitte says the platform is designed to protect and ringfence client and transaction data (DELOITTE-MAPLATFORM-2026)"
+    - "Human review remains the top requirement for high-stakes GenAI use in Deloitte's pulse study (DELOITTE-PULSE-2026)"
+    - "Deloitte's earlier survey release carries the note that certain services may not be available to attest clients under public accounting rules (DELOITTE-GENAIMA-2025). Which deal services this covers was not verified."
+    - "For SEC issuer audit clients, investment-banking-type services and any contingent fee impair independence (SEC-RULE2-01-2026)"
+  human_checkpoints:
+    - "Deloitte describes the platform as human-led and AI-powered (DELOITTE-MAPLATFORM-2026)"
+  role_evolution: >-
+    Deloitte's leaders say the platform lets deal teams achieve deeper insight by combining human judgment with AI
+    (DELOITTE-MAPLATFORM-2026).
+  evidence_grade: B
+  sources:
+    - {ref: DELOITTE-MAPLATFORM-2026, title: "Deloitte Expands AI and Agentic AI Capabilities With M&A Platform Enabling Smarter, More Streamlined Deal Execution", publisher: "Deloitte US", type: firm, url: "https://www.deloitte.com/us/en/about-us/press-room/deloitte-announces-ma-platform.html", date: "2026-09-22", access: full, locator: "paragraphs 2-3 (in use across more than 1,000 client engagements; agentic harness); survey paragraphs; closing paragraphs on data protection and Ascend"}
+    - {ref: DELOITTE-PULSE-2026, title: "2026 Generative AI in M&A Pulse Study", publisher: "Deloitte US", type: survey, url: "https://www.deloitte.com/us/en/what-we-do/capabilities/mergers-acquisitions-restructuring/articles/m-and-a-generative-ai-study.html", date: "2026", access: full, locator: "'Key takeaways from the survey'. Page is undated; the 2026-09-22 Deloitte release calls the pulse survey recently released"}
+    - {ref: DELOITTE-GENAIMA-2025, title: "Deloitte Survey: 86% of Corporate and Private Equity Leaders Now Use Generative AI, with Plans to Boost Spending in 2025", publisher: "Deloitte US", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-survey-genai-in-mna.html", date: "2025-10-09", access: full, locator: "boilerplate paragraph on attest-client services"}
+    - {ref: EY-DILIGENCEEDGE-2026, title: "Diligence Edge: AI Diligence Platform", publisher: "EY-Parthenon", type: firm, url: "https://www.ey.com/en_uk/services/strategy/dilligence-edge", date: "2026-10-20", access: full, locator: "sections 'Digital Diligence Assistant', 'Automation suite', 'People-powered innovation'. Page is undated; date is access date. Read through the r.jina.ai mirror"}
+    - {ref: ICAEW-BIGSIX-2024, title: "Insight: AI and the Big Six", publisher: "ICAEW Corporate Financier", type: professional-body, url: "https://www.icaew.com/technical/corporate-finance/corporate-finance-faculty/corporate-financier/2024/articles/december/insight-ai-and-the-big-six", date: "2024-12-10", access: full, locator: "EY paragraph (EY.ai, EYQ, EY Edge)"}
+    - {ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(viii) broker-dealer, investment adviser or investment banking services; (c)(5) contingent fees. Current text as fetched; date is access date"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: Big Four (Deloitte, EY). Grade B because Deloitte names the platform and a usage count but publishes no
+    outcome. Ladder stays augment: the platform is described as human-led and no agent is shown owning an outcome. The
+    EY page is marketing copy with no usage or outcome data (grade C on its own); an ICAEW 2024 article reports EY has a
+    tool called EY Edge and an in-house LLM, EYQ (ICAEW-BIGSIX-2024). Deloitte's 2025 and 2026 surveys use different
+    samples (1,000 US leaders versus 500) and different measures and should not be compared. Deloitte sells M&A
+    services, so its survey findings are vendor-published. Independence gate for AI-related services to audit
+    clients: assurance-acceptance-independence-15.
+
+- id: advisory-transactions-12
+  title: "AI-drafted diligence deliverables: QoE exhibits, databook summary slides, red-flag reports and executive summaries from workpapers"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    Turning workpapers and databooks (the schedules of financial analysis behind a diligence report) into
+    executive-ready exhibits, summary slides and findings decks is slow, senior-reviewed work (General Catalyst job
+    board posting).
+  solution: >-
+    Generative drafting of report pages and summaries from workpapers. PwC UK's Deals CTO describes producing
+    executive-ready summaries from complex workpapers (secondary summary). A July 2026 expert-network posting says a
+    foundation AI lab wants transaction advisory managers to create, evaluate and refine AI-generated QoE exhibits,
+    databook summary slides, diligence findings decks, working capital pages and red-flag reports.
+  outcomes:
+    - {lever: speed, description: "none published", figure: "none published", measures: "No measured result; the sources describe intent and tasks", provenance: self-reported, source_ref: BLOCKCHAINNEWS-PWCUK-2026}
+  prerequisites:
+    - "Workpapers and databooks in a form a model can draft from"
+  risks_and_guardrails:
+    - "Forvis Mazars US warns AI can make thin reports look professional but they will not hold up under scrutiny (FORVIS-QOE-2026)"
+    - "Cautionary analogue outside this module: Deloitte Australia agreed to repay the final instalment of a AU$440,000 government review after AI-generated errors including nonexistent references were found; Deloitte said the errors did not affect the findings (CITYAM-DELOITTE-2025)"
+  human_checkpoints:
+    - "Experienced transaction advisory managers evaluate and refine the AI-generated pages (GC-ETHOS-JOB-2026)"
+  role_evolution: >-
+    The posting pays experienced Big Four-level transaction advisory managers an hourly rate to train a model on
+    report production, which shows the source of expertise labs want; it says nothing about how firms staff the work
+    (GC-ETHOS-JOB-2026).
+  evidence_grade: C
+  sources:
+    - {ref: GC-ETHOS-JOB-2026, title: "Expert Opportunity - Transaction Advisory Services Manager", publisher: "Ethos via General Catalyst job board", type: job-posting, url: "https://jobs.generalcatalyst.com/companies/ethos-2-e1b0048b-7d7c-4a76-97d7-b71911ec294a/jobs/86831351-expert-opportunity-transaction-advisory-services-manager-100-hr-up-to-2-000-week", date: "2026-07-18", access: full, locator: "'About This Opportunity' (task list); 'Qualifications'"}
+    - {ref: BLOCKCHAINNEWS-PWCUK-2026, title: "PwC Leverages AI for Faster Deal Execution", publisher: "Blockchain.News (secondary summary of PwC UK Deals CTO)", type: press, url: "https://blockchain.news/news/pwc-ai-deal-execution", date: "2026-05-06", access: full, locator: "paragraph on generative drafting"}
+    - {ref: FORVIS-QOE-2026, title: "Quality of Earnings & Due Diligence in an AI World", publisher: "Forvis Mazars US (Transaction Advisory)", type: firm, url: "https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world", date: "2026-09-08", access: full, locator: "section '3. Talent'"}
+    - {ref: CITYAM-DELOITTE-2025, title: "Deloitte refunds Australian government after AI 'made up citations' in report", publisher: "City AM", type: press, url: "https://www.cityam.com/?p=2367690", date: "2025-10-06", access: full, locator: "paragraphs 1-6"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: Big Four (PwC UK, via secondary source) and an AI lab (unnamed) recruiting through an expert network.
+    The posting pays $100 per hour for 5-20 hours a week and is not evidence that firms use the output. The Deloitte
+    Australia incident was a government review, not transaction advisory; it is a deliverable-quality analogue. The
+    pre-issue check of references and figures is professional-services-quality-review-04. Ref CITYAM-DELOITTE-2025 is
+    the same document the deep dive filed as CITYAM-DELOITTEAU-2025; renamed to match the other advisory modules.
+
+- id: advisory-transactions-13
+  title: "Buyers and sponsors run first-pass diligence with generative AI in-house"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [research-synthesis, review-assurance]
+  pattern: research-brief
+  ladder: augment
+  change_scope: model
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    PE and corporate deal teams must evaluate more opportunities and process larger information volumes under tight
+    deadlines. This is the demand-side shift transaction advisory providers face: some first-pass diligence moves
+    in-house (Datasite; Intralinks).
+  solution: >-
+    Deal teams use AI tools in diligence themselves: S&P Global finds diligence has the highest AI integration among
+    PE operations, Datasite reports half of dealmakers regularly use AI in diligence, and Deloitte finds 35% of
+    adopters apply GenAI to diligence.
+  outcomes:
+    - {lever: capacity, description: "S&P Global: share of GPs reporting AI integrated into due diligence", figure: "31%", measures: "GPs who say AI is somewhat or fully integrated in due diligence, in S&P Global Market Intelligence's 2026 PE survey; sample size not stated in the release portion read", provenance: independent, source_ref: SPGLOBAL-PE-2026}
+    - {lever: capacity, description: "Datasite and FT Longitude: share of dealmakers with AI regularly embedded in due diligence", figure: "50%", measures: "Respondents who report AI regularly embedded in due diligence; survey of 1,000 senior dealmakers (C-suite or C-1) in 27 countries, March 2026, commissioned by Datasite", provenance: vendor-published, source_ref: DATASITE-NEWDEALTEAM-2026}
+    - {lever: speed, description: "SS&C Intralinks: reported time saving in the diligence phase", figure: "21-30%", measures: "Time savings that surveyed dealmakers (400 global M&A dealmakers, with Reuters) report from AI tools in the due diligence phase; self-reported perceptions", provenance: vendor-published, source_ref: INTRALINKS-AIDEAL-2026}
+  prerequisites:
+    - "Enterprise-grade tools that satisfy seller NDAs and data-room terms (KJK-NDA-2026)"
+  risks_and_guardrails:
+    - "S&P respondents name lack of expertise (49%), data privacy concerns (43%) and model accuracy concerns (38%) as barriers (SPGLOBAL-PE-2026)"
+    - "Deloitte's 2025 survey: 67% cite data security and 65% cite data quality and availability as leading concerns (DELOITTE-GENAIMA-2025)"
+    - "Datasite: 58% rely on human review and validation to trust AI outputs (DATASITE-NEWDEALTEAM-2026)"
+  human_checkpoints:
+    - "Human review and validation; 45% say the decision to sign should always remain human (DATASITE-NEWDEALTEAM-2026)"
+  role_evolution: >-
+    Datasite respondents say negotiation, strategic judgment, assessing trust and accountability are hardest for AI to
+    replicate (DATASITE-NEWDEALTEAM-2026).
+  evidence_grade: C
+  sources:
+    - {ref: SPGLOBAL-PE-2026, title: "S&P Global Market Intelligence's 2026 Private Equity Survey Shows Fundraising Confidence Rising as Managers Pivot to Operational Value", publisher: "S&P Global Market Intelligence", type: survey, url: "https://press.spglobal.com/2026-04-13-S-P-Global-Market-Intelligences-2026-Private-Equity-Survey-Shows-Fundraising-Confidence-Rising-as-Managers-Pivot-to-Operational-Value", date: "2026-04-13", access: full, locator: "'Limited AI adoption' bullet"}
+    - {ref: DATASITE-NEWDEALTEAM-2026, title: "Datasite: AI Is Becoming Indispensable in Dealmaking, But Trust and Governance Will Determine the Winners", publisher: "Datasite (GlobeNewswire, with FT Longitude)", type: survey, url: "https://www.finanznachrichten.de/nachrichten-2026-07/68975080-datasite-ai-is-becoming-indispensable-in-dealmaking-but-trust-and-governance-will-determine-the-winners-399.htm", date: "2026-07-08", access: full, locator: "'Four key findings from the research'; 'About the report'"}
+    - {ref: INTRALINKS-AIDEAL-2026, title: "AI Use Permeates Dealmaking Despite Operational Concerns: SS&C Intralinks Report", publisher: "SS&C Intralinks (via Business Wire / Nasdaq)", type: survey, url: "https://www.nasdaq.com/press-release/ai-use-permeates-dealmaking-despite-operational-concerns-ssc-intralinks-report-2026", date: "2026-04-08", access: full, locator: "key findings list"}
+    - {ref: DELOITTE-GENAIMA-2025, title: "Deloitte Survey: 86% of Corporate and Private Equity Leaders Now Use Generative AI, with Plans to Boost Spending in 2025", publisher: "Deloitte US", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-survey-genai-in-mna.html", date: "2025-10-09", access: full, locator: "paragraphs on pre-sign use (35% due diligence) and barriers"}
+    - {ref: KJK-NDA-2026, title: "AI and M&A NDAs: Managing Artificial Intelligence Risks in Confidentiality Agreements", publisher: "Kohrman Jackson & Krantz", type: firm, url: "https://kjk.com/2026/03/12/ai-and-ma-ndas-managing-artificial-intelligence-risks-in-confidentiality-agreements/", date: "2026-03-12", access: full, locator: "'How M&A NDAs Are Evolving to Address AI'"}
+    - {ref: POSTTRADE-SPGLOBAL-2026, title: "AI finds its foothold in private equity, but mostly in due diligence", publisher: "Post-Trade 360", type: press, url: "https://posttrade360.com/news/fund-ops/ai-finds-its-foothold-in-private-equity-but-mostly-in-due-diligence/", date: "2026-04-13", access: full, locator: "first two paragraphs (27% effectiveness figure; one-in-four wording)"}
+    - {ref: AM-EURODD-2026, title: "European Due Diligence Report 2026 (as summarised in search results)", publisher: "Alvarez & Marsal", type: survey, url: "https://www.alvarezandmarsal.com/node/96976", date: "2026-08-11", access: search-only, locator: "search-result summary only; page returned 403"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: PE sponsors and corporate buyers (the clients of transaction advisory firms), surveyed by a data vendor,
+    a data-room vendor and a Big Four firm. These surveys cover diligence generally, not QoE, so they cap at C. Figures
+    conflict: Post-Trade 360 reports the S&P figure as 'just shy of one in four' while S&P's own release says 31% (the
+    release is used). The 27% 'effective in creating value during diligence' figure comes only from the Post-Trade 360
+    article and is not in the outcomes. A&M's 2026 European diligence report (80%+ using or experimenting; 70% of Tier 1
+    funds using consistently versus 41% of large and 28% of mid-sized funds) was seen only in search. Intralinks'
+    separate H2 2026 sentiment report uses different numbers and is not comparable.
+
+- id: advisory-transactions-14
+  title: "Post-deal integration planning, TSA drafting and synergy sizing with generative AI"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [coordination-scheduling, document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Post-deal value realisation needs coordinated execution across systems and is less structured and harder to scale
+    than pre-deal analysis (Accenture's PE lead, via CFO Dive). Line leaders must juggle integration work with their
+    day jobs (Bain).
+  solution: >-
+    Bain expects early adopters to draft integration workplans and transition service agreements (TSAs: the seller's
+    promise to keep running services for the buyer for a period after closing) in less than 20% of the time previously
+    spent, then use company data to size cost and revenue synergies and draft value creation plans. Deloitte's pulse
+    study reports that 52% of respondents apply GenAI in post-close integration (its survey question covers use or
+    piloting).
+  outcomes:
+    - {lever: speed, description: "Bain's expectation for early adopters over the following 12 months", figure: "less than 20% of prior time", measures: "Bain's forward-looking expectation for the time early adopters will spend drafting integration workplans and TSAs relative to what they previously spent; not a measured result", provenance: vendor-published, source_ref: BAIN-GENAIMA-2025}
+    - {lever: capacity, description: "Accenture: share of organizations investing in GenAI for post-deal M&A activity", figure: "27% in 2026, up from 18% in 2024", measures: "Share of surveyed organizations investing in GenAI for post-deal M&A activity; Accenture survey of 650 senior dealmakers in 12 industries and 24 countries, January 2026 (pre-deal was 46%, up from 31%)", provenance: vendor-published, source_ref: CFODIVE-ACCENTURE-2026}
+  prerequisites:
+    - "Integration with approved deal data sources (DELOITTE-PULSE-2026)"
+  risks_and_guardrails:
+    - "Not described in these sources beyond the human-review requirement in the pulse study (DELOITTE-PULSE-2026)"
+  human_checkpoints:
+    - "Human review remains the top requirement for high-stakes use (DELOITTE-PULSE-2026)"
+  role_evolution: >-
+    Bain says generative AI will pick up project management tasks and M&A teams should rethink the skills they need,
+    with more focus on strategic value creation (BAIN-GENAIMA-2025).
+  evidence_grade: C
+  sources:
+    - {ref: BAIN-GENAIMA-2025, title: "Generative AI in M&A: You're Not Behind-Yet", publisher: "Bain & Company (2025 M&A Report)", type: firm, url: "https://www.bain.com/insights/generative-ai-m-and-a-report-2025/", date: "2025-02-04", access: full, locator: "paragraphs on integration workplans and TSAs; 'Protecting people and the business during M&A'"}
+    - {ref: CFODIVE-ACCENTURE-2026, title: "GenAI gains ground in M&A, but post-deal adoption lags", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/generative-ai-gains-ground-mergers-postdeal-adoption-lags/814895/", date: "2026-03-17", access: full, locator: "paragraphs 2-3 (adoption figures) and the sentence on McKinsey's integration expectation"}
+    - {ref: DELOITTE-PULSE-2026, title: "2026 Generative AI in M&A Pulse Study", publisher: "Deloitte US", type: survey, url: "https://www.deloitte.com/us/en/what-we-do/capabilities/mergers-acquisitions-restructuring/articles/m-and-a-generative-ai-study.html", date: "2026", access: full, locator: "'Key takeaways' (49% deal closing, 52% post-close integration)"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm types: consultancies (Bain, Accenture, Deloitte) writing about corporate and PE acquirers rather than
+    reporting an advisory-firm deployment. McKinsey's expectation that agentic AI will take over more than 50% of
+    integration planning and execution tasks appears only inside the CFO Dive article. Deloitte's M&A Platform
+    (advisory-transactions-11) covers integration but publishes no integration outcome. No integration-management-office
+    case with outcomes was found. Agent-drafted status reports in general are professional-services-delivery-management-03.
+
+- id: advisory-transactions-15
+  title: "LLM-supported knowledge capture to retain rather than replace an acquired company's systems"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [research-synthesis, software-systems]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Post-merger systems integration often loses the human and system-embedded knowledge of the acquired firm, which
+    pushes acquirers to rip out and replace the target's ERP (ECIS 2026 paper).
+  solution: >-
+    In a study of two consecutive acquisitions of the same digital target, the second acquirer used LLM-supported
+    'learning system knowledge through chat' to adopt a retain-and-revive approach for the target's proprietary ERP
+    instead of the first acquirer's rip-and-replace.
+  outcomes:
+    - {lever: risk, description: "The authors report increased knowledge transferability, aggregation and efficiency, and lower assumed system opacity, personnel dependence and conversion cost", figure: "none published", measures: "Qualitative findings from a two-acquisition case study; organizations unnamed", provenance: independent, source_ref: ECIS-PMI-2026}
+  prerequisites:
+    - "Access to the target's system documentation, code or people to build a knowledge base"
+  risks_and_guardrails:
+    - "Not discussed in the abstract (ECIS-PMI-2026)"
+  human_checkpoints:
+    - "Not discussed in the abstract (ECIS-PMI-2026)"
+  role_evolution: "Not discussed in the abstract (ECIS-PMI-2026)."
+  evidence_grade: C
+  sources:
+    - {ref: ECIS-PMI-2026, title: "From Knowledge Loss To Knowledge Leverage: How Gen AI Affordances Transform Post-Merger IS Integration", publisher: "ECIS 2026 Proceedings (AIS eLibrary); Erber, Ortiz de Guinea, Steininger", type: academic, url: "https://aisel.aisnet.org/ecis2026/is_adopt/is_adopt/24/", date: "2026", access: full, locator: "abstract (only the abstract was read). Month of publication not shown on the page"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Firm type: acquirers, not advisory firms. Grade C: the case organizations are unnamed so this cannot meet B. Only
+    the abstract was read. Kept because it is the only assist-level entry and the only evidence on IT integration.
+
+- id: advisory-transactions-16
+  title: "Autonomous quality-of-earnings analysis (idea)"
+  archetype: advisory
+  module: transactions
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: emerging
+  problem: >-
+    QoE is a judgment-heavy, multi-week product; surveyed dealmakers see an agent that runs the whole analysis as a
+    coming disruption (SS&C Intralinks survey).
+  solution: >-
+    An agent would own the QoE end to end (ingest, map, test, normalize, draft) with human checkpoints. This is an idea
+    discussed by surveyed dealmakers, not a deployed product; a July 2026 buyer's guide says no AI tool runs a full QoE
+    because it turns on judgment.
+  outcomes:
+    - {lever: speed, description: "none published", figure: "none published", measures: "Intralinks reports that autonomous QoE analysis is among the most highly anticipated disruptions expected by 2030; no performance data", provenance: vendor-published, source_ref: INTRALINKS-AIDEAL-2026}
+  prerequisites:
+    - "Reliable add-back and footnote handling, which a practitioner guide says is where tools degrade (WORKWISE-QOE-2026)"
+  risks_and_guardrails:
+    - "Over 80% of Intralinks respondents say they are comfortable with AI executing some multi-step workflows with minimal human intervention, while more than 57% report rising senior-level resistance driven by accuracy, explainability and fiduciary concerns (INTRALINKS-AIDEAL-2026)"
+    - "Under the SBA rule as QoEAgent reads it, software cannot be the provider of a lender QoE (QOEAGENT-WHO-2026)"
+  human_checkpoints:
+    - "Not specified; the source describes minimal-human-intervention workflows generally (INTRALINKS-AIDEAL-2026)"
+  role_evolution: "Not stated."
+  evidence_grade: D
+  sources:
+    - {ref: INTRALINKS-AIDEAL-2026, title: "AI Use Permeates Dealmaking Despite Operational Concerns: SS&C Intralinks Report", publisher: "SS&C Intralinks (via Business Wire / Nasdaq)", type: survey, url: "https://www.nasdaq.com/press-release/ai-use-permeates-dealmaking-despite-operational-concerns-ssc-intralinks-report-2026", date: "2026-04-08", access: full, locator: "key findings: comfort with multi-step workflows and autonomous QoE"}
+    - {ref: WORKWISE-QOE-2026, title: "The Best AI Tools for Quality of Earnings and Financial Due Diligence in 2026", publisher: "WorkWise Solutions (AI consulting firm)", type: vendor, url: "https://workwisesolutions.org/guides/best-ai-qoe-financial-due-diligence-tools.html", date: "2026-07-20", access: full, locator: "TLDR"}
+    - {ref: QOEAGENT-WHO-2026, title: "Who Can Prepare an SBA Quality of Earnings Report", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/who-can-prepare-sba-quality-of-earnings/", date: "2026-09-05", access: full, locator: "opening summary"}
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Idea (D). The idea is discussed in a vendor survey and a consultancy guide, not demonstrated. Vendors in
+    advisory-transactions-03 to -05 sell staged versions with human review. This is the only delegate-level entry.

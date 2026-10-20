@@ -87,8 +87,10 @@ reading traces, not as a deadline.
 
 ### 3.4 People and reuse
 
-- Ask pilot users what would happen if the tool were taken away, and report the answer; dependence is stronger
-  evidence for peers than satisfaction (a partner's recollection, self-reported) [PAPERJAM-2025].
+- Ask pilot users what would happen if the tool were taken away, and report the answer. A partner at a law firm
+  recalled asking lawyers whether the tool could be taken away and hearing a unanimous no (self-reported)
+  [PAPERJAM-2025]; the advisor's reading is that this kind of answer persuades peers more than a satisfaction
+  score *(advisor default)*.
 - Adoption by group: who uses it, who does not, and why. Hand uneven adoption to **ai-enablement**.
 - Lessons for other teams: which parts are reusable (cases, checklist, design) and which were local.
 
@@ -176,7 +178,7 @@ the decision.
 - `BERKELEY-2026` — Pan, Arabzadeh et al., *Measuring Agents in Production*, 2026-06-04. https://arxiv.org/pdf/2512.04123
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*,
   2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, undated. https://developers.google.com/machine-learning/guides/rules-of-ml
+- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HUSAIN-2026` — Hamel Husain, *LLM Evals: Everything You Need to Know (FAQ)*, 2026-09-18. https://hamel.dev/blog/posts/evals-faq/
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `OPENAI-2025` — OpenAI, *A practical guide to building agents*, 2025-04.

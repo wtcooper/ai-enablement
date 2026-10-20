@@ -81,7 +81,7 @@ rubber-stamp watch, tracing, security) and, at the Adopting stage, the five dele
 Climb one rung at a time and write down what evidence moves the design up; higher rungs cost more latency,
 money and testing effort, and errors compound across steps [ANTHROPIC-2024; OPENAI-2025]. Constrained autonomy
 is the norm in production: 68% of surveyed deployed agent systems run at most 10 steps before a person steps in
-(academic study, N=60 for that question) [BERKELEY-2026].
+(UC Berkeley-led academic study, N=60 for that question) [BERKELEY-2026].
 
 ### 3.2 Data and retrieval
 
@@ -99,9 +99,10 @@ is the norm in production: 68% of surveyed deployed agent systems run at most 10
 | System | Read or write | Approval needed | Worst thing it could do with this permission |
 |---|---|---|---|
 
-Start with read-only tools and require approval for write or delete; a vendor survey found few respondents let
-agents read, write and delete freely (vendor-published, self-reported) [LANGCHAIN-2024]. Write queries should not
-run without human approval [HUYEN-2024]. Prefer integration into systems professionals already use, so the
+Start with read-only tools and require approval for write or delete; in LangChain's survey of over 1,300
+professionals, very few let agents read, write and delete freely, and most used read-only permissions or human
+approval for writes and deletes (vendor-published, self-reported) [LANGCHAIN-2024]. Queries that insert, update or
+delete data should not run without human approval [HUYEN-2024]. Prefer integration into systems professionals already use, so the
 output lands where the work is reviewed *(advisor default)*.
 
 ### 3.4 Security and privacy screen
@@ -116,10 +117,12 @@ output lands where the work is reviewed *(advisor default)*.
 
 - **From the pattern file:** take its key checkpoint and the rung's "checkpoint before moving up"; add the
   controls from its §6 for each failure mode.
-- **Two escalation triggers:** a failure threshold (retries, low confidence) and a list of high-risk actions
-  that always pause for a person (cancel, pay, send, file) [OPENAI-2025].
+- **Two escalation triggers:** a failure threshold (retries, failed attempts) and a list of high-risk actions
+  (sensitive, irreversible or high-stakes) that hand over to a person until the system's reliability is shown
+  [OPENAI-2025]. In this skill, irreversible actions (send, file, pay, delete) always pause for a person
+  (rule 12).
 - **Design the review as editing a suggestion,** and capture the edit as feedback; this gives a feedback loop
-  and a clear point of accountability [APPLIEDLLMS-2024, 2.3.2, 3.2.5; YAN-2023].
+  [APPLIEDLLMS-2024, 2.3.2, 3.2.5; YAN-2023] and a clear point of accountability *(advisor default)*.
 - **Give the reviewer time.** Name the time budget per item; a checkpoint with no time becomes a stamp
   *(advisor default)*.
 - **Professional work:** the professional stays responsible for the output; the ABA says the right amount of
@@ -127,8 +130,9 @@ output lands where the work is reviewed *(advisor default)*.
 
 ### 3.6 Failure behaviour, logging and cost
 
-- **When it does not know,** it says so and routes to a person [APPLIEDLLMS-2024, 1.4.7]. Name the manual
-  fallback; it may be the old process [NIST-2024, GV-6.2-006].
+- **When it does not know,** it should say so and route to a person. Design that path explicitly and test it:
+  models often return output even when they should not, and prompting for "unknown" is not foolproof
+  [APPLIEDLLMS-2024, 1.4.7]. Name the manual fallback; it may be the old process [NIST-2024, GV-6.2-006].
 - **Logging:** inputs, outputs, model and prompt version, retrieved sources, reviewer and decision, kept under
   the engagement's confidentiality terms [HUYEN-2024; UKGDS-2024].
 - **Cost envelope:** a range per task and per month at expected volume, with assumptions.
@@ -164,7 +168,7 @@ output lands where the work is reviewed *(advisor default)*.
 | Trap | Evidence | How to avoid |
 |---|---|---|
 | Too much autonomy too early | Autonomy costs more and errors compound [ANTHROPIC-2024]; constrained autonomy is the production norm [BERKELEY-2026] | Climb the ladder with written promotion rules |
-| Checkpoints with no time or skill behind them | Pattern files report rubber-stamp review (for example `draft-review-loop` §6) | Time budget per item; override rate tracked from day one |
+| Checkpoints with no time or skill behind them | Pattern files report rubber-stamp review (for example `document-to-decision` §6 and `draft-review-loop` §2) | Time budget per item; override rate tracked from day one |
 | Stale or unowned retrieval content | Content that changes needs an owner in the loop [UKGDS-2025] | Name the content owner and refresh route |
 | Silent failures from upstream changes | A stale table caused months of gradual decay at Google [GOOGLE-RULES, Rule 10] | Monitor input coverage and freshness, not only outputs |
 | Write access granted for convenience | [HUYEN-2024; OWASP-2025, LLM06] | Read-only first; approval for writes |
@@ -210,11 +214,12 @@ the policy gives one, `step_completed: 3`, `next_step: 4` and `updated`.
   2024-06-08. https://applied-llms.org/
 - `BERKELEY-2026` — Pan, Arabzadeh et al., *Measuring Agents in Production*, academic paper, 2026-06-04.
   https://arxiv.org/pdf/2512.04123
-- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, practitioner guide, undated.
+- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, practitioner guide, page last updated 2025-08-25.
   https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HUYEN-2024` — Chip Huyen, *Building A Generative AI Platform*, practitioner article, 2024-07-25.
   https://huyenchip.com/2024/07/25/genai-platform.html
-- `LANGCHAIN-2024` — LangChain, *State of AI Agents*, vendor survey, 2024. https://www.langchain.com/stateofaiagents
+- `LANGCHAIN-2024` — LangChain, *State of AI Agents* (2024 survey; the page now carries a 2026 date stamp), vendor
+  survey. https://www.langchain.com/stateofaiagents
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `OPENAI-2025` — OpenAI, *A practical guide to building agents*, vendor guide, 2025-04.
   https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
@@ -224,5 +229,5 @@ the policy gives one, `step_completed: 3`, `next_step: 4` and `updated`.
   https://www.gov.uk/government/publications/generative-ai-framework-for-hmg/generative-ai-framework-for-hmg-html
 - `UKGDS-2025` — UK Government, *Artificial Intelligence Playbook for the UK Government*, 2025-02-10.
   https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
-- `YAN-2023` — Eugene Yan, *Patterns for Building LLM-based Systems and Products*, practitioner article, 2023.
+- `YAN-2023` — Eugene Yan, *Patterns for Building LLM-based Systems and Products*, practitioner article, 2023-07.
   https://eugeneyan.com/writing/llm-patterns/

@@ -22,7 +22,7 @@ are listed in §9. Vendor documents are cited only as evidence of what published
 behind it. Vendor evaluation is a data-flow and change-control question first: what is retained and for how long,
 whether it trains models, who the sub-processors are and where processing happens, which certifications cover this
 product, and what happens when the vendor changes the model, a sub-processor or its terms, or when you leave
-[NIST-600-1-2024, GV-6.1-004 to GV-6.1-008; OPENAI-ENT-ND; MSFT-COPILOT-ND].
+[NIST-600-1-2024, GV-6.1-004 to GV-6.1-009; OPENAI-ENT-ND; MSFT-COPILOT-ND].
 
 **Exit when all of these are true:**
 - **Scorecard filled:** six dimensions rated `meets`, `partial`, `gap` or `unknown`, each with evidence and a locator.
@@ -75,11 +75,12 @@ More, as needed:
 4. **Use NIST's third-party actions as the contract checklist.** Contract review. Reveals missing clauses: content
    ownership and usage rights, quality, security and provenance (GV-6.1-004); a right to evaluate third-party
    processes (GV-6.1-006); an inventory of third parties with access to content and an approved-provider list
-   (GV-6.1-007); records of third-party changes (GV-6.1-008) [NIST-600-1-2024].
+   (GV-6.1-007); records of changes third parties make to content (GV-6.1-008); procurement due diligence that covers
+   embedded GAI and ongoing monitoring of third-party GAI risks (GV-6.1-009) [NIST-600-1-2024].
 5. **Ask what notice you get of model, sub-processor and terms changes, and write the re-approval trigger.** Change
-   control. Reveals silent drift; NIST asks for model versions in the inventory and records of third-party changes
-   [NIST-600-1-2024, GV-1.6-003, GV-6.1-008]. No benchmark of negotiated notice terms was found, so the trigger list
-   is an advisor default.
+   control. Reveals silent drift; NIST asks for model versions in the inventory and for ongoing monitoring of
+   third parties, including detecting unauthorized changes [NIST-600-1-2024, GV-1.6-003, GV-6.1-005, GV-6.1-009]. No
+   benchmark of negotiated notice terms was found, so the trigger list is an advisor default.
 6. **Challenge the model on your own samples before approval and after model changes.** Tier-3 and tier-4 uses.
    Model-risk guidance applies validation to vendor models and expects the firm to choose models appropriate to its
    use even when relying on a vendor [FRB-SR117-2011]. The advisor's evaluation-set guidance is in
@@ -96,7 +97,7 @@ More, as needed:
 | Data retention and training (`retention_training`) | No training on business data by default; feedback exceptions can be disabled; admin-set retention; deletion terms | Business privacy pages, data processing terms [OPENAI-ENT-ND; ANTHROPIC-PRIV-2026] |
 | Certifications (`certifications`) | A current report or certificate whose scope names this product, with period and exclusions read | SOC 2 Type 2 report, ISO/IEC 27001 or 42001 certificate and scope statement |
 | Contract terms (`contract_terms`) | Ownership and usage rights, quality, security, right to evaluate, incident notice, warranties and liability read | Contract, terms, addenda [NIST-600-1-2024, GV-6.1-004, -006; LAWSOC-GENAI-2026] |
-| Sub-processor and model changes (`change_control`) | A published sub-processor list with regions; notice of model, sub-processor and terms changes | Sub-processor page; change-notice clause [NIST-600-1-2024, GV-6.1-008] |
+| Sub-processor and model changes (`change_control`) | A published sub-processor list with regions; notice of model, sub-processor and terms changes | Sub-processor page; change-notice clause [NIST-600-1-2024, GV-6.1-005, GV-6.1-009] |
 | Exit (`exit`) | Data export; deletion on termination; a contingency if the tool fails or is withdrawn | Terms; admin documentation [NIST-RMF-2023, GOVERN 1.7, 6.2] |
 
 **Gates outside the scorecard:** profession screens (step 5) and, for tier-3 and tier-4 uses, the own-sample test.
@@ -108,8 +109,8 @@ More, as needed:
 - A screen marked `needs-review` → no approval for that use until the reviewer clears it.
 - A tier-3 or tier-4 use with `own_sample_test: not-run` → at most `pilot`, for named user groups.
 - A certification whose scope does not name the product → `partial`, not `meets`.
-- An embedded feature that arrives switched on → off for client-confidential work until it has a catalog entry
-  [NIST-600-1-2024, GV-1.6-001, GV-1.6-002].
+- An embedded feature that arrives switched on → off for client-confidential work until it has a catalog entry (NIST
+  asks that inventories and procurement cover embedded GAI [NIST-600-1-2024, GV-1.6-002, GV-6.1-009]).
 - Re-approve on any trigger: model change, sub-processor change, terms change, new data class, new use, incident.
 
 **Runtime-class notes.** For a `managed-agent-runtime`, evaluate the platform (tenancy, logging, data location, change
@@ -123,7 +124,7 @@ and the actions that pause for a person to the conditions [OWASP-LLM-2025].
 | Treating certifications as fitness for your use | Certificates show controls exist; a vendor blog notes ISO/IEC 42001 certification does not by itself satisfy EU AI Act obligations (directional) [OPENLAYER-2026] | Read scope, period and exclusions; still test on your data and use |
 | Approving the vendor, not the tier | [ANTHROPIC-PRIV-2026] | One entry per tool + tier + contract |
 | Published terms taken as the contract | Published terms may differ from negotiated contracts and change over time | Keep desk evaluations labelled; check the signed contract |
-| Questionnaire first, data flow last | The five data-flow facts decide most cases [NIST-600-1-2024] | Start with V2 to V5 |
+| Questionnaire first, data flow last | The five data-flow facts decide most cases (advisor default; NIST's third-party actions centre on them [NIST-600-1-2024, GV-6.1]) | Start with V2 to V5 |
 | Vendor liability assumed | Legal AI vendors are reported to place liability on the deploying firm (professional-services guardrails §8) [INSINSIDER-LAWYERS-2026] | Negotiate warranties and indemnities; tell the insurer |
 
 ## 7. Worked example
@@ -137,8 +138,9 @@ feature, on by default.
   retention and training `unknown` (feedback exception not described); certifications `partial` (platform report
   does not name the feature); contract `unknown`; change control `gap` (no notice commitment found); exit `meets`.
 - **Screens:** independence not applicable; client terms `needs-review` for two clients that restrict AI.
-- **Decision:** `pending`; feature off for client-confidential workspaces; firm-internal use approved as a `pilot`
-  for the knowledge team; questions on region, feedback and notice sent to the vendor.
+- **Decision:** `pending` for client-confidential documents, with the feature off in those workspaces; the user
+  confirms the admin switch, so firm-internal use is approved as a `pilot` for the knowledge team; questions on region,
+  feedback and notice go to the vendor.
 - **Catalog:** entry `docs-ai-summary` with `status: pilot`, `data_classes: [public, firm-internal]`.
 
 ## 8. Output

@@ -46,8 +46,8 @@ regulator or inspector.
    **ai-enablement**.
 5. **Check the documentation pack** for regulated or professional work (§3.4).
 6. **Offer an independent challenge** of the whole pack before the decision (the `review-solution` brief; see
-   SKILL.md, Delegation). NIST asks that go/no-go decisions use red-team and structured-feedback results
-   [NIST-2024, MS-4.2-005].
+   SKILL.md, Delegation). NIST's profile suggests documenting how the results of structured feedback exercises,
+   which include red-teaming, fed the go/no-go decision [NIST-2024, MS-4.2-005].
 7. **Apply the decision rules** (§4.1), write the staged launch plan (§4.2) and record who decided.
 8. **Send the gate evidence** to **ai-portfolio**: the readiness decision, eval results and benefit inputs.
 9. **Name step 6** and the event that starts it.
@@ -98,18 +98,20 @@ before production *(advisor default)*.
 
 ### 3.5 People and adoption
 
-- **Training before access** on what the tool does well, its limits, the review expected, and what to do when it
-  is wrong [ABA-2024]. A law firm studied by CIPD made training a condition of use and kept a "verify, verify,
-  verify" rule (anonymized practitioner case) [CIPD-2026]. In BCG's cross-industry survey, regular use was
-  sharply higher among employees with five or more hours of training, and about one-third said they were
-  properly trained (self-reported) [BCG-ATWORK-2025].
+- **Training before access** *(advisor default)* on what the tool does well, its limits, the review expected, and
+  what to do when it is wrong; the ABA expects supervising lawyers to make sure staff are trained on capabilities
+  and limitations [ABA-2024]. A law firm studied by CIPD made training a condition of use and kept a "verify,
+  verify, verify" rule (anonymized practitioner case) [CIPD-2026]. In BCG's survey of more than 10,600 leaders,
+  managers and frontline employees in 11 countries and regions, regular use was sharply higher among employees
+  with at least five hours of training and access to in-person training and coaching, and only one-third said
+  they had been properly trained (self-reported) [BCG-ATWORK-2025].
 - **What changes on the first day:** the steps people now do differently, and who they ask.
 - **Feedback loop:** how corrections and failures reach the eval set.
 - **Visible senior use:** have senior people use it and share what worked and what did not [CIPD-2026].
 - **Role evolution communicated** in the firm's own terms (rule 2; see
   `../../../transformation-advisor/references/method/people-and-change.md`).
-- People and process are most of the work: BCG's survey attributes about 70% of AI implementation challenges to
-  people and process (self-reported survey) [BCG-2024].
+- People and process are most of the work: BCG's survey of 1,000 CxOs and senior executives attributes about 70%
+  of AI implementation challenges to people and process (self-reported) [BCG-2024].
 
 ## 4. Decision rules and launch plan
 
@@ -117,7 +119,8 @@ before production *(advisor default)*.
 
 - **No go-live without** a named owner, a rollback path, logging and a first review point *(advisor default,
   consistent with UKGDS-2025 and NIST-2024)*.
-- **Go/no-go uses** red-team and structured-feedback results explicitly [NIST-2024, MS-4.2-005].
+- **Go/no-go uses** red-team and structured-feedback results explicitly, and the record says how [NIST-2024,
+  MS-4.2-005].
 - **Any zero-tolerance failure** in the latest results means no-go until fixed and re-run *(advisor default)*.
 - **Go-with-conditions** only when each condition is specific, has an owner, and names the event that clears it;
   a condition that touches a zero-tolerance class or the rollback path is a no-go instead *(advisor default)*.
@@ -210,19 +213,20 @@ Illustrative, continuing step 4. Readiness before production, after a pilot on f
   Value*, press release, 2024-10-24. https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
 - `BCG-ATWORK-2025` — Boston Consulting Group, *AI at Work: Momentum Builds, but Gaps Remain*, survey report,
   2025-06-26. https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain
-- `BOE-2023` — Bank of England PRA, *SS1/23 Model risk management principles for banks*, 2023-05-17.
+- `BOE-2023` — Bank of England PRA, *SS1/23 Model risk management principles for banks*, 2023-05-17 (updated
+  version published 2026-04-23, which keeps the model inventory and independent validation principles).
   https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss
 - `CIPD-2026` — CIPD with the Institute for the Future of Work, *How a law firm introduced an AI legal
   assistant*, practitioner case study, 2026-03-25. https://www.cipd.org/ae/knowledge/case-studies/ai-legal-assistant/
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*,
   2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- `FRC-2025` — UK Financial Reporting Council, news release on AI guidance for the audit profession, 2025-06-26.
-  https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/
+- `FRC-2025` — UK Financial Reporting Council, *AI in audit: illustrative example and documentation guidance*,
+  regulator guidance, 2025-06-26. https://www.frc.org.uk/documents/8384/AI_in_Audit.pdf
 - `GOOGLE-2015` — Sculley et al., *Hidden Technical Debt in Machine Learning Systems*, 2015.
   https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf
 - `GOOGLE-2021` — Google Cloud, *Practitioners guide to MLOps*, white paper, 2021-05.
   https://services.google.com/fh/files/misc/practitioners_guide_to_mlops_whitepaper.pdf
-- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, undated. https://developers.google.com/machine-learning/guides/rules-of-ml
+- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HUSAIN-2026` — Hamel Husain, *LLM Evals: Everything You Need to Know (FAQ)*, 2026-09-18. https://hamel.dev/blog/posts/evals-faq/
 - `LAW360-2025` — Law360 Pulse, *How Law Firms Turn AI Skeptics Into 'Champions'*, 2025-09-26. https://www.law360.com/pulse/articles/2392818
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf

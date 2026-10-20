@@ -69,11 +69,11 @@ More, as needed:
 ## 4. Expert moves
 
 1. **Name an AI lead or committee with five jobs: review use cases, approve tools, maintain the policy, monitor
-   compliance, handle incidents.** Setup. Reveals who answers the staff question "can I use this?" [CPAI-ND].
+   compliance, handle incidents.** Setup. Reveals who answers the staff question "can I use this?" [CPAI-2026].
 2. **Ask "what did the last urgent deployment skip?" and design an expedited lane instead of relying on
    exceptions.** Stress test. 47% of surveyed senior AI executives said their organization had previously not
-   applied its governance process to urgent deployments, while 98% had formal policies (self-reported,
-   EY-commissioned) [EY-AIGOV-2026]. The lane design is an advisor default.
+   applied its governance process to urgent deployments, while 98% had formal policies (EY-commissioned survey of
+   202 senior AI executives at US public companies with at least $1 billion revenue; self-reported) [EY-AIGOV-2026]. The lane design is an advisor default.
 3. **Build the controls into the tool.** Rollout. Single sign-on, logging, retention and data-loss prevention in the
    approved tool do the work staff memory cannot [GEND-2026, directional]; inventories should include AI features
    inside approved software [NIST-600-1-2024, GV-1.6-002].
@@ -84,16 +84,16 @@ More, as needed:
    disclose and re-review the wider set
    (`../../transformation-advisor/references/archetypes/professional-services/guardrails.md` §7, §11).
 6. **Put respected business-minded practice leaders in charge, not only technologists.** In partnerships. Partners
-   are owners, so the program lead has influence rather than authority; one firm chair describes handing AI to
-   respected senior people and framing it as a business problem (self-reported) [JOTWELL-EMPSON-2013;
-   POLSINELLI-2026].
+   are owners, so the program lead has influence rather than authority; one law-firm chair describes asking talented
+   senior business leaders, not technologists, to run the business side of AI and treating it as a business problem
+   rather than a tech problem (self-reported) [JOTWELL-EMPSON-2013; POLSINELLI-2026].
 7. **Tie partner accountability to the professional-duty floor: policy, training, monitoring, supervision.** When a
-   leader says governance is optional. ABA Opinion 512, as summarised, places supervision duties on managerial
-   lawyers [LAWNEXT-2024]; the SRA warning, as summarised, says those responsible for supervision may face
+   leader says governance is optional. ABA Opinion 512 says managerial lawyers must establish clear policies on the
+   firm's permissible use of AI and supervise its use [ABA-OP512-2024]; the SRA warning, as summarised, says those responsible for supervision may face
    consequences if inadequate supervision lets false citations through [VINCI-2026].
 8. **Make training a condition of access.** Rollout. One law firm studied by CIPD required training before use
    [CIPD-2026]; the CPAi guide recommends training with examples of what cannot be entered and how to redact
-   [CPAI-ND].
+   [CPAI-2026].
 
 ## 5. Checklists and decision rules
 
@@ -110,7 +110,7 @@ permissions; regime flags (tax-return information, attest client, legal matter, 
 requester's role.
 
 **Re-approval triggers:** model change · sub-processor change · terms change · new data class · new use · incident
-(advisor default, anchored on [NIST-600-1-2024, GV-1.6-003, GV-6.1-008]).
+(advisor default, anchored on [NIST-600-1-2024, GV-1.6-003, GV-6.1-005, GV-6.1-009]).
 
 **Exceptions:** granted only by the role named in the policy; logged at organization level with reason, scope and
 expiry condition; a unit may be stricter than the firm baseline, never looser (advisor default).
@@ -127,15 +127,17 @@ addenda only for regimes (tax, attest, legal).
 
 **Decision rules**
 - A ban with no approved alternative and no request path is not a finished policy (built on [KPMG-MELB-2025, p.75]).
-- Every exception has an owner and a log entry; an unowned exception is a gap [EY-AIGOV-2026].
-- Usage tracking says what it is for and that it is not discipline (KPMG describes its monitoring this way, as
-  reported) [IAB-KPMG-2025].
+- Every exception has an owner and a log entry; an unowned exception is a gap (advisor default, built on
+  [EY-AIGOV-2026]).
+- Usage tracking says what it is for and what it is not; it never rates individuals (core rule 1). KPMG is reported to
+  say its monitoring is not discipline while adding AI use to performance assessments, which shows why the purpose
+  must be explicit [IAB-KPMG-2025].
 
 ## 6. Common traps
 
 | Trap | Evidence | How to avoid |
 |---|---|---|
-| Governance skipped when urgent | 47% skipped the process for urgent deployments despite 98% having policies [EY-AIGOV-2026] | An expedited lane with minimum controls; log exceptions |
+| Governance skipped when urgent | In EY's survey of senior AI executives at large US public companies, 47% said the process had been skipped for urgent deployments although 98% had policies (self-reported) [EY-AIGOV-2026] | An expedited lane with minimum controls; log exceptions |
 | Treating the approved list as proof of control | Exposure travels through unlisted channels and AI features inside approved software (vendor blog, directional) [AMPCUS-2026] | Discovery, data-loss prevention and an inventory with embedded features [NIST-600-1-2024, GV-1.6-002] |
 | Ban-first | [KPMG-MELB-2025, p.75] | Approved tool and request path first |
 | Skeptics treated as blockers | Their concerns have public precedent [SDNY-AVIANCA-2023; GUARDIAN-DELOITTE-2025] | Concede the risk and show the control |
@@ -163,16 +165,16 @@ so every line matches the policy. Then offer the handoffs in `SKILL.md`.
 
 ## 9. Sources
 
+- **ABA-OP512-2024**: American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools* (professional body, 2024-07-29). https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
 - **AMPCUS-2026**: Ampcus Cyber, *Shadow AI in 2027: A Governance Checklist for Security Leaders* (vendor blog, 2026-10-16). https://www.ampcuscyber.com/blogs/shadow-ai-governance-checklist-for-security-leaders/
 - **CIPD-2026**: CIPD with Institute for the Future of Work, *How a law firm introduced an AI legal assistant* (practitioner case study, 2026-03-25). https://www.cipd.org/ae/knowledge/case-studies/ai-legal-assistant/
-- **CPAI-ND**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, undated). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
+- **CPAI-2026**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, 2026-07). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
 - **EY-AIGOV-2026**: Ernst & Young LLP, *EY survey finds that autonomous AI implementation outpaces oversight* (consultancy survey press release, 2026-09-15). https://www.ey.com/en_us/newsroom/2026/09/ey-survey-finds-that-autonomous-ai-implementation-outpaces-oversight-yielding-an-ai-governance-gap
 - **GEND-2026**: Gend, *Shadow AI security playbook for CIOs and CTOs (2026)* (vendor blog, 2026-01-08). https://www.gend.co/blog/shadow-ai-security-playbook
 - **GUARDIAN-DELOITTE-2025**: The Guardian, *Deloitte to pay money back to Albanese government after using AI in $440,000 report* (news, 2025-10-06). https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - **IAB-KPMG-2025**: International Accounting Bulletin, *KPMG to include AI performance reviews* (trade press, secondary, 2025-11-03). https://www.internationalaccountingbulletin.com/?p=44130
 - **JOTWELL-EMPSON-2013**: John Flood, JOTWELL, *How Are Professional Service Firms Governed?* (review of Empson, 2013-09-24). https://legalpro.jotwell.com/?p=653
 - **KPMG-MELB-2025**: University of Melbourne with KPMG, *Trust, attitudes and use of artificial intelligence: A global study 2025* (academic with consultancy, 2025-05). https://kpmg.com/content/dam/kpmgsites/xx/pdf/2025/05/trust-attitudes-and-use-of-ai-global-report.pdf
-- **LAWNEXT-2024**: LawSites (Bob Ambrogi), *In First Ethics Ruling on Gen AI, ABA Says Lawyers Must Have Reasonable Understanding of the Technology* (secondary summary, 2024-07-30). https://lawnext.com/2024/07/in-first-ethics-ruling-on-gen-ai-aba-says-lawyers-must-have-reasonable-understanding-of-the-technology-but-need-not-become-experts.html
 - **MSFT-RAI-2022**: Microsoft, *Microsoft Responsible AI Standard, v2, General Requirements* (named-company internal standard, 2022-06). https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf
 - **MSFT-WTI-2024**: Microsoft and LinkedIn, *AI at Work Is Here. Now Comes the Hard Part* (vendor research, 2024). https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
 - **NIST-600-1-2024**: NIST, *AI RMF: Generative AI Profile, NIST AI 600-1* (standard, 2024-07). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf

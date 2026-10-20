@@ -47,7 +47,7 @@ siloed data among the reasons [DELOITTE-2025].
 6. **Set status** and, for capacity, the split and the decision (§3.2). Ask the benefit owner, one question at a
    time; read `people-and-change.md` before the capacity conversation.
 7. **Keep what was not achieved.** Record not-realised and withdrawn benefits with lessons; they stay on the
-   action list [AUSGOV-2013].
+   benefits action plan [IVI-ITCMF-n.d.; AUSGOV-2013].
 8. **Compute the portfolio measures** for the review pack, and update `updated`.
 
 ## 3. Rules for honest benefits
@@ -75,8 +75,9 @@ scope wider than generative AI; not independently audited) [DBS-2026].
   are in `../../../transformation-advisor/references/method/people-and-change.md` §5: realised or expected, quality
   rollback, the junior pipeline, the honest reason.
 - **Decide on realised, not forecast, value.** No source found describes how organizations make this choice after
-  launch; McKinsey reports 14% of respondents saw an AI-related decline in workforce size in the past year against
-  32% who had expected one (respondent-reported; an effect, not a method) [MCK-2026].
+  launch. In McKinsey's 2026 global survey, 14% of respondents from organizations using AI report an AI-related
+  decline in workforce size over the past year, against 32% who, in the previous year's survey, expected reductions
+  (respondent-reported; an effect, not a method) [MCK-2026].
 - Record the decision in the benefit row (`capacity.decision`, `decided_at_review`) and `role_evolution` on the item.
 
 ### 3.3 Portfolio measures
@@ -88,8 +89,9 @@ benefits-led. Report use-case effects and enterprise P&L effects separately [MCK
 ### 3.4 Review points
 
 Review benefits at each portfolio review once an item is live, and hold a post-implementation review after enough
-cases have run to measure; IVI tracks whether that review happens within six months of completion, and the
-Australian Gate 5 review follows it [IVI-ITCMF-n.d.; AUSGOV-2013]. Set the planned review point for each benefit at
+cases have run to measure; IVI tracks whether a review happens within six months of completion, and the
+Australian Gate 5 guidance recommends a post-implementation review focused on learnings and broader benefits
+[IVI-ITCMF-n.d.; AUSGOV-2013]. Set the planned review point for each benefit at
 `g3`; do not judge a benefit `not-realised` before it.
 
 ### 3.5 Private-equity-owned firms
@@ -124,7 +126,7 @@ Tags: **[U]** unit or practice, **[O]** organization.
 | **Agree the counterfactual before launch** | `g3` | Unattributable benefits [FCC-2026] |
 | **Ask what other change is shipping alongside the AI** | `g3`, every review | Entangled attribution [DELOITTE-2025] |
 | **Separate use-case impact from enterprise P&L** | Every report | The gap between function-level effects and EBIT [MCK-2026] |
-| **Name the benefit owner and count the owners at review** | Intake, every review | Orphan benefits; the UK NAO found 24 of 32 bodies with deployed AI always or usually named an accountable owner (survey of bodies) [NAO-2024] |
+| **Name the benefit owner and count the owners at review** | Intake, every review | Orphan benefits; 24 of 32 UK government bodies with deployed AI said their AI use cases always or usually had a named accountable owner (NAO survey, autumn 2023) [NAO-2024] |
 | **Record benefits expected but not achieved** | Post-implementation review | What to redirect effort toward or write off [AUSGOV-2013; IVI-ITCMF-n.d.] |
 | **Trace each item to the EBITDA bridge in a PE setting** | PE-owned firms | Work that cannot move the metric the owner underwrites [BAIN-2026-PE; PARTNERS-2026] (derived) |
 
@@ -134,10 +136,10 @@ Tags: **[U]** unit or practice, **[O]** organization.
 |---|---|
 | **Forecast reported as realised** | Status per row; realised only on actuals and the agreed counterfactual |
 | **Hours counted as money** | Absorbed, redeployed, cashable; money only for cashable |
-| **No baseline.** In a Thomson Reuters Institute survey, 18% of professional-services respondents knew their organization tracked AI ROI (respondent-reported) [TRI-AIPS-2026] | No row passes `forecast` without a baseline |
+| **No baseline.** In the Thomson Reuters Institute's 2026 survey of legal, tax and accounting, corporate and government professionals, 18% knew their organization tracked the ROI of AI tools (respondent-reported) [TRI-AIPS-2026] | No row passes `forecast` without a baseline |
 | **Summing use-case rows into a P&L claim** [MCK-2026] | Enterprise rows only from finance-recognized lines |
 | **Expecting payback in months** [DELOITTE-2025] | Planned review points set at `g3` |
-| **Survey figures used as benchmarks.** Wharton reports 72% of US enterprise leaders tracking structured ROI metrics (respondent-reported), far above the TRI figure; the samples differ [WHARTON-2025; TRI-AIPS-2026] | Use surveys as context, never as targets |
+| **Survey figures used as benchmarks.** Wharton and GBK's 2025 survey of about 800 US enterprise decision makers reports 72% tracking structured, business-linked ROI metrics (respondent-reported), far above the TRI figure; the samples differ [WHARTON-2025; TRI-AIPS-2026] | Use surveys as context, never as targets |
 
 ## 7. Worked example: the K-1 benefit
 

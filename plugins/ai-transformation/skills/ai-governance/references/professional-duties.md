@@ -21,8 +21,8 @@ keys in brackets are listed in §9.
 ## 1. Goal and exit criteria
 
 **Goal.** For each regime flagged in step 1, a written rule: the duty, the decision it forces, who decides, and what
-is recorded. Existing duties continue to apply and the professional stays responsible for the output [JOFA-2026;
-IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
+is recorded. Existing duties continue to apply and the professional stays responsible for the output (the AICPA ethics
+article and ABA Opinion 512 say so; firms told PCAOB staff the same) [JOFA-2026; ABA-OP512-2024; PCAOB-GENAI-2024].
 
 **Exit when all of these are true:**
 - **One subsection per regime** in the policy, each with the decision rule and its owner.
@@ -61,24 +61,26 @@ IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
    is stated, and uses and disclosures need separate documents [ECFR-7216-2008, 301.7216-3].
 2. **Ask "does the AI step analyse, interpret or apply the law?"** Tax and legal AI use. In the regulation's example,
    sending return information to another firm for advice on a deduction needs prior consent, while pure data
-   processing in the US does not [ECFR-7216-2008, 301.7216-2(d)(1), Example 4]. Whether an AI vendor counts as a
-   preparer or auxiliary-service provider is unresolved; a 2026 ABA Tax Section panel abstract poses that question
-   [WINTHROP-2026].
+   processing in the US does not [ECFR-7216-2008, 301.7216-2(d)(1), Examples 1 and 4]. Whether an AI provider is only
+   processing data or is making a substantive determination is unresolved; a 2026 ABA Tax Section panel abstract poses
+   that question [WINTHROP-2026].
 3. **Never make 7216 consent a condition of the engagement.** Tax engagement letters. The regulation treats consent
    conditioned on service as involuntary, with an exception for disclosure to another preparer assisting with the
    return [ECFR-7216-2008, 301.7216-3(a)(1)-(2)].
 4. **Run an independence screen on every AI service to, and vendor tie with, an attest client.** Audit and attest
    firms. The AICPA ethics article says AI-related nonattest services such as developing or hosting an AI system for
-   an attest client can raise independence concerns [JOFA-2026]; IESBA's technology revisions, effective
-   15 December 2024, address technology-related non-assurance services to audit clients [IESBA-TECH-2023].
+   an attest client can raise independence concerns [JOFA-2026]; IESBA's technology revisions address
+   technology-related non-assurance services to audit and assurance clients, with the independence changes effective
+   for audits and reviews of periods beginning on or after 15 December 2024 [IESBA-TECH-2023].
 5. **For lawyers, test consent for specificity.** Legal AI use with client information. ABA Opinion 512 requires
    informed consent before representation information goes into a self-learning tool, and boilerplate in an
    engagement letter is not enough [ABA-OP512-2024].
 6. **Ask how AI-saved time is billed.** Hourly work. ABA Opinion 512 allows billing only time actually spent
    [ABA-OP512-2024]; tax and other fee positions are in the archetype guardrails.
 7. **Ask where processing happens.** Tax, EU or client-residency limits. Under the tax regulations, disclosure to a
-   preparer outside the US needs prior consent and taxpayer SSNs cannot be disclosed offshore under consent
-   [ECFR-7216-2008, 301.7216-3(b)(4)].
+   preparer outside the US needs prior consent [ECFR-7216-2008, 301.7216-3(a)(3)(i)(D)], and for Form 1040-series
+   returns consent to disclose the SSN to a preparer outside the US is allowed only where an adequate data protection
+   safeguard is used [ECFR-7216-2008, 301.7216-3(b)(4)].
 
 ## 5. Checklists and decision rules
 
@@ -95,8 +97,9 @@ IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
 **Tax decision rules**
 - Write the 7216 decision per workflow, with the reasoning (tax guardrails §12).
 - OPR Alert 2026-19 asks practitioners to use secure, enterprise-approved AI and to vet third-party tools before
-  purchase; it does not mention consent, and no IRS guidance on AI and 7216 consent was found (tax guardrails §3)
-  [IRS-OPR-2026]. Treat the vendor-as-preparer question as open and route it to counsel [WINTHROP-2026].
+  purchase; it does not mention consent, and no IRS guidance on AI and 7216 consent was found (tax guardrails §3, §4)
+  [IRS-OPR-2026]. Treat as open whether an AI provider's step is processing or a substantive determination, and route
+  it to counsel [WINTHROP-2026].
 - Outside the US, PCRT says client data in a public model without consent is likely a breach, and TPB asks for
   client permission before data goes into third-party AI depending on configuration (tax guardrails §4)
   [PCRT-AI-2026; TPB-GS55-2026].
@@ -119,8 +122,8 @@ IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
 **Consent and disclosure principles (all regimes)**
 - Consent is specific: purpose, recipient, information, risks; never boilerplate; never a condition of service where
   the rules forbid it [ECFR-7216-2008; ABA-OP512-2024].
-- Opinion 512, as summarised, says consent is not needed when no client-related information goes into the tool
-  [ABA-512-2024].
+- Opinion 512 says informed consent is not required when the lawyer will not input information relating to the
+  representation, for example idea generation [ABA-OP512-2024].
 - Disclosure follows the client's terms and the regime; consultants inform clients when AI materially contributes
   (professional-services guardrails §6) [ICMCI-AICODE-2026].
 
@@ -131,7 +134,7 @@ IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
 | Blanket boilerplate consent | Opinion 512: boilerplate not sufficient [ABA-OP512-2024]; 7216 consent must be specific, signed, dated and prior [ECFR-7216-2008] | Consent per purpose and recipient, explaining risks |
 | Treating AI services to attest clients as "just technology" | [JOFA-2026; IESBA-TECH-2023] | Independence screen on the request form |
 | Assuming a summary is never a substantive determination | The line is analysis, interpretation or application of law [ECFR-7216-2008] | Ask E2 per step, not per tool |
-| Guessing an unsettled rule | Several questions are open (vendor as preparer; enterprise-tier privilege) | Write the question down; route it to counsel |
+| Guessing an unsettled rule | Several questions are open (whether an AI provider makes substantive determinations; enterprise-tier privilege) | Write the question down; route it to counsel |
 | Quoting stale EU dates | Dates moved in 2026 [EU-OMNIBUS-2026] | Quote Regulation (EU) 2026/1744 and re-verify |
 
 ## 7. Worked example
@@ -139,13 +142,15 @@ IESBA-TECH-2023; ABA-OP512-2024; PCAOB-GENAI-2024].
 Illustrative, not a case study. A US tax practice proposes a shared team skill in its business-tier assistant to
 summarise prior-year returns and draft position memos.
 
-- **Triage (move 1):** inputs are tax return information. Summarising a return is processing; drafting a position
-  memo applies law [ECFR-7216-2008, 301.7216-2(d)(1), Example 4].
+- **Triage (move 1):** inputs are tax return information. Drafting a position memo applies law, so it is a
+  substantive determination; a summary that only restates the return's figures is treated as processing, a reading
+  the firm confirms with counsel (move 2) [ECFR-7216-2008, 301.7216-2(d)(1), Examples 1 and 4].
 - **Location (move 7):** the entry's processing region is confirmed as US; SSNs are masked before input.
 - **Decision:** approve summarisation in the business-tier entry for `regulated` data with US processing and masked
   SSNs; route position drafting to `tier-4` with preparer review, and obtain prior signed consent where the vendor
-  step involves a substantive determination. Record prompt, verification and reviewer on the file [CPAI-ND].
-- **Open question:** whether the vendor is a covered preparer goes to counsel [WINTHROP-2026].
+  step involves a substantive determination. Record prompt, verification and reviewer on the file [CPAI-2026].
+- **Open question:** whether the AI provider's step is processing or a substantive determination, and so which
+  consent applies, goes to counsel [WINTHROP-2026].
 - **Fees:** the engagement letter and pricing are reviewed against the fee positions in the tax guardrails §9.
 
 ## 8. Output
@@ -158,9 +163,8 @@ lines to `overlay/guardrails.md`. Set `step_completed: 5`, `next_step: 6`.
 Keys marked † are also cited in the archetype `guardrails.md` files named in §5, where the full context sits.
 
 - **ABA-OP512-2024** †: American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools* (professional body, 2024-07-29). https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
-- **ABA-512-2024**: Ezel, *ABA Formal Opinion 512, Generative AI Tools (summary)* (secondary summary of a professional-body opinion, 2024-07-29). https://ezel.ai/ethics-opinions/aba/512-generative-ai-tools
 - **CALBAR-GENAI-2026** †: State Bar of California, *Practical Guidance for the Use of Generative Artificial Intelligence in the Practice of Law (2026 revision)* (regulator, 2026-05-14). https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf
-- **CPAI-ND**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, undated). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
+- **CPAI-2026**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, 2026-07). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
 - **ECFR-7216-2008**: US Treasury and IRS, *26 CFR 301.7216-1 to -3* (regulation, T.D. 9375 of 2008 as amended). https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.7216-3
 - **EU-OMNIBUS-2026**: European Parliament and Council, *Regulation (EU) 2026/1744 amending Regulation (EU) 2024/1689* (regulation, 2026-07-08). https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng
 - **FRC-AI-2025**: Financial Reporting Council, *FRC publishes landmark guidance providing clarity to audit profession on the uses of AI* (regulator news release, 2025-06-26). https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/

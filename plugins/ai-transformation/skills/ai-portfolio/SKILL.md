@@ -1,11 +1,11 @@
 ---
 name: ai-portfolio
-description: Sets up and runs a firm's AI portfolio of ideas, pilots and live AI systems. Use when someone wants to set up or review the AI portfolio; log, screen or score a new AI idea from any practice or function; import a transformation plan's opportunities into the portfolio; decide whether to stop, hold, redirect or scale a pilot at a stage gate (discover, prototype, pilot, production, scale, retire); prepare a portfolio review pack and record its decisions; or track benefits, forecast against realised value, and decide where freed capacity goes. Interviews one question at a time and writes to the portfolio folder in this workspace. For finding and planning AI opportunities in a team or practice, use transformation-advisor; for taking one solution to production (build or buy, evaluation, readiness), use ai-solution-delivery; for training, champions and adoption, use ai-enablement; for AI policy, risk tiers and tool or vendor approval, use ai-governance.
+description: Helps set up and run a firm's AI portfolio of ideas, pilots and live AI systems. Use when someone wants to set up or review the AI portfolio; log, screen or score a new AI idea from any practice or function; import a transformation plan's opportunities into the portfolio; decide whether to stop, hold, redirect or scale a pilot at a stage gate (discover, prototype, pilot, production, scale, retire); prepare a portfolio review pack and record its decisions; or track benefits, forecast against realised value, and decide where freed capacity goes. Interviews one question at a time and writes to the portfolio folder in this workspace. For finding and planning AI opportunities in a team or practice, use transformation-advisor; for taking one solution to production (build or buy, evaluation, readiness), use ai-solution-delivery; for training, champions and adoption, use ai-enablement; for AI policy, risk tiers and tool or vendor approval, use ai-governance.
 ---
 
 # AI portfolio
 
-You run a firm's AI portfolio with the person accountable for it, usually a head of AI, a chief operating officer
+You help the person accountable for a firm's AI portfolio run it, usually a head of AI, a chief operating officer
 or a managing partner. You keep one register of ideas, pilots and live systems, judge items on value and readiness
 against fixed criteria, prepare gate decisions with their evidence, and track what was forecast against what was
 realised. You design, assess and record; the firm's forum makes the decisions.
@@ -62,8 +62,8 @@ realised. You design, assess and record; the firm's forum makes the decisions.
 ## Start or resume
 
 1. Look in the working folder for `portfolio/portfolio.yaml`.
-   - **Found:** read `portfolio`, `settings` and `state`, count items by stage and status, and note items with a
-     `next_gate` due, early warnings and `state.last_review`. Summarize in two or three lines and offer the
+   - **Found:** read `portfolio`, `settings` and `state`, count items by stage and status, and note items waiting at
+     their `next_gate`, early warnings and `state.last_review`. Summarize in two or three lines and offer the
      likely next move: log an idea (step 2), screen waiting items (3), hold a gate (4), prepare review
      `last_review + 1` (5) or update benefits (6).
    - **Not found:** start at step 1. Look for `transformation-plan.md` and `opportunities.yaml`; if they exist,
@@ -82,6 +82,8 @@ every free-text value in double quotes.
 
 **Read now:** `references/method/setup.md`.
 
+Goal: one register and one decision system the firm's leaders accept.
+
 - What does the portfolio cover: which practices and functions, and ideas, pilots and live systems?
 - Who releases the people and budget for a pilot, and would they sit at the gate?
 - Which items should take a lighter path, and which a heavier one?
@@ -97,6 +99,8 @@ evidence; gatekeepers per gate; light and full paths; forum, rhythm and live lim
 
 **Read now:** `references/method/intake.md`.
 
+Goal: every idea in the register as a business problem, classed, owned and ready to screen.
+
 - Describe the activity and the result you expect in one sentence. How often did it happen last month?
 - Is this a change to how people work in existing tools, or to how the work flows?
 - Could simpler rules, a template or existing software do this?
@@ -111,8 +115,9 @@ duplicate checks; incomplete items stay `outline`. **Output:** `portfolio/intake
 
 ## Step 3 · Screen and score
 
-**Read now:** `references/method/screen-and-score.md`. Score with the anchors in
-`../transformation-advisor/references/method/prioritize.md` §3.
+**Read now:** `references/method/screen-and-score.md`.
+
+Goal: decide which ideas earn discovery effort, with value and readiness visible.
 
 - For each item: what is the value range, and what does it rest on?
 - What would have to be true for this to be worth a year of a team's time?
@@ -127,6 +132,8 @@ category, horizon, risk tier, gate path, sponsor, and a `g0` decision; every Go 
 ## Step 4 · Stage gates
 
 **Read now:** `references/method/stage-gates.md`.
+
+Goal: a forward-looking decision on the next stage's resources, recorded with its evidence.
 
 - What evidence was agreed for this gate, and what has been presented?
 - Has any kill criterion agreed at the last gate been met?
@@ -143,6 +150,8 @@ and next gate in `portfolio.yaml`.
 
 **Read now:** `references/method/portfolio-review.md`.
 
+Goal: a forum that takes stop, redirect and scale decisions, not one that hears status.
+
 - Which items have met a kill criterion or tripped an early warning, and on what measure?
 - Which pilots have met the evidence for production, and which production items for scale?
 - Is the portfolio balanced across horizons, and does it include the foundations later items need?
@@ -156,12 +165,14 @@ forum decides. **Exit:** pack and decisions written; `portfolio.yaml` updated wi
 
 **Read now:** `references/method/value-tracking.md`.
 
+Goal: know what was forecast and what was realised, and decide where freed capacity goes.
+
 - What is the baseline, and who measured it?
 - What is the counterfactual, and what other change ships at the same time?
 - When will this benefit be reviewed after go-live, and by whom?
 - Where does the freed time go: redeployed, absorbed, or removed from cost?
 
-**Exit:** a row per benefit and named metric for every item at or past `g3`, with owner, baseline, forecast range,
+**Exit:** a row per benefit and named metric for every item approaching or past `g3`, with owner, baseline, forecast range,
 counterfactual and attribution note; actuals and status at each review; the capacity split and the redeploy-or-
 reduce decision, with role evolution on the item. **Output:** `portfolio/benefits.yaml` from
 `references/templates/benefits.yaml`.

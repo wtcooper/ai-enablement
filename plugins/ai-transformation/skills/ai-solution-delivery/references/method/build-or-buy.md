@@ -76,7 +76,7 @@ reasons, who maintains it, and what would make the firm revisit it.
 | Evidence on our tasks | "What did a sanctioned tool get wrong on a sample of our real tasks?" | [STANFORD-2024; A16Z-2025, item 11] |
 | Total cost | "What is the run cost at expected volume, including review time, support and re-evaluation?" | [UKGDS-2024; GOOGLE-2015] |
 | Data boundaries | "What data leaves our boundary, under which terms, and can the vendor use it for other purposes?" | [NIST-2024, GV-6.2-007; UKGDS-2025] |
-| Lock-in and exit | "What does switching cost, and what would we retest?" CIOs told a16z that agent workflows tuned for one model are hard to move | [A16Z-2025, item 10; UKGDS-2025] |
+| Lock-in and exit | "What does switching cost, and what would we retest?" a16z reports, from its survey of 100 CIOs and buyer interviews, that guardrails and prompts built for agentic workflows make switching models harder | [A16Z-2025, item 10; UKGDS-2025] |
 | Maintenance | "Who re-evaluates models, and retunes prompts and guardrails when the model changes?" Models are the least durable component | [APPLIEDLLMS-2024, 2.2.2, 3.2.1; GOOGLE-2015] |
 | Incidents and change | "How does the vendor notify incidents and model changes, and is it in the contract?" | [NIST-2024, GV-6.2-007] |
 | Fit to existing systems | "Does it work inside the systems professionals already use, or ask them to move?" | *(advisor default)* |
@@ -94,7 +94,7 @@ from a source)*:
 | `personal-assistant` | Individual drafting, summarizing, analysis, with a person reviewing every output | Unmanaged data handling; inconsistent practice |
 | `shared-team-skills` | Repeatable team tasks with agreed prompts, templates and reference material | Version drift; no shared evaluations |
 | `workflow-automation` | Fixed multi-step flows through existing systems | Silent failure; brittle integrations |
-| `background-agent` | Tasks that can wait, reviewed at the end; 66% of surveyed deployed agents tolerate minutes or longer [BERKELEY-2026] | Compounding errors; permissions |
+| `background-agent` | Tasks that can wait, reviewed at the end; 66% of surveyed deployed agent systems allow response times of minutes or longer (UC Berkeley-led academic survey, N=53) [BERKELEY-2026] | Compounding errors; permissions |
 | `managed-agent-runtime` | Tool-using agents that need logging, permissions, isolation and rollback | Cost; lock-in; complexity |
 
 ### 3.4 Decision rules
@@ -102,16 +102,17 @@ from a source)*:
 - **General capability: buy or configure.** Build only around a proprietary workflow, data or method, and put
   the firm's effort into evaluations, guardrails and data loops around whatever model is used
   [APPLIEDLLMS-2024, 3.2.1 and 3.2.4].
-- **Regulated or high-risk work:** a16z reports the shift to buying has not played out there; assume more
-  in-house control and ask for stronger evidence [A16Z-2025, item 12].
+- **Regulated or high-risk work:** a16z reports that the shift from building to buying has not played out in
+  regulated or high-risk industries such as healthcare [A16Z-2025, item 12]; so expect more in-house control and
+  ask for stronger evidence *(advisor default)*.
 - **Do not fine-tune first.** Prompt, retrieve and evaluate first; fine-tune only with proof. Practitioners
-  report fine-tuning driven more by fear of missing out than strategy [APPLIEDLLMS-2024, 3.1.2]. In a Berkeley
-  study, 70% of 20 interviewed deployed-agent cases used off-the-shelf models without weight tuning
-  [BERKELEY-2026].
-- **Treat build-versus-partner success rates as a caution, not a rule.** MIT NANDA reports external partnerships
-  reaching deployment about 67% of the time against about 33% for internal builds; the figures are
-  self-reported, and the authors say they may reflect organizational capability rather than approach
-  [MITNANDA-2025].
+  report fine-tuning driven more by fear of missing out than strategy [APPLIEDLLMS-2024, 3.1.2]. In a UC
+  Berkeley-led academic study, 14 of 20 interviewed deployed-agent teams (70%) used off-the-shelf models without
+  weight tuning [BERKELEY-2026].
+- **Treat build-versus-partner success rates as a caution, not a rule.** MIT Project NANDA reports external
+  partnerships reaching deployment about 67% of the time against about 33% for internal builds (interview sample
+  of 52 organizations); the figures are self-reported, and the authors say they may reflect organizational
+  capability rather than approach [MITNANDA-2025].
 - **No named owner after launch, no build** *(advisor default)*.
 - **Outside the catalog:** flag it and hand the vendor evaluation to **ai-governance**; do not treat the option
   as available until it is approved.
@@ -138,15 +139,16 @@ Tags: **[T]** team, **[U/O]** unit or organization.
    model changes. Reveals the hidden recurring cost and the switching cost [A16Z-2025; APPLIEDLLMS-2024;
    GOOGLE-2015].
 3. **Put lock-in and exit in the requirements; give suppliers dummy data and a problem statement, not a solution
-   spec.** UK guidance says to consider strategies to avoid vendor lock-in, start with the problem statement and
-   budget for hidden costs [UKGDS-2025].
+   spec.** UK guidance says to consider strategies to avoid vendor lock-in, start with the problem statement,
+   give suppliers dummy data where possible and give guidance on budget to consider hidden costs [UKGDS-2025].
 4. **Treat vendor accuracy claims as hypotheses; run your own cases on the vendor tool.** In a preregistered
    study, legal research tools marketed with "hallucination-free" or similar language hallucinated 17% to 33%
    of the time on the study's queries (independent; 2024 product versions) [STANFORD-2024].
 5. **Baseline against the current process on the same tasks.** Vals' legal study used a lawyer control group:
-   AI tools beat it on four of seven tasks and none beat it on one research task (third-party benchmark;
-   vendors chose which tasks to enter). In the Berkeley survey only 39% compared their agent to a non-agentic
-   baseline [VALS-2025; BERKELEY-2026].
+   at least one AI tool beat it on four of seven tasks, the lawyers did better on two (including a multi-step
+   research task) and matched the best tool on one (third-party benchmark; vendors chose which tasks to enter).
+   In the Berkeley-led survey of practitioners with deployed agents, only 39% compared their agent to a
+   non-agentic baseline [VALS-2025; BERKELEY-2026].
 
 ## 6. Common traps
 

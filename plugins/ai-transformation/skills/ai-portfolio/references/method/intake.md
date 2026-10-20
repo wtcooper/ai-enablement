@@ -21,7 +21,7 @@ and how to import with a back-link. Keys in brackets are listed in §9.
 **Goal.** Every idea is in one register, described as a business problem, classed, owned and ready to screen.
 Intake is a register, not an inbox: the UK AI Playbook suggests a use cases register for capturing ideas and
 deciding which to explore first [UKGOV-2025], and Microsoft's guidance keeps a prioritized backlog with consistent
-criteria [MSFT-PLAN-2026].
+criteria [MSFT-COE-2026].
 
 **Exit criteria** for each item:
 
@@ -40,7 +40,7 @@ criteria [MSFT-PLAN-2026].
 
 1. **Name the step.** "Let's log this idea so it can be screened. Next we score it."
 2. **Get the sentence.** Ask for the activity and the result in one sentence, then for how often the activity
-   happened last month [MSFT-PLAN-2026]. Ask one question at a time.
+   happened last month; Microsoft's guidance asks to confirm it happens often enough [MSFT-PLAN-2026]. Ask one question at a time.
 3. **Start from the problem.** If the idea starts from a tool ("we should use agents for…"), ask where results
    miss expectations or people repeat manual work [MSFT-PLAN-2026; UKGOV-2025].
 4. **Class it** (§3.2). Route seat and licence roll-outs to the enablement line.
@@ -66,7 +66,7 @@ criteria [MSFT-PLAN-2026].
 
 ### 3.1 Intake checklist
 
-- One sentence: activity plus expected result [MSFT-PLAN-2026].
+- One sentence: activity plus expected result (Microsoft asks for a short statement of both) [MSFT-PLAN-2026].
 - Volume from a record, not a typical week (proposed default for the volume prompt).
 - Class set [MSFT-PLAN-2026].
 - Owner named as a role; benefit owner asked for, even if not yet known [IVI-ITCMF-n.d.].
@@ -85,9 +85,10 @@ scored.
 | `business-automation` | The flow of work changes: steps removed, merged or run without a person on the normal path | Portfolio item; full or light path by risk tier |
 | `new-value` | A new service, product or price | Portfolio item; judged on revenue mechanics |
 
-Why separate them: MIT NANDA reports widely adopted chat tools mainly "enhance individual productivity, not P&L
-performance", and an apparent pilot-to-implementation rate of about 83% for generic chat tools against 5% for
-task-specific tools (interview-based; its authors call the figures directional) [MITNANDA-2025]. Counting seat
+Why separate them: MIT NANDA reports widely adopted chat tools "primarily enhance individual productivity, not P&L
+performance". Generic chat tools show an apparent pilot-to-implementation rate of about 83%, while only 5% of
+organizations got task-specific tools into production (60% evaluated, 20% piloted). Interviews with 52
+organizations and a survey of 153 senior leaders; its authors call the figures directional [MITNANDA-2025]. Counting seat
 roll-outs as portfolio wins inflates the pipeline (derived from that contrast).
 
 ## 4. Question bank
@@ -117,7 +118,7 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 | **Ask "could a few if-then rules do this?"** | Every intake | AI applied where it is not needed; RAND's interviewees described datasets with a handful of dominant patterns [RAND-2024] |
 | **Class the item and route seat roll-outs to the enablement line** | Every intake | Inflated pipeline counts [MITNANDA-2025] (derived) |
 | **Ask for the benefit owner by role at intake** | Every intake | Orphan benefits; the share of projects with a benefits owner is a maturity measure [IVI-ITCMF-n.d.] |
-| **Ask where people already use personal AI tools** | Intake drives across a practice | Real demand and unsanctioned risk; MIT NANDA reports workers at over 90% of surveyed companies used personal AI tools regularly (small, non-random sample; directional) [MITNANDA-2025] |
+| **Ask where people already use personal AI tools** | Intake drives across a practice | Real demand and unsanctioned risk; MIT NANDA reports workers at over 90% of the companies it surveyed used personal AI tools regularly (52 organizations interviewed, 153 senior leaders surveyed; non-random, directional) [MITNANDA-2025] |
 
 ## 6. Common traps
 
@@ -128,7 +129,7 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 | **Seat roll-outs counted as wins** | Enablement line, reported apart |
 | **Typical-week volumes** | Ask for last month's count from a record; label the number |
 | **Re-scoring an imported item from scratch without its history** | Keep the advisor's ranges and scores and the back-link; re-score only against the portfolio's weights |
-| **Duplicates across practices** | Search the register at every intake; HBR's whole-portfolio view exists to see them [HBR-2026] |
+| **Duplicates across practices** | Search the register at every intake; HBR's portfolio approach unifies efforts across departments [HBR-2026] |
 
 ## 7. Worked example: three ideas and an import
 
@@ -160,6 +161,8 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
   guidance, undated. https://portal.ivi.ie/+itcmf/18.07/value/BAR/C/C3
 - `MITNANDA-2025` — Challapally, Pease, Raskar, Chari, MIT Project NANDA, *The GenAI divide: state of AI in
   business 2025*, research report (preliminary), 2025-07. https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+- `MSFT-COE-2026` — Microsoft Learn, *Establish an AI Center of Excellence*, vendor guidance, updated
+  2026-04-10. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
 - `MSFT-PLAN-2026` — Microsoft Learn, *Plan for AI adoption*, vendor guidance, updated 2026-10-15.
   https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
 - `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects and how they

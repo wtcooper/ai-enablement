@@ -75,15 +75,18 @@ At the reviews set in step 1, add:
 
 - **Balance:** near, medium and long horizons; risk and return; capability areas; foundations that later items need
   [HBR-2026]. A portfolio of only quick wins or only moonshots is a finding.
-- **Recalibrate criteria and weights** if the forum's decisions keep overriding the scores [HBR-2026].
+- **Recalibrate criteria and weights** [HBR-2026]; a proposed trigger is the forum's decisions repeatedly overriding
+  the scores.
 - **Budget split by function and practice:** check that the visible functions are not crowding out higher-return
   back-office work [MITNANDA-2025].
 - **Live limit:** owners carrying more than one live item; shared reviewers stretched.
 - **The central team's signals:** approval delays, experts who cannot cover all teams, recurring priority debates
   [MSFT-COE-2026].
-- **Spend context**, if the forum asks how its AI budget compares: 28% of McKinsey's respondents spend more than
-  10% of their ICT budget on AI (respondent-reported) [MCK-2026]; 95% of Deloitte's "ROI Leaders" allocate more
-  than 10% (respondent-reported) [DELOITTE-2025]. Different samples; context only, not a target.
+- **Spend context**, if the forum asks how its AI budget compares: 28% of respondents to McKinsey's 2026 global
+  survey (1,719 participants, 97 countries) say their organizations spend more than 10% of their ICT budget on AI
+  (respondent-reported) [MCK-2026]; 95% of the "ROI Leaders" in Deloitte's 2025 survey of 1,854 European and
+  Middle East executives allocate more than 10% of their technology budget (respondent-reported) [DELOITTE-2025].
+  Different samples; context only, not a target.
 
 ### 3.4 In a partner-led firm
 
@@ -94,8 +97,9 @@ At the reviews set in step 1, add:
   self-reported.
 - Check how claimed time savings were measured before they enter the pack; lawyers' and consultants' own estimates
   are self-reported [PAPERJAM-2025; LEXIS-CONSULT-2025].
-- Separate usage from value. In a Thomson Reuters Institute survey, 18% of professional-services respondents knew
-  their organization tracked AI ROI (respondent-reported) [TRI-AIPS-2026].
+- Separate usage from value. In the Thomson Reuters Institute's 2026 survey of legal, tax and accounting, corporate
+  and government professionals, 18% knew their organization tracked the ROI of AI tools (respondent-reported)
+  [TRI-AIPS-2026].
 
 ## 4. Question bank
 
@@ -120,7 +124,7 @@ Tags: **[U]** unit or practice, **[O]** organization.
 |---|---|---|
 | **Define early-warning triggers and review them every time** | Every review | Items needing intervention before their next gate [HBR-2026] |
 | **Check balance and foundations, not only the ranking** | Rebalance | A portfolio of quick wins or moonshots, and missing foundations [HBR-2026; HBR-2018] |
-| **Separate use-case results from enterprise P&L** | Benefits section | The gap between function-level effects and EBIT; 37% of McKinsey's respondents attribute at least some EBIT impact to AI (respondent-reported) [MCK-2026] |
+| **Separate use-case results from enterprise P&L** | Benefits section | The gap between function-level effects and EBIT; 37% of respondents to McKinsey's 2026 global survey report that AI contributed positively to EBIT (respondent-reported) [MCK-2026] |
 | **Report seat roll-outs on the enablement line** | Pipeline view | Inflated pilot-to-production counts [MITNANDA-2025] (derived) |
 | **Look for central-team bottleneck signs** | Rebalance | When to move to an advisory model [MSFT-COE-2026] |
 | **Ask each skeptic what result would change their mind** | Before a contested decision | Whether evidence can settle the objection (an inference from the partner sources) [TRI-AIPS-2026] |
@@ -130,7 +134,7 @@ Tags: **[U]** unit or practice, **[O]** organization.
 | Trap | How to avoid it |
 |---|---|
 | **Status theatre:** updates with no decisions [UMBREX-n.d.] | Every surfaced item ends with a recorded outcome or a named open question |
-| **Adoption reported as value.** 80% of McKinsey's respondents say AI improved individual productivity, against 37% reporting EBIT impact (respondent-reported) [MCK-2026] | Usage and value in separate lines |
+| **Adoption reported as value.** In McKinsey's 2026 global survey (1,719 participants), 80% say AI improved their individual productivity, against 37% reporting an EBIT contribution (respondent-reported) [MCK-2026] | Usage and value in separate lines |
 | **Pilot sprawl** [HBR-2026] | Live limit; hold before adding |
 | **Killing on early P&L** [NBER-2020; DELOITTE-2025] | Leading indicators until the planned review point |
 | **Trusting self-reported adoption figures** | Ask how "use" was defined and measured [POLSINELLI-2026] |
@@ -139,7 +143,7 @@ Tags: **[U]** unit or practice, **[O]** organization.
 ## 7. Worked example: review 3
 
 *Illustrative*, continuing the firm; a rebalance review. **Pipeline:** two at intake, three in discover, one in
-prototype, two in pilot, one in production; live four of six. Enablement line: chat assistant licences issued to
+prototype, two in pilot, one in production; live (prototype, pilot, scale) three of six. Enablement line: chat assistant licences issued to
 two practices, reported apart.
 
 **Decisions asked.** (1) K-1 extraction met its `g3` evidence: pilot offices show fewer preparer hours than the
@@ -148,7 +152,7 @@ pilot in advisory shows slippage on two reviews running and its owner has moved 
 owner is named, or kill. (3) Know-how search is held behind the library clean-up, which has passed `g2`. Ask: Go
 into discover as live capacity opens.
 
-**Rebalance.** Four of five live items are near-horizon capacity plays; no item serves the growth lever. The forum
+**Rebalance.** All four items past discover are near-horizon capacity plays; no item serves the growth lever. The forum
 asks the advisory practice to bring a new-value idea through intake, and keeps the weights.
 
 **Part B.** K-1: Go to production, with the capacity decision (redeploy to advisory reviews) recorded in

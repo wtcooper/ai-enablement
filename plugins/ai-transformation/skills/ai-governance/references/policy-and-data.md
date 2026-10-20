@@ -18,10 +18,11 @@ classes and tool tiers are in `references/schemas/policy.md` §3.
 
 ## 1. Goal and exit criteria
 
-**Goal.** Rules staff can apply in the moment ("what may I paste where"), because for knowledge work the main exposure
-is confidential client information entering a tool [CPAI-ND]. The acceptable-use policy is the floor, not the
+**Goal.** Rules staff can apply in the moment ("what may I paste where"), because for knowledge work a central exposure
+is confidential client information entering a tool; the CPAi guide calls data security "vital" for CPA firms and asks
+firms to restrict confidential inputs where a tool is not protected [CPAI-2026]. The acceptable-use policy is the floor, not the
 program: it works only with a catalog of tools people can actually get, a request path that answers quickly, and
-training [CPAI-ND; KPMG-MELB-2025, p.75].
+training [CPAI-2026; KPMG-MELB-2025, p.75].
 
 **Exit when all of these are true:**
 - **Definitions and scope:** what "AI tool", "generative AI" and "agent" mean here; which people, runtime classes and
@@ -36,7 +37,7 @@ training [CPAI-ND; KPMG-MELB-2025, p.75].
 ## 2. How to run it
 
 1. **Define the terms and tie them to existing duties.** Start the policy with what is governed and why, linking use
-   to professional obligations and confidentiality agreements [CPAI-ND].
+   to professional obligations and confidentiality agreements [CPAI-2026].
 2. **Choose a backbone.** Frameworks are vocabularies, not rulebooks. NIST AI RMF organizes the work into GOVERN, MAP,
    MEASURE and MANAGE [NIST-RMF-2023]; ISO/IEC 42001 is a certifiable management-system standard whose text is
    paywalled; the CSA AI Controls Matrix maps 243 control objectives in 18 domains to ISO/IEC 42001, ISO/IEC 27001 and
@@ -75,7 +76,7 @@ More, as needed:
 
 1. **Define each data class with one worked example and a redaction example.** Drafting. Reveals whether staff can
    classify in practice; the CPAi guide recommends training with examples of what cannot be entered, how to redact,
-   and alternatives that respect privacy requirements [CPAI-ND].
+   and alternatives that respect privacy requirements [CPAI-2026].
 2. **For each tool ask "which product tier and contract?" and record each as a separate catalog entry.** Drafting
    the matrix. Reveals that one vendor's consumer and commercial tiers carry different data terms; one provider's
    commercial page separates its consumer plans from its commercial products [ANTHROPIC-PRIV-2026; OPENAI-ENT-ND;
@@ -86,14 +87,14 @@ More, as needed:
    EY-commissioned survey of 202 senior AI executives at large US public companies, 98% reported formal AI governance
    policies and 47% said their organization had previously not applied its governance process to urgent deployments
    (self-reported) [EY-AIGOV-2026].
-5. **Treat the policy as a data-handling rule first.** Short policies. Reveals the one rule people must remember;
-   the main exposure in knowledge work is confidential information entering a tool [CPAI-ND].
+5. **Treat the policy as a data-handling rule first.** Short policies. Reveals the one rule people must remember:
+   what may go into which tool (advisor default, built on the CPAi guide's data-security section [CPAI-2026]).
 
 ## 5. Checklists and decision rules
 
 **Policy skeleton (for the whole policy):** purpose and definitions; scope; data classes and tool-tier matrix;
 approved-tool catalog and request path; risk tiers and review; records of AI use; client disclosure and consent;
-training and acknowledgement; incidents; exceptions; maintenance and review [CPAI-ND; NIST-RMF-2023].
+training and acknowledgement; incidents; exceptions; maintenance and review [CPAI-2026; NIST-RMF-2023].
 
 **Default matrix (advisor default; adjust with the user):**
 
@@ -114,8 +115,10 @@ training and acknowledgement; incidents; exceptions; maintenance and review [CPA
 
 **Decision rules**
 - A consumer-tier entry never receives `client-confidential` or `regulated` data (advisor default).
-- An approval names tool, tier, contract and data classes; anything less is not an approval [ANTHROPIC-PRIV-2026].
-- The policy names the role that approves tools and the role that grants exceptions [EY-AIGOV-2026].
+- An approval names tool, tier, contract and data classes; anything less is not an approval (advisor default, built on
+  the tier differences in [ANTHROPIC-PRIV-2026; OPENAI-ENT-ND]).
+- The policy names the role that approves tools and the role that grants exceptions (advisor default, built on
+  [CPAI-2026; EY-AIGOV-2026]).
 - Every restriction names the approved alternative or the request path (advisor default, built on
   [KPMG-MELB-2025, p.75]).
 
@@ -123,11 +126,11 @@ training and acknowledgement; incidents; exceptions; maintenance and review [CPA
 
 | Trap | Evidence | How to avoid |
 |---|---|---|
-| Ban-first policy | Uploads reported by 67% of employees where generative AI was banned versus 33% with no policy (self-reported, correlational) [KPMG-MELB-2025, p.75] | Approve a tool and a request path first; then restrict |
+| Ban-first policy | In the University of Melbourne and KPMG survey of employees in 47 countries, uploads of company information to public tools were reported by 67% where generative AI was banned versus 33% with no policy (self-reported, correlational) [KPMG-MELB-2025, p.75] | Approve a tool and a request path first; then restrict |
 | Approving the vendor, not the tier | Published terms differ by consumer and commercial tier [ANTHROPIC-PRIV-2026] | Catalog entry = tool + tier + contract + data class |
-| Policy nobody knows | About two in five employees said a policy or guidance existed; 56% had used AI at work without knowing whether it was allowed [KPMG-MELB-2025, pp.71, 75] | Role-based training with examples and acknowledgement; hand to ai-enablement |
+| Policy nobody knows | In the same survey, about two in five employees said a policy or guidance existed; 56% had used AI at work without knowing whether it was allowed (self-reported) [KPMG-MELB-2025, pp.71, 75] | Role-based training with examples and acknowledgement; hand to ai-enablement |
 | "No training on your data" taken at face value | Commercial pages state exceptions such as opt-in feedback [ANTHROPIC-PRIV-2026; OPENAI-ENT-ND] | Read the exceptions in step 6; set the admin controls as catalog conditions |
-| Classes nobody can apply | Definitions without examples | One worked example and one redaction example per class [CPAI-ND] |
+| Classes nobody can apply | Definitions without examples | One worked example and one redaction example per class [CPAI-2026] |
 
 ## 7. Worked example
 
@@ -154,7 +157,7 @@ lines of `overlay/guardrails.md` (`references/templates/guardrails.md`). Set `st
 ## 9. Sources
 
 - **ANTHROPIC-PRIV-2026**: Anthropic, *Is my data used for model training? (commercial products)* (vendor documentation, 2026-08-18). https://privacy.anthropic.com/en/articles/7996868-is-my-data-used-for-model-training
-- **CPAI-ND**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, undated). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
+- **CPAI-2026**: CPAi, *Drafting an AI Policy that Actually Works* (professional association guide, 2026-07). https://www.cpai.com/Education-Resources/My-Firm/Data-Security-Risk-Management/Drafting-an-AI-Policy-that-Actually-Works
 - **CSA-AICM-2025**: Cloud Security Alliance, *AI Controls Matrix (AICM) v1* (industry body, 2025-07-09). https://cloudsecurityalliance.org/artifacts/ai-controls-matrix
 - **EY-AIGOV-2026**: Ernst & Young LLP, *EY survey finds that autonomous AI implementation outpaces oversight* (consultancy survey press release, 2026-09-15). https://www.ey.com/en_us/newsroom/2026/09/ey-survey-finds-that-autonomous-ai-implementation-outpaces-oversight-yielding-an-ai-governance-gap
 - **KPMG-MELB-2025**: University of Melbourne with KPMG, *Trust, attitudes and use of artificial intelligence: A global study 2025* (academic with consultancy, 2025-05). https://kpmg.com/content/dam/kpmgsites/xx/pdf/2025/05/trust-attitudes-and-use-of-ai-global-report.pdf
