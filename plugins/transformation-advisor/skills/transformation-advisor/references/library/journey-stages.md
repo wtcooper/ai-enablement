@@ -3,7 +3,8 @@
 Last reviewed 2026-10-20. Source keys in brackets are listed in §10. This file is for **planning the move to the next stage**: what
 to invest in and emphasize, how to tell the move is done, and where scopes fail. **Placing a scope** (stage cards, boundary probes) and
 **the five delegation gates** are in `../method/onboarding.md` §5; this file adds to them and does not repeat them. Exit criteria are
-working heuristics: no study found follows the same organizations through the stages [SADIQ-2021].
+working heuristics: no study was found that follows the same organizations through the stages, and one review found only 7 of 15 AI
+maturity models empirically validated [SADIQ-2021].
 
 ## Contents
 
@@ -37,7 +38,7 @@ working heuristics: no study found follows the same organizations through the st
 - **Typical blockers.** Colleagues without access knew little about capabilities, limits and security [DBT-COPILOT-2025]; people used
   the tool less when line managers were hesitant (anecdotal) [DBT-COPILOT-2025]; in BCG's laggards top management "may talk the
   talk" but sets no value ambition [BCG-GAP-2025].
-- **Emphasize.** Make safe use possible rather than only prohibiting it; literacy for the board and top team, including AI already
+- **Emphasize.** Acceptable-use policies that make safe use possible; literacy for the board and top team, and skills for AI already
   inside existing software [MITCISR-2024]. In the EU, Article 4 requires providers and deployers to support staff AI literacy; the text
   carries tracked amendments, so check it before quoting [EU-AIACT-ART4-2024].
 - **Investments that move the scope on.** Sanctioned tools plus training, knowing access alone is not enough: Deloitte's respondents
@@ -53,11 +54,11 @@ working heuristics: no study found follows the same organizations through the st
 ## 3. Experimenting
 
 - **Show or count.** The pilot-to-production ratio for the last 12 months, not the pilot count. Published ratios are not comparable:
-  5% of custom enterprise tools (interview-based, preliminary) [MIT-NANDA-2025]; 25% of respondents moved 40%+ of experiments to
+  5% of evaluated enterprise-grade tools, custom or vendor-sold (interview-based, preliminary) [MIT-NANDA-2025]; 25% of respondents moved 40%+ of experiments to
   production [DELOITTE-STATEAI-2026]; 54% of US managers say over half of last year's pilots did [WHARTON-2026]. The measure each pilot
   uses: "time saved" is most common; those measuring growth report strongly positive returns more often (35% against 13%) [WHARTON-2026].
-- **Typical blockers.** Change management, executive sponsorship, user experience and output quality head a 52-organization barrier
-  ranking [MIT-NANDA-2025]. A pilot can run with a small team in isolation while production needs infrastructure, integration and
+- **Typical blockers.** Unwillingness to adopt new tools leads a 52-organization barrier ranking, followed by concerns about output
+  quality (reported frequency) [MIT-NANDA-2025]. A pilot can run with a small team in isolation while production needs infrastructure, integration and
   support; one interviewee described "pilot fatigue" [DELOITTE-STATEAI-2026].
 - **Emphasize.** Fewer workflows, end to end: BCG says some leaders "experiment too widely" and end with disconnected initiatives
   [BCG-GAP-2025]. Expert-graded test sets as part of the pilot: Morgan Stanley ran evaluations graded by advisors and prompt engineers
@@ -71,8 +72,9 @@ working heuristics: no study found follows the same organizations through the st
   assistant disagree, from 26 minutes a day estimated by users [GDS-COPILOT-2025] and 19 minutes against a comparison group
   [DWP-COPILOT-2026] to "did not find evidence" that time savings improved productivity [DBT-COPILOT-2025]. Mandated use without
   redesign: Shopify made AI use a baseline expectation in April 2025 and reports no outcome measure [SHOPIFY-LUTKE-2025].
-- **Examples.** DBT (public sector, 1,000 licences, with a control group): 72% satisfied, no evidence of productivity improvement,
-  hallucinations observed and inconsistent quality assurance; department evaluation (A) [DBT-COPILOT-2025]. DWP (public sector, 3,500+
+- **Examples.** DBT (public sector, 1,000 licences; diaries, observed tasks and interviews including six control-group staff): 72%
+  satisfied, no evidence of productivity improvement, hallucinations observed and inconsistent quality assurance; department
+  evaluation from self-reports (B) [DBT-COPILOT-2025]. DWP (public sector, 3,500+
   licences): an estimated 19 minutes a day against a comparison group, from categorical self-reports (B) [DWP-COPILOT-2026].
 
 ## 4. Adopting
@@ -125,8 +127,8 @@ working heuristics: no study found follows the same organizations through the st
 - **Investments that move the scope on.** A single enterprise platform with common architecture and controls (more than two-thirds of
   future-built firms are committing to one) and data transformation (95% are undertaking one); strategic workforce planning (55% of
   future-built firms against 17% of laggards); value measured at P&L (95% of future-built firms use clear KPIs or track P&L value)
-  [BCG-AIX-2026-PUB]. In CISR's 2025 data the largest financial step is from stage 2 to stage 3 (growth against industry average -6.8
-  points at stage 2, +4.7 at stage 3) [MITCISR-2025].
+  [BCG-AIX-2026-PUB]. CISR says the greatest financial impact comes from moving from stage 2 to stage 3, where growth against the industry
+  average turns positive (-6.8 points at stage 2, +4.7 at stage 3) [MITCISR-2025].
 - **Exit criteria (added to the card).** AI value appears in a P&L line, not only in surveys; cost per unit of AI work is tracked; an
   agent control set exists (BCG lists oversight and rollback gates, security, audit and cost guardrails) [BCG-AIX-2026].
 - **Failure points.** Autonomy scaled ahead of controls (§7); customer-facing scale without a quality check (Klarna); unreviewed AI
@@ -135,15 +137,16 @@ working heuristics: no study found follows the same organizations through the st
 - **Examples.** Ally Financial (financial services): about three minutes saved per call on more than four million calls in 2023;
   creative campaigns 34% faster; self-reported via CISR (A) [MITCISR-2024]. Italgas (utilities): project completion 40% faster and
   inspections down 80% with one tool; self-reported via CISR (A) [MITCISR-2025]. Walmart (retail): the CEO said shopping-assistant users
-  have average order value "about 35% higher" than non-users, a user against non-user gap, not a causal effect (A) [WALMART-Q4FY26-2026].
+  have average order value "about 35% higher" than non-users, a user against non-user gap, not an effect of the assistant (B)
+  [WALMART-Q4FY26-2026].
   Archetype entries: `security-operations-01` (A), `assurance-controls-testing-08` (A).
 
 ## 6. AI-native
 
 - **Show or count.** Pricing, services or cost base changed by AI, with figures: Ping An reported that by end-2022 49% of product sales
   and 82% of service interactions were handled by AI representatives, and it offered AI banking to 30 other banks (via CISR)
-  [MITCISR-2024]; Italgas's group company reported EUR 3 million revenue at a margin above 50% in 2024 from selling an AI-built tool as
-  software [MITCISR-2025]. Enterprise P&L attribution: McKinsey's high performers attribute 5%+ of EBIT to AI and were about 6% of
+  [MITCISR-2024]; Italgas sells its AI tool WorkOnSite as software through group company Bludigit, which generated EUR 3 million revenue at
+  over 50% margin in 2024 (company figures, not tool-level) [MITCISR-2025]. Enterprise P&L attribution: McKinsey's high performers attribute 5%+ of EBIT to AI and were about 6% of
   respondents in 2025 and 2026 [MCKINSEY-SOAI-2026]. Archetype entries: `security-vulnerability-exposure-01` (A),
   `professional-services-scoping-pricing-19` (B).
 - **Typical blockers.** Workforce redesign; governance of increasingly autonomous systems; cost constraints, which high performers
@@ -180,7 +183,7 @@ Stage shares depend almost entirely on who was asked. Always give the population
 |---|---|---|---|
 | McKinsey, fielded 2026-05/06 [MCKINSEY-SOAI-2026] | 1,719 respondents, 97 countries, GDP-weighted | self-reported | 44% scaling across the enterprise (38% a year earlier); 54% at $1bn+ revenue firms; high performers about 6% |
 | McKinsey, fielded 2025-06/07 [MCKINSEY-SOAI-2025] | 1,993 respondents | self-reported | 88% use AI regularly in at least one function |
-| BCG, 2026 [BCG-AIX-2026] | about 1,300 CxOs and senior leaders, 20+ sectors | self-reported | stagnating 4.5%, emerging 47%, scaling 41%, future-built 7.5% |
+| BCG, 2026 [BCG-AIX-2026; BCG-AIX-2026-PUB] | about 1,300 CxOs and senior leaders, 20+ sectors | self-reported | stagnating 4.5%, emerging 47%, scaling 41%, future-built 7.5% |
 | BCG, 2025 [BCG-GAP-2025] | 1,250 senior executives, 68 countries | self-reported | stagnating 14%, emerging 46%, scaling 35%, future-built 5% (2024: 25 / 49 / 22 / 4) |
 | MIT CISR, 2022 and 2025 [MITCISR-2025] | N=721 (2022), N=152 (2025); different samples | self-reported | stages 1-4: 28 / 34 / 31 / 7% (2022); 13 / 23 / 46 / 18% (2025) |
 | Deloitte, fielded 2025-08/09 [DELOITTE-STATEAI-2026] | 3,235 leaders, 24 countries | self-reported | 37% surface-level use, 30% redesigning key processes, 34% deeply transforming |
@@ -200,13 +203,13 @@ The mapping to the advisor's five stages is a working alignment that no source v
 |---|---|---|---|---|
 | Curious | 1 Experiment and Prepare | Stagnating | Not using or experimenting | 1 Exploration (2023) |
 | Experimenting | 2 Build Pilots and Capabilities | Emerging | Piloting | 2 Experimentation (2024) |
-| Adopting | Late 2 or early 3 (not named) | Early Scaling | Scaling begins | — |
+| Adopting | Late 2 or early 3 (not named) | Early scaling (not a named tier) | Scaling begins | — |
 | Scaling | 3 Develop AI Ways of Working | Scaling | Scaling and fully scaled | 3 Accountable Acceleration |
 | AI-native | 4 Become AI Future Ready | Future-built | High performers (5%+ of EBIT) | 4 Success Through Transformation |
 
 **Where they agree:** a break between pilots and scaled, owned, measured use; a small top tier; value tracked at enterprise level only
 in the upper tiers; workflow redesign, leadership ownership, governance and reuse separating the tiers. **Where they differ:** the
-number of stages (four here; five in 8 of 15 models in one literature review) [SADIQ-2021]; how they treat agents (BCG calls them "the
+number of stages (four here; five is the most frequent count among 15 models in one literature review) [SADIQ-2021]; how they treat agents (BCG calls them "the
 next step"; Wharton finds the fullest agentic use alongside the most transformation) [BCG-GAP-2025; WHARTON-2026]; and thresholds, each
 with its own scoring [MITCISR-2024; BCG-GAP-2025]. No standard terminology exists [SADIQ-2021]. The Adopting stage has no separate
 label in the published models; it is where the advisor puts the first owned, measured workflows.

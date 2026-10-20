@@ -52,7 +52,7 @@ appear in the professional-services archetype (outside-counsel guidelines, propo
 
 - **Negotiate with tail suppliers who were not negotiated before**
   ([end-to-end-case-agent](../patterns/end-to-end-case-agent.md), bounded; automate; process). Walmart (retail) with a negotiation-bot
-  vendor: a chatbot negotiates price, payment terms and other items for smaller contracts with equipment suppliers. The vendor's
+  vendor: a chatbot negotiates cost and purchase terms for smaller contracts with suppliers of equipment Walmart uses. The vendor's
   January 2023 release reported deals closed with 68% of suppliers approached and 3% average savings; Bloomberg reported nearly three in four suppliers
   preferred the bot. Vendor-published, reported second-hand. Grade B [PYMNTS-2023; HBR-2022].
 - **Optimize truck routing and loading; link network planning to daily execution**
@@ -144,7 +144,7 @@ gated on weekly active use), `professional-services-pursuit-proposals-20` (C), `
 - **DELOITTE-2025**: Deloitte US, *Procurement at the Tipping Point: 2025 Chief Procurement Officer Survey* (survey release, 2025-08-19). https://deloitte.com/us/en/about/press-room/2025-chief-procurement-officer-survey.html
 - **EU-AIACT-ANNEX3-2024**: Regulation (EU) 2024/1689, *Annex III: High-risk AI systems* (regulation text via artificialintelligenceact.eu, 2024). https://artificialintelligenceact.eu/annex/3/
 - **FBI-2025**: FBI Internet Crime Complaint Center, *2024 IC3 Annual Report* (regulator, 2025). https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf
-- **GARTNER-2026**: Gartner, *Just 36% of Chief Procurement Officers Are Very Confident in Ability to Redesign Function for AI* (survey release, n=101, 2026-05-19). https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-survey-shows-just-36-perecent-of-chief-procurement-officers-are-very-confident-in-ability-to-redesign-function-for-ai
+- **GARTNER-2026**: Gartner, *Just 36% of Chief Procurement Officers Are Very Confident in Ability to Redesign Function for AI* (survey release, n=101, 2026-05-19). https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-survey-shows-just-36-perecent-of-chief-procurement-officers-are-very-confident-in-ability-to-redesign-function-for-ai
 - **HBR-2022**: Van Hoek et al., Harvard Business Review, *How Walmart Automated Supplier Negotiations* (press, 2022-11-08; paywalled beyond the opening). https://hbr.org/2022/11/how-walmart-automated-supplier-negotiations
 - **HEROLD-2025**: Herold et al., *Brave new procurement deals: an experimental study of how generative AI chatbots negotiate*, Journal of Purchasing and Supply Management (academic, 2025-10). https://cris.maastrichtuniversity.nl/en/publications/brave-new-procurement-deals-an-experimental-study-of-how-generati/
 - **INFORMS-2016**: INFORMS, *UPS On-Road Integrated Optimization and Navigation (ORION) Project* (professional body, 2016). https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS-On-Road-Integrated-Optimization-and-Navigation-ORION-Project
