@@ -2,7 +2,7 @@
 """Validate the ai-transformation plugin content (plan M0).
 
 Checks:
-  - SKILL.md size budget (fail > 500 lines, warn > 400)
+  - every skill's SKILL.md: size budget (fail > 500 lines, warn > 400) and the shared core-rules block
   - reference markdown files: fail > 300 lines; files > 100 lines need a table of contents
   - relative links in SKILL.md and every index.md / ARCHETYPE.md resolve
   - backtick file paths in SKILL.md and reference files resolve
@@ -18,8 +18,11 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL = ROOT / "plugins/ai-transformation/skills/transformation-advisor"
+SKILLS_DIR = ROOT / "plugins/ai-transformation/skills"
+SKILL = SKILLS_DIR / "transformation-advisor"          # the core skill; holds the shared knowledge base
 REFS = SKILL / "references"
+ALL_SKILLS = sorted(p.parent for p in SKILLS_DIR.glob("*/SKILL.md"))
+CORE_RULES = REFS / "schemas/core-rules.md"
 VOCAB = yaml.safe_load((REFS / "schemas/vocabulary.yaml").read_text())
 
 USE_CASE_REQUIRED = [
@@ -45,19 +48,24 @@ def rel(p):
 
 
 def check_skill_md():
-    p = SKILL / "SKILL.md"
-    if not p.exists():
-        warnings.append(f"{rel(p)}: missing (expected from M2)")
-        return
-    n = len(p.read_text().splitlines())
-    if n > 500:
-        errors.append(f"{rel(p)}: {n} lines (limit 500)")
-    elif n > 400:
-        warnings.append(f"{rel(p)}: {n} lines (target 400)")
+    m = re.search(r"<!-- core-rules:start -->\n(.*?)<!-- core-rules:end -->", CORE_RULES.read_text(), re.S)
+    block = m.group(1) if m else None
+    if block is None:
+        errors.append(f"{rel(CORE_RULES)}: core-rules markers missing")
+    for sk in ALL_SKILLS:
+        p = sk / "SKILL.md"
+        text = p.read_text()
+        n = len(text.splitlines())
+        if n > 500:
+            errors.append(f"{rel(p)}: {n} lines (limit 500)")
+        elif n > 400:
+            warnings.append(f"{rel(p)}: {n} lines (target 400)")
+        if block and block not in text:
+            errors.append(f"{rel(p)}: core rules block differs from {rel(CORE_RULES)}")
 
 
 def check_markdown():
-    for p in REFS.rglob("*.md"):
+    for p in [f for sk in ALL_SKILLS for f in (sk / "references").rglob("*.md")]:
         text = p.read_text()
         n = len(text.splitlines())
         if n > 300:
@@ -67,7 +75,7 @@ def check_markdown():
 
 
 def check_links():
-    targets = [SKILL / "SKILL.md", *REFS.rglob("index.md"), *REFS.rglob("ARCHETYPE.md")]
+    targets = [sk / "SKILL.md" for sk in ALL_SKILLS] + [*REFS.rglob("index.md"), *REFS.rglob("ARCHETYPE.md")]
     for p in targets:
         if not p.exists():
             continue
@@ -80,13 +88,14 @@ def check_links():
 
 def check_paths():
     """Backtick paths (`references/...` from the skill root, `../...` from the file) must resolve."""
-    for p in [SKILL / "SKILL.md", *REFS.rglob("*.md")]:
+    for sk in ALL_SKILLS:
+      for p in [sk / "SKILL.md", *(sk / "references").rglob("*.md")]:
         if not p.exists():
             continue
         for path in PATH_RE.findall(p.read_text()):
             if any(c in path for c in "<{*"):
                 continue
-            base = SKILL if path.startswith("references/") else p.parent
+            base = sk if path.startswith("references/") else p.parent
             if not (base / path).resolve().exists():
                 errors.append(f"{rel(p)}: missing path -> {path}")
 
