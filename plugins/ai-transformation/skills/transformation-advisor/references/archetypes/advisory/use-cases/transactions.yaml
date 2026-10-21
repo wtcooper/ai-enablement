@@ -253,12 +253,11 @@
     - {ref: SHEPI-PRICING-2026, title: "Pricing: shepi QoE Platform", publisher: "Shepi", type: vendor, url: "https://www.shepi.ai/pricing", date: "2026-10-21", access: full, locator: "Per Project ($1,000), Done-For-You ($5,000), Monthly and Firm Edition tiers. Page is undated; date is access date"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Firm type: AI-native providers selling direct to buyers and lenders. The landscape's QoE-vendor lead (a Finsider.ai
-    press release on Barchart claiming 60-80% faster diligence, seen only in search) was dropped at verification: the
-    Barchart URL now returns 'page not found'. The 12 comments on the Columbia thread and 8 on the
-    Sourcetable thread are mostly behind login; only the visible replies were read. Prices here are vendor list
-    prices, not a firm's fee data; how a firm prices its own diligence work is in professional-services-scoping-pricing-16
-    and professional-services-scoping-pricing-17.
+    Firm type: AI-native providers selling direct to buyers and lenders. A Finsider.ai press release on Barchart
+    claiming 60-80% faster diligence was seen only in search; its URL now returns 'page not found', so it is not used.
+    The 12 comments on the Columbia thread and 8 on the Sourcetable thread are mostly behind login; only the visible
+    replies were read. Prices here are vendor list prices, not a firm's fee data; how a firm prices its own diligence
+    work is in professional-services-scoping-pricing-16 and professional-services-scoping-pricing-17.
 
 - id: advisory-transactions-06
   title: "Sub-contracted or white-labelled AI QoE capacity for transaction advisory and CPA firms"
@@ -330,7 +329,7 @@
     - "Bank statements, ledger and trial balance, and prior-year tax returns (QOEAGENT-HOME-2026)"
   risks_and_guardrails:
     - "Per QoEAgent's reading, the seller-prepared report is barred outright. A buyer-commissioned report is allowed only if one of the lender's own vendors reviews it and the review findings are kept in the loan file (QOEAGENT-SBAUPDATE-2026)"
-    - "The SBA page confirms version 8.1 with technical updates effective 2026-10-01; the SOP's QoE clause text was read only through vendor pages because the SOP .docx linked from the SBA page returned 'not found' (again at verification, 2026-10-21) (SBA-SOP5010-2026)"
+    - "The SBA page confirms version 8.1 with technical updates effective 2026-10-01; the SOP's QoE clause text was read only through vendor pages because the SOP .docx linked from the SBA page returned 'not found', also on 2026-10-21 (SBA-SOP5010-2026)"
     - "The $3 million threshold and the Owner Buyout and ESOP exemptions are as stated by QoEAgent; not verified against the SBA text (QOEAGENT-SBAUPDATE-2026)"
   human_checkpoints:
     - "A named professional stands behind the conclusions; lender vendor review where a buyer-commissioned report is used (QOEAGENT-SBAUPDATE-2026)"
@@ -343,10 +342,10 @@
     - {ref: QOEAGENT-HOME-2026, title: "QoEAgent: AI quality of earnings, proof of cash and SBA lender QoE (home page)", publisher: "QoEAgent", type: vendor, url: "https://qoeagent.ai/", date: "2026-10-15", access: full, locator: "'SBA Lender QoE' section. Date is article:modified_time (first published 2025-12-09)"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Firm type: AI-native provider. This is a regulatory demand driver for QoE in the lower middle market, with AI as
-    the delivery method claimed by one vendor. Independence: the SBA clause is about the lender's reliance on the
-    report, not auditor independence. The SBA valuation clause (no valuation prepared for the applicant or seller) is
-    routed to the valuation module.
+    Firm type: AI-native provider. This is a regulatory demand driver for QoE in the lower middle market, with AI as the
+    delivery method claimed by one vendor. Independence: the SBA clause is about the lender's reliance on the report,
+    not auditor independence. The SBA valuation clause (no valuation prepared for the applicant or seller) is discussed
+    in the valuation module.
 
 - id: advisory-transactions-08
   title: "AI-assisted sell-side QoE and pre-sale diligence readiness"
@@ -484,9 +483,10 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Firm type: top-tier US firm (Forvis Mazars US; ranking not verified). Marked emerging and C because the article is a
-    view from a named managing director in transaction advisory (Mike Laurie) and names no tool or engagement. Pattern 'other': time released from routine work
-    is redeployed to wider analysis (a scope-expansion pattern; candidate new pattern). Forvis Mazars US's January 2024
-    article on diligence of AI-enabled targets is routed to the risk-controls module.
+    view from a named managing director in transaction advisory (Mike Laurie) and names no tool or engagement. Pattern
+    'other': time released from routine work is redeployed to wider analysis (a scope-expansion pattern). Forvis Mazars
+    US's January 2024 article on diligence of AI-enabled targets is cited in advisory-risk-controls-17 (AI governance
+    diligence of deal targets).
 
 - id: advisory-transactions-11
   title: "Lifecycle M&A platform with an agent harness, from diligence to integration"
@@ -583,11 +583,11 @@
     - {ref: CITYAM-DELOITTE-2025, title: "Deloitte refunds Australian government after AI 'made up citations' in report", publisher: "City AM", type: press, url: "https://www.cityam.com/?p=2367690", date: "2025-10-06", access: full, locator: "paragraphs 1-6"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Firm type: Big Four (PwC UK, via secondary source) and an AI lab (unnamed) recruiting through an expert network.
-    The posting pays $100 per hour for 5-20 hours a week and is not evidence that firms use the output. The Deloitte
+    Firm type: Big Four (PwC UK, via secondary source) and an AI lab (unnamed) recruiting through an expert network. The
+    posting pays $100 per hour for 5-20 hours a week and is not evidence that firms use the output. The Deloitte
     Australia incident was a government review, not transaction advisory; it is a deliverable-quality analogue. The
-    pre-issue check of references and figures is professional-services-quality-review-04. Ref CITYAM-DELOITTE-2025 is
-    the same document the deep dive filed as CITYAM-DELOITTEAU-2025; renamed to match the other advisory modules.
+    pre-issue check of references and figures is professional-services-quality-review-04. Related:
+    advisory-forensic-disputes-09 (expert report drafting) and advisory-valuation-09 (valuation report drafting).
 
 - id: advisory-transactions-13
   title: "Buyers and sponsors run first-pass diligence with generative AI in-house"

@@ -121,7 +121,7 @@
     - { ref: ACCTODAY-DUALENTRY-2026, title: "Generalist AI model accuracy tops out at 77% for accounting", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/generalist-ai-model-accuracy-tops-out-at-77-for-accounting", date: "2026-03-17", access: full, locator: "paragraphs on 19 models, 101 workflows and the classification versus journal-entry split" }
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "sections 'QuickBooks: Foundational Fixes' and 'Continuously Clean Books'" }
     - { ref: DIGITS-LINCOLN-2026, title: "How Lincoln Accounting Reclaimed 30+ Hours a Month by Switching to Digits", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/lincoln-accounting/", date: "2026-09-02", access: full, locator: "paragraphs on QuickBooks AI categorization rework and the roughly 90% estimate" }
-    - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 24, automated transaction processing and reconciliation" }
+    - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 19, invoice-extraction example and revalidation after vendor updates; p. 24, automated transaction processing and reconciliation" }
     - { ref: BEANCOUNT-REVIEWBURDEN-2026, title: "I Adopted AI Bookkeeping for Time Savings, But Reviewing Every Transaction Takes Just as Long", publisher: "Beancount and Plain-Text Accounting Forum", type: community, url: "https://beancount.io/forum/t/i-adopted-ai-bookkeeping-for-time-savings-but-reviewing-every-transaction-takes-just-as-long/1823", date: "2026-03-22", access: full, locator: "original post and replies 1-3" }
     - { ref: INTUIT-ACCTTECH-2026, title: "The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future", publisher: "CPA Practice Advisor (reporting the Intuit QuickBooks survey, n=725, May 2026)", type: survey, url: "https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807", date: "2026-07-02", access: full, locator: "advisory blockers paragraph (30%)" }
     - { ref: DUALENTRY-BENCH-2026, title: "Accounting AI Benchmark 2026 (leaderboard page, as read 2026-10-20)", publisher: "DualEntry", type: vendor, url: "https://dualentry.com/accounting-ai-benchmark", date: "2026-02-20", access: full, locator: "headline accuracy as read 2026-10-20 (live leaderboard)" }
@@ -131,17 +131,21 @@
   notes: >-
     Grade A rests on the independent Choi and Xie study, by named researchers at Stanford GSB and MIT Sloan, which
     reports measured figures. Limits: it reports associations, the platform is not named, the clients are small and
-    mid-sized businesses on that platform rather than a named CAS firm, and only abstracts and university summaries
-    were read (the Wiley full text was blocked). Abstract versions differ: the May 2025 working paper gives the figures
-    above and the June 2026 journal abstract keeps the findings but not the numbers. Vendor benchmarks (Digits,
-    DualEntry, Intuit) would be grade C on their own. Digits' human baseline had no client history and could not ask
-    questions, which its own report flags. The DualEntry leaderboard changes: 77.3% top score in March 2026
+    mid-sized businesses on that platform rather than a named CAS firm, and only abstracts and university summaries were
+    read (the Wiley full text was blocked). Abstract versions differ: the May 2025 working paper gives the figures above
+    and the June 2026 journal abstract keeps the findings but not the numbers. Vendor benchmarks (Digits, DualEntry,
+    Intuit) would be grade C on their own. Digits' human baseline had no client history and could not ask questions,
+    which its own report flags. The DualEntry leaderboard changes: 77.3% top score in March 2026
     (ACCTODAY-DUALENTRY-2026), 79.2% in a 2026-04-22 CFO.com post (CFOCOM-DUALENTRY-2026) and 91.1% on the page read
     2026-10-20 (DUALENTRY-BENCH-2026). Botkeeper's chief executive said its platform coded 80%+ of transactions at 98%
     accuracy (CPAPA-XENDOO-2026), a company claim from a vendor that then announced its closure. Intuit's
     expert-verified auto-categorization sends uncertain items to the business owner, not the accountant
     (CPAPA-INTUITCONNECT-2026). Firm types: unnamed SME platform customers; vendor benchmark; Lincoln Accounting is a
-    small two-partner firm. Independence: bookkeeping for the firm's own audit client is restricted; see -24.
+    small two-partner firm. Independence: bookkeeping for the firm's own audit client is restricted; see -24. The same
+    confidence-threshold design, framed as a control (low-confidence items to a named reviewer, monthly accuracy
+    sampling, re-validation after vendor updates), is covered here rather than in risk-controls; COSO gives the same
+    design for invoice extraction (COSO-GENAI-2026, p. 19). Related: advisory-private-client-04 (coding and
+    reconciliation in family-office accounting).
 
 - id: advisory-client-accounting-services-02
   title: Bank, card and clearing-account reconciliation by AI matching, with a short exceptions list for the accountant
@@ -325,18 +329,19 @@
     - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges three candidate entries (agent-run close for firms; agent-prepared reconciliations and entries with
-    approval gates; reconciliation-preparation agents) and the Penrose long-horizon benchmark, because all describe
-    agents preparing the close for human approval. Firm types: Pilot is an AI-native provider that also sells Meridian
-    to firms; Arclow is an AI-native practice; Basis, Ramp, BlackLine, Accrual and Puzzle are vendors; CohnReznick is a
-    Top 100 firm whose pilot was described in March 2026 as being set up ('identifying five to seven clients'). No named
-    customer firm for Meridian, Basis, Stack or Verity Prepare was found, so grade B rests on Pilot's and Arclow's own
-    use; a stricter reading is C. Accrual's CAS offering on Puzzle's Close AI was in early access with broader
-    availability planned by end of 2026; Stack's first ledger is QuickBooks Online. Pilot's counts differ by source
-    (7,000+ businesses in February 2026; 187,000+ and 199,000 months in June and October 2026). Mercor is a commercial
-    AI-data company and its judge model was in the same family as the tested model; 'independent' here means third
-    party to the vendors and firms, and the simulated tasks cap this evidence at B. Independence: preparing accounting
-    records for the firm's own audit client is restricted; see -24.
+    Covers agent-run close for firms, agent-prepared reconciliations and entries with approval gates,
+    reconciliation-preparation agents and the Penrose long-horizon benchmark, because all describe agents preparing the
+    close for human approval. Firm types: Pilot is an AI-native provider that also sells Meridian to firms; Arclow is an
+    AI-native practice; Basis, Ramp, BlackLine, Accrual and Puzzle are vendors; CohnReznick is a Top 100 firm whose
+    pilot was described in March 2026 as being set up ('identifying five to seven clients'). No named customer firm for
+    Meridian, Basis, Stack or Verity Prepare was found, so grade B rests on Pilot's and Arclow's own use; a stricter
+    reading is C. Accrual's CAS offering on Puzzle's Close AI was in early access with broader availability planned by
+    end of 2026; Stack's first ledger is QuickBooks Online. Pilot's counts differ by source (7,000+ businesses in
+    February 2026; 187,000+ and 199,000 months in June and October 2026). Mercor is a commercial AI-data company and its
+    judge model was in the same family as the tested model; 'independent' here means third party to the vendors and
+    firms, and the simulated tasks cap this evidence at B. Independence: preparing accounting records for the firm's own
+    audit client is restricted; see -24. Related: advisory-private-client-01 (family-office accounting platform) and
+    advisory-private-client-04 (close work in family offices).
 
 - id: advisory-client-accounting-services-04
   title: Staff accountants book entries and reconcile through a general AI assistant connected to the ledger, with locked-period approval
@@ -446,11 +451,11 @@
     - { ref: DIGITS-ELEV8-2026, title: "From Bookkeeping Factory to Fractional CFO Firm: How Elev8 Built Big-Firm Output Without Adding Staff", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/elev8-cfo/", date: "2026-07-08", access: full, locator: "paragraphs on 108 hours across 18 days and the Digits Connect API reporting pipeline" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges three candidates about the same firm and change (continuous close; automated package; branded statement
-    distribution). Pattern is 'other': a continuous close on an AI-native ledger with API-driven reporting, mostly
-    automation rather than generative AI; a candidate new pattern ('continuous close'). Firm type: small solo firm (Elev8
-    CFO and Elevate Tax & Accounting, El Paso), not mid-market. The CPA Practice Advisor article reads as a vendor case
-    study and sponsorship is not stated; both sources rest on the owner's estimates, so B not A.
+    Covers three parts of the same change at one firm: continuous close, automated package and branded statement
+    distribution. Pattern is 'other': a continuous close on an AI-native ledger with API-driven reporting, mostly
+    automation rather than generative AI. Firm type: small solo firm (Elev8 CFO and Elevate Tax & Accounting, El Paso),
+    not mid-market. The CPA Practice Advisor article reads as a vendor case study and sponsorship is not stated; both
+    sources rest on the owner's estimates, so B not A.
 
 - id: advisory-client-accounting-services-06
   title: AI-assisted live dashboards, variance explanations and management reporting as the CAS advisory layer
@@ -512,13 +517,15 @@
     - { ref: ACCTODAY-XEROAI-2026, title: "Xero aims to make AI core to platform functionality", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/xero-aims-to-make-ai-core-to-platform-functionality", date: "2026-03-16", access: full, locator: "paragraph on JAX use rising 61% in three months" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges three candidates (practice B, discourse B, governance D). Firm types: Withum is a Top 100 firm; Bonadio is
-    a Top 50 firm; Lincoln Accounting and TFMA are small firms; Aprio is a Top 20 firm (the posting asks for AI-enabled
-    delivery methodologies but does not say AI produces the dashboards). Grade B rests on Bonadio's and the small
-    firms' named, described use of AI-assisted reporting; none reports AI-drafted commentary. The Withum quote is general ('think how quickly Claude or ChatGPT could find a variance') and
-    on its own would be D. Xero says use of its JAX assistant rose 61% in three months, measure not defined
-    (ACCTODAY-XEROAI-2026). CohnReznick's JofA article names reporting tools such as Reach Reporting, Qvinci and
-    Spotlight Reporting as tool guidance. Independence: see -24.
+    Firm types: Withum is a Top 100 firm; Bonadio is a Top 50 firm; Lincoln Accounting and TFMA are small firms; Aprio
+    is a Top 20 firm (the posting asks for AI-enabled delivery methodologies but does not say AI produces the
+    dashboards). Grade B rests on Bonadio's and the small firms' named, described use of AI-assisted reporting; none
+    reports AI-drafted commentary. The Withum quote is general ('think how quickly Claude or ChatGPT could find a
+    variance') and on its own would be D. Xero says use of its JAX assistant rose 61% in three months, measure not
+    defined (ACCTODAY-XEROAI-2026). CohnReznick's JofA article names reporting tools such as Reach Reporting, Qvinci and
+    Spotlight Reporting as tool guidance. Independence: see -24. Related: advisory-fpa-performance-01 (the
+    planning-model and board-reporting layer), advisory-private-client-03 (reporting commentary for family principals)
+    and advisory-private-client-10 (live consolidated family view).
 
 - id: advisory-client-accounting-services-07
   title: Cash-flow forecasts, budgets, scenario planning and on-demand finance answers built from live ledger data
@@ -583,12 +590,13 @@
     - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 14" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a practice entry (B; Armanino 2024) and a discourse entry (C; announced client-facing Q&A and forecasts).
     Grade B reflects a named but dated, non-generative deployment; the generative and conversational parts are
-    announced, unnamed or Pilot's own provider-side chat advisor. Firm types: Armanino is a Top 25 firm; Intuit and Pilot are vendors; CohnReznick is a Top
-    100 firm speaking in the future tense. Wider FP&A, performance improvement and ERP advisory belong to the advisory
-    fpa-performance module; this entry keeps only the CFO-services forecast step CAS teams deliver. Independence:
-    management functions for the firm's own audit client are restricted; see -24.
+    announced, unnamed or Pilot's own provider-side chat advisor. Firm types: Armanino is a Top 25 firm; Intuit and
+    Pilot are vendors; CohnReznick is a Top 100 firm speaking in the future tense. Wider FP&A, performance improvement
+    and ERP advisory belong to the advisory fpa-performance module (planning-software baseline forecasts are
+    advisory-fpa-performance-02); this entry keeps only the CFO-services forecast step CAS teams deliver. A
+    family-office principal's one-off cash-flow model is advisory-private-client-16. Independence: management functions
+    for the firm's own audit client are restricted; see -24.
 
 - id: advisory-client-accounting-services-08
   title: Fractional CFO and controllership drafting of technical memos and analyses, with retrieval over the firm's past memos
@@ -731,16 +739,15 @@
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "Intelligent Onboarding (beta from late July 2026)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges four candidates: cleanup sold as a project (practice B), onboarding and migration automation (discourse B),
-    agent cleanup of historical books (discourse C) and the Excel-agent skill (governance C). Ladder and scope follow
-    the main change, a cleanup service priced as a project; the migration and Excel-agent parts are augment-step on
-    their own. The Excel-agent figure comes from an audit-framed simulation (adjacent), and the authors say the method
-    applies to AR and AP exports, tax data and client reports. TFMA charges $200-$400 a month for bookkeeping and
-    $500-$1,000 for advisory (DIGITS-TFMA-2026); how firms price their own CAS is in professional-services
-    (professional-services-scoping-pricing-16). Intuit's Intelligent Onboarding was announced as beta from late July
-    2026 (CPAPA-INTUITCONNECT-2026). Firm types: TFMA, Elev8, Adept (solo) and Mana are small firms; the FloQast firm is
-    an unnamed Top 100 firm; Ramp is a vendor. Independence: bookkeeping cleanup and system work for the firm's own
-    audit client are restricted; see -24.
+    Covers cleanup sold as a project, onboarding and migration automation, agent cleanup of historical books and the
+    Excel-agent skill. Ladder and scope follow the main change, a cleanup service priced as a project; the migration and
+    Excel-agent parts are augment-step on their own. The Excel-agent figure comes from an audit-framed simulation
+    (adjacent), and the authors say the method applies to AR and AP exports, tax data and client reports. TFMA charges
+    $200-$400 a month for bookkeeping and $500-$1,000 for advisory (DIGITS-TFMA-2026); how firms price their own CAS is
+    in professional-services (professional-services-scoping-pricing-16). Intuit's Intelligent Onboarding was announced
+    as beta from late July 2026 (CPAPA-INTUITCONNECT-2026). Firm types: TFMA, Elev8, Adept (solo) and Mana are small
+    firms; the FloQast firm is an unnamed Top 100 firm; Ramp is a vendor. Independence: bookkeeping cleanup and system
+    work for the firm's own audit client are restricted; see -24.
 
 - id: advisory-client-accounting-services-10
   title: AP and bill-pay agents that capture, code and route invoices for approval, with AI fraud screening before payment release
@@ -810,13 +817,14 @@
     - { ref: INTUIT-ACCTTECH-2026, title: "The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future", publisher: "CPA Practice Advisor (reporting the Intuit QuickBooks survey, n=725, May 2026)", type: survey, url: "https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807", date: "2026-07-02", access: full, locator: "section 'Are You a Firm of the Future' (53% invoicing and payments)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges two AP candidates (practice C, discourse C) and the governance angle's payment-fraud screening idea (C,
-    adjacent survey). Vendors only (BILL, Xero, Tipalti, Ramp); no named firm outcome for AP agents in CAS was found.
-    In Intuit's survey 53% list invoicing and payments among top firm-operations uses of AI, which is the firm's own
-    billing, not CAS delivery (INTUIT-ACCTTECH-2026). BILL's claim that nearly 90 of the top 100 firms use its platform
-    was seen only in a search summary and is not used. Payments-fraud investigation belongs to advisory
-    forensic-disputes and control design to risk-controls. Independence: the discourse researcher describes AP and
-    payment processing as commonly restricted for audit clients without verifying it; see -24.
+    The payment-fraud screening part rests on an adjacent survey (AFP-PAYFRAUD-2026). Vendors only (BILL, Xero, Tipalti,
+    Ramp); no named firm outcome for AP agents in CAS was found. In Intuit's survey 53% list invoicing and payments
+    among top firm-operations uses of AI, which is the firm's own billing, not CAS delivery (INTUIT-ACCTTECH-2026).
+    BILL's claim that nearly 90 of the top 100 firms use its platform was seen only in a search summary and is not used.
+    Payments-fraud investigation belongs to advisory forensic-disputes (advisory-forensic-disputes-12) and
+    fraud-readiness design to risk-controls (advisory-risk-controls-23); payment-anomaly flagging in family offices is
+    advisory-private-client-07. Independence: AP and payment processing for audit clients are often described as
+    restricted, but this was not checked against rule text; see -24.
 
 - id: advisory-client-accounting-services-11
   title: Payroll preparation with AI-guided workflows, anomaly flags, payroll journal entries and liability tie-out
@@ -871,10 +879,10 @@
     - { ref: JOFA-CASTIPS-2025, title: "Tips for providing the CAS services clients want", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jul/tips-for-providing-the-cas-services-clients-want/", date: "2025-07-01", access: full, locator: "definition of CAS services (bookkeeping and payroll to CFO-level work)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a payroll-preparation candidate (practice C) and a payroll-entry candidate (discourse C). Vendors only; no
-    firm deployment named and no AI-specific discussion of running payroll or filing payroll taxes found. Payroll is
-    part of the CAS service set (JOFA-CASTIPS-2025). Independence: the independence-pricing research maps payroll-type
-    accounting-record services to the SEC's bookkeeping restriction for issuer audit clients; see -24.
+    Covers payroll preparation and payroll entries. Vendors only; no firm deployment named and no AI-specific discussion
+    of running payroll or filing payroll taxes found. Payroll is part of the CAS service set (JOFA-CASTIPS-2025).
+    Independence: payroll-type accounting-record services fall under the SEC's bookkeeping restriction for issuer audit
+    clients (SEC Rule 2-01(c)(4)(i)); see -24.
 
 - id: advisory-client-accounting-services-12
   title: AI chasing of missing client documents and open transaction questions inside the ledger or portal
@@ -924,9 +932,8 @@
     - { ref: ACCOUNTEX-2026, title: "Accountex London 2026: product roundup", publisher: "Financial Accountant (IFA)", type: press, url: "https://financialaccountant.co.uk/blog/accountex-london-2026-product-roundup/", date: "2026-05-19", access: full, locator: "section 'Intuit QuickBooks' (questions and answers in the transaction feed)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges an idea (practice D) and a discourse candidate (C). Graded C because the AI-specific contribution is not
-    isolated and the only named result is attributed to platform collaboration. For return-season intake chasing, see
-    tax-compliance-individual-business-01.
+    Graded C because the AI-specific contribution is not isolated and the only named result is attributed to platform
+    collaboration. For return-season intake chasing, see tax-compliance-individual-business-01.
 
 - id: advisory-client-accounting-services-13
   title: Cross-client portfolio view of close status, open tasks and anomalies for CAS managers
@@ -1072,10 +1079,10 @@
     - { ref: TAXADV-7216-2026, title: "Tax ethics and risk management: common questions and answers, part 1", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/tax-ethics-and-risk-management-common-questions-and-answers-part-1/", date: "2026-08-31", access: full, locator: "Sec. 7216 section" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a practice entry (B) with the governance angle's offshore data-control idea (D), kept here as a guardrail.
-    Firm types: CohnReznick is a Top 100 firm; Aprio is a Top 20 firm; MAVI is a talent vendor. No measured effect of AI
-    on offshore throughput or quality was found. The AICPA PCPS survey result is reported second-hand. Staffing models
-    and offshore talent marketplaces belong to professional-services (professional-services-staffing-resourcing-11).
+    The offshore data-control point is an idea, kept here as a guardrail. Firm types: CohnReznick is a Top 100 firm;
+    Aprio is a Top 20 firm; MAVI is a talent vendor. No measured effect of AI on offshore throughput or quality was
+    found. The AICPA PCPS survey result is reported second-hand. Staffing models and offshore talent marketplaces belong
+    to professional-services (professional-services-staffing-resourcing-11).
 
 - id: advisory-client-accounting-services-16
   title: AI-native provider sells autonomous bookkeeping and close direct to small businesses
@@ -1134,10 +1141,10 @@
     - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges the AI Accountant parts of a practice candidate and a discourse candidate (both C); the firm-facing Meridian
-    product is in -03. Organization type: AI-native provider. Graded C because the only measurements are the vendor's
-    own claims. This is a competitor to firm-delivered bookkeeping as well as a product. Independence does not arise for
-    a provider without attest clients; a firm that resells it to its own audit clients should see -24.
+    Covers Pilot's AI Accountant; the firm-facing Meridian product is in -03. Organization type: AI-native provider.
+    Graded C because the only measurements are the vendor's own claims. This is a competitor to firm-delivered
+    bookkeeping as well as a product. Independence does not arise for a provider without attest clients; a firm that
+    resells it to its own audit clients should see -24.
 
 - id: advisory-client-accounting-services-17
   title: AI-native provider supplies platform, automation and leads while a local firm or bookkeeper delivers the service
@@ -1233,10 +1240,9 @@
     - { ref: ACCTODAY-COHNPOD-2026, title: "The meeting of CAS and AI (On the Air podcast with Kane Polakoff, Intuit-sponsored)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/at-intuit-sponsored-podcast-03-16", date: "2026-03-16", access: full, locator: "transcript 03:58-04:36 (build, GL-native or integrated provider)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a practice and a discourse candidate (both C) and the state-of-AI file's 'incumbent plus platform' scenario.
-    CLA is described by the source as a Top 20 firm; Digits is a vendor. The two inputs disagreed on the ladder
-    (delegate, augment); the source does not describe how much the model does, so augment is used. Whether to build,
-    use a ledger-native model or adopt an integrated provider is a live question among CAS leaders
+    This is the 'incumbent firm plus AI platform' model. CLA is described by the source as a Top 20 firm; Digits is a
+    vendor. The source does not describe how much the model does, so the ladder is augment rather than delegate. Whether
+    to build, use a ledger-native model or adopt an integrated provider is a live question among CAS leaders
     (ACCTODAY-COHNPOD-2026). How CLA handles independence for clients it also audits was not stated; see -24.
 
 - id: advisory-client-accounting-services-19
@@ -1288,10 +1294,10 @@
     - { ref: DIGITS-WRITEMCP-2026, title: "Agentic Accounting With Confidence: Introducing Write MCP and Locked Period Controls", publisher: "Digits", type: vendor, url: "https://digits.com/blog/write-mcp/", date: "2026-10-13", access: full, locator: "paragraph on a firm's close flowcharts for outcome-based pricing" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a practice candidate (C) and the independence-pricing candidate (vendor-published). Organization type:
-    vendor pricing to firms. A Digits blog says one unnamed firm used Claude to build close flowcharts for clients to
-    help justify outcome-based pricing (DIGITS-WRITEMCP-2026). How firms price their own CAS (fixed fee, subscription,
-    value) belongs to professional-services: see professional-services-scoping-pricing-14, -16 and -17.
+    Organization type: vendor pricing to firms. A Digits blog says one unnamed firm used Claude to build close
+    flowcharts for clients to help justify outcome-based pricing (DIGITS-WRITEMCP-2026). How firms price their own CAS
+    (fixed fee, subscription, value) belongs to professional-services: see professional-services-scoping-pricing-14, -16
+    and -17.
 
 - id: advisory-client-accounting-services-20
   title: CAS and fractional CFO teams advise clients on their own AI adoption (tool choice, data protection, dashboards)
@@ -1422,12 +1428,13 @@
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "section on skill-run audit trail" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea (grade D). Merges five governance candidates, all D: validation and exit thresholds, risk-tiered review gates,
-    agent inventory, SOC mapping and reviewer calibration. They share sources and are one control package in the
-    practitioner article. No CAS firm reports using it or what it caught. The same package sold to clients as a
-    control-design service is in advisory risk-controls (advisory-risk-controls-21; see also -12 on vendor SOC reports and -22 on confidence-threshold routing); auditor-side evidence is in
-    assurance (assurance-assurance-over-ai-04, -07); tracking overrides as a quality signal is
-    professional-services-quality-review-11. The CPA Practice Advisor article also cites a KPMG survey figure (42% of
+    Idea (grade D). Validation and exit thresholds, risk-tiered review gates, agent inventory, SOC mapping and reviewer
+    calibration share sources and are one control package in the practitioner article. No CAS firm reports using it or
+    what it caught. The same package sold to clients as a control-design service is in advisory risk-controls
+    (advisory-risk-controls-21; see also advisory-risk-controls-12 on vendor SOC reports, and -01 in this module for
+    confidence-threshold routing); the same controls applied to AI-generated forecasts are advisory-fpa-performance-14;
+    auditor-side evidence is in assurance (assurance-assurance-over-ai-04, -07); tracking overrides as a quality signal
+    is professional-services-quality-review-11. The CPA Practice Advisor article also cites a KPMG survey figure (42% of
     finance leaders fully assurance ready); the KPMG survey was not opened, so the figure is not used here.
 
 - id: advisory-client-accounting-services-22
@@ -1507,11 +1514,11 @@
     - { ref: HEPLER-CPALIAB-2026, title: "Professional Liability Risks for CPA Firms in 2026", publisher: "HeplerBroom (G. E. Davis)", type: firm, url: "https://heplerbroom.com/wp-content/uploads/2026/06/accounting-malpractice-white-paper-8JY697202.pdf", date: "2026-06", access: full, locator: "Generative AI Risks and Governance sections" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges four governance candidates: firm AI policy and logging (C), no-training contract terms and data segregation
-    (D), guardrails for firm-built agents (D) and SQMS No. 1 (D). Grade C rests on survey figures; no firm reports a
-    measured result. The IRS guidance applies to a CAS firm only for its tax work; SQMS applies only to compilation,
-    review and attest engagements, not plain bookkeeping. The CPA Practice Advisor contributor sells AI implementation
-    services. Firm-wide versions of these controls are in professional-services (professional-services-work-production-22,
+    Covers firm AI policy and logging, no-training contract terms and data segregation, guardrails for firm-built agents
+    and SQMS No. 1; the last three are ideas. Grade C rests on survey figures; no firm reports a measured result. The
+    IRS guidance applies to a CAS firm only for its tax work; SQMS applies only to compilation, review and attest
+    engagements, not plain bookkeeping. The CPA Practice Advisor contributor sells AI implementation services. Firm-wide
+    versions of these controls are in professional-services (professional-services-work-production-22,
     professional-services-quality-review-01).
 
 - id: advisory-client-accounting-services-23
@@ -1572,12 +1579,12 @@
     - { ref: ZUELLIG-AIPOLICY-2026, title: "AI Policy for Service Providers/Consultants (version 2025.12.15)", publisher: "Zuellig Pharma", type: firm, url: "https://edge.sitecorecloud.io/zuelligphar3c90-zpcms-prod-4532/media/Project/Corporate/Policy/Zuellig-Pharma--AI-Policy-for-Service-Providers-Consultants---25022026.pdf", date: "2026-02", access: full, locator: "sections 1 and 3" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Merges a governance candidate on disclosure and consent (C) with one on client-imposed AI policies (B, but
-    adjacent: Zuellig Pharma is a healthcare distributor and nothing links its policy to accounting providers). Graded C
-    because no CAS firm reports adopting a consent process. The 7216 point applies only to tax return information, not
-    bookkeeping data. The ABA opinion is a legal-profession analog cited through the Journal of Accountancy. Related
-    entries: professional-services-client-development-16, professional-services-acceptance-risk-11,
-    assurance-acceptance-independence-11 and tax-compliance-individual-business-21.
+    The client-imposed policy example is adjacent: Zuellig Pharma is a healthcare distributor and nothing links its
+    policy to accounting providers. Graded C because no CAS firm reports adopting a consent process. The 7216 point
+    applies only to tax return information, not bookkeeping data. The ABA opinion is a legal-profession analog cited
+    through the Journal of Accountancy. Related entries: professional-services-client-development-16,
+    professional-services-acceptance-risk-11, assurance-acceptance-independence-11 and
+    tax-compliance-individual-business-21.
 
 - id: advisory-client-accounting-services-24
   title: Independence and data-custody screening before a firm sells AI-enabled CAS to its own attest clients (idea)
@@ -1637,11 +1644,10 @@
     - { ref: JOFA-PEEC-2026, title: "PEEC to continue discussions on alternative practice structures", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/", date: "2026-08-10", access: full, locator: "paragraphs 1-3" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea (grade D): a compliance step, not a measured practice. Built from the governance candidate on independence
-    screening and the independence-pricing research. This is the independence flag for the module: CAS bookkeeping,
-    payroll-type record services and system work for the firm's own audit clients are the restricted case. The AICPA
-    Code text (ET 1.295) and IESBA sections other than the technology revisions were not opened, so the private-company
-    treatment rests on secondary descriptions; confirm before advising. Reading IESBA's hosting paragraph together with
-    the AICPA's warning on hosting AI is the researchers' reading, not an authoritative interpretation. Related entries:
-    assurance-acceptance-independence-15 (permissibility gate for AI services to audit clients), -16 (APS due
+    Idea (grade D): a compliance step, not a measured practice. This is the independence flag for the module: CAS
+    bookkeeping, payroll-type record services and system work for the firm's own audit clients are the restricted case.
+    The AICPA Code text (ET 1.295) and IESBA sections other than the technology revisions were not opened, so the
+    private-company treatment rests on secondary descriptions; confirm before advising. Reading IESBA's hosting
+    paragraph together with the AICPA's warning on hosting AI is an interpretation, not an authoritative one. Related
+    entries: assurance-acceptance-independence-15 (permissibility gate for AI services to audit clients), -16 (APS due
     diligence) and professional-services-firm-finance-15 (PE capital and attest separation).

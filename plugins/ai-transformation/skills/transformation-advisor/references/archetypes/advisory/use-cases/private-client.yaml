@@ -373,11 +373,12 @@
     date: 2026-07
     access: full
     locator: Risk section on hallucinations and automation bias
-  notes: 'Grade C: survey shares and practitioner statements, no named deployment of this specific step. Survey provenance:
-    every family-office survey cited here is published by a bank, administrator or advisory firm that sells to family offices,
-    so none is independent in the vocabulary''s sense. Do not read the RBC ''half say AI is embedded'' or the Ocorian 86%
-    as figures for reporting alone. Cross-reference: advisory-client-accounting-services-06 (AI-drafted variance commentary
-    and dashboards in CAS).'
+  notes: >-
+    Grade C: survey shares and practitioner statements, no named deployment of this specific step. Survey provenance:
+    every family-office survey cited here is published by a bank, administrator or advisory firm that sells to family
+    offices, so none is independent in the vocabulary's sense. Do not read the RBC 'half say AI is embedded' or the
+    Ocorian 86% as figures for reporting alone. Cross-references: advisory-client-accounting-services-06 (AI-drafted
+    variance commentary and dashboards in CAS) and advisory-fpa-performance-01 (board and management reporting packs).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-04
   title: AI help with transaction coding, intercompany reconciliation and month-end close in family-office accounting
@@ -1267,10 +1268,12 @@
     access: full
     locator: Sections 'AI services can raise independence concerns for attest clients' and 'AI can create confidentiality
       risks quickly'
-  notes: 'Grade C: published guidance with no evidence of clients adopting it. Routed overlap with risk-controls. Pattern
-    ''other'': advisory deliverable (policy, inventory, vendor review) produced with AI help; no recurring agentic loop.
-    Cross-references: advisory-risk-controls-17 (AI governance and control-design advisory), advisory-risk-controls-18 (AI
-    inventory and shadow-AI discovery), advisory-client-accounting-services-20 (CAS teams advise clients on AI adoption).'
+  notes: >-
+    Grade C: published guidance with no evidence of clients adopting it. Overlaps risk-controls, where the same advice
+    is sold to companies. Pattern 'other': advisory deliverable (policy, inventory, vendor review) produced with AI
+    help; no recurring agentic loop. Cross-references: advisory-risk-controls-17 (AI governance and control-design
+    advisory), advisory-risk-controls-18 (AI inventory and shadow-AI discovery), advisory-client-accounting-services-20
+    (CAS teams advise clients on AI adoption).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-15
   title: 'Hybrid family-office model: outsourced accounting, reporting and AI enablement with strategy and relationships
@@ -1479,12 +1482,13 @@
     date: '2026'
     access: full
     locator: 'Principle: Protect Sensitive Information'
-  notes: 'Grade B (raised from C on 2026-10-21): the earlier entry treated this as an unnamed office relayed by Wingspan,
-    but the FOPro article names the office and its CEO. The 45-minute figure is a practitioner''s estimate for one task,
-    so under the grade A rule it stays B. One-off use by a principal, not a recurring forecasting process. IRS guidance
-    is cited only as an analogy for validating projections. Pattern ''other'': one modelling session by an executive using
-    an enterprise AI tool. Cross-reference: advisory-client-accounting-services-07 (cash-flow forecasts and scenarios from
-    live ledger data in CAS).'
+  notes: >-
+    Grade B: the FOPro article names the office and its CEO (Wingspan's summary of the same article does not). The
+    45-minute figure is a practitioner's estimate for one task, so under the grade A rule it stays B. One-off use by a
+    principal, not a recurring forecasting process. IRS guidance is cited only as an analogy for validating projections.
+    Pattern 'other': one modelling session by an executive using an enterprise AI tool. Cross-references:
+    advisory-client-accounting-services-07 (cash-flow forecasts and scenarios from live ledger data in CAS) and
+    advisory-fpa-performance-02 (baseline forecasts in planning software).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-17
   title: Client-facing custom GPT that answers basic ownership-transition and succession questions for family-held businesses
@@ -1551,7 +1555,7 @@
     access: full
     locator: 'Principle: Appropriate Use'
   last_reviewed: '2026-10-21'
-  notes: 'Grade B: a named firm''s live tool with a practitioner''s own figure (''about 50''), which the grade A rule treats
-    as B. Routed from the client-accounting-services practice research. Firm type: CPA firm focused on family-held
-    businesses. Ladder automate: the bot answers prospects with no person on that path, and people take over when a prospect
-    wants to meet. Dated 2025-06, older than most sources here.'
+  notes: >-
+    Grade B: a named firm's live tool with a practitioner's own figure ('about 50'), which the grade A rule treats as B.
+    Firm type: CPA firm focused on family-held businesses. Ladder automate: the bot answers prospects with no person on
+    that path, and people take over when a prospect wants to meet. Dated 2025-06, older than most sources here.

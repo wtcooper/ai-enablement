@@ -143,11 +143,10 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Firm type: forensic and consulting firm, not a CPA firm. The software is not named. Clients are unnamed in the
-    source. Graded B, not A: the timing figures are narrative estimates and the dollar figures are findings.
-    Ladder normalised to automate (the research file had augment): the source describes the software matching every
-    item and flagging missing data, with people working the flags and interpreting results, which matches the
-    vocabulary's "matching with people reviewing exceptions" example; matching every item instead of tracing by hand
-    makes the scope process.
+    source. Graded B, not A: the timing figures are narrative estimates and the dollar figures are findings. Ladder is
+    automate: the source describes the software matching every item and flagging missing data, with people working the
+    flags and interpreting results, which matches the vocabulary's "matching with people reviewing exceptions" example;
+    matching every item instead of tracing by hand makes the scope process.
 
 - id: advisory-forensic-disputes-03
   title: Proactive data monitoring and machine-learning anomaly detection inside client anti-fraud programs
@@ -215,12 +214,13 @@
     - { ref: CPAPA-FORENSICAI-2025, title: "Forensic Accounting in the Age of AI: Opportunities and Risks", publisher: "CPA Practice Advisor (author: Frank Dery, BRG)", type: press, url: "https://www.cpapracticeadvisor.com/2025/10/15/forensic-accounting-in-the-age-of-ai-opportunities-and-risks-2/170853/", date: "2025-10-15", access: full, locator: "opportunities and challenges lists" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Graded C (downgraded from B on verification): no named organisation's AI deployment is described. The ACFE
-    figures are measured by a named body but concern victim organisations' anti-fraud programs and analytics in
-    general, not AI and not an advisory firm's work (adjacent process), and the AI adoption figure is an anonymous survey. The ACFE report contains no AI-specific findings.
-    The 25% adoption figure is from the joint ACFE/SAS survey as published in a SAS press release, so provenance is
-    vendor-published. Firm type: client in-house anti-fraud teams (survey respondents are 26% government and 23%
-    banking). Fraud-risk program design sits in the risk-controls module; kept here for the detection and investigation use.
+    Graded C: no named organisation's AI deployment is described. The ACFE figures are measured by a named body but
+    concern victim organisations' anti-fraud programs and analytics in general, not AI and not an advisory firm's work
+    (adjacent process), and the AI adoption figure is an anonymous survey. The ACFE report contains no AI-specific
+    findings. The 25% adoption figure is from the joint ACFE/SAS survey as published in a SAS press release, so
+    provenance is vendor-published. Firm type: client in-house anti-fraud teams (survey respondents are 26% government
+    and 23% banking). Fraud-risk program design sits in the risk-controls module (advisory-risk-controls-23, idea); this
+    entry covers the detection and investigation use.
 
 - id: advisory-forensic-disputes-04
   title: Generative-AI first-pass responsiveness and issue review of documents in disputes and investigations
@@ -485,14 +485,15 @@
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2617, FVC2627, FVC2638 (scheduled for Nov 5 and 6, not yet given)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Pattern: other. This is a verification and disclosure layer around expert work, not a standard agentic pattern.
-    Firm type: forensic and consulting firm (J.S. Held, not a CPA firm); other sources are a law firm, the AICPA and
-    news. Evidence of use is a single named firm's engagement-letter change, so the grade is B on thin evidence. The
-    Weber figure rests on a law-firm summary of the opinion; the opinion itself was blocked and was not opened. KTS gives
-    the citation as 85 Misc.3d 727 (N.Y. Sur. Ct., Saratoga County 2024); the AICPA article places it in late 2024 in a
+    Pattern: other. This is a verification and disclosure layer around expert work, not a standard agentic pattern. Firm
+    type: forensic and consulting firm (J.S. Held, not a CPA firm); other sources are a law firm, the AICPA and news.
+    Evidence of use is a single named firm's engagement-letter change, so the grade is B on thin evidence. The Weber
+    figure rests on a law-firm summary of the opinion; the opinion itself was blocked and was not opened. KTS gives the
+    citation as 85 Misc.3d 727 (N.Y. Sur. Ct., Saratoga County 2024); the AICPA article places it in late 2024 in a
     trust dispute over a Bahamas property. AICPA FVS sessions on this topic are scheduled for 2026-11-05 and 2026-11-06,
-    signals only. AICPA treatment of expert services for private-company attest clients was not confirmed.
-    Related: professional-services-quality-review-03 (verification record) and -16 (telling clients about AI use);
+    signals only. AICPA treatment of expert services for private-company attest clients was not confirmed. Related:
+    advisory-valuation-05 (AI assistant for valuation spreadsheet models; also cites the Weber case);
+    professional-services-quality-review-03 (verification record) and -16 (telling clients about AI use);
     assurance-acceptance-independence-15 (permissibility gate for AI-related services to audit clients).
 
 - id: advisory-forensic-disputes-08
@@ -552,8 +553,9 @@
     Firm type: the source gives only the author's title at BRG, not the firm's size or type; the other sources are
     academic and vendor. Graded C: the BRG statement is an opinion-column recollection without a described deployment.
     The Valid8 white paper also carries an estimate that 60% of forensic accounting companies use AI-powered tools; it
-    is an unsourced vendor estimate and is not used as an outcome. Diligent Smart Prep 360 was routed from the
-    risk-controls research: announced, vendor, no customer named.
+    is an unsourced vendor estimate and is not used as an outcome. Diligent Smart Prep 360 is announced, by a vendor,
+    with no customer named for fraud screening; its use to turn board-material signals into internal-audit actions is
+    advisory-risk-controls-02.
 
 - id: advisory-forensic-disputes-09
   title: Generative-AI drafting of investigation and expert report skeletons, narratives and visualisations
@@ -603,13 +605,15 @@
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Crowe MacKay interview section" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Firm type: regional CPA and advisory firm (Dean Dorton; the source does not give its size) and a survey of anti-fraud
-    professionals. The Dean Dorton deck is a training demonstration, not evidence of deployment; its date is the PDF
-    creation date (2025-09-05). The conference session is scheduled, not yet given, and cannot support the
+    Firm type: regional CPA and advisory firm (Dean Dorton; the source does not give its size) and a survey of
+    anti-fraud professionals. The Dean Dorton deck is a training demonstration, not evidence of deployment; its date is
+    the PDF creation date (2025-09-05). The conference session is scheduled, not yet given, and cannot support the
     grade. The ACFE figure concerns corporate anti-fraud teams, not expert reports. A forensic director at Crowe MacKay
     says in a vendor white paper that AI can create a report skeleton, scan thousands of emails and take notes from
-    recordings (VALID8-WP-2025); descriptive only. Related: professional-services-quality-review-02 (citation check
-    before signing) and tax-controversy-08 (citation verification in tax litigation).
+    recordings (VALID8-WP-2025); descriptive only. Related: advisory-valuation-09 (generative drafting of valuation
+    report sections), advisory-transactions-12 (AI-drafted diligence deliverables),
+    professional-services-quality-review-02 (citation check before signing) and tax-controversy-08 (citation
+    verification in tax litigation).
 
 - id: advisory-forensic-disputes-10
   title: Preserving and collecting employees' generative-AI chats and prompts as evidence
@@ -710,9 +714,9 @@
     IDEA, labelled as such. Practitioners and judges discuss the need; no accounting-firm deployment found. Incident
     evidence is thin (about 2% of judges; one widely reported sanction case, Mendones v. Cushman and Wakefield, Alameda
     County Superior Court, as reported by NBC News). The FinCEN alert is older than the 18-month window; it is a
-    foundation source on deepfake fraud against financial institutions. Pattern normalised to document-to-decision
-    (the research file had intake-triage) because the described work is examining an item and concluding on it.
-    The transactions research routed deepfaked or forged documents in data rooms here; that topic was not researched.
+    foundation source on deepfake fraud against financial institutions. Pattern is document-to-decision because the
+    described work is examining an item and concluding on it. Deepfaked or forged documents in deal data rooms are a
+    related topic with no source found.
 
 - id: advisory-forensic-disputes-12
   title: "Idea: investigation services for AI-fuelled fraud (deepfake impersonation, forged documents, payments fraud) and AI-washing claims"
@@ -785,13 +789,13 @@
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2621, Thu Nov 5, 1:05-1:55 pm (scheduled)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    IDEA, labelled as such. Pattern: other (a new investigation service line, not an agentic pattern; the research file
-    had end-to-end-case-agent, which no source describes). Merged here: items routed from other advisory research on
-    payments-fraud, BEC and deepfake investigation (AFP-PAYFRAUD-2026, from client-accounting-services), AI-enabled fraud
-    readiness (IAF-AIFRAUD-2026, from risk-controls) and AI-washing investigations (SEC-AIWASH-2024, from risk-controls).
-    Prevention and control design stay in client-accounting-services (payment screening) and risk-controls (fraud-risk
-    readiness, review of a client's AI claims). Only session titles were available for the AI-washing session; items
-    dated after 2026-10-20 are scheduled and cannot support the grade.
+    IDEA, labelled as such. Pattern: other (a new investigation service line; no source describes an end-to-end case
+    agent). Demand signals cover payments fraud, BEC and deepfake investigation (AFP-PAYFRAUD-2026), AI-enabled fraud
+    (IAF-AIFRAUD-2026) and AI-washing (SEC-AIWASH-2024). Prevention and control design stay in
+    client-accounting-services (payment screening, advisory-client-accounting-services-10), private-client
+    (payment-anomaly flagging, advisory-private-client-07) and risk-controls (fraud-risk readiness,
+    advisory-risk-controls-23). Only session titles were available for the AI-washing session; items dated after
+    2026-10-20 are scheduled and cannot support the grade.
 
 - id: advisory-forensic-disputes-13
   title: "Idea: agentic AI for blockchain and cryptocurrency fund tracing"
@@ -874,7 +878,8 @@
   last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Practitioners discuss it; no named deployment or result. Firm types: forensic and consulting
-    firm (J.S. Held) and a regional CPA and advisory firm (Dean Dorton).
+    firm (J.S. Held) and a regional CPA and advisory firm (Dean Dorton). Related: advisory-valuation-11 (valuers
+    pre-empting AI-generated critiques of their own reports).
 
 - id: advisory-forensic-disputes-15
   title: "Idea: validation studies and error-rate testing of machine-generated analyses to meet or challenge a reliability standard such as proposed Rule 707"
@@ -922,8 +927,5 @@
   notes: >-
     IDEA, labelled as such. Pattern: other (validation testing offered as an expert service). No source describes the
     service itself; the building blocks (validation studies, error-rate evidence) are in the committee's discussion.
-    Rule 707's status comes from the judiciary's own September 2026 report, which replaces the landscape's June 2026
-    "sent back" item (snippet-only secondary sources). The Steptoe blog post (STEPTOE-FRE707-2026) was removed on
-    verification: it returned 403 directly and through the mirror, so its claim about AI-driven forensic accounting
-    reports could not be confirmed. The validation-studies sentence is in the revised note in the May 2026 agenda book,
-    not in the August 2025 published draft.
+    Rule 707's status comes from the judiciary's own September 2026 report. The validation-studies sentence is in the
+    revised note in the May 2026 agenda book, not in the August 2025 published draft.

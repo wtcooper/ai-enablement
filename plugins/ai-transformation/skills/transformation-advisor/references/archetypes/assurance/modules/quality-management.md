@@ -96,8 +96,8 @@ Most Part A entries are governance gates run by people (`ladder: assist`, `patte
   Regional firms (Citrin Cooperman, PKF O'Connor Davies) standardise audit, review and benefit plan work on one suite.
 - Improve: `#13` early engagement with regulators (FRC sandbox), an inspection-ready file per tool; AICPA peer-review version (idea).
 - Reinvent (idea): `#15` independent third-party validation of firms' AI tools; the FRC's head of assurance
-  technology calls that market "fragmented". `#28` outside capital funds AI while attest stays CPA-owned (Crowe,
-  Eide Bailly; AI-native Oath); announced, no quality effect measured.
+  technology calls that market "fragmented". Reinvent (announced): `#28` outside capital funds AI while attest stays
+  CPA-owned (Crowe, Eide Bailly; AI-native Oath); no quality effect measured.
 
 ### Part B. Engagement-level supervision and review of AI output
 

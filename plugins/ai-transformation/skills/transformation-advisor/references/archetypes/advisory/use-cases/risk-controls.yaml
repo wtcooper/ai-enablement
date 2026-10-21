@@ -81,12 +81,12 @@
     - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "paragraph on anchoring bias"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from four research entries (practice 09, discourse 07 and 15, governance 07). Grade C: prevalence comes from
-    self-selected polls and the named items (GT's sample agents, Optro scoring) are guidance or announced products, not
-    reported deployments; the May 2026 panelists' employers are not named. Covers in-house internal audit as well as
-    outsourced providers. Firm types: Grant Thornton Advisors (non-attest arm of a PE-backed alternative practice
-    structure), Optro and Fieldguide (vendors), KPMG (Big Four). The audit-side equivalent is
-    assurance-planning-risk-assessment-25; BDO's Risk Assessment Coach is an audit tool and sits in assurance.
+    Grade C: prevalence comes from self-selected polls and the named items (GT's sample agents, Optro scoring) are
+    guidance or announced products, not reported deployments; the May 2026 panelists' employers are not named. Covers
+    in-house internal audit as well as outsourced providers. Firm types: Grant Thornton Advisors (non-attest arm of a
+    PE-backed alternative practice structure), Optro and Fieldguide (vendors), KPMG (Big Four). The audit-side
+    equivalent is assurance-planning-risk-assessment-25; BDO's Risk Assessment Coach is an audit tool and sits in
+    assurance.
 
 - id: advisory-risk-controls-02
   title: "Signals from board materials and shared risk registers turned into audit actions between planning cycles"
@@ -138,11 +138,11 @@
     - {ref: PROTIVITI-TOPRISKS-2026, title: "Top Risks 2026: Insights for Internal Audit Teams", publisher: "Protiviti", type: survey, url: "https://www.protiviti.com/us-en/survey/top-risks-cae-internal-audit-2026", date: "2026-01-22", access: full, locator: "paragraph on CAE integration concerns (48%)"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 15 (Diligent) and discourse 17 (continuous risk sensing, an idea). The continuous-sensing part
-    is an idea; the Diligent part is an announced product. It is the only entry touching enterprise risk management
-    (ERM), which has no named AI deployment in the research. Firm types: Diligent (vendor), Baker Tilly (large US
-    accounting and advisory firm). Fraud-indicator flagging in board materials is routed to forensic-disputes. The
-    audit-side equivalent is assurance-planning-risk-assessment-04.
+    Covers Diligent's product and continuous risk sensing. The continuous-sensing part is an idea; the Diligent part is
+    an announced product. It is the only entry touching enterprise risk management (ERM), for which no named AI
+    deployment was found. Firm types: Diligent (vendor), Baker Tilly (large US accounting and advisory firm).
+    Fraud-indicator flagging in board materials as a forensic screen is advisory-forensic-disputes-08. The audit-side
+    equivalent is assurance-planning-risk-assessment-04.
 
 - id: advisory-risk-controls-03
   title: "AI drafts risk and control matrices, control narratives, test procedures and document request lists for review"
@@ -214,11 +214,11 @@
     - {ref: GT-COMPLIAI-2024, title: "Grant Thornton taps Microsoft technology to help clients manage compliance and risk using generative AI", publisher: "Grant Thornton LLP", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2024/february/grant-thornton-taps-microsoft-technology-to-help-clients-manage-compliance-and-risk-using-generative-ai", date: "2024-02-06", access: full, locator: "paragraphs 1-4; capabilities list"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from discourse 01 and 02 and practice 10. RSM's agent was in user acceptance testing per the source (piloting);
-    in-production rests on Grant Thornton's 2024 deployment, which is older than the preferred window. Firm types: RSM US
-    (top-10 US firm serving the middle market), Grant Thornton (large US firm). Independence: internal-audit outsourcing
-    for a firm's own SEC audit clients is restricted (see advisory-risk-controls-06). The external-audit equivalents are
-    assurance-controls-testing-02 and assurance-planning-risk-assessment-25.
+    RSM's agent was in user acceptance testing per the source (piloting); in-production rests on Grant Thornton's 2024
+    deployment, which is older than the preferred window. Firm types: RSM US (top-10 US firm serving the middle market),
+    Grant Thornton (large US firm). Independence: internal-audit outsourcing for a firm's own SEC audit clients is
+    restricted (see advisory-risk-controls-06). The external-audit equivalents are assurance-controls-testing-02 and
+    assurance-planning-risk-assessment-25.
 
 - id: advisory-risk-controls-04
   title: "Agents prepare evidence requests, check submissions for completeness and chase follow-ups"
@@ -284,10 +284,9 @@
     - {ref: CPAPA-5Q-2026, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents", publisher: "CPA Practice Advisor (author: CEO of Bead AI, a vendor)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/18/5-questions-to-ask-before-your-sox-team-adopts-ai-agents/188703/", date: "2026-08-18", access: full, locator: "article body"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from discourse 04 (Baker Tilly) and practice 08 (vendors). Firm types: Baker Tilly (large US accounting and
-    advisory firm; US ranking not checked), Diligent, Optro and Fieldguide (vendors). Independence: co-sourced internal
-    audit for a firm's own SEC audit clients is restricted (see advisory-risk-controls-06). The audit-side equivalent is
-    assurance-controls-testing-03.
+    Firm types: Baker Tilly (large US accounting and advisory firm; US ranking not checked), Diligent, Optro and
+    Fieldguide (vendors). Independence: co-sourced internal audit for a firm's own SEC audit clients is restricted (see
+    advisory-risk-controls-06). The audit-side equivalent is assurance-controls-testing-03.
 
 - id: advisory-risk-controls-05
   title: "In-house internal-audit teams hand SOX control-test execution to agents, with auditor review (Reddit, Klaviyo)"
@@ -352,14 +351,13 @@
     - {ref: KPMG-FUTURESOX-2026, title: "Revolutionizing internal controls: Insights from an April 2026 KPMG Future of SOX webcast", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/revolutionizing-internal-controls.pdf", date: "2026-05-20", access: full, locator: "p. 5"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 01 and governance 04. The same release was read at optro.ai and as a CPA Practice Advisor
-    reprint (governance used the ref OPTRO-CRX-2026); one ref is kept. Grade B, not A: the figures are the vendor's
-    report, not a customer-published tracked metric. Ladder is delegate because the agent tests each control end to end
-    and drafts the result for review, which matches the vocabulary's worked example; no source describes a design
-    without a reviewer. These are client companies, not advisory firms: the entry tells an advisor what clients'
-    in-house teams are doing. Optro is AuditBoard's current name (the IIA article cites "Optro (formerly AuditBoard)",
-    IIA-UPSKILL-2026). KPMG-SOX2030-2026 now points to the PDF, which holds the survey excerpts (p. 4) and the POV
-    numbering used in locators (POV 3 is scalable AI-enabled testing on pp. 9-10). The same Reddit case is
+    The same release also appears as a CPA Practice Advisor reprint; the optro.ai copy is cited. Grade B, not A: the
+    figures are the vendor's report, not a customer-published tracked metric. Ladder is delegate because the agent tests
+    each control end to end and drafts the result for review, which matches the vocabulary's worked example; no source
+    describes a design without a reviewer. These are client companies, not advisory firms: the entry tells an advisor
+    what clients' in-house teams are doing. Optro is AuditBoard's current name (the IIA article cites "Optro (formerly
+    AuditBoard)", IIA-UPSKILL-2026). KPMG-SOX2030-2026 is the PDF, which holds the survey excerpts (p. 4); locators use
+    its POV numbering (POV 3 is scalable AI-enabled testing on pp. 9-10). The same Reddit case is
     assurance-controls-testing-05; Microsoft's own two-agent ITGC change-management tester (850 hours and $185K a year,
     self-reported, method not stated; MSFT-SOXAGENT-2026) is assurance-controls-testing-06.
 
@@ -429,14 +427,13 @@
     - {ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC (via eCFR)", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(v) and (vi); date is the access date of the current text"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 03 and discourse 03. Practice cited the Beacon article as RSM-BEACON-2026; one ref is kept.
-    Firm types: Riveron (consulting firm owned by affiliates of Kohlberg & Company, a PE-backed platform), RSM US (top-10
-    US firm serving the middle market), Protiviti (global consulting firm, a Robert Half subsidiary), PwC (Big Four).
-    The PwC page is undated ('2026' is a footer bound) and blocked direct requests (403); it was read in full through
-    the r.jina.ai text mirror on 2026-10-21. Ladder is delegate following the vocabulary's worked example
-    (agent tests key controls end to end and drafts the workpaper); the research files had graded it augment. RSM says it
-    is evaluating Beacon for SOC, NIST, PCI and operational audits; that extension is not live. The same pattern from the
-    audit side is assurance-controls-testing-20.
+    Firm types: Riveron (consulting firm owned by affiliates of Kohlberg & Company, a PE-backed platform), RSM US
+    (top-10 US firm serving the middle market), Protiviti (global consulting firm, a Robert Half subsidiary), PwC (Big
+    Four). The PwC page is undated ('2026' is a footer bound) and blocked direct requests (403); it was read in full
+    through the r.jina.ai text mirror on 2026-10-21. Ladder is delegate following the vocabulary's worked example (agent
+    tests key controls end to end and drafts the workpaper). RSM says it is evaluating Beacon for SOC, NIST, PCI and
+    operational audits; that extension is not live. The same pattern from the audit side is
+    assurance-controls-testing-20.
 
 - id: advisory-risk-controls-07
   title: "Risk-advisory teams test 100% of a control population with document extraction and matching tools instead of a sample"
@@ -491,11 +488,10 @@
     - {ref: ACCTIMES-GARTNER-2026, title: "Audit teams' AI use common but most lack strategy", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-16", access: full, locator: "paragraph beginning 'He said more mature audit teams'"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From practice 04, with the full-population points of discourse 08 and governance 04. Grade B, not A: the article is on
-    the vendor's site and the hours figure is an estimate. Firm type: Armanino is a mid-market accounting and advisory
-    firm. Independence was not stated in the article. Verification (2026-10-21): the '-new' KPMG file formerly cited as
-    KPMG-REVCONTROLS-2026 is byte-identical to KPMG-FUTURESOX-2026, so one ref is kept and slide numbers are now PDF
-    page numbers. The audit-side equivalent is assurance-controls-testing-08.
+    Grade B, not A: the article is on the vendor's site and the hours figure is an estimate. Firm type: Armanino is a
+    mid-market accounting and advisory firm. Independence was not stated in the article. KPMG's webcast summary exists
+    as two byte-identical PDFs; KPMG-FUTURESOX-2026 is cited, with PDF page numbers. The audit-side equivalent is
+    assurance-controls-testing-08.
 
 - id: advisory-risk-controls-08
   title: "Year-round control testing replaces a single point-in-time SOX test cycle"
@@ -541,11 +537,11 @@
     - {ref: KPMG-FUTURESOX-2026, title: "Revolutionizing internal controls: Insights from an April 2026 KPMG Future of SOX webcast", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/revolutionizing-internal-controls.pdf", date: "2026-05-20", access: full, locator: "p. 7, Sue King quote"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 05 and governance 09. The named deployment is one quote in a vendor release. Kept separate from
-    advisory-risk-controls-05 because the change is the cadence of the whole testing process, not the execution of one
-    test. Firm types: in-house team (Klaviyo) on a vendor platform; KPMG (Big Four). Independence: when a firm that
-    audits an SEC client also tests that client's controls as internal-audit outsourcing, Rule 2-01(c)(4)(v) applies
-    (see advisory-risk-controls-06). The audit-side equivalent is assurance-controls-testing-09.
+    The named deployment is one quote in a vendor release. Kept separate from advisory-risk-controls-05 because the
+    change is the cadence of the whole testing process, not the execution of one test. Firm types: in-house team
+    (Klaviyo) on a vendor platform; KPMG (Big Four). Independence: when a firm that audits an SEC client also tests that
+    client's controls as internal-audit outsourcing, Rule 2-01(c)(4)(v) applies (see advisory-risk-controls-06). The
+    audit-side equivalent is assurance-controls-testing-09.
 
 - id: advisory-risk-controls-09
   title: "First-line continuous controls monitoring with human-approved auto-clear rules, heading toward embedded and self-healing controls (partly an idea)"
@@ -601,10 +597,10 @@
     - {ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC (via eCFR)", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(vi); date is the access date"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from discourse 08 (continuous monitoring, grade C) and practice 18 (embedded, self-healing controls, an idea).
-    The self-healing and test-at-each-occurrence parts are an idea with no deployment found. Grade C: firm advocacy
-    pieces and a firm poll, no named deployment. The only automate-level process entry in this module. Firm types: Grant
-    Thornton Advisors (PE-backed platform; Grant Thornton LLP holds the attest practice), KPMG (Big Four).
+    Covers continuous monitoring and embedded, self-healing controls. The self-healing and test-at-each-occurrence parts
+    are an idea with no deployment found. Grade C: firm advocacy pieces and a firm poll, no named deployment. The only
+    automate-level process entry in this module. Firm types: Grant Thornton Advisors (PE-backed platform; Grant Thornton
+    LLP holds the attest practice), KPMG (Big Four).
 
 - id: advisory-risk-controls-10
   title: "AI pre-review and challenge of workpapers, audit scope and draft findings before human sign-off"
@@ -660,11 +656,11 @@
     - {ref: ACCTIMES-GARTNER-2026, title: "Audit teams' AI use common but most lack strategy", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-16", access: full, locator: "paragraph on use cases (12% use AI for quality assurance reviews)"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 07, governance 08 and discourse 05. Thin: one quote from an in-house team (FJ Management) and
-    one firm's description of its own practice (Baker Tilly); ladder spans assist (challenge GPTs) and augment
-    (workpaper pre-review). The PCAOB spotlight is older than the preferred window and reflects outreach mainly to larger
-    firms. Related entries: assurance-controls-testing-10 (AI secondary review of control workpapers) and
-    professional-services-quality-review-13 (independent machine cross-check before human review).
+    Thin: one quote from an in-house team (FJ Management) and one firm's description of its own practice (Baker Tilly);
+    ladder spans assist (challenge GPTs) and augment (workpaper pre-review). The PCAOB spotlight is older than the
+    preferred window and reflects outreach mainly to larger firms. Related entries: assurance-controls-testing-10 (AI
+    secondary review of control workpapers) and professional-services-quality-review-13 (independent machine cross-check
+    before human review).
 
 - id: advisory-risk-controls-11
   title: "AI drafts audit observations: finding detail, root cause, impact and recommendation"
@@ -707,9 +703,9 @@
     - {ref: HELPNET-GARTNERIA-2026, title: "Most chief audit executives can't tell you what AI is worth yet", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/15/gartner-ai-in-internal-audit/", date: "2026-09-15", access: full, locator: "section 'The barriers are people and process'"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From discourse 06. Firm type: RSM US (top-10 US firm serving the middle market). The Gartner figures cover internal
-    audit teams in general, not outsourced providers. Gartner's own releases were blocked; the figures come from press
-    coverage, and the two articles state different bases for the 38% strategy figure (743-person poll versus 161 CAEs).
+    Firm type: RSM US (top-10 US firm serving the middle market). The Gartner figures cover internal audit teams in
+    general, not outsourced providers. Gartner's own releases were blocked; the figures come from press coverage, and
+    the two articles state different bases for the 38% strategy figure (743-person poll versus 161 CAEs).
 
 - id: advisory-risk-controls-12
   title: "Reading vendors' SOC reports and assessing vendor AI risk for a client, with agent support announced"
@@ -766,11 +762,11 @@
     - {ref: CSA-SOC2AI-2026, title: "The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted", publisher: "Cloud Security Alliance (CSAI Foundation)", type: community, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/08/CSA_research_note_soc2_ai_controls_gap_20260830-csa-styled.pdf", date: "2026-08-30", access: full, locator: "Key Takeaways; Background, pp. 2-3"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 11, discourse 12 and governance 11. Grade C: agent support is a firm framework and an announced
-    product; prevalence comes from a vendor-run survey. The TQA text itself was not read (behind AICPA login). Reading
-    others' SOC reports is user-entity work and stays here; issuing SOC reports is assurance
-    (assurance-controls-testing-13 covers the audit-side reading of SOC reports; assurance-assurance-over-ai-07 covers
-    evidence over vendor AI). Firm types: KPMG (Big Four), Optro (vendor), Sikich (mid-market firm as survey sponsor).
+    Grade C: agent support is a firm framework and an announced product; prevalence comes from a vendor-run survey. The
+    TQA text itself was not read (behind AICPA login). Reading others' SOC reports is user-entity work and stays here;
+    issuing SOC reports is assurance (assurance-controls-testing-13 covers the audit-side reading of SOC reports;
+    assurance-assurance-over-ai-07 covers evidence over vendor AI). Firm types: KPMG (Big Four), Optro (vendor), Sikich
+    (mid-market firm as survey sponsor).
 
 - id: advisory-risk-controls-13
   title: "Mid-market firms move internal-audit, ISO, HITRUST and PCI engagements onto one agentic platform with firm-built agents"
@@ -825,12 +821,12 @@
     - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/9256/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "pp. 32-33"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 16, discourse 18 and governance 05. Discourse rated it delegate; augment is used because every
-    source stresses human oversight at each stage and no agent is described as owning an engagement outcome. Firm types:
-    Cherry Bekaert (top-20, self-described) and Aprio (20th-largest US advisory and accounting firm per its release),
-    Baker Tilly (large US firm), all mid-market firms with attest practices. The SOC and financial-audit portions, and Aprio's ISO/IEC 42001 certification accreditation
-    (announced 2026-07-30), are assurance work. Fieldguide's 'half of the top 100 firms' figure is a single-source vendor
-    claim. Independence: internal-audit outsourcing to the firms' own SEC audit clients is restricted (see
+    Ladder is augment, not delegate, because every source stresses human oversight at each stage and no agent is
+    described as owning an engagement outcome. Firm types: Cherry Bekaert (top-20, self-described) and Aprio
+    (20th-largest US advisory and accounting firm per its release), Baker Tilly (large US firm), all mid-market firms
+    with attest practices. The SOC and financial-audit portions, and Aprio's ISO/IEC 42001 certification accreditation
+    (announced 2026-07-30), are assurance work. Fieldguide's 'half of the top 100 firms' figure is a single-source
+    vendor claim. Independence: internal-audit outsourcing to the firms' own SEC audit clients is restricted (see
     advisory-risk-controls-06).
 
 - id: advisory-risk-controls-14
@@ -878,12 +874,12 @@
     - {ref: CPAPA-RSMMM-2026, title: "The Middle Market Has Embraced AI. Now Comes the Hard Part", publisher: "CPA Practice Advisor (RSM Middle Market AI Survey 2026)", type: survey, url: "https://www.cpapracticeadvisor.com/2026/07/22/the-middle-market-has-embraced-ai-now-comes-the-hard-part/187171/", date: "2026-07-22", access: full, locator: "paragraph on budget reallocation"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From practice 06. Direct signal for co-sourcing providers: the displaced work is outsourced testing hours. Maturity is
-    piloting because the page describes the IT-first rollout as a first goal with no result. Related demand signal: among
-    middle-market organisations increasing AI spend, 40% reallocate budget from external consulting services; the
-    survey does not say the consulting is replaced by AI or by whom (CPAPA-RSMMM-2026). Firm type: client company
-    (Havertys) on a vendor platform. The same case is assurance-controls-testing-19. The billing-model consequence for
-    the provider (hours to advisory) is a professional-services question (professional-services-scoping-pricing-17).
+    Direct signal for co-sourcing providers: the displaced work is outsourced testing hours. Maturity is piloting
+    because the page describes the IT-first rollout as a first goal with no result. Related demand signal: among
+    middle-market organisations increasing AI spend, 40% reallocate budget from external consulting services; the survey
+    does not say the consulting is replaced by AI or by whom (CPAPA-RSMMM-2026). Firm type: client company (Havertys) on
+    a vendor platform. The same case is assurance-controls-testing-19. The billing-model consequence for the provider
+    (hours to advisory) is a professional-services question (professional-services-scoping-pricing-17).
 
 - id: advisory-risk-controls-15
   title: "AI-native providers sell agent-run SOX and internal-audit testing straight to enterprise audit teams"
@@ -932,11 +928,11 @@
     - {ref: CPAPA-5Q-2026, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents", publisher: "CPA Practice Advisor (author: CEO of Bead AI, a vendor)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/18/5-questions-to-ask-before-your-sox-team-adopts-ai-agents/188703/", date: "2026-08-18", access: full, locator: "article body"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From practice 17. Firm type: AI-native vendors, not accounting firms; they are the competitive context for
-    co-sourcing. Grade B rests on a named production customer (Navan) with a quote; the figure is vendor-published.
-    Andera's home page is undated; its 70% figure is the page's meta description ('Save 70% of time on any control').
-    Accounting Today reports Andera's own product is in use at large public companies (ACCTODAY-RSMBEACON-2026). A podcast
-    blurb seen in search said Optro acquired Midship; not confirmed, not used.
+    Firm type: AI-native vendors, not accounting firms; they are the competitive context for co-sourcing. Grade B rests
+    on a named production customer (Navan) with a quote; the figure is vendor-published. Andera's home page is undated;
+    its 70% figure is the page's meta description ('Save 70% of time on any control'). Accounting Today reports Andera's
+    own product is in use at large public companies (ACCTODAY-RSMBEACON-2026). A podcast blurb seen in search said Optro
+    acquired Midship; not confirmed, not used.
 
 - id: advisory-risk-controls-16
   title: "SOX and internal-audit teams repositioned as controls advisers as automation moves into the first line"
@@ -983,9 +979,9 @@
     - {ref: SIKICH-IAPRIORITIES-2026, title: "2026 Internal audit priorities annual survey", publisher: "Sikich", type: survey, url: "https://go.sikich.com/rs/345-ICF-683/images/Sikich%202026%20Internal%20Audit%20Priorities%20Survey%20Report.pdf?version=0", date: "2026-10", access: full, locator: "p. 31"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From discourse 09. Pattern is 'other': a service-model repositioning, not an agent pattern. Grade C: a firm's
-    recommendation plus practitioner testimony with unnamed employers. The Internal Audit Collective promotes its own
-    paid program. Firm type: KPMG (Big Four).
+    Pattern is 'other': a service-model repositioning, not an agent pattern. Grade C: a firm's recommendation plus
+    practitioner testimony with unnamed employers. The Internal Audit Collective promotes its own paid program. Firm
+    type: KPMG (Big Four).
 
 - id: advisory-risk-controls-17
   title: "AI governance, control design and certification-readiness advisory for clients (COSO GenAI roadmap, AIUC-1 readiness)"
@@ -1055,7 +1051,7 @@
     - "COSO adapts its 2013 framework rather than proposing a new governance model (COSO-GENAIPR-2026); Deloitte says it works best treated as building on that framework, not as a prescriptive rulebook (DART-COSO-2026)"
     - "Where the firm also audits the client, developing or hosting an AI system for that client can raise independence concerns under the AICPA Code (JOFA-ETHAI-2026)"
     - "For SEC audit clients, Rule 2-01(c)(4)(ii) restricts designing or implementing a system that generates information significant to the financial statements unless the results will not be subject to audit procedures (SEC-RULE2-01-2026)"
-    - "Advice must not be framed as assurance over the client's AI; the AIUC-1 or SOC 2 examination is attest work, and readiness advice to a client the same firm will examine raises independence questions not resolved in the research"
+    - "Advice must not be framed as assurance over the client's AI; the AIUC-1 or SOC 2 examination is attest work, and readiness advice to a client the same firm will examine raises independence questions the sources do not resolve"
     - "A Cloud Security Alliance note (AI-assisted, not CSA-reviewed) says two AI companies can hold clean SOC 2 reports with different tested control sets because no AI baseline exists (CSA-SOC2AI-2026)"
   human_checkpoints:
     - "Partner review of the risk assessment and control matrix before release"
@@ -1086,17 +1082,18 @@
     - {ref: KPMG-SOX2030-2026, title: "The Future of SOX: A point of view for 2030 and beyond (PDF)", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "POV 1: The governance of AI"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 13, discourse 10, governance 01 and governance 10, plus the transactions research's routed items
-    on AI diligence of deal targets (FORVIS-AIBUYSIDE-2024, GT-PEAI-2026). Grade C: firm positioning, a standard, a job
-    posting, surveys and announcements; no firm publishes a delivered COSO-GenAI engagement or result for a mid-market
-    client (the one named case is advisory-risk-controls-19). The KPMG sample is large companies, not the private middle
-    market; the press summary of the RSM survey does not describe its screening. COSO's press release names the eighth capability type 'regulatory
-    intelligence' while the document names it 'knowledge retrieval and summarization'. Firm types: Grant Thornton
-    Advisors (non-attest arm of an alternative practice structure; Grant Thornton LLP is the attest firm), RSM (top-10,
-    middle market), Forvis Mazars US (top-10), KPMG (Big Four). Fasken (2026-08-13) expects representation-and-warranty
-    insurers to scrutinise target-AI risk; it is held in the transactions research. Audit-side and certification
-    equivalents: assurance-assurance-over-ai-13 (readiness against ISO/IEC 42001 and NIST AI RMF) and
-    assurance-assurance-over-ai-19 (AIUC-1 certification).
+    Includes AI governance diligence of deal targets (FORVIS-AIBUYSIDE-2024, GT-PEAI-2026). Grade C: firm positioning, a
+    standard, a job posting, surveys and announcements; no firm publishes a delivered COSO-GenAI engagement or result
+    for a mid-market client (the one named case is advisory-risk-controls-19). The KPMG sample is large companies, not
+    the private middle market; the press summary of the RSM survey does not describe its screening. COSO's press release
+    names the eighth capability type 'regulatory intelligence' while the document names it 'knowledge retrieval and
+    summarization'. Firm types: Grant Thornton Advisors (non-attest arm of an alternative practice structure; Grant
+    Thornton LLP is the attest firm), RSM (top-10, middle market), Forvis Mazars US (top-10), KPMG (Big Four). Fasken
+    (2026-08-13) expects representation-and-warranty insurers to scrutinise target-AI risk; that source is in the
+    transactions module (FASKEN-RWI-2026). Audit-side and certification equivalents: assurance-assurance-over-ai-13
+    (readiness against ISO/IEC 42001 and NIST AI RMF) and assurance-assurance-over-ai-19 (AIUC-1 certification).
+    Related: advisory-private-client-14 (AI policy advice to families) and advisory-fpa-performance-09 (AI readiness
+    assessment for client finance functions).
 
 - id: advisory-risk-controls-18
   title: "AI inventory, shadow-AI discovery and review of user-built automations for a client's AI risk register"
@@ -1161,12 +1158,13 @@
     - {ref: IIA-IPPF-2026, title: "IPPF documents listing, topic Artificial Intelligence", publisher: "The IIA", type: professional-body, url: "https://www.theiia.org/en/standards/documents/", date: "2026-09-18", access: full, locator: "entry 'Vibe Coding Risks & What Internal Audit Needs to Know'"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 14, governance 12 and governance 13 (user-built automations, an idea). Grade C: announced
-    products and practitioner advice; no named engagement result. Protiviti's IIA-listed paper on vibe-coding risks for
-    internal audit (2026-09-18) is members-only and was read by title only. The ISACA poll is European; the LexisNexis
-    figure covers consultants, not accounting firms. Firm types: vendors (Optro, LexisNexis); Warren Averett and Cherry
-    Bekaert partners (top-100 mid-market firms) quoted as commentators. Related: assurance-assurance-over-ai-01 (scoping
-    the entity's AI for the audit) and security-governance-risk-17 (enterprise AI policy and approval gates).
+    The user-built automations part is an idea. Grade C: announced products and practitioner advice; no named engagement
+    result. Protiviti's IIA-listed paper on vibe-coding risks for internal audit (2026-09-18) is members-only and was
+    read by title only. The ISACA poll is European; the LexisNexis figure covers consultants, not accounting firms. Firm
+    types: vendors (Optro, LexisNexis); Warren Averett and Cherry Bekaert partners (top-100 mid-market firms) quoted as
+    commentators. Related: assurance-assurance-over-ai-01 (scoping the entity's AI for the audit) and
+    security-governance-risk-17 (enterprise AI policy and approval gates); advisory-private-client-14 (AI inventory and
+    policy advice to families).
 
 - id: advisory-risk-controls-19
   title: "Internal-audit review of a client's AI governance and AI lifecycle (Grant Thornton for a global bank)"
@@ -1240,12 +1238,12 @@
     - {ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC (via eCFR)", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(v); date is the access date"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from practice 12, discourse 11 and governance 03. Grade B rests on the Grant Thornton case (named firm,
-    anonymous client, self-reported counts); the survey figures alone would be C. The GT case page has no date ('2026'
-    from the URL). The IIA lists the framework as issued 2024-09-13; other sources date it 2023. Protiviti-AHIA is
-    healthcare-specific. Firm types: Grant Thornton Advisors (PE-backed alternative practice structure), KPMG (Big Four),
-    Sikich and Protiviti as survey sponsors. Certification against AIUC-1 or ISO/IEC 42001 is assurance; the audit-side
-    equivalent of this entry is assurance-assurance-over-ai-10.
+    Grade B rests on the Grant Thornton case (named firm, anonymous client, self-reported counts); the survey figures
+    alone would be C. The GT case page has no date ('2026' from the URL). The IIA lists the framework as issued
+    2024-09-13; other sources date it 2023. Protiviti-AHIA is healthcare-specific. Firm types: Grant Thornton Advisors
+    (PE-backed alternative practice structure), KPMG (Big Four), Sikich and Protiviti as survey sponsors. Certification
+    against AIUC-1 or ISO/IEC 42001 is assurance; the audit-side equivalent of this entry is
+    assurance-assurance-over-ai-10.
 
 - id: advisory-risk-controls-20
   title: "SOX teams scope and evaluate the AI embedded in clients' business controls"
@@ -1294,9 +1292,9 @@
     - {ref: KPMG-IPO-2026, title: "The IT leader's guide to IPO preparedness", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/us/en/articles/2026/it-leaders-guide-ipo-preparedness.html", date: "2026-06-10", access: full, locator: "passage citing KPMG's 2025 Trends in Material Weaknesses study"}
   last_reviewed: "2026-10-21"
   notes: >-
-    From discourse 14. Grade C: community polls and practitioner testimony with unnamed employers, plus a vendor blog.
-    The Internal Audit Collective promotes its own paid playbook. The vendor blog's claim that no PCAOB AI-specific
-    standard or staff guidance exists as of July 2026 was not checked. The external-audit side of the same question is
+    Grade C: community polls and practitioner testimony with unnamed employers, plus a vendor blog. The Internal Audit
+    Collective promotes its own paid playbook. The vendor blog's claim that no PCAOB AI-specific standard or staff
+    guidance exists as of July 2026 was not checked. The external-audit side of the same question is
     assurance-assurance-over-ai-02 and -03.
 
 - id: advisory-risk-controls-21
@@ -1349,68 +1347,11 @@
     - {ref: DART-COSO-2026, title: "Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI", publisher: "Deloitte (DART)", type: firm, url: "https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai", date: "2026-04-03", access: full, locator: "paragraph on monitoring KPIs"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea. Merged from practice 19, discourse 13 and governance 02 (the discourse file had graded it C; with no deployment
-    found it is D). The author is a university professor writing in a trade outlet. The client-accounting side of agentic
-    close (running the close for clients) belongs to the client-accounting-services module; this entry keeps only the
-    control design. Independence: designing controls for a client the firm also audits needs analysis
-    (see advisory-risk-controls-17).
-
-- id: advisory-risk-controls-22
-  title: "Confidence-threshold routing: low-confidence AI classifications and extractions go to a person"
-  archetype: advisory
-  module: risk-controls
-  function: finance-accounting
-  work_types: [transaction-processing, review-assurance]
-  pattern: reconcile-exceptions
-  ladder: automate
-  change_scope: step
-  runtime_class: workflow-automation
-  maturity: emerging
-  problem: >-
-    Accountants working with AI suggestions risk adding errors when they follow AI recommendations on uncertain items. In
-    a framed field experiment, AI assistance improved classification accuracy on average, but relying on non-consensus AI
-    recommendations can increase the risk of error.
-  solution: >-
-    Set confidence thresholds so low-confidence items go to a person. In Choi and Xie's field data, accountants
-    selectively intervene when AI confidence scores are low. COSO's roadmap gives the same design for invoice extraction:
-    confidence thresholds, human review for new templates, and monthly accuracy sampling.
-  outcomes:
-    - lever: capacity
-      description: "Time shifted from routine data entry to business communication and quality assurance in the field data"
-      figure: "approximately 8.5% of accountant time"
-      measures: "Reallocation of about 8.5% of accountant time from routine data entry toward higher-value tasks, per the MIT Sloan summary of the working-paper version; field data from an AI platform serving 79 SMEs (over 200,000 transaction records) and a survey of 277 accountants; bookkeeping context"
-      provenance: independent
-      source_ref: MITSLOAN-CHOIXIE-2025
-    - lever: quality
-      description: "62% of surveyed accountants worried about errors and accuracy in AI-generated reporting"
-      figure: "62%"
-      measures: "Share of the 277 surveyed accountants, per the MIT Sloan summary"
-      provenance: independent
-      source_ref: MITSLOAN-CHOIXIE-2025
-  prerequisites:
-    - "The AI system exposes a usable confidence score, and reviewers are trained to read it (MITSLOAN-CHOIXIE-2025)"
-  risks_and_guardrails:
-    - "Accountants tended to follow AI's divergent categories for uncertain transactions, which can introduce errors (MITSLOAN-CHOIXIE-2025)"
-    - "Threshold design and accuracy sampling need re-validation after vendor updates (COSO-GENAI-2026, p. 19)"
-  human_checkpoints:
-    - "Low-confidence items and new templates go to a named reviewer; a controller reviews the monthly accuracy sample"
-  role_evolution: >-
-    The authors report effort moving from data entry to communication and quality assurance, and more experienced
-    accountants gain more from the AI (STANFORD-JAR-2026; MITSLOAN-CHOIXIE-2025).
-  evidence_grade: C
-  sources:
-    - {ref: STANFORD-JAR-2026, title: "Human + AI in Accounting: Early Evidence from the Field (Choi, Xie), Journal of Accounting Research 64(3), pp. 1333-1373", publisher: "Stanford GSB (Choi and Xie)", type: academic, url: "https://www.gsb.stanford.edu/index.php/node/629989", date: "2026-06", access: full, locator: "abstract"}
-    - {ref: MITSLOAN-CHOIXIE-2025, title: "How generative AI can make accountants more productive", publisher: "MIT Sloan Ideas Made to Matter", type: academic, url: "https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-make-accountants-more-productive", date: "2025-08-05", access: full, locator: "paragraphs 2-6"}
-    - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "step 4 example, p. 19; case 1, p. 20"}
-  last_reviewed: "2026-10-21"
-  notes: >-
-    From governance 18. Verification (2026-10-21) downgraded B to C and in-production to emerging: the measurements are
-    independent but come from bookkeeping on one vendor's platform, which the study does not name, so there is no named
-    deployment; and the process is adjacent (bookkeeping, not risk and controls advisory). No advisory firm is found
-    designing confidence-threshold routing for a client; COSO gives it only as an example. The governance file rated it augment; automate is used because the
-    design sends only low-confidence items and new templates to people. The MIT Sloan summary describes an earlier
-    version of the paper; the journal version was read only as an abstract. Firm type: not applicable (academic study).
-    The bookkeeping delivery itself belongs to client-accounting-services; this entry keeps the control design.
+    Idea (grade D): no deployment found. The author is a university professor writing in a trade outlet. The
+    client-accounting side of agentic close (running the close for clients) is advisory-client-accounting-services-21,
+    the same five controls applied by the CAS firm; this entry covers only the control-design service to the client. The
+    same controls applied to AI-generated forecasts are advisory-fpa-performance-14. Independence: designing controls
+    for a client the firm also audits needs analysis (see advisory-risk-controls-17).
 
 - id: advisory-risk-controls-23
   title: "Idea: AI-enabled fraud readiness and fraud-risk program design for client internal-audit and risk functions"
@@ -1462,12 +1403,13 @@
     - {ref: AFP-PAYFRAUD-2026, title: "Over 75% of US Firms Experienced Payments Fraud in 2025, While AI Adoption for Fraud Mitigation Lags", publisher: "Association for Financial Professionals (survey underwritten by Truist)", type: survey, url: "https://www.financialprofessionals.org/about/learn-more/press-releases/Details/over-75-percent-of-us-firms-experienced-payments-fraud-in-2025-while-ai-adoption-for-fraud-mitigation-lags", date: "2026-04-14", access: full, locator: "key findings list"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea: the sources show demand and concern, not a delivered advisory service. Built on discourse 16 plus items the
-    forensic-disputes and client-accounting-services research routed here (DOJ-ECCP-2024, FINCEN-DEEPFAKE-2024,
-    ACFE-TECHBENCH-2026, AFP-PAYFRAUD-2026). The IAF PDF date is its creation date (2026-07-28). The IIA release prints
-    'February 3, 2025' for the 2026 conference; 2026 is assumed. Detection and investigation stay in forensic-disputes
-    (advisory-forensic-disputes-03 covers proactive anti-fraud monitoring); the external-audit equivalent is
-    assurance-planning-risk-assessment-15.
+    Idea: the sources show demand and concern, not a delivered advisory service. Reference points include DOJ-ECCP-2024,
+    FINCEN-DEEPFAKE-2024, ACFE-TECHBENCH-2026 and AFP-PAYFRAUD-2026. The IAF PDF date is its creation date (2026-07-28).
+    The IIA release prints 'February 3, 2025' for the 2026 conference; 2026 is assumed. Detection and investigation stay
+    in forensic-disputes (advisory-forensic-disputes-03 covers proactive anti-fraud monitoring;
+    advisory-forensic-disputes-12 is the investigation-service idea); payment screening is
+    advisory-client-accounting-services-10 and family-office payment controls advisory-private-client-07; the
+    external-audit equivalent is assurance-planning-risk-assessment-15.
 
 - id: advisory-risk-controls-24
   title: "Idea: certify AI testing tools before use, with a parallel run against completed engagements and recertification after changes"
@@ -1517,8 +1459,8 @@
     - {ref: CPAPA-AUDITAID-2026, title: "AICPA Practice Aid Provides Guidance to Auditors on AI Use in Financial Statement Audits", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=191588", date: "2026-10-13", access: full, locator: "bullet on audit team capabilities"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea: practitioners and the FRC discuss this control; no firm reports doing it with results. From governance 06, with
-    the parallel-run recommendation from the practice research (CPAPA-5Q-2026). The FRC guidance is aimed at audit firms
-    and is not a response to identified quality deficiencies. Firm type: not applicable. Related firm-quality entries:
+    Idea: practitioners and the FRC discuss this control; no firm reports doing it with results. The parallel-run
+    recommendation is from CPAPA-5Q-2026. The FRC guidance is aimed at audit firms and is not a response to identified
+    quality deficiencies. Firm type: not applicable. Related firm-quality entries:
     professional-services-quality-review-05 (benchmark AI tools against expert answers) and
     professional-services-quality-review-07 (standing evaluation suites and change control).

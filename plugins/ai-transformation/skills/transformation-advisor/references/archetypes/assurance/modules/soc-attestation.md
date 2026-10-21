@@ -1,10 +1,10 @@
 # SOC and attestation (assurance)
 
-Last reviewed 2026-10-17. Use cases live in `../use-cases/soc-attestation.yaml` (16 entries). `#05` means
+Last reviewed 2026-10-21 (mid-market widening). Use cases live in `../use-cases/soc-attestation.yaml` (18 entries). `#05` means
 `assurance-soc-attestation-05`; other modules' ids are in full. The controls-testing module already holds AI-assisted
 SOC testing (`assurance-controls-testing-11`), SOC-cycle drafting of Section 3 and deviation responses (`assurance-controls-testing-12`),
 reading vendor SOC reports (`assurance-controls-testing-13`), platforms feeding examiners (`assurance-controls-testing-14`) and
-evidence-fabrication screening (`assurance-controls-testing-23`); use those ids here instead of looking for duplicates. Source keys in brackets are in the YAML or in §10.
+evidence-fabrication screening (`assurance-controls-testing-23`); use those ids here instead of looking for duplicates. Source keys in brackets are in the YAML or in §11.
 Almost every figure is self-reported or vendor-published. No independent measure of AI quality in SOC work was found.
 Everything about Delve is allegation: Delve denies it, and no regulator finding exists. Say both whenever it comes up.
 
@@ -19,7 +19,8 @@ Everything about Delve is allegation: Delve denies it, and no regulator finding 
 7. [Roles and how they evolve](#7-roles-and-how-they-evolve)
 8. [Frontier](#8-frontier)
 9. [Common objections](#9-common-objections)
-10. [Sources](#10-sources)
+10. [Mid-market firms](#10-mid-market-firms)
+11. [Sources](#11-sources)
 
 ## 1. What this module covers
 
@@ -95,40 +96,29 @@ platform-heavy: half the entries sit on the service-organisation side (`function
 - `#15` platform and licensed CPA firm sold as one "auditor-led" service (Thoropass; A-LIGN).
 - `#16` AI-native CPA firm (Chiaro) publishes its method, tests complete populations by default and bundles
   readiness; one Type I issued, no Type II.
+- `#17` one CPA-led engagement yields a SOC 2 report plus an AIUC-1 certification for AI agents (AICPA and AIUC,
+  19 Oct 2026; pilots at "several CPA firms", only PwC named; full launch expected early 2027).
+- `#18` a regional firm (Kaufman Rossin) pairs AI governance advisory (ISO 42001 alignment) with its SOC practice;
+  the advisory and attest boundary is the guardrail (job posting).
 
-**Coverage.** Ladder: assist 4, augment 7, automate 3, delegate 2. Scope: step 9, process 3, model 4. Delegate rests
+**Coverage.** Ladder: assist 5, augment 8, automate 3, delegate 2. Scope: step 9, process 3, model 6. Delegate rests
 on one announced product (`#08`) and one new firm's self-description (`#16`); no measured delegate deployment exists.
 No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outside KPMG UK.
 
 ## 4. Interview probes
 
-1. **SOC practice: "Where do new SOC clients come from: direct, a platform referral or a bundled package? Who sets scope, fee and
-   report date?"** Reveals independence exposure: ethics staff list referral concentration, vendor deadlines,
-   bundled fees, non-disparagement and paid evidence access as threats (`#13`, `#14`).
-2. **"Take five recent SOC 2 engagements. Who set the risk assessment, sample sizes and test procedures: you or the
-   platform defaults? What would a peer reviewer comparing them see?"** Reveals template risk; identical
-   engagements can be judged nonconforming.
-3. **"When are the system description, test-procedure text and opinion first drafted, and by whom, relative to
-   period end and evidence arrival?"** Reveals the pattern at the centre of the Delve allegations and AICPA warnings.
-4. **"How do you test what a compliance platform collects? What share do you re-perform at the source system, and
-   how do you catch broken syncs, wrong populations or edited exports?"** Reveals reliance on tool data (`assurance-controls-testing-14`, `#05`).
-5. **"Where do you use AI today (readiness, walkthroughs, evidence extraction, testing, report review, acceptance,
-   scheduling)? What is the review standard, and what do you measure?"** Reveals maturity against KPMG UK's ~18%
-   and whether any quality evidence (deviations found, rework, overrides) exists. Most have hours at best.
-6. **"Where do you draw the line on AI-drafted text: Section 3, deviation responses, test conclusions? Who owns
-   each?"** Reveals whether the management/auditor boundary holds (management owns its responses).
-7. **"At small-company population sizes, do you still sample? What would testing every item change in your
-   method, documentation and peer review?"** Reveals readiness for `#16`'s model and its caveat on incomplete populations.
-8. **"When a client builds an LLM into its product or uses foundation-model providers, what changes in scoping,
-   description and carve-out analysis under TQA 9561?"** Reveals AI-as-test-object readiness (`assurance-controls-testing-15`) and scope inflation.
-9. **"What client evidence goes into AI tools, under what terms, and do clients know?"** Reveals confidentiality
-   exposure; no standard requires disclosing AI use [CHIARO-WHO-2026].
-10. **"How have fees, realization and staff mix changed since platforms and AI arrived? How do you show a buyer
-    your report is tailored?"** Reveals business-model pressure (`#07`, `#14`, `#15`).
-11. **Report users: "Since March 2026, what changed in how you read vendors' SOC reports (signing firm, CUECs,
-    exclusions, gap period)? How often do you reject one?"** Reveals buyer due diligence (`assurance-controls-testing-13`, `#12`).
-12. **Service organisations: "How do you know your platform's integrations cover the whole system boundary and the
-    right populations, such as service accounts?"** Reveals false-green risk in `#05`.
+1. **SOC practice: "Where do new SOC clients come from: direct, a platform referral or a bundled package? Who sets scope, fee and report date?"** Reveals independence exposure: ethics staff list referral concentration, vendor deadlines, bundled fees, non-disparagement and paid evidence access as threats (`#13`, `#14`).
+2. **"Take five recent SOC 2 engagements. Who set the risk assessment, sample sizes and test procedures: you or the platform defaults? What would a peer reviewer comparing them see?"** Reveals template risk; identical engagements can be judged nonconforming.
+3. **"When are the system description, test-procedure text and opinion first drafted, and by whom, relative to period end and evidence arrival?"** Reveals the pattern at the centre of the Delve allegations and AICPA warnings.
+4. **"How do you test what a compliance platform collects? What share do you re-perform at the source system, and how do you catch broken syncs, wrong populations or edited exports?"** Reveals reliance on tool data (`assurance-controls-testing-14`, `#05`).
+5. **"Where do you use AI today (readiness, walkthroughs, evidence extraction, testing, report review, acceptance, scheduling)? What is the review standard, and what do you measure?"** Reveals maturity against KPMG UK's ~18% and whether any quality evidence (deviations found, rework, overrides) exists. Most have hours at best.
+6. **"Where do you draw the line on AI-drafted text: Section 3, deviation responses, test conclusions? Who owns each?"** Reveals whether the management/auditor boundary holds (management owns its responses).
+7. **"At small-company population sizes, do you still sample? What would testing every item change in your method, documentation and peer review?"** Reveals readiness for `#16`'s model and its caveat on incomplete populations.
+8. **"When a client builds an LLM into its product or uses foundation-model providers, what changes in scoping, description and carve-out analysis under TQA 9561?"** Reveals AI-as-test-object readiness (`assurance-controls-testing-15`) and scope inflation.
+9. **"What client evidence goes into AI tools, under what terms, and do clients know?"** Reveals confidentiality exposure; no standard requires disclosing AI use [CHIARO-WHO-2026].
+10. **"How have fees, realization and staff mix changed since platforms and AI arrived? How do you show a buyer your report is tailored?"** Reveals business-model pressure (`#07`, `#14`, `#15`).
+11. **Report users: "Since March 2026, what changed in how you read vendors' SOC reports (signing firm, CUECs, exclusions, gap period)? How often do you reject one?"** Reveals buyer due diligence (`assurance-controls-testing-13`, `#12`).
+12. **Service organisations: "How do you know your platform's integrations cover the whole system boundary and the right populations, such as service accounts?"** Reveals false-green risk in `#05`.
 
 ## 5. Metrics and benchmarks
 
@@ -139,6 +129,11 @@ No AI evidence was found for bridge letters, SOC 3, or ISAE 3402 practice outsid
   on system access and authorisation; qualified reports 15% (20% the year before) [K-UKCA].
 - EY review of 2,000+ SOC reports: logical access behind 52% of SOC 1 and 40% of SOC 2 deviations [EY-SOC-2025].
 - Schellman says it issues more than 2,000 SOC reports a year [SCHELLMAN-2026].
+- AICPA and AIUC: more than 40,000 organisations obtained a SOC 2 attestation or AIUC-1 certification "last year"
+  (the count does not separate the two) (`#17`). First AIUC-1 audit by an accredited auditor (Schellman, UiPath):
+  250+ evidence items, 2,000+ adversarial scenarios, 8 weeks (vendor-published; `#17`).
+- Schellman survey of 500+ enterprise leaders: 74% say they are audit-ready for AI governance, 27% are (company
+  summary; full report gated; vendor-published) [SCHELLMAN-AIGOV-2026].
 
 **Usage poll (EY SOC conference, Sep 2026; attendees, multiple answers, n not stated)**: evidence collection 63%,
 updating Section 3 45%, drafting deviation responses 41%, project management 29% [EY-SOC].
@@ -198,6 +193,9 @@ review test); customer rejections or re-examinations; questionnaire answers spot
   sustainability (the JofA summary does not mention AI); effective 15 Jun 2029 if finalised [JOFA-ATTEST-2026].
 - **Confidentiality.** Client evidence entered into generative AI tools may be shared with the tool's owners; the
   AICPA Code's guidance on outside service providers applies [CHIARO-WHO-2026].
+- **AI-related advisory to attest clients.** Developing or hosting an AI system for an attest client can raise
+  independence concerns; document the analysis under the conceptual framework [JOFA-ETHAI-2026] (`#18`). The
+  AICPA's joint-offering release calls the SOC 2 plus AIUC-1 output a "certification" (`#17`); SOC 2 remains an examination.
 - **Model behaviour.** EY: AI may invent details even when told not to; agents may change behaviour to work around
   anomalies [EY-SOC].
 
@@ -222,62 +220,63 @@ responses to deviations. Customers decide reliance and test CUECs.
   review of the report [LINFORD-ASSURE-2026].
 - **Peer reviewers** of firms with SOC 2 practices dig deeper and, when risk is elevated, compare engagements [JOFA-PRB].
 - **Vendor-risk teams** treat a report as the start of due diligence and vet the signing CPA [KPMG-CHECKBOX-2026, WHISTIC-DELVE-2026].
-- **New roles, so far at vendors only**: Fieldguide's audit methodology lead and director of audit transformation for
-  an "agentic operating model"; Drata's audit-firm alliances manager. No audit-firm job posting showing AI use in SOC
-  work was found [FIELDGUIDE-JOBS-2026, DRATA-JOBS-2026].
+- **New roles**: at vendors, Fieldguide's audit methodology lead and director of audit transformation for an
+  "agentic operating model" and Drata's audit-firm alliances manager [FIELDGUIDE-JOBS-2026, DRATA-JOBS-2026]. The
+  first audit-firm posting found (Kaufman Rossin, 7 Oct 2026) asks SOC and risk-advisory managers for AI governance
+  and ISO 42001 knowledge and the ability to use AI tools [KAUFMAN-JOB-2026] (`#18`). In the joint offering, CPAs
+  lead and outside technical evaluators test agent behaviour (`#17`).
 - **Skills**: AI literacy and digital forensics [ISACA-EVIDENCE-2026]; EY notes firms hiring chief data strategy officers [EY-SOC].
 
 ## 8. Frontier
 
 - **2025-11-19** Vanta launches its "Agentic Trust Platform" and AI Agent 2.0 [VANTA-HNS-2025].
 - **2026-01** KPMG UK introduces a reasonable-assurance "SOC 2+" opinion over AI governance (assurance-over-AI module) [K-UKCA].
-- **2026-02-01** AICPA SOC 2 Working Group chair warns that "fast and easy" may cost quality; a SOC Quality Center
-  badge is being explored [JOFA-FAST].
+- **2026-02-03** Schellman named first accredited AIUC-1 auditor; first certification completed (update 2 Apr) [AIUC-SCHELLMAN-2026].
+- **2026-02-01** AICPA SOC 2 Working Group chair warns that "fast and easy" may cost quality; a SOC Quality Center badge is being explored [JOFA-FAST].
 - **2026-02-26 / 03-25** ASB attestation exposure drafts (effective 2029-06-15 if finalised) [JOFA-ATTEST-2026].
-- **2026-03-19 to 04-23** Delve: anonymous allegations, denied; Delve apologises and says it will rebuild its
-  auditor network (3 Apr); Y Combinator parts ways; named customers move [DEEPDELVER-2026, DELVE-RECORD-2026, TC-DELVEYC-2026, TC-CONTEXT-2026].
+- **2026-03-19 to 04-23** Delve: anonymous allegations, denied; Delve apologises and says it will rebuild its auditor network (3 Apr); Y Combinator parts ways; named customers move [DEEPDELVER-2026, DELVE-RECORD-2026, TC-DELVEYC-2026, TC-CONTEXT-2026].
 - **2026-03-20** Vanta launches compliance, third-party-risk and customer-trust agents [VERDICT-VANTA-2026].
 - **2026-04-06 to 06-01** AICPA ethics guidance, podcast, Peer Review alert and reviewer outreach [JOFA-SOCETH-2026, JOFA-PODSOC, JOFA-PRB].
-- **2026-08-04** Drata releases AI Agent Governance in limited availability; Chiaro publishes its SOC 2 method
-  [DRATA-AGENTGOV-2026, HN-CHIARO-2026].
+- **2026-08-04** Drata releases AI Agent Governance in limited availability; Chiaro publishes its SOC 2 method [DRATA-AGENTGOV-2026, HN-CHIARO-2026].
 - **2026-08-30** CSA note: auditors improvise AI evidence requests without AI criteria [CSA-SOC2].
 - **2026-09-11** TQA 9561 on AI in SOC 1 and SOC 2 [AICPA-TQA9561-2026, SD-TQA].
 - **2026-09-17** Comp AI raises a $34M Series A [TC-COMPAI-2026].
 - **2026-09-22** KPMG expects a TSC restructuring with AI considerations [KPMG-SOC-2026].
 - **2026-09-23** Linford: AI made compliance cheaper, not assurance [LINFORD-ASSURE-2026].
+- **2026-07-14 / 10-15** AIUC publishes re-certification guidance, then consolidates third-party testing into one requirement per principle [AIUC-Q3-2026, AIUC-Q4-2026].
 - **2026-10-13** Fieldguide scheduled a live demonstration of agents running a SOC 2 engagement [FIELDGUIDE-WEBINAR-2026].
+- **2026-10-19** AICPA and AIUC announce the joint SOC 2 plus AIUC-1 offering; full launch "expected" early 2027 [AICPA-AIUCPR-2026].
 - **2026-11-10 to 11-12** VantaCon, billed as "the AI governance event" (scheduled) [VANTACON-2026].
-- **2026-12-15** ISAE 3000 expert amendments take effect [FRC-620-2026]. Watch: AICPA inquiry outcome, TSC changes,
-  SOC Quality Center, first national peer review data on SOC practices.
+- **2026-12-15** ISAE 3000 expert amendments take effect [FRC-620-2026]. Watch: AICPA inquiry outcome, TSC changes, SOC Quality Center, first national peer review data on SOC practices.
 
 ## 9. Common objections
 
-- **"AI makes SOC 2 cheap now."** A SOC firm says AI made compliance cheaper but not assurance (`#09`); the Working
-  Group reports intense fee pressure. Directory medians of ~$9,000 are asking prices, not proof of adequate work.
-- **"The platform already tested everything."** Tools confirm configuration exists, not effectiveness; dashboards do
-  not show the right population was used; the auditor must validate a sample of tool results (`#05`).
-- **"Templates are just efficient."** Peer review can judge identical engagements nonconforming; a Working Group
-  member said some firms' reports differ only by logo [JOFA-FAST, JOFA-PRB].
-- **"Referral partners are just a sales channel."** Ethics staff name referral concentration, vendor deadlines and
-  bundled fees as threats; document the evaluation (`#13`, `#14`).
-- **"AI will save hours on every engagement."** KPMG UK reports ~18% from a tool bundle; Linford says AI saves it no
-  time but makes it more thorough. Nobody has published a quality measure. Measure your own.
-- **"TQA 9561 means every report needs an AI section."** No: AI matters only where it is in the services or affects
-  in-scope controls; scope inflation is the wrong reaction [SD-TQA].
-- **"Testing every item means certainty."** Chiaro's own caveat: a flawless census of an incomplete population
-  proves nothing; reasonable assurance still applies (`#16`).
-- **"Delve proves the platforms are fraudulent."** The claims are unproven allegations, denied, from an anonymous
-  author. The AICPA says most service organisations hire credible firms and most firms use technology appropriately [JOFA-PODSOC].
-- **"No regulator will act."** A compliance podcast says regulators are unlikely to step in, so buyers must reassess
-  due diligence [CPN-WEEDS-2026]. AICPA staff planned peer review outreach from 1 Jun 2026, and state law applies to signatories.
+- **"AI makes SOC 2 cheap now."** A SOC firm says AI made compliance cheaper but not assurance (`#09`); the Working Group reports intense fee pressure. Directory medians of ~$9,000 are asking prices, not proof of adequate work.
+- **"The platform already tested everything."** Tools confirm configuration exists, not effectiveness; dashboards do not show the right population was used; the auditor must validate a sample of tool results (`#05`).
+- **"Templates are just efficient."** Peer review can judge identical engagements nonconforming; a Working Group member said some firms' reports differ only by logo [JOFA-FAST, JOFA-PRB].
+- **"Referral partners are just a sales channel."** Ethics staff name referral concentration, vendor deadlines and bundled fees as threats; document the evaluation (`#13`, `#14`).
+- **"AI will save hours on every engagement."** KPMG UK reports ~18% from a tool bundle; Linford says AI saves it no time but makes it more thorough. Nobody has published a quality measure. Measure your own.
+- **"TQA 9561 means every report needs an AI section."** No: AI matters only where it is in the services or affects in-scope controls; scope inflation is the wrong reaction [SD-TQA].
+- **"Testing every item means certainty."** Chiaro's own caveat: a flawless census of an incomplete population proves nothing; reasonable assurance still applies (`#16`).
+- **"Delve proves the platforms are fraudulent."** The claims are unproven allegations, denied, from an anonymous author. The AICPA says most service organisations hire credible firms and most firms use technology appropriately [JOFA-PODSOC].
+- **"Is AIUC-1 mainstream?"** Schellman calls it "still largely a competitive differentiator" in an early adoption phase [SCHELLMAN-BLOG-2026]. **"SOC 2 is enough for an AI product."** AIUC case material argues SOC 2 was not designed for hallucinations or adversarial attacks (vendor view) [AIUC-FIN-2025] (`#17`).
+- **"No regulator will act."** A compliance podcast says regulators are unlikely to step in, so buyers must reassess due diligence [CPN-WEEDS-2026]. AICPA staff planned peer review outreach from 1 Jun 2026, and state law applies to signatories.
 
-## 10. Sources
+## 10. Mid-market firms
+
+This section covers small and mid-size CPA firms with SOC practices. Each example names its kind of firm.
+- **Quality pressure lands on small firms.** Tool vendors "numbering in the dozens", some with referral networks of small CPA firms, drive "fast and easy" expectations [JOFA-FAST]; peer review compares engagements when risk is elevated [JOFA-PRB]. In Tennessee's 2025 peer review report, one of two SOC engagements reviewed was nonconforming (too few to generalise) [TSCPA-PEERREVIEW-2025].
+- **AI assurance is arriving through SOC practices.** Schellman (described in the joint release as a top-50 CPA firm focused on IT compliance) was the first accredited AIUC-1 auditor; no mid-market firm is named in the joint offering (`#17`). Search-only leads, not proof points: Sensiba LLP's reported provisional AIUC-1 accreditation [SENSIBA-AIUC1-2026] and Baker Tilly's expanded Fieldguide use across SOC, PCI, HITRUST, ISO, FedRAMP, SOX and internal audit (27 May 2026) [BAKERTILLY-FIELDGUIDE-2026].
+- **Advisory and attest meet.** A privately owned regional firm (Kaufman Rossin, 700+ staff) hires for AI governance advisory alongside SOC 1, 2 and 3 work (`#18`); the independence analysis comes first.
+- **Probes:** "Have clients that build or deploy AI agents asked for SOC 2 plus something for the AI? What did you say, and who would do the technical testing?" "If a client brings an AIUC-1 evaluation report to your SOC 2 examination, what would you accept as evidence and what would you retest?" "Would a peer reviewer see the same engagement design across your AI clients?"
+
+## 11. Sources
 
 Full details (title, publisher, type, URL, date, access) are in the YAML.
-- **In the YAML, professional bodies and standard-setters:** JOFA-FAST, JOFA-PRB, JOFA-PODSOC, JOFA-SOCETH-2026, AICPA-SOC-2026, AICPA-REVALERT-2026, CSA-SOC2, XRB-3402-2026, OSCPA-PR-2026, LASCPA-PR-2026.
-- **In the YAML, firms and conferences:** EY-SOC, KPMG-CHECKBOX-2026, BAKERTILLY-TRUST-2026, LINFORD-ASSURE-2026, LINFORD-FAQ-2022, LINFORD-TOOLS-2021, GT-SOC2-2023, ALIGN-ASCEND-2026, ALIGN-BENCH-2026, WISPR-2026, CHIARO-METHOD-2026, CHIARO-BUNDLE-2026, CHIARO-AINATIVE-2026, CHIARO-WHO-2026, VANTACON-2026.
-- **In the YAML, vendors:** VANTA-AUDIT-2026, VANTA-AI-2026, VANTA-AUDITORS-2026, VANTA-VS-2026, DRATA-AGENTGOV-2026, DRATA-INTEGRITY-2026, DRATA-JOBS-2026, FIELDGUIDE-SOC-2026, FIELDGUIDE-WEBINAR-2026, FIELDGUIDE-JOBS-2026, FIELDGUIDE-WEAVER-2026, THOROPASS-2026, COMPAI-2026, SECUREFRAME-2026, ONELEET-2026, SCRUT-EVIDENCE-2026, WHISTIC-DELVE-2026, CYBERSECIFY-2026, SOC2AUD-FIRMS-2026, SOC2AUD-AICOS-2026, SOC2AUD-DELVE-2026.
-- **In the YAML, press and community:** VANTA-HNS-2025, VERDICT-VANTA-2026, FORTUNE-VANTA-2026, SACRA-VANTA-2026, TC-DELVE-2026, TC-WHISTLE2-2026, TC-DELVEYC-2026, TC-LITELLM-2026, TC-CONTEXT-2026, TC-COMPAI-2026, IANS-DELVE, DEEPDELVER-2026 (anonymous, unverified), DELVE-RESPONSE-2026, DELVE-CHANGES-2026, DELVE-RECORD-2026, HN-CHIARO-2026.
+- **In the YAML, professional bodies and standard-setters:** JOFA-FAST, JOFA-PRB, JOFA-PODSOC, JOFA-SOCETH-2026, AICPA-SOC-2026, AICPA-REVALERT-2026, CSA-SOC2, XRB-3402-2026, OSCPA-PR-2026, LASCPA-PR-2026, AICPA-AIUCPR-2026, JOFA-AIUC-2026, JOFA-ETHAI-2026.
+- **In the YAML, firms and conferences:** EY-SOC, KPMG-CHECKBOX-2026, BAKERTILLY-TRUST-2026, LINFORD-ASSURE-2026, LINFORD-FAQ-2022, LINFORD-TOOLS-2021, GT-SOC2-2023, ALIGN-ASCEND-2026, ALIGN-BENCH-2026, WISPR-2026, CHIARO-METHOD-2026, CHIARO-BUNDLE-2026, CHIARO-AINATIVE-2026, CHIARO-WHO-2026, VANTACON-2026, SCHELLMAN-BLOG-2026, KAUFMAN-JOB-2026 (job posting).
+- **In the YAML, vendors:** VANTA-AUDIT-2026, VANTA-AI-2026, VANTA-AUDITORS-2026, VANTA-VS-2026, DRATA-AGENTGOV-2026, DRATA-INTEGRITY-2026, DRATA-JOBS-2026, FIELDGUIDE-SOC-2026, FIELDGUIDE-WEBINAR-2026, FIELDGUIDE-JOBS-2026, FIELDGUIDE-WEAVER-2026, THOROPASS-2026, COMPAI-2026, SECUREFRAME-2026, ONELEET-2026, SCRUT-EVIDENCE-2026, WHISTIC-DELVE-2026, CYBERSECIFY-2026, SOC2AUD-FIRMS-2026, SOC2AUD-AICOS-2026, SOC2AUD-DELVE-2026, AIUC-SCHELLMAN-2026, AIUC1-SITE-2026, AIUC-FIN-2025.
+- **In the YAML, press and community:** VANTA-HNS-2025, VERDICT-VANTA-2026, FORTUNE-VANTA-2026, SACRA-VANTA-2026, TC-DELVE-2026, TC-WHISTLE2-2026, TC-DELVEYC-2026, TC-LITELLM-2026, TC-CONTEXT-2026, TC-COMPAI-2026, IANS-DELVE, DEEPDELVER-2026 (anonymous, unverified), DELVE-RESPONSE-2026, DELVE-CHANGES-2026, DELVE-RECORD-2026, HN-CHIARO-2026, AT-AIUC-2026, SENSIBA-AIUC1-2026 (search-only).
 - **Not in the YAML (all opened and checked on 2026-10-17 unless noted):**
   - K-UKCA (KPMG UK, *Reimagining Controls Assurance with AI*, 2026-01, https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf); in controls-testing YAML.
   - EY-SOC-2025 (EY, *13th annual EY SOC Reporting Conference highlights*, 2025-08, https://www.ey.com/content/dam/ey-unified-site/ey-com/en-ch/insights/technology-risk/documents/ey-13th-annual-soc-reporting-conference-highlights.pdf).
@@ -297,3 +296,4 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   - SOC2AUD-COST-2026 (SOC2Auditors.org lead-generation directory, 2026-10-05, https://soc2auditors.org/soc-2-audit-cost/).
   - SCHELLMAN-2026 (Schellman blog index, accessed 2026-10, https://www.schellman.com/blog).
   - CPN-WEEDS-2026 (Compliance Podcast Network, show notes only, 2026-04-01, https://compliancepodcastnetwork.net/compliance-into-the-weeds-ai-driven-soc-audits-and-the-growing-trust-gap/).
+  - Added 2026-10-21: AIUC-Q3-2026 and AIUC-Q4-2026 (AIUC standard updates, 2026-07-14 and 2026-10-15, https://www.aiuc-1.com/research/2026-q3-standard-update and https://www.aiuc-1.com/research/2026-q4-standard-update; in assurance-over-ai YAML); SCHELLMAN-AIGOV-2026 (Schellman, *2026 State of AI Governance*, landing page only, undated, https://www.schellman.com/whitepaper/2026-state-of-ai-governance); TSCPA-PEERREVIEW-2025 (Tennessee Society of CPAs peer review report 2025, 2026-03-31, https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf); BAKERTILLY-FIELDGUIDE-2026 (Baker Tilly via Business Wire, 2026-05-27, search-only, https://www.bakertilly.com/news/baker-tilly-advances-ai-enabled-assurance-with-fieldguide).

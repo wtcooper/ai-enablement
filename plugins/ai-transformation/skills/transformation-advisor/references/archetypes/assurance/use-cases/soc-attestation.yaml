@@ -894,6 +894,7 @@
     - {ref: AIUC-FIN-2025, title: "Case study: How Fin built enterprise trust for customer-facing AI agents (updated Oct 2026)", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/research/case-study-fin", date: "2025-12-11", access: full, locator: "case study body (SOC 2 versus agent testing)"}
     - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14", access: full, locator: "section 'A heightened focus on SOC 2 quality'"}
     - {ref: JOFA-PODSOC, title: "The risks of quick-turn SOC engagements and what CPAs should know (podcast with Amy Pawlicki, AICPA)", publisher: "Journal of Accountancy (AICPA)", type: podcast, url: "https://www.journalofaccountancy.com/podcast/2026/apr/the-risks-of-quick%E2%80%91turn-soc-engagements-and-what-cpas-should-know/", date: "2026-04-30", access: full, locator: "statement that a SOC 2 report is not a certification"}
+    - {ref: SENSIBA-AIUC1-2026, title: "LinkedIn repost that Sensiba LLP earned provisional AIUC-1 accreditation, with a first engagement under way (from a search summary; not opened)", publisher: "LinkedIn (via search)", type: community, url: "https://ie.linkedin.com/in/doneganshane9", date: "2026", access: search-only, locator: "search-result summary only"}
   last_reviewed: "2026-10-21"
   notes: >-
     Grade B (not A): a named pilot firm (PwC, per Accounting Today) and a release statement that several firms
@@ -904,7 +905,7 @@
     release) and red-teaming of 1,000 to 5,000 scenarios (site); the AIUC cofounder quote says 'thousands'. Extends
     assurance-assurance-over-ai-19 (AIUC-1 itself) and -13 to -15 here (platform-bundled SOC services) by naming the
     AICPA as a party. Search-only lead, not used for the grade: a LinkedIn repost reports Sensiba LLP earned
-    provisional AIUC-1 accreditation (SENSIBA-AIUC1-2026, see the module's sources).
+    provisional AIUC-1 accreditation (SENSIBA-AIUC1-2026).
 
 - id: assurance-soc-attestation-18
   title: "A regional firm pairs AI governance advisory (ISO 42001 alignment) with its SOC examination practice and manages the advisory and attest boundary (Kaufman Rossin)"

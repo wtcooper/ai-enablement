@@ -214,18 +214,19 @@
     access: full
     locator: Session 'The tech-enabled adviser' (Matthew Wallace, Armanino; Floriana Allen, Wiss & Company)
   last_reviewed: '2026-10-21'
-  notes: 'Merges two candidates: AI-drafted variance commentary (C) and auto-generated reporting packages and KPI
-    dashboards (C, emerging). Bookkeeping-based reporting packages, ledger dashboards and CAS-level variance explanations
-    are in advisory-client-accounting-services-06; this entry covers the FP&A, planning-model and board-reporting
-    layer. Firm types: Forvis Mazars US (top-100, mid-market) and Armanino (described as a top-20 firm in Rillet''s
-    release) deliver Solver; Abacum and Pigment are vendors. The Forvis Mazars deck is a webinar showing a tool,
-    not a client deployment. The only figure that sounds like a measurement is anonymous and recalled, so the grade
-    is C. No named advisory firm published an override rate, edit rate or error rate for AI-drafted commentary.
-    For audit clients of SEC registrants, see the independence note in the module notes. Withum and CohnReznick
-    are top-100 firms; Armanino and Wiss appear only as ENGAGE session speakers (''The tech-enabled adviser''; session
-    title and abstract only, KARBON-ENGAGE-2026). Bourke''s statement is general advice and does not say Withum
-    measures dashboard results. The Intuit survey reports current use by unnamed firms (financial forecasting 51%
-    and real-time insights 49% among top client-service uses).'
+  notes: >-
+    Covers AI-drafted variance commentary and auto-generated reporting packages and KPI dashboards. Bookkeeping-based
+    reporting packages, ledger dashboards and CAS-level variance explanations are in
+    advisory-client-accounting-services-06; this entry covers the FP&A, planning-model and board-reporting layer.
+    Reporting commentary for family principals is advisory-private-client-03. Firm types: Forvis Mazars US (top-100,
+    mid-market) and Armanino (described as a top-20 firm in Rillet's release) deliver Solver; Abacum and Pigment are
+    vendors. The Forvis Mazars deck is a webinar showing a tool, not a client deployment. The only figure that sounds
+    like a measurement is anonymous and recalled, so the grade is C. No named advisory firm published an override rate,
+    edit rate or error rate for AI-drafted commentary. For audit clients of SEC registrants, see the independence note
+    in the module notes. Withum and CohnReznick are top-100 firms; Armanino and Wiss appear only as ENGAGE session
+    speakers ('The tech-enabled adviser'; session title and abstract only, KARBON-ENGAGE-2026). Bourke's statement is
+    general advice and does not say Withum measures dashboard results. The Intuit survey reports current use by unnamed
+    firms (financial forecasting 51% and real-time insights 49% among top client-service uses).
 - id: advisory-fpa-performance-02
   title: Machine-generated baseline forecasts (cash flow, budget, statistical and ML) inside planning software,
     with the adviser's judgment layered on top
@@ -384,22 +385,23 @@
     locator: Priority 2 (84% deploying, 4% scaling) and Priority 3. Page shows no publication date (server timestamp
       2026-09-30; text addresses leaders 'heading into 2026'), so the date is the year only
   last_reviewed: '2026-10-21'
-  notes: 'Merges two candidates that describe the same change, a machine baseline forecast that a person adjusts:
-    Jirav Intelligent Forecasting in CAS and advisory firms (B, tagged process) and ML forecasting in planning platforms
-    (C, step). Change scope is set to step because one step, building the baseline, changes while driver-based models
-    and the client discussion stay (Jirav says some clients still need driver-based models). The CAS 13-week cash-flow
-    forecast from ledger data is in advisory-client-accounting-services-07; this entry covers the planning-software
-    forecast. Firm type: small and mid-size CAS firms; their ranks were not checked. Vendor: Jirav. Grade B, not
-    A: the figures are quotes and counts in a vendor press release, not a tracked metric reported by the firm. Both
-    sources are 2024, older than the 18-month window, and no later follow-up was found. The Intuit survey shows
-    financial forecasting among the most common client-service uses of AI (51% of respondents in a 725-person sample
-    of US accounting and bookkeeping professionals; the article does not state the denominator for the use list),
-    but names no firms. On the ML candidate: No named organisation and no measured forecast error. Evidence is survey
-    self-report from KPMG (Big Four; the survey covers large organisations, not the middle market) and a sponsored
-    vendor survey. Gartner''s FP&A page says 84% of finance teams are deploying AI and only 4% are scaling it across
-    the function; the page does not state the sample for that pair of figures. Maturity is in-production because
-    Creative Planning used JIF for over 200 clients per the release; Gartner''s pair of figures shows that wider
-    ML and AI forecasting is mostly early deployment.'
+  notes: >-
+    Covers one change, a machine baseline forecast that a person adjusts, in two settings: Jirav Intelligent Forecasting
+    in CAS and advisory firms, and ML forecasting in planning platforms. Change scope is step because one step, building
+    the baseline, changes while driver-based models and the client discussion stay (Jirav says some clients still need
+    driver-based models). The CAS 13-week cash-flow forecast from ledger data is in
+    advisory-client-accounting-services-07; this entry covers the planning-software forecast. A family-office
+    principal's one-off cash-flow model is advisory-private-client-16. Firm type: small and mid-size CAS firms; their
+    ranks were not checked. Vendor: Jirav. Grade B, not A: the figures are quotes and counts in a vendor press release,
+    not a tracked metric reported by the firm. Both sources are 2024, older than the 18-month window, and no later
+    follow-up was found. The Intuit survey shows financial forecasting among the most common client-service uses of AI
+    (51% of respondents in a 725-person sample of US accounting and bookkeeping professionals; the article does not
+    state the denominator for the use list), but names no firms. For ML forecasting in planning platforms there is no
+    named organisation and no measured forecast error. Evidence is survey self-report from KPMG (Big Four; the survey
+    covers large organisations, not the middle market) and a sponsored vendor survey. Gartner's FP&A page says 84% of
+    finance teams are deploying AI and only 4% are scaling it across the function; the page does not state the sample
+    for that pair of figures. Maturity is in-production because Creative Planning used JIF for over 200 clients per the
+    release; Gartner's pair of figures shows that wider ML and AI forecasting is mostly early deployment.
 - id: advisory-fpa-performance-03
   title: Continuous, driver-based planning with AI-assisted scenarios replaces the annual budget cycle
   archetype: advisory
@@ -515,14 +517,14 @@
     access: full
     locator: Responsibilities 'Financial Modeling & FP&A'
   last_reviewed: '2026-10-21'
-  notes: 'Firm types: RSM and Grant Thornton Advisors (large firm; the landscape file describes it as backed by
-    New Mountain Capital, which was not re-verified here), KPMG (Big Four); Abacum and OneStream are vendors. These
-    are pitches, webcast descriptions and survey baselines; no named firm reported a planning-cycle result. The
-    poll result (29% of webinar attendees chose simulation of scenarios as the strongest potential value from AI
-    in FP&A, ahead of 27% for insight into drivers, 21% for automated reporting and commentary and 19% for better
-    forecasts) is from an audience poll, not a survey sample. Pattern ''other'': continuous, trigger-based scenario
-    planning on a driver-based model; a candidate new pattern (''scenario-simulation''). The Aprio posting is routed
-    from the client-accounting-services research.'
+  notes: >-
+    Firm types: RSM and Grant Thornton Advisors (large firm; reported to be backed by New Mountain Capital, not
+    confirmed from a source cited here), KPMG (Big Four); Abacum and OneStream are vendors. These are pitches, webcast
+    descriptions and survey baselines; no named firm reported a planning-cycle result. The poll result (29% of webinar
+    attendees chose simulation of scenarios as the strongest potential value from AI in FP&A, ahead of 27% for insight
+    into drivers, 21% for automated reporting and commentary and 19% for better forecasts) is from an audience poll, not
+    a survey sample. Pattern 'other': continuous, trigger-based scenario planning on a driver-based model. The Aprio
+    posting is also cited in advisory-client-accounting-services-06 and -07.
 - id: advisory-fpa-performance-04
   title: Budget input collection and approval routing automated inside the planning platform (vendor claim)
   archetype: advisory
@@ -845,9 +847,10 @@
     access: full
     locator: Controls 2 and 3
   last_reviewed: '2026-10-21'
-  notes: 'Firm type: vendor (Abacum), delivered through RSM, Armanino and CFGI as in advisory-fpa-performance-10.
-    Pigment''s Modeler Agent was seen only in a search summary and is not used. The LBO study is routed to transactions
-    as its main home and is cited here only as quality evidence for LLM model building.'
+  notes: >-
+    Firm type: vendor (Abacum), delivered through RSM, Armanino and CFGI as in advisory-fpa-performance-10. Pigment's
+    Modeler Agent was seen only in a search summary and is not used. The LBO study belongs mainly to transactions work
+    and is cited here only as quality evidence for LLM model building.
 - id: advisory-fpa-performance-08
   title: AI-assisted opportunity analysis for performance improvement (pricing, cost and driver diagnosis)
   archetype: advisory
@@ -934,11 +937,12 @@
     locator: Key findings, 'Operational focus intensifies' bullet (operational improvements, 72%, the top value
       creation lever)
   last_reviewed: '2026-10-21'
-  notes: 'Firm types: Gartner (analyst), KPMG (Big Four) relaying a client account, EXL (outsourcing provider).
-    No mid-market advisory firm described a performance-improvement engagement that used AI, so this is the thinnest
-    entry in the module. The practitioner discussion is real (Gartner, KPMG) but the figure is anonymous. Demand
-    context routed from the transactions research: in S&P Global''s 2026 PE survey, operational improvements (72%)
-    rank as GPs'' top value creation lever; the figure is not about AI (SPGLOBAL-PE-2026).'
+  notes: >-
+    Firm types: Gartner (analyst), KPMG (Big Four) relaying a client account, EXL (outsourcing provider). No mid-market
+    advisory firm described a performance-improvement engagement that used AI, so this is the thinnest entry in the
+    module. The practitioner discussion is real (Gartner, KPMG) but the figure is anonymous. Demand context: in S&P
+    Global's 2026 PE survey, operational improvements (72%) rank as GPs' top value creation lever; the figure is not
+    about AI (SPGLOBAL-PE-2026).
 - id: advisory-fpa-performance-09
   title: AI readiness and data-foundation assessment, with a prioritised use-case roadmap, for client finance functions
   archetype: advisory
@@ -1068,15 +1072,17 @@
     locator: Opening paragraphs (acquisition effective Oct. 1; middle-market access to AI implementation); paragraph
       on the 2026 Top 100 rank
   last_reviewed: '2026-10-21'
-  notes: 'Firm types: CFGI (PE-backed advisory platform; says it is free of auditor independence constraints), CohnReznick
-    and Cherry Bekaert (top-100 firms), RSM and Kaufman Rossin (top-50 CPA and advisory firm per its release) as
-    survey publishers. Kaufman Rossin''s mid-market report (sample size and fieldwork dates not stated in the release)
-    found 94% use generative AI, 83% had moved to deliberate trials or embedded processes and 2% had operationalised AI at scale. The CFGI
-    posting was open from 2026-06-03 to 2026-06-12 per its structured data, so it shows a practice being built,
-    not delivered engagements. Pattern ''other'': diagnostic and roadmap work (activity surveys, interviews, maturity
-    scoring, prioritised use cases); a candidate new pattern (''readiness-diagnostic''). The Rosetree deal is general
-    AI implementation, not FP&A-specific; it is routed from the client-accounting-services research. CAS teams advising
-    clients on their own AI adoption (tool choice, data protection, dashboards) are in advisory-client-accounting-services-20.'
+  notes: >-
+    Firm types: CFGI (PE-backed advisory platform; says it is free of auditor independence constraints), CohnReznick and
+    Cherry Bekaert (top-100 firms), RSM and Kaufman Rossin (top-50 CPA and advisory firm per its release) as survey
+    publishers. Kaufman Rossin's mid-market report (sample size and fieldwork dates not stated in the release) found 94%
+    use generative AI, 83% had moved to deliberate trials or embedded processes and 2% had operationalised AI at scale.
+    The CFGI posting was open from 2026-06-03 to 2026-06-12 per its structured data, so it shows a practice being built,
+    not delivered engagements. Pattern 'other': diagnostic and roadmap work (activity surveys, interviews, maturity
+    scoring, prioritised use cases). The Rosetree deal is general AI implementation, not FP&A-specific. CAS teams
+    advising clients on their own AI adoption (tool choice, data protection, dashboards) are in
+    advisory-client-accounting-services-20; families' AI policy advice is advisory-private-client-14; AI governance and
+    control design for clients is advisory-risk-controls-17.
 - id: advisory-fpa-performance-10
   title: Advisory firms add AI-native or AI-embedded planning platforms to their FP&A implementation and managed-service
     portfolio
@@ -1430,14 +1436,14 @@
     access: full
     locator: Partnerships role aimed at Big 4, top firms, boutiques and fractional CFOs; deployment lead role
   last_reviewed: '2026-10-21'
-  notes: 'Firm types: vendor (Rillet) with Armanino (top 20) and Wiss (top 50) as partners, both ranks as stated
-    by Rillet. The partnership is announced; no partner-led implementation was documented. Series B release dated
-    2025-08-06, so older than 12 months; the same page, last updated 2026-08-25, still lists Armanino and Wiss as
-    strategic partners and reports over 600 customers as of August 2026. The site footer links an ''EY x Rillet Alliance''
-    page, which was not read. Change scope is model
-    because the offer replaces the incumbent ERP rather than improving one step. Pattern ''other'': partner-led
-    replacement of the incumbent ERP. The Rillet postings are routed from the client-accounting-services research
-    and show a channel being built, not delivered projects.'
+  notes: >-
+    Firm types: vendor (Rillet) with Armanino (top 20) and Wiss (top 50) as partners, both ranks as stated by Rillet.
+    The partnership is announced; no partner-led implementation was documented. Series B release dated 2025-08-06, so
+    older than 12 months; the same page, last updated 2026-08-25, still lists Armanino and Wiss as strategic partners
+    and reports over 600 customers as of August 2026. The site footer links an 'EY x Rillet Alliance' page, which was
+    not read. Change scope is model because the offer replaces the incumbent ERP rather than improving one step. Pattern
+    'other': partner-led replacement of the incumbent ERP. The Rillet postings show a channel being built, not delivered
+    projects.
 - id: advisory-fpa-performance-13
   title: Managed FP&A delivered with agent-led forecasting and variance analysis, priced on outcomes
   archetype: advisory
@@ -1629,9 +1635,11 @@
     access: full
     locator: (c)(4)(vi) management functions
   last_reviewed: '2026-10-21'
-  notes: 'Idea: labelled D. Practitioners and COSO discuss the controls, but no firm was found selling forecast
-    validation as a service. Related assurance work for AI systems (AICPA and AIUC certification, Grant Thornton
-    Enterprise Assurance Services) is routed to risk-controls and the assurance archetype. Firm types: standard-setter
-    and professional-body sources only. Related entries: written controls before a client''s finance agents go live
-    (advisory-risk-controls-21, idea), the CAS control package (advisory-client-accounting-services-21, idea), and
-    the firm''s own benchmarking of AI tools (professional-services-quality-review-05).'
+  notes: >-
+    Idea: labelled D. Practitioners and COSO discuss the controls, but no firm was found selling forecast validation as
+    a service. Related assurance work for AI systems (AICPA and AIUC certification, Grant Thornton Enterprise Assurance
+    Services) is in risk-controls (advisory-risk-controls-17) and the assurance archetype
+    (assurance-assurance-over-ai-19). Firm types: standard-setter and professional-body sources only. Related entries:
+    written controls before a client's finance agents go live (advisory-risk-controls-21, idea), the CAS control package
+    (advisory-client-accounting-services-21, idea), and the firm's own benchmarking of AI tools
+    (professional-services-quality-review-05).

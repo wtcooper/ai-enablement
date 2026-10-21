@@ -256,11 +256,11 @@
       locator: "page 4 (IVS 104 text) and page 12 (IVS 104 paragraphs 40.01-50.02)"
   last_reviewed: "2026-10-21"
   notes: >-
-    Grade C (was B; downgraded 2026-10-21): the firms and the deployments are named, but neither case study says AI
-    was used, so the AI claim rests on the vendor's branding (VALUTICO-HOME-2026) and the B would come from an
-    adjacent, non-AI process. Rouse's 'a third' is a partner's estimate quoted by the vendor (Oscar Wingham; the
-    Kreston Reeves quote is from Jodie Jones). It would return to B if either firm or the vendor said AI was used.
-    Related: assurance-specialists-02 (valuation providers build third-party AI analytics into their methodology).
+    Grade C: the firms and the deployments are named, but neither case study says AI was used, so the AI claim rests on
+    the vendor's branding (VALUTICO-HOME-2026) and the B would come from an adjacent, non-AI process. Rouse's 'a third'
+    is a partner's estimate quoted by the vendor (Oscar Wingham; the Kreston Reeves quote is from Jodie Jones). It would
+    return to B if either firm or the vendor said AI was used. Related: assurance-specialists-02 (valuation providers
+    build third-party AI analytics into their methodology).
 
 - id: advisory-valuation-04
   title: "Grounded research assistant over a valuation technical library, used for standards research and junior-analyst coaching"
@@ -501,12 +501,11 @@
       locator: "abstract page and withdrawal notice (withdrawn 2025-02-20); cited only as 'do not cite'"
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea (grade D). Preprint; the full paper was not read. Relevant mainly as independent evidence that
-    general-purpose LLMs trailed a specialist model on a forecasting task that feeds DCF work. Do not cite the
-    Kim, Muhn and Nikolaev paper on GPT-4 predicting earnings from financial statements as supporting evidence: the
-    arXiv version was withdrawn in 2025 after a co-author found data inconsistencies (ARXIV-KIM-2024, routed from
-    the transactions research). Related: assurance-substantive-testing-19 (idea: AI-generated independent
-    expectations for management's estimates).
+    Idea (grade D). Preprint; the full paper was not read. Relevant mainly as independent evidence that general-purpose
+    LLMs trailed a specialist model on a forecasting task that feeds DCF work. Do not cite the Kim, Muhn and Nikolaev
+    paper on GPT-4 predicting earnings from financial statements as supporting evidence: the arXiv version was withdrawn
+    in 2025 after a co-author found data inconsistencies (ARXIV-KIM-2024). Related: assurance-substantive-testing-19
+    (idea: AI-generated independent expectations for management's estimates).
 
 - id: advisory-valuation-07
   title: "Idea: language-model price estimates for property appraisal as an input or cross-check (adjacent asset valuation)"
@@ -654,12 +653,12 @@
       locator: "page 2, item 3; consultation question 8"
   last_reviewed: "2026-10-21"
   notes: >-
-    Grade C (was B; downgraded 2026-10-21): the firms are named, but the case studies describe 'automated' features
-    and never say AI was used, so the AI link is the vendor's branding and a B would rest on an adjacent, non-AI
-    process. The 'months to days' statement is a recollection published by the vendor. The 3-5x and over-90% figures
-    are boilerplate repeated across case studies; do not cite them as measured. RXM is listed by the vendor under
-    'Advisory / M&A & Corporate Finance' (Singapore); PKF FI under 'Advisory / Accounting & Tax & Audit' (France).
-    Generative drafting of report sections is the separate entry advisory-valuation-09.
+    Grade C: the firms are named, but the case studies describe 'automated' features and never say AI was used, so the
+    AI link is the vendor's branding and a B would rest on an adjacent, non-AI process. The 'months to days' statement
+    is a recollection published by the vendor. The 3-5x and over-90% figures are boilerplate repeated across case
+    studies; do not cite them as measured. RXM is listed by the vendor under 'Advisory / M&A & Corporate Finance'
+    (Singapore); PKF FI under 'Advisory / Accounting & Tax & Audit' (France). Generative drafting of report sections is
+    the separate entry advisory-valuation-09.
 
 - id: advisory-valuation-09
   title: "Generative AI drafts parts of valuation reports (market commentary and other sections)"
@@ -735,11 +734,12 @@
       locator: "summary (paywalled)"
   last_reviewed: "2026-10-21"
   notes: >-
-    Grade C: a standard-setter's observation that this happens, without named users or measures. Maturity is
-    'emerging' because the vocabulary reserves 'in-production' for a named organization. Kept apart from
-    advisory-valuation-08 because template assembly and generative drafting carry different risks (hallucination,
-    confidentiality). Related: advisory-forensic-disputes-09 (generative drafting of expert report skeletons);
-    professional-services-quality-review-02 (automated check of citations and quotations before signing).
+    Grade C: a standard-setter's observation that this happens, without named users or measures. Maturity is 'emerging'
+    because the vocabulary reserves 'in-production' for a named organization. Kept apart from advisory-valuation-08
+    because template assembly and generative drafting carry different risks (hallucination, confidentiality). Related:
+    advisory-forensic-disputes-09 (generative drafting of expert report skeletons); advisory-transactions-12 (AI-drafted
+    diligence deliverables); professional-services-quality-review-02 (automated check of citations and quotations before
+    signing).
 
 - id: advisory-valuation-10
   title: "AI reviewer agents check a valuation or valuation report against standards, methodology and the firm's review policy before sign-off"
@@ -853,14 +853,14 @@
       locator: "paragraph 2 (documentation of significant use, including quality controls applied)"
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from two deep-dive candidates: a practitioner-discussed idea (podcast, grade D on its own) and a vendor
-    template announcement (grade C). Grade C overall: vendor announcement, no named firm user and no measurement.
-    The podcast's AI discussion is reported by BVWire; the episode audio was not heard. Speakers: Bethany Hearn (MH
-    CPA) and Dr. Victor Jarosiewicz (Georgia State), host Nene Glenn Gianfala (Chaffe & Associates). Anthropic also
-    reports Claude Opus 4.7 at 64.37% on Vals AI's Finance Agent benchmark (vendor-reported, a general finance-agent
-    benchmark, so not used as an outcome). Runtime is shared team skills (plugins); a managed-agent version is also
-    offered. Related: assurance-specialists-04 (idea: AI-assisted quality-control review of valuation reports, seen
-    from the audit side); advisory-valuation-11 (pre-empting clients' AI critiques).
+    Combines a practitioner-discussed idea (podcast) and a vendor template announcement. Grade C: vendor announcement,
+    no named firm user and no measurement. The podcast's AI discussion is reported by BVWire; the episode audio was not
+    heard. Speakers: Bethany Hearn (MH CPA) and Dr. Victor Jarosiewicz (Georgia State), host Nene Glenn Gianfala (Chaffe
+    & Associates). Anthropic also reports Claude Opus 4.7 at 64.37% on Vals AI's Finance Agent benchmark
+    (vendor-reported, a general finance-agent benchmark, so not used as an outcome). Runtime is shared team skills
+    (plugins); a managed-agent version is also offered. Related: assurance-specialists-04 (idea: AI-assisted
+    quality-control review of valuation reports, seen from the audit side); advisory-valuation-11 (pre-empting clients'
+    AI critiques).
 
 - id: advisory-valuation-11
   title: "Idea: anticipate and pre-empt AI-generated critiques of a valuation report"
@@ -1107,15 +1107,14 @@
       locator: "answers on transitioning from manual to automated processes"
   last_reviewed: "2026-10-21"
   notes: >-
-    Grade B: a named in-house deployment (Hamilton Lane) with qualitative statements and no published measurement.
-    The user has a stake in the vendor: Hamilton Lane took part in 73 Strings' 2025 Series B (S73-CALLISTO-2026).
-    An earlier draft said the platform runs scenario analyses across portfolios; the Q&A does not say so (Callisto
-    simulation is announced for 73 Intelligence, S73-CALLISTO-2026).
-    Firm type: client in-house team (investment manager), not an accounting or advisory firm; it shows what portfolio
-    valuation looks like when automated, and what advisory firms compete with. Independence is not an issue for an
-    in-house team. Hamilton Lane AUM figures in the Q&A are context, not outcomes. The private-client research routed
-    a lead: Masttro claims AI valuation of private equity and venture holdings on its platform pages (not read in
-    detail, so not used here).
+    Grade B: a named in-house deployment (Hamilton Lane) with qualitative statements and no published measurement. The
+    user has a stake in the vendor: Hamilton Lane took part in 73 Strings' 2025 Series B (S73-CALLISTO-2026). The Q&A
+    does not say the platform runs scenario analyses across portfolios; Callisto simulation is announced for 73
+    Intelligence (S73-CALLISTO-2026). Firm type: client in-house team (investment manager), not an accounting or
+    advisory firm; it shows what portfolio valuation looks like when automated, and what advisory firms compete with.
+    Independence is not an issue for an in-house team. Hamilton Lane AUM figures in the Q&A are context, not outcomes.
+    Lead not used: Masttro (the vendor in advisory-private-client-02) claims AI valuation of private equity and venture
+    holdings on its platform pages, which were not read in detail.
 
 - id: advisory-valuation-14
   title: "Valuation firms package recurring portfolio valuation as an AI-enabled platform with their independent opinions inside the workflow (Stout Drivr; Kroll REVS for real estate)"
@@ -1207,14 +1206,14 @@
       locator: "paragraph (c)(4)(iii)"
   last_reviewed: "2026-10-21"
   notes: >-
-    Merged from two deep-dive candidates that describe the same change to the model: an independent valuation firm
-    sells recurring valuation as software plus its own judgment (Stout for portfolio companies; Kroll for real estate,
-    an asset class adjacent to business valuation). Grade C: announcements, with no named customer or measurement.
-    Client names that appeared in a search summary of a Stout product page were not seen in the firm's own release
-    and are not used. Kroll's statement that it valued more than $25 billion across 15,000+ properties in the prior
-    year is context about scale, not an outcome of REVS. Neither firm is described as an audit firm; an accounting
-    firm selling this model to its own SEC-registrant audit clients would face Rule 2-01(c)(4)(iii)
-    (SEC-RULE2-01-2026). In-house automation of the same work is advisory-valuation-13.
+    Two firms make the same change to the model: an independent valuation firm sells recurring valuation as software
+    plus its own judgment (Stout for portfolio companies; Kroll for real estate, an asset class adjacent to business
+    valuation). Grade C: announcements, with no named customer or measurement. Client names that appeared in a search
+    summary of a Stout product page were not seen in the firm's own release and are not used. Kroll's statement that it
+    valued more than $25 billion across 15,000+ properties in the prior year is context about scale, not an outcome of
+    REVS. Neither firm is described as an audit firm; an accounting firm selling this model to its own SEC-registrant
+    audit clients would face Rule 2-01(c)(4)(iii) (SEC-RULE2-01-2026). In-house automation of the same work is
+    advisory-valuation-13.
 
 - id: advisory-valuation-15
   title: "An accounting firm's valuation practice builds a vendor's AI-enabled analytics into its valuation methodology for fund and portfolio clients (CohnReznick with 73 Strings)"
@@ -1302,10 +1301,10 @@
       locator: "paragraph (c)(4)(iii)"
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 in verification; the deep dive missed this release, which assurance-specialists-02 already
-    holds. Grade B: a named firm says it has implemented the platform in its practice ('This implementation'), and
-    the vendor lists it as a customer; there is no measurement, no named engagement and no description of what the AI
-    does beyond 'AI-driven, advanced analytics'. assurance-specialists-02 grades the same release C and 'announced';
-    the two files should be aligned in the next pass. Trade press ran the text on 2026-03-24, two days before the date
-    on the firm's page. Pattern 'other': vendor AI analytics embedded in a valuation methodology. Related:
-    assurance-specialists-02; advisory-valuation-13 (the same vendor, used in-house by an investment manager).
+    The same release is the basis of assurance-specialists-02. Grade B: a named firm says it has implemented the
+    platform in its practice ('This implementation'), and the vendor lists it as a customer; there is no measurement, no
+    named engagement and no description of what the AI does beyond 'AI-driven, advanced analytics'.
+    assurance-specialists-02 grades the same release C and 'announced'; the two grades differ. Trade press ran the text
+    on 2026-03-24, two days before the date on the firm's page. Pattern 'other': vendor AI analytics embedded in a
+    valuation methodology. Related: assurance-specialists-02; advisory-valuation-13 (the same vendor, used in-house by
+    an investment manager).
