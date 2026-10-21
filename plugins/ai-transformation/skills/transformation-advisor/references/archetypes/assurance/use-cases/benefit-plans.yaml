@@ -8,7 +8,7 @@
 # auditors (Oath lists employee benefit plans among its client types) are assurance-acceptance-independence-20.
 
 - id: assurance-benefit-plans-01
-  title: Full-population testing of participant, payroll and contribution data in 401(k) plan audits (Autire at Belfint, Lyons & Shuman and Rea & Associates)
+  title: Full-population testing of participant, payroll and contribution data in 401(k) plan audits (Autire at Belfint, Lyons & Shuman and Rea)
   archetype: assurance
   module: benefit-plans
   function: service-delivery
@@ -19,35 +19,38 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: >-
-    Participant data and contributions are the audit areas with the highest reported deficiency rates in the
-    Department of Labor's 2023 audit quality study (BELFINT-DOLQ-2024). Firms have traditionally selected a
+    Participant data (48 of the 307 sampled audits, 15.6 percent) and contributions (15.3 percent) are the audit areas
+    with the highest deficiency rates in the Department of Labor's November 2023 audit quality study
+    (EBSA-AUDITQ-2023; BELFINT-DOLQ-2024). Firms have traditionally selected a
     sample and tested it, using audit software and checklists built for financial statement audits
     (AUTIRE-REA-2026; AUTIRE-BELFINT-2026).
   solution: >-
     Autire, a vendor platform built for plan audits, applies testing rules to every available participant record (every
     contribution, distribution and eligible participant) at the start of the audit. Each flagged item is tied
     to source data with an occurrence count and dollar impact, so the firm goes to the client with focused
-    questions (AUTIRE-TESTING-2026). Autire says the tests are hard-coded, standards-based logic that returns the
-    same result on re-run, not model output (AUTIRE-AI-2026). Belfint, Lyons & Shuman (a Wilmington, Delaware
-    regional firm that the vendor labels mid-market) moved eligible plans onto it from 2022. Rea & Associates (a
-    Top 100 US firm in Ohio and Florida) has used it since 2022 (AUTIRE-BELFINT-2026; AUTIRE-REA-2026).
+    questions (AUTIRE-TESTING-2026). Autire says the tests run on hard-coded, standards-based logic and that
+    re-running a test on the same data gives the same result, which it contrasts with the probabilistic output of
+    generic AI (AUTIRE-AI-2026). Belfint, Lyons & Shuman (a Wilmington, Delaware firm that the vendor labels
+    mid-market) moved eligible plans onto it from 2022. Rea (a Top 100 US firm in Ohio and Florida, named Rea Business
+    Advisors in the case study and Rea & Associates elsewhere on the vendor's site) started with a pilot in 2022
+    (AUTIRE-BELFINT-2026; AUTIRE-REA-2026; AUTIRE-HOME-2026).
   outcomes:
     - lever: capacity
-      description: "Belfint's average hours per audit fell from 80 to 54, and the practice grew from roughly 100 audits at adoption to 160-170, as reported in the vendor's case study"
+      description: "The vendor's case study says Belfint's average hours per audit fell from 80 to 54 and the practice grew from roughly 100 audits at adoption to 160-170"
       figure: "80 to 54 hours per audit; about 100 to 160-170 audits"
-      measures: "average hours per audit for the preparer and both reviewers combined (source's words); audit count is the practice's plan audits at adoption versus 'today' (case study dated 2026-08-30). How the hours were tracked is not stated"
+      measures: "average hours per audit for the preparer and both reviewers combined (source's words, in the vendor's narration, not a quote from the firm); audit count is the practice's plan audits at adoption versus 'today' (case study dated 2026-08-30). How the hours were tracked is not stated"
       provenance: vendor-published
       source_ref: AUTIRE-BELFINT-2026
     - lever: cost
-      description: "Rea's managing director reports a 40 percent reduction in hours spent per audit since adopting, with improved profitability, and warns that going from 100 hours to 30 is not realistic overnight"
+      description: "The vendor's case study says Rea has cut hours per audit by 40 percent since adopting, while improving profitability; Rea's managing director warns that going from 100 hours to 30 overnight is not realistic"
       figure: "40 percent fewer hours per audit"
-      measures: "reduction in hours spent per audit since adopting Autire (source's words); baseline and period not given"
+      measures: "reduction in hours per audit since adopting Autire, stated in the vendor's narration (not in the managing director's quotes); baseline, period and tracking method not given"
       provenance: vendor-published
       source_ref: AUTIRE-REA-2026
     - lever: quality
-      description: "On first use at an existing client, Rea's file opened with about 8,000 flagged records; most traced to a single pay-code configuration issue, and the rest were items that warranted review"
+      description: "Rea's managing director recalls opening a file with 8,000 flags; the case study says most traced to a single pay-code configuration issue and the rest were items that warranted further review"
       figure: "about 8,000 flags"
-      measures: "flagged records in one existing engagement on first run, as quoted by the managing director; not a rate and not a count of true errors"
+      measures: "flagged records in one file, as recalled by the managing director; the source does not say which client or whether it was the first run. Not a rate and not a count of true errors"
       provenance: vendor-published
       source_ref: AUTIRE-REA-2026
   prerequisites:

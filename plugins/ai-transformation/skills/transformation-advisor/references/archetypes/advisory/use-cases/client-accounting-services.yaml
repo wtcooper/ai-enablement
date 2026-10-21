@@ -1,15 +1,20 @@
 # Use cases: advisory / client-accounting-services
 # Client accounting services (CAS): outsourced or co-sourced bookkeeping, reconciliation and close, management
 # reporting, controllership and fractional CFO work, payroll and bill pay, delivered by accounting firms, AI-native
-# providers and in-house finance teams. Sources checked 2026-10-20 and re-verified against the opened sources
-# 2026-10-21. Every source was opened (access: full) unless
-# marked otherwise; several were read as abstracts, case studies or press reports, which the locator says.
+# providers and in-house finance teams. Sources checked 2026-10-20 and re-checked against the opened sources
+# 2026-10-21. Every source was opened (access: full) unless marked otherwise; several were read as abstracts, case
+# studies or press reports, which the locator says.
 # Almost every outcome figure is vendor-published or self-reported. The one independent field study (Choi and Xie)
 # reports associations from one unnamed platform's SME customers. No CAS firm or platform has published an error
 # rate, override rate, parallel-run result or inspection finding.
 # Independence: bookkeeping and related services are restricted when the client is also the firm's own audit client;
 # see advisory-client-accounting-services-24. Firm operations (pricing the firm's own CAS, staffing, PE ownership) are
 # in professional-services; control services sold to clients are in advisory risk-controls; tax work is in tax.
+# Source keys are shared across the advisory modules. Similar keys that name different documents: TR-FOPPR-2026 is
+# Thomson Reuters' press release on its Future of Professionals 2026 report; the report page itself is
+# TR-FOPREPORT-2026 (risk-controls module). COSO-GENAI-2026 is COSO's publication; DART-COSO-2026 and JOFA-COSO-2026
+# are summaries of it. ACCTODAY-AIBENCH-2026 is Accounting Today's article on the Digits benchmark; DIGITS-BENCH-2026
+# is Digits' own report.
 
 - id: advisory-client-accounting-services-01
   title: Confidence-gated transaction categorization with accountant review of uncertain items

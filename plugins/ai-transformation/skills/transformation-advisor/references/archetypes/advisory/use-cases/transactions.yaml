@@ -1,11 +1,13 @@
 # Use cases: advisory / transactions (quality of earnings, financial due diligence, deal support, integration)
-# Sources checked 2026-10-20 (wave 5); every source re-opened and verified 2026-10-21 (wave 5 verification). Merged from the transactions deep dive, the advisory landscape scan and the
-# cross-cutting files on independence and pricing and on the state of AI and disruption.
+# Sources checked 2026-10-20; every source re-opened and checked 2026-10-21.
 # Evidence is thin: no entry is graded A. No error rate, override rate, parallel run, inspection finding or independent
 # accuracy test of AI-assisted quality of earnings (QoE) or financial due diligence (FDD) was found. Speed figures are
 # vendor-published or self-reported, with no method. Vendor pages with no date carry the access date (2026-10-20).
 # Firm operations (pricing the firm's own work, staffing, ownership) are in professional-services; attest work is in
 # assurance; transaction tax work is in tax. Cross-references are by id in notes.
+# Similar keys that name different documents: FORVIS-QOE-2026 (Forvis Mazars US article) and FORVISGROUP-OPIO-2026
+# (Forvis Mazars Group release); the QOEAGENT-* keys are separate pages of QoEAgent's site; SHEPI-HOME-2026 and
+# SHEPI-PRICING-2026 are Shepi's home and pricing pages.
 
 - id: advisory-transactions-01
   title: "Financial due diligence workbench: data ingestion, trial balance mapping and first-draft databook"

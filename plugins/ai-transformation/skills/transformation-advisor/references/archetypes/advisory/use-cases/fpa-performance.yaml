@@ -1,3 +1,14 @@
+# Use cases: advisory / fpa-performance
+# FP&A, budgeting and forecasting, management and board reporting, performance improvement and finance-system
+# advisory delivered by accounting and advisory firms, PE-backed advisory platforms, vendors and client finance teams.
+# Sources checked 2026-10-20 and re-checked against every cited source 2026-10-21.
+# Evidence is thin: no entry is graded A and 2 of 14 are B. No accounting or advisory firm has published a measured
+# outcome (error, edit or override rate, parallel run, forecast accuracy, cycle time) for AI-assisted FP&A work.
+# Bookkeeping-based reporting and CAS forecasts are in client-accounting-services; controls before agents go live are
+# in risk-controls; firm operations are in professional-services. Cross-references are by id in notes.
+# Similar keys that name different documents: RSM-MMAI-2026 is RSM's own release on its middle-market AI survey;
+# CPAPA-RSMMM-2026 (risk-controls, transactions) is CPA Practice Advisor's report of the same survey.
+
 - id: advisory-fpa-performance-01
   title: AI-drafted variance and flux commentary, KPI views and management and board reporting packs, reviewed before
     release

@@ -1,8 +1,13 @@
-# Advisory archetype, forensic-disputes module: use cases.
-# Synthesised 2026-10-20 from research/runs/wave5 (landscape-advisory, adv-forensic-disputes-combined,
-# adv-x-independence-pricing, adv-x-state-of-ai-disruption, and items routed from other adv-* files).
+# Use cases: advisory / forensic-disputes
+# Forensic accounting, fraud investigation, disputes and expert witness work by accounting firms, forensic and
+# consulting firms and in-house anti-fraud teams. Sources checked 2026-10-20 and re-checked against the cited sources
+# 2026-10-21.
 # Grades: A=0, B=5, C=5, D=5. No accounting-firm forensic practice has published a measured AI outcome.
-# Verified 2026-10-21 against the cited sources (research/runs/wave5/forensic-disputes-verification-report.md).
+# Similar keys that name different documents: USCOURTS-EVAGENDA-2026 is the Advisory Committee on Evidence Rules
+# agenda book for the May 2026 meeting; USCOURTS-EVID-2026 (valuation module) is the agenda book for the October 2026
+# meeting; USCOURTS-STDCOMM-2026 is the Standing Committee's September 2026 report; USCOURTS-FRE707-2025 is the
+# published draft of proposed Rule 707. AICPA-FVS-2026 is the FVS conference agenda; AICPA-FVSHOME-2026 (valuation
+# module) is the conference home and workshop pages.
 
 - id: advisory-forensic-disputes-01
   title: AI extraction of bank, check and brokerage records into structured financial evidence

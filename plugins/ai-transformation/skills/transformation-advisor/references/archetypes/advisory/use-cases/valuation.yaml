@@ -1,19 +1,21 @@
 # Use cases: advisory / valuation (business valuation, fair value for financial reporting, portfolio and fund
 # valuation, valuation reports and their defence)
-# Sources checked 2026-10-20 (wave 5). Merged from the valuation deep dive, the advisory landscape scan, the
-# cross-cutting files on independence and pricing and on the state of AI and disruption, and items other advisory
-# modules routed to valuation.
-# Fact-checked 2026-10-21: #03 and #08 moved to C because their case studies never say AI was used; #15
-# (CohnReznick) added from a release the deep dive missed. Evidence is thin: no entry is graded A, 3 of 15 are B.
+# Sources checked 2026-10-20 and re-checked 2026-10-21. Evidence is thin: no entry is graded A, 3 of 15 are B. Two
+# entries (#03, #08) are C because their case studies never say AI was used.
 # No error rate, override rate, parallel run or inspection finding on AI-assisted valuation was found. Speed
 # figures are vendor-published or self-reported, with no method. Vendor pages with no date carry the access date
 # (2026-10-20).
 # Independence: appraisal, valuation and fairness-opinion services for an SEC-registrant audit client impair
 # independence unless it is reasonable to conclude the results will not be subject to audit procedures
 # (SEC-RULE2-01-2026, (c)(4)(iii)). Treatment for private-company attest clients under the AICPA Code was not
-# confirmed in the research; confirm per engagement.
+# confirmed from the sources; confirm per engagement.
 # Firm operations (pricing the firm's own work, staffing, ownership) are in professional-services; the auditor's use
 # of valuation specialists is in assurance (specialists); tax valuations are in tax. Cross-references are by id in notes.
+# Similar keys that name different documents: AICPA-FVSHOME-2026 is the AICPA FVS conference home and pre-conference
+# workshop pages; AICPA-FVS-2026 (forensic-disputes) is the conference agenda. COHNREZNICK-VALUATION-2026 is the firm's
+# page and CPAPA-COHNREZNICK-2026 the trade-press run of the same text. HAMILTONLANE-VALTECH-2025 is Hamilton Lane's own
+# Q&A and S73-HAMLANE-2025 the vendor's republication. IVSC-AI-2025 is the IVSC perspectives paper (the key the
+# assurance archetype also uses).
 
 - id: advisory-valuation-01
   title: "Big Four valuation teams apply AI to comparable-company screening, volatility and customer-attrition analysis, technical research and information requests"

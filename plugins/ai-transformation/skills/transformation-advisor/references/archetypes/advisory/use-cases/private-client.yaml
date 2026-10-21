@@ -2,14 +2,15 @@
 # Private client services: family-office accounting and reporting, alternative-investment administration, payment
 # controls, succession and owner advisory, and the client experience for principals and families. Delivered by
 # accounting firms (large national, mid-market and small), family-office advisory firms, wealth platforms,
-# vendors, and family offices' own in-house staff. Sources checked 2026-10-20 (wave 5: one combined deep dive, the
-# advisory landscape scan and the cross-cutting files on independence and pricing and on the state of AI and disruption).
-# Re-verified 2026-10-21 against every cited source (wave 5 verification): 6 B, 8 C, 3 D.
+# vendors, and family offices' own in-house staff. Sources checked 2026-10-20 and re-checked against every cited
+# source 2026-10-21: 6 B, 8 C, 3 D.
 # Evidence is thin: no entry is graded A. Almost every source is written by a vendor, bank, law firm or advisory firm
 # that sells to family offices. No error rate, override rate, parallel run, client-satisfaction measure or inspection
 # finding was found for this module. Succession and owner advisory have one marketing deployment and two ideas.
 # Tax and estate technical work is in tax; regulated investment advice is out of scope; firm operations (pricing,
 # staffing, ownership) are in professional-services; attest work is in assurance. Cross-references are by id in notes.
+# Source keys: FINRA-ROR-2026 is the GenAI section page of FINRA's 2026 Annual Regulatory Oversight Report (the key the
+# security archetype uses for that page); the security archetype's FINRA-OVERSIGHT-2026 is the report's landing page.
 
 - id: advisory-private-client-01
   title: CPA firm collaboration to modernize family-office accounting and reporting on an AI-driven, multi-entity platform

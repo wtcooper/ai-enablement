@@ -1,14 +1,20 @@
 # Use cases: advisory / risk-controls
 # Internal-audit outsourcing and co-sourcing, SOX readiness and testing, third-party and enterprise risk, and advising
-# clients on governing their own AI. Merged on 2026-10-20 from the wave-5 practice, discourse and governance research
-# files, the advisory landscape scan and the two cross-cutting files (independence-pricing, state-of-ai-disruption).
-# Every source below was opened in that research (access: full); search-only leads are not used.
-# Verified 2026-10-21 against every cited source (research/runs/wave5/risk-controls-verification-report.md).
+# clients on governing their own AI. Sources checked 2026-10-20; every source below was opened (access: full);
+# search-only leads are not used. Re-checked against every cited source 2026-10-21.
 # No entry is graded A: no named organisation publishes a measured outcome for AI in internal audit, SOX or risk
 # advisory. Most figures are vendor-published or self-reported; say so when you quote one.
 # Boundaries: issuing SOC reports, AIUC-1 or ISO/IEC 42001 certification and audit methodology are in the assurance
 # archetype; the firm's own pricing, quality control, engagement letters and staffing are in professional-services.
-# Overlapping entries are cross-referenced by id in notes rather than duplicated.
+# Confidence-threshold routing of AI classifications to a person is advisory-client-accounting-services-01 (there is
+# no advisory-risk-controls-22). Overlapping entries are cross-referenced by id in notes rather than duplicated.
+# Similar keys that name different documents: COSO-GENAI-2026 is COSO's publication and COSO-GENAIPR-2026 its press
+# release; FRC-GENAI-2026 is the FRC's guidance and FRC-GENAINEWS-2026 the FRC news release announcing it;
+# JOFA-AIPA-2026 (Journal of Accountancy) and CPAPA-AUDITAID-2026 (CPA Practice Advisor) are two articles on the AICPA
+# practice aid; KPMG-SOX2030-2026 and KPMG-FUTURESOX-2026 are two different KPMG PDFs; GT-AISURVEY-2026 is Grant
+# Thornton's cross-industry 2026 AI Impact Survey and GT-PEAI-2026 its private-equity report (other parts of the
+# knowledge base cite the private-equity report as GT-AIIMPACT-2026); CPAPA-RSMMM-2026 is CPA Practice Advisor's report
+# of RSM's middle-market survey and RSM-MMAI-2026 (fpa-performance) is RSM's own release.
 
 - id: advisory-risk-controls-01
   title: "AI assists engagement pre-planning, risk brainstorming, walkthrough notes and starting risk scores"
