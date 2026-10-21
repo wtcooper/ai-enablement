@@ -139,8 +139,9 @@ rejected a damages expert's Copilot cross-check after the judge re-ran it and go
 must disclose AI use before such evidence is introduced [KTS-EXPERTAI-2026; AICPA-COPILOT-2025; PPC-KOHLS-2025].
 
 **Proposed Federal Rule of Evidence 707 is not law.** As drafted it would apply Rule 702 reliability tests to machine
-output offered without an expert [USCOURTS-FRE707-2025]. Published August 2025; committee met 2026-05-07; the
-September 2026 Standing Committee report lists only "continued consideration" [USCOURTS-STDCOMM-2026]. A possible Rule
+output offered without an expert [USCOURTS-FRE707-2025]. Published August 2025; the evidence committee has since voted
+to withdraw the published draft and study a modified proposal [USCOURTS-EVID-2026], and the September 2026 Standing
+Committee report lists only "continued consideration" [USCOURTS-STDCOMM-2026]. A possible Rule
 901(c) on deepfakes was prepared but not approved, and the Justice Department raised concerns about Rule 707
 [USCOURTS-EVAGENDA-2026].
 
@@ -193,6 +194,8 @@ admissibility, which the court decides.
 - **2025-10:** AICPA FVS committee issues AI guidelines for forensic and valuation work [BVR-AICPAAIGUIDE-2025].
 - **2026-01 to 2026-08-27:** FJC deepfake survey of judges; evidence committee meets 2026-05-07; Standing Committee
   keeps Rule 707 under "continued consideration" [USCOURTS-EVAGENDA-2026; USCOURTS-STDCOMM-2026].
+- **2026-10:** the evidence committee's agenda book records a vote to withdraw the published Rule 707 draft and study a
+  modified proposal [USCOURTS-EVID-2026].
 - **2026-03-25:** 58% of anti-fraud respondents plan to use genAI; deepfake and forged-document fraud reported rising
   [ACFE-TECHBENCH-2026].
 - **2026-04:** a deal tracker reports EisnerAmper buying KLG Business Valuators & Forensic Accountants and J.S. Held
@@ -228,7 +231,7 @@ ACFE-CANPR-2026, AFP-PAYFRAUD-2026, AICPA-COPILOT-2025, AICPA-FVS-2026, BVR-AICP
 CGP-ARXIV-2026, CPAPA-FORENSICAI-2025, DEANDORTON-AIEXPERT-2025, DILIGENT-AUDITAI-2026, EVERLAW-GENAI-2024,
 FINCEN-DEEPFAKE-2024, FINTAF-FORENSIC-2025, HAYSTACKID-GENAI-2026, IAF-AIFRAUD-2026, JRFM-FORENSICAI-2026,
 JSHELD-AIEXPERT-2026, JSHELD-AIFRAUD-2026, KTS-EXPERTAI-2026, NBC-DEEPFAKE-2025, OMRANI-BEYONDBAR-2024,
-PPC-KOHLS-2025, RELATIVITY-AIR-2026, SEC-AIWASH-2024, SEC-RULE2-01-2026, USCOURTS-EVAGENDA-2026,
+PPC-KOHLS-2025, RELATIVITY-AIR-2026, SEC-AIWASH-2024, SEC-RULE2-01-2026, USCOURTS-EVAGENDA-2026, USCOURTS-EVID-2026,
 USCOURTS-FRE707-2025, USCOURTS-STDCOMM-2026, VALID8-HUB-2026, VALID8-SITE-2026, VALID8-WP-2025.
 
 Cited here only:
