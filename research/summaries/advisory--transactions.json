@@ -1,0 +1,215 @@
+[
+ {
+  "id": "advisory-transactions-01",
+  "title": "Financial due diligence workbench: data ingestion, trial balance mapping and first-draft databook",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Financial due diligence starts with collecting, checking and adjusting data before anyone can interpret it, and a large share of junior time goes there.",
+  "approach": [
+   "An AI platform reads unstructured deal information, structures the data and drafts first-pass outputs; Forvis Mazars US cites trial balance mapping.",
+   "Forvis Mazars Group says its rollout of Opio's platform uses embedded controls, full traceability and mandatory human review.",
+   "Opio reports 27% average time saved per engagement (vendor-published); Forvis Mazars Group says quality and depth improved after testing (self-reported)."
+  ],
+  "who": "Forvis Mazars Group, Opio"
+ },
+ {
+  "id": "advisory-transactions-02",
+  "title": "Transaction-level anomaly scoring and flux analysis to prepare management meetings",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Preparing for the first management meeting is a bottleneck: teams comb thousands of trial balance rows to find movements worth asking about.",
+  "approach": [
+   "A module scores each transaction for anomaly risk, flags movements against user-set thresholds, and tracks candidate EBITDA adjustments to raise with management.",
+   "Audit Sight says the module eliminates 80% of prep time for the management-meeting step (vendor-published).",
+   "A Miller Cooper principal says the tool shaved days off the deal cycle (self-reported, unquantified).",
+   "The deal team tracks flagged adjustments and prepares management questions; who decides which flags become adjustments is not stated."
+  ],
+  "who": "Miller Cooper, Audit Sight"
+ },
+ {
+  "id": "advisory-transactions-03",
+  "title": "Proof of cash and bank-to-ledger reconciliation by AI agents for smaller deals",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "In lower-middle-market deals the seller's books are often thin, and reconciling thirty-six months across several accounts from scans takes weeks of work.",
+  "approach": [
+   "QoEAgent's agents read bank statements, including scans, tie revenue and expenses to the bank, and map the trial balance to GAAP financials.",
+   "QoEAgent says proof of cash reconciles within 1% in 24 hours; one engagement matched 99.4%, with one $32 variance flagged (vendor-published).",
+   "In one described engagement, the proof of cash found unrecorded deferrals and the buyer walked away before closing (vendor-published).",
+   "CPAs and M&A advisors review every flagged item and own every conclusion; software does extraction and matching."
+  ],
+  "who": "QoEAgent"
+ },
+ {
+  "id": "advisory-transactions-04",
+  "title": "AI-suggested EBITDA adjustments with source-linked evidence for reviewer sign-off",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Adjustments from reported to normalized EBITDA decide the price, and finding, supporting and tracing them in spreadsheets is slow and hard to audit.",
+  "approach": [
+   "Shepi's platform surfaces adjustment candidates, links each to supporting records where available, shows gaps, and produces a PDF and Excel package.",
+   "The vendor says every conclusion is linked to source evidence so reviewers can trace a number to its origin (vendor-published, no figure).",
+   "The user approves or rejects each adjustment; in the Done-For-You tier a licensed CPA reviews adjustments before delivery."
+  ],
+  "who": "Shepi (vendor)"
+ },
+ {
+  "id": "advisory-transactions-05",
+  "title": "AI-native quality-of-earnings service tiers priced below a traditional engagement",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Small and lower-middle-market buyers must choose between an expensive traditional engagement and fragile spreadsheet work.",
+  "approach": [
+   "QoEAgent sells scoped tiers from cash review to full QoE; Shepi lists Self-Service at $1,000 per project and Done-For-You at $5,000 (vendor-published).",
+   "A Columbia team posted that its custom model cuts production cost significantly even with an accountant verifying (self-reported, no figure).",
+   "A licensed CPA reviews adjustments in Shepi's Done-For-You tier; credentialed professionals own conclusions at QoEAgent."
+  ],
+  "who": "Shepi, QoEAgent, Columbia team"
+ },
+ {
+  "id": "advisory-transactions-06",
+  "title": "White-labelled AI quality-of-earnings capacity for transaction advisory and CPA firms",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Transaction advisory and CPA firms need extra capacity for proof-of-cash and trial-balance work during busy periods.",
+  "approach": [
+   "QoEAgent says it white-labels or supports parts of engagements, from proof of cash and trial balance mapping through the databook.",
+   "Shepi pitches accountants on extra capacity; its Firm Edition offers white-label deliverables and resale at custom pricing. No outcome figure is published.",
+   "Where QoEAgent works behind a CPA or transaction advisory firm, that firm is the provider and signs the report."
+  ],
+  "who": "QoEAgent, Shepi (vendors)"
+ },
+ {
+  "id": "advisory-transactions-07",
+  "title": "AI-assisted lender quality-of-earnings reports for small-business acquisition loans",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "An SBA rule effective 2026-10-01 makes an independent quality-of-earnings report with a cash proof a condition on larger acquisition loans; QoEAgent says this adds weeks to every deal.",
+  "approach": [
+   "QoEAgent offers an SBA Lender QoE built to the rule: cash proof, GAAP financials, adjusted EBITDA schedules and customer analysis.",
+   "No speed or accuracy figure is published.",
+   "A named professional stands behind the conclusions, with lender vendor review where a buyer-commissioned report is used."
+  ],
+  "who": "QoEAgent (vendor)"
+ },
+ {
+  "id": "advisory-transactions-08",
+  "title": "AI-assisted sell-side quality-of-earnings and pre-sale diligence readiness",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Sellers who wait for the buyer's diligence meet findings late, mid-process, which can trigger price adjustments.",
+  "approach": [
+   "Pease Bell describes running AI-driven pre-sale diligence and a sell-side QoE with proof of cash before going to market.",
+   "Pease Bell says this reduces the likelihood of purchase price adjustments and speeds the path to closing (self-reported, no figure).",
+   "Human checkpoints are not described."
+  ],
+  "who": "Pease Bell CPAs, QoEAgent"
+ },
+ {
+  "id": "advisory-transactions-09",
+  "title": "Data-room document intelligence with source citations for diligence teams",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Data rooms are growing and timelines compressing, making it harder to bring the same judgment to each issue; contract review was often descoped from financial diligence.",
+  "approach": [
+   "Tools ingest data rooms, surface key points with source citations and let teams question documents; PwC Deals used ToltIQ on live transactions.",
+   "PwC's deals GenAI leader says contracts once descoped can now be reviewed, which creates follow-up on anomalies.",
+   "PwC and ToltIQ report 4,000+ PwC Deals practitioners, 5,000+ deals and 2 million+ documents (self-reported).",
+   "Practitioners review the anomalies AI flags; an illustrative 20 hours of human follow-up is given."
+  ],
+  "who": "PwC, ToltIQ, Harvey"
+ },
+ {
+  "id": "advisory-transactions-10",
+  "title": "Deeper-cut analytics using time freed from routine diligence",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Forvis Mazars US says automating routine work lets diligence teams dive deeper, and that one identified EBITDA adjustment can be worth many times the fee.",
+  "approach": [
+   "Forvis Mazars US says automating the routine frees time for SKU-level data, customer and vendor insight, employee productivity and working capital trends.",
+   "It says depth of analysis increases (self-reported, no figure).",
+   "Professional judgment stays on EBITDA quality, net working capital, debt-like items and what matters to the deal."
+  ],
+  "who": "Forvis Mazars US"
+ },
+ {
+  "id": "advisory-transactions-11",
+  "title": "Lifecycle M&A platform with an agent harness, from diligence to integration",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Deloitte contrasts connected workflows across the deal lifecycle with addressing isolated M&A tasks, in deals that carry tax, technology and financial complexity.",
+  "approach": [
+   "Deloitte's M&A Platform embeds AI across the deal lifecycle, supported by an agentic harness, with workflows from strategy and diligence through integration.",
+   "Deloitte says it is in use across more than 1,000 client engagements (self-reported); EY-Parthenon markets a comparable Diligence Edge platform.",
+   "Deloitte's survey of 500 leaders reports 66% automated status reporting and 60% enhanced decision-making (vendor-published).",
+   "Deloitte describes the platform as human-led and AI-powered."
+  ],
+  "who": "Deloitte, EY-Parthenon"
+ },
+ {
+  "id": "advisory-transactions-12",
+  "title": "AI-drafted diligence deliverables: QoE exhibits, summary slides and red-flag reports",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Turning workpapers and databooks into exhibits, summary slides and red-flag reports is specialist work; no source measures the time it takes.",
+  "approach": [
+   "PwC UK's Deals CTO describes producing executive-ready summaries from complex workpapers (secondary summary).",
+   "A July 2026 expert-network posting says an AI lab wants advisory managers to create and refine AI-generated QoE exhibits and red-flag reports.",
+   "Experienced transaction advisory managers evaluate and refine the AI-generated pages. No speed figure is published."
+  ],
+  "who": "PwC UK (secondary), an AI lab posting"
+ },
+ {
+  "id": "advisory-transactions-13",
+  "title": "Buyers and sponsors run first-pass diligence with generative AI in-house",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Private equity and corporate deal teams must evaluate more opportunities and larger information volumes on tight deadlines, so some first-pass diligence moves in-house.",
+  "approach": [
+   "Deal teams use AI in diligence themselves: S&P Global finds 31% of respondents report AI integrated into due diligence (independent).",
+   "Datasite and FT Longitude report 50% of dealmakers regularly use AI in diligence; SS&C Intralinks reports 21-30% time saving (vendor-published).",
+   "Human review and validation remain; 45% say the decision to sign should always remain human."
+  ],
+  "who": "S&P Global, Datasite, SS&C Intralinks, Deloitte"
+ },
+ {
+  "id": "advisory-transactions-14",
+  "title": "Post-deal integration planning, transition agreements and synergy sizing with generative AI",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Post-deal value realisation needs coordinated execution across systems and is less structured and harder to scale than pre-deal analysis.",
+  "approach": [
+   "Bain expects early adopters to draft integration workplans and transition service agreements in less than 20% of prior time (vendor-published).",
+   "Bain also expects them to use company data to size synergies and draft value creation plans.",
+   "Deloitte's survey reports 52% apply or pilot GenAI in post-close integration; Accenture reports 27% investing in 2026, up from 18% in 2024.",
+   "Human review remains the top requirement for high-stakes use."
+  ],
+  "who": "Bain, Deloitte, Accenture"
+ },
+ {
+  "id": "advisory-transactions-15",
+  "title": "Language-model knowledge capture to retain, not replace, an acquired company's systems",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Post-merger systems integration often threatens the human and IT-embedded knowledge of the acquired firm; the first acquirer chose to rip out and replace the target's ERP.",
+  "approach": [
+   "In a study of two acquisitions of one target, the second acquirer used language-model chat to learn and retain its proprietary ERP.",
+   "The authors report increased knowledge transferability and efficiency, and lower assumed system opacity, personnel dependence and conversion cost (independent).",
+   "Human checkpoints are not discussed in the abstract."
+  ],
+  "who": "ECIS 2026 study authors"
+ },
+ {
+  "id": "advisory-transactions-16",
+  "title": "Idea: autonomous quality-of-earnings analysis",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "Idea, not a deployment: quality-of-earnings work is judgment-heavy and takes weeks, and surveyed dealmakers see an agent that runs the whole analysis as a coming disruption.",
+  "approach": [
+   "An agent would run the analysis end to end with human checkpoints; surveyed dealmakers discuss it, but it is no deployed product.",
+   "A July 2026 buyer's guide says no AI tool runs a full QoE because it turns on judgment.",
+   "Human checkpoints are not specified."
+  ],
+  "who": "No named deployment"
+ }
+]

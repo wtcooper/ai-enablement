@@ -1,0 +1,235 @@
+[
+  {
+    "id": "advisory-private-client-01",
+    "title": "CPA firm plans family-office accounting modernisation on an AI-driven multi-entity platform",
+    "grade": "C",
+    "ladder": "automate",
+    "problem": "Multi-entity family offices keep accounting, investment reporting and operations in separate tools and spreadsheets, so closing and consolidating take manual effort and reporting is hard to trust.",
+    "approach": [
+      "Announced: PKF O'Connor Davies plans to leverage the Asseta AI platform for family offices, from evaluation and implementation through ongoing financial operations.",
+      "The release does not say the firm already runs any family's books on it; the vendor says it reconciles inter-company accounts automatically.",
+      "Vendor says most family offices go live in 8-12 weeks, and claims $125B+ assets and 50+ families onboarded (vendor-published).",
+      "Per the vendor's plan, historical data reconciliation is finished and the team trained before go-live."
+    ],
+    "who": "PKF O'Connor Davies, Asseta AI"
+  },
+  {
+    "id": "advisory-private-client-02",
+    "title": "AI extraction of alternative-investment documents into one system of record",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "Capital calls, distributions, valuation statements and K-1s arrive in each fund manager's own format, and staff re-key them into spreadsheets and reconcile by hand.",
+    "approach": [
+      "A document-AI module ingests the PDFs, identifies key data points and posts a reviewable draft to the family office's reporting platform.",
+      "A person reviews the extracted draft before it is posted; capital-call funding instructions are checked against procedure.",
+      "At Jefferson River Capital, Masttro's Doc AI automated data capture for capital calls, distributions and valuations.",
+      "The implementation enabled tracking of 200+ alternative investments; no time or error figures are published (vendor-published)."
+    ],
+    "who": "Masttro, Jefferson River Capital, Armanino, Canoe"
+  },
+  {
+    "id": "advisory-private-client-03",
+    "title": "AI-drafted reporting commentary and consolidated multi-entity reports for principals",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Investment reporting is still too manual, and families expect consolidated views across entities, investments and cash without waiting weeks for someone to stitch them together.",
+    "approach": [
+      "Staff use AI to draft reporting commentary, summarize documents and prepare meeting material; platforms consolidate entity-level numbers into one view.",
+      "A person signs off on AI-drafted commentary and reports; final decisions, especially on investments, stay with experienced humans.",
+      "Survey: 16% of family offices use AI for investment performance reporting, more than double a year earlier (vendor-published).",
+      "73% of survey respondents still find investment reporting too manual (vendor-published)."
+    ],
+    "who": "Armanino, Citi, RBC with Campden Wealth, UBS"
+  },
+  {
+    "id": "advisory-private-client-04",
+    "title": "AI help with transaction coding, reconciliation and month-end close in family-office accounting",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Lean teams code transactions, reconcile accounts across entities and banks, and run the close by hand across fragmented systems.",
+    "approach": [
+      "AI categorizes invoices and transactions, reconciles accounts across entities and banks, and flags anomalies; a person reviews the exceptions.",
+      "Sources name this as where practitioners are trying AI; one family office's controller posting asks the hire to assess AI-assisted tooling.",
+      "Armanino keeps moving money, posting to the books and final decisions with people, who sign off on AI-prepared work.",
+      "No family-office outcome is published; an adjacent small-business study links generative AI to faster month-end closing, no figure given (independent)."
+    ],
+    "who": "Armanino, Agillink, Wingspan Legacy Partners"
+  },
+  {
+    "id": "advisory-private-client-05",
+    "title": "General-purpose AI assistants for family-office staff on ad hoc operations tasks",
+    "grade": "B",
+    "ladder": "assist",
+    "problem": "Small family-office teams lack specialist skills (for example Salesforce development) and lose time on low-value conversion and admin work.",
+    "approach": [
+      "Staff use AI assistants directly, with no workflow around them; no review step is described in the sources.",
+      "Ford Estates LLC's investment operations director says assistants got the office reasonably close to the code needed for Salesforce automations.",
+      "Placements Italcan Inc. uses AI to convert Excel files to formats its software needs and to manage trips and travel costs.",
+      "The office built Salesforce automations without in-house deep Salesforce experience; no time or cost figure given (self-reported)."
+    ],
+    "who": "Ford Estates LLC, Placements Italcan Inc."
+  },
+  {
+    "id": "advisory-private-client-06",
+    "title": "AI comparison of limited partner agreement language in fund due diligence",
+    "grade": "B",
+    "ladder": "assist",
+    "problem": "Family-office staff read and compare long limited partner (LP) agreements and other fund documents during due diligence.",
+    "approach": [
+      "Staff use AI to validate comparisons within LP agreements, compare standard against new language and support due diligence.",
+      "Placements Italcan Inc.'s CEO describes this use; Wingspan reports practitioners comparing contract language and pressure-testing LP agreements.",
+      "Counsel or the responsible executive reviews anything relied on; investment selection itself is out of scope.",
+      "Use is self-reported only; no outcome figures are published."
+    ],
+    "who": "Placements Italcan Inc., Wingspan"
+  },
+  {
+    "id": "advisory-private-client-07",
+    "title": "AI flagging of payment anomalies alongside procedural controls against deepfake fraud",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "AI-generated voice, video and writing make payment requests look authentic; family offices are lean, rely on informal channels and are likely targets.",
+    "approach": [
+      "Announced: software flags anomalies in payments and approvals and discrepancies in wiring information.",
+      "The office adds procedural controls, dual authorization and verification outside the request channel, because detection tools lag attackers.",
+      "Canoe lists proactive flagging of wiring-information discrepancies as a platform feature; no outcome figures are published (vendor-published)."
+    ],
+    "who": "Canoe Intelligence, Armanino, Gallagher"
+  },
+  {
+    "id": "advisory-private-client-08",
+    "title": "AI platform coordinating a multidisciplinary family-office service team",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "Delivering the resources of a family office through individual advisors means coordinating many services, systems and specialists per family.",
+    "approach": [
+      "Mercer Advisors' Aspen is a unified knowledge graph mapping relationships between clients, advisory teams and services across planning, custody and productivity systems.",
+      "Second generation unveiled in July 2026; the company says it is deployed across more than 1,100 wealth professionals (self-reported).",
+      "The company says it powers hundreds of thousands of actions a year and serves 42,000+ clients (self-reported).",
+      "No review step is described; only the coordination step is counted, not regulated advice or tax preparation."
+    ],
+    "who": "Mercer Advisors"
+  },
+  {
+    "id": "advisory-private-client-09",
+    "title": "AI agents preparing advisor follow-ups and service tickets from the client record",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Advisors serving complex families spend time on meeting follow-up and routine requests rather than on the relationship.",
+    "approach": [
+      "Announced: Compound Planning's CompoundAI agents draw on holdings, meeting transcripts and communication history to prepare work for advisor review.",
+      "A General Assistant agent summarizes recent activity and drafts follow-up emails and agendas.",
+      "A Service Request agent turns tasks, such as a gift of appreciated stock to a donor-advised fund, into a ticket for sign-off.",
+      "Advisors review and sign off drafts and tickets; no outcome figures are published (vendor-published)."
+    ],
+    "who": "Compound Planning"
+  },
+  {
+    "id": "advisory-private-client-10",
+    "title": "Live consolidated family view with AI summaries and natural-language access for principals",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Principals and heirs expect timely, app-like access to a single view of entities, investments and cash, not periodic static PDFs.",
+    "approach": [
+      "Platforms consolidate data across custodians and entities and add AI summaries and assistants; advisors position live reporting as replacing periodic packages.",
+      "Masttro lists AI-powered wealth intelligence and a family communication portal; Asseta lists dashboard analytics and forecasting.",
+      "Relationship managers keep judgment and client contact.",
+      "No outcome figures are published; the case rests on principals' expectations (vendor-published)."
+    ],
+    "who": "Masttro, Asseta, Armanino, Kaufman Rossin, Wiss"
+  },
+  {
+    "id": "advisory-private-client-11",
+    "title": "Idea: AI capturing institutional knowledge to reduce key-person risk in family offices",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: much of how a family office runs lives in a few people's heads, so reports depend on who knows which entity owns what.",
+    "approach": [
+      "Idea only: practitioners discuss AI helping capture and surface institutional knowledge, as a continuity tool as much as a productivity tool (Armanino).",
+      "No deployment found, no outcome figures published, and no human checkpoint described."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-private-client-12",
+    "title": "Idea: AI scenario modelling and successor assessment in family-business succession advice",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: family-business succession carries emotional and business risk, and many families have no plan.",
+    "approach": [
+      "Idea only: an advisor would use predictive analytics and simulation to model succession scenarios and assess candidates' leadership potential from performance data.",
+      "The FFI Practitioner article names general commercial tools; no source shows them used in a family-succession engagement.",
+      "UBS found fewer than a third of family offices with a succession plan consulted the next generation at the outset.",
+      "The article assumes advisors remain responsible; no review step is described."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-private-client-13",
+    "title": "Idea: AI-supported exit-readiness conversations with business-owner clients",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: owner exits depend on leadership alignment, decision-making and institutional knowledge, and advisors want ways to start early AI conversations with owners.",
+    "approach": [
+      "Idea only: Certified Exit Planning Advisors guide owners on how AI affects enterprise value and exit readiness, making gaps visible.",
+      "An Exit Planning Institute webinar page frames this as a people-side question and promises examples and a framework; no results given."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-private-client-14",
+    "title": "Advising families on AI policy, data limits and vendor diligence",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "Family offices handle the most sensitive data of any client and adopt AI tools without a policy; leaks can occur through ordinary use with no breach event.",
+    "approach": [
+      "Announced: banks, law firms and CPA firms publish AI policy templates; whether any sells this as a paid service is not shown.",
+      "They advise inventorying AI use cases, tiering them by risk, approving tools, vetting vendors and training staff; Northern Trust gives ten principles.",
+      "AI output is reviewed before reliance, especially on investment, legal, tax and estate matters; policy is reviewed at least annually.",
+      "Squire Patton Boggs gives a six-part governance response; Armanino and Wiss advise setting data and review rules before adoption."
+    ],
+    "who": "Northern Trust, Squire Patton Boggs, Armanino, Wiss"
+  },
+  {
+    "id": "advisory-private-client-15",
+    "title": "Hybrid family-office model: outsourced accounting and AI enablement, strategy kept in-house",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Lean offices lack bandwidth to build and maintain a bench for each of accounting, reporting, technology, AI and security.",
+    "approach": [
+      "Offices keep strategy, family relationships and decisions in-house and move accounting, reporting, technology, AI enablement and cybersecurity to outside providers.",
+      "Armanino describes this as the trend; PKF's Asseta collaboration is the nearest named example.",
+      "GenTrust's CIO says family offices have asked it to find staff who can find AI technology to automate bill pay and concierge.",
+      "Armanino, citing Campden Wealth and AlTi Tiedemann Global (2025), says 80% outsource mainly for expertise, 31% for cost savings (vendor-published)."
+    ],
+    "who": "Armanino, PKF O'Connor Davies, GenTrust"
+  },
+  {
+    "id": "advisory-private-client-16",
+    "title": "AI-assisted cash-flow modelling from family-office profit-and-loss history",
+    "grade": "B",
+    "ladder": "assist",
+    "problem": "A family office's board asks for a model of monthly cash flow, which would otherwise be built by hand from years of profit-and-loss statements.",
+    "approach": [
+      "Joshua S. Miller, CEO of Minot's Light Management, used Copilot to review five years of monthly P&L statements and chart total expenses.",
+      "He then used Copilot in Excel to chart actual monthly cash flow and averages to model future cash flow.",
+      "The CEO edited the output and spot-checked the numbers.",
+      "Estimate: work that would likely have taken hours took about 45 minutes, including editing and spot checks (self-reported)."
+    ],
+    "who": "Minot's Light Management"
+  },
+  {
+    "id": "advisory-private-client-17",
+    "title": "Client-facing custom GPT answering basic succession questions for family-held businesses",
+    "grade": "B",
+    "ladder": "automate",
+    "problem": "A firm helping family-held businesses prepare for leadership transition wants a way to start conversations with its target audience before they are ready to meet.",
+    "approach": [
+      "GWCPA, a CPA firm in La Plata, Maryland, built the 'GWCPA Generations Advisor', a customized ChatGPT deployment advising on ownership transitions.",
+      "Its marketing partner wrote the instructions and uploaded the firm's marketing materials; access comes by joining the firm's free email list.",
+      "Deeper conversations happen with the firm team when the prospect is ready to meet.",
+      "The marketing partner attributes about 50 new mailing-list members in three months to it (self-reported)."
+    ],
+    "who": "GWCPA"
+  }
+]

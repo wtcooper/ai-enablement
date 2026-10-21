@@ -1,0 +1,194 @@
+[
+  {
+    "id": "advisory-fpa-performance-01",
+    "title": "AI-drafted variance commentary and management reporting packs, reviewed before release",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Variance explanations and performance narratives are written by hand, late in the reporting cycle; teams reported spending 47% of their time on data collection and validation.",
+    "approach": [
+      "AI in planning platforms (Solver Copilot, Abacum) drafts variance summaries and proposes root causes; an analyst checks each against the ledger.",
+      "A named reviewer signs off before the pack goes to the client or board.",
+      "An unnamed media firm CFO said a flux agent built in three weeks cut commentary from 40 people to five reviewers (self-reported).",
+      "Finance teams reported spending an average of 26% of working time verifying or correcting AI-generated outputs (vendor-published)."
+    ],
+    "who": "Solver, Abacum, Pigment, CohnReznick, Withum"
+  },
+  {
+    "id": "advisory-fpa-performance-02",
+    "title": "Machine-generated baseline forecasts in planning software, with adviser judgment layered on top",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "Client forecasting is a weeks-long process and hard to hold beyond a short horizon: 44% could plan with high confidence only up to three months ahead.",
+    "approach": [
+      "Jirav Intelligent Forecasting uses AI and machine learning to build a cash-flow forecast from historical data; the advisor layers on client knowledge.",
+      "Analysts review and adjust machine baselines, and forecast error is tracked against actuals.",
+      "Creative Planning increased use from 10 clients to over 200, per Jirav's release (vendor-published).",
+      "64% of respondents in KPMG's survey of 1,013 senior finance leaders reported stronger forecast accuracy (self-reported)."
+    ],
+    "who": "Jirav, Creative Planning, KPMG, Gartner"
+  },
+  {
+    "id": "advisory-fpa-performance-03",
+    "title": "Continuous driver-based planning with AI-assisted scenarios in place of the annual budget",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Planning horizons are shrinking and scenario work is slow: 44% can plan with high confidence only three months ahead, and 19% of teams can run a scenario within a day.",
+    "approach": [
+      "Announced: RSM, Abacum, Grant Thornton and Gartner pitch rolling driver-based forecasts that update as the business changes, with what-if scenarios.",
+      "Abacum's release describes goal-seeking, such as reaching $125M without adding headcount.",
+      "Finance leaders set trigger thresholds and contingency actions; advisors challenge assumptions before scenarios go to management.",
+      "No outcome is published; the 19% scenario-speed figure is a baseline (vendor-published)."
+    ],
+    "who": "RSM, Abacum, Grant Thornton, Gartner"
+  },
+  {
+    "id": "advisory-fpa-performance-04",
+    "title": "Automated budget input collection and approval routing in a planning platform",
+    "grade": "C",
+    "ladder": "automate",
+    "problem": "Armanino's white paper describes budgets emailed as spreadsheets to dozens of people, with broken links, manual consolidation and no audit trail or role-based access.",
+    "approach": [
+      "Abacum says its Workflow Intelligence layer automates budget input collection, approval routing and collaboration; consolidation changes are not described (vendor claim).",
+      "Approvers sign off submissions, and finance reviews the consolidated budget before release.",
+      "No outcome figures are published; Armanino pitches software-driven planning to replace the emailed-spreadsheet process."
+    ],
+    "who": "Abacum, Armanino"
+  },
+  {
+    "id": "advisory-fpa-performance-05",
+    "title": "Natural-language reporting, search and document-analysis agents in the planning platform",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "At Cox Enterprises, per OneStream, finance had manual friction, hand-built ad hoc reports, answers buried in documentation and contracts reviewed line by line.",
+    "approach": [
+      "Three agents: governed reports from plain-language requests, cited answers from approved finance documents, and structuring of large contract batches.",
+      "Users can inspect the sources and steps an agent used before relying on an answer.",
+      "Ad hoc report time fell from 10 minutes to one, and document lookup from eight minutes to 30 seconds (vendor-published).",
+      "Contract batch review time fell 67% to 98%, the presenter reports (vendor-published)."
+    ],
+    "who": "Cox Enterprises, OneStream"
+  },
+  {
+    "id": "advisory-fpa-performance-06",
+    "title": "Governed planning data connected to general-purpose AI assistants",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "Abacum says business users otherwise wait in the finance queue for answers, and that governed financial context is missing from the tools teams already use.",
+    "approach": [
+      "Abacum says its workflow layer extends to Claude, ChatGPT and Slack through MCP connectors, giving users governed financial context.",
+      "Users validate answers against the governed model before using them in decisions.",
+      "Xero integrated Anthropic's Claude on May 12, 2026, per Accountex coverage; Karbon scheduled a session on building automations with Claude Code."
+    ],
+    "who": "Abacum, Xero, Karbon"
+  },
+  {
+    "id": "advisory-fpa-performance-07",
+    "title": "Planning models built and changed in plain language by agents",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Building and changing multidimensional planning models normally needs specialist administrators or implementation consultants.",
+    "approach": [
+      "Abacum says Modeling Intelligence lets finance teams build and modify models in plain language, with agents adding entities, currencies and product lines.",
+      "Abacum says agents cascade updates without breaking downstream reports; RSM's page says models build quickly without specialist admins while keeping auditability.",
+      "A reviewer inspects structural changes and reconciles outputs to the prior model before release.",
+      "No outcome figures are published (vendor claim)."
+    ],
+    "who": "Abacum, RSM"
+  },
+  {
+    "id": "advisory-fpa-performance-08",
+    "title": "AI-assisted opportunity analysis for pricing, cost and driver diagnosis",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Gartner says the best AI opportunities are material problems that are hard to diagnose with traditional methods, while many initiatives still aim at incremental improvements.",
+    "approach": [
+      "Language models and analytics find and size improvement opportunities; business and finance leaders validate them before commitments.",
+      "In KPMG's article, an unnamed automotive company used AI and language models to scrape pricing data and optimise its parts business.",
+      "That use saved $100 million 'this year alone', according to KPMG's article (self-reported).",
+      "EXL's profile in ISG's report cites cost command centers and contract intelligence for CFO decision support."
+    ],
+    "who": "KPMG, EXL, Gartner, ISG"
+  },
+  {
+    "id": "advisory-fpa-performance-09",
+    "title": "AI readiness and data-foundation assessment with a prioritised use-case roadmap",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "Mid-market clients use AI widely but have not made it work at scale, and the barriers named most often are data quality and integration rather than the models.",
+    "approach": [
+      "Advisers run a diagnostic first: surveys, interviews, maturity assessment, benchmarking and phased roadmap (CFGI's five-week Phase 0), plus data-readiness checks (CohnReznick).",
+      "Executive sessions agree vision and priorities; findings are reviewed with finance leadership before any build.",
+      "Citrin Cooperman acquired AI consulting firm Rosetree Solutions, effective 2026-10-01, to give middle-market clients AI implementation.",
+      "No firm-side outcome is published; 53% of organisations with limited pilot success named data quality as a barrier, 47% integration (self-reported)."
+    ],
+    "who": "CFGI, CohnReznick, Cherry Bekaert, Citrin Cooperman"
+  },
+  {
+    "id": "advisory-fpa-performance-10",
+    "title": "Advisory firms pair AI-embedded planning platforms with finance planning services",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Planning, budgeting and forecasting still run on spreadsheets and legacy tools; Armanino describes budgets emailed to dozens of people and consolidated by hand, with no audit trail.",
+    "approach": [
+      "Announced: firms pair AI-enabled planning platforms with their own implementation practice, such as RSM with Abacum and CFGI with Abacum.",
+      "Armanino lists Abacum and Solver, CohnReznick Workday Adaptive Planning, and Forvis Mazars Solver on Business Central.",
+      "Advisors design and validate the model structure; users are trained to interpret AI insights and apply professional judgment (CohnReznick).",
+      "CohnReznick's page says to accelerate planning and reporting cycle times by 50-70% (vendor-published)."
+    ],
+    "who": "RSM, CFGI, Armanino, CohnReznick, Forvis Mazars"
+  },
+  {
+    "id": "advisory-fpa-performance-11",
+    "title": "Advisory partners enable and govern AI agents built into mid-market ERP software",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "ERP vendors ship AI assistants and agents with each release, and clients need someone to decide which to turn on, set roles and permissions, and connect workflows.",
+    "approach": [
+      "Announced: Armanino's August 12, 2026 deck says Sage Intacct's Finance Intelligence Agent is rolling out to all customers 'this summer and fall'.",
+      "Partner firms run release webinars and offer agent services; Rand Group says it helps enable native agents in Microsoft, NetSuite and Sage.",
+      "An administrator enables each agent and sets role access; marketplace agents are certified by the vendor.",
+      "No outcome is published for the advisory service (vendor-published)."
+    ],
+    "who": "Armanino, EisnerAmper, Rand Group, Sage Intacct"
+  },
+  {
+    "id": "advisory-fpa-performance-12",
+    "title": "Partner-delivered implementation of AI-native ERP for mid-market finance teams",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Rillet says legacy ERPs act as 'dumb databases' where the real work happens in spreadsheets, and that traditional implementations take about 12 months.",
+    "approach": [
+      "Announced: Rillet's AI-native ERP applies AI inside the general ledger; Rillet names Armanino and Wiss as accounting-firm partners.",
+      "The implementation partner designs the chart of accounts, integrations and controls.",
+      "Rillet says customers report implementing in as little as 4 weeks versus 12 months, and closing in a few days (vendor-published)."
+    ],
+    "who": "Rillet, Armanino, Wiss"
+  },
+  {
+    "id": "advisory-fpa-performance-13",
+    "title": "Managed finance planning with agent-led forecasting and variance analysis, priced on outcomes",
+    "grade": "C",
+    "ladder": "delegate",
+    "problem": "Enterprises want external help with planning, forecasting and decision support, not only transactional finance, and are comfortable sourcing more of it.",
+    "approach": [
+      "ISG's September 2026 quadrant says providers apply predictive models and GenAI to variance analysis, scenarios and forecasts, with early agentic capability.",
+      "ISG describes PwC's outcomes-based managed service with agent-led forecasting, plus offerings from EY, Deloitte, EXL and Sutherland.",
+      "ISG describes EY's framework as turning variance analysis that took thousands of hours into minutes (vendor-published).",
+      "Agentic capabilities operate under human oversight; sign-off points are not specified."
+    ],
+    "who": "ISG, PwC, EY, Deloitte, EXL, Sutherland"
+  },
+  {
+    "id": "advisory-fpa-performance-14",
+    "title": "Idea: validation and sign-off service for AI-generated forecasts and commentary",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: finance leaders hesitate to trust AI for critical work; in a vendor survey 75% cited lack of auditability and 71% accuracy concerns.",
+    "approach": [
+      "Idea only: practitioners describe an agent inventory with named owners, replayable evidence, risk-scaled sign-off gates and a kill threshold for errors.",
+      "A short pilot would measure time saved, review time and errors; humans approve outputs before financial statements or board reporting.",
+      "COSO's February 2026 guidance maps generative AI capabilities to its 17 control principles; Grant Thornton's August 2026 webcast covers forecasting governance."
+    ],
+    "who": "No named deployment"
+  }
+]

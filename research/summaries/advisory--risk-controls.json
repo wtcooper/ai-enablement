@@ -1,0 +1,314 @@
+[
+ {
+  "id": "advisory-risk-controls-01",
+  "title": "AI assists audit pre-planning, risk brainstorming, walkthrough notes and starting risk scores",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Pre-planning research, risk brainstorming, scoping and walkthrough notes take time before testing starts, and the annual risk assessment starts from a blank page.",
+  "approach": [
+   "A Gartner poll finds 60% of audit professionals use generative AI for engagement pre-planning and 44% for planning (independent).",
+   "Grant Thornton published 16 sample agent instructions for internal audit; Optro announced agentic risk-assessment scoring that recommends starting scores with supporting evidence.",
+   "SOX leaders on a May 2026 panel described assistive uses and reported few autonomous ones.",
+   "The auditor validates AI-surfaced risks and confirms or overrides each starting risk score before the plan is issued."
+  ],
+  "who": "Gartner poll, Grant Thornton, Optro, KPMG"
+ },
+ {
+  "id": "advisory-risk-controls-02",
+  "title": "Board materials and risk registers turned into audit actions between planning cycles",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Board packs, audit actions and remediation tracking live in separate places, so signals in governance materials do not become audit follow-up.",
+  "approach": [
+   "Diligent links AuditAI to Smart Prep 360, which reviews board materials for anomalies and control gaps; AuditAI turns signals into evidence requests.",
+   "Using AI to sense risk themes between planning cycles is discussed as an idea. No outcome figure is published.",
+   "The chief audit executive and risk leaders decide what enters the risk register and audit plan."
+  ],
+  "who": "Diligent (vendor), Baker Tilly, Protiviti"
+ },
+ {
+  "id": "advisory-risk-controls-03",
+  "title": "AI drafts risk-control matrices, test procedures and request lists for review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Building a risk and control matrix from notes and diagrams takes an auditor days, and writing test steps, sampling and evidence lists is repetitive.",
+  "approach": [
+   "RSM describes an agent that reads process documents, drafts the risk and control matrix, writes test procedures and produces a request list.",
+   "An RSM director says a first-draft matrix takes minutes versus one to two days (self-reported); in acceptance testing it sometimes merged controls.",
+   "Grant Thornton's CompliAI, deployed February 2024, drafts control narratives and test steps; it says tasks take minutes, not days (self-reported).",
+   "The auditor reviews and corrects the matrix and procedures before testing and before they go to control owners."
+  ],
+  "who": "RSM US, Grant Thornton"
+ },
+ {
+  "id": "advisory-risk-controls-04",
+  "title": "Agents prepare evidence requests, check submissions and chase follow-ups",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Loosely worded information requests and long waits for data slow fieldwork, and incomplete evidence is found weeks later as follow-up trails go cold.",
+  "approach": [
+   "In a co-sourced billing audit, Baker Tilly used Fieldguide agents to prepare requests, link them to audit objectives and track status.",
+   "Baker Tilly says AI reduced coordination time and improved coverage (self-reported); Diligent reports about 70% less administration time among early adopters (vendor-published).",
+   "Crown Castle's audit manager says AuditAI cut evidence-chasing time by more than half (vendor-published).",
+   "The auditor remains responsible for procedure, evidence, analysis and conclusion."
+  ],
+  "who": "Baker Tilly, Fieldguide, Diligent, Crown Castle"
+ },
+ {
+  "id": "advisory-risk-controls-05",
+  "title": "In-house audit teams hand SOX testing to agents, with review (Reddit, Klaviyo)",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "SOX testing is repetitive and getting heavier: KPMG's survey reports testing hours per control rose from 12 to 16 and SOX maintenance cost rose 45%.",
+  "approach": [
+   "Optro's Autonomous Testing agent reads evidence, tests each attribute and writes the result with a citation trail; the auditor signs off.",
+   "Optro says Reddit automated 175 controls in three months and cut testing time per control by 60% on average (vendor-published).",
+   "Reddit has since expanded agentic testing to over 75% of its SOX controls (vendor-published).",
+   "The auditor reviews and approves each test conclusion and every exception."
+  ],
+  "who": "Reddit, Klaviyo, Optro"
+ },
+ {
+  "id": "advisory-risk-controls-06",
+  "title": "Advisory firms run agentic control testing inside co-sourced and outsourced audit engagements",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Co-sourced SOX testing is sold on hours, evidence arrives in mixed formats, workpapers must stand up to the external auditor, and clients want shorter cycles.",
+  "approach": [
+   "RSM Beacon, with Andera, allocates evidence to samples, tests attributes and writes an annotated workpaper; ambiguous items go to a human.",
+   "Riveron, Protiviti (Fieldguide alliance) and PwC (Dynamic Testing) also run agents at defined methodology steps.",
+   "PwC says effort can fall 30-40% and turnarounds shrink from weeks to days (vendor-published; no sample given).",
+   "Experienced professionals review every test result before it enters the workpaper."
+  ],
+  "who": "RSM, Riveron, Protiviti, PwC"
+ },
+ {
+  "id": "advisory-risk-controls-07",
+  "title": "Risk-advisory teams test 100% of a control population instead of a sample",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Procedures such as vendor bank-detail changes and deposit reconciliations are tested on a sample, manual review misses digits, and tying hundreds of documents takes hours.",
+  "approach": [
+   "Armanino's risk-advisory team used DataSnipper tools on live client engagements to extract account numbers and terms and match them to documents.",
+   "A manager said the team tested 100% of vendor bank and payment-detail changes, versus a 1-of-25 sample (vendor-published).",
+   "A manager estimated about 25-plus hours saved on one deposit reconciliation (vendor-published estimate).",
+   "The auditor reviews each suggested match and keeps sign-off."
+  ],
+  "who": "Armanino, DataSnipper"
+ },
+ {
+  "id": "advisory-risk-controls-08",
+  "title": "Year-round control testing replaces a single point-in-time SOX test cycle",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Testing bundled into one point in time finds issues late, and fixes are rushed near year end.",
+  "approach": [
+   "Klaviyo's VP of Internal Audit says agent-run tests let the team test all year, catching issues earlier (vendor-published, no metric).",
+   "KPMG argues continuous testing needs continuous evidence collection, which may give a faster return than automating tests.",
+   "Control owners work exceptions; auditors review exceptions and the reliability of the monitoring."
+  ],
+  "who": "Klaviyo, Optro, KPMG"
+ },
+ {
+  "id": "advisory-risk-controls-09",
+  "title": "Continuous first-line controls monitoring with human-approved auto-clear rules (partly an idea)",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Periodic, sample-based testing leaves blind spots that surface at year end, and detective controls find issues after the fact.",
+  "approach": [
+   "Grant Thornton describes AI that monitors more transactions continuously, with alerts and human-approved logic setting when AI may auto-clear an item.",
+   "KPMG's 2030 view describes embedded, increasingly self-healing controls; a Havertys audit leader expects controls could one day be tested at each occurrence.",
+   "No outcome of continuous monitoring is published.",
+   "Humans approve the auto-clear logic; control owners triage exceptions and internal audit tests the monitoring."
+  ],
+  "who": "Grant Thornton, KPMG, Havertys"
+ },
+ {
+  "id": "advisory-risk-controls-10",
+  "title": "AI pre-review of workpapers, scope and draft findings before human sign-off",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Manager review of workpapers is slow and inconsistent, and scope or draft-finding gaps are often found late, so unsupported findings can reach the client.",
+  "approach": [
+   "FJ Management's head of internal audit says Optro lets the team analyse workpapers and run calibrated reviews with a human in loop.",
+   "Baker Tilly uses approved custom GPTs to challenge scope, risk-control mapping and whether a draft finding is supported; no measure is published.",
+   "The assigned auditor owns the conclusion, and a human reviewer signs off every workpaper."
+  ],
+  "who": "FJ Management, Optro, Baker Tilly"
+ },
+ {
+  "id": "advisory-risk-controls-11",
+  "title": "AI drafts audit observations: finding detail, root cause, impact and recommendation",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Writing structured observation language after testing is slow and varies by author.",
+  "approach": [
+   "RSM describes an agent that drafts structured observation language from documented test results.",
+   "A Gartner poll finds 60% of audit professionals use generative AI to draft audit issues, ratings or reports (independent).",
+   "The auditor validates each draft finding, its rating and its root cause with the auditee before the report is final."
+  ],
+  "who": "RSM US, Gartner poll"
+ },
+ {
+  "id": "advisory-risk-controls-12",
+  "title": "Reading vendors' SOC reports and assessing vendor AI risk, with agents announced",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Clients obtain AI through vendors, and existing SOC 1 and SOC 2 reports may say little about model behaviour, retraining or prompt controls.",
+  "approach": [
+   "KPMG lists SOC report review as an agent type; Optro announced an agentic third-party risk workflow for onboarding and due diligence.",
+   "The advisor reads each vendor's SOC report for AI coverage and maps gaps to contract terms and the client's own testing.",
+   "A survey reports 40% of audit functions evaluate vendor AI governance and 50% review SOC reports (vendor-published).",
+   "Advisor and client owner sign off the gap mapping."
+  ],
+  "who": "KPMG, Optro, Sikich"
+ },
+ {
+  "id": "advisory-risk-controls-13",
+  "title": "Mid-market firms move internal-audit and certification engagements onto one agentic platform",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Risk-advisory engagements run on email and spreadsheets, with requests chased by hand and methodology applied inconsistently.",
+  "approach": [
+   "Aprio standardised SOC, ISO, HITRUST and PCI work on Fieldguide from December 2025, and announced agent co-development on 2026-08-05.",
+   "Cherry Bekaert announced on 2026-06-03 it would centralise audit, internal audit and SOC work on the platform; Baker Tilly uses it.",
+   "No measured result is published; the firms describe intended benefits (self-reported).",
+   "Human oversight is stated at each stage of the engagement."
+  ],
+  "who": "Aprio, Cherry Bekaert, Baker Tilly"
+ },
+ {
+  "id": "advisory-risk-controls-14",
+  "title": "A company moves outsourced SOX testing to agents, starting with IT (Havertys)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Havertys paid outside testers to run IT SOX tests; tester turnover is a risk, and the spend buys testing hours rather than advice.",
+  "approach": [
+   "Havertys is adding Optro Autonomous Testing on its Optro SOX system, starting with IT controls it already outsources.",
+   "It plans to move to business-process controls and operational audits once IT controls are tested autonomously.",
+   "It will judge success partly by how its controls spend shifts toward advisory work; no result yet (vendor-published).",
+   "Managers continue to review and approve the work."
+  ],
+  "who": "Havertys, Optro"
+ },
+ {
+  "id": "advisory-risk-controls-15",
+  "title": "AI-native providers sell agent-run SOX and internal-audit testing to enterprise audit teams",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Public companies spend heavily on SOX testing and it stays manual; Midship cites roughly $2.3 million a year (an unsourced vendor figure).",
+  "approach": [
+   "Vendors sell agents that follow an audit plan, gather evidence, test controls and produce review-ready workpapers; Petual names Navan as a customer.",
+   "Petual reports efficiency gains of 68% to 80% on existing SOX workflows (vendor claim); Andera markets a 70% time saving.",
+   "Midship raised a $4.15M seed (2026-01-27) for agents that run SOX testing lifecycles.",
+   "Built-in approval workflows keep humans in the loop."
+  ],
+  "who": "Petual, Navan, Midship, Andera"
+ },
+ {
+  "id": "advisory-risk-controls-16",
+  "title": "SOX and internal-audit teams become controls advisers as automation moves earlier",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "SOX and internal-audit teams spend most capacity testing controls after the fact, while stakeholders ask for advice before controls fail.",
+  "approach": [
+   "KPMG's SOX leader says auditor reliance is going to go away and the role becomes much more of a controls adviser.",
+   "KPMG's path forward: embed controls in first-line workflows, build audit-ready evidence by design, and shift to controls advisory.",
+   "A poll finds two-thirds of SOX leaders were asked to add value in operational and technology audits; 13% remain fully SOX-focused (independent).",
+   "The controller or process owner owns control design; SOX and internal audit advise and test."
+  ],
+  "who": "KPMG, SOX leaders panel"
+ },
+ {
+  "id": "advisory-risk-controls-17",
+  "title": "AI governance, control design and certification-readiness advisory for clients",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Clients deploy AI faster than they document ownership, controls and evidence; a KPMG survey finds fewer than half of organisations are fully assurance-ready.",
+  "approach": [
+   "Firms sell design of AI governance, using COSO's February 2026 roadmap: inventory each AI use, assess risk, map controls and set metrics.",
+   "Grant Thornton LLP launched an assurance practice on 2026-09-23 with provisional accreditation for AIUC-1 certification of agentic AI controls.",
+   "On 2026-10-19 the AICPA and the Artificial Intelligence Underwriting Company announced a joint SOC 2 plus AIUC-1 offering.",
+   "A partner reviews the risk assessment before release; the client control owner confirms each control is operated."
+  ],
+  "who": "COSO, Grant Thornton, RSM, AICPA, KPMG survey"
+ },
+ {
+  "id": "advisory-risk-controls-18",
+  "title": "AI inventory, shadow-AI discovery and review of user-built automations for a client",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Teams cannot govern AI they have not listed, and shadow AI starts outside formal oversight; a LexisNexis report says 54% of consultants use AI tools without approval.",
+  "approach": [
+   "The advisor scans for unsanctioned use, then builds an inventory classifying each use by capability type, with an owner and criticality.",
+   "Optro announced intake that pre-populates AI system records; its shadow-AI discovery feature is previewing ahead of 2027 availability.",
+   "A governance committee classifies and approves each discovered use; user-built agents pass a review gate before touching production data."
+  ],
+  "who": "COSO, Optro, LexisNexis, ACCA"
+ },
+ {
+  "id": "advisory-risk-controls-19",
+  "title": "Internal-audit review of a client's AI governance (Grant Thornton, global bank)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Traditional AI governance assumes risk is handled before deployment, but agents decide at run time; internal audit needs a repeatable way to test it.",
+  "approach": [
+   "Grant Thornton helped a global bank's auditors build a repeatable, NIST-aligned approach to evaluating AI; the client completed its first lifecycle audit.",
+   "Grant Thornton reports seven governance domains under audit and 100+ production use cases validated (self-reported).",
+   "AI is the subject of the audit, not the auditor; the internal-audit lead approves scope and finding ratings."
+  ],
+  "who": "Grant Thornton, a global bank, the IIA"
+ },
+ {
+  "id": "advisory-risk-controls-20",
+  "title": "SOX teams scope and evaluate the AI embedded in clients' business controls",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Business teams put AI inside revenue, procure-to-pay and close workflows, and SOX teams have no agreed way to scope or test those controls.",
+  "approach": [
+   "SOX teams ask about AI use in walkthroughs, send control owners quarterly questionnaires and write baseline human-in-the-loop requirements, starting from COSO's guidance.",
+   "An informal webinar poll implies 95% of SOX programs lack a defined framework for AI in controls (independent).",
+   "Control owners document human-in-the-loop procedures; the SOX team confirms evidence expectations with the external auditor."
+  ],
+  "who": "Internal Audit Collective, KPMG, COSO"
+ },
+ {
+  "id": "advisory-risk-controls-21",
+  "title": "Idea: written controls before a client's finance agents go live",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: close and reconciliation agents are reaching production while finance teams document controls slower than they deploy.",
+  "approach": [
+   "A practitioner proposes a signed memo before an agent touches a production close: inventory, replayable evidence, sign-off gates, assurance mapping, exit threshold.",
+   "A validation period is built into the rollout; vendor match-rate and time-saving figures are treated as marketing until reproduced.",
+   "The controller signs the memo; a named human owns each agent's output."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-risk-controls-23",
+  "title": "Idea: AI-enabled fraud readiness and fraud-risk program design for clients",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: internal-audit leaders see AI-enabled fraud, such as deepfakes and fabricated documents, as a growing risk, and few feel prepared.",
+  "approach": [
+   "Practitioners discuss advisers helping clients assess exposure to AI-enabled fraud, build skills, update fraud risk assessments and design controls.",
+   "Reference points include DOJ's September 2024 compliance guidance on AI risk and FinCEN's November 2024 deepfake alert.",
+   "Fraud-risk conclusions remain with management and audit leadership."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-risk-controls-24",
+  "title": "Idea: certify AI testing tools before use with a parallel run",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: no public parallel-run, override or error-rate result exists for AI in internal audit or SOX testing.",
+  "approach": [
+   "Run the tool in shadow mode on completed engagements, compare its results with the team's conclusions, then ramp gradually.",
+   "The UK FRC describes testing default and edge cases, recertifying after material changes, and running alternative procedures in parallel.",
+   "A named reviewer compares tool output with prior conclusions before any live cutover."
+  ],
+  "who": "No named deployment"
+ }
+]

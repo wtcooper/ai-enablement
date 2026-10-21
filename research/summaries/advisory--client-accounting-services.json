@@ -1,0 +1,316 @@
+[
+ {
+  "id": "advisory-client-accounting-services-01",
+  "title": "Confidence-gated transaction categorization with accountant review of uncertain items",
+  "grade": "A",
+  "ladder": "automate",
+  "problem": "Staff code bank and card transactions monthly for every client across different charts of accounts, and that coding sets the quality of every later report.",
+  "approach": [
+   "A model proposes an account with a confidence score; high-confidence items post and uncertain ones go to an accountant for bulk review.",
+   "An independent field study associates AI use with a 7.5-day shorter monthly close and about 8.5% of accountant time reallocated (independent).",
+   "Digits' benchmark reports 97.8% accuracy for its ledger-native model versus 79.1% for outsourced accountants (vendor-published).",
+   "Intuit announced auto-categorization where only high-confidence items post; the accountant decides when to switch it on."
+  ],
+  "who": "Stanford researchers, Digits, Intuit"
+ },
+ {
+  "id": "advisory-client-accounting-services-02",
+  "title": "Bank, card and clearing-account reconciliation by AI matching with an exceptions list",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Reconciling bank, card and clearing accounts means exporting statements, maintaining fragile matching rules and hunting mismatches.",
+  "approach": [
+   "Matching software ingests feeds, matches transactions without hand-built rules, finalizes clean reconciliations and presents a short, prioritized exceptions list.",
+   "An unnamed Top 100 firm's practice uses FloQast; monthly labor on project reconciliations fell from 8 hours to 5 (vendor-published).",
+   "The accountant clears the exceptions list; the job manager reviews and signs off the reconciliation checklist."
+  ],
+  "who": "FloQast, Digits, an unnamed Top 100 firm"
+ },
+ {
+  "id": "advisory-client-accounting-services-03",
+  "title": "Agents prepare month-end close across a firm's clients; accountants approve and review",
+  "grade": "B",
+  "ladder": "delegate",
+  "problem": "Client accounting capacity is capped by headcount: each close needs categorization, reconciliation, exceptions, journal entries and statements for every client, and staff are scarce.",
+  "approach": [
+   "Agent platforms such as Pilot's Meridian, Ramp's Stack and BlackLine's Verity Prepare prepare the close in the firm's existing ledgers.",
+   "BlackLine reports up to 92% less reconciliation preparation time; Basis reports 30% average savings (vendor-published).",
+   "A vendor benchmark of unattended agents found books over 15% off CPA baselines after several months.",
+   "The accountant approves the agent's plan and drafted entries before posting, and reviews finished books before client delivery."
+  ],
+  "who": "Pilot, Ramp, BlackLine, Basis, CohnReznick"
+ },
+ {
+  "id": "advisory-client-accounting-services-04",
+  "title": "Staff book entries via an AI ledger assistant, with locked-period approval",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Booking entries and reconciling a quarterly close by hand takes hours, and an agent that writes to the ledger needs real controls.",
+  "approach": [
+   "Accountants use a general assistant connected to the ledger through Digits' Write MCP, shipped 13 October 2026.",
+   "Writes apply in open periods and queue for manager approval in locked periods; agents work within the user's permissions.",
+   "One AI-native practice reports two quarterly closes taking about 1 hour 40 minutes versus 7 by hand (vendor-published)."
+  ],
+  "who": "Digits, Arclow"
+ },
+ {
+  "id": "advisory-client-accounting-services-05",
+  "title": "Continuous close and automated monthly packages on an AI-native ledger (solo firm)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "A small firm spent most of each month producing financials by exporting, cleaning, formatting and emailing statements client by client.",
+  "approach": [
+   "Elev8 CFO moved clients to Digits and built a pipeline on its API that generates and delivers branded statements monthly.",
+   "Elev8 reports monthly close falling from 18 days to 5 (self-reported); Digits reports hours falling from about 108 to 20 (vendor-published).",
+   "A parallel close on a starter cohort came before cut-over; a review gate before automated release is not described."
+  ],
+  "who": "Elev8 CFO, Digits"
+ },
+ {
+  "id": "advisory-client-accounting-services-06",
+  "title": "AI-assisted live dashboards, variance explanations and management reporting for client advisory",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Static month-end packages arrive late, commentary comes late, and routine bookkeeping crowds out time for dashboards and explaining movements.",
+  "approach": [
+   "Accountants use ledger-connected dashboards and assistants to spot unusual movements, drill into drivers, draft variance explanations and walk clients through live financials.",
+   "Small firms on Digits describe drill-down and screen-sharing live financials in meetings; no outcome is measured.",
+   "The accountant confirms each variance explanation against source records, and a manager reviews commentary before delivery."
+  ],
+  "who": "Digits case-study firms, Bonadio"
+ },
+ {
+  "id": "advisory-client-accounting-services-07",
+  "title": "Cash-flow forecasts, budgets and scenario planning built from live ledger data",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Fractional CFO clients want forward-looking cash-flow and budget views, which take time to assemble; advisory capacity is limited by data cleanup and staffing.",
+  "approach": [
+   "Armanino built a 13-week cash-flow tool on robotic process automation, not generative AI, and reports client demand (self-reported, no figure).",
+   "Digits says firms use a general assistant on ledger data for 13-week forecasts and budgets; Intuit announced conversational answers and AI forecasts.",
+   "The adviser sets and reviews forecast and scenario assumptions before client delivery."
+  ],
+  "who": "Armanino, Digits, Intuit"
+ },
+ {
+  "id": "advisory-client-accounting-services-08",
+  "title": "Fractional CFO drafting of technical memos, with retrieval over past memos",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Fractional CFO and controllership clients ask for technical accounting memos that take hours to write.",
+  "approach": [
+   "Eventus Advisory Group turned its past memos into a retrieval index behind a memo-generator bot that produces a first draft.",
+   "Its head of AI research estimates time per memo falling from 4 hours to 30 minutes (self-reported).",
+   "A person reviews and corrects every draft, and the CFO owns the memos."
+  ],
+  "who": "Eventus Advisory Group"
+ },
+ {
+  "id": "advisory-client-accounting-services-09",
+  "title": "AI-accelerated onboarding, ledger migration and catch-up cleanup sold as projects",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "New clients arrive with years of messy data, duplicates and unreconciled periods; cleanups took weeks and were often unprofitable.",
+  "approach": [
+   "Firms use AI categorization and matching to bring books current in days, pricing cleanups as discrete projects or recurring quarterly engagements.",
+   "A small firm reports cleanup in 2 to 4 days (vendor-published); a solo firm migrated 27 clients in about 40 hours (self-reported).",
+   "The accountant approves the cleaning plan, reviews write-offs and opening balances, and runs a reconciliation check before go-live."
+  ],
+  "who": "Digits users, FloQast, Ramp"
+ },
+ {
+  "id": "advisory-client-accounting-services-10",
+  "title": "AP and bill-pay agents that code and route invoices, with fraud screening",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Accounts payable for client accounting involves manual invoice entry, coding, vendor emails and payment coordination, and firms paying bills face email fraud and deepfakes.",
+  "approach": [
+   "AI-enabled AP tools such as BILL, Tipalti and Ramp extract invoice details, categorize expenses, match purchase orders, route approvals and schedule payments.",
+   "BILL states aggregates of 1,100-plus hours saved by a receipt agent and about 1,000 days by a tax-document agent (vendor-published).",
+   "The owner or adviser approves payments, and an accountant reviews coding exceptions. No client accounting firm reports AI fraud screening yet."
+  ],
+  "who": "BILL, Tipalti, Ramp (vendor claims)"
+ },
+ {
+  "id": "advisory-client-accounting-services-11",
+  "title": "Payroll preparation with AI-guided workflows, anomaly flags and payroll journal entries",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Payroll prep means re-entering hours and deductions clients send by email and pulling the same reports after every run, client by client.",
+  "approach": [
+   "Gusto (October 2026) lets accountants run payroll from one dashboard, with email-drafted inputs, change tracking and anomaly flags.",
+   "Intuit's Payroll Agent validates data; Ramp's Stack agent drafts the payroll entry; Pilot says its AI ties liabilities. No outcome figure.",
+   "The accountant reviews flagged anomalies and approves payroll changes and the entry before posting."
+  ],
+  "who": "Gusto, Intuit, Ramp, Pilot"
+ },
+ {
+  "id": "advisory-client-accounting-services-12",
+  "title": "AI chasing of missing client documents and open questions inside the ledger",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Teams spend large amounts of time chasing documents and answers, and one solo firm says email follow-ups took clients 10 to 12 days to answer.",
+  "approach": [
+   "Questions and answers move into the transaction feed or collaboration inbox, and AI chases missing documents, escalating judgment calls to an accountant.",
+   "Intuit says its collaboration inbox lets Intuit Intelligence chase follow-ups automatically.",
+   "One solo firm reports client response falling to a few business days, attributed to the platform rather than AI specifically (vendor-published)."
+  ],
+  "who": "Intuit, Digits (vendor claims)"
+ },
+ {
+  "id": "advisory-client-accounting-services-13",
+  "title": "Cross-client portfolio view of close status, open tasks and anomalies for managers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "A manager running dozens of clients cannot easily see which close is late or which client's expenses spiked.",
+  "approach": [
+   "A portfolio view shows close status for every client; AI summarizes issues, alerts on anomalies and answers cross-client queries.",
+   "Examples are Intuit Accountant Suite cross-client insights (open beta, June 2026) and Ramp's Advisor Console. No outcome figure is published.",
+   "The manager decides what to act on."
+  ],
+  "who": "Intuit, Ramp, FloQast (vendor claims)"
+ },
+ {
+  "id": "advisory-client-accounting-services-14",
+  "title": "In-house automation that scans, summarizes and tickets incoming vendor mail and invoices",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "A small in-house accounting team was inundated with physical mail: vendor invoices, tax notices and statements.",
+  "approach": [
+   "The Capital Area Food Bank controller built an automation that scans each item, summarizes it with AI and opens a Jira ticket.",
+   "The controller estimates about four hours a week saved (self-reported, June 2025).",
+   "Staff review the tickets and act on them."
+  ],
+  "who": "Capital Area Food Bank"
+ },
+ {
+  "id": "advisory-client-accounting-services-15",
+  "title": "Offshore client accounting redesigned around documented processes, AI workflows and onshore review",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Early offshoring was a lift-and-shift of the same process to cheaper labor, and AI tools add another place where client data can travel abroad.",
+  "approach": [
+   "Firms map the as-is process, improve it with automation and AI, and make offshore output a review of work (CohnReznick, Aprio).",
+   "An AICPA survey reports 29% of responding firms offshore (independent).",
+   "A US lead reviews offshore output and the job manager signs off; consent is captured before return information leaves the US."
+  ],
+  "who": "CohnReznick, Aprio, AICPA survey"
+ },
+ {
+  "id": "advisory-client-accounting-services-16",
+  "title": "AI-native provider sells autonomous bookkeeping and close direct to small businesses",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Small businesses and startups pay for bookkeeping that is slow and inconsistent, and book catch-up takes weeks (the provider's framing).",
+  "approach": [
+   "Pilot launched its AI Accountant on 4 February 2026, calling it fully autonomous: it onboards, closes historical books and produces statements.",
+   "Pilot claims hours, not weeks, and zero human intervention on the normal path (vendor-published).",
+   "The business owner reviews flagged items and the audit history, and can adjust transaction-level decisions."
+  ],
+  "who": "Pilot (vendor claim)"
+ },
+ {
+  "id": "advisory-client-accounting-services-17",
+  "title": "AI-native provider supplies platform and leads; a local firm delivers the service",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Independent bookkeepers and small firms lack capacity and technology to scale, and AI-native platforms need distribution and local relationships.",
+  "approach": [
+   "Pilot launched a Local Partner Program on 9 December 2025 offering its platform, automation, advisory services, sales tools and matched leads.",
+   "Puzzle will work with accounting partners who deliver the service after Accrual's purchase of its firm-facing technology.",
+   "No outcome figure is published, and human checkpoints are not described."
+  ],
+  "who": "Pilot, Puzzle (vendors)"
+ },
+ {
+  "id": "advisory-client-accounting-services-18",
+  "title": "CLA co-builds a firm-trained AI model with a ledger vendor",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "CLA's chief executive says AI should not belong only to the biggest firms, and that most vendors CLA evaluated had tacked AI onto decades-old software.",
+  "approach": [
+   "CLA announced on 21 July 2026 it is working with Digits to train a proprietary model on Digits' Firm Model offering.",
+   "Digits supplies the platform and training infrastructure; CLA supplies its data. Deployment is planned to thousands of clients over three years.",
+   "No outcome figure is published, and human checkpoints are not described."
+  ],
+  "who": "CLA, Digits"
+ },
+ {
+  "id": "advisory-client-accounting-services-19",
+  "title": "Outcome-based AI ledger pricing: pay only for clients automated 95% or more",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "Digits' chief executive says that if software does not do the work it should not get paid.",
+  "approach": [
+   "Digits announced (7-8 April 2026) that firms pay for a client only when 95% or more of its transactions are zero-touch.",
+   "If staff touch more than 5%, the platform is free for that client; pricing is binary.",
+   "Digits cites one customer firm's automation rate moving from about 75% to 98% in 2025 (vendor-published)."
+  ],
+  "who": "Digits (vendor)"
+ },
+ {
+  "id": "advisory-client-accounting-services-20",
+  "title": "Client accounting teams advise clients on their own AI adoption",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Clients ask their accountant which AI tools to use, what the risks are and how to build dashboards, and some arrive having already used AI.",
+  "approach": [
+   "Teams add AI advisory to the relationship: tool selection, data-protection answers and hands-on demonstrations of dashboards and analysis.",
+   "Bonadio's leader says more client AI projects are starting; a San Diego fractional CFO shows clients how to build dashboards.",
+   "The accountant owns the advice and the risk framing."
+  ],
+  "who": "Bonadio, a San Diego fractional CFO"
+ },
+ {
+  "id": "advisory-client-accounting-services-21",
+  "title": "Idea: control package before agents touch a client's production close",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: vendor accuracy claims are not comparable, and agents appear without being listed or owned.",
+  "approach": [
+   "A practitioner article and COSO guidance suggest five written controls: agent inventory, replayable evidence, risk-scaled sign-off gates, SOC mapping, exit thresholds.",
+   "A validation period on the client's own data comes first; low-confidence items go to experienced reviewers.",
+   "A named owner signs off when an agent is added, changed or retired; a named person can pull the agent."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-client-accounting-services-22",
+  "title": "Firm AI policy, approved tools, vendor data terms and change control",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "About one-third of professionals say they use unsanctioned AI tools, few firms have a written AI policy, and staff can now build unreviewed automations.",
+  "approach": [
+   "The firm names an AI lead, keeps an approved-tool list, defines permitted uses, trains staff and logs how outputs were verified.",
+   "It asks providers in writing about data retention and model training, and puts firm-built agents through change management.",
+   "One survey finds 21% of firms have an AI policy or strategy (vendor-published); the AI lead approves tools and use cases."
+  ],
+  "who": "Karbon, Thomson Reuters, Journal of Accountancy"
+ },
+ {
+  "id": "advisory-client-accounting-services-23",
+  "title": "AI-use disclosure, client consent and client AI terms in engagement letters",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Clients ask how their data is used by AI, and no federal law or professional standard says whether or how CPAs must disclose generative AI use.",
+  "approach": [
+   "The firm adds AI-use language to engagement letters or a separate consent: what AI is used for, quality-control steps, third-party disclosure.",
+   "Where tax return information is involved it considers the section 7216 consent format and offers a no-AI path for clients who decline.",
+   "A partner or counsel approves disclosure and consent wording; staff check which clients declined before opening files."
+  ],
+  "who": "Journal of Accountancy, IESBA, Zuellig Pharma"
+ },
+ {
+  "id": "advisory-client-accounting-services-24",
+  "title": "Idea: independence and data-custody screening before selling AI-enabled services to attest clients",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: firms that audit some clients and also provide client accounting services must decide which services impair independence for attest clients.",
+  "approach": [
+   "Built from the rules read, the firm checks the client's attest status and regime before offering an AI-enabled service.",
+   "Where the Code is silent, it uses the conceptual framework: identify threats, evaluate, apply safeguards, document.",
+   "An ethics or independence partner reviews before acceptance; the client's skilled person accepts management responsibility in writing."
+  ],
+  "who": "No named deployment"
+ }
+]

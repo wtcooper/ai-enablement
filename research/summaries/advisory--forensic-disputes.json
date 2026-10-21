@@ -1,0 +1,206 @@
+[
+  {
+    "id": "advisory-forensic-disputes-01",
+    "title": "AI reading of bank, check and brokerage records into structured evidence",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "Forensic teams spend much of a project turning PDFs, scanned statements and check images into usable data; J.S. Held says this sometimes took as much as 50% of budgets.",
+    "approach": [
+      "AI-enhanced text recognition turns bank, check and brokerage statements into reconciled data linked to the source documents; people then analyse it.",
+      "Every transaction is linked back to the original banking evidence before a report goes out; professionals interpret analyses and check flagged parties.",
+      "Full payor details for over 25,000 checks were ready in a few days rather than weeks, in one matter (self-reported).",
+      "Anders CPAs & Advisors principal says hand-keying is about 85% accurate and AI tools 99%, sometimes 100% (vendor-published)."
+    ],
+    "who": "J.S. Held, Valid8 Financial, Anders CPAs & Advisors"
+  },
+  {
+    "id": "advisory-forensic-disputes-02",
+    "title": "Matching every check and transaction to trace embezzlement and lapping",
+    "grade": "B",
+    "ladder": "automate",
+    "problem": "Tracing a scheme across thousands of checks and accounts is slow by hand, and lapping (one customer's payments applied to another's account) is hard to see without matching every item.",
+    "approach": [
+      "AI-assisted software matches every transaction and check to bank records, flags missing data and links each item back to evidence.",
+      "Forensic accountants interpret the matches, calculate losses and write the report; every item stays linked to the original evidence.",
+      "20,000 transactions across 10 accounts over five years were matched in hours; analysis that could take weeks took days (self-reported).",
+      "More than $7 million potentially embezzled in one matter and more than $30 million potentially misapplied payments in another (self-reported)."
+    ],
+    "who": "J.S. Held, BRG"
+  },
+  {
+    "id": "advisory-forensic-disputes-03",
+    "title": "Continuous data monitoring and machine-learning anomaly detection in client anti-fraud programs",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Most occupational fraud is found by tips and runs for months before detection; analytics-based detection is in place in fewer than half of organisations in the ACFE study.",
+    "approach": [
+      "Organisations and their advisers monitor transactions continuously and use machine learning to flag anomalies; investigators decide whether a flag is meaningful.",
+      "ACFE data measure monitoring in general, not AI: median loss $70,000 with it versus $150,000 without (independent).",
+      "Median duration was 9 months with monitoring versus 16 without; automated monitoring first detected 3% of cases, tips 43% (independent).",
+      "25% of surveyed organisations use AI or machine learning in anti-fraud programs, up from 18% in 2024 (vendor-published)."
+    ],
+    "who": "ACFE, SAS, CPA Practice Advisor, MDPI journal"
+  },
+  {
+    "id": "advisory-forensic-disputes-04",
+    "title": "Generative-AI first-pass document review in disputes and investigations",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "First-level review of very large document sets is slow and costly, and results vary between human reviewers.",
+    "approach": [
+      "A large language model applies the written review protocol to each document and returns a coding with rationale and citations.",
+      "Redgrave LLP case: aiR got 87.7% recall, 28.6% precision versus 64.4% and 39.2% for managed review (self-reported); researchers dispute comparability.",
+      "Relativity says aiR achieves 90%+ recall (vendor-published); Everlaw reports human-comparable results on four datasets (vendor-published).",
+      "People validate samples against an expert's coding and decisions stay with lawyers; first-level reviewers coded 34% of responsive documents non-responsive (independent)."
+    ],
+    "who": "Relativity, Everlaw, Redgrave LLP, Waterloo, Elevate"
+  },
+  {
+    "id": "advisory-forensic-disputes-05",
+    "title": "Plain-language questions over a live matter document set, with cited answers",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "Early in a matter, teams need quick answers about people, events and key documents without waiting for a full review.",
+    "approach": [
+      "Announced: Relativity's aiR Assist is a question-and-answer assistant running on matter data in the review platform, returning cited answers.",
+      "Practitioners verify answers against the cited source documents.",
+      "A customer quote on the vendor's page says it surfaces critical evidence in minutes (vendor-published)."
+    ],
+    "who": "Relativity"
+  },
+  {
+    "id": "advisory-forensic-disputes-06",
+    "title": "Private-sandbox language model for document review in intellectual property damages disputes",
+    "grade": "B",
+    "ladder": "augment",
+    "problem": "Patent-heavy disputes require reading a patent plus related patents, but time and cost limit how many related documents a team can review.",
+    "approach": [
+      "J.S. Held's intellectual property practice says it is building models in a private sandbox so data is not disclosed to third parties.",
+      "The models are trained on industry data and prior work, then queried for document review, data requests and summaries.",
+      "A managing director reviews every item against original evidence, and analyses are double-checked with traditional methods.",
+      "The practice says AI greatly expands the related patents it can review; no figures published (self-reported)."
+    ],
+    "who": "J.S. Held"
+  },
+  {
+    "id": "advisory-forensic-disputes-07",
+    "title": "Disclosure, verification and audit-trail rules for AI use in expert work",
+    "grade": "B",
+    "ladder": "assist",
+    "problem": "Courts have excluded or discounted expert work when AI output was unverified or unexplainable, and counsel may now ask experts whether AI was used.",
+    "approach": [
+      "Engagement letters add AI terms: written disclosure of tool, version and tasks, independent verification, closed-system tools only, and prompt and output logs.",
+      "J.S. Held's intellectual property practice amended its standard engagement letter to say it will use AI tools unless clients opt out.",
+      "The expert authors every opinion and can explain the method without the tool; counsel confirms AI use and verification before finalising.",
+      "Matter of Weber: re-running an expert's Copilot query gave three different results; Kohls v. Ellison: declaration excluded over non-existent citations (independent)."
+    ],
+    "who": "J.S. Held, Kilpatrick Townsend, US courts"
+  },
+  {
+    "id": "advisory-forensic-disputes-08",
+    "title": "AI red-flag screening of large document and email sets in fraud investigations",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Early-stage fraud work means sifting boxes of documents and thousands of emails for red flags.",
+    "approach": [
+      "AI tools scan documents and emails for indicators; a forensic accountant assesses the candidates and explains results to courts and regulators.",
+      "Practitioners describe this; Diligent announced Smart Prep 360 for board materials, but no firm deployment with outcomes was found.",
+      "A BRG managing director says a review that took a summer by hand would take a few minutes with AI (self-reported).",
+      "Over 63% of surveyed forensic professionals reported better investigative processes from AI and data analytics (independent)."
+    ],
+    "who": "BRG, Diligent"
+  },
+  {
+    "id": "advisory-forensic-disputes-09",
+    "title": "Generative-AI drafting of investigation and expert report outlines, narratives and charts",
+    "grade": "C",
+    "ladder": "augment",
+    "problem": "Drafting reports, exhibits, transcript summaries and client emails takes expert time; Dean Dorton's deck asks how many monthly hours go on tasks AI could do in minutes.",
+    "approach": [
+      "Generative AI produces a first outline or narrative, deposition summaries and draft charts, shown with Copilot in a Dean Dorton training deck.",
+      "The expert edits and owns the output and authors every opinion and conclusion.",
+      "The AICPA FVS 2026 conference has a scheduled session on AI in visualisation design.",
+      "Among the 16% of respondents using generative AI for anti-fraud, 45% use it for report writing (vendor-published)."
+    ],
+    "who": "Dean Dorton, AICPA & CIMA, SAS with ACFE"
+  },
+  {
+    "id": "advisory-forensic-disputes-10",
+    "title": "Preserving and collecting employees' generative-AI chats and prompts as evidence",
+    "grade": "C",
+    "ladder": "assist",
+    "problem": "Employees' prompts and AI outputs may hold evidence, but they sit in tools that legal-hold and collection processes were not built for.",
+    "approach": [
+      "Announced: Relativity says its platform can collect from Claude Enterprise, ChatGPT Enterprise, Gemini, Microsoft 365, Google Workspace, Slack and more.",
+      "It says it can preserve in place, making enterprise AI chat data collectable alongside email and chat.",
+      "Counsel decides the scope of preservation and collection."
+    ],
+    "who": "Relativity, Kilpatrick Townsend"
+  },
+  {
+    "id": "advisory-forensic-disputes-11",
+    "title": "Idea: forensic examination of AI-generated or altered evidence such as deepfakes",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: judges worry about hyperrealistic fake evidence, and fraudsters use AI to forge documents and impersonate people.",
+    "approach": [
+      "Idea only: a forensic team would examine challenged items for provenance, access and alteration; no firm is found offering this.",
+      "Judges are advised to ask the source of a suspect item, who had access, whether it was altered, and for corroboration.",
+      "15 of 931 responding federal judges reported a deepfake challenge; 98% had not (independent).",
+      "77% of anti-fraud respondents report an increase in deepfake social engineering, and 75% in AI document forgery (vendor-published)."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-forensic-disputes-12",
+    "title": "Idea: investigation services for AI-fuelled fraud and AI-washing claims",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: clients expect more AI-enabled fraud and claims overstating a company's AI capabilities ('AI washing'), and few feel prepared.",
+    "approach": [
+      "Idea only: forensic accountants would investigate AI-enabled schemes and test AI claims; no firm reports delivering this.",
+      "Investigators would decide scope, interview and report findings.",
+      "Only 7% of respondents say their organisations are more than moderately prepared for AI-fuelled fraud (vendor-published).",
+      "In March 2024 the SEC settled charges against two investment advisers over misleading statements about AI use; $400,000 total penalties (independent)."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-forensic-disputes-13",
+    "title": "Idea: agentic AI for blockchain and cryptocurrency fund tracing",
+    "grade": "D",
+    "ladder": "augment",
+    "problem": "Idea, not a deployment: following funds through intermediary wallets to exchanges and mixers is manual and requires specialised tooling.",
+    "approach": [
+      "Idea only: a scheduled AICPA FVS session on blockchain tracing says it will discuss agentic AI; no deployment or product is described.",
+      "Attendees are trained to follow on-chain flows themselves."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-forensic-disputes-14",
+    "title": "Idea: AI critique of opposing expert reports and cross-examination preparation",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: experts and counsel must find flaws in opposing analyses and prepare for cross-examination under time pressure.",
+    "approach": [
+      "Idea: a language model summarises an opposing expert's report, lists probing questions or flags inconsistencies; no outcomes published.",
+      "J.S. Held says attorneys use AI during depositions and trials this way; a Dean Dorton deck demonstrates a mock critique with Copilot.",
+      "The expert reviews the output and keeps independent judgment."
+    ],
+    "who": "No named deployment"
+  },
+  {
+    "id": "advisory-forensic-disputes-15",
+    "title": "Idea: error-rate validation studies of machine analyses under proposed Rule 707",
+    "grade": "D",
+    "ladder": "assist",
+    "problem": "Idea, not a deployment: if machine output is offered without an expert, the proponent would have to show it meets Rule 702's reliability tests.",
+    "approach": [
+      "Idea only: experts would design and run validation studies (training data, error rates, independent replication) or test an opponent's tool.",
+      "The draft committee note says a proponent may overcome inexplicability by showing how the machine was trained and a low error rate.",
+      "Rule 707 is a proposal and may change; the court decides admissibility."
+    ],
+    "who": "No named deployment"
+  }
+]
