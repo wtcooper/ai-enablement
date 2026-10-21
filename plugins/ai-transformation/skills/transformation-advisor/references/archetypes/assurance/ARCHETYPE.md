@@ -1,15 +1,14 @@
 # Assurance (archetype)
 
-Last researched 2026-10-17. This is the index for the assurance archetype. Read it once onboarding points to assurance,
-then load only the module and archetype files the conversation needs. Source keys in brackets resolve in
-[sources.md](sources.md).
+Last researched 2026-10-17 (mid-market modules 2026-10-21). The index for the assurance archetype: read it once onboarding
+points to assurance, then load only the files the conversation needs. Source keys in brackets resolve in [sources.md](sources.md).
 
 ## What it covers
 
-External audit and other assurance: audits of financial statements and of internal control over financial reporting
-(ICFR, including SOX 404 integrated audits), SOC and other attestation, sustainability assurance, and assurance over AI
-systems. What the client buys is an independent opinion or conclusion that others rely on. It is given under
-professional standards and independence rules, and an audit regulator or peer reviewer can re-examine it.
+External audit and other assurance: audits of financial statements and of internal control over financial reporting (ICFR, including
+SOX 404 integrated audits); private-company audits, reviews and compilations; benefit plan, nonprofit and single audits; SOC and
+other attestation; sustainability assurance; and assurance over AI systems. The client buys an independent opinion or conclusion that
+others rely on, given under professional standards and independence rules, which an audit regulator or peer reviewer can re-examine.
 
 ## Who it serves
 
@@ -22,11 +21,11 @@ professional standards and independence rules, and an audit regulator or peer re
 
 ## What it extends
 
-It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
-billing and knowledge management all still apply. Assurance changes four things. Auditing standards (ISA, PCAOB,
-AICPA, ISSA 5000) set the steps of the value chain. Independence rules limit which services, vendors and owners are
-allowed. Inspectors or peer reviewers re-examine the work. And the human auditor stays accountable for the opinion
-whatever tools are used [FRC-NEWS-2026; NFRA-CAALLEY-2026; JOFA-AIPA-2026].
+It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery,
+quality review, billing and knowledge management all still apply. Assurance changes four things: auditing standards (ISA, PCAOB, AICPA, ISSA
+5000) set the value chain's steps; independence rules limit which services, vendors and owners are allowed; inspectors or peer reviewers
+re-examine the work; and the human auditor stays accountable for the opinion whatever the tools [FRC-NEWS-2026; NFRA-CAALLEY-2026;
+JOFA-AIPA-2026].
 
 ## Recognition cues
 
@@ -38,6 +37,8 @@ Match on what is delivered, to whom and who regulates it, not on job titles. Cue
 - SOC 1 or SOC 2 reports, Type 2, Section 3, Trust Services Criteria, bridge letters.
 - Limited assurance on ESG or CSRD reports, ISSA 5000, GHG verification.
 - Certifying or attesting AI systems: ISO/IEC 42001, AIUC-1, an ISAE 3000 opinion on AI governance.
+- Mid-market practices: private-company audits, SSARS reviews and compilations, DAS or Guided Assurance; benefit plan
+  audits (ERISA, Form 5500, recordkeeper SOC 1s); nonprofit and single audits (Uniform Guidance, Yellow Book, SEFA).
 - From a CAE: the audit universe, the annual plan, three lines, co-sourcing, reporting to the audit committee.
 
 Not assurance: tax compliance and provision (tax); consulting or advisory work with no opinion (professional-services);
@@ -45,10 +46,10 @@ finance teams that prepare statements or sustainability reports (only the effect
 
 ## Modules
 
-**Evidence** reflects each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under
-30%), plus how much named practice stands behind it; counts are as of the last review. **Use thin modules for risk
-awareness and interview probes, not as proof points.** Quote their examples as ideas or early signals, and say plainly
-that no named firm has published a measured result.
+**Evidence** is each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under 30%),
+as of 2026-10-21. **Use thin modules for risk awareness and interview probes, not as proof points.** Quote their
+examples as ideas or early signals, and say plainly that no named firm has published a measured result. Data and
+evidence acquisition (getting client data into the file) has no module; see [value-chain.md](value-chain.md) §4.
 
 | Module | What it covers | Evidence |
 |---|---|---|
@@ -58,13 +59,13 @@ that no named firm has published a measured result.
 | [substantive-testing](modules/substantive-testing.md) | Journal-entry and fraud testing, evidence matching, confirmations, analytics, contracts, estimates | strong (13 of 25 A/B) |
 | [specialists](modules/specialists.md) | Using experts (valuation, actuarial, tax, forensic) and treating a client's AI as a specialist-like input; A/B entries are advisory, not audit | thin (3 of 14 A/B) |
 | [completion-reporting](modules/completion-reporting.md) | Disclosure checklists, tie-out, going concern, EQR, KAMs and CAMs, audit committee communications, the opinion | thin (3 of 18 A/B) |
-| [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output; no measured outcome | moderate (10 of 25 A/B) |
-| [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns | strong (9 of 16 A/B) |
+| [quality-management](modules/quality-management.md) | Firm-level AI tool governance (certify, monitor, recertify) and engagement-level supervision and review of AI output, including SQMS No. 1 and peer review at mid-size firms; no measured outcome | moderate (10 of 28 A/B) |
+| [soc-attestation](modules/soc-attestation.md) | SOC 1, 2 and 3 and ISAE 3402 or 3000 end to end, compliance platforms, SOC 2 quality concerns, the joint SOC 2 plus AIUC-1 offering | strong (11 of 18 A/B) |
 | [sustainability-assurance](modules/sustainability-assurance.md) | ISSA 5000, CSRD limited assurance, GHG engagements; almost no AI evidence from assurance providers | thin (0 of 13 A/B) |
-| [assurance-over-ai](modules/assurance-over-ai.md) | Auditing an entity's AI used in ICFR, and standalone assurance over AI systems; named certifications, no measured outcome | thin (6 of 24 A/B) |
-
-Data and evidence acquisition (getting client data into the file) has no module; it sits in
-[value-chain.md](value-chain.md) §4.
+| [assurance-over-ai](modules/assurance-over-ai.md) | Auditing an entity's AI used in ICFR, and standalone assurance over AI systems; named certifications, no measured outcome | thin (7 of 27 A/B) |
+| [private-company](modules/private-company.md) | Private middle-market audits and SSARS preparation, compilation and review at local, regional, top-100 and PE-backed firms; platform choice, client data and peer review are the constraints; no measured outcome | moderate (9 of 20 A/B) |
+| [benefit-plans](modules/benefit-plans.md) | ERISA plan audits filed with Form 5500: participant testing, trust reconciliation, plan documents, recordkeeper SOC 1s; vendor-carried, much of it rules-based | moderate (7 of 15 A/B) |
+| [nonprofit-government](modules/nonprofit-government.md) | Nonprofit and government audits, single audits and other Yellow Book work, plus Form 990 and 990-T; no measured outcome | strong (10 of 16 A/B) |
 
 ## Journey-stage markers (assurance)
 
