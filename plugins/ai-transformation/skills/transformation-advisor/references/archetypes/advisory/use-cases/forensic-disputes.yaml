@@ -71,7 +71,7 @@
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Kniepmann interview section (page undated; date inferred, see notes)" }
     - { ref: VALID8-SITE-2026, title: "Verified Financial Intelligence and Forensic Accounting Software (home page)", publisher: "Valid8 Financial", type: vendor, url: "https://www.valid8financial.com/", date: "2026-10-08", access: full, locator: "feature section" }
     - { ref: VALID8-HUB-2026, title: "Valid8 Financial profile page (customer and testimonial claims)", publisher: "NYSSCPA Resource Hub (vendor content)", type: vendor, url: "https://hub.nysscpa.org/company/valid8-financial", date: "2026-10-20", access: full, locator: "profile text (page undated; date is the access date)" }
-    - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
+    - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
   last_reviewed: "2026-10-21"
   notes: >-
     Firm types: forensic and consulting firm that is not a CPA firm (J.S. Held, which states it provides no attest
@@ -408,7 +408,7 @@
   evidence_grade: B
   sources:
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "section quoting James Malackowski on the IP practice" }
-    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2638)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-06", access: full, locator: "FVC2638 (scheduled, not yet given)" }
+    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2638, Fri Nov 6 (scheduled, not yet given)" }
   last_reviewed: "2026-10-21"
   notes: >-
     Firm type: forensic and consulting firm, not a CPA firm. Stated as "developing models", so maturity is piloting;
@@ -481,8 +481,8 @@
     - { ref: AICPA-COPILOT-2025, title: "Expert witness used Copilot to cross-check calculations, irking judge", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/expert-witness-used-copilot-to-cross-check-calculations-irking-judge", date: "2025-04-16", access: full, locator: "paragraphs 1-5" }
     - { ref: BVR-AICPAAIGUIDE-2025, title: "AICPA issues AI usage guidelines for valuation and forensic work", publisher: "BVWire (Business Valuation Resources)", type: press, url: "https://www.bvresources.com/articles/bvwire/aicpa-issues-ai-usage-guidelines-for-valuation-and-forensic-work", date: "2025-10-15", access: full, locator: "first two paragraphs (the guidelines themselves are members-only)" }
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "IP practice section (engagement letter); footer (no attest services)" }
-    - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
-    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2617, FVC2627, FVC2638 (scheduled, not yet given)" }
+    - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
+    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2617, FVC2627, FVC2638 (scheduled for Nov 5 and 6, not yet given)" }
   last_reviewed: "2026-10-21"
   notes: >-
     Pattern: other. This is a verification and disclosure layer around expert work, not a standard agentic pattern.
@@ -598,7 +598,7 @@
   sources:
     - { ref: ACFE-TECHBENCH-2026, title: "Study: Deepfake fraud surges - and only 7% of organizations are firmly ready (2026 Anti-Fraud Technology Benchmarking Report press release)", publisher: "SAS with ACFE", type: survey, url: "https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html", date: "2026-03-25", access: full, locator: "bullet beginning 'GenAI is moving from aspiration to application'" }
     - { ref: DEANDORTON-AIEXPERT-2025, title: "AI in the Expert Witness Toolbox: Enhancing Forensic Accounting & Valuation Testimony (training deck by Josh Shilts)", publisher: "Dean Dorton", type: firm, url: "https://deandorton.com/wp-content/uploads/2025/09/AI-Expert-Witness-Toolbox-Dean-Dorton.pdf", date: "2025-09-05", access: full, locator: "slides 4-7 (practical applications; demo scenarios; risks)" }
-    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2604)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-04", access: full, locator: "FVC2604, Wed Nov 4, 2:10-3:00 pm (scheduled)" }
+    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2604, Wed Nov 4, 2:10-3:00 pm (scheduled)" }
     - { ref: KTS-EXPERTAI-2026, title: "Expert Engagement Agreements in the Age of Generative AI: Best Practices for Governing Expert Use of AI Tools", publisher: "Kilpatrick Townsend", type: firm, url: "https://ktslaw.com/insights/alert/2026/8/expert-engagement-agreements-in-the-age-of-generative-ai", date: "2026-08-31", access: full, locator: "case summaries" }
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Crowe MacKay interview section" }
   last_reviewed: "2026-10-21"
@@ -782,7 +782,7 @@
     - { ref: ACFE-APAC-2026, title: "2026 ACFE Fraud Conference Asia-Pacific sessions", publisher: "ACFE", type: conference, url: "https://www.fraudconference.com/asiapac2026/sessions.aspx", date: "2026-08-18", access: full, locator: "session 2B, 'How to Uncover Artificial Intelligence Washing' (title only)" }
     - { ref: ACFE-CANADA-2026, title: "2026 ACFE Fraud Conference Canada sessions", publisher: "ACFE", type: conference, url: "https://www.fraudconference.com/canada2026/sessions.aspx", date: "2026-11-15", access: full, locator: "pre-conference on ethical AI use in fraud work; session 4C (scheduled)" }
     - { ref: ACFE-CANPR-2026, title: "2026 ACFE Fraud Conference Canada Focuses on AI, Cybercrime, Emerging Risks and More", publisher: "ACFE", type: professional-body, url: "https://www.acfe.com/about-the-acfe/newsroom-for-media/press-releases/press-release-detail?s=2026-acfe-fraud-conference-canada-pr", date: "2026-10-01", access: full, locator: "list of presentations" }
-    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2621)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2621, Thu Nov 5, 1:05-1:55 pm (scheduled)" }
+    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2621, Thu Nov 5, 1:05-1:55 pm (scheduled)" }
   last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Pattern: other (a new investigation service line, not an agentic pattern; the research file
@@ -826,7 +826,7 @@
     Not stated.
   evidence_grade: D
   sources:
-    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2618)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2618, Thu Nov 5, 11:15 am-12:05 pm (scheduled)" }
+    - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2618, Thu Nov 5, 11:15 am-12:05 pm (scheduled)" }
   last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such, and the thinnest entry here. The source is a session abstract for a talk not yet given.
@@ -869,7 +869,7 @@
   evidence_grade: D
   sources:
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "paragraph on AI in depositions; conclusion" }
-    - { ref: DEANDORTON-AIEXPERT-2025, title: "AI in the Expert Witness Toolbox: Enhancing Forensic Accounting & Valuation Testimony (training deck by Josh Shilts)", publisher: "Dean Dorton", type: firm, url: "https://deandorton.com/wp-content/uploads/2025/09/AI-Expert-Witness-Toolbox-Dean-Dorton.pdf", date: "2025-09", access: full, locator: "slide 6, demo scenario 4" }
+    - { ref: DEANDORTON-AIEXPERT-2025, title: "AI in the Expert Witness Toolbox: Enhancing Forensic Accounting & Valuation Testimony (training deck by Josh Shilts)", publisher: "Dean Dorton", type: firm, url: "https://deandorton.com/wp-content/uploads/2025/09/AI-Expert-Witness-Toolbox-Dean-Dorton.pdf", date: "2025-09-05", access: full, locator: "slide 6, demo scenario 4" }
     - { ref: KTS-EXPERTAI-2026, title: "Expert Engagement Agreements in the Age of Generative AI: Best Practices for Governing Expert Use of AI Tools", publisher: "Kilpatrick Townsend", type: firm, url: "https://ktslaw.com/insights/alert/2026/8/expert-engagement-agreements-in-the-age-of-generative-ai", date: "2026-08-31", access: full, locator: "confidentiality provisions" }
   last_reviewed: "2026-10-21"
   notes: >-

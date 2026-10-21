@@ -74,10 +74,10 @@
       access: full
       locator: "opening paragraphs (alliance; access for 276,000+ employees)"
     - ref: SEC-RULE2-01-2026
-      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      title: "17 CFR 210.2-01 Qualifications of accountants"
       publisher: "SEC (Regulation S-X)"
       type: regulator
-      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"
@@ -605,7 +605,7 @@
     - "Customer-success onboarding, named in each case study (VALUTICO-RXM-2025; VALUTICO-PKFFI-2025)"
     - "Financial data entered or integrated into the platform"
   risks_and_guardrails:
-    - "Template defaults and disclosure depth are quality-control risks in report writing; the AICPA FVS 2026 report-writing workshop lists 'template defaults' among its exercises (AICPA-FVS-2026)"
+    - "Template defaults and disclosure depth are quality-control risks in report writing; the AICPA FVS 2026 report-writing workshop lists 'template defaults' among its exercises (AICPA-FVSHOME-2026)"
     - "If generative AI is added, the IVSC exposure draft would require disclosure of significant use in the scope of work and the report (IVSC-IVSED-2026)"
   human_checkpoints:
     - "Valuer reviews the generated report before issue"
@@ -636,8 +636,8 @@
       date: "2026-06-22"
       access: full
       locator: "customer-story headlines; 'Trusted by 850+' claim (vendor claim, unverified)"
-    - ref: AICPA-FVS-2026
-      title: "AICPA Forensic & Valuation Services Conference 2026 (home, agenda and pre-conference workshop pages; Nov 4-6, 2026)"
+    - ref: AICPA-FVSHOME-2026
+      title: "AICPA Forensic & Valuation Services Conference 2026 (home and pre-conference workshop pages; Nov 4-6, 2026)"
       publisher: "AICPA & CIMA"
       type: conference
       url: "https://events.aicpa-cima.com/fvs/Home"
@@ -1003,10 +1003,10 @@
       access: full
       locator: "paragraph 2"
     - ref: SEC-RULE2-01-2026
-      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      title: "17 CFR 210.2-01 Qualifications of accountants"
       publisher: "SEC (Regulation S-X)"
       type: regulator
-      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"
@@ -1198,10 +1198,10 @@
       access: full
       locator: "paragraph 2 (data quality)"
     - ref: SEC-RULE2-01-2026
-      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      title: "17 CFR 210.2-01 Qualifications of accountants"
       publisher: "SEC (Regulation S-X)"
       type: regulator
-      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"
@@ -1293,10 +1293,10 @@
       access: full
       locator: "paragraph 4 (deterministic core engine, human judgement)"
     - ref: SEC-RULE2-01-2026
-      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      title: "17 CFR 210.2-01 Qualifications of accountants"
       publisher: "SEC (Regulation S-X)"
       type: regulator
-      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"

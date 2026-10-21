@@ -444,7 +444,7 @@
   outcomes:
     - {lever: risk, description: "none published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: STI-AIAUDITS-2026}
   prerequisites:
-    - "Company data by state: sales, registrations, marketplace and processor totals (the signals SALESTAX-AIAUDIT-2026 says states score; payroll data is the research team's addition, not in the source)"
+    - "Company data by state: sales, registrations, marketplace and processor totals (the signals SALESTAX-AIAUDIT-2026 says states score)"
   risks_and_guardrails:
     - "Inferred, not stated in a source: a scan that finds exposure can affect the disclosure choice if it leads to contact with a state, and eligibility rules vary by state. The consultancy says only that the disclosure window closes once a state opens an audit (SALESTAX-AIAUDIT-2026)"
   human_checkpoints:
@@ -487,7 +487,7 @@
   prerequisites:
     - "Not stated"
   risks_and_guardrails:
-    - "The announcement is dated 23 Sep 2026 (the page's publication date); session content was not seen"
+    - "The page's date, 23 Sep 2026 (10:10-11:05 am CT), is the session date, not a publication date; session content was not seen, so the method is described, not shown"
   human_checkpoints:
     - "Human judgment is one of the three named elements (AKERMAN-COST-2026)"
   role_evolution: >-
@@ -500,7 +500,7 @@
   notes: >-
     Idea. A talk abstract can support only an idea grade. A search result gave COST's meeting as 22-25 Sep 2026 in San
     Antonio; the Akerman page names the Hyatt Regency San Antonio Riverwalk and gives the session as 23 Sep 2026.
-    Example type: a law firm (Akerman LLP) announcing a conference talk. Taxpayer-side dispute work in general: tax-
+    Example type: a law firm (Akerman LLP) announcing a conference talk. Taxpayer-side dispute work in general: the
     controversy module.
 
 - id: tax-multistate-private-11
@@ -515,13 +515,14 @@
   runtime_class: shared-team-skills
   maturity: emerging
   problem: >-
-    Companies with unregistered states need to decide between voluntary disclosure (lookback relief, usually requires no
-    prior contact), amnesty (limited-time) or waiting.
+    Companies with unregistered states need to decide between voluntary disclosure (reduced penalties and, a
+    consultancy says, often a two-to-four-year lookback, available only before a state opens an audit), amnesty
+    (limited-time) or waiting (SALESTAX-AIAUDIT-2026).
   solution: >-
     A sales-tax consultancy argues that disclosing before a state's AI flags the business is cheaper than an audit after
     it, and says at least four states offer amnesty or disclosure programs in 2026 (SALESTAX-AIAUDIT-2026). The service
     is human; the AI link is the argument that detection is getting cheaper. The MTC's Multistate Voluntary Disclosure
-    Program results give a baseline for demand. No source describes AI used inside the disclosure work.
+    Program results give a baseline for demand (MTC-NEXUSDIR-2026). No source describes AI used inside the disclosure work.
   outcomes:
     - {lever: growth, description: "MTC Multistate Voluntary Disclosure Program, fiscal year 2026 (1 Jul 2025 to 30 Jun 2026)", figure: "464 executed agreements; $28,308,873 collected; average $61,010 per agreement", measures: "agreements executed by participating states, amounts paid by taxpayers directly to states and reported to the Commission, and average contract value; fiscal year 2025 was 498 agreements and $29,083,242", provenance: independent, source_ref: MTC-NEXUSDIR-2026}
     - {lever: growth, description: "Applications to the program", figure: "190 taxpayers in calendar 2025; 95 as of 30 Jun 2026", measures: "taxpayers that submitted applications to the Commission, most based on sales tax economic nexus", provenance: independent, source_ref: MTC-NEXUSDIR-2026}
@@ -533,8 +534,9 @@
   human_checkpoints:
     - "Professional-led negotiation; no AI step is described"
   role_evolution: >-
-    Staffing at the MTC audit programme saw an unusually high number of changes in FY2026, with retirements in both the
-    income tax and sales tax teams (MTC-AUDITDIR-2026).
+    Not described for disclosure work. Separately, the MTC's Joint Audit Program reported an unusually high number of
+    staffing changes in FY2026, including retirements on both its income tax and sales tax teams; the report links them
+    neither to AI nor to disclosure demand (MTC-AUDITDIR-2026).
   evidence_grade: C
   sources:
     - {ref: SALESTAX-AIAUDIT-2026, title: "Are You Using AI to Find Businesses That Aren't Paying Sales Tax? Here's What That Means for You", publisher: "The Sales Tax People", type: firm, url: "https://sales.tax/sales-tax-updates/states-ai-sales-tax-audits-enforcement-2026/", date: "2026-05-18", access: full, locator: "section on voluntary disclosure"}
@@ -614,9 +616,9 @@
     Moss Adams says these companies can trigger sales and use, income, franchise and gross receipts tax obligations and
     payroll issues from remote employees (MOSSADAMS-AISALT-2025).
   solution: >-
-    Moss Adams (now part of Baker Tilly) published SALT guidance for AI companies in April 2025 and held a webcast in
-    August 2025 on state and local tax challenges for AI companies across jurisdictions (MOSSADAMS-AISALT-2025;
-    MOSSADAMS-AIWEBCAST-2025). Checkpoint's SALT Q&A says Maryland, Texas and Washington extended sales taxes to various
+    Moss Adams (now part of Baker Tilly) published SALT guidance for AI companies in April 2025, and a webinar on 14 Aug
+    2025 covered revenue sourcing, nexus rules, the tax treatment of software and services, and data-centre incentives
+    for AI companies operating across jurisdictions (MOSSADAMS-AISALT-2025; MOSSADAMS-AIWEBCAST-2025). Checkpoint's SALT Q&A says Maryland, Texas and Washington extended sales taxes to various
     automated services and that states will struggle to classify generative and agentic AI (TRFORD-SALT-2026). Eide Bailly's
     April 2026 roundup frames AI as a tax policy issue (EIDE-SALT-2026). This is demand created by AI, not AI used in the
     tax work.
@@ -633,12 +635,12 @@
   evidence_grade: C
   sources:
     - {ref: MOSSADAMS-AISALT-2025, title: "Boost compliance and help reduce exposure by understanding AI SALT impacts", publisher: "Moss Adams", type: firm, url: "https://www.mossadams.com/articles/2025/04/ai-state-and-local-tax-considerations", date: "2025-04-11", access: full, locator: "opening paragraphs and nexus section"}
-    - {ref: MOSSADAMS-AIWEBCAST-2025, title: "State and Local Tax Implications for AI Companies (webcast)", publisher: "Moss Adams", type: firm, url: "https://www.mossadams.com/events/2025/08/navigating-state-and-local-tax-for-ai-companies", date: "2025-08", access: full, locator: "event description"}
+    - {ref: MOSSADAMS-AIWEBCAST-2025, title: "Navigating state and local tax for AI companies (webinar)", publisher: "Baker Tilly (formerly Moss Adams)", type: firm, url: "https://www.bakertilly.com/insights/navigating-state-and-local-tax-for-ai-companies", date: "2025-08-14", access: full, locator: "event description and topic list (the Moss Adams URL redirects here)"}
     - {ref: TRFORD-SALT-2026, title: "Multistate Tax Trends: A Q&A with SALT Expert Niki Ford on Nexus, Marketplaces, AI, and the Future", publisher: "Thomson Reuters Tax & Accounting (Checkpoint News)", type: vendor, url: "https://tax.thomsonreuters.com/news/multistate-tax-trends-a-qa-with-salt-expert-niki-ford-on-nexus-marketplaces-ai-and-the-future/", date: "2026-04-09", access: full, locator: "answer on AI and state taxes"}
     - {ref: EIDE-SALT-2026, title: "State & Local Tax Meets AI: How Technology Is Reshaping Taxability, Nexus, and State Enforcement", publisher: "Eide Bailly", type: firm, url: "https://www.eidebailly.com/insights/blogs/2026/4/salt20260430", date: "2026-04-30", access: full, locator: "key takeaways (the body is mainly a weekly state tax roundup)"}
   last_reviewed: "2026-10-21"
   notes: >-
-    The webcast date is given as 2025-08 from the URL path; the page text read does not show the day. Taxability of AI
+    The webinar page (the old Moss Adams URL redirects to Baker Tilly) gives the date as 14 Aug 2025. Taxability of AI
     products themselves belongs to indirect-tax.
     Pattern: other (a new client segment created by AI; no AI step in the work). Example types: accounting firms (Moss
     Adams, now part of Baker Tilly; Eide Bailly) and a vendor (Thomson Reuters). Graded C, not B: the firm pages are
@@ -657,7 +659,8 @@
   maturity: in-production
   problem: >-
     Owners hear that a PTET election (a state tax paid at the entity level instead of by the owners) "saves tax" and
-    want to know whether it is worth it for their business; generic calculators handle W-2 cases only (GELT-CALC-2025).
+    want to know whether it is worth it for their business; Gelt says most online calculators are built for simple W-2
+    scenarios (GELT-CALC-2025).
     State treatment differs: in a model answer on the Vals benchmark, New York's PTET credit is refundable and
     California's is not, for tax year 2025 (VALS-TAXAGENT-2026).
   solution: >-
@@ -673,7 +676,7 @@
   risks_and_guardrails:
     - "OPR Alert 2026-19 lists Circular 230 section 10.37 (written advice must rest on reasonable factual and legal assumptions and reasonable consideration of all relevant facts) among the duties that apply (IRS-OPR-2026); OPR covers federal practice (KTS-OPR-2026)"
     - "Estimated savings in the sources are vendor or illustrative figures (GELT-CALC-2025; FILED-HOME-2026)"
-    - "State-by-state answers are where models do worst; see tax-research-advisory-04 and tax-multistate-private-07 (VALS-TAXAGENT-2026)"
+    - "On the one public state question in the Vals benchmark (New York versus California PTET credits), twelve of eighteen models scored 0 (VALS-TAXAGENT-2026); one question cannot show that state answers are where models do worst. See tax-research-advisory-04 and tax-multistate-private-07"
   human_checkpoints:
     - "Adviser confirms facts, each state's treatment and the assumptions behind any savings figure before it reaches the owner"
   role_evolution: >-
@@ -687,9 +690,9 @@
     - {ref: KTS-OPR-2026, title: "Using AI in Tax Practice: What Practitioners Need to Know Before Filing Season", publisher: "Kilpatrick Townsend & Stockton", type: firm, url: "https://ktslaw.com/blog/kilpatricks-state-and-local-tax-blog/2026/9/using-ai-in-tax-practice-what-practitioners-need-to-know-before-filing-season", date: "2026-09-29", access: full, locator: "paragraphs on the OPR alert's scope"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Routed from the tax widen pass (mm-widen-tax.md section 4), where the combined S-election and PTET calculator entry
-    sits in research-advisory under the provisional id tax-research-advisory-new-01; its final id is set by that
-    module's synthesis. This entry keeps only the state PTET angle. Example types: an AI-native tax firm (Gelt) and a
+    Routed from the tax widen pass (mm-widen-tax.md section 4). The owner-facing S-election and PTET calculator entry
+    now sits in research-advisory as tax-research-advisory-26 (the provisional id tax-research-advisory-new-01 no longer
+    applies; checked 2026-10-21 while that module was being widened). This entry keeps only the state PTET angle. Example types: an AI-native tax firm (Gelt) and a
     vendor (Filed); no top-100, regional or PE-backed firm was found modelling PTET elections with AI. Maturity follows
     the widen pass (the calculators are live); the grade is C because no client outcome is published. Composite and
     nonresident withholding returns for owners sit in compliance-individual-business.

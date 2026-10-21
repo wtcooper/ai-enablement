@@ -206,7 +206,7 @@
     access: full
     locator: Paragraphs on advisory bandwidth, integration, client trust and hiring
   - ref: KARBON-ENGAGE-2026
-    title: AICPA & CIMA ENGAGE 2026 (curated session list, held June 8-11, 2026)
+    title: "23 must-see sessions at AICPA & CIMA ENGAGE 2026"
     publisher: Karbon Magazine
     type: conference
     url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
@@ -735,7 +735,7 @@
     access: full
     locator: Paragraph on Xero's Claude integration (launched 12 May)
   - ref: KARBON-ENGAGE-2026
-    title: AICPA & CIMA ENGAGE 2026 (curated session list, held June 8-11, 2026)
+    title: "23 must-see sessions at AICPA & CIMA ENGAGE 2026"
     publisher: Karbon Magazine
     type: conference
     url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
@@ -1214,11 +1214,11 @@
     access: full
     locator: Paragraph 'Report Card Shows Progress and Value Gaps'
   - ref: SEC-RULE2-01-2026
-    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    title: "17 CFR 210.2-01 Qualifications of accountants"
     publisher: U.S. Securities and Exchange Commission (via eCFR)
     type: regulator
     url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
-    date: '2026-10-01'
+    date: "2026-10-20"
     access: full
     locator: (c)(4)(ii) and (c)(4)(vi)
   last_reviewed: '2026-10-21'
@@ -1500,11 +1500,11 @@
     locator: FP&A 'Observations' paragraph; provider profiles for EY, PwC, Deloitte, EXL and Sutherland; Executive
       Summary on portfolio boundaries; Outlook
   - ref: SEC-RULE2-01-2026
-    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    title: "17 CFR 210.2-01 Qualifications of accountants"
     publisher: U.S. Securities and Exchange Commission (via eCFR)
     type: regulator
     url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
-    date: '2026-10-01'
+    date: "2026-10-20"
     access: full
     locator: (c)(4)(vi) and (c)(5)
   - ref: NYSSCPA-CONTFEE-2015
@@ -1572,10 +1572,10 @@
     locator: The five controls (agent inventory, replayable evidence, sign-off gates, third-party assurance, monitoring
       and exit)
   - ref: COSO-GENAI-2026
-    title: Achieving Effective Internal Control Over Generative AI (COSO publication and press release page)
+    title: "Achieving Effective Internal Control Over Generative AI (GenAI)"
     publisher: COSO
     type: standard-setter
-    url: https://www.coso.org/generative-ai
+    url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf"
     date: '2026-02-23'
     access: full
     locator: Press release paragraphs 1-2
@@ -1621,11 +1621,11 @@
     access: full
     locator: Paragraph on assurance readiness (29% track where AI fails)
   - ref: SEC-RULE2-01-2026
-    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    title: "17 CFR 210.2-01 Qualifications of accountants"
     publisher: U.S. Securities and Exchange Commission (via eCFR)
     type: regulator
     url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
-    date: '2026-10-01'
+    date: "2026-10-20"
     access: full
     locator: (c)(4)(vi) management functions
   last_reviewed: '2026-10-21'

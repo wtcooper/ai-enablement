@@ -111,7 +111,7 @@
     title: 17 CFR 210.2-01 Qualifications of accountants
     publisher: US SEC via eCFR
     type: regulator
-    url: https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01
+    url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
     date: '2026-10-20'
     access: full
     locator: (c)(4)(i) bookkeeping; (c)(4)(viii) investment adviser services; current text as fetched (date is the access
@@ -126,7 +126,7 @@
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
   - ref: IESBA-TECHREV-2023
-    title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
+    title: "Final Pronouncement: Technology-related Revisions to the Code (updated May 30, 2023)"
     publisher: IESBA
     type: standard-setter
     url: https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code
@@ -469,7 +469,7 @@
       1333-1373'
     publisher: Stanford GSB listing of the Journal of Accounting Research paper
     type: academic
-    url: https://www.gsb.stanford.edu/index%2ephp/node/629989
+    url: "https://www.gsb.stanford.edu/index.php/node/629989"
     date: 2026-06
     access: full
     locator: Abstract
@@ -477,7 +477,7 @@
     title: 17 CFR 210.2-01 Qualifications of accountants
     publisher: US SEC via eCFR
     type: regulator
-    url: https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01
+    url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
     date: '2026-10-20'
     access: full
     locator: (c)(4)(i) bookkeeping; (c)(4)(viii) investment adviser services; current text as fetched (date is the access
@@ -492,7 +492,7 @@
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
   - ref: IESBA-TECHREV-2023
-    title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
+    title: "Final Pronouncement: Technology-related Revisions to the Code (updated May 30, 2023)"
     publisher: IESBA
     type: standard-setter
     url: https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code
@@ -823,7 +823,7 @@
     title: 17 CFR 210.2-01 Qualifications of accountants
     publisher: US SEC via eCFR
     type: regulator
-    url: https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01
+    url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
     date: '2026-10-20'
     access: full
     locator: (c)(4)(i) bookkeeping; (c)(4)(viii) investment adviser services; current text as fetched (date is the access
@@ -1355,7 +1355,7 @@
     title: 17 CFR 210.2-01 Qualifications of accountants
     publisher: US SEC via eCFR
     type: regulator
-    url: https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01
+    url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01"
     date: '2026-10-20'
     access: full
     locator: (c)(4)(i) bookkeeping; (c)(4)(viii) investment adviser services; current text as fetched (date is the access
@@ -1370,7 +1370,7 @@
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
   - ref: IESBA-TECHREV-2023
-    title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
+    title: "Final Pronouncement: Technology-related Revisions to the Code (updated May 30, 2023)"
     publisher: IESBA
     type: standard-setter
     url: https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code

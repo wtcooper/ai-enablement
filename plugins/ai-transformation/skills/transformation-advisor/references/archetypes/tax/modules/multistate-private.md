@@ -45,7 +45,7 @@ find and select taxpayers, because that sets the pace for every engagement. Sale
 | Apportionment and sourcing | Compute sales, payroll and property factors from ledgers; decide sourcing; consider alternative apportionment | data-reporting, expert-judgment | Factors often computed separately by entity, creating reconciliation work and error risk [ALTERYX-APPORT-2026]; rules in flux [MTC-ANNUAL-2026] |
 | PTET election | Model whether an entity-level state tax election helps the owners, state by state | expert-judgment, data-reporting | State treatment differs (New York's credit refundable, California's not, for 2025, per a Vals model answer) [VALS-TAXAGENT-2026] |
 | State returns | Corporate, PTET, composite (one return filed for many nonresident owners) and nonresident withholding returns | transaction-processing, document-production | Covered in the compliance modules (`tax-compliance-corporate-06`) |
-| Exposure review and voluntary disclosure | Quantify unfiled exposure by state, tax and period; choose voluntary disclosure, amnesty or waiting | expert-judgment, document-production, client-interaction | Eligibility usually needs no prior state contact, per a consultancy (not verified against state rules) [SALESTAX-AIAUDIT-2026] |
+| Exposure review and voluntary disclosure | Quantify unfiled exposure by state, tax and period; choose voluntary disclosure, amnesty or waiting | expert-judgment, document-production, client-interaction | The disclosure window closes once a state opens an audit, per a consultancy (not verified against state rules) [SALESTAX-AIAUDIT-2026] |
 | State audits and notices | Answer agency selection, data-matching letters and assessments | review-assurance, document-production | Selection criteria not public; few tools to challenge selection [TAXNOTES-UNWATCHED-2026; NTT-BIAS-2026] |
 | Law-change tracking | Follow bills, rulings and cases across states; write updates | research-synthesis | One quarter's MTC update lists amnesties, nexus changes, new taxes and court decisions across a dozen states [MTC-NEXUSUPD-2026] |
 
@@ -138,8 +138,8 @@ sales tax registration agents (`tax-indirect-tax-13`) and agent-prepared busines
 | MTC Joint Audit Program, FY2026 | Proposed net assessments $80,563,369 (income tax) and $3,179,204 (sales tax); 13 income tax and 22 sales tax audits in progress | independent | [MTC-AUDITDIR-2026] |
 | New York audits, 2022 | 771,000 audits (up 56% on 2021); auditors down 5% to under 200; AI share not stated | self-reported via press (2024) | [YAHOO-NYAI-2024] |
 | South Carolina return volume | 5 to 6 million returns (deputy director) | self-reported via press | [SCPOST-AUDIT-2026] |
-| Vals Tax Agent Bench, one public SALT question (New York versus California PTET credit) | Leader 91%; three models 76.5%; one passed all checks (2026-10-20 read; `tax-research-advisory-04` reports an earlier reading) | independent (commercial evaluator) | [VALS-TAXAGENT-2026] |
-| Vals Tax Agent Bench headline (adjacent, mostly federal corporate) | Best model 49.19% on 193 private questions; no SALT-only score | independent (commercial evaluator) | [VALS-TAXAGENT-2026] |
+| Vals Tax Agent Bench, one public SALT question (New York versus California PTET credit), 18 models | One model passed all 18 checks; leader 91%; one 79.4%; three 76.5%; twelve scored 0 (eleven failed the same must-pass check on New York credits from several entities). Same result as `tax-research-advisory-04` reports; illustrative, outside the leaderboard | independent (commercial evaluator) | [VALS-TAXAGENT-2026] (page of 2026-10-20) |
+| Vals Tax Agent Bench headline (adjacent, mostly federal corporate) | Best model 49.19% of 193 private questions answered fully correctly (citation-adjusted); no SALT-only score | independent (commercial evaluator) | [VALS-TAXAGENT-2026] |
 | Manual registration baseline | 15 to 30 minutes per state filing; no sample or method | vendor-published | [SKYVERN-REG-2026] |
 | PTET saving (illustrative) | $22,222 per year for an illustrative Maryland client in a sample report | vendor-published | [FILED-HOME-2026] |
 
@@ -155,8 +155,9 @@ year and time to assemble support, and verification findings on AI-assisted stat
 - IRS OPR Alert 2026-19 (released 24 Jun 2026) applies existing Circular 230 duties to AI [IRS-OPR-2026]. A law firm
   applies it to a state nexus study: AI output is a draft, the practitioner verifies thresholds, rates and dates, uses
   only firm-approved systems for client data, and remembers §§6713 and 7216 and §10.36 firm procedures
-  [KTS-OPR-2026]. The alert is federal; **no state board of accountancy or state revenue department guidance on
-  AI-assisted state tax work was found**. Archetype-level rules are in [guardrails.md](../guardrails.md).
+  [KTS-OPR-2026]. The alert is federal; it notes general AI governance laws in California, Colorado, Illinois and
+  Utah, which are not tax-practice rules [IRS-OPR-2026]. **No state board of accountancy or state revenue department
+  guidance on AI-assisted state tax work was found**. Archetype-level rules are in [guardrails.md](../guardrails.md).
 - OPR lists §10.37 (written advice must rest on reasonable factual and legal assumptions and all relevant facts)
   among the duties that apply [IRS-OPR-2026]; `#14` applies it to PTET estimates.
 
@@ -166,14 +167,16 @@ year and time to assemble support, and verification findings on AI-assisted stat
 - Whether a system "is AI" is contested (New York's CISS), which decides which oversight laws apply; California's AB
   302 inventory reported zero high-risk systems [NTT-BIAS-2026; TAXNOTES-UNWATCHED-2026]. New York's Comptroller found
   no statewide AI inventory in April 2025, in four non-tax agencies [NYOSC-AIAUDIT-2025].
-- Experts in the South Carolina story stress human oversight at every step and warn of opaque algorithms and
-  unintended discriminatory results [SCPOST-AUDIT-2026; KOGOD-SC-2026].
+- Caroline Bruckner (Kogod Tax Policy Center), quoted in the South Carolina story, stresses human oversight at every
+  step and warns of unintended discriminatory outcomes [SCPOST-AUDIT-2026]; Kogod's summary adds that experts warn of
+  opaque algorithms [KOGOD-SC-2026].
 - California CDTFA: written-advice protections do not extend to verbal advice, so a taxpayer relying on an agent's
   AI-assisted oral answer may not be protected [CDTFA-2025].
 
 **Disclosure and registration**
-- Voluntary disclosure normally needs no prior contact; a company that registers or is contacted first can lose
-  eligibility. This is a consultancy's statement, not verified against state programme rules [SALESTAX-AIAUDIT-2026].
+- A consultancy says the voluntary disclosure window closes once a state opens an audit, and that disclosure usually
+  brings reduced penalties and a two-to-four-year lookback; this was not verified against state programme rules
+  [SALESTAX-AIAUDIT-2026].
 - A scan that finds exposure (`#09`) can affect that choice; keep disclosure decisions with a professional.
 
 **Steps that need human judgment:** every nexus conclusion and its effective dates; whether and when to register,
@@ -190,11 +193,12 @@ system suggests, auditors conduct) [SCPOST-AUDIT-2026].
 - **Owners and small businesses:** Gusto positions registration work as moving from the owner or a lawyer to the
   platform [GUSTO-MOSEY-2026]; Gelt describes owners moving from their own estimate to expert execution with the firm
   [GELT-CALC-2025].
-- **SALT specialists outside firms:** AI developers recruit SALT experts with five or more years' experience (Big 4,
-  national firm, law firm, state revenue department or corporate tax backgrounds preferred) to grade model answers on
-  nexus, nonresident withholding and composite filing [MERCOR-SALT-2026].
-- **In-house:** an academic argues AI agents will not shrink corporate tax teams much because AI cannot bear
-  culpability (abstract only) [SALA-TAXNOTES-2026].
+- **SALT specialists outside firms:** Mercor, recruiting for AI research labs, seeks SALT experts with five or more
+  years' experience (Big 4, national firm, law firm, state revenue department or corporate tax backgrounds preferred)
+  to grade and correct model answers on topics such as nexus, apportionment, PTET and mobile-workforce withholding
+  [MERCOR-SALT-2026].
+- **In-house:** a Tax Notes State article argues AI agents will not shrink corporate tax teams much because AI cannot
+  bear culpability (excerpt only; the author's affiliation is not given) [SALA-TAXNOTES-2026].
 - **State agencies:** the FTA's chief operating officer expects training to be the main workforce need and the tools
   unlikely to take jobs soon [TAXNOTESTALK-2025]. South Carolina says it is unclear whether its system will mean more
   audits; the aim is a better hit rate and fewer no-change audits [SCPOST-AUDIT-2026]. The MTC audit programme reported
@@ -213,7 +217,7 @@ system suggests, auditors conduct) [SCPOST-AUDIT-2026].
 | 2026-07-29 | MTC panel on the impact of AI on state tax administration and practice (FTA, Pennsylvania DOR, Blue J); the Nexus and Audit committee materials do not mention AI | [MTC-ANNUAL-2026] |
 | 2026-07-31 | A vendor executive says states introduced more than 1,000 AI-related bills in 2025 (commentary, not checked) | [ROUTEFIFTY-REV-2026] |
 | 2026-09-17 | Truss and Kintsugi webinar listing promises live AI agents answering nexus questions across a client portfolio | [TRUSS-KINTSUGI-2026] |
-| 2026-09-23 | Akerman announces a COST annual meeting session on defending AI-driven assessments (talk content not seen) | [AKERMAN-COST-2026] |
+| 2026-09-23 | COST annual meeting session by Akerman's SALT chair on defending AI-driven assessments (session date from the firm's announcement; talk content not seen) | [AKERMAN-COST-2026] |
 | Later 2026 | Gusto Business Compliance expected to launch | [GUSTO-MOSEY-2026] |
 
 Direction: the landscape scan reads these agency signals as meaning multistate private companies should expect
@@ -237,8 +241,8 @@ work, any published state audit-yield figure, any firm-side SALT AI deployment.
   state by state [KTS-OPR-2026], and the only quality evidence is one benchmark question [VALS-TAXAGENT-2026].
 - **"Payroll handles registrations now."** Vendors say their platforms do it (Gusto targets small business), with no
   accuracy figures, and registration does not answer income or franchise tax nexus [GUSTO-MOSEY-2026].
-- **"AI will shrink the SALT team."** One academic argues it will not, because AI cannot bear culpability
-  [SALA-TAXNOTES-2026]; nothing measured either way.
+- **"AI will shrink the SALT team."** One Tax Notes State author argues it will not, because AI cannot bear
+  culpability [SALA-TAXNOTES-2026]; nothing measured either way.
 - **"There's no proof it works for us."** Accurate. Start with a bounded step (factor reconciliation `#06` or a
   research check `#07`), baseline hours and review notes, and keep the professional judgment calls with people.
 
@@ -249,9 +253,9 @@ Full titles, URLs, dates and locators are in the YAML. Keys used here but not in
 - CDTFA-2025: Experts Urge Caution as State Tax Agencies Deploy Generative AI (Tax Notes, copy hosted by Kogod,
   2025-08-26), https://kogod.american.edu/hubfs/experts_urge_caution_as_state_tax_agencies_deploy_generative_ai_20250826-161144.pdf
 - FTA-TAXBREAKS-2026: Tax Breaks LIVE: A Million Ideas, One Question: Where Do You Start? (Federation of Tax
-  Administrators podcast, episode description, 2026-06-23), https://rss.com/es/podcasts/taxbreaks/
-- SALA-TAXNOTES-2026: AI Won't Shrink Corporate Tax Teams Much. Here's Why. (Tax Notes State, abstract on TaxProf
-  Blog, 2026-07-20), https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
+  Administrators podcast, episode description, 2026-06-23), https://rss.com/podcasts/taxbreaks/2938194/
+- SALA-TAXNOTES-2026: AI Won't Shrink Corporate Tax Teams Much. Here's Why. (Michael V. Sala, 121 Tax Notes State 189;
+  excerpt on TaxProf Blog, 2026-07-20), https://taxprofblog.aals.org/2026/07/20/ai-wont-shrink-corporate-tax-teams-much-heres-why/
 
 Related modules: [indirect-tax](indirect-tax.md) (sales tax nexus and registration), [controversy](controversy.md)
 (state notices and authority AI), [compliance-corporate](compliance-corporate.md) (state returns),
