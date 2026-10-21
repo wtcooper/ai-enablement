@@ -261,14 +261,15 @@ consent decisions.
   the gain came from each client's booking history (ledger-native or look-up). Pick tools that use client context (`#01`).
 - **"Agents will post errors to the books."** Design for it: plan approval, nothing posts without authorization,
   locked-period queues, monthly review before the next opening balance. Penrose saw errors compound when unattended (`#03`, `#04`).
-- **"Our vendor could disappear."** It happened: Botkeeper closed in February 2026. Keep exports and an exit plan (`#03`, `#17`).
+- **"Our vendor could disappear."** It happened: Botkeeper announced its closure in February 2026, and firms migrated
+  during the weeks before Xendoo revived the platform. Keep exports and an exit plan (`#03`, `#17`).
 - **"AI-native providers and clients will take the work."** Pilot sells autonomous bookkeeping direct, and consultants
-  report clients arriving with AI-prepared work. A practitioner says autonomy only works for constrained, simple cases
-  today; move toward review, interpretation and AI advisory (`#16`, `#20`).
+  report clients arriving with AI-prepared work. An AI consultant (Edgefield Group) says autonomy only works for
+  constrained, simple cases today; move toward review, interpretation and AI advisory (`#16`, `#20`).
 - **"We can't put client data into AI."** Not into consumer tools. Use enterprise tools with written no-training
   terms, an approved-tool list and client consent where needed (`#22`, `#23`).
-- **"We can't offer this to audit clients."** Correct for bookkeeping to SEC audit clients and limited elsewhere; most
-  CAS clients are not audit clients. Screen by client, not service line (`#24`).
+- **"We can't offer this to audit clients."** Correct for bookkeeping to SEC audit clients and limited elsewhere; the
+  restrictions apply only to clients the firm also audits or reviews. Screen by client, not service line (`#24`).
 - **"Savings will just be given away."** That is a pricing choice: under fixed fees the firm keeps the gain until
   renegotiation, and the IRS says billing hours not spent may breach Circular 230 in tax matters. See
   professional-services-scoping-pricing-17 [IRS-OPR-2026].

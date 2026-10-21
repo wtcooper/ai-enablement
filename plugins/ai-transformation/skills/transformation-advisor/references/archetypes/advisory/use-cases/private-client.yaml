@@ -4,6 +4,7 @@
 # accounting firms (large national, mid-market and small), family-office advisory firms, wealth platforms,
 # vendors, and family offices' own in-house staff. Sources checked 2026-10-20 (wave 5: one combined deep dive, the
 # advisory landscape scan and the cross-cutting files on independence and pricing and on the state of AI and disruption).
+# Re-verified 2026-10-21 against every cited source (wave 5 verification): 6 B, 8 C, 3 D.
 # Evidence is thin: no entry is graded A. Almost every source is written by a vendor, bank, law firm or advisory firm
 # that sells to family offices. No error rate, override rate, parallel run, client-satisfaction measure or inspection
 # finding was found for this module. Succession and owner advisory have one marketing deployment and two ideas.
@@ -139,7 +140,7 @@
     now shows $125B+. The two figures are not reconciled by any source. Firm types: PKF O''Connor Davies (large national
     accounting firm), Asseta AI (AI-native vendor). Cross-references: advisory-client-accounting-services-03 (close agents
     across a CAS portfolio) and -24 (independence and data-custody screening idea).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-02
   title: AI extraction of capital calls, distribution notices, K-1s and valuation statements into one system of record for
     alternative investments
@@ -250,7 +251,7 @@
     so it is context only. Vendor-voiced sources throughout. Firm types: Jefferson River Capital (single family office,
     vendor case study), Masttro and Canoe (vendors), Armanino (mid-market firm). Cross-reference: K-1 extraction for the
     return itself is tax work (tax-compliance-individual-business-02).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-03
   title: AI-drafted reporting commentary and consolidated multi-entity reports for principals
   archetype: advisory
@@ -377,7 +378,7 @@
     so none is independent in the vocabulary''s sense. Do not read the RBC ''half say AI is embedded'' or the Ocorian 86%
     as figures for reporting alone. Cross-reference: advisory-client-accounting-services-06 (AI-drafted variance commentary
     and dashboards in CAS).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-04
   title: AI help with transaction coding, intercompany reconciliation and month-end close in family-office accounting
   archetype: advisory
@@ -504,7 +505,7 @@
     types: Armanino (mid-market firm), Wingspan (family-office advisory firm), Agillink (vendor), an unnamed private family
     office (job posting). Cross-references for the same steps in CAS: advisory-client-accounting-services-01 (categorization),
     -02 (reconciliation), -03 (close agents).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-05
   title: General-purpose AI assistants for family-office staff on ad hoc operations tasks (file conversion, automation building,
     planning)
@@ -580,7 +581,7 @@
   notes: 'Grade B: two named family offices describe use, with no measurements. Self-reported through a trade interview.
     Pattern ''other'': individual use of a general assistant by one staff member, with no defined workflow. Organization
     types: Ford Estates LLC and Placements Italcan Inc. (family offices, in-house staff).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-06
   title: AI comparison of LP-agreement language and support for fund due-diligence reading in the family office
   archetype: advisory
@@ -652,7 +653,7 @@
   notes: 'Grade B: one named family office, self-reported, no measurements. Organization type: Placements Italcan Inc. (family
     office, in-house). Cross-reference: tax-research-advisory-13 (document-grounded tax analysis of agreements and trust
     documents) for the tax side.'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-07
   title: AI flagging of payment anomalies and wire-instruction discrepancies alongside procedural controls against deepfake
     fraud
@@ -746,7 +747,7 @@
     59% name cybersecurity and data breaches the top near-term operational concern (up from 16%). Cross-references: advisory-client-accounting-services-10
     (AP agents with fraud screening before payment release), advisory-risk-controls-23 (fraud-readiness idea), advisory-forensic-disputes-12
     (investigation of AI-fuelled fraud, idea).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-08
   title: AI-enabled platform that coordinates a multidisciplinary family-office service team across planning, tax preparation
     and portfolio work
@@ -830,7 +831,7 @@
   notes: 'Grade B, capped: a named deployment with company-reported figures, adjacent to this module because Mercer is a
     wealth platform, not an accounting or advisory firm, and its scope includes regulated portfolio work. No independent
     measurement.'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-09
   title: 'AI agents that prepare advisor work from the client record: activity summaries, follow-up drafts, service-request
     tickets'
@@ -897,7 +898,7 @@
     access: full
     locator: 'Emerging Trends in GenAI: Agents'
   notes: 'Grade C: product announcement with no use data. Adjacent to the module (wealth platform, not an accounting firm).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-10
   title: Live consolidated family view with AI summaries and natural-language access for principals and the next generation
   archetype: advisory
@@ -990,7 +991,7 @@
     of Eton Solutions, a family-office software vendor. The client-experience claims in this area
     have no measured client-satisfaction data in the sources read. Cross-reference: advisory-client-accounting-services-06
     (live dashboards as the CAS advisory layer).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-11
   title: 'Idea: AI that captures and surfaces institutional knowledge to reduce key-person risk in lean family offices'
   archetype: advisory
@@ -1043,7 +1044,7 @@
     RBC''s 2026 release says half have an incomplete or non-existent plan; UBS''s 2025 report says 53% have a wealth succession
     plan. The definitions differ and are not comparable. Cross-reference: professional-services-knowledge-management-21
     (idea: structured capture of tacit know-how inside a firm).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-12
   title: 'Idea: AI scenario modelling and successor assessment in family-enterprise succession advisory'
   archetype: advisory
@@ -1110,7 +1111,7 @@
   notes: 'Idea only; both sources are opinion. HBK''s list was produced by a chatbot and is dated 2023. Pattern ''other'':
     an advisor-led modelling and assessment loop (scenario simulation plus candidate scoring), not a document or case pipeline.
     The one named deployment near this work is a client-facing succession chatbot used for marketing (advisory-private-client-17).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-13
   title: 'Idea: AI-supported exit-readiness and value-building conversations with owner clients'
   archetype: advisory
@@ -1165,7 +1166,7 @@
     found, so it is a signal of discussion, not evidence of use. Other EPI chapter events on AI in 2026 were seen only in search snippets. Pattern ''other'':
     advisor-led diagnostic conversation supported by AI, no pipeline. See advisory-private-client-17 (a firm''s ownership-transition
     chatbot used to start conversations) and, for exit work that becomes a sell-side review, advisory-transactions-08.'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-14
   title: Advising families on AI policy, data limits and vendor diligence as a service
   archetype: advisory
@@ -1270,7 +1271,7 @@
     ''other'': advisory deliverable (policy, inventory, vendor review) produced with AI help; no recurring agentic loop.
     Cross-references: advisory-risk-controls-17 (AI governance and control-design advisory), advisory-risk-controls-18 (AI
     inventory and shadow-AI discovery), advisory-client-accounting-services-20 (CAS teams advise clients on AI adoption).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-15
   title: 'Hybrid family-office model: outsourced accounting, reporting and AI enablement with strategy and relationships
     kept in-house'
@@ -1381,7 +1382,7 @@
     different measure from Armanino''s 80%. Pattern ''other'': an operating-model split (what is outsourced versus kept),
     not an agent pattern. Firm types: Armanino (mid-market firm), PKF O''Connor Davies (large national firm), GenTrust (wealth
     firm). How the firm prices and staffs this work is professional-services (professional-services-scoping-pricing-17).'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-16
   title: AI-assisted cash-flow modelling from family-office profit-and-loss history
   archetype: advisory
@@ -1549,7 +1550,7 @@
     date: '2026'
     access: full
     locator: 'Principle: Appropriate Use'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Grade B: a named firm''s live tool with a practitioner''s own figure (''about 50''), which the grade A rule treats
     as B. Routed from the client-accounting-services practice research. Firm type: CPA firm focused on family-held
     businesses. Ladder automate: the bot answers prospects with no person on that path, and people take over when a prospect
