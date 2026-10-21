@@ -3,7 +3,8 @@
 # Sources checked 2026-10-20 (wave 5). Merged from the valuation deep dive, the advisory landscape scan, the
 # cross-cutting files on independence and pricing and on the state of AI and disruption, and items other advisory
 # modules routed to valuation.
-# Evidence is thin: no entry is graded A. No error rate, override rate, parallel run or inspection finding on
+# Evidence is thin: no entry is graded A. Verified 2026-10-21 (wave 5 fact-check): #03 and #08 moved to C because
+# their case studies never say AI was used; #15 (CohnReznick) added from a release the deep dive missed. No error rate, override rate, parallel run or inspection finding on
 # AI-assisted valuation was found. Speed figures are vendor-published or self-reported, with no method. Vendor pages
 # with no date carry the access date (2026-10-20).
 # Independence: appraisal, valuation and fairness-opinion services for an SEC-registrant audit client impair
@@ -28,22 +29,23 @@
     Valuation engagements involve repetitive analytical and research steps (peer screens, volatility, attrition
     cohorts, client information requests) that consume junior analyst hours.
   solution: >-
-    At the ASA Fair Value Conference (New York, May 2026) a KPMG panellist said the firm is working to embed AI "into
+    At the ASA Fair Value Conference in New York (reported by BVWire on 2026-06-10) a KPMG panellist said the firm is working to embed AI "into
     everything that we do", with applications ranging from information requests, meeting summaries and technical
     research to volatility analysis (how much a share price moves), attrition analysis (how fast customers are lost)
     and comparable-company screening. Other Big Four panellists described AI as increasingly part of valuation
-    workflows and stressed judgment, review and auditability (BVR-KPMGTREND-2026). Separately, KPMG announced
+    workflows and stressed judgment, review and auditability (BVR-KPMGTREND-2026). The report does not name the AI
+    tools used. Separately, KPMG announced
     (2026-05-19) an alliance giving all of its 276,000+ people access to Claude (ANTHROPIC-KPMG-2026). Firm type:
     Big Four.
   outcomes:
     - lever: capacity
-      description: "Panellists said firms are hiring fewer entry-level analysts as AI automates part of the mechanical work (reported by BVWire; no count given)"
+      description: "Several speakers said firms are hiring fewer entry-level analysts as AI automates part of the mechanical work (reported by BVWire; no count given)"
       figure: "none published"
       measures: "Panel statement reported by trade press; no hiring numbers, firm names or time period for the hiring comment"
       provenance: self-reported
       source_ref: BVR-KPMGTREND-2026
   prerequisites:
-    - "Enterprise access to an AI platform; the KPMG alliance announcement covers firm-wide Claude access (ANTHROPIC-KPMG-2026)"
+    - "Enterprise access to an AI platform; the panel report names no tool, and the separate Anthropic alliance gives all KPMG staff Claude access (ANTHROPIC-KPMG-2026)"
     - "Review procedures and auditability, which the panel called essential (BVR-KPMGTREND-2026)"
   risks_and_guardrails:
     - "Panellists stressed professional judgment, review procedures and auditability (BVR-KPMGTREND-2026)"
@@ -51,7 +53,7 @@
   human_checkpoints:
     - "Reviewer sign-off on AI-assisted analyses, stated as essential by panellists (BVR-KPMGTREND-2026)"
   role_evolution: >-
-    Panellists described fewer entry-level analyst hires and open questions about how future valuation professionals
+    Several speakers described fewer entry-level analyst hires and open questions about how future valuation professionals
     will be trained (BVR-KPMGTREND-2026).
   evidence_grade: B
   sources:

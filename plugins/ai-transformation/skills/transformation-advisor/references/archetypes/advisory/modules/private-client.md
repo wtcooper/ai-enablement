@@ -188,8 +188,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   ((c)(4)(i)), investment-adviser services ((c)(4)(viii)) and services for a contingent fee or commission ((c)(5),
   subject to the rule's defined exceptions) impair independence [SEC-RULE2-01-2026]. Under PCAOB Rule 3523, a firm is
   not independent of an issuer audit client if it provides tax services to a person in a financial reporting
-  oversight role there, or to that person's immediate family, with limited exceptions [PCAOB-RULES3520-2026]. Wealthy
-  families often include such people. Under the AICPA Code, a nonattest service needs the client to take management
+  oversight role there, or to that person's immediate family, with limited exceptions [PCAOB-RULES3520-2026]. Under the AICPA Code, a nonattest service needs the client to take management
   responsibility, oversee it through a skilled person and accept the results [JOFA-NONATTEST-2016]. IESBA treats
   hosting or storing an audit client's data as a management responsibility [IESBA-TECH-2023]. A Journal of
   Accountancy article by AICPA Professional Ethics Division staff says developing or hosting an AI system for an
@@ -208,8 +207,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
 - **Steps that need human judgment:** posting to the books, moving money and final decisions
   [ARMANINO-FOTRENDS-2026]; investment decisions [CITI-AIFO-2026]; legal interpretation and anything relied on in
   investment, legal, tax or estate matters [NT-FOAIPOLICY-2026]; sign-off on reports and commentary (`#03`);
-  relationships with principals [KAUFMAN-FO-2026]. A forum panel recap adds that principals who paste legal, tax or
-  trust information into AI tools may waive attorney-client privilege [HK-PRINCIPALS-2026].
+  relationships with principals [KAUFMAN-FO-2026].
 
 ## 7. Roles and how they evolve
 
@@ -250,8 +248,8 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   [WEALTHCOM-SERIESB-2026].
 - 2026-04-20: Holland & Knight's Eduardo Arista recaps an April forum panel: principals use AI to draft diligence
   questions, pressure-test legal and tax scenarios and benchmark advisors' recommendations. Risks named are
-  hallucination, waiver of attorney-client privilege and correcting what clients learned from AI
-  [HK-PRINCIPALS-2026].
+  hallucination, waiver of attorney-client privilege when principals paste legal, tax or trust information into AI
+  tools, and correcting what clients learned from AI [HK-PRINCIPALS-2026].
 - 2026-05-11: Citi says adoption is slow but accelerating [CITI-AIFO-2026].
 - 2026-06-24: IRS OPR applies Circular 230 duties, including fees, to AI [IRS-OPR-2026].
 - 2026-07-30: Mercer Advisors unveils Aspen's second generation; Compound Planning announces CompoundAI agents
