@@ -1,0 +1,204 @@
+[
+ {
+  "id": "advisory-valuation-01",
+  "title": "Big Four valuation teams use AI for peer screening, volatility and research",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Valuation engagements involve repetitive analytical and research steps that consume junior analyst hours.",
+  "approach": [
+   "A KPMG panellist said the firm is embedding AI into everything it does, including peer screening, volatility and customer-attrition analysis.",
+   "Other Big Four panellists said AI is increasingly part of valuation workflows and stressed judgment, review and auditability; no tools named.",
+   "Panellists called reviewer sign-off on AI-assisted analyses essential; several said firms are hiring fewer entry-level analysts (self-reported, no figures)."
+  ],
+  "who": "KPMG and other Big Four panellists"
+ },
+ {
+  "id": "advisory-valuation-02",
+  "title": "Plain-language research agent over private-company deal and discount datasets",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Valuers search transaction and discount databases by hand, filtering and re-filtering comparables as they learn more about the subject company.",
+  "approach": [
+   "BVR announced an agent that answers plain-language questions over its transaction, control-premium and marketability-discount datasets, returning calculations, tables and graphs.",
+   "A Display Transactions feature opens the underlying observations, and Saved Threads keeps research for later refinement.",
+   "BVR describes comparable analysis moving from hours to seconds (vendor-published, no measurement).",
+   "The analyst reviews the underlying transactions, decides which suit the subject company, and owns the conclusion."
+  ],
+  "who": "BVR (vendor)"
+ },
+ {
+  "id": "advisory-valuation-03",
+  "title": "Vendor valuation platform for multiples and discount-rate research (AI use not stated)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Manual research for valuation multiples and discount rates is a significant time drain for smaller valuation teams.",
+  "approach": [
+   "Kreston Reeves and Rouse use Valutico's comparable-data analysis and automated data integration; the case studies do not say generative AI was used.",
+   "Rouse is quoted as cutting project time by a third, saving up to a day at a time (vendor-published).",
+   "Kreston Reeves says research is quicker; the vendor's wording is at least 3-5 times faster (vendor-published, no firm-specific figure).",
+   "The analyst selects and justifies the multiples and discount-rate inputs."
+  ],
+  "who": "Kreston Reeves, Rouse, Valutico"
+ },
+ {
+  "id": "advisory-valuation-04",
+  "title": "Research assistant over a valuation technical library, used for coaching junior analysts",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Reviewers answer the same technical questions repeatedly, and juniors need to learn concepts such as owner-compensation normalization and company-specific risk premium.",
+  "approach": [
+   "BVR announced an assistant that answers plain-language questions with summaries drawn from its vetted content, including case law, guides and webinars.",
+   "A BVWire tip suggests sending junior analysts to the assistant first, then reviewing how they applied the concept.",
+   "A senior reviews the junior's conclusions and how the concept was applied. No outcome figure is published."
+  ],
+  "who": "BVR (vendor)"
+ },
+ {
+  "id": "advisory-valuation-05",
+  "title": "AI assistant inside Excel for building, auditing and flexing valuation models",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Valuation models live in Excel, and building, auditing and flexing them is manual.",
+  "approach": [
+   "Anthropic says Claude in Excel builds financial models from filings and data feeds, audits formulas across linked workbooks and runs sensitivity analyses.",
+   "A BVR and CBV workshop (April 2025) covered Copilot in Excel as a personal assistant for valuation practitioners.",
+   "Anthropic reports a FundamentalLabs Excel agent scored 83% on complex tasks and passed 5 of 7 Financial Modeling World Cup levels (vendor-published).",
+   "The analyst reviews model logic and outputs."
+  ],
+  "who": "Anthropic, BVR (vendor claims)"
+ },
+ {
+  "id": "advisory-valuation-06",
+  "title": "Idea: forecasting full statements beyond one year for discounted cash flow valuation",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: in discounted cash flow valuation most value sits beyond the first forecast year, yet few tools forecast full statements over long horizons.",
+  "approach": [
+   "Researchers released a benchmark and a specialist model forecasting 78 statement line items 1 to 20 quarters ahead; not a language-model agent.",
+   "On the benchmark it beat classical machine learning and frontier language models, more so at longer horizons (independent). No firm use found.",
+   "The valuer would set scenario assumptions and judge whether projections are reasonable."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-valuation-07",
+  "title": "Idea: language-model price estimates as a cross-check in property appraisal",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: property price estimates normally rely on statistical models or comparable sales that need specialist set-up.",
+  "approach": [
+   "Researchers tested leading language models on international housing datasets using zero-shot, few-shot, market-report and hybrid prompts. No firm deployment found.",
+   "Traditional machine learning stayed stronger on accuracy; language models gave meaningful estimates but were overconfident in price intervals (independent).",
+   "The appraiser evaluates the output's credibility and owns the conclusion."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-valuation-08",
+  "title": "Template-driven valuation report generation in a vendor platform (AI use not stated)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Long business valuation reports, 200 pages in one case, can take months to assemble, and manual work leaves room for errors.",
+  "approach": [
+   "RXM (Singapore) and PKF FI use Valutico's automated report generation; the case studies do not say generative AI was used.",
+   "RXM's director is quoted saying a 200-page valuation went from months to days, saving hundreds of hours (vendor-published).",
+   "PKF FI says it saved time and drastically reduced error risk, with no error counts; the vendor cites 3-5 times faster (vendor-published).",
+   "The valuer reviews the generated report before issue."
+  ],
+  "who": "RXM, PKF FI, Valutico"
+ },
+ {
+  "id": "advisory-valuation-09",
+  "title": "Generative AI drafts parts of valuation reports such as market commentary",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Report writing is time-consuming, and some narrative sections, such as market commentary, are routine.",
+  "approach": [
+   "The IVSC paper (July 2025) says some valuers already use ChatGPT or other public AI for report writing, such as market commentary.",
+   "A BVR webinar (November 2025) says it demonstrates drafting report sections; no firm is named and no outcome figure is published.",
+   "The valuer keeps control of content and verifies data sources and facts."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "advisory-valuation-10",
+  "title": "AI reviewer agents check valuations against standards and review policy before sign-off",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reports can have every required section yet contain inconsistent requirements, unsupported assumptions or arguments an opposing party could raise, and reviewers must check many positions on deadline.",
+  "approach": [
+   "AICPA FVS podcast speakers described standards-analyzer and adversarial-reviewer agents; Anthropic's May 2026 release lists a Valuation reviewer template. No named deployment.",
+   "The Anthropic template checks valuations against comparables, methodology and the firm's review standards; the managed-agent version adds a full audit log.",
+   "The valuer reviews and decides on each flag, and the signing valuer remains responsible. No outcome figure is published."
+  ],
+  "who": "Anthropic (vendor), AICPA speakers"
+ },
+ {
+  "id": "advisory-valuation-11",
+  "title": "Idea: anticipating AI-generated critiques of a valuation report",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: clients and counterparties feed reports into AI and return detailed challenges to assumptions, methods and conclusions, sometimes before the analyst is retained.",
+  "approach": [
+   "NACVA speakers advised valuers to anticipate machine review when writing, ask to see the client's prompt and output, and respond with evidence.",
+   "They also advised setting expectations about AI in the engagement letter. This is advice, not a documented deployment.",
+   "The valuer judges whether each AI-raised challenge has merit."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "advisory-valuation-12",
+  "title": "End-to-end valuation agent from financial documents to model, report and deck",
+  "grade": "C",
+  "ladder": "delegate",
+  "problem": "Production work, including data entry, model build, and report and deck assembly, takes most of the time in a valuation engagement.",
+  "approach": [
+   "Startup Dealgauge says it turns financial documents into client-ready valuation reports, Excel models and decks so valuations finish in hours (vendor-published).",
+   "Valutico advertises auto-generated forecasts and defensible deal valuations in minutes, not weeks (vendor-published). No named customers.",
+   "The valuer reviews the model, assumptions and conclusion; IVSC says the valuer must keep full control."
+  ],
+  "who": "Dealgauge, Valutico (vendor claims)"
+ },
+ {
+  "id": "advisory-valuation-13",
+  "title": "Portfolio valuation platform extracts company data with AI to standardize fund valuations",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Fund valuations were built in bespoke spreadsheets from whatever public data was at hand; the process was manual and resource-intensive.",
+  "approach": [
+   "Hamilton Lane says it partnered with 73 Strings to standardize valuations on one platform that uses AI to process valuation data.",
+   "Its director of valuation says the process is now systematized and efficient (self-reported, no time or accuracy figure).",
+   "A Eurazeo executive is quoted crediting the platform with significant ROI (vendor-published, no figure).",
+   "73 Strings says human judgement stays central; who reviews marks at Hamilton Lane is not described."
+  ],
+  "who": "Hamilton Lane, 73 Strings, Eurazeo"
+ },
+ {
+  "id": "advisory-valuation-14",
+  "title": "Valuation firms package portfolio valuation as AI-enabled platforms (Stout Drivr, Kroll REVS)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Alternative asset managers run fragmented, manual valuation workflows with the valuation provider as a separate hand-off, and want more frequent, transparent valuations.",
+  "approach": [
+   "Stout announced Drivr on 2026-07-14, with AI-powered data extraction and its independent valuation opinions inside the workflow.",
+   "Kroll announced REVS on 2026-03-03, an AI-enabled real estate platform with workflow automation and audit-ready documentation.",
+   "Stout's co-leader says teams can move in hours or days, not weeks (self-reported, no measurement).",
+   "Valuation practitioners issue Stout's opinions; Kroll's release does not describe human checkpoints."
+  ],
+  "who": "Stout, Kroll"
+ },
+ {
+  "id": "advisory-valuation-15",
+  "title": "CohnReznick builds a vendor's AI-enabled analytics into its fund valuation work",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "General partners are asked for valuations that are more frequent, faster and more traceable amid investor scrutiny and compressed timelines, often without matching budget or headcount.",
+  "approach": [
+   "CohnReznick announced (page dated 2026-03-26) that its Valuation Advisory practice is incorporating 73 Strings' AI-enabled analytics into its established methodologies.",
+   "It says this adds consistency across models and deeper insight into valuation drivers, and accelerates certain aspects of the process.",
+   "It says valuations will be faster, more transparent and more defensible (self-reported, no measurement).",
+   "Valuation professionals keep judgment on complex inputs, scenario analysis and conclusions."
+  ],
+  "who": "CohnReznick, 73 Strings"
+ }
+]
