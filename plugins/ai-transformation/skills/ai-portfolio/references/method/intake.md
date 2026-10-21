@@ -25,7 +25,8 @@ criteria [MSFT-COE-2026].
 
 **Exit criteria** for each item:
 
-- An intake record and a `portfolio.yaml` entry with the same id, `stage: intake`.
+- An intake record and a `portfolio.yaml` entry with the same id, `stage: intake` (a tool already in use: the
+  stage its use supports).
 - One sentence naming the activity and the expected result.
 - Last month's actual volume of the activity, labelled with where the number came from.
 - A class: individual-productivity, business-automation or new-value.
@@ -74,8 +75,9 @@ criteria [MSFT-COE-2026].
 5. **Read the plan's case, not only the item.** In `transformation-plan.md`, read the item's Make the case page
    (cost lines and who carries them, the comparison and go/no-go under "How we will know", assumptions to test
    first), its Now, Next and Later steps, its control-plan row and the people steps. Copy what you find into the
-   intake record's "From the plan" section, naming the section each line came from. Before you raise a conflict
-   or a gap later, check this section: the plan may already budget or decide it.
+   intake record's "From the plan" section, naming the section each line came from. Copy each figure with what it
+   covers as the plan states it (a total, or the part of a total one task takes). Before you raise a conflict
+   or a gap later, check this section and the plan section it names: the plan may already budget or decide it.
 6. **Look up grades.** For each evidence id, open the use case in the archetype files
    (`../../../transformation-advisor/references/archetypes/index.md`) and write its `evidence_grade` exactly as
    recorded into "Early read". If an id is not found, say so; never guess a grade.
@@ -88,6 +90,18 @@ criteria [MSFT-COE-2026].
    the intake record what the merged item adds. Near-duplicates that keep their own entries are linked in each
    intake record's duplicates line. Add no other fields.
 10. Never edit the advisor's file. The back-link lives in `portfolio.yaml`.
+
+**A tool already in use** (from the step 1 inventory, or named later)
+
+1. Log it like an idea, with `source: null` and Source "In use today". Set `stage` to what its current use
+   supports, not `intake`: usually `production` for a supported tool in general use, `pilot` for a trial group.
+   Record no decisions for gates it never passed (`../schemas/portfolio.md` §2).
+2. Owners: `owner` is the business owner who decides how it is used; the technical owner (licences and admin
+   settings) goes in `roles.other` and on the record's Technical owner line. `status: active` once the business
+   owner is named; otherwise `outline`.
+3. Fill the record's "In use today" section: licence or seat count, use list, data permitted and catalog entry,
+   switch-off route, and what is still to find out from whom. Items that depend on the tool go on the duplicates
+   line. Do not score it; a seat roll-out is not a portfolio win, and training and adoption go to ai-enablement.
 
 ## 3. Checklists and decision rules
 
@@ -185,7 +199,8 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 
 - `portfolio/intake/<id>.md` from `../templates/intake.md`, one per item, with every template line filled
   ("none recorded" if empty) and no other sections.
-- A `portfolio.yaml` entry per item with the step 2 fields in `../schemas/portfolio.md` §2.
+- A `portfolio.yaml` entry per item with the step 2 fields in `../schemas/portfolio.md` §2; a tool already in use
+  enters at the stage its use supports.
 - Update `state.step_completed: 2` (first time through), `next_step: 3`, `updated`.
 
 ## 9. Sources

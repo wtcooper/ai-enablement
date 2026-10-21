@@ -22,7 +22,7 @@ updated: YYYY-MM-DD
 
 # Solution brief: <title>
 
-<!-- Schema: references/schemas/solution.md. Replace every <...>; unreached sections say "Not started". Cases by type, source and id only. Owners are roles. Tick a step only when all its exit criteria are met; otherwise list the open criteria after it. -->
+<!-- Schema: references/schemas/solution.md. Replace every <...>; unreached sections say "Not started". Cases by type, source and id only. Owners are roles. Tick a step only when all its exit criteria are met; otherwise list the open criteria after it. Keep `sourcing: undecided` until step 2's exit criteria are met. "Decided by" is `owners.business` or another firm role; a draft reads "draft (ai-solution-delivery)". -->
 
 ## Summary
 

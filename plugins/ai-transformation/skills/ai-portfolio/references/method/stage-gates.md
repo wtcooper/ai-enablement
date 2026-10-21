@@ -33,7 +33,8 @@ readiness and value, and four outputs: Go, Kill, Hold or Recycle [COOPER-STAGEGA
   conditions, the next gate and the evidence it will need [COOPER-STAGEGATE-n.d.].
 - Kill criteria for the next stage agreed now (proposed default).
 - Handoffs made: to ai-solution-delivery by the time the item enters prototype (a brief may open earlier, in
-  `discover`); `solution` set as soon as a brief opens; benefits rows before `g3`.
+  `discover`); benefits rows before `g3`. A `g0` Go does not set `solution`; set it only when
+  `solutions/<id>/brief.md` exists and delivery has handed back.
 
 ## 2. How to run a gate
 
@@ -41,14 +42,17 @@ readiness and value, and four outputs: Go, Kill, Hold or Recycle [COOPER-STAGEGA
 2. **Read the item** in `portfolio.yaml`: `next_gate.evidence`, `kill_criteria`, `early_warnings`, earlier
    decisions. If `solution` is set, read the files in `solutions/<id>/` that the gate needs.
 3. **Check the evidence** against the exit evidence for this gate (§3), one line at a time. Mark each met, not
-   met or not presented. Missing evidence is a finding, not a reason to guess.
+   met or not presented. Missing evidence is a finding, not a reason to guess. Before you flag a conflict between
+   intake records, or between a record and the plan, read the plan section their "From the plan" lines name: the
+   plan may already reconcile the figures (for example a total and the part of it one task takes).
 4. **Check the kill criteria** agreed at the last gate. If one is met, say so first.
 5. **Confirm the gatekeepers.** Ask who releases the people, budget or data for the next stage, and whether they
    are part of the decision.
 6. **Lay out the options** (Go, Kill, Hold, Recycle) with what each costs and releases. The gatekeepers decide;
    you record. Never present your view as the decision.
 7. **Record** the decision in `decisions` (append, never edit), update `stage`, `status`, `next_gate`,
-   `kill_criteria`, and play it back.
+   `kill_criteria`, and play it back. Before adding a field to the item, search that item for the key; if it is
+   there, edit it in place. Never insert a second one.
 8. **Track the next gate's evidence** in the intake record's "Next gate evidence" table: one row per item of
    `next_gate.evidence`, with its status, owner and what it needs first. Update the table as evidence arrives.
    Give drafted messages (an ask to a sponsor, a note to a manager) in the chat, or list them under the review
@@ -100,7 +104,7 @@ risk controls (a forecast, read through a news report) [GARTNER-2025].
 
 | When | Hand off to | What moves |
 |---|---|---|
-| An item in `discover` or later needs a problem frame or a build or buy leaning (a brief may open in `discover` as `g1` evidence); at the latest, a Go at `g1` | **ai-solution-delivery** | It opens `solutions/<id>/` and hands back; set `solution` on the item at once, with no gate needed |
+| An item in `discover` or later needs a problem frame or a build or buy leaning (a brief may open in `discover` as `g1` evidence); at the latest, a Go at `g1` | **ai-solution-delivery** | It opens `solutions/<id>/` and hands back. A `g0` Go does not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back, with no gate needed |
 | `g3` and `g4` evidence | ai-solution-delivery's `readiness.md` and `post-launch.md` | Read them as gate evidence; do not re-assess |
 | Risk tier unclear, new tool or vendor, client-data question | **ai-governance** | Tier, policy and tool decision come back through `overlay/` |
 | Adoption, training, champions; seat roll-outs | **ai-enablement** | Enablement plan for `g4`; workflows into `enablement/workflows/` |

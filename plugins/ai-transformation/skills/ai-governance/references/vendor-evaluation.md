@@ -150,6 +150,14 @@ Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md
 section 7 of `overlay/policy.md`. Set `step_completed: 6`, `next_step: 7` the first time; later evaluations update
 the files without changing the step.
 
+- **`evaluation`** says what was checked: `desk` only once public documents have been read and listed in
+  `sources_checked`, `full` once the signed contract and the vendor's answers have been checked. Before either,
+  it is `null`, and ratings resting only on what the user reports stay `unknown`.
+- **Write only the template's sections.** Documents to ask for, and who to ask, go in the chat; questions for the
+  vendor go in the scorecard's last column. The Decision section holds where the evaluation stands.
+- **Evaluated by** is a firm role, or "draft (ai-governance)" or "draft (subagent)" until a role confirms it.
+- **Request from a solution brief:** hand the vendor file path back to **ai-solution-delivery** (SKILL.md, step 6).
+
 ## 9. Sources
 
 - **ANTHROPIC-PRIV-2026**: Anthropic, *Is my data used for model training? (commercial products)* (vendor documentation, 2026-08-18). https://privacy.anthropic.com/en/articles/7996868-is-my-data-used-for-model-training

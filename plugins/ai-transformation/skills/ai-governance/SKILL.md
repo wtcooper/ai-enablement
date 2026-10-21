@@ -88,7 +88,9 @@ catalog or guardrails lines the step produced. Schemas: `references/schemas/poli
 `references/schemas/tool-catalog.md`, `references/schemas/vendor.md`. In YAML, put every free-text value in double
 quotes; an unquoted colon breaks the file. After writing YAML or frontmatter, check it: parse it if a parser is
 available; otherwise re-read it for unquoted colons and `#`. Also check that no key appears twice in one mapping; a
-parser may keep the last one silently.
+parser may keep the last one silently. Write only the sections the templates define. After adding or changing a
+section, refresh the file's status notes (Contents, lines saying a section is not written or not started) so they
+match what the file now holds.
 
 ## The steps
 
@@ -178,7 +180,9 @@ for each regime (tax, assurance, professional services, security).
 - What notice do we get of model, sub-processor and terms changes, and how do we leave?
 
 **Exit:** scorecard with evidence; screens; own-sample test planned or done; decision with conditions, triggers and
-exit plan. **Output:** `overlay/vendors/<vendor-product>.md`; the catalog entry; policy section 7.
+exit plan. **Output:** `overlay/vendors/<vendor-product>.md`; the catalog entry; policy section 7. When the request
+came from a solution brief, hand the vendor file path, the catalog entry id and the use's tier back to
+**ai-solution-delivery**, whatever the decision, so the brief records them.
 
 ### 7 · Secure enablement
 
@@ -200,7 +204,7 @@ training; measures. **Output:** policy section 8 with `status: in-review` and `n
 
 | When | Hand off to | What to pass |
 |---|---|---|
-| A tool is approved and a team wants to build or buy a solution on it, or a solution needs its governance sign-off | **ai-solution-delivery** | The catalog entry id, the use's risk tier, the records required, regime conditions |
+| A tool is approved and a team wants to build or buy a solution on it, a solution needs its governance sign-off, or a vendor evaluation requested from a brief is written (any decision) | **ai-solution-delivery** | The vendor file path, the catalog entry id, the use's risk tier ("provisional" while the policy is not approved), the records required, regime conditions |
 | Requests through the request path are really new initiatives, or the portfolio needs governance gates | **ai-portfolio** | The request, its data classes, risk tier and screens, to enter intake |
 | The firm needs training and acknowledgement designed for the policy | **ai-enablement** | Policy rules by role, redaction examples, the approved catalog |
 | Governance is in place and the user wants to find or plan opportunities | **transformation-advisor** | Nothing: it reads `overlay/guardrails.md` and `overlay/tool-catalog.yaml` |

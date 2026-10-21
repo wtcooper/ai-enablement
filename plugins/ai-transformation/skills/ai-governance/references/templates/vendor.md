@@ -4,7 +4,7 @@ vendor: "<vendor>"
 product: "<product and tier>"
 tool_tier: commercial
 runtime_class: personal-assistant
-evaluation: desk
+evaluation: null
 label: draft-to-validate
 evaluated: "YYYY-MM-DD"
 proposed_use: "<use and data classes requested>"
@@ -28,10 +28,12 @@ sources_checked: []
 
 <!-- Schema: references/schemas/vendor.md. Method: references/vendor-evaluation.md.
      A desk evaluation uses public documentation only: keep the draft label until the contract is checked.
-     Record clause references, not prices or confidential terms. -->
+     `evaluation` stays null until public documents (desk) or the contract (full) are checked.
+     Write only these sections; documents to ask for go in the chat. Record clause references, not prices or
+     confidential terms. -->
 
 **Request:** <who asked (role), for what use, which data classes, which runtime class>
-**Evaluation type:** desk | full · **Evaluated by:** <role or subagent draft> · **Draft to validate:** yes | no
+**Evaluation type:** desk | full | not started · **Evaluated by:** <firm role, or "draft (ai-governance)" or "draft (subagent)"> · **Draft to validate:** yes | no
 
 ## Scorecard
 

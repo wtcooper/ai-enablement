@@ -111,7 +111,8 @@ output lands where the work is reviewed *(advisor default)*.
   injection (LLM01), improper output handling (LLM05) and excessive agency (LLM06) [OWASP-2025; OPENAI-2025].
 - Layer input and output guardrails [HUYEN-2024].
 - Ask what client or personal data is in scope and what the access model is [UKGDS-2025; HUYEN-2024].
-- Copy the risk tier from `overlay/policy.md` into the brief's frontmatter; never invent one.
+- Copy the risk tier from `overlay/policy.md` into the brief's frontmatter; never invent one. While the policy is
+  not `approved`, copy its proposed tier and mark it "provisional" (`../schemas/solution.md` §4).
 
 ### 3.5 Human checkpoints and escalation
 
@@ -202,7 +203,8 @@ Illustrative, continuing step 2 (`configure`, `workflow-automation`, `augment`, 
 
 In `brief.md`, write §3 Solution design from `../templates/brief.md`. In the frontmatter confirm
 `classification` (record any change from the advisor option and why in the decisions log), set `risk_tier` if
-the policy gives one, `step_completed: 3`, `next_step: 4` and `updated`.
+the policy gives one (provisional while the policy is not `approved`), `step_completed: 3`, `next_step: 4` and
+`updated`.
 
 ## 9. Sources
 

@@ -75,7 +75,7 @@ items:
     owner: role                    # leads the work
     sponsor: role                  # controls the resources it needs next
     benefit_owner: role | null     # owns the benefit in the business
-    risk_tier: string | null       # tier id from overlay/policy.md risk_tiers (ai-governance), e.g. tier-2; null when ai_use is none
+    risk_tier: string | null       # tier id from overlay/policy.md risk_tiers (ai-governance), e.g. tier-2; provisional while the policy is not approved; null when ai_use is none
     gate_path: light | full
     value: [ { lever: id, low: number, high: number, unit: string, assumptions: string } ]
     scores: { value: 1-5, feasibility: 1-5, data_readiness: 1-5, risk: 1-5, time_to_value: 1-5, strategic_fit: 1-5 }
@@ -86,7 +86,7 @@ items:
     kill_criteria: [ string ]      # agreed at the gate that let the item in
     early_warnings: [ { type: slippage | cost-overrun | performance-shortfall, note: string, review: integer } ]
     next_gate: { gate: gate-id, evidence: [ string ], gatekeepers: [ role ] } | null
-    solution: path | null          # solutions/<id>/; set as soon as ai-solution-delivery opens the brief and hands back
+    solution: path | null          # solutions/<id>/; set only once its brief.md exists and delivery has handed back
     benefits: [ id ]               # benefit ids in portfolio/benefits.yaml
     evidence: [ id ]               # archetype or overlay use-case ids
     human_checkpoints: [ string ]  # who checks what; copied from the advisor item on import
@@ -110,9 +110,9 @@ items:
 | Step | Fields that must be filled |
 |---|---|
 | 1 Set up | `schema`, `portfolio`, `settings`, `stages`, `gate_paths` (with `g0_deciders`), `roles`, `rhythm`, `state` |
-| 2 Intake | Per item: `id`, `title`, `unit`, `intake`, `source` (or null), `problem`, `item_class`, `stage: intake`, `status` (`outline` until problem, owner and a data source are known), `owner`, `updated` |
+| 2 Intake | Per item: `id`, `title`, `unit`, `intake`, `source` (or null), `problem`, `item_class`, `stage: intake` (a tool already in use: see below), `status` (`outline` until problem, owner and a data source are known), `owner`, `updated` |
 | 3 Screen and score | `value` (ranges), `scores`, `weighted_score`, `value_index`, `readiness_index`, `category`, `horizon`, `risk_tier` (null with `ai_use: none`), `gate_path`, `sponsor`, `depends_on`, a `g0` decision by the path's `g0_deciders`; `kill_criteria` and `next_gate` on a Go |
-| 4 Stage gates | One `decisions` entry per gate held; `stage`, `status`, `next_gate`; `solution` as soon as delivery opens a brief (from `discover` on); `benefit_owner` and `benefits` before `g3` |
+| 4 Stage gates | One `decisions` entry per gate held; `stage`, `status`, `next_gate`; `solution` once the brief exists and delivery has handed back (from `discover` on); `benefit_owner` and `benefits` before `g3` |
 | 5 Portfolio review | `early_warnings`; decisions made in the review carry its number in `review`; `state.last_review` |
 | 6 Value tracking | `benefits` ids match `benefits.yaml`; `role_evolution` for team-level and higher items in production or scale |
 
@@ -141,8 +141,20 @@ items:
   record. A new item with no choice yet keeps `role_evolution: null`; the choice is due by `g3`.
 - **No AI needed.** With `ai_use: none`, set `ladder`, `runtime_class` and `risk_tier` to null. Count the item
   apart from AI items in the review pack.
-- **Solution link.** A brief may open while the item is in `discover` (as `g1` evidence) or later. When
-  ai-solution-delivery opens it and hands back, set `solution` at once; no gate is needed for that.
+- **Solution link.** A brief may open while the item is in `discover` (as `g1` evidence) or later. A `g0` Go does
+  not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back. No gate is
+  needed for that.
+- **Provisional tier.** While `overlay/policy.md` is not `approved` (for example `status: draft`), copy its
+  proposed tier into `risk_tier` and mark it "provisional" in the intake record's Early read until the policy is
+  approved (`../library/index.md` §2).
+- **Tools already in use.** A live system found in the inventory (step 1) is logged in step 2 with `source: null`
+  and enters at the stage its current use supports, not `intake`: usually `production` for a supported tool in
+  general use, `pilot` for a trial group (the same rule as for acquired firms, `../method/stage-gates.md` §9).
+  `owner` is the business owner; the technical owner goes in `roles.other`. `status: active` once `owner` is
+  named. `decisions` stay empty for gates it never passed; the next decision (`g4` to extend it, or `retire`) goes
+  in `next_gate` when someone asks for one. It is not scored (`value` and `scores` stay empty), and its licence
+  count is not a benefit. Licence
+  count, use list and switch-off route go in the intake record's "In use today" section.
 - **Sequencing** uses `depends_on` and `next_gate`, never dates or deadlines. `updated` records when the entry
   last changed; it is not a target.
 - Portfolio-only values (`item_class`, `horizon`, `stage`, `status`, gate ids, `outcome`, early-warning types,

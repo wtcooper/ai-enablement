@@ -35,7 +35,7 @@ defined here.
 
 | Id | Meaning |
 |---|---|
-| `intake` | Logged, not yet screened |
+| `intake` | Logged, not yet screened (a tool already in use enters at the stage its use supports, `../schemas/portfolio.md` §2) |
 | `discover` | Passed the screen; the problem, baseline and data are being examined |
 | `prototype` | Technical feasibility tested on real data |
 | `pilot` | Live work with real users and a comparison; value and adoption tested |
@@ -81,9 +81,10 @@ step 1.
 **`risk_tier`**: the tier id from `risk_tiers` in `overlay/policy.md`, written by ai-governance (its defaults are
 `tier-1` to `tier-4`, set by the consequence of an error and who relies on the output). Without a policy, place the
 item against ai-governance's default tiers, mark the tier provisional in the intake record, and offer ai-governance.
-A policy that is not yet `approved` (for example `status: draft`) counts as no policy here: use its proposed tiers
-if it has them, set `risk_tier`, and write the tier in the intake record's Early read as "provisional" until the
-policy is approved.
+While `overlay/policy.md` is not `approved` (for example `status: draft`), copy its proposed tier into `risk_tier`
+and mark it "provisional" in the intake record's Early read until the policy is approved. If the draft proposes no
+tier for the item, place it against the default tiers as above. ai-solution-delivery follows the same rule in the
+brief (`../../../ai-solution-delivery/references/schemas/solution.md` §4).
 
 **`ai_use`**: `none` when the rules-or-AI check finds that rules, a template or an existing tool is enough; then
 `ladder`, `runtime_class` and `risk_tier` are null and the review counts the item apart. `null` (the default)

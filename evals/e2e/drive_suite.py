@@ -3,7 +3,7 @@ The assistant runs headless (claude -p, resumed); a simulated user (Sonnet) answ
 
 Improved copy of 2026-10-21-suite-handoff/drive.py:
 - records tool calls (--output-format stream-json --verbose); Skill, Write and Edit calls go into the transcript;
-- allows a read-only YAML check (Bash(python3 -c *));
+- allows a read-only YAML check: Bash(python3 -c *), Bash(python3 -I -c *) and Bash(python3 -I *) (script form);
 - before the next stage starts, answers the stage's open question (up to MAX_CLOSING replies, while the last
   assistant paragraph has a "?"); if one is still open, the next stage's opener parks it first;
 - stage 2 names an AI item past g0 (STAGE2_AI), so the handoff to ai-solution-delivery can be exercised;
@@ -37,7 +37,11 @@ STAGE2_AI = ("The integrated-audit manager has validated `ct-int-nonclient-draft
              "discover: the manager's time, released by the practice leader. Then take it to ai-solution-delivery: "
              "frame it, decide build versus buy, and open the brief as `g1` evidence.")
 TURNS = {1: 9, 2: 7}
-TOOLS = ["Read", "Glob", "Grep", "Write", "Edit", "Agent", "Task", "Skill", "Bash(python3 -c *)"]
+# Bash prefix rules use the "Bash(<prefix> *)" form; tested with claude 2.1.305 (the legacy "Bash(<prefix>:*)" also
+# works). The assistant parses YAML with `python3 -I -c "..."` (often piped to head) or `python3 -I <script>`; the
+# plain `python3 -c` rule does not match either, so all three parse checks in the stage-2 run were refused (D2).
+TOOLS = ["Read", "Glob", "Grep", "Write", "Edit", "Agent", "Task", "Skill",
+         "Bash(python3 -c *)", "Bash(python3 -I -c *)", "Bash(python3 -I *)"]
 TRANSCRIPT_TOOLS = ("Skill", "Write", "Edit", "MultiEdit")   # copied into the transcript; all calls go to drive.log
 MAX_CLOSING = 3
 PARK = "Let's park that question for now; we'll come back to it. "

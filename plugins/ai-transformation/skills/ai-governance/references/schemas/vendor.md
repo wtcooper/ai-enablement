@@ -18,7 +18,7 @@ vendor: string
 product: string
 tool_tier: consumer | commercial | firm-controlled
 runtime_class: id                   # vocabulary.yaml runtime_classes
-evaluation: desk | full             # desk = public documentation only; full = contract and vendor answers checked
+evaluation: desk | full | null      # desk = public documentation read; full = contract and vendor answers checked; null = neither yet
 label: draft-to-validate | null     # set for desk evaluations and subagent drafts until the user confirms
 evaluated: YYYY-MM-DD
 proposed_use: string                # the use and data classes the request is for
@@ -46,6 +46,8 @@ sources_checked:
 
 - **Every rating has a note** that says what the evidence is and where it was found (`sources_checked` locator).
   A claim with no document behind it is `unknown`, not `meets`.
+- **`evaluation`** is `desk` only once public documents are read and listed in `sources_checked`; until then it
+  is `null`, with `label: draft-to-validate` and ratings `unknown` where only the user's report supports them.
 - **`desk` evaluations** keep `label: draft-to-validate`. Published terms may differ from the signed contract and
   change over time; for `client-confidential` and `regulated` data the decision stays `pending` until someone checks
   the contract. A narrower decision (for example a `pilot` on firm-internal data) may rest on what the user confirms.

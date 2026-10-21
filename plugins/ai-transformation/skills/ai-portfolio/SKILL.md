@@ -80,7 +80,8 @@ has made stale. After set-up the steps recur on demand; a session can stop at an
 from the files. Schemas: `references/schemas/portfolio.md` and `references/schemas/benefits.md`. In YAML, put
 every free-text value in double quotes. After writing a YAML file, check it: parse it if a parser is available;
 otherwise re-read it for unquoted colons and `#`. Also check that no key appears twice in one mapping; a parser may
-keep the last one silently.
+keep the last one silently. Before adding a field to an item, search that item for the key; if it is there, edit it
+in place. Never insert a second one.
 
 Write only the files and sections the templates define. Pre-gate evidence goes in the intake record's "Next gate
 evidence" table; a build, buy or partner leaning before `g0` is one line in its Early read. Meeting pre-reads,
@@ -193,7 +194,7 @@ reduce decision, with role evolution on the item. **Output:** `portfolio/benefit
 | When | Next skill |
 |---|---|
 | No plan exists, or a practice, unit or acquired firm needs its opportunities found and planned | **transformation-advisor** |
-| An item in discover or later needs a problem frame or a build or buy leaning (a brief may open in discover as `g1` evidence; at the latest at a Go at `g1`); gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/` and hands back; set `solution` at once) |
+| An item in discover or later needs a problem frame or a build or buy leaning (a brief may open in discover as `g1` evidence; at the latest at a Go at `g1`); gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/` and hands back). A `g0` Go does not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back |
 | Seat roll-outs, training, champions, uneven adoption, partners and skeptics; enablement plan for scale | **ai-enablement** |
 | A risk tier, policy, client-data, records or tool and vendor question | **ai-governance** |
 

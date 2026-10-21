@@ -74,3 +74,43 @@ python3 /home/user/ai-enablement/evals/e2e/drive_suite.py /tmp/suite-stage2/work
 
 `/tmp/suite-stage2/workspace` must not exist yet. The transcript folder and `drive.log` are created next to the
 transcript.
+
+## Round 3 (from the stage 2 review)
+
+Defects D1 to D9 from `../2026-10-21-suite-stage2/REVIEW.md` §7. Paths are under `plugins/ai-transformation/skills/`
+unless they start with `evals/` or `spec/`. Both validators pass with 0 errors (`scripts/validate.py`: the same 31
+archetype warnings; `claude plugin validate --strict`: passed). The core-rules blocks were not touched. The schema
+examples (portfolio, solution, vendor), the brief and vendor template frontmatter and the portfolio template parse
+with a loader that rejects duplicate keys. No `vocabulary.yaml` ids were added. Largest files: `stage-gates.md`,
+272 lines; `ai-governance/SKILL.md`, 241.
+
+| # | Rule or change chosen | Files |
+|---|---|---|
+| D1 | One line in the save rule and in gate step 7 (recording a decision): "Before adding a field to an item, search that item for the key; if it is there, edit it in place. Never insert a second one." | `ai-portfolio/SKILL.md` (save rule), `ai-portfolio/references/method/stage-gates.md` §2 step 7 |
+| D2 | `TOOLS` now has `Bash(python3 -c *)`, `Bash(python3 -I -c *)` and `Bash(python3 -I *)` (script form); the docstring and a comment say why. **Rule form:** `Bash(<prefix> *)`, a space then `*`. Tested headless with `claude` 2.1.305 in a scratch folder (`claude -p … --allowedTools "<rule>" --output-format json`, reading `permission_denials`): `Bash(python3 -c *)` refuses `python3 -I -c 'print(1)'`; `Bash(python3 -I -c *)` allows it, and also allows the run's exact failing shape (a multi-line `-c` script piped to `head`), which `Bash(python3 -c *)` refuses; `Bash(python3 -I *)` allows `python3 -I <script> <dir>`. The legacy `Bash(python3 -I -c:*)` also works. A last check with the driver's full tool list and flags showed no denial | `evals/e2e/drive_suite.py` |
+| D3 | One rule: "A `g0` Go does not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back" (no gate needed). Delivery hands back only once `brief.md` exists, never before and not after a failed write | `ai-portfolio/SKILL.md` (Handoffs), `stage-gates.md` §1 and §3.3, `ai-portfolio/references/schemas/portfolio.md` (field comment, step 4 row, Solution link), `ai-solution-delivery/SKILL.md` (Start step 2, Handoffs), `ai-solution-delivery/references/schemas/solution.md` §4 Portfolio link, `frame-problem.md` §7, `spec/2026-10-20-skill-suite.md` §4 |
+| D4 | Your preferred option, the same in both skills: "While `overlay/policy.md` is not `approved` (for example `status: draft`), copy its proposed tier into `risk_tier` and mark it 'provisional'": in the intake record's Early read (ai-portfolio), and in the brief's §2 Catalog check, §3 Security and privacy and Handoffs row (delivery), until the policy is approved. Each file points to the other. With no policy or no tier for the use, delivery still leaves `null` and hands off. ai-governance passes the tier marked provisional | `ai-portfolio/references/library/index.md` §2, `portfolio.md` (field comment, Provisional tier rule), `solution.md` (field comment, §4 Risk tier), `design-brief.md` §3.4 and §8, `ai-governance/SKILL.md` (Handoffs) |
+| D5 | `sourcing` stays `undecided` until all step 2 exit criteria are met; the leaning goes in §2 as "proposed" and in the decisions log as a draft. Delivery's save rule: when a sibling skill writes a file for the solution, update `tools`, `vendor_evaluations`, `risk_tier` and the Summary, and keep the Summary's "what is next" current. ai-governance step 6 hands the vendor file path, catalog id and tier back to delivery whatever the decision | `build-or-buy.md` §2 step 10 and §8, `solution.md` (`undecided` row, Sibling files rule), brief template comment, `ai-solution-delivery/SKILL.md` (save rule), `ai-governance/SKILL.md` (step 6 output, Handoffs) |
+| D6 | Before flagging a conflict between intake records, or between a record and the plan, read the plan section their "From the plan" lines name. The intake already had to name the plan section (round 1), so the new rule there is that each figure is copied with what it covers (a total, or the part of it one task takes), which was the cause here | `stage-gates.md` §2 step 3, `intake.md` §2 import step 5, `ai-portfolio/references/templates/intake.md` (From the plan) |
+| D7 | "Decided by" is `owners.business` or another firm role, never the skill; a drafted decision reads "draft (ai-solution-delivery)". A confirmation by another role, for a decision the owner must take, is logged as direction, and the owner's confirmation stays an open criterion. The vendor file's "Evaluated by" follows the same rule ("draft (ai-governance)") | `solution.md` §4 (Who decides), brief template comment, `ai-governance/references/templates/vendor.md`, `vendor-evaluation.md` §8 |
+| D8 | ai-governance's save rule: write only the template's sections, and after adding or changing a section refresh the file's status notes (Contents, "not written" lines). `evaluation` is `desk` only once public documents are read and listed in `sources_checked`; before that it is `null` (new schema value; the template default is now `null`). Document requests go in the chat, vendor questions in the scorecard's last column | `ai-governance/SKILL.md` (save rule), `vendor-evaluation.md` §8, `ai-governance/references/schemas/vendor.md` (format, field rules), `ai-governance/references/templates/vendor.md` |
+| D9 | A tool already in use is logged in step 2 with `source: null` and Source "In use today". It enters at the stage its current use supports (usually `production`; `pilot` for a trial group), the acquired-firms rule, with no decisions for gates it never passed. `owner` is the business owner; the technical owner goes in `roles.other` and on a new Technical owner line. `status: active` once the owner is named. It is not scored. A new template section, "In use today", holds the licence count, use list, data and catalog entry, switch-off route and what is still to find out; other records write "Not in use" | `intake.md` §1, §2 (new "A tool already in use" block) and §8, `ai-portfolio/references/templates/intake.md`, `portfolio.md` §2 (step 2 row, Tools already in use), `ai-portfolio/references/library/index.md` (`intake` row), `setup.md` §8 |
+
+### Declined or changed from the proposals
+
+- **D2 system-prompt hint:** not added. The allowlist now matches the forms the assistant used, and a hint would
+  change the system under test. `Bash(python3 -I *)` lets the assistant run a script it wrote; that is no wider than
+  the `python3 -c *` rule the driver already had.
+- **D4 option:** your preference. The files support it: ai-portfolio already set the tier (round 2, N10), the screen
+  needs `risk_tier`, and keeping `null` left both files without a tier while both bodies said `tier-2`. The
+  no-policy case is unchanged: ai-portfolio places the item against the default tiers, and delivery leaves `null`
+  and hands off. That is a different case from D4, and I left it open.
+- **D9 home:** a defined template section, not Next gate evidence rows. A live tool often has no next gate, so the
+  table would have no gate to serve; `next_gate` stays null until someone asks for `g4` or `retire`.
+- **D8 `evaluation`:** the proposal did not say what to write before a desk check. I added `null` to the vendor
+  schema (schema-local) instead of a vocabulary id.
+- **Not changed (not in §7):** the open question numbered "2a"; the partly fixed round-2 items in §5 (N5 stale
+  header line, N8 `label: null` after validation, N9 "Drafted ahead" labels for steps 2 and 6 and the client-data
+  alternative, N10 missing Early read lines). The rules for these already exist; the run did not follow them.
+- **Not done:** no new run; the stage-2 run folder and the archetype and research files are unchanged.
+- **Commits:** none.

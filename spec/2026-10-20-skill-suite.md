@@ -82,7 +82,8 @@ by name with a fallback: "Next, use the **ai-portfolio** skill. If you can't inv
 
 Handoffs: the advisor's `opportunities.yaml` items enter `portfolio.yaml` through intake (with a back-link);
 a portfolio item in `discover` or later may open `solutions/<id>/` (a brief opened in `discover` is evidence for
-`g1`), and ai-solution-delivery then hands back so ai-portfolio sets the item's `solution` at once; launched
+`g1`), and ai-solution-delivery then hands back so ai-portfolio sets the item's `solution` (a `g0` Go does not set
+it; it is set only when `solutions/<id>/brief.md` exists and delivery has handed back); launched
 solutions add rows to `benefits.yaml` and workflows to `enablement/workflows/`; governance outputs constrain
 every skill through the overlay.
 

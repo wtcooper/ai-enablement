@@ -11,8 +11,8 @@
 |---|---|
 | Id | `<id>` (the same id as in `portfolio.yaml`) |
 | Submitted by | <role> in <practice, team or function> |
-| Source | <"New idea" or the advisor item it came from: `<path>/opportunities.yaml` → `<item id>`> |
-| Status | <outline (missing problem, owner or data source) or ready to screen; "Draft to validate" while `label: draft-to-validate`> |
+| Source | <"New idea", "In use today" (a tool already in use), or the advisor item it came from: `<path>/opportunities.yaml` → `<item id>`> |
+| Status | <outline (missing problem, owner or data source) or ready to screen; "Draft to validate" while `label: draft-to-validate`; for a tool in use, its stage and status> |
 
 ## The problem in one sentence
 
@@ -42,6 +42,7 @@ line, not here.>
 ## Owner and benefit
 
 - Owner who would lead the work: <role>
+- Technical owner: <for a tool in use, the role that holds the licences and admin settings; otherwise "not applicable">
 - Benefit owner in the business: <role, or "not yet named">
 - Lever and metric it would move: <lever id> → <metric>
 
@@ -61,7 +62,8 @@ line, not here.>
 ## From the plan
 
 <For imports only; otherwise "New idea, no plan". What the advisor's `transformation-plan.md` already says about
-this item, each line with the plan section it came from. Check here before raising a conflict or a gap.>
+this item, each line with the plan section it came from and each figure with what it covers (a total, or a part of
+one). Check here, and in the plan section named, before raising a conflict or a gap.>
 
 - Process and prerequisites: <the item's `process` and `prerequisites`>
 - Cost lines and who carries them: <line, range, role; note lines budgeted separately>
@@ -70,6 +72,17 @@ this item, each line with the plan section it came from. Check here before raisi
 - Steps: <Now, Next and Later steps for this item, with their owners (roles) and dependencies; `next_step`>
 - Control-plan row: <KPIs, thresholds and responses>
 - People steps: <from the people and change plan>
+
+## In use today
+
+<For a tool already in use only; otherwise "Not in use". It is not scored (method: intake.md, "A tool already in use").>
+
+- Stage entered at and why: <production or pilot, from how it is used now; no gates recorded that it never passed>
+- Licence or seat count: <count and the record it came from, or "awaiting <role>">
+- Use list: <practice or team · what it is used for · how often · basis (from record, reported)>
+- Data permitted and catalog entry: <data classes; `tool-catalog.yaml` entry id and status, or "not in the catalog">
+- Switch-off route: <who cuts access, who tells users, the fallback; tested or not>
+- Still to find out: <what, and from which role>
 
 ## Screen result
 

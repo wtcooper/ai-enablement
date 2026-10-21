@@ -44,7 +44,7 @@ ai_use: none | null               # none: rules, a template or an existing tool 
 sourcing: buy | configure | build-on-model | build-custom | undecided
 tools: [ string ]                 # overlay catalog entries, or runtime-class descriptions
 vendor_evaluations: [ path ]      # e.g. overlay/vendors/<vendor>.md, written by ai-governance
-risk_tier: string | null          # tier id from overlay/policy.md (e.g. tier-3); null until set, or when ai_use is none
+risk_tier: string | null          # tier id from overlay/policy.md (e.g. tier-3); provisional while the policy is not approved; null until set, or when ai_use is none
 status: in-progress | live | paused | stopped | retired
 step_completed: 0-6
 next_step: 1-6 | null
@@ -89,7 +89,7 @@ These values are local to the solution files. They are not in the shared `vocabu
 | | `configure` | Configure a bought tool: settings, templates, approved content, connectors |
 | | `build-on-model` | Build a workflow, retrieval and checks around a bought model or platform |
 | | `build-custom` | Build most components in-house |
-| | `undecided` | Before step 2 ends |
+| | `undecided` | Until all of step 2's exit criteria are met; a leaning goes in the decisions log |
 | `status` | `in-progress` · `live` · `paused` · `stopped` · `retired` | Where the solution stands |
 | `eval-plan.status` | `draft` · `agreed` | Agreed once the owner accepts tasks, checks and thresholds |
 | `readiness.decision` | `pending` · `go` · `go-with-conditions` · `no-go` | The step 5 decision |
@@ -109,15 +109,26 @@ These values are local to the solution files. They are not in the shared `vocabu
   design changes the rung or runtime class from the advisor option, record the change and the reason in the
   brief's decisions log.
 - **Owners are roles.** Never record performance judgments about named individuals (rule 1).
+- **Who decides.** "Decided by" in the decisions log is `owners.business` or another firm role, never this
+  skill. A decision this skill drafts reads "draft (ai-solution-delivery)" until a firm role confirms it. A
+  confirmation by a role other than the business owner, for a decision the owner must take, is logged as
+  direction; the owner's confirmation stays an open exit criterion.
 - **Risk tier** is the tier id from `overlay/policy.md` (the **ai-governance** skill defines `tier-1` to
-  `tier-4`), copied, never invented here. With no policy, leave `null` and hand off to **ai-governance**.
+  `tier-4`), copied, never invented here. While `overlay/policy.md` is not `approved` (for example
+  `status: draft`), copy its proposed tier into `risk_tier` and mark it "provisional" in §2 Catalog check (and
+  §3 Security and privacy once written) and in the Handoffs row until the policy is approved; ai-portfolio follows
+  the same rule (`../../../ai-portfolio/references/library/index.md` §2). With no policy, or no tier for this use
+  in it, leave `null` and hand off to **ai-governance**.
+- **Sibling files.** When ai-governance writes a vendor evaluation, a catalog entry or a tier for this solution,
+  add the paths to `vendor_evaluations`, the entry to `tools`, the tier to `risk_tier`, and refresh the Summary.
 - **No AI needed.** When step 1 or 2 finds that rules, a template or an existing tool meets the bar, set
   `ai_use: none`, `ladder: null`, `ladder_target: null`, `runtime_class: null` and `risk_tier: null`; no risk
   tier handoff is needed. Keep `pattern` and `sourcing` as they describe the work.
 - **Portfolio link.** A brief may open while the portfolio item is in `discover` (as `g1` evidence) or later.
-  When `source.portfolio_item` is set, hand back to **ai-portfolio** as soon as the brief opens, and add a row to
-  the brief's Handoffs table. ai-portfolio then sets the item's `solution` to `solutions/<id>/` at once; it writes
-  that field and the benefits rows, not this skill.
+  When `source.portfolio_item` is set, hand back to **ai-portfolio** as soon as `solutions/<id>/brief.md` exists,
+  and add a row to the brief's Handoffs table. ai-portfolio then sets the item's `solution` to `solutions/<id>/`;
+  a `g0` Go does not set it, and it is set only when `brief.md` exists and this skill has handed back. ai-portfolio
+  writes that field and the benefits rows, not this skill.
 - **No dates as deadlines.** `updated` is a timestamp. Review triggers are events (`next_review_when`), never
   calendar dates.
 - **Quote free text.** Put every free-text value in double quotes; an unquoted colon breaks the file.

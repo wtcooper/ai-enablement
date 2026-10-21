@@ -74,8 +74,9 @@ the firm's people build, configure and run the solution. Speak plainly. Method t
      user's description and suggest logging it through intake with **ai-portfolio**; do not block on it.
 2. Create `solutions/<id>/brief.md` from `references/templates/brief.md` once the problem is named, with
    `source` pointing back to the portfolio item or advisor option. A brief may open while the item is in
-   discover, as evidence for `g1`. If `source.portfolio_item` is set, hand back to **ai-portfolio** at once so
-   it sets the item's `solution`, and add a row to the brief's Handoffs table.
+   discover, as evidence for `g1`. If `source.portfolio_item` is set, hand back to **ai-portfolio** as soon as
+   `brief.md` exists (not before, and not if the write failed), so it sets the item's `solution`; add a row to
+   the brief's Handoffs table.
 3. If an `overlay/` folder exists, read `overlay/guardrails.md` now (it adds rules; it never weakens the rules
    above). Read `overlay/tool-catalog.yaml`, `overlay/policy.md` and `overlay/vendors/` when a step needs them.
 4. Give the confidentiality reminder (rule 5).
@@ -85,7 +86,9 @@ Save after **every** step: update the step's file and the brief's frontmatter (`
 leave the step unticked and list the open criteria beside it. A session can stop at any point and resume from
 the files. Schema: `references/schemas/solution.md`. In YAML, put every free-text value in double quotes. After
 writing frontmatter, check it: parse it if a parser is available; otherwise re-read it for unquoted colons and `#`.
-Also check that no key appears twice in one mapping; a parser may keep the last one silently.
+Also check that no key appears twice in one mapping; a parser may keep the last one silently. When a sibling skill
+writes a file for this solution (a vendor evaluation, a catalog entry, a tier in the policy), update `tools`,
+`vendor_evaluations`, `risk_tier` and the Summary to match. Keep the Summary's "what is next" current.
 
 **Where the steps meet the portfolio** (the ai-portfolio skill's default gates): steps 1–3 shape the problem,
 approach and design for the prototype, and steps 1 and 2 done in discover are evidence for the gate into
@@ -197,7 +200,7 @@ Hand off by name. If you can't invoke a skill by name, read `../<skill>/SKILL.md
 | When | Skill | What to pass |
 |---|---|---|
 | No framed opportunity yet; the user is still asking where AI could help | **transformation-advisor** (`../transformation-advisor/SKILL.md`) | The user's description |
-| A brief opened for a portfolio item (so it sets `solution`); a new idea needs intake; a no-AI finding; gate evidence after steps 4, 5 and 6; benefit rows before production and actuals after | **ai-portfolio** (`../ai-portfolio/SKILL.md`) | Solution id, the build or buy leaning, eval results, readiness decision, benefit metric, baseline, range and counterfactual |
+| A brief written for a portfolio item (so it sets `solution`; never before `brief.md` exists); a new idea needs intake; a no-AI finding; gate evidence after steps 4, 5 and 6; benefit rows before production and actuals after | **ai-portfolio** (`../ai-portfolio/SKILL.md`) | Solution id, the build or buy leaning, eval results, readiness decision, benefit metric, baseline, range and counterfactual |
 | A tool outside the catalog; no risk tier; client-data questions; inventory entry; policy issues found after launch | **ai-governance** (`../ai-governance/SKILL.md`) | Solution id, data classes, tool and vendor, design brief §3 |
 | Adoption plan and training; uneven use after launch; a proven workflow to share | **ai-enablement** (`../ai-enablement/SKILL.md`) | Solution id, users and roles, first-day changes, the workflow, checklist and cases |
 

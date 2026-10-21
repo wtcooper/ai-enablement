@@ -158,8 +158,8 @@ discover stage, and its owner opens `solutions/ct-evidence-matching/`.
   that are unwritten applies until the attribute checklist (the advisor's foundation item F1) exists, so F1
   becomes a dependency.
 - **Decision:** proceed to step 2, with the checklist as a dependency.
-- **Handoff:** when the brief opened, the delivery lead handed back to **ai-portfolio**, which set the item's
-  `solution`; the brief's Handoffs table records it.
+- **Handoff:** once `brief.md` was written, the delivery lead handed back to **ai-portfolio**, which then set the
+  item's `solution` (the item's `g0` Go had not set it); the brief's Handoffs table records it.
 
 ## 8. Output
 

@@ -55,7 +55,8 @@ reasons, who maintains it, and what would make the firm revisit it.
 8. **Pick the runtime class and rung** (§3.3): the simplest that could meet the bar.
 9. **Name the owner after launch.** If nobody can be named, do not start a build *(advisor default)*.
 10. **Play back** the options table and the decision; write the section; hand vendor questions to
-    **ai-governance**; name step 3 as next.
+    **ai-governance**; name step 3 as next. A decision with open exit criteria is a leaning: `sourcing` stays
+    `undecided` (§8).
 
 ## 3. Options, criteria and decision rules
 
@@ -184,6 +185,11 @@ In `brief.md`, write §2 Build, buy or configure from `../templates/brief.md`: t
 decision, maintenance owner and revisit trigger. In the frontmatter set `sourcing`, `tools`,
 `classification.runtime_class`, `classification.ladder`, `vendor_evaluations` (if any),
 `step_completed: 2`, `next_step: 3` and `updated`. Add the decision to the decisions log.
+
+Keep `sourcing: undecided` until every exit criterion in §1 is met (for example, the own-sample test not yet run,
+or the business owner not yet confirmed). Until then, write the leaning in §2 as "proposed" and in the decisions
+log as a draft, and list the open criteria beside the unticked step. When ai-governance writes a vendor file for
+this solution, add its path to `vendor_evaluations` at once, whatever its decision.
 
 ## 9. Sources
 

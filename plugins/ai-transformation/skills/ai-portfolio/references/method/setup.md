@@ -169,7 +169,8 @@ rebalance at every third review. Live limit: six, the number of owners who can g
 
 `portfolio/portfolio.yaml` from `../templates/portfolio.yaml`, with `portfolio`, `settings`, `stages`,
 `gate_paths` (including `g0_deciders`), `roles`, `rhythm` and `state` filled (schema: `../schemas/portfolio.md`). Inventory items found in
-step 1 are logged in step 2. Set `state.step_completed: 1`, `next_step: 2`, `updated`.
+step 1 are logged in step 2, at the stage their current use supports (`intake.md` §2, "A tool already in use").
+Set `state.step_completed: 1`, `next_step: 2`, `updated`.
 
 ## 9. Sources
 
