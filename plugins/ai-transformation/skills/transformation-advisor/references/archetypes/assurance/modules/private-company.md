@@ -6,7 +6,7 @@ mid-market scale: the tools themselves (disclosure checklists, risk suggestions,
 planning-risk-assessment, substantive-testing, completion-reporting and quality-management, and single audits and
 nonprofit work sit in nonprofit-government. Source keys in brackets are in the YAML or in §10.
 **Evidence is thin on outcomes.** No firm in this module has published a measured AI result; every time or accuracy figure
-is vendor-published or a firm quote inside vendor material. Use it for risk awareness, probes and named examples.
+is vendor-published or a firm quote or survey inside vendor material. Use it for risk awareness, probes and examples.
 
 ## Contents
 
@@ -37,10 +37,10 @@ peer review (the AICPA's triennial review of a firm's quality system and sample 
 | Acceptance and engagement terms | Accept or continue the client, independence, engagement letter (see `assurance-acceptance-independence-10`, `-11`) | review-assurance, client-interaction | AI-related services to an attest client can raise independence concerns [JOFA-ETHICSAI-2026] |
 | Planning and risk assessment | Understand the entity, assess risks, often from a prior-year file and trial balance | review-assurance, research-synthesis | Peer reviewers report weak risk-assessment documentation and weak links to procedures [NYSSCPA-PEERDEF-2026] |
 | Client data intake | PBC ("prepared by client") list, trial balance, general ledger, bank statements | data-reporting, coordination-scheduling | 60% of 54 firms name poor client data and 53% lack of access as top blockers [CPACOM-ATR-2025]; clients refuse API access [CPAPA-ATLAB-2025] |
-| Fieldwork | Tests of details, sampling, proof of cash, lease and debt recalculation | review-assurance, data-reporting | Long documents (board minutes, indentures, contracts); over-auditing to satisfy reviewers [TR-SAMBROWN-2026] |
-| Completion | Draft statements, disclosure checklist, tie-out, report | document-production, review-assurance | Disclosure checklists of 1,200-1,500 lines [TR-DISCLOSURE-2026] |
-| Review and sign-off | Manager and partner review; engagement quality review where required | review-assurance | QM and peer-review effort rivals the time spent on the audit at many small firms [JOFA-SMALLFIRM-2026] |
-| Preparation, compilation, review (SSARS) | Import trial balance, draft statements and notes, analytical inquiries (reviews) | document-production, review-assurance | 43 of 295 reviews (15%) nonconforming across four states in 2025 (#17); no AI evidence found |
+| Fieldwork | Tests of details, sampling, proof of cash, lease and debt recalculation | review-assurance, data-reporting | Long documents (board minutes, indentures, contracts); a small firm over-audited and found leaner samples hard to justify to peer reviewers [TR-SAMBROWN-2026] |
+| Completion | Draft statements, disclosure checklist, tie-out, report | document-production, review-assurance | A completed disclosure checklist can run 1,200-1,500 requirements in one vendor's methodology [TR-DISCLOSURE-2026] |
+| Review and sign-off | Manager and partner review; engagement quality review where required | review-assurance | For many small firms QM and peer-review effort can feel as if it rivals the time spent on the audit [JOFA-SMALLFIRM-2026] |
+| Preparation, compilation, review (SSARS) | Import trial balance, draft statements and notes, analytical inquiries (reviews) | document-production, review-assurance | 43 of 295 reviews (15%) nonconforming across four states in 2025 reports (#17); no AI evidence found |
 | Firm quality management and peer review | System of quality management (SQMS No. 1), annual evaluation, annual practice questionnaire, triennial review | review-assurance, coordination-scheduling | First QM peer reviews in 2026, called a test-and-learn year [AICPA-QMPEER-2026]; top system-review deficiencies are engagement performance and monitoring [TSCPA-PEERREVIEW-2025] |
 
 ## 3. Where AI is changing the work
@@ -129,12 +129,13 @@ nonconforming engagements over engagements reviewed. Samples are small and rates
 | Single audit | 2 of 11 | 3 of 9 | 3 of 15 | 8 of 22 | 16 of 57 (28%) |
 | Other audits under SAS | 8 of 53 | 3 of 39 | 6 of 78 | 6 of 60 | 23 of 230 (10%) |
 | Reviews | 13 of 99 | 5 of 63 | 14 of 75 | 11 of 58 | 43 of 295 (15%) |
-| Compilations with disclosures | 2 of 44 | 4 of 47 | 5 of 51 | 1 of 20 | 12 of 162 (7%) |
-| Compilations omitting disclosures | 5 of 175 | 2 of 67 | 4 of 138 | 3 of 102 | 14 of 482 (3%) |
+| Compilations (and preparations) with disclosures | 2 of 44 | 4 of 47 | 5 of 51 | 1 of 20 | 12 of 162 (7%) |
+| Compilations (and preparations) omitting disclosures | 5 of 175 | 2 of 67 | 4 of 138 | 3 of 102 | 14 of 482 (3%) |
 | All types | 34 of 448 | 18 of 256 | 38 of 418 | 45 of 363 | 135 of 1,485 (9%) |
 
 [TSCPA-PEERREVIEW-2025; CTCPA-PEERREVIEW-2025; MNCPA-PEERREVIEW-2025; MOCPA-PEERREVIEW-2025]; sums are the research
-team's arithmetic. The Oklahoma, South Dakota and Kansas entity reported 86 of 525 (16.38%), including 12 of 40 single
+team's arithmetic. Missouri's compilation cells exclude preparations (2 of 18 omitting disclosures nonconforming); the
+other three states report compilations and preparations together. The Oklahoma, South Dakota and Kansas entity reported 86 of 525 (16.38%), including 12 of 40 single
 audits [OKSCPA-PEERREVIEW-2025]. System reviews passed: Tennessee 40 of 46, Connecticut 28 of 34, Minnesota 41 of 44,
 Missouri 23 of 31, Oregon 32 of 36, Oklahoma group 35 of 55 [same reports; OSCPA-PR-2026]. None of these reports
 mentions AI. For plan audits, the EBSA found 30% of sampled audits (2020 form year) had major deficiencies and that peer
@@ -158,8 +159,8 @@ review did not help identify them [EBSA-AUDITQ-2023] (detail in benefit-plan wor
   nine hours per engagement and 75% per task in its own testing [CASEWARE-VERITYXL-2026].
 - Thomson Reuters: 91% of 140+ Plante Moran pilot respondents said research was faster [TR-SCALING-2026]; Disclosure
   Review used by roughly 30% of eligible customers, close to 300 analyses a month [TR-DISCLOSURE-2026].
-- CPA.com says some firms report LLM research tools cut document analysis time by 50% or more; no firm named
-  [CPACOM-AIACC-2025].
+- CPA.com says LLM-based research tools in audit and advisory are helping cut document analysis time by 50% or more;
+  no firm, sample or measurement is named [CPACOM-AIACC-2025].
 
 **What to measure.** Hours per checklist, selection and review round; review notes per file; overrides of AI answers;
 peer-review and monitoring findings; realisation and margin per engagement (28% of firms track margin per engagement)
@@ -171,7 +172,8 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
 
 - **No AI standard.** The AICPA practice aid *AI Considerations for Financial Statement Auditors* (13 Oct 2026) is
   nonauthoritative; part 1 covers the client's AI in reporting and controls, part 2 the firm's own use (QM policies,
-  team competence, planning AI use, supervision, review, partner duty to know and approve tools); risk-assessment and
+  team competence, planning AI use, supervision, review, and the engagement partner's duty to understand the tools and
+  confirm they are firm-approved and used correctly); risk-assessment and
   evidence content is to follow [AICPA-PA-2026; AICPA-AIPAID-2026; JOFA-AIPA-2026]. No Auditing Standards Board AI
   standard and no ARSC guidance for SSARS work was found.
 - **Quality management is the binding channel.** Firms had to have an SQMS No. 1 system by 15 Dec 2025, with the
@@ -203,32 +205,36 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
 
 - **New owners.** Named assurance innovation or technology leaders at Citrin Cooperman, EisnerAmper and Withum; BPM
   advertised an Audit AI Technology Director with KPIs and vendor budgets; BW&O CPAs an audit manager to refine work with
-  AI agents (`#06`). About a third of 54 firms need a non-traditional skill and about 20% have hired one [CPACOM-ATR-2025].
-- **Managing partner as QM owner.** The partner accountable for the quality system must explain AI risk to a peer
-  reviewer [AICPA-QMPEER-2026]; engagement partners confirm tools are approved and the team is competent [AICPA-PA-2026].
+  AI agents (`#06`). About a third of 54 firms say they need at least one non-traditional skill and about 20% have hired staff with
+  non-traditional backgrounds [CPACOM-ATR-2025].
+- **Managing partner as QM owner.** The CEO or managing partner owns the QM system, evaluates it yearly and is interviewed
+  by peer reviewers on it [AICPA-QMPEER-2026] (the article does not mention AI); engagement partners confirm tools are
+  approved and used correctly [AICPA-PA-2026].
   At Citrin Cooperman firm-level AI governance sits with the Risk Management Officer and domain policies with practice
   leaders (vendor blog) [CASEWARE-READINESS-2026].
 - **Juniors.** Firms say cited AI output teaches juniors: a Withum partner likened Verity to a partner walking a junior
   through a checklist line by line [CASEWARE-CWX-2026]. Accountancy Europe names junior development as a risk
   [ACCTEU-GENAI-2026], and a trade-press opinion piece says AI is absorbing the chasing, rekeying and reconciling that
-  taught the first two years, with no replacement model [CPAPA-STOP-2026]. Neither side has measured it.
+  taught the first two years, and most firms have yet to replace that learning with a deliberate model [CPAPA-STOP-2026]. Neither side has measured it.
 - **Capacity.** The AICPA small-firm column suggests contractors (often retired practitioners) and shared resources,
   and says some firms should consider leaving audit work [JOFA-SMALLFIRM-2026]. A Thomson Reuters executive says 75% of
   audit partners are scheduled to retire within ten years (vendor interview) [TR-STATE-2026]. Bennett Thrasher says it
   uses AI to move professionals from lower-level compliance work to consultative roles earlier [ATODAY-TOP100-2026].
-- **Reviewers.** Work shifts from finding gaps to clearing flagged ones and checking cited sources (`#16`, `#05`).
+- **Reviewers.** Caseware pitches cross-file checks and review packs to managers (`#16`); FGMK runs reviewer agents as a
+  second pass (`#05`). No firm has described how reviewers' work changed; treat it as a hypothesis.
 
 ## 8. Frontier
 
 - **2026-12-15:** SSARS 27 effective [CPACOM-SSARS27-2025]; first Yellow Book QM evaluations due [GAO-YBFAQ-2025].
 - **2026-10-19:** AICPA and AIUC announce one CPA-led engagement combining SOC 2 and AIUC-1 for AI systems, full launch
-  expected early 2027 [AICPA-AIUC-2026]; a new service line for mid-market firms (soc-attestation, assurance-over-ai).
+  expected early 2027 [AICPA-AIUC-2026]; a possible service line for firms with SOC practices, though the article names no
+  firms or firm sizes (soc-attestation, assurance-over-ai).
 - **2026-10-13:** AICPA practice aid issued, with risk-assessment and evidence content and more Q&As to come [AICPA-PA-2026].
 - **2026-10-08:** PKF O'Connor Davies joins Caseware's Agentic Pioneer Program to build its own agents (`#05`) [CASEWARE-PKF-2026].
 - **2026-10-06:** Caseware Risk Suggestion Agent launched worldwide at no extra cost, with a GRF partner quoted [CASEWARE-RSA-2026]
   (`assurance-planning-risk-assessment-09`).
-- **2026-09-23:** Thomson Reuters Disclosure Review launched; it plans to extend into 'no' and 'not applicable'
-  determinations [TR-DISCLOSURE-2026] (`assurance-completion-reporting-04`).
+- **2026-09-23:** Thomson Reuters Disclosure Review launched for Guided Assurance customers with the Disclosure module;
+  it plans to extend into 'no' and 'not applicable' determinations [TR-DISCLOSURE-2026] (`assurance-completion-reporting-04`).
 - **2026-09-21:** Accountancy Europe paper for small and medium practices says higher autonomy needs more governance [ACCTEU-GENAI-2026].
 - **2026-09-09:** Verity for Excel generally available; Client Requests and Response Validation Agent in early access
   (`#12`, `#15`) [CASEWARE-VERITYXL-2026].
@@ -253,14 +259,15 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
 - **"Our clients' data is too messy."** It is the top blocker [CPACOM-ATR-2025]. Tools that take exports, templates and
   PDF bank statements exist (`#13`), but the evidence is a podcast and a partner quote.
 - **"The vendor has governed it."** Governance claims are vendor-published [CASEWARE-LAUNCH-2026], and the AICPA has
-  warned about leaning on platforms without judgment [JOFA-PEER-2026]. Test on your own files (`#03`).
+  warned that some firms lean too heavily on third-party SOC platforms without applying the judgment standards require
+  [JOFA-PEER-2026]; that warning was about SOC 2 work, but the point carries. Test on your own files (`#03`).
 - **"It will get things wrong."** 72% of staff at a UK mid-tier firm feared incorrect output [ICAS-AMBS-2025]. Every tool
   here keeps a person reviewing the output or its exceptions; no error rate is published either way, so measure your own.
 - **"Clients will demand fee cuts."** CFOs ask where savings go and are split on whether auditor AI improved quality;
   one FERF respondent reported 25-30% cuts after a competitive review [FEIDAILY-FERF-2026]. No mid-market case tied to
   AI was found. Prepare the answer with data (`#18`).
-- **"Time saved is not real."** Faster tasks did not become more output for most staff in the one study (74% versus
-  22%) [ICAS-AMBS-2025]. Baseline before rollout (`#08`).
+- **"Time saved is not real."** In the one study, 74% of staff said some tasks were faster but only 22% reported a
+  marked rise in overall output [ICAS-AMBS-2025]. Baseline before rollout (`#08`).
 - **"Staff will use it anyway."** More than one in three already use unauthorised tools [TRI-FOP-2026]; approved tools
   plus training is the response (`#07`).
 - **"Juniors will not learn."** Firms say cited output teaches; others warn it removes the work that taught. Neither is
@@ -271,7 +278,7 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
 Full details for every key used in the use cases are in `../use-cases/private-company.yaml`. Keys cited only here:
 
 - AICPA-QMPEER-2026: AICPA & CIMA Insights, *Peer reviews of QM systems: What firms need to know now* (2026-06-25). https://www.aicpa-cima.com/professional-insights/article/peer-reviews-of-qm-systems-what-firms-need-to-know-now
-- AICPA-APQ-2026: AICPA & CIMA, *Annual Practice Questionnaire for Peer Review FAQs* (2026-06). https://www.aicpa-cima.com/resources/article/annual-practice-questionnaire-for-peer-review-faqs
+- AICPA-APQ-2026: AICPA & CIMA, *Annual Practice Questionnaire for Peer Review FAQs* (2026-06-30; launch week of 1 June 2026). https://www.aicpa-cima.com/resources/article/annual-practice-questionnaire-for-peer-review-faqs
 - CPACOM-SQMS-2026: CPA.com, *Waiting for peer review cycles puts firms at risk under SQMS 1* (2026-09-03). https://www.cpa.com/blog/2026/09/03/waiting-peer-review-cycles-puts-firms-risk-under-sqms-1
 - ICPAS-PRAF-2026: Illinois CPA Society, *Peer Review Alliance Forum 2026, participant slides* (catalogue description, 2026). https://learn.icpas.org/AssetListing/Peer-Review-Alliance-Forum-Virtual-17790/2026-Forum-%E2%80%93-Participant-Slides-29361
 - AICPA-AIPAID-2026: AICPA & CIMA, *Explore new AICPA guidance on AI and the financial statement audit* (2026-10-12). https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit
@@ -286,7 +293,7 @@ Full details for every key used in the use cases are in `../use-cases/private-co
 - CPAPA-STOP-2026: CPA Practice Advisor, *Stop Training CPAs for Yesterday's Work* (opinion, 2026-09-02). https://www.cpapracticeadvisor.com/2026/09/02/stop-training-cpas-for-yesterdays-work/189548/
 - AICPA-TOPISSUES-2026: CPA Practice Advisor on the AICPA PCPS Top Issues Survey (2026-06-23). https://www.cpapracticeadvisor.com/2026/06/23/aicpa-survey-cites-change-management-for-technology-and-ai-as-top-long-term-issue-facing-accounting-firms/185547/
 - JOFA-TOPISSUES-2026: Journal of Accountancy, *AICPA Top Issues Survey: Firms' focus on technology rises* (2026-06-23). https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
-- ICAEW-MIDTIER-2026: ICAEW, *Mid-tier firms focused on AI and consolidation* (2026-05). https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/mid-tier-firms-focused-on-ai-and-consolidation
+- ICAEW-MIDTIER-2026: ICAEW, *Mid-tier firms focused on AI and consolidation* (2026-05-22). https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/mid-tier-firms-focused-on-ai-and-consolidation
 - CPACOM-AIACC-2025: CPA.com, *2025 AI in Accounting Report* (2025-06). https://www.cpa.com/sites/cpa/files/2025-06/2025_AI_in_Accounting_Report.pdf
 - ATODAY-TOP100-2026: Accounting Today, *Top 100 Firms* print PDF (2026-03). https://arizent.brightspotcdn.com/68/01/115c3908493183df05d3879ed2e5/act0326-top100.pdf
 - FEDYK-2022: Fedyk et al., *Is artificial intelligence improving the audit process?*, Review of Accounting Studies (2022). https://ideas.repec.org/a/spr/reaccs/v27y2022i3d10.1007_s11142-022-09697-x.html
