@@ -706,8 +706,12 @@
     guidance and experienced human review is vital (CAQ-RSM-2026). Deloitte UK launched a Research Assistant
     chatbot for audit research across its international content (DELOITTE-UKTR-2025). PCAOB staff heard in 2024
     that some firms had built tools to research internal accounting and auditing guidance (PCAOB-GENAI-2024).
+    Mid-market example: Plante Moran piloted Thomson Reuters CoCounsel for technical research with 140+ participants;
+    the vendor's case study describes new AI security protocols and software controls at the firm and reports an
+    anonymous internal survey of the pilot (TR-PLANTEMORAN-2025).
   outcomes:
     - {lever: capacity, description: "RSM states the tool's reach; no time, accuracy or consistency measure is published", figure: "4,000+ assurance professionals with access", measures: "number of RSM assurance professionals the release says the tool serves (reach, not usage)", provenance: self-reported, source_ref: RSM-ASKLUCA-2026}
+    - {lever: speed, description: "Most Plante Moran pilot respondents said the tool was faster than traditional research methods; a smaller share reported significant time savings in technical research", figure: "91% faster; 62% significant savings", measures: "respondents to an anonymous internal survey of the firm's 140+ pilot participants; respondent count not stated on the page", provenance: vendor-published, source_ref: TR-PLANTEMORAN-2025}
   prerequisites:
     - "A curated, version-controlled corpus of the firm's own manuals, practice aids and technical guides"
     - "Citations back to source passages, and a route to escalate unanswered questions to technical consultation"
@@ -729,11 +733,15 @@
     - {ref: PCAOB-GENAI-2024, title: "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative AI in Audits and Financial Reporting", publisher: "PCAOB (staff)", type: regulator, url: "https://pcaobus.org/documents/generative-ai-spotlight.pdf", date: "2024-07", access: full, locator: "p. 4"}
     - {ref: CPAB-AI-2024, title: "The use of artificial intelligence in the audit: balancing innovation and risk (CPAB Exchange)", publisher: "Canadian Public Accountability Board", type: regulator, url: "https://cpab-ccrc.ca/docs/default-source/thought-leadership-publications/2024-use-of-artificial-intelligence-in-the-audit-en.pdf", date: "2024-09-12", access: full, locator: "p. 3"}
     - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03-30", access: full, locator: "p. 8"}
-  last_reviewed: "2026-10-17"
+    - {ref: TR-PLANTEMORAN-2025, title: "Thomson Reuters CoCounsel at Plante Moran", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/thomson-reuters-cocounsel-at-plante-moran", date: "2025-11-20", access: full, locator: "Key outcomes"}
+  last_reviewed: "2026-10-21"
   notes: >-
-    Two named firms (RSM US, Deloitte UK), no measured effect on consistency or error rate. It sits on the boundary
-    between quality management (methodology and consultation) and service delivery; the sources do not describe a
-    quality-monitoring role for it.
+    Named firms: RSM US, Deloitte UK and Plante Moran; no measured effect on consistency or error rate. Firm kinds:
+    RSM describes itself as a provider to the middle market (RSM-ASKLUCA-2026); the vendor describes Plante Moran as
+    one of the nation's largest audit and accounting firms (TR-PLANTEMORAN-2025). The Plante Moran survey covers
+    general audit research, is vendor-published, and is a share of respondents, so the grade stays B. It sits on the
+    boundary between quality management (methodology and consultation) and service delivery; the sources do not
+    describe a quality-monitoring role for it. Plante Moran merged 2026-10-21 (wave 6, mid-market).
 
 - id: assurance-quality-management-13
   title: "Engage regulators early on novel AI tools and keep an inspection-ready file for each tool"

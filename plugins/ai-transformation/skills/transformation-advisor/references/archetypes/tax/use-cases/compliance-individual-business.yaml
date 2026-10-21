@@ -6,6 +6,10 @@
 # parallel-run result for AI-prepared returns was found. Overlaps: research tools are in research-advisory
 # (tax-research-advisory-01), notice response in controversy (tax-controversy-01, -02), corporate and in-house
 # direct-tax compliance in compliance-corporate.
+# Widened 2026-10-21 for mid-market firms and owner-managed clients: entries 26-31 added (reasonable compensation,
+# basis, multi-entity clients, owner estimates, engine replacement, estate and gift returns), and new sources merged
+# into 02, 05, 06, 12, 18, 21 and 24. No grade changed. State pass-through entity tax and composite returns belong
+# to the multistate-private module.
 
 - id: tax-compliance-individual-business-01
   title: AI-prefilled organizers, tailored document requests, missing-information follow-up and automated chasing
@@ -102,6 +106,8 @@
     state how they interpreted it and a confidence level, and flag it for a reviewer, who gives a reason when
     overriding so the agent can learn; agents run on PwC's Agent OS, which manages the tools each agent can use.
     Intuit's ProConnect describes AI data import with side-by-side confirmation of each figure against the source.
+    On 2026-06-29 Wolters Kluwer made AI document intelligence in CCH Axcess Scan generally available for K-1s and
+    supporting statements, built with Microsoft Azure Content Understanding (WK-SCANGA-2026).
     Werfel's preparer risk register proposes independent verification of AI-extracted figures against source
     documents for all returns, spot-check audits of extraction accuracy and an escalation protocol for complex or
     ambiguous documents.
@@ -118,6 +124,12 @@
       measures: "vendor statement of average overall accuracy of automated K-1 extraction; test set, unit (field or document) and method not stated"
       provenance: vendor-published
       source_ref: WK-AXCESSSCAN-2026
+    - lever: speed
+      description: "Wolters Kluwer's general-availability release says manual entry of one K-1 takes 10-15 minutes, claims up to a 60-80% reduction, and reports 30-70% efficiency for early users."
+      figure: "10-15 minutes per K-1 manually; up to 60-80% reduction; 30-70% efficiency for early users"
+      measures: "vendor statements in a release; early users, sample and method not stated"
+      provenance: vendor-published
+      source_ref: WK-SCANGA-2026
     - lever: capacity
       description: "PwC says one person now reviews where three people used to gather to decide how to treat an unfamiliar K-1 footnote. No rates or counts are published."
       figure: "none published"
@@ -152,7 +164,8 @@
     - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "section 'Ratings': importing data and integration" }
     - { ref: TREAS-7216-2008, title: "26 CFR 301.7216-1, 301.7216-2 and 301.7216-3: disclosure or use of tax return information by tax return preparers", publisher: "U.S. Treasury (T.D. 9375, as amended), text read from eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-26/section-301.7216-3", date: "2008-01", access: full, locator: "301.7216-1(b)(2)(i)(B); 301.7216-2(d)(2)" }
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "vendor sections on K-1 and consolidated 1099 coverage" }
-  last_reviewed: "2026-10-17"
+    - { ref: WK-SCANGA-2026, title: "Expanded CCH Axcess Expert AI to Deliver AI-Powered Scan and K-1 Automation", publisher: "CPA Practice Advisor (Wolters Kluwer release)", type: press, url: "https://www.cpapracticeadvisor.com/?p=185870", date: "2026-06-29", access: full, locator: "release paragraphs on general availability, manual K-1 time and reduction figures" }
+  last_reviewed: "2026-10-21"
   notes: >-
     Ladder kept at automate because the named products route only exceptions to people; a firm that adopts Werfel's
     control of verifying every extracted figure is running it as augment. PwC's K-1 example is from its asset and
