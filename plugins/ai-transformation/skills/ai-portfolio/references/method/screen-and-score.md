@@ -31,8 +31,9 @@ prioritize method says).
 - Six scores with what each rests on; `weighted_score`, `value_index` and `readiness_index`.
 - The readiness checklist (§3.3) answered.
 - `category`, `horizon`, `risk_tier`, `gate_path` and a sponsor who controls discovery resources.
-- A `g0` decision: Go into discover, Kill, Hold (with `revisit_when`) or Recycle (back to the submitter with what
-  to rework). Every Go carries `kill_criteria` and `next_gate`.
+- A `g0` decision by the path's `g0_deciders`: Go into discover, Kill, Hold (with `revisit_when`) or Recycle (back
+  to the submitter with what to rework), or "pending the forum" while no deciders are named. Every Go carries
+  `kill_criteria` (from the plan's go/no-go when one exists) and `next_gate`.
 
 ## 2. How to run it
 
@@ -48,8 +49,13 @@ prioritize method says).
    condition on the Go.
 8. **Categorize** with the shared category rules (prioritize §3.4) and set the horizon.
 9. **Check against the portfolio**: duplicates, dependencies on foundation items, the live limit and the balance.
-10. **Record the `g0` decision** (§3.4) with the sponsor and the gatekeepers set in step 1. On the light path the
-    portfolio owner decides alone. Play back, write, update state.
+10. **Propose kill criteria** for each likely Go. When the intake record's "From the plan" section has a go/no-go,
+    start from it; if you propose something different, say how it differs and why.
+11. **Record the `g0` decision** (§3.4) by the deciders named for the item's path in `gate_paths.g0_deciders`
+    (on the light path, usually the portfolio owner alone). If no deciders are named for that path, do not append
+    a `g0` decision: write the proposed outcome in the intake record's "Screen result" as "pending the forum",
+    keep `stage: intake`, set `next_gate.gate: g0`, and put the item in the next review pack. Play back, write,
+    update state.
 
 ## 3. Axes, rules and thresholds
 

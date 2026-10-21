@@ -32,7 +32,8 @@ readiness and value, and four outputs: Go, Kill, Hold or Recycle [COOPER-STAGEGA
 - One outcome recorded with its reason and evidence; a Go names the resources, who releases them, the
   conditions, the next gate and the evidence it will need [COOPER-STAGEGATE-n.d.].
 - Kill criteria for the next stage agreed now (proposed default).
-- Handoffs made: to ai-solution-delivery on entering prototype; benefits rows before `g3`.
+- Handoffs made: to ai-solution-delivery by the time the item enters prototype (a brief may open earlier, in
+  `discover`); `solution` set as soon as a brief opens; benefits rows before `g3`.
 
 ## 2. How to run a gate
 
@@ -48,7 +49,11 @@ readiness and value, and four outputs: Go, Kill, Hold or Recycle [COOPER-STAGEGA
    you record. Never present your view as the decision.
 7. **Record** the decision in `decisions` (append, never edit), update `stage`, `status`, `next_gate`,
    `kill_criteria`, and play it back.
-8. **Hand off** (§3.3) and update state.
+8. **Track the next gate's evidence** in the intake record's "Next gate evidence" table: one row per item of
+   `next_gate.evidence`, with its status, owner and what it needs first. Update the table as evidence arrives.
+   Give drafted messages (an ask to a sponsor, a note to a manager) in the chat, or list them under the review
+   pack's Actions. Do not create other files.
+9. **Hand off** (§3.3) and update state.
 
 ## 3. Stages and gate evidence
 
@@ -95,7 +100,7 @@ risk controls (a forecast, read through a news report) [GARTNER-2025].
 
 | When | Hand off to | What moves |
 |---|---|---|
-| Go at `g1` (entering prototype), or any build or buy decision | **ai-solution-delivery** | It opens `solutions/<id>/` (brief, evaluation plan); set `solution` on the item |
+| An item in `discover` or later needs a problem frame or a build or buy leaning (a brief may open in `discover` as `g1` evidence); at the latest, a Go at `g1` | **ai-solution-delivery** | It opens `solutions/<id>/` and hands back; set `solution` on the item at once, with no gate needed |
 | `g3` and `g4` evidence | ai-solution-delivery's `readiness.md` and `post-launch.md` | Read them as gate evidence; do not re-assess |
 | Risk tier unclear, new tool or vendor, client-data question | **ai-governance** | Tier, policy and tool decision come back through `overlay/` |
 | Adoption, training, champions; seat roll-outs | **ai-enablement** | Enablement plan for `g4`; workflows into `enablement/workflows/` |
@@ -229,7 +234,8 @@ The detail (readiness checks, consent, independence, partners, benefits rows, ho
 
 In `portfolio.yaml` for the item: a new `decisions` entry; `stage`, `status`, `next_gate`, `kill_criteria`,
 `solution`, `benefit_owner`, `benefits` as they change. A held item gets `revisit_when`. Update `state` and
-`updated`. If the gate was held in a review, record it there too (`portfolio-review.md`).
+`updated`. If the gate was held in a review, record it there too (`portfolio-review.md`). Pre-gate evidence
+status goes in the intake record's "Next gate evidence" table (`../templates/intake.md`), not in a separate file.
 
 ## 11. Sources
 
