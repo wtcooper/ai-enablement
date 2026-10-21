@@ -347,8 +347,8 @@
     CoCounsel, alongside Copilot Studio and Amazon Quick Suite agent building, presented by staff from Amazon, AT&T, EY,
     PwC and Reed Smith (COST-TECH-2026). Fintech Global reports that Blue J's platform supports federal, state and local tax research (BLUEJ-RAISE-2025).
   outcomes:
-    - {lever: quality, description: "Vals public question P-004 (SALT: New York versus California pass-through entity tax credit), 18 models traced", figure: "overall leader scored 91%; three models scored 76.5%; one model passed all 18 checks", measures: "weighted rubric score on one public State & Local Tax question; the leader cleared every must-pass check and missed two lower-weight points; one question only, not a SALT-wide score", provenance: independent, source_ref: VALS-TAXAGENT-2026}
-    - {lever: quality, description: "Vals Tax Agent Bench headline (adjacent: mostly federal corporate research)", figure: "best model 49.19%", measures: "average score across 193 private test questions, roughly 60% federal corporate income tax and the rest partnership, SALT, transfer pricing and employment tax; SALT-only score not published", provenance: independent, source_ref: VALS-TAXAGENT-2026}
+    - {lever: quality, description: "Vals public question P-004 (SALT: New York versus California pass-through entity tax credit), 18 models traced", figure: "one model passed all 18 checks; overall leader 91%; one model 79.4%; three 76.5%; the other twelve scored 0", measures: "per-model score on one public State & Local Tax question, shown for illustration and outside the leaderboard; a model failing any must-pass check scores 0, otherwise partial credit (consistent with the page's Weighted Pass metric); eleven of the twelve zeros failed the same must-pass check, how New York treats PTET credits from more than one electing entity; one question only, not a SALT-wide score", provenance: independent, source_ref: VALS-TAXAGENT-2026}
+    - {lever: quality, description: "Vals Tax Agent Bench headline (adjacent: mostly federal corporate research)", figure: "best model 49.19%", measures: "share of 193 private test questions answered fully correctly (every rubric check passed), adjusted for citation quality; roughly 60% federal corporate income tax and the rest partnership, SALT, transfer pricing and employment tax; SALT-only score not published", provenance: independent, source_ref: VALS-TAXAGENT-2026}
   prerequisites:
     - "Approved enterprise tools and current state content; COST's workshop notes privacy and ethics among its topics (COST-TECH-2026)"
   risks_and_guardrails:
@@ -362,7 +362,7 @@
     tax work (COST-TECH-2026).
   evidence_grade: C
   sources:
-    - {ref: VALS-TAXAGENT-2026, title: "Tax Agent Bench: Agentic US corporate tax research (leaderboard and methodology)", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/benchmarks/tax_agent_bench", date: "2026-10-20", access: full, locator: "Overview paragraph on question mix; Tool Use section on P-004 (read via mirror; the archetype cites an update of 2026-10-16)"}
+    - {ref: VALS-TAXAGENT-2026, title: "Tax Agent Bench: Agentic US corporate tax research (leaderboard and methodology)", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/benchmarks/tax_agent_bench", date: "2026-10-20", access: full, locator: "Background (question mix), Scoring, and Trajectories on a Public Question (P-004); page published 2026-10-20 23:26 GMT, re-read 2026-10-21 via mirror; the archetype's sources.md dates an earlier version 2026-10-16"}
     - {ref: COST-TECH-2026, title: "2026 SALT in a Digital World Workshop agenda (version dated 02/26/26)", publisher: "Council On State Taxation", type: conference, url: "https://www.cost.org/globalassets/cost/cost-events/2026tech-agenda-260226-revised.pdf", date: "2026-02-26", access: full, locator: "Monday March 2, Parts 1-4"}
     - {ref: TRFORD-SALT-2026, title: "Multistate Tax Trends: A Q&A with SALT Expert Niki Ford on Nexus, Marketplaces, AI, and the Future", publisher: "Thomson Reuters Tax & Accounting (Checkpoint News)", type: vendor, url: "https://tax.thomsonreuters.com/news/multistate-tax-trends-a-qa-with-salt-expert-niki-ford-on-nexus-marketplaces-ai-and-the-future/", date: "2026-04-09", access: full, locator: "series introduction and closing product references"}
     - {ref: BLUEJ-RAISE-2025, title: "Blue J raises $122m to scale AI-powered tax research", publisher: "Fintech Global", type: press, url: "https://fintech.global/?p=210135", date: "2025-08-05", access: full, locator: "paragraph 2"}
@@ -372,9 +372,13 @@
     General cited research assistants are graded in tax-research-advisory-01 to -08; this entry keeps only the multistate
     angle. COST's list names tools as demonstrated in a workshop; it does not say any speaker's employer deployed them.
     Example types: vendors (Thomson Reuters, Blue J, Vals) and a business association's workshop (COST) with presenters
-    from Big Four firms (EY, PwC), a law firm and large companies. The same public Vals question (P-004) is reported
-    differently in tax-research-advisory-04, read from an earlier version of the page (2026-10-16): twelve of eighteen
-    models scored 0 there. The figures here are from the 2026-10-20 read; check the live page before quoting either.
+    from Big Four firms (EY, PwC), a law firm and large companies. Vals P-004 check (live page re-read 2026-10-21, page
+    published 2026-10-20): one paragraph reports all of these results for the same 18 models. Grok 4.6 passes all 18
+    checks, Claude Fable 5.1 scores 91%, Muse Spark 1.3 79.4%, three models 76.5%, and the remaining twelve score 0.
+    tax-research-advisory-04's "twelve of eighteen models scored 0" therefore matches this entry; the two describe
+    different slices of one result and do not conflict. Only the ref date differs (2026-10-16 in sources.md and
+    research-advisory; 2026-10-20 here, the live page's date). On the leaderboard's all-pass metric only the model
+    passing every check would score above 0 on this question.
     Cross-references: tax-research-advisory-01 and tax-research-advisory-04.
 
 - id: tax-multistate-private-08
