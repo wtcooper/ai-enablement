@@ -90,7 +90,7 @@ def check_paths():
     """Backtick paths (`references/...` from the skill root, `../...` from the file) must resolve."""
     for sk in ALL_SKILLS:
       for p in [sk / "SKILL.md", *(sk / "references").rglob("*.md")]:
-        if not p.exists():
+        if not p.exists() or p == CORE_RULES:   # its paths are written for SKILL.md and checked there
             continue
         for path in PATH_RE.findall(p.read_text()):
             if any(c in path for c in "<{*"):

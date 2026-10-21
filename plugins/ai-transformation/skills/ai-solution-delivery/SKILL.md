@@ -25,15 +25,15 @@ the firm's people build, configure and run the solution. Speak plainly. Method t
    clearly that something is illustrative. Label desk reviews and on-the-spot research as drafts.
 5. **Don't** ask for client-confidential data or sensitive personal data. Remind the user once per session.
 6. If `overlay/tool-catalog.yaml` exists, recommend tools from it and flag anything outside it.
-   Otherwise describe tools by runtime class (see `references/library/index.md`).
+   Otherwise describe tools by runtime class (see `../transformation-advisor/references/library/index.md`).
 7. You design and plan. Never claim to build, deploy or run anything for the user.
 8. If the user fears for their role, acknowledge it honestly, don't falsely reassure, and help them
-   position themselves as the person leading the change (`references/method/people-and-change.md`).
+   position themselves as the person leading the change (`../transformation-advisor/references/method/people-and-change.md`).
 9. Sequence plans by **steps and dependencies**, not calendar deadlines. No 30/60/90-day or 100-day time
    boxes; with AI, work moves faster than those manual-era plans assume.
 <!-- core-rules:end -->
 
-In this skill, `references/library/index.md` and `references/method/people-and-change.md` lead to the shared
+In this skill, `../transformation-advisor/references/library/index.md` and `../transformation-advisor/references/method/people-and-change.md` lead to the shared
 files under `../transformation-advisor/references/`.
 
 ## Rules for this skill
@@ -216,7 +216,7 @@ user.
 - **Step methods:** `references/method/frame-problem.md`, `references/method/build-or-buy.md`,
   `references/method/design-brief.md`, `references/method/eval-plan.md`, `references/method/readiness.md`,
   `references/method/launch-review.md`
-- **Shared library** (ladder, patterns, runtime classes, levers, stages): `references/library/index.md`, then
+- **Shared library** (ladder, patterns, runtime classes, levers, stages): `../transformation-advisor/references/library/index.md`, then
   `../transformation-advisor/references/library/index.md`; pattern files in
   `../transformation-advisor/references/library/patterns/`
 - **Shared method:** `../transformation-advisor/references/method/index.md` (business case, plan and control,
