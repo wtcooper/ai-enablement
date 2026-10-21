@@ -1,6 +1,8 @@
 # Use cases: assurance / quality-management
 # Part A (entries 01-16) is firm-level AI tool governance under ISQM 1 / PCAOB QC 1000; Part B (17-25) is
 # engagement-level supervision, review and documentation of AI output. Sources checked 2026-10-17.
+# Entries 26-28 (added 2026-10-21, wave 6) are firm-level and cover small and mid-size US firms: SQMS 1, firm-built
+# agents and outside capital; mid-market evidence was also merged into 12, 13, 14, 16 and 24.
 # No entry is graded A: no firm or regulator has published a measured outcome of AI tool governance or review.
 
 # ---- Part A: firm-level AI tool governance ----
@@ -800,9 +802,12 @@
     - "PCAOB staff publications state they give staff views, not necessarily the Board's (PCAOB-GENAI-2024; PCAOB-PRIORITIES-2024); Fieldguide, a vendor, calls the July 2024 GenAI spotlight staff views rather than binding rules (FIELDGUIDE-PCAOB-2026)"
     - "Regulators' stated focus includes how firms' quality control addresses AI at firm level as well as what appears in selected files (CAALLEY-PCAOBPE-2025)"
     - "The FRC says its March 2026 guidance is not a response to identified quality deficiencies (FRC-GENAINEWS-2026)"
+    - "The May 2026 SOC 2 reviewer guidance concerns templated reports and heavy platform reliance, not generative AI; applying it to AI tools is an extrapolation (JOFA-PRB)"
+    - "Reviewer Alert content is not Peer Review Board guidance, and article text is behind a login, so absence of AI is established for titles only (AICPA-REVALERT-2026)"
   human_checkpoints:
     - "Quality leadership decides what to bring to regulators and when"
     - "Tool owners answer inspector questions from the central file"
+    - "Peer reviewer judges whether engagements are tailored and conforming; the managing partner explains the system (JOFA-QMPR-2024; JOFA-PRB)"
   role_evolution: >-
     Quality and regulatory-relations leaders add AI tool briefings to inspection preparation
     (CAALLEY-PCAOBPE-2025); the FRC says its sandbox gives participants direct access to regulatory expertise on
@@ -825,13 +830,18 @@
     - {ref: PCAOB-PRIORITIES-2024, title: "Spotlight: Staff Priorities for 2025 Inspections and Interactions With Audit Committees", publisher: "PCAOB (staff)", type: regulator, url: "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2025-priorities-spotlight_v3.pdf", date: "2024-12", access: full, locator: "p. 5 ('Technology used in the audit'); cover note on staff views"}
     - {ref: ICAEW-POD-2025, title: "How should audit firms use AI? (Beyond Finance podcast transcript)", publisher: "ICAEW", type: podcast, url: "https://www.icaew.com/insights/podcast/beyond-finance/how-should-audit-firms-use-ai/transcript", date: "2025-11-11", access: full, locator: "transcript, McConnon answer on objectives for the guidance"}
     - {ref: FIELDGUIDE-PCAOB-2026, title: "PCAOB AI oversight: where the Board stands on AI in audit", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/pcaob-ai-audit-standards", date: "2026-08-06", access: full, locator: "section 'What the PCAOB Spotlight says about GenAI in audits'"}
-  last_reviewed: "2026-10-17"
+    - {ref: JOFA-QMPR-2024, title: "How the new QM standards may affect peer review", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2024/dec/how-new-qm-standards-may-affect-peer-review.html", date: "2024-12-10", access: full, locator: "section 'Updated peer review standards'"}
+    - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14", access: full, locator: "sections 'A heightened focus on SOC 2 quality' and 'Responding when elevated risks are identified'"}
+    - {ref: AICPA-REVALERT-2026, title: "Reviewer Alert, editions Oct 2025, Dec 2025, Feb 2026, May 2026, Jun 2026 and Sep 2026 (tables of contents; article text behind a free login)", publisher: "AICPA & CIMA Peer Review Program", type: standard-setter, url: "https://www.aicpa-cima.com/news/download/reviewer-alert-september-2026-edition", date: "2026-09-23", access: full, locator: "list of articles in each edition; none is titled for AI"}
+  last_reviewed: "2026-10-21"
   notes: >-
     The Gunia remarks reach us through press summaries of Accounting Today, not the PCAOB text. 'Piloting' reflects
     the sandbox's first round; outputs not yet published. The IMC materials are staff drafts, not Board policy.
+    Merged 2026-10-21 (wave 6, mid-market): the AICPA peer-review version for small and mid-size US firms, which is an
+    idea for AI (AICPA staff discussed it for SOC 2 platforms only); grade unchanged.
 
 - id: assurance-quality-management-14
-  title: "Idea: use AI in the firm's own quality monitoring, root-cause analysis and triage of inspection findings"
+  title: "AI in the firm's own quality monitoring, risk assessment and remediation tracking (one SQMS 1 vendor tool announced; firm use and AI root-cause analysis remain ideas)"
   archetype: assurance
   module: quality-management
   function: risk-compliance-legal
@@ -840,36 +850,50 @@
   ladder: augment
   change_scope: process
   runtime_class: background-agent
-  maturity: emerging
+  maturity: announced
   problem: >-
     Inspectors find firms' own monitoring weak. IFIAR counted 21 findings in 2025 for failing to identify audit
     performance issues when performing internal inspections (6 in 2024) and 10 findings on root-cause analysis
     or remedial actions; monitoring and remediation was the second most common firm-level theme, with 42 firms
     (32%) having at least one finding (IFIAR-SURVEY-2026). The PCAOB Chairman says engagement-level deficiencies
     are often symptoms of earlier issues in training, supervision, methodology, governance or resource
-    allocation (PCAOB-LOGOQC-2026).
+    allocation (PCAOB-LOGOQC-2026). Small and mid-size US firms must keep a risk assessment, monitor, track
+    remediation and document engagement quality reviews under SQMS Nos. 1 and 2, recurring administrative work done
+    on top of engagements (JOFA-QMRES-2025; AUDITFILE-QL-2025).
   solution: >-
     Idea raised by regulators. The SEC's chief accountant said the SEC asks auditors how they use AI to improve
     engagement-level audit quality and how they use AI to monitor their system of quality control
     (KPMG-HOHL-2026). NFRA's staff paper calls for root-cause analysis of technology-related
     findings to feed the annual evaluation of the system of quality management (NFRA-STAFF-2026). The FRC
     noted that firms' tool use may sometimes be captured in other activities such as root-cause analysis,
-    without saying AI does the analysis (FRC-ATT-2025). No firm example was found.
+    without saying AI does the analysis (FRC-ATT-2025). No firm example was found. Vendor product for small and
+    mid-size firms: AuditFile (a cloud audit-automation vendor) announced QualityLink on 4 Dec 2025. The vendor says it
+    combines agentic AI with its audit platform to identify firm-level quality risks mapped to SQMS 1 and ISQM 1
+    components, evaluate controls and flag deficiencies, track corrective actions, run engagement quality review
+    workflows and show a firm-wide dashboard, with templates for peer review and inspection readiness, and that it is
+    available to all AuditFile customers; the release names no customer and gives no figures (AUDITFILE-QL-2025). AI
+    is not a given in small-firm SQMS tooling: the CPA.com and FinReg QMCore page does not mention AI in its text
+    (CPACOM-QMCORE-2026).
   outcomes:
     - {lever: quality, description: "none published", figure: "none", measures: "no measure published", provenance: independent, source_ref: KPMG-HOHL-2026}
+    - {lever: capacity, description: "Vendor says QualityLink reduces administrative burden and strengthens consistency across engagements; no figure", figure: "none published", measures: "n/a (vendor statement)", provenance: vendor-published, source_ref: AUDITFILE-QL-2025}
   prerequisites:
     - "Structured inspection, internal-review and engagement data, and a defined root-cause taxonomy"
+    - "For the vendor tool: the firm is already on the vendor's audit platform (the release describes integration with its Advantage Audit Suite) (AUDITFILE-QL-2025)"
   risks_and_guardrails:
+    - "SQMS 1 puts ultimate responsibility for the system on the firm's managing partner, so an AI-generated risk assessment still needs the firm's own review (JOFA-QMRES-2025)"
+    - "Vendor claims only for QualityLink: no named customer, no test, no peer-review outcome (AUDITFILE-QL-2025)"
     - "IFIAR's 2025 survey shows no AI-specific category in firm-wide quality-management findings (IFIAR-SURVEY-2026, Appendix A)"
     - "IFIAR says inspection results do not provide a complete measure of audit quality (IFIAR-SURVEY-2026, p. 2)"
     - "PCAOB staff drafts say about 90% of registration and inspection data are unstructured, a limit on automation at the regulator too (STARLING-IMC-2026)"
   human_checkpoints:
     - "Quality leadership decides which root causes are real and owns conclusions on the system"
     - "Remediation owners sign off actions"
+    - "Firm decides which quality risks and responses to adopt and who is responsible (inferred from JOFA-QMRES-2025; not described in AUDITFILE-QL-2025)"
   role_evolution: >-
     Quality staff would move from compiling findings to interpreting AI-surfaced patterns; the SEC's question
     suggests regulators will ask how firms use AI this way (KPMG-HOHL-2026).
-  evidence_grade: D
+  evidence_grade: C
   sources:
     - {ref: IFIAR-SURVEY-2026, title: "Survey of Inspection Findings 2025", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/ifiar/2025SurveyReport.pdf", date: "2026-04-01", access: full, locator: "p. 2; Appendix A, Tables A.2 and A.3"}
     - {ref: PCAOB-LOGOQC-2026, title: "Statement on the Adoption of QC 1000 Amendments (Chairman D. Logothetis; read via text mirror)", publisher: "PCAOB", type: regulator, url: "https://pcaobus.org/news-events/speeches/speech-detail/statement-on-the-adoption-of-qc-1000-amendments", date: "2026-09-09", access: full, locator: "section 'The Hinge Opening the Door to Inspection Modernization'"}
@@ -877,9 +901,15 @@
     - {ref: NFRA-STAFF-2026, title: "NFRA Staff Series on Technology in Audit 01: General Principles for Technology Adoption in Audit (staff paper, not a policy or statement of the Authority)", publisher: "National Financial Reporting Authority (India)", type: regulator, url: "https://cdnbbsr.s3waas.gov.in/s3e2ad76f2326fbc6b56a45a56c59fafdb/uploads/2026/07/202607231927160337.pdf", date: "2026-07", access: full, locator: "p. 7 (monitoring and internal inspection)"}
     - {ref: STARLING-IMC-2026, title: "Modernizing US PCAOB Audit Inspections", publisher: "Starling Insights", type: press, url: "https://insights.starlingtrust.com/content/observations/modernizing-us-pcaob-audit-inspections", date: "2026-09-01", access: full, locator: "paragraph on technology"}
     - {ref: FRC-ATT-2025, title: "Thematic Review: Certification of Automated Tools and Techniques (PDF; an AI-converted HTML version is at https://www.frc.org.uk/docs/8383/html/)", publisher: "Financial Reporting Council (UK)", type: regulator, url: "https://www.frc.org.uk/documents/8383/Thematic_Review_on_the_Certification_of_Automated_Tools_and_Techniques.pdf", date: "2025-06-26", access: full, locator: "Monitoring the use and impact of ATTs"}
-  last_reviewed: "2026-10-17"
+    - {ref: AUDITFILE-QL-2025, title: "AuditFile Announces Launch of QualityLink", publisher: "AuditFile", type: vendor, url: "https://auditfile.com/pr/12_4_25", date: "2025-12-04", access: full, locator: "paragraphs 2-3 and 'Key Features Include'"}
+    - {ref: JOFA-QMRES-2025, title: "AICPA unveils new QM resources to help firms meet Dec. 15 deadline", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2025/aug/aicpa-unveils-new-qm-resources-to-help-firms-meet-dec-15-deadline/", date: "2025-08-12", access: full, locator: "section 'A deeper discussion of a QM system's 8 components'"}
+    - {ref: CPACOM-QMCORE-2026, title: "QMCore (product page; page text has no mention of AI)", publisher: "CPA.com (with FinReg Global)", type: vendor, url: "https://www.cpa.com/qmcore", date: "2026-10", access: full, locator: "page text (HTTP last-modified 2026-10-15)"}
+  last_reviewed: "2026-10-21"
   notes: >-
-    Idea. Hohl asked the question; no firm reports doing it. IFIAR figures are counts of findings across member
+    Grade raised from D to C on 2026-10-21 (wave 6, mid-market) because the new evidence is a vendor product for this
+    same change (AuditFile QualityLink, announced, vendor claims only); maturity moved from emerging to announced.
+    Firm use remains an idea: Hohl asked the question; no firm reports doing it. Whether AuditFile's customers are
+    small or mid-size firms is not stated in the release. IFIAR figures are counts of findings across member
     firms inspected, as reported by members. The '90% unstructured' figure concerns PCAOB data and is reported
     second-hand from staff materials the Board has not adopted.
 
@@ -927,7 +957,7 @@
     the auditor's own tools. Change scope is model because it would add a new sourcing route for tool assurance.
 
 - id: assurance-quality-management-16
-  title: "Firm-wide audit programmes on an AI-enabled platform, updated centrally to remediate inspection findings"
+  title: "Firm-wide audit programmes on an AI-enabled platform, updated centrally to remediate inspection findings; regional firms standardise methodology across engagement types on one platform"
   archetype: assurance
   module: quality-management
   function: service-delivery
@@ -940,36 +970,58 @@
   problem: >-
     Sanville & Company, a 20-person firm on a legacy platform, found its methodology limited it; sample-heavy
     testing created bottlenecks at the partner and at engagement quality review, and QC 1000 (the PCAOB's new
-    quality-control standard) was approaching (FIELDGUIDE-SANVILLE-2026).
+    quality-control standard) was approaching (FIELDGUIDE-SANVILLE-2026). Regional firms run audit,
+    review/compilation and benefit plan work on different tools and templates, which makes consistent methodology and
+    training harder to show to a peer reviewer.
   solution: >-
     Sanville built its audit programmes in Fieldguide, referencing PCAOB standards in each step, and sent
     templates to every engagement at once. Agentic testing handled sample-heavy tracing of incoming client
     support. After an earlier PCAOB exam flagged an issue, the partner updated the programme and pushed it to
-    every open engagement the next morning (FIELDGUIDE-SANVILLE-2026).
+    every open engagement the next morning (FIELDGUIDE-SANVILLE-2026). Mid-size firms with several engagement
+    types: Caseware announced that Citrin Cooperman (private, middle-market focus) adopted its full DAS Suite (DAS
+    Audit, DAS PCR, DAS EBP) on 13 Jul 2026, and that PKF O'Connor Davies (called a Top 25 US firm in the release)
+    adopted and implemented the same suite across its audit practice on 8 Oct 2026. Per the vendor, the suite embeds
+    methodology and guidance in the engagement, and intelligent checklists and unified engagement data let teams
+    "work more consistently"; CPA.com was implementation partner for planning, data migration, training and change
+    management at both firms (CASEWARE-CITRIN-2026; CASEWARE-PKF-2026).
   outcomes:
     - {lever: quality, description: "First PCAOB inspection conducted entirely on the platform (a broker-dealer engagement) had zero comment forms", figure: "0 comment forms", measures: "comment forms on the firm's first PCAOB inspection on Fieldguide", provenance: vendor-published, source_ref: FIELDGUIDE-SANVILLE-2026}
     - {lever: speed, description: "Platform and methodology overhaul completed in under a year, against an expected 18 to 24 months", figure: "under 1 year vs 18-24 months expected", measures: "time to complete the platform and methodology overhaul, per the partner", provenance: vendor-published, source_ref: FIELDGUIDE-SANVILLE-2026}
     - {lever: growth, description: "Blended realisation on the firm's lowest-margin engagements rose", figure: "$150-200/hr to $250+/hr", measures: "blended realisation per hour on the firm's lowest-margin engagements, per the vendor's customer story", provenance: vendor-published, source_ref: FIELDGUIDE-SANVILLE-2026}
+    - {lever: quality, description: "Citrin Cooperman and PKF O'Connor Davies: vendor and firm statements of intent on consistency and audit quality; no figure or review result published", figure: "none published", measures: "n/a (press-release statements)", provenance: vendor-published, source_ref: CASEWARE-CITRIN-2026}
   prerequisites:
     - "A methodology-agnostic platform where the firm writes its own audit programmes"
     - "A small, aligned team willing to move to the platform at once"
+    - "At mid-size firms, migration of engagement data and training; both Caseware adopters used an outside implementation partner (CPA.com) (CASEWARE-CITRIN-2026; CASEWARE-PKF-2026)"
   risks_and_guardrails:
     - "One inspection and one firm; a zero-comment result does not isolate AI as the cause, and the figures come from a vendor customer story (FIELDGUIDE-SANVILLE-2026)"
     - "The PCAOB statement about the firm's AI use is quoted by the partner, not published by the PCAOB (FIELDGUIDE-SANVILLE-2026)"
+    - "Both Caseware announcements are vendor-published; neither says engagements have been signed on the platform or reviewed (CASEWARE-CITRIN-2026; CASEWARE-PKF-2026)"
+    - "A standard platform concentrates methodology risk in one vendor; see vendor due diligence in assurance-quality-management-06"
   human_checkpoints:
     - "Partners update programmes; reviewers approve work on the platform"
+    - "Citrin's quote says the firm wants to preserve 'critical thinking and professional judgment' (CASEWARE-CITRIN-2026); checkpoints are not described"
   role_evolution: >-
     The partner says first-year staff now do complex revenue testing because reviewers have bandwidth to guide
-    them (FIELDGUIDE-SANVILLE-2026).
+    them (FIELDGUIDE-SANVILLE-2026). Citrin's assurance innovation leader says access to reasoning inside the
+    engagement helps professionals build technical knowledge and judgment (CASEWARE-CITRIN-2026).
   evidence_grade: B
   sources:
     - {ref: FIELDGUIDE-SANVILLE-2026, title: "How Sanville & Co passed a PCAOB inspection with zero comment forms in under a year with Fieldguide (page undated; year inferred)", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/case-studies/how-sanville-co-passed-a-pcaob-inspection-with-zero-comment-forms-in-under-a-year-with-fieldguide", date: "2026", access: full, locator: "Key Results at a Glance; sections 'A Methodology That Was Fighting the Firm' to 'A Clean Inspection and a Faster Path'"}
-  last_reviewed: "2026-10-17"
+    - {ref: CASEWARE-CITRIN-2026, title: "Citrin Cooperman & Company, LLP Adopts AI-Enabled DAS Suite Powered by Caseware to Advance Audit Quality, Professional Development, and Scalable Growth", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "paragraphs 2-3 and section 'Strengthening Professional Development and Audit Quality'"}
+    - {ref: CASEWARE-PKF-2026, title: "PKF O'Connor Davies Adopts AI-Enabled DAS Suite Powered by Caseware Verity, and Joins the Caseware Agentic Pioneer Program", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program", date: "2026-10-08", access: full, locator: "section 'Unifying Audit Methodology with DAS'"}
+    - {ref: BORYSOFF-PE-2024, title: "Does Private Equity Investment in Accounting Firms Affect Perceived and Actual Audit Quality? (Registered Report Proposal)", publisher: "The Accounting Review (George Mason, Wake Forest, Boston University authors)", type: academic, url: "https://business.gwu.edu/sites/g/files/zaxdzs5326/files/2024-06/maria_nykyforovych.pdf", date: "2024-06", access: full, locator: "p. 1 table of firms that accepted PE investment (Citrin Cooperman, 11 Apr 2022, New Mountain Capital, controlling)"}
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade B, not A: the figures are named and measured but vendor-published and measure an adjacent change (a
     platform and methodology overhaul), not the AI component. The page has no publication date; 2026 is inferred
     (the vendor's sitemap shows a July 2026 update). The same customer story appears in
     assurance-substantive-testing-10 for its testing figures.
+    Merged 2026-10-21 (wave 6, mid-market): Citrin Cooperman (PE-backed, New Mountain Capital since 2022 per
+    BORYSOFF-PE-2024; serves private middle-market companies) and PKF O'Connor Davies (regional; the release calls it
+    Top 25). Both are vendor press releases that say 'adopted' or 'implemented', with no engagement-level evidence;
+    the grade rests on Sanville and is unchanged. The Citrin release also names a disclosure-checklist agent in the
+    engagement workflow (see completion-reporting).
 
 # ---- Part B: engagement-level supervision and review of AI output ----
 
@@ -1445,6 +1497,7 @@
   risks_and_guardrails:
     - "Some clients may decline; Morris said AI can still be used in a ring-fenced way (ICAEW-POD-2025)"
     - "The AICPA says AU-C 210 does not require naming AI tools in the engagement letter, though state laws, contracts or firm policy may (AT-AICPAPA-2026)"
+    - "For US private-company practice: some states require advance disclosure of certain AI uses by licensed professionals, per the practice aid's coverage (AT-AICPAPA-2026; CFODIVE-AICPAPA-2026)"
   human_checkpoints:
     - "Engagement leader agrees AI-use terms with the client and the audit committee"
   role_evolution: >-
@@ -1455,7 +1508,8 @@
     - {ref: FOLEY-PCAOB-2026, title: "What Directors Should be Asking About the Audit and the Auditors Now (read via text mirror)", publisher: "Foley & Lardner", type: firm, url: "https://www.foley.com/insights/publications/2026/07/what-directors-should-be-asking-about-the-audit-and-the-auditors-now/", date: "2026-07-02", access: full, locator: "'Five questions to take back to your auditor', question 2"}
     - {ref: IFIAR-TTF-2026, title: "Use of technology in audits: Innovation and audit quality (2026 report)", publisher: "IFIAR (copy hosted by Japan FSA)", type: regulator, url: "https://www.fsa.go.jp/cpaaob/sonota/kokusai/2026TTFReport.pdf", date: "2026-04-20", access: full, locator: "pp. 7-8 ('Transparency of Use and for Those Charged with Governance')"}
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "section on audit firms' use of AI"}
-  last_reviewed: "2026-10-17"
+    - {ref: CFODIVE-AICPAPA-2026, title: "AICPA issues guidance for AI-assisted auditing", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/aicpa-issues-guidance-ai-assisted-auditing/832907/", date: "2026-10-13", access: full, locator: "FAQ paragraph on engagement letters"}
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade B: Grant Thornton and Deloitte practices are described by named firm representatives on a 2025 ICAEW
     podcast, with no measurement. Overlaps acceptance-independence (engagement terms) and completion-reporting
@@ -1530,3 +1584,190 @@
     PwC's statement is a forward-looking claim ('will') by a firm leader; no outcome is published. Change scope is
     model because it changes who does the work (the staffing pyramid). The podcast item is an AI-generated summary,
     not the audio.
+
+# ---- Added 2026-10-21 (wave 6, mid-market): small and mid-size firm SQMS, firm-built agents, outside capital ----
+
+- id: assurance-quality-management-26
+  title: "Idea (standard-setter guidance): put AI tools into the firm's SQMS 1 risk assessment, responses and first annual evaluation, scaled for small and mid-size firms"
+  archetype: assurance
+  module: quality-management
+  function: risk-compliance-legal
+  work_types: [review-assurance, coordination-scheduling]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: >-
+    US firms doing audits, reviews or attest work had to have a system of quality management (SQMS No. 1) by 15 Dec
+    2025 and must first evaluate it "within one year of implementation or by Dec. 15, 2026" (JOFA-QMRES-2025). Firms
+    performing Government Auditing Standards work face the same clock under the 2024 Yellow Book: system designed by
+    15 Dec 2025, initial evaluation by 15 Dec 2026; the GAO's FAQ does not mention AI (GAO-YBFAQ-2025), and the
+    Governmental Audit Quality Center lists AI-related guidance only as a watch item (GAQC-DEV-2026). The AICPA's
+    August 2025 article on its quality-management resources does not mention AI, and the firm-size risk libraries it
+    describes were published before the October 2026 practice aid (JOFA-QMRES-2025). Small and mid-size firms using
+    AI tools therefore have no AI line in the generic starting material they were given.
+  solution: >-
+    The AICPA practice aid (13 Oct 2026, nonauthoritative) says audit firms should set quality-management policies and
+    procedures for AI tools (AICPA-PA-2026). Per Accounting Today's summary, for AI used to obtain audit evidence a
+    firm may want to set who builds or buys tools, a process for authorising them, acceptable-use rules, and periodic
+    revalidation and monitoring (AT-AICPAPA-2026). A small or mid-size firm would add these as quality risks and
+    responses in the risk-assessment document it already keeps, and cover them in the managing partner's annual
+    evaluation conclusion. This is the small-firm route to the large-firm mechanics in
+    assurance-quality-management-01 to -03. Whether the AICPA's size-specific risk libraries and template (member
+    content) list AI risks was not checked.
+  outcomes:
+    - {lever: risk, description: "none published; no firm reports having done this", figure: "none published", measures: "n/a", provenance: independent, source_ref: AICPA-PA-2026}
+  prerequisites:
+    - "A designed and implemented system of quality management with the managing partner holding ultimate responsibility (JOFA-QMRES-2025)"
+    - "An inventory of AI tools in use, including features inside software the firm already buys (see assurance-quality-management-03 and -06)"
+  risks_and_guardrails:
+    - "The practice aid is nonauthoritative (AICPA-AIPAID-2026); Accounting Today words the policy list as things a firm 'may want to implement' (AT-AICPAPA-2026)"
+    - "The practice aid text is member-only; this entry rests on the AICPA release and trade-press summaries (AICPA-PA-2026; AT-AICPAPA-2026)"
+  human_checkpoints:
+    - "Managing partner evaluates the system at least annually and concludes whether it gives reasonable assurance (JOFA-QMPR-2024)"
+    - "Engagement partners understand the tools, confirm the firm approved them and check staff use them correctly (AICPA-PA-2026)"
+  role_evolution: >-
+    The managing partner carries explicit accountability for the system; engagement partners take on duties to
+    understand and check AI tool use (AICPA-PA-2026; JOFA-QMPR-2024).
+  evidence_grade: D
+  sources:
+    - {ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing (release on the practice aid; the practice aid itself needs a login and was not opened)", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Use of AI-related technological resources by audit firms', four bullets"}
+    - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraph beginning 'When auditors themselves use AI in an engagement'"}
+    - {ref: AICPA-AIPAID-2026, title: "Explore new AICPA guidance on AI and the financial statement audit (resource page; practice aid PDF is member-only and was not read)", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit", date: "2026-10-12", access: full, locator: "landing page (nonauthoritative status)"}
+    - {ref: JOFA-QMRES-2025, title: "AICPA unveils new QM resources to help firms meet Dec. 15 deadline", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2025/aug/aicpa-unveils-new-qm-resources-to-help-firms-meet-dec-15-deadline/", date: "2025-08-12", access: full, locator: "sections 'The evaluation of the system of quality management' and 'A deeper discussion of a QM system's 8 components'"}
+    - {ref: JOFA-QMPR-2024, title: "How the new QM standards may affect peer review", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2024/dec/how-new-qm-standards-may-affect-peer-review.html", date: "2024-12-10", access: full, locator: "section 'Updated peer review standards'"}
+    - {ref: GAO-YBFAQ-2025, title: "Government Auditing Standards FAQ: establishing and maintaining a system of quality management (GAO-26-108710)", publisher: "GAO", type: standard-setter, url: "https://files.gao.gov/reports/GAO-26-108710/index.html", date: "2025-12", access: full, locator: "Section I, questions 1 and 2"}
+    - {ref: GAQC-DEV-2026, title: "Key developments affecting the governmental auditing environment (GAQC blog)", publisher: "AICPA Governmental Audit Quality Center", type: professional-body, url: "https://www.aicpa-cima.com/professional-insights/article/key-developments-affecting-the-governmental-auditing-environment", date: "2026-10-08", access: full, locator: "watch items ('emerging ethics, quality management, and AI-related guidance')"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Idea label: a standard-setter recommends it; no firm publication of a worked example was found. Firm kind: US
+    small and mid-size firms under AICPA peer review, including Yellow Book firms. The nonprofit-government module
+    holds the Yellow Book and single-audit side.
+
+- id: assurance-quality-management-27
+  title: "Govern firm-built and staff-built agents: build them inside a governed vendor platform, or route them through review, least-privilege access and change management (PKF O'Connor Davies announced; checklist published)"
+  archetype: assurance
+  module: quality-management
+  function: risk-compliance-legal
+  work_types: [software-systems, review-assurance]
+  pattern: other
+  ladder: assist
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    Staff can now build their own dashboards, automations and agents with AI tools ("vibe coding"); at firms that hold
+    client personal and financial data this creates unreviewed software and agent access to data (JOFA-CHECKLIST-2026).
+    Firms that want their own agents risk disconnected one-off tools that carry no audit trail or methodology and are
+    hard to defend to a reviewer (CASEWARE-PKF-2026).
+  solution: >-
+    Two routes are published. (1) Governed vendor platform: Caseware launched an Agentic Pioneer Program on 4 Jun 2026
+    for firm-built proprietary agents (Agent Builder, Agent Studio) (CASEWARE-PIONEER-2026). Caseware says PKF
+    O'Connor Davies (a regional firm the release calls Top 25) joined it on 8 Oct 2026 and "will" get priority access
+    to an agent-builder suite (a workbench with governed MCP interfaces and a no-code studio); per the vendor, agents
+    the firm builds run in the same governed environment as Caseware Verity, so each carries the audit trail,
+    methodology and context needed "to stand up to regulatory scrutiny" (CASEWARE-PKF-2026). No agent in use is
+    described. (2) Review and change gate: Sanjay Chadha, founding partner of SAV Associates (Toronto, with offices in
+    Canada and the United States), published a 75-point baseline checklist: a dozen security areas of five to ten
+    checkpoints each, including AI governance and responsible use. Interviewees in the same article say firms should
+    set a review and validation process for AI-generated software and agents, route widely used agents through formal
+    change management, and give agents least-privilege access, restricted tool and API permissions, activity
+    monitoring and human approval for higher-risk actions (JOFA-CHECKLIST-2026).
+  outcomes:
+    - {lever: risk, description: "Vendor statement that firm-built agents inherit audit trail and methodology; no agent in production described", figure: "none published", measures: "n/a", provenance: vendor-published, source_ref: CASEWARE-PKF-2026}
+    - {lever: risk, description: "No adoption or outcome data published for the checklist", figure: "none published", measures: "n/a", provenance: self-reported, source_ref: JOFA-CHECKLIST-2026}
+  prerequisites:
+    - "For route 1, engagements already on the vendor platform (DAS Suite) and in-house capacity to design agents; the release names no staffing (CASEWARE-PKF-2026)"
+    - "An approved list of AI tools; enterprise versions with stronger data protections and contractual terms (JOFA-CHECKLIST-2026)"
+  risks_and_guardrails:
+    - "Plan, not deployment: the PKF wording is 'will get priority access' and 'will' design and deploy (CASEWARE-PKF-2026)"
+    - "The Pioneer Program release lists large and regional firms among Caseware customers, not among program participants (CASEWARE-PIONEER-2026)"
+    - "Prompt injection: monitor and secure inputs so an attacker cannot inject instructions (JOFA-CHECKLIST-2026)"
+    - "Confidential client information: consent and disclosure questions under the AICPA code before client data goes into an AI system (JOFA-ETHAI-2026)"
+  human_checkpoints:
+    - "Human approval for higher-risk agent actions; named ownership and review for agents before they enter workflows (JOFA-CHECKLIST-2026)"
+  role_evolution: >-
+    Cherry Bekaert's Steven Ursillo says user-driven development spreads the developer pool to people without a full
+    view of what the code does (JOFA-CHECKLIST-2026). Route 1 implies firm staff who can design agents; the release
+    does not describe them (CASEWARE-PKF-2026).
+  evidence_grade: C
+  sources:
+    - {ref: CASEWARE-PKF-2026, title: "PKF O'Connor Davies Adopts AI-Enabled DAS Suite Powered by Caseware Verity, and Joins the Caseware Agentic Pioneer Program", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program", date: "2026-10-08", access: full, locator: "section 'Shaping Assurance Through the Pioneer Program'"}
+    - {ref: CASEWARE-PIONEER-2026, title: "Caseware Launches Agentic Pioneer Program, Trusted by Majority of Top 30 U.S. Accounting Firms", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/trusted-by-the-majority-of-top-30-u-s-accounting-firms-caseware-launches-caseware-verity-agentic-pioneer-program", date: "2026-06-04", access: full, locator: "program descriptions (Pioneer, Lighthouse, Advisory); customer list"}
+    - {ref: JOFA-CHECKLIST-2026, title: "New checklist helps CPAs manage AI cyber risks", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/oct/new-checklist-helps-cpas-manage-ai-cyber-risks/", date: "2026-10-01", access: full, locator: "intro and section 'AI and vibe coding'"}
+    - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI can create confidentiality risks quickly'"}
+    - {ref: BORYSOFF-PE-2024, title: "Does Private Equity Investment in Accounting Firms Affect Perceived and Actual Audit Quality? (Registered Report Proposal)", publisher: "The Accounting Review (George Mason, Wake Forest, Boston University authors)", type: academic, url: "https://business.gwu.edu/sites/g/files/zaxdzs5326/files/2024-06/maria_nykyforovych.pdf", date: "2024-06", access: full, locator: "p. 1 table of firms that accepted PE investment (Cherry Bekaert)"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Merges two wave-6 proposals that make the same change (firm-built agents enter the system of quality management
+    under review and change control): PKF's announced co-development (vendor-published, grade C) and the published
+    checklist (an idea; no firm reports using it). Firm kinds: PKF O'Connor Davies (regional, Top 25 per the release);
+    SAV Associates (small cross-border firm); Cherry Bekaert (PE-backed regional firm, per BORYSOFF-PE-2024). Adjacent to
+    assurance-quality-management-03 (inventory and preventive controls), which does not cover staff-built software and
+    agents. Ladder assist: the entry is the governance gate; no agent is described as operating. The nonprofit and
+    private-company research also routes the Caseware Pioneer Program here.
+
+- id: assurance-quality-management-28
+  title: "Outside capital funds firm-wide AI investment while the attest practice stays in a CPA-owned entity (Crowe, Eide Bailly; AI-native Oath)"
+  archetype: assurance
+  module: quality-management
+  function: service-delivery
+  work_types: [coordination-scheduling, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: model
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: >-
+    Partner-owned firms distribute most profit and find it hard to fund technology and acquisitions at the scale AI
+    platforms need; a registered-report proposal makes this point (BORYSOFF-PE-2024), and the PCAOB lists technology
+    investment and succession among private equity's upsides (AT-PCAOBPE-2025).
+  solution: >-
+    CFO Brew, citing the Wall Street Journal, reported on 26 Jun 2026 that Crowe (No. 12) agreed a majority sale to KKR
+    and Eide Bailly (No. 18) to Reverence Capital Partners, with both deals expected to close in the third quarter and
+    both firms to adopt alternative practice structures (APS) that split audit and attest from tax, consulting and
+    other lines; it says both firms also wanted more capital to invest in AI, and Eide Bailly's COO named a capital
+    sponsor the "No. 1 driver" (CFOBREW-PE-2026). At the AI-native end, Oath describes itself as a modern audit firm
+    running a "financial proof platform" that verifies every record on an ongoing basis, for venture capital, private
+    equity, employee benefit plan, non-profit and other private-company clients (OATH-2026). Its chief assurance
+    officer, a former PCAOB member, told Accounting Today the firm is venture-backed (about $10 million raised), had to
+    set up an attest entity in an APS, runs each client in its own secure environment that does not train the model,
+    and is hiring "accountant engineers" (AT-PEEC-2026). No AI programme funded by the Crowe or Eide Bailly deals, and
+    no Oath client or result, is published.
+  outcomes:
+    - {lever: risk, description: "Regulator count of PE-related deal volume (context for the model change, not an AI outcome)", figure: "more than 90", measures: "significant PE-related transactions and firm mergers since 2020, of which more than half in 2025 up to 9 Dec 2025 (PCAOB Division of Registration and Inspections director, as reported)", provenance: independent, source_ref: AT-PCAOBPE-2025}
+    - {lever: growth, description: "Global count of firms with PE investment (context, not an AI outcome)", figure: "more than 1,000 firms; fewer than 200 initial investments leading to nearly 900 subsequent transactions", measures: "accountancy firms worldwide that have experienced PE investment over the past ten years, per IFAC research", provenance: independent, source_ref: IFAC-PE-2026}
+  prerequisites:
+    - "An alternative practice structure: the attest practice stays owned by CPAs and the investor buys into the non-attest entity (BORYSOFF-PE-2024; CFOBREW-PE-2026)"
+  risks_and_guardrails:
+    - "PCAOB: profitability pressure can reduce audit staffing and specialists and threaten independence and culture; inspectors will focus on quality-control procedures at firms that have undergone PE or APS changes (AT-PCAOBPE-2025)"
+    - "No empirical result yet: the one academic study found is a 2024 registered-report proposal on public-company clients, with no findings (BORYSOFF-PE-2024)"
+    - "PEEC's first exposure draft (19 Dec 2025) separates 'significant influence' from 'control'; by Aug 2026 PEEC was discussing a ban on attest-client investment and a revised network-firm definition (JOFA-PEED-2025; JOFA-PEEC-2026)"
+    - "Oath's chief assurance officer warns PEEC's 'closely aligned' technology-entity wording could pull audit-tech companies into the APS rules, and that it is unclear when licensing AI audit tools creates a conflict; 81 comment letters were filed, none from technology companies, as she described the committee's statistics (AT-PEEC-2026)"
+  human_checkpoints:
+    - "CPA owners of the attest entity keep control of the audit practice (BORYSOFF-PE-2024)"
+    - "Oath's site says the firm will 'elevate professionals, not replace them' and that people apply judgment; checkpoints are not specified (OATH-2026)"
+  role_evolution: >-
+    Not described for Crowe or Eide Bailly. PCAOB board member Botic said the profession will need new routes for
+    junior auditors to build skepticism as AI spreads (AT-PCAOBPE-2025). Oath hires 'accountant engineers'
+    (AT-PEEC-2026).
+  evidence_grade: C
+  sources:
+    - {ref: CFOBREW-PE-2026, title: "10 of the top 20 CPA firms are backed by private equity", publisher: "CFO Brew", type: press, url: "https://www.cfobrew.com/stories/10-of-the-top-20-cpa-firms-are-backed-by-private-equity", date: "2026-06-26", access: full, locator: "paragraphs 2-4 (reports the WSJ)"}
+    - {ref: AT-PCAOBPE-2025, title: "PCAOB warns auditors about AI and PE", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pcaob-warns-auditors-about-ai-and-pe", date: "2025-12-09", access: full, locator: "sections 'Private equity issues' and 'PE warning'"}
+    - {ref: IFAC-PE-2026, title: "Private Equity Investment in Accountancy: IFAC Releases Research and Online Resource", publisher: "IFAC", type: professional-body, url: "https://www.ifac.org/news-events/2026-03/private-equity-investment-accountancy-ifac-releases-research-and-online-resource", date: "2026-03-02", access: full, locator: "paragraph 2"}
+    - {ref: JOFA-PEEC-2026, title: "PEEC to continue discussions on alternative practice structures", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/", date: "2026-08-10", access: full, locator: "paragraphs 1-2"}
+    - {ref: JOFA-PEED-2025, title: "AICPA proposes changes to independence guidelines related to private equity", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2025/dec/aicpa-proposes-changes-to-independence-rules-related-to-private-equity/", date: "2025-12-19", access: full, locator: "bullets under 'PEEC seeks comment on'"}
+    - {ref: BORYSOFF-PE-2024, title: "Does Private Equity Investment in Accounting Firms Affect Perceived and Actual Audit Quality? (Registered Report Proposal)", publisher: "The Accounting Review (George Mason, Wake Forest, Boston University authors)", type: academic, url: "https://business.gwu.edu/sites/g/files/zaxdzs5326/files/2024-06/maria_nykyforovych.pdf", date: "2024-06", access: full, locator: "Introduction and Background, pp. 1-3"}
+    - {ref: OATH-2026, title: "Oath | Swear by your numbers (company website)", publisher: "Oath", type: firm, url: "https://www.oathverified.com/", date: "2026-10", access: full, locator: "home page sections 'why oath', 'services' and 'how oath works' (live page, undated; read 2026-10-21)"}
+    - {ref: AT-PEEC-2026, title: "AICPA weighs PE and tech impact on audit independence", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-weighs-pe-and-tech-impact-on-audit-independence-rules", date: "2026-08-31", access: full, locator: "paragraphs on Ho's firm; section 'Maintaining independence'"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Firm kinds: Crowe and Eide Bailly are Top 20 national/regional firms with a mid-market client focus; Oath is a
+    venture-backed start-up auditor serving private funds and private companies, a signal of where private-company
+    audit may go, not mid-market practice today (its own model would be full-population testing at the automate
+    level; the evidence is its own positioning plus one interview). The CFO Brew account is second-hand (WSJ) and
+    says the deals were 'expected to close' in Q3 2026; closure was not checked. 'More than 90' and the 'more than
+    half in 2025' split are the PCAOB official's figures as quoted by Accounting Today. The model change also belongs
+    in the archetype's economics and disruption files; the independence side is in assurance-acceptance-independence-20.

@@ -1,0 +1,816 @@
+# Use cases: assurance / benefit-plans (employee benefit plan audits under ERISA; mid-market extension)
+# Synthesised 2026-10-21 from research/runs/wave6/mm-benefit-plans-combined.md, the mid-market landscape scan and
+# items routed from the other wave-6 mid-market files. No entry reaches grade A: every outcome figure sits in a
+# vendor-authored page or a vendor press release, and none says how it was measured. Several entries are workflow
+# automation the sources do not call AI; the notes say so. Cross-references by full id: the Ledgerline specialist-firm
+# model is assurance-substantive-testing-25; generic third-party SOC report reading is assurance-controls-testing-13;
+# firm-level AI governance and file documentation are assurance-quality-management-17 and -23; AI-native start-up
+# auditors (Oath lists employee benefit plans among its client types) are assurance-acceptance-independence-20.
+
+- id: assurance-benefit-plans-01
+  title: Full-population testing of participant, payroll and contribution data in 401(k) plan audits (Autire at Belfint, Lyons & Shuman and Rea & Associates)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, transaction-processing, data-reporting]
+  pattern: full-population-testing
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Participant data and contributions are the audit areas with the highest reported deficiency rates in the
+    Department of Labor's 2023 audit quality study (BELFINT-DOLQ-2024). Firms have traditionally selected a
+    sample and tested it, using audit software and checklists built for financial statement audits
+    (AUTIRE-REA-2026; AUTIRE-BELFINT-2026).
+  solution: >-
+    Autire, a vendor platform built for plan audits, applies testing rules to every available participant record (every
+    contribution, distribution and eligible participant) at the start of the audit. Each flagged item is tied
+    to source data with an occurrence count and dollar impact, so the firm goes to the client with focused
+    questions (AUTIRE-TESTING-2026). Autire says the tests are hard-coded, standards-based logic that returns the
+    same result on re-run, not model output (AUTIRE-AI-2026). Belfint, Lyons & Shuman (a Wilmington, Delaware
+    regional firm that the vendor labels mid-market) moved eligible plans onto it from 2022. Rea & Associates (a
+    Top 100 US firm in Ohio and Florida) has used it since 2022 (AUTIRE-BELFINT-2026; AUTIRE-REA-2026).
+  outcomes:
+    - lever: capacity
+      description: "Belfint's average hours per audit fell from 80 to 54, and the practice grew from roughly 100 audits at adoption to 160-170, as reported in the vendor's case study"
+      figure: "80 to 54 hours per audit; about 100 to 160-170 audits"
+      measures: "average hours per audit for the preparer and both reviewers combined (source's words); audit count is the practice's plan audits at adoption versus 'today' (case study dated 2026-08-30). How the hours were tracked is not stated"
+      provenance: vendor-published
+      source_ref: AUTIRE-BELFINT-2026
+    - lever: cost
+      description: "Rea's managing director reports a 40 percent reduction in hours spent per audit since adopting, with improved profitability, and warns that going from 100 hours to 30 is not realistic overnight"
+      figure: "40 percent fewer hours per audit"
+      measures: "reduction in hours spent per audit since adopting Autire (source's words); baseline and period not given"
+      provenance: vendor-published
+      source_ref: AUTIRE-REA-2026
+    - lever: quality
+      description: "On first use at an existing client, Rea's file opened with about 8,000 flagged records; most traced to a single pay-code configuration issue, and the rest were items that warranted review"
+      figure: "about 8,000 flags"
+      measures: "flagged records in one existing engagement on first run, as quoted by the managing director; not a rate and not a count of true errors"
+      provenance: vendor-published
+      source_ref: AUTIRE-REA-2026
+  prerequisites:
+    - "Payroll, census, trust and recordkeeper data in a usable form, through integrations or direct upload (AUTIRE-HOME-2026)"
+    - "A transition period: Belfint says benefits showed toward the end of the first year and into the second, with supervisors moving first (AUTIRE-BELFINT-2026)"
+    - "Willingness to face more exceptions on existing clients; Rea worried that new findings would prompt questions about prior-year audits (AUTIRE-REA-2026)"
+  risks_and_guardrails:
+    - "Whole-population testing does not make the audit a guarantee; some risks sit outside transaction data, such as an incomplete population (LEDGERLINE-CPAPA-2026)"
+    - "False failures are a real cost: Autire's June 2026 release removed what it called the two largest categories of false failures in the definition-of-compensation test (AUTIRE-ADVAI-2026)"
+    - "The Department of Labor's study found more frequent deficiencies in areas unique to plan audits, including testing contributions and participant data (AICPA-EBPAQC-TOOLS-2024)"
+  human_checkpoints:
+    - "The auditor decides what each flagged item means; reviewers sign off in the workspace (AUTIRE-AI-2026; AUTIRE-HOME-2026)"
+    - "Belfint added extra memos where its own quality control called for more documentation than the tool's defaults (AUTIRE-BELFINT-2026)"
+  role_evolution: >-
+    Belfint's audit manager says reviewers spend more time working out what is wrong and giving clients things they
+    can fix, and that new staff ask to work on Autire files (AUTIRE-BELFINT-2026). Rea's managing director says the
+    freed capacity can go to sit-down conversations with clients (AUTIRE-REA-2026).
+  evidence_grade: B
+  sources:
+    - { ref: AUTIRE-BELFINT-2026, title: "How Belfint, Lyons & Shuman Grew From 100 to 170 EBP Audits (case study)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/case-studies/belfint-lyons-shuman/", date: "2026-08-30", access: full, locator: "\"The Numbers\"; \"What Changed\"" }
+    - { ref: AUTIRE-REA-2026, title: "Rea Business Advisors Uses Full Population Testing to Gain the Upper Hand (case study)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/case-studies/rea-business-advisors/", date: "2026-08-30", access: full, locator: "\"Finding Every Flagged Record\"; \"Margins, Efficiency, and the Upper Hand\"" }
+    - { ref: AUTIRE-TESTING-2026, title: "Automated EBP Audit Testing (platform testing page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/platform/testing", date: "2026", access: full, locator: "\"Test Every Participant in Minutes\"" }
+    - { ref: AUTIRE-AI-2026, title: "AI Built for EBP Audits (AI on Autire)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/platform/ai-on-autire", date: "2026", access: full, locator: "\"The Same Standard, Every Engagement\"" }
+    - { ref: AUTIRE-ADVAI-2026, title: "Advanced AI Is Live Along With Other Product Upgrades", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/advanced-ai-live-product-upgrades-june-2026/", date: "2026-06-11", access: full, locator: "section \"DI-8: Improvements to Plan Definition of Compensation Testing\"" }
+    - { ref: BELFINT-DOLQ-2024, title: "The 2023 DOL Audit Quality Study: Slight Improvements, but Audit Quality is Still Concerning", publisher: "Belfint, Lyons & Shuman (firm blog)", type: firm, url: "https://employeebenefitplanaudit.belfint.com/2023-dol-audit-quality-study/", date: "2024-03-07", access: full, locator: "\"EBP-specific Auditing Areas Still Have the Highest Deficiency Rates\"" }
+    - { ref: AICPA-EBPAQC-TOOLS-2024, title: "EBPAQC tools that address 2023 DOL audit quality study deficiencies", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/download/ebpaqc-tools-that-address-2023-dol-audit-quality-study-deficiencies", date: "2024-08-20", access: full, locator: "paragraph 2" }
+    - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "section \"The trap\"" }
+    - { ref: AUTIRE-CPAMERICA-2024, title: "Autire Partners with CPAmerica to Transform the EBP Auditing Process", publisher: "Autire Technologies (CPAmerica announcement)", type: vendor, url: "https://autire.com/autire-partners-with-cpamerica-to-transform-ebp-auditing-process/", date: "2024-10-14", access: full, locator: "announcement text" }
+    - { ref: AUTIRE-BENCH-2024, title: "Autire Report Reveals CPA Firms Can Cut 401k Audit Hours in Half", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/autire-report-reveals-cpa-firms-can-cut-401k-audit-hours-in-half/", date: "2024-04-18", access: full, locator: "benchmarking paragraphs" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "statistics row and Belfint case card" }
+    - { ref: AUTIRE-ABOUT-2026, title: "Building the Future of EBP Audit (About)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/about", date: "2026", access: full, locator: "statistics row" }
+    - { ref: MECPA-TECHSURVEY-2025, title: "Maine, New Hampshire and Vermont State CPA Societies Technology Survey, open-text poll results", publisher: "MECPA", type: survey, url: "https://mecpa.org/wp-content/uploads/2026/01/Survey-Results-MECPA-Dec-2025-1.pdf", date: "2025-12", access: full, locator: "open-text answers on software in use (poll 6 Oct to 19 Dec 2025)" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Graded B, not A: both hours figures sit in vendor-authored case studies and neither says how hours were tracked.
+    The vendor's own headline claims (100+ down to 30 hours per plan; 7,000+ audits; 120+ firms; no peer review or
+    DOL findings attributed to Autire) are on its home and about pages (AUTIRE-HOME-2026; AUTIRE-ABOUT-2026) and are
+    not independently verified. Autire's April 2024 benchmarking release says first-time users reported a 40 percent
+    cut in hours, over 50 hours per audit, and one firm saved 976 hours across 19 audits; that is vendor-collected data
+    with unnamed firms (AUTIRE-BENCH-2024). CPAmerica, an association of independent CPA firms, added Autire as a
+    preferred provider on 14 October 2024 (AUTIRE-CPAMERICA-2024). In a late-2025 survey of members of the CPA societies of
+    Maine, New Hampshire and Vermont, open-text answers name Autire for EBP work (MECPA-TECHSURVEY-2025; anecdotal).
+    The full-population step is deterministic code; the AI sits in exception analysis (see 02). The Ledgerline
+    specialist-firm model is recorded in assurance-substantive-testing-25; full-population testing in general is
+    covered in the substantive-testing module.
+
+- id: assurance-benefit-plans-02
+  title: AI exception analysis that groups flagged plan-audit exceptions by root cause (Autire Advanced AI)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, data-reporting]
+  pattern: reconcile-exceptions
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    After testing, auditors open source files in Excel, cross-reference payroll and recordkeeper reports and decide
+    whether each flagged item matters; on complex plans with thousands of participants this can take several hours
+    (AUTIRE-ADVAI-2026).
+  solution: >-
+    Autire (vendor) released Advanced AI on 11 June 2026. An Analysis tab on two audit steps (initial reconciliation and
+    data-intelligence tests, for 2025-version plans) reviews the full set of exceptions, categorises each by failure
+    type, and shows whether an issue is isolated to one participant or systemic across a payroll run or deferral
+    source. Auditors review by pattern and can share chosen findings with the client in the portal (AUTIRE-ADVAI-2026;
+    AUTIRE-AI-2026). The vendor's security page says it uses Anthropic models on AWS Bedrock with guardrails that filter
+    personal data, and that audit data is not used to train a model (AUTIRE-SECURITY-2026).
+  outcomes:
+    - lever: speed
+      description: "An unnamed senior manager at an IPA Top 150 firm says compliance-testing flags take 30 minutes to resolve from start to finish; an unnamed senior auditor at an IPA Top 250 firm credits the platform with about 50 audit hours per audit, roughly half the earlier time"
+      figure: "30 minutes; 50 hours per audit"
+      measures: "30 minutes: time to resolve flagged compliance-testing results (testimonial, no sample size). 50 hours: audit hours per audit, 'about half the time before using Autire' (testimonial about the platform as a whole, not the AI tool). Both are unnamed-user quotes on the vendor's pages"
+      provenance: vendor-published
+      source_ref: AUTIRE-TESTING-2026
+  prerequisites:
+    - "Full-population test results to analyse; the feature works on the testing steps of the vendor's own methodology (AUTIRE-ADVAI-2026)"
+    - "Plans on the vendor's 2025 version of the audit steps (AUTIRE-ADVAI-2026)"
+  risks_and_guardrails:
+    - "The vendor says the AI operates inside its methodology, does not make audit decisions, and handles research, cross-referencing and pattern recognition (AUTIRE-ADVAI-2026)"
+    - "No source reports a miss rate or override rate for the grouping, so whether a cluster can hide an individual exception is untested in public sources"
+    - "The AICPA's October 2026 practice aid says the auditor remains responsible for the audit and the opinion when AI is used (AICPA-PA-2026)"
+  human_checkpoints:
+    - "The auditor decides what to do with what the analysis surfaces and which findings go to the client (AUTIRE-ADVAI-2026)"
+  role_evolution: >-
+    The vendor says time shifts from finding exceptions to applying auditor judgment (AUTIRE-AI-2026). No firm account
+    of changed roles for this feature was found.
+  evidence_grade: C
+  sources:
+    - { ref: AUTIRE-ADVAI-2026, title: "Advanced AI Is Live Along With Other Product Upgrades", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/advanced-ai-live-product-upgrades-june-2026/", date: "2026-06-11", access: full, locator: "\"Advanced Audit Intelligence\"" }
+    - { ref: AUTIRE-AI-2026, title: "AI Built for EBP Audits (AI on Autire)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/platform/ai-on-autire", date: "2026", access: full, locator: "\"Exceptions Grouped. Root Causes Surfaced.\"" }
+    - { ref: AUTIRE-TESTING-2026, title: "Automated EBP Audit Testing (platform testing page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/platform/testing", date: "2026", access: full, locator: "testimonial block \"30 Minutes\"" }
+    - { ref: AUTIRE-SECURITY-2026, title: "Security and Compliance", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/security", date: "2026", access: full, locator: "\"AI Governance\"" }
+    - { ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing (news release on the practice aid 'Artificial Intelligence (AI) Considerations for Financial Statement Auditors'; read with the Journal of Accountancy report of 13 Oct 2026)", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "quotation from the AICPA chief auditor" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Vendor-only. The feature had been live for about four months when reviewed; no named firm has published results
+    for it. The two testimonials are unnamed users at firms the vendor describes by IPA ranking. Kept at in-production
+    because the vendor says it is live for customers; no firm names its use.
+
+- id: assurance-benefit-plans-03
+  title: Pulling payroll, census and recordkeeper data straight from source systems instead of requesting files (Sikich; plan-audit vendors)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [data-reporting, transaction-processing]
+  pattern: bulk-transformation
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Plan-audit testing starts from sponsors' payroll registers, census files and recordkeeper reports. Sikich names
+    manual requests and follow-ups as something to reduce (SIKICH-BROCHURE-2026), and the AICPA's 2026 plan
+    conference workshops cover testing procedures for payroll, definition of compensation, eligibility, participant
+    data and contributions (AICPA-EBP-2026).
+  solution: >-
+    Sikich (a mid-market firm in an alternative practice structure; it says it audits over 800 plans) says it has
+    relationships with payroll and recordkeeping platforms that enable audit-request automation, and uses standardised
+    payroll data from selected systems to cut manual requests (SIKICH-BROCHURE-2026). Vendors describe the same step:
+    Autire lists integrations to pull payroll and recordkeeper data automatically (AUTIRE-HOME-2026) and says it
+    matches participants by unique identifier so Social Security numbers are not needed (AUTIRE-SECURITY-2026).
+    AuditMiner says it standardises data across recordkeepers and payroll providers (AUDITMINER-SITE-2026). Trullion
+    says its Data Match engine matches contribution amounts, hire dates and vesting information across payroll
+    registers, plan documents and custodian statements (TRULLION-EBP-2025); no customer is named on that page.
+    Ledgerline, a pre-launch specialist firm, plans to pull payroll data directly (see assurance-substantive-testing-25).
+  outcomes:
+    - lever: speed
+      description: "none published for this step on its own"
+      figure: "none published"
+      measures: "Not applicable; Sikich's brochure states capabilities without figures"
+      provenance: self-reported
+      source_ref: SIKICH-BROCHURE-2026
+  prerequisites:
+    - "Connections to the sponsor's payroll provider and recordkeeper, which the sponsor sets up once (LEDGERLINE-SITE-2026)"
+    - "Vendor or firm relationships with the payroll and recordkeeping platforms in use (SIKICH-BROCHURE-2026; AUTIRE-HOME-2026)"
+  risks_and_guardrails:
+    - "Participant data is personal data; Autire states it keeps data in US regions under SOC 2 Type 2 controls (vendor statement, AUTIRE-SECURITY-2026)"
+    - "Overreliance on third-party service providers remained a deficiency theme in the DOL's November 2023 study (ICPAS-EBPQ-2024)"
+  human_checkpoints:
+    - "Audit programs include testing the completeness and accuracy of participant data (ICPAS-EBPQ-2024)"
+  role_evolution: >-
+    No source describes role change for this step alone. Sikich says all levels of its plan-audit team are dedicated,
+    not only seniors (SIKICH-BROCHURE-2026).
+  evidence_grade: B
+  sources:
+    - { ref: SIKICH-BROCHURE-2026, title: "Employee Benefit Plan Audits (brochure, file code SKCH_0726)", publisher: "Sikich", type: firm, url: "https://www.sikich.com/wp-content/uploads/2026/09/Employee-Benefit-Plan-Audit-Brochure_SKCH_0726.pdf", date: "2026", access: full, locator: "page 4 \"Engagement efficiencies\"" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "\"Planning\" block (payroll / recordkeeper data)" }
+    - { ref: AUTIRE-SECURITY-2026, title: "Security and Compliance", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/security", date: "2026", access: full, locator: "\"Less data. Less exposure.\"" }
+    - { ref: AUDITMINER-SITE-2026, title: "Audit Software to Scale Your EBP Practice (home page)", publisher: "AuditMiner", type: vendor, url: "https://www.auditminer.com/", date: "2026", access: full, locator: "\"Grow Your EBP Practice\"" }
+    - { ref: TRULLION-EBP-2025, title: "Employee Benefits Audit Software Powered by AI (blog)", publisher: "Trullion", type: vendor, url: "https://trullion.com/blog/ebp-audit-software-ai-automation/", date: "2025-04-27", access: full, locator: "section \"1. Automated data matching across source documents\"" }
+    - { ref: AICPA-EBP-2026, title: "AICPA Employee Benefit Plans Conference 2026 (home page and pre-conference workshops page; agenda page did not load)", publisher: "AICPA & CIMA", type: conference, url: "https://events.aicpa-cima.com/EBP2026", date: "2026-05", access: full, locator: "pre-conference workshops page" }
+    - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "\"We pull your payroll data, not request it\"" }
+    - { ref: ICPAS-EBPQ-2024, title: "Enhancing Employee Benefit Plan Audit Quality (Andrea Wright, Johnson Lambert)", publisher: "Illinois CPA Society, Insight magazine (Spring 2024 issue)", type: professional-body, url: "https://www.icpas.org/resources/publications/insight-magazine/article-search/detail/spring-2024/enhancing-employee-benefit-plan-audit-quality", date: "2024", access: full, locator: "\"Challenges in ensuring audit quality\"; \"Best practices and strategies\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Sikich's brochure (dated only by its file code SKCH_0726 and a September 2026 upload path) describes automation of
+    requests and data, not AI. It is the only named-firm source on this step; no source gives hours saved. Data
+    acquisition in general sits in the archetype's value-chain.md section 4.
+
+- id: assurance-benefit-plans-04
+  title: Extracting trust-statement PDFs into a trial balance and reconciling it to the Form 5500 and audited balances (Autire)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [data-reporting, review-assurance]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    The trust report arrives as a PDF in each recordkeeper's own format; someone builds a trial balance from it, pulls
+    the Form 5500, lines the two up in a workbook and chases differences (AUTIRE-TRUSTREC-2026).
+  solution: >-
+    Autire (vendor) says an uploaded trust report is read to extract investment balances, contributions, distributions
+    and plan activity, checked for completeness and accuracy, and turned into a trial balance shown beside the other
+    balances, with a combined view across several service providers and mid-year recordkeeper changes
+    (AUTIRE-TESTING-2026; AUTIRE-TRUSTREC-2026). Its team researches each provider's format and builds it in, so the
+    auditor does not map fields on each engagement (AUTIRE-TRUSTREC-2026).
+  outcomes:
+    - lever: speed
+      description: "The vendor says the step takes minutes instead of hours; no firm figure is published"
+      figure: "none published"
+      measures: "Not applicable; 'minutes instead of hours' is the vendor's general statement, with no sample or baseline"
+      provenance: vendor-published
+      source_ref: AUTIRE-TRUSTREC-2026
+  prerequisites:
+    - "Provider-specific format support kept current by the vendor; certified statements from different providers look nothing alike (AUTIRE-TRUSTREC-2026)"
+  risks_and_guardrails:
+    - "The vendor says final audit documentation stays in the auditor's control (AUTIRE-TRUSTREC-2026)"
+    - "No source reports an extraction error rate, including for unusual statements"
+  human_checkpoints:
+    - "The auditor reviews the reconciled numbers before they flow to other audit steps (AUTIRE-TRUSTREC-2026)"
+  role_evolution: >-
+    The vendor says the time goes to judgment instead of the search for differences (AUTIRE-TRUSTREC-2026). No firm
+    account found.
+  evidence_grade: C
+  sources:
+    - { ref: AUTIRE-TRUSTREC-2026, title: "Built for EBP Audits: How Trust Reconciliation Works End to End on Autire", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/trust-reconciliation-on-autire/", date: "2026-07-31", access: full, locator: "opening section and \"Trust Reconciliation: Every Balance in One View\"" }
+    - { ref: AUTIRE-TESTING-2026, title: "Automated EBP Audit Testing (platform testing page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/platform/testing", date: "2026", access: full, locator: "\"Trial Balance in Minutes, Not Hours\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Marked announced because no named firm ties its results to this feature, although the platform has named users
+    (see 01). It is a Form 5500 tie-out as much as an AI step. Ladder set to augment (the research file had automate)
+    because the auditor reviews the reconciled output on the normal path.
+
+- id: assurance-benefit-plans-05
+  title: Turning recordkeeper and payroll reports into standardised workpapers (AuditMiner at Anders CPAs + Advisors)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [data-reporting, document-production]
+  pattern: bulk-transformation
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Setting up plan-audit workpapers meant hours of manual data entry, and audits could start with incomplete client
+    data (AUDITMINER-ANDERS-2025).
+  solution: >-
+    AuditMiner (vendor) says uploading plan reports generates up to ten automated workpapers, standardised across
+    recordkeepers, and payroll reports for testing by pay period and annual census (AUDITMINER-SITE-2026). Anders CPAs
+    + Advisors, a regional CPA firm (size not stated in the source), says it automated workpaper setup and SOC report
+    analysis with it (AUDITMINER-ANDERS-2025). The sources do not describe machine learning or a language model in the
+    product.
+  outcomes:
+    - lever: capacity
+      description: "Anders says it saved hundreds of hours by automating repetitive tasks such as workpaper setup and SOC analysis"
+      figure: "hundreds of hours"
+      measures: "hours saved by the firm, unspecified period and engagements; a case-study statement, not a tracked metric"
+      provenance: vendor-published
+      source_ref: AUDITMINER-ANDERS-2025
+  prerequisites:
+    - "Recordkeeper and payroll reports in formats the vendor supports (AUDITMINER-SITE-2026)"
+  risks_and_guardrails:
+    - "The vendor describes per-audit pricing and workpapers that standardise how teams track, review and document testing (AUDITMINER-SITE-2026); no source reports workpaper error rates"
+  human_checkpoints:
+    - "Not described in the source beyond staff testing and analysing instead of keying data (AUDITMINER-ANDERS-2025)"
+  role_evolution: >-
+    The case study says removing monotonous tasks led to higher job satisfaction, better staff retention and a more
+    manageable department; a partner says the tool helps keep focus on audit quality while reducing time on engagements
+    (AUDITMINER-ANDERS-2025).
+  evidence_grade: B
+  sources:
+    - { ref: AUDITMINER-ANDERS-2025, title: "Driving Efficiency and Enhancing Staff Morale at Anders CPAs + Advisors (case study PDF; date from PDF creation metadata, 20 Jan 2025; text layer absent, read as page images)", publisher: "AuditMiner", type: vendor, url: "https://6703923.fs1.hubspotusercontent-na1.net/hubfs/6703923/Anders%20Case%20Study%202025.pdf", date: "2025-01", access: full, locator: "pages 2-3 (\"The Challenges\"; \"The Results\")" }
+    - { ref: AUDITMINER-SITE-2026, title: "Audit Software to Scale Your EBP Practice (home page)", publisher: "AuditMiner", type: vendor, url: "https://www.auditminer.com/", date: "2026", access: full, locator: "\"How It Works\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Grade B because the figure is a rough estimate in a vendor case study. Included because it is the only named
+    regional-firm case on workpaper generation; it is automation, and the sources do not call it AI.
+
+- id: assurance-benefit-plans-06
+  title: Citation-backed assistant for reading plan documents and amendments and answering routine plan and rule questions (CoCounsel Audit at Kimberlin Company and Sensiba)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [research-synthesis, review-assurance]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    Plan documents can run past 150 pages with several amendments, effective dates and detailed eligibility and
+    compensation definitions; auditors scrolled for provisions, hand-keyed terms into workpapers and asked seniors to
+    confirm readings (TR-KIMBERLIN-2026). Sensiba's staff spent 30 to 45 minutes digging through guidance and drafting
+    memos from scratch (TR-SENSIBA-2026).
+  solution: >-
+    Kimberlin Company, PLLC (an Arizona specialist firm auditing medium-to-large 401(k) plans) uses Thomson Reuters
+    CoCounsel Audit three to four days a week: auditors upload plan documents, ask which provisions and amendments
+    apply, and follow source links to the page and section (TR-KIMBERLIN-2026). It also checks whether clients adopted
+    required SECURE 2.0 amendments and the applicable effective dates, and trainees use it to understand regulatory
+    concepts and answer routine questions on their own (TR-KIMBERLIN-2026). Sensiba LLP (an independent Top 75 US firm)
+    built CoCounsel workspace templates for employee benefit plan adoption agreements after first doing so for fund
+    agreements; over 100 of its audit professionals use CoCounsel, and its senior audit manager says citation-backed
+    answers let staff resolve an issue while learning the standard (TR-SENSIBA-2026). Ledgerline's CEO describes the
+    same design: extract the provisions tested and cite page and section so a reviewer can verify
+    (LEDGERLINE-CPAPA-2026).
+  outcomes:
+    - lever: speed
+      description: "An auditor at Kimberlin estimates a plan-document error check that took 60 to 90 minutes now takes about 15 minutes; the vendor's headline tile says 80 percent time savings on routine checks"
+      figure: "60-90 minutes down to about 15 minutes; 80 percent"
+      measures: "time for one plan-document error-checking task, estimated by one auditor (source: 'Kern estimates'). The 80 percent tile is labelled time savings from faster responses and source-linked verification; its numerator and denominator are not stated"
+      provenance: vendor-published
+      source_ref: TR-KIMBERLIN-2026
+    - lever: experience
+      description: "Kimberlin and Sensiba report trainee confidence and learning benefits without figures"
+      figure: "none published"
+      measures: "Not applicable; testimonials"
+      provenance: vendor-published
+      source_ref: TR-SENSIBA-2026
+  prerequisites:
+    - "Plan documents and amendments uploaded to the tool; for Sensiba, workspace templates per document type (TR-SENSIBA-2026)"
+    - "A tool with authoritative content and citations; Sensiba rolled it out in January so staff learned on live work (TR-SENSIBA-2026)"
+  risks_and_guardrails:
+    - "The vendor says professional judgment remains critical and the tool directs auditors to relevant sections faster (TR-KIMBERLIN-2026)"
+    - "Sensiba says it wants staff not to rely blindly on AI, and says the citations shown beside each answer help reinforce that (TR-SENSIBA-2026)"
+    - "The ICPAS article warns that time pressure can tempt auditors to rely too heavily on automated tools (ICPAS-EBPQ-2024)"
+    - "No source reports misread provisions or how often answers were corrected"
+  human_checkpoints:
+    - "Auditors check the cited page and section before relying on an answer (TR-KIMBERLIN-2026)"
+    - "Staff check the cited guidance; seniors review conclusions (TR-SENSIBA-2026)"
+  role_evolution: >-
+    Kimberlin says the tool reduces reliance on senior staff for routine checks, that seniors spend less time answering
+    routine questions, and that trainees answer routine questions on their own (TR-KIMBERLIN-2026).
+  evidence_grade: B
+  sources:
+    - { ref: TR-KIMBERLIN-2026, title: "How Kimberlin Company accelerated 401(k) audits with CoCounsel Audit (case study)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/how-kimberlin-company-accelerated-401-k-audits-with-cocounsel-audit", date: "2026-08-06", access: full, locator: "\"The solution\"; executive summary; paragraph on trainees; closing section" }
+    - { ref: TR-SENSIBA-2026, title: "How Sensiba boosts audit efficiency with CoCounsel Audit (case study)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/accelerating-audit-efficiency-how-sensiba-llp-streamlined-technical-research-and-document-management-with-cocounsel-audit", date: "2026-01-06", access: full, locator: "\"Challenge\"; \"Solution: CoCounsel saves time and increases efficiency\"; \"An often-overlooked benefit\"" }
+    - { ref: LEDGERLINE-CPAPA-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It (Tunde Adewole, CEO of Ledgerline)", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "section \"What full-population testing changes\"" }
+    - { ref: ICPAS-EBPQ-2024, title: "Enhancing Employee Benefit Plan Audit Quality (Andrea Wright, Johnson Lambert)", publisher: "Illinois CPA Society, Insight magazine (Spring 2024 issue)", type: professional-body, url: "https://www.icpas.org/resources/publications/insight-magazine/article-search/detail/spring-2024/enhancing-employee-benefit-plan-audit-quality", date: "2024", access: full, locator: "\"Challenges in ensuring audit quality\", last paragraph" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Merged from two research entries (plan-document reading, and citation-backed technical Q&A for trainees): same tool,
+    same firms, same sources. Grade B: the time figure is one auditor's estimate in a vendor-authored case study.
+    Sensiba's case study is mostly about technical research and fund agreements; the plan-document part is one
+    paragraph. A firm-grounded research assistant in general is assurance-quality-management-12.
+
+- id: assurance-benefit-plans-07
+  title: AI-assisted reading of recordkeeper and TPA SOC 1 reports for plan-audit reliance (Kimberlin; AuditMiner toolkits)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, research-synthesis]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: in-production
+  problem: >-
+    Plan audits lean on recordkeepers' and third-party administrators' (TPAs') SOC 1 reports, and overreliance on
+    service providers was a deficiency theme in the Department of Labor's 2023 study (ICPAS-EBPQ-2024). The AICPA's plan
+    audit quality center lists reliance on SOC 1 reports among tools aimed at that study's findings
+    (AICPA-EBPAQC-TOOLS-2024). Reports run long; AuditMiner puts the average at over 20 pages (AUDITMINER-SOC-2026).
+  solution: >-
+    Kimberlin Company (specialist plan-audit firm) prompts CoCounsel Audit to map specific controls in a SOC 1 report
+    to its testing focus areas as part of its CX 4.4 audit program and copies the structured result into workpapers
+    (TR-KIMBERLIN-2026). AuditMiner (vendor) sells over 1,000 reviewed SOC toolkits that turn reports into Excel
+    workbooks and procedures, including toolkits for employee benefit plans among its industries; its pages describe
+    workbooks and senior-CPA review, not AI (AUDITMINER-SOC-2026). Anders CPAs + Advisors (regional firm) lists SOC
+    report analysis among the tasks it automated (AUDITMINER-ANDERS-2025).
+  outcomes:
+    - lever: speed
+      description: "none published for SOC 1 review alone"
+      figure: "none published"
+      measures: "Not applicable; Kimberlin's time figure covers plan-document checks (see 06)"
+      provenance: vendor-published
+      source_ref: TR-KIMBERLIN-2026
+  prerequisites:
+    - "Current SOC 1 reports from each recordkeeper and TPA, with complementary user entity controls reviewed; Audenza says that section is frequently skipped (AUDENZA-EBP-2026, a vendor view)"
+    - "A firm testing program that says what to extract (Kimberlin's CX 4.4 program) (TR-KIMBERLIN-2026)"
+  risks_and_guardrails:
+    - "A service organisation's own AI use now has AICPA technical Q&A for SOC 1 and SOC 2 engagements (AICPA-TQA9561-2026)"
+    - "No source reports the accuracy of AI-mapped control summaries or any review rate for them"
+  human_checkpoints:
+    - "The auditor judges deviations and complementary user entity controls before relying (TR-KIMBERLIN-2026)"
+  role_evolution: >-
+    Kimberlin's auditors prompt the tool and paste structured results into workpapers (TR-KIMBERLIN-2026); no source
+    describes a change in who concludes on reliance.
+  evidence_grade: B
+  sources:
+    - { ref: TR-KIMBERLIN-2026, title: "How Kimberlin Company accelerated 401(k) audits with CoCounsel Audit (case study)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/how-kimberlin-company-accelerated-401-k-audits-with-cocounsel-audit", date: "2026-08-06", access: full, locator: "paragraph on SOC 1 reports and the CX 4.4 audit program" }
+    - { ref: AUDITMINER-SOC-2026, title: "SOC Report Toolkits for Auditors", publisher: "AuditMiner", type: vendor, url: "https://www.auditminer.com/soc-toolkits", date: "2026", access: full, locator: "\"OUR SOC LIBRary\"; \"Fun Fact\"" }
+    - { ref: AUDITMINER-ANDERS-2025, title: "Driving Efficiency and Enhancing Staff Morale at Anders CPAs + Advisors (case study PDF; date from PDF creation metadata, 20 Jan 2025; text layer absent, read as page images)", publisher: "AuditMiner", type: vendor, url: "https://6703923.fs1.hubspotusercontent-na1.net/hubfs/6703923/Anders%20Case%20Study%202025.pdf", date: "2025-01", access: full, locator: "page 3 \"The Results\"" }
+    - { ref: ICPAS-EBPQ-2024, title: "Enhancing Employee Benefit Plan Audit Quality (Andrea Wright, Johnson Lambert)", publisher: "Illinois CPA Society, Insight magazine (Spring 2024 issue)", type: professional-body, url: "https://www.icpas.org/resources/publications/insight-magazine/article-search/detail/spring-2024/enhancing-employee-benefit-plan-audit-quality", date: "2024", access: full, locator: "\"Challenges in ensuring audit quality\"" }
+    - { ref: AICPA-EBPAQC-TOOLS-2024, title: "EBPAQC tools that address 2023 DOL audit quality study deficiencies", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/download/ebpaqc-tools-that-address-2023-dol-audit-quality-study-deficiencies", date: "2024-08-20", access: full, locator: "list of tools" }
+    - { ref: AICPA-TQA9561-2026, title: "TQA Section 9561 SOC Examinations: Effect of the Service Organization's Use of AI on SOC 1 and SOC 2 Examinations (resource landing page; document body not opened)", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/download/tqa-section-9561-soc-examinations-effect-of-the-service-organizations-use-of-ai-on-soc1-and-soc2-examinations", date: "2026-09-11", access: full, locator: "landing-page description" }
+    - { ref: AUDENZA-EBP-2026, title: "EBP Audit Guide 2026: Everything CPA Firms & Sponsors Need", publisher: "Audenza Advisory", type: vendor, url: "https://audenzaadvisory.com/employee-benefit-plan-audit-guide/", date: "2026-07-27", access: full, locator: "\"Section 8: Best Practices for Audit Readiness\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Overlaps assurance-controls-testing-13 (AI review of third-party SOC reports for user-entity reliance), which holds
+    the general mechanics; kept here because it is the plan audit's own reliance step with a named plan-audit firm.
+
+- id: assurance-benefit-plans-08
+  title: Risk assessment under SAS 145 generated from completed planning procedures (Autire)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Practitioners reported at the AICPA's plan conference that they were grappling with applying SAS 145 (the US
+    risk-assessment standard) to plan audits, especially identifying controls, IT systems and related parties
+    (JOFA-AAFOCUS-2024). The 2026 CalCPA conference ran a session on risk assessment from planning to workpapers for
+    defined contribution and defined benefit plans (CALCPA-EBP-2026).
+  solution: >-
+    Autire (vendor) announced in December 2024 an automated risk assessment. It says risk is calculated as a by-product
+    of the standards-based procedures performed, with built-in management and governance questions, a process
+    questionnaire for controls and walkthroughs, SOC assessments factored in, preliminary analytics, and responses
+    documented by attribute and assertion and referenced to substantive procedures (AUTIRE-RISK-2024). Its home page
+    says the risk assessment links to sample sizes and testing decisions (AUTIRE-HOME-2026).
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; the release makes capability claims and gives no firm results"
+      provenance: vendor-published
+      source_ref: AUTIRE-RISK-2024
+  prerequisites:
+    - "Completed planning procedures and questionnaires in the vendor's workflow (AUTIRE-RISK-2024)"
+  risks_and_guardrails:
+    - "No source reports how inspectors or peer reviewers view tool-generated risk assessments"
+    - "The vendor says deviation from the configured workflow requires a deliberate override (AUTIRE-COMPLIANCE-2026)"
+  human_checkpoints:
+    - "Stakeholders use it to support auditor judgments; the auditor still concludes (AUTIRE-RISK-2024)"
+  role_evolution: >-
+    The release says manual documentation is removed so firms can focus on higher-value tasks (AUTIRE-RISK-2024). No
+    firm account found.
+  evidence_grade: C
+  sources:
+    - { ref: AUTIRE-RISK-2024, title: "Autire Introduces First Audit Solution with Automated Risk Assessment, Transforming 401(k) Audit Compliance", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/autire-transforms-401k-audit-compliance-with-automated-risk-assessment/", date: "2024-12-02", access: full, locator: "opening paragraphs and capability list" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "\"Testing\" block, Automated Risk Assessment" }
+    - { ref: AUTIRE-COMPLIANCE-2026, title: "Consistent Audits. Defensible Files. (For Compliance Leaders)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/compliance-leaders", date: "2026", access: full, locator: "FAQ \"What happens if an auditor deviates\"" }
+    - { ref: JOFA-AAFOCUS-2024, title: "A&A Focus recap: Top A&A and employee benefit plan issues", publisher: "Journal of Accountancy (AICPA)", type: press, url: "https://www.journalofaccountancy.com/newsletters/a-a-focus/a-a-focus-recap-top-a-a-and-employee-benefit-plan-issues.html", date: "2024-06-26", access: full, locator: "EBP conference recap, SAS 145 bullet" }
+    - { ref: CALCPA-EBP-2026, title: "Employee Benefit Plans Audit Virtual Conference 2026 (session list)", publisher: "CalCPA", type: conference, url: "https://store.calcpa.org/catalog/activity/employee-benefit-plans-audit-virtual-conference-2026---1000004674", date: "2026-06-04", access: full, locator: "session \"Risk Assessment in Practice: From Planning to Workpapers\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    The vendor calls this fully automated and the first of its kind; both are unverified marketing claims. Ladder set to
+    augment (the research file had automate) because the auditor concludes on the generated assessment. Whether any
+    inspector or peer reviewer has commented on tool-generated risk assessments is not public. AI-suggested risks in
+    general audits are in the planning-risk-assessment module.
+
+- id: assurance-benefit-plans-09
+  title: Methodology-embedded plan-audit file with plan profile and auto-drafted financial statements (DAS EBP at Citrin Cooperman, Withum, EisnerAmper and PKF O'Connor Davies)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Caseware positions the product against outdated templates, with a standardised, methodology-led workflow
+    (CASEWARE-DASEBP-2026). The DOL's 2023 study found deficiency rates falling as a firm's plan-audit volume rises
+    (BELFINT-DOLQ-2024).
+  solution: >-
+    DAS EBP (originally OnPoint EBP, launched June 2020 by the AICPA and CPA.com on Caseware Cloud) tailors the file to
+    plan type through a plan profile, scopes audit programs, links analytics and risks, and drafts financial
+    statements and note disclosures from the profile and trial balance (CASEWARE-DASEBP-2026; AICPA-ONPOINT-2020).
+    Citrin Cooperman, a firm serving private middle-market businesses and high-net-worth individuals and controlled by
+    private-equity investor New Mountain Capital since April 2022 (BORYSOFF-PE-2024), announced on 13 July 2026 that it
+    has implemented the full DAS suite including DAS EBP, with CPA.com as implementation partner (CITRIN-DAS-2026). The
+    release also describes Caseware Verity agents in the audit file, including a disclosure checklist agent; it names no
+    plan-audit agent (CITRIN-DAS-2026). Caseware's releases say Withum (Top 25) deployed the suite including DAS EBP
+    (CASEWARE-WITHUM-2026), EisnerAmper (Top 20) adopted a platform that includes modules for employee benefit plan
+    audits (CASEWARE-EISNERAMPER-2026), and PKF O'Connor Davies (Top 25) adopted the DAS Suite, described as including
+    DAS EBP (CASEWARE-PKF-2026).
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; the releases are adoption announcements and publish no hours, review-note or inspection results"
+      provenance: vendor-published
+      source_ref: CITRIN-DAS-2026
+  prerequisites:
+    - "Data migration, training and change management, which CPA.com provided for Citrin (CITRIN-DAS-2026)"
+    - "Plan types inside scope: the 2020 FAQ limited the product to 401(k) audits under ERISA section 103(a)(3)(C) and excluded defined benefit, health and welfare, 403(b), ESOP and multiemployer plans; current coverage was not confirmed (AICPA-ONPOINT-2020)"
+  risks_and_guardrails:
+    - "The DOL study found 80 percent of deficient audits were performed by members of the AICPA's plan audit quality center, although members had a significantly lower deficiency rate (BELFINT-DOLQ-2024)"
+    - "All the adoption releases were written by the vendor; none reports plan-audit results (CITRIN-DAS-2026; CASEWARE-WITHUM-2026; CASEWARE-EISNERAMPER-2026; CASEWARE-PKF-2026)"
+  human_checkpoints:
+    - "Professionals complete the plan profile, run the programs and review the drafted financials (CASEWARE-DASEBP-2026)"
+  role_evolution: >-
+    Citrin's assurance innovation leader says the aim is to use AI and related tools to improve audit quality and
+    accelerate learning while preserving critical thinking and professional judgment (CITRIN-DAS-2026).
+  evidence_grade: B
+  sources:
+    - { ref: CITRIN-DAS-2026, title: "Citrin Cooperman & Company, LLP Adopts AI-Enabled DAS Suite Powered by Caseware to Advance Audit Quality, Professional Development, and Scalable Growth", publisher: "Caseware (press release)", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "paragraphs 1-3 and 7" }
+    - { ref: CASEWARE-WITHUM-2026, title: "Withum Fully Adopts DAS Powered by the Caseware Verity AI Platform to Drive its Future-Ready Audit Practice", publisher: "Caseware (press release)", type: vendor, url: "https://www.caseware.com/news/withum-fully-adopts-das-powered-by-the-caseware-verity-ai-platform-to-drive-its-future-ready-audit-practice", date: "2026-06-03", access: full, locator: "paragraph 2 (DAS, DAS PCR and DAS EBP)" }
+    - { ref: CASEWARE-EISNERAMPER-2026, title: "EisnerAmper Leverages DAS Powered by Caseware to Unify Audit and Build an Agentic Future Across Its Multi-Vertical Practice", publisher: "Caseware (press release)", type: vendor, url: "https://www.caseware.com/news/eisneramper-leverages-das-powered-by-caseware-to-unify-audit-and-build-an-agentic-future-across-its-multi-vertical-practice", date: "2026-06-25", access: full, locator: "opening paragraph (modules including employee benefit plan audits)" }
+    - { ref: CASEWARE-PKF-2026, title: "PKF O'Connor Davies Adopts AI-Enabled DAS Suite Powered by Caseware Verity, and Joins the Caseware Agentic Pioneer Program", publisher: "Caseware (press release)", type: vendor, url: "https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program", date: "2026-10-08", access: full, locator: "paragraphs 1-2 (suite includes DAS Audit, DAS PCR and DAS EBP)" }
+    - { ref: CASEWARE-DASEBP-2026, title: "DAS EBP (formerly OnPoint EBP) product page", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/us/products/das-ebp", date: "2026", access: full, locator: "\"Features\"" }
+    - { ref: AICPA-ONPOINT-2020, title: "OnPoint EBP Frequently Asked Questions", publisher: "AICPA and CPA.com", type: professional-body, url: "https://www.cpa.com/sites/cpa/files/2020-08/OnPoint_EBP_FAQs.pdf", date: "2020-08", access: full, locator: "FAQ 1 and FAQ 3" }
+    - { ref: BELFINT-DOLQ-2024, title: "The 2023 DOL Audit Quality Study: Slight Improvements, but Audit Quality is Still Concerning", publisher: "Belfint, Lyons & Shuman (firm blog)", type: firm, url: "https://employeebenefitplanaudit.belfint.com/2023-dol-audit-quality-study/", date: "2024-03-07", access: full, locator: "\"Some benefit to AICPA EBPAQC Membership\"" }
+    - { ref: BORYSOFF-PE-2024, title: "Does Private Equity Investment in Accounting Firms Affect Perceived and Actual Audit Quality? (Registered Report Proposal)", publisher: "The Accounting Review (George Mason, Wake Forest, Boston University authors)", type: academic, url: "https://business.gwu.edu/sites/g/files/zaxdzs5326/files/2024-06/maria_nykyforovych.pdf", date: "2024-06", access: full, locator: "p. 1 table of firms that accepted PE investment (Citrin Cooperman, 11 Apr 2022, New Mountain Capital, controlling)" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "\"Audit Wrap Up\" navigation block (financial statement generation)" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    The DAS EBP product page does not mention AI features; the AI references in the releases are about the wider DAS
+    suite and Verity. Grade B rests on vendor press releases with firm quotes, not on a firm statement about plan-audit
+    results. Withum, EisnerAmper and PKF were routed from the private-company passes; their releases were re-checked on
+    2026-10-21 for the benefit-plan module wording. Autire's wrap-up phase also generates a financial statement package
+    from audit data (AUTIRE-HOME-2026). The platform idea for mid-tier firms in general is
+    assurance-planning-risk-assessment-20; centrally updated programmes are assurance-quality-management-16.
+
+- id: assurance-benefit-plans-10
+  title: Plan-specific request lists and client portals that cut what the plan sponsor has to send (Sikich on Suralink; Belfint on Autire)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [coordination-scheduling, client-interaction]
+  pattern: intake-triage
+  ladder: automate
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Plan audits run on long request lists chased by email, landing in a seasonal scramble; Ledgerline describes the
+    audit as roughly four months of requests, reviews and follow-ups (LEDGERLINE-SITE-2026).
+  solution: >-
+    Sikich (mid-market firm) uses the Suralink workflow platform to coordinate data gathering with custom requests,
+    real-time progress views, per-person assignments and a chat feature in place of email (SIKICH-BROCHURE-2026).
+    Autire (vendor) sends plan-specific requests through a portal with reminders and status tracking
+    (AUTIRE-HOME-2026). Belfint's audit manager (regional firm) says new engagements now start with a smaller request
+    and that, if the sponsor supplies the initial documents, he can finish the audit in two weeks if required
+    (AUTIRE-BELFINT-2026).
+  outcomes:
+    - lever: speed
+      description: "Belfint's audit manager says an audit can be done in two weeks if the initial documents arrive; this is a stated capability, not a measured average"
+      figure: "two weeks"
+      measures: "calendar time to finish an audit once the sponsor supplies initial documents, 'if it had to be done' (audit manager's statement in a vendor case study)"
+      provenance: vendor-published
+      source_ref: AUTIRE-BELFINT-2026
+  prerequisites:
+    - "Sponsor willingness to use a portal and provide documents once; Sikich restricts sensitive items in the portal (SIKICH-BROCHURE-2026)"
+  risks_and_guardrails:
+    - "Sensitive and confidential items can be restricted inside the portal (SIKICH-BROCHURE-2026)"
+  human_checkpoints:
+    - "Requests are assigned to individual team members (SIKICH-BROCHURE-2026)"
+  role_evolution: >-
+    Belfint's audit manager says staff and sponsors both see speed as a selling point and that five to ten local TPAs
+    send referrals (AUTIRE-BELFINT-2026).
+  evidence_grade: B
+  sources:
+    - { ref: SIKICH-BROCHURE-2026, title: "Employee Benefit Plan Audits (brochure, file code SKCH_0726)", publisher: "Sikich", type: firm, url: "https://www.sikich.com/wp-content/uploads/2026/09/Employee-Benefit-Plan-Audit-Brochure_SKCH_0726.pdf", date: "2026", access: full, locator: "page 7 \"Suralink workflow platform\"" }
+    - { ref: AUTIRE-BELFINT-2026, title: "How Belfint, Lyons & Shuman Grew From 100 to 170 EBP Audits (case study)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/case-studies/belfint-lyons-shuman/", date: "2026-08-30", access: full, locator: "\"What Changed\", \"The client ask\"" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "\"Guided Document Requests\"" }
+    - { ref: LEDGERLINE-SITE-2026, title: "Ledgerline: Specialist 401(k) and 403(b) plan audits", publisher: "Ledgerline", type: firm, url: "https://ledgerlineaudit.com", date: "2026-10", access: full, locator: "\"The problem today\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Workflow automation, not AI. Included because it is how data reaches the tests in 01 and 03, and because it changes
+    the client ask.
+
+- id: assurance-benefit-plans-11
+  title: Firm methodology configured once and enforced across plan audits, with vendor-supported DOL inspection and peer review (Autire)
+  archetype: assurance
+  module: benefit-plans
+  function: risk-compliance-legal
+  work_types: [review-assurance, coordination-scheduling]
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: >-
+    The Department of Labor's 2023 study found that peer review does not identify deficient plan audits and
+    recommended an engagement review on top of the required system review (BELFINT-DOLQ-2024). In Tennessee's 2025
+    peer review report, two of 21 ERISA engagements reviewed were nonconforming (TSCPA-PEERREVIEW-2025).
+  solution: >-
+    Autire (vendor) says materiality, risk logic and testing conclusions are set once at firm level and cascade to every
+    engagement, that its quality management materials are examined annually by an external reviewer, and that DOL
+    inspection and peer review support from former plan auditors is in the per-audit fee (AUTIRE-COMPLIANCE-2026;
+    AUTIRE-ABOUT-2026). Belfint (regional firm) says it added its own extra memos where its quality control needed more
+    (AUTIRE-BELFINT-2026).
+  outcomes:
+    - lever: risk
+      description: "The vendor claims zero peer review or DOL findings attributed to its platform across all firms; the claim is unverified"
+      figure: "zero findings attributed to Autire"
+      measures: "peer review or DOL findings 'attributed to Autire', per the vendor; no denominator, no definition of attribution, and not independently checked"
+      provenance: vendor-published
+      source_ref: AUTIRE-HOME-2026
+  prerequisites:
+    - "Firm-level configuration of methodology by someone who owns it (AUTIRE-COMPLIANCE-2026)"
+  risks_and_guardrails:
+    - "The DOL found 80 percent of deficient audits were performed by members of the AICPA's plan audit quality center (BELFINT-DOLQ-2024)"
+    - "The vendor's examination covers its quality management materials as a practice aid, not any firm's engagement quality (AUTIRE-COMPLIANCE-2026)"
+  human_checkpoints:
+    - "Deviation from the configured workflow needs a deliberate override by a person (AUTIRE-COMPLIANCE-2026)"
+  role_evolution: >-
+    The vendor says its support team is entirely former plan auditors and that inspection and peer review support is
+    included in the per-audit fee (AUTIRE-COMPLIANCE-2026). No firm account of how this changes in-house roles was found.
+  evidence_grade: C
+  sources:
+    - { ref: AUTIRE-COMPLIANCE-2026, title: "Consistent Audits. Defensible Files. (For Compliance Leaders)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/compliance-leaders", date: "2026", access: full, locator: "\"Your Standard, on Every File\"; \"DOL and Peer Review Support, Included\"; FAQ" }
+    - { ref: AUTIRE-ABOUT-2026, title: "Building the Future of EBP Audit (About)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/about", date: "2026", access: full, locator: "\"A Team That's Done This Work Before\"" }
+    - { ref: AUTIRE-HOME-2026, title: "Autire: EBP Audit Software for CPA Firms (home page)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com", date: "2026", access: full, locator: "statistics row" }
+    - { ref: AUTIRE-BELFINT-2026, title: "How Belfint, Lyons & Shuman Grew From 100 to 170 EBP Audits (case study)", publisher: "Autire Technologies", type: vendor, url: "https://autire.com/case-studies/belfint-lyons-shuman/", date: "2026-08-30", access: full, locator: "\"What Changed\"" }
+    - { ref: BELFINT-DOLQ-2024, title: "The 2023 DOL Audit Quality Study: Slight Improvements, but Audit Quality is Still Concerning", publisher: "Belfint, Lyons & Shuman (firm blog)", type: firm, url: "https://employeebenefitplanaudit.belfint.com/2023-dol-audit-quality-study/", date: "2024-03-07", access: full, locator: "\"Peer Review Not Meeting Objectives\"" }
+    - { ref: TSCPA-PEERREVIEW-2025, title: "Annual Report on Peer Review Activities 2025", publisher: "Tennessee Society of CPAs", type: professional-body, url: "https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf", date: "2026-03-31", access: full, locator: "section II.2(c) nonconforming engagements table" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Vendor claims only; no inspector or peer reviewer has published a view of tool-generated files. The Tennessee figure
+    is one state's small sample (21 engagements) and is context, not a benchmark. Firm-wide programmes updated centrally
+    are assurance-quality-management-16; vendor due diligence for smaller firms is assurance-quality-management-06.
+
+- id: assurance-benefit-plans-12
+  title: Specialist plan-audit firm marketing its own AI-assisted platform with fixed multi-year pricing (Metz CPA, EBPAudit.ai)
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: other
+  ladder: augment
+  change_scope: model
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    Plan audits are concentrated in specialist firms, and the DOL found the largest practices have far lower
+    deficiency rates than firms with one or two plan audits (BELFINT-DOLQ-2024).
+  solution: >-
+    Metz CPA, PLLC, which calls itself a Top 100 plan-audit firm by volume with offices in Phoenix, Milwaukee and New
+    York, markets fixed three-year pricing, a written service guarantee and a proprietary EBPAudit.ai platform that it
+    says streamlines the audit and removes back-and-forth (METZ-EBPAUDITAI-2026).
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; the page says the platform reduces turnaround time but gives no figure"
+      provenance: self-reported
+      source_ref: METZ-EBPAUDITAI-2026
+  prerequisites:
+    - "Specialist team with plan-specific experience; the firm says its auditors average over a decade of plan-audit experience (METZ-EBPAUDITAI-2026)"
+  risks_and_guardrails:
+    - "No source describes what the platform does or how its output is reviewed"
+  human_checkpoints:
+    - "Not described"
+  role_evolution: >-
+    The firm says clients work with an experienced plan auditor and not a junior rotation (METZ-EBPAUDITAI-2026).
+  evidence_grade: C
+  sources:
+    - { ref: METZ-EBPAUDITAI-2026, title: "EBPAudit.ai: Employee Benefit Plan Audits by Metz CPA, PLLC", publisher: "Metz CPA, PLLC", type: firm, url: "https://ebpaudit.ai/", date: "2026", access: full, locator: "\"Why Metz CPA\" list item \"AI-assisted workflows\"" }
+    - { ref: BELFINT-DOLQ-2024, title: "The 2023 DOL Audit Quality Study: Slight Improvements, but Audit Quality is Still Concerning", publisher: "Belfint, Lyons & Shuman (firm blog)", type: firm, url: "https://employeebenefitplanaudit.belfint.com/2023-dol-audit-quality-study/", date: "2024-03-07", access: full, locator: "strata table under \"Results\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    One marketing line on a firm site (page undated, copyright 2026). Kept at C because the page does not say what the
+    AI does. Other model-scope examples sit elsewhere: the Ledgerline pre-launch specialist firm is
+    assurance-substantive-testing-25, and AI-native start-up auditors such as Oath, which lists employee benefit plans
+    among its client types (OATH-2026), are assurance-acceptance-independence-20.
+
+- id: assurance-benefit-plans-13
+  title: Form 5500 search and analytics to size up plan engagements and find plan-audit prospects (AuditMiner Plan Research)
+  archetype: assurance
+  module: benefit-plans
+  function: sales-marketing-bd
+  work_types: [research-synthesis, data-reporting]
+  pattern: research-brief
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Firms need plan information to scope a complex engagement and to find retirement plans that fit their client
+    profile (AUDITMINER-PLANRES-2026).
+  solution: >-
+    AuditMiner's (vendor) Plan Research product combines Form 5500 search with plan analytics, historical filings and
+    audit reports, for evaluating a current engagement and finding new business (AUDITMINER-PLANRES-2026). Form 5500 is
+    the annual return a plan files with the Department of Labor, which carries the audit report.
+  outcomes:
+    - lever: growth
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable; product page only"
+      provenance: vendor-published
+      source_ref: AUDITMINER-PLANRES-2026
+  prerequisites:
+    - "Public Form 5500 data and audit reports (AUDITMINER-PLANRES-2026)"
+  risks_and_guardrails:
+    - "No source discusses acceptance or independence checks for prospects found this way; see the acceptance-independence module"
+  human_checkpoints:
+    - "Not described in the source; proposal and acceptance decisions stay with the firm's acceptance process (see the acceptance-independence module)"
+  role_evolution: >-
+    Not described.
+  evidence_grade: C
+  sources:
+    - { ref: AUDITMINER-PLANRES-2026, title: "EBP Plan Research (product page)", publisher: "AuditMiner", type: vendor, url: "https://www.auditminer.com/ebp-plan-research", date: "2026", access: full, locator: "introduction and \"YOUR Audit ADVANTAGE\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    The page is undated and does not say it uses AI. It is the only Form 5500 data product aimed at plan auditors that
+    was found. Kept because it is the only business-development entry for this engagement type.
+
+- id: assurance-benefit-plans-14
+  title: "Idea: assessing AI used by recordkeepers, TPAs, payroll providers and plan sponsors through SOC 1 reports and risk assessment"
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [review-assurance, research-synthesis]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Plan data and controls sit with service providers whose AI use can change the data and controls the auditor relies
+    on; AuditMiner (vendor) expects auditors to evaluate how AI-generated data affects risk assessments
+    (AUDITMINER-PREDICT-2026).
+  solution: >-
+    Idea: use the AICPA's September 2026 technical Q&A on a service organisation's use of AI in SOC 1 and SOC 2
+    engagements (AICPA-TQA9561-2026) and the AICPA's October 2026 practice aid on a client's AI in reporting and
+    controls (AICPA-PA-2026) as the basis for asking providers whether AI sits in the service and what the SOC report
+    covers. No plan-audit-specific guidance was found.
+  outcomes:
+    - lever: risk
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable"
+      provenance: self-reported
+      source_ref: AUDITMINER-PREDICT-2026
+  prerequisites:
+    - "SOC 1 reports from every recordkeeper and TPA, including the system description and user entity controls (AUDENZA-EBP-2026)"
+  risks_and_guardrails:
+    - "AuditMiner names cybersecurity and fraud, such as account takeovers and fraudulent distributions, as frontline risks for 2026 (AUDITMINER-PREDICT-2026)"
+  human_checkpoints:
+    - "The auditor concludes on reliance and scope (AICPA-TQA9561-2026)"
+  role_evolution: >-
+    Not described.
+  evidence_grade: D
+  sources:
+    - { ref: AUDITMINER-PREDICT-2026, title: "EBP Auditing Industry 2026: What Auditors Should Expect Next", publisher: "AuditMiner", type: vendor, url: "https://www.auditminer.com/post/ebp-audit-predictions-for-2026-what-2025-revealed-and-what-auditors-should-expect-next", date: "2026-01-23", access: full, locator: "prediction 2 (\"AI Will Influence EBP Audits\"); prediction 5" }
+    - { ref: AICPA-TQA9561-2026, title: "TQA Section 9561 SOC Examinations: Effect of the Service Organization's Use of AI on SOC 1 and SOC 2 Examinations (resource landing page; document body not opened)", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/download/tqa-section-9561-soc-examinations-effect-of-the-service-organizations-use-of-ai-on-soc1-and-soc2-examinations", date: "2026-09-11", access: full, locator: "landing-page description" }
+    - { ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing (news release on the practice aid 'Artificial Intelligence (AI) Considerations for Financial Statement Auditors'; read with the Journal of Accountancy report of 13 Oct 2026)", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "description of the two parts" }
+    - { ref: AUDENZA-EBP-2026, title: "EBP Audit Guide 2026: Everything CPA Firms & Sponsors Need", publisher: "Audenza Advisory", type: vendor, url: "https://audenzaadvisory.com/employee-benefit-plan-audit-guide/", date: "2026-07-27", access: full, locator: "\"Section 8\"" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Idea. The Q&A document body was not opened; the landing page gives its scope and date only. Related modules:
+    assurance-over-ai (auditing an entity's AI) and soc-attestation (the service auditor's side).
+
+- id: assurance-benefit-plans-15
+  title: "Idea: year-round plan-data monitoring shared between recordkeeper, TPA and auditor"
+  archetype: assurance
+  module: benefit-plans
+  function: service-delivery
+  work_types: [data-reporting, review-assurance]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: process
+  runtime_class: background-agent
+  maturity: emerging
+  problem: >-
+    Remittance timing and eligibility errors are easiest to fix when found early, and plan audits cluster in one busy
+    window (AUDENZA-EBP-2026).
+  solution: >-
+    Idea: reconcile contribution data and eligibility changes monthly (a readiness practice recommended by an
+    outsourcing vendor, AUDENZA-EBP-2026). An August 2026 Plan Sponsor Council of America article, seen only in search
+    results, reportedly discusses AI-enabled continuous monitoring of plan data and says it depends on integration
+    between recordkeeper and TPA (PSCA-AIRK-2026; unverified). No auditor has described acting on such a feed.
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "Not applicable"
+      provenance: self-reported
+      source_ref: AUDENZA-EBP-2026
+  prerequisites:
+    - "Recordkeeper and TPA data integration (PSCA-AIRK-2026, unverified)"
+  risks_and_guardrails:
+    - "No source addresses how an auditor would test the completeness of, or stay independent from, a feed run by the plan's own providers"
+  human_checkpoints:
+    - "Not described"
+  role_evolution: >-
+    Not described.
+  evidence_grade: D
+  sources:
+    - { ref: AUDENZA-EBP-2026, title: "EBP Audit Guide 2026: Everything CPA Firms & Sponsors Need", publisher: "Audenza Advisory", type: vendor, url: "https://audenzaadvisory.com/employee-benefit-plan-audit-guide/", date: "2026-07-27", access: full, locator: "\"Section 8: Best Practices for Audit Readiness\"" }
+    - { ref: PSCA-AIRK-2026, title: "AI May Help Modernize Retirement Plan Recordkeeping (seen in search results only; page returned 403)", publisher: "Plan Sponsor Council of America", type: professional-body, url: "https://www.psca.org/news/psca-news/2026/8/ai-may-help-modernize-retirement-plan-recordkeeping/", date: "2026-08", access: search-only, locator: "search-result summary only" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Idea. The PSCA page returned 403 and was not read; the description comes from a search summary. Audenza's advice is
+    about sponsors' own monthly reconciliation and does not mention AI.

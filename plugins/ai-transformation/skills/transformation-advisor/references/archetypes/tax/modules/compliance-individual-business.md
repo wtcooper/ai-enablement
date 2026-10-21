@@ -1,8 +1,8 @@
 # Individual and small-business return preparation (tax)
 
-Sources checked 2026-10-17. Use cases live in `../use-cases/compliance-individual-business.yaml` (25 entries). Ids are
+Sources checked 2026-10-17; widened for mid-market firms and owner-managed clients 2026-10-21 (§10). Use cases live in `../use-cases/compliance-individual-business.yaml` (31 entries). Ids are
 shortened here: `#05` means `tax-compliance-individual-business-05`; other modules' ids are in full. Source keys in
-brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §10. **Evidence is thin.** One entry is
+brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §11. **Evidence is thin.** One entry is
 grade A (`#05`), and it rests on a single vendor-published pilot: OpenAI's account of 7,000 returns in the Crete
 firms, which OpenAI co-developed; 9 are grade B (a named deployment without published measurement). No independent
 error rate, override rate or parallel-run result exists for any AI-prepared return. Say so when you quote a figure.
@@ -18,7 +18,8 @@ error rate, override rate or parallel-run result exists for any AI-prepared retu
 7. [Roles and how they evolve](#7-roles-and-how-they-evolve)
 8. [Frontier](#8-frontier)
 9. [Common objections](#9-common-objections)
-10. [Sources](#10-sources)
+10. [Mid-market firms and owner-managed clients](#10-mid-market-firms-and-owner-managed-clients)
+11. [Sources](#11-sources)
 
 ## 1. What this module covers
 
@@ -57,44 +58,28 @@ and change scope has entries; every automate and delegate figure is vendor-publi
 model-scope change has one B entry (`#24`). Seven entries are controls, enablement or ideas (`#10`, `#13`, `#18`-`#22`).
 
 **Intake and data capture**
-- Improve: `#01` AI-prefilled organizers, tailored request lists, chasing and missing-information questions (Canopy,
-  Basis; up to 20 minutes per client, vendor claim). The Form 8867 interview stays personal.
-- Automate: `#02` classification, extraction and K-1 footnote mapping with confidence flags; only exceptions reach a
-  reviewer (CCH Axcess Scan, PwC, ProConnect). `#03` H&R Block removes manual data entry in pilot offices to free
-  appointment time for advice.
+- Improve: `#01` AI-prefilled organizers, tailored request lists, chasing and missing-information questions (Canopy, Basis; up to 20 minutes per client, vendor claim). The Form 8867 interview stays personal.
+- Automate: `#02` classification, extraction and K-1 footnote mapping with confidence flags; only exceptions reach a reviewer (CCH Axcess Scan, PwC, ProConnect). `#03` H&R Block removes manual data entry in pilot offices to free appointment time for advice.
 
 **Preparation**
-- Improve: `#04` Thomson Reuters Ready to Review drafts simple 1040s for review (about an hour saved per return, one
-  partner's estimate). `#07` trial balance mapped to 1120-S and 1065 workpapers (Basis). `#10` idea: a deterministic
-  engine calculates, the model handles intake and explanation.
-- Delegate: `#05` end-to-end agents for complex, K-1-heavy individual returns (Black Ore, Basis, Accrual at Armanino);
-  the only grade A, resting on OpenAI's vendor-published 7,000-return pilot with Crete firms. `#06` partnership, S
-  corporation and trust returns to K-1s (Accrual at Armanino; Basis 1065 demo). `#08` an agent prepares the return
-  inside the firm's own tax software (TaxGPT, which WCG found least ready of five vendors). `#09` general agents run
-  taught routines (Accrual Arc; a practitioner using Claude Cowork).
+- Improve: `#04` Thomson Reuters Ready to Review drafts simple 1040s for review (about an hour saved per return, one partner's estimate). `#07` trial balance mapped to 1120-S and 1065 workpapers (Basis). `#10` idea: a deterministic engine calculates, the model handles intake and explanation.
+- Delegate: `#05` end-to-end agents for complex, K-1-heavy individual returns (Black Ore, Basis, Accrual at Armanino); the only grade A, resting on OpenAI's vendor-published 7,000-return pilot with Crete firms. `#06` partnership, S corporation and trust returns to K-1s (Accrual at Armanino; Basis 1065 demo). `#08` an agent prepares the return inside the firm's own tax software (TaxGPT, which WCG found least ready of five vendors). `#09` general agents run taught routines (Accrual Arc; a practitioner using Claude Cowork).
 
 **Research and review**
-- Improve: `#11` grounded assistant for code changes and return positions (H&R Block Sidekick), every authority
-  verified. `#12` AI review with source tie-out, diagnostics, prior-year variance and audit-sensitive flags.
-  `#13` idea: decision logs, override-rate monitoring and scaled sampling so review does not thin.
-- Automate: `#14` H&R Block's "Second Look" look-back of three prior years for every new client; new clients who got
-  it returned at a rate 600+ basis points higher (the figure is for the service, not the AI).
+- Improve: `#11` grounded assistant for code changes and return positions (H&R Block Sidekick), every authority verified. `#12` AI review with source tie-out, diagnostics, prior-year variance and audit-sensitive flags, now including entity-return checks (Filed, Instead). `#13` idea: decision logs, override-rate monitoring and scaled sampling so review does not thin.
+- Automate: `#14` H&R Block's "Second Look" look-back of three prior years for every new client; new clients who got it returned at a rate 600+ basis points higher (the figure is for the service, not the AI).
 
 **Client communication, delivery and other jurisdictions**
-- Improve: `#15` AI-drafted status messages, return explanations and plan comparisons (32% of CPA preparers use AI
-  for client communication). `#17` UK self assessment and Making Tax Digital preparation (ApariPro).
+- Improve: `#15` AI-drafted status messages, return explanations and plan comparisons (32% of CPA preparers use AI for client communication). `#17` UK self assessment and Making Tax Digital preparation (ApariPro).
 - Automate: `#16` assembly, e-signature and Form 8879 routing (SafeSend, vendor claim of 15 minutes per return).
 
 **Adoption and governance (controls that make the rest safe)**
-- Improve: `#18` phased adoption: simple returns first, scope gates, parallel runs on last year's returns. `#19` AI
-  policy, approved tools under the written information security plan (WISP), vendor diligence. `#20` AI pod,
-  champions and failure-mode training that protects the junior pipeline (PwC, WCG). `#21` disclosure and section
-  7216 consent.
+- Improve: `#18` phased adoption: simple returns first, scope gates, parallel runs on last year's returns. `#19` AI policy, approved tools under the written information security plan (WISP), vendor diligence. `#20` AI pod, champions and failure-mode training that protects the junior pipeline (PwC, WCG). `#21` disclosure and section 7216 consent.
 
 **Operating and business model**
-- Reinvent: `#22` idea: value or bundled pricing as hours fall. `#23` AI replaces offshore and contract first-pass
-  preparation. `#24` AI-native roll-ups buy small practices (Multiplier: margins more than doubled at one boutique).
-  `#25` taxpayer-side agents draft or check returns (Perplexity), bypassing or auditing the preparer.
+- Reinvent: `#22` idea: value or bundled pricing as hours fall. `#23` AI replaces offshore and contract first-pass preparation. `#24` AI-native roll-ups and practices (Multiplier: margins more than doubled at one boutique; Aardvark Tax Advisors). `#25` taxpayer-side agents draft or check returns (Perplexity), bypassing or auditing the preparer.
+
+**Owner-managed clients (§10)**: `#26` reasonable compensation, `#27` basis and AAA, `#28` one agent per multi-entity client, `#29` owner estimates (all improve); `#30` an AI-native platform replaces the tax engine (delegate); `#31` estate and gift returns (improve). All grade C.
 
 ## 4. Interview probes
 

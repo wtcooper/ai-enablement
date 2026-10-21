@@ -7,6 +7,7 @@
 # entries here reference it rather than repeat it. No entry has a measured quality outcome; figures are readiness
 # surveys, market sizing, vendor counts or forecasts. Documents shared with controls-testing.yaml keep that
 # file's keys (e.g. K-SOX30, K-UKCA, COSO-GENAI, AICPA-PA, BDO-ITGC); other keys follow PUBLISHER-SHORT-YYYY.
+# Entries 25-27 added 2026-10-21 (wave 6, mid-market).
 
 - id: assurance-assurance-over-ai-01
   title: "Idea: inventory the entity's AI and scope it to financial-reporting processes, assertions and key controls"
@@ -1533,3 +1534,141 @@
     UK-specific apart from ISACA. Grade B: named programme, bodies and credential, work in progress, no measured
     results; no count of credential holders. DSIT gives the innovation fund as GBP 11 million. The ICAEW Insights
     article is dated 4 Mar 2025.
+
+# ---- Added 2026-10-21 (wave 6, mid-market): agent evaluations handed to the external auditor, developer-deployer
+# scoping, and an idea for assuring AI-generated analysis ----
+
+- id: assurance-assurance-over-ai-25
+  title: "A client's external auditors receive a third-party agent-evaluation attestation as input to a SOX audit, with assurance scaled by agent risk tier (MSCI)"
+  archetype: assurance
+  module: assurance-over-ai
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: process
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    When an AI agent makes decisions that touch SOX systems, auditors ask whether the agent does what its policy says.
+    MSCI's CISO says governance documents, ISO 42001 work and an existing SOC 2 did not answer that (his statement as
+    published by AIUC) (AIUC-MSCI-2026).
+  solution: >-
+    MSCI's SecOps Agent reviews and approves privileged-access requests. AIUC's red team ran about 1,400 tests against
+    it, including testing across 112 privileged roles. A signed evaluation attestation and detailed report went to
+    MSCI's external auditors as input to its 2026 SOX audit. MSCI and AIUC also built a risk-tiering framework:
+    top-tier agents (customer-facing, or touching regulatory, HR or client data) are planned to be certified against
+    AIUC-1 with an independent auditor; lower tiers will apply a defined subset of requirements at build time
+    (AIUC-MSCI-2026).
+  outcomes:
+    - {lever: risk, description: "The agent passed with no major or significant vulnerabilities; remaining low-severity cases were timeouts, upstream platform controls, or the agent being stricter than required", figure: "~1,400 tests; 112 privileged roles", measures: "tests run by AIUC's red team across benign, social-engineering and adversarial risks against one SecOps agent, and privileged roles covered", provenance: vendor-published, source_ref: AIUC-MSCI-2026}
+  prerequisites:
+    - "Agent scoped with the company's engineers and grading criteria agreed before scaling the tests (AIUC-MSCI-2026)"
+    - "A risk-tiering framework mapping requirements to each tier (AIUC-MSCI-2026)"
+  risks_and_guardrails:
+    - "The tests were run by AIUC's own red team and published by AIUC, not by MSCI or its auditors; whether the external auditors relied on the report is not stated (AIUC-MSCI-2026)"
+    - "Quarterly re-testing is required to keep AIUC-1 certification current (AIUC-Q3-2026)"
+  human_checkpoints:
+    - "External auditors decide how far an evaluation report supports their SOX conclusions (not described in the source)"
+  role_evolution: >-
+    CISO and security-governance staff run a tiered assurance programme for agents (AIUC-MSCI-2026).
+  evidence_grade: B
+  sources:
+    - {ref: AIUC-MSCI-2026, title: "How MSCI secures its highest-risk AI agents with AIUC-1 (case study)", publisher: "Artificial Intelligence Underwriting Company (AIUC)", type: vendor, url: "https://www.aiuc-1.com/research/how-msci-secures-its-highest-risk-ai-agents-with-aiuc-1", date: "2026-09-24", access: full, locator: "sections 'Solution' and 'A framework for the next thousand agents'"}
+    - {ref: AIUC-Q3-2026, title: "Q3-2026 update: AIUC-1 for coding agents, and technical auditor guidance", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/research/2026-q3-standard-update", date: "2026-07-14", access: full, locator: "section 2 'Re-certification'"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Grade B, not A: the figures are the evaluator's, published in a vendor case study, with no independent
+    verification and no statement from MSCI's auditors. Firm kind: a larger public company (roughly 6,000 employees),
+    included because it shows what a mid-market client's external auditor will increasingly be handed. Extends -03,
+    -05 and -07, which hold the auditor's side (extend ITGCs, use management monitoring evidence, vendor AI evidence)
+    as ideas; the security archetype also cites this case study.
+
+- id: assurance-assurance-over-ai-26
+  title: "Scope an AI-agent assurance engagement with a developer-versus-deployer responsibility matrix (AIUC-1 guidance)"
+  archetype: assurance
+  module: assurance-over-ai
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: >-
+    Agents are often built on a configurable platform (examples named: Cursor, Sierra, ElevenLabs) and run by a
+    different organisation on its own data. Each side can assume the other covers a control, leaving gaps, and an
+    assurer must decide what the client (the deployer) can evidence (AIUC-Q4-2026).
+  solution: >-
+    AIUC's 15 Oct 2026 release publishes guidance and a template matrix, drafted by a working group of consortium
+    members, on who typically meets each control. Across the 78 core controls in the Q4 2026 standard, where a
+    developer-deployer relationship exists, AIUC says typically 33 are met by the developer, 40 by the deployer and 5
+    by the independent evaluator (the technical testing). The split depends on the platform, and the
+    responsibilities are described as not legally binding (AIUC-Q4-2026). An assurer would use it to set the
+    engagement's scope and the evidence the deployer must provide. For AI bought from a third party, the AICPA
+    practice aid, as reported, points the financial-statement auditor to a SOC report or other attestation and
+    management representations (AT-AICPAPA-2026; see -07).
+  outcomes:
+    - {lever: quality, description: "Scoping aid; no use reported", figure: "33 developer, 40 deployer, 5 independent evaluator", measures: "of the 78 core controls in the 2026 Q4 AIUC-1 standard, the controls AIUC says are typically met by each party where a developer and deployer exist", provenance: vendor-published, source_ref: AIUC-Q4-2026}
+  prerequisites:
+    - "Knowing which platform the client's agents run on and what that platform provides"
+  risks_and_guardrails:
+    - "Guidance is not legally binding; the exact split depends on the platform (AIUC-Q4-2026)"
+    - "Authored by AIUC and its consortium, not by the AICPA or an assurance regulator (AIUC-Q4-2026)"
+  human_checkpoints:
+    - "Assurer and client agree the matrix for the specific platform"
+  role_evolution: "Not described in the source."
+  evidence_grade: C
+  sources:
+    - {ref: AIUC-Q4-2026, title: "Q4-2026 release: Open-weight model controls and stronger third-party testing", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/research/2026-q4-standard-update", date: "2026-10-15", access: full, locator: "section 'New Guidance for Agent Developers vs. Deployers'"}
+    - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "service-organisation paragraph"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    For a client that deploys agents on a third-party platform rather than building them, the deployer column is the
+    part the assurer would test. No firm kind is attached: the guidance is the standard owner's, with no reported
+    use by an assurer. The same Q4 release consolidates third-party testing into one requirement per principle.
+
+- id: assurance-assurance-over-ai-27
+  title: "Idea: CPAs build an audit package that lets reviewers verify AI-generated analysis quickly (math example, offered as a model for business outputs)"
+  archetype: assurance
+  module: assurance-over-ai
+  function: service-delivery
+  work_types: [review-assurance, document-production]
+  pattern: draft-review-loop
+  ladder: delegate
+  change_scope: model
+  runtime_class: background-agent
+  maturity: emerging
+  problem: >-
+    AI agents generate analysis far faster than people can check it; the example comes from mathematics, where a CPA
+    says journal peer review takes about a year and cannot scale (JOFA-MATHEX-2026).
+  solution: >-
+    Richie Sater, a CPA and software developer, built AI agents that produced an answer to a 1986 open problem over
+    about three weeks, then built an "audit package" of supporting materials for the mathematician who maintains the
+    problem list. He says review took roughly two weeks for other claimants, that his package let reviewers look
+    quickly, and that it was endorsed and sent to peer review; he says the last two problems took about three days
+    of agent work. He proposes the same service for AI-generated financial analyses and models. No business client
+    is named (JOFA-MATHEX-2026).
+  outcomes:
+    - {lever: speed, description: "None published for any business use. In the maths case Sater says review was quicker; these are his statements", figure: "none published", measures: "n/a (recollection of one practitioner)", provenance: self-reported, source_ref: JOFA-MATHEX-2026}
+  prerequisites:
+    - "Agent-building skill; Sater estimates a CPA with basic computer literacy can start building basic agents in about a week (JOFA-MATHEX-2026)"
+  risks_and_guardrails:
+    - "The case is mathematics, not an assurance engagement; no professional standard, independence or liability framework applies as described (JOFA-MATHEX-2026)"
+    - "A practitioner on Accounting Today warns that independent parties using similar AI can share 'common-mode' failures, and that polished AI output can look like completed professional work (AT-AUDITRISK-2026)"
+  human_checkpoints:
+    - "Mathematician reviews the package and sends the result to peer review (JOFA-MATHEX-2026)"
+  role_evolution: >-
+    CPAs move from checking human work to verifying machine output (JOFA-MATHEX-2026); Oath's chief assurance officer
+    describes "a machine checking another machine's work" (AT-PEEC-2026).
+  evidence_grade: D
+  sources:
+    - {ref: JOFA-MATHEX-2026, title: "Problem solved: A math example of CPA-led assurance using AI agents", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/news/2026/oct/problem-solved-a-math-example-of-cpa-led-assurance-using-ai-agents/", date: "2026-10-19", access: full, locator: "section 'Opening doors with new tech, old skills'"}
+    - {ref: AT-AUDITRISK-2026, title: "AI didn't invent audit risk, so what actually changed?", publisher: "Accounting Today (AT Think opinion)", type: press, url: "https://www.accountingtoday.com/opinion/ai-didnt-invent-audit-risk-so-what-actually-changed", date: "2026-10-13", access: full, locator: "section 'Where AI may test our existing approach'"}
+    - {ref: AT-PEEC-2026, title: "AICPA weighs PE and tech impact on audit independence", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-weighs-pe-and-tech-impact-on-audit-independence-rules", date: "2026-08-31", access: full, locator: "paragraphs on Ho's firm"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Idea label: one practitioner's anecdote in a different field plus a proposal; grade capped at D for the business
+    use. Firm kind: an individual CPA-developer, not a firm. The delegate ladder reflects the agents building the
+    package; the human reviewer remains the mathematician. Assurance over AI output (rather than over AI systems) is
+    not covered by -01 to -24.

@@ -6,6 +6,8 @@
 # assurance-controls-testing-14, assurance-controls-testing-23) and are not repeated.
 # Everything about Delve is allegation: Delve denies it and no regulator finding exists.
 # Sources checked 2026-10-17: every cited URL was opened and checked against the claims.
+# Entries 17-18 added 2026-10-21 (wave 6, mid-market): the AICPA and AIUC joint SOC 2 plus AIUC-1 offering, and a
+# regional firm pairing AI governance advisory with its SOC practice.
 
 - id: assurance-soc-attestation-01
   title: AI support for client acceptance, sample selection and scheduling of concurrent audits at a SOC specialist firm
@@ -837,3 +839,118 @@
     in-production because one report has been issued, though the firm has no track record. The HN post date
     (2026-08-04) was confirmed through the HN API; HN users flagged the post. The repository has grown since (89
     controls, 387 attributes, 945 calibration examples at 2026-10-17).
+
+# ---- Added 2026-10-21 (wave 6, mid-market): AICPA and AIUC joint offering; SOC practice plus AI governance advisory ----
+
+- id: assurance-soc-attestation-17
+  title: "One CPA-led engagement delivers a SOC 2 report plus an AIUC-1 certification for AI agents and systems (AICPA and AIUC joint offering, piloting)"
+  archetype: assurance
+  module: soc-attestation
+  function: service-delivery
+  work_types: [review-assurance, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: model
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Buyers of AI products run slow, bespoke security questionnaires; the joint offering is pitched as ending that
+    cycle (AICPA-AIUCPR-2026). A SOC 2 report covers controls over a system but, as an AIUC case study argues (vendor
+    view), was not designed to test hallucinations or adversarial manipulation of an agent (AIUC-FIN-2025).
+  solution: >-
+    The AICPA and AIUC announced on 19 Oct 2026 a joint offering: one CPA-led engagement that ends with a SOC 2 report
+    (an opinion on the design and operating effectiveness of controls) and an AIUC-1 certification (AICPA-AIUCPR-2026).
+    An AICPA spokesperson told Accounting Today the entity goes through both processes separately and ends with a
+    single report and both outputs, and that one firm doing both gives practitioners more familiarity with the entity
+    (AT-AIUC-2026). AIUC-1 adds live testing of agent behaviour, annual renewal and quarterly technical retesting; the
+    AIUC site describes scoping, evaluations in which AIUC writes tests and red-teams agent configurations the client
+    supplies, an audit by an accredited auditor, and a certificate valid for one year (AIUC1-SITE-2026; JOFA-AIUC-2026).
+    Several CPA firms are delivering it now and the pilots are collecting feedback; PwC is the only firm named. Full
+    launch is "expected" in early 2027 after initial engagements conclude (AICPA-AIUCPR-2026; AT-AIUC-2026).
+  outcomes:
+    - {lever: risk, description: "No result for the joint offering. Adjacent AIUC-1 data point: the first AIUC-1 certification audited by Schellman (UiPath) covered 250+ pieces of evidence and 2,000+ adversarial scenarios and took 8 weeks end to end", figure: "8 weeks; 250+ evidence items; 2,000+ scenarios", measures: "elapsed time from start to certificate for one company's multiple agents, evidence pieces reviewed and adversarial scenarios run, per the AIUC and Schellman release update of 2 Apr 2026", provenance: vendor-published, source_ref: AIUC-SCHELLMAN-2026}
+    - {lever: growth, description: "Market size claimed in the release; the count does not separate SOC 2 attestations from AIUC-1 certifications", figure: "more than 40,000 organisations", measures: "organisations that obtained a SOC 2 attestation or AIUC-1 certification 'last year', per the AICPA and AIUC release", provenance: vendor-published, source_ref: AICPA-AIUCPR-2026}
+  prerequisites:
+    - "An AI developer or deployer with a system in scope for both a SOC 2 and AIUC-1 (agent configurations supplied for testing; evidence package) (AIUC1-SITE-2026)"
+    - "A CPA firm licensed for SOC 2 attestation; for AIUC-1, an accredited auditor and AIUC's technical evaluation (AIUC-SCHELLMAN-2026)"
+  risks_and_guardrails:
+    - "SOC 2 is an attestation, not a certification; the AICPA release calls the joint product a 'certification' but defines SOC 2 as an examination with an opinion (AICPA-AIUCPR-2026; JOFA-PODSOC)"
+    - "SOC 2 quality is already under peer-review pressure for templated work and heavy platform reliance (JOFA-PRB)"
+    - "Schellman itself calls AIUC-1 'still largely a competitive differentiator' in an early adoption phase (SCHELLMAN-BLOG-2026)"
+    - "No mid-market CPA firm is named as delivering the joint offering; no pricing, scope document or pilot result is published (AICPA-AIUCPR-2026; AT-AIUC-2026)"
+  human_checkpoints:
+    - "CPA firm leads the engagement and issues the SOC 2 opinion; AIUC runs technical evaluations and issues the AIUC-1 certification, with an accredited auditor collecting evidence (AIUC-SCHELLMAN-2026)"
+  role_evolution: >-
+    SOC 2 examiners add AI-agent testing outputs from an outside technical evaluator to their evidence base; the CPA
+    firm's lead role is the AICPA's selling point (AICPA-AIUCPR-2026; AIUC-SCHELLMAN-2026).
+  evidence_grade: B
+  sources:
+    - {ref: AICPA-AIUCPR-2026, title: "Auditors Meet Urgent Demand for AI Assurance with New Offering from AICPA and AIUC", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/auditors-meet-urgent-demand-for-ai-assurance-with-new-offering-from-aicpa-and-aiuc", date: "2026-10-19", access: full, locator: "paragraphs 4-9 and last paragraph"}
+    - {ref: AT-AIUC-2026, title: "New AI assurance certification combines SOC 2, AIUC-1", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/new-ai-assurance-certification-combines-soc-2-aiuc-1", date: "2026-10-19", access: full, locator: "paragraphs 5-8 (AICPA spokesperson; PwC quote)"}
+    - {ref: JOFA-AIUC-2026, title: "AICPA partners on new offering that assures AI systems and agents", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/", date: "2026-10-19", access: full, locator: "paragraphs 1-3, 5-6, 8"}
+    - {ref: AIUC-SCHELLMAN-2026, title: "Schellman becomes the first accredited auditor for AIUC-1 (AIUC-hosted copy of the joint release, with 2 Apr 2026 update on the first certification; the Schellman-hosted release is SCHELLMAN-AIUC1-2026)", publisher: "AIUC (joint release with Schellman)", type: vendor, url: "https://www.aiuc-1.com/research/schellman-becomes-first-accredited-auditor", date: "2026-02-03", access: full, locator: "sections 'AIUC-1 Certification Overview' and 'Update: First certification completed'"}
+    - {ref: AIUC1-SITE-2026, title: "AIUC-1 Standard (home and certification process page)", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/", date: "2026-10", access: full, locator: "process section 'Scoping / Evals / Audit / Certification' (live page; latest item listed 15 Oct 2026)"}
+    - {ref: SCHELLMAN-BLOG-2026, title: "Why One AI Governance Framework Isn't Enough", publisher: "Schellman", type: firm, url: "https://www.schellman.com/blog/ai-governance/why-one-ai-governance-framework-isnt-enough", date: "2026-10-02", access: full, locator: "section 'What is AIUC-1?'"}
+    - {ref: AIUC-FIN-2025, title: "Case study: How Fin built enterprise trust for customer-facing AI agents (updated Oct 2026)", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/research/case-study-fin", date: "2025-12-11", access: full, locator: "case study body (SOC 2 versus agent testing)"}
+    - {ref: JOFA-PRB, title: "AICPA guides peer reviewers to address SOC 2 risks", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/may/aicpa-guides-peer-reviewers-to-address-soc-2-risks/", date: "2026-05-14", access: full, locator: "section 'A heightened focus on SOC 2 quality'"}
+    - {ref: JOFA-PODSOC, title: "The risks of quick-turn SOC engagements and what CPAs should know (podcast with Amy Pawlicki, AICPA)", publisher: "Journal of Accountancy (AICPA)", type: podcast, url: "https://www.journalofaccountancy.com/podcast/2026/apr/the-risks-of-quick%E2%80%91turn-soc-engagements-and-what-cpas-should-know/", date: "2026-04-30", access: full, locator: "statement that a SOC 2 report is not a certification"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Grade B (not A): a named pilot firm (PwC, per Accounting Today) and a release statement that several firms
+    deliver it; no measured result. The UiPath figures are for AIUC-1 alone, an adjacent process, and are
+    vendor-published. Firm kinds: PwC (Big Four); Schellman (described in the joint release as a top-50 CPA firm
+    focused on IT compliance). The AICPA release page header reads 'Oct 18, 2026' while the dateline reads 19 Oct;
+    the dateline and the JofA date are used. AIUC reports typical evaluations of 1,000-3,000 simulations (Q4 2026
+    release) and red-teaming of 1,000 to 5,000 scenarios (site); the AIUC cofounder quote says 'thousands'. Extends
+    assurance-assurance-over-ai-19 (AIUC-1 itself) and -13 to -15 here (platform-bundled SOC services) by naming the
+    AICPA as a party. Search-only lead, not used for the grade: a LinkedIn repost reports Sensiba LLP earned
+    provisional AIUC-1 accreditation (SENSIBA-AIUC1-2026, see the module's sources).
+
+- id: assurance-soc-attestation-18
+  title: "A regional firm pairs AI governance advisory (ISO 42001 alignment) with its SOC examination practice and manages the advisory and attest boundary (Kaufman Rossin)"
+  archetype: assurance
+  module: soc-attestation
+  function: service-delivery
+  work_types: [expert-judgment, client-interaction]
+  pattern: other
+  ladder: assist
+  change_scope: model
+  runtime_class: shared-team-skills
+  maturity: in-production
+  problem: >-
+    Clients that sell AI products or deploy agents ask their SOC firm for help with AI governance. Doing both for the
+    same client raises independence questions (JOFA-ETHAI-2026), and many mid-size firms have no AI-governance team.
+  solution: >-
+    A job posting of 7 Oct 2026 shows Kaufman Rossin, a privately owned independent CPA firm of more than 700
+    employees that states it has no outside investors or PE influence, hiring a Senior Manager (CPA required) in Risk
+    Advisory Services to support AI governance advisory engagements, including AI risk assessments, policy development
+    and ISO 42001 alignment, and to partner with the SOC assurance team on SOC 1, SOC 2 and SOC 3 engagements. It asks
+    for the ability to use AI tools to improve analysis and documentation and for experience with Fieldguide or
+    similar audit management platforms (KAUFMAN-JOB-2026). The AICPA ethics staff warn that AI-related non-attest
+    services such as developing or hosting an AI system for an attest client can raise independence concerns
+    (JOFA-ETHAI-2026).
+  outcomes:
+    - {lever: growth, description: "No outcome published; a hiring signal only", figure: "none published", measures: "n/a", provenance: self-reported, source_ref: KAUFMAN-JOB-2026}
+  prerequisites:
+    - "CPA-qualified senior staff with SOC and AI governance framework knowledge (KAUFMAN-JOB-2026)"
+    - "Independence evaluation before advisory work for an attest client (JOFA-ETHAI-2026)"
+  risks_and_guardrails:
+    - "Advisory on an AI system, or hosting it, for a client the firm also attests can create threats; use the conceptual framework and document the analysis (JOFA-ETHAI-2026)"
+    - "The posting only says 'Support AI governance advisory engagements'; it does not say how many have been done (KAUFMAN-JOB-2026)"
+  human_checkpoints:
+    - "Not stated in the posting"
+  role_evolution: >-
+    SOC and risk-advisory managers need ISO 42001 and AI governance knowledge on top of Trust Services Criteria and
+    SSAE 18 / AT-C 320 experience (KAUFMAN-JOB-2026).
+  evidence_grade: B
+  sources:
+    - {ref: KAUFMAN-JOB-2026, title: "Cybersecurity Risk Advisory Senior Manager (Kaufman Rossin job posting)", publisher: "Kaufman Rossin via Workable", type: job-posting, url: "https://jobs.workable.com/view/1f4ea4b5-e0d5-4cd7-9e2b-4befaf13dad6", date: "2026-10-07", access: full, locator: "'How You'll Contribute' bullets 3-4; 'What Skills You'll Bring'"}
+    - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI services can raise independence concerns for attest clients'"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Grade B on the strength of a named firm showing the service in a live posting; no engagement count. Firm kind:
+    regional firm of 700+ employees, privately owned (says it has no PE or outside-investor influence). Overlaps
+    assurance-assurance-over-ai-13 (readiness against ISO 42001) and -18 (audit firms' AI assurance service lines);
+    the new element is the pairing with SOC attest work and the independence boundary. The independence side is also
+    in acceptance-independence. This is the first audit-firm job posting in this module that names AI tool use in SOC
+    work.
