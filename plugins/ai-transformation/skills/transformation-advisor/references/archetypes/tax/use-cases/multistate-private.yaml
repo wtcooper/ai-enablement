@@ -377,8 +377,8 @@
     checks, Claude Fable 5.1 scores 91%, Muse Spark 1.3 79.4%, three models 76.5%, and the remaining twelve score 0.
     tax-research-advisory-04's "twelve of eighteen models scored 0" therefore matches this entry; the two describe
     different slices of one result and do not conflict. Only the ref date differs (2026-10-16 in sources.md and
-    research-advisory; 2026-10-20 here, the live page's date). On the leaderboard's all-pass metric only the model
-    passing every check would score above 0 on this question.
+    research-advisory; 2026-10-20 here, the live page's date). Under the leaderboard's all-pass rule, as the Scoring
+    section defines it, only the model passing every check would score above 0 on this question.
     Cross-references: tax-research-advisory-01 and tax-research-advisory-04.
 
 - id: tax-multistate-private-08
@@ -398,7 +398,7 @@
     (MTC-NEXUSUPD-2026).
   solution: >-
     COST's workshop agenda listed demonstrations of AI drafting quarterly SALT updates, comparing versions of
-    legislative proposals and reviewing appeal arguments, presented by staff from AT&T, EY, Reed Smith and others
+    legislative proposals and reviewing appeal arguments, presented by staff from AT&T, EY and Reed Smith
     (COST-TECH-2026). Nothing shows a team doing this in production.
   outcomes:
     - {lever: speed, description: "none published", figure: "none published", measures: "not applicable", provenance: self-reported, source_ref: COST-TECH-2026}
@@ -438,15 +438,15 @@
   solution: >-
     The Sales Tax Institute says its webinar will cover responding when nexus is triggered, addressing historical
     exposure before it becomes an audit issue, and strengthening data quality controls (STI-AIAUDITS-2026). A consultancy
-    suggests reviewing nexus footprint, exemption certificates, classifications and under-collected periods, and checking
-    for payroll registrations with no matching sales tax account (SALESTAX-AIAUDIT-2026). Withum advises periodic tax
+    suggests reviewing nexus footprint, exemption certificates, product taxability and under-collected periods
+    (SALESTAX-AIAUDIT-2026). Withum advises periodic tax
     health checks (WITHUM-SEATA-2026). None of the three describes a deployed AI scan.
   outcomes:
     - {lever: risk, description: "none published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: STI-AIAUDITS-2026}
   prerequisites:
-    - "Company data by state: sales, payroll registrations, marketplace and processor totals (SALESTAX-AIAUDIT-2026)"
+    - "Company data by state: sales, registrations, marketplace and processor totals (the signals SALESTAX-AIAUDIT-2026 says states score; payroll data is the research team's addition, not in the source)"
   risks_and_guardrails:
-    - "A scan that finds exposure can affect voluntary disclosure eligibility if it leads to contact with a state; eligibility rules vary by state (SALESTAX-AIAUDIT-2026 discusses disclosure before a state opens an audit)"
+    - "Inferred, not stated in a source: a scan that finds exposure can affect the disclosure choice if it leads to contact with a state, and eligibility rules vary by state. The consultancy says only that the disclosure window closes once a state opens an audit (SALESTAX-AIAUDIT-2026)"
   human_checkpoints:
     - "A professional decides on registration and disclosure (SALESTAX-AIAUDIT-2026 lists what AI cannot do: register, fix past periods, make judgment calls)"
   role_evolution: >-
