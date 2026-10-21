@@ -216,7 +216,7 @@ consent decisions.
   judgment (38%) and AI fluency (22%) lead; 56% say an entry-level hire needs six months or more to reach full
   billable capacity [INTUIT-ACCTTECH-2026]. Stanford/ADP data show employment of 22-25-year-olds in AI-exposed
   occupations 19% below trend, not accounting-specific and descriptive [STANFORD-CANARIES-2026]; ICAEW reports the
-  Big Four still plan to hire at least 1,000 juniors each [ICAEW-HOWTO-2026]. Staffing design is in professional-services.
+  Big Four still plan to hire at least 1,000 juniors each [ICAEW-JUNIOR-2026]. Staffing design is in professional-services.
 
 ## 8. Frontier
 
@@ -296,4 +296,4 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   - BILL-AIAMBITION-2026: BILL with NewtonX, *Accounting Firm AI Ambition Survey, vol 4* (200+ firm leaders, fieldwork late 2025), 2026 (page undated), https://www.bill.com/blog/ai-ambition-survey-vol-4-findings
   - CPACOM-CASBENCH-2026: CPA.com and AICPA PCPS, *CAS Benchmark Survey* page (2026 report due December 2026), 2026, https://cpa.com/cas-benchmark-survey
   - STANFORD-CANARIES-2026: Brynjolfsson, Chandar, Chen, *Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of AI* (August 2026 version), Stanford Digital Economy Lab, 2026-08, https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf
-  - ICAEW-HOWTO-2026: ICAEW, *Why we still need junior accountants and how their role might change*, 2026-04-02, https://www.icaew.com/insights/viewpoints-on-the-news/2026/apr-2026/why-we-still-need-junior-accountants-and-how-their-role-might-change
+  - ICAEW-JUNIOR-2026: ICAEW, *Why we still need junior accountants and how their role might change*, 2026-04-02, https://www.icaew.com/insights/viewpoints-on-the-news/2026/apr-2026/why-we-still-need-junior-accountants-and-how-their-role-might-change

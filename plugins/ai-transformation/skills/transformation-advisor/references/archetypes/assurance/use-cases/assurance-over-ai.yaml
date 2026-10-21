@@ -1641,11 +1641,12 @@
   maturity: emerging
   problem: >-
     AI agents generate analysis far faster than people can check it; the example comes from mathematics, where a CPA
-    says journal peer review takes about a year and cannot scale (JOFA-MATHEX-2026).
+    says peer review takes about a year and that mathematicians need more scalable ways to verify AI-generated work
+    (JOFA-MATHEX-2026).
   solution: >-
     Richie Sater, a CPA and software developer, built AI agents that produced an answer to a 1986 open problem over
-    about three weeks, then built an "audit package" of supporting materials for the mathematician who maintains the
-    problem list. He says review took roughly two weeks for other claimants, that his package let reviewers look
+    about three weeks, then sent mathematician Viktor Monakhov an "audit package" of supporting materials with the
+    answer. He says reviewers otherwise spend about two weeks on each claimed answer, that his package let reviewers look
     quickly, and that it was endorsed and sent to peer review; he says the last two problems took about three days
     of agent work. He proposes the same service for AI-generated financial analyses and models. No business client
     is named (JOFA-MATHEX-2026).
@@ -1655,7 +1656,7 @@
     - "Agent-building skill; Sater estimates a CPA with basic computer literacy can start building basic agents in about a week (JOFA-MATHEX-2026)"
   risks_and_guardrails:
     - "The case is mathematics, not an assurance engagement; no professional standard, independence or liability framework applies as described (JOFA-MATHEX-2026)"
-    - "A practitioner on Accounting Today warns that independent parties using similar AI can share 'common-mode' failures, and that polished AI output can look like completed professional work (AT-AUDITRISK-2026)"
+    - "A practitioner in an Accounting Today opinion piece asks whether independent parties using similar AI could share 'common-mode' failures (not yet a widespread audit problem, he says), and warns that an incorrect AI answer can look like completed professional work (AT-AUDITRISK-2026)"
   human_checkpoints:
     - "Mathematician reviews the package and sends the result to peer review (JOFA-MATHEX-2026)"
   role_evolution: >-
@@ -1663,7 +1664,7 @@
     describes "a machine checking another machine's work" (AT-PEEC-2026).
   evidence_grade: D
   sources:
-    - {ref: JOFA-MATHEX-2026, title: "Problem solved: A math example of CPA-led assurance using AI agents", publisher: "Journal of Accountancy", type: press, url: "https://www.journalofaccountancy.com/news/2026/oct/problem-solved-a-math-example-of-cpa-led-assurance-using-ai-agents/", date: "2026-10-19", access: full, locator: "section 'Opening doors with new tech, old skills'"}
+    - {ref: JOFA-MATHEX-2026, title: "Problem solved: A math example of CPA-led assurance using AI agents", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/problem-solved-a-math-example-of-cpa-led-assurance-using-ai-agents/", date: "2026-10-19", access: full, locator: "section 'Opening doors with new tech, old skills'"}
     - {ref: AT-AUDITRISK-2026, title: "AI didn't invent audit risk, so what actually changed?", publisher: "Accounting Today (AT Think opinion)", type: press, url: "https://www.accountingtoday.com/opinion/ai-didnt-invent-audit-risk-so-what-actually-changed", date: "2026-10-13", access: full, locator: "section 'Where AI may test our existing approach'"}
     - {ref: AT-PEEC-2026, title: "AICPA weighs PE and tech impact on audit independence", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-weighs-pe-and-tech-impact-on-audit-independence-rules", date: "2026-08-31", access: full, locator: "paragraphs on Ho's firm"}
   last_reviewed: "2026-10-21"

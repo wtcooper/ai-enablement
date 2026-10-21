@@ -919,24 +919,25 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: >-
-    Clients that sell AI products or deploy agents ask their SOC firm for help with AI governance. Doing both for the
-    same client raises independence questions (JOFA-ETHAI-2026), and many mid-size firms have no AI-governance team.
+    SOC clients that build or deploy AI may also want AI governance help (an inference; no source quantifies this
+    demand). Providing AI-related nonattest services to an attest client can raise independence concerns
+    (JOFA-ETHAI-2026).
   solution: >-
     A job posting of 7 Oct 2026 shows Kaufman Rossin, a privately owned independent CPA firm of more than 700
     employees that states it has no outside investors or PE influence, hiring a Senior Manager (CPA required) in Risk
     Advisory Services to support AI governance advisory engagements, including AI risk assessments, policy development
     and ISO 42001 alignment, and to partner with the SOC assurance team on SOC 1, SOC 2 and SOC 3 engagements. It asks
-    for the ability to use AI tools to improve analysis and documentation and for experience with Fieldguide or
-    similar audit management platforms (KAUFMAN-JOB-2026). The AICPA ethics staff warn that AI-related non-attest
-    services such as developing or hosting an AI system for an attest client can raise independence concerns
-    (JOFA-ETHAI-2026).
+    for the ability to use AI tools to improve analysis and documentation, and lists experience with Fieldguide or
+    similar audit management platforms as a plus (KAUFMAN-JOB-2026). An AICPA Professional Ethics Division article
+    says AI-related nonattest services such as developing or hosting an AI system for an attest client can raise
+    independence concerns (JOFA-ETHAI-2026).
   outcomes:
     - {lever: growth, description: "No outcome published; a hiring signal only", figure: "none published", measures: "n/a", provenance: self-reported, source_ref: KAUFMAN-JOB-2026}
   prerequisites:
     - "CPA-qualified senior staff with SOC and AI governance framework knowledge (KAUFMAN-JOB-2026)"
     - "Independence evaluation before advisory work for an attest client (JOFA-ETHAI-2026)"
   risks_and_guardrails:
-    - "Advisory on an AI system, or hosting it, for a client the firm also attests can create threats; use the conceptual framework and document the analysis (JOFA-ETHAI-2026)"
+    - "Developing or hosting an AI system for an attest client can raise independence concerns; the existing nonattest-services rules apply, and where the code is silent use the conceptual framework and document the analysis (JOFA-ETHAI-2026)"
     - "The posting only says 'Support AI governance advisory engagements'; it does not say how many have been done (KAUFMAN-JOB-2026)"
   human_checkpoints:
     - "Not stated in the posting"
@@ -953,5 +954,6 @@
     regional firm of 700+ employees, privately owned (says it has no PE or outside-investor influence). Overlaps
     assurance-assurance-over-ai-13 (readiness against ISO 42001) and -18 (audit firms' AI assurance service lines);
     the new element is the pairing with SOC attest work and the independence boundary. The independence side is also
-    in acceptance-independence. This is the first audit-firm job posting in this module that names AI tool use in SOC
-    work.
+    in acceptance-independence. This is the first audit-firm job posting in this module that pairs SOC work with AI
+    governance and asks for AI tool use (stated for the role generally, not for SOC work specifically). Grade B is
+    borderline: the posting shows the service line exists, not that any AI governance engagement has been delivered.

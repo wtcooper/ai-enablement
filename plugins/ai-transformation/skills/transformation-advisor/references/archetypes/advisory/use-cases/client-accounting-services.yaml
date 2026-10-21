@@ -1355,13 +1355,14 @@
     - { ref: WOODARD-TWR-2025, title: "TWR Podcast Episode 120: How CAS and AI Are Reshaping the Top 100 Firms", publisher: "The Woodard Report", type: podcast, url: "https://report.woodard.com/articles/twr-podcast-episode-120-how-cas-and-ai-are-reshaping-the-top-100-firms-oaiwr-twrpod-bllwr", date: "2025-04-30", access: full, locator: "section 'AI is coming fast, but it's not quite here yet' (written summary)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Firms: Bonadio (Top 50 per the source) and a boutique fractional CFO. B reflects named practitioners describing
-    live client conversations without outcomes. An ENGAGE 2026 session on AI conversations with clients (Weaver and
-    Tidwell, GW CPA, Karbon) was a pre-event abstract and does not support the grade (KARBON-ENGAGE-2026). A consultant
-    and a trade editor described an AI-powered spend assessment taking five minutes against hours as a quick advisory
-    product; the firm is not named and it remains an idea (WOODARD-TWR-2025). For the firm-operations version, see
+    Firms: Bonadio (Top 50 per the source) and a boutique fractional CFO. B reflects named practitioners describing live
+    client conversations without outcomes. An ENGAGE 2026 session on AI conversations with clients (Weaver and Tidwell,
+    GW CPA, Karbon) was a pre-event abstract and does not support the grade (KARBON-ENGAGE-2026). A consultant and a
+    trade editor described an AI-powered spend assessment taking five minutes against hours as a quick advisory product;
+    the firm is not named and it remains an idea (WOODARD-TWR-2025). For the firm-operations version, see
     professional-services-client-development-22. Selling AI governance or controls work to clients is in advisory
-    risk-controls.
+    risk-controls (advisory-risk-controls-17). Related: advisory-fpa-performance-09 (AI readiness assessment for client
+    finance functions) and advisory-private-client-14 (AI policy advice to families).
 
 - id: advisory-client-accounting-services-21
   title: "Control package before agents touch a client's production close: inventory and owner, validation, risk-tiered review gates, reviewer calibration, SOC mapping and exit thresholds (idea)"

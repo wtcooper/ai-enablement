@@ -6,8 +6,8 @@
 # advisory. Most figures are vendor-published or self-reported; say so when you quote one.
 # Boundaries: issuing SOC reports, AIUC-1 or ISO/IEC 42001 certification and audit methodology are in the assurance
 # archetype; the firm's own pricing, quality control, engagement letters and staffing are in professional-services.
-# Confidence-threshold routing of AI classifications to a person is advisory-client-accounting-services-01 (there is
-# no advisory-risk-controls-22). Overlapping entries are cross-referenced by id in notes rather than duplicated.
+# Confidence-threshold routing of AI classifications to a person is advisory-client-accounting-services-01 (this module
+# skips id 22). Overlapping entries are cross-referenced by id in notes rather than duplicated.
 # Similar keys that name different documents: COSO-GENAI-2026 is COSO's publication and COSO-GENAIPR-2026 its press
 # release; FRC-GENAI-2026 is the FRC's guidance and FRC-GENAINEWS-2026 the FRC news release announcing it;
 # JOFA-AIPA-2026 (Journal of Accountancy) and CPAPA-AUDITAID-2026 (CPA Practice Advisor) are two articles on the AICPA
@@ -1096,8 +1096,8 @@
     names the eighth capability type 'regulatory intelligence' while the document names it 'knowledge retrieval and
     summarization'. Firm types: Grant Thornton Advisors (non-attest arm of an alternative practice structure; Grant
     Thornton LLP is the attest firm), RSM (top-10, middle market), Forvis Mazars US (top-10), KPMG (Big Four). Fasken
-    (2026-08-13) expects representation-and-warranty insurers to scrutinise target-AI risk; that source is in the
-    transactions module (FASKEN-RWI-2026). Audit-side and certification equivalents: assurance-assurance-over-ai-13
+    (2026-08-13) expects representation-and-warranty insurers to scrutinise target-AI risk; that source is listed in the
+    transactions module (section 10). Audit-side and certification equivalents: assurance-assurance-over-ai-13
     (readiness against ISO/IEC 42001 and NIST AI RMF) and assurance-assurance-over-ai-19 (AIUC-1 certification).
     Related: advisory-private-client-14 (AI policy advice to families) and advisory-fpa-performance-09 (AI readiness
     assessment for client finance functions).
