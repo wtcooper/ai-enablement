@@ -1,0 +1,36 @@
+# Approved AI tools, mapped to runtime classes. Every skill in the suite reads this file.
+# Schema: tool-catalog/v1 (ai-governance references/schemas/tool-catalog.md). Written by the ai-governance skill.
+# DRAFT: started for one entry at the portfolio lead's request. The risk lead has NOT confirmed the entry or its tier.
+# Fields the portfolio lead could not give are left out and listed under "Open" below, not guessed:
+#   vendor, underlying_model, processing_regions, retention, user_groups, last_reviewed.
+# Open: top-level request_path (policy step 7); a vendor evaluation (policy step 6) that checks the DPA and the
+#   no-training term against the signed contract.
+# Runtime class ids: personal-assistant, shared-team-skills, workflow-automation, background-agent, managed-agent-runtime
+schema: tool-catalog/v1
+updated: "2026-10-21"
+owner: "IT/security lead"
+request_path:
+  how: "To be set at policy step 7"
+  response_commitment: "To be set at policy step 7"
+  fast_lane: "To be set at policy step 7"
+tools:
+  - name: "Firm enterprise assistant (business tier)"
+    runtime_class: personal-assistant
+    approved_for: "Drafting, research and templates on public and firm-internal material only. Client data is not permitted: no client-confidential data, no client evidence, no tax return information, no personal data."
+    owner: "IT/security lead"
+    id: enterprise-assistant-business
+    status: under-review   # the firm approved the tool for internal and non-client material (as reported); this catalog entry awaits the risk lead's confirmation
+    tool_tier: commercial
+    contract: "Enterprise terms with a data processing addendum (as reported by the portfolio lead; signed contract not checked)"
+    data_classes: [public, firm-internal]
+    max_risk_tier: tier-2
+    embedded_in: null
+    conditions:
+      - "Non-client material only: the usage rule is restated to users before any shared use"
+      - "Vendor does not train on the firm's inputs (as reported; confirm against the signed contract and the admin setting)"
+      - "Output used in workpapers or deliverables is reviewed by the professional who relies on it, as without AI"
+    flags: { tax_7216: false, independence: false, client_consent: false, eu_high_risk: false }   # false because client data is not permitted; any client-data use needs a new entry or a request
+    vendor_file: "vendors/enterprise-assistant-business.md"   # draft, all ratings unknown until the contract terms are checked
+    reapproval_triggers: [model-change, sub-processor-change, terms-change, new-data-class, new-use, incident]
+    exit_plan: "To be written at vendor evaluation (policy step 6)"
+not_approved_note: "Anything not listed needs a request through the request path before use with firm or client data. The assistant above must not receive client data."
