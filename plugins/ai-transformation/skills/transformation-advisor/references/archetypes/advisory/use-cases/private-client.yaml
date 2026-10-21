@@ -65,7 +65,7 @@
     for SEC issuer audit clients (SEC-RULE2-01-2026, (c)(4)(i)). Under the AICPA Code a nonattest service is allowed only
     if the client assumes management responsibilities, oversees it through a suitably skilled person and accepts responsibility
     for the results (JOFA-NONATTEST-2016, a 2016 description). IESBA treats hosting or storing an audit client''s data as
-    assuming a management responsibility (IESBA-TECH-2023, 606.3 A1). No source read addresses family offices specifically.'
+    assuming a management responsibility (IESBA-TECHREV-2023, 606.3 A1). No source read addresses family offices specifically.'
   human_checkpoints:
   - Historical data reconciliation is finished and the team trained before go-live (ASSETA-SITE-2026).
   - Armanino describes keeping posting to the books and moving money with people while AI handles lower-risk work (ARMANINO-FOTRENDS-2026).
@@ -125,7 +125,7 @@
     access: full
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
-  - ref: IESBA-TECH-2023
+  - ref: IESBA-TECHREV-2023
     title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
     publisher: IESBA
     type: standard-setter
@@ -187,7 +187,7 @@
   - Fund managers' formats vary, so an unreviewed extraction can post wrong data to reporting; the Canoe write-up lists
     accuracy and consistency as a challenge (CANOE-FOALTS-2026).
   - FINRA's 2026 report names summarization and information extraction as the top GenAI use case among its member firms
-    and lists hallucination and data-sensitivity risks (FINRA-OVERSIGHT-2026); the report addresses member firms, so applying
+    and lists hallucination and data-sensitivity risks (FINRA-ROR-2026); the report addresses member firms, so applying
     it to family offices is by analogy.
   human_checkpoints:
   - A person reviews the extracted draft before it is posted (ARMANINO-FOTRENDS-2026).
@@ -223,7 +223,7 @@
     date: '2026-08-19'
     access: full
     locator: Section on alternative investments and AI document intake
-  - ref: FINRA-OVERSIGHT-2026
+  - ref: FINRA-ROR-2026
     title: '2026 FINRA Annual Regulatory Oversight Report: GenAI: Continuing and Emerging Trends'
     publisher: FINRA
     type: regulator
@@ -415,7 +415,7 @@
     for SEC issuer audit clients (SEC-RULE2-01-2026, (c)(4)(i)). Under the AICPA Code a nonattest service is allowed only
     if the client assumes management responsibilities, oversees it through a suitably skilled person and accepts responsibility
     for the results (JOFA-NONATTEST-2016, a 2016 description). IESBA treats hosting or storing an audit client''s data as
-    assuming a management responsibility (IESBA-TECH-2023, 606.3 A1). No source read addresses family offices specifically.'
+    assuming a management responsibility (IESBA-TECHREV-2023, 606.3 A1). No source read addresses family offices specifically.'
   human_checkpoints:
   - Armanino keeps moving money, posting to the books and final decisions in human hands (ARMANINO-FOTRENDS-2026).
   - A person still signs off on AI-prepared work (ARMANINO-FOTRENDS-2026).
@@ -491,7 +491,7 @@
     access: full
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
-  - ref: IESBA-TECH-2023
+  - ref: IESBA-TECHREV-2023
     title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
     publisher: IESBA
     type: standard-setter
@@ -784,7 +784,7 @@
   - An AI-native operating-system partner (Avantos credited in the article)
   risks_and_guardrails:
   - The same article says many wealth firms struggle to quantify what AI investment delivers (MERCER-ASPEN-2026).
-  - FINRA and SEC expect supervision, accurate AI representations and logging for registered firms (FINRA-OVERSIGHT-2026;
+  - FINRA and SEC expect supervision, accurate AI representations and logging for registered firms (FINRA-ROR-2026;
     SEC-EXAMPRI-FY2026).
   - For an accounting firm or its affiliate, investment-adviser services to the firm's own SEC audit client impair independence
     (SEC-RULE2-01-2026, (c)(4)(viii)). Mercer Advisors is not an accounting firm, so this applies only by analogy here.
@@ -803,7 +803,7 @@
     date: '2026-07-30'
     access: full
     locator: Paragraphs on Aspen second generation, knowledge graph, deployment, quotes from Daniel Gourvitch
-  - ref: FINRA-OVERSIGHT-2026
+  - ref: FINRA-ROR-2026
     title: '2026 FINRA Annual Regulatory Oversight Report: GenAI: Continuing and Emerging Trends'
     publisher: FINRA
     type: regulator
@@ -864,7 +864,7 @@
   - Structured capture embedded in redesigned workflows, not added as a tool (HUBBIS-ETON-2026)
   risks_and_guardrails:
   - 'FINRA names agent risks: autonomy without validation, acting beyond scope, auditability, sensitive data, limited domain
-    knowledge (FINRA-OVERSIGHT-2026).'
+    knowledge (FINRA-ROR-2026).'
   - The announcement says the agents prepare work for an advisor's review rather than only answering questions, and Compound's
     head of engineering says every output is sourced back to the transcripts, emails or records it drew on (MERCER-ASPEN-2026).
   human_checkpoints:
@@ -889,7 +889,7 @@
     date: '2026'
     access: full
     locator: Section on documentation gaps and AI-enabled capture
-  - ref: FINRA-OVERSIGHT-2026
+  - ref: FINRA-ROR-2026
     title: '2026 FINRA Annual Regulatory Oversight Report: GenAI: Continuing and Emerging Trends'
     publisher: FINRA
     type: regulator
@@ -1202,7 +1202,7 @@
     the Northern Trust template (NT-AIPOLICYTEMPLATE-2026).
   - Vendors should be asked whether client data trains models and where it is stored (ARMANINO-FOTRENDS-2026).
   - For the firm's own data handling, the AICPA Code's confidentiality rule means asking whether client consent is needed
-    before client data goes into an AI tool (JOFA-ETHICSAI-2026).
+    before client data goes into an AI tool (JOFA-ETHAI-2026).
   human_checkpoints:
   - AI output reviewed before reliance, especially on investment, legal, tax and estate matters (NT-FOAIPOLICY-2026).
   - Policy reviewed at least annually (NT-FOAIPOLICY-2026).
@@ -1258,7 +1258,7 @@
     date: '2024-06-24'
     access: full
     locator: Sections on confidentiality and fiduciary duty
-  - ref: JOFA-ETHICSAI-2026
+  - ref: JOFA-ETHAI-2026
     title: Accounting ethics in the age of AI
     publisher: Journal of Accountancy
     type: professional-body
@@ -1311,7 +1311,7 @@
     for SEC issuer audit clients (SEC-RULE2-01-2026, (c)(4)(i)). Under the AICPA Code a nonattest service is allowed only
     if the client assumes management responsibilities, oversees it through a suitably skilled person and accepts responsibility
     for the results (JOFA-NONATTEST-2016, a 2016 description). IESBA treats hosting or storing an audit client''s data as
-    assuming a management responsibility (IESBA-TECH-2023, 606.3 A1). No source read addresses family offices specifically.'
+    assuming a management responsibility (IESBA-TECHREV-2023, 606.3 A1). No source read addresses family offices specifically.'
   human_checkpoints:
   - Principals and in-house staff keep decisions and the relationship (ARMANINO-FOTRENDS-2026).
   role_evolution: In-house roles narrow toward strategy and relationships; GenTrust's CIO reports demand for staff who can
@@ -1369,7 +1369,7 @@
     access: full
     locator: Sections 'Nonattest services' and 'Client evaluation and documentation' (2016 description of ET 1.295.040;
       foundation, predates AI)
-  - ref: IESBA-TECH-2023
+  - ref: IESBA-TECHREV-2023
     title: 'Final Pronouncement: Technology-related Revisions to the Code (clean version, updated May 30, 2023)'
     publisher: IESBA
     type: standard-setter

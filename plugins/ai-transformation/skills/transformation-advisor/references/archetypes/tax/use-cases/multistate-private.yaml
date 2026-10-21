@@ -20,7 +20,7 @@
   problem: >-
     State agencies cannot manually review the millions of returns they receive. South Carolina's deputy director
     cites 5 to 6 million returns (SCPOST-AUDIT-2026). For a private multistate company this is the counterparty's side:
-    selection criteria are not published, and taxpayers have few tools to challenge being selected (TAXNOTES-UNWATCHED-2026).
+    selection criteria are not published, and taxpayers have few tools to challenge being selected (NTT-BIAS-2026).
     Overlaps tax-controversy-15, which covers tax-authority risk targeting in general; this entry adds state detail
     for multistate taxpayers.
   solution: >-
@@ -43,7 +43,7 @@
   risks_and_guardrails:
     - "Selection criteria are not public. Tax Notes reporters found no outside audit or legislative report of California's FTB models, though the FTB runs internal checks for over-selection from certain groups (NTT-BIAS-2026)"
     - "Whether a system counts as AI is contested, which affects which oversight laws apply (New York CISS); Tax Notes reports internal confusion about what is and is not AI (NTT-BIAS-2026; TAXNOTES-UNWATCHED-2026)"
-    - "Experts quoted in the South Carolina story stress human oversight at every step and warn of opaque algorithms and unintended discriminatory results (SCPOST-AUDIT-2026; KOGOD-SC-2026)"
+    - "Caroline Bruckner of the Kogod Tax Policy Center, quoted in the South Carolina story, stresses human oversight at every step and warns of unintended discriminatory outcomes (SCPOST-AUDIT-2026); Kogod's own summary adds that experts warn of opaque algorithms and biased training data (KOGOD-SC-2026)"
     - "Taxpayers face an asymmetry: faster agency outreach, but no matching upgrade to the channel for disputing it (NTT-BIAS-2026)"
   human_checkpoints:
     - "South Carolina: the system suggests audits; auditors conduct them (SCPOST-AUDIT-2026)"
@@ -64,9 +64,11 @@
     Kogod's summary calls the SC tool machine-learning models inside GenTax; the Post and Courier article says AI and
     describes scoring against what is typical for a business type. Tax Notes' NTT transcript says one estimate in 2012
     credited the New York system with helping collect more than $2 billion; the source is a reporter's recollection and
-    the system is not confirmed as AI, so it is not used as an outcome. A search-snippet-only item (Route Fifty, 2026-07)
-    says Vermont has identified AI tools for tax-fraud risk detection and Michigan has proposed funding for AI analytics
-    in Treasury; that piece is a vendor executive's commentary and is not used for grading.
+    the system is not confirmed as AI, so it is not used as an outcome. Route Fifty commentary (ROUTEFIFTY-REV-2026,
+    opened; see tax-multistate-private-12) says Vermont has identified AI tools for tax-fraud risk detection and Michigan
+    has proposed funding for AI analytics in Treasury; it is a vendor executive's commentary and is not used for grading.
+    The Post and Courier page carries datePublished 2026-04-12; a text mirror shows an earlier timestamp (2026-04-01)
+    and the headline Kogod reuses.
     Example type: the counterparty (state tax agencies in South Carolina, California and New York; vendors FAST
     Enterprises and IBM). Cross-reference: tax-controversy-15 (authority risk targeting in general).
 
@@ -84,7 +86,8 @@
   problem: >-
     A growing company can create state tax obligations (income or franchise, withholding, sales) in states where it is
     not registered. Practitioner and vendor commentary says states are getting better at spotting this by connecting
-    filing, marketplace, payment and payroll data (STI-AIAUDITS-2026; SALESTAX-AIAUDIT-2026).
+    previously siloed data such as filings, marketplace facilitator reports and payment processor totals
+    (STI-AIAUDITS-2026; SALESTAX-AIAUDIT-2026). Neither source mentions payroll data.
   solution: >-
     The Sales Tax Institute's webinar listing says AI is already used to improve audit selection, detect fraud,
     identify non-filers and uncover unregistered remote sellers by linking previously siloed data, while saying state
@@ -100,7 +103,7 @@
   prerequisites:
     - "State access to third-party data (marketplace, payment, federal data-sharing); the consultancy blog names these but does not document each state's access (SALESTAX-AIAUDIT-2026)"
   risks_and_guardrails:
-    - "The strongest claims come from sales-tax consultancies and a training provider that sell compliance help; the consultancy blog is advocacy in tone and names no state document (SALESTAX-AIAUDIT-2026)"
+    - "The strongest claims come from a sales-tax consultancy and a training provider that sell compliance help. The consultancy blog is advocacy in tone and names no state document, and several of its inline citations link to unrelated articles (on gas prices and grocery taxes), so its factual claims cannot be traced (SALESTAX-AIAUDIT-2026)"
     - "Counter-evidence: 22 of 36 responding agencies said they use no AI in tax operations (TAXNOTES-UNWATCHED-2026)"
     - "Mostly a sales tax story; the sales tax side is covered in indirect-tax (tax-indirect-tax-13 and the indirect-tax module)"
   human_checkpoints:
@@ -118,7 +121,9 @@
   last_reviewed: "2026-10-21"
   notes: >-
     The STI listing was last modified 2026-09-25 and, per a search result, the live session was set for 24 Sep 2026; the
-    page text read does not show the date, so the session is cited only as a listing. Withum's recap also reports
+    page text read does not show the date, so the session is cited only as a listing. The listed instructors are
+    Ryan Minnick, chief operating officer of the Federation of Tax Administrators, and Diane Yetter of the Sales Tax
+    Institute; the listing does not say which of them wrote the description. Withum's recap also reports
     Alabama working to automate collections and lien processes and Arkansas using analytics for fraud identification;
     neither is described as AI.
     Example types: the counterparty (eight Southeastern state agencies, reported in an accounting firm's recap), a sales
@@ -141,12 +146,13 @@
     income tax and withholding exposure for owners and employers of growing private companies. New York's convenience
     of the employer rule is still being litigated (MTC-NEXUSUPD-2026).
   solution: >-
-    A 2024 report summarised by Yahoo from CNBC says New York has been sending hundreds of thousands of AI-generated
-    letters, mostly to wealthy people who say they have changed residency, and that a SALT lawyer says tax departments
-    use human auditors and AI to examine cellphone records to see where people spend time (YAHOO-NYAI-2024). New York's
+    A 2024 Business Insider article (syndicated on Yahoo) summarising CNBC says New York has been sending hundreds of
+    thousands of AI-generated letters, mostly to wealthy remote workers or people who claim a change of tax residency,
+    and that a SALT lawyer told CNBC tax departments use human auditors and AI to examine cellphone records to see where
+    people spend time (YAHOO-NYAI-2024). New York's
     department says its selection system is not AI (NTT-BIAS-2026), so the AI label is disputed.
   outcomes:
-    - {lever: capacity, description: "Audits and auditors in New York in 2022, as reported", figure: "771,000 audits (up 56% on 2021); auditors down 5% to under 200", measures: "audits per a New York Department of Taxation and Finance report cited by CNBC and repeated by Yahoo; what counts as an audit and the AI share are not stated", provenance: self-reported, source_ref: YAHOO-NYAI-2024}
+    - {lever: capacity, description: "Audits and auditors in New York in 2022, as reported", figure: "771,000 audits (up 56% on 2021); auditors down 5% to under 200", measures: "audits per a New York Department of Taxation and Finance report cited by CNBC and repeated by Business Insider; what counts as an audit and the AI share are not stated", provenance: self-reported, source_ref: YAHOO-NYAI-2024}
   prerequisites:
     - "Access to third-party location and asset data; the lawyer quoted says cellphone records are used (YAHOO-NYAI-2024); not otherwise documented"
   risks_and_guardrails:
@@ -155,15 +161,17 @@
   human_checkpoints:
     - "None described in the source"
   role_evolution: >-
-    The report ties higher audit volume to fewer auditors (YAHOO-NYAI-2024).
+    The report sets higher audit volume beside fewer auditors and says it is unclear whether staff shortages are why the
+    AI letters were introduced (YAHOO-NYAI-2024).
   evidence_grade: C
   sources:
-    - {ref: YAHOO-NYAI-2024, title: "New York and other states are using AI to hunt down wealthy remote workers and demand more tax", publisher: "Yahoo (summarising CNBC)", type: press, url: "https://news.yahoo.com/tech/york-other-states-using-ai-112406645.html", date: "2024-04-16", access: full, locator: "paragraphs 2-9"}
+    - {ref: YAHOO-NYAI-2024, title: "New York and other states are using AI to hunt down wealthy remote workers and demand more tax", publisher: "Business Insider via Yahoo (summarising CNBC)", type: press, url: "https://news.yahoo.com/tech/york-other-states-using-ai-112406645.html", date: "2024-04-16", access: full, locator: "summary bullets and paragraphs on letters, audits and the Hodgson Russ quotes"}
     - {ref: NTT-BIAS-2026, title: "How AI Bias Affects State Audit Selection", publisher: "Tax Notes Talk (Tax Analysts)", type: podcast, url: "https://taxnotestalk.taxnotes.com/124942/episodes/19216367-how-ai-bias-affects-state-audit-selection", date: "2026-05-22", access: full, locator: "New York CISS segment"}
     - {ref: MTC-NEXUSUPD-2026, title: "Nexus Program Director's Update on Nexus Law Developments Since April 22, 2026 (for the 27 Jul 2026 meeting)", publisher: "Multistate Tax Commission", type: regulator, url: "https://www.mtc.gov/wp-content/uploads/2026/07/Nexus-Directors-Update-7-27-26r1.pdf", date: "2026-07-27", access: full, locator: "Cases: New York, In re Zelinsky"}
   last_reviewed: "2026-10-21"
   notes: >-
-    The original CNBC report was not opened. Avalara's executive is quoted in trade press saying states have long used
+    The original CNBC report was blocked (HTTP 403) and was not read. Business Insider says it is unclear whether staff
+    shortages are the reason the letters were introduced. Avalara's executive is quoted in trade press saying states have long used
     tools to select and run audits and AI is a natural fit (AVALARA-TRENDS-2025, section 'States look to AI'), which
     repeats the same New York claim.
     Example type: the counterparty (New York), through secondhand press.
@@ -189,7 +197,10 @@
     Professional Responsibility's AI alert uses a nexus study for state income and sales tax as its example of AI-assisted
     work, saying the practitioner must independently verify sales thresholds, transaction thresholds, tax rates and
     effective dates state by state (KTS-OPR-2026). Mercor's posting seeks SALT experts to evaluate and correct AI answers
-    on nexus (economic, physical, factor-presence and remote employee) (MERCOR-SALT-2026).
+    on nexus (economic and physical nexus among the topics to assess; factor-presence and remote-employee nexus among
+    the expertise sought) (MERCOR-SALT-2026). Thomson Reuters lists CoCounsel Tax templates such as "Evaluate Sales Tax
+    Nexus Risk of Remote Employee in State" and a state-by-state corporate income tax economic nexus template
+    (TRFORD-SALT-2026); no customer use is described.
   outcomes:
     - {lever: speed, description: "none published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: TRUSS-KINTSUGI-2026}
   prerequisites:
@@ -201,18 +212,20 @@
   human_checkpoints:
     - "Practitioner verification of every factor in the study (KTS-OPR-2026)"
   role_evolution: >-
-    KTS says the practitioner remains responsible for the final work whatever the AI did (KTS-OPR-2026). Mercor's posting
-    shows AI developers recruiting experienced SALT specialists to grade model answers (MERCOR-SALT-2026).
+    KTS says the practitioner remains responsible for the final work whatever the AI did (KTS-OPR-2026). Mercor, which
+    recruits for AI research labs, seeks SALT specialists with five or more years' experience to grade and correct model
+    answers (MERCOR-SALT-2026).
   evidence_grade: C
   sources:
     - {ref: TRUSS-KINTSUGI-2026, title: "What's Changing in Sales and Business Tax - And How AI Can Help (webinar listing)", publisher: "Truss with Kintsugi", type: vendor, url: "https://gettruss.io/events/sales-business-tax-ai", date: "2026-09-17", access: full, locator: "About Event and Learning Objectives"}
     - {ref: KTS-OPR-2026, title: "Using AI in Tax Practice: What Practitioners Need to Know Before Filing Season", publisher: "Kilpatrick Townsend & Stockton", type: firm, url: "https://ktslaw.com/blog/kilpatricks-state-and-local-tax-blog/2026/9/using-ai-in-tax-practice-what-practitioners-need-to-know-before-filing-season", date: "2026-09-29", access: full, locator: "paragraph beginning 'For example, if a client asks a practitioner to prepare a nexus study'"}
     - {ref: MERCOR-SALT-2026, title: "SALT (State and Local Taxation) Experts (job listing)", publisher: "Mercor (via AlignList)", type: job-posting, url: "https://alignlist.com/jobs/mercor-salt-state-and-local-taxation-experts-list-aaabnrlzswees5emkwdpflcl", date: "2026-06-12", access: full, locator: "responsibilities and topic list"}
     - {ref: MTC-NEXUSUPD-2026, title: "Nexus Program Director's Update on Nexus Law Developments Since April 22, 2026 (for the 27 Jul 2026 meeting)", publisher: "Multistate Tax Commission", type: regulator, url: "https://www.mtc.gov/wp-content/uploads/2026/07/Nexus-Directors-Update-7-27-26r1.pdf", date: "2026-07-27", access: full, locator: "Legislation: Kentucky; Rulings: New Jersey TB-108(R)"}
+    - {ref: TRFORD-SALT-2026, title: "Multistate Tax Trends: A Q&A with SALT Expert Niki Ford on Nexus, Marketplaces, AI, and the Future", publisher: "Thomson Reuters Tax & Accounting (Checkpoint News)", type: vendor, url: "https://tax.thomsonreuters.com/news/multistate-tax-trends-a-qa-with-salt-expert-niki-ford-on-nexus-marketplaces-ai-and-the-future/", date: "2026-04-09", access: full, locator: "Related Resources: CoCounsel Tax Templates"}
   last_reviewed: "2026-10-21"
   notes: >-
-    The Truss listing date (2026-09-17) follows the indirect-tax file's citation of the same page; the listing text does
-    not state the session date. Sales tax nexus monitoring and registration agents are in tax-indirect-tax-13.
+    The Truss listing date (2026-09-17) is the session date the listing states (Thursday 17 September, 1-2 pm ET);
+    the listing's own publication date is not shown. Kentucky's HB 757 change takes effect 1 Aug 2026. Sales tax nexus monitoring and registration agents are in tax-indirect-tax-13.
     Example types: vendors (Kintsugi, Truss), a law firm (Kilpatrick Townsend & Stockton) and an AI developer recruiting
     SALT experts (Mercor). No accounting firm, top-100, regional or PE-backed, was found doing AI-assisted nexus
     studies. Multi-jurisdiction research as an idea: tax-research-advisory-04.
@@ -230,7 +243,8 @@
   maturity: announced
   problem: >-
     One employee working in a new state can require a foreign qualification, a state withholding account, an
-    unemployment insurance registration and other agency accounts before the first paycheck; Gusto says an employee in a
+    unemployment insurance registration and other agency accounts before payroll can run there (WARP-REG-2026;
+    SKYVERN-REG-2026); Gusto says an employee in a
     new state can also trigger corporate and franchise tax and sales tax obligations that may not show up in existing
     tools (GUSTO-MOSEY-2026). A payroll vendor's guide says withholding registration is required in 41 states and
     unemployment insurance in all 50 (WARP-REG-2026).
@@ -238,8 +252,8 @@
     Gusto announced it acquired Mosey, which it describes as an AI-powered platform that automates state and local
     registrations, filings and renewals; Gusto Business Compliance is expected to launch later in 2026 and to surface
     requirements as a business grows, with AI agents doing the work behind the scenes (GUSTO-MOSEY-2026;
-    FINTECHGLOBAL-GUSTO-2026). Warp says its payroll platform opens state tax accounts and files the registration
-    paperwork when a customer hires in a new state (WARP-REG-2026). Skyvern, a browser-automation vendor, says its AI
+    FINTECHGLOBAL-GUSTO-2026). Warp, which calls itself an AI-native payroll platform, says its AI agents open state tax accounts and file
+    payroll forms once a customer enters a new employee's work state (WARP-REG-2026). Skyvern, a browser-automation vendor, says its AI
     works through state registration portals in parallel and copes with portal changes (SKYVERN-REG-2026).
   outcomes:
     - {lever: speed, description: "Skyvern's manual baseline for one state registration filing", figure: "15-30 minutes per state (manual baseline)", measures: "time to complete registration forms by hand per state filing, as stated in the vendor's blog; no sample, customer or method given", provenance: vendor-published, source_ref: SKYVERN-REG-2026}

@@ -107,7 +107,7 @@ BVR-BIG4GUIDANCE-2026, summary only].
 6. Have clients, auditors or opposing experts challenged a report with AI, and what does your engagement letter say
    about AI use? *Shows exposure to `#11` and to discovery of prompts [BVR-NACVA-2026; BVR-DISCOVERY-2026].*
 7. Which tools may touch client financials, on which plan tier, and do you ask whether client consent is needed?
-   *Tests the confidentiality question the AICPA Code raises [JOFA-ETHICSAI-2026; BVR-AICPAREPORT-2026].*
+   *Tests the confidentiality question the AICPA Code raises [JOFA-ETHAI-2026; BVR-AICPAREPORT-2026].*
 8. For clients you also audit, or whose results go into an audit, which valuation services are off the table, and who
    checks before acceptance? *Valuation for SEC audit clients is restricted [SEC-RULE2-01-2026]; the SEC staff apply a
    rebuttable presumption that it will be subject to audit procedures [PWC-SECFAQ-2019].*
@@ -154,7 +154,7 @@ responses [IVSC-IVSED-2026; BVR-IVSPODCAST-2026]. Consultation responses were no
 
 **IVS in force now.** The IVSC paper says a model using AI cannot produce an IVS-compliant valuation without the
 valuer's professional judgement; it may be used as a tool if the valuer understands its design and limits
-[IVSC-PERSPECTIVES-2025].
+[IVSC-AI-2025].
 
 **USPAP.** The Appraisal Standards Board adopted Advisory Opinion 41 on 2026-04-23: no new requirements, but it
 clarifies competency, confidentiality, scope of work, workfile and reporting duties when appraisers use AI. The
@@ -171,7 +171,7 @@ mention AI [ACCTODAY-VPF-2026].
 independence for an SEC-registrant audit client unless it is reasonable to conclude the results will not be subject to
 audit procedures [SEC-RULE2-01-2026]. The SEC staff apply a rebuttable presumption that it will be, materiality does
 not overcome it, and there is no cure for prohibited services in a prior period [PWC-SECFAQ-2019]. Developing or
-hosting an AI system for an attest client can raise independence concerns [JOFA-ETHICSAI-2026]. AICPA treatment of
+hosting an AI system for an attest client can raise independence concerns [JOFA-ETHAI-2026]. AICPA treatment of
 valuation for private-company attest clients was not confirmed in the research: confirm per engagement. Related:
 `assurance-acceptance-independence-15`.
 
@@ -187,10 +187,10 @@ Heppner [BVR-WARNER-2026]. The evidence committee voted to withdraw proposed Rul
 published and submit a modified proposal for further study [USCOURTS-EVID-2026]; detail is in forensic-disputes.
 
 **Confidentiality.** Ask whether client consent is needed before client data goes into an AI tool
-[JOFA-ETHICSAI-2026]. Keep confidential client information out of public AI systems [BVR-AICPAREPORT-2026]; the IVSC
-flags open or closed AI without safeguards as a confidentiality risk [IVSC-PERSPECTIVES-2025].
+[JOFA-ETHAI-2026]. Keep confidential client information out of public AI systems [BVR-AICPAREPORT-2026]; the IVSC
+flags open or closed AI without safeguards as a confidentiality risk [IVSC-AI-2025].
 
-**Steps that need human judgment:** selecting comparables and inputs [IVSC-PERSPECTIVES-2025; BVR-RADATIP-2026];
+**Steps that need human judgment:** selecting comparables and inputs [IVSC-AI-2025; BVR-RADATIP-2026];
 setting projection and scenario assumptions [BVR-PCAOBINSP-2026]; reconciling methods and the conclusion of value;
 deciding on each reviewer-agent flag [BVR-AICPAREPORT-2026]; signing and defending the report, where the valuer
 stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
@@ -217,7 +217,7 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 ## 8. Frontier
 
 - **2025-07-23:** IVSC paper says some valuers already use AI in data processing and report writing
-  [IVSC-PERSPECTIVES-2025].
+  [IVSC-AI-2025].
 - **2025-10:** AICPA FVS committee issues AI guidelines [BVR-AICPAAIGUIDE-2025].
 - **2026-01-07 to 2026-04-23:** AO-41 exposed, then adopted [BVR-TAFAO41-2026; BVR-AO41ADOPT-2026].
 - **2026-01-31 to 2026-04-30:** IVS exposure draft consultation; final planned 2027-01-31, effective 2028-01-31
@@ -252,7 +252,7 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 |---|---|
 | "AI can't be trusted with numbers." | Partly right for chatbots doing arithmetic: in Weber a court re-ran an expert's Copilot queries, got different numbers and questioned their reliability [GOLDMAN-WEBER-2024], and LLMs trailed specialist models in forecasting and price estimation (`#06`, `#07`). Use deterministic engines for calculations, as 73 Strings describes [S73-CALLISTO-2026], and keep AI to retrieval, drafting and review with checks. |
 | "Hallucinations make it unusable." | A practitioner view is that most are preventable through design, source checks and review, and that information overload is the bigger problem [BVR-ENDICOTT-2026]. Grounded tools that show the underlying transactions (`#02`) make checking practical [BVR-RADATIP-2026]. |
-| "Clients' data can't go into AI." | Answer the consent question first [JOFA-ETHICSAI-2026] and keep confidential information out of public tools [BVR-AICPAREPORT-2026]; the IVSC names safeguards as the issue, not AI as such [IVSC-PERSPECTIVES-2025]. |
+| "Clients' data can't go into AI." | Answer the consent question first [JOFA-ETHAI-2026] and keep confidential information out of public tools [BVR-AICPAREPORT-2026]; the IVSC names safeguards as the issue, not AI as such [IVSC-AI-2025]. |
 | "The standards will forbid it." | A practitioner view is that existing duties apply and no separate AI standards are coming [BVR-EWART-2026]. AO-41 adds no requirements [BVR-AO41ADOPT-2026]. The IVSC draft asks for disclosure, documentation and quality controls, not a ban [IVSC-IVSED-2026]. |
 | "Black-box tools will fail review." | The IVSC draft targets exactly that: tools whose reasoning the valuer cannot explain [BVR-IVSPODCAST-2026]. Choose tools with traceable, source-linked output [STOUT-DRIVR-2026; S73-CALLISTO-2026]. |
 | "Everyone using the same tools will think alike." | An "algorithmic monoculture" concern is raised in BVR's coverage (summary only) [BVR-MONOCULTURE-2026]; no evidence either way. Keep independent judgment on selection and conclusions. |
@@ -269,7 +269,7 @@ BVR-AICPAREPORT-2026, BVR-BIG4PANEL-2026, BVR-COGDEBT-2026, BVR-DISCOVERY-2026, 
 BVR-IVSCDIALOGUE-2026, BVR-IVSPODCAST-2026, BVR-KPMGTREND-2026, BVR-NACVA-2026, BVR-PCAOBINSP-2026,
 BVR-RADAEXPAND-2026, BVR-RADAJUNIOR-2026, BVR-RADAPRODUCT-2026, BVR-RADATIP-2026, BVR-TRAINPRACTICAL-2025,
 BVR-TRAINWORKSNOW-2025, COHNREZNICK-VALUATION-2026, CPAPA-COHNREZNICK-2026, DEALGAUGE-STARTUPHUB-2026,
-GOLDMAN-WEBER-2024, HAMILTONLANE-VALTECH-2025, ISA-AO41-2026, IVSC-IVSED-2026, IVSC-PERSPECTIVES-2025 (the same paper
+GOLDMAN-WEBER-2024, HAMILTONLANE-VALTECH-2025, ISA-AO41-2026, IVSC-IVSED-2026, IVSC-AI-2025 (the same paper
 is IVSC-AI-2025 in `assurance-specialists-*`), KROLL-REVS-2026, S73-CALLISTO-2026, S73-HAMLANE-2025, S73-HOME-2026,
 SEC-RULE2-01-2026, STOUT-DRIVR-2026, STOUT-TECH-2024, VALUTICO-HOME-2026, VALUTICO-KRESTON-2025, VALUTICO-PKFFI-2025,
 VALUTICO-ROUSE-2025, VALUTICO-RXM-2025. The FVC2631 and FVC2640 session codes come from the conference agenda feed
@@ -293,7 +293,7 @@ Cited here only:
 - CPATRENDLINES-TRACKER-2026: CPA Trendlines, "CPA PE Deal Tracker" (data to 2026-05-31), 2026-06-09. https://cpatrendlines.com/2026/06/09/cpa-pe-deal-tracker-10-years-466-deals/
 - INTUIT-ACCTTECH-2026: Intuit QuickBooks via CPA Practice Advisor, "The 2026 Accountant Technology Survey", 2026-07-02. https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807
 - IVSC-PULSE-2026: IVSC with 73 Strings, "The Valuation Pulse: AI & Technology in Valuation Sentiment Tracker", 2026-05-08. https://ivsc.org/the-valuation-pulse-ai-technology-in-valuation-sentiment-tracker/
-- JOFA-ETHICSAI-2026: Journal of Accountancy, "Accounting ethics in the age of AI", 2026-08-05. https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
+- JOFA-ETHAI-2026: Journal of Accountancy, "Accounting ethics in the age of AI", 2026-08-05. https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
 - PCAOB-SPECIALIST-2025: PCAOB staff, "Spotlight: Considerations for Audit Firms Using the Work of Specialists", 2025-02. https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf
 - PWC-SECFAQ-2019: PwC Viewpoint (SEC staff Audit Independence FAQs), "E. Non-audit services", updated 2019-06-27. https://viewpoint.pwc.com/dt/us/en/sec/sec_faqs/sec_faqs_US/auditor_independence_US/E-Non-audit-services.html
 - QOEAGENT-WHO-2026: QoEAgent, "Who Can Prepare an SBA Quality of Earnings Report", 2026-09-05. https://qoeagent.ai/who-can-prepare-sba-quality-of-earnings/

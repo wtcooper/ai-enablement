@@ -53,13 +53,13 @@
       provenance: vendor-published
       source_ref: CPAPA-IAPOLL-2026
   prerequisites:
-    - "Clear expectations for AI-tool use; unclear expectations are the most common obstacle in Gartner's poll (48%) (HELPNET-GARTNER-2026)"
+    - "Clear expectations for AI-tool use; unclear expectations are the most common obstacle in Gartner's poll (48%) (HELPNET-GARTNERIA-2026)"
     - "Prior-year files, scope and methodology as agent inputs, with governance for agent development, testing, training, security and data access (GT-16AGENTS-2026)"
     - "Structured risk data in a GRC system the scoring agent can read (OPTRO-AGENTS-2026)"
   risks_and_guardrails:
     - "Gartner says the high adoption is not generally transforming audit processes and that productivity and adoption metrics are too narrow (ACCTIMES-GARTNER-2026)"
     - "A drafted risk assessment is a starting point and needs a person who knows the entity's real risks (FIELDGUIDE-SIXWAYS-2026)"
-    - "AI-suggested scores can anchor the reviewer; the AICPA ethics article lists anchoring bias as a risk of AI output (JOFA-ETHICS-2026)"
+    - "AI-suggested scores can anchor the reviewer; the AICPA ethics article lists anchoring bias as a risk of AI output (JOFA-ETHAI-2026)"
     - "Overreliance and loss of professional judgment was the top agentic-AI concern for 27.5% of webinar respondents (CPAPA-IAPOLL-2026)"
   human_checkpoints:
     - "Auditor validates AI-surfaced risks before they enter the plan"
@@ -71,14 +71,14 @@
   evidence_grade: C
   sources:
     - {ref: ACCTIMES-GARTNER-2026, title: "Audit teams' AI use common but most lack strategy", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-16", access: full, locator: "paragraphs on use cases and on Gartner analyst commentary"}
-    - {ref: HELPNET-GARTNER-2026, title: "Most chief audit executives can't tell you what AI is worth yet", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/15/gartner-ai-in-internal-audit/", date: "2026-09-15", access: full, locator: "section 'The barriers are people and process'; paragraph 'Drafting and planning dominate'"}
+    - {ref: HELPNET-GARTNERIA-2026, title: "Most chief audit executives can't tell you what AI is worth yet", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/15/gartner-ai-in-internal-audit/", date: "2026-09-15", access: full, locator: "section 'The barriers are people and process'; paragraph 'Drafting and planning dominate'"}
     - {ref: IAC-SOXCHANGE-2026, title: "How SOX Is Changing in 2026", publisher: "Internal Audit Collective", type: community, url: "https://www.internalauditcollective.com/newsletters/how-sox-is-changing-in-2026", date: "2026-06-04", access: full, locator: "section 1, paragraph on current SOX use cases"}
     - {ref: GT-16AGENTS-2026, title: "16 sample AI agents for Internal Audit", publisher: "Grant Thornton Advisors", type: firm, url: "https://www.grantthornton.com/insights/articles/advisory/2026/16-sample-ai-agents-for-internal-audit", date: "2026-08-06", access: full, locator: "intro; first two agent tables (risk assessment agenda; planning memorandum)"}
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic Risk Assessment Scoring paragraph"}
     - {ref: KPMG-FUTURESOX-2026, title: "Revolutionizing internal controls: Insights from an April 2026 KPMG Future of SOX webcast", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/revolutionizing-internal-controls.pdf", date: "2026-05-20", access: full, locator: "p. 2 (date is the PDF creation date; the webcast was in April 2026)"}
     - {ref: CPAPA-IAPOLL-2026, title: "Internal Auditors Eye Broader AI Use", publisher: "CPA Practice Advisor (reporting a Wolters Kluwer TeamMate poll)", type: survey, url: "https://www.cpapracticeadvisor.com/?p=191508", date: "2026-10-12", access: full, locator: "paragraphs 1, 6-8 and 'About the polling'"}
     - {ref: FIELDGUIDE-SIXWAYS-2026, title: "Six Ways Internal Audit Teams Are Putting AI to Work", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/resource-articles/six-ways-internal-audit-teams-are-putting-ai-to-work", date: "2026", access: full, locator: "section on planning and drafting"}
-    - {ref: JOFA-ETHICS-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "paragraph on anchoring bias"}
+    - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "paragraph on anchoring bias"}
   last_reviewed: "2026-10-21"
   notes: >-
     Merged from four research entries (practice 09, discourse 07 and 15, governance 07). Grade C: prevalence comes from
@@ -695,7 +695,7 @@
     - "Detailed test data; RSM says output quality depends on it (RSM-AGENTICIA-2025)"
   risks_and_guardrails:
     - "The auditor follows up with auditees to validate findings and root cause before finalising (RSM-AGENTICIA-2025)"
-    - "Lack of clarity on expected AI-tool use is the most common obstacle (48%) in Gartner's poll (HELPNET-GARTNER-2026)"
+    - "Lack of clarity on expected AI-tool use is the most common obstacle (48%) in Gartner's poll (HELPNET-GARTNERIA-2026)"
   human_checkpoints:
     - "Auditor validates each draft finding, its rating and its root cause with the auditee"
   role_evolution: >-
@@ -704,7 +704,7 @@
   sources:
     - {ref: RSM-AGENTICIA-2025, title: "Reimagine internal audit with agentic AI to drive value", publisher: "RSM US", type: firm, url: "https://rsmus.com/insights/services/digital-transformation/agentic-ai-for-internal-audit.html", date: "2025-12-22", access: full, locator: "section 'Generating reportable observation language'"}
     - {ref: ACCTIMES-GARTNER-2026, title: "Audit teams' AI use common but most lack strategy", publisher: "Accounting Times", type: press, url: "https://www.accountingtimes.com.au/profession/audit-teams-ai-use-common-but-most-lack-strategy", date: "2026-08-16", access: full, locator: "paragraph 'The poll found that generative AI use cases ...'"}
-    - {ref: HELPNET-GARTNER-2026, title: "Most chief audit executives can't tell you what AI is worth yet", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/15/gartner-ai-in-internal-audit/", date: "2026-09-15", access: full, locator: "section 'The barriers are people and process'"}
+    - {ref: HELPNET-GARTNERIA-2026, title: "Most chief audit executives can't tell you what AI is worth yet", publisher: "Help Net Security", type: press, url: "https://www.helpnetsecurity.com/2026/09/15/gartner-ai-in-internal-audit/", date: "2026-09-15", access: full, locator: "section 'The barriers are people and process'"}
   last_reviewed: "2026-10-21"
   notes: >-
     From discourse 06. Firm type: RSM US (top-10 US firm serving the middle market). The Gartner figures cover internal
@@ -747,7 +747,7 @@
     - "Vendor documents in readable formats for agent extraction"
   risks_and_guardrails:
     - "Where reports are silent on AI, cover the gap with contract terms, complementary user entity controls and the client's own validation (CPAPA-AGENTSCLOSE-2026, control 4)"
-    - "Source conflict, now resolved: the CPA Practice Advisor piece (2026-08-13) said the AICPA had not published SOC guidance on AI; Deloitte reported TQA 9561 by 2026-09-21 and the Journal of Accountancy says the guidance was issued earlier in 2026 (DART-TQA9561-2026; AICPA-AUDITAID-2026)"
+    - "Source conflict, now resolved: the CPA Practice Advisor piece (2026-08-13) said the AICPA had not published SOC guidance on AI; Deloitte reported TQA 9561 by 2026-09-21 and the Journal of Accountancy says the guidance was issued earlier in 2026 (DART-TQA9561-2026; JOFA-AIPA-2026)"
     - "A Cloud Security Alliance note, AI-assisted and not reviewed by the CSA, says SOC 2 auditors improvise AI evidence requests and no common baseline exists (CSA-SOC2AI-2026)"
   human_checkpoints:
     - "Auditor judgment on reliance on vendor reports; advisor and client owner sign off the gap mapping"
@@ -762,7 +762,7 @@
     - {ref: SIKICH-IAPRIORITIES-2026, title: "2026 Internal audit priorities annual survey", publisher: "Sikich", type: survey, url: "https://go.sikich.com/rs/345-ICF-683/images/Sikich%202026%20Internal%20Audit%20Priorities%20Survey%20Report.pdf?version=0", date: "2026-10", access: full, locator: "p. 14 'Third-party risk is absorbing new technology risks'"}
     - {ref: CPAPA-AGENTSCLOSE-2026, title: "Before You Let the Agents Run the Close: Five Controls to Put in Writing First", publisher: "CPA Practice Advisor (author: Anthony L. Fulmore Sr., Texas A&M University Central Texas)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/", date: "2026-08-13", access: full, locator: "control 4, 'Third-party assurance, read closely'"}
     - {ref: DART-TQA9561-2026, title: "AICPA Releases TQAs on a Service Organization's Use of AI", publisher: "Deloitte Accounting Research Tool (DART)", type: firm, url: "https://dart.deloitte.com/USDART/home/news/all-news/2026/sep/aicpa-releases-tqas-service-organization-use-ai", date: "2026-09-21", access: full, locator: "opening paragraph"}
-    - {ref: AICPA-AUDITAID-2026, title: "AI and the audit: AICPA publishes practice aid to assist auditors", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/", date: "2026-10-13", access: full, locator: "paragraph beginning 'In addition to the practice aid ...'"}
+    - {ref: JOFA-AIPA-2026, title: "AI and the audit: AICPA publishes practice aid to assist auditors", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/", date: "2026-10-13", access: full, locator: "paragraph beginning 'In addition to the practice aid ...'"}
     - {ref: CSA-SOC2AI-2026, title: "The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted", publisher: "Cloud Security Alliance (CSAI Foundation)", type: community, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/08/CSA_research_note_soc2_ai_controls_gap_20260830-csa-styled.pdf", date: "2026-08-30", access: full, locator: "Key Takeaways; Background, pp. 2-3"}
   last_reviewed: "2026-10-21"
   notes: >-
@@ -808,7 +808,7 @@
   risks_and_guardrails:
     - "Vendor concentration: all named firms use one vendor, and the vendor's CEO quotes drive the announcements"
     - "Aprio states every workflow is built to comply with AICPA, PCAOB and GAAS standards with human oversight at every stage (firm statement, not tested) (APRIO-FIELDGUIDE-2026)"
-    - "The UK FRC's guidance asks firms to certify an AI tool per use case, test it, monitor it and recertify after material changes; it is aimed at audit firms and is a model here, not a binding US rule (FRC-GENAIGUIDE-2026, pp. 32-33)"
+    - "The UK FRC's guidance asks firms to certify an AI tool per use case, test it, monitor it and recertify after material changes; it is aimed at audit firms and is a model here, not a binding US rule (FRC-GENAI-2026, pp. 32-33)"
   human_checkpoints:
     - "Human oversight at each stage of the engagement lifecycle (Cherry Bekaert 'Field Agents with full human oversight'; Aprio)"
   role_evolution: >-
@@ -822,7 +822,7 @@
     - {ref: CB-FIELDGUIDE-2026, title: "Cherry Bekaert Selects Fieldguide as Strategic AI Partner to Modernize Audit and Advisory Delivery", publisher: "Cherry Bekaert", type: firm, url: "https://www.cbh.com/newsroom/cherry-bekaert-expands-ai-audit-with-fieldguide/", date: "2026-06-03", access: full, locator: "paragraphs 1-4"}
     - {ref: BAKERTILLY-AIIA-2026, title: "Start with stakeholder value when using AI in internal audit", publisher: "Baker Tilly", type: firm, url: "https://www.bakertilly.com/insights/ai-in-internal-audit", date: "2026-09-08", access: full, locator: "paragraph beginning 'At Baker Tilly, Fieldguide ...'"}
     - {ref: FIELDGUIDE-SERIESC-2026, title: "Fieldguide Raises $75M Series C Round to Boost Audit and Advisory Firms' Agentic AI Capabilities", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/02/fieldguide-raises-75m-series-c-round-to-boost-audit-and-advisory-firms-agentic-ai-capabilities/177323", date: "2026-02-03", access: full, locator: "paragraphs on the capacity shortfall and customers"}
-    - {ref: FRC-GENAIGUIDE-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/9256/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "pp. 32-33"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/9256/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "pp. 32-33"}
   last_reviewed: "2026-10-21"
   notes: >-
     Merged from practice 16, discourse 18 and governance 05. Discourse rated it delegate; augment is used because every
@@ -1034,7 +1034,7 @@
       figure: "78%"
       measures: "Respondents lacking strong confidence, of 950 C-suite and senior business leaders in Grant Thornton's own survey; not an engagement outcome"
       provenance: self-reported
-      source_ref: GT-AIIMPACT-2026
+      source_ref: GT-AISURVEY-2026
     - lever: risk
       description: "67% of surveyed middle-market organisations apply AI governance controls before pilot or production stages"
       figure: "67%"
@@ -1053,7 +1053,7 @@
     - "For AIUC-1, quarterly technical retesting and annual renewal (JOFA-AIUC-2026)"
   risks_and_guardrails:
     - "COSO adapts its 2013 framework rather than proposing a new governance model (COSO-GENAIPR-2026); Deloitte says it works best treated as building on that framework, not as a prescriptive rulebook (DART-COSO-2026)"
-    - "Where the firm also audits the client, developing or hosting an AI system for that client can raise independence concerns under the AICPA Code (JOFA-ETHICS-2026)"
+    - "Where the firm also audits the client, developing or hosting an AI system for that client can raise independence concerns under the AICPA Code (JOFA-ETHAI-2026)"
     - "For SEC audit clients, Rule 2-01(c)(4)(ii) restricts designing or implementing a system that generates information significant to the financial statements unless the results will not be subject to audit procedures (SEC-RULE2-01-2026)"
     - "Advice must not be framed as assurance over the client's AI; the AIUC-1 or SOC 2 examination is attest work, and readiness advice to a client the same firm will examine raises independence questions not resolved in the research"
     - "A Cloud Security Alliance note (AI-assisted, not CSA-reviewed) says two AI companies can hold clean SOC 2 reports with different tested control sets because no AI baseline exists (CSA-SOC2AI-2026)"
@@ -1072,7 +1072,7 @@
     - {ref: DART-COSO-2026, title: "Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI", publisher: "Deloitte (DART)", type: firm, url: "https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai", date: "2026-04-03", access: full, locator: "opening paragraphs; 'six actions' list"}
     - {ref: KPMG-AIFINANCE-2026, title: "AI adoption in finance doubles, but assurance readiness determines who wins, KPMG finds", publisher: "KPMG International", type: survey, url: "https://kpmg.com/xx/en/media/press-releases/2026/05/ai-adoption-in-finance-doubles-but-assurance-readiness-determines-who-wins.html", date: "2026-05-11", access: full, locator: "key findings; 'Assurance readiness powers AI performance'; 'About' box"}
     - {ref: GT-CBIZ-2026, title: "Grant Thornton CEO Says CBIZ Merger Is Key to Unlocking AI Value", publisher: "Bloomberg Law (Bloomberg Tax)", type: press, url: "https://news.bloomberglaw.com/financial-accounting/grant-thornton-ceo-says-cbiz-merger-is-key-to-unlocking-ai-value", date: "2026-09-02", access: full, locator: "paragraphs on AI governance demand (read via text mirror)"}
-    - {ref: GT-AIIMPACT-2026, title: "2026 AI Impact Survey Report", publisher: "Grant Thornton", type: survey, url: "https://www.grantthornton.com/services/advisory-services/artificial-intelligence/2026-ai-impact-survey", date: "2026", access: full, locator: "statistics panel; methodology (950 leaders, fieldwork 2026-02-23 to 2026-03-18; publication date not shown, so the fieldwork end date is not used as a publication date)"}
+    - {ref: GT-AISURVEY-2026, title: "2026 AI Impact Survey Report", publisher: "Grant Thornton", type: survey, url: "https://www.grantthornton.com/services/advisory-services/artificial-intelligence/2026-ai-impact-survey", date: "2026", access: full, locator: "statistics panel; methodology (950 leaders, fieldwork 2026-02-23 to 2026-03-18; publication date not shown, so the fieldwork end date is not used as a publication date)"}
     - {ref: GT-AIGOV-2026, title: "AI governance that holds up under scrutiny", publisher: "Grant Thornton", type: firm, url: "https://www.grantthornton.com/insights/articles/advisory/2026/ai-governance-that-holds-up-under-scrutiny", date: "2026-04-20", access: full, locator: "sections on traditional governance and accountability model"}
     - {ref: RSM-JOB-AIRISK-2026, title: "Senior Associate, Technology Risk Advisory - AI Risk", publisher: "RSM US", type: job-posting, url: "https://jobs.rsmus.com/posting/senior-associate-technology-risk-advisory---ai-risk/JR119804/", date: "2026-10-01", access: full, locator: "responsibilities list; qualifications"}
     - {ref: CPAPA-RSMMM-2026, title: "The Middle Market Has Embraced AI. Now Comes the Hard Part", publisher: "CPA Practice Advisor (RSM Middle Market AI Survey 2026)", type: survey, url: "https://www.cpapracticeadvisor.com/2026/07/22/the-middle-market-has-embraced-ai-now-comes-the-hard-part/187171/", date: "2026-07-22", access: full, locator: "final paragraph on governance controls"}
@@ -1080,7 +1080,7 @@
     - {ref: FORVIS-AIBUYSIDE-2024, title: "Navigating the AI Landscape: 5 Considerations for Private Equity Buy-Side Transactions", publisher: "Forvis Mazars US", type: firm, url: "https://www.forvismazars.us/forsights/2024/01/navigating-the-ai-landscape-5-considerations-for-private-equity-buy-side-transactions", date: "2024-01-18", access: full, locator: "five considerations"}
     - {ref: GT-EAS-2026, title: "Grant Thornton launches first-of-its-kind Enterprise Assurance Services practice", publisher: "Grant Thornton LLP", type: firm, url: "https://www.grantthornton.com/insights/press-releases/2026/september/gt-launches-first-of-its-kind-enterprise-assurance-services", date: "2026-09-23", access: full, locator: "paragraphs 1-3; offerings list; About box"}
     - {ref: JOFA-AIUC-2026, title: "AICPA partners on new offering that assures AI systems and agents", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/", date: "2026-10-19", access: full, locator: "paragraphs 1-2, 6-7"}
-    - {ref: JOFA-ETHICS-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section on AI-related nonattest services for attest clients"}
+    - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division staff)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section on AI-related nonattest services for attest clients"}
     - {ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC (via eCFR)", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(ii); date is the access date"}
     - {ref: CSA-SOC2AI-2026, title: "The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted", publisher: "Cloud Security Alliance (CSAI Foundation)", type: community, url: "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/08/CSA_research_note_soc2_ai_controls_gap_20260830-csa-styled.pdf", date: "2026-08-30", access: full, locator: "Key Takeaways"}
     - {ref: KPMG-SOX2030-2026, title: "The Future of SOX: A point of view for 2030 and beyond (PDF)", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "POV 1: The governance of AI"}
@@ -1134,15 +1134,15 @@
       figure: "33%; 42%"
       measures: "Shares of respondents to ISACA's European poll"
       provenance: independent
-      source_ref: ISACA-AIPULSE-2026
+      source_ref: ISACA-AIPULSEEU-2026
   prerequisites:
     - "A client mandate to scan network and SaaS use, and a clear acceptable-use policy (COSO-GENAI-2026, p. 9)"
     - "Existing documentation of AI systems and a governance platform, for the vendor route (OPTRO-AGENTS-2026)"
-    - "A data-classification policy and an approved-tools list (JOFA-CYBERCHECK-2026)"
+    - "A data-classification policy and an approved-tools list (JOFA-CHECKLIST-2026)"
   risks_and_guardrails:
     - "The Optro products are announced, with no named customer; AI Discovery is only a preview"
-    - "Too much control drives workarounds; a Warren Averett risk partner advises governing what people are allowed to use rather than what they cannot (JOFA-CYBERCHECK-2026)"
-    - "Agents with access to enterprise data, credentials or APIs open new attack paths (JOFA-CYBERCHECK-2026)"
+    - "Too much control drives workarounds; a Warren Averett risk partner advises governing what people are allowed to use rather than what they cannot (JOFA-CHECKLIST-2026)"
+    - "Agents with access to enterprise data, credentials or APIs open new attack paths (JOFA-CHECKLIST-2026)"
   human_checkpoints:
     - "A governance committee classifies and approves each discovered use; teams own attestations and judgments"
     - "A review and change-management gate before any user-built agent touches production data"
@@ -1155,9 +1155,9 @@
     - {ref: OPTRO-AGENTS-2026, title: "Optro Launches Domain-Trained Agents for Audit, Compliance, Third-Party Risk, and AI Governance", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/optro-launches-domain-trained-agents-for-audit-compliance-third-party-risk-and-ai-governance", date: "2026-10-14", access: full, locator: "Agentic AI Governance paragraph"}
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "foundational characteristic 4, p. 8; control environment pp. 9-10; step 2, p. 19"}
     - {ref: LEXISNEXIS-CONSULTING-2026, title: "AI Is Accelerating Consulting and Introducing Risk (Management Consulting Industry Report 2026 landing page)", publisher: "LexisNexis", type: vendor, url: "https://professional.lexisnexis.com/en-us/ps-fowmini2026", date: "2026", access: full, locator: "second and third paragraphs"}
-    - {ref: ISACA-AIPULSE-2026, title: "A Third of European Organisations Don't Know if They've Been Hit by an AI-Powered Cyberattack, New ISACA Research Finds", publisher: "ISACA", type: survey, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/a-third-of-european-organisations-dont-know-if-they-have-been-hit-by-an-ai-powered-cyberattack", date: "2026-06-17", access: full, locator: "final paragraph"}
+    - {ref: ISACA-AIPULSEEU-2026, title: "A Third of European Organisations Don't Know if They've Been Hit by an AI-Powered Cyberattack, New ISACA Research Finds", publisher: "ISACA", type: survey, url: "https://www.isaca.org/about-us/newsroom/press-releases/2026/a-third-of-european-organisations-dont-know-if-they-have-been-hit-by-an-ai-powered-cyberattack", date: "2026-06-17", access: full, locator: "final paragraph"}
     - {ref: ACCA-ENGLETTERS-2026, title: "Engagement letters, AI and PCRT", publisher: "ACCA", type: professional-body, url: "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Engagement-letters-AI-and-PCRT.html", date: "2026-09", access: full, locator: "final paragraph"}
-    - {ref: JOFA-CYBERCHECK-2026, title: "New checklist helps CPAs manage AI cyber risks", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/new-checklist-helps-cpas-manage-ai-cyber-risks/", date: "2026-10-01", access: full, locator: "paragraphs on vibe coding, agent guardrails and the Paul Perry quote"}
+    - {ref: JOFA-CHECKLIST-2026, title: "New checklist helps CPAs manage AI cyber risks", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/oct/new-checklist-helps-cpas-manage-ai-cyber-risks/", date: "2026-10-01", access: full, locator: "paragraphs on vibe coding, agent guardrails and the Paul Perry quote"}
     - {ref: IIA-IPPF-2026, title: "IPPF documents listing, topic Artificial Intelligence", publisher: "The IIA", type: professional-body, url: "https://www.theiia.org/en/standards/documents/", date: "2026-09-18", access: full, locator: "entry 'Vibe Coding Risks & What Internal Audit Needs to Know'"}
   last_reviewed: "2026-10-21"
   notes: >-
@@ -1499,20 +1499,20 @@
   prerequisites:
     - "A set of completed engagements with documented conclusions as the comparison baseline (CPAPA-FULLPOP-2026)"
   risks_and_guardrails:
-    - "The FRC says tolerance for deficiencies in output is a matter of professional judgement and tests will often be qualitative (FRC-GENAIGUIDE-2026, p. 32)"
+    - "The FRC says tolerance for deficiencies in output is a matter of professional judgement and tests will often be qualitative (FRC-GENAI-2026, p. 32)"
     - "COSO's illustrative case (no organisation named): a vendor OCR update degraded accuracy and the team rolled back within 24 hours (COSO-GENAI-2026, p. 20)"
   human_checkpoints:
     - "A named reviewer compares tool output with prior conclusions before any live cutover"
   role_evolution: >-
-    The FRC states the human auditor remains accountable regardless of the tool (FRC-GENAI-2026). Firms need staff who can
+    The FRC states the human auditor remains accountable regardless of the tool (FRC-GENAINEWS-2026). Firms need staff who can
     design tests for AI output; the AICPA practice aid says engagement teams may need a blend of audit, AI, data and
     specialist skills (CPAPA-AUDITAID-2026).
   evidence_grade: D
   sources:
     - {ref: CPAPA-FULLPOP-2026, title: "Testing Every Transaction Changes the Audit - Here's What Firms Should Know Before They Sell It", publisher: "CPA Practice Advisor (author: Tunde Adewole, Ledgerline)", type: press, url: "https://www.cpapracticeadvisor.com/2026/10/15/testing-every-transaction-changes-the-audit-heres-what-firms-should-know-before-they-sell-it/191713/", date: "2026-10-15", access: full, locator: "paragraphs beginning 'The worst way to adopt automation'"}
     - {ref: CPAPA-5Q-2026, title: "5 Questions to Ask Before Your SOX Team Adopts AI Agents", publisher: "CPA Practice Advisor (author: CEO of Bead AI, a vendor)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/18/5-questions-to-ask-before-your-sox-team-adopts-ai-agents/188703/", date: "2026-08-18", access: full, locator: "article body (parallel-run recommendation)"}
-    - {ref: FRC-GENAIGUIDE-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/9256/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "pp. 32-33"}
-    - {ref: FRC-GENAI-2026, title: "Innovative new guidance supports audit firm adoption of emerging AI technologies", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/", date: "2026-03-30", access: full, locator: "paragraph 4 (accountability unchanged)"}
+    - {ref: FRC-GENAI-2026, title: "Generative and Agentic AI Guidance: Risks, mitigations and illustrative examples", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/documents/9256/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf", date: "2026-03", access: full, locator: "pp. 32-33"}
+    - {ref: FRC-GENAINEWS-2026, title: "Innovative new guidance supports audit firm adoption of emerging AI technologies", publisher: "UK Financial Reporting Council", type: regulator, url: "https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/", date: "2026-03-30", access: full, locator: "paragraph 4 (accountability unchanged)"}
     - {ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI (GenAI)", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "step 6, p. 19; case 1, p. 20"}
     - {ref: CPAPA-AUDITAID-2026, title: "AICPA Practice Aid Provides Guidance to Auditors on AI Use in Financial Statement Audits", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/?p=191588", date: "2026-10-13", access: full, locator: "bullet on audit team capabilities"}
   last_reviewed: "2026-10-21"

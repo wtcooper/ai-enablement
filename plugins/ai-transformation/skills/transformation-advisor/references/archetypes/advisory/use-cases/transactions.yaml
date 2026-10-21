@@ -422,7 +422,7 @@
     - "Citation back to source documents so reviewers can verify (BLOCKCHAINNEWS-PWCUK-2026)"
   risks_and_guardrails:
     - "Uploading confidential data to an AI tool may breach NDA terms on retention, permitted representatives and use; some sellers now bar public AI or require prior written consent (KJK-NDA-2026)"
-    - "The AICPA Code's confidential client information rule means asking whether client consent is needed before client data goes into an AI tool (JOFA-ETHICSAI-2026)"
+    - "The AICPA Code's confidential client information rule means asking whether client consent is needed before client data goes into an AI tool (JOFA-ETHAI-2026)"
     - "Intralinks reports hallucinated outputs leading to inaccurate diligence among the incident clusters it observed (INTRALINKS-AIDEAL-2026)"
     - "PwC UK's approach anchors outputs to verifiable sources (BLOCKCHAINNEWS-PWCUK-2026, secondary summary)"
   human_checkpoints:
@@ -438,7 +438,7 @@
     - {ref: ICAEW-BIGSIX-2024, title: "Insight: AI and the Big Six", publisher: "ICAEW Corporate Financier", type: professional-body, url: "https://www.icaew.com/technical/corporate-finance/corporate-finance-faculty/corporate-financier/2024/articles/december/insight-ai-and-the-big-six", date: "2024-12-10", access: full, locator: "PwC (T. Popplewell, transactions director and deals GenAI leader) contracts example, platform count and 'What does AI mean for jobs?'; Deloitte (P. Robinson) legal DD efficiency paragraph; BDO (M. Jones) on roles"}
     - {ref: ARTLAW-AG-2024, title: "AG Proves LLMs Can Do Well On Due Diligence", publisher: "Artificial Lawyer (reporting Addleshaw Goddard's research report)", type: press, url: "https://www.artificiallawyer.com/2024/10/08/ag-proves-llms-can-do-well-on-due-diligence/", date: "2024-10-08", access: full, locator: "accuracy 74% to 95% quote; chunking strategy 14%-22% improvement"}
     - {ref: KJK-NDA-2026, title: "AI and M&A NDAs: Managing Artificial Intelligence Risks in Confidentiality Agreements", publisher: "Kohrman Jackson & Krantz", type: firm, url: "https://kjk.com/2026/03/12/ai-and-ma-ndas-managing-artificial-intelligence-risks-in-confidentiality-agreements/", date: "2026-03-12", access: full, locator: "'Why AI Use in M&A Due Diligence Raises NDA Concerns'; 'How M&A NDAs Are Evolving'"}
-    - {ref: JOFA-ETHICSAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI can create confidentiality risks quickly'"}
+    - {ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI can create confidentiality risks quickly'"}
     - {ref: INTRALINKS-AIDEAL-2026, title: "AI Use Permeates Dealmaking Despite Operational Concerns: SS&C Intralinks Report", publisher: "SS&C Intralinks (via Business Wire / Nasdaq)", type: survey, url: "https://www.nasdaq.com/press-release/ai-use-permeates-dealmaking-despite-operational-concerns-ssc-intralinks-report-2026", date: "2026-04-08", access: full, locator: "incident bullet"}
   last_reviewed: "2026-10-21"
   notes: >-

@@ -167,22 +167,22 @@ to board pack; time to run a scenario.
   functions (any decision-making, supervisory or ongoing monitoring function) are listed separately
   [SEC-RULE2-01-2026, (c)(4)(ii), (vi)]. Contingent fees on any service to such a client impair independence
   [SEC-RULE2-01-2026, (c)(5)]. The AICPA says developing or hosting an AI system for an attest client can raise
-  independence concerns, and existing nonattest rules still apply [JOFA-ETHICSAI-2026]. IESBA treats hosting an audit
-  client's data as assuming a management responsibility [IESBA-TECH-2023]. Whether a given FP&A, platform or managed
+  independence concerns, and existing nonattest rules still apply [JOFA-ETHAI-2026]. IESBA treats hosting an audit
+  client's data as assuming a management responsibility [IESBA-TECHREV-2023]. Whether a given FP&A, platform or managed
   scope crosses these lines was not analysed, and the AICPA Code text for private-company clients was not read. Use
   the gate in assurance-acceptance-independence-15.
 - **Who can sell what.** CFGI (PE-backed, does not audit) markets "no audit restrictions" [CFGI-FINEFFECTIVENESS-2026].
   Firms in an alternative practice structure (APS: an investor-backed advisory entity beside a separate CPA firm) split
   attest and non-attest work, and Crowe notes some services may not be available to attest clients [CROWE-KKR-2026].
 - **Internal control over generative AI.** COSO's 2026-02-23 publication maps AI capabilities, including insight
-  generation, to the 17 principles of its framework [COSO-GENAI-2026; DELOITTE-DART-COSO-2026].
+  generation, to the 17 principles of its framework [COSO-GENAI-2026; DART-COSO-2026].
 - **Practitioner control list.** Agent inventory with a named owner, replayable evidence, sign-off gates scaled to
   risk, third-party assurance read closely, monitoring with an exit threshold [CPAPA-AGENTSCLOSE-2026]. Its
-  statement that AICPA had no SOC guidance on AI appears superseded [JOFA-PRACTICEAID-2026].
+  statement that AICPA had no SOC guidance on AI appears superseded [JOFA-AIPA-2026].
 - **Deliverable quality.** Deloitte Australia agreed to repay the final instalment of a roughly AU$440,000 contract
   after a report contained incorrect references [CITYAM-DELOITTE-2025]. See professional-services-quality-review-04.
 - **Client data.** The AICPA Code means asking whether client consent is needed before client data goes into an AI
-  tool [JOFA-ETHICSAI-2026]. Only 21% of firms have an AI policy or strategy [KARBON-AISTATE-2026]. Pigment says
+  tool [JOFA-ETHAI-2026]. Only 21% of firms have an AI policy or strategy [KARBON-SOAI-2026]. Pigment says
   customers choose what its AI can access and data is excluded from training [PIGMENT-AI-2026] (vendor statement).
 - **Assurance expectations.** KPMG says regulators and external auditors increasingly require proof that AI-enabled
   finance processes are controlled and explainable [KPMG-AIFINANCE-2026].
@@ -279,8 +279,8 @@ Full details for keys used in the use cases are in the YAML. Keys cited above th
 - CROWE-KKR-2026: "Crowe closes strategic investment from KKR", Crowe, 2026-08-07, https://www.crowe.com/news/crowe-closes-strategic-investment-from-kkr
 - EY-CFOAILAB-2026: "CFO AI LAB - AI-Driven Finance: How to scale from AI use cases to agentic finance" (event page), EY Finland with Microsoft, 2026-05-28, https://www.ey.com/en_fi/events/2026/05/cfo-ai-lab-ai-driven-finance-how-to-scale-from-ai-use-cases-to-agentic-finance
 - GT-PEAI-2026: "Private equity insights: 2026 AI Impact Survey" (summary only; publication date not found), Grant Thornton, 2026, https://grantthornton.com/insights/survey-reports/private-equity/2026/private-equity-insights-2026-ai-impact-survey
-- IESBA-TECH-2023: "Final Pronouncement: Technology-related Revisions to the Code" (606.3 A1), IESBA, 2023-04-11, https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code
+- IESBA-TECHREV-2023: "Final Pronouncement: Technology-related Revisions to the Code" (606.3 A1), IESBA, 2023-04-11, https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code
 - JOFA-AIUC-2026: "AICPA partners on new offering that assures AI systems and agents", Journal of Accountancy, 2026-10-19, https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/
-- JOFA-ETHICSAI-2026: "Accounting ethics in the age of AI", Journal of Accountancy, 2026-08-05, https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
-- KARBON-AISTATE-2026: "2026 State of AI in Accounting Report" (vendor survey, about 600 respondents), Karbon, 2026-01-20, https://karbonhq.com/resources/state-of-ai-accounting-2026
+- JOFA-ETHAI-2026: "Accounting ethics in the age of AI", Journal of Accountancy, 2026-08-05, https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
+- KARBON-SOAI-2026: "2026 State of AI in Accounting Report" (vendor survey, about 600 respondents), Karbon, 2026-01-20, https://karbonhq.com/resources/state-of-ai-accounting-2026
 - STANFORD-JAR-2026: "Human + AI in Accounting: Early Evidence from the Field" (Choi and Xie, abstract read), Journal of Accounting Research 64(3), 2026-06, https://www.gsb.stanford.edu/index%2ephp/node/629989

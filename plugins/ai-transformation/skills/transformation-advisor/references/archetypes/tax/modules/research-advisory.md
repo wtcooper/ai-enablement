@@ -1,10 +1,11 @@
 # Research and advisory (tax)
 
-Sources checked 2026-10-17. Use cases live in `../use-cases/research-advisory.yaml` (25 entries).
+Sources checked 2026-10-17; widened for mid-market firms and owner clients 2026-10-21 (§10). Use cases live in
+`../use-cases/research-advisory.yaml` (28 entries).
 Ids are shortened here: `#05` means `tax-research-advisory-05`; other modules' ids are in full. Source keys in
-brackets are in the YAML or in §10.
+brackets are in the YAML or in §11.
 
-**Read this first.** Adoption is broad, but measured evidence is thin. Grades: A 0, B 11, C 8, D 6 (44% A/B). No entry
+**Read this first.** Adoption is broad, but measured evidence is thin. Grades: A 0, B 11, C 10, D 7 (39% A/B). No entry
 reaches grade A: the before-and-after times (#01, #02, #09) are named practitioners' estimates quoted in case studies
 published by the vendors that sell the tools, not measurements, so those entries are graded B.
 No independent test of a commercial tax research product (Blue J, CoCounsel, Bloomberg Tax AI, CCH) exists. The
@@ -23,7 +24,8 @@ claims and lead with verification, ownership and fees, which is where the field'
 7. [Roles and how they evolve](#7-roles-and-how-they-evolve)
 8. [Frontier](#8-frontier)
 9. [Common objections](#9-common-objections)
-10. [Sources](#10-sources)
+10. [Mid-market firms and owner clients](#10-mid-market-firms-and-owner-clients)
+11. [Sources](#11-sources)
 
 ## 1. What this module covers
 
@@ -67,6 +69,8 @@ process-level automation. Delegate has four entries, none above C. Reinvent has 
   10 hours to 2-2.5). `#13` (B) document-grounded analysis of operating agreements, trusts and schedules.
   `#12` (C) model translates rules, a deterministic engine calculates, the trace goes in the file.
   `#10` (idea) planning ideation and anti-abuse screening. `#11` (idea) AI argues the other side or cross-checks.
+  `#26` (C) owner-facing S-election calculators and agent-built S corporation plans. `#27` (C) planning
+  opportunities mined from filed returns across the book. `#28` (idea) informed consent for AI in estate planning.
 
 **Drafting and client communication**
 - Improve: `#14` (B) first drafts of memos, letters and client emails (Blue J Tax Writing, CoCounsel, Nelson Mullins
@@ -247,10 +251,22 @@ doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2
   respondents to KPMG Germany's surveys expect stable headcount (#06).
 - **"Nobody here owns it."** Common: two of 50+ TEI attendees said tax owns AI. Name an owner and an approved list (#07).
 
-## 10. Sources
+## 10. Mid-market firms and owner clients
+
+Added 2026-10-21. Entity choice and owner planning for private, owner-managed clients sit here; owner return work (reasonable compensation, basis, estimates) is in compliance-individual-business, and state PTET modelling is `tax-multistate-private-14`.
+- **Demand and price.** In Thomson Reuters' 2026 survey (600 respondents; vendor-owned; "midsize" means 4 to 29 professionals), 74% say clients strongly want more financial advice, yet advisory margins are 20-24% against 28% for individual return preparation and 78% primarily bill hourly; 28% plan to start offering tax strategy within 12 months and 37% are considering it; among firms that reallocated tasks, 39% did so to free professionals for advisory work [TR-SOTP-2026] (`#25`, `#27`).
+- **Planning tools are rare.** 93% of AICPA survey respondents use no tool to review returns for planning opportunities, and 2% use Holistiplan; of the 20% expanding services, 75% chose tax advisory and 42% estate, trust and gift planning [AICPA-TAXSW-2026].
+- **What this pass added.** Owner-facing S-election calculators from Gelt, an AI-native firm, and agent-built S corporation plans from Instead (`#26`); planning mined from filed returns with Intuit Tax Advisor, CCH Axcess Advisor and Filed (`#27`); owner-exit and relocation research drafted for the client within two hours at One Stop CPA, a seven-person digital firm (the CEO's statement, merged into `#14`) [JOFA-SMALLFIRMS-2026]; Wealth.com's estate-document engine for wealth-management firms (merged into `#13`); informed consent for AI in estate planning (`#28`, idea). The firm-side S-election project with a named shareholder's estimate stays `#09` (Finney Neill, 17 employees).
+- **Small-firm signal.** A Thomson Reuters case study credits its tools with letting junior staff at Sam Brown CPA, a small Ohio firm, run advisory analyses (vendor-published) [TR-SAMBROWN-2026].
+- **Evidence.** No named mid-market firm uses AI for entity choice, PTET or estate planning in the sources. The new entries are grade C or an idea; the merged One Stop account is the only named firm example (B, self-reported).
+- **Guardrails.** Written advice must meet Circular 230 section 10.37 [IRS-OPR-2026]; ACTEC Fellows say the ABA and many local bars require informed consent to AI use (the speaker's statement; ABA text not read) [ACTEC-AIVIDEO-2026]; whether sending return data to AI needs section 7216 consent is open [CPAPA-SETTLE-2026].
+- **Trusts, estates and gifts.** What reaches firms is advisor-side planning software (Wealth.com raised $65 million in April 2026) and attorney-side guidance, not fiduciary return preparation [WEALTHCOM-2026; ACTEC-AIVIDEO-2026]; estate and gift returns are `tax-compliance-individual-business-31`. Treat this area as risk awareness, not proof points.
+- **Probe.** "Who builds the S-election or PTET break-even for an owner, what written-advice standard do you apply, and are owners bringing their own calculators?" (`#26`)
+
+## 11. Sources
 
 Full details for entry sources are in the YAML. Keys cited here that are not in the YAML:
-- AICPA-TAXSW-2026: The Tax Adviser (AICPA), *2026 tax software survey*, 2026-08-31, https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/
+- TR-SAMBROWN-2026: Thomson Reuters, *Small firm, big leverage: Sam Brown, CPA, Inc. scales advisory and streamlines audits with AI* (vendor case study; page undated, 2026 inferred), 2026, https://tax.thomsonreuters.com/en/insights/case-studies/small-firm-big-leverage-sam-brown-cpa-inc-scales-advisory-and-streamlines-audits-with-ai
 - VALS-TAXEVAL-2026: Vals AI, *TaxEval v2 leaderboard and methodology (archived)*, 2026-09-01, https://www.vals.ai/benchmarks/tax_eval_v2
 - PREPRINTS-HALLUC-2026: Preprints.org, *Citing the Unseen: AI Hallucinations in Tax and Legal Practice* (preprint, not
   peer reviewed), 2026-01, https://www.preprints.org/manuscript/202601.0187/v1

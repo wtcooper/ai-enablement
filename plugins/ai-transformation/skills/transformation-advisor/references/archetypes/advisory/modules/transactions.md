@@ -106,7 +106,7 @@ Ask in the person's setting (Big Four deal group, mid-market TAS team, AI-native
    traceability, the control every vendor claims (`#01`, `#04`) and the one thin reports lack.
 4. **"How do your engagement letters, seller NDAs and data-room terms treat AI tools? Has a seller, lender or
    insurer asked how AI was used?"** Reveals confidentiality exposure [KJK-NDA-2026] and the consent question
-   [JOFA-ETHICSAI-2026].
+   [JOFA-ETHAI-2026].
 5. **"Which of your diligence clients are also audit clients of your firm or an affiliate, and who checks before a
    new AI-enabled service is offered?"** Reveals whether independence is checked in a system or by memory
    (assurance-acceptance-independence-15).
@@ -149,7 +149,7 @@ found; senior review hours per deal; client and lender queries per report.
 - **Confidentiality and NDAs.** Public AI tools may retain inputs, and an AI provider may not count as a permitted
   representative under an NDA. Some sellers now bar uploads to public AI or require prior written consent; parties
   are agreeing secure enterprise or closed-environment tools [KJK-NDA-2026]. The AICPA Code means asking whether
-  client consent is needed before client data goes into an AI tool [JOFA-ETHICSAI-2026].
+  client consent is needed before client data goes into an AI tool [JOFA-ETHAI-2026].
 - **Independence (the firm's own audit clients).** For SEC issuer audit clients, investment-banking-type services
   and any contingent fee impair independence [SEC-RULE2-01-2026]. Deloitte notes that certain services may not be
   available to attest clients [DELOITTE-GENAIMA-2025]. Which diligence services are restricted was not verified;

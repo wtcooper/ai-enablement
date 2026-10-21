@@ -253,25 +253,39 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 - **"Who is liable?"** The signer. A vendor contract does not move responsibility for positions filed, and provider
   indemnities generally do not cover confidentiality or accuracy exposure (`#19`).
 
-## 10. Sources
+## 10. Mid-market firms and owner-managed clients
+
+Added 2026-10-21. There is no separate pass-through module: this module carries S corporation and partnership returns, K-1 flow to owners, basis, reasonable compensation and owner estimates. State pass-through entity tax (PTET) and composite returns are in the multistate-private module; entity choice and owner planning are in research-advisory.
+
+**What is different**
+- **Who supplies the evidence.** Most new material comes from AI-native vendors (Instead, Filed) and small firms. Named mid-market firms appear only for K-1-heavy individual and partnership preparation: Maxwell Locke & Ritter, a top-100 firm (a qualitative quote, `#05`) [CPAPA-BLACKORE-2026], Boulay and Armanino (`#05`, `#06`), and WCG, a regional firm, as an evaluator [WCG-NOTREADY-2026]. Filed's named customers are small firms (Paramount Tax, JCG Tax; `#12`) [FILED-HOME-2026]; Aardvark Tax Advisors is the practice arm of a venture-backed small-business platform (`#24`) [AARDVARK-STM-2026].
+- **Survey size bands are smaller than the mid-market.** In Thomson Reuters' 2026 survey (600 respondents; vendor-owned) "large" means 30 or more professionals and "midsize" 4 to 29; 63% of large firms against 35% of small firms say they are proactive or optimized in technology, and AI is the top investment priority for 57% of respondents (47% in 2025) [TR-SOTP-2026].
+- **Extra owner-level steps, none with a named firm using AI:** reasonable-compensation study (`#26`); shareholder and partner basis, AAA and Form 7203 (`#27`); one workspace across a client's 1040, 1120-S, 1065 and 1041 (`#28`); owner estimated-tax projections with safe harbor (`#29`). Each rests on one or two vendor pages.
+- **Entity-return review** is merged into `#12`: reviewers work from long M-1, M-2, basis and capital-account checklists, and a state-society course calls staff-prepared entity returns error-prone [NYSSCPA-1120S1065-2025].
+- **Engine choice.** Instead announced (2026-05-08) e-file approval for 1040, 1041, 1120, 1120-S and 1065 and pitches itself as a replacement for the firm's tax software (`#30`) [INSTEAD-EFILE-2026]; WCG warns that proprietary systems trap prior-year history and break the "last mile" [WCG-NOTREADY-2026]. This is the opposite design to `#08`.
+- **K-1 coverage is the first screen.** WCG treats it as the minimum bar; Thomson Reuters' blog says Ready to Review covers 1040s and "will soon be expanding to business returns" [TR-R2RBLOG-2025]. CCH Axcess Scan went generally available for K-1s on 2026-06-29; Wolters Kluwer puts manual entry at 10-15 minutes per K-1 (vendor) [WK-SCANGA-2026] (`#02`).
+- **Review cost.** In a sponsored summit recap a firm leader said preparers re-checked everything AI produced, so firms paid for tokens and labour; a panelist put implementation at two to four weeks for a small firm and 18 to 24 months for a large one (statements) [OLIVER-BOSUMMIT-2026] (`#12`, `#18`).
+- **Guardrails for owner work.** The IRS says there are no specific guidelines in the Code or regulations on reasonable salary [IRS-FS200825-2008]; Form 7203 covers shareholder basis limits [IRS-F7203-2026]; NATP's sponsored post says an under-set salary exposes the owner to section 6662 and the preparer to section 6694 [NATP-RCOMP-2026]; the section 7216 consent question for AI is open, and a cautious firm keeps a non-AI path for clients who decline (`#21`) [CPAPA-SETTLE-2026]. Whether the 1040 consent format applies to 1065 and 1120-S returns was not checked.
+
+**Trusts, estates and gifts (short).** Instead lists 1041 as live and 706 and 709 as "Coming 2026" (vendor roadmap, `#31`) [INSTEAD-ENTITY-2026]; Thomson Reuters' fiduciary pages describe no AI function that could be read [TR-FIDUCIARY-2026]. Of the 20% of AICPA survey respondents expanding services, 42% chose estate, trust and gift planning [AICPA-TAXSW-2026]. Planning tools and consent are `tax-research-advisory-13` and `-28`. No firm-level case, error rate or independent test: use for risk awareness, not proof points.
+
+**Frontier for owner work:** 2026-05-08 Instead e-file announcement; 2026-06-29 Scan K-1 availability; 2026-07-29 a NYSSCPA webcast by two co-founders of an AI preparation vendor (Byron) on agentic preparation and growing K-1 volume, showing vendor-led CPE as a channel [NYSSCPA-AIPREP-2026]; roadmaps (not delivered): Ready to Review K-1 support listed for November 2026 by WCG, Instead's 706 and 709.
+
+**Probes for an owner-focused practice**
+1. "Which owner clients have an S corporation salary backed by a dated, duty-based study, and has any owner brought you a chatbot's number?" (`#26`)
+2. "Where do you track each owner's basis, who reconciles it to the K-1 each year, and what would you let a tool compute without a reviewer?" (`#27`)
+3. "For a client with a 1040, an S corporation and a partnership, where does one person see all three, and how do you tie each K-1 received to the issuing return?" (`#28`)
+4. "When an AI-prepared entity return reaches your reviewer, what do they re-check, how long does it take, and do you track overrides and errors found?" (`#12`, `#18`)
+
+## 11. Sources
 
 Full details (title, publisher, type, URL, date, access) are in the YAML.
-- **Regulators and standard-setters:** IRS-OPR-2026; TREAS-7216-2008; IRS-RP201314-2013; TREAS-C230-2014; IRS-I8867-2025;
-  IRS-PUB1345-2025; IRS-PUB4557-2024; IRS-PUB5708-2024; GAO-14467T-2014; TAS-AIBLOG-2024; TPB-GS55-2026; HMRC-GENAI-2026.
-- **Professional bodies:** AICPA-WERFEL-2026 (appendices); TAXADVISER-WERFEL-2026 (article); AICPA-CART-2026;
-  AICPA-FEES-2026; ICAEW-PCRT-2026; ATT-PCRTAI-2026; NAEA-AI-2026; TAXCT-CLINCO-2026.
-- **Firms:** WCG-NOTREADY-2026; WCG-PLAYBOOK-2026; WCG-7216-2026; HRB-Q4CALL-2026; PWC-MEGNA-2025.
-- **Vendors:** TR-COCOUNSEL-2025; TR-R2R-2025; TR-RTR-2026; TR-TRUST7-2026; TR-CHEAP-2026; BASIS-TAX-2026; BASIS-HOME-2026;
-  BASIS-SMALL-2026; BASIS-CAREERS-2026 (job posting); BLACKORE-SITE-2026; ACCRUAL-HOME-2026; ACCRUAL-INDIV-2026;
-  ACCRUAL-PARTNER-2026; TAXGPT-SITE-2026; WK-AXCESSSCAN-2026; INTUIT-PROCONNECTAI-2026; CANOPY-SMARTINTAKE-2025;
-  APARIPRO-2026; OPENAI-CODEX-2026; COLUMN-TCBREPO-2026.
-- **Press, podcasts, community:** BLACKORE-2026; ACCTODAY-BLACKORE-2026; MYCPE-BLACKORE-2026; MYCPE-TAXGPT-2026; TAXGPT-2026;
-  BASIS-2026; ACCRUAL-LAUNCH-2026; ACCRUAL-ARC-2026; RUNTIMEWIRE-2026; PERPLEXITY-2026; CNBC-HRB-2025; MULTIPLIER-2025;
-  CPAPA-POSTEXT-2026; TAXADVISER-CLIENTS-2026; TECHRADAR-TAXFIX-2025; JOFA-AIPOLICY-2026; JOFA-OPR-2026; LDS-CNBC-2026;
-  ACCTODAY-AIBENCH-2026; CPATL-WORKFORCE-2026; CPAPA-BLACKORE-2024; CPAPA-TAXGPT-2026; CPAPA-AILIAB-2026;
-  BLACKORE-SUMMIT-2026; ACCTPOD-477-2026; ACCTPOD-SAMLEON-2026; BARMORE-OPR-2026; HN-ASK-2026; VERITO-DISCL-2026.
-- **Surveys and academic:** AICPA-TAXSW-2026; TR-FOP-2026; WK-FRA-2025; TEI-TAXTECH-2026 (conference recap);
-  COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; STANFORD-HALLUC-2024; SWIDER-2025.
+- **Regulators and standard-setters:** IRS-OPR-2026; TREAS-7216-2008; IRS-RP201314-2013; TREAS-C230-2014; IRS-I8867-2025; IRS-PUB1345-2025; IRS-PUB4557-2024; IRS-PUB5708-2024; GAO-14467T-2014; TAS-AIBLOG-2024; TPB-GS55-2026; HMRC-GENAI-2026; IRS-FS200825-2008; IRS-F7203-2026.
+- **Professional bodies and conferences:** AICPA-WERFEL-2026 (appendices); TAXADVISER-WERFEL-2026 (article); AICPA-CART-2026; AICPA-FEES-2026; ICAEW-PCRT-2026; ATT-PCRTAI-2026; NAEA-AI-2026; TAXCT-CLINCO-2026; NYSSCPA-1120S1065-2025; NATP-TAXPOSIUMAG-2026.
+- **Firms and job postings:** WCG-NOTREADY-2026; WCG-PLAYBOOK-2026; WCG-7216-2026; HRB-Q4CALL-2026; PWC-MEGNA-2025; AARDVARK-STM-2026 (job posting).
+- **Vendors:** TR-COCOUNSEL-2025; TR-R2R-2025; TR-RTR-2026; TR-TRUST7-2026; TR-CHEAP-2026; TR-COCOUNSELTAX-2026; TR-FIDUCIARY-2026; BASIS-TAX-2026; BASIS-HOME-2026; BASIS-SMALL-2026; BASIS-CAREERS-2026 (job posting); BLACKORE-SITE-2026; ACCRUAL-HOME-2026; ACCRUAL-INDIV-2026; ACCRUAL-PARTNER-2026; TAXGPT-SITE-2026; WK-AXCESSSCAN-2026; INTUIT-PROCONNECTAI-2026; INTUIT-BASIS-2024; CANOPY-SMARTINTAKE-2025; APARIPRO-2026; OPENAI-CODEX-2026; COLUMN-TCBREPO-2026; INSTEAD-SCORP-2026; INSTEAD-CPA-2026; INSTEAD-ENTITY-2026; INSTEAD-EFILE-2026; FILED-HOME-2026; WAGEPROOF-2026; NATP-RCOMP-2026 (sponsored post).
+- **Press, podcasts, community:** BLACKORE-2026; ACCTODAY-BLACKORE-2026; MYCPE-BLACKORE-2026; MYCPE-TAXGPT-2026; TAXGPT-2026; BASIS-2026; ACCRUAL-LAUNCH-2026; ACCRUAL-ARC-2026; RUNTIMEWIRE-2026; PERPLEXITY-2026; CNBC-HRB-2025; MULTIPLIER-2025; CPAPA-POSTEXT-2026; TAXADVISER-CLIENTS-2026; TECHRADAR-TAXFIX-2025; JOFA-AIPOLICY-2026; JOFA-OPR-2026; LDS-CNBC-2026; ACCTODAY-AIBENCH-2026; CPATL-WORKFORCE-2026; CPAPA-BLACKORE-2024; CPAPA-TAXGPT-2026; CPAPA-AILIAB-2026; BLACKORE-SUMMIT-2026; ACCTPOD-477-2026; ACCTPOD-SAMLEON-2026; BARMORE-OPR-2026; HN-ASK-2026; VERITO-DISCL-2026; CPAPA-BLACKORE-2026; BASIS-SERIESB-2026; CPAPA-ACCRUAL-2026; WK-SCANGA-2026; CPAPA-SETTLE-2026; OLIVER-BOSUMMIT-2026 (sponsored); OLIVER-PARTNERSHIP-2026; RCREPORTS-IA-2023; EVERGREEN-CHATGPT-2024.
+- **Surveys and academic:** AICPA-TAXSW-2026; TR-FOP-2026; WK-FRA-2025; TEI-TAXTECH-2026 (conference recap); COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; STANFORD-HALLUC-2024; SWIDER-2025.
 - **Not in the YAML:**
   - AICPA-TOPISSUES-2026: Journal of Accountancy, *CPA Firm Top Issues Survey* (629 respondents), 2026-06-23, https://www.journalofaccountancy.com/news/2026/jun/aicpa-top-issues-survey-firms-focus-on-technology-rises/
   - TR-MADSEN-2026: Thomson Reuters Community, *CPA firm automation case study* (SurePrep/UltraTax baseline), 2026-03-17, https://community.thomsonreuters.com/tax-accounting/f/tax-research-guidance/35077/cpa-firm-automation-case-study-how-one-practice-simplified-1040-tax-prep
@@ -280,3 +294,6 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   - BASIS-E2E-2026: Basis, *The future of tax is end-to-end intelligence*, 2026-08-05 (date shown on the page), https://www.getbasis.ai/blogs/the-future-of-tax-is-end-to-end-intelligence
   - HAN-LAWORDER-2026: arXiv preprint (Han, Takashima, Wei, Li, Genesereth), *Law And Order: Tax Law Autoformalization* (arXiv 2610.02792), 2026-10-02, https://arxiv.org/abs/2610.02792
   - RSM-MYRSM-2025: RSM US, *RSM Expands AI Commitment with Launch of myRSM Tax*, 2025-06-16, https://rsmus.com/newsroom/2025/rsm-expands-ai-commitment-with-launch-of-myrsm-tax.html
+  - TR-SOTP-2026: Thomson Reuters Institute, *2026 State of Tax Professionals Report* (600 respondents; survey by a software vendor), 2026-06, https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2026/06/2026-State-of-Tax-Professionals-Report.pdf
+  - TR-R2RBLOG-2025: Thomson Reuters, *AI tax return preparation: how Ready to Review transforms the workflow*, 2025-12-19, https://tax.thomsonreuters.com/blog/ai-tax-return-preparation-how-ready-to-review-transforms-the-workflow/
+  - NYSSCPA-AIPREP-2026: NYSSCPA, *AI in Tax Preparation: A Practical Guide* (webcast listing), 2026-07-29, https://nysscpa.org/catalog/events/7297321-ai-in-tax-preparation-a-practical-guide-2026-29-07

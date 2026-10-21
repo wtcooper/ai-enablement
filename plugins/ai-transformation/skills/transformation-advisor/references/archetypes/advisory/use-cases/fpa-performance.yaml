@@ -1268,7 +1268,7 @@
   - Many agentic close tools are subservice organisations in SOC terms, and a practitioner article says AICPA guidance
     on AI in SOC reporting had not yet been published, so existing SOC reports may be silent on AI components (CPAPA-AGENTSCLOSE-2026,
     control 4). The Journal of Accountancy reported on 2026-10-13 that the AICPA had issued guidance earlier in
-    2026 on service organizations' AI use in SOC 1 and SOC 2 engagements, so that statement appears superseded (JOFA-PRACTICEAID-2026).
+    2026 on service organizations' AI use in SOC 1 and SOC 2 engagements, so that statement appears superseded (JOFA-AIPA-2026).
   human_checkpoints:
   - Administrator enables each agent and sets role access
   - Marketplace agents are certified by the vendor through a technical, security and legal process (Armanino deck)
@@ -1342,7 +1342,7 @@
     date: '2025-08-06'
     access: full
     locator: Paragraph naming Armanino (top 20) as a partner
-  - ref: JOFA-PRACTICEAID-2026
+  - ref: JOFA-AIPA-2026
     title: 'AI and the audit: AICPA publishes practice aid to assist auditors'
     publisher: Journal of Accountancy (AICPA & CIMA)
     type: professional-body
@@ -1579,7 +1579,7 @@
     date: '2026-02-23'
     access: full
     locator: Press release paragraphs 1-2
-  - ref: DELOITTE-DART-COSO-2026
+  - ref: DART-COSO-2026
     title: 'Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI'
     publisher: Deloitte DART
     type: firm

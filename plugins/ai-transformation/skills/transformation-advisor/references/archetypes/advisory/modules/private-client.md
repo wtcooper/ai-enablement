@@ -116,7 +116,7 @@ Ask in the person's setting (accounting firm, family-office advisory firm, wealt
 3. **"What is the system of record for each workflow, and who owns the entity map?"** Reveals data readiness.
    Forum speakers say the data, not the AI, is the bottleneck [WISS-FOAI-2026].
 4. **"Which family data may go into which AI tool, who approved that list, and has a principal asked for a ban or
-   an opt-in?"** Reveals policy maturity (`#14`) and the consent question [JOFA-ETHICSAI-2026].
+   an opt-in?"** Reveals policy maturity (`#14`) and the consent question [JOFA-ETHAI-2026].
 5. **"Who can move money, and how do you check a payment request that arrives by email, voice or video?"**
    Reveals readiness for `#07`. Sources treat the control as procedure, not detection software [CFO-DEEPFAKE-2026].
 6. **"When a principal asks for a live consolidated view, what has to be true of the data before you trust an AI
@@ -180,7 +180,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   tax-compliance-individual-business-19 and -21.
 - **FINRA 2026 report.** Rules are technology-neutral. Summarization and information extraction are the top GenAI
   use at member firms. Agent risks named: autonomy, scope and authority, auditability, data sensitivity, domain
-  knowledge. Monitoring may include prompt and output logs [FINRA-OVERSIGHT-2026]. It addresses member firms only.
+  knowledge. Monitoring may include prompt and output logs [FINRA-ROR-2026]. It addresses member firms only.
 - **SEC FY2026 examination priorities.** Examiners review whether registrants' AI claims are accurate and whether
   policies supervise AI use, including back-office work; cyber reviews cover AI and polymorphic malware
   [SEC-EXAMPRI-FY2026]. Relevant to RIA (registered investment adviser) affiliates of accounting firms.
@@ -190,12 +190,12 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   not independent of an issuer audit client if it provides tax services to a person in a financial reporting
   oversight role there, or to that person's immediate family, with limited exceptions [PCAOB-RULES3520-2026]. Under the AICPA Code, a nonattest service needs the client to take management
   responsibility, oversee it through a skilled person and accept the results [JOFA-NONATTEST-2016]. IESBA treats
-  hosting or storing an audit client's data as a management responsibility [IESBA-TECH-2023]. A Journal of
+  hosting or storing an audit client's data as a management responsibility [IESBA-TECHREV-2023]. A Journal of
   Accountancy article by AICPA Professional Ethics Division staff says developing or hosting an AI system for an
-  attest client can raise independence concerns [JOFA-ETHICSAI-2026]. No
+  attest client can raise independence concerns [JOFA-ETHAI-2026]. No
   source addresses family offices directly. See advisory-client-accounting-services-24 and
   assurance-acceptance-independence-15.
-- **Client data.** Ask whether consent is needed before client data goes into an AI tool [JOFA-ETHICSAI-2026]. Keep
+- **Client data.** Ask whether consent is needed before client data goes into an AI tool [JOFA-ETHAI-2026]. Keep
   confidential family, financial, legal, tax, estate and security information out of tools the policy does not
   cover [NT-FOAIPOLICY-2026]. Public models may reuse what is submitted [AFS-FOAI-2024]. Citi says solutions that
   cannot guarantee data security are unlikely to be adopted [CITI-AIFO-2026].
@@ -238,7 +238,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   [SEC-EXAMPRI-FY2026].
 - 2025-11-18 (reported 2025-11-20): Asseta AI announces a $4.2M seed round and says it supports more than $10
   billion in assets [CPAPA-ASSETASEED-2025]. Its homepage now shows $125B+; no source reconciles the two [ASSETA-SITE-2026].
-- 2025-12-09: FINRA adds AI agents to its oversight report as an emerging risk [FINRA-OVERSIGHT-2026].
+- 2025-12-09: FINRA adds AI agents to its oversight report as an emerging risk [FINRA-ROR-2026].
 - 2026-03-26: PKF O'Connor Davies announces its collaboration with Asseta AI [PKF-ASSETA-2026].
 - 2026-04-10: Ocorian survey: 72% expect AI's most significant effects on operating models over two to five years; 26% strongly
   agree it will reshape how offices operate within a year [OCORIAN-IFC-2026].
@@ -255,7 +255,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
 - 2026-07-30: Mercer Advisors unveils Aspen's second generation; Compound Planning announces CompoundAI agents
   [MERCER-ASPEN-2026].
 - 2026-08-05: AICPA says developing or hosting AI for an attest client can raise independence concerns
-  [JOFA-ETHICSAI-2026].
+  [JOFA-ETHAI-2026].
 - 2026-09-29: RBC and Campden: half of offices say AI is embedded and essential; cybersecurity is the top near-term
   concern [RBC-CAMPDEN-2026].
 

@@ -678,6 +678,7 @@
   sources:
     - { ref: METZ-EBPAUDITAI-2026, title: "EBPAudit.ai: Employee Benefit Plan Audits by Metz CPA, PLLC", publisher: "Metz CPA, PLLC", type: firm, url: "https://ebpaudit.ai/", date: "2026", access: full, locator: "\"Why Metz CPA\" list item \"AI-assisted workflows\"" }
     - { ref: BELFINT-DOLQ-2024, title: "The 2023 DOL Audit Quality Study: Slight Improvements, but Audit Quality is Still Concerning", publisher: "Belfint, Lyons & Shuman (firm blog)", type: firm, url: "https://employeebenefitplanaudit.belfint.com/2023-dol-audit-quality-study/", date: "2024-03-07", access: full, locator: "strata table under \"Results\"" }
+    - { ref: OATH-2026, title: "Oath | Swear by your numbers (company website)", publisher: "Oath", type: firm, url: "https://www.oathverified.com/", date: "2026-10-16", access: full, locator: "'services' section (client types include employee benefit plans; page undated, retrieval date)" }
   last_reviewed: "2026-10-21"
   notes: >-
     One marketing line on a firm site (page undated, copyright 2026). Kept at C because the page does not say what the

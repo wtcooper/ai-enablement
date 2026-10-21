@@ -291,7 +291,7 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   ACCTODAY-AITHOUGHT-2026; ACCTODAY-BIGYEAR-2026; ACCTODAY-TRENDS-2026; ACCTODAY-CATALYST-2026; ACCTODAY-MAVI-2026;
   ACCTODAY-USECASE-2024; CFODIVE-FRACTIONAL-2026; CFODIVE-XERO-2026; CFOCOM-DUALENTRY-2026; ACCOUNTEX-2026;
   WOODARD-TWR-2025; WOODARD-EP163-2026; BEANCOUNT-REVIEWBURDEN-2026; KARBON-ENGAGE-2026 (scheduled-session listing).
-  Surveys: INTUIT-ACCTTECH-2026; KARBON-SOAI-2026; AFP-PAYFRAUD-2026; TR-FOP-2026.
+  Surveys: INTUIT-ACCTTECH-2026; KARBON-SOAI-2026; AFP-PAYFRAUD-2026; TR-FOPPR-2026.
 - **Not in the YAML:**
   - BILL-AIAMBITION-2026: BILL with NewtonX, *Accounting Firm AI Ambition Survey, vol 4* (200+ firm leaders, fieldwork late 2025), 2026 (page undated), https://www.bill.com/blog/ai-ambition-survey-vol-4-findings
   - CPACOM-CASBENCH-2026: CPA.com and AICPA PCPS, *CAS Benchmark Survey* page (2026 report due December 2026), 2026, https://cpa.com/cas-benchmark-survey

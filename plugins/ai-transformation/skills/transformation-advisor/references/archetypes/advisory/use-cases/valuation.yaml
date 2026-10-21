@@ -224,7 +224,7 @@
     - "Platform subscription and customer-success training (VALUTICO-KRESTON-2025; VALUTICO-ROUSE-2025)"
     - "Existing knowledge of valuation methods; the platform feeds the analyst's judgment"
   risks_and_guardrails:
-    - "IVS requires the valuer to assess and select data and inputs with professional judgement and scepticism, and to document significant data and inputs (IVSC-PERSPECTIVES-2025)"
+    - "IVS requires the valuer to assess and select data and inputs with professional judgement and scepticism, and to document significant data and inputs (IVSC-AI-2025)"
   human_checkpoints:
     - "Analyst selects and justifies multiples and discount-rate inputs"
   role_evolution: "Not stated by the sources."
@@ -246,7 +246,7 @@
       date: "2025-12-10"
       access: full
       locator: "paragraphs 1-4 and quote"
-    - ref: IVSC-PERSPECTIVES-2025
+    - ref: IVSC-AI-2025
       title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
       publisher: "International Valuation Standards Council"
       type: standard-setter
@@ -677,7 +677,7 @@
   solution: >-
     The IVSC Perspectives Paper (July 2025) says some valuers already use ChatGPT or other public AI for parts of
     report writing such as market commentary, and that in other instances report writing may be a fully automated
-    process within a firm (IVSC-PERSPECTIVES-2025). A BVR webinar (November 2025) says it demonstrates drafting
+    process within a firm (IVSC-AI-2025). A BVR webinar (November 2025) says it demonstrates drafting
     valuation report sections with 'case studies from valuation firms' (BVR-TRAINWORKSNOW-2025, summary only,
     paywalled). No firm is named.
   outcomes:
@@ -686,22 +686,22 @@
       figure: "none"
       measures: "No measurement found"
       provenance: self-reported
-      source_ref: IVSC-PERSPECTIVES-2025
+      source_ref: IVSC-AI-2025
   prerequisites:
-    - "Protected AI environment for confidential data (IVSC-PERSPECTIVES-2025)"
-    - "Valuer control over content, materiality and sourcing (IVSC-PERSPECTIVES-2025)"
+    - "Protected AI environment for confidential data (IVSC-AI-2025)"
+    - "Valuer control over content, materiality and sourcing (IVSC-AI-2025)"
   risks_and_guardrails:
-    - "IVSC: the valuer must keep control of content and verify data sources and facts (IVSC-PERSPECTIVES-2025)"
-    - "IVSC flags open or closed AI used without safeguards as a risk to client confidentiality and data-protection compliance, and hallucination (confident but false output) as a critical concern (IVSC-PERSPECTIVES-2025)"
+    - "IVSC: the valuer must keep control of content and verify data sources and facts (IVSC-AI-2025)"
+    - "IVSC flags open or closed AI used without safeguards as a risk to client confidentiality and data-protection compliance, and hallucination (confident but false output) as a critical concern (IVSC-AI-2025)"
     - "The IVSC exposure draft would require significant AI use to be disclosed in the scope of work and report and documented in the engagement file (IVSC-IVSED-2026; BVR-IVSPODCAST-2026)"
   human_checkpoints:
-    - "The valuer keeps control of content and verifies data sources and facts (IVSC-PERSPECTIVES-2025)"
+    - "The valuer keeps control of content and verifies data sources and facts (IVSC-AI-2025)"
   role_evolution: >-
     IVSC says AI can take on straightforward tasks including report writing so valuers can focus on matters needing
-    judgement (IVSC-PERSPECTIVES-2025).
+    judgement (IVSC-AI-2025).
   evidence_grade: C
   sources:
-    - ref: IVSC-PERSPECTIVES-2025
+    - ref: IVSC-AI-2025
       title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
       publisher: "International Valuation Standards Council"
       type: standard-setter
@@ -763,7 +763,7 @@
     standard that flags missing or inconsistent requirements, and an 'adversarial reviewer' that looks for weak spots,
     unsupported assumptions and inconsistencies (BVR-AICPAREPORT-2026). The IVSC dialogue panel (2026-06-25) likewise
     encouraged using AI as a review tool that challenges assumptions (BVR-IVSCDIALOGUE-2026), and the IVSC paper says
-    AI could be used in quality control (IVSC-PERSPECTIVES-2025). (2) Anthropic's 2026-05-05 release lists a
+    AI could be used in quality control (IVSC-AI-2025). (2) Anthropic's 2026-05-05 release lists a
     'Valuation reviewer' among ten agent templates; it checks valuations against comparables, methodology and the
     firm's review standards, ships as plugins for Claude Cowork and Claude Code and as cookbooks for Claude Managed
     Agents, and uses subagents for tasks such as comparables selection or methodology checks; the managed-agent
@@ -819,7 +819,7 @@
       date: "2026-08-05"
       access: full
       locator: "paragraph 3 (AI as a review tool)"
-    - ref: IVSC-PERSPECTIVES-2025
+    - ref: IVSC-AI-2025
       title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
       publisher: "International Valuation Standards Council"
       type: standard-setter
@@ -961,11 +961,11 @@
   prerequisites:
     - "Source financial documents and a reviewing valuer"
   risks_and_guardrails:
-    - "IVSC: valuers must avoid 'black box' situations by keeping full control, and understand the design, limits and fitness of any model they use (IVSC-PERSPECTIVES-2025)"
+    - "IVSC: valuers must avoid 'black box' situations by keeping full control, and understand the design, limits and fitness of any model they use (IVSC-AI-2025)"
     - "The IVSC exposure draft targets opaque tools whose reasoning a valuer cannot readily explain or verify (BVR-IVSPODCAST-2026)"
     - "An accounting firm using such an agent for its own SEC-registrant audit client remains restricted where results will be subject to audit procedures (SEC-RULE2-01-2026)"
   human_checkpoints:
-    - "Valuer reviews the model, assumptions and conclusion; IVSC says the valuer must keep full control (IVSC-PERSPECTIVES-2025)"
+    - "Valuer reviews the model, assumptions and conclusion; IVSC says the valuer must keep full control (IVSC-AI-2025)"
   role_evolution: >-
     The vendor says the valuer focuses on judgment and client advisory (DEALGAUGE-STARTUPHUB-2026).
   evidence_grade: C
@@ -986,7 +986,7 @@
       date: "2026-06-22"
       access: full
       locator: "AI suite list and 'Defensible deal valuations' line"
-    - ref: IVSC-PERSPECTIVES-2025
+    - ref: IVSC-AI-2025
       title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
       publisher: "International Valuation Standards Council"
       type: standard-setter

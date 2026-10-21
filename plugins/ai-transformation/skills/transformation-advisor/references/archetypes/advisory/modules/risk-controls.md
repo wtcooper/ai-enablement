@@ -121,7 +121,7 @@ executive) or SOX lead, or a client buying AI governance help.
    effective gap: only 53% of those auditing AI review operational effectiveness (`#19`).
 10. **"What happens when the vendor updates the model?"** Reveals recertification, rollback and monitoring (`#24`).
 11. **"Where does client data go when your people use AI, and what do engagement letters say?"** Reveals
-    confidentiality exposure; 34% of professionals use AI their organisation has not approved [TR-FOP-2026].
+    confidentiality exposure; 34% of professionals use AI their organisation has not approved [TR-FOPREPORT-2026].
 12. **"How do juniors learn the work if AI drafts the RCM, the request list and the first findings?"** Reveals pipeline
     risk; route detail to professional-services.
 
@@ -151,14 +151,14 @@ than half" less evidence chasing `#04`; Petual says customers "can achieve" 68-8
 **Adoption and readiness (self-selected polls and sponsored surveys)**
 - Gartner poll of 743 audit professionals: 93% use some AI; 60% use it for pre-planning, 60% for drafting issues or
   reports, 30% for testing, 12% for QA reviews [ACCTIMES-GARTNER-2026]. 38% have an AI strategy (press reports differ
-  on the base: 743 polled or 161 CAEs); 54% of 142 CAEs have not started measuring AI value [HELPNET-GARTNER-2026].
+  on the base: 743 polled or 161 CAEs); 54% of 142 CAEs have not started measuring AI value [HELPNET-GARTNERIA-2026].
 - KPMG webcast (about 3,900 leaders): 33% use AI mainly for research, planning and scoping; about 28% for large data
   sets; 51% of SOX and internal-audit functions at 'some pilots or just starting' [KPMG-FUTURESOX-2026].
 - Sikich (222 US audit leaders): 90% use AI; 77% of plans include AI assessments; 82% use external partners
   [SIKICH-IAPRIORITIES-2026]. Wolters Kluwer poll: 17.7% have a formal AI program or broad adoption [CPAPA-IAPOLL-2026].
 - Client side: KPMG (1,013 finance leaders, revenue at least $250M): 42% fully assurance-ready; assurance-ready firms
   report error-reduction improvement 33% versus 6% [KPMG-AIFINANCE-2026]. Grant Thornton (950 leaders): 78% lack strong
-  confidence they could pass an AI governance audit in 90 days [GT-AIIMPACT-2026]; PE leaders: 9% very confident `#17`.
+  confidence they could pass an AI governance audit in 90 days [GT-AISURVEY-2026]; PE leaders: 9% very confident `#17`.
   RSM (1,030 US and Canadian middle-market senior leaders): 67% apply governance controls before pilot or production;
   40% of those raising AI spend take budget from external consulting [CPAPA-RSMMM-2026].
 - Agent risk: 34% acted on an inaccurate agent output; 38% let agents approve or reject transactions; 9% redesigned
@@ -185,12 +185,12 @@ coverage. Baker Tilly warns that speed alone is a poor measure [BAKERTILLY-AIIA-
   IIA-IPPF-2026]. Topical Requirements: Cybersecurity from 2026-02-05, Third-Party from 2026-09-15, Organizational
   Behavior from 2026-12-15 [BAKERTILLY-GAM-2026].
 - **AICPA**: practice aid on AI for financial-statement auditors (2026-10-13; more guidance to follow)
-  [AICPA-AUDITAID-2026]; TQA 9561 on a service organisation's AI in SOC 1 and SOC 2 (by 2026-09-21) [DART-TQA9561-2026].
+  [JOFA-AIPA-2026]; TQA 9561 on a service organisation's AI in SOC 1 and SOC 2 (by 2026-09-21) [DART-TQA9561-2026].
   The Code's confidential-client-information rule means asking whether client consent is needed before client data goes
-  into an AI tool [JOFA-ETHICS-2026].
+  into an AI tool [JOFA-ETHAI-2026].
 - **PCAOB**: no AI-specific standard found; 2024 staff outreach heard that GenAI work gets the same supervision
   [PCAOB-GENAI-2024]. **UK FRC** (2026-03-30): certify a tool per use case, test edge cases, recertify after change; the
-  human stays accountable [FRC-GENAI-2026; FRC-GENAIGUIDE-2026]. A useful model for US advisory, not binding on it.
+  human stays accountable [FRC-GENAINEWS-2026; FRC-GENAI-2026]. A useful model for US advisory, not binding on it.
 - **Other**: NIST AI RMF (the bank case aligned to it, `#19`) [NIST-AIRMF-2024]; DOJ asks how a company manages AI risk
   and "what baseline of human decision-making is used to assess AI" [DOJ-ECCP-2024]; the EU AI Omnibus (Regulation (EU)
   2026/1744, OJ 2026-07-24) moves stand-alone high-risk duties to 2027-12-02 [CUATRECASAS-AIOMNIBUS-2026].
@@ -202,11 +202,11 @@ coverage. Baker Tilly warns that speed alone is a poor measure [BAKERTILLY-AIIA-
   staff hold a rebuttable presumption that such work will be subject to audit procedures [PWC-SECFAQ-2019].
 - Private middle-market clients are often non-SEC, so AICPA rules apply: the client must take management
   responsibility, with a skilled overseer and a written understanding (2016 description) [JOFA-NONATTEST-2016]. The
-  AICPA says building or hosting an AI system for an attest client can raise concerns [JOFA-ETHICS-2026]; IESBA treats
-  hosting an audit client's data as a management responsibility [IESBA-TECH-2023]. No AI-specific ruling exists.
+  AICPA says building or hosting an AI system for an attest client can raise concerns [JOFA-ETHAI-2026]; IESBA treats
+  hosting an audit client's data as a management responsibility [IESBA-TECHREV-2023]. No AI-specific ruling exists.
 - Firms in alternative practice structures (attest firm plus a separately owned advisory arm: Baker Tilly, Grant
   Thornton [BAKERTILLY-AIIA-2026; GT-CBIZ-2026]) face a rule in flux; the AICPA ethics committee was still discussing a
-  second exposure draft in August 2026 [JOFA-PEEC-APS2-2026]. Route ownership questions to professional-services.
+  second exposure draft in August 2026 [JOFA-PEEC-2026]. Route ownership questions to professional-services.
 
 **Design guardrails seen in deployments**
 - Reviewer on every conclusion; ambiguous items routed as open items; reasoning log beside evidence (`#06`).
@@ -234,7 +234,7 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
   that work to technology [IIA-UPSKILL-2026].
 - **Staffing signals.** Functions reporting staff cuts rose from 11% (2024) to 18% (2025); 11% to 28% at privately held
   ones (n = 29); the Pulse cites budgets, not AI [IIA-PULSE-2026]. Juniors overseeing AI too early may approve bad output
-  [ICAEW-VOICES-2026]; the FRC names erosion of human knowledge as a risk it did not address [FRC-GENAIGUIDE-2026].
+  [ICAEW-VOICES-2026]; the FRC names erosion of human knowledge as a risk it did not address [FRC-GENAI-2026].
 - **Provider spend.** Havertys expects outside spend to move from testing hours to advisory (`#14`).
 
 ## 8. Frontier
@@ -243,7 +243,7 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
 - 2026-02-23: COSO publishes its generative-AI control guidance [COSO-GENAI-2026].
 - 2026-03-03 and 2026-06-03: Protiviti and Cherry Bekaert commit to Fieldguide's agentic platform (`#06`, `#13`).
 - 2026-03-09 to 11: the IIA's GAM conference leads on agentic AI in audit [IIA-GAM-2026].
-- 2026-03-30: FRC publishes the first audit-regulator guidance on generative and agentic AI [FRC-GENAI-2026].
+- 2026-03-30: FRC publishes the first audit-regulator guidance on generative and agentic AI [FRC-GENAINEWS-2026].
 - 2026-04-24: Petual raises $20M and names Navan as a customer `#15`.
 - 2026-08-28: RSM announces Beacon as live for internal-audit control testing `#06`.
 - 2026-09-02: Grant Thornton Advisors' CEO expects AI governance demand to grow; CBIZ deal to close Q4 2026 [GT-CBIZ-2026].
@@ -270,7 +270,7 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
 - **"Testing everything means nothing is missed."** No: an audit still gives reasonable, not absolute, assurance; say so
   before selling full-population work [CPAPA-FULLPOP-2026].
 - **"Independence stops us selling this anyway."** It stops it for your own audit clients; most advisory clients are
-  not. But building or hosting AI for an attest client may itself be a new nonattest service [JOFA-ETHICS-2026].
+  not. But building or hosting AI for an attest client may itself be a new nonattest service [JOFA-ETHAI-2026].
 - **"Our clients' AI is governed; they have policies."** Safe is not effective: only 53% of those auditing AI test
   operational effectiveness (`#19`), and 29% of finance leaders track where AI fails [KPMG-AIFINANCE-2026].
 - **"Agents will take our co-sourcing revenue."** Some will: Havertys starts with work it outsourced (`#14`) and vendors
@@ -283,18 +283,18 @@ Full details (publisher, URL, date, locator) are in the YAML. Keys cited here bu
 details come from the wave-5 research files (practice, discourse, governance, independence-pricing, disruption).
 
 - Firms: KPMG-SOX2030-2026, KPMG-FUTURESOX-2026, KPMG-IPO-2026, KPMG-AIFINANCE-2026, GT-INFERENCEGAP-2026,
-  GT-AIIMPACT-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*
+  GT-AISURVEY-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*
   (Microsoft, FY26 innovation story, 2026).
-- Surveys and polls: ACCTIMES-GARTNER-2026, HELPNET-GARTNER-2026, SIKICH-IAPRIORITIES-2026, CPAPA-IAPOLL-2026,
+- Surveys and polls: ACCTIMES-GARTNER-2026, HELPNET-GARTNERIA-2026, SIKICH-IAPRIORITIES-2026, CPAPA-IAPOLL-2026,
   CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025* (AuditBoard/Optro, 2025-11-12), IIA-PULSE-2026*
-  (Internal Audit Foundation, 2026-02), TR-FOP-2026* (Thomson Reuters report page, 2026-06-22).
+  (Internal Audit Foundation, 2026-02), TR-FOPREPORT-2026* (Thomson Reuters report page, 2026-06-22).
 - Community and press: IAC-SOXCHANGE-2026, IAC-SOXRELIANCE-2026, CPAPA-5Q-2026, CPAPA-AGENTSCLOSE-2026,
   CPAPA-FULLPOP-2026, ICAEW-VOICES-2026* (ICAEW, 2026-06-10).
 - Standard-setters, regulators, professional bodies: COSO-GENAI-2026, IIA-AIFW-2024, IIA-IPPF-2026, IIA-GAM-2026,
-  IIA-UPSKILL-2026, AICPA-AUDITAID-2026, DART-TQA9561-2026, JOFA-ETHICS-2026, PCAOB-GENAI-2024, FRC-GENAI-2026,
-  FRC-GENAIGUIDE-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024* (NIST, 2024-07-26), CUATRECASAS-AIOMNIBUS-2026*
+  IIA-UPSKILL-2026, JOFA-AIPA-2026, DART-TQA9561-2026, JOFA-ETHAI-2026, PCAOB-GENAI-2024, FRC-GENAINEWS-2026,
+  FRC-GENAI-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024* (NIST, 2024-07-26), CUATRECASAS-AIOMNIBUS-2026*
   (Cuatrecasas, 2026-07-24), PWC-SECFAQ-2019* (SEC staff FAQ via PwC Viewpoint, 2019-06-27), JOFA-NONATTEST-2016*
-  (Journal of Accountancy, 2016-11), IESBA-TECH-2023* (IESBA, 2023-04-11), JOFA-PEEC-APS2-2026* (Journal of
+  (Journal of Accountancy, 2016-11), IESBA-TECHREV-2023* (IESBA, 2023-04-11), JOFA-PEEC-2026* (Journal of
   Accountancy, 2026-08-10), ACFE-CANADA-2026* (ACFE, scheduled 2026-11-15).
 - Academic and benchmarks: STANFORD-LEGALAI-2024* (arXiv, 2024-05-30), HBS-JAGGED-2023* (HBS, 2023-09),
   VALS-FAB-2026* (Vals AI leaderboard, read 2026-10-21; leaderboard dated 2026-06-04).

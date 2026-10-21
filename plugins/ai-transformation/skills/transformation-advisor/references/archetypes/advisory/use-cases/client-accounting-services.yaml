@@ -1444,7 +1444,7 @@
   problem: >-
     About one-third of lawyers, accountants and compliance professionals say they use unsanctioned AI tools, only a
     minority of firms have a written AI policy or strategy, and staff can now build their own automations, dashboards
-    and apps ('vibe coding') that may not have been reviewed (TR-FOP-2026; KARBON-SOAI-2026; JOFA-CHECKLIST-2026). A tool that searches all client files can pull a figure
+    and apps ('vibe coding') that may not have been reviewed (TR-FOPPR-2026; KARBON-SOAI-2026; JOFA-CHECKLIST-2026). A tool that searches all client files can pull a figure
     from the wrong client (CPAPA-SETTLE-2026).
   solution: >-
     The firm names an AI lead or committee, keeps a list of approved tools, defines permitted and prohibited uses,
@@ -1471,7 +1471,7 @@
       figure: "about one-third"
       measures: "Lawyers, accountants and compliance professionals saying they turn to unsanctioned AI tools (Thomson Reuters Future of Professionals 2026, global survey of 1,800 professionals; the release gives no exact percentage)"
       provenance: vendor-published
-      source_ref: TR-FOP-2026
+      source_ref: TR-FOPPR-2026
   prerequisites:
     - "Enterprise-grade AI tools with documented data handling"
     - "Training and signed acknowledgements"
@@ -1495,7 +1495,7 @@
   sources:
     - { ref: KARBON-SOAI-2026, title: "Karbon State of AI in Accounting 2026 Report", publisher: "Karbon Magazine", type: survey, url: "https://karbonhq.com/resources/state-of-ai-accounting-2026", date: "2026-01-23", access: full, locator: "paragraph 2 and highlights" }
     - { ref: JOFA-AIPOLICY-2026, title: "Drafting an AI policy that actually works", publisher: "Journal of Accountancy (Aon)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/jul/drafting-an-ai-policy-that-actually-works/", date: "2026-07-01", access: full, locator: "building blocks; 16% sidebar" }
-    - { ref: TR-FOP-2026, title: "Future of Professionals 2026", publisher: "Thomson Reuters", type: survey, url: "https://www.thomsonreuters.com/en/press-releases/2026/june/ai-is-ready-but-firms-are-not-how-falling-behind-on-ai-implementation-is-costing-clients-and-talent", date: "2026-06-22", access: full, locator: "key findings" }
+    - { ref: TR-FOPPR-2026, title: "Future of Professionals 2026", publisher: "Thomson Reuters", type: survey, url: "https://www.thomsonreuters.com/en/press-releases/2026/june/ai-is-ready-but-firms-are-not-how-falling-behind-on-ai-implementation-is-costing-clients-and-talent", date: "2026-06-22", access: full, locator: "key findings" }
     - { ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "competence and due care, and confidentiality sections" }
     - { ref: IRS-OPR-2026, title: "Issue 2026-19: Introductory Guidelines for Responsible AI Use in Federal Tax Practice", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://www.irs.gov/pub/opr-taxpros/issue-number-2026-19-introductory-guidelines-for-responsible-ai-use-in-federal-tax-practice.pdf", date: "2026-06-24", access: full, locator: "Circular 230 section 10.36; item 6; best practices list" }
     - { ref: FTC-SAFEGUARDS-2026, title: "16 CFR Part 314, Standards for Safeguarding Customer Information (current text)", publisher: "Federal Trade Commission via eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314", date: "2026-10-20", access: full, locator: "314.2 financial institution example (viii) and (c)-(d); 314.4(a), (f), (i) (date is access date for the current text)" }
