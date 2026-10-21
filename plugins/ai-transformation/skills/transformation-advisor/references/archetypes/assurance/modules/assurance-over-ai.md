@@ -225,8 +225,8 @@ accreditation decisions.
 - **2026-07** AI Omnibus adopted and published (dates differ by source) [AG-OMNIBUS-2026, SIG-AIACT-2026]; IAASB adds AI assurance to its Technology Catalog [IAASB-CATALOG-2026].
 - **2026-08-27** KPMG aIQ Capture is the first Big Four AIUC-1 certification [AIUC-KPMG-2026].
 - **2026-09-22 / 24** KPMG UK markets AI governance assurance [KPMGUK-GOVAI-2026]; KPMG US sees a "new mandate" to assure AI systems [K-SOX30].
-- **2026-09-28** UK consortium working on code of ethics, skills framework, information-access map [TECHUK-ROADMAP-2026].
 - **2026-09-24** AIUC publishes the MSCI case (`#25`) [AIUC-MSCI-2026].
+- **2026-09-28** UK consortium working on code of ethics, skills framework, information-access map [TECHUK-ROADMAP-2026].
 - **2026-10-13** AICPA practice aid; more sections promised [AICPA-PA]. **2026-10-15** AIUC developer-deployer guidance [AIUC-Q4-2026]. **2026-10-19** AICPA and AIUC joint SOC 2 plus AIUC-1 offering (`assurance-soc-attestation-17`).
 - **End 2026 at the earliest** harmonised AI Act standards [DQS-OMNIBUS-2026]. **2027** first AI-related material weaknesses expected (KPMG forecast) [K-SOX30]. **2027-12-02 / 2028-08-02** EU high-risk obligations apply [AG-OMNIBUS-2026].
 
@@ -247,7 +247,7 @@ accreditation decisions.
 ## 10. Mid-market firms
 
 This section covers auditors of private, mid-market companies and the regional firms that might sell AI assurance.
-- **Area 1 is the near-term work.** The practice aid's first part (nonauthoritative) guides financial-statement auditors of any size to understand the client's AI in reporting and controls, consider it at acceptance and continuance, assess AI-specific risks (data, model, hallucination, explainability, bias, drift, AI-enabled fraud) and respond by testing outputs, AI controls or AI-related IT controls, with a service auditor's report and AI-related representations when AI is bought [AICPA-PA, AT-AICPAPA-2026] (`#01`-`#08`). The ASB sets private-company audit standards and peer review monitors compliance [CFODIVE-AICPAPA-2026]; no ASB AI standard was found.
+- **Area 1 is the near-term work.** The practice aid's first part (nonauthoritative) guides financial-statement auditors, including those of private companies, to understand the client's AI in reporting and controls, consider it at acceptance and continuance, assess AI-specific risks (data, model, hallucination, explainability, bias, drift, AI-enabled fraud) and respond by testing outputs, AI controls or AI-related IT controls, with a service auditor's report and AI-related representations when AI is bought [AICPA-PA, AT-AICPAPA-2026] (`#01`-`#08`). The ASB sets private-company audit standards and peer review monitors compliance [CFODIVE-AICPAPA-2026]; no ASB AI standard was found.
 - **Evidence arrives from outside.** Clients may hand their auditor a third-party agent evaluation (`#25`, larger-company example) or an AIUC-1 report; the developer-deployer matrix shows what a deploying client must evidence itself (`#26`).
 - **Area 2 at regional firms.** No mid-market CPA firm is named delivering the joint SOC 2 plus AIUC-1 offering (`assurance-soc-attestation-17`); one regional firm's job posting pairs ISO 42001 advisory with SOC work (`assurance-soc-attestation-18`).
 - **Probes:** "On your last private-company audit where the client used AI in close or controls, what did you do at acceptance and risk assessment, and what did you ask for beyond a SOC report?" "How would you decide whether to test an AI-operated control's outputs or the control itself, and who reviews that choice?"

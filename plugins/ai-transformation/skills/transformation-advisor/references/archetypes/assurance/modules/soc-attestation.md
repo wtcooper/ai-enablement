@@ -231,19 +231,19 @@ responses to deviations. Customers decide reliance and test CUECs.
 
 - **2025-11-19** Vanta launches its "Agentic Trust Platform" and AI Agent 2.0 [VANTA-HNS-2025].
 - **2026-01** KPMG UK introduces a reasonable-assurance "SOC 2+" opinion over AI governance (assurance-over-AI module) [K-UKCA].
-- **2026-02-03** Schellman named first accredited AIUC-1 auditor; first certification completed (update 2 Apr) [AIUC-SCHELLMAN-2026].
 - **2026-02-01** AICPA SOC 2 Working Group chair warns that "fast and easy" may cost quality; a SOC Quality Center badge is being explored [JOFA-FAST].
+- **2026-02-03** Schellman named first accredited AIUC-1 auditor; first certification completed (update 2 Apr) [AIUC-SCHELLMAN-2026].
 - **2026-02-26 / 03-25** ASB attestation exposure drafts (effective 2029-06-15 if finalised) [JOFA-ATTEST-2026].
 - **2026-03-19 to 04-23** Delve: anonymous allegations, denied; Delve apologises and says it will rebuild its auditor network (3 Apr); Y Combinator parts ways; named customers move [DEEPDELVER-2026, DELVE-RECORD-2026, TC-DELVEYC-2026, TC-CONTEXT-2026].
 - **2026-03-20** Vanta launches compliance, third-party-risk and customer-trust agents [VERDICT-VANTA-2026].
 - **2026-04-06 to 06-01** AICPA ethics guidance, podcast, Peer Review alert and reviewer outreach [JOFA-SOCETH-2026, JOFA-PODSOC, JOFA-PRB].
+- **2026-07-14 / 10-15** AIUC publishes re-certification guidance, then consolidates third-party testing into one requirement per principle [AIUC-Q3-2026, AIUC-Q4-2026].
 - **2026-08-04** Drata releases AI Agent Governance in limited availability; Chiaro publishes its SOC 2 method [DRATA-AGENTGOV-2026, HN-CHIARO-2026].
 - **2026-08-30** CSA note: auditors improvise AI evidence requests without AI criteria [CSA-SOC2].
 - **2026-09-11** TQA 9561 on AI in SOC 1 and SOC 2 [AICPA-TQA9561-2026, SD-TQA].
 - **2026-09-17** Comp AI raises a $34M Series A [TC-COMPAI-2026].
 - **2026-09-22** KPMG expects a TSC restructuring with AI considerations [KPMG-SOC-2026].
 - **2026-09-23** Linford: AI made compliance cheaper, not assurance [LINFORD-ASSURE-2026].
-- **2026-07-14 / 10-15** AIUC publishes re-certification guidance, then consolidates third-party testing into one requirement per principle [AIUC-Q3-2026, AIUC-Q4-2026].
 - **2026-10-13** Fieldguide scheduled a live demonstration of agents running a SOC 2 engagement [FIELDGUIDE-WEBINAR-2026].
 - **2026-10-19** AICPA and AIUC announce the joint SOC 2 plus AIUC-1 offering; full launch "expected" early 2027 [AICPA-AIUCPR-2026].
 - **2026-11-10 to 11-12** VantaCon, billed as "the AI governance event" (scheduled) [VANTACON-2026].
@@ -266,7 +266,7 @@ responses to deviations. Customers decide reliance and test CUECs.
 
 This section covers small and mid-size CPA firms with SOC practices. Each example names its kind of firm.
 - **Quality pressure lands on small firms.** Tool vendors "numbering in the dozens", some with referral networks of small CPA firms, drive "fast and easy" expectations [JOFA-FAST]; peer review compares engagements when risk is elevated [JOFA-PRB]. In Tennessee's 2025 peer review report, one of two SOC engagements reviewed was nonconforming (too few to generalise) [TSCPA-PEERREVIEW-2025].
-- **AI assurance is arriving through SOC practices.** Schellman (described in the joint release as a top-50 CPA firm focused on IT compliance) was the first accredited AIUC-1 auditor; no mid-market firm is named in the joint offering (`#17`). Search-only leads, not proof points: Sensiba LLP's reported provisional AIUC-1 accreditation [SENSIBA-AIUC1-2026] and Baker Tilly's expanded Fieldguide use across SOC, PCI, HITRUST, ISO, FedRAMP, SOX and internal audit (27 May 2026) [BAKERTILLY-FIELDGUIDE-2026].
+- **AI assurance is arriving through SOC practices.** Schellman (described in the joint release as a top-50 CPA firm focused on IT compliance) was the first accredited AIUC-1 auditor; no mid-market firm is named in the joint offering (`#17`). A search-only lead, not a proof point: Sensiba LLP's reported provisional AIUC-1 accreditation [SENSIBA-AIUC1-2026]. Baker Tilly (a large PE-backed firm, not mid-market) says it expanded Fieldguide use across risk advisory, including SOC, PCI, HITRUST, ISO, FedRAMP, SOX and internal audit (firm release, 27 May 2026; no figures) [BAKERTILLY-FIELDGUIDE-2026].
 - **Advisory and attest meet.** A privately owned regional firm (Kaufman Rossin, 700+ staff) hires for AI governance advisory alongside SOC 1, 2 and 3 work (`#18`); the independence analysis comes first.
 - **Probes:** "Have clients that build or deploy AI agents asked for SOC 2 plus something for the AI? What did you say, and who would do the technical testing?" "If a client brings an AIUC-1 evaluation report to your SOC 2 examination, what would you accept as evidence and what would you retest?" "Would a peer reviewer see the same engagement design across your AI clients?"
 
@@ -296,4 +296,4 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   - SOC2AUD-COST-2026 (SOC2Auditors.org lead-generation directory, 2026-10-05, https://soc2auditors.org/soc-2-audit-cost/).
   - SCHELLMAN-2026 (Schellman blog index, accessed 2026-10, https://www.schellman.com/blog).
   - CPN-WEEDS-2026 (Compliance Podcast Network, show notes only, 2026-04-01, https://compliancepodcastnetwork.net/compliance-into-the-weeds-ai-driven-soc-audits-and-the-growing-trust-gap/).
-  - Added 2026-10-21: AIUC-Q3-2026 and AIUC-Q4-2026 (AIUC standard updates, 2026-07-14 and 2026-10-15, https://www.aiuc-1.com/research/2026-q3-standard-update and https://www.aiuc-1.com/research/2026-q4-standard-update; in assurance-over-ai YAML); SCHELLMAN-AIGOV-2026 (Schellman, *2026 State of AI Governance*, landing page only, undated, https://www.schellman.com/whitepaper/2026-state-of-ai-governance); TSCPA-PEERREVIEW-2025 (Tennessee Society of CPAs peer review report 2025, 2026-03-31, https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf); BAKERTILLY-FIELDGUIDE-2026 (Baker Tilly via Business Wire, 2026-05-27, search-only, https://www.bakertilly.com/news/baker-tilly-advances-ai-enabled-assurance-with-fieldguide).
+  - Added 2026-10-21: AIUC-Q3-2026 and AIUC-Q4-2026 (AIUC standard updates, 2026-07-14 and 2026-10-15, https://www.aiuc-1.com/research/2026-q3-standard-update and https://www.aiuc-1.com/research/2026-q4-standard-update; in assurance-over-ai YAML); SCHELLMAN-AIGOV-2026 (Schellman, *2026 State of AI Governance*, landing page only, 2026 (year from title; HTTP last-modified 2026-10-15), https://www.schellman.com/whitepaper/2026-state-of-ai-governance); TSCPA-PEERREVIEW-2025 (Tennessee Society of CPAs peer review report 2025, 2026-03-31, https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf); BAKERTILLY-FIELDGUIDE-2026 (Baker Tilly news release, 2026-05-27, opened 2026-10-21, https://www.bakertilly.com/news/baker-tilly-advances-ai-enabled-assurance-with-fieldguide).
