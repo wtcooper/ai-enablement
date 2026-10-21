@@ -58,8 +58,8 @@ AI evidence is about this layer. Discuss it before any agent is planned.
 
 How hard it is, from the sources: manual data cleanup is the top advisory blocker (30%), firms run about 10 apps and 41%
 say they are fully integrated [INTUIT-ACCTTECH-2026]; data quality is the top barrier for large finance functions
-(36%) [KPMG-AIFINANCE-2026] and for middle-market companies (34%) [RSM-MMAI-2026; CPAPA-RSMMM-2026]. Targets with little deal
-experience struggle to pull data however fast the adviser's tools are [FORVIS-QOE-2026]. Firm-hosted data for an audit
+(36%) [KPMG-AIFINANCE-2026] and for middle-market companies (34%) [RSM-MMAI-2026; CPAPA-RSMMM-2026]. AI-assisted diligence teams
+may still be held up by targets with limited transaction experience [FORVIS-QOE-2026]. Firm-hosted data for an audit
 client raises an independence question too ([guardrails.md](guardrails.md) §3).
 
 ## 4. Where the work types cluster

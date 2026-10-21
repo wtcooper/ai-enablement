@@ -17,11 +17,12 @@ keys in brackets resolve in [sources.md](sources.md).
 
 ## 1. Headlines
 
-- **Use is near-universal; embedding is not.** Vendor-run practitioner surveys put AI use at 88-98% of firms, but 30%
+- **Use is near-universal; embedding is not.** Vendor-run practitioner surveys put AI use at 88-98% of respondents, but 30%
   say AI is embedded as the default and 21% have an AI policy or strategy [INTUIT-ACCTTECH-2026; KARBON-SOAI-2026].
   The gap between use and an owned, reviewed workflow is the main stage discriminator.
 - **The same gap exists on the client side.** Among AI-using middle-market companies, 86% have integrated AI at least
-  partly and 36% have it fully embedded in core processes [RSM-MMAI-2026; CPAPA-RSMMM-2026].
+  partly [RSM-MMAI-2026; CPAPA-RSMMM-2026] and 36% have it fully embedded across core processes (figure on
+  [RSM's survey page](https://rsmus.com/insights/services/digital-transformation/rsm-middle-market-ai-survey.html), not the release; read 2026-10-21).
 - **CAS has the most evidence and the only grade A.** An independent field study links genAI use in SME bookkeeping
   with a shorter close and more granular ledgers (associations) [STANFORD-JAR-2026]. Most other figures are vendor
   benchmarks or small-firm case studies.
@@ -47,9 +48,9 @@ All are sponsored by vendors or firms, and respondent pools skew toward adopters
 | Professionals using AI weekly; organisation falls short of AI's potential | 74%; 91% | Thomson Reuters Institute, March-April 2026, 1,816 professionals in 62 countries [TR-FOPPR-2026] |
 | Use of AI their organisation has not approved | 34% | Same survey, report page [TR-FOPREPORT-2026] |
 | AI the top ethical challenge | 61% (32% in 2024) | ACCA, October 2026, 1,178 in 135 countries [ACCA-ETHICS-2026] |
-| Internal audit: any AI use; for pre-planning; for testing | 93%; 60%; 30% | Gartner poll of 743 audit professionals, as reported [ACCTIMES-GARTNER-2026] |
-| Anti-fraud: AI or ML in analysis; genAI as a tool; plan to adopt genAI | 25% (18% in 2024); 16%; 58% | ACFE with SAS, March 2026, 713 respondents [ACFE-TECHBENCH-2026] |
-| FP&A: genAI in forecasting; ML in forecasting | 21%; 12% | FP&A Trends survey sponsored by OneStream, July 2026, 475 respondents [ONESTREAM-FPATRENDS-2026] |
+| Internal audit: any AI use; for pre-planning; for testing | 93%; 60%; 30% | Gartner webinar poll of 743 audit professionals, as reported [ACCTIMES-GARTNER-2026] |
+| Anti-fraud: AI or ML in anti-fraud programmes; genAI as a tool; plan to adopt genAI | 25% (18% in 2024); 16%; 58% | ACFE with SAS, March 2026, 713 respondents [ACFE-TECHBENCH-2026] |
+| FP&A: teams using genAI; ML in forecasting | 21%; 12% | FP&A Trends survey sponsored by OneStream, July 2026, 475 respondents [ONESTREAM-FPATRENDS-2026] |
 | Dealmakers: AI regularly embedded in diligence | 50% | Datasite, July 2026, 1,000 dealmakers [DATASITE-NEWDEALTEAM-2026] |
 | Valuation practitioners expecting AI to change their work "significantly" | 73%, with usage low (sample not visible) | BVR polls, 2025, summary only [BVR-POLLS-2025] |
 | Family offices using AI for operations or investment analysis | 22% (13% in 2024) | Citi, 2025 report, sample not on the page [CITI-AIFO-2026] |
@@ -62,9 +63,9 @@ Thomson Reuters release and report page give slightly different client-side figu
 
 | What it measures | Result | Who measured, when, sample |
 |---|---|---|
-| Middle-market AI integration | 86% partly or fully integrated; 36% fully embedded; 54% say AI exceeded ROI expectations | RSM, March 2026, 1,030 AI-using leaders in the US and Canada (RSM sells consulting) [RSM-MMAI-2026; CPAPA-RSMMM-2026] |
+| Middle-market AI integration | 86% partly or fully integrated; 36% fully embedded (RSM survey page, see §1); 54% say AI exceeded ROI expectations | RSM, March 2026, 1,030 AI-using leaders in the US and Canada (RSM sells consulting) [RSM-MMAI-2026; CPAPA-RSMMM-2026] |
 | Barriers to scaling | Data quality 34%, security and privacy 30%, legacy integration 28%, talent 28% | Same [RSM-MMAI-2026; CPAPA-RSMMM-2026] |
-| Large-company finance: active AI use | 30% (2024) to 75% (March 2026); 71% say AI meets or exceeds ROI expectations | KPMG, 1,013 finance leaders, revenue $250M+ [KPMG-AIFINANCE-2026] |
+| Large-company finance: active AI use | 30% (2024) to 75% (March 2026); 71% say AI meets or exceeds ROI expectations | KPMG, March 2026, 1,013 finance leaders, revenue $250M+ ($500M+ in the US) [KPMG-AIFINANCE-2026] |
 | Assurance readiness | 42% fully assurance-ready; 29% track where AI adoption fails; error-reduction improvement 33% vs 6% for assurance-ready organisations | Same [KPMG-AIFINANCE-2026] |
 | Finance AI implementation slower than expected | 63% in 2025; forecasting among the lowest-rated uses | Gartner [GARTNER-AIREPORTCARD-2026] |
 | Clients' view of providers | 78% rate AI-enabled quality very important or essential; 6% say most providers deliver it; 32% will reconsider relationships within 12 months | Thomson Reuters, June 2026 (legal and accounting) [TR-FOPPR-2026] |
@@ -81,7 +82,7 @@ Status words are the sources' own. "Announced" is not "in production".
 |---|---|---|---|
 | RSM (top-10 mid-market) | $1B multiyear AI and digital-core investment; Microsoft 365 Copilot to nearly 20,000 professionals | Firm-reported | [RSM-IMPACT-2026] |
 | RSM | Beacon, an AI-guided internal-audit testing platform with Andera | Announced as live, 2026-08-28 | [ACCTODAY-RSMBEACON-2026] |
-| Grant Thornton Advisors (PE-backed) | $1B over three years; Copilot to 13,500+ people; "as many as seven tools each quarter" | Announced; CEO statement | [GT-1B-2025; GT-CBIZ-2026] |
+| Grant Thornton Advisors (PE-backed) | $1B over three years; Copilot rolling out to 13,500+ people; "as many as seven tools each quarter" | Announced; CEO statement | [GT-1B-2025; GT-CBIZ-2026] |
 | CBIZ | Agent-native operating platform on Microsoft Foundry; training for 9,500+ | Announced | [CBIZ-MICROSOFT-2026] |
 | CLA (Top 20) | Firm-trained model with Digits for its CAAS practice, rolling out over three years | Announced | [ACCTODAY-CLA-2026] |
 | Cherry Bekaert, Aprio, Protiviti | Fieldguide as agentic platform for internal-audit and risk work | Committed in 2026 | risk-controls `#06`, `#13` |

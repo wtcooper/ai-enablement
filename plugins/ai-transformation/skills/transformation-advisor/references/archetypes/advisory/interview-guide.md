@@ -72,8 +72,8 @@ These recur in every module and change what is possible, so ask them in the firs
 
 1. **Who is the client?** "List the advisory and CAS clients that are also attest clients. Which regime applies (SEC,
    AICPA, IESBA), and who signs off when a new service is added?" Listen for a system, not memory. A 2016 account
-   describes a firm whose systems would not issue a client number until independence was cleared
-   [JOFA-NONATTEST-2016]. Detail: [guardrails.md](guardrails.md) §3.
+   describes a firm whose billing system would not assign a client number until the engagement was entered in the
+   independence-monitoring system [JOFA-NONATTEST-2016]. Detail: [guardrails.md](guardrails.md) §3.
 2. **Where does client data go?** "Which AI tools touch client data, on which plan tier, who approved them, and what do
    engagement letters say about AI?" The AICPA Code means asking whether client consent is needed first
    [JOFA-ETHAI-2026]; three in five accountants say clients ask for proof of AI data protection always or frequently,
@@ -106,8 +106,8 @@ Use these in addition to each phase file's question bank.
 - "If the recurring work took half the hours, what would happen to fees, clients per person and hiring?" (Fixed fee
   66% and hourly 60% still dominate in one survey of 200+ firm leaders [BILL-AIAMBITION-2026].)
 - "Which of your services would AI threaten, change a lot, or mainly help?" ([disruption.md](disruption.md) §8)
-- "Where are your clients putting their consulting and AI budget?" (Among AI-using middle-market leaders raising AI
-  spend, 40% take budget from external consulting [CPAPA-RSMMM-2026].)
+- "Where are your clients putting their consulting and AI budget?" (Among middle-market companies raising AI spend,
+  40% report reallocating budget from external consulting [CPAPA-RSMMM-2026].)
 - "Has anyone approached you about outside capital, and what would it change in what you can sell to audit clients?"
   ([economics.md](economics.md) §7)
 
@@ -172,7 +172,7 @@ Use these in addition to each phase file's question bank.
 
 | Term | Meaning | Note |
 |---|---|---|
-| CAS, CAAS | Client accounting (and advisory) services: outsourced or co-sourced financial operations | The base many firms grow advisory from |
+| CAS, CAAS | Client accounting (and advisory) services: outsourced or co-sourced financial operations | A base for wider advisory (Withum grew its advisory from CAS) |
 | Fractional CFO; controllership | A part-time finance lead; senior accounting oversight | Management-function limits for audit clients |
 | Close; package; flux | Month-end close; the reporting pack; period-on-period movement analysis | Where CAS and FP&A meet |
 | RCM; ITGCs; PBC | Risk and control matrix; IT general controls; documents "provided by client" | Risk and controls |
@@ -181,7 +181,7 @@ Use these in addition to each phase file's question bank.
 | Add-backs; NWC; debt-like items | Normalizing adjustments; net working capital; items treated as debt in the price | Stay human decisions |
 | PPA; Level 3; DLOM | Purchase price allocation; fair value from unobservable inputs; discount for lack of marketability | Valuation |
 | IVS; USPAP; AO-41 | International Valuation Standards; US appraisal standards; the 2026 advisory opinion on AI | Valuation duties |
-| Rule 702; proposed Rule 707 | Expert reliability rule; proposed rule on machine-generated evidence | Forensic |
+| Rule 702; proposed Rule 707 | Expert reliability rule; proposed rule on machine-generated evidence (published draft withdrawn May 2026, revised draft under study) | Forensic |
 | CPM; driver-based model | Planning software; a model tied to operating drivers | FP&A |
 | Principals; alternatives administration | The family members an office serves; capital calls, distributions, K-1s | Private client |
 | APS | Alternative practice structure: an investor-backed advisory entity beside a licensed CPA firm | Sets what can be sold to attest clients |

@@ -1,6 +1,6 @@
 # Individual and small-business return preparation (tax)
 
-Sources checked 2026-10-17; widened for mid-market firms and owner-managed clients 2026-10-21 (§10). Use cases live in `../use-cases/compliance-individual-business.yaml` (31 entries). Ids are
+Sources checked 2026-10-17; mid-market firms and owner-managed clients added 2026-10-21 (§10). Use cases live in `../use-cases/compliance-individual-business.yaml` (31 entries). Ids are
 shortened here: `#05` means `tax-compliance-individual-business-05`; other modules' ids are in full. Source keys in
 brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §11. **Evidence is thin.** One entry is
 grade A (`#05`), and it rests on a single vendor-published pilot: OpenAI's account of 7,000 returns in the Crete

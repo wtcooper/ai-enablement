@@ -1,6 +1,6 @@
 # Research and advisory (tax)
 
-Sources checked 2026-10-17; widened for mid-market firms and owner clients 2026-10-21 (§10). Use cases live in
+Sources checked 2026-10-17; mid-market firms and owner clients added 2026-10-21 (§10). Use cases live in
 `../use-cases/research-advisory.yaml` (28 entries).
 Ids are shortened here: `#05` means `tax-research-advisory-05`; other modules' ids are in full. Source keys in
 brackets are in the YAML or in §11.
@@ -145,7 +145,7 @@ Ask tax partners, research or national-office leads, in-house tax directors and 
   CoCounsel users [CPAPA-TR-2026].
 
 **Quality (independent unless stated)**
-- Vals Tax Agent Bench (page of 2026-10-20): best model 49.19% fully correct and citation-adjusted on 193 private
+- Vals Tax Agent Bench (read 2026-10-16; headline unchanged on the 2026-10-20 page): best model 49.19% fully correct and citation-adjusted on 193 private
   corporate tax research questions; best by category: rule and source lookup 66.67%, current and temporal 66.67%, forms
   and filings 40.00%, controversy and precedence 36.67% [VALS-TAXAGENT-2026]. Simple tax Q&A no longer separates models:
   Vals archived TaxEval v2 as saturated, with a top score of 80.38% [VALS-TAXEVAL-2026].

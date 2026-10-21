@@ -24,7 +24,7 @@ to AI;** every margin figure below is practitioner testimony or a company claim.
 | CAS | Recurring, mostly fixed monthly fee or subscription, by service level | The JofA states 90% of CAS practices sell fixed-fee recurring services, naming no source [JOFA-CASTIPS-2025] |
 | Fractional CFO and controllership | Time-based in the one source | The fractional CFO CFO Dive interviewed bills hourly [CFODIVE-FRACTIONAL-2026] |
 | Risk and controls | Co-sourced or outsourced testing hours; readiness and governance projects | 28% of companies used outsourced providers for SOX testing [KPMG-SOX2030-2026] |
-| Transactions | A price per QoE or diligence project | List prices from $1,000 (AI-native self-service) to a broker's estimate of $25,000-$200,000 [SHEPI-PRICING-2026; CTACQ-QOE-2026] |
+| Transactions | A price per QoE or diligence project | List prices from $1,000 (AI-native self-service) to an M&A adviser's tiers of $25,000-$120,000 (regional firms) up to $100,000-$500,000+ (Big Four) [SHEPI-PRICING-2026; CTACQ-QOE-2026] |
 | Valuation | Per report; recurring portfolio and fund marks | Stout and Kroll announced recurring valuation platforms (valuation `#14`) |
 | Forensic and disputes | Matter-based expert and investigation work | No pricing evidence found in the sources |
 | FP&A and technology advisory | Projects, implementations, managed FP&A | ISG lists outcome-linked commercial structures among leading indicators for finance outsourcing [ISG-FAOFPA-2026] |
@@ -57,10 +57,10 @@ measures whether CAS converts into advisory fees.
 
 | Metric | Figure | Provenance |
 |---|---|---|
-| CAS margins | "Over 40%" at some firms; 60-70% gross margin in Woodard's consulting data | Practitioner testimony, unaudited [WOODARD-TWR-2025] |
-| Billable hours per CAS person | About 1,700 to 500-600 a year at BST & Co. while CAS revenue grew 47%; not attributed to AI | Self-reported, one firm [JOFA-CASTIPS-2025] |
+| CAS margins | "Over 40%" at some firms (the Accounting Today Top 100 report, as discussed); 60-70% gross margin in Woodard's consulting data | Practitioner testimony, unaudited [WOODARD-TWR-2025] |
+| Billable hours of one CAS leader | BST & Co.'s CAS leader went from about 1,700 to 500-600 a year while her practice's revenue grew 47%; not attributed to AI | Self-reported, one person [JOFA-CASTIPS-2025] |
 | Median net hourly rate (all CPA firm work) | $170, up nearly 7% over two years | Bloomberg Law reporting an AICPA survey; not in the AICPA release read [BBLAW-PRICING-2026] |
-| SOX testing effort | 16 hours per control (FY2024), up from 12 (FY2022); control cost up 45% | KPMG surveys [KPMG-SOX2030-2026] |
+| SOX testing effort | 16 hours per control (FY2024), up from 12 (FY2022); cost of maintaining controls up 45% between the 2023 and 2025 surveys | KPMG surveys [KPMG-SOX2030-2026] |
 | Time to full billable capacity | 56% say a new entry-level hire needs six months or more | Vendor survey [INTUIT-ACCTTECH-2026] |
 | Firms that offshore | 29% of responding firms | AICPA PCPS and CPA.com, as reported [ACCTODAY-OUTSOURCING-2026] |
 | Time saved per employee | About 60 minutes a day | Self-reported, vendor survey [KARBON-SOAI-2026] |
@@ -89,12 +89,14 @@ work "incredibly important" [BBLAW-PRICING-2026].
 baselines, target ranges with floors and ceilings, simple formulas and data straight from systems. He notes audit
 firms cannot accept contingent fees tied to financial results [BBTAX-SH-2026]. Digits charges firms only for clients
 whose books reach 95% "zero-touch"; that is the vendor's price to the firm, not the firm's price to its client
-[DIGITS-OUTCOME-2026]. Contingent fees are barred for SEC issuer audit clients and restricted under the AICPA Code for
-audit and review clients [SEC-RULE2-01-2026; NYSSCPA-CONTFEE-2015]. A firm needs a rule on which clients are eligible
+[DIGITS-OUTCOME-2026]. Contingent fees are barred for SEC audit clients (Rule 2-01(c)(5)) and, under the AICPA Code (ET
+1.510), for any client whose financial statements the firm audits or reviews, compiles without disclosing a lack of
+independence, or whose prospective financial information it examines [SEC-RULE2-01-2026; NYSSCPA-CONTFEE-2015]. A firm needs a rule on which clients are eligible
 before it advertises outcome pricing ([guardrails.md](guardrails.md) §4).
 
 **Price points in deals.** Shepi lists a $1,000 self-service QoE and $5,000 done-for-you; a searcher quotes $500 to
-$25,000+; a broker page estimates $25,000-$200,000 [SHEPI-PRICING-2026; SEARCHFUNDER-COLUMBIA-2026; CTACQ-QOE-2026].
+$25,000+; an M&A adviser's comparison page puts conventional QoE at $25,000-$120,000 from regional firms and
+$100,000-$500,000+ from the Big Four [SHEPI-PRICING-2026; SEARCHFUNDER-COLUMBIA-2026; CTACQ-QOE-2026].
 Forvis Mazars US says an EBITDA adjustment can be worth "many times" the fee [FORVIS-QOE-2026].
 
 ## 5. Cost structure, including AI cost
@@ -103,17 +105,18 @@ Forvis Mazars US says an EBITDA adjustment can be worth "many times" the fee [FO
   29% of firms offshore [ACCTODAY-OUTSOURCING-2026]; CohnReznick rebuilt offshore pods around documented processes, AI
   and onshore review (CAS `#15`).
 - **Technology stack.** A typical firm runs about 10 apps, and 41% say tools are fully integrated
-  [INTUIT-ACCTTECH-2026]. Integration, not model quality, is the blocker the survey names.
+  [INTUIT-ACCTTECH-2026]; 48% call their setup functional but fragmented.
 - **Firm AI investment (announced, firm-reported).** RSM: $1B multiyear AI and digital-core investment
-  [RSM-IMPACT-2026]. Grant Thornton Advisors: $1B over three years [GT-1B-2025]. BDO USA: $1B+ over five years
-  [BDO-AI-2025]. Aprio: $300M over five years, with Fieldguide as agent partner [APRIO-FIELDGUIDE-2026]. CBIZ: an
+  [RSM-IMPACT-2026]. Grant Thornton Advisors: $1B over three years [GT-1B-2025]. BDO USA: backed by a BDO global AI
+  investment of $1B+ over five years [BDO-AI-2025]. Aprio: $300M over five years, with Fieldguide as agent partner [APRIO-FIELDGUIDE-2026]. CBIZ: an
   agent-native platform on Microsoft Foundry, training for 9,500+ people [CBIZ-MICROSOFT-2026].
 - **Attribution is hard.** KPMG's vice chair says AI investment costs often cannot be attributed to individual
   projects [BBLAW-PRICING-2026]. Grant Thornton's CEO says scale matters because AI investment is expensive [GT-CBIZ-2026].
 - **Vendor terms move cost and risk.** Outcome pricing (Digits) shifts automation risk to the vendor
   [DIGITS-OUTCOME-2026]; vendor failure shifts it back: Botkeeper announced its closure in February 2026 and Xendoo
   bought the platform [CPAPA-XENDOO-2026]. Keep exports and an exit plan.
-- **Review is a cost line.** Verification averages 26% of work time in one vendor survey [CFODIVE-DATARAILS-2026]; a
+- **Review is a cost line.** Corporate finance teams spend an average 26% of work time verifying or correcting AI
+  output in one vendor survey of 270 CFOs and finance leaders [CFODIVE-DATARAILS-2026]; a
   pilot should measure added review time, not only time saved [JOFA-CASAI-2026].
 
 ## 6. Pricing pressure from AI
@@ -150,8 +153,9 @@ This section covers what changes for advisory.
 - **Scale.** IFAC counts 177 direct PE investments facilitating 875 roll-up acquisitions, 1,052 transactions in
   2015-2025; in 2025 each direct investment produced 7.6 further deals, four times the 2021 level. More than half of PE
   transactions do not involve firms offering audit or assurance [CPAPA-IFACPE-2026]. CPA Trendlines tracks 525
-  events, 473 acquired firms, about 72 platforms and about $49B of enterprise value on about $24B revenue to
-  2026-05-31, calling its count "a floor, not a ceiling" [CPATRENDLINES-TRACKER-2026].
+  events since 2016 (M&A, capital and adjacency events), 473 acquired firms, about 72 platforms and about $49B of
+  transacted enterprise value on about $24B revenue to 2026-05-31; it says the recent monthly counts are "a floor,
+  not a ceiling" [CPATRENDLINES-TRACKER-2026].
 - **What buyers are buying.** In April 2026 deals tilted toward capabilities such as forensic, valuation,
   cybersecurity and IT transformation (EisnerAmper buying KLG Business Valuators & Forensic Accountants; J.S. Held buying CMM; Sikich buying
   Jefferson Wells U.S.). The tracker reads this as PE-backed platforms buying "defensible advisory niches"; that

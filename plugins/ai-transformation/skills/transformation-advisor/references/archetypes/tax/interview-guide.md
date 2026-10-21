@@ -1,6 +1,6 @@
 # Tax interview guide
 
-Last researched 2026-10-17. Use this alongside the method files: onboarding questions come from
+Last researched 2026-10-17; mid-market and multistate questions added 2026-10-21. Use this alongside the method files: onboarding questions come from
 [onboarding.md](../../method/onboarding.md), question craft from [interviewing.md](../../method/interviewing.md). This
 file gives the tax wording, the field's boundary probes, phase questions and the vocabulary to mirror. Ask one question
 at a time and skip what you already know. Source keys in brackets resolve in §9 or in [sources.md](sources.md).
@@ -12,7 +12,7 @@ at a time and skip what you already know. Source keys in brackets resolve in §9
 3. [Choosing focus modules](#3-choosing-focus-modules)
 4. [Journey-stage boundary probes](#4-journey-stage-boundary-probes)
 5. [Phase questions](#5-phase-questions)
-6. [In-house department variants](#6-in-house-department-variants)
+6. [In-house and mid-market variants](#6-in-house-and-mid-market-variants)
 7. [Sensitive topics](#7-sensitive-topics)
 8. [Vocabulary to mirror](#8-vocabulary-to-mirror)
 9. [Sources](#9-sources)
@@ -29,6 +29,7 @@ at a time and skip what you already know. Source keys in brackets resolve in §9
 | Indirect tax lead | Engine accuracy, product mapping, certificates, e-invoicing mandates | "Which countries or states are changing your invoicing or filing rules in the next two years?" |
 | Transfer pricing lead | Documentation volume, benchmarking, operational TP, audit defence | "How many local files a year, and how much of each is rolled forward?" |
 | Controversy lead | Notices, exams, Appeals, deadlines, authority analytics | "How many notices or information requests a year, and how is each one first read?" |
+| Partner serving owner-managed or multistate private companies | Pass-through returns, owner basis and salary, nexus, apportionment, PTET, state letters | "Where are your clients' people actually working today, and who compares that list with their state accounts?" |
 
 ## 2. Onboarding questions in tax words
 
@@ -62,6 +63,9 @@ and say who measured it. In most tax modules the honest answer is "the vendor".
 | "Notices", "CP2000", "IDRs", "the exam", "Appeals", "the IRS's AI", "Tax Court" | [controversy](modules/controversy.md) |
 | "Research memos", "opinions", "planning ideas", "M&A diligence", "Blue J", "CoCounsel", "hallucinated citations" | [research-advisory](modules/research-advisory.md) |
 | "Our data feeds", "Alteryx", "the ERP project", "tax technology team", "MCP", "automations nobody owns" | [data-technology](modules/data-technology.md) |
+| "S corp salary", "reasonable compensation", "basis", "Form 7203", "owner estimates" | [compliance-individual-business](modules/compliance-individual-business.md) §10 |
+| "Entity choice", "S-election", "owner planning", "planning from filed returns" | [research-advisory](modules/research-advisory.md) §10 |
+| "Nexus study", "apportionment", "remote employees in new states", "PTET", "composite returns", "voluntary disclosure", "a state letter" | [multistate-private](modules/multistate-private.md) |
 
 Pick one to three. If the user leads a whole practice or department, start from [value-chain.md](value-chain.md).
 
@@ -135,8 +139,9 @@ Use these in addition to each phase file's question bank.
 - "Which clients or entities go first, and when do you review the parallel run against last year's returns?"
 - "Which filing deadlines and rule dates fall inside the plan?" ([frontier.md](frontier.md) §6)
 
-## 6. In-house department variants
+## 6. In-house and mid-market variants
 
+**In-house departments**
 - "How did budget and headcount move in the last two years, and who approves technology spend: tax, finance or IT?"
   (About 39% of 170 US departments reported a budget increase [TR-CORPTECHRPT-2026].)
 - "What do you spend on outside advisers each year, and which of that work could come in house?"
@@ -145,6 +150,21 @@ Use these in addition to each phase file's question bank.
 - "How will your auditors review an AI-assisted provision?" (No source found covers auditing AI-prepared tax balances;
   see [provision-pillar-two](modules/provision-pillar-two.md).)
 - "Do you expect headcount to change?" (58% of KPMG Germany's respondents expect stable domestic tax headcount [KPMG-DE-2026].)
+
+**Mid-market firms and owner-managed clients** (more probes in each module's §4 or §10)
+- "Which owner clients have an S corporation salary backed by a dated, duty-based study, and has any owner brought you a
+  chatbot's number?" ([compliance-individual-business](modules/compliance-individual-business.md) `#26`)
+- "When an AI-prepared entity return reaches your reviewer, what do they re-check, how long does it take, and do you
+  track overrides and errors found?" (In one sponsored recap a firm leader said preparers re-checked everything AI
+  produced [OLIVER-BOSUMMIT-2026].)
+- "When was the last nexus review that covered income and franchise tax, not only sales tax, and what data fed it?"
+  ([multistate-private](modules/multistate-private.md) `#04`)
+- "If a state notice arrived tomorrow citing third-party data, how long would it take to assemble your apportionment
+  support, and from which systems?" (Few state agencies say they use AI: 7 of 36 responding [TAXNOTES-UNWATCHED-2026].)
+- "If you or an adviser used AI on a nexus, apportionment or PTET conclusion, who verified thresholds, rates and
+  effective dates state by state, and where is that recorded?" ([multistate-private](modules/multistate-private.md) `#07`, `#14`)
+- "What would show that AI shortens a nexus study or reduces rework, and do you collect it today?" (No firm has
+  published such a figure; see the multistate module's opening note.)
 
 ## 7. Sensitive topics
 
@@ -172,6 +192,8 @@ Use these in addition to each phase file's question bank.
 | Nexus; exemption certificate; CTC; ViDA | Duty to collect; buyer's exemption proof; continuous transaction controls; EU VAT in the Digital Age | Indirect tax |
 | SSTS; PCRT; TPB | AICPA tax standards; UK conduct rules; Australia's practitioner regulator | Professional duties |
 | Extension season; roll-forward | The second deadline peak; reusing last year's work | Timing and baseline |
+| Reasonable compensation; basis, Form 7203; AAA | An S corporation owner's salary; shareholder basis limits; the accumulated adjustments account | Owner-managed clients |
+| Apportionment; PTET; composite return; voluntary disclosure | Splitting income among states; pass-through entity tax election; one return for many nonresident owners; coming forward for limited lookback | Multistate private companies |
 
 **Words to avoid:** "AI files the return", "automated tax advice", "replace preparers", "AI-signed". Say instead
 "agent-drafted return for review", "first pass", "the signing preparer", "review record", "human control point".
@@ -180,4 +202,5 @@ Use these in addition to each phase file's question bank.
 
 Keys not listed here are in [sources.md](sources.md).
 
-(All keys cited here are in sources.md.)
+- **OLIVER-BOSUMMIT-2026**: Blake Oliver (post sponsored by Black Ore), *40 Hours of Work Done in 5 Minutes: My Takeaways from Black Ore's AI Tax Summit* (press, 4 Jun 2026). https://www.blakeoliver.com/blog/black-ore-ai-tax-summit
+- **TAXNOTES-UNWATCHED-2026**: TaxProf Blog, *Tax Notes Investigates States' Use of AI in Audit Selection (excerpting Tax Notes, 14 Apr 2026)* (press, 2 May 2026). https://taxprofblog.aals.org/?p=134442

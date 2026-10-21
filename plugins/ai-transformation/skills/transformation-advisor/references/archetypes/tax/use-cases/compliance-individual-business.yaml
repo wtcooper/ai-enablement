@@ -6,7 +6,7 @@
 # parallel-run result for AI-prepared returns was found. Overlaps: research tools are in research-advisory
 # (tax-research-advisory-01), notice response in controversy (tax-controversy-01, -02), corporate and in-house
 # direct-tax compliance in compliance-corporate.
-# Widened 2026-10-21 for mid-market firms and owner-managed clients: entries 26-31 added (reasonable compensation,
+# Added 2026-10-21 for mid-market firms and owner-managed clients: entries 26-31 added (reasonable compensation,
 # basis, multi-entity clients, owner estimates, engine replacement, estate and gift returns), and new sources merged
 # into 02, 05, 06, 12, 18, 21 and 24. No grade changed. State pass-through entity tax and composite returns belong
 # to the multistate-private module.
@@ -866,8 +866,8 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Seed Money Consulting is the named firm. No source reports false-positive, miss or override rates for AI review.
-    Overlaps: tax-controversy-04 (pre-filing audit-exposure review) and tax-compliance-corporate-13. Merged 2026-10-21:
-    entity-return review (K-1 ties, source tie-out, wage and QBI allocation) from the mid-market research; Filed's
+    Overlaps: tax-controversy-04 (pre-filing audit-exposure review) and tax-compliance-corporate-13. Added 2026-10-21:
+    entity-return review (K-1 ties, source tie-out, wage and QBI allocation); Filed's
     named customers are not described by size and its sample is illustrative, so grade B still rests on the existing
     named users.
 
@@ -1602,7 +1602,7 @@
     A summit podcast is not used as a source because its description does not mention AI-native firms or private
     equity. Capped at B: Citrine is a cross-border tax accounting boutique, adjacent to 1040 and small-business
     compliance, and the margin claim is unaudited. Other AI-native firms named in secondary coverage (Accrual, Gelt,
-    Skalar, Limetax) were not verified as practice acquirers. Merged 2026-10-21: Aardvark, a platform-owned
+    Skalar, Limetax) were not verified as practice acquirers. Added 2026-10-21: Aardvark, a platform-owned
     small-business practice (not a mid-market firm), as a second AI-native model; its postings name no result, so it
     adds no measurement and the grade is unchanged. Verified 2026-10-21: the earlier auditfriendly copy is gone (410)
     and the live Senior Tax Manager copy does not use the words AI-native or AI-assisted, so those claims now rest on

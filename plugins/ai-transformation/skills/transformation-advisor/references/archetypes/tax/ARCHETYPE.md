@@ -1,34 +1,32 @@
 # Tax (archetype)
 
-Last researched 2026-10-17. The index for the tax archetype: read it once onboarding points to tax, then load only the
-module and archetype files the conversation needs. Source keys in brackets resolve in [sources.md](sources.md).
+Last researched 2026-10-17 (mid-market module and widening 2026-10-21). The index for the tax archetype: read it once onboarding points
+to tax, then load only the module and archetype files the conversation needs. Source keys in brackets resolve in [sources.md](sources.md).
 
 ## What it covers
 
-Tax compliance (individual and small-business returns; corporate returns, credits and incentives), income tax
-accounting and the global minimum tax, indirect tax, transfer pricing, controversy (including tax authorities' own AI),
-research and advisory, and tax data and technology. What the client or the business buys is a correct filing, a
-defensible position or a reliable tax number. A named person signs or stands behind it, and a tax authority can
-examine it years later.
+Tax compliance (individual, owner-managed and small-business returns; corporate returns, credits and incentives), multistate tax for
+growing private companies, income tax accounting and the global minimum tax, indirect tax, transfer pricing, controversy (including tax
+authorities' own AI), research and advisory, and tax data and technology. What the client or the business buys is a correct filing, a
+defensible position or a reliable tax number. A named person signs or stands behind it, and a tax authority can examine it years later.
 
 ## Who it serves
 
 - **Firms of every size:** the Big Four, mid-tier and PE-backed firms, small CPA and enrolled-agent practices, retail
   preparers, AI-native entrants and roll-ups. Starting points differ sharply ([state-of-ai.md](state-of-ai.md)).
-- **In-house corporate tax departments.** They run compliance, provision, indirect tax and transfer pricing for their
-  own group, buy outside help, and often own the tax data and technology. Most are under-resourced: 58% of 288
-  departments said so in 2025 [TR-CORPTAX-2025].
+- **In-house corporate tax departments.** They run compliance, provision, indirect tax and transfer pricing for their own group, buy outside help,
+  and often own the tax data and technology. Most are under-resourced: 58% of 288 departments said so in 2025 [TR-CORPTAX-2025].
 - **Typical users:** tax partners, managing partners, heads of tax and tax directors, tax technology, indirect tax,
   transfer pricing and controversy leads, national-office and risk partners.
 
 ## What it extends
 
-It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery, quality review,
-billing and knowledge management all still apply. Tax changes four things. Statute, regulations and tax-authority
-practice set the work, not professional standards alone. The signer of a return has "primary responsibility for the
-overall substantive accuracy" [LII-CFR-SIGN-2026]; penalties are in [guardrails.md](guardrails.md) §5. Conduct and
-confidentiality rules apply to AI as they stand (Circular 230, IRC section 7216, PCRT, the TPB code) [IRS-OPR-2026;
-PCRT-AI-2026; TPB-GS55-2026]. And the counterparty, the tax authority, is scaling its own AI [GAO-2026; IRS-AIFIRST-2026].
+It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery,
+quality review, billing and knowledge management all still apply. Tax changes four things. Statute, regulations and tax-authority practice
+set the work, not professional standards alone. The signer of a return has "primary responsibility for the overall substantive accuracy"
+[LII-CFR-SIGN-2026]; penalties are in [guardrails.md](guardrails.md) §5. Conduct and confidentiality rules apply to AI as they stand
+(Circular 230, IRC section 7216, PCRT, the TPB code) [IRS-OPR-2026; PCRT-AI-2026; TPB-GS55-2026]. And the counterparty, the tax authority,
+is scaling its own AI [GAO-2026; IRS-AIFIRST-2026].
 
 ## Recognition cues
 
@@ -40,27 +38,29 @@ Match on what is delivered, to whom and who regulates it, not on job titles. Cue
 - "Notices", "CP2000", "IDRs", "the exam", "Appeals", "Tax Court"; "Circular 230", "OPR", "section 7216".
 - "Research memo", "opinion", "planning", "M&A tax diligence", "Blue J", "CoCounsel", "Bloomberg Tax".
 - "ONESOURCE", "Corptax", "Vertex", "Avalara", "tax data"; in house: "head of tax", "TEI", "our auditors review the provision".
+- Owner-managed and multistate private clients: "S corp salary", "basis", "Form 7203", "owner estimates", "nexus study",
+  "apportionment", "PTET election", "composite return", "voluntary disclosure", "a state letter citing third-party data".
 
-Not tax: auditing a client's tax balances or provision inside a financial-statement audit (assurance: its specialists
-and substantive-testing modules); bookkeeping and the monthly close (no archetype yet; use the library); tax
-authorities' own staff (tax-authority AI appears here only as the counterparty, in controversy).
+Not tax: auditing a client's tax balances or provision inside a financial-statement audit (assurance: its specialists and
+substantive-testing modules); Form 990 and 990-T work done alongside a nonprofit audit (assurance: nonprofit-government); bookkeeping and
+the monthly close (no archetype yet; use the library); tax authorities' own staff (tax-authority AI appears here only as the counterparty).
 
 ## Modules
 
-**Evidence** reflects each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under
-30%); counts are as of the last review. **Use thin modules for risk awareness and interview probes, not as proof
-points.** Quote their examples as ideas or early signals, and say plainly that no named organization has published a
-measured result. No module has an independent error, override or parallel-run result for a commercial tax AI tool.
+**Evidence** is each module's share of use cases graded A or B (strong: 50% or more; moderate: 30-49%; thin: under 30%), as of 2026-10-21. **Use
+thin modules for risk awareness and interview probes, not as proof points.** Quote their examples as ideas or early signals: no named organization
+has published a measured result, and no module has an independent error, override or parallel-run result for a commercial tax AI tool.
 
 | Module | What it covers | Evidence |
 |---|---|---|
-| [compliance-individual-business](modules/compliance-individual-business.md) | 1040, 1041, 1065 and 1120-S preparation by CPA firms, EAs and retail preparers: organizers, extraction, agent-prepared returns, review, consent, pricing. Agentic products cluster here; figures are vendor-published | moderate (10 of 25 A/B) |
+| [compliance-individual-business](modules/compliance-individual-business.md) | 1040, 1041, 1065 and 1120-S preparation by CPA firms, EAs and retail preparers: organizers, extraction, agent-prepared returns, review, consent, pricing, and owner-level work (reasonable compensation, basis, owner estimates). Agentic products cluster here; figures are vendor-published | moderate (10 of 31 A/B) |
 | [compliance-corporate](modules/compliance-corporate.md) | Corporate federal and state returns, international forms, R&D credit and Section G, calendar; in house and at large firms | thin (3 of 24 A/B) |
 | [provision-pillar-two](modules/provision-pillar-two.md) | ASC 740 and IAS 12 provision, ASU 2023-09 disclosures, GloBE calculations and the GIR XML pipeline. Strongest named evidence is rules-based software, not AI | thin (0 of 16 A/B) |
 | [indirect-tax](modules/indirect-tax.md) | VAT, GST and sales and use tax: determination, product mapping, certificates, nexus, returns, e-invoicing and CTC, agentic commerce | thin (4 of 22 A/B) |
 | [transfer-pricing](modules/transfer-pricing.md) | Policy, agreements, benchmarking, local and master files, operational TP, audit defence, APAs; A/B entries are rules-based automation | thin (3 of 22 A/B) |
 | [controversy](modules/controversy.md) | Notices, exams, Appeals and litigation from the taxpayer side, plus tax authorities' AI; nearly all A/B entries are authority-side | moderate (10 of 25 A/B) |
-| [research-advisory](modules/research-advisory.md) | Research, memos, written advice, planning and M&A tax diligence; firm and in-house buyers. Speed figures are practitioners' estimates in vendor case studies | moderate (11 of 25 A/B) |
+| [research-advisory](modules/research-advisory.md) | Research, memos, written advice, planning (including owner and entity-choice planning) and M&A tax diligence; firm and in-house buyers. Speed figures are practitioners' estimates in vendor case studies | moderate (11 of 28 A/B) |
+| [multistate-private](modules/multistate-private.md) | State income, franchise and payroll nexus, apportionment, voluntary disclosure and PTET for growing private companies, plus state agencies' AI; almost all named evidence is agency-side | thin (1 of 14 A/B) |
 | [data-technology](modules/data-technology.md) | In-house tax data layer, automation and its sustainment, real-time reporting interfaces, MCP access, the tax technology team. Some B entries are not AI | moderate (8 of 24 A/B) |
 
 Professional responsibility (Circular 230, section 7216, PCRT, TPB, Werfel) sits in [guardrails.md](guardrails.md).

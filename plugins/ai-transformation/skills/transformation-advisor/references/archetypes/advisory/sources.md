@@ -44,7 +44,7 @@ self-reported unless the citing file says otherwise.
 | IESBA | PE workstream; non-authoritative AI guidance; technology revisions | IESBA-PE-2026; IESBA-TECHREV-2023 |
 | COSO | Internal control over generative AI | COSO-GENAI-2026 |
 | IVSC; Appraisal Foundation | IVS AI disclosure (final planned Jan 2027); USPAP AO-41 | IVSC-IVSED-2026; BVR-AO41ADOPT-2026; ISA-AO41-2026 |
-| US federal rules committees and courts | Proposed Rule 707; expert AI cases; deepfake rules | USCOURTS-STDCOMM-2026; USCOURTS-EVID-2026; USCOURTS-EVAGENDA-2026; GOLDMAN-WEBER-2024 |
+| US federal rules committees and courts | Rule 707 (published draft withdrawn May 2026, revised draft under study); expert AI cases; deepfake rules | USCOURTS-STDCOMM-2026; USCOURTS-EVID-2026; USCOURTS-EVAGENDA-2026; GOLDMAN-WEBER-2024 |
 | UK FRC; UK Civil Justice Council | Audit-regulator AI guidance as a model; expert-evidence transparency | FRC-GENAI-2026; FRC-GENAINEWS-2026; CJC-AIDOCS-2026 |
 | IRS OPR; FTC | Circular 230 and AI; Safeguards Rule | IRS-OPR-2026; FTC-SAFEGUARDS-2026 |
 | SBA; FINRA | Lender QoE rules; AI agents in member firms | SBA-SOP5010-2026; FINRA-ROR-2026 |
@@ -171,7 +171,7 @@ self-reported unless the citing file says otherwise.
 - **CPATRENDLINES-TRACKER-2026**: CPA Trendlines, *CPA PE Deal Tracker (data to 2026-05-31)* (press, 2026-06-09). https://cpatrendlines.com/2026/06/09/cpa-pe-deal-tracker-10-years-466-deals/
 - **CROWE-KKR-2026**: Crowe, *Crowe closes strategic investment from KKR* (firm, 2026-08-07). https://www.crowe.com/news/crowe-closes-strategic-investment-from-kkr
 - **CTACQ-QOE-2026**: CT Acquisitions (M&A advisory marketing page), *2026 QoE Provider Comparison: 18 Firms Ranked by Price & Sector* (vendor, 2026-05-16). https://www.ctacquisitions.com/guides/qoe-provider-comparison-2026/
-- **CUATRECASAS-AIOMNIBUS-2026**: Cuatrecasas, *Note on the EU AI Omnibus (Regulation (EU) 2026/1744); no URL on record in the risk-controls module* (firm, 2026-07-24).
+- **CUATRECASAS-AIOMNIBUS-2026**: Cuatrecasas, *Digital Omnibus on AI has been published (Regulation (EU) 2026/1744, OJ 2026-07-24)* (firm, 2026-07-24). https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published
 - **DART-TQA9561-2026**: Deloitte Accounting Research Tool (DART), *AICPA Releases TQAs on a Service Organization's Use of AI* (firm, 2026-09-21). https://dart.deloitte.com/USDART/home/news/all-news/2026/sep/aicpa-releases-tqas-service-organization-use-ai
 - **DATASITE-NEWDEALTEAM-2026**: Datasite (GlobeNewswire, with FT Longitude), *Datasite: AI Is Becoming Indispensable in Dealmaking, But Trust and Governance Will Determine the Winners* (survey, 2026-07-08). https://www.finanznachrichten.de/nachrichten-2026-07/68975080-datasite-ai-is-becoming-indispensable-in-dealmaking-but-trust-and-governance-will-determine-the-winners-399.htm
 - **DELOITTE-MAPLATFORM-2026**: Deloitte US, *Deloitte Expands AI and Agentic AI Capabilities With M&A Platform Enabling Smarter, More Streamlined Deal Execution* (firm, 2026-09-22). https://www.deloitte.com/us/en/about/press-room/deloitte-announces-ma-platform.html

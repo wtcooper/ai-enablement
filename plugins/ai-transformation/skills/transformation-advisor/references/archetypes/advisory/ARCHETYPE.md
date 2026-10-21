@@ -26,9 +26,9 @@ recurring service or an expert answer from named professionals, with no attest o
 It extends **[professional-services](../professional-services/ARCHETYPE.md)**: firm operations (pursuit, pricing the
 firm's own work, staffing, billing, ownership) are there. It sits beside **assurance** (attest) and **tax** (tax
 technical work). Advisory changes three things. Independence limits follow the client: a service sold freely to one
-client is restricted for a client the firm also audits [SEC-RULE2-01-2026]. No regulator has issued AI guidance written
+client is restricted for a client the firm also audits [SEC-RULE2-01-2026]. The research found no regulator AI guidance written
 for most of this work, so existing codes apply; valuation standards and evidence rules are the parts in motion
-[JOFA-ETHAI-2026; IVSC-IVSED-2026]. And recurring outsourced work (CAS) is the base many firms grow advisory from [ACCTODAY-CASKEYS-2026].
+[JOFA-ETHAI-2026; IVSC-IVSED-2026]. And recurring outsourced work (CAS) can seed wider advisory: Withum built its advisory practice out of CAS [ACCTODAY-CASKEYS-2026].
 
 ## Recognition cues
 
@@ -77,8 +77,8 @@ in-house function) by markers you can see or count, not by self-rating.
 | **Curious** | Individual use of public tools; 21% of firms have an AI policy or strategy [KARBON-SOAI-2026]; nobody can list which advisory clients are also attest clients; no deliverable or fee changed | A written rule covers client data, consent and approved tools; named people use AI weekly on real work |
 | **Experimenting** | AI use "situational" (54% of 725 respondents) rather than the default (30%) [INTUIT-ACCTTECH-2026]; one-task pilots (coding, variance commentary, an RCM draft, trial-balance mapping); vendor match rates taken on trust | One workflow has an owner, a baseline (hours per client a month, per control, per databook), a written review step and a tool validated on the firm's own data |
 | **Adopting** | AI inside the ledger, testing or diligence platform with review gates (Forvis Mazars Group rolled out Opio after a nine-month pilot, with mandatory human review) [FORVISGROUP-OPIO-2026]; independence checked by client in a system; engagement letters cover AI; a one-page answer when clients ask for proof of data protection | Two or more workflows in production; the second reused the first's data feed, checklist or controls; value recorded in one place; a named owner |
-| **Scaling** | Agents across practices on a shared platform (RSM's internal-audit testing agent live) [ACCTODAY-RSMBEACON-2026]; firmwide assistants (RSM nearly 20,000 people) [RSM-IMPACT-2026]; live dashboards replace periodic packages [ACCTODAY-CASKEYS-2026]; an agent inventory with owners and replayable evidence [CPAPA-AGENTSCLOSE-2026] | Value shows in margin, clients per person or new revenue, and leaders ask what to sell and how to price it |
-| **AI-native** | Practice built around agents with people on review and judgment; AI-native roll-ups [ACCTODAY-CURRENT-2026]; vendors paid only on automation achieved [DIGITS-OUTCOME-2026]; governance or assurance over clients' agents sold [GT-EAS-2026] | Re-diagnose at each review. No firm has published a measured cost or quality advantage from being AI-native |
+| **Scaling** | Agents across practices on a shared platform (RSM's internal-audit testing agent live) [ACCTODAY-RSMBEACON-2026]; firmwide assistants (RSM: Microsoft 365 Copilot for nearly 20,000 professionals) [RSM-IMPACT-2026]; real-time client dashboards built with AI [ACCTODAY-CASKEYS-2026]; an agent inventory with owners and replayable evidence [CPAPA-AGENTSCLOSE-2026] | Value shows in margin, clients per person or new revenue, and leaders ask what to sell and how to price it |
+| **AI-native** | Practice built around agents with people on review and judgment; AI-led roll-ups (Current, formerly Crete) [ACCTODAY-CURRENT-2026]; vendors paid only on automation achieved [DIGITS-OUTCOME-2026]; governance or assurance over clients' agents sold [GT-EAS-2026] | Re-diagnose at each review. No firm has published a measured cost or quality advantage from being AI-native |
 
 **Delegation.** Plan agentic work only at Adopting or later, behind the five gates in onboarding §5. Reference case:
 firms running agentic control testing in co-sourced internal audit, with a reviewer on every conclusion and "missing

@@ -1,6 +1,6 @@
 # Assurance interview guide
 
-Last researched 2026-10-17. Use this alongside the method files: onboarding questions come from
+Last researched 2026-10-17; mid-market questions added 2026-10-21. Use this alongside the method files: onboarding questions come from
 [onboarding.md](../../method/onboarding.md), question craft from [interviewing.md](../../method/interviewing.md). This
 file gives the assurance wording, the field's boundary probes, phase questions and the vocabulary to mirror. Ask one
 question at a time and skip what you already know. Source keys in brackets resolve in §9 or in [sources.md](sources.md).
@@ -12,7 +12,7 @@ question at a time and skip what you already know. Source keys in brackets resol
 3. [Choosing focus modules](#3-choosing-focus-modules)
 4. [Journey-stage boundary probes](#4-journey-stage-boundary-probes)
 5. [Phase questions](#5-phase-questions)
-6. [Internal audit variants](#6-internal-audit-variants)
+6. [Internal audit and mid-market variants](#6-internal-audit-and-mid-market-variants)
 7. [Sensitive topics](#7-sensitive-topics)
 8. [Vocabulary to mirror](#8-vocabulary-to-mirror)
 9. [Sources](#9-sources)
@@ -28,6 +28,8 @@ question at a time and skip what you already know. Source keys in brackets resol
 | SOC practice lead | Volume, platform-driven clients, peer review, AI in client systems | "How many reports a year, and how much of the work is evidence chasing?" |
 | Sustainability assurance lead | Regulatory churn, value-chain data, limited assurance | "Which regimes are you assuring under now, and what changed this year?" |
 | CAE or SOX lead | Coverage within a flat budget, SOX cost, co-sourcing, the audit committee | "How many controls do you test, and what does a control cost you in hours?" |
+| Managing or audit partner at a mid-market firm | Methodology platform, client data, peer review, staffing, fees | "Which audit file and methodology do your private-company engagements run in, and who chose it?" |
+| Benefit plan, nonprofit or single-audit practice lead | Season peaks, plan or grant documents, sampling, DOL or federal scrutiny | "How many plan audits or single audits a year, and is that a specialist practice or a sideline?" |
 
 ## 2. Onboarding questions in assurance words
 
@@ -63,6 +65,9 @@ and say who measured it.
 | "SOC 2", "Section 3", "Vanta or Drata clients", "bridge letters", "peer review on SOC" | [soc-attestation](modules/soc-attestation.md) |
 | "CSRD", "ISSA 5000", "limited assurance", "GHG", "value-chain data" | [sustainability-assurance](modules/sustainability-assurance.md) |
 | "Our clients' AI", "AI controls in ICFR", "ISO 42001", "AI certification", "AI governance opinion" | [assurance-over-ai](modules/assurance-over-ai.md) |
+| "Private-company audits", "reviews and compilations", "SSARS", "DAS", "Guided Assurance", "our peer review" | [private-company](modules/private-company.md) |
+| "401(k) audits", "EBP", "Form 5500", "limited-scope", "recordkeeper SOC 1", "the DOL" | [benefit-plans](modules/benefit-plans.md) |
+| "Single audits", "Uniform Guidance", "Yellow Book", "SEFA", "Compliance Supplement", "Form 990" | [nonprofit-government](modules/nonprofit-government.md) |
 
 Pick one to three. If the user leads a whole practice, start from [value-chain.md](value-chain.md) instead.
 
@@ -140,8 +145,9 @@ Use these in addition to each phase file's question bank.
 - "When do you tell the audit committee and the client, and what goes in the engagement letter?"
 - "Which regulatory dates fall inside the plan?" ([frontier.md](frontier.md) §6)
 
-## 6. Internal audit variants
+## 6. Internal audit and mid-market variants
 
+**Internal audit**
 - "How did budget and headcount move in the last two years, and who approves the budget?" (19% of 373 North American
   respondents reported internal audit budget cuts in 2025 [JOFA-IAPULSE-2026].)
 - "What share of the plan is co-sourced, and have you reopened co-source terms since providers began announcing AI?"
@@ -149,6 +155,20 @@ Use these in addition to each phase file's question bank.
 - "Has your external auditor agreed to rely on agent-produced workpapers? If not, what would they need?" (No public case
   exists; see [controls-testing](modules/controls-testing.md).)
 - "Where does the business use AI, and is it in the audit plan?" ([assurance-over-ai](modules/assurance-over-ai.md))
+
+**Mid-market firms** (more probes in each module's §4)
+- "How does client data reach you: ERP export, QuickBooks, spreadsheets, PDFs from the bank? On what share of audits do
+  you rebuild data before testing?" (60% of 54 US firms name poor client data as a top blocker [CPACOM-ATR-2025].)
+- "If a peer reviewer opened a file where AI helped, what would they see: tool, version, who reviewed, what it got
+  wrong?" ([private-company](modules/private-company.md) `#16`)
+- "For preparations, compilations and reviews, does anyone use AI to draft statements or notes, and how do you keep the
+  no-assurance and independence lines clear?" (No AI evidence was found for SSARS work; `assurance-private-company-17`.)
+- "Which plan-audit steps still run on samples, and for what share of plans could you test every participant?" (Firms
+  with one or two plan audits had 70% deficient audits, against 17% at firms with 100 or more [EBSA-AUDITQ-2023].)
+- "Is your Yellow Book system of quality management ready for its 2026-12-15 evaluation, and does it name AI tools?"
+  [GAO-YBFAQ-2025]
+- "Who prepares the 990 and 990-T, does any step use AI, and how did you decide on consent for return data?"
+  (Circular 230 and section 7216 apply; see the tax archetype's [guardrails.md](../tax/guardrails.md).)
 
 ## 7. Sensitive topics
 
@@ -184,6 +204,10 @@ Use these in addition to each phase file's question bank.
 | Limited and reasonable assurance; double materiality | Assurance levels; CSRD's two-sided materiality | Sustainability |
 | CAE; three lines; co-source; audit universe | Internal audit roles and model | Internal audit |
 | Alternative practice structure (APS) | Attest firm kept separate from investor-owned services | Independence |
+| SSARS; preparation, compilation, review | The AICPA's Statements on Standards for Accounting and Review Services, and the engagements under them | Private-company work |
+| SQMS No. 1; peer review | AICPA quality management standard; triennial review of a firm's system and engagements | The US inspector for most mid-market firms |
+| EBP; Form 5500; limited-scope audit | Employee benefit plan audit; the plan's annual return; ERISA section 103(a)(3)(C) audit | Benefit plan audits |
+| Single audit; SEFA; Yellow Book | Audit of federal awards under the Uniform Guidance; schedule of expenditures of federal awards; GAO's Government Auditing Standards | Nonprofit and government audits |
 
 **Words to avoid:** "automate the audit", "replace auditors", "AI-generated opinion", "100% assurance". Say instead
 "tool-assisted procedure", "AI first pass for review", "human control point", "whole-population testing".
@@ -192,4 +216,5 @@ Use these in addition to each phase file's question bank.
 
 Keys not listed here are in [sources.md](sources.md).
 
-(All keys cited here are in sources.md.)
+- **EBSA-AUDITQ-2023**: US Department of Labor, Employee Benefits Security Administration, *Audit Quality Study, November 2023* (regulator, Nov 2023). https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/publications/november-2023-audit-quality-study.pdf
+- **GAO-YBFAQ-2025**: GAO, *Government Auditing Standards FAQ: establishing and maintaining a system of quality management (GAO-26-108710)* (standard-setter, 15 Dec 2025). https://files.gao.gov/reports/GAO-26-108710/index.html

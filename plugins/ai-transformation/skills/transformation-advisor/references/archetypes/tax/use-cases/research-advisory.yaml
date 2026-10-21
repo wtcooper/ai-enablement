@@ -1,5 +1,5 @@
 # Use cases: tax / research-advisory
-# Sources checked 2026-10-17; widened 2026-10-21 for mid-market firms and owner clients (entries 26-28 added; new
+# Sources checked 2026-10-17; added 2026-10-21 for mid-market firms and owner clients (entries 26-28 added; new
 # sources merged into 13, 14 and 25; no grade changed). 28 entries: A 0, B 11, C 10, D 7. Evidence is thin on measured outcomes: the
 # before-and-after times are named practitioners' estimates quoted in case studies published by the vendors that
 # sell the tools, not measurements; no independent test of a commercial tax research product exists.
@@ -540,7 +540,7 @@
     url: https://www.vals.ai/benchmarks/tax_agent_bench
     date: '2026-10-20'
     access: full
-    locator: Results, Performance by Category, Scoring, Dataset, Answer Length
+    locator: 'Results, Performance by Category, Scoring, Dataset, Answer Length; category figures read on the 2026-10-16 version of the page (the 49.19% headline is unchanged on the 2026-10-20 page)'
   - ref: EY-INDIA-2026
     title: >-
       EY India strengthens tax technology leadership with the launch of AI-enabled enterprise tax solutions
@@ -664,9 +664,9 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
-    locator: Trajectories on a Public Question (P-004)
+    locator: 'Trajectories on a Public Question (P-004); P-004 figures confirmed on the live page of 2026-10-20'
   - ref: BTAX-SIVA1-2026
     title: Don't Trust AI, Always Verify. Tax Law Still Needs Humans, Pt. 1 (Pramod Kumar Siva)
     publisher: Bloomberg Tax (Tax Management Memo)
@@ -1523,9 +1523,9 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
-    locator: Tool Use
+    locator: 'Tool Use; figures read on the 2026-10-16 version of the page'
   last_reviewed: '2026-10-17'
   notes: >-
     Idea. Both parts use AI to challenge an answer before reliance. A Becker CPE course on comparing tool outputs was
@@ -1740,7 +1740,7 @@
   last_reviewed: '2026-10-21'
   notes: >-
     Wright Ford Young is the only named firm reported as already doing this (operating agreements); the Jansen item is
-    a stated intention. Merged 2026-10-21: Wealth.com's estate-document engine (advisor-side wealth management, not a
+    a stated intention. Added 2026-10-21: Wealth.com's estate-document engine (advisor-side wealth management, not a
     CPA-firm deployment; the company's customers are wealth-management firms; no named customer or error rate), which
     shows what reaches firms through advisor partnerships. Grade unchanged.
 
@@ -1979,7 +1979,7 @@
     locator: section 'Performing complex tax planning and research' (One Stop CPA)
   last_reviewed: '2026-10-21'
   notes: >-
-    Merged 2026-10-21: One Stop CPA (a seven-person digital firm, not mid-market) as the only named firm account of
+    Added 2026-10-21: One Stop CPA (a seven-person digital firm, not mid-market) as the only named firm account of
     owner-exit and deal-structure research drafted for owner clients; it is research plus drafting, so it sits here
     with tax-research-advisory-01 as the research half. Grade unchanged.
     Named deployments and pilots without a drafting-specific measurement. Tolley (2024) is outside the window and used
@@ -2101,9 +2101,9 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
-    locator: Performance by Category
+    locator: 'Performance by Category; figures read on the 2026-10-16 version of the page'
   last_reviewed: '2026-10-17'
   notes: >-
     Idea. No firm describes an AI-drafted opinion in production. Sala's question would change the sourcing model
@@ -2678,9 +2678,9 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
-    locator: Scoring (citation quality)
+    locator: 'Scoring (citation quality); figures read on the 2026-10-16 version of the page'
   - ref: TAXCT-CLINCO-2026
     title: >-
       A recipe for sanctions: AI-hallucinated citations in tax (analysis of Clinco v. Commissioner, T.C. Memo. 2026-16)
@@ -2958,9 +2958,9 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
-    locator: Performance by Category
+    locator: 'Performance by Category; figures read on the 2026-10-16 version of the page'
   - ref: PCRT-AI-2026
     title: "Topical guidance covering the application of PCRT to the ethical use of AI tools"
     publisher: "ICAEW for the seven PCRT bodies"
@@ -3224,7 +3224,7 @@
     locator: executive summary p.4 (78% hourly; advisory and individual-preparation margins)
   last_reviewed: '2026-10-21'
   notes: >-
-    Merged 2026-10-21: Thomson Reuters survey context on hourly billing and advisory margins; the survey's "midsize"
+    Added 2026-10-21: Thomson Reuters survey context on hourly billing and advisory margins; the survey's "midsize"
     firms have 4 to 29 professionals. Grade unchanged.
     Pattern 'other': a commercial-model change. An RSM partner's hypothetical (a 20-hour advisory report 'could' take
     10 hours with AI plus checking) is an illustration, not a measurement [BTAX-PRICING-2026]. The RKL figure is a

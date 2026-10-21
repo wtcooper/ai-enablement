@@ -23,9 +23,8 @@ others rely on, given under professional standards and independence rules, which
 
 It extends **[professional-services](../professional-services/ARCHETYPE.md)**: pursuit, acceptance, scoping and pricing, staffing, delivery,
 quality review, billing and knowledge management all still apply. Assurance changes four things: auditing standards (ISA, PCAOB, AICPA, ISSA
-5000) set the value chain's steps; independence rules limit which services, vendors and owners are allowed; inspectors or peer reviewers
-re-examine the work; and the human auditor stays accountable for the opinion whatever the tools [FRC-NEWS-2026; NFRA-CAALLEY-2026;
-JOFA-AIPA-2026].
+5000) set the value chain's steps; independence rules limit the services, vendors and owners allowed; inspectors or peer reviewers re-examine
+the work; and the human auditor stays accountable for the opinion whatever the tools [FRC-NEWS-2026; NFRA-CAALLEY-2026; JOFA-AIPA-2026].
 
 ## Recognition cues
 

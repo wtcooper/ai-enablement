@@ -1,6 +1,6 @@
 # Assurance value chain
 
-Last researched 2026-10-17. Use this in Map to lay out stages, processes and key steps before asking for real
+Last researched 2026-10-17; mid-market engagement types added 2026-10-21. Use this in Map to lay out stages, processes and key steps before asking for real
 volumes and times, and to pick focus modules. Each step carries work types from the controlled vocabulary. Step detail,
 pain points and AI use cases are in the module files; this file does not repeat them. Source keys in brackets resolve in
 §8 or in [sources.md](sources.md).
@@ -23,6 +23,9 @@ pain points and AI use cases are in the module files; this file does not repeat 
 - For each process the leader cares about, open the linked module's §2 for the step table and typical pains, then ask
   for their own numbers: engagements a year, hours per step, review notes, rework, findings.
 - Stages 0 and 7 come from professional-services and work the same way here, with the assurance differences noted.
+- A mid-market firm's audits (private companies, benefit plans, nonprofits and governments) follow the §3 stages. The
+  steps that differ by engagement type, and the module that holds them, are in §5; SSARS preparation, compilation and
+  review work is there too.
 - Inspection findings show where the work is hardest. In IFIAR's 2025 survey of the six largest networks, 35% of inspected
   listed public-interest audits had at least one finding. Internal control testing produced the most findings by count;
   accounting estimates had the highest share of inspected audits with a finding [IFIAR-SURVEY-2026].
@@ -100,6 +103,7 @@ their technology to clients as a value differentiator [CPACOM-ATR-2025]. See [ec
 | Firm-level tool governance | Business case; select or build; certify per use case; control access; monitor; recertify | software-systems, review-assurance, data-reporting | [quality-management](modules/quality-management.md) |
 | Engagement supervision | Plan AI use; direct; review output; document; stand back | coordination-scheduling, review-assurance, document-production | same |
 | Monitoring and inspection | Internal inspections; root-cause analysis; regulator dialogue | expert-judgment, client-interaction | same |
+| Peer review (US firms outside PCAOB inspection) | SQMS No. 1 risk assessment and annual evaluation; annual practice questionnaire; triennial review of the system and sample engagements | review-assurance, coordination-scheduling | same, and [private-company](modules/private-company.md) |
 
 ### Stage 7. Bill, collect and learn (inherited)
 
@@ -166,6 +170,45 @@ parallel run on one engagement before using any of them in a business case.
 | Entity AI inside an audit | Inventory AI use; classify AI-enabled controls; scope ITGCs to models and agents; choose evidence | research-synthesis, review-assurance, software-systems |
 | Standalone assurance | Pick assessment type and criteria; readiness; certification audit or attestation; technical testing; report | expert-judgment, review-assurance, document-production |
 
+**Private-company audits and SSARS work** ([private-company](modules/private-company.md); general tools in the §3 modules).
+
+| Process | Key steps | Work types |
+|---|---|---|
+| Choose methodology and platform | Pick a methodology and audit file, often bought (DAS on Caseware, Thomson Reuters Guided Assurance); AI arrives inside it | expert-judgment, coordination-scheduling |
+| Client data intake | PBC list, trial balance, general ledger and bank statements from QuickBooks-type systems, exports and PDFs | data-reporting, coordination-scheduling |
+| Fieldwork | Tests of details, sampling, proof of cash, lease and debt recalculation | review-assurance, data-reporting |
+| Preparation, compilation and review (SSARS) | Import the trial balance; draft statements and notes; analytical inquiries for reviews | document-production, review-assurance |
+
+In four states' 2025 peer-review reports, 43 of 295 reviews (15%) were nonconforming; no AI evidence was found for
+SSARS work (`assurance-private-company-17`).
+
+**Benefit plan audits** ([benefit-plans](modules/benefit-plans.md)).
+
+| Process | Key steps | Work types |
+|---|---|---|
+| Accept and set up | Confirm the plan needs an audit and its type (401(k), 403(b), ESOP, defined benefit, welfare, multiemployer) | expert-judgment, coordination-scheduling |
+| Gather plan data | Plan document and amendments, trust statements, payroll registers, census, recordkeeper files | coordination-scheduling, data-reporting |
+| Rely on service providers | Read recordkeeper, TPA and payroll SOC 1 reports and the user entity controls they assume | review-assurance |
+| Reconcile investments | Trust report to trial balance to Form 5500; limited-scope or full-scope audit | data-reporting, review-assurance |
+| Test participant data | Eligibility, deferrals and compensation, match, vesting, loans, distributions, timely remittance | transaction-processing, review-assurance |
+| Report | Plan financial statements under SAS 136; tie the Form 5500 to audited balances | document-production |
+
+In the DOL's study of 2020 form-year plan audits, participant data (15.6% of sampled audits) and contributions (15.3%)
+led the deficient areas, and peer review did not help identify deficient audits [EBSA-AUDITQ-2023].
+
+**Nonprofit and government audits, with Form 990** ([nonprofit-government](modules/nonprofit-government.md)).
+
+| Process | Key steps | Work types |
+|---|---|---|
+| Plan for compliance | Grants; risk of material noncompliance by compliance requirement; major programs from OMB's Compliance Supplement | research-synthesis, expert-judgment |
+| SEFA | Obtain and test the schedule of expenditures of federal awards | data-reporting, review-assurance |
+| Nonprofit statements | Contributions, conditional grants, donor restrictions, functional expenses, minutes and agreements | review-assurance, expert-judgment |
+| Controls and compliance testing | Sampling to the guide's minimum sizes; deviations, questioned costs | review-assurance, data-reporting, expert-judgment |
+| Report | Yellow Book reports; schedule of findings and questioned costs | document-production, review-assurance |
+| Form 990 and 990-T | Organizer, public support test, schedules; unrelated business income | data-reporting, document-production |
+
+Yellow Book quality management: systems designed by 2025-12-15, first evaluation by 2026-12-15 [GAO-YBFAQ-2025].
+
 ## 6. In-house internal audit
 
 Internal audit uses the same modules with a different chain. Map it as follows.
@@ -202,6 +245,8 @@ Use this in Diagnose to judge AI fit by step type. It summarises the module tabl
 
 Keys not listed here are in [sources.md](sources.md).
 
+- **EBSA-AUDITQ-2023**: US Department of Labor, Employee Benefits Security Administration, *Audit Quality Study, November 2023* (regulator, Nov 2023). https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/publications/november-2023-audit-quality-study.pdf
+- **GAO-YBFAQ-2025**: GAO, *Government Auditing Standards FAQ: establishing and maintaining a system of quality management (GAO-26-108710)* (standard-setter, 15 Dec 2025). https://files.gao.gov/reports/GAO-26-108710/index.html
 - **INFLO-ADA-2026**: Inflo, *Audit Data Analytics* (vendor, undated page, accessed 17 Oct 2026). https://inflo.com/audit-data-analytics/
 - **SURALINK-CTEST-2026**: Suralink, *Cloud Testing Suite* (vendor, undated page, accessed 17 Oct 2026). https://www.suralink.com/technology/cloud-testing-suite-suralink
 - **VALIDIS-2026**: Validis, *Validis home page* (vendor, undated page, accessed 17 Oct 2026). https://validis.com/

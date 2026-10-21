@@ -20,13 +20,14 @@ It covers what applies across advisory lines; each module's §6 has the line-spe
 
 ## 1. Principles
 
-- **Existing duties apply now.** No standard or regulator has issued AI guidance written for CAS, transaction advisory
-  or family offices; codes and standards apply to AI as they stand (module §6 in each). The AICPA says competence and
-  due care are unchanged and the member owns the final work product [JOFA-ETHAI-2026].
+- **Existing duties apply now.** The research found no standard or regulator AI guidance written for CAS, transaction
+  advisory or family offices; codes and standards apply to AI as they stand (module §6 in each). A JofA article by the
+  AICPA Professional Ethics Division says competence and due care are unchanged and the member owns the final work
+  product [JOFA-ETHAI-2026].
 - **The limit follows the client, not the service line.** The same service can be sold freely to one client and be
   restricted for a client the firm or an affiliate audits [SEC-RULE2-01-2026].
-- **No AI-specific independence ruling exists.** The AICPA says existing nonattest and information-systems rules
-  apply and members should use the conceptual framework where the Code is silent [JOFA-ETHAI-2026].
+- **No AI-specific independence ruling was found.** The same article says existing nonattest and information-systems
+  rules apply and members should use the conceptual framework where the Code is silent [JOFA-ETHAI-2026].
 - **A person signs.** Valuers, experts, testers and CFO-level advisers stay responsible for conclusions, whatever
   tools are used [ISA-AO41-2026; KTS-EXPERTAI-2026].
 - **Quality bars are not numeric.** No body sets an error-rate threshold for AI in this work; firms have to define
@@ -41,7 +42,7 @@ It covers what applies across advisory lines; each module's §6 has the line-spe
 | IESBA | International Code: non-assurance services, data custody, PE workstream | [IESBA-TECHREV-2023; IESBA-PE-2026] |
 | COSO; IIA | Control frameworks and internal-audit standards used in risk-controls work | [COSO-GENAI-2026; IIA-AIFW-2024; BAKERTILLY-GAM-2026] |
 | IVSC; Appraisal Foundation; AICPA, ASA, RICS | Valuation standards, USPAP, the proposed performance framework | [IVSC-IVSED-2026; ISA-AO41-2026; ACCTODAY-VPF-2026] |
-| Federal courts and rules committees | Expert reliability, machine-generated evidence, sanctions | [USCOURTS-STDCOMM-2026; KTS-EXPERTAI-2026] |
+| Federal courts and rules committees | Expert reliability, machine-generated evidence, sanctions | [USCOURTS-EVID-2026; USCOURTS-STDCOMM-2026; KTS-EXPERTAI-2026] |
 | IRS OPR | Circular 230 where advisory work touches tax matters | [IRS-OPR-2026] |
 | FTC | Safeguards Rule for firms that complete income tax returns | [FTC-SAFEGUARDS-2026] |
 | SBA; lenders | Lender QoE requirements on SBA 7(a) acquisitions | [SBA-SOP5010-2026] |
@@ -53,8 +54,8 @@ It covers what applies across advisory lines; each module's §6 has the line-spe
 bookkeeping and accounting records; financial information systems design and implementation; appraisal, valuation and
 fairness opinions; actuarial services; internal audit outsourcing; management functions; human resources;
 broker-dealer, investment adviser or investment banking services; legal services; and expert services for advocacy.
-Five carry an exception when it is reasonable to conclude the results will not be subject to audit procedures;
-management functions carry none. Paragraph (c)(5) bars contingent fees on any service to the audit client
+The first five ((i)-(v)) carry an exception when it is reasonable to conclude the results will not be subject to audit
+procedures; the other five, including management functions, carry none. Paragraph (c)(5) bars contingent fees on any service to the audit client
 [SEC-RULE2-01-2026]. SEC staff apply a rebuttable presumption that a prohibited service will be subject to audit
 procedures; materiality does not overcome it, and a prohibited service in a prior period cannot be cured
 [PWC-SECFAQ-2019].
@@ -90,19 +91,20 @@ that drafts entries or variance explanations for an audit client falls under tha
 runs a client's books inside a firm-hosted AI environment faces a data-custody question as well as a confidentiality
 one; this is a reading of the cited paragraphs, not an authoritative interpretation.
 
-**Structures.** In an alternative practice structure the attest firm treats the affiliated advisory firm's services as
-its own for independence [JOFA-NONATTEST-2016]; Crowe notes some services may not be available to attest clients
+**Structures.** In one alternative practice structure described in 2016, the attest firm (Mayer Hoffman McCann) must
+consider the advisory firm's (CBIZ) services as if it had provided them [JOFA-NONATTEST-2016]; Crowe notes some services may not be available to attest clients
 [CROWE-KKR-2026]. The AICPA rule on these structures is still moving [JOFA-PEEC-2026].
 
-**Operating practice.** Independence is checked in systems, not left to teams: a firm's billing system would not issue
-a client number until the client was entered in the independence system, and PE affiliates are the hardest to
-monitor [JOFA-NONATTEST-2016].
+**Operating practice.** Independence is checked in systems, not left to teams: one firm's billing system would not
+assign a client number until the engagement was entered in the independence system, and RSM's independence director
+called private-equity affiliates the most significant monitoring challenge (2016) [JOFA-NONATTEST-2016].
 
 ## 4. Fees: contingent, outcome-linked and AI-shortened work
 
 - **Contingent fees.** Barred for any service to an SEC issuer audit client, including by affiliates (Rule 2-01(c)(5);
   PCAOB Rule 3521) [SEC-RULE2-01-2026; PCAOB-RULES3520-2026]. The AICPA Code proscribes them where the firm performs an
-  audit or review, certain compilations or an examination of prospective financial information; fees fixed by courts
+  audit or review, certain compilations or an examination of prospective financial information, and for preparing an
+  original or amended tax return or refund claim; fees fixed by courts
   are not contingent, and a range based on effort rather than result is not a contingent fee (2015 description)
   [NYSSCPA-CONTFEE-2015].
 - **Outcome pricing collides here.** Outcome-linked advisory fees are promoted with the caveat that audit firms cannot
@@ -128,15 +130,17 @@ monitor [JOFA-NONATTEST-2016].
   not train on customer data by default [ANTHROPIC-PRIVACY-2026; MS-COPILOTPRIV-2026]. That does not settle consent,
   service-provider oversight or unapproved use: 34% of professionals in one survey use AI their organisation has not
   approved [TR-FOPREPORT-2026].
-- **Line-specific limits.** Deal NDAs: an AI provider may not count as a permitted representative, and some sellers bar
-  uploads or require consent [KJK-NDA-2026]. Litigation: keep privileged and protective-order material out of open
+- **Line-specific limits.** Deal NDAs: an AI provider may not count as a permitted representative, and parties now negotiate
+  clauses that bar uploads to public AI platforms or require prior written consent [KJK-NDA-2026]. Litigation: keep privileged and protective-order material out of open
   tools [KTS-EXPERTAI-2026]. Family offices: keep family, legal, tax, estate and security information out of tools the
   policy does not cover [NT-FOAIPOLICY-2026].
 - **Controls practitioners propose.** An agent inventory with a named owner, replayable evidence, risk-scaled sign-off,
   close reading of third-party assurance, and monitoring with an exit threshold [CPAPA-AGENTSCLOSE-2026]; data
   classification, least-privilege access for agents and human approval for higher-risk actions [JOFA-CHECKLIST-2026].
-- **Disclosure.** No federal law or professional standard requires CPAs to disclose AI use to clients
-  [JOFA-DISCLOSE-2025]; clients ask anyway ([state-of-ai.md](state-of-ai.md) §3).
+- **Disclosure.** As of April 2025 no specific federal law or professional standard required CPAs to disclose AI use
+  to clients, though some state laws (California, Utah) require some disclosure [JOFA-DISCLOSE-2025]; in tax matters
+  the IRS OPR says practitioners should disclose AI activities [IRS-OPR-2026]. Clients ask anyway
+  ([state-of-ai.md](state-of-ai.md) §3).
 
 ## 6. Standards and frameworks by line
 
@@ -146,7 +150,7 @@ monitor [JOFA-NONATTEST-2016].
 | Risk and controls | COSO generative-AI guidance; IIA AI Auditing Framework and Topical Requirements; FRC guidance as a model; AICPA TQA 9561 on SOC and AI | Guidance; standards in force by date | [COSO-GENAI-2026; IIA-AIFW-2024; BAKERTILLY-GAM-2026; FRC-GENAI-2026; DART-TQA9561-2026] |
 | Transactions | AICPA consulting standard CS 100 (competence, due care, planning, sufficient data); SBA lender rules | In force | [JOFA-CS100-2024; SBA-SOP5010-2026] |
 | Valuation | IVS exposure draft on AI disclosure and IVS 107; USPAP AO-41; AICPA FVS guidelines; proposed Valuation Performance Framework | Draft; adopted; members-only; draft | [IVSC-IVSED-2026; ISA-AO41-2026; BVR-AICPAAIGUIDE-2025; ACCTODAY-VPF-2026] |
-| Forensic | Rule 702 case law; proposed Rule 707; AICPA FVS guidelines; UK Civil Justice Council work on expert evidence | Case law; proposal; guidance; consultation | [KTS-EXPERTAI-2026; USCOURTS-STDCOMM-2026; CJC-AIDOCS-2026] |
+| Forensic | Rule 702 case law; Rule 707 on machine-generated evidence; AICPA FVS guidelines; UK Civil Justice Council work on expert evidence | Case law; published draft withdrawn, revised draft under study; guidance; consultation | [KTS-EXPERTAI-2026; USCOURTS-EVID-2026; CJC-AIDOCS-2026] |
 | FP&A | COSO for insight generation in controls; SEC limits on systems design and management functions | Guidance; in force | [COSO-GENAI-2026; SEC-RULE2-01-2026] |
 | Private client | IRS OPR; FINRA oversight report; SEC examination priorities for adviser affiliates | Guidance; priorities | [IRS-OPR-2026; FINRA-ROR-2026; SEC-EXAMPRI-FY2026] |
 
@@ -158,9 +162,10 @@ client AI-governance work (risk-controls module §6).
 - *Kohls v. Ellison* (D. Minn., 2025) excluded an expert declaration for unverified AI citations; in *Matter of Weber*
   (N.Y. Sur. Ct., 2024) the court re-ran an expert's Copilot queries, got different numbers, and said counsel must
   disclose AI use [KTS-EXPERTAI-2026; GOLDMAN-WEBER-2024]. The failures turned on unverified or unreproducible
-  output, not on AI use as such.
-- Proposed Rule 707 would apply Rule 702 reliability tests to machine output offered without an expert; it is not law
-  [USCOURTS-FRE707-2025; USCOURTS-STDCOMM-2026].
+  output; *Weber* also held that counsel must disclose AI use and that AI-generated evidence may face a Frye hearing.
+- Proposed Rule 707 would apply Rule 702 reliability tests to machine output offered without an expert. It is not law:
+  in May 2026 the evidence rules committee withdrew the published draft and sent a modified proposal for further study
+  [USCOURTS-FRE707-2025; USCOURTS-EVID-2026].
 - Prompts and drafts could be discoverable in some circumstances, panellists say [BVR-DISCOVERY-2026].
 - Deliverable failures carry fee consequences: Deloitte Australia agreed to repay the final instalment of a government
   review contract after AI-generated errors [CITYAM-DELOITTE-2025].

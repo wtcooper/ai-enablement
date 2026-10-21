@@ -8,7 +8,7 @@ software vendors and the firms in their case studies, and one platform (Autire) 
 grade A**: every figure sits on a vendor page or in a vendor press release, and none says how it was measured. Seven
 of 15 entries are grade B (named firms, no published measurement), six are C and two are ideas (D). Much of what is
 sold as plan-audit "AI" is rules-based automation; the vendor with the most evidence says its full-population tests are
-hard-coded logic, with AI used to group exceptions [AUTIRE-AI-2026]. This review found no statement on AI in plan
+hard-coded logic, with AI used to group exceptions [AUTIRE-AI-2026]. No statement was found on AI in plan
 audits from a regulator, a peer review body or the AICPA's plan audit quality center. Use this module for **risk awareness,
 interview probes and named examples**, not as proof that AI improves plan-audit quality.
 

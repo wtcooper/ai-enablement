@@ -1,6 +1,6 @@
 # Tax value chain
 
-Last researched 2026-10-17. Use this in Map to lay out stages, processes and key steps before asking for real volumes
+Last researched 2026-10-17; mid-market and multistate steps added 2026-10-21. Use this in Map to lay out stages, processes and key steps before asking for real volumes
 and times, and to pick focus modules. Each step carries work types from the controlled vocabulary. Step detail, pain
 points and AI use cases are in the module files' §2 and §3; this file does not repeat them. Source keys in brackets
 resolve in §7 or in [sources.md](sources.md).
@@ -35,11 +35,11 @@ resolve in §7 or in [sources.md](sources.md).
 | 0 | Win and price the work (firms) / budget the department (in house) | Proposals, fee basis, adviser spend | professional-services; [economics.md](economics.md) | Leaders' statements on pricing; no tool evidence |
 | 1 | Engage and accept | Engagement letter, section 7216 consent, AI disclosure, scope | [compliance-individual-business](modules/compliance-individual-business.md); [guardrails.md](guardrails.md) | No AI-specific consent practice published |
 | 2 | Collect data and documents | Organizers and requests, source documents, ERP and ledger extracts, TP and Pillar Two data | §3; [data-technology](modules/data-technology.md) | Vendor-heavy; extraction is the busiest product area |
-| 3 | Determine and calculate | Return preparation, book-to-tax, provision, GloBE, indirect determination, TP calculations | compliance modules, [provision-pillar-two](modules/provision-pillar-two.md), [indirect-tax](modules/indirect-tax.md), [transfer-pricing](modules/transfer-pricing.md) | Agentic preparation shipped; rules engines still calculate |
+| 3 | Determine and calculate | Return preparation, book-to-tax, provision, GloBE, indirect determination, TP calculations, state nexus and apportionment | compliance modules, [provision-pillar-two](modules/provision-pillar-two.md), [indirect-tax](modules/indirect-tax.md), [multistate-private](modules/multistate-private.md), [transfer-pricing](modules/transfer-pricing.md) | Agentic preparation shipped; rules engines still calculate |
 | 4 | Research and take positions | Research, memos, written advice, planning, diligence | [research-advisory](modules/research-advisory.md) | Broad use; speed figures are practitioner estimates |
 | 5 | Document and report | Workpapers, footnotes, local and master files, GIR XML, e-invoices, returns | all service-line modules | Drafting tools widely used, rarely measured |
 | 6 | Review, sign and file | Preparer, manager and partner review; signature; e-file and submission | compliance modules; [guardrails.md](guardrails.md) | Review is the new bottleneck; no error rates published |
-| 7 | Respond and defend | Notices, exams, IDRs, Appeals, litigation, audit defence, APAs | [controversy](modules/controversy.md), [transfer-pricing](modules/transfer-pricing.md) | Practitioner side thin; authority side measured |
+| 7 | Respond and defend | Notices, exams, IDRs, Appeals, litigation, audit defence, APAs, state letters and voluntary disclosure | [controversy](modules/controversy.md), [transfer-pricing](modules/transfer-pricing.md), [multistate-private](modules/multistate-private.md) | Practitioner side thin; authority side measured |
 | 8 | Monitor and govern | Rule changes, calendar, automation sustainment, AI policy and vendor review | [data-technology](modules/data-technology.md), [compliance-corporate](modules/compliance-corporate.md) | Vendor monitoring tools; governance mostly policy |
 | 9 | Bill, collect and learn | Invoicing, realization, knowledge capture | professional-services | OPR's reading of the fee rule ties AI to billing (contested) [IRS-OPR-2026; AICPA-FEES-2026] |
 
@@ -108,12 +108,13 @@ functional interviews (research-synthesis) in [transfer-pricing](modules/transfe
 
 | Process | Key steps | Work types | Module |
 |---|---|---|---|
-| Individual and pass-through returns | Federal and state logic, basis, depreciation, allocations, trial balance to 1065 or 1120-S | transaction-processing, expert-judgment | [compliance-individual-business](modules/compliance-individual-business.md) |
+| Individual and pass-through returns | Federal and state logic, basis, depreciation, allocations, trial balance to 1065 or 1120-S; owner steps (reasonable compensation, basis and Form 7203, owner estimates) | transaction-processing, expert-judgment | [compliance-individual-business](modules/compliance-individual-business.md) |
 | Corporate returns and credits | Book-to-tax, 1120, 5471 and 8858, apportionment, R&D credit and Section G | transaction-processing, data-reporting, expert-judgment | [compliance-corporate](modules/compliance-corporate.md) |
 | Provision | Current and deferred tax, valuation allowance, uncertain positions, rate reconciliation | transaction-processing, expert-judgment | [provision-pillar-two](modules/provision-pillar-two.md) |
 | Pillar Two | Jurisdictional ETRs, safe harbours, top-up tax, QDMTT | transaction-processing | same |
 | Indirect determination | Taxability, rate and place of supply per transaction; product codes; certificates; nexus | transaction-processing, review-assurance | [indirect-tax](modules/indirect-tax.md) |
 | TP calculations | Benchmarking, operational TP monitoring and true-ups | research-synthesis, data-reporting | [transfer-pricing](modules/transfer-pricing.md) |
+| Multistate exposure | Nexus by state and tax; registration and payroll accounts; remote workers and residency; apportionment factors; PTET election modelling | data-reporting, expert-judgment, transaction-processing | [multistate-private](modules/multistate-private.md) |
 
 ### Stage 4. Research and take positions
 
@@ -146,6 +147,7 @@ functional interviews (research-synthesis) in [transfer-pricing](modules/transfe
 | Notices | Intake, triage, response drafting, deadlines | transaction-processing, document-production | [controversy](modules/controversy.md) |
 | Exams and IDRs | Information requests, interviews, proposed adjustments | coordination-scheduling, document-production | same |
 | Appeals and litigation | Protests, settlement, briefs, expert reports | expert-judgment, research-synthesis | same; [transfer-pricing](modules/transfer-pricing.md) for TP audits, APAs and MAPs |
+| State exposure and audits | Quantify unfiled exposure by state, tax and period; choose voluntary disclosure, amnesty or waiting; answer agency selection and data-matching letters | expert-judgment, document-production, review-assurance | [multistate-private](modules/multistate-private.md) |
 
 ### Stage 8. Monitor and govern (runs across all stages)
 
@@ -166,6 +168,12 @@ document as well as a commercial one ([economics.md](economics.md) §7).
 - **Small and mid-size firms** run mostly stages 1-3 and 6 for individuals and pass-throughs, with a deadline peak.
   Offshore preparation is common among larger firms (68% of the IPA 100, the largest US firms, offshore tax returns)
   [IPA-OFFSHORE-2026]; ask whether it applies. Start Map at stage 2.
+- **Owner-managed and multistate private clients.** One owner can need a 1040, an S corporation and a partnership
+  return, with basis, reasonable compensation and estimates ([compliance-individual-business](modules/compliance-individual-business.md)
+  §10); state nexus, apportionment, PTET and voluntary disclosure sit in [multistate-private](modules/multistate-private.md),
+  where almost all named AI evidence is agency-side: 7 of 36 responding state agencies said they use AI
+  [TAXNOTES-UNWATCHED-2026]. In Thomson Reuters' 2026 survey "midsize" means 4 to 29 professionals [TR-SOTP-2026], so
+  its size bands are smaller than the mid-market. Start Map at stage 3.
 - **Large firms** run every line for corporate clients and add managed services; their platforms span stages 2-8.
 - **In-house departments** run stages 2-8 for one group with an average home-country team of 9 tax professionals
   (36 at companies above US$6bn revenue) in one vendor survey [TR-SOTCD-2024], buy outside help for peaks and
@@ -178,4 +186,5 @@ document as well as a commercial one ([economics.md](economics.md) §7).
 
 Keys not listed here are in [sources.md](sources.md).
 
-(All keys cited here are in sources.md.)
+- **TAXNOTES-UNWATCHED-2026**: TaxProf Blog, *Tax Notes Investigates States' Use of AI in Audit Selection (excerpting Tax Notes, 14 Apr 2026)* (press, 2 May 2026). https://taxprofblog.aals.org/?p=134442
+- **TR-SOTP-2026**: Thomson Reuters Institute, *2026 State of Tax Professionals Report* (survey (vendor-owned), Jun 2026). https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2026/06/2026-State-of-Tax-Professionals-Report.pdf
