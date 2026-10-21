@@ -6,7 +6,8 @@ Sources checked 2026-10-20. Use cases live in `../use-cases/valuation.yaml` (14 
 is thin.** No entry is graded A; 4 of 14 are B, and those rest on named deployments with no published measurement.
 No error rate, override rate, parallel run or inspection finding on AI-assisted valuation exists. Every speed figure
 is vendor-published or a recollection. No US top-100 or mid-market accounting firm has described its own valuation AI
-use in the sources found. Say so when you quote a figure.
+use in the sources this research reached (`assurance-specialists-02` records a CohnReznick valuation-advisory
+announcement on AI analytics). Say so when you quote a figure.
 
 ## Contents
 
@@ -183,8 +184,8 @@ applicant or seller, with no dollar threshold [QOEAGENT-WHO-2026]. This is a ven
 calculation [GOLDMAN-WEBER-2024]. Panellists say experts should expect questions on which tools they used and how
 outputs were verified, and that prompts and drafts could be discoverable in some circumstances [BVR-DISCOVERY-2026].
 A federal court in Michigan held a plaintiff's ChatGPT material was protected work product [BVR-HEPPNERCOURT-2026].
-The evidence committee voted to withdraw proposed Rule 707 as published and study a modified proposal
-[USCOURTS-EVID-2026]; detail is in forensic-disputes.
+The evidence committee voted to withdraw proposed Rule 707 (machine-generated evidence) as published and submit a
+modified proposal for further study [USCOURTS-EVID-2026]; detail is in forensic-disputes.
 
 **Confidentiality.** Ask whether client consent is needed before client data goes into an AI tool
 [JOFA-ETHICSAI-2026]. Keep confidential client information out of public AI systems [BVR-AICPAREPORT-2026]; the IVSC
@@ -211,8 +212,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 - A BVR staffing webinar frames the future team as domestic, international and AI team members (summary only)
   [BVR-TRAINSTAFF-2025]. A recruiter's view in April 2026 is that experienced talent is still short and AI had limited
   impact [BVR-APRILPREVIEW-2026].
-- Central valuation teams take over from deal teams when portfolio valuation is standardized (automation, not AI)
-  [STOUT-TECH-2024].
+- Stout describes control of portfolio valuation moving from deal teams to a central valuation team as the process
+  is automated (automation, not AI) [STOUT-TECH-2024].
 
 ## 8. Frontier
 
@@ -241,8 +242,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 - **2026-10-04 to 06 (abstracts only):** ASA International Conference sessions on AI ethics, AI in valuation and the
   "Firm of the Future" [ASA-ASAIC26-2026; BVR-ASACONF-2026].
 - **Scheduled, not yet given:** AICPA FVS Conference 2026-11-04 to 06, including FVC2640 "Valuation in an AI World"
-  and FVC2631, a "MythBusters" session whose myths include that AI disclosure language in business valuation reports
-  is easy to draft [AICPA-FVS-2026]. Valuation Performance Framework comments due 2026-12-22 [ACCTODAY-VPF-2026].
+  and FVC2631, a "MythBusters" session with items on AI disclosure language in business valuation reports and on
+  public-company AI disclosure suits [AICPA-FVS-2026]. Valuation Performance Framework comments due 2026-12-22 [ACCTODAY-VPF-2026].
 
 ## 9. Common objections
 
