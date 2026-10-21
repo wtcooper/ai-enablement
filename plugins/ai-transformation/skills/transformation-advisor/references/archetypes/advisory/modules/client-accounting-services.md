@@ -1,12 +1,13 @@
 # Client accounting services (advisory)
 
-Sources checked 2026-10-20 and re-verified 2026-10-21. Use cases live in `../use-cases/client-accounting-services.yaml` (24 entries). Ids are
-shortened here: `#05` means `advisory-client-accounting-services-05`; other modules' ids are in full. Source keys in
-brackets, such as [CPAPA-AGENTSCLOSE-2026], are in the YAML or in §10. **The best evidence is an association study
-and vendor benchmarks.** One entry is grade A (`#01`), resting on an independent field study (Choi and Xie) of one
-unnamed platform's small-business customers; 11 are grade B (a named deployment without published measurement), and
-many rest on small firms or AI-native practices in vendor case studies. No CAS firm or platform has published an error rate, override
-rate, parallel-run result or inspection finding. Say so when you quote a figure.
+Sources checked 2026-10-20 and re-verified 2026-10-21. Use cases live in
+`../use-cases/client-accounting-services.yaml` (24 entries). Ids are shortened here: `#05` means
+`advisory-client-accounting-services-05`; other modules' ids are in full. Source keys in brackets, such as
+[CPAPA-AGENTSCLOSE-2026], are in the YAML or in §10. **The best evidence is an association study and vendor
+benchmarks.** One entry is grade A (`#01`), resting on an independent field study (Choi and Xie) of one unnamed
+platform's small-business customers; 11 are grade B (a named deployment without published measurement), and many rest
+on small firms or AI-native practices in vendor case studies. No CAS firm or platform has published an error rate,
+override rate, parallel-run result or inspection finding. Say so when you quote a figure.
 
 ## Contents
 
@@ -69,8 +70,8 @@ the only grade A is at automate-step (`#01`). Four entries are controls or ideas
   books (Pilot Meridian, Ramp Stack, BlackLine Verity Prepare, Basis, Arclow; CohnReznick pilot being set up).
 - Automate: `#05` continuous close and automated packages on an AI-native ledger (solo firm: close 18 to 5 days).
 - Improve: `#06` AI-assisted live dashboards and variance explanations (Bonadio, small firms; Withum's view; no named
-  firm reports AI-drafted commentary). `#07`
-  forecasts, budgets and on-demand finance answers from ledger data (Armanino 13-week cash flow, 2024).
+  firm reports AI-drafted commentary). `#07` forecasts, budgets and on-demand finance answers from ledger data
+  (Armanino 13-week cash flow, 2024).
 
 **Controllership and fractional CFO**
 - Improve: `#08` technical memos from a retrieval index of past memos (Eventus: 4 hours to 30 minutes, an estimate).
