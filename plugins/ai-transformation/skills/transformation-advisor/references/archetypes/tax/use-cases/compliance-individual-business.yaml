@@ -375,7 +375,8 @@
     - { ref: COLUMN-TCBREPO-2026, title: "TaxCalcBench repository README and TY2025 leaderboard", publisher: "Column Tax (GitHub)", type: vendor, url: "https://github.com/column-tax/tax-calc-bench", date: "2026-06", access: full, locator: "Leaderboard, Tax Year 2025 table and notes" }
     - { ref: CPAPA-BLACKORE-2024, title: "Review of Black Ore Tax Autopilot - Accounting Technology Lab Podcast", publisher: "CPA Practice Advisor", type: podcast, url: "https://www.cpapracticeadvisor.com/podcasts/review-of-black-ore-tax-autopilot-the-accounting-technology-lab-podcast-june-2024/", date: "2024-06", access: full, locator: "transcript, hosts' discussion of partner-reviewable returns and tie-out" }
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "best-practices recap ('Vet third parties' AI offerings when or before purchasing')" }
-  last_reviewed: "2026-10-17"
+    - { ref: CPAPA-BLACKORE-2026, title: "Black Ore Launches Tax Autopilot for Broad Availability", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/04/29/black-ore-launches-tax-autopilot-for-broad-availability/182311/", date: "2026-04-29", access: full, locator: "customer quote from Maxwell Locke & Ritter" }
+  last_reviewed: "2026-10-21"
   notes: >-
     Verification (2026-10-17): grade A now rests only on the Crete pilot, the one outcome whose measurement method is
     described (7,000 returns; field-completion accuracy against filed returns). It is published by OpenAI, which
@@ -386,7 +387,9 @@
     50% (BLACKORE-SITE-2026) and my-cpe says early users report cost reductions of up to 80% (MYCPE-BLACKORE-2026);
     Black Ore's pilot had 75 firms including 40% of the 20 largest CPA firms by revenue and about 3,700 firms on its
     waiting list (company claims, BLACKORE-2026). Aiwyn was reported to be recruiting 100 firms for a 1040 pilot in
-    the 2026 season (BLACKORE-2026).
+    the 2026 season (BLACKORE-2026). Added 2026-10-21: CPA Practice Advisor's launch report carries the same Maxwell
+    Locke & Ritter quote (a top-100 firm, per the mid-market research), qualitative only (CPAPA-BLACKORE-2026); grade
+    unchanged.
 
 - id: tax-compliance-individual-business-06
   title: Agent prepares partnership, S corporation and trust returns (1065, 1120-S, 1041) through to K-1s for review

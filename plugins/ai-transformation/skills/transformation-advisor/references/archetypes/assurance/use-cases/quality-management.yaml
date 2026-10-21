@@ -762,7 +762,11 @@
     documentation rules (FOLEY-PCAOB-2026). Inspectors are turning to the firm's system:
     the FRC puts the system of quality management 'at the heart' of supervision from April 2026 for the largest
     firms (FRC-SUPERVISION-2026), and PCAOB staff discussion materials would centre inspections on each firm's
-    quality control system (STARLING-IMC-2026).
+    quality control system (STARLING-IMC-2026). For small and mid-size US firms the inspector is the AICPA peer
+    reviewer: the first peer reviews of work done under the new quality-management standards were expected to begin
+    in 2026, and reviewers are asked to understand a firm's use of technology and may interview the managing partner
+    (JOFA-QMPR-2024). No peer-review guidance or finding on AI tools has been published in the Reviewer Alert tables
+    of contents for October 2025 to September 2026 (AICPA-REVALERT-2026).
   solution: >-
     The PCAOB's inspections director said inspectors meet firms, generally larger ones, to understand their AI
     use, and that many firms invited inspectors to demonstrations while piloting (CAALLEY-PCAOBPE-2025). The
@@ -776,10 +780,17 @@
     2024 they would continue to inquire about the use of technology in audit procedures (PCAOB-PRIORITIES-2024).
     The FRC's head of assurance technology said an overarching goal of its AI guidance was to show the regulator
     is fine in principle with firms using AI, provided it is done sensibly, and that the FRC works with firm
-    representatives on a working group (ICAEW-POD-2025).
+    representatives on a working group (ICAEW-POD-2025). Peer-review version (idea for AI): before its review, a
+    small or mid-size firm assembles a list of AI tools and versions in use, who approved them, how output is
+    reviewed on engagements and how the firm monitors them. The nearest published model is the May 2026 SOC 2
+    reviewer guidance: reviewers are told to understand the firm's use of technology (including third-party
+    platforms), the reasonableness of engagement timelines and whether engagements are tailored, and to compare about
+    five engagements from different partners when risk looks elevated; a weak result can point to a problem in the
+    firm's system of quality management (JOFA-PRB).
   outcomes:
     - {lever: risk, description: "CPAB 2025 inspections: tools used as the primary source of evidence with limited validation of data inputs in some instances; one tool where testing was limited to flagged items", figure: "no count published", measures: "instances in CPAB's 2025 inspections; number and denominator not stated", provenance: independent, source_ref: CPAB-EVOLVING-2025}
     - {lever: risk, description: "No outcome published; sandbox participants not named", figure: "none", measures: "no measure published", provenance: independent, source_ref: FRC-SANDBOXPAGE-2026}
+    - {lever: risk, description: "No AI-related peer-review finding or outcome published", figure: "none published", measures: "n/a (article titles in six Reviewer Alert editions, Oct 2025 to Sep 2026; none titled for AI)", provenance: independent, source_ref: AICPA-REVALERT-2026}
   prerequisites:
     - "A firm view of which tools are in pilot and which are certified (CAALLEY-PCAOBPE-2025)"
     - "Central documentation, version and approval history per tool that can be produced on request"
