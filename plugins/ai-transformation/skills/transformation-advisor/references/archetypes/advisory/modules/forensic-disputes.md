@@ -1,10 +1,10 @@
 # Forensic and disputes (advisory)
 
-Sources checked 2026-10-20. Use cases live in `../use-cases/forensic-disputes.yaml` (15 entries). Ids are shortened
+Sources checked 2026-10-20; verified against the sources 2026-10-21. Use cases live in `../use-cases/forensic-disputes.yaml` (15 entries). Ids are shortened
 here: `#05` means `advisory-forensic-disputes-05`; other archetypes' ids are given in full. Source keys in brackets,
 such as [ACFE-RTTN-2026], are given in full in the YAML or in §10. Read this first: **no accounting-firm forensic
 practice has published a measured AI outcome** (no error rate, override rate or parallel-run result). No entry is
-graded A; 6 of 15 are B. The best numbers come from adjacent work (e-discovery review, corporate anti-fraud programs,
+graded A; 5 of 15 are B. The best numbers come from adjacent work (e-discovery review, corporate anti-fraud programs,
 federal judges). The firm with the most public detail, J.S. Held, is a forensic and consulting firm, not a CPA firm,
 and says it provides no attest services [JSHELD-AIEXPERT-2026].
 
@@ -64,7 +64,7 @@ exceptions to people), delegate (an agent owns a multi-step outcome), reinvent (
 
 **Document review and early case assessment**
 - Improve: `#04` large-language-model first-pass review against the written protocol, validated by sampling (Redgrave
-  case study, re-analysed and contested by independent academics). `#08` red-flag screening of documents and emails
+  case study, re-analysed and contested by independent researchers; a law-firm user is named on the vendor page). `#08` red-flag screening of documents and emails
   in fraud work (practitioner recollection; Diligent's board-pack screening announced). `#05` cited answers to
   plain-language questions over the matter set (vendor only).
 - Evidence collection: `#10` collecting employees' enterprise AI chats as evidence (vendor capability claim).
@@ -122,13 +122,13 @@ exceptions to people), delegate (an agent owns a multi-step outcome), reinvent (
 | Anti-fraud AI governance | 18% test models for bias; 6% fully confident explaining models; 84% cite budget as a barrier | vendor-published | [ACFE-TECHBENCH-2026] |
 | Readiness for AI-fuelled fraud | 7% more than moderately prepared; 85% of 373 internal audit leaders rate it moderate to high risk | vendor-published; independent | [ACFE-TECHBENCH-2026; IAF-AIFRAUD-2026] |
 | Payments fraud (treasury survey) | 76% attempted or actual in 2025; 74% hit by business email compromise; 17% use AI against it | independent | [AFP-PAYFRAUD-2026] |
-| Gen-AI document review (Redgrave data) | Recall 87.7% vs 64.4%; precision 28.6% vs 39.2% (aiR vs managed review); comparison disputed | independent re-analysis | [CGP-ARXIV-2026] |
+| Gen-AI document review (Redgrave data) | Recall 87.7% vs 64.4%; precision 28.6% vs 39.2% (aiR vs managed review); comparison disputed | self-reported (Redgrave case study), reproduced in an independent re-analysis | [CGP-ARXIV-2026] |
 | Human reviewer disagreement | Reviewers missed 34% of expert-responsive documents; expert rejected 61% of reviewer-responsive ones | independent | [CGP-ARXIV-2026] |
-| Vendor review claims | 90%+ recall; +36% recall in one dataset | vendor-published | [RELATIVITY-AIR-2026; EVERLAW-GENAI-2024] |
+| Vendor review claims | 90%+ recall; recall 0.82 vs 0.60 (+36% relative) in one dataset | vendor-published | [RELATIVITY-AIR-2026; EVERLAW-GENAI-2024] |
 | Deepfake challenges in court | 15 of 931 responding federal judges (about 2%) | independent | [USCOURTS-EVAGENDA-2026] |
 | Rule 707 comment record | More than 70 written comments and two hearings | independent | [USCOURTS-EVAGENDA-2026] |
 | Literature | 76 documents reviewed; ML tends to beat rules where data quality is high, not universally | independent | [JRFM-FORENSICAI-2026] |
-| Hallucination measurement (OSINT, cyber investigations) | Measured end to end in one system (4%, favourable conditions) | independent | [OSINT-ARXIV-2026] |
+| Hallucination measurement (OSINT, cyber investigations) | Measured end to end in only one system of 74 studies reviewed (4%, favourable, non-reproducible conditions) | independent | [OSINT-ARXIV-2026] |
 | Accounting-firm forensic AI quality | No error, override or parallel-run figure found | none | gap |
 
 ## 6. Guardrails
@@ -146,7 +146,8 @@ September 2026 Standing Committee report lists only "continued consideration" [U
 
 **Professional guidance.** AICPA FVS committee guidelines (October 2025, members-only, not a standard) remind members
 to align AI use with engagement terms, confidentiality and judgment [BVR-AICPAAIGUIDE-2025]. UK: the Civil Justice
-Council has proposed that experts explain AI use (law-firm summary seen in search only) [HSFKRAMER-CJC-2026].
+Council's working group, after consultation, is moving towards "proportionate transparency in relation to expert
+evidence"; its final report is expected later in 2026 [CJC-AIDOCS-2026].
 
 **Enforcement context.** DOJ's September 2024 compliance guidance asks how a company manages AI risk [DOJ-ECCP-2024].
 FinCEN's November 2024 alert lists deepfake red flags for financial institutions [FINCEN-DEEPFAKE-2024].
@@ -154,14 +155,15 @@ FinCEN's November 2024 alert lists deepfake red flags for financial institutions
 **Independence (where the firm also audits the client).** SEC Rule 2-01(c)(4)(x) treats expert opinions or services
 to advocate an issuer audit client's interests in litigation or regulatory proceedings as impairing independence;
 factual accounts of work performed are carved out [SEC-RULE2-01-2026]. Treatment under the AICPA Code for private
-attest clients was not confirmed in the research. The AICPA says developing or hosting an AI system for an attest
-client can raise independence concerns [JOFA-ETHICSAI-2026]. Related: `assurance-acceptance-independence-15`.
+attest clients was not confirmed in the research. A Journal of Accountancy article by the AICPA Professional Ethics
+Division's communications manager says developing or hosting an AI system for an attest client can raise
+independence concerns [JOFA-ETHICSAI-2026]. Related: `assurance-acceptance-independence-15`.
 
 **Confidentiality.** Ask whether client consent is needed before client data goes into an AI tool [JOFA-ETHICSAI-2026].
 Keep protective-order and opposing-party material out of non-closed tools; model clauses bar consumer tools and
 same-tool verification [KTS-EXPERTAI-2026].
 
-**Steps that need human judgment:** deciding whether a flagged anomaly is fraud [CPAPA-FORENSICAI-2025]; interpreting
+**Steps that need human judgment:** deciding whether a flagged anomaly is meaningful [CPAPA-FORENSICAI-2025]; interpreting
 matches and calculating damages [JSHELD-AIFRAUD-2026]; validating review output against an expert-coded sample
 [CGP-ARXIV-2026]; authoring every opinion and explaining the method without the tool [KTS-EXPERTAI-2026]; testimony,
 since AI "cannot take an oath" or withstand cross-examination, per a BRG author [CPAPA-FORENSICAI-2025]; and
@@ -170,15 +172,15 @@ admissibility, which the court decides.
 ## 7. Roles and how they evolve
 
 - The common claim is that AI changes the work, not the role: a BRG managing director says it cannot replace
-  judgment or testimony [CPAPA-FORENSICAI-2025]; J.S. Held says professionals will spend more time thinking and less
-  time processing [JSHELD-AIFRAUD-2026].
+  judgment or testimony [CPAPA-FORENSICAI-2025]; a J.S. Held senior director says machine learning lets professionals
+  spend more time thinking and less time processing [JSHELD-AIFRAUD-2026].
 - First-level document review is the explicit comparison target; the Redgrave study pitted the tool against junior
   contract lawyers [CGP-ARXIV-2026].
 - Experts take on new duties: disclosure, verification logs, and readiness to be asked about AI use
   [JSHELD-AIEXPERT-2026; KTS-EXPERTAI-2026]. Investigators need skill in interpreting model output
   [JRFM-FORENSICAI-2026].
-- AI labs are recruiting forensic accountants as trainers and graders (damages, asset tracing, expert report writing)
-  at $75-$150 an hour, posted 2026-08-14 [AFTERQUERY-JOB-2026]. A market signal, not a firm's use.
+- An AI training-data startup (AfterQuery) is recruiting forensic accountants to write and grade model challenges
+  (damages, asset tracing, expert report writing) at $75-$150 an hour, posted 2026-08-14 [AFTERQUERY-JOB-2026]. A market signal, not a firm's use.
 - Junior pipeline: no forensic-specific source. In quality-of-earnings work, Forvis Mazars warns that depleting junior
   ranks will leave holes in future executive-level insight [FORVIS-QOE-2026]. See
   `professional-services-talent-learning-07` for redesigned entry-level roles.
@@ -186,7 +188,7 @@ admissibility, which the court decides.
 ## 8. Frontier
 
 - **2025-01-10:** *Kohls v. Ellison* excludes an AI-tainted expert declaration [KTS-EXPERTAI-2026].
-- **2025-09-09:** Alameda County court dismisses a case as a terminating sanction over AI-generated evidence;
+- **2025-09-09:** Alameda County court dismisses a case, citing deepfaked video offered as real evidence;
   reconsideration denied 2025-11-06 [NBC-DEEPFAKE-2025].
 - **2025-10:** AICPA FVS committee issues AI guidelines for forensic and valuation work [BVR-AICPAAIGUIDE-2025].
 - **2026-01 to 2026-08-27:** FJC deepfake survey of judges; evidence committee meets 2026-05-07; Standing Committee
@@ -212,11 +214,11 @@ admissibility, which the court decides.
 | Objection | Evidence-based response |
 |---|---|
 | "Courts won't accept AI-assisted analysis." | The exclusions so far turned on unverified or unreproducible output (*Kohls*, *Weber*), not on AI use as such [KTS-EXPERTAI-2026]. Model engagement terms call for disclosure, verification not using the same tool, and prompt and output logs; J.S. Held double-checks AI analyses with traditional methods [JSHELD-AIEXPERT-2026]. Rule 707 is still a proposal [USCOURTS-STDCOMM-2026]. |
-| "Vendor figures prove gen-AI review beats people." | The flagship comparison is disputed by independent academics, and reviewers and experts disagree on what is responsive [CGP-ARXIV-2026]. Validate on your own expert-coded sample (`#04`). |
+| "Vendor figures prove gen-AI review beats people." | The flagship comparison is disputed by independent researchers, and reviewers and experts disagree on what is responsive [CGP-ARXIV-2026]. Validate on your own expert-coded sample (`#04`). |
 | "AI flags will send us chasing false positives." | A real risk, named by practitioners [CPAPA-FORENSICAI-2025]. No false-positive rates are published, so measure your own and keep interpretation with a forensic accountant. |
 | "We can't put client data into AI." | Use closed or sandboxed tools (J.S. Held) and engagement terms with an opt-out [JSHELD-AIEXPERT-2026]; answer the consent question first [JOFA-ETHICSAI-2026]; keep protective-order material out of open tools [KTS-EXPERTAI-2026]. |
 | "Fraudsters have AI; we are behind anyway." | Only 7% feel more than moderately prepared [ACFE-TECHBENCH-2026], which is demand for `#11` and `#12`. Proactive monitoring is associated with lower median losses, though the ACFE data are not AI-specific [ACFE-RTTN-2026]. |
-| "AI will replace forensic accountants." | A BRG author says AI cannot take an oath or withstand cross-examination [CPAPA-FORENSICAI-2025]; J.S. Held describes augmentation [JSHELD-AIFRAUD-2026]; AI labs are paying forensic accountants to train models [AFTERQUERY-JOB-2026]. |
+| "AI will replace forensic accountants." | A BRG author says AI cannot take an oath or withstand cross-examination [CPAPA-FORENSICAI-2025]; J.S. Held describes augmentation [JSHELD-AIFRAUD-2026]; an AI training-data startup is paying forensic accountants to test models [AFTERQUERY-JOB-2026]. |
 | "Nobody has shown ROI in forensic work." | Correct: no accounting-firm forensic practice has published measured results. The best public evidence is self-reported J.S. Held narratives. Start by measuring data-preparation hours and exception rates. |
 
 ## 10. Sources
@@ -226,14 +228,14 @@ ACFE-CANPR-2026, AFP-PAYFRAUD-2026, AICPA-COPILOT-2025, AICPA-FVS-2026, BVR-AICP
 CGP-ARXIV-2026, CPAPA-FORENSICAI-2025, DEANDORTON-AIEXPERT-2025, DILIGENT-AUDITAI-2026, EVERLAW-GENAI-2024,
 FINCEN-DEEPFAKE-2024, FINTAF-FORENSIC-2025, HAYSTACKID-GENAI-2026, IAF-AIFRAUD-2026, JRFM-FORENSICAI-2026,
 JSHELD-AIEXPERT-2026, JSHELD-AIFRAUD-2026, KTS-EXPERTAI-2026, NBC-DEEPFAKE-2025, OMRANI-BEYONDBAR-2024,
-PPC-KOHLS-2025, RELATIVITY-AIR-2026, SEC-AIWASH-2024, SEC-RULE2-01-2026, STEPTOE-FRE707-2026, USCOURTS-EVAGENDA-2026,
+PPC-KOHLS-2025, RELATIVITY-AIR-2026, SEC-AIWASH-2024, SEC-RULE2-01-2026, USCOURTS-EVAGENDA-2026,
 USCOURTS-FRE707-2025, USCOURTS-STDCOMM-2026, VALID8-HUB-2026, VALID8-SITE-2026, VALID8-WP-2025.
 
 Cited here only:
 - AFTERQUERY-JOB-2026: AfterQuery, "Forensic Accounting Expert (AI training role)", job posting via AlignList, 2026-08-14. https://alignlist.com/jobs/afterquery-forensic-accountanting-expert-1772045096095
+- CJC-AIDOCS-2026: Civil Justice Council (Courts and Tribunals Judiciary), "Use of AI in preparing court documents" (update on consultation findings, June 2026), 2026-06. https://www.judiciary.uk/related-offices-and-bodies/advisory-bodies/cjc/current-work/use-of-ai-in-preparing-court-documents/
 - CPATRENDLINES-TRACKER-2026: CPA Trendlines, "CPA PE Deal Tracker" (data to 2026-05-31), 2026-06-09. https://cpatrendlines.com/2026/06/09/cpa-pe-deal-tracker-10-years-466-deals/
 - DOJ-ECCP-2024: US DOJ Criminal Division, "Evaluation of Corporate Compliance Programs", 2024-09. https://www.justice.gov/criminal/criminal-fraud/page/file/937501/dl
 - FORVIS-QOE-2026: Forvis Mazars US, "Quality of Earnings & Due Diligence in an AI World", 2026-09-08. https://www.forvismazars.us/forsights/2026/09/quality-of-earnings-due-diligence-in-an-ai-world
-- HSFKRAMER-CJC-2026: Herbert Smith Freehills Kramer note on the Civil Justice Council AI consultation, 2026-07 (search-only). https://www.hsfkramer.com/notes/litigation/2026-07/civil-justice-council-publishes-update-on-consultation-responses-regarding-use-of-ai-for-preparing-court-documents
 - JOFA-ETHICSAI-2026: Journal of Accountancy, "Accounting ethics in the age of AI", 2026-08-05. https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
 - OSINT-ARXIV-2026: Palmieri et al., "Agentic and Generative AI for OSINT and Cyber Investigations", arXiv:2607.03233, 2026-07-03. https://arxiv.org/abs/2607.03233

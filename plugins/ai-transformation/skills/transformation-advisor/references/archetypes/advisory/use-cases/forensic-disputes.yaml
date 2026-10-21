@@ -72,7 +72,7 @@
     - { ref: VALID8-SITE-2026, title: "Verified Financial Intelligence and Forensic Accounting Software (home page)", publisher: "Valid8 Financial", type: vendor, url: "https://www.valid8financial.com/", date: "2026-10-08", access: full, locator: "feature section" }
     - { ref: VALID8-HUB-2026, title: "Valid8 Financial profile page (customer and testimonial claims)", publisher: "NYSSCPA Resource Hub (vendor content)", type: vendor, url: "https://hub.nysscpa.org/company/valid8-financial", date: "2026-10-20", access: full, locator: "profile text (page undated; date is the access date)" }
     - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm types: forensic and consulting firm that is not a CPA firm (J.S. Held, which states it provides no attest
     services, so independence limits do not apply to it), a vendor (Valid8) and a mid-market CPA firm practitioner
@@ -140,7 +140,7 @@
   sources:
     - { ref: JSHELD-AIFRAUD-2026, title: "AI Fraud Detection and Forensic Accounting: Embracing Innovation to Combat Financial Threats (Third Edition)", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/uploads/AI-Fraud-Detection-and-Forensic-Accounting-Embracing-Innovation-to-Combat-Financial-Threats_FINAL.pdf", date: "2026-05-21", access: full, locator: "Executive Summary; pp. 4-5 (two case studies)" }
     - { ref: CPAPA-FORENSICAI-2025, title: "Forensic Accounting in the Age of AI: Opportunities and Risks", publisher: "CPA Practice Advisor (author: Frank Dery, BRG)", type: press, url: "https://www.cpapracticeadvisor.com/2025/10/15/forensic-accounting-in-the-age-of-ai-opportunities-and-risks-2/170853/", date: "2025-10-15", access: full, locator: "risks section" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: forensic and consulting firm, not a CPA firm. The software is not named. Clients are unnamed in the
     source. Graded B, not A: the timing figures are narrative estimates and the dollar figures are findings.
@@ -213,7 +213,7 @@
     - { ref: ACFE-TECHBENCH-2026, title: "Study: Deepfake fraud surges - and only 7% of organizations are firmly ready (2026 Anti-Fraud Technology Benchmarking Report press release)", publisher: "SAS with ACFE", type: survey, url: "https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html", date: "2026-03-25", access: full, locator: "survey findings bullets" }
     - { ref: JRFM-FORENSICAI-2026, title: "Artificial Intelligence and Machine Learning in the Transformation of Forensic Accounting: A Systematic Literature Review", publisher: "Journal of Risk and Financial Management (MDPI)", type: academic, url: "https://doi.org/10.3390/jrfm19070519", date: "2026-07-10", access: full, locator: "Abstract (read via Crossref metadata; the MDPI page was blocked)" }
     - { ref: CPAPA-FORENSICAI-2025, title: "Forensic Accounting in the Age of AI: Opportunities and Risks", publisher: "CPA Practice Advisor (author: Frank Dery, BRG)", type: press, url: "https://www.cpapracticeadvisor.com/2025/10/15/forensic-accounting-in-the-age-of-ai-opportunities-and-risks-2/170853/", date: "2025-10-15", access: full, locator: "opportunities and challenges lists" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Graded C (downgraded from B on verification): no named organisation's AI deployment is described. The ACFE
     figures are measured by a named body but concern victim organisations' anti-fraud programs and analytics in
@@ -309,7 +309,7 @@
     - { ref: EVERLAW-GENAI-2024, title: "GenAI Document Review Surpasses Human Performance on Real World Litigation Data", publisher: "Everlaw", type: vendor, url: "https://www.everlaw.com/blog/ai-and-automation/genai-document-review-surpasses-human-performance-on-real-world-litigation", date: "2024-09-19", access: full, locator: "report summary paragraphs" }
     - { ref: HAYSTACKID-GENAI-2026, title: "From Review to Intelligence: How Gen AI Is Transforming Discovery Strategy", publisher: "HaystackID (author Esther Birnbaum, Law.com reprint)", type: vendor, url: "https://haystackid.com/wp-content/uploads/2026/01/LTN0123202670120Haystackid.pdf", date: "2026-01-22", access: full, locator: "opening paragraphs; Rule 26(b)(1) discussion" }
     - { ref: OMRANI-BEYONDBAR-2024, title: "Beyond the Bar: Generative AI as a Transformative Component in Legal Document Review (preprint)", publisher: "Relativity and Redgrave Data", type: academic, url: "https://resources.relativity.com/rs/447-YBT-249/images/Beyond-the-Bar_preprint_2-9%20%281%29.pdf?version=0", date: "2024", access: full, locator: "abstract (not used for figures)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm types: law firm and e-discovery consultancy (Redgrave) plus vendors (Relativity, Everlaw, HaystackID). This is
     an adjacent process to accounting-firm forensic work, so the grade is capped at B although the numbers are measured.
@@ -360,7 +360,7 @@
   sources:
     - { ref: RELATIVITY-AIR-2026, title: "Relativity aiR (product page)", publisher: "Relativity", type: vendor, url: "https://www.relativity.com/data-solutions/air/", date: "2026-10-20", access: full, locator: "aiR Assist section" }
     - { ref: USCOURTS-FRE707-2025, title: "Proposed Federal Rule of Evidence 707, Machine-Generated Evidence (published draft and committee note)", publisher: "US federal judiciary (copy hosted by Steptoe)", type: regulator, url: "https://www.steptoe.com/a/web/mfVW1ZxAuBkvow2pShnt2X/proposed-rule-707.pdf", date: "2025-08", access: full, locator: "rule text and first paragraphs of the committee note" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: vendor. No named deployment or measurement found; maturity is announced.
 
@@ -409,7 +409,7 @@
   sources:
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "section quoting James Malackowski on the IP practice" }
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2638)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-06", access: full, locator: "FVC2638 (scheduled, not yet given)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: forensic and consulting firm, not a CPA firm. Stated as "developing models", so maturity is piloting;
     the parallel-run comparison is described but no results are published. Grade B rests on a single firm's own
@@ -483,7 +483,7 @@
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "IP practice section (engagement letter); footer (no attest services)" }
     - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2617, FVC2627, FVC2638 (scheduled, not yet given)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Pattern: other. This is a verification and disclosure layer around expert work, not a standard agentic pattern.
     Firm type: forensic and consulting firm (J.S. Held, not a CPA firm); other sources are a law firm, the AICPA and
@@ -547,7 +547,7 @@
     - { ref: FINTAF-FORENSIC-2025, title: "Impact of Emerging Technologies on Forensic Accounting Investigations (extended abstract)", publisher: "FinTech and Artificial Intelligence in Finance, Sheffield Hallam University", type: academic, url: "https://journals.shu.ac.uk/index.php/FinTAF/article/download/449/177/1773", date: "2025-03-07", access: full, locator: "findings paragraphs" }
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Chee interview section" }
     - { ref: DILIGENT-AUDITAI-2026, title: "Diligent launches AuditAI to streamline internal audits", publisher: "CFOtech", type: press, url: "https://cfotech.news/story/diligent-launches-auditai-to-streamline-internal-audits", date: "2026-03-13", access: full, locator: "paragraphs on Smart Prep 360 (routed from risk-controls research)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: the source gives only the author's title at BRG, not the firm's size or type; the other sources are
     academic and vendor. Graded C: the BRG statement is an opinion-column recollection without a described deployment.
@@ -601,7 +601,7 @@
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2604)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-04", access: full, locator: "FVC2604, Wed Nov 4, 2:10-3:00 pm (scheduled)" }
     - { ref: KTS-EXPERTAI-2026, title: "Expert Engagement Agreements in the Age of Generative AI: Best Practices for Governing Expert Use of AI Tools", publisher: "Kilpatrick Townsend", type: firm, url: "https://ktslaw.com/insights/alert/2026/8/expert-engagement-agreements-in-the-age-of-generative-ai", date: "2026-08-31", access: full, locator: "case summaries" }
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Crowe MacKay interview section" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: regional CPA and advisory firm (Dean Dorton; the source does not give its size) and a survey of anti-fraud
     professionals. The Dean Dorton deck is a training demonstration, not evidence of deployment; its date is the PDF
@@ -649,7 +649,7 @@
   sources:
     - { ref: RELATIVITY-AIR-2026, title: "Relativity aiR (product page)", publisher: "Relativity", type: vendor, url: "https://www.relativity.com/data-solutions/air/", date: "2026-10-20", access: full, locator: "Collect and Legal Hold sections" }
     - { ref: KTS-EXPERTAI-2026, title: "Expert Engagement Agreements in the Age of Generative AI: Best Practices for Governing Expert Use of AI Tools", publisher: "Kilpatrick Townsend", type: firm, url: "https://ktslaw.com/insights/alert/2026/8/expert-engagement-agreements-in-the-age-of-generative-ai", date: "2026-08-31", access: full, locator: "confidentiality and 502(d) paragraphs" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: vendor. Product capability claim only; no named deployment. Kept because it is a concrete frontier
     signal that AI-tool data is becoming an evidence source.
@@ -705,7 +705,7 @@
     - { ref: NBC-DEEPFAKE-2025, title: "AI-generated evidence showing up in court alarms judges", publisher: "NBC News", type: press, url: "https://www.nbcnews.com/tech/tech-news/ai-generated-evidence-deepfake-use-law-judges-object-rcna235976", date: "2025-11-18", access: full, locator: "Mendones case and judges' comments" }
     - { ref: ACFE-TECHBENCH-2026, title: "Study: Deepfake fraud surges - and only 7% of organizations are firmly ready (2026 Anti-Fraud Technology Benchmarking Report press release)", publisher: "SAS with ACFE", type: survey, url: "https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html", date: "2026-03-25", access: full, locator: "'Fraudsters are winning the AI race' bullet" }
     - { ref: FINCEN-DEEPFAKE-2024, title: "FinCEN Alert FIN-2024-Alert004: Fraud Schemes Involving Deepfake Media Targeting Financial Institutions", publisher: "US Treasury FinCEN", type: regulator, url: "https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf", date: "2024-11-13", access: full, locator: "pp. 1-2" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Practitioners and judges discuss the need; no accounting-firm deployment found. Incident
     evidence is thin (about 2% of judges; one widely reported sanction case, Mendones v. Cushman and Wakefield, Alameda
@@ -783,7 +783,7 @@
     - { ref: ACFE-CANADA-2026, title: "2026 ACFE Fraud Conference Canada sessions", publisher: "ACFE", type: conference, url: "https://www.fraudconference.com/canada2026/sessions.aspx", date: "2026-11-15", access: full, locator: "pre-conference on ethical AI use in fraud work; session 4C (scheduled)" }
     - { ref: ACFE-CANPR-2026, title: "2026 ACFE Fraud Conference Canada Focuses on AI, Cybercrime, Emerging Risks and More", publisher: "ACFE", type: professional-body, url: "https://www.acfe.com/about-the-acfe/newsroom-for-media/press-releases/press-release-detail?s=2026-acfe-fraud-conference-canada-pr", date: "2026-10-01", access: full, locator: "list of presentations" }
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2621)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2621, Thu Nov 5, 1:05-1:55 pm (scheduled)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Pattern: other (a new investigation service line, not an agentic pattern; the research file
     had end-to-end-case-agent, which no source describes). Merged here: items routed from other advisory research on
@@ -827,7 +827,7 @@
   evidence_grade: D
   sources:
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (FVC2618)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11-05", access: full, locator: "FVC2618, Thu Nov 5, 11:15 am-12:05 pm (scheduled)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such, and the thinnest entry here. The source is a session abstract for a talk not yet given.
     Kept because it is the only signal of agentic AI in tracing work. Ladder left at augment: the abstract does not say
@@ -871,7 +871,7 @@
     - { ref: JSHELD-AIEXPERT-2026, title: "Expertise in the Age of Algorithms: Trust and Transparency in AI-Assisted Litigation", publisher: "J.S. Held", type: firm, url: "https://www.jsheld.com/insights/articles/expertise-in-the-age-of-algorithms-trust-and-transparency-in-ai-assisted-litigation", date: "2026-02-03", access: full, locator: "paragraph on AI in depositions; conclusion" }
     - { ref: DEANDORTON-AIEXPERT-2025, title: "AI in the Expert Witness Toolbox: Enhancing Forensic Accounting & Valuation Testimony (training deck by Josh Shilts)", publisher: "Dean Dorton", type: firm, url: "https://deandorton.com/wp-content/uploads/2025/09/AI-Expert-Witness-Toolbox-Dean-Dorton.pdf", date: "2025-09", access: full, locator: "slide 6, demo scenario 4" }
     - { ref: KTS-EXPERTAI-2026, title: "Expert Engagement Agreements in the Age of Generative AI: Best Practices for Governing Expert Use of AI Tools", publisher: "Kilpatrick Townsend", type: firm, url: "https://ktslaw.com/insights/alert/2026/8/expert-engagement-agreements-in-the-age-of-generative-ai", date: "2026-08-31", access: full, locator: "confidentiality provisions" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Practitioners discuss it; no named deployment or result. Firm types: forensic and consulting
     firm (J.S. Held) and a regional CPA and advisory firm (Dean Dorton).
@@ -918,7 +918,7 @@
     - { ref: USCOURTS-EVAGENDA-2026, title: "Advisory Committee on Evidence Rules, agenda book for the May 7, 2026 meeting", publisher: "US federal judiciary", type: regulator, url: "https://www.uscourts.gov/sites/default/files/document/2026-05_evidence_rules_agenda_book.pdf", date: "2026-05-07", access: full, locator: "p. 4 (Tab III: more than 70 written comments); pp. 18-19 (Nov 2025 minutes: independent-validation factor, DOJ concerns); pp. 65-66 (Jan 2026 Standing Committee draft minutes: validation studies); pp. 132-133 (revised draft committee note)" }
     - { ref: USCOURTS-STDCOMM-2026, title: "Report of the Committee on Rules of Practice and Procedure, September 2026 (Agenda E-19, rev. 8/27/26)", publisher: "US federal judiciary", type: regulator, url: "https://www.uscourts.gov/sites/default/files/document/sept_2026_rules_report_and_attachments_final.pdf", date: "2026-08-27", access: full, locator: "Evidence Rules, Information Items (after p. 25)" }
     - { ref: USCOURTS-FRE707-2025, title: "Proposed Federal Rule of Evidence 707, Machine-Generated Evidence (published draft and committee note)", publisher: "US federal judiciary (copy hosted by Steptoe)", type: regulator, url: "https://www.steptoe.com/a/web/mfVW1ZxAuBkvow2pShnt2X/proposed-rule-707.pdf", date: "2025-08", access: full, locator: "rule text; committee note" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     IDEA, labelled as such. Pattern: other (validation testing offered as an expert service). No source describes the
     service itself; the building blocks (validation studies, error-rate evidence) are in the committee's discussion.
