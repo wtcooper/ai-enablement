@@ -28,7 +28,7 @@ items are judged against each other and against fixed criteria, not only on thei
   they came from an advisor plan.
 - Six stage definitions with entry and exit evidence the user accepts (defaults in `stage-gates.md` §3).
 - Gatekeepers per gate, named as roles that control the resources the next stage needs.
-- A light and a full gate path, and which items qualify for the light one.
+- A light and a full gate path, which items qualify for the light one, and who decides `g0` on each path.
 - The review forum, the review rhythm and the live limit.
 - A first inventory of AI already in use, or a step to build one.
 
@@ -52,6 +52,9 @@ items are judged against each other and against fixed criteria, not only on thei
    lighter path. HBR's utility example says a lighter version of its gated process suits industries with lower
    regulatory burden, and OMB asks agencies to streamline approvals for closely related uses with substantially
    similar risk [HBR-2026; OMB-2025]; applying that to low-risk items within one firm is this skill's default.
+   Then ask who decides the screen (`g0`) on each path, and record the roles in `gate_paths.g0_deciders`. On the
+   full path, include the sponsor or the gatekeepers who control discovery resources, not the portfolio owner
+   alone.
 7. **Set the forum and rhythm.** Agree who sits in the review and what it decides (§3.2). Agree the live limit.
 8. **Agree the central team's stance.** Say plainly that the portfolio office starts as an intake and gate body
    and should plan its move to an advisory role (§3.3) [MSFT-COE-2026].
@@ -157,14 +160,15 @@ item that touches audit clients.
 
 Gatekeepers: practice leaders at `g1` and `g2` (they control staff time), the risk and quality partner at `g2`
 and `g3`, the finance director at `g3` and `g4`. Light path: items in the firm's lowest risk tier and individual-
-productivity items combine `g1` and `g2`, and the head of AI decides `g0` alone. Forum: managing partner,
+productivity items combine `g1` and `g2`, and the head of AI decides `g0` alone. On the full path, the item's
+sponsor and the practice leaders decide `g0` with the head of AI. Forum: managing partner,
 practice leaders, risk and quality partner, heads of IT and finance, people lead and head of AI; monthly, with a
 rebalance at every third review. Live limit: six, the number of owners who can give the work real time.
 
 ## 8. Output
 
 `portfolio/portfolio.yaml` from `../templates/portfolio.yaml`, with `portfolio`, `settings`, `stages`,
-`gate_paths`, `roles`, `rhythm` and `state` filled (schema: `../schemas/portfolio.md`). Inventory items found in
+`gate_paths` (including `g0_deciders`), `roles`, `rhythm` and `state` filled (schema: `../schemas/portfolio.md`). Inventory items found in
 step 1 are logged in step 2. Set `state.step_completed: 1`, `next_step: 2`, `updated`.
 
 ## 9. Sources

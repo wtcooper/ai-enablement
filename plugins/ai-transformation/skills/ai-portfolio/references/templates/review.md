@@ -61,6 +61,7 @@ One block per item that needs a stop, redirect, scale or resource decision. Lead
 | Horizon: near, medium, long | <counts> | |
 | Class: individual-productivity, business-automation, new-value | <counts> | |
 | Category: quick win, foundation, big bet | <counts> | |
+| No-AI items (`ai_use: none`), counted apart from AI items | <count> | <what depends on them> |
 | Levers covered | <lever ids> | <any weighted lever with no item> |
 | Units and functions | <counts> | <duplicates found> |
 | Run cost and cost constraints | <ranges> | |

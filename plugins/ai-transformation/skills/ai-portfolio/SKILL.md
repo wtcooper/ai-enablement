@@ -76,7 +76,9 @@ realised. You design, assess and record; the firm's forum makes the decisions.
 Save after **every** step: update `portfolio.yaml` (`state.step_completed`, `state.next_step`, `state.updated`)
 and the file the step writes. After set-up the steps recur on demand; a session can stop at any point and resume
 from the files. Schemas: `references/schemas/portfolio.md` and `references/schemas/benefits.md`. In YAML, put
-every free-text value in double quotes.
+every free-text value in double quotes. After writing a YAML file, check it: parse it if a parser is available;
+otherwise re-read it for unquoted colons and `#`. Write only the files the templates define; pre-gate evidence
+goes in the intake record's "Next gate evidence" table.
 
 ## Step 1 · Set up the portfolio
 
@@ -92,7 +94,7 @@ Goal: one register and one decision system the firm's leaders accept.
 
 Inherit `value_levers`, `scoring_weights` and `capacity_stance` from the advisor's plan when one exists, and set
 `inherited_from`. **Exit:** scope; levers with metrics and weights; six stage definitions with entry and exit
-evidence; gatekeepers per gate; light and full paths; forum, rhythm and live limit. **Output:**
+evidence; gatekeepers per gate; light and full paths, with who decides `g0` on each; forum, rhythm and live limit. **Output:**
 `portfolio/portfolio.yaml` from `references/templates/portfolio.yaml`.
 
 ## Step 2 · Intake
@@ -107,8 +109,9 @@ Goal: every idea in the register as a business problem, classed, owned and ready
 - What data does it need, who owns it, and has anyone looked at it in its real state?
 - Who in the business would own the benefit?
 
-To import from an advisor `opportunities.yaml`, copy the chosen items with `source` set as a back-link; items
-labelled `draft-to-validate` stay in outline. Seat and licence roll-outs go on the enablement line.
+To import from an advisor `opportunities.yaml`, check that it parses, copy the chosen items with `source` set as
+a back-link, and carry the plan's case for each item into the intake record; items labelled `draft-to-validate`
+stay in outline. Seat and licence roll-outs go on the enablement line.
 **Exit:** each item has a one-sentence problem, volume, class, owner, data sources, and the rules-or-AI and
 duplicate checks; incomplete items stay `outline`. **Output:** `portfolio/intake/<id>.md` from
 `references/templates/intake.md`, and the item's entry in `portfolio.yaml`.
@@ -126,7 +129,8 @@ Goal: decide which ideas earn discovery effort, with value and readiness visible
 
 Score the six shared dimensions with the portfolio's weights, then read them as two axes: value (value, strategic
 fit, time to value) and readiness (feasibility, data readiness, risk). **Exit:** ranges, scores, both indexes,
-category, horizon, risk tier, gate path, sponsor, and a `g0` decision; every Go has kill criteria and a next gate.
+category, horizon, risk tier, gate path, sponsor, and a `g0` decision by the path's deciders (or "pending the
+forum"); every Go has kill criteria and a next gate.
 **Output:** the item in `portfolio.yaml`; the intake record's screen result.
 
 ## Step 4 · Stage gates
@@ -182,7 +186,7 @@ reduce decision, with role evolution on the item. **Output:** `portfolio/benefit
 | When | Next skill |
 |---|---|
 | No plan exists, or a practice, unit or acquired firm needs its opportunities found and planned | **transformation-advisor** |
-| An item enters prototype, or a build or buy decision is due; gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/`) |
+| An item in discover or later needs a problem frame or a build or buy leaning (a brief may open in discover as `g1` evidence; at the latest at a Go at `g1`); gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/` and hands back; set `solution` at once) |
 | Seat roll-outs, training, champions, uneven adoption, partners and skeptics; enablement plan for scale | **ai-enablement** |
 | A risk tier, policy, client-data, records or tool and vendor question | **ai-governance** |
 
