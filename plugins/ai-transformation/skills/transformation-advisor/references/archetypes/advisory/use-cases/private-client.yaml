@@ -11,7 +11,7 @@
 # staffing, ownership) are in professional-services; attest work is in assurance. Cross-references are by id in notes.
 
 - id: advisory-private-client-01
-  title: Family-office accounting and reporting delivered by a CPA firm on an AI-driven, multi-entity platform
+  title: CPA firm collaboration to modernize family-office accounting and reporting on an AI-driven, multi-entity platform
   archetype: advisory
   module: private-client
   function: service-delivery
@@ -25,11 +25,13 @@
   maturity: announced
   problem: Multi-entity family offices keep accounting, investment reporting and financial operations in separate tools
     and spreadsheets, so closing and consolidating take manual effort and reporting is hard to trust.
-  solution: 'A CPA firm adopts one cloud platform that combines the general ledger, bank and cash management, bill pay and
-    financial reporting, with AI-powered workflows and automated intercompany reconciliation. Per its release, PKF O''Connor
-    Davies plans to use the Asseta AI platform for family-office modernization from initial evaluation and implementation
-    through ongoing financial operations. Firm type: large national accounting firm (PKF O''Connor Davies calls itself one
-    of the nation''s largest; rank not verified here). Vendor: AI-native startup (Asseta AI).'
+  solution: 'A CPA firm teams up with a vendor whose cloud platform combines the general ledger, bank and cash management,
+    bill pay and financial reporting; the vendor (not the firm) says the platform reconciles inter-company accounts automatically.
+    Per its release, PKF O''Connor Davies plans to leverage the Asseta AI platform to accelerate family offices'' modernization,
+    from initial evaluation and implementation through ongoing financial operations, and says it will support clients as
+    they evaluate and implement modern platforms. The release does not say the firm already runs any family''s books on
+    it. Firm type: large national accounting firm (PKF O''Connor Davies calls itself one of the nation''s largest; rank not
+    verified here). Vendor: AI-native startup (Asseta AI).'
   outcomes:
   - lever: speed
     description: Vendor says most family offices go live in 8-12 weeks and publishes a 30/60/90-day implementation plan
@@ -66,19 +68,20 @@
   human_checkpoints:
   - Historical data reconciliation is finished and the team trained before go-live (ASSETA-SITE-2026).
   - Armanino describes keeping posting to the books and moving money with people while AI handles lower-risk work (ARMANINO-FOTRENDS-2026).
-  role_evolution: PKF's release says the platform needs 'experienced advisory support', so the firm's role is positioned
-    as selecting, implementing and running the platform for the family office (PKF-ASSETA-2026). No headcount effect is
-    reported.
+  role_evolution: PKF's release says family offices' challenges need 'both modern technology and experienced advisory support',
+    and positions the firm as supporting clients from evaluation and implementation through ongoing financial operations
+    (PKF-ASSETA-2026). No headcount effect is reported.
   evidence_grade: C
   sources:
   - ref: PKF-ASSETA-2026
     title: PKF O'Connor Davies Announces Collaboration with Asseta AI to Support Family Office Modernization
     publisher: PKF O'Connor Davies / Business Wire
     type: firm
-    url: https://www.businesswire.com/news/home/20260326796176/en/PKF-OConnor-Davies-Announces-Collaboration-with-Asseta-AI-to-Support-Family-Office-Modernization
+    url: https://www.pkfod.com/insights/pkf-oconnor-davies-announces-collaboration-with-asseta-ai-to-support-family-office-modernization/
     date: '2026-03-26'
     access: full
-    locator: Release paragraphs 1-3 (collaboration, platform description, PKF plans)
+    locator: Release paragraphs 1-4 (collaboration, platform description, PKF plans, Moore quote). Firm's own copy of the
+      Business Wire release; the Business Wire page returned 403, and the AI Journal syndication matches
   - ref: ASSETA-SITE-2026
     title: 'Asseta: Family Office General Ledger, Bill Pay, Investments Data, Reconciliations and Reporting (product site)'
     publisher: Asseta AI
@@ -130,7 +133,8 @@
     access: full
     locator: 606.3 A1 (hosting or storing an audit client's data is assuming a management responsibility); effective Dec
       15, 2024
-  notes: 'Grade C: one announced firm collaboration plus vendor claims. The vendor''s Nov 2025 release said the platform
+  notes: 'Grade C: one announced firm collaboration plus vendor claims. Ladder ''automate'' rests on the vendor''s own description
+    of end-to-end inter-company automation; neither source shows it running without people at a named office. The vendor''s Nov 2025 release said the platform
     then supported more than $10 billion in assets, with nearly one-third of clients managing over $1 billion; the homepage
     now shows $125B+. The two figures are not reconciled by any source. Firm types: PKF O''Connor Davies (large national
     accounting firm), Asseta AI (AI-native vendor). Cross-references: advisory-client-accounting-services-03 (close agents
@@ -177,8 +181,8 @@
   - Clear view of where documents will live and who needs access (CANOE-FOALTS-2026)
   - Vendor diligence on whether client data trains models, where it is stored and who can access it (ARMANINO-FOTRENDS-2026)
   risks_and_guardrails:
-  - Extraction is the step Armanino says puts a reviewable draft in front of a person; accuracy rates are not published
-    by anyone in the sources read.
+  - Armanino says extraction puts a reviewable draft in front of a person (ARMANINO-FOTRENDS-2026); no source read publishes
+    an accuracy rate.
   - Fund managers' formats vary, so an unreviewed extraction can post wrong data to reporting; the Canoe write-up lists
     accuracy and consistency as a challenge (CANOE-FOALTS-2026).
   - FINRA's 2026 report names summarization and information extraction as the top GenAI use case among its member firms
@@ -200,7 +204,8 @@
     url: https://masttro.com/resources/jefferson-river-capital
     date: '2026'
     access: full
-    locator: 'Summary bullets: ''This Case Study Dives Into'''
+    locator: 'Summary bullets: ''This Case Study Dives Into'' (the full case is behind a form; the page shows no publication
+      date, so 2026 is the year accessed)'
   - ref: CANOE-FOALTS-2026
     title: 'The Future-Ready Family Office: Navigating alts data with AI-powered precision'
     publisher: Canoe Intelligence
@@ -262,7 +267,7 @@
   problem: Investment reporting is still too manual, and families expect consolidated views across entities, investments
     and cash without waiting weeks for someone to stitch them together.
   solution: Staff use AI to draft reporting commentary, summarize documents and prepare meeting material for review; platforms
-    consolidate entity-level numbers into one view. Armanino (mid-market and top-tier advisory firm; rank not verified)
+    consolidate entity-level numbers into one view. Armanino (accounting and advisory firm with a family-office practice)
     lists drafting reporting commentary among low-risk, high-leverage starting points where a person still signs off.
   outcomes:
   - lever: quality
@@ -277,7 +282,7 @@
     description: 'Survey: most respondents still find investment reporting too manual.'
     figure: 73%
     measures: Share of 2026 RBC/Campden respondents who 'still believe investment reporting is too manual', a top concern
-      for three years running; sample size not captured
+      for three years running; 155 survey responses from single- and private multi-family offices across the Americas
     provenance: vendor-published
     source_ref: RBC-CAMPDEN-2026
   - lever: capacity
@@ -393,7 +398,7 @@
   outcomes:
   - lever: speed
     description: none published for family offices. A named adjacent peer-reviewed study of small-business accounting finds
-      genAI adoption associated with productivity gains; no figure is available from the abstract.
+      genAI adoption associated with significant productivity gains and faster month-end closing; the abstract gives no figure.
     figure: none published
     measures: 'Adjacent evidence only: survey of 277 accountants plus platform data on 79 SMEs (200,000+ transaction records);
       not family offices'
@@ -439,7 +444,7 @@
     publisher: 'A private family office (job board: Greenhouse)'
     type: job-posting
     url: https://job-boards.greenhouse.io/fo/jobs/5263749007
-    date: '2026'
+    date: '2026-10-12'
     access: full
     locator: '''What you''ll own'': Systems and process optimization bullet'
   - ref: AGILLINK-FOPRED-2026
@@ -589,7 +594,7 @@
   change_scope: step
   runtime_class: personal-assistant
   maturity: in-production
-  problem: Family-office staff read and compare long fund documents with little legal support.
+  problem: Family-office staff read and compare long LP agreements and other fund documents during due diligence.
   solution: Staff use AI to validate comparisons within LP agreements, compare standard against new language and support
     the due-diligence process. Placements Italcan Inc.'s CEO describes this use; Wingspan reports practitioners comparing
     contract language and pressure-testing LP agreements. Investment selection itself is out of scope (regulated advice);
@@ -724,7 +729,7 @@
     publisher: Gallagher (Arthur J. Gallagher) Private Client
     type: firm
     url: https://www.ajg.com/news-and-insights/when-cyber-risk-becomes-physical-risk/
-    date: 2026-09
+    date: '2026-09-25'
     access: full
     locator: Page on deepfake exposure; cites a 2025 survey and a Deloitte report (not read)
   - ref: SEC-EXAMPRI-FY2026
@@ -783,8 +788,9 @@
   - For an accounting firm or its affiliate, investment-adviser services to the firm's own SEC audit client impair independence
     (SEC-RULE2-01-2026, (c)(4)(viii)). Mercer Advisors is not an accounting firm, so this applies only by analogy here.
   human_checkpoints:
-  - Fiduciary professionals remain the advisers to families (MERCER-ASPEN-2026 quote from the president).
-  role_evolution: Company says the aim is for each of 450 advisors to deliver the capabilities of a $110B+ family office
+  - Not described as a review step. Mercer's president frames Aspen as creating 'the context where leading fiduciary professionals
+    can do the best work of their careers' (MERCER-ASPEN-2026).
+  role_evolution: Aspen has underpinned the firm's family-office offering for two years, per the article. Company says the aim is for each of 450 advisors to deliver the capabilities of a $110B+ family office
     and spend more time with clients (MERCER-ASPEN-2026).
   evidence_grade: B
   sources:
@@ -858,11 +864,12 @@
   risks_and_guardrails:
   - 'FINRA names agent risks: autonomy without validation, acting beyond scope, auditability, sensitive data, limited domain
     knowledge (FINRA-OVERSIGHT-2026).'
-  - The announcement says the agents prepare work for an advisor's review rather than only answering questions (MERCER-ASPEN-2026).
+  - The announcement says the agents prepare work for an advisor's review rather than only answering questions, and Compound's
+    head of engineering says every output is sourced back to the transcripts, emails or records it drew on (MERCER-ASPEN-2026).
   human_checkpoints:
   - Advisor review and sign-off of drafts and tickets (MERCER-ASPEN-2026).
-  role_evolution: Compound's chief executive says the technology is built to accelerate and augment the advisor-client relationship,
-    not replace it (MERCER-ASPEN-2026).
+  role_evolution: Compound's chief executive says its technology is built to 'accelerate and augment' the advisor-client
+    relationship; its head of engineering says the goal is not to replace advisors (MERCER-ASPEN-2026).
   evidence_grade: C
   sources:
   - ref: MERCER-ASPEN-2026
@@ -911,8 +918,8 @@
     intelligence and a family communication portal; Asseta lists dashboard analytics and forecasting.'
   outcomes:
   - lever: experience
-    description: 'none published; the case rests on expectations: a panel speaker says principals expect timely insights
-      rather than periodic summaries.'
+    description: 'none published; the case rests on expectations: a Hubbis panel write-up says principals expect timely
+      insights rather than periodic summaries.'
     figure: none published
     measures: Panel statement; no metric
     provenance: vendor-published
@@ -925,8 +932,8 @@
   - Agents connected through standard protocols can execute workflows but only on clean data (WISS-FOAI-2026).
   human_checkpoints:
   - Relationship managers keep judgment and client contact (HUBBIS-ETON-2026; KAUFMAN-FO-2026).
-  role_evolution: Kaufman Rossin's family-office director says clients still want a human; AI should free staff time for
-    deeper engagement (KAUFMAN-FO-2026).
+  role_evolution: Kaufman Rossin's family-office director says clients still want to talk to a real human; the firm's own
+    commentary adds that AI should free staff time for deeper client engagement (KAUFMAN-FO-2026).
   evidence_grade: C
   sources:
   - ref: ARMANINO-FOTRENDS-2026
@@ -936,7 +943,8 @@
     url: https://www.armanino.com/articles/family-office-trends/
     date: '2026-08-19'
     access: full
-    locator: Section 'Can you see what's happening across your office?' and consolidated reporting trend
+    locator: Section 'Real-Time Visibility Is Becoming the Standard' and the continuity section (a generation that uses
+      apps will not accept a quarterly PDF)
   - ref: HUBBIS-ETON-2026
     title: 'Execution before ambition: Bryan Henning on AI discipline inside family offices'
     publisher: Hubbis (Independent Wealth Management Forum, Dubai 2026 panel)
@@ -978,7 +986,8 @@
     date: '2024-02-20'
     access: full
     locator: Section on next-generation expectations ($84 trillion transfer framing)
-  notes: 'Grade C: vendor product descriptions and practitioner expectations. The client-experience claims in this area
+  notes: 'Grade C: vendor product descriptions and practitioner expectations. The Hubbis speaker, Bryan Henning, is president
+    of Eton Solutions, a family-office software vendor. The client-experience claims in this area
     have no measured client-satisfaction data in the sources read. Cross-reference: advisory-client-accounting-services-06
     (live dashboards as the CAS advisory layer).'
   last_reviewed: '2026-10-20'
@@ -1065,8 +1074,8 @@
   - Structured performance and feedback data on potential successors (FFI-AIADVISORS-2024)
   risks_and_guardrails:
   - Bias, hallucination and fiduciary-duty concerns for family-office AI use (AFS-FOAI-2024).
-  - Succession documents can reveal inconsistent treatment of family members; confidentiality risk if uploaded to public
-    tools (AFS-FOAI-2024).
+  - Estate and succession plans are among the most sensitive family information (an estate plan can reveal inconsistent
+    treatment of family members); confidentiality risk if uploaded to public tools (AFS-FOAI-2024).
   - Tax and estate technical content goes to tax.
   human_checkpoints:
   - Not described; the article assumes advisors remain responsible.
@@ -1141,9 +1150,9 @@
     publisher: Exit Planning Institute
     type: professional-body
     url: https://exit-planning-institute.org/events/webinar-epi-2026-how-advisors-use-AI-accelerate-business-value-and-exit-readiness
-    date: '2026'
+    date: '2026-01-20'
     access: full
-    locator: Session description and learning points
+    locator: Session description, learning points and event details (webinar date Tuesday, January 20, 2026)
   - ref: HBK-EXITAI-2023
     title: You're Planning to Exit Your Business. Can AI Help?
     publisher: HBK CPAs & Consultants
@@ -1152,8 +1161,8 @@
     date: '2023-05-01'
     access: full
     locator: List of ten uses; valuation and successor identification
-  notes: 'Idea only. The session date for the EPI webinar was not clear on the page, so it is a signal of discussion, not
-    scheduled or delivered content. Other EPI chapter events on AI in 2026 were seen only in search snippets. Pattern ''other'':
+  notes: 'Idea only. The EPI page lists the webinar for 2026-01-20 and promises examples, but no recording or results were
+    found, so it is a signal of discussion, not evidence of use. Other EPI chapter events on AI in 2026 were seen only in search snippets. Pattern ''other'':
     advisor-led diagnostic conversation supported by AI, no pipeline. See advisory-private-client-17 (a firm''s ownership-transition
     chatbot used to start conversations) and, for exit work that becomes a sell-side review, advisory-transactions-08.'
   last_reviewed: '2026-10-20'
@@ -1213,7 +1222,7 @@
     publisher: Northern Trust (hosting an Andersen Consulting template)
     type: firm
     url: https://www.northerntrust.com/content/dam/northerntrust/wealth-management/global/en/documents/ai-responsible-use-policy-for-family-office.pdf
-    date: '2026'
+    date: 2026-08
     access: full
     locator: AI Risk Classification Framework; Confidential Family and Firm Data
   - ref: SQUIRE-FOAIRISK-2026
@@ -1281,8 +1290,8 @@
     security.
   solution: Offices keep strategy, family relationships and decision-making in-house and move accounting operations, reporting,
     reconciliations, technology, AI enablement and cybersecurity to outside providers. Armanino describes this as the trend;
-    PKF's Asseta collaboration is the nearest named example of a CPA firm running family-office financial operations on
-    a platform. GenTrust's CIO says family offices have asked it to find staff who can find AI technology to automate bill
+    PKF's Asseta collaboration, in which the firm plans to support family offices from platform evaluation through ongoing
+    financial operations, is the nearest named example. GenTrust's CIO says family offices have asked it to find staff who can find AI technology to automate bill
     pay, concierge and similar work.
   outcomes:
   - lever: cost
@@ -1295,7 +1304,8 @@
   prerequisites:
   - Defined decision rights and named backups for critical roles (ARMANINO-FOTRENDS-2026)
   risks_and_guardrails:
-  - Vendor opacity and concentration risk (SQUIRE-FOAIRISK-2026).
+  - Vendor opacity and dependence on external AI systems whose models, data practices and controls are not fully transparent
+    (SQUIRE-FOAIRISK-2026).
   - 'Independence (the firm''s own attest clients): bookkeeping and related accounting-record services impair independence
     for SEC issuer audit clients (SEC-RULE2-01-2026, (c)(4)(i)). Under the AICPA Code a nonattest service is allowed only
     if the client assumes management responsibilities, oversees it through a suitably skilled person and accepts responsibility
@@ -1319,16 +1329,16 @@
     title: PKF O'Connor Davies Announces Collaboration with Asseta AI to Support Family Office Modernization
     publisher: PKF O'Connor Davies / Business Wire
     type: firm
-    url: https://www.businesswire.com/news/home/20260326796176/en/PKF-OConnor-Davies-Announces-Collaboration-with-Asseta-AI-to-Support-Family-Office-Modernization
+    url: https://www.pkfod.com/insights/pkf-oconnor-davies-announces-collaboration-with-asseta-ai-to-support-family-office-modernization/
     date: '2026-03-26'
     access: full
-    locator: Release paragraphs 2-3
+    locator: Release paragraphs 2-4 (firm's own copy of the Business Wire release)
   - ref: AICIO-FOOPTEST-2026
     title: For Family Offices, AI Is Both an Investment Theme and an Operational Test
     publisher: Chief Investment Officer (ai-cio.com)
     type: press
     url: https://www.ai-cio.com/news/for-family-offices-ai-is-both-an-investment-theme-and-an-operational-test/
-    date: '2026'
+    date: '2026-08-03'
     access: full
     locator: Quote from Jim Besaw (GenTrust); cybersecurity outsourcing
   - ref: PULSE2-JPMFO-2026
@@ -1373,7 +1383,7 @@
     firm). How the firm prices and staffs this work is professional-services (professional-services-scoping-pricing-17).'
   last_reviewed: '2026-10-20'
 - id: advisory-private-client-16
-  title: AI-assisted cash-flow forecasting and scenario modelling from family-office ledger history
+  title: AI-assisted cash-flow modelling from family-office profit-and-loss history
   archetype: advisory
   module: private-client
   function: service-delivery
@@ -1381,32 +1391,45 @@
   - data-reporting
   - research-synthesis
   pattern: other
-  ladder: augment
+  ladder: assist
   change_scope: step
   runtime_class: personal-assistant
-  maturity: emerging
-  problem: Forecasting cash needs for families with multiple entities is manual work in spreadsheets.
-  solution: One family office fed years of profit-and-loss statements into an enterprise AI tool to model future cash flow,
-    turning hours of work into a fraction of the time (an unnamed office as told to Wingspan). Asseta lists a forecasting
-    module and says it will add planning and performance modules.
+  maturity: in-production
+  problem: A family office's board asks for a model of the office's monthly cash flow, which would otherwise be built by
+    hand from years of profit-and-loss statements.
+  solution: 'Joshua S. Miller, CEO of Minot''s Light Management (a family office), used his office''s enterprise version
+    of Copilot to review five years of monthly P&L statements and chart total monthly expenses, then used Copilot in Excel
+    to chart actual monthly cash flow and averages to model future cash flow. Asseta lists a forecasting module and says
+    it will add planning and performance applications (vendor claim).'
   outcomes:
   - lever: speed
-    description: 'Practitioner recollection, unnamed office: hours of work turned into a fraction of the time; no figure.'
-    figure: none published
-    measures: Recollection relayed by a Wingspan director; no baseline
+    description: 'Practitioner estimate: what would likely have taken hours took about 45 minutes, including editing and spot
+      checks.'
+    figure: about 45 minutes versus 'hours'
+    measures: The CEO's own estimate of time for one modelling task against what it would likely have taken; one occasion,
+      not a tracked metric
     provenance: self-reported
-    source_ref: WINGSPAN-FOREPORT-2026
+    source_ref: FOPRO-AITODAY-2026
   prerequisites:
-  - Clean multi-year ledger data (WISS-FOAI-2026)
+  - An enterprise AI tool approved for the office's financial data (FOPRO-AITODAY-2026; NT-FOAIPOLICY-2026)
+  - Clean, structured data; forum speakers say data quality, not the AI, is the bottleneck (WISS-FOAI-2026)
   risks_and_guardrails:
   - Forecast assumptions and formulas need independent validation (IRS-OPR-2026 on AI-generated projections in written tax
     advice; analogy only).
   - Models are trained to please; prompts should say what the AI should not do (WISS-FOAI-2026).
   human_checkpoints:
-  - Finance lead validates inputs and assumptions (IRS-OPR-2026, by analogy).
-  role_evolution: Not described.
-  evidence_grade: C
+  - The CEO edited the output and spot-checked the numbers (FOPRO-AITODAY-2026).
+  role_evolution: Not described beyond the CEO building the model himself with the assistant (FOPRO-AITODAY-2026).
+  evidence_grade: B
   sources:
+  - ref: FOPRO-AITODAY-2026
+    title: How Family Offices Are Using AI Today to Boost Efficiency
+    publisher: The Family Office Professional (thefopro.com)
+    type: press
+    url: https://thefopro.com/how-family-offices-are-using-ai-today-to-boost-efficiency/
+    date: '2026-06-08'
+    access: full
+    locator: Quote from Joshua S. Miller (Minot's Light Management) on modelling monthly cash flow with Copilot
   - ref: WINGSPAN-FOREPORT-2026
     title: 'Reporting: The Family Office''s Easiest Win With AI'
     publisher: Wingspan Legacy Partners
@@ -1414,7 +1437,7 @@
     url: https://wingspanlegacy.com/?p=3770
     date: '2026-06-09'
     access: full
-    locator: Paragraph on feeding profit-and-loss statements into an enterprise tool
+    locator: Paragraph on feeding profit-and-loss statements into an enterprise tool (a summary of the FOPro article)
   - ref: ASSETA-SITE-2026
     title: 'Asseta: Family Office General Ledger, Bill Pay, Investments Data, Reconciliations and Reporting (product site)'
     publisher: Asseta AI
@@ -1430,7 +1453,7 @@
     url: https://www.cpapracticeadvisor.com/?p=173630
     date: '2025-11-20'
     access: full
-    locator: Paragraph on planned forecasting, planning and performance modules
+    locator: Paragraph on planned forecasting, planning and performance applications
   - ref: IRS-OPR-2026
     title: 'Issue Number 2026-19: Introductory Guidelines for Responsible AI Use in Federal Tax Practice'
     publisher: IRS Office of Professional Responsibility
@@ -1446,12 +1469,22 @@
     url: https://wiss.com/ai-for-family-offices/
     date: '2026-05-13'
     access: full
-    locator: Forum warning about AI bias
-  notes: 'Grade C: an unnamed practitioner example and a vendor product listing. IRS guidance is cited only as an analogy
-    for validating projections. Pattern ''other'': one-off modelling session by a finance lead using an enterprise AI tool.
-    Cross-reference: advisory-client-accounting-services-07 (cash-flow forecasts and scenarios from live ledger data in
-    CAS).'
-  last_reviewed: '2026-10-20'
+    locator: Key takeaways; forum warning about AI bias
+  - ref: NT-FOAIPOLICY-2026
+    title: How to Draft a Family Office AI Policy
+    publisher: Northern Trust Institute
+    type: firm
+    url: https://www.northerntrust.com/united-states/institute/articles/how-to-draft-a-family-office-ai-policy
+    date: '2026'
+    access: full
+    locator: 'Principle: Protect Sensitive Information'
+  notes: 'Grade B (raised from C on 2026-10-21): the earlier entry treated this as an unnamed office relayed by Wingspan,
+    but the FOPro article names the office and its CEO. The 45-minute figure is a practitioner''s estimate for one task,
+    so under the grade A rule it stays B. One-off use by a principal, not a recurring forecasting process. IRS guidance
+    is cited only as an analogy for validating projections. Pattern ''other'': one modelling session by an executive using
+    an enterprise AI tool. Cross-reference: advisory-client-accounting-services-07 (cash-flow forecasts and scenarios from
+    live ledger data in CAS).'
+  last_reviewed: '2026-10-21'
 - id: advisory-private-client-17
   title: Client-facing custom GPT that answers basic ownership-transition and succession questions for family-held businesses
   archetype: advisory

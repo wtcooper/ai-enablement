@@ -110,8 +110,7 @@ executive) or SOX lead, or a client buying AI governance help.
 4. **"When an agent reports an exception, how do you tell a missing document from a failed control, and who decides?"**
    Reveals inference-gap risk and whether deficiency evaluation stays human.
 5. **"Has the external auditor said what it will rely on when AI prepares or executes tests, and is that written
-   down?"** Reveals the biggest open risk; in an informal practitioner poll the largest single answer about external
-   auditors' stance was uncertainty (48%) [IAC-SOXRELIANCE-2026].
+   down?"** Reveals the biggest open risk; in an informal poll, uncertainty (48%) led [IAC-SOXRELIANCE-2026].
 6. **Provider: "What is your agent plan, and do you expect client testing spend to fall, stay flat or move to advisory?"
    Client: "What did you bring in-house first?"** Reveals sourcing pressure (`#14`, `#15`).
 7. **"Which of your advisory clients are also audit clients, under which regime, and who signs off a new service?"**
@@ -233,10 +232,9 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
   who is both auditor and technologist [SIKICH-IAPRIORITIES-2026].
 - **Identity.** Jones Lang LaSalle's CAE says auditors who built careers on well-crafted workpapers must accept handing
   that work to technology [IIA-UPSKILL-2026].
-- **Staffing signals.** Functions reporting staff cuts rose from 11% (2024) to 18% (2025), and from 11% to 28% at
-  privately held organisations (n = 29); the Pulse ties this to budget pressure, not AI [IIA-PULSE-2026].
-  Juniors asked to oversee AI too early may approve bad output [ICAEW-VOICES-2026]; the FRC names erosion of human
-  knowledge as a risk it did not address [FRC-GENAIGUIDE-2026].
+- **Staffing signals.** Functions reporting staff cuts rose from 11% (2024) to 18% (2025); 11% to 28% at privately held
+  ones (n = 29); the Pulse cites budgets, not AI [IIA-PULSE-2026]. Juniors overseeing AI too early may approve bad output
+  [ICAEW-VOICES-2026]; the FRC names erosion of human knowledge as a risk it did not address [FRC-GENAIGUIDE-2026].
 - **Provider spend.** Havertys expects outside spend to move from testing hours to advisory (`#14`).
 
 ## 8. Frontier

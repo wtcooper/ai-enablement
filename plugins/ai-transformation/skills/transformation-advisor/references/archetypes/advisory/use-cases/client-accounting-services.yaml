@@ -1,8 +1,8 @@
 # Use cases: advisory / client-accounting-services
 # Client accounting services (CAS): outsourced or co-sourced bookkeeping, reconciliation and close, management
 # reporting, controllership and fractional CFO work, payroll and bill pay, delivered by accounting firms, AI-native
-# providers and in-house finance teams. Sources checked 2026-10-20 (wave 5: practice, discourse and governance angles,
-# plus the independence-pricing and state-of-AI cross-cutting files). Every source was opened (access: full) unless
+# providers and in-house finance teams. Sources checked 2026-10-20 and re-verified against the opened sources
+# 2026-10-21. Every source was opened (access: full) unless
 # marked otherwise; several were read as abstracts, case studies or press reports, which the locator says.
 # Almost every outcome figure is vendor-published or self-reported. The one independent field study (Choi and Xie)
 # reports associations from one unnamed platform's SME customers. No CAS firm or platform has published an error
@@ -208,7 +208,7 @@
     - { ref: DIGITS-BANKREC-2025, title: "Always Be Closing: Introducing AI Bank Reconciliations", publisher: "Digits", type: vendor, url: "https://digits.com/blog/ai-bank-reconciliations/", date: "2025-11-10", access: full, locator: "sections on drag-and-drop reconciliation, exception list and customer quote (Heather Taylor, Hiline)" }
     - { ref: ACCTODAY-USECASE-2024, title: "Making the use case for AI in accounting", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/making-the-use-case-for-ai-in-accounting", date: "2024-05-06", access: full, locator: "Armanino digital-worker paragraphs" }
     - { ref: CPAPA-AGENTSCLOSE-2026, title: "Before You Let the Agents Run the Close: Five Controls to Put in Writing First", publisher: "CPA Practice Advisor (contributor A. L. Fulmore Sr.)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/", date: "2026-08-13", access: full, locator: "controls 2 and 3" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm types: the FloQast case is a Top 100 firm the text does not name (the file name indicates Miller Cooper, not
     confirmed in the text); Hiline, quoted by Digits, is a named firm using AI bank reconciliations, without a
@@ -322,8 +322,8 @@
     - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02", access: full, locator: "p. 13, reliance definition" }
     - { ref: ACCTODAY-TRENDS-2026, title: "How will technology shape accounting trends in 2026?", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/how-will-technology-shape-accounting-trends-in-2026", date: "2026-01-09", access: full, locator: "contributor quote from Will Bible, Deloitte" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "paragraphs on Botkeeper closure and Xendoo purchase" }
-    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?'" }
-  last_reviewed: "2026-10-20"
+    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges three candidate entries (agent-run close for firms; agent-prepared reconciliations and entries with
     approval gates; reconciliation-preparation agents) and the Penrose long-horizon benchmark, because all describe
@@ -381,7 +381,7 @@
     - { ref: DIGITS-WRITEMCP-2026, title: "Agentic Accounting With Confidence: Introducing Write MCP and Locked Period Controls", publisher: "Digits", type: vendor, url: "https://digits.com/blog/write-mcp/", date: "2026-10-13", access: full, locator: "paragraphs on Write MCP, Locked Periods and the Arclow staff accountant" }
     - { ref: ARCLOW-SITE-2026, title: "Arclow home page (AI-native accounting practice)", publisher: "Arclow", type: firm, url: "https://arclow.com", date: "2026-10-20", access: full, locator: "hero text on CPA review (page undated; access date)" }
     - { ref: ACCTODAY-AIBENCH-2026, title: "AI beats human accountants at monthly close, transaction categorization", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ai-beats-human-accountants-at-monthly-close-transaction-categorization", date: "2026-10-16", access: full, locator: "paragraphs on human-with-AI sessions" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm type: AI-native practice (Arclow) and vendor (Digits). Distinct from -03: here the accountant drives each step
     through an assistant rather than reviewing work an agent platform prepared. Independence: see -24.
@@ -444,7 +444,7 @@
   sources:
     - { ref: CPAPA-ELEV8-2026, title: "How an AI-Native Accounting Platform Helped One Solo Firm Reclaim 90 Hours a Month and Scale Advisory Without Hiring", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/07/21/how-an-ai-native-accounting-platform-helped-one-solo-firm-reclaim-90-hours-a-month-and-scale-advisory-without-hiring/187093/", date: "2026-07-21", access: full, locator: "sections 'Reinventing the Month-End Close', 'Building a Scalable Reporting Process', 'What Saving 90 Hours Made Possible'" }
     - { ref: DIGITS-ELEV8-2026, title: "From Bookkeeping Factory to Fractional CFO Firm: How Elev8 Built Big-Firm Output Without Adding Staff", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/elev8-cfo/", date: "2026-07-08", access: full, locator: "paragraphs on 108 hours across 18 days and the Digits Connect API reporting pipeline" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges three candidates about the same firm and change (continuous close; automated package; branded statement
     distribution). Pattern is 'other': a continuous close on an AI-native ledger with API-driven reporting, mostly
@@ -510,7 +510,7 @@
     - { ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "human in the loop section" }
     - { ref: APRIO-JOB-2026, title: "Accounting Manager, Client Accounting & Advisory Services (Aprio, listed on Built In NYC)", publisher: "Aprio via Built In NYC", type: job-posting, url: "https://www.builtinnyc.com/job/accounting-manager-client-accounting-advisory-services/11189037", date: "2026-09-15", access: full, locator: "responsibilities: KPI dashboards, board-ready reporting narratives" }
     - { ref: ACCTODAY-XEROAI-2026, title: "Xero aims to make AI core to platform functionality", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/xero-aims-to-make-ai-core-to-platform-functionality", date: "2026-03-16", access: full, locator: "paragraph on JAX use rising 61% in three months" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges three candidates (practice B, discourse B, governance D). Firm types: Withum is a Top 100 firm; Bonadio is
     a Top 50 firm; Lincoln Accounting and TFMA are small firms; Aprio is a Top 20 firm (the posting asks for AI-enabled
@@ -581,7 +581,7 @@
     - { ref: ACCTODAY-COHNPOD-2026, title: "The meeting of CAS and AI (On the Air podcast with Kane Polakoff, Intuit-sponsored)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/at-intuit-sponsored-podcast-03-16", date: "2026-03-16", access: full, locator: "transcript 09:50-10:46 and 11:52-12:41" }
     - { ref: APRIO-JOB-2026, title: "Accounting Manager, Client Accounting & Advisory Services (Aprio, listed on Built In NYC)", publisher: "Aprio via Built In NYC", type: job-posting, url: "https://www.builtinnyc.com/job/accounting-manager-client-accounting-advisory-services/11189037", date: "2026-09-15", access: full, locator: "responsibilities 'Financial Modeling & FP&A'" }
     - { ref: COSO-GENAI-2026, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://auditoresinternos.es/wp-content/uploads/2026/02/Achieving-Effective-Internal-Control-Over-Generative-AI_COSO_compressed.pdf", date: "2026-02", access: full, locator: "p. 14" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a practice entry (B; Armanino 2024) and a discourse entry (C; announced client-facing Q&A and forecasts).
     Grade B reflects a named but dated, non-generative deployment; the generative and conversational parts are
@@ -635,7 +635,7 @@
   sources:
     - { ref: JOFA-REALLIFE-2025, title: "Real-life ways accountants are using AI", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jun/real-life-ways-accountants-are-using-ai/", date: "2025-06-01", access: full, locator: "section on Glenn Hopper, Eventus Advisory Group (payoff, difficulty, cost)" }
     - { ref: CFODIVE-FRACTIONAL-2026, title: "Fractional CFOs see demand surge in AI age", publisher: "CFO Dive", type: press, url: "https://www.cfodive.com/news/fractional-cfos-see-demand-surge-ai-age/827264/", date: "2026-08-06", access: full, locator: "sections 'AI opens gates to on-demand talent' and 'An AI-enabled finance future' (Jason Hope)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firm types: Eventus Advisory Group is a mid-market advisory firm serving private and small-to-midsize public
     companies with fractional CFO and controllership work; Hope Financial Consulting is a small San Diego boutique.
@@ -726,10 +726,10 @@
     - { ref: JOFA-EXCELAGENT-2026, title: "Using an Excel agent to clean, validate, and reconcile data (G. Pan and L. Wang, University of Akron)", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/oct/using-an-excel-agent-to-clean-validate-and-reconcile-data/", date: "2026-10-01", access: full, locator: "introduction, skill design, Steps 1-3 and results paragraph" }
     - { ref: JOFA-CASAI-2026, title: "Simple but effective AI use cases for CAS (Polakoff and Voyer, CohnReznick)", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/", date: "2026-01-01", access: full, locator: "use-case category 'Client onboarding' and the 30-to-60-day pilot advice" }
     - { ref: JOFA-CASTIPS-2025, title: "Tips for providing the CAS services clients want", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jul/tips-for-providing-the-cas-services-clients-want/", date: "2025-07-01", access: full, locator: "section 'Build your technology stack wisely'" }
-    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?'" }
+    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "quoted CEO note in the related-article block" }
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "Intelligent Onboarding (beta from late July 2026)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges four candidates: cleanup sold as a project (practice B), onboarding and migration automation (discourse B),
     agent cleanup of historical books (discourse C) and the Excel-agent skill (governance C). Ladder and scope follow
@@ -808,7 +808,7 @@
     - { ref: ACCTODAY-AITHOUGHT-2026, title: "AI Thought Leaders Survey 2026: Process Predictions", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/list/ai-thought-leaders-survey-2026-process-predictions", date: "2025-12-30", access: full, locator: "Misherghi (BILL) quote on pre-processing" }
     - { ref: AFP-PAYFRAUD-2026, title: "Over 75% of US Firms Experienced Payments Fraud in 2025, While AI Adoption for Fraud Mitigation Lags", publisher: "Association for Financial Professionals (survey underwritten by Truist)", type: survey, url: "https://www.financialprofessionals.org/about/learn-more/press-releases/Details/over-75-percent-of-us-firms-experienced-payments-fraud-in-2025-while-ai-adoption-for-fraud-mitigation-lags", date: "2026-04-14", access: full, locator: "key findings list" }
     - { ref: INTUIT-ACCTTECH-2026, title: "The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future", publisher: "CPA Practice Advisor (reporting the Intuit QuickBooks survey, n=725, May 2026)", type: survey, url: "https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807", date: "2026-07-02", access: full, locator: "section 'Are You a Firm of the Future' (53% invoicing and payments)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges two AP candidates (practice C, discourse C) and the governance angle's payment-fraud screening idea (C,
     adjacent survey). Vendors only (BILL, Xero, Tipalti, Ramp); no named firm outcome for AP agents in CAS was found.
@@ -869,7 +869,7 @@
     - { ref: ACCTODAY-RAMPSTACK-2026, title: "Ramp launches Stack, made specifically for accounting firms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ramp-launches-stack-made-specifically-for-accounting-firms", date: "2026-06-03", access: full, locator: "paragraph 3 and the payroll example in paragraph 9" }
     - { ref: PILOT-AIACCOUNTANT-2026, title: "Pilot Unveils AI Accountant", publisher: "Pilot (company blog)", type: vendor, url: "https://pilot.com/blog/pilot-unveils-ai-accountant-a-major-leap-toward-artificial-general-intelligence-in-accounting", date: "2026-02-04", access: full, locator: "sentence on ticking and tying payroll liabilities" }
     - { ref: JOFA-CASTIPS-2025, title: "Tips for providing the CAS services clients want", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jul/tips-for-providing-the-cas-services-clients-want/", date: "2025-07-01", access: full, locator: "definition of CAS services (bookkeeping and payroll to CFO-level work)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a payroll-preparation candidate (practice C) and a payroll-entry candidate (discourse C). Vendors only; no
     firm deployment named and no AI-specific discussion of running payroll or filing payroll taxes found. Payroll is
@@ -922,7 +922,7 @@
     - { ref: CPAPA-ELEV8-2026, title: "How an AI-Native Accounting Platform Helped One Solo Firm Reclaim 90 Hours a Month and Scale Advisory Without Hiring", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/07/21/how-an-ai-native-accounting-platform-helped-one-solo-firm-reclaim-90-hours-a-month-and-scale-advisory-without-hiring/187093/", date: "2026-07-21", access: full, locator: "section 'Reinventing the Month-End Close', paragraph on client communication" }
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "section 'Intuit Accountant Suite: The Firm's Control Tower'" }
     - { ref: ACCOUNTEX-2026, title: "Accountex London 2026: product roundup", publisher: "Financial Accountant (IFA)", type: press, url: "https://financialaccountant.co.uk/blog/accountex-london-2026-product-roundup/", date: "2026-05-19", access: full, locator: "section 'Intuit QuickBooks' (questions and answers in the transaction feed)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges an idea (practice D) and a discourse candidate (C). Graded C because the AI-specific contribution is not
     isolated and the only named result is attributed to platform collaboration. For return-season intake chasing, see
@@ -967,7 +967,7 @@
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "section 'Intuit Accountant Suite: The Firm's Control Tower'" }
     - { ref: ACCTODAY-RAMPSTACK-2026, title: "Ramp launches Stack, made specifically for accounting firms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ramp-launches-stack-made-specifically-for-accounting-firms", date: "2026-06-03", access: full, locator: "paragraph 5 (Advisor Console)" }
     - { ref: FLOQAST-CASCASE-2026, title: "How One CAS Practice Uses FloQast AI Transaction Matching to Scale Client Support (case study PDF)", publisher: "FloQast", type: vendor, url: "https://get.floqast.com/hubfs/Assets/Case%20Studies/FloQast_MillerCooper_CAS_Case_Study_August_2026.pdf", date: "2026-08", access: full, locator: "section 'The Challenge' (25 to 65 professionals; checklists routed to job managers)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Vendor sources only (Intuit, Ramp); the FloQast case supplies the pain, not an AI monitoring result. See
     professional-services-delivery-management-05 for the firm-operations version of portfolio monitoring.
@@ -988,8 +988,8 @@
     (JOFA-REALLIFE-2025).
   solution: >-
     The controller of the Capital Area Food Bank built an automation that scans each item, summarizes it with AI,
-    opens a ticket in the team's workflow system with the summary and the original, and supports status look-ups and
-    follow-up actions.
+    opens a ticket in the team's workflow system (Jira) with the summary and the original, and supports status
+    look-ups and follow-up actions.
   outcomes:
     - lever: capacity
       description: "Staff time saved per week (controller's estimate, June 2025)."
@@ -1005,12 +1005,12 @@
   human_checkpoints:
     - "Staff review tickets and act on them"
   role_evolution: >-
-    The controller built the automation himself, which shows the in-house controllership role taking on
-    workflow-builder tasks (JOFA-REALLIFE-2025).
+    The controller built the automation himself in Microsoft Power Automate, drawing on his own experience with the
+    tool (JOFA-REALLIFE-2025).
   evidence_grade: B
   sources:
     - { ref: JOFA-REALLIFE-2025, title: "Real-life ways accountants are using AI", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jun/real-life-ways-accountants-are-using-ai/", date: "2025-06-01", access: full, locator: "section on Karl Spanbauer, controller of the Capital Area Food Bank" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Organization type: in-house finance team at a not-for-profit, not a CAS provider; included because the module
     covers in-house teams. The source is about 16 months old. Controls over firm-built automations are in -22.
@@ -1070,7 +1070,7 @@
     - { ref: APRIO-JOB-2026, title: "Accounting Manager, Client Accounting & Advisory Services (Aprio, listed on Built In NYC)", publisher: "Aprio via Built In NYC", type: job-posting, url: "https://www.builtinnyc.com/job/accounting-manager-client-accounting-advisory-services/11189037", date: "2026-09-15", access: full, locator: "responsibilities 'Quarterbacking' and 'Process & Delivery Innovation'" }
     - { ref: ACCTODAY-MAVI-2026, title: "MAVI offers AI-aided international financial talent service", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/mavi-offers-ai-aided-offshore-financial-talent-service", date: "2026-09-30", access: full, locator: "paragraphs on mid-level talent shortage" }
     - { ref: TAXADV-7216-2026, title: "Tax ethics and risk management: common questions and answers, part 1", publisher: "The Tax Adviser (AICPA)", type: professional-body, url: "https://www.thetaxadviser.com/issues/2026/aug/tax-ethics-and-risk-management-common-questions-and-answers-part-1/", date: "2026-08-31", access: full, locator: "Sec. 7216 section" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a practice entry (B) with the governance angle's offshore data-control idea (D), kept here as a guardrail.
     Firm types: CohnReznick is a Top 100 firm; Aprio is a Top 20 firm; MAVI is a talent vendor. No measured effect of AI
@@ -1131,8 +1131,8 @@
     - { ref: ACCTODAY-MERIDIAN-2026, title: "Pilot touts Meridian, says AI comparable to seasoned accountant", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pilot-touts-meridian-says-ai-comparable-to-seasoned-accountant", date: "2026-06-16", access: full, locator: "paragraphs on integrations" }
     - { ref: ACCTODAY-BIGYEAR-2026, title: "A big year for AI in accounting", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/a-big-year-for-ai-in-accounting", date: "2026-02-04", access: full, locator: "Ellen Choi (Edgefield Group) paragraph on constrained cases" }
     - { ref: DIGITS-BENCH-2026, title: "Breaking: AI Can't Close Your Books From the Outside (Yes, Including Jev)", publisher: "Digits", type: vendor, url: "https://digits.com/blog/ai-cant-close-books-from-outside/", date: "2026-10-07", access: full, locator: "summary section" }
-    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?'" }
-  last_reviewed: "2026-10-20"
+    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges the AI Accountant parts of a practice candidate and a discourse candidate (both C); the firm-facing Meridian
     product is in -03. Organization type: AI-native provider. Graded C because the only measurements are the vendor's
@@ -1182,8 +1182,8 @@
     - { ref: ACCTODAY-ACCRUAL-2026, title: "Accrual acquires Puzzle's tech to add to their CAS offering", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/accrual-acquires-puzzles-tech-to-add-to-their-cas-offering", date: "2026-09-02", access: full, locator: "paragraph 4 (Orloff on the partner model)" }
     - { ref: WOODARD-EP163-2026, title: "AI, Scams, and the Future of CAS in a Changing Profession (Episode 163)", publisher: "The Woodard Report", type: podcast, url: "https://report.woodard.com/articles/ai-scams-future-of-cas-ombwr-twrpod", date: "2026-03-18", access: full, locator: "section 'A new chapter for Botkeeper and a bigger shift in CAS' (written summary)" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "opening paragraphs" }
-    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?'" }
-  last_reviewed: "2026-10-20"
+    - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?' (page revised after first publication; status checked 7 September 2026)" }
+  last_reviewed: "2026-10-21"
   notes: >-
     Organization types: AI-native providers (Pilot, Xendoo, Decimal) and vendors (Puzzle, Accrual). Pattern is 'other':
     a provider-and-partner delivery model rather than a workflow pattern. Ladder reflects the provider's agent doing
@@ -1231,7 +1231,7 @@
   sources:
     - { ref: ACCTODAY-CLA-2026, title: "CLA working with Digits to develop proprietary AI model", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/cla-working-with-digits-to-develop-proprietary-ai-model", date: "2026-07-21", access: full, locator: "paragraphs 1-4 (announcement, CAAS rollout, three-year plan, Engler quotes)" }
     - { ref: ACCTODAY-COHNPOD-2026, title: "The meeting of CAS and AI (On the Air podcast with Kane Polakoff, Intuit-sponsored)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/at-intuit-sponsored-podcast-03-16", date: "2026-03-16", access: full, locator: "transcript 03:58-04:36 (build, GL-native or integrated provider)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a practice and a discourse candidate (both C) and the state-of-AI file's 'incumbent plus platform' scenario.
     CLA is described by the source as a Top 20 firm; Digits is a vendor. The two inputs disagreed on the ladder
@@ -1286,7 +1286,7 @@
     - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants (eCFR)", publisher: "U.S. Securities and Exchange Commission via eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-01", access: full, locator: "paragraph (c)(5) contingent fees" }
     - { ref: NYSSCPA-CONTFEE-2015, title: "Doing the Right Thing: When is a Contingent Fee Arrangement Considered an Act Discreditable?", publisher: "NYSSCPA, The Trusted Professional", type: professional-body, url: "https://nysscpa.org/news/1095984-doing-the-right-thing-when-is-a-contingent-fee-arrangement-considered-an-act-discreditable-2015-01-01", date: "2015-01-01", access: full, locator: "text on Section 1.510" }
     - { ref: DIGITS-WRITEMCP-2026, title: "Agentic Accounting With Confidence: Introducing Write MCP and Locked Period Controls", publisher: "Digits", type: vendor, url: "https://digits.com/blog/write-mcp/", date: "2026-10-13", access: full, locator: "paragraph on a firm's close flowcharts for outcome-based pricing" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a practice candidate (C) and the independence-pricing candidate (vendor-published). Organization type:
     vendor pricing to firms. A Digits blog says one unnamed firm used Claude to build close flowcharts for clients to
@@ -1339,7 +1339,7 @@
     - { ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "section 'AI services can raise independence concerns for attest clients'" }
     - { ref: KARBON-ENGAGE-2026, title: "23 must-see sessions at AICPA & CIMA ENGAGE 2026", publisher: "Karbon Magazine", type: conference, url: "https://karbonhq.com/resources/aicpa-cima-engage-2026/", date: "2026-05-21", access: full, locator: "session 'AI conversations and integration' (scheduled abstract for 2026-06-09)" }
     - { ref: WOODARD-TWR-2025, title: "TWR Podcast Episode 120: How CAS and AI Are Reshaping the Top 100 Firms", publisher: "The Woodard Report", type: podcast, url: "https://report.woodard.com/articles/twr-podcast-episode-120-how-cas-and-ai-are-reshaping-the-top-100-firms-oaiwr-twrpod-bllwr", date: "2025-04-30", access: full, locator: "section 'AI is coming fast, but it's not quite here yet' (written summary)" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Firms: Bonadio (Top 50 per the source) and a boutique fractional CFO. B reflects named practitioners describing
     live client conversations without outcomes. An ENGAGE 2026 session on AI conversations with clients (Weaver and
@@ -1420,7 +1420,7 @@
     - { ref: JOFA-ETHAI-2026, title: "Accounting ethics in the age of AI", publisher: "Journal of Accountancy (AICPA Professional Ethics Division)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/", date: "2026-08-05", access: full, locator: "human in the loop section (automation, overconfidence, anchoring bias)" }
     - { ref: DIGITS-WRITEMCP-2026, title: "Agentic Accounting With Confidence: Introducing Write MCP and Locked Period Controls", publisher: "Digits", type: vendor, url: "https://digits.com/blog/write-mcp/", date: "2026-10-13", access: full, locator: "Locked Periods section" }
     - { ref: CPAPA-INTUITCONNECT-2026, title: "Intuit Connect ON: What You Need to Know About the Latest Platform Innovations", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/26/intuit-connect-on-what-you-need-to-know-about-the-latest-platform-innovations/185810/", date: "2026-06-26", access: full, locator: "section on skill-run audit trail" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Idea (grade D). Merges five governance candidates, all D: validation and exit thresholds, risk-tiered review gates,
     agent inventory, SOC mapping and reviewer calibration. They share sources and are one control package in the
@@ -1505,7 +1505,7 @@
     - { ref: JOFA-CHECKLIST-2026, title: "New checklist helps CPAs manage AI cyber risks", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/oct/new-checklist-helps-cpas-manage-ai-cyber-risks/", date: "2026-10-01", access: full, locator: "sections 'AI and vibe coding' and 'Data classification and governance'" }
     - { ref: LINFORD-SQMS-2024, title: "AICPA Quality Management Standard (SQMS) No. 1 (and why you should care)", publisher: "Linford and Company", type: firm, url: "https://linfordco.com/blog/aicpa-quality-management-standards-sqms-1/", date: "2024-09-25", access: full, locator: "opening paragraphs" }
     - { ref: HEPLER-CPALIAB-2026, title: "Professional Liability Risks for CPA Firms in 2026", publisher: "HeplerBroom (G. E. Davis)", type: firm, url: "https://heplerbroom.com/wp-content/uploads/2026/06/accounting-malpractice-white-paper-8JY697202.pdf", date: "2026-06", access: full, locator: "Generative AI Risks and Governance sections" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges four governance candidates: firm AI policy and logging (C), no-training contract terms and data segregation
     (D), guardrails for firm-built agents (D) and SQMS No. 1 (D). Grade C rests on survey figures; no firm reports a
@@ -1570,7 +1570,7 @@
     - { ref: CPAPA-SETTLE-2026, title: "What to Settle Before Client Tax Data Touches AI", publisher: "CPA Practice Advisor (contributor S. de la Fe)", type: press, url: "https://www.cpapracticeadvisor.com/?p=191491", date: "2026-10-12", access: full, locator: "paragraphs on 7216 consent" }
     - { ref: WOODARD-ENGLETTERS-2025, title: "Future Ready Engagement Letters (webinar deck)", publisher: "Woodard", type: firm, url: "https://www.woodard.com/hubfs/Future_Ready_Engagement_Letters_Oct2025.pdf", date: "2025-10", access: full, locator: "slide 'AI Disclosure and Consent Clause'" }
     - { ref: ZUELLIG-AIPOLICY-2026, title: "AI Policy for Service Providers/Consultants (version 2025.12.15)", publisher: "Zuellig Pharma", type: firm, url: "https://edge.sitecorecloud.io/zuelligphar3c90-zpcms-prod-4532/media/Project/Corporate/Policy/Zuellig-Pharma--AI-Policy-for-Service-Providers-Consultants---25022026.pdf", date: "2026-02", access: full, locator: "sections 1 and 3" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merges a governance candidate on disclosure and consent (C) with one on client-imposed AI policies (B, but
     adjacent: Zuellig Pharma is a healthcare distributor and nothing links its policy to accounting providers). Graded C
@@ -1619,13 +1619,13 @@
     - "The AICPA says developing or hosting an AI system for an attest client can raise independence concerns (JOFA-ETHAI-2026)."
     - "The IESBA Code allows bookkeeping for a non-PIE audit client only if routine or mechanical, assesses automated services by what the technology does, and treats hosting or storing an audit client's data as assuming a management responsibility (IESBA-TECHREV-2023, R601.5, 606.3 A1)."
     - "Contingent fees on any service to an issuer audit client impair independence (SEC-RULE2-01-2026, (c)(5))."
-    - "Firm structure is moving: Crowe's attest firm stays separate from the KKR-backed advisory arm and says some services may not be available to attest clients (CROWE-KKR-2026); the AICPA ethics committee was still discussing a second exposure draft on alternative practice structures in August 2026 (JOFA-PEEC-2026)."
+    - "Firm structure is moving: with KKR's investment closed, Crowe LLP keeps attest services while Crowe Advisory LLC provides tax, advisory and other non-attest services, and Crowe says some services may not be available to attest clients (CROWE-KKR-2026); the AICPA ethics committee agreed in August 2026 to continue discussing a second exposure draft on alternative practice structures at an interim October meeting (JOFA-PEEC-2026)."
   human_checkpoints:
     - "Ethics or independence partner review before engagement acceptance or a new service"
     - "Client's suitably skilled person accepts management responsibility for the service in writing"
   role_evolution: >-
-    Not addressed by the sources. A 2016 JofA article describes firms that required a client to be entered in the
-    independence system before a client number could be assigned (JOFA-NONATTEST-2016).
+    Not addressed by the sources. A 2016 JofA article describes a firm whose billing system required an engagement
+    to be entered in the independence monitoring system before a client number was assigned (JOFA-NONATTEST-2016).
   evidence_grade: D
   sources:
     - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants (eCFR)", publisher: "U.S. Securities and Exchange Commission via eCFR", type: regulator, url: "https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01", date: "2026-10-01", access: full, locator: "paragraphs (b), (c)(4)(i)-(x) and (c)(5) (version dated 2026-10-01)" }
@@ -1635,7 +1635,7 @@
     - { ref: IESBA-TECHREV-2023, title: "Final Pronouncement: Technology-related Revisions to the Code (updated May 30, 2023)", publisher: "IESBA", type: standard-setter, url: "https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code", date: "2023-04-11", access: full, locator: "R601.5, 601.5 A1-A3, 606.3 A1-A2 (effective for periods beginning on or after Dec 15, 2024)" }
     - { ref: CROWE-KKR-2026, title: "Crowe closes strategic investment from KKR", publisher: "Crowe", type: firm, url: "https://www.crowe.com/news/crowe-closes-strategic-investment-from-kkr", date: "2026-08-07", access: full, locator: "release text and legal footer (read through a mirror)" }
     - { ref: JOFA-PEEC-2026, title: "PEEC to continue discussions on alternative practice structures", publisher: "Journal of Accountancy", type: professional-body, url: "https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/", date: "2026-08-10", access: full, locator: "paragraphs 1-3" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Idea (grade D): a compliance step, not a measured practice. Built from the governance candidate on independence
     screening and the independence-pricing research. This is the independence flag for the module: CAS bookkeeping,

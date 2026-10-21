@@ -6,7 +6,7 @@ Source keys follow `PUBLISHER-SHORT-YYYY`. Where the archetype's `sources.md` al
 
 ## 1. Summary
 
-- **No AI-related peer-review finding is public.** I found none in any place a finding could appear: the Tennessee Society of CPAs 2025 annual peer review report (424 firms), the table of contents of six AICPA Reviewer Alert editions (Oct 2025 to Sep 2026), the AICPA Peer Review Conference listing (Aug 2026), and the AICPA's own August 2025 guide to the quality-management standards. The only peer-review signal tied to technology is indirect: from June 2026 the AICPA asked reviewers of SOC 2 practices to look at a firm's reliance on third-party SOC platforms, and said weak results there can point to a problem in the firm's system of quality management. Full texts of the Reviewer Alerts and of the AICPA's quality-management peer review report are behind a login, so absence is established for titles and public reports, not for member-only text.
+- **No AI-related peer-review finding is public.** I found none in any place a finding could appear: the Tennessee Society of CPAs 2025 annual peer review report (424 firms), the table of contents of six AICPA Reviewer Alert editions (Oct 2025 to Sep 2026), the AICPA Peer Review Conference listing (Aug 2026), and the body of the August 2025 Journal of Accountancy article on the AICPA's quality-management resources. The only peer-review signal tied to technology is indirect: from May to June 2026 the AICPA told reviewers of SOC 2 practices to look at a firm's reliance on third-party SOC platforms, and said weak results there can point to a problem in the firm's system of quality management. Full texts of the Reviewer Alerts and of the AICPA's quality-management peer review report are behind a login, so absence is established for titles and public reports, not for member-only text.
 - **Small-firm SQMS is the clock that makes AI governance a peer-review matter.** Firms had to have a system of quality management by 15 Dec 2025; the first annual evaluation falls due by 15 Dec 2026; the first peer reviews of work done under the new standards were expected to begin in 2026. The AICPA practice aid (13 Oct 2026, nonauthoritative) now tells firms to set quality-management policies for AI tools, but the primary document is member-only and only the AICPA release and trade-press summaries were read. No small-firm commentary on the practice aid was found.
 - **The AICPA is moving to own assurance over AI.** Six days after the practice aid, the AICPA and AIUC announced a single CPA-led engagement that yields a SOC 2 report and an AIUC-1 certification. Pilots exist at "several CPA firms"; only PwC is named. Full launch is "expected" in early 2027. The one mid-market AIUC-1 accredited auditor found on a primary source is Schellman (described in its own release as a top-50 CPA firm). No measured result for the joint offering exists.
 - **PE and alternative practice structures fund AI platforms, but no one has measured the quality effect.** Crowe (No. 12) and Eide Bailly (No. 18) were reported in June 2026 as taking PE money partly to invest in AI. The PCAOB said in Dec 2025 that its inspectors will focus on firms that have taken PE capital, and that it counted more than 90 significant PE-related deals since 2020. The only empirical study found is a 2024 registered-report proposal with no results. The AICPA's independence rewrite for these structures may be re-exposed in Oct or Nov 2026 and adopted in 2027, and one former PCAOB member warns it could catch AI-tool licensing.
@@ -323,7 +323,7 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
     - "Continuous access to the client's transaction data"
     - "A CPA-owned attest entity separate from the technology company (the firm's description of APS requirements)"
   risks_and_guardrails:
-    - "She warns PEEC's 'closely aligned' technology-entity wording could pull audit-tech companies into the APS rules, and that ambiguity remains about when licensing AI audit tools creates a conflict (AT-PEIND-2026)"
+    - "Christina Ho (Oath's chief assurance officer, a former PCAOB member) warns PEEC's 'closely aligned' technology-entity wording could pull audit-tech companies into the APS rules, and that ambiguity remains about when licensing AI audit tools creates a conflict (AT-PEIND-2026)"
     - "81 comment letters were filed on the proposed rules; none from technology companies (as she described the committee's statistics, AT-PEIND-2026)"
   human_checkpoints:
     - "Site says the firm will 'elevate professionals, not replace them' and that people apply judgment; checkpoints are not specified"
@@ -482,8 +482,8 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
   last_reviewed: "2026-10-21"
   notes: >-
     Grade B on the strength of a named firm showing the service in a live posting; the posting does not say how many AI
-    governance engagements the firm has done. Firm kind: regional Top-100-class independent (privately owned, says it
-    has no PE). The posting only says 'Support AI governance advisory engagements'. Overlaps assurance-assurance-over-ai-13
+    governance engagements the firm has done. Firm kind: regional firm of 700+ employees, privately owned (says it has
+    no PE or outside-investor influence). The posting only says 'Support AI governance advisory engagements'. Overlaps assurance-assurance-over-ai-13
     (readiness assessment against ISO 42001); the new element is the pairing with SOC attest work and the independence
     boundary. Routed in part to acceptance-independence.
 
@@ -513,7 +513,7 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
     - "Agent scoped with the company's engineers and grading criteria agreed before scaling the tests"
     - "A risk-tiering framework mapping requirements to each tier"
   risks_and_guardrails:
-    - "Result is from the standard-setter's own evaluation team, published by AIUC, not by MSCI's auditors; whether the external auditors relied on it is not stated"
+    - "The tests were run by AIUC's own red team and published by AIUC, not by MSCI or its auditors; whether the external auditors relied on the report is not stated"
     - "Quarterly re-testing is required to keep AIUC-1 certification current (AIUC-Q3-2026)"
   human_checkpoints:
     - "External auditors decide how far an evaluation report supports their SOX conclusions (not described in the source)"
@@ -701,7 +701,7 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
 - SOC 2 is an examination under AICPA attestation standards with an opinion on design and operating effectiveness; the joint product is called a certification in AICPA's release [AICPA-AIUCPR-2026].
 - Peer review from 1 Jun 2026: AICPA staff outreach to team captains of SOC 2 firms; about five engagements may be compared; heightened oversight [JOFA-PEER-2026].
 - AICPA Aug 2026 ethics article on tool providers: control, financial dependency and evidence access [JOFA-SOCETH-2026].
-- AICPA SOC 1 and SOC 2 AI guidance exists (named in the practice aid release as issued earlier in 2026) [AICPA-AIPA-2026]; the TQA is covered in the existing module.
+- The AICPA release names guidance on service organisations' use of AI in SOC 1 and SOC 2 engagements as issued 'in the past year' [AICPA-AIPA-2026]; the TQA is covered in the existing module.
 
 **Frontier signals**
 - 2026-02-03 Schellman first accredited AIUC-1 auditor; first certification completed (update 2 Apr 2026) [SCHELLMAN-AIUC1-2026].
@@ -818,7 +818,7 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
 | AUDITFILE-QL-2025 | AuditFile Announces Launch of QualityLink | AuditFile | vendor | https://auditfile.com/pr/12_4_25 | 2025-12-04 | full |
 | CASEWARE-CITRIN-2026 | Citrin Cooperman & Company, LLP Adopts AI-Enabled DAS Suite Powered by Caseware | Caseware | vendor | https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth | 2026-07-13 | full |
 | CASEWARE-PKF-2026 | PKF O'Connor Davies Adopts AI-Enabled DAS Suite Powered by Caseware Verity, and Joins the Caseware Agentic Pioneer Program | Caseware | vendor | https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program | 2026-10-08 | full |
-| OATH-SITE-2026 | Oath | Swear by your numbers (home page) | Oath | firm | https://www.oathverified.com/ | 2026-10 (live page, undated) | full |
+| OATH-SITE-2026 | Oath home page ("Swear by your numbers") | Oath | firm | https://www.oathverified.com/ | 2026-10 (live page, undated) | full |
 | KAUFMAN-JOB-2026 | Cybersecurity Risk Advisory Senior Manager (job posting) | Kaufman Rossin via Workable | job-posting | https://jobs.workable.com/view/1f4ea4b5-e0d5-4cd7-9e2b-4befaf13dad6 | 2026-10-07 | full |
 | ICAS-AMBS-2026 | ICAS study finds widespread concern over genAI accounting errors (study by Alliance Manchester Business School and Aston Business School at Beever and Struthers) | The Accountant | academic | https://www.theaccountant-online.com/news/icas-study-finds-widespread/ | 2026-03-17 | full (press report; study not opened) |
 | CSA-SOC2 | The SOC 2 AI Gap: Auditors Improvise Where AICPA Has Not Acted | Cloud Security Alliance (AI Safety Initiative) | professional-body | https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/ | 2026-08-30 | full |
@@ -832,7 +832,7 @@ Mid-market framing: each entry says which kind of firm the example comes from. L
 | SCHELLMAN-AIGOV-2026 | Research Report: 2026 State of AI Governance (landing page; full report gated) | Schellman | survey | https://www.schellman.com/whitepaper/2026-state-of-ai-governance | 2026 (page undated) | full (landing page only) |
 | SENSIBA-AIUC1-2026 | LinkedIn repost that Sensiba LLP earned provisional AIUC-1 accreditation, with a first engagement under way (from a search summary; not opened) | LinkedIn (via search) | community | https://ie.linkedin.com/in/doneganshane9 | 2026 | search-only |
 
-Two keys listed in the use cases but with no separate row: none. Alias note: `AICPA-AIUC-2026` is the landscape's key for the Journal of Accountancy article on the joint offering; the AICPA release itself is `AICPA-AIUCPR-2026`.
+Alias note: `AICPA-AIUC-2026` is the landscape's key for the Journal of Accountancy article on the joint offering; the AICPA release itself is `AICPA-AIUCPR-2026`.
 
 Source count by type: press 14, professional-body 10 (incl. 1 search-only group), vendor 10, standard-setter 5, survey 3, firm 2, academic 2, conference 1, job-posting 1, community 1 (search-only). Total 49, of which 47 were opened (three only in part: landing page or teaser) and 2 are search-only.
 

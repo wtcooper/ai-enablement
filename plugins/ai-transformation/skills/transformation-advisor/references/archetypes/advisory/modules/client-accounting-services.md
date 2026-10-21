@@ -1,6 +1,6 @@
 # Client accounting services (advisory)
 
-Sources checked 2026-10-20. Use cases live in `../use-cases/client-accounting-services.yaml` (24 entries). Ids are
+Sources checked 2026-10-20 and re-verified 2026-10-21. Use cases live in `../use-cases/client-accounting-services.yaml` (24 entries). Ids are
 shortened here: `#05` means `advisory-client-accounting-services-05`; other modules' ids are in full. Source keys in
 brackets, such as [CPAPA-AGENTSCLOSE-2026], are in the YAML or in §10. **The best evidence is an association study
 and vendor benchmarks.** One entry is grade A (`#01`), resting on an independent field study (Choi and Xie) of one
@@ -35,21 +35,21 @@ ERP advisory beyond the CFO-services forecast are in advisory fpa-performance; t
 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
-| Onboarding, migration, cleanup | Chart of accounts, opening balances, bank and payroll feeds; catch-up of messy books | transaction-processing, coordination-scheduling | Weeks of catch-up; cleanups unprofitable; migration the biggest obstacle [DIGITS-TFMA-2026, JOFA-CASAI-2026] |
+| Onboarding, migration, cleanup | Chart of accounts, opening balances, bank and payroll feeds; catch-up of messy books | transaction-processing, coordination-scheduling | Weeks of catch-up; cleanups unprofitable; migration often called the biggest obstacle [DIGITS-TFMA-2026, FLOQAST-CASCASE-2026, CPAPA-ELEV8-2026] |
 | Transaction coding | Bank, card and receipt categorization against each client's house rules | transaction-processing | Manual data cleanup is the top advisory blocker (30%) [INTUIT-ACCTTECH-2026] |
 | Reconciliation | Bank, card, clearing accounts, payroll liabilities | transaction-processing, review-assurance | Fragile rules; duplicates, hidden fees and sync timing [DIGITS-BANKREC-2025] |
 | Month-end close | Entries, accruals, review, sign-off, lock the period | data-reporting, review-assurance | Clients expect about 10-12 days; headcount caps capacity [ACCTODAY-COHNPOD-2026] |
-| Reporting | Package, variance commentary, KPI dashboards | document-production, data-reporting | Late static PDFs; dashboards slow to build [ACCTODAY-CASKEYS-2026] |
+| Reporting | Package, variance commentary, KPI dashboards | document-production, data-reporting | Commentary added late; static PDFs; dashboards slow to build [JOFA-CASAI-2026, DIGITS-TFMA-2026, ACCTODAY-CASKEYS-2026] |
 | AP, bill pay, payroll | Invoice capture and coding, approvals, payments; payroll prep and entries | transaction-processing | Re-keying from email; payment fraud; client-by-client reports [ACCTODAY-GUSTO-2026, AFP-PAYFRAUD-2026] |
 | Controllership, fractional CFO | Memos, budgets, 13-week cash flow, board packs, advice | expert-judgment | Scarce senior time; hours-based fees [CFODIVE-FRACTIONAL-2026] |
 | Client collaboration | Questions, document chasing, status | client-interaction, coordination-scheduling | Email replies took 10-12 days at one firm [DIGITS-ELEV8-2026] |
 | Practice layer | Checklists, portfolio status, offshore pods, tool approval | coordination-scheduling | About 10 apps per firm, 41% fully integrated, about 5 hours a week re-keying [INTUIT-ACCTTECH-2026] |
 
-**Context.** In Accounting Today's 2026 Top 100, 85% of 88 responding firms reported CAS growth
+**Context.** In a recent Accounting Today survey, 85% of 88 responding Top 100 Firms reported a boost in CAS
 [ACCTODAY-BONADIO-2026]; the 2024 CAS Benchmark Survey (CPA.com and AICPA PCPS, 200+ respondents) found median growth
-of 17% [JOFA-CASTIPS-2025]. Withum says its CAS practice reached $70M in seven years and that advisory "sells best next
-to CAS" [ACCTODAY-CASKEYS-2026]. Bonadio's CAS leader describes an "evaporation of traditional bookkeepers"
-[ACCTODAY-BONADIO-2026].
+of 17% [JOFA-CASTIPS-2025]. Withum's advisory leader says an advisory practice built on a small CAS team reached "$70
+million in revenue in the space" in seven years and that advisory "sells best next to CAS" [ACCTODAY-CASKEYS-2026].
+Bonadio's outsourced accounting leader describes an "evaporation of traditional bookkeepers" [ACCTODAY-BONADIO-2026].
 
 ## 3. Where AI is changing the work
 
@@ -61,14 +61,15 @@ the only grade A is at automate-step (`#01`). Four entries are controls or ideas
 **Transaction coding and reconciliation**
 - Automate: `#01` confidence-gated categorization; uncertain items go to an accountant (Choi and Xie: 7.5-day shorter
   close, 12% more granular ledgers, associations). `#02` AI matching with a short exceptions list (unnamed Top 100
-  firm: 8 to 5 hours on specific reconciliations, vendor case study).
+  firm: 8 to 5 hours on specific reconciliations, vendor case study; Hiline named by Digits, no figure).
 - Improve: `#04` staff post entries via a general assistant with ledger write access and locked periods (Arclow).
 
 **Close and reporting**
 - Delegate: `#03` agents prepare the close across a portfolio and accountants approve entries and review finished
   books (Pilot Meridian, Ramp Stack, BlackLine Verity Prepare, Basis, Arclow; CohnReznick pilot being set up).
 - Automate: `#05` continuous close and automated packages on an AI-native ledger (solo firm: close 18 to 5 days).
-- Improve: `#06` AI-drafted variance commentary and live dashboards (Withum, Bonadio, small firms). `#07`
+- Improve: `#06` AI-assisted live dashboards and variance explanations (Bonadio, small firms; Withum's view; no named
+  firm reports AI-drafted commentary). `#07`
   forecasts, budgets and on-demand finance answers from ledger data (Armanino 13-week cash flow, 2024).
 
 **Controllership and fractional CFO**
@@ -145,8 +146,9 @@ communication and quality assurance, 55% more weekly client support (working pap
   look-up agent 88.9%, 12 outsourced accountants seeing the books cold 79.1% `#01`.
 - DualEntry: best of 19 general models 77.3% on 101 workflows (March 2026); leaderboard top 91.1% when read in October,
   with classification well above AR and month-end close `#01`, `#21`. Intuit bank-feed accuracy about 78% to nearly 88%.
-- Mercor lab study (third party, simulated close tasks): AI 100% on 20 of 20 attempts, 12 junior CPAs generally below
-  50%; people with an assistant took about 15 times longer than the model alone `#03`, `#04`.
+- Mercor lab study (third party, simulated close tasks): AI 100% on 20 of 20 attempts; 12 licensed CPAs averaging
+  about five and a half years' experience (Mercor calls them junior) generally below 50%; people with an assistant took
+  about 15 times longer than the model alone `#03`, `#04`.
 - Penrose (one SaaS business, mid-2025 models): balances within 1% early, more than 15% off after several months;
   revenue overstated 5-30% `#03`.
 
@@ -165,7 +167,7 @@ grew 47%, not attributed to AI [JOFA-CASTIPS-2025].
 - 67% of 200+ firm leaders agree AI is pushing them toward CAS; 9% report substantial results on scaling capacity
   without headcount; fixed fee 66%, hourly 60% [BILL-AIAMBITION-2026].
 - 29% of firms offshore (AICPA PCPS and CPA.com) `#15`. The JofA says 90% of CAS practices sell fixed-fee recurring
-  services, with no named source [JOFA-CASTIPS-2025]. CAS margins "over 40%" at some firms and 60-70% gross margin
+  services, citing no source [JOFA-CASTIPS-2025]. CAS margins "over 40%" at some firms and 60-70% gross margin
   in Woodard's consulting data, unaudited [WOODARD-TWR-2025]. Interim CFO demand up 14% year on year (Business Talent
   Group, cited by CFO Dive) [CFODIVE-FRACTIONAL-2026].
 
@@ -201,17 +203,20 @@ consent decisions.
 ## 7. Roles and how they evolve
 
 - **From keying to reviewing.** Choi and Xie find time moving from data entry to communication and quality assurance,
-  with experienced accountants gaining more (`#01`). A Digits customer says the role has "flipped" to reviewing
-  exceptions (`#02`).
+  with experienced accountants gaining more (`#01`). Hiline's accounting services manager says AI bank reconciliations
+  "flipped" her role to reviewing exceptions, and FloQast's case firm describes moving from ticking and tying to
+  client consulting (`#02`).
 - **Seniors move up a layer.** CohnReznick expects senior accountants to do more review and client time; a Deloitte
   contributor expects staff to orchestrate AI-prepared work (`#03`). Pilot sets success as more clients per
   accountant and less review time per close.
-- **Reporting to interpreting.** Bonadio calls CAS "the quarterback between advisory and compliance"; Aprio's CAAS
-  manager posting lists dashboards, board narratives, 13-week cash flow and AI-enabled templates (`#06`, `#07`).
+- **Reporting to interpreting.** Bonadio's outsourced accounting leader calls the practice "the quarterback between
+  advisory and compliance"; Aprio's CAAS manager posting lists dashboards, board narratives, 13-week cash flow and
+  AI-enabled delivery methodologies (`#06`, `#07`).
 - **The CFO as AI guide.** A fractional CFO calls helping clients adopt AI "a new responsibility for the CFO" (`#08`,
   `#20`). **Offshore work becomes review work** (CohnReznick), with mid-level roles harder to fill (`#15`).
 - **New roles**: agent owners and AI leads (`#21`, `#22`); controllers who build automations (`#14`); vendors hiring
-  accountants to write agent procedures (Basis) and solutions engineers with CAS experience (Pilot) (`#03`).
+  accountants to write agent procedures and skills (Basis) and solutions engineers with three to five years of public
+  accounting experience in audit, tax or CAS (Pilot) [BASIS-JOBS-2026, PILOT-JOBS-2026] (`#03`).
 - **Juniors and the pipeline.** Juniors accept uncertain AI output more readily (`#01`). Hiring signals: strategic
   judgment (38%) and AI fluency (22%) lead; 56% say an entry-level hire needs six months or more to reach full
   billable capacity [INTUIT-ACCTTECH-2026]. Stanford/ADP data show employment of 22-25-year-olds in AI-exposed
@@ -233,8 +238,9 @@ consent decisions.
   Research [ACCTODAY-RAMPSTACK-2026, ACCTODAY-MERIDIAN-2026, CPAPA-INTUITCONNECT-2026, STANFORD-JAR-2026].
 - **2026-06-24** IRS OPR guidance on AI in tax practice, including fees for time not spent [IRS-OPR-2026].
 - **2026-07-21 / 07-27** CLA announces a firm-trained model with Digits for its CAAS practice; BlackLine makes
-  Verity Prepare agents generally available [ACCTODAY-CLA-2026, CPAPA-BLACKLINE-2026].
-- **2026-08-07** Crowe closes KKR's investment in its non-attest arm [CROWE-KKR-2026].
+  Verity Prepare generally available [ACCTODAY-CLA-2026, CPAPA-BLACKLINE-2026].
+- **2026-08-07** Crowe closes KKR's strategic investment; Crowe LLP keeps attest work and Crowe Advisory LLC provides
+  non-attest services [CROWE-KKR-2026].
 - **2026-09-02** Accrual buys Puzzle's firm technology; CAS offering in early access, wider by end of 2026 [ACCTODAY-ACCRUAL-2026].
 - **2026-10-01 to 10-16** Mercor and Digits benchmarks published [MERCOR-APEX-2026, DIGITS-BENCH-2026, ACCTODAY-AIBENCH-2026].
 - **2026-10-09 / 10-13** Gusto adds AI-guided payroll prep; Digits ships agent write access with locked periods
