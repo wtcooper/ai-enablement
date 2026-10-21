@@ -10,7 +10,7 @@ used curl, pdftotext and the r.jina.ai mirror, plus three extra fetches: the KPM
 and a Cuatrecasas note on the EU AI Omnibus. No web search was used. For each source I checked that it exists, its date
 (byline, `article:published_time`, JSON-LD, PDF metadata), every figure, and who said what. I also checked every
 cross-reference to another module or archetype: all 30 exist and their titles match what the text says about them.
-`scripts/validate.py` reports 0 errors. The module is now 300 lines, which is the limit.
+`scripts/validate.py` reports no errors in these two files. Its only error is in another agent's file: `client-accounting-services.md` is over the line limit. The module is now 300 lines, which is the limit.
 
 ## Counts
 

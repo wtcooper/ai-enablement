@@ -1,10 +1,10 @@
 # Private client (advisory)
 
-Sources checked 2026-10-20. Use cases live in `../use-cases/private-client.yaml` (17 entries). Ids are shortened
+Sources checked 2026-10-20 and re-verified 2026-10-21. Use cases live in `../use-cases/private-client.yaml` (17 entries). Ids are shortened
 here: `#04` means `advisory-private-client-04`; other modules' ids are in full. Source keys in brackets, such as
 [ARMANINO-FOTRENDS-2026], are in the YAML or in §10. **Evidence is thin and mostly self-interested.** No entry is
-graded A. 5 of 17 are graded B, and those rest on named deployments without measured results. 9 are C and 3 are D
-(ideas). Nearly every source is a vendor, bank, law firm or advisory firm that sells to family offices; every
+graded A. 6 of 17 are graded B, and those rest on named deployments without measured results (one carries a
+practitioner's time estimate). 8 are C and 3 are D (ideas). Nearly every source is a vendor, bank, law firm or advisory firm that sells to family offices; every
 family-office survey here is published by a bank, administrator or advisory firm. No source reports an error rate,
 override rate, parallel run, client-satisfaction measure or inspection finding for this module. Say so when you
 quote a figure.
@@ -43,10 +43,10 @@ management, manager selection) is out of scope. How the firm prices and staffs t
 | Alternative-investment administration | Collect capital calls, distributions, valuation statements and K-1s from each manager's portal; enter them in one system | transaction-processing, data-reporting | Every manager has its own format and schedule; K-1s arrive late by design and push returns onto extension [ARMANINO-FOTRENDS-2026]; in one conference poll, 36% named collecting the documents as the main problem [CANOE-FOALTS-2026] |
 | Consolidated reporting | Entity roll-up, commentary and dashboards for principals, family councils and advisors | data-reporting, document-production | 73% of RBC and Campden respondents say investment reporting is still too manual, a top concern three years running [RBC-CAMPDEN-2026] |
 | Payment approval and controls | Approval hierarchies, dual authorization, vendor access reviews | review-assurance | Informal approvals by email [AGILLINK-FOPRED-2026]; AI-generated voice, video and text make payment requests look real [CFO-DEEPFAKE-2026] |
-| Fund document reading | Read and compare LP (limited partnership) agreements and other fund documents | review-assurance, research-synthesis | Small offices read long documents with little legal support (`#06`) |
+| Fund document reading | Read and compare LP (limited partnership) agreements and other fund documents | review-assurance, research-synthesis | Long agreements to compare against standard language during due diligence (`#06`) |
 | Succession and governance advice | Succession plans, involving the next generation, decision rights | expert-judgment, client-interaction | Many families have no complete plan, but surveys define a plan differently (see §5) |
 | Owner exit readiness | Value-building and readiness conversations with business owners | expert-judgment, client-interaction | Exits depend on leadership alignment, decision-making and institutional knowledge [EPI-AIWEBINAR-2026] |
-| Client experience | Meetings, follow-up, service requests, portals and live views | client-interaction, coordination-scheduling | Principals expect timely insights rather than periodic summaries, per a panel speaker [HUBBIS-ETON-2026] |
+| Client experience | Meetings, follow-up, service requests, portals and live views | client-interaction, coordination-scheduling | Principals expect timely insights rather than periodic summaries, per a Hubbis panel write-up [HUBBIS-ETON-2026] |
 | AI policy for the family | Inventory uses, approve tools, vet vendors, train staff | expert-judgment, document-production | Exposure can happen through ordinary use with no breach event [SQUIRE-FOAIRISK-2026] |
 
 ## 3. Where AI is changing the work
@@ -61,10 +61,12 @@ workflows [WISS-FOAI-2026], and Citi reports that some offices expect analysts t
 - Improve: `#02` document AI pulls capital calls, distributions and valuations into a draft that a person reviews
   (Masttro's Doc AI at Jefferson River Capital, a single family office; 200+ alternative investments tracked; vendor
   case study; B). `#04` AI codes transactions, reconciles across entities and banks and flags anomalies for review
-  (practitioner and vendor statements, one family-office controller posting; C). `#16` modelling cash flow from years
-  of profit-and-loss history (an unnamed office, as relayed by a Wingspan director; C).
-- Automate: `#01` (process) PKF O'Connor Davies announced that it plans to run family-office accounting and reporting
-  on Asseta AI's platform, which includes automated intercompany reconciliation (announced; vendor figures only; C).
+  (practitioner and vendor statements, one family-office controller posting; C). `#16` (assist) modelling cash flow
+  from five years of profit-and-loss statements with an enterprise assistant (Minot's Light Management, a family
+  office; its CEO estimates about 45 minutes against "hours"; self-reported; B).
+- Automate: `#01` (process) PKF O'Connor Davies announced a collaboration and says it plans to use Asseta AI's platform
+  to help family offices modernize, from evaluation and implementation through ongoing financial operations. The
+  vendor says the platform reconciles inter-company accounts automatically (announced; vendor figures only; C).
 - Same steps in CAS: advisory-client-accounting-services-01 (categorization), -02 (reconciliation), -03 (close
   agents) and -07 (cash-flow forecasts). K-1 extraction for the tax return is tax-compliance-individual-business-02.
 
@@ -125,8 +127,8 @@ Ask in the person's setting (accounting firm, family-office advisory firm, wealt
 8. **"Do you or an affiliate give investment advice to these families?"** Reveals SEC and FINRA exposure (§6) and
    where this module stops.
 9. **"In succession or exit work, where do you use AI and where do you refuse? How do you keep one family member's
-   information from reaching another?"** Reveals readiness for `#12`, `#13` and `#17`. Succession documents can
-   reveal unequal treatment of family members [AFS-FOAI-2024].
+   information from reaching another?"** Reveals readiness for `#12`, `#13` and `#17`. Estate and succession plans are
+   sensitive: an estate plan can reveal inconsistent treatment of family members [AFS-FOAI-2024].
 10. **"What do you keep in-house and what do you outsource: accounting, reporting, technology, cybersecurity?"**
     Reveals the operating model (`#15`) and who would own any AI.
 11. **"Who reviews machine-prepared work now, who talks to the principals, and what are you hiring for?"** Reveals
@@ -142,7 +144,7 @@ them, so none is independent, and their questions differ.
 | AI for operational tasks or investment analysis | 22%, up from 13% in 2024 | Share of family offices, Citi Wealth 2025 report; sample size not on the page [CITI-AIFO-2026] |
 | AI for investment performance reporting | 16%, "more than doubling in one year" | Same source [CITI-AIFO-2026] |
 | Biggest barrier | 57% cite lack of internal expertise | Same source [CITI-AIFO-2026] |
-| AI embedded and essential to workflow | half of offices | RBC and Campden 2026; sample size not captured [RBC-CAMPDEN-2026] |
+| AI embedded and essential to workflow | half of offices | RBC and Campden 2026; 155 responses from single- and private multi-family offices across the Americas [RBC-CAMPDEN-2026] |
 | Investment reporting too manual | 73% | Same source [RBC-CAMPDEN-2026] |
 | Cybersecurity and data breaches the top near-term operational concern | 59%, up from 16% | Same source [RBC-CAMPDEN-2026] |
 | Already use AI technology | 86%; only 7% seek opportunities in the AI sector | Ocorian survey of family members and senior executives in 16 jurisdictions; sample size not stated [OCORIAN-IFC-2026] |
@@ -154,6 +156,7 @@ them, so none is independent, and their questions differ.
 | Succession plans | UBS: 53% have a wealth succession plan. RBC: half have an incomplete or no plan. J.P. Morgan: 86% lack a clear plan for key decision makers | Three different questions; do not compare [UBS-GFO-2025; RBC-CAMPDEN-2026; PULSE2-JPMFO-2026] |
 | Deployment scale | Masttro: 200+ alternative investments at one office. Asseta: 8-12 weeks to go live, $125B+ assets, 50+ families. Mercer: 1,100+ professionals | Vendor- or company-published counts, no method [MASTTRO-JEFFERSON-2026; ASSETA-SITE-2026; MERCER-ASPEN-2026] |
 | Succession chatbot reach | about 50 mailing-list sign-ups in three months | One firm partner's account [JOFA-REALLIFE-2025] |
+| Time for one cash-flow model | about 45 minutes against "hours" | One family-office CEO's estimate for a single task, including spot checks [FOPRO-AITODAY-2026] |
 
 **What to measure.** Armanino suggests (as metrics to watch, not benchmarks) days to close, the share of reports
 the system generates, the share of K-1s received before the filing deadline, the number of approved AI uses with
@@ -182,12 +185,15 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   policies supervise AI use, including back-office work; cyber reviews cover AI and polymorphic malware
   [SEC-EXAMPRI-FY2026]. Relevant to RIA (registered investment adviser) affiliates of accounting firms.
 - **Independence (the firm's own audit and attest clients).** For SEC issuer audit clients, bookkeeping
-  ((c)(4)(i)), investment-adviser services ((c)(4)(viii)) and any contingent fee ((c)(5)) impair independence
-  [SEC-RULE2-01-2026]. PCAOB rules list tax services to people in financial reporting oversight roles (Rule 3523)
-  [PCAOB-RULES3520-2026]. Under the AICPA Code, a nonattest service needs the client to take management
+  ((c)(4)(i)), investment-adviser services ((c)(4)(viii)) and services for a contingent fee or commission ((c)(5),
+  subject to the rule's defined exceptions) impair independence [SEC-RULE2-01-2026]. Under PCAOB Rule 3523, a firm is
+  not independent of an issuer audit client if it provides tax services to a person in a financial reporting
+  oversight role there, or to that person's immediate family, with limited exceptions [PCAOB-RULES3520-2026]. Wealthy
+  families often include such people. Under the AICPA Code, a nonattest service needs the client to take management
   responsibility, oversee it through a skilled person and accept the results [JOFA-NONATTEST-2016]. IESBA treats
-  hosting or storing an audit client's data as a management responsibility [IESBA-TECH-2023]. The AICPA says
-  developing or hosting an AI system for an attest client can raise independence concerns [JOFA-ETHICSAI-2026]. No
+  hosting or storing an audit client's data as a management responsibility [IESBA-TECH-2023]. A Journal of
+  Accountancy article by AICPA Professional Ethics Division staff says developing or hosting an AI system for an
+  attest client can raise independence concerns [JOFA-ETHICSAI-2026]. No
   source addresses family offices directly. See advisory-client-accounting-services-24 and
   assurance-acceptance-independence-15.
 - **Client data.** Ask whether consent is needed before client data goes into an AI tool [JOFA-ETHICSAI-2026]. Keep
@@ -202,7 +208,8 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
 - **Steps that need human judgment:** posting to the books, moving money and final decisions
   [ARMANINO-FOTRENDS-2026]; investment decisions [CITI-AIFO-2026]; legal interpretation and anything relied on in
   investment, legal, tax or estate matters [NT-FOAIPOLICY-2026]; sign-off on reports and commentary (`#03`);
-  relationships with principals [KAUFMAN-FO-2026].
+  relationships with principals [KAUFMAN-FO-2026]. A forum panel recap adds that principals who paste legal, tax or
+  trust information into AI tools may waive attorney-client privilege [HK-PRINCIPALS-2026].
 
 ## 7. Roles and how they evolve
 
@@ -217,20 +224,22 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
 - **Controllers own the tooling.** A family-office controller posting asks the hire to assess AI-assisted tooling
   alongside the close calendar and an outsourced-accounting relationship [JOB-FOCONTROLLER-2026].
 - **Generalists stretch.** Staff without development skills built Salesforce automations with assistants (`#05`).
-  A marketing partner built and runs his firm's succession chatbot (`#17`).
-- **The relationship stays human.** Kaufman Rossin's family-office director says clients still want a human and AI
-  should free time for engagement [KAUFMAN-FO-2026]. Compound's chief executive says its agents augment the
-  advisor-client relationship rather than replace it [MERCER-ASPEN-2026].
+  A family-office CEO built a cash-flow model himself with an enterprise assistant (`#16`). A marketing partner built
+  and runs his firm's succession chatbot (`#17`).
+- **The relationship stays human.** Kaufman Rossin's family-office director says clients still want to talk to a
+  real human; the firm's own commentary adds that AI should free staff time for engagement [KAUFMAN-FO-2026].
+  Compound's chief executive says its technology is built to "accelerate and augment" the advisor-client
+  relationship, and its head of engineering says the goal is not to replace advisors [MERCER-ASPEN-2026].
 - **Who pushes adoption.** Citi names younger generations and junior staff as the biggest advocates
-  [CITI-AIFO-2026]. A panel speaker says tools lift morale when they remove low-value tasks and hurt it when poorly
-  implemented [HUBBIS-ETON-2026]. For junior development, see professional-services-talent-learning-07.
+  [CITI-AIFO-2026]. The president of Eton Solutions, a family-office software vendor, told a panel that tools lift
+  morale when they remove low-value tasks and frustrate staff when poorly implemented [HUBBIS-ETON-2026]. For junior development, see professional-services-talent-learning-07.
 
 ## 8. Frontier
 
 - 2025-11-17: SEC FY2026 priorities target AI claims and supervision of AI use, including back-office work
   [SEC-EXAMPRI-FY2026].
-- 2025-11-20: Asseta AI raises a $4.2M seed round and says it supports more than $10 billion in assets
-  [CPAPA-ASSETASEED-2025]. Its homepage now shows $125B+; no source reconciles the two [ASSETA-SITE-2026].
+- 2025-11-18 (reported 2025-11-20): Asseta AI announces a $4.2M seed round and says it supports more than $10
+  billion in assets [CPAPA-ASSETASEED-2025]. Its homepage now shows $125B+; no source reconciles the two [ASSETA-SITE-2026].
 - 2025-12-09: FINRA adds AI agents to its oversight report as an emerging risk [FINRA-OVERSIGHT-2026].
 - 2026-03-26: PKF O'Connor Davies announces its collaboration with Asseta AI [PKF-ASSETA-2026].
 - 2026-04-10: Ocorian survey: 72% expect AI's most significant effects on operating models over two to five years; 26% strongly
@@ -239,8 +248,10 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   through connected data, with clean data a precondition [WISS-FOAI-2026].
 - 2026-04-16: Wealth.com raises a $65M Series B for AI estate and tax planning (vendor claims; routed to tax)
   [WEALTHCOM-SERIESB-2026].
-- 2026-04-20: Holland & Knight publishes "When Principals Ask AI Instead of Their Advisors" (title seen in search
-  only; a lead, not evidence) [HK-PRINCIPALS-2026].
+- 2026-04-20: Holland & Knight's Eduardo Arista recaps an April forum panel: principals use AI to draft diligence
+  questions, pressure-test legal and tax scenarios and benchmark advisors' recommendations. Risks named are
+  hallucination, waiver of attorney-client privilege and correcting what clients learned from AI
+  [HK-PRINCIPALS-2026].
 - 2026-05-11: Citi says adoption is slow but accelerating [CITI-AIFO-2026].
 - 2026-06-24: IRS OPR applies Circular 230 duties, including fees, to AI [IRS-OPR-2026].
 - 2026-07-30: Mercer Advisors unveils Aspen's second generation; Compound Planning announces CompoundAI agents
@@ -256,7 +267,8 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   guarantee security are unlikely to be adopted [CITI-AIFO-2026]. Response: write the policy first (approved tools,
   what data may go where, what needs review) [NT-FOAIPOLICY-2026], ask vendors whether client data trains models and
   where it is stored [ARMANINO-FOTRENDS-2026], then start with a reviewed step (`#02`).
-- **"AI makes things up."** A panel speaker calls hallucination often a data-governance problem [HUBBIS-ETON-2026];
+- **"AI makes things up."** A vendor executive on a panel calls hallucination often a data-governance problem
+  [HUBBIS-ETON-2026];
   forum speakers warn that models are trained to please and prompts should say what the AI must not do
   [WISS-FOAI-2026]; an estate-planning example shows a wrong legal explanation [AFS-FOAI-2024]. Response: drafts a
   person signs off, and no AI near money movement or posting [ARMANINO-FOTRENDS-2026].
@@ -266,15 +278,15 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
 - **"Everyone already uses AI, the surveys say so."** The figures measure different things: 22% use it for operations
   or investment analysis [CITI-AIFO-2026], half say it is embedded [RBC-CAMPDEN-2026], 86% say they use AI technology
   [OCORIAN-IFC-2026], and J.P. Morgan's 65% is about AI as an investment theme [ARMANINO-FOTRENDS-2026].
-- **"There are too many vendors; we'll wait."** Squire Patton Boggs flags vendor opacity and concentration risk
-  [SQUIRE-FOAIRISK-2026]; CIO, citing PwC, reports a crowded market driving wait-and-see [AICIO-FOOPTEST-2026].
+- **"There are too many vendors; we'll wait."** Squire Patton Boggs flags vendor opacity and dependence on external
+  AI systems [SQUIRE-FOAIRISK-2026]; CIO, citing PwC, reports a crowded market driving wait-and-see [AICIO-FOOPTEST-2026].
   Response: pick one tedious task and start [WINGSPAN-FOREPORT-2026]; run vendor diligence before go-live
   [WISS-FOAI-2026].
 - **"Families want a person, not a bot."** Agree: Kaufman Rossin says the human connection cannot be automated
   [KAUFMAN-FO-2026]. Response: use AI on the back office and preparation (`#02`, `#09`) so advisors spend more time
   with the family.
-- **"Most AI projects fail."** A panel was unsure whether the share is 70% or 95%; the figure is the speaker's and
-  unsourced [HUBBIS-ETON-2026]. Response: start narrow and measure (§5).
+- **"Most AI projects fail."** A panel write-up gives the share as 70% or 95% without saying who cited it or where
+  it comes from [HUBBIS-ETON-2026]; do not repeat it as a figure. Response: start narrow and measure (§5).
 - **"AI fraud makes this riskier."** It raises the stakes for payment controls, which are procedural
   [CFO-DEEPFAKE-2026]. Response: dual authorization and call-backs before any automation (`#07`).
 
@@ -287,4 +299,4 @@ Full details for keys used in the use cases are in the YAML. Keys cited above th
 - PWC-USFB-2025: "PwC 2025 US Family Business Survey", PwC US, page dated 2026-03-16, https://www.pwc.com/us/en/services/audit-assurance/private-company-services/library/family-business-survey.html
 - PCAOB-RULES3520-2026: "PCAOB Rules, Section 3 (Rules 3520-3526)", PCAOB, 2026 (rules effective 2006-2014), https://pcaobus.org/about/rules-rulemaking/rules/section_3
 - WEALTHCOM-SERIESB-2026: "Wealth.com: $65 Million Series B Raised To Accelerate AI-Powered Estate And Tax Planning Platform", Pulse 2.0, 2026-04-16, https://pulse2.com/wealth-com-65-million-series-b-raised-to-accelerate-ai-powered-estate-and-tax-planning-platform/
-- HK-PRINCIPALS-2026: "When Principals Ask AI Instead of Their Advisors", Holland & Knight, 2026-04-20, https://www.hklaw.com/en/insights/publications/2026/04/when-principals-ask-ai-instead-of-their-advisors (search-only; the URL returned 404 when opened)
+- HK-PRINCIPALS-2026: "When Principals Ask AI Instead Of Their Advisors" (Eduardo Arista, Holland & Knight, recapping a Family Office Fintech Forum panel), Family Wealth Report republication, 2026-04-20 (Holland & Knight date, seen in search; the firm URL https://www.hklaw.com/en/insights/publications/2026/04/when-principals-ask-ai-instead-of-their-advisors returned 404), https://www.familywealthreport.com/printarticle.php?id=207483 (read in full)
