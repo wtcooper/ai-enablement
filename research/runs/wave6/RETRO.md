@@ -33,8 +33,10 @@ keys:
 - four keys that each named two different documents were split;
 - the Vals tax-agent benchmark was dated 2026-10-20 everywhere, with earlier figures marked in their locators.
 
-A follow-up pass made both `sources.md` files match and folded the remaining older duplicate keys (report:
-`sources-cleanup-report.md`).
+A follow-up pass made 77 `sources.md` entries match the YAML, folded 8 older duplicate pairs, and gave the
+Journal of Accountancy small-firms article one key across tax and assurance. A few keys whose YAML records disagree
+with each other were left open for review (report: `sources-cleanup-report.md`). Part B of each `sources.md` lists only
+keys that archetype-level files cite, so the new module keys stay in the YAML and module source lists.
 
 ## What the evidence says
 
