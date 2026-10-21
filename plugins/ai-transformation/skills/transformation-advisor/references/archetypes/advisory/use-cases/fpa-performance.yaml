@@ -1117,11 +1117,12 @@
   - An analyst report says AI messaging is becoming similar across providers and proof of adoption and realised
     outcomes will become the differentiator (ISG-FAOFPA-2026, Executive Summary, paragraph beginning 'Providers
     are adapting their portfolios').
-  - In-house finance teams in a March 2026 Gartner survey of 204 leaders said AI implementation was slower than
-    expected in 2025 (63%) (GARTNER-AIREPORTCARD-2026).
-  - 'Independence: for audit clients of SEC registrants, Regulation S-X lists financial information systems design
-    and implementation, and management functions, among services that impair independence unless the results will
-    not be subject to audit procedures (SEC-RULE2-01-2026). CFGI says it is free of auditor independence constraints
+  - Gartner's 2026 finance AI report card found 63% of finance organisations said AI implementation was slower than
+    expected in 2025; the release's chart draws on a March 2026 survey of 204 finance leaders (GARTNER-AIREPORTCARD-2026).
+  - 'Independence: for audit clients of SEC registrants, Regulation S-X says financial information systems design
+    and implementation impairs independence unless it is reasonable to conclude the results will not be subject to
+    audit procedures, and separately lists management functions (decision-making, supervisory or ongoing monitoring)
+    as impairing it (SEC-RULE2-01-2026, (c)(4)(ii) and (vi)). CFGI says it is free of auditor independence constraints
     (CFGI-FINEFFECTIVENESS-2026).'
   human_checkpoints:
   - Advisors design and validate the model structure
@@ -1242,8 +1243,9 @@
   change_scope: step
   runtime_class: workflow-automation
   maturity: announced
-  problem: ERP vendors now ship AI assistants and agents on a quarterly cadence. Clients need someone to decide
-    which to turn on, configure roles and permissions, and connect them to workflows.
+  problem: ERP vendors now ship AI assistants and agents with each product release (Sage Intacct had three 2026
+    releases by August). Clients need someone to decide which to turn on, configure roles and permissions, and
+    connect them to workflows.
   solution: Partner firms run release webinars and write-ups and offer agent services. Armanino's August 12, 2026
     deck says Sage Intacct's Finance Intelligence Agent is being rolled out to all customers 'this summer and fall'
     (phased early adopter) and describes a marketplace of Sage-certified partner agents with an admin console and
@@ -1390,7 +1392,9 @@
   risks_and_guardrails:
   - More than a quarter of organisations in Panorama's 2026 ERP study exceeded project budgets, with additional
     technology needs the leading cause; Panorama is an ERP consultancy and the full report is gated (PANORAMA-ERP-2026).
-  - Vendor release; a single-vendor source. Customer closes and implementation times could not be checked.
+  - Vendor release; a single-vendor source. Customer closes and implementation times could not be checked. The
+    page's FAQ (updated 2026-08-25) says implementations typically take 4-6 weeks led by Rillet's own CPA-driven
+    team, against 3-12 months for traditional ERP, so the speed claim is not evidence of partner-led delivery (RILLET-SERIESB-2025).
   human_checkpoints:
   - Implementation partner designs the chart of accounts, integrations and controls
   role_evolution: Rillet says its leaders are former EY, PwC and CPA practitioners and its customers run lean teams;
@@ -1428,7 +1432,9 @@
   last_reviewed: '2026-10-20'
   notes: 'Firm types: vendor (Rillet) with Armanino (top 20) and Wiss (top 50) as partners, both ranks as stated
     by Rillet. The partnership is announced; no partner-led implementation was documented. Series B release dated
-    2025-08-06, so older than 12 months, and later status of the partnerships was not found. Change scope is model
+    2025-08-06, so older than 12 months; the same page, last updated 2026-08-25, still lists Armanino and Wiss as
+    strategic partners and reports over 600 customers as of August 2026. The site footer links an 'EY x Rillet Alliance'
+    page, which was not read. Change scope is model
     because the offer replaces the incumbent ERP rather than improving one step. Pattern ''other'': partner-led
     replacement of the incumbent ERP. The Rillet postings are routed from the client-accounting-services research
     and show a channel being built, not delivered projects.'
