@@ -43,9 +43,11 @@ Source keys in brackets are listed in §10. Most published acquisition figures a
 Ask one at a time; skip what is known.
 
 - Who is asking: the acquirer, the target, or an operating partner? At what deal stage?
-- What is the structure: a fully merged platform, an umbrella of firms that keep their own brand and leadership, or a
-  capability buy [NJCPA-PE-2026]? Is there an attest firm? Aprio and Baker Tilly describe investors owning a separate
-  non-attest entity while the licensed attest firm stays independent [CPAPA-APRIO-PE-2024; BAKERTILLY-AIDD-2024].
+- What is the structure: a platform that buys smaller firms into one larger organization, an umbrella of firms that
+  keep their own brand and leadership and take shared services [NJCPA-PE-2026], or a capability buy? Is there an
+  attest firm? Aprio and Baker Tilly describe an alternative practice structure: a licensed CPA firm provides attest
+  services and a separate entity that is not a licensed CPA firm provides tax and advisory services
+  [CPAPA-APRIO-PE-2024; BAKERTILLY-AIDD-2024].
 - What is the thesis: capacity, margin, growth, or acquiring a capability? Which AI claims are in the base case?
 - What can the user share? Public information and the firm's own documents (policies, tool lists, usage reports,
   org charts), never client names or client files (rule 5). Data-room material stays under the deal's confidentiality
@@ -63,7 +65,7 @@ or green, and record the evidence type: **document**, **interview**, **public**,
 | 1 | Data | How often do you meet missing or wrong data? Can you combine data across departments? [RSM-AIDD-2025] | Where client data lives; systems a central team would need to reach |
 | 2 | Infrastructure and tool stack | Legacy on-premise systems, manual pipelines, ad hoc integrations? [RSM-AIDD-2025] Same stack in every office? [WK-PE-2025] | Offices on a common stack; systems of record per service line |
 | 3 | Talent and training | Who owns AI or analytics? How much depends on outside parties? Who is trained, how often? [RSM-AIDD-2025] | Roles, outside dependencies, staff trained in the last year |
-| 4 | Governance and security | Written AI policy? Human-review rule for high-stakes outputs? Who approves new tools? [RSM-AIDD-2025] | Approved-tool list; tools staff use outside it |
+| 4 | Governance and security | Written AI policy? Human-review rule for high-stakes outputs? Data-privacy practice? [RSM-AIDD-2025] Who approves new tools? (advisor addition) | Approved-tool list; tools staff use outside it |
 | 5 | Culture | What have staff raised (job security, accuracy)? How has leadership explained AI's purpose? Ask staff, not only leaders [RSM-AIDD-2025] | Concerns by theme, from staff conversations |
 | 6 | Use cases | Which are tied to measurable goals, and which exist for AI's sake? [RSM-AIDD-2025] | Workflows in normal use with an owner and a baseline |
 | 7 | Client data and consent | Do engagement letters allow processing by a third party, an affiliate or a central team? [TAXADVISER-7216-2024] | Share of letters with that permission, by service line |
@@ -93,8 +95,8 @@ acquirer's (advisor heuristic).
 | Red flag | Why it matters | Source |
 |---|---|---|
 | **Unsanctioned tools** with client data, or a ban with no approved alternative | Use outside approved tools is common; with client data it is an exposure the acquirer takes on (advisor view) | Use patterns: `../library/journey-stages.md` §2 |
-| **Client-data handling** undocumented: siloed data, no governance, no cataloguing | Time and money to centralize and govern before any benefit | [RSM-AIDD-2025] |
-| **No consent for tax-return information** to reach an affiliate, central team or AI tool | Sec. 7216 consent can be needed for disclosures to affiliates and uses beyond preparation; no authoritative reading of AI tools under 7216 was found, so take counsel's view | [TAXADVISER-7216-2024]; triage in `../../../ai-governance/references/professional-duties.md` §4 |
+| **Data ungoverned:** siloed data, no governance, no cataloguing | Time and money to centralize and govern before any benefit | [RSM-AIDD-2025] |
+| **No consent for tax-return information** to reach an affiliate, central team or AI tool | Sec. 7216 consent can be needed for disclosures to affiliates and for uses beyond preparation; a third-party provider that only helps prepare or process the return needs none unless it makes substantive decisions. No authoritative reading of AI tools under 7216 was found, so take counsel's view | [TAXADVISER-7216-2024]; triage in `../../../ai-governance/references/professional-duties.md` §4 |
 | **Attest clients that are the sponsor's portfolio companies** or related parties | Proposed AICPA rules would restrict attest services to a sponsor's portfolio companies and tighten who counts as a covered member; conflicts can reach across the sponsor's fund family | [WINSTON-APS-2026; ACCOUNTANCYEUROPE-TPO-2025] |
 | **Vendor contracts that do not transfer**, or lock in data | KPMG's diligence case found data-licensing and vendor lock-in risk behind an AI pitch | [KPMG-AIDD-2025]; assignment terms are for counsel (no source found) |
 | **Claimed savings with no method or baseline** | KPMG's case found projected AI savings overstated (vendor-published, anonymous software target) | [KPMG-AIDD-2025] |
@@ -103,11 +105,12 @@ acquirer's (advisor heuristic).
 | Roadmap promises beyond demonstrated delivery pace | Aspiration counted as capability | [PWC-AIDD-ND] |
 
 **Independence status changes.** The AICPA exposure draft was released 2025-12-29 with comments due 2026-04-30; if
-approved, the rules take effect one year after adoption [WINSTON-APS-2026; NYSSCPA-APS-2025]. Confirm the current
-status before relying on it. Portfolios change often, so a one-off screen is not enough; conflicts need monitoring
-[ACCOUNTANCYEUROPE-TPO-2025]. In the UK, the FRC and ICAEW urge firms to engage early; in the US, the PCAOB says its
-inspections will look at firms that have taken private equity and at AI use [BLOOMBERGTAX-FRC-2025; ICAEW-PE-2025;
-ATODAY-PCAOB-2025]. Mark any shared AI platform that crosses the attest line for an independence assessment (advisor
+approved, the rules take effect one year after adoption [WINSTON-APS-2026; NYSSCPA-APS-2025]. In August 2026 the
+ethics committee was discussing further changes and whether to issue a second exposure draft, which would open a new
+comment period [JOFA-PEEC-2026]. The rules are not final; confirm the current status before relying on them. Portfolios change often, so a one-off screen is not enough; conflicts need monitoring
+[ACCOUNTANCYEUROPE-TPO-2025]. In the UK, ICAEW and the FRC urge firms to get in touch early in a transaction [ICAEW-PE-2025;
+BLOOMBERGTAX-FRC-2025]; in the US, PCAOB officials said its inspections of firms that audit public companies will
+focus on firms that have taken private equity, and on AI use [ATODAY-PCAOB-2025]. Mark any shared AI platform that crosses the attest line for an independence assessment (advisor
 rule; no source covers shared AI services across that line).
 
 ## 5. Value-creation questions for the thesis
@@ -118,22 +121,25 @@ rule; no source covers shared AI services across that line).
 - Is there a line of sight from each claimed use to EBITDA? RSM's operating-partner framing asks for one within six
   months [RSM-AIDD-2025].
 - How were the target's claimed savings measured? Ask for the data before accepting the number [KPMG-AIDD-2025].
-- What does integration stabilize, and where does it transform? Bain advises focusing on a short list of value
-  drivers and an order of operations; winners do not get caught up resolving internal complexity in the first wave
-  [BAIN-OUTLOOK-2026]. Hold AI to the transform list.
+- What does integration stabilize, and where does it transform? Writing about large deals, Bain says winners focus
+  integration on a short list of value drivers, set an order of operations, and do not get caught up resolving
+  internal complexity in the first wave [BAIN-OUTLOOK-2026]. Hold AI to the transform list.
 - Does the time to first measurable benefit fit the hold period? 66% of PE leaders in FTI's survey of 555 report
   AI-related benefits within 12 months, but only 25% see M&A results that fast and 35% call M&A implementation
-  efficient, the lowest of any lever (vendor-published) [FTI-VCI-2026]. PE funds generally work on three-to-seven-year
+  efficient or very efficient, the lowest of any lever (vendor-published) [FTI-VCI-2026]. PE funds generally work on three-to-seven-year
   horizons [ACCOUNTANCYEUROPE-TPO-2025].
 - Is the value planned before signing? Fewer than one-quarter of A&M's respondents embed value-creation planning
   before the letter of intent, and 41% realized below 75% of planned value creation over 12 months (survey of 100,
   vendor-published) [AM-VALUECREATION-2026]. Write the AI business case at underwriting so later claims can be checked:
-  Grant Thornton finds PE leaders confident on AI strategy but short of measurable results [GT-AIIMPACT-2026].
+  Grant Thornton finds PE leaders confident on AI strategy but short of measurable results (vendor-published; PE
+  subgroup of 100) [GT-AIIMPACT-2026].
 - Is the gain personal productivity or a rebuilt workflow? Baker Tilly's CEO calls personal-productivity AI "table
-  stakes" and expects the P&L change from rebuilt workflows [CFOBREW-BAKERTILLY-2026].
-- Who reviews AI output, and is reviewer time in the margin case? Human review remains the top requirement in
-  Deloitte's 2026 study [DELOITTE-PULSE-2026]; 40% of 1,150 workers surveyed say they take on extra work from
-  low-quality AI output (cross-industry, relayed by trade press) [TECHCRUNCH-AIROLLUP-2025].
+  stakes", does not expect it to change the P&L materially on its own, and plans to rebuild tax and audit workflows
+  with agentic AI embedded [CFOBREW-BAKERTILLY-2026].
+- Who reviews AI output, and is reviewer time in the margin case? Human review remains the top requirement for high-stakes
+  GenAI use in Deloitte's 2026 M&A study (vendor-published) [DELOITTE-PULSE-2026]; in a Stanford Social Media Lab and
+  BetterUp Labs survey of 1,150 workers, 40% said they take on extra work from low-quality AI output (cross-industry,
+  relayed by trade press) [TECHCRUNCH-AIROLLUP-2025].
 - What happens to freed capacity: redeploy or reduce (rule 2)? What is the plan for junior staff's skills? The PCAOB's
   acting chair said new paths for junior auditors will be needed [ATODAY-PCAOB-2025].
 - What are training and migration costs? One practitioner estimates moving a firm to a new IT platform can cost as
@@ -145,9 +151,9 @@ rule; no source covers shared AI services across that line).
   roll-up performance as a category [NEWCOMER-ROLLUP-2025].
 - What do the reported scale numbers count (firms, offices, employees, revenue), and as of when? Published figures for
   one platform differ in basis across sources [REUTERS-CRETE-2025; CPAPA-CURRENT-2026; ACCTODAY-CURRENT-2026].
-- How much of past margin gains came from pricing rather than work change? Health-care roll-up studies found price
-  rises after add-on acquisitions with no quality gain found (adjacent industry, no AI element) [NBER-ANESTHESIA-2025;
-  JAMA-GI-2025].
+- How much of past margin gains came from pricing rather than work change? In health care, an anesthesia study found
+  price rises after add-on acquisitions and a gastroenterology study found price rises after PE acquisition; neither
+  found a quality gain (adjacent industry, no AI element) [NBER-ANESTHESIA-2025; JAMA-GI-2025].
 - What stays local in writing: brand, leadership, client relationships? Ask two previously acquired firms what
   actually changed (advisor move).
 
@@ -185,7 +191,7 @@ Reuse Break down (`breakdown-and-rollup.md`): the firm becomes a unit of the pla
 | Scoring the target instead of pricing the fixes | Attach a remediation item, owner and cost range to every red dimension [RSM-AIDD-2025] |
 | Counting licences or usage as adoption | Active use by tool, then workflows with owners and baselines; Baker Tilly's CEO calls usage measurement in reviews a "red herring" [CFOBREW-BAKERTILLY-2026] |
 | Finding independence conflicts after signing | Screen the sponsor's holdings in diligence and plan monitoring [WINSTON-APS-2026; ACCOUNTANCYEUROPE-TPO-2025] |
-| Consent gaps discovered when files move | Map consents before close; written-consent steps for file transfer apply [CAMICO-MERGE-2022] |
+| Consent gaps discovered when files move | Map consents before close; written-consent steps for file transfer apply, and Sec. 7216 can require affirmative consent for tax-return information [CAMICO-MERGE-2022] |
 | Asking only leaders | One seat's view is not the firm's; ask staff too [RSM-AIDD-2025; `onboarding.md` §5] |
 | A 100-day plan with AI as the first wave | Sequence by dependency; stabilize first, transform where the thesis needs it [BAIN-OUTLOOK-2026] |
 | Desk assessment treated as fact | "Draft to validate" label; validation list; no big bet rests on it alone |
@@ -247,6 +253,7 @@ a 70-person tax and bookkeeping firm with a small attest practice. The platform'
 - **JAMA-GI-2025**: *Private Equity Acquisition of Gastroenterology Practices and Colonoscopy Price and Quality* (academic, abstract page, 2025-06-21). https://petris.org/private-equity-acquisition-of-gastroenterology-practices-and-colonoscopy-price-and-quality/
 - **JOFA-CULTURE-2018**: Journal of Accountancy, *After the merger: Creating a culture of success* (practitioner guide, 2018-12-01). https://www.journalofaccountancy.com/issues/2018/dec/after-merger-culture-of-success/
 - **JOFA-MA-2017**: Journal of Accountancy, *How to comply with the new AICPA ethics standards for M&A* (professional body, 2017-08-02). https://www.journalofaccountancy.com/news/2017/aug/aicpa-ethics-standards-for-mergers-acquisitions-201717098/
+- **JOFA-PEEC-2026**: Journal of Accountancy, *PEEC to continue discussions on alternative practice structures* (professional body news, 2026-08-10). https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures.html
 - **KPMG-AIDD-2025**: KPMG Switzerland, *AI Due Diligence* (consultancy one-pager, 2025). https://assets.kpmg.com/content/dam/kpmgsites/ch/pdf/ai-due-diligence.pdf.coredownload.inline.pdf
 - **NBER-ANESTHESIA-2025**: NBER, *The Price of Consolidation: Evidence from Anesthesia Practice Rollups* (digest of working paper 33217, 2025-03). https://nber.org/digest/202503/price-consolidation-evidence-anesthesia-practice-rollups
 - **NEWCOMER-ROLLUP-2025**: Newcomer, *Inside the VC Roll-up Craze That Has Taken Silicon Valley by Storm* (newsletter, 2025-12-18). https://www.newcomer.co/p/inside-the-vc-roll-up-craze-that
@@ -257,6 +264,6 @@ a 70-person tax and bookkeeping firm with a small attest practice. The platform'
 - **RSM-AIDD-2025**: RSM US, *Artificial intelligence: ready or not?* (consultancy guidance, 2025). https://rsmus.com/insights/industries/private-equity/ai-due-diligence-assessment-private-equity.html
 - **TAXADVISER-7216-2024**: The Tax Adviser (AICPA), *The many implications of Sec. 7216* (professional body, 2024-01). https://www.thetaxadviser.com/issues/2024/jan/the-many-implications-of-sec-7216.html
 - **TECHCRUNCH-AIROLLUP-2025**: TechCrunch, *The AI services transformation may be harder than VCs think* (trade press, 2025-09-29). https://techcrunch.com/2025/09/28/the-ai-services-transformation-may-be-harder-than-vcs-think/
-- **WINSTON-APS-2026**: Winston & Strawn, *AICPA proposes significant changes to ethics rules governing private equity investments in accounting firms* (law-firm summary, page undated, 2026). https://www.winston.com/en/insights-news/aicpa-proposes-significant-changes-to-ethics-rules-governing-private-equity-investments-in-accounting-firms
+- **WINSTON-APS-2026**: Winston Taylor (published as Winston & Strawn before the firm's 2026-06-01 combination), *AICPA proposes significant changes to ethics rules governing private equity investments in accounting firms* (law-firm summary, page undated, between 2025-12-29 and 2026-06-01). https://www.winston.com/en/insights-news/aicpa-proposes-significant-changes-to-ethics-rules-governing-private-equity-investments-in-accounting-firms
 - **WK-PE-2025**: Wolters Kluwer, *Private equity is reshaping the tax and accounting industry* (vendor article, 2025-09-02). https://www.wolterskluwer.com/en/expert-insights/private-equity-is-reshaping-the-tax-and-accounting-industry
 - Journey-stage cards and use patterns: `onboarding.md` §5 and `../library/journey-stages.md` §2, with their own sources.

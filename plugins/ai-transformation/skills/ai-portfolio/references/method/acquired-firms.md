@@ -40,11 +40,11 @@ portfolio at the stage its evidence in that firm supports, and is tracked agains
 
 1. **Read the assessment** of the acquired firm: journey stage per dimension, red flags, foundation items. If none
    exists, hand off to transformation-advisor (acquisition path) first.
-2. **Settle the model.** A platform can fully merge firms or sit above firms that keep their own brand and leadership
-   and take shared services [NJCPA-PE-2026]. Merged: one stack and one workflow set, sequenced. Umbrella: offer the
+2. **Settle the model.** A platform can buy smaller firms into one larger organization, or sit above firms that keep
+   their own brand and leadership and take shared services [NJCPA-PE-2026]. Merged: one stack and one workflow set, sequenced. Umbrella: offer the
    capabilities with evidence and let each firm adopt (advisor synthesis from NJCPA-PE-2026 and GT-AIIMPACT-2026).
-3. **Write the integration thesis's short list.** Bain advises focusing integration on a short list of value drivers
-   and an order of operations: where to stabilize and integrate, where and when to transform [BAIN-OUTLOOK-2026].
+3. **Write the integration thesis's short list.** Writing about large deals, Bain says winners focus integration on a
+   short list of value drivers and set an order of operations: where to stabilize and integrate, where and when to transform [BAIN-OUTLOOK-2026].
    Hold AI capabilities to the transform list.
 4. **Log each capability per firm** through intake (`intake.md`): one item per capability per acquired firm, because
    each firm moves through the gates at its own pace. Id pattern `<capability>-<firm>`; `source` back-links to the
@@ -58,7 +58,8 @@ portfolio at the stage its evidence in that firm supports, and is tracked agains
 
 ## 3. What moves first: order by dependency
 
-RSM puts policy, data centralization and training ahead of use cases after close [RSM-AIDD-2025]. Bain warns that
+RSM treats a weak AI policy and guardrails as a first-wave priority after close, and says siloed data must be
+centralized and governed before AI delivers meaningful results [RSM-AIDD-2025]. Writing about large deals, Bain says
 winners do not get caught up resolving internal complexity in the first wave [BAIN-OUTLOOK-2026]. The layers below
 are this skill's ordering (advisor synthesis); each layer depends on the ones above it, and a firm can move through
 them as fast as its checks pass.
@@ -66,11 +67,11 @@ them as fast as its checks pass.
 | Layer | Capabilities | Depends on | Why this order |
 |---|---|---|---|
 | **0 Clearances** | Client notice and file-transfer consent; tax-return consent for affiliate or central processing; independence screen and monitoring; data-separation rules | Deal structure | Nothing that moves client data or tools is safe without them (§5, §6) |
-| **1 Governance overlay** | The platform's `overlay/policy.md` risk tiers and data rules, `overlay/guardrails.md` human-review rules, records of AI use, extended to the firm | Layer 0 | Tools and workflows are approved against the policy; RSM's first wave includes policy [RSM-AIDD-2025] |
-| **2 Approved tools and training** | `overlay/tool-catalog.yaml` entries for the firm (personal-assistant tier first); training; an approved alternative for each unsanctioned tool found | Layers 0–1 | Training is in RSM's first wave [RSM-AIDD-2025]; personal productivity alone is "table stakes" [CFOBREW-BAKERTILLY-2026] |
+| **1 Governance overlay** | The platform's `overlay/policy.md` risk tiers and data rules, `overlay/guardrails.md` human-review rules, records of AI use, extended to the firm | Layer 0 | Tools and workflows are approved against the policy; RSM puts policy in the first wave after close [RSM-AIDD-2025] |
+| **2 Approved tools and training** | `overlay/tool-catalog.yaml` entries for the firm (personal-assistant tier first); training; an approved alternative for each unsanctioned tool found | Layers 0–1 | RSM finds skills gaps where firms do little to upskill, and suggests formalizing AI training [RSM-AIDD-2025]; Baker Tilly's CEO calls personal productivity "table stakes" [CFOBREW-BAKERTILLY-2026] |
 | **3 Data foundations** | Common systems of record, data centralized and governed, connections the workflows need | Layers 0–1 | Siloed data costs time and money before benefits show [RSM-AIDD-2025]; work moves between offices only on common tools and workflows [WK-PE-2025] (vendor view) |
 | **4 Library workflows** | Entries from `enablement/workflows/` (shared team skills), then workflow automation on one or two high-volume flows with a baseline and a case count | Layers 2–3 | Current's reported tax pilot gave a figure over a stated count of returns, a design worth copying even though the figure is self-reported [CPAPA-CURRENT-2026] |
-| **5 Rebuilt workflows and agents** | Workflow-native redesigns; delegated agents behind the five onboarding gates; new advisory offers | Layer 4 in production in this firm | Baker Tilly's CEO expects the P&L change from rebuilt workflows [CFOBREW-BAKERTILLY-2026] |
+| **5 Rebuilt workflows and agents** | Workflow-native redesigns; delegated agents behind the five onboarding gates; new advisory offers | Layer 4 in production in this firm | Baker Tilly's CEO does not expect personal productivity alone to change the P&L materially and plans workflow-native rebuilds [CFOBREW-BAKERTILLY-2026] |
 
 ## 4. Readiness checks before each layer
 
@@ -86,22 +87,27 @@ Proposed defaults; no source gives thresholds. Record each check as met, not met
 
 **Move a capability from one firm to wider rollout** only when its baseline and method are documented, consent and
 independence checks are complete, named reviewers exist, and one firm other than the pilot firm has run it. **Pause**
-when reviewer workload or client complaints rise (proposed defaults). Review burden is real: 40% of 1,150 workers
-surveyed say they take on extra work from low-quality AI output (cross-industry, relayed by trade press)
-[TECHCRUNCH-AIROLLUP-2025].
+when reviewer workload or client complaints rise (proposed defaults). Review burden is real: in a Stanford Social
+Media Lab and BetterUp Labs survey of 1,150 workers, 40% said they take on extra work from low-quality AI output
+(cross-industry, relayed by trade press) [TECHCRUNCH-AIROLLUP-2025].
 
 ## 5. Client-data separation and consent
 
 - **Keep the acquired firm's client data in its own space** until consent and access rules for it are recorded
   (proposed default). Record on each item which consents it relies on.
-- **File transfer.** Professional-liability guidance sets written-consent steps for transferring client files, with
-  a 90-day negative-consent option; whether selling partners become equity or non-equity partners changes the
-  client-notice duty [CAMICO-MERGE-2022].
+- **File transfer.** The AICPA Code (ET 1.400.205, as summarized by a professional-liability insurer) requires a
+  written request for consent to transfer client files when the seller keeps no ownership in the successor, with a
+  90-day negative-consent option; if the target's owners become equity partners the notice does not apply, if
+  non-equity partners it does [CAMICO-MERGE-2022].
 - **Tax-return information.** Sec. 7216 consent can be needed for disclosures to affiliates and for uses beyond
-  preparation [TAXADVISER-7216-2024]. No authoritative reading of AI tools under 7216 was found: take counsel's view.
+  preparation; a third-party provider that only helps prepare or process the return needs none unless it makes
+  substantive decisions [TAXADVISER-7216-2024]. The same insurer's guidance notes that 7216 consent has no
+  negative-consent option, so where the target's owners keep no equity, the cautious course is affirmative written
+  consent [CAMICO-MERGE-2022]. No authoritative reading of AI tools under 7216 was found: take counsel's view.
   Use the triage in `../../../ai-governance/references/professional-duties.md` §4.
-- **Attest versus non-attest.** Only licensed firms provide attest services; Aprio describes investors owning a
-  separate non-attest entity while the attest firm stays independent [CPAPA-APRIO-PE-2024]. Data, tools and people shared across that line need an
+- **Attest versus non-attest.** Only licensed CPA firms provide attest services. Under Aprio's alternative practice
+  structure, a licensed CPA firm provides attest services as a separate legal entity, and an advisory entity provides
+  tax and other non-attest services [CPAPA-APRIO-PE-2024]. Data, tools and people shared across that line need an
   independence assessment (§6).
 - Route every open question to **ai-governance**; the answer comes back through `overlay/`.
 
@@ -109,24 +115,28 @@ surveyed say they take on extra work from low-quality AI output (cross-industry,
 
 - **Screen before signing, monitor after.** Proposed AICPA rules (exposure draft released 2025-12-29) would restrict
   attest services to a sponsor's portfolio companies and tighten who counts as a covered member [WINSTON-APS-2026];
-  if approved, they take effect one year after adoption [NYSSCPA-APS-2025]. Confirm the current status. Portfolios
+  if approved, they take effect one year after adoption [NYSSCPA-APS-2025]. In August 2026 the ethics committee was
+  discussing further changes and a possible second exposure draft [JOFA-PEEC-2026]; the rules are not final, so
+  confirm the current status. Portfolios
   change often, so conflicts are hard to track without monitoring [ACCOUNTANCYEUROPE-TPO-2025].
 - **No shared AI tool or data flow into an attest entity without an independence assessment** (advisor rule; no
   source was found on shared AI services across the attest line). The governance file's screen applies to every AI
-  service to, and vendor tie with, an attest client (`professional-duties.md` §4).
-- **Expect scrutiny.** The PCAOB says its inspections will look at firms that have taken private equity and at AI use
-  [ATODAY-PCAOB-2025]; the FRC and ICAEW urge early engagement [BLOOMBERGTAX-FRC-2025; ICAEW-PE-2025].
+  service to, and vendor tie with, an attest client (`../../../ai-governance/references/professional-duties.md` §4).
+- **Expect scrutiny.** PCAOB officials said its inspections of firms that audit public companies will focus on firms
+  that have taken private equity, and on AI use [ATODAY-PCAOB-2025]; in the UK, ICAEW and the FRC urge firms to get in
+  touch early in a transaction [ICAEW-PE-2025; BLOOMBERGTAX-FRC-2025].
 
 ## 7. Change management for incoming partners and staff
 
-- **Partners who keep their clients and brand need evidence, not mandates.** An operating partner in Grant Thornton's
-  survey says you cannot mandate a deployment; evidence from a similar business, on a timeline that works for them,
-  moves management teams [GT-AIIMPACT-2026]. Use the stakeholder map and partner briefing in
+- **Partners who keep their clients and brand need evidence, not mandates.** A Grant Thornton transaction advisory
+  partner, writing in the firm's PE survey report, says you cannot mandate an AI deployment in a portfolio company;
+  evidence from a similar business, on a timeline that works for them, moves management teams [GT-AIIMPACT-2026]. Use the stakeholder map and partner briefing in
   `../../../transformation-advisor/references/method/leading-partners.md`.
 - **Put what stays local in writing.** Current says its partner firms keep leadership, brand and culture
   [CPAPA-CURRENT-2026]; Reuters reported that local owners keep a minority stake [REUTERS-CRETE-2025].
-- **Take culture seriously.** 80% of independent UK firms cited cultural and ethical alignment as a
-  reason not to pursue private equity (ICAEW finding as cited by Accountancy Europe) [ACCOUNTANCYEUROPE-TPO-2025].
+- **Take culture seriously.** 80% of independent firms in ICAEW's 2025 mid-tier firms report cited cultural and
+  ethical alignment as a key reason not to pursue private equity (as cited by Accountancy Europe)
+  [ACCOUNTANCYEUROPE-TPO-2025].
 - **Ask staff what worries them** and how leadership has explained AI's purpose [RSM-AIDD-2025].
 - **Lead with the talent argument, not cost.** More than one-quarter of tax and audit professionals say they would not accept
   a job at a firm lacking professional-grade AI, and almost one in three would consider leaving if AI expectations are
@@ -152,18 +162,20 @@ Follow `value-tracking.md` and `../schemas/benefits.md`; these rules add to them
   comparison (`counterfactual: staggered-start`); name in `attribution` every integration change that ships at the
   same time, such as a system migration or a new review checklist (proposed default).
 - **Track the deal's AI business case.** Record the AI lines written at underwriting as `level: enterprise` rows tied
-  to the value creation plan line (`value-tracking.md` §3.5), and report exceeded, met or missed through `status`. In
+  to the value creation plan line (`value-tracking.md` §3.5). Report met or exceeded as `status: realised` (note
+  actuals above the range in `attribution`) and missed as `partly-realised` or `not-realised`. In
   FTI's survey, high performers were more likely to report exceeding their AI business case (19% against 5%;
   vendor-published) [FTI-VCI-2026]. Never sum use-case rows into an enterprise figure.
 - **Record losses too.** Client moves or departures linked to integration go in `disbenefit` rows as counts by role
-  or client group, never named people. No source reports partner attrition or client retention after acquisitions
-  of accounting firms [UVA-FAR-2026], so the firm's own counts are the only evidence.
+  or client group, never named people. The research behind this file found no published partner-attrition or
+  client-retention figures after acquisitions of accounting firms; a funded academic project notes there is little
+  systematic evidence on how PE affects audit firms [UVA-FAR-2026]. The firm's own counts are the only evidence.
 - **Capacity per firm.** Each firm's freed capacity gets its own redeploy-or-reduce decision (rule 2).
 
 ## 9. Describing the platform's AI without overstating it
 
-Platforms pitch AI to targets alongside local control, capital, shared technology and upskilling
-[CPAPA-CURRENT-2026]. Keep the pitch apart from the evidence (advisor move). Describe each capability with:
+Platforms pitch AI to targets alongside other offers; Current, for example, pairs AI with independent local
+leadership and brand, back-office resources, financial backing and upskilling [CPAPA-CURRENT-2026]. Keep the pitch apart from the evidence (advisor move). Describe each capability with:
 
 - **Its evidence status**, using the shared `maturity` terms: announced, piloting, in production, and whether its
   value is measured, in how many firms, against what baseline. A press release is not adoption.
@@ -192,7 +204,7 @@ deciding anything further."
 
 | Trap | How to avoid it |
 |---|---|
-| Starting with use cases before policy, data and training | Layers 0–3 first [RSM-AIDD-2025] |
+| Starting with use cases before policy, data and training | Layers 0–3 first (this skill's ordering; RSM on policy and data [RSM-AIDD-2025]) |
 | Carrying the home stage into the acquired firm | Entry stage from the firm's own evidence (§2 step 5) |
 | Mandating tools in a partner-led firm | Evidence from a comparable firm and a sequence that suits them [GT-AIIMPACT-2026] |
 | Seats and logins reported as adoption | Interim rows on work volume; value rows on the firm's baseline (§8) |
@@ -237,6 +249,7 @@ The firm's AI inventory is the set of items with its `unit`.
 - **GT-AIIMPACT-2026**: Grant Thornton, *Private Equity insights: 2026 AI Impact Survey Report* (consultancy survey, fielded 2026-02/03). https://www.grantthornton.com/insights/survey-reports/private-equity/2026/private-equity-insights-2026-ai-impact-survey-report
 - **ICAEW-PE-2025**: ICAEW, *What private equity might mean for a firm's audit status* (professional body, 2025-02-13). https://www.icaew.com/insights/viewpoints-on-the-news/2025/feb-2025/what-private-equity-might-mean-for-a-firms-audit-status
 - **JOFA-CULTURE-2018**: Journal of Accountancy, *After the merger: Creating a culture of success* (practitioner guide, 2018-12-01). https://www.journalofaccountancy.com/issues/2018/dec/after-merger-culture-of-success/
+- **JOFA-PEEC-2026**: Journal of Accountancy, *PEEC to continue discussions on alternative practice structures* (professional body news, 2026-08-10). https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures.html
 - **NEWCOMER-ROLLUP-2025**: Newcomer, *Inside the VC Roll-up Craze That Has Taken Silicon Valley by Storm* (newsletter, 2025-12-18). https://www.newcomer.co/p/inside-the-vc-roll-up-craze-that
 - **NJCPA-PE-2026**: NJCPA, *The Rapid Growth of Private Equity Investment in Public Accounting* (professional-society article, 2026-07-17). https://www.njcpa.org/development/dom-test/2026/07/17/the-rapid-growth-of-private-equity-investment-in-public-accounting
 - **NYSSCPA-APS-2025**: NYSSCPA, *AICPA Calls for Comments on Ethics Rules Update for Alternative Practice Structures in Private Equity* (professional body news, 2025-12-22). https://nysscpa.org/news/1045198-aicpa-calls-for-comments-on-ethics-rules-update-for-alternative-practice-structures-in-private-equity-2025-12-22
@@ -246,5 +259,5 @@ The firm's AI inventory is the set of items with its `unit`.
 - **TECHCRUNCH-AIROLLUP-2025**: TechCrunch, *The AI services transformation may be harder than VCs think* (trade press, 2025-09-29). https://techcrunch.com/2025/09/28/the-ai-services-transformation-may-be-harder-than-vcs-think/
 - **TR-FOP-2026**: Thomson Reuters Institute, *What the "2026 Future of Professionals Report" says tax & audit firm leaders should be prioritizing now* (vendor research summary, 2026-07-21). https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026
 - **UVA-FAR-2026**: University of Amsterdam, *ABS researcher receives grant for auditing research* (academic project announcement, 2026-05-12). https://www.uva.nl/en/shared-content/faculteiten/en/faculteit-economie-en-bedrijfskunde/news/2026/05/abs-researcher-receives-grant-for-auditing-research.html
-- **WINSTON-APS-2026**: Winston & Strawn, *AICPA proposes significant changes to ethics rules governing private equity investments in accounting firms* (law-firm summary, page undated, 2026). https://www.winston.com/en/insights-news/aicpa-proposes-significant-changes-to-ethics-rules-governing-private-equity-investments-in-accounting-firms
+- **WINSTON-APS-2026**: Winston Taylor (published as Winston & Strawn before the firm's 2026-06-01 combination), *AICPA proposes significant changes to ethics rules governing private equity investments in accounting firms* (law-firm summary, page undated, between 2025-12-29 and 2026-06-01). https://www.winston.com/en/insights-news/aicpa-proposes-significant-changes-to-ethics-rules-governing-private-equity-investments-in-accounting-firms
 - **WK-PE-2025**: Wolters Kluwer, *Private equity is reshaping the tax and accounting industry* (vendor article, 2025-09-02). https://www.wolterskluwer.com/en/expert-insights/private-equity-is-reshaping-the-tax-and-accounting-industry

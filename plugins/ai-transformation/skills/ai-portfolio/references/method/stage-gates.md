@@ -203,7 +203,8 @@ The detail (readiness checks, consent, independence, partners, benefits rows, ho
 3. **Enter at the stage the evidence in that firm supports,** not the stage reached at home. A capability in
    production at home usually enters at `pilot` (proposed default).
 4. **Order by dependency,** each layer only after the ones it depends on pass their checks (this skill's ordering;
-   RSM puts policy, data centralization and training ahead of use cases after close) [RSM-AIDD-2025]:
+   RSM treats AI policy as a first-wave priority after close and says data must be centralized and governed before AI
+   delivers meaningful results) [RSM-AIDD-2025]:
 
 | Layer | What moves | Before it moves |
 |---|---|---|
@@ -214,8 +215,9 @@ The detail (readiness checks, consent, independence, partners, benefits rows, ho
 | 4 Library workflows | Entries from `enablement/workflows/`, then automation of one or two high-volume flows | Layers 2 and 3; the firm's own baseline; named reviewers |
 | 5 Rebuilt workflows and agents | Workflow-native redesigns; delegated agents behind the five onboarding gates | Layer 4 in production in this firm |
 
-5. **Stabilize before transforming.** Bain advises a short list of value drivers and an order of operations: where
-   to stabilize and integrate, where to transform [BAIN-OUTLOOK-2026]. Hold AI to the transform list.
+5. **Stabilize before transforming.** Writing about large deals, Bain says winners focus integration on a short list
+   of value drivers and set an order of operations: where to stabilize and integrate, where to transform
+   [BAIN-OUTLOOK-2026]. Hold AI to the transform list.
 6. **No shared tool or data flow into an attest entity without an independence assessment,** and no client data
    moves before its consents are recorded (advisor rules; `acquired-firms.md` §5, §6).
 7. **Evidence, not mandates, for partners who keep their clients and brand** [GT-AIIMPACT-2026]; describe each

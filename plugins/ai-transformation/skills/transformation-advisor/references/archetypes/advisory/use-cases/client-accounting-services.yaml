@@ -66,9 +66,9 @@
     - lever: speed
       description: "Processing time in the same vendor benchmark."
       figure: "40 ms vs 74 s per transaction; humans about 4 h 43 min per 500"
-      measures: "Time per transaction for Digits' model and for the best look-up agent; average human team time per 500-transaction allocation"
+      measures: "Time per transaction for Digits' model and for the best look-up agent (Digits' report); average human team time per 500-transaction allocation, about 34 seconds a transaction (as reported by ACCTODAY-AIBENCH-2026)"
       provenance: vendor-published
-      source_ref: ACCTODAY-AIBENCH-2026
+      source_ref: DIGITS-BENCH-2026
     - lever: quality
       description: "Vendor test of general-purpose models on accounting workflows (accuracy ceiling for general models)."
       figure: "77.3% best of 19 models"
@@ -84,7 +84,7 @@
     - lever: capacity
       description: "Small two-partner firm's estimate after about nine months on an AI-native ledger."
       figure: "about 90% auto-categorized"
-      measures: "Share of transactions auto-categorized across migrated clients, as estimated by the firm's co-owner in a vendor case study; no tracked metric shown"
+      measures: "Share of transactions auto-categorized across migrated clients, as stated ('approximately 90%') in a vendor case study; no tracked metric or method shown"
       provenance: vendor-published
       source_ref: DIGITS-LINCOLN-2026
   prerequisites:
@@ -96,7 +96,7 @@
     - "Junior accountants tended to accept AI suggestions even when flagged as uncertain, while senior accountants intervened (STANFORD-INSIGHTS-2025)."
     - "A framed experiment found AI help improved classification accuracy on average, but reliance on non-consensus AI recommendations can increase the risk of error (STANFORD-JAR-2026)."
     - "Failures cluster on recurring merchants and on categories the business defines, such as near-duplicate categories and payment-processor clearing accounts (DIGITS-BENCH-2026; ACCTODAY-AIBENCH-2026)."
-    - "General-purpose models plateaued: the seven best one-shot configurations were within 0.4 points of each other (DIGITS-BENCH-2026)."
+    - "General-purpose models plateaued: the six models behind the best one-shot model finished within half a point of it, and the best one-shot configurations beat the human baseline by at most 0.4 points, within sampling error (DIGITS-BENCH-2026; ACCTODAY-AIBENCH-2026)."
     - "A small firm saw a built-in categorization feature begin mis-suggesting transactions it had coded correctly before, which created rework (DIGITS-LINCOLN-2026)."
     - "COSO warns that automated posting can amplify misclassification and lists validated confidence thresholds for auto-posting and periodic manual re-performance as controls (COSO-GENAI-2026, p. 24)."
     - "In the study's survey, 62% of accountants worried about errors in AI-generated reporting (MITSLOAN-CHOIXIE-2025)."
@@ -108,13 +108,13 @@
     - "Month-end review and sign-off before reports go to the client"
   role_evolution: >-
     The study reports a shift from routine data entry toward business communication and quality assurance, with more
-    experienced accountants gaining more from the tool (MITSLOAN-CHOIXIE-2025; STANFORD-INSIGHTS-2025). Staff move
-    from keying categories to reviewing exceptions and maintaining each client's categorization conventions.
+    experienced accountants gaining more from the tool and intervening when confidence scores are low
+    (MITSLOAN-CHOIXIE-2025; STANFORD-INSIGHTS-2025).
   evidence_grade: A
   sources:
     - { ref: STANFORD-WP-2025, title: "Human + AI in Accounting: Early Evidence from the Field (working paper no. 4261)", publisher: "Stanford Graduate School of Business (Choi, Xie)", type: academic, url: "https://www.gsb.stanford.edu/index%2ephp/faculty-research/working-papers/human-ai-accounting-early-evidence-field", date: "2025-05-07", access: full, locator: "abstract (55%, 7.5-day, 12% and 8.5% figures)" }
     - { ref: STANFORD-JAR-2026, title: "Human + AI in Accounting: Early Evidence from the Field (Choi, Xie), Journal of Accounting Research 64(3), pp 1333-1373", publisher: "Stanford Graduate School of Business (listing of the JAR article)", type: academic, url: "https://www.gsb.stanford.edu/index.php/node/629989", date: "2026-06", access: full, locator: "abstract only: 277 accountants surveyed, 79 SMEs, 200,000+ transaction records, framed experiment" }
-    - { ref: STANFORD-INSIGHTS-2025, title: "AI Is Reshaping Accounting Jobs by Doing the 'Boring' Stuff", publisher: "Stanford Graduate School of Business Insights", type: academic, url: "https://www.gsb.stanford.edu/insights/ai-reshaping-accounting-jobs-doing-boring-stuff", date: "2025-06", access: full, locator: "paragraphs on experience levels, 7.5 days, 12% granularity and survey concerns" }
+    - { ref: STANFORD-INSIGHTS-2025, title: "AI Is Reshaping Accounting Jobs by Doing the 'Boring' Stuff", publisher: "Stanford Graduate School of Business Insights (Seb Murray)", type: academic, url: "https://www.gsb.stanford.edu/insights/ai-reshaping-accounting-jobs-doing-boring-stuff", date: "2025-06-26", access: full, locator: "paragraphs on experience levels, 7.5 days, 12% granularity and survey concerns" }
     - { ref: MITSLOAN-CHOIXIE-2025, title: "How generative AI can make accountants more productive", publisher: "MIT Sloan Ideas Made to Matter", type: academic, url: "https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-make-accountants-more-productive", date: "2025-08-05", access: full, locator: "paragraphs on 8.5% time reallocation and the 62% concern figure" }
     - { ref: DIGITS-BENCH-2026, title: "Breaking: AI Can't Close Your Books From the Outside (Yes, Including Jev)", publisher: "Digits", type: vendor, url: "https://digits.com/blog/ai-cant-close-books-from-outside/", date: "2026-10-07", access: full, locator: "sections 'No context', 'With access to the ledger', 'Native to the ledger', 'It misses house rules'" }
     - { ref: ACCTODAY-AIBENCH-2026, title: "AI beats human accountants at monthly close, transaction categorization", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ai-beats-human-accountants-at-monthly-close-transaction-categorization", date: "2026-10-16", access: full, locator: "section 'The Digits benchmark' and 'Don't count humans out just yet'" }
@@ -125,8 +125,9 @@
     - { ref: BEANCOUNT-REVIEWBURDEN-2026, title: "I Adopted AI Bookkeeping for Time Savings, But Reviewing Every Transaction Takes Just as Long", publisher: "Beancount and Plain-Text Accounting Forum", type: community, url: "https://beancount.io/forum/t/i-adopted-ai-bookkeeping-for-time-savings-but-reviewing-every-transaction-takes-just-as-long/1823", date: "2026-03-22", access: full, locator: "original post and replies 1-3" }
     - { ref: INTUIT-ACCTTECH-2026, title: "The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future", publisher: "CPA Practice Advisor (reporting the Intuit QuickBooks survey, n=725, May 2026)", type: survey, url: "https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807", date: "2026-07-02", access: full, locator: "advisory blockers paragraph (30%)" }
     - { ref: DUALENTRY-BENCH-2026, title: "Accounting AI Benchmark 2026 (leaderboard page, as read 2026-10-20)", publisher: "DualEntry", type: vendor, url: "https://dualentry.com/accounting-ai-benchmark", date: "2026-02-20", access: full, locator: "headline accuracy as read 2026-10-20 (live leaderboard)" }
+    - { ref: CFOCOM-DUALENTRY-2026, title: "The best AI model still fails 1 in 5 accounting tasks", publisher: "CFO.com (guest post by DualEntry's CFO)", type: press, url: "https://www.cfo.com/news/the-best-ai-model-still-fails-1-in-5-accounting-tasks-Claude-Opus-OpenAI-GPT/818100/", date: "2026-04-22", access: full, locator: "paragraph on the 79.2% best score" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "quoted chief-executive note on coding 80%+ of transactions" }
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade A rests on the independent Choi and Xie study, by named researchers at Stanford GSB and MIT Sloan, which
     reports measured figures. Limits: it reports associations, the platform is not named, the clients are small and
@@ -134,12 +135,13 @@
     were read (the Wiley full text was blocked). Abstract versions differ: the May 2025 working paper gives the figures
     above and the June 2026 journal abstract keeps the findings but not the numbers. Vendor benchmarks (Digits,
     DualEntry, Intuit) would be grade C on their own. Digits' human baseline had no client history and could not ask
-    questions, which its own report flags. The DualEntry leaderboard changes: 66.0% top score in a 2026-03-03 blog,
-    79.2% in a 2026-04-22 CFO.com post and 91.1% on the page read 2026-10-20 (DUALENTRY-BENCH-2026). Botkeeper's chief
-    executive said its platform coded 80%+ of transactions at 98% accuracy (CPAPA-XENDOO-2026), a company claim from a
-    vendor that then closed. The Stanford summary page date is given as 2025-06-09 in one input and 2025-06-26 in
-    another, so only the month is used. Firm types: unnamed SME platform customers; vendor benchmark; Lincoln
-    Accounting is a small firm. Independence: bookkeeping for the firm's own audit client is restricted; see -24.
+    questions, which its own report flags. The DualEntry leaderboard changes: 77.3% top score in March 2026
+    (ACCTODAY-DUALENTRY-2026), 79.2% in a 2026-04-22 CFO.com post (CFOCOM-DUALENTRY-2026) and 91.1% on the page read
+    2026-10-20 (DUALENTRY-BENCH-2026). Botkeeper's chief executive said its platform coded 80%+ of transactions at 98%
+    accuracy (CPAPA-XENDOO-2026), a company claim from a vendor that then announced its closure. Intuit's
+    expert-verified auto-categorization sends uncertain items to the business owner, not the accountant
+    (CPAPA-INTUITCONNECT-2026). Firm types: unnamed SME platform customers; vendor benchmark; Lincoln Accounting is a
+    small two-partner firm. Independence: bookkeeping for the firm's own audit client is restricted; see -24.
 
 - id: advisory-client-accounting-services-02
   title: Bank, card and clearing-account reconciliation by AI matching, with a short exceptions list for the accountant
@@ -196,20 +198,23 @@
     - "Accountant clears the exceptions list"
     - "Job manager reviews and signs off the reconciliation checklist"
   role_evolution: >-
-    Staff move from ticking and tying to reviewing exceptions and consulting; a Digits customer says the role has
-    flipped to reviewing a clean set of exceptions (DIGITS-BANKREC-2025; FLOQAST-CASCASE-2026).
+    The FloQast case firm describes staff shifting from manual ticking and tying to client consulting
+    (FLOQAST-CASCASE-2026); Heather Taylor, accounting services manager at Hiline, says AI bank reconciliations
+    'flipped my role' to reviewing a clean set of exceptions (DIGITS-BANKREC-2025).
   evidence_grade: B
   sources:
     - { ref: FLOQAST-CASCASE-2026, title: "How One CAS Practice Uses FloQast AI Transaction Matching to Scale Client Support (case study PDF)", publisher: "FloQast", type: vendor, url: "https://get.floqast.com/hubfs/Assets/Case%20Studies/FloQast_MillerCooper_CAS_Case_Study_August_2026.pdf", date: "2026-08", access: full, locator: "Results panel; sections 'The Challenge', 'How FloQast Helps', 'The FloQast Difference'" }
     - { ref: CPAPA-NUMERIC-2025, title: "AI Accounting Platform Numeric Raises $51M Series B", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2025/11/20/ai-accounting-platform-numeric-raises-51m-series-b/173638/", date: "2025-11-20", access: full, locator: "paragraphs on cash matching and the Brex controller quote" }
-    - { ref: DIGITS-BANKREC-2025, title: "Always Be Closing: Introducing AI Bank Reconciliations", publisher: "Digits", type: vendor, url: "https://digits.com/blog/ai-bank-reconciliations/", date: "2025-11-10", access: full, locator: "sections on drag-and-drop reconciliation, exception list and customer quote" }
+    - { ref: DIGITS-BANKREC-2025, title: "Always Be Closing: Introducing AI Bank Reconciliations", publisher: "Digits", type: vendor, url: "https://digits.com/blog/ai-bank-reconciliations/", date: "2025-11-10", access: full, locator: "sections on drag-and-drop reconciliation, exception list and customer quote (Heather Taylor, Hiline)" }
     - { ref: ACCTODAY-USECASE-2024, title: "Making the use case for AI in accounting", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/making-the-use-case-for-ai-in-accounting", date: "2024-05-06", access: full, locator: "Armanino digital-worker paragraphs" }
     - { ref: CPAPA-AGENTSCLOSE-2026, title: "Before You Let the Agents Run the Close: Five Controls to Put in Writing First", publisher: "CPA Practice Advisor (contributor A. L. Fulmore Sr.)", type: press, url: "https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/", date: "2026-08-13", access: full, locator: "controls 2 and 3" }
   last_reviewed: "2026-10-20"
   notes: >-
     Firm types: the FloQast case is a Top 100 firm the text does not name (the file name indicates Miller Cooper, not
-    confirmed in the text); Armanino is a Top 25 firm; Brex is an in-house enterprise team, so the Numeric figure is
-    adjacent to CAS delivery and caps the grade at B. Agent-prepared reconciliation packages (BlackLine Verity
+    confirmed in the text); Hiline, quoted by Digits, is a named firm using AI bank reconciliations, without a
+    figure; Armanino is a Top 25 firm and its digital workers are RPA, not generative AI; Brex is an in-house
+    enterprise team, so the Numeric figure is adjacent to CAS delivery. Grade B rests on Hiline's named use and the
+    FloQast case; no figure comes from a named firm's tracked metric. Agent-prepared reconciliation packages (BlackLine Verity
     Prepare) are in -03. Independence: reconciliation and bookkeeping for the firm's own audit client are restricted;
     see -24.
 
@@ -263,9 +268,9 @@
       provenance: self-reported
       source_ref: ACCTODAY-COHNPOD-2026
     - lever: quality
-      description: "Lab test of a frontier model against 12 junior CPAs on four simulated month-end close tasks."
+      description: "Lab test of a frontier model against 12 licensed CPAs (averaging about five and a half years' experience; Mercor calls them junior) on four simulated month-end close tasks."
       figure: "AI 100% on each of 20 attempts; humans generally below 50%"
-      measures: "Share of 13 to 22 accountant-written rubric criteria met per task; an LLM grader agreed 98% with hand grading on 8 submissions; tasks removed client context and the ability to ask questions"
+      measures: "Share of 13 to 22 accountant-written rubric criteria met per task; an LLM grader agreed 98% with hand grading on 8 submissions; tasks removed client context and the ability to ask questions (MERCOR-APEX-2026 for participant experience)"
       provenance: independent
       source_ref: ACCTODAY-AIBENCH-2026
     - lever: quality
@@ -278,8 +283,8 @@
     - "Clean ledger access and permissions per client; Meridian is described as sitting on the firm's existing ledger with no migration (PILOT-JOBS-2026)"
     - "Firm procedures written down as editable skills or checklists, with firm-level preferences and client-level overrides set before the first close (ACCTODAY-RAMPSTACK-2026; PILOT-JOBS-2026)"
     - "A review layer that shows what the AI did, why, and the few exceptions that need a person (PILOT-JOBS-2026)"
-    - "A stable tech stack and core client base; CohnReznick says it waited three years for this (ACCTODAY-COHNPOD-2026)"
-    - "Clean opening balances: errors compound when prior months are wrong (PENROSE-ACCTBENCH-2025)"
+    - "A core tech stack and client base in place; CohnReznick turned to AI after three years building its CAS practice, saying it now had both (ACCTODAY-COHNPOD-2026)"
+    - "Clean opening balances: in Penrose's test, agents within 1% after the first month accumulated compounding errors over later months (PENROSE-ACCTBENCH-2025)"
   risks_and_guardrails:
     - "Nothing posts to a client's general ledger without explicit human authorization in Ramp's stated design (ACCTODAY-RAMPSTACK-2026)."
     - "In three of four imperfect AI-assisted sessions in the Mercor study, the AI had the correct figure at some point and it did not reach the final submission (ACCTODAY-AIBENCH-2026)."
@@ -296,15 +301,16 @@
     Pilot's product posting sets success as more clients per accountant and less review time per close
     (PILOT-JOBS-2026). CohnReznick expects senior accountants to move up a layer to more review and client time
     (ACCTODAY-COHNPOD-2026), and a Deloitte contributor expects staff to orchestrate AI-prepared work
-    (ACCTODAY-TRENDS-2026). Basis hires accountants to write the procedures and skills its agents use (BASIS-JOBS-2026).
+    (ACCTODAY-TRENDS-2026). Basis hires CPAs and accountants to define agent rules and behaviours and to write the
+    procedures and skills its agents use (BASIS-JOBS-2026).
   evidence_grade: B
   sources:
-    - { ref: PILOT-JOBS-2026, title: "Pilot job postings: Solutions Engineer (Meridian); Senior Product Manager, Meridian; Sr. Software Engineer, Bookkeeping Automation", publisher: "Pilot (Greenhouse job board)", type: job-posting, url: "https://job-boards.greenhouse.io/pilothq/jobs/8880563002", date: "2026-10-09", access: full, locator: "Solutions Engineer posting 'About Meridian'; Senior Product Manager posting 'What Success Looks Like'" }
+    - { ref: PILOT-JOBS-2026, title: "Pilot job postings: Solutions Engineer (Meridian); Senior Product Manager, Meridian; Sr. Software Engineer, Bookkeeping Automation", publisher: "Pilot (Greenhouse job board)", type: job-posting, url: "https://job-boards.greenhouse.io/pilothq/jobs/8880563002", date: "2026-10-09", access: full, locator: "Solutions Engineer posting (first published 2026-10-09) 'About Meridian'; Senior Product Manager, Meridian posting (job 8846101002, first published 2026-09-25) 'What Success Looks Like'" }
     - { ref: CPAPA-PILOTMERIDIAN-2026, title: "Pilot Says New AI Accounting Platform Meridian Runs Monthly Close From Start to Finish", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/06/23/pilot-says-new-ai-accounting-platform-meridian-runs-monthly-close-from-start-to-finish/185541/", date: "2026-06-23", access: full, locator: "paragraphs 1-6 and key features (187,000+ months)" }
     - { ref: ACCTODAY-MERIDIAN-2026, title: "Pilot touts Meridian, says AI comparable to seasoned accountant", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/pilot-touts-meridian-says-ai-comparable-to-seasoned-accountant", date: "2026-06-16", access: full, locator: "paragraphs on the launch at Scaling New Heights, controls and validation gates" }
     - { ref: OPENAI-BASIS-2026, title: "Basis scales accounting by turning OpenAI model progress into trusted agents", publisher: "OpenAI (customer story)", type: vendor, url: "https://openai.com/index/basis", date: "2026-10-20", access: full, locator: "section 'Scaling trust, not just tasks' (page undated; access date)" }
     - { ref: BASIS-SERIESB-2026, title: "Basis Raises $100 Million to Deploy AI Agents for Accounting Firms", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/24/basis-raises-100-million-to-deploy-ai-agents-for-accounting-firms/178759/", date: "2026-02-24", access: full, locator: "paragraphs on long-horizon agents and review of completed deliverables" }
-    - { ref: BASIS-JOBS-2026, title: "Basis job postings: Accounting Solutions Consultant; Member of Accounting Staff; Intelligence Architect", publisher: "Basis (Ashby job board)", type: job-posting, url: "https://jobs.ashbyhq.com/basis-ai/bf7e34d6-e678-491b-87ee-e7c1f3e0384f", date: "2026-05-20", access: full, locator: "Member of Accounting Staff and Intelligence Architect postings" }
+    - { ref: BASIS-JOBS-2026, title: "Basis job postings: Accounting Solutions Consultant; Member of Accounting Staff; Intelligence Architect", publisher: "Basis (Ashby job board)", type: job-posting, url: "https://jobs.ashbyhq.com/basis-ai/bf7e34d6-e678-491b-87ee-e7c1f3e0384f", date: "2026-05-20", access: full, locator: "Member of Accounting Staff (posted 2026-05-20: prompt engineering, defining rules and behaviours) and Intelligence Architect (posted 2026-05-05: 'You write the procedures and skills')" }
     - { ref: ACCTODAY-RAMPSTACK-2026, title: "Ramp launches Stack, made specifically for accounting firms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ramp-launches-stack-made-specifically-for-accounting-firms", date: "2026-06-03", access: full, locator: "paragraphs 3-10 (skills, plan approval, posting)" }
     - { ref: CPAPA-BLACKLINE-2026, title: "BlackLine Introduces Multi-Agent AI System Verity Prepare", publisher: "CPA Practice Advisor (reporting a BlackLine release of 2026-07-27)", type: press, url: "https://www.cpapracticeadvisor.com/2026/07/28/blackline-introduces-multi-agent-ai-system-verity-prepare/187516/", date: "2026-07-28", access: full, locator: "paragraphs on audit trail and the 92% figure" }
     - { ref: ACCTODAY-COHNPOD-2026, title: "The meeting of CAS and AI (On the Air podcast with Kane Polakoff, Intuit-sponsored)", publisher: "Accounting Today", type: podcast, url: "https://www.accountingtoday.com/podcast/at-intuit-sponsored-podcast-03-16", date: "2026-03-16", access: full, locator: "transcript 00:32-02:56 (pilot) and 07:10-08:56 (capacity and close)" }
@@ -344,8 +350,9 @@
   runtime_class: personal-assistant
   maturity: in-production
   problem: >-
-    Booking entries and reconciling closes by hand is slow, and read-only AI cannot change the books
-    (DIGITS-WRITEMCP-2026).
+    Booking entries and reconciling a quarterly close by hand takes hours (about seven for two clients at one
+    practice), and an agent that writes to the ledger needs controls that closed-period pop-ups and passwords do not
+    give (DIGITS-WRITEMCP-2026).
   solution: >-
     Accountants use a general assistant connected to the ledger through an agent connector (Digits' Write MCP,
     shipped 13 Oct 2026). Writes apply in open periods and are queued for manager approval in locked periods; agents
@@ -365,10 +372,10 @@
     - "In the Mercor lab study, people using an assistant took about 15 times longer than the model alone and sometimes overrode a correct AI answer (ACCTODAY-AIBENCH-2026)."
   human_checkpoints:
     - "Manager approves queued changes to locked periods"
-    - "A licensed CPA reviews every close at Arclow (ARCLOW-SITE-2026)"
+    - "A licensed CPA works and confirms every close at Arclow (ARCLOW-SITE-2026; DIGITS-WRITEMCP-2026)"
   role_evolution: >-
-    Staff accountants become operators and reviewers of assistant-produced entries; managers and admins approve
-    changes to locked periods (DIGITS-WRITEMCP-2026).
+    A staff accountant runs the closes through the assistant, while admins and managers lock periods and approve
+    queued changes (DIGITS-WRITEMCP-2026).
   evidence_grade: B
   sources:
     - { ref: DIGITS-WRITEMCP-2026, title: "Agentic Accounting With Confidence: Introducing Write MCP and Locked Period Controls", publisher: "Digits", type: vendor, url: "https://digits.com/blog/write-mcp/", date: "2026-10-13", access: full, locator: "paragraphs on Write MCP, Locked Periods and the Arclow staff accountant" }
@@ -397,13 +404,13 @@
   solution: >-
     Elev8 CFO moved its clients to an AI-native ledger (Digits) with real-time transaction visibility and client
     collaboration inside the platform, and built a pipeline on the ledger's API that generates and delivers branded
-    statements to each client every month. Year-to-date numbers became available mid-month and freed time went to
-    advisory and marketing.
+    statements to each client every month. Year-to-date financials became available at any point in the month
+    rather than only after month-end, and freed time went to advisory and marketing.
   outcomes:
     - lever: speed
       description: "Monthly close cycle for the firm's clients."
       figure: "18 days to 5 days"
-      measures: "Owner's reported close cycle across the 27 migrated clients; he says he could close all 27 within two days if needed"
+      measures: "Owner's reported close cycle at the first full month-end after migrating 27 clients; he says he is confident he could close all 27 within two days if he needs to review"
       provenance: self-reported
       source_ref: CPAPA-ELEV8-2026
     - lever: capacity
@@ -424,11 +431,11 @@
     - "A small starting cohort"
   risks_and_guardrails:
     - "Owner's advice: start with five clients, run one parallel close, and confirm the numbers reconcile before cut-over (CPAPA-ELEV8-2026)."
-    - "Automated delivery assumes the numbers were reviewed first (CPAPA-ELEV8-2026)."
-    - "Single solo-firm case with approximate figures; findings may not transfer to a mid-market team (DIGITS-ELEV8-2026)."
+    - "The owner says he can 'completely leave the bookkeeping duties to the system' and comes back to review when needed; neither source describes a fixed review step before statements are released (CPAPA-ELEV8-2026; DIGITS-ELEV8-2026)."
+    - "The evidence is one solo firm's approximate figures, with no time log shown (CPAPA-ELEV8-2026; DIGITS-ELEV8-2026)."
   human_checkpoints:
     - "Parallel close on a starter cohort before cut-over"
-    - "Owner reviews closed books before statements are released"
+    - "Owner review when needed; a review gate before automated release is not described in the sources"
   role_evolution: >-
     The owner says the practice moved from a 'bookkeeping factory' to advisory and fractional CFO work without hiring
     staff accountants, and that he now interprets data for clients rather than doing bookkeeping (DIGITS-ELEV8-2026;
@@ -446,7 +453,7 @@
     study and sponsorship is not stated; both sources rest on the owner's estimates, so B not A.
 
 - id: advisory-client-accounting-services-06
-  title: AI-drafted variance commentary, live dashboards and management reporting as the CAS advisory layer
+  title: AI-assisted live dashboards, variance explanations and management reporting as the CAS advisory layer
   archetype: advisory
   module: client-accounting-services
   function: service-delivery
@@ -462,9 +469,11 @@
     ACCTODAY-CASKEYS-2026).
   solution: >-
     Accountants use ledger-connected dashboards and assistants to spot unusual movements, drill into drivers, draft
-    variance explanations and walk clients through live financials in meetings. Reporting tools generate the package
-    and draft commentary from variances, trends and KPIs; staff review and edit. Small firms on Digits describe
-    drill-down, an assistant (Ask Digits) and screen-sharing live financials in client meetings.
+    variance explanations and walk clients through live financials in meetings. A JofA guide names reporting tools
+    that generate the package and draft commentary from variances, trends and KPIs for staff to review; no named firm
+    reports using that drafting step. Small firms on Digits describe drill-down, an assistant (Ask Digits) and
+    screen-sharing live financials in client meetings, and Bonadio says it has incorporated AI and automation into a
+    CAS offering that includes financial reporting and key metrics for business owners.
   outcomes:
     - lever: experience
       description: "none measured"
@@ -478,7 +487,7 @@
     - "Dashboard and assistant connected to the ledger"
     - "A review step before client delivery"
   risks_and_guardrails:
-    - "An AI's explanation of a variance is a hypothesis for a reviewer, not a finding (ACCTODAY-CASKEYS-2026)."
+    - "Withum's advisory leader says a model could find a variance 'and probably come up with an explanation for it' (ACCTODAY-CASKEYS-2026); the sources do not describe how firms check those explanations."
     - "Over-automating without oversight can miss categorization errors or misread context, especially in client-facing content (JOFA-CASAI-2026)."
     - "A Xero adviser says small business owners cannot easily verify what AI tells them, so an accountant must check explanations in context (CFODIVE-XERO-2026)."
     - "COSO lists judgment, forecasting and insight generation as an AI capability with its own control considerations (COSO-GENAI-2026, p. 14); the AICPA warns of automation, overconfidence and anchoring bias when reviewing AI output (JOFA-ETHAI-2026)."
@@ -486,8 +495,8 @@
     - "Accountant confirms each variance explanation against source records before it reaches the client"
     - "Manager reviews commentary before delivery"
   role_evolution: >-
-    Firms describe moving from producing reports to interpreting them with the client; Bonadio's CAS leader calls CAS
-    the quarterback between advisory and compliance (ACCTODAY-BONADIO-2026). Aprio's CAAS manager posting lists KPI
+    Bonadio's outsourced accounting leader says that with AI helping to get better data, the practice is 'the
+    quarterback between advisory and compliance' (ACCTODAY-BONADIO-2026). Aprio's CAAS manager posting lists KPI
     dashboards and board-ready reporting narratives as duties (APRIO-JOB-2026).
   evidence_grade: B
   sources:
@@ -505,8 +514,8 @@
   notes: >-
     Merges three candidates (practice B, discourse B, governance D). Firm types: Withum is a Top 100 firm; Bonadio is
     a Top 50 firm; Lincoln Accounting and TFMA are small firms; Aprio is a Top 20 firm (the posting asks for AI-enabled
-    workflows but does not say AI produces the dashboards). Grade B rests on the small firms' named, described use in
-    vendor case studies; the Withum quote is general ('think how quickly Claude or ChatGPT could find a variance') and
+    delivery methodologies but does not say AI produces the dashboards). Grade B rests on Bonadio's and the small
+    firms' named, described use of AI-assisted reporting; none reports AI-drafted commentary. The Withum quote is general ('think how quickly Claude or ChatGPT could find a variance') and
     on its own would be D. Xero says use of its JAX assistant rose 61% in three months, measure not defined
     (ACCTODAY-XEROAI-2026). CohnReznick's JofA article names reporting tools such as Reach Reporting, Qvinci and
     Spotlight Reporting as tool guidance. Independence: see -24.
@@ -527,17 +536,17 @@
     those take time to assemble from spend and cash data; advisory capacity is limited by data cleanup and staffing
     (INTUIT-ACCTTECH-2026).
   solution: >-
-    Armanino built a 13-week cash-flow tool that gathers spend and cash data with robotic process automation, analyses
-    it with machine learning and projects cash (2024). Digits says firms now use a general assistant on ledger data to
+    Armanino built a 13-week cash-flow tool on robotic process automation, not generative AI, that analyses spending
+    and cash-flow data to project a client's cash position over a quarter (2024). Digits says firms now use a general assistant on ledger data to
     build 13-week forecasts, a 2026 budget and budget-versus-actual reports. Platform vendors are adding conversational
     answers grounded in the client's own ledger, AI cash-flow forecasts benchmarked against similar businesses and
     scenario modeling (Intuit, announced for late July 2026; Pilot's on-demand financial insights). CohnReznick's CAS
     leader expects AI to produce a 'script' of insights and benchmark data for advisory conversations later.
   outcomes:
     - lever: experience
-      description: "Armanino reports client traction for its 13-week cash-flow tool; no figure given."
+      description: "Armanino reports client demand for its 13-week cash-flow tool; no figure given."
       figure: "none"
-      measures: "Qualitative statement ('a lot of traction' on a client basis)"
+      measures: "Qualitative statement: the tool 'has proven very popular with clients' (reporter's paraphrase of Armanino's AI leader)"
       provenance: self-reported
       source_ref: ACCTODAY-USECASE-2024
     - lever: growth
@@ -551,7 +560,7 @@
     - "Client permission for AI use on their data"
     - "A defined advisory deliverable"
   risks_and_guardrails:
-    - "The 2024 Armanino tool uses RPA and machine learning, not generative AI, and the source is older than the 12-18 month window (ACCTODAY-USECASE-2024)."
+    - "The 2024 Armanino tool uses RPA, not generative AI, and the source is older than the 12-18 month window (ACCTODAY-USECASE-2024)."
     - "The newer forecasting examples come from unnamed firms in a vendor blog (DIGITS-WRITEMCP-2026)."
     - "COSO's control considerations for forecasting include hindsight analysis of forecasts against actual results (COSO-GENAI-2026, p. 14)."
     - "A CohnReznick CAS leader expects the advisory-insight capability to take longer than the transactional steps (ACCTODAY-COHNPOD-2026)."
@@ -559,8 +568,8 @@
     - "Adviser sets and reviews forecast and scenario assumptions before client delivery"
     - "Accountant interprets and presents insights"
   role_evolution: >-
-    Aprio's CAAS manager is expected to build budgets, 13-week cash-flow models and scenario analyses with AI-enabled
-    templates and workflows (APRIO-JOB-2026). CohnReznick expects staff to hold more analytical and client-conversation
+    Aprio's CAAS manager is expected to build budgets, 13-week cash-flow models and scenario analyses, and to develop
+    AI-enabled delivery methodologies; the posting does not say AI builds the models (APRIO-JOB-2026). CohnReznick expects staff to hold more analytical and client-conversation
     roles as compliance work automates (ACCTODAY-COHNPOD-2026).
   evidence_grade: B
   sources:
@@ -576,7 +585,7 @@
   notes: >-
     Merges a practice entry (B; Armanino 2024) and a discourse entry (C; announced client-facing Q&A and forecasts).
     Grade B reflects a named but dated, non-generative deployment; the generative and conversational parts are
-    announced or unnamed. Firm types: Armanino is a Top 25 firm; Intuit and Pilot are vendors; CohnReznick is a Top
+    announced, unnamed or Pilot's own provider-side chat advisor. Firm types: Armanino is a Top 25 firm; Intuit and Pilot are vendors; CohnReznick is a Top
     100 firm speaking in the future tense. Wider FP&A, performance improvement and ERP advisory belong to the advisory
     fpa-performance module; this entry keeps only the CFO-services forecast step CAS teams deliver. Independence:
     management functions for the firm's own audit client are restricted; see -24.
@@ -649,7 +658,8 @@
   problem: >-
     New clients arrive with years of messy data, duplicates, mispostings and unreconciled periods. Cleanups and
     catch-up took weeks of data entry, were unprofitable for budget-conscious clients and delayed advisory work, and
-    migration is often the biggest obstacle to modernizing (DIGITS-TFMA-2026; ACCTODAY-RAMPSTACK-2026; JOFA-CASAI-2026).
+    migration is often the biggest obstacle to modernizing (DIGITS-TFMA-2026; ACCTODAY-RAMPSTACK-2026;
+    FLOQAST-CASCASE-2026; CPAPA-ELEV8-2026).
   solution: >-
     Firms use AI categorization and matching to bring books current in days, and price cleanups as discrete projects
     or recurring quarterly engagements. They migrate clients between ledgers with platform automation and AI-assisted
@@ -693,28 +703,28 @@
     - "For agent cleanup: a written skill that preserves the source file, plans before acting and logs every change, tested on a control dataset until it reaches 100% accuracy (JOFA-EXCELAGENT-2026)"
     - "Control totals to reconcile to"
   risks_and_guardrails:
-    - "Cleanup output still needs review for write-offs and judgment calls (FLOQAST-CASCASE-2026)."
+    - "In the FloQast case the AI identified the necessary write-offs; the case study does not say who reviewed or approved them (FLOQAST-CASCASE-2026)."
     - "The Excel-agent authors say the human approval step reduces but does not eliminate the risk of inappropriate data changes (JOFA-EXCELAGENT-2026)."
-    - "Migration depends on one vendor: Botkeeper's February 2026 closure left firms to migrate in a three-week gap (UKU-BOTKEEPER-2026); its chief executive had claimed the platform could clean years of messy data in minutes (CPAPA-XENDOO-2026)."
+    - "Migration depends on one vendor: after Botkeeper announced its closure in February 2026, many firms migrated during the roughly three weeks before Xendoo revived the platform (UKU-BOTKEEPER-2026); its chief executive had claimed the platform could clean years of messy data in minutes (CPAPA-XENDOO-2026)."
     - "A JofA guide advises a 30 to 60 day pilot on one workflow, measuring time saved, added review time, error reduction and client feedback (JOFA-CASAI-2026)."
   human_checkpoints:
     - "Accountant approves the cleaning plan before changes"
     - "Accountant reviews write-offs, opening balances and the modifications log"
     - "Reconciliation check against source before go-live (parallel close)"
   role_evolution: >-
-    Firms reposition from hourly bookkeeping toward advisory pricing; one owner says AI lets him run with one strong
-    bookkeeper instead of several layers of support (DIGITS-TFMA-2026). A BST & Co. leader says implementation
-    specialists for each accounting package are worth investing in (JOFA-CASTIPS-2025).
+    One small-firm owner now runs with one strong bookkeeper instead of several layers of support and shifts time to
+    advisory work (DIGITS-TFMA-2026). BST & Co.'s CAS leader advises investing in technology staff; her firm has two
+    implementation specialists, each for a different accounting package (JOFA-CASTIPS-2025).
   evidence_grade: B
   sources:
     - { ref: DIGITS-TFMA-2026, title: "How TFMA LLC Improved Workflow Efficiency by 70% with Digits", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/how-tfma-llc-improved-workflow-efficiency-by-70-with-digits/", date: "2026-04-20", access: full, locator: "paragraphs on annual cleanups, two to four days, 1-3 hours per client and pricing" }
     - { ref: DIGITS-ADEPT-2026, title: "How Adept: Accounting Principles & Solutions Reduced Bookkeeping by 75% with Digits", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/adept-accounting/", date: "2026-03-23", access: full, locator: "section 'A 75% Reduction in Bookkeeping Time'" }
     - { ref: DIGITS-MANA-2025, title: "Mana Accounting & Advisory: Saving Hours with AI-Powered Accounting", publisher: "Digits (case study)", type: vendor, url: "https://digits.com/case-studies/mana-accounting-advisory-saving-hours-with-ai-powered-accounting/", date: "2025-10-10", access: full, locator: "paragraphs on cleanups taking minutes and client onboarding (qualitative)" }
-    - { ref: CPAPA-ELEV8-2026, title: "How an AI-Native Accounting Platform Helped One Solo Firm Reclaim 90 Hours a Month and Scale Advisory Without Hiring", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/07/21/how-an-ai-native-accounting-platform-helped-one-solo-firm-reclaim-90-hours-a-month-and-scale-advisory-without-hiring/187093/", date: "2026-07-21", access: full, locator: "section 'Making Migration Manageable'" }
+    - { ref: CPAPA-ELEV8-2026, title: "How an AI-Native Accounting Platform Helped One Solo Firm Reclaim 90 Hours a Month and Scale Advisory Without Hiring", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/07/21/how-an-ai-native-accounting-platform-helped-one-solo-firm-reclaim-90-hours-a-month-and-scale-advisory-without-hiring/187093/", date: "2026-07-21", access: full, locator: "section 'Making Migration Manageable' (including 'migration is often the biggest obstacle')" }
     - { ref: FLOQAST-CASCASE-2026, title: "How One CAS Practice Uses FloQast AI Transaction Matching to Scale Client Support (case study PDF)", publisher: "FloQast", type: vendor, url: "https://get.floqast.com/hubfs/Assets/Case%20Studies/FloQast_MillerCooper_CAS_Case_Study_August_2026.pdf", date: "2026-08", access: full, locator: "paragraph on the seven-year clearing-account cleanup" }
     - { ref: ACCTODAY-RAMPSTACK-2026, title: "Ramp launches Stack, made specifically for accounting firms", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/ramp-launches-stack-made-specifically-for-accounting-firms", date: "2026-06-03", access: full, locator: "paragraph 3 (audit a client's existing books)" }
     - { ref: JOFA-EXCELAGENT-2026, title: "Using an Excel agent to clean, validate, and reconcile data (G. Pan and L. Wang, University of Akron)", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/oct/using-an-excel-agent-to-clean-validate-and-reconcile-data/", date: "2026-10-01", access: full, locator: "introduction, skill design, Steps 1-3 and results paragraph" }
-    - { ref: JOFA-CASAI-2026, title: "Simple but effective AI use cases for CAS (Polakoff and Voyer, CohnReznick)", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/", date: "2026-01-01", access: full, locator: "use-case category 'Client onboarding' and Step 3" }
+    - { ref: JOFA-CASAI-2026, title: "Simple but effective AI use cases for CAS (Polakoff and Voyer, CohnReznick)", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/", date: "2026-01-01", access: full, locator: "use-case category 'Client onboarding' and the 30-to-60-day pilot advice" }
     - { ref: JOFA-CASTIPS-2025, title: "Tips for providing the CAS services clients want", publisher: "Journal of Accountancy (AICPA & CIMA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/jul/tips-for-providing-the-cas-services-clients-want/", date: "2025-07-01", access: full, locator: "section 'Build your technology stack wisely'" }
     - { ref: UKU-BOTKEEPER-2026, title: "Botkeeper Alternatives: 7 Best Options for Accounting Firms", publisher: "Uku (practice-management vendor blog)", type: vendor, url: "https://getuku.com/articles/botkeeper-alternatives/", date: "2026-02-13", access: full, locator: "section 'What Happened to Botkeeper?'" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "quoted CEO note in the related-article block" }
@@ -770,8 +780,8 @@
       source_ref: CPAPA-BILLAGENTS-2026
     - lever: risk
       description: "Use of AI against payments fraud by treasury and finance teams (adjacent: not CAS providers)."
-      figure: "17% use AI; among users 49% faster fraud reporting, 45% better deepfake detection, 43% real-time identification"
-      measures: "Share of AFP survey organizations using AI to combat payments fraud, and shares of AI users reporting each benefit (AFP 2026 Payments Fraud and Control Survey)"
+      figure: "17% use AI; among users 49% more efficient fraud reporting, 45% better deepfake detection, 43% real-time identification"
+      measures: "Share of AFP survey organizations using AI to combat payments fraud, and shares of AI users reporting each benefit (AFP 2026 Payments Fraud and Control Survey, 465 treasury practitioners, January 2026)"
       provenance: independent
       source_ref: AFP-PAYFRAUD-2026
   prerequisites:
@@ -1102,8 +1112,8 @@
     - "Operating data and process knowledge from years of human-delivered bookkeeping; Pilot says it draws on its work for over 7,000 startups and small businesses (PILOT-AIACCOUNTANT-2026)"
     - "Bank, payroll and billing integrations (ACCTODAY-MERIDIAN-2026)"
   risks_and_guardrails:
-    - "Pilot's own releases differ on human involvement: 'zero human intervention' (February 2026), a dataset verified by US-based accounting experts (December 2025), and firm review of completed books in Meridian (June 2026) (CPAPA-PILOTAI-2026; CPAPA-PILOTPARTNER-2025; CPAPA-PILOTMERIDIAN-2026)."
-    - "A practitioner says autonomous bookkeeping 'only works for very constrained, simpler cases' such as single-entity books (ACCTODAY-BIGYEAR-2026)."
+    - "Pilot's own releases differ on human involvement: 'zero human intervention' (February 2026), 'minimal human intervention' and a dataset verified by US-based accounting experts (December 2025), and firm review of completed books in Meridian (June 2026) (CPAPA-PILOTAI-2026; CPAPA-PILOTPARTNER-2025; CPAPA-PILOTMERIDIAN-2026)."
+    - "The head of an accounting-focused AI consultancy (Edgefield Group) says autonomous bookkeeping 'only works for very constrained, simpler cases' such as single-entity books (ACCTODAY-BIGYEAR-2026)."
     - "In a vendor test general-purpose models alone reached about 79.5% on categorization, so end-to-end autonomy depends on the provider's own specialized system (DIGITS-BENCH-2026)."
     - "Firms and clients are urged to keep their own data exports after Botkeeper's closure (UKU-BOTKEEPER-2026)."
   human_checkpoints:
@@ -1144,8 +1154,8 @@
     Independent bookkeepers and small firms lack capacity and technology to scale, and AI-native platforms need
     distribution and local relationships (CPAPA-PILOTPARTNER-2025).
   solution: >-
-    Pilot launched a Local Partner Program on 9 Dec 2025 that gives independent bookkeepers and firms its platform and
-    automation, advisory services and matched leads, in select cities with nationwide expansion planned. Puzzle will
+    Pilot launched a Local Partner Program on 9 Dec 2025 that gives independent bookkeepers and firms nationwide its
+    platform and automation, advisory services, sales enablement tools and leads matched by specialty and location. Puzzle will
     work with accounting partners who deliver the service after Accrual's purchase of its firm-facing technology.
     Woodard cites Xendoo, Pilot and Decimal as providers moving to support accountants and bookkeepers.
   outcomes:
@@ -1159,7 +1169,7 @@
     - "Provider platform and lead engine"
     - "Partner firm with local presence"
   risks_and_guardrails:
-    - "Vendor dependence: the Botkeeper episode shows a platform can be in limbo for weeks (CPAPA-XENDOO-2026; UKU-BOTKEEPER-2026)."
+    - "Vendor dependence: Botkeeper announced its closure on 9 Feb 2026 and its platform was out of service for about three weeks until Xendoo bought it (CPAPA-XENDOO-2026; UKU-BOTKEEPER-2026)."
     - "Puzzle will no longer market a standalone firm-facing product after the Accrual deal, so partner firms depend on the provider's strategy (ACCTODAY-ACCRUAL-2026)."
   human_checkpoints:
     - "Not described in the sources"
@@ -1168,7 +1178,7 @@
   evidence_grade: C
   sources:
     - { ref: CPAPA-PILOTPARTNER-2025, title: "Pilot Unveils Local Partner Program", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2025/12/09/pilot-unveils-local-partner-program/174577/", date: "2025-12-09", access: full, locator: "paragraphs 2-6" }
-    - { ref: PILOT-PARTNERHUB-2026, title: "What's New at Pilot - Partner Resource Hub", publisher: "Pilot", type: vendor, url: "https://partners.pilot.com/Partner%20Hub/pages/whats-new.html", date: "2026-04", access: full, locator: "entries dated Dec 9, 2025 (Local Partner Program) and Feb 4, 2026" }
+    - { ref: PILOT-PARTNERHUB-2026, title: "What's New at Pilot - Partner Resource Hub", publisher: "Pilot", type: vendor, url: "https://partners.pilot.com/Partner%20Hub/pages/whats-new.html", date: "2026", access: full, locator: "entries dated Dec 9, 2025 (Local Partner Program) and Feb 4, 2026 (page undated; latest entry Feb 11, 2026; read through a mirror)" }
     - { ref: ACCTODAY-ACCRUAL-2026, title: "Accrual acquires Puzzle's tech to add to their CAS offering", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/accrual-acquires-puzzles-tech-to-add-to-their-cas-offering", date: "2026-09-02", access: full, locator: "paragraph 4 (Orloff on the partner model)" }
     - { ref: WOODARD-EP163-2026, title: "AI, Scams, and the Future of CAS in a Changing Profession (Episode 163)", publisher: "The Woodard Report", type: podcast, url: "https://report.woodard.com/articles/ai-scams-future-of-cas-ombwr-twrpod", date: "2026-03-18", access: full, locator: "section 'A new chapter for Botkeeper and a bigger shift in CAS' (written summary)" }
     - { ref: CPAPA-XENDOO-2026, title: "Xendoo Buys Botkeeper Infinite; AI Platform Will Remain 'Active and Supported'", publisher: "CPA Practice Advisor", type: press, url: "https://www.cpapracticeadvisor.com/2026/02/28/xendoo-buys-botkeeper-infinite-ai-platform-will-remain-active-and-supported/179027/", date: "2026-02-28", access: full, locator: "opening paragraphs" }
@@ -1191,12 +1201,12 @@
   runtime_class: managed-agent-runtime
   maturity: announced
   problem: >-
-    Most small and midsize clients cannot afford enterprise AI, and generic software with AI added on gives a firm no
-    way to encode its own judgment and industry specialization; most mid-market firms cannot fund their own platform
-    (ACCTODAY-CLA-2026).
+    CLA's chief executive says AI should not belong only to the biggest companies and firms with the largest budgets,
+    and that most vendors CLA evaluated had 'tacked AI onto decades-old software' (ACCTODAY-CLA-2026).
   solution: >-
-    CLA announced on 21 Jul 2026 that it is working with Digits to develop and train a proprietary model: Digits
-    supplies the platform and model-training infrastructure, CLA supplies decades of data and professional judgment.
+    CLA announced on 21 Jul 2026 that it is working with Digits to develop and train a proprietary model built on
+    Digits' Firm Model offering: Digits supplies the platform and model-training infrastructure, CLA supplies data
+    drawn from decades of experience and professional judgment.
     It starts in CLA's client accounting and advisory services (CAAS) practice, offered as an option within service
     levels, with deployment planned to thousands of current and future clients over three years.
   outcomes:
@@ -1241,8 +1251,8 @@
   runtime_class: workflow-automation
   maturity: announced
   problem: >-
-    Per-seat or per-client software pricing makes firms pay for potential automation rather than for hours actually
-    removed from the CAS workflow (ACCTODAY-DIGITSPRICING-2026).
+    Digits' new adviser argues that when AI does the work, firms should pay for results rather than for potential;
+    subscription pricing charges for a client whether or not the platform removes work (ACCTODAY-DIGITSPRICING-2026).
   solution: >-
     Digits announced (7-8 Apr 2026) that firms pay for a client only when 95% or more of that client's transactions are
     zero-touch, meaning no human created or edited them before close; if staff touch more than 5%, the platform is free
