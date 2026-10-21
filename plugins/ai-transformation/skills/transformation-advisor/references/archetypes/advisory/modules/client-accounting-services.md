@@ -269,10 +269,11 @@ consent decisions.
 - **"We can't put client data into AI."** Not into consumer tools. Use enterprise tools with written no-training
   terms, an approved-tool list and client consent where needed (`#22`, `#23`).
 - **"We can't offer this to audit clients."** Correct for bookkeeping to SEC audit clients and limited elsewhere; the
-  restrictions apply only to clients the firm also audits or reviews. Screen by client, not service line (`#24`).
-- **"Savings will just be given away."** That is a pricing choice: under fixed fees the firm keeps the gain until
-  renegotiation, and the IRS says billing hours not spent may breach Circular 230 in tax matters. See
-  professional-services-scoping-pricing-17 [IRS-OPR-2026].
+  restrictions follow the client's attest status, so the same service can go to a client the firm does not audit.
+  Screen by client, not service line (`#24`).
+- **"Savings will just be given away."** Where the time dividend goes is a pricing choice (see
+  professional-services-scoping-pricing-17). In tax matters the IRS says billing for time not actually spent may
+  violate Circular 230 [IRS-OPR-2026].
 
 ## 10. Sources
 
