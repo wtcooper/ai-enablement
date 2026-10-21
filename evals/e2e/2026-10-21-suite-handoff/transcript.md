@@ -404,3 +404,135 @@ Neither kill criterion can be tested until the checklist is written, and neither
 - **Left unchanged:** the portfolio item's `solution` field, which gets set when `g1` is a Go. I also didn't touch `portfolio.yaml`.
 
 **Question:** Do you want to agree the gatekeepers and sponsor with the forum before the evidence is in, or hold `g1` on the proposed basis and record that?
+
+### USER
+Hold `g1` on the proposed basis and record that. I'll agree the gatekeepers and sponsor with the forum in parallel, but I don't want to wait on them before the evidence work starts. Then draft the ask to the SOX/ICFR practice leader for the protected senior half-days and the two named seniors, since everything else depends on that.
+
+### ASSISTANT
+I've recorded the basis for `g1` and drafted the ask to the SOX/ICFR practice leader. Nothing has been sent.
+
+**Basis for holding `g1`**
+- **Where recorded:** it is in `portfolio/gates/g1-sox-prereview-checklist.md` and as a comment on the item's `next_gate` in `portfolio.yaml`.
+- **Proposed basis:** `g1` will be held on the proposed gatekeepers (the practice leaders and the risk and quality partner), the proposed sponsor and the full gate path.
+- **Forum agreement in parallel:** you're agreeing the gatekeepers and sponsor with the forum while the evidence work starts. If the forum changes any of them, I'll update the outline. I won't edit the `g0` entry.
+- **Caveat on the outcome:** `g1` will carry a note that it was taken by gatekeepers the forum had not yet agreed, unless the forum has agreed them by then.
+- **Not held yet:** the evidence is still missing, so the gate itself isn't held.
+
+**The ask is in `portfolio/gates/g1-ask-sox-icfr-practice-leader.md`**
+- **Request 1:** two or three protected senior half-days in the shoulder weeks, none in peak, to write down the seniors' unwritten checks.
+- **Request 2:** two named seniors, chosen by the leader, with the methodology owner approving the checklist.
+- **Costs and next steps:** the draft says plainly that the cost is time, with no spend and no AI. The back-test follows and the 25% kill line applies.
+- **Two questions for the leader:** whether the sponsor role is right for them, and whether the ITGC senior manager can also run the back-test.
+- **Also asked for:** the tracking-sheet records of review notes by cause, for the baseline.
+
+**One conflict to settle.**
+- **Overlap:** the ITGC senior manager is also the proposed validator for `sox-report-register` stage 1, at about four hours a week.
+- **Options:** either the back-test waits for that stage, or another role runs it. That's for you and the leader to settle.
+
+**Check before sending**
+- **Kill line:** the 25% line is the low end of the advisor's own assumption, not a tested figure.
+- **Roles only:** the draft uses roles, not names.
+- **No performance wording:** I removed a line that hinted at choosing seniors by how often they catch gaps. It read as a judgment about individuals.
+
+**Question:** Do you want me to add the baseline request for the integrated-audit line as a separate note to the integrated-audit manager, or keep the ask to the practice leader only?
+
+### USER
+Keep the ask to the practice leader only for now. I'll speak to the integrated-audit manager myself, so add a short separate note to them for the integrated-audit baseline, and keep it in roles only. On the ITGC senior manager overlap, have the back-test wait for the `sox-report-register` stage 1 workload rather than pull in another role, and record that as a dependency in the `g1` outline.
+
+### ASSISTANT
+The three changes are made, and nothing has been sent.
+
+**Ask to the practice leader (`portfolio/gates/g1-ask-sox-icfr-practice-leader.md`)**
+- It now covers only the SOX/ICFR practice leader. The two requests stay the same: protected senior half-days and two named seniors.
+- The ITGC senior manager point is now a timing statement, not a question: the back-test waits for the register's first-stage workload, and no second role is pulled in. Writing the checklist does not wait.
+- The baseline request is limited to the SOX-only line.
+- Your decision on the overlap is recorded in the drafting notes.
+
+**Note to the integrated-audit manager (`portfolio/gates/g1-note-integrated-audit-manager.md`)**
+- It uses roles only and asks for counts and shares, with no client or engagement detail.
+- It asks for four things:
+  - The share of tests that drew a review note, over the same period as the SOX-only figure if possible.
+  - How many tests that covers.
+  - How many of those notes were about evidence completeness, if the records allow it.
+  - How they count a note.
+- It asks which figures come from a record and which are estimates. It also says their line's own checklist stays a draft and its value isn't added to the SOX-only one.
+- It asks for nothing else: no confirmation of the five desk-review items, and not the three past files that the `g0` resources assumed. Those are still separate asks.
+
+**Dependency in the `g1` outline (`portfolio/gates/g1-sox-prereview-checklist.md`)**
+- The blind back-test (item 7) now waits for the `sox-report-register` stage 1 workload. I added it to the item's "needs first" column and to a new Dependencies section.
+- **Consequence for the gate:** register stage 1 has its own open conditions, a named validator and the risk and quality partner's view on who can sign. If stage 1 slips, the back-test slips, and so does `g1`.
+- **Open question:** what counts as the workload leaving room: the first client validated and timed, or only the key-report inventory finished? Nobody has defined this, and the back-test can't be scheduled without it.
+
+I left `portfolio.yaml` alone, since the dependency is recorded in the `g1` outline.
+
+**Question:** What should count as the ITGC senior manager's stage 1 workload leaving room: the first client validated and timed, or the key-report inventory finished?
+
+### USER
+The first client validated and timed. The key-report inventory alone doesn't free the ITGC senior manager's time, because the validation is the heavy part. Record that as the definition in the `g1` outline, and tell me what that implies for the earliest realistic back-test date so I can decide whether it's worth raising with the practice leader.
+
+### ASSISTANT
+I've recorded your definition in the Dependencies section of the `g1` outline. The ITGC senior manager's stage 1 workload has left room when the first client has been validated and timed, and finishing the key-report inventory alone doesn't count.
+
+**I can't give you a calendar date.** I don't have the firm's peak and shoulder weeks, and the plans I write are sequenced by steps, not dates. What I can give is the earliest the back-test can start, counted in weeks of the validator's time.
+
+**What the earliest back-test implies**
+- **Validation effort:** the advisor's figures put the first client at about 24 hours, in a range of 16 to 32. Those are your estimates, not records.
+- **Allowance:** the validator's allowance is about 4 hours a week outside peak.
+- **Result:** that is roughly 4 to 8 weeks of the allowance, with 6 as the middle. Peak weeks don't count. If you give me the weeks outside peak, I can turn that into a count of calendar weeks.
+- **Not included:** the key-report inventory comes first, and the advisor's file doesn't estimate its hours. The back-test's own hours aren't estimated either. So the real figure is longer.
+- **Start conditions:** stage 1 hasn't started, and it needs three things first:
+  - A named validator.
+  - The risk and quality partner's view on who can sign a validation record.
+  - AS 1215 record content agreed.
+
+The back-test can't come earlier than this, and it's the last major piece of `g1` evidence. The half-days to write the checklist don't wait.
+
+**Whether to raise it with the practice leader**
+
+I think it's worth raising, because `g1` effectively waits on a stage nobody has started. The practice leader already controls the validator's hours. You could ask them about:
+- **More hours:** whether more than about 4 hours a week is possible for stage 1.
+- **Start order:** whether stage 1 can start before the half-days are fixed.
+- **Accepting the wait:** treating the dependency as accepted, and noting it as a capacity constraint on that role at the next review.
+
+Whether to ask for more than 4 hours a week, or to accept the wait, is your call. You've already ruled out pulling in another role.
+
+I haven't changed the ask to the practice leader or the note to the integrated-audit manager.
+
+**Question:** Do you want me to add the options above to the ask to the practice leader, or will you raise them in conversation?
+
+### USER
+I'll raise those options with the practice leader in conversation, so leave the ask as it is. Please add a line to the `g1` outline that the back-test timing is a capacity constraint on the ITGC senior manager role, to be raised at the next review. Then tell me what the next step in the brief is and whether anything else can move ahead without the back-test.
+
+### ASSISTANT
+I've added the line to the `g1` outline (`portfolio/gates/g1-sox-prereview-checklist.md`, Dependencies section). It says the back-test timing is a capacity constraint on the ITGC senior manager role, to be raised at the next portfolio review. It also notes that you're raising the options with the practice leader in conversation. The ask to the practice leader is unchanged.
+
+**The next step in the brief is step 3, solution design.**
+
+The step is short here because no model runs. It has to cover:
+- **Placement:** purpose and non-goals, and where the self-check sits in the SOX workpaper template. The open point is which field staff reach before they submit, since the template is the one seniors fill in.
+- **Flow:** staff complete the self-check, a senior reviews every exception and samples the completions, and the methodology owner approves any change.
+- **Permissions:** the permission table is essentially read/write on the template, with no system access beyond what staff already have.
+- **Failure behaviour:** what happens when the checklist can't be completed or conflicts with a senior's call, and what staff do when evidence doesn't fit. Logging is the completed checklist itself. This step also covers cost, which is staff time only, and role evolution.
+- **Tier:** the risk tier stays blank for ai-governance.
+- **Role evolution:** the capacity choice is still undecided at firm level.
+
+**What can move ahead without the back-test**
+
+| Piece | Why it can proceed |
+|---|---|
+| Co-writing the checklist | It needs the half-days, not the validator. |
+| SOX-only baseline from the tracking sheet | It needs only the practice leader's records. |
+| Integrated-audit baseline | It needs the manager's records. |
+| Data seen in its real state | It needs only confirmation of where past workpapers live and that they can be read. |
+| Counterfactual idea | It can be drafted now. |
+| Independence view and risk tier | They need the risk and quality partner and ai-governance, not the back-test. |
+| Forum agreement on gatekeepers and sponsor | It's already running in parallel. |
+| Brief steps 3 and 4 | Step 4, the evaluation plan, is the back-test protocol: the case inventory, gold answers from the notes' causes and the 25% line. It can be drafted before the back-test runs. |
+| Register stage 1 start conditions | The named validator, the risk and quality view on who can sign and AS 1215 record content. Settling them starts the clock on the back-test. |
+
+**What cannot proceed without the back-test:** the drafted-and-tested checklist (item 7), the kill-criterion check and the strategic-fit confirmation that depends on the written criteria. Those are the last items to arrive.
+
+**Question:** Which field in the SOX workpaper template do staff reach before they submit, so the self-check sits where they will see it?
+
+### END
+session 807fbf4d-3850-5c6c-82b1-8d3750715cd5

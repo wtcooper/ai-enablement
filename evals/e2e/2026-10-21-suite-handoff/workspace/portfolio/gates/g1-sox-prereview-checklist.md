@@ -23,11 +23,24 @@ Of 11 pieces, 1 is met, 2 are partly met and 8 are not presented or not met. Not
 | 4 | Data located and seen in its real state | **Not presented** | Past workpapers and the tracking sheet are named as the sources (intake record) | Confirmation of where they live, that they can be read for the back-test, and that cases stay in approved systems | Practice lead | None |
 | 5 | Strategic fit and technical feasibility | **Partly met** | Scores on file: strategic fit 5, feasibility 5, data readiness 3 (advisor's file, independent review lowered data readiness) | A check against the real criteria once written; data readiness stays 3 until the seniors' checks are written | Practice lead | Item 7 |
 | 6 | Counterfactual idea | **Not presented** | The back-test on past files is the only comparison planned | How the effect of the checklist would be separated from other change later (for example staggered start by client) | Head of AI with the SOX/ICFR practice leader | Item 2 |
-| 7 | Checklist drafted and back-tested blind on past files | **Not presented** | The method is in the advisor's `next_step` (protected half-days, then a blind back-test with the back-test protocol) | The checklist; the protected half-days; the back-test result against the 25% kill line | Two seniors; ITGC senior manager; methodology owner approves | People released (item 10) |
+| 7 | Checklist drafted and back-tested blind on past files | **Not presented** | The method is in the advisor's `next_step` (protected half-days, then a blind back-test with the back-test protocol) | The checklist; the protected half-days; the back-test result against the 25% kill line | Two seniors; ITGC senior manager; methodology owner approves | People released (item 10); ITGC senior manager capacity once the `sox-report-register` stage 1 workload leaves room (see Dependencies) |
 | 8 | Build, buy or partner leaning | **Met** | Configure, no AI, in the existing SOX workpaper templates; methodology owner owns it after launch (brief §2, step 2 closed) | None | Head of AI | None |
 | 9 | Risk tier confirmed against `overlay/policy.md` | **Not met** | Tier-1, provisional | No policy file exists; ai-governance has not confirmed. Brief `risk_tier` stays blank | ai-governance, with the risk and quality partner | None |
 | 10 | Resources released by the sponsor | **Not presented** | `g0` names them: two seniors for two or three protected half-days in the shoulder weeks, the ITGC senior manager for the back-test, the methodology owner's approval, and three past integrated-audit files | Confirmation that the sponsor has released the people. The sponsor is itself an assumption | SOX/ICFR practice leader (sponsor, assumed) | Forum agreeing the sponsor |
 | 11 | Independence check confirmed as applicable or not | **Not presented** | A `g1` condition added by the portfolio owner | The risk and quality partner's view | Risk and quality partner | None |
+
+## Dependencies
+
+| Dependency | Decided | Effect |
+|---|---|---|
+| Item 7 (the blind back-test) waits for the `sox-report-register` stage 1 workload of the ITGC senior manager | Portfolio owner, 2026-10-21 | The same role is the proposed validator for stage 1, at about four hours a week outside peak. No other role is pulled in to run the back-test. Writing the checklist in the protected half-days (item 7, first part) does not wait |
+
+Consequences to watch:
+- The back-test cannot start until stage 1 of `sox-report-register` has begun and left capacity, and stage 1 itself still has open conditions (a named validator and risk and quality's view on who can sign a validation record). A slip there slips item 7, and so `g1`.
+- **Definition (portfolio owner, 2026-10-21):** the stage 1 workload has left room when the **first client has been validated and timed**. Finishing the key-report inventory alone does not count, because the validation is the heavy part.
+- **Sizing, an estimate from the advisor's figures, not a plan:** the first client is about 24 hours (range 16-32 h, advisor's file, user estimates) at about 4 hours a week outside peak, so roughly 4 to 8 weeks of the validator's allowance, with 6 as the middle. Weeks in peak do not count. The inventory hours are not estimated in the advisor's file, and neither are the back-test hours. Stage 1 also has not started: it needs a named validator, risk and quality's view on who can sign a validation record, and AS 1215 record content agreed. So the back-test cannot come earlier than this, and the stage 1 start conditions sit before it.
+- **To raise at the next portfolio review:** the back-test timing is a capacity constraint on the ITGC senior manager role. The portfolio owner is raising the options (more weekly hours for stage 1, starting stage 1 earlier, or accepting the wait) with the SOX/ICFR practice leader in conversation; the ask to the practice leader is unchanged.
+- Record in the next review: if item 7 is the last piece missing, this dependency is the reason, and the forum should see it as a capacity constraint on the ITGC senior manager role (live-limit input), not as slippage of the checklist.
 
 ## Kill criteria (agreed at `g0`)
 
