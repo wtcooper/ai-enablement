@@ -1,7 +1,7 @@
 {
   "name": "ai-transformation",
   "version": "0.1.0",
-  "description": "Guides a team lead, practice leader or head of AI through transforming how their part of the business works with AI: onboarding, a guided loop from framing to a sequenced plan, deep researched knowledge of specific fields (assurance first), and honest handling of how roles change.",
+  "description": "A suite of skills for leading AI transformation in a firm or function: an advisor that finds and plans AI opportunities (onboarding, a guided loop from framing to a sequenced plan, unit breakdown and roll-up, acquisition assessment), plus skills to run the AI portfolio, take solutions to production, run enablement and adoption, and set practical governance. Built on researched, fact-checked knowledge of professional services, assurance, tax, advisory and security, with honest handling of how roles change.",
   "author": {
     "name": "Wade Cooper",
     "url": "https://github.com/wtcooper"
@@ -17,6 +17,10 @@
     "assurance",
     "tax",
     "lean",
-    "value-creation"
+    "value-creation",
+    "ai-governance",
+    "ai-enablement",
+    "portfolio-management",
+    "advisory"
   ]
 }
