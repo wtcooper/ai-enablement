@@ -93,8 +93,8 @@ exceptions to people), delegate (an agent owns a multi-step outcome), reinvent (
    Held expects such questions [JSHELD-AIEXPERT-2026].*
 3. What share of project hours goes to getting data usable before analysis, and how do you validate extraction
    (balance checks, re-performance)? *Sizes `#01` and `#02`; J.S. Held cites up to 50% of budgets.*
-4. Which error, exception or false-positive rates do you track on matching or anomaly tools? *Most firms track none;
-   none are published. Reveals whether any claim of value can be shown.*
+4. Which error, exception or false-positive rates do you track on matching or anomaly tools? *No such rates are
+   published anywhere. Reveals whether any claim of value can be shown.*
 5. For document review, do you validate against a sample coded by a subject-matter expert, and whose coding counts as
    correct? *Readiness for `#04`; ground truth itself is contested [CGP-ARXIV-2026].*
 6. Which tools may touch client or protective-order material, are consumer tools barred, and do engagement letters
@@ -141,7 +141,8 @@ must disclose AI use before such evidence is introduced [KTS-EXPERTAI-2026; AICP
 **Proposed Federal Rule of Evidence 707 is not law.** As drafted it would apply Rule 702 reliability tests to machine
 output offered without an expert [USCOURTS-FRE707-2025]. Published August 2025; committee met 2026-05-07; the
 September 2026 Standing Committee report lists only "continued consideration" [USCOURTS-STDCOMM-2026]. A possible Rule
-901(c) on deepfakes was prepared but not approved [USCOURTS-EVAGENDA-2026]. The Justice Department raised concerns.
+901(c) on deepfakes was prepared but not approved, and the Justice Department raised concerns about Rule 707
+[USCOURTS-EVAGENDA-2026].
 
 **Professional guidance.** AICPA FVS committee guidelines (October 2025, members-only, not a standard) remind members
 to align AI use with engagement terms, confidentiality and judgment [BVR-AICPAAIGUIDE-2025]. UK: the Civil Justice
@@ -210,7 +211,7 @@ admissibility, which the court decides.
 
 | Objection | Evidence-based response |
 |---|---|
-| "Courts won't accept AI-assisted analysis." | The exclusions so far turned on unverified or unreproducible output (*Kohls*, *Weber*), not on AI use as such [KTS-EXPERTAI-2026]. Verification by other means, logs and disclosure are the answer; J.S. Held double-checks AI analyses with traditional methods [JSHELD-AIEXPERT-2026]. Rule 707 is still a proposal [USCOURTS-STDCOMM-2026]. |
+| "Courts won't accept AI-assisted analysis." | The exclusions so far turned on unverified or unreproducible output (*Kohls*, *Weber*), not on AI use as such [KTS-EXPERTAI-2026]. Model engagement terms call for disclosure, verification not using the same tool, and prompt and output logs; J.S. Held double-checks AI analyses with traditional methods [JSHELD-AIEXPERT-2026]. Rule 707 is still a proposal [USCOURTS-STDCOMM-2026]. |
 | "Vendor figures prove gen-AI review beats people." | The flagship comparison is disputed by independent academics, and reviewers and experts disagree on what is responsive [CGP-ARXIV-2026]. Validate on your own expert-coded sample (`#04`). |
 | "AI flags will send us chasing false positives." | A real risk, named by practitioners [CPAPA-FORENSICAI-2025]. No false-positive rates are published, so measure your own and keep interpretation with a forensic accountant. |
 | "We can't put client data into AI." | Use closed or sandboxed tools (J.S. Held) and engagement terms with an opt-out [JSHELD-AIEXPERT-2026]; answer the consent question first [JOFA-ETHICSAI-2026]; keep protective-order material out of open tools [KTS-EXPERTAI-2026]. |

@@ -96,6 +96,7 @@ straight to 6 before a partner meeting), and you note what is missing from earli
 
 ### 1 · Assess and segment
 
+**Goal:** a baseline of use by depth, not logins, and five to seven segments with a barrier and a first move.
 **Read now:** `references/assess-and-segment.md`.
 
 - Last month, how many people used the tools weekly, how many monthly, how many only once, by team and level?
@@ -111,6 +112,7 @@ segments and baseline measures.
 
 ### 2 · Design the program
 
+**Goal:** a charter tied to business outcomes, with an owner, learning time, leader expectations and measures.
 **Read now:** `references/program-design.md`.
 
 - If this works, what will be different for clients and for the firm's results, not only for tool use?
@@ -126,6 +128,7 @@ section 2; measures in `measures.yaml`.
 
 ### 3 · Curriculum by role and level
 
+**Goal:** each role learns its target workflows on real work, how to check the output, and where AI is weak.
 **Read now:** `references/curriculum.md`.
 
 - For each role, what are three tasks where AI is most useful and three where it is not? Can you show one from your own files?
@@ -139,6 +142,7 @@ triggers; delivery order. **Output:** `program.md` section 3.
 
 ### 4 · Champions, office hours and communities
 
+**Goal:** help and social proof close to the work: champions by group, forums with a rhythm, reach to the not-keen.
 **Read now:** `references/champions-and-community.md`.
 
 - What should a champion here be known for, apart from technology?
@@ -151,6 +155,7 @@ rhythm and owner; reach plan; routes into the library and to governance. **Outpu
 
 ### 5 · The workflow library
 
+**Goal:** a small, tested set of workflows per role, each with a human checkpoint, an owner and a known data rule.
 **Read now:** `references/workflow-library.md`.
 
 - Which prompts, skills or procedures do people already pass around, and where do they live?
@@ -164,7 +169,8 @@ entries for the target workflows, each with a checkpoint; an index; a reuse sign
 
 ### 6 · Bring partners and skeptics along
 
-**Read now:** `references/partners-and-skeptics.md`. For answers, use the matched archetype's `objections.md`.
+**Goal:** senior people use AI visibly, state what they expect, and get evidence or a test for each concern.
+**Read now:** `references/partners-and-skeptics.md` (it points to the archetype's objections file for answers).
 
 - Who else has to say yes, and who can say no without being asked? Describe them by role.
 - What exactly does the skeptic worry about: accuracy, confidentiality, clients, craft, status, job security?
@@ -178,6 +184,7 @@ outline; senior modelling plan; written expectations with only consequences the 
 
 ### 7 · Measure sustained adoption and impact
 
+**Goal:** an honest read of sustained use and its effect on outcomes, with measured and estimated kept apart.
 **Read now:** `references/measure-adoption.md`.
 
 - What does "active" mean in your numbers, and over what window?
@@ -230,7 +237,7 @@ results back as drafts and confirm with the user.
 - **Schemas:** `references/schemas/measures.md` (measures/v1), `references/schemas/workflow.md` (workflow/v1); shared
   ids in `../transformation-advisor/references/schemas/vocabulary.yaml`
 - **Shared knowledge** (in the core skill): method `../transformation-advisor/references/method/index.md` (people and
-  change, interviewing); archetypes `../transformation-advisor/references/archetypes/index.md` (each has
+  change, leading partners, interviewing); archetypes `../transformation-advisor/references/archetypes/index.md` (each has
   `objections.md` and `workforce.md`); library
   `../transformation-advisor/references/library/index.md`
 

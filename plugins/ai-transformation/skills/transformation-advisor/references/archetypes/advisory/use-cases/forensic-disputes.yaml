@@ -70,6 +70,7 @@
     - { ref: VALID8-WP-2025, title: "The Impact of AI on Fraud Investigations: What Forensic Accountants Need to Know", publisher: "Valid8 Financial", type: vendor, url: "https://valid8financial.com/white-paper/ai-impact-on-fraud-investigations", date: "2025-02", access: full, locator: "Kniepmann interview section" }
     - { ref: VALID8-SITE-2026, title: "Verified Financial Intelligence and Forensic Accounting Software (home page)", publisher: "Valid8 Financial", type: vendor, url: "https://www.valid8financial.com/", date: "2026-10-08", access: full, locator: "feature section" }
     - { ref: VALID8-HUB-2026, title: "Valid8 Financial profile page (customer and testimonial claims)", publisher: "NYSSCPA Resource Hub (vendor content)", type: vendor, url: "https://hub.nysscpa.org/company/valid8-financial", date: "2026-10-20", access: full, locator: "profile text (page undated; date is the access date)" }
+    - { ref: SEC-RULE2-01-2026, title: "17 CFR 210.2-01 Qualifications of accountants", publisher: "US SEC via eCFR", type: regulator, url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-17?part=210&section=210.2-01", date: "2026-10-20", access: full, locator: "(c)(4)(x) expert services (current text as fetched)" }
   last_reviewed: "2026-10-20"
   notes: >-
     Firm types: forensic and consulting firm that is not a CPA firm (J.S. Held, which states it provides no attest

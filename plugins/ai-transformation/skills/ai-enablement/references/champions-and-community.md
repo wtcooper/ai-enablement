@@ -20,9 +20,9 @@ Source keys in brackets are listed in §11. Tags: **[T]** team, **[U]** unit, **
 
 ## 1. Goal and exit criteria
 
-**Goal.** Social proof and help close to the work. Generative AI is discretionary: unlike a leave-booking system,
-people can keep working the old way, so adoption depends on perceived value, expectations and seeing respected peers
-use it [HARVEY-CHAMPIONS-2026].
+**Goal.** Social proof and help close to the work. Generative AI is discretionary: unlike a leave-booking system, people
+can keep working the old way [HARVEY-CHAMPIONS-2026], so use has to be earned through value people can see, clear
+expectations and respected peers using it (advisor's reading).
 
 **Exit when all of these are true:**
 - **Selection criteria** for champions, and how they are invited (the user chooses the people).
@@ -36,7 +36,7 @@ use it [HARVEY-CHAMPIONS-2026].
 ## 2. How to run it
 
 1. **Agree the criteria first** (H1), before anyone suggests names. Choose for workflow credibility and standing in
-   the group, not AI expertise [HARVEY-CHAMPIONS-2026].
+   the group, not AI expertise [HARVEY-CHAMPIONS-2026; LAW360-2025].
 2. **Find candidates with data** (H2): staff surveys, help-desk patterns and practice personas, as Michael Best did
    [LAW360-2025]. The step 1 builders segment is a starting list.
 3. **Write the role card** (§4) and agree the time with the champions' managers.
@@ -94,7 +94,7 @@ Ropes & Gray's over 60 champions for about 2,200 users, outcome not isolated) an
 | **Clinic** | Fix a specific problem on real work | Bring a task; leave with a working approach or a library candidate |
 | **Office hours** | A safe place for basic questions | Specialists available, and recognition for experimenters [LEXIS-CONSULT-2025]; useful for senior people who do not want to look unskilled |
 | **Competition** | Harvest real workflow problems | Ropes & Gray's 25 teams were judged on problem-solving, feasibility, appropriate AI use and presentation, with full billable credit; its knowledge director said teams focused on processes they are involved in [BLAW-ROPES-2026] |
-| **Community of practice** | Keep learning between events | People who share a concern and improve by interacting regularly; needs a shared domain, regular meeting and shared artifacts [WENGER-ND] |
+| **Community of practice** | Keep learning between events | People who share a concern and improve by interacting regularly; needs a shared domain, a community that interacts regularly, and a shared practice (tools, stories, ways of handling recurring problems) [WENGER-ND] |
 
 **Cadence.** Pick a fixed rhythm and keep it; Lewis Silkin calls its communications cadence a "drumbeat"
 [HARVEY-CHAMPIONS-2026]. State the rhythm (for example, monthly spotlight, weekly clinic) as a habit, not a deadline.

@@ -20,9 +20,9 @@ are listed in §9. Tier ids are in `references/schemas/policy.md` §3.4.
 
 **Goal.** Review effort sized to consequence. NIST GOVERN 1.3 asks for risk-management effort sized to the
 organization's risk tolerance [NIST-RMF-2023]. The review standard does not drop because AI helped: firms investing in
-AI tools told PCAOB staff that AI is expected to augment, not replace, people, and some said the engagement team member
-remains responsible and reviewers apply the same diligence as when AI was not involved [PCAOB-GENAI-2024, pp.4-5]. The tier sets how much
-extra checking the first-line user does, who else reviews, and what is recorded.
+AI tools told PCAOB staff that AI is expected to augment, not replace, people, and some said the engagement team
+member remains responsible and reviewers apply the same diligence as when AI was not involved [PCAOB-GENAI-2024,
+pp.4-5]. The tier sets how much extra checking the first-line user does, who else reviews, and what is recorded.
 
 **Exit when all of these are true:**
 - **Four tiers** (or the firm's own), each with typical uses, reviewer, what the reviewer checks, the record needed

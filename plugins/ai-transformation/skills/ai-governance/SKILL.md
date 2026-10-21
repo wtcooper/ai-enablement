@@ -133,7 +133,7 @@ a pattern map. **Output:** policy section 4; `max_risk_tier` on catalog entries;
 
 ### 4 · Records of AI use
 
-**Goal:** records, proportionate to the tier, that let a reviewer, regulator, client or court reconstruct AI-assisted work.
+**Goal:** records, proportionate to the tier, that let a reviewer, regulator, client or court reconstruct the work.
 
 **Read now:** `references/records.md`.
 

@@ -83,9 +83,9 @@ name who checks the output, and that are retired when they stop being right.
 checklists on an internal platform and templates for common use cases (vendor guidance) [MSLEARN-COE-ND]. Law firms
 report knowledge teams curating approved tools, use cases and playbooks in one place
 (`professional-services-knowledge-management-18`, grade B); Gowling WLG aims for durable playbooks, prompt patterns and
-repeatable workflows [HARVEY-GOWLING-2025]. Audit firms and regulators describe risk-tiered permitted-use policies, including the option of a curated prompt
-library (`assurance-quality-management-02`, grade B). BBVA reports over 2,900 custom assistants built by staff in five months
-(vendor-published, not verified) [OPENAI-ENTGUIDE-ND].
+repeatable workflows [HARVEY-GOWLING-2025]. Audit firms and regulators describe risk-tiered permitted-use policies,
+including the option of a curated prompt library (`assurance-quality-management-02`, grade B). OpenAI's guide reports
+BBVA staff building over 2,900 custom assistants in five months (vendor-published, not verified) [OPENAI-ENTGUIDE-ND].
 
 ## 5. Testing an entry
 
@@ -93,13 +93,14 @@ library (`assurance-quality-management-02`, grade B). BBVA reports over 2,900 cu
   that data. Never paste client-confidential data into the workflow file itself.
 - **A reference answer.** Compare output with what an expert produced or would accept. Firms test tools on their own
   work against an expert baseline and re-test when tools change (`professional-services-work-production-23`, grade
-  B). Morgan Stanley describes advisors grading summaries against expert answers (vendor-published)
+  B). Morgan Stanley describes advisors and prompt engineers grading AI summaries for accuracy and coherence
+  (vendor-published)
   [OPENAI-MSTANLEY-ND]. Official AI benchmarks rarely test your own kind of work; build your own small set
   [MOLLICK-LAB-2025].
 - **Someone other than the author** runs the test and records cases, passes and what failed.
-- **Test the checkpoint too.** Plant a known error and confirm the checkpoint as written would catch it. Legal research
-  tools hallucinated 17% to 33% of the time in one preregistered study (independent) [ARXIV-MAGESH-2024]; a checkpoint
-  that does not open the sources would miss that.
+- **Test the checkpoint too.** Plant a known error and confirm the checkpoint as written would catch it. Leading legal
+  research tools hallucinated 17% to 33% of the time in a preregistered 2024 study (independent) [ARXIV-MAGESH-2024]; a
+  checkpoint that does not open the sources would miss that.
 - **Record where it fails.** AI helps inside its capability and not uniformly outside it [HBS-JAGGED-2023]; the entry's
   "Do not use it for" section comes from the failures.
 

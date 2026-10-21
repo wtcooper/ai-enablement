@@ -23,7 +23,9 @@ id: string                        # same as the folder name, e.g. ct-evidence-ma
 title: string
 source:
   portfolio_item: string | null   # the item id in portfolio/portfolio.yaml
-  opportunity: { file: path, id: string } | null   # the advisor option, e.g. opportunities.yaml + its id
+  opportunity:                    # the advisor option, or null
+    file: path                    # e.g. opportunities.yaml
+    id: string                    # the option's id in that file
 scope: { name: string, level: team | function | business-unit | organization }
 owners:
   business: role                  # accountable for the outcome; reviews outputs on a rhythm

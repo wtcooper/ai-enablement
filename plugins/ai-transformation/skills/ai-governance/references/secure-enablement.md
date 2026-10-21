@@ -70,10 +70,11 @@ More, as needed:
 
 1. **Name an AI lead or committee with five jobs: review use cases, approve tools, maintain the policy, monitor
    compliance, handle incidents.** Setup. Reveals who answers the staff question "can I use this?" [CPAI-2026].
-2. **Ask "what did the last urgent deployment skip?" and design an expedited lane instead of relying on
-   exceptions.** Stress test. 47% of surveyed senior AI executives said their organization had previously not
-   applied its governance process to urgent deployments, while 98% had formal policies (EY-commissioned survey of
-   202 senior AI executives at US public companies with at least $1 billion revenue; self-reported) [EY-AIGOV-2026]. The lane design is an advisor default.
+2. **Ask "what did the last urgent deployment skip?" and design an expedited lane instead of relying on exceptions.**
+   Stress test. 47% of surveyed senior AI executives said their organization had previously not applied its governance
+   process to urgent deployments, while 98% had formal policies (EY-commissioned survey of 202 senior AI executives at
+   US public companies with at least $1 billion revenue; self-reported) [EY-AIGOV-2026]. The lane design is an advisor
+   default.
 3. **Build the controls into the tool.** Rollout. Single sign-on, logging, retention and data-loss prevention in the
    approved tool do the work staff memory cannot [GEND-2026, directional]; inventories should include AI features
    inside approved software [NIST-600-1-2024, GV-1.6-002].
@@ -89,8 +90,9 @@ More, as needed:
    rather than a tech problem (self-reported) [JOTWELL-EMPSON-2013; POLSINELLI-2026].
 7. **Tie partner accountability to the professional-duty floor: policy, training, monitoring, supervision.** When a
    leader says governance is optional. ABA Opinion 512 says managerial lawyers must establish clear policies on the
-   firm's permissible use of AI and supervise its use [ABA-OP512-2024]; the SRA warning, as summarised, says those responsible for supervision may face
-   consequences if inadequate supervision lets false citations through [VINCI-2026].
+   firm's permissible use of AI and supervise its use [ABA-OP512-2024]; the SRA warning, as summarised, says those
+   responsible for supervision may face consequences if inadequate supervision lets false citations through
+   [VINCI-2026].
 8. **Make training a condition of access.** Rollout. One law firm studied by CIPD required training before use
    [CIPD-2026]; the CPAi guide recommends training with examples of what cannot be entered and how to redact
    [CPAI-2026].

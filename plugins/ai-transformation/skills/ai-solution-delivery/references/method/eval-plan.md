@@ -207,7 +207,8 @@ an audit tool (no parallel-run results published).
 6. **Report pass-all with drill-down** [HUSAIN-2026; APPLIEDLLMS-2024].
 7. **Run several trials and report the all-trials rate** where users expect it to work every time; on a 2024
    customer-service agent benchmark the best agent (2024 models) succeeded on under 50% of tasks, and in the
-   retail domain under 25% succeeded on all of eight trials [ANTHROPIC-2026; SIERRA-2024].
+   retail domain under 25% succeeded on all of eight trials (benchmark paper from an agent vendor's research
+   team) [ANTHROPIC-2026; SIERRA-2024].
 8. **Test the verification effort itself:** check the tool on a small, manually reviewed subset, then set how
    much of the rest to review; ABA Opinion 512 gives the example of testing a contract-summary tool on a smaller
    set first [ABA-2024].

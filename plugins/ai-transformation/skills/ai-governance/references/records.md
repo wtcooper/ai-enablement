@@ -76,8 +76,8 @@ also create obligations of their own, because tools store prompts and responses 
    GV-1.6-003].
 5. **Ask for retention controls and who holds the activity history.** Before approval. Reveals whether records are
    retrievable for audit: one provider says workspace admins control retention and deleted conversations are removed
-   within 30 days unless the law requires longer retention or it is needed to protect its services [OPENAI-ENT-ND]; another says prompts and responses are stored as
-   activity history that admins can manage [MSFT-COPILOT-ND].
+   within 30 days unless the law requires longer retention or it is needed to protect its services [OPENAI-ENT-ND];
+   another says prompts and responses are stored as activity history that admins can manage [MSFT-COPILOT-ND].
 6. **Design tools to document their source data.** Firm-built tools. PCAOB staff reported some firms design tools to
    document the underlying source data [PCAOB-GENAI-2024, p.5].
 

@@ -73,11 +73,11 @@ with practice on real (sanitized) work rather than a tool tour.
 work (sanitized); practice exercise; verification step; risk rule; time required; hands-on check; follow-up (clinic or
 champion).
 
-**What to teach.** Teach task framing, decomposition and checking, not prompt tricks. Gowling WLG teaches breaking
-complex work into steps with explicit decision criteria [HARVEY-GOWLING-2025]. Mollick argues prompt techniques
-matter less as models get better at inferring intent [MOLLICK-LAB-2025], while Section's hands-on tests found only 21%
-wrote an effective prompt [SECTION-2026]. The evidence conflicts on prompt craft; framing and checking are useful
-either way, and the hands-on check shows whether they were learned.
+**What to teach.** Teach task framing, decomposition and checking, not prompt tricks. Gowling WLG's AI lead urges
+breaking complex work into steps with explicit decision criteria [HARVEY-GOWLING-2025]. Mollick argues prompt techniques
+matter less as models get better at inferring intent [MOLLICK-LAB-2025], while Section's hands-on tests of US knowledge
+workers found only 21% wrote an effective prompt [SECTION-2026]. The evidence conflicts on prompt craft; framing and
+checking are useful either way, and the hands-on check shows whether they were learned.
 
 **Role-differentiated content.** An audit regulator's staff paper separates what preparers, reviewers and engagement
 partners need: safe use; critical evaluation and bias awareness; governance and disclosure judgment. The UK audit
@@ -98,8 +98,8 @@ junior-task audit and the explain-back technique; use it here.
   grade B).
 - **Simulated practice.** Kennedys is building simulated drafting and review training (not yet reported as run)
   [KENNEDYS-SPELLBOOK-ND]; related practice environments are `professional-services-talent-learning-06` (grade C).
-- **Skill atrophy is a stated worry.** 43% of leaders in Wharton's survey warn of skill atrophy without role design,
-  coaching and practice time [WHARTON-GBK-2025].
+- **Skill atrophy is a stated worry.** 43% of leaders in Wharton and GBK's survey of about 800 senior decision-makers at
+  large US companies warn of skill atrophy without role design, coaching and practice time [WHARTON-GBK-2025].
 - **Juniors may gain more.** In a call-centre study, gains were 34% for novices and minimal for experienced staff
   (adjacent process) [NBER-BRYNJOLFSSON-2023]. Do not assume juniors and seniors need the same module.
 
@@ -107,13 +107,13 @@ junior-task audit and the explain-back technique; use it here.
 
 | Move | When | What it reveals |
 |---|---|---|
-| Ask which role-specific use cases the training uses; reject generic-only content | Curriculum audit | Compliance-only or tool-tour training. 15% of trained workers received only safety and compliance training and 17% were trained on agents or automations (vendor-published) [SECTION-2026]. Australia's trial evaluation recommends agency-specific use-case training [DTA-2024]; HMRC users and non-users asked for practical, tailored training and time to learn [HMRC-2026] |
-| Give a safe, low-stakes first phase | Early stage | Comfort as the bottleneck before skill. Gowling describes space for "silly poems and cats" before professional use [HARVEY-GOWLING-2025]; KPMG's survey reports sandbox environments and "AI agent shadowing" in organizations' training (vendor-published) [KPMG-PULSE-2025] |
-| Target low-confidence groups first | Ordering delivery | Where coaching pays [UKGDS-2025] |
+| Ask which role-specific use cases the training uses; reject generic-only content | Curriculum audit | Compliance-only or tool-tour training. In Section's survey of US knowledge workers, 15% of those trained received only safety and compliance training and 17% were trained on agents or automations (vendor-published) [SECTION-2026]. Australia's trial evaluation recommends agency-specific use-case training [DTA-2024]; HMRC's evaluation lists the need for more practical, tailored training and time to learn among its challenges [HMRC-2026] |
+| Give a safe, low-stakes first phase | Early stage | Comfort as the bottleneck before skill. Gowling describes space for "silly poems and cats" before professional use [HARVEY-GOWLING-2025]; KPMG's pulse survey of 130 US C-suite and business leaders reports sandbox environments and "AI agent shadowing" in organizations' training (vendor-published) [KPMG-PULSE-2025] |
+| Target low-confidence groups early | Ordering delivery | Where coaching may pay; the UK trial found confidence and familiarity correlated with time saved [UKGDS-2025] |
 | Teach decomposition explicitly | Module design | Why one-shot, overloaded prompts disappoint [HARVEY-GOWLING-2025] |
-| Keep formats short and varied | Busy professionals | Law firms in a Law360 report used lunch-and-learns, short videos and one-page handouts [LAW360-2025] |
+| Keep formats short and varied | Busy professionals | One law firm in a Law360 report (Lightfoot Franklin) named lunch-and-learns, short videos and one-page handouts among its most successful formats [LAW360-2025] |
 | Make training a condition of access where risk warrants | Rollout | Whether access is gated by capability. A CIPD case firm required training before use [CIPD-2026] (`professional-services-talent-learning-01`, grade B) |
-| Check whether training spend is falling while expectations rise | Funding | Wharton reports training investment down 8 points and confidence in training as the main path to fluency down 14 points [WHARTON-GBK-2025] |
+| Check whether training spend is falling while expectations rise | Funding | Wharton and GBK's survey reports investment in training down 8 points year on year and confidence in training as the main path to fluency down 14 points [WHARTON-GBK-2025] |
 
 ## 7. Checklist and decision rules
 
@@ -124,7 +124,8 @@ refresh triggers.
 **Decision rules**
 - Content must include practice on real workflows and building for reuse, not only safety and compliance
   [SECTION-2026].
-- Target low-confidence groups first [UKGDS-2025].
+- Target low-confidence groups early (working rule; the UK trial's correlation between confidence and time saved
+  does not show that coaching causes savings) [UKGDS-2025].
 - Treat prompt techniques as perishable; teach framing, decomposition and checking [MOLLICK-LAB-2025;
   HARVEY-GOWLING-2025].
 - Assess with a hands-on task, reported by group (step 1 §5), never as a personal score.

@@ -44,9 +44,9 @@ the conditions that make sustained use likely: time, expectations, safe tools an
    split, not an observed fact; vendor-published) [BCG-VALUEGAP-2025]. Individual gains do not become organizational
    gains without changes to how work is organized [MOLLICK-LAB-2025].
 2. **Name target workflows per role** (P2). "AI literacy" is not a goal.
-3. **Find the owner** (P3). Section found 53.2% of workers said their organization had no Head of AI or they were
-   unsure; workers with a full-time Head of AI averaged 42 against 33 on Section's scoring (correlational,
-   vendor-published) [SECTION-2026].
+3. **Find the owner** (P3). Section's survey of 5,026 US knowledge workers found 53.2% said their organization had no
+   Head of AI or they were unsure; workers with a full-time Head of AI averaged 42 against 33 on Section's scoring
+   (correlational, vendor-published) [SECTION-2026].
 4. **Decide learning time and credit** (P4). Say the rule out loud (§6).
 5. **Write expectations** for leaders and managers (§5).
 6. **Say what happens to time saved** (P6). Workers want clear answers on layoffs versus growth and on how use will be
@@ -88,17 +88,18 @@ its own library reviewer"), not a date.
 knowledge-management people at the centre of AI know-how (`professional-services-knowledge-management-18`, grade B).
 
 **Governance gate.** Training and policy as a condition of tool access is common in large firms and rare in small ones:
-ILTA reports 11% of law firms under 50 lawyers and 72% of those over 700 require training before use (independent
-survey) [ILTA-2026] (`professional-services-talent-learning-01`, grade B; `professional-services-work-production-22`,
-grade B). The ai-governance skill owns the policy; this program links to it.
+ILTA's 2026 survey of 508 law firms found 11% of firms under 50 lawyers and 72% of those over 700 require training
+before use (trade association survey) [ILTA-2026] (`professional-services-talent-learning-01`, grade B;
+`professional-services-work-production-22`, grade B). The ai-governance skill owns the policy; this program links to it.
 
 ## 5. Leader expectations and incentives
 
-The manager is the weakest link and the cheapest lever. Only 7% of managers require AI use and tie it to performance
-reviews; employees whose managers expect and require use scored 1.5 times higher on proficiency (correlational,
-vendor-published) [SECTION-2026]. Gallup found 22% of employees said their organization had communicated a clear plan;
-those who strongly agreed were three times as likely to feel very prepared (independent survey) [GALLUP-2025]. BCG
-reports positive sentiment rising from 15% to 55% with strong leadership support [BCG-ATWORK-2025].
+Manager expectations are a recurring gap. In Section's survey, only 7% of managers required AI use and tied it to
+performance reviews; employees whose managers expect and require use scored 1.5 times higher on proficiency
+(correlational, vendor-published) [SECTION-2026]. Gallup's panel survey of US employees found 22% said their
+organization had communicated a clear plan; those who strongly agreed were three times as likely to feel very prepared
+(independent survey) [GALLUP-2025]. In BCG's survey, the share of employees positive about AI rose from 15% to 55% with
+strong leadership support (correlational) [BCG-ATWORK-2025].
 
 **What firms report doing** (announcements; no outcome data published):
 - KPMG tracks use through tool data and will assess staff on AI objectives in 2026 reviews, saying monitoring is not
@@ -121,10 +122,10 @@ rewards and how quality is checked, and does not rate anyone.
 |---|---|---|
 | Credit learning time and say how much | The constraint is "no time" | Whether the priority is real. Ropes & Gray lets first-years put 20% of billable hours toward learning AI [BLAW-ROPES-2026] (`professional-services-talent-learning-03`, grade B). UK trial users cited limited capacity to take part in upskilling [UKGDS-2025] |
 | Decide the credit rule even if the answer is no | Partners ask "what about my hours?" | Polsinelli's chair says there is no billing credit for AI training [POLSINELLI-2026]; under ABA Formal Opinion 512 a lawyer may not bill a client for time spent gaining AI competence unless the client asks (secondary summary) [LAWNEXT-2024] |
-| Write down what happens to time saved, before incentives or mandates | Launch | Whether the vision is credible. Gallup: 15% of employees expected AI to eliminate their job within five years [GALLUP-2025] |
+| Write down what happens to time saved, before incentives or mandates | Launch | Whether the vision is credible. Gallup: 15% of US employees said it was very or somewhat likely that AI or automation would eliminate their job within five years [GALLUP-2025] |
 | Ask what behaviour a metric rewards before wiring it to reviews | Leader expectations | Gameable targets. Logins alone can be gamed (advisor's judgment; no published evidence either way) |
 | Separate usage tracking from policing, and say which it is | Setting expectations | Fear of surveillance [BLAW-KPMG-2025] |
-| Pair training with a named workflow and a manager expectation | Design | Training alone has weak backing. BCG says five or more hours of training plus in-person coaching is associated with higher regular use (qualitative statement) [BCG-ATWORK-2025] |
+| Pair training with a named workflow and a manager expectation | Design | Training alone has weak backing. In BCG's survey, regular use was sharply higher among employees with at least five hours of training and access to in-person training and coaching (correlational) [BCG-ATWORK-2025] |
 | Put a respected, business-minded senior person in charge and frame it as a business problem | Earlier efforts produced activity without progress | Legitimacy with partners [POLSINELLI-2026] |
 | Pick the forum where the program is reviewed and keep its rhythm | Governance | A law firm in a CIPD case ran a fortnightly cross-functional steering group (anonymized case) [CIPD-2026] |
 
@@ -137,13 +138,15 @@ links; Now / Next / Later.
 
 **Decision rules**
 - Centralize first when capability is low; move to advisory as practices embed [MSLEARN-COE-ND].
-- If no learning time can be protected, expect low take-up and say so [UKGDS-2025].
+- If no learning time can be protected, expect weaker take-up and say so (working rule; UK trial users said their work
+  capacity limited their participation [UKGDS-2025]).
 - Never tie a login or prompt-count target to reward without a quality check (advisor's judgment; Shoosmiths' metric
   measured activity only, `professional-services-talent-learning-16`).
 - Set only consequences the firm will actually apply.
-- Employer encouragement matters: in Danish data, encouragement and training nearly doubled take-up (47% to 83%), yet
-  average time saved was about 3% and earnings and hours effects were zero (independent working paper)
-  [HUMLUM-BFI-2025]. Plan for adoption gains first and outcome gains only where workflows change.
+- Employer encouragement matters: in Danish survey and registry data, employer encouragement nearly doubled take-up for
+  a typical worker (47% to 83%), yet users' average time saved was about 3% and the study estimates no measurable effect
+  on earnings or recorded hours (independent working paper) [HUMLUM-BFI-2025]. Plan for adoption gains first and outcome
+  gains only where workflows change (advisor's reading).
 
 ## 8. Common traps
 

@@ -73,7 +73,8 @@ updated: YYYY-MM-DD
 - **Denominators include non-users.** For reach, activity and depth, `denominator` is the population in scope (or a
   segment of it), not the licensed or active users.
 - **Label every number.** `method` says how it was collected; `provenance` says who measured it; `measured` says
-  whether it is tracked or estimated. A self-estimate of time saved is `method: survey`, `measured: false`.
+  whether it is tracked or estimated. A self-estimate of time saved is `method: survey`, `measured: false`; it may use
+  `layer: outcome`, but report it apart from measured outcomes (`../measure-adoption.md` §5).
 - **Discount self-reports.** Every self-reported time-saved measure carries `discount` as a range with its basis.
   Report the raw and discounted figures side by side (`../measure-adoption.md` §5).
 - **Counts may be points; value is a range.** Telemetry counts (`value`) can be single numbers. Estimates, time
@@ -155,6 +156,26 @@ measures:
     target: { low: 50, high: 65, unit: "% of population", after: "Role workflows taught in every practice group" }
     readings: []
     owner: "Head of tax knowledge"
+  - id: embedded-workflows
+    name: "Workflows that are the default way"
+    layer: embedded
+    definition: "Approved library workflows that a practice group has declared the standard way to do the task"
+    numerator: "Approved workflows declared the default by a practice lead"
+    denominator: "Target workflows named in the charter"
+    window: "As at each reading"
+    split_by: ["practice group"]
+    data_source: "Library index in program.md section 5 and practice-lead sign-offs"
+    method: records
+    provenance: self-reported
+    measured: true
+    known_bias: "A declared default may not be followed; sample real work to check"
+    discount: null
+    lever: null
+    links: { workflows: ["notice-response-draft"], opportunity: null, benefit: null }
+    baseline: { value: 0, low: null, high: null, unit: "workflows", as_of: 2026-10-20, basis: "Library not yet started" }
+    target: { low: 2, high: 4, unit: "workflows", after: "First library entries approved in each practice group" }
+    readings: []
+    owner: "Head of tax knowledge"
   - id: time-saved-self
     name: "Self-reported time saved"
     layer: outcome
@@ -174,7 +195,7 @@ measures:
     baseline: null
     target: null
     readings:
-      - { as_of: 2026-10-20, value: null, low: 0.5, high: 1.5, unit: "hours/person/week, after discount", n: 64, note: "Raw answers 1-2 hours; 53% response rate" }
+      - { as_of: 2026-10-20, value: null, low: 0.5, high: 1.6, unit: "hours/person/week, after discount", n: 64, note: "Raw answers 1-2 hours; 53% response rate" }
     owner: "Practice operations manager"
 updated: 2026-10-20
 ```

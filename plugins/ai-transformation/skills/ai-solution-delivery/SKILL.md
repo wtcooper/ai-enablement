@@ -70,7 +70,8 @@ files under `../transformation-advisor/references/`.
 1. Look for `solutions/*/brief.md` in the working folder.
    - **One or more found:** list them with `status` and `next_step`; ask which one. Read its frontmatter,
      summarize where it stands in two or three lines, and offer to continue at `next_step`. After step 6, offer
-     the next post-launch review.
+     the next post-launch review. If `status` is `stopped` or `retired`, say so and reopen only if the user brings
+     new evidence; log the reason in the decisions log.
    - **None found:** look for `portfolio/portfolio.yaml` (items in discover, prototype or pilot with no
      `solution`) and `opportunities.yaml`. Offer to start from one of them. If neither exists, start from the
      user's description and suggest logging it through intake with **ai-portfolio**; do not block on it.

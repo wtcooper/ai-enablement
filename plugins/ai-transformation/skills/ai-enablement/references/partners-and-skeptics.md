@@ -1,9 +1,12 @@
 # Bring partners and skeptics along (step 6)
 
 Read this on entering step 6, and whenever a partner, senior expert or skeptic pushes back. It covers the stakeholder
-map, partner briefings, objection handling with graded evidence, and leader expectations. In a partnership the
-people whose behaviour must change co-own the firm, so the program leads by influence more than authority. Source keys
-in brackets are listed in §11. Tags: **[T]** team, **[U]** unit, **[O]** organization.
+map, partner briefings, objection handling with graded evidence, and leader expectations. In a partnership the people
+whose behaviour must change co-own the firm, so the program leads by influence more than authority. Source keys in
+brackets are listed in §11. Tags: **[T]** team, **[U]** unit, **[O]** organization. The core skill's
+`../../transformation-advisor/references/method/leading-partners.md` holds the full partner method (economics,
+stakeholder map, briefing, objections, leader accountability); this file applies it to an enablement program. Read it
+when the partner work goes deeper than this step.
 
 ## Contents
 
@@ -41,8 +44,7 @@ with evidence or a test.
    [JOTWELL-EMPSON-2013]. Find the senior pair, practice heads, business-services heads and the partners others wait
    for.
 2. **Segment partners** by exposure and horizon (S4): rainmakers, practice heads, partners near retirement,
-   leverage-dependent partners (advisor's working segments; an opinion source makes similar distinctions
-   [MANDS-2026]).
+   leverage-dependent partners (advisor's working segments).
 3. **Collect objections** in the user's words (S5) and classify each (§5).
 4. **Answer with evidence or a test.** Open the matched archetype's `objections.md` (§5) and quote its graded figures
    with provenance.
@@ -84,12 +86,13 @@ model, not only shrink it (argument, reported second-hand) [LF-PERLIN-2025]. Nea
 ACC and Everlaw survey reported "no noticeable savings yet" from outside counsel's AI use (secondary report)
 [BLOOMBERG-ACC-2025].
 
-**The pipeline.** Big Four partner promotions were reported at 179 for the 2025 cycle against 276 in 2022 (trade press,
-no named data origin) [ACCTAGE-2025]. Automating junior work is also a succession question, which partners care about.
+**The pipeline.** UK Big Four new-partner promotions were reported at 179 for the 2025 cycle against 276 in 2022 (trade
+press citing a Financial Times analysis) [ACCTAGE-2025]. Automating junior work is also a succession question, which
+partners care about (advisor's judgment).
 
-**Leaders are not always the most comfortable users.** In an Ipsos survey for Chartered Accountants Worldwide, 47% of
-senior leaders said they were comfortable using AI, and 53% of C-suite respondents did not feel prepared for its
-impact on their role [ICAEW-CAW-2025].
+**Leaders are not always the most comfortable users.** In an Ipsos survey for Chartered Accountants Worldwide (2,718
+chartered accountants in 48 countries, run in 2024), 47% of senior leaders said they were comfortable using AI, and 53%
+of C-suite respondents did not feel prepared for its impact on their role [ICAEW-CAW-2025].
 
 ## 5. Objection handling
 
@@ -108,7 +111,7 @@ Quote figures with who measured them, and use evidence grades exactly as recorde
 
 | Type | Example | What answers it |
 |---|---|---|
-| Risk | "It makes things up" | Concede the documented failure, then show the control. Legal research tools hallucinated 17% to 33% of the time in a preregistered study [ARXIV-MAGESH-2024]; consultants were 19% less likely to be correct on one task outside AI's capability [HBS-DELLACQUA-2023]; a Deloitte Australia report to government had fabricated references and the firm agreed to repay the final instalment (news reports) [PEOPLEMATTERS-2025] |
+| Risk | "It makes things up" | Concede the documented failure, then show the control. Leading legal research tools hallucinated 17% to 33% of the time in a preregistered 2024 study [ARXIV-MAGESH-2024]; consultants were 19% less likely to be correct on one task outside AI's capability [HBS-DELLACQUA-2023]; a Deloitte Australia report to government had fabricated references and the firm agreed to repay the final instalment (news reports) [PEOPLEMATTERS-2025] |
 | Time | "I have no hours for this" | The credit rule from step 2; private, short practice |
 | Identity | "This is not how good work is done" | Their judgment as the scarce input: people with deep job knowledge judge usefulness better than outsiders [MOLLICK-LAB-2025]; ask which tasks they would hand off |
 | Incentive | "This kills our billings" | Run the four variables for one practice [LF-PERLIN-2025]; change the incentive or say plainly it will not change [POLSINELLI-2026] |
@@ -122,8 +125,9 @@ reputation (vendor article) [LEXIS-CONSULT-2025]. Turn each objection into a hyp
 
 A working structure (the advisor's proposal, built on the sources cited):
 
-1. **Client and market facts.** 40% of firm respondents in the Thomson Reuters Institute 2026 survey had received
-   instructions both to use and not to use AI from different clients [TRI-AIPS-2026].
+1. **Client and market facts.** 40% of firm respondents in the Thomson Reuters Institute 2026 survey (more than 1,500
+   professionals in 27 countries) had received instructions both to use and not to use AI from different clients
+   [TRI-AIPS-2026].
 2. **A workflow from this firm** with a measured baseline and the honest result, not a tool demo.
 3. **The economics** under three scenarios: hours fall; hours hold with higher rates; hours replaced by fixed or
    subscription fees [LF-PERLIN-2025].
@@ -143,31 +147,33 @@ one workflow, get one before the briefing.
 | Put respected, business-minded partners in charge, and frame AI as a business problem | Activity without progress | Legitimacy with partners [POLSINELLI-2026] |
 | Have senior people use the tool themselves and share what worked and what did not | Leader credibility in doubt | The gap between statements and use; in a CIPD case, senior lawyers did this [CIPD-2026] |
 | Ask pilot users the "take it away" question and report the answer to partners | After habits form | Dependence. An A&O Shearman partner recalls asking whether the tool could be taken away and hearing "Absolutely not" (recollection) [PAPERJAM-2025] |
-| Answer "I tried it, it doesn't work" with "which task? we will come back to you" | A failed trial | Whether the task is outside AI's capability or the use was poor [POLSINELLI-2026; HBS-DELLACQUA-2023] |
+| Answer "I tried it, it doesn't work" with "we'll get back to you", then find out which task it was | A failed trial | Whether the task is outside AI's capability or the use was poor [POLSINELLI-2026; HBS-DELLACQUA-2023] |
 | Offer an expert-graded evaluation before asking for use | High-judgment work | Whether output meets the experts' bar; gives skeptics a say [OPENAI-MSTANLEY-ND] |
-| Ask which tasks they would hand off, not whether they like AI | Skeptics | Workers were positive about automation for 46.1% of tasks in a study of 1,500 workers [STANFORD-WORKBANK-2025] |
+| Ask which tasks they would hand off, not whether they like AI | Skeptics | Workers were positive about AI agent automation for 46.1% of tasks in a Stanford study of 1,500 US workers across 104 occupations [STANFORD-WORKBANK-2025] |
 | Pair a respected peer with a group of skeptics for repeated sessions | Broadcast stalled | Diffusion follows people others trust [GAWANDE-2013] |
 | Check claimed time savings for how they were measured before repeating them | A champion cites savings | Recollection versus tracking; A&O Shearman lawyers "report saving two to three hours a week" (self-reported) [PAPERJAM-2025] |
 | Separate usage tracking from policing, and say which | Setting expectations | KPMG describes its monitoring as not disciplinary [IAB-KPMG-2025] |
 | Tie partner accountability to professional duties | "AI is optional for me" | Duties that apply regardless of preference [LAWNEXT-2024; VINCI-2026] |
-| Ask which services could be priced apart from hours | "AI shrinks our fees" | A&O Shearman announced agents to be sold to clients with revenue shared (a plan) [AO-AGENT-2025] |
+| Ask which services could be priced apart from hours | "AI shrinks our fees" | A&O Shearman announced agents to be sold to clients and other law firms (a plan) [AO-AGENT-2025] |
 
 ## 8. Decision rules and traps
 
 **Decision rules**
-- Use peer demonstration plus a stated expectation; neither alone has support [HARVEY-CHAMPIONS-2026; CPAPA-PWC-2026].
+- Combine peer demonstration with a stated expectation (advisor's working rule: firms report using one or the other
+  [HARVEY-CHAMPIONS-2026; CPAPA-PWC-2026], and no source compares them).
 - Answer every objection with evidence or an explicit test, never a slogan.
 - If the sponsor has no standing with practice heads, build influence before any partner briefing.
 - If three or more groups raise the same objection, resolve it once at firm level (incentive, policy or client
   position) (advisor's working rule).
 - Set only consequences the firm will apply. PwC's US CEO was reported as saying partners who resist AI would not
   last [CPAPA-PWC-2026]; no source reports the effect of such statements.
-- Check that incentives do not reward visible use over quality: 40% of US desk workers in one survey had received
-  AI-generated "workslop" in the past month, about two hours to resolve each [BETTERUP-2025].
+- Check that incentives do not reward visible use over quality: 40% of 1,150 US desk workers in a BetterUp and Stanford
+  survey had received AI-generated "workslop" in the past month, about two hours to resolve each [BETTERUP-2025].
 
 **Traps:** broadcast mandates to autonomous partners; leaders asking others to use what they do not use; dismissing
-resistance as irrational; overpromising accuracy; vague or false reassurance on roles (firms do announce role cuts
-citing AI [LEGALCHEEK-BAKER-2026; NONBILLABLE-AO-2026]); trusting self-reported adoption figures; recording names in a
+resistance as irrational; overpromising accuracy; vague or false reassurance on roles (firms do announce
+business-services role cuts: Baker McKenzie cited AI among its reasons [LEGALCHEEK-BAKER-2026], A&O Shearman its
+investment in technology and data [NONBILLABLE-AO-2026]); trusting self-reported adoption figures; recording names in a
 stakeholder map.
 
 ## 9. Worked example
@@ -210,7 +216,6 @@ the advisor keeps it at group level and offers the private-session format.
 - `LEGALCHEEK-BAKER-2026`: *Baker McKenzie to cut business services roles as AI use grows*, Legal Cheek, 2026-02-06. https://www.legalcheek.com/2026/02/baker-mckenzie-to-cut-business-services-roles-as-ai-use-grows/
 - `LEXIS-CONSULT-2025`: *Driving Adoption: How Consulting Firms Can Manage Change and Overcome GenAI Resistance*, LexisNexis, 2025-05-19. https://www.lexisnexis.com/community/insights/professional/b/industry-insights/posts/manage-change-ai-resistance
 - `LF-PERLIN-2025`: *GenAI could "reinforce rather than disrupt" the billable hour*, Legal Futures, 2025-11-14. https://www.legalfutures.co.uk/latest-news/genai-could-reinforce-rather-than-disrupt-the-billable-hour
-- `MANDS-2026`: *Why Your Expensive Technology Sits Unused*, M&S Consulting, opinion, 2026-01-13. https://www.mandsconsulting.com/why-your-expensive-technology-sits-unused-the-change-management-problem-law-firms-ignore/
 - `MOLLICK-LAB-2025`: *Making AI Work: Leadership, Lab, and Crowd*, One Useful Thing, 2025-05-22. https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and
 - `NONBILLABLE-AO-2026`: *A&O latest firm to cut business support roles in London*, Nonbillable, 2026-05-08. https://www.nonbillable.co.uk/news/a-o-shearman-to-cut-business-support-roles-london
 - `OPENAI-MSTANLEY-ND`: *Morgan Stanley uses AI evals to shape the future of financial services*, OpenAI, undated. https://openai.com/index/morgan-stanley/

@@ -84,7 +84,7 @@ Transformative [ZAPIER-2026].
 | 3 | `repeatable` | A workflow the person runs the same way each time | Making it reusable by others |
 | 4 | `builder` | Builds and shares workflows for colleagues | Feeding the library and teaching |
 
-Most professionals sit on rung 2. In Section's June 2026 survey of 5,026 US knowledge workers, 5.5% met its
+Most knowledge workers sit on rung 2. In Section's June 2026 survey of 5,026 US knowledge workers, 5.5% met its
 "proficient" bar, 73.5% were "experimenters" using AI for one-off tasks and 20.9% were novices (vendor-published;
 the vendor tested skills hands-on) [SECTION-2026]. Gowling WLG tracks "adoption depth": how often and how naturally the
 tool appears in regular work [HARVEY-GOWLING-2025].
@@ -102,9 +102,9 @@ tool appears in regular work [HARVEY-GOWLING-2025].
 
 ## 5. The fluency check
 
-Self-ratings overstate skill. Wharton's survey found 32% of respondents calling themselves "Expert" (a self-label)
-[WHARTON-GBK-2025]; Section's hands-on tests found 21% wrote an effective prompt and 3.8% wrote workable assistant
-instructions (vendor-published) [SECTION-2026].
+Self-ratings overstate skill. Wharton and GBK's survey of about 800 senior decision-makers at large US companies found
+32% calling themselves "Expert" (a self-label) [WHARTON-GBK-2025]; Section's hands-on tests of US knowledge workers
+found 21% wrote an effective prompt and 3.8% wrote workable assistant instructions (vendor-published) [SECTION-2026].
 
 **Design (illustrative, adapt per role):** one short task from the role's real work, sanitized.
 1. **Frame:** write the instruction for the task, with context and the output wanted.
@@ -122,11 +122,11 @@ size the firm's HR or privacy lead sets. Make it voluntary or anonymous, and say
 | Ask for the weekly-versus-monthly split by team and level, not the licence count | Baseline | Whether "adopted" means a handful of heavy users. Lewis Silkin reports two-thirds of users engage monthly and about half of those weekly (firm-reported, definitions not given) [HARVEY-CHAMPIONS-2026] |
 | Re-label every headline number by rung before it goes in a report | A sponsor quotes a usage figure | Which rung the number measures [SECTION-2026; ZAPIER-2026] |
 | Test with a hands-on task, not a self-rating | Segmenting | The gap between confidence and capability (§5) |
-| Ask who is using AI that you cannot see, and why they would hide it | Kickoff | Hidden use and the incentive problem. MIT NANDA found staff at over 90% of surveyed companies using personal AI tools while about 40% of companies had bought an official subscription (preliminary, anonymized) [MIT-NANDA-2025]; Mollick traces the same pattern to unclear incentives [MOLLICK-LAB-2025] |
-| Interview managers before designing training | Any scope | Whether expectations and modelling exist. Only 21.3% of managers had demonstrated AI use to their team in the past 30 days, and 65% set no expectations or did not hold people accountable (vendor-published) [SECTION-2026] |
-| Survey frontline and mid-level separately from leaders | Leader-sponsored programs | A distorted baseline. Executives were far more likely than individual contributors to call AI widely integrated (57% versus 18%) [SECTION-2026]; frontline regular use stalled at 51% while more than three quarters of leaders and managers used it several times a week (survey) [BCG-ATWORK-2025] |
+| Ask who is using AI that you cannot see, and why they would hide it | Kickoff | Hidden use and the incentive problem. MIT NANDA (interviews at 52 organizations and a survey of 153 senior leaders) found workers at over 90% of the companies surveyed using personal AI tools, while only 40% of companies said they had bought an official subscription (preliminary report) [MIT-NANDA-2025]; Mollick traces the same pattern to unclear incentives [MOLLICK-LAB-2025] |
+| Interview managers before designing training | Any scope | Whether expectations and modelling exist. In Section's survey of US knowledge workers, only 21.3% of managers had demonstrated their own AI use to their team in the past 30 days, and 65% set no expectations or encouraged use without holding people accountable (vendor-published) [SECTION-2026] |
+| Survey frontline and mid-level separately from leaders | Leader-sponsored programs | A distorted baseline. In Section's survey, executives were far more likely than individual contributors to call AI widely integrated (57% versus 18%) [SECTION-2026]; in BCG's survey of more than 10,600 employees in 11 countries and regions, frontline regular use stalled at 51% while more than three quarters of leaders and managers said they used it several times a week [BCG-ATWORK-2025] |
 | Ask confidence and familiarity by group, then target the low-confidence groups | Targeting | Where coaching pays. The UK cross-government trial found confidence and familiarity correlated with time saved [UKGDS-2025] |
-| Ask non-users for their reasons and keep them in the denominator | Baseline | Barriers that training will not fix. In HMRC's evaluation, 46% of non-users cited security and data privacy concerns [HMRC-2026] |
+| Ask non-users for their reasons and keep them in the denominator | Baseline | Barriers that training will not fix. In HMRC's trial survey, 46% of non-users named security and data privacy concerns as the main reason [HMRC-2026] |
 | Check usage by grade, location and, where the firm already reports it in aggregate, gender | Equity | Uneven take-up. In Danish data the gender gap in chatbot adoption was 11.9 points, falling to 5 points where employers encouraged use (independent working paper) [HUMLUM-BFI-2025] |
 | Segment by task fit and experience, not only by enthusiasm | Planning the curriculum | Who gains most. In a call-centre study gains were 34% for novices and minimal for experienced staff (adjacent process) [NBER-BRYNJOLFSSON-2023]; consultants gained inside AI's capability and not uniformly outside it [HBS-JAGGED-2023] |
 

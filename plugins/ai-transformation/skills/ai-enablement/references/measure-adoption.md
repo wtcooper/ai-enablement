@@ -75,13 +75,13 @@ working, and what that has done to outcomes the firm cares about.
 
 Notes on the layers:
 - **Depth signals.** Anthropic's platform data show the share of conversations in which users delegate whole tasks
-  rising from 27% to 39% (platform data, not enterprise-specific) [ANTHROPIC-ECONIDX-2025]; a similar shift inside a
-  firm is one depth signal.
+  rising from 27% to 39% (Claude.ai conversation samples, late 2024 to 2025; not enterprise-specific)
+  [ANTHROPIC-ECONIDX-2025]; a similar shift inside a firm is one depth signal.
 - **Outcome measures from pilots.** Gowling WLG's pilots measured client responsiveness, quality and risk reduction and
   collected practitioner feedback on workflow fit (vendor-published interview) [HARVEY-GOWLING-2025].
 - **Activity is not value.** Shoosmiths' bonus target counted prompts (`professional-services-talent-learning-16`,
   grade A); the measure is activity, not skill or quality. Usage rose while few organizations track ROI: 18% of
-  respondents knew theirs did [TRI-AIPS-2026].
+  respondents to a Thomson Reuters Institute survey of more than 1,500 professionals knew theirs did [TRI-AIPS-2026].
 - **Hours released are not value** until the capacity has a destination
   (`../../transformation-advisor/references/library/index.md` §5).
 
@@ -91,11 +91,13 @@ Notes on the layers:
 - The UK cross-government experiment (20,000 staff, October to December 2024) asked users to pick a time-saving range
   and used the midpoint: 26 minutes per user per day. 17% saw no clear savings, and the evaluation could not identify
   how saved time was spent (self-reported) [UKGDS-2025].
-- HMRC randomly allocated 3,000 licences, surveyed 1,364 staff, used dashboard usage data, and cut self-reported
-  estimates by about 20% for non-users and respondent bias, giving 2-3% of the working week, about 60 minutes (savings
+- HMRC randomly allocated 3,000 licences, drew on a survey answered by 1,364 of them (45%) and on dashboard usage data.
+  Participants self-reported saving 2-3% of the working week, about 60 minutes, and HMRC reduced self-reported estimates
+  by about 20% because not every licence holder used the tool and active users were likelier to answer (savings
   self-reported) [HMRC-2026].
-- Large-scale data point the same way: in Danish linked records, average time savings were about 3% and earnings and
-  hours effects were zero (independent working paper) [HUMLUM-BFI-2025].
+- Large-scale data point the same way: in Danish survey data linked to registry records, users' average time savings
+  were about 3% of work hours, and the study estimates no measurable effect on earnings or recorded hours (independent
+  working paper) [HUMLUM-BFI-2025].
 
 **How to report time saved**
 1. Keep **measured** (tracked records, sampled work, a comparison) and **estimated** (surveys, recollection) apart. Never
@@ -104,10 +106,10 @@ Notes on the layers:
    is one published reference point; a larger discount is a reasonable judgment where only keen users answered. Say it
    is judgment.
 3. Show **raw and discounted** side by side, as ranges.
-4. **Keep non-users in the denominator**, and record their reasons (HMRC: 46% of non-users cited security and data
-   privacy concerns) [HMRC-2026].
-5. Ask **what the time was used for** (M7). Australia's trial evaluation reported that 40% reallocated time (self-reported
-   evaluation) [DTA-2024].
+4. **Keep non-users in the denominator**, and record their reasons (HMRC: 46% of non-users named security and data
+   privacy concerns as the main reason) [HMRC-2026].
+5. Ask **what the time was used for** (M7). In Australia's government trial, 40% of participants reported being able to
+   reallocate time to higher-value work (self-reported) [DTA-2024].
 6. Prefer **outcome measures** from existing records (turnaround, review findings, rework) over time estimates.
 
 ## 6. Expert moves
@@ -117,7 +119,7 @@ Notes on the layers:
 | Re-label the metric before reporting it: licensed, activated, weekly, embedded | A sponsor quotes a headline figure | Which rung the number measures [SECTION-2026; HARVEY-GOWLING-2025] |
 | Discount self-reported savings and ask what the time was spent on | Measuring impact | Overclaim, and whether time became capacity [HMRC-2026; UKGDS-2025] |
 | Use random allocation or a not-yet-reached group as a comparison | Rolling out in stages | Effect versus enthusiasm [HMRC-2026] |
-| Sample downstream work for "workslop" | After a mandate or target | Output that shifts rework to colleagues: 40% of 1,150 US desk workers received it in the past month, about two hours to resolve each (survey) [BETTERUP-2025] |
+| Sample downstream work for "workslop" | After a mandate or target | Output that shifts rework to colleagues: 40% of 1,150 US desk workers received it in the past month, about two hours to resolve each (BetterUp and Stanford survey) [BETTERUP-2025] |
 | Build a small test set of your own work | Measuring quality | Fitness for your work; official benchmarks rarely test it [MOLLICK-LAB-2025] |
 | Ask how a champion's cited saving was measured before repeating it | Reporting wins | Recollection versus tracking [PAPERJAM-2025] |
 | Look at lapsed users, not only growth | Sustained use | Whether use persists; no published retention curves go beyond about a year |
@@ -157,7 +159,7 @@ labelled; discounts written; side effects checked; readings by group only.
 Weekly active share has risen from about a third to about a half of the population; depth (a repeatable workflow, from
 sampled work) from roughly one in ten to one in five; three workflows are declared the default way, each linked to a
 library entry. Tax staff report saving one to two hours a week; with a discount of 20-50% agreed with the sponsor and
-labelled as judgment, the report shows 0.5 to 1.5 hours per person per week, estimated. Measured outcomes: the share of
+labelled as judgment, the report shows 0.5 to 1.6 hours per person per week, estimated. Measured outcomes: the share of
 audit planning memos returned by reviewers fell in the groups using the planning workflow, compared with an office not
 yet reached; the effect size is reported as a range, and the comparison is not random. A sample of review notes shows
 no rise in rework. Unknown: whether use persists after the champions rotate. Decisions: the notice-reply workflow goes

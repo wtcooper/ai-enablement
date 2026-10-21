@@ -18,11 +18,11 @@ classes and tool tiers are in `references/schemas/policy.md` §3.
 
 ## 1. Goal and exit criteria
 
-**Goal.** Rules staff can apply in the moment ("what may I paste where"), because for knowledge work a central exposure
-is confidential client information entering a tool; the CPAi guide calls data security "vital" for CPA firms and asks
-firms to restrict confidential inputs where a tool is not protected [CPAI-2026]. The acceptable-use policy is the floor, not the
-program: it works only with a catalog of tools people can actually get, a request path that answers quickly, and
-training [CPAI-2026; KPMG-MELB-2025, p.75].
+**Goal.** Rules staff can apply in the moment ("what may I paste where"), because for knowledge work a central
+exposure is confidential client information entering a tool; the CPAi guide calls data security "vital" for CPA firms
+and asks firms to restrict confidential inputs where a tool is not protected [CPAI-2026]. The acceptable-use policy is
+the floor, not the program: it works only with a catalog of tools people can actually get, a request path that answers
+quickly, and training [CPAI-2026; KPMG-MELB-2025, p.75].
 
 **Exit when all of these are true:**
 - **Definitions and scope:** what "AI tool", "generative AI" and "agent" mean here; which people, runtime classes and
