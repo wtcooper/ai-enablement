@@ -155,7 +155,7 @@ FinCEN's November 2024 alert lists deepfake red flags for financial institutions
 **Independence (where the firm also audits the client).** SEC Rule 2-01(c)(4)(x) treats expert opinions or services
 to advocate an issuer audit client's interests in litigation or regulatory proceedings as impairing independence;
 factual accounts of work performed are carved out [SEC-RULE2-01-2026]. Treatment under the AICPA Code for private
-attest clients was not confirmed in the research. A Journal of Accountancy article by the AICPA Professional Ethics
+attest clients was not confirmed from the sources. A Journal of Accountancy article by the AICPA Professional Ethics
 Division's communications manager says developing or hosting an AI system for an attest client can raise
 independence concerns [JOFA-ETHAI-2026]. Related: `assurance-acceptance-independence-15`.
 

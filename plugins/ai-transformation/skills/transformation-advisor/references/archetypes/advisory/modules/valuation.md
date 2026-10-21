@@ -1,6 +1,6 @@
 # Valuation (advisory)
 
-Sources checked 2026-10-20; fact-checked 2026-10-21. Use cases live in `../use-cases/valuation.yaml` (15 entries).
+Sources checked 2026-10-20; re-checked 2026-10-21. Use cases live in `../use-cases/valuation.yaml` (15 entries).
 Ids are shortened here: `#05` means `advisory-valuation-05`; other modules' ids are given in full. Source keys in
 brackets, such as [IVSC-IVSED-2026], are in the YAML or in §10. **Read this first: the standards track is rich, the
 practice evidence is thin.** No entry is graded A; 3 of 15 are B, resting on named deployments with no published
@@ -172,7 +172,7 @@ independence for an SEC-registrant audit client unless it is reasonable to concl
 audit procedures [SEC-RULE2-01-2026]. The SEC staff apply a rebuttable presumption that it will be, materiality does
 not overcome it, and there is no cure for prohibited services in a prior period [PWC-SECFAQ-2019]. Developing or
 hosting an AI system for an attest client can raise independence concerns [JOFA-ETHAI-2026]. AICPA treatment of
-valuation for private-company attest clients was not confirmed in the research: confirm per engagement. Related:
+valuation for private-company attest clients was not confirmed from the sources: confirm per engagement. Related:
 `assurance-acceptance-independence-15`.
 
 **Lenders.** For SBA change-of-ownership loans, a vendor (QoEAgent) quotes the SBA rule barring a valuation prepared
@@ -263,17 +263,17 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 
 ## 10. Sources
 
-Full details for these keys are in the YAML: AICPA-FVS-2026, AICPA-FVSPODCAST-2026, ANTHROPIC-FS-2025,
+Full details for these keys are in the YAML: AICPA-FVSHOME-2026, AICPA-FVSPODCAST-2026, ANTHROPIC-FS-2025,
 ANTHROPIC-FSAGENTS-2026, ANTHROPIC-KPMG-2026, ARXIV-FORMA-2026, ARXIV-REAPPRAISAL-2025, ASA-ASAIC26-2026,
 BVR-AICPAREPORT-2026, BVR-BIG4PANEL-2026, BVR-COGDEBT-2026, BVR-DISCOVERY-2026, BVR-ENDICOTT-2026,
 BVR-IVSCDIALOGUE-2026, BVR-IVSPODCAST-2026, BVR-KPMGTREND-2026, BVR-NACVA-2026, BVR-PCAOBINSP-2026,
 BVR-RADAEXPAND-2026, BVR-RADAJUNIOR-2026, BVR-RADAPRODUCT-2026, BVR-RADATIP-2026, BVR-TRAINPRACTICAL-2025,
 BVR-TRAINWORKSNOW-2025, COHNREZNICK-VALUATION-2026, CPAPA-COHNREZNICK-2026, DEALGAUGE-STARTUPHUB-2026,
-GOLDMAN-WEBER-2024, HAMILTONLANE-VALTECH-2025, ISA-AO41-2026, IVSC-IVSED-2026, IVSC-AI-2025 (the same paper
-is IVSC-AI-2025 in `assurance-specialists-*`), KROLL-REVS-2026, S73-CALLISTO-2026, S73-HAMLANE-2025, S73-HOME-2026,
+GOLDMAN-WEBER-2024, HAMILTONLANE-VALTECH-2025, ISA-AO41-2026, IVSC-IVSED-2026, IVSC-AI-2025 (the key
+`assurance-specialists-*` also uses), KROLL-REVS-2026, S73-CALLISTO-2026, S73-HAMLANE-2025, S73-HOME-2026,
 SEC-RULE2-01-2026, STOUT-DRIVR-2026, STOUT-TECH-2024, VALUTICO-HOME-2026, VALUTICO-KRESTON-2025, VALUTICO-PKFFI-2025,
-VALUTICO-ROUSE-2025, VALUTICO-RXM-2025. The FVC2631 and FVC2640 session codes come from the conference agenda feed
-(https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0).
+VALUTICO-ROUSE-2025, VALUTICO-RXM-2025. AICPA-FVS-2026 (the conference agenda, source of the FVC2631 and FVC2640
+session codes) is in full in `../use-cases/forensic-disputes.yaml`; AICPA-FVSHOME-2026 is the conference home page.
 
 Cited here only:
 - ACCTODAY-VPF-2026: Accounting Today, "AICPA proposes valuation framework", 2026-10-13. https://www.accountingtoday.com/news/aicpa-proposes-valuation-framework

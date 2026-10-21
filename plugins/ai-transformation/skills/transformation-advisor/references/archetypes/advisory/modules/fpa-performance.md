@@ -282,5 +282,5 @@ Full details for keys used in the use cases are in the YAML. Keys cited above th
 - IESBA-TECHREV-2023: "Final Pronouncement: Technology-related Revisions to the Code" (606.3 A1), IESBA, 2023-04-11, https://www.ethicsboard.org/publications/final-pronouncement-technology-related-revisions-code
 - JOFA-AIUC-2026: "AICPA partners on new offering that assures AI systems and agents", Journal of Accountancy, 2026-10-19, https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/
 - JOFA-ETHAI-2026: "Accounting ethics in the age of AI", Journal of Accountancy, 2026-08-05, https://www.journalofaccountancy.com/issues/2026/aug/accounting-ethics-in-the-age-of-ai/
-- KARBON-SOAI-2026: "2026 State of AI in Accounting Report" (vendor survey, about 600 respondents), Karbon, 2026-01-20, https://karbonhq.com/resources/state-of-ai-accounting-2026
+- KARBON-SOAI-2026: "Karbon State of AI in Accounting 2026 Report" (vendor survey, about 600 respondents), Karbon, 2026-01-23, https://karbonhq.com/resources/state-of-ai-accounting-2026
 - STANFORD-JAR-2026: "Human + AI in Accounting: Early Evidence from the Field" (Choi and Xie, abstract read), Journal of Accounting Research 64(3), 2026-06, https://www.gsb.stanford.edu/index%2ephp/node/629989

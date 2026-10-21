@@ -244,7 +244,7 @@ use with productivity gains, with no figure in the abstract [STANFORD-JAR-2026].
   agree it will reshape how offices operate within a year [OCORIAN-IFC-2026].
 - 2026-04 forum, reported 2026-05-13: speakers say AI has moved from answering questions to executing workflows
   through connected data, with clean data a precondition [WISS-FOAI-2026].
-- 2026-04-16: Wealth.com raises a $65M Series B for AI estate and tax planning (vendor claims; routed to tax)
+- 2026-04-16: Wealth.com raises a $65M Series B for AI estate and tax planning (vendor claims; the planning itself is tax work)
   [WEALTHCOM-SERIESB-2026].
 - 2026-04-20: Holland & Knight's Eduardo Arista recaps an April forum panel: principals use AI to draft diligence
   questions, pressure-test legal and tax scenarios and benchmark advisors' recommendations. Risks named are
