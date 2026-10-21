@@ -84,7 +84,7 @@ controls (`#05`, idea; see `assurance-controls-testing-15`).
 
 **Guardrails specific to this area.** Run rules-based routines alongside any model (an unsupervised model misses
 entries that are consistently miscoded); document why use criteria were met; run with and without the tool to check
-findings (Buzzacott); pair fraud specialists with data tools [NYENRODE-QUALITY-2026]. 31% of IFIAR members reported
+findings (Buzzacott); pair fraud specialists with data tools [NYENRODE-2026]. 31% of IFIAR members reported
 findings that tools were not used as intended, mostly misread results and thin outlier testing [IFIAR-TTF-2025].
 **Missing:** no firm has published false-positive rates or how many flagged entries proved to be misstatements.
 
@@ -206,7 +206,7 @@ reviewer override rate, match accuracy (a yes/no metric, per PwC [CFOBREW-PWC-20
   [FRC-GENAI-2026]. The six largest UK firms did no formal monitoring to quantify tools' quality impact [FRC-ATT-2025].
 - **IFIAR and others.** Keep auditors in control; consult regulators early where AI decides without a human; define
   "human-led" [IFIAR-TTF-2025; IFIAR-TTF-2026]. AFM: auditors do not always verify input-data reliability, especially
-  with ineffective IT general controls [AFM-BB-2025]. IRBA: add procedures to verify authenticity [IRBA-AI-2024].
+  with ineffective IT general controls [AFM-12BB-2025]. IRBA: add procedures to verify authenticity [IRBA-AI-2024].
   CPAB (2025 inspections): tools used as primary evidence with limited input validation; one tool left "low-risk" items untested (`#08`) [CPAB-EVOLVING-2025].
 
 **Design guardrails seen in deployments and guidance**
@@ -240,7 +240,7 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 - **2026-03-16 / 03-30** IAASB approves the inventory and confirmations project; FRC issues agentic AI guidance
   [IAASB-500SERIES-2026; FRC-GENAI-2026].
 - **2026-04-07 / 04-10** EY: agents in all phases, end-to-end by 2028; WSJ: KPMG orchestration pilot in summer 2026,
-  routine testing with no human team in two to three years, EY agent-to-agent pilots [EY-CANVAS-2026;
+  routine testing with no human team in two to three years, EY agent-to-agent pilots [CPAPA-EY;
   CTRLCOUNCIL-WSJ-2026]. **2026-04-20** IFIAR: firms plan agentic AI orchestrating many audit activities [IFIAR-TTF-2026].
 - **2026-05-21 to 06-29** Rabobank and BDO NL direct bank data; Fieldguide orchestrator; Deloitte Omnia agents; BDO UK
   expands MindBridge [CIRCIT-RABOBANK-BDONL-2026; FIELDGUIDE-ORCH-2026; DELOITTE-OMNIA-2026; MINDBRIDGE-BDOUK-2026].
@@ -255,7 +255,7 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 ## 10. Common objections
 
 - **"AI can't find fraud; it is too rare."** Partly fair: pattern tools struggle with rare events, so pair them with
-  fraud specialists and rules [NYENRODE-QUALITY-2026; FRC-AIAUDIT-2025]. Ask for flag-to-misstatement rates.
+  fraud specialists and rules [NYENRODE-2026; FRC-AIAUDIT-2025]. Ask for flag-to-misstatement rates.
 - **"If we test everything, we can promise more."** No. Reasonable assurance still applies, specific-item results
   cannot be projected, and "we test everything" widens the expectation gap (`#24`, `#25`).
 - **"The savings figures are hype."** Mostly true: single named cases published by vendors, and PwC calls its own
@@ -276,17 +276,17 @@ authenticity; estimates and complex revenue; control of confirmations; sign-off.
 Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
 - **Regulators and standard-setters:** IFIAR-TTF-2025, IFIAR-TTF-2026, IFIAR-SURVEY-2026, PCAOB-TAA-2024, SEC-TAAORDER-2024,
   PCAOB-PS2025-004, PCAOB-CONFIRM-2023, PCAOB-GENAI-2024, FRC-AIAUDIT-2025, FRC-GENAI-2026, FRC-ATT-2025, IAASB-ED500-2026,
-  IAASB-ED520-2026, IAASB-ED330-2026, IAASB-EDOVERALL-2026, IAASB-500SERIES-2026, AFM-BB-2025, IRBA-AI-2024, CPAB-EVOLVING-2025.
+  IAASB-ED520-2026, IAASB-ED330-2026, IAASB-EDOVERALL-2026, IAASB-500SERIES-2026, AFM-12BB-2025, IRBA-AI-2024, CPAB-EVOLVING-2025.
 - **Firms and press:** KPMG-CLARA-2025, ACCTODAY-KPMG-2025, PWC-AT-2025, CFOBREW-PWC-2025, CFODIVE-PWC-2026, PWCAU-AT-2025,
-  EY-CANVAS-2026, ACCTODAY-EY-2024, DELOITTE-OMNIA-2026, GT-GTAP-2026, CTRLCOUNCIL-WSJ-2026, BUZZACOTT-PRIME-2025,
+  CPAPA-EY, ACCTODAY-EY-2024, DELOITTE-OMNIA-2026, CONS-GT, CTRLCOUNCIL-WSJ-2026, BUZZACOTT-PRIME-2025,
   RSM-AUS-2026, DELOITTE-NL-SAMPLE-2026, KPMG-SOX-2026, LEDGERLINE-CPAPA-2026, LEDGERLINE-SITE-2026, AT-AICPAPA-2026,
   JOFA-SAS150-2026, JOFA-APFRAUD-2026, JOFA-EXCELAGENT-2026.
 - **Vendors:** TR-AGENTIC-2025, TR-STATE-2026, TR-BANKCONF-2026, TR-BANKSTATE-2026, DATASNIPPER-CONNECT-2026, DATASNIPPER-FGMKEXCEL-2026, DATASNIPPER-FGMK-2026, DATASNIPPER-ALWIN-2026,
   DATASNIPPER-PRODUCTIVITY-2026, DATASNIPPER-CHILE-2026, DATASNIPPER-ODP-2026, DATASNIPPER-PAYABLES-2026, FIELDGUIDE-SANVILLE-2026, FIELDGUIDE-FIELDAGENTS-2025,
   FIELDGUIDE-ORCH-2026, FIELDGUIDE-CHERRY-2026, MINDBRIDGE-BDOUK-2026, MINDBRIDGE-KPMG-2024, MINDBRIDGE-CHERRY-2022, MINDBRIDGE-ARA-2026, MINDBRIDGE-FAKEINV-2025,
-  CIRCIT-MOORE-2026, CIRCIT-BEEVER-2026, CIRCIT-CROWE-2026, CIRCIT-KRESTON-2026, CIRCIT-RABOBANK-BDONL-2026, CASEWARE-VERITY-2026.
+  CIRCIT-MOORE-2026, CIRCIT-BEEVER-2026, CIRCIT-CROWE-2026, CIRCIT-KRESTON-2026, CIRCIT-RABOBANK-BDONL-2026, CASEWARE-AIDA-2026.
 - **Academic, surveys, professional bodies:** ARXIV-AUDITCOPILOT-2025, ARXIV-FAB-2026, GRACZYK-2025, CHRIST-DRONE-2021,
-  EY-DRONE-JOFA-2018, COMMERFORD-2022, ICPAS-PEECHER-2026, NYENRODE-QUALITY-2026, CPACOM-ATR-2025, ISACA-EVIDENCE-2026,
+  EY-DRONE-JOFA-2018, COMMERFORD-2022, ICPAS-PEECHER-2026, NYENRODE-2026, CPACOM-ATR-2025, ISACA-EVIDENCE-2026,
   ICAEW-FRCVIEW-2026, ICAEW-PIERPOINT-2025, CAQ-GENAI-2024.
 - **Not in the YAML (cited in this module only):**
   - SAS-ACFE-2026: SAS with ACFE, *2026 Anti-Fraud Technology Benchmarking Report* release, 2026-03-25, https://www.sas.com/en_us/news/press-releases/2026/march/acfe-anti-fraud-technology-study-deepfakes.html

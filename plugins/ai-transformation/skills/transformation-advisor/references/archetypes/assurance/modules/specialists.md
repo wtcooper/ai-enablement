@@ -169,7 +169,7 @@ reproducibility test results; specialist hours per estimate before and after any
 **Auditing AI-influenced expert work and client models**
 - Evaluating a company specialist's data, assumptions and methods remains required [PCAOB-SPECIALISTS-2025].
 - Heavy client AI use may call for complex-model and specialist procedures; management that cannot explain outputs
-  may lack the skills to take responsibility for them (AICPA, nonauthoritative) [AT-AICPAPA-2026; AICPA-GUIDE-2026].
+  may lack the skills to take responsibility for them (AICPA, nonauthoritative) [AT-AICPAPA-2026; AICPA-AIPAID-2026].
 - No access to a third-party AI's logic, data and assumptions, and no alternative procedures, may be a scope
   limitation; do not over-rely on technology-generated information [AUASB-AI-2025].
 - For black-box reserving models: data governance before the model, benchmarks, explainability, reproducibility
@@ -242,7 +242,7 @@ call; the final valuation or actuarial opinion [FRC-620STD-2026, paras 7-13; IVS
   help did not improve guideline adherence (#12). Conversely, auditors may under-weight AI evidence [COMMERFORD-2022].
 - **"Public chatbots are fine for drafting."** The IVSC warns of confidentiality and data-protection breaches;
   EY is building a proprietary platform for this reason (#01, #03).
-- **"Wait for the standards."** The IVSC has dates; the AICPA aid exists, though nonauthoritative [AICPA-GUIDE-2026]; large firms prefer
+- **"Wait for the standards."** The IVSC has dates; the AICPA aid exists, though nonauthoritative [AICPA-AIPAID-2026]; large firms prefer
   guidance to prescriptive AI rules [GOINGCONCERN-PCAOB-2026]. Existing specialist requirements already apply.
 
 ## 10. Sources

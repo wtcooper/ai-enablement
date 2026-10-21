@@ -205,7 +205,7 @@ planning missed; planning hours and senior review time; internal and external in
 - The auditor forms their own view before reading AI output (AFM, `#14`); nothing enters the file without an explicit
   accept, edit or reject (`#09`, `#19`).
 - Approval gates, exception logs and evidence links on every agent step [WK-CONNECTED-2026]; shadow runs on completed
-  engagements, then a gradual ramp [CPAPA-LEDGERLINE-2026]; several models review the same work (`#25`).
+  engagements, then a gradual ramp [LEDGERLINE-CPAPA-2026]; several models review the same work (`#25`).
 - The audit plan records which tools address which risks, and the file shows where AI was used and how it was reviewed (`#21`).
 
 **Steps that stay with a person**: inquiry, observation and inspection; the fraud discussion with the engagement
@@ -219,7 +219,7 @@ observation or inspection.
   automation bias (`#01`); ICAEW's Technology Faculty Board chair says training must cover judgement and scepticism over
   outputs, not only how to use the software [ICAEW-FRCVIEW-2026].
 - **Juniors.** The PCAOB acting chair warned AI may erode critical thinking and that juniors need new routes to build
-  those skills [ACCTODAY-BOTIC-2025]; an AAA panel examined juniors' GenAI use in planning and other phases [AAA-MIDYEAR-2026].
+  those skills [AT-PCAOBPE-2025]; an AAA panel examined juniors' GenAI use in planning and other phases [AAA-MIDYEAR-2026].
   Caseware and Citrin Cooperman say visible reasoning helps juniors learn (`#20`); Deloitte adds a tutor mode (`#03`).
 - **Evidence on judgement is mixed.** Automation reduced scepticism in one study [PETERS-2022]; auditors discounted
   contradicting AI advice more than human advice [COMMERFORD-2022]; a registered report proposes testing GenAI's effect
@@ -234,7 +234,7 @@ observation or inspection.
 
 - **2025-10-28** PwC targets a tool for every audit step in 2026, a risk-assessment tool "soon" (not seen since)
   [PWC-AT-2025]; PwC Australia trials agents that assess risk and design plans (`assurance-controls-testing-17`).
-- **2025-12-09** PCAOB acting chair: AI can already enhance risk assessment "in certain scenarios"; warns on scepticism [ACCTODAY-BOTIC-2025].
+- **2025-12-09** PCAOB acting chair: AI can already enhance risk assessment "in certain scenarios"; warns on scepticism [AT-PCAOBPE-2025].
 - **2026-03-30** FRC generative and agentic AI guidance, with the board-minutes example [FRC-GENAI-2026].
 - **2026-04-07** EY embeds agents in all audit phases; end-to-end by 2028 [EY-CANVAS-2026].
 - **2026-04-20** IFIAR flags agentic AI moving toward orchestration; suggests quality metrics [IFIAR-TTF-2026].
@@ -264,7 +264,7 @@ observation or inspection.
   firms lack [ICAEW-FRCVIEW-2026]; methodology platforms (`#20`) and the FRC sandbox are routes.
 - **"Client data won't support it."** 60% cite poor data, 53% no access [CPACOM-ATR-2025]; standardised ingestion (`#07`) comes first.
 - **"Continuous risk assessment oversells certainty."** More data means more exceptions and a wider expectation gap if
-  sold as certainty [CPAPA-LEDGERLINE-2026].
+  sold as certainty [LEDGERLINE-CPAPA-2026].
 
 ## 10. Sources
 
@@ -280,8 +280,8 @@ Full details are in the YAML except for keys listed as not in it. All were re-op
   WK-GROUP-2025, WK-DYNAMIC-2026, WK-MICRO-2026, WK-MULTIYEAR-2026, TR-CHALLENGES-2026, OPTRO-HELVETIA-2026, OPTRO-FJ-2026,
   FIELDGUIDE-DEMO-2026, AUDITBOARD-RTRA-2025, AUDITBOARD-RIF-2026.
 - **Press:** PWC-AT-2025, CFODIVE-PWC-2026, CFOBREW-PWC-2025, BBL-DELOITTE-2026, BBL-KPMG-2026, CPAPA-ASKLUCA-2026,
-  CPAPA-GT-2026, CPAPA-MINDBRIDGE-2026, CPAPA-LEDGERLINE-2026, ITBRIEF-CASEWARE-2026, BDO-FIELDGUIDE-2026, NFRA-CAALLEY-2026,
-  CPIA-ARAQ-2026, BOARDAGENDA-FRC-2026, AT-AICPAPA-2026, ACCTODAY-BOTIC-2025, FINSTORY-KPMGFEE-2026, GRCREPORT-DELOITTE-2026.
+  CPAPA-GT-2026, CPAPA-MINDBRIDGE-2026, LEDGERLINE-CPAPA-2026, ITBRIEF-CASEWARE-2026, BDO-FIELDGUIDE-2026, NFRA-CAALLEY-2026,
+  CPIA-ARAQ-2026, BOARDAGENDA-FRC-2026, AT-AICPAPA-2026, AT-PCAOBPE-2025, FINSTORY-KPMGFEE-2026, GRCREPORT-DELOITTE-2026.
 - **Surveys, academic, conference:** CPACOM-ATR-2025, TRI-FOP-2026, IIAF-AIFRAUD-2026, ARXIV-UMAR-2026, ARXIV-FAB-2026,
   CPAJ-AIPLAN-2026, INDO-ICOBUSS-2025, PETERS-2022, VLGAA-NUCCIO-2026.
 - **Not in the YAML:** FRC-ATT-2025 (FRC, *Thematic Review: Certification of Automated

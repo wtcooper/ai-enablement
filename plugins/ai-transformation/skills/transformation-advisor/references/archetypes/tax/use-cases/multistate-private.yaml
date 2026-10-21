@@ -458,7 +458,7 @@
     - {ref: WITHUM-SEATA-2026, title: "Key Takeaways From the 2026 SEATA Conference", publisher: "Withum", type: firm, url: "https://www.withum.com/resources/key-takeaways-from-the-2026-seata-conference/", date: "2026-07-14", access: full, locator: "'The Bottom Line'"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Idea. The sources recommend reviews; the AI-driven version of the scan is the research team's reading of where
+    Idea. The sources recommend reviews; the AI-driven version of the scan is this module's reading of where
     commentators point, not something a source states. Kept as D.
     Example types: a sales tax training provider, a sales-tax consultancy and an accounting firm (Withum) recommending
     reviews. Pre-filing risk screening of the return itself: tax-compliance-corporate-13.
@@ -690,9 +690,8 @@
     - {ref: KTS-OPR-2026, title: "Using AI in Tax Practice: What Practitioners Need to Know Before Filing Season", publisher: "Kilpatrick Townsend & Stockton", type: firm, url: "https://ktslaw.com/blog/kilpatricks-state-and-local-tax-blog/2026/9/using-ai-in-tax-practice-what-practitioners-need-to-know-before-filing-season", date: "2026-09-29", access: full, locator: "paragraphs on the OPR alert's scope"}
   last_reviewed: "2026-10-21"
   notes: >-
-    Routed from the tax widen pass (mm-widen-tax.md section 4). The owner-facing S-election and PTET calculator entry
-    now sits in research-advisory as tax-research-advisory-26 (the provisional id tax-research-advisory-new-01 no longer
-    applies; checked 2026-10-21 while that module was being widened). This entry keeps only the state PTET angle. Example types: an AI-native tax firm (Gelt) and a
-    vendor (Filed); no top-100, regional or PE-backed firm was found modelling PTET elections with AI. Maturity follows
-    the widen pass (the calculators are live); the grade is C because no client outcome is published. Composite and
+    The owner-facing S-election and PTET calculator entry
+    sits in research-advisory as tax-research-advisory-26. This entry keeps only the state PTET angle. Example types: an AI-native tax firm (Gelt) and a
+    vendor (Filed); no top-100, regional or PE-backed firm was found modelling PTET elections with AI. Maturity is
+    in-production because the calculators are live; the grade is C because no client outcome is published. Composite and
     nonresident withholding returns for owners sit in compliance-individual-business.

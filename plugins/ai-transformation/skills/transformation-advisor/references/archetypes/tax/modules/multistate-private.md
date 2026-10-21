@@ -220,7 +220,7 @@ system suggests, auditors conduct) [SCPOST-AUDIT-2026].
 | 2026-09-23 | COST annual meeting session by Akerman's SALT chair on defending AI-driven assessments (session date from the firm's announcement; talk content not seen) | [AKERMAN-COST-2026] |
 | Later 2026 | Gusto Business Compliance expected to launch | [GUSTO-MOSEY-2026] |
 
-Direction: the landscape scan reads these agency signals as meaning multistate private companies should expect
+Direction: these agency signals suggest multistate private companies should expect
 earlier, data-driven notices [SCPOST-AUDIT-2026; TAXNOTES-UNWATCHED-2026; WITHUM-SEATA-2026; MTC-ANNUAL-2026]; that is
 a reading, not a measured trend. Not yet moved: any state guidance on AI-assisted state tax
 work, any published state audit-yield figure, any firm-side SALT AI deployment.

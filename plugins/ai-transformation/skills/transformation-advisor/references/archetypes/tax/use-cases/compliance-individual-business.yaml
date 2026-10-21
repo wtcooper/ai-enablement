@@ -1752,7 +1752,7 @@
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). No named firm, mid-market or otherwise, was found using AI for this step.
+    Added 2026-10-21 for mid-market firms. No named firm, mid-market or otherwise, was found using AI for this step.
     The product that most closely fits (WageProof) is not described as AI, so the AI contribution is the agent workflow
     at Instead, an AI-native vendor, and the questionnaire-to-report step. Taxposium dates are 13-15 July 2026 (past);
     only the session title was read. The salary figure feeds S-election break-even work in tax-research-advisory-26.
@@ -1811,7 +1811,7 @@
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). No basis-tracking evidence beyond product pages was found. The Intuit page
+    Added 2026-10-21 for mid-market firms. No basis-tracking evidence beyond product pages was found. The Intuit page
     is older than 18 months but is the only one that describes the negative-basis alert. Intuit's feature is not
     described as AI on that page; the Intuit Assist page of 2024-06-19 is the generative layer (see
     tax-research-advisory-27).
@@ -1858,7 +1858,7 @@
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "paragraph on repurposed client data" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). Single-vendor evidence; Instead's firm pages name no customers.
+    Added 2026-10-21 for mid-market firms. Single-vendor evidence; Instead's firm pages name no customers.
 
 - id: tax-compliance-individual-business-29
   title: Quarterly estimated-tax projections for owners with safe-harbor analysis and flow-through impact
@@ -1873,7 +1873,7 @@
   maturity: announced
   problem: >-
     Owners of S corporations and partnerships pay estimated tax on income that flows through from their entities. No
-    source found in this pass describes how firms build these projections today or how long they take.
+    source found describes how firms build these projections today or how long they take.
   solution: >-
     Instead, an AI-native vendor, lists quarterly estimated-tax calculations for shareholders, federal and state,
     including safe-harbor analysis and flow-through impact, and a ready-to-run workflow called "Build shareholder tax
@@ -1900,7 +1900,7 @@
     - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). Thinnest entry in the module: one vendor page. Kept because owner
+    Added 2026-10-21 for mid-market firms. Thinnest entry in the module: one vendor page. Kept because owner
     estimates are a step no other entry covers. A search summary seen during research suggested 2026 law changes could
     make a prior-year safe harbor underpay when 2025 deductions do not repeat; it is unverified and not used as
     evidence.
@@ -1937,7 +1937,7 @@
     - "Firm tolerance for single-vendor dependence for filing"
   risks_and_guardrails:
     - "In its evaluation of Instead, WCG warns that a proprietary system can trap prior-year history, make comparison and review harder and force a restart when a return needs a human decision (WCG-NOTREADY-2026)."
-    - "The e-file approval is the company's statement; the research found no IRS statement confirming it (a search summary reported none)."
+    - "The e-file approval is the company's statement; no IRS statement confirming it was found (a search summary reported none)."
   human_checkpoints:
     - "CPA signs; reviewer works from the tool's workpapers"
   role_evolution: >-
@@ -1950,7 +1950,7 @@
     - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "Key Takeaways ('reset risk'); Instead section (proprietary software, restart cost, trapped prior-year history)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). A product announcement, not a deployment. It is the opposite design choice
+    Added 2026-10-21 for mid-market firms. A product announcement, not a deployment. It is the opposite design choice
     to tax-compliance-individual-business-08 (agent inside the firm's software). Tax engines versus AI-native
     replacement also bear on tax-data-technology.
 
@@ -1996,7 +1996,7 @@
     - { ref: TR-FIDUCIARY-2026, title: "Fiduciary tax solutions (ONESOURCE)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/corporation-solutions/fiduciary-tax-solutions", date: "2026-10-21", access: full, locator: "page undated, date is access date; product tiles for ONESOURCE Fiduciary Accounting and Fiduciary Calendar" }
   last_reviewed: "2026-10-21"
   notes: >-
-    Added 2026-10-21 (mid-market widening). tax-compliance-individual-business-06 already covers 1041 through K-1s
+    Added 2026-10-21 for mid-market firms. tax-compliance-individual-business-06 already covers 1041 through K-1s
     (Accrual at Armanino); the addition here is estate and gift returns, which no other entry covers. Planning-side
     estate tools are in tax-research-advisory-13 and -28. Search-only items not used as evidence: Datagrid and Digiqt
     vendor blogs on trust tax agents (not opened).

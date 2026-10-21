@@ -1,7 +1,7 @@
 # Controls testing (assurance)
 
 Last reviewed 2026-10-17; sources checked 2026-10-16. Use cases live in `../use-cases/controls-testing.yaml` (25 entries). Ids are
-shortened here: `#05` means `assurance-controls-testing-05`; other modules' ids are in full. Source keys in brackets, such as [K-SOX30], are listed in §10
+shortened here: `#05` means `assurance-controls-testing-05`; other modules' ids are in full. Source keys in brackets, such as [KPMG-SOX-2026], are listed in §10
 and given in full in the YAML. Almost every outcome figure is self-reported by the deploying organisation or its
 vendor; no independent measure of AI test quality exists yet. Say so when you quote one.
 
@@ -34,7 +34,7 @@ teams are ahead of external auditors on agents; external audit voices are more c
 |---|---|---|---|
 | Scoping and RCM | Pick key controls, link them to risks in the risk and control matrix (RCM), set test attributes, decide reliance | expert-judgment | Vague criteria, sampling logic and exception rules; KPMG advises a "controls clean-up" before AI |
 | Walkthrough and test of design | Trace one transaction end to end; confirm the control is designed to prevent or detect misstatement | document-production, research-synthesis | Repeated yearly even when nothing changed; same architecture redrawn each time |
-| Reliability of information (IPE) | Test controls over the reports a control uses (information produced by the entity) | review-assurance, data-reporting | 43 IPE/data findings at the six largest networks in 2025 [IFIAR-2025F] |
+| Reliability of information (IPE) | Test controls over the reports a control uses (information produced by the entity) | review-assurance, data-reporting | 43 IPE/data findings at the six largest networks in 2025 [IFIAR-SURVEY-2026] |
 | Evidence request (PBC) | Request, chase and validate items "provided by client" | coordination-scheduling, client-interaction | ~1 in 5 requests wrong first time (estimate by Zanin, a SOX-tooling CEO); evidence spread over 20+ systems (Arden) |
 | Sample selection | Statistical, judgmental, or full population | data-reporting, expert-judgment | Static lists; 24 "insufficient" and 11 "biased" sample findings in 2025 |
 | Test of operating effectiveness | Check each attribute per sample, tick-mark, conclude | review-assurance, transaction-processing | 16 hours per control (FY2024, up from 12 in FY2022); PDFs, screenshots, exports in every format |
@@ -46,7 +46,7 @@ teams are ahead of external auditors on agents; external audit voices are more c
 
 Inspection context: internal control testing is the largest single source of engagement findings at the six
 largest networks (213 in 2025 listed public-interest audits; 69 on insufficient evidence for manual controls)
-[IFIAR-2025F]. Those are exactly the steps AI tools target.
+[IFIAR-SURVEY-2026]. Those are exactly the steps AI tools target.
 
 ## 3. Where AI is changing the work
 
@@ -128,9 +128,9 @@ Ask in the person's own setting (audit firm, internal audit, SOX programme or SO
 
 **Baselines to ask for first**
 - Testing hours per control: 16 (FY2024), up from 12 (FY2022); SOX control cost +45% between KPMG's 2023 and 2025
-  surveys; 52% of internal audit departments spend over 40% of hours on SOX [K-SOX30].
+  surveys; 52% of internal audit departments spend over 40% of hours on SOX [KPMG-SOX-2026].
 - Average SOX programme ~$2.3M and 15,000+ hours a year, ~40% on testing (KPMG 2025 SOX Survey, as cited by Zanin) [CPAPA-ZANIN].
-- Co-source share: only 28% used outsourced providers for testing, but 58% say they exceed 20% of SOX budget [K-SOX30].
+- Co-source share: only 28% used outsourced providers for testing, but 58% say they exceed 20% of SOX budget [KPMG-SOX-2026].
 - PBC first-time-right: ~1 in 5 requests wrong first time (Zanin's estimate; he runs a SOX-tooling vendor) [CPAPA-ZANIN].
 
 **Named outcomes (self-reported or vendor-published; effort, not quality)**
@@ -140,7 +140,7 @@ Ask in the person's own setting (audit firm, internal audit, SOX programme or SO
 - KPMG UK SOC engagements: ~18% less testing time; ~15% on one engagement using DataSnipper `#11`.
 - Evidence-to-sample matching: no controls-specific measure (`#07`); the named figures (Oberlander, Sanville) are tests
   of details, in `assurance-substantive-testing-10`.
-- PwC (external audit, year one): savings "not that drastic yet" [CFODIVE-PWC].
+- PwC (external audit, year one): savings "not that drastic yet" [CFODIVE-PWC-2026].
 
 **Vendor claims (grade C; ask for named, measured cases)**: Petual 68-80% efficiency [FTG-PETUAL]; Andera "save 70%
 of time on any control" [ANDERA-HOME]; Fieldguide up to 70% of financial audit testing automated [FG-FINAUDIT];
@@ -152,12 +152,12 @@ Document Analysis up to 70% faster preparation and review [TR-AGENTIC].
   GenAI to draft issues and reports; 38% have a strategy [AT-GARTNER].
 - Regulators seeing automated tools "frequently" in controls testing: 43% vs 88% for journal-entry testing; 31% of
   IFIAR members found tools "not used as intended" (2024) [IFIAR-TTF25].
-- Listed-PIE audits with a controls-testing finding where inspected: 14% in 2025 (11% in 2021) [IFIAR-2025F].
+- Listed-PIE audits with a controls-testing finding where inspected: 14% in 2025 (11% in 2021) [IFIAR-SURVEY-2026].
 - Agent risk: 34% acted on an inaccurate agent output; 46% spend more time validating AI; 9% redesigned workflows
   for agents (Optro survey of 417) [OPTRO-SURVEY].
-- SOC work (EY conference poll of top AI use cases): evidence collection 63%, Section 3 45%, deviation responses 41% [EY-SOC].
+- SOC work (EY conference poll of top AI use cases): evidence collection 63%, Section 3 45%, deviation responses 41% [EY-SOC-2026].
 - US CPA firms (54 surveyed): 75% have no documented transformation plan; 41% expect technology to reduce the need
-  for sampling [CPACOM-ATR].
+  for sampling [CPACOM-ATR-2025].
 
 **What to measure (recommend these, not hours alone)**: hours per control before and after; reviewer override and
 disagreement rate; whether parallel runs catch the same exceptions; rework and review notes; PBC follow-up rate;
@@ -179,14 +179,14 @@ final statuses (91.7% unchanged), every change stricter; this is consistency, no
   reliability of information [IAASB-ED, AUASB-CP].
 - **FRC (UK).** Generative and agentic AI guidance (30 Mar 2026): risks are deficient output, misuse of output and
   non-compliant methodology; define human "control points"; certify per use case; do not overstate the
-  persuasiveness of population-level AI outputs [FRC-GENAI]. 2025 thematic: certification maturity varied [FRC-THEMATIC].
-- **US private companies and SOC.** AICPA practice aid (13 Oct 2026) [AICPA-PA]; TQA 9561 (11 Sep 2026): no new SOC
+  persuasiveness of population-level AI outputs [FRC-GENAI-2026]. 2025 thematic: certification maturity varied [FRC-THEMATIC].
+- **US private companies and SOC.** AICPA practice aid (13 Oct 2026) [AICPA-PA-2026]; TQA 9561 (11 Sep 2026): no new SOC
   criteria, scope follows the system boundary, AI providers inside it assessed as subservice organisations [SD-TQA].
-  Peer Review Board alert (May 2026; oversight from 1 Jun): identical SOC 2 work can be nonconforming [JOFA-PRB].
+  Peer Review Board alert (May 2026; oversight from 1 Jun): identical SOC 2 work can be nonconforming [JOFA-PEER-2026].
 - **Management side.** COSO GenAI guidance (23 Feb 2026) defines when management "relies" on AI and the evidence that
   triggers: prompt, configuration and model version, sampling rationale [COSO-GENAI].
 - **Elsewhere.** NFRA ten principles (Jul 2026) cover agentic tools that select and test samples; AFM's 12 building
-  blocks (Dec 2025) require verifiable outputs [AFM-12].
+  blocks (Dec 2025) require verifiable outputs [AFM-12BB-2025].
 
 **Design guardrails seen in deployments**
 - Auditor approves the test plan before an agent runs; review at set stages (plan, extraction, conclusion).
@@ -206,7 +206,7 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 - **Testers become reviewers.** Hours move from tick-and-tie to exceptions, remediation and control design;
   practitioners say review is now where most auditor time goes [CPAPA-ZANIN].
 - **The bottleneck moves to review.** 46% report more time validating AI output; a rubber-stamp approval "provides no
-  real control value" (KPMG) [K-SOX30].
+  real control value" (KPMG) [KPMG-SOX-2026].
 - **New roles:** SOX practitioners hired by vendors as AI evaluators (`#21`); data-science managers inside internal
   audit (PayPal); engineers and dual-track CPA/data-science hires at PwC; Reddit's "AI-first" internal audit role.
 - **IT auditors** must read configuration and model logs as fluently as a ledger; KPMG says these skills are not
@@ -220,22 +220,22 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 ## 8. Frontier
 
 - **2025-10-28** PwC promises a tool for every audit step in 2026, with controls-testing automation modelled on
-  Evidence Match; PwC Australia pilots an AI-native audit (5 clients, all by 2028) [AT-PWC, AT-PWCAU].
+  Evidence Match; PwC Australia pilots an AI-native audit (5 clients, all by 2028) [PWC-AT-2025, AT-PWCAU].
 - **2026-01** KPMG UK introduces a reasonable-assurance "SOC 2+" opinion over AI governance and controls [K-UKCA].
 - **2026-02-23** COSO GenAI guidance makes AI-touched controls an ICFR test object [COSO-GENAI].
-- **2026-02 to 05** SOC 2 credibility crisis: AICPA warning, Peer Review Board alert, Delve allegations [JOFA-FAST, JOFA-PRB, IANS-DELVE].
-- **2026-03-30** FRC issues the first regulator guidance on generative and agentic AI in audit [FRC-GENAI, ICAEW-FRC].
+- **2026-02 to 05** SOC 2 credibility crisis: AICPA warning, Peer Review Board alert, Delve allegations [JOFA-FAST, JOFA-PEER-2026, IANS-DELVE].
+- **2026-03-30** FRC issues the first regulator guidance on generative and agentic AI in audit [FRC-GENAI-2026, ICAEW-FRCVIEW-2026].
 - **2026-02 to 06** Funding and consolidation: Fieldguide $75M, Petual $20M, Optro buys Midship (6 May), Andera $37M
   [SA-FG, FTG-PETUAL, OPTRO-MIDSHIP, FTG-ANDERA].
-- **2026-04-20** IFIAR asks firms to define what "human-led" means as agents orchestrate audit work [IFIAR-TTF26].
+- **2026-04-20** IFIAR asks firms to define what "human-led" means as agents orchestrate audit work [IFIAR-TTF-2026].
 - **2026-05-19** SEC filer-status proposal would move about half of attested issuers out of 404(b) if adopted [UNIQUS].
 - **2026-06-04** FRC opens an Audit Tech & AI Sandbox for audit firms [FRC-SANDBOX].
 - **2026-06-23 to 08-07** PCAOB asks about AI in its standard-setting agenda; the IIA urges modernising AS 2605 [IIA-PCAOB].
 - **2026-07** NFRA (India) principles explicitly cover agentic tools that select and test samples [NFRA-CAALLEY].
 - **2026-08-05** IAASB exposure drafts reshape tests of controls; comments due 15 Dec 2026 [IAASB-ED].
 - **2026-08-26 / 09-15** RSM and Andera announce an AI control-testing alliance; Workiva launches evidence, attribute and
-  testing agents [CPAPA-RSM, CPAPA-WORKIVA].
-- **2026-09-24** KPMG *Future of SOX 2030*: continuous 100% testing; first AI-related material weaknesses expected 2027 [K-SOX30].
+  testing agents [ANDERA-RSM-2026, CPAPA-WORKIVA].
+- **2026-09-24** KPMG *Future of SOX 2030*: continuous 100% testing; first AI-related material weaknesses expected 2027 [KPMG-SOX-2026].
 - **2026-10-14** Optro extends autonomous testing beyond SOX to operational audit; evidence collection "upcoming" [OPTRO-LAUNCH].
 - **2026-11-06/07** WCARS: "Taming the Autonomous Frontier: AI Governance and Continuous Auditing" (scheduled) [WCARS75].
 - **2026-12-15** QC 1000 effective [JOFA-QC1000]; IAASB comment deadline. Watch for the first FRC sandbox outputs.
@@ -264,11 +264,11 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 ## 10. Sources
 
 Full details (title, publisher, type, URL, date, access) are in the YAML.
-- **Regulators and standard-setters:** FRC-GENAI (FRC, 2026-03-30); FRC-THEMATIC (FRC, 2025-06-26); IFIAR-2025F
+- **Regulators and standard-setters:** FRC-GENAI-2026 (FRC, 2026-03-30); FRC-THEMATIC (FRC, 2025-06-26); IFIAR-SURVEY-2026
   (2026-04-01); IFIAR-TTF25 (IFIAR, *Use of technology in audits*, 2025-03-27,
-  https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf); IFIAR-TTF26 (2026-04-20); PCAOB-2024-007; IAASB-ED
-  (2026-08-05); COSO-GENAI (2026-02-23); AFM-12 (2025-12-11); IRBA (2024-09-19).
-- **Professional bodies:** AICPA-PA, JOFA-PRB, JOFA-FAST, JOFA-COSO, JOFA-EVAL, CSA-SOC2, IIA-PCAOB, ICAEW-FRC, CALCPA,
+  https://www.fsa.go.jp/cpaaob/sonota/kokusai/2025TTFReport.pdf); IFIAR-TTF-2026 (2026-04-20); PCAOB-2024-007; IAASB-ED
+  (2026-08-05); COSO-GENAI (2026-02-23); AFM-12BB-2025 (2025-12-11); IRBA (2024-09-19).
+- **Professional bodies:** AICPA-PA-2026, JOFA-PEER-2026, JOFA-FAST, JOFA-COSO, JOFA-EVAL, CSA-SOC2, IIA-PCAOB, ICAEW-FRCVIEW-2026, CALCPA-AISTD-2026,
   CAQ-ACI-2026-08, CAQ-ACI-2026-03.
 - **Not in the YAML (all opened 2026-10-16):** FRC-SANDBOX (FRC, *Audit Tech & AI Sandbox*,
   2026-06-04, https://www.frc.org.uk/news-and-events/news/2026/06/frc-invites-firms-and-companies-to-experiment-innovate-and-reduce-burdens-through-new-sandbox-programmes/);
@@ -279,16 +279,16 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   SA-FG (SiliconANGLE, Fieldguide $75M, 2026-02-02, https://siliconangle.com/2026/02/02/fieldguide-raises-75m-700m-valuation-scale-agentic-ai-audit-advisory-firms/);
   FTG-ANDERA (FinTech Global, Andera $37M, 2026-06-22, https://fintech.global/2026/06/22/andera-raises-37m-to-automate-internal-audit/);
   WCARS75 (Rutgers, 75th WCARS, 2026, https://raw.rutgers.edu/75wcars.html). AUASB-CP is in the YAML.
-- **Firms and in-house teams:** K-SOX30, K-404A, K-AGENTIC, K-UKCA, K-CLARA (KPMG); MSFT-CM, MSFT-IA (Microsoft);
-  DELOITTE-OMNIA; RSM-BEACON; RIVERON; GT-SOX; BDO-ITGC; SD-TQA; UNIQUS; FOLEY-BOTIC; PWC-DCT (search only).
+- **Firms and in-house teams:** KPMG-SOX-2026, K-404A, K-AGENTIC, K-UKCA, K-CLARA (KPMG); MSFT-CM, MSFT-IA (Microsoft);
+  DELOITTE-OMNIA-2026; RSM-BEACON; RIVERON; GT-SOX; BDO-ITGC; SD-TQA; UNIQUS; FOLEY-PCAOB-2026; PWC-DCT (search only).
 - **Vendors:** OPTRO-LAUNCH, OPTRO-ACT, OPTRO-FIRST, OPTRO-MIDSHIP, OPTRO-HAVERTYS, OPTRO-FJM, OPTRO-SNOW,
-  AUDITBOARD-ACC; FG-AGENTS, FG-PCAOB, FG-FRAZIER (search only); DS-ARMANINO, DS-RMF; TR-AGENTIC;
+  AUDITBOARD-ACC; FG-AGENTS, FIELDGUIDE-PCAOB-2026, FG-FRAZIER (search only); DS-ARMANINO, DS-RMF; TR-AGENTIC;
   PETUAL-HOME, A16Z-PETUAL; MINDBRIDGE-PCAOB; YC-ARDEN, YC-MIDSHIP. Not in the YAML: ANDERA-HOME (Andera homepage,
   accessed 2026-10-16, https://www.andera.ai/); FG-FINAUDIT (Fieldguide, *Increase Capacity and Audit Quality with Field
   Agents for Financial Audit*, 2025-06, https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit).
-- **Press:** AT-PWC, CFODIVE-PWC, CFOBREW-PWC, AT-PWCAU, CPAPA-EY, CPAPA-RSM, CPAPA-WORKIVA, CPAPA-ZANIN,
-  CPAPA-ADEWOLE, CONS-GT, FTG-PETUAL, NFRA-CAALLEY, AT-GARTNER, IANS-DELVE, CCI-DELVE, VERDANTIX.
-- **Surveys, academic, podcasts, community, jobs:** OPTRO-SURVEY (2026-10-08); IIAF-FRAUD (2026-02-17); EY-SOC
-  (2026-09); CPACOM-ATR (CPA.com/AICPA, *2025 Audit Transformation Report*, 2025-12,
-  https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf); INTELLIAUDIT; PETERS; KOKINA;
+- **Press:** PWC-AT-2025, CFODIVE-PWC-2026, CFOBREW-PWC, AT-PWCAU, CPAPA-EY, ANDERA-RSM-2026, CPAPA-WORKIVA, CPAPA-ZANIN,
+  LEDGERLINE-CPAPA-2026, CONS-GT, FTG-PETUAL, NFRA-CAALLEY, AT-GARTNER, IANS-DELVE, CCI-DELVE, VERDANTIX.
+- **Surveys, academic, podcasts, community, jobs:** OPTRO-SURVEY (2026-10-08); IIAF-FRAUD (2026-02-17); EY-SOC-2026
+  (2026-09); CPACOM-ATR-2025 (CPA.com/AICPA, *2025 Audit Transformation Report*, 2025-12,
+  https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf); INTELLIAUDIT; PETERS-2022; KOKINA;
   SRA-16H, SRA-SWARM, IIA-SWARM, AUDITPOD-296, JOFA-PODSOC; REDDIT-POST; JOB-FG-SOX, JOB-FG-SWE, JOB-NACE, JOB-REDDIT.

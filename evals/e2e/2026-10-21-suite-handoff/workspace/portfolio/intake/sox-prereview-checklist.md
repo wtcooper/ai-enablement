@@ -44,7 +44,7 @@ A template: yes, no AI needed (AI may draft wording on non-client material only)
 
 ## Screen result
 
-**DRAFT g0 for the portfolio owner to take. Not a recorded decision; nothing in `decisions` yet.**
+**g0 decision taken by the Head of AI on 2026-10-21: Go into discover.** Recorded in `portfolio.yaml` → `sox-prereview-checklist` → `decisions`. The sponsor and the full gate path are assumptions until the forum agrees them, and tier-1 is provisional until ai-governance confirms it. The draft below is the basis of the decision.
 
 Scores carried from the advisor's file under the portfolio's weights: weighted 4.40, value index 4.33, readiness index 4.45. Quadrant: value and readiness both at least 3.5, so the usual outcome is Go into discover.
 

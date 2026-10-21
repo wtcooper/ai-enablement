@@ -130,10 +130,10 @@ considering outside capital. Expect most answers on AI performance to be "we don
 - IFIAR 2025 survey (44 regulators; 161 member firms of six global networks; per-theme denominators not given): at
   least one independence and ethics finding at 43 firms (30%); acceptance and continuance at 25 firms (18%; 16-18%
   each year 2021-2024); 11 findings on unreliable tracking of relationships, interests and family trees; 22 on failing to
-  monitor personal independence [IFIAR-2025F]. Not about AI.
+  monitor personal independence [IFIAR-SURVEY-2026]. Not about AI.
 - Deloitte UK took 32 matters to its Public Interest Review Group in FY2025 (38 in FY2024); 9% led to work declined
   (19% in FY2024). Not AI-specific [DELOITTE-UKTR-2025].
-- 26% of 54 US firms have an automated engagement-letter solution; AI not specified [CPACOM-ATR].
+- 26% of 54 US firms have an automated engagement-letter solution; AI not specified [CPACOM-ATR-2025].
 - KPMG International's audit fee fell 14% ($416,000 to $357,000, 2024 to 2025) after it argued AI should cut the
   work; the fee comes from a filing and the AI argument from unnamed sources [IRISHTIMES-KPMG-2026].
 
@@ -166,7 +166,7 @@ design, and cautions against comparing firms on it [PCAOB-BOULAY-2026].
 ## 6. Guardrails
 
 **No regulator prohibits AI in acceptance, KYC or independence work, and none has AI-specific rules for it.** The FRC's
-generative and agentic AI guidance does not mention acceptance or independence [FRC-GENAI].
+generative and agentic AI guidance does not mention acceptance or independence [FRC-GENAI-2026].
 
 - **AICPA practice aid (Oct 2026; nonauthoritative) [AICPA-AIPAID-2026].** Client AI reliance is an acceptance and
   continuance factor: engagement nature, management integrity and skills, team competence, whether evidence can be
@@ -213,7 +213,7 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 - **Independence and ethics leaders** gain new work: vendor contracts, alliances, AI service classification and
   transaction structuring; Accountancy Europe says firms need legal, governance and transaction support
   [AE-BEYONDPE-2025]. No source describes how this work is staffed.
-- **Engagement teams** need a blend of audit, AI, data and specialist skills to judge client AI reliance [AICPA-PA].
+- **Engagement teams** need a blend of audit, AI, data and specialist skills to judge client AI reliance [AICPA-PA-2026].
 - **AML**: ICAEW says responsibility should be embedded across the firm; the MLRO need not be an accountant
   [ICAEW-AML-2026].
 - **Audit partners in PE-backed firms** may lose influence over client selection (IFAC) [IFAC-AQ-2026]; the PCAOB
@@ -231,7 +231,7 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 - **2026-03-02** IFAC publishes global PE research [IFAC-PE-2026]. **2026-03-03/04** Grant Thornton UK selects an AI
   onboarding and acceptance platform [FENERGO-GT-2026, GT-FENERGO-2026].
 - **2026-03-27** IESBA starts gathering information on APS [JOFA-IESBAAPS-2026]. **2026-04-08** Modus raises $85M [AT-MODUS-2026].
-- **2026-05-07** Grant Thornton US launches gtap inside an APS [GT-GTAPPR-2026]. **2026-05-08** KU/Deloitte symposium
+- **2026-05-07** Grant Thornton US launches gtap inside an APS [GT-GTAP-2026]. **2026-05-08** KU/Deloitte symposium
   pairs an ownership-and-independence panel with AI sessions [KU-SYMPOSIUM-2026].
 - **2026-06-05** SEC "in listening mode" on PE and AI; independence FAQ refresh first [TR-HOHL-2026].
 - **2026-07-15** IESBA emerging-technologies staff publication [IESBA-NAM-2026].
@@ -242,7 +242,7 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 - **2026-09-15** UK AML strategy: AI and digital ID in due diligence; FCA AI practice examples due 2026-27 [UKGOV-AMLSTRAT-2026].
 - **2026-09-22** Grant Thornton UK describes declining a grey-area client after consulting the FRC [IRISHTIMES-GT-2026].
 - **2026-10-01** PCAOB agenda includes an auditor-independence standard-setting project [JOFA-PCAOBAG-2026].
-- **2026-10-13** AICPA practice aid adds client AI reliance to acceptance; more sections promised [AICPA-PA].
+- **2026-10-13** AICPA practice aid adds client AI reliance to acceptance; more sections promised [AICPA-PA-2026].
 - **2026-10-19** PEEC interim meeting scheduled to continue discussing a second APS exposure draft [JOFA-PEEC-2026, AICPA-PEECMEET-2026].
 - **2026-Q4** IESBA AI-specific guidance planned [IESBA-SNAPSHOT-2026]. **2026-12-15** revised AICPA "attest engagement
   team" definition takes effect [JOFA-PEECTEAM-2026].
@@ -273,20 +273,20 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
 ## 10. Sources
 
 Full details (title, publisher, type, URL, date, locator) are in the YAML.
-- **Regulators and standard-setters:** IFIAR-2025F, PCAOB-BOULAY-2026, SEC-REGSX-2-01, FRC-PCLETTER-2024, FRC-GENAI,
-  UKGOV-AMLSTRAT-2026, IRBA-AI-2023, AICPA-PA, AICPA-APSED-2025, AICPA-APSCL-2026, IESBA-SNAPSHOT-2026, IESBA-NAM-2026,
+- **Regulators and standard-setters:** IFIAR-SURVEY-2026, PCAOB-BOULAY-2026, SEC-REGSX-2-01, FRC-PCLETTER-2024, FRC-GENAI-2026,
+  UKGOV-AMLSTRAT-2026, IRBA-AI-2023, AICPA-PA-2026, AICPA-APSED-2025, AICPA-APSCL-2026, IESBA-SNAPSHOT-2026, IESBA-NAM-2026,
   IESBA-APESB-2023, IESBA-TECHREV-2023, IESBA-EEA-2026, APESB-PE-2025, AICPA-AIPAID-2026, IESBA-IESSA-2025.
 - **Professional bodies:** JOFA-ETHAI-2026, JOFA-SOCETH-2026, JOFA-NILSEN-2025, JOFA-PE-2025, JOFA-PEED-2025,
   JOFA-PEEC-2026, JOFA-AIPA-2026, ICAEW-PE-2024, ICAEW-AML-2026, ICAS-IESBASNAP-2026, IFAC-AQ-2026, AE-PE-2026, AE-BEYONDPE-2025.
 - **Firms:** EY-TR-2025, DELOITTE-UKTR-2025, DELOITTE-IE-TR-2026, DELOITTE-LU-TR-2026, KPMG-AUTR-2025, KPMG-HOHL-2026,
-  GT-FENERGO-2026, GT-GTAPPR-2026, OATH-2026.
+  GT-FENERGO-2026, GT-GTAP-2026, OATH-2026.
 - **Vendors:** INTAPP-CRETE-2024, INTAPP-CONFLICTS-2026, INTAPP-INTAKE-2026, INTAPP-EMPCOMP-2026, INTAPP-WP-2018,
   KINGLAND-ACCEPT, KINGLAND-PA-2026, KINGLAND-WP-2024, FENERGO-GT-2026, ZYGOS-AISENSE-2026, ANTHROPIC-DELOITTE-2025, ANTHROPIC-KPMG-2026.
 - **Press, community, academic, surveys:** AT-AICPAPA-2026, CFODIVE-AICPAPA-2026, AT-PEEC-2026, AT-PCAOBPE-2025,
-  AT-MODUS-2026, GT-GTAP-2026, CFI-REPODO-2026, FINSTORY-OATH-2026, IRISHTIMES-GT-2026, TR-HOHL-2026, STARLING-HOHL-2026,
-  NYSSCPA-HOHL-2025, IRISHTIMES-KPMG-2026, EY-CANVAS-2026, ACCWEEKLY-INDEP-2026, VERDANTIX, TLT-AML-2026, CRYPTOBRIEFING-ANTHROPICEY-2026,
-  FOURTHWEB-ANTHROPICEY-2026, BIG4NEWS-2026, CEBI-2024, JB-JAR-2004, CPACOM-ATR, ICAS-ATI-2026.
-- **Not in the YAML:** FRC-GENAI (FRC, *Generative and Agentic AI Guidance: risks, mitigations and illustrative examples*, 2026-03-30, https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf);
+  AT-MODUS-2026, CONS-GT, CFI-REPODO-2026, FINSTORY-OATH-2026, IRISHTIMES-GT-2026, TR-HOHL-2026, STARLING-HOHL-2026,
+  NYSSCPA-HOHL-2025, IRISHTIMES-KPMG-2026, CPAPA-EY, ACCWEEKLY-INDEP-2026, VERDANTIX, TLT-AML-2026, CRYPTOBRIEFING-ANTHROPICEY-2026,
+  FOURTHWEB-ANTHROPICEY-2026, BIG4NEWS-2026, CEBI-2024, JB-JAR-2004, CPACOM-ATR-2025, ICAS-ATI-2026.
+- **Not in the YAML:** FRC-GENAI-2026 (FRC, *Generative and Agentic AI Guidance: risks, mitigations and illustrative examples*, 2026-03-30, https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf);
   IFAC-PE-2026 (IFAC, *Private Equity Investment in Accountancy*, 2026-03-02, https://www.ifac.org/news-events/2026-03/private-equity-investment-accountancy-ifac-releases-research-and-online-resource);
   JOFA-FACULTY-2025 (JofA, *What faculty should know about private equity in accounting*, 2025-09-08, https://www.journalofaccountancy.com/newsletters/academic-update/what-faculty-should-know-about-private-equity-in-accounting);
   BBL-PCAOBSTRAT-2026 (Bloomberg Tax, *Audit Oversight Board Set for Renewed Industry-Friendly Strategy*, 2026-01-16, https://news.bloombergtax.com/financial-accounting/audit-oversight-board-set-for-renewed-industry-friendly-strategy);

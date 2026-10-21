@@ -34,7 +34,7 @@ peer review (the AICPA's triennial review of a firm's quality system and sample 
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
 | Choose methodology and platform | Pick an audit methodology and file (often bought: DAS on Caseware, Thomson Reuters Guided Assurance); AI now arrives inside it | expert-judgment, coordination-scheduling | Methodology, workpapers and AI come from one vendor (#01); an ENGAGE 2026 panel was built around how to choose [GRF-ENGAGE-2026] |
-| Acceptance and engagement terms | Accept or continue the client, independence, engagement letter (see `assurance-acceptance-independence-10`, `-11`) | review-assurance, client-interaction | AI-related services to an attest client can raise independence concerns [JOFA-ETHICSAI-2026] |
+| Acceptance and engagement terms | Accept or continue the client, independence, engagement letter (see `assurance-acceptance-independence-10`, `-11`) | review-assurance, client-interaction | AI-related services to an attest client can raise independence concerns [JOFA-ETHAI-2026] |
 | Planning and risk assessment | Understand the entity, assess risks, often from a prior-year file and trial balance | review-assurance, research-synthesis | Peer reviewers report weak risk-assessment documentation and weak links to procedures [NYSSCPA-PEERDEF-2026] |
 | Client data intake | PBC ("prepared by client") list, trial balance, general ledger, bank statements | data-reporting, coordination-scheduling | 60% of 54 firms name poor client data and 53% lack of access as top blockers [CPACOM-ATR-2025]; clients refuse API access [CPAPA-ATLAB-2025] |
 | Fieldwork | Tests of details, sampling, proof of cash, lease and debt recalculation | review-assurance, data-reporting | Long documents (board minutes, indentures, contracts); a small firm over-audited and found leaner samples hard to justify to peer reviewers [TR-SAMBROWN-2026] |
@@ -133,8 +133,8 @@ nonconforming engagements over engagements reviewed. Samples are small and rates
 | Compilations (and preparations) omitting disclosures | 5 of 175 | 2 of 67 | 4 of 138 | 3 of 102 | 14 of 482 (3%) |
 | All types | 34 of 448 | 18 of 256 | 38 of 418 | 45 of 363 | 135 of 1,485 (9%) |
 
-[TSCPA-PEERREVIEW-2025; CTCPA-PEERREVIEW-2025; MNCPA-PEERREVIEW-2025; MOCPA-PEERREVIEW-2025]; sums are the research
-team's arithmetic. Missouri's compilation cells exclude preparations (2 of 18 omitting disclosures nonconforming); the
+[TSCPA-PEERREVIEW-2025; CTCPA-PEERREVIEW-2025; MNCPA-PEERREVIEW-2025; MOCPA-PEERREVIEW-2025]; sums are
+arithmetic across the four tables. Missouri's compilation cells exclude preparations (2 of 18 omitting disclosures nonconforming); the
 other three states report compilations and preparations together. The Oklahoma, South Dakota and Kansas entity reported 86 of 525 (16.38%), including 12 of 40 single
 audits [OKSCPA-PEERREVIEW-2025]. System reviews passed: Tennessee 40 of 46, Connecticut 28 of 34, Minnesota 41 of 44,
 Missouri 23 of 31, Oregon 32 of 36, Oklahoma group 35 of 55 [same reports; OSCPA-PR-2026]. None of these reports
@@ -155,7 +155,7 @@ review did not help identify them [EBSA-AUDITQ-2023] (detail in benefit-plan wor
 
 **Tool figures (vendor-published; no sample sizes).**
 - Caseware: disclosure checklist agent 2.7 review hours saved per run on average, varying by engagement
-  [CASEWARE-CWX-2026]; 94% accuracy on golden-dataset items from beta traces [CASEWARE-LAUNCH-2026]; Verity for Excel
+  [CASEWARE-VERITY-2026]; 94% accuracy on golden-dataset items from beta traces [CASEWARE-LAUNCH-2026]; Verity for Excel
   nine hours per engagement and 75% per task in its own testing [CASEWARE-VERITYXL-2026].
 - Thomson Reuters: 91% of 140+ Plante Moran pilot respondents said research was faster [TR-SCALING-2026]; Disclosure
   Review used by roughly 30% of eligible customers, close to 300 analyses a month [TR-DISCLOSURE-2026].
@@ -187,11 +187,11 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
   and validated without logging every interaction [TSBPA-2026]. One state board only. A CalCPA author reads AU-C 230 as
   requiring working papers that let an experienced auditor understand AI procedures and judgments [CALCPA-AISTD-2026].
 - **Client data and consent.** The Confidential Client Information Rule (ET 1.700.001) applies before client data goes
-  into an AI system, and consent may be needed [JOFA-ETHICSAI-2026]. Read licence terms: with a free tool "you are the
+  into an AI system, and consent may be needed [JOFA-ETHAI-2026]. Read licence terms: with a free tool "you are the
   product" [JOFA-AAFOCUS-2025]. The practice aid's Q&A says AICPA standards do not require disclosing AI use to the
   client, but law, contract or firm policy may [CFODIVE-AICPAPA-2026] (`assurance-quality-management-24`).
 - **Independence.** Building or hosting an AI system for an attest client can raise independence concerns
-  [JOFA-ETHICSAI-2026]. Tool-provider terms can shift control or evidence access [JOFA-SOCETH-2026]. PEEC is discussing
+  [JOFA-ETHAI-2026]. Tool-provider terms can shift control or evidence access [JOFA-SOCETH-2026]. PEEC is discussing
   a second exposure draft on alternative practice structures, including a ban on attest-client investment in firms
   [JOFA-PEEC-2026]. Several tools produce client-side schedules (lease schedules, journal entries); the sources do not
   discuss independence, so ask.
@@ -213,7 +213,7 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
   At Citrin Cooperman firm-level AI governance sits with the Risk Management Officer and domain policies with practice
   leaders (vendor blog) [CASEWARE-READINESS-2026].
 - **Juniors.** Firms say cited AI output teaches juniors: a Withum partner likened Verity to a partner walking a junior
-  through a checklist line by line [CASEWARE-CWX-2026]. Accountancy Europe names junior development as a risk
+  through a checklist line by line [CASEWARE-VERITY-2026]. Accountancy Europe names junior development as a risk
   [ACCTEU-GENAI-2026], and a trade-press opinion piece says AI is absorbing the chasing, rekeying and reconciling that
   taught the first two years, and most firms have yet to replace that learning with a deliberate model [CPAPA-STOP-2026]. Neither side has measured it.
 - **Capacity.** The AICPA small-firm column suggests contractors (often retired practitioners) and shared resources,
@@ -227,7 +227,7 @@ concerns the 36 largest firms before generative AI [FEDYK-2022] (see `assurance-
 
 - **2026-12-15:** SSARS 27 effective [CPACOM-SSARS27-2025]; first Yellow Book QM evaluations due [GAO-YBFAQ-2025].
 - **2026-10-19:** AICPA and AIUC announce one CPA-led engagement combining SOC 2 and AIUC-1 for AI systems, full launch
-  expected early 2027 [AICPA-AIUC-2026]; a possible service line for firms with SOC practices, though the article names no
+  expected early 2027 [JOFA-AIUC-2026]; a possible service line for firms with SOC practices, though the article names no
   firms or firm sizes (soc-attestation, assurance-over-ai).
 - **2026-10-13:** AICPA practice aid issued, with risk-assessment and evidence content and more Q&As to come [AICPA-PA-2026].
 - **2026-10-08:** PKF O'Connor Davies joins Caseware's Agentic Pioneer Program to build its own agents (`#05`) [CASEWARE-PKF-2026].
@@ -282,12 +282,12 @@ Full details for every key used in the use cases are in `../use-cases/private-co
 - CPACOM-SQMS-2026: CPA.com, *Waiting for peer review cycles puts firms at risk under SQMS 1* (2026-09-03). https://www.cpa.com/blog/2026/09/03/waiting-peer-review-cycles-puts-firms-risk-under-sqms-1
 - ICPAS-PRAF-2026: Illinois CPA Society, *Peer Review Alliance Forum 2026, participant slides* (catalogue description, 2026). https://learn.icpas.org/AssetListing/Peer-Review-Alliance-Forum-Virtual-17790/2026-Forum-%E2%80%93-Participant-Slides-29361
 - AICPA-AIPAID-2026: AICPA & CIMA, *Explore new AICPA guidance on AI and the financial statement audit* (2026-10-12). https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit
-- JOFA-AIPA-2026: Journal of Accountancy, *AI and the audit: AICPA publishes practice aid* (2026-10-13). https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors.html
+- JOFA-AIPA-2026: Journal of Accountancy, *AI and the audit: AICPA publishes practice aid to assist auditors* (2026-10-13). https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/
 - CFODIVE-AICPAPA-2026: CFO Dive, *AICPA issues guidance for AI-assisted auditing* (2026-10-13). https://www.cfodive.com/news/aicpa-issues-guidance-ai-assisted-auditing/832907/
 - TSBPA-2026: Texas State Board of Public Accountancy, *Board Report*, vol. 168 (2026-08). https://www.tsbpa.texas.gov/wp-content/uploads/2026/08/br_082026_web_final.pdf
 - GAO-YBFAQ-2025: GAO-26-108710, *Government Auditing Standards FAQ on a system of quality management* (2025-12-15). https://files.gao.gov/reports/GAO-26-108710/index.html
 - JOFA-PEEC-2026: Journal of Accountancy, *PEEC to continue discussions on alternative practice structures* (2026-08-10). https://www.journalofaccountancy.com/news/2026/aug/peec-to-continue-discussions-on-alternative-practice-structures/
-- AICPA-AIUC-2026: Journal of Accountancy, *AICPA partners on new offering that assures AI systems and agents* (2026-10-19). https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents.html
+- JOFA-AIUC-2026: Journal of Accountancy, *AICPA partners on new offering that assures AI systems and agents* (2026-10-19). https://www.journalofaccountancy.com/news/2026/oct/aicpa-partners-on-new-offering-that-assures-ai-systems-and-agents/
 - TR-DISCLOSURE-2026: Thomson Reuters, *Turning Disclosure Review From Manual Matching Into AI-Assisted Confidence* (vendor, 2026-09-23). https://www.thomsonreuters.com/en-us/posts/innovation/turning-disclosure-review-from-manual-matching-into-ai-assisted-confidence/
 - CASEWARE-READINESS-2026: Caseware blog, *The AI Readiness Gap* (vendor, 2026-09-03). https://www.caseware.com/resources/blog/the-ai-readiness-gap-why-audit-and-accounting-leaders-arent-seeing-the-value-they-expect
 - CPAPA-STOP-2026: CPA Practice Advisor, *Stop Training CPAs for Yesterday's Work* (opinion, 2026-09-02). https://www.cpapracticeadvisor.com/2026/09/02/stop-training-cpas-for-yesterdays-work/189548/

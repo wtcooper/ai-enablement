@@ -5,9 +5,9 @@
 # personal-assistant or shared-team-skills; pattern is 'other' (proposed new pattern: assurance over an AI system).
 # Testing controls that AI performs, from the controls-testing programme view, is assurance-controls-testing-15;
 # entries here reference it rather than repeat it. No entry has a measured quality outcome; figures are readiness
-# surveys, market sizing, vendor counts or forecasts. Documents shared with controls-testing.yaml keep that
-# file's keys (e.g. K-SOX30, K-UKCA, COSO-GENAI, AICPA-PA, BDO-ITGC); other keys follow PUBLISHER-SHORT-YYYY.
-# Entries 25-27 added 2026-10-21 (wave 6, mid-market).
+# surveys, market sizing, vendor counts or forecasts. Source refs are the archetype's
+# shared keys (one key per document).
+# Entries 25-27 added 2026-10-21 (mid-market).
 
 - id: assurance-assurance-over-ai-01
   title: "Idea: inventory the entity's AI and scope it to financial-reporting processes, assertions and key controls"
@@ -23,7 +23,7 @@
   problem: >-
     Entities adopt generative AI through embedded features, vendor tools and unsanctioned "shadow AI", so an auditor
     or SOX team cannot tell which AI touches financial reporting (DART-COSO-2026; UNIQUS-GENAI-2026). The AICPA says
-    an early question is how far the company relies on AI in financial reporting (AICPA-PA). Audit partners
+    an early question is how far the company relies on AI in financial reporting (AICPA-PA-2026). Audit partners
     most often name lack of in-house AI expertise and control capability (33%), data quality (27%), missing
     governance frameworks and oversight structures (27%) and thin documentation of models, assumptions and decision
     logic (26%) as the AI-related internal-control challenges at their largest client (BOARDMEMBER-CAQ-2026).
@@ -37,8 +37,8 @@
     AICPA practice aid (13 Oct 2026) asks auditors to establish the extent of reliance early, how AI
     differs from ordinary automation, how data quality affects reliability, whether the team has the right blend of
     audit, AI and data skills, and what new risks arise (data, model, hallucination, explainability, bias, drift)
-    (AICPA-PA). EY leaders advise organisations just starting out to begin with governance and an AI inventory
-    (EY-SOC).
+    (AICPA-PA-2026). EY leaders advise organisations just starting out to begin with governance and an AI inventory
+    (EY-SOC-2026).
   outcomes:
     - lever: risk
       description: "none published"
@@ -56,21 +56,21 @@
   human_checkpoints:
     - "Management signs off ownership and criticality per use case (COSO-GENAI)"
     - "Management identifies financially relevant use cases for heightened rigour and agrees with internal and external auditors what evidence suffices (DART-COSO-2026)"
-    - "Engagement partner judgement on acceptance and on whether AI use affects financial reporting (AICPA-PA)"
+    - "Engagement partner judgement on acceptance and on whether AI use affects financial reporting (AICPA-PA-2026)"
   role_evolution: >-
     The AICPA says the audit team may need a blend of auditing expertise, AI knowledge, data skills, professional
-    skepticism and specialist support (AICPA-PA). BDO places understanding of the entity's AI use first in the IT
+    skepticism and specialist support (AICPA-PA-2026). BDO places understanding of the entity's AI use first in the IT
     audit approach (BDO-ITGC).
   evidence_grade: D
   sources:
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "pp. 18-19, roadmap steps 1-2 and example inventory entry"}
     - {ref: DART-COSO-2026, title: "Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI (Vol. 33, Issue 3)", publisher: "Deloitte (DART)", type: firm, url: "https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai", date: "2026-04-03", access: full, locator: "paragraphs 1-3 and section on six actions, items 1, 2 and 6"}
-    - {ref: AICPA-PA, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Considering an organization's use of AI'; the practice aid itself is behind a member login and was not read"}
+    - {ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Considering an organization's use of AI'; the practice aid itself is behind a member login and was not read"}
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraphs on acceptance and continuance and on understanding the entity"}
     - {ref: BDO-ITGC, title: "Artificial Intelligence: IT Audit Considerations with Focus on Information Technology General Controls", publisher: "BDO USA", type: firm, url: "https://www.bdo.com/insights/assurance/artificial-intelligence-it-audit-considerations-with-focus-on-information-technology-general-control", date: "2026-07-20", access: full, locator: "opening section 'Start with understanding'"}
     - {ref: UNIQUS-GENAI-2026, title: "Internal controls over generative AI", publisher: "Uniqus", type: firm, url: "https://uniqus.com/internal-controls-over-generative-ai/", date: "2026-04-07", access: full, locator: "section 1 (shadow AI)"}
     - {ref: BOARDMEMBER-CAQ-2026, title: "What audit partners are seeing on AI and what it means for audit committees", publisher: "Corporate Board Member (CAQ author)", type: press, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "section on operational control gaps"}
-    - {ref: EY-SOC, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "section 'How AI improves SOC reporting', closing quote"}
+    - {ref: EY-SOC-2026, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "section 'How AI improves SOC reporting', closing quote"}
   last_reviewed: "2026-10-17"
   notes: >-
     Idea: published guidance from COSO, the AICPA and firms; no named engagement or measured outcome found. A
@@ -160,7 +160,7 @@
     (BDO-ITGC). Some models learn, drift and give probabilistic results, so the testing strategy for deterministic
     automated controls may not carry over, and purchased AI may limit what the auditor can do (AT-AICPAPA-2026). KPMG
     says SOX programmes have largely avoided AI-related material weaknesses so far, crediting strong AI governance and
-    timing: programmes are still testing "around" the AI, relying on manual and other automated controls (K-SOX30). In an Optro survey of over 400 GRC and
+    timing: programmes are still testing "around" the AI, relying on manual and other automated controls (KPMG-SOX-2026). In an Optro survey of over 400 GRC and
     audit leaders, respondents said they authorise agents to approve or reject transactions (38%), modify controls or
     policies (34%) and change user permissions or access rights (27%) (OPTRO-SURVEY).
   solution: >-
@@ -179,14 +179,14 @@
     rely on tests of controls alone and may need to establish relationships between inputs and outputs and look to
     non-traditional information sources (AT-AICPAPA-2026). KPMG expects that working AI into the control environment
     will "likely during this next year" become unavoidable, and says external auditors are putting more emphasis on
-    test of design as automated, AI-enabled controls spread (K-SOX30; K-404A).
+    test of design as automated, AI-enabled controls spread (KPMG-SOX-2026; K-404A).
   outcomes:
     - lever: risk
       description: "KPMG expects the first wave of AI-related material weaknesses as SOX programmes stop testing around AI"
       figure: "2027 (forecast)"
       measures: "year in which KPMG expects the first AI-related material weaknesses; a firm forecast, not an observed event"
       provenance: self-reported
-      source_ref: K-SOX30
+      source_ref: KPMG-SOX-2026
   prerequisites:
     - "Component-level inventory of the AI behind each in-scope use case (BDO-ITGC)"
     - "Reliance classification per control (see -02; BDO-ITGC)"
@@ -194,8 +194,8 @@
     - "Robust control design, rationalisation and documentation before leveraging AI and other emerging technologies (K-404A)"
   risks_and_guardrails:
     - "BDO says the change is the extension of existing ITGC categories to AI components, not new categories (BDO-ITGC); COSO says established ITGC guidance remains necessary (COSO-GENAI)."
-    - "The PCAOB technology-assisted-analysis amendments to AS 1105 and AS 2301 require testing relevant ITGCs where applicable over electronic information, but are not AI-specific (CALCPA, secondary; PCAOB pages were blocked)."
-    - "A human approval step that rubber-stamps every AI recommendation provides no real control value (K-SOX30)."
+    - "The PCAOB technology-assisted-analysis amendments to AS 1105 and AS 2301 require testing relevant ITGCs where applicable over electronic information, but are not AI-specific (CALCPA-AISTD-2026, secondary; PCAOB pages were blocked)."
+    - "A human approval step that rubber-stamps every AI recommendation provides no real control value (KPMG-SOX-2026)."
     - "The AICPA aid, as reported, says a one-to-one translation of existing risk guidance does not always work because AI can change the risks inherent to a class of transactions (AT-AICPAPA-2026)."
     - "Protiviti, quoted on a legal blog, says AI-driven layoffs and workforce changes can affect how established controls operate; the blog links this to staffing and segregation-of-duties weaknesses (TCC-ICFR-2026)."
     - "In the same Optro survey, 25% reported a control failure involving an agent and 30% an unintended agent action; vendor-published, and the figures count reports, not severity (OPTRO-SURVEY)."
@@ -206,21 +206,21 @@
   role_evolution: >-
     KPMG says the auditor of the future must be as comfortable in a system configuration log as in a transaction
     ledger, that what counts as meaningful human oversight of AI-operated controls is becoming harder to define, and
-    that a new mandate to assure the AI systems themselves is emerging (K-SOX30). The AICPA aid, as reported,
+    that a new mandate to assure the AI systems themselves is emerging (KPMG-SOX-2026). The AICPA aid, as reported,
     says auditors need to understand the AI mechanism behind a control as well as the control activity
     (AT-AICPAPA-2026).
   evidence_grade: C
   sources:
     - {ref: BDO-ITGC, title: "Artificial Intelligence: IT Audit Considerations with Focus on Information Technology General Controls", publisher: "BDO USA", type: firm, url: "https://www.bdo.com/insights/assurance/artificial-intelligence-it-audit-considerations-with-focus-on-information-technology-general-control", date: "2026-07-20", access: full, locator: "sections 'IT General Controls' and 'AI-related components'; PDF edition pp. 1-2"}
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "sections on control activities, audit responses, audit evidence and purchased AI"}
-    - {ref: K-SOX30, title: "The Future of SOX: a point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "p. 6 ('Auditing AI itself'); p. 7 ('The first AI-related material weaknesses'); p. 8 (configuration-log quote); p. 14 ('Challenges on the horizon'); PDF pages"}
+    - {ref: KPMG-SOX-2026, title: "The Future of SOX: a point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "p. 6 ('Auditing AI itself'); p. 7 ('The first AI-related material weaknesses'); p. 8 (configuration-log quote); p. 14 ('Challenges on the horizon'); PDF pages"}
     - {ref: K-404A, title: "The 404(a) opportunity: turning a compliance shift into a strategic catalyst", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/404-opportunity.pdf", date: "2026-08", access: full, locator: "section on renewed focus on Test of Design (design, rationalization and documentation)"}
     - {ref: KPMG-ACAGENDA-2025, title: "On the 2026 audit committee agenda", publisher: "KPMG Board Leadership Center", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/boardleadership/pdf/2026/on-the-2026-audit-committee-agenda.pdf", date: "2025-12-05", access: full, locator: "p. 2, 'ICOFR and probing control deficiencies'"}
     - {ref: UNIQUS-GENAI-2026, title: "Internal controls over generative AI", publisher: "Uniqus", type: firm, url: "https://uniqus.com/internal-controls-over-generative-ai/", date: "2026-04-07", access: full, locator: "sections on access controls and segregation of duties"}
     - {ref: AT-COSO-2026, title: "COSO releases guidance on internal controls for AI", publisher: "Accounting Today", type: press, url: "https://accountingtoday.com/news/coso-releases-guidance-on-applying-internal-controls-to-ai", date: "2026-02-24", access: full, locator: "paragraph on control environment"}
-    - {ref: OPTRO-SURVEY, title: "One in three organizations say they have acted on wrong decisions made by AI agents", publisher: "Optro", type: vendor, url: "https://optro.ai/blog/one-in-three-organizations-say-they-have-acted-on-wrong-decisions-made-by-ai-agents-optro-research-finds", date: "2026-10-08", access: full, locator: "paragraphs 2-4"}
+    - {ref: OPTRO-SURVEY, title: "One in three organizations say they have acted on wrong decisions made by AI agents", publisher: "Optro", type: survey, url: "https://optro.ai/blog/one-in-three-organizations-say-they-have-acted-on-wrong-decisions-made-by-ai-agents-optro-research-finds", date: "2026-10-08", access: full, locator: "paragraphs 2-4"}
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 6, scope and boundaries"}
-    - {ref: CALCPA, title: "AI Standard Setting, Regulation in Audit: Part 1", publisher: "California Society of CPAs (CalCPA)", type: professional-body, url: "https://www.calcpa.org/whats-happening/articles/ai-standard-setting-regulation-in-audit-part-1", date: "2026-08-12", access: full, locator: "section 'PCAOB: The U.S. Issuer Landscape', AS 1105 paragraph"}
+    - {ref: CALCPA-AISTD-2026, title: "AI Standard Setting, Regulation in Audit: Part 1", publisher: "California Society of CPAs (CalCPA)", type: professional-body, url: "https://www.calcpa.org/whats-happening/articles/ai-standard-setting-regulation-in-audit-part-1", date: "2026-08-12", access: full, locator: "section 'PCAOB: The U.S. Issuer Landscape', AS 1105 paragraph"}
     - {ref: TCC-ICFR-2026, title: "Your 2026 Audit Committee Agenda: ICFR During AI Transformations", publisher: "TheCorporateCounsel.net", type: press, url: "https://www.thecorporatecounsel.net/blog/2026/02/your-2026-audit-committee-agenda-icfr-during-ai-transformations.html", date: "2026-02-06", access: full, locator: "Protiviti quotation in the second half of the post"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -430,7 +430,7 @@
     sufficient, additional procedures may include AI-related management representations, such as identification of
     the AI the entity uses. It also asks whether the entity has a process to identify AI used by vendors and other
     third parties and evaluate the effect on financial reporting (AT-AICPAPA-2026). The AICPA points to separate
-    guidance on how a service organisation's AI use affects SOC 1 and SOC 2 engagements (AICPA-PA).
+    guidance on how a service organisation's AI use affects SOC 1 and SOC 2 engagements (AICPA-PA-2026).
   outcomes:
     - lever: risk
       description: "none published"
@@ -450,7 +450,7 @@
   evidence_grade: D
   sources:
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraphs on service organizations and purchased AI"}
-    - {ref: AICPA-PA, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Additional AI-related guidance'"}
+    - {ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Additional AI-related guidance'"}
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 6, third-party and vendor risk"}
     - {ref: CSA-SOC2, title: "The SOC 2 AI gap: auditors improvise where AICPA has not acted", publisher: "Cloud Security Alliance Labs", type: professional-body, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/", date: "2026-08-30", access: full, locator: "Key Takeaways"}
   last_reviewed: "2026-10-17"
@@ -492,13 +492,13 @@
   human_checkpoints:
     - "The engagement team's fraud-risk discussion covers AI-enabled schemes (AT-AICPAPA-2026)"
   role_evolution: >-
-    The AICPA says teams may need specialist support (AICPA-PA); by inference that support extends to fraud-risk
+    The AICPA says teams may need specialist support (AICPA-PA-2026); by inference that support extends to fraud-risk
     discussions where AI is in the reporting process.
   evidence_grade: D
   sources:
     - {ref: COSO-GENAI, title: "Achieving Effective Internal Control Over Generative AI", publisher: "COSO", type: standard-setter, url: "https://www.coso.org/_files/ugd/719ba0_ef4dbc255331406e95faf46e7a9e3a1c.pdf", date: "2026-02-23", access: full, locator: "p. 11, Principle 8"}
     - {ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "paragraph on AI-enabled fraud risk"}
-    - {ref: AICPA-PA, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Considering an organization's use of AI'"}
+    - {ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section 'Considering an organization's use of AI'"}
   last_reviewed: "2026-10-17"
   notes: >-
     Idea: guidance only. The planning-stage treatment is in the planning-risk-assessment module; screening submitted
@@ -561,7 +561,7 @@
     human on the loop at critical stages of agent workflows (KPMG-ACAGENDA-2025).
   evidence_grade: C
   sources:
-    - {ref: DELOITTE-ACPR-2026, title: "Audit Committee Practices Report, fifth edition (media alert)", publisher: "Deloitte US with Center for Audit Quality", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-caq-announce-2026-audit-committee-practices-report.html", date: "2026-09-22", access: full, locator: "highlights: 'A gap between AI responsibility and readiness'"}
+    - {ref: DELOITTE-ACPR-2026, title: "Enterprise Risk Management Takes the Lead, AI Governance Gains Urgency for Audit Committees", publisher: "Deloitte US with Center for Audit Quality", type: survey, url: "https://www.deloitte.com/us/en/about/press-room/deloitte-caq-announce-2026-audit-committee-practices-report.html", date: "2026-09-22", access: full, locator: "highlights: 'A gap between AI responsibility and readiness'; media alert"}
     - {ref: AT-ACPR-2026, title: "Audit committees focusing on emerging risks like AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/audit-committees-focusing-on-emerging-risks-like-ai", date: "2026-09-22", access: full, locator: "paragraph 2"}
     - {ref: KPMG-ACAGENDA-2025, title: "On the 2026 audit committee agenda", publisher: "KPMG Board Leadership Center", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/boardleadership/pdf/2026/on-the-2026-audit-committee-agenda.pdf", date: "2025-12-05", access: full, locator: "p. 2, 'Climate, AI, and cybersecurity disclosures'; pp. 4-6, 'Clarify the role of the audit committee in the oversight of AI' (page numbers approximate)"}
     - {ref: BOARDMEMBER-CAQ-2026, title: "What audit partners are seeing on AI and what it means for audit committees", publisher: "Corporate Board Member (CAQ author)", type: press, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "paragraphs 3-6"}
@@ -652,34 +652,34 @@
     A summary of Genpact's CAE Forum (26 Mar 2026) says annual audit plans cannot keep pace with continuously changing AI
     systems and boards want ongoing assessments (GENPACT-CAE-2026). EY's SOC conference says risk assessment cannot be a
     static or annual exercise, and that AI systems drift and agents may rewrite themselves and change behaviour to work
-    around anomalies (EY-SOC).
+    around anomalies (EY-SOC-2026).
   solution: >-
     Move from point-in-time assessment to continuous monitoring with real-time dashboards and dynamic audit planning
     (GENPACT-CAE-2026). EY conference speakers said AI can monitor AI system performance and detect problems such as
     drift early, and that organisations should start with simple automations in controlled environments before
-    multi-agent set-ups under close oversight (EY-SOC). AIUC-1's quarterly agent re-testing (see -19) is one live
+    multi-agent set-ups under close oversight (EY-SOC-2026). AIUC-1's quarterly agent re-testing (see -19) is one live
     example of the cadence (FIELDGUIDE-AIUC1-2026).
   outcomes:
     - lever: risk
       description: "none published"
       figure: "none published"
       measures: "not applicable"
-      source_ref: EY-SOC
+      source_ref: EY-SOC-2026
   prerequisites:
     - "An AI inventory and agreed risk indicators (GENPACT-CAE-2026)"
-    - "Governance in place before multi-agent automation (EY-SOC)"
+    - "Governance in place before multi-agent automation (EY-SOC-2026)"
   risks_and_guardrails:
-    - "In an EY conference poll, 71% of participants rated their risk-management maturity 7 or lower out of 10; poll size not stated (EY-SOC)."
-    - "EY leaders say AI may invent details and fill in blanks even when told not to, so human oversight stays necessary (EY-SOC)."
+    - "In an EY conference poll, 71% of participants rated their risk-management maturity 7 or lower out of 10; poll size not stated (EY-SOC-2026)."
+    - "EY leaders say AI may invent details and fill in blanks even when told not to, so human oversight stays necessary (EY-SOC-2026)."
   human_checkpoints:
-    - "Human oversight of AI-generated outputs and processes (EY-SOC)"
+    - "Human oversight of AI-generated outputs and processes (EY-SOC-2026)"
   role_evolution: >-
     The Genpact forum summary says CAEs need data scientists and AI ethics specialists on their teams
     (GENPACT-CAE-2026).
   evidence_grade: D
   sources:
     - {ref: GENPACT-CAE-2026, title: "Evolving AI governance demands new oversight and audit strategies (summary of Genpact CAE Forum, 2026-03-26)", publisher: "welcome.ai", type: press, url: "https://www.welcome.ai/content/evolving-ai-governance-demands-new-oversight-and-audit-strategies", date: "2026-09-11", access: full, locator: "paragraphs on continuous assurance"}
-    - {ref: EY-SOC, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "sections 'Managing AI risks through continuous assurance' and 'How AI improves SOC reporting'"}
+    - {ref: EY-SOC-2026, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "sections 'Managing AI risks through continuous assurance' and 'How AI improves SOC reporting'"}
     - {ref: FIELDGUIDE-AIUC1-2026, title: "Fieldguide becomes first AI platform for audit and advisory to achieve AIUC-1 certification", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/fieldguide-first-aiuc-1-certification", date: "2026-05-06", access: full, locator: "paragraph 3"}
   last_reviewed: "2026-10-17"
   notes: >-
@@ -810,7 +810,7 @@
   problem: >-
     Customers, boards and procurement teams cannot see whether a supplier's AI is governed in practice rather than only
     on paper (KPMGUK-GOVAI-2026). EY's SOC conference says "trust me" is not enough and customers want tested evidence
-    (EY-SOC). KPMG's paper says no prescriptive regulatory framework mandates external AI assurance
+    (EY-SOC-2026). KPMG's paper says no prescriptive regulatory framework mandates external AI assurance
     (K-UKCA).
   solution: >-
     KPMG UK combines its Trusted AI framework, controls assurance skills and SOC principles to give an independent
@@ -835,7 +835,7 @@
     - "Suitable criteria: the AICPA has published no AI-specific Trust Services Criteria, so auditors build ad hoc evidence requests (CSA-SOC2)"
   risks_and_guardrails:
     - "The IAASB says questions remain about subject matter and suitable criteria for AI assurance and whether ISAE 3000 (Revised) suffices; it is only gathering information (IAASB-CATALOG-2026)."
-    - "EY says attestation is harder for AI because AI is not a series of control points; it spans data, models, platforms, applications and operations (EY-SOC)."
+    - "EY says attestation is harder for AI because AI is not a series of control points; it spans data, models, platforms, applications and operations (EY-SOC-2026)."
     - "KPMG notes key risks in AI-enabled services often sit at application, workflow, oversight and third-party layers, not only the model (KPMGUK-GOVAI-2026)."
     - "The chair of an AICPA SOC working group warned that 'fast and easy' SOC services, pushed by tool-vendor marketing, may come at the expense of quality and objectivity (JOFA-FAST)."
     - "KPMG US material notes some services may not be permissible for KPMG audit clients; independence is covered in the acceptance-independence module (KPMGUS-ISO-2025)."
@@ -849,12 +849,12 @@
   sources:
     - {ref: KPMGUK-GOVAI-2026, title: "Independent confidence in how you govern AI (AI Governance Assurance)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/audit/independent-confidence-in-how-you-govern-ai.html", date: "2026-09-22", access: full, locator: "sections 'Make AI Trust Stand Up to Scrutiny', 'Regulation' and 'Differentiate in the market'; date from page metadata"}
     - {ref: K-UKCA, title: "Reimagining Controls Assurance with AI: Latest Insights for Leaders", publisher: "KPMG UK", type: firm, url: "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2026/01/reimagining-controls-assurance-with-ai.pdf.coredownload.inline.pdf", date: "2026-01", access: full, locator: "PDF p. 2 partner note ('introducing a reasonable-assurance opinion'); pp. 7-8 'Assurance of AI'"}
-    - {ref: EY-SOC, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "section 'How attestation and certification strengthen AI assurance'"}
+    - {ref: EY-SOC-2026, title: "How AI assurance builds trust with SOC, attestation and certification", publisher: "EY", type: firm, url: "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/technology-risk/documents/ey-gl-soc-reporting-attestation-conference-highlights-09-2026.pdf", date: "2026-09", access: full, locator: "section 'How attestation and certification strengthen AI assurance'"}
     - {ref: CSA-STARAI-2025, title: "Cloud Security Alliance launches STAR for AI", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/press-releases/2025/10/23/cloud-security-alliance-launches-star-for-ai-establishing-the-global-framework-for-responsible-and-auditable-artificial-intelligence", date: "2025-10-23", access: full, locator: "paragraphs 'Two foundational components'"}
     - {ref: CSA-CPAGUIDE-2026, title: "Guidelines for CPAs providing CSA STAR or STAR for AI attestation program", publisher: "Cloud Security Alliance", type: professional-body, url: "https://cloudsecurityalliance.org/artifacts/guidelines-for-cpas-providing-csa-star-or-star-for-ai-attestation-program", date: "2026-03-05", access: full, locator: "landing page description (document not downloaded)"}
     - {ref: BAKERTILLY-SOC2-2025, title: "Representing AI controls in your SOC 2 report", publisher: "Baker Tilly", type: firm, url: "https://www.bakertilly.com/insights/ai-controls-for-soc-2-reports", date: "2025-12-18", access: full, locator: "sections on risk categories and TSC mapping"}
     - {ref: CSA-SOC2, title: "The SOC 2 AI gap: auditors improvise where AICPA has not acted", publisher: "Cloud Security Alliance Labs", type: professional-body, url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-soc2-ai-controls-gap-20260830-csa-styled/", date: "2026-08-30", access: full, locator: "Key Takeaways"}
-    - {ref: IAASB-CATALOG-2026, title: "Technology Catalog of Issues and Possible Actions, Version 3", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-07/IAASB-Technology-Catalog-of-Issues-Proposed-Actions.pdf", date: "2026-07-09", access: full, locator: "p. 14, matter 10(b) AI assurance"}
+    - {ref: IAASB-CATALOG-2026, title: "Technology Catalog: Catalog of Technology-Related Matters and Preliminary Direction on Actions, Version 3", publisher: "IAASB", type: standard-setter, url: "https://ifacweb.blob.core.windows.net/publicfiles/2026-07/IAASB-Technology-Catalog-of-Issues-Proposed-Actions.pdf", date: "2026-07-09", access: full, locator: "p. 14, matter 10(b) AI assurance"}
     - {ref: JOFA-FAST, title: "Promises of 'fast and easy' threaten SOC credibility", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2026/feb/promises-of-fast-and-easy-threaten-soc-credibility/", date: "2026-02-01", access: full, locator: "opening quotes"}
     - {ref: KPMGUS-ISO-2025, title: "KPMG LLP Among First of the Big Four in the U.S. to Receive ISO 42001 AI Certification", publisher: "KPMG US", type: firm, url: "https://kpmg.com/us/en/media/news/kpmg-receives-iso-ai-certification.html", date: "2025-11-18", access: full, locator: "closing disclaimer"}
     - {ref: JOFA-EVAL, title: "A new frontier: CPAs as AI system evaluators", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/nov/a-new-frontier-cpas-as-ai-system-evaluators/", date: "2025-11-01", access: full, locator: "section 'What's an AI audit?'"}
@@ -1081,7 +1081,7 @@
     (EYJP-CERTIFYPOINT-2026). Trade coverage says PwC Canada launched an ISO/IEC 42001 certification solution on 16 Feb
     2026 and claims to be the first Big Four firm to offer accreditation services for the standard
     (CONSULTINGCA-PWC-2026). By September 2026 KPMG UK marketed an AI governance assurance product (KPMGUK-GOVAI-2026)
-    and KPMG US framed assurance over AI systems as a "new mandate" (K-SOX30).
+    and KPMG US framed assurance over AI systems as a "new mandate" (KPMG-SOX-2026).
   outcomes:
     - lever: growth
       description: "none published"
@@ -1110,7 +1110,7 @@
     - {ref: EYJP-CERTIFYPOINT-2026, title: "Services related to the AI management system standard ISO/IEC 42001:2023 (Japanese)", publisher: "EY Japan", type: firm, url: "https://www.ey.com/ja_jp/services/technology-risk/iso-iec-42001-2023", date: "2026", access: full, locator: "sections 'What EY can do' and 'Why EY'; page undated (related items run to Jun 2026)"}
     - {ref: CONSULTINGCA-PWC-2026, title: "PwC launches new AI governance certification solution", publisher: "Consulting.ca", type: press, url: "https://www.consulting.ca/news/4859/pwc-canada-launches-new-ai-governance-certification-solution", date: "2026-02-16", access: full, locator: "article body, paragraphs 1-6"}
     - {ref: KPMGUK-GOVAI-2026, title: "Independent confidence in how you govern AI (AI Governance Assurance)", publisher: "KPMG UK", type: firm, url: "https://kpmg.com/uk/en/insights/audit/independent-confidence-in-how-you-govern-ai.html", date: "2026-09-22", access: full, locator: "page overview"}
-    - {ref: K-SOX30, title: "The Future of SOX: a point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "p. 6"}
+    - {ref: KPMG-SOX-2026, title: "The Future of SOX: a point of view for 2030 and beyond", publisher: "KPMG LLP", type: firm, url: "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2026/future-sox-point-view-2030-beyond-new.pdf", date: "2026-09-24", access: full, locator: "p. 6"}
     - {ref: ICAEW-AIAC-2026, title: "AI Assurance Conference 2026 (programme and speakers)", publisher: "ICAEW", type: conference, url: "https://www.icaew.com/learning-and-development/events/ai-assurance-conference", date: "2026-07-06", access: full, locator: "speaker biographies"}
     - {ref: BSI-ANAB-2026, title: "BSI secures ANAB accreditation to certify ISO/IEC 42001", publisher: "BSI", type: vendor, url: "https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2026/march/bsi-secures-anab-accreditation-to-certify-isoiec-42001/", date: "2026-03-10", access: full, locator: "'Our Accreditation' footer"}
     - {ref: JOFA-EVAL, title: "A new frontier: CPAs as AI system evaluators", publisher: "Journal of Accountancy (AICPA)", type: professional-body, url: "https://www.journalofaccountancy.com/issues/2025/nov/a-new-frontier-cpas-as-ai-system-evaluators/", date: "2025-11-01", access: full, locator: "section 'Risk profiles in AI evaluations' ('two-in-the-box')"}
@@ -1189,7 +1189,7 @@
   sources:
     - {ref: SCHELLMAN-AIUC1-2026, title: "Schellman Becomes the First Accredited Auditor for AIUC-1, the Security Standard for AI Agents", publisher: "Schellman", type: firm, url: "https://www.schellman.com/blog/news/schellman-becomes-the-first-accredited-auditor-for-aiuc-1", date: "2026-02-03", access: full, locator: "release body, 'AIUC-1 Certification Overview' and 'About AIUC' (page updated 2026-09-29)"}
     - {ref: AIUC-KPMG-2026, title: "KPMG LLP Becomes First Big Four Firm with AIUC-1 Certified AI Capability", publisher: "AIUC", type: vendor, url: "https://aiuc.com/updates/kpmg-llp-becomes-first-big-four-firm-with-aiuc-1-certified-ai-capability", date: "2026-08-27", access: full, locator: "paragraphs 2-5"}
-    - {ref: AIUC1-SITE-2026, title: "AIUC-1 Certification (certified agents and customer quotes)", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/", date: "2026", access: full, locator: "'Certified Agents' section; page undated, retrieved 2026-10-16"}
+    - {ref: AIUC1-SITE-2026, title: "AIUC-1 Standard", publisher: "AIUC", type: vendor, url: "https://www.aiuc-1.com/", date: "2026-10", access: full, locator: "'Certified Agents' section; page undated, retrieved 2026-10-16; certified agents and customer quotes"}
     - {ref: AIUC-SERIES-A-2026, title: "Series A to build the confidence infrastructure for frontier AI", publisher: "AIUC", type: vendor, url: "https://aiuc.com/updates/series-a-announcement", date: "2026-09-15", access: full, locator: "post body"}
     - {ref: FORKAST-AIUC-2026, title: "AIUC Raises $40M to Build the Certification and Insurance Layer That Makes Agent Governance Auditable", publisher: "Forkast", type: press, url: "https://forkast.news/aiuc-raises-40m-to-build-the-certification-and-insurance-layer-that-makes-agent-governance-auditable/", date: "2026-09-16", access: full, locator: "paragraphs 4-6 and closing paragraph"}
     - {ref: FIELDGUIDE-AIUC1-2026, title: "Fieldguide becomes first AI platform for audit and advisory to achieve AIUC-1 certification", publisher: "Fieldguide", type: vendor, url: "https://www.fieldguide.io/blog/fieldguide-first-aiuc-1-certification", date: "2026-05-06", access: full, locator: "paragraphs 1-4"}
@@ -1535,7 +1535,7 @@
     results; no count of credential holders. DSIT gives the innovation fund as GBP 11 million. The ICAEW Insights
     article is dated 4 Mar 2025.
 
-# ---- Added 2026-10-21 (wave 6, mid-market): agent evaluations handed to the external auditor, developer-deployer
+# ---- Added 2026-10-21 (mid-market): agent evaluations handed to the external auditor, developer-deployer
 # scoping, and an idea for assuring AI-generated analysis ----
 
 - id: assurance-assurance-over-ai-25

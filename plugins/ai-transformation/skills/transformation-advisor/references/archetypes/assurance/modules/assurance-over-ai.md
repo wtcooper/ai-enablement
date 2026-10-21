@@ -1,6 +1,6 @@
 # Assurance over AI (assurance)
 
-Last reviewed 2026-10-21 (mid-market widening). Use cases live in `../use-cases/assurance-over-ai.yaml` (27 entries). Ids are shortened
+Last reviewed 2026-10-21 (mid-market firms added). Use cases live in `../use-cases/assurance-over-ai.yaml` (27 entries). Ids are shortened
 here: `#05` means `assurance-assurance-over-ai-05`; other modules' ids are in full. Source keys in
 brackets are listed in §11 and given in full in the YAML. **Read this first:** in most entries the AI is the *object*
 of the assurance work, not the tool doing it. No measured quality outcome exists anywhere in this module: no error
@@ -39,7 +39,7 @@ client report was found. Testing AI-performed controls inside a SOX programme is
 | **Area 1** Inventory and understand AI use | List AI use cases (including unsanctioned "shadow AI"), owners and criticality; map them to processes, assertions and key controls | research-synthesis, review-assurance | Partners cite lack of in-house AI expertise (33%) and thin model documentation (26%) at their largest client [BOARDMEMBER-CAQ-2026] |
 | Classify AI-enabled controls | Decide whether management relies on the AI output or re-performs it (COSO's "reliance" test) | review-assurance, expert-judgment | A working definition only; BDO's paraphrase differs from COSO's text [COSO-GENAI, BDO-ITGC] |
 | Scope ITGCs to AI components | Extend access, change, operations and development controls to the model, pipelines, orchestration, agents and platforms | review-assurance, software-systems | Agents approve transactions and change access; components hosted by vendors [OPTRO-SURVEY, BDO-ITGC] |
-| Choose evidence | Test AI outputs substantively, test AI-related controls, use SOC reports and representations, or test around the AI | review-assurance | Probabilistic, drifting models; no widely accepted method for black-box systems [K-SOX30] |
+| Choose evidence | Test AI outputs substantively, test AI-related controls, use SOC reports and representations, or test around the AI | review-assurance | Probabilistic, drifting models; no widely accepted method for black-box systems [KPMG-SOX-2026] |
 | Monitor and evaluate deficiencies | Drift and override metrics, remediation logs; decide severity, including material weakness | data-reporting, expert-judgment | COSO says the definition of a control failure may need to move beyond pass/fail for GenAI [COSO-GENAI] |
 | Fraud risk | Consider training-data tampering, model manipulation, fictitious documents | review-assurance | New schemes such as altered training data and fictitious documents [AT-AICPAPA-2026] |
 | Communicate | Audit committee dialogue; disclosure controls over AI statements | client-interaction | Only 56% of committee members confident in the committee's AI oversight [DELOITTE-ACPR-2026] |
@@ -159,9 +159,9 @@ shape, report types issued, access obtained and re-test findings.
   working "reliance" definition and the evidence it triggers [COSO-GENAI, DART-COSO-2026, KPMG-COSO-2026].
 - **AICPA practice aid** (13 Oct 2026; 51 pages [CFODIVE-AICPAPA-2026]): the entity's AI use, AI-operated controls,
   service organisations; the auditor cannot rely on tests of controls alone where models drift or are probabilistic; sections on
-  risk of material misstatement and audit evidence to follow [AICPA-PA, AT-AICPAPA-2026].
+  risk of material misstatement and audit evidence to follow [AICPA-PA-2026, AT-AICPAPA-2026].
 - **PCAOB**: technology-assisted-analysis amendments (AS 1105, AS 2301) include testing relevant ITGCs but are not
-  AI-specific (secondary source) [CALCPA].
+  AI-specific (secondary source) [CALCPA-AISTD-2026].
 - **IAASB**: Technology Catalog v3 (9 Jul 2026) lists AI assurance as a matter for information gathering and asks
   whether ISAE 3000 (Revised) suffices [IAASB-CATALOG-2026]. ISAE (UK) 3000 is the basis KPMG UK cites [KPMGUK-GOVAI-2026].
 - **ISO**: 42001 certifies a management system, not an AI system's performance [HUMANITIX-BABL-2026]; 42006 adds
@@ -177,7 +177,7 @@ shape, report types issued, access obtained and re-test findings.
 - Classify reliance before choosing evidence; under reliance keep the AI "bill of materials" (prompts, outputs,
   system messages, model version, parameters, plugins) [COSO-GENAI].
 - Extend existing ITGC categories to AI components and agent identities rather than inventing new ones [BDO-ITGC].
-- A review step that rubber-stamps AI output "provides no real control value" [K-SOX30]; reviewers need the knowledge
+- A review step that rubber-stamps AI output "provides no real control value" [KPMG-SOX-2026]; reviewers need the knowledge
   to judge AI reliability [AT-AICPAPA-2026].
 - Check a certifier's accreditation and scope, not just the certificate; ask for insurance policy terms behind
   insured badges [CASRAI-42006-2026, CSA-AIASSURE-2026].
@@ -192,8 +192,8 @@ accreditation decisions.
 ## 7. Roles and how they evolve
 
 - **IT auditors** must be as comfortable in a configuration log as in a ledger and scope ITGCs component by component
-  [K-SOX30, BDO-ITGC].
-- **Audit teams** need a blend of audit, AI and data skills, skepticism and specialist support [AICPA-PA]; EY describes
+  [KPMG-SOX-2026, BDO-ITGC].
+- **Audit teams** need a blend of audit, AI and data skills, skepticism and specialist support [AICPA-PA-2026]; EY describes
   a "two-in-the-box" AI auditor and IT professional [JOFA-EVAL].
 - **Internal audit** faces an "AI credibility gap", in Richard Chambers' phrase [OPTRO-FOF-2025]; the IIA says
   auditors need not be experts on every topic and may use outside technical resources [IIA-AIFRAMEWORK-2024].
@@ -224,19 +224,19 @@ accreditation decisions.
 - **2026-06-30** AIUC-1 trustmark on the STAR Registry [CSA-STAR-AIUC1-2026].
 - **2026-07** AI Omnibus adopted and published (dates differ by source) [AG-OMNIBUS-2026, SIG-AIACT-2026]; IAASB adds AI assurance to its Technology Catalog [IAASB-CATALOG-2026].
 - **2026-08-27** KPMG aIQ Capture is the first Big Four AIUC-1 certification [AIUC-KPMG-2026].
-- **2026-09-22 / 24** KPMG UK markets AI governance assurance [KPMGUK-GOVAI-2026]; KPMG US sees a "new mandate" to assure AI systems [K-SOX30].
+- **2026-09-22 / 24** KPMG UK markets AI governance assurance [KPMGUK-GOVAI-2026]; KPMG US sees a "new mandate" to assure AI systems [KPMG-SOX-2026].
 - **2026-09-24** AIUC publishes the MSCI case (`#25`) [AIUC-MSCI-2026].
 - **2026-09-28** UK consortium working on code of ethics, skills framework, information-access map [TECHUK-ROADMAP-2026].
-- **2026-10-13** AICPA practice aid; more sections promised [AICPA-PA]. **2026-10-15** AIUC developer-deployer guidance [AIUC-Q4-2026]. **2026-10-19** AICPA and AIUC joint SOC 2 plus AIUC-1 offering (`assurance-soc-attestation-17`).
-- **End 2026 at the earliest** harmonised AI Act standards [DQS-OMNIBUS-2026]. **2027** first AI-related material weaknesses expected (KPMG forecast) [K-SOX30]. **2027-12-02 / 2028-08-02** EU high-risk obligations apply [AG-OMNIBUS-2026].
+- **2026-10-13** AICPA practice aid; more sections promised [AICPA-PA-2026]. **2026-10-15** AIUC developer-deployer guidance [AIUC-Q4-2026]. **2026-10-19** AICPA and AIUC joint SOC 2 plus AIUC-1 offering (`assurance-soc-attestation-17`).
+- **End 2026 at the earliest** harmonised AI Act standards [DQS-OMNIBUS-2026]. **2027** first AI-related material weaknesses expected (KPMG forecast) [KPMG-SOX-2026]. **2027-12-02 / 2028-08-02** EU high-risk obligations apply [AG-OMNIBUS-2026].
 
 ## 9. Common objections
 
-- **"Our auditor tests around the AI, so this doesn't apply yet."** KPMG says weaknesses have been avoided so far partly because programmes still test around the AI, expects working AI into the control environment to become unavoidable, and forecasts the first wave in 2027 [K-SOX30]. Start with `#01` and `#02`; they cost little.
+- **"Our auditor tests around the AI, so this doesn't apply yet."** KPMG says weaknesses have been avoided so far partly because programmes still test around the AI, expects working AI into the control environment to become unavoidable, and forecasts the first wave in 2027 [KPMG-SOX-2026]. Start with `#01` and `#02`; they cost little.
 - **"There are no standards, so AI assurance is meaningless."** Partly fair: no AI-specific Trust Services Criteria [CSA-SOC2] and the IAASB is still gathering information [IAASB-CATALOG-2026]. But ISO 42001 with accredited certifiers and ISAE 3000 engagements exist; state the criteria and report type (`#12`).
 - **"An ISO 42001 certificate proves the AI works."** No. It certifies a management system [HUMANITIX-BABL-2026]. Pair it with technical testing (`#19`, `#20`) and check the certifier's accreditation (`#16`, `#23`).
 - **"The EU AI Act will force everyone to buy third-party assurance."** Most Annex III categories use internal control [EU-AIACT-ART43-2024] and dates moved to Dec 2027 and Aug 2028 [AG-OMNIBUS-2026]. Today's pull is procurement, investors and insurers [KPMGUK-GOVAI-2026, TECHUK-ROADMAP-2026].
-- **"A person approves every AI output, so the control works."** Rubber-stamp review adds no control value [K-SOX30]; the reviewer must be able to judge AI reliability [AT-AICPAPA-2026].
+- **"A person approves every AI output, so the control works."** Rubber-stamp review adds no control value [KPMG-SOX-2026]; the reviewer must be able to judge AI reliability [AT-AICPAPA-2026].
 - **"We can't get access to the model."** Common [JOFA-EVAL, GROVES-2024, SCHELLMAN-AT-2024]. Test outputs, use SOC reports and representations (`#03`, `#07`); the UK consortium is mapping access rules (`#24`).
 - **"Insurance-backed certification removes the risk."** Test counts measure activity, and payout behaviour in a systemic failure is unknown [FORKAST-AIUC-2026]; ask for policy terms [CSA-AIASSURE-2026].
 - **"Our firm can do the readiness work, the certificate and the audit."** Impartiality rules and auditor independence limit that [BSI-ANAB-2026, KPMGUS-ISO-2025, CONSULTANCY-BIG4-2025].
@@ -247,7 +247,7 @@ accreditation decisions.
 ## 10. Mid-market firms
 
 This section covers auditors of private, mid-market companies and the regional firms that might sell AI assurance.
-- **Area 1 is the near-term work.** The practice aid's first part (nonauthoritative) guides financial-statement auditors, including those of private companies, to understand the client's AI in reporting and controls, consider it at acceptance and continuance, assess AI-specific risks (data, model, hallucination, explainability, bias, drift, AI-enabled fraud) and respond by testing outputs, AI controls or AI-related IT controls, with a service auditor's report and AI-related representations when AI is bought [AICPA-PA, AT-AICPAPA-2026] (`#01`-`#08`). The ASB sets private-company audit standards and peer review monitors compliance [CFODIVE-AICPAPA-2026]; no ASB AI standard was found.
+- **Area 1 is the near-term work.** The practice aid's first part (nonauthoritative) guides financial-statement auditors, including those of private companies, to understand the client's AI in reporting and controls, consider it at acceptance and continuance, assess AI-specific risks (data, model, hallucination, explainability, bias, drift, AI-enabled fraud) and respond by testing outputs, AI controls or AI-related IT controls, with a service auditor's report and AI-related representations when AI is bought [AICPA-PA-2026, AT-AICPAPA-2026] (`#01`-`#08`). The ASB sets private-company audit standards and peer review monitors compliance [CFODIVE-AICPAPA-2026]; no ASB AI standard was found.
 - **Evidence arrives from outside.** Clients may hand their auditor a third-party agent evaluation (`#25`, larger-company example) or an AIUC-1 report; the developer-deployer matrix shows what a deploying client must evidence itself (`#26`).
 - **Area 2 at regional firms.** No mid-market CPA firm is named delivering the joint SOC 2 plus AIUC-1 offering (`assurance-soc-attestation-17`); one regional firm's job posting pairs ISO 42001 advisory with SOC work (`assurance-soc-attestation-18`).
 - **Probes:** "On your last private-company audit where the client used AI in close or controls, what did you do at acceptance and risk assessment, and what did you ask for beyond a SOC report?" "How would you decide whether to test an AI-operated control's outputs or the control itself, and who reviews that choice?"
@@ -258,11 +258,11 @@ Full details (title, publisher, type, URL, date, access, locator) are in the YAM
 keep that file's keys.
 - **Standard-setters and regulators:** COSO-GENAI (COSO, 2026-02-23); IAASB-CATALOG-2026; EVS-42006-2025;
   DSIT-ROADMAP-2025; DSIT-ASSURANCE-2024; EU-AIACT-ART43-2024; EC-AISTANDARDS-2025.
-- **Professional bodies:** AICPA-PA (2026-10-13); JOFA-EVAL; JOFA-FAST; IIA-AIFRAMEWORK-2024; ISACA-AAIA-2026;
-  ICAEW-ROADMAP-2025; ICAEW-AIASSURE-2025; CALCPA; CSA-SOC2; CSA-AIASSURE-2026; CSA-STARAI-2025; CSA-CPAGUIDE-2026;
+- **Professional bodies:** AICPA-PA-2026 (2026-10-13); JOFA-EVAL; JOFA-FAST; IIA-AIFRAMEWORK-2024; ISACA-AAIA-2026;
+  ICAEW-ROADMAP-2025; ICAEW-AIASSURE-2025; CALCPA-AISTD-2026; CSA-SOC2; CSA-AIASSURE-2026; CSA-STARAI-2025; CSA-CPAGUIDE-2026;
   CSA-STAR-AIUC1-2026; ACCA-EY-2025.
-- **Firms:** K-SOX30, K-404A, K-UKCA, KPMG-COSO-2026, KPMG-ACAGENDA-2025, KPMGUK-GOVAI-2026, KPMGUS-ISO-2025,
-  KPMGINTL-ISO-2025, KPMGNL-AI-2025; DART-COSO-2026, DELOITTE-42001-2025, DELOITTE-AIA-UK-2026; EY-SOC, EY-CANVAS-2026,
+- **Firms:** KPMG-SOX-2026, K-404A, K-UKCA, KPMG-COSO-2026, KPMG-ACAGENDA-2025, KPMGUK-GOVAI-2026, KPMGUS-ISO-2025,
+  KPMGINTL-ISO-2025, KPMGNL-AI-2025; DART-COSO-2026, DELOITTE-42001-2025, DELOITTE-AIA-UK-2026; EY-SOC-2026, EY-CANVAS-2026,
   EY-AIASSESS-2025, EY-COSO-2026, EYJP-CERTIFYPOINT-2026, EYIT-CERT-2025, EYIT-CERT-2026; BDO-ITGC; UNIQUS-GENAI-2026;
   EISNER-COSO-2026; BAKERTILLY-IA-2026; BAKERTILLY-SOC2-2025; SCHELLMAN-AIUC1-2026.
 - **Vendors:** BSI-ANAB-2026, BSI-UMONY-2026, BSI-ACCELLEO-2026, SGS-PWCTW-2026, BRIGHT-42006-2026, AIUC-KPMG-2026,

@@ -145,7 +145,7 @@ Ask tax partners, research or national-office leads, in-house tax directors and 
   CoCounsel users [CPAPA-TR-2026].
 
 **Quality (independent unless stated)**
-- Vals Tax Agent Bench (updated 2026-10-16): best model 49.19% fully correct and citation-adjusted on 193 private
+- Vals Tax Agent Bench (page of 2026-10-20): best model 49.19% fully correct and citation-adjusted on 193 private
   corporate tax research questions; best by category: rule and source lookup 66.67%, current and temporal 66.67%, forms
   and filings 40.00%, controversy and precedence 36.67% [VALS-TAXAGENT-2026]. Simple tax Q&A no longer separates models:
   Vals archived TaxEval v2 as saturated, with a top score of 80.38% [VALS-TAXEVAL-2026].
@@ -220,7 +220,7 @@ doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2
 - **2025-11-05** CoCounsel in use at 1,300+ firms (company claim) [TR-COCOUNSEL-2025]. **2025-11-25** EY Tax Agent Factory (#24).
 - **2026-01** PCRT guidance (19th), HMRC software guidelines (28th); ICAS summarises UK tribunal AI cases including *Elden* (26th) [ICAS-TAXTRIB-2026].
 - **2026-03-09** Bloomberg Tax Deep Thinking Mode (#02). **2026-03-20** Tax Court "feeling our way in the dark" [BLAW-TAXCT-2026].
-- **2026-03-26** Werfel presents his framework at Duke [TAXPROF-WERFEL-2026]. **2026-05-01** TR: "reason-and-act" research (#02).
+- **2026-03-26** Werfel presents his framework at Duke [DUKE-WERFEL-2026]. **2026-05-01** TR: "reason-and-act" research (#02).
 - **2026-05-20** KPMG and Anthropic Digital Gateway, initial focus on tax clients and private equity firms (#23, #24). **2026-06-24** OPR Alert 2026-19.
 - **2026-07-22** TPB guidance. **2026-08-31** Werfel framework published. **2026-09-08** AICPA asks IRS to clarify fees.
 - **2026-09-23** CART launched [AICPA-CART-2026]. **2026-10-16** Vals Tax Agent Bench update, best model below 50% (#03).
@@ -256,7 +256,7 @@ doctrines; the fee basis; what is said live to a client [IRS-OPR-2026; PCRT-AI-2
 Added 2026-10-21. Entity choice and owner planning for private, owner-managed clients sit here; owner return work (reasonable compensation, basis, estimates) is in compliance-individual-business, and state PTET modelling is `tax-multistate-private-14`.
 - **Demand and price.** In Thomson Reuters' 2026 survey (600 respondents; vendor-owned; "midsize" means 4 to 29 professionals), 74% say clients strongly want more financial advice, yet advisory margins are 20-24% against 28% for individual return preparation and 78% primarily bill hourly; 28% plan to start offering tax strategy within 12 months and 37% are considering it; among firms that reallocated tasks, 39% named freeing professionals for advisory work as the primary driver [TR-SOTP-2026] (`#25`, `#27`).
 - **Planning tools are rare.** 93% of AICPA survey respondents use no tool to review returns for planning opportunities, and 2% use Holistiplan; of the 20% expanding services, 75% chose tax advisory and 42% estate, trust and gift planning [AICPA-TAXSW-2026].
-- **What this pass added.** Owner-facing S-election calculators from Gelt, an AI-native firm, and agent-built S corporation plans from Instead (`#26`); planning mined from filed returns with Intuit Tax Advisor, CCH Axcess Advisor and Filed (`#27`); owner-exit and relocation research drafted for the client within two hours at One Stop CPA, a seven-person digital firm (the firm's own account in the Journal of Accountancy, merged into `#14`) [JOFA-SMALLFIRMS-2026]; Wealth.com's estate-document engine for wealth-management firms (merged into `#13`); informed consent for AI in estate planning (`#28`, idea). The firm-side S-election project with a named shareholder's estimate stays `#09` (Finney Neill, 17 employees).
+- **Mid-market use cases.** Owner-facing S-election calculators from Gelt, an AI-native firm, and agent-built S corporation plans from Instead (`#26`); planning mined from filed returns with Intuit Tax Advisor, CCH Axcess Advisor and Filed (`#27`); owner-exit and relocation research drafted for the client within two hours at One Stop CPA, a seven-person digital firm (the firm's own account in the Journal of Accountancy, merged into `#14`) [JOFA-SMALLFIRMS-2026]; Wealth.com's estate-document engine for wealth-management firms (merged into `#13`); informed consent for AI in estate planning (`#28`, idea). The firm-side S-election project with a named shareholder's estimate stays `#09` (Finney Neill, 17 employees).
 - **Small-firm signal.** A Thomson Reuters case study credits its tools with letting junior staff at Sam Brown CPA, a small Ohio firm, run advisory analyses (vendor-published) [TR-SAMBROWN-2026].
 - **Evidence.** No named mid-market firm uses AI for entity choice, PTET or estate planning in the sources. The new entries are grade C or an idea; the merged One Stop account is the only named firm example (B, self-reported).
 - **Guardrails.** Written advice must meet Circular 230 section 10.37 [IRS-OPR-2026]; ACTEC Fellows say the ABA and many local bars require informed consent to AI use (the speaker's statement; ABA text not read) [ACTEC-AIVIDEO-2026]; whether sending return data to AI needs section 7216 consent is open [CPAPA-SETTLE-2026].
@@ -274,7 +274,7 @@ Full details for entry sources are in the YAML. Keys cited here that are not in 
   Compliance Obligations*, 2026-08-04, https://natlawreview.com/article/irs-office-professional-responsibility-opr-issues-ai-guidance-tax-professionals
 - ACCTODAY-CART-2026: Accounting Today, *Former IRS commissioner teams with AICPA to form AI tax risk group*, 2026-10-08,
   https://www.accountingtoday.com/news/former-irs-commissioner-teams-with-aicpa-to-form-ai-tax-risk-group
-- TAXPROF-WERFEL-2026: TaxProf Blog, *Werfel Presents Risk Framework ... at Duke*, 2026-03-26, https://taxprofblog.aals.org/2026/03/26/werfel-presents-risk-framework-for-the-use-of-artificial-intelligence-in-tax-administration-and-practice-today-at-duke/
+- DUKE-WERFEL-2026: TaxProf Blog, *Werfel Presents Risk Framework ... at Duke*, 2026-03-26, https://taxprofblog.aals.org/2026/03/26/werfel-presents-risk-framework-for-the-use-of-artificial-intelligence-in-tax-administration-and-practice-today-at-duke/
 - BLUEJ-SERIESD-2025: Blue J, *Blue J Announces $122M Series D Financing*, 2025-08-04, https://www.bluej.com/blog/blue-j-announces-122m-series-d-financing-led-by-oak-hc-ft-and-sapphire-ventures
 - ACCORDANCE-RAISE-2025: Accordance, *Accordance Raises $13M from Khosla Ventures and General Catalyst*, 2025-09-08, https://www.accordance.com/press/accordance-raises-13m-from-khosla-ventures-and-general-catalyst
 - TR-COCOUNSEL-2025: Thomson Reuters, *Thomson Reuters Launches Agentic AI Solutions to Transform Tax, Audit and

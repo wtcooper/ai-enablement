@@ -432,7 +432,7 @@
     - "Auditor understanding of the entity's AI use in the risk-assessment phase [AT-AICPAPA-2026]"
     - "Access to the AI application's logic, data and assumptions, or suitable alternative procedures [AUASB-AI-2025]"
   risks_and_guardrails:
-    - "The AICPA describes the practice aid as nonauthoritative guidance [AICPA-GUIDE-2026], and further guidance on risk of material misstatement and audit evidence is promised [AICPA-PA-2026]"
+    - "The AICPA describes the practice aid as nonauthoritative guidance [AICPA-AIPAID-2026], and further guidance on risk of material misstatement and audit evidence is promised [AICPA-PA-2026]"
     - "The AUASB says auditors should not over-rely on technology-generated information (automation bias) [AUASB-AI-2025]"
   human_checkpoints:
     - "Auditor remains responsible for the audit and the opinion [AICPA-PA-2026]"
@@ -442,10 +442,10 @@
   evidence_grade: D
   sources:
     - { ref: AT-AICPAPA-2026, title: "AICPA releases practice guide for auditors dealing with AI", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/aicpa-releases-practice-guide-for-auditors-dealing-with-ai", date: "2026-10-14", access: full, locator: "acceptance and continuance section; quotation on external specialists and complex valuation models" }
-    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section one bullets; paragraph on future guidance; Jennifer Burns quotation" }
-    - { ref: AICPA-GUIDE-2026, title: "Explore new AICPA guidance on artificial intelligence (AI) and the financial statement audit", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit", date: "2026-10-12", access: full, locator: "opening sentence (practice aid 'offers timely, nonauthoritative guidance'); full aid behind member login" }
-    - { ref: AUASB-AI-2025, title: "Impact of AI on Auditors", publisher: "AUASB", type: standard-setter, url: "https://auasb.gov.au/publications/impact-of-ai-on-auditors/", date: "2025-07", access: full, locator: "'Issued July 2025'; section on audited entities' use of AI" }
-    - { ref: BOARDMEMBER-CAQ-2026, title: "What Audit Partners Are Seeing On AI And What It Means For Audit Committees", publisher: "Corporate Board Member (CAQ author)", type: survey, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "items 1 and 3 (Spring 2026 Audit Partner Pulse)" }
+    - { ref: AICPA-PA-2026, title: "AICPA Releases Guidance to Help Auditors Address the Use of AI in Financial Reporting and Auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "section one bullets; paragraph on future guidance; Jennifer Burns quotation" }
+    - { ref: AICPA-AIPAID-2026, title: "Explore new AICPA guidance on artificial intelligence (AI) and the financial statement audit", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/resources/article/explore-new-aicpa-guidance-on-artificial-intelligence-ai-and-the-financial-statement-audit", date: "2026-10-12", access: full, locator: "opening sentence (practice aid 'offers timely, nonauthoritative guidance'); full aid behind member login" }
+    - { ref: AUASB-AI-2025, title: "Impact of AI on Auditors", publisher: "AUASB", type: standard-setter, url: "https://www.auasb.gov.au/publications/impact-of-ai-on-auditors/", date: "2025-07", access: full, locator: "'Issued July 2025'; section on audited entities' use of AI" }
+    - { ref: BOARDMEMBER-CAQ-2026, title: "What audit partners are seeing on AI and what it means for audit committees", publisher: "Corporate Board Member (CAQ author)", type: press, url: "https://boardmember.com/?p=50023", date: "2026-07-15", access: full, locator: "items 1 and 3 (Spring 2026 Audit Partner Pulse)" }
   last_reviewed: "2026-10-17"
   notes: >-
     Idea (label: idea) as applied to the specialist toolbox: the guidance exists, but no source documents auditors
@@ -637,7 +637,7 @@
     [DELOITTE-UKTR-2025, Appendix 7].
   evidence_grade: B
   sources:
-    - { ref: DELOITTE-UKTR-2025, title: "Deloitte UK annual review 2025: Audit transparency report (year ended 31 May 2025)", publisher: "Deloitte LLP (UK)", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2025/deloitte-uk-annual-review-2025-audit-transparency-report-accessible.pdf", date: "2025-11", access: full, locator: "Appendix 7 'Deloitte digital audit', PDF p. 111 (case study 'Automation in audits of consumer businesses'); quality overview PDF pp. 21-22; Appendix 5, PDF p. 102 (Impairment Centre of Excellence)" }
+    - { ref: DELOITTE-UKTR-2025, title: "2025 Transparency Report (Deloitte LLP and Deloitte Limited)", publisher: "Deloitte LLP (UK)", type: firm, url: "https://www.deloitte.com/content/dam/assets-zone2/uk/en/docs/about/2025/deloitte-uk-annual-review-2025-audit-transparency-report-accessible.pdf", date: "2025-11", access: full, locator: "Appendix 7 'Deloitte digital audit', PDF p. 111 (case study 'Automation in audits of consumer businesses'); quality overview PDF pp. 21-22; Appendix 5, PDF p. 102 (Impairment Centre of Excellence); year ended 31 May 2025" }
   last_reviewed: "2026-10-17"
   notes: >-
     Grade B: a named firm describes a deployed tool on its audits, with a self-reported, unquantified result. It

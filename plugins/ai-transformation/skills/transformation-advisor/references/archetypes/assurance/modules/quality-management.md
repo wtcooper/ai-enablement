@@ -1,6 +1,6 @@
 # Quality management (assurance)
 
-Last reviewed 2026-10-21 (mid-market widening; earlier sources checked 2026-10-17). Use cases live in
+Last reviewed 2026-10-21 (mid-market firms added; earlier sources checked 2026-10-17). Use cases live in
 `../use-cases/quality-management.yaml` (28 entries). Ids are shortened here: `#07` means `assurance-quality-management-07`;
 other modules' ids are in full. Source keys in brackets, such as [FRC-GENAI-2026], are in the YAML or in §11.
 **No outcome in this module is measured.** No firm or regulator has published an error rate, override rate or
@@ -167,7 +167,7 @@ recertification; share of files with a complete AI-use record; tool-related inte
 
 **Standards and regulators (none of these bodies prohibits AI or has issued AI-specific QM requirements)**
 - **Accountability does not move.** The FRC says people (firms and Responsible Individuals) are accountable for
-  audit quality [FRC-GENAINEWS-2026]; NFRA staff say technology-generated information has no lower evidentiary bar [NFRA-STAFF-2026].
+  audit quality [FRC-NEWS-2026]; NFRA staff say technology-generated information has no lower evidentiary bar [NFRA-STAFF-2026].
 - **ISQM 1 is the route.** Tools must be appropriately obtained or developed, implemented, maintained and used
   [AUASB-AI-2025, CPAB-AI-2024]; the firm keeps responsibility for approval and monitoring even when the network
   builds the tool [IAASB-TQMPLAN-2026]. IAASB roundtable participants judged ISQM 1 and ISA 220 (Revised) a sound
@@ -239,11 +239,11 @@ control point; accepting or rejecting AI output; evaluating evidence sufficiency
 - **"We have a human in the loop."** CPAB says stating it is not enough; KPMG says rubber-stamp approval has "no real control value" [KPMG-SOX-2026]. Specify control points (`#18`) and what reviewers check (`#19`, `#20`).
 - **"Review will eat the savings."** No data either way; PwC calls year-one savings modest. The FRC lets the extent of review follow residual risk. Measure review time and override rates rather than assume.
 - **"We are too small for this."** The IAASB promises proportionate guides; Botic asks small firms whether a tool meets a real need and can be governed, not whether to adopt everything. Start with granular, checkable tasks (`#06`); the FRC sandbox is open to firms of any size. US firms: the SQMS 1 risk assessment is the place (`#26`).
-- **"Regulators will penalise AI use."** No regulator prohibits it; the FRC says its guidance is not a response to deficiencies [FRC-GENAINEWS-2026]. Inspectors do say AI adoption is a focus, so keep an inspection-ready file (`#13`, `#23`).
+- **"Regulators will penalise AI use."** No regulator prohibits it; the FRC says its guidance is not a response to deficiencies [FRC-NEWS-2026]. Inspectors do say AI adoption is a focus, so keep an inspection-ready file (`#13`, `#23`).
 - **"Documenting AI will bury us."** The FRC keeps tool design in a central record and asks for proportion; where every output of a research tool is checked back to cited sources, less tool documentation may be appropriate [FRC-AIAUDIT-2025]. A CalCPA author says a bare note that AI was used would not meet AU-C 230 [CALCPA-AISTD-2026].
 - **"Let AI check the AI."** The AICPA allows it but review duties stay; a practitioner warns of a closed system where errors become hard to detect (`#22`). Use it to direct human attention, not replace it.
 - **"Fewer file reviews means less scrutiny."** Botic is wary of cuts; the SEC's chief accountant said a QC-focused inspection model may be tougher on firms [CAQ-HOHLWEBINAR-2026].
-- **"Failures are hypothetical."** A public review failure at a Big Four firm sits outside audit: Deloitte Australia partly refunded a government report with apparent AI-generated errors, including a fabricated court quote; the revised report disclosed GenAI use, and Deloitte did not say whether AI caused them [BNN-AP-DELOITTE-2025].
+- **"Failures are hypothetical."** A public review failure at a Big Four firm sits outside audit: Deloitte Australia partly refunded a government report with apparent AI-generated errors, including a fabricated court quote; the revised report disclosed GenAI use, and Deloitte did not say whether AI caused them [BNN-DELOITTEAU-2025].
 - **"PE gives us money for AI."** The PCAOB says the same capital can squeeze staffing and independence; a former PCAOB member says the APS rules as drafted could favour large incumbents that build AI in-house over firms that license it (`#28`) [AT-PCAOBPE-2025, AT-PEEC-2026].
 
 ## 10. Mid-market firms
@@ -253,7 +253,7 @@ the inspector, the evidence base, the tools and the ownership. Each example name
 measured quality outcome.
 - **Peer review is the inspector, on a 2026 clock.** SQMS No. 1 systems were due by 15 Dec 2025; the first evaluation is due within one year of implementation or by 15 Dec 2026; the first peer reviews under the new standards were expected to begin in 2026, and reviewers may interview the managing partner [JOFA-QMRES-2025, JOFA-QMPR-2024]. Yellow Book firms run the same dates [GAO-YBFAQ-2025]. The AICPA practice aid (13 Oct 2026, nonauthoritative, member-only) adds a part on firms' quality-management policies for AI tools, after the Dec 2025 design deadline [AICPA-PA-2026, AICPA-AIPAID-2026] (`#26`).
 - **No AI peer-review finding is public.** None appears in Tennessee's 2025 report (424 firms; 40 of 46 system reviews passed; 34 of 448 engagements nonconforming; top system-review deficiency reason engagement performance, 6 of 16) [TSCPA-PEERREVIEW-2025], in six Reviewer Alert tables of contents (one Oct 2025 article covers AICPA technology Q&As) [AICPA-REVALERT-2026] or on the Aug 2026 Peer Review Conference listing [AICPA-PEERCONF-2026]. Nearest signal: reviewers of SOC 2 practices look at reliance on third-party platforms (`#13`). Checklists are member-only [AICPA-QMPR-2026], so absence holds for public text only.
-- **Readiness is low.** In a non-representative survey of 54 US firms, 75% had no documented transformation plan and nearly a quarter used no AI or advanced automation [CPACOM-ATR-2025]. At one UK mid-tier firm (Beever and Struthers), 72% of surveyed staff feared incorrect GenAI output, 74% said it sped certain tasks and 22% saw a marked rise in output [ICAS-AMBS-2026].
+- **Readiness is low.** In a non-representative survey of 54 US firms, 75% had no documented transformation plan and nearly a quarter used no AI or advanced automation [CPACOM-ATR-2025]. At one UK mid-tier firm (Beever and Struthers), 72% of surveyed staff feared incorrect GenAI output, 74% said it sped certain tasks and 22% saw a marked rise in output [ICAS-AMBS-2025].
 - **Tools arrive with methodology.** Regional firms standardise on one AI-enabled suite (Citrin Cooperman, PE-backed; PKF O'Connor Davies, regional) (`#16`); AI-driven SQMS tooling is announced but not a given (`#14`); firm-built agents come through vendor programmes or need a change gate (`#27`); a research assistant pilot ran at Plante Moran (`#12`).
 - **Ownership is moving.** Crowe (No. 12) and Eide Bailly (No. 18) were reported taking PE money partly to invest in AI [CFOBREW-PE-2026]; a PCAOB official was reported counting 90+ significant PE-related deals since 2020 and saying inspectors will focus on quality control at firms after PE or APS changes [AT-PCAOBPE-2025]; PEEC may re-expose its APS independence rules in late 2026 and adopt them in 2027 [AT-PEEC-2026] (`#28`). No study measures the quality effect.
 - **Probes (managing partner or quality leader):** "Where do AI tools appear in your SQMS 1 risk assessment, who owns each response, and what will your 15 Dec 2026 evaluation say?" "If your peer reviewer asked which AI tools staff used on which engagements last year, what could you show?" "What do your people build with AI (macros, dashboards, agents), and what review do those go through?" "Which tools come from software you already buy or from an investor's portfolio?"
@@ -261,18 +261,18 @@ measured quality outcome.
 ## 11. Sources
 
 Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
-- **Regulators and standard-setters (in the YAML):** FRC-GENAI-2026, FRC-GENAINEWS-2026, FRC-ATT-2025, FRC-AIAUDIT-2025, FRC-SANDBOX-2026,
+- **Regulators and standard-setters (in the YAML):** FRC-GENAI-2026, FRC-NEWS-2026, FRC-ATT-2025, FRC-AIAUDIT-2025, FRC-SANDBOX-2026,
   FRC-SANDBOXPAGE-2026, FRC-SUPERVISION-2026, IFIAR-TTF-2025, IFIAR-TTF-2026, IFIAR-SURVEY-2026, IAASB-TQMPLAN-2026, IAASB-TQM-2026,
   CPAB-AI-2024, CPAB-EVOLVING-2025, AFM-12BB-2025, AFM-2025, NFRA-STAFF-2026, IRBA-SPA11-2025, PCAOB-GENAI-2024, PCAOB-PRIORITIES-2024,
   PCAOB-BOTICSF-2026, PCAOB-BOTICIOWA-2026, PCAOB-LOGOQC-2026, AICPA-PA-2026, AICPA-AIPAID-2026, AICPA-REVALERT-2026, AUASB-AI-2025, GAO-YBFAQ-2025.
 - **Firms, press, professional bodies (in the YAML):** DELOITTE-UKTR-2025, DELOITTE-UKTR-2026, DELOITTE-OMNIA-2026, KPMG-TR-2025, KPMG-SOX-2026,
-  KPMG-HOHL-2026, AT-KPMGISO-2025, RSM-ASKLUCA-2026, CPAPA-LUCA-2026, CAQ-RSM-2026, CFODIVE-PWC-2026, PWC-AT-2025, BI-PWC-2025, EY-CANVAS-2026,
-  BAKERTILLY-GAM-2026, FOLEY-PCAOB-2026, DART-SECPCAOB-2025, STARLING-IMC-2026, AT-AICPAPA-2026, JOFA-AIPA-2026, JOFA-5IMP-2026, CALCPA-AISTD-2026,
+  KPMG-HOHL-2026, AT-KPMGISO-2025, RSM-ASKLUCA-2026, CPAPA-ASKLUCA-2026, CAQ-RSM-2026, CFODIVE-PWC-2026, PWC-AT-2025, BI-PWC-2025, CPAPA-EY,
+  BAKERTILLY-IA-2026, FOLEY-PCAOB-2026, DART-SECPCAOB-2025, STARLING-IMC-2026, AT-AICPAPA-2026, JOFA-AIPA-2026, JOFA-5IMP-2026, CALCPA-AISTD-2026,
   ICAEW-FRCVIEW-2026, ICAEW-POD-2025, ICAEW-EXPECT-2026, ICAS-SANDBOX-2026, NYSSCPA-BOTIC-2025, CAALLEY-PCAOBPE-2025, RSM-SECPCAOB-2025, NYENRODE-2026,
-  CPAPRACTICE-RSMANDERA-2026, BOARDAGENDA-FRC-2026; JOFA-QMRES-2025, JOFA-QMPR-2024, JOFA-PRB, JOFA-CHECKLIST-2026, JOFA-ETHAI-2026, JOFA-PEEC-2026,
+  ANDERA-RSM-2026, BOARDAGENDA-FRC-2026; JOFA-QMRES-2025, JOFA-QMPR-2024, JOFA-PEER-2026, JOFA-CHECKLIST-2026, JOFA-ETHAI-2026, JOFA-PEEC-2026,
   JOFA-PEED-2025, GAQC-DEV-2026, IFAC-PE-2026, CFODIVE-AICPAPA-2026, CFOBREW-PE-2026, AT-PCAOBPE-2025, AT-PEEC-2026, OATH-2026.
 - **Vendors, surveys, academic, podcasts (in the YAML):** FIELDGUIDE-PCAOB-2026, FIELDGUIDE-SANVILLE-2026, TRI-FOP-2026, CPACOM-ATR-2025,
-  PREPRINT-AIJGDI-2026, PETERS-2022, HOLMSTROM-2024, COMMERFORD-2022, FEDYK-2022, ARXIV-FAB-2026, FABIAN-2026, KOSMYNA-2025, PODWISE-ACCTPOD-2026;
+  PREPRINT-AIJGDI-2026, PETERS-2022, HOLMSTROM-2024, COMMERFORD-2022, FEDYK-2022, ARXIV-FAB-2026, HAMBURG-FABIAN-2026, KOSMYNA-2025, PODWISE-ACCTPOD-2026;
   AUDITFILE-QL-2025, CPACOM-QMCORE-2026, CASEWARE-CITRIN-2026, CASEWARE-PKF-2026, CASEWARE-PIONEER-2026, TR-PLANTEMORAN-2025, BORYSOFF-PE-2024.
 - **Not in the YAML (cited in this file only; all opened unless noted):**
   - PCAOB-QCREL-2026: PCAOB, *PCAOB Adopts Amendments to Its Quality Control Standard* (news release), 2026-09-09, https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-adopts-amendments-to-its-quality-control-standard
@@ -284,8 +284,8 @@ Full details (title, publisher, type, URL, date, access, locator) are in the YAM
   - IAASB-MINJUN-2026: IAASB, approved minutes of the June 2026 meeting (Agenda Item 7), 2026-06, https://www.iaasb.org/_flysystem/azure-private/2026-09/Approved-Minutes-of-the-Public-Session-for-June-2026.pdf
   - CAQ-INSIDER-2026: CAQ, *Audit Insider, July/August 2026*, 2026-09-01, https://www.thecaq.org/audit-insider-july-august-2026
   - CAQ-HOHLWEBINAR-2026: CAQ, *Conversation with SEC Leaders: 5 Takeaways*, 2026-07-23, https://www.thecaq.org/aia-conversation-with-sec-leaders-5-takeaways
-  - BNN-AP-DELOITTE-2025: Associated Press via BNN Bloomberg, *Deloitte to partially refund Australian government for report with apparent AI-generated errors*, 2025-10-07, https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/10/07/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/
+  - BNN-DELOITTEAU-2025: Associated Press via BNN Bloomberg, *Deloitte to partially refund Australian government for report with apparent AI-generated errors*, 2025-10-07, https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/10/07/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/
   - TSCPA-PEERREVIEW-2025: Tennessee Society of CPAs, *Annual Report on Peer Review Activities (2025)*, 2026-03-31, section II.2.a-c, https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf
   - AICPA-PEERCONF-2026: AICPA & CIMA, *AICPA Peer Review Conference* (event page; no AI session listed), 2026-08-10, https://www.aicpa-cima.com/cpe-learning/conference/aicpa-peer-review-conference
   - AICPA-QMPR-2026: AICPA & CIMA, *New QM Peer Review Checklists: What Firms Need to Know* (member-only; teaser read), 2026-08-14, https://www.aicpa-cima.com/resources/article/new-qm-peer-review-checklists-what-firms-need-to-know
-  - ICAS-AMBS-2026: The Accountant, *ICAS study finds widespread concern over genAI accounting errors* (press report of an Alliance Manchester and Aston Business School study; study not opened), 2026-03-17, https://www.theaccountant-online.com/news/icas-study-finds-widespread/
+  - ICAS-AMBS-2025: The Accountant, *ICAS study finds widespread concern over genAI accounting errors* (press report of an Alliance Manchester and Aston Business School study; study not opened), 2026-03-17, https://www.theaccountant-online.com/news/icas-study-finds-widespread/

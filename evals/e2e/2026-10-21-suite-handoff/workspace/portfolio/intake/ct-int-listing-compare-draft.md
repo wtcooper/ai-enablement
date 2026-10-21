@@ -39,7 +39,7 @@ Not recorded as checked in the advisor's file. A rule-based comparison may cover
 
 - Risk or regulatory exposure: automation bias; non-repeatable output; documentation may not meet AS 1215; reliance on others' work (AS 2605) unclear. Needs the 3-4 month approval.
 - Build, buy or partner leaning: workflow-automation class; not decided
-- Duplicates or near-duplicates elsewhere in the portfolio: `sox-listing-tool`, the same comparison tool in the SOX-only line. Do not add the two items' value. Both wait on one approval (`sox-client-data-approval`); this item's next step would open it, so the two should not open separate requests. Depends on `ct-int-validated-report-register` and `ct-int-precheck-checklist`.
+- Duplicates or near-duplicates elsewhere in the portfolio: `sox-listing-tool`, the same comparison tool in the SOX-only line. Do not add the two items' value. Both wait on one approval (`sox-client-data-approval`). The advisor's next step for this item says to start the approval request; at review 1 the portfolio owner decided there is one request, owned by `sox-client-data-approval`, and this item attaches to it and does not open its own. Depends on `ct-int-validated-report-register` and `ct-int-precheck-checklist`.
 - Archetype evidence: assurance-controls-testing-06, assurance-controls-testing-07 (grades to be re-checked in the advisor's Make the case)
 
 ## Screen result

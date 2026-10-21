@@ -44,4 +44,27 @@ Not recorded as checked in the advisor's file. A rule-based comparison may cover
 
 ## Screen result
 
-Not yet screened. Revisit trigger carried from the advisor: the checklist and register are in place with baselines and the client-data approval is granted. Link: `portfolio.yaml` → `sox-listing-tool`.
+**DRAFT g0 Hold for the portfolio owner to take on its own. Not a recorded decision; nothing in `decisions` yet.** Review 1 left this item open.
+
+Scores carried from the advisor's file under the portfolio's weights: weighted 2.25, value index 2.11, readiness index 2.36. Quadrant: both axes below 3.5, so the usual outcome is Kill or Hold with a revisit trigger.
+
+| Field | Draft |
+|---|---|
+| Category / horizon | park (advisor's category) / long (proposed; time to value is scored 1 and four items come first) |
+| Risk tier | tier-4, provisional: it would produce attest evidence from client data on a delegated-to-tool first pass. ai-governance to confirm |
+| Gate path | full (assumption until the forum agrees the gate paths) |
+| Sponsor | SOX/ICFR practice leader (assumption until the forum agrees). Not needed to hold |
+
+**Draft decision: Hold**, resting on the advisor's trigger only.
+- **Reason:** it depends on four items that are not yet in place (the checklist, the register, the client-data approval and the junior-development workstream). It speeds the staff step, not the senior-review constraint, so its value counts only once the checklist and register are in place. Client data is not approved for any AI tool.
+- **Evidence:** advisor's file for the item (capacity 24-126 staff hours a month at full coverage, a guess; near zero for the first approved scope; pattern evidence self-reported by the deploying teams; Grade C for this practice); review 1 pack, decision block for `sox-listing-tool`.
+- **Resources:** none; a Hold releases nothing.
+- **`revisit_when`:** "Options 1 and 4 are in place with baselines, and the client-data approval (sox-client-data-approval) is granted" (the advisor's trigger, unchanged).
+- **Next gate:** none while held.
+- **Recycle or kill:** not proposed.
+
+**Open question, not part of this decision:** whether to merge this item with `ct-int-listing-compare-draft` into one firm-level listing-comparison item. That waits for the integrated-audit manager to confirm the twin. Until then the two stay separate and their value is not added.
+
+**Rules-or-AI check still to do** before it is revisited: a rule-based comparison may cover much of the listing match.
+
+Link: `portfolio.yaml` → `sox-listing-tool`.

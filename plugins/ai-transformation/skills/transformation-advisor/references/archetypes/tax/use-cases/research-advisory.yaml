@@ -538,7 +538,7 @@
     publisher: Vals AI
     type: vendor
     url: https://www.vals.ai/benchmarks/tax_agent_bench
-    date: '2026-10-16'
+    date: '2026-10-20'
     access: full
     locator: Results, Performance by Category, Scoring, Dataset, Answer Length
   - ref: EY-INDIA-2026
@@ -3298,9 +3298,9 @@
     publisher: Thomson Reuters
     type: vendor
     url: https://tax.thomsonreuters.com/en/products/cocounsel-tax/corp
-    date: '2026-10-21'
+    date: '2026-10-17'
     access: full
-    locator: page undated, date is access date; 'Analyze transactions and restructuring scenarios'
+    locator: page undated, date is first access date (re-read 2026-10-21); 'Analyze transactions and restructuring scenarios'
   - ref: IRS-OPR-2026
     title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)"
     publisher: "IRS Office of Professional Responsibility"
@@ -3311,7 +3311,7 @@
     locator: "item 5, section 10.37"
   last_reviewed: '2026-10-21'
   notes: >-
-    Added 2026-10-21 (mid-market widening). Gelt is an AI-native firm serving owners, not a mid-market firm. The
+    Added 2026-10-21 for mid-market firms. Gelt is an AI-native firm serving owners, not a mid-market firm. The
     firm-side version, with a firm-measured estimate of project time, is tax-research-advisory-09 (Accordance, Finney
     Neill, a 17-employee firm). State PTET modelling, including Gelt's PTET calculator and Filed's Maryland sample, is
     tax-multistate-private-14.
@@ -3436,11 +3436,11 @@
     locator: "item 5, section 10.37"
   last_reviewed: '2026-10-21'
   notes: >-
-    Added 2026-10-21 (mid-market widening). Maturity is piloting, not in-production, because the survey's 2% and 5%
+    Added 2026-10-21 for mid-market firms. Maturity is piloting, not in-production, because the survey's 2% and 5%
     figures count planning-review tools, which are not all AI. CCH Axcess Advisor's general-availability date (13 May
     2026) appeared only in a search summary and is not used. In the Thomson Reuters survey "midsize" means 4 to 29
-    professionals and "large" 30 or more, smaller than this project's mid-market. The research file labelled the
-    Thomson Reuters survey independent; it is marked vendor-published here because the publisher sells tax and
+    professionals and "large" 30 or more, smaller than the mid-market firms this archetype describes. The
+    Thomson Reuters survey is marked vendor-published because the publisher sells tax and
     advisory software. Related: tax-research-advisory-23 (law-change monitoring), -09 (blueprints) and
     tax-compliance-individual-business-14 (look-back review of prior-year returns).
 
@@ -3525,6 +3525,6 @@
     locator: section 'The consent question has no clean answer yet'
   last_reviewed: '2026-10-21'
   notes: >-
-    Added 2026-10-21 (mid-market widening). Idea: a control practitioners recommend, not a deployment. The ABA
+    Added 2026-10-21 for mid-market firms. Idea: a control practitioners recommend, not a deployment. The ABA
     position is stated by the ACTEC Fellow; the ABA source itself was not reachable (403). The return-preparation
     counterpart is tax-compliance-individual-business-21.

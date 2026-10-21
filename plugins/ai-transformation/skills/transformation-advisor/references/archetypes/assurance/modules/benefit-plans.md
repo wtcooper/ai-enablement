@@ -237,7 +237,7 @@ review of a generated risk assessment (`#08`).
   Reward"; only the abstract is public [CALCPA-EBP-2026].
 - **2026-06-11** Autire ships AI exception analysis (`#02`) [AUTIRE-ADVAI-2026].
 - **2026-06-03 to 10-08** Withum, EisnerAmper, Citrin Cooperman and PKF O'Connor Davies announce DAS suite adoptions
-  that include plan-audit modules (`#09`) [CASEWARE-WITHUM-2026; CASEWARE-EISNERAMPER-2026; CITRIN-DAS-2026; CASEWARE-PKF-2026].
+  that include plan-audit modules (`#09`) [CASEWARE-WITHUM-2026; CASEWARE-EISNERAMPER-2026; CASEWARE-CITRIN-2026; CASEWARE-PKF-2026].
 - **2026-08-06** Thomson Reuters publishes the Kimberlin plan-document case (`#06`) [TR-KIMBERLIN-2026].
 - **2026-09-11 and 10-13** AICPA issues TQA 9561 and the AI practice aid [AICPA-TQA9561-2026; AICPA-PA-2026].
 - **2026-10-15** Ledgerline's CEO writes on whole-population plan testing; the firm's site lists availability from

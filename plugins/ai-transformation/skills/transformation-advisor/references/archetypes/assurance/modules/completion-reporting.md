@@ -130,7 +130,7 @@ items. Absence of public evidence is not proof no firm does it. Do not offer inv
 
 **Named or vendor outcomes (all vendor-published or self-reported)**
 - Disclosure checklist: 2.7 h saved per run, average of unnamed beta firms; unit is "per workflow" in another
-  Caseware document [CASEWARE-CWX-2026]. TR: ~30% of eligible customers, close to 300 analyses a month [TR-DISCLOSURE-2026].
+  Caseware document [CASEWARE-VERITY-2026]. TR: ~30% of eligible customers, close to 300 analyses a month [TR-DISCLOSURE-2026].
 - Statement review: HLB ~600 h a year, 40-50% on later drafts [CASEWARE-HLB-2025]. MHA: casting 25 to 12 min,
   first pass 58 to 42 min, zero false positives in a two-tool trial (baseline may be the other tool) [CASEWARE-MHA-2025].
 - Internal audit (Uniper): 50-80% estimated efficiency across several processes [EULERICH-2025].
@@ -209,13 +209,13 @@ The loudest completion discourse is not about AI doing the work but about who an
 
 ## 9. Roles and how they evolve
 
-- **Preparers become reviewers.** Vendors pitch a move from searching to reviewing [CASEWARE-CWX-2026]; Fieldguide
+- **Preparers become reviewers.** Vendors pitch a move from searching to reviewing [CASEWARE-VERITY-2026]; Fieldguide
   argues review hours rise at first (vendor view, not measured) [FIELDGUIDE-REVIEW-2026].
 - **Seniors move to judgment.** HLB: any team member runs the first pass, seniors focus on disclosures [CASEWARE-HLB-2025].
 - **Juniors learn from rationale, or lose skills.** TR and Caseware's Withum beta partner present rationale as
-  teaching [TR-DISCLOSURE-2026; CASEWARE-CWX-2026]; auditors at the German Big 4 firm worry about over-reliance and
+  teaching [TR-DISCLOSURE-2026; CASEWARE-VERITY-2026]; auditors at the German Big 4 firm worry about over-reliance and
   skill loss [HAMBURG-FABIAN-2026]; a registered-report proposal predicts lower motivation and judgment quality when
-  auditors shift from preparing to reviewing, with no results yet [HOLMSTROM-PETERS-2024]. The acting PCAOB chair
+  auditors shift from preparing to reviewing, with no results yet [HOLMSTROM-2024]. The acting PCAOB chair
   said juniors may need new paths to build scepticism [AT-PCAOBPE-2025].
 - **New skills and roles:** MHA's Technical Director for Audit Data Analytics chose its tool [CASEWARE-MHA-2025];
   PwC hires engineers and dual-track CPA/data-science candidates [PWC-AT-2025]; a Deloitte audit manager posting asks
@@ -228,11 +228,11 @@ The loudest completion discourse is not about AI doing the work but about who an
 - **2025-04-22** KPMG: Financial Report Analyzer; more agents within 12 months, incl. FS analysis (no follow-up) [KPMG-CLARA-2025].
 - **2025-10-28** PwC hopes for a tool for every step in 2026, incl. FS review and tie-out [PWC-AT-2025].
 - **2026-03-30** FRC generative and agentic AI guidance [FRC-GENAI-2026].
-- **2026-04-07** EY: agents in all audit phases; end-to-end support expected by 2028 [EY-CANVAS-2026].
+- **2026-04-07** EY: agents in all audit phases; end-to-end support expected by 2028 [CPAPA-EY].
 - **2026-04-20** IFIAR: agentic AI "may evolve" toward orchestrating audit activities [IFIAR-TTF-2026].
 - **2026-04-30** PCAOB Investor Advisory Group asks for the most decision-useful 2025 CAMs/KAMs [PCAOB-IAG-2026].
 - **2026-05-20 / 06-17** Caseware launches Verity; CwX goal of automating up to 50% of the engagement workflow
-  [CASEWARE-LAUNCH-2026; CASEWARE-CWX-2026].
+  [CASEWARE-LAUNCH-2026; CASEWARE-VERITY-2026].
 - **2026-06-24** Deloitte unifies Omnia agents, incl. disclosure evaluation [DELOITTE-OMNIA-2026].
 - **2026-08-12** Fieldguide Field Financials; tie-out and disclosure agents due "in the fall" [FIELDGUIDE-FINANCIALS-2026].
 - **2026-09-23** TR Disclosure Review launches; "No" and "Not applicable" calls next [TR-DISCLOSURE-2026].
@@ -272,13 +272,13 @@ Full details for YAML keys are in the YAML. Keys cited here but not in the YAML 
 - CAQ-ACI-2026-03: CAQ, Audit Committee Insights March 2026, 2026-03-17, https://www.thecaq.org/audit-committee-insights-march-2026
 - DACB-2026: DAC Beachcroft, AI: the future of audit, 2026-07-13, https://www.dacbeachcroft.com/en/what-we-think/ai-the-future-of-audit
 - DELOITTE-JOBCAIRO-2026: Deloitte Middle East, Manager, Audit (Cairo, FSI) job posting, 2026-05-17, https://middleeastjobs.deloitte.com/careersME/PipelineDetail/Cairo-Egypt-Manager-Audit-Audit-Assurance-Cairo-FSI/254184
-- EY-CANVAS-2026: CPA Practice Advisor, EY rolls out agentic AI in assurance, 2026-04-07, https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/
+- CPAPA-EY: CPA Practice Advisor, EY rolls out agentic AI in assurance, 2026-04-07, https://www.cpapracticeadvisor.com/2026/04/07/ey-rolls-out-agentic-ai-in-assurance-across-its-global-network-of-accounting-firms/181097/
 - FRC-NEWS-2026: FRC, Innovative new guidance supports audit firm adoption of emerging AI technologies, 2026-03-30, https://www.frc.org.uk/news-and-events/news/2026/03/innovative-new-guidance-supports-audit-firm-adoption-of-emerging-ai-technologies/
 - FSA-DP-2025: Japan FSA Financial Research Center, DP2025-3 on generative AI in audit, 2025-07, https://www.fsa.go.jp/frtc/english/seika/discussion/2025/DP2025-3_Eng.pdf
-- HOLMSTROM-PETERS-2024: PCAOB conference registered-report proposal, 2024-06, https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf
+- HOLMSTROM-2024: PCAOB conference registered-report proposal, 2024-06, https://assets.pcaobus.org/pcaob-dev/docs/default-source/economicandriskanalysis/conference/conference---spring/session_5_holmstrom_peters.pdf
 - ICAEW-REPLETTER-2026: ICAEW, Letters of representation: a key protection for auditors, 2026-05-14, https://www.icaew.com/insights/viewpoints-on-the-news/2026/may-2026/letters-of-representation-a-key-protection-for-auditors
 - JOFA-AIPA-2026: Journal of Accountancy, AICPA publishes practice aid, 2026-10-13, https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/
-- KPMG-HOHL-2026: KPMG Board Leadership Center, Q&A with Kurt Hohl, 2026-05-26, https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
+- KPMG-HOHL-2026: KPMG Board Leadership Center, Q&A with Kurt Hohl, SEC chief accountant, 2026-05-27, https://kpmg.com/us/en/board-leadership/articles/2026/qa-kurt-hohl-sec-chief-accountant.html
 - PCAOB-AS2415: PCAOB, AS 2415 Going Concern (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2415
 - PCAOB-AS2801: PCAOB, AS 2801 Subsequent Events (current text, read via a text mirror), 2026, https://pcaobus.org/oversight/standards/auditing-standards/details/AS2801
 - PCAOB-IAG-2026: PCAOB investor advisory on CAM/KAM examples, 2026-04-30, https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory--pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters-5-2026

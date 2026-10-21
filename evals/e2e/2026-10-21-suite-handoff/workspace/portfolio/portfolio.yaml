@@ -57,9 +57,9 @@ rhythm:
   benefits_review: "PROPOSED: every review, for items in production or scale"
 state:
   status: setting-up
-  step_completed: 2
+  step_completed: 5
   next_step: 3
-  last_review: 0
+  last_review: 1   # review 1 in portfolio/reviews/1-review.md; three of four g0 decisions recorded, sox-listing-tool open
   updated: 2026-10-21
 items:
   - id: sox-prereview-checklist
@@ -75,9 +75,13 @@ items:
     ladder: assist
     change_scope: step
     runtime_class: shared-team-skills
-    stage: intake
+    horizon: near
+    stage: discover
     status: active
     owner: "Practice lead"
+    sponsor: "SOX/ICFR practice leader"   # ASSUMPTION until the forum agrees: the plan has the practice lead holding the protected senior half-days
+    risk_tier: "tier-1"   # PROVISIONAL: no overlay/policy.md yet; no client data and no AI in the checklist itself; ai-governance to confirm
+    gate_path: full   # ASSUMPTION until the forum agrees the gate paths (the light path is not yet agreed)
     benefit_owner: "SOX/ICFR practice leader"   # named by the portfolio owner 2026-10-21; owns and already tracks the review-note rate by engagement
     value:
       - { lever: quality, low: 5, high: 12, unit: "percentage points off the test-level review-note rate (30% today)", assumptions: "About 42 of 210 tests a month draw an evidence-completeness note (tracking sheet, as relayed); the checklist catches 25-60% of them before review; notes independent. Overlaps options 2 and 4: do not add. Grade D (no published measure)." }
@@ -87,15 +91,16 @@ items:
     value_index: 4.33
     readiness_index: 4.45
     depends_on: []
-    kill_criteria: []
+    kill_criteria: ["On a blind back-test of past files, the checklist would have caught under 25% of the evidence-completeness notes", "The protected senior half-days cannot be released, or the seniors cannot state the checks in writing"]
     early_warnings: []
-    next_gate: null
+    next_gate: { gate: g1, evidence: ["Success metric agreed: review-note rate by engagement, benefit owner the SOX/ICFR practice leader", "Baseline from records for the SOX-only and integrated-audit review-note rates", "Data located and seen in its real state: past workpapers and the tracking sheet", "Checklist drafted and back-tested blind on past files", "Counterfactual idea; build, buy or partner leaning; risk tier confirmed", "Risk and quality partner confirms whether the independence check applies"], gatekeepers: ["Practice leaders", "Risk and quality partner"] }   # gatekeepers PROPOSED
     solution: null
     benefits: []
     evidence: [assurance-controls-testing-03, assurance-controls-testing-10]
     role_evolution: { tasks_moving: "Late discovery of completeness gaps at senior review", new_work: "Staff self-check before submission; seniors coach against the checklist", capacity_use: undecided }   # advisor said redeploy; firm stance undecided
     revisit_when: null
-    decisions: []
+    decisions:
+      - { gate: g0, review: null, outcome: go, reason: "Value and readiness indexes both above 3.5 (4.33 and 4.45); a process fix with no client data that needs no AI, with low cost and a metric the benefit owner already tracks. Weakest evidence: the 5-12 point range is Grade D and the seniors' criteria are unwritten.", evidence: ["Advisor's opportunities file and scores under the portfolio's weights", "Benefit owner agreed the review-note rate by engagement as the success metric", "Tracking sheet as relayed: about 42 of 210 tests a month draw an evidence-completeness note (reported, not seen)"], resources: "Two seniors for two or three protected half-days in the shoulder weeks (none in peak), the ITGC senior manager for the blind back-test, and the methodology owner's approval; all released by the SOX/ICFR practice leader (sponsor, assumed). No budget beyond staff time. Data: past SOX-only workpapers and the tracking sheet, and three past integrated-audit files.", conditions: ["The review-note rate is the success metric; the benefit owner is the SOX/ICFR practice leader; the baseline comes from the tracking-sheet record, not the reported 30%", "The integrated-audit line's review-note rate is counted as a second measure with a baseline from record; ct-int-precheck-checklist stays a draft to validate and its value is not added to this item's", "Sponsor and full gate path are assumptions until the forum agrees them", "Risk tier tier-1 is provisional until ai-governance confirms it"], recycle_to: null, decided_by: ["Head of AI"] }
     updated: 2026-10-21
 
   - id: sox-request-template
@@ -111,9 +116,13 @@ items:
     ladder: assist
     change_scope: step
     runtime_class: shared-team-skills
+    horizon: near
     stage: intake
-    status: active
+    status: hold
     owner: "Practice lead"
+    sponsor: "SOX/ICFR practice leader"   # ASSUMPTION until the forum agrees
+    risk_tier: "tier-1"   # PROVISIONAL: a template and rule check, no AI; ai-governance to confirm
+    gate_path: full   # ASSUMPTION until the forum agrees the gate paths
     benefit_owner: null
     value:
       - { lever: quality, low: 2, high: 6, unit: "percentage points off the test-level review-note rate", assumptions: "Subset of the same evidence-completeness notes as option 1; catches submissions that arrive without parameters or the right period. Overlaps options 1 and 4: do not add. Grade D." }
@@ -131,7 +140,8 @@ items:
     evidence: [assurance-controls-testing-03]
     role_evolution: { tasks_moving: "Repeat chasing for the right version", new_work: "Staff keep the report list current with the control owner", capacity_use: undecided }   # advisor said redeploy; firm stance undecided
     revisit_when: "The per-client key-report inventory exists (the first step of option 4); in practice it starts client by client as each inventory completes"
-    decisions: []
+    decisions:
+      - { gate: g0, review: 1, outcome: hold, reason: "Worth doing but not yet: the per-client report list does not exist, so the template cannot name the report and its parameters. Value index 3.44 with readiness 4.45; the value overlaps the checklist and the register on the same evidence-completeness notes.", evidence: ["Review 1 pack, decision block for sox-request-template", "Advisor's file: data readiness lowered to 3 because the per-client report list does not exist; depends on the report inventory from sox-report-register"], resources: null, conditions: [], recycle_to: null, decided_by: ["Head of AI"] }
     updated: 2026-10-21
 
   - id: sox-chase-assistant
@@ -183,10 +193,14 @@ items:
     ladder: assist
     change_scope: process
     runtime_class: shared-team-skills
-    stage: intake
+    horizon: near
+    stage: discover
     status: active
     owner: "Senior manager, ITGC side (register owner and validator)"
-    benefit_owner: null
+    sponsor: "SOX/ICFR practice leader"   # ASSUMPTION until the forum agrees: approves the validator's weekly hours
+    risk_tier: "tier-2"   # PROVISIONAL: validation records feed audit evidence; no AI in the register itself; ai-governance to confirm
+    gate_path: full   # ASSUMPTION until the forum agrees the gate paths
+    benefit_owner: null   # still to name
     value:
       - { lever: capacity, low: 25, high: 63, unit: "staff hours per month", assumptions: "About 100-126 of 210 tests a month rely on a system report (12-15 of 25 controls, 48-60%; control share used as a proxy for test share); 0.25-0.5 h per test no longer spent re-proving completeness. The high end is capped at 0.5 h until a time sample exists: the 1.0 h gap between the 2.5 h SOX-only and 1.5 h integrated cases rests on two single cases and would imply 50-67% of a typical 1.5-2 h test. Net of one-off specialist effort of about 180-600 hours (8 reports x 3 h x 15 clients as base 360; user estimates). Excludes re-validation. Grade D." }
       - { lever: quality, low: 3, high: 10, unit: "percentage points off the test-level review-note rate", assumptions: "Part of the same evidence-completeness notes as options 1 and 2: do not add." }
@@ -196,15 +210,16 @@ items:
     value_index: 4.11
     readiness_index: 3.36
     depends_on: []
-    kill_criteria: []
+    kill_criteria: ["Validating the first client takes more than 32 hours (top of the advisor's 16-32 h range)", "The risk and quality partner will not accept a validation record signed by the ITGC senior manager role"]
     early_warnings: []
-    next_gate: null
+    next_gate: { gate: g1, evidence: ["Key reports inventoried for the 4-5 clients behind the ITGC controls and the two PCAOB comments", "Content of a validation record agreed with the risk and quality partner, including who can sign and the AS 1215 documentation", "First client validated and timed, against the 16-32 h estimate", "Success metric and benefit owner named", "Baseline from records: test-level share relying on a system report and hours spent re-proving completeness", "Risk tier confirmed; build, buy or partner leaning (in-house expected)"], gatekeepers: ["Practice leaders", "Risk and quality partner"] }   # gatekeepers PROPOSED
     solution: null
     benefits: []
     evidence: []
     role_evolution: { tasks_moving: "Per-test re-proving of report completeness", new_work: "Specialists own validation and the register; staff cite and check it; juniors learn why a report is complete by reading validation records", capacity_use: undecided }   # advisor said redeploy; firm stance undecided
     revisit_when: null
-    decisions: []
+    decisions:
+      - { gate: g0, review: 1, outcome: go, reason: "Value index 4.11 with readiness 3.36 (below the 3.5 line), so a Go with the readiness work named as conditions; the register unblocks the request template and is a dependency of the listing tools. Limited to stage 1 so the cost of the first client is known before the rest is committed.", evidence: ["Review 1 pack, decision block for sox-report-register", "Advisor's file: capacity 25-63 staff hours a month net of one-off specialist effort (Grade D), quality and risk ranges not additive with the checklist", "Integrated-audit contrast case, reported, one case"], resources: "ITGC-side senior manager (a role, to be named) at about 4 hours a week outside peak, approved by the practice lead; stage 1 covers inventorying key reports for 4-5 clients, agreeing the record content with the risk and quality partner, and validating and timing the first client (about 16-32 h; 24 h estimate). No tool spend.", conditions: ["Named validator and a named owner for the register and its re-validation triggers", "The risk and quality partner confirms the validator role can sign validation records", "Methodology agreement on what must be recorded under AS 1215, and a shared place for the register", "Stage 1 only: the remaining clients need a new decision at g1", "Sponsor and full gate path are assumptions until the forum agrees them; tier-2 is provisional until ai-governance confirms it", "Screened together with ct-int-validated-report-register once the integrated-audit manager confirms it; the two items' value is not added"], recycle_to: null, decided_by: ["Head of AI"] }
     updated: 2026-10-21
 
   - id: sox-junior-development
@@ -255,26 +270,31 @@ items:
     ladder: assist
     change_scope: process
     runtime_class: shared-team-skills
-    stage: intake
+    horizon: near
+    stage: discover
     status: active
     owner: "Practice lead"
-    benefit_owner: null
+    sponsor: "Managing partner for assurance"   # ASSUMPTION until the forum agrees: the plan names this role as the sponsor of the request
+    risk_tier: "tier-1"   # PROVISIONAL: a governance step with no AI and no client data in the request pack; ai-governance to confirm
+    gate_path: full   # ASSUMPTION until the forum agrees the gate paths
+    benefit_owner: null   # enabler with no standalone value; the benefit sits with the tool items that depend on it
     value:
       - { lever: risk, low: 0, high: 0, unit: "enabler, no standalone value", assumptions: "Approval is the lead-time item; value comes from option 5" }
     scores: { value: 2, feasibility: 3, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 4 }
     weighted_score: 3.00
     value_index: 2.56
     readiness_index: 3.36
-    depends_on: [sox-prereview-checklist]
-    kill_criteria: []
+    depends_on: [sox-prereview-checklist]   # advisor's next_step lists no dependency; see the g0 conditions
+    kill_criteria: ["The CIO, general counsel or risk and quality will not accept a narrow scope (access recertification listing comparison, one or two clients) for a request"]
     early_warnings: []
-    next_gate: null
+    next_gate: { gate: g1, evidence: ["Narrow-scope request pack prepared: tool class, data handled, retention, independence, QC 1000 certification and monitoring, client consent and vendor terms, credential governance, early notice to clients' external auditors (AS 2605)", "Written test attributes from sox-prereview-checklist attached, or the gap stated", "Risk and quality, the CIO and general counsel have said whether the scope is acceptable to put forward", "Baseline for approval lead time (no controls case has been through)", "Risk tier confirmed"], gatekeepers: ["Practice leaders", "Risk and quality partner"] }   # gatekeepers PROPOSED; the CIO and general counsel are approvers of the request itself
     solution: null
     benefits: []
     evidence: []
     role_evolution: { tasks_moving: "none", new_work: "Practice lead prepares the request and evidence pack", capacity_use: undecided }   # advisor said redeploy; firm stance undecided
     revisit_when: null
-    decisions: []
+    decisions:
+      - { gate: g0, review: 1, outcome: go, reason: "Foundation and lead-time item: no controls-testing case has been through the 3-4 month approval path, and every client-data tool option depends on it. Value index 2.56 (an enabler with no standalone value) and readiness 3.36 are below the 3.5 line, so this is a Go on the foundation case with the scope kept to one narrow request.", evidence: ["Review 1 pack, decision block for sox-client-data-approval", "Advisor's file: approval path of 3-4 months, no controls case yet, value recorded as an enabler (0-0)", "sox-listing-tool and ct-int-listing-compare-draft both depend on an approval"], resources: "Practice lead's time to prepare the request pack, with the managing partner for assurance as sponsor; the decision on the request itself sits with risk and quality, the CIO and general counsel. No spend recorded.", conditions: ["One approval request only, owned by this item: scope is access recertification listing comparison at one or two clients. ct-int-listing-compare-draft and sox-listing-tool do not open their own requests; they attach to this one when they reach the same stage", "Confirm with the risk and quality partner whether a request without the checklist's written attributes would be accepted; the advisor's file is inconsistent on whether the request must wait for the checklist", "Sponsor and full gate path are assumptions until the forum agrees them; tier-1 is provisional until ai-governance confirms it"], recycle_to: null, decided_by: ["Head of AI"] }
     updated: 2026-10-21
 
   - id: sox-listing-tool
@@ -309,6 +329,7 @@ items:
     evidence: [assurance-controls-testing-06, assurance-controls-testing-07, assurance-controls-testing-05]
     role_evolution: { tasks_moving: "Portal pull, comparison, copying, formatting, tick-marking first pass", new_work: "Exception investigation, sample re-performance, tool evaluation; juniors keep rotating manual practice", capacity_use: undecided }   # advisor said redeploy; firm stance undecided
     revisit_when: "Options 1 and 4 are in place with baselines, and the client-data approval (sox-client-data-approval) is granted"
+    # OPEN at review 1: no g0 decision taken. The portfolio owner will not decide until the integrated-audit twin (ct-int-listing-compare-draft) is confirmed, which is not theirs to give.
     decisions: []
     updated: 2026-10-21
 
@@ -443,7 +464,7 @@ items:
     weighted_score: 2.95
     value_index: 3.67
     readiness_index: 2.36
-    depends_on: [ct-int-validated-report-register, ct-int-precheck-checklist]
+    depends_on: [ct-int-validated-report-register, ct-int-precheck-checklist]   # approval: use the single request owned by sox-client-data-approval (review 1); do not open a second one
     kill_criteria: []
     early_warnings: []
     next_gate: null

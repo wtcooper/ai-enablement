@@ -153,3 +153,254 @@ I haven't recorded it as a decision, so `decisions` in `portfolio.yaml` is still
 - **Worth-a-year check:** that check is written for large items. This one costs a few half-days plus a back-test.
 
 If you take it as drafted, I'll append the `g0` entry, set the stage to discover and fill the sponsor, tier, path and next gate. Say so, or tell me what to change.
+
+### USER
+Take it as drafted. Go ahead and append the `g0` entry, set the stage to discover and fill in the sponsor, tier, path and next gate. Keep the tier-1 as provisional and flag the sponsor and gate path as assumptions until the forum agrees them.
+
+### ASSISTANT
+I've recorded the `g0` Go for `sox-prereview-checklist` in `portfolio/portfolio.yaml`, and the item is now at stage `discover`, status `active`. I couldn't run a parser on the YAML, so the edits are checked by eye only. I also updated the "Screen result" in its intake record to show the decision was taken, by the Head of AI on 2026-10-21.
+
+**What the entry now holds**
+- **Decision:** `g0`, Go, decided outside a review, with the reasons and evidence from the draft.
+- **Resources:** two seniors, the ITGC senior manager and the methodology owner, released by the sponsor, with no spend beyond staff time.
+- **Conditions:**
+  1. The review-note rate by engagement is the success metric, with the SOX/ICFR practice leader as benefit owner. The baseline comes from the tracking-sheet record, not the reported 30%.
+  2. The integrated-audit line's note rate is a second measure, with `ct-int-precheck-checklist` staying a draft to validate and its value not added.
+  3. The sponsor and the full gate path are assumptions until the forum agrees them.
+  4. Tier-1 is provisional until ai-governance confirms it.
+- **Kill criteria:** a blind back-test would have caught under 25% of the evidence-completeness notes, or the half-days can't be released or the seniors can't state the checks in writing.
+- **Next gate:** `g1`, with the practice leaders and the risk and quality partner as proposed gatekeepers. The evidence list includes baselines from records for both lines and the blind back-test.
+
+The sponsor, risk tier and gate path are filled in, each with a YAML comment flagging it as an assumption or provisional. Nothing outside this item changed.
+
+**Still open from set-up**
+- **Forum:** it isn't agreed, so the gatekeepers, sponsor and full path stay proposals.
+- **Live limit:** the number is not set.
+- **Other practices:** tax and advisory aren't in yet.
+- **AI inventory:** no inventory of AI already in use.
+- **Policy:** no `overlay/policy.md` exists.
+- **Portfolio file:** it stays `setting-up`.
+
+**Next step** is discover, led by the sponsor: two or three protected senior half-days to co-write the checklist, then the blind back-test on past files. Pull the baselines from the tracking-sheet record first, for both the SOX-only and integrated-audit lines. Tell me when you want to hold the `g1` gate, and I'll prepare the evidence pack for the gatekeepers.
+
+I haven't screened the other 11 items. Do you want me to draft `g0` options for the next strongest, or bring the whole set to a first portfolio review?
+
+### USER
+Let's bring the whole set to a first portfolio review, not draft more `g0` options one by one. Please prepare the review pack. Show the remaining 11 items alongside `sox-prereview-checklist` and flag which ones need a screen decision from me.
+
+### ASSISTANT
+I've written the review 1 pack to `portfolio/reviews/1-review.md`. Part A is complete. Part B is blank until you report the decisions. I haven't recorded any decision, and `state.last_review` stays at 0 until you do.
+
+Nothing in the register meets a rule for a stop, redirect or scale decision. No item has a kill criterion that could be met, an early warning, a due gate or a benefit under review. So this review is a first screen of the register.
+
+**Where the 12 items stand**
+- 11 are at intake and 1 is in discover (`sox-prereview-checklist`, decided).
+- Nothing is live.
+- The live limit is still unset.
+
+**What needs a `g0` decision from you (4 items)**
+
+| Item | Value / readiness | Draft recommendation (mine, for you to change) |
+|---|---|---|
+| `sox-report-register` | 4.11 / 3.36 | Go into discover, limited to stage 1. Named validator and sign-off role as conditions |
+| `sox-client-data-approval` | 2.56 / 3.36 | Go into discover, scoped to one narrow request |
+| `sox-request-template` | 3.44 / 4.45 | Hold until the per-client report inventory exists |
+| `sox-listing-tool` | 2.11 / 2.36 | Hold, and merge with its integrated-audit twin once that is confirmed |
+
+Each has its options, evidence for and against, and proposed kill criteria in section 3 of the pack.
+
+**What you need to settle before the other 7 can be screened**
+- **Owners:** `sox-junior-development` and `sox-chase-assistant` have no owner. Name one for each, or leave them as outlines.
+- **Draft to validate:** the five integrated-audit items stay outlines until the integrated-audit manager confirms them.
+  - **Register:** the manager's confirmation is the advisor's next step for `ct-int-validated-report-register`, which should be screened with `sox-report-register`.
+
+**Findings in the pack**
+- **Approval request:** the advisor's file contradicts itself on `sox-client-data-approval`. It lists the checklist as a dependency, but its next step says to open the request now.
+  - **Duplicate request:** `ct-int-listing-compare-draft` also says it opens the approval request. There should be one request.
+- **Duplicates:** the register is 12 items but about 9 distinct ideas, because of the three pairs.
+- **Levers:** margin (weight 0.10) has no item, and one item uses a `speed` lever that isn't one of the firm's five.
+- **No-AI items:** about 5 items need no AI. Decide whether process fixes belong in the AI register.
+- **Scope:** the register is audit only. Compare tax and advisory ideas before treating this ranking as firm-wide.
+- **Costs:** no tool has a run-cost range. Only staff time is recorded.
+
+I didn't use the prepare-review-item subagent brief. It applies to items that meet a surfacing rule, and none do.
+
+**Question:** Which of these four `g0` decisions would you least like to take, and why?
+
+### USER
+I'd least like to take `sox-listing-tool`, because holding it only makes sense once the integrated-audit twin is confirmed, and that confirmation isn't mine to give. I'll take the other three as drafted: Go on `sox-report-register` limited to stage 1, Go on `sox-client-data-approval` scoped to one narrow request, and Hold on `sox-request-template`. For `sox-client-data-approval`, make sure there's only one approval request, not the duplicate from `ct-int-listing-compare-draft`.
+
+### ASSISTANT
+I've recorded three of the four `g0` decisions from review 1 in `portfolio/portfolio.yaml` and in Part B of `portfolio/reviews/1-review.md`. I left `sox-listing-tool` open, as you asked. I couldn't run a parser on the YAML, so the edits are checked by eye only.
+
+**Recorded, each decided by the Head of AI, in review 1**
+- **`sox-report-register`:** Go into discover, limited to stage 1.
+  - **Moved to discover:** the item is now at stage `discover`.
+  - **Stage 1 scope:** inventory the key reports for 4-5 clients, agree the record content with the risk and quality partner, then validate and time the first client.
+  - **Resources:** the ITGC-side senior manager at about 4 hours a week outside peak, with the practice lead's approval. There is no tool spend.
+  - **Conditions:**
+    - A named validator and register owner, and risk and quality confirming that role can sign a validation record.
+    - AS 1215 record content agreed, and a shared place for the register.
+    - The remaining clients need a new decision at `g1`.
+  - **Kill criteria:** first-client validation takes more than 32 hours, or risk and quality won't accept the signing role.
+  - **Next gate:** `g1`.
+- **`sox-client-data-approval`:** Go into discover, scoped to one narrow request.
+  - **Single request:** there is one approval request, owned by this item. `ct-int-listing-compare-draft` and `sox-listing-tool` attach to it and don't open their own.
+  - **Where it's written:** the condition is in the decision entry, in a comment on `ct-int-listing-compare-draft`, and in that item's intake record. I couldn't edit the advisor's file, which still tells that item to start the request.
+  - **Check needed:** whether a request without the checklist's written attributes is acceptable. The advisor's file is inconsistent on that.
+  - **Next gate:** `g1`.
+- **`sox-request-template`:** Hold at intake, to revisit when the per-client key-report inventory exists.
+
+**Left open: `sox-listing-tool`.** No decision is recorded, and the item stays at intake. You hesitated because the Hold depends on the twin. The Hold I drafted rests on the advisor's own trigger and doesn't need the twin; only the proposed merge does. So you could take the Hold on its own, or wait for the integrated-audit manager to confirm `ct-int-listing-compare-draft`. It's in the open questions either way.
+
+**What I filled in without being told**
+- **Sponsors:** the SOX/ICFR practice leader for the register and the template, and the managing partner for assurance for the approval, as the plan names them.
+- **Risk tiers:** tier-2 for the register, because validation records feed audit evidence, and tier-1 for the approval and the template. The tiers are provisional.
+- **Gate path:** the full path for all three.
+- **Status:** all of these are flagged as assumptions until the forum agrees them and ai-governance confirms the tiers.
+
+I set `state.last_review` to 1, `step_completed` to 5 and `next_step` to 3. The portfolio file is still `setting-up`, because the forum, live limit and gate paths aren't agreed.
+
+Two things remain on your list. The live limit is still unset. The first two `g1` gates now depend on the SOX/ICFR practice leader and the practice lead naming the validator and preparing the request.
+
+**Question:** Should the Hold on `sox-listing-tool` wait for the integrated-audit manager's confirmation, or do you want me to draft the Hold for you to take on its own?
+
+### USER
+Draft the Hold on `sox-listing-tool` for me to take on its own, resting on the advisor's trigger. Leave the merge with the integrated-audit twin as an open question until that manager confirms it. Then tell me what's left before I can call the first portfolio review done.
+
+### ASSISTANT
+I've drafted the Hold on `sox-listing-tool` in the "Screen result" of `portfolio/intake/sox-listing-tool.md`. I haven't added it to `decisions` in `portfolio.yaml`, so the item stays open at intake until you take it.
+
+**Draft Hold**
+- **Reason:** it depends on four items that aren't in place yet (the checklist, the register, the client-data approval and the junior-development workstream).
+  - **Speeds the wrong step:** it speeds the staff step and not the senior-review constraint.
+  - **Client data:** no AI tool is approved for client data.
+- **Trigger:** the advisor's own trigger, unchanged. The checklist and register are in place with baselines, and the client-data approval is granted.
+- **Resources:** none. The merge with `ct-int-listing-compare-draft` is not part of the decision.
+- **Open question:** the merge stays open until the integrated-audit manager confirms the twin. The two items stay separate in the meantime, and their value isn't added.
+- **My proposals:**
+  - **Risk tier:** tier-4, provisional. It would produce attest evidence from client data, which ai-governance's default tiers place at the top. ai-governance should confirm it.
+  - **Horizon:** long.
+  - **Gate path and sponsor:** the full path, and the SOX/ICFR practice leader as sponsor. Both stay assumptions.
+- **Check before revisiting:** whether simple rules could do the listing match, which the advisor's file doesn't record.
+
+**What's left before you can call review 1 done**
+
+*To close the review itself*
+1. **Take or change the `sox-listing-tool` Hold.** Once you say so, I'll append the entry as `g0`, review 1, Hold, with the trigger as `revisit_when`.
+2. **Agree the forum and rhythm.** Review 1 so far has your decisions only. The forum membership, the monthly rhythm, the live limit and the gate paths are still proposals.
+   - **Portfolio file:** `portfolio.yaml` stays `setting-up` until they're agreed.
+   - **Gatekeepers:** the practice leaders and the risk and quality partner are only proposed gatekeepers.
+3. **Report the forum's view.** If the forum has to ratify the three Go/Hold decisions, tell me what it changes. I'd record any change as a new entry, since decisions are appended and never edited.
+
+*Not needed to close it, but they hold up the next steps*
+- **Seven items can't be screened yet:**
+  - **No owner:** `sox-junior-development` and `sox-chase-assistant` need an owner role named.
+  - **Desk review only:** the five integrated-audit items wait for the integrated-audit manager to confirm them.
+- **Provisional entries:** these stay flagged until ai-governance confirms the risk tiers and the forum agrees the sponsors and gate paths.
+- **Conditions on the Go decisions:**
+  - **Validator and signer:** the register still needs a named validator and risk and quality's view on who can sign a validation record.
+  - **Approval request:** the single approval request needs preparing, and risk and quality need to say whether it can go ahead before the checklist's attributes are written.
+- **Baselines:** the review-note rate for both audit lines should come from the tracking-sheet record, not the reported figures.
+- **Firm-wide gaps:** no tax or advisory ideas are logged, there's no inventory of AI already in use, and no `overlay/policy.md` exists.
+
+Items 1 and 2 are what stand between you and calling review 1 done. Everything else is follow-up.
+
+**Question:** Do you want to take the Hold on `sox-listing-tool` as drafted, or change anything first?
+
+### USER
+Let's take the highest-priority audit opportunity in the portfolio into prototype. Help me decide build versus buy and set up the solution brief.
+
+### ASSISTANT
+I've opened `solutions/sox-prereview-checklist/brief.md` and drafted the problem frame in section 1. The build-or-buy decision isn't made yet, and I don't expect it to be a product choice.
+
+**The highest-priority audit item is `sox-prereview-checklist`.** It is the top-ranked audit item in the register (4.40) and the only audit item in discover.
+
+**This item needs no AI.**
+- The advisor's own description says the checklist is the solution: a written staff self-check, co-written with seniors and tested on past files. AI may only draft wording on non-client material.
+- So the choice is probably not build versus buy. It is closer to configure: the firm's existing audit platform and templates, owned by the methodology owner.
+- No tool in the catalog is involved, and there is no `overlay/` folder, so I describe it by runtime class (shared team skills).
+
+**Prototype still needs `g1`.**
+- The brief doesn't move the item. `g1` is not held, and its evidence isn't in yet: baselines from the tracking-sheet record for both lines, and the blind back-test on past files.
+- I didn't touch the portfolio item's `solution` field. ai-portfolio writes that when `g1` is a Go.
+- Treat the brief as `g1` evidence. Its leaning is to solve this without a model, which strengthens the case for a light prototype: co-write the checklist, then back-test it.
+
+**What is still unconfirmed in the brief**
+- The practice leader's own confirmation of the metric. You agreed it on their behalf.
+- The 30% note rate and the 42-a-month figure are reported, not from the record.
+- The last real instance hasn't been walked through.
+- Risk tier is blank, because there is no policy file. The portfolio's tier-1 is provisional.
+
+**Question:** Do you want any tool to check client evidence against the checklist automatically, or is the written checklist the whole solution? (A checking tool would be `sox-listing-tool` territory, which is on hold.)
+
+### USER
+The written checklist is the whole solution. I don't want a checking tool, since that's `sox-listing-tool` territory and it stays on hold. Set the brief to "configure, no AI" and put it in the practice leader's existing audit templates. Then list what I need to do to get the `g1` evidence in: the baselines from the tracking sheet and the blind back-test on past files.
+
+### ASSISTANT
+I've updated `solutions/sox-prereview-checklist/brief.md`: sourcing is `configure`, with no AI model and no new tool. The checklist goes in the practice's existing audit templates, and I recorded both decisions in the log. `sox-listing-tool` stays on hold, and the brief says that no checking tool is part of this solution.
+
+Two points to check:
+- **Brief left open:** the method says to stop a brief when the answer is "solve without AI". I kept this one open on your instruction, because it holds the checklist's design and back-test as `g1` evidence, and the log says so.
+- **Template assumption:** you said "the practice leader's existing audit templates". I read that as the practice's existing workpaper templates and haven't named which ones. It's an open question in the brief.
+
+Step 2 isn't fully closed, because the post-launch owner is still unnamed. I proposed the methodology owner, who approves the checklist anyway.
+
+**What you need to do to get the `g1` evidence in**
+
+The order follows dependencies.
+
+1. **Secure the people (you and the SOX/ICFR practice leader):**
+   - Get the practice leader to release two or three protected senior half-days in the shoulder weeks, outside peak.
+   - Name the two seniors who will co-write the checklist.
+   - Name the ITGC senior manager who will run the back-test, and the methodology owner who approves it.
+2. **Pull the baselines from the tracking sheet (practice leader):** for both lines, replace the reported figures with records.
+   - **SOX-only line:** the test-level review-note rate (reported at about 30%) and the evidence-completeness notes (reported at about 42 of 210 tests a month). Include the cause of each note, so the checklist can be tested against it.
+   - **Integrated-audit line:** its note rate, which the `g0` Go condition counts as a second measure. No baseline exists. The one reported case had zero notes, so the integrated-audit manager needs to supply it.
+3. **Walk through one real instance (you, with a senior):** the last test where a senior caught a completeness gap. Capture which check it was, what happened next and how long the second round took. This also fills the "work today" gap in the brief.
+4. **Show the data in its real state (practice lead):** confirm where the past workpapers and the tracking sheet live, and that the back-test files can be read. Cases stay in the firm's approved systems.
+5. **Co-write the checklist (the two seniors):** it covers the listing straight from the system, the full period, a complete comparison population, the sign-off date against policy, and the trace from each exception to its ticket. The methodology owner approves it.
+6. **Run the blind back-test (ITGC senior manager):**
+   - **Files:** past SOX-only files with known review notes.
+   - **Blind condition:** the tester must not see the PCAOB comment text.
+   - **Kill criterion:** the checklist would have caught at least 25% of the evidence-completeness notes. Under 25% triggers the kill criterion. Use the back-test protocol cited in the advisor's file.
+7. **Check the three integrated-audit past files (integrated-audit manager):** test the draft integrated checklist on them, as the `g0` resources promised. Its value stays separate.
+8. **Name the post-launch owner and the template it lives in (you):** this closes brief step 2.
+9. **Get three confirmations before the gate (you, ai-governance and the risk and quality partner):**
+   - **Risk tier:** tier-1 is still provisional and no `overlay/policy.md` exists. The brief's tier stays blank until ai-governance sets it.
+   - **Independence check:** whether it applies to this checklist.
+   - **Counterfactual:** a counterfactual idea and the leaning, which is configure, no AI.
+10. **Take it to `g1`:** the gatekeepers (proposed) are the practice leaders and the risk and quality partner. I can prepare the evidence pack once steps 2 to 6 are in.
+
+**Question:** Which audit templates should hold the checklist, and who owns them after launch?
+
+### USER
+Use the practice's existing SOX workpaper templates, the ones the seniors already fill in for control testing. The methodology owner owns the checklist after launch and approves any change to it. Record both in the brief, close step 2, and then prepare the `g1` evidence pack outline so I can see which pieces are still missing.
+
+### ASSISTANT
+I've closed step 2 in `solutions/sox-prereview-checklist/brief.md` and written the `g1` pack outline to `portfolio/gates/g1-sox-prereview-checklist.md`. The outline holds the status of each piece of evidence and lists which are still missing.
+
+**Recorded in the brief**
+- **Sourcing:** configure, no AI. The checklist goes in the practice's existing SOX workpaper templates that the seniors already fill in for control testing.
+- **Support:** the methodology owner owns the checklist after launch and approves any change.
+- **State:** steps 1 and 2 are done and `next_step` is 3. The decisions are in the log, which now has an entry for each of the two decisions you gave.
+- **Open point:** the templates are the ones seniors fill in, but the checklist is a staff self-check. Step 3 needs to say which field staff reach before they submit.
+
+**Where the `g1` evidence stands**
+
+The outline covers 11 pieces of evidence: 1 is met, 2 are partly met, and 8 are not presented or not met.
+
+| Status | Pieces |
+|---|---|
+| Met | The build/buy leaning: configure, no AI, with an owner named. |
+| Partly met | The success metric: the practice leader's own confirmation isn't recorded. Feasibility: the scores are on file, but data readiness stays at 3 until the checks are written. |
+| Not presented | Baselines from records for both lines, data seen in its real state, a counterfactual idea, the drafted and back-tested checklist, release of the people, and the independence view. |
+| Not met | Risk tier: tier-1 is provisional and no policy file exists. |
+
+Neither kill criterion can be tested until the checklist is written, and neither is met. The outline also lists the gatekeepers' options and a draft recommendation: don't hold `g1` until the baselines, the data check, the back-test and the people release have evidence.
+
+**What stands in the way of holding the gate**
+- **Proposals, not agreements:** the gatekeepers, the sponsor and the full gate path. Agree them, or record that `g1` is held on that basis.
+- **Left unchanged:** the portfolio item's `solution` field, which gets set when `g1` is a Go. I also didn't touch `portfolio.yaml`.
+
+**Question:** Do you want to agree the gatekeepers and sponsor with the forum before the evidence is in, or hold `g1` on the proposed basis and record that?
