@@ -1593,3 +1593,325 @@
     its own announcement, and no customer outcome was found. Forum comments are anonymous and anecdotal (one commenter
     says an LLM prepared a return more accurately than their accountant without saying how that was measured).
     Overlaps: tax-research-advisory-18 (triage of AI answers that clients bring).
+
+- id: tax-compliance-individual-business-26
+  title: Reasonable-compensation study for S corporation owners, built duty by duty from wage data with a dated record
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [research-synthesis, document-production]
+  pattern: research-brief
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Owners who work in their S corporation must pay themselves wages that are reasonable, and the IRS says there are no
+    specific guidelines in the Code or regulations, only factors courts have used (IRS-FS200825-2008). Many owners rely
+    on a fixed ratio or a figure from a chatbot, and a practitioner-vendor writes that a custom study has been a one-off
+    engagement costing thousands of dollars (NATP-RCOMP-2026).
+  solution: >-
+    Instead lists "Reasonable compensation analysis" as a ready-to-run agent workflow and as part of its S corporation
+    tax plan (INSTEAD-SCORP-2026). WageProof, whose page does not describe its method as AI, writes a study for each S
+    corporation client that prices the owner's duties with Bureau of Labor Statistics wage data for the client's area
+    and names the source of every wage figure; the client fills in a questionnaire or the firm does (WAGEPROOF-2026). An
+    earlier product, RCReports (2023), offers cost and market approaches over a proprietary wage database and a client
+    questionnaire (RCREPORTS-IA-2023). Against this, the NATP post by WageProof's founder says that in his testing the
+    wage citations a chatbot gave often did not check out (NATP-RCOMP-2026).
+  outcomes:
+    - lever: quality
+      description: "The WageProof founder reports that when he pulled the BLS series a chatbot named, the figures were frequently not there and some cited sources did not exist. No counts or rates are given."
+      figure: "none published"
+      measures: "qualitative description of the author's own testing of chatbot wage citations; no numerator or denominator"
+      provenance: vendor-published
+      source_ref: NATP-RCOMP-2026
+    - lever: cost
+      description: "WageProof lists a single report at $199, and firm plans at as low as $25 per report; its own page gives annual plans from $499 for 10 reports to $1,499 for 60."
+      figure: "$199 single report; as low as $25 per report on firm plans"
+      measures: "list prices for one reasonable-compensation report, as stated by the vendor"
+      provenance: vendor-published
+      source_ref: NATP-RCOMP-2026
+    - lever: speed
+      description: "The WageProof page says creating a client report takes about 15 minutes."
+      figure: "about 15 minutes"
+      measures: "vendor statement of the time to create one client report; sample and baseline not given"
+      provenance: vendor-published
+      source_ref: WAGEPROOF-2026
+  prerequisites:
+    - "A specific description of what the owner does and how much time each duty takes"
+    - "Wage data from a recognised source, with the year, geography and percentile choices stated"
+    - "A dated analysis, and a resolution adopting the salary, written in the year the salary is set (NATP-RCOMP-2026)"
+  risks_and_guardrails:
+    - "The IRS fact sheet lists factors courts have used, such as training and experience, duties and time devoted, and says there are no specific guidelines in the Code or regulations (IRS-FS200825-2008)."
+    - "The NATP post says a salary set too low invites reclassification of distributions as wages, with back employment taxes, interest and a possible accuracy-related penalty under section 6662, and that the preparer can face a section 6694 penalty (NATP-RCOMP-2026)."
+    - "A practitioner who tested ChatGPT in August 2024 judged it often adequate for a starting number but said the model does not do tax accounting or tax law well; the post is older than 18 months (EVERGREEN-CHATGPT-2024)."
+    - "OPR Alert 2026-19 says due diligence requires verifying facts, citations and calculations that AI produces (IRS-OPR-2026)."
+    - "Both authors of the vendor-side sources sell reasonable-compensation tools; there is no independent test (NATP-RCOMP-2026, WAGEPROOF-2026)."
+  human_checkpoints:
+    - "Preparer confirms the duty descriptions and the match of each duty to an occupation"
+    - "Reviewer checks that every wage figure traces to a source an examiner could look up"
+    - "Annual refresh when duties, the business or wage data change"
+  role_evolution: >-
+    NATP's 2026 Taxposium programme included a one-CPE session titled "Advisory Opportunities with Reasonable
+    Compensation" (NATP-TAXPOSIUMAG-2026). The vendor pitch is that a branded study becomes a firm-delivered service
+    rather than something the owner searches for free (NATP-RCOMP-2026).
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-SCORP-2026, title: "Instead for S Corporations (1120-S): AI Tax Agent", publisher: "Instead", type: vendor, url: "https://webflow.instead.com/products/s-corporation", date: "2026-10-21", access: full, locator: "page undated, date is access date; feature list and 'Ready to run' workflows" }
+    - { ref: WAGEPROOF-2026, title: "Reasonable Compensation Software for CPAs & EAs", publisher: "WageProof", type: vendor, url: "https://www.wageproof.com/for-cpas", date: "2026-10-21", access: full, locator: "page undated, date is access date; hero text, 'Create a client report', pricing line" }
+    - { ref: NATP-RCOMP-2026, title: "Four reasonable compensation mistakes S-corp clients make", publisher: "National Association of Tax Professionals (sponsored content by WageProof's founder, Josh Green)", type: vendor, url: "https://www.natptax.com/news-insights/blog/four-reasonable-compensation-mistakes-s-corp-clients-make/", date: "2026-09-16", access: full, locator: "Mistake 3; 'Why owners skip a proper study'; 'How WageProof approaches this'; read through the r.jina.ai mirror (direct curl 403)" }
+    - { ref: IRS-FS200825-2008, title: "Wage Compensation for S Corporation Officers (FS-2008-25)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-news/fs-08-25.pdf", date: "2008-08", access: full, locator: "'What's a Reasonable Salary?'" }
+    - { ref: RCREPORTS-IA-2023, title: "Insightful Accountant & Tax Practice News First Look on RCReports", publisher: "Insightful Accountant", type: press, url: "https://insightfulaccountant.com/accounting-tech/vendor-news/insightful-accountant-tax-practice-news-first-look-on-rcre", date: "2023-02-24", access: full, locator: "'Evaluating Reasonable Compensation'; the article says it is based on information the developer submitted" }
+    - { ref: EVERGREEN-CHATGPT-2024, title: "Using ChatGPT to Determine S Corporation Reasonable Compensation", publisher: "Evergreen Small Business (CPA practitioner blog)", type: press, url: "https://evergreensmallbusiness.com/using-chatgpt-to-determine-s-corporation-reasonable-compensation/", date: "2024-09-09", access: full, locator: "opening paragraphs and the August 2024 prompt example" }
+    - { ref: NATP-TAXPOSIUMAG-2026, title: "Taxposium 2026 agenda", publisher: "National Association of Tax Professionals", type: conference, url: "https://taxposium.natptax.com/agenda", date: "2026-07", access: full, locator: "session list, Day 2: title and speaker (Nancy McClelland, CPA) only; no abstract" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). No named firm, mid-market or otherwise, was found using AI for this step.
+    The product that most closely fits (WageProof) is not described as AI, so the AI contribution is the agent workflow
+    at Instead, an AI-native vendor, and the questionnaire-to-report step. Taxposium dates are 13-15 July 2026 (past);
+    only the session title was read. The salary figure feeds S-election break-even work in tax-research-advisory-26.
+
+- id: tax-compliance-individual-business-27
+  title: Shareholder and partner basis, AAA and distribution-limit schedules computed from the return, with alerts on negative basis
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [data-reporting, transaction-processing]
+  pattern: monitor-diagnose-act
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Reviewers of 1120-S and 1065 returns are expected to confirm shareholder basis schedules, the choice between the
+    default basis method and the section 1367 election, partnership capital accounts under section 704(b) and the effect
+    of debt; these are among the topics a state-society course names for return reviewers (NYSSCPA-1120S1065-2025). The
+    IRS has a form for S corporation shareholders to figure stock and debt basis limitations, Form 7203 (IRS-F7203-2026).
+  solution: >-
+    Instead, an AI-native vendor, says its S corporation agent includes shareholder basis calculations, AAA and OAA
+    tracking and K-1 generation for every shareholder, populated from workpapers (INSTEAD-SCORP-2026). Intuit Tax
+    Advisor (2024) shows stock and debt basis from the imported return, tracks the effect of strategies added to a
+    projection, and alerts when distributions and changes produce negative basis (INTUIT-BASIS-2024). Thomson Reuters
+    says CoCounsel Tax can work through passive activity limits and at-risk basis with a source behind every answer
+    (TR-COCOUNSELTAX-2026).
+  outcomes:
+    - lever: quality
+      description: "none published; the sources describe features only"
+      figure: "none published"
+      measures: "not applicable"
+      provenance: vendor-published
+      source_ref: INSTEAD-SCORP-2026
+  prerequisites:
+    - "Prior-year returns and, where the history is incomplete, a reconstruction of opening basis"
+    - "Complete entity financials and shareholder or partner agreements, including loans and contributions"
+    - "Return software or an agent that stores the schedule year to year"
+  risks_and_guardrails:
+    - "Intuit's page says its tracking works from the imported return and does not require simulating future years; it does not claim to rebuild missing history (INTUIT-BASIS-2024)."
+    - "No independent test of any AI-computed basis schedule was found."
+    - "OPR Alert 2026-19 requires verification of facts, citations and calculations the AI produces (IRS-OPR-2026)."
+  human_checkpoints:
+    - "Preparer agrees opening basis and each year's contributions, loans and distributions to source records"
+    - "Reviewer signs off any schedule where the tool reports negative or restored basis"
+  role_evolution: >-
+    Not described in the sources. The course description shows the check is currently a reviewer skill learned by
+    checklist (NYSSCPA-1120S1065-2025).
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-SCORP-2026, title: "Instead for S Corporations (1120-S): AI Tax Agent", publisher: "Instead", type: vendor, url: "https://webflow.instead.com/products/s-corporation", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'The S Corporation return' list and 'Tax return preparation'" }
+    - { ref: INTUIT-BASIS-2024, title: "S corporation basis tracking in Intuit Tax Advisor", publisher: "Intuit", type: vendor, url: "https://accountants.intuit.com/taxprocenter/practice-management/s-corporation-basis-tracking-in-intuit-tax-advisor", date: "2024-07-03", access: full, locator: "opening paragraphs" }
+    - { ref: TR-COCOUNSELTAX-2026, title: "CoCounsel Tax (firm product page)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/products/cocounsel-tax", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'Faster research with trusted sources'" }
+    - { ref: IRS-F7203-2026, title: "About Form 7203, S Corporation Shareholder Stock and Debt Basis Limitations", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/forms-pubs/about-form-7203", date: "2026-06-27", access: full, locator: "opening sentence; date is the page's last-reviewed date" }
+    - { ref: NYSSCPA-1120S1065-2025, title: "Forms 1120-S and 1065 Return Review Boot Camp for New and Experienced Reviewers (webcast)", publisher: "NYSSCPA", type: conference, url: "https://nysscpa.org/catalog/events/1016910-forms-1120-s-and-1065-return-review-boot-camp-for-new-and-experienced-reviewers-webcast-2025-18-11", date: "2025-11-18", access: full, locator: "learning objectives, Form 1120-S and Form 1065 bullets" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). No basis-tracking evidence beyond product pages was found. The Intuit page
+    is older than 18 months but is the only one that describes the negative-basis alert. Intuit's feature is not
+    described as AI on that page; the Intuit Assist page of 2024-06-19 is the generative layer (see
+    tax-research-advisory-27).
+
+- id: tax-compliance-individual-business-28
+  title: One agent per client holds every entity they own (1040, 1120-S, 1065, 1041) and its filing history
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [data-reporting, coordination-scheduling]
+  pattern: grounded-knowledge-assistant
+  ladder: augment
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    Owner-managed clients can have a personal return, operating entities and a trust, each prepared and reviewed as its
+    own return. Instead says most CPA firm clients have more than one entity (INSTEAD-CPA-2026).
+  solution: >-
+    Instead, an AI-native vendor, assigns each client an entity agent that indexes every uploaded document (W-2s, K-1s,
+    prior returns, bank statements), holds the full filing history, carryforwards, elections and estimated payments,
+    and flags year-over-year changes; a firm agent works across all clients (INSTEAD-ENTITY-2026). The firm page says
+    the agent understands how a client's 1040, 1120-S and 1065 interact (INSTEAD-CPA-2026).
+  outcomes:
+    - lever: quality
+      description: "none published"
+      figure: "none published"
+      measures: "not applicable"
+      provenance: vendor-published
+      source_ref: INSTEAD-ENTITY-2026
+  prerequisites:
+    - "Documents for every related entity in one workspace, with ownership percentages"
+    - "Prior-year returns imported for carryforwards and elections"
+  risks_and_guardrails:
+    - "OPR Alert 2026-19 names cross-client leakage, where data from one client's file is reused to answer a question about another, as a privacy risk; a multi-entity workspace must keep ownership groups apart (IRS-OPR-2026)."
+    - "The sources describe a design, not any measured check that entity-to-owner figures agree."
+  human_checkpoints:
+    - "Preparer confirms the ownership map and that each K-1 received ties to the entity return that issued it"
+  role_evolution: Not described in the sources.
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-ENTITY-2026, title: "Instead Entity Agent: AI Tax Agent Per Client Entity", publisher: "Instead", type: vendor, url: "https://instead.com/products/entity-agent", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'Upload once', 'Full filing history', 'An agent for every entity type'" }
+    - { ref: INSTEAD-CPA-2026, title: "CPA Firms | Instead", publisher: "Instead", type: vendor, url: "https://instead.com/solutions/cpa-firms", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'One client, multiple entities, one conversation'" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "paragraph on repurposed client data" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). Single-vendor evidence; Instead's firm pages name no customers.
+
+- id: tax-compliance-individual-business-29
+  title: Quarterly estimated-tax projections for owners with safe-harbor analysis and flow-through impact
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [data-reporting, document-production]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Owners of S corporations and partnerships pay estimated tax on income that flows through from their entities. No
+    source found in this pass describes how firms build these projections today or how long they take.
+  solution: >-
+    Instead, an AI-native vendor, lists quarterly estimated-tax calculations for shareholders, federal and state,
+    including safe-harbor analysis and flow-through impact, and a ready-to-run workflow called "Build shareholder tax
+    estimates (TY26)" (INSTEAD-SCORP-2026).
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none published"
+      measures: "not applicable"
+      provenance: vendor-published
+      source_ref: INSTEAD-SCORP-2026
+  prerequisites:
+    - "Current-year entity financials and year-to-date owner payments"
+    - "Prior-year return for the safe-harbor test"
+  risks_and_guardrails:
+    - "OPR Alert 2026-19 requires verification of calculations AI produces (IRS-OPR-2026)."
+    - "One vendor page is the only source; safe-harbor thresholds were not checked against IRS Publication 505."
+  human_checkpoints:
+    - "Preparer reviews the projection assumptions before the owner is told what to pay"
+  role_evolution: Not described in the sources.
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-SCORP-2026, title: "Instead for S Corporations (1120-S): AI Tax Agent", publisher: "Instead", type: vendor, url: "https://webflow.instead.com/products/s-corporation", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'Tax estimates' and 'Ready to run' workflows" }
+    - { ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "Circular 230 section 10.22" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). Thinnest entry in the module: one vendor page. Kept because owner
+    estimates are a step no other entry covers. A search summary seen during research suggested 2026 law changes could
+    make a prior-year safe harbor underpay when 2025 deductions do not repeat; it is unverified and not used as
+    evidence.
+
+- id: tax-compliance-individual-business-30
+  title: AI-native platform replaces the firm's tax engine for entity returns and e-files them (1120-S, 1065, 1041)
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [transaction-processing, software-systems]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    WCG, a regional firm, describes a "last mile" problem: an AI that prepares a return in its own system cannot hand a
+    half-finished return to the firm's tax software, so the work restarts when the AI hits its ceiling
+    (WCG-NOTREADY-2026).
+  solution: >-
+    On 2026-05-08 Instead, an AI-native vendor, announced that it completed government testing to e-file and print
+    returns across federal, state and local jurisdictions for 1040, 1041, 1120, 1120-S and 1065, and says a firm can use
+    it as a complete replacement for legacy tax software (INSTEAD-EFILE-2026). Its CPA page lists CCH Axcess Tax,
+    UltraTax, Lacerte and others as engines it replaces (INSTEAD-CPA-2026).
+  outcomes:
+    - lever: speed
+      description: "Instead says it reduces complex return preparation from 4-6 hours to under 60 minutes and automates a workflow it says consumes 60-80% of a firm's staff time."
+      figure: "4-6 hours to under 60 minutes; 60-80% of staff time"
+      measures: "vendor statement about complex return preparation time and the share of staff time spent on preparation workflow; no sample or method"
+      provenance: vendor-published
+      source_ref: INSTEAD-EFILE-2026
+  prerequisites:
+    - "Willingness to move prior-year history and carryforwards into a new system"
+    - "Firm tolerance for single-vendor dependence for filing"
+  risks_and_guardrails:
+    - "WCG warns that a proprietary system can trap prior-year history, make comparison and review harder and force a restart when a return needs a human decision (WCG-NOTREADY-2026)."
+    - "The e-file approval is the company's statement; the research found no IRS statement confirming it (a search summary reported none)."
+  human_checkpoints:
+    - "CPA signs; reviewer works from the tool's workpapers"
+  role_evolution: >-
+    Instead's CPA page says its target user is one person handling hundreds of returns and rejects offshore and
+    contractor preparation (INSTEAD-CPA-2026).
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-EFILE-2026, title: "Instead becomes the first new tax platform in decades to pass 100% government testing across all U.S. jurisdictions", publisher: "Instead", type: vendor, url: "https://instead.com/news/instead-first-new-tax-platform-100-percent-us-efile-approvals-all-jurisdictions", date: "2026-05-08", access: full, locator: "paragraphs 1-3" }
+    - { ref: INSTEAD-CPA-2026, title: "CPA Firms | Instead", publisher: "Instead", type: vendor, url: "https://instead.com/solutions/cpa-firms", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'Cancel your tax software'" }
+    - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "vendor evaluation: proprietary-software 'last mile' paragraphs" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). A product announcement, not a deployment. It is the opposite design choice
+    to tax-compliance-individual-business-08 (agent inside the firm's software). Tax engines versus AI-native
+    replacement also bear on tax-data-technology.
+
+- id: tax-compliance-individual-business-31
+  title: Estate, gift and fiduciary returns (706, 709, 1041) prepared by agents from governing documents
+  archetype: tax
+  module: compliance-individual-business
+  function: service-delivery
+  work_types: [document-production, transaction-processing]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: >-
+    Some preparers are adding estate work: in the 2026 AICPA tax software survey, 20% of respondents
+    said they are expanding the services they offer, and 42% of those named estate, trust and gift financial planning
+    (AICPA-TAXSW-2026). No source describes AI preparing estate or gift returns in a firm.
+  solution: >-
+    Instead, an AI-native vendor, lists 1041 (fiduciary returns, beneficiary distributions) among the entity types its
+    agent covers and lists 706 and 709 as "Coming 2026" for tax year 2026 (INSTEAD-ENTITY-2026). Thomson Reuters'
+    fiduciary page describes fiduciary accounting software and a calendar for 1040, 1041, 706 and 709 deadlines; the
+    descriptions read did not describe an AI function (TR-FIDUCIARY-2026).
+  outcomes:
+    - lever: capacity
+      description: "none published"
+      figure: "none published"
+      measures: "not applicable"
+      provenance: vendor-published
+      source_ref: INSTEAD-ENTITY-2026
+  prerequisites:
+    - "Trust instruments, wills and valuations in readable form"
+  risks_and_guardrails:
+    - "706 and 709 are announced for a future tax year, not available (INSTEAD-ENTITY-2026)."
+    - "No independent test of AI on fiduciary or estate returns was found."
+  human_checkpoints:
+    - "Preparer reads the governing instrument against the draft allocation to beneficiaries"
+  role_evolution: Not described in the sources.
+  evidence_grade: C
+  sources:
+    - { ref: INSTEAD-ENTITY-2026, title: "Instead Entity Agent: AI Tax Agent Per Client Entity", publisher: "Instead", type: vendor, url: "https://instead.com/products/entity-agent", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'An agent for every entity type' (1041; 'Coming 2026' list)" }
+    - { ref: AICPA-TAXSW-2026, title: "2026 tax software survey (1,808 AICPA members; AI adoption questions)", publisher: "The Tax Adviser and Journal of Accountancy (AICPA)", type: survey, url: "https://www.thetaxadviser.com/issues/2026/aug/2026-tax-software-survey/", date: "2026-08-31", access: full, locator: "section 'Use of AI and other technical tools', last paragraphs on service expansion" }
+    - { ref: TR-FIDUCIARY-2026, title: "Fiduciary tax solutions (ONESOURCE)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/corporation-solutions/fiduciary-tax-solutions", date: "2026-10-21", access: full, locator: "page undated, date is access date; product tiles for ONESOURCE Fiduciary Accounting and Fiduciary Calendar" }
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 (mid-market widening). tax-compliance-individual-business-06 already covers 1041 through K-1s
+    (Accrual at Armanino); the addition here is estate and gift returns, which no other entry covers. Planning-side
+    estate tools are in tax-research-advisory-13 and -28. Search-only items not used as evidence: Datagrid and Digiqt
+    vendor blogs on trust tax agents (not opened).
