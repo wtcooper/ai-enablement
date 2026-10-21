@@ -22,15 +22,13 @@ updated: YYYY-MM-DD
 
 # Solution brief: <title>
 
-<!-- Schema: references/schemas/solution.md. Replace every <...>; unreached sections say "Not started". Cases by type, source and id only. Owners are roles. -->
+<!-- Schema: references/schemas/solution.md. Replace every <...>; unreached sections say "Not started". Cases by type, source and id only. Owners are roles. Tick a step only when all its exit criteria are met; otherwise list the open criteria after it. -->
 
 ## Summary
 
 <One screen: the problem in the owner's terms, decisions so far, the design, where things stand, what is next.>
 
 ## Progress
-
-<!-- Tick a step only when all its exit criteria are met. Otherwise list the open criteria after it, e.g. "(open: owner to confirm metric)". -->
 
 - [ ] 1 Frame the problem
 - [ ] 2 Build, buy or configure
@@ -49,8 +47,7 @@ updated: YYYY-MM-DD
 - **Volumes (last month or season):** <count> · rework or escalation share <%> · time per item <range> · <basis>
 - **Users and reviewers:** <who uses the output, who signs it off, who is professionally accountable>
 - **Error costs:** <which errors are costly or irreversible (advice, filing, payment, client send); who would notice>
-- **Fit checks:** rule or template baseline: <tried / why not enough> · judgment, tangled rules or unstructured
-  data: <which> · intern test: <result>
+- **Fit checks:** rule or template baseline: <tried / why not enough> · judgment, tangled rules or unstructured data: <which> · intern test: <result>
 - **Informal AI use today:** <what people already do; data risk noted>
 - **Pattern and rung hypothesis:** <pattern id> at <ladder id>; "not when" checks in the pattern file: <clear / issue>
 - **Constraints:** <regulatory, client terms, independence, confidentiality>

@@ -81,7 +81,8 @@ whatever policy exists; record the gaps you hit and offer the full path afterwar
 Save after **every** step: update the policy body and frontmatter (`step_completed`, `next_step`, `updated`), and any
 catalog or guardrails lines the step produced. Schemas: `references/schemas/policy.md`,
 `references/schemas/tool-catalog.md`, `references/schemas/vendor.md`. In YAML, put every free-text value in double
-quotes; an unquoted colon breaks the file.
+quotes; an unquoted colon breaks the file. After writing YAML or frontmatter, check it: parse it if a parser is
+available; otherwise re-read it for unquoted colons and `#`.
 
 ## The steps
 
