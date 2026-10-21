@@ -287,20 +287,14 @@ PWC-SECFAQ-2019, JOFA-NONATTEST-2016, IESBA-TECHREV-2023 and JOFA-PEEC-2026 are 
   GT-AISURVEY-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*.
 - Surveys and polls: ACCTIMES-GARTNER-2026, HELPNET-GARTNERIA-2026, SIKICH-IAPRIORITIES-2026, CPAPA-IAPOLL-2026,
   CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025*, IIA-PULSE-2026*, TR-FOPREPORT-2026*.
-- Community and press: IAC-SOXCHANGE-2026, IAC-SOXRELIANCE-2026, CPAPA-5Q-2026, CPAPA-AGENTSCLOSE-2026,
-  CPAPA-FULLPOP-2026, ICAEW-VOICES-2026*.
+- Community and press: IAC-SOXCHANGE-2026, IAC-SOXRELIANCE-2026, CPAPA-5Q-2026, CPAPA-AGENTSCLOSE-2026, CPAPA-FULLPOP-2026, ICAEW-VOICES-2026*.
 - Standard-setters, regulators, professional bodies: COSO-GENAI-2026, IIA-AIFW-2024, IIA-IPPF-2026, IIA-GAM-2026,
   IIA-UPSKILL-2026, JOFA-AIPA-2026, DART-TQA9561-2026, JOFA-ETHAI-2026, PCAOB-GENAI-2024, FRC-GENAINEWS-2026,
   FRC-GENAI-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024*, CUATRECASAS-AIOMNIBUS-2026*, PWC-SECFAQ-2019*,
   JOFA-NONATTEST-2016*, IESBA-TECHREV-2023*, JOFA-PEEC-2026*, ACFE-CANADA-2026*.
 - Academic and benchmarks: STANFORD-LEGALAI-2024*, HBS-JAGGED-2023*, VALS-FAB-2026*.
-- *MSFT-SOXAGENT-2026: Microsoft, FY26 Frontier Finance innovation story (SOX change-management testing agent), 2026, https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mcaps/documents/fy26/SOX-Change-Management-Testing-Agent.pdf
-- *AUDITBOARD-FOCUS-2025: AuditBoard (now Optro), 2026 Focus on the Future, 2025-11-12, https://auditboard.com/blog/top-takeaways-from-2026-focus-on-the-future
-- *IIA-PULSE-2026: Internal Audit Foundation, 2026 Pulse of Internal Audit, 2026-02, https://www.theiia.org/globalassets/site/resources/research-and-reports/pulse-of-internal-audit/2026-iia-pulse-of-internal-audit-report.pdf
-- *TR-FOPREPORT-2026: Thomson Reuters, Future of Professionals Report 2026 (report page, not the press release TR-FOPPR-2026), 2026-06-22, https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report
-- *ICAEW-VOICES-2026: ICAEW, on whether junior accountants are worried about their roles, 2026-06-10, https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/ai-are-junior-accountants-worried-about-roles
-- *NIST-AIRMF-2024: NIST, AI Risk Management Framework, 2024-07-26, https://www.nist.gov/itl/ai-risk-management-framework
-- *CUATRECASAS-AIOMNIBUS-2026: Cuatrecasas, note on the EU AI Omnibus (Regulation (EU) 2026/1744), 2026-07-24.
-- *STANFORD-LEGALAI-2024: Stanford and Yale researchers, Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools, 2024-05-30, https://arxiv.org/pdf/2405.20362
-- *HBS-JAGGED-2023: Harvard Business School, Navigating the Jagged Technological Frontier (working paper), 2023-09, https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
-- *VALS-FAB-2026: Vals AI, Finance Agent benchmark leaderboard (dated 2026-06-04, read 2026-10-21), 2026-06-04, https://www.vals.ai/benchmarks/finance_agent
+- *MSFT-SOXAGENT-2026: Microsoft, FY26 Frontier Finance innovation story (SOX change-management testing agent), 2026, https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mcaps/documents/fy26/SOX-Change-Management-Testing-Agent.pdf; *AUDITBOARD-FOCUS-2025: AuditBoard (now Optro), 2026 Focus on the Future, 2025-11-12, https://auditboard.com/blog/top-takeaways-from-2026-focus-on-the-future
+- *IIA-PULSE-2026: Internal Audit Foundation, 2026 Pulse of Internal Audit, 2026-02, https://www.theiia.org/globalassets/site/resources/research-and-reports/pulse-of-internal-audit/2026-iia-pulse-of-internal-audit-report.pdf; *TR-FOPREPORT-2026: Thomson Reuters, Future of Professionals Report 2026 (report page, not the press release TR-FOPPR-2026), 2026-06-22, https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report
+- *ICAEW-VOICES-2026: ICAEW, on whether junior accountants are worried about their roles, 2026-06-10, https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/ai-are-junior-accountants-worried-about-roles; *NIST-AIRMF-2024: NIST, AI Risk Management Framework, 2024-07-26, https://www.nist.gov/itl/ai-risk-management-framework
+- *CUATRECASAS-AIOMNIBUS-2026: Cuatrecasas, note on the EU AI Omnibus (Regulation (EU) 2026/1744), 2026-07-24; *STANFORD-LEGALAI-2024: Stanford and Yale researchers, Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools, 2024-05-30, https://arxiv.org/pdf/2405.20362
+- *HBS-JAGGED-2023: Harvard Business School, Navigating the Jagged Technological Frontier (working paper), 2023-09, https://www.hbs.edu/faculty/Pages/item.aspx?num=64700; *VALS-FAB-2026: Vals AI, Finance Agent benchmark leaderboard (dated 2026-06-04, read 2026-10-21), 2026-06-04, https://www.vals.ai/benchmarks/finance_agent
