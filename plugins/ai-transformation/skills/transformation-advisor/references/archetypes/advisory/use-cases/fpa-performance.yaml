@@ -524,7 +524,7 @@
     planning on a driver-based model; a candidate new pattern (''scenario-simulation''). The Aprio posting is routed
     from the client-accounting-services research.'
 - id: advisory-fpa-performance-04
-  title: Agents collect budget inputs, route approvals and consolidate submissions
+  title: Budget input collection and approval routing automated inside the planning platform (vendor claim)
   archetype: advisory
   module: fpa-performance
   function: service-delivery
@@ -539,8 +539,9 @@
   problem: Armanino's white paper describes budgets emailed as spreadsheets to dozens of people, with divisions
     adding lines that break links, and consolidation that takes manual effort and lacks an audit trail and role-based
     access.
-  solution: Abacum says its workflow layer automates budget input collection, approval routing and cross-team collaboration.
-    Armanino pitches software-driven FP&A transformation to replace the emailed-spreadsheet process.
+  solution: Abacum says its 'Workflow Intelligence' layer, part of its AI layer, automates budget input collection,
+    approval routing and cross-team collaboration; it does not say agents do this or describe how consolidation
+    changes. Armanino pitches software-driven FP&A transformation to replace the emailed-spreadsheet process.
   outcomes:
   - lever: speed
     description: none published
@@ -586,8 +587,9 @@
     locator: Paragraph naming Armanino (top 20) as a partner
   last_reviewed: '2026-10-20'
   notes: 'Firm types: Armanino (described as top 20 in Rillet''s release), vendor Abacum. Much of the described
-    workflow automation is conventional planning-platform functionality; the AI part is Abacum''s claim that agents
-    run it.'
+    workflow automation is conventional planning-platform functionality; the AI part is Abacum''s claim that its
+    AI layer automates it (the release names agents only for anomaly flagging and model changes, not for budget
+    collection).'
 - id: advisory-fpa-performance-05
   title: Natural-language reporting, document search and document-analysis agents inside the planning platform
   archetype: advisory
@@ -690,12 +692,12 @@
   change_scope: step
   runtime_class: personal-assistant
   maturity: announced
-  problem: Business users wait in the finance queue for answers, and finance staff already use general-purpose assistants
-    outside governed data.
+  problem: Abacum says business users otherwise wait in the finance queue for answers, and that governed financial
+    context is missing from the tools teams already use.
   solution: Abacum says its workflow layer extends to Claude, ChatGPT and Slack through MCP, so users get governed
     financial context in tools they already use. Xero integrated Anthropic's Claude into its product on May 12,
-    2026 per Accountex coverage. Karbon's Byron Patrick ran an ENGAGE session on building automations live with
-    Claude Code, and the Accounting Technology Lab hosts describe a Copilot agent demo showing access to Claude
+    2026 per Accountex coverage. Karbon's Byron Patrick was scheduled to run an ENGAGE session on building automations
+    live with Claude Code, and the Accounting Technology Lab hosts describe a Copilot agent demo showing access to Claude
     and OpenAI models.
   outcomes:
   - lever: experience

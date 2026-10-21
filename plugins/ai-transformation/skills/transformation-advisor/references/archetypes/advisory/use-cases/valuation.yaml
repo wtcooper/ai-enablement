@@ -1215,3 +1215,97 @@
     year is context about scale, not an outcome of REVS. Neither firm is described as an audit firm; an accounting
     firm selling this model to its own SEC-registrant audit clients would face Rule 2-01(c)(4)(iii)
     (SEC-RULE2-01-2026). In-house automation of the same work is advisory-valuation-13.
+
+- id: advisory-valuation-15
+  title: "An accounting firm's valuation practice builds a vendor's AI-enabled analytics into its valuation methodology for fund and portfolio clients (CohnReznick with 73 Strings)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    CohnReznick's valuation managing director says general partners are asked for valuations that are more frequent,
+    faster and more traceable amid investor scrutiny, tougher audit expectations and compressed timelines, often
+    without matching budget or headcount (COHNREZNICK-VALUATION-2026).
+  solution: >-
+    CohnReznick announced (page dated 2026-03-26) that its Valuation Advisory practice is incorporating 73 Strings'
+    valuation analytics, which it calls AI-driven and AI-enabled, into its established methodologies to analyse
+    large and complex data sets, increase consistency across valuation models and give clients deeper insight into
+    valuation drivers, across private equity, private credit, public company and complex asset classes. It says the
+    technology accelerates certain aspects of the valuation process (COHNREZNICK-VALUATION-2026;
+    CPAPA-COHNREZNICK-2026). 73 Strings shows CohnReznick among the customer logos on its home page (S73-HOME-2026).
+    Firm type: US accounting and advisory firm; the valuation practice sits in CohnReznick Advisory LLC, in an
+    alternative practice structure with the licensed CPA firm CohnReznick LLP (COHNREZNICK-VALUATION-2026).
+  outcomes:
+    - lever: quality
+      description: "CohnReznick says the technology lets it deliver faster, more transparent and more defensible valuations and strengthen documentation; no measurement"
+      figure: "none published"
+      measures: "Firm's own claim in a press release; no sample, baseline or method"
+      provenance: self-reported
+      source_ref: COHNREZNICK-VALUATION-2026
+  prerequisites:
+    - "A third-party analytics platform integrated into the firm's established valuation methodologies (COHNREZNICK-VALUATION-2026)"
+  risks_and_guardrails:
+    - "CohnReznick says the technology preserves full independence, professional judgment and oversight by its valuation professionals (COHNREZNICK-VALUATION-2026)"
+    - "73 Strings describes traceable calculations, a deterministic core valuation engine and human judgement central to valuation decisions (S73-CALLISTO-2026)"
+    - "The release says the valuation group works closely with the firm's assurance practice; for an SEC-registrant audit client, valuation services remain barred where results will be subject to audit procedures (COHNREZNICK-VALUATION-2026; SEC-RULE2-01-2026)"
+  human_checkpoints:
+    - "Valuation professionals keep judgment on complex inputs, scenario analysis and conclusions (COHNREZNICK-VALUATION-2026)"
+  role_evolution: >-
+    CohnReznick says the technology frees its teams to spend more time on complex inputs, scenario analysis,
+    defensible conclusions and portfolio-level insight (COHNREZNICK-VALUATION-2026).
+  evidence_grade: B
+  sources:
+    - ref: COHNREZNICK-VALUATION-2026
+      title: "CohnReznick's Valuation Advisory practice enhances valuation services through advanced analytics technology"
+      publisher: "CohnReznick"
+      type: firm
+      url: "https://www.cohnreznick.com/insights/cohnreznicks-valuation-advisory-enhanced-through-ai-analytics/"
+      date: "2026-03-26"
+      access: full
+      locator: "paragraphs 1-5 (73 Strings; Cohen, Nielsen and Hirsch quotes); bullet list; closing disclaimer (practice structure)"
+    - ref: CPAPA-COHNREZNICK-2026
+      title: "CohnReznick's Valuation Advisory Practice Enhances Valuation Services"
+      publisher: "CPA Practice Advisor"
+      type: press
+      url: "https://www.cpapracticeadvisor.com/2026/03/24/cohnreznicks-valuation-advisory-practice-enhances-valuation-services/180187/"
+      date: "2026-03-24"
+      access: full
+      locator: "article body (same text as the release)"
+    - ref: S73-HOME-2026
+      title: "73 Strings home page (undated; date = access date)"
+      publisher: "73 Strings"
+      type: vendor
+      url: "https://73strings.com/"
+      date: "2026-10-21"
+      access: full
+      locator: "customer logo strip (CohnReznick)"
+    - ref: S73-CALLISTO-2026
+      title: "73 Strings Acquires Callisto to Expand Agentic AI Platform"
+      publisher: "73 Strings"
+      type: vendor
+      url: "https://73strings.com/insights/news/73-strings-acquires-callisto-accelerating-investment-into-agentic-ai-for-private-markets/"
+      date: "2026-09-24"
+      access: full
+      locator: "paragraph 4 (deterministic core engine, human judgement)"
+    - ref: SEC-RULE2-01-2026
+      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      publisher: "SEC (Regulation S-X)"
+      type: regulator
+      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      date: "2026-10-20"
+      access: full
+      locator: "paragraph (c)(4)(iii)"
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Added 2026-10-21 in verification; the deep dive missed this release, which assurance-specialists-02 already
+    holds. Grade B: a named firm says it has implemented the platform in its practice ('This implementation'), and
+    the vendor lists it as a customer; there is no measurement, no named engagement and no description of what the AI
+    does beyond 'AI-driven, advanced analytics'. assurance-specialists-02 grades the same release C and 'announced';
+    the two files should be aligned in the next pass. Trade press ran the text on 2026-03-24, two days before the date
+    on the firm's page. Pattern 'other': vendor AI analytics embedded in a valuation methodology. Related:
+    assurance-specialists-02; advisory-valuation-13 (the same vendor, used in-house by an investment manager).

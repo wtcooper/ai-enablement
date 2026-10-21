@@ -625,3 +625,53 @@
     Pattern: other (a new client segment created by AI; no AI step in the work). Example types: accounting firms (Moss
     Adams, now part of Baker Tilly; Eide Bailly) and a vendor (Thomson Reuters). Graded C, not B: the firm pages are
     marketing content and show no engagement or client count.
+
+- id: tax-multistate-private-14
+  title: State pass-through entity tax (PTET) election modelling for owners, with each state's treatment checked
+  archetype: tax
+  module: multistate-private
+  function: service-delivery
+  work_types: [expert-judgment, data-reporting]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Owners hear that a PTET election (a state tax paid at the entity level instead of by the owners) "saves tax" and
+    want to know whether it is worth it for their business; generic calculators handle W-2 cases only (GELT-CALC-2025).
+    State treatment differs: in a model answer on the Vals benchmark, New York's PTET credit is refundable and
+    California's is not, for tax year 2025 (VALS-TAXAGENT-2026).
+  solution: >-
+    Gelt, an AI-native tax firm, launched a hub of AI-powered calculators on 2025-12-29, including a PTET calculator,
+    and says owners can move from estimate to expert execution with the firm (GELT-CALC-2025). Filed, a vendor, shows a
+    sample planning report with a Maryland PTET election and an estimated saving for an illustrative client
+    (FILED-HOME-2026).
+  outcomes:
+    - {lever: growth, description: "Gelt says the calculators let owners estimate the dollar value of a strategy before engaging the firm; no conversion figure is published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: GELT-CALC-2025}
+    - {lever: cost, description: "Illustrative saving in a vendor's sample planning report, not a client result", figure: "$22,222 per year (illustrative client)", measures: "estimated annual saving from a Maryland PTET election shown in Filed's sample tax planning report", provenance: vendor-published, source_ref: FILED-HOME-2026}
+  prerequisites:
+    - "Owner income, wages and state data (GELT-CALC-2025 describes estimates built from the owner's own figures; the data list is inferred)"
+  risks_and_guardrails:
+    - "OPR Alert 2026-19 lists Circular 230 section 10.37 (written advice must rest on reasonable factual and legal assumptions and reasonable consideration of all relevant facts) among the duties that apply (IRS-OPR-2026); OPR covers federal practice (KTS-OPR-2026)"
+    - "Estimated savings in the sources are vendor or illustrative figures (GELT-CALC-2025; FILED-HOME-2026)"
+    - "State-by-state answers are where models do worst; see tax-research-advisory-04 and tax-multistate-private-07 (VALS-TAXAGENT-2026)"
+  human_checkpoints:
+    - "Adviser confirms facts, each state's treatment and the assumptions behind any savings figure before it reaches the owner"
+  role_evolution: >-
+    Gelt describes owners moving from their own estimate to expert execution with the firm (GELT-CALC-2025).
+  evidence_grade: C
+  sources:
+    - {ref: GELT-CALC-2025, title: "Gelt Launches Tax Calculator Hub to Help Business Owners Quantify Advanced Tax Strategies", publisher: "Gelt", type: vendor, url: "https://www.joingelt.com/blog/ai-tax-calculators-business-owners", date: "2025-12-29", access: full, locator: "overview bullets and 'Turning Complex Tax Strategies Into Clear Dollar Estimates'"}
+    - {ref: FILED-HOME-2026, title: "AI Tax Preparation & Review Software | Filed", publisher: "Filed", type: vendor, url: "https://www.filed.com", date: "2026-10-21", access: full, locator: "page undated, date is access date; sample report Strategy 3"}
+    - {ref: VALS-TAXAGENT-2026, title: "Tax Agent Bench: Agentic US corporate tax research (leaderboard and methodology)", publisher: "Vals AI", type: vendor, url: "https://www.vals.ai/benchmarks/tax_agent_bench", date: "2026-10-20", access: full, locator: "Tool Use section on P-004 (read via mirror)"}
+    - {ref: IRS-OPR-2026, title: "Introductory Guidelines for Responsible AI Use in Federal Tax Practice (OPR Alert 2026-19)", publisher: "IRS Office of Professional Responsibility", type: regulator, url: "https://content.govdelivery.com/accounts/USIRS/bulletins/41d6e70", date: "2026-06-24", access: full, locator: "item 5, section 10.37"}
+    - {ref: KTS-OPR-2026, title: "Using AI in Tax Practice: What Practitioners Need to Know Before Filing Season", publisher: "Kilpatrick Townsend & Stockton", type: firm, url: "https://ktslaw.com/blog/kilpatricks-state-and-local-tax-blog/2026/9/using-ai-in-tax-practice-what-practitioners-need-to-know-before-filing-season", date: "2026-09-29", access: full, locator: "paragraphs on the OPR alert's scope"}
+  last_reviewed: "2026-10-21"
+  notes: >-
+    Routed from the tax widen pass (mm-widen-tax.md section 4), where the combined S-election and PTET calculator entry
+    sits in research-advisory under the provisional id tax-research-advisory-new-01; its final id is set by that
+    module's synthesis. This entry keeps only the state PTET angle. Example types: an AI-native tax firm (Gelt) and a
+    vendor (Filed); no top-100, regional or PE-backed firm was found modelling PTET elections with AI. Maturity follows
+    the widen pass (the calculators are live); the grade is C because no client outcome is published. Composite and
+    nonresident withholding returns for owners sit in compliance-individual-business.
