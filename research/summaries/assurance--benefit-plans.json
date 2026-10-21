@@ -1,0 +1,210 @@
+[
+ {
+  "id": "assurance-benefit-plans-01",
+  "title": "Test every participant and contribution record in 401(k) plan audits (Autire)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Participant data (15.6 percent of sampled audits) and contributions (15.3 percent) had the highest deficiency rates in the Department of Labor's 2023 audit quality study; firms traditionally sample and test.",
+  "approach": [
+   "Autire, a plan-audit platform, tests every available participant record up front and ties each flagged item to source data with dollar impact.",
+   "The vendor says tests run on hard-coded logic, so re-running on the same data gives the same result, unlike generic AI.",
+   "Vendor case studies: Belfint's average hours per audit fell from 80 to 54; Rea cut hours per audit by 40 percent (vendor-published).",
+   "The auditor decides what each flagged item means and reviewers sign off; Rea's managing director calls 100 hours to 30 overnight unrealistic."
+  ],
+  "who": "Belfint, Lyons & Shuman, Rea, Autire"
+ },
+ {
+  "id": "assurance-benefit-plans-02",
+  "title": "AI exception analysis grouping flagged plan-audit exceptions by root cause (Autire)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "After testing, auditors open source files, cross-reference payroll and recordkeeper reports and decide whether each flagged item matters; on complex plans this can take several hours.",
+  "approach": [
+   "Autire released Advanced AI in June 2026: it groups exceptions by failure type and shows whether an issue is isolated or systemic.",
+   "Auditors review by pattern and decide what to do with the findings and which go to the client.",
+   "The vendor says it uses Anthropic models with guardrails that filter personal data, and does not train on audit data.",
+   "Vendor-published testimonials: 50 hours per audit, about half the time before Autire, and 30 minutes to resolve flagged results; neither isolates AI."
+  ],
+  "who": "Autire (vendor); unnamed firms"
+ },
+ {
+  "id": "assurance-benefit-plans-03",
+  "title": "Pull payroll and recordkeeper data from source systems instead of requesting files",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Plan-audit testing starts from sponsors' payroll registers, census files and recordkeeper reports, and Sikich names manual requests and follow-ups as something to reduce.",
+  "approach": [
+   "Sikich says it has relationships with payroll and recordkeeping platforms enabling audit-request automation, and uses standardised payroll data to cut manual requests.",
+   "Vendors describe the same step: Autire lists integrations that pull payroll and recordkeeper data; AuditMiner says it standardises data across providers.",
+   "Trullion says its Data Match engine matches contribution, hire-date and vesting data across payroll registers, plan documents and custodian statements.",
+   "No outcome figures are published; an ICPAS author recommends testing the completeness and accuracy of participant data, including data a tool pulls."
+  ],
+  "who": "Sikich, Autire, AuditMiner, Trullion"
+ },
+ {
+  "id": "assurance-benefit-plans-04",
+  "title": "Extract trust-statement PDFs into a trial balance and reconcile it (Autire)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "The trust report arrives as a PDF in each recordkeeper's own format; someone builds a trial balance from it, pulls the Form 5500, lines the two up and chases differences.",
+  "approach": [
+   "Autire says an uploaded trust report is read to extract balances, contributions and distributions, checked, and turned into a trial balance.",
+   "The trial balance is shown beside other balances, with a combined view across several service providers and mid-year recordkeeper changes.",
+   "Autire's team builds each provider's format in, so the auditor does not map fields on each engagement.",
+   "The vendor says the step takes minutes instead of hours (no firm figure); a reviewing manager checks the reconciled numbers make sense."
+  ],
+  "who": "Autire (vendor claim)"
+ },
+ {
+  "id": "assurance-benefit-plans-05",
+  "title": "Turn recordkeeper and payroll reports into standard workpapers (AuditMiner at Anders CPAs)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Setting up plan-audit workpapers meant hours of manual data entry, and audits could start with incomplete client data.",
+  "approach": [
+   "AuditMiner says uploading plan reports generates up to ten automated workpapers, standardised across recordkeepers, and payroll reports for testing.",
+   "Anders CPAs + Advisors automated workpaper setup and SOC report analysis with it.",
+   "Vendor-published: Anders saved hundreds of hours, for an unspecified period and engagements.",
+   "The sources do not describe machine learning or a language model, or a review step beyond staff testing instead of keying data."
+  ],
+  "who": "Anders CPAs + Advisors, AuditMiner"
+ },
+ {
+  "id": "assurance-benefit-plans-06",
+  "title": "Citation-backed assistant for plan documents, amendments and routine rule questions (Kimberlin, Sensiba)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Plan documents can run past 150 pages with several amendments and detailed eligibility and compensation definitions; auditors scrolled for provisions, hand-keyed terms and asked seniors to confirm readings.",
+  "approach": [
+   "Kimberlin uses CoCounsel Audit to find which plan provisions and amendments apply, including SECURE 2.0 amendments, with links to the source page.",
+   "Sensiba built CoCounsel templates for plan adoption agreements, and over 100 of its audit professionals use CoCounsel.",
+   "One Kimberlin auditor estimates a plan-document error check fell from 60-90 minutes to about 15 minutes (vendor-published).",
+   "Auditors check the cited page and section before relying on an answer."
+  ],
+  "who": "Kimberlin Company, Sensiba LLP, Thomson Reuters"
+ },
+ {
+  "id": "assurance-benefit-plans-07",
+  "title": "AI-assisted reading of recordkeeper and administrator SOC 1 reports for plan audits",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Plan audits lean on recordkeepers' and third-party administrators' SOC 1 reports, and overreliance on service providers was a deficiency theme in the Department of Labor's 2023 study.",
+  "approach": [
+   "Kimberlin prompts CoCounsel Audit to map SOC 1 report controls to its testing focus areas, then copies the result into workpapers.",
+   "AuditMiner sells over 1,000 reviewed SOC toolkits turning reports into Excel workbooks and procedures; its pages describe senior-CPA review, not AI.",
+   "No outcome figure is published for SOC 1 review alone (vendor-published).",
+   "AuditMiner's toolkit terms say the auditor must review reliance decisions and conclusions; Kimberlin's case study does not describe its review step."
+  ],
+  "who": "Kimberlin Company, AuditMiner"
+ },
+ {
+  "id": "assurance-benefit-plans-08",
+  "title": "Auto-generated risk assessment from completed plan-audit planning procedures (Autire)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Practitioners reported grappling with applying SAS 145, the US risk-assessment standard, to plan audits, especially identifying controls, IT systems and related parties.",
+  "approach": [
+   "Autire announced in December 2024 an automated risk assessment, calculated as a by-product of the standards-based procedures performed.",
+   "It includes governance questions, a controls and walkthrough questionnaire, SOC assessments and preliminary analytics, with responses referenced to substantive procedures.",
+   "Vendor-published capability claims only; no firm results. The release does not describe how the auditor reviews or concludes on the generated assessment."
+  ],
+  "who": "Autire (vendor claim)"
+ },
+ {
+  "id": "assurance-benefit-plans-09",
+  "title": "Plan-audit file built on a shared methodology with auto-drafted statements (DAS EBP)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Caseware positions DAS EBP against outdated templates; the Department of Labor's 2023 study found deficiency rates fall as a firm's plan-audit volume rises.",
+  "approach": [
+   "DAS EBP uses a plan profile to tailor the file and draft statements and disclosures from the trial balance.",
+   "Citrin Cooperman announced on 13 July 2026 that it implemented DAS including DAS EBP; the release names no plan-audit AI agent.",
+   "Caseware's releases say Withum, EisnerAmper and PKF O'Connor Davies also adopted DAS; no hours, review-note or inspection results are published (vendor-published).",
+   "Professionals complete the plan profile, run the programs and review the drafted financials."
+  ],
+  "who": "Citrin Cooperman, Withum, EisnerAmper, PKF O'Connor Davies"
+ },
+ {
+  "id": "assurance-benefit-plans-10",
+  "title": "Plan-specific request lists and client portals to cut what sponsors must send",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Plan audits run on long request lists chased by email, landing in a seasonal scramble of about four months of requests, reviews and follow-ups.",
+  "approach": [
+   "Sikich uses the Suralink platform to coordinate data gathering with custom requests, progress views, per-person assignments and chat in place of email.",
+   "Autire sends plan-specific requests through a portal with reminders and status tracking.",
+   "Belfint's audit manager says audits can finish in two weeks if sponsors supply initial documents (vendor-published; a capability, not an average).",
+   "Requests can be assigned to named people, with lead time so data arrives in the correct format."
+  ],
+  "who": "Sikich, Belfint, Suralink, Autire"
+ },
+ {
+  "id": "assurance-benefit-plans-11",
+  "title": "Firm methodology set once and enforced across plan audits (Autire)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "The Department of Labor found peer review does not help identify deficient plan audits: 96 of 105 deficient audits had a Pass peer review.",
+  "approach": [
+   "Autire says materiality, risk logic and testing conclusions are set once at firm level and cascade to every engagement.",
+   "The vendor says its quality materials get an annual external review, and Department of Labor inspection and peer review support is included.",
+   "The vendor claims zero peer review or Department of Labor findings attributed to its platform; the claim is unverified (vendor-published).",
+   "Deviating from the configured workflow needs a deliberate override by a person; Belfint added its own extra memos."
+  ],
+  "who": "Autire, Belfint (vendor claim)"
+ },
+ {
+  "id": "assurance-benefit-plans-12",
+  "title": "Specialist plan-audit firm markets its own AI-assisted platform (Metz CPA, EBPAudit.ai)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Plan audits are concentrated: in 2020, 133 firms with 100 or more plan audits did 47,982 of 86,863 audits, with far lower deficiency rates than firms with one or two.",
+  "approach": [
+   "Metz CPA, which calls itself a Top 100 plan-audit firm, markets fixed three-year pricing, a written guarantee and its proprietary EBPAudit.ai platform.",
+   "It says the platform streamlines the audit and removes back-and-forth (self-reported); no turnaround figure is given.",
+   "How the AI is applied and what human checks exist are not described."
+  ],
+  "who": "Metz CPA"
+ },
+ {
+  "id": "assurance-benefit-plans-13",
+  "title": "Form 5500 search to scope plan audits and find prospects (AuditMiner)",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Firms need plan information to scope a complex engagement and to find retirement plans that fit their client profile.",
+  "approach": [
+   "AuditMiner's Plan Research product combines Form 5500 search with plan analytics, historical filings and audit reports.",
+   "It is used to evaluate a current engagement and to find new business.",
+   "Form 5500 is the annual return a plan files with the Department of Labor, which carries the audit report.",
+   "Product page only (vendor-published): no outcome figures, and no human checkpoint is described."
+  ],
+  "who": "AuditMiner (vendor claim)"
+ },
+ {
+  "id": "assurance-benefit-plans-14",
+  "title": "Idea: assess provider AI through SOC 1 reports and risk assessment",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: plan data and controls sit with service providers whose AI use can change the data and controls the auditor relies on.",
+  "approach": [
+   "Idea: use the AICPA's September 2026 Q&A on service-organisation AI in SOC engagements to ask providers whether AI is in the service.",
+   "Idea: use the AICPA's October 2026 practice aid on a client's AI in reporting and controls to judge SOC report coverage.",
+   "A recordkeeper's general counsel says some recordkeepers may use AI in call centres, fraud detection and monitoring; no plan-audit-specific guidance was found.",
+   "AuditMiner's toolkit terms say reliance decisions and conclusions must be reviewed by the auditor."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-benefit-plans-15",
+  "title": "Idea: year-round plan-data monitoring shared between recordkeeper, administrator and auditor",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: failed nondiscrimination tests are typically found months after the plan year closes, and plan audits cluster in a July-to-October window.",
+  "approach": [
+   "Idea: reconcile contribution data monthly and track eligibility changes in real time, then extend that to a feed the auditor can use.",
+   "An audit-support firm recommends these readiness practices to sponsors; they are sponsor-side, not auditor practice.",
+   "A recordkeeper's general counsel says newer digital recordkeepers are building AI into real-time compliance monitoring, which needs clean data and ongoing integration.",
+   "No auditor has described acting on such a feed; no human checkpoint is described."
+  ],
+  "who": "No named deployment"
+ }
+]
