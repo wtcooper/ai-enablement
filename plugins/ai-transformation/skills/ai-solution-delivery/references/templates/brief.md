@@ -9,6 +9,7 @@ owners: { business: "", delivery: "", support: null }
 classification:
   { archetype: null, modules: [], work_types: [], pattern: other, ladder: assist, ladder_target: null,
     change_scope: step, runtime_class: personal-assistant }
+ai_use: null
 sourcing: undecided
 tools: []
 vendor_evaluations: []
@@ -28,6 +29,8 @@ updated: YYYY-MM-DD
 <One screen: the problem in the owner's terms, decisions so far, the design, where things stand, what is next.>
 
 ## Progress
+
+<!-- Tick a step only when all its exit criteria are met. Otherwise list the open criteria after it, e.g. "(open: owner to confirm metric)". -->
 
 - [ ] 1 Frame the problem
 - [ ] 2 Build, buy or configure

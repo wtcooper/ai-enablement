@@ -36,14 +36,15 @@ classification:
   modules: [ id ]
   work_types: [ id ]
   pattern: id                     # the shared pattern file whose checkpoints the design uses
-  ladder: assist | augment | automate | delegate          # the rung at launch
+  ladder: assist | augment | automate | delegate | null   # the rung at launch; null when ai_use is none
   ladder_target: assist | augment | automate | delegate | null   # a rung evidence may later earn
   change_scope: step | process | model
-  runtime_class: id
+  runtime_class: id | null        # null when ai_use is none
+ai_use: none | null               # none: rules, a template or an existing tool meets the bar; null: AI is in scope
 sourcing: buy | configure | build-on-model | build-custom | undecided
 tools: [ string ]                 # overlay catalog entries, or runtime-class descriptions
 vendor_evaluations: [ path ]      # e.g. overlay/vendors/<vendor>.md, written by ai-governance
-risk_tier: string | null          # tier id from overlay/policy.md (e.g. tier-3); null until set
+risk_tier: string | null          # tier id from overlay/policy.md (e.g. tier-3); null until set, or when ai_use is none
 status: in-progress | live | paused | stopped | retired
 step_completed: 0-6
 next_step: 1-6 | null
@@ -99,7 +100,10 @@ These values are local to the solution files. They are not in the shared `vocabu
 - **One folder per solution.** `id` matches the folder name and, where one exists, the portfolio item id.
   `source` keeps the back-link to the portfolio item and the advisor option; never copy their content.
 - **State.** After every step set `step_completed`, `next_step` and `updated` in `brief.md`, and tick the step in
-  its Progress list. After step 6, `next_step: null`; later reviews add numbered sections to `post-launch.md` and
+  its Progress list. `step_completed` is the last step whose exit criteria are all met, with every step before it
+  also met. While an exit criterion is open, do not advance `step_completed` or tick the step: list the open
+  criteria beside the unticked step. With the user's agreement you may work ahead; `next_step` names the step to
+  resume. After step 6, `next_step: null`; later reviews add numbered sections to `post-launch.md` and
   update its frontmatter.
 - **Ids from the shared vocabulary.** `classification` values must be ids from `vocabulary.yaml`. If the step 3
   design changes the rung or runtime class from the advisor option, record the change and the reason in the
@@ -107,8 +111,13 @@ These values are local to the solution files. They are not in the shared `vocabu
 - **Owners are roles.** Never record performance judgments about named individuals (rule 1).
 - **Risk tier** is the tier id from `overlay/policy.md` (the **ai-governance** skill defines `tier-1` to
   `tier-4`), copied, never invented here. With no policy, leave `null` and hand off to **ai-governance**.
-- **Portfolio link.** When `source.portfolio_item` is set, the portfolio item's `solution` field points back to
-  `solutions/<id>/`; the **ai-portfolio** skill writes that field and the benefits rows, not this skill.
+- **No AI needed.** When step 1 or 2 finds that rules, a template or an existing tool meets the bar, set
+  `ai_use: none`, `ladder: null`, `ladder_target: null`, `runtime_class: null` and `risk_tier: null`; no risk
+  tier handoff is needed. Keep `pattern` and `sourcing` as they describe the work.
+- **Portfolio link.** A brief may open while the portfolio item is in `discover` (as `g1` evidence) or later.
+  When `source.portfolio_item` is set, hand back to **ai-portfolio** as soon as the brief opens, and add a row to
+  the brief's Handoffs table. ai-portfolio then sets the item's `solution` to `solutions/<id>/` at once; it writes
+  that field and the benefits rows, not this skill.
 - **No dates as deadlines.** `updated` is a timestamp. Review triggers are events (`next_review_when`), never
   calendar dates.
 - **Quote free text.** Put every free-text value in double quotes; an unquoted colon breaks the file.
@@ -139,6 +148,7 @@ classification:
   ladder_target: automate
   change_scope: step
   runtime_class: workflow-automation
+ai_use: null
 sourcing: configure
 tools: [ "Evidence-matching feature of the firm's approved audit platform (catalog entry)" ]
 vendor_evaluations: []

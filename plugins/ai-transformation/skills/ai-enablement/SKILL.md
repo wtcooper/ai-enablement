@@ -86,7 +86,8 @@ show (`../transformation-advisor/references/library/journey-stages.md`). Play it
 
 Save after **every** step: update the program body and frontmatter (`step_completed`, `next_step`, `updated`). A
 session can stop at any point and resume from the files. Schemas: `references/schemas/measures.md` and
-`references/schemas/workflow.md`. In YAML, put every free-text value in double quotes.
+`references/schemas/workflow.md`. In YAML, put every free-text value in double quotes. After writing a YAML file
+or frontmatter, check it: parse it if a parser is available; otherwise re-read it for unquoted colons and `#`.
 
 ## The steps
 

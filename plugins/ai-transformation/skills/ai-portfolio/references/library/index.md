@@ -82,6 +82,10 @@ step 1.
 `tier-1` to `tier-4`, set by the consequence of an error and who relies on the output). Without a policy, place the
 item against ai-governance's default tiers, mark the tier provisional in the intake record, and offer ai-governance.
 
+**`ai_use`**: `none` when the rules-or-AI check finds that rules, a template or an existing tool is enough; then
+`ladder`, `runtime_class` and `risk_tier` are null and the review counts the item apart. `null` (the default)
+means AI is in scope.
+
 **Early-warning `type`**: `slippage`, `cost-overrun`, `performance-shortfall` [HBR-2026].
 
 ## 3. Benefits values

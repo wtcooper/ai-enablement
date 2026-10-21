@@ -139,7 +139,7 @@ items:
 - **Sequencing** uses `depends_on` and `next_gate`, never dates or deadlines. `updated` records when the entry
   last changed; it is not a target.
 - Portfolio-only values (`item_class`, `horizon`, `stage`, `status`, gate ids, `outcome`, early-warning types,
-  `gate_path`) are defined in `../library/index.md` §2.
+  `gate_path`, `ai_use`) are defined in `../library/index.md` §2.
 
 ## 3. Example
 

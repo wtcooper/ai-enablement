@@ -57,7 +57,8 @@ write a plan they can act on. Speak plainly. Method terms are for you, not for t
 Save after **every** phase: update the plan body and frontmatter (`phase_completed`, `next_phase`,
 `updated`). A session can stop at any point and resume from the file. Schemas:
 `references/schemas/plan.md` and `references/schemas/opportunities.md`. In YAML, put every free-text value
-(titles, descriptions, assumptions, actions) in double quotes; an unquoted colon breaks the file.
+(titles, descriptions, assumptions, actions) in double quotes; an unquoted colon breaks the file. After
+writing a YAML file, check it: parse it if a parser is available; otherwise re-read it for unquoted colons.
 
 ## Phase 0 · Onboard
 

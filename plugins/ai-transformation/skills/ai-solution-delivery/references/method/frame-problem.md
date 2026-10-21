@@ -41,10 +41,12 @@ right answer at all, before anyone compares tools.
 
 ## 2. How to run it
 
-1. **Start from what exists.** Read the source item: the portfolio entry in `portfolio/portfolio.yaml` or the
-   option in `opportunities.yaml` (pattern, ladder, runtime class, value range, human checkpoints, role
-   evolution, evidence). If the advisor mapped the process, read the Map section of `transformation-plan.md`.
-   Play back what you already know in three lines and ask only for what is missing.
+1. **Start from what exists.** Read the source item: the portfolio entry in `portfolio/portfolio.yaml` and its
+   intake record, or the option in `opportunities.yaml` (pattern, ladder, runtime class, value range, human
+   checkpoints, role evolution, evidence). In `transformation-plan.md`, read the item's Make the case page (cost
+   lines and who carries them, the comparison and go/no-go, assumptions to test first) and its Plan steps, not
+   only Map. Play back what you already know in three lines and ask only for what is missing. Before you raise a
+   resource conflict or a missing estimate, check whether the plan already budgets or decides it.
 2. **Ask for the last real instance**, start to finish, then for last month's actual count and the rework share
    from a record. Typical descriptions hide the exceptions that break solutions.
 3. **Restate the goal as the owner's metric** and ask the owner to confirm it (§5, move 1). If the owner is not
@@ -156,13 +158,21 @@ discover stage, and its owner opens `solutions/ct-evidence-matching/`.
   that are unwritten applies until the attribute checklist (the advisor's foundation item F1) exists, so F1
   becomes a dependency.
 - **Decision:** proceed to step 2, with the checklist as a dependency.
+- **Handoff:** when the brief opened, the delivery lead handed back to **ai-portfolio**, which set the item's
+  `solution`; the brief's Handoffs table records it.
 
 ## 8. Output
 
 In `brief.md`, write §1 Problem frame from `../templates/brief.md`. In the frontmatter set `id`, `title`,
 `source`, `scope`, `owners.business`, `owners.delivery`, a provisional `classification`, `step_completed: 1`,
-`next_step: 2` and `updated`. Record the decision in the decisions log. If the decision is "solve without AI" or
-"back to the portfolio", set `status: stopped` and tell the user which skill takes it from here.
+`next_step: 2` and `updated`. Record the decision in the decisions log. Advance `step_completed` only when every
+exit criterion in §1 is met; otherwise list the open ones beside the unticked step. If the decision is "back to
+the portfolio", set `status: stopped` and tell the user which skill takes it from here.
+
+**Solve without AI.** Set `ai_use: none` and the AI fields to null (`../schemas/solution.md` §4). For a portfolio
+item, hand the finding and the sourcing leaning back to **ai-portfolio** to record on the item, then close the
+brief with `status: stopped`. If the user wants to keep it open as design evidence for the gate, keep
+`status: in-progress` and record that choice and its reason in the decisions log.
 
 ## 9. Sources
 
