@@ -85,6 +85,7 @@ Save after **every** step: update the step's file and the brief's frontmatter (`
 leave the step unticked and list the open criteria beside it. A session can stop at any point and resume from
 the files. Schema: `references/schemas/solution.md`. In YAML, put every free-text value in double quotes. After
 writing frontmatter, check it: parse it if a parser is available; otherwise re-read it for unquoted colons and `#`.
+Also check that no key appears twice in one mapping; a parser may keep the last one silently.
 
 **Where the steps meet the portfolio** (the ai-portfolio skill's default gates): steps 1–3 shape the problem,
 approach and design for the prototype, and steps 1 and 2 done in discover are evidence for the gate into

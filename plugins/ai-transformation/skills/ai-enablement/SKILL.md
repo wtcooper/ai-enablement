@@ -88,6 +88,7 @@ Save after **every** step: update the program body and frontmatter (`step_comple
 session can stop at any point and resume from the files. Schemas: `references/schemas/measures.md` and
 `references/schemas/workflow.md`. In YAML, put every free-text value in double quotes. After writing a YAML file
 or frontmatter, check it: parse it if a parser is available; otherwise re-read it for unquoted colons and `#`.
+Also check that no key appears twice in one mapping; a parser may keep the last one silently.
 
 ## The steps
 

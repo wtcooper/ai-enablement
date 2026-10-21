@@ -48,7 +48,9 @@ prioritize method says).
 7. **Answer the readiness checklist** (§3.3). A weak answer lowers feasibility or data readiness, or becomes a
    condition on the Go.
 8. **Categorize** with the shared category rules (prioritize §3.4) and set the horizon.
-9. **Check against the portfolio**: duplicates, dependencies on foundation items, the live limit and the balance.
+9. **Check against the portfolio**: duplicates, dependencies on foundation items and the balance. Note where the
+   item would sit in the queue for the live limit. The limit binds a Go into prototype, pilot or scale (`g1`, `g2`,
+   `g4`), not the `g0` Go into discover, so never list it as `g0` evidence.
 10. **Propose kill criteria** for each likely Go. When the intake record's "From the plan" section has a go/no-go,
     start from it; if you propose something different, say how it differs and why.
 11. **Record the `g0` decision** (§3.4) by the deciders named for the item's path in `gate_paths.g0_deciders`
@@ -181,7 +183,8 @@ returns.
 Per item in `portfolio.yaml`: `value`, `scores`, `weighted_score`, `value_index`, `readiness_index`, `category`,
 `horizon`, `risk_tier`, `gate_path`, `sponsor`, `depends_on`, a `g0` entry in `decisions`, and on a Go
 `stage: discover`, `status: active`, `kill_criteria` and `next_gate`. Fill the intake record's "Screen result".
-Update `state` and `updated`.
+Set `state.step_completed: 3` (first time through), `next_step` to the step now due (4 for a gate, 5 for a
+review) and `updated`. Refresh or remove header comments that still describe an earlier step.
 
 ## 9. Sources
 

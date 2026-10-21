@@ -59,6 +59,8 @@ items:
     function: id | null            # shared vocabulary `functions`
     intake: path                   # portfolio/intake/<id>.md
     source: { file: path, item: id } | null   # back-link to an advisor opportunities.yaml item
+    rolled_up_from: [ { file: path, item: id } ]   # other advisor items merged into this one as duplicates
+    label: draft-to-validate | null   # copied from the advisor item; the item stays outline until confirmed
     problem: string                # one sentence: activity and expected result
     item_class: individual-productivity | business-automation | new-value
     category: quick-win | foundation | big-bet | park
@@ -127,8 +129,13 @@ items:
 - **Decisions are appended, never edited.** A later decision on the same gate is a new entry.
 - **Back-links.** An item imported from an advisor `opportunities.yaml` keeps `source` and copies `pattern`,
   `ladder`, `change_scope`, `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`,
-  `role_evolution` and `evidence` as they stand; re-score in step 3 against the portfolio's weights. The item's
-  `process`, `prerequisites` and `next_step` go in the intake record. Never edit the advisor's file.
+  `role_evolution`, `evidence` and `label` as they stand; re-score in step 3 against the portfolio's weights.
+  `value` lines are copied verbatim; rewrites go in the intake record. The item's `process`, `prerequisites` and
+  `next_step` go in the intake record. Never edit the advisor's file.
+- **Duplicates and drafts.** `rolled_up_from` has the meaning of the advisor's Roll-up field: when two advisor items
+  are one idea, import one and list the other here; its value is counted once. An item with
+  `label: draft-to-validate` keeps `status: outline` and cannot pass `g0` until people who do the work confirm it;
+  then set `label: null`. Use no other fields for either case.
 - **Capacity choice.** `capacity_use` is `redeploy`, `reduce` or `mixed`, never `undecided`. On import keep the
   advisor's value, even while `settings.capacity_stance` is `undecided`, and note the open stance in the intake
   record. A new item with no choice yet keeps `role_evolution: null`; the choice is due by `g3`.
@@ -190,6 +197,8 @@ items:
     function: service-delivery
     intake: "portfolio/intake/tax-k1-extraction.md"
     source: { file: "units/tax/opportunities.yaml", item: "tax-source-docs" }
+    rolled_up_from: []
+    label: null
     problem: "Preparers key K-1 data by hand; extract it with flags so preparer hours per return fall"
     item_class: business-automation
     category: quick-win

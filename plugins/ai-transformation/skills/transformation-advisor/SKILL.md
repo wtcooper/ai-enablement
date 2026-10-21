@@ -59,6 +59,7 @@ Save after **every** phase: update the plan body and frontmatter (`phase_complet
 `references/schemas/plan.md` and `references/schemas/opportunities.md`. In YAML, put every free-text value
 (titles, descriptions, assumptions, actions) in double quotes; an unquoted colon breaks the file. After
 writing a YAML file, check it: parse it if a parser is available; otherwise re-read it for unquoted colons.
+Also check that no key appears twice in one mapping; a parser may keep the last one silently.
 
 ## Phase 0 · Onboard
 

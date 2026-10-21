@@ -2,14 +2,17 @@
 
 <!-- One file per idea: <workspace>/portfolio/intake/<id>.md. Method: references/method/intake.md.
      Replace every <...>. Owners are roles, never names. No client-confidential or personal data.
-     Keep the matching entry in portfolio.yaml in step with this record. -->
+     Keep the matching entry in portfolio.yaml in step with this record.
+     Write only the sections below and fill every line ("none recorded" if empty). A build, buy or partner
+     leaning before g0 is one line in Early read. Meeting pre-reads and agendas go in the chat or the review
+     pack (templates/review.md); a fuller build-or-buy goes to ai-solution-delivery once the item is in discover. -->
 
 | Field | Entry |
 |---|---|
 | Id | `<id>` (the same id as in `portfolio.yaml`) |
 | Submitted by | <role> in <practice, team or function> |
 | Source | <"New idea" or the advisor item it came from: `<path>/opportunities.yaml` → `<item id>`> |
-| Status | <outline (missing problem, owner or data source) or ready to screen> |
+| Status | <outline (missing problem, owner or data source) or ready to screen; "Draft to validate" while `label: draft-to-validate`> |
 
 ## The problem in one sentence
 
@@ -45,8 +48,11 @@ line, not here.>
 ## Early read
 
 - Risk or regulatory exposure: <client data, professional duties, independence, regulator-facing output>
+- Risk tier: <the item's `risk_tier`, marked "provisional" while `overlay/policy.md` is missing or not approved;
+  "none" with `ai_use: none`>
 - Build, buy or partner leaning: <leaning and why>
-- Duplicates or near-duplicates elsewhere in the portfolio: <item ids or "none found">
+- Duplicates or near-duplicates elsewhere in the portfolio: <item ids or "none found"; for each advisor item in
+  `rolled_up_from`, what it adds>
 - Archetype evidence: <use-case ids with grades exactly as recorded, or "none; an idea">
 - Human checkpoints: <who checks what, from the advisor item's `human_checkpoints`, or "none yet">
 - AI use: <AI needed, or "none: rules, a template or an existing tool is enough" (`ai_use: none`)>

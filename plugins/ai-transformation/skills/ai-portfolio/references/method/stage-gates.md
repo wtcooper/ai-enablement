@@ -106,17 +106,25 @@ risk controls (a forecast, read through a news report) [GARTNER-2025].
 | Adoption, training, champions; seat roll-outs | **ai-enablement** | Enablement plan for `g4`; workflows into `enablement/workflows/` |
 | A practice needs its opportunities found and planned | **transformation-advisor** | New items come back through intake |
 
+**When the item asked for can't go to delivery** (it needs no AI, is still at intake, or is on Hold), say why.
+Then list the AI items (`ai_use` null) by `weighted_score`, each with what blocks it: the gate it waits at and who
+decides that gate, a Hold, `status: outline` or `label: draft-to-validate`, or being an enabler other items need.
+Offer the one with the shortest path to `discover`; it may not be the top scorer. Check the scores before you call
+any item the highest-priority AI item.
+
 ## 4. Outcomes and decision rules
 
 | Outcome | Use when | Record |
 |---|---|---|
-| **Go** | Exit evidence met; resources available within the live limit | Resources and who releases them; conditions; next gate and its evidence; new kill criteria |
+| **Go** | Exit evidence met; resources available (within the live limit at `g1`, `g2` and `g4`) | Resources and who releases them; conditions; next gate and its evidence; new kill criteria |
 | **Kill** | A kill criterion is met; evidence that should drive a stop (§5.1) | Reason, evidence, what is reused; move to `retire` if anything was built |
 | **Hold** | Worth doing, not now: no capacity, a foundation not ready | Reason; `revisit_when` trigger |
 | **Recycle** | Change scope, approach or risk treatment and return to a gate | `recycle_to`, the gate it returns to |
 
 - **A Go without resources is incomplete** ("approval without resources") [COOPER-STAGEGATE-n.d.].
-- **No Go past the live limit.** Hold the item, or stop another.
+- **No Go past the live limit.** The limit counts items in prototype, pilot or scale (`../schemas/portfolio.md`),
+  so it binds a Go at `g1`, `g2` or `g4`. Hold the item, or stop another. At `g0`, note the item's place in the
+  queue only; the live limit is not `g0` evidence.
 - **Recycle to buy.** A technology change can make a build unnecessary; Lloyds is described as accepting that rapid
   change can justify abandoning projects and switching to new use cases [HBR-2026].
 - **Early P&L absence alone is not a kill** before the planned review point (proposed default). Measured value can

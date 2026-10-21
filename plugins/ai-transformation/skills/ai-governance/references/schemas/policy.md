@@ -47,6 +47,8 @@ parent: path | null                # a practice or team policy names the firm po
 
 - **Roles, not people.** Owners are roles ("Head of risk", "IT security lead"), never names (rule 1).
 - **Stricter, never looser.** A policy with a `parent` may add classes, tiers or rules; it may not relax the parent.
+- **A step drafted ahead** leaves `step_completed` and `next_step` unchanged; its section carries the label
+  "Drafted ahead on assumptions".
 - **Status is the firm's, not yours.** Set `approved` only when the user tells you the approvers signed it off.
 - **Quote free text** in double quotes; an unquoted colon breaks the file.
 - **No calendar deadlines.** Review timing lives in the body as a cadence and triggers, never as a plan date.

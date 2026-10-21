@@ -81,6 +81,9 @@ step 1.
 **`risk_tier`**: the tier id from `risk_tiers` in `overlay/policy.md`, written by ai-governance (its defaults are
 `tier-1` to `tier-4`, set by the consequence of an error and who relies on the output). Without a policy, place the
 item against ai-governance's default tiers, mark the tier provisional in the intake record, and offer ai-governance.
+A policy that is not yet `approved` (for example `status: draft`) counts as no policy here: use its proposed tiers
+if it has them, set `risk_tier`, and write the tier in the intake record's Early read as "provisional" until the
+policy is approved.
 
 **`ai_use`**: `none` when the rules-or-AI check finds that rules, a template or an existing tool is enough; then
 `ladder`, `runtime_class` and `risk_tier` are null and the review counts the item apart. `null` (the default)

@@ -78,11 +78,17 @@ to evaluate tools, and a fast path to say yes safely. You design, assess and rec
 **Someone only wants one answer** ("can we use tool X with client data?"): go straight to step 6 for that tool, using
 whatever policy exists; record the gaps you hit and offer the full path afterwards.
 
+**Someone wants a later step drafted now** (for example risk tiers before the baseline): ask that step's anchor
+questions first (for step 3, at least R1 and R3 in `references/risk-tiers.md`), then draft the section on stated
+assumptions. Label it "Drafted ahead on assumptions" and list them. Keep `step_completed` and `next_step` as they
+are: the label shows the section was drafted ahead, and the step still runs in its turn.
+
 Save after **every** step: update the policy body and frontmatter (`step_completed`, `next_step`, `updated`), and any
 catalog or guardrails lines the step produced. Schemas: `references/schemas/policy.md`,
 `references/schemas/tool-catalog.md`, `references/schemas/vendor.md`. In YAML, put every free-text value in double
 quotes; an unquoted colon breaks the file. After writing YAML or frontmatter, check it: parse it if a parser is
-available; otherwise re-read it for unquoted colons and `#`.
+available; otherwise re-read it for unquoted colons and `#`. Also check that no key appears twice in one mapping; a
+parser may keep the last one silently.
 
 ## The steps
 

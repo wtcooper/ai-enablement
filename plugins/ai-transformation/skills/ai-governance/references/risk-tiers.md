@@ -27,7 +27,7 @@ pp.4-5]. The tier sets how much extra checking the first-line user does, who els
 **Exit when all of these are true:**
 - **Four tiers** (or the firm's own), each with typical uses, reviewer, what the reviewer checks, the record needed
   (detail in step 4) and the autonomy allowed.
-- **A list of uses not permitted until approved.**
+- **A list of uses not permitted until approved**, each with its alternative.
 - **A rule for autonomy:** how moving up the ladder changes the tier.
 - **A pattern map** for the patterns the firm uses or plans (§5).
 - **`max_risk_tier`** set on each catalog entry.
@@ -39,7 +39,8 @@ pp.4-5]. The tier sets how much extra checking the first-line user does, who els
 3. **For each tier, ask who reviews and what exactly they check** (R3). "Review" with no object is not a control.
 4. **Set the autonomy rule** with the ladder (§5). Read `../../transformation-advisor/references/library/index.md`
    §1 and §3 if you need the ladder and pattern definitions.
-5. **List uses not permitted until approved.** In the PCAOB outreach, some firms allowed generative AI for
+5. **List uses not permitted until approved.** Each one names its alternative: an approved catalog entry, a
+   permitted lower-tier use, or the request path (rule 12). In the PCAOB outreach, some firms allowed generative AI for
    administrative documents, initial drafts and internal research, and some did not allow it when performing audit or
    attest procedures [PCAOB-GENAI-2024, p.4].
 6. **Replay an incident** against the tiers (move 3): would the controls have caught it?

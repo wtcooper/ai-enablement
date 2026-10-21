@@ -74,11 +74,18 @@ realised. You design, assess and record; the firm's forum makes the decisions.
 3. Give the confidentiality reminder (rule 5).
 
 Save after **every** step: update `portfolio.yaml` (`state.step_completed`, `state.next_step`, `state.updated`)
-and the file the step writes. After set-up the steps recur on demand; a session can stop at any point and resume
+and the file the step writes. Set `step_completed` and `next_step` to match what the files now hold
+(`step_completed` does not go back when an earlier step recurs), and refresh or remove any header comment the step
+has made stale. After set-up the steps recur on demand; a session can stop at any point and resume
 from the files. Schemas: `references/schemas/portfolio.md` and `references/schemas/benefits.md`. In YAML, put
 every free-text value in double quotes. After writing a YAML file, check it: parse it if a parser is available;
-otherwise re-read it for unquoted colons and `#`. Write only the files the templates define; pre-gate evidence
-goes in the intake record's "Next gate evidence" table.
+otherwise re-read it for unquoted colons and `#`. Also check that no key appears twice in one mapping; a parser may
+keep the last one silently.
+
+Write only the files and sections the templates define. Pre-gate evidence goes in the intake record's "Next gate
+evidence" table; a build, buy or partner leaning before `g0` is one line in its Early read. Meeting pre-reads,
+agendas and drafted messages go in the chat or in the review pack (`references/templates/review.md`). A fuller
+build-or-buy belongs to **ai-solution-delivery**, once the item is in `discover`.
 
 ## Step 1 · Set up the portfolio
 
@@ -189,6 +196,9 @@ reduce decision, with role evolution on the item. **Output:** `portfolio/benefit
 | An item in discover or later needs a problem frame or a build or buy leaning (a brief may open in discover as `g1` evidence; at the latest at a Go at `g1`); gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/` and hands back; set `solution` at once) |
 | Seat roll-outs, training, champions, uneven adoption, partners and skeptics; enablement plan for scale | **ai-enablement** |
 | A risk tier, policy, client-data, records or tool and vendor question | **ai-governance** |
+
+If the item asked for can't go to ai-solution-delivery yet, say why, list the AI items by weighted score with what
+blocks each, and offer the one with the shortest path to `discover` (`references/method/stage-gates.md` §3.3).
 
 Name the skill to the user, for example: "Next, use the **ai-solution-delivery** skill." If you can't invoke a skill
 by name, read `../<skill>/SKILL.md` and follow it: `../transformation-advisor/SKILL.md`,

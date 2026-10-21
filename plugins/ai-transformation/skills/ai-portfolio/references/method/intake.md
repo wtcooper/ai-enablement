@@ -50,7 +50,9 @@ criteria [MSFT-COE-2026].
 7. **Duplicates.** Search `portfolio.yaml` for the same process, pattern or unit. Link near-duplicates.
 8. **Early read.** Note risk exposure, a build, buy or partner leaning, and any archetype use cases that show
    the idea working elsewhere, with grades exactly as recorded.
-9. **Write** the intake record from `../templates/intake.md` and the `portfolio.yaml` entry. Play it back.
+9. **Write** the intake record from `../templates/intake.md` and the `portfolio.yaml` entry. Fill every line of
+   the template, including "AI use"; write "none recorded" where there is nothing yet. Add no other sections.
+   Play it back.
 
 **An import from the advisor**
 
@@ -60,9 +62,12 @@ criteria [MSFT-COE-2026].
    **transformation-advisor** to fix the file; do not fix it yourself.
 2. Ask which items to bring in: usually the chosen top options and foundations, not parked items.
 3. For each item: copy `id` (prefix the unit if ids could clash), `title`, `pattern`, `ladder`, `change_scope`,
-   `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`, `role_evolution` and
-   `evidence`, as they stand. Set `source: { file, item }` and `stage: intake`. Fill the intake record from the
-   item's `description`, `process`, `prerequisites` and `next_step`.
+   `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`, `role_evolution`,
+   `evidence` and `label`, as they stand. Set `source: { file, item }` and `stage: intake`. Fill the intake record
+   from the item's `description`, `process`, `prerequisites` and `next_step`.
+   Copy each `value` line verbatim: the same lever, numbers and assumptions text. Put any rewrite (option numbers
+   turned into ids, a lever you would map differently) in the intake record, never in the copied line. A lever
+   that is not in `settings.value_levers` is kept as it stands and flagged.
 4. **Keep the advisor's capacity choice.** Copy `role_evolution.capacity_use` as it stands, even when
    `settings.capacity_stance` is `undecided`. Never write `undecided` on an item. Note in the intake record that
    the firm's stance is still open; the choice is confirmed at `g3`.
@@ -76,9 +81,13 @@ criteria [MSFT-COE-2026].
    recorded into "Early read". If an id is not found, say so; never guess a grade.
 7. **One label per role.** Map the plan's roles to one label each and record them in `roles.other`. If the plan
    names one role two ways, or the owner and sponsor are the same role, say so and use one label.
-8. An item with `label: draft-to-validate` stays `status: outline`, marked "Draft to validate", until people who
-   do the work confirm it.
-9. Never edit the advisor's file. The back-link lives in `portfolio.yaml`.
+8. An item with `label: draft-to-validate` stays `status: outline`, with the label copied and "Draft to validate"
+   in the intake record's Status, until people who do the work confirm it. Then set `label: null`.
+9. **Duplicates across units.** If two advisor items are the same idea, import one and list the other in its
+   `rolled_up_from` (the advisor's Roll-up field: items merged into this one); its value is counted once. Note in
+   the intake record what the merged item adds. Near-duplicates that keep their own entries are linked in each
+   intake record's duplicates line. Add no other fields.
+10. Never edit the advisor's file. The back-link lives in `portfolio.yaml`.
 
 ## 3. Checklists and decision rules
 
@@ -174,7 +183,8 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 
 ## 8. Output
 
-- `portfolio/intake/<id>.md` from `../templates/intake.md`, one per item.
+- `portfolio/intake/<id>.md` from `../templates/intake.md`, one per item, with every template line filled
+  ("none recorded" if empty) and no other sections.
 - A `portfolio.yaml` entry per item with the step 2 fields in `../schemas/portfolio.md` §2.
 - Update `state.step_completed: 2` (first time through), `next_step: 3`, `updated`.
 
