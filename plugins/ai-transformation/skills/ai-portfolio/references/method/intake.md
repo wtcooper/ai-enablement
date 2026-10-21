@@ -32,7 +32,8 @@ criteria [MSFT-COE-2026].
 - An owner (a role), and the data it needs with the data owner.
 - The rules-or-AI check done, and a duplicate check against the register.
 - `status: outline` if the problem, owner or data source is missing; otherwise ready to screen.
-- For imports: `source` pointing to the advisor file and item.
+- For imports: `source` pointing to the advisor file and item; the parse check reported; the plan's case for
+  the item in "From the plan"; grades as recorded.
 
 ## 2. How to run it
 
@@ -53,14 +54,31 @@ criteria [MSFT-COE-2026].
 
 **An import from the advisor**
 
-1. Read `opportunities.yaml` (schema `../../../transformation-advisor/references/schemas/opportunities.md`).
-   Ask which items to bring in: usually the chosen top options and foundations, not parked items.
-2. For each item: copy `id` (prefix the unit if ids could clash), `title`, `process`, `pattern`, `ladder`,
-   `change_scope`, `runtime_class`, `value`, `scores`, `category`, `depends_on`, `role_evolution` and `evidence`.
-   Set `source: { file, item }`, `stage: intake`, and fill the intake record from the item's `description`.
-3. An item with `label: draft-to-validate` stays `status: outline`, marked "Draft to validate", until people who
+1. **Check the file parses** (schema `../../../transformation-advisor/references/schemas/opportunities.md`).
+   Parse it if a parser is available. If it fails, or you cannot run a parser, say so and give the line (re-read
+   near it for unquoted colons). Import only after the user agrees. Never import it unmentioned. Offer
+   **transformation-advisor** to fix the file; do not fix it yourself.
+2. Ask which items to bring in: usually the chosen top options and foundations, not parked items.
+3. For each item: copy `id` (prefix the unit if ids could clash), `title`, `pattern`, `ladder`, `change_scope`,
+   `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`, `role_evolution` and
+   `evidence`, as they stand. Set `source: { file, item }` and `stage: intake`. Fill the intake record from the
+   item's `description`, `process`, `prerequisites` and `next_step`.
+4. **Keep the advisor's capacity choice.** Copy `role_evolution.capacity_use` as it stands, even when
+   `settings.capacity_stance` is `undecided`. Never write `undecided` on an item. Note in the intake record that
+   the firm's stance is still open; the choice is confirmed at `g3`.
+5. **Read the plan's case, not only the item.** In `transformation-plan.md`, read the item's Make the case page
+   (cost lines and who carries them, the comparison and go/no-go under "How we will know", assumptions to test
+   first), its Now, Next and Later steps, its control-plan row and the people steps. Copy what you find into the
+   intake record's "From the plan" section, naming the section each line came from. Before you raise a conflict
+   or a gap later, check this section: the plan may already budget or decide it.
+6. **Look up grades.** For each evidence id, open the use case in the archetype files
+   (`../../../transformation-advisor/references/archetypes/index.md`) and write its `evidence_grade` exactly as
+   recorded into "Early read". If an id is not found, say so; never guess a grade.
+7. **One label per role.** Map the plan's roles to one label each and record them in `roles.other`. If the plan
+   names one role two ways, or the owner and sponsor are the same role, say so and use one label.
+8. An item with `label: draft-to-validate` stays `status: outline`, marked "Draft to validate", until people who
    do the work confirm it.
-4. Never edit the advisor's file. The back-link lives in `portfolio.yaml`.
+9. Never edit the advisor's file. The back-link lives in `portfolio.yaml`.
 
 ## 3. Checklists and decision rules
 
@@ -76,6 +94,12 @@ criteria [MSFT-COE-2026].
 
 **Decision rule.** Items without an owner, a problem statement and a data source stay `outline` and are not
 scored.
+
+**No AI needed.** If the rules-or-AI check finds that rules, a template or an existing tool is enough (or the
+advisor's case says no AI is required), set `ai_use: none` and leave `ladder`, `runtime_class` and `risk_tier`
+null. Note the advisor's values in the intake record. Keep the item only if it earns a place, for example as a
+`foundation` that other items depend on; the review counts it apart from AI items. Otherwise record the finding
+and hand the idea back to its owner.
 
 ### 3.2 Classes and routes
 
@@ -129,6 +153,7 @@ Tags: **[T]** team, **[U]** unit or practice, **[O]** organization.
 | **Seat roll-outs counted as wins** | Enablement line, reported apart |
 | **Typical-week volumes** | Ask for last month's count from a record; label the number |
 | **Re-scoring an imported item from scratch without its history** | Keep the advisor's ranges and scores and the back-link; re-score only against the portfolio's weights |
+| **Importing the item without the plan's case** | Copy its cost lines, go/no-go and steps into "From the plan"; check there before raising a conflict |
 | **Duplicates across practices** | Search the register at every intake; HBR's portfolio approach unifies efforts across departments [HBR-2026] |
 
 ## 7. Worked example: three ideas and an import

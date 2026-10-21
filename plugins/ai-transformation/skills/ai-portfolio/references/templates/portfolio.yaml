@@ -1,6 +1,7 @@
 # Blank portfolio file. Schema: references/schemas/portfolio.md (portfolio/v1).
 # Copy to <workspace>/portfolio/portfolio.yaml in step 1 and fill it with the user.
 # Quote every free-text value. Owners are roles, never names. No dates as targets.
+# After writing, check the file parses.
 schema: portfolio/v1
 portfolio:
   name: ""
@@ -27,6 +28,7 @@ stages:
 gate_paths:
   light: ""
   full: ""
+  g0_deciders: { light: [], full: [] }
 roles:
   review_forum: []
   intake_contact: ""

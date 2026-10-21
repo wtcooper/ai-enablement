@@ -125,7 +125,7 @@ class Doc(BaseDocTemplate):
     def __init__(self, fn, **kw):
         super().__init__(fn, pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
                          topMargin=0.75 * inch, bottomMargin=0.7 * inch, title="AI Use Cases: Professional Services, Assurance, Tax, Advisory and Security",
-                         author="AI Transformation Advisor", subject="Summary of researched, fact-checked AI use cases", **kw)
+                         author="AI Transformation plugin", subject="Summary of researched, fact-checked AI use cases", **kw)
         fr = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="f")
         self.addPageTemplates([PageTemplate(id="p", frames=[fr], onPageEnd=self.deco)])
         self.section = ""
@@ -232,14 +232,14 @@ ct.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0
 
 story += [heading("Executive summary", ss["title"], 0, "summary", "Executive summary"), Spacer(1, 6),
           P(f"AI use cases in professional services, assurance, tax, advisory and security: {N} researched, fact-checked examples of AI changing the work, "
-            f"from the AI Transformation Advisor's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
+            f"from the AI Transformation plugin's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
           P("<b>Key takeaways</b>", ss["ct"]), Spacer(1, 4)]
 take = [
-    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in five fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI or tax authorities' own AI. Every example names its sources and was checked against them.",
-    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, professional services {pct(abshare['professional-services'], tot['professional-services'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations and AI security; audit testing; legal and advisory work production. Thinnest: tax provision, transfer pricing, staffing, billing. Firms rarely publish measured results.",
+    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in five fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI. Every example is sourced and fact-checked.",
+    f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): " + ", ".join(f"{l.lower()} {pct(abshare[k], tot[k])}%" for k, l, _ in sorted(ARCHETYPES, key=lambda x: -abshare[x[0]] / tot[x[0]])) + f". Strongest: security operations and AI security; audit testing; client accounting services. Thinnest: tax provision, transfer pricing, valuation, FP&amp;A. Firms rarely publish measured results.",
     f"<b>AI mostly does a first pass that a person checks.</b> {pct(lad['augment'], N)}% of examples augment a step and {pct(lad['assist'], N)}% assist a person; {pct(lad['automate'], N)}% automate a step and {pct(lad['delegate'], N)}% delegate a multi-step outcome to an agent with human checkpoints.",
     f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in every field.",
-    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: professionals under existing duties (courts sanction unverified AI citations), the auditor for the opinion, the tax practitioner under existing conduct rules, and security leaders for the decisions that start regulatory reporting clocks.",
+    "<b>People stay accountable.</b> In each field the rules keep a qualified person responsible: professionals under existing duties (courts sanction unverified AI citations), the auditor for the opinion, the tax practitioner under conduct rules, security leaders for decisions that start reporting clocks.",
     f"<b>Beyond efficiency.</b> {modelscope} examples change the service, pricing or operating model, not just a step: fixed and outcome fees replacing hours, AI assurance services, agent platforms in tax firms, security teams rebuilt around supervising AI.",
 ]
 story.append(ListFlowable([ListItem(P(t, ss["body"]), leftIndent=12, value="•") for t in take], bulletType="bullet",

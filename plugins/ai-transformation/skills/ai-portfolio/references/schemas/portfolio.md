@@ -37,6 +37,7 @@ stages:                            # one entry per stage; defaults in ../method/
 gate_paths:
   light: string                    # which items qualify and which gates combine
   full: string
+  g0_deciders: { light: [ role ], full: [ role ] }   # who decides the screen on each path
 roles:
   review_forum: [ role ]           # who sits in the portfolio review
   intake_contact: role
@@ -63,15 +64,16 @@ items:
     category: quick-win | foundation | big-bet | park
     horizon: near | medium | long
     pattern: id | null
-    ladder: assist | augment | automate | delegate | null
+    ai_use: none | null            # none: rules, a template or an existing tool is enough; null: AI is in scope
+    ladder: assist | augment | automate | delegate | null     # null when ai_use is none
     change_scope: step | process | model | null
-    runtime_class: id | null
+    runtime_class: id | null       # null when ai_use is none
     stage: intake | discover | prototype | pilot | production | scale | retire
     status: outline | active | hold | killed | retired
     owner: role                    # leads the work
     sponsor: role                  # controls the resources it needs next
     benefit_owner: role | null     # owns the benefit in the business
-    risk_tier: string              # tier id from overlay/policy.md risk_tiers (ai-governance), e.g. tier-2
+    risk_tier: string | null       # tier id from overlay/policy.md risk_tiers (ai-governance), e.g. tier-2; null when ai_use is none
     gate_path: light | full
     value: [ { lever: id, low: number, high: number, unit: string, assumptions: string } ]
     scores: { value: 1-5, feasibility: 1-5, data_readiness: 1-5, risk: 1-5, time_to_value: 1-5, strategic_fit: 1-5 }
@@ -82,10 +84,11 @@ items:
     kill_criteria: [ string ]      # agreed at the gate that let the item in
     early_warnings: [ { type: slippage | cost-overrun | performance-shortfall, note: string, review: integer } ]
     next_gate: { gate: gate-id, evidence: [ string ], gatekeepers: [ role ] } | null
-    solution: path | null          # solutions/<id>/ once ai-solution-delivery opens it
+    solution: path | null          # solutions/<id>/; set as soon as ai-solution-delivery opens the brief and hands back
     benefits: [ id ]               # benefit ids in portfolio/benefits.yaml
     evidence: [ id ]               # archetype or overlay use-case ids
-    role_evolution: { tasks_moving: string, new_work: string, capacity_use: redeploy | reduce | mixed } | null
+    human_checkpoints: [ string ]  # who checks what; copied from the advisor item on import
+    role_evolution: { tasks_moving: string, new_work: string, capacity_use: redeploy | reduce | mixed } | null   # never undecided
     revisit_when: string | null    # held or parked items
     decisions:
       - gate: g0 | g1 | g2 | g3 | g4 | retire
@@ -104,10 +107,10 @@ items:
 
 | Step | Fields that must be filled |
 |---|---|
-| 1 Set up | `schema`, `portfolio`, `settings`, `stages`, `gate_paths`, `roles`, `rhythm`, `state` |
+| 1 Set up | `schema`, `portfolio`, `settings`, `stages`, `gate_paths` (with `g0_deciders`), `roles`, `rhythm`, `state` |
 | 2 Intake | Per item: `id`, `title`, `unit`, `intake`, `source` (or null), `problem`, `item_class`, `stage: intake`, `status` (`outline` until problem, owner and a data source are known), `owner`, `updated` |
-| 3 Screen and score | `value` (ranges), `scores`, `weighted_score`, `value_index`, `readiness_index`, `category`, `horizon`, `risk_tier`, `gate_path`, `sponsor`, `depends_on`, a `g0` decision; `kill_criteria` and `next_gate` on a Go |
-| 4 Stage gates | One `decisions` entry per gate held; `stage`, `status`, `next_gate`; `solution` once delivery opens it; `benefit_owner` and `benefits` before `g3` |
+| 3 Screen and score | `value` (ranges), `scores`, `weighted_score`, `value_index`, `readiness_index`, `category`, `horizon`, `risk_tier` (null with `ai_use: none`), `gate_path`, `sponsor`, `depends_on`, a `g0` decision by the path's `g0_deciders`; `kill_criteria` and `next_gate` on a Go |
+| 4 Stage gates | One `decisions` entry per gate held; `stage`, `status`, `next_gate`; `solution` as soon as delivery opens a brief (from `discover` on); `benefit_owner` and `benefits` before `g3` |
 | 5 Portfolio review | `early_warnings`; decisions made in the review carry its number in `review`; `state.last_review` |
 | 6 Value tracking | `benefits` ids match `benefits.yaml`; `role_evolution` for team-level and higher items in production or scale |
 
@@ -123,8 +126,16 @@ items:
 - **Every Kill, Hold or Recycle has a `reason` and `evidence`.** A Hold also sets `revisit_when`.
 - **Decisions are appended, never edited.** A later decision on the same gate is a new entry.
 - **Back-links.** An item imported from an advisor `opportunities.yaml` keeps `source` and copies `pattern`,
-  `ladder`, `change_scope`, `runtime_class`, `value`, `scores`, `category`, `role_evolution` and `evidence`
-  as they stand; re-score in step 3 against the portfolio's weights. Never edit the advisor's file.
+  `ladder`, `change_scope`, `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`,
+  `role_evolution` and `evidence` as they stand; re-score in step 3 against the portfolio's weights. The item's
+  `process`, `prerequisites` and `next_step` go in the intake record. Never edit the advisor's file.
+- **Capacity choice.** `capacity_use` is `redeploy`, `reduce` or `mixed`, never `undecided`. On import keep the
+  advisor's value, even while `settings.capacity_stance` is `undecided`, and note the open stance in the intake
+  record. A new item with no choice yet keeps `role_evolution: null`; the choice is due by `g3`.
+- **No AI needed.** With `ai_use: none`, set `ladder`, `runtime_class` and `risk_tier` to null. Count the item
+  apart from AI items in the review pack.
+- **Solution link.** A brief may open while the item is in `discover` (as `g1` evidence) or later. When
+  ai-solution-delivery opens it and hands back, set `solution` at once; no gate is needed for that.
 - **Sequencing** uses `depends_on` and `next_gate`, never dates or deadlines. `updated` records when the entry
   last changed; it is not a target.
 - Portfolio-only values (`item_class`, `horizon`, `stage`, `status`, gate ids, `outcome`, early-warning types,
@@ -157,6 +168,7 @@ stages:
 gate_paths:
   light: "tier-1 and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
   full: "Every other item: all gates, gatekeepers per stage"
+  g0_deciders: { light: ["Head of AI"], full: ["Item sponsor", "Practice leaders", "Head of AI"] }
 roles:
   review_forum: ["Managing partner", "Practice leaders", "Risk and quality partner", "Head of IT", "Finance director", "Head of AI"]
   intake_contact: "Head of AI"
@@ -182,6 +194,7 @@ items:
     item_class: business-automation
     category: quick-win
     horizon: near
+    ai_use: null
     pattern: document-to-decision
     ladder: augment
     change_scope: step
@@ -206,6 +219,7 @@ items:
     solution: "solutions/tax-k1-extraction/"
     benefits: [b-tax-k1-hours]
     evidence: [tax-compliance-individual-business-02]
+    human_checkpoints: ["Reviewer checks every flagged field before the return moves on"]
     role_evolution: { tasks_moving: "Keying K-1 data", new_work: "Checking flagged fields; advisory preparation", capacity_use: redeploy }
     revisit_when: null
     decisions:
