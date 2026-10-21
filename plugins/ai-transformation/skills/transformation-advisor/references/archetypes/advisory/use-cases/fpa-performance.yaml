@@ -213,7 +213,7 @@
     date: '2026-05-21'
     access: full
     locator: Session 'The tech-enabled adviser' (Matthew Wallace, Armanino; Floriana Allen, Wiss & Company)
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Merges two candidates: AI-drafted variance commentary (C) and auto-generated reporting packages and KPI
     dashboards (C, emerging). Bookkeeping-based reporting packages, ledger dashboards and CAS-level variance explanations
     are in advisory-client-accounting-services-06; this entry covers the FP&A, planning-model and board-reporting
@@ -383,7 +383,7 @@
     access: full
     locator: Priority 2 (84% deploying, 4% scaling) and Priority 3. Page shows no publication date (server timestamp
       2026-09-30; text addresses leaders 'heading into 2026'), so the date is the year only
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Merges two candidates that describe the same change, a machine baseline forecast that a person adjusts:
     Jirav Intelligent Forecasting in CAS and advisory firms (B, tagged process) and ML forecasting in planning platforms
     (C, step). Change scope is set to step because one step, building the baseline, changes while driver-based models
@@ -514,7 +514,7 @@
     date: '2026-09-15'
     access: full
     locator: Responsibilities 'Financial Modeling & FP&A'
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: RSM and Grant Thornton Advisors (large firm; the landscape file describes it as backed by
     New Mountain Capital, which was not re-verified here), KPMG (Big Four); Abacum and OneStream are vendors. These
     are pitches, webcast descriptions and survey baselines; no named firm reported a planning-cycle result. The
@@ -585,7 +585,7 @@
     date: '2025-08-06'
     access: full
     locator: Paragraph naming Armanino (top 20) as a partner
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: Armanino (described as top 20 in Rillet''s release), vendor Abacum. Much of the described
     workflow automation is conventional planning-platform functionality; the AI part is Abacum''s claim that its
     AI layer automates it (the release names agents only for anomaly flagging and model changes, not for budget
@@ -672,7 +672,7 @@
     date: '2026-09-03'
     access: full
     locator: Key takeaways; quote from Eda Karael, FP&A Director, Uberall
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: This is an in-house deployment at a very large private company ($23B revenue per the presenter) on a vendor
     platform, not an advisory-firm engagement. Evidence is adjacent to the module, so the grade is capped at B.
     The figures are vendor-published and the method is not shown, so they do not meet the grade A rule. Abacum separately
@@ -766,7 +766,7 @@
     date: '2026-07-02'
     access: full
     locator: Paragraph on clients asking for proof of AI data protection
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: vendors (Abacum, Xero, Pigment, Karbon) and a conference session; no advisory firm named as
     deploying MCP-connected planning data. Announced only.'
 - id: advisory-fpa-performance-07
@@ -844,7 +844,7 @@
     date: '2026-08-13'
     access: full
     locator: Controls 2 and 3
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm type: vendor (Abacum), delivered through RSM, Armanino and CFGI as in advisory-fpa-performance-10.
     Pigment''s Modeler Agent was seen only in a search summary and is not used. The LBO study is routed to transactions
     as its main home and is cited here only as quality evidence for LLM model building.'
@@ -933,7 +933,7 @@
     access: full
     locator: Key findings, 'Operational focus intensifies' bullet (operational improvements, 72%, the top value
       creation lever)
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: Gartner (analyst), KPMG (Big Four) relaying a client account, EXL (outsourcing provider).
     No mid-market advisory firm described a performance-improvement engagement that used AI, so this is the thinnest
     entry in the module. The practitioner discussion is real (Gartner, KPMG) but the figure is anonymous. Demand
@@ -1067,7 +1067,7 @@
     access: full
     locator: Opening paragraphs (acquisition effective Oct. 1; middle-market access to AI implementation); paragraph
       on the 2026 Top 100 rank
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: CFGI (PE-backed advisory platform; says it is free of auditor independence constraints), CohnReznick
     and Cherry Bekaert (top-100 firms), RSM and Kaufman Rossin (top-50 CPA and advisory firm per its release) as
     survey publishers. Kaufman Rossin''s mid-market report (sample size and fieldwork dates not stated in the release)
@@ -1221,7 +1221,7 @@
     date: '2026-10-01'
     access: full
     locator: (c)(4)(ii) and (c)(4)(vi)
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: RSM, CohnReznick, Forvis Mazars (FY2025 revenue $2.24B per its deck) and Armanino are large
     mid-market or top-100 firms; CFGI is described by Abacum as a portfolio company of Carlyle and CVC (PE-backed
     advisory platform that does not audit); Abacum, Workday and Solver are vendors. These are announced alliances
@@ -1351,7 +1351,7 @@
     access: full
     locator: Closing paragraph (AICPA guidance earlier in 2026 on service organizations' AI use in SOC 1 and SOC
       2 engagements)
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: Armanino (described as top 20 in Rillet''s release), EisnerAmper and GRF CPAs & Advisors (US
     accounting and advisory firms; ranks not checked), Rand Group (technology consultancy); Sage is the vendor.
     Gartner''s April 2026 release (314 organisations, September-October 2025) says cloud ERP adoption rose 7% year
@@ -1429,7 +1429,7 @@
     date: '2026-09-15'
     access: full
     locator: Partnerships role aimed at Big 4, top firms, boutiques and fractional CFOs; deployment lead role
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: vendor (Rillet) with Armanino (top 20) and Wiss (top 50) as partners, both ranks as stated
     by Rillet. The partnership is announced; no partner-led implementation was documented. Series B release dated
     2025-08-06, so older than 12 months; the same page, last updated 2026-08-25, still lists Armanino and Wiss as
@@ -1472,8 +1472,8 @@
   - Clients willing to source planning and analysis externally
   risks_and_guardrails:
   - 'ISG says maturity varies considerably: production implementations sit alongside early deployments, pilots and
-    demonstrations, and differentiation will depend on evidence that analytics improve forecast accuracy and decisions
-    (ISG-FAOFPA-2026, FP&A observations).'
+    demonstrations (Executive Summary), and in FP&A differentiation increasingly depends on evidence that analytics
+    improve forecast accuracy and decisions (ISG-FAOFPA-2026, FP&A Observations).'
   - ISG lists weak data foundations and insufficient governance as risks that could slow progress (ISG-FAOFPA-2026,
     Outlook).
   - 'Independence: for audit clients of SEC registrants, performing decision-making, supervisory or ongoing monitoring
@@ -1516,7 +1516,7 @@
     access: full
     locator: Text on Section 1.510 (contingent fees proscribed where the firm performs an audit or review, certain
       compilations or an examination of prospective financial information)
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Firm types: Big Four (PwC, EY, Deloitte), and AI-native or outsourcing providers (EXL, Sutherland, Accenture,
     Capgemini and others in the report). Not mid-market accounting firms, apart from ISG''s remark that consulting
     and accounting firms are increasing their managed-service role. ISG is an analyst firm; the report is a provider-customized
@@ -1628,7 +1628,7 @@
     date: '2026-10-01'
     access: full
     locator: (c)(4)(vi) management functions
-  last_reviewed: '2026-10-20'
+  last_reviewed: '2026-10-21'
   notes: 'Idea: labelled D. Practitioners and COSO discuss the controls, but no firm was found selling forecast
     validation as a service. Related assurance work for AI systems (AICPA and AIUC certification, Grant Thornton
     Enterprise Assurance Services) is routed to risk-controls and the assurance archetype. Firm types: standard-setter

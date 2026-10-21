@@ -1,6 +1,6 @@
 # FP&A and performance (advisory)
 
-Sources checked 2026-10-20. Use cases live in `../use-cases/fpa-performance.yaml` (14 entries). Ids are shortened
+Sources checked 2026-10-20 and verified against the sources 2026-10-21. Use cases live in `../use-cases/fpa-performance.yaml` (14 entries). Ids are shortened
 here: `#04` means `advisory-fpa-performance-04`; other modules' ids are in full. Source keys in brackets, such as
 [ONESTREAM-FPATRENDS-2026], are in the YAML or in §10. **Public evidence is the thinnest in the advisory archetype.**
 No entry is graded A; 2 of 14 are B (`#02`, `#05`), 11 are C and 1 is an idea (D). No advisory firm has published an
@@ -71,8 +71,8 @@ claims relayed by an analyst). No automate-step entry and no delegate entry at s
   budget (RSM, Grant Thornton and KPMG pitches and webcasts; grade C).
 
 **Budget cycle**
-- Automate: `#04` agents collect budget inputs, route approvals and consolidate submissions (Abacum claim; Armanino
-  pitches replacing emailed spreadsheets; grade C).
+- Automate: `#04` budget input collection and approval routing automated in the planning platform (Abacum claim; it
+  does not say agents do it; Armanino pitches replacing emailed spreadsheets; grade C).
 
 **Planning models and platforms**
 - Improve: `#07` models built and changed in plain language, with agents cascading structural changes (Abacum via
@@ -137,19 +137,19 @@ Ask in the person's setting (mid-market firm advisory group, PE-backed platform,
 | Reporting stronger forecast accuracy over the past year (same sample) | 64%; no measured error rate | [KPMG-AIFINANCE-2026] self-reported |
 | Error-reduction improvement, assurance-ready versus other organisations | 33% vs 6% | [KPMG-AIFINANCE-2026] self-reported |
 | Fully assurance-ready for AI-enabled finance; track where AI fails | 42%; 29% | [KPMG-AIFINANCE-2026] self-reported |
-| AI implementation slower than expected in 2025 (204 finance leaders) | 63%; forecasting and insight among the lowest-rated uses | [GARTNER-AIREPORTCARD-2026] independent |
+| AI implementation slower than expected in 2025 (Gartner report card; its chart draws on a March 2026 survey of 204 finance leaders) | 63%; forecasting and insight among the lowest-rated uses | [GARTNER-AIREPORTCARD-2026] independent |
 | Finance teams deploying AI versus scaling it across the function | 84% vs 4% (sample not stated) | [GARTNER-FPALEADER-2026] independent |
 | FP&A teams using generative AI / ML in forecasting (475 respondents) | 21% / 12% | [ONESTREAM-FPATRENDS-2026] vendor-published |
 | Teams describing themselves as optimized or performing well | 22% | [ONESTREAM-FPATRENDS-2026] vendor-published |
 | Forecast quality, AI users vs non-users (definition not stated; not causal) | 64% vs 35% | [ONESTREAM-FPAWEBINAR-2026] vendor-published |
 | Formal AI governance ready to scale / informal or none | 19% / 59% | [ONESTREAM-FPAWEBINAR-2026] vendor-published |
 | Work time spent verifying or correcting AI output (270 CFOs and leaders) | 26% average | [CFODIVE-DATARAILS-2026] vendor-published |
-| Mid-market companies using genAI / operationalised at scale (100, December 2025) | 94% / 2% | [KAUFMANROSSIN-AIMIDMARKET-2026] self-reported, firm survey |
+| Mid-market companies using genAI / operationalised at scale (sample not stated in the release) | 94% / 2% | [KAUFMANROSSIN-AIMIDMARKET-2026] self-reported, firm survey |
 | AI-spend increasers reallocating from external consulting | 40% | [RSM-MMAI-2026] self-reported, firm survey |
-| Accountants naming forecasting a top client-service AI use (725) | 51% | [INTUIT-ACCTTECH-2026] vendor-published |
+| Accountants using AI for financial forecasting as a client service, one of the top three uses (725) | 51% | [INTUIT-ACCTTECH-2026] vendor-published |
 | Planning and reporting cycle-time cut, firm page for a vendor platform | 50-70%; no baseline or method | [COHNREZNICK-WORKDAY-2026] vendor-published |
 | Cox Enterprises ad hoc report / document lookup time | 10 min to 1 min / 8 min to 30 s | [ONESTREAM-FPAWEBINAR-2026] vendor-published |
-| AI-native ERP implementation | as little as 4 weeks vs 12 months; no sample | [RILLET-SERIESB-2025] vendor-published |
+| AI-native ERP implementation | as fast as 4 weeks vs 12 months (release); typically 4-6 weeks vs 3-12 months, led by the vendor's own team (FAQ, 2026-08-25); no sample | [RILLET-SERIESB-2025] vendor-published |
 | GPs ranking operational improvements the top value creation lever (not AI) | 72% | [SPGLOBAL-PE-2026] survey |
 | PE leaders still piloting AI / reporting revenue growth from AI | 45% / 24% (date not found) | [GT-PEAI-2026] firm survey |
 
@@ -200,9 +200,10 @@ to board pack; time to run a scenario.
   engineers [GARTNER-FPALEADER-2026]. It also expects finance staff to become tool-building "catalysts"
   [GARTNER-TALENT-2026]. See professional-services-talent-learning-19 and -20.
 - **New senior advisory roles.** CFGI sought a managing director to lead AI strategy assessments and take proprietary
-  finance tools to market [CFGI-JOB-2026]. Aprio's posting expects budgets, 13-week cash flow models and scenario
-  analyses built with AI-enabled templates [APRIO-JOB-2026].
-- **Hiring signals.** 38% of firms prioritise strategic judgment in hiring and 22% AI fluency; 56% say a new
+  finance tools to market [CFGI-JOB-2026]. Aprio's manager posting asks for budgets, 13-week cash flow models and
+  scenario analyses, and separately for AI-enabled workflows and delivery methods [APRIO-JOB-2026].
+- **Hiring signals.** 38% of respondents name strategic judgment as the expertise they prioritise most in hiring and 22% AI
+  fluency; 56% say a new
   entry-level hire needs six months or more to reach full billable capacity [INTUIT-ACCTTECH-2026].
 - **Client workforces will change too.** 88% of mid-market respondents expect their workforce to look fundamentally
   different within two to three years [RSM-MMAI-2026].
@@ -219,19 +220,20 @@ to board pack; time to run a scenario.
 - 2026-05-28: EY and Microsoft run a CFO AI Lab on moving to agentic finance, FP&A among the examples (event page
   only) [EY-CFOAILAB-2026]; Gartner ranks forecasting among the lowest-rated uses [GARTNER-AIREPORTCARD-2026].
 - 2026-06-22 and 2026-09-05: RSM and CFGI announce Abacum alliances [ABACUM-RSM-2026; ABACUM-CFGI-2026].
-- 2026-07-08: FP&A Trends Survey: 15% expect to use AI agents within six months, 51% at some point
-  [ONESTREAM-FPAWEBINAR-2026].
+- 2026-07-08: the 10th FP&A Trends Survey is released [ONESTREAM-FPATRENDS-2026]; in the replay webinar (page dated
+  2026-07-09), 15% expect to use AI agents within six months and 51% at some point [ONESTREAM-FPAWEBINAR-2026].
 - 2026-07-29 and 2026-08-20: KPMG ("From Forecasting to Value Steering") and Grant Thornton (AI-enabled, continuous
   forecasting) CFO webcasts [KPMG-WEBCASTS-2026; GT-FORECASTWEBCAST-2026].
 - 2026-08-12: Sage Intacct's Finance Intelligence Agent in phased rollout; partner agent marketplace announced
   [ARMANINO-INTACCTR3-2026].
-- 2026-09: ISG lists outcome-linked commercial structures as a leading indicator in managed FP&A [ISG-FAOFPA-2026].
+- 2026-09: ISG lists expansion of managed FP&A and tax services, and commercial structures linked to transactions
+  or outcomes, among leading indicators for finance outsourcing [ISG-FAOFPA-2026].
 - 2026-09-29: KPMG describes a flux-analysis agent built in three weeks at an unnamed company [KPMG-CFOREMODEL-2026].
 - 2026-10-01: Citrin Cooperman's acquisition of AI consulting firm Rosetree takes effect, aimed at middle-market AI
   implementation [ACCTODAY-ROSETREE-2026].
 - 2026-10-19: AICPA and AIUC announce a CPA-led SOC 2 plus AIUC-1 engagement for AI systems; full launch expected
   early 2027 [JOFA-AIUC-2026] (assurance; advisory-risk-controls-17).
-- 2026-12-06 to 09 (scheduled): Digital CPA, the CAS and advisory technology conference; agenda not retrievable
+- 2026-12-06 to 09 (scheduled): Digital CPA, the CAS and advisory technology conference; agenda not read
   [CPACOM-DCPA-2026].
 
 ## 9. Common objections
@@ -243,7 +245,7 @@ to board pack; time to run a scenario.
 - **"Our client's data isn't ready."** Usually true: data quality is the top barrier in every survey read, and
   OneStream's presenter warns that AI on poor data "automates the mess faster" (vendor view). Response: sell the
   readiness work first (`#09`) and the platform second (`#10`).
-- **"We can't audit what the AI did."** 75% of surveyed CFOs cite lack of auditability, 71% accuracy and 54%
+- **"We can't audit what the AI did."** 75% of surveyed CFOs and finance leaders cite lack of auditability, 71% accuracy and 54%
   compliance [CFODIVE-DATARAILS-2026]. Response: replayable evidence and risk-scaled sign-off gates
   [CPAPA-AGENTSCLOSE-2026]; agents that show their sources and steps built trust at Cox, per the vendor's
   presenter (`#05`).
@@ -253,9 +255,9 @@ to board pack; time to run a scenario.
   parts of a 2026 ERP release were usability gains rather than headline AI [GRF-INTACCTR2-2026]. Response: reproduce
   claims on the client's own data before quoting them [CPAPA-AGENTSCLOSE-2026].
 - **"Clients will do it themselves."** 40% of AI-spend increasers take budget from external consulting; the survey
-  does not say what replaces it [RSM-MMAI-2026]. A consultant warns firms that stay out of the advisory conversation
-  risk clients self-preparing with AI [ACCTODAY-CATALYST-2026]; a fractional CFO says some clients could do the
-  accounting with AI and some probably will, though he has been surprised how little they have so far
+  does not say what replaces it [RSM-MMAI-2026]. A consultant says clients already arrive having self-prepared work with AI
+  tools, and firms outside advisory risk being caught on their heels [ACCTODAY-CATALYST-2026]; a fractional CFO says some clients could do the
+  accounting with AI and some probably will, though he has been surprised by the lack of desire to do so
   [CFODIVE-FRACTIONAL-2026].
 - **"Bigger firms will come down market."** Withum's Jim Bourke says they already are, "leveraging AI to do work
   faster" [ACCTODAY-CASKEYS-2026]. Response: the mid-market alliances in `#10` are the same move from the other side.

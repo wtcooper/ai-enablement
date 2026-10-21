@@ -1,13 +1,12 @@
 # Valuation (advisory)
 
-Sources checked 2026-10-20. Use cases live in `../use-cases/valuation.yaml` (14 entries). Ids are shortened here:
-`#05` means `advisory-valuation-05`; other modules' ids are given in full. Source keys in brackets, such as
-[IVSC-IVSED-2026], are in the YAML or in §10. **Read this first: the standards track is rich, the practice evidence
-is thin.** No entry is graded A; 4 of 14 are B, and those rest on named deployments with no published measurement.
-No error rate, override rate, parallel run or inspection finding on AI-assisted valuation exists. Every speed figure
-is vendor-published or a firm's own claim. No US top-100 or mid-market accounting firm has described its own valuation AI
-use in the sources this research reached (`assurance-specialists-02` records a CohnReznick valuation-advisory
-announcement on AI analytics). Say so when you quote a figure.
+Sources checked 2026-10-20; fact-checked 2026-10-21. Use cases live in `../use-cases/valuation.yaml` (15 entries).
+Ids are shortened here: `#05` means `advisory-valuation-05`; other modules' ids are given in full. Source keys in
+brackets, such as [IVSC-IVSED-2026], are in the YAML or in §10. **Read this first: the standards track is rich, the
+practice evidence is thin.** No entry is graded A; 3 of 15 are B, resting on named deployments with no published
+measurement. No error rate, override rate, parallel run or inspection finding on AI-assisted valuation exists. Every
+speed figure is vendor-published or a firm's own claim. The only US accounting firm found describing its own
+valuation AI use is CohnReznick (`#15`, a press release). Say so when you quote a figure.
 
 ## Contents
 
@@ -60,7 +59,7 @@ BVR-BIG4GUIDANCE-2026, summary only].
   attrition analysis and comparable-company screening (Big Four, trade-press report of a panel). `#02` BVR's
   plain-language agent over transaction and discount datasets, with drill-through to the deals (vendor). `#03`
   Kreston Reeves and Rouse (UK accounting firms) research multiples and discount rates on Valutico; Rouse estimates a
-  third off project time (vendor case study; the AI element is branding). `#04` a grounded assistant over BVR's
+  third off project time (vendor case study that never says AI was used; grade C). `#04` a grounded assistant over BVR's
   technical library, with juniors sent there first and seniors reviewing how they applied the concept (vendor tip).
 - Related: `assurance-specialists-02` (valuation providers build third-party AI analytics into their methodology).
 
@@ -72,7 +71,7 @@ BVR-BIG4GUIDANCE-2026, summary only].
 
 **Report drafting and review**
 - Improve: `#08` template-driven report generation at RXM (Singapore) and PKF FI (France); RXM says a 200-page report
-  went from months to days (vendor case study; not stated to be generative AI). `#09` generative AI drafts sections
+  went from months to days (vendor case study that never says AI was used; grade C). `#09` generative AI drafts sections
   such as market commentary, which the IVSC says some valuers already do (no firm named). `#10` reviewer agents check
   a valuation or report against standards, methodology and the firm's review policy (practitioner idea plus a vendor
   template; no named user). `#11` idea: write and defend reports expecting clients to run AI critiques of them.
@@ -85,8 +84,9 @@ BVR-BIG4GUIDANCE-2026, summary only].
   page; no customers named). Related: `assurance-specialists-05` (idea: agents build complete valuation models).
 
 **Portfolio and fund valuation (process and model change)**
-- Improve (process): `#13` Hamilton Lane (an in-house investment manager) standardized valuations on 73 Strings'
-  AI-assisted platform; qualitative statements only.
+- Improve (process): `#13` Hamilton Lane (an in-house investment manager, and an investor in the vendor) standardized
+  valuations on 73 Strings' AI-assisted platform; qualitative statements only. `#15` CohnReznick's valuation practice
+  builds 73 Strings' AI-enabled analytics into its methodology for fund clients (firm release; no figures).
 - Reinvent: `#14` independent valuation firms sell recurring valuation as an AI-enabled platform with their opinions
   inside the workflow (Stout Drivr; Kroll REVS for real estate). Announcements; no customers or figures.
 - Disputes: `advisory-forensic-disputes-06` covers sandboxed LLM use in IP damages and valuation disputes.
@@ -102,7 +102,7 @@ BVR-BIG4GUIDANCE-2026, summary only].
 3. Are your valuation tools generative AI, rule-based automation or a data platform, and which carry the risk of
    invented output? *Vendor branding blurs this (`#03`, `#08`); the answer sets the review design.*
 4. Can each analyst rebuild the key numbers without the tool, and do you re-run a calculation to check it is
-   repeatable? *Weber turned on a tool giving different numbers on repeat runs [GOLDMAN-WEBER-2024].*
+   repeatable? *In Weber the court re-ran the expert's Copilot queries and got different numbers [GOLDMAN-WEBER-2024].*
 5. As mechanical work moves to AI, how do juniors learn the method, and has your hiring or training plan changed?
    *Big Four panellists report fewer entry-level hires [BVR-KPMGTREND-2026]; see `#04`.*
 6. Have clients, auditors or opposing experts challenged a report with AI, and what does your engagement letter say
@@ -110,8 +110,8 @@ BVR-BIG4GUIDANCE-2026, summary only].
 7. Which tools may touch client financials, on which plan tier, and do you ask whether client consent is needed?
    *Tests the confidentiality question the AICPA Code raises [JOFA-ETHICSAI-2026; BVR-AICPAREPORT-2026].*
 8. For clients you also audit, or whose results go into an audit, which valuation services are off the table, and who
-   checks before acceptance? *Valuation for SEC audit clients is restricted [SEC-RULE2-01-2026]; the SEC staff presume
-   a prohibited service will be subject to audit procedures [PWC-SECFAQ-2019].*
+   checks before acceptance? *Valuation for SEC audit clients is restricted [SEC-RULE2-01-2026]; the SEC staff apply a
+   rebuttable presumption that it will be subject to audit procedures [PWC-SECFAQ-2019].*
 9. Do you sell recurring valuation (fund marks, portfolio monitoring), and could you package it with a platform as
    Stout and Kroll announced? *Tests appetite for `#14` and the in-house alternative (`#13`).*
 10. How do your fair-value reports hold up to auditor challenge on assumptions and data today, before any AI?
@@ -163,29 +163,30 @@ appraiser remains responsible for judging whether output is accurate, relevant a
 ISA-AO41-2026].
 
 **AICPA.** The FVS Executive Committee's October 2025 guidelines are members-only and non-authoritative: reminders on
-engagement terms, confidentiality and judgment [BVR-AICPAAIGUIDE-2025]. Standard-setters and practitioners expect no
-separate "AI standards"; existing NACVA, AICPA, ASA, USPAP and IVS duties apply [BVR-EWART-2026]. The proposed
-Valuation Performance Framework (AICPA, ASA, RICS) takes comments to 2026-12-22; the coverage read does not mention AI
-[ACCTODAY-VPF-2026].
+engagement terms, confidentiality and judgment [BVR-AICPAAIGUIDE-2025]. One practitioner, James Ewart, argues there
+will be no separate "AI standards"; existing NACVA, AICPA, ASA, USPAP and IVS duties apply [BVR-EWART-2026]. The
+proposed Valuation Performance Framework (AICPA, ASA, RICS) takes comments to 2026-12-22; the coverage read does not
+mention AI [ACCTODAY-VPF-2026].
 
 **Independence (where the firm also audits the client).** Appraisal, valuation and fairness-opinion services impair
-independence for an SEC-registrant audit client unless it is reasonable to conclude the results will not be subject
-to audit procedures [SEC-RULE2-01-2026]. The SEC staff presume a prohibited service will be subject to audit
-procedures, and there is no cure for prohibited services in a prior period [PWC-SECFAQ-2019]. Developing or hosting
-an AI system for an attest client can raise independence concerns [JOFA-ETHICSAI-2026]. AICPA treatment of valuation
-for private-company attest clients was not confirmed in the research: confirm per engagement. Related:
+independence for an SEC-registrant audit client unless it is reasonable to conclude the results will not be subject to
+audit procedures [SEC-RULE2-01-2026]. The SEC staff apply a rebuttable presumption that it will be, materiality does
+not overcome it, and there is no cure for prohibited services in a prior period [PWC-SECFAQ-2019]. Developing or
+hosting an AI system for an attest client can raise independence concerns [JOFA-ETHICSAI-2026]. AICPA treatment of
+valuation for private-company attest clients was not confirmed in the research: confirm per engagement. Related:
 `assurance-acceptance-independence-15`.
 
 **Lenders.** For SBA change-of-ownership loans, QoEAgent reads the SBA rule as barring a valuation prepared for the
 applicant or seller, with no dollar threshold [QOEAGENT-WHO-2026]. This is a vendor's reading. See
 `advisory-transactions-07`.
 
-**Courts and discovery.** A New York court found an expert's testimony not credible after he used Copilot for a
-calculation [GOLDMAN-WEBER-2024]. Panellists say experts should expect questions on which tools they used and how
-outputs were verified, and that prompts and drafts could be discoverable in some circumstances [BVR-DISCOVERY-2026].
-A federal court in Michigan held a plaintiff's ChatGPT material was protected work product [BVR-HEPPNERCOURT-2026].
-The evidence committee voted to withdraw proposed Rule 707 (machine-generated evidence) as published and submit a
-modified proposal for further study [USCOURTS-EVID-2026]; detail is in forensic-disputes.
+**Courts and discovery.** In Matter of Weber (N.Y. Surrogate's Court, 2024) the court found an expert's testimony not
+credible, got different numbers when it re-ran his Copilot queries, and required counsel to disclose AI use
+[GOLDMAN-WEBER-2024]. Panellists say experts should expect questions on which tools they used and how outputs were
+verified, and that prompts and drafts could be discoverable in some circumstances [BVR-DISCOVERY-2026]. A federal
+court in Michigan (Warner v. Gilbarco) held a plaintiff's ChatGPT material was protected work product, in contrast to
+Heppner [BVR-WARNER-2026]. The evidence committee voted to withdraw proposed Rule 707 (machine-generated evidence) as
+published and submit a modified proposal for further study [USCOURTS-EVID-2026]; detail is in forensic-disputes.
 
 **Confidentiality.** Ask whether client consent is needed before client data goes into an AI tool
 [JOFA-ETHICSAI-2026]. Keep confidential client information out of public AI systems [BVR-AICPAREPORT-2026]; the IVSC
@@ -198,8 +199,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 
 ## 7. Roles and how they evolve
 
-- Big Four panellists said firms are hiring fewer entry-level analysts as AI automates part of the mechanical work,
-  and asked how future valuers will be trained [BVR-KPMGTREND-2026]. See `assurance-specialists-01` for the 2025 and
+- Several speakers on a Big Four panel said firms are hiring fewer entry-level analysts as AI automates part of the
+  mechanical work, raising the question of how future valuers will be trained [BVR-KPMGTREND-2026]. See `assurance-specialists-01` for the 2025 and
   2026 Big Four panels and `professional-services-talent-learning-07` for redesigned entry-level roles.
 - Roger Grabowski told NACVA attendees AI will not replace judgment and could free analysts from mechanical work to
   understand businesses and advise clients [BVR-NACVA-2026].
@@ -223,7 +224,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 - **2026-01-07 to 2026-04-23:** AO-41 exposed, then adopted [BVR-TAFAO41-2026; BVR-AO41ADOPT-2026].
 - **2026-01 to 2026-04-30:** IVS exposure draft consultation; final planned 2027-01-31, effective 2028-01-31
   [IVSC-IVSED-2026].
-- **2026-03-03:** Kroll announces REVS (`#14`) [KROLL-REVS-2026].
+- **2026-03-03 and 2026-03-26:** Kroll announces REVS (`#14`) [KROLL-REVS-2026]; CohnReznick says its valuation
+  practice has built in 73 Strings' AI-enabled analytics (`#15`) [COHNREZNICK-VALUATION-2026].
 - **2026-04:** a deal tracker reports EisnerAmper buying KLG Business Valuators & Forensic Accountants and reads this
   as PE-backed platforms buying valuation and forensic niches [CPATRENDLINES-TRACKER-2026]. Ownership routes to
   professional-services.
@@ -231,7 +233,7 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
   announce Claude access for 276,000+ people [ANTHROPIC-FSAGENTS-2026; ANTHROPIC-KPMG-2026].
 - **2026-06 (summaries only):** BVR write-ups describe firms moving from experimenting to integrating AI into research,
   workflows and practice management [BVR-EXPERIMENT-2026].
-- **2026-06-10:** Big Four panellists describe AI as part of everyday valuation work [BVR-KPMGTREND-2026].
+- **2026-06-10:** BVWire reports Big Four panellists describing AI as part of everyday valuation work [BVR-KPMGTREND-2026].
 - **2026-06-25:** IVSC dialogue panel says governing the technology may now be harder than adopting it
   [BVR-IVSCDIALOGUE-2026].
 - **2026-07-14:** Stout launches Drivr (`#14`) [STOUT-DRIVR-2026].
@@ -250,10 +252,10 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 
 | Objection | Evidence-based response |
 |---|---|
-| "AI can't be trusted with numbers." | Partly right for chatbots doing arithmetic: Weber shows a non-repeatable calculation sinking testimony [GOLDMAN-WEBER-2024], and LLMs trailed specialist models in forecasting and price estimation (`#06`, `#07`). Use deterministic engines for calculations, as 73 Strings describes [S73-CALLISTO-2026], and keep AI to retrieval, drafting and review with checks. |
+| "AI can't be trusted with numbers." | Partly right for chatbots doing arithmetic: in Weber a court re-ran an expert's Copilot queries, got different numbers and questioned their reliability [GOLDMAN-WEBER-2024], and LLMs trailed specialist models in forecasting and price estimation (`#06`, `#07`). Use deterministic engines for calculations, as 73 Strings describes [S73-CALLISTO-2026], and keep AI to retrieval, drafting and review with checks. |
 | "Hallucinations make it unusable." | A practitioner view is that most are preventable through design, source checks and review, and that information overload is the bigger problem [BVR-ENDICOTT-2026]. Grounded tools that show the underlying transactions (`#02`) make checking practical [BVR-RADATIP-2026]. |
 | "Clients' data can't go into AI." | Answer the consent question first [JOFA-ETHICSAI-2026] and keep confidential information out of public tools [BVR-AICPAREPORT-2026]; the IVSC names safeguards as the issue, not AI as such [IVSC-PERSPECTIVES-2025]. |
-| "The standards will forbid it." | No new AI standards are expected; existing duties apply [BVR-EWART-2026]. AO-41 adds no requirements [BVR-AO41ADOPT-2026]. The IVSC draft asks for disclosure, documentation and quality controls, not a ban [IVSC-IVSED-2026]. |
+| "The standards will forbid it." | A practitioner view is that existing duties apply and no separate AI standards are coming [BVR-EWART-2026]. AO-41 adds no requirements [BVR-AO41ADOPT-2026]. The IVSC draft asks for disclosure, documentation and quality controls, not a ban [IVSC-IVSED-2026]. |
 | "Black-box tools will fail review." | The IVSC draft targets exactly that: tools whose reasoning the valuer cannot explain [BVR-IVSPODCAST-2026]. Choose tools with traceable, source-linked output [STOUT-DRIVR-2026; S73-CALLISTO-2026]. |
 | "Everyone using the same tools will think alike." | An "algorithmic monoculture" concern is raised in BVR's coverage (summary only) [BVR-MONOCULTURE-2026]; no evidence either way. Keep independent judgment on selection and conclusions. |
 | "Clients will just ask ChatGPT to value the business." | Clients already use AI to attack valuers' assumptions [BVR-NACVA-2026]. Speakers advise expecting it, asking for the client's prompt and output, and replying with evidence (`#11`). |
@@ -265,10 +267,10 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 
 Full details for these keys are in the YAML: ANTHROPIC-FS-2025, ANTHROPIC-FSAGENTS-2026, ANTHROPIC-KPMG-2026,
 AICPA-FVS-2026, AICPA-FVSPODCAST-2026, ARXIV-FORMA-2026, ARXIV-REAPPRAISAL-2025, ASA-ASAIC26-2026,
-BVR-AICPAREPORT-2026, BVR-BIG4PANEL-2026, BVR-COGDEBT-2026, BVR-DISCOVERY-2026, BVR-ENDICOTT-2026,
+BVR-AICPAREPORT-2026, BVR-BIG4PANEL-2026, BVR-COGDEBT-2026, COHNREZNICK-VALUATION-2026, CPAPA-COHNREZNICK-2026, BVR-DISCOVERY-2026, BVR-ENDICOTT-2026,
 BVR-IVSCDIALOGUE-2026, BVR-IVSPODCAST-2026, BVR-KPMGTREND-2026, BVR-NACVA-2026, BVR-PCAOBINSP-2026,
 BVR-RADAEXPAND-2026, BVR-RADAJUNIOR-2026, BVR-RADAPRODUCT-2026, BVR-RADATIP-2026, BVR-TRAINPRACTICAL-2025,
-BVR-TRAINWORKSNOW-2025, DEALGAUGE-STARTUPHUB-2026, GOLDMAN-WEBER-2024, ISA-AO41-2026, IVSC-IVSED-2026,
+BVR-TRAINWORKSNOW-2025, DEALGAUGE-STARTUPHUB-2026, GOLDMAN-WEBER-2024, HAMILTONLANE-VALTECH-2025, ISA-AO41-2026, IVSC-IVSED-2026,
 IVSC-PERSPECTIVES-2025 (the same paper is IVSC-AI-2025 in `assurance-specialists-*`), KROLL-REVS-2026,
 S73-CALLISTO-2026, S73-HAMLANE-2025, S73-HOME-2026, SEC-RULE2-01-2026, STOUT-DRIVR-2026, STOUT-TECH-2024,
 VALUTICO-HOME-2026, VALUTICO-KRESTON-2025, VALUTICO-PKFFI-2025, VALUTICO-ROUSE-2025, VALUTICO-RXM-2025. The FVC2631
@@ -284,7 +286,7 @@ Cited here only:
 - BVR-BIG4GUIDANCE-2026: Business Valuation Update, "Big Four Valuation Leaders Point to the Need for Fair Value Guidance", 2026-07 (summary only). https://www.bvresources.com/articles/business-valuation-update/big-four-valuation-leaders-point-to-the-need-for-fair-value-guidance
 - BVR-EWART-2026: BVWire, "AI raises the bar for valuation standards compliance", 2026-04-01. https://www.bvresources.com/articles/bvwire/ai-raises-the-bar-for-valuation-standards-compliance
 - BVR-EXPERIMENT-2026: Business Valuation Update, "From Experimentation to Integration: AI's Next Phase in Valuation", 2026-06 (summary only). https://www.bvresources.com/articles/business-valuation-update/from-experimentation-to-integration-ais-next-phase-in-valuation
-- BVR-HEPPNERCOURT-2026: BVWire, "Court: ChatGPT use does not waive work-product protection", 2026-05-20. https://www.bvresources.com/articles/bvwire/court-chatgpt-use-does-not-waive-work-product-protection
+- BVR-WARNER-2026: BVWire, "Court: ChatGPT use does not waive work-product protection" (Warner v. Gilbarco), 2026-05-20. https://www.bvresources.com/articles/bvwire/court-chatgpt-use-does-not-waive-work-product-protection
 - BVR-MONOCULTURE-2026: Business Valuation Update, "Are We Headed for an 'Algorithmic Monoculture'?", 2026-08 (summary only). https://www.bvresources.com/articles/business-valuation-update/are-we-headed-for-an-algorithmic-monoculture
 - BVR-POLLS-2025: Business Valuation Update, "Recent Polls Reveal AI Usage at BVFLS Firms", 2025-09 (summary only). https://www.bvresources.com/articles/business-valuation-update/recent-polls-reveal-ai-usage-at-bvfls-firms
 - BVR-POLL-2026: Business Valuation Update, "BVR Poll: AI Adoption in Valuation Is Moving at an 'Insane' Pace", 2026-04 (summary only). https://www.bvresources.com/articles/business-valuation-update/bvr-poll-ai-adoption-in-valuation-is-moving-at-an-insane-pace
