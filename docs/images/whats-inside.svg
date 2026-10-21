@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-labelledby="t d">
   <title id="t">What's inside</title>
-  <desc id="d">Three kinds of knowledge feed the transformation advisor: the method, business archetypes, and optional organization content. The advisor runs as one skill in the AI tool you already use and saves your plan to your own workspace.</desc>
+  <desc id="d">Three kinds of knowledge feed the transformation advisor: the method, business archetypes, and optional organization content. The suite runs as five skills in the AI tool you already use and saves its work to your own workspace.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -21,7 +21,7 @@
 
   <rect x="1" y="1" width="958" height="378" rx="12" fill="#ffffff" stroke="#d0d7de"/>
   <text class="title" x="32" y="40">What's inside</text>
-  <text class="sub" x="32" y="62">Deep, researched knowledge behind one simple conversation.</text>
+  <text class="sub" x="32" y="62">Deep, researched knowledge behind simple conversations.</text>
 
   <!-- Knowledge sources -->
   <rect class="box" x="32" y="84" width="300" height="76" rx="10"/>
@@ -46,21 +46,21 @@
 
   <!-- Advisor -->
   <rect class="advisor" x="380" y="130" width="230" height="170" rx="12"/>
-  <text class="label" x="396" y="162">Transformation advisor</text>
-  <text class="desc" x="396" y="188">One skill in the AI tool</text>
-  <text class="desc" x="396" y="206">you already use:</text>
+  <text class="label" x="396" y="162">Five AI transformation skills</text>
+  <text class="desc" x="396" y="188">Advisor · portfolio · delivery</text>
+  <text class="desc" x="396" y="206">enablement · governance</text>
   <text class="desc" x="396" y="232">Claude · ChatGPT / Codex</text>
   <text class="desc" x="396" y="250">Cursor · GitHub Copilot</text>
-  <text class="desc" x="396" y="280">Asks one question at a time</text>
+  <text class="desc" x="396" y="280">In the AI tool you already use</text>
 
   <line class="line" x1="610" y1="214" x2="656" y2="214" marker-end="url(#arrow)"/>
 
   <!-- Workspace -->
   <rect class="out" x="658" y="130" width="270" height="170" rx="12"/>
   <text class="label" x="674" y="162">Your workspace</text>
-  <text class="desc" x="674" y="188">Your transformation plan</text>
-  <text class="desc" x="674" y="206">Scored opportunities</text>
-  <text class="desc" x="674" y="224">Briefs for each team or unit</text>
-  <text class="desc" x="674" y="242">Roadmap and value plan</text>
+  <text class="desc" x="674" y="188">Transformation plan and roadmap</text>
+  <text class="desc" x="674" y="206">Portfolio and benefits register</text>
+  <text class="desc" x="674" y="224">Solution briefs and evaluations</text>
+  <text class="desc" x="674" y="242">Enablement program, AI policy</text>
   <text class="desc" x="674" y="280">Any folder, or a GitHub repo</text>
 </svg>

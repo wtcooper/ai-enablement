@@ -1,0 +1,84 @@
+{
+ "field": "advisory",
+ "specialties": [
+  {
+   "name": "Advising clients on adopting AI",
+   "description": "Advisers help clients choose, list, govern and control the AI tools and agents they deploy.",
+   "examples": [
+    "advisory-client-accounting-services-20",
+    "advisory-risk-controls-19"
+   ]
+  },
+  {
+   "name": "Partnering with AI finance software vendors",
+   "description": "Firms co-build, implement and run vendors' AI ledgers, ERP and planning platforms in client work.",
+   "examples": [
+    "advisory-valuation-15",
+    "advisory-fpa-performance-10"
+   ]
+  },
+  {
+   "name": "AI in expert evidence and court",
+   "description": "Expert work and evidence facing courts, opposing experts and counterparties when AI made or tested it.",
+   "examples": [
+    "advisory-forensic-disputes-07",
+    "advisory-forensic-disputes-10"
+   ]
+  },
+  {
+   "name": "AI quality-of-earnings services for deals",
+   "description": "Quality-of-earnings work for buyers, sellers and lenders rebuilt as faster, cheaper AI-built deal services.",
+   "examples": [
+    "advisory-transactions-07",
+    "advisory-transactions-05"
+   ]
+  },
+  {
+   "name": "Family offices and family businesses",
+   "description": "Running family offices and advising business families on succession, exits and consolidated wealth views.",
+   "examples": [
+    "advisory-private-client-17",
+    "advisory-private-client-08"
+   ]
+  }
+ ],
+ "assign": {
+  "advisory-client-accounting-services-20": "Advising clients on adopting AI",
+  "advisory-fpa-performance-09": "Advising clients on adopting AI",
+  "advisory-private-client-14": "Advising clients on adopting AI",
+  "advisory-risk-controls-12": "Advising clients on adopting AI",
+  "advisory-risk-controls-17": "Advising clients on adopting AI",
+  "advisory-risk-controls-18": "Advising clients on adopting AI",
+  "advisory-risk-controls-19": "Advising clients on adopting AI",
+  "advisory-risk-controls-20": "Advising clients on adopting AI",
+  "advisory-risk-controls-21": "Advising clients on adopting AI",
+  "advisory-client-accounting-services-17": "Partnering with AI finance software vendors",
+  "advisory-client-accounting-services-18": "Partnering with AI finance software vendors",
+  "advisory-fpa-performance-10": "Partnering with AI finance software vendors",
+  "advisory-fpa-performance-11": "Partnering with AI finance software vendors",
+  "advisory-fpa-performance-12": "Partnering with AI finance software vendors",
+  "advisory-private-client-01": "Partnering with AI finance software vendors",
+  "advisory-valuation-15": "Partnering with AI finance software vendors",
+  "advisory-forensic-disputes-07": "AI in expert evidence and court",
+  "advisory-forensic-disputes-10": "AI in expert evidence and court",
+  "advisory-forensic-disputes-11": "AI in expert evidence and court",
+  "advisory-forensic-disputes-14": "AI in expert evidence and court",
+  "advisory-forensic-disputes-15": "AI in expert evidence and court",
+  "advisory-valuation-11": "AI in expert evidence and court",
+  "advisory-transactions-04": "AI quality-of-earnings services for deals",
+  "advisory-transactions-05": "AI quality-of-earnings services for deals",
+  "advisory-transactions-06": "AI quality-of-earnings services for deals",
+  "advisory-transactions-07": "AI quality-of-earnings services for deals",
+  "advisory-transactions-08": "AI quality-of-earnings services for deals",
+  "advisory-transactions-16": "AI quality-of-earnings services for deals",
+  "advisory-private-client-05": "Family offices and family businesses",
+  "advisory-private-client-08": "Family offices and family businesses",
+  "advisory-private-client-10": "Family offices and family businesses",
+  "advisory-private-client-11": "Family offices and family businesses",
+  "advisory-private-client-12": "Family offices and family businesses",
+  "advisory-private-client-13": "Family offices and family businesses",
+  "advisory-private-client-15": "Family offices and family businesses",
+  "advisory-private-client-16": "Family offices and family businesses",
+  "advisory-private-client-17": "Family offices and family businesses"
+ }
+}

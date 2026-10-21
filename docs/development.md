@@ -19,7 +19,7 @@ Each stage writes a document that the next stage reads.
 | Stage | Document | What it holds |
 |---|---|---|
 | Intent | [`intent/`](../intent/) | The problem, the outcome we want, constraints, decisions |
-| Spec | [`spec/`](../spec/) | What the advisor does: onboarding, the loop, file formats, knowledge model, plugin structure, ground rules |
+| Spec | [`spec/`](../spec/) | What the advisor does (onboarding, the loop, file formats, knowledge model, plugin structure, ground rules), and the [skill suite addendum](../spec/2026-10-20-skill-suite.md) |
 | Plan | [`plan/`](../plan/) | Build order (milestones M0–M7), what ships, research waves, costs, risks, proof |
 
 This process is for building the plugin. None of it appears in the product.
@@ -32,15 +32,20 @@ ai-enablement/
 │   .cursor-plugin/ · .github/plugin/     #   Cursor, Copilot); all point to the plugin below
 ├── plugins/ai-transformation/       # THE PRODUCT: everything that ships
 │   ├── plugin.json                       # Agent Plugins 1.0 manifest (+ .claude-plugin/, .cursor-plugin/)
-│   └── skills/transformation-advisor/
-│       ├── SKILL.md                      # the conductor: rules, onboarding, the loop, delegation
-│       └── references/
-│           ├── method/                   # 11 step guides + index
-│           ├── library/                  # shared backbone: index, patterns/, functions/, journey stages
-│           ├── archetypes/<id>/          # ARCHETYPE.md, field guides, modules/, use-cases/ (+ index.md)
-│           ├── briefs/                   # self-contained subagent briefs
-│           ├── schemas/                  # plan, opportunities and use-case formats; vocabulary
-│           └── templates/                # plan and unit-brief skeletons
+│   └── skills/
+│       ├── transformation-advisor/       # core skill; holds the shared knowledge base
+│       │   ├── SKILL.md                  # the conductor: rules, onboarding, the loop, delegation
+│       │   └── references/
+│       │       ├── method/               # step guides, leading partners, acquisitions + index
+│       │       ├── library/              # shared backbone: index, patterns/, functions/, journey stages
+│       │       ├── archetypes/<id>/      # ARCHETYPE.md, field guides, modules/, use-cases/ (+ index.md)
+│       │       ├── briefs/               # self-contained subagent briefs
+│       │       ├── schemas/              # plan, opportunities, use-case formats; vocabulary; core rules
+│       │       └── templates/            # plan and unit-brief skeletons
+│       └── ai-portfolio/ · ai-solution-delivery/ · ai-enablement/ · ai-governance/
+│           ├── SKILL.md                  # each carries the shared core-rules block
+│           └── references/               # own method files, templates, schemas, briefs; reads the
+│                                         #   shared knowledge via ../transformation-advisor/references/
 ├── templates/workspace/                  # starter folder for users, with overlay examples
 ├── research/                             # build-only: briefs, raw research, retros
 ├── scripts/validate.py                   # content checks
@@ -75,6 +80,13 @@ Results and lessons from each wave:
 
 - [Pilot retro](../research/runs/pilot/RETRO.md): one focus area, used to calibrate the recipe
 - [Wave 1 retro](../research/runs/wave1/RETRO.md): the method and the assurance archetype
+- [Wave 2 retro](../research/runs/wave2/RETRO.md): the tax archetype
+- [Wave 3 retro](../research/runs/wave3/RETRO.md): the professional services archetype
+- [Wave 4 retro](../research/runs/wave4/RETRO.md): the security archetype
+- [Stream B retro](../research/runs/streamB/RETRO.md): the shared backbone library
+- [Wave 5 retro](../research/runs/wave5/RETRO.md): the advisory archetype
+- [Wave 6 retro](../research/runs/wave6/RETRO.md): mid-market modules for assurance and tax
+- [Suite retro](../research/runs/suite/RETRO.md): the portfolio, delivery, enablement and governance skills
 
 ## Quality checks
 
@@ -83,6 +95,7 @@ Results and lessons from each wave:
 - file sizes, and that long files have a table of contents
 - that links and file paths resolve
 - that every use case uses the controlled vocabulary and has dated, linked sources
+- that every skill's `SKILL.md` carries the shared core-rules block unchanged
 - each focus area against its evidence targets
 
 Before a release, also run `claude plugin validate --strict` on the repo and the plugin, then the

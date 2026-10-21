@@ -1,16 +1,15 @@
-# AI Transformation Advisor
+# AI Transformation
 
-An AI advisor that guides a team lead, practice leader or head of AI through transforming how their
-part of the business works with AI. It goes beyond personal productivity to redesigned workflows,
-AI agents and new ways of working.
+A set of AI skills for the people who lead AI change in a business: team leads, practice leaders,
+heads of AI, and knowledge, learning and operations leaders. They go beyond personal productivity to
+redesigned workflows, AI agents and new ways of working, and then help run the program that follows.
 
-It runs as a plugin inside the AI tool you already use: Claude, ChatGPT / Codex, Cursor or GitHub
-Copilot. It interviews you the way an experienced transformation lead would, draws on deep,
-researched knowledge of your field, and leaves you with a transformation plan you can act on.
+The plugin runs inside the AI tool you already use: Claude, ChatGPT / Codex, Cursor or GitHub Copilot.
+Each skill interviews you the way an experienced practitioner would, draws on deep, researched knowledge
+of your field, and writes plain files you can act on and share.
 
-> **Status: in development (pre-release).** The method, three business archetypes (assurance, tax and security)
-> and the installable skill are built. It installs and runs in Claude Code; the other tools are still being checked.
-> See [Status](#status).
+> **Status: in development (pre-release).** The method, five business archetypes and five skills are built.
+> The plugin installs and runs in Claude Code; the other tools are still being checked. See [Status](#status).
 
 ## Why
 
@@ -21,7 +20,21 @@ researched knowledge of your field, and leaves you with a transformation plan yo
 - People worry that AI will replace them. The advisor is **honest** about how roles change, and it
   helps the person proposing the change lead it.
 
-## How it works
+## The skills
+
+| Skill | Use it when you want to | It writes |
+|---|---|---|
+| **transformation-advisor** | Find where AI could change your team's, practice's or firm's work and plan it; assess an acquired firm's AI maturity | `transformation-plan.md`, `opportunities.yaml`, unit briefs |
+| **ai-portfolio** | Log, screen and score AI ideas; decide whether to stop, redirect or scale a pilot; run portfolio reviews; track benefits; roll capabilities into an acquired firm | `portfolio/` |
+| **ai-solution-delivery** | Take one opportunity to production: frame the problem, build or buy, design brief, evaluation plan, readiness check, post-launch review | `solutions/<id>/` |
+| **ai-enablement** | Raise fluency and sustained use: segment users, role-based curriculum, champions and office hours, a workflow library, adoption measures, bringing partners along | `enablement/` |
+| **ai-governance** | Set practical governance: acceptable use, client-data rules, risk tiers and human review, records of AI use, professional duties, vendor evaluation, an approved-tool catalog | `overlay/` |
+
+The skills share one knowledge base and hand work to each other through files. Opportunities from a
+transformation plan enter the portfolio; a portfolio item ready to build opens a solution folder; launched
+solutions add benefits and reusable workflows; and the governance files constrain every skill.
+
+## How the advisor works
 
 ![How the advisor works](docs/images/advisor-flow.svg)
 
@@ -57,8 +70,9 @@ More detail: [How the advisor works](docs/how-it-works.md).
 
 | Archetype | Status |
 |---|---|
-| **Assurance**: audit, SOC and attestation, sustainability assurance, assurance over AI | Ready: 10 focus areas, 206 sourced examples, all fact-checked |
-| **Tax**: individual and corporate compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research and advisory, tax data and technology | Ready: 8 focus areas, 183 sourced examples, all fact-checked. Public evidence is thinner than in audit, and the advisor says so |
+| **Assurance**: audit, SOC and attestation, sustainability assurance, assurance over AI, and the mid-market: private-company audits, employee benefit plan audits, nonprofit and government (single audit) | Ready: 13 focus areas, 265 sourced examples, all fact-checked |
+| **Tax**: individual and corporate compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research and advisory, tax data and technology, and multistate tax for private companies | Ready: 9 focus areas, 206 sourced examples, all fact-checked. Public evidence is thinner than in audit, and the advisor says so |
+| **Advisory**: the advisory and outsourced side of accounting firms serving private and middle-market companies: client accounting services, risk and controls, transactions, valuation, forensic and disputes, FP&A, private client | Ready: 7 focus areas, 124 sourced examples, all fact-checked. Strongest in client accounting services and risk; thin in valuation and FP&A |
 | **Security**: governance and risk, security operations, threat intelligence, incident response, vulnerability and exposure, application security, cloud, identity, data security and privacy, human risk, AI security | Ready: 11 focus areas, 245 sourced examples, all fact-checked |
 | **Professional services**: the base for law, consulting, accounting and advisory firms and in-house legal teams: pursuit and proposals, client development, acceptance and risk, scoping and pricing, staffing, delivery, work production, quality review, billing, knowledge management, talent and learning, firm finance | Ready: 12 focus areas, 240 sourced examples, all fact-checked. Few firms publish measured results, and the advisor says so |
 | Other fields | The advisor uses its general method, and can optionally research a field on the spot |
@@ -78,10 +92,10 @@ Code; the other tools are being checked ([checklist](docs/install-testing.md)).
 | GitHub Copilot CLI | `copilot plugin marketplace add wtcooper/ai-enablement`, then `copilot plugin install ai-transformation@ai-enablement` |
 | VS Code with Copilot | Add `wtcooper/ai-enablement` to the `chat.plugins.marketplaces` setting |
 
-### 2. Start in a folder for your plan
+### 2. Start in a folder for your work
 
-Open your AI tool in an empty folder, or in a shared folder or repo your team uses. The advisor saves
-your plan there. A [starter folder](templates/workspace/) is available if you want one, with examples of
+Open your AI tool in an empty folder, or in a shared folder or repo your team uses. The skills save
+their files there, so the advisor's plan, the portfolio and the policy sit side by side. A [starter folder](templates/workspace/) is available if you want one, with examples of
 the optional organization content.
 
 ### 3. Ask for help in your own words
@@ -91,8 +105,17 @@ the optional organization content.
 > *"I lead a tax compliance team. Where should we use AI?"*
 >
 > *"I'm new to AI. Show me what teams like mine are doing."*
+>
+> *"We have 30 AI ideas and no way to compare them or stop the weak pilots."* (ai-portfolio)
+>
+> *"We want to build a tool that drafts responses to tax notices. Build or buy, and how do we test it?"*
+> (ai-solution-delivery)
+>
+> *"Adoption is uneven and the partners ignore the assistant."* (ai-enablement)
+>
+> *"IT says no. Can our staff use AI on client returns?"* (ai-governance)
 
-The advisor takes it from there. A first session usually takes 60–90 minutes. Ask it to pause at
+The right skill takes it from there. A first session usually takes 60–90 minutes. Ask it to pause at
 any time, and it picks up where you left off next time.
 
 ### Tips
@@ -108,9 +131,9 @@ any time, and it picks up where you left off next time.
 
 | Done | Next |
 |---|---|
-| Method: 11 step-by-step guides, fact-checked | Confirm installation in Codex, Cursor and Copilot |
-| Four archetypes, fact-checked: professional services (12 focus areas), assurance (10), tax (8) and security (11) | Test runs with real audit, tax and security leaders, and an eval suite |
-| The advisor skill: installs and runs in Claude Code | |
+| Method: 11 step-by-step guides, plus guides for leading partners and for acquisitions, fact-checked | Confirm installation in Codex, Cursor and Copilot |
+| Five archetypes, fact-checked: professional services (12 focus areas), assurance (13), tax (9), advisory (7) and security (11) | Test runs with real practice leaders, and an eval suite |
+| Five skills (advisor, portfolio, solution delivery, enablement, governance): install, trigger and hand off in Claude Code | |
 | Shared library: 11 pattern guides, 10 function cards and journey stages, fact-checked | |
 | Research program and quality checks | |
 

@@ -1,6 +1,6 @@
 ---
 name: transformation-advisor
-description: Guides a team lead, practice leader or head of AI through transforming how their part of the business works with AI, beyond personal productivity to redesigned workflows, AI agents and new service models. Use when someone wants to find where AI could change their team's, practice's or firm's work; build an AI transformation plan, roadmap or business case; split a practice into units and roll their plans up; see what peers in their field (for example audit and assurance) are really doing with AI; or resume a transformation plan saved in this folder. Interviews one question at a time and writes the plan to files.
+description: Guides a team lead, practice leader or head of AI through transforming how their part of the business works with AI, beyond personal productivity to redesigned workflows, AI agents and new service models. Use when someone wants to find where AI could change their team's, practice's or firm's work; build an AI transformation plan, roadmap or business case; split a practice into units and roll their plans up; see what peers in their field (for example audit and assurance) are really doing with AI; or resume a transformation plan saved in this folder. Interviews one question at a time and writes the plan to files. To run the firm's AI portfolio, use ai-portfolio; to take one solution to production, ai-solution-delivery; for training and adoption, ai-enablement; for AI policy and tool approval, ai-governance.
 ---
 
 # Transformation advisor

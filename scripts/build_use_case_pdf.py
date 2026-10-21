@@ -35,10 +35,17 @@ ARCHETYPES = [
      "also in-house internal audit and SOX teams."),
     ("tax", "Tax", "Tax compliance, provision and Pillar Two, indirect tax, transfer pricing, controversy, research "
      "and advisory, and tax data; firms and in-house tax departments."),
+    ("advisory", "Advisory", "The advisory and outsourced side of accounting firms serving private, middle-market companies: client "
+     "accounting services, risk and controls, transactions, valuation, forensic, FP&A and private client."),
     ("security", "Security", "Protecting systems, data, identities and people, and the AI an organization runs; "
      "in-house security teams and security service providers."),
 ]
 NAMES = {
+    "client-accounting-services": "Client accounting services", "risk-controls": "Risk and controls advisory",
+    "transactions": "Transaction advisory", "valuation": "Valuation", "forensic-disputes": "Forensic and disputes",
+    "fpa-performance": "FP&A and performance", "private-client": "Private client",
+    "private-company": "Private-company audits and reviews", "benefit-plans": "Benefit plan audits",
+    "nonprofit-government": "Nonprofit and government audits", "multistate-private": "Multistate tax for private companies",
     "pursuit-proposals": "Pursuit and proposals", "client-development": "Client development",
     "acceptance-risk": "Acceptance and engagement risk", "scoping-pricing": "Scoping and pricing",
     "staffing-resourcing": "Staffing and resourcing", "delivery-management": "Delivery management",
@@ -117,7 +124,7 @@ def card(u, mod_name):
 class Doc(BaseDocTemplate):
     def __init__(self, fn, **kw):
         super().__init__(fn, pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
-                         topMargin=0.75 * inch, bottomMargin=0.7 * inch, title="AI Use Cases: Professional Services, Assurance, Tax and Security",
+                         topMargin=0.75 * inch, bottomMargin=0.7 * inch, title="AI Use Cases: Professional Services, Assurance, Tax, Advisory and Security",
                          author="AI Transformation Advisor", subject="Summary of researched, fact-checked AI use cases", **kw)
         fr = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="f")
         self.addPageTemplates([PageTemplate(id="p", frames=[fr], onPageEnd=self.deco)])
@@ -200,6 +207,7 @@ PICKS = {
     "New services, pricing and operating models": ["professional-services-client-development-22", "assurance-assurance-over-ai-17", "tax-research-advisory-25", "security-application-security-17"],
 }
 order = {"A": 0, "B": 1, "C": 2, "D": 3}
+CODE = {"professional-services": "P", "assurance": "A", "tax": "T", "advisory": "Ad", "security": "S"}
 byid = {u["id"]: u for _, u in allu}
 crow = [[P("<b>Category</b>", ss["cellb"]), P("<b>Use cases</b>", ss["cellb"]), P("<b>Examples</b>", ss["cellb"])]]
 for name, what, pats, sc in CATS:
@@ -213,9 +221,9 @@ for name, what, pats, sc in CATS:
             pool = [v for b, v in allu if b == a and incat(v, pats, sc)]
             if not pool: continue
             u = sorted(pool, key=lambda v: (v.get("title", "").startswith("Idea"), order.get(v.get("grade"), 9), len(v.get("title", ""))))[0]
-        ex.append(f"<font color='#57606a'><b>{label[0]}</b></font>  {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
+        ex.append(f"<font color='#57606a'><b>{CODE[a]}</b></font>  {e(u['title'])} <font color='#57606a'>({e(u['grade'])})</font>")
     crow.append([P(f"<b>{e(name)}</b><br/><font size='7.2' color='#57606a'>{e(what)}</font>", ParagraphStyle("cn", parent=ss["cell"], fontSize=8.4, leading=10.4)),
-                 P(f"<b>{n}</b><br/><font size='7.0' color='#57606a'>" + "<br/>".join(" ".join(f"{l[0]}{len(counts[a])}" for a, l, _ in ARCHETYPES[i:i + 2]) for i in (0, 2)) + "</font>", ss["cell"]),
+                 P(f"<b>{n}</b><br/><font size='7.0' color='#57606a'>" + "<br/>".join(" ".join(f"{CODE[a]}{len(counts[a])}" for a, _, _ in ARCHETYPES[i:i + 2]) for i in (0, 2, 4)) + "</font>", ss["cell"]),
                  P("<br/>".join(ex), ParagraphStyle("ex", parent=ss["cell"], fontSize=7.0, leading=8.6))])
 ct = Table(crow, colWidths=[1.9 * inch, 0.65 * inch, 4.45 * inch], repeatRows=1)
 ct.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0), (-1, 0), 0.8, NAVY),
@@ -223,11 +231,11 @@ ct.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LINEBELOW", (0, 0
                         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5)]))
 
 story += [heading("Executive summary", ss["title"], 0, "summary", "Executive summary"), Spacer(1, 6),
-          P(f"AI use cases in professional services, assurance, tax and security: {N} researched, fact-checked examples of AI changing the work, "
+          P(f"AI use cases in professional services, assurance, tax, advisory and security: {N} researched, fact-checked examples of AI changing the work, "
             f"from the AI Transformation Advisor's knowledge base. {DATE}.", ss["sub"]), Spacer(1, 14),
           P("<b>Key takeaways</b>", ss["ct"]), Spacer(1, 4)]
 take = [
-    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in four fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI or tax authorities' own AI. Every example names its sources and was checked against them.",
+    f"<b>Broad and specific.</b> {N} examples across {sum(len(modules(a)) for a, _, _ in ARCHETYPES)} focus areas in five fields. Most fall into nine categories shared across the fields; {len(ASSIGN)} sit in {sum(len(v) for v in SPEC.values())} specialty categories found in only one field, such as auditing a client's own AI or tax authorities' own AI. Every example names its sources and was checked against them.",
     f"<b>Evidence strength differs by field.</b> Examples with a named deployment or measured result (grades A and B): security {pct(abshare['security'], tot['security'])}%, assurance {pct(abshare['assurance'], tot['assurance'])}%, professional services {pct(abshare['professional-services'], tot['professional-services'])}%, tax {pct(abshare['tax'], tot['tax'])}%. Strongest: security operations and AI security; audit testing; legal and advisory work production. Thinnest: tax provision, transfer pricing, staffing, billing. Firms rarely publish measured results.",
     f"<b>AI mostly does a first pass that a person checks.</b> {pct(lad['augment'], N)}% of examples augment a step and {pct(lad['assist'], N)}% assist a person; {pct(lad['automate'], N)}% automate a step and {pct(lad['delegate'], N)}% delegate a multi-step outcome to an agent with human checkpoints.",
     f"<b>Read the numbers with care.</b> About {pct(prov['independent'], nfig)}% of the {nfig:,} outcome figures come from independent sources (regulators, academics, benchmarks); the rest are self-reported or vendor-published. Independent error or override rates for AI tools in live use are rare in every field.",
@@ -239,7 +247,7 @@ story.append(ListFlowable([ListItem(P(t, ss["body"]), leftIndent=12, value="•"
 story += [Spacer(1, 14), P("<b>By field</b>", ss["ct"]), Spacer(1, 4)]
 rows = [[P("<b>Field</b>", ss["cellb"]), P("<b>Focus areas</b>", ss["cellb"]), P("<b>Use cases</b>", ss["cellb"]),
          P("<b>Named or measured (A/B)</b>", ss["cellb"]), P("<b>Strongest areas</b>", ss["cellb"])]]
-strongest = {"professional-services": "Work production, scoping and pricing, quality review", "assurance": "Controls testing, SOC reports, substantive testing", "tax": "Research and advisory, individual compliance, controversy",
+strongest = {"advisory": "Client accounting services, risk and controls", "professional-services": "Work production, scoping and pricing, quality review", "assurance": "Controls testing, SOC reports, substantive testing", "tax": "Research and advisory, individual compliance, controversy",
              "security": "Application security, operations, AI security"}
 for a, label, _ in ARCHETYPES:
     rows.append([P(label, ss["cell"]), P(str(len(modules(a))), ss["cell"]), P(str(tot[a]), ss["cell"]),
@@ -253,7 +261,7 @@ story += [t, Spacer(1, 12), P("<b>How to read the rest of this document</b>", ss
             "<font color='#9a6700'><b>C</b></font> vendor or analyst claim; <font color='#6e7781'><b>D</b></font> idea, not yet deployed. "
             "<b>Assist, Augment, Automate, Delegate</b> shows how much the AI does. No example uses client-confidential information.", ss["muted"]),
           PageBreak(), heading("Categories of use cases", ss["h1"], 1, "cats", "Executive summary"),
-          P(f"Nine kinds of change recur across the four fields. Another {len(ASSIGN)} use cases sit in specialty categories found in only one field, shown on each field's pages. P = professional services, A = assurance, T = tax, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
+          P(f"Nine kinds of change recur across the five fields. Another {len(ASSIGN)} use cases sit in specialty categories found in only one field, shown on each field's pages. P = professional services, A = assurance, T = tax, Ad = advisory, S = security; (A)-(D) = evidence grade.", ss["muted"]), Spacer(1, 4),
           ct, PageBreak()]
 
 # Per-field category pages
