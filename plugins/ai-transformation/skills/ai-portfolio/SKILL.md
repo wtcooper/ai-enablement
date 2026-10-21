@@ -1,6 +1,6 @@
 ---
 name: ai-portfolio
-description: Helps set up and run a firm's AI portfolio of ideas, pilots and live AI systems. Use when someone wants to set up or review the AI portfolio; log, screen or score a new AI idea from any practice or function; import a transformation plan's opportunities into the portfolio; decide whether to stop, hold, redirect or scale a pilot at a stage gate (discover, prototype, pilot, production, scale, retire); prepare a portfolio review pack and record its decisions; or track benefits, forecast against realised value, and decide where freed capacity goes. Interviews one question at a time and writes to the portfolio folder in this workspace. For finding and planning AI opportunities in a team or practice, use transformation-advisor; for taking one solution to production (build or buy, evaluation, readiness), use ai-solution-delivery; for training, champions and adoption, use ai-enablement; for AI policy, risk tiers and tool or vendor approval, use ai-governance.
+description: Helps set up and run a firm's AI portfolio of ideas, pilots and live AI systems. Use when someone wants to set up or review the AI portfolio; log, screen or score a new AI idea from any practice or function; import a transformation plan's opportunities into the portfolio; decide whether to stop, hold, redirect or scale a pilot at a stage gate (discover, prototype, pilot, production, scale, retire); prepare a portfolio review pack and record its decisions; track benefits, forecast against realised value, and decide where freed capacity goes; or roll proven capabilities into an acquired firm. Interviews one question at a time and writes to the portfolio folder in this workspace. For finding and planning AI opportunities in a team or practice, use transformation-advisor; for taking one solution to production (build or buy, evaluation, readiness), use ai-solution-delivery; for training, champions and adoption, use ai-enablement; for AI policy, risk tiers and tool or vendor approval, use ai-governance.
 ---
 
 # AI portfolio
@@ -205,6 +205,8 @@ user: play their results back as drafts and confirm with the user.
 ## Reference map
 
 - **Method** (how to run each step): `references/method/index.md`
+- **Acquired firms** (rollout playbook): `references/method/stage-gates.md` §9, detail in
+  `references/method/acquired-firms.md`
 - **Library** (portfolio values: stages, gates, outcomes, classes, benefit fields; pointers to the shared ladder,
   patterns, runtime classes, levers and scoring): `references/library/index.md`
 - **Schemas:** `references/schemas/portfolio.md` (portfolio/v1), `references/schemas/benefits.md` (benefits/v1);

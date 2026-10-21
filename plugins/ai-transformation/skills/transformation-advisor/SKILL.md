@@ -80,7 +80,8 @@ you have web access (see Delegation).
 
 **Adapt the path** using the onboarding file's stage and scope tables: a Curious user gets real
 examples and safe quick wins first; an Adopting or later user gets the full loop; a business unit or
-organization gets Break down and Roll-up.
+organization gets Break down and Roll-up. If the user is assessing a firm to acquire or one recently acquired, take
+the acquisition path: read `references/method/acquisitions.md` and record the firm as a unit (`units/<target-id>/`).
 
 Play the profile back, correct it, write it to the plan, and name the path. `phase_completed: 0`.
 
@@ -215,6 +216,7 @@ back as drafts and confirm with the user.
 | `references/briefs/desk-review-unit.md` | Break down, if the user wants a first-pass draft | unit |
 | `references/briefs/review-opportunities.md` | Before Make the case (optional) | top opportunity |
 | `references/briefs/rollup-unit.md` | Prioritize at unit or organization scope | child unit |
+| `references/briefs/assess-target-firm.md` | Acquisition path, for a first-pass assessment of a target or acquired firm | firm |
 | `references/briefs/research-archetype.md` | Onboard, only if no archetype matches, the user agrees and you have web access | research angle |
 
 ## Reference map

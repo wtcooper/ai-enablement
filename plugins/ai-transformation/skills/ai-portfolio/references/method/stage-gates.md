@@ -15,7 +15,7 @@ listed in §11.
 6. [Question bank](#6-question-bank)
 7. [Expert moves and common traps](#7-expert-moves-and-common-traps)
 8. [Worked example: the K-1 item and a recycle to buy](#8-worked-example-the-k-1-item-and-a-recycle-to-buy)
-9. [Placeholder: rolling capabilities into acquired firms](#9-placeholder-rolling-capabilities-into-acquired-firms)
+9. [Rollout playbook for acquired firms](#9-rollout-playbook-for-acquired-firms)
 10. [Output](#10-output)
 11. [Sources](#11-sources)
 
@@ -190,16 +190,38 @@ errors found at review above the agreed threshold.
 capability. Outcome: Recycle to buy; `recycle_to`: "configure the approved platform's drafting feature; return at
 `g2` with the same evidence." The prompts and content clean-up from the prototype are kept.
 
-## 9. Placeholder: rolling capabilities into acquired firms
+## 9. Rollout playbook for acquired firms
 
-> **Placeholder, not yet written.** This section will hold the playbook for rolling the firm's proven AI
-> capabilities into an acquired firm. Do not improvise it as if it existed.
+Use this when the firm has acquired, or is about to acquire, a firm and wants to move its proven capabilities there.
+The detail (readiness checks, consent, independence, partners, benefits rows, how to describe the platform's AI) is in
+`acquired-firms.md`; read it before the first gate for an acquired firm.
 
-**Until it is written:** if the user asks about an acquired firm, (1) offer the transformation-advisor to assess the
-acquired firm's AI maturity (its acquisition path); (2) log each capability to be rolled out
-as a portfolio item through intake, with the acquired firm as the `unit`; (3) run it through the gates from the
-stage its evidence supports in the acquired firm, not the stage it reached at home; (4) tell the user this part of
-the skill is still to come.
+1. **Assess first.** The transformation-advisor's acquisition path assesses the firm and records it as a unit
+   (`../../../transformation-advisor/references/method/acquisitions.md`). Read its stage per dimension and red flags.
+2. **One item per capability per firm,** logged through intake with `unit` set to the acquired firm, because each
+   firm moves through the gates at its own pace.
+3. **Enter at the stage the evidence in that firm supports,** not the stage reached at home. A capability in
+   production at home usually enters at `pilot` (proposed default).
+4. **Order by dependency,** each layer only after the ones it depends on pass their checks (this skill's ordering;
+   RSM puts policy, data centralization and training ahead of use cases after close) [RSM-AIDD-2025]:
+
+| Layer | What moves | Before it moves |
+|---|---|---|
+| 0 Clearances | Client notice and file-transfer consent; tax-return consent; independence screen and monitoring | Deal structure known |
+| 1 Governance overlay | Policy, risk tiers, review rules and records of AI use extended to the firm | Clearances recorded |
+| 2 Approved tools and training | Catalog entries for the firm; an approved alternative for each unsanctioned tool | Policy adopted in the firm |
+| 3 Data foundations | Common systems of record; data centralized and governed | Data owners named; migration and training time budgeted |
+| 4 Library workflows | Entries from `enablement/workflows/`, then automation of one or two high-volume flows | Layers 2 and 3; the firm's own baseline; named reviewers |
+| 5 Rebuilt workflows and agents | Workflow-native redesigns; delegated agents behind the five onboarding gates | Layer 4 in production in this firm |
+
+5. **Stabilize before transforming.** Bain advises a short list of value drivers and an order of operations: where
+   to stabilize and integrate, where to transform [BAIN-OUTLOOK-2026]. Hold AI to the transform list.
+6. **No shared tool or data flow into an attest entity without an independence assessment,** and no client data
+   moves before its consents are recorded (advisor rules; `acquired-firms.md` §5, §6).
+7. **Evidence, not mandates, for partners who keep their clients and brand** [GT-AIIMPACT-2026]; describe each
+   capability with its evidence status (`acquired-firms.md` §7, §9).
+8. **Track on the acquired firm's own baseline:** adoption as `interim` rows (never value), value rows with a
+   staggered-start comparison, the deal's AI business case as `enterprise` rows (`acquired-firms.md` §8).
 
 ## 10. Output
 
@@ -210,10 +232,12 @@ In `portfolio.yaml` for the item: a new `decisions` entry; `stage`, `status`, `n
 ## 11. Sources
 
 - `AUSGOV-2013` — Australian Government, Department of Finance, *Gateway Reviews lessons learned: Gate 5*, government guidance, 2013-10. https://www.finance.gov.au/sites/default/files/2019-11/Gate_5_-_Lessons_Learned.pdf
+- `BAIN-OUTLOOK-2026` — Bain & Company, *Looking Ahead (Global M&A Report 2026)*, consultancy publication, 2026-01-27. https://www.bain.com/insights/looking-ahead-m-and-a-report-2026/
 - `COOPER-STAGEGATE-n.d.` — Robert G. Cooper, Stage-Gate International, *The Stage-Gate model: an overview*, method article, undated. https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
 - `DELOITTE-2025` — Deloitte, *AI ROI: the paradox of rising investment and elusive returns*, consultancy survey, 2025-10-22. https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
 - `GARTNER-2024` — Gartner, *Gartner predicts 30% of generative AI projects will be abandoned after proof of concept by end of 2025*, press release, 2024-07-29. https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025
 - `GARTNER-2025` — Outlook Business, *Over 40% of agentic AI projects will be scrapped by 2027, says Gartner*, news report, 2025-06-25. https://www.outlookbusiness.com/artificial-intelligence/over-40-of-agentic-ai-projects-will-be-scrapped-by-2027-says-gartner
+- `GT-AIIMPACT-2026` — Grant Thornton, *Private Equity insights: 2026 AI Impact Survey Report*, consultancy survey, 2026 (fielded 2026-02/03). https://www.grantthornton.com/insights/survey-reports/private-equity/2026/private-equity-insights-2026-ai-impact-survey-report
 - `HBR-2018` — Davenport and Ronanki, *Artificial intelligence for the real world*, Harvard Business Review, 2018-01. https://hbr.org/2018/01/artificial-intelligence-for-the-real-world
 - `HBR-2026` — Nelson, Davenport, Scade, *Manage your AI investments like a portfolio*, Harvard Business Review, 2026-01 (read via reprint). https://hbr.org/2026/01/manage-your-ai-investments-like-a-portfolio
 - `IVI-ITCMF-n.d.` — Innovation Value Institute, *Benefits Harvesting (IT-CMF 18.07)*, maturity-model guidance, undated. https://portal.ivi.ie/+itcmf/18.07/value/BAR/C/C3
@@ -223,5 +247,6 @@ In `portfolio.yaml` for the item: a new `decisions` entry; `stage`, `status`, `n
 - `NIST-2023` — NIST, *AI Risk Management Framework (AI RMF 1.0)*, framework, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
 - `OMB-2025` — US Office of Management and Budget, *M-25-21*, government memorandum, 2025-04-03. https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf
 - `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects*, research report, 2024-08-13. https://www.rand.org/pubs/research_reports/RRA2680-1.html
+- `RSM-AIDD-2025` — RSM US, *Artificial intelligence: ready or not?*, consultancy guidance, 2025. https://rsmus.com/insights/industries/private-equity/ai-due-diligence-assessment-private-equity.html
 - `UKGOV-2025` — UK Government Digital Service, *Artificial Intelligence Playbook for the UK Government*, government guidance, 2025. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
 - `UMBREX-n.d.` — Umbrex, *Stage-gate project governance model*, secondary framework summary, undated. https://umbrex.com/resources/frameworks/organization-frameworks/stage-gate-project-governance-model/

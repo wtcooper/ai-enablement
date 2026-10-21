@@ -1,0 +1,1184 @@
+# Use cases: advisory / valuation (business valuation, fair value for financial reporting, portfolio and fund
+# valuation, valuation reports and their defence)
+# Sources checked 2026-10-20 (wave 5). Merged from the valuation deep dive, the advisory landscape scan, the
+# cross-cutting files on independence and pricing and on the state of AI and disruption, and items other advisory
+# modules routed to valuation.
+# Evidence is thin: no entry is graded A. No error rate, override rate, parallel run or inspection finding on
+# AI-assisted valuation was found. Speed figures are vendor-published or self-reported, with no method. Vendor pages
+# with no date carry the access date (2026-10-20).
+# Independence: appraisal, valuation and fairness-opinion services for an SEC-registrant audit client impair
+# independence unless it is reasonable to conclude the results will not be subject to audit procedures
+# (SEC-RULE2-01-2026, (c)(4)(iii)). Treatment for private-company attest clients under the AICPA Code was not
+# confirmed in the research; confirm per engagement.
+# Firm operations (pricing the firm's own work, staffing, ownership) are in professional-services; the auditor's use
+# of valuation specialists is in assurance (specialists); tax valuations are in tax. Cross-references are by id in notes.
+
+- id: advisory-valuation-01
+  title: "Big Four valuation teams apply AI to comparable-company screening, volatility and customer-attrition analysis, technical research and information requests"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [research-synthesis, data-reporting, expert-judgment]
+  pattern: research-brief
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: piloting
+  problem: >-
+    Valuation engagements involve repetitive analytical and research steps (peer screens, volatility, attrition
+    cohorts, client information requests) that consume junior analyst hours.
+  solution: >-
+    At the ASA Fair Value Conference (New York, May 2026) a KPMG panellist said the firm is working to embed AI "into
+    everything that we do", with applications ranging from information requests, meeting summaries and technical
+    research to volatility analysis (how much a share price moves), attrition analysis (how fast customers are lost)
+    and comparable-company screening. Other Big Four panellists described AI as increasingly part of valuation
+    workflows and stressed judgment, review and auditability (BVR-KPMGTREND-2026). Separately, KPMG announced
+    (2026-05-19) an alliance giving all of its 276,000+ people access to Claude (ANTHROPIC-KPMG-2026). Firm type:
+    Big Four.
+  outcomes:
+    - lever: capacity
+      description: "Panellists said firms are hiring fewer entry-level analysts as AI automates part of the mechanical work (reported by BVWire; no count given)"
+      figure: "none published"
+      measures: "Panel statement reported by trade press; no hiring numbers, firm names or time period for the hiring comment"
+      provenance: self-reported
+      source_ref: BVR-KPMGTREND-2026
+  prerequisites:
+    - "Enterprise access to an AI platform; the KPMG alliance announcement covers firm-wide Claude access (ANTHROPIC-KPMG-2026)"
+    - "Review procedures and auditability, which the panel called essential (BVR-KPMGTREND-2026)"
+  risks_and_guardrails:
+    - "Panellists stressed professional judgment, review procedures and auditability (BVR-KPMGTREND-2026)"
+    - "Under SEC Rule 2-01(c)(4)(iii), valuation services for an SEC-registrant audit client are barred where the results will be subject to audit procedures, so a Big Four firm's valuation work for its own audit clients is restricted regardless of tooling (SEC-RULE2-01-2026)"
+  human_checkpoints:
+    - "Reviewer sign-off on AI-assisted analyses, stated as essential by panellists (BVR-KPMGTREND-2026)"
+  role_evolution: >-
+    Panellists described fewer entry-level analyst hires and open questions about how future valuation professionals
+    will be trained (BVR-KPMGTREND-2026).
+  evidence_grade: B
+  sources:
+    - ref: BVR-KPMGTREND-2026
+      title: "KPMG's AI push reflects a broader trend in valuation (BVWire, ASA Fair Value Conference panel)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/bvwire/kpmgs-ai-push-reflects-a-broader-trend-in-valuation"
+      date: "2026-06-10"
+      access: full
+      locator: "paragraphs 1-2"
+    - ref: ANTHROPIC-KPMG-2026
+      title: "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance"
+      publisher: "Anthropic"
+      type: vendor
+      url: "https://anthropic.com/news/anthropic-kpmg"
+      date: "2026-05-19"
+      access: full
+      locator: "opening paragraphs (alliance; access for 276,000+ employees)"
+    - ref: SEC-RULE2-01-2026
+      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      publisher: "SEC (Regulation S-X)"
+      type: regulator
+      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      date: "2026-10-20"
+      access: full
+      locator: "paragraph (c)(4)(iii)"
+    - ref: BVR-BIG4PANEL-2026
+      title: "Big Four Valuation Leaders Discuss AI, Tariffs, Pain Points, and More (Business Valuation Update; paywalled, summary read)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/business-valuation-update/big-four-valuation-leaders-discuss-ai-tariffs-pain-points-and-more"
+      date: "2026-06"
+      access: search-only
+      locator: "summary (paywalled; AI, staffing pressures, client expectations)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade B: a named firm (KPMG) is reported using AI on these tasks, with no published measurement. Maturity is
+    'piloting' because the source says KPMG 'is working to embed' AI and does not say which tasks run in production.
+    The statement reaches us through a trade-press report of a panel, not a KPMG publication. The Anthropic release
+    names tax, legal, private equity and cybersecurity as the alliance's first uses and does not mention valuation.
+    The other Big Four firms are not individually described. Related: assurance-specialists-01 (Big Four valuation
+    leaders at the 2025 and 2026 ASA conferences, framed as management's experts in an audit);
+    professional-services-talent-learning-07 (entry-level roles redesigned around reviewing AI output);
+    assurance-acceptance-independence-15 (permissibility gate for AI-related services to audit clients).
+
+- id: advisory-valuation-02
+  title: "Plain-language research agent over private-company transaction, control-premium and marketability-discount datasets, with drill-through to the underlying transactions"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [research-synthesis, data-reporting]
+  pattern: grounded-knowledge-assistant
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Valuers search transaction and discount databases by hand, filtering and re-filtering comparables as they learn
+    more about the subject company.
+  solution: >-
+    BVR's Research and Data Agent (RADA) lets a user query DealStats, BIZCOMPS, the FactSet/BVR Control Premium Study,
+    the Stout Restricted Stock Study and the Valuation Advisors DLOM study (discount for lack of marketability, the
+    reduction applied because an interest cannot readily be sold) in plain language, and returns calculations, tables
+    and graphs. A 'Display Transactions' feature opens the underlying observations, and 'Saved Threads' keeps the
+    research for an engagement so it can be refined later (BVR-RADAPRODUCT-2026; BVR-RADAEXPAND-2026). Vendor: BVR (a
+    publisher and data vendor; not a firm).
+  outcomes:
+    - lever: speed
+      description: "BVR describes RADA in DealStats as moving comparable analysis from hours to seconds; no measurement is published"
+      figure: "none published (vendor describes 'hours into seconds')"
+      measures: "Vendor's marketing wording about comparable-transaction analysis time; no sample, baseline or method stated"
+      provenance: vendor-published
+      source_ref: BVR-RADAPRODUCT-2026
+    - lever: quality
+      description: "BVR advises users to open the transactions behind each answer and judge whether they suit the valuation"
+      figure: "none"
+      measures: "Guidance on use, not a measured result"
+      provenance: vendor-published
+      source_ref: BVR-RADATIP-2026
+  prerequisites:
+    - "Subscription to the underlying BVR datasets; RADA is stated to be included at no extra cost for subscribers to the four expanded resources (BVR-RADAEXPAND-2026)"
+    - "An analyst able to judge whether the retrieved transactions are comparable"
+  risks_and_guardrails:
+    - "BVR says RADA in BVResearch Pro draws on BVR's vetted content and does not go out to the internet (BVR-RADAJUNIOR-2026); this is stated for that product, not for the transaction datasets"
+    - "BVR's own tip tells users not to stop at the answer: inspect the underlying transactions before relying on a result (BVR-RADATIP-2026)"
+  human_checkpoints:
+    - "Analyst reviews the underlying transactions and decides which are appropriate for the subject company (BVR-RADATIP-2026)"
+    - "Analyst owns the selection and the conclusion"
+  role_evolution: >-
+    BVR positions the tool as combining AI efficiency with professional judgment that stays with the analyst
+    (BVR-RADAPRODUCT-2026); no role change is documented.
+  evidence_grade: C
+  sources:
+    - ref: BVR-RADAPRODUCT-2026
+      title: "BVR's Research and Data Agent (product page; undated, date = access date)"
+      publisher: "Business Valuation Resources"
+      type: vendor
+      url: "https://www.bvresources.com/products/research-and-data-agent"
+      date: "2026-10-20"
+      access: full
+      locator: "RADA in DealStats section; 'How RADA works' list"
+    - ref: BVR-RADAEXPAND-2026
+      title: "AI-powered RADA expands to more BVR resources (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-powered-rada-expands-to-more-bvr-resources"
+      date: "2026-09-16"
+      access: full
+      locator: "paragraphs 1-2 (expansion to four datasets; Display Transactions; no extra cost)"
+    - ref: BVR-RADATIP-2026
+      title: "RADA tip of the week: Check the transactions behind the answer (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: vendor
+      url: "https://www.bvresources.com/articles/bvwire/rada-tip-of-the-week-check-the-transactions-behind-the-answer"
+      date: "2026-09-23"
+      access: full
+      locator: "'Key point' paragraph"
+    - ref: BVR-RADAJUNIOR-2026
+      title: "RADA tip of the week: Use RADA to train junior analysts (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: vendor
+      url: "https://www.bvresources.com/articles/bvwire/rada-tip-of-the-week-use-rada-to-train-junior-analysts"
+      date: "2026-05-06"
+      access: full
+      locator: "paragraph 2 (content limited to BVR's vetted content)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade C: product and vendor claims only. No named firm user, no error or override rate. Maturity is 'announced'
+    because availability is documented but named customer use is not. The 'AI-powered' label and the point that it
+    does not go beyond BVR's content are BVR's own descriptions. Kept apart from advisory-valuation-03, which covers
+    named firms' comparables research on a different platform whose case studies do not claim generative AI. The same
+    agent over BVR's technical library is advisory-valuation-04.
+
+- id: advisory-valuation-03
+  title: "Comparables, multiples and discount-rate research inside a valuation platform (UK accounting-firm users)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [research-synthesis, data-reporting]
+  pattern: research-brief
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Manual research for valuation multiples and discount rates is a significant time drain for smaller valuation
+    teams (VALUTICO-KRESTON-2025).
+  solution: >-
+    Kreston Reeves (forensics and business valuations team) and Rouse Chartered Accountants, both served by the
+    vendor's British team, use Valutico's comparable-data analysis and automated financial data integration, per
+    vendor case studies dated December 2025. Firm type: UK accounting firms (size not stated in the sources). The
+    studies describe data-driven research and automation; they do not say generative AI was used.
+  outcomes:
+    - lever: speed
+      description: "Rouse's quote: the team is 'reducing the time to complete projects by a third, saving up to a day at a time', so the platform paid for itself after one or two valuations"
+      figure: "one third; up to a day per project"
+      measures: "Rouse's own estimate of project-time reduction as quoted in a vendor case study; no baseline or sample"
+      provenance: vendor-published
+      source_ref: VALUTICO-ROUSE-2025
+    - lever: speed
+      description: "Kreston Reeves says research into multiples and discount rates is quicker than before; the study repeats the vendor's 'at least 3-5 times faster' wording"
+      figure: "none specific to the firm"
+      measures: "Qualitative statement by a senior manager; the 3-5x wording is vendor boilerplate with no stated basis"
+      provenance: vendor-published
+      source_ref: VALUTICO-KRESTON-2025
+  prerequisites:
+    - "Platform subscription and customer-success training (VALUTICO-KRESTON-2025; VALUTICO-ROUSE-2025)"
+    - "Existing knowledge of valuation methods; the platform feeds the analyst's judgment"
+  risks_and_guardrails:
+    - "IVS requires the valuer to assess and select data and inputs with professional judgement and scepticism, and to document significant data and inputs (IVSC-PERSPECTIVES-2025)"
+  human_checkpoints:
+    - "Analyst selects and justifies multiples and discount-rate inputs"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: B
+  sources:
+    - ref: VALUTICO-KRESTON-2025
+      title: "How Valutico Made Valuations More Efficient for Kreston Reeves (case study)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://valutico.com/case-studies/how-valutico-made-valuations-more-efficient-for-kreston-reeves/"
+      date: "2025-12-11"
+      access: full
+      locator: "paragraphs 1-4 and quote"
+    - ref: VALUTICO-ROUSE-2025
+      title: "Valutico: The Platform That Paid for Itself for Rouse Chartered Accountants (case study)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://valutico.com/case-studies/valutico-the-platform-that-paid-for-itself-for-rouse-chartered-accountants/"
+      date: "2025-12-10"
+      access: full
+      locator: "paragraphs 1-4 and quote"
+    - ref: IVSC-PERSPECTIVES-2025
+      title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf"
+      date: "2025-07-23"
+      access: full
+      locator: "page 4 (IVS 104 text) and page 12 (IVS 104 paragraphs 40.01-50.02)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade B: named UK firms, vendor-published, with a recollection-style estimate (so not A under the 2026-10-17
+    rule). The AI element is the vendor's branding, not the case study's content. Related:
+    assurance-specialists-02 (valuation providers build third-party AI analytics into their methodology).
+
+- id: advisory-valuation-04
+  title: "Grounded research assistant over a valuation technical library, used for standards research and junior-analyst coaching"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [research-synthesis, client-interaction]
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Reviewers answer the same technical questions repeatedly, and juniors need to learn concepts such as
+    owner-compensation normalization and company-specific risk premium.
+  solution: >-
+    BVR's RADA in BVResearch Pro answers plain-language questions with summaries drawn from BVR's vetted content
+    (case law, guides, webinars, Business Valuation Update and BVWire) (BVR-RADAPRODUCT-2026). A BVWire tip (May 2026)
+    suggests sending junior analysts to RADA first, then reviewing how they applied the concept
+    (BVR-RADAJUNIOR-2026). Vendor: BVR.
+  outcomes:
+    - lever: capacity
+      description: "none published"
+      figure: "none"
+      measures: "Tip describes a way of working; no measure"
+      provenance: vendor-published
+      source_ref: BVR-RADAJUNIOR-2026
+  prerequisites:
+    - "BVResearch Pro subscription (BVR-RADAPRODUCT-2026)"
+  risks_and_guardrails:
+    - "A NACVA panel warned of 'cognitive debt': outsourcing mental effort to AI may erode skepticism and independent reasoning, and firms may need to rethink how younger professionals develop skills (BVR-COGDEBT-2026)"
+    - "Greg Endicott says valuers need enough AI literacy to review outputs and understand how results were generated (BVR-ENDICOTT-2026)"
+  human_checkpoints:
+    - "Senior reviews the junior's conclusions and how the concept was applied (BVR-RADAJUNIOR-2026)"
+  role_evolution: >-
+    BVR's tip has juniors go to the tool first and seniors review how they applied the concept
+    (BVR-RADAJUNIOR-2026). A NACVA panel and an ASA session abstract raise concern about how juniors build skills and
+    critical thinking once gained through repetition (BVR-COGDEBT-2026; ASA-ASAIC26-2026).
+  evidence_grade: C
+  sources:
+    - ref: BVR-RADAJUNIOR-2026
+      title: "RADA tip of the week: Use RADA to train junior analysts (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: vendor
+      url: "https://www.bvresources.com/articles/bvwire/rada-tip-of-the-week-use-rada-to-train-junior-analysts"
+      date: "2026-05-06"
+      access: full
+      locator: "paragraphs 1-2"
+    - ref: BVR-RADAPRODUCT-2026
+      title: "BVR's Research and Data Agent (product page; undated, date = access date)"
+      publisher: "Business Valuation Resources"
+      type: vendor
+      url: "https://www.bvresources.com/products/research-and-data-agent"
+      date: "2026-10-20"
+      access: full
+      locator: "RADA in BVResearch Pro section"
+    - ref: BVR-COGDEBT-2026
+      title: "Beware of the 'cognitive debt' that can come with AI (BVWire, NACVA session report)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/bvwire/beware-of-the-cognitive-debt-that-can-come-with-ai"
+      date: "2026-10-14"
+      access: full
+      locator: "paragraphs 1-3"
+    - ref: BVR-ENDICOTT-2026
+      title: "AI literacy becomes mandatory, says Endicott (BVWire, NACVA webcast interview)"
+      publisher: "Business Valuation Resources"
+      type: podcast
+      url: "https://www.bvresources.com/articles/bvwire/ai-literacy-becomes-mandatory-says-endicott"
+      date: "2026-06-17"
+      access: full
+      locator: "paragraph 1"
+    - ref: ASA-ASAIC26-2026
+      title: "ASAIC26 Business Valuation session schedule (marked 'content subject to change'; Oct 5-6, 2026)"
+      publisher: "American Society of Appraisers"
+      type: conference
+      url: "https://www.appraisers.org/docs/default-source/event_doc/aic/2026/asaic26_bv-session-schedule.pdf"
+      date: "2026-10"
+      access: full
+      locator: "'Firm of the Future' session abstract (Oct 6, 2026; abstract only)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade C: vendor guidance. The ASA session abstract is a signal of discourse only (schedule marked 'content subject
+    to change') and does not support the grade. Related: tax-research-advisory-08 (AI-supported research training and
+    coaching for junior staff); professional-services-talent-learning-06 (AI practice environments that stand in for
+    lost junior repetitions).
+
+- id: advisory-valuation-05
+  title: "AI assistant inside the spreadsheet for valuation models: build, formula audit and sensitivities"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [data-reporting, software-systems]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: >-
+    Valuation models live in Excel, and building, auditing and flexing them is manual.
+  solution: >-
+    Anthropic says Claude in Excel builds financial models from filings and data feeds, audits formulas across linked
+    workbooks and runs sensitivity analyses (ANTHROPIC-FSAGENTS-2026, May 2026). A BVR and CBV workshop (April 2025)
+    covered Copilot in Excel as a personal Excel assistant for valuation practitioners (BVR-TRAINPRACTICAL-2025,
+    summary only). Endicott says AI is moving into the core tools valuers use every day (BVR-ENDICOTT-2026). Vendors:
+    Anthropic and Microsoft (the latter via the workshop summary).
+  outcomes:
+    - lever: quality
+      description: "Anthropic reports that an Excel agent built by FundamentalLabs on Claude Opus 4 scored 83% accuracy on complex Excel tasks and passed 5 of 7 levels of the Financial Modeling World Cup"
+      figure: "83%; 5 of 7 levels"
+      measures: "Vendor's account of a third party's test (tasks, scoring and sample not described in the release); general financial modelling, not valuation"
+      provenance: vendor-published
+      source_ref: ANTHROPIC-FS-2025
+  prerequisites:
+    - "Firm policy on which AI tools may see client financials"
+  risks_and_guardrails:
+    - "Under Appraisal Foundation Advisory Opinion 41 the user, not the tool, is responsible for judging whether output is accurate and appropriate (ISA-AO41-2026)"
+    - "Court example: a financial expert's use of Copilot for a calculation led the court to find the testimony not credible, and the court found Copilot returned different numbers on repeat runs; a calculator or spreadsheet would have done the arithmetic (GOLDMAN-WEBER-2024)"
+  human_checkpoints:
+    - "Analyst reviews model logic and outputs"
+  role_evolution: "Not documented for valuation."
+  evidence_grade: C
+  sources:
+    - ref: ANTHROPIC-FSAGENTS-2026
+      title: "Agents for financial services (ten agent templates, including a valuation reviewer)"
+      publisher: "Anthropic"
+      type: vendor
+      url: "https://www.anthropic.com/news/finance-agents"
+      date: "2026-05-05"
+      access: full
+      locator: "'Claude across Excel, PowerPoint, Word, and Outlook' section"
+    - ref: ANTHROPIC-FS-2025
+      title: "Claude for Financial Services"
+      publisher: "Anthropic"
+      type: vendor
+      url: "https://www.anthropic.com/news/claude-for-financial-services"
+      date: "2025-07-15"
+      access: full
+      locator: "paragraph 'Claude's industry-leading financial capabilities'"
+    - ref: BVR-TRAINPRACTICAL-2025
+      title: "A Practical Introduction to Using AI (BVR and CBV workshop; paywalled, summary read)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/training-event-transcripts/a-practical-introduction-to-using-ai-a-bvr-and-cbv-collaboration-and-workshop"
+      date: "2025-04-17"
+      access: search-only
+      locator: "summary (paywalled)"
+    - ref: BVR-ENDICOTT-2026
+      title: "AI literacy becomes mandatory, says Endicott (BVWire, NACVA webcast interview)"
+      publisher: "Business Valuation Resources"
+      type: podcast
+      url: "https://www.bvresources.com/articles/bvwire/ai-literacy-becomes-mandatory-says-endicott"
+      date: "2026-06-17"
+      access: full
+      locator: "paragraph 1"
+    - ref: GOLDMAN-WEBER-2024
+      title: "Expert Witness Used Generative AI to Prepare His Report. It Didn't Go Well - In re Weber (blog post on the court decision)"
+      publisher: "Technology & Marketing Law Blog (Eric Goldman)"
+      type: press
+      url: "https://blog.ericgoldman.org/?p=26930"
+      date: "2024-10-15"
+      access: full
+      locator: "paragraphs 6-8"
+    - ref: ISA-AO41-2026
+      title: "Artificial Intelligence and USPAP: Understanding Advisory Opinion 41"
+      publisher: "International Society of Appraisers"
+      type: professional-body
+      url: "https://www.isa-appraisers.org/about/blog/details/550/artificial-intelligence-and-uspap-understanding-advisory-opinion-41"
+      date: "2026-07-01"
+      access: full
+      locator: "AO-41 p. 5 quote"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade C: vendor claims. The 83% figure is a vendor-reported result for a general Excel benchmark and is not
+    evidence of valuation quality. Pattern 'other': an assistant embedded in the analyst's own modelling tool. The
+    Weber decision is a New York Surrogate's Court matter about a trust-damages calculation; the decision text was not
+    read, only a law professor's summary. Related: advisory-forensic-disputes-07 (disclosure, verification and
+    audit-trail protocol for AI use in expert work).
+
+- id: advisory-valuation-06
+  title: "Idea: forecasting complete financial statements beyond one year as a projection input to DCF valuation"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [data-reporting]
+  pattern: other
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: emerging
+  problem: >-
+    In a discounted cash flow (DCF) valuation most firm value sits beyond the first forecast year, yet few tools
+    forecast full statements over long horizons (ARXIV-FORMA-2026).
+  solution: >-
+    A research team released a benchmark (ProForma-20Q) and a specialist transformer model that forecasts 78 statement
+    line items 1-20 quarters ahead (ARXIV-FORMA-2026). This is a trained forecasting model, not a language-model agent.
+    Idea: researchers discuss it; no valuation firm use found.
+  outcomes:
+    - lever: quality
+      description: "On the benchmark the specialist model beat classical machine learning, gradient boosting, a time-series foundation model and frontier large language models, with the lead widening at longer horizons"
+      figure: "none in the abstract"
+      measures: "Authors' benchmark of anonymized firms scored by change-space R-squared; the abstract does not give the numbers; preprint"
+      provenance: independent
+      source_ref: ARXIV-FORMA-2026
+  prerequisites:
+    - "Historical statements and an industry code per firm (ARXIV-FORMA-2026)"
+  risks_and_guardrails:
+    - "The abstract says forecasts nearly satisfy accounting identities and exact coherence is recoverable at no significant accuracy cost (ARXIV-FORMA-2026)"
+    - "Challenging management forecasts is a theme of PCAOB inspection findings on fair value estimates (BVR-PCAOBINSP-2026)"
+  human_checkpoints:
+    - "Valuer sets scenario assumptions and judges whether projections are reasonable"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: D
+  sources:
+    - ref: ARXIV-FORMA-2026
+      title: "Long-Horizon Forecasting of Complete Financial Statements with Forma (preprint; abstract read)"
+      publisher: "arXiv"
+      type: academic
+      url: "https://arxiv.org/abs/2608.11327"
+      date: "2026-08-11"
+      access: full
+      locator: "abstract"
+    - ref: BVR-PCAOBINSP-2026
+      title: "PCAOB inspections again flag problems with fair value estimates (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/pcaob-inspections-again-flag-problems-with-fair-value-estimates"
+      date: "2026-08-19"
+      access: full
+      locator: "paragraph 2 (challenging management forecasts)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Idea (grade D). Preprint; the full paper was not read. Relevant mainly as independent evidence that
+    general-purpose LLMs trailed a specialist model on a forecasting task that feeds DCF work. Do not cite the
+    Kim, Muhn and Nikolaev paper on GPT-4 predicting earnings from financial statements as supporting evidence: the
+    arXiv version was withdrawn in 2025 after a co-author found data inconsistencies (ARXIV-KIM-2024, routed from
+    the transactions research). Related: assurance-substantive-testing-19 (idea: AI-generated independent
+    expectations for management's estimates).
+
+- id: advisory-valuation-07
+  title: "Idea: language-model price estimates for property appraisal as an input or cross-check (adjacent asset valuation)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [research-synthesis, data-reporting]
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Property price estimates normally rely on statistical models or comparable sales that need specialist set-up.
+  solution: >-
+    Researchers tested leading LLMs on international housing datasets using zero-shot (no examples), few-shot (a few
+    examples), market-report and hybrid prompts (ARXIV-REAPPRAISAL-2025). Idea: researchers discuss it; no firm
+    deployment found. The task is real-estate price estimation, adjacent to business and asset valuation.
+  outcomes:
+    - lever: quality
+      description: "Traditional machine-learning models stayed stronger for pure predictive accuracy; LLMs gave meaningful estimates, benefited from similar in-context examples, and were overconfident in price intervals with limited spatial reasoning"
+      figure: "none in the abstract"
+      measures: "Authors' evaluation on multiple housing datasets; the abstract gives no error figures; preprint"
+      provenance: independent
+      source_ref: ARXIV-REAPPRAISAL-2025
+  prerequisites:
+    - "Structured property data and well-chosen in-context examples (ARXIV-REAPPRAISAL-2025)"
+  risks_and_guardrails:
+    - "The abstract warns that LLM self-explanations need cautious interpretation (ARXIV-REAPPRAISAL-2025)"
+    - "Under Appraisal Foundation AO-41 the appraiser remains responsible for judging whether tool output is accurate and appropriate (ISA-AO41-2026)"
+  human_checkpoints:
+    - "Appraiser evaluates output credibility and owns the conclusion (ISA-AO41-2026)"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: D
+  sources:
+    - ref: ARXIV-REAPPRAISAL-2025
+      title: "On the Performance of LLMs for Real Estate Appraisal (preprint; abstract read)"
+      publisher: "arXiv"
+      type: academic
+      url: "https://arxiv.org/abs/2506.11812"
+      date: "2025-06-13"
+      access: full
+      locator: "abstract"
+    - ref: ISA-AO41-2026
+      title: "Artificial Intelligence and USPAP: Understanding Advisory Opinion 41"
+      publisher: "International Society of Appraisers"
+      type: professional-body
+      url: "https://www.isa-appraisers.org/about/blog/details/550/artificial-intelligence-and-uspap-understanding-advisory-opinion-41"
+      date: "2026-07-01"
+      access: full
+      locator: "paragraphs quoting AO-41 p. 5 and the four-step framework"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Idea (grade D); adjacent to this module, so any measurement would cap at B anyway. Kept because it is the only
+    independent, quantitative-style testing of LLM valuation output found, and it points to overconfident intervals.
+
+- id: advisory-valuation-08
+  title: "Template-driven automated valuation report generation inside a valuation platform (accounting-firm users outside the US)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Long business valuation reports (200 pages in one case) take weeks or months to assemble and create room for
+    manual errors (VALUTICO-RXM-2025; VALUTICO-PKFFI-2025).
+  solution: >-
+    Valutico case studies (published December 2025) say RXM (Singapore) and PKF FI (served by the vendor's French
+    team) use the platform's automated report generation. Firm type: accounting and advisory firms outside the US;
+    size not stated. The vendor now markets its platform as AI-powered (VALUTICO-HOME-2026); the case studies
+    describe 'automated' features and do not say generative AI was used.
+  outcomes:
+    - lever: speed
+      description: "RXM says a 200-page business valuation went from months to days, saving hundreds of hours"
+      figure: "months to days; 'hundreds of hours'"
+      measures: "RXM statement in a vendor case study; no baseline, sample size or method"
+      provenance: vendor-published
+      source_ref: VALUTICO-RXM-2025
+    - lever: quality
+      description: "PKF FI reports saving time per valuation and 'drastically' reducing the risk of errors; no error counts"
+      figure: "none published"
+      measures: "Vendor's case-study narrative; no error rate or review data"
+      provenance: vendor-published
+      source_ref: VALUTICO-PKFFI-2025
+    - lever: speed
+      description: "Both case studies repeat that the team is completing tasks at least 3-5 times faster, as part of 'over 90% of users' reporting significant time savings"
+      figure: "3-5x; over 90%"
+      measures: "Vendor boilerplate repeated in several case studies: share of Valutico users reporting significant time savings (denominator not stated) and a per-team speed-up with no stated basis"
+      provenance: vendor-published
+      source_ref: VALUTICO-PKFFI-2025
+  prerequisites:
+    - "Customer-success onboarding, named in each case study (VALUTICO-RXM-2025; VALUTICO-PKFFI-2025)"
+    - "Financial data entered or integrated into the platform"
+  risks_and_guardrails:
+    - "Template defaults and disclosure depth are quality-control risks in report writing; the AICPA FVS 2026 report-writing workshop lists 'template defaults' among its exercises (AICPA-FVS-2026)"
+    - "If generative AI is added, the IVSC exposure draft would require disclosure of significant use in the scope of work and the report (IVSC-IVSED-2026)"
+  human_checkpoints:
+    - "Valuer reviews the generated report before issue"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: B
+  sources:
+    - ref: VALUTICO-RXM-2025
+      title: "How Valutico Helped RXM Conquer 200-Page Valuations in Days, Not Months (case study)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://valutico.com/case-studies/how-valutico-helped-rxm-conquer-200-page-valuations-in-days-not-months/"
+      date: "2025-12-11"
+      access: full
+      locator: "paragraphs 1-4 and quote"
+    - ref: VALUTICO-PKFFI-2025
+      title: "How Valutico Helped PKF FI Eliminate Errors in Their Valuation Process (case study)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://valutico.com/case-studies/how-valutico-helped-pkf-fi-eliminate-errors-in-their-valuation-process/"
+      date: "2025-12-10"
+      access: full
+      locator: "paragraphs 1-4"
+    - ref: VALUTICO-HOME-2026
+      title: "Valutico: AI Powered Business Valuation Software (home page)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://www.valutico.com/"
+      date: "2026-06-22"
+      access: full
+      locator: "customer-story headlines; 'Trusted by 850+' claim (vendor claim, unverified)"
+    - ref: AICPA-FVS-2026
+      title: "AICPA Forensic & Valuation Services Conference 2026 (home, agenda and pre-conference workshop pages; Nov 4-6, 2026)"
+      publisher: "AICPA & CIMA"
+      type: conference
+      url: "https://events.aicpa-cima.com/fvs/Home"
+      date: "2026-11"
+      access: full
+      locator: "pre-conference workshop FVC26102 description (pre-conference workshops page)"
+    - ref: IVSC-IVSED-2026
+      title: "IVS Exposure Draft: Summary and Consultation Questions (consultation 31 Jan to 30 Apr 2026)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_"
+      date: "2026-01"
+      access: full
+      locator: "page 2, item 3; consultation question 8"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade B (named firms, vendor-published, no measurement): the 'months to days' statement is a recollection published
+    by the vendor, so it is not grade A. Whether these deployments involve generative AI is not stated, so the AI link
+    is the vendor's branding. The 3-5x and over-90% figures are identical across case studies and are marketing
+    boilerplate; do not cite them as measured. Generative drafting of report sections is the separate entry
+    advisory-valuation-09.
+
+- id: advisory-valuation-09
+  title: "Generative AI drafts parts of valuation reports (market commentary and other sections)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [document-production]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Report writing is time-consuming, and some narrative sections (such as market commentary) are routine.
+  solution: >-
+    The IVSC Perspectives Paper (July 2025) says some valuers already use ChatGPT or other public AI for parts of
+    report writing such as market commentary, and that in other instances report writing may be a fully automated
+    process within a firm (IVSC-PERSPECTIVES-2025). A BVR webinar (November 2025) says it demonstrates drafting
+    valuation report sections with 'case studies from valuation firms' (BVR-TRAINWORKSNOW-2025, summary only,
+    paywalled). No firm is named.
+  outcomes:
+    - lever: speed
+      description: "none published"
+      figure: "none"
+      measures: "No measurement found"
+      provenance: self-reported
+      source_ref: IVSC-PERSPECTIVES-2025
+  prerequisites:
+    - "Protected AI environment for confidential data (IVSC-PERSPECTIVES-2025)"
+    - "Valuer control over content, materiality and sourcing (IVSC-PERSPECTIVES-2025)"
+  risks_and_guardrails:
+    - "IVSC: the valuer must keep control of content and verify data sources and facts (IVSC-PERSPECTIVES-2025)"
+    - "IVSC flags open or closed AI used without safeguards as a risk to client confidentiality and data-protection compliance, and hallucination (confident but false output) as a critical concern (IVSC-PERSPECTIVES-2025)"
+    - "The IVSC exposure draft would require significant AI use to be disclosed in the scope of work and report and documented in the engagement file (IVSC-IVSED-2026; BVR-IVSPODCAST-2026)"
+  human_checkpoints:
+    - "The valuer keeps control of content and verifies data sources and facts (IVSC-PERSPECTIVES-2025)"
+  role_evolution: >-
+    IVSC says AI can take on straightforward tasks including report writing so valuers can focus on matters needing
+    judgement (IVSC-PERSPECTIVES-2025).
+  evidence_grade: C
+  sources:
+    - ref: IVSC-PERSPECTIVES-2025
+      title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf"
+      date: "2025-07-23"
+      access: full
+      locator: "page 6 (opportunities), page 10 (IVS 106 and Transparency), pages 12-13 (confidentiality; hallucinations)"
+    - ref: IVSC-IVSED-2026
+      title: "IVS Exposure Draft: Summary and Consultation Questions (consultation 31 Jan to 30 Apr 2026)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_"
+      date: "2026-01"
+      access: full
+      locator: "page 3, items 7-8 (documentation and reporting requirements)"
+    - ref: BVR-IVSPODCAST-2026
+      title: "AI disclosure requirements in proposed IVS highlighted in AICPA podcast (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-disclosure-requirements-in-proposed-ivs-highlighted-in-aicpa-podcast"
+      date: "2026-07-29"
+      access: full
+      locator: "paragraph 2"
+    - ref: BVR-TRAINWORKSNOW-2025
+      title: "AI for Business Valuation, What Works Now: Practical Workflows You Can Use Today (webinar; paywalled, summary read)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/training-event-transcripts/ai-for-business-valuation-what-works-now-practical-workflows-you-can-use-today"
+      date: "2025-11-06"
+      access: search-only
+      locator: "summary (paywalled)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade C: a standard-setter's observation that this happens, without named users or measures. Maturity is
+    'emerging' because the vocabulary reserves 'in-production' for a named organization. Kept apart from
+    advisory-valuation-08 because template assembly and generative drafting carry different risks (hallucination,
+    confidentiality). Related: advisory-forensic-disputes-09 (generative drafting of expert report skeletons);
+    professional-services-quality-review-02 (automated check of citations and quotations before signing).
+
+- id: advisory-valuation-10
+  title: "AI reviewer agents check a valuation or valuation report against standards, methodology and the firm's review policy before sign-off"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [review-assurance]
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: announced
+  problem: >-
+    Reports can contain every required section and still have missing or inconsistent requirements, unsupported
+    assumptions, or arguments an opposing party could raise. Reviewers of valuations (for example fund valuation
+    committees and in-house teams) must check comparables, methods and policy compliance across many positions on a
+    deadline.
+  solution: >-
+    Two forms are described, neither with a named deployment. (1) Speakers on an AICPA FVS podcast described a
+    'standards analyzer' agent loaded with SSVS (the AICPA valuation standard), U.S. GAAP and the AICPA forensic
+    standard that flags missing or inconsistent requirements, and an 'adversarial reviewer' that looks for weak spots,
+    unsupported assumptions and inconsistencies (BVR-AICPAREPORT-2026). The IVSC dialogue panel (2026-06-25) likewise
+    encouraged using AI as a review tool that challenges assumptions (BVR-IVSCDIALOGUE-2026), and the IVSC paper says
+    AI could be used in quality control (IVSC-PERSPECTIVES-2025). (2) Anthropic's 2026-05-05 release lists a
+    'Valuation reviewer' among ten agent templates; it checks valuations against comparables, methodology and the
+    firm's review standards, ships as plugins for Claude Cowork and Claude Code and as cookbooks for Claude Managed
+    Agents, uses subagents for tasks such as comparables selection or methodology checks, and keeps an audit log
+    (ANTHROPIC-FSAGENTS-2026). Vendor: Anthropic.
+  outcomes:
+    - lever: quality
+      description: "none published for the valuation-reviewer template"
+      figure: "none"
+      measures: "Announcement describes capability only"
+      provenance: vendor-published
+      source_ref: ANTHROPIC-FSAGENTS-2026
+    - lever: quality
+      description: "none published for the podcast speakers' approach"
+      figure: "none"
+      measures: "No measurement; the source describes the approach and its cautions only"
+      provenance: self-reported
+      source_ref: BVR-AICPAREPORT-2026
+  prerequisites:
+    - "Standards text available to the agent (BVR-AICPAREPORT-2026)"
+    - "A protected internal AI system, because the podcast speakers warned against putting confidential client information into public AI tools (BVR-AICPAREPORT-2026)"
+    - "The firm's own modelling conventions, risk policies and approval flows; the release says firms adapt the templates (ANTHROPIC-FSAGENTS-2026)"
+  risks_and_guardrails:
+    - "Speakers said AI does not replace professional review, that AI makes mistakes, and that the human remains responsible for the report (BVR-AICPAREPORT-2026)"
+    - "The release states users stay in the loop, reviewing and approving work before it goes to a client or is filed; the managed-agent version offers per-tool permissions and a full audit log (ANTHROPIC-FSAGENTS-2026)"
+    - "The IVSC exposure draft would add a quality-controls chapter (IVS 107) and require significant AI use to be documented in the engagement file, including the quality controls applied (IVSC-IVSED-2026; BVR-IVSPODCAST-2026)"
+  human_checkpoints:
+    - "Valuer reviews and decides on each flag; the signing valuer remains responsible (BVR-AICPAREPORT-2026)"
+    - "Human reviews, iterates and approves before client release or filing (ANTHROPIC-FSAGENTS-2026)"
+  role_evolution: "No role change is documented in the sources."
+  evidence_grade: C
+  sources:
+    - ref: BVR-AICPAREPORT-2026
+      title: "AI agents as a quality-control layer for valuation reports (BVWire, on an AICPA FVS podcast)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-agents-as-a-quality-control-layer-for-valuation-reports"
+      date: "2026-09-16"
+      access: full
+      locator: "paragraphs 2-4 (Mission possible; cautions)"
+    - ref: AICPA-FVSPODCAST-2026
+      title: "Building More Defensible Valuation Reports (The FVS Valuation Podcast episode page)"
+      publisher: "AICPA & CIMA"
+      type: podcast
+      url: "https://podcasts.apple.com/us/podcast/building-more-defensible-valuation-reports/id1551184348?i=1000787680655"
+      date: "2026-09-03"
+      access: full
+      locator: "episode description (the episode exists and covers report defensibility; the AI discussion is known only through the BVR summary)"
+    - ref: BVR-IVSCDIALOGUE-2026
+      title: "Global: AI governance highlighted in latest IVSC Global Dialogue Series (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/global-ai-governance-highlighted-in-latest-ivsc-global-dialogue-series"
+      date: "2026-08-05"
+      access: full
+      locator: "paragraph 3 (AI as a review tool)"
+    - ref: IVSC-PERSPECTIVES-2025
+      title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf"
+      date: "2025-07-23"
+      access: full
+      locator: "page 8, IVS 100 and IVS 102 boxes (AI could be used in quality control and to review bases of value)"
+    - ref: ANTHROPIC-FSAGENTS-2026
+      title: "Agents for financial services (ten agent templates, including a valuation reviewer)"
+      publisher: "Anthropic"
+      type: vendor
+      url: "https://www.anthropic.com/news/finance-agents"
+      date: "2026-05-05"
+      access: full
+      locator: "paragraph listing the ten agents; paragraphs on templates, plugins and Managed Agents"
+    - ref: IVSC-IVSED-2026
+      title: "IVS Exposure Draft: Summary and Consultation Questions (consultation 31 Jan to 30 Apr 2026)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/_ivs_effective_31_january-2028_exposure-draft-summary-and-consultation-questions-final_"
+      date: "2026-01"
+      access: full
+      locator: "pages 2-4 (summary of changes; IVS 107)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Merged from two deep-dive candidates: a practitioner-discussed idea (podcast, grade D on its own) and a vendor
+    template announcement (grade C). Grade C overall: vendor announcement, no named firm user and no measurement.
+    The podcast's AI discussion is reported by BVWire; the episode audio was not heard. Speakers: Bethany Hearn (MH
+    CPA) and Dr. Victor Jarosiewicz (Georgia State), host Nene Glenn Gianfala (Chaffe & Associates). Anthropic also
+    reports Claude Opus 4.7 at 64.37% on Vals AI's Finance Agent benchmark (vendor-reported, a general finance-agent
+    benchmark, so not used as an outcome). Runtime is shared team skills (plugins); a managed-agent version is also
+    offered. Related: assurance-specialists-04 (idea: AI-assisted quality-control review of valuation reports, seen
+    from the audit side); advisory-valuation-11 (pre-empting clients' AI critiques).
+
+- id: advisory-valuation-11
+  title: "Idea: anticipate and pre-empt AI-generated critiques of a valuation report"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [review-assurance, client-interaction]
+  pattern: draft-review-loop
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: >-
+    Clients and counterparties feed reports into AI and return detailed challenges to assumptions, methods and
+    conclusions, sometimes before the analyst is retained (BVR-NACVA-2026).
+  solution: >-
+    NACVA session speakers (Nick Mears, Nainesh Shah) advised valuers to anticipate machine review when writing
+    reports, ask to see the client's prompt and output, respond with evidence, and set expectations about AI in the
+    engagement letter (BVR-NACVA-2026). Idea: the client behaviour is reported as happening; the valuer-side practice
+    is advice, not a documented deployment.
+  outcomes:
+    - lever: risk
+      description: "none published"
+      figure: "none"
+      measures: "Conference-session report; no measurement"
+      provenance: self-reported
+      source_ref: BVR-NACVA-2026
+  prerequisites:
+    - "Engagement-letter language on AI (BVR-NACVA-2026)"
+    - "Willingness to review the client's AI critique"
+  risks_and_guardrails:
+    - "Prompts, drafts and AI interactions could become discoverable in some circumstances, so documentation and verification matter (BVR-DISCOVERY-2026)"
+    - "Keep confidential data out of public tools (BVR-AICPAREPORT-2026)"
+  human_checkpoints:
+    - "Valuer judges whether each AI-raised challenge has merit"
+  role_evolution: >-
+    NACVA speakers advised valuers to write reports anticipating machine review (BVR-NACVA-2026).
+  evidence_grade: D
+  sources:
+    - ref: BVR-NACVA-2026
+      title: "Early takeaways from the NACVA conference (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: conference
+      url: "https://www.bvresources.com/articles/bvwire/early-takeaways-from-the-nacva-conference"
+      date: "2026-10-07"
+      access: full
+      locator: "paragraph 'Clients are using AI on your work'"
+    - ref: BVR-DISCOVERY-2026
+      title: "Beyond hallucinations: AI use moves into discovery (BVWire, BVLaw Case Update webinar)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/beyond-hallucinations-ai-use-moves-into-discovery"
+      date: "2026-07-15"
+      access: full
+      locator: "paragraph 2"
+    - ref: BVR-AICPAREPORT-2026
+      title: "AI agents as a quality-control layer for valuation reports (BVWire, on an AICPA FVS podcast)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-agents-as-a-quality-control-layer-for-valuation-reports"
+      date: "2026-09-16"
+      access: full
+      locator: "paragraph 4 (confidential information and public AI systems)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Idea (grade D). Session report by BVWire from the NACVA 2026 conference in Salt Lake City (dates vary across
+    sources; the article is dated 2026-10-07). Related: advisory-forensic-disputes-14 (idea: AI critique of opposing
+    expert reports); professional-services-client-development-16 (AI disclosure and consent terms in engagement
+    letters).
+
+- id: advisory-valuation-12
+  title: "End-to-end valuation production agent: financial documents to model, report and deck"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [document-production, data-reporting]
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Production work (data entry, model build, report and deck assembly) takes most of the time in a valuation
+    engagement.
+  solution: >-
+    Dealgauge, a startup founded in 2026 per its profile, says it turns financial documents into client-ready
+    valuation reports, Excel models and decks so valuation professionals can finish valuations in hours and focus on
+    judgment (DEALGAUGE-STARTUPHUB-2026). Valutico's home page advertises auto-generated financial forecasts enriched
+    with market data and 'defensible deal valuations in minutes, not weeks' (VALUTICO-HOME-2026). AI-native providers
+    and vendors; no named customers.
+  outcomes:
+    - lever: speed
+      description: "Dealgauge's profile says valuations can be completed in hours; Valutico advertises minutes, not weeks"
+      figure: "none published ('hours'; 'minutes, not weeks')"
+      measures: "Vendor marketing claims; no sample, baseline or method"
+      provenance: vendor-published
+      source_ref: DEALGAUGE-STARTUPHUB-2026
+  prerequisites:
+    - "Source financial documents and a reviewing valuer"
+  risks_and_guardrails:
+    - "IVSC: valuers must avoid 'black box' situations by keeping full control, and understand the design, limits and fitness of any model they use (IVSC-PERSPECTIVES-2025)"
+    - "The IVSC exposure draft targets opaque tools whose reasoning a valuer cannot readily explain or verify (BVR-IVSPODCAST-2026)"
+    - "An accounting firm using such an agent for its own SEC-registrant audit client remains restricted where results will be subject to audit procedures (SEC-RULE2-01-2026)"
+  human_checkpoints:
+    - "Valuer reviews the model, assumptions and conclusion; IVSC says the valuer must keep full control (IVSC-PERSPECTIVES-2025)"
+  role_evolution: >-
+    The vendor says the valuer focuses on judgment and client advisory (DEALGAUGE-STARTUPHUB-2026).
+  evidence_grade: C
+  sources:
+    - ref: DEALGAUGE-STARTUPHUB-2026
+      title: "Dealgauge (startup profile)"
+      publisher: "StartupHub.ai"
+      type: vendor
+      url: "https://www.startuphub.ai/startups/dealgauge"
+      date: "2026-07-11"
+      access: full
+      locator: "description paragraph (aggregator profile)"
+    - ref: VALUTICO-HOME-2026
+      title: "Valutico: AI Powered Business Valuation Software (home page)"
+      publisher: "Valutico"
+      type: vendor
+      url: "https://www.valutico.com/"
+      date: "2026-06-22"
+      access: full
+      locator: "AI suite list and 'Defensible deal valuations' line"
+    - ref: IVSC-PERSPECTIVES-2025
+      title: "Navigating the Rise of Artificial Intelligence in Valuation: Opportunities, Risks, and Standards (Perspectives Paper)"
+      publisher: "International Valuation Standards Council"
+      type: standard-setter
+      url: "https://ivsc.org/wp-content/uploads/2025/07/Navigating-the-Rise-of-AI-in-Valuation-Opportunities-Risks-and-Standards.pdf"
+      date: "2025-07-23"
+      access: full
+      locator: "pages 11-12 (black box)"
+    - ref: BVR-IVSPODCAST-2026
+      title: "AI disclosure requirements in proposed IVS highlighted in AICPA podcast (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-disclosure-requirements-in-proposed-ivs-highlighted-in-aicpa-podcast"
+      date: "2026-07-29"
+      access: full
+      locator: "paragraph 2"
+    - ref: SEC-RULE2-01-2026
+      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      publisher: "SEC (Regulation S-X)"
+      type: regulator
+      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      date: "2026-10-20"
+      access: full
+      locator: "paragraph (c)(4)(iii)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade C: vendor claims. The Dealgauge source is a third-party startup directory profile, not the company's own
+    site, so treat even the capability description as unverified. The only delegate-level entry in this module.
+    Related: assurance-specialists-05 (idea: agents build complete valuation or financial models, with analysts
+    supplying and reviewing assumptions).
+
+- id: advisory-valuation-13
+  title: "Portfolio valuation platform that extracts portfolio-company data from source documents with AI and standardizes the valuation process (in-house asset manager)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: >-
+    Fund valuations were built in bespoke spreadsheets from whatever public data was at hand; the process was manual
+    and resource-intensive, and reporting is moving from quarterly to more frequent marks.
+  solution: >-
+    Hamilton Lane (an investment manager, not an accounting firm) says it partnered with 73 Strings to standardize
+    valuations across private-markets strategies on one platform that uses AI to process and contextualize valuation
+    data, and to run scenario analyses across portfolios (S73-HAMLANE-2025). 73 Strings' platform extracts financial
+    and operational data and KPIs from documents, and a Eurazeo executive is quoted on its site crediting 73 Strings
+    with ROI across valuation, compliance, finance and investment teams (S73-HOME-2026). Vendor: 73 Strings.
+  outcomes:
+    - lever: speed
+      description: "Hamilton Lane's director of valuation says the process is systematized so the firm can value everything it holds in a standardized, operationally efficient way; no time or accuracy figure is given"
+      figure: "none published"
+      measures: "Qualitative statement by a Hamilton Lane director in a Q&A hosted by the vendor"
+      provenance: vendor-published
+      source_ref: S73-HAMLANE-2025
+    - lever: cost
+      description: "A Eurazeo executive is quoted as saying the platform delivered 'significant ROI' across operations; no figure"
+      figure: "none published"
+      measures: "Testimonial on the vendor's home page; undated; no measure stated"
+      provenance: vendor-published
+      source_ref: S73-HOME-2026
+  prerequisites:
+    - "A structured data layer under the platform"
+    - "Integration with existing systems; Stout's interview asks whether added automation will integrate or become another system to access (STOUT-TECH-2024)"
+    - "A move from deal-team-led to central-team valuation, which Stout says will be easier for some organizations to implement than for others (STOUT-TECH-2024)"
+  risks_and_guardrails:
+    - "73 Strings describes a deterministic core valuation engine with traceable calculations and human judgement central to valuation decisions (S73-CALLISTO-2026)"
+    - "Standardized models can lose nuance that a bespoke deal-team valuation captured (STOUT-TECH-2024)"
+  human_checkpoints:
+    - "73 Strings says human judgement stays central to valuation decisions (S73-CALLISTO-2026); who reviews marks at Hamilton Lane is not described"
+  role_evolution: >-
+    Stout's 2024 interview on automation (not AI) describes control of the valuation process moving from deal teams
+    to a central valuation team (STOUT-TECH-2024).
+  evidence_grade: B
+  sources:
+    - ref: S73-HAMLANE-2025
+      title: "Hamilton Lane on Valuations and Technology (Q&A hosted by 73 Strings)"
+      publisher: "73 Strings"
+      type: vendor
+      url: "https://73strings.com/insights/blog/how-hamilton-lane-brings-precision-and-scale-to-valuations-and-technology/"
+      date: "2025-05-23"
+      access: full
+      locator: "answers by Rivera, paragraphs 2-4"
+    - ref: S73-HOME-2026
+      title: "73 Strings home page (undated; date = access date)"
+      publisher: "73 Strings"
+      type: vendor
+      url: "https://73strings.com/"
+      date: "2026-10-20"
+      access: full
+      locator: "Eurazeo testimonial; 73 Extract paragraph"
+    - ref: S73-CALLISTO-2026
+      title: "73 Strings Acquires Callisto to Expand Agentic AI Platform"
+      publisher: "73 Strings"
+      type: vendor
+      url: "https://73strings.com/insights/news/73-strings-acquires-callisto-accelerating-investment-into-agentic-ai-for-private-markets/"
+      date: "2026-09-24"
+      access: full
+      locator: "paragraph 4 (MCP, deterministic core engine, human judgement)"
+    - ref: STOUT-TECH-2024
+      title: "Transforming Valuation Processes With Technology (interview first published Apr/May 2024, updated Sep 2024)"
+      publisher: "Stout"
+      type: firm
+      url: "https://www.stout.com/en/insights/commentary/transforming-valuation-processes-technology"
+      date: "2024-09"
+      access: full
+      locator: "answers on transitioning from manual to automated processes"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Grade B: a named in-house deployment (Hamilton Lane) with qualitative statements and no published measurement.
+    Firm type: client in-house team (investment manager), not an accounting or advisory firm; it shows what portfolio
+    valuation looks like when automated, and what advisory firms compete with. Independence is not an issue for an
+    in-house team. Hamilton Lane AUM figures in the Q&A are context, not outcomes. The private-client research routed
+    a lead: Masttro claims AI valuation of private equity and venture holdings on its platform pages (not read in
+    detail, so not used here).
+
+- id: advisory-valuation-14
+  title: "Valuation firms package recurring portfolio valuation as an AI-enabled platform with their independent opinions inside the workflow (Stout Drivr; Kroll REVS for real estate)"
+  archetype: advisory
+  module: valuation
+  function: service-delivery
+  work_types: [data-reporting, expert-judgment, document-production]
+  pattern: document-to-decision
+  ladder: augment
+  change_scope: model
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: >-
+    Alternative asset managers run fragmented, manual valuation workflows, and the valuation provider is a separate
+    hand-off (STOUT-DRIVR-2026). Perpetual-life funds, NAV (net asset value) vehicles and private wealth structures
+    need more frequent, transparent, data-driven valuations of property portfolios (KROLL-REVS-2026).
+  solution: >-
+    Stout (an independent valuation and advisory firm; not a top-100 accounting firm) announced Drivr on 2026-07-14: a
+    platform for source documents, monitoring, scenario analysis, reporting and audit support, with AI-powered data
+    extraction and Stout's independent valuation opinions available inside the workflow (STOUT-DRIVR-2026). Kroll (a
+    global independent advisory firm, not an accounting firm) announced REVS on 2026-03-03: an AI-enabled platform
+    combining portfolio insights, benchmarking, workflow automation and appraisal management for U.S. commercial
+    real estate owners and sponsors, with standardized assumptions and audit-ready documentation (KROLL-REVS-2026).
+  outcomes:
+    - lever: speed
+      description: "Stout's co-leader of portfolio valuation says teams can move 'hours or days, not weeks'; no measurement"
+      figure: "none published ('hours or days, not weeks')"
+      measures: "Executive's stated expectation in a launch press release; no sample or baseline"
+      provenance: self-reported
+      source_ref: STOUT-DRIVR-2026
+    - lever: speed
+      description: "Kroll says the platform lets clients reduce valuation cycle time while keeping audit-ready documentation; no figure"
+      figure: "none published"
+      measures: "Capability statement in a press release"
+      provenance: self-reported
+      source_ref: KROLL-REVS-2026
+  prerequisites:
+    - "Asset-manager buy-in to a combined platform plus opinion model"
+    - "Source documents and KPI feeds from portfolio companies (STOUT-DRIVR-2026); property portfolio data and Kroll's market indicators (KROLL-REVS-2026)"
+  risks_and_guardrails:
+    - "Stout's release stresses traceable, source-linked support for auditors; it does not discuss independence, data handling or model governance (STOUT-DRIVR-2026)"
+    - "Kroll's release emphasizes independence, consistent methodology and audit-ready documentation (KROLL-REVS-2026)"
+    - "IVSC dialogue speakers said data quality is the limiting factor for AI in commercial real estate (BVR-IVSCDIALOGUE-2026)"
+  human_checkpoints:
+    - "Valuation practitioners issue the independent valuation opinions (STOUT-DRIVR-2026)"
+    - "Kroll's release does not describe human checkpoints (KROLL-REVS-2026)"
+  role_evolution: "Not stated by the sources."
+  evidence_grade: C
+  sources:
+    - ref: STOUT-DRIVR-2026
+      title: "Stout Launches Drivr for Portfolio Valuation and Monitoring"
+      publisher: "Stout"
+      type: firm
+      url: "https://www.stout.com/en/news/stout-launches-drivr-portfolio-valuation-monitoring"
+      date: "2026-07-14"
+      access: full
+      locator: "headline and body of the press release"
+    - ref: KROLL-REVS-2026
+      title: "Kroll Launches AI-enabled Real Estate Valuation Solution (REVS)"
+      publisher: "Kroll"
+      type: firm
+      url: "https://www.kroll.com/en/newsroom/kroll-launches-ai-enabled-real-estate-valuation-solution-revs"
+      date: "2026-03-03"
+      access: full
+      locator: "paragraphs 1-4"
+    - ref: STOUT-TECH-2024
+      title: "Transforming Valuation Processes With Technology (interview first published Apr/May 2024, updated Sep 2024)"
+      publisher: "Stout"
+      type: firm
+      url: "https://www.stout.com/en/insights/commentary/transforming-valuation-processes-technology"
+      date: "2024-09"
+      access: full
+      locator: "answers on back-office strain and technology (context; automation, not AI)"
+    - ref: BVR-IVSCDIALOGUE-2026
+      title: "Global: AI governance highlighted in latest IVSC Global Dialogue Series (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/global-ai-governance-highlighted-in-latest-ivsc-global-dialogue-series"
+      date: "2026-08-05"
+      access: full
+      locator: "paragraph 2 (data quality)"
+    - ref: SEC-RULE2-01-2026
+      title: "17 CFR 210.2-01 Qualifications of accountants (current text, Cornell LII)"
+      publisher: "SEC (Regulation S-X)"
+      type: regulator
+      url: "https://www.law.cornell.edu/cfr/text/17/210.2-01"
+      date: "2026-10-20"
+      access: full
+      locator: "paragraph (c)(4)(iii)"
+  last_reviewed: "2026-10-20"
+  notes: >-
+    Merged from two deep-dive candidates that describe the same change to the model: an independent valuation firm
+    sells recurring valuation as software plus its own judgment (Stout for portfolio companies; Kroll for real estate,
+    an asset class adjacent to business valuation). Grade C: announcements, with no named customer or measurement.
+    Client names that appeared in a search summary of a Stout product page were not seen in the firm's own release
+    and are not used. Kroll's statement that it valued more than $25 billion across 15,000+ properties in the prior
+    year is context about scale, not an outcome of REVS. Neither firm is described as an audit firm; an accounting
+    firm selling this model to its own SEC-registrant audit clients would face Rule 2-01(c)(4)(iii)
+    (SEC-RULE2-01-2026). In-house automation of the same work is advisory-valuation-13.
