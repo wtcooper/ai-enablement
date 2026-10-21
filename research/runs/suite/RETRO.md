@@ -34,8 +34,17 @@ firm). ai-portfolio gained a rollout playbook for acquired firms.
   - the portfolio item was never linked to its solution brief;
   - the skills wrote an undefined `portfolio/gates/` folder.
 
-  The review listed 13 defects in all; all were fixed (`FIXES.md`). A re-run is in
-  [`evals/e2e/2026-10-21-suite-handoff-rerun/`](../../../evals/e2e/2026-10-21-suite-handoff-rerun/).
+  The review listed 13 defects in all; all were fixed (`FIXES.md`, round 1).
+- **Re-run** ([`2026-10-21-suite-handoff-rerun/`](../../../evals/e2e/2026-10-21-suite-handoff-rerun/REVIEW.md)): the
+  advisor → portfolio handoff was now acceptable, and nothing outside the workspace and plugin was read. Stage 2
+  correctly declined to open a brief: the top item needs no AI and had not passed `g0`. Ten smaller defects were
+  fixed (round 2).
+- **Stage 2 run** ([`2026-10-21-suite-stage2/`](../../../evals/e2e/2026-10-21-suite-stage2/REVIEW.md)): the opener
+  named an AI item that had passed `g0`. Portfolio → delivery → governance ran. The review found nine defects
+  (round 3). The main ones: a duplicate key that erased the benefit owner, and the driver blocking the YAML check.
+- **Confirmation** ([`2026-10-21-suite-stage2-confirm/`](../../../evals/e2e/2026-10-21-suite-stage2-confirm/RESULT.md)):
+  every round-3 check passed. The handoff works as specified. One known limit remains: PyYAML accepts duplicate keys,
+  so a self-check catches them only if it looks for them explicitly.
 
 ## Cost and time
 
@@ -43,8 +52,8 @@ firm). ai-portfolio gained a rollout playbook for acquired firms.
 |---|---|---|---|
 | Topic research (portfolio, delivery, enablement, governance, partners, acquisitions) | 6 | Sonnet | 1.6M |
 | Authoring and verification | 12 | Opus | 2.9M |
-| End-to-end review and fixes | 2 | Opus | about 0.5M |
-| **Total** | **20** | | **about 5.0M** |
+| End-to-end reviews and fixes (three rounds) | 6 | Opus | about 1.4M |
+| **Total** | **24** | | **about 5.9M** |
 
 Token figures are each agent's final context size. The headless test sessions are not included.
 

@@ -1,0 +1,119 @@
+# DRAFT TO VALIDATE. Desk review for the integrated-audit unit; no one who does the work has validated it.
+# Not yet checked against references/schemas/opportunities.md by the advisor. Evidence grades to be re-checked in Make the case.
+items:
+  - id: ct-int-validated-report-register
+    title: Register of specialist-validated reports, reusable across engagements and lent to the SOX-only line
+    process: ITGC reliability of information (IPE)
+    work_types: [review-assurance, data-reporting]
+    pattern: other
+    ladder: assist
+    change_scope: process
+    runtime_class: shared-team-skills
+    description: "Today (reported, one case) the specialist tests report parameters once per engagement and staff reuse it. Future: validated reports, parameters, version and re-validation triggers are recorded in one place, with a standard form the SOX-only line can use. Mostly standardisation; AI use limited to drafting the form on non-client material."
+    value:
+      - { lever: capacity, low: 0.25, high: 1.0, unit: "staff hours per SOX-only ITGC test", assumptions: "Gap between SOX-only case (2.5 h) and integrated case (1.5 h) is the ceiling; 25-100% attributable to once-only validation. Two single reported cases, not comparable samples. Excludes one-off specialist validation effort (user estimate 180-600 h, SOX-only). Grade C." }
+      - { lever: risk, low: 0, high: 2, unit: "PCAOB ITGC evidence comments avoided per cycle", assumptions: "Baseline 2 last cycle (reported, practice-level, line of origin unknown); no evidence yet that this closes them" }
+    scores: { value: 4, feasibility: 4, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 5 }
+    weighted_score: 3.90
+    category: quick-win
+    depends_on: []
+    prerequisites: ["Specialist capacity and scoping", "Methodology agreement on what must be recorded", "Risk and quality view on AS 1215 documentation"]
+    risks: ["Pattern is individual-dependent, not firm practice", "Validation goes stale when report or system changes", "Reuse across clients or lines weakens independence of evidence if poorly scoped"]
+    human_checkpoints: ["IT audit specialist signs each validation", "Senior confirms listing is system-generated and in scope"]
+    role_evolution: { tasks_moving: "Per-test re-proving of report completeness (SOX-only) stops; seniors stop re-checking by memory", new_work: "Specialists own validation and the register; seniors review exceptions; juniors learn why a report is complete by reading the register's validation records", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07, assurance-controls-testing-03]
+    label: draft-to-validate
+    next_step: { action: "Ask the specialist how validation is recorded today and what triggers re-validation", owner: "Integrated-audit manager", depends_on: [] }
+
+  - id: ct-int-precheck-checklist
+    title: Written pre-review evidence checklist capturing the senior's unwritten checks
+    process: ITGC operating-effectiveness test
+    work_types: [review-assurance, document-production]
+    pattern: draft-review-loop
+    ladder: assist
+    change_scope: step
+    runtime_class: shared-team-skills
+    description: "Today three checks (listing straight from the system, date range covers period, active-user population complete) live in seniors' heads. Future: a written staff self-check attached to the workpaper; AI use limited to drafting the wording on non-client material."
+    value:
+      - { lever: quality, low: 0, high: 5, unit: "percentage points of review-note rate", assumptions: "Integrated baseline unknown (one case, zero notes). Ceiling reasoned from SOX-only evidence notes (about 20% of tests, reported) with a quarter caught; integrated likely lower. Grade D." }
+      - { lever: experience, low: 0, high: 0, unit: "not quantified", assumptions: "Qualitative: juniors learn senior judgment explicitly" }
+    scores: { value: 3, feasibility: 5, data_readiness: 4, risk: 5, time_to_value: 5, strategic_fit: 4 }
+    weighted_score: 4.15
+    category: quick-win
+    depends_on: []
+    prerequisites: ["Seniors articulate the checks", "Methodology owner approves checklist"]
+    risks: ["Tick-box compliance replaces thinking", "Checklist becomes stale"]
+    human_checkpoints: ["Senior reviews every exception and a sample of checklist completions"]
+    role_evolution: { tasks_moving: "Late discovery of completeness gaps at senior review", new_work: "Seniors coach against the checklist; juniors explain each check", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03, assurance-controls-testing-10]
+    label: draft-to-validate
+    next_step: { action: "Co-write the checklist with two seniors and test on three past files", owner: "Integrated-audit manager", depends_on: [] }
+
+  - id: ct-int-nonclient-drafting
+    title: Enterprise chat assistant for test-step wording, templates and junior practice cases (non-client material only)
+    process: ITGC and control test documentation
+    work_types: [document-production, research-synthesis]
+    pattern: draft-review-loop
+    ladder: assist
+    change_scope: step
+    runtime_class: personal-assistant
+    description: "Today a few seniors use the assistant on templates. Future: shared prompts for test-step wording and narrative templates, plus synthetic practice cases for juniors. No client data."
+    value:
+      - { lever: capacity, low: 0, high: 0.2, unit: "staff hours per control test", assumptions: "0-15% of the 1.5 h hands-on is template or wording work; no measure exists. Grade D." }
+    scores: { value: 2, feasibility: 5, data_readiness: 4, risk: 5, time_to_value: 4, strategic_fit: 3 }
+    weighted_score: 3.70
+    category: quick-win
+    depends_on: []
+    prerequisites: ["Usage rule restated", "Synthetic examples reviewed by a senior"]
+    risks: ["Client data pasted by mistake", "Unreviewed wording enters workpapers"]
+    human_checkpoints: ["Senior approves templates before shared use"]
+    role_evolution: { tasks_moving: "Template and wording drafting", new_work: "Juniors critique AI drafts against what they saw", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-01, assurance-controls-testing-02]
+    label: draft-to-validate
+    next_step: { action: "Agree three non-client use cases and a share-and-review routine", owner: "Integrated-audit manager", depends_on: [] }
+
+  - id: ct-int-listing-compare-draft
+    title: Certified tool for listing-to-active-user comparison and workpaper drafting, with exceptions to a person
+    process: ITGC operating-effectiveness test
+    work_types: [review-assurance, document-production]
+    pattern: reconcile-exceptions
+    ladder: augment
+    change_scope: step
+    runtime_class: workflow-automation
+    description: "Today staff compare and write up by hand. Future: a tool, once approved for client data, proposes matches and a draft with citations; staff work the exceptions."
+    value:
+      - { lever: capacity, low: 0.3, high: 0.75, unit: "staff hours per control test", assumptions: "20-50% of the 1.5 h hands-on released, net of review. Pattern evidence is Microsoft IA's self-reported 850 h/yr (#06, self-reported by the deploying team; to be re-graded); #07 has no controls measure. Reddit -60% not used. Grade C." }
+    scores: { value: 4, feasibility: 2, data_readiness: 2, risk: 3, time_to_value: 1, strategic_fit: 4 }
+    weighted_score: 2.95
+    category: foundation
+    depends_on: [ct-int-validated-report-register, ct-int-precheck-checklist]
+    prerequisites: ["3-4 month approval (risk and quality, CIO, general counsel); no controls case has gone through yet", "Written attributes and exception rules", "Parallel run on past tests"]
+    risks: ["Automation bias", "Non-repeatable output", "Documentation does not meet AS 1215", "Reliance on others' work (AS 2605) unclear"]
+    human_checkpoints: ["Staff and senior review every flagged exception and a sample of unflagged items", "Risk and quality sign-off on documentation before use"]
+    role_evolution: { tasks_moving: "Listing comparison and write-up first pass", new_work: "Exception investigation; juniors still do manual comparison on a rotating sample to keep learning", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07]
+    label: draft-to-validate
+    next_step: { action: "Start the approval request with this use as the first controls case", owner: "Practice lead", depends_on: ["ct-int-validated-report-register"] }
+
+  - id: ct-int-ai-secondary-review
+    title: AI secondary review of ITGC workpapers before the senior queue
+    process: Senior review
+    work_types: [review-assurance]
+    pattern: draft-review-loop
+    ladder: augment
+    change_scope: step
+    runtime_class: shared-team-skills
+    description: "Today a 2-day senior queue. Future: an approved tool flags gaps before senior review."
+    value:
+      - { lever: speed, low: 0, high: 1, unit: "days in senior queue", assumptions: "Queue is partly a staffing effect in busy season, so tools may not shorten it. Grade D." }
+    scores: { value: 3, feasibility: 2, data_readiness: 2, risk: 2, time_to_value: 1, strategic_fit: 3 }
+    weighted_score: 2.35
+    category: park
+    revisit_when: "The listing-compare tool is approved and its baseline and review-note data exist"
+    depends_on: [ct-int-listing-compare-draft]
+    prerequisites: ["Approved client-data tool", "Benchmark evidence bundles"]
+    risks: ["Automation bias", "Weak sufficiency judgment (#10)"]
+    human_checkpoints: ["Senior reviews every AI memo"]
+    role_evolution: { tasks_moving: "Line-by-line senior checking", new_work: "Judgment calls and coaching", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-10]
+    label: draft-to-validate

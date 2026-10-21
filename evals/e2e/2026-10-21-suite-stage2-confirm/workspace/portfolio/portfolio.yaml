@@ -1,0 +1,615 @@
+# Firm AI portfolio. Schema: portfolio/v1 (ai-portfolio references/schemas/portfolio.md).
+# Owners are roles, never names. No dates as targets. Free text is quoted.
+schema: portfolio/v1
+portfolio:
+  name: "Firm AI portfolio"
+  scope: "Audit, tax, advisory and client accounting, plus internal functions (finance, HR, IT). One register for ideas, pilots and live AI systems, including AI already in use."
+  level: organization
+  owner: "Portfolio lead (head of AI office)"
+  plan: "../transformation-plan.md"
+settings:
+  # Levers, weights inherited from the audit (SOX/ICFR) plan. Metrics are audit-specific: other practices
+  # need their own metric under each lever when their first item is logged. Weights to be confirmed firm-wide.
+  value_levers:
+    - { id: capacity, name: "Capacity", metric: "Staff hours per unit of work (unit defined in writing per item)", weight: 0.25 }
+    - { id: quality, name: "Quality", metric: "Review-note or rework rate (definition agreed per item)", weight: 0.25 }
+    - { id: risk, name: "Risk", metric: "Regulator or internal inspection comments", weight: 0.20 }
+    - { id: experience, name: "Staff experience", metric: "Busy-season overtime; share of junior time on judgment work", weight: 0.20 }
+    - { id: cost, name: "Margin", metric: "Margin per engagement or fixed-fee program", weight: 0.10 }
+  scoring_weights: { value: 0.30, feasibility: 0.20, data_readiness: 0.15, risk: 0.20, time_to_value: 0.05, strategic_fit: 0.10 }
+  axes:
+    value: [value, strategic_fit, time_to_value]
+    readiness: [feasibility, data_readiness, risk]
+  # The audit plan chose redeploy for its own practice. No firm-wide choice has been made, so it stays open here.
+  capacity_stance: undecided
+  inherited_from: "../transformation-plan.md"
+  live_limit: null   # open: to be set by the steering group as a number tied to owner and review capacity
+stages:
+  - id: discover
+    purpose: "Frame the problem, find the baseline and look at the real data"
+    entry: ["Passed the screen (g0)"]
+    exit: ["Problem and success metric agreed with the benefit owner", "Baseline from records", "Data located and seen in its real state", "Strategic fit and technical feasibility assessed", "Full path: counterfactual idea, build/buy/partner leaning, risk tier confirmed"]
+    gatekeepers: ["Practice leader (submitting practice)", "Risk lead", "IT/security lead"]
+  - id: prototype
+    purpose: "Test technical feasibility on real data"
+    entry: ["Go at g1"]
+    exit: ["Prototype run on real data, not dummy data", "Data available, good enough and governed", "Skills in place or sourced; process redesign need and owner", "Security and confidentiality controls defined", "Business case still holds", "Full path: build/buy/partner recorded, run-cost range, evaluation plan"]
+    gatekeepers: ["Practice leader (submitting practice)", "Finance lead", "IT/security lead", "Risk lead"]
+  - id: pilot
+    purpose: "Test value and adoption on live work with a comparison"
+    entry: ["Go at g2"]
+    exit: ["Adoption tested, not only accuracy", "Results against baseline and comparison", "Benefit rows with owner, baseline and counterfactual", "Audit and tax items: independence, tax-consent and quality-review sign-off by the risk lead", "Full path: red-team scrutiny, production readiness signed, role evolution and capacity choice, decommissioning route"]
+    gatekeepers: ["Practice leader (submitting practice)", "Finance lead", "IT/security lead", "Risk lead"]
+  - id: production
+    purpose: "Run as supported service for the first population; realise and measure benefits"
+    entry: ["Go at g3"]
+    exit: ["Benefits measured against forecast after go-live", "Total cost of ownership tracked and who pays run cost at scale", "Post-launch review done", "Full path: reuse plan, enablement plan, control plan per site"]
+    gatekeepers: ["Practice leader (submitting practice)", "Finance lead", "IT/security lead", "Risk lead"]
+  - id: scale
+    purpose: "Extend to further practices, offices or client groups; reuse components"
+    entry: ["Go at g4"]
+    exit: ["Benefits and run cost hold in the receiving practice", "Control plan in place for each new site", "Enablement plan delivered"]
+    gatekeepers: ["Practice leaders (receiving practices)", "Finance lead", "IT/security lead", "Risk lead"]
+  - id: retire
+    purpose: "Decommission safely, keep lessons and reusable assets"
+    entry: ["Retire decision by the steering group (stop, or Kill of anything built)"]
+    exit: ["Reason and evidence recorded in the gate log", "IT/security lead cuts access or switches the system off", "Practice leader tells users and affected clients, and a fallback keeps critical work running", "Live-systems inventory updated", "Records of AI use kept as firm policy requires", "Lessons and reusable assets (data clean-up, evaluation sets, prompts) kept", "Unrealised benefits recorded as not-realised or withdrawn"]
+    gatekeepers: ["IT/security lead", "Practice leader (submitting practice)", "Risk lead"]
+gate_paths:
+  light: "No client data, a single team, and no independence or tax-return-consent angle: internal finance, HR and IT ideas, and audit or tax drafting aids that touch only firm-owned material. g1 and g2 combine into one gate; g3 keeps adoption evidence and benefit rows."
+  full: "Any client data, more than one practice, or anything touching independence or tax-return consent. All gates g0 to g4."
+  g0_deciders:
+    light: ["Portfolio lead (head of AI office)"]   # submitting practice leader consulted, not a decider
+    full: ["Portfolio lead (head of AI office)", "Risk lead"]
+roles:
+  review_forum: ["AI steering group", "Finance lead (standing member)", "Risk lead (standing member)"]
+  intake_contact: "Portfolio lead (head of AI office)"
+  other:
+    - { role: "Practice leader (submitting practice)", duty: "Releases people's time; consulted at g0 on the light path; gatekeeper at gates" }
+    - { role: "Finance lead", duty: "Holds and releases budget; gatekeeper at gates; standing forum member" }
+    - { role: "IT/security lead", duty: "Releases client data with the risk lead; cuts access at retire; supplies licence counts to the live-systems inventory" }
+    - { role: "Risk lead", duty: "Releases client data with IT/security; decides g0 on the full path; independence and tax-consent sign-off; standing forum member" }
+    - { role: "Portfolio lead (head of AI office)", duty: "Runs intake and the register, decides g0 as set above, prepares the monthly review pack, keeps the live-systems inventory with practice input; business owner of the approved enterprise assistant" }
+    - { role: "SOX/ICFR practice lead", duty: "Placeholder owner for audit items (the plan's practice lead): owns checklist, request template, client-data approval request; same role as Practice leader (submitting practice) for audit" }
+    - { role: "Managing partner for assurance", duty: "Placeholder sponsor for audit items (from the audit plan); controls discovery resources for them" }
+    - { role: "ITGC senior manager", duty: "Placeholder owner of the report register, validation and checklist back-test (from the audit plan)" }
+    - { role: "Integrated-audit manager", duty: "Placeholder owner of the integrated-audit items, which stay draft to validate until this role has reviewed them (the practice lead's stated requirement)" }
+rhythm:
+  review: "Monthly portfolio review by the AI steering group with the finance and risk leads. Decides continue, hold, redirect, stop or scale on each item, and where freed capacity goes. The portfolio lead's office prepares the pack."
+  rebalance: "Every third review: balance across horizons, scoring weights, live limit, and whether the central team should move toward an advisory role (proposed default)"
+  benefits_review: "At every review for items in production or scale"
+state:
+  status: running
+  step_completed: 2
+  next_step: 3
+  last_review: 0
+  updated: 2026-10-21
+# Step 2 intake. Audit items are imported from the advisor files with a back-link; scores, value and category are
+# copied as they stand and are re-scored in step 3 (no weighted_score, indexes, horizon, risk tier, gate path or
+# sponsor yet). sox-junior-development is deliberately not imported: its title breaks the YAML in the SOX-only file;
+# add it after the advisor skill fixes the title. Owners are placeholder roles taken from the audit plan.
+# sox-listing-tool depends on sox-junior-development, which is not yet in the register.
+# Step 3 (screen): two fields go beyond the portfolio/v1 schema, at the portfolio lead's request.
+#   variant_of: id     the item is a duplicate of a primary; counted once, under the primary
+#   provisional: true  a draft-to-validate item that cannot pass g0 until its validator has reviewed it
+# g0 is recorded for ct-int-nonclient-drafting only (light path, decided by the portfolio lead after the
+# integrated-audit manager validated it). Other items have no g0 decision yet: g0 needs the portfolio lead and, on
+# the full path, the risk lead. Proposed outcomes are in each intake record's "Screen result". The three outline stubs, the
+# enterprise assistant (an inventory entry) and sox-junior-development are not screened.
+items:
+  - id: firm-enterprise-assistant
+    title: "Approved enterprise AI assistant (live; non-client material only)"
+    unit: "Firm-wide"
+    function: null
+    intake: portfolio/intake/firm-enterprise-assistant.md
+    source: null
+    problem: "Staff across practices already use the one approved assistant on non-client material, but nobody records who owns it or what it is used for; logging it as a live system gives the firm an owner, a use list and a safe switch-off."
+    item_class: individual-productivity
+    stage: intake
+    status: outline
+    pattern: null
+    ai_use: null
+    ladder: assist
+    change_scope: step
+    runtime_class: personal-assistant
+    owner: "Portfolio lead (head of AI office)"
+    benefit_owner: null
+    evidence: []
+    updated: 2026-10-21
+
+  - id: sox-prereview-checklist
+    title: "Written pre-review evidence checklist that captures the senior's unwritten checks"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-prereview-checklist.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-prereview-checklist }
+    weighted_score: 4.40
+    value_index: 4.33
+    readiness_index: 4.45
+    horizon: near
+    gate_path: full   # touches client workpapers and past client files for the back-test; risk and quality approve it
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["g0 co-decision by the portfolio lead and the risk lead", "Live limit set by the steering group"], gatekeepers: ["Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Help SOX-only staff catch evidence-completeness gaps before senior review with a written self-check of the seniors' unwritten checks, so that the review-note rate (about 30% today, reported) falls."
+    item_class: business-automation
+    stage: intake
+    status: active
+    pattern: draft-review-loop
+    ai_use: none
+    ladder: null
+    change_scope: step
+    runtime_class: null
+    risk_tier: null
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: quality, low: 5, high: 12, unit: "percentage points off the test-level review-note rate (30% today)", assumptions: "About 42 of 210 tests a month draw an evidence-completeness note (tracking sheet, as relayed); the checklist catches 25-60% of them before review; notes independent. Overlaps sox-request-template and sox-report-register: do not add. Grade D (no published measure)." }
+      - { lever: capacity, low: 10, high: 25, unit: "second-round senior reviews avoided per month", assumptions: "Same 25-60% of about 42 tests; each note leads to a second round (reported 'usually'). Hours per round not yet known." }
+    scores: { value: 4, feasibility: 5, data_readiness: 3, risk: 5, time_to_value: 5, strategic_fit: 5 }
+    category: foundation
+    depends_on: []
+    human_checkpoints: ["Senior samples checklist completions and reviews every exception"]
+    role_evolution: { tasks_moving: "Late discovery of completeness gaps at senior review", new_work: "Staff self-check before submission; seniors coach against the checklist", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03, assurance-controls-testing-10]
+    updated: 2026-10-21
+
+  - id: sox-request-template
+    title: "Request template naming the report and its parameters up front, plus a rule-based check when evidence arrives"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-request-template.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-request-template }
+    weighted_score: 4.00
+    value_index: 3.44
+    readiness_index: 4.45
+    horizon: near
+    gate_path: full   # client-facing wording needs risk and quality approval
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["g0 co-decision by the portfolio lead and the risk lead", "Live limit set by the steering group"], gatekeepers: ["Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Help staff get the right report with the right parameters from control owners on the first request, so that days waiting and later review notes fall."
+    item_class: business-automation
+    stage: intake
+    status: active
+    pattern: intake-triage
+    ai_use: none
+    ladder: null
+    change_scope: step
+    runtime_class: null
+    risk_tier: null
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: quality, low: 2, high: 6, unit: "percentage points off the test-level review-note rate", assumptions: "Subset of the same evidence-completeness notes as sox-prereview-checklist; catches submissions that arrive without parameters or the right period. Overlaps the checklist and the register: do not add. Grade D." }
+      - { lever: capacity, low: 0, high: 2, unit: "days elapsed saved per affected test", assumptions: "Sample case: about 4 days waiting on the control owner plus about 2 days of rework after review; affected tests up to about 42 a month. Elapsed time, not staff hours." }
+    scores: { value: 3, feasibility: 5, data_readiness: 3, risk: 5, time_to_value: 5, strategic_fit: 4 }
+    category: park
+    revisit_when: "The per-client key-report inventory exists (the first step of sox-report-register); in practice it starts client by client as each inventory completes"
+    depends_on: []
+    human_checkpoints: ["Staff confirm every bounced item before chasing"]
+    role_evolution: { tasks_moving: "Repeat chasing for the right version", new_work: "Staff keep the report list current with the control owner", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03]
+    updated: 2026-10-21
+
+  - id: sox-chase-assistant
+    title: "Shared assistant drafts requests to control owners and tracks follow-ups; a person sends and owns the relationship"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-chase-assistant.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-chase-assistant }
+    weighted_score: 3.15
+    value_index: 2.44
+    readiness_index: 3.73
+    horizon: near
+    risk_tier: null   # no overlay/policy.md yet; ai-governance to set tiers
+    gate_path: light   # placeholder text only, one team, no independence or consent angle
+    sponsor: "Managing partner for assurance"
+    next_gate: null
+    revisit_when: "sox-request-template is live and tracking shows chasing time is still material"
+    decisions:
+      - gate: g0
+        review: null   # decided outside a review, by the light-path decider
+        outcome: hold
+        reason: "Value is low (value index 2.44, low end of the range is zero) and the request template may remove most of the chasing; readiness is adequate (3.73) so nothing is wrong with the idea itself."
+        evidence: ["Intake record: sox-chase-assistant", "Scores re-read against the portfolio weights: weighted 3.15, value index 2.44, readiness index 3.73", "Plan Prioritize: parked, revisit after the request template"]
+        resources: null
+        conditions: []
+        recycle_to: null
+        decided_by: ["Portfolio lead (head of AI office)"]
+    problem: "Help staff draft evidence requests and track follow-ups to control owners using the enterprise assistant on placeholder text, so that time spent chasing falls."
+    item_class: individual-productivity
+    stage: intake
+    status: hold
+    pattern: draft-review-loop
+    ai_use: null
+    ladder: assist
+    change_scope: step
+    runtime_class: personal-assistant
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 0, high: 80, unit: "staff hours per month", assumptions: "0-15% of the 2.5 h sample hands-on is chasing and drafting; applies to the 210 tests a month; no measure exists. Grade D." }
+      - { lever: experience, low: 0, high: 0, unit: "not quantified", assumptions: "Staff say they would share this task with a tool" }
+    scores: { value: 2, feasibility: 4, data_readiness: 3, risk: 4, time_to_value: 4, strategic_fit: 3 }
+    category: park
+    revisit_when: "sox-request-template is live and tracking shows chasing time is still material"
+    depends_on: [sox-request-template]
+    human_checkpoints: ["A person reviews and sends every message"]
+    role_evolution: { tasks_moving: "Drafting and tracking follow-ups", new_work: "Relationship ownership with control owners", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03]
+    updated: 2026-10-21
+
+  - id: sox-report-register
+    title: "One specialist validates each key report once; a register records it for reuse across tests"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-report-register.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-report-register }
+    weighted_score: 3.70
+    value_index: 4.11
+    readiness_index: 3.36
+    horizon: medium
+    gate_path: full   # client reports; spans two lines if the integrated variant is validated
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["g0 co-decision by the portfolio lead and the risk lead", "Live limit set by the steering group"], gatekeepers: ["Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Validate each key report once per client and record it for reuse, so that per-test re-proving of report completeness stops and evidence-completeness notes fall."
+    item_class: business-automation
+    stage: intake
+    status: active
+    pattern: other
+    ai_use: none
+    ladder: null
+    change_scope: process
+    runtime_class: null
+    risk_tier: null
+    owner: "ITGC senior manager"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 25, high: 63, unit: "staff hours per month", assumptions: "About 100-126 of 210 tests a month rely on a system report (control share used as a proxy for test share); 0.25-0.5 h per test no longer spent re-proving completeness; high end capped at 0.5 h until a time sample exists. Net of one-off specialist effort of about 180-600 hours (8 reports x 3 h x 15 clients as base 360; user estimates). Excludes re-validation. Grade D." }
+      - { lever: quality, low: 3, high: 10, unit: "percentage points off the test-level review-note rate", assumptions: "Part of the same evidence-completeness notes as sox-prereview-checklist and sox-request-template: do not add." }
+      - { lever: risk, low: 0, high: 2, unit: "PCAOB ITGC evidence comments avoided per cycle", assumptions: "Baseline 2 last cycle (practice-level, reported); line of origin unknown; no evidence yet that this closes them." }
+    scores: { value: 4, feasibility: 3, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 5 }
+    category: big-bet
+    depends_on: []
+    human_checkpoints: ["Specialist signs each validation", "Senior confirms the listing is the validated report"]
+    role_evolution: { tasks_moving: "Per-test re-proving of report completeness", new_work: "Specialists own validation and the register; staff cite and check it; juniors learn why a report is complete by reading validation records", capacity_use: redeploy }
+    evidence: []
+    updated: 2026-10-21
+
+  - id: sox-client-data-approval
+    title: "Take one controls-testing use through the client-data approval path (listing comparison and write-up first pass)"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-client-data-approval.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-client-data-approval }
+    weighted_score: 3.00
+    value_index: 2.56
+    readiness_index: 3.36
+    horizon: medium
+    risk_tier: null   # no overlay/policy.md yet; ai-governance to set tiers
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["g0 co-decision by the portfolio lead and the risk lead", "Live limit set by the steering group"], gatekeepers: ["Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Take one narrow controls-testing use through the 3-4 month client-data approval path so that a certified tool can later be used on client evidence."
+    item_class: business-automation
+    stage: intake
+    status: active
+    pattern: other
+    ai_use: null
+    ladder: assist
+    change_scope: process
+    runtime_class: shared-team-skills
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: risk, low: 0, high: 0, unit: "enabler, no standalone value", assumptions: "Approval is the lead-time item; value comes from sox-listing-tool" }
+    scores: { value: 2, feasibility: 3, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 4 }
+    category: foundation
+    depends_on: [sox-prereview-checklist]
+    human_checkpoints: ["Risk and quality, CIO and general counsel sign off; the practice lead cannot decide this alone", "The approval scope names tool certification and monitoring under QC 1000, client consent and vendor terms, credential governance for portal pulls, and early notice to the clients' external auditors (AS 2605)"]
+    role_evolution: { tasks_moving: "none", new_work: "Practice lead prepares the request and evidence pack", capacity_use: redeploy }
+    evidence: []
+    updated: 2026-10-21
+
+  - id: sox-listing-tool
+    title: "Certified tool for portal pull, listing-to-active-user comparison and workpaper first pass; every flagged exception and a sample of unflagged items go to a person"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-listing-tool.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-listing-tool }
+    weighted_score: 2.25
+    value_index: 2.11
+    readiness_index: 2.36
+    horizon: long
+    risk_tier: null   # no overlay/policy.md yet; ai-governance to set tiers
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["g0 co-decision by the portfolio lead and the risk lead", "Live limit set by the steering group"], gatekeepers: ["Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Have an approved tool pull listings, compare them to the active-user population and draft the workpaper first pass, with every exception going to a person, so that staff hands-on time per ITGC test falls."
+    item_class: business-automation
+    stage: intake
+    status: active
+    pattern: reconcile-exceptions
+    ai_use: null
+    ladder: augment
+    change_scope: step
+    runtime_class: workflow-automation
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 24, high: 126, unit: "staff hours per month at full coverage; near zero for the first approved scope (access recertification at one or two clients) until widened", assumptions: "Coverage of 30-60% of 210 tests a month is a guess, not measured; releases 25-50% of a typical 1.5-2 h test net of added review; before netting sox-report-register, which removes 0.25-0.5 h from the same report-based tests; added review lands on seniors, who are the constraint, and is not netted; absorption (20-30%, placeholder) not applied. Only counted once the checklist, the register and the junior workstream are in place. Pattern evidence is self-reported by the deploying teams. Grade C for this practice." }
+    scores: { value: 2, feasibility: 2, data_readiness: 2, risk: 3, time_to_value: 1, strategic_fit: 3 }
+    category: park
+    revisit_when: "sox-prereview-checklist and sox-report-register are in place with baselines, and sox-client-data-approval is granted"
+    depends_on: [sox-prereview-checklist, sox-report-register, sox-client-data-approval, sox-junior-development]
+    human_checkpoints: ["A senior or manager reviews every flagged exception", "A senior samples unflagged items; sample size agreed with risk and quality, not set by the practice lead alone", "Override and miss rates tracked and reported to risk and quality", "Risk and quality sign off the documentation before use", "A pre-agreed minimum number of planted exceptions must be caught in shadow mode before any live use"]
+    role_evolution: { tasks_moving: "Portal pull, comparison, copying, formatting, tick-marking first pass", new_work: "Exception investigation, sample re-performance, tool evaluation; juniors keep rotating manual practice", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07, assurance-controls-testing-05]
+    updated: 2026-10-21
+
+  - id: sox-ai-secondary-review
+    title: "AI secondary review of the workpaper before the senior sees it"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-ai-secondary-review.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-ai-secondary-review }
+    problem: "Flag gaps in workpapers with an AI check before the senior sees them (a parked target picture; outline only, no value or scores yet)."
+    item_class: business-automation
+    stage: intake
+    status: outline
+    pattern: draft-review-loop
+    ai_use: null
+    ladder: augment
+    change_scope: step
+    runtime_class: shared-team-skills
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value: []
+    category: park
+    revisit_when: "The listing tool is approved and review-note and override data exist"
+    depends_on: []
+    human_checkpoints: []
+    role_evolution: null
+    evidence: [assurance-controls-testing-10]
+    updated: 2026-10-21
+
+  - id: sox-agent-testing
+    title: "Agent tests a defined control set with cited evidence; a reviewer signs every conclusion"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-agent-testing.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-agent-testing }
+    problem: "Let an agent test a defined control set with cited evidence while a reviewer signs every conclusion (a parked target picture; outline only, no value or scores yet)."
+    item_class: business-automation
+    stage: intake
+    status: outline
+    pattern: end-to-end-case-agent
+    ai_use: null
+    ladder: delegate
+    change_scope: process
+    runtime_class: managed-agent-runtime
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value: []
+    category: park
+    revisit_when: "Two workflows are in production, criteria are written, and shadow-mode results exist"
+    depends_on: []
+    human_checkpoints: []
+    role_evolution: null
+    evidence: [assurance-controls-testing-05, assurance-controls-testing-16]
+    updated: 2026-10-21
+
+  - id: sox-platform-plus-review
+    title: "Controls testing sold as platform plus review, or clients in-sourcing the testing"
+    unit: "Audit: SOX-only outsourcing"
+    function: service-delivery
+    intake: portfolio/intake/sox-platform-plus-review.md
+    source: { file: units/sox-only-outsourcing/opportunities.yaml, item: sox-platform-plus-review }
+    problem: "Decide how to respond if firms repackage outsourced SOX testing as platform plus review or clients in-source it (a parked hypothesis; outline only, no value or scores yet)."
+    item_class: new-value
+    stage: intake
+    status: outline
+    pattern: other
+    ai_use: null
+    ladder: delegate
+    change_scope: model
+    runtime_class: managed-agent-runtime
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value: []
+    category: park
+    revisit_when: "At the mid-point review, or when a client asks for a lower fee or in-sources testing"
+    depends_on: []
+    human_checkpoints: []
+    role_evolution: null
+    evidence: [assurance-controls-testing-20, assurance-controls-testing-19]
+    updated: 2026-10-21
+
+  - id: ct-int-validated-report-register
+    title: "Register of specialist-validated reports, reusable across engagements and lent to the SOX-only line"
+    unit: "Audit: integrated audit ICFR testing"
+    function: service-delivery
+    intake: portfolio/intake/ct-int-validated-report-register.md
+    source: { file: units/integrated-audit/opportunities.yaml, item: ct-int-validated-report-register }
+    variant_of: sox-report-register   # counted once, under the primary; its value is not added
+    provisional: true   # draft to validate: cannot pass g0 until the integrated-audit manager has validated it
+    weighted_score: 3.90
+    value_index: 4.11
+    readiness_index: 3.73
+    horizon: medium
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["Integrated-audit manager validates the item (desk review not yet checked by anyone who does the work)", "Primary sox-report-register passes g0"], gatekeepers: ["Integrated-audit manager (validation)", "Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Record the reports a specialist has already validated, with parameters and re-validation triggers, so that staff reuse them across engagements and the SOX-only line, and per-test re-proving of report completeness stops."
+    item_class: business-automation
+    stage: intake
+    status: outline   # draft to validate: no integrated-audit manager has reviewed it
+    pattern: other
+    ai_use: none
+    ladder: null
+    change_scope: process
+    runtime_class: null
+    risk_tier: null
+    owner: "Integrated-audit manager"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 0.25, high: 1.0, unit: "staff hours per SOX-only ITGC test", assumptions: "Gap between SOX-only case (2.5 h) and integrated case (1.5 h) is the ceiling; 25-100% attributable to once-only validation. Two single reported cases, not comparable samples. Excludes one-off specialist validation effort (user estimate 180-600 h, SOX-only). Grade C." }
+      - { lever: risk, low: 0, high: 2, unit: "PCAOB ITGC evidence comments avoided per cycle", assumptions: "Baseline 2 last cycle (reported, practice-level, line of origin unknown); no evidence yet that this closes them" }
+    scores: { value: 4, feasibility: 4, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 5 }
+    category: quick-win
+    depends_on: []
+    human_checkpoints: ["IT audit specialist signs each validation", "Senior confirms listing is system-generated and in scope"]
+    role_evolution: { tasks_moving: "Per-test re-proving of report completeness (SOX-only) stops; seniors stop re-checking by memory", new_work: "Specialists own validation and the register; seniors review exceptions; juniors learn why a report is complete by reading the register's validation records", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07, assurance-controls-testing-03]
+    updated: 2026-10-21
+
+  - id: ct-int-precheck-checklist
+    title: "Written pre-review evidence checklist capturing the senior's unwritten checks"
+    unit: "Audit: integrated audit ICFR testing"
+    function: service-delivery
+    intake: portfolio/intake/ct-int-precheck-checklist.md
+    source: { file: units/integrated-audit/opportunities.yaml, item: ct-int-precheck-checklist }
+    variant_of: sox-prereview-checklist   # counted once, under the primary; its value is not added
+    provisional: true   # draft to validate: cannot pass g0 until the integrated-audit manager has validated it
+    weighted_score: 4.15
+    value_index: 3.44
+    readiness_index: 4.73
+    horizon: near
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["Integrated-audit manager validates the item (desk review not yet checked by anyone who does the work)", "Primary sox-prereview-checklist passes g0"], gatekeepers: ["Integrated-audit manager (validation)", "Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Help integrated-audit staff catch evidence-completeness gaps before senior review with a written self-check of the seniors' unwritten checks, so that review notes fall."
+    item_class: business-automation
+    stage: intake
+    status: outline   # draft to validate
+    pattern: draft-review-loop
+    ai_use: none
+    ladder: null
+    change_scope: step
+    runtime_class: null
+    risk_tier: null
+    owner: "Integrated-audit manager"
+    benefit_owner: null
+    value:
+      - { lever: quality, low: 0, high: 5, unit: "percentage points of review-note rate", assumptions: "Integrated baseline unknown (one case, zero notes). Ceiling reasoned from SOX-only evidence notes (about 20% of tests, reported) with a quarter caught; integrated likely lower. Grade D." }
+      - { lever: experience, low: 0, high: 0, unit: "not quantified", assumptions: "Qualitative: juniors learn senior judgment explicitly" }
+    scores: { value: 3, feasibility: 5, data_readiness: 4, risk: 5, time_to_value: 5, strategic_fit: 4 }
+    category: quick-win
+    depends_on: []
+    human_checkpoints: ["Senior reviews every exception and a sample of checklist completions"]
+    role_evolution: { tasks_moving: "Late discovery of completeness gaps at senior review", new_work: "Seniors coach against the checklist; juniors explain each check", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03, assurance-controls-testing-10]
+    updated: 2026-10-21
+
+  - id: ct-int-nonclient-drafting
+    title: "Enterprise chat assistant for test-step wording, templates and junior practice cases (non-client material only)"
+    unit: "Audit: integrated audit ICFR testing"
+    function: service-delivery
+    intake: portfolio/intake/ct-int-nonclient-drafting.md
+    source: { file: units/integrated-audit/opportunities.yaml, item: ct-int-nonclient-drafting }
+    weighted_score: 3.70
+    value_index: 2.44
+    readiness_index: 4.73
+    horizon: near
+    risk_tier: "tier-2"   # provisional: proposed in overlay/policy.md (status draft); the risk lead has not confirmed it
+    gate_path: light   # non-client material only, one team
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g1, evidence: ["Problem and success metric agreed with the benefit owner (integrated-audit manager; metric not yet confirmed)", "Baseline of template and wording time from a sample of about ten recent control-test files (no time records exist for it); metric is hours per template and wording slice, the whole control test of about 8 h being context only", "Value range re-sized on the slice metric once the sample is in (the current range, 0 to 0.2 h per control test, is not changed before then)", "Risk lead's view on the manager reading past control-test files for the sample (ask requested by the portfolio lead; no answer yet)", "Live limit set by the steering group (open dependency; a Go at g1 cannot pass without it)", "Three non-client use cases and a share-and-review routine agreed", "Non-client templates and synthetic examples seen in their real state", "Strategic fit and technical feasibility assessed", "Provisional tier-2 confirmed by the risk lead"], gatekeepers: ["Practice leader (submitting practice)", "Risk lead", "IT/security lead"] }   # light path: g1 and g2 combined
+    problem: "Help integrated-audit staff draft test-step wording, narrative templates and junior practice cases with the enterprise assistant on non-client material, so that template and wording time falls."
+    item_class: individual-productivity
+    stage: discover
+    status: active   # validated by the integrated-audit manager; g0 Go recorded
+    pattern: draft-review-loop
+    ai_use: null
+    ladder: assist
+    change_scope: step
+    runtime_class: personal-assistant
+    owner: "Integrated-audit manager"
+    benefit_owner: "Integrated-audit manager"
+    solution: "solutions/ct-int-nonclient-drafting/"   # brief.md opened in discover as g1 evidence; delivery handed back
+    value:
+      - { lever: capacity, low: 0, high: 0.2, unit: "staff hours per control test", assumptions: "0-15% of the 1.5 h hands-on is template or wording work; no measure exists. Grade D." }
+    scores: { value: 2, feasibility: 5, data_readiness: 4, risk: 5, time_to_value: 4, strategic_fit: 3 }
+    category: quick-win
+    depends_on: []
+    kill_criteria: ["Client data found in the prompts, templates or practice cases, or wording enters a workpaper without a senior's approval", "No benefit owner named and no baseline of template and wording time (from the file sample, since records do not exist) by the combined g1/g2 gate", "The baseline shows template and wording time at or near zero hours per slice, so the low end of the range is the whole case"]
+    human_checkpoints: ["Senior approves templates before shared use"]
+    role_evolution: { tasks_moving: "Template and wording drafting", new_work: "Juniors critique AI drafts against what they saw", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-01, assurance-controls-testing-02]
+    decisions:
+      - { gate: g0, review: null, outcome: go, reason: "Integrated-audit manager validated the item; light path (non-client material, one team). Readiness index 4.73 against value index 2.44, so Go only because the cost is a share-and-review routine on the existing approved assistant", evidence: ["Validation by the integrated-audit manager (as reported by the portfolio lead)", "Scores and indexes as screened: weighted 3.70, value 2.44, readiness 4.73", "Provisional tier-2 in overlay/policy.md (draft)"], resources: "People: the integrated-audit manager's time, released by the practice leader (submitting practice). Budget: none beyond the existing approved assistant, no new seats. Data: non-client templates and synthetic examples held by the practice, no client data.", conditions: ["Amount of the manager's time stated by the practice leader and noted in the intake record", "Usage rule restated before any shared use", "Synthetic examples reviewed by a senior", "Value score of 2 re-tested at g1 against a baseline from records"], recycle_to: null, decided_by: ["Portfolio lead (head of AI office)"] }
+    updated: 2026-10-21
+
+  - id: ct-int-listing-compare-draft
+    title: "Certified tool for listing-to-active-user comparison and workpaper drafting, with exceptions to a person"
+    unit: "Audit: integrated audit ICFR testing"
+    function: service-delivery
+    intake: portfolio/intake/ct-int-listing-compare-draft.md
+    source: { file: units/integrated-audit/opportunities.yaml, item: ct-int-listing-compare-draft }
+    variant_of: sox-listing-tool   # counted once, under the primary; its value is not added
+    provisional: true   # draft to validate: cannot pass g0 until the integrated-audit manager has validated it
+    weighted_score: 2.95
+    value_index: 3.67
+    readiness_index: 2.36
+    horizon: long
+    risk_tier: null   # no overlay/policy.md yet; ai-governance to set tiers
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["Integrated-audit manager validates the item (desk review not yet checked by anyone who does the work)", "Primary sox-listing-tool passes g0"], gatekeepers: ["Integrated-audit manager (validation)", "Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Have an approved tool propose listing-to-active-user matches and a cited workpaper draft, with exceptions to a person, so that staff hands-on time per integrated-audit ITGC test falls."
+    item_class: business-automation
+    stage: intake
+    status: outline   # draft to validate
+    pattern: reconcile-exceptions
+    ai_use: null
+    ladder: augment
+    change_scope: step
+    runtime_class: workflow-automation
+    owner: "SOX/ICFR practice lead"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 0.3, high: 0.75, unit: "staff hours per control test", assumptions: "20-50% of the 1.5 h hands-on released, net of review. Pattern evidence is Microsoft IA's self-reported 850 h/yr (self-reported by the deploying team; to be re-graded); no controls measure for the matching use case. Grade C." }
+    scores: { value: 4, feasibility: 2, data_readiness: 2, risk: 3, time_to_value: 1, strategic_fit: 4 }
+    category: foundation
+    depends_on: [ct-int-validated-report-register, ct-int-precheck-checklist]
+    human_checkpoints: ["Staff and senior review every flagged exception and a sample of unflagged items", "Risk and quality sign-off on documentation before use"]
+    role_evolution: { tasks_moving: "Listing comparison and write-up first pass", new_work: "Exception investigation; juniors still do manual comparison on a rotating sample to keep learning", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07]
+    updated: 2026-10-21
+
+  - id: ct-int-ai-secondary-review
+    title: "AI secondary review of ITGC workpapers before the senior queue"
+    unit: "Audit: integrated audit ICFR testing"
+    function: service-delivery
+    intake: portfolio/intake/ct-int-ai-secondary-review.md
+    source: { file: units/integrated-audit/opportunities.yaml, item: ct-int-ai-secondary-review }
+    variant_of: sox-ai-secondary-review   # counted once, under the primary; its value is not added
+    provisional: true   # draft to validate: cannot pass g0 until the integrated-audit manager has validated it
+    weighted_score: 2.35
+    value_index: 2.78
+    readiness_index: 2.00
+    horizon: long
+    risk_tier: null   # no overlay/policy.md yet; ai-governance to set tiers
+    gate_path: full
+    sponsor: "Managing partner for assurance"
+    next_gate: { gate: g0, evidence: ["Integrated-audit manager validates the item (desk review not yet checked by anyone who does the work)", "Primary sox-ai-secondary-review leaves outline"], gatekeepers: ["Integrated-audit manager (validation)", "Portfolio lead (head of AI office)", "Risk lead"] }
+    problem: "Flag gaps in ITGC workpapers with an approved tool before they enter the senior queue (about 2 days in the one reported case), so that time in the queue falls."
+    item_class: business-automation
+    stage: intake
+    status: outline   # draft to validate
+    pattern: draft-review-loop
+    ai_use: null
+    ladder: augment
+    change_scope: step
+    runtime_class: shared-team-skills
+    owner: "Integrated-audit manager"
+    benefit_owner: null
+    value:
+      - { lever: capacity, low: 0, high: 1, unit: "days in senior queue", assumptions: "Queue is partly a staffing effect in busy season, so tools may not shorten it. Grade D. The advisor file labels this lever speed, which is not one of the portfolio's levers; recorded here as elapsed-time capacity and to be re-mapped in step 3." }
+    scores: { value: 3, feasibility: 2, data_readiness: 2, risk: 2, time_to_value: 1, strategic_fit: 3 }
+    category: park
+    revisit_when: "The listing-compare tool is approved and its baseline and review-note data exist"
+    depends_on: [ct-int-listing-compare-draft]
+    human_checkpoints: ["Senior reviews every AI memo"]
+    role_evolution: { tasks_moving: "Line-by-line senior checking", new_work: "Judgment calls and coaching", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-10]
+    updated: 2026-10-21
