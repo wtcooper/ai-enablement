@@ -1,0 +1,196 @@
+[
+ {
+  "id": "tax-multistate-private-01",
+  "title": "State tax agencies use machine-learning models to score returns and select audits",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "State agencies cannot manually review the millions of returns they receive; for a private multistate company, selection criteria are unpublished and taxpayers have few tools to challenge being selected.",
+  "approach": [
+   "South Carolina's revenue department signed a $3.5 million, five-year contract with FAST Enterprises for audit services that suggest where audits should happen.",
+   "Tax Notes reports California began using machine-learning models in 2021 to pick returns; New York says its system is not AI.",
+   "In a 2025 Tax Notes survey, 7 of 36 responding state agencies reported using AI (independent); audit-yield and false-positive figures are unpublished.",
+   "South Carolina's system suggests audits and auditors conduct them; in California, flagged items go to staff or further automated systems."
+  ],
+  "who": "South Carolina, California, New York tax agencies"
+ },
+ {
+  "id": "tax-multistate-private-02",
+  "title": "States match third-party data with filings to find unregistered businesses and non-filers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "A growing company can create state tax obligations where it is not registered; commentary says states are getting better at spotting this by linking siloed data.",
+  "approach": [
+   "The Sales Tax Institute says AI improves audit selection and uncovers unregistered remote sellers by linking siloed data (webinar listing).",
+   "A consultancy blog lists signals it says states weigh: processor totals against reported sales, marketplace reports, nexus thresholds, exemption certificate gaps.",
+   "Withum's recap says officials from eight Southeastern states described AI and analytics for risk identification, audit selection and fraud detection.",
+   "No state publishes detection yield in the sources read, and none describes how agency staff review flags."
+  ],
+  "who": "Sales Tax Institute, Withum, a tax consultancy"
+ },
+ {
+  "id": "tax-multistate-private-03",
+  "title": "Residency and remote-worker tax audits use analytics and mass letters (New York)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Remote workers in a low-tax state for a high-tax-state employer, and people claiming a residency change, create income tax and withholding exposure for private-company owners and employers.",
+  "approach": [
+   "A 2024 Business Insider article says New York has been sending hundreds of thousands of AI-generated letters, mostly to wealthy remote workers.",
+   "A SALT lawyer told CNBC that tax departments use auditors and AI to examine cellphone records to see where people spend time.",
+   "New York's department says its selection system is not AI, so the AI label is disputed.",
+   "New York reported 771,000 audits in 2022, up 56%, with auditors down 5% to under 200 (self-reported); the AI share is unclear."
+  ],
+  "who": "New York tax department, Business Insider, CNBC"
+ },
+ {
+  "id": "tax-multistate-private-04",
+  "title": "AI-assisted multistate nexus study with state-by-state verification",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "A nexus study asks, state by state and tax by tax, whether sales, property, payroll or people create a filing duty, using thresholds that keep changing.",
+  "approach": [
+   "Kintsugi and Truss advertise a webinar showing live examples of AI agents answering nexus questions across a client portfolio and state thresholds.",
+   "Thomson Reuters lists CoCounsel Tax nexus templates, including remote-employee risk and state-by-state economic nexus; no customer use is described.",
+   "A law-firm article says the practitioner must independently verify sales and transaction thresholds, tax rates and effective dates state by state.",
+   "Mercor seeks state tax experts to evaluate and correct AI nexus answers; no outcome figures are published."
+  ],
+  "who": "Kintsugi, Truss, Thomson Reuters, Mercor"
+ },
+ {
+  "id": "tax-multistate-private-05",
+  "title": "Platforms and agents handle state registrations triggered by a remote hire",
+  "grade": "C",
+  "ladder": "automate",
+  "problem": "One employee working in a new state can require a foreign qualification, a withholding account, an unemployment insurance registration and other agency accounts before payroll can run there.",
+  "approach": [
+   "Gusto announced it acquired Mosey, an AI-powered state and local registration platform; Gusto Business Compliance is expected later in 2026.",
+   "Warp says its AI agents open state tax accounts and file payroll forms once a customer enters a new employee's work state.",
+   "Skyvern says its AI works through state registration portals in parallel, against a manual baseline of 15-30 minutes per state (vendor-published).",
+   "No accuracy or penalty figures are published; a human checkpoint is not described for registrations."
+  ],
+  "who": "Gusto (Mosey), Warp, Skyvern"
+ },
+ {
+  "id": "tax-multistate-private-06",
+  "title": "Apportionment factors computed from reconciled ledgers by rules, with optional AI commentary",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Sales, payroll and property factors are often computed separately by entity, creating reconciliation work and error risk when state returns are prepared.",
+  "approach": [
+   "Alteryx's starter kit reconciles factor inputs from source systems, applies jurisdiction rules and checks factors across jurisdictions and against prior periods.",
+   "It builds an audit trail from each filed factor to its source; guidance covers feeding output to a language model for commentary.",
+   "The core calculation is rules-based; CCH announced a rules-based suite in 2014. No customer, accuracy or time-saving figure is published (vendor-published).",
+   "Prior-period anomalies are surfaced for explanation before filing."
+  ],
+  "who": "Alteryx (vendor claim)"
+ },
+ {
+  "id": "tax-multistate-private-07",
+  "title": "AI research assistants for multi-jurisdiction state tax questions, with authorities checked",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "State answers differ by state and year, so a wrong or stale citation changes the advice (for 2025, New York's pass-through credit is refundable; California's is not).",
+  "approach": [
+   "Thomson Reuters says its Checkpoint Catalyst state topics integrate into CoCounsel Tax; Blue J's platform supports federal, state and local tax research.",
+   "COST's March 2026 workshop scheduled demonstrations of embedded research tools such as Bloomberg AI and Checkpoint CoCounsel.",
+   "On a public Vals benchmark state tax question, one of 18 models passed all checks; twelve scored 0 (independent).",
+   "On Vals' broader, mostly federal Tax Agent Bench the best model scored 49.19% (independent); the practitioner verifies authorities and effective dates."
+  ],
+  "who": "Thomson Reuters, Blue J, Vals, COST"
+ },
+ {
+  "id": "tax-multistate-private-08",
+  "title": "Idea: in-house state tax team uses AI for quarterly updates, bill comparisons",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: state tax teams track many bills, rulings and cases and write periodic updates, and the law moves fast.",
+  "approach": [
+   "Idea: a COST workshop agenda listed demonstrations of AI drafting quarterly state tax updates, comparing legislative proposal versions and reviewing appeal arguments.",
+   "The demonstrations were to be presented by staff from AT&T, EY and Reed Smith; nothing shows a team doing this in production.",
+   "No outcome figures or human checkpoints are described."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-multistate-private-09",
+  "title": "Idea: self-scan for the signals states match on, before a notice arrives",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: if states link filing, marketplace and payment data, companies that have never reconciled their own footprint have exposure they cannot see.",
+  "approach": [
+   "Idea: review nexus footprint, exemption certificates, product taxability and under-collected periods before a state does (consultancy suggestion).",
+   "The Sales Tax Institute says its webinar will cover responding when nexus is triggered, addressing historical exposure early and strengthening data controls.",
+   "Withum advises periodic tax health checks; none of the three sources describes a deployed AI scan.",
+   "A professional decides on registration and disclosure; the consultancy says AI cannot register, fix past periods or make judgment calls."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "tax-multistate-private-10",
+  "title": "Idea: defending AI-informed state assessments with analytics, transparent documentation and human judgment",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: if an assessment starts from an opaque model score, the taxpayer must answer it without knowing what triggered it.",
+  "approach": [
+   "Akerman announced a partner would present at COST's 57th Annual Meeting on defending AI-driven state assessments.",
+   "The proposed approach combines data analytics, transparent documentation and human judgment.",
+   "The announcement describes the session, not a method used on a case; no outcomes are published."
+  ],
+  "who": "Akerman (conference announcement)"
+ },
+ {
+  "id": "tax-multistate-private-11",
+  "title": "Voluntary disclosure and exposure review marketed against state AI detection",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Companies with unregistered states must choose between voluntary disclosure (reduced penalties; a consultancy says often a two-to-four-year lookback, only before an audit opens), amnesty or waiting.",
+  "approach": [
+   "A sales-tax consultancy argues that disclosing before a state's AI flags the business is cheaper than an audit afterwards.",
+   "The service is human; the AI link is only the argument that detection is getting cheaper.",
+   "Independent: the Multistate Tax Commission's program had 464 executed agreements and $28,308,873 collected in fiscal 2026, averaging $61,010 each.",
+   "Professional-led negotiation; no AI step is described."
+  ],
+  "who": "Multistate Tax Commission, a sales-tax consultancy"
+ },
+ {
+  "id": "tax-multistate-private-12",
+  "title": "Idea: outside review, inventories and bias testing of state audit-selection models",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: in cases Tax Notes examined, selection systems got only internal review, and oversight laws miss systems not classified as AI or high risk.",
+  "approach": [
+   "Idea: experts quoted by Tax Notes say agencies should have outside oversight from lawmakers, another agency or a state auditor.",
+   "A Stanford researcher wants clear goals so systems avoid disproportionately selecting lower-income taxpayers, yet sees machine learning as potentially good against bias.",
+   "A vendor executive urges continuous testing, logging of model inputs and outputs, and documented decision rules for revenue-agency AI pilots.",
+   "New York's Comptroller 2025 audit of four non-tax agencies found no statewide AI inventory and inadequate central guidance."
+  ],
+  "who": "Tax Notes, Stanford researcher, NY Comptroller"
+ },
+ {
+  "id": "tax-multistate-private-13",
+  "title": "AI companies as a new state tax client segment for mid-market firms",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Fast-growing AI companies sell into many states, hire remotely and sell products that states classify differently, which can trigger sales and use, income, franchise, gross receipts and payroll obligations.",
+  "approach": [
+   "This is demand created by AI, not AI used in the tax work.",
+   "Moss Adams published state tax guidance for AI companies in April 2025 and ran a webinar in August 2025.",
+   "Checkpoint says Maryland, Texas and Washington extended sales taxes to various automated services, and states will struggle to classify generative AI.",
+   "No client count, revenue or engagement figure is published (self-reported); the service is professional advice."
+  ],
+  "who": "Moss Adams, Thomson Reuters Checkpoint, Eide Bailly"
+ },
+ {
+  "id": "tax-multistate-private-14",
+  "title": "Pass-through entity tax election modelling for owners, with each state's treatment checked",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Owners hear that a pass-through entity tax election saves tax and want to know if it is worth it; Gelt says most online calculators suit only simple W-2 cases.",
+  "approach": [
+   "Gelt, an AI-native tax firm, launched a hub of AI-powered calculators on 29 December 2025, including a pass-through entity tax calculator.",
+   "Gelt says owners can move from estimate to expert execution with the firm; no conversion figure is published (vendor-published).",
+   "Filed shows a sample planning report with a Maryland election and an illustrative saving of $22,222 per year (not a client result).",
+   "The adviser confirms facts, each state's treatment and the assumptions behind any savings figure before it reaches the owner."
+  ],
+  "who": "Gelt, Filed"
+ }
+]

@@ -1,0 +1,222 @@
+[
+ {
+  "id": "assurance-nonprofit-government-01",
+  "title": "Board and governing-body minutes review for audit-relevant events",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Minutes of boards, councils and committees are long and unstructured and must be read for debt, grants, related-party items, commitments and policy changes that change audit procedures.",
+  "approach": [
+   "Staff upload a year of minutes; a saved template returns a dated summary of items an auditor would query.",
+   "The firm tunes the template prompt; a person reads each flagged item against the minutes and decides whether it changes procedures.",
+   "Harris, Hardy & Johnstone, a commercial-client firm, reports reviews taking about 5 minutes instead of about 1 hour (vendor-published).",
+   "A nonprofit-focused firm owner says a minutes review surfaced debt a client had not mentioned (one anecdote)."
+  ],
+  "who": "Harris, Hardy & Johnstone; a nonprofit-focused firm"
+ },
+ {
+  "id": "assurance-nonprofit-government-02",
+  "title": "Key-term extraction from bond indentures, grant agreements and other long agreements",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Debt agreements, grant awards and amendments are long, and auditors need restrictions, reporting requirements, deadlines and covenants to design procedures.",
+  "approach": [
+   "The auditor uploads the agreement and a template extracts terms into a report.",
+   "For grants, the vendor says the tool identifies restrictions, reporting requirements and deadline obligations to help design procedures.",
+   "A firm owner says a 750-page bond indenture produced a report in three to four minutes (vendor-published); no manual comparison is given.",
+   "The auditor agrees extracted terms to the source before relying on them."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "assurance-nonprofit-government-03",
+  "title": "Donor agreement and conditional-grant classification support",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Donor letters are often vague, and classifying gifts as restricted, conditional or endowment-related drives net asset presentation and later releases from restriction.",
+  "approach": [
+   "A prompt asks the assistant to read donor correspondence and agreements and propose a classification with rationale and open questions for management.",
+   "A vendor says three nonprofit-focused firms use its tool for donor restriction tracking (vendor-published); no measure is given.",
+   "Accounting and legal judgment decides the classification; the auditor tests management's conclusion."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "assurance-nonprofit-government-04",
+  "title": "First-draft inherent risk assessment by assertion for newer staff",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Assessing inherent risk of material misstatement by assertion is a concept juniors need a senior to walk through, and the knowledge sits with few people in small firms.",
+  "approach": [
+   "Staff enter client facts and ask the assistant for an inherent risk assessment by assertion, which they must read, test and own.",
+   "The owner uses it as scaffolding so staff can start without a senior.",
+   "The Forde Firm owner says staff can now engage with inherent risk at assertion level without her walking them through it (vendor-published).",
+   "A manager reviews the risk assessment and a partner approves."
+  ],
+  "who": "The Forde Firm"
+ },
+ {
+  "id": "assurance-nonprofit-government-05",
+  "title": "Citation-backed technical research on nonprofit, government and grant-compliance questions",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Small governmental and nonprofit audit teams answer technical questions by calling another CPA or specialist or searching several libraries, which is slow and depends on who is available.",
+  "approach": [
+   "Staff ask an AI research assistant grounded in accounting and audit literature and the firm's templates, and get cited answers.",
+   "The vendor says users can check Uniform Guidance and questioned costs without calling a government audit specialist.",
+   "In Plante Moran's pilot, 91% of respondents said it was faster than traditional research and 62% reported significant time savings (vendor-published).",
+   "Staff verify citations and apply the guidance to the client's facts; a reviewer signs off."
+  ],
+  "who": "Plante Moran; a small firm owner"
+ },
+ {
+  "id": "assurance-nonprofit-government-06",
+  "title": "Population analysis, risk-based sampling and linked documentation at small nonprofit audit firms",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Small firms pick samples by hand across disconnected spreadsheets and tools, then write the documentation peer reviewers expect; both steps take hours and vary by staff member.",
+  "approach": [
+   "An audit analytics module loads the population, splits it into risk groups, selects a statistically supported sample and writes linked documentation.",
+   "The pattern is segmentation and sample selection, not whole-population testing; the auditor sets the strata and approves the sample.",
+   "The Forde Firm's owner says hand-picking a sample takes about three hours and the software does it in about five minutes (vendor-published).",
+   "Three firm owners say the documentation eased peer review (vendor-published); a reviewer still inspects it because peer reviewers read it as evidence."
+  ],
+  "who": "The Forde Firm, Wells CPA"
+ },
+ {
+  "id": "assurance-nonprofit-government-07",
+  "title": "Excel agents for grant compliance tests and payroll sampling in government audits",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Regional firms with many similar government clients, such as about 70 school districts, receive data as large, inconsistently formatted PDFs, and single-audit compliance tests are long.",
+  "approach": [
+   "A DataSnipper Excel agent extracts from differently formatted documents, selects payroll samples and runs compliance tests, each tied to a source snip.",
+   "Pattillo Brown & Hill ran a grant compliance test on 63 items in about an hour and is building trial-balance agents (vendor-published).",
+   "Perry & Associates, using OCR rather than an agent, reports one 50-fund client's workpaper preparation fell from 80 to 25 hours (vendor-published).",
+   "A reviewer clicks a cell and sees the supporting document; results are traced and locked in."
+  ],
+  "who": "Pattillo Brown & Hill, Perry & Associates, DataSnipper"
+ },
+ {
+  "id": "assurance-nonprofit-government-08",
+  "title": "Idea: check the draft federal awards schedule against award documents and ledger",
+  "grade": "D",
+  "ladder": "augment",
+  "problem": "Idea, not a deployment: the schedule of expenditures of federal awards must match award notices, ledger, pass-through amounts, clusters and period of performance, and errors surface during the audit.",
+  "approach": [
+   "Idea: a prompt asks the assistant to compare the draft schedule with grant agreements, prior-year schedules and ledger detail.",
+   "It would list missing programs, wrong Assistance Listing numbers, spending outside the performance period and possible duplicates, separating confirmed errors from questions.",
+   "Management owns the schedule; the auditor tests it independently."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-nonprofit-government-09",
+  "title": "Footnote-to-statement tie-out of nonprofit and government financial statements",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Auditors manually agree footnote numbers to the face statements and schedules, and copy-and-paste steps cause small differences that surface late.",
+  "approach": [
+   "A saved reconciliation template reads the statements and notes and lists every number that does not agree, down to a dollar.",
+   "The firm says it catches differences including a one-dollar difference and reduces copy-and-paste mistakes (vendor-published; no count of differences found).",
+   "The preparer clears each listed difference."
+  ],
+  "who": "Vendor claim"
+ },
+ {
+  "id": "assurance-nonprofit-government-10",
+  "title": "Disclosure checklist review agent in the audit file; nonprofit sets not described",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Disclosure checklists for nonprofit and governmental statements are long and checked by hand late in the audit.",
+  "approach": [
+   "An agent in the audit platform reviews the financial statements and returns citation-backed suggestions.",
+   "The auditor accepts, edits or overrides each suggestion in the engagement.",
+   "Caseware says the agent saves 2.7 review hours per workflow on average (vendor-published); basis, sample and engagement types are not stated.",
+   "It is a general audit product; nonprofit and government disclosure sets are not described."
+  ],
+  "who": "Caseware"
+ },
+ {
+  "id": "assurance-nonprofit-government-11",
+  "title": "Idea: management-side audit readiness with AI prompts for finance teams",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: small nonprofit finance teams answer long audit request lists under time pressure; 60% of nonprofits in one vendor survey rely on one full-time person.",
+  "approach": [
+   "Idea: a national firm's playbook gives finance teams prompts to sort audit request lists by owner and source and draft fluctuation explanations.",
+   "The prompts also check schedules for footing errors and draft estimate memos, in approved tools only; the playbook says outputs are drafts.",
+   "The finance director validates every explanation against actual activity before it goes to auditors."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-nonprofit-government-12",
+  "title": "Screening grant documents for policy-restricted language before submission (university research office)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Grant writers must remove language that new federal or state policy restricts, and manual review is slow and delays submissions.",
+  "approach": [
+   "A university research office tool combines rule-based matching with a private-cloud language model to flag sensitive terms and suggest alternatives.",
+   "On five annotated grant documents it flagged 16 of 22 policy-sensitive terms with no false positives (precision 1.00, recall 0.73) (self-reported).",
+   "Its F1 of 0.84 beat GPT-4o (0.43) and Gemini 2.5 Pro (0.72, not significantly); usability scored 85.9 from 25 testers (self-reported).",
+   "The author accepts or rejects each suggestion."
+  ],
+  "who": "University research office"
+ },
+ {
+  "id": "assurance-nonprofit-government-13",
+  "title": "Federal agency AI analysis of single audit history to target noncompliance (HHS)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Federal agencies must ensure audits are submitted on time and findings corrected, and HHS says repeat findings and delinquent audits went unaddressed for years.",
+  "approach": [
+   "HHS's finance office says it is analysing single audit information across all 50 states with AI tools covering at least five years.",
+   "It has written to governors and treasurers, lists remedies including withholding payments and disallowing costs, and is examining audit rigor.",
+   "HHS reports hundreds of grantees have not submitted required audits, some by over two years (self-reported); no AI performance measure is given.",
+   "HHS staff send letters and decide on remedies; the press release does not describe review of AI outputs."
+  ],
+  "who": "HHS"
+ },
+ {
+  "id": "assurance-nonprofit-government-14",
+  "title": "State audit offices use AI on large spending datasets with human verification",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "State and local government audits involve large transaction sets, such as purchasing-card spending, and small audit teams.",
+  "approach": [
+   "The North Carolina State Auditor says the office uses industry partners to apply AI to large datasets, then verifies findings with people.",
+   "Washington's State Auditor publishes a governed-use AI policy with a staff review requirement and oversight committee, but describes no audit uses.",
+   "North Carolina's auditor says AI helps find a needle in a haystack and made purchasing-card audits more efficient (self-reported); no counts.",
+   "People verify what the AI finds before results are accepted."
+  ],
+  "who": "NC State Auditor, Washington State Auditor"
+ },
+ {
+  "id": "assurance-nonprofit-government-15",
+  "title": "AI error check and chatbot inside Form 990 e-file software",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Form 990-series filings need schedules, support and consistency checks, and errors cause rejections and penalties.",
+  "approach": [
+   "The e-file product runs an AI-powered check for potential issues before submission and offers a chatbot for filing questions.",
+   "The vendor says it is working on improvements to AI validation.",
+   "Feature description only (vendor-published); no error rates are published.",
+   "The preparer reviews and signs; the check is not an approval."
+  ],
+  "who": "Tax990"
+ },
+ {
+  "id": "assurance-nonprofit-government-16",
+  "title": "IRS tool to screen and prioritise public referrals about exempt organizations",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "The IRS exempt organization examination unit receives public referrals and runs data-driven compliance exams based on Form 990 data.",
+  "approach": [
+   "An IRS letter, summarised by EY, says an AI tool to screen and prioritise public referrals was planned for fiscal 2024.",
+   "Data-driven exams based on Form 990 information found employment taxes, unrelated business income and underreported compensation as the most prominent issues.",
+   "About 76% of closed exempt-organization exams in fiscal 2023 led to a tax change (self-reported); not a measure of the AI tool.",
+   "A human checkpoint is not described."
+  ],
+  "who": "IRS (via EY summary)"
+ }
+]
