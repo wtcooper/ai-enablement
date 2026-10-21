@@ -31,9 +31,9 @@ lists for their own steps. Source keys in brackets resolve in [sources.md](sourc
 | 26 Mar 2026 | IESBA opens a workstream on PE investment in firms and agrees to develop non-authoritative technology and AI guidance | Standard-setter decision | Global ownership and AI ethics guidance may follow; the June update was not found | [IESBA-PE-2026] |
 | 30 Mar 2026 | UK FRC issues what it calls the first audit-regulator guidance on generative and agentic AI: certify per use case, recertify after change | Regulator guidance (audit) | Not binding on advisory, but a usable model for documenting AI testing tools | [FRC-GENAINEWS-2026] |
 | 31 Jan-30 Apr 2026 | IVS exposure draft: disclose significant AI use in scope and report, document it, new quality-controls chapter (IVS 107); final planned 31 Jan 2027, effective 31 Jan 2028 | Exposure draft | The most concrete AI duty in any advisory line; start recording AI use in valuation files now | [IVSC-IVSED-2026] |
-| 23 Apr 2026 | US Appraisal Standards Board adopts Advisory Opinion 41: no new requirements; the appraiser judges whether AI output is accurate and appropriate | Advisory opinion | Existing USPAP duties apply to AI use | [BVR-AO41ADOPT-2026] |
-| 24 Jun 2026 | IRS OPR maps Circular 230 onto AI: verification, procedures, fees for time not spent, secure enterprise tools | Regulator guidance (tax) | Binds advisory work that feeds tax positions (private client, valuation for tax) | [IRS-OPR-2026] |
-| 5 Aug 2026 | AICPA ethics staff write that developing or hosting an AI system for an attest client can raise independence concerns | Professional-body article | Firm-built agents for audit clients need a documented independence analysis | [JOFA-ETHAI-2026] |
+| 23 Apr 2026 | US Appraisal Standards Board adopts Advisory Opinion 41: no new requirements; responsibility for the analysis and conclusions stays with the appraiser | Advisory opinion | Existing USPAP duties apply to AI use | [BVR-AO41ADOPT-2026] |
+| 24 Jun 2026 | IRS OPR maps Circular 230 onto AI: verification, procedures, fees for time not spent, secure enterprise tools | Regulator guidance (tax) | Applies Circular 230 duties to advisory work that feeds federal tax positions (private client, valuation for tax) | [IRS-OPR-2026] |
+| 5 Aug 2026 | An AICPA Professional Ethics Division article says that developing or hosting an AI system for an attest client can raise independence concerns | Professional-body article | Firm-built agents for audit clients need a documented independence analysis | [JOFA-ETHAI-2026] |
 | 10 Aug 2026 | AICPA PEEC continues toward a second exposure draft on alternative practice structures, including a proposed ban on attest-client investment in firms | Pending rule | Capital decisions and what can be sold to attest clients are still moving | [JOFA-PEEC-2026] |
 | Sep 2026 | Proposed Federal Rule of Evidence 707 (machine-generated evidence) stays under "continued consideration"; the October agenda book records a vote to withdraw it as published and study a modified proposal | Rulemaking | Not law; expert work should already log AI use and be reproducible | [USCOURTS-STDCOMM-2026; USCOURTS-EVID-2026] |
 | 15 Sep and 15 Dec 2026 | IIA Third-Party Topical Requirement in force; Organizational Behavior requirement follows | Professional standard | Outsourced internal-audit work must meet them; third-party work includes vendor AI risk | [BAKERTILLY-GAM-2026] |
@@ -63,22 +63,22 @@ lists for their own steps. Source keys in brackets resolve in [sources.md](sourc
 | Date | Signal | Status | What it means for a leader | Source |
 |---|---|---|---|---|
 | 8 Jan 2026 | Smith + Howard's CEO forecasts advisory fees tied to measurable outcomes, with independence caveats | Forecast | Outcome pricing needs baselines and a rule on eligible clients | [BBTAX-SH-2026] |
-| 5 Mar 2026 | Bloomberg Law reports KPMG, PwC and RSM developing value and outcome pricing as AI strains billable hours | Intentions and pilots | Expect clients to ask who keeps the saving | [BBLAW-PRICING-2026] |
-| 6 Mar 2026 | IFAC counts 1,052 PE-linked firm transactions in 2015-2025 | Independent research | Consolidation is the market structure, not an exception | [CPAPA-IFACPE-2026] |
+| 5 Mar 2026 | Bloomberg Law reports leaders at KPMG, PwC and RSM exploring value and outcome pricing as AI strains billable hours | Intentions and pilots | Expect clients to ask who keeps the saving | [BBLAW-PRICING-2026] |
+| 6 Mar 2026 | IFAC counts 1,052 PE-linked firm transactions in 2015-2025 (177 direct investments plus 875 roll-ups) | Independent research | Consolidation is the market structure, not an exception | [CPAPA-IFACPE-2026] |
 | 7 Apr 2026 | Digits charges firms only for clients at 95% "zero-touch" | Vendor pricing | Automation risk moves to the vendor; the firm's client price is a separate choice | [DIGITS-OUTCOME-2026] |
 | Apr 2026 | Deal tracker reports PE-backed platforms buying forensic and valuation firms | Trade research | Specialist niches are being bought, not only built | [CPATRENDLINES-TRACKER-2026] |
 | 2 Jun 2026 | Crete rebrands as Current, saying AI lets local firms offer "Fortune 500-caliber" advisory | Fact; thesis is the firm's | AI-native roll-ups compete for small-business advisory | [ACCTODAY-CURRENT-2026] |
 | 29 Jul 2026 | Grant Thornton Advisors announces a $5B CBIZ acquisition, tied to funding AI; close expected Q4 2026 | Pending | Scale is being bought to pay for AI | [GT-CBIZ-2026] |
-| 7 Aug 2026 | Crowe closes KKR's investment; Crowe LLP stays the attest firm and Crowe Advisory LLC is non-attest | Closed | The attest and advisory split is becoming the standard structure for outside capital | [CROWE-KKR-2026] |
+| 7 Aug 2026 | Crowe closes KKR's investment; Crowe LLP stays the attest firm and Crowe Advisory LLC is non-attest | Closed | Outside capital came with an attest and non-attest split into two entities | [CROWE-KKR-2026] |
 | 8 Sep 2026 | Forvis Mazars US warns of thin, AI-made QoE products and depleted junior ranks | Firm opinion | Price competition and quality risk arrive together | [FORVIS-QOE-2026] |
 
 ## 5. Client demand and the talent market
 
 | Date | Signal | Status | What it means for a leader | Source |
 |---|---|---|---|---|
-| 25 Mar 2026 | Only 7% of anti-fraud professionals feel more than moderately prepared for AI-fuelled fraud | Survey (vendor-published) | Demand for deepfake and AI-fraud investigation and controls | [ACFE-TECHBENCH-2026] |
+| 25 Mar 2026 | Only 7% of anti-fraud professionals say their organisations are more than moderately prepared for AI-fuelled fraud | Survey (vendor-published) | Demand for deepfake and AI-fraud investigation and controls | [ACFE-TECHBENCH-2026] |
 | 11 May 2026 | KPMG: active AI use in large-company finance up from 30% to 75%; 42% fully assurance-ready | Survey (firm) | Clients deploy faster than they assure: AI-governance demand | [KPMG-AIFINANCE-2026] |
-| 22 Jun 2026 | Thomson Reuters: 78% of corporate clients see AI-enabled quality as essential; 6% say most providers deliver it | Survey (vendor) | Clients will ask what AI changes in your service | [TR-FOPPR-2026] |
+| 22 Jun 2026 | Thomson Reuters: 78% of corporate clients rate AI-enabled quality very important or essential; 6% say most providers deliver it | Survey (vendor) | Clients will ask what AI changes in your service | [TR-FOPPR-2026] |
 | 22 Jul 2026 | RSM: 40% of middle-market AI-spend increasers reallocate from external consulting | Survey (firm) | Some advisory budget is moving; who replaces it is not stated | [CPAPA-RSMMM-2026] |
 | 6 Aug 2026 | Interim CFO demand up 14% year on year (Business Talent Group via CFO Dive) | Survey | Fractional finance leadership is growing alongside AI | [CFODIVE-FRACTIONAL-2026] |
 | Aug 2026 | Stanford/ADP: employment of 22-25-year-olds in AI-exposed occupations 19% below trend (descriptive, not accounting-specific) | Research | Entry-level hiring is the first place AI shows in labour data | [STANFORD-CANARIES-2026] |
@@ -89,7 +89,7 @@ lists for their own steps. Source keys in brackets resolve in [sources.md](sourc
 | When | What | Source |
 |---|---|---|
 | 4-6 Nov 2026 | AICPA FVS Conference, with sessions on AI expert evidence and AI disclosure in valuation reports (scheduled) | [AICPA-FVS-2026] |
-| 15-17 Nov 2026 | ACFE Fraud Conference Canada, with an AI and analytics session on 16 Nov (scheduled) | [ACFE-CANADA-2026] |
+| 15-17 Nov 2026 | ACFE Fraud Conference Canada, with a pre-conference session on ethical AI use in fraud work on 15 Nov (scheduled) | [ACFE-CANADA-2026] |
 | Q4 2026 | Grant Thornton Advisors and CBIZ expected to close | [GT-CBIZ-2026] |
 | 6-9 Dec 2026 | Digital CPA, the CAS and advisory technology conference (agenda not read) | [CPACOM-DCPA-2026] |
 | Dec 2026 | 2026 CAS Benchmark Survey report due: the first likely CAS technology and pricing dataset | [CPACOM-CASBENCH-2026] |
@@ -97,6 +97,6 @@ lists for their own steps. Source keys in brackets resolve in [sources.md](sourc
 | Jan 2027 | Final IVS text planned (31 Jan); AICPA tax-services independence interpretation effective (15 Jan; tax archetype) | [IVSC-IVSED-2026; JOFA-PEEC-TAX-2026] |
 | Early 2027 | Full launch of the AICPA and AIUC SOC 2 plus AIUC-1 engagement | [JOFA-AIUC-2026] |
 | 2027 | KPMG's forecast first wave of AI-related material weaknesses | [KPMG-SOX2030-2026] |
-| 2 Dec 2027 | EU AI Act stand-alone high-risk duties apply, after the 2026 amendment | [CUATRECASAS-AIOMNIBUS-2026] |
+| 2 Dec 2027 | EU AI Act duties for high-risk uses in Annex III areas (such as employment) apply, after the AI Omnibus entered into force on 27 Jul 2026 | [European Commission AI Act page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai), read 2026-10-21; [CUATRECASAS-AIOMNIBUS-2026] |
 | 31 Jan 2028 | Revised IVS effective, if adopted as drafted | [IVSC-IVSED-2026] |
 | Not dated | Second APS exposure draft (AICPA); IESBA PE and AI guidance; final Rule 707 outcome | [JOFA-PEEC-2026; IESBA-PE-2026; USCOURTS-EVID-2026] |

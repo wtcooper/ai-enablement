@@ -42,7 +42,8 @@ value or outcome-linked fees.
 - **Forecast.** 69% of tax professionals anticipate value-based, hybrid or fixed fees (Blue J survey)
   [CPACOM-BLUEJ-2026]; a firm CEO forecasts outcome-linked advisory fees [BBTAX-SH-2026]. GGI argues judgment-heavy work
   keeps time-based billing while routine work moves to fixed or outcome fees (opinion) [MONDAQ-GGI-2026].
-- **Friction.** Contingent fees are barred or restricted for audit clients ([guardrails.md](guardrails.md) §4); in tax
+- **Friction.** Contingent fees are barred for SEC audit clients and, under the AICPA Code, for audit and review
+  clients ([economics.md](economics.md) §4; [guardrails.md](guardrails.md) §4); in tax
   matters the IRS OPR says savings should be passed on openly [IRS-OPR-2026].
 - **What would have to be true.** Baselines per metric, system data, an eligible-client rule, and a decision on who keeps
   the saving.
@@ -74,10 +75,11 @@ supplying capacity to firms.
 **The picture.** PE-backed platforms and AI-native roll-ups buy firms and fund AI centrally; scale becomes the way to
 pay for technology.
 
-- **Exists.** IFAC counts 1,052 PE-linked transactions in 2015-2025 [CPAPA-IFACPE-2026]; CPA Trendlines tracks about
-  $49B of enterprise value to May 2026 [CPATRENDLINES-TRACKER-2026]. Grant Thornton Advisors' $5B CBIZ deal is tied to
+- **Exists.** IFAC counts 1,052 PE-linked transactions in 2015-2025 (177 direct investments plus 875 roll-ups)
+  [CPAPA-IFACPE-2026]; CPA Trendlines tracks about $49B of transacted enterprise value across 525 events since 2016,
+  to May 2026 [CPATRENDLINES-TRACKER-2026]. Grant Thornton Advisors' $5B CBIZ deal is tied to
   funding AI [GT-CBIZ-2026]. Current reports $428M revenue as an AI-backed roll-up [ACCTODAY-CURRENT-2026]; Multiplier
-  says AI doubled an acquired firm's margins (company claim) [TECHCRUNCH-MULTIPLIER-2025].
+  says AI more than doubled an acquired firm's margins (company claim) [TECHCRUNCH-MULTIPLIER-2025].
 - **What buyers buy.** Forensic, valuation, cyber and IT capabilities in April 2026, read by the tracker as
   "defensible advisory niches" [CPATRENDLINES-TRACKER-2026].
 - **Counter-views.** Current's CEO contrasts "cost extraction on a deadline" with long-hold growth
@@ -86,7 +88,7 @@ pay for technology.
 - **Independence consequence.** Outside capital brings the attest and advisory split, which limits what can be sold to
   attest clients; the AICPA rule is still moving [CROWE-KKR-2026; JOFA-PEEC-2026].
 - **For the leader.** An approach from a buyer is also an AI decision: whose platform, whose data, and which services
-  the attest arm can no longer buy from the advisory arm.
+  attest clients can no longer buy from the advisory arm.
 
 ## 5. Scenario 4: clients do more themselves
 
@@ -110,12 +112,12 @@ pay for technology.
 dashboards, forecasting and advice sold on subscription.
 
 - **Facts.** The Journal of Accountancy describes CAS as moving the firm from transactional provider to an embedded,
-  ongoing resource [JOFA-CASTIPS-2025]. Withum says advisory "sells best next to CAS" and uses AI for variance finding and real-time
-  dashboards [ACCTODAY-CASKEYS-2026]. Manual data cleanup is the top advisory blocker (30%) [INTUIT-ACCTTECH-2026]. The
+  ongoing resource [JOFA-CASTIPS-2025]. Withum says advisory "sells best next to CAS" and recommends AI for finding variances and
+  delivering real-time client dashboards [ACCTODAY-CASKEYS-2026]. Manual data cleanup is the top advisory blocker (30%) [INTUIT-ACCTTECH-2026]. The
   Choi and Xie field study associates genAI with effort moving from data entry to communication and quality assurance
   [STANFORD-JAR-2026].
 - **Forecast.** Tom Hood (AICPA & CIMA) forecast a move from personal-productivity AI to managing finance agents
-  [JOFA-HOOD-2026]; Withum's Jim Bourke predicts near-complete automation of the tax process [ACCTODAY-CASKEYS-2026].
+  [JOFA-HOOD-2026]; Withum's Jim Bourke predicts "complete automation of the tax process" [ACCTODAY-CASKEYS-2026].
 - **Not found.** Any independent measure of CAS-to-advisory conversion. Advisory slowed at the largest firms in 2025
   Top 100 data [WOODARD-TWR-2025].
 - **For the leader.** Test it on your own book: which clean clients bought advisory last year, and at what fee basis?
@@ -131,8 +133,8 @@ assurance over it.
   accreditation, and the AICPA and AIUC announced a SOC 2 plus AIUC-1 engagement; the assurance itself is attest work
   [GT-EAS-2026; JOFA-AIUC-2026].
 - **Demand claimed.** Grant Thornton's CEO says governance demand is already here (no figures) [GT-CBIZ-2026]; 42% of
-  large finance functions are fully assurance-ready [KPMG-AIFINANCE-2026]; only 7% of anti-fraud professionals feel
-  more than moderately prepared for AI-fuelled fraud [ACFE-TECHBENCH-2026].
+  large finance functions are fully assurance-ready [KPMG-AIFINANCE-2026]; only 7% of anti-fraud professionals say their
+  organisations are more than moderately prepared for AI-fuelled fraud [ACFE-TECHBENCH-2026].
 - **Ideas, not yet sold.** Deepfake examination, AI-fuelled fraud and AI-washing investigations, and validation studies
   for evidence rules (forensic-disputes `#11`, `#12`, `#15`); forecast back-testing as a service (fpa-performance `#14`).
 - **What would have to be true.** Paid engagements with defined scope; independence checked where the client is also
