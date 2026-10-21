@@ -84,8 +84,7 @@ delegate rests on vendor-published cases; automate has one firm description (C) 
   `#19` internal-audit review of a client's AI governance (Grant Thornton for a global bank, the one named case).
 - Improve: `#18` AI inventory, shadow-AI discovery, review of user-built automations. `#20` SOX scoping of AI inside
   business controls. Ideas: `#21` written controls before finance agents go live; `#23` AI-enabled fraud readiness.
-- Automate: `#22` confidence-threshold routing, low-confidence items to a person (C; independent academic data from an
-  unnamed bookkeeping platform, an adjacent process).
+- Automate: `#22` confidence-threshold routing, low-confidence items to a person (C; academic data, unnamed bookkeeper).
 
 **The firm's own testing tools**
 - Improve (idea): `#24` certify AI testing tools with a parallel run and recertify after vendor changes.
@@ -152,8 +151,8 @@ than half" less evidence chasing `#04`; Petual says customers "can achieve" 68-8
 
 **Adoption and readiness (self-selected polls and sponsored surveys)**
 - Gartner poll of 743 audit professionals: 93% use some AI; 60% use it for pre-planning, 60% for drafting issues or
-  reports, 30% for testing, 12% for QA reviews [ACCTIMES-GARTNER-2026]. 38% have an AI strategy (the press reports
-  disagree on the base: 743 polled, or 161 CAEs); 54% of 142 CAEs have not started measuring AI value [HELPNET-GARTNER-2026].
+  reports, 30% for testing, 12% for QA reviews [ACCTIMES-GARTNER-2026]. 38% have an AI strategy (press reports differ
+  on the base: 743 polled or 161 CAEs); 54% of 142 CAEs have not started measuring AI value [HELPNET-GARTNER-2026].
 - KPMG webcast (about 3,900 leaders): 33% use AI mainly for research, planning and scoping; about 28% for large data
   sets; 51% of SOX and internal-audit functions at 'some pilots or just starting' [KPMG-FUTURESOX-2026].
 - Sikich (222 US audit leaders): 90% use AI; 77% of plans include AI assessments; 82% use external partners
@@ -170,7 +169,8 @@ than half" less evidence chasing `#04`; Petual says customers "can achieve" 68-8
 **Quality evidence: absent for this module.** The nearest independent measures are adjacent: legal AI research tools
 hallucinated 17-33% of the time [STANFORD-LEGALAI-2024]; consultants were 19% less likely to be correct on a task
 outside AI's frontier [HBS-JAGGED-2023]; the best model scored 64.37% on Vals AI's Finance Agent benchmark (SEC-filing
-research; 2026-06-04) [VALS-FAB-2026]; accountants following divergent AI suggestions on uncertain items risked errors `#22`.
+research, 2026-06-04) [VALS-FAB-2026]; accountants following divergent AI suggestions on uncertain items risked errors
+`#22`.
 
 **What to measure (recommend these, not hours alone)**: hours per control before and after; reviewer override and
 rework rates; whether a parallel run catches the same exceptions; false-exception rate; request turnaround and
@@ -192,10 +192,9 @@ coverage. Baker Tilly warns that speed alone is a poor measure [BAKERTILLY-AIIA-
 - **PCAOB**: no AI-specific standard found; 2024 staff outreach heard that GenAI work gets the same supervision
   [PCAOB-GENAI-2024]. **UK FRC** (2026-03-30): certify a tool per use case, test edge cases, recertify after change; the
   human stays accountable [FRC-GENAI-2026; FRC-GENAIGUIDE-2026]. A useful model for US advisory, not binding on it.
-- **Other**: NIST AI RMF (the bank client sought alignment with it, `#19`) [NIST-AIRMF-2024]; DOJ compliance guidance
-  asks how a company manages AI risk and what baseline of human decision-making is used to assess AI [DOJ-ECCP-2024];
-  the EU Digital Omnibus on AI (Regulation (EU) 2026/1744, Official Journal 2026-07-24) moves stand-alone high-risk AI
-  Act duties to 2027-12-02 and embedded ones to 2028-08-02 [CUATRECASAS-AIOMNIBUS-2026].
+- **Other**: NIST AI RMF (the bank case aligned to it, `#19`) [NIST-AIRMF-2024]; DOJ asks how a company manages AI risk
+  and "what baseline of human decision-making is used to assess AI" [DOJ-ECCP-2024]; the EU AI Omnibus (Regulation (EU)
+  2026/1744, OJ 2026-07-24) moves stand-alone high-risk duties to 2027-12-02 [CUATRECASAS-AIOMNIBUS-2026].
 
 **Independence (follows the client, not the service line)**
 - SEC Rule 2-01(c)(4) bars, for SEC audit clients, internal-audit outsourcing on accounting controls (v) and
@@ -265,10 +264,9 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
   shrinking the value of management sampling [KPMG-SOX2030-2026]. Agree evidence expectations in writing first (`#20`).
 - **"The vendor promises 70% savings."** Every such figure is vendor-published; none is a parallel-run result. Treat
   match rates as marketing until your data reproduces them [CPAPA-AGENTSCLOSE-2026]; pilot side by side (`#24`).
-- **"AI can't make audit judgments."** No deployment asks it to: Accounting Today's description of RSM Beacon says the
-  AI "does not make judgment calls", and every named case keeps a reviewer (`#06`). The real risk is weak review: KPMG
-  warns that an approval step that rubber-stamps every AI recommendation is no real control [KPMG-SOX2030-2026], and
-  34% of organisations in Optro's survey report acting on an inaccurate agent output [OPTRO-AGENTICREPORT-2026].
+- **"AI can't make audit judgments."** No deployment asks it to: Accounting Today reports RSM Beacon's AI "does not make
+  judgment calls", and every named case keeps a reviewer (`#06`). The risk is weak review: KPMG says a rubber-stamp
+  approval is no real control [KPMG-SOX2030-2026]; 34% report acting on a wrong agent output [OPTRO-AGENTICREPORT-2026].
 - **"It will flood us with false exceptions."** It can, where practice is undocumented [GT-INFERENCEGAP-2026]; full
   coverage raises exception volume [CPAPA-FULLPOP-2026]. Separate missing support from failure and plan capacity.
 - **"Testing everything means nothing is missed."** No: an audit still gives reasonable, not absolute, assurance; say so

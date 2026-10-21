@@ -1427,8 +1427,8 @@
     practitioner article. No CAS firm reports using it or what it caught. The same package sold to clients as a
     control-design service is in advisory risk-controls (advisory-risk-controls-21; see also -12 on vendor SOC reports and -22 on confidence-threshold routing); auditor-side evidence is in
     assurance (assurance-assurance-over-ai-04, -07); tracking overrides as a quality signal is
-    professional-services-quality-review-11. The CPA Practice Advisor article also cites a KPMG readiness figure (42%)
-    that KPMG uses for two different measures; it is not used here.
+    professional-services-quality-review-11. The CPA Practice Advisor article also cites a KPMG survey figure (42% of
+    finance leaders fully assurance ready); the KPMG survey was not opened, so the figure is not used here.
 
 - id: advisory-client-accounting-services-22
   title: Firm AI policy, approved tools, vendor data terms and change control for firm-built automations in CAS delivery
@@ -1442,9 +1442,9 @@
   runtime_class: shared-team-skills
   maturity: emerging
   problem: >-
-    Staff paste client data into consumer chat tools, only a minority of firms have a written AI policy or strategy,
-    and staff can now build their own automations, dashboards and agents ('vibe coding') that no one has reviewed
-    (KARBON-SOAI-2026; CPAPA-SETTLE-2026; JOFA-CHECKLIST-2026). A tool that searches all client files can pull a figure
+    About one-third of lawyers, accountants and compliance professionals say they use unsanctioned AI tools, only a
+    minority of firms have a written AI policy or strategy, and staff can now build their own automations, dashboards
+    and apps ('vibe coding') that may not have been reviewed (TR-FOP-2026; KARBON-SOAI-2026; JOFA-CHECKLIST-2026). A tool that searches all client files can pull a figure
     from the wrong client (CPAPA-SETTLE-2026).
   solution: >-
     The firm names an AI lead or committee, keeps a list of approved tools, defines permitted and prohibited uses,
@@ -1457,7 +1457,7 @@
     - lever: risk
       description: "Few firms have an AI policy or strategy."
       figure: "21%"
-      measures: "Share of surveyed firms with an AI policy or strategy (Karbon, nearly 600 professionals, released 2026-01-20; Karbon users over-represented)"
+      measures: "Share of surveyed firms with an AI policy or strategy (Karbon, nearly 600 accounting professionals, published 2026-01-23; a vendor survey)"
       provenance: vendor-published
       source_ref: KARBON-SOAI-2026
     - lever: risk
@@ -1468,8 +1468,8 @@
       source_ref: JOFA-AIPOLICY-2026
     - lever: risk
       description: "Professionals using AI their organization has not approved (mixed professions, vendor-run)."
-      figure: "34%"
-      measures: "Share of Thomson Reuters Future of Professionals 2026 respondents using unapproved AI"
+      figure: "about one-third"
+      measures: "Lawyers, accountants and compliance professionals saying they turn to unsanctioned AI tools (Thomson Reuters Future of Professionals 2026, global survey of 1,800 professionals; the release gives no exact percentage)"
       provenance: vendor-published
       source_ref: TR-FOP-2026
   prerequisites:
@@ -1482,7 +1482,7 @@
     - "The FTC Safeguards Rule treats a firm completing income tax returns as a financial institution and requires service-provider oversight, a Qualified Individual and an annual written report; it protects individual consumers' information, not business-client data as such (FTC-SAFEGUARDS-2026)."
     - "Anthropic and Microsoft state that commercial products are not used to train their models by default; contracts and plan tiers govern in practice (ANTHROPIC-PRIVACY-2026; MS-COPILOTPRIV-2026)."
     - "A Cherry Bekaert risk partner says reviews should be more rigorous when user-built tools affect multiple clients (JOFA-CHECKLIST-2026)."
-    - "SQMS No. 1 took effect 15 Dec 2025 and covers review and compilation work (LINFORD-SQMS-2024, a firm's summary); a law firm's white paper warns firms may be faulted for over-reliance on AI output or improper data handling (HEPLER-CPALIAB-2026)."
+    - "SQMS No. 1 took effect 15 Dec 2025 and covers review and compilation work (LINFORD-SQMS-2024, a firm's summary); a law firm's white paper warns that a firm using AI on unverified assumptions or hallucinated authorities may face a due-care claim, compounded if confidential client data is exposed (HEPLER-CPALIAB-2026)."
   human_checkpoints:
     - "AI lead or committee approves tools and use cases"
     - "Vendor file review before a tool is approved and at renewal"
