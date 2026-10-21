@@ -37,8 +37,9 @@ Source keys in brackets resolve in [sources.md](sources.md).
 - **The problem statement has shifted.** Woodard reports firms moving from "we can't find people" to "how do we do it
   with fewer people" [WOODARD-TWR-2025].
 - **Pyramid to diamond.** Gartner says AI is turning the finance pyramid into a diamond by eliminating entry-level
-  roles; that is Gartner's view of client finance functions [GARTNER-FPALEADER-2026]. In FP&A, KPMG recalls one company
-  moving variance commentary from 40 producers to five reviewers (a recalled figure) [KPMG-CFOREMODEL-2026].
+  roles; that is Gartner's view of client finance functions [GARTNER-FPALEADER-2026]. In FP&A, a CFO of an unnamed global media
+  and information company, quoted by KPMG, says a flux-analysis agent took variance commentary from 40 people to five
+  reviewers (self-reported) [KPMG-CFOREMODEL-2026].
 - **Seniors move up a layer.** CohnReznick expects senior accountants to do more review and client time (CAS `#03`);
   RSM treats its testing agent as a digital employee that can make intern-like mistakes, with auditors reviewing
   completed controls (risk-controls `#06`).
@@ -50,7 +51,7 @@ Source keys in brackets resolve in [sources.md](sources.md).
 | Evidence | Finding | Who measured, scope |
 |---|---|---|
 | Labour market | Employment of 22-25-year-olds in AI-exposed occupations 19% below trend, mainly through reduced hiring; "early, descriptive" | Stanford Digital Economy Lab with ADP payroll data, all occupations, August 2026 [STANFORD-CANARIES-2026] |
-| UK Big Four intake | Graduate schemes down 6-29% from 2023 to 2025 (KPMG 29%, Deloitte 18%, EY 11%, PwC 6%); UK accountancy graduate adverts 44% lower than 2023 | Telegraph figures via Scottish Financial News, UK only; AI, offshoring and cost cutting all cited [SCOTFIN-BIG4-2025] |
+| UK Big Four intake | Graduate schemes down 6-29% from 2023 to 2024 (KPMG 29%, Deloitte 18%, EY 11%, PwC 6%); UK accountancy graduate adverts 44% lower in 2025 than in 2023 (Indeed) | Telegraph figures via Scottish Financial News, UK only; AI, offshoring and cost cutting all cited [SCOTFIN-BIG4-2025] |
 | Counter-evidence | All Big Four plan to hire at least 1,000 juniors this year, EY 1,600; advisers cite the 2008 lesson, when cutting intake caused management shortages about five years later | ICAEW, April 2026 [ICAEW-JUNIOR-2026] |
 | Expectation | 68% of respondents to an ICAEW mid-tier study expect AI to reduce the need for some early-career roles; it is unclear how much AI caused Big Four cuts | ICAEW, June 2026 (underlying report not opened) [ICAEW-VOICES-2026] |
 | Small and mid-sized employers | A third of new accounting and finance hires quit within a year; senior-to-entry hiring ratio 3:1 | BambooHR survey of 1,248 US respondents; the CFO's reading links quits to an unclear entry-level remit [CFOBREW-JUNIORS-2026] |
@@ -126,8 +127,8 @@ applied the concept (valuation `#04`). Route the full redesign to professional-s
 - **New roles.** Agent owners and AI leads (CAS `#21`, `#22`); citizen data scientists, AI product managers and
   knowledge engineers in finance teams, per Gartner [GARTNER-FPALEADER-2026]; vendors hiring accountants to write agent
   procedures (CAS `#03`).
-- **Expertise sold to model builders.** An AI company pays experienced TAS managers $100 an hour to evaluate AI-made
-  QoE pages [GC-ETHOS-JOB-2026]; an AI training-data startup recruits forensic accountants at $75-150 an hour
+- **Expertise sold to model builders.** An expert network recruiting for an AI lab offers experienced TAS managers $100 an hour to
+  create and evaluate AI-made QoE exhibits and deal slides [GC-ETHOS-JOB-2026]; an AI training-data startup recruits forensic accountants at $75-150 an hour
   [AFTERQUERY-JOB-2026]. Market signals, not firm practice.
 
 ## 8. Questions to ask
