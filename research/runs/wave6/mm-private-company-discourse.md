@@ -616,7 +616,7 @@ Peer review baseline (non-AI), engagements found nonconforming over engagements 
 
 Adoption and attitude benchmarks:
 
-- CPA.com audit survey of 54 firms (not representative): 75% have no formally documented transformation plan; nearly one quarter use no AI or advanced automation; 22% have no automated solution; 89% are not using technology for substantive analytics, and Excel/Power BI is the most common analytics tool. On return on technology, 83% name staff efficiency among their top two outcomes, 54% audit quality or accuracy, 37% cost savings, and 6% do not measure it (CPACOM-ATR-2025, PDF pages 2, 12, 20).
+- CPA.com audit survey of 54 firms (not representative): 75% have no formally documented transformation plan; nearly one quarter use no AI or advanced automation; 22% have no automated solution; 89% are not using technology for substantive analytics, and Excel/Power BI is the most common analytics tool. On return on technology, 83% name staff efficiency among their top two outcomes, 54% audit quality or accuracy, 37% cost savings, and 6% do not measure it (CPACOM-ATR-2025, PDF pages 3, 4, 12 and 20).
 - AICPA 2026 top-issues survey, 629 respondents: technology and AI change management ranked first for five-year impact in all six size groups, and bolstering quality management made the five-year top five in four of six groups (JOFA-TOPISSUES-2026; AICPA-TOPISSUES-2026).
 - ICAEW (UK mid-tier, 35 firms surveyed February and March 2026): 86% have a technology strategy that includes AI; most are not yet sure of the workforce impact (ICAEW-MIDTIER-2026). Adjacent: non-US.
 - Caseware beta result for the disclosure checklist agent: 2.7 hours saved per checklist run on average, results varying (vendor-published; CASEWARE-CWX-2026). Verity for Excel: nine hours per engagement and 75% per task in Caseware's testing to date (vendor-published; CASEWARE-VERITYXL-2026).
@@ -691,7 +691,7 @@ Adoption and attitude benchmarks:
 
 ## 5. Sources
 
-45 sources, all opened and read in full or in the part cited. Types: community 3; conference 3; firm 1; podcast 1; press 5; professional-body 17; regulator 1; survey 4; vendor 10. Sources of type community and podcast are weak: the podcast entry is a machine-written summary page, and Going Concern is commentary.
+45 sources, all opened and read in full or in the part cited. Types: community 3; conference 3; firm 1; podcast 1; press 5; professional-body 17; regulator 1; survey 4; vendor 10. Going Concern and FEI Daily were read through the r.jina.ai text mirror; all other pages were fetched directly. Sources of type community and podcast are weak: the podcast entry is a machine-written summary page, and Going Concern is commentary.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|

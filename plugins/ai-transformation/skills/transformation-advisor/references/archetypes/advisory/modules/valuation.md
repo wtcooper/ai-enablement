@@ -57,11 +57,10 @@ BVR-BIG4GUIDANCE-2026, summary only].
 **Research, comparables and technical knowledge**
 - Improve: `#01` KPMG says it is working to embed AI across information requests, technical research, volatility and
   attrition analysis and comparable-company screening (Big Four, trade-press report of a panel). `#02` BVR's
-  plain-language agent over transaction and discount datasets, with drill-through to the deals (vendor). `#03`
-  Kreston Reeves and Rouse (UK accounting firms) research multiples and discount rates on Valutico; Rouse estimates a
-  third off project time (vendor case study that never says AI was used; grade C). `#04` a grounded assistant over BVR's
-  technical library, with juniors sent there first and seniors reviewing how they applied the concept (vendor tip).
-- Related: `assurance-specialists-02` (valuation providers build third-party AI analytics into their methodology).
+  plain-language agent over transaction and discount datasets, with drill-through to the deals (vendor). `#03` Kreston
+  Reeves and Rouse (UK accounting firms) research multiples and discount rates on Valutico; Rouse estimates a third
+  off project time (vendor case study; AI use not stated, so grade C). `#04` a grounded assistant over BVR's technical
+  library, with juniors sent there first and seniors reviewing how they applied the concept (vendor tip).
 
 **Modelling and projections**
 - Improve: `#05` AI inside Excel builds models, audits formulas and runs sensitivities (vendor claims; the 83% figure
@@ -71,13 +70,12 @@ BVR-BIG4GUIDANCE-2026, summary only].
 
 **Report drafting and review**
 - Improve: `#08` template-driven report generation at RXM (Singapore) and PKF FI (France); RXM says a 200-page report
-  went from months to days (vendor case study that never says AI was used; grade C). `#09` generative AI drafts sections
+  went from months to days (vendor case study; AI use not stated, so grade C). `#09` generative AI drafts sections
   such as market commentary, which the IVSC says some valuers already do (no firm named). `#10` reviewer agents check
   a valuation or report against standards, methodology and the firm's review policy (practitioner idea plus a vendor
   template; no named user). `#11` idea: write and defend reports expecting clients to run AI critiques of them.
-- Related: `assurance-specialists-04` (AI quality-control review of valuation reports, audit side);
-  `advisory-forensic-disputes-07` (verification and audit-trail protocol for expert work);
-  `professional-services-quality-review-02` (citation and quotation checks before signing).
+- Related: `assurance-specialists-04` (audit-side QC review of valuation reports); `advisory-forensic-disputes-07`
+  (verification protocol for expert work); `professional-services-quality-review-02` (citation checks before signing).
 
 **Production end to end (delegate)**
 - `#12` AI-native vendors claim documents-to-model-report-and-deck in hours or minutes (directory profile and a home
@@ -86,7 +84,8 @@ BVR-BIG4GUIDANCE-2026, summary only].
 **Portfolio and fund valuation (process and model change)**
 - Improve (process): `#13` Hamilton Lane (an in-house investment manager, and an investor in the vendor) standardized
   valuations on 73 Strings' AI-assisted platform; qualitative statements only. `#15` CohnReznick's valuation practice
-  builds 73 Strings' AI-enabled analytics into its methodology for fund clients (firm release; no figures).
+  builds 73 Strings' AI-enabled analytics into its methodology for fund clients (firm release; no figures; also
+  `assurance-specialists-02`).
 - Reinvent: `#14` independent valuation firms sell recurring valuation as an AI-enabled platform with their opinions
   inside the workflow (Stout Drivr; Kroll REVS for real estate). Announcements; no customers or figures.
 - Disputes: `advisory-forensic-disputes-06` covers sandboxed LLM use in IP damages and valuation disputes.
@@ -176,9 +175,8 @@ hosting an AI system for an attest client can raise independence concerns [JOFA-
 valuation for private-company attest clients was not confirmed in the research: confirm per engagement. Related:
 `assurance-acceptance-independence-15`.
 
-**Lenders.** For SBA change-of-ownership loans, QoEAgent reads the SBA rule as barring a valuation prepared for the
-applicant or seller, with no dollar threshold [QOEAGENT-WHO-2026]. This is a vendor's reading. See
-`advisory-transactions-07`.
+**Lenders.** For SBA change-of-ownership loans, a vendor (QoEAgent) quotes the SBA rule barring a valuation prepared
+for the applicant or seller, with no dollar threshold [QOEAGENT-WHO-2026]; see `advisory-transactions-07`.
 
 **Courts and discovery.** In Matter of Weber (N.Y. Surrogate's Court, 2024) the court found an expert's testimony not
 credible, got different numbers when it re-ran his Copilot queries, and required counsel to disclose AI use
@@ -199,8 +197,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
 
 ## 7. Roles and how they evolve
 
-- Several speakers on a Big Four panel said firms are hiring fewer entry-level analysts as AI automates part of the
-  mechanical work, raising the question of how future valuers will be trained [BVR-KPMGTREND-2026]. See `assurance-specialists-01` for the 2025 and
+- Speakers at a Big Four panel said firms hire fewer entry-level analysts as AI automates mechanical work, raising the
+  question of how future valuers will be trained [BVR-KPMGTREND-2026]. See `assurance-specialists-01` for the 2025 and
   2026 Big Four panels and `professional-services-talent-learning-07` for redesigned entry-level roles.
 - Roger Grabowski told NACVA attendees AI will not replace judgment and could free analysts from mechanical work to
   understand businesses and advise clients [BVR-NACVA-2026].
@@ -222,7 +220,7 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
   [IVSC-PERSPECTIVES-2025].
 - **2025-10:** AICPA FVS committee issues AI guidelines [BVR-AICPAAIGUIDE-2025].
 - **2026-01-07 to 2026-04-23:** AO-41 exposed, then adopted [BVR-TAFAO41-2026; BVR-AO41ADOPT-2026].
-- **2026-01 to 2026-04-30:** IVS exposure draft consultation; final planned 2027-01-31, effective 2028-01-31
+- **2026-01-31 to 2026-04-30:** IVS exposure draft consultation; final planned 2027-01-31, effective 2028-01-31
   [IVSC-IVSED-2026].
 - **2026-03-03 and 2026-03-26:** Kroll announces REVS (`#14`) [KROLL-REVS-2026]; CohnReznick says its valuation
   practice has built in 73 Strings' AI-enabled analytics (`#15`) [COHNREZNICK-VALUATION-2026].
@@ -233,7 +231,7 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
   announce Claude access for 276,000+ people [ANTHROPIC-FSAGENTS-2026; ANTHROPIC-KPMG-2026].
 - **2026-06 (summaries only):** BVR write-ups describe firms moving from experimenting to integrating AI into research,
   workflows and practice management [BVR-EXPERIMENT-2026].
-- **2026-06-10:** BVWire reports Big Four panellists describing AI as part of everyday valuation work [BVR-KPMGTREND-2026].
+- **2026-06-10:** BVWire reports Big Four panellists calling AI part of everyday valuation work [BVR-KPMGTREND-2026].
 - **2026-06-25:** IVSC dialogue panel says governing the technology may now be harder than adopting it
   [BVR-IVSCDIALOGUE-2026].
 - **2026-07-14:** Stout launches Drivr (`#14`) [STOUT-DRIVR-2026].
