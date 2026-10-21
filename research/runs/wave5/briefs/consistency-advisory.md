@@ -44,3 +44,4 @@ Do not touch the archetype-level files, the archetypes index or other archetypes
 Edit the files in place, then write `/home/user/ai-enablement/research/runs/wave5/advisory-consistency-report.md`:
 keys unified, duplicates handled, cross-references fixed, provenance and grade changes, build words removed, and
 the validator result. Do not run git. Reply with a summary of **no more than 150 words**.
+- GT-AIIMPACT-2026 names a different Grant Thornton report in three other files (risk-controls verifier).
