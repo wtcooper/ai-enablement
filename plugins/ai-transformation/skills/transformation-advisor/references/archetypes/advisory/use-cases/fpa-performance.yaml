@@ -1,0 +1,1621 @@
+- id: advisory-fpa-performance-01
+  title: AI-drafted variance and flux commentary, KPI views and management and board reporting packs, reviewed before
+    release
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - document-production
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Variance explanations and performance narratives are written by hand, late in the reporting cycle. In
+    the 2026 FP&A Trends Survey, teams reported spending 47% of their time on data collection and validation and
+    32% on insight generation. CAS and advisory teams compile monthly statements by hand and add client-specific
+    commentary late; clients want insight, not only numbers.
+  solution: AI features inside planning and reporting platforms (the sources name Solver Copilot and Abacum's narrative
+    layer) draft variance summaries, flag outliers and propose root causes from the planning model. An analyst or
+    advisor reviews and edits before anything reaches management or a board. Pigment's page says it plans agent-based
+    drafting of monthly budget variance analysis (planned, not shipped). Withum's Jim Bourke told a May 2026 conference
+    to 'think how quickly Claude or ChatGPT could find a variance' and probably explain it, and said using AI to
+    deliver real-time dashboards on the metrics clients want is how a CAS practice differentiates itself. CohnReznick
+    CAS leaders list reporting tools in this class (Reach Reporting, Qvinci, Spotlight Reporting, Datarails) in
+    the Journal of Accountancy.
+  outcomes:
+  - lever: capacity
+    description: An unnamed CFO of a global media and information services firm said a flux analysis agent, built
+      in three weeks, took variance commentary from 40 people manually producing it to five people reviewing and
+      refining the agent's output.
+    figure: 40 people to 5 people
+    measures: People manually producing monthly variance commentary, before and after, as recalled by the CFO in
+      a KPMG article; the organisation is not named and no method is given
+    provenance: self-reported
+    source_ref: KPMG-CFOREMODEL-2026
+  - lever: quality
+    description: In Gartner's March 2026 survey of 204 finance leaders, financial forecasting and insight generation
+      were among the lowest-rated AI use cases.
+    figure: none (ranking only)
+    measures: Ratings of realized versus expected value by AI use case; the release gives no percentage for these
+      use cases
+    provenance: independent
+    source_ref: GARTNER-AIREPORTCARD-2026
+  - lever: cost
+    description: Finance teams reported spending an average of 26% of their working time verifying or correcting
+      AI-generated finance outputs.
+    figure: 26%
+    measures: Average share of work time spent verifying or correcting AI-generated finance outputs, among 270 CFOs
+      and finance leaders in a Datarails (vendor) survey; 96% of respondents spent at least 10%
+    provenance: vendor-published
+    source_ref: CFODIVE-DATARAILS-2026
+  - lever: capacity
+    description: 86% of surveyed accounting professionals expect AI to increase their advisory capacity over the
+      next 12 months; 30% name manual data cleanup as the top blocker to proactive advisory work.
+    figure: 86% and 30%
+    measures: Share of 725 US accounting and bookkeeping professionals in an Intuit-sponsored survey expecting more
+      advisory capacity from AI, and naming manual data cleanup the top blocker
+    provenance: vendor-published
+    source_ref: INTUIT-ACCTTECH-2026
+  prerequisites:
+  - Actuals, plan and driver data already consolidated in one model (only 19% of FP&A teams rate their data quality
+    advanced)
+  - Agreed variance thresholds and commentary templates
+  - A reviewer who knows the client's business
+  - Clean, current ledger data and integrations (only 41% of surveyed firms say their tools are fully integrated)
+  - A 30-60 day pilot on one workflow with time saved, added review time and errors measured (JofA)
+  risks_and_guardrails:
+  - 'Unreviewed AI output is a professional liability: Deloitte Australia agreed to repay the final instalment of
+    a roughly AU$440,000 contract after a report was found to contain incorrect footnotes and references, and the
+    updated report disclosed generative AI use (CITYAM-DELOITTE-2025).'
+  - A practitioner checklist says agent output feeding the financial statements needs a human approval step whose
+    depth scales with materiality, and that evidence should be replayable (CPAPA-AGENTSCLOSE-2026, controls 2 and
+    3).
+  - Vendor time-saving claims are marketing until a client's own data reproduces them (CPAPA-AGENTSCLOSE-2026, control
+    2).
+  - Three in five surveyed accountants say clients ask for proof of AI data protection always or frequently, yet
+    only a third proactively explain how AI supports their work (INTUIT-ACCTTECH-2026).
+  human_checkpoints:
+  - Analyst checks each drafted explanation against the ledger and the business context
+  - Named reviewer signs off before the pack goes to the client or board
+  - Advisor reviews commentary and insights before delivery
+  - Pilot measures review time and error reduction before scaling (JOFA-CASAI-2026)
+  role_evolution: KPMG's Erin McShane sees AI supporting FP&A, spreadsheet modelling, data extraction and variance
+    commentary, with talent needs moving from a reporting factory toward interpreting AI outputs and advising leaders
+    (KPMG-CFOREMODEL-2026). Withum's Bourke says advisory-based services are the way the profession is going to
+    grow, and that AI in CAS is where firms get 'the most bang for your buck' (ACCTODAY-CASKEYS-2026). In the Intuit
+    survey, 38% of firms prioritise strategic judgment in hiring and 22% AI fluency (INTUIT-ACCTTECH-2026).
+  evidence_grade: C
+  sources:
+  - ref: KPMG-CFOREMODEL-2026
+    title: CFOs remodel the finance function for an AI-driven world
+    publisher: KPMG US
+    type: firm
+    url: https://kpmg.com/us/en/articles/2026/cfo-remodel-finance-function-ai-driven-world.html
+    date: '2026-09-29'
+    access: full
+    locator: Section 'The AI maturity spectrum', CFO of a global media and information services firm; Erin McShane
+      paragraph
+  - ref: GARTNER-AIREPORTCARD-2026
+    title: Gartner Says CFOs Must Stop Mistaking Finance AI Deployment for Value Creation
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation
+    date: '2026-05-28'
+    access: full
+    locator: Paragraph 'Report Card Shows Progress and Value Gaps'
+  - ref: CFODIVE-DATARAILS-2026
+    title: 'AI verification eats up 26% of finance teams'' workweek: Datarails'
+    publisher: CFO Dive
+    type: survey
+    url: https://www.cfodive.com/news/ai-verification-eats-26percent-finance-teams-workweek-datarails/832210/
+    date: '2026-10-06'
+    access: full
+    locator: Dive Brief paragraphs 1-2
+  - ref: FORVIS-SOLVER-2026
+    title: Elevate Financial Reporting in Business Central With Solver (webinar slide deck)
+    publisher: Forvis Mazars US
+    type: firm
+    url: https://www.forvismazars.us/getattachment/b4a1114e-4173-4e2a-b632-6b1b4aecea5d/Elevate-Financial-Reporting-in-Business-Central-With-Solver.pdf
+    date: '2026-07-23'
+    access: full
+    locator: 'Slide ''Analysis Agent: Solver Copilot'' (root cause analysis on variances, narrative summaries);
+      title slide dated July 23, 2026'
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullet 'Narrative Intelligence'
+  - ref: ARMANINO-SOLVER-2026
+    title: Solver Financial Planning and Analysis Software
+    publisher: Armanino
+    type: firm
+    url: https://www.armanino.com/software/solver/
+    date: '2026'
+    access: full
+    locator: Section 'Make Smarter Decisions With AI'
+  - ref: PIGMENT-AI-2026
+    title: 'Introducing Pigment AI: Smarter Planning Tools'
+    publisher: Pigment
+    type: vendor
+    url: https://www.pigment.com/blog/ai-launch
+    date: '2026-09-03'
+    access: full
+    locator: Key takeaways, last bullet (planned monthly Budget Variance Analysis)
+  - ref: ONESTREAM-FPAWEBINAR-2026
+    title: '2026 FP&A trends: How AI is testing the foundations of Finance (webinar page with full transcript)'
+    publisher: OneStream and FP&A Trends Group
+    type: conference
+    url: https://www.onestream.com/resources/2026-fp-and-a-trends-replay-webinar/
+    date: '2026-07-09'
+    access: full
+    locator: Transcript, time-allocation segment (47% and 32%; 19% data quality advanced)
+  - ref: CITYAM-DELOITTE-2025
+    title: Deloitte refunds Australian government after AI 'made up citations' in report
+    publisher: City A.M.
+    type: press
+    url: https://www.cityam.com/?p=2367690
+    date: '2025-10-06'
+    access: full
+    locator: Paragraphs on the DEWR report, the refund and the generative AI disclosure
+  - ref: CPAPA-AGENTSCLOSE-2026
+    title: 'Before You Let the Agents Run the Close: Five Controls to Put in Writing First'
+    publisher: CPA Practice Advisor (author Anthony L. Fulmore Sr., Texas A&M University-Central Texas)
+    type: press
+    url: https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/
+    date: '2026-08-13'
+    access: full
+    locator: Controls 2 and 3; Control 3
+  - ref: RILLET-SERIESB-2025
+    title: Rillet raises $70M Series B from Andreessen Horowitz and ICONIQ
+    publisher: Rillet
+    type: vendor
+    url: https://rillet.com/blog/fundraise-announcement/
+    date: '2025-08-06'
+    access: full
+    locator: Paragraph naming Armanino (top 20) and Wiss (top 50) as partners
+  - ref: ACCTODAY-CASKEYS-2026
+    title: CAS delivers 'the keys to the kingdom'
+    publisher: Accounting Today
+    type: press
+    url: https://www.accountingtoday.com/news/cas-delivers-the-keys-to-the-kingdom
+    date: '2026-05-22'
+    access: full
+    locator: Section 'AI in CAS', Bourke quotes on variances and dashboards
+  - ref: JOFA-CASAI-2026
+    title: Simple but effective AI use cases for CAS
+    publisher: Journal of Accountancy (AICPA & CIMA); authors Kane Polakoff and Michelle Voyer, CohnReznick
+    type: professional-body
+    url: https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/
+    date: '2026-01-01'
+    access: full
+    locator: 'Steps 3 and 6; category ''Reporting: Auto-generated monthly reporting with commentary''; category
+      ''Business insights'''
+  - ref: INTUIT-ACCTTECH-2026
+    title: 'The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future'
+    publisher: CPA Practice Advisor (reporting Intuit QuickBooks survey)
+    type: survey
+    url: https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807
+    date: '2026-07-02'
+    access: full
+    locator: Paragraphs on advisory bandwidth, integration, client trust and hiring
+  - ref: KARBON-ENGAGE-2026
+    title: AICPA & CIMA ENGAGE 2026 (curated session list, held June 8-11, 2026)
+    publisher: Karbon Magazine
+    type: conference
+    url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
+    date: '2026-05-21'
+    access: full
+    locator: Session 'The tech-enabled adviser' (Matthew Wallace, Armanino; Floriana Allen, Wiss & Company)
+  last_reviewed: '2026-10-20'
+  notes: 'Merges two candidates: AI-drafted variance commentary (C) and auto-generated reporting packages and KPI
+    dashboards (C, emerging). Bookkeeping-based reporting packages, ledger dashboards and CAS-level variance explanations
+    are in advisory-client-accounting-services-06; this entry covers the FP&A, planning-model and board-reporting
+    layer. Firm types: Forvis Mazars US (top-100, mid-market) and Armanino (described as a top-20 firm in Rillet''s
+    release) deliver Solver; Abacum and Pigment are vendors. The Forvis Mazars deck is a webinar showing a tool,
+    not a client deployment. The only figure that sounds like a measurement is anonymous and recalled, so the grade
+    is C. No named advisory firm published an override rate, edit rate or error rate for AI-drafted commentary.
+    For audit clients of SEC registrants, see the independence note in the module notes. Withum and CohnReznick
+    are top-100 firms; Armanino and Wiss appear only as ENGAGE session speakers (''The tech-enabled adviser''; session
+    title and abstract only, KARBON-ENGAGE-2026). Bourke''s statement is general advice and does not say Withum
+    measures dashboard results. The Intuit survey reports current use by unnamed firms (financial forecasting 51%
+    and real-time insights 49% among top client-service uses).'
+- id: advisory-fpa-performance-02
+  title: Machine-generated baseline forecasts (cash flow, budget, statistical and ML) inside planning software,
+    with the adviser's judgment layered on top
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - expert-judgment
+  pattern: draft-review-loop
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: in-production
+  problem: 'The vendor describes client forecasting as a weeks-long process: strategic discussion with the client,
+    then trained staff building driver-based models. Forecasts are hard to hold beyond a short horizon: in the 2026
+    FP&A Trends Survey, 44% could plan with high confidence only up to three months ahead, and confidence beyond
+    six months fell from 39% to 29%.'
+  solution: Jirav Intelligent Forecasting (JIF) uses AI and machine learning to generate a forward-looking cash-flow
+    forecast from a client's historical data. The firm then adds its own market intelligence and client knowledge
+    as further forecasts. Jirav says driver-based models built by skilled FP&A staff remain appropriate for some
+    clients. More widely, statistical and machine-learning (ML) forecasting features in planning platforms generate
+    baseline forecasts that analysts adjust; in the FP&A Trends Survey, ML use in forecasting reached 12%, the highest
+    in the survey's history, and generative AI use reached 21%.
+  outcomes:
+  - lever: growth
+    description: The owner of Practice Executive, a firm named in Jirav's release, said JIF insights 'already led
+      to a $40K engagement with one of our clients'.
+    figure: $40K engagement (one client)
+    measures: Fee of one client engagement that the firm's owner attributes to JIF-derived insights, quoted in a
+      vendor press release; no tracked metric
+    provenance: vendor-published
+    source_ref: JIRAV-JIF-2024
+  - lever: capacity
+    description: Creative Planning, named as an early adopter, 'initially included JIF for 10 clients' and increased
+      use to over 200 clients, per the release.
+    figure: 10 clients to over 200 clients
+    measures: Number of clients for which the firm used JIF, as stated in the vendor's release; the date of the
+      increase is not given
+    provenance: vendor-published
+    source_ref: JIRAV-JIF-2024
+  - lever: quality
+    description: 64% of respondents in KPMG's survey of 1,013 senior finance leaders reported stronger forecast
+      accuracy over the past year.
+    figure: 64%
+    measures: Share of senior finance leaders at organisations with revenue of at least $250M ($500M in the US)
+      reporting stronger forecast accuracy over the past year; self-reported, no measured error rate
+    provenance: self-reported
+    source_ref: KPMG-AIFINANCE-2026
+  - lever: quality
+    description: AI users scored 64% versus 35% for non-users on forecast quality in the FP&A Trends Survey, as
+      presented in the webinar.
+    figure: 64% versus 35%
+    measures: Forecast quality, as presented in the webinar; the definition is not stated in the transcript and
+      the report cautions the association does not show AI causes the difference
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPAWEBINAR-2026
+  - lever: quality
+    description: Financial forecasting and insight generation were among the lowest-rated AI use cases in Gartner's
+      March 2026 survey of 204 finance leaders.
+    figure: none (ranking only)
+    measures: Ratings of realized versus expected value by AI use case; no percentage published for these use cases
+    provenance: independent
+    source_ref: GARTNER-AIREPORTCARD-2026
+  prerequisites:
+  - Several periods of clean historical ledger data in the client's accounting system
+  - A planning-software subscription (Jirav is CPA.com's preferred planning partner per the release)
+  - A CAS or advisory team able to add client-specific forecasts
+  - Data quality (36% in KPMG's survey call it both the top barrier and opportunity)
+  - Back-testing against manual forecasts
+  risks_and_guardrails:
+  - No accuracy, back-test or error figure for JIF was published in the sources read.
+  - The vendor itself says some clients still need driver-based models built by skilled staff (JIRAV-JIF-2024, section
+    'Customizable and Ready for Growth').
+  - KPMG found 71% of banking leaders reported moderate or significant forecast-accuracy gains against 44% in healthcare,
+    which it attributes to data foundations (KPMG-AIFINANCE-2026).
+  - The two 64% figures measure different things in different surveys and should not be combined.
+  human_checkpoints:
+  - Advisor reviews the machine forecast and layers on firm and client knowledge before presenting it
+  - Analysts review and adjust machine baselines
+  - Forecast error is tracked against actuals
+  role_evolution: Jirav's CEO says the tool lets firms scale advisory services without increasing headcount; this
+    is a vendor statement (JIRAV-JIF-2024, 'Scaling Advisory Services Without Adding Staff'). Gartner recommends
+    upskilling FP&A analysts into citizen data scientists and adding AI product managers and knowledge engineers
+    (GARTNER-FPALEADER-2026, Priority 3).
+  evidence_grade: B
+  sources:
+  - ref: JIRAV-JIF-2024
+    title: Accounting Firms Accelerate Growth with AI-powered Jirav Intelligent Forecasting (JIF)
+    publisher: Jirav
+    type: vendor
+    url: https://jirav.com/press-releases/jirav-artificial-intelligence-transforms-cas-practices
+    date: '2024-10-03'
+    access: full
+    locator: Paragraph quoting Andrew Tucker (Practice Executive); paragraph on Creative Planning (Chris Gallo);
+      section 'Customizable and Ready for Growth'
+  - ref: JIRAV-CEO-2024
+    title: Jirav Announces Michael Morrison as CEO and Launches New Artificial Intelligence Forecasting Product
+    publisher: Jirav (Business Wire, via Silicon UK)
+    type: vendor
+    url: https://www.silicon.co.uk/press-release/jirav-announces-michael-morrison-as-ceo-and-launches-new-artificial-intelligence-forecasting-product
+    date: '2024-09-17'
+    access: full
+    locator: Paragraph describing JIF as an AI product that instantaneously creates a forward-looking cash flow
+      forecast
+  - ref: INTUIT-ACCTTECH-2026
+    title: 'The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future'
+    publisher: CPA Practice Advisor (reporting Intuit QuickBooks survey)
+    type: survey
+    url: https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807
+    date: '2026-07-02'
+    access: full
+    locator: 'Paragraph on AI adoption: financial forecasting named by 51% as a top client-service use'
+  - ref: KPMG-AIFINANCE-2026
+    title: 'AI adoption in finance doubles, but assurance readiness determines who wins (2026 Global AI in Finance:
+      The Decision Advantage)'
+    publisher: KPMG International
+    type: survey
+    url: https://kpmg.com/xx/en/media/press-releases/2026/05/ai-adoption-in-finance-doubles-but-assurance-readiness-determines-who-wins.html
+    date: '2026-05-11'
+    access: full
+    locator: Key findings; section 'AI improves financial judgment, but sector gaps persist'; 'About Global AI in
+      Finance'
+  - ref: ONESTREAM-FPAWEBINAR-2026
+    title: '2026 FP&A trends: How AI is testing the foundations of Finance (webinar page with full transcript)'
+    publisher: OneStream and FP&A Trends Group
+    type: conference
+    url: https://www.onestream.com/resources/2026-fp-and-a-trends-replay-webinar/
+    date: '2026-07-09'
+    access: full
+    locator: 'Transcript: ''Forecast quality, 64% versus 35%''; ML 12% and generative AI 21%'
+  - ref: ONESTREAM-FPATRENDS-2026
+    title: 'The Readiness Gap: New 10th Annual FP&A Trends Survey Reveals AI Is Outpacing FP&A''s Foundations'
+    publisher: OneStream (survey by FP&A Trends Group, sponsored by OneStream)
+    type: survey
+    url: https://www.onestream.com/blog/the-readiness-gap-new-10th-annual-fp-and-a-trends-survey-reveals-ai-is-outpacing-fp-and-a-s-foundations/
+    date: '2026-07-08'
+    access: full
+    locator: Sections 'The business wants FP&A to see further ahead' and 'Where AI fits in'
+  - ref: GARTNER-AIREPORTCARD-2026
+    title: Gartner Says CFOs Must Stop Mistaking Finance AI Deployment for Value Creation
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation
+    date: '2026-05-28'
+    access: full
+    locator: Paragraph 'Report Card Shows Progress and Value Gaps'
+  - ref: GARTNER-FPALEADER-2026
+    title: 2026 FP&A Leader Agenda
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/finance/trends/fpa-leader-agenda/unlocked
+    date: '2026-05-13'
+    access: full
+    locator: Priority 2 (84% deploying, 4% scaling) and Priority 3
+  last_reviewed: '2026-10-20'
+  notes: 'Merges two candidates that describe the same change, a machine baseline forecast that a person adjusts:
+    Jirav Intelligent Forecasting in CAS and advisory firms (B, tagged process) and ML forecasting in planning platforms
+    (C, step). Change scope is set to step because one step, building the baseline, changes while driver-based models
+    and the client discussion stay (Jirav says some clients still need driver-based models). The CAS 13-week cash-flow
+    forecast from ledger data is in advisory-client-accounting-services-07; this entry covers the planning-software
+    forecast. Firm type: small and mid-size CAS firms; their ranks were not checked. Vendor: Jirav. Grade B, not
+    A: the figures are quotes and counts in a vendor press release, not a tracked metric reported by the firm. Both
+    sources are 2024, older than the 18-month window, and no later follow-up was found. The Intuit survey shows
+    financial forecasting among the most common client-service uses of AI (51% of respondents in a 725-person sample
+    of US accounting and bookkeeping professionals; the article does not state the denominator for the use list),
+    but names no firms. On the ML candidate: No named organisation and no measured forecast error. Evidence is survey
+    self-report from KPMG (Big Four; the survey covers large organisations, not the middle market) and a sponsored
+    vendor survey. Gartner''s FP&A page says 84% of finance teams are deploying AI and only 4% are scaling it across
+    the function; the page does not state the sample for that pair of figures. Maturity is piloting because Gartner''s
+    pair of figures describes mostly early deployment.'
+- id: advisory-fpa-performance-03
+  title: Continuous, driver-based planning with AI-assisted scenarios replaces the annual budget cycle
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - expert-judgment
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Planning horizons are shrinking and scenario work is slow. In the 2026 FP&A Trends Survey, 44% of organisations
+    could plan with high confidence only up to three months ahead, and only 19% of FP&A teams could run a scenario
+    in real time or within one day.
+  solution: Firms and vendors pitch rolling, driver-based forecasts that update as the business changes, with what-if
+    scenarios on pricing, headcount, demand and investment (RSM and Abacum), continuous scenario-based forecasting
+    with AI-enabled insights and governance (Grant Thornton webcast, August 20, 2026), and trigger-based adaptive
+    scenario planning (Gartner). Abacum's release describes goal-seeking such as 'How do we reach $125M without
+    adding headcount?'.
+  outcomes:
+  - lever: speed
+    description: 'Baseline, not an outcome: only 19% of FP&A teams can run a scenario in real time or within a single
+      day.'
+    figure: 19%
+    measures: Share of FP&A teams in the 2026 FP&A Trends Survey (475 respondents, 52 countries; sponsored by OneStream)
+      that can run a scenario in real time or within a single day
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPATRENDS-2026
+  prerequisites:
+  - Driver-based models (19% use mature models that automatically identify and apply drivers; 40% still use basic
+    or non-driver approaches, per the webinar)
+  - Integrated financial and operational planning (10% fully integrate them)
+  - Timely data (11% have real-time or near-real-time access to critical data)
+  risks_and_guardrails:
+  - OneStream's presenter says AI compounds an existing advantage and does not create one, since AI users were already
+    strong on data and connected planning (ONESTREAM-FPAWEBINAR-2026).
+  - Gartner says traditional scenario planning relies on static assumptions and over-weights internal drivers (GARTNER-TALENT-2026).
+  human_checkpoints:
+  - Finance leaders set the trigger thresholds and contingency actions
+  - Advisors challenge assumptions before scenarios go to management
+  role_evolution: Gartner expects finance teams to shift from control and business-partnering roles toward digitally
+    skilled 'catalysts' who build tools and manage AI-driven workflows (GARTNER-TALENT-2026). A Top 20 firm's (Aprio)
+    client accounting and advisory manager posting expects budgets, 13-week cash flow models and scenario analyses
+    built with AI-enabled templates and workflows (APRIO-JOB-2026).
+  evidence_grade: C
+  sources:
+  - ref: ONESTREAM-FPATRENDS-2026
+    title: 'The Readiness Gap: New 10th Annual FP&A Trends Survey Reveals AI Is Outpacing FP&A''s Foundations'
+    publisher: OneStream (survey by FP&A Trends Group, sponsored by OneStream)
+    type: survey
+    url: https://www.onestream.com/blog/the-readiness-gap-new-10th-annual-fp-and-a-trends-survey-reveals-ai-is-outpacing-fp-and-a-s-foundations/
+    date: '2026-07-08'
+    access: full
+    locator: Sections 'The business wants FP&A to see further ahead' and 'Where AI fits in'
+  - ref: ONESTREAM-FPAWEBINAR-2026
+    title: '2026 FP&A trends: How AI is testing the foundations of Finance (webinar page with full transcript)'
+    publisher: OneStream and FP&A Trends Group
+    type: conference
+    url: https://www.onestream.com/resources/2026-fp-and-a-trends-replay-webinar/
+    date: '2026-07-09'
+    access: full
+    locator: Transcript segments on driver-based models and integrated planning; audience poll on where AI has the
+      strongest potential value in FP&A (29% simulation of scenarios)
+  - ref: RSM-ABACUM-2026
+    title: AI native financial planning and analysis, delivered by RSM (Abacum solutions)
+    publisher: RSM US LLP
+    type: firm
+    url: https://rsmus.com/services/digital-transformation/abacum-solutions.html
+    date: '2026-09-30'
+    access: full
+    locator: Section 'Continuous planning and forecasting'
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullet 'Scenario Intelligence'
+  - ref: GT-FORECASTWEBCAST-2026
+    title: 'Modern forecasting for CFOs: AI-enabled, continuous, and decision-ready (webcast)'
+    publisher: Grant Thornton Advisors LLC
+    type: firm
+    url: https://www.grantthornton.com/events/advisory/2026/08-20-modern-forecasting-for-cfos
+    date: '2026-08-20'
+    access: full
+    locator: Webcast description and learning objectives (broadcast August 20, 2026)
+  - ref: GARTNER-TALENT-2026
+    title: Gartner Survey Reveals Acquiring and Developing AI and Digital Talent Is CFOs' Top Near-Term Challenge
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-03-23-gartner-survey-reveals-acquiring-and-developing-ai-and-digital-talent-is-cfos-top-near-term-challenge
+    date: '2026-03-23'
+    access: full
+    locator: Paragraph on adaptive scenario planning; paragraph on Finance 2030 workforce shifts
+  - ref: KPMG-WEBCASTS-2026
+    title: 'CFO webcast series (includes ''The Future of FP&A: From Forecasting to Value Steering'', July 29, 2026)'
+    publisher: KPMG US
+    type: firm
+    url: https://kpmg.com/us/en/webcasts/cfo-webcast-series.html
+    date: '2026-07-29'
+    access: full
+    locator: 'Listing for July 29, 2026: The Future of FP&A: From Forecasting to Value Steering'
+  - ref: APRIO-JOB-2026
+    title: Accounting Manager, Client Accounting & Advisory Services (Aprio, listed on Built In NYC)
+    publisher: Aprio via Built In NYC
+    type: job-posting
+    url: https://www.builtinnyc.com/job/accounting-manager-client-accounting-advisory-services/11189037
+    date: '2026-09-15'
+    access: full
+    locator: Responsibilities 'Financial Modeling & FP&A'
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: RSM and Grant Thornton Advisors (large firm; the landscape file describes it as backed by
+    New Mountain Capital, which was not re-verified here), KPMG (Big Four); Abacum and OneStream are vendors. These
+    are pitches, webcast descriptions and survey baselines; no named firm reported a planning-cycle result. The
+    poll result (29% of webinar attendees chose simulation of scenarios as the strongest potential value from AI
+    in FP&A, ahead of 27% for insight into drivers, 21% for automated reporting and commentary and 19% for better
+    forecasts) is from an audience poll, not a survey sample. Pattern ''other'': continuous, trigger-based scenario
+    planning on a driver-based model; a candidate new pattern (''scenario-simulation''). The Aprio posting is routed
+    from the client-accounting-services research.'
+- id: advisory-fpa-performance-04
+  title: Agents collect budget inputs, route approvals and consolidate submissions
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - coordination-scheduling
+  - data-reporting
+  pattern: intake-triage
+  ladder: automate
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Armanino's white paper describes budgets emailed as spreadsheets to dozens of people, with divisions
+    adding lines that break links, and consolidation that takes manual effort and lacks an audit trail and role-based
+    access.
+  solution: Abacum says its workflow layer automates budget input collection, approval routing and cross-team collaboration.
+    Armanino pitches software-driven FP&A transformation to replace the emailed-spreadsheet process.
+  outcomes:
+  - lever: speed
+    description: none published
+    figure: none
+    measures: No results for automated budget collection were published
+    provenance: vendor-published
+    source_ref: ABACUM-INTELLIGENCE-2026
+  prerequisites:
+  - Standard chart of accounts and dimensions across entities
+  - Roles and permissions for contributors and approvers
+  risks_and_guardrails:
+  - Armanino notes the manual process lacks audit trail and role-based access; a replacement needs to keep both
+    (ARMANINO-FPAROADMAP-2025).
+  human_checkpoints:
+  - Approvers sign off submissions
+  - Finance reviews consolidated budget before release
+  role_evolution: The sources do not describe role effects.
+  evidence_grade: C
+  sources:
+  - ref: ARMANINO-FPAROADMAP-2025
+    title: 'FP&A Transformation: How to Evolve Your Financial Planning & Analysis'
+    publisher: Armanino Advisory LLC
+    type: firm
+    url: https://www.armanino.com/white-papers/fpa-transformation-roadmap/
+    date: '2025-06-30'
+    access: full
+    locator: Section 'How Did FP&A Become So Complex?', paragraphs on the budgeting process
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullet 'Workflow Intelligence'
+  - ref: RILLET-SERIESB-2025
+    title: Rillet raises $70M Series B from Andreessen Horowitz and ICONIQ
+    publisher: Rillet
+    type: vendor
+    url: https://rillet.com/blog/fundraise-announcement/
+    date: '2025-08-06'
+    access: full
+    locator: Paragraph naming Armanino (top 20) as a partner
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: Armanino (described as top 20 in Rillet''s release), vendor Abacum. Much of the described
+    workflow automation is conventional planning-platform functionality; the AI part is Abacum''s claim that agents
+    run it.'
+- id: advisory-fpa-performance-05
+  title: Natural-language reporting, document search and document-analysis agents inside the planning platform
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - research-synthesis
+  pattern: grounded-knowledge-assistant
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: piloting
+  problem: 'Per OneStream''s account of Cox Enterprises: manual friction in finance, ad hoc reports built by hand,
+    answers buried in documentation, and contracts reviewed line by line.'
+  solution: 'Three agents in the planning platform: a finance analyst agent turns natural-language requests into
+    governed reports; a search analyst agent returns cited answers from approved finance documentation; a deep analysis
+    agent reads and structures large documents such as contract batches. Abacum and Pigment market similar natural-language
+    interfaces to business users.'
+  outcomes:
+  - lever: speed
+    description: Time per ad hoc report fell from 10 minutes to one minute.
+    figure: 90% reduction
+    measures: Time per ad hoc report before and after, as presented by OneStream's product marketing lead for Cox
+      during a private preview; method not stated
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPAWEBINAR-2026
+  - lever: speed
+    description: Time per document lookup fell from eight minutes to 30 seconds.
+    figure: 94% reduction
+    measures: Time per lookup of approved finance documentation, before and after, as presented by OneStream; method
+      not stated
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPAWEBINAR-2026
+  - lever: speed
+    description: Before, a contract batch (agreements of 2 to 30 pages each) took almost half an hour to 10 hours;
+      the presenter reports a 67% to 98% reduction in time after.
+    figure: 67% to 98% reduction
+    measures: Time per contract batch before and after, as presented by OneStream; the transcript wording on the
+      after-time is unclear and the range is as stated by the presenter
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPAWEBINAR-2026
+  prerequisites:
+  - Cox already had actuals, plans and consolidations in one platform
+  - Cross-functional discovery of pain points, with use cases ranked by impact
+  - Success criteria set up front (accuracy, efficiency, trust by design); the presenter describes a six-month process
+  risks_and_guardrails:
+  - In the FP&A Trends poll, data quality was the single largest barrier to deploying AI agents (35% per the webinar)
+    (ONESTREAM-FPAWEBINAR-2026).
+  - The presenter says agents showed their thought process and linked sources, which built trust with Cox's finance
+    team (ONESTREAM-FPAWEBINAR-2026).
+  human_checkpoints:
+  - Users can inspect the sources and steps the agent used before relying on an answer
+  role_evolution: OneStream says the agents free finance staff for insight work; a vendor statement (ONESTREAM-FPAWEBINAR-2026).
+    Pigment's page quotes an FP&A director at Uberall expecting the tool to reduce time spent answering simple stakeholder
+    questions (PIGMENT-AI-2026).
+  evidence_grade: B
+  sources:
+  - ref: ONESTREAM-FPAWEBINAR-2026
+    title: '2026 FP&A trends: How AI is testing the foundations of Finance (webinar page with full transcript)'
+    publisher: OneStream and FP&A Trends Group
+    type: conference
+    url: https://www.onestream.com/resources/2026-fp-and-a-trends-replay-webinar/
+    date: '2026-07-09'
+    access: full
+    locator: Transcript, the Cox Enterprises segment (before-and-after figures and the six-month discovery process)
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullets 'Narrative Intelligence' and 'Workflow Intelligence'
+  - ref: PIGMENT-AI-2026
+    title: 'Introducing Pigment AI: Smarter Planning Tools'
+    publisher: Pigment
+    type: vendor
+    url: https://www.pigment.com/blog/ai-launch
+    date: '2026-09-03'
+    access: full
+    locator: Key takeaways; quote from Eda Karael, FP&A Director, Uberall
+  last_reviewed: '2026-10-20'
+  notes: This is an in-house deployment at a very large private company ($23B revenue per the presenter) on a vendor
+    platform, not an advisory-firm engagement. Evidence is adjacent to the module, so the grade is capped at B.
+    The figures are vendor-published and the method is not shown, so they do not meet the grade A rule. Abacum separately
+    says 60% of its customers use its AI layer daily and that there were 10,000+ agent interactions in Q1 2026;
+    these are unnamed-customer vendor claims and are not used as outcomes. Advisory firms (RSM, CFGI, Armanino)
+    sell the implementation of such platforms; see advisory-fpa-performance-10.
+- id: advisory-fpa-performance-06
+  title: Governed planning data exposed to general-purpose AI assistants through MCP connectors
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - software-systems
+  pattern: grounded-knowledge-assistant
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: Business users wait in the finance queue for answers, and finance staff already use general-purpose assistants
+    outside governed data.
+  solution: Abacum says its workflow layer extends to Claude, ChatGPT and Slack through MCP, so users get governed
+    financial context in tools they already use. Xero integrated Anthropic's Claude into its product on May 12,
+    2026 per Accountex coverage. Karbon's Byron Patrick ran an ENGAGE session on building automations live with
+    Claude Code, and the Accounting Technology Lab hosts describe a Copilot agent demo showing access to Claude
+    and OpenAI models.
+  outcomes:
+  - lever: experience
+    description: none published
+    figure: none
+    measures: No customer results for MCP-connected finance assistants were found
+    provenance: vendor-published
+    source_ref: ABACUM-INTELLIGENCE-2026
+  prerequisites:
+  - Permissions that carry through to the assistant
+  - A governed data model to ground answers
+  risks_and_guardrails:
+  - Pigment says customers choose which blocks and metrics its AI can access, permissions are enforced and customer
+    data is excluded from model training (PIGMENT-AI-2026).
+  - Three in five surveyed accountants say clients ask for proof of AI data protection always or frequently (INTUIT-ACCTTECH-2026).
+  human_checkpoints:
+  - Users validate answers against the governed model before use in decisions
+  role_evolution: The sources do not describe role effects.
+  evidence_grade: C
+  sources:
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullet 'Workflow Intelligence'; paragraph on MCP integration
+  - ref: ACCOUNTEX-2026
+    title: 'Accountex London 2026: product roundup'
+    publisher: Financial Accountant (IFA)
+    type: press
+    url: https://financialaccountant.co.uk/blog/accountex-london-2026-product-roundup/
+    date: '2026-05-19'
+    access: full
+    locator: Paragraph on Xero's Claude integration (launched 12 May)
+  - ref: KARBON-ENGAGE-2026
+    title: AICPA & CIMA ENGAGE 2026 (curated session list, held June 8-11, 2026)
+    publisher: Karbon Magazine
+    type: conference
+    url: https://karbonhq.com/resources/aicpa-cima-engage-2026/
+    date: '2026-05-21'
+    access: full
+    locator: Session 'Building automations live' (Byron Patrick, Karbon)
+  - ref: CPAPA-TECHLAB-2026
+    title: Thought Leader & 40 Under 40 AICPA Think Tank - Accounting Technology Lab Podcast - July 2026
+    publisher: CPA Practice Advisor
+    type: podcast
+    url: https://www.cpapracticeadvisor.com/podcasts/thought-leader-40-under-40-aicpa-think-tank-accounting-technology-lab-podcast-july-2026/
+    date: '2026-07-01'
+    access: full
+    locator: Transcript paragraph on the Copilot agent demonstration
+  - ref: PIGMENT-AI-2026
+    title: 'Introducing Pigment AI: Smarter Planning Tools'
+    publisher: Pigment
+    type: vendor
+    url: https://www.pigment.com/blog/ai-launch
+    date: '2026-09-03'
+    access: full
+    locator: Security and privacy bullet
+  - ref: INTUIT-ACCTTECH-2026
+    title: 'The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future'
+    publisher: CPA Practice Advisor (reporting Intuit QuickBooks survey)
+    type: survey
+    url: https://cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807
+    date: '2026-07-02'
+    access: full
+    locator: Paragraph on clients asking for proof of AI data protection
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: vendors (Abacum, Xero, Pigment, Karbon) and a conference session; no advisory firm named as
+    deploying MCP-connected planning data. Announced only.'
+- id: advisory-fpa-performance-07
+  title: Planning models built and changed in plain language, with agents cascading structural changes
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - software-systems
+  pattern: bulk-transformation
+  ladder: augment
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Building and changing multidimensional planning models normally needs specialist administrators or implementation
+    consultants.
+  solution: Abacum says its Modeling Intelligence lets finance teams build and modify models in plain language,
+    with agents handling structural changes such as adding entities, currencies and product lines and cascading
+    updates without breaking downstream reports. RSM's Abacum page says models can be built quickly without specialist
+    admins while keeping transparency and auditability.
+  outcomes:
+  - lever: capacity
+    description: none published
+    figure: none
+    measures: 'Not applicable: product descriptions only; no customer result for model building was published'
+    provenance: vendor-published
+    source_ref: ABACUM-INTELLIGENCE-2026
+  prerequisites:
+  - A governed model structure and clear dimension design
+  - Reviewer able to inspect changes the agent makes
+  risks_and_guardrails:
+  - In a 2026 working paper, three frontier LLMs correctly solved 63, 58 and 42 of 100 synthetic leveraged buyout
+    modelling cases, and accuracy fell as structure grew more complex; the author says none should be relied on
+    without deterministic verification (SSRN-VIDAL-2026). This is an adjacent task (LBO models) and not planning-model
+    building.
+  - Daily finance work is only as good as the model logic, so a change log and reviewer sign-off matter more than
+    speed (practitioner view in CPAPA-AGENTSCLOSE-2026, controls 2 and 3).
+  human_checkpoints:
+  - Reviewer inspects structural changes and reconciles outputs to the prior model before release
+  role_evolution: RSM's page says models can be built without specialist admins (RSM-ABACUM-2026). The sources show
+    no measured effect on implementation consultants or model administrators.
+  evidence_grade: C
+  sources:
+  - ref: ABACUM-INTELLIGENCE-2026
+    title: Abacum Rethinks AI for Finance with the Launch of Abacum Intelligence, a Platform-Wide Intelligence Layer
+    publisher: Abacum
+    type: vendor
+    url: https://abacum.ai/newsroom/abacum-rethinks-ai-for-finance-with-the-launch-of-abacum-intelligence-a-platform-wide-intelligence-layer
+    date: '2026-04-09'
+    access: full
+    locator: Bullet 'Modeling Intelligence'
+  - ref: RSM-ABACUM-2026
+    title: AI native financial planning and analysis, delivered by RSM (Abacum solutions)
+    publisher: RSM US LLP
+    type: firm
+    url: https://rsmus.com/services/digital-transformation/abacum-solutions.html
+    date: '2026-09-30'
+    access: full
+    locator: Paragraph on building multidimensional models without specialist admins
+  - ref: SSRN-VIDAL-2026
+    title: Analysis of Frontier Large Language Models (LLMs) in Financial Leveraged Buyout (LBO) Modeling (Vidal)
+    publisher: SSRN working paper
+    type: academic
+    url: https://doi.org/10.2139/ssrn.7273418
+    date: '2026'
+    access: full
+    locator: Abstract (63, 58 and 42 of 100 cases; decline with complexity)
+  - ref: CPAPA-AGENTSCLOSE-2026
+    title: 'Before You Let the Agents Run the Close: Five Controls to Put in Writing First'
+    publisher: CPA Practice Advisor (author Anthony L. Fulmore Sr., Texas A&M University-Central Texas)
+    type: press
+    url: https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/
+    date: '2026-08-13'
+    access: full
+    locator: Controls 2 and 3
+  last_reviewed: '2026-10-20'
+  notes: 'Firm type: vendor (Abacum), delivered through RSM, Armanino and CFGI as in advisory-fpa-performance-10.
+    Pigment''s Modeler Agent was seen only in a search summary and is not used. The LBO study is routed to transactions
+    as its main home and is cited here only as quality evidence for LLM model building.'
+- id: advisory-fpa-performance-08
+  title: AI-assisted opportunity analysis for performance improvement (pricing, cost and driver diagnosis)
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - research-synthesis
+  - expert-judgment
+  pattern: research-brief
+  ladder: augment
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: emerging
+  problem: Gartner says the best AI opportunities are material business problems that are hard to diagnose with
+    traditional methods, such as identifying drivers and decision points, and that many initiatives still aim at
+    incremental improvements.
+  solution: LLMs and analytics are used to find and size improvement opportunities. In KPMG's article, an automotive
+    company used AI and large language models to scrape pricing data and optimise its parts business. EXL's profile
+    in ISG's report cites cost command centers and contract intelligence for CFO decision support.
+  outcomes:
+  - lever: cost
+    description: An unnamed automotive company's use of AI and LLMs to scrape pricing data and optimise the parts
+      business saved $100 million 'this year alone', according to KPMG's article.
+    figure: $100 million
+    measures: Savings attributed by a KPMG article to one use of AI at an unnamed automotive company in the current
+      year; method and baseline not given
+    provenance: self-reported
+    source_ref: KPMG-CFOREMODEL-2026
+  prerequisites:
+  - Access to pricing, cost and operational data outside the ledger
+  - Business owners who will act on findings
+  risks_and_guardrails:
+  - The savings figure comes from an anonymous company and cannot be checked.
+  - In Gartner's March 2026 survey, forecasting and insight generation were among the lowest-rated AI use cases
+    (GARTNER-AIREPORTCARD-2026).
+  human_checkpoints:
+  - Business and finance leaders validate opportunities before commitments
+  role_evolution: Gartner's FP&A agenda says AI is shifting the finance team pyramid into a diamond by eliminating
+    entry-level roles, and recommends upskilling analysts into 'citizen data scientists' who build models (GARTNER-FPALEADER-2026,
+    Priority 3).
+  evidence_grade: C
+  sources:
+  - ref: GARTNER-FPALEADER-2026
+    title: 2026 FP&A Leader Agenda
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/finance/trends/fpa-leader-agenda/unlocked
+    date: '2026-05-13'
+    access: full
+    locator: Priority 2 ('diagnosis-resistant' problems)
+  - ref: GARTNER-AIREPORTCARD-2026
+    title: Gartner Says CFOs Must Stop Mistaking Finance AI Deployment for Value Creation
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation
+    date: '2026-05-28'
+    access: full
+    locator: Paragraph 'Report Card Shows Progress and Value Gaps' and the Steecker quote on material business problems
+  - ref: KPMG-CFOREMODEL-2026
+    title: CFOs remodel the finance function for an AI-driven world
+    publisher: KPMG US
+    type: firm
+    url: https://kpmg.com/us/en/articles/2026/cfo-remodel-finance-function-ai-driven-world.html
+    date: '2026-09-29'
+    access: full
+    locator: Paragraph on the automotive company's ten big bets and the parts-business pricing example
+  - ref: ISG-FAOFPA-2026
+    title: 'ISG Provider Lens Finance and Accounting Outsourcing (FAO) Services 2026: Financial Planning & Analysis
+      quadrant report'
+    publisher: Information Services Group (ISG), copy hosted by PwC
+    type: survey
+    url: https://www.pwc.com/gx/en/about/analyst-relations/financial-planning-and-analysis.pdf
+    date: 2026-09
+    access: full
+    locator: EXL profile
+  - ref: SPGLOBAL-PE-2026
+    title: S&P Global Market Intelligence's 2026 Private Equity Survey Shows Fundraising Confidence Rising as Managers
+      Pivot to Operational Value
+    publisher: S&P Global Market Intelligence
+    type: survey
+    url: https://press.spglobal.com/2026-04-13-S-P-Global-Market-Intelligences-2026-Private-Equity-Survey-Shows-Fundraising-Confidence-Rising-as-Managers-Pivot-to-Operational-Value
+    date: '2026-04-13'
+    access: full
+    locator: Key findings, 'Operational focus intensifies' bullet (operational improvements, 72%, the top value
+      creation lever)
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: Gartner (analyst), KPMG (Big Four) relaying a client account, EXL (outsourcing provider).
+    No mid-market advisory firm described a performance-improvement engagement that used AI, so this is the thinnest
+    entry in the module. The practitioner discussion is real (Gartner, KPMG) but the figure is anonymous. Demand
+    context routed from the transactions research: in S&P Global''s 2026 PE survey, operational improvements (72%)
+    rank as GPs'' top value creation lever; the figure is not about AI (SPGLOBAL-PE-2026).'
+- id: advisory-fpa-performance-09
+  title: AI readiness and data-foundation assessment, with a prioritised use-case roadmap, for client finance functions
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - expert-judgment
+  - research-synthesis
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: personal-assistant
+  maturity: announced
+  problem: Mid-market clients use AI widely but have not made it work at scale, and the barriers named most often
+    are data quality and integration rather than the models.
+  solution: 'Advisory teams run a structured diagnostic before building: activity surveys, stakeholder interviews,
+    a maturity assessment, benchmarking and prioritised recommendations (CFGI''s five-week Phase 0), AI strategy
+    assessments that align leaders on vision, rank finance use cases and define a phased roadmap (CFGI''s job posting),
+    data-readiness checks before implementation (CohnReznick) and maturity modelling to find where AI helps most
+    (Cherry Bekaert, 2024). Firms are also buying AI implementation capacity for middle-market clients: Citrin Cooperman
+    (No. 16 on Accounting Today''s 2026 Top 100, PE-backed) acquired the AI consulting firm Rosetree Solutions,
+    effective 2026-10-01, to give its middle-market clients access to AI implementation that was mostly only available
+    to large enterprises.'
+  outcomes:
+  - lever: quality
+    description: 'No firm-side outcome was published. Demand-side context: among organisations reporting moderate
+      or limited AI pilot success, 53% named data quality issues and 47% integration challenges as leading barriers
+      to scaling AI.'
+    figure: 53% and 47%
+    measures: Share of respondents with moderate or limited pilot success naming each barrier, in an RSM survey
+      of 1,030 senior business leaders; the subgroup size is not stated in the release
+    provenance: self-reported
+    source_ref: RSM-MMAI-2026
+  - lever: risk
+    description: In the FP&A Trends poll, data quality was the number one barrier to deploying AI agents.
+    figure: 35%
+    measures: Share of FP&A professionals naming data quality as the single largest barrier to deploying AI agents,
+      as read out in the webinar; poll size not stated
+    provenance: vendor-published
+    source_ref: ONESTREAM-FPAWEBINAR-2026
+  prerequisites:
+  - Access to client process data and time-allocation information
+  - Client sponsor willing to act on findings
+  risks_and_guardrails:
+  - OneStream's presenter warns that putting AI on poor data 'automates the mess faster'; this is a vendor view
+    (ONESTREAM-FPAWEBINAR-2026).
+  - Only 19% of surveyed FP&A teams say they have formal AI governance in place and ready to scale (ONESTREAM-FPAWEBINAR-2026).
+  human_checkpoints:
+  - Executive working sessions agree vision and priorities
+  - Findings reviewed with finance leadership before any build
+  role_evolution: CFGI's posting seeks a managing director with 12 or more years of experience to lead AI strategy
+    assessments, build proprietary finance tools and accelerators, and take them to market (CFGI-JOB-2026).
+  evidence_grade: C
+  sources:
+  - ref: CFGI-FINEFFECTIVENESS-2026
+    title: Finance Effectiveness (Assess, Design, Build, Optimize)
+    publisher: CFGI
+    type: firm
+    url: https://www.cfgi.com/finance-effectiveness
+    date: '2026'
+    access: full
+    locator: Sections on AI Assessment & Design and the five-week Phase 0 assessment
+  - ref: CFGI-JOB-2026
+    title: Data and AI - Managing Director (job posting, Finance Effectiveness practice)
+    publisher: CFGI (listing on Built In Austin)
+    type: job-posting
+    url: https://www.builtinaustin.com/job/data-and-ai-managing-director/9295428
+    date: '2026-06-03'
+    access: full
+    locator: Role description paragraphs 1-3 and qualifications
+  - ref: COHNREZNICK-WORKDAY-2026
+    title: Workday Alliance | CohnReznick Digital Advisor
+    publisher: CohnReznick
+    type: firm
+    url: https://www.cohnreznick.com/services/advisory/digital/digital-alliance-workday-adaptive-planning
+    date: '2026'
+    access: full
+    locator: Data-readiness paragraph
+  - ref: CBH-FINANCEFUTURE-2024
+    title: 'AI and Advanced Analytics: The Finance Function of the Future'
+    publisher: Cherry Bekaert
+    type: firm
+    url: https://www.cbh.com/insights/articles/ai-and-advanced-analytics-the-finance-function-of-the-future/
+    date: '2024-06-10'
+    access: full
+    locator: Sections 'AI and Data Readiness' and maturity modelling
+  - ref: RSM-MMAI-2026
+    title: 'RSM Survey: The Middle Market Has Embraced AI. Now Comes the Hard Part.'
+    publisher: RSM US LLP
+    type: survey
+    url: https://rsmus.com/newsroom/2026/rsm-survey-middle-market-embraced-ai-now-comes-hard-part.html
+    date: '2026-07-21'
+    access: full
+    locator: Section 'AI Passed the Test'
+  - ref: KAUFMANROSSIN-AIMIDMARKET-2026
+    title: 94% of mid-market companies use generative AI, but few have what it takes to scale (The State of Artificial
+      Intelligence in the Mid-Market)
+    publisher: Kaufman Rossin
+    type: survey
+    url: https://kaufmanrossin.com/news/ai-in-the-middle-market-press-release/
+    date: '2026-05-14'
+    access: full
+    locator: Paragraphs 1-3 (94%, 83%, 2%)
+  - ref: ONESTREAM-FPAWEBINAR-2026
+    title: '2026 FP&A trends: How AI is testing the foundations of Finance (webinar page with full transcript)'
+    publisher: OneStream and FP&A Trends Group
+    type: conference
+    url: https://www.onestream.com/resources/2026-fp-and-a-trends-replay-webinar/
+    date: '2026-07-09'
+    access: full
+    locator: Transcript segments on data quality and the AI-readiness poll
+  - ref: GARTNER-TALENT-2026
+    title: Gartner Survey Reveals Acquiring and Developing AI and Digital Talent Is CFOs' Top Near-Term Challenge
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-03-23-gartner-survey-reveals-acquiring-and-developing-ai-and-digital-talent-is-cfos-top-near-term-challenge
+    date: '2026-03-23'
+    access: full
+    locator: Paragraph on 'The CFO's Guide to Building a Finance AI Roadmap'
+  - ref: ACCTODAY-ROSETREE-2026
+    title: Citrin Cooperman acquires Rosetree Solutions
+    publisher: Accounting Today
+    type: press
+    url: https://www.accountingtoday.com/news/citrin-cooperman-acquires-rosetree-solutions
+    date: '2026-10-06'
+    access: full
+    locator: Opening paragraphs (acquisition effective Oct. 1; middle-market access to AI implementation); paragraph
+      on the 2026 Top 100 rank
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: CFGI (PE-backed advisory platform; says it is free of auditor independence constraints), CohnReznick
+    and Cherry Bekaert (top-100 firms), RSM and Kaufman Rossin (top-50 CPA and advisory firm per its release) as
+    survey publishers. Kaufman Rossin''s mid-market survey (100 decision-makers, December 2025) found 94% use generative
+    AI, 83% had moved to deliberate trials or embedded processes and 2% had operationalised AI at scale. The CFGI
+    posting was open from 2026-06-03 to 2026-06-12 per its structured data, so it shows a practice being built,
+    not delivered engagements. Pattern ''other'': diagnostic and roadmap work (activity surveys, interviews, maturity
+    scoring, prioritised use cases); a candidate new pattern (''readiness-diagnostic''). The Rosetree deal is general
+    AI implementation, not FP&A-specific; it is routed from the client-accounting-services research. CAS teams advising
+    clients on their own AI adoption (tool choice, data protection, dashboards) are in advisory-client-accounting-services-20.'
+- id: advisory-fpa-performance-10
+  title: Advisory firms add AI-native or AI-embedded planning platforms to their FP&A implementation and managed-service
+    portfolio
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - software-systems
+  - expert-judgment
+  pattern: other
+  ladder: augment
+  change_scope: process
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Planning, budgeting and forecasting still run on spreadsheets and legacy tools. Armanino's white paper
+    describes budgets emailed as spreadsheets to dozens of people, then consolidated by hand, with no audit trail
+    or role-based access.
+  solution: 'Firms pair a planning platform that has AI built in with their own FP&A and CPM implementation practice.
+    Examples in the sources: RSM with Abacum (alliance announced 2026-06-22), CFGI with Abacum (announced 2026-09-05),
+    Armanino listing Abacum and Solver, CohnReznick with Workday Adaptive Planning, and Forvis Mazars with Solver
+    on Business Central. Offers cover continuous forecasting, scenario analysis, rolling plans and support for training
+    and change management.'
+  outcomes:
+  - lever: speed
+    description: CohnReznick's page says to 'accelerate planning and reporting cycle times by 50-70%' with Workday
+      Adaptive Planning solutions.
+    figure: 50-70%
+    measures: Reduction in planning and reporting cycle times that a firm service page attributes to a vendor's
+      platform; baseline, sample and method not stated
+    provenance: vendor-published
+    source_ref: COHNREZNICK-WORKDAY-2026
+  prerequisites:
+  - Data readiness assessed before implementation (CohnReznick says it evaluates whether data is accurate, accessible
+    and structured first)
+  - Integration with the client's ERP or ledger
+  - Testing, training and change management (RSM)
+  risks_and_guardrails:
+  - An analyst report says AI messaging is becoming similar across providers and proof of adoption and realised
+    outcomes will become the differentiator (ISG-FAOFPA-2026, Executive Summary, paragraph beginning 'Providers
+    are adapting their portfolios').
+  - In-house finance teams in a March 2026 Gartner survey of 204 leaders said AI implementation was slower than
+    expected in 2025 (63%) (GARTNER-AIREPORTCARD-2026).
+  - 'Independence: for audit clients of SEC registrants, Regulation S-X lists financial information systems design
+    and implementation, and management functions, among services that impair independence unless the results will
+    not be subject to audit procedures (SEC-RULE2-01-2026). CFGI says it is free of auditor independence constraints
+    (CFGI-FINEFFECTIVENESS-2026).'
+  human_checkpoints:
+  - Advisors design and validate the model structure
+  - Users are trained to interpret AI-supported insights and apply professional judgment (CohnReznick)
+  role_evolution: RSM's Megan Riley frames transformation as people, process and technology working together, and
+    says RSM sees strong demand for AI-enabled FP&A (ABACUM-RSM-2026). Abacum says it expects practitioners to stay
+    in the loop, supported by the technology rather than replaced; a vendor statement (ABACUM-CFGI-2026).
+  evidence_grade: C
+  sources:
+  - ref: ABACUM-RSM-2026
+    title: Abacum and RSM Announce Strategic Alliance to Deliver AI-Native FP&A to High-Growth Finance Teams
+    publisher: Abacum
+    type: vendor
+    url: https://www.abacum.ai/blog/abacum-and-rsm-announce-strategic-alliance-to-deliver-ai-native-fp-a-to-high-growth-finance-teams
+    date: '2026-06-22'
+    access: full
+    locator: Announcement paragraphs; quote from Megan Riley, Partner, Data & Digital Services, RSM
+  - ref: RSM-ABACUM-2026
+    title: AI native financial planning and analysis, delivered by RSM (Abacum solutions)
+    publisher: RSM US LLP
+    type: firm
+    url: https://rsmus.com/services/digital-transformation/abacum-solutions.html
+    date: '2026-09-30'
+    access: full
+    locator: Sections 'AI-native planning at scale', 'Continuous planning and forecasting'; closing list of benefits
+  - ref: ABACUM-CFGI-2026
+    title: Abacum and CFGI Partner to Bring AI-Native FP&A to Strategic Advisory
+    publisher: Abacum
+    type: vendor
+    url: https://www.abacum.ai/blog/abacum-and-cfgi-partner-to-bring-ai-native-fp-a-to-strategic-advisory
+    date: '2026-09-05'
+    access: full
+    locator: Paragraphs on CFGI's AI-Enabled Finance practice and the planning-layer alliance; 'About CFGI'
+  - ref: CFGI-FINEFFECTIVENESS-2026
+    title: Finance Effectiveness (Assess, Design, Build, Optimize)
+    publisher: CFGI
+    type: firm
+    url: https://www.cfgi.com/finance-effectiveness
+    date: '2026'
+    access: full
+    locator: '''No audit restrictions'' line; lifecycle and Phase 0 description'
+  - ref: ARMANINO-FPA-2026
+    title: Financial Planning & Analysis Services
+    publisher: Armanino
+    type: firm
+    url: https://www.armanino.com/software/financial-planning-analysis/
+    date: '2026'
+    access: full
+    locator: Section 'Financial Planning & Analysis Solutions' (Abacum)
+  - ref: ARMANINO-FPAROADMAP-2025
+    title: 'FP&A Transformation: How to Evolve Your Financial Planning & Analysis'
+    publisher: Armanino Advisory LLC
+    type: firm
+    url: https://www.armanino.com/white-papers/fpa-transformation-roadmap/
+    date: '2025-06-30'
+    access: full
+    locator: Section 'How Did FP&A Become So Complex?'
+  - ref: COHNREZNICK-WORKDAY-2026
+    title: Workday Alliance | CohnReznick Digital Advisor
+    publisher: CohnReznick
+    type: firm
+    url: https://www.cohnreznick.com/services/advisory/digital/digital-alliance-workday-adaptive-planning
+    date: '2026'
+    access: full
+    locator: Section 'AI Planning with Workday Adaptive Planning'; data-readiness section
+  - ref: FORVIS-SOLVER-2026
+    title: Elevate Financial Reporting in Business Central With Solver (webinar slide deck)
+    publisher: Forvis Mazars US
+    type: firm
+    url: https://www.forvismazars.us/getattachment/b4a1114e-4173-4e2a-b632-6b1b4aecea5d/Elevate-Financial-Reporting-in-Business-Central-With-Solver.pdf
+    date: '2026-07-23'
+    access: full
+    locator: Objectives and 'What is Solver?' slides
+  - ref: ISG-FAOFPA-2026
+    title: 'ISG Provider Lens Finance and Accounting Outsourcing (FAO) Services 2026: Financial Planning & Analysis
+      quadrant report'
+    publisher: Information Services Group (ISG), copy hosted by PwC
+    type: survey
+    url: https://www.pwc.com/gx/en/about/analyst-relations/financial-planning-and-analysis.pdf
+    date: 2026-09
+    access: full
+    locator: Executive Summary, paragraph beginning 'Providers are adapting their portfolios'
+  - ref: GARTNER-AIREPORTCARD-2026
+    title: Gartner Says CFOs Must Stop Mistaking Finance AI Deployment for Value Creation
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-05-28-gartner-says-cfos-must-stop-mistaking-finance-ai-deployment-for-value-creation
+    date: '2026-05-28'
+    access: full
+    locator: Paragraph 'Report Card Shows Progress and Value Gaps'
+  - ref: SEC-RULE2-01-2026
+    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    publisher: U.S. Securities and Exchange Commission (via eCFR)
+    type: regulator
+    url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
+    date: '2026-10-01'
+    access: full
+    locator: (c)(4)(ii) and (c)(4)(vi)
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: RSM, CohnReznick, Forvis Mazars (FY2025 revenue $2.24B per its deck) and Armanino are large
+    mid-market or top-100 firms; CFGI is described by Abacum as a portfolio company of Carlyle and CVC (PE-backed
+    advisory platform that does not audit); Abacum, Workday and Solver are vendors. These are announced alliances
+    and service pages. No client outcome, implementation time or forecast accuracy figure was published by any of
+    the firms. Reg S-X applies to auditors of SEC registrants; the AICPA rules for private-company audit clients
+    were not checked. Pattern ''other'': planning-platform selection, implementation and change management sold
+    as a service. Before offering platform design or implementation to the firm''s own audit client, see the permissibility
+    gate in assurance-acceptance-independence-15.'
+- id: advisory-fpa-performance-11
+  title: Advisory partners enable and govern native AI agents inside mid-market ERP (Sage Intacct, Microsoft, NetSuite)
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - software-systems
+  - coordination-scheduling
+  pattern: other
+  ladder: assist
+  change_scope: step
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: ERP vendors now ship AI assistants and agents on a quarterly cadence. Clients need someone to decide
+    which to turn on, configure roles and permissions, and connect them to workflows.
+  solution: Partner firms run release webinars and write-ups and offer agent services. Armanino's August 12, 2026
+    deck says Sage Intacct's Finance Intelligence Agent is being rolled out to all customers 'this summer and fall'
+    (phased early adopter) and describes a marketplace of Sage-certified partner agents with an admin console and
+    role-based access. EisnerAmper's write-up covers the same release. Rand Group says it helps enable native agents
+    in Microsoft, NetSuite and Sage products and build custom agents.
+  outcomes:
+  - lever: capacity
+    description: none published for the advisory service
+    figure: none
+    measures: 'Not applicable: the sources describe product releases and service offers, with no client results'
+    provenance: vendor-published
+    source_ref: ARMANINO-INTACCTR3-2026
+  prerequisites:
+  - Admin configuration of each agent in the client's environment
+  - Roles and permissions that limit who can call an agent
+  - Data quality in the ledger (the agents answer from it)
+  risks_and_guardrails:
+  - GRF CPAs & Advisors says the strongest parts of Intacct's 2026 Release 2 are usability gains in day-to-day work
+    rather than headline AI alone (GRF-INTACCTR2-2026).
+  - Many agentic close tools are subservice organisations in SOC terms, and a practitioner article says AICPA guidance
+    on AI in SOC reporting had not yet been published, so existing SOC reports may be silent on AI components (CPAPA-AGENTSCLOSE-2026,
+    control 4). The Journal of Accountancy reported on 2026-10-13 that the AICPA had issued guidance earlier in
+    2026 on service organizations' AI use in SOC 1 and SOC 2 engagements, so that statement appears superseded (JOFA-PRACTICEAID-2026).
+  human_checkpoints:
+  - Administrator enables each agent and sets role access
+  - Marketplace agents are certified by the vendor through a technical, security and legal process (Armanino deck)
+  role_evolution: Partner firms now brief clients on agent releases (ARMANINO-INTACCTR3-2026; EISNERAMPER-INTACCTR3-2026)
+    and offer to enable native agents and build custom ones (RAND-AGENTS-2026). The sources show the offer, not
+    a measured change in partner roles.
+  evidence_grade: C
+  sources:
+  - ref: ARMANINO-INTACCTR3-2026
+    title: 'Sage Intacct 2026 Release 3: Latest Updates (webinar deck)'
+    publisher: Armanino
+    type: firm
+    url: https://www.armanino.com/-/media/pdf/webinars/2026/sage-intacct-2026-r3-release-overview.pdf
+    date: '2026-08-12'
+    access: full
+    locator: 'Slides ''Sage AI and Automation'': Finance Intelligent Agent phased early adopter; ''Discover and
+      Use AI Agents in Sage Intacct'''
+  - ref: EISNERAMPER-INTACCTR3-2026
+    title: Sage Intacct 2026 R3 Release Delivers New AI and AP Enhancements
+    publisher: EisnerAmper
+    type: firm
+    url: https://www.eisneramper.com/insights/sage-intacct-insights/sage-intacct-2026-r3-release-ai-ap-enhancements-0826/
+    date: '2026-08-26'
+    access: full
+    locator: Section 'Discover and Use AI Agents in Sage Intacct'
+  - ref: GRF-INTACCTR2-2026
+    title: 'Sage Intacct 2026 Release 2: AI and Real-Time Finance Insights'
+    publisher: GRF CPAs & Advisors
+    type: firm
+    url: https://www.grfcpa.com/resource/sage-intacct-2026-release-2-ai-and-real-time-finance-insights/
+    date: '2026-06-11'
+    access: full
+    locator: Opening paragraph
+  - ref: RAND-AGENTS-2026
+    title: AI agent services for ERP and CRM
+    publisher: Rand Group
+    type: firm
+    url: https://www.randgroup.com/software-engineering/ai-machine-learning/ai-agents/
+    date: '2026-09-09'
+    access: full
+    locator: Opening paragraphs
+  - ref: GARTNER-TECHPORTFOLIO-2026
+    title: Gartner Predicts by 2029, CFOs Who Implement Strategic AI Deployment Will Add 10 Margin Points of Growth
+    publisher: Gartner
+    type: survey
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-04-28-gartnerpredicts-by-2029-cfos-who-implement-strategic-ai-deploymnt-will-add-10-margin-points-of-growth
+    date: '2026-04-28'
+    access: full
+    locator: Paragraphs on cloud ERP and embedded AI
+  - ref: ACCOUNTEX-2026
+    title: 'Accountex London 2026: product roundup'
+    publisher: Financial Accountant (IFA)
+    type: press
+    url: https://financialaccountant.co.uk/blog/accountex-london-2026-product-roundup/
+    date: '2026-05-19'
+    access: full
+    locator: Paragraph on Sage Intacct Advisory update
+  - ref: CPAPA-AGENTSCLOSE-2026
+    title: 'Before You Let the Agents Run the Close: Five Controls to Put in Writing First'
+    publisher: CPA Practice Advisor (author Anthony L. Fulmore Sr., Texas A&M University-Central Texas)
+    type: press
+    url: https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/
+    date: '2026-08-13'
+    access: full
+    locator: Control 4
+  - ref: RILLET-SERIESB-2025
+    title: Rillet raises $70M Series B from Andreessen Horowitz and ICONIQ
+    publisher: Rillet
+    type: vendor
+    url: https://rillet.com/blog/fundraise-announcement/
+    date: '2025-08-06'
+    access: full
+    locator: Paragraph naming Armanino (top 20) as a partner
+  - ref: JOFA-PRACTICEAID-2026
+    title: 'AI and the audit: AICPA publishes practice aid to assist auditors'
+    publisher: Journal of Accountancy (AICPA & CIMA)
+    type: professional-body
+    url: https://www.journalofaccountancy.com/news/2026/oct/ai-and-the-audit-aicpa-publishes-practice-aid-to-assist-auditors/
+    date: '2026-10-13'
+    access: full
+    locator: Closing paragraph (AICPA guidance earlier in 2026 on service organizations' AI use in SOC 1 and SOC
+      2 engagements)
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: Armanino (described as top 20 in Rillet''s release), EisnerAmper and GRF CPAs & Advisors (US
+    accounting and advisory firms; ranks not checked), Rand Group (technology consultancy); Sage is the vendor.
+    Gartner''s April 2026 release (314 organisations, September-October 2025) says cloud ERP adoption rose 7% year
+    over year and embedded AI is gaining momentum in cloud ERP; Gartner''s figures describe in-house technology
+    portfolios, not advisory work. A search-result summary of Sage''s releases was not verified against Sage''s
+    own pages. Pattern ''other'': enabling, permissioning and connecting vendor-shipped ERP agents for a client.'
+- id: advisory-fpa-performance-12
+  title: Partner-delivered implementation of AI-native ERP for mid-market finance teams
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - software-systems
+  - coordination-scheduling
+  pattern: other
+  ladder: augment
+  change_scope: model
+  runtime_class: workflow-automation
+  maturity: announced
+  problem: Rillet says legacy ERPs act as 'dumb databases' where the real work happens in spreadsheets, and that
+    traditional implementations take about 12 months.
+  solution: An AI-native ERP applies AI inside the general ledger, with native integrations feeding structured data.
+    Rillet says accounting firms are strategic partners, naming Armanino (top 20) and Wiss (top 50). Rillet's release
+    says customers report implementing in as little as 4 weeks. Rillet's 2026 postings include a partnerships lead
+    aimed at the Big 4, top firms, boutiques and fractional CFOs, and deployment leads for accounting solutions.
+  outcomes:
+  - lever: speed
+    description: Rillet says customers consistently report cutting close times to a few days and implementing as
+      fast as 4 weeks versus the 12 months it says traditional systems need.
+    figure: 4 weeks versus 12 months
+    measures: Implementation time as reported by the vendor, comparing its fastest customers with a vendor-stated
+      traditional baseline; no sample, definition or named firm-led project
+    provenance: vendor-published
+    source_ref: RILLET-SERIESB-2025
+  prerequisites:
+  - Standard integrations to the client's source systems
+  - A client finance team willing to leave spreadsheet-based processes
+  risks_and_guardrails:
+  - More than a quarter of organisations in Panorama's 2026 ERP study exceeded project budgets, with additional
+    technology needs the leading cause; Panorama is an ERP consultancy and the full report is gated (PANORAMA-ERP-2026).
+  - Vendor release; a single-vendor source. Customer closes and implementation times could not be checked.
+  human_checkpoints:
+  - Implementation partner designs the chart of accounts, integrations and controls
+  role_evolution: Rillet says its leaders are former EY, PwC and CPA practitioners and its customers run lean teams;
+    the release gives no data on partner staffing (RILLET-SERIESB-2025). Rillet is hiring deployment leads and a
+    partnerships lead for firms and fractional CFOs (RILLET-JOBS-2026).
+  evidence_grade: C
+  sources:
+  - ref: RILLET-SERIESB-2025
+    title: Rillet raises $70M Series B from Andreessen Horowitz and ICONIQ
+    publisher: Rillet
+    type: vendor
+    url: https://rillet.com/blog/fundraise-announcement/
+    date: '2025-08-06'
+    access: full
+    locator: Paragraphs on customer close times and implementation; paragraph on partnerships with Armanino and
+      Wiss
+  - ref: PANORAMA-ERP-2026
+    title: Panorama Consulting Group Releases Latest Study of ERP Implementation Outcomes Across the Globe (2026
+      ERP Report)
+    publisher: Panorama Consulting Group
+    type: survey
+    url: https://panorama-consulting.com/panorama-consulting-group-releases-latest-study-of-erp-implementation-outcomes-across-the-globe
+    date: '2026-03-04'
+    access: full
+    locator: Paragraph 'The report also revealed that more than a quarter of organizations exceeded their project
+      budgets'
+  - ref: RILLET-JOBS-2026
+    title: 'Rillet job postings: Head of Accounting & Advisory Partnerships; Deployment Lead - Accounting Solutions'
+    publisher: Rillet (Ashby job board)
+    type: job-posting
+    url: https://jobs.ashbyhq.com/rillet/edbff973-0404-45ef-a435-164ef7955abd
+    date: '2026-09-15'
+    access: full
+    locator: Partnerships role aimed at Big 4, top firms, boutiques and fractional CFOs; deployment lead role
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: vendor (Rillet) with Armanino (top 20) and Wiss (top 50) as partners, both ranks as stated
+    by Rillet. The partnership is announced; no partner-led implementation was documented. Series B release dated
+    2025-08-06, so older than 12 months, and later status of the partnerships was not found. Change scope is model
+    because the offer replaces the incumbent ERP rather than improving one step. Pattern ''other'': partner-led
+    replacement of the incumbent ERP. The Rillet postings are routed from the client-accounting-services research
+    and show a channel being built, not delivered projects.'
+- id: advisory-fpa-performance-13
+  title: Managed FP&A delivered with agent-led forecasting and variance analysis, priced on outcomes
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - data-reporting
+  - expert-judgment
+  pattern: end-to-end-case-agent
+  ladder: delegate
+  change_scope: model
+  runtime_class: managed-agent-runtime
+  maturity: announced
+  problem: Enterprises want external help with planning, forecasting and decision support, not only transactional
+    finance, and are comfortable sourcing more of it.
+  solution: ISG's September 2026 FP&A quadrant says providers apply predictive models and GenAI to variance analysis,
+    scenario modelling, forecast generation and management reporting, with early agentic capability that gathers
+    data and flags deviations. It describes PwC's outcomes-based FP&A managed service with agent-led forecasting
+    and variance analysis, EY's multi-agent forecasting framework, Deloitte's agentic forecasting, EXL's outcome-based
+    delivery model and Sutherland's agentic CFO control tower aimed at midmarket and PE-backed enterprises.
+  outcomes:
+  - lever: speed
+    description: ISG describes EY's multi-agent forecasting framework as turning variance analysis that once took
+      thousands of hours into minutes.
+    figure: thousands of hours to minutes
+    measures: Variance analysis effort as characterised by ISG in the EY profile, from a provider-questionnaire
+      process; no client, baseline or method given
+    provenance: vendor-published
+    source_ref: ISG-FAOFPA-2026
+  prerequisites:
+  - Data foundations and a unified data layer across FP&A and controllership (ISG on PwC)
+  - Clients willing to source planning and analysis externally
+  risks_and_guardrails:
+  - 'ISG says maturity varies considerably: production implementations sit alongside early deployments, pilots and
+    demonstrations, and differentiation will depend on evidence that analytics improve forecast accuracy and decisions
+    (ISG-FAOFPA-2026, FP&A observations).'
+  - ISG lists weak data foundations and insufficient governance as risks that could slow progress (ISG-FAOFPA-2026,
+    Outlook).
+  - 'Independence: for audit clients of SEC registrants, performing decision-making, supervisory or ongoing monitoring
+    functions is listed as impairing independence (SEC-RULE2-01-2026, (c)(4)(vi)); whether a given managed FP&A
+    scope crosses that line was not analysed here.'
+  - 'Outcome-linked pricing meets a hard edge for audit clients: contingent fees on any service to an SEC issuer
+    audit client impair independence (SEC-RULE2-01-2026, (c)(5)), and the AICPA Code restricts them where the firm
+    performs an audit, review and certain other engagements (NYSSCPA-CONTFEE-2015, a 2015 description of the Code).'
+  human_checkpoints:
+  - ISG describes agentic capabilities operating under human oversight; sign-off points are not specified
+  role_evolution: ISG says consulting and accounting firms are increasing their participation in managed services,
+    which raises competition in FP&A, tax and controllership, and that experienced finance talent, industry context
+    and data foundations drive differentiation (ISG-FAOFPA-2026).
+  evidence_grade: C
+  sources:
+  - ref: ISG-FAOFPA-2026
+    title: 'ISG Provider Lens Finance and Accounting Outsourcing (FAO) Services 2026: Financial Planning & Analysis
+      quadrant report'
+    publisher: Information Services Group (ISG), copy hosted by PwC
+    type: survey
+    url: https://www.pwc.com/gx/en/about/analyst-relations/financial-planning-and-analysis.pdf
+    date: 2026-09
+    access: full
+    locator: FP&A 'Observations' paragraph; provider profiles for EY, PwC, Deloitte, EXL and Sutherland; Executive
+      Summary on portfolio boundaries; Outlook
+  - ref: SEC-RULE2-01-2026
+    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    publisher: U.S. Securities and Exchange Commission (via eCFR)
+    type: regulator
+    url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
+    date: '2026-10-01'
+    access: full
+    locator: (c)(4)(vi) and (c)(5)
+  - ref: NYSSCPA-CONTFEE-2015
+    title: 'Doing the Right Thing: When is a Contingent Fee Arrangement Considered an Act Discreditable?'
+    publisher: NYSSCPA, The Trusted Professional
+    type: professional-body
+    url: https://nysscpa.org/news/1095984-doing-the-right-thing-when-is-a-contingent-fee-arrangement-considered-an-act-discreditable-2015-01-01
+    date: '2015-01-01'
+    access: full
+    locator: Text on Section 1.510 (contingent fees proscribed where the firm performs an audit or review, certain
+      compilations or an examination of prospective financial information)
+  last_reviewed: '2026-10-20'
+  notes: 'Firm types: Big Four (PwC, EY, Deloitte), and AI-native or outsourcing providers (EXL, Sutherland, Accenture,
+    Capgemini and others in the report). Not mid-market accounting firms, apart from ISG''s remark that consulting
+    and accounting firms are increasing their managed-service role. ISG is an analyst firm; the report is a provider-customized
+    edition hosted by PwC. The outcome is a provider claim as relayed by ISG, so it cannot support a B or A grade.
+    The firm''s own outcome-based pricing is in professional-services-scoping-pricing-19 and -14.'
+- id: advisory-fpa-performance-14
+  title: 'Idea: validation, back-testing and sign-off protocol for AI-generated forecasts and commentary, sold as
+    an advisory service'
+  archetype: advisory
+  module: fpa-performance
+  function: service-delivery
+  work_types:
+  - review-assurance
+  pattern: monitor-diagnose-act
+  ladder: assist
+  change_scope: step
+  runtime_class: shared-team-skills
+  maturity: emerging
+  problem: 'Finance leaders hesitate to trust AI for mission-critical work: in a vendor survey, 75% cited lack of
+    auditability, 71% accuracy and hallucination concerns and 54% regulatory or compliance concerns.'
+  solution: 'Practitioners and standard-setters describe pieces of such a service: an inventory of agents with named
+    owners, evidence a reviewer can replay, sign-off gates scaled to risk, exception metrics with a kill threshold,
+    and a short pilot that measures time saved, added review time and errors (CPA Practice Advisor, JofA). COSO''s
+    February 2026 guidance maps generative AI capabilities, including insight generation, to its 17 control principles.
+    Grant Thornton''s August 2026 webcast covers governance for AI-enabled forecasting.'
+  outcomes:
+  - lever: risk
+    description: none published
+    figure: none
+    measures: No published results from an advisory service of this kind were found
+    provenance: self-reported
+    source_ref: COSO-GENAI-2026
+  prerequisites:
+  - A baseline of manual forecast accuracy to compare against
+  - A client willing to log AI-assisted work and review results
+  risks_and_guardrails:
+  - KPMG's survey found only 29% of organisations track where AI adoption fails (KPMG-AIFINANCE-2026).
+  - Independence implications of advisors validating a client's AI forecasts were not researched beyond the Regulation
+    S-X management-functions text (SEC-RULE2-01-2026).
+  human_checkpoints:
+  - Named owner per agent
+  - Human approval before outputs feed financial statements or board reporting
+  role_evolution: Not discussed in the sources for this service.
+  evidence_grade: D
+  sources:
+  - ref: CPAPA-AGENTSCLOSE-2026
+    title: 'Before You Let the Agents Run the Close: Five Controls to Put in Writing First'
+    publisher: CPA Practice Advisor (author Anthony L. Fulmore Sr., Texas A&M University-Central Texas)
+    type: press
+    url: https://www.cpapracticeadvisor.com/2026/08/13/before-you-let-the-agents-run-the-close-five-controls-to-put-in-writing-first/
+    date: '2026-08-13'
+    access: full
+    locator: The five controls (agent inventory, replayable evidence, sign-off gates, third-party assurance, monitoring
+      and exit)
+  - ref: COSO-GENAI-2026
+    title: Achieving Effective Internal Control Over Generative AI (COSO publication and press release page)
+    publisher: COSO
+    type: standard-setter
+    url: https://www.coso.org/generative-ai
+    date: '2026-02-23'
+    access: full
+    locator: Press release paragraphs 1-2
+  - ref: DELOITTE-DART-COSO-2026
+    title: 'Heads Up: COSO Releases Publication on Internal Controls Related to Generative AI'
+    publisher: Deloitte DART
+    type: firm
+    url: https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/coso-internal-controls-generative-ai
+    date: '2026-04-03'
+    access: full
+    locator: Paragraph 1 (capability-based view, 17 principles, insight generation)
+  - ref: JOFA-CASAI-2026
+    title: Simple but effective AI use cases for CAS
+    publisher: Journal of Accountancy (AICPA & CIMA); authors Kane Polakoff and Michelle Voyer, CohnReznick
+    type: professional-body
+    url: https://www.journalofaccountancy.com/issues/2026/jan/simple-but-effective-ai-use-cases-for-cas/
+    date: '2026-01-01'
+    access: full
+    locator: Step 3 (30-to-60-day pilot measuring time saved, added review time, error reduction)
+  - ref: GT-FORECASTWEBCAST-2026
+    title: 'Modern forecasting for CFOs: AI-enabled, continuous, and decision-ready (webcast)'
+    publisher: Grant Thornton Advisors LLC
+    type: firm
+    url: https://www.grantthornton.com/events/advisory/2026/08-20-modern-forecasting-for-cfos
+    date: '2026-08-20'
+    access: full
+    locator: Learning objectives
+  - ref: CFODIVE-DATARAILS-2026
+    title: 'AI verification eats up 26% of finance teams'' workweek: Datarails'
+    publisher: CFO Dive
+    type: survey
+    url: https://www.cfodive.com/news/ai-verification-eats-26percent-finance-teams-workweek-datarails/832210/
+    date: '2026-10-06'
+    access: full
+    locator: Dive Insight (75%, 71%, 54%)
+  - ref: KPMG-AIFINANCE-2026
+    title: 'AI adoption in finance doubles, but assurance readiness determines who wins (2026 Global AI in Finance:
+      The Decision Advantage)'
+    publisher: KPMG International
+    type: survey
+    url: https://kpmg.com/xx/en/media/press-releases/2026/05/ai-adoption-in-finance-doubles-but-assurance-readiness-determines-who-wins.html
+    date: '2026-05-11'
+    access: full
+    locator: Paragraph on assurance readiness (29% track where AI fails)
+  - ref: SEC-RULE2-01-2026
+    title: 17 CFR 210.2-01 Qualifications of accountants (current eCFR text)
+    publisher: U.S. Securities and Exchange Commission (via eCFR)
+    type: regulator
+    url: https://www.ecfr.gov/current/title-17/chapter-II/part-210/section-210.2-01
+    date: '2026-10-01'
+    access: full
+    locator: (c)(4)(vi) management functions
+  last_reviewed: '2026-10-20'
+  notes: 'Idea: labelled D. Practitioners and COSO discuss the controls, but no firm was found selling forecast
+    validation as a service. Related assurance work for AI systems (AICPA and AIUC certification, Grant Thornton
+    Enterprise Assurance Services) is routed to risk-controls and the assurance archetype. Firm types: standard-setter
+    and professional-body sources only. Related entries: written controls before a client''s finance agents go live
+    (advisory-risk-controls-21, idea), the CAS control package (advisory-client-accounting-services-21, idea), and
+    the firm''s own benchmarking of AI tools (professional-services-quality-review-05).'

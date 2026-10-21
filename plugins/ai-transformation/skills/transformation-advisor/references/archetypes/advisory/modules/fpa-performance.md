@@ -40,8 +40,8 @@ client's AI are in risk-controls; the firm's own pricing and staffing are in pro
 | Scenario planning | What-if cases on price, headcount, demand, investment | expert-judgment | Only 19% of FP&A teams can run a scenario in real time or within a day [ONESTREAM-FPATRENDS-2026] |
 | Variance and flux analysis; management and board reporting | Explain movements against budget or prior period (flux analysis), write the narrative | data-reporting, document-production | 47% of time on data collection and validation, 32% on insight [ONESTREAM-FPAWEBINAR-2026] |
 | KPI views and ad hoc questions | Dashboards, answers for business users | data-reporting, client-interaction | Reports built by hand and answers buried in documentation (OneStream's account of Cox Enterprises) [ONESTREAM-FPAWEBINAR-2026] |
-| Planning-model build and change | Dimensions, entities, drivers (a driver-based model links the numbers to operating drivers such as volume or headcount) | software-systems | Model work normally needs specialist administrators [RSM-ABACUM-2026] |
-| Performance improvement | Diagnose cost, pricing, working capital and driver issues | research-synthesis, expert-judgment | Many AI initiatives still aim at incremental improvements [GARTNER-AIREPORTCARD-2026] |
+| Planning-model build and change | Dimensions, entities, drivers (a driver-based model links the numbers to operating drivers such as volume or headcount) | software-systems | Model changes have needed specialist administrators or consultants; RSM pitches building models without them [RSM-ABACUM-2026] |
+| Performance improvement | Diagnose cost, pricing, working capital and driver issues | research-synthesis, expert-judgment | Gartner says many AI initiatives still aim at incremental improvements rather than hard-to-diagnose problems [GARTNER-FPALEADER-2026; GARTNER-AIREPORTCARD-2026] |
 | Readiness, operating model and roadmap | Assess data, process and maturity; rank use cases | expert-judgment | Data quality (53%) and integration (47%) lead the barriers to scaling AI [RSM-MMAI-2026] |
 | CPM and ERP selection and implementation | Choose, integrate, train, manage change | software-systems, coordination-scheduling | More than a quarter of ERP projects exceed budget [PANORAMA-ERP-2026]; 63% of finance leaders found AI implementation slower than expected [GARTNER-AIREPORTCARD-2026] |
 | Managed or co-sourced FP&A | An outside team runs forecasting and reporting on a recurring basis | data-reporting, expert-judgment | Provider maturity varies from production to demonstrations [ISG-FAOFPA-2026] |
@@ -59,7 +59,7 @@ claims relayed by an analyst). No automate-step entry and no delegate entry at s
   cut to five reviewers [KPMG-CFOREMODEL-2026]; grade C). Bookkeeping-based packages and ledger dashboards are in
   advisory-client-accounting-services-06.
 - Improve: `#05` natural-language reporting, cited search of finance documentation and contract-reading agents in the
-  planning platform (Cox Enterprises in-house, private preview; vendor-presented 90% faster ad hoc reports; grade B).
+  planning platform (Cox Enterprises in-house, private preview; vendor-presented 90% less time per ad hoc report; grade B).
 - Improve: `#06` (assist) governed planning data reaches Claude, ChatGPT or Slack through MCP (Model Context
   Protocol, a standard way to connect AI assistants to data) (Abacum, announced; grade C).
 
@@ -84,7 +84,7 @@ claims relayed by an analyst). No automate-step entry and no delegate entry at s
 
 **Performance improvement**
 - Improve: `#08` AI and LLM analysis to find and size pricing and cost opportunities (an unnamed automotive company's
-  $100 million in KPMG's article; grade C, the thinnest entry).
+  $100 million savings in KPMG's article; grade C, the thinnest entry).
 
 **Readiness and governance**
 - Improve: `#09` (assist) readiness and data-foundation assessment with a ranked roadmap (CFGI's five-week Phase 0;
@@ -94,8 +94,8 @@ claims relayed by an analyst). No automate-step entry and no delegate entry at s
   AI forecasts sold as a service (D). Controls before a client's agents go live are advisory-risk-controls-21.
 
 **Service and operating model**
-- Reinvent: `#12` partner-led implementation of an AI-native ERP (Rillet with Armanino and Wiss; vendor claims
-  4-week implementations; grade C).
+- Reinvent: `#12` partner-led implementation of an AI-native ERP (Rillet with Armanino and Wiss; vendor says as
+  little as 4 weeks to implement; grade C).
 - Delegate and reinvent: `#13` managed FP&A with agent-led forecasting and variance analysis, priced on outcomes
   (ISG profiles of PwC, EY, Deloitte, EXL, Sutherland; grade C). Not yet evidenced at mid-market accounting firms.
 
@@ -177,7 +177,7 @@ to board pack; time to run a scenario.
 - **Internal control over generative AI.** COSO's 2026-02-23 publication maps AI capabilities, including insight
   generation, to the 17 principles of its framework [COSO-GENAI-2026; DELOITTE-DART-COSO-2026].
 - **Practitioner control list.** Agent inventory with a named owner, replayable evidence, sign-off gates scaled to
-  materiality, third-party assurance read closely, monitoring with an exit threshold [CPAPA-AGENTSCLOSE-2026]. Its
+  risk, third-party assurance read closely, monitoring with an exit threshold [CPAPA-AGENTSCLOSE-2026]. Its
   statement that AICPA had no SOC guidance on AI appears superseded [JOFA-PRACTICEAID-2026].
 - **Deliverable quality.** Deloitte Australia agreed to repay the final instalment of a roughly AU$440,000 contract
   after a report contained incorrect references [CITYAM-DELOITTE-2025]. See professional-services-quality-review-04.
@@ -245,7 +245,8 @@ to board pack; time to run a scenario.
   readiness work first (`#09`) and the platform second (`#10`).
 - **"We can't audit what the AI did."** 75% of surveyed CFOs cite lack of auditability, 71% accuracy and 54%
   compliance [CFODIVE-DATARAILS-2026]. Response: replayable evidence and risk-scaled sign-off gates
-  [CPAPA-AGENTSCLOSE-2026]; agents that show sources and steps built trust at Cox (`#05`).
+  [CPAPA-AGENTSCLOSE-2026]; agents that show their sources and steps built trust at Cox, per the vendor's
+  presenter (`#05`).
 - **"Checking AI eats the savings."** A vendor survey puts verification at 26% of work time [CFODIVE-DATARAILS-2026].
   Response: measure added review time in the pilot, not only time saved [JOFA-CASAI-2026].
 - **"The vendor numbers are hype."** Correct: 50-70%, 4 weeks and 90% have no published method. GRF says the strongest
@@ -253,8 +254,9 @@ to board pack; time to run a scenario.
   claims on the client's own data before quoting them [CPAPA-AGENTSCLOSE-2026].
 - **"Clients will do it themselves."** 40% of AI-spend increasers take budget from external consulting; the survey
   does not say what replaces it [RSM-MMAI-2026]. A consultant warns firms that stay out of the advisory conversation
-  risk clients self-preparing with AI [ACCTODAY-CATALYST-2026]; a fractional CFO says some clients probably will use
-  AI for the accounting, though fewer than he expected so far [CFODIVE-FRACTIONAL-2026].
+  risk clients self-preparing with AI [ACCTODAY-CATALYST-2026]; a fractional CFO says some clients could do the
+  accounting with AI and some probably will, though he has been surprised how little they have so far
+  [CFODIVE-FRACTIONAL-2026].
 - **"Bigger firms will come down market."** Withum's Jim Bourke says they already are, "leveraging AI to do work
   faster" [ACCTODAY-CASKEYS-2026]. Response: the mid-market alliances in `#10` are the same move from the other side.
 - **"Independence rules make this unsellable."** Only for the firm's own audit clients, and only for listed services
@@ -269,7 +271,6 @@ to board pack; time to run a scenario.
 Full details for keys used in the use cases are in the YAML. Keys cited above that are not in the YAML:
 
 - ACCTODAY-AQUILA-2026: "Will AI replace accounting firms in the small biz market?" (opinion, August Aquila), Accounting Today, 2026-08-24, https://www.accountingtoday.com/opinion/will-ai-replace-accounting-firms-in-the-small-biz-market
-- ACCTODAY-CASKEYS-2026: "CAS delivers 'the keys to the kingdom'", Accounting Today, 2026-05-22, https://www.accountingtoday.com/news/cas-delivers-the-keys-to-the-kingdom (also in the YAML)
 - ACCTODAY-CATALYST-2026: "AI - the catalyst and solution to advisory", Accounting Today, 2026-07-13, https://www.accountingtoday.com/news/ai-the-catalyst-and-solution-to-advisory
 - CFODIVE-FRACTIONAL-2026: "Fractional CFOs see demand surge in AI age", CFO Dive, 2026-08-06, https://www.cfodive.com/news/fractional-cfos-see-demand-surge-ai-age/827264/
 - CPACOM-DCPA-2026: Digital CPA Conference 2026 (event page), CPA.com, scheduled 2026-12-06 to 09, https://www.cpa.com/dcpa25
