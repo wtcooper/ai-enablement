@@ -34,7 +34,7 @@ for this engagement type: grant compliance, federal scrutiny of audit quality, a
 | Step | What happens | Work type | Typical pain |
 |---|---|---|---|
 | Planning and risk assessment | Understand the entity and its grants; assess risk of material misstatement and, for single audits, risk of material noncompliance by compliance requirement | research-synthesis, expert-judgment | The 2026 GAS/SA Guide (the AICPA audit guide for Yellow Book and single audits) asks for more granular risk of material noncompliance, for fraud and error separately [BDO-GASSA-2026] |
-| Major programs and Compliance Supplement | Pick programs and requirements to test, using OMB's annual Compliance Supplement | expert-judgment, research-synthesis | 2026 Supplement unreleased as of 2026-10-08; draft adds five and removes nine programs, flags Medicaid, CCDF and TANF as higher risk, and requires FFATA (subaward reporting) procedures for all major programs [GAQC-DEV-2026] |
+| Major programs and Compliance Supplement | Pick programs and requirements to test, using OMB's annual Compliance Supplement | expert-judgment, research-synthesis | 2026 Supplement unreleased as of September 2026; draft adds five and removes nine programs, flags Medicaid, CCDF and TANF as higher risk, and requires FFATA (subaward reporting) procedures for all major programs [GAQC-DEV-2026] |
 | SEFA | Obtain and test the schedule of expenditures of federal awards (SEFA, the list of federal awards and spending) | data-reporting, review-assurance | Must match awards, ledger, pass-through amounts and periods of performance; errors surface during the audit (`#08`) |
 | Nonprofit financial statement audit | Contributions, conditional grants, net assets with donor restrictions, functional expenses, estimates, minutes and agreements [ARMANINO-NFPAI-2026] | review-assurance, expert-judgment | Long unstructured documents; vague donor letters |
 | Controls and compliance testing | Control and compliance sampling to the guide's minimum sample sizes; deeper IT application testing [BDO-GASSA-2026] | review-assurance, data-reporting | Larger samples, more documentation and requests, possibly higher fees [BDO-GASSA-2026] |
@@ -44,10 +44,11 @@ for this engagement type: grant compliance, federal scrutiny of audit quality, a
 | Form 990, 990-T and UBI | Organizer, public support test, program descriptions, schedules, compensation; for 990-T, identify unrelated activities, separate them ("silos") and use losses [TAX990-2026; AICPA-NFPWORKSHOPS-2026] | data-reporting, document-production | No AI-specific process material found |
 
 Cross-cutting pains: rules in flux (Compliance Supplement delay; a Uniform Guidance rewrite proposed 2026-05-29 with
-no significant change to Subpart F, the audit requirements, per the AICPA's Governmental Audit Quality Center, GAQC)
-[GAQC-DEV-2026; FR-OMB-2026]; small firms citing a shrinking talent pool, clients that cannot afford high fees, and no
-backfilling [TR-NPCASE-2026]; auditees where 60% of nonprofits surveyed rely on one full-time person for all financial
-management and accounting (the release headline says 65%) [MOMENTIVE-2026]; and federal scrutiny of audit quality
+no significant change to Subpart F, the audit requirements, per the AICPA's Governmental Audit Quality Center, GAQC,
+and barred from finalization through 2026-12-11) [GAQC-DEV-2026; FR-OMB-2026; OMB-UG-2026]; small firms citing a
+shrinking talent pool and clients that cannot afford high fees [TR-NPCASE-2026]; auditees where 60% of nonprofits
+surveyed rely on one full-time person for all financial management and accounting (the release subtitle says 65%,
+for "all financial operations") [MOMENTIVE-2026]; and federal scrutiny of audit quality
 (HHS's rigor review; an HHS-led review under the Financial Management Risk Reduction Act with an OMB report to
 Congress due December 2027) [HHS-AERO-2026; GAQC-DEV-2026].
 
@@ -72,9 +73,9 @@ Reuters CoCounsel and Audit Intelligence) plus one regional firm on DataSnipper.
 **Testing**
 - Automate: `#06` population analysis, risk-based sample selection and linked documentation at three small local
   nonprofit-focused firms; the auditor sets strata and approves. See `assurance-substantive-testing-08` and `-09`.
-- Improve (process): `#07` reusable Excel agents run a single-audit grant compliance test (63 items in about an hour)
-  at a regional firm with about 70 school-district clients; a local firm cut one grant engagement's workpaper
-  preparation from 80 to 25 hours (text recognition, not an agent). The only named AI use on single-audit compliance testing.
+- Improve (process): `#07` Excel agents run a single-audit grant compliance test (63 items in about an hour) and
+  payroll sampling at a regional firm with government clients; a local firm cut one grant consultancy engagement's
+  workpaper preparation from 80 to 25 hours (text recognition, not an agent). The only named AI use on single-audit testing.
 - Idea: `#08` SEFA review against awards and the ledger (a top-100 firm's prompt for client finance teams).
 
 **Completion and reporting**
@@ -89,8 +90,8 @@ Reuters CoCounsel and Audit Intelligence) plus one regional firm on DataSnipper.
 **Counterparties and government audit offices**
 - Improve (process): `#13` HHS AERO: AI analysis of at least five years of single audit information across all 50
   states, plus a review of audit rigor. Auditors' past reports are now data for agency analytics.
-- Improve (process): `#14` state audit offices (North Carolina, Washington) apply AI to large spending datasets under
-  written policies, with people verifying results.
+- Improve (process): `#14` North Carolina's state auditor applies AI to large spending datasets, with people verifying
+  results; Washington's publishes a governed-use AI policy.
 
 **Form 990 and exempt-organization tax**
 - Improve (vendor claim): `#15` AI error check and chatbot inside one 990 e-file product, the only AI feature found.
@@ -102,9 +103,8 @@ subrecipient monitoring, procurement and suspension checks, cash management), ma
 drafting, or 990 and 990-T preparation. A vendor lists Single Audit content with the OMB Compliance Supplement in its
 Guided Assurance methodology; its AI role is not stated [TR-GAFEATURES-2026].
 
-**Reinvent signal (no entry; recorded with quality-management).** Oath, a venture-backed AI-native audit firm, lists
-non-profits among its client types and says it verifies every record on an ongoing basis; no client or result is
-published [OATH-SITE-2026].
+**Reinvent signal (no entry; see `assurance-quality-management-28`).** Oath, an AI-native audit firm, lists non-profits
+among its client types and says it verifies every record on an ongoing basis; no client or result is published [OATH-2026].
 
 ## 4. Interview probes
 
@@ -116,7 +116,7 @@ Ask in the person's setting: engagement partner, single-audit or nonprofit pract
 2. **"Which documents do staff read end to end: minutes, grant agreements, donor letters, bond indentures? Which would
    you hand to a tool first, and who re-reads the output?"** Reveals the quickest start (`#01`, `#02`) and the review step.
 3. **"Did you use the vendor's stock templates or tune them? What went wrong first?"** Reveals prompt maturity; the
-   St. Pierre firm's stock minutes template did not summarize until customized.
+   St. Pierre firm said its stock minutes template was "not summarizing" and then customized it.
 4. **"HHS is analyzing five years of single audit history and reviewing rigor. What does your file show about how
    the work was evidenced, and would AI use be visible on it?"** Reveals exposure to `#13` and documentation readiness
    (`assurance-quality-management-23`).
@@ -145,7 +145,7 @@ reviewer-selected, so rates are not comparable across societies.
 - Minnesota and North Dakota 2025: single audits 3 of 15 [MNCPA-PEERREVIEW-2025].
 - Oklahoma, South Dakota, Kansas 2025: OMB single audits 12 of 40; other Government Auditing Standards 18 of 43
   [OKSCPA-PEERREVIEW-2025].
-- Oregon, Hawaii and territories 2025: OMB single audits 4 of 15 [ORSCPA-PEERREVIEW-2025].
+- Oregon, Hawaii, Guam and Northern Mariana Islands 2025: OMB single audits 4 of 15 [OSCPA-PR-2026].
 
 **Firm figures (all recollections or vendor summaries; none tracked).**
 - Sample selection about three hours to about five minutes, The Forde Firm (vendor tile: "95% faster") (`#06`); a
@@ -178,7 +178,7 @@ Compliance Supplement; repeat findings and late submissions among clients (the d
 management, and AI-related guidance" only as a watch item [GAQC-DEV-2026].
 - **Yellow Book quality management.** Under the 2024 revision a firm had to design its system by 2025-12-15 and
   complete its initial evaluation by 2026-12-15; the GAO FAQ does not mention AI [GAO-YBFAQ-2025].
-- **AICPA practice aid (2026-10-13).** Nonauthoritative. Firm quality management for AI tools, team competence,
+- **AICPA practice aid (2026-10-13).** Firm quality management for AI tools, team competence,
   planning AI use per engagement, partner responsibility for approved tools; the auditor stays responsible for
   supervision, review and conclusions; more risk and evidence material to come [AICPA-PA-2026].
 - **2026 GAS/SA Guide.** More granular risk of material noncompliance, revised minimum sample sizes, deeper IT testing
@@ -187,14 +187,14 @@ management, and AI-related guidance" only as a watch item [GAQC-DEV-2026].
   debarment [HHS-AERO-2026]. GAO says AI for fraud and improper payments needs reliable data and a human in the loop
   [GAO-FRAUDAI-2026].
 - **Tax side.** Circular 230 duties (due diligence 10.22, fees 10.27(a), competence 10.35, procedures 10.36) apply to AI
-  use [IRS-OPR-2026]; section 7216 consent for AI use is unresolved for 1040-series returns and nothing addresses
-  exempt-organization returns [CPAPA-SETTLE-2026]. Detail sits in [tax guardrails](../../tax/guardrails.md).
+  use [IRS-OPR-2026]; the IRS has not said whether sending return data to an AI tool is a section 7216
+  disclosure, and nothing found addresses exempt-organization returns [CPAPA-SETTLE-2026]. Detail sits in [tax guardrails](../../tax/guardrails.md).
 - **Confidentiality.** Donor, employee and grant data go to approved tools only, under a written policy [ARMANINO-NFPAI-2026].
 - **Independence (probe, not a finding).** `#08` and `#11` are client-side prompts; management owns the SEFA. No source
   discusses independence when an auditor's firm supplies such prompts; check against
   [acceptance-independence](acceptance-independence.md).
 
-**Design guardrails seen in practice**: tune templates and name the sections to read; return "N/A" rather than guess
+**Design guardrails seen in practice**: tune templates and name the sections to read; return "N/A" rather than verbose output
 [TR-STPIERRE-2026]; tie every agent result to a source snip a reviewer can open (`#07`); keep AI output as drafts
 [ARMANINO-NFPAI-2026]; have staff verify and take responsibility for AI-assisted work, as Washington's state auditor
 requires [WASAO-AIPOLICY-2026].
@@ -206,11 +206,11 @@ then auditor testing); reliance on extracted agreement terms; the opinion; signi
 ## 7. Roles and how they evolve
 
 - **Small-firm owners hold output with fewer staff.** Wells CPA reports two fewer people and the same revenue output;
-  owners describe not backfilling (self-reported, vendor-published) [TR-NPCASE-2026].
+  the vendor frames this as not backfilling departures (vendor-published) [TR-NPCASE-2026].
 - **Juniors start earlier.** The Forde Firm owner says staff engage with inherent risk by assertion without her
-  walking them through it, and act on minutes without a senior (`#01`, `#04`). The St. Pierre firm asks the tool
+  walking them through it, and that the tool lets staff "act without me having to be involved" (`#04`). The St. Pierre firm asks the tool
   instead of calling another CPA (`#05`). Citrin Cooperman's innovation leader links in-workflow reasoning to staff
-  learning (vendor-published) [CITRIN-DAS-2026].
+  learning (vendor-published) [CASEWARE-CITRIN-2026].
 - **Agents take staff tasks and some senior ones.** PB&H says its agent repeats monotonous staff tasks and also builds
   tests and checks compliance, which it called more senior-level work (`#07`).
 - **Hiring.** An Aprio posting for tax-exempt and single audit work asks for "experience with data analytics or audit
@@ -223,26 +223,26 @@ then auditor testing); reliance on extracted agreement terms; the opinion; signi
 ## 8. Frontier
 
 - **2024-02-06** EY reports IRS TE/GE plans an AI tool to screen exempt-organization referrals in fiscal 2024 (`#16`).
-  **2025-12** GAO Yellow Book quality-management FAQ; systems due by 2025-12-15 [GAO-YBFAQ-2025].
+  **2025-12-15** GAO Yellow Book quality-management FAQ; systems due that day [GAO-YBFAQ-2025].
 - **2026-05** Wolters Kluwer course "Using AI in a Government Audit" (two hours): teaching demand, not practice [WK-GOVAI-2026].
-- **2026-05-20 and 2026-06-04** Caseware Verity launch and its Agentic Pioneer Program; named customers include Plante
+- **2026-05-20 and 2026-06-04** Caseware Verity launch and its Agentic Pioneer Program; Caseware customers include Plante
   Moran, CohnReznick, Forvis Mazars, Wipfli, Citrin Cooperman, Weaver, Carr Riggs & Ingram and PKF O'Connor Davies
   (vendor list) [CASEWARE-LAUNCH-2026; CASEWARE-PIONEER-2026].
 - **2026-05-21** HHS launches AERO, AI analysis of single audit history with a review of audit rigor [HHS-AERO-2026].
-- **2026-05-29** OMB proposes a Uniform Guidance rewrite; comments closed 2026-07-13 (per a search summary)
-  [FR-OMB-2026; OMB-UG-2026].
+- **2026-05-29** OMB proposes a Uniform Guidance rewrite; comments closed 2026-07-13 [FR-OMB-2026]. **2026-09-02** a
+  continuing resolution bars OMB from finalizing it through 2026-12-11 [OMB-UG-2026].
 - **2026-06-15 to 17** AICPA Not-for-Profit Industry Conference; a vendor says AI dominated its sessions
   [AICPA-NFPCONF-2026; TAX990-NFPCONF-2026].
-- **2026-07-08 and 2026-08** North Carolina and Washington state auditors describe governed AI use (`#14`).
-  **2026-07-13 and 2026-10-08** Citrin Cooperman and PKF O'Connor Davies announce Caseware DAS Suite adoption
-  [CITRIN-DAS-2026; PKF-DAS-2026 (search-only)].
+- **2026-07-09 and 2026-08** North Carolina and Washington state auditors describe governed AI use (`#14`).
+  **2026-07-13 and 2026-10-08** Caseware announces Citrin Cooperman and PKF O'Connor Davies DAS Suite adoption
+  [CASEWARE-CITRIN-2026; CASEWARE-PKF-2026].
 - **2026-08-06** Armanino publishes AI prompts for nonprofit audit readiness, including SEFA review (`#08`, `#11`).
 - **2026-09-23** AICPA webcast "Practical AI Techniques for CPAs Serving Not-for-profits"; rebroadcast scheduled
   2026-12-18 [AICPA-NFPWEBCAST-2026].
 - **2026-10-08** GAQC: 2026 Compliance Supplement still unreleased; AI guidance only a watch item [GAQC-DEV-2026].
   **2026-10-13 / 10-15** AICPA AI practice aid; BDO on the heavier GAS/SA Guide [AICPA-PA-2026; BDO-GASSA-2026].
-- **2026-10-19 to 21** AICPA Governmental and Not-for-Profit Conference, Dallas, with an AI session by Gemifi
-  [AICPA-GOVNFP-2026; AICPA-NFPAI-2026]. Agenda not retrieved; check for recordings.
+- **2026-10-19 to 21** AICPA Governmental and Not-for-Profit Conference, Dallas, with an AI session by Gemifi's
+  cofounder [AICPA-NFPAI-2026]. Agenda not retrieved; check for recordings.
 - **Scheduled: 2026-12-15** Yellow Book initial quality-management evaluation due [GAO-YBFAQ-2025]. **2027-12** OMB
   report to Congress on the single-audit quality review [GAQC-DEV-2026]. Watch for the first peer-review or GAQC
   comment on AI-assisted single-audit workpapers (none found).
@@ -254,47 +254,46 @@ then auditor testing); reliance on extracted agreement terms; the opinion; signi
   Armanino's playbook sets out [ARMANINO-NFPAI-2026].
 - **"It makes things up."** Armanino warns of incorrect citations, facts and calculations [ARMANINO-NFPAI-2026].
   Response: use cited output, verify against the source, and tie results to source snips (`#07`); treat output as a draft.
-- **"The stock tools don't fit government work."** The St. Pierre firm agrees: the stock minutes template did not
-  summarize until customized (`#01`). Response: budget for template tuning, naming sections and "N/A" rules.
+- **"The stock tools don't fit government work."** The St. Pierre firm agrees: its stock minutes template was "not
+  summarizing" until it applied vendor prompt advice (`#01`). Response: budget for template tuning, naming sections and "N/A" rules.
 - **"Peer reviewers won't accept it."** No peer-review finding on AI exists either way. The three small firms say
   generated documentation eased peer review, and one says a peer reviewer then switched to the same vendor (`#06`,
   vendor-published). Response: the generated documentation is what a peer reviewer reads, so review it as evidence.
 - **"AI cannot audit itself."** A Prager Metis (top-100) not-for-profit partner says auditors test the information
   management gives them, whatever tool produced it [ATODAY-DAVIS-2026]. See [assurance-over-ai](assurance-over-ai.md).
-- **"The rules keep moving, so why invest now?"** True: the Supplement is late and the Uniform Guidance is being
-  rewritten [GAQC-DEV-2026; FR-OMB-2026]. Response: start with steps that do not depend on the Supplement (minutes,
+- **"The rules keep moving, so why invest now?"** True: the Supplement is late and a Uniform Guidance rewrite is
+  proposed, though barred from finalization through 2026-12-11 [GAQC-DEV-2026; OMB-UG-2026]. Response: start with steps that do not depend on the Supplement (minutes,
   agreements, tie-out, research), and recheck sampling tools against the new guide.
 - **"Agencies using AI on us is unfair."** Stakeholders have raised transparency, methodology and fairness questions
   about AERO [CBH-AERO-2026; THOMPSON-AERO-2026]. Response: HHS is reading single audit information auditors produced, and Cherry
   Bekaert and Feldesman advise grantees to fix repeat findings, timeliness and corrective action plans (`#13`).
 - **"We're too small."** The best-documented users are small local firms, one doing about 80 audits a year (`#01`,
   `#06`). Response: the three nonprofit-focused firms layered AI onto platforms they already used [TR-NPCASE-2026].
-- **"Our people lack the skills."** Gemifi's cofounder says few professionals are near the AI skill ceiling
+- **"Our people lack the skills."** Gemifi's cofounder says no one is "anywhere near the skill ceiling"
   [AICPA-NFPAI-2026]. Response: the documented small firms work through saved, shared templates (`#01`, `#09`).
 
 ## 10. Sources
 
 Full details (title, publisher, type, URL, date, access, locator) are in the YAML.
 - **In the YAML:** TR-NPCASE-2026, TR-STPIERRE-2026, TR-SCALING-2026, TR-PLANTEMORAN-2025, TR-CCAUDITPAGE-2025,
-  TR-STATE-2026, DATASNIPPER-PBH-2026, DATASNIPPER-PERRY-2025, CASEWARE-LAUNCH-2026, CITRIN-DAS-2026, AICPA-PA-2026,
+  TR-STATE-2026, DATASNIPPER-PBH-2026, DATASNIPPER-PERRY-2025, CASEWARE-LAUNCH-2026, CASEWARE-CITRIN-2026, AICPA-PA-2026,
   AICPA-NFPAI-2026, AICPA-NFPCONF-2026, AICPA-NFPWORKSHOPS-2026, GAQC-DEV-2026, GAO-YBFAQ-2025, GAO-FRAUDAI-2026,
   BDO-GASSA-2026, TSCPA-PEERREVIEW-2025, ARMANINO-NFPAI-2026, MOMENTIVE-2026, GRANTCHECK-2025, HHS-AERO-2026,
   FELDESMAN-AERO-2026, THOMPSON-AERO-2026, CBH-AERO-2026, NCAUDITOR-2026, WASAO-AIPOLICY-2026, TAX990-2026,
   IRS-OPR-2026, CPAPA-SETTLE-2026, EY-TEGE-2024, TIGTA-2025, TAX990-NFPCONF-2026.
 - **Not in the YAML (cited in this file only; opened unless marked):**
-  - FR-OMB-2026: OMB, *Regulation for Federal Financial Assistance* (proposed rule, docket OMB-2026-0034), Federal Register, 2026-05-29, https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance
-  - OMB-UG-2026: UNC School of Government, *2026 Proposed Updates to the Uniform Guidance* (slides), 2026, https://www.sog.unc.edu/sites/default/files/2026%20Uniform%20Guidance%20Proposed%20Updates-1.pdf
+  - FR-OMB-2026: OMB, *Regulation for Federal Financial Assistance* (proposed rule; date and comment close read from the Federal Register API, page blocked), Federal Register, 2026-05-29, https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance
+  - OMB-UG-2026: UNC School of Government, *2026 Proposed Updates to the Uniform Guidance* (slides; timing slide), 2026-09, https://www.sog.unc.edu/sites/default/files/2026%20Uniform%20Guidance%20Proposed%20Updates-1.pdf
   - MNCPA-PEERREVIEW-2025: Minnesota Society of CPAs, *2025 Annual Report on Peer Review Activities*, 2026-02, https://www.mncpa.org/mncpa/media/Documents-Shared/peer-review/2025-MNCPA-annual-report-on-peer-review-activities.pdf
   - OKSCPA-PEERREVIEW-2025: Oklahoma Society of CPAs, *2025 Annual Report on Peer Review Activities*, 2026-03, https://prod.oscpa.com/storage/assets/Peer%20Review/Annual%20Report/2025%20OSCPA%20Peer%20Review%20Activities.pdf
-  - ORSCPA-PEERREVIEW-2025: Oregon Society of CPAs, *Annual Report 2025* (peer review), 2026-03-01, https://www.orcpa.org/storage/assets/Pages/About/Peer%20Review/Annual%20Report%202025.pdf
+  - OSCPA-PR-2026: Oregon Society of CPAs, *Annual Report on Peer Review Activities for 2025*, 2026-03-01, https://www.orcpa.org/storage/assets/Pages/About/Peer%20Review/Annual%20Report%202025.pdf
   - AICPA-PEERCONF-2026: AICPA, *Peer Review Conference* (must-select training on Government Auditing Standards), 2026-08, https://www.aicpa-cima.com/cpe-learning/conference/aicpa-peer-review-conference
-  - AICPA-GOVNFP-2026: AICPA & CIMA, *Governmental and Not-for-Profit Conference*, 2026-10, https://www.aicpa-cima.com/cpe-learning/conference/aicpa-cima-governmental-and-not-for-profit-conference
   - AICPA-NFPWEBCAST-2026: AICPA & CIMA, *Practical AI Techniques for CPAs Serving Not-for-profits* (webcast), 2026-09-23, https://www.aicpa-cima.com/cpe-learning/webcast/practical-ai-techniques-for-cpas-serving-not-for-profits
   - WK-GOVAI-2026: Wolters Kluwer CPELink, *Using AI in a Government Audit* (self-study), 2026-05, https://www.cchcpelink.com/self-study/using-ai-in-a-government-audit/34745/
-  - TR-GAFEATURES-2026: Thomson Reuters, *Guided Assurance features* (vendor; page undated), 2026, https://tax.thomsonreuters.com/en/products/checkpoint-engage/features
-  - TR-SAMBROWN-2026: Thomson Reuters, *Small firm, big leverage: Sam Brown, CPA, Inc.* (vendor; page undated), 2026, https://tax.thomsonreuters.com/en/insights/case-studies/small-firm-big-leverage-sam-brown-cpa-inc-scales-advisory-and-streamlines-audits-with-ai
+  - TR-GAFEATURES-2026: Thomson Reuters, *Guided Assurance features* (vendor; date from page metadata), 2026-05-20, https://tax.thomsonreuters.com/en/products/checkpoint-engage/features
+  - TR-SAMBROWN-2026: Thomson Reuters, *Small firm, big leverage: Sam Brown, CPA, Inc.* (vendor; date from page metadata), 2026-05-11, https://tax.thomsonreuters.com/en/insights/case-studies/small-firm-big-leverage-sam-brown-cpa-inc-scales-advisory-and-streamlines-audits-with-ai
   - CASEWARE-PIONEER-2026: Caseware, *Caseware launches Verity Agentic Pioneer Program*, 2026-06-04, https://www.caseware.com/news/trusted-by-the-majority-of-top-30-u-s-accounting-firms-caseware-launches-verity-agentic-pioneer-program
-  - PKF-DAS-2026: PKF O'Connor Davies, *adopts AI-enabled DAS Suite and joins the Agentic Pioneer Program*, 2026-10-08, https://www.pkfod.com/?p=23897 (search-only; title and date only)
+  - CASEWARE-PKF-2026: Caseware, *PKF O'Connor Davies adopts AI-enabled DAS Suite powered by Caseware Verity, and joins the Caseware Agentic Pioneer Program*, 2026-10-08, https://www.caseware.com/news/pkf-oconnor-davies-adopts-ai-enabled-das-suite-powered-by-caseware-verity-and-joins-the-caseware-agentic-pioneer-program
   - ATODAY-DAVIS-2026: Accounting Today, *"AI cannot audit itself" - a response* (Scott Davis, Prager Metis), 2026-06-05, https://www.accountingtoday.com/opinion/ai-cannot-audit-itself-a-response
-  - OATH-SITE-2026: Oath, *Oath | Swear by your numbers* (firm home page; live page, undated), 2026-10, https://www.oathverified.com/
-  - APRIO-JOB-2026: Aprio, *Senior Manager, Non-Profit (assurance)* job posting, 2026-09-18, https://jobs.lever.co/Aprio/705d6e91-0dd0-4097-bae2-768a2c252f1d
+  - OATH-2026: Oath, *Oath | Swear by your numbers* (firm home page; live page, undated), 2026-10, https://www.oathverified.com/
+  - APRIO-JOB-2026: Aprio, *Senior Audit Manager, Non-Profit* job posting, 2026-09-18, https://jobs.lever.co/Aprio/705d6e91-0dd0-4097-bae2-768a2c252f1d

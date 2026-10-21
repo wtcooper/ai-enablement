@@ -721,7 +721,8 @@
     County Superior Court, as reported by NBC News). The FinCEN alert is older than the 18-month window; it is a
     foundation source on deepfake fraud against financial institutions. Pattern is document-to-decision because the
     described work is examining an item and concluding on it. Deepfaked or forged documents in deal data rooms are a
-    related topic with no source found.
+    related topic with no source found. Sources: the federal judiciary, a regulator (FinCEN), a professional body (ACFE)
+    and a news report (NBC News); no firm example.
 
 - id: advisory-forensic-disputes-12
   title: "Idea: investigation services for AI-fuelled fraud (deepfake impersonation, forged documents, payments fraud) and AI-washing claims"
@@ -800,7 +801,8 @@
     client-accounting-services (payment screening, advisory-client-accounting-services-10), private-client
     (payment-anomaly flagging, advisory-private-client-07) and risk-controls (fraud-risk readiness,
     advisory-risk-controls-23). Only session titles were available for the AI-washing session; items dated after
-    2026-10-20 are scheduled and cannot support the grade.
+    2026-10-20 are scheduled and cannot support the grade. Sources are professional bodies (ACFE, IIA Foundation,
+    AICPA), a regulator (SEC) and a treasury-professional survey (AFP); no firm example.
 
 - id: advisory-forensic-disputes-13
   title: "Idea: agentic AI for blockchain and cryptocurrency fund tracing"
@@ -838,9 +840,10 @@
     - { ref: AICPA-FVS-2026, title: "AICPA Forensic & Valuation Services Conference 2026 agenda (Nov 4-6, 2026)", publisher: "AICPA & CIMA", type: conference, url: "https://tools.eventpower.com/agenda_module/schedule/display/26AICPA-FVC?agenda_id=2652&key=aab743&header=0", date: "2026-11", access: full, locator: "FVC2618, Thu Nov 5, 11:15 am-12:05 pm (scheduled)" }
   last_reviewed: "2026-10-21"
   notes: >-
-    IDEA, labelled as such, and the thinnest entry here. The source is a session abstract for a talk not yet given.
-    Kept because it is the only signal of agentic AI in tracing work. Ladder left at augment: the abstract does not say
-    how much an agent would own, so delegate is not assigned.
+    IDEA, labelled as such, and the thinnest entry here. The source is a session abstract for a talk not yet given. Kept
+    because it is the only signal of agentic AI in tracing work. Ladder left at augment: the abstract does not say how
+    much an agent would own, so delegate is not assigned. Source type: a professional-body conference session (AICPA
+    FVS); no firm or vendor is named.
 
 - id: advisory-forensic-disputes-14
   title: "Idea: AI critique of opposing expert reports and AI-assisted cross-examination and testimony preparation"
@@ -933,4 +936,5 @@
     IDEA, labelled as such. Pattern: other (validation testing offered as an expert service). No source describes the
     service itself; the building blocks (validation studies, error-rate evidence) are in the committee's discussion.
     Rule 707's status comes from the judiciary's own September 2026 report. The validation-studies sentence is in the
-    revised note in the May 2026 agenda book, not in the August 2025 published draft.
+    revised note in the May 2026 agenda book, not in the August 2025 published draft. Sources: the federal judiciary's
+    rules committees; no firm example.

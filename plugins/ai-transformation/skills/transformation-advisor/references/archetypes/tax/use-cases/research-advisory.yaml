@@ -1800,8 +1800,8 @@
     source_ref: TOLLEY-2024
   - lever: speed
     description: >-
-      One Stop CPA's CEO says an answer on a client's deal tax treatment and residency move took under two hours, much
-      less than before. No baseline hours are given.
+      The Journal of Accountancy reports that One Stop CPA's CEO developed an answer on a client's deal tax treatment
+      and residency move within two hours, much less time than before. No baseline hours are given.
     figure: within two hours
     measures: >-
       time for one client's deal and relocation question, as stated by the firm's CEO to the Journal of Accountancy;
@@ -3250,8 +3250,8 @@
     Gelt, an AI-native tax firm, launched a hub of AI-powered calculators on 2025-12-29, with an S Corp calculator for
     self-employment tax and a PTET calculator, and says owners can move from estimate to expert execution with the firm
     [GELT-CALC-2025]. Instead, an AI-native vendor, lists "Build an S Corporation tax plan (TY26)" as a workflow with
-    reasonable compensation and distribution strategy [INSTEAD-SCORP-2026]. Thomson Reuters says CoCounsel Tax can
-    evaluate S corporation conversions and partnership structures against Checkpoint content, with citations
+    reasonable compensation and distribution strategy [INSTEAD-SCORP-2026]. Thomson Reuters' in-house product page says CoCounsel
+    Tax can evaluate S corporation conversions and partnership structures against Checkpoint content, with citations
     [TR-COCOUNSELCORP-2026].
   outcomes:
   - lever: growth
@@ -3336,7 +3336,7 @@
     [TR-SOTP-2026].
   solution: >-
     Intuit Tax Advisor generates strategies automatically from ProConnect or Lacerte returns, and Intuit Assist
-    (generative AI) answers questions and completes custom plans from the firm's goals; Intuit says the tool's existing
+    (generative AI) answers questions and suggests the strategies most applicable to the client's goals; Intuit says the tool's existing
     strategies keep it from inventing recommendations [INTUIT-ASSIST-2024]. Wolters Kluwer describes CCH Axcess Advisor
     as surfacing opportunities hidden in client data, identifying which clients a given provision (for example, the
     2025 tax law changes) affects, and drafting outreach with Expert AI [WK-WHATSNEW-2025]. Filed, an AI-native vendor,
@@ -3374,8 +3374,8 @@
   human_checkpoints:
   - Adviser confirms eligibility and substance before any strategy is proposed to the owner
   role_evolution: >-
-    Thomson Reuters reports that among firms that reallocated tasks, 39% did so to free professionals for advisory work
-    [TR-SOTP-2026].
+    Thomson Reuters reports that among firms that reallocated tasks, 39% named freeing professionals for advisory work
+    as the primary driver [TR-SOTP-2026].
   evidence_grade: C
   sources:
   - ref: AICPA-TAXSW-2026
@@ -3393,7 +3393,7 @@
     url: https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2026/06/2026-State-of-Tax-Professionals-Report.pdf
     date: '2026-06'
     access: full
-    locator: executive summary p.4 (74%, margins); Figure 14 p.19; Figure 19 task reallocation
+    locator: executive summary p.4 (74%, margins); Figure 14 p.19; Figure 18 p.24 (task reallocation drivers)
   - ref: INTUIT-ASSIST-2024
     title: New! Intuit Assist for Intuit Tax Advisor
     publisher: Intuit
@@ -3482,8 +3482,8 @@
     A CPA Practice Advisor contributor says the IRS has not said whether sending return information to an AI tool is a
     disclosure needing consent [CPAPA-SETTLE-2026]
   - >-
-    The same article says consent cannot be a condition of service without making it involuntary under the regulations,
-    so the firm needs a non-AI path for clients who decline [CPAPA-SETTLE-2026]
+    The same article says the regulations require consent to be knowing and voluntary and that conditioning services on
+    it generally makes it involuntary, so the firm needs a non-AI path for clients who decline [CPAPA-SETTLE-2026]
   human_checkpoints:
   - Attorney or adviser verifies every AI output; consent is obtained before AI touches client data
   role_evolution: >-

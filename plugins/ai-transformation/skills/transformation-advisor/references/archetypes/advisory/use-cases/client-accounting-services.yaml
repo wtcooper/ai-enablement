@@ -938,7 +938,9 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Graded C because the AI-specific contribution is not isolated and the only named result is attributed to platform
-    collaboration. For return-season intake chasing, see tax-compliance-individual-business-01.
+    collaboration. For return-season intake chasing, see tax-compliance-individual-business-01. Organization types:
+    vendors (Intuit, Digits) and a small solo firm (Elev8, as in -05); the predictions come from vendor and
+    practice-management leaders.
 
 - id: advisory-client-accounting-services-13
   title: Cross-client portfolio view of close status, open tasks and anomalies for CAS managers
@@ -982,7 +984,8 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Vendor sources only (Intuit, Ramp); the FloQast case supplies the pain, not an AI monitoring result. See
-    professional-services-delivery-management-05 for the firm-operations version of portfolio monitoring.
+    professional-services-delivery-management-05 for the firm-operations version of portfolio monitoring. Organization
+    types: vendors (Intuit, Ramp); the FloQast case is a vendor case study of an unnamed Top 100 firm.
 
 - id: advisory-client-accounting-services-14
   title: In-house controller automation that scans, summarizes and tickets incoming vendor mail and invoices
@@ -1440,7 +1443,9 @@
     confidence-threshold routing); the same controls applied to AI-generated forecasts are advisory-fpa-performance-14;
     auditor-side evidence is in assurance (assurance-assurance-over-ai-04, -07); tracking overrides as a quality signal
     is professional-services-quality-review-11. The CPA Practice Advisor article also cites a KPMG survey figure (42% of
-    finance leaders fully assurance ready); the KPMG survey was not opened, so the figure is not used here.
+    finance leaders fully assurance ready); the KPMG survey was not opened, so the figure is not used here. Organization
+    types: a trade-press contributor (a university professor; see advisory-risk-controls-21), a standard-setter (COSO)
+    and vendors (Digits, Intuit, DualEntry, Penrose).
 
 - id: advisory-client-accounting-services-22
   title: Firm AI policy, approved tools, vendor data terms and change control for firm-built automations in CAS delivery
@@ -1524,7 +1529,8 @@
     IRS guidance applies to a CAS firm only for its tax work; SQMS applies only to compilation, review and attest
     engagements, not plain bookkeeping. The CPA Practice Advisor contributor sells AI implementation services. Firm-wide
     versions of these controls are in professional-services (professional-services-work-production-22,
-    professional-services-quality-review-01).
+    professional-services-quality-review-01). Organization types: vendor surveys (Karbon, Thomson Reuters), professional
+    bodies and regulators; no CAS firm is named.
 
 - id: advisory-client-accounting-services-23
   title: AI-use disclosure, client consent and client-imposed AI terms in CAS engagement letters and onboarding
@@ -1589,7 +1595,9 @@
     applies only to tax return information, not bookkeeping data. The ABA opinion is a legal-profession analog cited
     through the Journal of Accountancy. Related entries: professional-services-client-development-16,
     professional-services-acceptance-risk-11, assurance-acceptance-independence-11 and
-    tax-compliance-individual-business-21.
+    tax-compliance-individual-business-21. Organization types: professional bodies and regulators for the rules, Woodard
+    (publisher of a webinar deck for accounting firms) for the sample clause, and Zuellig Pharma (a healthcare
+    distributor) for client-imposed terms.
 
 - id: advisory-client-accounting-services-24
   title: Independence and data-custody screening before a firm sells AI-enabled CAS to its own attest clients (idea)
@@ -1655,4 +1663,6 @@
     private-company treatment rests on secondary descriptions; confirm before advising. Reading IESBA's hosting
     paragraph together with the AICPA's warning on hosting AI is an interpretation, not an authoritative one. Related
     entries: assurance-acceptance-independence-15 (permissibility gate for AI services to audit clients), -16 (APS due
-    diligence) and professional-services-firm-finance-15 (PE capital and attest separation).
+    diligence) and professional-services-firm-finance-15 (PE capital and attest separation). Example organization:
+    Crowe, a US accounting firm with a strategic investment from KKR, whose attest entity (Crowe LLP) and non-attest
+    entity (Crowe Advisory LLC) are separate (CROWE-KKR-2026).

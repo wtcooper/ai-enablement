@@ -743,12 +743,15 @@
     date: '2025-11-17'
     access: full
     locator: 'Cybersecurity section (pp. 11-12): AI and polymorphic malware'
-  notes: 'Grade C: vendor feature claim plus guidance. Gallagher cites (secondarily) that 83% of family-office advisors
-    in a 2025 survey were concerned about deepfakes and that 43% of family offices had a cyberattack in the prior 12 to
-    24 months per a Deloitte report; neither original was read, so they are not used as outcomes. RBC''s 2026 report says
-    59% name cybersecurity and data breaches the top near-term operational concern (up from 16%). Cross-references: advisory-client-accounting-services-10
-    (AP agents with fraud screening before payment release), advisory-risk-controls-23 (fraud-readiness idea), advisory-forensic-disputes-12
-    (investigation of AI-fuelled fraud, idea).'
+  notes: >-
+    Grade C: vendor feature claim plus guidance. Gallagher cites (secondarily) that 83% of family-office advisors in a
+    2025 survey were concerned about deepfakes and that 43% of family offices had a cyberattack in the prior 12 to 24
+    months per a Deloitte report; neither original was read, so they are not used as outcomes. RBC's 2026 report says
+    59% name cybersecurity and data breaches the top near-term operational concern (up from 16%). Cross-references:
+    advisory-client-accounting-services-10 (AP agents with fraud screening before payment release),
+    advisory-risk-controls-23 (fraud-readiness idea), advisory-forensic-disputes-12 (investigation of AI-fuelled fraud,
+    idea). Organization types: vendors (Canoe, Agillink), a mid-market firm (Armanino), Gallagher (Arthur J. Gallagher)
+    Private Client and a regulator (SEC).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-08
   title: AI-enabled platform that coordinates a multidisciplinary family-office service team across planning, tax preparation
@@ -1042,10 +1045,12 @@
     date: '2026-02-02'
     access: full
     locator: Paragraph on governance and succession (86% lack a clear succession plan for key decision makers, as summarized)
-  notes: 'Idea. Context: the 86% figure is JPM''s, reported as lacking a clear succession plan for key decision makers;
-    RBC''s 2026 release says half have an incomplete or non-existent plan; UBS''s 2025 report says 53% have a wealth succession
+  notes: >-
+    Idea. Context: the 86% figure is JPM's, reported as lacking a clear succession plan for key decision makers; RBC's
+    2026 release says half have an incomplete or non-existent plan; UBS's 2025 report says 53% have a wealth succession
     plan. The definitions differ and are not comparable. Cross-reference: professional-services-knowledge-management-21
-    (idea: structured capture of tacit know-how inside a firm).'
+    (idea: structured capture of tacit know-how inside a firm). Organization types: a mid-market firm (Armanino) and
+    bank and wealth-manager surveys (J.P. Morgan, RBC, UBS).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-12
   title: 'Idea: AI scenario modelling and successor assessment in family-enterprise succession advisory'
@@ -1110,9 +1115,12 @@
     date: '2025-05-21'
     access: full
     locator: Pp. 55-56 (succession key messages)
-  notes: 'Idea only; both sources are opinion. HBK''s list was produced by a chatbot and is dated 2023. Pattern ''other'':
-    an advisor-led modelling and assessment loop (scenario simulation plus candidate scoring), not a document or case pipeline.
-    The one named deployment near this work is a client-facing succession chatbot used for marketing (advisory-private-client-17).'
+  notes: >-
+    Idea only; both sources are opinion. HBK's list was produced by a chatbot and is dated 2023. Pattern 'other': an
+    advisor-led modelling and assessment loop (scenario simulation plus candidate scoring), not a document or case
+    pipeline. The one named deployment near this work is a client-facing succession chatbot used for marketing
+    (advisory-private-client-17). Organization types: a family-business practitioner publication (FFI Practitioner) and
+    an accounting and advisory firm (HBK).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-13
   title: 'Idea: AI-supported exit-readiness and value-building conversations with owner clients'
@@ -1164,10 +1172,13 @@
     date: '2023-05-01'
     access: full
     locator: List of ten uses; valuation and successor identification
-  notes: 'Idea only. The EPI page lists the webinar for 2026-01-20 and promises examples, but no recording or results were
-    found, so it is a signal of discussion, not evidence of use. Other EPI chapter events on AI in 2026 were seen only in search snippets. Pattern ''other'':
-    advisor-led diagnostic conversation supported by AI, no pipeline. See advisory-private-client-17 (a firm''s ownership-transition
-    chatbot used to start conversations) and, for exit work that becomes a sell-side review, advisory-transactions-08.'
+  notes: >-
+    Idea only. The EPI page lists the webinar for 2026-01-20 and promises examples, but no recording or results were
+    found, so it is a signal of discussion, not evidence of use. Other EPI chapter events on AI in 2026 were seen only
+    in search snippets. Pattern 'other': advisor-led diagnostic conversation supported by AI, no pipeline. See
+    advisory-private-client-17 (a firm's ownership-transition chatbot used to start conversations) and, for exit work
+    that becomes a sell-side review, advisory-transactions-08. Organization types: a professional body for exit planners
+    (Exit Planning Institute) and an accounting and advisory firm (HBK).
   last_reviewed: '2026-10-21'
 - id: advisory-private-client-14
   title: Advising families on AI policy, data limits and vendor diligence as a service

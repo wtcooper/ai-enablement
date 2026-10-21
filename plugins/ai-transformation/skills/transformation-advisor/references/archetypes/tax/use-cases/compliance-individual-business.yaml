@@ -388,8 +388,8 @@
     Black Ore's pilot had 75 firms including 40% of the 20 largest CPA firms by revenue and about 3,700 firms on its
     waiting list (company claims, BLACKORE-2026). Aiwyn was reported to be recruiting 100 firms for a 1040 pilot in
     the 2026 season (BLACKORE-2026). Added 2026-10-21: CPA Practice Advisor's launch report carries the same Maxwell
-    Locke & Ritter quote (a top-100 firm, per the mid-market research), qualitative only (CPAPA-BLACKORE-2026); grade
-    unchanged.
+    Locke & Ritter quote; the article itself calls the firm a top 100 CPA firm and the return one 'with dozens of
+    complex K-1s'; qualitative only (CPAPA-BLACKORE-2026); grade unchanged.
 
 - id: tax-compliance-individual-business-06
   title: Agent prepares partnership, S corporation and trust returns (1065, 1120-S, 1041) through to K-1s for review
@@ -442,7 +442,7 @@
     - "Accrual's CEO said the product does not automate 100% of the work (ACCRUAL-LAUNCH-2026)."
     - "OPR expects the signing practitioner to verify facts, citations and calculations that AI produces (IRS-OPR-2026)."
     - "Control dilution and incorrect document extraction apply as for 1040 agents (AICPA-WERFEL-2026, Appendix C)."
-    - "The host of The Accounting Podcast, writing on whether AI can prepare a partnership return, guesses the IRS will not accept 'AI prepared it' as a defence; the signer carries the liability (OLIVER-PARTNERSHIP-2026)."
+    - "The host of The Accounting Podcast, writing on whether AI can prepare a partnership return, guesses the IRS will not recognise 'AI prepared it' as a defence under the preparer penalty rules, and says automation without oversight is negligence (OLIVER-PARTNERSHIP-2026)."
   human_checkpoints:
     - "Review of the draft with open items and treatment decisions surfaced before anything commits"
     - "Approval of agent changes (Accrual shows proposed changes and asks for approval before applying them)"
@@ -468,8 +468,9 @@
   last_reviewed: "2026-10-21"
   notes: >-
     Added 2026-10-21: CPA Practice Advisor's report of the Basis raise repeats the 1065 demonstration claim and names
-    no firm or accuracy figure; a "Top 25 firm" setting appears only in a secondary blog and is unverified
-    (BASIS-SERIESB-2026). CPA Practice Advisor's launch article says Accrual is currently focused on individual returns,
+    no firm or accuracy figure; it reports the company's claim that about 30% of the top 25 accounting firms use the
+    platform, not tied to the 1065 demonstration, and a "Top 25 firm" setting for the 1065 appears only in a secondary
+    blog and is unverified (BASIS-SERIESB-2026). CPA Practice Advisor's launch article says Accrual is currently focused on individual returns,
     including complex K-1s (CPAPA-ACCRUAL-2026). Grade unchanged.
     Verification (2026-10-17): the partnership page now names the Armanino staff quoted and shows Armanino statistics;
     grade kept at B because the statistics are vendor-page figures without method. Armanino's role is shown on
@@ -786,9 +787,9 @@
   problem: >-
     Reviewers must check figures against source documents and prior years, which takes senior time. Review becomes
     the bottleneck when preparation gets faster, and reviewers must catch extraction, mapping and eligibility errors
-    across more returns. For 1120-S and 1065 returns, reviewers work from long checklists covering M-1, M-2, basis
-    schedules and capital accounts, and a state-society course describes staff-prepared entity returns as error-prone
-    (NYSSCPA-1120S1065-2025).
+    across more returns. For 1120-S and 1065 returns, a state-society review course offers multiple checklists covering
+    Schedule M-1, shareholder basis schedules and partner capital accounts, and reviews portions of "error-prone
+    'staff-prepared'" entity returns (NYSSCPA-1120S1065-2025).
   solution: >-
     Intuit's ProConnect runs an AI assistant against thousands of diagnostics. Basis ties every number in a draft
     return to its source, builds the prior-year variance list and flags exceptions. Accrual shows prepared values,
@@ -817,7 +818,7 @@
       provenance: vendor-published
       source_ref: FILED-HOME-2026
     - lever: capacity
-      description: "A small-firm owner (Paramount Tax) says Filed turned people from preparers into reviewers; a second small firm (JCG Tax) says the team asked whether enough returns were coming in. The quotes do not name entity returns."
+      description: "The owner of Paramount Tax says Filed turned people from preparers into reviewers; JCG Tax's head of production says the team started asking whether enough returns were coming in. The page does not give either firm's size, and the quotes do not name entity returns."
       figure: "none published"
       measures: "two customer testimonials on the vendor's home page; no counts"
       provenance: vendor-published
@@ -867,7 +868,8 @@
     Seed Money Consulting is the named firm. No source reports false-positive, miss or override rates for AI review.
     Overlaps: tax-controversy-04 (pre-filing audit-exposure review) and tax-compliance-corporate-13. Merged 2026-10-21:
     entity-return review (K-1 ties, source tie-out, wage and QBI allocation) from the mid-market research; Filed's
-    customers are small firms and its sample is illustrative, so grade B still rests on the existing named users.
+    named customers are not described by size and its sample is illustrative, so grade B still rests on the existing
+    named users.
 
 - id: tax-compliance-individual-business-13
   title: Review controls for AI-assisted returns - decision logs, override-rate monitoring, scaled sampling and escalation (idea)
@@ -1402,7 +1404,7 @@
     - "Consent to disclose to a preparer outside the United States is required, and disclosing a Form 1040 filer's SSN abroad is restricted (TREAS-7216-2008, 301.7216-3(b)(4))."
     - "Guidance conflicts on form: a vendor blog says the AICPA told CNBC the consent must be a separate document for individual returns (not confirmed against CNBC), while a Journal of Accountancy article suggests disclosure language in all engagement letters (VERITO-DISCL-2026, JOFA-AIPOLICY-2026). CNBC reported the IRS guidance does not say whether preparers must tell clients (LDS-CNBC-2026, secondary summary)."
     - "UK PCRT guidance says entering client data into a publicly available AI model without consent is likely to breach confidentiality and suggests anonymised data (ICAEW-PCRT-2026)."
-    - "A CPA Practice Advisor contributor says the IRS has not said whether sending return data to an AI tool is a disclosure needing consent; a cautious approach is a separate signed consent, and because consent cannot be a condition of service the firm needs a non-AI path for clients who decline (CPAPA-SETTLE-2026)."
+    - "A CPA Practice Advisor contributor says the IRS has not said whether sending return data to an AI tool is a disclosure needing consent; a cautious approach is a standalone signed consent, and because conditioning services on consent generally makes it involuntary the firm needs a non-AI path for clients who decline (CPAPA-SETTLE-2026)."
   human_checkpoints:
     - "Client signs and dates the consent before any disclosure or use"
     - "Counsel reviews the language before the tool is used on any client matter (AICPA-WERFEL-2026, Appendix D, Step 6)"
@@ -1555,11 +1557,14 @@
     accounting, and applied AI tools it built in-house; it aims to buy high-recurring-revenue service firms and expand
     beyond personal tax compliance to compete with the Big Four. Its investor says small firms are more open to
     changing processes than a firm with 200 accountants. A second model serves owner-managed businesses: Aardvark Tax
-    Advisors, the accounting practice of the venture-backed small-business platform Cynch AI, describes itself as an
-    AI-native tax, accounting and advisory firm for small businesses and entrepreneurs, growing organically and by
-    acquisition; its Senior Tax Manager posting says the practice is integrating AI-enabled tools into tax delivery
-    and expects the manager to review AI-assisted output, judge whether work is ready for a client, lead corporate,
-    partnership, individual, trust and estate returns, and deliver planning beyond compliance (AARDVARK-STM-2026).
+    Advisors, the accounting and client services practice of the small-business platform Cynch AI, describes itself
+    as an AI-native tax, accounting and advisory firm (AARDVARK-HTO-2026). Its Senior Tax Manager posting says it
+    serves small businesses and entrepreneurs, uses proprietary AI to reduce routine tasks and grows organically and
+    through strategic acquisitions, and asks the manager to lead preparation and review of complex returns for
+    corporations, partnerships, individuals, trusts and estates and to deliver planning beyond compliance
+    (AARDVARK-STM-2026). Its Head of Tax Operations posting asks for an owner of the "human-in-the-loop tax quality
+    system": what the platform can automate, what needs human review, when work escalates and when a return is ready
+    for signature (AARDVARK-HTO-2026).
   outcomes:
     - lever: cost
       description: "TechCrunch reports that Multiplier's AI tools helped Citrine more than double its profit margins."
@@ -1576,29 +1581,33 @@
   prerequisites:
     - "Capital to acquire practices and AI tools built in-house"
     - "A small, change-ready firm with high recurring revenue and leaders willing to integrate and customise AI"
-    - "Managers with ten or more years of entity and planning experience who can review AI-assisted work (AARDVARK-STM-2026)"
+    - "Managers with ten or more years in public accounting or tax across individuals, partnerships and small-business entities (AARDVARK-STM-2026), and a signing practitioner who sets which AI-assisted work needs human review (AARDVARK-HTO-2026)"
   risks_and_guardrails:
     - "One acquired boutique is the only data point, and the figure is a margin claim by the buyer reported by the press, with no independent verification (MULTIPLIER-2025)."
     - "Aardvark's posting says tools support the work and people remain accountable for the outcome (AARDVARK-STM-2026)."
   human_checkpoints:
     - "Not described in the Multiplier source"
-    - "At Aardvark, a manager reviews AI-assisted returns before they leave the practice (AARDVARK-STM-2026)"
+    - "At Aardvark, a signing practitioner decides what requires human review and when a return is ready for signature (AARDVARK-HTO-2026), and the senior tax manager ensures every return that leaves the practice meets the standard they would sign (AARDVARK-STM-2026)"
   role_evolution: >-
     TechCrunch says Multiplier's tools eliminated manual work at Citrine (MULTIPLIER-2025); roles in acquired firms
-    are not described. Aardvark defines the manager as reviewer, planner and team lead rather than preparer: someone
-    who can tell client-ready from not-ready AI-assisted work (AARDVARK-STM-2026).
+    are not described. Aardvark's postings make the senior tax manager a reviewer, planner and team lead, and the
+    head of tax operations the "human judgment layer" over platform-assisted work (AARDVARK-STM-2026; AARDVARK-HTO-2026).
   evidence_grade: B
   sources:
     - { ref: MULTIPLIER-2025, title: "Multiplier, founded by ex-Stripe exec, nabs $27.5M to fuel AI-powered accounting roll-ups", publisher: "TechCrunch", type: press, url: "https://techcrunch.com/2025/06/18/multiplier-founded-by-ex-stripe-exec-nabs-27-5m-to-fuel-ai-powered-accounting-roll-up", date: "2025-06-18", access: full, locator: "paragraphs 3-4 and 6; Lightspeed partner quotes" }
-    - { ref: AARDVARK-STM-2026, title: "Senior Tax Manager (Aardvark Tax Advisors, Cynch AI)", publisher: "Cynch AI (posting copies at jobs.auditfriendly.co and startup.jobs)", type: job-posting, url: "https://jobs.auditfriendly.co/jobs/senior-tax-manager-cynch-ai-f487bd54921b", date: "2026-09", access: full, locator: "'About the role' and 'What You'll Do'; the copy says the posting closed on 2026-09-09; posting date not captured; the 'strategic acquisitions' line appears on the startup.jobs copy (https://startup.jobs/senior-tax-manager-cynch-ai-9806576); both read through the r.jina.ai mirror" }
+    - { ref: AARDVARK-STM-2026, title: "Senior Tax Manager (Aardvark Tax Advisors, Cynch AI)", publisher: "Cynch AI (Workable posting; same text on startup.jobs)", type: job-posting, url: "https://jobs.workable.com/jobs/65390468-4880-433f-bffb-1f158fef3c59", date: "2026-10-21", access: full, locator: "page undated, date is access date; Description and 'What You'll Do'; same text at https://startup.jobs/senior-tax-manager-cynch-ai-9806576; the jobs.auditfriendly.co copy cited earlier returned 410 on 2026-10-21" }
+    - { ref: AARDVARK-HTO-2026, title: "Head of Tax Operations (Aardvark Tax Advisors, Cynch AI)", publisher: "Cynch AI (Workable posting)", type: job-posting, url: "https://jobs.workable.com/jobs/fc3584df-1ca4-46c3-9294-ca5c4b31e99d", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'About Aardvark Tax Advisors', 'The Opportunity', 'Own Tax Delivery Quality'" }
   last_reviewed: "2026-10-21"
   notes: >-
     A summit podcast is not used as a source because its description does not mention AI-native firms or private
     equity. Capped at B: Citrine is a cross-border tax accounting boutique, adjacent to 1040 and small-business
     compliance, and the margin claim is unaudited. Other AI-native firms named in secondary coverage (Accrual, Gelt,
-    Skalar, Limetax) were not verified as practice acquirers. Merged 2026-10-21: Aardvark, a venture-linked
-    small-business practice (not a mid-market firm), as a second AI-native model; its posting names no result, so it
-    adds no measurement and the grade is unchanged.
+    Skalar, Limetax) were not verified as practice acquirers. Merged 2026-10-21: Aardvark, a platform-owned
+    small-business practice (not a mid-market firm), as a second AI-native model; its postings name no result, so it
+    adds no measurement and the grade is unchanged. Verified 2026-10-21: the earlier auditfriendly copy is gone (410)
+    and the live Senior Tax Manager copy does not use the words AI-native or AI-assisted, so those claims now rest on
+    the Head of Tax Operations posting. Cynch AI's venture funding (a Series A reported for December 2025) was seen
+    only in search results and is not stated as fact.
 
 - id: tax-compliance-individual-business-25
   title: Taxpayer-side general-purpose agents draft or check returns, bypassing or second-guessing the preparer
@@ -1735,7 +1744,7 @@
   sources:
     - { ref: INSTEAD-SCORP-2026, title: "Instead for S Corporations (1120-S): AI Tax Agent", publisher: "Instead", type: vendor, url: "https://webflow.instead.com/products/s-corporation", date: "2026-10-21", access: full, locator: "page undated, date is access date; feature list and 'Ready to run' workflows" }
     - { ref: WAGEPROOF-2026, title: "Reasonable Compensation Software for CPAs & EAs", publisher: "WageProof", type: vendor, url: "https://www.wageproof.com/for-cpas", date: "2026-10-21", access: full, locator: "page undated, date is access date; hero text, 'Create a client report', pricing line" }
-    - { ref: NATP-RCOMP-2026, title: "Four reasonable compensation mistakes S-corp clients make", publisher: "National Association of Tax Professionals (sponsored content by WageProof's founder, Josh Green)", type: vendor, url: "https://www.natptax.com/news-insights/blog/four-reasonable-compensation-mistakes-s-corp-clients-make/", date: "2026-09-16", access: full, locator: "Mistake 3; 'Why owners skip a proper study'; 'How WageProof approaches this'; read through the r.jina.ai mirror (direct curl 403)" }
+    - { ref: NATP-RCOMP-2026, title: "Four reasonable compensation mistakes S-corp clients make", publisher: "National Association of Tax Professionals (blog post by WageProof's founder, Josh Green)", type: vendor, url: "https://www.natptax.com/news-insights/blog/four-reasonable-compensation-mistakes-s-corp-clients-make/", date: "2026-09-16", access: full, locator: "Mistake 3; 'Why owners skip a proper study'; 'How WageProof approaches this'; read through the r.jina.ai mirror (direct curl 403)" }
     - { ref: IRS-FS200825-2008, title: "Wage Compensation for S Corporation Officers (FS-2008-25)", publisher: "Internal Revenue Service", type: regulator, url: "https://www.irs.gov/pub/irs-news/fs-08-25.pdf", date: "2008-08", access: full, locator: "'What's a Reasonable Salary?'" }
     - { ref: RCREPORTS-IA-2023, title: "Insightful Accountant & Tax Practice News First Look on RCReports", publisher: "Insightful Accountant", type: press, url: "https://insightfulaccountant.com/accounting-tech/vendor-news/insightful-accountant-tax-practice-news-first-look-on-rcre", date: "2023-02-24", access: full, locator: "'Evaluating Reasonable Compensation'; the article says it is based on information the developer submitted" }
     - { ref: EVERGREEN-CHATGPT-2024, title: "Using ChatGPT to Determine S Corporation Reasonable Compensation", publisher: "Evergreen Small Business (CPA practitioner blog)", type: press, url: "https://evergreensmallbusiness.com/using-chatgpt-to-determine-s-corporation-reasonable-compensation/", date: "2024-09-09", access: full, locator: "opening paragraphs and the August 2024 prompt example" }
@@ -1837,7 +1846,7 @@
     - "Documents for every related entity in one workspace, with ownership percentages"
     - "Prior-year returns imported for carryforwards and elections"
   risks_and_guardrails:
-    - "OPR Alert 2026-19 names cross-client leakage, where data from one client's file is reused to answer a question about another, as a privacy risk; a multi-entity workspace must keep ownership groups apart (IRS-OPR-2026)."
+    - "OPR Alert 2026-19 names, as a privacy risk, data generated for one client being repurposed to answer an inquiry about another client (IRS-OPR-2026). Applying that to a multi-entity workspace (keeping each client group's data apart) is this file's inference, not OPR's."
     - "The sources describe a design, not any measured check that entity-to-owner figures agree."
   human_checkpoints:
     - "Preparer confirms the ownership map and that each K-1 received ties to the entity return that issued it"
@@ -1908,9 +1917,9 @@
   runtime_class: managed-agent-runtime
   maturity: announced
   problem: >-
-    WCG, a regional firm, describes a "last mile" problem: an AI that prepares a return in its own system cannot hand a
-    half-finished return to the firm's tax software, so the work restarts when the AI hits its ceiling
-    (WCG-NOTREADY-2026).
+    WCG, a regional firm, describes a "reset risk": an AI that prepares a return in its own proprietary software cannot
+    hand a half-finished return to the firm's tax software, so the work starts over when the AI hits its ceiling; it
+    makes this point in its evaluation of Instead (WCG-NOTREADY-2026).
   solution: >-
     On 2026-05-08 Instead, an AI-native vendor, announced that it completed government testing to e-file and print
     returns across federal, state and local jurisdictions for 1040, 1041, 1120, 1120-S and 1065, and says a firm can use
@@ -1927,7 +1936,7 @@
     - "Willingness to move prior-year history and carryforwards into a new system"
     - "Firm tolerance for single-vendor dependence for filing"
   risks_and_guardrails:
-    - "WCG warns that a proprietary system can trap prior-year history, make comparison and review harder and force a restart when a return needs a human decision (WCG-NOTREADY-2026)."
+    - "In its evaluation of Instead, WCG warns that a proprietary system can trap prior-year history, make comparison and review harder and force a restart when a return needs a human decision (WCG-NOTREADY-2026)."
     - "The e-file approval is the company's statement; the research found no IRS statement confirming it (a search summary reported none)."
   human_checkpoints:
     - "CPA signs; reviewer works from the tool's workpapers"
@@ -1938,7 +1947,7 @@
   sources:
     - { ref: INSTEAD-EFILE-2026, title: "Instead becomes the first new tax platform in decades to pass 100% government testing across all U.S. jurisdictions", publisher: "Instead", type: vendor, url: "https://instead.com/news/instead-first-new-tax-platform-100-percent-us-efile-approvals-all-jurisdictions", date: "2026-05-08", access: full, locator: "paragraphs 1-3" }
     - { ref: INSTEAD-CPA-2026, title: "CPA Firms | Instead", publisher: "Instead", type: vendor, url: "https://instead.com/solutions/cpa-firms", date: "2026-10-21", access: full, locator: "page undated, date is access date; 'Cancel your tax software'" }
-    - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "vendor evaluation: proprietary-software 'last mile' paragraphs" }
+    - { ref: WCG-NOTREADY-2026, title: "AI Tax Prep in 2026: Not Quite There Yet", publisher: "WCG CPAs & Advisors", type: firm, url: "https://wcginc.com/blog/ai-tax-prep-in-2026-not-quite-there-yet/", date: "2026-07-24", access: full, locator: "Key Takeaways ('reset risk'); Instead section (proprietary software, restart cost, trapped prior-year history)" }
   last_reviewed: "2026-10-21"
   notes: >-
     Added 2026-10-21 (mid-market widening). A product announcement, not a deployment. It is the opposite design choice

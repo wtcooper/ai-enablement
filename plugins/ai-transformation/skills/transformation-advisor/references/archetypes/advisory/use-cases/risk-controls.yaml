@@ -666,7 +666,8 @@
     ladder spans assist (challenge GPTs) and augment (workpaper pre-review). The PCAOB spotlight is older than the
     preferred window and reflects outreach mainly to larger firms. Related entries: assurance-controls-testing-10 (AI
     secondary review of control workpapers) and professional-services-quality-review-13 (independent machine cross-check
-    before human review).
+    before human review). Firm types: Baker Tilly (large US accounting and advisory firm), FJ Management (client
+    in-house team), Optro (vendor).
 
 - id: advisory-risk-controls-11
   title: "AI drafts audit observations: finding detail, root cause, impact and recommendation"
@@ -1023,7 +1024,7 @@
       description: "Share of surveyed finance leaders whose organisations are fully assurance-ready for AI-enabled finance processes (a demand indicator, not a result of this service)"
       figure: "42%"
       measures: "1,013 C-suite and senior finance leaders at organisations with revenue of at least US$250M (US$500M in the US), March 2026; technology and financial services are 58% of the sample. The same release uses 42% for a second measure (confidence in scaling AI among assurance-ready organisations, against 14%)"
-      provenance: vendor-published
+      provenance: self-reported
       source_ref: KPMG-AIFINANCE-2026
     - lever: growth
       description: "Grant Thornton Advisors' CEO says AI is already driving demand for AI governance work and predicts demand will grow"
@@ -1301,7 +1302,8 @@
     Grade C: community polls and practitioner testimony with unnamed employers, plus a vendor blog. The Internal Audit
     Collective promotes its own paid playbook. The vendor blog's claim that no PCAOB AI-specific standard or staff
     guidance exists as of July 2026 was not checked. The external-audit side of the same question is
-    assurance-assurance-over-ai-02 and -03.
+    assurance-assurance-over-ai-02 and -03. Organization types: a practitioner community (Internal Audit Collective), a
+    vendor blog and KPMG (Big Four).
 
 - id: advisory-risk-controls-21
   title: "Idea: written controls before a client's finance agents go live (agent inventory, replayable evidence, sign-off gates, assurance mapping, exit threshold)"
@@ -1415,7 +1417,8 @@
     in forensic-disputes (advisory-forensic-disputes-03 covers proactive anti-fraud monitoring;
     advisory-forensic-disputes-12 is the investigation-service idea); payment screening is
     advisory-client-accounting-services-10 and family-office payment controls advisory-private-client-07; the
-    external-audit equivalent is assurance-planning-risk-assessment-15.
+    external-audit equivalent is assurance-planning-risk-assessment-15. Sources are professional bodies (IIA, IIA
+    Foundation, ACFE), regulators (DOJ, FinCEN) and a treasury-professional survey (AFP); no firm example.
 
 - id: advisory-risk-controls-24
   title: "Idea: certify AI testing tools before use, with a parallel run against completed engagements and recertification after changes"

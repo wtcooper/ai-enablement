@@ -1,7 +1,7 @@
 # Use cases: assurance / nonprofit-government (mid-market extension)
 # Nonprofit financial statement audits, single audits and other Government Auditing Standards (Yellow Book)
 # engagements, plus Form 990 and unrelated business income (UBI) work. Synthesized 2026-10-21 from the wave 6
-# landscape scan and combined deep dive, plus items routed from the private-company research.
+# landscape scan and combined deep dive, plus items routed from the private-company research. Verified against sources 2026-10-21 (wave 6 verification).
 # No entry is graded A: every firm figure is a recollection or vendor-published. No delegate-level and no
 # model-scope entry has public evidence. Order: planning and documents (01-05), testing (06-08), completion
 # (09-10), auditee side (11-12), counterparties and government audit offices (13-14), Form 990 (15-16).
@@ -27,14 +27,14 @@
   prerequisites:
     - "Minutes available as documents the tool can read"
     - "An approved audit AI tool; all three nonprofit-focused firms already used the vendor's engagement and methodology products before adding the AI layer [TR-NPCASE-2026]"
-    - "Template and prompt tuning: one small governmental and nonprofit firm used the stock template on every engagement and found it did not summarize until customized [TR-STPIERRE-2026]"
+    - "Template and prompt tuning: one small governmental and nonprofit firm used the stock template on every engagement and said it was 'not summarizing'; it then applied the vendor's prompt customizations [TR-STPIERRE-2026]"
   risks_and_guardrails:
     - "Output quality depended on prompt design; the St. Pierre firm reported too many questions, irrelevant detail, repetitive summaries and no chronological order in the stock template [TR-STPIERRE-2026]"
     - "AICPA practice aid: the auditor remains responsible for supervision, review and conclusions when using AI tools [AICPA-PA-2026]"
-    - "Donor and personal data in minutes raises the confidentiality worry practitioners cite for nonprofit work [AICPA-NFPAI-2026]"
+    - "Worries about personal data (PII) keep many accountants on Microsoft tools, says Gemifi's cofounder [AICPA-NFPAI-2026]"
   human_checkpoints:
     - "Auditor reads each flagged item against the minutes and decides whether it changes procedures"
-  role_evolution: "Forde says the tool lets staff act without a senior's involvement [TR-NPCASE-2026]."
+  role_evolution: "Not described for minutes. Forde says CoCounsel generally gives staff 'the ability to act without me having to be involved' [TR-NPCASE-2026]."
   evidence_grade: B
   sources:
     - {ref: TR-SCALING-2026, title: "Scaling audit practices with AI: 3 real-world case studies", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/blog/scaling-your-audit-practice-with-ai-3-real-world-cocounsel-audit-case-studies/", date: "2026-06-16", access: full, locator: "Case 2 (Harris, Hardy & Johnstone), measurable results"}
@@ -43,7 +43,7 @@
     - {ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "Use of AI-related technological resources by audit firms"}
     - {ref: AICPA-NFPAI-2026, title: "The untapped potential of AI in not-for-profit accounting", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/professional-insights/article/the-untapped-potential-of-ai-in-not-for-profit-accounting", date: "2026-09-10", access: full, locator: "Section on PII and data governance"}
   last_reviewed: "2026-10-21"
-  notes: "Firm types: three small local nonprofit-focused firms (Sam Brown CPA, Troy OH; Wells CPA, Columbus OH; The Forde Firm, Jacksonville FL); a small local governmental and nonprofit firm (Robert St. Pierre, CPA, Stilwell OK, about 80 audits a year); a mid-sized commercial firm (Harris, Hardy & Johnstone). All outcome text is vendor-published customer material. The hour-to-five-minutes figure is not from a nonprofit or government engagement. General pattern: assurance-planning-risk-assessment-01; what is new here is the governing-body document set and the small-firm prompt tuning."
+  notes: "Firm types: three small local nonprofit-focused firms (Sam Brown CPA, Troy OH; Wells CPA, Columbus OH; The Forde Firm, Jacksonville FL); a small local governmental and nonprofit firm (Robert St. Pierre, CPA, Stilwell OK, about 80 audits a year); a mid-sized commercial firm (Harris, Hardy & Johnstone). All outcome text is vendor-published customer material. The hour-to-five-minutes figure is not from a nonprofit or government engagement; Forde's nonprofit figure (an hour to a couple of minutes) is for a handbook and internal control documentation, not minutes. TR-STPIERRE-2026 date is the page's published-date metadata (no visible byline). General pattern: assurance-planning-risk-assessment-01; what is new here is the governing-body document set and the small-firm prompt tuning."
 
 - id: assurance-nonprofit-government-02
   title: "Key-term extraction from bond indentures, grant agreements and other long agreements"
@@ -65,9 +65,8 @@
     - "Agreements available as readable documents"
     - "Prompts that name the sections to read [TR-STPIERRE-2026]"
   risks_and_guardrails:
-    - "Extraction summarizes sections before analysis, so accuracy depends on prompts naming sections [TR-STPIERRE-2026]"
-    - "Missing information should return 'N/A' rather than a guess (vendor advice) [TR-STPIERRE-2026]"
-    - "GAO's AI Accountability Framework stresses reliable data and a human in the loop [GAO-FRAUDAI-2026]"
+    - "The tool summarizes sections before deeper analysis; the vendor says accuracy improves when prompts name sections [TR-STPIERRE-2026]"
+    - "Missing information should return 'N/A' rather than verbose output (vendor advice) [TR-STPIERRE-2026]"
   human_checkpoints:
     - "Auditor agrees extracted terms to the source before relying on them"
   role_evolution: "Not described for this use. The same firm says it now asks the tool instead of calling another CPA for technical questions [TR-STPIERRE-2026]."
@@ -75,7 +74,6 @@
   sources:
     - {ref: TR-STPIERRE-2026, title: "Modernizing nonprofit and government audits with CoCounsel Audit", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/modernizing-nonprofit-and-government-audits-with-cocounsel-audit", date: "2026-03-09", access: full, locator: "Debt Agreement Analysis template"}
     - {ref: TR-SCALING-2026, title: "Scaling audit practices with AI: 3 real-world case studies", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/blog/scaling-your-audit-practice-with-ai-3-real-world-cocounsel-audit-case-studies/", date: "2026-06-16", access: full, locator: "Case 3, nonprofit practice engagements"}
-    - {ref: GAO-FRAUDAI-2026, title: "Fraud and improper payments: data quality and a skilled workforce are essential for realizing AI's benefits (GAO-26-108850)", publisher: "GAO", type: regulator, url: "https://www.gao.gov/assets/gao-26-108850-highlights.pdf", date: "2026-01", access: full, locator: "What GAO found"}
   last_reviewed: "2026-10-21"
   notes: "Firm type: small local governmental and nonprofit firm (St. Pierre). Grade B rests on the bond indenture example. The grant-agreement part is a vendor description (grade C on its own). No source shows a firm testing a grant agreement's compliance terms against the Compliance Supplement with AI. General contract-review pattern: assurance-substantive-testing-14."
 
@@ -129,17 +127,17 @@
   risks_and_guardrails:
     - "The owner says staff still have to read and evaluate the output [TR-NPCASE-2026]"
     - "The 2026 GAS/SA Guide expects risk of material noncompliance to be assessed at a more granular level, for fraud and error separately, and discussed with management [BDO-GASSA-2026]; no source shows AI used for that single-audit step"
-    - "Citrin Cooperman's innovation leader ties in-engagement reasoning to professional development [CITRIN-DAS-2026]"
+    - "Citrin Cooperman's innovation leader ties in-engagement reasoning to professional development [CASEWARE-CITRIN-2026]"
   human_checkpoints:
     - "Manager reviews the risk assessment; partner approves"
-  role_evolution: "Juniors take on risk-assessment work earlier; seniors review instead of explaining [TR-NPCASE-2026]."
+  role_evolution: "Newer staff engage with inherent risk at assertion level without a senior walking them through it; Sam Brown says delegating more through the tools means staff 'learn more and learn quicker' [TR-NPCASE-2026]."
   evidence_grade: B
   sources:
     - {ref: TR-NPCASE-2026, title: "Three nonprofit-focused firms modernize audits with CoCounsel and Audit Intelligence", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/three-nonprofit-focused-firms-modernize-audits-with-thomson-reuters-audit-intelligence-and-cocounsel", date: "2026-04-10", access: full, locator: "Opportunity section (Forde); Fear not section"}
     - {ref: BDO-GASSA-2026, title: "More scrutiny, more documentation: the impact of the updated AICPA GAS/SA Guide to auditees", publisher: "BDO", type: firm, url: "https://www.bdo.com/insights/industries/nonprofit-education/more-scrutiny-more-documentation-the-impact-of-the-updated-aicpa-gas-sa-guide-to-auditees", date: "2026-10-15", access: full, locator: "Paragraphs 3-4 on risk of material noncompliance"}
-    - {ref: CITRIN-DAS-2026, title: "Citrin Cooperman adopts AI-enabled DAS Suite powered by Caseware", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "Strengthening professional development and audit quality"}
+    - {ref: CASEWARE-CITRIN-2026, title: "Citrin Cooperman adopts AI-enabled DAS Suite powered by Caseware", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "Paragraphs on talent development (Kanter quote)"}
   last_reviewed: "2026-10-21"
-  notes: "Firm type: one small local nonprofit-focused firm (The Forde Firm). Citrin Cooperman is a private-company-focused firm (landscape description); its statement is general, not about this use. Caseware's Risk Suggestion Agent launched later in 2026 (title seen on Caseware's news list; page not opened), so it is not used as evidence. General patterns: assurance-planning-risk-assessment-09 and -12."
+  notes: "Firm type: one small local nonprofit-focused firm (The Forde Firm). Citrin Cooperman is a private-company-focused firm (landscape description); its statement is general, not about this use. Caseware's Risk Suggestion Agent (alpha at the 2026-05-20 launch, launched worldwide 2026-10-06 per a Caseware release keyed CASEWARE-RSA-2026 in private-company) shows no nonprofit use, so it is not evidence here. General patterns: assurance-planning-risk-assessment-09 and -12."
 
 - id: assurance-nonprofit-government-05
   title: "Citation-backed technical research on ASC 958, GASB, Uniform Guidance and Yellow Book questions"
@@ -162,7 +160,7 @@
     - "An approved, secured tool; Plante Moran's case describes new AI security protocols and software controls [TR-PLANTEMORAN-2025]"
     - "Firm templates and methodology loaded so answers match firm practice"
   risks_and_guardrails:
-    - "An interviewee in a Thomson Reuters piece says AI systems can still fail in hidden ways and that firms should test systems on their own work [TR-STATE-2026]"
+    - "Thomson Reuters' head of audit product says AI systems can still fail in hidden ways and that firms must learn to evaluate and test them themselves (vendor) [TR-STATE-2026]"
     - "AICPA practice aid: firm policies, competence and partner approval of tools [AICPA-PA-2026]"
     - "Under the 2024 Yellow Book a firm must have designed its system of quality management by 2025-12-15 and completed its initial evaluation by 2026-12-15; the FAQ does not mention AI [GAO-YBFAQ-2025]"
   human_checkpoints:
@@ -173,8 +171,8 @@
     - {ref: TR-PLANTEMORAN-2025, title: "Thomson Reuters CoCounsel at Plante Moran", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/thomson-reuters-cocounsel-at-plante-moran", date: "2025-11-20", access: full, locator: "Key outcomes"}
     - {ref: TR-STPIERRE-2026, title: "Modernizing nonprofit and government audits with CoCounsel Audit", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/modernizing-nonprofit-and-government-audits-with-cocounsel-audit", date: "2026-03-09", access: full, locator: "When to use conversations and workspaces; Outcomes"}
     - {ref: TR-CCAUDITPAGE-2025, title: "CoCounsel Audit & Accounting (product page)", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/products/cocounsel-audit-accounting", date: "2025-08-25", access: full, locator: "Industry-specific and governmental audits"}
-    - {ref: TR-STATE-2026, title: "The state of AI in audit in 2026: seven questions", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/", date: "2026-03-30", access: full, locator: "Section on skepticism to trust"}
-    - {ref: GAO-YBFAQ-2025, title: "Government Auditing Standards FAQ: establishing and maintaining a system of quality management (GAO-26-108710)", publisher: "GAO", type: standard-setter, url: "https://files.gao.gov/reports/GAO-26-108710/index.html", date: "2025-12", access: full, locator: "Section I, questions 1 and 2"}
+    - {ref: TR-STATE-2026, title: "The state of AI in audit in 2026: Interview with experts", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/", date: "2026-03-30", access: full, locator: "Section on skepticism to trust"}
+    - {ref: GAO-YBFAQ-2025, title: "Government Auditing Standards FAQ: establishing and maintaining a system of quality management (GAO-26-108710)", publisher: "GAO", type: standard-setter, url: "https://files.gao.gov/reports/GAO-26-108710/index.html", date: "2025-12-15", access: full, locator: "Section I, questions 1 and 2"}
     - {ref: AICPA-PA-2026, title: "AICPA releases guidance to help auditors address the use of AI in financial reporting and auditing", publisher: "AICPA & CIMA", type: standard-setter, url: "https://www.aicpa-cima.com/news/article/aicpa-releases-guidance-to-help-auditors-address-the-use-of-ai-in-financial-reporting-and-auditing", date: "2026-10-13", access: full, locator: "Section two summary"}
   last_reviewed: "2026-10-21"
   notes: "Firm types: Plante Moran, a top-100 national firm (the vendor calls it one of the nation's largest audit and accounting firms); St. Pierre, a small local firm. The Plante Moran survey is of general audit research, not a nonprofit or government engagement, so the grade is capped at B. Governmental content claims (GASB, Uniform Guidance) come from the vendor product page (keyed TR-CCAUDITPAGE-2025 because TR-COCOUNSEL-2025 already names a different Thomson Reuters document in the tax archetype). General pattern: assurance-quality-management-12 and assurance-planning-risk-assessment-02."
@@ -204,12 +202,12 @@
     - "Some statistical sampling literacy; one owner says the tool 'almost tricks the staff into doing statistical sampling' [TR-NPCASE-2026]"
   risks_and_guardrails:
     - "The 2026 AICPA GAS/SA Guide revises suggested minimum sample sizes for control and compliance testing, and expects more granular risk assessment [BDO-GASSA-2026]. No source says any sampling tool has been updated or validated against those revised tables."
-    - "AICPA runs a workshop on sampling in a Uniform Guidance compliance audit under Appendix B, so the rules are still being taught [AICPA-NFPWORKSHOPS-2026]"
-    - "Peer review of single audits is where documentation is tested: 2 of 11 single audit engagements reviewed in one state's 2025 report were nonconforming [TSCPA-PEERREVIEW-2025]"
+    - "AICPA ran a 2026 workshop on sampling in Uniform Guidance compliance audits under Appendix B of the 2025 audit guide [AICPA-NFPWORKSHOPS-2026]"
+    - "Peer review tests single-audit documentation: in one state's 2025 report, 2 of 11 single audit engagements reviewed were nonconforming [TSCPA-PEERREVIEW-2025]"
   human_checkpoints:
     - "Auditor defines risk strata and approves the sample"
     - "Reviewer inspects the generated documentation, since it is the evidence a peer reviewer reads"
-  role_evolution: "Staff get statistical sampling embedded in the workflow without a top-down methodology change; owners describe not backfilling departures [TR-NPCASE-2026]."
+  role_evolution: "The vendor says the tool brings statistical sampling in through the workflow without a top-down mandate, and frames Wells' two-fewer-staff result as not backfilling departures [TR-NPCASE-2026]."
   evidence_grade: B
   sources:
     - {ref: TR-NPCASE-2026, title: "Three nonprofit-focused firms modernize audits with CoCounsel and Audit Intelligence", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/three-nonprofit-focused-firms-modernize-audits-with-thomson-reuters-audit-intelligence-and-cocounsel", date: "2026-04-10", access: full, locator: "Key results; Outcome section"}
@@ -217,10 +215,10 @@
     - {ref: AICPA-NFPWORKSHOPS-2026, title: "Pre-conference workshops, AICPA Not-for-Profit Industry Conference (workshop 102)", publisher: "AICPA & CIMA", type: conference, url: "https://events.aicpa-cima.com/nfp/Program/Pre-Conference-Workshops", date: "2026-06-15", access: full, locator: "Workshop 102"}
     - {ref: TSCPA-PEERREVIEW-2025, title: "Annual Report on Peer Review Activities 2025", publisher: "Tennessee Society of CPAs", type: professional-body, url: "https://tscpa.com/wp-content/uploads/2026/03/Annual-Report-on-Peer-Review-Activities-2025-final.pdf", date: "2026-03-31", access: full, locator: "Section II.2.c, nonconforming engagements table"}
   last_reviewed: "2026-10-21"
-  notes: "Pattern other: population segmentation and sample selection. Ladder automate because selection and documentation run without a person; the auditor sets the strata and approves the output. Firm type: three small local nonprofit-focused firms. The tool is described as population analysis for audits generally; the sources do not show it applied to the Compliance Supplement sampling tables. Sam Brown CPA's separate estimate of at least five to six hours saved per audit from the same tool sits in the private-company module research (TR-SAMBROWN-2026); it is not nonprofit-specific. The TSCPA figure is one state's report with 11 single audits reviewed; it is context, not a measure of any tool. The workshop page title reads 2027 but the workshop date given (Monday 15 June) matches 2026; treat the date as approximate. General patterns: assurance-substantive-testing-08 and -09, assurance-controls-testing-04."
+  notes: "Pattern other: population segmentation and sample selection. Ladder automate because selection and documentation run without a person; the auditor sets the strata and approves the output. Firm type: three small local nonprofit-focused firms. The tool is described as population analysis for audits generally; the sources do not show it applied to the Compliance Supplement sampling tables. Sam Brown CPA's separate estimate of at least five to six hours saved per audit from the same tool sits in the private-company module research (TR-SAMBROWN-2026); it is not nonprofit-specific. The TSCPA figure is one state's report with 11 single audits reviewed; it is context, not a measure of any tool. The workshop page's browser title reads 2027, but its heading says 2026 pre-conference workshops on Monday, June 15. General patterns: assurance-substantive-testing-08 and -09, assurance-controls-testing-04."
 
 - id: assurance-nonprofit-government-07
-  title: "Reusable Excel agents run single-audit grant compliance tests for clients that report in a common format (Pattillo Brown & Hill; Perry & Associates)"
+  title: "Excel agents run a single-audit grant compliance test and payroll sampling in a regional government audit practice; OCR extraction on a grant engagement (Pattillo Brown & Hill; Perry & Associates)"
   archetype: assurance
   module: nonprofit-government
   function: service-delivery
@@ -231,13 +229,13 @@
   runtime_class: shared-team-skills
   maturity: in-production
   problem: "Regional firms with many similar government clients (for example about 70 school districts) receive client data as large, inconsistently formatted PDFs, and single-audit compliance tests are long."
-  solution: "An audit-focused Excel agent from DataSnipper extracts from differently formatted documents, selects payroll samples and runs multi-item compliance tests. Every result is tied to a source snip so a reviewer can verify it. PB&H is building agents tailored to the software its school-district clients use, to be shared across the firm. Perry & Associates used the vendor's OCR and snips (not an agent) to prepare workpapers on a grant engagement."
+  solution: "An audit-focused Excel agent from DataSnipper extracts from differently formatted documents, selects payroll samples and runs multi-item compliance tests. Every result is tied to a source snip so a reviewer can verify it. PB&H is also building reusable trial-balance formatting agents, tailored to the software its school-district clients use, to share across the firm. Perry & Associates used the vendor's OCR and snips (not an agent) to prepare workpapers on a grant consultancy engagement."
   outcomes:
     - {lever: speed, description: "PB&H ran a multi-level grant compliance test on 63 items in about an hour", figure: "63 items in about an hour", measures: "Number of items an Excel agent tested in one single-audit compliance test, with the time given by a staff member as 'about an hour'; no manual baseline or error check stated", provenance: vendor-published, source_ref: DATASNIPPER-PBH-2026}
     - {lever: speed, description: "Perry & Associates reports workpaper preparation time on a 50-fund grant engagement", figure: "80 hours to 25 hours", measures: "Preparation of workpapers for one client with 50 funds and three years of data in six boxes, as reported by the firm in a DataSnipper case study (one engagement; OCR and snips, not an agent)", provenance: vendor-published, source_ref: DATASNIPPER-PERRY-2025}
     - {lever: speed, description: "Perry & Associates headline for grant-review preparation", figure: "68% reduction", measures: "Reduction in grant review preparation time as stated by the vendor for Perry & Associates; basis not stated beyond the 80-to-25-hour example", provenance: vendor-published, source_ref: DATASNIPPER-PERRY-2025}
   prerequisites:
-    - "A repeatable client population, so one agent can be reused (about 70 school districts at PB&H) [DATASNIPPER-PBH-2026]"
+    - "A repeatable client population for reuse; PB&H's about 70 school districts report consistently, which it cites for trial-balance agents, not the compliance test [DATASNIPPER-PBH-2026]"
   risks_and_guardrails:
     - "PB&H says Copilot in Excel cannot make snips, so output cannot be verified; the traceable snip is the control [DATASNIPPER-PBH-2026]"
     - "Figures are single examples told by the firm, with no sample size or error rate"
@@ -247,10 +245,10 @@
   role_evolution: "PB&H says the agent repeats monotonous tasks like a staff member and also builds tests and checks compliance, which it called a more senior-level task. Perry says junior team members did the scanning [DATASNIPPER-PBH-2026; DATASNIPPER-PERRY-2025]."
   evidence_grade: B
   sources:
-    - {ref: DATASNIPPER-PBH-2026, title: "DataSnipper Success Stories - PB&H (Purpose-built for auditors: government audit work with Excel Agents)", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/pb-h-automation-excel-agents", date: "2026", access: full, locator: "Profile paragraph; Q&A on 70 school districts, 63 items in about an hour, payroll register sampling"}
-    - {ref: DATASNIPPER-PERRY-2025, title: "DataSnipper Success Stories - Perry & Associates CPAs", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/perry-associates-cpas", date: "2025", access: full, locator: "Sections 'Audit Consultancy' (80 to 25 hours) and headline summary (68%)"}
+    - {ref: DATASNIPPER-PBH-2026, title: "DataSnipper Success Stories - PB&H (Purpose-built for auditors: government audit work with Excel Agents)", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/pb-h-automation-excel-agents", date: "2026-08-31", access: full, locator: "Profile paragraph; Q&A on 70 school districts, 63 items in about an hour, payroll register sampling"}
+    - {ref: DATASNIPPER-PERRY-2025, title: "DataSnipper Success Stories - Perry & Associates CPAs", publisher: "DataSnipper", type: vendor, url: "https://www.datasnipper.com/resources/perry-associates-cpas", date: "2025-09-19", access: full, locator: "Sections 'Audit Consultancy' (80 to 25 hours) and headline summary (68%)"}
   last_reviewed: "2026-10-21"
-  notes: "Routed from the private-company research, whose entry covers the wider pattern (trial balances, footing, state uploads, Aprio); only the single-audit and grant side is kept here. Firm types: Pattillo Brown & Hill (PB&H) is a regional firm (200+ professionals, Texas and New Mexico); Perry & Associates is a local firm in Marietta, Ohio. The DataSnipper pages carry no visible publication date; the PB&H year is inferred from product names and the Perry year from page metadata. This is the only named AI use found on a single-audit compliance test. Related: assurance-substantive-testing-11 and -12."
+  notes: "Routed from the private-company research, whose entry covers the wider pattern (trial balances, footing, state uploads, Aprio); only the single-audit and grant side is kept here. Firm types: Pattillo Brown & Hill (PB&H) is a regional firm (200+ professionals, Texas and New Mexico); Perry & Associates is a local firm in Marietta, Ohio. The DataSnipper pages carry no visible byline date; both dates come from page metadata (publication_date and date fields). Perry's work was a consultancy engagement (fund reporting to the federal government), not a single audit. This is the only named AI use found on a single-audit compliance test. Related: assurance-substantive-testing-11 and -12."
 
 - id: assurance-nonprofit-government-08
   title: "Idea: review of the draft schedule of expenditures of federal awards against award documents and the ledger"
@@ -330,7 +328,7 @@
   outcomes:
     - {lever: capacity, description: "Caseware says the agent saves 2.7 review hours per workflow on average", figure: "2.7 review hours per workflow", measures: "Average review hours saved per workflow, as stated by Caseware; basis, sample and engagement types not stated", provenance: vendor-published, source_ref: CASEWARE-LAUNCH-2026}
   prerequisites:
-    - "Firm on the vendor's audit platform (Citrin Cooperman adopted it on 2026-07-13 [CITRIN-DAS-2026])"
+    - "Firm on the vendor's audit platform (Citrin Cooperman's adoption was announced 2026-07-13 [CASEWARE-CITRIN-2026])"
     - "Firm-approved disclosure lists and prior statements as references (a Thomson Reuters customer-success suggestion for a similar template [TR-STPIERRE-2026])"
   risks_and_guardrails:
     - "Vendor figures are not independently checked"
@@ -341,7 +339,7 @@
   evidence_grade: C
   sources:
     - {ref: CASEWARE-LAUNCH-2026, title: "Caseware launches Caseware Verity to bring workflow-native AI agents directly into assurance engagements", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/caseware-launches-verity-to-bring-workflow-native-ai-agents-directly-into-assurance-engagements", date: "2026-05-20", access: full, locator: "Agent list, Disclosure Checklist Agent"}
-    - {ref: CITRIN-DAS-2026, title: "Citrin Cooperman adopts AI-enabled DAS Suite powered by Caseware", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "Paragraph 3"}
+    - {ref: CASEWARE-CITRIN-2026, title: "Citrin Cooperman adopts AI-enabled DAS Suite powered by Caseware", publisher: "Caseware", type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: "2026-07-13", access: full, locator: "Paragraph 4 (Verity Disclosure Checklist Agent)"}
     - {ref: TR-STPIERRE-2026, title: "Modernizing nonprofit and government audits with CoCounsel Audit", publisher: "Thomson Reuters", type: vendor, url: "https://tax.thomsonreuters.com/en/insights/case-studies/modernizing-nonprofit-and-government-audits-with-cocounsel-audit", date: "2026-03-09", access: full, locator: "Innovation opportunity: missing financial statement disclosures"}
   last_reviewed: "2026-10-21"
   notes: "Vendor claim. Kept because it is the only disclosure-checklist item tied to a firm with a nonprofit practice and to a small government firm's stated wish (missing disclosures). Citrin Cooperman is a private-company-focused firm (landscape description); its release names the agent as an example of agents available but does not say Citrin runs it in production. The release does not say the agent covers FASB ASC 958 or GASB disclosure sets. Caseware also cites 94% accuracy on 'golden dataset' items from beta traces and a drop from 15-20 minutes to under two minutes per indicative manual workflow; both are vendor-published and not engagement measures. Key CASEWARE-LAUNCH-2026 matches completion-reporting (the research file called it CASEWARE-VERITY-2026, which names a different Caseware blog in substantive-testing). General pattern: assurance-completion-reporting-01 and -03."
@@ -359,7 +357,7 @@
   change_scope: step
   runtime_class: personal-assistant
   maturity: emerging
-  problem: "Small nonprofit finance teams answer long audit request lists under time pressure. Sixty percent of nonprofits in one vendor survey rely on one full-time person for all financial management and accounting."
+  problem: "Small nonprofit finance teams answer long audit request lists under time pressure. Sixty percent of nonprofits in one vendor survey rely on one full-time person for all financial management and accounting [MOMENTIVE-2026]."
   solution: "A national firm's audit-readiness playbook gives finance teams prompts to sort an audit request list by owner and source, draft fluctuation explanations, check schedules for footing errors and draft estimate memos, in approved tools only. The playbook says outputs are drafts."
   outcomes:
     - {lever: capacity, description: "none published", figure: "none published", measures: "No outcome figures in the source", provenance: self-reported, source_ref: ARMANINO-NFPAI-2026}
@@ -371,7 +369,7 @@
     - "Mason (Gemifi) says PII worries keep many on Microsoft tools [AICPA-NFPAI-2026]"
   human_checkpoints:
     - "Finance director validates every explanation against actual activity before it goes to auditors"
-  role_evolution: "Nonprofit finance staff move from compiling to checking, per an AHRC finance leader [AICPA-NFPCONF-2026]. The deck names a partner as Audit AI Innovation Leader [ARMANINO-NFPAI-2026]."
+  role_evolution: "AHRC New York City's CFO says AI moves accounting staff away from reconciliations and compiling information toward analyzing it [AICPA-NFPCONF-2026]. The deck names a partner as Audit AI Innovation Leader [ARMANINO-NFPAI-2026]."
   evidence_grade: D
   sources:
     - {ref: ARMANINO-NFPAI-2026, title: "The Nonprofit Audit: Readiness, Risk and the Role of AI (webinar deck)", publisher: "Armanino", type: firm, url: "https://www.armanino.com/-/media/pdf/webinars/2026/nonprofit-audit-readiness-risk-ai.pdf", date: "2026-08-06", access: full, locator: "Slides 13-14, 16-29"}
@@ -379,7 +377,7 @@
     - {ref: AICPA-NFPAI-2026, title: "The untapped potential of AI in not-for-profit accounting", publisher: "AICPA & CIMA", type: professional-body, url: "https://www.aicpa-cima.com/professional-insights/article/the-untapped-potential-of-ai-in-not-for-profit-accounting", date: "2026-09-10", access: full, locator: "PII paragraph"}
     - {ref: AICPA-NFPCONF-2026, title: "NFP conference: new tools and insights for today's leaders", publisher: "AICPA & CIMA", type: conference, url: "https://www.aicpa-cima.com/professional-insights/article/nfp-conference-new-tools-and-insights-for-todays-leaders", date: "2026-02-17", access: full, locator: "AI as a strategic tool for NFP teams"}
   last_reviewed: "2026-10-21"
-  notes: "Idea. A firm-published playbook from Armanino, a top-100 national firm, with no deployment or outcome reported. Also touches advisory client accounting services; kept here because it changes the auditor's inputs. The survey's headline says 65% rely on one person and its body says 60%; the source is inconsistent."
+  notes: "Idea. A firm-published playbook from Armanino, a top-100 national firm, with no deployment or outcome reported. Also touches advisory client accounting services; kept here because it changes the auditor's inputs. The release subtitle says 65% rely on one person for 'all financial operations'; its body says 60% for 'all financial management and accounting'. It does not reconcile the two."
 
 - id: assurance-nonprofit-government-12
   title: "Screening grant documents for policy-restricted language before submission (university research office)"
@@ -395,7 +393,7 @@
   problem: "Grant writers must remove language that new federal or state policy restricts; manual review is slow and delays submissions."
   solution: "A university research office tool combines rule-based text matching with a language model in a private cloud to flag sensitive terms in a grant document and suggest alternatives."
   outcomes:
-    - {lever: quality, description: "On five annotated grant documents the tool found most policy-sensitive terms with no false positives and beat general-purpose models", figure: "precision 1.00; recall 0.73 (16 of 22 terms); F1 0.84", measures: "Terms correctly flagged out of 22 policy-sensitive terms annotated by two reviewers across 5 grant proposals, compared with GPT-4o (F1 0.43) and Gemini 2.5 Pro (F1 0.72)", provenance: self-reported, source_ref: GRANTCHECK-2025}
+    - {lever: quality, description: "On five annotated grant documents the tool found most policy-sensitive terms with no false positives and scored above general-purpose models (not significantly above Gemini 2.5 Pro)", figure: "precision 1.00; recall 0.73 (16 of 22 terms); F1 0.84", measures: "Terms correctly flagged out of 22 policy-sensitive terms annotated by two reviewers across 5 grant proposals, compared with GPT-4o (F1 0.43) and Gemini 2.5 Pro (F1 0.72); the authors report the Gemini 2.5 Pro difference as not statistically significant", provenance: self-reported, source_ref: GRANTCHECK-2025}
     - {lever: experience, description: "Usability among faculty and staff scored high", figure: "mean SUS 85.9 (SD 13.4)", measures: "System Usability Scale score from 25 faculty and staff testers", provenance: self-reported, source_ref: GRANTCHECK-2025}
   prerequisites:
     - "Institution-hosted private environment; term dictionary maintained by the office"
@@ -413,7 +411,7 @@
 # ---- Counterparties and government audit offices ----
 
 - id: assurance-nonprofit-government-13
-  title: "Federal agency AI analysis of single audit history to target noncompliance and review audit rigor (HHS AERO)"
+  title: "Federal agency AI analysis of single audit history to target noncompliance, alongside a review of audit rigor (HHS AERO)"
   archetype: assurance
   module: nonprofit-government
   function: service-delivery
@@ -432,22 +430,22 @@
   risks_and_guardrails:
     - "Stakeholders have raised questions about transparency, methodology and procedural fairness [CBH-AERO-2026]; Thompson reports the effort is 'under fire' from some stakeholder organizations [THOMPSON-AERO-2026]"
     - "HHS says it is too early to estimate savings [HHS-AERO-2026]"
-    - "GAO: AI for fraud and improper payments needs reliable data and a human in the loop [GAO-FRAUDAI-2026]"
+    - "GAO testimony: AI for fraud and improper payments needs reliable data and a human in the loop [GAO-FRAUDAI-2026]"
   human_checkpoints:
     - "HHS staff send letters and decide on remedies; the press release does not describe review of AI outputs"
-  role_evolution: "Auditors' reports become inputs to agency analytics; firms advise clients to fix repeat findings, timeliness and corrective action plans [CBH-AERO-2026; FELDESMAN-AERO-2026]. HHS says it is examining whether audits are conducted with sufficient rigor [HHS-AERO-2026]."
+  role_evolution: "Single audit information becomes input to HHS's AI analysis, and HHS says it is examining whether audits are conducted with sufficient rigor [HHS-AERO-2026]. Advisers tell grantees to fix repeat findings and document corrective action [CBH-AERO-2026; FELDESMAN-AERO-2026]."
   evidence_grade: B
   sources:
     - {ref: HHS-AERO-2026, title: "HHS cracks down on years of unchecked audit findings", publisher: "U.S. Department of Health and Human Services", type: regulator, url: "https://www.hhs.gov/press-room/asfr-aero-audit-enforcement-risk-oversight-initiative.html", date: "2026-05-21", access: full, locator: "Paragraphs 1-3"}
     - {ref: FELDESMAN-AERO-2026, title: "Client alert: HHS to use AI tools to track grantee compliance with audit requirements", publisher: "Feldesman", type: firm, url: "https://www.feldesman.com/hhs-to-use-artificial-intelligence-tools-to-track-grantee-compliance-with-audit-requirements/", date: "2026-05-22", access: full, locator: "Opening paragraphs"}
     - {ref: THOMPSON-AERO-2026, title: "Sneak preview: HHS using AI to enforce compliance with single audit requirements", publisher: "Thompson Grants", type: press, url: "https://www.thompsongrants.com/editorial-commentary/sneak-preview-hhs-using-ai-to-enforce-compliance-with-single-audit-requirements", date: "2026-05-27", access: full, locator: "Opening paragraph"}
     - {ref: CBH-AERO-2026, title: "HHS's AERO use of AI to enforce single audit compliance raises the stakes for grantees", publisher: "Cherry Bekaert", type: firm, url: "https://www.cbh.com/insights/articles/hhs-aero-ai-grantee-audit-readiness-step/", date: "2026-06-26", access: full, locator: "Why AI changes the conversation"}
-    - {ref: GAO-FRAUDAI-2026, title: "Fraud and improper payments: data quality and a skilled workforce are essential for realizing AI's benefits (GAO-26-108850)", publisher: "GAO", type: regulator, url: "https://www.gao.gov/assets/gao-26-108850-highlights.pdf", date: "2026-01", access: full, locator: "What GAO found"}
+    - {ref: GAO-FRAUDAI-2026, title: "Fraud and improper payments: data quality and a skilled workforce are essential for realizing AI's benefits (GAO-26-108850)", publisher: "GAO", type: regulator, url: "https://www.gao.gov/assets/gao-26-108850-highlights.pdf", date: "2026-01", access: full, locator: "What GAO found (read via mirror; direct fetch denied)"}
   last_reviewed: "2026-10-21"
   notes: "Counterparty (federal awarding agency) use, not the auditor's own AI. Cherry Bekaert is a top-100 firm; Feldesman is a law firm. One secondary report seen only in a search summary (not opened) said the tools include ChatGPT; HHS's release names no model, so that claim is not repeated here. The tools, accuracy and any error rate are unpublished. Included because it raises the quality bar for every nonprofit and government audit firm. The HHS page was read via a mirror (direct fetch denied)."
 
 - id: assurance-nonprofit-government-14
-  title: "State audit offices use AI to find anomalies in large spending datasets under written AI policies"
+  title: "State audit offices: AI on large spending datasets with human verification (North Carolina); a published governed-use AI policy (Washington)"
   archetype: assurance
   module: nonprofit-government
   function: service-delivery
@@ -458,7 +456,7 @@
   runtime_class: background-agent
   maturity: in-production
   problem: "State and local government audits involve large transaction sets, such as purchasing-card spending, and small audit teams."
-  solution: "The North Carolina State Auditor says the office uses industry partners to apply AI to large datasets, then verifies findings with people. The Washington State Auditor publishes a policy for limited, governed AI use with a staff review requirement and an oversight committee."
+  solution: "The North Carolina State Auditor says the office uses industry partners to apply AI to large datasets, then verifies findings with people. The Washington State Auditor publishes a policy for limited, governed AI use with a staff review requirement and an oversight committee; it does not describe specific audit uses."
   outcomes:
     - {lever: risk, description: "North Carolina's auditor says AI helps find a needle in a haystack and has made purchasing-card audits more efficient", figure: "none published", measures: "Official's interview statement; no counts, error rates or time measures", provenance: self-reported, source_ref: NCAUDITOR-2026}
   prerequisites:
@@ -467,16 +465,17 @@
   risks_and_guardrails:
     - "The auditor says AI alone is not reliable enough to accept results without human verification [NCAUDITOR-2026]"
     - "Washington requires staff to review, verify and take responsibility for AI-assisted work [WASAO-AIPOLICY-2026]"
+    - "GAO testimony: agencies using AI against fraud and improper payments need reliable data and a human in the loop [GAO-FRAUDAI-2026]"
   human_checkpoints:
     - "People verify what the AI finds before results are accepted [NCAUDITOR-2026]"
   role_evolution: "Teams point staff at the places where review is worth the effort [NCAUDITOR-2026]."
   evidence_grade: B
   sources:
-    - {ref: NCAUDITOR-2026, title: "Boliek: jet fuel on computer technology, getting juice worth the squeeze", publisher: "The Center Square (via local papers)", type: press, url: "https://www.themountaineer.com/news/state/boliek-jet-fuel-on-computer-technology-getting-juice-worth-the-squeeze/article_f3ca886a-373c-58ee-aee8-0287a461188d.html", date: "2026-07-08", access: full, locator: "Quotes on partners, verification, procurement cards"}
+    - {ref: NCAUDITOR-2026, title: "Boliek: jet fuel on computer technology, getting juice worth the squeeze", publisher: "The Center Square (via local papers)", type: press, url: "https://www.themountaineer.com/news/state/boliek-jet-fuel-on-computer-technology-getting-juice-worth-the-squeeze/article_f3ca886a-373c-58ee-aee8-0287a461188d.html", date: "2026-07-09", access: full, locator: "Quotes on partners, verification, procurement cards"}
     - {ref: WASAO-AIPOLICY-2026, title: "AI Use Policy", publisher: "Office of the Washington State Auditor", type: regulator, url: "https://sao.wa.gov/ai-use-policy", date: "2026-08", access: full, locator: "Full page"}
-    - {ref: GAO-FRAUDAI-2026, title: "Fraud and improper payments: data quality and a skilled workforce are essential for realizing AI's benefits (GAO-26-108850)", publisher: "GAO", type: regulator, url: "https://www.gao.gov/assets/gao-26-108850-highlights.pdf", date: "2026-01", access: full, locator: "What GAO found"}
+    - {ref: GAO-FRAUDAI-2026, title: "Fraud and improper payments: data quality and a skilled workforce are essential for realizing AI's benefits (GAO-26-108850)", publisher: "GAO", type: regulator, url: "https://www.gao.gov/assets/gao-26-108850-highlights.pdf", date: "2026-01", access: full, locator: "What GAO found (read via mirror; direct fetch denied)"}
   last_reviewed: "2026-10-21"
-  notes: "Organization type: state government audit offices (public-sector auditors), not mid-market CPA firms. They show what local-government clients and competitors for government audit work may see. Oklahoma's newly elected auditor was reported as planning AI use but the page could not be read."
+  notes: "Organization type: state government audit offices (public-sector auditors), not mid-market CPA firms. They show what local-government clients and competitors for government audit work may see. Oklahoma's newly elected auditor was reported as planning AI use but the page could not be read. NC article published 2026-07-09 on the interview of 2026-07-08. Washington's policy page says last modified August 2026."
 
 # ---- Form 990 and exempt-organization tax ----
 
@@ -499,7 +498,7 @@
     - "Return data entered or imported into the product"
   risks_and_guardrails:
     - "IRS OPR Alert 2026-19 ties AI use by tax practitioners to due diligence, competence, fees and firm procedures under Circular 230; it is not specific to exempt organization returns [IRS-OPR-2026]"
-    - "Whether sending return information to an AI tool needs section 7216 consent is unresolved for 1040-series returns; no source addresses exempt-organization returns [CPAPA-SETTLE-2026]"
+    - "The IRS has not said whether sending return information to an AI tool is a section 7216 disclosure; the article does not discuss exempt-organization returns [CPAPA-SETTLE-2026]"
   human_checkpoints:
     - "Preparer reviews and signs; the check is not an approval"
   role_evolution: "Not described."
@@ -533,7 +532,7 @@
     - "TIGTA found IRS return-selection models for other divisions produced a high percentage of exams with no change, and that the IRS lacked processes to evaluate whether AI models beat prior approaches [TIGTA-2025]; the audit did not cover TE/GE"
   human_checkpoints:
     - "Not described"
-  role_evolution: "Practitioners should expect 990 data to be screened by the IRS; unrelated business income and compensation reporting were named issues [EY-TEGE-2024]."
+  role_evolution: "Not described. EY's summary says data-driven exams use Form 990 data and names unrelated business income and compensation among the issues found [EY-TEGE-2024]."
   evidence_grade: C
   sources:
     - {ref: EY-TEGE-2024, title: "TE/GE Commissioner highlights strategic achievements in fiscal 2023 accomplishments letter, will be launching AI screening program in FY 2024", publisher: "EY Tax News", type: press, url: "https://taxnews.ey.com/news/2024-0350-te-ge-commissioner-highlights-strategic-achievements-in-fiscal-2023-accomplishments-letter-will-be-launching-ai-screening-program-in-fy-2024", date: "2024-02-06", access: full, locator: "Paragraphs on the AI tool and data-driven examinations"}
