@@ -30,14 +30,13 @@
     Valuation engagements involve repetitive analytical and research steps (peer screens, volatility, attrition
     cohorts, client information requests) that consume junior analyst hours.
   solution: >-
-    At the ASA Fair Value Conference in New York (reported by BVWire on 2026-06-10) a KPMG panellist said the firm is working to embed AI "into
-    everything that we do", with applications ranging from information requests, meeting summaries and technical
-    research to volatility analysis (how much a share price moves), attrition analysis (how fast customers are lost)
-    and comparable-company screening. Other Big Four panellists described AI as increasingly part of valuation
-    workflows and stressed judgment, review and auditability (BVR-KPMGTREND-2026). The report does not name the AI
-    tools used. Separately, KPMG announced
-    (2026-05-19) an alliance giving all of its 276,000+ people access to Claude (ANTHROPIC-KPMG-2026). Firm type:
-    Big Four.
+    At the ASA Fair Value Conference in New York (reported by BVWire on 2026-06-10) a KPMG panellist said the firm is
+    working to embed AI "into everything that we do", with applications ranging from information requests, meeting
+    summaries and technical research to volatility analysis (how much a share price moves), attrition analysis (how
+    fast customers are lost) and comparable-company screening. Other Big Four panellists described AI as increasingly
+    part of valuation workflows and stressed judgment, review and auditability (BVR-KPMGTREND-2026). The report does
+    not name the AI tools used. Separately, KPMG announced (2026-05-19) an alliance giving all of its 276,000+ people
+    access to Claude (ANTHROPIC-KPMG-2026). Firm type: Big Four.
   outcomes:
     - lever: capacity
       description: "Several speakers said firms are hiring fewer entry-level analysts as AI automates part of the mechanical work (reported by BVWire; no count given)"
@@ -54,8 +53,8 @@
   human_checkpoints:
     - "Reviewer sign-off on AI-assisted analyses, stated as essential by panellists (BVR-KPMGTREND-2026)"
   role_evolution: >-
-    Several speakers described fewer entry-level analyst hires and open questions about how future valuation professionals
-    will be trained (BVR-KPMGTREND-2026).
+    Several speakers described fewer entry-level analyst hires and open questions about how future valuation
+    professionals will be trained (BVR-KPMGTREND-2026).
   evidence_grade: B
   sources:
     - ref: BVR-KPMGTREND-2026
@@ -260,8 +259,8 @@
     Grade C (was B; downgraded 2026-10-21): the firms and the deployments are named, but neither case study says AI
     was used, so the AI claim rests on the vendor's branding (VALUTICO-HOME-2026) and the B would come from an
     adjacent, non-AI process. Rouse's 'a third' is a partner's estimate quoted by the vendor (Oscar Wingham; the
-    Kreston Reeves quote is from Jodie Jones). It would return to B if either firm or the vendor said AI was used. Related:
-    assurance-specialists-02 (valuation providers build third-party AI analytics into their methodology).
+    Kreston Reeves quote is from Jodie Jones). It would return to B if either firm or the vendor said AI was used.
+    Related: assurance-specialists-02 (valuation providers build third-party AI analytics into their methodology).
 
 - id: advisory-valuation-04
   title: "Grounded research assistant over a valuation technical library, used for standards research and junior-analyst coaching"
@@ -457,8 +456,8 @@
     forecast full statements over long horizons (ARXIV-FORMA-2026).
   solution: >-
     A research team released a benchmark (ProForma-20Q) and a specialist transformer model that forecasts 78 statement
-    line items 1-20 quarters ahead (ARXIV-FORMA-2026). This is a trained forecasting model, not a language-model agent.
-    Idea: researchers discuss it; no valuation firm use found.
+    line items 1-20 quarters ahead (ARXIV-FORMA-2026). This is a trained forecasting model, not a language-model
+    agent. Idea: researchers discuss it; no valuation firm use found.
   outcomes:
     - lever: quality
       description: "On the benchmark the specialist model beat classical machine learning, gradient boosting, a time-series foundation model and frontier large language models, with the lead widening at longer horizons"
@@ -659,8 +658,8 @@
     and never say AI was used, so the AI link is the vendor's branding and a B would rest on an adjacent, non-AI
     process. The 'months to days' statement is a recollection published by the vendor. The 3-5x and over-90% figures
     are boilerplate repeated across case studies; do not cite them as measured. RXM is listed by the vendor under
-    'Advisory / M&A & Corporate Finance' (Singapore); PKF FI under 'Advisory / Accounting & Tax & Audit' (France). Generative drafting of report sections is the separate entry
-    advisory-valuation-09.
+    'Advisory / M&A & Corporate Finance' (Singapore); PKF FI under 'Advisory / Accounting & Tax & Audit' (France).
+    Generative drafting of report sections is the separate entry advisory-valuation-09.
 
 - id: advisory-valuation-09
   title: "Generative AI drafts parts of valuation reports (market commentary and other sections)"

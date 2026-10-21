@@ -41,7 +41,7 @@ find and select taxpayers, because that sets the pace for every engagement. Sale
 |---|---|---|---|
 | Nexus identification and monitoring | State-by-state, tax-by-tax review of sales, payroll, property and employee locations against each state's tests | data-reporting, expert-judgment | Thresholds keep changing; in 2026 Kentucky dropped its 200-transaction sales tax test and New Jersey issued bright-line corporation business tax nexus guidance [MTC-NEXUSUPD-2026] |
 | Registration and foreign qualification | Register to do business in the state (foreign qualification), then open withholding, unemployment insurance and other accounts | transaction-processing, coordination-scheduling | Portal-by-portal manual work; a payroll vendor says withholding registration is required in 41 states and unemployment insurance in all 50 [WARP-REG-2026] |
-| Remote workers and residency | Track where employees and owners actually work and live; apply withholding and residency rules | data-reporting, expert-judgment | One employee in a new state can trigger several obligations that existing tools miss [GUSTO-MOSEY-2026]; New York's "convenience of the employer" rule (taxing remote work for a New York employer) is still litigated [MTC-NEXUSUPD-2026] |
+| Remote workers and residency | Track where employees and owners actually work and live; apply withholding and residency rules | data-reporting, expert-judgment | One employee in a new state can trigger obligations that may not show up in existing tools [GUSTO-MOSEY-2026]; New York's "convenience of the employer" rule (taxing remote work for a New York employer) is still litigated [MTC-NEXUSUPD-2026] |
 | Apportionment and sourcing | Compute sales, payroll and property factors from ledgers; decide sourcing; consider alternative apportionment | data-reporting, expert-judgment | Factors often computed separately by entity, creating reconciliation work and error risk [ALTERYX-APPORT-2026]; rules in flux [MTC-ANNUAL-2026] |
 | PTET election | Model whether an entity-level state tax election helps the owners, state by state | expert-judgment, data-reporting | State treatment differs (New York's credit refundable, California's not, for 2025, per a Vals model answer) [VALS-TAXAGENT-2026] |
 | State returns | Corporate, PTET, composite (one return filed for many nonresident owners) and nonresident withholding returns | transaction-processing, document-production | Covered in the compliance modules (`tax-compliance-corporate-06`) |
@@ -74,7 +74,7 @@ sales tax registration agents (`tax-indirect-tax-13`) and agent-prepared busines
   its example of work the practitioner must verify state by state; vendors advertise agents answering nexus questions
   [law firm, vendors]. Sales tax nexus agents: `tax-indirect-tax-13`.
 - Automate: `#05` (C) a new hire's work location triggers withholding, unemployment and foreign-qualification
-  registrations handled by a platform; Gusto (with Mosey), Warp and Skyvern claim this, aimed at small business
+  registrations handled by a platform; Gusto (with Mosey), Warp and Skyvern claim this; Gusto targets small business
   [vendors]. Registration does not settle income or franchise tax nexus.
 - Improve (idea): `#09` (D) a company scans its own data for the signals states match on before a notice arrives
   [consultancy and firm advice; no AI scan deployed]. Related: `tax-compliance-corporate-13`.
@@ -157,7 +157,8 @@ year and time to assemble support, and verification findings on AI-assisted stat
   only firm-approved systems for client data, and remembers §§6713 and 7216 and §10.36 firm procedures
   [KTS-OPR-2026]. The alert is federal; **no state board of accountancy or state revenue department guidance on
   AI-assisted state tax work was found**. Archetype-level rules are in [guardrails.md](../guardrails.md).
-- Written advice (§10.37) applies to PTET and other planning estimates [IRS-OPR-2026].
+- OPR lists §10.37 (written advice must rest on reasonable factual and legal assumptions and all relevant facts)
+  among the duties that apply [IRS-OPR-2026]; `#14` applies it to PTET estimates.
 
 **Agency AI and its oversight**
 - Selection criteria are not public. Tax Notes reporters found no outside audit or legislative report of the FTB
@@ -215,8 +216,9 @@ system suggests, auditors conduct) [SCPOST-AUDIT-2026].
 | 2026-09-23 | Akerman announces a COST annual meeting session on defending AI-driven assessments (talk content not seen) | [AKERMAN-COST-2026] |
 | Later 2026 | Gusto Business Compliance expected to launch | [GUSTO-MOSEY-2026] |
 
-Direction: the landscape scan expects multistate private companies to see earlier, data-driven notices; that is a
-reading of the agency signals above, not a measured trend. Not yet moved: any state guidance on AI-assisted state tax
+Direction: the landscape scan reads these agency signals as meaning multistate private companies should expect
+earlier, data-driven notices [SCPOST-AUDIT-2026; TAXNOTES-UNWATCHED-2026; WITHUM-SEATA-2026; MTC-ANNUAL-2026]; that is
+a reading, not a measured trend. Not yet moved: any state guidance on AI-assisted state tax
 work, any published state audit-yield figure, any firm-side SALT AI deployment.
 
 ## 9. Common objections
@@ -233,8 +235,8 @@ work, any published state audit-yield figure, any firm-side SALT AI deployment.
   [MTC-NEXUSDIR-2026]. Use the agency sources, not the sales pages.
 - **"AI can do the nexus study."** No source shows it. A law firm treats AI output as a draft that must be verified
   state by state [KTS-OPR-2026], and the only quality evidence is one benchmark question [VALS-TAXAGENT-2026].
-- **"Payroll handles registrations now."** Vendors say so for small business, with no accuracy figures, and
-  registration does not answer income or franchise tax nexus [GUSTO-MOSEY-2026].
+- **"Payroll handles registrations now."** Vendors say their platforms do it (Gusto targets small business), with no
+  accuracy figures, and registration does not answer income or franchise tax nexus [GUSTO-MOSEY-2026].
 - **"AI will shrink the SALT team."** One academic argues it will not, because AI cannot bear culpability
   [SALA-TAXNOTES-2026]; nothing measured either way.
 - **"There's no proof it works for us."** Accurate. Start with a bounded step (factor reconciliation `#06` or a

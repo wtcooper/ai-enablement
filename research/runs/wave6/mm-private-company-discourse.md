@@ -677,6 +677,14 @@ Adoption and attitude benchmarks:
 4. For preparation, compilation and review engagements, who drafts the statements and disclosures, does anyone use AI there, and how do you keep the independence and no-assurance lines clear?
 5. What have clients or audit committees asked about fees or AI since you adopted a tool, and what do you show them?
 
+### 3.9 Which kind of firm each example comes from
+
+- **National mid-market and PE-backed platforms:** Grant Thornton US (called a top 10 firm in the trade press; Grant Thornton Advisors is described as majority-owned by New Mountain Capital) and RSM US, which says Ask Luca serves 4,000+ assurance professionals for middle-market clients (GT-GTAP-2026; GOINGCONCERN-2026-08-03; RSM-ASKLUCA-2026).
+- **Top 25 and large regional firms:** Citrin Cooperman (describes itself as serving private, middle-market businesses), EisnerAmper (a top 15 firm per CPA Practice Advisor, top 20 per Caseware), PKF O'Connor Davies (Top 25 per Caseware); a Withum partner appears as a Verity beta user, with firm size not stated in the sources read (CITRIN-DAS-2026; EISNER-AUDITAGENT-2026; CASEWARE-EISNERAMPER-2026; CASEWARE-PKF-2026; CASEWARE-CWX-2026).
+- **Regional and local firms:** GRF CPAs & Advisors and AAFCPAs, whose sizes the pages do not state (GRF-ENGAGE-2026; AAFCPAS-ENGAGE-2026; CASEWARE-RISKAGENT-2026).
+- **Small and solo practices:** the AICPA small-firm column and the Journal of Accountancy's small-firm AI examples (firms with fewer than ten people, mostly tax and client communication, not audit) (JOFA-SMALLFIRM-2026; JOFA-REALLIFE-2026; GOINGCONCERN-2026-08-03).
+- **Vendors and bodies, not firms:** Caseware, Thomson Reuters, Wolters Kluwer, CPA.com, the AICPA, state societies, FEI/FERF. Context only: ICAEW (UK mid-tier), KPMG and Gartner (large firm; internal audit).
+
 ## 4. Routed to other modules
 
 - **planning-risk-assessment:** Caseware Risk Suggestion Agent worldwide launch and the GRF partner quote (CASEWARE-RISKAGENT-2026); the AICPA practice aid's start-of-engagement question about how far the client relies on AI in reporting, which turns the existing idea entry (06) into one with a published source (AICPA-AIPA-2026); gtap and any-ERP data ingestion (07) (GT-GTAP-2026).
