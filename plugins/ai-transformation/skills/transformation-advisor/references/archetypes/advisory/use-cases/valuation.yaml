@@ -144,8 +144,8 @@
     - "Analyst reviews the underlying transactions and decides which are appropriate for the subject company (BVR-RADATIP-2026)"
     - "Analyst owns the selection and the conclusion"
   role_evolution: >-
-    BVR positions the tool as combining AI efficiency with professional judgment that stays with the analyst
-    (BVR-RADAPRODUCT-2026); no role change is documented.
+    BVR's tip frames the tool as combining AI efficiency with professional judgment that stays with the analyst
+    (BVR-RADATIP-2026); no role change is documented.
   evidence_grade: C
   sources:
     - ref: BVR-RADAPRODUCT-2026
@@ -189,7 +189,7 @@
     agent over BVR's technical library is advisory-valuation-04.
 
 - id: advisory-valuation-03
-  title: "Comparables, multiples and discount-rate research inside a valuation platform (UK accounting-firm users)"
+  title: "Comparables, multiples and discount-rate research inside a vendor-branded AI valuation platform (UK accounting-firm users; AI use not stated)"
   archetype: advisory
   module: valuation
   function: service-delivery
@@ -228,7 +228,7 @@
   human_checkpoints:
     - "Analyst selects and justifies multiples and discount-rate inputs"
   role_evolution: "Not stated by the sources."
-  evidence_grade: B
+  evidence_grade: C
   sources:
     - ref: VALUTICO-KRESTON-2025
       title: "How Valutico Made Valuations More Efficient for Kreston Reeves (case study)"
@@ -256,8 +256,10 @@
       locator: "page 4 (IVS 104 text) and page 12 (IVS 104 paragraphs 40.01-50.02)"
   last_reviewed: "2026-10-20"
   notes: >-
-    Grade B: named UK firms, vendor-published, with a recollection-style estimate (so not A under the 2026-10-17
-    rule). The AI element is the vendor's branding, not the case study's content. Related:
+    Grade C (was B; downgraded 2026-10-21): the firms and the deployments are named, but neither case study says AI
+    was used, so the AI claim rests on the vendor's branding (VALUTICO-HOME-2026) and the B would come from an
+    adjacent, non-AI process. Rouse's 'a third' is a partner's estimate quoted by the vendor (Oscar Wingham; the
+    Kreston Reeves quote is from Jodie Jones). It would return to B if either firm or the vendor said AI was used. Related:
     assurance-specialists-02 (valuation providers build third-party AI analytics into their methodology).
 
 - id: advisory-valuation-04
@@ -376,7 +378,7 @@
     - "Firm policy on which AI tools may see client financials"
   risks_and_guardrails:
     - "Under Appraisal Foundation Advisory Opinion 41 the user, not the tool, is responsible for judging whether output is accurate and appropriate (ISA-AO41-2026)"
-    - "Court example: a financial expert's use of Copilot for a calculation led the court to find the testimony not credible, and the court found Copilot returned different numbers on repeat runs; a calculator or spreadsheet would have done the arithmetic (GOLDMAN-WEBER-2024)"
+    - "Court example (Matter of Weber, 2024): the court found the expert's testimony not credible, re-ran his Copilot queries and got slightly different numbers each time, and said counsel must disclose AI use before AI-generated evidence is admitted (GOLDMAN-WEBER-2024)"
   human_checkpoints:
     - "Analyst reviews model logic and outputs"
   role_evolution: "Not documented for valuation."
@@ -562,7 +564,7 @@
     independent, quantitative-style testing of LLM valuation output found, and it points to overconfident intervals.
 
 - id: advisory-valuation-08
-  title: "Template-driven automated valuation report generation inside a valuation platform (accounting-firm users outside the US)"
+  title: "Template-driven automated valuation report generation inside a vendor-branded AI valuation platform (advisory and accounting firms outside the US; AI use not stated)"
   archetype: advisory
   module: valuation
   function: service-delivery
@@ -573,8 +575,8 @@
   runtime_class: workflow-automation
   maturity: in-production
   problem: >-
-    Long business valuation reports (200 pages in one case) take weeks or months to assemble and create room for
-    manual errors (VALUTICO-RXM-2025; VALUTICO-PKFFI-2025).
+    Long business valuation reports (200 pages in one case) can take months to assemble, and manual work leaves room
+    for errors (VALUTICO-RXM-2025; VALUTICO-PKFFI-2025).
   solution: >-
     Valutico case studies (published December 2025) say RXM (Singapore) and PKF FI (served by the vendor's French
     team) use the platform's automated report generation. Firm type: accounting and advisory firms outside the US;
@@ -582,19 +584,19 @@
     describe 'automated' features and do not say generative AI was used.
   outcomes:
     - lever: speed
-      description: "RXM says a 200-page business valuation went from months to days, saving hundreds of hours"
+      description: "RXM's director (Michael Luke) is quoted saying a 200-page business valuation went from months to days, saving hundreds of hours"
       figure: "months to days; 'hundreds of hours'"
       measures: "RXM statement in a vendor case study; no baseline, sample size or method"
       provenance: vendor-published
       source_ref: VALUTICO-RXM-2025
     - lever: quality
-      description: "PKF FI reports saving time per valuation and 'drastically' reducing the risk of errors; no error counts"
+      description: "The case study says PKF FI saved time on each valuation and 'drastically reduced the risk of errors'; the partner's quote says only that it helped him save time and avoid mistakes; no error counts"
       figure: "none published"
       measures: "Vendor's case-study narrative; no error rate or review data"
       provenance: vendor-published
       source_ref: VALUTICO-PKFFI-2025
     - lever: speed
-      description: "Both case studies repeat that the team is completing tasks at least 3-5 times faster, as part of 'over 90% of users' reporting significant time savings"
+      description: "The PKF FI study (like the Kreston Reeves and Rouse studies, but not the RXM one) says the team is completing tasks at least 3-5 times faster, as one of 'over 90% of users' reporting significant time savings"
       figure: "3-5x; over 90%"
       measures: "Vendor boilerplate repeated in several case studies: share of Valutico users reporting significant time savings (denominator not stated) and a per-team speed-up with no stated basis"
       provenance: vendor-published
@@ -608,7 +610,7 @@
   human_checkpoints:
     - "Valuer reviews the generated report before issue"
   role_evolution: "Not stated by the sources."
-  evidence_grade: B
+  evidence_grade: C
   sources:
     - ref: VALUTICO-RXM-2025
       title: "How Valutico Helped RXM Conquer 200-Page Valuations in Days, Not Months (case study)"
@@ -652,10 +654,11 @@
       locator: "page 2, item 3; consultation question 8"
   last_reviewed: "2026-10-20"
   notes: >-
-    Grade B (named firms, vendor-published, no measurement): the 'months to days' statement is a recollection published
-    by the vendor, so it is not grade A. Whether these deployments involve generative AI is not stated, so the AI link
-    is the vendor's branding. The 3-5x and over-90% figures are identical across case studies and are marketing
-    boilerplate; do not cite them as measured. Generative drafting of report sections is the separate entry
+    Grade C (was B; downgraded 2026-10-21): the firms are named, but the case studies describe 'automated' features
+    and never say AI was used, so the AI link is the vendor's branding and a B would rest on an adjacent, non-AI
+    process. The 'months to days' statement is a recollection published by the vendor. The 3-5x and over-90% figures
+    are boilerplate repeated across case studies; do not cite them as measured. RXM is listed by the vendor under
+    'Advisory / M&A & Corporate Finance' (Singapore); PKF FI under 'Advisory / Accounting & Tax & Audit' (France). Generative drafting of report sections is the separate entry
     advisory-valuation-09.
 
 - id: advisory-valuation-09
@@ -763,8 +766,8 @@
     AI could be used in quality control (IVSC-PERSPECTIVES-2025). (2) Anthropic's 2026-05-05 release lists a
     'Valuation reviewer' among ten agent templates; it checks valuations against comparables, methodology and the
     firm's review standards, ships as plugins for Claude Cowork and Claude Code and as cookbooks for Claude Managed
-    Agents, uses subagents for tasks such as comparables selection or methodology checks, and keeps an audit log
-    (ANTHROPIC-FSAGENTS-2026). Vendor: Anthropic.
+    Agents, and uses subagents for tasks such as comparables selection or methodology checks; the managed-agent
+    version adds a full audit log (ANTHROPIC-FSAGENTS-2026). Vendor: Anthropic.
   outcomes:
     - lever: quality
       description: "none published for the valuation-reviewer template"
@@ -1029,18 +1032,19 @@
     Fund valuations were built in bespoke spreadsheets from whatever public data was at hand; the process was manual
     and resource-intensive, and reporting is moving from quarterly to more frequent marks.
   solution: >-
-    Hamilton Lane (an investment manager, not an accounting firm) says it partnered with 73 Strings to standardize
-    valuations across private-markets strategies on one platform that uses AI to process and contextualize valuation
-    data, and to run scenario analyses across portfolios (S73-HAMLANE-2025). 73 Strings' platform extracts financial
+    Hamilton Lane (an investment manager, not an accounting firm) says in its own Q&A (2025-05-06, republished by the
+    vendor) that it partnered with 73 Strings to standardize valuations across private-markets strategies on one
+    platform that uses AI to process and contextualize valuation data (HAMILTONLANE-VALTECH-2025; S73-HAMLANE-2025).
+    Hamilton Lane is also an investor in 73 Strings (S73-CALLISTO-2026). 73 Strings' platform extracts financial
     and operational data and KPIs from documents, and a Eurazeo executive is quoted on its site crediting 73 Strings
     with ROI across valuation, compliance, finance and investment teams (S73-HOME-2026). Vendor: 73 Strings.
   outcomes:
     - lever: speed
       description: "Hamilton Lane's director of valuation says the process is systematized so the firm can value everything it holds in a standardized, operationally efficient way; no time or accuracy figure is given"
       figure: "none published"
-      measures: "Qualitative statement by a Hamilton Lane director in a Q&A hosted by the vendor"
-      provenance: vendor-published
-      source_ref: S73-HAMLANE-2025
+      measures: "Qualitative statement by Hamilton Lane's director of valuation (Santiago Rivera) in the firm's own Q&A"
+      provenance: self-reported
+      source_ref: HAMILTONLANE-VALTECH-2025
     - lever: cost
       description: "A Eurazeo executive is quoted as saying the platform delivered 'significant ROI' across operations; no figure"
       figure: "none published"
@@ -1061,8 +1065,16 @@
     to a central valuation team (STOUT-TECH-2024).
   evidence_grade: B
   sources:
+    - ref: HAMILTONLANE-VALTECH-2025
+      title: "The Intersection of Private Markets Valuations and Technology (Hamilton Lane insight, Q&A)"
+      publisher: "Hamilton Lane"
+      type: firm
+      url: "https://www.hamiltonlane.com/en-us/insight/valuation-technology"
+      date: "2025-05-06"
+      access: full
+      locator: "answers by Rivera (73 Strings partnership; systematized process)"
     - ref: S73-HAMLANE-2025
-      title: "Hamilton Lane on Valuations and Technology (Q&A hosted by 73 Strings)"
+      title: "Hamilton Lane on Valuations and Technology (vendor's republication of the Hamilton Lane Q&A)"
       publisher: "73 Strings"
       type: vendor
       url: "https://73strings.com/insights/blog/how-hamilton-lane-brings-precision-and-scale-to-valuations-and-technology/"
@@ -1084,7 +1096,7 @@
       url: "https://73strings.com/insights/news/73-strings-acquires-callisto-accelerating-investment-into-agentic-ai-for-private-markets/"
       date: "2026-09-24"
       access: full
-      locator: "paragraph 4 (MCP, deterministic core engine, human judgement)"
+      locator: "paragraph 4 (MCP, deterministic core engine, human judgement); funding paragraphs (Hamilton Lane in the 2025 Series B)"
     - ref: STOUT-TECH-2024
       title: "Transforming Valuation Processes With Technology (interview first published Apr/May 2024, updated Sep 2024)"
       publisher: "Stout"
@@ -1096,6 +1108,9 @@
   last_reviewed: "2026-10-20"
   notes: >-
     Grade B: a named in-house deployment (Hamilton Lane) with qualitative statements and no published measurement.
+    The user has a stake in the vendor: Hamilton Lane took part in 73 Strings' 2025 Series B (S73-CALLISTO-2026).
+    An earlier draft said the platform runs scenario analyses across portfolios; the Q&A does not say so (Callisto
+    simulation is announced for 73 Intelligence, S73-CALLISTO-2026).
     Firm type: client in-house team (investment manager), not an accounting or advisory firm; it shows what portfolio
     valuation looks like when automated, and what advisory firms compete with. Independence is not an issue for an
     in-house team. Hamilton Lane AUM figures in the Q&A are context, not outcomes. The private-client research routed

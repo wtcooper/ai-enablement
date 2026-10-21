@@ -22,8 +22,9 @@
     drafting of monthly budget variance analysis (planned, not shipped). Withum's Jim Bourke told a May 2026 conference
     to 'think how quickly Claude or ChatGPT could find a variance' and probably explain it, and said using AI to
     deliver real-time dashboards on the metrics clients want is how a CAS practice differentiates itself. CohnReznick
-    CAS leaders list reporting tools in this class (Reach Reporting, Qvinci, Spotlight Reporting, Datarails) in
-    the Journal of Accountancy.
+    CAS leaders name AI document-generation tools for auto-generated monthly reporting with commentary (Reach Reporting,
+    Qvinci, Spotlight Reporting) in the Journal of Accountancy; they list Datarails under scenario modeling, not
+    reporting.
   outcomes:
   - lever: capacity
     description: An unnamed CFO of a global media and information services firm said a flux analysis agent, built
@@ -85,7 +86,8 @@
     commentary, with talent needs moving from a reporting factory toward interpreting AI outputs and advising leaders
     (KPMG-CFOREMODEL-2026). Withum's Bourke says advisory-based services are the way the profession is going to
     grow, and that AI in CAS is where firms get 'the most bang for your buck' (ACCTODAY-CASKEYS-2026). In the Intuit
-    survey, 38% of firms prioritise strategic judgment in hiring and 22% AI fluency (INTUIT-ACCTTECH-2026).
+    survey, 38% of respondents name strategic judgment as the expertise they prioritise most in hiring and 22% AI
+    fluency (INTUIT-ACCTTECH-2026).
   evidence_grade: C
   sources:
   - ref: KPMG-CFOREMODEL-2026
@@ -243,8 +245,8 @@
     FP&A Trends Survey, 44% could plan with high confidence only up to three months ahead, and confidence beyond
     six months fell from 39% to 29%.'
   solution: Jirav Intelligent Forecasting (JIF) uses AI and machine learning to generate a forward-looking cash-flow
-    forecast from a client's historical data. The firm then adds its own market intelligence and client knowledge
-    as further forecasts. Jirav says driver-based models built by skilled FP&A staff remain appropriate for some
+    forecast from a client's historical data. Per the release, more advanced forecasts built with the firm's proprietary
+    advisory insights can then be added to the engagement. Jirav says driver-based models built by skilled FP&A staff remain appropriate for some
     clients. More widely, statistical and machine-learning (ML) forecasting features in planning platforms generate
     baseline forecasts that analysts adjust; in the FP&A Trends Survey, ML use in forecasting reached 12%, the highest
     in the survey's history, and generative AI use reached 21%.
@@ -305,8 +307,9 @@
   - Advisor reviews the machine forecast and layers on firm and client knowledge before presenting it
   - Analysts review and adjust machine baselines
   - Forecast error is tracked against actuals
-  role_evolution: Jirav's CEO says the tool lets firms scale advisory services without increasing headcount; this
-    is a vendor statement (JIRAV-JIF-2024, 'Scaling Advisory Services Without Adding Staff'). Gartner recommends
+  role_evolution: Jirav's release says the tool helps firms scale their services without increasing headcount; this
+    is a vendor statement, not attributed to a named person (JIRAV-JIF-2024, 'Scaling Advisory Services Without Adding
+    Staff'). Gartner recommends
     upskilling FP&A analysts into citizen data scientists and adding AI product managers and knowledge engineers
     (GARTNER-FPALEADER-2026, Priority 3).
   evidence_grade: B
@@ -376,9 +379,10 @@
     publisher: Gartner
     type: survey
     url: https://www.gartner.com/en/finance/trends/fpa-leader-agenda/unlocked
-    date: '2026-05-13'
+    date: '2026'
     access: full
-    locator: Priority 2 (84% deploying, 4% scaling) and Priority 3
+    locator: Priority 2 (84% deploying, 4% scaling) and Priority 3. Page shows no publication date (server timestamp
+      2026-09-30; text addresses leaders 'heading into 2026'), so the date is the year only
   last_reviewed: '2026-10-20'
   notes: 'Merges two candidates that describe the same change, a machine baseline forecast that a person adjusts:
     Jirav Intelligent Forecasting in CAS and advisory firms (B, tagged process) and ML forecasting in planning platforms
@@ -393,8 +397,9 @@
     but names no firms. On the ML candidate: No named organisation and no measured forecast error. Evidence is survey
     self-report from KPMG (Big Four; the survey covers large organisations, not the middle market) and a sponsored
     vendor survey. Gartner''s FP&A page says 84% of finance teams are deploying AI and only 4% are scaling it across
-    the function; the page does not state the sample for that pair of figures. Maturity is piloting because Gartner''s
-    pair of figures describes mostly early deployment.'
+    the function; the page does not state the sample for that pair of figures. Maturity is in-production because
+    Creative Planning used JIF for over 200 clients per the release; Gartner''s pair of figures shows that wider
+    ML and AI forecasting is mostly early deployment.'
 - id: advisory-fpa-performance-03
   title: Continuous, driver-based planning with AI-assisted scenarios replaces the annual budget cycle
   archetype: advisory
@@ -429,7 +434,7 @@
   - Driver-based models (19% use mature models that automatically identify and apply drivers; 40% still use basic
     or non-driver approaches, per the webinar)
   - Integrated financial and operational planning (10% fully integrate them)
-  - Timely data (11% have real-time or near-real-time access to critical data)
+  - Timely data (11% have real-time or near-real-time access to critical data, per the survey release)
   risks_and_guardrails:
   - OneStream's presenter says AI compounds an existing advantage and does not create one, since AI users were already
     strong on data and connected planning (ONESTREAM-FPAWEBINAR-2026).
@@ -437,10 +442,11 @@
   human_checkpoints:
   - Finance leaders set the trigger thresholds and contingency actions
   - Advisors challenge assumptions before scenarios go to management
-  role_evolution: Gartner expects finance teams to shift from control and business-partnering roles toward digitally
-    skilled 'catalysts' who build tools and manage AI-driven workflows (GARTNER-TALENT-2026). A Top 20 firm's (Aprio)
-    client accounting and advisory manager posting expects budgets, 13-week cash flow models and scenario analyses
-    built with AI-enabled templates and workflows (APRIO-JOB-2026).
+  role_evolution: Gartner expects that by 2030 finance teams at leading organisations will shift from control and
+    business-partnering roles toward digitally skilled 'catalysts' who build tools and manage AI-driven workflows
+    (GARTNER-TALENT-2026). A Top 20 firm's (Aprio) client accounting and advisory manager posting asks the manager
+    to build budgets, 13-week cash flow models and scenario analyses, and separately to develop AI-enabled workflows
+    and delivery methodologies (APRIO-JOB-2026).
   evidence_grade: C
   sources:
   - ref: ONESTREAM-FPATRENDS-2026
@@ -885,7 +891,7 @@
     publisher: Gartner
     type: survey
     url: https://www.gartner.com/en/finance/trends/fpa-leader-agenda/unlocked
-    date: '2026-05-13'
+    date: '2026'
     access: full
     locator: Priority 2 ('diagnosis-resistant' problems)
   - ref: GARTNER-AIREPORTCARD-2026
