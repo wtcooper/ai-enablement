@@ -21,7 +21,7 @@ keys in brackets resolve in [sources.md](sources.md).
   say AI is embedded as the default and 21% have an AI policy or strategy [INTUIT-ACCTTECH-2026; KARBON-SOAI-2026].
   The gap between use and an owned, reviewed workflow is the main stage discriminator.
 - **The same gap exists on the client side.** Among AI-using middle-market companies, 86% have integrated AI at least
-  partly and 36% have it fully embedded in core processes [RSM-MMAI-2026].
+  partly and 36% have it fully embedded in core processes [RSM-MMAI-2026; CPAPA-RSMMM-2026].
 - **CAS has the most evidence and the only grade A.** An independent field study links genAI use in SME bookkeeping
   with a shorter close and more granular ledgers (associations) [STANFORD-JAR-2026]. Most other figures are vendor
   benchmarks or small-firm case studies.
@@ -51,7 +51,7 @@ All are sponsored by vendors or firms, and respondent pools skew toward adopters
 | Anti-fraud: AI or ML in analysis; genAI as a tool; plan to adopt genAI | 25% (18% in 2024); 16%; 58% | ACFE with SAS, March 2026, 713 respondents [ACFE-TECHBENCH-2026] |
 | FP&A: genAI in forecasting; ML in forecasting | 21%; 12% | FP&A Trends survey sponsored by OneStream, July 2026, 475 respondents [ONESTREAM-FPATRENDS-2026] |
 | Dealmakers: AI regularly embedded in diligence | 50% | Datasite, July 2026, 1,000 dealmakers [DATASITE-NEWDEALTEAM-2026] |
-| Valuation practitioners expecting AI to change their work "significantly" | 73%, with usage low (sample not visible) | BVR polls, 2025, summary only (valuation module §5) |
+| Valuation practitioners expecting AI to change their work "significantly" | 73%, with usage low (sample not visible) | BVR polls, 2025, summary only [BVR-POLLS-2025] |
 | Family offices using AI for operations or investment analysis | 22% (13% in 2024) | Citi, 2025 report, sample not on the page [CITI-AIFO-2026] |
 
 **Reading these.** Each survey asks a different question; do not add them up or rank firms against them. The
@@ -62,8 +62,8 @@ Thomson Reuters release and report page give slightly different client-side figu
 
 | What it measures | Result | Who measured, when, sample |
 |---|---|---|
-| Middle-market AI integration | 86% partly or fully integrated; 36% fully embedded; 54% say AI exceeded ROI expectations | RSM, March 2026, 1,030 AI-using leaders in the US and Canada (RSM sells consulting) [RSM-MMAI-2026] |
-| Barriers to scaling | Data quality 34%, security and privacy 30%, legacy integration 28%, talent 28% | Same [RSM-MMAI-2026] |
+| Middle-market AI integration | 86% partly or fully integrated; 36% fully embedded; 54% say AI exceeded ROI expectations | RSM, March 2026, 1,030 AI-using leaders in the US and Canada (RSM sells consulting) [RSM-MMAI-2026; CPAPA-RSMMM-2026] |
+| Barriers to scaling | Data quality 34%, security and privacy 30%, legacy integration 28%, talent 28% | Same [RSM-MMAI-2026; CPAPA-RSMMM-2026] |
 | Large-company finance: active AI use | 30% (2024) to 75% (March 2026); 71% say AI meets or exceeds ROI expectations | KPMG, 1,013 finance leaders, revenue $250M+ [KPMG-AIFINANCE-2026] |
 | Assurance readiness | 42% fully assurance-ready; 29% track where AI adoption fails; error-reduction improvement 33% vs 6% for assurance-ready organisations | Same [KPMG-AIFINANCE-2026] |
 | Finance AI implementation slower than expected | 63% in 2025; forecasting among the lowest-rated uses | Gartner [GARTNER-AIREPORTCARD-2026] |
@@ -108,7 +108,7 @@ Firm moves of this kind sit beside AI-native providers and vendors (Pilot, Basis
 - **Vendor and third-party benchmarks.** Digits, Mercor, Penrose and DualEntry test models on accounting tasks; Penrose
   saw balances drift more than 15% after several months unattended (CAS module §5) [PENROSE-ACCTBENCH-2025].
 - **Adjacent independent evidence.** E-discovery review data and federal judges' survey results (forensic module §5);
-  legal AI research tools hallucinating 17-33% of the time (risk-controls module §5).
+  legal AI research tools hallucinating 17-33% of the time [STANFORD-LEGALAI-2024].
 - **Failure cases.** A Deloitte Australia government report with AI-generated errors, after which Deloitte agreed to
   repay the final instalment [CITYAM-DELOITTE-2025]; a court that re-ran an expert's Copilot queries and got different
   numbers [GOLDMAN-WEBER-2024].

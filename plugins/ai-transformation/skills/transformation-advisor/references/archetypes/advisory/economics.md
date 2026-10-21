@@ -24,7 +24,7 @@ to AI;** every margin figure below is practitioner testimony or a company claim.
 | CAS | Recurring, mostly fixed monthly fee or subscription, by service level | The JofA states 90% of CAS practices sell fixed-fee recurring services, naming no source [JOFA-CASTIPS-2025] |
 | Fractional CFO and controllership | Time-based in the one source | The fractional CFO CFO Dive interviewed bills hourly [CFODIVE-FRACTIONAL-2026] |
 | Risk and controls | Co-sourced or outsourced testing hours; readiness and governance projects | 28% of companies used outsourced providers for SOX testing [KPMG-SOX2030-2026] |
-| Transactions | A price per QoE or diligence project | List prices from $1,000 (AI-native self-service) to a broker's estimate of $25,000-$200,000 (transactions module §5) |
+| Transactions | A price per QoE or diligence project | List prices from $1,000 (AI-native self-service) to a broker's estimate of $25,000-$200,000 [SHEPI-PRICING-2026; CTACQ-QOE-2026] |
 | Valuation | Per report; recurring portfolio and fund marks | Stout and Kroll announced recurring valuation platforms (valuation `#14`) |
 | Forensic and disputes | Matter-based expert and investigation work | No pricing evidence found in the sources |
 | FP&A and technology advisory | Projects, implementations, managed FP&A | ISG lists outcome-linked commercial structures among leading indicators for finance outsourcing [ISG-FAOFPA-2026] |

@@ -22,12 +22,12 @@ analysis, with a named professional answerable for it, usually priced by time or
 
 ## What it extends
 
-Nothing: this is the base. **Assurance** and **tax** extend it with their field's own work (audit and attestation; tax
-compliance and advice), and **security service providers** (MDR, pentest, IR retainers) use it for pursuit, pricing,
-staffing, delivery and billing. Three things set this field apart. The professional stays accountable for AI-assisted
-work under bar, institute or code rules that apply existing duties to AI [CALBAR-GENAI-2026; ICMCI-AICODE-2026].
-Hourly fees turn AI efficiency into a pricing question [STANFORD-DEL-2026]. And junior work is both billable output
-and the training ground [VAULT-PYRAMID-2026].
+Nothing: this is the base. **Assurance**, **tax** and **advisory** extend it with their field's own work (audit and
+attestation; tax compliance and advice; outsourced accounting, risk, deal and owner services), and **security service
+providers** (MDR, pentest, IR retainers) use it for pursuit, pricing, staffing, delivery and billing. Three things set
+this field apart. The professional stays accountable for AI-assisted work under bar, institute or code rules that apply
+existing duties to AI [CALBAR-GENAI-2026; ICMCI-AICODE-2026]. Hourly fees turn AI efficiency into a pricing question
+[STANFORD-DEL-2026]. And junior work is both billable output and the training ground [VAULT-PYRAMID-2026].
 
 ## Recognition cues
 
