@@ -1,126 +1,123 @@
 [
  {
   "id": "assurance-quality-management-01",
-  "title": "Certify AI tools per use case, approve centrally, recertify on defined triggers",
+  "title": "Certify each AI tool for its use case, approve centrally, recertify",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Firm quality-management processes were built for transparent, deterministic tools, so it is hard to decide how much testing AI tools need before deployment and how to monitor them afterwards.",
+  "problem": "Quality-management processes were built for transparent, deterministic tools, making it hard to decide how much testing AI needs before deployment and how to monitor it.",
   "approach": [
-   "UK regulator FRC says each tool is certified within a use case, testing outputs on default, edge and known-weakness cases.",
-   "Recertification may be triggered by material change, a different use case, performance issues, changed standards or elapsed time.",
-   "Deloitte UK's Technology Controls Board, set up in April 2026, reviews tools before pilot and deployment; no measure is given (self-reported).",
-   "Tool owner, methodology and business sign off certification; quality leadership decides whether to recertify after a trigger event."
+   "The FRC treats a tool in its use case as the unit of certification, testing inputs, logic and outputs.",
+   "Deloitte UK's Technology Controls Board, set up in April 2026, reviews tools before pilot and deployment (self-reported).",
+   "FRC found recertification typically formal only on change; two firms had owners confirm annually, one enforced a three-year backstop (independent).",
+   "Tool owner, methodology and business approve certification; quality leadership decides whether to recertify after a trigger."
   ],
   "who": "FRC, Deloitte UK, IAASB"
  },
  {
   "id": "assurance-quality-management-02",
-  "title": "Risk-tiered policy: approved AI tools, barred uses, triage and a prompt library",
+  "title": "Risk-tiered permitted-use policy with approved tools, barred uses and a prompt library",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Staff will use general AI tools unless told which are allowed; most of the six largest UK firms certified every tool identically, regardless of risk.",
+  "problem": "Staff will use general AI tools unless the firm says which are allowed, and most large UK firms applied one certification process regardless of risk.",
   "approach": [
-   "Firms list permitted tools and uses, bar some uses and scale validation to risk, with a central triage step for new proposals.",
-   "PwC US gave staff AI training and LLM access for pre-approved work such as administrative tasks before launching audit-specific AI.",
-   "Deloitte UK describes risk thresholding, triage and a clearing house for GenAI use cases; no result is published (self-reported).",
-   "A clearing house decides the tier before build or purchase; the methodology owner approves each permitted use case and prompt set."
+   "The firm lists permitted tools and uses, bars some uses and scales validation to risk; PwC US began with pre-approved administrative work.",
+   "Deloitte UK describes use-case governance with risk thresholding, triage and a clearing house; no result is published (self-reported).",
+   "PCAOB staff found some firms barred GenAI in audit procedures while others allowed it for administrative tasks and initial drafts.",
+   "The engagement partner is responsible for appropriate use of approved tools."
   ],
   "who": "PwC US, Deloitte UK, FRC, PCAOB staff"
  },
  {
   "id": "assurance-quality-management-03",
-  "title": "Inventory of approved AI tools, with controls against unapproved or outdated use",
+  "title": "Authorised-tool inventory and preventive controls against unapproved or outdated AI tools",
   "grade": "C",
   "ladder": "assist",
-  "problem": "AI tools multiply faster than firms approve them and staff can reach public chatbots; the FRC found firms generally did not monitor that teams used only authorised, current tools.",
+  "problem": "AI tools multiply faster than firms approve them, and the FRC found firms generally did not monitor that teams used only authorised, current tools.",
   "approach": [
-   "Firms keep inventories of current certified tools and versions, relying on preventive controls such as approved repositories and blocking unauthorised installs.",
-   "Most of the six largest UK firms kept such inventories; usage monitoring mainly counted teams using tools, typically for licensing (independent).",
-   "More than a third of surveyed tax and audit professionals admit using unauthorised AI tools (vendor-published).",
-   "A named function approves exceptions, unapproved tools found in use are escalated, and engagement reviews check for incorrect use."
+   "Firms keep inventories of current certified tools and versions and use preventive controls such as authorised repositories and blocked installs.",
+   "Most of six large UK firms kept such inventories (independent); over a third of professionals admit using unauthorised AI (vendor-published).",
+   "Unapproved or outdated tools found in use are escalated; exceptions are approved by a named function."
   ],
-  "who": "FRC, IFIAR, Thomson Reuters Institute"
+  "who": "FRC, IFIAR, six large UK firms"
  },
  {
   "id": "assurance-quality-management-04",
-  "title": "Evaluation sets and parallel running before full rollout of an AI tool",
+  "title": "Test sets and parallel running before and during limited AI rollout",
   "grade": "C",
   "ladder": "assist",
-  "problem": "No public benchmark or firm result says how often an audit AI tool's output is wrong in live use, and tolerance for deficient output remains a professional judgement.",
+  "problem": "No public benchmark or firm result says how often an audit agent's output is wrong in live use, and tolerance for deficient output is a judgement.",
   "approach": [
-   "Firms build representative test sets and score tool output against them before release and after model changes.",
-   "IFIAR lists benchmarking against traditional methods and false-positive and false-negative rates versus a manual sample as emerging practice.",
-   "FRC: tools may go to a few teams before full certification, and teams often perform the alternative procedures in parallel.",
-   "No parallel-run results are published; methodology specialists agree pass criteria and the quality team decides when a pilot ends."
+   "Firms build representative test sets and score tool output before release and after model changes; IFIAR lists benchmarking against traditional methods.",
+   "The FRC says firms may release a tool to a few teams first, which often run alternative procedures in parallel.",
+   "An independent benchmark found frontier models complete much staff-level audit work but sometimes write incorrect documentation; no parallel-run results are published."
   ],
   "who": "FRC, IFIAR, AUASB"
  },
  {
   "id": "assurance-quality-management-05",
-  "title": "Embed methodology in AI tool design and validate the assurance it provides",
+  "title": "Embed methodology in AI-tool design and validate assurance from AI procedures",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Methodology can permit approaches that fail auditing standards even if a tool works; IFIAR's most frequent findings were misreading tool results and thin outlier testing.",
+  "problem": "A firm's methodology may permit approaches that fail auditing standards even when the tool works, and IFIAR's top technology findings were misreading tool results and thin testing of outliers.",
   "approach": [
-   "Methodology teams join tool development and approve how output is used as evidence; certification validates methodology against auditing standards.",
-   "FRC example: assurance from the AI procedure rests on confidence in its risk indicators and sampling, which sets remaining substantive testing.",
-   "Most of the six largest UK firms capture methodology-team sign-off in certification documents (independent).",
-   "IFIAR: 31% of members (2024) and 29% (2023) reported findings that a tool was not used as intended (independent)."
+   "Methodology teams join tool development, and certification validates the supporting methodology against auditing standards.",
+   "In the FRC's contract-review example, assurance from the AI procedure depends on confidence in the tool's risk indicators and sampling.",
+   "IFIAR members reporting a tool not used as intended: 31% in 2024, 29% in 2023 (independent).",
+   "Engagement teams test data inputs and a sample of low-risk-rated items."
   ],
   "who": "FRC, IFIAR, CPAB, NFRA"
  },
  {
   "id": "assurance-quality-management-06",
-  "title": "Due diligence and contracts for third-party AI tools, scaled for smaller firms",
+  "title": "Due diligence and revalidation for third-party AI tools, scaled for small firms",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Firms usually get the foundation model from a third party and often cannot evaluate its training data or logic, and smaller firms lack specialists to assess it.",
+  "problem": "Firms usually take the foundation model from a third party and cannot evaluate its training data, and smaller firms lack the specialists the FRC guidance assumes.",
   "approach": [
-   "All six largest UK firms weighed vendor controls, data security and confidentiality when choosing tools (FRC finding); no outcome is published.",
-   "Where information is unavailable, the FRC says firms may rely on independent assurance and test more themselves.",
-   "NFRA staff call for contract terms on data protection, audit rights and continuity; CPAB suggests a SOC 2 report on IT controls.",
-   "Procurement, security and methodology approve the vendor, and the firm re-approves the tool when the vendor changes the model."
+   "All six largest UK firms considered vendor controls, data security and confidentiality; the FRC says firms may rely on independent assurance.",
+   "NFRA calls for contract terms on data protection, explainability documentation and audit rights; CPAB points to SOC 2 reports for off-the-shelf tools.",
+   "Grant Thornton UK advised smaller firms to start with granular, easily checked tasks.",
+   "Procurement, security and methodology approve the vendor; the firm re-approves when the model changes."
   ],
-  "who": "FRC, CPAB, NFRA, AFM, ICAEW"
+  "who": "FRC, CPAB, NFRA, Grant Thornton UK"
  },
  {
   "id": "assurance-quality-management-07",
-  "title": "Monitor AI tool use and audit-quality impact with metrics and dashboards",
+  "title": "Monitor AI tool use and audit-quality impact; settle who monitors network tools",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Firms count tool usage, mostly for licensing, but do not quantify the effect on audit quality, and it is sometimes unclear who monitors globally developed tools.",
+  "problem": "Firms count tool usage, mostly for licensing, but do not quantify effect on audit quality, and it is sometimes unclear who monitors a globally built tool.",
   "approach": [
-   "IFIAR examples: thematic reviews with metrics such as false-positive and false-negative rates against a manual sample, plus usage dashboards.",
-   "AFM found engagement-level usage was estimated for 74% of auditing tools, actual data for 20%, unclear for 6% (independent).",
-   "FRC: none of the six largest UK firms formally quantified audit-quality impact; one reported usage against targets for certain key tools (independent).",
-   "Quality leaders review impact metrics and decide to restrict, retrain or recertify a tool."
+   "IFIAR describes thematic reviews with metrics such as false-positive and false-negative rates against a manual sample, rework rates and usage dashboards.",
+   "FRC found none of the six largest UK firms quantified audit-quality impact (independent); the AFM found usage mostly estimated, not measured.",
+   "Quality leadership reviews tool-impact metrics and decides to restrict, retrain or recertify."
   ],
-  "who": "FRC, AFM, IFIAR"
+  "who": "FRC, IFIAR, AFM"
  },
  {
   "id": "assurance-quality-management-08",
-  "title": "Board-level AI oversight in the quality plan, with escalation channels",
+  "title": "Board oversight of AI in the quality plan, with an AI committee",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Using AI tools reaches beyond technology resources into governance, ethics and engagement performance, and unexpected AI failures may not reach the tool owner or quality function.",
+  "problem": "Using AI reaches into governance, resources, acceptance, ethics and engagement performance, and unexpected AI failures may not reach the tool owner or quality function.",
   "approach": [
-   "Deloitte UK's independent Audit Governance Board reviewed its quality plan, now covering AI, with a human in the loop central (self-reported).",
-   "Deloitte UK's Chief AI Officer is responsible for embedding responsible AI governance across client services and internal operations.",
-   "IFIAR suggests formal escalation paths for unexpected outputs, user feedback, AI oversight committees and whistleblowing procedures covering AI use.",
-   "A committee or tool owner decides whether to pause, restrict or re-approve a tool after an incident; no outcome is published."
+   "Deloitte UK's independent Audit Governance Board reviewed its Single Quality Plan, now covering AI, with a human in the loop central.",
+   "IFIAR suggests formal escalation paths, user feedback on fitness, AI oversight committees and whistleblowing procedures covering AI use.",
+   "No outcome is published (self-reported).",
+   "The committee or tool owner decides to pause, restrict or re-approve a tool after an incident."
   ],
-  "who": "Deloitte UK, IFIAR, CPAB, IAASB"
+  "who": "Deloitte UK, IFIAR, CPAB"
  },
  {
   "id": "assurance-quality-management-09",
-  "title": "Get the firm's own AI management system certified to ISO/IEC 42001",
+  "title": "ISO/IEC 42001 certification of the firm's own AI management system",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Firms need external reference points for governing their own AI use; SEC staff said there is no single authority or framework for AI governance, speaking of preparers, not audit firms.",
+  "problem": "Firms need external reference points for governing their own AI use, and SEC staff said there is no single authority or framework for AI governance.",
   "approach": [
-   "KPMG announced in November 2025 that it achieved ISO 42001 certification of its internal AI management systems (self-reported).",
-   "KPMG called it a necessary precursor to AI assurance services and said it is the first Big Four firm to achieve it.",
-   "The announcement does not say which KPMG entity was certified, and no quality measurement is published."
+   "KPMG announced in November 2025 it achieved ISO 42001 certification, which it described as independent validation of its internal AI management systems.",
+   "KPMG said it is the first Big Four firm to achieve it, and called it a precursor to providing AI assurance services.",
+   "The announcement does not say which KPMG entity was certified; no quality measurement is published (self-reported)."
   ],
   "who": "KPMG"
  },
@@ -129,222 +126,250 @@
   "title": "Role-based AI training tied to tool access, with in-workflow micro-training",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Reviewers who cannot judge when AI output is wrong cannot review it; untrained staff was the top-ranked blocker to audit transformation in a survey of 54 US CPA firms.",
+  "problem": "Reviewers who cannot judge when AI output is wrong cannot review it, and untrained staff was the top-ranked blocker to audit transformation in a 54-firm survey.",
   "approach": [
-   "Training is tailored by user group; the FRC says it should cover reviewing tool output, automation bias (over-trusting machines) and known weaknesses.",
-   "PwC made GenAI training mandatory before ChatPwC access and KPMG trained all auditors in prompt engineering (2024 reports, per an academic reading).",
-   "Deloitte announced on 24 June 2026 a 'tutor mode' in Omnia giving on-demand micro-training within the work (self-reported).",
-   "Tool access is conditional on completed training; no measure of training's effect on review quality is published."
+   "Training is differentiated by user group and covers automation bias and known tool weaknesses; tool access is conditional on completed training.",
+   "PwC made GenAI training mandatory before ChatPwC access, per an academic reading; KPMG trained all auditors in prompt engineering.",
+   "Deloitte announced on 24 June 2026 a tutor mode in Omnia giving on-demand micro-training, without evidence of use (self-reported)."
   ],
-  "who": "FRC, IFIAR, PwC, KPMG, Deloitte"
+  "who": "PwC, KPMG, Deloitte, EY"
  },
  {
   "id": "assurance-quality-management-11",
-  "title": "Connected engagement resourcing: staffing, budgets and leader review in one tool",
+  "title": "Connected engagement resourcing in one tool, with the AI role unspecified",
   "grade": "C",
   "ladder": "assist",
-  "problem": "The quality standard ISQM 1 requires firms to assign people with the competence and capacity for each engagement; RSM describes replacing manual staffing and budgeting processes.",
+  "problem": "ISQM 1 requires firms to assign personnel with the competence and capacity for engagements, and RSM describes replacing manual staffing and budgeting processes.",
   "approach": [
-   "RSM's Luca Resourcing is a connected tool for initial staffing requests, budget planning and engagement-leader review, giving teams visibility of planning.",
-   "RSM lists it among its AI-related investments but does not say what AI does inside it.",
-   "The engagement leader reviews and approves the staffing plan and budget; no outcome is published (self-reported).",
-   "IRBA cites AI analysis of staff profiles and experience for resource optimisation as an example in audit planning."
+   "RSM describes Luca Resourcing as a connected tool for staffing requests, budget planning and engagement-leader review.",
+   "The post lists it among RSM's AI-related investments but does not say what AI does inside it.",
+   "No outcome is published; RSM says it improves visibility into engagement planning (self-reported).",
+   "The engagement leader reviews and approves the staffing plan and budget."
   ],
-  "who": "RSM, IRBA"
+  "who": "RSM"
  },
  {
   "id": "assurance-quality-management-12",
   "title": "Firm-approved guidance assistant for audit research, grounded in the firm's own manuals",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Auditors spend time finding and applying the firm's own assurance manuals and guides and may apply them inconsistently, while generic chatbots can produce hallucinations, omissions and distortions.",
+  "problem": "Auditors spend time finding and applying the firm's own manuals and practice aids, and generic chatbots can produce hallucinations, omissions and distortions.",
   "approach": [
-   "RSM US launched Ask Luca on 8 January 2026, drawing on its assurance manuals and guides for 4,000+ assurance professionals (self-reported).",
-   "Deloitte UK launched a Research Assistant chatbot for audit research; PCAOB staff heard some firms built tools to research internal guidance.",
-   "No time, accuracy or consistency measure is published.",
-   "The auditor checks the source guidance and applies own judgement; complex or novel questions still go to technical consultation."
+   "RSM US launched Ask Luca on 8 January 2026, giving guidance from its manuals and practice aids to 4,000+ assurance professionals (self-reported).",
+   "Deloitte UK launched a Research Assistant chatbot; Plante Moran piloted CoCounsel with 140+ participants, 91% saying it was faster (vendor-published).",
+   "The auditor checks the source guidance and applies own judgement; complex questions still go to technical consultation."
   ],
-  "who": "RSM US, Deloitte UK, PCAOB staff"
+  "who": "RSM US, Deloitte UK, Plante Moran"
  },
  {
   "id": "assurance-quality-management-13",
-  "title": "Engage regulators early on new AI tools and keep inspection-ready tool files",
+  "title": "Engage regulators early on new AI tools and keep an inspection-ready file",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Standards do not yet address AI directly, yet regulators say they will inspect AI use and are still working out whether new standards or documentation rules are needed.",
+  "problem": "Standards do not yet address AI directly, regulators say they will inspect AI use, and no AICPA peer-review guidance on AI tools was found.",
   "approach": [
-   "PCAOB inspectors meet firms, generally larger ones, to understand their AI use; many invited inspectors to demonstrations while piloting.",
-   "FRC's Audit Tech & AI Sandbox opened 4 June 2026: about three expert meetings for selected UK firms, with no endorsement.",
-   "A central file per tool holds its purpose, development, certification and training, drawing on the FRC's split of documentation.",
-   "Quality leadership decides what to bring to regulators and when; sandbox participants are not named and no outcome is published."
+   "The FRC's AI Sandbox, opened 4 June 2026, gives selected UK firms about three meetings with FRC experts; participants are not named.",
+   "PCAOB inspectors meet firms to understand AI use, and many firms invited inspectors to pilot demonstrations.",
+   "A small firm could assemble a list of AI tools, approvers and review steps before peer review (an idea).",
+   "Quality leadership decides what to bring to regulators; tool owners answer inspector questions from the central file."
   ],
-  "who": "PCAOB, FRC, IFIAR, CPAB"
+  "who": "FRC, PCAOB, IFIAR"
  },
  {
   "id": "assurance-quality-management-14",
-  "title": "Idea: use AI in the firm's own quality monitoring and root-cause analysis",
-  "grade": "D",
+  "title": "AI in a firm's own quality monitoring and remediation (vendor tool announced)",
+  "grade": "C",
   "ladder": "augment",
-  "problem": "Idea only, no deployment: IFIAR counted 21 findings in 2025 (6 in 2024) for firms failing to identify audit performance issues in internal inspections.",
+  "problem": "Inspectors find firms' own monitoring weak; IFIAR counted 21 findings in 2025 for failing to identify audit performance issues in internal inspections.",
   "approach": [
-   "The SEC's chief accountant said the SEC asks auditors how they use AI to monitor their system of quality control.",
-   "NFRA's staff paper calls for root-cause analysis of technology-related findings to feed the annual evaluation of the quality system.",
-   "No firm example was found; the FRC noted tool use may appear in root-cause analysis without saying AI does the analysis.",
-   "Quality leadership would decide which root causes are real; remediation owners would sign off actions."
+   "AuditFile announced QualityLink on 4 Dec 2025, which it says uses agentic AI to flag firm-level quality risks and track corrective actions.",
+   "The release names no customer and gives no figures (vendor-published); the SEC asks auditors how they use AI to monitor quality.",
+   "Quality leadership decides which root causes are real; remediation owners sign off actions."
   ],
-  "who": "No named deployment"
+  "who": "AuditFile (vendor announcement)"
  },
  {
   "id": "assurance-quality-management-15",
-  "title": "Idea: independent validation or assurance of audit firms' own AI tools",
+  "title": "Idea: independent third-party validation of audit firms' own AI tools",
   "grade": "D",
   "ladder": "augment",
-  "problem": "Idea only, not a deployment: smaller firms without in-house expertise may want someone to confirm a tool works as intended; the market is fragmented and not regulated traditionally.",
+  "problem": "Idea, not a deployment: smaller firms without in-house expertise may want someone to confirm an AI tool works as intended.",
   "approach": [
-   "Deloitte's Martin Brown said third-party providers should be doing testing and evaluation for the use case (ICAEW podcast).",
-   "Grant Thornton UK's Jon Morris said smaller firms would probably favour a provider partnered with a large firm; early days.",
-   "No outcome is published; the firm would decide what weight to give a third-party validation when approving a tool."
+   "Idea discussed on an ICAEW podcast: Deloitte's Martin Brown said third-party providers should test and evaluate tools for the use case.",
+   "Grant Thornton UK's Jon Morris said smaller firms would take more comfort from a provider partnering with a large firm.",
+   "The firm decides what weight to give third-party validation when approving a tool."
   ],
   "who": "No named deployment"
  },
  {
   "id": "assurance-quality-management-16",
-  "title": "Firm-wide audit programmes on an AI platform, updated centrally after inspection findings",
+  "title": "Firm-wide audit programmes on an AI-enabled platform, updated centrally after inspection findings",
   "grade": "B",
   "ladder": "augment",
-  "problem": "Sanville & Company, a 20-person firm on a legacy platform, found sample-heavy testing created bottlenecks at partner and quality review as QC 1000 approached.",
+  "problem": "Sanville & Company, a 20-person firm, found its legacy platform limited its methodology, with sample-heavy testing creating bottlenecks as a new quality-control standard approached.",
   "approach": [
-   "Sanville built its audit programmes in Fieldguide, referencing PCAOB standards in each step, and sent templates to every engagement at once.",
-   "Agentic testing handled sample-heavy tracing of incoming client support.",
-   "After a PCAOB exam flagged an issue, the partner updated the programme and pushed it to every open engagement next morning.",
-   "First PCAOB inspection fully on the platform had zero comment forms; overhaul took under a year versus 18-24 months expected (vendor-published)."
+   "Sanville built audit programmes in Fieldguide; after a PCAOB exam flagged an issue, it pushed the updated programme to every open engagement.",
+   "First PCAOB inspection run entirely on the platform had zero comment forms (vendor-published).",
+   "Caseware announced Citrin Cooperman and PKF O'Connor Davies implemented its audit suite; no review result is published.",
+   "Partners update programmes and reviewers approve work on the platform."
   ],
-  "who": "Sanville & Company, Fieldguide"
+  "who": "Sanville & Company, Fieldguide, Caseware"
  },
  {
   "id": "assurance-quality-management-17",
-  "title": "Idea: plan AI use at the outset and review it before sign-off",
+  "title": "Idea: engagement leader plans AI use upfront; senior team reviews it",
   "grade": "D",
   "ladder": "assist",
-  "problem": "Idea only, no deployment: the engagement partner is responsible for direction, supervision and review, but tool outputs that are hard to explain or invite over-reliance complicate this.",
+  "problem": "Idea, not a deployment: ISA 220 makes the partner responsible for review, but hard-to-explain tool outputs complicate direction, supervision and review.",
   "approach": [
-   "IFIAR asks engagement leaders to set expectations at the outset for how technology will be used, including planned uses of AI.",
-   "IFIAR also asks senior team members to reflect at the end on technology use in the file and whether scepticism was maintained.",
-   "The AICPA practice aid recommends planning intended AI use; partners must understand the tools and ensure the firm approved them.",
-   "The engagement leader would approve the planned AI uses; IRBA places responsibility for appropriate use on the engagement partner."
+   "Idea in guidance: IFIAR asks engagement leaders to set expectations at the outset for planned AI uses on the engagement.",
+   "Senior team members reflect at the end on overall technology use and whether scepticism was maintained.",
+   "The AICPA practice aid says partners must understand the tools and ensure the firm approved them."
   ],
   "who": "No named deployment"
  },
  {
   "id": "assurance-quality-management-18",
-  "title": "Human control points in AI-agent audit workflows, with escalation and approval",
+  "title": "Human control points built into agentic audit workflows, with escalation and approval",
   "grade": "B",
   "ladder": "delegate",
-  "problem": "Agents run multi-step procedures, so there is no single output to review; without defined review points errors compound and reviewers either redo everything or accept plausible output.",
+  "problem": "Agents run multi-step procedures, so there is no single output to review, and without defined review points errors compound.",
   "approach": [
-   "The FRC separates final-output review from oversight at control points (intermediate results, planned actions), and lets the tool escalate when uncertain.",
-   "IFIAR asks firms to assign specific personnel to decision checkpoints; IAASB roundtable participants called human-in-the-loop oversight non-negotiable.",
-   "Deloitte UK says teams critically assess, corroborate and approve agent results before use; KPMG says agents work 'in concert with human review'.",
-   "Deloitte and KPMG describe this as design intent and report no review results or control-point catches (self-reported)."
+   "The FRC separates review of final outputs from oversight at control points and lets a tool escalate when uncertain.",
+   "Deloitte UK says teams critically assess and approve agent results before use; KPMG says Clara agents work in concert with human review.",
+   "Neither reports review results; the control is design intent (self-reported).",
+   "A competent team member authorises the agent to continue and approves preliminary conclusions."
   ],
-  "who": "Deloitte UK, KPMG, FRC, IFIAR"
+  "who": "FRC, Deloitte UK, KPMG, IFIAR"
  },
  {
   "id": "assurance-quality-management-19",
-  "title": "Review mechanics for AI output: citations, source tie-back and confirmation gates",
+  "title": "Review mechanics for AI output: citations, traces, source tie-back, confirmation gates",
   "grade": "C",
   "ladder": "augment",
-  "problem": "A confident, well-formatted AI output can pass review with less challenge than a junior's work, and fluent output without sources cannot be checked efficiently.",
+  "problem": "A confident, well-formatted AI output can pass review with less challenge than a junior's work, and output without sources cannot be checked efficiently.",
   "approach": [
-   "FRC worked examples have the tool cite stable document identifiers for every extract, which supports review and reduces fabrication.",
-   "AFM saw good practice where each workflow step completes only once the auditor confirms the output was reviewed and supported by evidence.",
-   "Fieldguide says each agent run keeps a Trace of inputs, outputs and reasoning (vendor-published); PwC and RSM describe similar evidence trails.",
-   "No measured detection or override rate is published; reviewers confirm each AI-assisted step and check cited sources."
+   "The FRC's examples have the tool cite stable document identifiers for every extract; CPAB's example compares extracted data to the contract.",
+   "The AFM saw workflows where a step completes only after the auditor confirms the output is supported by evidence.",
+   "PwC, Fieldguide, RSM and Andera describe evidence trails or run traces; no detection or override rate is published."
   ],
-  "who": "FRC, AFM, Fieldguide, PwC, RSM"
+  "who": "FRC, AFM, PwC, Fieldguide, RSM, Andera"
  },
  {
   "id": "assurance-quality-management-20",
-  "title": "Idea: reviewers form an independent view before reading the AI's answer",
+  "title": "Idea: structured scepticism, forming an independent view before checking the AI answer",
   "grade": "D",
   "ladder": "assist",
-  "problem": "Idea only, no deployment: in an experiment, auditors relying on automated tools were less sceptical than when relying on a team member's work.",
+  "problem": "Idea, not a deployment: in an experiment, auditors relying on automated tools were less sceptical than when relying on a team member.",
   "approach": [
-   "The FRC says review may mean forming an independent view to compare, such as reading source material to confirm a GenAI summary.",
-   "In the Peters experiment a counter-arguing mindset intervention alleviated the loss of scepticism; it concerned automated tools, not GenAI (independent).",
-   "The AFM saw auditors make their own fraud-risk assessment first, then use a GenAI tool to challenge it.",
-   "Reviewer records an independent view before opening AI output; a supervisor spot-checks the quality of challenge."
+   "Idea in guidance: the FRC says reviewers may form an independent view first, such as reading source material before an AI summary.",
+   "In the Peters experiment a counter-arguing mindset reduced the loss of scepticism; the AFM saw auditors assess fraud risk themselves first.",
+   "The reviewer records an independent view before opening the AI output; a supervisor spot-checks the challenge."
   ],
   "who": "No named deployment"
  },
  {
   "id": "assurance-quality-management-21",
-  "title": "AI checks of audit files for omissions and inconsistencies before reviewer sign-off",
+  "title": "AI review of engagement files for omissions and inconsistencies before reviewer sign-off",
   "grade": "B",
   "ladder": "augment",
-  "problem": "Reviewers spend time on completeness and consistency checks that cost attention needed for judgemental areas, and review is a bottleneck.",
+  "problem": "Reviewers spend time on completeness and consistency checks that take attention from judgemental areas, and review is a bottleneck.",
   "approach": [
-   "Deloitte UK: GenAI tool Smart Review fully deployed in the year to 31 May 2025; all FTSE audits have access (self-reported).",
-   "KPMG says agents in KPMG Clara can assist teams by reviewing engagement documentation.",
-   "PIA Group's Group CIO describes hundreds, in some cases more than 1,000, AI checks per file (interview claim, not measured).",
-   "Reviewers resolve every AI-raised exception and still review judgemental areas; neither firm describes how reviewers use the output."
+   "Deloitte UK reports Smart Review was fully deployed in the year to 31 May 2025; all FTSE audits have access (self-reported).",
+   "KPMG says Clara agents can review engagement documentation; PIA Group's CIO describes AI running hundreds of checks on one file (self-reported).",
+   "Neither firm describes how reviewers use the output; the reviewer resolves every AI-raised exception."
   ],
   "who": "Deloitte UK, KPMG, PIA Group"
  },
  {
   "id": "assurance-quality-management-22",
-  "title": "Idea: cross-check AI output with a second model or rules-based tool",
+  "title": "Idea: second model or rules-based check on AI output, then human",
   "grade": "D",
   "ladder": "augment",
-  "problem": "Idea only, no deployment: generative tools are probabilistic, the same prompt can give different outputs, and human reviewers cannot catch every deficiency in high-volume AI output.",
+  "problem": "Idea, not a deployment: generative tools are probabilistic, and human reviewers cannot catch every deficiency in high-volume AI output.",
   "approach": [
-   "FRC guidance lists one AI model reviewing another's work, several models attempting a task, and rules-based checks such as schema checking.",
-   "As reported, the AICPA practice aid says one AI tool may check another, but the auditor's review responsibility is not reduced.",
-   "Grant Thornton UK's Jon Morris put AI reviewing AI 'a few years down the line'; no result is published.",
-   "The process escalates to a human when components disagree or the checker is unsure."
+   "Idea in regulator guidance: the FRC lists one LLM reviewing another, several LLMs with a selector, and rules-based checks.",
+   "The AICPA practice aid, as reported, says a second tool does not reduce the auditor's supervision and review responsibility.",
+   "A human takes over when components disagree or the checker is unsure."
   ],
   "who": "No named deployment"
  },
  {
   "id": "assurance-quality-management-23",
-  "title": "Record AI use centrally per tool and on each engagement file",
+  "title": "Document AI use in a central tool record and the engagement file",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Inspectors and reviewers cannot challenge AI-assisted work if the file does not show where AI was used and how the team responded; the AFM found this not always clear.",
+  "problem": "Inspectors cannot challenge AI-assisted work if the file does not show where AI was used and how the team responded.",
   "approach": [
-   "FRC guidance keeps a tool's purpose, development, certification and training centrally; the engagement file holds version, prompts and how outputs informed conclusions.",
-   "IFIAR asks firms to identify GenAI use in critical audit areas and to explain how auditor judgement was applied to outputs.",
-   "FRC: firms with engagement-specific tool processes all required templates on the audit file, though some wording made completion look optional (independent).",
-   "A named reviewer records reasons for each AI-assisted procedure; none of four UK Big Four 2024 reports stated override frequency (independent)."
+   "The FRC's June 2025 guidance keeps certification centrally; the audit file holds tool version, prompts, fitness assessment and how outputs informed conclusions.",
+   "IFIAR asks firms to explain how auditor judgement was applied to AI outputs.",
+   "FRC found firms with engagement-specific tools required templates on file, though some wording made completion look optional (independent)."
   ],
-  "who": "FRC, AFM, IFIAR, NFRA"
+  "who": "FRC, IFIAR, NFRA"
  },
  {
   "id": "assurance-quality-management-24",
-  "title": "Disclose AI use to clients and audit committees via engagement-letter terms",
+  "title": "Disclose AI use to clients and audit committees through engagement letters",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Clients worry about where their data goes and whether it trains models; a Grant Thornton UK director said some clients were nervous and a few would not sign up.",
+  "problem": "Clients worry about where their data goes and whether it trains models, and a Grant Thornton UK director said a few would not sign up.",
   "approach": [
    "Grant Thornton UK uses clear engagement-letter terms on AI use and in some cases ring-fences work from model training.",
-   "Deloitte's Martin Brown said very few clients had asked the firm not to use GenAI, and that transparency and education matter.",
-   "A Foley article suggests audit committees ask what the auditor does with AI, under what controls, and how AI-assisted judgements are documented.",
-   "The engagement leader agrees AI-use terms with the client and audit committee; no measure is published (self-reported)."
+   "Deloitte's Martin Brown said very few clients had asked the firm not to use GenAI.",
+   "A Foley article suggests audit committees ask what the auditor does with AI; the engagement leader agrees AI-use terms with the client."
   ],
-  "who": "Grant Thornton UK, Deloitte, IFIAR"
+  "who": "Grant Thornton UK, Deloitte"
  },
  {
   "id": "assurance-quality-management-25",
   "title": "Redesign supervision and early-career development as juniors review AI output",
   "grade": "C",
   "ladder": "augment",
-  "problem": "If tools do the first-pass work juniors used to do, juniors lose the practice that built judgement while being asked to review tool output.",
+  "problem": "If tools do the first-pass work juniors used to do, juniors lose the practice that built judgement while firms lean on them to review tool output.",
   "approach": [
-   "PwC's AI assurance leader said in August 2025 that new hires would act like managers within three years by overseeing AI.",
-   "PwC says assurance training is moving back to basics, with earlier time on critical thinking, negotiation and professional scepticism.",
-   "IFIAR asks firms to prioritise supervision training; the Thomson Reuters Institute says juniors still need structured development and supervision.",
-   "No outcome is published; baseline: 31 IFIAR findings on supervision and review policies in 2025, up from 10 in 2024 (independent)."
+   "PwC's AI assurance leader said in August 2025 that new hires would function like managers in three years, overseeing AI.",
+   "PwC said assurance training is moving back to basics, with earlier time on critical thinking and professional scepticism.",
+   "IFIAR asks firms to prioritise supervision training; no outcome is published (self-reported)."
   ],
-  "who": "PwC, IFIAR, Thomson Reuters Institute, CPAB"
+  "who": "PwC, IFIAR, CPAB"
+ },
+ {
+  "id": "assurance-quality-management-26",
+  "title": "Idea: put AI tools in the SQMS 1 risk assessment and evaluation",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: US firms must first evaluate their quality-management system by 15 Dec 2026, and public starting material shows no AI line.",
+  "approach": [
+   "Idea from standard-setter guidance: the AICPA practice aid, 13 Oct 2026, says audit firms should set quality-management policies for AI tools.",
+   "A small firm would add AI as quality risks and responses in its existing risk assessment and annual evaluation.",
+   "No firm reports having done this."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-quality-management-27",
+  "title": "Govern firm-built and staff-built agents through a governed platform or review gates",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Staff can build their own automations and agents with AI tools, creating unreviewed software and agent access to client data.",
+  "approach": [
+   "Caseware launched an Agentic Pioneer Program on 4 Jun 2026; PKF O'Connor Davies joined 8 Oct 2026 and will get priority access.",
+   "No agent in use is described; SAV Associates' founding partner published a 75-point security checklist with review, change management and least-privilege access.",
+   "Higher-risk agent actions need human approval; agents have named owners and review before entering workflows."
+  ],
+  "who": "Caseware, PKF O'Connor Davies, SAV Associates"
+ },
+ {
+  "id": "assurance-quality-management-28",
+  "title": "Outside capital funds firm-wide AI investment while attest stays CPA-owned",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Accounting firms are often capital-constrained because most profits go to partners, restricting investment in technology and acquisitions.",
+  "approach": [
+   "CFO Brew reported Crowe agreed a majority sale to KKR and Eide Bailly to Reverence Capital; both wanted more capital for AI.",
+   "Both firms are to adopt alternative practice structures separating attest from other lines; no AI programme funded by the deals is published.",
+   "Oath describes itself as an AI-native audit firm with a financial proof platform; no Oath client or result is published."
+  ],
+  "who": "Crowe, Eide Bailly, Oath"
  }
 ]

@@ -1,15 +1,14 @@
 [
  {
   "id": "assurance-soc-attestation-01",
-  "title": "AI for client acceptance, sampling and scheduling at a SOC audit firm",
+  "title": "AI support for acceptance, sampling and scheduling at a SOC specialist firm",
   "grade": "B",
   "ladder": "assist",
-  "problem": "A System and Organization Controls (SOC) practice must decide which engagements to accept, select samples, and schedule many concurrent audits.",
+  "problem": "A SOC practice must decide which engagements to accept, select samples and schedule many concurrent audits.",
   "approach": [
    "Linford & Company, an IT-audit specialist firm, says it uses AI for client acceptance, sampling of results and scheduling concurrent audits.",
-   "The post gives no detail on tools or methods.",
-   "Linford says the uses make audits more thorough, not faster (self-reported).",
-   "Acceptance and sampling decisions remain with the firm; the post presents AI as a support."
+   "The post gives no detail on tools; the firm says the uses make audits more thorough, not faster (self-reported).",
+   "Acceptance and sampling decisions remain with the firm."
   ],
   "who": "Linford & Company"
  },
@@ -18,12 +17,11 @@
   "title": "Compliance platforms draft policies, risk assessments and system descriptions for SOC 2",
   "grade": "C",
   "ladder": "augment",
-  "problem": "A company preparing for its first SOC 2 report must write policies, a risk assessment, control narratives and a system description, and generic templates produce look-alike documents.",
+  "problem": "A service organisation preparing for its first SOC 2 must write policies, a risk assessment, control narratives and a system description, and generic templates produce look-alike documents.",
   "approach": [
-   "Platforms supply policy templates and risk-assessment questions; Vanta's agent drafts tailored policies and compares them with what is happening in the environment.",
-   "Comp AI says its AI learns a company's stack and risk tolerance to generate company-specific policies; Vanta describes an auto-generated system description.",
-   "Comp AI promises 'Compliance in days' and 'SOC 2 audit-ready in weeks'; no time saving is quantified (vendor-published).",
-   "A person approves each draft policy and management owns the description; the auditor tests whether it fairly presents the system."
+   "Vanta's agent drafts tailored policies and its page describes an auto-generated system description; Comp AI says its AI generates company-specific policies.",
+   "Comp AI promises SOC 2 audit-ready in weeks; no time saving is quantified (vendor-published).",
+   "A person approves each draft policy; management owns the description and assertion."
   ],
   "who": "Vanta, Comp AI"
  },
@@ -32,11 +30,11 @@
   "title": "AI-generated fixes for failing controls before the examination, with expert approval",
   "grade": "C",
   "ladder": "augment",
-  "problem": "Readiness work surfaces failing tests such as misconfigured access or missing encryption, and engineers must fix them before the observation period begins.",
+  "problem": "Readiness work surfaces failing tests such as misconfigured access or missing encryption, and engineers must fix them before the observation period.",
   "approach": [
-   "Vanta's agent generates remediation snippets for tools such as Terraform, AWS CLI and CloudFormation; Secureframe sells 'Comply AI for Remediation'.",
-   "Oneleet says its AI fixes gaps and an expert approves every fix before it counts as done (vendor-published).",
-   "No outcome measure for remediation is published; an engineer or expert approves each change."
+   "Vanta's agent generates remediation snippets for tools such as Terraform, AWS CLI and CloudFormation; Secureframe sells Comply AI for Remediation.",
+   "Oneleet says its AI fixes gaps and an expert approves every fix before it counts as done.",
+   "No outcome measure is published for remediation (vendor-published)."
   ],
   "who": "Vanta, Secureframe, Oneleet"
  },
@@ -45,54 +43,50 @@
   "title": "AI mapping of controls and evidence across SOC 2 and other frameworks",
   "grade": "C",
   "ladder": "augment",
-  "problem": "Service organisations hold several frameworks at once, and mapping each to controls and collecting evidence again for each is repetitive and a place where scope gaps arise.",
+  "problem": "Service organisations hold several frameworks at once, and mapping controls and collecting evidence again for each is repetitive and a source of scope gaps.",
   "approach": [
-   "EY speakers say AI can compare an organisation's control data with frameworks, laws and regulations.",
-   "Vanta says it supports 35+ frameworks with cross-mapping and has a Customer Commitments feature that maps customer obligations to controls (vendor-published).",
-   "A-LIGN's platform maps existing evidence to extra frameworks and deduplicates requests, saving about 15 hours per framework on average (vendor-published).",
-   "Management decides the scope and controls to adopt; the auditor for each framework decides what evidence it accepts."
+   "Vanta says it supports 35+ frameworks with cross-mapping and a Customer Commitments feature mapping customer obligations to controls (vendor-published).",
+   "A-LIGN's platform maps existing evidence to additional frameworks and deduplicates requests, saving about 15 hours per framework (vendor-published).",
+   "Management decides scope and controls; each framework's auditor decides what evidence it accepts."
   ],
-  "who": "Vanta, A-LIGN, EY speakers"
+  "who": "Vanta, A-LIGN, EY"
  },
  {
   "id": "assurance-soc-attestation-05",
-  "title": "Continuous control monitoring and AI-collected evidence on compliance platforms",
+  "title": "Continuous control monitoring and agent-collected evidence on compliance platforms",
   "grade": "B",
   "ladder": "automate",
-  "problem": "Preparing for SOC 1 or SOC 2 meant collecting screenshots and spreadsheets from many systems each period, controls drift between annual cycles, and the work falls on small security teams.",
+  "problem": "SOC 2 preparation meant collecting screenshots and spreadsheets each period, and controls drift between annual cycles, so gaps surface at fieldwork.",
   "approach": [
-   "Platforms such as Vanta and Drata connect to cloud, identity, HR and ticketing systems, run continuous tests and pull evidence.",
-   "AI agents added in 2025 and 2026 collect and validate evidence, draft policies and flag gaps; people decide. Much monitoring is rules-based.",
-   "Vanta cites an IDC finding that customers reduce audit prep time by 82% (vendor-published).",
-   "WorkJam's CISO says weekly compliance effort fell to about 1 hour from 7 or 8 (vendor-published); control owners decide on exceptions."
+   "Vanta and Drata connect to company systems and run continuous tests; AI agents added since 2025 validate evidence and flag gaps.",
+   "WorkJam's CISO says weekly compliance effort fell to about 1 hour from 7 or 8 (vendor-published).",
+   "Control owners decide on flagged exceptions; the service auditor checks tool coverage matches the system description."
   ],
-  "who": "Vanta, Drata, WorkJam, Snyk, EY speakers"
+  "who": "Vanta, Drata, WorkJam, Snyk, Wispr Flow"
  },
  {
   "id": "assurance-soc-attestation-06",
-  "title": "SOC firm's audit platform screens client evidence against audit intent before fieldwork",
+  "title": "SOC firm's audit platform screens client evidence against audit intent",
   "grade": "B",
   "ladder": "augment",
-  "problem": "Clients submit evidence that fails the control's intent, which causes rework during fieldwork, and evidence is re-requested for each framework.",
+  "problem": "Clients submit evidence that fails the control's intent, causing rework during fieldwork, and evidence is re-requested for each framework.",
   "approach": [
-   "A-LIGN's platform (A-SCEND with EvidenceIQ) evaluates client evidence against audit intent before auditors review it, showing coverage and gaps with explanations.",
-   "It maps existing evidence to additional frameworks and deduplicates requests; customers can switch AI features on or off and auditors remain accountable.",
-   "Customer Teleperformance reports evidence gathering and validation time down about 30-40% and audit preparation effort down about 25% (vendor-published).",
+   "A-LIGN's platform evaluates client evidence against audit intent before auditors review it, showing coverage and gaps, and says auditors remain accountable.",
+   "Customer Teleperformance reports evidence gathering and validation time down about 30-40% (vendor-published).",
    "Auditor review and validation precede the final report."
   ],
   "who": "A-LIGN, Teleperformance"
  },
  {
   "id": "assurance-soc-attestation-07",
-  "title": "Engagement platform and client portal replace spreadsheets and email at Weaver",
+  "title": "Engagement platform and client portal replace spreadsheets in an attestation practice",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Evidence collection and review in attestation and internal audit engagements ran on spreadsheets, email chains and manual trackers, with multiple versions of documents.",
+  "problem": "Evidence collection and review in attestation engagements ran on spreadsheets, email chains and manual trackers with multiple versions of documents.",
   "approach": [
-   "Weaver, which has its own attestation and internal audit methodologies, adopted Fieldguide as a single engagement workspace and client portal.",
-   "Weaver kept its methodology; its next step is to embed the platform's AI agents, with a phased rollout.",
-   "Weaver reports a 10-12% increase in realization in the first year (vendor-published).",
-   "Reviewers work from the latest version and validate engagement output."
+   "Weaver adopted Fieldguide as a single engagement workspace and client portal while keeping its own methodology.",
+   "The firm says its next step is to embed the platform's AI agents in a phased rollout.",
+   "Weaver reports realization rose 10-12% in the first year (vendor-published); reviewers validate engagement output."
   ],
   "who": "Weaver, Fieldguide"
  },
@@ -101,12 +95,11 @@
   "title": "Agent-run SOC engagement: planning, evidence requests, testing and exception drafting",
   "grade": "C",
   "ladder": "delegate",
-  "problem": "SOC examinations repeat the same request, test and document cycle for every control, and firms with a growing SOC practice are capacity-bound.",
+  "problem": "SOC examinations repeat the same request, test and document cycle for every control, and firms with growing SOC practices are capacity-bound.",
   "approach": [
-   "Fieldguide describes four agents for SOC work: planner, auditor (requests, evidence validation, tests), reviewer (exceptions) and orchestrator.",
-   "A live demonstration of an agent-run SOC 2 engagement was scheduled for 13 October 2026; the capability is announced.",
-   "Vendor figures: 55% reduction in engagement hours, 90% time savings on testing, 4x engagement capacity (vendor-published).",
-   "A practitioner reviews drafted exceptions, and the reviewer agent routes judgement calls to a practitioner."
+   "Fieldguide describes four agents: planner, auditor agent that requests evidence and runs tests, reviewer agent surfacing exceptions, and orchestrator.",
+   "A live demonstration was scheduled for 13 October 2026; Fieldguide lists a 55% reduction in engagement hours (vendor-published).",
+   "The practitioner reviews drafted exceptions; the reviewer agent routes judgement calls to a practitioner."
   ],
   "who": "Fieldguide"
  },
@@ -117,38 +110,35 @@
   "ladder": "augment",
   "problem": "Draft SOC reports are long, and a reviewer can miss a detail buried deep in the document.",
   "approach": [
-   "Linford & Company says it uses AI for reviewing reports, among other uses.",
-   "The aim is a more thorough job, such as finding things on a late page of a long report.",
-   "Linford says the AI helps catch details a human might miss and does not save time (self-reported); no figure is published.",
-   "The post names missing walkthroughs and no partner review of the report as signs of a bargain-basement audit."
+   "Linford & Company says it uses AI to review reports, aiming to find things on a late page of a long report.",
+   "The firm says the AI does not save it time (self-reported).",
+   "The post names missing partner review of the report as a sign of a bargain-basement audit."
   ],
   "who": "Linford & Company"
  },
  {
   "id": "assurance-soc-attestation-10",
-  "title": "Security questionnaire answers drafted from issued SOC reports and approved answer libraries",
+  "title": "Security questionnaire answers drafted from issued SOC reports and approved answers",
   "grade": "C",
   "ladder": "augment",
-  "problem": "A SOC report is meant to reduce customer questionnaires, but sales deals still trigger long questionnaires asking for the same facts, which security teams answer by hand.",
+  "problem": "A SOC report is meant to reduce customer questionnaires, but sales deals still trigger long questionnaires that security teams answer by hand.",
   "approach": [
-   "EY conference speakers list drafting tailored questionnaire responses that learn from issued SOC reports and approved answers.",
-   "Vanta's AI suggests answers from a tagged knowledge base of policies, evidence and previous responses, and flags gaps.",
-   "Vanta reports 95% acceptance of AI-suggested answers; its comparison page says up to 81% faster (vendor-published).",
-   "The user reviews each answer set, and the security owner approves answers before they go to the customer."
+   "Vanta's AI suggests answers from a tagged knowledge base of policies, evidence and previous responses, taking the first pass and flagging gaps.",
+   "Vanta says suggested answers are accepted at a 95% rate (vendor-published).",
+   "The user reviews and submits each answer set; the security owner approves answers before they go to the customer."
   ],
-  "who": "Vanta, EY speakers"
+  "who": "Vanta, EY"
  },
  {
   "id": "assurance-soc-attestation-11",
-  "title": "Trust centre with AI chatbot: buyers' front end for SOC reports",
+  "title": "Trust centre with AI chatbot as buyers' front end to SOC reports",
   "grade": "C",
   "ladder": "automate",
-  "problem": "Buyers repeatedly ask each vendor for its report, policies and answers by email and NDA, want current proof between annual reports, and trust pages can overstate what is in place.",
+  "problem": "Buyers repeatedly ask each vendor for its report, policies and answers by email and NDA, and public trust pages can overstate what is in place.",
   "approach": [
-   "A trust centre (public or gated page of reports, policies and control status) publishes the material from one source.",
-   "Vanta's trust centre includes an AI chatbot answering buyer questions, CRM-based gating and NDA automation.",
-   "Vanta says the Trust Center and chatbot deflect 70-87% of inbound reviews (vendor-published).",
-   "A security owner approves each published claim."
+   "A trust centre publishes reports, policies and control status; Vanta's adds an AI chatbot answering buyer questions and NDA automation.",
+   "Whistic sells one for vendors, and Chiaro gives one free with any audit.",
+   "Vanta says the Trust Center and chatbot deflect 70-87% of inbound reviews (vendor-published); the security owner approves each published claim."
   ],
   "who": "Vanta, Whistic, Chiaro"
  },
@@ -157,42 +147,39 @@
   "title": "Flagging templated SOC reports by comparing language across reports (vendor-announced)",
   "grade": "C",
   "ladder": "assist",
-  "problem": "Templated, look-alike reports are hard to spot one engagement at a time; after the Delve allegations (denied by Delve), Whistic told buyers a report is the start of a conversation.",
+  "problem": "Templated, look-alike reports are hard to spot one engagement at a time, and buyers need operational answers templates cannot produce.",
   "approach": [
-   "Whistic says its AI surfaces overly uniform language, thin operational detail and gaps between policy and questionnaire answers (vendor-announced).",
-   "Peer reviewers may manually compare about five engagements when risk is elevated; using AI for that is an idea, not reported.",
-   "No detection rate or false-positive figure was found.",
-   "A vendor-risk analyst decides on follow-up; higher-risk vendors get a conversation and an operational answer to a specific control question."
+   "Whistic says its AI surfaces overly uniform language, thin operational detail and policy gaps; no detection rate was found (vendor-published).",
+   "AICPA peer reviewers may manually compare about five engagements; no source says AI performs this, so using it there is an idea.",
+   "A vendor-risk analyst decides follow-up; the peer review team captain decides whether elevated risk exists."
   ],
   "who": "Whistic, AICPA peer review"
  },
  {
   "id": "assurance-soc-attestation-13",
-  "title": "Platform-curated auditor networks and audit hubs that route buyers to audit firms",
+  "title": "Platform-curated auditor networks that route SOC buyers to audit firms",
   "grade": "B",
   "ladder": "assist",
-  "problem": "Examination timelines slip on evidence requests, access provisioning and coordination between service organisation and auditor, and buyers increasingly reach SOC 2 through tool vendors.",
+  "problem": "Examination timelines slip on evidence requests and coordination, and buyers increasingly reach SOC 2 through tool vendors that dominate online search.",
   "approach": [
-   "Platforms run an auditor portal with scoped access and comments and keep a list of audit-firm partners.",
-   "Vanta's partner page lists 100+ audit firms and 26,000+ audits (vendor-published); Drata says it has never bundled audits.",
-   "A-LIGN's alliances lead says organisations using Vanta cut audit completion time by 50% (vendor-published).",
-   "The CPA firm sets scope, sampling and fee; buyers ask the CPA in writing about referral or revenue arrangements with the platform."
+   "Platforms run auditor portals with scoped access and keep lists of audit-firm partners; Vanta says 100+ audit firms work with it (vendor-published).",
+   "Drata describes a partner ecosystem with quality expectations and says it has never bundled audits.",
+   "The CPA firm sets scope, sampling and fee; buyers should ask in writing about referral arrangements."
   ],
-  "who": "Vanta, Drata, A-LIGN, AICPA"
+  "who": "Vanta, Drata, A-LIGN"
  },
  {
   "id": "assurance-soc-attestation-14",
-  "title": "Bundled SOC-as-a-service with a referred CPA firm and fixed fee (contested)",
+  "title": "Bundled SOC-as-a-service with fixed fee and timeline (contested; Delve denies allegations)",
   "grade": "B",
   "ladder": "automate",
   "problem": "SOC 2 became a gate for enterprise sales, so startups want a report fast and cheaply, and fast-turnaround offers compete on speed and price.",
   "approach": [
-   "Dozens of tool vendors promise results in weeks or hours, acting as a front door, sometimes through networks of small CPA firms.",
-   "In March 2026 an anonymous whistleblower alleged that Delve generated evidence, test procedures and auditor conclusions before independent review; Delve denies this.",
-   "No regulator or court finding found (as of 2026-10-17); the AICPA says it is looking into anonymous allegations about an unnamed vendor.",
-   "Buyers vet the signing firm's licence and peer review; the licensed CPA firm runs its own tests, writes the conclusions and signs."
+   "Dozens of vendors promise results in weeks or hours; Delve says licensed auditors test and issue the final report.",
+   "In March 2026 an anonymous whistleblower alleged Delve generated evidence and conclusions before review; Delve denies it; no regulator finding was found.",
+   "The licensed CPA firm runs its own tests, authors conclusions and signs; buyers vet the firm's licence and peer review."
   ],
-  "who": "Delve (allegations denied), AICPA"
+  "who": "Delve, anonymous whistleblower, AICPA"
  },
  {
   "id": "assurance-soc-attestation-15",
@@ -201,25 +188,48 @@
   "ladder": "augment",
   "problem": "Readiness software and the audit are bought separately, so evidence is collected twice and the client manages two relationships.",
   "approach": [
-   "Thoropass combines a compliance platform with a licensed CPA firm, Thoropass Assurance, so the audit runs in the same platform.",
-   "Thoropass says it uses AI to map controls, identify gaps and organise evidence, with the platform enforcing consistency in evidence collection.",
-   "A-LIGN pairs its own audit platform with a PCAOB-registered CPA firm; Thoropass claims 1,000+ customers, with no time or cost measure (vendor-published).",
-   "Licensed auditors perform the examination and sign the report."
+   "Thoropass combines a compliance platform with a licensed CPA firm and says it uses AI to map controls and organise evidence.",
+   "A-LIGN pairs its audit platform with a PCAOB-registered CPA firm.",
+   "Thoropass claims 1,000+ customers, with no time or cost measure (vendor-published); licensed auditors perform the examination and sign."
   ],
   "who": "Thoropass, A-LIGN"
  },
  {
   "id": "assurance-soc-attestation-16",
-  "title": "AI-native CPA firm with a published method and complete-population testing (Chiaro)",
+  "title": "AI-native CPA firm publishing its method and testing complete populations",
   "grade": "B",
   "ladder": "delegate",
-  "problem": "A buyer holding two SOC 2 reports often cannot tell whether one auditor inspected evidence and the other only collected screenshots, because firms do not publish their testing methods.",
+  "problem": "A buyer holding two SOC 2 reports often cannot tell whether one auditor inspected evidence, because firms do not publish their testing methods.",
   "approach": [
-   "Chiaro, started by a former Deloitte SOC auditor, publishes its control library, test attributes and method as openly licensed machine-readable files.",
-   "The customer's own AI tool collects records via MCP, an AI-to-data connector, and submits them; the firm examines the evidence and signs.",
-   "The default is complete-population testing, with sampling a disclosed fallback, because AI makes checking every item cheap at small-company scale (self-reported).",
-   "Readiness software and the audit are sold as one product; the customer decides every control choice."
+   "Chiaro publishes its control library, test attributes and Type II method as machine-readable files; the customer's AI tool collects evidence via MCP.",
+   "The default is testing complete populations, with sampling a disclosed fallback; the author says samples would often be most of it (self-reported).",
+   "A licensed CPA firm evaluates the evidence and signs the report; the customer decides every control choice."
   ],
-  "who": "Chiaro (Y Assurance PLLC)"
+  "who": "Chiaro (Y Assurance)"
+ },
+ {
+  "id": "assurance-soc-attestation-17",
+  "title": "One CPA-led engagement delivers SOC 2 plus AIUC-1 certification for AI agents",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Buyers of AI products run slow, bespoke security questionnaires, and a SOC 2 report was not designed to test hallucinations or adversarial manipulation of an agent.",
+  "approach": [
+   "The AICPA and AIUC announced on 19 Oct 2026 a joint offering: one CPA-led engagement ending in SOC 2 and AIUC-1 certification.",
+   "Several CPA firms are piloting it, with PwC the only one named; full launch is expected in early 2027.",
+   "The CPA firm issues the SOC 2 opinion; AIUC runs technical evaluations and issues the certification."
+  ],
+  "who": "AICPA, AIUC, PwC"
+ },
+ {
+  "id": "assurance-soc-attestation-18",
+  "title": "Regional firm pairs AI governance advisory with SOC examinations, managing independence",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "SOC clients that build or deploy AI may want AI governance help, but AI-related nonattest services to an attest client can raise independence concerns.",
+  "approach": [
+   "A 7 Oct 2026 job posting shows Kaufman Rossin hiring a Senior Manager for AI governance advisory, including ISO 42001 alignment.",
+   "It is a hiring signal only; no outcome is published (self-reported), and checkpoints are not stated in the posting."
+  ],
+  "who": "Kaufman Rossin"
  }
 ]

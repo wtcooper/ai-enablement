@@ -1,0 +1,281 @@
+[
+ {
+  "id": "assurance-private-company-01",
+  "title": "One shared audit platform with vendor AI at four mid-market firms",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Many mid-market firms run audits, reviews, compilations and benefit plan audits on disconnected tools with uneven methodology, and few build their own AI audit tooling.",
+  "approach": [
+   "Firms adopt the AICPA-developed DAS suite on Caseware's platform, with the Caseware Verity AI assistant inside one shared engagement system.",
+   "Caseware says outputs are citation-backed and reviewable before entering the file; auditors accept, refine or override each suggestion (vendor-published).",
+   "Vendor-published adoption counts: Withum more than 1,000 active users and 6,000 engagements; EisnerAmper more than 1,100 professionals and 1,500 engagements.",
+   "Managers and partners review as before; no time, quality or cost results are published."
+  ],
+  "who": "Withum, EisnerAmper, Citrin Cooperman, PKF O'Connor Davies"
+ },
+ {
+  "id": "assurance-private-company-02",
+  "title": "Standardise workpapers and the firm knowledge base before adding AI (Citrin Cooperman)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Audit variability makes it hard for auditors to benefit from AI tools that need consistent execution, and occasional audits feel like starting over each time.",
+  "approach": [
+   "Citrin Cooperman runs a dedicated project team to develop a standardised workpaper, layout and functionality, with technologists, experts, managers and quality teams.",
+   "The effort has run more than a year (self-reported); the article reports its length, not results.",
+   "A standardised knowledge base is meant to help AI surface the right information; the quality and standards teams help define the workpaper."
+  ],
+  "who": "Citrin Cooperman"
+ },
+ {
+  "id": "assurance-private-company-03",
+  "title": "Test audit tools and AI agents on the firm's own engagements first",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Smaller firms depend on vendors' own accuracy statements; the only accuracy figures found for mid-market audit tools are vendor-run beta results.",
+  "approach": [
+   "Thomson Reuters executives say leading firms compare systems side by side and run AI in parallel on live engagements (vendor-run interview).",
+   "Applied to an agent: score output against engagements with known answers, record misses by type, and re-test when the model changes.",
+   "Caseware reports 94% accuracy on golden dataset items from beta traces (vendor-published); no firm reports its own test result.",
+   "Partners decide whether the evidence is enough to scale; the methodology lead signs off results first."
+  ],
+  "who": "Thomson Reuters, Caseware"
+ },
+ {
+  "id": "assurance-private-company-04",
+  "title": "Firm-built audit platforms starting with private-company audits (Grant Thornton, EisnerAmper)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Firms with large private-company audit books want one data foundation and consistent workpapers across engagements instead of fragmented tools.",
+  "approach": [
+   "Grant Thornton US announced gtap, a cloud platform standardising audit data and workpapers, rolling out to private-company audits first, then public-company audits.",
+   "EisnerAmper announced the EisnerAI Audit Design Agent, built with Microsoft, and also adopted DAS, so it both builds and buys.",
+   "Both firms describe intent only; neither gives accuracy, time or review-note figures (self-reported).",
+   "Auditors guide the process and keep oversight of agents."
+  ],
+  "who": "Grant Thornton US, EisnerAmper"
+ },
+ {
+  "id": "assurance-private-company-05",
+  "title": "Firm-built audit agents on vendor platforms, including overnight runs (FGMK, PKF)",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Firms want agents tailored to their own procedures, such as cash, journal entry and statement testing, without sending client data to open tools or building software.",
+  "approach": [
+   "FGMK built DataSnipper Excel agents for cash, journal entry and statement testing, then tested Alwin, which runs overnight for next-morning review.",
+   "Preparer agents build workpapers and reviewer agents check statement consistency; FGMK's quality control team still runs its own independent review.",
+   "PKF O'Connor Davies joined Caseware's Agentic Pioneer Program to design its own agents; participation is announced, with no results published (vendor-published).",
+   "The reviewer sees the agent's steps beside the workbook and leaves cell-level notes."
+  ],
+  "who": "FGMK, PKF O'Connor Davies, DataSnipper, Caseware"
+ },
+ {
+  "id": "assurance-private-company-06",
+  "title": "Named AI and technology leaders at private-company audit firms",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Tool adoption stalls without owners; firms name staff training, data access and budget as top blockers, and 75% of 54 surveyed firms have no formal transformation plan.",
+  "approach": [
+   "Citrin Cooperman has an Assurance Innovation Leader; Withum a Team Leader, Digital Audit Solutions; EisnerAmper an Assurance Technology and Innovation Leader.",
+   "BPM advertised an Audit AI Technology Director to lead adoption, KPIs, change management and vendor budgets.",
+   "BW&O CPAs advertised an Audit Manager role to refine how auditors work with AI agents; it reviews workpapers and statements.",
+   "Job postings and titles show the roles exist (self-reported); no result is stated."
+  ],
+  "who": "Citrin Cooperman, EisnerAmper, Withum, BPM, BW&O CPAs"
+ },
+ {
+  "id": "assurance-private-company-07",
+  "title": "Written AI use policy with approved tools and training for smaller firms",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Staff use general chat tools faster than firms write rules: more than one in three surveyed tax and audit professionals admit using unauthorised AI tools.",
+  "approach": [
+   "The firm writes down approved tools, what client information may go in, the review standard for AI-assisted work, and a policy owner.",
+   "Tool access is tied to completed role-based training; the engagement partner confirms tools are firm-approved, used correctly and the team is competent.",
+   "Independent survey of 162 firms: 57% have a written, trained-on AI policy, up from 20% in 2024 (blog summary).",
+   "EisnerAmper and Citrin Cooperman used CPA.com for training and change management in their platform rollouts."
+  ],
+  "who": "AICPA, CPAFMA, Karbon, Thomson Reuters"
+ },
+ {
+  "id": "assurance-private-company-08",
+  "title": "Write an AI transformation plan and baseline the metrics first",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "75% of 54 surveyed firms had no formal documentation of their audit transformation, and the metrics most track say little about AI's effect.",
+  "approach": [
+   "Record a baseline before rollout (hours per task, review notes per file, nonconformity history) and track it afterwards.",
+   "The benchmark report suggests newer metrics, such as client readiness, and reinvesting a defined share of saved time (20% as an example).",
+   "Independent survey of 54 firms (not representative): only 28% track audit margin per engagement and 13% client readiness.",
+   "The practice leader reviews baseline and post-rollout figures together; a partner decides how much saved time is reinvested."
+  ],
+  "who": "CPA.com, AICPA, ISACA"
+ },
+ {
+  "id": "assurance-private-company-09",
+  "title": "Start with general AI on low-risk drafting tasks (Beever and Struthers)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Firms adopt general assistants without knowing whether time saved becomes output or whether staff trust the results, and risk being overwhelmed.",
+  "approach": [
+   "Beever and Struthers introduced GenAI with skills sessions under a year-long university study; staff drafted emails, summarised documents and supported spreadsheet work.",
+   "A Caseware executive advised starting with easy tasks chosen with staff, not analytics, and reading licence terms (AICPA webcast).",
+   "Independent staff survey: 74% said GenAI helped them complete tasks faster; 22% reported a marked rise in overall output.",
+   "72% were concerned about incorrect output and 52% about client information handling; staff review all output."
+  ],
+  "who": "Beever and Struthers, ICAS, Caseware"
+ },
+ {
+  "id": "assurance-private-company-10",
+  "title": "Citation-backed research and document assistant for audit teams (Plante Moran)",
+  "grade": "B",
+  "ladder": "assist",
+  "problem": "Audit teams lose time on technical research and on reading long unstructured documents such as board minutes, contracts and debt agreements, and staff are scarce.",
+  "approach": [
+   "Thomson Reuters CoCounsel Audit gives citation-backed answers, accepts document uploads and lets firms integrate internal documents and templates.",
+   "Plante Moran piloted it with more than 140 participants; 91% said it was faster than traditional research, and access later widened (vendor-published).",
+   "Harris, Hardy & Johnstone says document review that took an hour now takes about five minutes (vendor-published).",
+   "The auditor reads the cited passages and decides what to rely on."
+  ],
+  "who": "Plante Moran, Harris, Hardy & Johnstone"
+ },
+ {
+  "id": "assurance-private-company-11",
+  "title": "RSM's Luca audit ecosystem and Ask Luca guidance assistant",
+  "grade": "B",
+  "ladder": "augment",
+  "problem": "Auditors serving middle-market clients need fast, firm-approved guidance in busy season and want to analyse more of the client's data.",
+  "approach": [
+   "RSM added Ask Luca, generative AI over its assurance manuals and technical guides, to RSM Luca, used by 4,000+ assurance professionals.",
+   "The ecosystem also uses AI for risk-focused data analysis, journal-entry visualisations, matching source documents to support data, and statement review and validation.",
+   "RSM says Ask Luca reduces research time (self-reported); no timing or accuracy figure is given.",
+   "Auditors apply professional judgment and critical thinking to the outputs."
+  ],
+  "who": "RSM"
+ },
+ {
+  "id": "assurance-private-company-12",
+  "title": "Client request intake: agents validate client submissions and extract data into workpapers",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Client information arrives late, incomplete or poorly formatted, and staff retype PDFs into Excel; 60% of 54 firms ranked poor-quality client data among top blockers.",
+  "approach": [
+   "Caseware Client Requests feeds client information into the Excel workpaper; a validation agent checks it and the auditor accepts or rejects each.",
+   "Caseware's Document Intelligence Agent, in beta in June 2026, extracts source-document information into workpapers; Client Requests is in limited early access.",
+   "Suralink's Extract Links structures data from client documents and Link Answers answers lease and debt agreement questions, each tied to its source.",
+   "Announcements and beta descriptions only (vendor-published); no customer, hours or accuracy figure."
+  ],
+  "who": "Caseware, Suralink"
+ },
+ {
+  "id": "assurance-private-company-13",
+  "title": "Proof of cash for small-business clients without ERP data feeds",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "Clients keep books in QuickBooks, Xero and similar systems, hand over inconsistent exports and PDF bank statements, and often refuse direct API access.",
+  "approach": [
+   "Audit Sight sits over the engagement platform, takes data by read-only connection or Excel and CSV templates, and converts PDF bank statements.",
+   "It rebuilds a complete general ledger and produces a proof-of-cash workpaper reconciling every bank and book transaction.",
+   "A Holbrook & Manter partner says automated cash testing changed how the firm does substantive testing (vendor-published); no hours or error figures.",
+   "The auditor investigates unreconciled items and concludes; the output is a workpaper input, not the conclusion."
+  ],
+  "who": "Holbrook & Manter, Audit Sight, Thomson Reuters"
+ },
+ {
+  "id": "assurance-private-company-14",
+  "title": "Risk-focused sample selection recorded as a workpaper (Sam Brown CPA)",
+  "grade": "B",
+  "ladder": "automate",
+  "problem": "A small firm relied on Excel templates and manual steps for sampling, testing and documentation, over-audited, and found it hard to justify leaner samples to peer reviewers.",
+  "approach": [
+   "Thomson Reuters Audit Intelligence Analyze runs transaction analytics inside the workflow to focus procedures on higher-risk areas.",
+   "Selections are recorded as workpapers, so the firm can show peer reviewers why a sample is the size it is.",
+   "The owner estimates at least five to six hours saved per audit (vendor-published); an estimate, not a tracked metric.",
+   "The firm decides which selections to test; peer review of the file follows."
+  ],
+  "who": "Sam Brown CPA, Thomson Reuters"
+ },
+ {
+  "id": "assurance-private-company-15",
+  "title": "Excel assistant drafting workpapers and test steps from the audit file (Caseware)",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Auditors move information by hand between the audit file, client submissions and Excel workpapers; Caseware's aim is less time searching for and transferring information.",
+  "approach": [
+   "Caseware says Verity for Excel reads the connected engagement from inside Excel and runs multi-step workflows for workpaper generation and test automation.",
+   "It covers tests of controls, substantive analytics and tests of details; Caseware described it as generally available on 9 September 2026.",
+   "Caseware reports, from its own testing to date, an average of 9 hours saved per engagement and 75% per task (vendor-published).",
+   "The practitioner approves each suggested change before it is applied."
+  ],
+  "who": "Caseware (vendor claim)"
+ },
+ {
+  "id": "assurance-private-company-16",
+  "title": "AI gap flagging and cross-file checks aimed at recurring small-firm peer-review findings",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Small firms feel quality-management and peer-review compliance effort now rivals audit work, and peer reviews show weak risk assessment documentation linked to procedures.",
+  "approach": [
+   "The AICPA column advises standardising templates and checklists and says audit AI can help identify gaps and flag inconsistencies earlier (column claim).",
+   "Thomson Reuters argues traceable links from planning to risk to procedure to conclusion reduce deficiencies reviewers look for (vendor claim).",
+   "Caseware describes cross-file risk checks; its demo surfaced a trial-balance variance with no associated risk. No peer-review result is reported.",
+   "Manager and partner remain the reviewers, with engagement quality review where required."
+  ],
+  "who": "AICPA, Thomson Reuters, Caseware"
+ },
+ {
+  "id": "assurance-private-company-17",
+  "title": "Compilation and review engagements on the same AI-enabled platform as audits",
+  "grade": "C",
+  "ladder": "augment",
+  "problem": "Reviews and compilations are high-volume at small firms; in 2025 state peer-review reports, 43 of 295 reviews (15%) were nonconforming, and no AI-specific practice material was found.",
+  "approach": [
+   "Citrin Cooperman, Withum and EisnerAmper adopted the DAS suite including its compilation and review module, which makes no AI claim.",
+   "Caseware's Disclosure Checklist Agent is described only in the audit workflow; AI inside compilation and review work is not described.",
+   "Adoption counts cover the whole suite (EisnerAmper: more than 1,100 professionals, over 1,500 engagements; vendor-published), not an AI effect on compilations.",
+   "The accountant reviews and signs the compilation or review report."
+  ],
+  "who": "Citrin Cooperman, Withum, EisnerAmper, Caseware"
+ },
+ {
+  "id": "assurance-private-company-18",
+  "title": "Decide and explain where AI savings go: margin, fees or value",
+  "grade": "C",
+  "ladder": "assist",
+  "problem": "Efficiency gains in audits can be competed away through fees, CFOs are asking where savings go, and finance leaders are split on whether auditor AI improved quality.",
+  "approach": [
+   "A small firm says freed capacity served more clients without fee rises; another says it can maintain or raise rates (vendor-published).",
+   "Of 54 benchmark firms, 74% anticipate raising fees, 13% track value-billing agreements and 66% tell clients about their technology (independent).",
+   "FERF advises finance leaders to ask their auditor how AI affects scope, fees or insight; partners approve pricing for AI-shortened work.",
+   "The engagement partner owns the conversation with the CFO or audit committee."
+  ],
+  "who": "FERF, CPA.com and AICPA, Thomson Reuters"
+ },
+ {
+  "id": "assurance-private-company-19",
+  "title": "Idea: tell your liability insurer how AI is used and check exclusions",
+  "grade": "D",
+  "ladder": "assist",
+  "problem": "Idea, not a deployment: insurers say errors from unvetted AI output can be covered like any error unless a policy excludes AI, and exclusions may come if claims rise.",
+  "approach": [
+   "Idea: the firm asks its broker about any AI exclusion or sublimit, and tells the insurer how AI is used.",
+   "Idea: keep the policy, review and consent records that show AI output was verified.",
+   "A CNA risk director says the lack of a CPA-specific AI standard is unlikely to help defend an inadequate-review claim.",
+   "The managing partner reviews coverage at each renewal."
+  ],
+  "who": "No named deployment"
+ },
+ {
+  "id": "assurance-private-company-20",
+  "title": "Idea: continuous, AI-run audits sold by start-ups, challenging hours-based fees",
+  "grade": "D",
+  "ladder": "delegate",
+  "problem": "This is an idea, not a deployment: audit fees and delivery models are built on labour-intensive procedures.",
+  "approach": [
+   "Idea: new entrants run continuous, AI-driven audits that undercut the hours-based model.",
+   "A machine-written summary of a September 2026 podcast says start-ups such as Oath Verified are pioneering continuous AI-powered audits, with no data.",
+   "The summary does not say whether any private-company audit has been signed under this model.",
+   "The source states no human checkpoint; the opinion still rests with a licensed auditor under existing standards."
+  ],
+  "who": "No named deployment"
+ }
+]
