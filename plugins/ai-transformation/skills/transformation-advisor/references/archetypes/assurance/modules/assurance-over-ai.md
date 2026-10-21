@@ -220,7 +220,7 @@ accreditation decisions.
 - **2026-02-03** Schellman named authorised AIUC-1 auditor [SCHELLMAN-AIUC1-2026]. **2026-02-16** PwC Canada ISO 42001 offer [CONSULTINGCA-PWC-2026]. **2026-02-23** COSO GenAI guidance [COSO-GENAI].
 - **2026-03-10** BSI holds ANAB, UKAS and RvA accreditation [BSI-ANAB-2026].
 - **2026-04-07** EY announces an AI assurance suite for audit and non-audit clients [EY-CANVAS-2026].
-- **2026-05-19** SEC filer-status proposal would move about half of attested issuers out of 404(b) if adopted [UNIQUS].
+- **2026-05-19** SEC filer-status proposal would move about half of attested issuers out of 404(b) if adopted [UNIQUS-FILER-2026].
 - **2026-06-30** AIUC-1 trustmark on the STAR Registry [CSA-STAR-AIUC1-2026].
 - **2026-07** AI Omnibus adopted and published (dates differ by source) [AG-OMNIBUS-2026, SIG-AIACT-2026]; IAASB adds AI assurance to its Technology Catalog [IAASB-CATALOG-2026].
 - **2026-08-27** KPMG aIQ Capture is the first Big Four AIUC-1 certification [AIUC-KPMG-2026].
@@ -276,9 +276,9 @@ keep that file's keys.
   OJEWALE-2024, MOKANDER-LLM-2023, MOKANDER-BLUEPRINT-2024, NIAN-AUDITABLE-2026, ARXIV-HARTMANN-2025;
   HUMANITIX-BABL-2026, ICAEW-AIAC-2026, TECHUK-ROADMAP-2026; CBH-POD-2025; CASRAI-42006-2026, SUBSTACK-JAIN-2025;
   DELOITTE-JOB-SG-2026.
-- **Not in the YAML:** UNIQUS (Uniqus, *What the SEC's filer status overhaul means for ICFR governance*,
+- **Not in the YAML:** UNIQUS-FILER-2026 (Uniqus, *What the SEC's filer status overhaul means for ICFR governance*,
   2026-06-04, https://uniqus.com/what-the-secs-filer-status-overhaul-means-for-icfr-governance/; opened; the same
-  document is UNIQUS in controls-testing.yaml).
+  document is UNIQUS-FILER-2026 in controls-testing.yaml).
 - **Not in the YAML (added 2026-10-21, opened):** ATODAY-DAVIS-2026 (Accounting Today, *"AI cannot audit itself" - a
   response*, Scott Davis, Prager Metis, 2026-06-05, https://www.accountingtoday.com/opinion/ai-cannot-audit-itself-a-response);
   CFODIVE-AICPAPA-2026 (CFO Dive, *AICPA issues guidance for AI-assisted auditing*, 2026-10-13,

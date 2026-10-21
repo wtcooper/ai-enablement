@@ -230,7 +230,7 @@ wording and consent; sign-off on any AI-scored or AI-extracted result.
   2025-12-12; summarised 2026-01-22) [NYSSCPA-HOHL-2025, STARLING-HOHL-2026].
 - **2026-03-02** IFAC publishes global PE research [IFAC-PE-2026]. **2026-03-03/04** Grant Thornton UK selects an AI
   onboarding and acceptance platform [FENERGO-GT-2026, GT-FENERGO-2026].
-- **2026-03-27** IESBA starts gathering information on APS [JOFA-IESBAAPS-2026]. **2026-04-08** Modus raises $85M [AT-MODUS-2026].
+- **2026-03-27** IESBA starts gathering information on APS [JOFA-IESBAAPS-2026]. **2026-04-08** Modus raises $85M [MODUS-2026].
 - **2026-05-07** Grant Thornton US launches gtap inside an APS [GT-GTAP-2026]. **2026-05-08** KU/Deloitte symposium
   pairs an ownership-and-independence panel with AI sessions [KU-SYMPOSIUM-2026].
 - **2026-06-05** SEC "in listening mode" on PE and AI; independence FAQ refresh first [TR-HOHL-2026].
@@ -283,7 +283,7 @@ Full details (title, publisher, type, URL, date, locator) are in the YAML.
 - **Vendors:** INTAPP-CRETE-2024, INTAPP-CONFLICTS-2026, INTAPP-INTAKE-2026, INTAPP-EMPCOMP-2026, INTAPP-WP-2018,
   KINGLAND-ACCEPT, KINGLAND-PA-2026, KINGLAND-WP-2024, FENERGO-GT-2026, ZYGOS-AISENSE-2026, ANTHROPIC-DELOITTE-2025, ANTHROPIC-KPMG-2026.
 - **Press, community, academic, surveys:** AT-AICPAPA-2026, CFODIVE-AICPAPA-2026, AT-PEEC-2026, AT-PCAOBPE-2025,
-  AT-MODUS-2026, CONS-GT, CFI-REPODO-2026, FINSTORY-OATH-2026, IRISHTIMES-GT-2026, TR-HOHL-2026, STARLING-HOHL-2026,
+  MODUS-2026, CONS-GT, CFI-REPODO-2026, FINSTORY-OATH-2026, IRISHTIMES-GT-2026, TR-HOHL-2026, STARLING-HOHL-2026,
   NYSSCPA-HOHL-2025, IRISHTIMES-KPMG-2026, CPAPA-EY, ACCWEEKLY-INDEP-2026, VERDANTIX, TLT-AML-2026, CRYPTOBRIEFING-ANTHROPICEY-2026,
   FOURTHWEB-ANTHROPICEY-2026, BIG4NEWS-2026, CEBI-2024, JB-JAR-2004, CPACOM-ATR-2025, ICAS-ATI-2026.
 - **Not in the YAML:** FRC-GENAI-2026 (FRC, *Generative and Agentic AI Guidance: risks, mitigations and illustrative examples*, 2026-03-30, https://media.frc.org.uk/documents/Generative_and_Agentic_AI_Guidance_crosPeBU.pdf);

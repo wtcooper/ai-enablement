@@ -2,7 +2,7 @@
 
 Sources checked 2026-10-17; mid-market firms and owner-managed clients added 2026-10-21 (§10). Use cases live in `../use-cases/compliance-individual-business.yaml` (31 entries). Ids are
 shortened here: `#05` means `tax-compliance-individual-business-05`; other modules' ids are in full. Source keys in
-brackets, such as [WCG-NOTREADY-2026], are given in full in the YAML or in §11. **Evidence is thin.** One entry is
+brackets, such as [WCG-2026], are given in full in the YAML or in §11. **Evidence is thin.** One entry is
 grade A (`#05`), and it rests on a single vendor-published pilot: OpenAI's account of 7,000 returns in the Crete
 firms, which OpenAI co-developed; 9 are grade B (a named deployment without published measurement). No independent
 error rate, override rate or parallel-run result exists for any AI-prepared return. Say so when you quote a figure.
@@ -37,17 +37,17 @@ module; notices after filing are in controversy; research tools are in research-
 | Organizer and document request | Send the organizer, chase missing items, check what arrived | client-interaction, coordination-scheduling | Weeks of manual reminders; one missing brokerage statement can hold up a return; clients text photos [CPAPA-POSTEXT-2026, TAXADVISER-CLIENTS-2026] |
 | Intake and extraction | Classify W-2s, 1099s, K-1s (partner and shareholder income statements), brokerage statements; key or import data | transaction-processing | Importing data and integration are the least-liked software attributes (importing averaged 3.4 of 5) [AICPA-TAXSW-2026]; K-1 footnotes defeat template OCR [WK-AXCESSSCAN-2026] |
 | Due-diligence interview | Interview and Form 8867 for earned income, child and education credits and head of household | client-interaction, expert-judgment | Personal, contemporaneous duty; $650 per credit penalty for a 2026 filing [IRS-I8867-2025] |
-| Preparation | Federal and state logic, workpapers, depreciation, basis, allocations; trial-balance mapping for 1065 and 1120-S | transaction-processing, expert-judgment | Short season, staff shortage; spreadsheets; tax software re-runs upstream work [WCG-NOTREADY-2026] |
+| Preparation | Federal and state logic, workpapers, depreciation, basis, allocations; trial-balance mapping for 1065 and 1120-S | transaction-processing, expert-judgment | Short season, staff shortage; spreadsheets; tax software re-runs upstream work [WCG-2026] |
 | Research for positions | Schedule C, partnership and S corporation items | research-synthesis, expert-judgment | Hallucinated authority (*Clinco*) [TAXCT-CLINCO-2026] |
 | Review | Preparer, manager and partner review | review-assurance | Senior time; review thins as volume rises ("control dilution") [AICPA-WERFEL-2026] |
-| Delivery, signature, e-file | Assembly, Form 8879 e-file authorisation, payment, filing | coordination-scheduling, document-production | Signing edge cases; final steps still inside the tax software [TR-TRUST7-2026, WCG-NOTREADY-2026] |
+| Delivery, signature, e-file | Assembly, Form 8879 e-file authorisation, payment, filing | coordination-scheduling, document-production | Signing edge cases; final steps still inside the tax software [TR-TRUST7-2026, WCG-2026] |
 | Billing and advisory | Fee basis; planning conversation from the return | client-interaction, expert-judgment | Fee language of OPR (the IRS Office of Professional Responsibility) vs value pricing [AICPA-FEES-2026]; 93% use no tool to find planning opportunities in returns [AICPA-TAXSW-2026] |
 
 **Context on the pain.** A Black Ore launch article cites BLS data (about 300,000 net departures in two years) and a
 17-year low in CPA exam candidates (2022, AICPA); its 125-million-hour shortfall is unattributed [BLACKORE-2026]. For
 solo practitioners and firms of up to 10 staff, tax law complexity ranks first in the AICPA's 2026 top-issues survey,
 ahead of AI [AICPA-TOPISSUES-2026]. The pre-LLM baseline is scan-and-push extraction (SurePrep into UltraTax); WCG
-uses it for about 4,500 1040s at about $25 a return [WCG-NOTREADY-2026, TR-MADSEN-2026]. A gated CPA Trendlines teaser
+uses it for about 4,500 1040s at about $25 a return [WCG-2026, TR-MADSEN-2026]. A gated CPA Trendlines teaser
 reports fewer returns, rising salaries and flat-to-down headcount in the 2026 season [CPATL-SEASON-2026].
 
 ## 3. Where AI is changing the work
@@ -117,7 +117,7 @@ Ask in the person's own setting (small CPA firm, mid-tier firm, enrolled agent, 
 **Baselines to ask for first**
 - Hours per return by complexity tier; median days from organizer sent to documents complete; days from finished
   return to signed authorisation and paid invoice (the measures CPA Practice Advisor recommends) [CPAPA-POSTEXT-2026].
-- Cost per return of the current extraction tool (WCG: about $25 for SurePrep, its estimate) [WCG-NOTREADY-2026].
+- Cost per return of the current extraction tool (WCG: about $25 for SurePrep, its estimate) [WCG-2026].
 - Old human-error baseline: in a 2014 GAO study 2 of 19 paid preparers computed the correct refund; GAO estimated
   errors in 60% of preparer-prepared vs 50% of self-prepared returns (tax years 2006-2009) [GAO-14467T-2014].
 
@@ -167,7 +167,7 @@ starting point, not a standard [AICPA-WERFEL-2026].
   called OPR's fee language non-authoritative [AICPA-FEES-2026]; section 10.34(a) bars signing a return with a
   position lacking reasonable basis [TREAS-C230-2014]; the 7216 regulations require written, signed, dated consent
   naming purpose and recipient, never mention AI, and leave open how they apply to an LLM vendor, so take advice
-  [TREAS-7216-2008, IRS-RP201314-2013, BARMORE-OPR-2026]. OPR is to merge with the Return Preparer Office [JOFA-OPR-2026].
+  [TREAS-7216-2008, IRS-RP2013-14, BARMORE-OPR-2026]. OPR is to merge with the Return Preparer Office [JOFA-OPR-2026].
 - **IRS operating rules that ignore AI**: Publication 1345 (the taxpayer reviews the return before signing Form
   8879), Form 8867 instructions (personal interview, notes kept 3 years), Publications 4557 and 5708 (FTC Safeguards
   Rule: qualified individual, risk assessment, service-provider contracts, MFA, 30-day breach reporting)
@@ -221,7 +221,7 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 - **2026-06** Column Tax releases a harder TaxCalcBench (tax year 2025) [COLUMN-TCBREPO-2026]. **06-17** Black Ore
   summit recap: industry predictions of autonomous individual preparation by 2027, entities soon after [BLACKORE-SUMMIT-2026].
 - **2026-07-24** WCG declines to commit to any AI preparer for 2026; Ready to Review K-1 support reported on a
-  November 2026 roadmap; WCG's AI Tax Prep Pod starts November 2026 [WCG-NOTREADY-2026, WCG-PLAYBOOK-2026].
+  November 2026 roadmap; WCG's AI Tax Prep Pod starts November 2026 [WCG-2026, WCG-PLAYBOOK-2026].
 - **2026-08-05** Basis announces an end-to-end tax platform from intake to review (page date) [BASIS-E2E-2026].
 - **2026-08-11** H&R Block will expand its AI-supported office model to a full market in tax season 27 [HRB-Q4CALL-2026].
 - **2026-08-20** Runtime Wire reports OpenAI's 7,000-return pilot with Crete firms [RUNTIMEWIRE-2026, OPENAI-CODEX-2026].
@@ -258,11 +258,11 @@ review and signature; the taxpayer's review before signing; consent and fee deci
 Added 2026-10-21. There is no separate pass-through module: this module carries S corporation and partnership returns, K-1 flow to owners, basis, reasonable compensation and owner estimates. State pass-through entity tax (PTET) and composite returns are in the multistate-private module; entity choice and owner planning are in research-advisory.
 
 **What is different**
-- **Who supplies the evidence.** Most new material comes from AI-native vendors (Instead, Filed) and small firms. Named mid-market firms appear only for K-1-heavy individual and partnership preparation: Maxwell Locke & Ritter, a top-100 firm (a qualitative quote, `#05`) [CPAPA-BLACKORE-2026], Boulay and Armanino (`#05`, `#06`), and WCG, a regional firm, as an evaluator [WCG-NOTREADY-2026]. Filed's named customers (Paramount Tax, JCG Tax; `#12`) are not described by size [FILED-HOME-2026]; Aardvark Tax Advisors, which calls itself AI-native, is the practice arm of the small-business platform Cynch AI (`#24`) [AARDVARK-HTO-2026].
+- **Who supplies the evidence.** Most new material comes from AI-native vendors (Instead, Filed) and small firms. Named mid-market firms appear only for K-1-heavy individual and partnership preparation: Maxwell Locke & Ritter, a top-100 firm (a qualitative quote, `#05`) [CPAPA-BLACKORE-2026], Boulay and Armanino (`#05`, `#06`), and WCG, a regional firm, as an evaluator [WCG-2026]. Filed's named customers (Paramount Tax, JCG Tax; `#12`) are not described by size [FILED-HOME-2026]; Aardvark Tax Advisors, which calls itself AI-native, is the practice arm of the small-business platform Cynch AI (`#24`) [AARDVARK-HTO-2026].
 - **Survey size bands are smaller than the mid-market.** In Thomson Reuters' 2026 survey (600 respondents; vendor-owned) "large" means 30 or more professionals and "midsize" 4 to 29; 63% of large firms against 35% of small firms say they are proactive or optimized in technology, and AI is the top investment priority for 57% of respondents (47% in 2025) [TR-SOTP-2026].
 - **Extra owner-level steps, none with a named firm using AI:** reasonable-compensation study (`#26`); shareholder and partner basis, AAA and Form 7203 (`#27`); one workspace across a client's 1040, 1120-S, 1065 and 1041 (`#28`); owner estimated-tax projections with safe harbor (`#29`). Each rests on one or two vendor pages.
 - **Entity-return review** is merged into `#12`: a state-society review course offers checklists covering Schedule M-1, shareholder basis and partner capital accounts, and calls staff-prepared entity returns error-prone [NYSSCPA-1120S1065-2025].
-- **Engine choice.** Instead announced (2026-05-08) e-file approval for 1040, 1041, 1120, 1120-S and 1065 and pitches itself as a replacement for the firm's tax software (`#30`) [INSTEAD-EFILE-2026]; WCG, evaluating Instead, warns that proprietary systems trap prior-year history and force a restart ("reset risk") when a return hits the AI's ceiling [WCG-NOTREADY-2026]. This is the opposite design to `#08`.
+- **Engine choice.** Instead announced (2026-05-08) e-file approval for 1040, 1041, 1120, 1120-S and 1065 and pitches itself as a replacement for the firm's tax software (`#30`) [INSTEAD-EFILE-2026]; WCG, evaluating Instead, warns that proprietary systems trap prior-year history and force a restart ("reset risk") when a return hits the AI's ceiling [WCG-2026]. This is the opposite design to `#08`.
 - **K-1 coverage is the first screen.** WCG treats it as the minimum bar; Thomson Reuters' blog says Ready to Review covers 1040s and "will soon be expanding to business returns" [TR-R2RBLOG-2025]. CCH Axcess Scan went generally available for K-1s on 2026-06-29; Wolters Kluwer puts manual entry at 10-15 minutes per K-1 (vendor) [WK-SCANGA-2026] (`#02`).
 - **Review cost.** In a sponsored summit recap a firm leader said preparers re-checked everything AI produced, so firms paid for tokens and labour; a panelist put implementation at two to four weeks for a small firm and 18 to 24 months for a large one (statements) [OLIVER-BOSUMMIT-2026] (`#12`, `#18`).
 - **Guardrails for owner work.** The IRS says there are no specific guidelines in the Code or regulations on reasonable salary [IRS-FS200825-2008]; Form 7203 covers shareholder basis limits [IRS-F7203-2026]; a NATP blog post by WageProof's founder says an under-set salary exposes the owner to section 6662 and the preparer to section 6694 [NATP-RCOMP-2026]; the section 7216 consent question for AI is open, and a cautious firm keeps a non-AI path for clients who decline (`#21`) [CPAPA-SETTLE-2026]. Whether the 1040 consent format applies to 1065 and 1120-S returns was not checked.
@@ -280,9 +280,9 @@ Added 2026-10-21. There is no separate pass-through module: this module carries 
 ## 11. Sources
 
 Full details (title, publisher, type, URL, date, access) are in the YAML.
-- **Regulators and standard-setters:** IRS-OPR-2026; TREAS-7216-2008; IRS-RP201314-2013; TREAS-C230-2014; IRS-I8867-2025; IRS-PUB1345-2025; IRS-PUB4557-2024; IRS-PUB5708-2024; GAO-14467T-2014; TAS-AIBLOG-2024; TPB-GS55-2026; HMRC-GENAI-2026; IRS-FS200825-2008; IRS-F7203-2026.
+- **Regulators and standard-setters:** IRS-OPR-2026; TREAS-7216-2008; IRS-RP2013-14; TREAS-C230-2014; IRS-I8867-2025; IRS-PUB1345-2025; IRS-PUB4557-2024; IRS-PUB5708-2024; GAO-14467T-2014; TAS-AIBLOG-2024; TPB-GS55-2026; HMRC-GENAI-2026; IRS-FS200825-2008; IRS-F7203-2026.
 - **Professional bodies and conferences:** AICPA-WERFEL-2026 (appendices); TAXADVISER-WERFEL-2026 (article); AICPA-CART-2026; AICPA-FEES-2026; ICAEW-PCRT-2026; ATT-PCRTAI-2026; NAEA-AI-2026; TAXCT-CLINCO-2026; NYSSCPA-1120S1065-2025; NATP-TAXPOSIUMAG-2026.
-- **Firms and job postings:** WCG-NOTREADY-2026; WCG-PLAYBOOK-2026; WCG-7216-2026; HRB-Q4CALL-2026; PWC-MEGNA-2025; AARDVARK-STM-2026, AARDVARK-HTO-2026 (job postings).
+- **Firms and job postings:** WCG-2026; WCG-PLAYBOOK-2026; WCG-7216-2026; HRB-Q4CALL-2026; PWC-MEGNA-2025; AARDVARK-STM-2026, AARDVARK-HTO-2026 (job postings).
 - **Vendors:** TR-COCOUNSEL-2025; TR-R2R-2025; TR-RTR-2026; TR-TRUST7-2026; TR-CHEAP-2026; TR-COCOUNSELTAX-2026; TR-FIDUCIARY-2026; BASIS-TAX-2026; BASIS-HOME-2026; BASIS-SMALL-2026; BASIS-CAREERS-2026 (job posting); BLACKORE-SITE-2026; ACCRUAL-HOME-2026; ACCRUAL-INDIV-2026; ACCRUAL-PARTNER-2026; TAXGPT-SITE-2026; WK-AXCESSSCAN-2026; INTUIT-PROCONNECTAI-2026; INTUIT-BASIS-2024; CANOPY-SMARTINTAKE-2025; APARIPRO-2026; OPENAI-CODEX-2026; COLUMN-TCBREPO-2026; INSTEAD-SCORP-2026; INSTEAD-CPA-2026; INSTEAD-ENTITY-2026; INSTEAD-EFILE-2026; FILED-HOME-2026; WAGEPROOF-2026; NATP-RCOMP-2026 (blog post by a vendor's founder).
 - **Press, podcasts, community:** BLACKORE-2026; ACCTODAY-BLACKORE-2026; MYCPE-BLACKORE-2026; MYCPE-TAXGPT-2026; TAXGPT-2026; BASIS-2026; ACCRUAL-LAUNCH-2026; ACCRUAL-ARC-2026; RUNTIMEWIRE-2026; PERPLEXITY-2026; CNBC-HRB-2025; MULTIPLIER-2025; CPAPA-POSTEXT-2026; TAXADVISER-CLIENTS-2026; TECHRADAR-TAXFIX-2025; JOFA-AIPOLICY-2026; JOFA-OPR-2026; LDS-CNBC-2026; ACCTODAY-AIBENCH-2026; CPATL-WORKFORCE-2026; CPAPA-BLACKORE-2024; CPAPA-TAXGPT-2026; CPAPA-AILIAB-2026; BLACKORE-SUMMIT-2026; ACCTPOD-477-2026; ACCTPOD-SAMLEON-2026; BARMORE-OPR-2026; HN-ASK-2026; VERITO-DISCL-2026; CPAPA-BLACKORE-2026; BASIS-SERIESB-2026; CPAPA-ACCRUAL-2026; WK-SCANGA-2026; CPAPA-SETTLE-2026; OLIVER-BOSUMMIT-2026 (sponsored); OLIVER-PARTNERSHIP-2026; RCREPORTS-IA-2023; EVERGREEN-CHATGPT-2024.
 - **Surveys and academic:** AICPA-TAXSW-2026; TR-FOP-2026; WK-FRA-2025; TEI-TAXTECH-2026 (conference recap); COLUMN-TAXCALCBENCH-2025; COLUMBIA-TAXBENCH-2026; JHU-TAXREASON-2025; STANFORD-HALLUC-2024; SWIDER-2025.

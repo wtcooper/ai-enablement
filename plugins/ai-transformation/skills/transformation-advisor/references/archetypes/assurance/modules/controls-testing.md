@@ -228,7 +228,7 @@ SOC reports, internal audit, or AI-performed controls); investigation thresholds
 - **2026-02 to 06** Funding and consolidation: Fieldguide $75M, Petual $20M, Optro buys Midship (6 May), Andera $37M
   [SA-FG, FTG-PETUAL, OPTRO-MIDSHIP, FTG-ANDERA].
 - **2026-04-20** IFIAR asks firms to define what "human-led" means as agents orchestrate audit work [IFIAR-TTF-2026].
-- **2026-05-19** SEC filer-status proposal would move about half of attested issuers out of 404(b) if adopted [UNIQUS].
+- **2026-05-19** SEC filer-status proposal would move about half of attested issuers out of 404(b) if adopted [UNIQUS-FILER-2026].
 - **2026-06-04** FRC opens an Audit Tech & AI Sandbox for audit firms [FRC-SANDBOX].
 - **2026-06-23 to 08-07** PCAOB asks about AI in its standard-setting agenda; the IIA urges modernising AS 2605 [IIA-PCAOB].
 - **2026-07** NFRA (India) principles explicitly cover agentic tools that select and test samples [NFRA-CAALLEY].
@@ -279,8 +279,8 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   SA-FG (SiliconANGLE, Fieldguide $75M, 2026-02-02, https://siliconangle.com/2026/02/02/fieldguide-raises-75m-700m-valuation-scale-agentic-ai-audit-advisory-firms/);
   FTG-ANDERA (FinTech Global, Andera $37M, 2026-06-22, https://fintech.global/2026/06/22/andera-raises-37m-to-automate-internal-audit/);
   WCARS75 (Rutgers, 75th WCARS, 2026, https://raw.rutgers.edu/75wcars.html). AUASB-CP is in the YAML.
-- **Firms and in-house teams:** KPMG-SOX-2026, K-404A, K-AGENTIC, K-UKCA, K-CLARA (KPMG); MSFT-CM, MSFT-IA (Microsoft);
-  DELOITTE-OMNIA-2026; RSM-BEACON; RIVERON; GT-SOX; BDO-ITGC; SD-TQA; UNIQUS; FOLEY-PCAOB-2026; PWC-DCT (search only).
+- **Firms and in-house teams:** KPMG-SOX-2026, K-404A, K-AGENTIC, K-UKCA, KPMG-CLARA-2025 (KPMG); MSFT-CM, MSFT-IA (Microsoft);
+  DELOITTE-OMNIA-2026; RSM-BEACON; RIVERON; GT-SOX; BDO-ITGC; SD-TQA; UNIQUS-FILER-2026; FOLEY-PCAOB-2026; PWC-DCT (search only).
 - **Vendors:** OPTRO-LAUNCH, OPTRO-ACT, OPTRO-FIRST, OPTRO-MIDSHIP, OPTRO-HAVERTYS, OPTRO-FJM, OPTRO-SNOW,
   AUDITBOARD-ACC; FG-AGENTS, FIELDGUIDE-PCAOB-2026, FG-FRAZIER (search only); DS-ARMANINO, DS-RMF; TR-AGENTIC;
   PETUAL-HOME, A16Z-PETUAL; MINDBRIDGE-PCAOB; YC-ARDEN, YC-MIDSHIP. Not in the YAML: ANDERA-HOME (Andera homepage,
@@ -288,7 +288,7 @@ Full details (title, publisher, type, URL, date, access) are in the YAML.
   Agents for Financial Audit*, 2025-06, https://www.fieldguide.io/blog/increase-capacity-and-audit-quality-with-field-agents-for-financial-audit).
 - **Press:** PWC-AT-2025, CFODIVE-PWC-2026, CFOBREW-PWC, AT-PWCAU, CPAPA-EY, ANDERA-RSM-2026, CPAPA-WORKIVA, CPAPA-ZANIN,
   LEDGERLINE-CPAPA-2026, CONS-GT, FTG-PETUAL, NFRA-CAALLEY, AT-GARTNER, IANS-DELVE, CCI-DELVE, VERDANTIX.
-- **Surveys, academic, podcasts, community, jobs:** OPTRO-SURVEY (2026-10-08); IIAF-FRAUD (2026-02-17); EY-SOC-2026
+- **Surveys, academic, podcasts, community, jobs:** OPTRO-SURVEY (2026-10-08); IIAF-AIFRAUD-2026 (2026-02-17); EY-SOC-2026
   (2026-09); CPACOM-ATR-2025 (CPA.com/AICPA, *2025 Audit Transformation Report*, 2025-12,
   https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf); INTELLIAUDIT; PETERS-2022; KOKINA;
   SRA-16H, SRA-SWARM, IIA-SWARM, AUDITPOD-296, JOFA-PODSOC; REDDIT-POST; JOB-FG-SOX, JOB-FG-SWE, JOB-NACE, JOB-REDDIT.

@@ -98,7 +98,7 @@ Treat every figure from these as vendor-published.
 - **Confirmations and bank data:** Circit, Thomson Reuters Confirmation [CIRCIT-2026].
 - **Controls and internal audit:** Optro (formerly AuditBoard), Workiva, Andera, Petual [OPTRO-CRX-2026; ANDERA-RSM-2026].
 - **SOC platforms:** Vanta, Drata (see [soc-attestation](modules/soc-attestation.md)).
-- **Analysts:** Gartner (CAE surveys), Verdantix (pricing, ESG assurance) [GARTNER-2026; VERDANTIX-KPMGFEE-2026].
+- **Analysts:** Gartner (CAE surveys), Verdantix (pricing, ESG assurance) [GARTNER-2026; VERDANTIX].
 
 ### Where the evidence is thin
 
@@ -237,6 +237,6 @@ Format: key, publisher, title (type, date), URL.
 - **TR-HOHL-2026**: Thomson Reuters Tax & Accounting, *SEC Chief Accountant Hohl Dispels Rumors of Weakening Auditor Independence Rules* (press, 5 Jun 2026). https://tax.thomsonreuters.com/news/sec-chief-accountant-hohl-dispels-rumors-of-weakening-auditor-independence-rules/
 - **TRI-FOP-2026**: Thomson Reuters Institute, *What the 2026 Future of Professionals Report says tax and audit firm leaders should be prioritizing now* (survey (vendor), 21 Jul 2026). https://www.thomsonreuters.com/en/institute/reports/future-of-professionals-tax-audit-firms-paper-2026
 - **UNIQUS-FILER-2026**: Uniqus, *What the SEC's filer status overhaul means for ICFR governance* (firm (advisory), 4 Jun 2026). https://uniqus.com/what-the-secs-filer-status-overhaul-means-for-icfr-governance/
-- **VERDANTIX-KPMGFEE-2026**: Verdantix, *What goes around comes around: KPMG's AI-driven fee argument raises uncomfortable questions about audit pricing models* (analyst, 10 Feb 2026). https://www.verdantix.com/venture/blog/what-goes-around-comes-around--kpmg-s-ai-driven-fee-argument-raises-uncomfortable-questions-about-audit-pricing-models
+- **VERDANTIX**: Verdantix, *What goes around comes around: KPMG's AI-driven fee argument raises uncomfortable questions about audit pricing models* (analyst, 10 Feb 2026). https://www.verdantix.com/venture/blog/what-goes-around-comes-around--kpmg-s-ai-driven-fee-argument-raises-uncomfortable-questions-about-audit-pricing-models
 - **WCARS-2026**: Rutgers, *75th World Continuous Auditing and Reporting Symposium* (conference, 6-7 Nov 2026, Newark NJ). https://raw.rutgers.edu/75wcars.html
 - **YAHOO-KOSAR-2025**: Yahoo Finance, *PwC is training junior accountants to be like managers, because AI is going to be doing the entry-level work (Business Insider)* (press, 8 Aug 2025). https://finance.yahoo.com/news/pwc-training-junior-accountants-managers-170001522.html

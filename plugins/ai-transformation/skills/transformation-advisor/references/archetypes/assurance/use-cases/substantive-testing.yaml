@@ -1083,30 +1083,30 @@
       source_ref: CPACOM-ATR-2025
   prerequisites:
     - "Adoption work beyond licensing: training key users, internal communications, a consistent workflow (CIRCIT-BEEVER-2026)"
-    - "Banks and other third parties responding through authenticated channels, and a bank that offers a consent-based feed with clients who grant consent (TR-BANKSTATE-2026; CIRCIT-RABOBANK-BDONL-2026)"
+    - "Banks and other third parties responding through authenticated channels, and a bank that offers a consent-based feed with clients who grant consent (TR-BANKSTATE-2026; CIRCIT-CS-BDONL-2026)"
     - "Controls over how requests are sent and responses received, so the auditor keeps control of the process (PCAOB-CONFIRM-2023)"
     - "A platform or data connection the auditor can evaluate for reliability (IAASB-ED500-2026, Appendix 3)"
   risks_and_guardrails:
     - "The IAASB's March 2026 project proposal notes electronic or automated confirmation systems may lack sufficient authentication, and requests or responses may be intercepted or manipulated (IAASB-500SERIES-2026)"
     - "The PCAOB Board set the new standard's effective date as fiscal years ending on or after 15 June 2025, subject to SEC approval, which was not confirmed in this research (PCAOB-CONFIRM-2023)"
     - "Negative confirmation requests alone do not provide sufficient appropriate evidence (PCAOB-CONFIRM-2023); SAS No. 150 adds conditions for negative confirmations (JOFA-SAS150-2026)"
-    - "Clients can grant and revoke bank-data consent at any time (CIRCIT-RABOBANK-BDONL-2026)"
+    - "Clients can grant and revoke bank-data consent at any time (CIRCIT-CS-BDONL-2026)"
     - "Mostly workflow automation and data connections, not AI models; Beever & Struthers describes AI and APIs as a next step (CIRCIT-BEEVER-2026)"
   human_checkpoints:
     - "Auditor keeps control of the confirmation request and judges the reliability of responses (IAASB-500SERIES-2026; PCAOB-CONFIRM-2023)"
-    - "Auditor investigates the outliers, anomalies and risks that analytics on bank data flag (CIRCIT-RABOBANK-BDONL-2026)"
+    - "Auditor investigates the outliers, anomalies and risks that analytics on bank data flag (CIRCIT-CS-BDONL-2026)"
   role_evolution: >-
     Beever & Struthers staffed the work with a digital transformation lead on a university knowledge-transfer
     project (CIRCIT-BEEVER-2026); Kreston Iberaudit planned to extend use across its whole audit team in 2025
     (CIRCIT-KRESTON-2026). BDO NL describes a shift from visiting the client twice a year to more continuous work
-    with earlier alerts, as an ambition (CIRCIT-RABOBANK-BDONL-2026).
+    with earlier alerts, as an ambition (CIRCIT-CS-BDONL-2026).
   evidence_grade: B
   sources:
     - { ref: CIRCIT-MOORE-2026, title: "Moore Polska saves 20 hours per Audit with Circit's PBC and Confirmation requests", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/moore-polska-case-study", date: "2026-05-13", access: full, locator: "sections 'The solution with Circit' and 'Implementing Circit'" }
     - { ref: CIRCIT-BEEVER-2026, title: "Why Beever & Struthers (now Menzies) Made Circit Central to Audit Delivery", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/beever-struthers-case-study", date: "2026-06-26", access: full, locator: "sections 'Measurable ROI' and 'A critical platform for audit delivery'" }
     - { ref: CIRCIT-CROWE-2026, title: "How Crowe Spain boosted accuracy and improved response rates with Circit", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/crowe-case-study", date: "2026-05-19", access: full, locator: "sections 'Before Circit' and 'Implementing Circit'" }
     - { ref: CIRCIT-KRESTON-2026, title: "How Kreston Iberaudit improved efficiency and control with Circit", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/kreston-iberaudit", date: "2026-07-13", access: full, locator: "sections 'Before Circit' and 'Using Circit'" }
-    - { ref: CIRCIT-RABOBANK-BDONL-2026, title: "Rabobank & BDO NL: Building the Foundation for Continuous, Trusted Audit Data", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/rabobank-bdo-nl", date: "2026-05-21", access: full, locator: "sections 'Direct-from-Bank Reliability', 'Automation and Audit Quality at Scale', 'A Foundation for Continuous Audit'" }
+    - { ref: CIRCIT-CS-BDONL-2026, title: "Rabobank & BDO NL: Building the Foundation for Continuous, Trusted Audit Data", publisher: "Circit", type: vendor, url: "https://circit.io/case-study/rabobank-bdo-nl", date: "2026-05-21", access: full, locator: "sections 'Direct-from-Bank Reliability', 'Automation and Audit Quality at Scale', 'A Foundation for Continuous Audit'" }
     - { ref: TR-BANKCONF-2026, title: "Audit in an AI World: AI is raising the stakes for electronic bank confirmations", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/why-ai-is-raising-the-stakes-for-bank-confirmations/", date: "2026-09-02", access: full, locator: "sections 'Screenshots, PDFs, and paper' and 'Why end-to-end validated electronic confirmation matters'" }
     - { ref: TR-BANKSTATE-2026, title: "The state of bank confirmations in 2026", publisher: "Thomson Reuters Tax & Accounting", type: vendor, url: "https://tax.thomsonreuters.com/blog/the-state-of-bank-confirmations-2026/", date: "2026-03-02", access: full, locator: "section 'The permanent shift from paper to electronic'" }
     - { ref: PCAOB-CONFIRM-2023, title: "Notice of Filing of Proposed Rules on the Auditor's Use of Confirmation, and Other Amendments to Related PCAOB Standards (Board action of 28 Sep 2023)", publisher: "PCAOB; SEC (Federal Register)", type: regulator, url: "https://www.govinfo.gov/content/pkg/FR-2023-10-17/pdf/2023-22491.pdf", date: "2023-10-17", access: full, locator: "Background; summary of new standard; effective date" }

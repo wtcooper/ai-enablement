@@ -1973,7 +1973,7 @@
     title: Real-life ways small firms use AI
     publisher: Journal of Accountancy (AICPA)
     type: press
-    url: https://www.journalofaccountancy.com/news/2026/aug/real-life-ways-small-firms-use-ai.html
+    url: https://www.journalofaccountancy.com/issues/2026/aug/real-life-ways-small-firms-use-ai/
     date: '2026-08-01'
     access: full
     locator: section 'Performing complex tax planning and research' (One Stop CPA)
@@ -3341,7 +3341,7 @@
     as surfacing opportunities hidden in client data, identifying which clients a given provision (for example, the
     2025 tax law changes) affects, and drafting outreach with Expert AI [WK-WHATSNEW-2025]. Filed, an AI-native vendor,
     says its Tax Planner builds an evidence-based plan from the return [FILED-HOME-2026]. WCG, a regional firm, says
-    secure environments can already support tax plan comparisons and strategy recommendations [WCG-NOTREADY-2026].
+    secure environments can already support tax plan comparisons and strategy recommendations [WCG-2026].
   outcomes:
   - lever: growth
     description: >-
@@ -3418,7 +3418,7 @@
     date: '2026-10-21'
     access: full
     locator: page undated, date is access date; 'Tax Planner' and sample report
-  - ref: WCG-NOTREADY-2026
+  - ref: WCG-2026
     title: 'AI Tax Prep in 2026: Not Quite There Yet'
     publisher: WCG CPAs & Advisors
     type: firm

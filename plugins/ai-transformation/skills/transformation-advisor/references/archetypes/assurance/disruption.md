@@ -71,9 +71,9 @@ statements on smaller firms' tool use.
 
 **Two directions, both argued; neither is measured across the market.**
 - *Compression:* FERF's lead researcher says CFOs ask "where are those savings going?"; competitive reviews yielded 25-30% fee cuts in one
-  95-respondent survey [FERF-2026]; KPMG reportedly argued AI should lower its own audit fee [VERDANTIX-KPMGFEE-2026].
+  95-respondent survey [FERF-2026]; KPMG reportedly argued AI should lower its own audit fee [VERDANTIX].
 - *Repricing upward:* analysts report a camp arguing for "continuous assurance, not cheaper assurance", possibly sold as
-  a subscription [VERDANTIX-KPMGFEE-2026]; Thomson Reuters describes paths to "command premium fees" (vendor)
+  a subscription [VERDANTIX]; Thomson Reuters describes paths to "command premium fees" (vendor)
   [TRI-FOP-2026].
 
 **What holds firms back.** 87% of the 54 benchmark firms track realization and 13% track value billing [CPACOM-ATR-2025];

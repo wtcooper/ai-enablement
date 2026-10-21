@@ -960,23 +960,23 @@
   maturity: announced
   problem: >-
     Audit tools and workflows have not meaningfully changed in decades, according to Modus's CEO; Lightspeed's
-    partners say public accounting has been underserved by technology (AT-MODUS-2026).
+    partners say public accounting has been underserved by technology (MODUS-2026).
   solution: >-
     Modus raised $85 million in seed and Series A funding led by Lightspeed Venture Partners to invest in and
     partner with audit-first accounting firms and to build AI-enabled audit tooling. It has invested in one
-    top-200 firm and, according to Lightspeed, has deployed seven AI workflows there (AT-MODUS-2026).
+    top-200 firm and, according to Lightspeed, has deployed seven AI workflows there (MODUS-2026).
   outcomes:
-    - {lever: capacity, description: "Funding and deployment counts only; no audit-quality or efficiency result", figure: "$85 million raised; seven AI workflows deployed in one firm", measures: "round size as reported; number of AI workflows deployed in the one unnamed top-200 firm it has invested in, per Lightspeed", provenance: vendor-published, source_ref: AT-MODUS-2026}
+    - {lever: capacity, description: "Funding and deployment counts only; no audit-quality or efficiency result", figure: "$85 million raised; seven AI workflows deployed in one firm", measures: "round size as reported; number of AI workflows deployed in the one unnamed top-200 firm it has invested in, per Lightspeed", provenance: vendor-published, source_ref: MODUS-2026}
   prerequisites:
-    - "An audit firm willing to take investment and share expertise to improve the tools (AT-MODUS-2026)"
+    - "An audit firm willing to take investment and share expertise to improve the tools (MODUS-2026)"
   risks_and_guardrails:
-    - "The article does not discuss independence (AT-MODUS-2026); no source addresses whether the AICPA draft's provisions on investors, upstream entities and network firms (AICPA-APSED-2025) reach this structure"
+    - "The article does not discuss independence (MODUS-2026); no source addresses whether the AICPA draft's provisions on investors, upstream entities and network firms (AICPA-APSED-2025) reach this structure"
   human_checkpoints:
     - "Not stated in the source"
   role_evolution: "Not stated in the source."
   evidence_grade: C
   sources:
-    - {ref: AT-MODUS-2026, title: "Modus raises $85M to invest in audit firms, tech", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/modus-raises-85m-to-invest-in-audit-firms-tech", date: "2026-04-08", access: full, locator: "Paragraphs 1-5"}
+    - {ref: MODUS-2026, title: "Modus raises $85M to invest in audit firms, tech", publisher: "Accounting Today", type: press, url: "https://www.accountingtoday.com/news/modus-raises-85m-to-invest-in-audit-firms-tech", date: "2026-04-08", access: full, locator: "Paragraphs 1-5"}
     - {ref: AICPA-APSED-2025, title: "Exposure draft: Proposed revisions related to alternative practice structures", publisher: "AICPA Professional Ethics Division", type: standard-setter, url: "https://assets.ctfassets.net/rb9cdnjh59cm/3M0CFAUnOquO2oDNiH0VF5/b8adc950ef4775cbe359349dc706cbbe/ethics-ED-APS-2025.pdf", date: "2025-12-29", access: full, locator: "Explanatory material paras 16-23"}
   last_reviewed: "2026-10-16"
   notes: >-

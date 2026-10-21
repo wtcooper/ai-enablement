@@ -146,7 +146,7 @@ vendors.
 - **The audit-fee case is one anecdote.** Trade retellings of a Financial Times report say KPMG International argued AI
   should lower its own audit fee and paid Grant Thornton UK US$357,000 for 2025 against US$416,000 for 2024, about 14%
   less. It is one small audit of an accounting network, reported second-hand; the FT original is paywalled
-  [TFS-KPMGFEE-2026; VERDANTIX-KPMGFEE-2026].
+  [TFS-KPMGFEE-2026; VERDANTIX].
 - **The documented discounts are consulting.** PwC's chief AI officer said clients asked for a "fair share" of AI
   efficiencies, that systems-integration savings were "in large part" showing up as discounts, and that the cuts had
   plateaued (a Bloomberg interview; the paywalled original was read only in part, and the figures come from a retelling)
