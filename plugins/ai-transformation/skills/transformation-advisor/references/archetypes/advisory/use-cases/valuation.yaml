@@ -3,10 +3,11 @@
 # Sources checked 2026-10-20 (wave 5). Merged from the valuation deep dive, the advisory landscape scan, the
 # cross-cutting files on independence and pricing and on the state of AI and disruption, and items other advisory
 # modules routed to valuation.
-# Evidence is thin: no entry is graded A. Verified 2026-10-21 (wave 5 fact-check): #03 and #08 moved to C because
-# their case studies never say AI was used; #15 (CohnReznick) added from a release the deep dive missed. No error rate, override rate, parallel run or inspection finding on
-# AI-assisted valuation was found. Speed figures are vendor-published or self-reported, with no method. Vendor pages
-# with no date carry the access date (2026-10-20).
+# Fact-checked 2026-10-21: #03 and #08 moved to C because their case studies never say AI was used; #15
+# (CohnReznick) added from a release the deep dive missed. Evidence is thin: no entry is graded A, 3 of 15 are B.
+# No error rate, override rate, parallel run or inspection finding on AI-assisted valuation was found. Speed
+# figures are vendor-published or self-reported, with no method. Vendor pages with no date carry the access date
+# (2026-10-20).
 # Independence: appraisal, valuation and fairness-opinion services for an SEC-registrant audit client impair
 # independence unless it is reasonable to conclude the results will not be subject to audit procedures
 # (SEC-RULE2-01-2026, (c)(4)(iii)). Treatment for private-company attest clients under the AICPA Code was not
@@ -89,7 +90,7 @@
       date: "2026-06"
       access: search-only
       locator: "summary (paywalled; AI, staffing pressures, client expectations)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade B: a named firm (KPMG) is reported using AI on these tasks, with no published measurement. Maturity is
     'piloting' because the source says KPMG 'is working to embed' AI and does not say which tasks run in production.
@@ -180,7 +181,7 @@
       date: "2026-05-06"
       access: full
       locator: "paragraph 2 (content limited to BVR's vetted content)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C: product and vendor claims only. No named firm user, no error or override rate. Maturity is 'announced'
     because availability is documented but named customer use is not. The 'AI-powered' label and the point that it
@@ -254,7 +255,7 @@
       date: "2025-07-23"
       access: full
       locator: "page 4 (IVS 104 text) and page 12 (IVS 104 paragraphs 40.01-50.02)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C (was B; downgraded 2026-10-21): the firms and the deployments are named, but neither case study says AI
     was used, so the AI claim rests on the vendor's branding (VALUTICO-HOME-2026) and the B would come from an
@@ -341,7 +342,7 @@
       date: "2026-10"
       access: full
       locator: "'Firm of the Future' session abstract (Oct 6, 2026; abstract only)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C: vendor guidance. The ASA session abstract is a signal of discourse only (schedule marked 'content subject
     to change') and does not support the grade. Related: tax-research-advisory-08 (AI-supported research training and
@@ -432,7 +433,7 @@
       date: "2026-07-01"
       access: full
       locator: "AO-41 p. 5 quote"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C: vendor claims. The 83% figure is a vendor-reported result for a general Excel benchmark and is not
     evidence of valuation quality. Pattern 'other': an assistant embedded in the analyst's own modelling tool. The
@@ -499,7 +500,7 @@
       date: "2024-07-25"
       access: full
       locator: "abstract page and withdrawal notice (withdrawn 2025-02-20); cited only as 'do not cite'"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Idea (grade D). Preprint; the full paper was not read. Relevant mainly as independent evidence that
     general-purpose LLMs trailed a specialist model on a forecasting task that feeds DCF work. Do not cite the
@@ -558,7 +559,7 @@
       date: "2026-07-01"
       access: full
       locator: "paragraphs quoting AO-41 p. 5 and the four-step framework"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Idea (grade D); adjacent to this module, so any measurement would cap at B anyway. Kept because it is the only
     independent, quantitative-style testing of LLM valuation output found, and it points to overconfident intervals.
@@ -652,7 +653,7 @@
       date: "2026-01"
       access: full
       locator: "page 2, item 3; consultation question 8"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C (was B; downgraded 2026-10-21): the firms are named, but the case studies describe 'automated' features
     and never say AI was used, so the AI link is the vendor's branding and a B would rest on an adjacent, non-AI
@@ -733,7 +734,7 @@
       date: "2025-11-06"
       access: search-only
       locator: "summary (paywalled)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C: a standard-setter's observation that this happens, without named users or measures. Maturity is
     'emerging' because the vocabulary reserves 'in-production' for a named organization. Kept apart from
@@ -851,7 +852,7 @@
       date: "2026-07-29"
       access: full
       locator: "paragraph 2 (documentation of significant use, including quality controls applied)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merged from two deep-dive candidates: a practitioner-discussed idea (podcast, grade D on its own) and a vendor
     template announcement (grade C). Grade C overall: vendor announcement, no named firm user and no measurement.
@@ -924,7 +925,7 @@
       date: "2026-09-16"
       access: full
       locator: "paragraph 4 (confidential information and public AI systems)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Idea (grade D). Session report by BVWire from the NACVA 2026 conference in Salt Lake City (dates vary across
     sources; the article is dated 2026-10-07). Related: advisory-forensic-disputes-14 (idea: AI critique of opposing
@@ -1010,7 +1011,7 @@
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade C: vendor claims. The Dealgauge source is a third-party startup directory profile, not the company's own
     site, so treat even the capability description as unverified. The only delegate-level entry in this module.
@@ -1105,7 +1106,7 @@
       date: "2024-09"
       access: full
       locator: "answers on transitioning from manual to automated processes"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Grade B: a named in-house deployment (Hamilton Lane) with qualitative statements and no published measurement.
     The user has a stake in the vendor: Hamilton Lane took part in 73 Strings' 2025 Series B (S73-CALLISTO-2026).
@@ -1205,7 +1206,7 @@
       date: "2026-10-20"
       access: full
       locator: "paragraph (c)(4)(iii)"
-  last_reviewed: "2026-10-20"
+  last_reviewed: "2026-10-21"
   notes: >-
     Merged from two deep-dive candidates that describe the same change to the model: an independent valuation firm
     sells recurring valuation as software plus its own judgment (Stout for portfolio companies; Kroll for real estate,
@@ -1281,7 +1282,7 @@
       publisher: "73 Strings"
       type: vendor
       url: "https://73strings.com/"
-      date: "2026-10-21"
+      date: "2026-10-20"
       access: full
       locator: "customer logo strip (CohnReznick)"
     - ref: S73-CALLISTO-2026

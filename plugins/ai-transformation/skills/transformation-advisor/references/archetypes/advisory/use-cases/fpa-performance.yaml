@@ -802,8 +802,9 @@
     modelling cases, and accuracy fell as structure grew more complex; the author says none should be relied on
     without deterministic verification (SSRN-VIDAL-2026). This is an adjacent task (LBO models) and not planning-model
     building.
-  - Daily finance work is only as good as the model logic, so a change log and reviewer sign-off matter more than
-    speed (practitioner view in CPAPA-AGENTSCLOSE-2026, controls 2 and 3).
+  - A practitioner checklist for close agents asks for evidence a reviewer can replay and for human sign-off scaled
+    to materiality before agent output feeds the financial statements (CPAPA-AGENTSCLOSE-2026, controls 2 and 3);
+    it addresses close agents, so applying it to model changes is an inference.
   human_checkpoints:
   - Reviewer inspects structural changes and reconciles outputs to the prior model before release
   role_evolution: RSM's page says models can be built without specialist admins (RSM-ABACUM-2026). The sources show
@@ -833,7 +834,8 @@
     url: https://doi.org/10.2139/ssrn.7273418
     date: '2026'
     access: full
-    locator: Abstract (63, 58 and 42 of 100 cases; decline with complexity)
+    locator: Abstract (63, 58 and 42 of 100 cases; decline with complexity), read through the Crossref record for
+      the DOI because SSRN blocks automated access; DOI registered 2026-08-16
   - ref: CPAPA-AGENTSCLOSE-2026
     title: 'Before You Let the Agents Run the Close: Five Controls to Put in Writing First'
     publisher: CPA Practice Advisor (author Anthony L. Fulmore Sr., Texas A&M University-Central Texas)
@@ -1068,8 +1070,8 @@
   last_reviewed: '2026-10-20'
   notes: 'Firm types: CFGI (PE-backed advisory platform; says it is free of auditor independence constraints), CohnReznick
     and Cherry Bekaert (top-100 firms), RSM and Kaufman Rossin (top-50 CPA and advisory firm per its release) as
-    survey publishers. Kaufman Rossin''s mid-market survey (100 decision-makers, December 2025) found 94% use generative
-    AI, 83% had moved to deliberate trials or embedded processes and 2% had operationalised AI at scale. The CFGI
+    survey publishers. Kaufman Rossin''s mid-market report (sample size and fieldwork dates not stated in the release)
+    found 94% use generative AI, 83% had moved to deliberate trials or embedded processes and 2% had operationalised AI at scale. The CFGI
     posting was open from 2026-06-03 to 2026-06-12 per its structured data, so it shows a practice being built,
     not delivered engagements. Pattern ''other'': diagnostic and roadmap work (activity surveys, interviews, maturity
     scoring, prioritised use cases); a candidate new pattern (''readiness-diagnostic''). The Rosetree deal is general

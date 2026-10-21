@@ -651,7 +651,7 @@
     - {lever: growth, description: "Gelt says the calculators let owners estimate the dollar value of a strategy before engaging the firm; no conversion figure is published", figure: "none published", measures: "not applicable", provenance: vendor-published, source_ref: GELT-CALC-2025}
     - {lever: cost, description: "Illustrative saving in a vendor's sample planning report, not a client result", figure: "$22,222 per year (illustrative client)", measures: "estimated annual saving from a Maryland PTET election shown in Filed's sample tax planning report", provenance: vendor-published, source_ref: FILED-HOME-2026}
   prerequisites:
-    - "Owner income, wages and state data (GELT-CALC-2025 describes estimates built from the owner's own figures; the data list is inferred)"
+    - "Owner income, wages and state data (inferred; not stated in the sources)"
   risks_and_guardrails:
     - "OPR Alert 2026-19 lists Circular 230 section 10.37 (written advice must rest on reasonable factual and legal assumptions and reasonable consideration of all relevant facts) among the duties that apply (IRS-OPR-2026); OPR covers federal practice (KTS-OPR-2026)"
     - "Estimated savings in the sources are vendor or illustrative figures (GELT-CALC-2025; FILED-HOME-2026)"
