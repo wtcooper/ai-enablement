@@ -15,13 +15,13 @@ Source keys follow the landscape file. One key differs from the archetype: the a
 - **Peer reviewers have published nothing about AI.** State peer-review annual reports show real nonconformance rates by engagement type, but contain no AI content [TSCPA-PEERREVIEW-2025; MNCPA-PEERREVIEW-2025; OKSCPA-PEERREVIEW-2025; ORSCPA-PEERREVIEW-2025]. The only "AI helps you pass peer review" material is vendor marketing [TR-PEERREVIEW-2026].
 - **Roles are changing at the top of the practice first.** Firms are creating named AI/technology leaders (Citrin Cooperman, EisnerAmper, Withum, BPM) and managers who run "human plus AI agent" teams (BW&O CPAs posting). The junior-development effect is claimed by firms and flagged as a risk by Accountancy Europe; neither side has measured it.
 
-Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened and 3 are search-only.
+Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 54 sources, of which 51 were opened and 3 are search-only (by type: vendor 23, press 10, professional-body 9, survey 4, firm 3, job-posting 2, conference 1, podcast 1, academic 1).
 
 ## 2. Use cases
 
 ```yaml
 - id: assurance-private-company-01
-  title: Research and document-analysis assistant for audit teams at small and regional firms (board minutes, contracts, debt and grant agreements, technical questions)
+  title: "Research and document-analysis assistant for audit teams at small and regional firms (board minutes, contracts, debt and grant agreements, technical questions)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -56,7 +56,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Firm types: Plante Moran is one of the largest US firms (3,800+ professionals per the vendor's case page); Harris, Hardy & Johnstone is described as mid-sized; the other four are small local firms. TR-STPIERRE-2026 and TR-NONPROFITFIRMS-2026 pages carry no publication date; 2026 is inferred from product launches in 2025, a 2025 date range used in a prompt example, and the dated TR blog of 2026-06-16 that cites the same firms. Overlaps planning-risk-assessment-01 and -02 (board minutes, grounded chat); what is new here is who uses it (small and regional firms) and the nonprofit and government document set."
 
 - id: assurance-private-company-02
-  title: One engagement platform for audits, preparation/compilation/review and benefit plan audits, with the vendor's AI layer on top (Withum, EisnerAmper, Citrin Cooperman, PKF O'Connor Davies)
+  title: "One engagement platform for audits, preparation/compilation/review and benefit plan audits, with the vendor's AI layer on top (Withum, EisnerAmper, Citrin Cooperman, PKF O'Connor Davies)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -93,7 +93,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Firm types per the releases: Withum 'Top 25', EisnerAmper 'Top 20' (CPA Practice Advisor called it 'top 15'), PKF O'Connor Davies 'Top 25'; Citrin Cooperman serves 'private, middle-market businesses'. GRF page publication date is 2025-11-17 (modified 2026-07-14). DAS is built by the AICPA, CPA.com and Caseware [CASEWARE-EISNERDAS-2026]. Cross-links: planning-risk-assessment-20 (methodology-embedded platform for mid-tier firms) already covers the platform idea; what this entry adds is named adoptions and the PCR and EBP modules sharing one system."
 
 - id: assurance-private-company-03
-  title: Proof of cash and books-to-bank analytics for small-business clients without ERP data feeds (QuickBooks-type systems, exports, PDF bank statements)
+  title: "Proof of cash and books-to-bank analytics for small-business clients without ERP data feeds (QuickBooks-type systems, exports, PDF bank statements)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -128,7 +128,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Audit Sight claims it saves 80% of management-meeting prep time (podcast), a diligence feature rather than audit; not used as an outcome. A search summary said Auvana, an audit service center for CPA firms, uses Audit Sight for outsourced procedures; that page was not opened (search-only). CALCPA-AIREG-2026 has no publication date on the page; it refers to the PCAOB's early-2026 request for comment, so it is no earlier than March 2026. Cross-link substantive-testing-07 (data cleaning to the trial balance) and -17 (bank and third-party data)."
 
 - id: assurance-private-company-04
-  title: Reusable Excel agents for clients that report in a common format, including single-audit compliance tests (Pattillo Brown & Hill, Perry & Associates, Aprio)
+  title: "Reusable Excel agents for clients that report in a common format, including single-audit compliance tests (Pattillo Brown & Hill, Perry & Associates, Aprio)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -157,12 +157,13 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   sources:
     - {ref: DATASNIPPER-PBH-2026, title: "DataSnipper Success Stories - PB&H (Purpose-built for auditors: government audit work with Excel Agents)", publisher: DataSnipper, type: vendor, url: "https://www.datasnipper.com/resources/pb-h-automation-excel-agents", date: 2026, access: full, locator: "Profile paragraph; Q&A on 70 school districts, 63 items in about an hour, payroll register sampling"}
     - {ref: DATASNIPPER-PERRY-2025, title: "DataSnipper Success Stories - Perry & Associates CPAs", publisher: DataSnipper, type: vendor, url: "https://www.datasnipper.com/resources/perry-associates-cpas", date: 2025, access: full, locator: "Sections 'Audit Consultancy' (80 to 25 hours) and headline summary (68%)"}
+    - {ref: DATASNIPPER-FGMK-2026, title: "FGMK Uses Alwin to Automate Larger, More Complex Audit Work Securely", publisher: DataSnipper, type: vendor, url: "https://www.datasnipper.com/resources/fgmk-alwin-success-story", date: 2026, access: full, locator: "Q&A on SOC 2 and models not being trained on firm data"}
     - {ref: DATASNIPPER-APRIO-2026, title: "DataSnipper Success Stories - Aprio", publisher: DataSnipper, type: vendor, url: "https://www.datasnipper.com/resources/aprio", date: 2026, access: full, locator: "Q&A from Connect '26 New York"}
   last_reviewed: 2026-10-21
   notes: "The three DataSnipper pages carry no visible publication date. The PB&H and Aprio dates are inferred from product names (Excel Agents, Alwin) and the Aprio page's reference to Connect '26; the Perry date comes from page metadata (2025-09-19) and may not be the publication date. PB&H is a regional firm (200+ professionals, Texas and New Mexico, begun using DataSnipper in summer 2024). Perry & Associates is a Marietta, Ohio firm. Aprio is a global advisory and accounting firm. FGMK is covered in entry 07 and in substantive-testing-11. This entry adds the repeated-client-format pattern and the single-audit test; the single-audit side also belongs to the future nonprofit-government module."
 
 - id: assurance-private-company-05
-  title: Risk-focused sample selection documented as a workpaper, to justify smaller samples to peer reviewers at a small firm
+  title: "Risk-focused sample selection documented as a workpaper, to justify smaller samples to peer reviewers at a small firm"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -190,7 +191,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Sam Brown CPA, Inc. is a Troy, Ohio firm founded in 2015 that serves individuals, businesses and nonprofits. The case page has no publication date; 2026 is inferred (Audit Intelligence Analyze launched in 2025 and the firm is cited in the dated TR post of 2026-06-16). Cross-link substantive-testing-08 and -09 (technology-assisted selection; Cherry Bekaert on MindBridge). The mid-market difference is the peer-review rationale for the sample size."
 
 - id: assurance-private-company-06
-  title: AI and embedded standards to link risk assessment to procedures and standardise workpapers, positioned against recurring peer-review findings (vendor claim)
+  title: "AI and embedded standards to link risk assessment to procedures and standardise workpapers, positioned against recurring peer-review findings (vendor claim)"
   archetype: assurance
   module: private-company
   function: risk-compliance-legal
@@ -220,7 +221,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Grade C because the only source for the AI link is the vendor. The NYSSCPA page is a CPE listing dated by its session (2026-08-12); it is secondary evidence of what reviewers report. The state peer-review reports (module notes) give the nonconformance baseline and none mentions AI. Cross-link quality-management (peer review and AI governance)."
 
 - id: assurance-private-company-07
-  title: Firm-built and co-developed audit agents on a vendor platform, with preparer and reviewer agents and overnight runs (FGMK, PKF O'Connor Davies)
+  title: "Firm-built and co-developed audit agents on a vendor platform, with preparer and reviewer agents and overnight runs (FGMK, PKF O'Connor Davies)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -254,7 +255,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "FGMK's page has no publication date; 2026 is inferred from the Alwin launch (Aprio refers to Alwin as introduced 'this year' at Connect '26). FGMK is already cited in substantive-testing-11; this entry adds the Alwin overnight pattern and the Caseware co-development route. PKF's role is announced, not yet in use; the Pioneer Program release lists Baker Tilly, CBIZ, Forvis Mazars, Plante Moran, CohnReznick, Citrin Cooperman, Wipfli, Carr Riggs & Ingram, Withum, PKF O'Connor Davies and Weaver among Caseware customers, not among program participants."
 
 - id: assurance-private-company-08
-  title: AI validation of client PBC submissions before they reach the workpaper (Caseware Response Validation Agent, Suralink Extract Links)
+  title: "AI validation of client PBC submissions before they reach the workpaper (Caseware Response Validation Agent, Suralink Extract Links)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -284,7 +285,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Data and evidence acquisition has no module in the assurance archetype (value-chain section 4); this entry belongs to that gap. Grant Thornton says its platform reduces the back and forth in receiving client data, with no figure."
 
 - id: assurance-private-company-09
-  title: Engagement-aware assistant inside the Excel workpaper that builds workpapers and automates controls tests, analytics and tests of details (Caseware Verity for Excel)
+  title: "Engagement-aware assistant inside the Excel workpaper that builds workpapers and automates controls tests, analytics and tests of details (Caseware Verity for Excel)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -313,7 +314,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Vendor claim with no named customer, so grade C and maturity announced even though the vendor says generally available. Overlaps substantive-testing-11/12 (Excel-embedded tools); the difference is the link to the whole engagement file."
 
 - id: assurance-private-company-10
-  title: Firm-built audit ecosystem for middle-market clients: grounded manual assistant, journal-entry visualisations, document-to-support matching and statement validation (RSM Luca)
+  title: "Firm-built audit ecosystem for middle-market clients: grounded manual assistant, journal-entry visualisations, document-to-support matching and statement validation (RSM Luca)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -341,7 +342,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "RSM positions itself as the leading provider of assurance, tax and consulting services for the middle market. The release also states a $1 billion, three-year AI investment announced in June (2025). Ask Luca overlaps quality-management-12 (firm-grounded assistant); the other steps overlap substantive-testing-10 and completion-reporting-06. Kept here because it is the clearest published example of an ecosystem built for middle-market audits."
 
 - id: assurance-private-company-11
-  title: Proprietary firm platforms and agents that start with private-company audits (Grant Thornton gtap, EisnerAmper audit design agent)
+  title: "Proprietary firm platforms and agents that start with private-company audits (Grant Thornton gtap, EisnerAmper audit design agent)"
   archetype: assurance
   module: private-company
   function: service-delivery
@@ -371,7 +372,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
   notes: "Grade C: announcements with no evidence of use or results. Larger-firm examples; included because they show what is reaching mid-market practice. The any-ERP claim does not say how non-ERP (QuickBooks-type) data is handled; the release names ERPs only. Already cited in substantive-testing-22 (gtap) and planning-risk-assessment-11; the new point is private-company-first sequencing. EisnerAmper also adopted Caseware DAS (entry 02); the press does not explain how the two fit. The article is partly behind a registration wall."
 
 - id: assurance-private-company-12
-  title: New assurance technology leadership roles and AI-fluent audit managers at private-company firms (Citrin Cooperman, EisnerAmper, Withum, BPM, BW&O CPAs)
+  title: "New assurance technology leadership roles and AI-fluent audit managers at private-company firms (Citrin Cooperman, EisnerAmper, Withum, BPM, BW&O CPAs)"
   archetype: assurance
   module: private-company
   function: technology-it
@@ -398,12 +399,15 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
     - {ref: BPM-JOB-2026, title: "Audit AI Technology Director (Assurance Technology Director)", publisher: BPM LLP via Built In Chicago, type: job-posting, url: "https://www.builtinchicago.org/job/assurance-ai-technology-director/9520987", date: 2026-07-04, access: full, locator: "Role summary and responsibilities list; page shows the job removed 10 Jul 2026"}
     - {ref: CITRIN-DAS-2026, title: "Citrin Cooperman Adopts AI-Enabled DAS Suite Powered by Caseware", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/citrin-cooperman-company-llp-adopts-ai-enabled-das-suite-powered-by-caseware-to-advance-audit-quality-professional-development-and-scalable-growth", date: 2026-07-13, access: full, locator: "Kanter's title and quotes"}
     - {ref: CPACOM-ATR-2025, title: "Audit Transformation Report (2025 CPA.com and AICPA Audit Benchmark Survey)", publisher: CPA.com and AICPA, type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "p. 19 ('New approaches require new skills')"}
+    - {ref: CASEWARE-WITHUM-2026, title: "Withum Fully Adopts DAS Powered by the Caseware Verity AI Platform to Drive its Future-Ready Audit Practice", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/withum-fully-adopts-das-powered-by-the-caseware-verity-ai-platform-to-drive-its-future-ready-audit-practice", date: 2026-06-03, access: full, locator: "Kevin McElgunn byline and quote"}
+    - {ref: CASEWARE-EISNERDAS-2026, title: "EisnerAmper Leverages DAS Powered by Caseware to Unify Audit and Build an Agentic Future", publisher: Caseware, type: vendor, url: "https://www.caseware.com/news/eisneramper-leverages-das-powered-by-caseware-to-unify-audit-and-build-an-agentic-future-across-its-multi-vertical-practice", date: 2026-06-25, access: full, locator: "Austin and Estrella titles in quotes"}
+    - {ref: EISNER-AUDITAGENT-2026, title: "EisnerAmper Rolls Out In-House AI Audit Design Agent", publisher: CPA Practice Advisor, type: press, url: "https://www.cpapracticeadvisor.com/2026/03/20/eisneramper-rolls-out-in-house-ai-audit-design-agent/180020/", date: 2026-03-20, access: full, locator: "Austin title (National Office, chief risk officer of assurance)"}
     - {ref: ACCTEU-GENAI-2026, title: "Generative AI in audit and assurance (paper aimed at SMPs)", publisher: Accountancy Europe, type: professional-body, url: "https://accountancyeurope.eu/publications/generative-ai-in-audit-and-assurance/", date: 2026-09-21, access: full, locator: "Risk paragraph on professional scepticism, over-reliance and junior development"}
   last_reviewed: 2026-10-21
-  notes: "Firm types: BPM is a Top 100 firm per Accounting Today's list; BW&O CPAs is a California firm (El Dorado Hills) describing a nonprofit-heavy audit practice with local and global staff. The BPM posting's title is 'Audit AI Technology Director' on the board and 'Assurance Technology Director' in the text. The ACCTEU paper is a European professional-body paper for small and medium-sized practices and is used only for the risk."
+  notes: "Firm types: BPM is a Top 100 firm per Accounting Today's list; BW&O CPAs is a California firm (El Dorado Hills) whose posting names GAAP, GAAS and nonprofit reporting requirements and local and global staff. The BPM posting's title is 'Audit AI Technology Director' on the board and 'Assurance Technology Director' in the text. The ACCTEU paper is a European professional-body paper for small and medium-sized practices and is used only for the risk."
 
 - id: assurance-private-company-13
-  title: Keep AI time savings as margin or capacity rather than cutting fees (small-firm claims)
+  title: "Keep AI time savings as margin or capacity rather than cutting fees (small-firm claims)"
   archetype: assurance
   module: private-company
   function: strategy-planning
@@ -419,9 +423,9 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
     - {lever: cost, description: "Sam Brown CPA says the tools let the practice serve more clients without raising fees", figure: "none published", measures: "qualitative claim in a vendor case study", provenance: vendor-published, source_ref: TR-SAMBROWN-2026}
     - {lever: growth, description: "Perry & Associates says it can maintain or increase rates because it delivers more value", figure: "none published", measures: "quote in a vendor case study; no rate data", provenance: vendor-published, source_ref: DATASNIPPER-PERRY-2025}
   prerequisites:
-    - "Clients who value the output rather than the hours; a pricing model not tied to time. In the AICPA/CPA.com survey, 13% of 54 firms used value-billing agreements as a metric/approach (see module notes for caution)."
+    - "Clients who value the output rather than the hours, and a pricing model not tied to time."
   risks_and_guardrails:
-    - "Clients in the survey expect technology use: 66% of firms said they communicate technology and methodology as a value differentiator [CPACOM-ATR-2025]. A reported Big Four fee-reduction demand (KPMG on a UK audit) is a single secondary report [MYCPE-KPMGFEE-2026 in the landscape, not re-read]."
+    - "Clients in the survey expect technology use: 66% of firms said they communicate technology and methodology as a value differentiator [CPACOM-ATR-2025]."
   human_checkpoints:
     - "Partner pricing decisions."
   role_evolution: "Not stated."
@@ -431,7 +435,7 @@ Counts: 14 use cases (0 A, 8 B, 5 C, 1 D). 53 sources, of which 50 were opened a
     - {ref: DATASNIPPER-PERRY-2025, title: "DataSnipper Success Stories - Perry & Associates CPAs", publisher: DataSnipper, type: vendor, url: "https://www.datasnipper.com/resources/perry-associates-cpas", date: 2025, access: full, locator: "Quote paragraph ('maintain or even increase our rates')"}
     - {ref: CPACOM-ATR-2025, title: "Audit Transformation Report (2025 CPA.com and AICPA Audit Benchmark Survey)", publisher: CPA.com and AICPA, type: survey, url: "https://www.cpa.com/sites/cpa/files/2025-12/2025_Audit_Transformation_Report.pdf", date: 2025-12, access: full, locator: "p. 11 (66% communicate technology as a differentiator)"}
   last_reviewed: 2026-10-21
-  notes: "Grade C because the claims are quotes in vendor material with no pricing data. The value-billing percentage in the prerequisites line comes from a chart that was hard to read in the PDF text layer, so it is not used as a figure here; remove if it cannot be confirmed. Cross-link planning-risk-assessment-23 (efficiency gains negotiated into fees). Current (formerly Crete), a Thrive-backed network that says it plans to buy and upgrade CPA firms with AI, is an ownership model at the advisory and tax end; no audit result is stated [CURRENT-2026]."
+  notes: "Grade C because the claims are quotes in vendor material with no pricing data. The landscape's single reported Big Four fee-cut case (KPMG, UK) was not re-read and is not used. Cross-link planning-risk-assessment-23 (efficiency gains negotiated into fees). Current (formerly Crete), a Thrive-backed network that says it plans to buy and upgrade CPA firms with AI, is an ownership model at the advisory and tax end; no audit result is stated [CURRENT-2026]."
 
 - id: assurance-private-company-14
   title: "Idea: AI-assisted drafting and analytical review in preparation, compilation and review engagements (SSARS), including note disclosures"
@@ -504,6 +508,7 @@ Other benchmarks:
 - Thomson Reuters pilot survey: 91% of 140+ Plante Moran pilot respondents said faster than traditional research; 77% more confident using generative AI; 87% said the firm should make it available to all staff [TR-CASESTUDIES-2026].
 - Caseware beta: Disclosure Checklist Agent saved 2.7 review hours per workflow on average; Verity benchmark of 94% accuracy on golden-dataset items from beta traces, and 15-20 minutes to under two minutes for indicative manual workflows; Verity for Excel nine hours per engagement and 75% per task. All vendor-published, no sample sizes [CASEWARE-VERITY-2026; CASEWARE-EXCEL-2026].
 - Thomson Reuters Disclosure Review: roughly 30% of eligible Disclosure-module customers use it, with close to 300 analyses a month across mid-sized and large firms [TR-DISCLOSURE-2026].
+- Tax, audit and accounting firms (600 respondents): 63% of large firms versus 35% of small firms say they are in the proactive or optimized stage of technology development; 54% of small firms are ad hoc or reactive. Tax-side survey, used here for size context only [TR-SOTP-2026, key findings].
 - UK mid-tier firm study: 74% said generative AI sped some tasks; 22% saw a marked rise in output; 72% feared incorrect output; 52% worried about client information (survey of 200+ staff at Beever and Struthers) [ICAS-AMBS-2025].
 - Quality evidence: no error rate, override rate, parallel-run result or inspection or peer-review outcome for AI use in private-company engagements was found. The only quality-type statement is Caseware's beta note that a firm used the checklist agent to find answers on a completed checklist that had been misread [CASEWARE-CWX-2026].
 
@@ -570,13 +575,13 @@ Existing use cases that already cover the idea; new facts found this run are not
 - **Walkthrough to draft process documentation and risk-and-control matrix** (illustrative example in Accountancy Europe's paper; confidentiality of recording is flagged [ACCTEU-GENAI-2026]) -> controls-testing (walkthrough assistant).
 - **Benefit plan audits** (DAS EBP is part of the Citrin, Withum, EisnerAmper and PKF suites; a Maine/New Hampshire/Vermont survey respondent named Autire for EBP audits and a pilot of ChatGPT with limited licences, open-text, anecdotal [MECPA-TECHSURVEY-2025]) -> future benefit-plan-audits module.
 - **Single audit and nonprofit audits** (PB&H single-audit test; three nonprofit specialists; Guided Assurance Single Audit with OMB Compliance Supplement content [TR-GAFEATURES-2026]) -> future nonprofit-government module.
-- **Tax-side items found in the same sources** (Ready to Advise at a small firm; Blue J research at a six-person and a seven-person firm [TR-SAMBROWN-2026; JOFA-SMALLFIRMS-2026]) -> tax archetype, research-advisory.
+- **Tax-side items found in the same sources** (Ready to Advise at a small firm; Blue J research at a seven-person firm [TR-SAMBROWN-2026; JOFA-SMALLFIRMS-2026]) -> tax archetype, research-advisory.
 - **Risk advisory and SOC** (Baker Tilly expanded Fieldguide use across SOC, PCI, HITRUST, ISO, FedRAMP, SOX and internal audit, 2026-05-27; known from a search summary only [BAKERTILLY-FIELDGUIDE-2026]) -> soc-attestation.
 - **Ownership and structure** (Current, formerly Crete, Thrive-backed network, $500 million plan announced 2025, 2026-06-02 rebrand [CURRENT-2026]; PE and alternative practice structures in the landscape) -> disruption.md and economics.md.
 
 ## 5. Sources
 
-Ref, title, publisher, type, URL, date, access. 53 sources: 50 opened (full), 3 search-only.
+Ref, title, publisher, type, URL, date, access. 54 sources: 51 opened (full), 3 search-only.
 
 | Ref | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
@@ -635,9 +640,9 @@ Ref, title, publisher, type, URL, date, access. 53 sources: 50 opened (full), 3 
 | AUVANA-AUDITSIGHT-2026 | Auvana audit service center uses Audit Sight (CEO quote) | Audit Sight / Citybiz | vendor | https://www.citybiz.co/?p=253100 | 2026 (summary only) | search-only |
 | NYSSCPA-SSARS-2026 | Annual Update and Practice Issues for Preparation, Compilation and Review Engagements (webcast listing) | NYSSCPA | professional-body | https://nysscpa.org/catalog/events/1020413-annual-update-and-practice-issues-for-preparation-compilation-and-review-engagements-webcast-2026-23-07 | 2026-07-23 | search-only |
 
-Source count by type: vendor 22 (Caseware 8 [CITRIN-DAS, CASEWARE-VERITY, -CWX, -WITHUM, -EISNERDAS, -PKF, -PIONEER, -RISKAGENT, -EXCEL, -DASPCR counted as 10], TR 8, DataSnipper 4 -> see list), press 10, professional-body 8, survey 4, firm 3, job-posting 2, conference 1, podcast 1, academic 1. The refs in the table are the authority; the count line is approximate.
+Source count by type (from the table): vendor 23 (one of them search-only), press 10, professional-body 9 (one search-only), survey 4, firm 3 (one search-only), job-posting 2, conference 1, podcast 1, academic 1.
 
-Used from the landscape without re-opening here: AICPA-QMPR-2026 (search-only in the landscape), MYCPE-KPMGFEE-2026 (low reliability). Both are cited only in the notes of entries 13 and in the guardrails bullet, and neither supports an outcome.
+Used from the landscape without re-opening here: AICPA-QMPR-2026 (search-only in the landscape). It appears only in one guardrails bullet in section 3 and supports no outcome.
 
 ## 6. Gaps
 
@@ -650,4 +655,3 @@ Used from the landscape without re-opening here: AICPA-QMPR-2026 (search-only in
 - **Job postings:** only two firm postings (BW&O, BPM) were found that describe real AI work in an audit practice. A third-party job-search summary flagged the MindBridge small-firm spotlight (Garbelman Winslow) as current; the page itself is dated 2017-11-22, so it was not used.
 - **In-house teams:** this module concerns external private-company assurance; no in-house deployment bears on it.
 - **Firm sizes** for several named examples (Harris, Hardy & Johnstone; Holbrook & Manter; Hutchinson & Bloodgood; GRF; FGMK; Aprio) are not stated in the sources and are not asserted here.
-- **Count line in section 5** is approximate; use the table. Source types in the table are authoritative.

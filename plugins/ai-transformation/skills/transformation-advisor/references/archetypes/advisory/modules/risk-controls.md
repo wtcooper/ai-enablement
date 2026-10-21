@@ -1,8 +1,8 @@
 # Risk and controls advisory (advisory)
 
-Last reviewed 2026-10-21 (source-verified). Use cases live in `../use-cases/risk-controls.yaml` (24 entries). Ids are
-shortened here: `#05` means `advisory-risk-controls-05`; other archetypes' ids are in full. Source keys in brackets, such as
-[KPMG-SOX2030-2026], are listed in §10 and given in full in the YAML. No entry is graded A: every outcome figure is
+Last reviewed 2026-10-21 (source-verified). Use cases live in `../use-cases/risk-controls.yaml` (24 entries). Ids
+are shortened: `#05` means `advisory-risk-controls-05`; other archetypes' ids are in full. Source keys in brackets, such
+as [KPMG-SOX2030-2026], are listed in §10 and given in full in the YAML. No entry is graded A: every outcome figure is
 vendor-published or self-reported, and nobody has published an error rate, override rate or parallel-run result for AI
 in internal audit or SOX work. Say so when you quote a figure.
 
@@ -227,8 +227,8 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
 - **Preparer to supervisor.** RSM treats its agent as a digital employee that can make intern-like mistakes; auditors
   queue controls and review completed ones (`#03`, `#06`). Riveron's teams spend more time on review, challenge and
   exception analysis.
-- **Tester to controls adviser.** KPMG's SOX leader says "the concept of auditor reliance is going to go away" (`#16`); two-thirds
-  of polled SOX leaders were asked to add value in operational and technology audits [IAC-SOXCHANGE-2026].
+- **Tester to controls adviser.** KPMG's SOX leader says "the concept of auditor reliance is going to go away" (`#16`);
+  two-thirds of polled SOX leaders were asked to add value in operational and technology audits [IAC-SOXCHANGE-2026].
 - **New skills.** KPMG says auditing a language model is not core CPA training [KPMG-SOX2030-2026]; RSM's AI-risk
   posting asks for Python and GenAI skills and AAIA, AAISM or AIGP certifications `#17`. The hardest hire is someone
   who is both auditor and technologist [SIKICH-IAPRIORITIES-2026].
@@ -286,20 +286,19 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
 Full details (publisher, URL, date, locator) are in the YAML. Keys cited here but not in the YAML are marked *; their
 details come from the wave-5 research files (practice, discourse, governance, independence-pricing, disruption).
 
-- Firms: KPMG-SOX2030-2026, KPMG-FUTURESOX-2026, KPMG-IPO-2026, KPMG-AIFINANCE-2026,
-  GT-INFERENCEGAP-2026, GT-AIIMPACT-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026,
-  MSFT-SOXAGENT-2026* (Microsoft, FY26 innovation story, 2026).
+- Firms: KPMG-SOX2030-2026, KPMG-FUTURESOX-2026, KPMG-IPO-2026, KPMG-AIFINANCE-2026, GT-INFERENCEGAP-2026,
+  GT-AIIMPACT-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*
+  (Microsoft, FY26 innovation story, 2026).
 - Surveys and polls: ACCTIMES-GARTNER-2026, HELPNET-GARTNER-2026, SIKICH-IAPRIORITIES-2026, CPAPA-IAPOLL-2026,
-  CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025* (AuditBoard/Optro, 2025-11-12),
-  IIA-PULSE-2026* (Internal Audit Foundation, 2026-02), TR-FOP-2026* (Thomson Reuters, 2026-06-22; the 34% figure is
-  on the report page, thomsonreuters.com/en/institute/future-of-professionals-2026/report).
+  CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025* (AuditBoard/Optro, 2025-11-12), IIA-PULSE-2026*
+  (Internal Audit Foundation, 2026-02), TR-FOP-2026* (Thomson Reuters report page, 2026-06-22).
 - Community and press: IAC-SOXCHANGE-2026, IAC-SOXRELIANCE-2026, CPAPA-5Q-2026, CPAPA-AGENTSCLOSE-2026,
   CPAPA-FULLPOP-2026, ICAEW-VOICES-2026* (ICAEW, 2026-06-10).
 - Standard-setters, regulators, professional bodies: COSO-GENAI-2026, IIA-AIFW-2024, IIA-IPPF-2026, IIA-GAM-2026,
   IIA-UPSKILL-2026, AICPA-AUDITAID-2026, DART-TQA9561-2026, JOFA-ETHICS-2026, PCAOB-GENAI-2024, FRC-GENAI-2026,
-  FRC-GENAIGUIDE-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024* (NIST, 2024-07-26),
-  CUATRECASAS-AIOMNIBUS-2026* (Cuatrecasas, 2026-07-24, https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published), PWC-SECFAQ-2019* (SEC staff FAQ via PwC Viewpoint, 2019-06-27),
-  JOFA-NONATTEST-2016* (Journal of Accountancy, 2016-11), IESBA-TECH-2023* (IESBA, 2023-04-11),
-  JOFA-PEEC-APS2-2026* (Journal of Accountancy, 2026-08-10), ACFE-CANADA-2026* (ACFE, scheduled 2026-11-15).
+  FRC-GENAIGUIDE-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024* (NIST, 2024-07-26), CUATRECASAS-AIOMNIBUS-2026*
+  (Cuatrecasas, 2026-07-24), PWC-SECFAQ-2019* (SEC staff FAQ via PwC Viewpoint, 2019-06-27), JOFA-NONATTEST-2016*
+  (Journal of Accountancy, 2016-11), IESBA-TECH-2023* (IESBA, 2023-04-11), JOFA-PEEC-APS2-2026* (Journal of
+  Accountancy, 2026-08-10), ACFE-CANADA-2026* (ACFE, scheduled 2026-11-15).
 - Academic and benchmarks: STANFORD-LEGALAI-2024* (arXiv, 2024-05-30), HBS-JAGGED-2023* (HBS, 2023-09),
   VALS-FAB-2026* (Vals AI leaderboard, read 2026-10-21; leaderboard dated 2026-06-04).
