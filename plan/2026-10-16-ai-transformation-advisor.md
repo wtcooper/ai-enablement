@@ -218,7 +218,7 @@ parallel, in waves of up to about 25 agents. One archetype takes roughly 2–3 h
 | 4 · **done** | Security (added 2026-10-17). Landscape (139 sources) confirmed 11 modules, signed off by the owner. 60 agents, about 21.5M tokens. 170 of 245 entries corrected by verification, none rejected. See the [retro](../research/runs/wave4/RETRO.md) | 60 |
 | 5 · **done** | Advisory (added 2026-10-20). Landscape proposed 7 modules (all signed off by the owner); combined dives for the 5 thinner ones. 32 agents, about 10.4M tokens. 92 of 125 entries corrected by verification, none rejected. See the [retro](../research/runs/wave5/RETRO.md) | 32 |
 | 6 · **done** | Mid-market modules (added 2026-10-20): 4 new modules in assurance and tax, 5 widened, then key integration. 23 agents, about 7.2M tokens. See the [retro](../research/runs/wave6/RETRO.md) | 23 |
-| Suite | Four sibling skills (portfolio, solution delivery, enablement, governance) plus partner and acquisition guides, per the [suite addendum](../spec/2026-10-20-skill-suite.md). 18 agents, about 4.4M tokens. See the [retro](../research/runs/suite/RETRO.md) | 18 |
+| Suite | Four sibling skills (portfolio, solution delivery, enablement, governance) plus partner and acquisition guides, per the [suite addendum](../spec/2026-10-20-skill-suite.md). 20 agents, about 5.0M tokens. See the [retro](../research/runs/suite/RETRO.md) | 20 |
 
 **Changes adopted after wave 1:**
 
