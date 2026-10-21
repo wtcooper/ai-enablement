@@ -31,7 +31,7 @@ Audits of employee benefit plans under ERISA (the US federal law governing priva
 mostly 401(k) and 403(b) defined contribution plans, done by regional, local, specialist and mid-market firms. The
 report is filed with the plan's Form 5500 (the annual return a plan files with the Department of Labor), and the
 Department of Labor's Employee Benefits Security Administration (DOL EBSA) and AICPA peer review both re-examine the
-work. It covers what is different for this engagement type; general audit mechanics stay in the sibling modules
+work [EBSA-AUDITQ-2023]. It covers what is different for this engagement type; general audit mechanics stay in the sibling modules
 (full-population testing in substantive-testing, SOC report reading in controls-testing, AI governance in
 quality-management).
 
@@ -213,8 +213,8 @@ review of a generated risk assessment (`#08`).
   [TR-SENSIBA-2026].
 - **Staff experience:** the vendor's Anders case study reports better job satisfaction and retention after automating
   setup work [AUDITMINER-ANDERS-2025]; Belfint says new staff ask to work on Autire files [AUTIRE-BELFINT-2026].
-- **Capacity:** Belfint grew from about 100 to 160-170 plan audits [AUTIRE-BELFINT-2026]; Autire's home-page case
-  card says without adding headcount (vendor statement) [AUTIRE-HOME-2026]. Rea's managing director says freed time
+- **Capacity:** Belfint grew from about 100 to 160-170 plan audits [AUTIRE-BELFINT-2026]; Autire's site menu card
+  for the case study says without adding headcount (vendor statement) [AUTIRE-BELFINT-2026]. Rea's managing director says freed time
   can go to sit-down client conversations [AUTIRE-REA-2026].
 - **Specialist positioning:** Metz says clients work with an experienced plan auditor, not a junior rotation
   [METZ-EBPAUDITAI-2026]; Sikich says all levels of its plan-audit team are dedicated [SIKICH-BROCHURE-2026].

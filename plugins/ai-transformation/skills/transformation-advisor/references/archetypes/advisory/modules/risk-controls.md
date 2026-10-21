@@ -1,6 +1,6 @@
 # Risk and controls advisory (advisory)
 
-Last reviewed 2026-10-21 (source-verified). Use cases live in `../use-cases/risk-controls.yaml` (24 entries). Ids
+Last reviewed 2026-10-21 (source-verified). Use cases live in `../use-cases/risk-controls.yaml` (23 entries). Ids
 are shortened: `#05` means `advisory-risk-controls-05`; other archetypes' ids are in full. Source keys in brackets, such
 as [KPMG-SOX2030-2026], are listed in §10 and given in full in the YAML. No entry is graded A: every outcome figure is
 vendor-published or self-reported, and nobody has published an error rate, override rate or parallel-run result for AI
@@ -50,7 +50,7 @@ same service can be restricted for a firm's own audit client (§6).
 
 Grouped by the four Reimagine lenses: improve (assist or augment a step), automate (no person on the normal path),
 delegate (an agent owns a multi-step outcome), reinvent (the service or sourcing model changes). Improve is dense;
-delegate rests on vendor-published cases; automate has one firm description (C) and one adjacent academic case (C).
+delegate rests on vendor-published cases; automate has one firm description (C).
 
 **Planning and risk assessment**
 - Improve: `#01` assistive pre-planning research, walkthrough notes and starting risk scores (polls only: 60% use genAI
@@ -84,7 +84,7 @@ delegate rests on vendor-published cases; automate has one firm description (C) 
   `#19` internal-audit review of a client's AI governance (Grant Thornton for a global bank, the one named case).
 - Improve: `#18` AI inventory, shadow-AI discovery, review of user-built automations. `#20` SOX scoping of AI inside
   business controls. Ideas: `#21` written controls before finance agents go live; `#23` AI-enabled fraud readiness.
-- Automate: `#22` confidence-threshold routing, low-confidence items to a person (C; academic data, unnamed bookkeeper).
+  Confidence-threshold routing (low-confidence items to a person) is `advisory-client-accounting-services-01`.
 
 **The firm's own testing tools**
 - Improve (idea): `#24` certify AI testing tools with a parallel run and recertify after vendor changes.
@@ -169,7 +169,7 @@ than half" less evidence chasing `#04`; Petual says customers "can achieve" 68-8
 hallucinated 17-33% of the time [STANFORD-LEGALAI-2024]; consultants were 19% less likely to be correct on a task
 outside AI's frontier [HBS-JAGGED-2023]; the best model scored 64.37% on Vals AI's Finance Agent benchmark (SEC-filing
 research, 2026-06-04) [VALS-FAB-2026]; accountants following divergent AI suggestions on uncertain items risked errors
-`#22`.
+(`advisory-client-accounting-services-01`).
 
 **What to measure (recommend these, not hours alone)**: hours per control before and after; reviewer override and
 rework rates; whether a parallel run catches the same exceptions; false-exception rate; request turnaround and
@@ -279,22 +279,28 @@ failure; deficiency severity; reliance on vendor reports; approving auto-clear r
 
 ## 10. Sources
 
-Full details (publisher, URL, date, locator) are in the YAML. Keys cited here but not in the YAML are marked *; their
-details come from the wave-5 research files (practice, discourse, governance, independence-pricing, disruption).
+Full details (publisher, URL, date, locator) are in the YAML. Keys marked * are not in this module's YAML:
+PWC-SECFAQ-2019, JOFA-NONATTEST-2016, IESBA-TECHREV-2023 and JOFA-PEEC-2026 are in full in
+`../use-cases/client-accounting-services.yaml`, ACFE-CANADA-2026 in `../use-cases/forensic-disputes.yaml`; the rest are below.
 
 - Firms: KPMG-SOX2030-2026, KPMG-FUTURESOX-2026, KPMG-IPO-2026, KPMG-AIFINANCE-2026, GT-INFERENCEGAP-2026,
-  GT-AISURVEY-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*
-  (Microsoft, FY26 innovation story, 2026).
+  GT-AISURVEY-2026, GT-CBIZ-2026 (Bloomberg Law), BAKERTILLY-AIIA-2026, BAKERTILLY-GAM-2026, MSFT-SOXAGENT-2026*.
 - Surveys and polls: ACCTIMES-GARTNER-2026, HELPNET-GARTNERIA-2026, SIKICH-IAPRIORITIES-2026, CPAPA-IAPOLL-2026,
-  CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025* (AuditBoard/Optro, 2025-11-12), IIA-PULSE-2026*
-  (Internal Audit Foundation, 2026-02), TR-FOPREPORT-2026* (Thomson Reuters report page, 2026-06-22).
+  CPAPA-RSMMM-2026, OPTRO-AGENTICREPORT-2026, AUDITBOARD-FOCUS-2025*, IIA-PULSE-2026*, TR-FOPREPORT-2026*.
 - Community and press: IAC-SOXCHANGE-2026, IAC-SOXRELIANCE-2026, CPAPA-5Q-2026, CPAPA-AGENTSCLOSE-2026,
-  CPAPA-FULLPOP-2026, ICAEW-VOICES-2026* (ICAEW, 2026-06-10).
+  CPAPA-FULLPOP-2026, ICAEW-VOICES-2026*.
 - Standard-setters, regulators, professional bodies: COSO-GENAI-2026, IIA-AIFW-2024, IIA-IPPF-2026, IIA-GAM-2026,
   IIA-UPSKILL-2026, JOFA-AIPA-2026, DART-TQA9561-2026, JOFA-ETHAI-2026, PCAOB-GENAI-2024, FRC-GENAINEWS-2026,
-  FRC-GENAI-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024* (NIST, 2024-07-26), CUATRECASAS-AIOMNIBUS-2026*
-  (Cuatrecasas, 2026-07-24), PWC-SECFAQ-2019* (SEC staff FAQ via PwC Viewpoint, 2019-06-27), JOFA-NONATTEST-2016*
-  (Journal of Accountancy, 2016-11), IESBA-TECHREV-2023* (IESBA, 2023-04-11), JOFA-PEEC-2026* (Journal of
-  Accountancy, 2026-08-10), ACFE-CANADA-2026* (ACFE, scheduled 2026-11-15).
-- Academic and benchmarks: STANFORD-LEGALAI-2024* (arXiv, 2024-05-30), HBS-JAGGED-2023* (HBS, 2023-09),
-  VALS-FAB-2026* (Vals AI leaderboard, read 2026-10-21; leaderboard dated 2026-06-04).
+  FRC-GENAI-2026, SEC-RULE2-01-2026, DOJ-ECCP-2024, NIST-AIRMF-2024*, CUATRECASAS-AIOMNIBUS-2026*, PWC-SECFAQ-2019*,
+  JOFA-NONATTEST-2016*, IESBA-TECHREV-2023*, JOFA-PEEC-2026*, ACFE-CANADA-2026*.
+- Academic and benchmarks: STANFORD-LEGALAI-2024*, HBS-JAGGED-2023*, VALS-FAB-2026*.
+- *MSFT-SOXAGENT-2026: Microsoft, FY26 Frontier Finance innovation story (SOX change-management testing agent), 2026, https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mcaps/documents/fy26/SOX-Change-Management-Testing-Agent.pdf
+- *AUDITBOARD-FOCUS-2025: AuditBoard (now Optro), 2026 Focus on the Future, 2025-11-12, https://auditboard.com/blog/top-takeaways-from-2026-focus-on-the-future
+- *IIA-PULSE-2026: Internal Audit Foundation, 2026 Pulse of Internal Audit, 2026-02, https://www.theiia.org/globalassets/site/resources/research-and-reports/pulse-of-internal-audit/2026-iia-pulse-of-internal-audit-report.pdf
+- *TR-FOPREPORT-2026: Thomson Reuters, Future of Professionals Report 2026 (report page, not the press release TR-FOPPR-2026), 2026-06-22, https://www.thomsonreuters.com/en/institute/future-of-professionals-2026/report
+- *ICAEW-VOICES-2026: ICAEW, on whether junior accountants are worried about their roles, 2026-06-10, https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/ai-are-junior-accountants-worried-about-roles
+- *NIST-AIRMF-2024: NIST, AI Risk Management Framework, 2024-07-26, https://www.nist.gov/itl/ai-risk-management-framework
+- *CUATRECASAS-AIOMNIBUS-2026: Cuatrecasas, note on the EU AI Omnibus (Regulation (EU) 2026/1744), 2026-07-24.
+- *STANFORD-LEGALAI-2024: Stanford and Yale researchers, Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools, 2024-05-30, https://arxiv.org/pdf/2405.20362
+- *HBS-JAGGED-2023: Harvard Business School, Navigating the Jagged Technological Frontier (working paper), 2023-09, https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
+- *VALS-FAB-2026: Vals AI, Finance Agent benchmark leaderboard (dated 2026-06-04, read 2026-10-21), 2026-06-04, https://www.vals.ai/benchmarks/finance_agent
