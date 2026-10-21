@@ -487,6 +487,14 @@
       date: "2026-08-19"
       access: full
       locator: "paragraph 2 (challenging management forecasts)"
+    - ref: ARXIV-KIM-2024
+      title: "Financial Statement Analysis with Large Language Models (withdrawn)"
+      publisher: "arXiv"
+      type: academic
+      url: "https://arxiv.org/abs/2407.17866"
+      date: "2024-07-25"
+      access: full
+      locator: "abstract page and withdrawal notice (withdrawn 2025-02-20); cited only as 'do not cite'"
   last_reviewed: "2026-10-20"
   notes: >-
     Idea (grade D). Preprint; the full paper was not read. Relevant mainly as independent evidence that
@@ -830,6 +838,14 @@
       date: "2026-01"
       access: full
       locator: "pages 2-4 (summary of changes; IVS 107)"
+    - ref: BVR-IVSPODCAST-2026
+      title: "AI disclosure requirements in proposed IVS highlighted in AICPA podcast (BVWire)"
+      publisher: "Business Valuation Resources"
+      type: press
+      url: "https://www.bvresources.com/articles/bvwire/ai-disclosure-requirements-in-proposed-ivs-highlighted-in-aicpa-podcast"
+      date: "2026-07-29"
+      access: full
+      locator: "paragraph 2 (documentation of significant use, including quality controls applied)"
   last_reviewed: "2026-10-20"
   notes: >-
     Merged from two deep-dive candidates: a practitioner-discussed idea (podcast, grade D on its own) and a vendor

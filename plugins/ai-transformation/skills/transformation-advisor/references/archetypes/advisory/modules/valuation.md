@@ -5,7 +5,7 @@ Sources checked 2026-10-20. Use cases live in `../use-cases/valuation.yaml` (14 
 [IVSC-IVSED-2026], are in the YAML or in §10. **Read this first: the standards track is rich, the practice evidence
 is thin.** No entry is graded A; 4 of 14 are B, and those rest on named deployments with no published measurement.
 No error rate, override rate, parallel run or inspection finding on AI-assisted valuation exists. Every speed figure
-is vendor-published or a recollection. No US top-100 or mid-market accounting firm has described its own valuation AI
+is vendor-published or a firm's own claim. No US top-100 or mid-market accounting firm has described its own valuation AI
 use in the sources this research reached (`assurance-specialists-02` records a CohnReznick valuation-advisory
 announcement on AI analytics). Say so when you quote a figure.
 
@@ -243,7 +243,8 @@ stays responsible [ISA-AO41-2026; BVR-ENDICOTT-2026].
   "Firm of the Future" [ASA-ASAIC26-2026; BVR-ASACONF-2026].
 - **Scheduled, not yet given:** AICPA FVS Conference 2026-11-04 to 06, including FVC2640 "Valuation in an AI World"
   and FVC2631, a "MythBusters" session with items on AI disclosure language in business valuation reports and on
-  public-company AI disclosure suits [AICPA-FVS-2026]. Valuation Performance Framework comments due 2026-12-22 [ACCTODAY-VPF-2026].
+  public-company AI disclosure suits [AICPA-FVS-2026]. Valuation Performance Framework comments due 2026-12-22
+  [ACCTODAY-VPF-2026].
 
 ## 9. Common objections
 
