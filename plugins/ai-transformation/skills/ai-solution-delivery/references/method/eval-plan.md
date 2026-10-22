@@ -45,7 +45,7 @@ decision rule for launch.
 5. **Plan red-teaming, regression and online monitoring** (§3.5, §3.6), using the pattern file's §7 metrics.
 6. **Professional work:** set the human verification level by testing on a small, manually reviewed subset
    first; ABA Opinion 512 gives the example of a contract-summary tool tested on a smaller set [ABA-2024]. Record
-   the evidence the regulator, client or professional body will expect (§3.7).
+   the evidence the regulator, client or professional body will expect (§3.6, Evidence retained).
 7. **Play back** the acceptance sentence; mark the plan `agreed` only when the owner accepts it. Name step 5 as
    next, or loop back to step 3 if the design cannot meet the bar.
 
@@ -56,9 +56,8 @@ decision rule for launch.
 - **Seed from reality:** past failures, reviewer corrections, the step 1 error history. **Balance** with cases
   where the behaviour should not happen, or one-sided tests reward over-triggering [ANTHROPIC-2026, Step 3].
 - **Two-expert test:** a good task is one two domain experts would independently pass or fail the same way; have
-  someone pass it themselves [ANTHROPIC-2026, Step 2]. Experts may disagree on open-ended outputs, and rater
-  disagreement needs reconciling [ANTHROPIC-2026]; in professional services gold answers usually come from a
-  senior practitioner *(advisor default)*.
+  someone pass it themselves [ANTHROPIC-2026, Step 2]. Gold answers usually come from seniors, who often disagree
+  *(advisor default)*.
 
 ### 3.2 Error analysis
 
@@ -74,16 +73,14 @@ evaluators [HUSAIN-2026]. Criteria drift is normal: people define "good" after s
 | A judgment call (relevance, sufficiency, tone) | Model judge, calibrated; or human | "Evidence supports the attribute" |
 | High stakes or new | Human review sample | A manager reviews a set per run |
 
-- Use binary pass/fail per check and report a **pass-all rate** with drill-down, not 1–5 scales
-  [HUSAIN-2026; APPLIEDLLMS-2024, 1.4.5]. Read transcripts before believing any score, especially 0% or 100%
-  [ANTHROPIC-2026].
+- Use binary pass/fail per check and report a **pass-all rate** with drill-down, not 1–5 scales. Read transcripts
+  before believing any score, especially 0% or 100% [ANTHROPIC-2026].
 - **Check citations, not only conclusions:** a consultancy report for an Australian department contained
   nonexistent references, and a partial refund followed (press report) [GUARDIAN-2025].
-- **Calibrate judges** against human labels with precision and recall, not raw agreement; give the judge an
-  "unknown" option; judge one dimension at a time; re-check when the model, prompt or case mix changes
-  [HUSAIN-2024; ANTHROPIC-2026, Step 5]. Why: the MT-Bench study reported over 80% agreement between a strong
-  judge and human preferences but also position, verbosity and self-enhancement biases [LMSYS-2023];
-  Thoughtworks moved LLM-as-a-judge to "Assess" in November 2025, citing reliability concerns [THOUGHTWORKS-2025].
+- **Calibrate judges** against human labels with precision and recall, not raw agreement; give an "unknown"
+  option; judge one dimension at a time; re-check when the model, prompt or case mix changes [HUSAIN-2024]. The
+  MT-Bench study reported over 80% agreement between a strong judge and human preferences, but also position,
+  verbosity and self-enhancement biases [LMSYS-2023].
 
 ### 3.4 Consistency and baseline
 
@@ -97,14 +94,14 @@ evaluators [HUSAIN-2026]. Criteria drift is normal: people define "good" after s
 
 ### 3.5 Red-teaming and regression
 
-- **Red team** any client-facing or tool-using solution before launch, with a scorecard (attack categories,
-  attempts, success rate), people not involved in development, and a re-run trigger [NIST-2024, MS-1.3-002,
-  MS-1.3-003; MSFT-REDTEAM]. Draw categories from the OWASP risks in the design brief [OWASP-2025].
-- **Two suites:** a capability suite that starts low and shows progress, and a regression suite near 100%.
-  Graduate reliable cases into regression; retire cases that always pass [ANTHROPIC-2026; HUSAIN-2026]. A 0%
-  pass rate usually means a broken task or grader: Anthropic reports a benchmark score moving from 42% to 95%
-  after grading and task fixes and a less constrained scaffold (vendor-published) [ANTHROPIC-2026]. Re-run the
-  regression suite on every model, prompt, retrieval-index, tool or input-system change.
+- **Red team** any client-facing or tool-using solution before launch, with a scorecard (attack categories from
+  the design brief's OWASP screen, attempts, success rate), people not involved in development, and a re-run
+  trigger [NIST-2024, MS-1.3-002, MS-1.3-003].
+- **Two suites:** a capability suite that starts low and shows progress, and a regression suite near 100%;
+  graduate reliable cases into regression and retire cases that always pass. A 0% pass rate usually means a
+  broken task or grader: Anthropic reports a benchmark score moving from 42% to 95% after grading and task fixes
+  and a less constrained scaffold (vendor-published) [ANTHROPIC-2026]. Re-run the regression suite on every
+  model, prompt, retrieval-index, tool or input-system change.
 
 ### 3.6 Online monitoring
 
@@ -117,17 +114,11 @@ evaluators [HUSAIN-2026]. Criteria drift is normal: people define "good" after s
 | Input coverage, data freshness, retrieval health | Silent failures that raise no errors | [GOOGLE-RULES, Rule 10] |
 
 Read traces daily while piloting, then 10–20 a week plus 100 or more fresh traces per review cycle (practitioner
-guidance) [APPLIEDLLMS-2024, 2.1.2; HUSAIN-2026]. No public source gives measured override or escalation rates
-for live knowledge-work systems, so set normal ranges from the team's own pilot.
+guidance) [HUSAIN-2026]. No public source gives measured override or escalation rates for live knowledge-work
+systems, so set normal ranges from the team's own pilot.
 
-### 3.7 Evidence for regulated and professional work
-
-Keep the case inventory, gold answers, results by version, judge calibration, red-team scorecard and decisions.
-The UK audit regulator's guidance (which adds no new requirements) says firms should document what a tool does,
-when it is appropriate, how it was developed and tested, and why the firm is confident it works, with adjusted
-expectations for third-party tools [FRC-2025]. Bank model-risk guidance asks for independent validation, a model
-inventory and ongoing monitoring, including analysis of overrides [FRB-2011; BOE-2023]. The ABA says the lawyer
-stays fully responsible [ABA-2024].
+**Evidence retained:** the case inventory, gold answers, results by version, judge calibration, red-team scorecard
+and decisions; `readiness.md` in this folder (§3, Evidence and documentation) lists what regulators expect.
 
 ## 4. Thresholds and starting numbers
 
@@ -143,8 +134,7 @@ stays fully responsible [ABA-2024].
 answers to set review depth by task. `professional-services-quality-review-07` (grade B): standing evaluation
 suites, gold answers and change control written into a law firm role (a job description; no results published).
 `assurance-quality-management-04` (grade C): evaluation sets and parallel running before limited deployment of
-an audit tool (no parallel-run results published). Without an eval system, fixes to one failure can cause
-others, as in Rechat's assistant (practitioner case, self-described) [HUSAIN-2024].
+an audit tool (no parallel-run results published).
 
 ## 5. Worked example: evidence matching in an audit practice
 
@@ -166,21 +156,15 @@ the decisions log. Prototype results go into the plan's §10 results log; they a
 
 - `ABA-2024` — American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools*, 2024-07-29. https://www.mcle.org/ePrograms/2250081P01/1--aba-formal-opinion-512.pdf
 - `ANTHROPIC-2026` — Anthropic, *Demystifying evals for AI agents*, vendor engineering guide, 2026-01-09. https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
-- `APPLIEDLLMS-2024` — Yan et al., *What We've Learned From A Year of Building with LLMs*, 2024-06-08. https://applied-llms.org/
 - `BERKELEY-2026` — Pan, Arabzadeh et al., *Measuring Agents in Production*, 2026-06-04. https://arxiv.org/pdf/2512.04123
-- `BOE-2023` — Bank of England PRA, *SS1/23 Model risk management principles for banks*, 2023-05-17 (updated version published 2026-04-23, which keeps the model inventory and independent validation principles). https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*, 2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- `FRC-2025` — UK Financial Reporting Council, *AI in audit: illustrative example and documentation guidance*, regulator guidance, 2025-06-26. https://www.frc.org.uk/documents/8384/AI_in_Audit.pdf
 - `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `GUARDIAN-2025` — The Guardian Australia, *Deloitte to pay money back to Albanese government after using AI in $440,000 report*, 2025-10-06. https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report
 - `HUSAIN-2024` — Hamel Husain, *Your AI Product Needs Evals*, 2024-03-29. https://hamel.dev/blog/posts/evals/
 - `HUSAIN-2026` — Hamel Husain (with Shreya Shankar), *LLM Evals: Everything You Need to Know (FAQ)*, 2026-09-18. https://hamel.dev/blog/posts/evals-faq/
 - `LMSYS-2023` — Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*, 2023. https://arxiv.org/pdf/2306.05685
-- `MSFT-REDTEAM` — Microsoft Learn, *AI Red Teaming Agent*, vendor documentation, undated. https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-red-teaming-agent
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `OPENAI-2025` — OpenAI, *A practical guide to building agents*, 2025-04. https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
-- `OWASP-2025` — OWASP GenAI Security Project, *OWASP Top 10 for LLM Applications 2025*, 2025. https://genai.owasp.org/llm-top-10/
 - `SHANKAR-2024` — Shankar et al., *Who Validates the Validators?*, 2024-04-18. https://arxiv.org/pdf/2404.12272
 - `SIERRA-2024` — Yao et al. (Sierra), *tau-bench*, 2024-06-17. https://arxiv.org/pdf/2406.12045
-- `THOUGHTWORKS-2025` — Thoughtworks, *LLM as a judge* (Technology Radar), updated 2025-11-05. https://www.thoughtworks.com/radar/techniques/llm-as-a-judge
 - `UKGDS-2025` — UK Government, *Artificial Intelligence Playbook for the UK Government*, 2025-02-10. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html

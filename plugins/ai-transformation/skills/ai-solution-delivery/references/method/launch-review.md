@@ -2,8 +2,8 @@
 
 Read this on entering step 6 and at every later review. It covers the staged launch and the numbered post-launch
 reviews: promised against achieved, what overrides and incidents say, how the eval set must change, and whether
-to continue, tighten, loosen, redesign or retire. Keys in brackets are listed in §6. Lines marked *(advisor
-default)* are working rules, not findings from a source.
+to continue, tighten, loosen, redesign or retire. Keys in brackets are listed in §6. *(advisor default)* marks a
+working rule, not a finding from a source.
 
 ## Contents
 
@@ -20,11 +20,10 @@ default)* are working rules, not findings from a source.
 
 **Exit for each review when all of these are true:**
 
-- The launch record shows each widening and the evidence that allowed it.
-- Promised versus achieved is set out for the eval-plan thresholds and each benefit in the register, as ranges
-  with their basis (from record, reported, observed).
-- Overrides, escalations, incidents and near misses analysed, with what changed as a result.
-- Eval-set health checked; cost and usage compared with the envelope; user feedback recorded.
+- The launch record shows each widening and its evidence; promised versus achieved is set out for the eval-plan
+  thresholds and each benefit, as ranges with their basis (from record, reported, observed).
+- Overrides, escalations, incidents and near misses analysed; eval-set health checked; cost and usage compared
+  with the envelope; user feedback recorded.
 - A decision (continue, tighten, loosen, redesign, retire) with its evidence, the rung confirmed or changed, and
   the event that triggers the next review.
 - Handoffs made: gate evidence and benefit actuals to **ai-portfolio**, the reusable workflow to
@@ -32,17 +31,15 @@ default)* are working rules, not findings from a source.
 
 ## 2. How to run it
 
-1. **Name the review** (Review 1, 2, ...) and read the inputs: the eval plan's monitoring table and results log,
-   the readiness launch plan, the last review, and this solution's rows in `portfolio/benefits.yaml` (written by
-   **ai-portfolio**).
-2. **Record the launch so far:** which groups use it, at what review level, and what evidence allowed each step.
-3. **Promised versus achieved** (§3.2): eval thresholds first, then benefits. Ask how each figure was measured.
-4. **Read the overrides before the averages:** what users corrected shows where they do not trust or cannot use
+1. **Name the review** (Review 1, 2, ...) and read the eval plan's monitoring and results, the launch plan, the
+   last review, and this solution's rows in `portfolio/benefits.yaml` (written by **ai-portfolio**).
+2. **Record the launch so far** and **promised versus achieved** (§3.2), eval thresholds first, then benefits.
+3. **Read the overrides before the averages:** what users corrected shows where they do not trust or cannot use
    the output [FRB-2011; NIST-2024, MS-4.2-004].
-5. **Incidents and near misses:** cause, and whether evals, guardrails or training changed; turn each into a
+4. **Incidents and near misses:** cause, and whether evals, guardrails or training changed; turn each into a
    case, a guardrail or a training point [NIST-2024, MG-4.2-002].
-6. **Eval-set health** (§3.3) and **people and reuse** (§3.4).
-7. **Decide** using §4; set the next review trigger; hand off; update the files; play back the decision.
+5. **Eval-set health** (§3.3) and **people and reuse** (§3.4).
+6. **Decide** using §4; set the next review trigger; hand off; update the files; play back the decision.
 
 ## 3. Review points and what a review covers
 
@@ -81,8 +78,7 @@ only outputs, for silent decay [GOOGLE-RULES, Rule 10].
 - Ask users what would happen if the tool were taken away. A law firm partner recalled hearing a unanimous no
   (self-reported) [PAPERJAM-2025]; such answers persuade peers more than a satisfaction score *(advisor
   default)*.
-- Adoption by group: who uses it, who does not, and why; hand uneven adoption to **ai-enablement**.
-- Lessons for other teams: which parts are reusable (cases, checklist, design) and which were local.
+- Adoption by group, with uneven use handed to **ai-enablement**; which parts other teams can reuse.
 
 ## 4. Decision rules
 
@@ -102,16 +98,11 @@ only outputs, for silent decay [GOOGLE-RULES, Rule 10].
 
 ## 5. Worked example: evidence matching in an audit practice
 
-Illustrative. Review 1, after the first ten production engagements.
-
-- **Promised versus achieved:** zero-tolerance checks held; the re-run rule caught a date-handling change before
-  use. Net hours per engagement sit in the low half of the forecast range against the staggered-start offices
-  (from time records).
-- **Overrides:** about a third concern approval evidence in emails; the checklist line is reworded and five cases
-  added.
-- **Decision:** continue and widen to all engagements; the rung stays at `augment`. Actuals go to
-  **ai-portfolio**; the checklist and review procedure go to **ai-enablement** as a workflow. **Next review
-  when:** the benefit horizon is reached, or any metric leaves its range.
+Illustrative. Review 1, after the first ten production engagements. Zero-tolerance checks held, and the re-run
+rule caught a date-handling change before use. Net hours per engagement sit in the low half of the forecast range
+against the staggered-start offices (from time records). About a third of overrides concern approval evidence in
+emails, so the checklist line is reworded and five cases added. **Decision:** continue and widen; the rung stays
+at `augment`. **Next review when:** the benefit horizon is reached, or any metric leaves its range.
 
 ## 6. Output and sources
 

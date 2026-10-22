@@ -117,9 +117,8 @@ inflates the pipeline.
 
 ## 4. Questions and traps
 
-- Is this a change to how people work in existing tools, or to how the work flows?
-- Where are people already using personal AI tools for this work? Is another practice working on the same problem?
-- What client data or professional duties does it touch? What would make the people doing the work reject it?
+Also ask where people already use personal AI tools for this work, what client data or professional duties it
+touches, and what would make the people doing the work reject it.
 
 | Trap | How to avoid it |
 |---|---|
@@ -130,12 +129,10 @@ inflates the pipeline.
 
 ## 5. Worked example
 
-*Illustrative.* A tax operations manager proposes: "Extract K-1 and source-document data with confidence flags so
-preparer hours per return fall." Time records show about 3,000 K-1-heavy returns last season. Class:
-business-automation; data in the document system, owned by the tax practice; evidence
-`tax-compliance-individual-business-02` (grade B). Ready to screen. Partners asking for chat licences go on the
-enablement line. The tax unit's advisor file holds four chosen options; they are imported with `source` set, and
-one with `label: draft-to-validate` stays `outline` until the preparers confirm it.
+*Illustrative.* "Extract K-1 and source-document data with confidence flags so preparer hours per return fall":
+about 3,000 K-1-heavy returns last season (time records); business-automation; data owned by the tax practice;
+evidence `tax-compliance-individual-business-02` (grade B). Ready to screen. Partners' chat licence requests go on
+the enablement line.
 
 ## 6. Output
 

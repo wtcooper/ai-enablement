@@ -99,10 +99,8 @@ Do not apply a technology-style payback hurdle of under a year; AI value usually
 
 ## 4. Questions and traps
 
-- Which candidate has the weakest evidence? [HBR-2026]
-- Do the people who would build it have the skills, or would you source them? [HBR-2026]
-- What is the risk tier of this item, and does that change its path?
-- If this works, what happens to the hours: redeployed, absorbed or removed from budget?
+Ask which candidate has the weakest evidence, and whether the people who would build it have the skills or would
+source them [HBR-2026].
 
 | Trap | How to avoid it |
 |---|---|

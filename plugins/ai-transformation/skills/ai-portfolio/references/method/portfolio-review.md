@@ -94,13 +94,10 @@ each skeptic what result would change their mind (`people-and-change.md`).
 
 ## 5. Worked example
 
-*Illustrative;* review 3, a rebalance. **Pipeline:** live (prototype, pilot, scale) three of six; chat licences on
-the enablement line. **Decisions asked:** K-1 extraction met its `g3` evidence (Go to production); a
-document-summary pilot shows slippage on two reviews running and has lost its owner (Hold or Kill); know-how
-search is held behind the library clean-up, which has passed `g2` (Go into discover). **Rebalance:** every item
-past discover is a near-horizon capacity play; the forum asks advisory for a new-value idea. **Part B:** K-1 Go,
-with the capacity decision recorded in `benefits.yaml`; document summary Kill, evaluation set and prompts kept;
-know-how search Go.
+*Illustrative;* review 3, a rebalance. Decisions asked: K-1 extraction met its `g3` evidence (Go); a document-summary
+pilot shows slippage on two reviews running and has lost its owner (Hold or Kill); know-how search's foundation has
+passed `g2` (Go into discover). Rebalance: every item past discover is a near-horizon capacity play, so the forum
+asks advisory for a new-value idea. Part B: Go, Kill (evaluation set and prompts kept), Go.
 
 ## 6. Output
 

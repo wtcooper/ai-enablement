@@ -54,13 +54,10 @@ judged against each other and against fixed criteria, not only on their own meri
 
 ## 3. Defaults and decision rules
 
-### 3.1 Set-up checklist
+### 3.1 One register
 
-- One register; every item has a single id across intake, portfolio, solutions and benefits files.
-- Weights sum to 1. Each lever has one named metric the finance lead would accept.
-- Stage exit evidence is written before any item reaches the gate.
-- Every gate has at least one gatekeeper who controls resources for the next stage.
-- A decommissioning route exists for anything that reaches production [NIST-2023; OMB-2025].
+Every item has a single id across intake, portfolio, solutions and benefits files. Each lever has one named metric
+the finance lead would accept. Stage exit evidence is written before any item reaches the gate.
 
 ### 3.2 The review forum and rhythm
 
@@ -87,11 +84,9 @@ No more live items (prototype, pilot, scale) than there are named owners and rev
 
 ## 4. Questions, moves and traps
 
-- Is there one register of AI ideas, pilots and live systems, or does each practice keep its own? [UKGOV-2025]
-- Does an AI board or centre of excellence exist already? What does it decide, and what not? [MSFT-COE-2026]
-- Who releases the people and budget for a pilot, and would they sit at the gate? [COOPER-STAGEGATE-n.d.]
-- Who attends the portfolio review today, what pack do they see, and what does it actually decide?
-- Is the firm a partnership, a corporate with partner titles or a hybrid, and who votes on investment?
+Ask whether an AI board or centre of excellence already exists and what it decides [MSFT-COE-2026]; who attends
+any portfolio review today and what it actually decides; and whether the firm is a partnership, a corporate with
+partner titles or a hybrid, and who votes on investment.
 
 | Trap | How to avoid it |
 |---|---|
@@ -102,13 +97,11 @@ No more live items (prototype, pilot, scale) than there are named owners and rev
 
 ## 5. Worked example
 
-*Illustrative.* A mid-sized accounting, tax and advisory firm has an advisor plan. Step 1 copies its levers
-(capacity → preparer hours per return; quality → review notes per return; growth → advisory fees from existing
-clients) and weights. The inventory turns up fourteen items, including three near-identical drafting assistants and
-a chat licence request. The audit practice's independence check is added to `g1` for items that touch audit
-clients. Gatekeepers: practice leaders at `g1` and `g2`, the risk and quality partner at `g2` and `g3`, the finance
-director at `g3` and `g4`. `g0` deciders: the head of AI alone on the light path; the sponsor and practice leaders
-with the head of AI on the full path. Default rhythm; live limit six, the number of owners who can give it time.
+*Illustrative.* An accounting, tax and advisory firm copies its advisor plan's levers (capacity → preparer hours
+per return; quality → review notes per return; growth → advisory fees) and weights. The inventory finds fourteen
+items, three of them near-identical drafting assistants. Gatekeepers: practice leaders at `g1` and `g2`, the risk
+and quality partner at `g2` and `g3`, the finance director at `g3` and `g4`. `g0` deciders: the head of AI alone on
+the light path; the sponsor and practice leaders with the head of AI on the full path. Live limit six.
 
 ## 6. Output
 

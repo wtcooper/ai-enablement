@@ -4,45 +4,28 @@ Read this on entering step 6, and whenever someone asks "can we use tool X with 
 at a time with a repeatable scorecard, decides, and writes the catalog entry. Sources are in §8; vendor documents are
 cited only as evidence of what published terms say. Never recommend a vendor.
 
-## Contents
-
-1. [Goal and exit criteria](#1-goal-and-exit-criteria)
-2. [How to run it](#2-how-to-run-it)
-3. [Question bank](#3-question-bank)
-4. [Expert moves](#4-expert-moves)
-5. [The scorecard and decision rules](#5-the-scorecard-and-decision-rules)
-6. [Worked example](#6-worked-example)
-7. [Output](#7-output)
-8. [Sources](#8-sources)
-
 ## 1. Goal and exit criteria
 
-**Goal.** A decision on one tool + tier + contract for named data classes and a maximum risk tier, with evidence.
-Evaluation is a data-flow and change-control question first: what is retained, whether it trains models, who the
-sub-processors are and where processing happens, which certifications cover this product, and what happens when the
-vendor changes the model, a sub-processor or its terms, or when you leave [NIST-600-1-2024, GV-6.1-004 to GV-6.1-009].
+**Goal.** A decision on one tool + tier + contract for named data classes and a maximum risk tier, with evidence. It
+is a data-flow and change-control question first: retention, training, sub-processors and regions, certifications,
+and what happens when the vendor changes the model or terms, or you leave [NIST-600-1-2024, GV-6.1-004 to GV-6.1-009].
 
 **Exit when all of these are true:**
 - **Scorecard filled:** six dimensions rated `meets`, `partial`, `gap` or `unknown`, each with evidence and a locator.
-- **Screens done:** independence, section 7216 or tax-data rules, client terms (`references/professional-duties.md`).
-- **Own-sample test** planned or done for tier-3 and tier-4 uses.
-- **Decision** with data classes, maximum tier, conditions, re-approval triggers and exit plan.
-- **Catalog entry** written or updated, and the vendor file saved.
+- **Screens done** (independence, 7216 or tax-data rules, client terms); **own-sample test** planned or done for
+  tier-3 and tier-4 uses.
+- **Decision** with data classes, maximum tier, conditions, re-approval triggers and exit plan; catalog entry and
+  vendor file saved.
 
 ## 2. How to run it
 
-1. **Pin down the request:** product, tier, contract, use, data classes, runtime class. Separate tiers are separate
-   evaluations and separate catalog entries.
-2. **Offer a desk evaluation** from public documentation: delegate it with `references/briefs/evaluate-tool.md` (one
-   subagent per tool + tier) or do it yourself. It is a draft to validate (rule 15).
-3. **Play the draft back** dimension by dimension. Ask what the signed contract and the vendor's answers add; change
-   ratings only on evidence. Start with V2 to V5: the data-flow facts decide most cases.
-4. **Run the screens** from policy section 6.
-5. **Design the own-sample test** for tier-3 and tier-4 uses (`references/risk-tiers.md` move 3): real-shaped,
-   non-confidential or approved samples with reference answers from the best reviewers. The firm runs it; you record
-   the result.
-6. **Decide** with the §5 rules; write conditions as settings someone can check. A `not-approved` decision is recorded
-   too, with the alternative.
+1. **Pin down the request:** product, tier, contract, use, data classes, runtime class. Each tier is its own evaluation.
+2. **Offer a desk evaluation** from public documents, delegated with `references/briefs/evaluate-tool.md` or done
+   yourself; it is a draft to validate (rule 15). Play it back dimension by dimension, starting with V2 to V5, and
+   change ratings only on evidence from the signed contract or the vendor's answers.
+3. **Run the screens** from policy section 6. For tier-3 and tier-4 uses, design the own-sample test
+   (`references/risk-tiers.md` move 3) on non-confidential or approved samples with reference answers; the firm runs it.
+4. **Decide** with §5; write conditions as checkable settings. Record a `not-approved` decision with its alternative.
 
 ## 3. Question bank
 
@@ -65,8 +48,6 @@ vendor changes the model, a sub-processor or its terms, or when you leave [NIST-
 3. **Ask what notice you get of model, sub-processor and terms changes, and write the re-approval trigger.** NIST asks
    for ongoing monitoring of third parties, including detecting unauthorized changes [NIST-600-1-2024, GV-6.1-009].
    No benchmark of negotiated notice terms was found, so the trigger list is an advisor default.
-4. **Read certifications for scope, period and exclusions**, and still test on your own data and use. Ask who carries
-   liability: see `../../transformation-advisor/references/archetypes/professional-services/guardrails.md` §8.
 
 ## 5. The scorecard and decision rules
 
@@ -79,39 +60,32 @@ vendor changes the model, a sub-processor or its terms, or when you leave [NIST-
 | Sub-processor and model changes (`change_control`) | A published sub-processor list with regions; notice of model, sub-processor and terms changes | Sub-processor page; change-notice clause [NIST-600-1-2024, GV-6.1-005, GV-6.1-009] |
 | Exit (`exit`) | Data export; deletion on termination; a contingency if the tool fails or is withdrawn | Terms; admin documentation [NIST-RMF-2023, GOVERN 1.7, 6.2] |
 
-**Gates outside the scorecard:** profession screens (step 5) and, for tier-3 and tier-4 uses, the own-sample test.
-
 **Decision rules (advisor defaults)**
 - A `gap` in `retention_training`, or a consumer tier → never approved for `client-confidential` or `regulated` data.
 - Any `unknown` on a dimension that matters for the requested data class → ask the vendor; decision stays `pending`.
-- A screen marked `needs-review` → no approval for that use until the reviewer clears it.
+- A screen marked `needs-review` → no approval for that use until the reviewer clears it. Any re-approval trigger
+  (`references/schemas/policy.md` §3.5) → evaluate again.
 - A tier-3 or tier-4 use with `own_sample_test: not-run` → at most `pilot`, for named user groups.
 - A certification whose scope does not name the product → `partial`, not `meets`.
 - An embedded feature that arrives switched on → off for client-confidential work until it has a catalog entry (NIST
   asks that inventories and procurement cover embedded generative AI [NIST-600-1-2024, GV-1.6-002, GV-6.1-009]).
-- Re-approve on any trigger: model change, sub-processor change, terms change, new data class, new use, incident.
 - Agents and runtimes add least privilege and the actions that pause for a person to the conditions
   (`references/risk-tiers.md` move 4); for a `managed-agent-runtime`, evaluate the platform and each agent separately.
 
 ## 6. Worked example
 
-Illustrative. A document-management vendor turns on an AI summary feature by default. The desk evaluation finds the
-AI processing region unstated, the feedback exception undescribed and no change-notice commitment. Decision: `pending`
-for client-confidential documents, with the feature off in those workspaces; the user confirms the admin switch, so
-firm-internal use is a `pilot` for the knowledge team (entry `docs-ai-summary`, `data_classes: [public,
-firm-internal]`). Questions on region, feedback and notice go to the vendor. The vendor schema example records it.
+Illustrative; the vendor schema example records it. A document platform switches on AI summaries with region, feedback
+and change notice unknown: client-confidential use stays `pending` with the feature off; firm-internal use is a `pilot`.
 
 ## 7. Output
 
-Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema `references/schemas/vendor.md`).
-Add or update the entry in `overlay/tool-catalog.yaml` and list the evaluation in section 7 of `overlay/policy.md`. Set
-`step_completed: 6`, `next_step: 7` the first time; later evaluations update the files without changing the step.
+Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema `references/schemas/vendor.md`),
+the entry in `overlay/tool-catalog.yaml`, and the evaluation in policy section 7. Set `step_completed: 6`,
+`next_step: 7` the first time; later evaluations update the files without changing the step.
 
-- **`evaluation`** is `desk` only once public documents have been read and listed in `sources_checked`, and `full` once
-  the signed contract and the vendor's answers are checked. Before either it is `null`, and ratings resting only on
-  what the user reports stay `unknown`.
-- **Write only the template's sections.** Documents to ask for go in the chat; questions for the vendor go in the
-  scorecard's last column. The Decision section holds where the evaluation stands.
+- **`evaluation`** is `desk` only once public documents are read and listed in `sources_checked`, `full` once the
+  signed contract and vendor answers are checked, else `null`; ratings resting only on the user's report stay `unknown`.
+- **Write only the template's sections.** Document requests go in the chat, vendor questions in the scorecard.
 - **Evaluated by** is a firm role, or "draft (ai-governance)" or "draft (subagent)" until a role confirms it.
 - **Request from a solution brief:** hand the vendor file path, catalog entry id and the use's tier back to
   **ai-solution-delivery**, whatever the decision (`SKILL.md`, Handoffs).

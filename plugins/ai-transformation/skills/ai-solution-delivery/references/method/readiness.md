@@ -2,8 +2,8 @@
 
 Read this on entering step 5. A solution is ready when someone owns it, can see how it behaves, can change it
 safely, can switch it off, and the people using it know what to do when it is wrong. You record the review and
-the decision; the firm's owners make and sign the decision. Keys in brackets are listed in §6. Lines marked
-*(advisor default)* are working rules, not findings from a source.
+the decision; the firm's owners make and sign it. Keys in brackets are listed in §6. *(advisor default)* marks a
+working rule, not a finding from a source.
 
 ## Contents
 
@@ -21,10 +21,10 @@ or inspector.
 
 **Exit when all of these are true:**
 
-- Every line of the review (§3) is marked ready, gap or not applicable, with its evidence.
-- Evaluation results meet the agreed thresholds in `eval-plan.md`, and red-team results were considered.
-- A named owner, a rollback path, logging and a first review point exist.
-- An adoption plan exists, agreed with **ai-enablement** or written here in outline.
+- Every line of the review (§3) is marked ready, gap or not applicable, with its evidence; evaluation results
+  meet the agreed thresholds in `eval-plan.md`, and red-team results were considered.
+- A named owner, a rollback path, logging and a first review point exist; an adoption plan exists, agreed with
+  **ai-enablement** or written here in outline.
 - The inventory entry and risk tier are confirmed with **ai-governance**; independent validation has happened
   where required.
 - The benefit metric, baseline, forecast range and counterfactual are ready for the **ai-portfolio** register.
@@ -32,16 +32,15 @@ or inspector.
 
 ## 2. How to run it
 
-1. **Read the inputs:** `brief.md` (owners, design, checkpoints, cost envelope), `eval-plan.md` (thresholds,
-   results, monitoring) and `overlay/policy.md` (risk tier, required review, records of AI use).
+1. **Read the inputs:** `brief.md`, `eval-plan.md` and `overlay/policy.md` (risk tier, required review, records
+   of AI use).
 2. **Go through the review** (§3) one block at a time. Ask for evidence, not intent: "Show me the runbook", not
-   "Is there a runbook?" *(advisor default)*.
-3. **Settle the people side** (§3.5); hand the full programme design to **ai-enablement**.
-4. **Offer an independent challenge** of the pack before the decision (the `review-solution` brief; SKILL.md,
+   "Is there a runbook?" *(advisor default)*. Hand the full adoption programme to **ai-enablement**.
+3. **Offer an independent challenge** of the pack before the decision (the `review-solution` brief; SKILL.md,
    Delegation). NIST's profile suggests documenting how structured feedback, including red-teaming, fed the
    go/no-go decision [NIST-2024, MS-4.2-005].
-5. **Apply the decision rules** (§4.1), write the staged launch plan (§4.2) and record who decided.
-6. **Send the gate evidence** (decision, eval results, benefit inputs) to **ai-portfolio** and name step 6 and the
+4. **Apply the decision rules** (§4.1), write the staged launch plan (§4.2) and record who decided.
+5. **Send the gate evidence** (decision, eval results, benefit inputs) to **ai-portfolio** and name step 6 and the
    event that starts it.
 
 If the portfolio runs a pilot with real users first, use the same review at a lighter depth before the pilot
@@ -50,55 +49,31 @@ If the portfolio runs a pilot with real users first, use the same review at a li
 
 ## 3. The readiness review
 
-### 3.1 Ownership and support
+The review's lines are in `../templates/readiness.md`. What to look for in each block:
 
-- Named owner and backup by role; support route; who responds out of hours; a runbook (common failures, how to
-  pause, who to call); a review rota that includes reading traces [APPLIEDLLMS-2024, 2.1.2].
-- An incident process with ownership, rehearsal and post-incident review [NIST-2024, GV-6.2-003, MG-4.2-002]. UK
-  guidance asks for named senior responsible owners [UKGDS-2025].
+| Block | Look for | Source |
+|---|---|---|
+| 3.1 Ownership and support | Named owner and backup by role; who responds out of hours; a runbook; an incident process with rehearsal and post-incident review; a review rota that reads traces; UK guidance asks for named senior responsible owners | [NIST-2024, GV-6.2-003, MG-4.2-002; UKGDS-2025; APPLIEDLLMS-2024, 2.1.2] |
+| 3.2 Change control and rollback | Every model, prompt, retrieval or tool change re-runs the regression suite before release; models and prompts pinned; a managed release that can be withdrawn; a tested pause to the manual process. Building is cheap relative to maintaining ML systems | [UKGDS-2025; NIST-2024, GV-6.2-006; GOOGLE-2015] |
+| 3.3 Monitoring and cost | Online metrics from `eval-plan.md` live with alert thresholds and responders; every input and output logged from the first user, then sampled; input coverage and freshness watched; cost per task visible to the owner; logging meets client confidentiality terms | [FRB-2011; HUSAIN-2026; GOOGLE-RULES, Rule 10] |
+| 3.4 Evidence and documentation | Thresholds met; red-team scorecard reviewed; in regulated settings, validation independent of development; an inventory entry with owner and tier (with **ai-governance**); a documentation pack (what it does, when to use it, how it was built and tested, why the firm trusts it, limits, review level, change history, owners), which the UK audit regulator's guidance sets out without adding requirements, with adjusted expectations for third-party tools; security sign-off. In law, the lawyer stays fully responsible | [FRB-2011; BOE-2023; FRC-2025; ABA-2024] |
 
-### 3.2 Change control and rollback
-
-- Any model, prompt, retrieval or tool change re-runs the regression suite before release [UKGDS-2025]; models
-  and prompts pinned and versioned [APPLIEDLLMS-2024, 2.2.3].
-- A managed release that can be withdrawn, and a tested rollback or pause to the manual process [UKGDS-2025;
-  NIST-2024, GV-6.2-006]. Building is cheap relative to maintaining ML systems [GOOGLE-2015].
-
-### 3.3 Monitoring and cost
-
-- The online metrics from `eval-plan.md` are live with alert thresholds and responders [FRB-2011; NIST-2024];
-  every input and output logged from the first user, then sampled [HUSAIN-2026].
-- Input coverage, data freshness and retrieval health watched, not only outputs [GOOGLE-RULES, Rule 10;
-  GOOGLE-2021].
-- Cost per task and usage visible to the owner [UKGDS-2024; OPENAI-2025]. For the firm's wider AI spend, see
-  `professional-services-firm-finance-11` (grade B; practitioners' own accounts of reading consumption bills).
-- Logging, retention and access meet client confidentiality terms [UKGDS-2024; ABA-2024].
-
-### 3.4 Evidence and documentation
-
-- Eval results by version meet thresholds; red-team scorecard reviewed.
-- **Independent validation** where required: in regulated settings, independent of development [FRB-2011;
-  BOE-2023; NIST-2024, MS-1.3-003].
-- **Inventory and risk tier:** recorded in the firm's AI or model inventory with owner and tier [FRB-2011;
-  BOE-2023] (with **ai-governance**).
-- **Documentation pack** for regulated or professional work: what the tool does, when it is appropriate, how it
-  was developed and tested, how the firm knows it works, known limits, review level, change history and owners
-  [FRC-2025; FRB-2011]. In law, the lawyer stays fully responsible [ABA-2024].
-- Security and privacy sign-off; access-control review [UKGDS-2025; OWASP-2025].
+For the firm's wider AI spend, see `professional-services-firm-finance-11` (grade B; practitioners' own accounts
+of reading consumption bills).
 
 ### 3.5 People and adoption
 
-- **Training before access** *(advisor default)*: what it does well, its limits, the review expected, what to do
-  when it is wrong. The ABA expects supervising lawyers to make sure staff are trained on capabilities and
+- **Training before access** *(advisor default)*: strengths, limits, the review expected, what to do when it is
+  wrong. The ABA expects supervising lawyers to make sure staff are trained on capabilities and
   limitations [ABA-2024]. A law firm studied by CIPD made training a condition of use and kept a "verify, verify,
   verify" rule (anonymized practitioner case) [CIPD-2026]. In BCG's survey of more than 10,600 leaders, managers
   and frontline employees in 11 countries and regions, regular use was sharply higher with at least five hours of
   training and access to in-person coaching, and only one-third said they had been properly trained
   (self-reported) [BCG-ATWORK-2025].
-- **What changes on the first day**, and who people ask; a **feedback loop** from corrections to the eval set.
+- **First-day changes** and who people ask; a **feedback loop** from corrections to the eval set; **role
+  evolution** communicated in the firm's own terms (rule 2).
 - **Visible senior use:** senior people use it and share what worked [CIPD-2026]. Licences alone do not create
   use: Law360 reports firms with unused licences (no figure) [LAW360-2025].
-- **Role evolution communicated** in the firm's own terms (rule 2).
 
 ## 4. Decision rules and launch plan
 
@@ -115,10 +90,9 @@ If the portfolio runs a pilot with real users first, use the same review at a li
 
 ### 4.2 Staged launch plan
 
-- **Stages by group**, smallest first; write the evidence needed to widen each time.
-- **Human review starts at its fullest** and is reduced only on measured evidence, the logic of testing on a
-  small reviewed set first [ABA-2024]; OpenAI advises planning human intervention, especially early in
-  deployment [OPENAI-2025].
+- **Stages by group**, smallest first, with the evidence needed to widen each time. **Human review starts at its
+  fullest** and is reduced only on measured evidence; OpenAI advises planning human intervention, especially
+  early in deployment [OPENAI-2025].
 - **First review point** is an event, for example "after the first full trace-review cycle on live work" (rule 9).
 - **Benefits:** agree the counterfactual (parallel run, staggered start or comparison group) before go-live and
   give the metric, baseline and forecast range to **ai-portfolio** for `portfolio/benefits.yaml`.
@@ -150,12 +124,9 @@ and the quality partner reviewed the pack independently of the pilot team.
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*, 2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
 - `FRC-2025` — UK Financial Reporting Council, *AI in audit: illustrative example and documentation guidance*, regulator guidance, 2025-06-26. https://www.frc.org.uk/documents/8384/AI_in_Audit.pdf
 - `GOOGLE-2015` — Sculley et al., *Hidden Technical Debt in Machine Learning Systems*, 2015. https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf
-- `GOOGLE-2021` — Google Cloud, *Practitioners guide to MLOps*, white paper, 2021-05. https://services.google.com/fh/files/misc/practitioners_guide_to_mlops_whitepaper.pdf
 - `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HUSAIN-2026` — Hamel Husain, *LLM Evals: Everything You Need to Know (FAQ)*, 2026-09-18. https://hamel.dev/blog/posts/evals-faq/
 - `LAW360-2025` — Law360 Pulse, *How Law Firms Turn AI Skeptics Into 'Champions'*, 2025-09-26. https://www.law360.com/pulse/articles/2392818
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `OPENAI-2025` — OpenAI, *A practical guide to building agents*, 2025-04. https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
-- `OWASP-2025` — OWASP GenAI Security Project, *OWASP Top 10 for LLM Applications 2025*, 2025. https://genai.owasp.org/llm-top-10/
-- `UKGDS-2024` — UK Government Digital Service, *Generative AI Framework for HMG*, 2024-01-18 (withdrawn 2025-02-10). https://www.gov.uk/government/publications/generative-ai-framework-for-hmg/generative-ai-framework-for-hmg-html
 - `UKGDS-2025` — UK Government, *Artificial Intelligence Playbook for the UK Government*, 2025-02-10. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html

@@ -1,11 +1,9 @@
 # Schema: portfolio/portfolio.yaml (portfolio/v1)
 
-One file per portfolio, in `portfolio/` in the user's workspace. It holds the portfolio's settings, stage
-definitions, roles and rhythm, and one entry per initiative with its stage, scores, owner and every gate
-decision. Set up in step 1, then updated by every later step. A blank starting file is
-`../templates/portfolio.yaml`. Controlled ids come from the shared vocabulary
-(`../../../transformation-advisor/references/schemas/vocabulary.yaml`) or, for portfolio-only values, from
-`../library/index.md`.
+One file per portfolio, in `portfolio/` in the user's workspace: settings, stages, roles and rhythm, and one entry
+per initiative with its stage, scores, owner and every gate decision. Blank file: `../templates/portfolio.yaml`.
+Controlled ids come from `../../../transformation-advisor/references/schemas/vocabulary.yaml` or, for
+portfolio-only values, `../library/index.md` §2.
 
 ## Contents
 
@@ -26,32 +24,15 @@ portfolio:
 settings:
   value_levers: [ { id: id, name: string, metric: string, weight: number } ]
   scoring_weights: { value: n, feasibility: n, data_readiness: n, risk: n, time_to_value: n, strategic_fit: n }
-  axes:                            # how the six scores split into the two screening axes
-    value: [value, strategic_fit, time_to_value]
-    readiness: [feasibility, data_readiness, risk]
   capacity_stance: redeploy | reduce | mixed | undecided
   inherited_from: path | null      # set when settings were copied from an advisor plan
   live_limit: integer | null       # most items in prototype, pilot or scale at once (owner and review capacity)
 stages:                            # one entry per stage; defaults in ../method/stage-gates.md §3
   - { id: stage-id, purpose: string, entry: [ string ], exit: [ string ], gatekeepers: [ role ] }
-gate_paths:
-  light: string                    # which items qualify and which gates combine
-  full: string
-  g0_deciders: { light: [ role ], full: [ role ] }   # who decides the screen on each path
-roles:
-  review_forum: [ role ]           # who sits in the portfolio review
-  intake_contact: role
-  other: [ { role: string, duty: string } ]
-rhythm:
-  review: string                   # e.g. "monthly portfolio review"
-  rebalance: string                # e.g. "every third review: balance, weights, live limit"
-  benefits_review: string          # e.g. "at every review for items in production or scale"
-state:
-  status: setting-up | running
-  step_completed: 0-6
-  next_step: 1-6 | null
-  last_review: integer             # number of the last review pack, 0 before the first
-  updated: YYYY-MM-DD
+gate_paths: { light: string, full: string, g0_deciders: { light: [ role ], full: [ role ] } }   # who qualifies; who decides g0
+roles: { review_forum: [ role ], intake_contact: role, other: [ { role: string, duty: string } ] }
+rhythm: { review: string, rebalance: string }    # default "monthly", "every third review"
+state: { status: setting-up | running, step_completed: 0-6, next_step: 1-6 | null, last_review: integer, updated: YYYY-MM-DD }
 items:
   - id: string                     # short, stable, unique, e.g. tax-k1-extraction
     title: string
@@ -80,8 +61,8 @@ items:
     value: [ { lever: id, low: number, high: number, unit: string, assumptions: string } ]
     scores: { value: 1-5, feasibility: 1-5, data_readiness: 1-5, risk: 1-5, time_to_value: 1-5, strategic_fit: 1-5 }
     weighted_score: number
-    value_index: number            # weighted mean of the value-axis scores
-    readiness_index: number        # weighted mean of the readiness-axis scores
+    value_index: number            # weighted mean of the value-axis scores (readiness_index likewise)
+    readiness_index: number
     depends_on: [ id ]
     kill_criteria: [ string ]      # agreed at the gate that let the item in
     early_warnings: [ { type: slippage | cost-overrun | performance-shortfall, note: string, review: integer } ]
@@ -116,69 +97,48 @@ items:
 | 5 Portfolio review | `early_warnings`; decisions made in the review carry its number in `review`; `state.last_review` |
 | 6 Value tracking | `benefits` ids match `benefits.yaml`; `role_evolution` for team-level and higher items in production or scale |
 
-- **Quote free text.** Put every free-text value in double quotes (`title`, `problem`, `reason`, `assumptions`,
-  list items). An unquoted colon or `#` breaks the file.
-- **Ranges only.** `value` lines carry `low`, `high`, `unit` with a period and `assumptions`; never one number.
-- **Scores** use the anchors in `../../../transformation-advisor/references/method/prioritize.md` §3.3 and the
-  portfolio's `scoring_weights` (they must sum to 1). `weighted_score` = sum of weight × score. Each index is the
-  weighted mean of its axis's scores, using the same weights renormalized within the axis. Round to two decimals.
-- **Owners are roles.** `owner`, `sponsor`, `benefit_owner`, `decided_by` and `gatekeepers` are roles, never
-  names, and no field records a judgment about a person.
-- **Every Go names `resources`** and sets `next_gate`. A Go without resources is incomplete.
-- **Every Kill, Hold or Recycle has a `reason` and `evidence`.** A Hold also sets `revisit_when`.
-- **Decisions are appended, never edited.** A later decision on the same gate is a new entry.
+- **Quote free text** (an unquoted colon or `#` breaks the file). **Ranges only:** `value` lines carry `low`,
+  `high`, `unit` with a period and `assumptions`; never one number.
+- **Scores** use the anchors in `../../../transformation-advisor/references/method/prioritize.md` §3.3 and
+  `scoring_weights` (sum 1). `weighted_score` = sum of weight × score; each index is the weighted mean of its axis
+  (`../method/screen-and-score.md` §3.2), weights renormalized within the axis. Round to two decimals.
+- **Owners are roles,** never names; no field records a judgment about a person. **Sequencing** uses `depends_on`
+  and `next_gate`, never dates or deadlines; `updated` is not a target.
+- **Decisions.** Every Go names `resources` and sets `next_gate`. Every Kill, Hold or Recycle has a `reason` and
+  `evidence`; a Hold also sets `revisit_when`. Decisions are appended, never edited.
 - **Back-links.** An item imported from an advisor `opportunities.yaml` keeps `source` and copies `pattern`,
   `ladder`, `change_scope`, `runtime_class`, `value`, `scores`, `category`, `depends_on`, `human_checkpoints`,
   `role_evolution`, `evidence` and `label` as they stand; re-score in step 3 against the portfolio's weights.
-  `value` lines are copied verbatim; rewrites go in the intake record. The item's `process`, `prerequisites` and
-  `next_step` go in the intake record. Never edit the advisor's file.
+  `value` lines are copied verbatim; rewrites go in the intake record, as do the item's `process`, `prerequisites`
+  and `next_step`. Never edit the advisor's file.
 - **Duplicates and drafts.** `rolled_up_from` has the meaning of the advisor's Roll-up field: when two advisor items
   are one idea, import one and list the other here; its value is counted once. An item with
   `label: draft-to-validate` keeps `status: outline` and cannot pass `g0` until people who do the work confirm it;
   then set `label: null`. Use no other fields for either case.
-- **Capacity choice.** `capacity_use` is `redeploy`, `reduce` or `mixed`, never `undecided`. On import keep the
-  advisor's value, even while `settings.capacity_stance` is `undecided`, and note the open stance in the intake
-  record. A new item with no choice yet keeps `role_evolution: null`; the choice is due by `g3`.
-- **No AI needed.** With `ai_use: none`, set `ladder`, `runtime_class` and `risk_tier` to null. Count the item
-  apart from AI items in the review pack.
-- **Solution link.** A brief may open while the item is in `discover` (as `g1` evidence) or later. A `g0` Go does
-  not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back. No gate is
-  needed for that.
-- **Provisional tier.** While `overlay/policy.md` is not `approved` (for example `status: draft`), copy its
-  proposed tier into `risk_tier` and mark it "provisional" in the intake record's Early read until the policy is
-  approved (`../library/index.md` §2).
-- **Tools already in use.** A live system found in the inventory (step 1) is logged in step 2 with `source: null`
-  and enters at the stage its current use supports, not `intake`: usually `production` for a supported tool in
-  general use, `pilot` for a trial group (the same rule as for acquired firms, `../method/stage-gates.md` §9).
-  `owner` is the business owner; the technical owner goes in `roles.other`. `status: active` once `owner` is
-  named. `decisions` stay empty for gates it never passed; the next decision (`g4` to extend it, or `retire`) goes
-  in `next_gate` when someone asks for one. It is not scored (`value` and `scores` stay empty), and its licence
-  count is not a benefit. Licence
-  count, use list and switch-off route go in the intake record's "In use today" section.
-- **Sequencing** uses `depends_on` and `next_gate`, never dates or deadlines. `updated` records when the entry
-  last changed; it is not a target.
-- Portfolio-only values (`item_class`, `horizon`, `stage`, `status`, gate ids, `outcome`, early-warning types,
-  `gate_path`, `ai_use`) are defined in `../library/index.md` §2.
+- **Capacity choice.** `capacity_use` is never `undecided`. On import keep the advisor's value, even while
+  `capacity_stance` is `undecided`, and note the open stance in the intake record. A new item with no choice yet
+  keeps `role_evolution: null`; the choice is due by `g3`.
+- **No AI needed.** With `ai_use: none`, `ladder`, `runtime_class` and `risk_tier` are null; the review counts it apart.
+- **Solution link.** A brief may open from `discover` on (as `g1` evidence). A `g0` Go does not set `solution`; set
+  it only when `solutions/<id>/brief.md` exists and delivery has handed back, with no gate needed.
+- **Provisional tier.** While `overlay/policy.md` is not `approved`, copy its proposed tier into `risk_tier` and mark
+  it "provisional" in the intake record's Early read (`../library/index.md` §2).
+- **Tools already in use** (`../method/intake.md` §2) have `source: null` and enter at the stage their current use
+  supports, not `intake`. `owner` is the business owner; the technical owner goes in `roles.other`.
+  `status: active` once `owner` is named. `decisions` stay empty for gates never passed; `value` and `scores` stay
+  empty, and a licence count is not a benefit.
 
 ## 3. Example
 
 ```yaml
 schema: portfolio/v1
-portfolio:
-  name: "Firm AI portfolio"
-  scope: "All practices and firm services"
-  level: organization
-  owner: "Head of AI"
-  plan: "../transformation-plan.md"
+portfolio: { name: "Firm AI portfolio", scope: "All practices and firm services", level: organization, owner: "Head of AI", plan: "../transformation-plan.md" }
 settings:
   value_levers:
     - { id: capacity, name: "Hours released", metric: "Preparer hours per return", weight: 0.4 }
     - { id: quality, name: "Fewer review notes", metric: "Review notes per return", weight: 0.3 }
     - { id: growth, name: "Advisory revenue", metric: "Advisory fees from existing clients", weight: 0.3 }
   scoring_weights: { value: 0.30, feasibility: 0.20, data_readiness: 0.15, risk: 0.15, time_to_value: 0.10, strategic_fit: 0.10 }
-  axes:
-    value: [value, strategic_fit, time_to_value]
-    readiness: [feasibility, data_readiness, risk]
   capacity_stance: redeploy
   inherited_from: "../transformation-plan.md"
   live_limit: 6
@@ -188,20 +148,9 @@ gate_paths:
   light: "tier-1 and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
   full: "Every other item: all gates, gatekeepers per stage"
   g0_deciders: { light: ["Head of AI"], full: ["Item sponsor", "Practice leaders", "Head of AI"] }
-roles:
-  review_forum: ["Managing partner", "Practice leaders", "Risk and quality partner", "Head of IT", "Finance director", "Head of AI"]
-  intake_contact: "Head of AI"
-  other: []
-rhythm:
-  review: "Monthly portfolio review"
-  rebalance: "Every third review"
-  benefits_review: "Every review, for items in production or scale"
-state:
-  status: running
-  step_completed: 4
-  next_step: 5
-  last_review: 2
-  updated: 2026-10-20
+roles: { review_forum: ["Managing partner", "Practice leaders", "Risk and quality partner", "Head of IT", "Finance director", "Head of AI"], intake_contact: "Head of AI", other: [] }
+rhythm: { review: "Monthly portfolio review", rebalance: "Every third review" }
+state: { status: running, step_completed: 4, next_step: 5, last_review: 2, updated: 2026-10-20 }
 items:
   - id: tax-k1-extraction
     title: "AI extraction of K-1 and source documents with confidence flags"

@@ -134,10 +134,8 @@ Follow `value-tracking.md` and `../schemas/benefits.md`; these rules add to them
 
 ## 7. Questions and traps
 
-- Is this firm merged or under the umbrella, and who decides whether it takes shared tools?
-- Which clearances does each capability need, and are they recorded?
-- What is this firm's baseline for the workflow, from its own records, and which firm will serve as the comparison?
-- Who will review AI output here, and do they have the time?
+Ask who decides whether the firm takes shared tools, which clearances each capability needs, what the firm's own
+baseline is and which firm will serve as the comparison, and who will review AI output there, with what time.
 
 | Trap | How to avoid it |
 |---|---|
@@ -148,13 +146,11 @@ Follow `value-tracking.md` and `../schemas/benefits.md`; these rules add to them
 
 ## 8. Worked example
 
-*Illustrative.* The firm acquires a 70-person tax and bookkeeping firm (advisor unit `units/target-cedar/`,
-Experimenting; merged model). K-1 extraction is in production at home. Counsel updates tax engagement letters for
-affiliate processing and the independence function clears two attest relationships (layer 0). The overlay is
-extended and the approved assistant replaces two personal tools (layers 1–2). Cedar's two tax systems move to one;
-`tax-k1-extraction-cedar` is logged with `depends_on` the migration and enters at `pilot`, on Cedar's own baseline,
-compared with a second acquired firm that starts a season later. Rows: an interim row (share of K-1-heavy returns
-through the workflow) and a direct row (preparer hours per return), with the migration named in `attribution`.
+*Illustrative.* The firm acquires a 70-person tax firm (unit `units/target-cedar/`; merged model). After
+clearances, overlay and tools (layers 0–2) and a move to one tax system, `tax-k1-extraction-cedar` enters at
+`pilot` with `depends_on` the migration, on Cedar's own baseline, compared with a firm that starts a season later.
+Rows: interim (share of K-1-heavy returns through the workflow) and direct (preparer hours per return), with the
+migration named in `attribution`.
 
 ## 9. Output
 

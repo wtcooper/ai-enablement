@@ -135,10 +135,7 @@ source:
   portfolio_item: ct-evidence-matching
   opportunity: { file: opportunities.yaml, id: ct-evidence-matching }
 scope: { name: "Regional audit practice", level: team }
-owners:
-  business: "Audit partner leading the practice"
-  delivery: "Pilot lead (senior manager)"
-  support: "Audit methodology team"
+owners: { business: "Audit partner leading the practice", delivery: "Pilot lead (senior manager)", support: "Audit methodology team" }
 classification:
   archetype: assurance
   modules: [ controls-testing ]

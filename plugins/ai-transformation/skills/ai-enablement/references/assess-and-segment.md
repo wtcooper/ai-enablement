@@ -1,145 +1,92 @@
 # Assess and segment (step 1)
 
 Read this on entering step 1. It finds out who uses what, how deeply and why not, by practice and level, so the
-program aims at the real gaps rather than the sponsor's impression. Source keys in brackets are listed in §9.
-
-## Contents
-
-1. [Goal and exit criteria](#1-goal-and-exit-criteria)
-2. [How to run it](#2-how-to-run-it)
-3. [Question bank](#3-question-bank)
-4. [The depth ladder and default segments](#4-the-depth-ladder-and-default-segments)
-5. [The fluency check](#5-the-fluency-check)
-6. [Evidence and rules of thumb](#6-evidence-and-rules-of-thumb)
-7. [Worked example](#7-worked-example)
-8. [Output](#8-output)
-9. [Sources](#9-sources)
+program aims at the real gaps rather than the sponsor's impression. Source keys in brackets are listed in §6.
 
 ## 1. Goal and exit criteria
 
-**Goal.** A baseline of adoption by depth, not by login, and a small set of segments, each with its main barrier
-and a first move.
+**Goal.** A baseline of adoption by depth, not by login, and five to seven segments, each with its main barrier and a
+first move.
 
-**Exit when all of these are true:**
-- **Population and denominator:** everyone in scope, users or not, with the source of the count.
-- **Usage relabelled by rung:** licensed, activated, active (with the window), weekly, embedded in a named workflow.
-- **Hidden use:** an estimate of personal or unofficial tool use, and why people hide it.
-- **Manager behaviour** by group: do managers expect use, show their own, and follow up?
-- **Depth by group** on the ladder (§4), from sampled work or examples, not self-rating.
-- **Fluency check** designed (and run, if the user can), with results by group only (§5).
-- **Leader versus frontline gap** noted.
-- **Five to seven segments**, each with groups, a size range, depth, main barrier, manager behaviour and a first move.
-- **Baseline measures** written to `enablement/measures.yaml`.
+**Exit when all of these are true:** population and denominator (everyone in scope, users or not, with the source of
+the count); usage relabelled by rung (licensed, activated, active with the window, weekly, embedded); an estimate of
+hidden use and why people hide it; manager behaviour by group; depth by group on the ladder (§3), from sampled work,
+not self-rating; a fluency check designed (and run, if the user can) with results by group only (§4); the leader
+versus frontline gap; segments, each with groups, a size range, depth, main barrier, manager behaviour and a first
+move; baseline measures in `enablement/measures.yaml`.
 
 ## 2. How to run it
 
-1. **Ask what numbers exist** (A1), as aggregates by team, practice and level, never per-person exports. If the only
-   figure is a licence count, say so and plan how to get a better one.
-2. **Relabel each number** by the rung it measures (A2). One vendor dashboard counts a user as "active" after one
-   action in 28 days [MSLEARN-VIVA-2026].
-3. **Ask about hidden use** (A3); suggest an anonymous survey that rewards disclosure.
-4. **Ask about managers** by role group (A5): the last time a manager used AI in front of the team, and what they expect.
-5. **Sample depth** (A6): two or three real examples per group.
-6. **Design the fluency check** (§5) and agree how results stay anonymous.
-7. **Place senior experts separately** (A7): their use and their stance vary independently.
-8. **Build the segments** (§4), play them back, correct them, and write them.
+One question at a time, in this order; ask for aggregates by team, practice and level, never per-person exports.
 
-## 3. Question bank
+1. **What numbers exist?** "Last month, how many people used the tools weekly, how many monthly, how many only once,
+   by team and level?" If the only figure is a licence count, say so and plan how to get a better one.
+2. **Relabel each number** by rung: "When your numbers say 'active', what does that mean, and over what window?" One
+   vendor dashboard counts a user as active after one action in 28 days [MSLEARN-VIVA-2026].
+3. **Hidden use:** "Who is using AI that you cannot see, and why might they keep quiet?" Suggest an anonymous survey
+   that rewards disclosure.
+4. **Barriers:** "For the groups not using it: no access, no use case, no time, no permission, a security worry, or no
+   belief?" Keep non-users in the denominator; treat an unknown group as unmapped, not zero.
+5. **Managers:** "When did each manager last use AI in front of their team, and what do they expect of people?"
+6. **Depth:** "Among regular users, who has a repeatable workflow someone else could reuse?" Ask for two or three real
+   examples per group.
+7. **Senior experts** separately: their use and their stance vary independently (input to step 6). Ask how leaders'
+   and frontline staff's experience differ, and what people have heard about AI and their jobs.
+8. **Design the fluency check** (§4), then **build the segments** (§3), play them back, correct them and write them.
 
-Core questions first, one at a time.
-
-| # | Question | Notes |
-|---|---|---|
-| A1 | Last month, how many people used the tools weekly, how many monthly, how many only once? Can we see it by team and level? | Aggregates only. Licence counts are reach, not use |
-| A2 | When your numbers say "active", what does that mean, and over what window? | Relabel before reporting |
-| A3 | Who is using AI that you cannot see, on personal accounts or unofficial tools? Why might they keep quiet? | Hidden use and its incentives |
-| A4 | For the groups not using it: no access, no use case, no time, no permission, a security worry, or no belief? | The main barrier per segment |
-| A5 | When did each manager last use AI in front of their team, and what do they expect of people? | Ask for the last instance, not habits |
-| A6 | Among regular users, who has a repeatable workflow someone else could reuse? Has anyone built something for others? | Depth: rungs 3 and 4 |
-| A7 | Where do senior experts sit: using it, skeptical, or avoiding it, and why? | Input to step 6 |
-| A8 | How do leaders' and frontline staff's experience differ: access, training, tools that fit the work? | The two views of one program |
-| A9 | What have people heard from leadership about AI and their jobs? | Fear as a barrier |
-
-## 4. The depth ladder and default segments
+## 3. The depth ladder and default segments
 
 **Depth ladder** (`depth` in `measures.yaml`), built on published four-level fluency models such as Section's
-[SECTION-2026]:
+[SECTION-2026]: 1 `not-using` (no use, or access never taken up); 2 `one-off` (occasional prompts); 3 `repeatable` (a
+workflow the person runs the same way each time); 4 `builder` (builds and shares workflows for colleagues). The jump
+that matters most is from occasional prompts to a repeatable workflow. Most knowledge workers sit on rung 2: in
+Section's June 2026 survey of 5,026 US knowledge workers, 5.5% met its "proficient" bar, 73.5% were "experimenters"
+and 20.9% were novices (vendor-published; skills tested hands-on) [SECTION-2026].
 
-| Rung | Id | What you see | The jump that matters |
-|---|---|---|---|
-| 1 | `not-using` | No use, or access never taken up | Finding one task worth doing |
-| 2 | `one-off` | Occasional prompts, looking things up | From occasional prompts to a repeatable workflow |
-| 3 | `repeatable` | A workflow the person runs the same way each time | Making it reusable by others |
-| 4 | `builder` | Builds and shares workflows for colleagues | Feeding the library and teaching |
-
-Most knowledge workers sit on rung 2. In Section's June 2026 survey of 5,026 US knowledge workers, 5.5% met its
-"proficient" bar, 73.5% were "experimenters" using AI for one-off tasks and 20.9% were novices (vendor-published;
-skills tested hands-on) [SECTION-2026].
-
-**Default segments** (rename to fit the firm):
-
-| Segment | Typical barrier | Typical first move |
+| Default segment (rename to fit) | Typical barrier | Typical first move |
 |---|---|---|
 | Builders and power users | None; often unrecognised | Champion network, library review (steps 4, 5) |
 | Regular one-off users | No repeatable use case | Role workflows (step 3) |
 | Occasional or lapsed | Use case or time | A named workflow plus manager expectation |
-| Non-users blocked by access, permission or data rules | Access, security | Governance answer first, then training |
+| Blocked by access, permission or data rules | Access, security | Governance answer first, then training |
 | Skeptics by belief or fear | Belief, fear | Step 6; honest role communication |
-| Senior experts | Varies: status, time, accuracy | Step 6; private practice; peer demonstration |
+| Senior experts | Status, time, accuracy | Step 6; private practice; peer demonstration |
 
-## 5. The fluency check
+## 4. The fluency check
 
 Self-ratings overstate skill: 32% of about 800 senior decision-makers at large US companies called themselves
 "Expert" [WHARTON-GBK-2025], while Section's hands-on tests found 21% of US knowledge workers wrote an effective
-prompt (vendor-published) [SECTION-2026].
+prompt (vendor-published) [SECTION-2026]. **Design (illustrative):** one short, sanitized task from the role's real
+work: frame the instruction; split a harder version into steps; find the error planted in a sample AI output and say
+how to verify it. Score each part missing, partial or sound. Results by group only; suppress groups below the minimum
+size the firm's HR or privacy lead sets; voluntary or anonymous, and say so.
 
-**Design (illustrative, adapt per role):** one short, sanitized task from the role's real work. (1) Frame: write the
-instruction, with context and the output wanted. (2) Decompose: split a harder version into steps with decision
-criteria. (3) Check: find the error planted in a sample AI output, and say how it would be verified. Score each part
-missing, partial or sound.
-
-**Results are reported by group only.** No person's score is stored, shown to managers or used in any rating. Suppress
-groups below the minimum size the firm's HR or privacy lead sets. Make it voluntary or anonymous, and say so.
-
-## 6. Evidence and rules of thumb
+## 5. Evidence, rules of thumb and output
 
 Tell the user these are working rules drawn from the sources.
-
-- **Hidden use is common.** MIT NANDA (interviews at 52 organizations, survey of 153 senior leaders; preliminary)
-  found workers at over 90% of companies using personal AI tools, while only 40% of companies had bought an official
+- **Hidden use is common.** MIT NANDA (52 organizations interviewed, 153 senior leaders surveyed; preliminary) found
+  workers at over 90% of companies using personal AI tools, while only 40% of companies had bought an official
   subscription [MIT-NANDA-2025]; Mollick traces this to unclear incentives [MOLLICK-LAB-2025]. If official use is
-  under half but surveyed personal use is higher, treat it as an access and trust problem first, not a skills problem.
+  under half but personal use is higher, treat it as an access and trust problem first, not a skills problem.
 - **Managers rarely model use.** In Section's survey, 21.3% of managers had shown their own AI use to their team in
   the past 30 days, and 65% set no expectations or encouraged use without holding people accountable
   (vendor-published) [SECTION-2026].
 - **Leaders see a different program.** Executives were far more likely than individual contributors to call AI widely
   integrated (57% versus 18%) [SECTION-2026]; in BCG's survey of more than 10,600 employees, frontline regular use
   stalled at 51% while over three quarters of leaders and managers used it several times a week [BCG-ATWORK-2025]. If
-  the sponsor's and frontline views differ widely (one working threshold: 25 points), re-baseline.
-- **Confidence matters.** The UK cross-government trial found confidence and familiarity correlated with time saved
-  [UKGDS-2025]: ask confidence by group and target low-confidence groups.
-- **Non-users have reasons.** In HMRC's trial, 46% of non-users named security and data privacy as the main reason
-  [HMRC-2026]. Keep non-users in the denominator; treat an unknown group as unmapped, not zero.
-- **Traps:** licences or logins reported as adoption (pair every one with a depth indicator); designing from the
-  leaders' view; self-rated skill; a baseline that becomes a league table; asking for per-person exports.
+  the views differ widely (one working threshold: 25 points), re-baseline from the frontline.
+- **Confidence and reasons.** The UK cross-government trial found confidence correlated with time saved [UKGDS-2025];
+  in HMRC's trial, 46% of non-users named security and data privacy as the main reason [HMRC-2026].
+- **Traps:** logins reported as adoption; designing from the leaders' view; self-rated skill; a league table.
 
-## 7. Worked example
+*Illustrative example (invented).* A 400-person accounting firm's "78% adoption" is the share activated in 28 days;
+weekly use is about a third. Tax seniors use personal assistants because the firm's tool is not approved for client
+data (barrier: permission), so a data rule from ai-governance comes before any tax training.
 
-*Illustrative; the firm and figures are invented.* A 400-person accounting firm. The COO's "78% adoption" is the
-share activated in a 28-day window; weekly use is about a third, concentrated in advisory. An anonymous survey finds
-tax seniors using personal assistants because the firm's tool is not approved for client data. Two of six audit
-managers have shown the tool to their teams; none has said what they expect. Segments include tax seniors with hidden
-use (barrier: permission) and skeptical audit partners (accuracy, status). First moves: a data rule from ai-governance
-before any tax training; audit managers briefed first; advisory builders invited to the champion network.
+**Output:** `program.md` section 1; `enablement/measures.yaml` with `population`, `segments` and baseline `reach`,
+`activity` and `depth` measures; frontmatter `step_completed: 1`, `next_step: 2`, `updated`.
 
-## 8. Output
-
-- **`enablement/program.md`**, section 1: population, relabelled usage, hidden use, manager behaviour, fluency check
-  results by group, the leader and frontline gap, and the segment table.
-- **`enablement/measures.yaml`**: `population`, `segments`, and baseline `reach`, `activity` and `depth` measures.
-- Frontmatter: `step_completed: 1`, `next_step: 2`, `updated`.
-
-## 9. Sources
+## 6. Sources
 
 - `BCG-ATWORK-2025`: *AI at Work: Momentum Builds, but Gaps Remain*, BCG, June 2025. https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain
 - `HMRC-2026`: *Evaluating the impact of Microsoft Copilot in HMRC*, HM Revenue and Customs, 2026-07-09. https://www.gov.uk/government/publications/evaluation-report-phase-3-trial-of-microsoft-copilot/evaluating-the-impact-of-microsoft-copilot-in-hmrc
