@@ -82,8 +82,9 @@ mapping; a parser may keep the last one silently.
 ## The steps
 
 At every step: read the step file on entry, ask its core questions one at a time, check the exit criteria, write the
-output, update the state. Steps usually run in order; the user may jump to any step (for example straight to 6 before
-a partner meeting), and you note what is missing from earlier steps.
+output, update the state. Read only what the step needs, and each index before the files it lists. Steps usually run
+in order; the user may jump to any step (for example straight to 6 before a partner meeting), and you note what is
+missing from earlier steps.
 
 ### 1 · Assess and segment
 
@@ -141,7 +142,8 @@ git folder, or copy to their shared location).
 Record each in `program.md` (Handoffs, decisions and open questions). If you can't invoke a skill by name, read
 `../<skill>/SKILL.md` and follow it.
 
-- **Workflows worth redesigning** (high volume, painful, or embedded with flat outcomes): **transformation-advisor**.
+- **Workflows worth redesigning** (high volume, painful, or embedded with flat outcomes), or "where else could AI
+  change our work?": **transformation-advisor**.
 - **An investment decision for the program or a workflow, or an outcome to track as a benefit:** **ai-portfolio**.
 - **Approved tools, data rules, risk tiers, training before access, or shadow use found:** **ai-governance**.
 - **A workflow to run without a person on the normal path, or to build or buy:** **ai-solution-delivery**.
@@ -154,10 +156,3 @@ Delegate one subagent per item, in parallel (or do each yourself if you cannot s
 full text, the inputs and the expected output. Subagents never talk to the user; confirm their drafts with the user.
 In step 5, use `references/briefs/draft-workflow-entry.md`, one per prompt collection, procedure or capstone
 write-up. In steps 3 and 5, use `../transformation-advisor/references/briefs/analyze-document.md`, one per SOP.
-
-## Reference map
-
-Shared method: `../transformation-advisor/references/method/index.md`; archetypes (each with `objections.md`):
-`../transformation-advisor/references/archetypes/index.md`; library:
-`../transformation-advisor/references/library/index.md`. Read only what the step needs, and each index before the
-files it lists.

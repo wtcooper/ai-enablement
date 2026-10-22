@@ -2,8 +2,8 @@
 
 Read this on entering step 4. The evaluation plan is the centre of delivery: it says what "good" means in the
 team's own terms, decides whether the solution is fit to launch, and keeps telling the team after launch. You
-design the plan; the firm's people run it in their approved systems. Keys in brackets are listed in §7. Lines
-marked *(advisor default)* are working rules, not findings from a source.
+design the plan; the firm's people run it in their approved systems. Keys in brackets are listed in §7.
+*(advisor default)* marks a working rule, not a finding from a source.
 
 ## Contents
 
@@ -23,46 +23,38 @@ decision rule for launch.
 **Exit when all of these are true:**
 
 - One **quality owner** named by role: the domain expert who decides what "good" means.
-- A **case inventory** of real or realistic cases, from real failures and what the team checks by hand, balanced
-  with should-not cases; listed by id, type and source, never content (rule 5).
-- **Gold answers** for each case, with two-expert agreement checked where judgment is involved.
+- A **case inventory** (§3.1), listed by id, type and source, never content (rule 5), with **gold answers**
+  checked by two experts where judgment is involved.
 - A **failure taxonomy** with one **binary check** per failure mode and its grader (code, model judge, human);
   **judge calibration** planned for every model-graded check.
 - **Consistency** (trials per case, whether every trial must pass) and **thresholds** per failure class,
   including zero-tolerance classes with a mitigating control, agreed by the business owner.
-- A **baseline**: the current process on the same cases.
-- **Red-teaming** by people outside the build, a **regression** policy, and **online monitoring** metrics with
-  owners, normal ranges and responses.
-- **Evidence retained** for review, inspection or audit.
+- A **baseline** (the current process on the same cases), **red-teaming** by people outside the build, a
+  **regression** policy, **online monitoring** with owners, normal ranges and responses, and **evidence
+  retained** for review, inspection or audit.
 
 ## 2. How to run it
 
-1. **Name the quality owner:** one accountable domain expert, not a committee [HUSAIN-2026].
-2. **Collect cases** (§3.1): real failures of recent months and what reviewers already check by hand, plus
-   should-not cases. The user holds the cases in the firm's systems.
-3. **Write gold answers with the two-expert test.** Expect seniors to disagree; the quality owner settles each
-   disagreement, and each one is a requirement to clarify.
-4. **Find the failure modes.** Before a prototype, from the pattern file's §6 and the step 1 error history; once
-   there is one, by error analysis on real traces (§3.2).
-5. **Choose a check and grader per failure mode** (§3.3) and plan judge calibration.
-6. **Set consistency, thresholds and the baseline** (§3.4, §4) with the business owner. A pass rate is a product
+1. **Name the quality owner:** one accountable domain expert, not a committee.
+2. **Collect cases and gold answers** (§3.1). The user holds the cases in the firm's systems. The quality owner
+   settles expert disagreements; each one is a requirement to clarify.
+3. **Find the failure modes:** before a prototype, from the pattern file's §6 and the step 1 error history; once
+   there is one, by error analysis on real traces (§3.2). Choose a check and grader per mode (§3.3).
+4. **Set consistency, thresholds and the baseline** (§3.4, §4) with the business owner. A pass rate is a product
    decision about failure tolerance [HUSAIN-2024].
-7. **Plan red-teaming, the regression suite and online monitoring** (§3.5, §3.6), using the pattern file's §7
-   quality metrics.
-8. **Professional work:** set the human verification level by testing on a small, manually reviewed subset
+5. **Plan red-teaming, regression and online monitoring** (§3.5, §3.6), using the pattern file's §7 metrics.
+6. **Professional work:** set the human verification level by testing on a small, manually reviewed subset
    first; ABA Opinion 512 gives the example of a contract-summary tool tested on a smaller set [ABA-2024]. Record
    the evidence the regulator, client or professional body will expect (§3.7).
-9. **Play back** the acceptance sentence; mark the plan `agreed` only when the owner accepts it. Name step 5 as
+7. **Play back** the acceptance sentence; mark the plan `agreed` only when the owner accepts it. Name step 5 as
    next, or loop back to step 3 if the design cannot meet the bar.
 
 ## 3. Building the plan
 
 ### 3.1 Cases and gold answers
 
-- **Seed from reality:** past failures, reviewer corrections, the step 1 error history. An eval is a test (input,
-  grading logic, pass or fail); writing tasks tests whether requirements are concrete enough [ANTHROPIC-2026].
-- **Balance** with cases where the behaviour should not happen, or one-sided tests reward over-triggering
-  [ANTHROPIC-2026, Step 3].
+- **Seed from reality:** past failures, reviewer corrections, the step 1 error history. **Balance** with cases
+  where the behaviour should not happen, or one-sided tests reward over-triggering [ANTHROPIC-2026, Step 3].
 - **Two-expert test:** a good task is one two domain experts would independently pass or fail the same way; have
   someone pass it themselves [ANTHROPIC-2026, Step 2]. Experts may disagree on open-ended outputs, and rater
   disagreement needs reconciling [ANTHROPIC-2026]; in professional services gold answers usually come from a
@@ -156,17 +148,12 @@ others, as in Rechat's assistant (practitioner case, self-described) [HUSAIN-202
 
 ## 5. Worked example: evidence matching in an audit practice
 
-Illustrative, continuing step 3.
-
-- **Cases:** 40 closed-engagement samples in the audit platform: 25 clean, 8 with a known mismatch, 7 with no
-  evidence on file (should not match). Two seniors disagree on 6 approval-evidence cases, which clarifies the
-  checklist.
-- **Checks:** match without a source link, amount or date mismatch missed, and a match where no evidence exists
-  are code checks with zero tolerance; sufficiency is human-reviewed on every pilot case.
-- **Consistency and thresholds:** three runs per case; zero-tolerance checks pass on all three; pass-all at or
-  above the seniors' own rate on the same cases.
-- **Red team and monitoring:** staff from another office try embedded instructions and altered dates; override
-  rate per attribute and time to approve (rubber-stamp watch) are monitored.
+Illustrative, continuing step 3. **Cases:** 40 closed-engagement samples: 25 clean, 8 with a known mismatch, 7
+with no evidence on file (should not match); two seniors disagree on 6, which clarifies the checklist.
+**Checks:** a match without a source link, a missed amount or date mismatch, and a match where no evidence exists
+are zero-tolerance code checks; sufficiency is human-reviewed on every pilot case. **Thresholds:** three runs per
+case, zero-tolerance checks pass on all three, pass-all at or above the seniors' own rate. **Red team:** staff
+from another office try embedded instructions and altered dates.
 
 ## 6. Output
 

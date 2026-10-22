@@ -78,7 +78,7 @@ change, error rates) at early reviews.
 
 ### 3.4 In a partner-led firm
 
-Lead each decision block with a named workflow and its baseline, not a tool demo, and check how claimed time
+Lead each decision block with a named workflow and its baseline, not a tool demo (an inference from the partner sources), and check how claimed time
 savings were measured; practitioners' own estimates are self-reported [PAPERJAM-2025]. Separate usage from value:
 in the Thomson Reuters Institute's 2026 survey of legal, tax and accounting, corporate and government
 professionals, 18% knew their organization tracked the ROI of AI tools (respondent-reported) [TRI-AIPS-2026]. Ask
