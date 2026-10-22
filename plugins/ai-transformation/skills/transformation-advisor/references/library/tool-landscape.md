@@ -17,13 +17,11 @@ reads it. Keys in brackets are listed in §8. Lines marked *(guidance)* are desi
 
 ## 1. How to use this file
 
-- **The firm's catalog wins.** If `overlay/tool-catalog.yaml` exists, recommend tools from it, using each entry's
-  `use_for` and approval fields, and flag anything outside it. Use this file only to name the type of tool needed.
-- **Without a catalog, recommend a runtime class** (`index.md` §4). Name products only as dated examples from §5.
-  They are never endorsements.
-- **Statuses change monthly.** Names, preview labels and dates below were read from vendor pages on the date above.
-  Check the vendor page before relying on one.
-- **Data rules come from the overlay policy** (`overlay/policy.md`), not from this file.
+- **The firm's catalog wins.** If `overlay/tool-catalog.yaml` exists, recommend tools from it (each entry's
+  `use_for` says what it is for) and flag anything outside it. Data rules come from `overlay/policy.md`.
+- **Without a catalog, recommend a runtime class** (`index.md` §4). Name products only as dated examples from §5,
+  never as endorsements.
+- **Statuses change monthly.** Check the vendor page before relying on a name, label or date below.
 
 ## 2. Jobs to tool types
 
@@ -47,17 +45,15 @@ reads it. Keys in brackets are listed in §8. Lines marked *(guidance)* are desi
 
 **Notes on the nearest class**
 
-1. Delegation agents that run asynchronously as the user (Copilot Cowork, ChatGPT Work, Claude Cowork) sit between
-   `personal-assistant` and `background-agent`. Use `personal-assistant` for one-off tasks and `background-agent`
-   once the task is scheduled or triggered [MS-COWORKGOV-2026; OPENAI-HELP-WORKCODEX-2026].
-2. SaaS-embedded agents run inside the vendor's system of record and inherit its permission model. They map to
-   `managed-agent-runtime`, built into a business system [SF-AGENTFORCE-2026; GLEAN-MCP-2026].
-3. Coding agents have no class of their own. Local sessions are `personal-assistant`; cloud agents that open pull
-   requests while the user is away are `background-agent`; skills and hooks shared across a team are
-   `shared-team-skills` [ANTH-CC-OVERVIEW-2026; GH-DOCS-COPILOT-2026].
+1. Delegation agents run asynchronously as the user (Copilot Cowork, ChatGPT Work, Claude Cowork): one-off tasks
+   are `personal-assistant`; scheduled or triggered ones are `background-agent` [MS-COWORKGOV-2026].
+2. SaaS-embedded agents run inside the vendor's system of record and inherit its permissions [GLEAN-MCP-2026].
+3. Coding agents: local sessions are `personal-assistant`, cloud agents `background-agent`, and team skills and
+   hooks `shared-team-skills` [ANTH-CC-OVERVIEW-2026; GH-DOCS-COPILOT-2026].
 4. Copilot Managed Runtime hosts apps, not agents [MS-MRTBLOG-2026]. `managed-agent-runtime` is the nearest class.
 5. Gateways, registries, agent identity and MCP govern or connect agents of every class. Record them as
-   infrastructure the runtime uses, not as a runtime class.
+   infrastructure, not a runtime class. A skill tells an agent how to do a task; MCP gives it access to a system.
+   A skill does not grant access [SKILLS-SPEC-2026; MCP-INTRO-2026].
 
 ## 3. The deciding questions
 
@@ -83,17 +79,15 @@ reads it. Keys in brackets are listed in §8. Lines marked *(guidance)* are desi
 - A business team on a low-code builder: name an owner and a backup before others depend on it *(guidance)*.
 - Developers on a platform: needs **ai-solution-delivery**'s full readiness review.
 
-**Which data classes may go in?** Defer to the overlay policy (`data_classes`: `public`, `firm-internal`,
-`client-confidential`, `regulated`) and the catalog entry's tier.
-- Consumer-tier tools never take `client-confidential` or `regulated` data, under the policy's own rule.
-- Commercial tiers state their terms; read the exclusions (§6) before approving client data.
+**Which data classes may go in?** Defer to the overlay policy's `data_classes` and the catalog entry's tier.
+- Consumer tier: never `client-confidential` or `regulated`, under the policy's own rule.
+- Commercial or firm-controlled tier: only the classes the entry lists; read the exclusions in §6 first.
 
 **Cost model: per user or consumption?**
-- Per user: seats or licences; spend is predictable and access follows assignment [MS-USLUBB-2026].
+- Per user: seats or licences; spend is predictable and access follows assignment. Microsoft pairs a per-user
+  licence with usage billing for agent features, and the licence is required first [MS-USLUBB-2026].
 - Consumption: credits, tokens or runtime hours; spend follows use, so set a budget owner and caps
   [MS-COWORKGA-2026; ANTH-PRICING-2026; AWS-AGENTCORE-RUNTIME-2026].
-- Both: many suites pair a per-user licence with usage billing for agent features; a licence is often required
-  before credits can be used [MS-USLUBB-2026].
 
 ## 4. From prototype to production
 
@@ -106,17 +100,14 @@ Work usually moves up one step at a time. Move only when a trigger appears *(gui
 | 3. Department or background agent | Low-code builders, scheduled tasks, cloud coding agents, SaaS-embedded agents | It must act with its own identity; touch private client data in a controlled tenant; run unattended; or produce records an auditor will read | Which identity the schedule uses; approval before external actions; logs mapped to the record each tool keeps |
 | 4. Production platform | Pro-code agent platform, governed app hosting, gateway and registry | Scale, many tools or agents under one policy, or measured quality over time | Full review in `../../ai-solution-delivery/references/method/readiness.md`: ownership and support, change control and rollback, monitoring and cost, evidence and documentation |
 
-The sources describe the same triggers. Microsoft separates "open build and managed run": apps from Cowork, Code
-and Copilot Studio publish to Managed Runtime, which adds Entra sign-in, policy and an admin inventory
-[MS-MRTBLOG-2026]. The platforms add asynchronous runs, per-agent identity, isolation and evaluation
-[AWS-AGENTCORE-DOCS-2026; MSFT-FOUNDRY-AGENTS-2026]. A skill can start in a personal tool and stay portable across
-clients that support the standard; it needs a gateway or platform only when it calls tools with real access
-[SKILLS-SPEC-2026]. A firm that picks a beta product should record the status and its exclusions *(guidance)*.
+Microsoft separates "open build and managed run": apps from Cowork, Code and Copilot Studio publish to Managed
+Runtime, which adds Entra sign-in, policy and an inventory [MS-MRTBLOG-2026]. Platforms add asynchronous runs,
+per-agent identity, isolation and evaluation [AWS-AGENTCORE-DOCS-2026; MSFT-FOUNDRY-AGENTS-2026]. Record any
+beta status and its exclusions when a step relies on one *(guidance)*.
 
 ## 5. Current products by type
 
-As of October 2026. Vendors' own names. Status is the vendor's word with the date read or published. Examples,
-never endorsements.
+As of October 2026. Vendors' own names; status in the vendor's words, with the date. Examples, not endorsements.
 
 ### 5.1 Office suites and their agent builders
 
@@ -127,7 +118,7 @@ never endorsements.
 | Copilot Notebooks | Microsoft | Ask questions of a chosen set of files and pages | Available; no preview label (undated docs) | MS-NBHOW-2026 |
 | Copilot Cowork | Microsoft | Delegate a multi-step task; scheduled tasks run as the user | GA (2026-06-16); App skill Frontier preview | MS-COWORKGA-2026, MS-COWORKGOV-2026 |
 | Copilot Code | Microsoft | Non-developers build small apps and scripts | Frontier preview (docs 2026-10-06) | MS-CODEDOC-2026 |
-| Copilot Autopilot (previously Scout) | Microsoft | Always-on agent with its own Entra identity | Private preview (2026-09-25) | MS-NEWCOPILOT-2026, MS-SCOUT-2026 |
+| Copilot Autopilot (previously Scout) | Microsoft | Always-on agent with its own Entra identity | Private preview (2026-09-25) | MS-NEWCOPILOT-2026 |
 | Copilot Managed Runtime | Microsoft | Governed hosting for apps built in Cowork, Code or Copilot Studio | Public preview (2026-09-25) | MS-MRTBLOG-2026 |
 | SharePoint agents; Copilot Agent Builder | Microsoft | Team Q&A on SharePoint content, by each user's permissions | `.agent` files stop after March 2027; new agents in Agent Builder from mid-November 2026 | MS-SPAGENT-2026, MS-SPUPGRADE-2026 |
 | Copilot Studio | Microsoft | Low-code departmental agents; computer use where no API exists | Current; computer-use hosted browser and Cloud PC pool in preview | MS-CSTUDIO-2026, MS-CSCUA-2026 |
