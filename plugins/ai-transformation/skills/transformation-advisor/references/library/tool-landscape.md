@@ -121,8 +121,8 @@ As of October 2026. Vendors' own names; status in the vendor's words, with the d
 | Copilot Autopilot (previously Scout) | Microsoft | Always-on agent with its own Entra identity | Private preview (2026-09-25) | MS-NEWCOPILOT-2026 |
 | Copilot Managed Runtime | Microsoft | Governed hosting for apps built in Cowork, Code or Copilot Studio | Public preview (2026-09-25) | MS-MRTBLOG-2026 |
 | SharePoint agents; Copilot Agent Builder | Microsoft | Team Q&A on SharePoint content, by each user's permissions | `.agent` files stop after March 2027; new agents in Agent Builder from mid-November 2026 | MS-SPAGENT-2026, MS-SPUPGRADE-2026 |
-| Copilot Studio | Microsoft | Low-code departmental agents; computer use where no API exists | Current; computer-use hosted browser and Cloud PC pool in preview | MS-CSTUDIO-2026, MS-CSCUA-2026 |
-| Gemini in Workspace | Google | Draft in Docs, Sheets and Slides; ask across Workspace | Current; several 2026 features announced as "coming soon" (2026-09-09) | GOOGLE-PRIVHUB-2026, GOOGLE-AGENTIC-2026 |
+| Copilot Studio | Microsoft | Low-code departmental agents; computer use where no API exists | Current; acts with maker or end-user credentials | MS-CSCUA-2026 |
+| Gemini in Workspace | Google | Draft in Docs, Sheets and Slides; ask across Workspace | Current (undated docs); check each new feature | GOOGLE-PRIVHUB-2026 |
 | Gemini Notebook; Gemini Notebook Enterprise (formerly NotebookLM) | Google | Ask a document set with cited answers | Renamed (2026-07-16) | GOOGLE-WSUPDATES-NLM-2026, GOOGLE-GEFAQ-2026 |
 | Skills in Google Workspace (replacing Gems) | Google | A team's rules and templates, reused | Needs the Gemini Beta setting (2026-09-16); Gems replaced from 2027-03-01 for business | GOOGLE-SKILLS-2026, GOOGLE-GEMTRANS-2026 |
 | Google Workspace Studio | Google | No-code agents on Workspace triggers | GA (2025-12-04) | GOOGLE-STUDIO-2025 |
@@ -136,7 +136,7 @@ As of October 2026. Vendors' own names; status in the vendor's words, with the d
 | ChatGPT Work | OpenAI | Delegate a task that ends in a document, sheet or deck | Documented 2026-09; on by default for eligible Enterprise workspaces | OPENAI-HELP-WORKCODEX-2026 |
 | Scheduled tasks; Team Tasks | OpenAI | Recurring work; Team Tasks run as the team's service account | Documented (undated) | OPENAI-LEARN-AUTOMATIONS-2026 |
 | Deep research in ChatGPT | OpenAI | A cited report from web, files and apps | Current (help article) | OPENAI-HELP-DEEPRES-2026 |
-| dots | OpenAI | Always-on agents, each with its own cloud computer | Introduced 2026-09-29; Enterprise beta, off until an admin enables it | OPENAI-DOTS-2026, OPENAI-HELP-DOTSSTART-2026 |
+| dots | OpenAI | Always-on agents, each with its own cloud computer | Introduced 2026-09-29; Enterprise beta, off until an admin enables it | OPENAI-HELP-RELNOTES-2026, OPENAI-HELP-DOTSSTART-2026 |
 | Claude Enterprise (chat, Projects) | Anthropic | Ask, draft; shared project knowledge; Compliance API | Current; sharing a project with a group is Enterprise beta | ANTH-ENT-2026 |
 | Claude Cowork | Anthropic | Delegate a task; scheduled and remote sessions | Remote sessions beta (2026-07-07); unified with chat, beta for Enterprise | ANTH-COWORK-2026, ANTH-HELP-RELNOTES-2026 |
 | Claude Duet | Anthropic | Always-on proactive agent for individuals | Research preview, US Pro and Max only (2026-10-21) | ANTH-DUET-2026 |
@@ -149,7 +149,7 @@ As of October 2026. Vendors' own names; status in the vendor's words, with the d
 | GitHub Copilot (agent mode, cloud agent) | GitHub | Code locally in the IDE or CLI; assign an issue, get a draft pull request | Current; computer use in public preview (2026-10-01) | GH-DOCS-COPILOT-2026 |
 | Third-party coding agents (Claude, Codex) on GitHub | GitHub | Other vendors' agents under one admin policy | Public preview (since 2026-02-04) | GH-DOCS-3P-2026 |
 | Codex (CLI, app, Codex Cloud) | OpenAI | Code locally in a sandbox or in the cloud | Codex Cloud introduced 2026-09-29 | OPENAI-HELP-WORKCODEX-2026, OPENAI-HELP-RELNOTES-2026 |
-| Claude Code | Anthropic | Code locally or in cloud sessions; team skills and hooks | Documented, no beta label (read 2026-10-22) | ANTH-CC-OVERVIEW-2026, ANTH-CC-DATA-2026 |
+| Claude Code | Anthropic | Code locally or in cloud sessions; team skills and hooks | Documented, no beta label (read 2026-10-22) | ANTH-CC-OVERVIEW-2026 |
 | Cursor cloud agents; Projects | Cursor | Parallel agents in cloud VMs; a coordinator over many agents | Projects beta (2026-09-10) | CURSOR-DOCS-CLOUD-2026, CURSOR-CHANGELOG-2026 |
 
 ### 5.4 Pro-code agent platforms
@@ -161,7 +161,7 @@ As of October 2026. Vendors' own names; status in the vendor's words, with the d
 | Amazon Bedrock AgentCore | AWS | Production agents in the firm's AWS account, any model or framework | GA (2025-10-13); new runtime described 2026-09-18 | AWS-AGENTCORE-GA-2025, AWS-AGENTCORE-RUNTIME-2026 |
 | Claude Managed Agents | Anthropic | Hosted long-running Claude agents; managed or self-hosted sandbox | Public beta since 2026-04-08; still beta | ANTH-MA-OVERVIEW-2026, ANTH-RELNOTES-API-2026 |
 
-### 5.5 Gateways, agent identity and control planes
+### 5.5 Gateways, agent identity, MCP and skills infrastructure
 
 | Product | Vendor | Job it serves | Status (date) | Source |
 |---|---|---|---|---|
@@ -176,24 +176,16 @@ As of October 2026. Vendors' own names; status in the vendor's words, with the d
 | Bifrost | Maxim AI | Open-source AI gateway with MCP; no tool auto-execution by default | Documented (undated); edition split unclear | BIFROST-MCP-2026 |
 | Kong AI Gateway | Kong | LLM, MCP and A2A traffic control | MCP proxy is enterprise-only; MCP Registry tech preview | KONG-MCP-2026 |
 | Prisma AIRS with Portkey | Palo Alto Networks | AI gateway inside an AI security platform | Acquisition completed 2026-05-29; integration described in future tense | PANW-CLOSE-2026 |
-
-### 5.6 MCP and skills infrastructure
-
-| Product | Vendor | Job it serves | Status (date) | Source |
-|---|---|---|---|---|
 | Model Context Protocol | Open standard | Connects AI applications to tools and data | Latest spec version 2026-07-28 | MCP-INTRO-2026 |
 | MCP Registry | Open standard | Public catalog of MCP servers; no private servers | Preview | MCP-REGISTRY-2026 |
 | Agent Skills (`SKILL.md`) | Open standard, from Anthropic | Packaged instructions an agent loads when relevant | Published as an open standard 2025-12-18 | ANTHROPIC-SKILLS-2025, SKILLS-SPEC-2026 |
 
-A skill tells an agent how to do a task, and MCP gives it access to a system. A skill does not grant access
-[SKILLS-SPEC-2026; MCP-INTRO-2026].
-
-### 5.7 SaaS-embedded agents
+### 5.6 SaaS-embedded agents
 
 | Product | Vendor | Job it serves | Status (date) | Source |
 |---|---|---|---|---|
 | Agentforce | Salesforce | Service, sales and employee agents on CRM data | Current; consumption or per-user pricing | SF-AGENTFORCE-2026, SF-PRICING-2026 |
-| AI Agents | ServiceNow | Agents on IT, HR, customer and security workflows | Current; governance story at Knowledge 2026 (May) | SN-AIAGENTS-2026, SN-K26-2026 |
+| AI Agents | ServiceNow | Agents on IT, HR, customer and security workflows | Current (undated product page) | SN-AIAGENTS-2026 |
 | Glean (MCP server, MCP Gateway) | Glean | Permission-enforced search of company content, served to other hosts | Documented (Oct 2026) | GLEAN-MCP-2026 |
 | Dynamics 365 CRM skills | Microsoft | CRM context in Cowork, Code and Autopilot | GA (2026-10-08) | MS-D365SKILLS-2026 |
 
@@ -215,22 +207,19 @@ vendor's marketing. Before approving client data, read each product's exclusions
 - Is the vendor, its parent or a partner listed in its marketplace an audit or attest client of the firm?
 - Does the purchase route (for example partner products bought against committed spend) create a business
   relationship that independence rules restrict [ANTH-MKT-BLOG-2026]?
-- Who can see prompts and outputs, including human reviewers and model sub-processors?
-- Is any customer content used for training, and can that change without notice?
-- What is retained, where, for how long, and who can retrieve it for a regulator, a client or a court?
+- Who can see prompts and outputs (human reviewers, sub-processors), and is any content used for training?
+- What is retained, in which region, for how long, and who can retrieve it for a regulator, client or court?
 - Does the audit record show the agent's identity separately from the user's?
 - Will we be told before the model, region or terms change?
 
-**Field-specific tools** (audit analytics, tax research and preparation, legal research and drafting) are not
-listed here. They live in the archetypes' use cases (`../archetypes/`).
+**Field-specific tools** (audit, tax, legal) are not listed here; they live in the archetypes' use cases.
 
-**Public examples of firms building on these platforms.** Both are self-reported announcements:
+**Public examples of firms building on these platforms** (both self-reported announcements):
 - EY (2026-04-07): a multi-agent framework "integrated with Microsoft Azure, Microsoft Foundry and Microsoft
-  Fabric" embedded in EY Canvas for Assurance; the release does not say which Foundry services [EY-AUDIT-2026].
+  Fabric" in EY Canvas for Assurance; it does not say which Foundry services [EY-AUDIT-2026].
 - KPMG (2025-06-18): KPMG Workbench, "built on Microsoft Azure AI Foundry Services" [KPMG-WORKBENCH-2025].
-- No verified public example was found of an accounting, tax or law firm on Bedrock AgentCore or the Gemini
-  Enterprise Agent Platform, or of a law firm on any of the three. The examples found are large firms building
-  their own platforms; none was found for mid-size firms.
+- None verified for an accounting, tax or law firm on Bedrock AgentCore or the Gemini Enterprise Agent Platform,
+  for a law firm on any platform, or for a mid-size firm.
 
 ## 7. Refresh
 
@@ -249,8 +238,7 @@ check, keep only confirmed or partly confirmed findings, then update §5 and §8
 
 ## 8. Sources
 
-All accessed 2026-10-22. Access: `full` = page text read, sometimes through a text mirror. Undated pages show
-"undated".
+All accessed 2026-10-22. Access: `full` = page text read (sometimes via a text mirror); `partial` = part loaded.
 
 | Key | Title | Publisher | Type | URL | Date | Access |
 |---|---|---|---|---|---|---|
@@ -261,11 +249,9 @@ All accessed 2026-10-22. Access: `full` = page text read, sometimes through a te
 | MS-COWORKGA-2026 | Copilot Cowork is now generally available | Microsoft | vendor blog | https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/ | 2026-06-16 | full |
 | MS-COWORKGOV-2026 | Manage Copilot Cowork for your organization | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance | 2026-09-14 | full |
 | MS-CODEDOC-2026 | Copilot Code overview (Frontier) | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/copilot/code/overview | 2026-10-06 | full |
-| MS-SCOUT-2026 | Introducing Microsoft Scout: Your always-on personal agent | Microsoft | vendor blog | https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/ | 2026-06-02 | full |
 | MS-MRTBLOG-2026 | Build where you want, run with confidence | Microsoft | vendor blog | https://aka.ms/CopilotManagedRuntime-Blog | 2026-09-25 | full |
 | MS-SPAGENT-2026 | Manage access to agents in SharePoint | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/sharepoint/manage-access-agents-in-sharepoint | undated | full |
 | MS-SPUPGRADE-2026 | Upgrade agents in SharePoint and OneDrive | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents | undated | full |
-| MS-CSTUDIO-2026 | Copilot Studio overview | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio | undated | full |
 | MS-CSCUA-2026 | Automate web and desktop apps with computer use | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use | undated | full |
 | MS-USLUBB-2026 | Understanding the user subscription license and usage-based billing | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/microsoft-365/copilot/user-subscription-license-usage-based-billing | 2026-10-06 | full |
 | MS-A365-2026 | Overview of Microsoft Agent 365 | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/microsoft-agent-365/overview | 2026-08-20 | full |
@@ -276,7 +262,6 @@ All accessed 2026-10-22. Access: `full` = page text read, sometimes through a te
 | MSFT-FOUNDRY-TOOLBOX-2026 | What is Toolbox in Microsoft Foundry? | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/tool-catalog | 2026-07-28 | full |
 | MSFT-FOUNDRY-PRIVACY-2025 | Data, privacy, and security for Foundry Agent Service | Microsoft Learn | vendor docs | https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/agents/data-privacy-security | 2025-11-19 | full |
 | GOOGLE-PRIVHUB-2026 | Generative AI in Google Workspace Privacy Hub | Google Workspace Help | vendor docs | https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub | undated | full |
-| GOOGLE-AGENTIC-2026 | Boost productivity with 5 new agentic AI capabilities | Google Workspace Blog | vendor blog | https://workspace.google.com/blog/product-announcements/less-switching-more-flow-5-new-agentic-capabilities-across-google-workspace-apps | 2026-09-09 | full |
 | GOOGLE-WSUPDATES-NLM-2026 | NotebookLM is now Gemini Notebook | Google Workspace Updates | vendor blog | https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html | 2026-07-16 | full |
 | GOOGLE-GEFAQ-2026 | Gemini Enterprise app FAQs | Google Cloud | vendor docs | https://cloud.google.com/gemini-enterprise/faq | undated | full |
 | GOOGLE-SKILLS-2026 | Teach Gemini your team's know-hows with skills in Google Workspace | Google Workspace Blog | vendor blog | https://workspace.google.com/blog/product-announcements/teach-gemini-your-teams-know-hows-with-skills-in-google-workspace | 2026-09-16 | full |
@@ -290,7 +275,6 @@ All accessed 2026-10-22. Access: `full` = page text read, sometimes through a te
 | OPENAI-HELP-WORKCODEX-2026 | ChatGPT Work and Codex | OpenAI Help Center | vendor docs | https://help.openai.com/en/articles/20001275 | undated | full |
 | OPENAI-LEARN-AUTOMATIONS-2026 | Scheduled tasks | OpenAI | vendor docs | https://learn.chatgpt.com/docs/automations.md | undated | full |
 | OPENAI-HELP-DEEPRES-2026 | Deep research in ChatGPT | OpenAI Help Center | vendor docs | https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt | undated | full |
-| OPENAI-DOTS-2026 | Introducing dots | OpenAI | vendor announcement | https://openai.com/index/introducing-dots/ | 2026-09-29 | full |
 | OPENAI-HELP-DOTSSTART-2026 | Getting started with your dot | OpenAI Help Center | vendor docs | https://help.openai.com/en/articles/20001530 | undated | full |
 | OPENAI-LEARN-DOTSADMIN-2026 | Manage dots permissions and capabilities | OpenAI | vendor docs | https://learn.chatgpt.com/docs/enterprise/dots-admin-guide.md | undated | full |
 | ANTH-ENT-2026 | Claude Enterprise | Anthropic | vendor product page | https://claude.com/solutions/enterprise | undated | full |
@@ -300,7 +284,6 @@ All accessed 2026-10-22. Access: `full` = page text read, sometimes through a te
 | ANTH-MKT-BLOG-2026 | Claude Marketplace | Anthropic | vendor announcement | https://claude.com/blog/claude-marketplace | 2026-09-23 | full |
 | ANTH-COMPSESS-2026 | Retrieve session transcripts (Compliance API) | Anthropic | vendor docs | https://platform.claude.com/docs/en/manage-claude/compliance-sessions.md | undated | full |
 | ANTH-CC-OVERVIEW-2026 | Claude Code overview | Anthropic | vendor docs | https://code.claude.com/docs/en/overview.md | undated | full |
-| ANTH-CC-DATA-2026 | Data usage (Claude Code) | Anthropic | vendor docs | https://code.claude.com/docs/en/data-usage.md | undated | full |
 | ANTH-MA-OVERVIEW-2026 | Claude Managed Agents overview | Anthropic | vendor docs | https://platform.claude.com/docs/en/managed-agents/overview.md | undated | full |
 | ANTH-RELNOTES-API-2026 | Release notes (Claude Platform) | Anthropic | vendor release notes | https://platform.claude.com/docs/en/release-notes/overview.md | to 2026-10-21 | full |
 | ANTH-PRICING-2026 | Pricing (Claude Managed Agents section) | Anthropic | vendor docs | https://platform.claude.com/docs/en/about-claude/pricing.md | undated | full |
@@ -326,6 +309,5 @@ All accessed 2026-10-22. Access: `full` = page text read, sometimes through a te
 | SF-AGENTFORCE-2026 | Agentforce: The AI Agent Platform | Salesforce | vendor product page | https://www.salesforce.com/agentforce/ | undated | partial |
 | SF-PRICING-2026 | Agentforce Pricing | Salesforce | vendor product page | https://www.salesforce.com/agentforce/pricing/ | undated | full |
 | SN-AIAGENTS-2026 | AI Agents | ServiceNow | vendor product page | https://www.servicenow.com/products/ai-agents.html | undated | partial |
-| SN-K26-2026 | ServiceNow turns enterprise AI chaos into control | ServiceNow | press release | https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-turns-enterprise-AI-chaos-into-control-with-the-platform-for-governed-autonomous-work/default.aspx | 2026-05 | full |
 | EY-AUDIT-2026 | EY launches enterprise-scale agentic AI to redefine the audit experience | EY | firm press release | https://www.ey.com/en_us/newsroom/2026/04/ey-launches-enterprise-scale-agentic-ai-to-redefine-the-audit-experience-for-the-ai-era | 2026-04-07 | full |
 | KPMG-WORKBENCH-2025 | KPMG Launches KPMG Workbench: A Multi-Agent AI Platform | KPMG International | firm press release | https://www.newsfilecorp.com/release/255985/KPMG-Launches-KPMG-Workbench-A-MultiAgent-AI-Platform-Transforming-Client-Delivery-and-Ways-of-Working-Across-the-Global-Organization | 2025-06-18 | full |
