@@ -110,6 +110,7 @@ supports them, and say so to the user.
 | Jagged edge | Test on two or three real examples before trusting a demo [HBS-JAGGED-2023] | Similar-looking tasks fail quietly |
 | People's preference | "Which of these would your team hand over, share, or keep?" [STANFORD-WORKBANK-2026] | Feasible but resisted ("red light"); plan the change, don't skip it |
 | Security | Does it combine private data, untrusted content and a way to send things out? [WILLISON-2025] | All three legs present; remove one in the design |
+| Tool fit | Which job is it, and which tool type does that job need? Match the job in `../library/tool-landscape.md` §2, then the firm's `overlay/tool-catalog.yaml` `use_for`; ask the landscape's deciding questions (§3) | No approved tool serves the job: record a catalog request as a prerequisite |
 
 ## 4. Question bank
 

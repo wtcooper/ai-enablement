@@ -30,7 +30,9 @@ reasons, who maintains it, and what would make the firm revisit it.
 ## 2. How to run it
 
 1. **Check the overlay:** `overlay/tool-catalog.yaml` (which approved tools could do this, under what conditions,
-   for which data classes) and any `overlay/vendors/<vendor>.md`. Without a catalog, use runtime classes (rule 6).
+   for which data classes) and any `overlay/vendors/<vendor>.md`. Without a catalog, use runtime classes (rule 6),
+   with current products as dated examples from `../../../transformation-advisor/references/library/tool-landscape.md`
+   §5. Its §4 says when work should move from a personal or coding tool to a shared or production platform.
 2. **List the options** (§3.1), always including the step 1 rule or existing tool and a bought or configured tool.
 3. **Ask the differentiation question:** "Is this where we win, or a problem many firms have?" It settles most
    cases.

@@ -101,6 +101,10 @@ these classes to the organization's approved products; recommend those and flag 
 | `background-agent` | An agent that runs on a schedule or trigger without a person present | automate; monitoring and batch work |
 | `managed-agent-runtime` | A hosted, long-running agent with tools, state and human checkpoints, built into business systems | delegate; end-to-end cases |
 
+To match a job to a class, choose between classes (identity, data, persistence, who maintains it, data classes,
+cost), plan the move from prototype to production, or name dated product examples, read
+[tool-landscape.md](tool-landscape.md).
+
 ## 5. Value levers
 
 Default levers (`value_levers`). The top plan chooses and weights them in Frame; each needs one named metric.

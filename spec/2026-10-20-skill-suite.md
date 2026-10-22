@@ -55,6 +55,17 @@ by name with a fallback: "Next, use the **ai-portfolio** skill. If you can't inv
   roles). The validator checks that the copies match one source,
   `skills/transformation-advisor/references/schemas/core-rules.md`.
 - **Overlay first.** Every skill reads `overlay/guardrails.md` and `overlay/tool-catalog.yaml` when they exist.
+- **Which tool for which job** (owner decision of 2026-10-22). Two places:
+  - **Generic:** `library/tool-landscape.md` in the shared knowledge. It maps jobs to tool types and runtime
+    classes, gives the deciding questions (identity, where the data lives, in-session or always-on, who builds it)
+    and the path from prototype to production, and lists current products by type. The products are dated, sourced
+    examples, never endorsements, and the file is refreshed as products change.
+  - **The firm's own:** `overlay/tool-catalog.yaml`, with a `use_for` field listing the jobs each approved tool
+    serves. ai-governance writes it, and it always wins over the landscape.
+
+  Core rule 6 lets skills name products only as dated examples from the landscape. The advisor uses it in Reimagine
+  (a "tool fit" check), ai-solution-delivery at build or buy, and ai-enablement for a one-page staff tool guide
+  (`enablement/tool-guide.md`).
 
 ## 4. Workspace and handoffs
 

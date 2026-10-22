@@ -65,8 +65,10 @@ More detail: [How the advisor works](docs/how-it-works.md).
 - **Business archetypes:** deep knowledge of a field. That includes how the work is done, where AI
   is really being used (with sourced, graded examples), the regulations, workforce effects and
   where the field is heading.
-- **Your organization (optional):** your approved tools, terminology and internal examples. These
-  stay in your own folder and never go into the plugin.
+- **Tool landscape:** which kind of AI tool fits which job, the questions that decide it, and how work moves from a
+  personal tool to a production platform. Current products are listed as dated, sourced examples, not endorsements.
+- **Your organization (optional):** your approved tools (with the jobs each is for), terminology and internal
+  examples. These stay in your own folder and never go into the plugin. When present, your tool list always wins.
 
 | Archetype | Status |
 |---|---|
@@ -134,7 +136,7 @@ any time, and it picks up where you left off next time.
 | Method: 11 step-by-step guides, plus guides for leading partners and for acquisitions, fact-checked | Confirm installation in Codex, Cursor and Copilot |
 | Five archetypes, fact-checked: professional services (12 focus areas), assurance (13), tax (9), advisory (7) and security (11) | Test runs with real practice leaders, and an eval suite |
 | Five skills (advisor, portfolio, solution delivery, enablement, governance): install, trigger and hand off in Claude Code | |
-| Shared library: 11 pattern guides, 10 function cards and journey stages, fact-checked | |
+| Shared library: 11 pattern guides, 10 function cards, journey stages and a tool landscape (which tool for which job), fact-checked | Refresh the tool landscape as products change |
 | Research program and quality checks | |
 
 ## Learn more

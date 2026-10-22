@@ -2,17 +2,21 @@
 # The advisor recommends these and flags anything outside this list.
 # Runtime class ids: personal-assistant, shared-team-skills, workflow-automation, background-agent, managed-agent-runtime
 # Example entries only: replace them with your organization's approved products.
+# use_for lists jobs in the words of the advisor's library/tool-landscape.md §2: which approved tool for which job.
 tools:
   - name: "<Enterprise chat assistant>"
     runtime_class: personal-assistant
     approved_for: "Drafting and research on non-confidential material; client data only in the enterprise tenant"
     owner: "IT"
+    use_for: ["Draft and edit inside Word, Excel or Docs", "Ask questions of a team's documents"]
   - name: "<Team skills library>"
     runtime_class: shared-team-skills
     approved_for: "Shared prompts and skills reviewed by the practice"
     owner: "Practice innovation lead"
+    use_for: ["Everyone should do this task the same way"]
   - name: "<Automation platform>"
     runtime_class: workflow-automation
     approved_for: "Workflows with AI steps after a risk review"
     owner: "Automation centre of excellence"
+    use_for: ["Run this every Monday or when an email arrives"]
 not_approved_note: "Anything else needs a risk review before use."

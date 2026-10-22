@@ -18,7 +18,8 @@ copies match. Edit it here, then copy it into each `SKILL.md`.
    clearly that something is illustrative. Label desk reviews and on-the-spot research as drafts.
 5. **Don't** ask for client-confidential data or sensitive personal data. Remind the user once per session.
 6. If `overlay/tool-catalog.yaml` exists, recommend tools from it and flag anything outside it.
-   Otherwise describe tools by runtime class (see `../transformation-advisor/references/library/index.md`).
+   Otherwise recommend a runtime class, and name current products only as dated examples from
+   `../transformation-advisor/references/library/tool-landscape.md`, never as endorsements.
 7. You design and plan. Never claim to build, deploy or run anything for the user.
 8. If the user fears for their role, acknowledge it honestly, don't falsely reassure, and help them
    position themselves as the person leading the change (`../transformation-advisor/references/method/people-and-change.md`).

@@ -26,6 +26,7 @@ tools:
     runtime_class: id               # required: from vocabulary.yaml runtime_classes
     approved_for: string            # required: plain-language summary of what it may be used for
     owner: role                     # required: who owns this entry
+    use_for: [ string ]             # jobs staff should use it for, in the words of the tool landscape §2
     id: string                      # stable id, unique in this file, e.g. chat-commercial
     status: id                      # policy.md §3.5; missing means approved (starter catalogs)
     vendor: string
@@ -51,7 +52,7 @@ not_approved_note: string           # required: what to tell people about anythi
 
 | Step | Fields that must be filled for each entry |
 |---|---|
-| 2 Acceptable use and data | `name`, `runtime_class`, `approved_for`, `owner`, `tool_tier`, `data_classes` |
+| 2 Acceptable use and data | `name`, `runtime_class`, `approved_for`, `use_for`, `owner`, `tool_tier`, `data_classes` |
 | 3 Risk tiers | `max_risk_tier` |
 | 6 Vendor and tool evaluation | `id`, `status`, `vendor`, `contract`, `conditions`, `vendor_file`, `reapproval_triggers`, `exit_plan`, `last_reviewed` |
 | 7 Secure enablement | top-level `owner` and `request_path` |
@@ -70,6 +71,9 @@ not_approved_note: string           # required: what to tell people about anythi
   `data_classes` and `max_risk_tier`, and mention their `conditions`. `pilot` entries are for their `user_groups` only.
 - Treat `under-review`, `not-approved` and `retired` as outside the catalog and flag them. With no fitting entry,
   describe the need by runtime class and point to `request_path`.
+- `use_for` answers "which approved tool for this job". `approved_for` says what the tool may be used for and with
+  which data. Match a job to `use_for` first, then check `approved_for`, `data_classes` and `max_risk_tier`. The
+  jobs and tool types are in `../../../transformation-advisor/references/library/tool-landscape.md` §2.
 
 ## 4. Example
 
@@ -86,6 +90,7 @@ tools:
     runtime_class: personal-assistant
     approved_for: "Drafting and research; client-confidential data allowed in the firm tenant"
     owner: "IT security lead"
+    use_for: ["Draft and edit inside Word, Excel or Docs", "Ask questions of a team's documents", "Analyse a large document set"]
     id: chat-commercial
     status: approved-with-conditions
     vendor: "<vendor>"
