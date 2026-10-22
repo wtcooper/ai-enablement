@@ -1,0 +1,38 @@
+# Approved AI tools, mapped to runtime classes. Every skill in the suite reads this file.
+# Schema: references/schemas/tool-catalog.md (tool-catalog/v1). Written by the ai-governance skill.
+# DRAFT REQUEST: one entry, status under-review, opened for solution ct-int-nonclient-drafting. Nothing here is
+# approved. The IT/security lead fills the vendor, contract and settings fields, and the risk lead confirms the tier.
+# Policy data classes (overlay/policy.md section 3) are not written yet, so data_classes is an assumption.
+# Runtime class ids: personal-assistant, shared-team-skills, workflow-automation, background-agent, managed-agent-runtime
+schema: tool-catalog/v1
+updated: "2026-10-22"
+owner: "IT/security lead"
+request_path:
+  how: "To be set at governance step 7"
+  response_commitment: "To be set at governance step 7"
+  fast_lane: "To be set at governance step 7"
+tools:
+  - name: "Approved enterprise AI assistant (non-client material only)"
+    runtime_class: personal-assistant
+    approved_for: "Drafting and editing on non-client material only: templates, test-step wording, synthetic practice cases, summaries of public documents. Not for client data or client evidence."
+    owner: "IT/security lead"
+    use_for: ["Draft and edit text such as templates and wording", "Summarise public documents", "Create synthetic practice cases"]
+    id: "enterprise-assistant"
+    status: under-review
+    vendor: "To be confirmed by the IT/security lead"
+    tool_tier: commercial   # assumption to confirm: the plan calls it the approved enterprise assistant
+    contract: "To be confirmed by the IT/security lead"
+    data_classes: [public, firm-internal]   # assumption: classes not yet defined in the policy
+    max_risk_tier: tier-2   # proposed in the draft policy as the ceiling; the risk lead has not confirmed
+    user_groups: ["To be confirmed: current licence holders (IT holds the count)"]
+    embedded_in: null
+    underlying_model: "To be confirmed by the IT/security lead"
+    processing_regions: ["To be confirmed"]
+    retention: "To be confirmed: retention setting and who can retrieve history (needed to notice client data pasted by mistake)"
+    conditions: ["Non-client material only: no client data or client evidence", "A person reads and a senior approves any wording before it is shared or used in a workpaper"]
+    flags: { tax_7216: false, independence: false, client_consent: false, eu_high_risk: false }   # to confirm with the risk lead
+    vendor_file: "vendors/enterprise-assistant.md"   # not written: no vendor evaluation yet
+    reapproval_triggers: [model-change, sub-processor-change, terms-change, new-data-class, new-use, incident]
+    exit_plan: "To be confirmed by the IT/security lead"
+    last_reviewed: "2026-10-22"
+not_approved_note: "Anything not listed needs a request through the request path before use with firm or client data."

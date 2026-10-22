@@ -1,0 +1,216 @@
+schema: opportunities/v1
+scope: ../../transformation-plan.md
+# SOX-only outsourcing unit. Practice-lead session; inputs are the practice lead's reported figures (one sample case plus tracking-sheet aggregates as relayed), not seen by the advisor.
+# Scores use the plan's weights: value 0.30, feasibility 0.20, data_readiness 0.15, risk 0.20, time_to_value 0.05, strategic_fit 0.10.
+# Value ranges are illustrative arithmetic on reported inputs. Options 1, 2 and 4 attack the same evidence-completeness notes (about 42 tests a month, about 20 points of the 30% note rate): do NOT add their quality values; the combined ceiling is about 20 points.
+items:
+  - id: sox-prereview-checklist
+    title: Written pre-review evidence checklist that captures the senior's unwritten checks
+    process: Test of operating effectiveness (ITGC access recertification and similar report-based controls)
+    work_types: [review-assurance, document-production]
+    pattern: draft-review-loop
+    ladder: assist
+    change_scope: step
+    runtime_class: shared-team-skills
+    description: "Today the senior mentally checks that the listing came straight from the system, covers the full period and that the comparison population is complete, plus the sign-off date against policy and the trace from each exception to its ticket; staff often miss these and the notes arrive after review. Future: a short written staff self-check attached to the workpaper, co-written with seniors and tested on past files; no AI required (AI may draft wording on non-client material only)."
+    value:
+      - { lever: quality, low: 5, high: 12, unit: "percentage points off the test-level review-note rate (30% today)", assumptions: "About 42 of 210 tests a month draw an evidence-completeness note (tracking sheet, as relayed); the checklist catches 25-60% of them before review; notes independent. Overlaps options 2 and 4: do not add. Grade D (no published measure)." }
+      - { lever: capacity, low: 10, high: 25, unit: "second-round senior reviews avoided per month", assumptions: "Same 25-60% of about 42 tests; each note leads to a second round (reported 'usually'). Hours per round not yet known." }
+    scores: { value: 4, feasibility: 5, data_readiness: 3, risk: 5, time_to_value: 5, strategic_fit: 5 }
+    weighted_score: 4.40
+    category: foundation  # data_readiness lowered 4 to 3 after independent review: criteria are still unwritten (tacit)
+    depends_on: []
+    prerequisites: ["Two seniors articulate the checks (senior time is the shared constraint)", "Methodology owner approves the checklist"]
+    risks: ["Tick-box compliance replaces thinking", "Checklist goes stale", "Writing it uses scarce senior time in busy season"]
+    human_checkpoints: ["Senior samples checklist completions and reviews every exception"]
+    role_evolution: { tasks_moving: "Late discovery of completeness gaps at senior review", new_work: "Staff self-check before submission; seniors coach against the checklist", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03, assurance-controls-testing-10]
+    label: null
+    next_step: { action: "Schedule and hold the two or three protected senior half-days in the shoulder weeks (none in peak) and co-write the checklist with two seniors; then the ITGC senior manager back-tests it on past files, blind to the PCAOB comment text, using the back-test protocol", owner: "Practice lead (owner); ITGC senior manager validates the checklist against past files", depends_on: [] }
+
+  - id: sox-request-template
+    title: Request template naming the report and its parameters up front, plus a rule-based check when evidence arrives
+    process: Evidence request (PBC) for report-based controls
+    work_types: [coordination-scheduling, client-interaction]
+    pattern: intake-triage
+    ladder: assist
+    change_scope: step
+    runtime_class: shared-team-skills
+    description: "Today staff pull from the portal and email the control owner for the right version; on the sample case about 4 days passed waiting, and fixing notes later took about 2 more. Future: the request states the report name, system, parameters and period; a simple rule check on arrival (date range, report type, system-generated format) bounces incomplete submissions at once. Templates first; no AI needed."
+    value:
+      - { lever: quality, low: 2, high: 6, unit: "percentage points off the test-level review-note rate", assumptions: "Subset of the same evidence-completeness notes as option 1; catches submissions that arrive without parameters or the right period. Overlaps options 1 and 4: do not add. Grade D." }
+      - { lever: capacity, low: 0, high: 2, unit: "days elapsed saved per affected test", assumptions: "Sample case: about 4 days waiting on the control owner plus about 2 days of rework after review; affected tests up to about 42 a month. Elapsed time, not staff hours." }
+    scores: { value: 3, feasibility: 5, data_readiness: 3, risk: 5, time_to_value: 5, strategic_fit: 4 }
+    weighted_score: 4.00
+    category: park  # data_readiness lowered 4 to 3 by the user's decision: the per-client report list does not exist yet, so it is no longer a quick win under rule 4.
+    revisit_when: "The per-client key-report inventory exists (the first step of option 4); in practice it starts client by client as each inventory completes"
+    depends_on: []
+    prerequisites: ["Agree the report list per client with the control owner", "Update the request-list wording"]
+    risks: ["Control owners ignore the template", "Rule check rejects valid evidence"]
+    human_checkpoints: ["Staff confirm every bounced item before chasing"]
+    role_evolution: { tasks_moving: "Repeat chasing for the right version", new_work: "Staff keep the report list current with the control owner", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03]
+    label: null
+    next_step: { action: "Once the report inventory exists for a client, draft the revised request wording naming the report and parameters for the access recertification control and test it on the next two requests", owner: "Practice lead (owner)", depends_on: [sox-report-register] }
+
+  - id: sox-chase-assistant
+    title: Shared assistant drafts requests to control owners and tracks follow-ups; a person sends and owns the relationship
+    process: Evidence request and follow-up
+    work_types: [coordination-scheduling, client-interaction]
+    pattern: draft-review-loop
+    ladder: assist
+    change_scope: step
+    runtime_class: personal-assistant
+    description: "Today staff write and chase by email. Future: staff use the enterprise assistant on placeholder text (no client data until approved) to draft requests and keep a follow-up log; the person sends every message."
+    value:
+      - { lever: capacity, low: 0, high: 80, unit: "staff hours per month", assumptions: "0-15% of the 2.5 h sample hands-on is chasing and drafting; applies to the 210 tests a month; no measure exists. Grade D." }
+      - { lever: experience, low: 0, high: 0, unit: "not quantified", assumptions: "Staff say they would share this task with a tool" }
+    scores: { value: 2, feasibility: 4, data_readiness: 3, risk: 4, time_to_value: 4, strategic_fit: 3 }
+    weighted_score: 3.15
+    category: park
+    revisit_when: "Option 2's template is live and tracking shows chasing time is still material"
+    depends_on: [sox-request-template]
+    prerequisites: ["Usage rule restated", "Placeholder-only drafting routine agreed"]
+    risks: ["Client data pasted by mistake", "Relationship tone drifts"]
+    human_checkpoints: ["A person reviews and sends every message"]
+    role_evolution: { tasks_moving: "Drafting and tracking follow-ups", new_work: "Relationship ownership with control owners", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-03]
+    label: null
+
+  - id: sox-report-register
+    title: One specialist validates each key report once; a register records it for reuse across tests
+    process: Reliability of information (IPE) for report-based controls
+    work_types: [review-assurance, data-reporting]
+    pattern: other
+    ladder: assist
+    change_scope: process
+    runtime_class: shared-team-skills
+    description: "Today every test re-proves report completeness and nobody owns report validation; IT audit specialists are billed to integrated engagements. Future: a specialist validates each key report per client once, records parameters and re-validation triggers in a register, and staff cite it in each test. Mirrors the integrated-audit pattern (reported, one case). Would also feed the integrated line's own register (desk-review item ct-int-validated-report-register)."
+    value:
+      - { lever: capacity, low: 25, high: 63, unit: "staff hours per month", assumptions: "About 100-126 of 210 tests a month rely on a system report (12-15 of 25 controls, 48-60%; control share used as a proxy for test share); 0.25-0.5 h per test no longer spent re-proving completeness. The high end is capped at 0.5 h until a time sample exists: the 1.0 h gap between the 2.5 h SOX-only and 1.5 h integrated cases rests on two single cases and would imply 50-67% of a typical 1.5-2 h test. Net of one-off specialist effort of about 180-600 hours (8 reports x 3 h x 15 clients as base 360; user estimates). Excludes re-validation. Grade D." }
+      - { lever: quality, low: 3, high: 10, unit: "percentage points off the test-level review-note rate", assumptions: "Part of the same evidence-completeness notes as options 1 and 2: do not add." }
+      - { lever: risk, low: 0, high: 2, unit: "PCAOB ITGC evidence comments avoided per cycle", assumptions: "Baseline 2 last cycle (practice-level, reported); line of origin unknown; no evidence yet that this closes them." }
+    scores: { value: 4, feasibility: 3, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 5 }
+    weighted_score: 3.70
+    category: big-bet  # changed from foundation after independent review: only one option (sox-listing-tool) depends on it, so category rule 2 does not apply; value 4 with feasibility, data readiness and time to value at 3 meets rule 5. Staged plan: validate one client first (about 16-32 h) before committing the rest.
+    depends_on: []
+    prerequisites: ["Validation capacity: one senior manager on the ITGC side (a role, to be named) at about 4 hours a week outside peak, approved by the practice lead; risk and quality to confirm that this role can sign validation records. Cost per user: 24 h for the first client, 12-16 h for each later client as reports are reused (reuse untested), counted as real cost at a blended USD 210 an hour", "A named owner for the register and for re-validation triggers", "Methodology agreement on what must be recorded under AS 1215", "A shared place to keep the register"]
+    risks: ["Validation goes stale when a report or system changes", "Pattern depends on individual specialists", "Reuse across periods weakens evidence if poorly scoped"]
+    human_checkpoints: ["Specialist signs each validation", "Senior confirms the listing is the validated report"]
+    role_evolution: { tasks_moving: "Per-test re-proving of report completeness", new_work: "Specialists own validation and the register; staff cite and check it; juniors learn why a report is complete by reading validation records", capacity_use: redeploy }
+    evidence: []  # supported only by the integrated-audit contrast case (reported, n=1); #06 (in-house change-management agent, self-reported) is context for ITGC attributes, not evidence for a register
+    label: null
+    next_step: { action: "Inventory the key reports for the 4-5 clients behind the ITGC controls and the two PCAOB comments (stage 1; this also unblocks option 2), agree with risk and quality what a validation record must contain, then validate the first client and time it", owner: "Senior manager on the ITGC side (register owner and validator), with the practice lead", depends_on: [] }
+
+  - id: sox-junior-development
+    title: "Named junior-development workstream: juniors keep the completeness check and the timing-difference call"
+    process: Staff development within control testing
+    work_types: [review-assurance, expert-judgment]
+    pattern: other
+    ladder: assist
+    change_scope: process
+    runtime_class: personal-assistant
+    description: "Today juniors learn the seniors' unwritten checks by doing them on real files. Future: the checks are written down (option 1); juniors still run the completeness check and the timing-difference call on real files, coached against the checklist; synthetic practice cases (non-client) built with the assistant; a rotating sample of manual listing comparisons even after a tool exists; seniors' coaching time protected."
+    value:
+      - { lever: experience, low: 0, high: 0, unit: "not quantified", assumptions: "Measures to set up: share of junior time on judgment work (target: higher, per the user), overtime, 12-month turnover (about 25% today), reviewer-rated readiness. Evidence mixed: a partner at one 20-person firm says first-year staff now do complex revenue testing because reviewers have bandwidth to guide them (vendor customer story, vendor-published, archetype grade B, one small firm, not SOX testing); a registered PCAOB research proposal (HOLMSTROM-2024) warns of reduced skill-building. Not a forecast." }
+    scores: { value: 2, feasibility: 3, data_readiness: 4, risk: 5, time_to_value: 3, strategic_fit: 4 }
+    weighted_score: 3.35
+    category: foundation  # user's decision. Scores follow the independent review (value 2: low end is zero; feasibility 3 and time to value 3: protected coaching time not secured). Under the category rules this would be park (value 2). Kept as a named workstream because it is a stated design requirement and the guard on the junior pipeline; option 5 now depends on it.
+    depends_on: [sox-prereview-checklist]
+    prerequisites: ["A named owner for the workstream (to be named by role)", "Protected coaching time from seniors, who are 90-95% booked in busy season"]
+    risks: ["Coaching time never materialises in busy season", "Juniors only review and never prepare"]
+    human_checkpoints: ["Seniors review junior work on a rotating sample"]
+    role_evolution: { tasks_moving: "Mechanical preparation as tools arrive", new_work: "Judgment practice, checklist ownership, exception investigation", capacity_use: redeploy }
+    evidence: [assurance-quality-management-16]
+    label: null
+    next_step: { action: "Name the workstream owner and define three baseline measures (junior judgment time, turnover, readiness)", owner: "Practice lead", depends_on: [] }
+    # Owner: a senior manager (role, to be named by the user). No change in junior hiring pace is assumed (user).
+
+  - id: sox-client-data-approval
+    title: Take one controls-testing use through the client-data approval path (listing comparison and write-up first pass)
+    process: Governance for the AI tool used on client evidence
+    work_types: [coordination-scheduling, review-assurance]
+    pattern: other
+    ladder: assist
+    change_scope: process
+    runtime_class: shared-team-skills
+    description: "Today no tool is approved for client evidence and no controls-testing case has been through the 3-4 month path (security review, data-handling and retention assessment, independence check, signed off by risk and quality, CIO and general counsel). Future: one scoped use is approved and certified, which every later tool option depends on. Added by the advisor as the lead-time item for option 5 and for any later client-data use (option 3 can start on placeholder text without it); confirmed by the user as a foundation item."
+    value:
+      - { lever: risk, low: 0, high: 0, unit: "enabler, no standalone value", assumptions: "Approval is the lead-time item; value comes from option 5" }
+    scores: { value: 2, feasibility: 3, data_readiness: 3, risk: 4, time_to_value: 3, strategic_fit: 4 }
+    weighted_score: 3.00
+    category: foundation  # user decision. Under the category rules this would be park (value 2; only one option depends on it). Kept as a foundation because it is the lead-time item for option 5 and any later client-data use.
+    depends_on: [sox-prereview-checklist]
+    prerequisites: ["Written test attributes and exception rules for the first use (from option 1)", "Sponsor support from the managing partner for assurance"]
+    risks: ["Approval is slower than 3-4 months", "Scope too broad to approve"]
+    human_checkpoints: ["Risk and quality, CIO and general counsel sign off; the practice lead cannot decide this alone", "The approval scope names tool certification and monitoring under QC 1000, client consent and vendor terms, credential governance for portal pulls, and early notice to the clients' external auditors (AS 2605)"]
+    role_evolution: { tasks_moving: "none", new_work: "Practice lead prepares the request and evidence pack", capacity_use: redeploy }
+    evidence: []
+    label: null
+    next_step: { action: "Open the approval request with a narrow scope: user access recertification listing comparison, one or two clients", owner: "Practice lead (initiates; decision sits with risk and quality, CIO and general counsel)", depends_on: [] }
+
+  - id: sox-listing-tool
+    title: Certified tool for portal pull, listing-to-active-user comparison and workpaper first pass; every flagged exception and a sample of unflagged items go to a person
+    process: Test of operating effectiveness (ITGC access recertification first)
+    work_types: [data-reporting, document-production, review-assurance]
+    pattern: reconcile-exceptions
+    ladder: augment
+    change_scope: step
+    runtime_class: workflow-automation
+    description: "Today staff pull, compare, paste, format and tick-mark by hand (about 2.5 h on the sample case; the practice lead guesses 60-65% of staff time is this kind of work). Future: an approved tool does the portal pull, proposes the comparison and drafts the write-up with citations to the source; staff and seniors work the exceptions; juniors still do a rotating sample of comparisons by hand. Shadow mode first, running alongside manual work on past tests."
+    value:
+      - { lever: capacity, low: 24, high: 126, unit: "staff hours per month at full coverage; near zero for the first approved scope (access recertification at one or two clients) until widened", assumptions: "Coverage of 30-60% of 210 tests a month (63-126 tests) is a guess, not measured; releases 25-50% of a typical 1.5-2 h test (0.375-1.0 h) net of added review; before netting Case A, which removes 0.25-0.5 h from the same report-based tests; added review lands on seniors, who are the constraint, and is not netted here; absorption (assume 20-30%, placeholder) not yet applied. Gate: speeds the staff step, not the senior-review constraint, so value is only counted when options 1, 2 and 4 are in place. Pattern evidence is self-reported by the deploying teams (Microsoft IA 850 h and USD 185K a year, grade A use case; #07 has no controls-specific measure). Grade C for this practice." }
+    scores: { value: 2, feasibility: 2, data_readiness: 2, risk: 3, time_to_value: 1, strategic_fit: 3 }
+    weighted_score: 2.25
+    category: park  # value lowered 3 to 2 after independent review: the constraint gate caps it and the low end is near zero
+    revisit_when: "Options 1 and 4 are in place with baselines, and the client-data approval (sox-client-data-approval) is granted"
+    depends_on: [sox-prereview-checklist, sox-report-register, sox-client-data-approval, sox-junior-development]
+    prerequisites: ["Written attributes and exception rules", "Parallel run on past tests and old-versus-new comparison on the same controls", "Documentation that meets AS 1215", "External auditor of the client told in advance (reliance, AS 2605)"]
+    risks: ["Automation bias and rubber-stamp review", "Non-repeatable outputs", "Documentation not defensible to the PCAOB", "Adds files to a queue that is already near full"]
+    human_checkpoints: ["A senior or manager reviews every flagged exception", "A senior samples unflagged items; sample size agreed with risk and quality, not set by the practice lead alone", "Override and miss rates tracked and reported to risk and quality", "Risk and quality sign off the documentation before use", "A pre-agreed minimum number of planted exceptions must be caught in shadow mode before any live use"]
+    role_evolution: { tasks_moving: "Portal pull, comparison, copying, formatting, tick-marking first pass", new_work: "Exception investigation, sample re-performance, tool evaluation; juniors keep rotating manual practice", capacity_use: redeploy }
+    evidence: [assurance-controls-testing-06, assurance-controls-testing-07, assurance-controls-testing-05]
+    label: null
+    next_step: { action: "When the approval is granted and options 1, 4 and 7 are in place, run the tool in shadow mode on past tests with planted exceptions and an old-versus-new comparison; no live use without risk and quality's sign-off", owner: "Practice lead (approval); ITGC senior manager (shadow results)", depends_on: [sox-client-data-approval, sox-prereview-checklist, sox-report-register, sox-junior-development] }
+
+  - id: sox-ai-secondary-review
+    title: AI secondary review of the workpaper before the senior sees it
+    process: Senior review
+    work_types: [review-assurance]
+    pattern: draft-review-loop
+    ladder: augment
+    change_scope: step
+    runtime_class: shared-team-skills
+    description: "Parked by the practice lead. A target picture: once an approved tool and baseline data exist."
+    category: park
+    revisit_when: "The listing tool is approved and review-note and override data exist"
+    evidence: [assurance-controls-testing-10]
+    label: null
+
+  - id: sox-agent-testing
+    title: Agent tests a defined control set with cited evidence; a reviewer signs every conclusion
+    process: Test of operating effectiveness
+    work_types: [review-assurance, document-production]
+    pattern: end-to-end-case-agent
+    ladder: delegate
+    change_scope: process
+    runtime_class: managed-agent-runtime
+    description: "Parked by the practice lead as a target picture. Fails four of the five delegation gates today (no production workflow with owner and baseline, no written criteria, no shadow mode, no override tracking)."
+    category: park
+    revisit_when: "Two workflows are in production, criteria are written, and shadow-mode results exist"
+    evidence: [assurance-controls-testing-05, assurance-controls-testing-16]
+    label: null
+
+  - id: sox-platform-plus-review
+    title: Controls testing sold as platform plus review, or clients in-sourcing the testing
+    process: Service model for outsourced SOX testing
+    work_types: [client-interaction]
+    pattern: other
+    ladder: delegate
+    change_scope: model
+    runtime_class: managed-agent-runtime
+    description: "Parked by the practice lead as a hypothesis. Firms are repackaging testing as platform plus review and some clients are in-sourcing co-sourced testing with agents; both bear directly on this line."
+    category: park
+    revisit_when: "At the mid-point review, or when a client asks for a lower fee or in-sources testing"
+    evidence: [assurance-controls-testing-20, assurance-controls-testing-19]
+    label: null
