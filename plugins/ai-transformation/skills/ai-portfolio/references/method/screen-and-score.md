@@ -1,8 +1,7 @@
 # Screen and score (step 3)
 
-Read this on entering step 3. It tells you how to screen intake items, score them with the suite's six scoring
-dimensions and the portfolio's weights split into two axes (value and readiness), and record the screening gate
-(`g0`). Keys in brackets are listed in §7.
+Read this on entering step 3: screen intake items, score them on two axes (value and readiness) and record the
+screening gate (`g0`). Keys in brackets are listed in §7.
 
 ## Contents
 
@@ -22,10 +21,8 @@ Treat the scores as a facilitation device, not a validated model.
 
 **Exit criteria** for each screened item:
 
-- Passed the pre-score gates (§3.1), or closed with the reason.
-- A value range per lever (`low`, `high`, `unit`, `assumptions`). No range, no value score.
-- Six scores with what each rests on; `weighted_score`, `value_index` and `readiness_index`.
-- The readiness checklist (§3.3) answered.
+- Passed the pre-score gates (§3.1), or closed with the reason; the readiness checklist (§3.3) answered.
+- A value range per lever (no range, no value score); six scores with what each rests on; both indexes.
 - `category`, `horizon`, `risk_tier`, `gate_path` and a sponsor who controls discovery resources.
 - A `g0` decision by the path's `g0_deciders`: Go into discover, Kill, Hold (with `revisit_when`) or Recycle (back
   to the submitter with what to rework), or "pending the forum" while no deciders are named. Every Go carries
@@ -33,23 +30,22 @@ Treat the scores as a facilitation device, not a validated model.
 
 ## 2. How to run it
 
-1. **Name the step.** "We are screening: is each idea worth it and ready for it? Next come the gates."
-2. **Confirm the weights** from `settings.scoring_weights`. Do not re-open them item by item; recalibration
+1. **Confirm the weights** from `settings.scoring_weights`. Do not re-open them item by item; recalibration
    happens at a rebalance review [HBR-2026].
-3. **Run the pre-score gates** (§3.1) on each item.
-4. **Size as ranges.** Per lever: low, high, unit and the main assumption, from the volume recorded at intake.
-5. **Score across, not down.** One dimension at a time across all items, using the anchors in
+2. **Run the pre-score gates** (§3.1) on each item.
+3. **Size as ranges.** Per lever: low, high, unit and the main assumption, from the volume recorded at intake.
+4. **Score across, not down.** One dimension at a time across all items, using the anchors in
    `../../../transformation-advisor/references/method/prioritize.md` §3.3. Say what each score rests on.
-6. **Compute** `weighted_score` and the two indexes (§3.2). Show the items on the two axes.
-7. **Answer the readiness checklist** (§3.3). A weak answer lowers feasibility or data readiness, or becomes a
+5. **Compute** `weighted_score` and the two indexes (§3.2). Show the items on the two axes.
+6. **Answer the readiness checklist** (§3.3). A weak answer lowers feasibility or data readiness, or becomes a
    condition on the Go.
-8. **Categorize** with the shared category rules (prioritize §3.4) and set the horizon.
-9. **Check against the portfolio**: duplicates, dependencies on foundation items and the balance. Note where the
+7. **Categorize** with the shared category rules (prioritize §3.4) and set the horizon.
+8. **Check against the portfolio**: duplicates, dependencies on foundation items and the balance. Note where the
    item would sit in the queue for the live limit. The limit binds a Go into prototype, pilot or scale (`g1`, `g2`,
    `g4`), not the `g0` Go into discover, so never list it as `g0` evidence.
-10. **Propose kill criteria** for each likely Go. When the intake record's "From the plan" section has a go/no-go,
+9. **Propose kill criteria** for each likely Go. When the intake record's "From the plan" section has a go/no-go,
     start from it; if you propose something different, say how it differs and why.
-11. **Record the `g0` decision** by the deciders named for the item's path in `gate_paths.g0_deciders`. If no
+10. **Record the `g0` decision** by the deciders named for the item's path in `gate_paths.g0_deciders`. If no
     deciders are named for that path, do not append a `g0` decision: write the proposed outcome in the record's
     Screen result as "pending the forum", keep `stage: intake`, set `next_gate.gate: g0`, and put the item in the
     next review pack. Play back, write, update state.
@@ -100,13 +96,9 @@ Do not apply a technology-style payback hurdle of under a year; AI value usually
 ## 4. Questions and traps
 
 Ask which candidate has the weakest evidence, and whether the people who would build it have the skills or would
-source them [HBR-2026].
-
-| Trap | How to avoid it |
-|---|---|
-| **Optimizing for the wrong problem.** Of RAND's 50 industry interviewees, 84% cited leadership-driven failures, such as the wrong problem or metric, as a primary reason AI projects fail (interviewee perceptions) [RAND-2024] | Metric agreed with the benefit owner before Go |
-| **One blended number** | Show both indexes; a Go on a low-readiness item names the readiness work |
-| **Scoring down, item by item** | Score across, one dimension at a time |
+source them [HBR-2026]. Agree the metric with the benefit owner before a Go: of RAND's 50 industry interviewees,
+84% cited leadership-driven failures, such as the wrong problem or metric, as a primary reason AI projects fail
+(interviewee perceptions) [RAND-2024].
 
 ## 5. Worked example
 
@@ -119,10 +111,7 @@ source them [HBR-2026].
 | Know-how search over the precedent library (grade B) | 4 | 4 | 2 | 3 | 2 | 4 | 3.30 | 3.60 | 3.00 | Hold behind a new foundation item: clean up the library first |
 
 The know-how search shows why the axes matter: its weighted score looks acceptable, but data readiness holds
-readiness below 3.5. The library clean-up is logged as a foundation item, and the search's `revisit_when` is
-"clean-up item passes `g2`". The K-1 Go names its resources (a preparer and the tax operations manager part-time,
-released by the tax practice leader) and a kill criterion (documents cannot be read reliably on a sample of last
-season's returns).
+readiness below 3.5, so a library clean-up is logged as a foundation item and the search waits for it to pass `g2`.
 
 ## 6. Output
 
@@ -134,13 +123,8 @@ Per item in `portfolio.yaml`: `value`, `scores`, `weighted_score`, `value_index`
 
 ## 7. Sources
 
-- `BCG-2024` — Boston Consulting Group, *AI adoption in 2024: 74% of companies struggle to achieve and scale
-  value*, press release, 2024-10-24. https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
-- `COOPER-STAGEGATE-n.d.` — Robert G. Cooper, Stage-Gate International, *The Stage-Gate model: an overview*,
-  method article, undated. https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
-- `HBR-2026` — Nelson, Davenport, Scade, *Manage your AI investments like a portfolio*, Harvard Business
-  Review, 2026-01 (read via reprint). https://hbr.org/2026/01/manage-your-ai-investments-like-a-portfolio
-- `MSFT-PLAN-2026` — Microsoft Learn, *Plan for AI adoption*, vendor guidance, updated 2026-10-15.
-  https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
-- `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects and how they
-  can succeed*, research report, 2024-08-13. https://www.rand.org/pubs/research_reports/RRA2680-1.html
+- `BCG-2024` — Boston Consulting Group, *AI adoption in 2024: 74% of companies struggle to achieve and scale value*, press release, 2024-10-24. https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
+- `COOPER-STAGEGATE-n.d.` — Robert G. Cooper, Stage-Gate International, *The Stage-Gate model: an overview*, method article, undated. https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
+- `HBR-2026` — Nelson, Davenport, Scade, *Manage your AI investments like a portfolio*, Harvard Business Review, 2026-01 (read via reprint). https://hbr.org/2026/01/manage-your-ai-investments-like-a-portfolio
+- `MSFT-PLAN-2026` — Microsoft Learn, *Plan for AI adoption*, vendor guidance, updated 2026-10-15. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
+- `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects and how they can succeed*, research report, 2024-08-13. https://www.rand.org/pubs/research_reports/RRA2680-1.html

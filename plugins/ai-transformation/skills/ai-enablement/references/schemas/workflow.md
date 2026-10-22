@@ -14,13 +14,13 @@ title: string
 roles: [ string ]                  # role groups that use it
 practice: string
 task: string                       # the task in the role's own words
-kind: prompt | skill | procedure   # a pattern a person adapts | packaged, used the same way across a team | written steps mixing AI and manual work
+kind: prompt | skill | procedure   # see ../workflow-library.md §3
 work_types: [ id ]
 pattern: id                        # often draft-review-loop, research-brief, grounded-knowledge-assistant or other
 ladder: assist | augment           # automate or delegate belongs in ai-solution-delivery
 runtime_class: id                  # usually personal-assistant or shared-team-skills
 tool: string | null                # only a product listed in overlay/tool-catalog.yaml
-status: candidate | testing | approved | needs-retest | retired   # lifecycle in ../workflow-library.md §4
+status: candidate | testing | approved | needs-retest | retired   # lifecycle in ../workflow-library.md §3
 origin: crowd | champion | central | solution   # any user, a champion, the central team, or a launched solution
 owner: role                        # keeps the entry current
 reviewer: role                     # approves it for the library

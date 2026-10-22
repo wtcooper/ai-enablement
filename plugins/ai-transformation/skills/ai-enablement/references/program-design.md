@@ -34,7 +34,7 @@ charter measure defined in `measures.yaml`; Now, Next and Later by dependency, e
    years [GALLUP-2025]. If undecided, say so, and what the decision depends on.
 6. **Governance:** cite `overlay/policy.md` and `overlay/tool-catalog.yaml` if they exist; if not, hand off to
    ai-governance before any curriculum covers client data. Ask what has been tried already, and what happened.
-7. **Measures:** "What would the sponsor accept as proof?" Define them with the layers in `measure-adoption.md` §4,
+7. **Measures:** "What would the sponsor accept as proof?" Define them with the layers in `measure-adoption.md` §3,
    including at least one `embedded` and one `outcome`. Sequence Now, Next, Later, play back and write.
 
 ## 3. The operating model

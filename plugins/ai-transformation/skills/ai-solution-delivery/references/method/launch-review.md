@@ -1,9 +1,7 @@
 # Launch and post-launch review (step 6)
 
-Read this on entering step 6 and at every later review. It covers the staged launch and the numbered post-launch
-reviews: promised against achieved, what overrides and incidents say, how the eval set must change, and whether
-to continue, tighten, loosen, redesign or retire. Keys in brackets are listed in §6. *(advisor default)* marks a
-working rule, not a finding from a source.
+Read this on entering step 6 and at every later review. Keys in brackets are listed in §6; *(advisor default)*
+marks a working rule, not a finding from a source.
 
 ## Contents
 
@@ -68,10 +66,8 @@ Practitioner guidance puts trace-review cycles at two to four weeks, with 100 or
 
 ### 3.3 Eval-set health
 
-Add every escaped error as a case [HUSAIN-2026]. Graduate reliable capability cases into regression and retire
-cases that always pass [ANTHROPIC-2026; HUSAIN-2026]. Ask what changed in the inputs or users, and re-baseline
-when the product or process changes [APPLIEDLLMS-2024, 2.1.1; ANTHROPIC-2026]. Watch coverage and freshness, not
-only outputs, for silent decay [GOOGLE-RULES, Rule 10].
+Add every escaped error as a case [HUSAIN-2026]; graduate reliable cases into regression and retire cases that
+always pass; ask what changed in the inputs or users, and re-baseline when the product or process changes.
 
 ### 3.4 People and reuse
 
@@ -86,8 +82,7 @@ only outputs, for silent decay [GOOGLE-RULES, Rule 10].
   [FRB-2011].
 - **Loosen human review** only after a measured sample shows stable quality across at least one full review
   cycle; **tighten immediately** after an incident *(advisor default)*.
-- **Move up a rung** only when the design brief's written rule is met; move down on a miss [ANTHROPIC-2024;
-  OPENAI-2025].
+- **Move up a rung** only when the design brief's written rule is met; move down on a miss (rule 10).
 - **Benefit not appearing** at its horizon: say so, record the lesson, and take a continue, redesign or retire
   decision to **ai-portfolio**; never extend the horizon silently.
 - **Retire** when the solution no longer earns its run and review cost, or the work has changed; plan
@@ -114,12 +109,8 @@ the decision.
 
 **Sources**
 
-- `ANTHROPIC-2024` — Anthropic, *Building effective agents*, 2024-12-19. https://www.anthropic.com/engineering/building-effective-agents
-- `ANTHROPIC-2026` — Anthropic, *Demystifying evals for AI agents*, 2026-01-09. https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
-- `APPLIEDLLMS-2024` — Yan et al., *What We've Learned From A Year of Building with LLMs*, 2024-06-08. https://applied-llms.org/
 - `BERKELEY-2026` — Pan, Arabzadeh et al., *Measuring Agents in Production*, 2026-06-04. https://arxiv.org/pdf/2512.04123
 - `FRB-2011` — Federal Reserve Board and OCC, *SR 11-7: Supervisory Guidance on Model Risk Management*, 2011-04-04. https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- `GOOGLE-RULES` — Google for Developers, *Rules of Machine Learning*, page last updated 2025-08-25. https://developers.google.com/machine-learning/guides/rules-of-ml
 - `HUSAIN-2026` — Hamel Husain, *LLM Evals: Everything You Need to Know (FAQ)*, 2026-09-18. https://hamel.dev/blog/posts/evals-faq/
 - `NIST-2024` — NIST, *AI 600-1: Generative AI Profile*, 2024-07. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - `OPENAI-2025` — OpenAI, *A practical guide to building agents*, 2025-04. https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf

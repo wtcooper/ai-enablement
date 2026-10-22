@@ -1,9 +1,8 @@
 # Evaluation plan (step 4)
 
-Read this on entering step 4. The evaluation plan is the centre of delivery: it says what "good" means in the
-team's own terms, decides whether the solution is fit to launch, and keeps telling the team after launch. You
-design the plan; the firm's people run it in their approved systems. Keys in brackets are listed in §7.
-*(advisor default)* marks a working rule, not a finding from a source.
+Read this on entering step 4. The evaluation plan is the centre of delivery: it says what "good" means, decides
+launch, and keeps telling the team after launch. The firm's people run it in their approved systems. Keys in
+brackets are listed in §7; *(advisor default)* marks a working rule, not a finding from a source.
 
 ## Contents
 

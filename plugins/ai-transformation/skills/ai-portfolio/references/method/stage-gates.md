@@ -81,10 +81,9 @@ names are this skill's.
 | `g4` production → scale | Benefits measured against forecast after go-live [IVI-ITCMF-n.d.; AUSGOV-2013]; total cost of ownership and who pays for run cost at scale [HBR-2026] | Post-launch review from ai-solution-delivery; reuse plan; enablement plan from ai-enablement; control plan per site |
 | `retire` | §5 checklist | — |
 
-For high-impact or regulated items, add the minimum practices the firm's policy sets; OMB requires minimum risk
-practices for high-impact AI and termination of non-compliant use [OMB-2025]. Agentic items take the same gates,
-with cost and risk evidence at `g2` and `g3`: Gartner forecasts that over 40% of agentic AI projects will be
-cancelled by the end of 2027 (a forecast, read through a news report) [GARTNER-2025].
+High-impact or regulated items add the minimum practices the firm's policy sets [OMB-2025]. Agentic items take the
+same gates, with cost and risk evidence at `g2` and `g3`: Gartner forecasts that over 40% of agentic AI projects
+will be cancelled by the end of 2027 (a forecast, read through a news report) [GARTNER-2025].
 
 **Light path (default; the user can change it in step 1).** For the firm's lowest risk tier and
 individual-productivity items: `g1` and `g2` combine into one gate, the portfolio owner decides `g0`, and `g3` keeps
@@ -98,9 +97,7 @@ inside one firm is this skill's default.
 |---|---|---|
 | An item in `discover` or later needs a problem frame or a build or buy leaning (a brief may open in `discover` as `g1` evidence); at the latest, a Go at `g1` | **ai-solution-delivery** | It opens `solutions/<id>/` and hands back. A `g0` Go does not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back, with no gate needed |
 | `g3` and `g4` evidence | ai-solution-delivery's `readiness.md` and `post-launch.md` | Read them as gate evidence; do not re-assess |
-| Risk tier unclear, new tool or vendor, client-data question | **ai-governance** | Tier, policy and tool decision come back through `overlay/` |
-| Adoption, training, champions; seat roll-outs | **ai-enablement** | Enablement plan for `g4`; workflows into `enablement/workflows/` |
-| A practice needs its opportunities found and planned | **transformation-advisor** | New items come back through intake |
+| Risk tier, tool, vendor or client-data question; adoption and training; a practice to plan | **ai-governance**, **ai-enablement**, **transformation-advisor** (`SKILL.md`, Handoffs) | Decisions come back through `overlay/`; an enablement plan for `g4`; new items through intake |
 
 **When the item asked for can't go to delivery** (it needs no AI, is still at intake, or is on Hold), say why.
 Then list the AI items (`ai_use` null) by `weighted_score`, each with what blocks it: the gate it waits at and who

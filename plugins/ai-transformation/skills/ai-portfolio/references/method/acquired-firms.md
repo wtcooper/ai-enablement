@@ -1,11 +1,9 @@
 # Rolling capabilities into acquired firms
 
-Read this when the firm has acquired, or is about to acquire, another firm and wants to move its proven AI
-capabilities there: approved tools, workflows from the enablement library, the governance overlay and data
-foundations. It is the detail behind `stage-gates.md` §9. Assessing the acquired firm first is the
-transformation-advisor's acquisition path (`../../../transformation-advisor/references/method/acquisitions.md`).
-Rules 1, 2, 5 and 9 in `SKILL.md` apply throughout. Keys in brackets are listed in §10; most acquisition figures
-are vendor-published or self-reported.
+Read this to move proven AI capabilities (approved tools, library workflows, the governance overlay, data
+foundations) into an acquired firm; it is the detail behind `stage-gates.md` §9. Assessing the firm first is the
+advisor's acquisition path (`../../../transformation-advisor/references/method/acquisitions.md`). Rules 1, 2, 5
+and 9 apply throughout. Keys in brackets are listed in §10.
 
 ## Contents
 
@@ -15,7 +13,7 @@ are vendor-published or self-reported.
 4. [Clearances: client data, consent and independence](#4-clearances-client-data-consent-and-independence)
 5. [Incoming partners and staff](#5-incoming-partners-and-staff)
 6. [Tracking adoption and value](#6-tracking-adoption-and-value)
-7. [Questions and traps](#7-questions-and-traps)
+7. [Questions](#7-questions)
 8. [Worked example](#8-worked-example)
 9. [Output](#9-output)
 10. [Sources](#10-sources)
@@ -27,17 +25,16 @@ portfolio at the stage its evidence in that firm supports, and is tracked agains
 
 **Exit criteria** for a firm's rollout plan:
 
-- The acquired firm has an assessment (the advisor's unit `units/<target-id>/`), validated or labelled draft.
-- Each capability to move is a portfolio item with `unit` set to the acquired firm, its layer (§3), its
-  `depends_on`, and an entry stage justified by evidence in that firm.
-- Consent, client-data and independence clearances are recorded before any item that moves data or tools (§4).
-- Each item past `g3` has adoption and value rows in `benefits.yaml` on the acquired firm's baseline (§6).
-- Incoming partners have a written description of the platform's AI with each capability's evidence status (§5).
+- An assessment of the acquired firm (the advisor's unit `units/<target-id>/`), validated or labelled draft.
+- Each capability to move is an item with `unit` set to the firm, its layer (§3), `depends_on`, and an entry
+  stage justified by evidence in that firm; clearances recorded before anything moves data or tools (§4).
+- Items past `g3` have adoption and value rows on the firm's own baseline (§6); incoming partners have a written
+  description of the platform's AI with each capability's evidence status (§5).
 
 ## 2. How to run it
 
-1. **Read the assessment** of the acquired firm: journey stage per dimension, red flags, foundation items. If none
-   exists, hand off to transformation-advisor (acquisition path) first.
+1. **Read the assessment** (stage per dimension, red flags, foundation items), or hand off to
+   transformation-advisor's acquisition path first.
 2. **Settle the model.** A platform can buy smaller firms into one larger organization, or sit above firms that
    keep their own brand and leadership and take shared services [NJCPA-PE-2026]. Merged: one stack and one
    workflow set, sequenced. Umbrella: offer the capabilities with evidence and let each firm adopt.
@@ -51,8 +48,8 @@ portfolio at the stage its evidence in that firm supports, and is tracked agains
    production at home usually enters at `pilot`: feasibility is shown, adoption and value in this firm are not
    (this skill's default). Use the light path where the risk tier allows it (`stage-gates.md` §3.2).
 6. **Sequence by layer** (§3), check readiness before each layer, and hold gates as usual.
-7. **Add the firm to the AI inventory** from day one: what runs, who owns it, what stage, what governance
-   [GT-AIIMPACT-2026]. In the portfolio, that is the items filtered by `unit`.
+7. **Add the firm to the AI inventory** from day one (what runs, who owns it, what stage, what governance)
+   [GT-AIIMPACT-2026]: the items filtered by `unit`.
 
 ## 3. What moves first: layers and readiness checks
 
@@ -105,8 +102,8 @@ reviewer workload or client complaints rise (defaults).
   `../../../transformation-advisor/references/method/leading-partners.md`.
 - **Put what stays local in writing,** and ask staff what worries them and how leadership has explained AI's
   purpose [RSM-AIDD-2025]. Budget learning time explicitly.
-- **Never use tool-usage counts to judge people.** Adoption is measured per item (§6), never per person (rule 1).
-- **Protect the junior pipeline.** Each item's role evolution says how juniors still learn (rule 2).
+- **Measure adoption per item, never per person** (rule 1), and say in each item's role evolution how juniors
+  still learn (rule 2).
 - **Describe the platform's AI without overstating it.** Keep the pitch apart from the evidence. For each
   capability give its evidence status (announced, piloting, in production; whether value is measured, in how many
   firms, against what baseline), figures as ranges with who measured them, what will change in their work and what
@@ -132,17 +129,10 @@ Follow `value-tracking.md` and `../schemas/benefits.md`; these rules add to them
   or client group, never named people.
 - **Capacity per firm.** Each firm's freed capacity gets its own redeploy-or-reduce decision (rule 2).
 
-## 7. Questions and traps
+## 7. Questions
 
 Ask who decides whether the firm takes shared tools, which clearances each capability needs, what the firm's own
 baseline is and which firm will serve as the comparison, and who will review AI output there, with what time.
-
-| Trap | How to avoid it |
-|---|---|
-| Starting with use cases before policy, data and training | Layers 0–3 first [RSM-AIDD-2025] |
-| Carrying the home stage into the acquired firm | Entry stage from the firm's own evidence |
-| Seats and logins reported as adoption | Interim rows on work volume; value rows on the firm's baseline |
-| Pitching home results as guaranteed | Evidence status and provenance on every claim (§5) |
 
 ## 8. Worked example
 

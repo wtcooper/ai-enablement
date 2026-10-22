@@ -1,8 +1,8 @@
 # Schema: overlay/tool-catalog.yaml (tool-catalog/v1)
 
-The approved-tool catalog. Every skill in the suite reads it (core rule 6): they recommend tools from it and flag
-anything outside it. Version 1 keeps the starter shape (`tools` with `name`, `runtime_class`, `approved_for`,
-`owner`, plus `not_approved_note`) and adds optional fields, so an existing catalog stays valid.
+The approved-tool catalog. Every skill reads it (core rule 6). Version 1 keeps the starter shape (`tools` with
+`name`, `runtime_class`, `approved_for`, `owner`, plus `not_approved_note`) and adds optional fields, so an existing
+catalog stays valid.
 
 ## Contents
 
@@ -56,24 +56,20 @@ not_approved_note: string           # required: what to tell people about anythi
 | 6 Vendor and tool evaluation | `id`, `status`, `vendor`, `contract`, `conditions`, `vendor_file`, `reapproval_triggers`, `exit_plan`, `last_reviewed` |
 | 7 Secure enablement | top-level `owner` and `request_path` |
 
-- **One entry per tool + tier + contract.** The consumer and business tiers of one product are two entries with
-  different `data_classes`; a consumer entry never lists `client-confidential` or `regulated`.
-- **Embedded features count.** AI inside licensed software gets its own entry with `embedded_in` set, unless the
-  policy explicitly exempts it.
-- **`not-approved` entries stay listed** with a reason in `approved_for` ("Not approved: consumer terms"), so people
-  can see the answer and the alternative.
-- **Flags** are `true` when the regime's step applies to this entry (for example consent is needed before
-  return information goes in). They do not replace the per-workflow decision in `policy.md`.
-- **Quote free text.** Put every free-text value in double quotes.
-- **Dates** record when something happened (`updated`, `last_reviewed`); never put a deadline here.
+- **One entry per tool + tier + contract.** A consumer entry never lists `client-confidential` or `regulated`.
+- **Embedded features count:** AI inside licensed software gets its own entry with `embedded_in`, unless the policy
+  exempts it.
+- **`not-approved` entries stay listed** with the reason and the alternative in `approved_for`.
+- **Flags** are `true` when the regime's step applies to the entry; they do not replace the per-workflow decision in
+  `policy.md`.
+- **Quote free text.** Dates record when something happened (`updated`, `last_reviewed`), never a deadline.
 
 ## 3. How other skills read it
 
-- Recommend only entries with `status` `approved` or `approved-with-conditions` (or no `status`), and only for
-  the `data_classes` and `max_risk_tier` they list. Mention `conditions` when you recommend one.
-- `pilot` entries are for the `user_groups` listed only. Treat `under-review`, `not-approved` and `retired` as
-  outside the catalog and flag them.
-- If the catalog has no fitting entry, describe the need by runtime class and point to `request_path`.
+- Recommend only entries with `status` `approved` or `approved-with-conditions` (or no `status`), only for their
+  `data_classes` and `max_risk_tier`, and mention their `conditions`. `pilot` entries are for their `user_groups` only.
+- Treat `under-review`, `not-approved` and `retired` as outside the catalog and flag them. With no fitting entry,
+  describe the need by runtime class and point to `request_path`.
 
 ## 4. Example
 

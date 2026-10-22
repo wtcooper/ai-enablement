@@ -1,9 +1,7 @@
 # Value tracking (step 6)
 
-Read this on entering step 6: when an item approaches `g3`, when a review needs benefits figures, or when the user
-asks what the portfolio has delivered. It tells you how to keep the benefits register (forecast against realised
-value by named metric, with attribution) and the redeploy-or-reduce choice on freed capacity. Keys in brackets are
-listed in §6.
+Read this when an item approaches `g3`, a review needs benefits figures, or the user asks what the portfolio has
+delivered. Keys in brackets are listed in §6.
 
 ## Contents
 
@@ -22,28 +20,25 @@ comparison with the business case [AUSGOV-2013; IVI-ITCMF-n.d.].
 
 **Exit criteria.**
 
-- Every item at or past `g3` has one row per benefit in `benefits.yaml`, each with owner, baseline, forecast range,
-  counterfactual and measurement.
-- Actuals recorded at each review, as ranges with their basis; status set by the rules in `../schemas/benefits.md`.
-- Use-case rows and enterprise rows kept apart.
-- For capacity benefits: hours split into absorbed, redeployed and cashable, and a recorded redeploy-or-reduce
-  decision, with role evolution in `portfolio.yaml`.
-- Portfolio measures computed for the review (§3.3).
+- Every item at or past `g3` has one row per benefit, with owner, baseline, forecast range, counterfactual and
+  measurement; actuals at each review as ranges with their basis; status by `../schemas/benefits.md`.
+- Use-case and enterprise rows kept apart; portfolio measures computed for the review (§3.3).
+- For capacity benefits: the absorbed, redeployed and cashable split and a recorded redeploy-or-reduce decision,
+  with role evolution in `portfolio.yaml`.
 
 ## 2. How to run it
 
-1. **Name the step.** "We are tracking value: what was forecast, what has been realised, and where the time goes."
-2. **Create rows before `g3`.** For each lever in the item's `value`, one row: copy the forecast range and
+1. **Create rows before `g3`.** For each lever in the item's `value`, one row: copy the forecast range and
    assumptions; name the metric and the benefit owner (a role in the business).
-3. **Baseline from records** before launch, labelled with its basis [AUSGOV-2013].
-4. **Agree the counterfactual** before launch (§3.1) and write the attribution note: what else ships at the same
+2. **Baseline from records** before launch, labelled with its basis [AUSGOV-2013].
+3. **Agree the counterfactual** before launch (§3.1) and write the attribution note: what else ships at the same
    time and how its effect is separated. Deloitte's interviewees name AI entangled with broader transformation
    among the reasons value is hard to attribute [DELOITTE-2025].
-5. **Collect actuals** at each review after go-live, from the agreed measure; record ranges and basis.
-6. **Set status** and, for capacity, the split and the decision (§3.2). Ask the benefit owner, one question at a
+4. **Collect actuals** at each review after go-live, from the agreed measure; record ranges and basis.
+5. **Set status** and, for capacity, the split and the decision (§3.2). Ask the benefit owner, one question at a
    time; read `people-and-change.md` before the capacity conversation.
-7. **Keep what was not achieved.** Record not-realised and withdrawn benefits with lessons [IVI-ITCMF-n.d.].
-8. **Compute the portfolio measures** for the review pack, and update `updated`.
+6. **Keep what was not achieved.** Record not-realised and withdrawn benefits with lessons [IVI-ITCMF-n.d.].
+7. **Compute the portfolio measures** for the review pack, and update `updated`.
 
 ## 3. Rules for honest benefits
 

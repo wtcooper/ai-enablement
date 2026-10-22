@@ -26,7 +26,7 @@ segments:
     groups: [ string ]             # practices, levels or role groups; never named people
     size_low: integer              # a range, because segments are estimates
     size_high: integer
-    depth: not-using | one-off | repeatable | builder        # the ladder in ../assess-and-segment.md §4
+    depth: not-using | one-off | repeatable | builder        # the ladder in ../assess-and-segment.md §3
     main_barrier: access | use-case | time | permission | security | belief | fear | none
     manager_behaviour: none | encourages | requires | unknown
     first_move: string
@@ -34,7 +34,7 @@ segments:
 measures:
   - id: string                     # short, stable, unique in this file, e.g. weekly-active
     name: string
-    layer: reach | activity | depth | embedded | outcome | sentiment | side-effect   # ../measure-adoption.md §4
+    layer: reach | activity | depth | embedded | outcome | sentiment | side-effect   # ../measure-adoption.md §3
     definition: string             # in words a sponsor would understand
     numerator: string
     denominator: string            # includes non-users for reach, activity and depth
@@ -73,7 +73,7 @@ updated: YYYY-MM-DD
   segment of it), not the licensed or active users.
 - **Label every number.** `method` says how it was collected; `provenance` who measured it; `measured` whether it is
   tracked or estimated. A self-estimate of time saved is `method: survey`, `measured: false`, carries `discount`, and
-  is reported apart from measured outcomes (`../measure-adoption.md` §5).
+  is reported apart from measured outcomes (`../measure-adoption.md` §4).
 - **Counts may be points; value is a range.** Telemetry counts (`value`) can be single numbers. Estimates, time
   saved and any value figure use `low` and `high` (core rule 3).
 - **Targets are ranges with a dependency, never a date.** `target.after` names what must be in place first. `as_of`

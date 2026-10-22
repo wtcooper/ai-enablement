@@ -22,7 +22,7 @@ findings suggest bans may be ineffective and that a policy does not guarantee co
 2. **Design the request path** (§5) and ask what response time the owner can commit to and keep; never invent one.
    Design the expedited lane from S2: urgent work is the usual bypass (`references/policy-and-data.md` move 3).
 3. **Build controls into the tools** (move 2); set triggers and cadence (move 3); write exceptions and incidents (§5).
-4. **Set training** (move 5) with ai-enablement and agree the measures; then play back the whole policy and write §7.
+4. **Set training** (move 5) with ai-enablement and agree the measures; then play back the policy and write the outputs (§7).
 
 ## 3. Question bank
 

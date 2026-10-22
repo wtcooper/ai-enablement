@@ -1,11 +1,10 @@
 # Schema: portfolio/benefits.yaml (benefits/v1)
 
-The benefits register: one entry per benefit, by named metric, with its owner, baseline, forecast range,
-counterfactual, actuals by review and the redeploy-or-reduce decision on freed capacity. Rows are created
-before an item passes gate `g3` (pilot to production) and updated at every portfolio review. Launched
-solutions from ai-solution-delivery add rows here. A blank starting file is `../templates/benefits.yaml`. The
-fields follow benefits-realisation practice [AUSGOV-2013; IVI-ITCMF-n.d.]; the method is in
-`../method/value-tracking.md`.
+The benefits register: one entry per benefit and named metric, with owner, baseline, forecast range,
+counterfactual, actuals by review and the capacity decision. Rows are created before an item passes `g3` and
+updated at every review; launched solutions from ai-solution-delivery add rows here. Blank file:
+`../templates/benefits.yaml`; method: `../method/value-tracking.md`. The fields follow benefits-realisation
+practice [AUSGOV-2013; IVI-ITCMF-n.d.].
 
 ## Contents
 
@@ -35,7 +34,6 @@ benefits:
     counterfactual: control-group | staggered-start | parallel-run | baseline-comparison | assumption
     attribution: string            # other change shipping alongside; what share is claimed for the AI and why
     measurement: { method: string, collected_by: role, when: string }   # when = trigger, e.g. "each review after go-live"
-    depends_on: [ id ]             # other benefits this one needs first
     actuals:
       - { review: integer, period: string, low: number, high: number, unit: string, basis: from-record | reported | observed | outside-in, note: string }
     status: forecast | tracking | realised | partly-realised | not-realised | withdrawn
@@ -53,27 +51,23 @@ benefits:
 
 - **One metric per row.** An item with three levers has three rows. The metric matches the portfolio's
   `settings.value_levers` metric for that lever, or says why it differs.
-- **Owner is a role** in the business, not in the AI team. The share of items with a benefit owner is a
-  portfolio measure [IVI-ITCMF-n.d.].
-- **Forecast is a range** with a unit, a period and assumptions, copied from the item's `value` line at the gate
-  that approved the benefit. Never overwrite a forecast; a re-forecast is a new row with `status: forecast` and a
-  note in `attribution`.
-- **Baseline before launch.** A row without a baseline cannot move past `forecast`. `basis` labels where the
-  number came from, as in the advisor's Map step: from a record, reported by someone, observed, or estimated
-  outside-in.
-- **Counterfactual before launch.** Agree it before go-live [FCC-2026; DELOITTE-2025]. `assumption` is allowed
-  but must say so in `attribution`, and the row's `confidence` cannot be `high`.
-- **Actuals are ranges too** when measurement is uncertain; a single measured value repeats in `low` and `high`.
-  Each actual carries the review number it was reported at.
+- **Owner is a role** in the business, not in the AI team.
+- **Forecast is a range** with a unit, a period and assumptions, copied from the item's `value` line. Never
+  overwrite a forecast; a re-forecast is a new row with `status: forecast` and a note in `attribution`.
+- **Baseline and counterfactual before launch** [FCC-2026; DELOITTE-2025]. A row without a baseline cannot move
+  past `forecast`. `basis` labels where a number came from (the advisor's Map labels). `assumption` as the
+  counterfactual must say so in `attribution`, and the row's `confidence` cannot be `high`.
+- **Actuals are ranges too** when measurement is uncertain (a single value repeats in `low` and `high`), each with
+  the review number it was reported at.
 - **Status** is set at each review: `tracking` once actuals exist; `realised` when actuals sit inside or above the
   forecast range on the agreed counterfactual; `partly-realised` below the low end but above baseline;
   `not-realised` at or below baseline at the planned review point; `withdrawn` when the item is killed or the
   benefit no longer applies. Keep not-realised and withdrawn rows; they feed the benefit success rate.
 - **Level.** `use-case` rows measure the item's own metric; `enterprise` rows record a P&L line. Never add
   use-case rows together and report the sum as enterprise impact [MCK-2026].
-- **Capacity.** Hours released split three ways (absorbed, redeployed, cashable), as in
-  `../../../transformation-advisor/references/method/business-case.md` §3.2. Only `cashable` carries money as a
-  cost saving. `decision` records the redeploy-or-reduce choice at the level of roles and capacity, never people.
+- **Capacity.** Hours released split three ways (`../method/value-tracking.md` §3.2); only `cashable` carries money
+  as a cost saving. `decision` records the redeploy-or-reduce choice at the level of roles and capacity, never
+  people. `capacity` is null for benefits that release no hours.
 - **Quote free text.** Double quotes on every free-text value.
 
 ## 3. Example
@@ -97,7 +91,6 @@ benefits:
     counterfactual: staggered-start
     attribution: "Two offices start a season later and serve as the comparison; the new review checklist ships at the same time in all offices, so its effect is common to both groups"
     measurement: { method: "Time records per return, both groups", collected_by: "Tax operations manager", when: "Each review after go-live" }
-    depends_on: []
     actuals:
       - { review: 4, period: "first half of season", low: 0.4, high: 0.6, unit: "hours/return saved", basis: from-record, note: "Comparison offices flat" }
     status: tracking
@@ -115,13 +108,8 @@ The figures in this example are illustrative, not evidence.
 
 ## 4. Sources
 
-- `AUSGOV-2013` — Australian Government, Department of Finance, *Gateway Reviews lessons learned: Gate 5,
-  Benefits Realisation Review*, government guidance, 2013-10. https://www.finance.gov.au/sites/default/files/2019-11/Gate_5_-_Lessons_Learned.pdf
-- `DELOITTE-2025` — Deloitte, *AI ROI: the paradox of rising investment and elusive returns*, consultancy survey,
-  2025-10-22. https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
-- `FCC-2026` — Business Times (via French Chamber of Commerce in Singapore), *DBS says AI push is paying off*,
-  news report, 2026-02-09. https://www.fccsingapore.com/news/n/news/dbs-says-ai-push-is-paying-off-as-it-shifts-from-efficiency-tool-to-growth-engine.html
-- `IVI-ITCMF-n.d.` — Innovation Value Institute, *Benefits Harvesting (IT-CMF 18.07)*, maturity-model guidance,
-  undated. https://portal.ivi.ie/+itcmf/18.07/value/BAR/C/C3
-- `MCK-2026` — McKinsey & Company, *The state of AI in 2026: on the road to ROI*, consultancy survey, 2026-08.
-  https://www.mckinsey.com.br/en/our-insights/the-state-of-ai
+- `AUSGOV-2013` — Australian Government, Department of Finance, *Gateway Reviews lessons learned: Gate 5, Benefits Realisation Review*, government guidance, 2013-10. https://www.finance.gov.au/sites/default/files/2019-11/Gate_5_-_Lessons_Learned.pdf
+- `DELOITTE-2025` — Deloitte, *AI ROI: the paradox of rising investment and elusive returns*, consultancy survey, 2025-10-22. https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
+- `FCC-2026` — Business Times (via French Chamber of Commerce in Singapore), *DBS says AI push is paying off*, news report, 2026-02-09. https://www.fccsingapore.com/news/n/news/dbs-says-ai-push-is-paying-off-as-it-shifts-from-efficiency-tool-to-growth-engine.html
+- `IVI-ITCMF-n.d.` — Innovation Value Institute, *Benefits Harvesting (IT-CMF 18.07)*, maturity-model guidance, undated. https://portal.ivi.ie/+itcmf/18.07/value/BAR/C/C3
+- `MCK-2026` — McKinsey & Company, *The state of AI in 2026: on the road to ROI*, consultancy survey, 2026-08. https://www.mckinsey.com.br/en/our-insights/the-state-of-ai

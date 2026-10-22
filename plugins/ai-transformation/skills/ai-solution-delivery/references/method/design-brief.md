@@ -1,9 +1,7 @@
 # Solution design brief (step 3)
 
-Read this on entering step 3. It turns the sourcing decision into a design brief a builder or configurer can work
-from: architecture by runtime class, data, permissions, security, and the human checkpoints from the pattern
-file. You design; the firm's people build or configure. Keys in brackets are listed in §6. *(advisor default)*
-marks a working rule, not a finding from a source.
+Read this on entering step 3. You design; the firm's people build or configure. Keys in brackets are listed in §6;
+*(advisor default)* marks a working rule, not a finding from a source.
 
 ## Contents
 
@@ -53,19 +51,12 @@ delegation gates in `../../../transformation-advisor/references/method/onboardin
 
 ## 3. Design elements
 
-### 3.1 Architecture by runtime class
+### 3.1 Architecture and rung
 
-| Runtime class | Sketch | Where the checkpoint usually sits |
-|---|---|---|
-| `personal-assistant` | Person gives input and context → model → person uses or edits the output | The person reviews every output |
-| `shared-team-skills` | Shared prompt or skill + approved reference material → model → output in the team's tool | Reviewer sign-off before anything leaves the team |
-| `workflow-automation` | Trigger → fixed steps through existing systems, a model at some steps → system of record | Review queue for low-confidence or high-risk items; sampled checks |
-| `background-agent` | Schedule or event → agent works through steps → result held for review | At the end, and before anything irreversible |
-| `managed-agent-runtime` | Hosted agent with tools, state, permissions and isolation inside business systems | Named checkpoints at key decisions; approval for irreversible actions |
-
-Climb one rung at a time and write down what evidence moves the design up (rule 10). Constrained autonomy is the
-production norm: 68% of surveyed deployed agent systems run at most 10 steps before a person steps in (UC
-Berkeley-led academic study, N=60 for that question) [BERKELEY-2026].
+Sketch the flow from the runtime-class table in `build-or-buy.md` §3.3 (this folder). Climb one rung at a time and
+write down what evidence moves the design up (rule 10). Constrained autonomy is the production norm: 68% of
+surveyed deployed agent systems run at most 10 steps before a person steps in (UC Berkeley-led academic study,
+N=60 for that question) [BERKELEY-2026].
 
 ### 3.2 Data and retrieval
 

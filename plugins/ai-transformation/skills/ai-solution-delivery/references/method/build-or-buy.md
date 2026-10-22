@@ -1,8 +1,7 @@
 # Build, buy or configure (step 2)
 
-Read this on entering step 2. It helps the user choose how the solution is sourced and the simplest runtime class
-that could meet the quality bar. It is mostly a question of differentiation and maintenance, not capability.
-Keys in brackets are listed in §6. *(advisor default)* marks a working rule, not a finding from a source.
+Read this on entering step 2. Sourcing is mostly a question of differentiation and maintenance, not capability.
+Keys in brackets are listed in §6; *(advisor default)* marks a working rule, not a finding from a source.
 
 ## Contents
 
@@ -76,13 +75,13 @@ workflow, an agent that picks its own steps, then several agents. Higher rungs c
 testing effort, and errors compound across steps [ANTHROPIC-2024]. Classes are defined in the shared library §4
 (`../../../transformation-advisor/references/library/index.md`). Typical fit *(advisor mapping)*:
 
-| Runtime class | Typical fit | Main risk to design for |
-|---|---|---|
-| `personal-assistant` | Individual drafting and analysis, a person reviewing every output | Unmanaged data handling; inconsistent practice |
-| `shared-team-skills` | Repeatable team tasks with agreed prompts, templates and reference material | Version drift; no shared evaluations |
-| `workflow-automation` | Fixed multi-step flows through existing systems | Silent failure; brittle integrations |
-| `background-agent` | Tasks that can wait, reviewed at the end; 66% of surveyed deployed agent systems allow response times of minutes or longer (UC Berkeley-led academic survey, N=53) [BERKELEY-2026] | Compounding errors; permissions |
-| `managed-agent-runtime` | Tool-using agents that need logging, permissions, isolation and rollback | Cost; lock-in; complexity |
+| Runtime class | Typical fit | Flow, and where the checkpoint usually sits | Main risk to design for |
+|---|---|---|---|
+| `personal-assistant` | Individual drafting and analysis | Person → model → person uses or edits; every output reviewed | Unmanaged data handling; inconsistent practice |
+| `shared-team-skills` | Repeatable team tasks with agreed prompts and reference material | Shared skill + approved material → model → team's tool; sign-off before anything leaves the team | Version drift; no shared evaluations |
+| `workflow-automation` | Fixed multi-step flows through existing systems | Trigger → fixed steps, a model at some → system of record; review queue for low-confidence or high-risk items, sampled checks | Silent failure; brittle integrations |
+| `background-agent` | Tasks that can wait; 66% of surveyed deployed agent systems allow response times of minutes or longer (UC Berkeley-led academic survey, N=53) [BERKELEY-2026] | Event → agent works through steps → result held; review at the end and before anything irreversible | Compounding errors; permissions |
+| `managed-agent-runtime` | Tool-using agents that need logging, permissions, isolation and rollback | Hosted agent inside business systems; named checkpoints, approval for irreversible actions | Cost; lock-in; complexity |
 
 ### 3.4 Decision rules
 

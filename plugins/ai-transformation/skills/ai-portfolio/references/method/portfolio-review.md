@@ -1,8 +1,7 @@
 # Portfolio review (step 5)
 
-Read this on entering step 5: when a review is due, or when the user asks to "review our AI portfolio". It tells
-you how to build the review pack, surface stop, redirect and scale decisions with their evidence, run the
-rebalance, and record what the forum decided. Keys in brackets are listed in §7.
+Read this when a review is due, or when the user asks to "review our AI portfolio": build the pack, surface
+decisions with their evidence, run the rebalance and record what the forum decided. Keys in brackets: §7.
 
 ## Contents
 
@@ -22,27 +21,26 @@ scale successful pilots, redirect struggling efforts, retire misaligned projects
 
 **Exit criteria.**
 
-- A numbered pack `reviews/<n>-review.md` (Part A) built from `portfolio.yaml` and `benefits.yaml`.
-- Every item that meets a surfacing rule (§3.1) appears under "Decisions asked", with evidence for and against.
-- Part B records each decision with reason, resources or conditions, next gate and the roles who decided.
+- A numbered pack `reviews/<n>-review.md` in which every item that meets a surfacing rule (§3.1) appears under
+  "Decisions asked", with evidence for and against; Part B records each decision, its reason, resources or
+  conditions, next gate and the roles who decided.
 - `portfolio.yaml` updated: decisions carry the review number; `early_warnings`; `state.last_review`.
-- On a rebalance review (every third by default, `setup.md` §3.2): the checks in §3.3.
+- On a rebalance review (every third by default, `setup.md` §3.1): the checks in §3.3.
 
 ## 2. How to run it
 
-1. **Name the step.** "We are preparing review <n>: the pack first, then the decisions."
-2. **Build the pipeline view**: counts by stage, changes since the last review, live items against the limit,
+1. **Build the pipeline view**: counts by stage, changes since the last review, live items against the limit,
    no-AI items and the enablement line counted apart.
-3. **Run the surfacing rules** (§3.1) on every active item. For several flagged items, use the
+2. **Run the surfacing rules** (§3.1) on every active item. For several flagged items, use the
    `prepare-review-item` brief, one subagent per item (`SKILL.md`, Delegation).
-4. **Write a decision block** per surfaced item: the ask, evidence for and against (each fact with its source),
+3. **Write a decision block** per surfaced item: the ask, evidence for and against (each fact with its source),
    the kill criteria and whether any is met, early warnings, two or three options with what each costs and
    releases, and the item owner's recommendation.
-5. **Add the balance, benefits and capacity sections** (template §5 to §7).
-6. **Play the pack back** and ask: "Which decision here would you least like to take, and why?" The answer is
+4. **Add the balance, benefits and capacity sections** (template §5 to §7).
+5. **Play the pack back** and ask: "Which decision here would you least like to take, and why?" The answer is
    usually the one the pack must make clearest.
-7. **After the meeting**, record Part B as the user reports it. Record decisions; do not make them.
-8. **Update** `portfolio.yaml` and, for benefits decisions, `benefits.yaml`. Set `state.last_review`.
+6. **After the meeting**, record Part B as the user reports it. Record decisions; do not make them.
+7. **Update** `portfolio.yaml` and, for benefits decisions, `benefits.yaml`. Set `state.last_review`.
 
 ## 3. What to surface and how
 
@@ -62,9 +60,8 @@ Surface an item for a decision when any of these holds (this skill's defaults, b
 
 ### 3.2 Stop or redirect
 
-Use the causes in `stage-gates.md` §5.1. Before recommending a stop on value alone, check the planned review point:
-measured value can lag the investment (`stage-gates.md` §4). Report leading indicators (adoption quality, process
-change, error rates) at early reviews.
+Use the causes in `stage-gates.md` §5.1. Before the planned review point, value can lag (`stage-gates.md` §4):
+report leading indicators (adoption quality, process change, error rates) instead.
 
 ### 3.3 Rebalance review
 
@@ -78,19 +75,18 @@ change, error rates) at early reviews.
 
 ### 3.4 In a partner-led firm
 
-Lead each decision block with a named workflow and its baseline, not a tool demo (an inference from the partner sources), and check how claimed time
-savings were measured; practitioners' own estimates are self-reported [PAPERJAM-2025]. Separate usage from value:
-in the Thomson Reuters Institute's 2026 survey of legal, tax and accounting, corporate and government
-professionals, 18% knew their organization tracked the ROI of AI tools (respondent-reported) [TRI-AIPS-2026]. Ask
-each skeptic what result would change their mind (`people-and-change.md`).
+Lead each decision block with a named workflow and its baseline, not a tool demo (an inference from the partner
+sources), and check how claimed time savings were measured; practitioners' own estimates are self-reported
+[PAPERJAM-2025]. In the Thomson Reuters Institute's 2026 survey of legal, tax and accounting, corporate and
+government professionals, 18% knew their organization tracked the ROI of AI tools (respondent-reported)
+[TRI-AIPS-2026]. Ask each skeptic what result would change their mind (`people-and-change.md`).
 
 ## 4. Traps
 
-| Trap | How to avoid it |
-|---|---|
-| **Status theatre:** updates with no decisions | Every surfaced item ends with a recorded outcome or a named open question |
-| **Adoption reported as value.** In McKinsey's 2026 global survey (1,719 participants), 80% say AI improved their individual productivity, against 37% reporting an EBIT contribution (respondent-reported) [MCK-2026] | Usage and value on separate lines; use-case and enterprise effects apart |
-| **The pack argues for an outcome** | Evidence for and against, options, then the owner's recommendation, labelled |
+Status theatre: every surfaced item ends with a recorded outcome or a named open question. Adoption reported as
+value: in McKinsey's 2026 global survey (1,719 participants), 80% say AI improved their individual productivity,
+against 37% reporting an EBIT contribution (respondent-reported) [MCK-2026]; keep usage and value, and use-case and
+enterprise effects, on separate lines.
 
 ## 5. Worked example
 

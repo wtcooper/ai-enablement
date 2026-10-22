@@ -1,41 +1,26 @@
 # Profession-specific duties (step 5)
 
-Read this on entering step 5. It applies the duties that sit on top of general governance: confidentiality,
-independence, consent for tax-return information, audit documentation and bar guidance. The archetypes hold the full
-detail and its sources; this file says how to turn it into policy. It is not legal advice (rule 10). Sources are in §8.
-
-## Contents
-
-1. [Goal and exit criteria](#1-goal-and-exit-criteria)
-2. [How to run it](#2-how-to-run-it)
-3. [Question bank](#3-question-bank)
-4. [Expert moves](#4-expert-moves)
-5. [Where the detail is, and decision rules](#5-where-the-detail-is-and-decision-rules)
-6. [Worked example](#6-worked-example)
-7. [Output](#7-output)
-8. [Sources](#8-sources)
+Read this on entering step 5. It turns the duties on top of general governance into policy. The archetype files in §5
+hold the detail and its sources; this is not legal advice (rule 10). Sources are in §8.
 
 ## 1. Goal and exit criteria
 
-**Goal.** For each regime flagged in step 1, a written rule: the duty, the decision it forces, who decides, what is
-recorded. Existing duties continue and the professional stays responsible for the output: the AICPA ethics article and
-ABA Opinion 512 say so, and firms told PCAOB staff the same [JOFA-2026; ABA-OP512-2024; PCAOB-GENAI-2024].
+**Goal.** For each regime flagged in step 1, the duty, the decision it forces, who decides, and the record. Existing
+duties continue and the professional stays responsible for the output, as the AICPA ethics article and ABA Opinion
+512 say and firms told PCAOB staff [JOFA-2026; ABA-OP512-2024; PCAOB-GENAI-2024].
 
 **Exit when all of these are true:**
-- **One subsection per regime** in the policy, each with the decision rule and its owner.
-- **Client disclosure and consent principles,** including what consent must say and when it may not be required.
+- **One subsection per regime** with its decision rule and owner; **consent and disclosure principles** (§5).
 - **Screens** (independence, section 7216, client terms) added to the request path and catalog flags.
 - **Open questions** that need counsel or the professional body, written down rather than guessed.
 
 ## 2. How to run it
 
-1. **Read the matched archetype's `guardrails.md`** for each regime in play (§5). Its principles and "checks before a
-   plan goes ahead" are the agenda.
-2. **Work one regime at a time**, in the order of exposure the user named in step 3 (R1). Turn each duty into a
-   decision rule with an owner, using the triage in §4 for tax and independence.
-3. **Write the consent and disclosure principles** (§5). Engagement-letter wording stays a draft for the firm's counsel.
-4. **Add the screens** to the catalog `flags` and the request form (step 7). Record open questions and who answers them.
-5. **Play back, write section 6 of the policy, and add profession lines to the guardrails.**
+1. **Read the matched archetype's `guardrails.md`** (§5); its principles and "checks before a plan goes ahead" are
+   the agenda. Work one regime at a time, in the order of exposure named in step 3 (R1), using the §4 triage.
+2. **Write the consent and disclosure principles** (§5). Engagement-letter wording stays a draft for the firm's counsel.
+3. **Add the screens** to the catalog `flags` and the request form (step 7). Record open questions and who answers them.
+4. **Play back and write the outputs** (§7).
 
 ## 3. Question bank
 
@@ -50,31 +35,27 @@ ABA Opinion 512 say so, and firms told PCAOB staff the same [JOFA-2026; ABA-OP51
 ## 4. Expert moves
 
 1. **Apply the section 7216 triage in order.** (a) Is it tax return information? (b) Does a listed exception apply?
-   (c) Is the recipient only processing data, in the US, without substantive determinations? (d) Otherwise obtain
-   written consent first. Consent must be written, signed and dated, name preparer and taxpayer, state purpose and
-   recipient, specify the information, cannot be retroactive, defaults to one year if no duration is stated, and uses
-   and disclosures need separate documents [ECFR-7216-2008, 301.7216-3].
+   (c) Is the recipient only processing data, in the US, without substantive determinations? (d) Otherwise get written
+   consent first: signed and dated, naming preparer and taxpayer, purpose, recipient and information; never retroactive;
+   one year if no duration is stated; uses and disclosures in separate documents [ECFR-7216-2008, 301.7216-3].
 2. **Ask "does the AI step analyse, interpret or apply the law?"** In the regulation's examples, sending return
    information to another firm for advice on a deduction needs prior consent, while pure data processing in the US
    does not [ECFR-7216-2008, 301.7216-2(d)(1), Examples 1 and 4]. Whether an AI provider only processes data or makes
-   a substantive determination is unresolved; a 2026 ABA Tax Section panel abstract poses that question
-   [WINTHROP-2026]. Ask it per step, not per tool.
+   a substantive determination is unresolved; a 2026 ABA Tax Section panel abstract poses it [WINTHROP-2026]. Ask
+   per step, not per tool.
 3. **Never make 7216 consent a condition of the engagement.** The regulation treats consent conditioned on service as
    involuntary, except for disclosure to another preparer assisting with the return [ECFR-7216-2008, 301.7216-3(a)(1)-(2)].
-4. **Run an independence screen on every AI service to, and vendor tie with, an attest client.** The AICPA ethics
-   article says AI-related nonattest services such as developing or hosting an AI system for an attest client can
-   raise independence concerns [JOFA-2026]; IESBA's technology revisions cover technology-related non-assurance
-   services, effective for audits and reviews of periods beginning on or after 15 December 2024 [IESBA-TECH-2023].
-5. **For lawyers, test consent for specificity and ask how AI-saved time is billed.** ABA Opinion 512 requires informed
-   consent before representation information goes into a self-learning tool, says boilerplate in an engagement letter
-   is not enough, and allows billing only time actually spent [ABA-OP512-2024].
+4. **Run an independence screen on every AI service to, and vendor tie with, an attest client.** Developing or hosting
+   an AI system for an attest client can raise independence concerns [JOFA-2026]; IESBA's technology-related
+   independence revisions apply to periods beginning on or after 15 December 2024 [IESBA-TECH-2023].
+5. **For lawyers, test consent for specificity and ask how AI-saved time is billed.** Opinion 512 requires informed
+   consent before client information enters a self-learning tool (boilerplate is not enough) and allows billing only
+   time actually spent [ABA-OP512-2024].
 6. **Ask where processing happens.** Disclosure of return information to a preparer outside the US needs prior consent
    [ECFR-7216-2008, 301.7216-3(a)(3)(i)(D)]; for Form 1040-series returns, consent to disclose the SSN to a preparer
    outside the US is allowed only with an adequate data protection safeguard [ECFR-7216-2008, 301.7216-3(b)(4)].
 
 ## 5. Where the detail is, and decision rules
-
-**Read the matched file before writing each subsection:**
 
 | Regime | Archetype file and sections | What to take into the policy |
 |---|---|---|
@@ -85,30 +66,23 @@ ABA Opinion 512 say so, and firms told PCAOB staff the same [JOFA-2026; ABA-OP51
 | security providers | `../../transformation-advisor/references/archetypes/security/guardrails.md` §7 | Service providers and client data |
 
 **Decision rules**
-- **Tax:** write the 7216 decision per workflow, with the reasoning (tax guardrails §12). OPR Alert 2026-19 asks for
-  secure, enterprise-approved AI and vetting tools before purchase, but does not mention consent, and no IRS guidance
-  on AI and 7216 consent was found [IRS-OPR-2026]. Route the processing-or-determination question to counsel.
-- **Assurance:** any AI service to an attest client, any tool the firm hosts for one, and any vendor tie with equity,
-  fee-sharing, referral or control terms → independence review before commitment (assurance guardrails §8). Firm-built
-  tools used in audit work are `tier-4`, documented per step 4.
-- **Legal:** no client information in a self-learning tool without informed consent that explains the risks
-  [ABA-OP512-2024]; oversight scales with autonomy (professional-services guardrails §1, §4).
+- **Tax:** write the 7216 decision per workflow, with reasons (tax guardrails §12). OPR Alert 2026-19 asks for secure,
+  enterprise-approved AI but does not mention consent; no IRS guidance on AI and 7216 consent was found [IRS-OPR-2026].
+- **Assurance:** AI services to or tools hosted for an attest client, and vendor ties with equity, fee-sharing, referral
+  or control terms → independence review first (assurance guardrails §8). Firm-built audit tools are `tier-4` (step 4).
+- **Legal:** informed consent before a self-learning tool (move 5); oversight scales with autonomy (guardrails §1, §4).
 
 **Consent and disclosure principles (all regimes)**
 - Consent is specific (purpose, recipient, information, risks), never boilerplate, and never a condition of service
-  where the rules forbid it [ECFR-7216-2008; ABA-OP512-2024].
-- Opinion 512 says informed consent is not required when the lawyer will not input information relating to the
-  representation, for example idea generation [ABA-OP512-2024].
-- Disclosure follows the client's terms and the regime (professional-services guardrails §6).
+  where the rules forbid it [ECFR-7216-2008; ABA-OP512-2024]. Disclosure follows the client's terms and the regime.
+- Opinion 512 does not require informed consent when no information relating to the representation goes in, for
+  example idea generation [ABA-OP512-2024].
 
 ## 6. Worked example
 
-Illustrative. A US tax practice proposes a team skill to summarise prior-year returns and draft position memos. Inputs
-are tax return information. A position memo applies law, so it is a substantive determination; a summary that only
-restates the return's figures is treated as processing, a reading the firm confirms with counsel. Decision: summaries
-approved in the business-tier entry for `regulated` data with US processing and masked SSNs; position drafting is
-`tier-4` with preparer review and prior signed consent where the vendor step makes a determination. The open question
-goes to counsel [WINTHROP-2026].
+Illustrative. A US tax team wants to summarise prior-year returns and draft position memos. A summary that only
+restates figures is treated as processing (US region, masked SSNs), a reading counsel confirms; a position memo applies
+law, so it is `tier-4` with preparer review and prior signed consent where the vendor step makes a determination.
 
 ## 7. Output
 
@@ -116,8 +90,6 @@ Write section 6 of `overlay/policy.md`. Set `flags` on catalog entries in `overl
 lines to `overlay/guardrails.md`. Set `step_completed: 5`, `next_step: 6`.
 
 ## 8. Sources
-
-The archetype `guardrails.md` files named in §5 carry the sources for the regime detail they hold.
 
 - **ABA-OP512-2024**: American Bar Association, *Formal Opinion 512: Generative Artificial Intelligence Tools* (professional body, 2024-07-29). https://www.lawnext.com/wp-content/uploads/2024/07/aba-formal-opinion-512.pdf
 - **ECFR-7216-2008**: US Treasury and IRS, *26 CFR 301.7216-1 to -3* (regulation, T.D. 9375 of 2008 as amended). https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.7216-3

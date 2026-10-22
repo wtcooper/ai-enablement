@@ -12,9 +12,6 @@ portfolio:
 settings:
   value_levers: []
   scoring_weights: { value: 0.30, feasibility: 0.20, data_readiness: 0.15, risk: 0.15, time_to_value: 0.10, strategic_fit: 0.10 }
-  axes:
-    value: [value, strategic_fit, time_to_value]
-    readiness: [feasibility, data_readiness, risk]
   capacity_stance: undecided
   inherited_from: null
   live_limit: null
@@ -25,18 +22,17 @@ stages:
   - { id: production, purpose: "Run as supported service for the first population; realise and measure benefits", entry: ["Go at g3"], exit: [], gatekeepers: [] }
   - { id: scale, purpose: "Extend to further practices, offices or client groups; reuse components", entry: ["Go at g4"], exit: [], gatekeepers: [] }
   - { id: retire, purpose: "Decommission safely, keep lessons and reusable assets", entry: ["Retire decision"], exit: [], gatekeepers: [] }
-gate_paths:
-  light: ""
-  full: ""
+gate_paths:                        # defaults: ../method/stage-gates.md §3.2 and setup.md §3.1
+  light: "Lowest risk tier and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
+  full: "Every other item: all gates"
   g0_deciders: { light: [], full: [] }
 roles:
   review_forum: []
   intake_contact: ""
   other: []
 rhythm:
-  review: ""
-  rebalance: ""
-  benefits_review: ""
+  review: "Monthly portfolio review"
+  rebalance: "Every third review"
 state:
   status: setting-up
   step_completed: 0

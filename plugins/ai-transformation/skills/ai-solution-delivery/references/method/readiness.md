@@ -1,9 +1,8 @@
 # Production readiness (step 5)
 
 Read this on entering step 5. A solution is ready when someone owns it, can see how it behaves, can change it
-safely, can switch it off, and the people using it know what to do when it is wrong. You record the review and
-the decision; the firm's owners make and sign it. Keys in brackets are listed in §6. *(advisor default)* marks a
-working rule, not a finding from a source.
+safely, can switch it off, and its users know what to do when it is wrong. You record; the firm's owners decide.
+Keys in brackets are listed in §6; *(advisor default)* marks a working rule, not a finding from a source.
 
 ## Contents
 
@@ -53,15 +52,15 @@ The review's lines are in `../templates/readiness.md`. What to look for in each 
 
 | Block | Look for | Source |
 |---|---|---|
-| 3.1 Ownership and support | Named owner and backup by role; who responds out of hours; a runbook; an incident process with rehearsal and post-incident review; a review rota that reads traces; UK guidance asks for named senior responsible owners | [NIST-2024, GV-6.2-003, MG-4.2-002; UKGDS-2025; APPLIEDLLMS-2024, 2.1.2] |
-| 3.2 Change control and rollback | Every model, prompt, retrieval or tool change re-runs the regression suite before release; models and prompts pinned; a managed release that can be withdrawn; a tested pause to the manual process. Building is cheap relative to maintaining ML systems | [UKGDS-2025; NIST-2024, GV-6.2-006; GOOGLE-2015] |
-| 3.3 Monitoring and cost | Online metrics from `eval-plan.md` live with alert thresholds and responders; every input and output logged from the first user, then sampled; input coverage and freshness watched; cost per task visible to the owner; logging meets client confidentiality terms | [FRB-2011; HUSAIN-2026; GOOGLE-RULES, Rule 10] |
-| 3.4 Evidence and documentation | Thresholds met; red-team scorecard reviewed; in regulated settings, validation independent of development; an inventory entry with owner and tier (with **ai-governance**); a documentation pack (what it does, when to use it, how it was built and tested, why the firm trusts it, limits, review level, change history, owners), which the UK audit regulator's guidance sets out without adding requirements, with adjusted expectations for third-party tools; security sign-off. In law, the lawyer stays fully responsible | [FRB-2011; BOE-2023; FRC-2025; ABA-2024] |
+| Ownership and support | Named owner and backup by role; who responds out of hours; a runbook; an incident process with rehearsal and post-incident review; a review rota that reads traces; UK guidance asks for named senior responsible owners | [NIST-2024, GV-6.2-003, MG-4.2-002; UKGDS-2025; APPLIEDLLMS-2024, 2.1.2] |
+| Change control and rollback | Every model, prompt, retrieval or tool change re-runs the regression suite before release; models and prompts pinned; a managed release that can be withdrawn; a tested pause to the manual process. Building is cheap relative to maintaining ML systems | [UKGDS-2025; NIST-2024, GV-6.2-006; GOOGLE-2015] |
+| Monitoring and cost | Online metrics from `eval-plan.md` live with alert thresholds and responders; every input and output logged from the first user, then sampled; input coverage and freshness watched; cost per task visible to the owner; logging meets client confidentiality terms | [FRB-2011; HUSAIN-2026; GOOGLE-RULES, Rule 10] |
+| Evidence and documentation | Thresholds met; red-team scorecard reviewed; in regulated settings, validation independent of development; an inventory entry with owner and tier (with **ai-governance**); a documentation pack (what it does, when to use it, how it was built and tested, why the firm trusts it, limits, review level, change history, owners), which the UK audit regulator's guidance sets out without adding requirements, with adjusted expectations for third-party tools; security sign-off. In law, the lawyer stays fully responsible | [FRB-2011; BOE-2023; FRC-2025; ABA-2024] |
 
 For the firm's wider AI spend, see `professional-services-firm-finance-11` (grade B; practitioners' own accounts
 of reading consumption bills).
 
-### 3.5 People and adoption
+**People and adoption.**
 
 - **Training before access** *(advisor default)*: strengths, limits, the review expected, what to do when it is
   wrong. The ABA expects supervising lawyers to make sure staff are trained on capabilities and

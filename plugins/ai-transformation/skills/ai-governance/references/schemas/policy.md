@@ -1,8 +1,7 @@
 # Schema: overlay/policy.md frontmatter (policy/v1)
 
-The governance skill keeps its state in the frontmatter of `overlay/policy.md`, so a session can stop after any
-step and resume. The body follows `../templates/policy.md`. This file also defines the controlled values the
-governance files share (§3); other skills read them from here.
+The governance skill keeps its state in the frontmatter of `overlay/policy.md`, so a session can resume after any
+step. The body follows `../templates/policy.md`. §3 defines the controlled values the governance files share.
 
 ## Contents
 
@@ -45,59 +44,52 @@ parent: path | null                # a practice or team policy names the firm po
 | 3 Risk tiers | `risk_tiers` |
 | 7 Secure enablement | every `owners` field; `status` moves to `in-review` when the text goes to the approvers |
 
-- **Roles, not people.** Owners are roles ("Head of risk", "IT security lead"), never names (rule 1).
-- **Stricter, never looser.** A policy with a `parent` may add classes, tiers or rules; it may not relax the parent.
+- **Roles, not people** (rule 1). A policy with a `parent` may add classes, tiers or rules, never relax them (rule 13).
 - **A step drafted ahead** leaves `step_completed` and `next_step` unchanged; its section carries the label
   "Drafted ahead on assumptions".
-- **Status is the firm's, not yours.** Set `approved` only when the user tells you the approvers signed it off.
-- **Quote free text** in double quotes; an unquoted colon breaks the file.
-- **No calendar deadlines.** Review timing lives in the body as a cadence and triggers, never as a plan date.
+- **Status is the firm's.** Set `approved` only when the user says the approvers signed it off.
+- **Quote free text** in double quotes. Review timing is a cadence and triggers in the body, never a plan date.
 
 ## 3. Controlled values for governance files
 
-These ids are used by `policy.md`, `tool-catalog.yaml` and `vendors/<vendor>.md`. They are proposed for the shared
-`../../../transformation-advisor/references/schemas/vocabulary.yaml`; until then this section is their source.
+These ids are used by `policy.md`, `tool-catalog.yaml` and `vendors/<vendor>.md`, and other skills read them here.
+They are proposed for the shared `../../../transformation-advisor/references/schemas/vocabulary.yaml`.
 
 ### 3.1 Regimes (`regimes`)
 
-| Id | Meaning |
-|---|---|
-| `tax-7216` | Preparing US tax returns: section 7216 use, disclosure and consent rules apply |
-| `attest-independence` | Serving audit or attest clients: independence rules apply to AI services and vendor ties |
-| `legal-practice` | Practising law: bar rules on confidentiality, consent, supervision and fees apply |
-| `client-terms` | Client contracts or outside guidelines restrict AI use, subcontracting or data location |
-| `eu-deployer` | Using AI in the EU: AI Act deployer duties, including literacy and any high-risk uses |
-| `privacy-law` | Personal data in scope of data-protection law |
+- `tax-7216`: Preparing US tax returns: section 7216 use, disclosure and consent rules apply
+- `attest-independence`: Serving audit or attest clients: independence rules apply to AI services and vendor ties
+- `legal-practice`: Practising law: bar rules on confidentiality, consent, supervision and fees apply
+- `client-terms`: Client contracts or outside guidelines restrict AI use, subcontracting or data location
+- `eu-deployer`: Using AI in the EU: AI Act deployer duties, including literacy and any high-risk uses
+- `privacy-law`: Personal data in scope of data-protection law
 
 ### 3.2 Data classes (`data_classes`)
 
-| Id | Meaning |
-|---|---|
-| `public` | Published or freely available information |
-| `firm-internal` | The firm's own non-public information that names no client |
-| `client-confidential` | Any information about or from a client, including engagement and matter data |
-| `regulated` | Client information with a specific legal regime on top: tax return information, privileged material, special-category personal data |
+- `public`: Published or freely available information
+- `firm-internal`: The firm's own non-public information that names no client
+- `client-confidential`: Any information about or from a client, including engagement and matter data
+- `regulated`: Client information with a specific legal regime on top: tax return information, privileged material,
+  special-category personal data
 
 A firm may split or rename classes in its policy body; keep these ids in the YAML so other skills can read them.
 
 ### 3.3 Tool tiers (`tool_tier`)
 
-| Id | Meaning |
-|---|---|
-| `consumer` | Personal or free accounts on consumer terms |
-| `commercial` | A business product tier under a firm contract, with admin controls and published business-data terms |
-| `firm-controlled` | A commercial tier where the firm has also confirmed or negotiated retention, region, logging and change notice |
+- `consumer`: Personal or free accounts on consumer terms
+- `commercial`: A business product tier under a firm contract, with admin controls and published business-data terms
+- `firm-controlled`: A commercial tier where the firm has also confirmed or negotiated retention, region, logging and
+  change notice
 
 ### 3.4 Risk tiers (`risk_tiers`, `max_risk_tier`)
 
-| Id | Name | Typical uses |
-|---|---|---|
-| `tier-1` | Internal, low consequence | Admin, internal drafts, brainstorming |
-| `tier-2` | Informs professional work | Research and analysis a professional then checks and uses |
-| `tier-3` | Client-facing or relied on | Deliverables, advice, anything that leaves the firm |
-| `tier-4` | Regulated or high-impact | Attest procedures and evidence, filings, court submissions, decisions about people, agents acting on client data |
+- `tier-1`: Internal, low consequence (admin, internal drafts, brainstorming)
+- `tier-2`: Informs professional work (research and analysis a professional then checks and uses)
+- `tier-3`: Client-facing or relied on (deliverables, advice, anything that leaves the firm)
+- `tier-4`: Regulated or high-impact (attest procedures and evidence, filings, court submissions, decisions about
+  people, agents acting on client data)
 
-The review each tier needs is in `../risk-tiers.md`.
+The review each tier needs is in `../risk-tiers.md` §5.
 
 ### 3.5 Catalog status, scorecard ratings and screens
 
@@ -109,8 +101,7 @@ The review each tier needs is in `../risk-tiers.md`.
   `change_control`, `exit`.
 - Screens (`independence`, `tax_7216`, `client_terms`): `clear`, `needs-review`, `not-applicable`, `unknown`.
 - `own_sample_test`: `not-run`, `passed`, `failed`, `not-applicable`.
-- Re-approval triggers: `model-change`, `sub-processor-change`, `terms-change`, `new-data-class`, `new-use`,
-  `incident`.
+- Re-approval triggers: `model-change`, `sub-processor-change`, `terms-change`, `new-data-class`, `new-use`, `incident`.
 
 ## 4. Example
 

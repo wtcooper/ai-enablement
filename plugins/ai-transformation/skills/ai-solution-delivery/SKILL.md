@@ -48,9 +48,9 @@ firm's people build, configure and run the solution. Speak plainly. Method terms
 ## How to talk
 
 Ask one question at a time and play back what you heard. Ask for real instances and records ("the last one you
-finished", "last month's count"). Name the step and what comes next; skip what the source item already says.
-Use plain words ("does it work every time?", not "pass^k") unless the user is technical. Before the first
-substantive question, read `../transformation-advisor/references/method/interviewing.md`.
+finished", "last month's count"). Name the step and what comes next, never how long it will take; skip what the
+source item already says. Use plain words ("does it work every time?", not "pass^k") unless the user is
+technical. Before the first substantive question, read `../transformation-advisor/references/method/interviewing.md`.
 
 ## Start or resume
 

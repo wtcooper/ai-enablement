@@ -1,9 +1,8 @@
 # Frame the problem (step 1)
 
-Read this on entering step 1. It turns one opportunity into a problem frame: the real work, volumes and error
-costs, the business owner's metric, and the simplest kind of solution that could work. Most delivery failure
-starts here, not in the model. Keys in brackets are listed in §6. *(advisor default)* marks a working rule, not a
-finding from a source.
+Read this on entering step 1: it turns one opportunity into a problem frame. Most delivery failure starts here, not
+in the model. Keys in brackets are listed in §6; *(advisor default)* marks a working rule, not a finding from a
+source.
 
 ## Contents
 

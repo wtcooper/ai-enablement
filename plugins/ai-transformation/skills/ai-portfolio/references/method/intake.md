@@ -1,7 +1,7 @@
 # Intake (step 2)
 
-Read this on entering step 2: a new AI idea from any practice or function, an import from an advisor
-`opportunities.yaml`, or a tool already in use. Keys in brackets are listed in §7.
+Read this for a new AI idea, an import from an advisor `opportunities.yaml`, or a tool already in use. Keys in
+brackets are listed in §7.
 
 ## Contents
 
@@ -21,11 +21,9 @@ deciding which to explore first [UKGOV-2025].
 
 **Exit criteria** for each item:
 
-- An intake record and a `portfolio.yaml` entry with the same id, `stage: intake` (a tool already in use: the
-  stage its use supports).
-- One sentence naming the activity and the expected result, and last month's actual volume with its basis.
-- A class (§3.2), an owner (a role), and the data it needs with the data owner.
-- The rules-or-AI check and a duplicate check against the register done.
+- An intake record and a `portfolio.yaml` entry with the same id and `stage: intake` (a tool in use: §2).
+- One sentence naming the activity and the expected result; last month's actual volume with its basis.
+- A class (§3.2), an owner (a role), the data it needs with its owner; rules-or-AI and duplicate checks done.
 - `status: outline` if the problem, owner or data source is missing; otherwise ready to screen.
 - For imports: `source` set; the parse check reported; the plan's case in "From the plan"; grades as recorded.
 
@@ -33,18 +31,17 @@ deciding which to explore first [UKGOV-2025].
 
 **A new idea**
 
-1. **Name the step.** "Let's log this idea so it can be screened. Next we score it."
-2. **Get the sentence.** Ask for the activity and the result in one sentence, then for how often the activity
+1. **Get the sentence.** Ask for the activity and the result in one sentence, then for how often the activity
    happened last month, from a record, not a typical week [MSFT-PLAN-2026]. If the idea starts from a tool ("we
    should use agents for…"), ask where results miss expectations or people repeat manual work [UKGOV-2025].
-3. **Class it** (§3.2). Route seat and licence roll-outs to the enablement line.
-4. **Rules or AI.** Ask whether a few if-then rules, a template or an existing feature would do [RAND-2024] (§3.1).
-5. **Data and owners.** Ask what data it needs, who owns it, whether anyone has looked at it in its real state, and
+2. **Class it** (§3.2). Route seat and licence roll-outs to the enablement line.
+3. **Rules or AI.** Ask whether a few if-then rules, a template or an existing feature would do [RAND-2024] (§3.1).
+4. **Data and owners.** Ask what data it needs, who owns it, whether anyone has looked at it in its real state, and
    who in the business would own the benefit.
-6. **Duplicates.** Search `portfolio.yaml` for the same process, pattern or unit. Link near-duplicates.
-7. **Early read.** Note risk exposure and tier (`../library/index.md` §2), a build, buy or partner leaning, and
+5. **Duplicates.** Search `portfolio.yaml` for the same process, pattern or unit. Link near-duplicates.
+6. **Early read.** Note risk exposure and tier (`../library/index.md` §2), a build, buy or partner leaning, and
    archetype use cases that show the idea working elsewhere, with grades exactly as recorded.
-8. **Write** the record from `../templates/intake.md` and the `portfolio.yaml` entry. Fill every template line,
+7. **Write** the record from `../templates/intake.md` and the `portfolio.yaml` entry. Fill every template line,
    including "AI use"; write "none recorded" where there is nothing yet. Add no other sections. Play it back.
 
 **An import from the advisor**
@@ -110,22 +107,13 @@ hand the idea back to its owner.
 | `business-automation` | The flow of work changes: steps removed, merged or run without a person on the normal path | Portfolio item; full or light path by risk tier |
 | `new-value` | A new service, product or price | Portfolio item; judged on revenue mechanics |
 
-Why separate them: MIT NANDA reports widely adopted chat tools "primarily enhance individual productivity, not P&L
-performance", and only 5% of organizations got task-specific tools into production (52 interviews and a survey of
-153 senior leaders; its authors call the figures directional) [MITNANDA-2025]. Counting seat roll-outs as wins
-inflates the pipeline.
+Counting seat roll-outs as portfolio wins inflates the pipeline.
 
 ## 4. Questions and traps
 
 Also ask where people already use personal AI tools for this work, what client data or professional duties it
-touches, and what would make the people doing the work reject it.
-
-| Trap | How to avoid it |
-|---|---|
-| **Technology-first ideas** | Ask for the problem and the metric before the tool [UKGOV-2025] |
-| **Re-scoring an import from scratch** | Keep the advisor's ranges, scores and back-link; re-score only against the portfolio's weights |
-| **Importing the item without the plan's case** | Copy its cost lines, go/no-go and steps into "From the plan"; check there before raising a conflict |
-| **Duplicates across practices** | Search the register at every intake |
+touches, and what would make the people doing it reject it. Don't re-score an import from scratch: keep the
+advisor's ranges, scores and back-link, and re-score only against the portfolio's weights in step 3.
 
 ## 5. Worked example
 
@@ -143,11 +131,6 @@ the enablement line.
 
 ## 7. Sources
 
-- `MITNANDA-2025` — Challapally, Pease, Raskar, Chari, MIT Project NANDA, *The GenAI divide: state of AI in
-  business 2025*, research report (preliminary), 2025-07. https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
-- `MSFT-PLAN-2026` — Microsoft Learn, *Plan for AI adoption*, vendor guidance, updated 2026-10-15.
-  https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
-- `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects and how they
-  can succeed*, research report, 2024-08-13. https://www.rand.org/pubs/research_reports/RRA2680-1.html
-- `UKGOV-2025` — UK Government Digital Service, *Artificial Intelligence Playbook for the UK Government*,
-  government guidance, 2025. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
+- `MSFT-PLAN-2026` — Microsoft Learn, *Plan for AI adoption*, vendor guidance, updated 2026-10-15. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/plan
+- `RAND-2024` — RAND Corporation, *The root causes of failure for artificial intelligence projects and how they can succeed*, research report, 2024-08-13. https://www.rand.org/pubs/research_reports/RRA2680-1.html
+- `UKGOV-2025` — UK Government Digital Service, *Artificial Intelligence Playbook for the UK Government*, government guidance, 2025. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html

@@ -1,7 +1,7 @@
 # Set up the portfolio (step 1)
 
-Read this on entering step 1. It sets the portfolio's scope, value levers and weights (inherited from the
-advisor's plan when one exists), stages, roles, gate paths and review rhythm. Keys in brackets are listed in §7.
+Read this on entering step 1: scope, levers and weights, stages, roles, gate paths and rhythm. Propose the
+defaults below; the user changes only what doesn't fit. Keys in brackets are listed in §7.
 
 ## Contents
 
@@ -20,46 +20,36 @@ judged against each other and against fixed criteria, not only on their own meri
 
 **Exit criteria.**
 
-- Scope stated: which practices, functions and kinds of item (ideas, pilots, live systems) are in.
-- Value levers, each with one named metric, and scoring weights that sum to 1 (`inherited_from` set when they came
-  from an advisor plan).
-- Six stage definitions with exit evidence the user accepts (defaults in `stage-gates.md` §3).
-- Gatekeepers per gate, named as roles that control the resources the next stage needs.
-- A light and a full gate path, and who decides `g0` on each.
-- The review forum, the review rhythm and the live limit.
-- A first inventory of AI already in use, or a step to build one.
+- Scope: which practices, functions and kinds of item (ideas, pilots, live systems) are in.
+- Value levers with one named metric each, and weights that sum to 1 (`inherited_from` set if from a plan).
+- Six stages with exit evidence (defaults in `stage-gates.md` §3); gatekeepers per gate, as roles that control the
+  next stage's resources; light and full paths, and who decides `g0` on each.
+- The review forum, rhythm and live limit; a first inventory of AI already in use, or a step to build one.
 
 ## 2. How to run it
 
-1. **Name the step.** "We are setting up the portfolio: what is in it, how items are judged and who decides.
-   Next we log the ideas."
-2. **Look for an advisor plan.** If `transformation-plan.md` exists, play back `settings.value_levers`,
+1. **Look for an advisor plan.** If `transformation-plan.md` exists, play back `settings.value_levers`,
    `settings.scoring_weights` and `settings.capacity_stance`, ask whether they hold for the whole portfolio, copy
    them and set `inherited_from`. With no plan, agree levers and weights using
    `../../../transformation-advisor/references/method/frame.md` §4, or offer the advisor first.
-3. **Set the scope.** One register for ideas, pilots and live systems [UKGOV-2025; NIST-2023]. Ask what AI is
+2. **Set the scope.** One register for ideas, pilots and live systems [UKGOV-2025; NIST-2023]. Ask what AI is
    already in use, sanctioned or not, and whether a decommissioning procedure exists [NIST-2023; OMB-2025].
-4. **Propose the stages.** Play back the six default stages (`stage-gates.md` §3) and ask only what the firm would
+3. **Propose the stages.** Play back the six default stages (`stage-gates.md` §3) and ask only what the firm would
    add, such as the independence or quality review an audit practice already runs.
-5. **Name the gatekeepers.** For each gate ask whose people, budget or data the next stage needs; gatekeepers are
+4. **Name the gatekeepers.** For each gate ask whose people, budget or data the next stage needs; gatekeepers are
    the senior managers who control those resources [COOPER-STAGEGATE-n.d.]. In a partnership, include the practice
    heads whose people's time is being spent (`people-and-change.md`).
-6. **Set the gate paths.** Propose the light path default (`stage-gates.md` §3.2), reading `overlay/policy.md`
+5. **Set the gate paths.** Propose the light path default (`stage-gates.md` §3.2), reading `overlay/policy.md`
    for risk tiers if it exists. Then ask who decides the screen (`g0`) on each path and record the roles in
    `gate_paths.g0_deciders`. On the full path, include the sponsor or the gatekeepers who control discovery
    resources, not the portfolio owner alone.
-7. **Set the forum, rhythm and live limit.** Propose the defaults in §3.2 and §3.4; the user can change them.
-8. **Play back** the set-up in a few lines, write `portfolio.yaml` from `../templates/portfolio.yaml`, and set
+6. **Set the forum, rhythm and live limit.** Propose the defaults in §3.1 and §3.3; the user can change them.
+7. **Play back** the set-up in a few lines, write `portfolio.yaml` from `../templates/portfolio.yaml`, and set
    `state.status: running`, `step_completed: 1`, `next_step: 2`, `updated`.
 
 ## 3. Defaults and decision rules
 
-### 3.1 One register
-
-Every item has a single id across intake, portfolio, solutions and benefits files. Each lever has one named metric
-the finance lead would accept. Stage exit evidence is written before any item reaches the gate.
-
-### 3.2 The review forum and rhythm
+### 3.1 The review forum and rhythm
 
 No source gives a standard attendee list or cadence. The decisions a review makes: add promising initiatives,
 scale successful pilots, redirect struggling efforts, retire misaligned projects and recalibrate scoring criteria
@@ -70,13 +60,13 @@ with sponsors [MSFT-COE-2026].
 professional-services firm: the managing partner or chief operating officer, practice leaders, the risk and
 quality partner or general counsel, the heads of IT and finance, the people lead and the head of AI.
 
-### 3.3 The central team's stance
+### 3.2 The central team's stance
 
 Microsoft's guidance gives intake and prioritization to an AI centre of excellence early, then moves it to an
 advisory model once governance is embedded; the signals are approval delays, experts who cannot support all teams
 and recurring priority debates [MSFT-COE-2026]. Say so at set-up, and check the signals at each rebalance.
 
-### 3.4 Live limit
+### 3.3 Live limit
 
 No more live items (prototype, pilot, scale) than there are named owners and review capacity to carry them
 (`../../../transformation-advisor/references/method/prioritize.md` §3.5). Set it as a number in
@@ -112,15 +102,9 @@ already in use"). Set `state.step_completed: 1`, `next_step: 2`, `updated`.
 
 ## 7. Sources
 
-- `COOPER-STAGEGATE-n.d.` — Robert G. Cooper, Stage-Gate International, *The Stage-Gate model: an overview*,
-  method article, undated. https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
-- `HBR-2026` — Nelson, Davenport, Scade, *Manage your AI investments like a portfolio*, Harvard Business
-  Review, 2026-01 (read via reprint). https://hbr.org/2026/01/manage-your-ai-investments-like-a-portfolio
-- `MSFT-COE-2026` — Microsoft Learn, *Establish an AI Center of Excellence*, vendor guidance, updated
-  2026-04-10. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
-- `NIST-2023` — NIST, *AI Risk Management Framework (AI RMF 1.0)*, framework, 2023-01.
-  https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
-- `OMB-2025` — US Office of Management and Budget, *M-25-21*, government memorandum, 2025-04-03.
-  https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf
-- `UKGOV-2025` — UK Government Digital Service, *Artificial Intelligence Playbook for the UK Government*,
-  government guidance, 2025. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html
+- `COOPER-STAGEGATE-n.d.` — Robert G. Cooper, Stage-Gate International, *The Stage-Gate model: an overview*, method article, undated. https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
+- `HBR-2026` — Nelson, Davenport, Scade, *Manage your AI investments like a portfolio*, Harvard Business Review, 2026-01 (read via reprint). https://hbr.org/2026/01/manage-your-ai-investments-like-a-portfolio
+- `MSFT-COE-2026` — Microsoft Learn, *Establish an AI Center of Excellence*, vendor guidance, updated 2026-04-10. https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+- `NIST-2023` — NIST, *AI Risk Management Framework (AI RMF 1.0)*, framework, 2023-01. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+- `OMB-2025` — US Office of Management and Budget, *M-25-21*, government memorandum, 2025-04-03. https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf
+- `UKGOV-2025` — UK Government Digital Service, *Artificial Intelligence Playbook for the UK Government*, government guidance, 2025. https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html

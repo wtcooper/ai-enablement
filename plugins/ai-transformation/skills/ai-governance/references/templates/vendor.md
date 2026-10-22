@@ -26,11 +26,9 @@ sources_checked: []
 
 # Vendor evaluation: <vendor> · <product and tier>
 
-<!-- Schema: references/schemas/vendor.md. Method: references/vendor-evaluation.md.
-     A desk evaluation uses public documentation only: keep the draft label until the contract is checked.
-     `evaluation` stays null until public documents (desk) or the contract (full) are checked.
-     Write only these sections; documents to ask for go in the chat. Record clause references, not prices or
-     confidential terms. -->
+<!-- Schema: references/schemas/vendor.md. Method: references/vendor-evaluation.md. Keep the draft label until the
+     contract is checked; `evaluation` stays null until public documents (desk) or the contract (full) are checked.
+     Write only these sections; document requests go in the chat. Record clause references, not prices or terms. -->
 
 **Request:** <who asked (role), for what use, which data classes, which runtime class>
 **Evaluation type:** desk | full | not started · **Evaluated by:** <firm role, or "draft (ai-governance)" or "draft (subagent)"> · **Draft to validate:** yes | no

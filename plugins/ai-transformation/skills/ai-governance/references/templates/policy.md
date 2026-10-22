@@ -35,9 +35,8 @@ parent: null
 8. [Requests, review and maintenance](#8-requests-review-and-maintenance-step-7)
 9. [Approvals and change log](#approvals-and-change-log)
 
-<!-- Written by the ai-governance skill, one section per step. Schema: references/schemas/policy.md.
-     Keep client-confidential and personal data out of this file. Describe tools, data classes and roles.
-     Mark advisor defaults as "default, adjust" so approvers can tell them from sourced requirements. -->
+<!-- Written by the ai-governance skill, one section per step (schema: references/schemas/policy.md). No client or
+     personal data. Mark advisor defaults "default, adjust" so approvers can tell them from sourced requirements. -->
 
 ## 1. Where we start (step 1)
 

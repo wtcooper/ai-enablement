@@ -1,8 +1,7 @@
 # Schema: overlay/vendors/<vendor>.md frontmatter (vendor/v1)
 
-One file per vendor product evaluated, named by a short vendor-product slug. The frontmatter holds the scorecard so
-it can be compared across tools; the body (`../templates/vendor.md`) holds the evidence and reasoning. Method:
-`../vendor-evaluation.md`.
+One file per vendor product, named by a vendor-product slug. The frontmatter holds the scorecard; the body
+(`../templates/vendor.md`) holds the evidence and reasoning. Method: `../vendor-evaluation.md`.
 
 ## Contents
 
@@ -44,20 +43,16 @@ sources_checked:
 
 ## 2. Field rules
 
-- **Every rating has a note** that says what the evidence is and where it was found (`sources_checked` locator).
-  A claim with no document behind it is `unknown`, not `meets`.
-- **`evaluation`** is `desk` only once public documents are read and listed in `sources_checked`; until then it
-  is `null`, with `label: draft-to-validate` and ratings `unknown` where only the user's report supports them.
-- **`desk` evaluations** keep `label: draft-to-validate`. Published terms may differ from the signed contract and
-  change over time; for `client-confidential` and `regulated` data the decision stays `pending` until someone checks
-  the contract. A narrower decision (for example a `pilot` on firm-internal data) may rest on what the user confirms.
-- **`pending` in the catalog.** With no narrower approval, the matching catalog entry has `status: under-review`;
-  with one, the entry carries that narrower status and only its data classes.
-- **Decision rules** are in `../vendor-evaluation.md` §5. A `gap` in `retention_training` blocks
-  `client-confidential` and `regulated` data.
-- **Screens** come from the regimes in `policy.md`. A screen marked `needs-review` names who reviews it in the body.
-- **No confidential data.** Record contract references and clause numbers, not commercial terms or prices.
-- **Quote free text** in double quotes.
+- **Every rating has a note** saying what the evidence is and where (`sources_checked` locator). A claim with no
+  document behind it is `unknown`, not `meets`.
+- **`evaluation`** is `desk` only once public documents are read and listed in `sources_checked`; until then it is
+  `null`, with `label: draft-to-validate` and ratings `unknown` where only the user's report supports them.
+- **`desk` evaluations** keep `label: draft-to-validate`: published terms may differ from the signed contract. For
+  `client-confidential` and `regulated` data the decision stays `pending` until someone checks the contract; a narrower
+  decision (say, a `pilot` on firm-internal data) may rest on what the user confirms.
+- **`pending` in the catalog:** the entry has `status: under-review`, or the narrower status with only its data classes.
+- **Decision rules** are in `../vendor-evaluation.md` §5. A `needs-review` screen names its reviewer in the body.
+- **No confidential data:** record contract and clause references, not commercial terms or prices. Quote free text.
 
 ## 3. Example
 

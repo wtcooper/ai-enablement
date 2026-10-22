@@ -13,19 +13,18 @@ documentation. You never talk to the user; the governance skill plays your draft
 
 ## Find
 
-Look for these on the vendor's own sites first, then reputable secondary sources only to locate primary documents:
+Look on the vendor's own sites first; use secondary sources only to locate primary documents.
 
-1. The privacy or data-use page for **this tier** (business or enterprise pages differ from consumer pages).
-2. Training defaults and their exceptions (feedback, opt-in sharing), and whether an admin can disable them.
-3. Retention: defaults, admin controls, deletion timing, who can retrieve history.
-4. Processing and storage regions; the sub-processor list.
-5. Security and trust documentation: single sign-on, admin controls, logging, encryption statements.
-6. Certifications and attestations: which ones, for which products, the scope statement and period if public.
-7. Terms and data processing addendum: ownership and usage rights of inputs and outputs, right to evaluate or audit,
-   incident notification, warranties and liability limits.
-8. Change notice: how the vendor announces model, sub-processor and terms changes; any stated notice period.
-9. Exit: export, deletion on termination.
-10. For agents or runtimes: permission model, action approvals, activity logs.
+1. The privacy or data-use page for **this tier** (business pages differ from consumer pages): training defaults and
+   exceptions (feedback, opt-in sharing) and whether an admin can disable them; retention, deletion and who can
+   retrieve history.
+2. Processing and storage regions; the sub-processor list; security documentation (single sign-on, admin controls,
+   logging, encryption).
+3. Certifications: which ones, for which products, scope statement and period if public.
+4. Terms and data processing addendum: rights in inputs and outputs, right to evaluate or audit, incident notice,
+   warranties and liability limits; change notice for model, sub-processor and terms changes; export and deletion on
+   exit.
+5. For agents or runtimes: permission model, action approvals, activity logs.
 
 ## Rate
 
@@ -36,14 +35,12 @@ settle it (for example processing regions outside the US for a `tax-7216` firm):
 
 ## Rules
 
-- **Cite every rating:** document title, URL, date (or "undated, read YYYY-MM-DD") and a locator (section heading).
-  No document → `unknown`. Never rate from memory or from marketing claims without a document.
-- **This tier only.** If a page covers several tiers, quote the line that applies to this one; if unclear, `partial`
-  or `unknown` and say why.
-- **Published terms are not the contract.** Say which ratings could change once the signed contract is checked.
-- **No vendor recommendation, no comparison with other vendors, no prices.** Quotations under 25 words.
-- **Do not ask for or use client data.** Do not sign up for accounts or accept terms.
-- You assess and record; you do not install, configure or test the tool.
+- **Cite every rating:** title, URL, date (or "undated, read YYYY-MM-DD") and a locator. No document → `unknown`;
+  never rate from memory or marketing claims.
+- **This tier only.** If a page covers several tiers, quote the line for this one; if unclear, `partial` or `unknown`.
+- **Published terms are not the contract:** say which ratings could change once the signed contract is checked.
+- No vendor recommendation, comparison or prices; quotations under 25 words. No client data, no sign-ups, no accepting
+  terms; you assess and record, never install, configure or test the tool.
 
 ## Return (no more than about 400 words plus the frontmatter)
 
