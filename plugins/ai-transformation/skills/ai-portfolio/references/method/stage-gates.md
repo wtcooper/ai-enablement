@@ -25,7 +25,7 @@ value, and four outputs: Go, Kill, Hold or Recycle [COOPER-STAGEGATE-n.d.].
 
 **Exit criteria** for each gate held:
 
-- The evidence agreed at the previous gate presented, or its absence recorded, before gatekeepers who control the
+- The evidence agreed at the previous gate is presented, or its absence recorded, to gatekeepers who control the
   next stage's resources.
 - One outcome with its reason and evidence; a Go names the resources, who releases them, the conditions, the next
   gate, its evidence and new kill criteria.

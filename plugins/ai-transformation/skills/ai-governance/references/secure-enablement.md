@@ -22,7 +22,7 @@ findings suggest bans may be ineffective and that a policy does not guarantee co
 2. **Design the request path** (§5) and ask what response time the owner can commit to and keep; never invent one.
    Design the expedited lane from S2: urgent work is the usual bypass (`references/policy-and-data.md` move 3).
 3. **Build controls into the tools** (move 2); set triggers and cadence (move 3); write exceptions and incidents (§5).
-4. **Set training** (move 5) with ai-enablement and agree the measures; then play back the policy and write the outputs (§7).
+4. **Set training** (move 5) with ai-enablement and agree the measures; then play back and write the outputs (§7).
 
 ## 3. Question bank
 
@@ -62,8 +62,8 @@ findings suggest bans may be ineffective and that a policy does not guarantee co
 **Request form fields:** tool, tier and contract; use and audience; data classes; runtime class and permissions; regime
 flags (tax-return information, attest client, legal matter, client terms, EU staff decisions); requester's role.
 
-**Re-approval triggers (advisor default):** model change · sub-processor change · terms change · new data class · new
-use · incident [NIST-600-1-2024, GV-1.6-003, GV-6.1-005, GV-6.1-009].
+**Re-approval triggers (advisor default):** model change · sub-processor change · terms change · new data class ·
+new use · incident [NIST-600-1-2024, GV-1.6-003, GV-6.1-005, GV-6.1-009].
 
 **Exceptions:** granted only by the named role; logged centrally with reason, scope and expiry; an unowned exception
 is a gap. **Incidents:**

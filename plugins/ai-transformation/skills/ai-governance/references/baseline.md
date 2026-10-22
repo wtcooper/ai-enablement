@@ -44,7 +44,8 @@ what. Source keys in brackets are listed in §8. Scope tags: **[T]** team, **[U/
 
 1. **Ask about real tools, including personal and free ones, before drafting.** In a 47-country survey of 48,340
    people led by the University of Melbourne with KPMG, most employees who use AI at work used free public tools, and
-   48% said they had uploaded sensitive company information to public AI tools (self-reported) [KPMG-MELB-2025, pp.6, 75].
+   48% said they had uploaded sensitive company information to public AI tools (self-reported)
+   [KPMG-MELB-2025, pp.6, 75].
 2. **Ask what followed the last "no".** In the same survey such uploads were reported by 67% of employees whose
    employer banned generative AI and 33% of those with no policy; the authors say bans may be ineffective
    (self-reported, correlational) [KPMG-MELB-2025, p.75].
@@ -59,14 +60,14 @@ what. Source keys in brackets are listed in §8. Scope tags: **[T]** team, **[U/
 
 ## 5. Decision rules
 
-- The unit prepares tax returns → flag `tax-7216`. It serves attest clients → `attest-independence`. It practises law
-  → `legal-practice` [ECFR-7216-2008; JOFA-2026; ABA-OP512-2024].
+- Prepares tax returns → flag `tax-7216`. Serves attest clients → `attest-independence`. Practises law →
+  `legal-practice` [ECFR-7216-2008; JOFA-2026; ABA-OP512-2024].
 - Client contracts or outside guidelines mention AI, subcontracting or data location → `client-terms`.
 - AI is used in the EU → `eu-deployer`; recruitment, decisions on terms of work, task allocation on behaviour or
   traits, and monitoring or evaluating staff are listed in Annex III [AIACT-EXPL-2026, Annex III point 4].
 - Personal data in scope of data-protection law → `privacy-law`.
 - A ban with no approved alternative → a first-priority gap (advisor default, built on [KPMG-MELB-2025, p.75]).
-- No record of who reviewed AI-assisted client work → a gap [CPAI-2026]. No owner or no stated time for B3 → a gap for
+- No record of who reviewed AI-assisted client work → a gap [CPAI-2026]. No owner or stated time for B3 → a gap for
   step 7.
 - Use the firm's own discovery results as the baseline; survey figures from other organizations are context only.
 

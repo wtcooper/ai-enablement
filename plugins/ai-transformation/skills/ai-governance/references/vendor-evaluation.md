@@ -79,9 +79,9 @@ and change notice unknown: client-confidential use stays `pending` with the feat
 
 ## 7. Output
 
-Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema `references/schemas/vendor.md`),
-the entry in `overlay/tool-catalog.yaml`, and the evaluation in policy section 7. Set `step_completed: 6`,
-`next_step: 7` the first time; later evaluations update the files without changing the step.
+Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema
+`references/schemas/vendor.md`), the entry in `overlay/tool-catalog.yaml`, and the evaluation in policy section 7.
+Set `step_completed: 6`, `next_step: 7` the first time; later evaluations leave the step unchanged.
 
 - **`evaluation`** is `desk` only once public documents are read and listed in `sources_checked`, `full` once the
   signed contract and vendor answers are checked, else `null`; ratings resting only on the user's report stay `unknown`.

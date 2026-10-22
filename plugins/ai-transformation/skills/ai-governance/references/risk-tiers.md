@@ -59,9 +59,9 @@ tolerance [NIST-RMF-2023]. The tier sets the user's checking, who else reviews, 
 | `tier-3` Client-facing or relied on | Deliverables, advice, client communications, anything leaving the firm | A named qualified reviewer checks facts, figures and every citation against its source before release | Input description, how verified, who reviewed [CPAI-2026] |
 | `tier-4` Regulated or high-impact | Attest procedures and evidence, signed returns and filings, court submissions, decisions about people, agents acting on client data or outside the firm | Use-case approval record before use; test results on firm samples; written reviewer instructions; regime steps (step 5) | Tier 3 plus tool and model version, configuration, why use was appropriate, approval, how output informed the conclusion |
 
-**Ladder rule (advisor default):** each move up the ladder (assist → augment → automate → delegate) raises the tier by
-at least one level until test evidence supports lowering it. `delegate` is always `tier-4` and must pass the five
-delegation gates in `../../transformation-advisor/references/method/onboarding.md` §5.
+**Ladder rule (advisor default):** each move up the ladder (assist → augment → automate → delegate) raises the
+tier by at least one level until test evidence supports lowering it. `delegate` is always `tier-4` and must pass
+the five delegation gates in `../../transformation-advisor/references/method/onboarding.md` §5.
 
 **Pattern map (advisor default).** For each pattern in use, take checkpoints and failure modes from the library §3
 and record: ladder rung, minimum tier, what the reviewer owns, failure to watch. Minimum tiers: `tier-2` for research,

@@ -11,16 +11,16 @@ duties continue and the professional stays responsible for the output, as the AI
 
 **Exit when all of these are true:**
 - **One subsection per regime** with its decision rule and owner; **consent and disclosure principles** (§5).
-- **Screens** (independence, section 7216, client terms) added to the request path and catalog flags.
-- **Open questions** that need counsel or the professional body, written down rather than guessed.
+- **Screens** (independence, 7216, client terms) in the request path and catalog flags; **open questions** for counsel
+  or the professional body written down, not guessed.
 
 ## 2. How to run it
 
 1. **Read the matched archetype's `guardrails.md`** (§5); its principles and "checks before a plan goes ahead" are
    the agenda. Work one regime at a time, in the order of exposure named in step 3 (R1), using the §4 triage.
-2. **Write the consent and disclosure principles** (§5). Engagement-letter wording stays a draft for the firm's counsel.
-3. **Add the screens** to the catalog `flags` and the request form (step 7). Record open questions and who answers them.
-4. **Play back and write the outputs** (§7).
+2. **Write the consent and disclosure principles** (§5). Engagement-letter wording stays a draft for counsel.
+3. **Add the screens** to the catalog `flags` and the request form (step 7). Record open questions and who answers
+   them; then play back and write the outputs (§7).
 
 ## 3. Question bank
 
@@ -44,7 +44,8 @@ duties continue and the professional stays responsible for the output, as the AI
    a substantive determination is unresolved; a 2026 ABA Tax Section panel abstract poses it [WINTHROP-2026]. Ask
    per step, not per tool.
 3. **Never make 7216 consent a condition of the engagement.** The regulation treats consent conditioned on service as
-   involuntary, except for disclosure to another preparer assisting with the return [ECFR-7216-2008, 301.7216-3(a)(1)-(2)].
+   involuntary, except for disclosure to another preparer assisting with the return
+   [ECFR-7216-2008, 301.7216-3(a)(1)-(2)].
 4. **Run an independence screen on every AI service to, and vendor tie with, an attest client.** Developing or hosting
    an AI system for an attest client can raise independence concerns [JOFA-2026]; IESBA's technology-related
    independence revisions apply to periods beginning on or after 15 December 2024 [IESBA-TECH-2023].
@@ -61,7 +62,7 @@ duties continue and the professional stays responsible for the output, as the AI
 |---|---|---|
 | `tax-7216` | `../../transformation-advisor/references/archetypes/tax/guardrails.md` §3, §4, §7, §9, §12 | 7216 triage; OPR Alert 2026-19 practices; fees and disclosure; other jurisdictions (UK PCRT, Australian TPB) |
 | `attest-independence` | `../../transformation-advisor/references/archetypes/assurance/guardrails.md` §5, §6, §8, §11 | Documentation central versus file; confidentiality; vendor equity, fee-sharing, referral or control terms as independence items; re-approval when models change |
-| `legal-practice` | `../../transformation-advisor/references/archetypes/professional-services/guardrails.md` §1, §3 to §6 | Competence and supervision; consent and privilege; ethical walls; agents reaching email or files; fees; disclosure; following client restrictions |
+| `legal-practice` | `../../transformation-advisor/references/archetypes/professional-services/guardrails.md` §1, §3 to §6 | Competence and supervision (oversight scales with autonomy); consent (move 5) and privilege; ethical walls; agents reaching email or files; fees; disclosure; following client restrictions |
 | `client-terms` | professional-services guardrails §6 | Client AI terms register; disclosure (consultants inform clients when AI materially contributes); follow restrictions |
 | security providers | `../../transformation-advisor/references/archetypes/security/guardrails.md` §7 | Service providers and client data |
 
@@ -69,8 +70,7 @@ duties continue and the professional stays responsible for the output, as the AI
 - **Tax:** write the 7216 decision per workflow, with reasons (tax guardrails §12). OPR Alert 2026-19 asks for secure,
   enterprise-approved AI but does not mention consent; no IRS guidance on AI and 7216 consent was found [IRS-OPR-2026].
 - **Assurance:** AI services to or tools hosted for an attest client, and vendor ties with equity, fee-sharing, referral
-  or control terms → independence review first (assurance guardrails §8). Firm-built audit tools are `tier-4` (step 4).
-- **Legal:** informed consent before a self-learning tool (move 5); oversight scales with autonomy (guardrails §1, §4).
+  or control terms → independence review first (assurance guardrails §8). Firm-built audit tools are `tier-4`.
 
 **Consent and disclosure principles (all regimes)**
 - Consent is specific (purpose, recipient, information, risks), never boilerplate, and never a condition of service
@@ -86,8 +86,8 @@ law, so it is `tier-4` with preparer review and prior signed consent where the v
 
 ## 7. Output
 
-Write section 6 of `overlay/policy.md`. Set `flags` on catalog entries in `overlay/tool-catalog.yaml`. Add profession
-lines to `overlay/guardrails.md`. Set `step_completed: 5`, `next_step: 6`.
+Write section 6 of `overlay/policy.md`; set `flags` on entries in `overlay/tool-catalog.yaml`; add profession lines
+to `overlay/guardrails.md`. Set `step_completed: 5`, `next_step: 6`.
 
 ## 8. Sources
 

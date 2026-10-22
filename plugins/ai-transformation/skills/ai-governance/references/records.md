@@ -66,7 +66,7 @@ regime flags; exit plan [NIST-600-1-2024, GV-1.6-003, with advisor additions].
 - **Tax:** OPR Alert 2026-19 reads Circular 230 §10.36 as expecting firm procedures on training, secure data handling,
   accuracy monitoring and documentation (tax guardrails §3) [IRS-OPR-2026].
 - **Legal:** a policy protects only if operated and evidenced; in *Johnson v. Dunn* the firm was not sanctioned, the
-  judge finding it acted reasonably to prevent the misconduct (professional-services guardrails §1) [ABAJ-JOHNSON-2025].
+  judge finding it acted reasonably to prevent misconduct (professional-services guardrails §1) [ABAJ-JOHNSON-2025].
 - **Privilege:** a US court held a defendant's consumer-AI chats neither privileged nor work product; how enterprise
   tiers fare is untested (professional-services guardrails §4) [ORRICK-HEPPNER-2026].
 
