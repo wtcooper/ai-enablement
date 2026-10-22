@@ -12,6 +12,7 @@ From: owner decision of 2026-10-20 (skill suite, plugin renamed `ai-transformati
 5. [What each new skill writes](#5-what-each-new-skill-writes)
 6. [Content added to the shared knowledge](#6-content-added-to-the-shared-knowledge)
 7. [Quality gates](#7-quality-gates)
+8. [Simplicity and deferred features](#8-simplicity-and-deferred-features)
 
 ## 1. Why a suite
 
@@ -111,3 +112,20 @@ Schemas live with the skill that owns the file; vocabulary ids stay in the share
   paths), schema examples that parse, and identical core-rules blocks.
 - A smoke test in Claude Code: each skill triggers on its moment, reads a shared reference across the skill
   folder, and writes its workspace file; a short end-to-end run hands off advisor → portfolio → delivery.
+
+## 8. Simplicity and deferred features
+
+Owner decision of 2026-10-22: transformation-advisor is the key skill. The four siblings should be robust but not
+overcomplicated, and grow as they are tested with real users. They were trimmed moderately: every step and file
+kept, each `SKILL.md` at 160 lines or fewer, method files about 40% shorter. Behaviour that an end-to-end test proved
+necessary was kept. Features were cut, not lost. Each comes back when a test or a user shows it is needed:
+
+| Skill | Deferred features (detail and "worth it when" in the trim report) |
+|---|---|
+| ai-portfolio | Tailoring by journey stage; payback hurdles and spend thresholds per item class; benefit dependencies; configurable screening axes; a separate benefits-review rhythm; an independent challenge before big-bet gates; budget-split benchmarks; partner economics at case gates; wider acquired-firm guidance; private-equity benchmarks; the central team's shift from gatekeeper to advisor |
+| ai-solution-delivery | Question banks per step; expert-move notes; full common-traps tables; long worked examples; a per-block readiness template |
+| ai-enablement | Scope tags and full question banks; an equity check on uneven take-up; a richer forum catalogue; simulated practice environments; a delegation-depth signal; per-step checklists |
+| ai-governance | A per-pattern risk table; per-runtime-class control notes; an internal-audit frame for tier-4 uses; mapping to ISO/IEC 42001 and the CSA controls matrix; non-US regimes; contract and liability depth; survey context for a business case |
+
+Trim reports: [`research/runs/trim/`](../research/runs/trim/). The detailed text is in git history at the commit
+before each trim.
