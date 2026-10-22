@@ -22,7 +22,7 @@ stages:
   - { id: production, purpose: "Run as supported service for the first population; realise and measure benefits", entry: ["Go at g3"], exit: [], gatekeepers: [] }
   - { id: scale, purpose: "Extend to further practices, offices or client groups; reuse components", entry: ["Go at g4"], exit: [], gatekeepers: [] }
   - { id: retire, purpose: "Decommission safely, keep lessons and reusable assets", entry: ["Retire decision"], exit: [], gatekeepers: [] }
-gate_paths:                        # defaults: ../method/stage-gates.md §3.2 and setup.md §3.1
+gate_paths:                        # default light path: references/method/stage-gates.md §3.2
   light: "Lowest risk tier and individual-productivity items: g1 and g2 combined; portfolio owner decides g0"
   full: "Every other item: all gates"
   g0_deciders: { light: [], full: [] }
@@ -30,7 +30,7 @@ roles:
   review_forum: []
   intake_contact: ""
   other: []
-rhythm:
+rhythm:                            # default: references/method/setup.md §3.1
   review: "Monthly portfolio review"
   rebalance: "Every third review"
 state:
