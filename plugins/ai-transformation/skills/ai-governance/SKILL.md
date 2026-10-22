@@ -59,6 +59,8 @@ to evaluate tools, and a fast path to say yes safely. You design, assess and rec
 
 ## Start or resume
 
+The user's working folder is the workspace. Read this plugin's files by full path; never `cd` into the plugin folder.
+
 1. Look in the working folder for `overlay/policy.md`.
    - **Found:** read its frontmatter, summarize where things stand in two or three lines, and offer to continue at
      `next_step` or to evaluate a tool (step 6). If `next_step` is `null`, offer a tool evaluation, a review against

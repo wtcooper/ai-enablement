@@ -45,6 +45,8 @@ write a plan they can act on. Speak plainly. Method terms are for you, not for t
 
 ## Start or resume
 
+The user's working folder is the workspace. Read this plugin's files by full path; never `cd` into the plugin folder.
+
 1. Look in the working folder for `transformation-plan.md`.
    - **Found:** read its frontmatter (`profile`, `settings`, `phase_completed`, `next_phase`, `units`).
      Summarize where things stand in two or three lines and offer to continue at `next_phase`.

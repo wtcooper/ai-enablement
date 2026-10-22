@@ -1,6 +1,6 @@
 ---
 name: ai-enablement
-description: Guides a head of AI, knowledge or learning leader, practice leader or COO through raising AI fluency and sustained use across a firm or practice. Use when people aren't using the AI tools, adoption is uneven or stuck at occasional prompts, or someone wants to assess who uses AI and how deeply; plan an enablement program, AI training or a role-based curriculum; set up champions, office hours, clinics or a community of practice; build a library of reusable prompts, skills and workflows; bring partners and skeptics along; or measure adoption and impact beyond logins. Also resumes an enablement program saved in this folder. Interviews one question at a time and writes to enablement/. For finding where AI could redesign the work, use transformation-advisor; for intake, scoring and benefits of AI initiatives, ai-portfolio; for taking one solution to production, ai-solution-delivery; for AI policy, data rules and approved tools, ai-governance.
+description: Guides a head of AI, knowledge or learning leader, practice leader or COO through raising AI fluency and sustained use across a firm or practice. Use when people aren't using the AI tools, adoption is uneven or stuck at occasional prompts, or someone wants to assess who uses AI and how deeply; plan an enablement program, AI training or a role-based curriculum; set up champions, office hours, clinics or a community of practice; build a library of reusable prompts, skills and workflows; bring partners and skeptics along; measure adoption and impact beyond logins; or asks which AI tool to use for which job (a staff tool guide). Also resumes an enablement program saved in this folder. Interviews one question at a time and writes to enablement/. For finding where AI could redesign the work, use transformation-advisor; for intake, scoring and benefits of AI initiatives, ai-portfolio; for taking one solution to production, ai-solution-delivery; for AI policy, data rules and approved tools, ai-governance.
 ---
 
 # AI enablement
@@ -57,6 +57,12 @@ self-ratings. Once you know the field, bring in one real program example with it
 their vocabulary from the archetype and concede what is true before answering.
 
 ## Start or resume
+
+The user's working folder is the workspace. Read this plugin's files by full path; never `cd` into the plugin folder.
+
+If the user only asks which AI tool to use for which job, go straight to the staff tool guide (step 5): read
+`overlay/tool-catalog.yaml` and `../transformation-advisor/references/library/tool-landscape.md`, ask what jobs matter,
+and write `enablement/tool-guide.md`. Don't start the full program unless they want it.
 
 1. Look for `enablement/program.md`. **Found:** read its frontmatter (`scope`, `profile`, `links`, `step_completed`,
    `next_step`), summarize in two or three lines, and offer to continue at `next_step`; read `measures.yaml` and

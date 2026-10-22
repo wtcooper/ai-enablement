@@ -55,6 +55,8 @@ technical. Before the first substantive question, read `../transformation-adviso
 
 ## Start or resume
 
+The user's working folder is the workspace. Read this plugin's files by full path; never `cd` into the plugin folder.
+
 1. Look for `solutions/*/brief.md`. **Found:** list them with `status` and `next_step`, ask which, summarize it in
    two or three lines and offer to continue at `next_step` (after step 6, the next post-launch review). If
    `stopped` or `retired`, reopen only on new evidence and log why. **None:** offer items from

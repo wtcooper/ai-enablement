@@ -54,6 +54,8 @@ an outcome or a named open question. First read `../transformation-advisor/refer
 
 ## Start or resume
 
+The user's working folder is the workspace. Read this plugin's files by full path; never `cd` into the plugin folder.
+
 1. Look for `portfolio/portfolio.yaml`. **Found:** count items by stage and status, note items due at their
    `next_gate`, early warnings and `state.last_review`, summarize in two or three lines and offer the likely next
    move. **Not found:** start at step 1; an advisor `transformation-plan.md` and `opportunities.yaml`, if present,
