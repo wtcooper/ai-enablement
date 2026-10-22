@@ -1,16 +1,9 @@
 # Schema: enablement/workflows/<id>.md (workflow/v1)
 
 One markdown file per reusable workflow in the library: YAML frontmatter for the fields below, then a body in the
-shape of `../templates/workflow.md`. Step 5 writes and curates these files; the ai-solution-delivery skill may add
-one when a launched solution changes how a role works. Shared ids (`work_types`, `patterns`, `ladder`,
-`runtime_classes`) come from `../../../transformation-advisor/references/schemas/vocabulary.yaml`.
-
-## Contents
-
-1. [Frontmatter](#1-frontmatter)
-2. [Field rules](#2-field-rules)
-3. [Controlled values used only here](#3-controlled-values-used-only-here)
-4. [Example](#4-example)
+shape of `../templates/workflow.md`. Step 5 writes and curates these files; ai-solution-delivery may add one when a
+launched solution changes how a role works. Shared ids (`work_types`, `patterns`, `ladder`, `runtime_classes`) come
+from `../../../transformation-advisor/references/schemas/vocabulary.yaml`; the other enums are local.
 
 ## 1. Frontmatter
 
@@ -21,14 +14,14 @@ title: string
 roles: [ string ]                  # role groups that use it
 practice: string
 task: string                       # the task in the role's own words
-kind: prompt | skill | procedure
+kind: prompt | skill | procedure   # a pattern a person adapts | packaged, used the same way across a team | written steps mixing AI and manual work
 work_types: [ id ]
 pattern: id                        # often draft-review-loop, research-brief, grounded-knowledge-assistant or other
 ladder: assist | augment           # automate or delegate belongs in ai-solution-delivery
 runtime_class: id                  # usually personal-assistant or shared-team-skills
 tool: string | null                # only a product listed in overlay/tool-catalog.yaml
-status: candidate | testing | approved | needs-retest | retired
-origin: crowd | champion | central | solution
+status: candidate | testing | approved | needs-retest | retired   # lifecycle in ../workflow-library.md §4
+origin: crowd | champion | central | solution   # any user, a champion, the central team, or a launched solution
 owner: role                        # keeps the entry current
 reviewer: role                     # approves it for the library
 human_checkpoint: string           # who checks what before the output is used or leaves the team
@@ -52,28 +45,14 @@ updated: YYYY-MM-DD
   authority against the source before the letter is sent"). "Review as needed" is not a checkpoint.
 - **Roles, not people.** `owner` and `reviewer` are roles. The body may credit a contributor by name only if the user
   offers it; never rate anyone.
-- **Tools.** `tool` names a product only if `overlay/tool-catalog.yaml` lists it (core rule 6); otherwise leave it
-  `null` and rely on `runtime_class`.
-- **Ladder.** Library workflows are `assist` or `augment`. If a workflow would run without a person on the normal
-  path, it is a solution, not a library entry: route it to the ai-solution-delivery skill.
+- **Tools.** `tool` names a product only if `overlay/tool-catalog.yaml` lists it; otherwise `null`, and rely on
+  `runtime_class`.
+- **Ladder.** `assist` or `augment` only. A workflow with no person on the normal path is a solution: route it to
+  ai-solution-delivery.
 - **Retirement.** Set `status: retired` and `retired_because`; keep the file so links do not break.
 - **Quote free text** in double quotes. Dates record events; they are never deadlines.
 
-## 3. Controlled values used only here
-
-| Field | Values | Meaning |
-|---|---|---|
-| `kind` | `prompt` | A prompt pattern a person pastes or adapts |
-| | `skill` | A packaged prompt, skill or plugin used the same way across a team |
-| | `procedure` | Written steps that combine AI use with manual steps and checks |
-| `status` | `candidate` | Submitted; not yet tested |
-| | `testing` | Being run on real, sanitized cases |
-| | `approved` | Passed its test; listed for reuse |
-| | `needs-retest` | A `review_when` condition fired (tool, policy or task changed) |
-| | `retired` | Withdrawn; kept for the record |
-| `origin` | `crowd`, `champion`, `central`, `solution` | Who produced it: any user, a champion (for example a capstone), the central team, or a launched solution |
-
-## 4. Example
+## 3. Example
 
 ```yaml
 schema: workflow/v1

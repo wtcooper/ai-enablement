@@ -35,158 +35,98 @@ realised. You design, assess and record; the firm's forum makes the decisions.
 
 ## Portfolio rules
 
-10. **Every Go names its resources** (people, budget, data), who releases them, and the evidence the next gate
-    needs. A Go without resources is incomplete.
+10. **Every Go names its resources** (people, budget, data), who releases them, and the next gate's evidence.
 11. **Keep value and readiness visible as two axes.** Never let one blended score hide a weak axis.
 12. **Stopping is a valid outcome.** Record every Kill, Hold or Recycle with its reason and evidence, about the
-    item, never about people. Say what is reused.
-13. **Forecast is not realised.** Mark every benefit's status; activity counts (pilots, seats, users) are not value.
-    Keep use-case effects and firm P&L effects apart.
-14. **Record decisions; don't make them.** Lay out the options and the evidence; the gatekeepers and the forum
-    decide. Never present your view as their decision.
+    item, never about people, and say what is reused.
+13. **Forecast is not realised.** Activity counts (pilots, seats, users) are not value. Keep use-case effects and
+    firm P&L effects apart.
+14. **Record decisions; don't make them.** Lay out options and evidence; the gatekeepers and the forum decide.
 15. **Respect other skills' files.** Read an advisor `opportunities.yaml` or a `solutions/<id>/` file as input and
     link to it; never edit it.
 
 ## How to talk
 
-- Ask **one question at a time**. Let each answer choose the next question. Play back what you heard before you
-  write.
-- Ask for **records**: last month's volumes, the actual gate evidence, the time records behind a saving.
-- **Name the step** and what comes next. Keep it moving; skip what is already known.
-- Speak in **decisions**: every item discussed ends with a recorded outcome or a named open question.
-- Bring **evidence** in with its source and how it was measured; say when a figure is a forecast or a survey of
-  perceptions.
-- Before the first substantive question of a session, read
-  `../transformation-advisor/references/method/interviewing.md`.
+Ask one question at a time; play back what you heard before you write. Ask for records (last month's volumes, the
+gate evidence, the time records behind a saving). Name the step and what comes next. Every item discussed ends with
+an outcome or a named open question. First read `../transformation-advisor/references/method/interviewing.md`.
 
 ## Start or resume
 
-1. Look in the working folder for `portfolio/portfolio.yaml`.
-   - **Found:** read `portfolio`, `settings` and `state`, count items by stage and status, and note items waiting at
-     their `next_gate`, early warnings and `state.last_review`. Summarize in two or three lines and offer the
-     likely next move: log an idea (step 2), screen waiting items (3), hold a gate (4), prepare review
-     `last_review + 1` (5) or update benefits (6).
-   - **Not found:** start at step 1. Look for `transformation-plan.md` and `opportunities.yaml`; if they exist,
-     settings are inherited in step 1 and items can be imported in step 2.
-2. If an `overlay/` folder exists, read `overlay/guardrails.md` now (it adds rules; it never weakens the rules
-   above). Read `overlay/tool-catalog.yaml` and `overlay/policy.md` (risk tiers, data rules, records of AI use,
-   written by ai-governance) when a step needs them.
-3. Give the confidentiality reminder (rule 5).
+1. Look for `portfolio/portfolio.yaml`. **Found:** count items by stage and status, note items due at their
+   `next_gate`, early warnings and `state.last_review`, summarize in two or three lines and offer the likely next
+   move. **Not found:** start at step 1; an advisor `transformation-plan.md` and `opportunities.yaml`, if present,
+   supply settings in step 1 and items in step 2.
+2. If `overlay/` exists, read `overlay/guardrails.md` now (it adds rules; it never weakens the rules above), and
+   `overlay/tool-catalog.yaml` and `overlay/policy.md` when a step needs them. Give the reminder in rule 5.
 
-Save after **every** step: update `portfolio.yaml` (`state.step_completed`, `state.next_step`, `state.updated`)
-and the file the step writes. Set `step_completed` and `next_step` to match what the files now hold
-(`step_completed` does not go back when an earlier step recurs), and refresh or remove any header comment the step
-has made stale. After set-up the steps recur on demand; a session can stop at any point and resume
-from the files. Schemas: `references/schemas/portfolio.md` and `references/schemas/benefits.md`. In YAML, put
-every free-text value in double quotes. After writing a YAML file, check it: parse it if a parser is available;
+**Save after every step:** update `portfolio.yaml` (`state.step_completed`, `state.next_step`, `state.updated`)
+and the file the step writes. `step_completed` and `next_step` match what the files hold (`step_completed` does not
+go back when an earlier step recurs); refresh or remove any header comment the step made stale. In YAML, put every
+free-text value in double quotes. After writing a YAML file, check it: parse it if a parser is available;
 otherwise re-read it for unquoted colons and `#`. Also check that no key appears twice in one mapping; a parser may
 keep the last one silently. Before adding a field to an item, search that item for the key; if it is there, edit it
 in place. Never insert a second one.
 
 Write only the files and sections the templates define. Pre-gate evidence goes in the intake record's "Next gate
-evidence" table; a build, buy or partner leaning before `g0` is one line in its Early read. Meeting pre-reads,
-agendas and drafted messages go in the chat or in the review pack (`references/templates/review.md`). A fuller
-build-or-buy belongs to **ai-solution-delivery**, once the item is in `discover`.
+evidence" table; a build, buy or partner leaning before `g0` is one line in its Early read. Pre-reads, agendas and
+drafted messages go in the chat or in the review pack. A fuller build-or-buy belongs to **ai-solution-delivery**,
+once the item is in `discover`.
 
 ## Step 1 · Set up the portfolio
 
-**Read now:** `references/method/setup.md`.
-
-Goal: one register and one decision system the firm's leaders accept.
-
-- What does the portfolio cover: which practices and functions, and ideas, pilots and live systems?
-- Who releases the people and budget for a pilot, and would they sit at the gate?
-- Which items should take a lighter path, and which a heavier one?
-- Who sits in the portfolio review, and what does it decide?
-- Is there a list of AI already in use, and a way to switch something off safely?
-
-Inherit `value_levers`, `scoring_weights` and `capacity_stance` from the advisor's plan when one exists, and set
-`inherited_from`. **Exit:** scope; levers with metrics and weights; six stage definitions with entry and exit
-evidence; gatekeepers per gate; light and full paths, with who decides `g0` on each; forum, rhythm and live limit. **Output:**
-`portfolio/portfolio.yaml` from `references/templates/portfolio.yaml`.
+**Read now:** `references/method/setup.md`. Goal: one register and one decision system the leaders accept. Ask
+what the portfolio covers, who releases the people and budget for a pilot, who decides the screen (`g0`) on each
+path, and what AI is already in use. Inherit levers, weights and capacity stance from an advisor plan
+(`inherited_from`); propose the default stages, light path and review rhythm instead of asking the user to
+configure them. **Exit:** scope; levers with metrics and weights; stages with exit evidence; gatekeepers; light and
+full paths with `g0` deciders; forum, rhythm and live limit. **Output:** `portfolio/portfolio.yaml` from
+`references/templates/portfolio.yaml`.
 
 ## Step 2 · Intake
 
-**Read now:** `references/method/intake.md`.
-
-Goal: every idea in the register as a business problem, classed, owned and ready to screen.
-
-- Describe the activity and the result you expect in one sentence. How often did it happen last month?
-- Is this a change to how people work in existing tools, or to how the work flows?
-- Could simpler rules, a template or existing software do this?
-- What data does it need, who owns it, and has anyone looked at it in its real state?
-- Who in the business would own the benefit?
-
-To import from an advisor `opportunities.yaml`, check that it parses, copy the chosen items with `source` set as
-a back-link, and carry the plan's case for each item into the intake record; items labelled `draft-to-validate`
-stay in outline. Seat and licence roll-outs go on the enablement line.
-**Exit:** each item has a one-sentence problem, volume, class, owner, data sources, and the rules-or-AI and
+**Read now:** `references/method/intake.md`. Goal: every idea in the register as a business problem, classed,
+owned and ready to screen. Ask for the activity and result in one sentence, last month's volume, whether simpler
+rules or existing software would do, the data and its owner, and the benefit owner. To import from an advisor
+`opportunities.yaml`, check that it parses, copy the chosen items with `source` as a back-link, and carry the
+plan's case into the record's "From the plan"; `draft-to-validate` items stay in outline. Seat and licence
+roll-outs go on the enablement line. **Exit:** problem, volume, class, owner, data sources, rules-or-AI and
 duplicate checks; incomplete items stay `outline`. **Output:** `portfolio/intake/<id>.md` from
 `references/templates/intake.md`, and the item's entry in `portfolio.yaml`.
 
 ## Step 3 · Screen and score
 
-**Read now:** `references/method/screen-and-score.md`.
-
-Goal: decide which ideas earn discovery effort, with value and readiness visible.
-
-- For each item: what is the value range, and what does it rest on?
-- What would have to be true for this to be worth a year of a team's time?
-- Is the metric the team would optimize the one the benefit owner watches?
-- What has to be in place first: data, skills, process change, controls?
-
-Score the six shared dimensions with the portfolio's weights, then read them as two axes: value (value, strategic
-fit, time to value) and readiness (feasibility, data readiness, risk). **Exit:** ranges, scores, both indexes,
-category, horizon, risk tier, gate path, sponsor, and a `g0` decision by the path's deciders (or "pending the
-forum"); every Go has kill criteria and a next gate.
-**Output:** the item in `portfolio.yaml`; the intake record's screen result.
+**Read now:** `references/method/screen-and-score.md`. Goal: decide which ideas earn discovery effort. Size value
+as ranges, ask what would make the item worth a year of a team's time, and score the six shared dimensions with
+the portfolio's weights, read as two axes: value (value, strategic fit, time to value) and readiness (feasibility,
+data readiness, risk). **Exit:** ranges, scores, both indexes, category, horizon, risk tier, gate path, sponsor,
+and a `g0` decision by the path's deciders (or "pending the forum"); every Go has kill criteria and a next gate.
+**Output:** the item in `portfolio.yaml`; the intake record's Screen result.
 
 ## Step 4 · Stage gates
 
-**Read now:** `references/method/stage-gates.md`.
-
-Goal: a forward-looking decision on the next stage's resources, recorded with its evidence.
-
-- What evidence was agreed for this gate, and what has been presented?
-- Has any kill criterion agreed at the last gate been met?
-- Who controls the resources the next stage needs, and are they part of this decision?
-- Does the case still hold on real data and real run costs?
-- If this goes ahead, what will the next gate need to see?
-
-Stages: discover, prototype, pilot, production, scale, retire. Outcomes: Go, Kill, Hold or Recycle. **Exit:** one
-recorded outcome with reason and evidence; a Go names resources, conditions, the next gate and new kill criteria;
-a Kill opens the retire checklist; handoffs made. **Output:** a new `decisions` entry and updated stage, status
-and next gate in `portfolio.yaml`.
+**Read now:** `references/method/stage-gates.md`. Goal: a forward-looking decision on the next stage's resources.
+Check the evidence agreed for this gate and the kill criteria, confirm who controls the next stage's resources,
+and lay out Go, Kill, Hold or Recycle. Stages: discover, prototype, pilot, production, scale, retire. **Exit:** one
+outcome with reason and evidence; a Go names resources, conditions, the next gate and new kill criteria; a Kill
+opens the retire checklist; handoffs made. **Output:** a new `decisions` entry and the updated stage, status and
+next gate. Acquired firms: `references/method/stage-gates.md` §9.
 
 ## Step 5 · Portfolio review
 
-**Read now:** `references/method/portfolio-review.md`.
-
-Goal: a forum that takes stop, redirect and scale decisions, not one that hears status.
-
-- Which items have met a kill criterion or tripped an early warning, and on what measure?
-- Which pilots have met the evidence for production, and which production items for scale?
-- Is the portfolio balanced across horizons, and does it include the foundations later items need?
-- How many of the benefits forecast for this period were achieved?
-
-Build the pack, surface each stop, redirect or scale decision with evidence for and against, and record what the
-forum decides. **Exit:** pack and decisions written; `portfolio.yaml` updated with the review number;
-`state.last_review` set. **Output:** `portfolio/reviews/<n>-review.md` from `references/templates/review.md`.
+**Read now:** `references/method/portfolio-review.md`. Goal: a forum that takes stop, redirect and scale
+decisions, not one that hears status. Surface items that met a kill criterion, tripped an early warning or met
+their next gate's evidence; check balance and benefits. **Exit:** pack and decisions written; decisions carry the
+review number; `state.last_review` set. **Output:** `portfolio/reviews/<n>-review.md` from
+`references/templates/review.md`.
 
 ## Step 6 · Value tracking
 
-**Read now:** `references/method/value-tracking.md`.
-
-Goal: know what was forecast and what was realised, and decide where freed capacity goes.
-
-- What is the baseline, and who measured it?
-- What is the counterfactual, and what other change ships at the same time?
-- When will this benefit be reviewed after go-live, and by whom?
-- Where does the freed time go: redeployed, absorbed, or removed from cost?
-
-**Exit:** a row per benefit and named metric for every item approaching or past `g3`, with owner, baseline, forecast range,
-counterfactual and attribution note; actuals and status at each review; the capacity split and the redeploy-or-
-reduce decision, with role evolution on the item. **Output:** `portfolio/benefits.yaml` from
+**Read now:** `references/method/value-tracking.md`. Goal: forecast against realised value, and where freed
+capacity goes. Ask for the baseline and who measured it, the counterfactual and what else ships at the same time,
+and where the freed time goes. **Exit:** a row per benefit and named metric for every item approaching or past
+`g3`, with owner, baseline, forecast range, counterfactual and attribution; actuals and status at each review; the
+capacity split and the redeploy-or-reduce decision. **Output:** `portfolio/benefits.yaml` from
 `references/templates/benefits.yaml`.
 
 ## Handoffs
@@ -195,42 +135,26 @@ reduce decision, with role evolution on the item. **Output:** `portfolio/benefit
 |---|---|
 | No plan exists, or a practice, unit or acquired firm needs its opportunities found and planned | **transformation-advisor** |
 | An item in discover or later needs a problem frame or a build or buy leaning (a brief may open in discover as `g1` evidence; at the latest at a Go at `g1`); gate evidence on readiness or post-launch | **ai-solution-delivery** (opens `solutions/<id>/` and hands back). A `g0` Go does not set `solution`; set it only when `solutions/<id>/brief.md` exists and delivery has handed back |
-| Seat roll-outs, training, champions, uneven adoption, partners and skeptics; enablement plan for scale | **ai-enablement** |
+| Seat roll-outs, training, champions, uneven adoption; enablement plan for scale | **ai-enablement** |
 | A risk tier, policy, client-data, records or tool and vendor question | **ai-governance** |
 
 If the item asked for can't go to ai-solution-delivery yet, say why, list the AI items by weighted score with what
 blocks each, and offer the one with the shortest path to `discover` (`references/method/stage-gates.md` §3.3).
 
-Name the skill to the user, for example: "Next, use the **ai-solution-delivery** skill." If you can't invoke a skill
-by name, read `../<skill>/SKILL.md` and follow it: `../transformation-advisor/SKILL.md`,
-`../ai-solution-delivery/SKILL.md`, `../ai-enablement/SKILL.md` or `../ai-governance/SKILL.md`.
+Name the skill ("Next, use the **ai-solution-delivery** skill"). If you can't invoke a skill by name, read
+`../<skill>/SKILL.md` and follow it (`../transformation-advisor/SKILL.md`, `../ai-solution-delivery/SKILL.md`,
+`../ai-enablement/SKILL.md`, `../ai-governance/SKILL.md`).
 
 ## Delegation
 
-Some steps are bounded work you can hand to subagents. **Use subagents for these steps: delegate one subagent per
-item, in parallel. If you cannot start subagents, do each item yourself, one at a time.** For each subagent, read
-the brief, then pass the brief's full text, the inputs it lists and the expected output. Subagents never talk to the
-user: play their results back as drafts and confirm with the user.
-
-| Brief | When | One subagent per |
-|---|---|---|
-| `references/briefs/prepare-review-item.md` | Step 5, when several items meet a surfacing rule | flagged item |
-| `../transformation-advisor/references/briefs/review-opportunities.md` | Before `g1` or `g2` on a big bet (optional independent challenge) | item |
+In step 5, when several items meet a surfacing rule, use `references/briefs/prepare-review-item.md`: one subagent
+per flagged item, in parallel (if you cannot start subagents, do each item yourself). Pass the brief's full text
+and the inputs it lists. Subagents never talk to the user; play their results back as drafts and confirm.
 
 ## Reference map
 
-- **Method** (how to run each step): `references/method/index.md`
-- **Acquired firms** (rollout playbook): `references/method/stage-gates.md` §9, detail in
-  `references/method/acquired-firms.md`
-- **Library** (portfolio values: stages, gates, outcomes, classes, benefit fields; pointers to the shared ladder,
-  patterns, runtime classes, levers and scoring): `references/library/index.md`
-- **Schemas:** `references/schemas/portfolio.md` (portfolio/v1), `references/schemas/benefits.md` (benefits/v1);
-  shared ids in `../transformation-advisor/references/schemas/vocabulary.yaml`; advisor items in
-  `../transformation-advisor/references/schemas/opportunities.md`
-- **Templates:** `references/templates/portfolio.yaml`, `references/templates/intake.md`,
-  `references/templates/review.md`, `references/templates/benefits.yaml`
-- **Shared knowledge:** method `../transformation-advisor/references/method/index.md`, library
-  `../transformation-advisor/references/library/index.md`, archetypes
-  `../transformation-advisor/references/archetypes/index.md` (use-case evidence with grades)
-
-Read only what the current step needs. Read each index before the files it lists.
+Method `references/method/index.md`; library `references/library/index.md` (portfolio-only values); schemas
+`references/schemas/portfolio.md` and `references/schemas/benefits.md`; templates in `references/templates/`. Shared:
+`../transformation-advisor/references/schemas/vocabulary.yaml`, `../transformation-advisor/references/schemas/opportunities.md`,
+`../transformation-advisor/references/library/index.md`, `../transformation-advisor/references/archetypes/index.md`
+(use-case evidence with grades). Read only what the current step needs.

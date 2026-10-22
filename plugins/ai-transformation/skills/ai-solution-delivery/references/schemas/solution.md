@@ -1,9 +1,8 @@
 # Schema: solution files (solution/v1)
 
-Each solution has its own folder, `solutions/<id>/`, with four markdown files. Each file starts with YAML
-frontmatter for state, then a body written from its template in `../templates/`. The brief carries the solution's
-state for resume; the other three files carry only what their own step decides. Shared ids (pattern, ladder,
-change scope, runtime class, work types, archetype, levers) come from
+Each solution has its own folder, `solutions/<id>/`, with four markdown files: YAML frontmatter for state, then a
+body from its template in `../templates/`. The brief carries the solution's state for resume; the other three
+carry only what their own step decides. Shared ids come from
 `../../../transformation-advisor/references/schemas/vocabulary.yaml`.
 
 ## Contents
@@ -81,34 +80,27 @@ next_review_when: string          # the event that triggers the next review, nev
 
 ## 3. Controlled values owned by this skill
 
-These values are local to the solution files. They are not in the shared `vocabulary.yaml`.
+These values are local to the solution files, not in the shared `vocabulary.yaml`.
 
 | Field | Values | Meaning |
 |---|---|---|
-| `sourcing` | `buy` | Use a bought tool as it is |
-| | `configure` | Configure a bought tool: settings, templates, approved content, connectors |
-| | `build-on-model` | Build a workflow, retrieval and checks around a bought model or platform |
-| | `build-custom` | Build most components in-house |
+| `sourcing` | `buy` · `configure` · `build-on-model` · `build-custom` | Defined in `../method/build-or-buy.md` §3.1 |
 | | `undecided` | Until all of step 2's exit criteria are met; a leaning goes in the decisions log |
 | `status` | `in-progress` · `live` · `paused` · `stopped` · `retired` | Where the solution stands |
 | `eval-plan.status` | `draft` · `agreed` | Agreed once the owner accepts tasks, checks and thresholds |
 | `readiness.decision` | `pending` · `go` · `go-with-conditions` · `no-go` | The step 5 decision |
-| `post-launch.last_decision` | `continue` · `tighten` · `loosen` · `redesign` · `retire` | The outcome of the latest review; `tighten` and `loosen` refer to human review and autonomy |
+| `post-launch.last_decision` | `continue` · `tighten` · `loosen` · `redesign` · `retire` | `tighten` and `loosen` refer to human review and autonomy |
 
 ## 4. Field rules
 
 - **One folder per solution.** `id` matches the folder name and, where one exists, the portfolio item id.
   `source` keeps the back-link to the portfolio item and the advisor option; never copy their content.
-- **State.** After every step set `step_completed`, `next_step` and `updated` in `brief.md`, and tick the step in
-  its Progress list. `step_completed` is the last step whose exit criteria are all met, with every step before it
-  also met. While an exit criterion is open, do not advance `step_completed` or tick the step: list the open
-  criteria beside the unticked step. With the user's agreement you may work ahead; `next_step` names the step to
-  resume. After step 6, `next_step: null`; later reviews add numbered sections to `post-launch.md` and
-  update its frontmatter.
-- **Ids from the shared vocabulary.** `classification` values must be ids from `vocabulary.yaml`. If the step 3
-  design changes the rung or runtime class from the advisor option, record the change and the reason in the
-  brief's decisions log.
-- **Owners are roles.** Never record performance judgments about named individuals (rule 1).
+- **State.** `step_completed` is the last step whose exit criteria are all met, with every step before it also
+  met. While a criterion is open, do not advance it or tick the step: list the open criteria beside the unticked
+  step. With the user's agreement you may work ahead; `next_step` names the step to resume. After step 6,
+  `next_step: null`; later reviews add numbered sections to `post-launch.md`.
+- **Ids from the shared vocabulary.** `classification` values are ids from `vocabulary.yaml`. A change from the
+  advisor option's rung or runtime class goes in the decisions log with the reason.
 - **Who decides.** "Decided by" in the decisions log is `owners.business` or another firm role, never this
   skill. A decision this skill drafts reads "draft (ai-solution-delivery)" until a firm role confirms it. A
   confirmation by a role other than the business owner, for a decision the owner must take, is logged as
@@ -129,11 +121,8 @@ These values are local to the solution files. They are not in the shared `vocabu
   and add a row to the brief's Handoffs table. ai-portfolio then sets the item's `solution` to `solutions/<id>/`;
   a `g0` Go does not set it, and it is set only when `brief.md` exists and this skill has handed back. ai-portfolio
   writes that field and the benefits rows, not this skill.
-- **No dates as deadlines.** `updated` is a timestamp. Review triggers are events (`next_review_when`), never
-  calendar dates.
-- **Quote free text.** Put every free-text value in double quotes; an unquoted colon breaks the file.
-- **No client-confidential content.** The files describe cases by type, source system and id, never their
-  content (rule 5).
+- **Plain rules.** Owners are roles (rule 1). `updated` is a timestamp; review triggers are events, never dates.
+  Quote every free-text value. Cases appear by type, source system and id, never content (rule 5).
 
 ## 5. Example
 

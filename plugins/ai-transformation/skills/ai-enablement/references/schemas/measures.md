@@ -2,15 +2,14 @@
 
 One file per program, at `enablement/measures.yaml`, next to `enablement/program.md`. Step 1 writes the population,
 the segments and the baseline readings; step 2 defines every measure; step 7 adds readings and reads them. Shared ids
-(`value_levers`, `provenance`) come from `../../../transformation-advisor/references/schemas/vocabulary.yaml`. Ids used
-only in this file are listed in §3. A blank starting file is `../templates/measures.yaml`.
+(`value_levers`, `provenance`) come from `../../../transformation-advisor/references/schemas/vocabulary.yaml`; the
+other enums are local and explained in the comments below. A blank starting file is `../templates/measures.yaml`.
 
 ## Contents
 
 1. [Format](#1-format)
 2. [Field rules](#2-field-rules)
-3. [Controlled values used only here](#3-controlled-values-used-only-here)
-4. [Example](#4-example)
+3. [Example](#3-example)
 
 ## 1. Format
 
@@ -27,7 +26,7 @@ segments:
     groups: [ string ]             # practices, levels or role groups; never named people
     size_low: integer              # a range, because segments are estimates
     size_high: integer
-    depth: not-using | one-off | repeatable | builder
+    depth: not-using | one-off | repeatable | builder        # the ladder in ../assess-and-segment.md §4
     main_barrier: access | use-case | time | permission | security | belief | fear | none
     manager_behaviour: none | encourages | requires | unknown
     first_move: string
@@ -35,14 +34,14 @@ segments:
 measures:
   - id: string                     # short, stable, unique in this file, e.g. weekly-active
     name: string
-    layer: reach | activity | depth | embedded | outcome | sentiment | side-effect
+    layer: reach | activity | depth | embedded | outcome | sentiment | side-effect   # ../measure-adoption.md §4
     definition: string             # in words a sponsor would understand
     numerator: string
     denominator: string            # includes non-users for reach, activity and depth
     window: string                 # e.g. "7 days", "28 days", "per engagement"
     split_by: [ string ]           # e.g. practice, level, location
     data_source: string
-    method: telemetry | survey | sampled-work | records | comparison
+    method: telemetry | survey | sampled-work | records | comparison   # comparison: random, staggered or matched groups
     provenance: self-reported | vendor-published | independent
     measured: true | false         # true only for tracked data or a study; false for estimates and recollection
     known_bias: string
@@ -68,44 +67,21 @@ updated: YYYY-MM-DD
 
 - **Quote free text.** Put every free-text value in double quotes. An unquoted colon or `#` breaks the file.
 - **Groups, never people.** `segments.groups` and `split_by` name practices, levels and role groups. Never store
-  per-person usage, fluency scores or rankings (core rule 1). Suppress any split smaller than the minimum group size
-  the firm's HR or privacy lead sets, and say so in `note`.
+  per-person usage, fluency scores or rankings. Suppress any split smaller than the minimum group size the firm's HR
+  or privacy lead sets, and say so in `note`.
 - **Denominators include non-users.** For reach, activity and depth, `denominator` is the population in scope (or a
   segment of it), not the licensed or active users.
-- **Label every number.** `method` says how it was collected; `provenance` says who measured it; `measured` says
-  whether it is tracked or estimated. A self-estimate of time saved is `method: survey`, `measured: false`; it may use
-  `layer: outcome`, but report it apart from measured outcomes (`../measure-adoption.md` §5).
-- **Discount self-reports.** Every self-reported time-saved measure carries `discount` as a range with its basis.
-  Report the raw and discounted figures side by side (`../measure-adoption.md` §5).
+- **Label every number.** `method` says how it was collected; `provenance` who measured it; `measured` whether it is
+  tracked or estimated. A self-estimate of time saved is `method: survey`, `measured: false`, carries `discount`, and
+  is reported apart from measured outcomes (`../measure-adoption.md` §5).
 - **Counts may be points; value is a range.** Telemetry counts (`value`) can be single numbers. Estimates, time
   saved and any value figure use `low` and `high` (core rule 3).
-- **Targets are ranges with a dependency, never a date.** `target.after` names what must be in place first (for
-  example "after champions are active in every practice"), not a deadline (core rule 9).
-- **Readings are records.** `as_of` dates record when a reading was taken; they are not deadlines.
+- **Targets are ranges with a dependency, never a date.** `target.after` names what must be in place first. `as_of`
+  dates record when a reading was taken; they are not deadlines.
 - **Links.** `links.workflows` lists ids of files in `enablement/workflows/`; `opportunity` is an id in
-  `opportunities.yaml`; `benefit` is an id in `portfolio/benefits.yaml` when the ai-portfolio skill tracks it.
+  `opportunities.yaml`; `benefit` is an id in `portfolio/benefits.yaml` when ai-portfolio tracks it.
 
-## 3. Controlled values used only here
-
-| Field | Values | Meaning |
-|---|---|---|
-| `layer` | `reach` | Licensed or given access |
-| | `activity` | Used in a window (state the window; weekly is a stronger signal than one action in 28 days) |
-| | `depth` | Share with a repeatable workflow, or building for others |
-| | `embedded` | Named workflows where the AI way is the default way the work is done |
-| | `outcome` | Cycle time, quality, client responsiveness, risk, capacity redeployed, revenue |
-| | `sentiment` | Confidence, usefulness, willingness, by segment |
-| | `side-effect` | Downstream rework, review burden, policy breaches |
-| `method` | `telemetry` | Tool usage data |
-| | `survey` | People describing their own use or savings |
-| | `sampled-work` | Someone inspects a sample of real work products |
-| | `records` | Existing business records (time, matter, quality-review data) |
-| | `comparison` | A comparison group: random allocation, staggered rollout, or matched groups |
-| `depth` | `not-using`, `one-off`, `repeatable`, `builder` | The adoption depth ladder (`../assess-and-segment.md` §4) |
-| `main_barrier` | `access`, `use-case`, `time`, `permission`, `security`, `belief`, `fear`, `none` | The main reason a segment is not further up the ladder |
-| `manager_behaviour` | `none`, `encourages`, `requires`, `unknown` | What the segment's managers do about AI use |
-
-## 4. Example
+## 3. Example
 
 ```yaml
 schema: measures/v1
@@ -115,16 +91,6 @@ population:
   size: 120
   source: "HR headcount report"
 segments:
-  - id: power-users
-    name: "Builders and power users"
-    groups: ["Senior associates, business tax", "Tax technology team"]
-    size_low: 8
-    size_high: 12
-    depth: builder
-    main_barrier: none
-    manager_behaviour: encourages
-    first_move: "Invite into the champion network and the library review"
-    basis: "Telemetry weekly users cross-checked with interviews"
   - id: blocked
     name: "Non-users blocked by data rules"
     groups: ["Private client team"]
@@ -136,26 +102,6 @@ segments:
     first_move: "Get a clear data rule from governance before any training"
     basis: "Anonymous survey free-text answers"
 measures:
-  - id: weekly-active
-    name: "Weekly active share"
-    layer: activity
-    definition: "People who used an approved assistant in at least one of the last seven days"
-    numerator: "Distinct users with one or more sessions in seven days"
-    denominator: "Everyone in scope (population.size)"
-    window: "7 days"
-    split_by: ["practice group", "level"]
-    data_source: "Assistant admin dashboard export, aggregated by group"
-    method: telemetry
-    provenance: self-reported
-    measured: true
-    known_bias: "Counts any session, however trivial"
-    discount: null
-    lever: null
-    links: { workflows: [], opportunity: null, benefit: null }
-    baseline: { value: 34, low: null, high: null, unit: "% of population", as_of: 2026-10-20, basis: "Dashboard export" }
-    target: { low: 50, high: 65, unit: "% of population", after: "Role workflows taught in every practice group" }
-    readings: []
-    owner: "Head of tax knowledge"
   - id: embedded-workflows
     name: "Workflows that are the default way"
     layer: embedded

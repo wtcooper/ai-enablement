@@ -1,8 +1,8 @@
 # Vendor and tool evaluation (step 6)
 
 Read this on entering step 6, and whenever someone asks "can we use tool X with client data". It evaluates one tool
-at a time with a repeatable scorecard, decides, and writes the approved-tool catalog entry. Source keys in brackets
-are listed in §9. Vendor documents are cited only as evidence of what published terms say; never recommend a vendor.
+at a time with a repeatable scorecard, decides, and writes the catalog entry. Sources are in §8; vendor documents are
+cited only as evidence of what published terms say. Never recommend a vendor.
 
 ## Contents
 
@@ -11,39 +11,38 @@ are listed in §9. Vendor documents are cited only as evidence of what published
 3. [Question bank](#3-question-bank)
 4. [Expert moves](#4-expert-moves)
 5. [The scorecard and decision rules](#5-the-scorecard-and-decision-rules)
-6. [Common traps](#6-common-traps)
-7. [Worked example](#7-worked-example)
-8. [Output](#8-output)
-9. [Sources](#9-sources)
+6. [Worked example](#6-worked-example)
+7. [Output](#7-output)
+8. [Sources](#8-sources)
 
 ## 1. Goal and exit criteria
 
-**Goal.** A decision on one tool + tier + contract for named data classes and a maximum risk tier, with the evidence
-behind it. Vendor evaluation is a data-flow and change-control question first: what is retained and for how long,
-whether it trains models, who the sub-processors are and where processing happens, which certifications cover this
-product, and what happens when the vendor changes the model, a sub-processor or its terms, or when you leave
-[NIST-600-1-2024, GV-6.1-004 to GV-6.1-009; OPENAI-ENT-ND; MSFT-COPILOT-ND].
+**Goal.** A decision on one tool + tier + contract for named data classes and a maximum risk tier, with evidence.
+Evaluation is a data-flow and change-control question first: what is retained, whether it trains models, who the
+sub-processors are and where processing happens, which certifications cover this product, and what happens when the
+vendor changes the model, a sub-processor or its terms, or when you leave [NIST-600-1-2024, GV-6.1-004 to GV-6.1-009].
 
 **Exit when all of these are true:**
 - **Scorecard filled:** six dimensions rated `meets`, `partial`, `gap` or `unknown`, each with evidence and a locator.
-- **Screens done:** independence, section 7216 or tax-data rules, client terms.
+- **Screens done:** independence, section 7216 or tax-data rules, client terms (`references/professional-duties.md`).
 - **Own-sample test** planned or done for tier-3 and tier-4 uses.
 - **Decision** with data classes, maximum tier, conditions, re-approval triggers and exit plan.
 - **Catalog entry** written or updated, and the vendor file saved.
 
 ## 2. How to run it
 
-1. **Pin down the request:** which product, which tier, which contract, which use, which data classes, which runtime
-   class. Separate tiers are separate evaluations (move 1).
-2. **Offer a desk evaluation** from public documentation: delegate it with `references/briefs/evaluate-tool.md`
-   (one subagent per tool), or do it yourself. Label it a draft to validate.
-3. **Play the draft back** dimension by dimension. Ask the user what the signed contract and the vendor's answers
-   add; change ratings only on evidence.
-4. **Run the screens** from `policy.md` §6 (`references/professional-duties.md`).
-5. **Plan the own-sample test** for tier-3 and tier-4 uses: real-shaped, non-confidential or approved samples with
-   reference answers from the best reviewers (move 6). The firm runs it; you design it and record the result.
-6. **Decide** with §5 rules; write conditions as settings someone can check.
-7. **Write the vendor file and the catalog entry.** A `not-approved` decision is recorded too, with the alternative.
+1. **Pin down the request:** product, tier, contract, use, data classes, runtime class. Separate tiers are separate
+   evaluations and separate catalog entries.
+2. **Offer a desk evaluation** from public documentation: delegate it with `references/briefs/evaluate-tool.md` (one
+   subagent per tool + tier) or do it yourself. It is a draft to validate (rule 15).
+3. **Play the draft back** dimension by dimension. Ask what the signed contract and the vendor's answers add; change
+   ratings only on evidence. Start with V2 to V5: the data-flow facts decide most cases.
+4. **Run the screens** from policy section 6.
+5. **Design the own-sample test** for tier-3 and tier-4 uses (`references/risk-tiers.md` move 3): real-shaped,
+   non-confidential or approved samples with reference answers from the best reviewers. The firm runs it; you record
+   the result.
+6. **Decide** with the §5 rules; write conditions as settings someone can check. A `not-approved` decision is recorded
+   too, with the alternative.
 
 ## 3. Question bank
 
@@ -55,119 +54,73 @@ product, and what happens when the vendor changes the model, a sub-processor or 
 | V4 | Where is data stored and processed, and which sub-processors touch it? | [O] |
 | V5 | What notice do we get of model, sub-processor and terms changes, and how do we export our data and leave? | [O] |
 
-More, as needed:
-- Which certifications cover this product and scope (for example SOC 2 Type 2, ISO/IEC 27001, ISO/IEC 42001), for which period, with which exclusions? [O]
-- What are the warranties, liability limits and incident-notification terms? [O]
-- What can we test before approval on our own samples, and what are the known limitations? [U]
-- If it is an agent or runtime: what permissions does it hold, and what actions pause for a person? [U/O]
-
 ## 4. Expert moves
 
-1. **Record each product tier and contract as a separate catalog entry.** Every evaluation. Reveals different data
-   terms for consumer and commercial tiers of one vendor [ANTHROPIC-PRIV-2026; OPENAI-ENT-ND; MSFT-COPILOT-ND].
-2. **Read the exceptions to "we don't train on your data".** Retention and training. Reveals opt-in feedback paths:
-   one provider says rated feedback conversations can be stored up to 5 years and an organization owner can disable
-   the feedback control; another says opted-in shared data may be used for training [ANTHROPIC-PRIV-2026;
-   OPENAI-ENT-ND]. Make "feedback disabled" a catalog condition where available.
-3. **Ask where inference and storage happen.** Tax, EU or residency constraints. One provider's page says customers
-   outside the EU may have queries processed in the US, EU or other regions [MSFT-COPILOT-ND]; under the tax
-   regulations, disclosure outside the US needs prior consent [ECFR-7216-2008].
-4. **Use NIST's third-party actions as the contract checklist.** Contract review. Reveals missing clauses: content
-   ownership and usage rights, quality, security and provenance (GV-6.1-004); a right to evaluate third-party
-   processes (GV-6.1-006); an inventory of third parties with access to content and an approved-provider list
-   (GV-6.1-007); records of changes third parties make to content (GV-6.1-008); procurement due diligence that covers
-   embedded GAI and ongoing monitoring of third-party GAI risks (GV-6.1-009) [NIST-600-1-2024].
-5. **Ask what notice you get of model, sub-processor and terms changes, and write the re-approval trigger.** Change
-   control. Reveals silent drift; NIST asks for model versions in the inventory and for ongoing monitoring of
-   third parties, including detecting unauthorized changes [NIST-600-1-2024, GV-1.6-003, GV-6.1-005, GV-6.1-009]. No
-   benchmark of negotiated notice terms was found, so the trigger list is an advisor default.
-6. **Challenge the model on your own samples before approval and after model changes.** Tier-3 and tier-4 uses.
-   Model-risk guidance applies validation to vendor models and expects the firm to choose models appropriate to its
-   use even when relying on a vendor [FRB-SR117-2011]. The advisor's evaluation-set guidance is in
-   `../../transformation-advisor/references/method/plan-and-control.md` §3.4.
-7. **Ask for the exit and failure plan before signing.** Contract and approval. NIST GOVERN 1.7 asks for safe
-   decommissioning and GOVERN 6.2 for contingency processes for failures in high-risk third-party data or AI systems
-   [NIST-RMF-2023].
+1. **Read the exceptions to "we don't train on your data".** One provider says rated feedback conversations can be
+   stored up to 5 years and an organization owner can disable the feedback control; another says opted-in shared data
+   may be used for training [ANTHROPIC-PRIV-2026; OPENAI-ENT-ND]. Make "feedback disabled" a catalog condition.
+2. **Ask where inference and storage happen.** One provider's page says customers outside the EU may have queries
+   processed in the US, EU or other regions [MSFT-COPILOT-ND]; under the tax regulations, disclosure outside the US
+   needs prior consent [ECFR-7216-2008].
+3. **Ask what notice you get of model, sub-processor and terms changes, and write the re-approval trigger.** NIST asks
+   for ongoing monitoring of third parties, including detecting unauthorized changes [NIST-600-1-2024, GV-6.1-009].
+   No benchmark of negotiated notice terms was found, so the trigger list is an advisor default.
+4. **Read certifications for scope, period and exclusions**, and still test on your own data and use. Ask who carries
+   liability: see `../../transformation-advisor/references/archetypes/professional-services/guardrails.md` §8.
 
 ## 5. The scorecard and decision rules
 
 | Dimension (id) | What "meets" needs (advisor default) | Evidence to look for |
 |---|---|---|
-| Security and privacy (`security_privacy`) | Single sign-on and admin controls; activity logging; stated processing regions; security requirements in the contract | Trust or security pages; data processing terms [NIST-600-1-2024, GV-6.1-004] |
+| Security and privacy (`security_privacy`) | Single sign-on and admin controls; activity logging; stated processing regions; security terms in the contract | Trust or security pages; data processing terms [NIST-600-1-2024, GV-6.1-004] |
 | Data retention and training (`retention_training`) | No training on business data by default; feedback exceptions can be disabled; admin-set retention; deletion terms | Business privacy pages, data processing terms [OPENAI-ENT-ND; ANTHROPIC-PRIV-2026] |
 | Certifications (`certifications`) | A current report or certificate whose scope names this product, with period and exclusions read | SOC 2 Type 2 report, ISO/IEC 27001 or 42001 certificate and scope statement |
-| Contract terms (`contract_terms`) | Ownership and usage rights, quality, security, right to evaluate, incident notice, warranties and liability read | Contract, terms, addenda [NIST-600-1-2024, GV-6.1-004, -006; LAWSOC-GENAI-2026] |
+| Contract terms (`contract_terms`) | Ownership and usage rights, quality, security, right to evaluate, incident notice, warranties and liability read | Contract, terms, addenda [NIST-600-1-2024, GV-6.1-004, -006] |
 | Sub-processor and model changes (`change_control`) | A published sub-processor list with regions; notice of model, sub-processor and terms changes | Sub-processor page; change-notice clause [NIST-600-1-2024, GV-6.1-005, GV-6.1-009] |
 | Exit (`exit`) | Data export; deletion on termination; a contingency if the tool fails or is withdrawn | Terms; admin documentation [NIST-RMF-2023, GOVERN 1.7, 6.2] |
 
 **Gates outside the scorecard:** profession screens (step 5) and, for tier-3 and tier-4 uses, the own-sample test.
 
-**Decision rules (advisor default unless sourced)**
-- A `gap` in `retention_training` → not approved for `client-confidential` or `regulated` data.
+**Decision rules (advisor defaults)**
+- A `gap` in `retention_training`, or a consumer tier → never approved for `client-confidential` or `regulated` data.
 - Any `unknown` on a dimension that matters for the requested data class → ask the vendor; decision stays `pending`.
-- A consumer tier → never approved for `client-confidential` or `regulated` data.
 - A screen marked `needs-review` → no approval for that use until the reviewer clears it.
 - A tier-3 or tier-4 use with `own_sample_test: not-run` → at most `pilot`, for named user groups.
 - A certification whose scope does not name the product → `partial`, not `meets`.
 - An embedded feature that arrives switched on → off for client-confidential work until it has a catalog entry (NIST
-  asks that inventories and procurement cover embedded GAI [NIST-600-1-2024, GV-1.6-002, GV-6.1-009]).
+  asks that inventories and procurement cover embedded generative AI [NIST-600-1-2024, GV-1.6-002, GV-6.1-009]).
 - Re-approve on any trigger: model change, sub-processor change, terms change, new data class, new use, incident.
+- Agents and runtimes add least privilege and the actions that pause for a person to the conditions
+  (`references/risk-tiers.md` move 4); for a `managed-agent-runtime`, evaluate the platform and each agent separately.
 
-**Runtime-class notes.** For a `managed-agent-runtime`, evaluate the platform (tenancy, logging, data location, change
-notice) and each agent's permissions separately. For `background-agent` and `workflow-automation`, add least privilege
-and the actions that pause for a person to the conditions [OWASP-LLM-2025].
+## 6. Worked example
 
-## 6. Common traps
+Illustrative. A document-management vendor turns on an AI summary feature by default. The desk evaluation finds the
+AI processing region unstated, the feedback exception undescribed and no change-notice commitment. Decision: `pending`
+for client-confidential documents, with the feature off in those workspaces; the user confirms the admin switch, so
+firm-internal use is a `pilot` for the knowledge team (entry `docs-ai-summary`, `data_classes: [public,
+firm-internal]`). Questions on region, feedback and notice go to the vendor. The vendor schema example records it.
 
-| Trap | Evidence | How to avoid |
-|---|---|---|
-| Treating certifications as fitness for your use | Certificates show controls exist; a vendor blog notes ISO/IEC 42001 certification does not by itself satisfy EU AI Act obligations (directional) [OPENLAYER-2026] | Read scope, period and exclusions; still test on your data and use |
-| Approving the vendor, not the tier | [ANTHROPIC-PRIV-2026] | One entry per tool + tier + contract |
-| Published terms taken as the contract | Published terms may differ from negotiated contracts and change over time | Keep desk evaluations labelled; check the signed contract |
-| Questionnaire first, data flow last | The five data-flow facts decide most cases (advisor default; NIST's third-party actions centre on them [NIST-600-1-2024, GV-6.1]) | Start with V2 to V5 |
-| Vendor liability assumed | Legal AI vendors are reported to place liability on the deploying firm (professional-services guardrails §8) [INSINSIDER-LAWYERS-2026] | Negotiate warranties and indemnities; tell the insurer |
+## 7. Output
 
-## 7. Worked example
+Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema `references/schemas/vendor.md`).
+Add or update the entry in `overlay/tool-catalog.yaml` and list the evaluation in section 7 of `overlay/policy.md`. Set
+`step_completed: 6`, `next_step: 7` the first time; later evaluations update the files without changing the step.
 
-Illustrative, not a case study. An accounting firm's document-management vendor announces an AI summarisation
-feature, on by default.
-
-- **Request:** the feature (`embedded_in` the document platform), commercial tier, for firm-internal and
-  client-confidential documents.
-- **Desk evaluation (brief):** security `partial` (admin switch per workspace; AI processing region not stated);
-  retention and training `unknown` (feedback exception not described); certifications `partial` (platform report
-  does not name the feature); contract `unknown`; change control `gap` (no notice commitment found); exit `meets`.
-- **Screens:** independence not applicable; client terms `needs-review` for two clients that restrict AI.
-- **Decision:** `pending` for client-confidential documents, with the feature off in those workspaces; the user
-  confirms the admin switch, so firm-internal use is approved as a `pilot` for the knowledge team; questions on region,
-  feedback and notice go to the vendor.
-- **Catalog:** entry `docs-ai-summary` with `status: pilot`, `data_classes: [public, firm-internal]`.
-
-## 8. Output
-
-Write `overlay/vendors/<vendor-product>.md` from `references/templates/vendor.md` (schema
-`references/schemas/vendor.md`). Add or update the entry in `overlay/tool-catalog.yaml`. List the evaluation in
-section 7 of `overlay/policy.md`. Set `step_completed: 6`, `next_step: 7` the first time; later evaluations update
-the files without changing the step.
-
-- **`evaluation`** says what was checked: `desk` only once public documents have been read and listed in
-  `sources_checked`, `full` once the signed contract and the vendor's answers have been checked. Before either,
-  it is `null`, and ratings resting only on what the user reports stay `unknown`.
-- **Write only the template's sections.** Documents to ask for, and who to ask, go in the chat; questions for the
-  vendor go in the scorecard's last column. The Decision section holds where the evaluation stands.
+- **`evaluation`** is `desk` only once public documents have been read and listed in `sources_checked`, and `full` once
+  the signed contract and the vendor's answers are checked. Before either it is `null`, and ratings resting only on
+  what the user reports stay `unknown`.
+- **Write only the template's sections.** Documents to ask for go in the chat; questions for the vendor go in the
+  scorecard's last column. The Decision section holds where the evaluation stands.
 - **Evaluated by** is a firm role, or "draft (ai-governance)" or "draft (subagent)" until a role confirms it.
-- **Request from a solution brief:** hand the vendor file path back to **ai-solution-delivery** (SKILL.md, step 6).
+- **Request from a solution brief:** hand the vendor file path, catalog entry id and the use's tier back to
+  **ai-solution-delivery**, whatever the decision (`SKILL.md`, Handoffs).
 
-## 9. Sources
+## 8. Sources
 
 - **ANTHROPIC-PRIV-2026**: Anthropic, *Is my data used for model training? (commercial products)* (vendor documentation, 2026-08-18). https://privacy.anthropic.com/en/articles/7996868-is-my-data-used-for-model-training
 - **ECFR-7216-2008**: US Treasury and IRS, *26 CFR 301.7216-1 to -3* (regulation, T.D. 9375 of 2008 as amended). https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.7216-3
-- **FRB-SR117-2011**: Federal Reserve and OCC, *SR 11-7 Supervisory Guidance on Model Risk Management* (regulator, 2011-04-04). https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf
-- **INSINSIDER-LAWYERS-2026**: Insurance Insider, *Lawyers test case for professional liability AI risks* (press, partly paywalled, 2026-05-13). https://www.insuranceinsider.com/sample-content/lawyers-test-case-for-professional-liability-ai-risks
-- **LAWSOC-GENAI-2026**: Law Society of England and Wales, *Generative AI: the essentials* (professional body, 2026). https://www.lawsociety.org.uk/topics/ai-and-lawtech/generative-ai-the-essentials
 - **MSFT-COPILOT-ND**: Microsoft, *Microsoft 365 Copilot privacy and data protection* (vendor documentation, undated, read 2026-10-20). https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy
 - **NIST-600-1-2024**: NIST, *AI RMF: Generative AI Profile, NIST AI 600-1* (standard, 2024-07). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - **NIST-RMF-2023**: NIST, *Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1* (standard, 2023-01). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
 - **OPENAI-ENT-ND**: OpenAI, *Enterprise privacy* (vendor documentation, undated, read 2026-10-20). https://openai.com/enterprise-privacy/
-- **OPENLAYER-2026**: Openlayer, *ISO 42001: A Complete Guide to AI Management Systems* (vendor blog, 2026-06-17). https://www.openlayer.com/blog/iso-42001-ai-management-systems-guide.md
-- **OWASP-LLM-2025**: OWASP Gen AI Security Project, *OWASP Top 10 for LLM Applications 2025* (practitioner standard, 2025). https://genai.owasp.org/llm-top-10/
